@@ -334,7 +334,14 @@ What is checked here:
   the strict checked bound
   `sqrt(re det(I - C† C)) < m²/(m²+a²)` under the explicit finite root,
   pole, background, and reflection hypotheses, without selecting or
-  separating individual metric modes;
+  separating individual metric modes.  The scaled finite negative logarithmic
+  derivative is now defined explicitly and its `-I` level equation is proved
+  equivalent to `A + I*eta*A' = 0` away from zeros of `A`.  Lean also proves
+  anti-equivariance of both a conjugate-pair contribution and the full
+  symmetric quartet under `z ↦ -conj z`.  Consequently a second checked
+  end-to-end theorem derives both candidate `E`-roots from one exact global
+  quartet-plus-background decomposition, one pole equation, and the reflected
+  background law; the reflected pole equation is no longer assumed;
 - the exact root-count bridge behind that degree inequality: conjugation
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
@@ -426,8 +433,11 @@ What is not yet checked here:
   cross angle.  The two Cauchy vectors attached to distinct roots are now
   proved to form a basis in the degree-two case, the determinant identity is
   specialized to those roots, and the symmetric-quartet estimate is now
-  composed with that actual determinant.  What remains is to derive the
-  finite root/pole/reflection hypotheses from the intended xi approximants,
+  composed with that actual determinant.  Both candidate `E`-root hypotheses
+  are now derived from an exact logarithmic-derivative decomposition and its
+  background reflection law.  What remains is to derive that decomposition,
+  its denominator nonvanishing/background sign and symmetry hypotheses, and
+  the residual-inner reflection law from the intended xi approximants;
   identify the determinant-level product with any separately named
   metric-pencil modes when such modes are required, and pass to the infinite
   xi model.  No claim is made that the auxiliary Euclidean coefficient norm

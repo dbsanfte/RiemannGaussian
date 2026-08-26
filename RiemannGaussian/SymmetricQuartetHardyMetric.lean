@@ -226,6 +226,221 @@ theorem finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound
     (finiteEPolynomial A η) hm htau ha hv hupperPlus hupperMinus
     hbackground hpole hinterpPlus hinterpMinus hreflect
 
+/-! ## Polynomial logarithmic-derivative pole bridge -/
+
+/-- The scaled negative logarithmic derivative whose `-I` level set is the
+zero set of `A + I η A'`, away from the zeros of `A`. -/
+def finiteNegativeLogDerivativeValue
+    (A : ℝ[X]) (η : ℝ) (z : ℂ) : ℂ :=
+  -(η : ℂ) * A.derivative.eval₂ Complex.ofRealHom z /
+    A.eval₂ Complex.ofRealHom z
+
+/-- Exact algebraic equivalence between the finite pole equation and a root
+of the homotopy polynomial. -/
+theorem finiteNegativeLogDerivativeValue_eq_neg_I_iff
+    {A : ℝ[X]} {η : ℝ} {z : ℂ}
+    (hAz : A.eval₂ Complex.ofRealHom z ≠ 0) :
+    finiteNegativeLogDerivativeValue A η z = -Complex.I ↔
+      (finiteEPolynomial A η).eval z = 0 := by
+  rw [finiteNegativeLogDerivativeValue, finiteEPolynomial_eval]
+  constructor
+  · intro h
+    have hmul := (div_eq_iff hAz).mp h
+    have hderiv :
+        (η : ℂ) * A.derivative.eval₂ Complex.ofRealHom z =
+          Complex.I * A.eval₂ Complex.ofRealHom z := by
+      calc
+        (η : ℂ) * A.derivative.eval₂ Complex.ofRealHom z =
+            -(-(η : ℂ) * A.derivative.eval₂ Complex.ofRealHom z) := by
+              ring
+        _ = -((-Complex.I) * A.eval₂ Complex.ofRealHom z) := by
+              rw [hmul]
+        _ = Complex.I * A.eval₂ Complex.ofRealHom z := by ring
+    rw [mul_assoc, hderiv, ← mul_assoc]
+    have hII : Complex.I * Complex.I = (-1 : ℂ) := by
+      calc
+        Complex.I * Complex.I = Complex.I ^ 2 := by ring
+        _ = -1 := Complex.I_sq
+    rw [hII]
+    ring
+  · intro h
+    have hIderiv :
+        Complex.I * ((η : ℂ) *
+          A.derivative.eval₂ Complex.ofRealHom z) =
+            -A.eval₂ Complex.ofRealHom z := by
+      linear_combination h
+    have hderiv :
+        (η : ℂ) * A.derivative.eval₂ Complex.ofRealHom z =
+          Complex.I * A.eval₂ Complex.ofRealHom z := by
+      calc
+        (η : ℂ) * A.derivative.eval₂ Complex.ofRealHom z =
+            (-Complex.I) *
+              (Complex.I * ((η : ℂ) *
+                A.derivative.eval₂ Complex.ofRealHom z)) := by
+              rw [← mul_assoc]
+              have hnegII : (-Complex.I) * Complex.I = (1 : ℂ) := by
+                calc
+                  (-Complex.I) * Complex.I = -(Complex.I ^ 2) := by ring
+                  _ = -(-1) := by rw [Complex.I_sq]
+                  _ = 1 := by ring
+              rw [hnegII, one_mul]
+        _ = (-Complex.I) *
+            (-A.eval₂ Complex.ofRealHom z) := by rw [hIderiv]
+        _ = Complex.I * A.eval₂ Complex.ofRealHom z := by ring
+    apply (div_eq_iff hAz).mpr
+    calc
+      -(η : ℂ) * A.derivative.eval₂ Complex.ofRealHom z =
+          -((η : ℂ) *
+            A.derivative.eval₂ Complex.ofRealHom z) := by ring
+      _ = -(Complex.I * A.eval₂ Complex.ofRealHom z) := by rw [hderiv]
+      _ = -Complex.I * A.eval₂ Complex.ofRealHom z := by ring
+
+/-- A conjugate pair contribution is anti-equivariant under reflection in
+the imaginary axis, provided its upper zero is reflected at the same time. -/
+theorem onePairLogDerivativeContribution_neg_conj
+    (m : ℝ) (alpha z : ℂ) :
+    onePairLogDerivativeContribution m (-starRingEnd ℂ alpha)
+        (-starRingEnd ℂ z) =
+      -starRingEnd ℂ (onePairLogDerivativeContribution m alpha z) := by
+  unfold onePairLogDerivativeContribution
+  simp only [map_add, map_div₀, map_neg, map_sub,
+    starRingEnd_apply, star_star]
+  simp only [sub_neg_eq_add]
+  have hmstar : star (m : ℂ) = (m : ℂ) := by simp
+  rw [hmstar]
+  rw [show -star z + star alpha = -(star z - star alpha) by ring,
+    show -star z + alpha = -(star z - alpha) by ring]
+  rw [div_neg, div_neg]
+  ring
+
+/-- The full symmetric quartet logarithmic derivative has the same
+anti-equivariance. -/
+theorem symmetricQuartetLogDerivativeContribution_neg_conj
+    (m tau a : ℝ) (z : ℂ) :
+    symmetricQuartetLogDerivativeContribution m tau a
+        (-starRingEnd ℂ z) =
+      -starRingEnd ℂ
+        (symmetricQuartetLogDerivativeContribution m tau a z) := by
+  unfold symmetricQuartetLogDerivativeContribution
+  rw [show upperHalfPlanePoint (-tau) a =
+      -starRingEnd ℂ (upperHalfPlanePoint tau a) by simp]
+  rw [onePairLogDerivativeContribution_neg_conj,
+    show onePairLogDerivativeContribution m (upperHalfPlanePoint tau a)
+        (-starRingEnd ℂ z) =
+      -starRingEnd ℂ
+        (onePairLogDerivativeContribution m
+          (-starRingEnd ℂ (upperHalfPlanePoint tau a)) z) by
+      simpa using onePairLogDerivativeContribution_neg_conj
+        m (-starRingEnd ℂ (upperHalfPlanePoint tau a)) z]
+  simp
+
+/-- The finite Hardy quartet estimate with its two candidate `E`-root
+hypotheses derived from an exact logarithmic-derivative decomposition.
+
+The pole equation is assumed only at `x + I*v`.  Anti-equivariance of the
+quartet contribution and the stated reflection law for the background force
+the same equation at `-x + I*v`; the logarithmic-derivative bridge then turns
+both equations into roots of `A + I eta A'`. -/
+theorem
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound_of_logDerivativeDecomposition
+    {A : ℝ[X]} (hA : A.Separable)
+    {η m tau a x v : ℝ} {background : ℂ → ℂ}
+    (hη : η ≠ 0) (hm : 0 < m) (htau : tau ≠ 0)
+    (ha : 0 < a) (hv : 0 < v) (hx : x ≠ 0)
+    (hdegree : (upperRootFactor
+      (finiteEPolynomial A η)).natDegree = 2)
+    (hAPlus : A.eval₂ Complex.ofRealHom
+      (symmetricPickAlphaPlus tau a) = 0)
+    (hAMinus : A.eval₂ Complex.ofRealHom
+      (symmetricPickAlphaMinus tau a) = 0)
+    (hAPolePlus : A.eval₂ Complex.ofRealHom
+      (symmetricPickPole x v) ≠ 0)
+    (hAPoleMinus : A.eval₂ Complex.ofRealHom
+      (symmetricPickPole (-x) v) ≠ 0)
+    (hdecompose : ∀ z,
+      finiteNegativeLogDerivativeValue A η z =
+        symmetricQuartetLogDerivativeContribution m tau a z + background z)
+    (hupperPlus : 0 < pairHyperbolicUpperSq (x - tau) v a)
+    (hupperMinus : 0 < pairHyperbolicUpperSq (x + tau) v a)
+    (hbackground : 0 ≤ (background (symmetricPickPole x v)).im)
+    (hpole : symmetricQuartetLogDerivativeContribution m tau a
+        (symmetricPickPole x v) +
+      background (symmetricPickPole x v) = -Complex.I)
+    (hbackgroundReflect :
+      background (symmetricPickPole (-x) v) =
+        -starRingEnd ℂ (background (symmetricPickPole x v)))
+    (hreflect :
+      lowerRootInnerValue (finiteEPolynomial A η)
+          (symmetricPickPole (-x) v) =
+        starRingEnd ℂ
+          (lowerRootInnerValue (finiteEPolynomial A η)
+            (symmetricPickPole x v))) :
+    Real.sqrt
+        (LinearMap.det
+          (finiteHardyCrossAngleComplementGramOperator A η).toLinearMap).re <
+      m ^ 2 / (m ^ 2 + a ^ 2) := by
+  have hfinitePlus :
+      finiteNegativeLogDerivativeValue A η (symmetricPickPole x v) =
+        -Complex.I := by
+    calc
+      finiteNegativeLogDerivativeValue A η (symmetricPickPole x v) =
+          symmetricQuartetLogDerivativeContribution m tau a
+              (symmetricPickPole x v) +
+            background (symmetricPickPole x v) :=
+        hdecompose (symmetricPickPole x v)
+      _ = -Complex.I := hpole
+  have hrootPlus :
+      (finiteEPolynomial A η).eval (symmetricPickPole x v) = 0 :=
+    (finiteNegativeLogDerivativeValue_eq_neg_I_iff hAPolePlus).mp hfinitePlus
+  have hquartetReflect :
+      symmetricQuartetLogDerivativeContribution m tau a
+          (symmetricPickPole (-x) v) =
+        -starRingEnd ℂ
+          (symmetricQuartetLogDerivativeContribution m tau a
+            (symmetricPickPole x v)) := by
+    simpa only [neg_conj_symmetricPickPole] using
+      symmetricQuartetLogDerivativeContribution_neg_conj
+        m tau a (symmetricPickPole x v)
+  have hpoleMinus :
+      symmetricQuartetLogDerivativeContribution m tau a
+          (symmetricPickPole (-x) v) +
+        background (symmetricPickPole (-x) v) = -Complex.I := by
+    calc
+      symmetricQuartetLogDerivativeContribution m tau a
+            (symmetricPickPole (-x) v) +
+          background (symmetricPickPole (-x) v) =
+          -starRingEnd ℂ
+              (symmetricQuartetLogDerivativeContribution m tau a
+                (symmetricPickPole x v)) +
+            -starRingEnd ℂ
+              (background (symmetricPickPole x v)) := by
+        rw [hquartetReflect, hbackgroundReflect]
+      _ = -starRingEnd ℂ
+          (symmetricQuartetLogDerivativeContribution m tau a
+              (symmetricPickPole x v) +
+            background (symmetricPickPole x v)) := by
+        simp only [map_add]
+        ring
+      _ = -starRingEnd ℂ (-Complex.I) := by rw [hpole]
+      _ = -Complex.I := by simp
+  have hfiniteMinus :
+      finiteNegativeLogDerivativeValue A η (symmetricPickPole (-x) v) =
+        -Complex.I := by
+    calc
+      finiteNegativeLogDerivativeValue A η (symmetricPickPole (-x) v) =
+          symmetricQuartetLogDerivativeContribution m tau a
+              (symmetricPickPole (-x) v) +
+            background (symmetricPickPole (-x) v) :=
+        hdecompose (symmetricPickPole (-x) v)
+      _ = -Complex.I := hpoleMinus
+  have hrootMinus :
+      (finiteEPolynomial A η).eval (symmetricPickPole (-x) v) = 0 :=
+    (finiteNegativeLogDerivativeValue_eq_neg_I_iff hAPoleMinus).mp hfiniteMinus
+  exact
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound
+      hA hη hm htau ha hv hx hrootPlus hrootMinus hdegree hAPlus hAMinus
+      hupperPlus hupperMinus hbackground hpole hreflect
+
 end
 
 end RiemannGaussian
