@@ -11,4 +11,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+      - name: Reject unfinished Lean proofs
+        shell: bash
+        run: |
+          if git grep -nE '\<(sorry|admit)\>' -- '*.lean'; then
+            echo 'Lean sources must not contain sorry or admit.' >&2
+            exit 1
+          fi
       - uses: leanprover/lean-action@v1
