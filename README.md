@@ -109,6 +109,10 @@ What is checked here:
 - the exact cofinal-width reduction: all-width positivity is equivalent to
   finding good arithmetic Gaussian widths arbitrarily far to the right, so a
   successful certificate program only needs an unbounded family of widths;
+- an exact low-prime/infinite-tail decomposition of the convergent arithmetic
+  expression and a soundness theorem for the endpoint/compact/tail/large-`t`
+  certificate architecture; an unbounded family of sound certificates is
+  proved to imply RH;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
