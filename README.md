@@ -70,6 +70,11 @@ What is checked here:
   zero-free spectral rectangle: each enclosed principal part contributes
   exactly `2*pi*I` times its residue, and the full xi contour is exactly
   `-2*pi` times the corresponding finite symmetric Gaussian zero sum;
+- cofinal convergence of those multiplicity-weighted finite windows to the
+  canonical symmetric Gaussian `HasSum`, construction of a zero-free
+  truncation in every interval `(n,n+1)`, convergence of the horizontal safe
+  lines, and an exact reduction of the explicit-formula identification to
+  decay of one right vertical-side integral along those truncations;
 - a single explicit predicate,
   `GaussianArithmeticExplicitFormulaIdentified`, isolating equality of that
   convergent arithmetic expression with the canonical symmetric zero sum;
@@ -81,11 +86,11 @@ What is checked here:
 
 What is not yet checked here:
 
-- the infinite-height passage from the exact finite xi divisor contour to the
-  canonical symmetric Gaussian zero sum, which is the remaining contour step
-  needed to prove `GaussianArithmeticExplicitFormulaIdentified` (the analytic
-  digamma convergence and finite residue identity are checked, but the
-  prime/zero explicit-formula equality is not);
+- decay of the right vertical xi contour along the selected zero-free
+  truncations; this is now the isolated infinite-height estimate needed to
+  prove `GaussianArithmeticExplicitFormulaIdentified` (the horizontal limit,
+  canonical zero-sum limit, analytic digamma convergence, and finite residue
+  identity are checked, but the prime/zero equality is not);
 - the fixed-point integration loops mirrored by the Python certificates;
 - a definition and continuity theorem for Weil's functional on the correct
   analytic-strip test class;

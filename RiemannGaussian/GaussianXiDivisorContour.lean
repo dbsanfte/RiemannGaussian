@@ -218,6 +218,74 @@ theorem mem_spectralZetaZeroWindow
   change |(zetaSpectralCoordinate ρ.1).re| ≤ max T 0 ↔ _
   rw [max_eq_left hT]
 
+/-- Expanding symmetric spectral windows are cofinal among all finite sets
+of nontrivial zeta zeros. -/
+theorem tendsto_spectralZetaZeroWindow_atTop :
+    Tendsto spectralZetaZeroWindow atTop atTop := by
+  rw [tendsto_atTop_atTop]
+  intro S
+  let B : ℝ := ∑ ρ ∈ S, |(zetaSpectralCoordinate ρ.1).re|
+  have hB0 : 0 ≤ B := by
+    dsimp [B]
+    positivity
+  refine ⟨B, fun T hBT => ?_⟩
+  intro ρ hρ
+  apply (mem_spectralZetaZeroWindow (hB0.trans hBT) ρ).mpr
+  have hρB : |(zetaSpectralCoordinate ρ.1).re| ≤ B := by
+    dsimp [B]
+    exact Finset.single_le_sum
+      (fun σ hσ => abs_nonneg (zetaSpectralCoordinate σ.1).re) hρ
+  exact hρB.trans hBT
+
+/-- Every unit interval on the positive spectral axis contains a vertical
+line that avoids the complete nontrivial zeta divisor. -/
+theorem exists_spectralBoundaryAdmissible_between_nat (n : ℕ) :
+    ∃ T : ℝ,
+      (n : ℝ) < T ∧ T < (n : ℝ) + 1 ∧
+        ∀ ρ : NontrivialZetaZero,
+          |(zetaSpectralCoordinate ρ.1).re| ≠ T := by
+  let bad : Finset ℝ :=
+    (spectralZetaZeroWindow ((n : ℝ) + 1)).image
+      (fun ρ => |(zetaSpectralCoordinate ρ.1).re|)
+  have hinterval : (Set.Ioo (n : ℝ) ((n : ℝ) + 1)).Infinite :=
+    Set.Ioo_infinite (by linarith)
+  have hnotSubset :
+      ¬Set.Ioo (n : ℝ) ((n : ℝ) + 1) ⊆ (bad : Set ℝ) := by
+    intro hsubset
+    exact hinterval (bad.finite_toSet.subset hsubset)
+  rcases Set.not_subset.mp hnotSubset with ⟨T, hTinterval, hTbad⟩
+  refine ⟨T, hTinterval.1, hTinterval.2, ?_⟩
+  intro ρ heq
+  apply hTbad
+  apply Finset.mem_coe.mpr
+  apply Finset.mem_image.mpr
+  refine ⟨ρ, ?_, heq⟩
+  apply (mem_spectralZetaZeroWindow (by positivity) ρ).mpr
+  rw [heq]
+  exact hTinterval.2.le
+
+/-- A fixed choice of one zero-free truncation from each positive unit
+interval. -/
+noncomputable def spectralBoundaryTruncation (n : ℕ) : ℝ :=
+  Classical.choose (exists_spectralBoundaryAdmissible_between_nat n)
+
+theorem spectralBoundaryTruncation_spec (n : ℕ) :
+    (n : ℝ) < spectralBoundaryTruncation n ∧
+      spectralBoundaryTruncation n < (n : ℝ) + 1 ∧
+      ∀ ρ : NontrivialZetaZero,
+        |(zetaSpectralCoordinate ρ.1).re| ≠
+          spectralBoundaryTruncation n :=
+  Classical.choose_spec (exists_spectralBoundaryAdmissible_between_nat n)
+
+theorem tendsto_spectralBoundaryTruncation_atTop :
+    Tendsto spectralBoundaryTruncation atTop atTop := by
+  rw [tendsto_atTop_atTop]
+  intro B
+  obtain ⟨n, hn⟩ := exists_nat_ge B
+  refine ⟨n, fun m hnm => ?_⟩
+  have hcast : (n : ℝ) ≤ (m : ℝ) := by exact_mod_cast hnm
+  exact hn.trans (hcast.trans (spectralBoundaryTruncation_spec m).1.le)
+
 /-- The corresponding finite set of points in the spectral plane. -/
 noncomputable def spectralXiZeroWindow (T : ℝ) : Finset ℂ :=
   (spectralZetaZeroWindow T).image
@@ -668,8 +736,30 @@ def gaussianXiWindowPrincipalSum
 nontrivial zeta zeros in the spectral window `|Re z| ≤ T`. -/
 def gaussianXiWindowZeroSum (ε t T : ℝ) : ℂ :=
   ∑ ρ ∈ spectralZetaZeroWindow T,
-    (analyticZetaZeroMultiplicity ρ : ℂ) *
-      complexSymmetricGaussian ε t (zetaSpectralCoordinate ρ.1)
+    zetaSymmetricGaussianDistinctZeroSummand
+      analyticZetaZeroMultiplicity ε t ρ
+
+/-- The expanding finite zero windows converge unconditionally to the
+canonical multiplicity-weighted symmetric Gaussian zero sum. -/
+theorem tendsto_gaussianXiWindowZeroSum
+    (ε t : ℝ) (hε : 0 < ε) :
+    Tendsto (gaussianXiWindowZeroSum ε t) atTop
+      (𝓝 (canonicalZetaSymmetricGaussianZeroSum ε t : ℂ)) := by
+  have hOccurrence :=
+    (representsCanonicalZetaSymmetricGaussianZeroSum
+      zetaZeroGaussianOrdinateSummable) ε t hε
+  have hDistinct :=
+    hasSum_zetaSymmetricGaussianDistinctZeroSummand
+      analyticZetaZeroMultiplicity ε t
+        (canonicalZetaSymmetricGaussianZeroSum ε t : ℂ) hOccurrence
+  change Tendsto
+      (fun S : Finset NontrivialZetaZero =>
+        ∑ ρ ∈ S,
+          zetaSymmetricGaussianDistinctZeroSummand
+            analyticZetaZeroMultiplicity ε t ρ)
+      atTop (𝓝 (canonicalZetaSymmetricGaussianZeroSum ε t : ℂ)) at hDistinct
+  unfold gaussianXiWindowZeroSum
+  exact hDistinct.comp tendsto_spectralZetaZeroWindow_atTop
 
 theorem analyticAt_gaussianXiWindowPrincipalSum_of_not_mem
     (ε t T : ℝ) {z : ℂ} (hz : z ∉ spectralXiZeroWindow T) :
@@ -1589,6 +1679,7 @@ theorem spectralRectangleBoundaryIntegral_gaussianXiWindowPrincipalSum
   rw [spectralRectangleBoundaryIntegral_gaussianXiWindowPrincipalSum_residues
     ε t hT hboundary]
   unfold gaussianXiWindowZeroSum
+    zetaSymmetricGaussianDistinctZeroSummand
   rw [Finset.mul_sum]
   apply Finset.sum_congr rfl
   intro ρ hρ
@@ -1740,6 +1831,231 @@ theorem gaussianXiSpectralIntegrand_upper_eq_neg_lower_neg
     push_cast
     ring
   rw [hpoint, gaussianXiSpectralIntegrand_neg]
+
+/-- On symmetric finite intervals, the upper safe-line integral is already
+the negative of the lower safe-line integral. -/
+theorem intervalIntegral_gaussianXiSpectralIntegrand_upper_eq_neg_lower
+    (ε t T : ℝ) :
+    (∫ x : ℝ in -T..T,
+      gaussianXiSpectralIntegrand ε t ((x : ℂ) + Complex.I)) =
+      -(∫ x : ℝ in -T..T,
+        gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I)) := by
+  calc
+    (∫ x : ℝ in -T..T,
+        gaussianXiSpectralIntegrand ε t ((x : ℂ) + Complex.I)) =
+      ∫ x : ℝ in -T..T,
+        -gaussianXiSpectralIntegrand ε t
+          (((-x : ℝ) : ℂ) - Complex.I) := by
+        apply intervalIntegral.integral_congr
+        intro x hx
+        exact gaussianXiSpectralIntegrand_upper_eq_neg_lower_neg ε t x
+    _ = -(∫ x : ℝ in -T..T,
+        gaussianXiSpectralIntegrand ε t
+          (((-x : ℝ) : ℂ) - Complex.I)) :=
+      intervalIntegral.integral_neg
+    _ = -(∫ x : ℝ in -T..T,
+        gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I)) := by
+      apply congrArg Neg.neg
+      simpa using
+        (intervalIntegral.integral_comp_neg
+          (f := fun x : ℝ =>
+            gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I))
+          (a := -T) (b := T))
+
+/-- Oddness likewise identifies the left vertical side with the negative
+of the right vertical side. -/
+theorem intervalIntegral_gaussianXiSpectralIntegrand_left_eq_neg_right
+    (ε t T : ℝ) :
+    (∫ y : ℝ in (-1 : ℝ)..1,
+      gaussianXiSpectralIntegrand ε t
+        ((-T : ℂ) + (y : ℂ) * Complex.I)) =
+      -(∫ y : ℝ in (-1 : ℝ)..1,
+        gaussianXiSpectralIntegrand ε t
+          ((T : ℂ) + (y : ℂ) * Complex.I)) := by
+  calc
+    (∫ y : ℝ in (-1 : ℝ)..1,
+        gaussianXiSpectralIntegrand ε t
+          ((-T : ℂ) + (y : ℂ) * Complex.I)) =
+      ∫ y : ℝ in (-1 : ℝ)..1,
+        -gaussianXiSpectralIntegrand ε t
+          ((T : ℂ) + ((-y : ℝ) : ℂ) * Complex.I) := by
+        apply intervalIntegral.integral_congr
+        intro y hy
+        have hpoint :
+            ((-T : ℂ) + (y : ℂ) * Complex.I) =
+              -((T : ℂ) + ((-y : ℝ) : ℂ) * Complex.I) := by
+          push_cast
+          ring
+        change gaussianXiSpectralIntegrand ε t
+            ((-T : ℂ) + (y : ℂ) * Complex.I) = _
+        rw [hpoint, gaussianXiSpectralIntegrand_neg]
+    _ = -(∫ y : ℝ in (-1 : ℝ)..1,
+        gaussianXiSpectralIntegrand ε t
+          ((T : ℂ) + ((-y : ℝ) : ℂ) * Complex.I)) :=
+      intervalIntegral.integral_neg
+    _ = -(∫ y : ℝ in (-1 : ℝ)..1,
+        gaussianXiSpectralIntegrand ε t
+          ((T : ℂ) + (y : ℂ) * Complex.I)) := by
+      apply congrArg Neg.neg
+      simpa using
+        (intervalIntegral.integral_comp_neg
+          (f := fun y : ℝ =>
+            gaussianXiSpectralIntegrand ε t
+              ((T : ℂ) + (y : ℂ) * Complex.I))
+          (a := (-1 : ℝ)) (b := 1))
+
+/-- The four sides of the symmetric xi rectangle reduce to twice its lower
+safe line plus twice its right vertical side. -/
+theorem spectralRectangleBoundaryIntegral_gaussianXiSpectralIntegrand
+    (ε t T : ℝ) :
+    spectralRectangleBoundaryIntegral T
+        (gaussianXiSpectralIntegrand ε t) =
+      2 * (∫ x : ℝ in -T..T,
+        gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I)) +
+      2 * Complex.I * (∫ y : ℝ in (-1 : ℝ)..1,
+        gaussianXiSpectralIntegrand ε t
+          ((T : ℂ) + (y : ℂ) * Complex.I)) := by
+  unfold spectralRectangleBoundaryIntegral
+  rw [intervalIntegral_gaussianXiSpectralIntegrand_upper_eq_neg_lower,
+    intervalIntegral_gaussianXiSpectralIntegrand_left_eq_neg_right]
+  ring
+
+/-- Dividing the finite divisor identity by two leaves the lower safe line,
+one vertical-side error, and `-π` times the finite zero sum. -/
+theorem intervalIntegral_gaussianXiSpectralIntegrand_lower_add_vertical
+    (ε t : ℝ) {T : ℝ} (hT : 0 ≤ T)
+    (hboundary : ∀ ρ : NontrivialZetaZero,
+      |(zetaSpectralCoordinate ρ.1).re| ≠ T) :
+    (∫ x : ℝ in -T..T,
+        gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I)) +
+      Complex.I * (∫ y : ℝ in (-1 : ℝ)..1,
+        gaussianXiSpectralIntegrand ε t
+          ((T : ℂ) + (y : ℂ) * Complex.I)) =
+      -(((Real.pi : ℝ) : ℂ)) * gaussianXiWindowZeroSum ε t T := by
+  have hfinite := gaussianXiSpectralIntegrand_rectangle_eq_windowZeroSum
+    ε t hT hboundary
+  rw [spectralRectangleBoundaryIntegral_gaussianXiSpectralIntegrand]
+    at hfinite
+  calc
+    (∫ x : ℝ in -T..T,
+          gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I)) +
+        Complex.I * (∫ y : ℝ in (-1 : ℝ)..1,
+          gaussianXiSpectralIntegrand ε t
+            ((T : ℂ) + (y : ℂ) * Complex.I)) =
+      (1 / 2 : ℂ) *
+        (2 * (∫ x : ℝ in -T..T,
+          gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I)) +
+        2 * Complex.I * (∫ y : ℝ in (-1 : ℝ)..1,
+          gaussianXiSpectralIntegrand ε t
+            ((T : ℂ) + (y : ℂ) * Complex.I))) := by ring
+    _ = (1 / 2 : ℂ) *
+        (-(((2 * Real.pi : ℝ) : ℂ)) *
+          gaussianXiWindowZeroSum ε t T) := by rw [hfinite]
+    _ = -(((Real.pi : ℝ) : ℂ)) *
+        gaussianXiWindowZeroSum ε t T := by
+      push_cast
+      ring
+
+/-- The symmetric lower safe-line truncations converge to the already
+proved absolutely convergent full safe-line integral. -/
+theorem tendsto_intervalIntegral_gaussianXiSpectralIntegrand_lower
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    Tendsto
+      (fun T : ℝ => ∫ x : ℝ in -T..T,
+        gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I))
+      atTop
+      (𝓝 (∫ x : ℝ,
+        gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I))) :=
+  intervalIntegral_tendsto_integral
+    (integrable_gaussianXiSpectralIntegrand_lower_safeLine hε t)
+    tendsto_neg_atTop_atBot tendsto_id
+
+/-- The infinite xi divisor formula now reduces to one explicit analytic
+estimate: decay of the right vertical integral along the fixed admissible
+truncations. -/
+theorem integral_gaussianXiSpectralIntegrand_lower_eq_canonical_of_vertical_tendsto
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ)
+    (hvertical : Tendsto
+      (fun n : ℕ => ∫ y : ℝ in (-1 : ℝ)..1,
+        gaussianXiSpectralIntegrand ε t
+          ((spectralBoundaryTruncation n : ℂ) +
+            (y : ℂ) * Complex.I))
+      atTop (𝓝 0)) :
+    (∫ x : ℝ,
+        gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I)) =
+      -(((Real.pi : ℝ) : ℂ)) *
+        (canonicalZetaSymmetricGaussianZeroSum ε t : ℂ) := by
+  have hlower :=
+    (tendsto_intervalIntegral_gaussianXiSpectralIntegrand_lower hε t).comp
+      tendsto_spectralBoundaryTruncation_atTop
+  have hleft : Tendsto
+      (fun n : ℕ =>
+        (∫ x : ℝ in -spectralBoundaryTruncation n..
+            spectralBoundaryTruncation n,
+          gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I)) +
+        Complex.I * (∫ y : ℝ in (-1 : ℝ)..1,
+          gaussianXiSpectralIntegrand ε t
+            ((spectralBoundaryTruncation n : ℂ) +
+              (y : ℂ) * Complex.I)))
+      atTop
+      (𝓝 (∫ x : ℝ,
+        gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I))) := by
+    simpa using hlower.add (tendsto_const_nhds.mul hvertical)
+  have hzeroSum :=
+    (tendsto_gaussianXiWindowZeroSum ε t hε).comp
+      tendsto_spectralBoundaryTruncation_atTop
+  have hright : Tendsto
+      (fun n : ℕ =>
+        -(((Real.pi : ℝ) : ℂ)) *
+          gaussianXiWindowZeroSum ε t (spectralBoundaryTruncation n))
+      atTop
+      (𝓝 (-(((Real.pi : ℝ) : ℂ)) *
+        (canonicalZetaSymmetricGaussianZeroSum ε t : ℂ))) :=
+    tendsto_const_nhds.mul hzeroSum
+  have hrightAsLeft := hright.congr' (Filter.Eventually.of_forall fun n => by
+    symm
+    apply intervalIntegral_gaussianXiSpectralIntegrand_lower_add_vertical
+    · exact (Nat.cast_nonneg n).trans
+        (spectralBoundaryTruncation_spec n).1.le
+    · exact (spectralBoundaryTruncation_spec n).2.2)
+  exact tendsto_nhds_unique hleft hrightAsLeft
+
+/-- Decay of the selected vertical xi contours gives the desired
+prime/zero explicit-formula equality at the fixed Gaussian parameters. -/
+theorem gaussianArithmeticExplicitFormula_eq_canonical_of_vertical_tendsto
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ)
+    (hvertical : Tendsto
+      (fun n : ℕ => ∫ y : ℝ in (-1 : ℝ)..1,
+        gaussianXiSpectralIntegrand ε t
+          ((spectralBoundaryTruncation n : ℂ) +
+            (y : ℂ) * Complex.I))
+      atTop (𝓝 0)) :
+    gaussianArithmeticExplicitFormula ε t =
+      canonicalZetaSymmetricGaussianZeroSum ε t := by
+  have harithmetic :=
+    integral_negLogDeriv_riemannXi_safeLine_eq_arithmetic hε t
+  have hcanonical :=
+    integral_gaussianXiSpectralIntegrand_lower_eq_canonical_of_vertical_tendsto
+      hε t hvertical
+  simp_rw [gaussianXiSpectralIntegrand_lower_safeLine] at hcanonical
+  have heq := harithmetic.symm.trans hcanonical
+  have hre := congrArg Complex.re heq
+  norm_num at hre
+  nlinarith [Real.pi_pos]
+
+/-- Consequently, uniform availability of that one vertical-decay estimate
+proves the project-wide explicit-formula identification predicate. -/
+theorem gaussianArithmeticExplicitFormulaIdentified_of_vertical_tendsto
+    (hvertical : ∀ (ε t : ℝ), 0 < ε → Tendsto
+      (fun n : ℕ => ∫ y : ℝ in (-1 : ℝ)..1,
+        gaussianXiSpectralIntegrand ε t
+          ((spectralBoundaryTruncation n : ℂ) +
+            (y : ℂ) * Complex.I))
+      atTop (𝓝 0)) :
+    GaussianArithmeticExplicitFormulaIdentified := by
+  intro ε t hε
+  exact gaussianArithmeticExplicitFormula_eq_canonical_of_vertical_tendsto
+    hε t (hvertical ε t hε)
 
 theorem integrable_gaussianXiSpectralIntegrand_upper_safeLine
     {ε : ℝ} (hε : 0 < ε) (t : ℝ) :

@@ -526,6 +526,30 @@ def zetaSymmetricGaussianZeroSummand
   complexSymmetricGaussian ε t
     (zetaSpectralCoordinate occurrence.1.1)
 
+/-- The symmetric Gaussian summand after its finite multiplicity fiber has
+been summed, indexed by distinct nontrivial zeta zeros. -/
+def zetaSymmetricGaussianDistinctZeroSummand
+    (multiplicity : ZetaZeroMultiplicity) (ε t : ℝ)
+    (ρ : NontrivialZetaZero) : ℂ :=
+  (multiplicity ρ : ℂ) *
+    complexSymmetricGaussian ε t (zetaSpectralCoordinate ρ.1)
+
+/-- Regroup a multiplicity-slot symmetric Gaussian `HasSum` as a `HasSum`
+over distinct zeros with natural-number weights. -/
+theorem hasSum_zetaSymmetricGaussianDistinctZeroSummand
+    (multiplicity : ZetaZeroMultiplicity) (ε t : ℝ) (q : ℂ)
+    (hSum : HasSum
+      (zetaSymmetricGaussianZeroSummand multiplicity ε t) q) :
+    HasSum
+      (zetaSymmetricGaussianDistinctZeroSummand multiplicity ε t) q := by
+  apply hSum.sigma
+  intro ρ
+  simpa [zetaSymmetricGaussianZeroSummand,
+    zetaSymmetricGaussianDistinctZeroSummand, nsmul_eq_mul] using
+      (hasSum_fintype
+        (fun _ : Fin (multiplicity ρ) =>
+          complexSymmetricGaussian ε t (zetaSpectralCoordinate ρ.1)))
+
 /-- `G` represents the multiplicity-counted zero sum for the symmetric
 Gaussian family actually used by the certificate program. -/
 def RepresentsZetaSymmetricGaussianZeroSum
