@@ -240,6 +240,12 @@ What is checked here:
   `A.natDegree`, with the exact `kappa`/`A.natDegree - kappa` split reduced to
   the isolated upper-root-count theorem; moreover `Theta(gamma) = -1` is
   proved at every complex zero `gamma` of separable `A`;
+- the pointwise form `B(z) * Theta(z) = S(z)` wherever the rational
+  representatives are defined, and the exact de Branges kernel-numerator
+  identity expressing the transformed `Theta` kernel as the `S` kernel minus
+  the `B` kernel; at every zero `gamma` of `A`, all required denominators are
+  proved nonzero and Lean derives `S(gamma) = -B(gamma)` and hence
+  `B(gamma) + S(gamma) = 0`;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -265,8 +271,9 @@ What is not yet checked here:
   RH-strength.
 - the remaining analytic finite-polynomial realization of the checked
   abstract Gram--Weil block theorem: constancy and evaluation of the
-  upper-half-plane root count along the just-defined homotopy, the model-space
-  decomposition, injectivity/strict contraction of its cross-angle operator,
+  upper-half-plane root count along the just-defined homotopy, model-space
+  membership and completeness beyond the checked kernel-numerator split,
+  injectivity/strict contraction of its cross-angle operator,
   and the spectral theorem counting all `±sqrt(1-s_j^2)` pencil modes are not
   yet formalized beyond the checked scalar and analytic one-pair cases. Nor is any
   infinite-dimensional lift to the xi function; that remains a research

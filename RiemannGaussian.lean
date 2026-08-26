@@ -41,3 +41,4 @@ import RiemannGaussian.FiniteOnePair
 import RiemannGaussian.FiniteEAux
 import RiemannGaussian.FiniteRootFactorization
 import RiemannGaussian.FiniteKreinLanger
+import RiemannGaussian.FiniteKernelDecomposition
