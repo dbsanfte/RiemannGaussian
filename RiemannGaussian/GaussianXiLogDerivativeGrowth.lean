@@ -475,6 +475,295 @@ theorem norm_logDeriv_riemannXiCanonicalResidual_le_of_growth
     (by simpa [R] using hzball)).deriv] at hcauchy
   simpa [R, g, M] using hcauchy
 
+/-! ## The finite canonical factors -/
+
+/-- Pointwise logarithmic differentiation of a finitely supported product of
+integer powers. The nonvanishing hypotheses permit negative powers. -/
+lemma logDeriv_finprod_zpow_apply_of_finite
+    {ι : Type*} {F : ι → ℂ → ℂ} {d : ι → ℤ}
+    (hd : (Function.support d).Finite) {z : ℂ}
+    (hFne : ∀ i, d i ≠ 0 → F i z ≠ 0)
+    (hFdiff : ∀ i, d i ≠ 0 → DifferentiableAt ℂ (F i) z) :
+    logDeriv (∏ᶠ i, F i ^ d i) z =
+      ∑ᶠ i, d i • logDeriv (F i) z := by
+  classical
+  have h₀ : ∏ᶠ i, F i ^ d i =
+      ∏ i ∈ hd.toFinset, F i ^ d i :=
+    finprod_eq_prod_of_mulSupport_subset _ <| by
+      simp +contextual [Set.subset_def, not_imp_not]
+  have hsub : Function.support (fun i ↦ d i • logDeriv (F i) z) ⊆
+      hd.toFinset := by
+    simp +contextual [-Function.support_mul, -mul_eq_zero,
+      Set.subset_def, not_imp_not]
+  calc
+    logDeriv (∏ᶠ i, F i ^ d i) z =
+        logDeriv (fun w ↦ ∏ i ∈ hd.toFinset, (F i ^ d i) w) z := by
+      rw [h₀, Finset.prod_fn]
+    _ = ∑ i ∈ hd.toFinset, logDeriv (F i ^ d i) z :=
+      logDeriv_prod (fun i hi ↦ zpow_ne_zero _ (hFne i (by simpa using hi)))
+        (fun i hi ↦ (hFdiff i (by simpa using hi)).zpow
+          (.inl (hFne i (by simpa using hi))))
+    _ = ∑ i ∈ hd.toFinset, d i • logDeriv (F i) z := by
+      apply Finset.sum_congr rfl
+      intro i hi
+      rw [Pi.pow_def]
+      simpa [zsmul_eq_mul] using
+        logDeriv_fun_zpow (hFdiff i (by simpa using hi)) (d i)
+    _ = ∑ᶠ i, d i • logDeriv (F i) z :=
+      (finsum_eq_sum_of_support_subset _ hsub).symm
+
+/-- Exact logarithmic derivative of one canonical factor away from its pole. -/
+lemma logDeriv_canonicalFactor_eq
+    {R : ℝ} (hR : 0 < R) {i z : ℂ}
+    (hi : i ∈ ball 0 R) (hz : z ∈ closedBall 0 R) (hzi : z ≠ i) :
+    logDeriv (Complex.canonicalFactor R i) z =
+      (-starRingEnd ℂ i) / ((R : ℂ) ^ 2 - (starRingEnd ℂ i) * z) -
+        1 / (z - i) := by
+  have hfactor : Complex.canonicalFactor R i z ≠ 0 :=
+    Complex.canonicalFactor_ne_zero hi hz hzi
+  have hnum : (R : ℂ) ^ 2 - (starRingEnd ℂ i) * z ≠ 0 := by
+    rw [Complex.canonicalFactor_apply, div_ne_zero_iff] at hfactor
+    exact hfactor.1
+  have hden : (R : ℂ) * (z - i) ≠ 0 := by
+    apply mul_ne_zero
+    · exact_mod_cast hR.ne'
+    · exact sub_ne_zero.mpr hzi
+  have hnumderiv :
+      deriv (fun w : ℂ ↦ (R : ℂ) ^ 2 - (starRingEnd ℂ i) * w) z =
+        -starRingEnd ℂ i := by
+    rw [deriv_fun_sub (by fun_prop) (by fun_prop)]
+    simp
+  have hdenderiv :
+      deriv (fun w : ℂ ↦ (R : ℂ) * (w - i)) z = (R : ℂ) := by
+    rw [deriv_const_mul_field, deriv_sub_const]
+    simp
+  rw [show Complex.canonicalFactor R i =
+      fun w ↦ ((R : ℂ) ^ 2 - (starRingEnd ℂ i) * w) /
+        ((R : ℂ) * (w - i)) by rfl]
+  rw [logDeriv_div z hnum hden (by fun_prop) (by fun_prop)]
+  simp only [logDeriv_apply]
+  rw [hnumderiv, hdenderiv]
+  field_simp [hR.ne', hzi]
+
+/-- On the inner quarter-disk, a canonical factor's logarithmic derivative
+is controlled by a radial term and the reciprocal distance to its pole. -/
+lemma norm_logDeriv_canonicalFactor_le
+    {R δ : ℝ} (hR : 0 < R) (hδ : 0 < δ) {i z : ℂ}
+    (hi : i ∈ ball 0 R) (hz : ‖z‖ ≤ R / 4)
+    (hsep : δ ≤ ‖z - i‖) :
+    ‖logDeriv (Complex.canonicalFactor R i) z‖ ≤ 2 / R + 1 / δ := by
+  have hzi : z ≠ i := by
+    intro h
+    subst z
+    simp at hsep
+    linarith
+  have hzclosed : z ∈ closedBall 0 R := by
+    rw [mem_closedBall, dist_zero_right]
+    linarith
+  rw [logDeriv_canonicalFactor_eq hR hi hzclosed hzi]
+  have hiNorm : ‖i‖ ≤ R := by
+    have hi' : ‖i‖ < R := by simpa [mem_ball, dist_zero_right] using hi
+    exact hi'.le
+  have hstar : ‖(starRingEnd ℂ) i‖ = ‖i‖ := by
+    change ‖star i‖ = ‖i‖
+    exact norm_star i
+  have hprod : ‖(starRingEnd ℂ i) * z‖ ≤ R ^ 2 / 4 := by
+    rw [norm_mul, hstar]
+    calc
+      ‖i‖ * ‖z‖ ≤ R * (R / 4) :=
+        mul_le_mul hiNorm hz (norm_nonneg _) hR.le
+      _ = R ^ 2 / 4 := by ring
+  have hnumLower : R ^ 2 / 2 ≤
+      ‖(R : ℂ) ^ 2 - (starRingEnd ℂ i) * z‖ := by
+    calc
+      R ^ 2 / 2 ≤ R ^ 2 - ‖(starRingEnd ℂ i) * z‖ := by
+        nlinarith [hprod]
+      _ = ‖(R : ℂ) ^ 2‖ - ‖(starRingEnd ℂ i) * z‖ := by
+        rw [norm_pow, Complex.norm_real, Real.norm_eq_abs, abs_of_pos hR]
+      _ ≤ ‖(R : ℂ) ^ 2 - (starRingEnd ℂ i) * z‖ :=
+        norm_sub_norm_le _ _
+  have hnumPos : 0 < ‖(R : ℂ) ^ 2 - (starRingEnd ℂ i) * z‖ :=
+    lt_of_lt_of_le (by positivity : 0 < R ^ 2 / 2) hnumLower
+  have hfirst :
+      ‖-starRingEnd ℂ i‖ /
+          ‖(R : ℂ) ^ 2 - (starRingEnd ℂ i) * z‖ ≤ 2 / R := by
+    rw [norm_neg, hstar, div_le_iff₀ hnumPos]
+    calc
+      ‖i‖ ≤ R := hiNorm
+      _ = (2 / R) * (R ^ 2 / 2) := by field_simp
+      _ ≤ (2 / R) *
+          ‖(R : ℂ) ^ 2 - (starRingEnd ℂ i) * z‖ :=
+        mul_le_mul_of_nonneg_left hnumLower (by positivity)
+  have hsecond : 1 / ‖z - i‖ ≤ 1 / δ :=
+    one_div_le_one_div_of_le hδ hsep
+  calc
+    ‖(-starRingEnd ℂ i) /
+          ((R : ℂ) ^ 2 - (starRingEnd ℂ i) * z) -
+        1 / (z - i)‖ ≤
+        ‖(-starRingEnd ℂ i) /
+          ((R : ℂ) ^ 2 - (starRingEnd ℂ i) * z)‖ +
+            ‖1 / (z - i)‖ := norm_sub_le _ _
+    _ = ‖-starRingEnd ℂ i‖ /
+          ‖(R : ℂ) ^ 2 - (starRingEnd ℂ i) * z‖ +
+            1 / ‖z - i‖ := by
+      rw [norm_div, norm_div, norm_one]
+    _ ≤ 2 / R + 1 / δ := add_le_add hfirst hsecond
+
+/-- Because the selected canonical circle contains no xi zero, the open- and
+closed-ball xi divisors agree pointwise. -/
+lemma divisor_riemannXi_ball_eq_closedBall (n : ℕ) (z : ℂ) :
+    divisor riemannXi (ball 0 (xiCanonicalRadius n)) z =
+      divisor riemannXi (closedBall 0 (xiCanonicalRadius n)) z := by
+  classical
+  let R := xiCanonicalRadius n
+  have hR : 0 < R := xiCanonicalRadius_pos n
+  by_cases hb : z ∈ ball (0 : ℂ) R
+  · rw [(analyticOnNhd_riemannXi.mono (subset_univ _)).meromorphicOn.divisor_apply hb,
+      (analyticOnNhd_riemannXi.mono (subset_univ _)).meromorphicOn.divisor_apply
+        (ball_subset_closedBall hb)]
+  · by_cases hc : z ∈ closedBall (0 : ℂ) R
+    · have hnorm : ‖z‖ = R := by
+        rw [mem_ball, dist_zero_right] at hb
+        rw [mem_closedBall, dist_zero_right] at hc
+        exact le_antisymm hc (le_of_not_gt hb)
+      have hxi : riemannXi z ≠ 0 :=
+        (xiCanonicalRadius_spec n).2.2 z (by
+          simpa [mem_sphere, dist_zero_right, R] using hnorm)
+      have horder : meromorphicOrderAt riemannXi z = 0 :=
+        (analyticAt_riemannXi z).meromorphicNFAt
+          |>.meromorphicOrderAt_eq_zero_iff.mpr hxi
+      rw [Function.locallyFinsuppWithin.apply_eq_zero_of_notMem _ hb,
+        (analyticOnNhd_riemannXi.mono (subset_univ _)).meromorphicOn.divisor_apply hc]
+      simp [horder]
+    · rw [Function.locallyFinsuppWithin.apply_eq_zero_of_notMem _ hb,
+        Function.locallyFinsuppWithin.apply_eq_zero_of_notMem _ hc]
+
+/-- Every nonzero coefficient in an interior xi divisor is supported at an
+actual xi zero. -/
+lemma riemannXi_eq_zero_of_divisor_ball_ne_zero
+    {R : ℝ} {i : ℂ} (hi : divisor riemannXi (ball 0 R) i ≠ 0) :
+    riemannXi i = 0 := by
+  have himem : i ∈ ball (0 : ℂ) R :=
+    (divisor riemannXi (ball 0 R)).supportWithinDomain hi
+  by_contra hxi
+  apply hi
+  have horder : meromorphicOrderAt riemannXi i = 0 :=
+    (analyticAt_riemannXi i).meromorphicNFAt
+      |>.meromorphicOrderAt_eq_zero_iff.mpr hxi
+  rw [(analyticOnNhd_riemannXi.mono (subset_univ _)).meromorphicOn.divisor_apply himem]
+  simp [horder]
+
+/-- Inside the canonical disk, away from a zero of xi, its logarithmic
+derivative is the residual logarithmic derivative minus the finite sum of
+the enclosed canonical zero factors. -/
+theorem logDeriv_riemannXi_eq_residual_sub_canonical_sum
+    (n : ℕ) {z : ℂ}
+    (hz : z ∈ ball 0 (xiCanonicalRadius n)) (hxi : riemannXi z ≠ 0) :
+    logDeriv riemannXi z =
+      logDeriv (riemannXiCanonicalResidual n) z -
+        ∑ᶠ i, divisor riemannXi (ball 0 (xiCanonicalRadius n)) i •
+          logDeriv (Complex.canonicalFactor (xiCanonicalRadius n) i) z := by
+  classical
+  let R := xiCanonicalRadius n
+  let d : ℂ → ℤ := fun i => divisor riemannXi (ball 0 R) i
+  let P : ℂ → ℂ := ∏ᶠ i, Complex.canonicalFactor R i ^ d i
+  let g := riemannXiCanonicalResidual n
+  have hR : 0 < R := xiCanonicalRadius_pos n
+  have hdFinite : (Function.support d).Finite := by
+    simpa [d] using
+      (riemannXiCanonicalResidual_decomp n).meromorphicOn.divisor_ball_support_finite
+  have hmulSupport : (fun i =>
+      Complex.canonicalFactor R i ^ d i).HasFiniteMulSupport := by
+    apply Set.Finite.subset hdFinite
+    intro i hi
+    by_contra hdi
+    have hdi0 : d i = 0 := by simpa [Function.mem_support] using hdi
+    simp [hdi0] at hi
+  have hzeroOfSupport {i : ℂ} (hi : d i ≠ 0) : riemannXi i = 0 :=
+    riemannXi_eq_zero_of_divisor_ball_ne_zero (by simpa [d] using hi)
+  have himem {i : ℂ} (hi : d i ≠ 0) : i ∈ ball (0 : ℂ) R :=
+    (divisor riemannXi (ball 0 R)).supportWithinDomain (by simpa [d] using hi)
+  have hzi {i : ℂ} (hi : d i ≠ 0) : z ≠ i := by
+    intro h
+    subst i
+    exact hxi (hzeroOfSupport hi)
+  have hfactorNe {i : ℂ} (hi : d i ≠ 0) :
+      Complex.canonicalFactor R i z ≠ 0 :=
+    Complex.canonicalFactor_ne_zero (himem hi)
+      (ball_subset_closedBall (by simpa [R] using hz)) (hzi hi)
+  have hfactorDiff {i : ℂ} (hi : d i ≠ 0) :
+      DifferentiableAt ℂ (Complex.canonicalFactor R i) z :=
+    (Complex.analyticOnNhd_canonicalFactor R i z (hzi hi)).differentiableAt
+  have hPAnalytic : AnalyticAt ℂ P z := by
+    dsimp [P]
+    apply analyticAt_finprod
+    intro i
+    by_cases hi : d i = 0
+    · rw [hi]
+      change AnalyticAt ℂ (fun _ : ℂ ↦ (1 : ℂ)) z
+      exact analyticAt_const
+    · exact (Complex.analyticOnNhd_canonicalFactor R i z (hzi hi)).zpow
+        (hfactorNe hi)
+  have hPne : P z ≠ 0 := by
+    dsimp [P]
+    apply finprod_apply_ne_zero
+    intro i
+    by_cases hi : d i = 0
+    · simp [hi]
+    · exact zpow_ne_zero _ (hfactorNe hi)
+  have hfactorEq : g =ᶠ[nhds z] P * riemannXi := by
+    have hball : ball (0 : ℂ) R ∈ nhds z :=
+      isOpen_ball.mem_nhds (by simpa [R] using hz)
+    have hxiNe : ∀ᶠ w in nhds z, riemannXi w ≠ 0 :=
+      (analyticAt_riemannXi z).continuousAt.eventually_ne hxi
+    filter_upwards [hball, hxiNe] with w hw hwxi
+    have horder : meromorphicOrderAt riemannXi w = 0 :=
+      (analyticAt_riemannXi w).meromorphicNFAt
+        |>.meromorphicOrderAt_eq_zero_iff.mpr hwxi
+    have heq := (riemannXiCanonicalResidual_decomp n)
+      |>.eq_smul_meromorphicTrailingCoeffAt_of_meromorphicOrderAt
+        (ball_subset_closedBall hw) horder hR
+    have htrailing : meromorphicTrailingCoeffAt riemannXi w = riemannXi w :=
+      (analyticAt_riemannXi w).meromorphicTrailingCoeffAt_of_ne_zero hwxi
+    change g w = (P * riemannXi) w
+    simpa [P, d, g, R,
+      divisor_riemannXi_sphere_xiCanonicalRadius_eq_zero n,
+      htrailing, finprod_apply hmulSupport] using heq
+  have hproductLog :
+      logDeriv P z = ∑ᶠ i, d i • logDeriv (Complex.canonicalFactor R i) z := by
+    dsimp [P]
+    exact logDeriv_finprod_zpow_apply_of_finite hdFinite
+      (fun i hi => hfactorNe hi) (fun i hi => hfactorDiff hi)
+  have hmul := logDeriv_mul (f := P) (g := riemannXi) z
+    hPne hxi hPAnalytic.differentiableAt (differentiable_riemannXi z)
+  have hlog : logDeriv g z = logDeriv P z + logDeriv riemannXi z := by
+    rw [(logDeriv_congr_nhds hfactorEq).self_of_nhds]
+    exact hmul
+  rw [hproductLog] at hlog
+  change logDeriv riemannXi z = logDeriv g z -
+    ∑ᶠ i, d i • logDeriv (Complex.canonicalFactor R i) z
+  rw [hlog]
+  ring
+
+/-- Jensen's checked zero count bounds the total multiplicity of the interior
+canonical divisor. -/
+theorem sum_divisor_riemannXi_ball_le_of_growth
+    {A : ℝ} (hA : 1 ≤ A)
+    (hbound : ∀ z : ℂ,
+      ‖riemannXi z‖ ≤ Real.exp (A * (‖z‖ + 1) ^ 2))
+    (n : ℕ) :
+    ((∑ᶠ i, divisor riemannXi (ball 0 (xiCanonicalRadius n)) i : ℤ) : ℝ) ≤
+      A * (2 * xiCanonicalRadius n + 1) ^ 2 / Real.log 2 := by
+  have heq :
+      (∑ᶠ i, divisor riemannXi (ball 0 (xiCanonicalRadius n)) i) =
+        ∑ᶠ i, divisor riemannXi (closedBall 0 (xiCanonicalRadius n)) i := by
+    apply finsum_congr
+    intro i
+    exact divisor_riemannXi_ball_eq_closedBall n i
+  rw [heq]
+  exact_mod_cast jensen_riemannXi_divisor_le hA
+    (xiCanonicalRadius_pos n) hbound
+
 end
 
 end RiemannGaussian
