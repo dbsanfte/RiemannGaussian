@@ -66,6 +66,10 @@ What is checked here:
   `digamma (1/4 + I*r/2)`, derived from Euler's Gamma integral and reflection
   formula, proving that the Archimedean digamma integral converges at every
   positive Gaussian width;
+- an elementary, multiplicity-aware xi divisor calculation on every finite
+  zero-free spectral rectangle: each enclosed principal part contributes
+  exactly `2*pi*I` times its residue, and the full xi contour is exactly
+  `-2*pi` times the corresponding finite symmetric Gaussian zero sum;
 - a single explicit predicate,
   `GaussianArithmeticExplicitFormulaIdentified`, isolating equality of that
   convergent arithmetic expression with the canonical symmetric zero sum;
@@ -77,10 +81,11 @@ What is checked here:
 
 What is not yet checked here:
 
-- the contour/Hadamard argument proving
-  `GaussianArithmeticExplicitFormulaIdentified` (the analytic digamma
-  convergence part is checked, but the prime/zero explicit-formula equality
-  is not);
+- the infinite-height passage from the exact finite xi divisor contour to the
+  canonical symmetric Gaussian zero sum, which is the remaining contour step
+  needed to prove `GaussianArithmeticExplicitFormulaIdentified` (the analytic
+  digamma convergence and finite residue identity are checked, but the
+  prime/zero explicit-formula equality is not);
 - the fixed-point integration loops mirrored by the Python certificates;
 - a definition and continuity theorem for Weil's functional on the correct
   analytic-strip test class;

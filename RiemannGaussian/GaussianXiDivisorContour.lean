@@ -664,6 +664,13 @@ def gaussianXiWindowPrincipalSum
   ∑ ρ ∈ spectralZetaZeroWindow T,
     gaussianXiSpectralPrincipalPart ε t ρ z
 
+/-- The finite multiplicity-weighted symmetric Gaussian sum over all
+nontrivial zeta zeros in the spectral window `|Re z| ≤ T`. -/
+def gaussianXiWindowZeroSum (ε t T : ℝ) : ℂ :=
+  ∑ ρ ∈ spectralZetaZeroWindow T,
+    (analyticZetaZeroMultiplicity ρ : ℂ) *
+      complexSymmetricGaussian ε t (zetaSpectralCoordinate ρ.1)
+
 theorem analyticAt_gaussianXiWindowPrincipalSum_of_not_mem
     (ε t T : ℝ) {z : ℂ} (hz : z ∉ spectralXiZeroWindow T) :
     AnalyticAt ℂ (gaussianXiWindowPrincipalSum ε t T) z := by
@@ -935,7 +942,7 @@ lemma unitPrincipalKernel_horizontal
   field_simp [hminus, hplus, hrealC]
   ring_nf
   field_simp [hdenom]
-  simp [pow_succ, Complex.I_sq]
+  simp [pow_succ]
 
 lemma unitPrincipalKernel_vertical
     (A : ℂ) (y : ℝ) :
@@ -973,6 +980,405 @@ lemma integral_inv_one_add_sq_neg_one_one :
   rw [integral_inv_one_add_sq, Real.arctan_neg, Real.arctan_one]
   ring
 
+/-- The positively oriented unit square has winding integral `2πi` around
+its center.  This elementary calculation is the normalization used below
+instead of assuming a residue theorem. -/
+theorem rectangularBoundaryIntegral_unitSquare_div
+    (A : ℂ) :
+    rectangularBoundaryIntegral (-1) 1 (-1) 1
+        (fun z : ℂ => A / z) =
+      (2 * Real.pi : ℝ) * Complex.I * A := by
+  have hbottom : Continuous (fun x : ℝ =>
+      A / ((x : ℂ) - Complex.I)) := by
+    exact continuous_const.div (by fun_prop) (fun x => by
+      intro h
+      have him := congrArg Complex.im h
+      norm_num at him)
+  have htop : Continuous (fun x : ℝ =>
+      A / ((x : ℂ) + Complex.I)) := by
+    exact continuous_const.div (by fun_prop) (fun x => by
+      intro h
+      have him := congrArg Complex.im h
+      norm_num at him)
+  have hrightScaled : Continuous (fun y : ℝ =>
+      Complex.I * (A / (1 + (y : ℂ) * Complex.I))) := by
+    apply continuous_const.mul
+    exact continuous_const.div (by fun_prop) (fun y => by
+      intro h
+      have hre := congrArg Complex.re h
+      norm_num at hre)
+  have hleftScaled : Continuous (fun y : ℝ =>
+      Complex.I * (A / (-1 + (y : ℂ) * Complex.I))) := by
+    apply continuous_const.mul
+    exact continuous_const.div (by fun_prop) (fun y => by
+      intro h
+      have hre := congrArg Complex.re h
+      norm_num at hre)
+  have hhorizontal :
+      (∫ x : ℝ in (-1 : ℝ)..1, A / ((x : ℂ) - Complex.I)) -
+          (∫ x : ℝ in (-1 : ℝ)..1, A / ((x : ℂ) + Complex.I)) =
+        (2 * Complex.I * A) * (Real.pi / 2 : ℝ) := by
+    rw [← intervalIntegral.integral_sub
+      (hbottom.intervalIntegrable _ _) (htop.intervalIntegrable _ _)]
+    simp_rw [unitPrincipalKernel_horizontal]
+    rw [intervalIntegral.integral_const_mul,
+      intervalIntegral.integral_ofReal]
+    simp only [one_div]
+    rw [integral_inv_one_add_sq_neg_one_one]
+  have hvertical :
+      Complex.I * (∫ y : ℝ in (-1 : ℝ)..1,
+          A / (1 + (y : ℂ) * Complex.I)) -
+        Complex.I * (∫ y : ℝ in (-1 : ℝ)..1,
+          A / (-1 + (y : ℂ) * Complex.I)) =
+        (2 * Complex.I * A) * (Real.pi / 2 : ℝ) := by
+    rw [← intervalIntegral.integral_const_mul,
+      ← intervalIntegral.integral_const_mul,
+      ← intervalIntegral.integral_sub
+        (hrightScaled.intervalIntegrable _ _)
+        (hleftScaled.intervalIntegrable _ _)]
+    simp_rw [unitPrincipalKernel_vertical]
+    rw [intervalIntegral.integral_const_mul,
+      intervalIntegral.integral_ofReal]
+    simp only [one_div]
+    rw [integral_inv_one_add_sq_neg_one_one]
+  have hhorizontal' :
+      (∫ x : ℝ in (-1 : ℝ)..1,
+          A / ((x : ℂ) + -Complex.I)) -
+        (∫ x : ℝ in (-1 : ℝ)..1,
+          A / ((x : ℂ) + Complex.I)) =
+        (2 * Complex.I * A) * (Real.pi / 2 : ℝ) := by
+    simpa only [sub_eq_add_neg] using hhorizontal
+  unfold rectangularBoundaryIntegral
+  norm_num
+  rw [hhorizontal', add_sub_assoc, hvertical]
+  push_cast
+  ring
+
+/-- A generic simple pole with residue coefficient `A`. -/
+def simplePoleKernel (A a z : ℂ) : ℂ :=
+  A / (z - a)
+
+theorem continuous_simplePoleKernel_horizontal
+    (A a : ℂ) {b : ℝ} (hb : b ≠ a.im) :
+    Continuous (fun x : ℝ =>
+      simplePoleKernel A a ((x : ℂ) + (b : ℂ) * Complex.I)) := by
+  unfold simplePoleKernel
+  exact continuous_const.div (by fun_prop) (fun x => by
+    intro hzero
+    have him := congrArg Complex.im hzero
+    norm_num at him
+    exact hb (sub_eq_zero.mp him))
+
+theorem continuous_simplePoleKernel_vertical
+    (A a : ℂ) {r : ℝ} (hr : r ≠ a.re) :
+    Continuous (fun y : ℝ =>
+      simplePoleKernel A a ((r : ℂ) + (y : ℂ) * Complex.I)) := by
+  unfold simplePoleKernel
+  exact continuous_const.div (by fun_prop) (fun y => by
+    intro hzero
+    have hre := congrArg Complex.re hzero
+    norm_num at hre
+    exact hr (sub_eq_zero.mp hre))
+
+theorem differentiableOn_simplePoleKernel_of_not_mem
+    (A a : ℂ) {U : Set ℂ} (ha : a ∉ U) :
+    DifferentiableOn ℂ (simplePoleKernel A a) U := by
+  intro z hz
+  have hza : z ≠ a := by
+    intro h
+    subst z
+    exact ha hz
+  unfold simplePoleKernel
+  exact (analyticAt_const.div (analyticAt_id.sub analyticAt_const)
+    (sub_ne_zero.mpr hza)).differentiableAt.differentiableWithinAt
+
+theorem rectangularBoundaryIntegral_simplePoleKernel_eq_zero_of_left
+    (A a : ℂ) {l r b u : ℝ} (hlr : l ≤ r) (hr : r < a.re) :
+    rectangularBoundaryIntegral l r b u (simplePoleKernel A a) = 0 := by
+  apply rectangularBoundaryIntegral_eq_zero_of_differentiableOn
+  apply differentiableOn_simplePoleKernel_of_not_mem
+  intro ha
+  have hre : a.re ∈ Set.uIcc l r := by
+    simpa using ha.1
+  rw [uIcc_of_le hlr] at hre
+  linarith [hre.2]
+
+theorem rectangularBoundaryIntegral_simplePoleKernel_eq_zero_of_right
+    (A a : ℂ) {l r b u : ℝ} (hlr : l ≤ r) (hl : a.re < l) :
+    rectangularBoundaryIntegral l r b u (simplePoleKernel A a) = 0 := by
+  apply rectangularBoundaryIntegral_eq_zero_of_differentiableOn
+  apply differentiableOn_simplePoleKernel_of_not_mem
+  intro ha
+  have hre : a.re ∈ Set.uIcc l r := by
+    simpa using ha.1
+  rw [uIcc_of_le hlr] at hre
+  linarith [hre.1]
+
+theorem rectangularBoundaryIntegral_simplePoleKernel_eq_zero_of_below
+    (A a : ℂ) {l r b u : ℝ} (hbu : b ≤ u) (hu : u < a.im) :
+    rectangularBoundaryIntegral l r b u (simplePoleKernel A a) = 0 := by
+  apply rectangularBoundaryIntegral_eq_zero_of_differentiableOn
+  apply differentiableOn_simplePoleKernel_of_not_mem
+  intro ha
+  have him : a.im ∈ Set.uIcc b u := by
+    simpa using ha.2
+  rw [uIcc_of_le hbu] at him
+  linarith [him.2]
+
+theorem rectangularBoundaryIntegral_simplePoleKernel_eq_zero_of_above
+    (A a : ℂ) {l r b u : ℝ} (hbu : b ≤ u) (hb : a.im < b) :
+    rectangularBoundaryIntegral l r b u (simplePoleKernel A a) = 0 := by
+  apply rectangularBoundaryIntegral_eq_zero_of_differentiableOn
+  apply differentiableOn_simplePoleKernel_of_not_mem
+  intro ha
+  have him : a.im ∈ Set.uIcc b u := by
+    simpa using ha.2
+  rw [uIcc_of_le hbu] at him
+  linarith [him.1]
+
+/-- The boundary integral of a simple pole is unchanged when an outer
+rectangle is shrunk to any strictly nested rectangle still containing the
+pole.  Four pole-free rectangles account for the difference. -/
+theorem rectangularBoundaryIntegral_simplePoleKernel_shrink
+    (A a : ℂ) {l l' r' r b b' u' u : ℝ}
+    (hll' : l ≤ l') (hl'a : l' < a.re)
+    (har' : a.re < r') (hr'r : r' ≤ r)
+    (hbb' : b ≤ b') (hb'a : b' < a.im)
+    (hau' : a.im < u') (hu'u : u' ≤ u) :
+    rectangularBoundaryIntegral l r b u (simplePoleKernel A a) =
+      rectangularBoundaryIntegral l' r' b' u'
+        (simplePoleKernel A a) := by
+  have hbne : b ≠ a.im := ne_of_lt (hbb'.trans_lt hb'a)
+  have hune : u ≠ a.im := ne_of_gt (hau'.trans_le hu'u)
+  have hl'ne : l' ≠ a.re := ne_of_lt hl'a
+  have hr'ne : r' ≠ a.re := ne_of_gt har'
+  have hbcont := continuous_simplePoleKernel_horizontal A a hbne
+  have hucont := continuous_simplePoleKernel_horizontal A a hune
+  have hl'cont := continuous_simplePoleKernel_vertical A a hl'ne
+  have hr'cont := continuous_simplePoleKernel_vertical A a hr'ne
+  have hsplitLeft := rectangularBoundaryIntegral_split_re
+    l l' r b u (simplePoleKernel A a) hbcont hucont
+  have hsplitRight := rectangularBoundaryIntegral_split_re
+    l' r' r b u (simplePoleKernel A a) hbcont hucont
+  have hsplitBottom := rectangularBoundaryIntegral_split_im
+    l' r' b b' u (simplePoleKernel A a) hl'cont hr'cont
+  have hsplitTop := rectangularBoundaryIntegral_split_im
+    l' r' b' u' u (simplePoleKernel A a) hl'cont hr'cont
+  have hleftZero :
+      rectangularBoundaryIntegral l l' b u (simplePoleKernel A a) = 0 :=
+    rectangularBoundaryIntegral_simplePoleKernel_eq_zero_of_left
+      A a hll' hl'a
+  have hrightZero :
+      rectangularBoundaryIntegral r' r b u (simplePoleKernel A a) = 0 :=
+    rectangularBoundaryIntegral_simplePoleKernel_eq_zero_of_right
+      A a hr'r har'
+  have hbottomZero :
+      rectangularBoundaryIntegral l' r' b b' (simplePoleKernel A a) = 0 :=
+    rectangularBoundaryIntegral_simplePoleKernel_eq_zero_of_below
+      A a hbb' hb'a
+  have htopZero :
+      rectangularBoundaryIntegral l' r' u' u (simplePoleKernel A a) = 0 :=
+    rectangularBoundaryIntegral_simplePoleKernel_eq_zero_of_above
+      A a hu'u hau'
+  rw [hsplitLeft, hsplitRight, hsplitBottom, hsplitTop,
+    hleftZero, hrightZero, hbottomZero, htopZero]
+  ring
+
+/-- Translating both a unit square and its pole to the origin leaves the
+four parametrized boundary integrals unchanged. -/
+theorem rectangularBoundaryIntegral_centeredUnitSquare_translate
+    (A a : ℂ) :
+    rectangularBoundaryIntegral
+        (a.re - 1) (a.re + 1) (a.im - 1) (a.im + 1)
+        (simplePoleKernel A a) =
+      rectangularBoundaryIntegral (-1) 1 (-1) 1
+        (fun z : ℂ => A / z) := by
+  have hhorizontal (c : ℝ) :
+      (∫ x : ℝ in a.re - 1..a.re + 1,
+          simplePoleKernel A a
+            ((x : ℂ) + ((a.im + c : ℝ) : ℂ) * Complex.I)) =
+        ∫ x : ℝ in (-1 : ℝ)..1,
+          A / ((x : ℂ) + (c : ℂ) * Complex.I) := by
+    rw [show a.re - 1 = a.re + (-1) by ring]
+    rw [← intervalIntegral.integral_comp_add_left
+      (f := fun x : ℝ => simplePoleKernel A a
+        ((x : ℂ) + ((a.im + c : ℝ) : ℂ) * Complex.I)) a.re]
+    apply intervalIntegral.integral_congr
+    intro x hx
+    unfold simplePoleKernel
+    apply congrArg (fun w : ℂ => A / w)
+    push_cast
+    linear_combination Complex.re_add_im a
+  have hvertical (c : ℝ) :
+      (∫ y : ℝ in a.im - 1..a.im + 1,
+          simplePoleKernel A a
+            (((a.re + c : ℝ) : ℂ) + (y : ℂ) * Complex.I)) =
+        ∫ y : ℝ in (-1 : ℝ)..1,
+          A / ((c : ℂ) + (y : ℂ) * Complex.I) := by
+    rw [show a.im - 1 = a.im + (-1) by ring]
+    rw [← intervalIntegral.integral_comp_add_left
+      (f := fun y : ℝ => simplePoleKernel A a
+        (((a.re + c : ℝ) : ℂ) + (y : ℂ) * Complex.I)) a.im]
+    apply intervalIntegral.integral_congr
+    intro y hy
+    unfold simplePoleKernel
+    apply congrArg (fun w : ℂ => A / w)
+    push_cast
+    linear_combination Complex.re_add_im a
+  have hhorizontalNeg :
+      (∫ x : ℝ in a.re - 1..a.re + 1,
+          simplePoleKernel A a
+            ((x : ℂ) + ((a.im - 1 : ℝ) : ℂ) * Complex.I)) =
+        ∫ x : ℝ in (-1 : ℝ)..1,
+          A / ((x : ℂ) + ((-1 : ℝ) : ℂ) * Complex.I) := by
+    simpa only [sub_eq_add_neg] using hhorizontal (-1)
+  have hverticalNeg :
+      (∫ y : ℝ in a.im - 1..a.im + 1,
+          simplePoleKernel A a
+            (((a.re - 1 : ℝ) : ℂ) + (y : ℂ) * Complex.I)) =
+        ∫ y : ℝ in (-1 : ℝ)..1,
+          A / (((-1 : ℝ) : ℂ) + (y : ℂ) * Complex.I) := by
+    simpa only [sub_eq_add_neg] using hvertical (-1)
+  unfold rectangularBoundaryIntegral
+  rw [hhorizontalNeg, hhorizontal 1, hvertical 1, hverticalNeg]
+
+theorem rectangularBoundaryIntegral_centeredUnitSquare_simplePoleKernel
+    (A a : ℂ) :
+    rectangularBoundaryIntegral
+        (a.re - 1) (a.re + 1) (a.im - 1) (a.im + 1)
+        (simplePoleKernel A a) =
+      (2 * Real.pi : ℝ) * Complex.I * A := by
+  rw [rectangularBoundaryIntegral_centeredUnitSquare_translate]
+  exact rectangularBoundaryIntegral_unitSquare_div A
+
+/-- Exact elementary residue theorem for one simple pole in an arbitrary
+axis-parallel rectangle.  The proof embeds both this rectangle and the
+normalized unit square in one larger rectangle and uses the shrink theorem
+twice. -/
+theorem rectangularBoundaryIntegral_simplePoleKernel_of_mem
+    (A a : ℂ) {l r b u : ℝ}
+    (hl : l < a.re) (hr : a.re < r)
+    (hb : b < a.im) (hu : a.im < u) :
+    rectangularBoundaryIntegral l r b u (simplePoleKernel A a) =
+      (2 * Real.pi : ℝ) * Complex.I * A := by
+  let D : ℝ :=
+    |l - a.re| + |r - a.re| + |b - a.im| + |u - a.im| + 2
+  have hD : 1 < D := by
+    dsimp [D]
+    linarith [abs_nonneg (l - a.re), abs_nonneg (r - a.re),
+      abs_nonneg (b - a.im), abs_nonneg (u - a.im)]
+  have hLl : a.re - D ≤ l := by
+    dsimp [D]
+    linarith [neg_le_abs (l - a.re),
+      abs_nonneg (r - a.re), abs_nonneg (b - a.im),
+      abs_nonneg (u - a.im)]
+  have hRr : r ≤ a.re + D := by
+    dsimp [D]
+    linarith [le_abs_self (r - a.re),
+      abs_nonneg (l - a.re), abs_nonneg (b - a.im),
+      abs_nonneg (u - a.im)]
+  have hBb : a.im - D ≤ b := by
+    dsimp [D]
+    linarith [neg_le_abs (b - a.im),
+      abs_nonneg (l - a.re), abs_nonneg (r - a.re),
+      abs_nonneg (u - a.im)]
+  have hUu : u ≤ a.im + D := by
+    dsimp [D]
+    linarith [le_abs_self (u - a.im),
+      abs_nonneg (l - a.re), abs_nonneg (r - a.re),
+      abs_nonneg (b - a.im)]
+  have hcommonGiven :=
+    rectangularBoundaryIntegral_simplePoleKernel_shrink
+      A a hLl hl hr hRr hBb hb hu hUu
+  have hcommonUnit :=
+    rectangularBoundaryIntegral_simplePoleKernel_shrink
+      A a
+      (show a.re - D ≤ a.re - 1 by linarith)
+      (show a.re - 1 < a.re by linarith)
+      (show a.re < a.re + 1 by linarith)
+      (show a.re + 1 ≤ a.re + D by linarith)
+      (show a.im - D ≤ a.im - 1 by linarith)
+      (show a.im - 1 < a.im by linarith)
+      (show a.im < a.im + 1 by linarith)
+      (show a.im + 1 ≤ a.im + D by linarith)
+  calc
+    rectangularBoundaryIntegral l r b u (simplePoleKernel A a) =
+        rectangularBoundaryIntegral (a.re - D) (a.re + D)
+          (a.im - D) (a.im + D) (simplePoleKernel A a) :=
+      hcommonGiven.symm
+    _ = rectangularBoundaryIntegral
+          (a.re - 1) (a.re + 1) (a.im - 1) (a.im + 1)
+          (simplePoleKernel A a) := hcommonUnit
+    _ = (2 * Real.pi : ℝ) * Complex.I * A :=
+      rectangularBoundaryIntegral_centeredUnitSquare_simplePoleKernel A a
+
+theorem spectralRectangleBoundaryIntegral_eq_rectangularBoundaryIntegral
+    (T : ℝ) (f : ℂ → ℂ) :
+    spectralRectangleBoundaryIntegral T f =
+      rectangularBoundaryIntegral (-T) T (-1) 1 f := by
+  unfold spectralRectangleBoundaryIntegral rectangularBoundaryIntegral
+  norm_num
+  simp only [sub_eq_add_neg]
+
+/-- Each multiplicity-weighted xi principal part contributes exactly
+`2πi` times its residue to a zero-free spectral rectangle containing it. -/
+theorem spectralRectangleBoundaryIntegral_gaussianXiSpectralPrincipalPart
+    (ε t : ℝ) {T : ℝ} (hT : 0 ≤ T)
+    (hboundary : ∀ ρ : NontrivialZetaZero,
+      |(zetaSpectralCoordinate ρ.1).re| ≠ T)
+    (ρ : NontrivialZetaZero)
+    (hρ : ρ ∈ spectralZetaZeroWindow T) :
+    spectralRectangleBoundaryIntegral T
+        (gaussianXiSpectralPrincipalPart ε t ρ) =
+      (2 * Real.pi : ℝ) * Complex.I *
+        gaussianXiSpectralResidue ε t ρ := by
+  let a : ℂ := zetaSpectralCoordinate ρ.1
+  have hreLe : |a.re| ≤ T := by
+    exact (mem_spectralZetaZeroWindow hT ρ).mp hρ
+  have hreLt : |a.re| < T :=
+    lt_of_le_of_ne hreLe (hboundary ρ)
+  have hre : -T < a.re ∧ a.re < T := by
+    exact (abs_lt.mp hreLt)
+  have himHalf : |a.im| < (1 / 2 : ℝ) :=
+    NontrivialZetaZero.abs_spectralCoordinate_im_lt_half ρ
+  have him : (-1 : ℝ) < a.im ∧ a.im < 1 := by
+    rcases abs_lt.mp himHalf with ⟨hlower, hupper⟩
+    constructor <;> linarith
+  rw [spectralRectangleBoundaryIntegral_eq_rectangularBoundaryIntegral]
+  change rectangularBoundaryIntegral (-T) T (-1) 1
+      (simplePoleKernel (gaussianXiSpectralResidue ε t ρ) a) = _
+  exact rectangularBoundaryIntegral_simplePoleKernel_of_mem
+    (gaussianXiSpectralResidue ε t ρ) a hre.1 hre.2 him.1 him.2
+
+/-- Multiplying the spectral residue by `2πi` produces minus `2π` times
+the corresponding multiplicity-weighted symmetric Gaussian summand. -/
+lemma two_pi_I_mul_gaussianXiSpectralResidue
+    (ε t : ℝ) (ρ : NontrivialZetaZero) :
+    (2 * Real.pi : ℝ) * Complex.I *
+        gaussianXiSpectralResidue ε t ρ =
+      -(((2 * Real.pi : ℝ) : ℂ)) *
+        ((analyticZetaZeroMultiplicity ρ : ℂ) *
+          complexSymmetricGaussian ε t
+            (zetaSpectralCoordinate ρ.1)) := by
+  unfold gaussianXiSpectralResidue
+  calc
+    (2 * Real.pi : ℝ) * Complex.I *
+          (complexSymmetricGaussian ε t
+            (zetaSpectralCoordinate ρ.1) *
+              (Complex.I * (analyticZetaZeroMultiplicity ρ : ℂ))) =
+        (((2 * Real.pi : ℝ) : ℂ)) *
+          (Complex.I * Complex.I) *
+            ((analyticZetaZeroMultiplicity ρ : ℂ) *
+              complexSymmetricGaussian ε t
+                (zetaSpectralCoordinate ρ.1)) := by
+      ring
+    _ = -(((2 * Real.pi : ℝ) : ℂ)) *
+          ((analyticZetaZeroMultiplicity ρ : ℂ) *
+            complexSymmetricGaussian ε t
+              (zetaSpectralCoordinate ρ.1)) := by
+      rw [Complex.I_mul_I]
+      ring
+
 /-- Interval integrability of a function on all four parametrized sides of
 the spectral rectangle. -/
 def spectralRectangleBoundaryIntegrable (T : ℝ) (f : ℂ → ℂ) : Prop :=
@@ -1003,6 +1409,26 @@ theorem spectralRectangleBoundaryIntegral_sub
     intervalIntegral.integral_sub hfleft hgleft]
   ring
 
+/-- The spectral rectangle boundary integral commutes with a finite sum
+when every summand is integrable on all four sides. -/
+theorem spectralRectangleBoundaryIntegral_finsetSum
+    {α : Type*} (T : ℝ) (S : Finset α) (f : α → ℂ → ℂ)
+    (hf : ∀ i ∈ S, spectralRectangleBoundaryIntegrable T (f i)) :
+    spectralRectangleBoundaryIntegral T
+        (fun z => ∑ i ∈ S, f i z) =
+      ∑ i ∈ S, spectralRectangleBoundaryIntegral T (f i) := by
+  unfold spectralRectangleBoundaryIntegral
+  rw [intervalIntegral.integral_finsetSum
+      (fun i hi => (hf i hi).1),
+    intervalIntegral.integral_finsetSum
+      (fun i hi => (hf i hi).2.1),
+    intervalIntegral.integral_finsetSum
+      (fun i hi => (hf i hi).2.2.1),
+    intervalIntegral.integral_finsetSum
+      (fun i hi => (hf i hi).2.2.2)]
+  simp only [Finset.sum_sub_distrib, Finset.sum_add_distrib,
+    Finset.mul_sum]
+
 lemma continuous_comp_of_forall_analyticAt
     (f : ℂ → ℂ) (γ : ℝ → ℂ) (hγ : Continuous γ)
     (hf : ∀ x, AnalyticAt ℂ f (γ x)) :
@@ -1010,6 +1436,50 @@ lemma continuous_comp_of_forall_analyticAt
   rw [continuous_iff_continuousAt]
   intro x
   exact (hf x).continuousAt.comp hγ.continuousAt
+
+/-- A principal part belonging to the finite zero window is integrable on
+all four zero-free sides of the spectral rectangle. -/
+theorem spectralRectangleBoundaryIntegrable_gaussianXiSpectralPrincipalPart
+    (ε t : ℝ) {T : ℝ} (hT : 0 ≤ T)
+    (hboundary : ∀ ρ : NontrivialZetaZero,
+      |(zetaSpectralCoordinate ρ.1).re| ≠ T)
+    (ρ : NontrivialZetaZero)
+    (hρ : ρ ∈ spectralZetaZeroWindow T) :
+    spectralRectangleBoundaryIntegrable T
+      (gaussianXiSpectralPrincipalPart ε t ρ) := by
+  have hanalytic {z : ℂ} (hz : z ∉ spectralXiZeroWindow T) :
+      AnalyticAt ℂ (gaussianXiSpectralPrincipalPart ε t ρ) z := by
+    apply analyticAt_gaussianXiSpectralPrincipalPart_of_ne
+    intro heq
+    apply hz
+    apply Finset.mem_image.mpr
+    exact ⟨ρ, hρ, heq.symm⟩
+  unfold spectralRectangleBoundaryIntegrable
+  refine ⟨?_, ?_, ?_, ?_⟩
+  · apply (continuous_comp_of_forall_analyticAt
+      (gaussianXiSpectralPrincipalPart ε t ρ)
+      (fun x : ℝ => (x : ℂ) - Complex.I) (by fun_prop) ?_).intervalIntegrable
+    intro x
+    exact hanalytic (lower_safeLine_not_mem_spectralXiZeroWindow T x)
+  · apply (continuous_comp_of_forall_analyticAt
+      (gaussianXiSpectralPrincipalPart ε t ρ)
+      (fun x : ℝ => (x : ℂ) + Complex.I) (by fun_prop) ?_).intervalIntegrable
+    intro x
+    exact hanalytic (upper_safeLine_not_mem_spectralXiZeroWindow T x)
+  · apply (continuous_comp_of_forall_analyticAt
+      (gaussianXiSpectralPrincipalPart ε t ρ)
+      (fun y : ℝ => (T : ℂ) + (y : ℂ) * Complex.I)
+      (by fun_prop) ?_).intervalIntegrable
+    intro y
+    exact hanalytic
+      (right_vertical_not_mem_spectralXiZeroWindow hT hboundary y)
+  · apply (continuous_comp_of_forall_analyticAt
+      (gaussianXiSpectralPrincipalPart ε t ρ)
+      (fun y : ℝ => (-T : ℂ) + (y : ℂ) * Complex.I)
+      (by fun_prop) ?_).intervalIntegrable
+    intro y
+    exact hanalytic
+      (left_vertical_not_mem_spectralXiZeroWindow hT hboundary y)
 
 theorem spectralRectangleBoundaryIntegrable_gaussianXiSpectralIntegrand
     (ε t : ℝ) {T : ℝ} (hT : 0 ≤ T)
@@ -1084,6 +1554,45 @@ theorem spectralRectangleBoundaryIntegrable_gaussianXiWindowPrincipalSum
     intro y
     exact analyticAt_gaussianXiWindowPrincipalSum_of_not_mem ε t T
       (left_vertical_not_mem_spectralXiZeroWindow hT hboundary y)
+
+/-- The contour integral of the complete finite principal-part sum is
+exactly the sum of the individual `2πi` residues. -/
+theorem spectralRectangleBoundaryIntegral_gaussianXiWindowPrincipalSum_residues
+    (ε t : ℝ) {T : ℝ} (hT : 0 ≤ T)
+    (hboundary : ∀ ρ : NontrivialZetaZero,
+      |(zetaSpectralCoordinate ρ.1).re| ≠ T) :
+    spectralRectangleBoundaryIntegral T
+        (gaussianXiWindowPrincipalSum ε t T) =
+      ∑ ρ ∈ spectralZetaZeroWindow T,
+        (2 * Real.pi : ℝ) * Complex.I *
+          gaussianXiSpectralResidue ε t ρ := by
+  unfold gaussianXiWindowPrincipalSum
+  rw [spectralRectangleBoundaryIntegral_finsetSum]
+  · apply Finset.sum_congr rfl
+    intro ρ hρ
+    exact spectralRectangleBoundaryIntegral_gaussianXiSpectralPrincipalPart
+      ε t hT hboundary ρ hρ
+  · intro ρ hρ
+    exact
+      spectralRectangleBoundaryIntegrable_gaussianXiSpectralPrincipalPart
+        ε t hT hboundary ρ hρ
+
+/-- Thus the finite principal-part contour is minus `2π` times the
+multiplicity-weighted symmetric Gaussian zero sum in the window. -/
+theorem spectralRectangleBoundaryIntegral_gaussianXiWindowPrincipalSum
+    (ε t : ℝ) {T : ℝ} (hT : 0 ≤ T)
+    (hboundary : ∀ ρ : NontrivialZetaZero,
+      |(zetaSpectralCoordinate ρ.1).re| ≠ T) :
+    spectralRectangleBoundaryIntegral T
+        (gaussianXiWindowPrincipalSum ε t T) =
+      -(((2 * Real.pi : ℝ) : ℂ)) * gaussianXiWindowZeroSum ε t T := by
+  rw [spectralRectangleBoundaryIntegral_gaussianXiWindowPrincipalSum_residues
+    ε t hT hboundary]
+  unfold gaussianXiWindowZeroSum
+  rw [Finset.mul_sum]
+  apply Finset.sum_congr rfl
+  intro ρ hρ
+  exact two_pi_I_mul_gaussianXiSpectralResidue ε t ρ
 
 /-- Finite-rectangle Cauchy identity after removing every spectral xi pole
 in the window.  The vertical-boundary hypothesis merely says that the
@@ -1163,6 +1672,22 @@ theorem gaussianXiSpectralIntegrand_rectangle_eq_windowPrincipalSum
         gaussianXiWindowPrincipalSum ε t T z) = 0 at hraw
   rw [hsub] at hraw
   exact sub_eq_zero.mp hraw
+
+/-- Exact finite xi divisor formula: on every zero-free truncation
+rectangle, the original Gaussian-weighted xi logarithmic derivative has
+boundary integral `-2π` times the multiplicity-counted symmetric Gaussian
+sum over precisely the enclosed nontrivial zeta zeros. -/
+theorem gaussianXiSpectralIntegrand_rectangle_eq_windowZeroSum
+    (ε t : ℝ) {T : ℝ} (hT : 0 ≤ T)
+    (hboundary : ∀ ρ : NontrivialZetaZero,
+      |(zetaSpectralCoordinate ρ.1).re| ≠ T) :
+    spectralRectangleBoundaryIntegral T
+        (gaussianXiSpectralIntegrand ε t) =
+      -(((2 * Real.pi : ℝ) : ℂ)) * gaussianXiWindowZeroSum ε t T := by
+  rw [gaussianXiSpectralIntegrand_rectangle_eq_windowPrincipalSum
+      ε t hT hboundary,
+    spectralRectangleBoundaryIntegral_gaussianXiWindowPrincipalSum
+      ε t hT hboundary]
 
 theorem tendsto_zetaSpectralCoordinate_mul_gaussianXiSpectralIntegrand
     (ε t : ℝ) (ρ : NontrivialZetaZero) :
