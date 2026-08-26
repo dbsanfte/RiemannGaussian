@@ -307,7 +307,13 @@ What is checked here:
   the complementary finite-model difference-quotient coordinate and proves
   the exact orthogonal-projection identity
   `k_w - P_(K_S) k_w = conj(S(w)) • S k_w`, together with the resulting
-  weighted inner-product formula for two actual projection residuals;
+  weighted inner-product formula for two actual projection residuals.  For
+  two distinct upper nodes, the Cauchy vectors are proved linearly independent
+  and their base Gram determinant strictly positive; the four actual residual
+  Gram entries and the full residual-versus-base pencil are identified
+  literally with the checked weighted matrices.  In particular Lean proves
+  the unconditional determinant ratio
+  `det(W) / det(G) = |S(w₀) * S(w₁)|²`, without assuming distinct metric modes;
 - the exact root-count bridge behind that degree inequality: conjugation
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
@@ -393,8 +399,11 @@ What is not yet checked here:
   orthogonal cross angle is strictly contractive, and residual-inner shifted
   Cauchy vectors are now rigorously orthogonal to the residual model, with
   their complementary model-kernel component and actual orthogonal projection
-  now identified, the resulting two-node Hardy Gram matrix has not yet been
-  identified entrywise with the checked weighted metric pencil.  No claim is made that the auxiliary
+  now identified, and the resulting two-node Hardy Gram matrix is identified
+  entrywise with the checked weighted metric pencil.  What remains is the
+  basis-independent operator/determinant theorem identifying that concrete
+  ratio with `det(I - C† C)` for the actual cross angle and the associated
+  metric-mode product.  No claim is made that the auxiliary
   Euclidean coefficient norm is the Hardy boundary norm.  Spectral completeness for
   all `±sqrt(1-s_j^2)` pencil modes is also not yet formalized beyond the
   checked scalar and analytic one-pair cases. Nor is any infinite-dimensional
