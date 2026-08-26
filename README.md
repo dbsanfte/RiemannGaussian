@@ -273,6 +273,10 @@ What is checked here:
   first-coordinate cross angle is proved pointwise strictly contractive, and
   it is proved injective under the isolated degree inequality; Lean then
   derives the exact Gram--Weil defect inertia from the abstract block theorem;
+- the exact root-count bridge behind that degree inequality: conjugation
+  proves equal upper/lower counts at homotopy parameter zero, and Lean proves
+  that invariance of the upper count from zero to the target parameter implies
+  the required degree inequality, cross-angle injectivity, and defect inertia;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
