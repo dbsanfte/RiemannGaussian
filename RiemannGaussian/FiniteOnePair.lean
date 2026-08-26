@@ -26,8 +26,7 @@ theorem integrable_inv_sq_add_sq {a : ℝ} (ha : 0 < a) :
   have hconst := hscaled.const_mul (a ^ 2)⁻¹
   convert hconst using 1
   ext x
-  field_simp [ha.ne']
-  <;> ring
+  field_simp [ha.ne']; ring
 
 /-- Exact full-line Cauchy-kernel integral at positive scale. -/
 theorem integral_inv_sq_add_sq {a : ℝ} (ha : 0 < a) :
@@ -37,8 +36,7 @@ theorem integral_inv_sq_add_sq {a : ℝ} (ha : 0 < a) :
         ∫ x : ℝ, (a ^ 2)⁻¹ * (1 + (x / a) ^ 2)⁻¹ := by
           apply integral_congr_ae
           filter_upwards [] with x
-          field_simp [ha.ne']
-          <;> ring
+          field_simp [ha.ne']; ring
     _ = (a ^ 2)⁻¹ * ∫ x : ℝ, (1 + (x / a) ^ 2)⁻¹ :=
       integral_const_mul _ _
     _ = (a ^ 2)⁻¹ * (|a| • ∫ x : ℝ, (1 + x ^ 2)⁻¹) := by
@@ -52,7 +50,6 @@ theorem integral_inv_sq_add_sq {a : ℝ} (ha : 0 < a) :
       rw [integral_univ_inv_one_add_sq, abs_of_pos ha]
       change (a ^ 2)⁻¹ * (a * Real.pi) = Real.pi / a
       field_simp [ha.ne']
-      <;> ring
 
 /-- Integrability of the product of two distinct positive Cauchy kernels. -/
 theorem integrable_inv_two_sq_add_sq {u v : ℝ}
@@ -69,8 +66,7 @@ theorem integrable_inv_two_sq_add_sq {u v : ℝ}
   ext x
   have hxu : x ^ 2 + u ^ 2 ≠ 0 := by positivity
   have hxv : x ^ 2 + v ^ 2 ≠ 0 := by positivity
-  field_simp [hgap, hxu, hxv]
-  <;> ring
+  field_simp [hgap, hxu, hxv]; ring
 
 /-- The first rational integral in the finite one-pair calculation. -/
 theorem integral_inv_two_sq_add_sq {u v : ℝ}
@@ -89,16 +85,14 @@ theorem integral_inv_two_sq_add_sq {u v : ℝ}
       filter_upwards [] with x
       have hxu : x ^ 2 + u ^ 2 ≠ 0 := by positivity
       have hxv : x ^ 2 + v ^ 2 ≠ 0 := by positivity
-      field_simp [hgap, hxu, hxv]
-      <;> ring
+      field_simp [hgap, hxu, hxv]; ring
     _ = (v ^ 2 - u ^ 2)⁻¹ *
         ((∫ x : ℝ, (x ^ 2 + u ^ 2)⁻¹) -
           ∫ x : ℝ, (x ^ 2 + v ^ 2)⁻¹) := by
       rw [integral_const_mul, integral_sub huInt hvInt]
     _ = Real.pi / (u * v * (u + v)) := by
       rw [integral_inv_sq_add_sq hu, integral_inv_sq_add_sq hv]
-      field_simp [hu.ne', hv.ne', hgap]
-      <;> ring
+      field_simp [hu.ne', hv.ne', hgap]; ring
 
 /-- Integrability of the quadratic-numerator two-pole kernel. -/
 theorem integrable_sq_div_two_sq_add_sq {u v : ℝ}
@@ -117,8 +111,7 @@ theorem integrable_sq_div_two_sq_add_sq {u v : ℝ}
       u ^ 2 * ((x ^ 2 + u ^ 2) * (x ^ 2 + v ^ 2))⁻¹
   have hxu : x ^ 2 + u ^ 2 ≠ 0 := by positivity
   have hxv : x ^ 2 + v ^ 2 ≠ 0 := by positivity
-  field_simp [hxu, hxv]
-  <;> ring
+  field_simp [hxu, hxv]; ring
 
 /-- The second rational integral in the finite one-pair calculation. -/
 theorem integral_sq_div_two_sq_add_sq {u v : ℝ}
@@ -138,8 +131,7 @@ theorem integral_sq_div_two_sq_add_sq {u v : ℝ}
       filter_upwards [] with x
       have hxu : x ^ 2 + u ^ 2 ≠ 0 := by positivity
       have hxv : x ^ 2 + v ^ 2 ≠ 0 := by positivity
-      field_simp [hxu, hxv]
-      <;> ring
+      field_simp [hxu, hxv]; ring
     _ = (∫ x : ℝ, (x ^ 2 + v ^ 2)⁻¹) -
         u ^ 2 * ∫ x : ℝ,
           ((x ^ 2 + u ^ 2) * (x ^ 2 + v ^ 2))⁻¹ := by
@@ -148,8 +140,7 @@ theorem integral_sq_div_two_sq_add_sq {u v : ℝ}
     _ = Real.pi / (u + v) := by
       rw [integral_inv_sq_add_sq hv,
         integral_inv_two_sq_add_sq hu huv]
-      field_simp [hu.ne', hv.ne']
-      <;> ring
+      field_simp [hu.ne', hv.ne']; ring
 
 /-- The odd-numerator two-pole kernel is absolutely integrable. -/
 theorem integrable_id_div_two_sq_add_sq {u v : ℝ}
@@ -179,7 +170,6 @@ theorem integrable_id_div_two_sq_add_sq {u v : ℝ}
       |x| / ((x ^ 2 + u ^ 2) * (x ^ 2 + v ^ 2)) =
           (|x| / (x ^ 2 + u ^ 2)) * (x ^ 2 + v ^ 2)⁻¹ := by
             field_simp [hxu.ne', hxv.ne']
-            <;> ring
       _ ≤ (2 * u)⁻¹ * (x ^ 2 + v ^ 2)⁻¹ :=
         mul_le_mul_of_nonneg_right hfirst (by positivity)
 
@@ -288,7 +278,6 @@ theorem finiteOnePair_normKernel_integrable {a : ℝ} (ha : 0 < a) :
       have hv : 0 < v := hu.trans huv
       positivity
     field_simp [hxu, hxv]
-    <;> ring
   rw [hfun]
   exact hsum
 
@@ -318,7 +307,6 @@ theorem finiteOnePair_normKernel_integral {a : ℝ} (ha : 0 < a) :
       have hxu : x ^ 2 + u ^ 2 ≠ 0 := by positivity
       have hxv : x ^ 2 + v ^ 2 ≠ 0 := by positivity
       field_simp [hxu, hxv]
-      <;> ring
     _ = (∫ x : ℝ,
           x ^ 2 / ((x ^ 2 + u ^ 2) * (x ^ 2 + v ^ 2))) +
         a ^ 2 * ∫ x : ℝ,
@@ -333,8 +321,7 @@ theorem finiteOnePair_normKernel_integral {a : ℝ} (ha : 0 < a) :
       have hb : 0 < finiteOnePairB a := by
         nlinarith [finiteOnePairB_gt_one ha]
       rw [← huvEq, hsum]
-      field_simp [hu.ne', hv.ne', hb.ne']
-      <;> ring
+      field_simp [hu.ne', hv.ne', hb.ne']; ring
 
 theorem finiteOnePair_crossRealKernel_integrable {a : ℝ} (ha : 0 < a) :
     Integrable (fun x : ℝ =>
@@ -358,7 +345,6 @@ theorem finiteOnePair_crossRealKernel_integrable {a : ℝ} (ha : 0 < a) :
     have hv : 0 < v := hu.trans huv
     positivity
   field_simp [hxu, hxv]
-  <;> ring
 
 /-- The real part of the off-diagonal Gram entry vanishes exactly. -/
 theorem finiteOnePair_crossRealKernel_integral {a : ℝ} (ha : 0 < a) :
@@ -385,7 +371,6 @@ theorem finiteOnePair_crossRealKernel_integral {a : ℝ} (ha : 0 < a) :
       have hxu : x ^ 2 + u ^ 2 ≠ 0 := by positivity
       have hxv : x ^ 2 + v ^ 2 ≠ 0 := by positivity
       field_simp [hxu, hxv]
-      <;> ring
     _ = (∫ x : ℝ,
           x ^ 2 / ((x ^ 2 + u ^ 2) * (x ^ 2 + v ^ 2))) -
         a ^ 2 * ∫ x : ℝ,
@@ -396,8 +381,7 @@ theorem finiteOnePair_crossRealKernel_integral {a : ℝ} (ha : 0 < a) :
         integral_inv_two_sq_add_sq hu huv]
       have huvEq : u * v = a ^ 2 := finiteOnePairU_mul_V a
       rw [← huvEq]
-      field_simp [hu.ne', hv.ne']
-      <;> ring
+      field_simp [hu.ne', hv.ne']; ring
 
 theorem finiteOnePair_crossImagKernel_integrable {a : ℝ} (ha : 0 < a) :
     Integrable (fun x : ℝ =>
@@ -509,8 +493,8 @@ theorem finiteOnePair_crossTerm_pointwise (a x : ℝ) :
             (conj (finiteOnePairE a x) *
               finiteOnePairE a x)) := by
       simp only [finiteOnePairFPlus, finiteOnePairFMinus,
-        map_mul, map_div₀, map_add, map_sub, Complex.conj_ofReal,
-        Complex.conj_I, neg_mul, mul_neg]
+        map_mul, map_div₀, map_add, Complex.conj_ofReal,
+        Complex.conj_I, mul_neg]
       ring
     _ = (Real.pi⁻¹ : ℂ) *
         ((((x : ℂ) - (a : ℂ) * Complex.I) ^ 2) /
@@ -530,16 +514,12 @@ theorem finiteOnePair_crossTerm_pointwise_re_im {a : ℝ} (ha : 0 < a)
         Complex.I := by
   rw [finiteOnePair_crossTerm_pointwise]
   apply Complex.ext
-  · simp [Complex.div_re, Complex.I_sq, ← Complex.ofReal_pow]
+  · simp [Complex.div_re]
     have hden := (finiteOnePairDenominator_pos ha x).ne'
-    field_simp [hden, Real.pi_ne_zero]
-    <;> simp [pow_two, Complex.mul_re, Complex.mul_im]
-    <;> ring
-  · simp [Complex.div_im, Complex.I_sq, ← Complex.ofReal_pow]
+    field_simp [hden, Real.pi_ne_zero]; simp [pow_two, Complex.mul_re, Complex.mul_im]
+  · simp [Complex.div_im]
     have hden := (finiteOnePairDenominator_pos ha x).ne'
-    field_simp [hden, Real.pi_ne_zero]
-    <;> simp [pow_two, Complex.mul_re, Complex.mul_im]
-    <;> ring
+    field_simp [hden, Real.pi_ne_zero]; simp [pow_two, Complex.mul_re, Complex.mul_im]; ring
 
 theorem finiteOnePairFPlus_normSq_integrable {a : ℝ} (ha : 0 < a) :
     Integrable (fun x : ℝ => Complex.normSq (finiteOnePairFPlus a x)) := by

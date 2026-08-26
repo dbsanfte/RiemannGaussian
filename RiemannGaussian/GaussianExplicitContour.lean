@@ -28,7 +28,6 @@ lemma complexTranslatedGaussian_safeLine_mul_cexp_eq_quadratic
           (ε : ℂ) * ((t : ℂ) + Complex.I) ^ 2) := by
   rw [complexTranslatedGaussian, ← Complex.exp_add]
   congr 1
-  push_cast
   ring
 
 theorem integrable_complexTranslatedGaussian_safeLine_mul_cexp
@@ -44,7 +43,8 @@ theorem integrable_complexTranslatedGaussian_safeLine_mul_cexp
     (by
       dsimp only
       rw [complexTranslatedGaussian_safeLine_mul_cexp_eq_quadratic]
-      congr 1 <;> ring))
+      congr 1
+      ring))
 
 /-- Exact Fourier transform of a translated entire Gaussian on the safe
 spectral line `u - I`. -/
@@ -72,7 +72,8 @@ theorem integral_complexTranslatedGaussian_safeLine_mul_cexp
           Complex.I * x) * u +
         (-(ε : ℂ)) * ((t : ℂ) + Complex.I) ^ 2) by
       funext u
-      congr 1 <;> ring]
+      congr 1
+      ring]
   rw [integral_cexp_quadratic
     (b := (-ε : ℂ)) (by simpa using neg_lt_zero.mpr hε)
     (2 * (ε : ℂ) * ((t : ℂ) + Complex.I) - Complex.I * x)
@@ -148,10 +149,7 @@ theorem integral_complexSymmetricGaussian_safeLine_mul_cexp
   rw [show x - x ^ 2 / (4 * ε) = A by rfl]
   rw [hminus, hplus, Complex.exp_add, Complex.exp_add,
     Complex.exp_mul_I, Complex.exp_mul_I]
-  simp only [Complex.exp_ofReal_re, Complex.exp_ofReal_im,
-    Complex.cos_ofReal_re, Complex.cos_ofReal_im,
-    Complex.sin_ofReal_re, Complex.sin_ofReal_im,
-    Complex.ofReal_neg, Complex.cos_neg, Complex.sin_neg]
+  simp only [Complex.ofReal_neg, Complex.cos_neg, Complex.sin_neg]
   push_cast
   ring
 
@@ -294,7 +292,7 @@ theorem integrable_complexSymmetricGaussian_mul_vonMangoldt_LSeriesTerm
           (3 / 2 + Complex.I * (u : ℂ)) n) := by
   by_cases hn : n = 0
   · subst n
-    simpa using (integrable_zero : Integrable (fun _ : ℝ => (0 : ℂ)))
+    simp
   let C : ℂ := ArithmeticFunction.vonMangoldt n *
     Real.exp (-(3 / 2 : ℝ) * Real.log n)
   have hbase :=

@@ -135,7 +135,7 @@ theorem upperHalfPlanePickKernel_cross_of_neg_value
         (B z * (Complex.I / (z - starRingEnd ℂ p))) s := by
   unfold upperHalfPlanePickKernel normalizedPickCross
   rw [hz, hp]
-  simp only [map_neg, neg_mul, neg_neg]
+  simp only [neg_mul]
   ring
 
 theorem symmetricPickKernel_self_plus_eq_baseA
@@ -355,7 +355,7 @@ theorem twoHermitianInvForm_first_feature
   rw [show (Complex.normSq (a * d - b * c) : ℂ) =
       starRingEnd ℂ (a * d - b * c) * (a * d - b * c) by
     exact Complex.normSq_eq_conj_mul_self]
-  simp only [map_add, map_sub, map_mul, map_div₀]
+  simp only [map_sub, map_mul, map_div₀]
   have hwedgeStar : starRingEnd ℂ (a * d - b * c) ≠ 0 :=
     star_ne_zero.mpr hwedge
   field_simp [hwedge, hwedgeStar]
@@ -673,7 +673,7 @@ theorem elementaryBlaschke_neg_conj
       starRingEnd ℂ
         (elementaryUpperHalfPlaneBlaschke (-starRingEnd ℂ p) z) := by
   unfold elementaryUpperHalfPlaneBlaschke
-  simp [map_div₀, map_sub, map_neg, inv_neg]
+  simp [map_div₀, map_neg]
   rw [show -starRingEnd ℂ z - p =
       -(starRingEnd ℂ z + p) by ring]
   rw [show -starRingEnd ℂ z - starRingEnd ℂ p =
@@ -687,7 +687,7 @@ theorem elementaryFeature_neg_conj
   have him : (-starRingEnd ℂ p).im = p.im := by simp
   unfold elementaryPickFeature
   rw [him]
-  simp [map_div₀, map_sub, map_neg, inv_neg]
+  simp [map_div₀, map_neg]
   rw [show -starRingEnd ℂ z - starRingEnd ℂ p =
       -(starRingEnd ℂ z + starRingEnd ℂ p) by ring]
   rw [div_neg]
@@ -754,7 +754,7 @@ theorem conjugateSymmetric_core_identity
             (z - starRingEnd ℂ (-starRingEnd ℂ p))) by
     exact Complex.normSq_eq_conj_mul_self]
   simp only [Complex.neg_im, Complex.conj_im, neg_neg]
-  simp only [map_div₀, map_sub, map_neg, Complex.conj_ofReal, inv_neg]
+  simp only [map_div₀, map_sub, map_neg, Complex.conj_ofReal]
   simp only [starRingEnd_apply, star_star]
   field_simp [hp, hzp, hzq, hzpStar, hzqStar, hzPlusP,
     hstarZMinusP, hstarSum, hstarSum']

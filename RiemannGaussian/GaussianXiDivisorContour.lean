@@ -176,7 +176,7 @@ noncomputable def riemannXiSpectralZeroEquiv :
 /-- There are only finitely many distinct zeta zeros whose spectral real
 coordinate lies in a bounded interval. -/
 theorem spectralZetaZeroWindowSet_finite
-    {T : ℝ} (hT : 0 ≤ T) :
+    {T : ℝ} (_hT : 0 ≤ T) :
     {ρ : NontrivialZetaZero |
       |(zetaSpectralCoordinate ρ.1).re| ≤ T}.Finite := by
   let B : Set ℂ :=
@@ -376,7 +376,7 @@ theorem AnalyticAt.tendsto_sub_mul_logDeriv_analyticOrderNatAt
       (pow_ne_zero m hza0) hgz (by fun_prop) hzAnalytic.differentiableAt]
     rw [logDeriv_fun_pow (f := fun w : ℂ => w - a) (by fun_prop) m]
     have hlinear : logDeriv (fun w : ℂ => w - a) z = 1 / (z - a) := by
-      simp [logDeriv_apply, hza0]
+      simp [logDeriv_apply]
     rw [hlinear]
     field_simp [hza0]
   have hloggAnalytic : AnalyticAt ℂ (logDeriv g) a := by
@@ -506,7 +506,7 @@ theorem exists_analyticAtOn_of_finite_removable
         by_cases hza : z = a
         · simpa [hza] using hf₁a
         · have hzf : AnalyticAt ℂ f z :=
-            hoff z hzU (by simpa [hza, hzS])
+            hoff z hzU (by simp [hza, hzS])
           exact hzf.congr (update_eventuallyEq_of_ne hza).symm
       have hf₁rem : ∀ b ∈ S,
           ∃ k : ℂ → ℂ, AnalyticAt ℂ k b ∧ f₁ =ᶠ[𝓝[≠] b] k := by
@@ -879,7 +879,7 @@ theorem left_vertical_not_mem_spectralXiZeroWindow
   simp [abs_of_nonneg hT]
 
 theorem exists_gaussianXiWindowRawRemainder_eq_analyticAt
-    (ε t : ℝ) {T : ℝ} (hT : 0 ≤ T)
+    (ε t : ℝ) {T : ℝ} (_hT : 0 ≤ T)
     (ρ : NontrivialZetaZero) (hρ : ρ ∈ spectralZetaZeroWindow T) :
     ∃ h : ℂ → ℂ,
       AnalyticAt ℂ h (zetaSpectralCoordinate ρ.1) ∧
@@ -2153,7 +2153,7 @@ lemma norm_complexSymmetricGaussian_spectral_vertical_le
         Real.exp (ε * y ^ 2 - ε * (T + t) ^ 2) := by
       rw [norm_complexTranslatedGaussian,
         norm_complexTranslatedGaussian]
-      congr 1 <;> simp <;> ring
+      congr 1 <;> simp
     _ ≤ Real.exp (ε - ε * (T - t) ^ 2) +
         Real.exp (ε - ε * (T + t) ^ 2) := by
       gcongr <;>
@@ -2250,7 +2250,8 @@ theorem tendsto_gaussianXiSpectralIntegrand_right_vertical_of_exponentialBound
       (hlog n y hy.1.le hy.2)
       (norm_nonneg _)
       (archimedeanVerticalGaussianBound_nonneg _ _ _)
-  · convert hmajor using 1 <;> norm_num [Function.comp_def]
+  · convert hmajor using 1
+    norm_num [Function.comp_def]
 
 /-- The classical-type exponential logarithmic-derivative bound is
 sufficient for the full arithmetic/canonical explicit formula. -/

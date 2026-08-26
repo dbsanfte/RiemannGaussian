@@ -112,7 +112,7 @@ theorem riemann_f_modif_eq_upper_add_reflection (x : ℝ) :
         Set.indicator_of_notMem (notMem_Ioi.mpr hx1.le), zero_add,
         Set.indicator_of_mem (mem_Ioo.mpr ⟨hx, hx1⟩)]
       simp only [HurwitzZeta.hurwitzEvenFEPair, Function.comp_apply,
-        if_pos, one_mul, one_smul]
+        if_pos, one_mul]
       rw [HurwitzZeta.evenKernel_functional_equation]
       push_cast
       rw [Complex.ofReal_cpow hx.le, Complex.ofReal_div,
@@ -150,7 +150,7 @@ theorem riemann_f_modif_eq_upper_add_reflection (x : ℝ) :
         exact (div_le_one hx).mpr hx1.le
       rw [riemannThetaUpper_eq_tail hx1,
         riemannThetaUpper_eq_zero hinv, smul_zero, add_zero]
-      simp [WeakFEPair.f_modif, riemannThetaUpper, hx1,
+      simp [WeakFEPair.f_modif, hx1,
         notMem_Ioo_of_ge hx1.le, riemannThetaTail,
         HurwitzZeta.hurwitzEvenFEPair]
   · have hxle : x ≤ 0 := le_of_not_gt hx
@@ -285,7 +285,7 @@ theorem completedRiemannZeta₀_eq_upperMellin (s : ℂ) :
   change mellin (HurwitzZeta.hurwitzEvenFEPair 0).f_modif (s / 2) / 2 = _
   rw [mellin_riemann_f_modif_eq_upper_add_reflected]
   congr 2
-  ring
+  ring_nf
 
 /-- A power of `x` can be absorbed into half of an exponential tail, at
 quadratic cost in the exponent.  This deliberately coarse estimate is the
@@ -317,8 +317,7 @@ theorem rpow_mul_exp_neg_le_exp_sq_mul_exp_neg_half
     have hden : 0 < 2 * p := mul_pos (by positivity) hp
     rw [show 2 * u ^ 2 / p + p * x / 2 =
         (4 * u ^ 2 + p ^ 2 * x) / (2 * p) by
-      field_simp [hp.ne']
-      <;> ring]
+      field_simp [hp.ne']; ring]
     rw [le_div_iff₀ hden]
     nlinarith [sq_nonneg (2 * |u| - p * Real.sqrt x), sq_abs u]
   have hexponent : Real.log x * u + (-p * x) ≤
@@ -379,7 +378,7 @@ theorem norm_mellin_riemannThetaUpper_le
     _ = (C * Real.exp Q) * (2 / p) := by
       rw [integral_const_mul,
         integral_exp_mul_Ioi (a := -(p / 2)) (by linarith) 0]
-      simp [hp.ne']
+      simp
     _ = (2 * C / p) * Real.exp (2 * (s.re - 1) ^ 2 / p) := by
       simp only [Q]
       field_simp [hp.ne']
@@ -438,8 +437,6 @@ theorem norm_completedRiemannZeta₀_le
   have hfirst_exp :
       Real.exp (2 * ((s / 2).re - 1) ^ 2 / p) ≤ E := by
     apply Real.exp_le_exp.mpr
-    change 2 * ((s / 2).re - 1) ^ 2 / p ≤
-      (2 / p) * (‖s‖ + 1) ^ 2
     calc
       2 * ((s / 2).re - 1) ^ 2 / p =
           (2 / p) * ((s / 2).re - 1) ^ 2 := by ring
@@ -448,8 +445,6 @@ theorem norm_completedRiemannZeta₀_le
   have hsecond_exp :
       Real.exp (2 * (((1 - s) / 2).re - 1) ^ 2 / p) ≤ E := by
     apply Real.exp_le_exp.mpr
-    change 2 * (((1 - s) / 2).re - 1) ^ 2 / p ≤
-      (2 / p) * (‖s‖ + 1) ^ 2
     calc
       2 * (((1 - s) / 2).re - 1) ^ 2 / p =
           (2 / p) * (((1 - s) / 2).re - 1) ^ 2 := by ring

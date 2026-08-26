@@ -67,7 +67,7 @@ lemma integral_even_eq_two_mul_integral_Ioi
         intro x hx
         exact (heven x).symm
       _ = ∫ x : ℝ in Ioi 0, f x := by
-        simpa using integral_comp_neg_Iic 0 f
+        rw [integral_comp_neg_Iic, neg_zero]
   rw [← intervalIntegral.integral_Iic_add_Ioi
     hf.integrableOn hf.integrableOn, hleft]
   ring
@@ -107,7 +107,7 @@ theorem integrable_translatedGaussian (hε : 0 < ε) (t : ℝ) :
   exact (integrable_exp_neg_mul_sq hε).comp_sub_right t
 
 theorem integral_translatedGaussian
-    (hε : 0 < ε) (t : ℝ) :
+    (_hε : 0 < ε) (t : ℝ) :
     (∫ r : ℝ, translatedGaussian ε t r) =
       Real.sqrt (Real.pi / ε) := by
   calc
@@ -531,10 +531,10 @@ theorem complexSymmetricGaussian_archimedeanPolePoint (ε t : ℝ) :
         complexTranslatedGaussian ε t (-(-Complex.I / 2)) =
       complexTranslatedGaussian ε t
           (((0 : ℝ) : ℂ) + ((1 / 2 : ℝ) : ℂ) * Complex.I) +
-        complexTranslatedGaussian ε t
+      complexTranslatedGaussian ε t
           (((0 : ℝ) : ℂ) - ((1 / 2 : ℝ) : ℂ) * Complex.I) := by
       rw [add_comm]
-      congr 1 <;> push_cast <;> ring
+      congr 1 <;> push_cast <;> ring_nf
     _ = (2 * Real.exp (ε * (1 / 2 : ℝ) ^ 2 - ε * (0 - t) ^ 2) *
         Real.cos (2 * ε * (1 / 2 : ℝ) * (0 - t)) : ℝ) :=
       complexTranslatedGaussian_conjugate_pair ε t 0 (1 / 2)
@@ -543,7 +543,8 @@ theorem complexSymmetricGaussian_archimedeanPolePoint (ε t : ℝ) :
       norm_cast
       rw [show 2 * ε * (1 / 2 : ℝ) * (0 - t) = -(ε * t) by ring,
         Real.cos_neg]
-      congr 2 <;> ring
+      congr 2
+      ring_nf
 
 /-- The part of the elementary completed-zeta logarithmic derivative that
 is regular at `s = 1`. -/
@@ -699,7 +700,7 @@ lemma norm_complexSymmetricGaussian_horizontal_strip_le
         Real.exp (ε * y ^ 2 - ε * (x + t) ^ 2) := by
       rw [norm_complexTranslatedGaussian,
         norm_complexTranslatedGaussian]
-      congr 1 <;> simp <;> ring
+      congr 1 <;> simp
     _ ≤ Real.exp (ε - ε * (x - t) ^ 2) +
         Real.exp (ε - ε * (x + t) ^ 2) := by
       gcongr <;>
@@ -1369,7 +1370,6 @@ theorem integrable_archimedeanSpectralIntegrand_safeLine
     have hhalf :
         (3 / 2 + Complex.I * (r : ℂ)) / 2 =
           3 / 4 + Complex.I * (r / 2) := by
-      push_cast
       ring
     rw [hhalf]
     ring]
@@ -1413,7 +1413,6 @@ theorem integrable_archimedeanSpectralIntegrand_criticalLine
     have hhalf :
         (1 / 2 + Complex.I * (r : ℂ)) / 2 =
           1 / 4 + Complex.I * (r / 2) := by
-      push_cast
       ring
     rw [hhalf]
     ring]
@@ -1483,7 +1482,6 @@ lemma integral_cauchyDensity_neg_T_T (T : ℝ) :
   rw [show (fun x : ℝ => 1 / (x ^ 2 + 1 / 4)) =
       fun x : ℝ => ((1 / 2 : ℝ) ^ 2 + x ^ 2)⁻¹ by
     funext x
-    congr 1
     ring]
   rw [integral_inv_sq_add_sq (by norm_num : (1 / 2 : ℝ) ≠ 0)]
   rw [show T / (1 / 2 : ℝ) = 2 * T by ring,
@@ -1540,7 +1538,8 @@ lemma tendsto_principalKernel_arctan (A : ℂ) :
   have hfour : Filter.Tendsto
       (fun T : ℝ => 4 * Real.arctan (2 * T))
       Filter.atTop (nhds (2 * Real.pi)) := by
-    convert hatan.const_mul 4 using 1 <;> ring
+    convert hatan.const_mul 4 using 1
+    ring_nf
   have hcast : Filter.Tendsto
       (fun T : ℝ => ((4 * Real.arctan (2 * T) : ℝ) : ℂ))
       Filter.atTop (nhds (((2 * Real.pi : ℝ) : ℂ))) :=
@@ -1762,7 +1761,6 @@ theorem integral_archimedeanSpectralTerms_criticalLine
     have hhalf :
         (1 / 2 + Complex.I * (x : ℂ)) / 2 =
           1 / 4 + Complex.I * (x / 2) := by
-      push_cast
       ring
     rw [hhalf]]
   exact integral_criticalLine_completedElementary_terms_eq_archimedean

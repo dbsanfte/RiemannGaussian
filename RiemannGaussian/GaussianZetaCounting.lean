@@ -374,7 +374,7 @@ theorem tsum_zetaZeroOrdinateShell_le
   classical
   let shell : Set NontrivialZetaZero :=
     {ρ | zetaZeroOrdinateShellIndex ρ = n}
-  letI : Fintype shell := (zetaZeroOrdinateShell_finite n).fintype
+  let : Fintype shell := (zetaZeroOrdinateShell_finite n).fintype
   let S : Finset NontrivialZetaZero :=
     Finset.univ.image (fun ρ : shell => ρ.1)
   have hSinBall : ∀ ρ ∈ S, ‖(ρ.1 : ℂ)‖ ≤ (n : ℝ) + 2 := by
@@ -451,7 +451,7 @@ theorem summable_distinct_zetaZeroGaussianOrdinate_of_growth
       exact hn.symm)).2
   constructor
   · intro n
-    letI : Fintype (shell n) := (zetaZeroOrdinateShell_finite n).fintype
+    let : Fintype (shell n) := (zetaZeroOrdinateShell_finite n).fintype
     exact Summable.of_finite
   · apply (summable_riemannXi_shell_majorant A hc).of_nonneg_of_le
       (fun n => tsum_nonneg fun ρ =>

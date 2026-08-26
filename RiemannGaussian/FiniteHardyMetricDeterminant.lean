@@ -93,9 +93,9 @@ theorem finiteHardyCrossAngleResidual_adjoint_comp_self
         (finiteHardyCrossAngleResidual A tau) =
       1 - (finiteHardyCrossAngle A tau).adjoint.comp
         (finiteHardyCrossAngle A tau) := by
-  letI : CompleteSpace (finiteNegativeBoundarySubspace A tau) :=
+  let : CompleteSpace (finiteNegativeBoundarySubspace A tau) :=
     FiniteDimensional.complete ℂ _
-  letI : CompleteSpace (finitePositiveBoundarySubspace A tau) :=
+  let : CompleteSpace (finitePositiveBoundarySubspace A tau) :=
     FiniteDimensional.complete ℂ _
   apply ContinuousLinearMap.ext
   intro n
@@ -103,7 +103,7 @@ theorem finiteHardyCrossAngleResidual_adjoint_comp_self
   intro m
   rw [ContinuousLinearMap.comp_apply,
     ContinuousLinearMap.adjoint_inner_left]
-  rw [ContinuousLinearMap.sub_apply, ContinuousLinearMap.one_apply,
+  rw [sub_apply, one_apply_eq_self,
     inner_sub_left, ContinuousLinearMap.comp_apply,
     ContinuousLinearMap.adjoint_inner_left]
   exact finiteHardyCrossAngleResidual_inner A tau n m
@@ -113,9 +113,9 @@ noncomputable def finiteHardyCrossAngleComplementGramOperator
     (A : Polynomial ℝ) (tau : ℝ) :
     finiteNegativeBoundarySubspace A tau →L[ℂ]
       finiteNegativeBoundarySubspace A tau := by
-  letI : CompleteSpace (finiteNegativeBoundarySubspace A tau) :=
+  let : CompleteSpace (finiteNegativeBoundarySubspace A tau) :=
     FiniteDimensional.complete ℂ _
-  letI : CompleteSpace (finitePositiveBoundarySubspace A tau) :=
+  let : CompleteSpace (finitePositiveBoundarySubspace A tau) :=
     FiniteDimensional.complete ℂ _
   exact 1 - (finiteHardyCrossAngle A tau).adjoint.comp
     (finiteHardyCrossAngle A tau)
@@ -129,9 +129,9 @@ theorem finiteHardyCrossAngleComplementGramOperator_eq_residual
     finiteHardyCrossAngleComplementGramOperator A tau =
       (finiteHardyCrossAngleResidual A tau).adjoint.comp
         (finiteHardyCrossAngleResidual A tau) := by
-  letI : CompleteSpace (finiteNegativeBoundarySubspace A tau) :=
+  let : CompleteSpace (finiteNegativeBoundarySubspace A tau) :=
     FiniteDimensional.complete ℂ _
-  letI : CompleteSpace (finitePositiveBoundarySubspace A tau) :=
+  let : CompleteSpace (finitePositiveBoundarySubspace A tau) :=
     FiniteDimensional.complete ℂ _
   rw [finiteHardyCrossAngleComplementGramOperator]
   exact (finiteHardyCrossAngleResidual_adjoint_comp_self A tau).symm
@@ -245,9 +245,9 @@ theorem finiteHardyCrossAngleComplementGramOperator_det_eq_basisResidual_ratio
       Matrix.det
           (basisMapReverseGram b (finiteHardyCrossAngleResidual A tau)) /
         Matrix.det (basisReverseGram b) := by
-  letI : CompleteSpace (finiteNegativeBoundarySubspace A tau) :=
+  let : CompleteSpace (finiteNegativeBoundarySubspace A tau) :=
     FiniteDimensional.complete ℂ _
-  letI : CompleteSpace (finitePositiveBoundarySubspace A tau) :=
+  let : CompleteSpace (finitePositiveBoundarySubspace A tau) :=
     FiniteDimensional.complete ℂ _
   calc
     LinearMap.det

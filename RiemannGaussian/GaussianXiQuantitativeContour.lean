@@ -207,7 +207,8 @@ theorem one_div_spectralBoundarySeparation_le_of_growth
   have hwindow' :
       ((spectralZetaZeroWindow ((n : ℝ) + 1)).card : ℝ) ≤
         A * (2 * ((n : ℝ) + 2) + 1) ^ 2 / Real.log 2 := by
-    convert hwindow using 1 <;> ring
+    convert hwindow using 1
+    ring
   have hobstructions :
       ((spectralBoundaryObstructions n).card : ℝ) ≤
         ((spectralZetaZeroWindow ((n : ℝ) + 1)).card : ℝ) + 2 := by

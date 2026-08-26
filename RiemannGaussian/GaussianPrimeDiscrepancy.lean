@@ -339,7 +339,7 @@ theorem gaussianContinuousPrimeOscillationIntegral_eq_forward_add_reflected
   have hreflect :
       (∫ u in Set.Ioi (0 : ℝ), f (-u)) =
         ∫ u in Set.Iic (0 : ℝ), f u := by
-    simpa using integral_comp_neg_Ioi (0 : ℝ) f
+    rw [integral_comp_neg_Ioi, neg_zero]
   have hpoint (u : ℝ) :
       f (-u) =
         Real.exp (-u / 2 - u ^ 2 / (4 * ε)) *

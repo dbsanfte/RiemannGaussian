@@ -150,7 +150,7 @@ theorem logDeriv_riemannXi_of_one_lt_re {s : ℂ} (hs : 1 < s.re) :
       logDeriv (fun z : ℂ => z * (1 - z)) s =
         1 / s + 1 / (s - 1) := by
     have hderivSub : deriv (fun z : ℂ => 1 - z) s = -1 :=
-      by simpa using ((hasDerivAt_const s 1).sub (hasDerivAt_id s)).deriv
+      ((hasDerivAt_const s 1).sub (hasDerivAt_id s)).deriv.trans (by ring)
     rw [logDeriv_mul (f := fun z : ℂ => z)
       (g := fun z : ℂ => 1 - z) s hs0 h1s (by fun_prop) (by fun_prop)]
     simp only [logDeriv_apply, deriv_id'', hderivSub]
