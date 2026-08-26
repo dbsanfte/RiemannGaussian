@@ -48,6 +48,13 @@ def gaussianPrimeTailContribution
     (ε t : ℝ) (cutoff : ℕ) : ℝ :=
   2 / Real.sqrt (Real.pi * ε) * gaussianPrimeTailSum ε t cutoff
 
+/-- The arithmetic model obtained by retaining only the channels below the
+cutoff. -/
+def gaussianArithmeticRetainedFormula
+    (ε : ℝ) (cutoff : ℕ) (t : ℝ) : ℝ :=
+  gaussianArchimedeanContribution ε t -
+    gaussianPrimePartialContribution ε t cutoff
+
 /-- The nonoscillatory tail envelope is the prime tail at center zero. -/
 def gaussianPrimeTailEnvelope (ε : ℝ) (cutoff : ℕ) : ℝ :=
   gaussianPrimeTailContribution ε 0 cutoff
@@ -228,12 +235,151 @@ theorem exists_gaussianPrimeTailCutoff (ε : ℝ) :
     (Real.lt_log_iff_exp_lt hcutoffReal).2 hcutoff
   exact ⟨cutoff, by exact_mod_cast hcutoffReal, hlog.le⟩
 
-/-- The arithmetic model obtained by retaining only the channels below the
-cutoff. -/
-def gaussianArithmeticRetainedFormula
+/-! ## Exact parameter-uniform derivative of the retained prime block -/
+
+/-- Center derivative of one Gaussian prime summand. -/
+def gaussianPrimeSummandCenterDerivative
+    (ε t : ℝ) (n : ℕ) : ℝ :=
+  -(ArithmeticFunction.vonMangoldt n / Real.sqrt n *
+      Real.exp (-(Real.log n) ^ 2 / (4 * ε)) *
+        Real.log n * Real.sin (t * Real.log n))
+
+theorem hasDerivAt_gaussianPrimeSummand_center
+    (ε t : ℝ) (n : ℕ) :
+    HasDerivAt (fun s : ℝ => gaussianPrimeSummand ε s n)
+      (gaussianPrimeSummandCenterDerivative ε t n) t := by
+  have hphase : HasDerivAt (fun s : ℝ => s * Real.log n)
+      (Real.log n) t := by
+    simpa only [id_eq, one_mul] using
+      (hasDerivAt_id t).mul_const (Real.log n)
+  have hcos := hphase.cos
+  have hscaled := hcos.const_mul
+    (ArithmeticFunction.vonMangoldt n / Real.sqrt n *
+      Real.exp (-(Real.log n) ^ 2 / (4 * ε)))
+  apply hscaled.congr_deriv
+  unfold gaussianPrimeSummandCenterDerivative
+  ring
+
+/-- Exact finite sum of the center derivatives below a cutoff. -/
+def gaussianPrimePartialSumCenterDerivative
+    (ε t : ℝ) (cutoff : ℕ) : ℝ :=
+  ∑ n ∈ Finset.range cutoff,
+    gaussianPrimeSummandCenterDerivative ε t n
+
+theorem hasDerivAt_gaussianPrimePartialSum_center
+    (ε t : ℝ) (cutoff : ℕ) :
+    HasDerivAt (fun s : ℝ => gaussianPrimePartialSum ε s cutoff)
+      (gaussianPrimePartialSumCenterDerivative ε t cutoff) t := by
+  apply HasDerivAt.fun_sum
+  intro n hn
+  exact hasDerivAt_gaussianPrimeSummand_center ε t n
+
+/-- The derivative contributed to the retained arithmetic formula by
+subtracting its finite prime block. -/
+def gaussianRetainedPrimeCenterDerivative
     (ε : ℝ) (cutoff : ℕ) (t : ℝ) : ℝ :=
-  gaussianArchimedeanContribution ε t -
-    gaussianPrimePartialContribution ε t cutoff
+  -(2 / Real.sqrt (Real.pi * ε) *
+    gaussianPrimePartialSumCenterDerivative ε t cutoff)
+
+theorem hasDerivAt_neg_gaussianPrimePartialContribution_center
+    (ε t : ℝ) (cutoff : ℕ) :
+    HasDerivAt
+      (fun s : ℝ => -gaussianPrimePartialContribution ε s cutoff)
+      (gaussianRetainedPrimeCenterDerivative ε cutoff t) t := by
+  have hsum := hasDerivAt_gaussianPrimePartialSum_center ε t cutoff
+  have hscaled := hsum.const_mul (2 / Real.sqrt (Real.pi * ε))
+  have hnegative := hscaled.const_mul (-1)
+  have hderivative :
+      (-1 : ℝ) * (2 / Real.sqrt (Real.pi * ε) *
+        gaussianPrimePartialSumCenterDerivative ε t cutoff) =
+        gaussianRetainedPrimeCenterDerivative ε cutoff t := by
+    unfold gaussianRetainedPrimeCenterDerivative
+    ring
+  simpa [gaussianPrimePartialContribution] using
+    hnegative.congr_deriv hderivative
+
+/-- Positive coefficient multiplying each signed sinc phase in the retained
+prime derivative model. -/
+def gaussianPrimeSincCoefficient (ε : ℝ) (n : ℕ) : ℝ :=
+  2 / Real.sqrt (Real.pi * ε) *
+    (ArithmeticFunction.vonMangoldt n / Real.sqrt n *
+      Real.exp (-(Real.log n) ^ 2 / (4 * ε))) *
+        (Real.log n) ^ 2
+
+/-- The parameterized signed-sinc model for the retained prime derivative. -/
+def gaussianRetainedPrimeSincModel
+    (ε : ℝ) (cutoff : ℕ) (t : ℝ) : ℝ :=
+  ∑ n ∈ Finset.range cutoff,
+    gaussianPrimeSincCoefficient ε n * Real.sinc (t * Real.log n)
+
+lemma mul_sq_sinc_identity (t x : ℝ) :
+    t * (x ^ 2 * Real.sinc (t * x)) =
+      x * Real.sin (t * x) := by
+  by_cases htx : t * x = 0
+  · have htx2 : t * x ^ 2 = 0 := by
+      calc
+        t * x ^ 2 = (t * x) * x := by ring
+        _ = 0 := by rw [htx, zero_mul]
+    rw [htx, Real.sinc_zero, Real.sin_zero, mul_zero]
+    simpa only [mul_one, mul_assoc] using htx2
+  · have ht : t ≠ 0 := fun ht => htx (by simp [ht])
+    have hx : x ≠ 0 := fun hx => htx (by simp [hx])
+    rw [Real.sinc_of_ne_zero htx, div_eq_mul_inv, mul_inv]
+    field_simp [ht, hx]
+
+/-- Exact identity used by the scalable derivative approach: the finite
+prime part of the retained derivative is `t` times a signed sinc sum, for
+every width and cutoff. -/
+theorem gaussianRetainedPrimeCenterDerivative_eq_mul_sincModel
+    (ε : ℝ) (cutoff : ℕ) (t : ℝ) :
+    gaussianRetainedPrimeCenterDerivative ε cutoff t =
+      t * gaussianRetainedPrimeSincModel ε cutoff t := by
+  let scale : ℝ := 2 / Real.sqrt (Real.pi * ε)
+  have hterm : ∀ n : ℕ,
+      -(scale * gaussianPrimeSummandCenterDerivative ε t n) =
+        t * (gaussianPrimeSincCoefficient ε n *
+          Real.sinc (t * Real.log n)) := by
+    intro n
+    let weight : ℝ := ArithmeticFunction.vonMangoldt n / Real.sqrt n *
+      Real.exp (-(Real.log n) ^ 2 / (4 * ε))
+    change -(scale * -(weight * Real.log n *
+        Real.sin (t * Real.log n))) =
+      t * ((2 / Real.sqrt (Real.pi * ε) * weight *
+        (Real.log n) ^ 2) * Real.sinc (t * Real.log n))
+    calc
+      -(scale * -(weight * Real.log n *
+          Real.sin (t * Real.log n))) =
+          scale * weight * (Real.log n *
+            Real.sin (t * Real.log n)) := by ring
+      _ = scale * weight *
+          (t * ((Real.log n) ^ 2 *
+            Real.sinc (t * Real.log n))) := by
+        rw [mul_sq_sinc_identity]
+      _ = t * ((2 / Real.sqrt (Real.pi * ε) * weight *
+          (Real.log n) ^ 2) * Real.sinc (t * Real.log n)) := by
+        dsimp only [scale]
+        ring
+  unfold gaussianRetainedPrimeCenterDerivative
+    gaussianPrimePartialSumCenterDerivative
+    gaussianRetainedPrimeSincModel
+  change -(scale * (∑ n ∈ Finset.range cutoff,
+      gaussianPrimeSummandCenterDerivative ε t n)) =
+    t * (∑ n ∈ Finset.range cutoff,
+      gaussianPrimeSincCoefficient ε n * Real.sinc (t * Real.log n))
+  calc
+    -(scale * ∑ n ∈ Finset.range cutoff,
+        gaussianPrimeSummandCenterDerivative ε t n) =
+        ∑ n ∈ Finset.range cutoff,
+          -(scale * gaussianPrimeSummandCenterDerivative ε t n) := by
+      rw [Finset.mul_sum, ← Finset.sum_neg_distrib]
+    _ = ∑ n ∈ Finset.range cutoff,
+        t * (gaussianPrimeSincCoefficient ε n *
+          Real.sinc (t * Real.log n)) :=
+      Finset.sum_congr rfl (fun n _ => hterm n)
+    _ = t * ∑ n ∈ Finset.range cutoff,
+        gaussianPrimeSincCoefficient ε n *
+          Real.sinc (t * Real.log n) := by
+      rw [Finset.mul_sum]
 
 /-- The actual arithmetic explicit formula is exactly the retained model
 minus the convergent omitted prime tail. -/

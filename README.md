@@ -117,6 +117,10 @@ What is checked here:
   complete tail beyond `N` is bounded by a fixed summable von-Mangoldt
   `n^(-2)` tail, and Lean proves that comparison tail tends to zero as
   `N → ∞`;
+- exact differentiation of the retained prime block at arbitrary width and
+  cutoff, including its closed signed-sinc form
+  `F_prime'(t) = t * sum (q_n(epsilon) * sinc(t * log n))`; this is the
+  parameterized low-prime object a uniform argument must control;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
