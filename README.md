@@ -128,6 +128,12 @@ What is not yet checked here:
   arithmetic/canonical expression for every `epsilon > 0`; only the finite
   rational portions at 0.04--0.06 are checked).
 
+The finite endpoint files are calibration and audit artifacts, not a proposed
+infinite certificate ladder.  Closing the final item requires one
+parameter-uniform mechanism producing an unbounded family (or a stronger
+structural positivity theorem); enumerating successively larger endpoint
+ledgers will not scale.
+
 The ordinary Schwartz closed-cone theorem is now explicitly treated as an
 abstract auxiliary result.  The classical unconditional Weil functional is
 defined on an analytic-strip class and the RH criterion is quadratic on

@@ -47,6 +47,83 @@ def gaussianPrimeTailContribution
     (ε t : ℝ) (cutoff : ℕ) : ℝ :=
   2 / Real.sqrt (Real.pi * ε) * gaussianPrimeTailSum ε t cutoff
 
+/-- The nonoscillatory tail envelope is the prime tail at center zero. -/
+def gaussianPrimeTailEnvelope (ε : ℝ) (cutoff : ℕ) : ℝ :=
+  gaussianPrimeTailContribution ε 0 cutoff
+
+theorem summable_gaussianPrimeTailSummand
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) (cutoff : ℕ) :
+    Summable (fun k : ℕ => gaussianPrimeSummand ε t (k + cutoff)) := by
+  exact (summable_nat_add_iff cutoff).2
+    (summable_gaussianPrimeSummand hε t)
+
+lemma abs_gaussianPrimeSummand_le_zero_center
+    (ε t : ℝ) (n : ℕ) :
+    |gaussianPrimeSummand ε t n| ≤ gaussianPrimeSummand ε 0 n := by
+  have hcoefficient : 0 ≤
+      ArithmeticFunction.vonMangoldt n / Real.sqrt n *
+        Real.exp (-(Real.log n) ^ 2 / (4 * ε)) := by
+    positivity
+  unfold gaussianPrimeSummand
+  simp only [zero_mul, Real.cos_zero, mul_one]
+  rw [abs_mul, abs_of_nonneg hcoefficient]
+  simpa only [mul_one] using
+    mul_le_mul_of_nonneg_left
+      (Real.abs_cos_le_one (t * Real.log n)) hcoefficient
+
+/-- The zero-center tail is nonnegative because every one of its summands is
+nonnegative. -/
+theorem gaussianPrimeTailContribution_zero_nonnegative
+    {ε : ℝ} (hε : 0 < ε) (cutoff : ℕ) :
+    0 ≤ gaussianPrimeTailContribution ε 0 cutoff := by
+  have hfactor : 0 ≤ 2 / Real.sqrt (Real.pi * ε) := by positivity
+  apply mul_nonneg hfactor
+  apply tsum_nonneg
+  intro k
+  unfold gaussianPrimeSummand
+  simp only [zero_mul, Real.cos_zero, mul_one]
+  positivity
+
+/-- The absolute value of the oscillatory infinite tail at every center is
+bounded by the same tail at center zero. -/
+theorem abs_gaussianPrimeTailContribution_le_envelope
+    {ε : ℝ} (hε : 0 < ε) (cutoff : ℕ) (t : ℝ) :
+    |gaussianPrimeTailContribution ε t cutoff| ≤
+      gaussianPrimeTailEnvelope ε cutoff := by
+  let f : ℕ → ℝ := fun k => gaussianPrimeSummand ε t (k + cutoff)
+  let g : ℕ → ℝ := fun k => gaussianPrimeSummand ε 0 (k + cutoff)
+  have hf : Summable f :=
+    summable_gaussianPrimeTailSummand hε t cutoff
+  have hg : Summable g :=
+    summable_gaussianPrimeTailSummand hε 0 cutoff
+  have habs : (∑' k, |f k|) ≤ ∑' k, g k := by
+    exact hf.norm.tsum_le_tsum
+      (fun k => abs_gaussianPrimeSummand_le_zero_center ε t (k + cutoff)) hg
+  have htsum : |∑' k, f k| ≤ ∑' k, g k := by
+    calc
+      |∑' k, f k| = ‖∑' k, f k‖ := by rw [Real.norm_eq_abs]
+      _ ≤ ∑' k, ‖f k‖ := norm_tsum_le_tsum_norm hf.norm
+      _ = ∑' k, |f k| := by simp only [Real.norm_eq_abs]
+      _ ≤ ∑' k, g k := habs
+  have hfactor : 0 ≤ 2 / Real.sqrt (Real.pi * ε) := by positivity
+  unfold gaussianPrimeTailContribution gaussianPrimeTailEnvelope
+  simp only [gaussianPrimeTailSum]
+  rw [abs_mul, abs_of_nonneg hfactor]
+  exact mul_le_mul_of_nonneg_left htsum hfactor
+
+/-- In the certificate comparison, the omitted tail can lose no more than
+its zero-center envelope. -/
+theorem gaussianPrimeTailContribution_sub_zero_le_envelope
+    {ε : ℝ} (hε : 0 < ε) (cutoff : ℕ) (t : ℝ) :
+    gaussianPrimeTailContribution ε t cutoff -
+        gaussianPrimeTailContribution ε 0 cutoff ≤
+      gaussianPrimeTailEnvelope ε cutoff := by
+  have ht := (le_abs_self
+    (gaussianPrimeTailContribution ε t cutoff)).trans
+      (abs_gaussianPrimeTailContribution_le_envelope hε cutoff t)
+  have hzero := gaussianPrimeTailContribution_zero_nonnegative hε cutoff
+  linarith
+
 /-- The arithmetic model obtained by retaining only the channels below the
 cutoff. -/
 def gaussianArithmeticRetainedFormula
@@ -99,6 +176,36 @@ structure GaussianArithmeticWidthCertificate (ε : ℝ) where
     ∀ t : ℝ, compactRadius ≤ t →
       0 ≤ gaussianArithmeticExplicitFormula ε t
 
+/-- Build the general soundness record from the natural, center-independent
+absolute tail envelope. -/
+def GaussianArithmeticWidthCertificate.ofTailEnvelope
+    {ε : ℝ} (hε : 0 < ε) (cutoff : ℕ) (compactRadius : ℝ)
+    (hcompactRadius : 0 ≤ compactRadius) (endpointMargin : ℝ)
+    (hEndpoint :
+      endpointMargin ≤ gaussianArithmeticExplicitFormula ε 0)
+    (hRetained :
+      ∀ t : ℝ, 0 ≤ t → t ≤ compactRadius →
+        gaussianArithmeticRetainedFormula ε cutoff 0 ≤
+          gaussianArithmeticRetainedFormula ε cutoff t)
+    (hEnvelope :
+      gaussianPrimeTailEnvelope ε cutoff ≤ endpointMargin)
+    (hLarge :
+      ∀ t : ℝ, compactRadius ≤ t →
+        0 ≤ gaussianArithmeticExplicitFormula ε t) :
+    GaussianArithmeticWidthCertificate ε where
+  width_pos := hε
+  cutoff := cutoff
+  compactRadius := compactRadius
+  compactRadius_nonneg := hcompactRadius
+  endpointMargin := endpointMargin
+  tailLoss := gaussianPrimeTailEnvelope ε cutoff
+  endpoint_lower := hEndpoint
+  compact_retained_ge_zero := hRetained
+  compact_tail_loss_le := fun t _ _ =>
+    gaussianPrimeTailContribution_sub_zero_le_envelope hε cutoff t
+  tailLoss_le_endpointMargin := hEnvelope
+  large_nonnegative := hLarge
+
 /-- Soundness of a single width certificate against the actual convergent
 arithmetic expression. -/
 theorem GaussianArithmeticWidthCertificate.goodWidth
@@ -128,8 +235,10 @@ theorem GaussianArithmeticWidthCertificate.goodWidth
   · rw [← gaussianArithmeticExplicitFormula_neg_center ε t]
     exact hnonnegative_of_nonnegative_center (-t) (by linarith)
 
-/-- The final scalable certificate target: certificates exist at widths
-arbitrarily far to the right. -/
+/-- The logical target exposed by the soundness layer: certificates exist at
+widths arbitrarily far to the right.  The intended way to prove this is a
+single parameter-uniform constructor, not an endless chain of independently
+enumerated finite certificates. -/
 def GaussianArithmeticWidthCertificatesUnbounded : Prop :=
   ∀ B : ℝ, ∃ ε : ℝ, ∃ _certificate : GaussianArithmeticWidthCertificate ε,
     B < ε
