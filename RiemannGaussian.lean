@@ -43,6 +43,7 @@ import RiemannGaussian.FiniteBlaschkePick
 import RiemannGaussian.SymmetricPickSchur
 import RiemannGaussian.TwoNodePickSchur
 import RiemannGaussian.SymmetricTwoNodePick
+import RiemannGaussian.SymmetricQuartetPickDefect
 import RiemannGaussian.GramWeilBlockDefect
 import RiemannGaussian.GramWeilMetricPencil
 import RiemannGaussian.GramWeilOnePair

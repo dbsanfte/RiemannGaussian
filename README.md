@@ -339,8 +339,11 @@ What is checked here:
   kernel, finite products remain positive by the Schur product theorem, and
   the existing finite residual inner factor therefore satisfies the sharp
   separation-free bound `|S(p)| ≤ 2*b/(1+b^2)` under the two symmetric
-  interpolation identities.  The terminal monotone conversion to
-  `m / sqrt (m^2 + a^2)` is also checked;
+  interpolation identities.  Composing this with the strict quartet pole
+  threshold gives the end-to-end strict bound
+  `|S(p)| < m / sqrt (m^2 + a^2)`; under the reflected-value identity, Lean
+  also proves the squared two-pole product bound
+  `|S(p) S(-conj p)| < m^2 / (m^2 + a^2)`;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
