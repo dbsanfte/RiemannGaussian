@@ -232,6 +232,14 @@ What is checked here:
   proved zero-free throughout the open upper half-plane, and its finite
   Blaschke quotient has equal numerator/denominator degree and norm exactly
   one at every real point;
+- the direct finite Krein--Langer identity in the field `RatFunc ℂ`:
+  `B * Theta = S` and equivalently `Theta = S / B`, with both removable
+  root factors cancelled algebraically; the pointwise `B` and `S` are proved
+  complex differentiable throughout the open upper half-plane, bounded there
+  by one in norm, and unimodular on the real axis; their degrees add to
+  `A.natDegree`, with the exact `kappa`/`A.natDegree - kappa` split reduced to
+  the isolated upper-root-count theorem; moreover `Theta(gamma) = -1` is
+  proved at every complex zero `gamma` of separable `A`;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -257,9 +265,7 @@ What is not yet checked here:
   RH-strength.
 - the remaining analytic finite-polynomial realization of the checked
   abstract Gram--Weil block theorem: constancy and evaluation of the
-  upper-half-plane root count along the just-defined homotopy, finite
-  Krein--Langer rational cancellation beyond the checked root-factor and
-  Blaschke boundary lemmas, the model-space
+  upper-half-plane root count along the just-defined homotopy, the model-space
   decomposition, injectivity/strict contraction of its cross-angle operator,
   and the spectral theorem counting all `±sqrt(1-s_j^2)` pencil modes are not
   yet formalized beyond the checked scalar and analytic one-pair cases. Nor is any
