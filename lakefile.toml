@@ -5,6 +5,7 @@ defaultTargets = ["RiemannGaussian"]
 
 [leanOptions]
 pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+warningAsError = true # source and tactic lints are a hard build gate
 
 [[require]]
 name = "mathlib"
