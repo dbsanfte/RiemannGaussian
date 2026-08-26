@@ -267,6 +267,12 @@ What is checked here:
   equivalence, the common-denominator copies of `K_S` and `K_B` are proved
   transverse, and the corresponding `S K_B` transversality needed for an
   injective cross-angle is proved under the isolated degree inequality;
+- an explicit finite algebraic Hilbert realization obtained by transporting
+  the Sylvester coordinates to Euclidean coefficient spaces with the `L²`
+  product norm: the negative Blaschke copy is embedded as a subspace, its
+  first-coordinate cross angle is proved pointwise strictly contractive, and
+  it is proved injective under the isolated degree inequality; Lean then
+  derives the exact Gram--Weil defect inertia from the abstract block theorem;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -292,14 +298,14 @@ What is not yet checked here:
   RH-strength.
 - the remaining analytic finite-polynomial realization of the checked
   abstract Gram--Weil block theorem: constancy and evaluation of the
-  upper-half-plane root count along the just-defined homotopy, the analytic
-  half-plane Hardy/model-space inner products corresponding to the now-checked
-  algebraic coordinate spaces,
-  injectivity/strict contraction of its cross-angle operator,
-  and the spectral theorem counting all `±sqrt(1-s_j^2)` pencil modes are not
-  yet formalized beyond the checked scalar and analytic one-pair cases. Nor is any
-  infinite-dimensional lift to the xi function; that remains a research
-  program, not an RH proof.
+  upper-half-plane root count along the just-defined homotopy, and the
+  analytic half-plane Hardy/model-space inner products identifying the actual
+  Gram geometry with the now-checked Euclidean algebraic realization.  The
+  algebraic cross angle is checked, but no claim is yet made that its
+  coefficient norm is the Hardy boundary norm.  Spectral completeness for
+  all `±sqrt(1-s_j^2)` pencil modes is also not yet formalized beyond the
+  checked scalar and analytic one-pair cases. Nor is any infinite-dimensional
+  lift to the xi function; that remains a research program, not an RH proof.
 - a parameter-uniform lower bound for the combined Gaussian prime discrepancy
   plus digamma gain.  Numerical falsification shows that neither term may be
   discarded: they undergo a large cancellation before the very small spectral

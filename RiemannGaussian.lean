@@ -45,3 +45,4 @@ import RiemannGaussian.FiniteKernelDecomposition
 import RiemannGaussian.FiniteZeroVectorSplit
 import RiemannGaussian.FiniteModelSpace
 import RiemannGaussian.FiniteModelGeometry
+import RiemannGaussian.FiniteAlgebraicHilbert
