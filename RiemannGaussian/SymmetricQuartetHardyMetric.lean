@@ -339,6 +339,15 @@ theorem finiteNegativeLogDerivativeValue_eq_neg_I_iff
       _ = -(Complex.I * A.eval₂ Complex.ofRealHom z) := by rw [hderiv]
       _ = -Complex.I * A.eval₂ Complex.ofRealHom z := by ring
 
+/-- A root of the finite homotopy polynomial cannot also be a zero of the
+separable base polynomial at a nonzero parameter. -/
+theorem finiteE_root_base_eval_ne_zero
+    {A : ℝ[X]} (hA : A.Separable) {η : ℝ} (hη : η ≠ 0) {z : ℂ}
+    (hroot : (finiteEPolynomial A η).eval z = 0) :
+    A.eval₂ Complex.ofRealHom z ≠ 0 := by
+  intro hzero
+  exact (finiteE_eval_ne_zero_at_root hA hη hzero) hroot
+
 /-- A conjugate pair contribution is anti-equivariant under reflection in
 the imaginary axis, provided its upper zero is reflected at the same time. -/
 theorem onePairLogDerivativeContribution_neg_conj
@@ -410,6 +419,23 @@ theorem logDerivativeBackground_negConj
       rw [hdecompose z]
       simp only [map_sub, map_add]
       ring
+
+/-- The literal residual after subtracting one named symmetric quartet from
+the finite negative logarithmic derivative. -/
+def finiteQuartetLogDerivativeBackground
+    (A : ℝ[X]) (η m tau a : ℝ) (z : ℂ) : ℂ :=
+  finiteNegativeLogDerivativeValue A η z -
+    symmetricQuartetLogDerivativeContribution m tau a z
+
+/-- The quartet-plus-background decomposition for the literal residual is an
+exact identity, with no analytic assumption. -/
+theorem finiteNegativeLogDerivativeValue_eq_quartet_add_background
+    (A : ℝ[X]) (η m tau a : ℝ) (z : ℂ) :
+    finiteNegativeLogDerivativeValue A η z =
+      symmetricQuartetLogDerivativeContribution m tau a z +
+        finiteQuartetLogDerivativeBackground A η m tau a z := by
+  unfold finiteQuartetLogDerivativeBackground
+  ring
 
 /-- The finite Hardy quartet estimate with its two candidate `E`-root
 hypotheses derived from an exact logarithmic-derivative decomposition.
@@ -764,6 +790,56 @@ theorem
     finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound_of_even_logDerivativeDecomposition_baseCount
       hA hEven hη hm htau ha hv hx hbaseCount hAPlus hdecompose
       hbackground hpole
+
+/-- Direct finite isolated-quartet frontier.  Naming a symmetric upper root of
+`A + I eta A'` makes the pole equation automatic.  The background is the
+literal residual obtained by subtracting the named quartet, so its
+decomposition is definitional.  The only substantive analytic input left is
+nonnegativity of that residual's imaginary part at the selected pole. -/
+theorem
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound_of_even_quartic_E_root
+    {A : ℝ[X]} (hA : A.Separable) (hEven : A.comp (-X) = A)
+    (hdegreeA : A.natDegree = 4)
+    {η m tau a x v : ℝ}
+    (hη : 0 < η) (hm : 0 < m) (htau : tau ≠ 0)
+    (ha : 0 < a) (hv : 0 < v) (hx : x ≠ 0)
+    (hAPlus : A.eval₂ Complex.ofRealHom
+      (symmetricPickAlphaPlus tau a) = 0)
+    (hroot : (finiteEPolynomial A η).eval
+      (symmetricPickPole x v) = 0)
+    (hbackground : 0 ≤
+      (finiteQuartetLogDerivativeBackground A η m tau a
+        (symmetricPickPole x v)).im) :
+    Real.sqrt
+        (LinearMap.det
+          (finiteHardyCrossAngleComplementGramOperator A η).toLinearMap).re <
+      m ^ 2 / (m ^ 2 + a ^ 2) := by
+  have hAPole : A.eval₂ Complex.ofRealHom
+      (symmetricPickPole x v) ≠ 0 :=
+    finiteE_root_base_eval_ne_zero hA hη.ne' hroot
+  have hvalue :
+      finiteNegativeLogDerivativeValue A η (symmetricPickPole x v) =
+        -Complex.I :=
+    (finiteNegativeLogDerivativeValue_eq_neg_I_iff hAPole).mpr hroot
+  have hpole : symmetricQuartetLogDerivativeContribution m tau a
+        (symmetricPickPole x v) +
+      finiteQuartetLogDerivativeBackground A η m tau a
+        (symmetricPickPole x v) = -Complex.I := by
+    calc
+      symmetricQuartetLogDerivativeContribution m tau a
+            (symmetricPickPole x v) +
+          finiteQuartetLogDerivativeBackground A η m tau a
+            (symmetricPickPole x v) =
+          finiteNegativeLogDerivativeValue A η
+            (symmetricPickPole x v) := by
+        unfold finiteQuartetLogDerivativeBackground
+        ring
+      _ = -Complex.I := hvalue
+  exact
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound_of_even_quartic_logDerivativeDecomposition
+      hA hEven hdegreeA hη hm htau ha hv hx hAPlus
+      (finiteNegativeLogDerivativeValue_eq_quartet_add_background
+        A η m tau a) hbackground hpole
 
 end
 

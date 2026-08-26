@@ -356,7 +356,13 @@ What is checked here:
   reflected-side facts.  In the isolated-quartet specialization, evenness,
   separability, degree four, and the one named upper zero prove that base count
   is exactly two; the resulting end-to-end theorem assumes no root-count or
-  root-factor degree statement either;
+  root-factor degree statement either.  Finally the quartet background is
+  defined as the literal residual after subtracting the named quartet from
+  `-eta*A'/A`; its decomposition is therefore an exact identity.  A named
+  root of `A + I*eta*A'` forces the pole equation, while separability proves
+  the base denominator is nonzero there.  At this direct finite frontier, only
+  nonnegativity of the residual background's imaginary part at that pole
+  remains as a substantive analytic hypothesis;
 - the exact root-count bridge behind that degree inequality: conjugation
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
@@ -455,9 +461,10 @@ What is not yet checked here:
   two denominator nonvanishing statements from the pole equation.  The raw
   degree-two condition is also replaced by the zero-endpoint upper-root count.
   For an isolated even quartic, that base count is now itself derived from one
-  upper zero and degree four.  What remains is to derive the exact
-  decomposition, its background sign, and the positive pole equation from the
-  intended finite approximants, followed by the infinite xi passage;
+  upper zero and degree four.  The exact decomposition and positive pole
+  equation are now automatic for the literal finite residual background.
+  What remains is to prove its nonnegative imaginary part in the intended
+  finite approximants, followed by the infinite xi passage;
   identify the determinant-level product with any separately named
   metric-pencil modes when such modes are required, and pass to the infinite
   xi model.  No claim is made that the auxiliary Euclidean coefficient norm
