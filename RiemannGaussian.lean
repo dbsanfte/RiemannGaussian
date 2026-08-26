@@ -66,6 +66,7 @@ import RiemannGaussian.FiniteHardyMetricDeterminant
 import RiemannGaussian.FiniteHardyCauchyBasis
 import RiemannGaussian.FiniteNegConjSymmetry
 import RiemannGaussian.SymmetricQuartetHardyMetric
+import RiemannGaussian.SymmetricQuartetFiniteRoots
 import RiemannGaussian.FiniteAlgebraicHilbert
 import RiemannGaussian.FiniteRootCountBridge
 import RiemannGaussian.FiniteERootContinuity

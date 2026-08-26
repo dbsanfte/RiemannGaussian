@@ -362,7 +362,13 @@ What is checked here:
   root of `A + I*eta*A'` forces the pole equation, while separability proves
   the base denominator is nonzero there.  At this direct finite frontier, only
   nonnegativity of the residual background's imaginary part at that pole
-  remains as a substantive analytic hypothesis;
+  remains as a substantive analytic hypothesis.  Lean now also proves the
+  exact multiplicity-counted root-sum formula for `-eta*A'/A`.  For the
+  isolated even quartic its complete root multiset is exactly the four named
+  symmetric points, so at the natural weight `m = eta` the residual background
+  is zero.  The resulting strict finite Hardy determinant bound has no
+  background, decomposition, pole-equation, root-count, or reflection
+  assumption beyond the named structural roots themselves;
 - the exact root-count bridge behind that degree inequality: conjugation
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
@@ -462,9 +468,11 @@ What is not yet checked here:
   degree-two condition is also replaced by the zero-endpoint upper-root count.
   For an isolated even quartic, that base count is now itself derived from one
   upper zero and degree four.  The exact decomposition and positive pole
-  equation are now automatic for the literal finite residual background.
-  What remains is to prove its nonnegative imaginary part in the intended
-  finite approximants, followed by the infinite xi passage;
+  equation are now automatic for the literal finite residual background, and
+  the exact finite root expansion proves this background is zero at natural
+  weight in the isolated-quartic case.  What remains is to prove the background
+  sign for larger intended approximants containing additional roots, followed
+  by the infinite xi passage;
   identify the determinant-level product with any separately named
   metric-pencil modes when such modes are required, and pass to the infinite
   xi model.  No claim is made that the auxiliary Euclidean coefficient norm
