@@ -234,6 +234,62 @@ theorem basisMapReverseGram_det_ratio
     basisOperatorReverseGram_det]
   exact mul_div_cancel_right₀ _ (basisReverseGram_det_ne_zero b)
 
+/-- If the image Gram entries differ from the base Gram entries by one
+weight in each coordinate, then the whole image Gram matrix is obtained by
+left and right diagonal scaling. -/
+theorem basisMapReverseGram_eq_diagonal_mul_of_weighted
+    {E F ι : Type*}
+    [NormedAddCommGroup E] [InnerProductSpace ℂ E] [CompleteSpace E]
+    [NormedAddCommGroup F] [InnerProductSpace ℂ F] [CompleteSpace F]
+    [Fintype ι] [DecidableEq ι]
+    (b : Module.Basis ι ℂ E) (R : E →L[ℂ] F) (s : ι → ℂ)
+    (hweighted : ∀ i j,
+      inner ℂ (R (b j)) (R (b i)) =
+        s j * starRingEnd ℂ (s i) * inner ℂ (b j) (b i)) :
+    basisMapReverseGram b R =
+      Matrix.diagonal (fun i ↦ starRingEnd ℂ (s i)) *
+        basisReverseGram b * Matrix.diagonal s := by
+  ext i j
+  simp [basisMapReverseGram, basisReverseGram, hweighted,
+    mul_comm, mul_left_comm]
+
+/-- Determinant form of diagonal Gram scaling over `ℂ`: the scale factor
+is the squared modulus of the product of all coordinate weights. -/
+theorem basisMapReverseGram_det_eq_normSq_prod_of_weighted
+    {E F ι : Type*}
+    [NormedAddCommGroup E] [InnerProductSpace ℂ E] [CompleteSpace E]
+    [NormedAddCommGroup F] [InnerProductSpace ℂ F] [CompleteSpace F]
+    [Fintype ι] [DecidableEq ι]
+    (b : Module.Basis ι ℂ E) (R : E →L[ℂ] F) (s : ι → ℂ)
+    (hweighted : ∀ i j,
+      inner ℂ (R (b j)) (R (b i)) =
+        s j * starRingEnd ℂ (s i) * inner ℂ (b j) (b i)) :
+    Matrix.det (basisMapReverseGram b R) =
+      (Complex.normSq (∏ i, s i) : ℂ) *
+        Matrix.det (basisReverseGram b) := by
+  rw [basisMapReverseGram_eq_diagonal_mul_of_weighted b R s hweighted,
+    Matrix.det_mul, Matrix.det_mul, Matrix.det_diagonal,
+    Matrix.det_diagonal]
+  rw [← map_prod, Complex.normSq_eq_conj_mul_self]
+  ring
+
+/-- An entrywise weighted Gram identity computes the determinant of
+`R† R` in every finite dimension. -/
+theorem adjointComp_det_eq_normSq_prod_of_weighted
+    {E F ι : Type*}
+    [NormedAddCommGroup E] [InnerProductSpace ℂ E] [CompleteSpace E]
+    [NormedAddCommGroup F] [InnerProductSpace ℂ F] [CompleteSpace F]
+    [Fintype ι] [DecidableEq ι]
+    (b : Module.Basis ι ℂ E) (R : E →L[ℂ] F) (s : ι → ℂ)
+    (hweighted : ∀ i j,
+      inner ℂ (R (b j)) (R (b i)) =
+        s j * starRingEnd ℂ (s i) * inner ℂ (b j) (b i)) :
+    LinearMap.det (R.adjoint.comp R).toLinearMap =
+      (Complex.normSq (∏ i, s i) : ℂ) := by
+  rw [← basisMapReverseGram_det_ratio b R,
+    basisMapReverseGram_det_eq_normSq_prod_of_weighted b R s hweighted]
+  exact mul_div_cancel_right₀ _ (basisReverseGram_det_ne_zero b)
+
 /-- Determinant of the actual cross-angle complement Gram operator as the
 residual/base Gram ratio in an arbitrary basis of the negative model. -/
 theorem finiteHardyCrossAngleComplementGramOperator_det_eq_basisResidual_ratio

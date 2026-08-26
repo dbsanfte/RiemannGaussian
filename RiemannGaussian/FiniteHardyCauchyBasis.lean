@@ -237,6 +237,41 @@ theorem lowerRootFactor_eval_conj_ne_zero_of_upperRoot
         (finiteEPolynomial A tau) hroot))
   · exact hL
 
+/-- In every finite dimension, a basis consisting of root Cauchy vectors
+computes the determinant of the actual cross-angle complement as the squared
+modulus of the product of the corresponding lower-root values.  The explicit
+basis hypothesis keeps the remaining repeated-root (confluent Cauchy basis)
+problem visible rather than assuming it. -/
+theorem finiteHardyCrossAngleComplementGramOperator_det_eq_rootValues_of_rootCauchyBasis
+    {ι : Type*} [Fintype ι] [DecidableEq ι]
+    {A : ℝ[X]} (hA : A.Separable) {tau : ℝ} (htau : tau ≠ 0)
+    (w : ι → ℂ) (hw : ∀ i, 0 < (w i).im)
+    (hroot : ∀ i,
+      (upperRootFactor (finiteEPolynomial A tau)).eval (w i) = 0)
+    (b : Module.Basis ι ℂ (finiteNegativeBoundarySubspace A tau))
+    (hb : ∀ i, b i =
+      finiteNegativeCauchyVector A tau (w i) (hw i) (hroot i)) :
+    LinearMap.det
+        (finiteHardyCrossAngleComplementGramOperator A tau).toLinearMap =
+      (Complex.normSq
+        (∏ i, lowerRootInnerValue (finiteEPolynomial A tau) (w i)) : ℂ) := by
+  let : CompleteSpace (finiteNegativeBoundarySubspace A tau) :=
+    FiniteDimensional.complete ℂ _
+  let : CompleteSpace (finitePositiveBoundarySubspace A tau) :=
+    FiniteDimensional.complete ℂ _
+  rw [finiteHardyCrossAngleComplementGramOperator_eq_residual]
+  apply adjointComp_det_eq_normSq_prod_of_weighted b
+    (finiteHardyCrossAngleResidual A tau)
+    (fun i ↦ lowerRootInnerValue (finiteEPolynomial A tau) (w i))
+  intro i j
+  rw [hb j, hb i,
+    finiteHardyCrossAngleResidual_finiteNegativeCauchyVector,
+    finiteHardyCrossAngleResidual_finiteNegativeCauchyVector]
+  exact inner_cauchyBoundaryLp_sub_projections
+    (finiteEPolynomial A tau) (hw j) (hw i)
+    (lowerRootFactor_eval_conj_ne_zero_of_upperRoot hA htau (hroot j))
+    (lowerRootFactor_eval_conj_ne_zero_of_upperRoot hA htau (hroot i))
+
 /-- The reverse Gram matrix of the root Cauchy basis is the concrete
 two-node Cauchy Gram matrix. -/
 theorem basisReverseGram_finiteNegativeCauchyBasis

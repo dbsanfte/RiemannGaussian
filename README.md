@@ -68,6 +68,11 @@ current checked state, not a list of conjectural steps.
   kernels, and two-node Gram matrices are identified. Lean proves the exact
   basis-independent determinant identity
   `det(I - C† C) = |S(w0) * S(w1)|²` in the degree-two case.
+- In arbitrary finite dimension, Lean now proves the corresponding weighted
+  Gram theorem: whenever a complete basis is made of root Cauchy vectors,
+  `det(I - C† C) = |∏ᵢ S(wᵢ)|²`. This theorem does not assume distinct
+  singular values; its explicit basis hypothesis leaves the repeated-root
+  construction open rather than hiding it.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -124,10 +129,13 @@ cumulative-surplus lower bound over all cutoffs.
 The Hardy route seeks a structural contradiction from any off-axis xi zero.
 The one-quartet finite theory and its real/Herglotz background are formalized.
 The unequal-height finite hyperbolic optimization and its exact-polynomial
-inside-core specialization are now formalized. The immediate frontier is the
-structural selection of that core together with the corresponding higher-index
-Hardy determinant theorem. Beyond that lies the genuinely analytic passage
-from finite polynomial models to the entire xi function.
+inside-core specialization are now formalized, as is the higher-index Hardy
+determinant formula conditional on a complete root Cauchy basis. The immediate
+frontier is to construct that basis in full multiplicity-aware generality:
+ordinary Cauchy kernels handle distinct roots, while repeated roots require a
+confluent Cauchy-kernel theory. It must then be joined to the structural
+inside-core selection. Beyond that lies the genuinely analytic passage from
+finite polynomial models to the entire xi function.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
