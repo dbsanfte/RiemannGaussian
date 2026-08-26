@@ -131,6 +131,12 @@ What is checked here:
   endpoint plus digamma gain plus a Gaussian-smoothed von-Mangoldt
   discrepancy, and cofinal validity of this cancellation-aware budget is
   again proved equivalent to RH;
+- a fully checked bilateral Gaussian-transform evaluation, including
+  integrability, proving that this closed-form main term is exactly the
+  continuous density integral against `exp (u / 2) du`; consequently the
+  remaining prime discrepancy is now an exact normalized difference between
+  the von-Mangoldt atoms at `log n` and that continuous measure, ready for a
+  summation-by-parts or transport estimate;
 - a finite phase-block interface: any lower bound for weighted von-Mangoldt
   mass on a block where `1 - cos (t * log n)` has a uniform floor becomes a
   kernel-checked lower bound for the true prime energy and hence a sufficient
