@@ -202,6 +202,13 @@ What is checked here:
   `[[0, -C], [-C†, 2I]]`, proves both have dimension `dim N`, and proves its
   kernel has dimension `dim P - dim N`; thus its basis-free quadratic inertia
   is exactly `(dim N, dim P - dim N, dim N)` in negative/null/positive order;
+- the matching finite metric-pencil algebra for
+  `G = [[I,-C],[-C†,I]]` and `J = diag(I,-I)`: `G-J` is definitionally linked
+  to the checked defect, every generalized eigenvector away from `lambda = 1`
+  yields `C† C n = (1-lambda^2)n`, every such mode has a proved converse
+  lift, the `lambda = 1` kernel has dimension `dim P - dim N`, and explicit
+  injectivity plus pointwise strict contraction forces every supplied real
+  nonexceptional pencil eigenvalue into `(-1,1)`;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -228,7 +235,8 @@ What is not yet checked here:
 - the analytic finite-polynomial realization of the checked abstract
   Gram--Weil block theorem: finite Krein--Langer factorization, the model-space
   decomposition, injectivity/strict contraction of its cross-angle operator,
-  and the one-pair integral formula are not yet formalized.  Nor is any
+  the spectral theorem counting all `±sqrt(1-s_j^2)` pencil modes, and the
+  one-pair integral formula are not yet formalized.  Nor is any
   infinite-dimensional lift to the xi function; that remains a research
   program, not an RH proof.
 - a parameter-uniform lower bound for the combined Gaussian prime discrepancy

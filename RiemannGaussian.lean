@@ -35,3 +35,4 @@ import RiemannGaussian.GaussianDigammaTransform
 import RiemannGaussian.GaussianDigammaGauss
 import RiemannGaussian.SuzukiTransportBarrier
 import RiemannGaussian.GramWeilBlockDefect
+import RiemannGaussian.GramWeilMetricPencil
