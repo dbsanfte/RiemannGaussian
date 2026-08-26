@@ -341,7 +341,14 @@ What is checked here:
   symmetric quartet under `z ↦ -conj z`.  Consequently a second checked
   end-to-end theorem derives both candidate `E`-roots from one exact global
   quartet-plus-background decomposition, one pole equation, and the reflected
-  background law; the reflected pole equation is no longer assumed;
+  background law; the reflected pole equation is no longer assumed.  Lean now
+  goes further for an even real base polynomial: its derivative is proved odd,
+  the complete root multiset of `A + I*eta*A'` is proved invariant under
+  negative conjugation with multiplicity, and the product formula then proves
+  the exact residual-inner reflected-value identity.  The same symmetry and
+  the global decomposition force the background reflection law and the second
+  pole denominator condition.  Hence the strongest checked finite quartet
+  theorem assumes none of those three reflected-side facts;
 - the exact root-count bridge behind that degree inequality: conjugation
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
@@ -435,9 +442,11 @@ What is not yet checked here:
   specialized to those roots, and the symmetric-quartet estimate is now
   composed with that actual determinant.  Both candidate `E`-root hypotheses
   are now derived from an exact logarithmic-derivative decomposition and its
-  background reflection law.  What remains is to derive that decomposition,
-  its denominator nonvanishing/background sign and symmetry hypotheses, and
-  the residual-inner reflection law from the intended xi approximants;
+  background reflection law; for an even base polynomial Lean additionally
+  derives that background law, the residual-inner reflection law, and the
+  reflected denominator nonvanishing from the positive side.  What remains is
+  to derive the exact decomposition, its positive-pole denominator
+  nonvanishing and background sign from the intended xi approximants;
   identify the determinant-level product with any separately named
   metric-pencil modes when such modes are required, and pass to the infinite
   xi model.  No claim is made that the auxiliary Euclidean coefficient norm

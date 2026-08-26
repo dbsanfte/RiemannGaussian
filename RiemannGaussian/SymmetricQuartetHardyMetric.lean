@@ -1,4 +1,5 @@
 import RiemannGaussian.FiniteHardyCauchyBasis
+import RiemannGaussian.FiniteNegConjSymmetry
 import RiemannGaussian.SymmetricQuartetPickDefect
 
 /-!
@@ -235,6 +236,21 @@ def finiteNegativeLogDerivativeValue
   -(η : ℂ) * A.derivative.eval₂ Complex.ofRealHom z /
     A.eval₂ Complex.ofRealHom z
 
+/-- For an even real base polynomial, the scaled negative logarithmic
+derivative is anti-equivariant under reflection in the imaginary axis. -/
+theorem finiteNegativeLogDerivativeValue_negConj
+    {A : ℝ[X]} (hEven : A.comp (-X) = A) (η : ℝ) (z : ℂ) :
+    finiteNegativeLogDerivativeValue A η (negConj z) =
+      -starRingEnd ℂ (finiteNegativeLogDerivativeValue A η z) := by
+  unfold finiteNegativeLogDerivativeValue
+  rw [
+    realPolynomial_eval₂_negConj_eq_conj_of_even hEven,
+    realPolynomial_derivative_eval₂_negConj_eq_neg_conj_of_even hEven]
+  simp only [map_div₀, map_mul, map_neg, starRingEnd_apply]
+  have hηstar : star (η : ℂ) = (η : ℂ) := by simp
+  rw [hηstar]
+  ring
+
 /-- Exact algebraic equivalence between the finite pole equation and a root
 of the homotopy polynomial. -/
 theorem finiteNegativeLogDerivativeValue_eq_neg_I_iff
@@ -333,6 +349,39 @@ theorem symmetricQuartetLogDerivativeContribution_neg_conj
       simpa using onePairLogDerivativeContribution_neg_conj
         m (-starRingEnd ℂ (upperHalfPlanePoint tau a)) z]
   simp
+
+/-- In an exact quartet-plus-background decomposition for an even base
+polynomial, negative-conjugation symmetry of the background is forced rather
+than assumed. -/
+theorem logDerivativeBackground_negConj
+    {A : ℝ[X]} (hEven : A.comp (-X) = A)
+    (η m tau a : ℝ) (background : ℂ → ℂ)
+    (hdecompose : ∀ z,
+      finiteNegativeLogDerivativeValue A η z =
+        symmetricQuartetLogDerivativeContribution m tau a z + background z)
+    (z : ℂ) :
+    background (negConj z) = -starRingEnd ℂ (background z) := by
+  calc
+    background (negConj z) =
+        finiteNegativeLogDerivativeValue A η (negConj z) -
+          symmetricQuartetLogDerivativeContribution m tau a (negConj z) := by
+      rw [hdecompose (negConj z)]
+      ring
+    _ = -starRingEnd ℂ (finiteNegativeLogDerivativeValue A η z) -
+        (-starRingEnd ℂ
+          (symmetricQuartetLogDerivativeContribution m tau a z)) := by
+      rw [finiteNegativeLogDerivativeValue_negConj hEven,
+        show negConj z = -starRingEnd ℂ z by rfl,
+        symmetricQuartetLogDerivativeContribution_neg_conj]
+    _ = -starRingEnd ℂ
+        (finiteNegativeLogDerivativeValue A η z -
+          symmetricQuartetLogDerivativeContribution m tau a z) := by
+      simp only [map_sub]
+      ring
+    _ = -starRingEnd ℂ (background z) := by
+      rw [hdecompose z]
+      simp only [map_sub, map_add]
+      ring
 
 /-- The finite Hardy quartet estimate with its two candidate `E`-root
 hypotheses derived from an exact logarithmic-derivative decomposition.
@@ -440,6 +489,71 @@ theorem
     finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound
       hA hη hm htau ha hv hx hrootPlus hrootMinus hdegree hAPlus hAMinus
       hupperPlus hupperMinus hbackground hpole hreflect
+
+/-- Evenness of the real base polynomial discharges every reflection
+hypothesis in the logarithmic-derivative quartet theorem.  It forces the
+background reflection through the exact decomposition, the second pole
+denominator to be nonzero, and the residual-inner reflected-value identity.
+Thus only the positive pole equation and positive-pole denominator condition
+remain as local pole assumptions. -/
+theorem
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound_of_even_logDerivativeDecomposition
+    {A : ℝ[X]} (hA : A.Separable) (hEven : A.comp (-X) = A)
+    {η m tau a x v : ℝ} {background : ℂ → ℂ}
+    (hη : η ≠ 0) (hm : 0 < m) (htau : tau ≠ 0)
+    (ha : 0 < a) (hv : 0 < v) (hx : x ≠ 0)
+    (hdegree : (upperRootFactor
+      (finiteEPolynomial A η)).natDegree = 2)
+    (hAPlus : A.eval₂ Complex.ofRealHom
+      (symmetricPickAlphaPlus tau a) = 0)
+    (hAMinus : A.eval₂ Complex.ofRealHom
+      (symmetricPickAlphaMinus tau a) = 0)
+    (hAPolePlus : A.eval₂ Complex.ofRealHom
+      (symmetricPickPole x v) ≠ 0)
+    (hdecompose : ∀ z,
+      finiteNegativeLogDerivativeValue A η z =
+        symmetricQuartetLogDerivativeContribution m tau a z + background z)
+    (hupperPlus : 0 < pairHyperbolicUpperSq (x - tau) v a)
+    (hupperMinus : 0 < pairHyperbolicUpperSq (x + tau) v a)
+    (hbackground : 0 ≤ (background (symmetricPickPole x v)).im)
+    (hpole : symmetricQuartetLogDerivativeContribution m tau a
+        (symmetricPickPole x v) +
+      background (symmetricPickPole x v) = -Complex.I) :
+    Real.sqrt
+        (LinearMap.det
+          (finiteHardyCrossAngleComplementGramOperator A η).toLinearMap).re <
+      m ^ 2 / (m ^ 2 + a ^ 2) := by
+  have hPoleNegConj :
+      negConj (symmetricPickPole x v) = symmetricPickPole (-x) v := by
+    simp [negConj]
+  have hAPoleMinus : A.eval₂ Complex.ofRealHom
+      (symmetricPickPole (-x) v) ≠ 0 := by
+    rw [← hPoleNegConj,
+      realPolynomial_eval₂_negConj_eq_conj_of_even hEven]
+    intro hzero
+    apply hAPolePlus
+    have hstar := congrArg (starRingEnd ℂ) hzero
+    simpa using hstar
+  have hbackgroundReflect :
+      background (symmetricPickPole (-x) v) =
+        -starRingEnd ℂ (background (symmetricPickPole x v)) := by
+    rw [← hPoleNegConj]
+    exact logDerivativeBackground_negConj
+      hEven η m tau a background hdecompose (symmetricPickPole x v)
+  have hreflect :
+      lowerRootInnerValue (finiteEPolynomial A η)
+          (symmetricPickPole (-x) v) =
+        starRingEnd ℂ
+          (lowerRootInnerValue (finiteEPolynomial A η)
+            (symmetricPickPole x v)) := by
+    rw [← hPoleNegConj]
+    exact finiteE_lowerRootInnerValue_negConj_eq_conj
+      hEven η (symmetricPickPole x v)
+  exact
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound_of_logDerivativeDecomposition
+      hA hη hm htau ha hv hx hdegree hAPlus hAMinus hAPolePlus
+      hAPoleMinus hdecompose hupperPlus hupperMinus hbackground hpole
+      hbackgroundReflect hreflect
 
 end
 
