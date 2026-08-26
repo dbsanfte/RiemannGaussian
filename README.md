@@ -113,6 +113,10 @@ What is checked here:
   expression and a soundness theorem for the endpoint/compact/tail/large-`t`
   certificate architecture; an unbounded family of sound certificates is
   proved to imply RH;
+- parameter-uniform high-prime control: whenever `log N ≥ 8 * epsilon`, the
+  complete tail beyond `N` is bounded by a fixed summable von-Mangoldt
+  `n^(-2)` tail, and Lean proves that comparison tail tends to zero as
+  `N → ∞`;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -127,6 +131,9 @@ What is not yet checked here:
 - an unbounded family of certified good widths (and hence nonnegativity of the
   arithmetic/canonical expression for every `epsilon > 0`; only the finite
   rational portions at 0.04--0.06 are checked).
+- a uniform positivity mechanism for the growing retained prime block below
+  the parameter-dependent cutoff; the new tail theorem shows that this, not
+  the infinite high-prime tail, is the scalable obstruction.
 
 The finite endpoint files are calibration and audit artifacts, not a proposed
 infinite certificate ladder.  Closing the final item requires one

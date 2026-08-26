@@ -16,6 +16,7 @@ namespace RiemannGaussian
 
 noncomputable section
 
+open Filter
 open scoped BigOperators Topology
 
 /-- The low prime-power channels with natural-number index below `cutoff`.
@@ -123,6 +124,109 @@ theorem gaussianPrimeTailContribution_sub_zero_le_envelope
       (abs_gaussianPrimeTailContribution_le_envelope hε cutoff t)
   have hzero := gaussianPrimeTailContribution_zero_nonnegative hε cutoff
   linarith
+
+/-! ## A parameter-uniform high-prime cutoff -/
+
+/-- Fixed summable comparison tail, independent of the Gaussian width and
+center. -/
+def vonMangoldtDivSqTail (cutoff : ℕ) : ℝ :=
+  ∑' k : ℕ,
+    ArithmeticFunction.vonMangoldt (k + cutoff) /
+      ((k + cutoff : ℕ) : ℝ) ^ 2
+
+/-- The fixed comparison tail vanishes as the cutoff tends to infinity. -/
+theorem tendsto_vonMangoldtDivSqTail_atTop :
+    Tendsto vonMangoldtDivSqTail atTop (𝓝 0) := by
+  let f : ℕ → ℝ := fun n =>
+    ArithmeticFunction.vonMangoldt n / (n : ℝ) ^ 2
+  have hf : Summable f := summable_vonMangoldt_div_sq
+  have hpartial := hf.tendsto_sum_tsum_nat
+  have hdifference : Tendsto
+      (fun cutoff : ℕ => (∑' n, f n) - ∑ n ∈ Finset.range cutoff, f n)
+      atTop (𝓝 0) := by
+    have hconstant : Tendsto (fun _ : ℕ => ∑' n, f n) atTop
+        (𝓝 (∑' n, f n)) := tendsto_const_nhds
+    simpa only [sub_self] using hconstant.sub hpartial
+  apply hdifference.congr'
+  filter_upwards with cutoff
+  have hsplit := hf.sum_add_tsum_nat_add cutoff
+  dsimp only [vonMangoldtDivSqTail, f]
+  linarith
+
+lemma gaussianPrimeSummand_zero_le_vonMangoldt_div_sq
+    {ε : ℝ} (hε : 0 < ε) {n : ℕ} (hn : 0 < n)
+    (hlog : 8 * ε ≤ Real.log n) :
+    gaussianPrimeSummand ε 0 n ≤
+      ArithmeticFunction.vonMangoldt n / (n : ℝ) ^ 2 := by
+  have hn0 : 0 < (n : ℝ) := by exact_mod_cast hn
+  have hn1 : 1 ≤ (n : ℝ) := by exact_mod_cast hn
+  have hsqrt1 : 1 ≤ Real.sqrt (n : ℝ) := by
+    rw [Real.one_le_sqrt]
+    exact hn1
+  have hweight := gaussian_log_weight_le_inv_sq hε hn0 hlog
+  have hΛ0 : 0 ≤ ArithmeticFunction.vonMangoldt n := by positivity
+  have hcoef0 : 0 ≤
+      ArithmeticFunction.vonMangoldt n / Real.sqrt (n : ℝ) :=
+    div_nonneg hΛ0 (Real.sqrt_nonneg _)
+  unfold gaussianPrimeSummand
+  simp only [zero_mul, Real.cos_zero, mul_one]
+  calc
+    ArithmeticFunction.vonMangoldt n / Real.sqrt (n : ℝ) *
+          Real.exp (-(Real.log (n : ℝ)) ^ 2 / (4 * ε)) ≤
+        ArithmeticFunction.vonMangoldt n / Real.sqrt (n : ℝ) *
+          (1 / (n : ℝ) ^ 2) :=
+      mul_le_mul_of_nonneg_left hweight hcoef0
+    _ ≤ ArithmeticFunction.vonMangoldt n / (n : ℝ) ^ 2 := by
+      have hdiv : ArithmeticFunction.vonMangoldt n /
+          Real.sqrt (n : ℝ) ≤ ArithmeticFunction.vonMangoldt n := by
+        rw [div_eq_mul_inv]
+        exact mul_le_of_le_one_right hΛ0 (inv_le_one_of_one_le₀ hsqrt1)
+      simpa [div_eq_mul_inv, mul_assoc] using
+        mul_le_mul_of_nonneg_right hdiv (inv_nonneg.mpr (sq_nonneg _))
+
+/-- If the cutoff lies beyond the uniform threshold `log N ≥ 8 ε`, the
+entire nonoscillatory Gaussian tail is bounded by a width-independent
+summable tail. -/
+theorem gaussianPrimeTailEnvelope_le_vonMangoldtDivSqTail
+    {ε : ℝ} (hε : 0 < ε) {cutoff : ℕ} (hcutoff : 0 < cutoff)
+    (hlog : 8 * ε ≤ Real.log cutoff) :
+    gaussianPrimeTailEnvelope ε cutoff ≤
+      2 / Real.sqrt (Real.pi * ε) * vonMangoldtDivSqTail cutoff := by
+  let f : ℕ → ℝ := fun k => gaussianPrimeSummand ε 0 (k + cutoff)
+  let g : ℕ → ℝ := fun k =>
+    ArithmeticFunction.vonMangoldt (k + cutoff) /
+      ((k + cutoff : ℕ) : ℝ) ^ 2
+  have hf : Summable f :=
+    summable_gaussianPrimeTailSummand hε 0 cutoff
+  have hg : Summable g := by
+    exact (summable_nat_add_iff cutoff).2 summable_vonMangoldt_div_sq
+  have hterm : ∀ k : ℕ, f k ≤ g k := by
+    intro k
+    have hkn : 0 < k + cutoff := Nat.add_pos_right k hcutoff
+    have hcast : (cutoff : ℝ) ≤ (k + cutoff : ℕ) := by
+      exact_mod_cast Nat.le_add_left cutoff k
+    have hcutoffReal : 0 < (cutoff : ℝ) := by exact_mod_cast hcutoff
+    have hlogMono : Real.log cutoff ≤ Real.log (k + cutoff : ℕ) :=
+      Real.log_le_log hcutoffReal hcast
+    exact gaussianPrimeSummand_zero_le_vonMangoldt_div_sq hε hkn
+      (hlog.trans hlogMono)
+  have hsum : (∑' k, f k) ≤ ∑' k, g k :=
+    hf.tsum_le_tsum hterm hg
+  have hfactor : 0 ≤ 2 / Real.sqrt (Real.pi * ε) := by positivity
+  unfold gaussianPrimeTailEnvelope gaussianPrimeTailContribution
+  simp only [gaussianPrimeTailSum, vonMangoldtDivSqTail]
+  exact mul_le_mul_of_nonneg_left hsum hfactor
+
+/-- Every width admits a natural-number cutoff satisfying the uniform
+high-prime threshold. -/
+theorem exists_gaussianPrimeTailCutoff (ε : ℝ) :
+    ∃ cutoff : ℕ, 0 < cutoff ∧ 8 * ε ≤ Real.log cutoff := by
+  obtain ⟨cutoff, hcutoff⟩ := exists_nat_gt (Real.exp (8 * ε))
+  have hcutoffReal : 0 < (cutoff : ℝ) :=
+    (Real.exp_pos (8 * ε)).trans hcutoff
+  have hlog : 8 * ε < Real.log (cutoff : ℝ) :=
+    (Real.lt_log_iff_exp_lt hcutoffReal).2 hcutoff
+  exact ⟨cutoff, by exact_mod_cast hcutoffReal, hlog.le⟩
 
 /-- The arithmetic model obtained by retaining only the channels below the
 cutoff. -/
