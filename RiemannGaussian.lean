@@ -33,3 +33,4 @@ import RiemannGaussian.ScrewTransport
 import RiemannGaussian.GaussianScrewBridge
 import RiemannGaussian.GaussianDigammaTransform
 import RiemannGaussian.GaussianDigammaGauss
+import RiemannGaussian.SuzukiTransportBarrier

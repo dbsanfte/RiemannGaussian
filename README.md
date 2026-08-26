@@ -171,6 +171,13 @@ What is checked here:
   exponential approximation; and the order-theoretic Legendre transport
   comparison, stated correctly as a sufficient condition while retaining the
   exact positive base-margin obligation;
+- the exact curvature-mass form of every frozen Legendre barrier: a point
+  whose accumulated smooth curvature equals the frozen prime mass is proved,
+  without differentiating an infimum, to be the global half-line minimizer;
+  Suzuki curvature is continuous, bounded below by `1/2` beyond `log 2`, and
+  has a unique mass-matching point for every prefix, so tail-model
+  nonnegativity is reduced canonically to one transport-moment inequality
+  quantified uniformly over all cutoffs;
 - the exact Gaussian/Suzuki curvature interface: the quarter-line digamma
   density splits pointwise into the reflected continuous-PNT density plus
   Suzuki's missing curvature; its Gaussian missing-curvature integrand is
@@ -207,10 +214,15 @@ What is not yet checked here:
   the parameter-dependent cutoff; the new tail theorem shows that this, not
   the infinite high-prime tail, is the scalable obstruction.
 - the analytic identification of the full Suzuki screw function with the new
-  hinge model, boundedness below of its frozen regimes, or nonnegativity of the
-  resulting infinite barrier sequence.  The cumulative transport inequality
-  proposed in the research note is stronger than necessary when the verified
-  base margin is positive, and proving it globally remains RH-strength.
+  hinge model, the exact audited initial value/slope normalization, or
+  nonnegativity of the resulting canonical infinite transport-gap sequence.
+  Existence and exact evaluation of each individual frozen barrier are now
+  checked, but the single theorem quantified over all cutoffs remains
+  RH-strength.
+- the post-Gaussian Gram--Weil defect program: in particular, the abstract
+  finite-dimensional block inertia theorem, the analytic finite-polynomial
+  model-space realization, and any infinite-dimensional lift to the xi
+  function.  The latter remains a research program, not an RH proof.
 - a parameter-uniform lower bound for the combined Gaussian prime discrepancy
   plus digamma gain.  Numerical falsification shows that neither term may be
   discarded: they undergo a large cancellation before the very small spectral
