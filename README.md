@@ -273,6 +273,12 @@ What is checked here:
   first-coordinate cross angle is proved pointwise strictly contractive, and
   it is proved injective under the isolated degree inequality; Lean then
   derives the exact Gram--Weil defect inertia from the abstract block theorem;
+- the first genuine Hardy-boundary realization of the finite model spaces:
+  every rational numerator coordinate is proved continuous and square
+  integrable by an explicit `O(1/|x|)` estimate, embeds faithfully into
+  complex `L²(ℝ)`, and has finite-dimensional closed image.  The positive and
+  negative images are proved transverse, so their actual orthogonal
+  cross-angle is pointwise strictly contractive;
 - the exact root-count bridge behind that degree inequality: conjugation
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
@@ -323,11 +329,13 @@ What is not yet checked here:
   checked, but the single theorem quantified over all cutoffs remains
   RH-strength.
 - the remaining analytic finite-polynomial realization of the checked
-  abstract Gram--Weil block theorem: the analytic half-plane Hardy/model-space
-  inner products identifying the actual
-  Gram geometry with the now-checked Euclidean algebraic realization.  The
-  algebraic cross angle is checked, but no claim is yet made that its
-  coefficient norm is the Hardy boundary norm.  Spectral completeness for
+  abstract Gram--Weil block theorem: although the rational model spaces now
+  embed faithfully as closed subspaces of actual boundary `L²` and their
+  orthogonal cross angle is strictly contractive, the Hardy orthogonality
+  calculation needed to prove that projection injective and identify the
+  resulting Gram geometry is not yet checked.  No claim is made that the
+  auxiliary Euclidean coefficient norm is the Hardy boundary norm.  Spectral
+  completeness for
   all `±sqrt(1-s_j^2)` pencil modes is also not yet formalized beyond the
   checked scalar and analytic one-pair cases. Nor is any infinite-dimensional
   lift to the xi function; that remains a research program, not an RH proof.
