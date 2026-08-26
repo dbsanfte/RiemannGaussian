@@ -1,538 +1,146 @@
 # RiemannGaussian
 
-Lean 4.33.1/Mathlib 4.33.1 checks the finite rational portions of the
-restricted Gaussian-Weil positivity certificates at epsilon 0.04, 0.05,
-and 0.06.
+## Project and build
 
-> [!IMPORTANT]
-> This is an incomplete research formalization. It does **not** contain a
-> proof of the Riemann hypothesis; the unproved bridges are listed below.
+RiemannGaussian is a research project whose goal is a completely formal,
+`sorry`-free proof of the Riemann hypothesis. The repository contains the
+developing proof in Lean, together with exact rational certificates used to
+test and calibrate parts of the argument. The proof is not complete: every
+claim described as proved below is checked by Lean, while the remaining
+research frontier is stated explicitly.
 
-What is checked here:
-
-- every derivative interval at all three endpoints, including the signed
-  8,400-cell epsilon 0.06 partition;
-- the epsilon 0.06 downward-rounded cumulative derivative increase;
-- the final rational endpoint and large-t budgets.
-- the exact Gaussian heat-convolution identities;
-- construction of every positive-width symmetric Gaussian as a Schwartz map;
-- the abstract closed-positive-cone extension theorem;
-- normalized real-Schwartz Gaussian smoothing and its positivity/evenness;
-- the entire spectral Gaussian, its convolution-square factorization on the
-  critical line, and the exact sign-changing contribution of an off-line
-  conjugate pair;
-- the exact packet-gap exponent, decay of every positive-gap relative
-  envelope, and domination of any finite competing packet family by a
-  maximal-height off-axis packet;
-- dominated-convergence separation against an arbitrary infinite weighted
-  packet family from one summable baseline Gaussian envelope;
-- the distinct translated and symmetric zero-sum interfaces, including the
-  exact normalization used by the arithmetic certificates and eventual
-  detection of an isolated off-axis packet by that symmetric family;
-- equivalence between Mathlib's `RiemannHypothesis` and reality of all
-  nontrivial zeros in the rotated spectral coordinate;
-- the multiplicity-aware zero-sum bridge interface, including local
-  finiteness of distinct zeta zeros, construction and positivity of their
-  analytic order-of-vanishing multiplicities, and preservation of those
-  multiplicities by conjugation and the functional equation;
-- absolute Gaussian-envelope summability deduced directly from a complex
-  `HasSum` representation, countability of the packet-tie exceptional set,
-  existence of a uniquely maximal off-axis packet, and the complete global
-  translated-Gaussian zero-divisor separation theorem;
-- the resulting unconditional equivalence, given a translated `HasSum`
-  representation, between all-translated-Gaussian nonnegativity and Mathlib's
-  `RiemannHypothesis`;
-- functional-equation reindexing showing that every represented translated
-  value is even and that a compatibly represented symmetric value is exactly
-  twice the translated value; hence symmetric nonnegativity is also
-  equivalent to RH when both representations are supplied;
-- construction of canonical translated and symmetric `HasSum`
-  representations from the isolated condition that every positive Gaussian
-  in the multiplicity-counted zero ordinate is summable;
-- an unconditional quadratic growth bound for the pole-cleared xi function,
-  obtained from Mathlib's theta-kernel estimates, and the resulting
-  unconditional Gaussian ordinate summability and canonical zero sums;
-- the unconditional equivalence between nonnegativity of the canonical
-  symmetric Gaussian zero sum at every positive width and Mathlib's
-  `RiemannHypothesis`;
-- complex Gaussian heat convolution at arbitrary spectral points, absolute
-  integral/sum interchange over the complete multiplicity-aware zeta zero
-  divisor, and unconditional heat propagation of both canonical zero sums;
-- propagation of canonical nonnegativity from one width to every smaller
-  positive width;
-- the exact arithmetic normalization of the prime, boundary, and digamma
-  terms, with absolute convergence of the Gaussian von Mangoldt series;
-- a vertical exponential bound for
-  `digamma (1/4 + I*r/2)`, derived from Euler's Gamma integral and reflection
-  formula, proving that the Archimedean digamma integral converges at every
-  positive Gaussian width;
-- an elementary, multiplicity-aware xi divisor calculation on every finite
-  zero-free spectral rectangle: each enclosed principal part contributes
-  exactly `2*pi*I` times its residue, and the full xi contour is exactly
-  `-2*pi` times the corresponding finite symmetric Gaussian zero sum;
-- cofinal convergence of those multiplicity-weighted finite windows to the
-  canonical symmetric Gaussian `HasSum`, construction of a zero-free
-  truncation in every interval `(n,n+1)`, convergence of the horizontal safe
-  lines, and an exact reduction of the explicit-formula identification to
-  decay of one right vertical-side integral along an arbitrary admissible
-  truncation sequence;
-- a quantitative contour interface that existentially selects the admissible
-  sequence (so it may be kept away from zeros), together with a proof that any
-  fixed exponential bound for the xi logarithmic derivative on those contours
-  is overwhelmed by the Gaussian and therefore gives the required vertical
-  decay at every positive width;
-- an explicit pigeonhole construction of one quantitatively zero-separated
-  contour in every unit height interval; Jensen's divisor bound makes the
-  reciprocal separation radius at most quadratic, and the complete vertical
-  segment is proved to stay at least that radius from every spectral xi zero;
-- construction, at each contour scale, of a larger zero-free circle and an
-  extended canonical decomposition of xi there; on that circle the zero-free
-  residual has exactly the same norm as xi, so maximum modulus transfers the
-  checked quadratic-exponential xi growth bound throughout the enclosed disk;
-- a normalized analytic logarithm of that residual, including the exact
-  exponential reconstruction identity and the lower normalization
-  `1 ≤ ‖g 0‖`; Borel--Carathéodory followed by Cauchy's estimate now gives
-  an explicit polynomial bound for the residual logarithmic derivative on the
-  inner quarter-disk;
-- exact logarithmic differentiation of the finite canonical zero-factor
-  product, an explicit reciprocal-separation bound for each factor, Jensen
-  control of the total multiplicity, and transfer of the resulting bound to
-  the quantitatively separated spectral contours;
-- an unconditional exponential bound for the xi logarithmic derivative on
-  those contours, hence Gaussian decay of the final vertical sides and an
-  unconditional proof of `GaussianArithmeticExplicitFormulaIdentified`;
-- the pointwise identity
-  `gaussianArithmeticExplicitFormula ε t =
-  canonicalZetaSymmetricGaussianZeroSum ε t` for every `0 < ε`, exact
-  arithmetic heat propagation, and the unconditional equivalence of
-  all-width arithmetic nonnegativity with RH;
-- the exact cofinal-width reduction: all-width positivity is equivalent to
-  finding good arithmetic Gaussian widths arbitrarily far to the right, so a
-  successful certificate program only needs an unbounded family of widths;
-- an exact low-prime/infinite-tail decomposition of the convergent arithmetic
-  expression and a soundness theorem for the endpoint/compact/tail/large-`t`
-  certificate architecture; an unbounded family of sound certificates is
-  proved to imply RH;
-- parameter-uniform high-prime control: whenever `log N ≥ 8 * epsilon`, the
-  complete tail beyond `N` is bounded by a fixed summable von-Mangoldt
-  `n^(-2)` tail, and Lean proves that comparison tail tends to zero as
-  `N → ∞`;
-- the complete integrated prime oscillation energy
-  `sum q_n(epsilon) * (1 - cos(t * log n))`: every summand is nonnegative,
-  every finite analytically chosen block is a rigorous lower bound, and the
-  full energy is exactly the drop in the oscillatory prime contribution;
-- the exact margin-aware energy budget saying that the endpoint value plus
-  prime energy must pay the Archimedean drop.  At one width this is equivalent
-  to full centerwise positivity, and having such widths cofinally is proved
-  equivalent to RH; no assertion that center zero is a global minimum is
-  smuggled into the reduction;
-- exact cancellation of the continuous-PNT prime-energy main term against the
-  exponentially large elementary boundary drop.  The surviving formula is
-  endpoint plus digamma gain plus a Gaussian-smoothed von-Mangoldt
-  discrepancy, and cofinal validity of this cancellation-aware budget is
-  again proved equivalent to RH;
-- a fully checked bilateral Gaussian-transform evaluation, including
-  integrability, proving that this closed-form main term is exactly the
-  continuous density integral against `exp (u / 2) du`; consequently the
-  remaining prime discrepancy is now an exact normalized difference between
-  the von-Mangoldt atoms at `log n` and that continuous measure, ready for a
-  summation-by-parts or transport estimate;
-- the exact split of that bilateral density into the forward PNT measure on
-  positive logarithmic coordinates and its reflected Archimedean correction;
-  the combined digamma-plus-prime frontier is correspondingly reduced to a
-  forward prime discrepancy plus an explicit digamma remainder;
-- finite Abel summation specialized to the exact multiplicative Gaussian
-  kernel: every cutoff of the forward discrepancy is a boundary term
-  `K(b) * (psi(b) - b)` plus one integral of the explicit derivative `K'`
-  against the classical Chebyshev error `x - psi(x)`, with the logarithmic
-  change of variables back to the project energy coordinates checked in Lean;
-- passage of that Abel identity to the infinite forward discrepancy: the
-  finite atomic and continuous energies converge to their full counterparts,
-  the Chebyshev boundary term tends to zero using an explicit linear bound for
-  `psi` plus Gaussian decay, and the normalized improper Chebyshev-error
-  integrals converge to the exact forward discrepancy;
-- a finite phase-block interface: any lower bound for weighted von-Mangoldt
-  mass on a block where `1 - cos (t * log n)` has a uniform floor becomes a
-  kernel-checked lower bound for the true prime energy and hence a sufficient
-  centerwise positivity criterion;
-- exact differentiation of the retained prime block at arbitrary width and
-  cutoff, including its closed signed-sinc form
-  `F_prime'(t) = t * sum (q_n(epsilon) * sinc(t * log n))`; this is the
-  parameterized low-prime object a uniform argument must control;
-- the abstract frozen-hinge/Legendre reduction suggested by the screw-function
-  attack: every nonnegative-weight frozen regime majorizes the true locally
-  finite hinge model, agrees with it on its event cell, and pointwise
-  nonnegativity is exactly equivalent to nonnegativity of all bounded-below
-  frozen infimum barriers;
-- specialization of that reduction to the complete Suzuki von-Mangoldt event
-  schedule `log (n + 2)` with weights `Lambda(n + 2) / sqrt(n + 2)`, including
-  local finiteness and coverage of every center; positivity of the exact
-  smooth curvature beyond `log 2` and its strict comparison with the pure
-  exponential approximation; and the order-theoretic Legendre transport
-  comparison, stated correctly as a sufficient condition while retaining the
-  exact positive base-margin obligation;
-- the exact curvature-mass form of every frozen Legendre barrier: a point
-  whose accumulated smooth curvature equals the frozen prime mass is proved,
-  without differentiating an infimum, to be the global half-line minimizer;
-  Suzuki curvature is continuous, bounded below by `1/2` beyond `log 2`, and
-  has a unique mass-matching point for every prefix, so tail-model
-  nonnegativity is reduced canonically to one transport-moment inequality
-  quantified uniformly over all cutoffs;
-- the exact consecutive-cell dynamics of that transport criterion: canonical
-  mass points are monotone, the curvature mass of each cell is exactly the
-  next von-Mangoldt weight, and the next gap equals the old gap plus the
-  signed prime-versus-smooth barycenter surplus.  Prefix and arbitrary-block
-  gaps telescope to cumulative cell surpluses, with sharp endpoint bounds;
-  zero-weight non-prime-powers contribute identically zero.  Consequently the
-  full tail criterion is now equivalent to one cumulative-surplus lower bound
-  at every cutoff, retaining rather than discarding cancellation across cells;
-- the corrected tail reset needed for an actual Suzuki trajectory: Lean splits
-  the full locally finite hinge model after an arbitrary finite prime prefix,
-  shifts the remaining event schedule, and represents a nonpositive audited
-  base slope by one synthetic nonnegative event at the base.  The corrected
-  transport gaps again telescope exactly; cell zero is the descent to the
-  zero-slope point and subsequent cells correspond to the genuine future
-  prime weights.  Subject to one explicit tail-normalization identity, full
-  model positivity is equivalent to the cumulative-surplus bound for this
-  shifted schedule, rather than for an incorrectly restarted prime sequence;
-- the exact Gaussian/Suzuki curvature interface: the quarter-line digamma
-  density splits pointwise into the reflected continuous-PNT density plus
-  Suzuki's missing curvature; its Gaussian missing-curvature integrand is
-  proved integrable both across the apparent singularity at zero and at
-  infinity; and subtracting it from the forward continuous energy is proved
-  to be the literal Gaussian transform of `suzukiSmoothCurvature`;
-- a proof of the pointwise identity
-  `QuarterLineDigammaGaussDifferenceFormula` from Mathlib's Gamma integral and
-  Euler approximation: Lean differentiates the compact Euler approximants,
-  proves dominated convergence for the log-weighted kernels, derives Euler's
-  digamma series on the right half-plane, evaluates each nonnegative vertical
-  difference term as a damped-cosine Laplace integral, performs the Tonelli
-  exchange, sums the geometric kernel, and checks the final `t = 2u`
-  substitution;
-- the resulting unconditional `GaussianDigammaScrewTransform`: the arithmetic
-  formula is exactly endpoint plus atomic prime energy minus Suzuki
-  smooth-curvature energy, and cofinal validity of that exact energy budget is
-  kernel-checked equivalent to RH;
-- the abstract finite-dimensional Gram--Weil block-defect theorem over real or
-  complex Hilbert spaces: for every injective `C : N → P`, Lean constructs
-  maximal positive and negative subspaces for
-  `[[0, -C], [-C†, 2I]]`, proves both have dimension `dim N`, and proves its
-  kernel has dimension `dim P - dim N`; thus its basis-free quadratic inertia
-  is exactly `(dim N, dim P - dim N, dim N)` in negative/null/positive order;
-- the matching finite metric-pencil algebra for
-  `G = [[I,-C],[-C†,I]]` and `J = diag(I,-I)`: `G-J` is definitionally linked
-  to the checked defect, every generalized eigenvector away from `lambda = 1`
-  yields `C† C n = (1-lambda^2)n`, every such mode has a proved converse
-  lift, the `lambda = 1` kernel has dimension `dim P - dim N`, and explicit
-  injectivity plus pointwise strict contraction forces every supplied real
-  nonexceptional pencil eigenvalue into `(-1,1)`;
-- the complete one-dimensional metric-pencil classification: for the scalar
-  cross-angle `0 < c < 1`, a nonzero generalized eigenvector exists exactly at
-  `lambda = ± sqrt (1 - c^2)`, with both converse eigenvectors constructed
-  explicitly and the exceptional value `lambda = 1` excluded;
-- the analytic quadratic one-pair realization for `A(z) = z^2 + a^2`: the
-  two improper rational integrals and the odd cross integral are proved from
-  Mathlib's full-line Cauchy integral, the normalized complex zero functions
-  have literal `2 × 2` Gram matrix
-  `(1 / sqrt (1 + a^2)) I`, and the corresponding Weil metric pencil is
-  singular exactly at `lambda = ± 1 / sqrt (1 + a^2)`;
-- the algebraic barriers for the general finite homotopy
-  `E_tau = A + I * tau * A'`: for separable real `A` and nonzero `tau`, Lean
-  proves that `E_tau` and `E_tau^sharp` have no real zeros and no common
-  complex zero, hence are coprime; both retain the degree and leading
-  coefficient of `A`; coefficient conjugation exactly interchanges them and
-  conjugates their root multisets with multiplicity; and their open
-  upper/lower root counts exhaust `A.natDegree`;
-- the corresponding literal upper and lower monic root factors, retaining
-  multiplicity, and the exact reconstruction of `E_tau` as its leading
-  coefficient times those two factors; the conjugate of the upper factor is
-  proved zero-free throughout the open upper half-plane, and its finite
-  Blaschke quotient has equal numerator/denominator degree and norm exactly
-  one at every real point;
-- the direct finite Krein--Langer identity in the field `RatFunc ℂ`:
-  `B * Theta = S` and equivalently `Theta = S / B`, with both removable
-  root factors cancelled algebraically; the pointwise `B` and `S` are proved
-  complex differentiable throughout the open upper half-plane, bounded there
-  by one in norm, and unimodular on the real axis; their degrees add to
-  `A.natDegree`, with the exact `kappa`/`A.natDegree - kappa` split reduced to
-  the isolated upper-root-count theorem; moreover `Theta(gamma) = -1` is
-  proved at every complex zero `gamma` of separable `A`;
-- the pointwise form `B(z) * Theta(z) = S(z)` wherever the rational
-  representatives are defined, and the exact de Branges kernel-numerator
-  identity expressing the transformed `Theta` kernel as the `S` kernel minus
-  the `B` kernel; at every zero `gamma` of `A`, all required denominators are
-  proved nonzero and Lean derives `S(gamma) = -B(gamma)` and hence
-  `B(gamma) + S(gamma) = 0`;
-- the normalized finite zero-vector split from the proposed analytic route:
-  `A(z) / (z - gamma)` is represented by a literal polynomial quotient,
-  its value at the removed root is proved to equal `A'(gamma)`, and Lean
-  proves `B * F_gamma = u_gamma - n_gamma` with the exact `I / sqrt pi`
-  normalization; for separable `A`, the quotient polynomials indexed by all
-  complex roots are linearly independent, and that root index set is proved
-  to have cardinality `A.natDegree`;
-- the finite algebraic model spaces for the rational factors `S` and `B` as
-  numerator spaces of degree below their denominators: Lean proves their
-  exact dimensions, constructs canonical polynomial coordinates for every
-  `S`- and `B`-difference quotient, and identifies their evaluations with the
-  normalized positive and negative zero-vector splits; after clearing the
-  common denominator, the coordinate pair reconstructs the original
-  Lagrange quotient exactly, which proves that the root-coefficient-to-pair
-  map is a complex-linear isomorphism rather than just a dimension count;
-- the common-numerator algebra behind the next Hilbert-space step: all needed
-  reflected and cross-factor coprimality statements are proved, the
-  `D * q_S + V * q_B` Sylvester map is promoted to a literal linear
-  equivalence, the common-denominator copies of `K_S` and `K_B` are proved
-  transverse, and the corresponding `S K_B` transversality needed for an
-  injective cross-angle is proved under the isolated degree inequality;
-- an explicit finite algebraic Hilbert realization obtained by transporting
-  the Sylvester coordinates to Euclidean coefficient spaces with the `L²`
-  product norm: the negative Blaschke copy is embedded as a subspace, its
-  first-coordinate cross angle is proved pointwise strictly contractive, and
-  it is proved injective under the isolated degree inequality; Lean then
-  derives the exact Gram--Weil defect inertia from the abstract block theorem;
-- the first genuine Hardy-boundary realization of the finite model spaces:
-  every rational numerator coordinate is proved continuous and square
-  integrable by an explicit `O(1/|x|)` estimate, embeds faithfully into
-  complex `L²(ℝ)`, and has finite-dimensional closed image.  The positive and
-  negative images are proved transverse, so their actual orthogonal
-  cross-angle is pointwise strictly contractive.  Multiplication by the
-  finite residual-inner boundary function is now constructed on actual `L²`
-  equivalence classes and proved to be a complex-linear isometry, including
-  the exact scalar-weighted inner-product identity needed for the two-node
-  Gram calculation.  A checked upper-half-plane rectangle-contour theorem
-  proves that every degree-gap-two rational function with all poles strictly
-  below the real line has vanishing boundary integral; applying it proves
-  that every residual-inner shifted Cauchy vector is genuinely orthogonal in
-  `L²(ℝ, ℂ)` to the entire finite residual-model image.  Lean then constructs
-  the complementary finite-model difference-quotient coordinate and proves
-  the exact orthogonal-projection identity
-  `k_w - P_(K_S) k_w = conj(S(w)) • S k_w`, together with the resulting
-  weighted inner-product formula for two actual projection residuals.  For
-  two distinct upper nodes, the Cauchy vectors are proved linearly independent
-  and their base Gram determinant strictly positive; the four actual residual
-  Gram entries and the full residual-versus-base pencil are identified
-  literally with the checked weighted matrices.  In particular Lean proves
-  the unconditional determinant ratio
-  `det(W) / det(G) = |S(w₀) * S(w₁)|²`, without assuming distinct metric modes.
-  Finally, for the actual finite Hardy cross angle `C` and residual map `R`,
-  Lean proves the operator identity `R† R = I - C† C` and, in every finite
-  basis of the negative model, identifies `det(I - C† C)` with the residual
-  Gram determinant divided by the base Gram determinant.  This last step is
-  basis-independent and makes no spectral-separation assumption.  Lean also
-  proves directly that every upper Blaschke root gives an actual boundary
-  Cauchy vector in the negative model: the denominator is divided by its
-  proved conjugate linear root factor and the resulting boundary quotient is
-  identified in `L²`.  Two distinct such vectors form a basis whenever the
-  upper factor has degree two.  Coprimality discharges the residual-factor
-  nonvanishing conditions, yielding the concrete root specialization
-  `det(I - C† C) = |S(w₀) * S(w₁)|²` with no distinct-mode hypothesis.
-  For two symmetric roots Lean now proves that these roots exhaust the
-  degree-two numerator with multiplicity, identifies its literal Blaschke
-  quotient with the symmetric two-pole product, and derives the two Pick
-  interpolation values from the corresponding roots of `A`.  Composing the
-  actual determinant identity with the separation-free quartet theorem gives
-  the strict checked bound
-  `sqrt(re det(I - C† C)) < m²/(m²+a²)` under the explicit finite root,
-  pole, background, and reflection hypotheses, without selecting or
-  separating individual metric modes.  The scaled finite negative logarithmic
-  derivative is now defined explicitly and its `-I` level equation is proved
-  equivalent to `A + I*eta*A' = 0` away from zeros of `A`.  Lean also proves
-  anti-equivariance of both a conjugate-pair contribution and the full
-  symmetric quartet under `z ↦ -conj z`.  Consequently a second checked
-  end-to-end theorem derives both candidate `E`-roots from one exact global
-  quartet-plus-background decomposition, one pole equation, and the reflected
-  background law; the reflected pole equation is no longer assumed.  Lean now
-  goes further for an even real base polynomial: its derivative is proved odd,
-  the complete root multiset of `A + I*eta*A'` is proved invariant under
-  negative conjugation with multiplicity, and the product formula then proves
-  the exact residual-inner reflected-value identity.  The same symmetry and
-  the global decomposition force the background reflection law and the second
-  pole denominator condition.  The pole equation itself forces the first
-  denominator to be nonzero, and distinctness from the two proved zeros of
-  `A` then forces both pseudo-hyperbolic numerator squares positive.  Finally,
-  the already checked positive-homotopy root-count theorem replaces the raw
-  degree-two assumption by the base upper-root count at parameter zero.  Hence
-  the strongest checked finite quartet theorem assumes none of those local or
-  reflected-side facts.  In the isolated-quartet specialization, evenness,
-  separability, degree four, and the one named upper zero prove that base count
-  is exactly two; the resulting end-to-end theorem assumes no root-count or
-  root-factor degree statement either.  Finally the quartet background is
-  defined as the literal residual after subtracting the named quartet from
-  `-eta*A'/A`; its decomposition is therefore an exact identity.  A named
-  root of `A + I*eta*A'` forces the pole equation, while separability proves
-  the base denominator is nonzero there.  At this direct finite frontier, only
-  nonnegativity of the residual background's imaginary part at that pole
-  remains as a substantive analytic hypothesis.  Lean now also proves the
-  exact multiplicity-counted root-sum formula for `-eta*A'/A`.  For the
-  isolated even quartic its complete root multiset is exactly the four named
-  symmetric points, so at the natural weight `m = eta` the residual background
-  is zero.  The resulting strict finite Hardy determinant bound has no
-  background, decomposition, pole-equation, root-count, or reflection
-  assumption beyond the named structural roots themselves.  More generally,
-  if the complete root multiset is the named quartet plus an arbitrary finite
-  residual multiset supported on the real axis, Lean identifies the literal
-  background exactly with that residual root sum, proves its imaginary part
-  nonnegative throughout the upper half-plane, and obtains the same strict
-  determinant bound without a background-sign assumption.  Lean now also
-  factors the imaginary contribution of an off-axis conjugate pair: its sign
-  is controlled exactly by the pair's Euclidean influence disk.  Hence the
-  same end-to-end bound is checked for arbitrary real residual roots together
-  with arbitrary conjugate off-axis pairs whose influence disks do not contain
-  the candidate pole.  The remaining finite background-sign obstruction is
-  therefore confined to residual off-axis pairs whose influence disks do
-  contain that pole and which can contribute negatively;
-- the exact root-count bridge behind that degree inequality: conjugation
-  proves equal upper/lower counts at homotopy parameter zero, and Lean proves
-  that invariance of the upper count from zero to the target parameter implies
-  the required degree inequality, cross-angle injectivity, and defect inertia;
-- the first rigorous continuity layer for that finite homotopy: after a monic
-  normalization which preserves every root with multiplicity, all coefficients
-  converge uniformly in their index, Mathlib's quantitative root-stability
-  theorem gives nearby roots, and a separation argument proves local constancy
-  of the upper-half-plane root count at every nonzero separable homotopy
-  member; consequently the count is globally constant on all positive
-  parameters whenever the positive homotopy is collision-free;
-- the collision-safe completion of that continuity argument: reverse root
-  persistence proves that every nearby root remains close to the base root
-  set, Newton identities and Vieta's formulas prove continuity of every root
-  power sum with multiplicity, and Lagrange interpolation turns those moments
-  into an exact local upper-half-plane count; Lean therefore proves, without
-  assuming the homotopy members separable, that the upper count is locally
-  constant at every nonzero parameter and hence constant throughout the entire
-  positive parameter interval, including through multiple-root collisions;
-- the endpoint evaluation of that constant count: a branch-free local quotient
-  argument proves that every real zero of the separable base polynomial moves
-  into the lower half-plane for small positive parameter, while nonreal roots
-  retain their half-plane classification; root moments and interpolation then
-  prove exact equality with the parameter-zero upper count.  Thus the root
-  factor degree inequality, cross-angle injectivity, and exact algebraic
-  Gram--Weil inertia now hold unconditionally for every positive parameter;
-- the separation-free scalar core of the symmetric-quartet attack: for one
-  conjugate zero pair Lean proves the exact pseudo-hyperbolic lower bound for
-  its logarithmic-derivative imaginary part; the associated cost is proved
-  strictly superadditive under multiplication, its sharp unit-cost threshold
-  is evaluated exactly, and a symmetric quartet pole equation against any
-  background with nonnegative imaginary part forces the degree-two Blaschke
-  modulus strictly below that threshold, with no restriction on the quartet's
-  horizontal separation;
-- the complete finite-residual symmetric two-node Pick calculation: Lean
-  factors the degree-two base kernel through two explicit features, identifies
-  its determinant as a positive squared wedge norm, proves both exact inverse
-  Schur coefficients (including the reflected phase identity), and identifies
-  the literal sampled `3 × 3` Pick matrix with the general Schur block.  Every
-  elementary upper-half-plane Blaschke factor has a rank-one positive Pick
-  kernel, finite products remain positive by the Schur product theorem, and
-  the existing finite residual inner factor therefore satisfies the sharp
-  separation-free bound `|S(p)| ≤ 2*b/(1+b^2)` under the two symmetric
-  interpolation identities.  Composing this with the strict quartet pole
-  threshold gives the end-to-end strict bound
-  `|S(p)| < m / sqrt (m^2 + a^2)`; under the reflected-value identity, Lean
-  also proves the squared two-pole product bound
-  `|S(p) S(-conj p)| < m^2 / (m^2 + a^2)`.  On the metric side, the exact
-  determinant of a general weighted two-node Hermitian Gram pencil is now
-  computed: if two distinct squared modes are its generalized roots, their
-  nonnegative magnitudes multiply exactly to the modulus of the two residual
-  values.  This is the determinant consequence needed by the proposed bridge,
-  not an assumption of the analytic Hardy identification;
-- the coherent Gaussian cross-term formula and the proof that, under RH and a
-  represented zero sum, every finite coherent-state Gram matrix is positive
-  semidefinite.
-
-What is not yet checked here:
-
-- the fixed-point integration loops mirrored by the Python certificates;
-- a definition and continuity theorem for Weil's functional on the correct
-  analytic-strip test class;
-- the theorem connecting each endpoint certificate's scalar ledgers to the
-  convergent arithmetic expression itself;
-- an unbounded family of certified good widths (and hence nonnegativity of the
-  arithmetic/canonical expression for every `epsilon > 0`; only the finite
-  rational portions at 0.04--0.06 are checked).
-- a uniform positivity mechanism for the growing retained prime block below
-  the parameter-dependent cutoff; the new tail theorem shows that this, not
-  the infinite high-prime tail, is the scalable obstruction.
-- the analytic identification of the full Suzuki screw function with the new
-  hinge model, the exact audited initial value/slope normalization, or
-  nonnegativity of the resulting canonical infinite transport-gap sequence.
-  The finite-prefix shift and nonzero-slope reset are now checked and the
-  required normalization is isolated as the function-valued proposition
-  `SuzukiTailNormalization`; it has not yet been discharged for Suzuki's
-  explicit Archimedean term.  Existence, exact evaluation, and the
-  consecutive/block recurrence of the corrected gaps are checked, but their
-  cumulative-surplus lower bound over all cutoffs remains RH-strength.
-- the remaining analytic finite-polynomial realization of the checked
-  abstract Gram--Weil block theorem: although the rational model spaces now
-  embed faithfully as closed subspaces of actual boundary `L²` and their
-  orthogonal cross angle is strictly contractive, and residual-inner shifted
-  Cauchy vectors are now rigorously orthogonal to the residual model, with
-  their complementary model-kernel component and actual orthogonal projection
-  now identified, and the resulting two-node Hardy Gram matrix is identified
-  entrywise with the checked weighted metric pencil, and the concrete ratio
-  is now identified basis-independently with `det(I - C† C)` for the actual
-  cross angle.  The two Cauchy vectors attached to distinct roots are now
-  proved to form a basis in the degree-two case, the determinant identity is
-  specialized to those roots, and the symmetric-quartet estimate is now
-  composed with that actual determinant.  Both candidate `E`-root hypotheses
-  are now derived from an exact logarithmic-derivative decomposition and its
-  background reflection law; for an even base polynomial Lean additionally
-  derives that background law, the residual-inner reflection law, and the
-  two denominator nonvanishing statements from the pole equation.  The raw
-  degree-two condition is also replaced by the zero-endpoint upper-root count.
-  For an isolated even quartic, that base count is now itself derived from one
-  upper zero and degree four.  The exact decomposition and positive pole
-  equation are now automatic for the literal finite residual background, and
-  the exact finite root expansion proves this background is zero at natural
-  weight in the isolated-quartic case.  For a larger finite approximant whose
-  remaining roots are all real, the same root expansion now proves the
-  background sign and the end-to-end determinant estimate.  This conclusion
-  now also permits residual conjugate pairs whenever the candidate pole lies
-  outside each pair's explicitly defined influence disk.  What remains at the
-  finite frontier is to control collectively the potentially negative pairs
-  whose influence disks contain the pole (rather than assume their net sign),
-  followed by the infinite xi passage;
-  identify the determinant-level product with any separately named
-  metric-pencil modes when such modes are required, and pass to the infinite
-  xi model.  No claim is made that the auxiliary Euclidean coefficient norm
-  is the Hardy boundary norm.  Spectral completeness for all
-  `±sqrt(1-s_j^2)` pencil modes is also not yet formalized beyond the checked
-  scalar and analytic one-pair cases.  Nor is any infinite-dimensional lift
-  to the xi function; that remains a research program, not an RH proof.
-- extension of the now-checked finite-residual symmetric two-node estimate to
-  the intended general/infinite inner factor, and its claimed identification
-  with the two nonunit Gram--Weil metric-pencil magnitudes.  The exact finite
-  Schur coefficients, symmetry identities, sampled matrix equality, Pick
-  positivity, sharp value bound, and conditional weighted-pencil root-product
-  algebra are checked; the infinite analytic passage and the theorem placing
-  the actual Hardy metric modes at those roots remain separate proof
-  obligations and are not assumed;
-- a parameter-uniform lower bound for the combined Gaussian prime discrepancy
-  plus digamma gain.  Numerical falsification shows that neither term may be
-  discarded: they undergo a large cancellation before the very small spectral
-  margin remains.  The phase-block theorem now isolates the required weighted
-  prime-mass input without signed summands.
-
-The finite endpoint files are calibration and audit artifacts, not a proposed
-infinite certificate ladder.  Closing the final item requires one
-parameter-uniform mechanism producing an unbounded family (or a stronger
-structural positivity theorem); enumerating successively larger endpoint
-ledgers will not scale.
-
-The ordinary Schwartz closed-cone theorem is now explicitly treated as an
-abstract auxiliary result.  The classical unconditional Weil functional is
-defined on an analytic-strip class and the RH criterion is quadratic on
-convolution squares; ordinary Schwartz density alone is not a valid bridge.
-The direct spectral argument now proves that scalar all-Gaussian positivity
-is sufficient for the unconditional canonical sum; coherent Gram matrix
-positivity remains a separate, stronger connection to Weil's quadratic
-formulation.  The arithmetic/canonical equality is now unconditional.  The
-decisive remaining problem is nonnegativity of that explicit common value for
-every positive `epsilon` and every real center.  The completed contour and
-logarithmic-derivative development is in
-[`GaussianXiLogDerivativeGrowth.lean`](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean).
-
-Build from this directory with:
+The project currently uses Lean 4.33.1 and Mathlib 4.33.1. From the repository
+root:
 
 ```bash
 lake exe cache get
-lake build
+lake build --wfail
 ```
+
+GitHub Actions runs the same warning-as-error build on every pushed proof
+slice and rejects any Lean source containing `sorry` or `admit`.
+
+## Formalized progress
+
+The project has two connected lines of attack: a Gaussian--Weil positivity
+reduction and a finite Hardy/Gram--Weil defect theory. The following is the
+current checked state, not a list of conjectural steps.
+
+### Gaussian--Weil and the explicit formula
+
+- Lean proves that Mathlib's `RiemannHypothesis` is equivalent to reality of
+  all nontrivial zeta zeros in the rotated spectral coordinate
+  `A(z) = xi(1/2 - i*z)`.
+- Multiplicity-aware canonical translated and symmetric Gaussian zero sums
+  are constructed unconditionally. Their convergence follows from a checked
+  growth bound for the pole-cleared xi function.
+- The xi contour argument, zero-separated truncations, logarithmic-derivative
+  bounds, and limiting passage are formalized. Consequently the canonical
+  symmetric zero sum is proved equal, for every positive width and every real
+  center, to the arithmetic Gaussian explicit formula.
+- Nonnegativity of that common value at every positive width and real center
+  is proved equivalent to the Riemann hypothesis. Heat propagation and a
+  cofinal-width theorem reduce all-width positivity to positivity along an
+  unbounded family of widths.
+- The arithmetic expression is decomposed exactly into endpoint, prime, and
+  Archimedean terms. Lean proves the high-prime tail estimates, Abel
+  identities, continuous-PNT cancellation, digamma transform, and the
+  Gaussian/Suzuki curvature identity used by the current transport attack.
+- A sound certificate architecture is formalized: an unbounded family of
+  valid certificates would imply RH. The exact rational ledgers at widths
+  `0.04`, `0.05`, and `0.06` are checked as calibration artifacts; they
+  are not being treated as a scalable certificate ladder.
+- The Suzuki hinge/Legendre route has been reduced to explicit transport gaps
+  and cumulative prime-versus-curvature surplus inequalities. The finite
+  shift, slope reset, cell recurrence, and telescoping identities are checked.
+
+### Finite Hardy and Gram--Weil theory
+
+- For a separable real polynomial `A`, Lean develops the homotopy
+  `E_eta = A + i*eta*A'`, including coprimality, degree preservation, exact
+  upper/lower root factors, conjugation symmetry, and unconditional
+  upper-half-plane root-count invariance for positive `eta`, including through
+  multiple-root collisions.
+- The corresponding finite Krein--Langer factorization is constructed
+  algebraically. Its rational model spaces are then realized as genuine
+  closed finite-dimensional subspaces of boundary `L²(R, C)`.
+- The actual Hardy cross angle, orthogonal projections, residual Cauchy
+  kernels, and two-node Gram matrices are identified. Lean proves the exact
+  basis-independent determinant identity
+  `det(I - C† C) = |S(w0) * S(w1)|²` in the degree-two case.
+- The abstract Gram--Weil block defect and metric-pencil algebra are checked,
+  including exact finite-dimensional inertia and the complete one-pair model.
+- For an even polynomial containing one symmetric off-axis quartet, Lean
+  derives the relevant reflected roots and logarithmic-derivative pole
+  equations from structure rather than assuming them. In the isolated
+  quartic case, the strict Hardy determinant bound is proved end to end with
+  no background-sign, root-count, or reflection hypothesis left open.
+- The exact multiplicity-counted identity
+  `-eta*A'(z)/A(z) = sum_w -eta/(z-w)` is formalized. It proves the required
+  background sign for arbitrary additional real roots.
+- For additional off-axis conjugate pairs, Lean factors the imaginary
+  contribution exactly. At positive weight it is negative if and only if
+  the candidate pole lies strictly inside the pair's Euclidean influence
+  disk. Any finite upper-root multiset is partitioned, with multiplicity,
+  into outside- and inside-disk parts; the outside contribution is proved
+  nonnegative and every negative total budget transfers to the inside core.
+
+### Formal integrity
+
+- The library builds with warnings and Lean lints treated as errors.
+- CI rejects `sorry` and `admit` before building.
+- The current frontier theorems have been audited with `#print axioms`; they
+  depend only on Lean's standard `propext`, `Classical.choice`, and
+  `Quot.sound` axioms.
+- Numerical and symbolic experiments may guide research, but they do not
+  count as progress until the corresponding statement is proved in Lean.
+
+## Proof architecture and current frontier
+
+The Gaussian route has reached a clean RH-strength statement:
+
+```text
+for every epsilon > 0 and every real t,
+gaussianArithmeticExplicitFormula epsilon t >= 0.
+```
+
+Everything connecting this statement to the canonical zero sum and then to
+RH is formalized. What remains is a scalable proof of the positivity itself.
+The leading arithmetic approach is the Suzuki transport formulation; its
+open obligations are the explicit tail normalization and the uniform
+cumulative-surplus lower bound over all cutoffs.
+
+The Hardy route seeks a structural contradiction from any off-axis xi zero.
+The one-quartet finite theory and its real/Herglotz background are formalized.
+The immediate finite frontier is the weighted hyperbolic optimization for the
+exactly isolated collection of inside-disk pairs, followed by the corresponding
+higher-index determinant theorem. Beyond that lies the genuinely analytic
+passage from finite polynomial models to the entire xi function.
+
+Neither frontier is assumed. Closing the Gaussian positivity statement, or
+completing the finite-to-xi Hardy route, is the RH-level part of the project.
+
+## Repository guide
+
+- [`RiemannGaussian/GaussianZetaBridge.lean`](RiemannGaussian/GaussianZetaBridge.lean)
+  develops the spectral Gaussian/RH bridge.
+- [`RiemannGaussian/GaussianXiLogDerivativeGrowth.lean`](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean)
+  closes the xi contour and arithmetic explicit-formula identification.
+- [`RiemannGaussian/GaussianPositivityCertificate.lean`](RiemannGaussian/GaussianPositivityCertificate.lean)
+  contains the scalable certificate soundness and cofinal-width reductions.
+- [`RiemannGaussian/SuzukiTransportBarrier.lean`](RiemannGaussian/SuzukiTransportBarrier.lean)
+  and [`RiemannGaussian/SuzukiTransportTail.lean`](RiemannGaussian/SuzukiTransportTail.lean)
+  contain the current hinge/Legendre transport reduction.
+- [`RiemannGaussian/PairHyperbolicEnergy.lean`](RiemannGaussian/PairHyperbolicEnergy.lean)
+  and the `SymmetricQuartet*` files contain the quartet energy and defect
+  argument.
+- The `FiniteE*`, `FiniteRoot*`, `FiniteModel*`, and `FiniteHardy*` files build
+  the finite Krein--Langer and boundary-Hardy realization.
+- The `GramWeil*` files contain the abstract block defect, inertia, and metric
+  pencil theory.
+- [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
+  by the default target.
+
+This repository should be read as an active formal research program. Git
+history records the fine-grained proof audit; this README records the purpose,
+the checked mathematical state, and the exact open frontier.

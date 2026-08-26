@@ -86,6 +86,50 @@ theorem pairImaginaryEnergy_nonneg_of_height_sq_le
       (sub_nonneg.mpr houtside))
     (mul_nonneg hupper.le (pairHyperbolicLowerSq_pos ha hv).le)
 
+/-- For positive weight, the influence-disk condition is not merely
+sufficient: it exactly characterizes nonnegative pair energy. -/
+theorem pairImaginaryEnergy_nonneg_iff_height_sq_le
+    {m d v a : ℝ} (hm : 0 < m) (ha : 0 < a) (hv : 0 < v)
+    (hupper : 0 < pairHyperbolicUpperSq d v a) :
+    0 ≤ pairImaginaryEnergy m d v a ↔ a ^ 2 ≤ d ^ 2 + v ^ 2 := by
+  rw [pairImaginaryEnergy_eq_signedDistance ha hv hupper]
+  have hcoeff : 0 < 2 * m * v := by positivity
+  have hden : 0 < pairHyperbolicUpperSq d v a *
+      pairHyperbolicLowerSq d v a :=
+    mul_pos hupper (pairHyperbolicLowerSq_pos ha hv)
+  constructor
+  · intro h
+    rcases div_nonneg_iff.mp h with hnum | hdenBad
+    · exact sub_nonneg.mp
+        ((mul_nonneg_iff_of_pos_left hcoeff).mp hnum.1)
+    · exact False.elim (not_le_of_gt hden hdenBad.2)
+  · intro houtside
+    exact div_nonneg
+      (mul_nonneg hcoeff.le (sub_nonneg.mpr houtside)) hden.le
+
+/-- Equivalently, a positive-weight pair contributes strictly negatively
+exactly when the evaluation point lies strictly inside its influence disk. -/
+theorem pairImaginaryEnergy_neg_iff_height_sq_lt
+    {m d v a : ℝ} (hm : 0 < m) (ha : 0 < a) (hv : 0 < v)
+    (hupper : 0 < pairHyperbolicUpperSq d v a) :
+    pairImaginaryEnergy m d v a < 0 ↔ d ^ 2 + v ^ 2 < a ^ 2 := by
+  rw [pairImaginaryEnergy_eq_signedDistance ha hv hupper]
+  have hcoeff : 0 < 2 * m * v := by positivity
+  have hden : 0 < pairHyperbolicUpperSq d v a *
+      pairHyperbolicLowerSq d v a :=
+    mul_pos hupper (pairHyperbolicLowerSq_pos ha hv)
+  constructor
+  · intro h
+    rcases div_neg_iff.mp h with hdenBad | hnum
+    · exact False.elim (not_lt_of_ge hden.le hdenBad.2)
+    · apply sub_neg.mp
+      apply lt_of_not_ge
+      intro hdelta
+      exact (not_lt_of_ge (mul_nonneg hcoeff.le hdelta)) hnum.1
+  · intro hinside
+    exact div_neg_of_neg_of_pos
+      (mul_neg_of_pos_of_neg hcoeff (sub_neg.mpr hinside)) hden
+
 theorem pairHyperbolicRadius_sq
     {d v a : ℝ} (ha : 0 < a) (hv : 0 < v) :
     pairHyperbolicRadius d v a ^ 2 =
@@ -375,6 +419,43 @@ theorem onePairLogDerivativeContribution_im_nonneg_of_height_sq_le
       halpha hz hupper]
   exact pairImaginaryEnergy_nonneg_of_height_sq_le
     hm halpha hz hupper houtside
+
+/-- Exact complex-coordinate sign criterion for positive weight. -/
+theorem onePairLogDerivativeContribution_im_nonneg_iff_height_sq_le
+    {m : ℝ} (hm : 0 < m) {z alpha : ℂ}
+    (hz : 0 < z.im) (halpha : 0 < alpha.im) (hne : z ≠ alpha) :
+    0 ≤ (onePairLogDerivativeContribution m alpha z).im ↔
+      alpha.im ^ 2 ≤ (z.re - alpha.re) ^ 2 + z.im ^ 2 := by
+  have hupper : 0 <
+      pairHyperbolicUpperSq (z.re - alpha.re) z.im alpha.im := by
+    rw [show pairHyperbolicUpperSq (z.re - alpha.re) z.im alpha.im =
+        Complex.normSq (z - alpha) by
+      unfold pairHyperbolicUpperSq Complex.normSq
+      simp
+      ring]
+    exact Complex.normSq_pos.mpr (sub_ne_zero.mpr hne)
+  have halphaForm :
+      (alpha.re : ℂ) + Complex.I * (alpha.im : ℂ) = alpha := by
+    rw [mul_comm]
+    exact Complex.re_add_im alpha
+  have hzForm : (z.re : ℂ) + Complex.I * (z.im : ℂ) = z := by
+    rw [mul_comm]
+    exact Complex.re_add_im z
+  rw [← halphaForm, ← hzForm,
+    onePairLogDerivativeContribution_im m alpha.re alpha.im z.re z.im
+      halpha hz hupper]
+  simpa using pairImaginaryEnergy_nonneg_iff_height_sq_le
+    hm halpha hz hupper
+
+/-- Strict negativity is exactly membership in the open influence disk. -/
+theorem onePairLogDerivativeContribution_im_neg_iff_height_sq_lt
+    {m : ℝ} (hm : 0 < m) {z alpha : ℂ}
+    (hz : 0 < z.im) (halpha : 0 < alpha.im) (hne : z ≠ alpha) :
+    (onePairLogDerivativeContribution m alpha z).im < 0 ↔
+      (z.re - alpha.re) ^ 2 + z.im ^ 2 < alpha.im ^ 2 := by
+  rw [← not_le,
+    onePairLogDerivativeContribution_im_nonneg_iff_height_sq_le
+      hm hz halpha hne, not_le]
 
 /-- Complex form of the universal one-pair inequality from the research
 note. -/

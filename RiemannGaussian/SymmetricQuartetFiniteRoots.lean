@@ -430,6 +430,103 @@ theorem conjugatePairRootLogDerivativeSum_im_nonneg_of_height_sq_le
         · intro beta hbeta
           exact houtside beta (by simp [hbeta])
 
+/-- Residual upper roots whose conjugate-pair contribution is nonnegative at
+`z`, expressed by the closed influence-disk complement. -/
+def outsideInfluenceDiskRoots (z : ℂ) (upper : Multiset ℂ) : Multiset ℂ :=
+  upper.filter fun alpha =>
+    alpha.im ^ 2 ≤ (z.re - alpha.re) ^ 2 + z.im ^ 2
+
+/-- Residual upper roots whose conjugate-pair contribution can be negative at
+`z`, expressed by the open influence disk. -/
+def insideInfluenceDiskRoots (z : ℂ) (upper : Multiset ℂ) : Multiset ℂ :=
+  upper.filter fun alpha =>
+    (z.re - alpha.re) ^ 2 + z.im ^ 2 < alpha.im ^ 2
+
+/-- The outside- and inside-disk multisets form an exact multiplicity-aware
+partition of the upper roots. -/
+@[simp] theorem outsideInfluenceDiskRoots_add_insideInfluenceDiskRoots
+    (z : ℂ) (upper : Multiset ℂ) :
+    outsideInfluenceDiskRoots z upper + insideInfluenceDiskRoots z upper =
+      upper := by
+  unfold outsideInfluenceDiskRoots insideInfluenceDiskRoots
+  have hpred :
+      (fun alpha : ℂ =>
+        (z.re - alpha.re) ^ 2 + z.im ^ 2 < alpha.im ^ 2) =
+      (fun alpha : ℂ =>
+        ¬alpha.im ^ 2 ≤ (z.re - alpha.re) ^ 2 + z.im ^ 2) := by
+    funext alpha
+    apply propext
+    exact not_le.symm
+  simpa only [hpred] using
+    (Multiset.filter_add_not
+      (p := fun alpha : ℂ =>
+        alpha.im ^ 2 ≤ (z.re - alpha.re) ^ 2 + z.im ^ 2) upper)
+
+/-- Exact splitting of the pair logarithmic-derivative sum into its harmless
+outside-disk part and its potentially negative inside-disk part. -/
+theorem onePairLogDerivativeContribution_sum_eq_outside_add_inside
+    (η : ℝ) (z : ℂ) (upper : Multiset ℂ) :
+    (upper.map fun alpha =>
+        onePairLogDerivativeContribution η alpha z).sum =
+      ((outsideInfluenceDiskRoots z upper).map fun alpha =>
+        onePairLogDerivativeContribution η alpha z).sum +
+      ((insideInfluenceDiskRoots z upper).map fun alpha =>
+        onePairLogDerivativeContribution η alpha z).sum := by
+  nth_rw 1 [← outsideInfluenceDiskRoots_add_insideInfluenceDiskRoots z upper]
+  rw [Multiset.map_add, Multiset.sum_add]
+
+/-- The outside-disk portion of the exact partition is nonnegative. -/
+theorem outsideInfluenceDiskRoots_logDerivativeSum_im_nonneg
+    {η : ℝ} (hη : 0 ≤ η) {upper : Multiset ℂ} {z : ℂ}
+    (hz : 0 < z.im)
+    (halpha : ∀ alpha ∈ upper, 0 < alpha.im)
+    (hne : ∀ alpha ∈ upper, z ≠ alpha) :
+    0 ≤ (((outsideInfluenceDiskRoots z upper).map fun alpha =>
+      onePairLogDerivativeContribution η alpha z).sum).im := by
+  rw [← conjugatePairRootMultiset_logDerivative_sum]
+  apply conjugatePairRootLogDerivativeSum_im_nonneg_of_height_sq_le hη hz
+  · intro alpha halphaMem
+    exact halpha alpha (Multiset.mem_of_mem_filter halphaMem)
+  · intro alpha halphaMem
+    exact hne alpha (Multiset.mem_of_mem_filter halphaMem)
+  · intro alpha halphaMem
+    exact (Multiset.mem_filter.mp halphaMem).2
+
+/-- After the exact partition, the inside-disk sum is no larger than the
+complete off-axis-pair sum.  Thus every negative pole condition transfers to
+this sharply isolated finite core. -/
+theorem insideInfluenceDiskRoots_logDerivativeSum_im_le
+    {η : ℝ} (hη : 0 ≤ η) {upper : Multiset ℂ} {z : ℂ}
+    (hz : 0 < z.im)
+    (halpha : ∀ alpha ∈ upper, 0 < alpha.im)
+    (hne : ∀ alpha ∈ upper, z ≠ alpha) :
+    (((insideInfluenceDiskRoots z upper).map fun alpha =>
+      onePairLogDerivativeContribution η alpha z).sum).im ≤
+        ((upper.map fun alpha =>
+          onePairLogDerivativeContribution η alpha z).sum).im := by
+  have houtside := outsideInfluenceDiskRoots_logDerivativeSum_im_nonneg
+    hη hz halpha hne
+  have hsplit := onePairLogDerivativeContribution_sum_eq_outside_add_inside
+    η z upper
+  have him := congrArg Complex.im hsplit
+  rw [Complex.add_im] at him
+  linarith
+
+/-- At positive weight, every member of the inside-disk core contributes
+strictly negatively; the geometric partition is the exact sign partition. -/
+theorem insideInfluenceDiskRoots_logDerivativeContribution_im_neg
+    {η : ℝ} (hη : 0 < η) {upper : Multiset ℂ} {z alpha : ℂ}
+    (hz : 0 < z.im)
+    (halpha : ∀ beta ∈ upper, 0 < beta.im)
+    (hne : ∀ beta ∈ upper, z ≠ beta)
+    (halphaInside : alpha ∈ insideInfluenceDiskRoots z upper) :
+    (onePairLogDerivativeContribution η alpha z).im < 0 := by
+  apply (onePairLogDerivativeContribution_im_neg_iff_height_sq_lt
+    hη hz
+      (halpha alpha (Multiset.mem_of_mem_filter halphaInside))
+      (hne alpha (Multiset.mem_of_mem_filter halphaInside))).mpr
+  exact (Multiset.mem_filter.mp halphaInside).2
+
 /-- Exact background positivity for a residual divisor consisting of real
 roots and conjugate off-axis pairs whose influence disks avoid the evaluation
 point.  The conclusion is derived from the complete root multiset, not assumed.
