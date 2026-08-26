@@ -196,6 +196,12 @@ What is checked here:
   formula is exactly endpoint plus atomic prime energy minus Suzuki
   smooth-curvature energy, and cofinal validity of that exact energy budget is
   kernel-checked equivalent to RH;
+- the abstract finite-dimensional Gram--Weil block-defect theorem over real or
+  complex Hilbert spaces: for every injective `C : N → P`, Lean constructs
+  maximal positive and negative subspaces for
+  `[[0, -C], [-C†, 2I]]`, proves both have dimension `dim N`, and proves its
+  kernel has dimension `dim P - dim N`; thus its basis-free quadratic inertia
+  is exactly `(dim N, dim P - dim N, dim N)` in negative/null/positive order;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -219,10 +225,12 @@ What is not yet checked here:
   Existence and exact evaluation of each individual frozen barrier are now
   checked, but the single theorem quantified over all cutoffs remains
   RH-strength.
-- the post-Gaussian Gram--Weil defect program: in particular, the abstract
-  finite-dimensional block inertia theorem, the analytic finite-polynomial
-  model-space realization, and any infinite-dimensional lift to the xi
-  function.  The latter remains a research program, not an RH proof.
+- the analytic finite-polynomial realization of the checked abstract
+  Gram--Weil block theorem: finite Krein--Langer factorization, the model-space
+  decomposition, injectivity/strict contraction of its cross-angle operator,
+  and the one-pair integral formula are not yet formalized.  Nor is any
+  infinite-dimensional lift to the xi function; that remains a research
+  program, not an RH proof.
 - a parameter-uniform lower bound for the combined Gaussian prime discrepancy
   plus digamma gain.  Numerical falsification shows that neither term may be
   discarded: they undergo a large cancellation before the very small spectral
