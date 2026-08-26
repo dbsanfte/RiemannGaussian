@@ -35,6 +35,9 @@ import RiemannGaussian.GaussianDigammaTransform
 import RiemannGaussian.GaussianDigammaGauss
 import RiemannGaussian.SuzukiTransportBarrier
 import RiemannGaussian.SuzukiTransportTail
+import RiemannGaussian.PairHyperbolicEnergy
+import RiemannGaussian.HyperbolicEnergySuperadditive
+import RiemannGaussian.SymmetricQuartetEnergy
 import RiemannGaussian.GramWeilBlockDefect
 import RiemannGaussian.GramWeilMetricPencil
 import RiemannGaussian.GramWeilOnePair

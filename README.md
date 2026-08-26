@@ -322,6 +322,14 @@ What is checked here:
   prove exact equality with the parameter-zero upper count.  Thus the root
   factor degree inequality, cross-angle injectivity, and exact algebraic
   Gram--Weil inertia now hold unconditionally for every positive parameter;
+- the separation-free scalar core of the symmetric-quartet attack: for one
+  conjugate zero pair Lean proves the exact pseudo-hyperbolic lower bound for
+  its logarithmic-derivative imaginary part; the associated cost is proved
+  strictly superadditive under multiplication, its sharp unit-cost threshold
+  is evaluated exactly, and a symmetric quartet pole equation against any
+  background with nonnegative imaginary part forces the degree-two Blaschke
+  modulus strictly below that threshold, with no restriction on the quartet's
+  horizontal separation;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -359,6 +367,12 @@ What is not yet checked here:
   all `±sqrt(1-s_j^2)` pencil modes is also not yet formalized beyond the
   checked scalar and analytic one-pair cases. Nor is any infinite-dimensional
   lift to the xi function; that remains a research program, not an RH proof.
+- the symmetric two-node Nevanlinna--Pick estimate proposed in the newest
+  research note, and its claimed identification with the two nonunit
+  Gram--Weil metric-pencil magnitudes.  The preceding pole-to-Blaschke bound
+  is now checked independently; the Pick-matrix positivity, symmetry data,
+  Schur-complement disk calculation, and metric-pencil link remain separate
+  proof obligations and are not assumed;
 - a parameter-uniform lower bound for the combined Gaussian prime discrepancy
   plus digamma gain.  Numerical falsification shows that neither term may be
   discarded: they undergo a large cancellation before the very small spectral
