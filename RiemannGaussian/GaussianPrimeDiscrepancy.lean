@@ -1,4 +1,5 @@
 import RiemannGaussian.GaussianPositivityCertificate
+import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
 
 /-!
 # Gaussian prime discrepancy after the continuous main-term cancellation
@@ -43,10 +44,46 @@ def gaussianContinuousPrimeOscillationEnergy (ε t : ℝ) : ℝ :=
       Real.exp (u / 2 - u ^ 2 / (4 * ε)) *
         (1 - Real.cos (t * u))
 
+/-- The natural one-sided PNT comparison on positive logarithmic
+coordinates.  Under `x = exp u`, this is the continuous model for the
+von-Mangoldt atoms at `u = log n`. -/
+def gaussianForwardContinuousPrimeOscillationEnergy (ε t : ℝ) : ℝ :=
+  2 / Real.sqrt (Real.pi * ε) *
+    ∫ u in Set.Ioi (0 : ℝ),
+      Real.exp (u / 2 - u ^ 2 / (4 * ε)) *
+        (1 - Real.cos (t * u))
+
+/-- The reflected negative-log half of the bilateral continuous model. -/
+def gaussianReflectedContinuousPrimeOscillationEnergy (ε t : ℝ) : ℝ :=
+  2 / Real.sqrt (Real.pi * ε) *
+    ∫ u in Set.Ioi (0 : ℝ),
+      Real.exp (-u / 2 - u ^ 2 / (4 * ε)) *
+        (1 - Real.cos (t * u))
+
 theorem gaussianContinuousPrimeOscillationEnergy_nonnegative
     (ε t : ℝ) :
     0 ≤ gaussianContinuousPrimeOscillationEnergy ε t := by
   unfold gaussianContinuousPrimeOscillationEnergy
+  apply mul_nonneg (by positivity)
+  apply integral_nonneg
+  intro u
+  exact mul_nonneg (Real.exp_pos _).le
+    (sub_nonneg.mpr (Real.cos_le_one _))
+
+theorem gaussianForwardContinuousPrimeOscillationEnergy_nonnegative
+    (ε t : ℝ) :
+    0 ≤ gaussianForwardContinuousPrimeOscillationEnergy ε t := by
+  unfold gaussianForwardContinuousPrimeOscillationEnergy
+  apply mul_nonneg (by positivity)
+  apply integral_nonneg
+  intro u
+  exact mul_nonneg (Real.exp_pos _).le
+    (sub_nonneg.mpr (Real.cos_le_one _))
+
+theorem gaussianReflectedContinuousPrimeOscillationEnergy_nonnegative
+    (ε t : ℝ) :
+    0 ≤ gaussianReflectedContinuousPrimeOscillationEnergy ε t := by
+  unfold gaussianReflectedContinuousPrimeOscillationEnergy
   apply mul_nonneg (by positivity)
   apply integral_nonneg
   intro u
@@ -59,9 +96,22 @@ def gaussianPrimeEnergyDiscrepancy (ε t : ℝ) : ℝ :=
   gaussianPrimeOscillationEnergy ε t -
     gaussianPrimeEnergyMainTerm ε t
 
+/-- The genuinely PNT-shaped part of the discrepancy: atomic von-Mangoldt
+energy minus the forward continuous comparison on `u > 0`. -/
+def gaussianForwardPrimeEnergyDiscrepancy (ε t : ℝ) : ℝ :=
+  gaussianPrimeOscillationEnergy ε t -
+    gaussianForwardContinuousPrimeOscillationEnergy ε t
+
 /-- The non-elementary Archimedean gain away from center zero. -/
 def gaussianDigammaGain (ε t : ℝ) : ℝ :=
   gaussianDigammaIntegral ε t - gaussianDigammaIntegral ε 0
+
+/-- What remains of the digamma gain after paying for the reflected half of
+the bilateral continuous model.  The screw-function route predicts that
+this is the positive energy of Suzuki's missing-curvature density. -/
+def gaussianDigammaRemainderGain (ε t : ℝ) : ℝ :=
+  gaussianDigammaGain ε t -
+    gaussianReflectedContinuousPrimeOscillationEnergy ε t
 
 theorem gaussianPrimeEnergyMainTerm_eq
     (ε t : ℝ) :
@@ -266,6 +316,56 @@ theorem gaussianContinuousPrimeOscillationIntegrable
         (1 - Real.cos (t * u))
   ring
 
+/-- Splitting at logarithmic coordinate zero exposes the natural forward-PNT
+integral and the reflected correction hidden in the bilateral closed form. -/
+theorem gaussianContinuousPrimeOscillationIntegral_eq_forward_add_reflected
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    (∫ u : ℝ,
+      Real.exp (u / 2 - u ^ 2 / (4 * ε)) *
+        (1 - Real.cos (t * u))) =
+      (∫ u in Set.Ioi (0 : ℝ),
+        Real.exp (u / 2 - u ^ 2 / (4 * ε)) *
+          (1 - Real.cos (t * u))) +
+      ∫ u in Set.Ioi (0 : ℝ),
+        Real.exp (-u / 2 - u ^ 2 / (4 * ε)) *
+          (1 - Real.cos (t * u)) := by
+  let f : ℝ → ℝ := fun u =>
+    Real.exp (u / 2 - u ^ 2 / (4 * ε)) *
+      (1 - Real.cos (t * u))
+  have hf : Integrable f :=
+    gaussianContinuousPrimeOscillationIntegrable hε t
+  have hsplit := intervalIntegral.integral_Iic_add_Ioi
+    (b := (0 : ℝ)) hf.integrableOn hf.integrableOn
+  have hreflect :
+      (∫ u in Set.Ioi (0 : ℝ), f (-u)) =
+        ∫ u in Set.Iic (0 : ℝ), f u := by
+    simpa using integral_comp_neg_Ioi (0 : ℝ) f
+  have hpoint (u : ℝ) :
+      f (-u) =
+        Real.exp (-u / 2 - u ^ 2 / (4 * ε)) *
+          (1 - Real.cos (t * u)) := by
+    dsimp only [f]
+    rw [show t * -u = -(t * u) by ring, Real.cos_neg]
+    congr 2
+    congr 1
+    ring
+  rw [← hreflect] at hsplit
+  rw [setIntegral_congr_fun measurableSet_Ioi
+    (fun u _ => hpoint u)] at hsplit
+  dsimp only [f] at hsplit
+  linarith
+
+theorem gaussianContinuousPrimeOscillationEnergy_eq_forward_add_reflected
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    gaussianContinuousPrimeOscillationEnergy ε t =
+      gaussianForwardContinuousPrimeOscillationEnergy ε t +
+        gaussianReflectedContinuousPrimeOscillationEnergy ε t := by
+  unfold gaussianContinuousPrimeOscillationEnergy
+    gaussianForwardContinuousPrimeOscillationEnergy
+    gaussianReflectedContinuousPrimeOscillationEnergy
+  rw [gaussianContinuousPrimeOscillationIntegral_eq_forward_add_reflected hε t]
+  ring
+
 theorem gaussianContinuousPrimeOscillationIntegral
     {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
     (∫ u : ℝ,
@@ -319,6 +419,30 @@ theorem gaussianPrimeEnergyDiscrepancy_eq_atomic_sub_continuous
         gaussianContinuousPrimeOscillationEnergy ε t := by
   unfold gaussianPrimeEnergyDiscrepancy
   rw [gaussianPrimeEnergyMainTerm_eq_continuousPrimeOscillationEnergy hε t]
+
+/-- The bilateral discrepancy is the forward PNT discrepancy minus the
+explicit reflected continuous energy. -/
+theorem gaussianPrimeEnergyDiscrepancy_eq_forwardDiscrepancy_sub_reflected
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    gaussianPrimeEnergyDiscrepancy ε t =
+      gaussianForwardPrimeEnergyDiscrepancy ε t -
+        gaussianReflectedContinuousPrimeOscillationEnergy ε t := by
+  rw [gaussianPrimeEnergyDiscrepancy_eq_atomic_sub_continuous hε t,
+    gaussianContinuousPrimeOscillationEnergy_eq_forward_add_reflected hε t]
+  unfold gaussianForwardPrimeEnergyDiscrepancy
+  ring
+
+/-- The exact cancellation budget separates into a natural one-sided PNT
+discrepancy and a purely Archimedean remainder. -/
+theorem gaussianDigammaGain_add_primeEnergyDiscrepancy_eq_forward_add_remainder
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    gaussianDigammaGain ε t + gaussianPrimeEnergyDiscrepancy ε t =
+      gaussianForwardPrimeEnergyDiscrepancy ε t +
+        gaussianDigammaRemainderGain ε t := by
+  rw [gaussianPrimeEnergyDiscrepancy_eq_forwardDiscrepancy_sub_reflected
+    hε t]
+  unfold gaussianDigammaRemainderGain
+  ring
 
 /-- Pulling out the common normalization leaves one exact signed comparison
 between atomic prime-power mass and continuous density. -/
@@ -381,6 +505,20 @@ theorem gaussianArithmeticExplicitFormula_nonnegative_iff_primeDiscrepancyBudget
   rw [gaussianArithmeticExplicitFormula_eq_endpoint_add_digammaGain_add_primeDiscrepancy
     hε t]
   constructor <;> intro h <;> linarith
+
+/-- Equivalent pointwise budget in which the arithmetic term is the natural
+positive-log PNT discrepancy and the remaining term is entirely
+Archimedean. -/
+theorem gaussianArithmeticExplicitFormula_nonnegative_iff_forwardDiscrepancyBudget
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    0 ≤ gaussianArithmeticExplicitFormula ε t ↔
+      -gaussianArithmeticExplicitFormula ε 0 ≤
+        gaussianForwardPrimeEnergyDiscrepancy ε t +
+          gaussianDigammaRemainderGain ε t := by
+  rw [gaussianArithmeticExplicitFormula_nonnegative_iff_primeDiscrepancyBudget
+    hε t]
+  rw [gaussianDigammaGain_add_primeEnergyDiscrepancy_eq_forward_add_remainder
+    hε t]
 
 /-- One width satisfies the exact discrepancy budget at every center. -/
 def GaussianPrimeDiscrepancyGoodWidth (ε : ℝ) : Prop :=

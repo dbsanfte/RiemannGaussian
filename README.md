@@ -137,6 +137,15 @@ What is checked here:
   remaining prime discrepancy is now an exact normalized difference between
   the von-Mangoldt atoms at `log n` and that continuous measure, ready for a
   summation-by-parts or transport estimate;
+- the exact split of that bilateral density into the forward PNT measure on
+  positive logarithmic coordinates and its reflected Archimedean correction;
+  the combined digamma-plus-prime frontier is correspondingly reduced to a
+  forward prime discrepancy plus an explicit digamma remainder;
+- finite Abel summation specialized to the exact multiplicative Gaussian
+  kernel: every cutoff of the forward discrepancy is a boundary term
+  `K(b) * (psi(b) - b)` plus one integral of the explicit derivative `K'`
+  against the classical Chebyshev error `x - psi(x)`, with the logarithmic
+  change of variables back to the project energy coordinates checked in Lean;
 - a finite phase-block interface: any lower bound for weighted von-Mangoldt
   mass on a block where `1 - cos (t * log n)` has a uniform floor becomes a
   kernel-checked lower bound for the true prime energy and hence a sufficient
@@ -179,6 +188,11 @@ What is not yet checked here:
   resulting infinite barrier sequence.  The cumulative transport inequality
   proposed in the research note is stronger than necessary when the verified
   base margin is positive, and proving it globally remains RH-strength.
+- passage from the finite Gaussian Abel identity to the infinite forward
+  discrepancy, including decay of its Chebyshev boundary term, and the Gauss
+  integral identity that turns the digamma remainder into Suzuki's positive
+  missing-curvature density.  These are now the two explicit analytic seams
+  between the checked arithmetic frontier and the screw transport model.
 - a parameter-uniform lower bound for the combined Gaussian prime discrepancy
   plus digamma gain.  Numerical falsification shows that neither term may be
   discarded: they undergo a large cancellation before the very small spectral
