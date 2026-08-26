@@ -1,4 +1,5 @@
 import RiemannGaussian.FiniteHardyCauchyBasis
+import RiemannGaussian.FiniteERootCountEndpoint
 import RiemannGaussian.FiniteNegConjSymmetry
 import RiemannGaussian.SymmetricQuartetPickDefect
 
@@ -80,6 +81,23 @@ theorem symmetricPickPole_ne_reflected_of_ne_zero
   simp [symmetricPickPole, upperHalfPlanePoint] at hre
   apply hx
   linarith
+
+/-- Distinct upper-half-plane coordinate points have strictly positive
+pseudo-hyperbolic numerator square. -/
+theorem pairHyperbolicUpperSq_pos_of_upperHalfPlanePoint_ne
+    {x v c a : ℝ}
+    (hne : upperHalfPlanePoint x v ≠ upperHalfPlanePoint c a) :
+    0 < pairHyperbolicUpperSq (x - c) v a := by
+  by_contra hnot
+  have hle : pairHyperbolicUpperSq (x - c) v a ≤ 0 := le_of_not_gt hnot
+  have hxc : x = c := by
+    unfold pairHyperbolicUpperSq at hle
+    nlinarith [sq_nonneg (x - c), sq_nonneg (v - a)]
+  have hva : v = a := by
+    unfold pairHyperbolicUpperSq at hle
+    nlinarith [sq_nonneg (x - c), sq_nonneg (v - a)]
+  apply hne
+  simp [upperHalfPlanePoint, hxc, hva]
 
 /-- The finite Blaschke factor is the symmetric two-pole product once its
 degree-two numerator roots are the symmetric candidate poles. -/
@@ -235,6 +253,16 @@ def finiteNegativeLogDerivativeValue
     (A : ℝ[X]) (η : ℝ) (z : ℂ) : ℂ :=
   -(η : ℂ) * A.derivative.eval₂ Complex.ofRealHom z /
     A.eval₂ Complex.ofRealHom z
+
+/-- The `-I` value of the totalized logarithmic derivative itself forces its
+denominator to be nonzero. -/
+theorem finiteNegativeLogDerivativeValue_denominator_ne_zero_of_eq_neg_I
+    {A : ℝ[X]} {η : ℝ} {z : ℂ}
+    (hvalue : finiteNegativeLogDerivativeValue A η z = -Complex.I) :
+    A.eval₂ Complex.ofRealHom z ≠ 0 := by
+  intro hzero
+  rw [finiteNegativeLogDerivativeValue, hzero, div_zero] at hvalue
+  exact (neg_ne_zero.mpr Complex.I_ne_zero) hvalue.symm
 
 /-- For an even real base polynomial, the scaled negative logarithmic
 derivative is anti-equivariant under reflection in the imaginary axis. -/
@@ -492,10 +520,12 @@ theorem
 
 /-- Evenness of the real base polynomial discharges every reflection
 hypothesis in the logarithmic-derivative quartet theorem.  It forces the
-background reflection through the exact decomposition, the second pole
-denominator to be nonzero, and the residual-inner reflected-value identity.
-Thus only the positive pole equation and positive-pole denominator condition
-remain as local pole assumptions. -/
+second symmetric zero of `A`, background reflection through the exact
+decomposition, the second pole denominator to be nonzero, and the
+residual-inner reflected-value identity.  The decomposition and pole equation
+already force the first denominator to be nonzero; this in turn proves both
+pseudo-hyperbolic numerator squares positive from the two zero values of `A`.
+Thus the positive pole equation is the only local pole assumption. -/
 theorem
     finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound_of_even_logDerivativeDecomposition
     {A : ℝ[X]} (hA : A.Separable) (hEven : A.comp (-X) = A)
@@ -506,15 +536,9 @@ theorem
       (finiteEPolynomial A η)).natDegree = 2)
     (hAPlus : A.eval₂ Complex.ofRealHom
       (symmetricPickAlphaPlus tau a) = 0)
-    (hAMinus : A.eval₂ Complex.ofRealHom
-      (symmetricPickAlphaMinus tau a) = 0)
-    (hAPolePlus : A.eval₂ Complex.ofRealHom
-      (symmetricPickPole x v) ≠ 0)
     (hdecompose : ∀ z,
       finiteNegativeLogDerivativeValue A η z =
         symmetricQuartetLogDerivativeContribution m tau a z + background z)
-    (hupperPlus : 0 < pairHyperbolicUpperSq (x - tau) v a)
-    (hupperMinus : 0 < pairHyperbolicUpperSq (x + tau) v a)
     (hbackground : 0 ≤ (background (symmetricPickPole x v)).im)
     (hpole : symmetricQuartetLogDerivativeContribution m tau a
         (symmetricPickPole x v) +
@@ -523,6 +547,50 @@ theorem
         (LinearMap.det
           (finiteHardyCrossAngleComplementGramOperator A η).toLinearMap).re <
       m ^ 2 / (m ^ 2 + a ^ 2) := by
+  have hfinitePlus :
+      finiteNegativeLogDerivativeValue A η (symmetricPickPole x v) =
+        -Complex.I := by
+    calc
+      finiteNegativeLogDerivativeValue A η (symmetricPickPole x v) =
+          symmetricQuartetLogDerivativeContribution m tau a
+              (symmetricPickPole x v) +
+            background (symmetricPickPole x v) :=
+        hdecompose (symmetricPickPole x v)
+      _ = -Complex.I := hpole
+  have hAPolePlus : A.eval₂ Complex.ofRealHom
+      (symmetricPickPole x v) ≠ 0 :=
+    finiteNegativeLogDerivativeValue_denominator_ne_zero_of_eq_neg_I
+      hfinitePlus
+  have hAlphaNegConj :
+      negConj (symmetricPickAlphaPlus tau a) =
+        symmetricPickAlphaMinus tau a := by
+    simp [negConj, symmetricPickAlphaPlus, symmetricPickAlphaMinus]
+  have hAMinus : A.eval₂ Complex.ofRealHom
+      (symmetricPickAlphaMinus tau a) = 0 := by
+    rw [← hAlphaNegConj,
+      realPolynomial_eval₂_negConj_eq_conj_of_even hEven, hAPlus, map_zero]
+  have hpoleNeAlphaPlus :
+      symmetricPickPole x v ≠ symmetricPickAlphaPlus tau a := by
+    intro heq
+    apply hAPolePlus
+    rw [heq]
+    exact hAPlus
+  have hpoleNeAlphaMinus :
+      symmetricPickPole x v ≠ symmetricPickAlphaMinus tau a := by
+    intro heq
+    apply hAPolePlus
+    rw [heq]
+    exact hAMinus
+  have hupperPlus : 0 < pairHyperbolicUpperSq (x - tau) v a :=
+    pairHyperbolicUpperSq_pos_of_upperHalfPlanePoint_ne (by
+      simpa [symmetricPickPole, symmetricPickAlphaPlus] using
+        hpoleNeAlphaPlus)
+  have hupperMinus : 0 < pairHyperbolicUpperSq (x + tau) v a := by
+    have h := pairHyperbolicUpperSq_pos_of_upperHalfPlanePoint_ne (by
+      simpa [symmetricPickPole, symmetricPickAlphaMinus] using
+        hpoleNeAlphaMinus)
+    rw [← sub_neg_eq_add]
+    exact h
   have hPoleNegConj :
       negConj (symmetricPickPole x v) = symmetricPickPole (-x) v := by
     simp [negConj]
@@ -554,6 +622,40 @@ theorem
       hA hη hm htau ha hv hx hdegree hAPlus hAMinus hAPolePlus
       hAPoleMinus hdecompose hupperPlus hupperMinus hbackground hpole
       hbackgroundReflect hreflect
+
+/-- Positive-parameter root-count invariance replaces the raw degree-two
+hypothesis by the corresponding upper-root count of the base polynomial at
+the zero endpoint. -/
+theorem
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound_of_even_logDerivativeDecomposition_baseCount
+    {A : ℝ[X]} (hA : A.Separable) (hEven : A.comp (-X) = A)
+    {η m tau a x v : ℝ} {background : ℂ → ℂ}
+    (hη : 0 < η) (hm : 0 < m) (htau : tau ≠ 0)
+    (ha : 0 < a) (hv : 0 < v) (hx : x ≠ 0)
+    (hbaseCount :
+      upperHalfPlaneRootCount (finiteEPolynomial A 0) = 2)
+    (hAPlus : A.eval₂ Complex.ofRealHom
+      (symmetricPickAlphaPlus tau a) = 0)
+    (hdecompose : ∀ z,
+      finiteNegativeLogDerivativeValue A η z =
+        symmetricQuartetLogDerivativeContribution m tau a z + background z)
+    (hbackground : 0 ≤ (background (symmetricPickPole x v)).im)
+    (hpole : symmetricQuartetLogDerivativeContribution m tau a
+        (symmetricPickPole x v) +
+      background (symmetricPickPole x v) = -Complex.I) :
+    Real.sqrt
+        (LinearMap.det
+          (finiteHardyCrossAngleComplementGramOperator A η).toLinearMap).re <
+      m ^ 2 / (m ^ 2 + a ^ 2) := by
+  have hdegree :
+      (upperRootFactor (finiteEPolynomial A η)).natDegree = 2 := by
+    rw [upperRootFactor_natDegree,
+      finiteEPolynomial_upperRootCount_eq_zero_of_pos hA hη,
+      hbaseCount]
+  exact
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound_of_even_logDerivativeDecomposition
+      hA hEven hη.ne' hm htau ha hv hx hdegree hAPlus hdecompose
+      hbackground hpole
 
 end
 

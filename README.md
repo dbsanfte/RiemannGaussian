@@ -347,8 +347,13 @@ What is checked here:
   negative conjugation with multiplicity, and the product formula then proves
   the exact residual-inner reflected-value identity.  The same symmetry and
   the global decomposition force the background reflection law and the second
-  pole denominator condition.  Hence the strongest checked finite quartet
-  theorem assumes none of those three reflected-side facts;
+  pole denominator condition.  The pole equation itself forces the first
+  denominator to be nonzero, and distinctness from the two proved zeros of
+  `A` then forces both pseudo-hyperbolic numerator squares positive.  Finally,
+  the already checked positive-homotopy root-count theorem replaces the raw
+  degree-two assumption by the base upper-root count at parameter zero.  Hence
+  the strongest checked finite quartet theorem assumes none of those local or
+  reflected-side facts;
 - the exact root-count bridge behind that degree inequality: conjugation
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
@@ -444,9 +449,11 @@ What is not yet checked here:
   are now derived from an exact logarithmic-derivative decomposition and its
   background reflection law; for an even base polynomial Lean additionally
   derives that background law, the residual-inner reflection law, and the
-  reflected denominator nonvanishing from the positive side.  What remains is
-  to derive the exact decomposition, its positive-pole denominator
-  nonvanishing and background sign from the intended xi approximants;
+  two denominator nonvanishing statements from the pole equation.  The raw
+  degree-two condition is also replaced by the zero-endpoint upper-root count.
+  What remains is to derive the exact decomposition, its background sign, the
+  positive pole equation, and the required base count from the intended xi
+  approximants;
   identify the determinant-level product with any separately named
   metric-pencil modes when such modes are required, and pass to the infinite
   xi model.  No claim is made that the auxiliary Euclidean coefficient norm
