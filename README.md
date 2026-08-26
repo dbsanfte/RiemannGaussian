@@ -292,6 +292,13 @@ What is checked here:
   assuming the homotopy members separable, that the upper count is locally
   constant at every nonzero parameter and hence constant throughout the entire
   positive parameter interval, including through multiple-root collisions;
+- the endpoint evaluation of that constant count: a branch-free local quotient
+  argument proves that every real zero of the separable base polynomial moves
+  into the lower half-plane for small positive parameter, while nonreal roots
+  retain their half-plane classification; root moments and interpolation then
+  prove exact equality with the parameter-zero upper count.  Thus the root
+  factor degree inequality, cross-angle injectivity, and exact algebraic
+  Gram--Weil inertia now hold unconditionally for every positive parameter;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -316,10 +323,8 @@ What is not yet checked here:
   checked, but the single theorem quantified over all cutoffs remains
   RH-strength.
 - the remaining analytic finite-polynomial realization of the checked
-  abstract Gram--Weil block theorem: evaluation of the now globally constant
-  positive-parameter upper root count immediately to the right of parameter
-  zero, and the
-  analytic half-plane Hardy/model-space inner products identifying the actual
+  abstract Gram--Weil block theorem: the analytic half-plane Hardy/model-space
+  inner products identifying the actual
   Gram geometry with the now-checked Euclidean algebraic realization.  The
   algebraic cross angle is checked, but no claim is yet made that its
   coefficient norm is the Hardy boundary norm.  Spectral completeness for
