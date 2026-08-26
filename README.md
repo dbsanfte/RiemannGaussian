@@ -146,6 +146,11 @@ What is checked here:
   `K(b) * (psi(b) - b)` plus one integral of the explicit derivative `K'`
   against the classical Chebyshev error `x - psi(x)`, with the logarithmic
   change of variables back to the project energy coordinates checked in Lean;
+- passage of that Abel identity to the infinite forward discrepancy: the
+  finite atomic and continuous energies converge to their full counterparts,
+  the Chebyshev boundary term tends to zero using an explicit linear bound for
+  `psi` plus Gaussian decay, and the normalized improper Chebyshev-error
+  integrals converge to the exact forward discrepancy;
 - a finite phase-block interface: any lower bound for weighted von-Mangoldt
   mass on a block where `1 - cos (t * log n)` has a uniform floor becomes a
   kernel-checked lower bound for the true prime energy and hence a sufficient
@@ -166,6 +171,17 @@ What is checked here:
   exponential approximation; and the order-theoretic Legendre transport
   comparison, stated correctly as a sufficient condition while retaining the
   exact positive base-margin obligation;
+- the exact Gaussian/Suzuki curvature interface: the quarter-line digamma
+  density splits pointwise into the reflected continuous-PNT density plus
+  Suzuki's missing curvature; its Gaussian missing-curvature integrand is
+  proved integrable both across the apparent singularity at zero and at
+  infinity; and subtracting it from the forward continuous energy is proved
+  to be the literal Gaussian transform of `suzukiSmoothCurvature`;
+- conditional on the single explicitly named proposition expressing Gauss's
+  digamma integral transform, the arithmetic formula is exactly endpoint plus
+  atomic prime energy minus Suzuki smooth-curvature energy.  The corresponding
+  cofinal energy-budget criterion is kernel-checked equivalent to RH; the
+  proposition is passed as a hypothesis and is not declared as an axiom;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -188,11 +204,10 @@ What is not yet checked here:
   resulting infinite barrier sequence.  The cumulative transport inequality
   proposed in the research note is stronger than necessary when the verified
   base margin is positive, and proving it globally remains RH-strength.
-- passage from the finite Gaussian Abel identity to the infinite forward
-  discrepancy, including decay of its Chebyshev boundary term, and the Gauss
-  integral identity that turns the digamma remainder into Suzuki's positive
-  missing-curvature density.  These are now the two explicit analytic seams
-  between the checked arithmetic frontier and the screw transport model.
+- Gauss's integral identity for the digamma function, needed to identify the
+  digamma remainder with Suzuki's positive missing-curvature energy.  This is
+  now the single explicit analytic seam between the checked Gaussian
+  arithmetic frontier and the exact Suzuki smooth-curvature budget.
 - a parameter-uniform lower bound for the combined Gaussian prime discrepancy
   plus digamma gain.  Numerical falsification shows that neither term may be
   discarded: they undergo a large cancellation before the very small spectral

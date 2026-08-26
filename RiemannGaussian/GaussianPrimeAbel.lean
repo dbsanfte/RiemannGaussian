@@ -19,15 +19,17 @@ For the exact Gaussian test kernel `K`, Abel summation gives
 as a boundary term involving `psi(b) - b` plus the integral of the explicit
 signed derivative `K'(x)` against `x - psi(x)`.  This is the precise bridge
 from the Gaussian positivity frontier to the weighted-Chebyshev and screw
-transport formulations.  Passing this finite identity to `b → ∞` remains a
-separate analytic step.
+transport formulations.  The final section passes natural cutoffs to
+infinity: Gaussian decay kills the Chebyshev boundary using Mathlib's
+explicit linear bound for `psi`, and the resulting improper error integrals
+converge to the full forward discrepancy.
 -/
 
 namespace RiemannGaussian
 
 noncomputable section
 
-open MeasureTheory
+open Filter MeasureTheory Topology
 open scoped BigOperators Topology
 
 /-! ## The multiplicative Gaussian test kernel -/
@@ -377,6 +379,232 @@ theorem gaussianPrimeFiniteForwardEnergyDiscrepancy_eq_explicitChebyshevErrorInt
   unfold gaussianPrimeFiniteForwardEnergyDiscrepancy
   rw [gaussianPrimeFiniteForwardDiscrepancy_eq_explicitChebyshevErrorIntegral
     hε t hb]
+
+/-! ## Passage to the infinite forward discrepancy -/
+
+/-- The natural finite prime-energy blocks exhaust the complete atomic
+von-Mangoldt energy. -/
+theorem tendsto_gaussianPrimePartialOscillationEnergy_Ioc
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    Tendsto
+      (fun n : ℕ =>
+        gaussianPrimePartialOscillationEnergy ε t (Finset.Ioc 1 n))
+      atTop (𝓝 (gaussianPrimeOscillationEnergy ε t)) := by
+  have hsum (n : ℕ) (hn : 1 ≤ n) :
+      (∑ k ∈ Finset.Ioc 1 n,
+        gaussianPrimeOscillationSummand ε t k) =
+      ∑ k ∈ Finset.range (n + 1),
+        gaussianPrimeOscillationSummand ε t k := by
+    apply Finset.sum_subset
+    · intro k hk
+      simp only [Finset.mem_Ioc, Finset.mem_range] at hk ⊢
+      omega
+    · intro k hkrange hknot
+      simp only [Finset.mem_range] at hkrange
+      simp only [Finset.mem_Ioc, not_and_or, not_lt] at hknot
+      have hk : k = 0 ∨ k = 1 := by omega
+      rcases hk with rfl | rfl <;>
+        simp [gaussianPrimeOscillationSummand_eq]
+  have htendsto : Tendsto
+      (fun n : ℕ => ∑ k ∈ Finset.range n,
+        gaussianPrimeOscillationSummand ε t k)
+      atTop (𝓝 (∑' k : ℕ,
+        gaussianPrimeOscillationSummand ε t k)) :=
+    (summable_gaussianPrimeOscillationSummand hε t).hasSum.tendsto_sum_nat
+  have hshift : Tendsto (fun n : ℕ => n + 1) atTop atTop :=
+    tendsto_add_atTop_nat 1
+  have hraw := htendsto.comp hshift
+  unfold gaussianPrimePartialOscillationEnergy
+    gaussianPrimeOscillationEnergy
+  apply Tendsto.const_mul
+  apply hraw.congr'
+  filter_upwards [eventually_ge_atTop 1] with n hn
+  exact (hsum n hn).symm
+
+/-- The positive-log continuous comparison is exhausted by logarithmic
+intervals whose multiplicative endpoints tend to infinity. -/
+theorem tendsto_gaussianForwardContinuousPrimeOscillationEnergy_logInterval
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    Tendsto
+      (fun n : ℕ =>
+        2 / Real.sqrt (Real.pi * ε) *
+          ∫ u in (0 : ℝ)..Real.log (n : ℝ),
+            Real.exp (u / 2 - u ^ 2 / (4 * ε)) *
+              (1 - Real.cos (t * u)))
+      atTop
+      (𝓝 (gaussianForwardContinuousPrimeOscillationEnergy ε t)) := by
+  let f : ℝ → ℝ := fun u =>
+    Real.exp (u / 2 - u ^ 2 / (4 * ε)) *
+      (1 - Real.cos (t * u))
+  have hf : IntegrableOn f (Set.Ioi 0) :=
+    (gaussianContinuousPrimeOscillationIntegrable hε t).integrableOn
+  have hlog : Tendsto (fun n : ℕ => Real.log (n : ℝ)) atTop atTop :=
+    Real.tendsto_log_atTop.comp tendsto_natCast_atTop_atTop
+  have hint := intervalIntegral_tendsto_integral_Ioi (0 : ℝ) hf hlog
+  unfold gaussianForwardContinuousPrimeOscillationEnergy
+  exact hint.const_mul _
+
+/-- The finite Abel discrepancies converge to the full one-sided PNT
+discrepancy. -/
+theorem tendsto_gaussianPrimeFiniteForwardEnergyDiscrepancy
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    Tendsto
+      (fun n : ℕ =>
+        gaussianPrimeFiniteForwardEnergyDiscrepancy ε t (n : ℝ))
+      atTop (𝓝 (gaussianForwardPrimeEnergyDiscrepancy ε t)) := by
+  have hprime := tendsto_gaussianPrimePartialOscillationEnergy_Ioc hε t
+  have hcontinuous :=
+    tendsto_gaussianForwardContinuousPrimeOscillationEnergy_logInterval hε t
+  have hsub := hprime.sub hcontinuous
+  unfold gaussianForwardPrimeEnergyDiscrepancy
+  apply hsub.congr'
+  filter_upwards [eventually_ge_atTop 1] with n hn
+  rw [gaussianPrimeFiniteForwardEnergyDiscrepancy_eq_logInterval ε t]
+  · simp
+  · exact_mod_cast hn
+
+/-- Logarithmic form of the Abel kernel at an exponential argument. -/
+lemma gaussianPrimeAbelKernel_exp (ε t T : ℝ) :
+    gaussianPrimeAbelKernel ε t (Real.exp T) =
+      Real.exp (-T / 2 - T ^ 2 / (4 * ε)) *
+        (1 - Real.cos (t * T)) := by
+  unfold gaussianPrimeAbelKernel
+  rw [Real.log_exp, ← Real.exp_half]
+  rw [div_eq_mul_inv, one_mul, ← Real.exp_neg]
+  rw [← Real.exp_add]
+  congr 2
+  ring
+
+/-- Gaussian decay beats the linear Chebyshev bound, so the Abel boundary
+term vanishes along exponential endpoints. -/
+theorem tendsto_gaussianPrimeAbelBoundary_exp
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    Tendsto
+      (fun T : ℝ =>
+        gaussianPrimeAbelKernel ε t (Real.exp T) *
+          (Chebyshev.psi (Real.exp T) - Real.exp T))
+      atTop (𝓝 0) := by
+  let A : ℝ := Real.log 4 + 5
+  have hA : 0 ≤ A := by
+    dsimp only [A]
+    positivity
+  have herror (T : ℝ) :
+      |Chebyshev.psi (Real.exp T) - Real.exp T| ≤
+        A * Real.exp T := by
+    calc
+      |Chebyshev.psi (Real.exp T) - Real.exp T| ≤
+          |Chebyshev.psi (Real.exp T)| + |Real.exp T| := abs_sub _ _
+      _ = Chebyshev.psi (Real.exp T) + Real.exp T := by
+        rw [abs_of_nonneg (Chebyshev.psi_nonneg _),
+          abs_of_pos (Real.exp_pos _)]
+      _ ≤ (Real.log 4 + 4) * Real.exp T + Real.exp T := by
+        gcongr
+        exact Chebyshev.psi_le_const_mul_self (Real.exp_pos T).le
+      _ = A * Real.exp T := by
+        dsimp only [A]
+        ring
+  have hosc (T : ℝ) :
+      0 ≤ 1 - Real.cos (t * T) ∧
+        1 - Real.cos (t * T) ≤ 2 := by
+    constructor
+    · exact sub_nonneg.mpr (Real.cos_le_one _)
+    · linarith [Real.neg_one_le_cos (t * T)]
+  have hbound : ∀ T : ℝ,
+      ‖gaussianPrimeAbelKernel ε t (Real.exp T) *
+          (Chebyshev.psi (Real.exp T) - Real.exp T)‖ ≤
+        (2 * A) * Real.exp (-T ^ 2 / (4 * ε) + T / 2) := by
+    intro T
+    rw [gaussianPrimeAbelKernel_exp]
+    simp only [Real.norm_eq_abs, abs_mul,
+      abs_of_pos (Real.exp_pos _), abs_of_nonneg (hosc T).1]
+    calc
+      Real.exp (-T / 2 - T ^ 2 / (4 * ε)) *
+            (1 - Real.cos (t * T)) *
+          |Chebyshev.psi (Real.exp T) - Real.exp T| ≤
+        Real.exp (-T / 2 - T ^ 2 / (4 * ε)) * 2 *
+          (A * Real.exp T) := by
+            gcongr
+            · exact (hosc T).2
+            · exact herror T
+      _ = (2 * A) * Real.exp (-T ^ 2 / (4 * ε) + T / 2) := by
+        calc
+          _ = (2 * A) *
+              (Real.exp (-T / 2 - T ^ 2 / (4 * ε)) * Real.exp T) := by ring
+          _ = _ := by
+            rw [← Real.exp_add]
+            congr 2
+            ring
+  have hdecay : Tendsto
+      (fun T : ℝ => (2 * A) *
+        Real.exp (-T ^ 2 / (4 * ε) + T / 2))
+      atTop (𝓝 0) := by
+    have h := tendsto_exp_neg_quadratic_add_linear_atTop
+      (ε := 1 / (4 * ε)) (by positivity) 0 (1 / 2) 0
+    have h' : Tendsto
+        (fun T : ℝ => (2 * A) *
+          Real.exp (-(1 / (4 * ε)) * (T - 0) ^ 2 + (1 / 2) * T + 0))
+        atTop (𝓝 0) := by
+      simpa using h.const_mul (2 * A)
+    apply h'.congr'
+    filter_upwards with T
+    congr 2
+    field_simp [hε.ne']
+    ring
+  exact squeeze_zero_norm' (Filter.Eventually.of_forall hbound) hdecay
+
+/-- The same Abel boundary term vanishes at natural cutoffs. -/
+theorem tendsto_gaussianPrimeAbelBoundary_nat
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    Tendsto
+      (fun n : ℕ =>
+        gaussianPrimeAbelKernel ε t (n : ℝ) *
+          (Chebyshev.psi (n : ℝ) - (n : ℝ)))
+      atTop (𝓝 0) := by
+  have hlog : Tendsto (fun n : ℕ => Real.log (n : ℝ)) atTop atTop :=
+    Real.tendsto_log_atTop.comp tendsto_natCast_atTop_atTop
+  have h := (tendsto_gaussianPrimeAbelBoundary_exp hε t).comp hlog
+  apply h.congr'
+  filter_upwards [eventually_ge_atTop 1] with n hn
+  have hnpos : (0 : ℝ) < n := by exact_mod_cast (Nat.zero_lt_of_lt hn)
+  simp only [Function.comp_apply, Real.exp_log hnpos]
+
+/-- Unconditional infinite-cutoff Abel formula: the normalized explicit
+Chebyshev-error integrals converge to the full forward prime discrepancy.
+This is stated as an improper-integral limit; absolute integrability of the
+signed error kernel is not needed for the identity. -/
+theorem tendsto_gaussianPrimeExplicitChebyshevErrorIntegral
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    Tendsto
+      (fun n : ℕ =>
+        2 / Real.sqrt (Real.pi * ε) *
+          ∫ x in Set.Ioc (1 : ℝ) (n : ℝ),
+            gaussianPrimeAbelKernelDerivative ε t x *
+              (x - Chebyshev.psi x))
+      atTop (𝓝 (gaussianForwardPrimeEnergyDiscrepancy ε t)) := by
+  have hfinite :=
+    tendsto_gaussianPrimeFiniteForwardEnergyDiscrepancy hε t
+  have hboundary :=
+    (tendsto_gaussianPrimeAbelBoundary_nat hε t).const_mul
+      (2 / Real.sqrt (Real.pi * ε))
+  have hsub := hfinite.sub hboundary
+  have heq :
+      (fun n : ℕ =>
+        gaussianPrimeFiniteForwardEnergyDiscrepancy ε t (n : ℝ) -
+          2 / Real.sqrt (Real.pi * ε) *
+            (gaussianPrimeAbelKernel ε t (n : ℝ) *
+              (Chebyshev.psi (n : ℝ) - (n : ℝ)))) =ᶠ[atTop]
+      (fun n : ℕ =>
+        2 / Real.sqrt (Real.pi * ε) *
+          ∫ x in Set.Ioc (1 : ℝ) (n : ℝ),
+            gaussianPrimeAbelKernelDerivative ε t x *
+              (x - Chebyshev.psi x)) := by
+    filter_upwards [eventually_ge_atTop 1] with n hn
+    have hnreal : (1 : ℝ) ≤ n := by exact_mod_cast hn
+    rw [gaussianPrimeFiniteForwardEnergyDiscrepancy_eq_explicitChebyshevErrorIntegral
+      hε t hnreal]
+    ring
+  have hresult := hsub.congr' heq
+  simpa using hresult
 
 end
 
