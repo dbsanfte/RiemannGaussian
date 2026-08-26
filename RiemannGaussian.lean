@@ -27,4 +27,5 @@ import RiemannGaussian.GaussianXiDivisorContour
 import RiemannGaussian.GaussianXiQuantitativeContour
 import RiemannGaussian.GaussianXiLogDerivativeGrowth
 import RiemannGaussian.GaussianPositivityCertificate
+import RiemannGaussian.GaussianPrimeDiscrepancy
 import RiemannGaussian.ScrewTransport

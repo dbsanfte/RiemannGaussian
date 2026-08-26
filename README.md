@@ -126,6 +126,15 @@ What is checked here:
   to full centerwise positivity, and having such widths cofinally is proved
   equivalent to RH; no assertion that center zero is a global minimum is
   smuggled into the reduction;
+- exact cancellation of the continuous-PNT prime-energy main term against the
+  exponentially large elementary boundary drop.  The surviving formula is
+  endpoint plus digamma gain plus a Gaussian-smoothed von-Mangoldt
+  discrepancy, and cofinal validity of this cancellation-aware budget is
+  again proved equivalent to RH;
+- a finite phase-block interface: any lower bound for weighted von-Mangoldt
+  mass on a block where `1 - cos (t * log n)` has a uniform floor becomes a
+  kernel-checked lower bound for the true prime energy and hence a sufficient
+  centerwise positivity criterion;
 - exact differentiation of the retained prime block at arbitrary width and
   cutoff, including its closed signed-sinc form
   `F_prime'(t) = t * sum (q_n(epsilon) * sinc(t * log n))`; this is the
@@ -164,6 +173,11 @@ What is not yet checked here:
   resulting infinite barrier sequence.  The cumulative transport inequality
   proposed in the research note is stronger than necessary when the verified
   base margin is positive, and proving it globally remains RH-strength.
+- a parameter-uniform lower bound for the combined Gaussian prime discrepancy
+  plus digamma gain.  Numerical falsification shows that neither term may be
+  discarded: they undergo a large cancellation before the very small spectral
+  margin remains.  The phase-block theorem now isolates the required weighted
+  prime-mass input without signed summands.
 
 The finite endpoint files are calibration and audit artifacts, not a proposed
 infinite certificate ladder.  Closing the final item requires one
