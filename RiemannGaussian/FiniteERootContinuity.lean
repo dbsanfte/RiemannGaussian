@@ -174,6 +174,126 @@ theorem eventually_exists_finiteEPolynomial_root_in_norm_ball
       field_simp [hM.ne']
     _ < delta := by linarith
 
+/-- Root persistence in the reverse direction, uniformly over every root of
+the nearby polynomial.  Unlike the one-root statement above, this says that
+no new root value can appear far from the root set at the base parameter.  It
+does not assume that either polynomial is separable. -/
+theorem eventually_forall_finiteEPolynomial_root_exists_base_root_in_norm_ball
+    {A : ℝ[X]} (hA : A ≠ 0) (tau₀ : ℝ)
+    {delta : ℝ} (hdelta : 0 < delta) :
+    ∀ᶠ tau in nhds tau₀, ∀ b ∈ (finiteEPolynomial A tau).roots,
+      ∃ a ∈ (finiteEPolynomial A tau₀).roots, ‖b - a‖ < delta := by
+  by_cases hdegree : A.natDegree = 0
+  · apply Filter.Eventually.of_forall
+    intro tau b hb
+    have hroots : (finiteEPolynomial A tau).roots = 0 := by
+      apply Multiset.card_eq_zero.mp
+      rw [IsAlgClosed.card_roots_eq_natDegree,
+        finiteEPolynomial_natDegree hA, hdegree]
+    rw [hroots] at hb
+    exact (Multiset.notMem_zero b hb).elim
+  · let M : ℝ :=
+      ((finiteEPolynomial A tau₀).roots.map fun z ↦ ‖z‖).sum + 1
+    have hnorms_nonneg : ∀ x ∈
+        ((finiteEPolynomial A tau₀).roots.map fun z ↦ ‖z‖), 0 ≤ x := by
+      intro x hx
+      obtain ⟨z, _, rfl⟩ := Multiset.mem_map.mp hx
+      exact norm_nonneg z
+    have hsum_nonneg :
+        0 ≤ ((finiteEPolynomial A tau₀).roots.map fun z ↦ ‖z‖).sum :=
+      Multiset.sum_nonneg hnorms_nonneg
+    have hM : 0 < M := by
+      dsimp [M]
+      linarith
+    have hM_one : 1 ≤ M := by
+      dsimp [M]
+      linarith
+    let qHalf : ℝ := 1 / 2
+    have hqHalf : 0 < qHalf := by norm_num [qHalf]
+    let epsilonHalf : ℝ :=
+      qHalf ^ A.natDegree / (A.natDegree + 1)
+    have hepsilonHalf : 0 < epsilonHalf := by
+      exact div_pos (pow_pos hqHalf _)
+        (by positivity)
+    let qSmall : ℝ := delta / (2 * M)
+    have hqSmall : 0 < qSmall :=
+      div_pos hdelta (mul_pos (by norm_num) hM)
+    let epsilonSmall : ℝ :=
+      qSmall ^ A.natDegree / (A.natDegree + 1)
+    have hepsilonSmall : 0 < epsilonSmall := by
+      exact div_pos (pow_pos hqSmall _)
+        (by positivity)
+    filter_upwards [
+      eventually_finiteEMonicPolynomial_coeff_norm_sub_lt
+        hA tau₀ hepsilonHalf,
+      eventually_finiteEMonicPolynomial_coeff_norm_sub_lt
+        hA tau₀ hepsilonSmall] with tau hcoeffHalf hcoeffSmall b hb
+    have hcoeffHalf' : ∀ i : ℕ,
+        ‖(finiteEMonicPolynomial A tau₀).coeff i -
+          (finiteEMonicPolynomial A tau).coeff i‖ < epsilonHalf := by
+      intro i
+      simpa [norm_sub_rev] using hcoeffHalf i
+    obtain ⟨aHalf, haHalf, hdistHalf⟩ :=
+      exists_finiteEPolynomial_root_norm_sub_lt_of_coeff_close
+        hA hepsilonHalf hb hcoeffHalf'
+    have hradiusHalf :
+        (((A.natDegree + 1 : ℝ) * epsilonHalf) ^
+          (A.natDegree : ℝ)⁻¹) = qHalf := by
+      have hbase :
+          ((A.natDegree + 1 : ℝ) * epsilonHalf) =
+            qHalf ^ A.natDegree := by
+        dsimp [epsilonHalf]
+        field_simp
+      rw [hbase, Real.pow_rpow_inv_natCast hqHalf.le hdegree]
+    rw [hradiusHalf] at hdistHalf
+    have hnorm_aHalf : ‖aHalf‖ < M := by
+      have hmem : ‖aHalf‖ ∈
+          ((finiteEPolynomial A tau₀).roots.map fun z ↦ ‖z‖) :=
+        Multiset.mem_map.mpr ⟨aHalf, haHalf, rfl⟩
+      have hle : ‖aHalf‖ ≤
+          ((finiteEPolynomial A tau₀).roots.map fun z ↦ ‖z‖).sum :=
+        Multiset.single_le_sum hnorms_nonneg _ hmem
+      dsimp [M]
+      linarith
+    have hrootBound : max ‖b‖ 1 < 2 * M := by
+      by_cases hbOne : ‖b‖ ≤ 1
+      · rw [max_eq_right hbOne]
+        linarith
+      · have hone_lt : 1 < ‖b‖ := lt_of_not_ge hbOne
+        rw [max_eq_left hone_lt.le]
+        rw [max_eq_left hone_lt.le] at hdistHalf
+        have htriangle : ‖b‖ ≤ ‖b - aHalf‖ + ‖aHalf‖ := by
+          calc
+            ‖b‖ = ‖(b - aHalf) + aHalf‖ := by ring_nf
+            _ ≤ ‖b - aHalf‖ + ‖aHalf‖ := norm_add_le _ _
+        dsimp [qHalf] at hdistHalf
+        nlinarith
+    have hcoeffSmall' : ∀ i : ℕ,
+        ‖(finiteEMonicPolynomial A tau₀).coeff i -
+          (finiteEMonicPolynomial A tau).coeff i‖ < epsilonSmall := by
+      intro i
+      simpa [norm_sub_rev] using hcoeffSmall i
+    obtain ⟨a, ha, hdist⟩ :=
+      exists_finiteEPolynomial_root_norm_sub_lt_of_coeff_close
+        hA hepsilonSmall hb hcoeffSmall'
+    refine ⟨a, ha, hdist.trans ?_⟩
+    have hradiusSmall :
+        (((A.natDegree + 1 : ℝ) * epsilonSmall) ^
+          (A.natDegree : ℝ)⁻¹) = qSmall := by
+      have hbase :
+          ((A.natDegree + 1 : ℝ) * epsilonSmall) =
+            qSmall ^ A.natDegree := by
+        dsimp [epsilonSmall]
+        field_simp
+      rw [hbase, Real.pow_rpow_inv_natCast hqSmall.le hdegree]
+    rw [hradiusSmall]
+    calc
+      qSmall * max ‖b‖ 1 < qSmall * (2 * M) :=
+        mul_lt_mul_of_pos_left hrootBound hqSmall
+      _ = delta := by
+        dsimp [qSmall]
+        field_simp [hM.ne']
+
 /-- A fixed upper-half-plane root has a nearby upper-half-plane root for all
 sufficiently close homotopy parameters. -/
 theorem eventually_exists_finiteEPolynomial_upper_root_near

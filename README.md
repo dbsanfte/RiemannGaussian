@@ -284,6 +284,14 @@ What is checked here:
   of the upper-half-plane root count at every nonzero separable homotopy
   member; consequently the count is globally constant on all positive
   parameters whenever the positive homotopy is collision-free;
+- the collision-safe completion of that continuity argument: reverse root
+  persistence proves that every nearby root remains close to the base root
+  set, Newton identities and Vieta's formulas prove continuity of every root
+  power sum with multiplicity, and Lagrange interpolation turns those moments
+  into an exact local upper-half-plane count; Lean therefore proves, without
+  assuming the homotopy members separable, that the upper count is locally
+  constant at every nonzero parameter and hence constant throughout the entire
+  positive parameter interval, including through multiple-root collisions;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -308,15 +316,12 @@ What is not yet checked here:
   checked, but the single theorem quantified over all cutoffs remains
   RH-strength.
 - the remaining analytic finite-polynomial realization of the checked
-  abstract Gram--Weil block theorem: preservation of the upper-half-plane
-  root count through multiple-root collisions, its evaluation immediately to
-  the right of parameter zero, and the
+  abstract Gram--Weil block theorem: evaluation of the now globally constant
+  positive-parameter upper root count immediately to the right of parameter
+  zero, and the
   analytic half-plane Hardy/model-space inner products identifying the actual
   Gram geometry with the now-checked Euclidean algebraic realization.  The
-  collision-free positive-parameter constancy theorem is checked, but the
-  family can genuinely develop multiple roots, so it does not settle the
-  unconditional count.  The algebraic cross angle is checked, but no claim is
-  yet made that its
+  algebraic cross angle is checked, but no claim is yet made that its
   coefficient norm is the Hardy boundary norm.  Spectral completeness for
   all `±sqrt(1-s_j^2)` pencil modes is also not yet formalized beyond the
   checked scalar and analytic one-pair cases. Nor is any infinite-dimensional

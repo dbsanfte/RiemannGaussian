@@ -48,3 +48,5 @@ import RiemannGaussian.FiniteModelGeometry
 import RiemannGaussian.FiniteAlgebraicHilbert
 import RiemannGaussian.FiniteRootCountBridge
 import RiemannGaussian.FiniteERootContinuity
+import RiemannGaussian.FiniteERootMoments
+import RiemannGaussian.FiniteERootCountContinuity
