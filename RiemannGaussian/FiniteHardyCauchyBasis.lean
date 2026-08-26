@@ -5,9 +5,10 @@ import RiemannGaussian.FiniteHardyMetricDeterminant
 
 An upper-half-plane zero `w` of the finite Blaschke numerator gives a
 boundary Cauchy vector `x ↦ (x - conj w)⁻¹`.  This file proves directly that
-the vector belongs to the actual negative rational `L²` model.  For two
-distinct such zeros and a degree-two Blaschke factor, the two vectors are
-then promoted to a basis of that model.
+the vector belongs to the actual negative rational `L²` model.  At arbitrary
+degree, separability of the upper factor makes the full family of distinct
+root Cauchy vectors a basis.  The earlier explicit two-root basis is retained
+as the degree-two specialization; repeated roots require confluent vectors.
 -/
 
 open MeasureTheory Polynomial
@@ -84,6 +85,72 @@ theorem finiteModelBoundaryLp_rootCauchyCoordinate
   exact finiteModelBoundaryValue_rootCauchyCoordinate
     hP hreal hw hroot x
 
+/-- Quotient coordinates at distinct simple roots are linearly independent.
+The proof evaluates a putative relation at each root; separability guarantees
+that the surviving quotient equals a nonzero derivative. -/
+theorem finiteModelRootCauchyCoordinate_linearIndependent_of_injective
+    {ι : Type*} [Fintype ι] [DecidableEq ι]
+    {P : ℂ[X]} (hP : P.Separable) (gamma : ι → ℂ)
+    (hgamma : Function.Injective gamma)
+    (hroot : ∀ i, P.eval (gamma i) = 0) :
+    LinearIndependent ℂ
+      (fun i ↦ finiteModelRootCauchyCoordinate P (gamma i) hP.ne_zero) := by
+  rw [Fintype.linearIndependent_iff]
+  intro g hsum i
+  have hsumPolynomial :
+      ∑ i, g i •
+        (((finiteModelRootCauchyCoordinate P (gamma i) hP.ne_zero :
+          finiteModelSpace P) : ℂ[X])) = 0 := by
+    simpa only [map_sum, map_smul, map_zero,
+      Submodule.subtype_apply] using
+      congrArg (finiteModelSpace P).subtype hsum
+  have heval := congrArg (Polynomial.eval (gamma i)) hsumPolynomial
+  simp only [Polynomial.eval_finsetSum, Polynomial.eval_smul,
+    Polynomial.eval_zero, smul_eq_mul] at heval
+  have hsingle :
+      g i * ((finiteModelRootCauchyCoordinate P (gamma i) hP.ne_zero :
+        finiteModelSpace P) : ℂ[X]).eval (gamma i) = 0 := by
+    calc
+      g i * ((finiteModelRootCauchyCoordinate P (gamma i) hP.ne_zero :
+          finiteModelSpace P) : ℂ[X]).eval (gamma i) =
+          ∑ j, g j *
+            ((finiteModelRootCauchyCoordinate P (gamma j) hP.ne_zero :
+              finiteModelSpace P) : ℂ[X]).eval (gamma i) := by
+        symm
+        apply Finset.sum_eq_single i
+        · intro j _ hji
+          have hne : gamma i ≠ gamma j :=
+            fun hij ↦ hji (hgamma hij).symm
+          have hfactor := congrArg (Polynomial.eval (gamma i))
+            (X_sub_C_mul_finiteModelRootCauchyCoordinate
+              hP.ne_zero (hroot j))
+          simp only [eval_mul, eval_sub, eval_X, eval_C] at hfactor
+          rw [hroot i] at hfactor
+          have hzero :
+              ((finiteModelRootCauchyCoordinate P (gamma j) hP.ne_zero :
+                finiteModelSpace P) : ℂ[X]).eval (gamma i) = 0 :=
+            (mul_eq_zero.mp hfactor).resolve_left (sub_ne_zero.mpr hne)
+          rw [hzero, mul_zero]
+        · intro hi
+          exact (hi (Finset.mem_univ i)).elim
+      _ = 0 := heval
+  have hquot_ne :
+      ((finiteModelRootCauchyCoordinate P (gamma i) hP.ne_zero :
+        finiteModelSpace P) : ℂ[X]).eval (gamma i) ≠ 0 := by
+    have hfactor := congrArg Polynomial.derivative
+      (X_sub_C_mul_finiteModelRootCauchyCoordinate
+        hP.ne_zero (hroot i))
+    have hevalDerivative := congrArg (Polynomial.eval (gamma i)) hfactor
+    have hquotDerivative :
+        ((finiteModelRootCauchyCoordinate P (gamma i) hP.ne_zero :
+          finiteModelSpace P) : ℂ[X]).eval (gamma i) =
+          P.derivative.eval (gamma i) := by
+      simpa using hevalDerivative
+    rw [hquotDerivative]
+    simpa [Polynomial.eval₂_at_apply] using
+      hP.eval₂_derivative_ne_zero (RingHom.id ℂ) (hroot i)
+  exact (mul_eq_zero.mp hsingle).resolve_right hquot_ne
+
 /-- A zero of the upper root factor becomes a conjugate zero of the negative
 model denominator. -/
 theorem conjugate_upperRootFactor_eval_conj_eq_zero
@@ -91,6 +158,37 @@ theorem conjugate_upperRootFactor_eval_conj_eq_zero
     (conjugatePolynomial (upperRootFactor p)).eval
         (starRingEnd ℂ w) = 0 := by
   simp [hroot]
+
+/-- The finite set of distinct upper roots, forgetting multiplicities. -/
+def finiteUpperRootFinset (p : ℂ[X]) : Finset ℂ :=
+  (upperRootFactor p).roots.toFinset
+
+/-- Every member of the distinct upper-root finset is a root of the upper
+factor. -/
+theorem finiteUpperRootFinset_eval_zero
+    (p : ℂ[X]) (w : ↑(finiteUpperRootFinset p)) :
+    (upperRootFactor p).eval (w : ℂ) = 0 := by
+  exact (mem_roots (upperRootFactor_ne_zero p)).mp
+    (Multiset.mem_toFinset.mp w.property)
+
+/-- Every root retained by the upper-root factor lies in the open upper half
+plane. -/
+theorem finiteUpperRootFinset_im_pos
+    (p : ℂ[X]) (w : ↑(finiteUpperRootFinset p)) :
+    0 < (w : ℂ).im := by
+  have hw : (w : ℂ) ∈ (upperRootFactor p).roots :=
+    Multiset.mem_toFinset.mp w.property
+  rw [upperRootFactor_roots, Multiset.mem_filter] at hw
+  exact hw.2
+
+/-- If the upper factor is separable, its distinct-root finset has exactly
+its degree many elements. -/
+theorem finiteUpperRootFinset_card_of_separable
+    {p : ℂ[X]} (hp : (upperRootFactor p).Separable) :
+    (finiteUpperRootFinset p).card = (upperRootFactor p).natDegree := by
+  rw [finiteUpperRootFinset,
+    Multiset.toFinset_card_of_nodup (nodup_roots hp)]
+  exact IsAlgClosed.card_roots_eq_natDegree
 
 /-- The actual negative-model Cauchy vector attached to an upper root. -/
 def finiteNegativeCauchyVector
@@ -130,6 +228,99 @@ algebraic model. -/
   rw [LinearMap.finrank_range_of_inj
       (finiteNegativeModelBoundaryLpLinearMap_injective A tau),
     finiteModelSpace_finrank, conjugatePolynomial_natDegree]
+
+/-- The ordinary Cauchy vectors indexed by all distinct upper roots. -/
+def finiteNegativeRootCauchyVectors
+    (A : ℝ[X]) (tau : ℝ) :
+    ↑(finiteUpperRootFinset (finiteEPolynomial A tau)) →
+      finiteNegativeBoundarySubspace A tau :=
+  fun w ↦ finiteNegativeCauchyVector A tau (w : ℂ)
+    (finiteUpperRootFinset_im_pos (finiteEPolynomial A tau) w)
+    (finiteUpperRootFinset_eval_zero (finiteEPolynomial A tau) w)
+
+/-- When the upper factor is separable, all of its ordinary root Cauchy
+vectors are linearly independent in the actual negative boundary model. -/
+theorem finiteNegativeRootCauchyVectors_linearIndependent_of_separable
+    (A : ℝ[X]) (tau : ℝ)
+    (hsep : (upperRootFactor (finiteEPolynomial A tau)).Separable) :
+    LinearIndependent ℂ (finiteNegativeRootCauchyVectors A tau) := by
+  let E := finiteEPolynomial A tau
+  let U := upperRootFactor E
+  let D := conjugatePolynomial U
+  let gamma : ↑(finiteUpperRootFinset E) → ℂ :=
+    fun w ↦ starRingEnd ℂ (w : ℂ)
+  have hDsep : D.Separable := by
+    simpa [D, conjugatePolynomial, U] using hsep.map
+  have hgamma : Function.Injective gamma := by
+    intro w v hwv
+    apply Subtype.ext
+    exact (starRingEnd ℂ).injective hwv
+  have hroot : ∀ w, D.eval (gamma w) = 0 := by
+    intro w
+    simpa [D, U, E, gamma] using
+      conjugate_upperRootFactor_eval_conj_eq_zero E
+        (finiteUpperRootFinset_eval_zero E w)
+  have hcoordinate : LinearIndependent ℂ
+      (fun w ↦ finiteModelRootCauchyCoordinate D (gamma w) hDsep.ne_zero) :=
+    finiteModelRootCauchyCoordinate_linearIndependent_of_injective
+      hDsep gamma hgamma hroot
+  let f := (finiteNegativeModelBoundaryLpLinearMap A tau).rangeRestrict
+  have hf : Function.Injective f := by
+    intro q r hqr
+    apply finiteNegativeModelBoundaryLpLinearMap_injective A tau
+    exact congrArg Subtype.val hqr
+  have hmapped := hcoordinate.map' f
+    (LinearMap.ker_eq_bot_of_injective hf)
+  have hfamilies :
+      (fun w ↦ f
+        (finiteModelRootCauchyCoordinate D (gamma w) hDsep.ne_zero)) =
+        finiteNegativeRootCauchyVectors A tau := by
+    funext w
+    apply Subtype.ext
+    change finiteNegativeModelBoundaryLpLinearMap A tau
+        (finiteModelRootCauchyCoordinate D (gamma w) hDsep.ne_zero) =
+      upperCauchyBoundaryLp (w : ℂ)
+        (finiteUpperRootFinset_im_pos E w)
+    exact finiteModelBoundaryLp_rootCauchyCoordinate hDsep.ne_zero
+      (conjugate_upperRootFactor_eval_real_ne_zero E)
+      (finiteUpperRootFinset_im_pos E w) (hroot w)
+  rw [← hfamilies]
+  change LinearIndependent ℂ
+    (f ∘ fun w ↦ finiteModelRootCauchyCoordinate D (gamma w) hDsep.ne_zero)
+  exact hmapped
+
+/-- The complete ordinary root Cauchy basis when the upper factor has only
+simple roots. -/
+noncomputable def finiteNegativeSimpleRootCauchyBasis
+    (A : ℝ[X]) (tau : ℝ)
+    (hsep : (upperRootFactor (finiteEPolynomial A tau)).Separable) :
+    Module.Basis
+      (↑(finiteUpperRootFinset (finiteEPolynomial A tau))) ℂ
+      (finiteNegativeBoundarySubspace A tau) :=
+  basisOfLinearIndependentOfCardEqFinrank'
+    (finiteNegativeRootCauchyVectors A tau)
+    (finiteNegativeRootCauchyVectors_linearIndependent_of_separable
+      A tau hsep)
+    (by
+      rw [Fintype.card_coe,
+        finiteUpperRootFinset_card_of_separable hsep,
+        finiteNegativeBoundarySubspace_finrank])
+
+@[simp] theorem finiteNegativeSimpleRootCauchyBasis_apply
+    (A : ℝ[X]) (tau : ℝ)
+    (hsep : (upperRootFactor (finiteEPolynomial A tau)).Separable)
+    (w : ↑(finiteUpperRootFinset (finiteEPolynomial A tau))) :
+    finiteNegativeSimpleRootCauchyBasis A tau hsep w =
+      finiteNegativeRootCauchyVectors A tau w := by
+  exact congrFun
+    (coe_basisOfLinearIndependentOfCardEqFinrank'
+      (finiteNegativeRootCauchyVectors A tau)
+      (finiteNegativeRootCauchyVectors_linearIndependent_of_separable
+        A tau hsep)
+      (by
+        rw [Fintype.card_coe,
+          finiteUpperRootFinset_card_of_separable hsep,
+          finiteNegativeBoundarySubspace_finrank])) w
 
 /-- The ordered pair of actual negative-model Cauchy vectors. -/
 def twoFiniteNegativeCauchyVectors
@@ -271,6 +462,27 @@ theorem finiteHardyCrossAngleComplementGramOperator_det_eq_rootValues_of_rootCau
     (finiteEPolynomial A tau) (hw j) (hw i)
     (lowerRootFactor_eval_conj_ne_zero_of_upperRoot hA htau (hroot j))
     (lowerRootFactor_eval_conj_ne_zero_of_upperRoot hA htau (hroot i))
+
+/-- If the upper factor has only simple roots, the complete root Cauchy basis
+is constructed internally and the higher-index Hardy determinant is the
+squared modulus of the product over every upper root. -/
+theorem finiteHardyCrossAngleComplementGramOperator_det_eq_simpleRootProduct
+    {A : ℝ[X]} (hA : A.Separable) {tau : ℝ} (htau : tau ≠ 0)
+    (hsep : (upperRootFactor (finiteEPolynomial A tau)).Separable) :
+    LinearMap.det
+        (finiteHardyCrossAngleComplementGramOperator A tau).toLinearMap =
+      (Complex.normSq
+        (∏ w : ↑(finiteUpperRootFinset (finiteEPolynomial A tau)),
+          lowerRootInnerValue (finiteEPolynomial A tau) (w : ℂ)) : ℂ) := by
+  exact
+    finiteHardyCrossAngleComplementGramOperator_det_eq_rootValues_of_rootCauchyBasis
+      hA htau
+      (fun w : ↑(finiteUpperRootFinset (finiteEPolynomial A tau)) ↦
+        (w : ℂ))
+      (fun w ↦ finiteUpperRootFinset_im_pos (finiteEPolynomial A tau) w)
+      (fun w ↦ finiteUpperRootFinset_eval_zero (finiteEPolynomial A tau) w)
+      (finiteNegativeSimpleRootCauchyBasis A tau hsep)
+      (fun w ↦ finiteNegativeSimpleRootCauchyBasis_apply A tau hsep w)
 
 /-- The reverse Gram matrix of the root Cauchy basis is the concrete
 two-node Cauchy Gram matrix. -/
