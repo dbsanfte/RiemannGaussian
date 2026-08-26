@@ -353,7 +353,10 @@ What is checked here:
   the already checked positive-homotopy root-count theorem replaces the raw
   degree-two assumption by the base upper-root count at parameter zero.  Hence
   the strongest checked finite quartet theorem assumes none of those local or
-  reflected-side facts;
+  reflected-side facts.  In the isolated-quartet specialization, evenness,
+  separability, degree four, and the one named upper zero prove that base count
+  is exactly two; the resulting end-to-end theorem assumes no root-count or
+  root-factor degree statement either;
 - the exact root-count bridge behind that degree inequality: conjugation
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
@@ -451,9 +454,10 @@ What is not yet checked here:
   derives that background law, the residual-inner reflection law, and the
   two denominator nonvanishing statements from the pole equation.  The raw
   degree-two condition is also replaced by the zero-endpoint upper-root count.
-  What remains is to derive the exact decomposition, its background sign, the
-  positive pole equation, and the required base count from the intended xi
-  approximants;
+  For an isolated even quartic, that base count is now itself derived from one
+  upper zero and degree four.  What remains is to derive the exact
+  decomposition, its background sign, and the positive pole equation from the
+  intended finite approximants, followed by the infinite xi passage;
   identify the determinant-level product with any separately named
   metric-pencil modes when such modes are required, and pass to the infinite
   xi model.  No claim is made that the auxiliary Euclidean coefficient norm

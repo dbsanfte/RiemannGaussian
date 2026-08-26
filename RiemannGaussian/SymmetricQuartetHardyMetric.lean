@@ -623,6 +623,81 @@ theorem
       hAPoleMinus hdecompose hupperPlus hupperMinus hbackground hpole
       hbackgroundReflect hreflect
 
+/-- An even separable quartic with one genuinely off-axis upper root has
+exactly two upper roots at the zero homotopy endpoint.  The reflected upper
+root supplies the lower bound; the general real-polynomial upper/lower count
+bound and degree four supply the upper bound. -/
+theorem finiteEPolynomial_zero_upperRootCount_eq_two_of_quartic_even_root
+    {A : ℝ[X]} (hA : A.Separable) (hEven : A.comp (-X) = A)
+    (hdegreeA : A.natDegree = 4) {tau a : ℝ}
+    (htau : tau ≠ 0) (ha : 0 < a)
+    (hAPlus : A.eval₂ Complex.ofRealHom
+      (symmetricPickAlphaPlus tau a) = 0) :
+    upperHalfPlaneRootCount (finiteEPolynomial A 0) = 2 := by
+  have hAlphaNegConj :
+      negConj (symmetricPickAlphaPlus tau a) =
+        symmetricPickAlphaMinus tau a := by
+    simp [negConj, symmetricPickAlphaPlus, symmetricPickAlphaMinus]
+  have hAMinus : A.eval₂ Complex.ofRealHom
+      (symmetricPickAlphaMinus tau a) = 0 := by
+    rw [← hAlphaNegConj,
+      realPolynomial_eval₂_negConj_eq_conj_of_even hEven, hAPlus, map_zero]
+  have hrootPlus : (finiteEPolynomial A 0).eval
+      (symmetricPickAlphaPlus tau a) = 0 := by
+    simpa using hAPlus
+  have hrootMinus : (finiteEPolynomial A 0).eval
+      (symmetricPickAlphaMinus tau a) = 0 := by
+    simpa using hAMinus
+  have himPlus : 0 < (symmetricPickAlphaPlus tau a).im := by
+    simpa [symmetricPickAlphaPlus, upperHalfPlanePoint] using ha
+  have himMinus : 0 < (symmetricPickAlphaMinus tau a).im := by
+    simpa [symmetricPickAlphaMinus, upperHalfPlanePoint] using ha
+  have hfactorPlus :
+      (upperRootFactor (finiteEPolynomial A 0)).eval
+          (symmetricPickAlphaPlus tau a) = 0 :=
+    upperRootFactor_eval_eq_zero_of_eval_eq_zero
+      (finiteEPolynomial_ne_zero hA.ne_zero 0) himPlus hrootPlus
+  have hfactorMinus :
+      (upperRootFactor (finiteEPolynomial A 0)).eval
+          (symmetricPickAlphaMinus tau a) = 0 :=
+    upperRootFactor_eval_eq_zero_of_eval_eq_zero
+      (finiteEPolynomial_ne_zero hA.ne_zero 0) himMinus hrootMinus
+  have hne :
+      symmetricPickAlphaPlus tau a ≠ symmetricPickAlphaMinus tau a := by
+    simpa [symmetricPickPole, symmetricPickAlphaPlus,
+      symmetricPickAlphaMinus] using
+        symmetricPickPole_ne_reflected_of_ne_zero (v := a) htau
+  let q := upperRootFactor (finiteEPolynomial A 0)
+  have hq : q ≠ 0 := upperRootFactor_ne_zero _
+  have hsubset :
+      ({symmetricPickAlphaPlus tau a,
+          symmetricPickAlphaMinus tau a} : Finset ℂ) ⊆
+        q.roots.toFinset := by
+    intro w hw
+    simp only [Finset.mem_insert, Finset.mem_singleton] at hw
+    simp only [Multiset.mem_toFinset]
+    rcases hw with rfl | rfl
+    · exact (mem_roots hq).mpr hfactorPlus
+    · exact (mem_roots hq).mpr hfactorMinus
+  have htwoToFinset : 2 ≤ q.roots.toFinset.card := by
+    have hcard := Finset.card_le_card hsubset
+    rw [Finset.card_pair hne] at hcard
+    exact hcard
+  have htwoRoots : 2 ≤ q.roots.card :=
+    htwoToFinset.trans q.roots.toFinset_card_le
+  have hlower : 2 ≤
+      upperHalfPlaneRootCount (finiteEPolynomial A 0) := by
+    rw [← upperRootFactor_natDegree]
+    change 2 ≤ q.natDegree
+    rw [← IsAlgClosed.card_roots_eq_natDegree]
+    exact htwoRoots
+  have hupper :
+      upperHalfPlaneRootCount (finiteEPolynomial A 0) ≤ 2 := by
+    have htwice := twice_finiteEPolynomial_zero_upper_le_natDegree hA.ne_zero
+    rw [hdegreeA] at htwice
+    omega
+  exact le_antisymm hupper hlower
+
 /-- Positive-parameter root-count invariance replaces the raw degree-two
 hypothesis by the corresponding upper-root count of the base polynomial at
 the zero endpoint. -/
@@ -655,6 +730,39 @@ theorem
   exact
     finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound_of_even_logDerivativeDecomposition
       hA hEven hη.ne' hm htau ha hv hx hdegree hAPlus hdecompose
+      hbackground hpole
+
+/-- Fully structural isolated-quartet version of the finite Hardy estimate.
+For an even separable quartic, the one named upper zero and its positivity
+data determine the zero-endpoint root count, so no root or factor degree is
+assumed anywhere in this statement. -/
+theorem
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound_of_even_quartic_logDerivativeDecomposition
+    {A : ℝ[X]} (hA : A.Separable) (hEven : A.comp (-X) = A)
+    (hdegreeA : A.natDegree = 4)
+    {η m tau a x v : ℝ} {background : ℂ → ℂ}
+    (hη : 0 < η) (hm : 0 < m) (htau : tau ≠ 0)
+    (ha : 0 < a) (hv : 0 < v) (hx : x ≠ 0)
+    (hAPlus : A.eval₂ Complex.ofRealHom
+      (symmetricPickAlphaPlus tau a) = 0)
+    (hdecompose : ∀ z,
+      finiteNegativeLogDerivativeValue A η z =
+        symmetricQuartetLogDerivativeContribution m tau a z + background z)
+    (hbackground : 0 ≤ (background (symmetricPickPole x v)).im)
+    (hpole : symmetricQuartetLogDerivativeContribution m tau a
+        (symmetricPickPole x v) +
+      background (symmetricPickPole x v) = -Complex.I) :
+    Real.sqrt
+        (LinearMap.det
+          (finiteHardyCrossAngleComplementGramOperator A η).toLinearMap).re <
+      m ^ 2 / (m ^ 2 + a ^ 2) := by
+  have hbaseCount :
+      upperHalfPlaneRootCount (finiteEPolynomial A 0) = 2 :=
+    finiteEPolynomial_zero_upperRootCount_eq_two_of_quartic_even_root
+      hA hEven hdegreeA htau ha hAPlus
+  exact
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound_of_even_logDerivativeDecomposition_baseCount
+      hA hEven hη hm htau ha hv hx hbaseCount hAPlus hdecompose
       hbackground hpole
 
 end
