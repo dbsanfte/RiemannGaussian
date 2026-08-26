@@ -299,7 +299,11 @@ What is checked here:
   finite residual-inner boundary function is now constructed on actual `L²`
   equivalence classes and proved to be a complex-linear isometry, including
   the exact scalar-weighted inner-product identity needed for the two-node
-  Gram calculation;
+  Gram calculation.  A checked upper-half-plane rectangle-contour theorem
+  proves that every degree-gap-two rational function with all poles strictly
+  below the real line has vanishing boundary integral; applying it proves
+  that every residual-inner shifted Cauchy vector is genuinely orthogonal in
+  `L²(ℝ, ℂ)` to the entire finite residual-model image;
 - the exact root-count bridge behind that degree inequality: conjugation
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
@@ -382,13 +386,13 @@ What is not yet checked here:
 - the remaining analytic finite-polynomial realization of the checked
   abstract Gram--Weil block theorem: although the rational model spaces now
   embed faithfully as closed subspaces of actual boundary `L²` and their
-  orthogonal cross angle is strictly contractive, the Hardy orthogonality
-  calculation needed to prove that projection injective and identify the
-  resulting Gram geometry is not yet checked.  The residual-inner boundary
-  multiplier is now a checked `L²` isometry, but orthogonality of its shifted
-  Cauchy vectors to the residual model remains open.  No claim is made that the
-  auxiliary Euclidean coefficient norm is the Hardy boundary norm.  Spectral
-  completeness for
+  orthogonal cross angle is strictly contractive, and residual-inner shifted
+  Cauchy vectors are now rigorously orthogonal to the residual model, their
+  complementary model-kernel component has not yet been constructed and
+  identified with the actual orthogonal projection.  Consequently the
+  resulting two-node Hardy Gram matrix has not yet been identified with the
+  checked weighted metric pencil.  No claim is made that the auxiliary
+  Euclidean coefficient norm is the Hardy boundary norm.  Spectral completeness for
   all `±sqrt(1-s_j^2)` pencil modes is also not yet formalized beyond the
   checked scalar and analytic one-pair cases. Nor is any infinite-dimensional
   lift to the xi function; that remains a research program, not an RH proof.

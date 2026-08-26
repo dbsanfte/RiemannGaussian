@@ -58,6 +58,8 @@ import RiemannGaussian.FiniteModelSpace
 import RiemannGaussian.FiniteModelGeometry
 import RiemannGaussian.FiniteHardyBoundary
 import RiemannGaussian.FiniteHardyInnerMultiplier
+import RiemannGaussian.UpperHalfPlaneIntegral
+import RiemannGaussian.FiniteHardyOrthogonality
 import RiemannGaussian.FiniteAlgebraicHilbert
 import RiemannGaussian.FiniteRootCountBridge
 import RiemannGaussian.FiniteERootContinuity
