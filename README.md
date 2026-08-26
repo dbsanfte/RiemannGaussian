@@ -246,6 +246,13 @@ What is checked here:
   the `B` kernel; at every zero `gamma` of `A`, all required denominators are
   proved nonzero and Lean derives `S(gamma) = -B(gamma)` and hence
   `B(gamma) + S(gamma) = 0`;
+- the normalized finite zero-vector split from the proposed analytic route:
+  `A(z) / (z - gamma)` is represented by a literal polynomial quotient,
+  its value at the removed root is proved to equal `A'(gamma)`, and Lean
+  proves `B * F_gamma = u_gamma - n_gamma` with the exact `I / sqrt pi`
+  normalization; for separable `A`, the quotient polynomials indexed by all
+  complex roots are linearly independent, and that root index set is proved
+  to have cardinality `A.natDegree`;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -272,7 +279,8 @@ What is not yet checked here:
 - the remaining analytic finite-polynomial realization of the checked
   abstract Gram--Weil block theorem: constancy and evaluation of the
   upper-half-plane root count along the just-defined homotopy, model-space
-  membership and completeness beyond the checked kernel-numerator split,
+  membership and the coefficient-to-pair isomorphism beyond the checked
+  kernel and linearly-independent zero-vector splits,
   injectivity/strict contraction of its cross-angle operator,
   and the spectral theorem counting all `±sqrt(1-s_j^2)` pencil modes are not
   yet formalized beyond the checked scalar and analytic one-pair cases. Nor is any
