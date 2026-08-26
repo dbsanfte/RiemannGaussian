@@ -57,6 +57,7 @@ import RiemannGaussian.FiniteZeroVectorSplit
 import RiemannGaussian.FiniteModelSpace
 import RiemannGaussian.FiniteModelGeometry
 import RiemannGaussian.FiniteHardyBoundary
+import RiemannGaussian.FiniteHardyInnerMultiplier
 import RiemannGaussian.FiniteAlgebraicHilbert
 import RiemannGaussian.FiniteRootCountBridge
 import RiemannGaussian.FiniteERootContinuity

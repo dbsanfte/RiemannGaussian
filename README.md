@@ -295,7 +295,11 @@ What is checked here:
   integrable by an explicit `O(1/|x|)` estimate, embeds faithfully into
   complex `L²(ℝ)`, and has finite-dimensional closed image.  The positive and
   negative images are proved transverse, so their actual orthogonal
-  cross-angle is pointwise strictly contractive;
+  cross-angle is pointwise strictly contractive.  Multiplication by the
+  finite residual-inner boundary function is now constructed on actual `L²`
+  equivalence classes and proved to be a complex-linear isometry, including
+  the exact scalar-weighted inner-product identity needed for the two-node
+  Gram calculation;
 - the exact root-count bridge behind that degree inequality: conjugation
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
@@ -380,7 +384,9 @@ What is not yet checked here:
   embed faithfully as closed subspaces of actual boundary `L²` and their
   orthogonal cross angle is strictly contractive, the Hardy orthogonality
   calculation needed to prove that projection injective and identify the
-  resulting Gram geometry is not yet checked.  No claim is made that the
+  resulting Gram geometry is not yet checked.  The residual-inner boundary
+  multiplier is now a checked `L²` isometry, but orthogonality of its shifted
+  Cauchy vectors to the residual model remains open.  No claim is made that the
   auxiliary Euclidean coefficient norm is the Hardy boundary norm.  Spectral
   completeness for
   all `±sqrt(1-s_j^2)` pencil modes is also not yet formalized beyond the
