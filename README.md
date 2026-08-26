@@ -368,7 +368,14 @@ What is checked here:
   symmetric points, so at the natural weight `m = eta` the residual background
   is zero.  The resulting strict finite Hardy determinant bound has no
   background, decomposition, pole-equation, root-count, or reflection
-  assumption beyond the named structural roots themselves;
+  assumption beyond the named structural roots themselves.  More generally,
+  if the complete root multiset is the named quartet plus an arbitrary finite
+  residual multiset supported on the real axis, Lean identifies the literal
+  background exactly with that residual root sum, proves its imaginary part
+  nonnegative throughout the upper half-plane, and obtains the same strict
+  determinant bound without a background-sign assumption.  Thus the remaining
+  finite background-sign obstruction is specifically the contribution of
+  additional off-axis residual roots;
 - the exact root-count bridge behind that degree inequality: conjugation
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
@@ -470,9 +477,12 @@ What is not yet checked here:
   upper zero and degree four.  The exact decomposition and positive pole
   equation are now automatic for the literal finite residual background, and
   the exact finite root expansion proves this background is zero at natural
-  weight in the isolated-quartic case.  What remains is to prove the background
-  sign for larger intended approximants containing additional roots, followed
-  by the infinite xi passage;
+  weight in the isolated-quartic case.  For a larger finite approximant whose
+  remaining roots are all real, the same root expansion now proves the
+  background sign and the end-to-end determinant estimate.  What remains at
+  the finite frontier is to control the net background contribution from
+  additional off-axis roots (rather than assume its sign), followed by the
+  infinite xi passage;
   identify the determinant-level product with any separately named
   metric-pencil modes when such modes are required, and pass to the infinite
   xi model.  No claim is made that the auxiliary Euclidean coefficient norm

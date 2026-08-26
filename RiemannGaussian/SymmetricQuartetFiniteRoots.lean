@@ -259,6 +259,128 @@ theorem
     finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound_of_even_quartic_E_root
       hA hEven hdegreeA hη hη htau ha hv hx hAPlus hroot hbackground
 
+/-! ## Larger finite models with a real residual divisor -/
+
+/-- If the complete root multiset splits into the named quartet plus a
+residual multiset, the literal quartet background is exactly the root sum over
+that residual, away from zeros of `A`. -/
+theorem finiteQuartetLogDerivativeBackground_eq_residual_root_sum
+    {A : ℝ[X]} {η tau a : ℝ} {residual : Multiset ℂ} {z : ℂ}
+    (htau : tau ≠ 0) (ha : 0 < a)
+    (hAz : A.eval₂ Complex.ofRealHom z ≠ 0)
+    (hroots : (A.map Complex.ofRealHom).roots =
+      (symmetricQuartetRootFinset tau a).val + residual) :
+    finiteQuartetLogDerivativeBackground A η η tau a z =
+      (residual.map fun w => -(η : ℂ) / (z - w)).sum := by
+  unfold finiteQuartetLogDerivativeBackground
+  rw [finiteNegativeLogDerivativeValue_eq_root_sum hAz, hroots,
+    Multiset.map_add, Multiset.sum_add,
+    symmetricQuartetRootFinset_sum htau ha]
+  simp [symmetricQuartetLogDerivativeContribution,
+    onePairLogDerivativeContribution, symmetricPickAlphaPlus,
+    symmetricPickAlphaMinus]
+  ring
+
+/-- A nonnegative-weight root on the real axis contributes nonnegative
+imaginary part to the negative logarithmic derivative in the upper half-plane.
+-/
+theorem rootLogDerivativeContribution_im_nonneg_of_real
+    {η : ℝ} (hη : 0 ≤ η) {z w : ℂ} (hz : 0 < z.im) (hw : w.im = 0) :
+    0 ≤ (-(η : ℂ) / (z - w)).im := by
+  rw [Complex.div_im]
+  simp only [Complex.neg_re, Complex.neg_im, Complex.ofReal_re,
+    Complex.ofReal_im, Complex.sub_re, Complex.sub_im, neg_zero, zero_mul,
+    zero_div, zero_sub]
+  rw [hw, sub_zero]
+  have hnorm : 0 ≤ Complex.normSq (z - w) := Complex.normSq_nonneg _
+  simpa only [neg_div, neg_mul, neg_neg] using
+    div_nonneg (mul_nonneg hη hz.le) hnorm
+
+/-- A finite multiset of real residual roots has nonnegative total imaginary
+logarithmic-derivative contribution throughout the upper half-plane. -/
+theorem residualRootLogDerivativeSum_im_nonneg_of_real
+    {η : ℝ} (hη : 0 ≤ η) {residual : Multiset ℂ} {z : ℂ}
+    (hz : 0 < z.im) (hreal : ∀ w ∈ residual, w.im = 0) :
+    0 ≤ ((residual.map fun w => -(η : ℂ) / (z - w)).sum).im := by
+  induction residual using Multiset.induction_on with
+  | empty => simp
+  | cons w s ih =>
+      simp only [Multiset.map_cons, Multiset.sum_cons, Complex.add_im]
+      apply add_nonneg
+      · exact rootLogDerivativeContribution_im_nonneg_of_real
+          hη hz (hreal w (by simp))
+      · apply ih
+        intro u hu
+        exact hreal u (by simp [hu])
+
+/-- The literal quartet background has nonnegative imaginary part whenever
+every residual root in its exact multiset decomposition is real. -/
+theorem finiteQuartetLogDerivativeBackground_im_nonneg_of_real_residual
+    {A : ℝ[X]} {η tau a : ℝ} {residual : Multiset ℂ} {z : ℂ}
+    (hη : 0 ≤ η) (htau : tau ≠ 0) (ha : 0 < a) (hz : 0 < z.im)
+    (hAz : A.eval₂ Complex.ofRealHom z ≠ 0)
+    (hroots : (A.map Complex.ofRealHom).roots =
+      (symmetricQuartetRootFinset tau a).val + residual)
+    (hreal : ∀ w ∈ residual, w.im = 0) :
+    0 ≤ (finiteQuartetLogDerivativeBackground A η η tau a z).im := by
+  rw [finiteQuartetLogDerivativeBackground_eq_residual_root_sum
+    htau ha hAz hroots]
+  exact residualRootLogDerivativeSum_im_nonneg_of_real hη hz hreal
+
+/-- End-to-end finite theorem for one symmetric off-axis quartet and an
+arbitrary finite residual divisor supported on the real axis.  Exact root
+expansion proves the required Herglotz background sign, so it is not an
+assumption. -/
+theorem
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound_of_even_E_root_real_residual
+    {A : ℝ[X]} (hA : A.Separable) (hEven : A.comp (-X) = A)
+    {η tau a x v : ℝ} {residual : Multiset ℂ}
+    (hη : 0 < η) (htau : tau ≠ 0)
+    (ha : 0 < a) (hv : 0 < v) (hx : x ≠ 0)
+    (hbaseCount : upperHalfPlaneRootCount (finiteEPolynomial A 0) = 2)
+    (hAPlus : A.eval₂ Complex.ofRealHom
+      (symmetricPickAlphaPlus tau a) = 0)
+    (hroot : (finiteEPolynomial A η).eval
+      (symmetricPickPole x v) = 0)
+    (hroots : (A.map Complex.ofRealHom).roots =
+      (symmetricQuartetRootFinset tau a).val + residual)
+    (hreal : ∀ w ∈ residual, w.im = 0) :
+    Real.sqrt
+        (LinearMap.det
+          (finiteHardyCrossAngleComplementGramOperator A η).toLinearMap).re <
+      η ^ 2 / (η ^ 2 + a ^ 2) := by
+  have hAPole : A.eval₂ Complex.ofRealHom
+      (symmetricPickPole x v) ≠ 0 :=
+    finiteE_root_base_eval_ne_zero hA hη.ne' hroot
+  have hvalue :
+      finiteNegativeLogDerivativeValue A η (symmetricPickPole x v) =
+        -Complex.I :=
+    (finiteNegativeLogDerivativeValue_eq_neg_I_iff hAPole).mpr hroot
+  have hpole : symmetricQuartetLogDerivativeContribution η tau a
+        (symmetricPickPole x v) +
+      finiteQuartetLogDerivativeBackground A η η tau a
+        (symmetricPickPole x v) = -Complex.I := by
+    calc
+      symmetricQuartetLogDerivativeContribution η tau a
+            (symmetricPickPole x v) +
+          finiteQuartetLogDerivativeBackground A η η tau a
+            (symmetricPickPole x v) =
+          finiteNegativeLogDerivativeValue A η
+            (symmetricPickPole x v) := by
+        unfold finiteQuartetLogDerivativeBackground
+        ring
+      _ = -Complex.I := hvalue
+  have hbackground : 0 ≤
+      (finiteQuartetLogDerivativeBackground A η η tau a
+        (symmetricPickPole x v)).im :=
+    finiteQuartetLogDerivativeBackground_im_nonneg_of_real_residual
+      hη.le htau ha (by simpa using hv) hAPole hroots hreal
+  exact
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_quartetBound_of_even_logDerivativeDecomposition_baseCount
+      hA hEven hη hη htau ha hv hx hbaseCount hAPlus
+      (finiteNegativeLogDerivativeValue_eq_quartet_add_background
+        A η η tau a) hbackground hpole
+
 end
 
 end RiemannGaussian
