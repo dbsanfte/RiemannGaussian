@@ -219,6 +219,13 @@ What is checked here:
   have literal `2 × 2` Gram matrix
   `(1 / sqrt (1 + a^2)) I`, and the corresponding Weil metric pencil is
   singular exactly at `lambda = ± 1 / sqrt (1 + a^2)`;
+- the algebraic barriers for the general finite homotopy
+  `E_tau = A + I * tau * A'`: for separable real `A` and nonzero `tau`, Lean
+  proves that `E_tau` and `E_tau^sharp` have no real zeros and no common
+  complex zero, hence are coprime; both retain the degree and leading
+  coefficient of `A`; coefficient conjugation exactly interchanges them and
+  conjugates their root multisets with multiplicity; and their open
+  upper/lower root counts exhaust `A.natDegree`;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -242,8 +249,10 @@ What is not yet checked here:
   Existence and exact evaluation of each individual frozen barrier are now
   checked, but the single theorem quantified over all cutoffs remains
   RH-strength.
-- the analytic finite-polynomial realization of the checked abstract
-  Gram--Weil block theorem: finite Krein--Langer factorization, the model-space
+- the remaining analytic finite-polynomial realization of the checked
+  abstract Gram--Weil block theorem: constancy and evaluation of the
+  upper-half-plane root count along the just-defined homotopy, finite
+  Krein--Langer factorization, the model-space
   decomposition, injectivity/strict contraction of its cross-angle operator,
   and the spectral theorem counting all `±sqrt(1-s_j^2)` pencil modes are not
   yet formalized beyond the checked scalar and analytic one-pair cases. Nor is any

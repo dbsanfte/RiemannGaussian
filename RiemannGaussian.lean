@@ -38,3 +38,4 @@ import RiemannGaussian.GramWeilBlockDefect
 import RiemannGaussian.GramWeilMetricPencil
 import RiemannGaussian.GramWeilOnePair
 import RiemannGaussian.FiniteOnePair
+import RiemannGaussian.FiniteEAux
