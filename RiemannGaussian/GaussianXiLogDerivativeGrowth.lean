@@ -745,6 +745,52 @@ theorem logDeriv_riemannXi_eq_residual_sub_canonical_sum
   rw [hlog]
   ring
 
+/-- A finitely supported sum of complex vectors with nonnegative integer
+weights is bounded by the total weight times a uniform pointwise bound. -/
+lemma norm_finsum_zsmul_le_of_nonneg
+    {ι : Type*} {d : ι → ℤ} {f : ι → ℂ}
+    (hd : (Function.support d).Finite)
+    (hdnonneg : ∀ i, 0 ≤ d i) {C : ℝ}
+    (hf : ∀ i, d i ≠ 0 → ‖f i‖ ≤ C) :
+    ‖∑ᶠ i, d i • f i‖ ≤ ((∑ᶠ i, d i : ℤ) : ℝ) * C := by
+  classical
+  have hsub : Function.support (fun i => d i • f i) ⊆ hd.toFinset := by
+    intro i hi
+    apply hd.mem_toFinset.mpr
+    intro hdi
+    apply hi
+    simp [hdi]
+  rw [finsum_eq_sum_of_support_subset _ hsub]
+  calc
+    ‖∑ i ∈ hd.toFinset, d i • f i‖ ≤
+        ∑ i ∈ hd.toFinset, ‖d i • f i‖ := norm_sum_le _ _
+    _ = ∑ i ∈ hd.toFinset, ((d i : ℤ) : ℝ) * ‖f i‖ := by
+      apply Finset.sum_congr rfl
+      intro i hi
+      rw [norm_zsmul ℂ]
+      rw [Complex.norm_int_of_nonneg (hdnonneg i)]
+    _ ≤ ∑ i ∈ hd.toFinset, ((d i : ℤ) : ℝ) * C := by
+      apply Finset.sum_le_sum
+      intro i hi
+      by_cases hdi : d i = 0
+      · simp [hdi]
+      · exact mul_le_mul_of_nonneg_left (hf i hdi) (by
+          exact_mod_cast hdnonneg i)
+    _ = (∑ i ∈ hd.toFinset, ((d i : ℤ) : ℝ)) * C := by
+      rw [Finset.sum_mul]
+    _ = (∑ᶠ i, ((d i : ℤ) : ℝ)) * C := by
+      congr 1
+      symm
+      exact finsum_eq_sum_of_support_subset _ (by
+        intro i hi
+        apply hd.mem_toFinset.mpr
+        intro hdi
+        apply hi
+        simp [hdi])
+    _ = ((∑ᶠ i, d i : ℤ) : ℝ) * C := by
+      congr 1
+      exact (map_finsum (Int.castRingHom ℝ) hd).symm
+
 /-- Jensen's checked zero count bounds the total multiplicity of the interior
 canonical divisor. -/
 theorem sum_divisor_riemannXi_ball_le_of_growth
@@ -763,6 +809,417 @@ theorem sum_divisor_riemannXi_ball_le_of_growth
   rw [heq]
   exact_mod_cast jensen_riemannXi_divisor_le hA
     (xiCanonicalRadius_pos n) hbound
+
+/-- The full finite canonical-factor contribution is explicitly bounded by
+the Jensen zero count times the reciprocal contour separation. -/
+theorem norm_canonicalLogDerivSum_le_of_growth
+    {A : ℝ} (hA : 1 ≤ A)
+    (hbound : ∀ z : ℂ,
+      ‖riemannXi z‖ ≤ Real.exp (A * (‖z‖ + 1) ^ 2))
+    (n : ℕ) {z : ℂ} {δ : ℝ} (hδ : 0 < δ)
+    (hz : ‖z‖ ≤ xiCanonicalRadius n / 4)
+    (hsep : ∀ i,
+      divisor riemannXi (ball 0 (xiCanonicalRadius n)) i ≠ 0 →
+        δ ≤ ‖z - i‖) :
+    ‖∑ᶠ i, divisor riemannXi (ball 0 (xiCanonicalRadius n)) i •
+        logDeriv (Complex.canonicalFactor (xiCanonicalRadius n) i) z‖ ≤
+      (A * (2 * xiCanonicalRadius n + 1) ^ 2 / Real.log 2) *
+        (2 / xiCanonicalRadius n + 1 / δ) := by
+  let R := xiCanonicalRadius n
+  let d : ℂ → ℤ := fun i => divisor riemannXi (ball 0 R) i
+  have hR : 0 < R := xiCanonicalRadius_pos n
+  have hdFinite : (Function.support d).Finite := by
+    simpa [d] using
+      (riemannXiCanonicalResidual_decomp n).meromorphicOn.divisor_ball_support_finite
+  have hdnonneg : ∀ i, 0 ≤ d i := by
+    intro i
+    exact (analyticOnNhd_riemannXi.mono (subset_univ _)).divisor_nonneg i
+  have hraw := norm_finsum_zsmul_le_of_nonneg hdFinite hdnonneg
+    (C := 2 / R + 1 / δ)
+    (fun i hi => norm_logDeriv_canonicalFactor_le hR hδ
+      ((divisor riemannXi (ball 0 R)).supportWithinDomain
+        (by simpa [d] using hi))
+      (by simpa [R] using hz) (hsep i (by simpa [d, R] using hi)))
+  have hcount := sum_divisor_riemannXi_ball_le_of_growth hA hbound n
+  have hC : 0 ≤ 2 / R + 1 / δ := by positivity
+  calc
+    ‖∑ᶠ i, divisor riemannXi (ball 0 (xiCanonicalRadius n)) i •
+        logDeriv (Complex.canonicalFactor (xiCanonicalRadius n) i) z‖ ≤
+        ((∑ᶠ i, divisor riemannXi
+          (ball 0 (xiCanonicalRadius n)) i : ℤ) : ℝ) *
+            (2 / xiCanonicalRadius n + 1 / δ) := by
+      simpa [d, R] using hraw
+    _ ≤ (A * (2 * xiCanonicalRadius n + 1) ^ 2 / Real.log 2) *
+        (2 / xiCanonicalRadius n + 1 / δ) :=
+      mul_le_mul_of_nonneg_right (by simpa [R] using hcount)
+        (by simpa [R] using hC)
+
+/-! ## Transfer to the quantitatively separated spectral contours -/
+
+/-- The affine completed/spectral coordinate equivalence is an isometry for
+differences. -/
+lemma norm_completedSpectralCoordinate_sub (z s : ℂ) :
+    ‖completedSpectralCoordinate z - s‖ =
+      ‖z - zetaSpectralCoordinate s‖ := by
+  have h : completedSpectralCoordinate z - s =
+      Complex.I * (z - zetaSpectralCoordinate s) := by
+    unfold completedSpectralCoordinate zetaSpectralCoordinate
+    ring_nf
+    simp
+    ring
+  rw [h, norm_mul, Complex.norm_I, one_mul]
+
+/-- Quantitative separation in the spectral coordinate transfers exactly to
+the completed coordinate used by `riemannXi`. -/
+theorem spectralBoundarySeparation_le_norm_completedCoordinate_sub_zero
+    (n : ℕ) (y : ℝ) {i : ℂ}
+    (hi : divisor riemannXi (ball 0 (xiCanonicalRadius n)) i ≠ 0) :
+    spectralBoundarySeparation n ≤
+      ‖completedSpectralCoordinate
+          ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+            (y : ℂ) * Complex.I) - i‖ := by
+  let ρ : NontrivialZetaZero :=
+    ⟨i, (riemannXi_eq_zero_iff_isNontrivialZetaZero i).mp
+      (riemannXi_eq_zero_of_divisor_ball_ne_zero hi)⟩
+  calc
+    spectralBoundarySeparation n ≤
+        ‖((quantitativeSpectralBoundaryTruncation n : ℂ) +
+            (y : ℂ) * Complex.I) - zetaSpectralCoordinate ρ.1‖ :=
+      quantitativeSpectralBoundaryTruncation_dist_zero_ge n y ρ
+    _ = ‖completedSpectralCoordinate
+          ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+            (y : ℂ) * Complex.I) - i‖ := by
+      symm
+      exact norm_completedSpectralCoordinate_sub _ i
+
+/-- No point on a quantitatively separated vertical segment maps to a xi
+zero. -/
+theorem riemannXi_quantitativeCompletedCoordinate_ne_zero
+    (n : ℕ) (y : ℝ) :
+    riemannXi (completedSpectralCoordinate
+      ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+        (y : ℂ) * Complex.I)) ≠ 0 := by
+  let w : ℂ := (quantitativeSpectralBoundaryTruncation n : ℂ) +
+    (y : ℂ) * Complex.I
+  by_contra hxi
+  let ρ : NontrivialZetaZero :=
+    ⟨completedSpectralCoordinate w,
+      (riemannXi_eq_zero_iff_isNontrivialZetaZero _).mp (by
+        simpa [w] using hxi)⟩
+  have hsep := quantitativeSpectralBoundaryTruncation_dist_zero_ge n y ρ
+  have hcoord : zetaSpectralCoordinate ρ.1 = w := by
+    simp [ρ]
+  rw [hcoord] at hsep
+  simp [w] at hsep
+  exact (not_lt_of_ge hsep) (spectralBoundarySeparation_pos n)
+
+/-- The whole selected unit-height spectral segment maps inside the inner
+quarter of the much larger canonical disk. -/
+theorem norm_quantitativeCompletedCoordinate_le_quarter
+    (n : ℕ) {y : ℝ} (hylo : -1 ≤ y) (hyhi : y ≤ 1) :
+    ‖completedSpectralCoordinate
+        ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+          (y : ℂ) * Complex.I)‖ ≤ xiCanonicalRadius n / 4 := by
+  let T := quantitativeSpectralBoundaryTruncation n
+  let s := completedSpectralCoordinate ((T : ℂ) + (y : ℂ) * Complex.I)
+  have hTnonneg : 0 ≤ T :=
+    (Nat.cast_nonneg n).trans
+      (quantitativeSpectralBoundaryTruncation_spec n).1.le
+  have hThi : T < (n : ℝ) + 1 :=
+    (quantitativeSpectralBoundaryTruncation_spec n).2.1
+  have hyabs : |y| ≤ 1 := (abs_le).mpr ⟨hylo, hyhi⟩
+  have hsreval : s.re = 1 / 2 - y := by
+    dsimp [s, completedSpectralCoordinate]
+    simp
+    ring
+  have hsre : |s.re| ≤ 3 / 2 := by
+    rw [hsreval]
+    calc
+      |1 / 2 - y| ≤ |1 / 2| + |y| := abs_sub _ _
+      _ ≤ 1 / 2 + 1 := by
+        norm_num only [abs_of_nonneg]
+        linarith
+      _ = 3 / 2 := by norm_num
+  have hsim : |s.im| = T := by
+    have hsimval : s.im = T := by
+      dsimp [s, completedSpectralCoordinate]
+      simp
+    rw [hsimval, abs_of_nonneg hTnonneg]
+  have hRquarter : (n : ℝ) + 3 < xiCanonicalRadius n / 4 := by
+    have hR := (xiCanonicalRadius_spec n).1
+    linarith
+  change ‖s‖ ≤ xiCanonicalRadius n / 4
+  apply le_of_lt
+  calc
+    ‖s‖ ≤ |s.re| + |s.im| := Complex.norm_le_abs_re_add_abs_im s
+    _ ≤ 3 / 2 + T := by rw [hsim]; exact add_le_add hsre le_rfl
+    _ < (n : ℝ) + 3 := by linarith
+    _ < xiCanonicalRadius n / 4 := hRquarter
+
+/-- Combining the residual estimate, Jensen count, and quantitative zero
+separation gives an explicit polynomial expression bounding xi's logarithmic
+derivative on every selected vertical segment. -/
+theorem norm_logDeriv_riemannXi_quantitativeCompletedCoordinate_le_of_growth
+    {A : ℝ} (hA : 1 ≤ A)
+    (hbound : ∀ z : ℂ,
+      ‖riemannXi z‖ ≤ Real.exp (A * (‖z‖ + 1) ^ 2))
+    (n : ℕ) {y : ℝ} (hylo : -1 ≤ y) (hyhi : y ≤ 1) :
+    ‖logDeriv riemannXi
+        (completedSpectralCoordinate
+          ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+            (y : ℂ) * Complex.I))‖ ≤
+      (2 * (A * (xiCanonicalRadius n + 1) ^ 2)) /
+          (xiCanonicalRadius n / 4) +
+        (A * (2 * xiCanonicalRadius n + 1) ^ 2 / Real.log 2) *
+          (2 / xiCanonicalRadius n +
+            1 / spectralBoundarySeparation n) := by
+  let R := xiCanonicalRadius n
+  let w : ℂ := (quantitativeSpectralBoundaryTruncation n : ℂ) +
+    (y : ℂ) * Complex.I
+  let s := completedSpectralCoordinate w
+  have hR : 0 < R := xiCanonicalRadius_pos n
+  have hsquarter : ‖s‖ ≤ R / 4 := by
+    simpa [s, w, R] using
+      norm_quantitativeCompletedCoordinate_le_quarter n hylo hyhi
+  have hsball : s ∈ ball (0 : ℂ) R := by
+    rw [mem_ball, dist_zero_right]
+    exact hsquarter.trans_lt (by linarith)
+  have hxi : riemannXi s ≠ 0 := by
+    simpa [s, w] using
+      riemannXi_quantitativeCompletedCoordinate_ne_zero n y
+  have hdecomp := logDeriv_riemannXi_eq_residual_sub_canonical_sum n
+    (by simpa [R] using hsball) hxi
+  have hres := norm_logDeriv_riemannXiCanonicalResidual_le_of_growth
+    hA hbound n (by simpa [s, R] using hsquarter)
+  have hsum := norm_canonicalLogDerivSum_le_of_growth hA hbound n
+    (spectralBoundarySeparation_pos n) (by simpa [s, R] using hsquarter)
+    (fun i hi => by
+      simpa [s, w, R] using
+        spectralBoundarySeparation_le_norm_completedCoordinate_sub_zero n y
+          (by simpa [R] using hi))
+  calc
+    ‖logDeriv riemannXi s‖ =
+        ‖logDeriv (riemannXiCanonicalResidual n) s -
+          ∑ᶠ i, divisor riemannXi (ball 0 R) i •
+            logDeriv (Complex.canonicalFactor R i) s‖ := by
+      rw [hdecomp]
+    _ ≤ ‖logDeriv (riemannXiCanonicalResidual n) s‖ +
+        ‖∑ᶠ i, divisor riemannXi (ball 0 R) i •
+          logDeriv (Complex.canonicalFactor R i) s‖ := norm_sub_le _ _
+    _ ≤ (2 * (A * (R + 1) ^ 2)) / (R / 4) +
+        (A * (2 * R + 1) ^ 2 / Real.log 2) *
+          (2 / R + 1 / spectralBoundarySeparation n) :=
+      add_le_add (by simpa [R, s] using hres) (by simpa [R, s] using hsum)
+
+/-- The spectral negative logarithmic derivative has the same norm as xi's
+ordinary logarithmic derivative at the corresponding completed coordinate. -/
+@[simp] lemma norm_xiSpectralNegativeLogDerivative (z : ℂ) :
+    ‖xiSpectralNegativeLogDerivative z‖ =
+      ‖logDeriv riemannXi (completedSpectralCoordinate z)‖ := by
+  simp [xiSpectralNegativeLogDerivative, logDeriv_apply, norm_neg]
+
+/-- A deliberately coarse but explicit exponential majorant for the
+polynomial contour estimate.  The exponent `4` reflects the product of two
+quadratic zero-count bounds. -/
+theorem explicit_logDeriv_bound_le_exponential
+    {A : ℝ} (hA : 1 ≤ A)
+    (hbound : ∀ z : ℂ,
+      ‖riemannXi z‖ ≤ Real.exp (A * (‖z‖ + 1) ^ 2))
+    (n : ℕ) :
+    (2 * (A * (xiCanonicalRadius n + 1) ^ 2)) /
+          (xiCanonicalRadius n / 4) +
+        (A * (2 * xiCanonicalRadius n + 1) ^ 2 / Real.log 2) *
+          (2 / xiCanonicalRadius n +
+            1 / spectralBoundarySeparation n) ≤
+      (392 * A + 729 * (A / Real.log 2) *
+          (13 + 75 * (A / Real.log 2))) *
+        Real.exp (4 * quantitativeSpectralBoundaryTruncation n) := by
+  let R := xiCanonicalRadius n
+  let T := quantitativeSpectralBoundaryTruncation n
+  let E := Real.exp T
+  let B := A / Real.log 2
+  let X := 2 * ((n : ℝ) + 2) + 1
+  have hA0 : 0 ≤ A := (by linarith : 0 ≤ A)
+  have hlog2 : 0 < Real.log 2 := Real.log_pos (by norm_num)
+  have hB : 0 ≤ B := by dsimp [B]; positivity
+  have hT0 : 0 ≤ T :=
+    (Nat.cast_nonneg n).trans
+      (quantitativeSpectralBoundaryTruncation_spec n).1.le
+  have hEpos : 0 < E := by dsimp [E]; positivity
+  have hEone : 1 ≤ E := by
+    dsimp [E]
+    exact Real.one_le_exp hT0
+  have hE2one : 1 ≤ E ^ 2 := by nlinarith [sq_nonneg (E - 1)]
+  have hE2nonneg : 0 ≤ E ^ 2 := sq_nonneg E
+  have hE2E4 : E ^ 2 ≤ E ^ 4 := by
+    calc
+      E ^ 2 = E ^ 2 * 1 := by ring
+      _ ≤ E ^ 2 * E ^ 2 :=
+        mul_le_mul_of_nonneg_left hE2one hE2nonneg
+      _ = E ^ 4 := by ring
+  have hTexp : T + 1 ≤ E := by
+    simpa [E] using Real.add_one_le_exp T
+  have hR : 0 < R := xiCanonicalRadius_pos n
+  have hRupper : R ≤ 4 * T + 13 := by
+    have hr := (xiCanonicalRadius_spec n).2.1
+    have ht := (quantitativeSpectralBoundaryTruncation_spec n).1
+    dsimp [R, T]
+    linarith
+  have hRfour : 1 ≤ R / 4 := by
+    have hr := (xiCanonicalRadius_spec n).1
+    have hn : 0 ≤ (n : ℝ) := by positivity
+    dsimp [R]
+    linarith
+  have hR1 : R + 1 ≤ 14 * E := by
+    calc
+      R + 1 ≤ 4 * T + 14 := by linarith
+      _ ≤ 14 * (T + 1) := by linarith
+      _ ≤ 14 * E := mul_le_mul_of_nonneg_left hTexp (by norm_num)
+  have htwoR1 : 2 * R + 1 ≤ 27 * E := by
+    calc
+      2 * R + 1 ≤ 8 * T + 27 := by linarith
+      _ ≤ 27 * (T + 1) := by linarith
+      _ ≤ 27 * E := mul_le_mul_of_nonneg_left hTexp (by norm_num)
+  have hX0 : 0 ≤ X := by dsimp [X]; positivity
+  have hX : X ≤ 5 * E := by
+    calc
+      X ≤ 2 * T + 5 := by
+        have ht := (quantitativeSpectralBoundaryTruncation_spec n).1
+        dsimp [X, T]
+        linarith
+      _ ≤ 5 * (T + 1) := by linarith
+      _ ≤ 5 * E := mul_le_mul_of_nonneg_left hTexp (by norm_num)
+  have hR1sq : (R + 1) ^ 2 ≤ (14 * E) ^ 2 :=
+    (sq_le_sq₀ (by positivity) (by positivity)).mpr hR1
+  have htwoR1sq : (2 * R + 1) ^ 2 ≤ (27 * E) ^ 2 :=
+    (sq_le_sq₀ (by positivity) (by positivity)).mpr htwoR1
+  have hXsq : X ^ 2 ≤ (5 * E) ^ 2 :=
+    (sq_le_sq₀ hX0 (by positivity)).mpr hX
+  have hresidual :
+      (2 * (A * (R + 1) ^ 2)) / (R / 4) ≤
+        392 * A * E ^ 2 := by
+    let N := 2 * (A * (R + 1) ^ 2)
+    have hN : 0 ≤ N := by dsimp [N]; positivity
+    calc
+      (2 * (A * (R + 1) ^ 2)) / (R / 4) = N / (R / 4) := rfl
+      _ ≤ N := (div_le_iff₀ (by positivity : 0 < R / 4)).mpr (by
+        calc
+          N = N * 1 := by ring
+          _ ≤ N * (R / 4) := mul_le_mul_of_nonneg_left hRfour hN)
+      _ ≤ 2 * A * (14 * E) ^ 2 := by
+        dsimp [N]
+        calc
+          2 * (A * (R + 1) ^ 2) = (2 * A) * (R + 1) ^ 2 := by ring
+          _ ≤ (2 * A) * (14 * E) ^ 2 :=
+            mul_le_mul_of_nonneg_left hR1sq (by positivity)
+          _ = 2 * A * (14 * E) ^ 2 := by ring
+      _ = 392 * A * E ^ 2 := by ring
+  have hcountFactor :
+      A * (2 * R + 1) ^ 2 / Real.log 2 ≤
+        729 * B * E ^ 2 := by
+    calc
+      A * (2 * R + 1) ^ 2 / Real.log 2 =
+          B * (2 * R + 1) ^ 2 := by dsimp [B]; ring
+      _ ≤ B * (27 * E) ^ 2 :=
+        mul_le_mul_of_nonneg_left htwoR1sq hB
+      _ = 729 * B * E ^ 2 := by ring
+  have hsepRaw :=
+    one_div_spectralBoundarySeparation_le_of_growth hA hbound n
+  have hsep :
+      1 / spectralBoundarySeparation n ≤
+        3 * (25 * B * E ^ 2 + 4) := by
+    calc
+      1 / spectralBoundarySeparation n ≤
+          3 * (A * X ^ 2 / Real.log 2 + 4) := by
+        simpa [X] using hsepRaw
+      _ = 3 * (B * X ^ 2 + 4) := by dsimp [B]; ring
+      _ ≤ 3 * (B * (5 * E) ^ 2 + 4) := by
+        apply mul_le_mul_of_nonneg_left _ (by norm_num)
+        exact add_le_add (mul_le_mul_of_nonneg_left hXsq hB) le_rfl
+      _ = 3 * (25 * B * E ^ 2 + 4) := by ring
+  have htwoDiv : 2 / R ≤ 1 :=
+    (div_le_one hR).mpr (by linarith)
+  have hsecond :
+      2 / R + 1 / spectralBoundarySeparation n ≤
+        (13 + 75 * B) * E ^ 2 := by
+    calc
+      2 / R + 1 / spectralBoundarySeparation n ≤
+          1 + 3 * (25 * B * E ^ 2 + 4) := add_le_add htwoDiv hsep
+      _ = 13 + 75 * B * E ^ 2 := by ring
+      _ ≤ 13 * E ^ 2 + 75 * B * E ^ 2 := by
+        have h13 : 13 ≤ 13 * E ^ 2 := by nlinarith
+        exact add_le_add h13 le_rfl
+      _ = (13 + 75 * B) * E ^ 2 := by ring
+  have hcanonical :
+      (A * (2 * R + 1) ^ 2 / Real.log 2) *
+          (2 / R + 1 / spectralBoundarySeparation n) ≤
+        729 * B * (13 + 75 * B) * E ^ 4 := by
+    have hsecond0 :
+        0 ≤ 2 / R + 1 / spectralBoundarySeparation n := by
+      have hsepPos := spectralBoundarySeparation_pos n
+      positivity
+    calc
+      (A * (2 * R + 1) ^ 2 / Real.log 2) *
+          (2 / R + 1 / spectralBoundarySeparation n) ≤
+          (729 * B * E ^ 2) * ((13 + 75 * B) * E ^ 2) :=
+        mul_le_mul hcountFactor hsecond hsecond0 (by positivity)
+      _ = 729 * B * (13 + 75 * B) * E ^ 4 := by ring
+  have hpoly :
+      (2 * (A * (R + 1) ^ 2)) / (R / 4) +
+          (A * (2 * R + 1) ^ 2 / Real.log 2) *
+            (2 / R + 1 / spectralBoundarySeparation n) ≤
+        (392 * A + 729 * B * (13 + 75 * B)) * E ^ 4 := by
+    calc
+      (2 * (A * (R + 1) ^ 2)) / (R / 4) +
+          (A * (2 * R + 1) ^ 2 / Real.log 2) *
+            (2 / R + 1 / spectralBoundarySeparation n) ≤
+          392 * A * E ^ 2 +
+            729 * B * (13 + 75 * B) * E ^ 4 :=
+        add_le_add hresidual hcanonical
+      _ ≤ 392 * A * E ^ 4 +
+          729 * B * (13 + 75 * B) * E ^ 4 := by
+        exact add_le_add
+          (mul_le_mul_of_nonneg_left hE2E4 (by positivity)) le_rfl
+      _ = (392 * A + 729 * B * (13 + 75 * B)) * E ^ 4 := by ring
+  have hEpow : E ^ 4 = Real.exp (4 * T) := by
+    simpa [E] using (Real.exp_nat_mul T 4).symm
+  simpa [R, T, B, hEpow] using hpoly
+
+/-- Xi's logarithmic derivative satisfies the exponential bound required by
+the Gaussian vertical-decay theorem.  This discharges the last analytic
+predicate that had previously been left as an assumption. -/
+theorem xiSpectralVerticalLogDerivativeExponentialBound :
+    XiSpectralVerticalLogDerivativeExponentialBound := by
+  rcases riemannXi_quadraticGrowth with ⟨A, hA, hbound⟩
+  let B := A / Real.log 2
+  let C := 392 * A + 729 * B * (13 + 75 * B)
+  have hA0 : 0 ≤ A := by linarith
+  have hB : 0 ≤ B := by
+    dsimp [B]
+    exact div_nonneg hA0 (Real.log_pos (by norm_num)).le
+  have hC : 0 ≤ C := by dsimp [C]; positivity
+  apply xiSpectralVerticalLogDerivativeExponentialBound_of_quantitative
+    (C := C) (A := 4) hC
+  intro n y hylo hyhi
+  calc
+    ‖xiSpectralNegativeLogDerivative
+        ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+          (y : ℂ) * Complex.I)‖ =
+        ‖logDeriv riemannXi
+          (completedSpectralCoordinate
+            ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+              (y : ℂ) * Complex.I))‖ :=
+      norm_xiSpectralNegativeLogDerivative _
+    _ ≤ (2 * (A * (xiCanonicalRadius n + 1) ^ 2)) /
+          (xiCanonicalRadius n / 4) +
+        (A * (2 * xiCanonicalRadius n + 1) ^ 2 / Real.log 2) *
+          (2 / xiCanonicalRadius n +
+            1 / spectralBoundarySeparation n) :=
+      norm_logDeriv_riemannXi_quantitativeCompletedCoordinate_le_of_growth
+        hA hbound n hylo hyhi
+    _ ≤ C * Real.exp
+        (4 * quantitativeSpectralBoundaryTruncation n) := by
+      simpa [C, B] using explicit_logDeriv_bound_le_exponential hA hbound n
 
 end
 
