@@ -253,6 +253,14 @@ What is checked here:
   normalization; for separable `A`, the quotient polynomials indexed by all
   complex roots are linearly independent, and that root index set is proved
   to have cardinality `A.natDegree`;
+- the finite algebraic model spaces for the rational factors `S` and `B` as
+  numerator spaces of degree below their denominators: Lean proves their
+  exact dimensions, constructs canonical polynomial coordinates for every
+  `S`- and `B`-difference quotient, and identifies their evaluations with the
+  normalized positive and negative zero-vector splits; after clearing the
+  common denominator, the coordinate pair reconstructs the original
+  Lagrange quotient exactly, which proves that the root-coefficient-to-pair
+  map is a complex-linear isomorphism rather than just a dimension count;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -278,9 +286,9 @@ What is not yet checked here:
   RH-strength.
 - the remaining analytic finite-polynomial realization of the checked
   abstract Gram--Weil block theorem: constancy and evaluation of the
-  upper-half-plane root count along the just-defined homotopy, model-space
-  membership and the coefficient-to-pair isomorphism beyond the checked
-  kernel and linearly-independent zero-vector splits,
+  upper-half-plane root count along the just-defined homotopy, the analytic
+  half-plane Hardy/model-space inner products corresponding to the now-checked
+  algebraic coordinate spaces,
   injectivity/strict contraction of its cross-angle operator,
   and the spectral theorem counting all `±sqrt(1-s_j^2)` pencil modes are not
   yet formalized beyond the checked scalar and analytic one-pair cases. Nor is any
