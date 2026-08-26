@@ -74,7 +74,13 @@ What is checked here:
   canonical symmetric Gaussian `HasSum`, construction of a zero-free
   truncation in every interval `(n,n+1)`, convergence of the horizontal safe
   lines, and an exact reduction of the explicit-formula identification to
-  decay of one right vertical-side integral along those truncations;
+  decay of one right vertical-side integral along an arbitrary admissible
+  truncation sequence;
+- a quantitative contour interface that existentially selects the admissible
+  sequence (so it may be kept away from zeros), together with a proof that any
+  fixed exponential bound for the xi logarithmic derivative on those contours
+  is overwhelmed by the Gaussian and therefore gives the required vertical
+  decay at every positive width;
 - a single explicit predicate,
   `GaussianArithmeticExplicitFormulaIdentified`, isolating equality of that
   convergent arithmetic expression with the canonical symmetric zero sum;
@@ -86,9 +92,12 @@ What is checked here:
 
 What is not yet checked here:
 
-- decay of the right vertical xi contour along the selected zero-free
-  truncations; this is now the isolated infinite-height estimate needed to
-  prove `GaussianArithmeticExplicitFormulaIdentified` (the horizontal limit,
+- construction of quantitatively zero-separated truncation contours and the
+  resulting exponential bound for the xi logarithmic derivative from the
+  checked quadratic xi growth and zero-counting estimates; this is now the
+  isolated infinite-height input needed to prove
+  `GaussianArithmeticExplicitFormulaIdentified` (Lean already proves that
+  such a bound kills the vertical contours, while the horizontal limit,
   canonical zero-sum limit, analytic digamma convergence, and finite residue
   identity are checked, but the prime/zero equality is not);
 - the fixed-point integration loops mirrored by the Python certificates;

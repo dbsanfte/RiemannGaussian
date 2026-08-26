@@ -1970,9 +1970,59 @@ theorem tendsto_intervalIntegral_gaussianXiSpectralIntegrand_lower
     (integrable_gaussianXiSpectralIntegrand_lower_safeLine hε t)
     tendsto_neg_atTop_atBot tendsto_id
 
-/-- The infinite xi divisor formula now reduces to one explicit analytic
-estimate: decay of the right vertical integral along the fixed admissible
-truncations. -/
+/-- The infinite xi divisor formula may be taken to the limit along any
+nonnegative zero-free truncation sequence tending to infinity.  Thus the
+remaining analytic input can choose quantitatively well-separated contours,
+rather than being tied to an arbitrary zero-free choice. -/
+theorem integral_gaussianXiSpectralIntegrand_lower_eq_canonical_of_admissible_vertical_tendsto
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) (T : ℕ → ℝ)
+    (hTnonneg : ∀ n, 0 ≤ T n)
+    (hTtop : Tendsto T atTop atTop)
+    (hTboundary : ∀ (n : ℕ) (ρ : NontrivialZetaZero),
+      |(zetaSpectralCoordinate ρ.1).re| ≠ T n)
+    (hvertical : Tendsto
+      (fun n : ℕ => ∫ y : ℝ in (-1 : ℝ)..1,
+        gaussianXiSpectralIntegrand ε t
+          ((T n : ℂ) + (y : ℂ) * Complex.I))
+      atTop (𝓝 0)) :
+    (∫ x : ℝ,
+        gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I)) =
+      -(((Real.pi : ℝ) : ℂ)) *
+        (canonicalZetaSymmetricGaussianZeroSum ε t : ℂ) := by
+  have hlower :=
+    (tendsto_intervalIntegral_gaussianXiSpectralIntegrand_lower hε t).comp
+      hTtop
+  have hleft : Tendsto
+      (fun n : ℕ =>
+        (∫ x : ℝ in -T n..T n,
+          gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I)) +
+        Complex.I * (∫ y : ℝ in (-1 : ℝ)..1,
+          gaussianXiSpectralIntegrand ε t
+            ((T n : ℂ) + (y : ℂ) * Complex.I)))
+      atTop
+      (𝓝 (∫ x : ℝ,
+        gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I))) := by
+    simpa using hlower.add (tendsto_const_nhds.mul hvertical)
+  have hzeroSum :=
+    (tendsto_gaussianXiWindowZeroSum ε t hε).comp
+      hTtop
+  have hright : Tendsto
+      (fun n : ℕ =>
+        -(((Real.pi : ℝ) : ℂ)) *
+          gaussianXiWindowZeroSum ε t (T n))
+      atTop
+      (𝓝 (-(((Real.pi : ℝ) : ℂ)) *
+        (canonicalZetaSymmetricGaussianZeroSum ε t : ℂ))) :=
+    tendsto_const_nhds.mul hzeroSum
+  have hrightAsLeft := hright.congr' (Filter.Eventually.of_forall fun n => by
+    symm
+    apply intervalIntegral_gaussianXiSpectralIntegrand_lower_add_vertical
+    · exact hTnonneg n
+    · exact hTboundary n)
+  exact tendsto_nhds_unique hleft hrightAsLeft
+
+/-- Specialization of the generic contour-limit theorem to the fixed
+zero-free truncations selected above. -/
 theorem integral_gaussianXiSpectralIntegrand_lower_eq_canonical_of_vertical_tendsto
     {ε : ℝ} (hε : 0 < ε) (t : ℝ)
     (hvertical : Tendsto
@@ -1985,40 +2035,42 @@ theorem integral_gaussianXiSpectralIntegrand_lower_eq_canonical_of_vertical_tend
         gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I)) =
       -(((Real.pi : ℝ) : ℂ)) *
         (canonicalZetaSymmetricGaussianZeroSum ε t : ℂ) := by
-  have hlower :=
-    (tendsto_intervalIntegral_gaussianXiSpectralIntegrand_lower hε t).comp
-      tendsto_spectralBoundaryTruncation_atTop
-  have hleft : Tendsto
-      (fun n : ℕ =>
-        (∫ x : ℝ in -spectralBoundaryTruncation n..
-            spectralBoundaryTruncation n,
-          gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I)) +
-        Complex.I * (∫ y : ℝ in (-1 : ℝ)..1,
-          gaussianXiSpectralIntegrand ε t
-            ((spectralBoundaryTruncation n : ℂ) +
-              (y : ℂ) * Complex.I)))
-      atTop
-      (𝓝 (∫ x : ℝ,
-        gaussianXiSpectralIntegrand ε t ((x : ℂ) - Complex.I))) := by
-    simpa using hlower.add (tendsto_const_nhds.mul hvertical)
-  have hzeroSum :=
-    (tendsto_gaussianXiWindowZeroSum ε t hε).comp
-      tendsto_spectralBoundaryTruncation_atTop
-  have hright : Tendsto
-      (fun n : ℕ =>
-        -(((Real.pi : ℝ) : ℂ)) *
-          gaussianXiWindowZeroSum ε t (spectralBoundaryTruncation n))
-      atTop
-      (𝓝 (-(((Real.pi : ℝ) : ℂ)) *
-        (canonicalZetaSymmetricGaussianZeroSum ε t : ℂ))) :=
-    tendsto_const_nhds.mul hzeroSum
-  have hrightAsLeft := hright.congr' (Filter.Eventually.of_forall fun n => by
-    symm
-    apply intervalIntegral_gaussianXiSpectralIntegrand_lower_add_vertical
-    · exact (Nat.cast_nonneg n).trans
-        (spectralBoundaryTruncation_spec n).1.le
-    · exact (spectralBoundaryTruncation_spec n).2.2)
-  exact tendsto_nhds_unique hleft hrightAsLeft
+  apply
+    integral_gaussianXiSpectralIntegrand_lower_eq_canonical_of_admissible_vertical_tendsto
+      hε t spectralBoundaryTruncation
+  · intro n
+    exact (Nat.cast_nonneg n).trans
+      (spectralBoundaryTruncation_spec n).1.le
+  · exact tendsto_spectralBoundaryTruncation_atTop
+  · intro n ρ
+    exact (spectralBoundaryTruncation_spec n).2.2 ρ
+  · exact hvertical
+
+/-- The arithmetic/canonical explicit formula follows from vertical decay
+along any admissible truncation sequence. -/
+theorem gaussianArithmeticExplicitFormula_eq_canonical_of_admissible_vertical_tendsto
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) (T : ℕ → ℝ)
+    (hTnonneg : ∀ n, 0 ≤ T n)
+    (hTtop : Tendsto T atTop atTop)
+    (hTboundary : ∀ (n : ℕ) (ρ : NontrivialZetaZero),
+      |(zetaSpectralCoordinate ρ.1).re| ≠ T n)
+    (hvertical : Tendsto
+      (fun n : ℕ => ∫ y : ℝ in (-1 : ℝ)..1,
+        gaussianXiSpectralIntegrand ε t
+          ((T n : ℂ) + (y : ℂ) * Complex.I))
+      atTop (𝓝 0)) :
+    gaussianArithmeticExplicitFormula ε t =
+      canonicalZetaSymmetricGaussianZeroSum ε t := by
+  have harithmetic :=
+    integral_negLogDeriv_riemannXi_safeLine_eq_arithmetic hε t
+  have hcanonical :=
+    integral_gaussianXiSpectralIntegrand_lower_eq_canonical_of_admissible_vertical_tendsto
+      hε t T hTnonneg hTtop hTboundary hvertical
+  simp_rw [gaussianXiSpectralIntegrand_lower_safeLine] at hcanonical
+  have heq := harithmetic.symm.trans hcanonical
+  have hre := congrArg Complex.re heq
+  norm_num at hre
+  nlinarith [Real.pi_pos]
 
 /-- Decay of the selected vertical xi contours gives the desired
 prime/zero explicit-formula equality at the fixed Gaussian parameters. -/
@@ -2032,16 +2084,35 @@ theorem gaussianArithmeticExplicitFormula_eq_canonical_of_vertical_tendsto
       atTop (𝓝 0)) :
     gaussianArithmeticExplicitFormula ε t =
       canonicalZetaSymmetricGaussianZeroSum ε t := by
-  have harithmetic :=
-    integral_negLogDeriv_riemannXi_safeLine_eq_arithmetic hε t
-  have hcanonical :=
-    integral_gaussianXiSpectralIntegrand_lower_eq_canonical_of_vertical_tendsto
-      hε t hvertical
-  simp_rw [gaussianXiSpectralIntegrand_lower_safeLine] at hcanonical
-  have heq := harithmetic.symm.trans hcanonical
-  have hre := congrArg Complex.re heq
-  norm_num at hre
-  nlinarith [Real.pi_pos]
+  apply
+    gaussianArithmeticExplicitFormula_eq_canonical_of_admissible_vertical_tendsto
+      hε t spectralBoundaryTruncation
+  · intro n
+    exact (Nat.cast_nonneg n).trans
+      (spectralBoundaryTruncation_spec n).1.le
+  · exact tendsto_spectralBoundaryTruncation_atTop
+  · intro n ρ
+    exact (spectralBoundaryTruncation_spec n).2.2 ρ
+  · exact hvertical
+
+/-- Uniform vertical decay along one admissible truncation sequence proves
+the project-wide explicit-formula identification predicate. -/
+theorem gaussianArithmeticExplicitFormulaIdentified_of_admissible_vertical_tendsto
+    (T : ℕ → ℝ)
+    (hTnonneg : ∀ n, 0 ≤ T n)
+    (hTtop : Tendsto T atTop atTop)
+    (hTboundary : ∀ (n : ℕ) (ρ : NontrivialZetaZero),
+      |(zetaSpectralCoordinate ρ.1).re| ≠ T n)
+    (hvertical : ∀ (ε t : ℝ), 0 < ε → Tendsto
+      (fun n : ℕ => ∫ y : ℝ in (-1 : ℝ)..1,
+        gaussianXiSpectralIntegrand ε t
+          ((T n : ℂ) + (y : ℂ) * Complex.I))
+      atTop (𝓝 0)) :
+    GaussianArithmeticExplicitFormulaIdentified := by
+  intro ε t hε
+  exact
+    gaussianArithmeticExplicitFormula_eq_canonical_of_admissible_vertical_tendsto
+      hε t T hTnonneg hTtop hTboundary (hvertical ε t hε)
 
 /-- Consequently, uniform availability of that one vertical-decay estimate
 proves the project-wide explicit-formula identification predicate. -/
@@ -2056,6 +2127,145 @@ theorem gaussianArithmeticExplicitFormulaIdentified_of_vertical_tendsto
   intro ε t hε
   exact gaussianArithmeticExplicitFormula_eq_canonical_of_vertical_tendsto
     hε t (hvertical ε t hε)
+
+/-! ## A quantitative sufficient condition for vertical decay -/
+
+/-- The symmetric entire Gaussian has the same real Gaussian envelope on
+the complete xi contour strip `-1 ≤ Im z ≤ 1`. -/
+lemma norm_complexSymmetricGaussian_spectral_vertical_le
+    {ε : ℝ} (hε : 0 < ε) (t T y : ℝ)
+    (hylo : -1 ≤ y) (hyhi : y ≤ 1) :
+    ‖complexSymmetricGaussian ε t
+        ((T : ℂ) + (y : ℂ) * Complex.I)‖ ≤
+      archimedeanVerticalGaussianBound ε t T := by
+  have hysq : y ^ 2 ≤ 1 := by nlinarith
+  unfold complexSymmetricGaussian archimedeanVerticalGaussianBound
+  calc
+    ‖complexTranslatedGaussian ε t
+          ((T : ℂ) + (y : ℂ) * Complex.I) +
+        complexTranslatedGaussian ε (-t)
+          ((T : ℂ) + (y : ℂ) * Complex.I)‖ ≤
+        ‖complexTranslatedGaussian ε t
+          ((T : ℂ) + (y : ℂ) * Complex.I)‖ +
+        ‖complexTranslatedGaussian ε (-t)
+          ((T : ℂ) + (y : ℂ) * Complex.I)‖ := norm_add_le _ _
+    _ = Real.exp (ε * y ^ 2 - ε * (T - t) ^ 2) +
+        Real.exp (ε * y ^ 2 - ε * (T + t) ^ 2) := by
+      rw [norm_complexTranslatedGaussian,
+        norm_complexTranslatedGaussian]
+      congr 1 <;> simp <;> ring
+    _ ≤ Real.exp (ε - ε * (T - t) ^ 2) +
+        Real.exp (ε - ε * (T + t) ^ 2) := by
+      gcongr <;>
+        simpa using mul_le_mul_of_nonneg_left hysq hε.le
+
+/-- A negative quadratic Gaussian beats an arbitrary fixed exponential
+bound for the xi logarithmic derivative. -/
+theorem tendsto_archimedeanVerticalGaussianBound_mul_exp
+    {ε : ℝ} (hε : 0 < ε) (t A C : ℝ) :
+    Tendsto
+      (fun T : ℝ => archimedeanVerticalGaussianBound ε t T *
+        (C * Real.exp (A * T)) * 2)
+      atTop (𝓝 0) := by
+  let E₁ : ℝ → ℝ := fun T => Real.exp (ε - ε * (T - t) ^ 2)
+  let E₂ : ℝ → ℝ := fun T => Real.exp (ε - ε * (T + t) ^ 2)
+  have hE₁ : Tendsto (fun T => E₁ T * Real.exp (A * T))
+      atTop (𝓝 0) := by
+    refine (tendsto_exp_neg_quadratic_add_linear_atTop
+      hε t A ε).congr' ?_
+    filter_upwards with T
+    unfold E₁
+    rw [← Real.exp_add]
+    apply congrArg Real.exp
+    ring
+  have hE₂ : Tendsto (fun T => E₂ T * Real.exp (A * T))
+      atTop (𝓝 0) := by
+    refine (tendsto_exp_neg_quadratic_add_linear_atTop
+      hε (-t) A ε).congr' ?_
+    filter_upwards with T
+    unfold E₂
+    rw [← Real.exp_add]
+    apply congrArg Real.exp
+    ring
+  have hsum := (hE₁.mul_const (C * 2)).add (hE₂.mul_const (C * 2))
+  have hsum' : Tendsto
+      (fun T => E₁ T * Real.exp (A * T) * (C * 2) +
+        E₂ T * Real.exp (A * T) * (C * 2))
+      atTop (𝓝 0) := by simpa using hsum
+  refine hsum'.congr' ?_
+  filter_upwards with T
+  unfold E₁ E₂ archimedeanVerticalGaussianBound
+  ring
+
+/-- A standard finite-order logarithmic-derivative estimate on some
+admissible sequence of zero-free contours.  The existential choice is
+essential: an arbitrary zero-free line may pass arbitrarily close to a zero.
+Proving this predicate from xi quadratic growth and zero counting is the
+remaining analytic task. -/
+def XiSpectralVerticalLogDerivativeExponentialBound : Prop :=
+  ∃ T : ℕ → ℝ,
+    Tendsto T atTop atTop ∧
+    (∀ n, 0 ≤ T n) ∧
+    (∀ (n : ℕ) (ρ : NontrivialZetaZero),
+      |(zetaSpectralCoordinate ρ.1).re| ≠ T n) ∧
+  ∃ C A : ℝ, 0 ≤ C ∧
+    ∀ (n : ℕ) (y : ℝ), -1 ≤ y → y ≤ 1 →
+      ‖xiSpectralNegativeLogDerivative
+          ((T n : ℂ) + (y : ℂ) * Complex.I)‖ ≤
+        C * Real.exp (A * T n)
+
+/-- Any fixed exponential bound for the logarithmic derivative on those
+contours implies the required vertical integral decay for every positive
+Gaussian width. -/
+theorem tendsto_gaussianXiSpectralIntegrand_right_vertical_of_exponentialBound
+    {ε : ℝ} (hε : 0 < ε) (t C A : ℝ) (T : ℕ → ℝ)
+    (hTtop : Tendsto T atTop atTop)
+    (hlog : ∀ (n : ℕ) (y : ℝ), -1 ≤ y → y ≤ 1 →
+      ‖xiSpectralNegativeLogDerivative
+          ((T n : ℂ) + (y : ℂ) * Complex.I)‖ ≤
+        C * Real.exp (A * T n)) :
+    Tendsto
+      (fun n : ℕ => ∫ y : ℝ in (-1 : ℝ)..1,
+        gaussianXiSpectralIntegrand ε t
+          ((T n : ℂ) + (y : ℂ) * Complex.I))
+      atTop (𝓝 0) := by
+  have hmajor :=
+    (tendsto_archimedeanVerticalGaussianBound_mul_exp hε t A C).comp
+      hTtop
+  rw [tendsto_zero_iff_norm_tendsto_zero]
+  apply squeeze_zero
+  · intro n
+    exact norm_nonneg _
+  · intro n
+    apply intervalIntegral.norm_integral_le_of_norm_le_const
+      (C := archimedeanVerticalGaussianBound ε t
+          (T n) * (C * Real.exp (A * T n)))
+    intro y hy
+    rw [uIoc_of_le (by norm_num)] at hy
+    unfold gaussianXiSpectralIntegrand
+    rw [norm_mul]
+    exact mul_le_mul
+      (norm_complexSymmetricGaussian_spectral_vertical_le
+        hε t (T n) y hy.1.le hy.2)
+      (hlog n y hy.1.le hy.2)
+      (norm_nonneg _)
+      (archimedeanVerticalGaussianBound_nonneg _ _ _)
+  · convert hmajor using 1 <;> norm_num [Function.comp_def]
+
+/-- The classical-type exponential logarithmic-derivative bound is
+sufficient for the full arithmetic/canonical explicit formula. -/
+theorem gaussianArithmeticExplicitFormulaIdentified_of_logDerivativeExponentialBound
+    (hbound : XiSpectralVerticalLogDerivativeExponentialBound) :
+    GaussianArithmeticExplicitFormulaIdentified := by
+  rcases hbound with
+    ⟨T, hTtop, hTnonneg, hTboundary, C, A, _hC, hbound⟩
+  apply
+    gaussianArithmeticExplicitFormulaIdentified_of_admissible_vertical_tendsto
+      T hTnonneg hTtop hTboundary
+  intro ε t hε
+  exact
+    tendsto_gaussianXiSpectralIntegrand_right_vertical_of_exponentialBound
+      hε t C A T hTtop hbound
 
 theorem integrable_gaussianXiSpectralIntegrand_upper_safeLine
     {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
