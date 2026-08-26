@@ -391,6 +391,98 @@ theorem transportMomentDominance_nonnegative
     nonnegativeLegendrePotential_anti_mono hmoment hbdd
   linarith
 
+/-! ## Suzuki's smooth curvature -/
+
+/-- The small curvature removed from the pure exponential model in the
+smooth part of Suzuki's screw function. -/
+def suzukiMissingCurvature (t : ℝ) : ℝ :=
+  Real.exp (-(5 * t) / 2) / (1 - Real.exp (-2 * t))
+
+/-- Smooth curvature between the von-Mangoldt slope jumps. -/
+def suzukiSmoothCurvature (t : ℝ) : ℝ :=
+  Real.exp (t / 2) - suzukiMissingCurvature t
+
+lemma one_sub_exp_neg_two_mul_pos {t : ℝ} (ht : 0 < t) :
+    0 < 1 - Real.exp (-2 * t) := by
+  have hexp : Real.exp (-2 * t) < 1 :=
+    Real.exp_lt_one_iff.mpr (by linarith)
+  linarith
+
+theorem suzukiMissingCurvature_pos {t : ℝ} (ht : 0 < t) :
+    0 < suzukiMissingCurvature t := by
+  unfold suzukiMissingCurvature
+  exact div_pos (Real.exp_pos _) (one_sub_exp_neg_two_mul_pos ht)
+
+/-- The pure exponential approximation lies strictly above the exact smooth
+curvature on the positive half-line.  Consequently its transport gap needs
+an explicit correction budget before it can certify the exact model. -/
+theorem suzukiSmoothCurvature_lt_pureExponential
+    {t : ℝ} (ht : 0 < t) :
+    suzukiSmoothCurvature t < Real.exp (t / 2) := by
+  unfold suzukiSmoothCurvature
+  have hmissing := suzukiMissingCurvature_pos ht
+  linarith
+
+/-- The exact smooth curvature is positive throughout the region used in the
+transport note.  Thus every prime cell there is strictly convex between its
+downward slope jumps. -/
+theorem suzukiSmoothCurvature_pos_of_log_two_le
+    {t : ℝ} (ht : Real.log 2 ≤ t) :
+    0 < suzukiSmoothCurvature t := by
+  have htpos : 0 < t :=
+    (Real.log_pos (by norm_num : (1 : ℝ) < 2)).trans_le ht
+  have hden : 0 < 1 - Real.exp (-2 * t) :=
+    one_sub_exp_neg_two_mul_pos htpos
+  let x : ℝ := Real.exp t
+  have hxpos : 0 < x := Real.exp_pos t
+  have hx2 : 2 ≤ x := by
+    dsimp only [x]
+    calc
+      2 = Real.exp (Real.log 2) :=
+        (Real.exp_log (by norm_num : (0 : ℝ) < 2)).symm
+      _ ≤ Real.exp t := Real.exp_le_exp.mpr ht
+  have hxsq : 4 ≤ x ^ 2 := by
+    have hproduct : 0 ≤ (x - 2) * (x + 2) := by positivity
+    nlinarith
+  have hxcube : 4 * x ≤ x ^ 3 := by
+    have hproduct : 0 ≤ x * (x ^ 2 - 4) := by positivity
+    nlinarith
+  have hxpoly : 1 + x < x ^ 3 := by nlinarith
+  have hleftScale :
+      (Real.exp (-(5 * t) / 2) + Real.exp (-(3 * t) / 2)) *
+          Real.exp ((5 * t) / 2) = 1 + x := by
+    rw [add_mul, ← Real.exp_add, ← Real.exp_add]
+    dsimp only [x]
+    congr 1 <;> ring_nf
+    simp
+  have hrightScale :
+      Real.exp (t / 2) * Real.exp ((5 * t) / 2) = x ^ 3 := by
+    rw [← Real.exp_add, ← Real.exp_nat_mul]
+    congr 1
+    ring
+  have hsum :
+      Real.exp (-(5 * t) / 2) + Real.exp (-(3 * t) / 2) <
+        Real.exp (t / 2) := by
+    have hscaled :
+        (Real.exp (-(5 * t) / 2) + Real.exp (-(3 * t) / 2)) *
+            Real.exp ((5 * t) / 2) <
+          Real.exp (t / 2) * Real.exp ((5 * t) / 2) := by
+      rw [hleftScale, hrightScale]
+      exact hxpoly
+    exact lt_of_mul_lt_mul_right hscaled
+      (Real.exp_pos ((5 * t) / 2)).le
+  have hproductExp :
+      Real.exp (t / 2) * Real.exp (-2 * t) =
+        Real.exp (-(3 * t) / 2) := by
+    rw [← Real.exp_add]
+    congr 1
+    ring
+  unfold suzukiSmoothCurvature suzukiMissingCurvature
+  rw [sub_pos]
+  apply (div_lt_iff₀ hden).2
+  rw [mul_sub, mul_one, hproductExp]
+  linarith
+
 /-! ## The actual von-Mangoldt event schedule -/
 
 /-- Enumerate every integer `n ≥ 2`; non-prime-powers simply have zero

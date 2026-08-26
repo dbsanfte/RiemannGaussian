@@ -128,9 +128,11 @@ What is checked here:
   frozen infimum barriers;
 - specialization of that reduction to the complete Suzuki von-Mangoldt event
   schedule `log (n + 2)` with weights `Lambda(n + 2) / sqrt(n + 2)`, including
-  local finiteness and coverage of every center; and the order-theoretic
-  Legendre transport comparison, stated correctly as a sufficient condition
-  while retaining the exact positive base-margin obligation;
+  local finiteness and coverage of every center; positivity of the exact
+  smooth curvature beyond `log 2` and its strict comparison with the pure
+  exponential approximation; and the order-theoretic Legendre transport
+  comparison, stated correctly as a sufficient condition while retaining the
+  exact positive base-margin obligation;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
