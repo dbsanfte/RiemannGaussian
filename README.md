@@ -182,6 +182,12 @@ What is checked here:
   atomic prime energy minus Suzuki smooth-curvature energy.  The corresponding
   cofinal energy-budget criterion is kernel-checked equivalent to RH; the
   proposition is passed as a hypothesis and is not declared as an axiom;
+- reduction of that transform proposition to the single pointwise identity
+  `QuarterLineDigammaGaussDifferenceFormula`: Lean proves integrability across
+  the density's apparent pole, evaluates the translated-Gaussian cosine
+  transform, verifies the joint kernel is integrable, performs the Fubini
+  exchange, and derives the exact missing-curvature transform from the
+  pointwise Gauss formula;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -204,10 +210,11 @@ What is not yet checked here:
   resulting infinite barrier sequence.  The cumulative transport inequality
   proposed in the research note is stronger than necessary when the verified
   base margin is positive, and proving it globally remains RH-strength.
-- Gauss's integral identity for the digamma function, needed to identify the
-  digamma remainder with Suzuki's positive missing-curvature energy.  This is
-  now the single explicit analytic seam between the checked Gaussian
-  arithmetic frontier and the exact Suzuki smooth-curvature budget.
+- the pointwise quarter-line case of Gauss's integral identity encoded by
+  `QuarterLineDigammaGaussDifferenceFormula`.  This is now the single explicit
+  analytic seam between the checked Gaussian arithmetic frontier and the
+  exact Suzuki smooth-curvature budget; all integrability, Fubini, Gaussian
+  transform, and density-splitting steps downstream of it are checked.
 - a parameter-uniform lower bound for the combined Gaussian prime discrepancy
   plus digamma gain.  Numerical falsification shows that neither term may be
   discarded: they undergo a large cancellation before the very small spectral

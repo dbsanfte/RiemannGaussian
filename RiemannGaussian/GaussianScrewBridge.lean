@@ -26,7 +26,8 @@ integral representation of the digamma function still absent from Mathlib;
 it is a proposition passed explicitly to every theorem that uses it, not an
 axiom.  Under that proposition, the resulting Suzuki energy budget is proved
 equivalent to the arithmetic Gaussian frontier and hence, cofinally in the
-width, to RH.
+width, to RH.  `GaussianDigammaTransform` subsequently reduces this
+proposition to one pointwise quarter-line Gauss difference formula.
 -/
 
 namespace RiemannGaussian

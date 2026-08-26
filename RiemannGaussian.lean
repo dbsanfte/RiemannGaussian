@@ -31,3 +31,4 @@ import RiemannGaussian.GaussianPrimeDiscrepancy
 import RiemannGaussian.GaussianPrimeAbel
 import RiemannGaussian.ScrewTransport
 import RiemannGaussian.GaussianScrewBridge
+import RiemannGaussian.GaussianDigammaTransform
