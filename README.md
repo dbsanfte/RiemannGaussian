@@ -121,6 +121,16 @@ What is checked here:
   cutoff, including its closed signed-sinc form
   `F_prime'(t) = t * sum (q_n(epsilon) * sinc(t * log n))`; this is the
   parameterized low-prime object a uniform argument must control;
+- the abstract frozen-hinge/Legendre reduction suggested by the screw-function
+  attack: every nonnegative-weight frozen regime majorizes the true locally
+  finite hinge model, agrees with it on its event cell, and pointwise
+  nonnegativity is exactly equivalent to nonnegativity of all bounded-below
+  frozen infimum barriers;
+- specialization of that reduction to the complete Suzuki von-Mangoldt event
+  schedule `log (n + 2)` with weights `Lambda(n + 2) / sqrt(n + 2)`, including
+  local finiteness and coverage of every center; and the order-theoretic
+  Legendre transport comparison, stated correctly as a sufficient condition
+  while retaining the exact positive base-margin obligation;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -138,6 +148,11 @@ What is not yet checked here:
 - a uniform positivity mechanism for the growing retained prime block below
   the parameter-dependent cutoff; the new tail theorem shows that this, not
   the infinite high-prime tail, is the scalable obstruction.
+- the analytic identification of the full Suzuki screw function with the new
+  hinge model, boundedness below of its frozen regimes, or nonnegativity of the
+  resulting infinite barrier sequence.  The cumulative transport inequality
+  proposed in the research note is stronger than necessary when the verified
+  base margin is positive, and proving it globally remains RH-strength.
 
 The finite endpoint files are calibration and audit artifacts, not a proposed
 infinite certificate ladder.  Closing the final item requires one
