@@ -84,6 +84,11 @@ current checked state, not a list of conjectural steps.
   disk. Any finite upper-root multiset is partitioned, with multiplicity,
   into outside- and inside-disk parts; the outside contribution is proved
   nonnegative and every negative total budget transfers to the inside core.
+- For an arbitrary finite collection of equal-height, equal-weight pairs,
+  binary hyperbolic-cost superadditivity is lifted to a multiplicity-aware
+  product theorem. With at least two genuine radii, a unit collective pole
+  budget forces their complete product strictly below the exact one-pair
+  threshold.
 
 ### Formal integrity
 
@@ -112,10 +117,11 @@ cumulative-surplus lower bound over all cutoffs.
 
 The Hardy route seeks a structural contradiction from any off-axis xi zero.
 The one-quartet finite theory and its real/Herglotz background are formalized.
-The immediate finite frontier is the weighted hyperbolic optimization for the
-exactly isolated collection of inside-disk pairs, followed by the corresponding
-higher-index determinant theorem. Beyond that lies the genuinely analytic
-passage from finite polynomial models to the entire xi function.
+The equal-height finite hyperbolic optimization is now formalized for arbitrary
+finite collections. The immediate frontier is its unequal-height weighted
+extension for the exactly isolated inside-disk pairs, followed by the
+corresponding higher-index determinant theorem. Beyond that lies the genuinely
+analytic passage from finite polynomial models to the entire xi function.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.

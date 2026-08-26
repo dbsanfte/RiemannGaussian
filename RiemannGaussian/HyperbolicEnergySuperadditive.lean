@@ -63,6 +63,105 @@ theorem pairHyperbolicCost_strictlySuperadditive
         (mul_lt_one_of_nonneg_of_lt_one_left hr.le hr1 hs1.le))
   · exact mul_pos hr hs
 
+/-! ## Arbitrary finite collections -/
+
+/-- A finite product of positive radii at most one is at most one. -/
+theorem positiveMultiset_prod_le_one
+    {radii : Multiset ℝ}
+    (hpos : ∀ r ∈ radii, 0 < r)
+    (hone : ∀ r ∈ radii, r ≤ 1) :
+    radii.prod ≤ 1 := by
+  induction radii using Multiset.induction_on with
+  | empty => simp
+  | cons r s ih =>
+      rw [Multiset.prod_cons]
+      exact mul_le_one₀ (hone r (by simp))
+        (Multiset.prod_pos fun u hu => hpos u (by simp [hu])).le
+        (ih
+          (fun u hu => hpos u (by simp [hu]))
+          (fun u hu => hone u (by simp [hu])))
+
+/-- A nonempty finite product of genuine interior radii is strictly below
+one. -/
+theorem positiveMultiset_prod_lt_one_of_nonempty
+    {radii : Multiset ℝ} (hne : radii ≠ 0)
+    (hpos : ∀ r ∈ radii, 0 < r)
+    (hone : ∀ r ∈ radii, r < 1) :
+    radii.prod < 1 := by
+  induction radii using Multiset.induction_on with
+  | empty => exact False.elim (hne rfl)
+  | cons r s _ =>
+      rw [Multiset.prod_cons]
+      exact mul_lt_one_of_nonneg_of_lt_one_left
+        (hpos r (by simp)).le (hone r (by simp))
+        (positiveMultiset_prod_le_one
+          (fun u hu => hpos u (by simp [hu]))
+          (fun u hu => (hone u (by simp [hu])).le))
+
+/-- N-ary multiplicative superadditivity: the cost of the product dominates
+the sum of all equal-height, equal-weight pair costs. -/
+theorem pairHyperbolicCost_multiset_sum_le_cost_prod
+    {m a : ℝ} (hm : 0 ≤ m) (ha : 0 < a)
+    (radii : Multiset ℝ)
+    (hpos : ∀ r ∈ radii, 0 < r)
+    (hone : ∀ r ∈ radii, r ≤ 1) :
+    (radii.map fun r => pairHyperbolicCost m a r).sum ≤
+      pairHyperbolicCost m a radii.prod := by
+  induction radii using Multiset.induction_on with
+  | empty => simp [pairHyperbolicCost]
+  | cons r s ih =>
+      simp only [Multiset.map_cons, Multiset.sum_cons, Multiset.prod_cons]
+      have hsPos : ∀ u ∈ s, 0 < u :=
+        fun u hu => hpos u (by simp [hu])
+      have hsOne : ∀ u ∈ s, u ≤ 1 :=
+        fun u hu => hone u (by simp [hu])
+      calc
+        pairHyperbolicCost m a r +
+            (s.map fun u => pairHyperbolicCost m a u).sum ≤
+          pairHyperbolicCost m a r +
+            pairHyperbolicCost m a s.prod :=
+          add_le_add_right (ih hsPos hsOne) _
+        _ ≤ pairHyperbolicCost m a (r * s.prod) :=
+          pairHyperbolicCost_superadditive hm ha
+            (hpos r (by simp)) (hone r (by simp))
+            (Multiset.prod_pos hsPos)
+            (positiveMultiset_prod_le_one hsPos hsOne)
+
+/-- With at least two genuine interior radii and positive weight, the n-ary
+superadditivity gain is strict. -/
+theorem pairHyperbolicCost_multiset_sum_lt_cost_prod_of_two_le_card
+    {m a : ℝ} (hm : 0 < m) (ha : 0 < a)
+    (radii : Multiset ℝ) (hcard : 2 ≤ radii.card)
+    (hpos : ∀ r ∈ radii, 0 < r)
+    (hone : ∀ r ∈ radii, r < 1) :
+    (radii.map fun r => pairHyperbolicCost m a r).sum <
+      pairHyperbolicCost m a radii.prod := by
+  induction radii using Multiset.induction_on with
+  | empty => simp at hcard
+  | cons r s _ =>
+      simp only [Multiset.map_cons, Multiset.sum_cons, Multiset.prod_cons]
+      have hsPos : ∀ u ∈ s, 0 < u :=
+        fun u hu => hpos u (by simp [hu])
+      have hsOne : ∀ u ∈ s, u < 1 :=
+        fun u hu => hone u (by simp [hu])
+      have hsNonempty : s ≠ 0 := by
+        intro hs
+        subst s
+        simp at hcard
+      calc
+        pairHyperbolicCost m a r +
+            (s.map fun u => pairHyperbolicCost m a u).sum ≤
+          pairHyperbolicCost m a r +
+            pairHyperbolicCost m a s.prod :=
+          add_le_add_right
+            (pairHyperbolicCost_multiset_sum_le_cost_prod
+              hm.le ha s hsPos fun u hu => (hsOne u hu).le) _
+        _ < pairHyperbolicCost m a (r * s.prod) :=
+          pairHyperbolicCost_strictlySuperadditive hm ha
+            (hpos r (by simp)) (hone r (by simp))
+            (Multiset.prod_pos hsPos)
+            (positiveMultiset_prod_lt_one_of_nonempty hsNonempty hsPos hsOne)
+
 /-- The one-pair radius at which the hyperbolic cost equals one. -/
 def pairHyperbolicThreshold (m a : ℝ) : ℝ :=
   m / (Real.sqrt (m ^ 2 + a ^ 2) + a)
@@ -180,6 +279,22 @@ theorem radius_mul_lt_pairHyperbolicThreshold_of_cost_sum
   apply radius_lt_pairHyperbolicThreshold_of_one_lt_cost hm ha
   exact hcost.trans_lt
     (pairHyperbolicCost_strictlySuperadditive hm ha hr hr1 hs hs1)
+
+/-- N-ary strict threshold consequence.  A unit collective cost across at
+least two genuine interior radii forces their complete product strictly below
+the same exact threshold as in the quartet case. -/
+theorem multiset_prod_lt_pairHyperbolicThreshold_of_cost_sum
+    {m a : ℝ} (hm : 0 < m) (ha : 0 < a)
+    (radii : Multiset ℝ) (hcard : 2 ≤ radii.card)
+    (hpos : ∀ r ∈ radii, 0 < r)
+    (hone : ∀ r ∈ radii, r < 1)
+    (hcost : 1 ≤
+      (radii.map fun r => pairHyperbolicCost m a r).sum) :
+    radii.prod < pairHyperbolicThreshold m a := by
+  apply radius_lt_pairHyperbolicThreshold_of_one_lt_cost hm ha
+  exact hcost.trans_lt
+    (pairHyperbolicCost_multiset_sum_lt_cost_prod_of_two_le_card
+      hm ha radii hcard hpos hone)
 
 /-- Cayley transform of the threshold, used in the final defect estimate. -/
 theorem two_mul_pairHyperbolicThreshold_div_one_add_sq
