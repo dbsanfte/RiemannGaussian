@@ -653,6 +653,447 @@ theorem suzukiPrimeHingeModel_nonnegativeOn_tail_iff_canonicalTransportGaps
     (base_le_suzukiTransportMassPoint base hlog)
     (suzukiTransportMassPoint_mass_eq base hlog)
 
+/-! ## Consecutive transport cells
+
+The canonical criterion above is quantified over prefix gaps.  The following
+identities turn those gaps into cumulative sums of exact one-cell surpluses.
+This is the form needed by a genuinely scalable block argument: individual
+cells may have either sign, while a block can retain a positive cumulative
+margin. -/
+
+/-- The canonical scalar gap at one Suzuki prefix. -/
+def suzukiTransportGap
+    (baseMargin base : ℝ) (hlog : Real.log 2 ≤ base)
+    (cutoff : ℕ) : ℝ :=
+  baseMargin +
+    screwPrefixMoment suzukiPrimeLocation suzukiPrimeWeight cutoff -
+      transportCurvatureMoment suzukiSmoothCurvature base
+        (suzukiTransportMassPoint base hlog cutoff)
+
+/-- The signed barycenter surplus contributed by the curvature cell carrying
+the mass of the next von-Mangoldt atom. -/
+def suzukiTransportCellSurplus
+    (base : ℝ) (hlog : Real.log 2 ≤ base) (cutoff : ℕ) : ℝ :=
+  ∫ s in
+      suzukiTransportMassPoint base hlog cutoff..
+        suzukiTransportMassPoint base hlog (cutoff + 1),
+    (suzukiPrimeLocation cutoff - s) * suzukiSmoothCurvature s
+
+@[simp] theorem screwPrefixMass_succ
+    (weight : ℕ → ℝ) (cutoff : ℕ) :
+    screwPrefixMass weight (cutoff + 1) =
+      screwPrefixMass weight cutoff + weight cutoff := by
+  simp [screwPrefixMass, Finset.sum_range_succ]
+
+@[simp] theorem screwPrefixMoment_succ
+    (location weight : ℕ → ℝ) (cutoff : ℕ) :
+    screwPrefixMoment location weight (cutoff + 1) =
+      screwPrefixMoment location weight cutoff +
+        weight cutoff * location cutoff := by
+  simp [screwPrefixMoment, Finset.sum_range_succ]
+
+/-- The zero-mass quantile is the chosen tail base itself. -/
+@[simp] theorem suzukiTransportMassPoint_zero
+    (base : ℝ) (hlog : Real.log 2 ≤ base) :
+    suzukiTransportMassPoint base hlog 0 = base := by
+  apply (strictlyMonoOn_suzukiTransportCurvatureMass hlog).injOn
+  · exact base_le_suzukiTransportMassPoint base hlog 0
+  · exact le_refl base
+  · rw [suzukiTransportMassPoint_mass_eq]
+    simp [screwPrefixMass]
+
+/-- Adding one nonnegative prime weight can only move the smooth mass
+quantile to the right. -/
+theorem suzukiTransportMassPoint_le_succ
+    (base : ℝ) (hlog : Real.log 2 ≤ base) (cutoff : ℕ) :
+    suzukiTransportMassPoint base hlog cutoff ≤
+      suzukiTransportMassPoint base hlog (cutoff + 1) := by
+  apply le_of_not_gt
+  intro hreverse
+  have hstrict := (strictlyMonoOn_suzukiTransportCurvatureMass hlog)
+    (base_le_suzukiTransportMassPoint base hlog (cutoff + 1))
+    (base_le_suzukiTransportMassPoint base hlog cutoff) hreverse
+  rw [suzukiTransportMassPoint_mass_eq,
+    suzukiTransportMassPoint_mass_eq, screwPrefixMass_succ] at hstrict
+  have hweight := suzukiPrimeWeight_nonnegative cutoff
+  linarith
+
+/-- The smooth curvature mass of one canonical cell is exactly the new
+von-Mangoldt weight. -/
+theorem integral_suzukiSmoothCurvature_transportCell
+    (base : ℝ) (hlog : Real.log 2 ≤ base) (cutoff : ℕ) :
+    (∫ s in
+        suzukiTransportMassPoint base hlog cutoff..
+          suzukiTransportMassPoint base hlog (cutoff + 1),
+      suzukiSmoothCurvature s) = suzukiPrimeWeight cutoff := by
+  let r := suzukiTransportMassPoint base hlog cutoff
+  let r' := suzukiTransportMassPoint base hlog (cutoff + 1)
+  have hr : base ≤ r := base_le_suzukiTransportMassPoint base hlog cutoff
+  have hr' : base ≤ r' :=
+    base_le_suzukiTransportMassPoint base hlog (cutoff + 1)
+  have hcontinuous :
+      ContinuousOn suzukiSmoothCurvature (Set.Ici base) :=
+    continuousOn_suzukiSmoothCurvature_Ioi.mono (by
+      intro t ht
+      exact (Real.log_pos (by norm_num : (1 : ℝ) < 2)).trans_le
+        (hlog.trans ht))
+  have hc_base_r := intervalIntegrable_of_continuousOn_Ici
+    hcontinuous (le_refl base) hr
+  have hc_r_r' := intervalIntegrable_of_continuousOn_Ici
+    hcontinuous hr hr'
+  have hsplit :
+      transportCurvatureMass suzukiSmoothCurvature base r' =
+        transportCurvatureMass suzukiSmoothCurvature base r +
+          ∫ s in r..r', suzukiSmoothCurvature s := by
+    unfold transportCurvatureMass
+    exact (intervalIntegral.integral_add_adjacent_intervals
+      hc_base_r hc_r_r').symm
+  change (∫ s in r..r', suzukiSmoothCurvature s) = _
+  rw [suzukiTransportMassPoint_mass_eq,
+    suzukiTransportMassPoint_mass_eq, screwPrefixMass_succ] at hsplit
+  linarith
+
+/-- The first curvature moment also splits exactly across consecutive
+canonical mass cells. -/
+theorem transportCurvatureMoment_suzukiTransportMassPoint_succ
+    (base : ℝ) (hlog : Real.log 2 ≤ base) (cutoff : ℕ) :
+    transportCurvatureMoment suzukiSmoothCurvature base
+        (suzukiTransportMassPoint base hlog (cutoff + 1)) =
+      transportCurvatureMoment suzukiSmoothCurvature base
+          (suzukiTransportMassPoint base hlog cutoff) +
+        ∫ s in
+          suzukiTransportMassPoint base hlog cutoff..
+            suzukiTransportMassPoint base hlog (cutoff + 1),
+          s * suzukiSmoothCurvature s := by
+  let r := suzukiTransportMassPoint base hlog cutoff
+  let r' := suzukiTransportMassPoint base hlog (cutoff + 1)
+  have hr : base ≤ r := base_le_suzukiTransportMassPoint base hlog cutoff
+  have hr' : base ≤ r' :=
+    base_le_suzukiTransportMassPoint base hlog (cutoff + 1)
+  have hcontinuous :
+      ContinuousOn suzukiSmoothCurvature (Set.Ici base) :=
+    continuousOn_suzukiSmoothCurvature_Ioi.mono (by
+      intro t ht
+      exact (Real.log_pos (by norm_num : (1 : ℝ) < 2)).trans_le
+        (hlog.trans ht))
+  have hj_base_r := intervalIntegrable_moment_of_continuousOn_Ici
+    hcontinuous (le_refl base) hr
+  have hj_r_r' := intervalIntegrable_moment_of_continuousOn_Ici
+    hcontinuous hr hr'
+  unfold transportCurvatureMoment
+  exact (intervalIntegral.integral_add_adjacent_intervals
+    hj_base_r hj_r_r').symm
+
+/-- One cell surplus is its atomic first moment minus the corresponding
+smooth first moment. -/
+theorem suzukiTransportCellSurplus_eq
+    (base : ℝ) (hlog : Real.log 2 ≤ base) (cutoff : ℕ) :
+    suzukiTransportCellSurplus base hlog cutoff =
+      suzukiPrimeWeight cutoff * suzukiPrimeLocation cutoff -
+        ∫ s in
+          suzukiTransportMassPoint base hlog cutoff..
+            suzukiTransportMassPoint base hlog (cutoff + 1),
+          s * suzukiSmoothCurvature s := by
+  let r := suzukiTransportMassPoint base hlog cutoff
+  let r' := suzukiTransportMassPoint base hlog (cutoff + 1)
+  have hr : base ≤ r := base_le_suzukiTransportMassPoint base hlog cutoff
+  have hr' : base ≤ r' :=
+    base_le_suzukiTransportMassPoint base hlog (cutoff + 1)
+  have hcontinuous :
+      ContinuousOn suzukiSmoothCurvature (Set.Ici base) :=
+    continuousOn_suzukiSmoothCurvature_Ioi.mono (by
+      intro t ht
+      exact (Real.log_pos (by norm_num : (1 : ℝ) < 2)).trans_le
+        (hlog.trans ht))
+  have hc := intervalIntegrable_of_continuousOn_Ici hcontinuous hr hr'
+  have hj := intervalIntegrable_moment_of_continuousOn_Ici hcontinuous hr hr'
+  have hfun :
+      (fun s : ℝ =>
+        (suzukiPrimeLocation cutoff - s) * suzukiSmoothCurvature s) =
+      fun s : ℝ =>
+        suzukiPrimeLocation cutoff * suzukiSmoothCurvature s -
+          s * suzukiSmoothCurvature s := by
+    funext s
+    ring
+  unfold suzukiTransportCellSurplus
+  change (∫ s in r..r',
+    (suzukiPrimeLocation cutoff - s) * suzukiSmoothCurvature s) = _
+  rw [hfun, intervalIntegral.integral_sub
+    (hc.const_mul (suzukiPrimeLocation cutoff)) hj,
+    intervalIntegral.integral_const_mul,
+    integral_suzukiSmoothCurvature_transportCell]
+  ring
+
+/-- Exact recurrence: the next prefix gap is the old gap plus one signed
+transport-cell surplus. -/
+theorem suzukiTransportGap_succ
+    (baseMargin base : ℝ) (hlog : Real.log 2 ≤ base) (cutoff : ℕ) :
+    suzukiTransportGap baseMargin base hlog (cutoff + 1) =
+      suzukiTransportGap baseMargin base hlog cutoff +
+        suzukiTransportCellSurplus base hlog cutoff := by
+  unfold suzukiTransportGap
+  rw [screwPrefixMoment_succ,
+    transportCurvatureMoment_suzukiTransportMassPoint_succ,
+    suzukiTransportCellSurplus_eq]
+  ring
+
+@[simp] theorem suzukiTransportGap_zero
+    (baseMargin base : ℝ) (hlog : Real.log 2 ≤ base) :
+    suzukiTransportGap baseMargin base hlog 0 = baseMargin := by
+  simp [suzukiTransportGap, screwPrefixMoment]
+
+/-- Every prefix gap is the initial margin plus the cumulative signed cell
+surplus.  This identity retains cancellation between adjacent cells. -/
+theorem suzukiTransportGap_eq_baseMargin_add_sum
+    (baseMargin base : ℝ) (hlog : Real.log 2 ≤ base) (cutoff : ℕ) :
+    suzukiTransportGap baseMargin base hlog cutoff =
+      baseMargin +
+        ∑ n ∈ Finset.range cutoff,
+          suzukiTransportCellSurplus base hlog n := by
+  induction cutoff with
+  | zero => simp
+  | succ cutoff ih =>
+      rw [suzukiTransportGap_succ, ih, Finset.sum_range_succ]
+      ring
+
+/-- Exact block form of the recurrence, starting at an arbitrary prefix.
+This permits collective estimates without expanding the whole earlier
+history of the transport process. -/
+theorem suzukiTransportGap_add_eq_gap_add_sum
+    (baseMargin base : ℝ) (hlog : Real.log 2 ≤ base)
+    (start count : ℕ) :
+    suzukiTransportGap baseMargin base hlog (start + count) =
+      suzukiTransportGap baseMargin base hlog start +
+        ∑ n ∈ Finset.range count,
+          suzukiTransportCellSurplus base hlog (start + n) := by
+  induction count with
+  | zero => simp
+  | succ count ih =>
+      rw [Nat.add_succ, suzukiTransportGap_succ, ih,
+        Finset.sum_range_succ]
+      ring
+
+/-- A cell surplus is trapped between the prime weight times its displacement
+from the two cell endpoints.  This is the rigorous local estimate behind
+blockwise barycenter bounds. -/
+theorem suzukiPrimeWeight_mul_location_sub_massPoint_succ_le_cellSurplus
+    (base : ℝ) (hlog : Real.log 2 ≤ base) (cutoff : ℕ) :
+    suzukiPrimeWeight cutoff *
+        (suzukiPrimeLocation cutoff -
+          suzukiTransportMassPoint base hlog (cutoff + 1)) ≤
+      suzukiTransportCellSurplus base hlog cutoff := by
+  let r := suzukiTransportMassPoint base hlog cutoff
+  let r' := suzukiTransportMassPoint base hlog (cutoff + 1)
+  have hr : base ≤ r := base_le_suzukiTransportMassPoint base hlog cutoff
+  have hr' : base ≤ r' :=
+    base_le_suzukiTransportMassPoint base hlog (cutoff + 1)
+  have hrr' : r ≤ r' := suzukiTransportMassPoint_le_succ base hlog cutoff
+  have hcontinuous :
+      ContinuousOn suzukiSmoothCurvature (Set.Ici base) :=
+    continuousOn_suzukiSmoothCurvature_Ioi.mono (by
+      intro t ht
+      exact (Real.log_pos (by norm_num : (1 : ℝ) < 2)).trans_le
+        (hlog.trans ht))
+  have hc := intervalIntegrable_of_continuousOn_Ici hcontinuous hr hr'
+  have hj := intervalIntegrable_moment_of_continuousOn_Ici hcontinuous hr hr'
+  have hcellInt : IntervalIntegrable
+      (fun s : ℝ =>
+        (suzukiPrimeLocation cutoff - s) * suzukiSmoothCurvature s)
+      MeasureTheory.volume r r' := by
+    have heq :
+        (fun s : ℝ =>
+          (suzukiPrimeLocation cutoff - s) * suzukiSmoothCurvature s) =
+        fun s : ℝ =>
+          suzukiPrimeLocation cutoff * suzukiSmoothCurvature s -
+            s * suzukiSmoothCurvature s := by
+      funext s
+      ring
+    rw [heq]
+    exact (hc.const_mul (suzukiPrimeLocation cutoff)).sub hj
+  have hlowerInt : IntervalIntegrable
+      (fun s : ℝ =>
+        (suzukiPrimeLocation cutoff - r') * suzukiSmoothCurvature s)
+      MeasureTheory.volume r r' :=
+    hc.const_mul (suzukiPrimeLocation cutoff - r')
+  have hmono :
+      (∫ s in r..r',
+          (suzukiPrimeLocation cutoff - r') * suzukiSmoothCurvature s) ≤
+        ∫ s in r..r',
+          (suzukiPrimeLocation cutoff - s) * suzukiSmoothCurvature s := by
+    apply intervalIntegral.integral_mono_on hrr' hlowerInt hcellInt
+    intro s hs
+    apply mul_le_mul_of_nonneg_right
+    · linarith [hs.2]
+    · exact (suzukiSmoothCurvature_pos_of_log_two_le
+        (hlog.trans (hr.trans hs.1))).le
+  change suzukiPrimeWeight cutoff *
+      (suzukiPrimeLocation cutoff - r') ≤ _
+  unfold suzukiTransportCellSurplus
+  change _ ≤ ∫ s in r..r',
+    (suzukiPrimeLocation cutoff - s) * suzukiSmoothCurvature s
+  calc
+    suzukiPrimeWeight cutoff * (suzukiPrimeLocation cutoff - r') =
+        (suzukiPrimeLocation cutoff - r') *
+          (∫ s in r..r', suzukiSmoothCurvature s) := by
+      rw [integral_suzukiSmoothCurvature_transportCell]
+      ring
+    _ = ∫ s in r..r',
+        (suzukiPrimeLocation cutoff - r') * suzukiSmoothCurvature s := by
+      rw [intervalIntegral.integral_const_mul]
+    _ ≤ _ := hmono
+
+theorem suzukiTransportCellSurplus_le_primeWeight_mul_location_sub_massPoint
+    (base : ℝ) (hlog : Real.log 2 ≤ base) (cutoff : ℕ) :
+    suzukiTransportCellSurplus base hlog cutoff ≤
+      suzukiPrimeWeight cutoff *
+        (suzukiPrimeLocation cutoff -
+          suzukiTransportMassPoint base hlog cutoff) := by
+  let r := suzukiTransportMassPoint base hlog cutoff
+  let r' := suzukiTransportMassPoint base hlog (cutoff + 1)
+  have hr : base ≤ r := base_le_suzukiTransportMassPoint base hlog cutoff
+  have hr' : base ≤ r' :=
+    base_le_suzukiTransportMassPoint base hlog (cutoff + 1)
+  have hrr' : r ≤ r' := suzukiTransportMassPoint_le_succ base hlog cutoff
+  have hcontinuous :
+      ContinuousOn suzukiSmoothCurvature (Set.Ici base) :=
+    continuousOn_suzukiSmoothCurvature_Ioi.mono (by
+      intro t ht
+      exact (Real.log_pos (by norm_num : (1 : ℝ) < 2)).trans_le
+        (hlog.trans ht))
+  have hc := intervalIntegrable_of_continuousOn_Ici hcontinuous hr hr'
+  have hj := intervalIntegrable_moment_of_continuousOn_Ici hcontinuous hr hr'
+  have hcellInt : IntervalIntegrable
+      (fun s : ℝ =>
+        (suzukiPrimeLocation cutoff - s) * suzukiSmoothCurvature s)
+      MeasureTheory.volume r r' := by
+    have heq :
+        (fun s : ℝ =>
+          (suzukiPrimeLocation cutoff - s) * suzukiSmoothCurvature s) =
+        fun s : ℝ =>
+          suzukiPrimeLocation cutoff * suzukiSmoothCurvature s -
+            s * suzukiSmoothCurvature s := by
+      funext s
+      ring
+    rw [heq]
+    exact (hc.const_mul (suzukiPrimeLocation cutoff)).sub hj
+  have hupperInt : IntervalIntegrable
+      (fun s : ℝ =>
+        (suzukiPrimeLocation cutoff - r) * suzukiSmoothCurvature s)
+      MeasureTheory.volume r r' :=
+    hc.const_mul (suzukiPrimeLocation cutoff - r)
+  have hmono :
+      (∫ s in r..r',
+          (suzukiPrimeLocation cutoff - s) * suzukiSmoothCurvature s) ≤
+        ∫ s in r..r',
+          (suzukiPrimeLocation cutoff - r) * suzukiSmoothCurvature s := by
+    apply intervalIntegral.integral_mono_on hrr' hcellInt hupperInt
+    intro s hs
+    apply mul_le_mul_of_nonneg_right
+    · linarith [hs.1]
+    · exact (suzukiSmoothCurvature_pos_of_log_two_le
+        (hlog.trans (hr.trans hs.1))).le
+  unfold suzukiTransportCellSurplus
+  change (∫ s in r..r',
+    (suzukiPrimeLocation cutoff - s) * suzukiSmoothCurvature s) ≤ _
+  calc
+    (∫ s in r..r',
+        (suzukiPrimeLocation cutoff - s) * suzukiSmoothCurvature s) ≤
+        ∫ s in r..r',
+          (suzukiPrimeLocation cutoff - r) * suzukiSmoothCurvature s := hmono
+    _ = (suzukiPrimeLocation cutoff - r) *
+        (∫ s in r..r', suzukiSmoothCurvature s) := by
+      rw [intervalIntegral.integral_const_mul]
+    _ = suzukiPrimeWeight cutoff *
+        (suzukiPrimeLocation cutoff - r) := by
+      rw [integral_suzukiSmoothCurvature_transportCell]
+      ring
+
+/-- If the next prime location lies to the right of its complete smooth-mass
+cell, that cell makes a nonnegative contribution.  The converse need not hold
+because the relevant datum is the cell barycenter. -/
+theorem suzukiTransportCellSurplus_nonnegative_of_massPoint_succ_le_location
+    (base : ℝ) (hlog : Real.log 2 ≤ base) (cutoff : ℕ)
+    (hcell : suzukiTransportMassPoint base hlog (cutoff + 1) ≤
+      suzukiPrimeLocation cutoff) :
+    0 ≤ suzukiTransportCellSurplus base hlog cutoff := by
+  unfold suzukiTransportCellSurplus
+  apply intervalIntegral.integral_nonneg
+    (suzukiTransportMassPoint_le_succ base hlog cutoff)
+  intro s hs
+  apply mul_nonneg
+  · exact sub_nonneg.mpr (hs.2.trans hcell)
+  · exact (suzukiSmoothCurvature_pos_of_log_two_le
+      (hlog.trans ((base_le_suzukiTransportMassPoint base hlog cutoff).trans
+        hs.1))).le
+
+/-- If the prime atom lies to the left of the entire smooth cell, its local
+surplus is nonpositive. -/
+theorem suzukiTransportCellSurplus_nonpositive_of_location_le_massPoint
+    (base : ℝ) (hlog : Real.log 2 ≤ base) (cutoff : ℕ)
+    (hcell : suzukiPrimeLocation cutoff ≤
+      suzukiTransportMassPoint base hlog cutoff) :
+    suzukiTransportCellSurplus base hlog cutoff ≤ 0 := by
+  calc
+    suzukiTransportCellSurplus base hlog cutoff ≤
+        suzukiPrimeWeight cutoff *
+          (suzukiPrimeLocation cutoff -
+            suzukiTransportMassPoint base hlog cutoff) :=
+      suzukiTransportCellSurplus_le_primeWeight_mul_location_sub_massPoint
+        base hlog cutoff
+    _ ≤ 0 := mul_nonpos_of_nonneg_of_nonpos
+      (suzukiPrimeWeight_nonnegative cutoff) (sub_nonpos.mpr hcell)
+
+/-- A zero-weight integer contributes no transport cell and no change of
+gap.  Thus the recurrence automatically ignores non-prime-powers. -/
+theorem suzukiTransportMassPoint_succ_eq_of_weight_eq_zero
+    (base : ℝ) (hlog : Real.log 2 ≤ base) (cutoff : ℕ)
+    (hweight : suzukiPrimeWeight cutoff = 0) :
+    suzukiTransportMassPoint base hlog (cutoff + 1) =
+      suzukiTransportMassPoint base hlog cutoff := by
+  apply (strictlyMonoOn_suzukiTransportCurvatureMass hlog).injOn
+  · exact base_le_suzukiTransportMassPoint base hlog (cutoff + 1)
+  · exact base_le_suzukiTransportMassPoint base hlog cutoff
+  · rw [suzukiTransportMassPoint_mass_eq,
+      suzukiTransportMassPoint_mass_eq, screwPrefixMass_succ, hweight,
+      add_zero]
+
+theorem suzukiTransportCellSurplus_eq_zero_of_weight_eq_zero
+    (base : ℝ) (hlog : Real.log 2 ≤ base) (cutoff : ℕ)
+    (hweight : suzukiPrimeWeight cutoff = 0) :
+    suzukiTransportCellSurplus base hlog cutoff = 0 := by
+  unfold suzukiTransportCellSurplus
+  rw [suzukiTransportMassPoint_succ_eq_of_weight_eq_zero
+    base hlog cutoff hweight]
+  simp
+
+/-- Final cumulative-surplus form of the tail frontier.  It is equivalent,
+not merely sufficient: every initial-margin loss must be repaid by the
+collective signed barycenter surplus of the prime cells. -/
+theorem
+    suzukiPrimeHingeModel_nonnegativeOn_tail_iff_cumulativeTransportSurplus
+    (baseMargin base : ℝ) (hlog : Real.log 2 ≤ base) :
+    (∀ t : ℝ, base ≤ t →
+      0 ≤ screwHingeModel
+        (zeroSlopeCurvatureBackground baseMargin base
+          suzukiSmoothCurvature)
+        suzukiPrimeLocation suzukiPrimeWeight t) ↔
+      ∀ cutoff : ℕ,
+        -baseMargin ≤
+          ∑ n ∈ Finset.range cutoff,
+            suzukiTransportCellSurplus base hlog n := by
+  rw [suzukiPrimeHingeModel_nonnegativeOn_tail_iff_canonicalTransportGaps]
+  change (∀ cutoff : ℕ,
+      0 ≤ suzukiTransportGap baseMargin base hlog cutoff) ↔ _
+  constructor
+  · intro hgaps cutoff
+    have hgap := hgaps cutoff
+    rw [suzukiTransportGap_eq_baseMargin_add_sum] at hgap
+    linarith
+  · intro hsums cutoff
+    rw [suzukiTransportGap_eq_baseMargin_add_sum]
+    have hsum := hsums cutoff
+    linarith
+
 end
 
 end RiemannGaussian

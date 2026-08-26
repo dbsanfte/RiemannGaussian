@@ -178,6 +178,14 @@ What is checked here:
   has a unique mass-matching point for every prefix, so tail-model
   nonnegativity is reduced canonically to one transport-moment inequality
   quantified uniformly over all cutoffs;
+- the exact consecutive-cell dynamics of that transport criterion: canonical
+  mass points are monotone, the curvature mass of each cell is exactly the
+  next von-Mangoldt weight, and the next gap equals the old gap plus the
+  signed prime-versus-smooth barycenter surplus.  Prefix and arbitrary-block
+  gaps telescope to cumulative cell surpluses, with sharp endpoint bounds;
+  zero-weight non-prime-powers contribute identically zero.  Consequently the
+  full tail criterion is now equivalent to one cumulative-surplus lower bound
+  at every cutoff, retaining rather than discarding cancellation across cells;
 - the exact Gaussian/Suzuki curvature interface: the quarter-line digamma
   density splits pointwise into the reflected continuous-PNT density plus
   Suzuki's missing curvature; its Gaussian missing-curvature integrand is
@@ -325,9 +333,9 @@ What is not yet checked here:
 - the analytic identification of the full Suzuki screw function with the new
   hinge model, the exact audited initial value/slope normalization, or
   nonnegativity of the resulting canonical infinite transport-gap sequence.
-  Existence and exact evaluation of each individual frozen barrier are now
-  checked, but the single theorem quantified over all cutoffs remains
-  RH-strength.
+  Existence, exact evaluation, and the consecutive/block recurrence of those
+  gaps are now checked, but the cumulative-surplus lower bound quantified over
+  all cutoffs remains RH-strength.
 - the remaining analytic finite-polynomial realization of the checked
   abstract Gram--Weil block theorem: although the rational model spaces now
   embed faithfully as closed subspaces of actual boundary `L²` and their
