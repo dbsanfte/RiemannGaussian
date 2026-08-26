@@ -226,6 +226,12 @@ What is checked here:
   coefficient of `A`; coefficient conjugation exactly interchanges them and
   conjugates their root multisets with multiplicity; and their open
   upper/lower root counts exhaust `A.natDegree`;
+- the corresponding literal upper and lower monic root factors, retaining
+  multiplicity, and the exact reconstruction of `E_tau` as its leading
+  coefficient times those two factors; the conjugate of the upper factor is
+  proved zero-free throughout the open upper half-plane, and its finite
+  Blaschke quotient has equal numerator/denominator degree and norm exactly
+  one at every real point;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -252,7 +258,8 @@ What is not yet checked here:
 - the remaining analytic finite-polynomial realization of the checked
   abstract Gram--Weil block theorem: constancy and evaluation of the
   upper-half-plane root count along the just-defined homotopy, finite
-  Krein--Langer factorization, the model-space
+  Krein--Langer rational cancellation beyond the checked root-factor and
+  Blaschke boundary lemmas, the model-space
   decomposition, injectivity/strict contraction of its cross-angle operator,
   and the spectral theorem counting all `±sqrt(1-s_j^2)` pencil modes are not
   yet formalized beyond the checked scalar and analytic one-pair cases. Nor is any
