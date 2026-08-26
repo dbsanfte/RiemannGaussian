@@ -54,6 +54,38 @@ theorem pairHyperbolicUpperSq_lt_lowerSq
   unfold pairHyperbolicUpperSq pairHyperbolicLowerSq
   nlinarith
 
+/-- Exact factorization exposing the sign of one conjugate-pair imaginary
+energy.  Its only sign-changing factor is the signed squared distance
+`d^2 + v^2 - a^2`. -/
+theorem pairImaginaryEnergy_eq_signedDistance
+    {m d v a : ℝ} (ha : 0 < a) (hv : 0 < v)
+    (hupper : 0 < pairHyperbolicUpperSq d v a) :
+    pairImaginaryEnergy m d v a =
+      2 * m * v * (d ^ 2 + v ^ 2 - a ^ 2) /
+        (pairHyperbolicUpperSq d v a *
+          pairHyperbolicLowerSq d v a) := by
+  have hlower : 0 < pairHyperbolicLowerSq d v a :=
+    pairHyperbolicLowerSq_pos ha hv
+  unfold pairImaginaryEnergy
+  field_simp [hupper.ne', hlower.ne']
+  unfold pairHyperbolicUpperSq pairHyperbolicLowerSq
+  ring
+
+/-- A positive-height conjugate pair contributes nonnegative imaginary energy
+at every upper-half-plane point outside (or on) its Euclidean influence disk.
+-/
+theorem pairImaginaryEnergy_nonneg_of_height_sq_le
+    {m d v a : ℝ} (hm : 0 ≤ m) (ha : 0 < a) (hv : 0 < v)
+    (hupper : 0 < pairHyperbolicUpperSq d v a)
+    (houtside : a ^ 2 ≤ d ^ 2 + v ^ 2) :
+    0 ≤ pairImaginaryEnergy m d v a := by
+  rw [pairImaginaryEnergy_eq_signedDistance ha hv hupper]
+  exact div_nonneg
+    (mul_nonneg
+      (mul_nonneg (mul_nonneg (by positivity) hm) hv.le)
+      (sub_nonneg.mpr houtside))
+    (mul_nonneg hupper.le (pairHyperbolicLowerSq_pos ha hv).le)
+
 theorem pairHyperbolicRadius_sq
     {d v a : ℝ} (ha : 0 < a) (hv : 0 < v) :
     pairHyperbolicRadius d v a ^ 2 =
@@ -315,6 +347,34 @@ theorem onePairLogDerivativeContribution_im
     neg_real_div_add_mul_I_im m (x - c) (v + a) hL]
   unfold pairImaginaryEnergy pairHyperbolicUpperSq pairHyperbolicLowerSq
   ring
+
+/-- Complex-coordinate form of the influence-disk sign criterion. -/
+theorem onePairLogDerivativeContribution_im_nonneg_of_height_sq_le
+    {m : ℝ} (hm : 0 ≤ m) {z alpha : ℂ}
+    (hz : 0 < z.im) (halpha : 0 < alpha.im) (hne : z ≠ alpha)
+    (houtside : alpha.im ^ 2 ≤
+      (z.re - alpha.re) ^ 2 + z.im ^ 2) :
+    0 ≤ (onePairLogDerivativeContribution m alpha z).im := by
+  have hupper : 0 <
+      pairHyperbolicUpperSq (z.re - alpha.re) z.im alpha.im := by
+    rw [show pairHyperbolicUpperSq (z.re - alpha.re) z.im alpha.im =
+        Complex.normSq (z - alpha) by
+      unfold pairHyperbolicUpperSq Complex.normSq
+      simp
+      ring]
+    exact Complex.normSq_pos.mpr (sub_ne_zero.mpr hne)
+  have halphaForm :
+      (alpha.re : ℂ) + Complex.I * (alpha.im : ℂ) = alpha := by
+    rw [mul_comm]
+    exact Complex.re_add_im alpha
+  have hzForm : (z.re : ℂ) + Complex.I * (z.im : ℂ) = z := by
+    rw [mul_comm]
+    exact Complex.re_add_im z
+  rw [← halphaForm, ← hzForm,
+    onePairLogDerivativeContribution_im m alpha.re alpha.im z.re z.im
+      halpha hz hupper]
+  exact pairImaginaryEnergy_nonneg_of_height_sq_le
+    hm halpha hz hupper houtside
 
 /-- Complex form of the universal one-pair inequality from the research
 note. -/

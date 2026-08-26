@@ -373,9 +373,14 @@ What is checked here:
   residual multiset supported on the real axis, Lean identifies the literal
   background exactly with that residual root sum, proves its imaginary part
   nonnegative throughout the upper half-plane, and obtains the same strict
-  determinant bound without a background-sign assumption.  Thus the remaining
-  finite background-sign obstruction is specifically the contribution of
-  additional off-axis residual roots;
+  determinant bound without a background-sign assumption.  Lean now also
+  factors the imaginary contribution of an off-axis conjugate pair: its sign
+  is controlled exactly by the pair's Euclidean influence disk.  Hence the
+  same end-to-end bound is checked for arbitrary real residual roots together
+  with arbitrary conjugate off-axis pairs whose influence disks do not contain
+  the candidate pole.  The remaining finite background-sign obstruction is
+  therefore confined to residual off-axis pairs whose influence disks do
+  contain that pole and which can contribute negatively;
 - the exact root-count bridge behind that degree inequality: conjugation
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
@@ -479,10 +484,12 @@ What is not yet checked here:
   the exact finite root expansion proves this background is zero at natural
   weight in the isolated-quartic case.  For a larger finite approximant whose
   remaining roots are all real, the same root expansion now proves the
-  background sign and the end-to-end determinant estimate.  What remains at
-  the finite frontier is to control the net background contribution from
-  additional off-axis roots (rather than assume its sign), followed by the
-  infinite xi passage;
+  background sign and the end-to-end determinant estimate.  This conclusion
+  now also permits residual conjugate pairs whenever the candidate pole lies
+  outside each pair's explicitly defined influence disk.  What remains at the
+  finite frontier is to control collectively the potentially negative pairs
+  whose influence disks contain the pole (rather than assume their net sign),
+  followed by the infinite xi passage;
   identify the determinant-level product with any separately named
   metric-pencil modes when such modes are required, and pass to the infinite
   xi model.  No claim is made that the auxiliary Euclidean coefficient norm
