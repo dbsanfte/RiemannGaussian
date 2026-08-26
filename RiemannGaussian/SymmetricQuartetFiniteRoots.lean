@@ -1,4 +1,5 @@
 import RiemannGaussian.SymmetricQuartetHardyMetric
+import RiemannGaussian.WeightedHyperbolicEnergy
 
 /-!
 # Exact finite-root expansion for an isolated symmetric quartet
@@ -526,6 +527,89 @@ theorem insideInfluenceDiskRoots_logDerivativeContribution_im_neg
       (halpha alpha (Multiset.mem_of_mem_filter halphaInside))
       (hne alpha (Multiset.mem_of_mem_filter halphaInside))).mpr
   exact (Multiset.mem_filter.mp halphaInside).2
+
+/-- Weighted multi-pair consequence for an exact finite polynomial model.
+At a root of `A + I*eta*A'`, real residual roots contribute nonnegatively, so
+the complete off-axis pair sum has imaginary part at most `-1`.  The exact
+influence-disk partition transfers that budget to its strictly negative core,
+and the unequal-height energy theorem bounds the product of every core radius
+using any common positive lower bound on its heights. -/
+theorem
+    insideInfluenceDiskRootPseudoHyperbolicProduct_lt_threshold_of_finiteE_root
+    {A : ℝ[X]} (hA : A.Separable) {η a0 : ℝ} {z : ℂ}
+    {realResidual upperResidual : Multiset ℂ}
+    (hη : 0 < η) (ha0 : 0 < a0) (hz : 0 < z.im)
+    (hroot : (finiteEPolynomial A η).eval z = 0)
+    (hroots : (A.map Complex.ofRealHom).roots =
+      realResidual + conjugatePairRootMultiset upperResidual)
+    (hreal : ∀ w ∈ realResidual, w.im = 0)
+    (halpha : ∀ alpha ∈ upperResidual, 0 < alpha.im)
+    (hcard : 2 ≤ (insideInfluenceDiskRoots z upperResidual).card)
+    (hminHeight : ∀ alpha ∈ insideInfluenceDiskRoots z upperResidual,
+      a0 ≤ alpha.im) :
+    ((insideInfluenceDiskRoots z upperResidual).map fun alpha =>
+      upperHalfPlanePseudoHyperbolicDistance z alpha).prod <
+        pairHyperbolicThreshold η a0 := by
+  have hAz : A.eval₂ Complex.ofRealHom z ≠ 0 :=
+    finiteE_root_base_eval_ne_zero hA hη.ne' hroot
+  have hpolyNe : A.map Complex.ofRealHom ≠ 0 :=
+    Polynomial.map_ne_zero hA.ne_zero
+  have hne : ∀ alpha ∈ upperResidual, z ≠ alpha := by
+    intro alpha halphaMem heq
+    apply hAz
+    rw [heq]
+    have halphaRoots : alpha ∈ (A.map Complex.ofRealHom).roots := by
+      rw [hroots]
+      simp [conjugatePairRootMultiset, halphaMem]
+    have halphaIsRoot := (Polynomial.mem_roots hpolyNe).mp halphaRoots
+    simpa [Polynomial.IsRoot, Polynomial.eval_map] using halphaIsRoot
+  have hvalue : finiteNegativeLogDerivativeValue A η z = -Complex.I :=
+    (finiteNegativeLogDerivativeValue_eq_neg_I_iff hAz).mpr hroot
+  have hsumAll :
+      (((A.map Complex.ofRealHom).roots.map fun w =>
+        -(η : ℂ) / (z - w)).sum) = -Complex.I := by
+    rw [← finiteNegativeLogDerivativeValue_eq_root_sum hAz]
+    exact hvalue
+  have hdecomp :
+      (realResidual.map fun w => -(η : ℂ) / (z - w)).sum +
+        (upperResidual.map fun alpha =>
+          onePairLogDerivativeContribution η alpha z).sum =
+        -Complex.I := by
+    calc
+      (realResidual.map fun w => -(η : ℂ) / (z - w)).sum +
+          (upperResidual.map fun alpha =>
+            onePairLogDerivativeContribution η alpha z).sum =
+        ((realResidual + conjugatePairRootMultiset upperResidual).map
+          fun w => -(η : ℂ) / (z - w)).sum := by
+            rw [Multiset.map_add, Multiset.sum_add,
+              conjugatePairRootMultiset_logDerivative_sum]
+      _ = (((A.map Complex.ofRealHom).roots.map fun w =>
+          -(η : ℂ) / (z - w)).sum) := by rw [hroots]
+      _ = -Complex.I := hsumAll
+  have hrealNonneg : 0 ≤
+      ((realResidual.map fun w => -(η : ℂ) / (z - w)).sum).im :=
+    residualRootLogDerivativeSum_im_nonneg_of_real hη.le hz hreal
+  have him := congrArg Complex.im hdecomp
+  rw [Complex.add_im] at him
+  simp only [Complex.neg_im, Complex.I_im] at him
+  have hpairSum :
+      ((upperResidual.map fun alpha =>
+        onePairLogDerivativeContribution η alpha z).sum).im ≤ -1 := by
+    linarith
+  have hinsideLe := insideInfluenceDiskRoots_logDerivativeSum_im_le
+    hη.le hz halpha hne
+  have hinsideSum :
+      (((insideInfluenceDiskRoots z upperResidual).map fun alpha =>
+        onePairLogDerivativeContribution η alpha z).sum).im ≤ -1 :=
+    hinsideLe.trans hpairSum
+  apply upperRootPseudoHyperbolicProduct_lt_threshold_of_im_sum
+    hη ha0 hz hcard
+  · intro alpha halphaMem
+    exact halpha alpha (Multiset.mem_of_mem_filter halphaMem)
+  · intro alpha halphaMem
+    exact hne alpha (Multiset.mem_of_mem_filter halphaMem)
+  · exact hminHeight
+  · exact hinsideSum
 
 /-- Exact background positivity for a residual divisor consisting of real
 roots and conjugate off-axis pairs whose influence disks avoid the evaluation

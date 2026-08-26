@@ -89,6 +89,12 @@ current checked state, not a list of conjectural steps.
   product theorem. With at least two genuine radii, a unit collective pole
   budget forces their complete product strictly below the exact one-pair
   threshold.
+- The unequal-height extension is also checked. Replacing all heights by any
+  common positive lower bound dominates the true weighted costs. For an exact
+  finite polynomial root decomposition and a root of `E_eta`, Lean transfers
+  the full unit pole budget past the nonnegative real roots into the
+  inside-disk core and, when that core has at least two members, proves its
+  complete radius product strictly below the corresponding threshold.
 
 ### Formal integrity
 
@@ -117,11 +123,11 @@ cumulative-surplus lower bound over all cutoffs.
 
 The Hardy route seeks a structural contradiction from any off-axis xi zero.
 The one-quartet finite theory and its real/Herglotz background are formalized.
-The equal-height finite hyperbolic optimization is now formalized for arbitrary
-finite collections. The immediate frontier is its unequal-height weighted
-extension for the exactly isolated inside-disk pairs, followed by the
-corresponding higher-index determinant theorem. Beyond that lies the genuinely
-analytic passage from finite polynomial models to the entire xi function.
+The unequal-height finite hyperbolic optimization and its exact-polynomial
+inside-core specialization are now formalized. The immediate frontier is the
+structural selection of that core together with the corresponding higher-index
+Hardy determinant theorem. Beyond that lies the genuinely analytic passage
+from finite polynomial models to the entire xi function.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.

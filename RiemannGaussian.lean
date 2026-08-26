@@ -37,6 +37,7 @@ import RiemannGaussian.SuzukiTransportBarrier
 import RiemannGaussian.SuzukiTransportTail
 import RiemannGaussian.PairHyperbolicEnergy
 import RiemannGaussian.HyperbolicEnergySuperadditive
+import RiemannGaussian.WeightedHyperbolicEnergy
 import RiemannGaussian.SymmetricQuartetEnergy
 import RiemannGaussian.SymmetricPickDisk
 import RiemannGaussian.FiniteBlaschkePick
