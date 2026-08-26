@@ -325,7 +325,16 @@ What is checked here:
   identified in `L²`.  Two distinct such vectors form a basis whenever the
   upper factor has degree two.  Coprimality discharges the residual-factor
   nonvanishing conditions, yielding the concrete root specialization
-  `det(I - C† C) = |S(w₀) * S(w₁)|²` with no distinct-mode hypothesis;
+  `det(I - C† C) = |S(w₀) * S(w₁)|²` with no distinct-mode hypothesis.
+  For two symmetric roots Lean now proves that these roots exhaust the
+  degree-two numerator with multiplicity, identifies its literal Blaschke
+  quotient with the symmetric two-pole product, and derives the two Pick
+  interpolation values from the corresponding roots of `A`.  Composing the
+  actual determinant identity with the separation-free quartet theorem gives
+  the strict checked bound
+  `sqrt(re det(I - C† C)) < m²/(m²+a²)` under the explicit finite root,
+  pole, background, and reflection hypotheses, without selecting or
+  separating individual metric modes;
 - the exact root-count bridge behind that degree inequality: conjugation
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
@@ -415,15 +424,17 @@ What is not yet checked here:
   entrywise with the checked weighted metric pencil, and the concrete ratio
   is now identified basis-independently with `det(I - C† C)` for the actual
   cross angle.  The two Cauchy vectors attached to distinct roots are now
-  proved to form a basis in the degree-two case, and the determinant identity
-  is specialized to those roots.  What remains in the finite quartet chain is
-  to instantiate this theorem with the repository's explicit symmetric-
-  quartet root data and connect its determinant statement to the desired
-  metric-pencil magnitudes.  No claim is made that the auxiliary Euclidean
-  coefficient norm is the Hardy boundary norm.  Spectral completeness for all
+  proved to form a basis in the degree-two case, the determinant identity is
+  specialized to those roots, and the symmetric-quartet estimate is now
+  composed with that actual determinant.  What remains is to derive the
+  finite root/pole/reflection hypotheses from the intended xi approximants,
+  identify the determinant-level product with any separately named
+  metric-pencil modes when such modes are required, and pass to the infinite
+  xi model.  No claim is made that the auxiliary Euclidean coefficient norm
+  is the Hardy boundary norm.  Spectral completeness for all
   `±sqrt(1-s_j^2)` pencil modes is also not yet formalized beyond the checked
-  scalar and analytic one-pair cases. Nor is any infinite-dimensional lift to
-  the xi function; that remains a research program, not an RH proof.
+  scalar and analytic one-pair cases.  Nor is any infinite-dimensional lift
+  to the xi function; that remains a research program, not an RH proof.
 - extension of the now-checked finite-residual symmetric two-node estimate to
   the intended general/infinite inner factor, and its claimed identification
   with the two nonunit Gram--Weil metric-pencil magnitudes.  The exact finite

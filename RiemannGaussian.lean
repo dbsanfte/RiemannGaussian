@@ -64,6 +64,7 @@ import RiemannGaussian.FiniteHardyProjection
 import RiemannGaussian.FiniteHardyResidualGram
 import RiemannGaussian.FiniteHardyMetricDeterminant
 import RiemannGaussian.FiniteHardyCauchyBasis
+import RiemannGaussian.SymmetricQuartetHardyMetric
 import RiemannGaussian.FiniteAlgebraicHilbert
 import RiemannGaussian.FiniteRootCountBridge
 import RiemannGaussian.FiniteERootContinuity
