@@ -117,6 +117,15 @@ What is checked here:
   complete tail beyond `N` is bounded by a fixed summable von-Mangoldt
   `n^(-2)` tail, and Lean proves that comparison tail tends to zero as
   `N → ∞`;
+- the complete integrated prime oscillation energy
+  `sum q_n(epsilon) * (1 - cos(t * log n))`: every summand is nonnegative,
+  every finite analytically chosen block is a rigorous lower bound, and the
+  full energy is exactly the drop in the oscillatory prime contribution;
+- the exact margin-aware energy budget saying that the endpoint value plus
+  prime energy must pay the Archimedean drop.  At one width this is equivalent
+  to full centerwise positivity, and having such widths cofinally is proved
+  equivalent to RH; no assertion that center zero is a global minimum is
+  smuggled into the reduction;
 - exact differentiation of the retained prime block at arbitrary width and
   cutoff, including its closed signed-sinc form
   `F_prime'(t) = t * sum (q_n(epsilon) * sinc(t * log n))`; this is the

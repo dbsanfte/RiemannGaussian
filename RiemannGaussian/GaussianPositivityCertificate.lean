@@ -235,6 +235,187 @@ theorem exists_gaussianPrimeTailCutoff (ε : ℝ) :
     (Real.lt_log_iff_exp_lt hcutoffReal).2 hcutoff
   exact ⟨cutoff, by exact_mod_cast hcutoffReal, hlog.le⟩
 
+/-! ## Positive integrated prime energy -/
+
+/-- The loss of one cosine channel when moving away from center zero.  In
+contrast to the differentiated signed-sinc model, this integrated summand is
+always nonnegative. -/
+def gaussianPrimeOscillationSummand (ε t : ℝ) (n : ℕ) : ℝ :=
+  gaussianPrimeSummand ε 0 n - gaussianPrimeSummand ε t n
+
+theorem gaussianPrimeOscillationSummand_eq
+    (ε t : ℝ) (n : ℕ) :
+    gaussianPrimeOscillationSummand ε t n =
+      (ArithmeticFunction.vonMangoldt n / Real.sqrt n *
+        Real.exp (-(Real.log n) ^ 2 / (4 * ε))) *
+          (1 - Real.cos (t * Real.log n)) := by
+  unfold gaussianPrimeOscillationSummand gaussianPrimeSummand
+  simp only [zero_mul, Real.cos_zero, mul_one]
+  ring
+
+theorem gaussianPrimeOscillationSummand_nonnegative
+    (ε t : ℝ) (n : ℕ) :
+    0 ≤ gaussianPrimeOscillationSummand ε t n := by
+  rw [gaussianPrimeOscillationSummand_eq]
+  exact mul_nonneg (by positivity)
+    (sub_nonneg.mpr (Real.cos_le_one _))
+
+theorem summable_gaussianPrimeOscillationSummand
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    Summable (gaussianPrimeOscillationSummand ε t) := by
+  exact (summable_gaussianPrimeSummand hε 0).sub
+    (summable_gaussianPrimeSummand hε t)
+
+/-- Complete positive prime energy gained by moving from zero to `t`. -/
+def gaussianPrimeOscillationEnergy (ε t : ℝ) : ℝ :=
+  2 / Real.sqrt (Real.pi * ε) *
+    ∑' n : ℕ, gaussianPrimeOscillationSummand ε t n
+
+/-- Energy retained from any analytically selected finite set of prime-power
+channels. -/
+def gaussianPrimePartialOscillationEnergy
+    (ε t : ℝ) (indices : Finset ℕ) : ℝ :=
+  2 / Real.sqrt (Real.pi * ε) *
+    ∑ n ∈ indices, gaussianPrimeOscillationSummand ε t n
+
+theorem gaussianPrimeOscillationEnergy_nonnegative
+    (ε t : ℝ) :
+    0 ≤ gaussianPrimeOscillationEnergy ε t := by
+  unfold gaussianPrimeOscillationEnergy
+  apply mul_nonneg (by positivity)
+  apply tsum_nonneg
+  intro n
+  exact gaussianPrimeOscillationSummand_nonnegative ε t n
+
+theorem gaussianPrimePartialOscillationEnergy_nonnegative
+    (ε t : ℝ) (indices : Finset ℕ) :
+    0 ≤ gaussianPrimePartialOscillationEnergy ε t indices := by
+  unfold gaussianPrimePartialOscillationEnergy
+  apply mul_nonneg (by positivity)
+  apply Finset.sum_nonneg
+  intro n hn
+  exact gaussianPrimeOscillationSummand_nonnegative ε t n
+
+/-- The positive energy is exactly the decrease in the complete oscillatory
+prime contribution. -/
+theorem gaussianPrimeOscillationEnergy_eq_contribution_sub
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    gaussianPrimeOscillationEnergy ε t =
+      gaussianPrimeContribution ε 0 -
+        gaussianPrimeContribution ε t := by
+  unfold gaussianPrimeOscillationEnergy gaussianPrimeOscillationSummand
+    gaussianPrimeContribution gaussianPrimeSum
+  rw [(summable_gaussianPrimeSummand hε 0).tsum_sub
+    (summable_gaussianPrimeSummand hε t)]
+  ring
+
+/-- Every finite prime block gives a rigorous lower bound for the full energy;
+there is no signed cancellation ledger in this comparison. -/
+theorem gaussianPrimePartialOscillationEnergy_le
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) (indices : Finset ℕ) :
+    gaussianPrimePartialOscillationEnergy ε t indices ≤
+      gaussianPrimeOscillationEnergy ε t := by
+  have hsum :
+      (∑ n ∈ indices, gaussianPrimeOscillationSummand ε t n) ≤
+        ∑' n : ℕ, gaussianPrimeOscillationSummand ε t n :=
+    (summable_gaussianPrimeOscillationSummand hε t).sum_le_tsum indices
+      (fun n hn => gaussianPrimeOscillationSummand_nonnegative ε t n)
+  have hfactor : 0 ≤ 2 / Real.sqrt (Real.pi * ε) := by positivity
+  unfold gaussianPrimePartialOscillationEnergy
+    gaussianPrimeOscillationEnergy
+  exact mul_le_mul_of_nonneg_left hsum hfactor
+
+/-- Exact center-difference identity for the full arithmetic expression. -/
+theorem gaussianArithmeticExplicitFormula_eq_endpoint_add_archimedeanDifference_add_primeEnergy
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    gaussianArithmeticExplicitFormula ε t =
+      gaussianArithmeticExplicitFormula ε 0 +
+        (gaussianArchimedeanContribution ε t -
+          gaussianArchimedeanContribution ε 0) +
+            gaussianPrimeOscillationEnergy ε t := by
+  rw [gaussianPrimeOscillationEnergy_eq_contribution_sub hε t]
+  unfold gaussianArithmeticExplicitFormula
+  ring
+
+/-- Margin-aware positive-energy criterion at one center.  The endpoint value
+is retained, so this is an equivalence rather than the stronger assertion
+that center zero must be a global minimum. -/
+theorem gaussianArithmeticExplicitFormula_nonnegative_iff_primeEnergyBudget
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    0 ≤ gaussianArithmeticExplicitFormula ε t ↔
+      gaussianArchimedeanContribution ε 0 -
+          gaussianArchimedeanContribution ε t ≤
+        gaussianArithmeticExplicitFormula ε 0 +
+          gaussianPrimeOscillationEnergy ε t := by
+  rw [gaussianArithmeticExplicitFormula_eq_endpoint_add_archimedeanDifference_add_primeEnergy
+    hε t]
+  constructor <;> intro h <;> linarith
+
+/-- A finite positive prime block suffices whenever it already pays the exact
+Archimedean drop plus endpoint budget. -/
+theorem gaussianArithmeticExplicitFormula_nonnegative_of_partialPrimeEnergyBudget
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) (indices : Finset ℕ)
+    (hbudget :
+      gaussianArchimedeanContribution ε 0 -
+          gaussianArchimedeanContribution ε t ≤
+        gaussianArithmeticExplicitFormula ε 0 +
+          gaussianPrimePartialOscillationEnergy ε t indices) :
+    0 ≤ gaussianArithmeticExplicitFormula ε t := by
+  apply (gaussianArithmeticExplicitFormula_nonnegative_iff_primeEnergyBudget
+    hε t).2
+  have hpartial :=
+    gaussianPrimePartialOscillationEnergy_le hε t indices
+  linarith
+
+/-- One width satisfies the exact positive-energy budget at every center. -/
+def GaussianPrimeEnergyGoodWidth (ε : ℝ) : Prop :=
+  0 < ε ∧
+    ∀ t : ℝ,
+      gaussianArchimedeanContribution ε 0 -
+          gaussianArchimedeanContribution ε t ≤
+        gaussianArithmeticExplicitFormula ε 0 +
+          gaussianPrimeOscillationEnergy ε t
+
+theorem gaussianPrimeEnergyGoodWidth_iff_gaussianArithmeticGoodWidth
+    (ε : ℝ) :
+    GaussianPrimeEnergyGoodWidth ε ↔
+      GaussianArithmeticGoodWidth ε := by
+  constructor
+  · rintro ⟨hε, hbudget⟩
+    exact ⟨hε, fun t =>
+      (gaussianArithmeticExplicitFormula_nonnegative_iff_primeEnergyBudget
+        hε t).2 (hbudget t)⟩
+  · rintro ⟨hε, hnonnegative⟩
+    exact ⟨hε, fun t =>
+      (gaussianArithmeticExplicitFormula_nonnegative_iff_primeEnergyBudget
+        hε t).1 (hnonnegative t)⟩
+
+/-- There are positive-energy good widths arbitrarily far to the right. -/
+def GaussianPrimeEnergyGoodWidthsUnbounded : Prop :=
+  ∀ B : ℝ, ∃ ε : ℝ, B < ε ∧ GaussianPrimeEnergyGoodWidth ε
+
+theorem gaussianPrimeEnergyGoodWidthsUnbounded_iff_arithmetic :
+    GaussianPrimeEnergyGoodWidthsUnbounded ↔
+      GaussianArithmeticGoodWidthsUnbounded := by
+  unfold GaussianPrimeEnergyGoodWidthsUnbounded
+    GaussianArithmeticGoodWidthsUnbounded
+  constructor
+  · intro hunbounded B
+    obtain ⟨ε, hBε, hε⟩ := hunbounded B
+    exact ⟨ε, hBε,
+      (gaussianPrimeEnergyGoodWidth_iff_gaussianArithmeticGoodWidth ε).1 hε⟩
+  · intro hunbounded B
+    obtain ⟨ε, hBε, hε⟩ := hunbounded B
+    exact ⟨ε, hBε,
+      (gaussianPrimeEnergyGoodWidth_iff_gaussianArithmeticGoodWidth ε).2 hε⟩
+
+/-- Exact scalable frontier: a cofinal family satisfying the single
+margin-aware positive-energy inequality is equivalent to RH. -/
+theorem gaussianPrimeEnergyGoodWidthsUnbounded_iff_riemannHypothesis :
+    GaussianPrimeEnergyGoodWidthsUnbounded ↔ RiemannHypothesis :=
+  gaussianPrimeEnergyGoodWidthsUnbounded_iff_arithmetic.trans
+    gaussianArithmeticGoodWidthsUnbounded_iff_riemannHypothesis
+
 /-! ## Exact parameter-uniform derivative of the retained prime block -/
 
 /-- Center derivative of one Gaussian prime summand. -/
