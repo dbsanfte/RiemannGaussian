@@ -62,6 +62,7 @@ import RiemannGaussian.UpperHalfPlaneIntegral
 import RiemannGaussian.FiniteHardyOrthogonality
 import RiemannGaussian.FiniteHardyProjection
 import RiemannGaussian.FiniteHardyResidualGram
+import RiemannGaussian.FiniteHardyMetricDeterminant
 import RiemannGaussian.FiniteAlgebraicHilbert
 import RiemannGaussian.FiniteRootCountBridge
 import RiemannGaussian.FiniteERootContinuity

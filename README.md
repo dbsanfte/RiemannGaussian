@@ -313,7 +313,12 @@ What is checked here:
   Gram entries and the full residual-versus-base pencil are identified
   literally with the checked weighted matrices.  In particular Lean proves
   the unconditional determinant ratio
-  `det(W) / det(G) = |S(w₀) * S(w₁)|²`, without assuming distinct metric modes;
+  `det(W) / det(G) = |S(w₀) * S(w₁)|²`, without assuming distinct metric modes.
+  Finally, for the actual finite Hardy cross angle `C` and residual map `R`,
+  Lean proves the operator identity `R† R = I - C† C` and, in every finite
+  basis of the negative model, identifies `det(I - C† C)` with the residual
+  Gram determinant divided by the base Gram determinant.  This last step is
+  basis-independent and makes no spectral-separation assumption;
 - the exact root-count bridge behind that degree inequality: conjugation
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
@@ -400,14 +405,16 @@ What is not yet checked here:
   Cauchy vectors are now rigorously orthogonal to the residual model, with
   their complementary model-kernel component and actual orthogonal projection
   now identified, and the resulting two-node Hardy Gram matrix is identified
-  entrywise with the checked weighted metric pencil.  What remains is the
-  basis-independent operator/determinant theorem identifying that concrete
-  ratio with `det(I - C† C)` for the actual cross angle and the associated
-  metric-mode product.  No claim is made that the auxiliary
-  Euclidean coefficient norm is the Hardy boundary norm.  Spectral completeness for
-  all `±sqrt(1-s_j^2)` pencil modes is also not yet formalized beyond the
-  checked scalar and analytic one-pair cases. Nor is any infinite-dimensional
-  lift to the xi function; that remains a research program, not an RH proof.
+  entrywise with the checked weighted metric pencil, and the concrete ratio
+  is now identified basis-independently with `det(I - C† C)` for the actual
+  cross angle.  What remains at this finite seam is to prove that the two
+  Cauchy vectors attached to the relevant Blaschke roots form a basis of the
+  actual negative model and then specialize the determinant identity to those
+  roots.  No claim is made that the auxiliary Euclidean coefficient norm is
+  the Hardy boundary norm.  Spectral completeness for all
+  `±sqrt(1-s_j^2)` pencil modes is also not yet formalized beyond the checked
+  scalar and analytic one-pair cases. Nor is any infinite-dimensional lift to
+  the xi function; that remains a research program, not an RH proof.
 - extension of the now-checked finite-residual symmetric two-node estimate to
   the intended general/infinite inner factor, and its claimed identification
   with the two nonunit Gram--Weil metric-pencil magnitudes.  The exact finite
