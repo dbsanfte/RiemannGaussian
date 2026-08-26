@@ -343,7 +343,12 @@ What is checked here:
   threshold gives the end-to-end strict bound
   `|S(p)| < m / sqrt (m^2 + a^2)`; under the reflected-value identity, Lean
   also proves the squared two-pole product bound
-  `|S(p) S(-conj p)| < m^2 / (m^2 + a^2)`;
+  `|S(p) S(-conj p)| < m^2 / (m^2 + a^2)`.  On the metric side, the exact
+  determinant of a general weighted two-node Hermitian Gram pencil is now
+  computed: if two distinct squared modes are its generalized roots, their
+  nonnegative magnitudes multiply exactly to the modulus of the two residual
+  values.  This is the determinant consequence needed by the proposed bridge,
+  not an assumption of the analytic Hardy identification;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -385,9 +390,10 @@ What is not yet checked here:
   the intended general/infinite inner factor, and its claimed identification
   with the two nonunit Gram--Weil metric-pencil magnitudes.  The exact finite
   Schur coefficients, symmetry identities, sampled matrix equality, Pick
-  positivity, and sharp value bound are checked; the infinite analytic
-  passage and the metric-pencil link remain separate proof obligations and
-  are not assumed;
+  positivity, sharp value bound, and conditional weighted-pencil root-product
+  algebra are checked; the infinite analytic passage and the theorem placing
+  the actual Hardy metric modes at those roots remain separate proof
+  obligations and are not assumed;
 - a parameter-uniform lower bound for the combined Gaussian prime discrepancy
   plus digamma gain.  Numerical falsification shows that neither term may be
   discarded: they undergo a large cancellation before the very small spectral
