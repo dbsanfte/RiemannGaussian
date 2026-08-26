@@ -94,26 +94,24 @@ What is checked here:
   `1 ≤ ‖g 0‖`; Borel--Carathéodory followed by Cauchy's estimate now gives
   an explicit polynomial bound for the residual logarithmic derivative on the
   inner quarter-disk;
-- a single explicit predicate,
-  `GaussianArithmeticExplicitFormulaIdentified`, isolating equality of that
-  convergent arithmetic expression with the canonical symmetric zero sum;
-- conditional on that identification, exact arithmetic heat propagation and
-  equivalence of all-width arithmetic nonnegativity with RH;
+- exact logarithmic differentiation of the finite canonical zero-factor
+  product, an explicit reciprocal-separation bound for each factor, Jensen
+  control of the total multiplicity, and transfer of the resulting bound to
+  the quantitatively separated spectral contours;
+- an unconditional exponential bound for the xi logarithmic derivative on
+  those contours, hence Gaussian decay of the final vertical sides and an
+  unconditional proof of `GaussianArithmeticExplicitFormulaIdentified`;
+- the pointwise identity
+  `gaussianArithmeticExplicitFormula ε t =
+  canonicalZetaSymmetricGaussianZeroSum ε t` for every `0 < ε`, exact
+  arithmetic heat propagation, and the unconditional equivalence of
+  all-width arithmetic nonnegativity with RH;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
 
 What is not yet checked here:
 
-- the resulting exponential bound for the xi logarithmic derivative on the
-  now-constructed quantitatively separated contours; the remaining step is
-  to add and bound the explicitly separated finite canonical zero factors;
-  the residual logarithmic derivative is now bounded. This is the isolated
-  infinite-height input needed to prove
-  `GaussianArithmeticExplicitFormulaIdentified` (Lean already proves that
-  such a bound kills the vertical contours, while the horizontal limit,
-  canonical zero-sum limit, analytic digamma convergence, and finite residue
-  identity are checked, but the prime/zero equality is not);
 - the fixed-point integration loops mirrored by the Python certificates;
 - a definition and continuity theorem for Weil's functional on the correct
   analytic-strip test class;
@@ -129,8 +127,9 @@ convolution squares; ordinary Schwartz density alone is not a valid bridge.
 The direct spectral argument now proves that scalar all-Gaussian positivity
 is sufficient for the unconditional canonical sum; coherent Gram matrix
 positivity remains a separate, stronger connection to Weil's quadratic
-formulation.  The decisive remaining analytic equality is between that
-canonical sum and `gaussianArithmeticExplicitFormula`. The active
+formulation.  The arithmetic/canonical equality is now unconditional.  The
+decisive remaining problem is nonnegativity of that explicit common value for
+every positive `epsilon` and every real center.  The completed contour and
 logarithmic-derivative development is in
 [`GaussianXiLogDerivativeGrowth.lean`](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean).
 

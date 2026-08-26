@@ -1221,6 +1221,33 @@ theorem xiSpectralVerticalLogDerivativeExponentialBound :
         (4 * quantitativeSpectralBoundaryTruncation n) := by
       simpa [C, B] using explicit_logDeriv_bound_le_exponential hA hbound n
 
+/-! ## Unconditional Gaussian explicit formula and the positivity frontier -/
+
+/-- The arithmetic Gaussian explicit formula is unconditionally identified
+with the canonical multiplicity-aware symmetric zero sum. -/
+theorem gaussianArithmeticExplicitFormulaIdentified :
+    GaussianArithmeticExplicitFormulaIdentified :=
+  gaussianArithmeticExplicitFormulaIdentified_of_logDerivativeExponentialBound
+    xiSpectralVerticalLogDerivativeExponentialBound
+
+/-- Pointwise form of the now-unconditional arithmetic/canonical Gaussian
+explicit formula. -/
+theorem gaussianArithmeticExplicitFormula_eq_canonical
+    {ε : ℝ} (hε : 0 < ε) (t : ℝ) :
+    gaussianArithmeticExplicitFormula ε t =
+      canonicalZetaSymmetricGaussianZeroSum ε t :=
+  gaussianArithmeticExplicitFormulaIdentified ε t hε
+
+/-- This is the requested pre-positivity checkpoint: proving nonnegativity of
+the fully explicit arithmetic expression for every positive Gaussian width
+and every center is now exactly equivalent to the Riemann hypothesis. -/
+theorem gaussianArithmeticExplicitFormula_nonnegative_iff_riemannHypothesis :
+    ZetaSymmetricGaussianZeroSumNonnegative
+        gaussianArithmeticExplicitFormula ↔
+      RiemannHypothesis :=
+  gaussianArithmeticExplicitFormula_nonnegative_iff_RH
+    gaussianArithmeticExplicitFormulaIdentified
+
 end
 
 end RiemannGaussian
