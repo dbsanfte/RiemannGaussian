@@ -81,6 +81,10 @@ What is checked here:
   fixed exponential bound for the xi logarithmic derivative on those contours
   is overwhelmed by the Gaussian and therefore gives the required vertical
   decay at every positive width;
+- an explicit pigeonhole construction of one quantitatively zero-separated
+  contour in every unit height interval; Jensen's divisor bound makes the
+  reciprocal separation radius at most quadratic, and the complete vertical
+  segment is proved to stay at least that radius from every spectral xi zero;
 - a single explicit predicate,
   `GaussianArithmeticExplicitFormulaIdentified`, isolating equality of that
   convergent arithmetic expression with the canonical symmetric zero sum;
@@ -92,10 +96,10 @@ What is checked here:
 
 What is not yet checked here:
 
-- construction of quantitatively zero-separated truncation contours and the
-  resulting exponential bound for the xi logarithmic derivative from the
-  checked quadratic xi growth and zero-counting estimates; this is now the
-  isolated infinite-height input needed to prove
+- the resulting exponential bound for the xi logarithmic derivative on the
+  now-constructed quantitatively separated contours; deriving this from the
+  checked quadratic xi growth and zero-counting estimates is now the isolated
+  infinite-height input needed to prove
   `GaussianArithmeticExplicitFormulaIdentified` (Lean already proves that
   such a bound kills the vertical contours, while the horizontal limit,
   canonical zero-sum limit, analytic digamma convergence, and finite residue
