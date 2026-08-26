@@ -89,6 +89,11 @@ What is checked here:
   extended canonical decomposition of xi there; on that circle the zero-free
   residual has exactly the same norm as xi, so maximum modulus transfers the
   checked quadratic-exponential xi growth bound throughout the enclosed disk;
+- a normalized analytic logarithm of that residual, including the exact
+  exponential reconstruction identity and the lower normalization
+  `1 ≤ ‖g 0‖`; Borel--Carathéodory followed by Cauchy's estimate now gives
+  an explicit polynomial bound for the residual logarithmic derivative on the
+  inner quarter-disk;
 - a single explicit predicate,
   `GaussianArithmeticExplicitFormulaIdentified`, isolating equality of that
   convergent arithmetic expression with the canonical symmetric zero sum;
@@ -102,9 +107,8 @@ What is not yet checked here:
 
 - the resulting exponential bound for the xi logarithmic derivative on the
   now-constructed quantitatively separated contours; the remaining step is
-  to bound the logarithmic derivative of the zero-free canonical residual
-  (by a normalized analytic logarithm, Borel--Carathéodory, and Cauchy) and
-  add the explicitly separated finite zero factors. This is now the isolated
+  to add and bound the explicitly separated finite canonical zero factors;
+  the residual logarithmic derivative is now bounded. This is the isolated
   infinite-height input needed to prove
   `GaussianArithmeticExplicitFormulaIdentified` (Lean already proves that
   such a bound kills the vertical contours, while the horizontal limit,
