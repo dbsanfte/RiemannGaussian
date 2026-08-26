@@ -209,6 +209,10 @@ What is checked here:
   lift, the `lambda = 1` kernel has dimension `dim P - dim N`, and explicit
   injectivity plus pointwise strict contraction forces every supplied real
   nonexceptional pencil eigenvalue into `(-1,1)`;
+- the complete one-dimensional metric-pencil classification: for the scalar
+  cross-angle `0 < c < 1`, a nonzero generalized eigenvector exists exactly at
+  `lambda = ± sqrt (1 - c^2)`, with both converse eigenvectors constructed
+  explicitly and the exceptional value `lambda = 1` excluded;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
