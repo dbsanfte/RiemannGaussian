@@ -1248,6 +1248,14 @@ theorem gaussianArithmeticExplicitFormula_nonnegative_iff_riemannHypothesis :
   gaussianArithmeticExplicitFormula_nonnegative_iff_RH
     gaussianArithmeticExplicitFormulaIdentified
 
+/-- Unconditional cofinal-width reduction of the remaining positivity
+frontier: it suffices, and is necessary, to certify good widths unboundedly
+far out. -/
+theorem gaussianArithmeticGoodWidthsUnbounded_iff_riemannHypothesis :
+    GaussianArithmeticGoodWidthsUnbounded ↔ RiemannHypothesis :=
+  gaussianArithmeticGoodWidthsUnbounded_iff_RH
+    gaussianArithmeticExplicitFormulaIdentified
+
 end
 
 end RiemannGaussian

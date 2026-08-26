@@ -106,6 +106,9 @@ What is checked here:
   canonicalZetaSymmetricGaussianZeroSum ε t` for every `0 < ε`, exact
   arithmetic heat propagation, and the unconditional equivalence of
   all-width arithmetic nonnegativity with RH;
+- the exact cofinal-width reduction: all-width positivity is equivalent to
+  finding good arithmetic Gaussian widths arbitrarily far to the right, so a
+  successful certificate program only needs an unbounded family of widths;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -117,8 +120,9 @@ What is not yet checked here:
   analytic-strip test class;
 - the theorem connecting each endpoint certificate's scalar ledgers to the
   convergent arithmetic expression itself;
-- nonnegativity of the arithmetic/canonical expression for every
-  `epsilon > 0` (only the finite rational portions at 0.04--0.06 are checked).
+- an unbounded family of certified good widths (and hence nonnegativity of the
+  arithmetic/canonical expression for every `epsilon > 0`; only the finite
+  rational portions at 0.04--0.06 are checked).
 
 The ordinary Schwartz closed-cone theorem is now explicitly treated as an
 abstract auxiliary result.  The classical unconditional Weil functional is

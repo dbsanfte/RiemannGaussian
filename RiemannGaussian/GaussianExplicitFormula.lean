@@ -280,6 +280,40 @@ theorem gaussianArithmeticExplicitFormula_nonnegative_of_larger_width
   rw [← hExplicit a s (hε.trans hεa)]
   exact haNonnegative s
 
+/-- A positive Gaussian width is `good` when the arithmetic explicit formula
+is nonnegative at every real center. -/
+def GaussianArithmeticGoodWidth (a : ℝ) : Prop :=
+  0 < a ∧ ∀ t : ℝ, 0 ≤ gaussianArithmeticExplicitFormula a t
+
+/-- There are good Gaussian widths arbitrarily far to the right.  Heat
+propagation will turn this cofinal family into positivity at every positive
+width. -/
+def GaussianArithmeticGoodWidthsUnbounded : Prop :=
+  ∀ B : ℝ, ∃ a : ℝ, B < a ∧ GaussianArithmeticGoodWidth a
+
+/-- Once the explicit formula is identified, it is enough to prove positivity
+at an unbounded family of Gaussian widths.  Conversely, all-width positivity
+trivially supplies such a family. -/
+theorem gaussianArithmeticGoodWidthsUnbounded_iff_nonnegative
+    (hExplicit : GaussianArithmeticExplicitFormulaIdentified) :
+    GaussianArithmeticGoodWidthsUnbounded ↔
+      ZetaSymmetricGaussianZeroSumNonnegative
+        gaussianArithmeticExplicitFormula := by
+  constructor
+  · intro hCofinal ε t hε
+    rcases hCofinal ε with ⟨a, hεa, ha⟩
+    exact gaussianArithmeticExplicitFormula_nonnegative_of_larger_width
+      hExplicit hε hεa ha.2 t
+  · intro hAll B
+    let a : ℝ := B ^ 2 + 1
+    have hBa : B < a := by
+      dsimp [a]
+      nlinarith [sq_nonneg (B - (1 / 2 : ℝ))]
+    have ha : 0 < a := by
+      dsimp [a]
+      positivity
+    exact ⟨a, hBa, ha, fun t => hAll a t ha⟩
+
 /-- Once the arithmetic explicit formula is identified, its all-width
 nonnegativity is exactly RH. -/
 theorem gaussianArithmeticExplicitFormula_nonnegative_iff_RH
@@ -295,6 +329,14 @@ theorem gaussianArithmeticExplicitFormula_nonnegative_iff_RH
   · intro h ε t hε
     rw [hExplicit ε t hε]
     exact h ε t hε
+
+/-- Conditional-on-identification form of the final frontier: RH is
+equivalent to finding good arithmetic Gaussian widths arbitrarily far out. -/
+theorem gaussianArithmeticGoodWidthsUnbounded_iff_RH
+    (hExplicit : GaussianArithmeticExplicitFormulaIdentified) :
+    GaussianArithmeticGoodWidthsUnbounded ↔ RiemannHypothesis :=
+  (gaussianArithmeticGoodWidthsUnbounded_iff_nonnegative hExplicit).trans
+    (gaussianArithmeticExplicitFormula_nonnegative_iff_RH hExplicit)
 
 end
 
