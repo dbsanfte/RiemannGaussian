@@ -44,3 +44,4 @@ import RiemannGaussian.FiniteKreinLanger
 import RiemannGaussian.FiniteKernelDecomposition
 import RiemannGaussian.FiniteZeroVectorSplit
 import RiemannGaussian.FiniteModelSpace
+import RiemannGaussian.FiniteModelGeometry

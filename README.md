@@ -261,6 +261,12 @@ What is checked here:
   common denominator, the coordinate pair reconstructs the original
   Lagrange quotient exactly, which proves that the root-coefficient-to-pair
   map is a complex-linear isomorphism rather than just a dimension count;
+- the common-numerator algebra behind the next Hilbert-space step: all needed
+  reflected and cross-factor coprimality statements are proved, the
+  `D * q_S + V * q_B` Sylvester map is promoted to a literal linear
+  equivalence, the common-denominator copies of `K_S` and `K_B` are proved
+  transverse, and the corresponding `S K_B` transversality needed for an
+  injective cross-angle is proved under the isolated degree inequality;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
