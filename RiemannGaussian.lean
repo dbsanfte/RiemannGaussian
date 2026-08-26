@@ -40,6 +40,9 @@ import RiemannGaussian.HyperbolicEnergySuperadditive
 import RiemannGaussian.SymmetricQuartetEnergy
 import RiemannGaussian.SymmetricPickDisk
 import RiemannGaussian.FiniteBlaschkePick
+import RiemannGaussian.SymmetricPickSchur
+import RiemannGaussian.TwoNodePickSchur
+import RiemannGaussian.SymmetricTwoNodePick
 import RiemannGaussian.GramWeilBlockDefect
 import RiemannGaussian.GramWeilMetricPencil
 import RiemannGaussian.GramWeilOnePair

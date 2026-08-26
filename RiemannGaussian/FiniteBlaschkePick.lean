@@ -39,6 +39,27 @@ theorem sub_conj_ne_zero_of_im_pos
   rw [Complex.conj_im] at him
   linarith
 
+/-- Diagonal value of the upper-half-plane Pick kernel. -/
+theorem upperHalfPlanePickKernel_self
+    (f : ℂ → ℂ) {z : ℂ} (hz : 0 < z.im) :
+    upperHalfPlanePickKernel f z z =
+      (((1 - Complex.normSq (f z)) / (2 * z.im) : ℝ) : ℂ) := by
+  have hdiff : z - starRingEnd ℂ z = (2 * z.im : ℂ) * Complex.I := by
+    apply Complex.ext <;> simp
+    ring
+  unfold upperHalfPlanePickKernel
+  rw [show f z * starRingEnd ℂ (f z) =
+      (Complex.normSq (f z) : ℂ) by
+    rw [mul_comm, Complex.normSq_eq_conj_mul_self]]
+  rw [hdiff]
+  calc
+    Complex.I * (1 - (Complex.normSq (f z) : ℂ)) /
+          ((2 * z.im : ℂ) * Complex.I) =
+        (1 - (Complex.normSq (f z) : ℂ)) / (2 * z.im : ℂ) := by
+      field_simp [hz.ne']
+    _ = (((1 - Complex.normSq (f z)) / (2 * z.im) : ℝ) : ℂ) := by
+      norm_cast
+
 /-- Exact rank-one rational form of one elementary Pick kernel. -/
 theorem upperHalfPlanePickKernel_elementary
     {alpha z w : ℂ} (halpha : 0 < alpha.im)
