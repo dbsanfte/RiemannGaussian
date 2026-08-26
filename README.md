@@ -277,6 +277,13 @@ What is checked here:
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
   the required degree inequality, cross-angle injectivity, and defect inertia;
+- the first rigorous continuity layer for that finite homotopy: after a monic
+  normalization which preserves every root with multiplicity, all coefficients
+  converge uniformly in their index, Mathlib's quantitative root-stability
+  theorem gives nearby roots, and a separation argument proves local constancy
+  of the upper-half-plane root count at every nonzero separable homotopy
+  member; consequently the count is globally constant on all positive
+  parameters whenever the positive homotopy is collision-free;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -301,11 +308,15 @@ What is not yet checked here:
   checked, but the single theorem quantified over all cutoffs remains
   RH-strength.
 - the remaining analytic finite-polynomial realization of the checked
-  abstract Gram--Weil block theorem: constancy and evaluation of the
-  upper-half-plane root count along the just-defined homotopy, and the
+  abstract Gram--Weil block theorem: preservation of the upper-half-plane
+  root count through multiple-root collisions, its evaluation immediately to
+  the right of parameter zero, and the
   analytic half-plane Hardy/model-space inner products identifying the actual
   Gram geometry with the now-checked Euclidean algebraic realization.  The
-  algebraic cross angle is checked, but no claim is yet made that its
+  collision-free positive-parameter constancy theorem is checked, but the
+  family can genuinely develop multiple roots, so it does not settle the
+  unconditional count.  The algebraic cross angle is checked, but no claim is
+  yet made that its
   coefficient norm is the Hardy boundary norm.  Spectral completeness for
   all `±sqrt(1-s_j^2)` pencil modes is also not yet formalized beyond the
   checked scalar and analytic one-pair cases. Nor is any infinite-dimensional
