@@ -318,7 +318,14 @@ What is checked here:
   Lean proves the operator identity `R† R = I - C† C` and, in every finite
   basis of the negative model, identifies `det(I - C† C)` with the residual
   Gram determinant divided by the base Gram determinant.  This last step is
-  basis-independent and makes no spectral-separation assumption;
+  basis-independent and makes no spectral-separation assumption.  Lean also
+  proves directly that every upper Blaschke root gives an actual boundary
+  Cauchy vector in the negative model: the denominator is divided by its
+  proved conjugate linear root factor and the resulting boundary quotient is
+  identified in `L²`.  Two distinct such vectors form a basis whenever the
+  upper factor has degree two.  Coprimality discharges the residual-factor
+  nonvanishing conditions, yielding the concrete root specialization
+  `det(I - C† C) = |S(w₀) * S(w₁)|²` with no distinct-mode hypothesis;
 - the exact root-count bridge behind that degree inequality: conjugation
   proves equal upper/lower counts at homotopy parameter zero, and Lean proves
   that invariance of the upper count from zero to the target parameter implies
@@ -407,11 +414,13 @@ What is not yet checked here:
   now identified, and the resulting two-node Hardy Gram matrix is identified
   entrywise with the checked weighted metric pencil, and the concrete ratio
   is now identified basis-independently with `det(I - C† C)` for the actual
-  cross angle.  What remains at this finite seam is to prove that the two
-  Cauchy vectors attached to the relevant Blaschke roots form a basis of the
-  actual negative model and then specialize the determinant identity to those
-  roots.  No claim is made that the auxiliary Euclidean coefficient norm is
-  the Hardy boundary norm.  Spectral completeness for all
+  cross angle.  The two Cauchy vectors attached to distinct roots are now
+  proved to form a basis in the degree-two case, and the determinant identity
+  is specialized to those roots.  What remains in the finite quartet chain is
+  to instantiate this theorem with the repository's explicit symmetric-
+  quartet root data and connect its determinant statement to the desired
+  metric-pencil magnitudes.  No claim is made that the auxiliary Euclidean
+  coefficient norm is the Hardy boundary norm.  Spectral completeness for all
   `±sqrt(1-s_j^2)` pencil modes is also not yet formalized beyond the checked
   scalar and analytic one-pair cases. Nor is any infinite-dimensional lift to
   the xi function; that remains a research program, not an RH proof.
