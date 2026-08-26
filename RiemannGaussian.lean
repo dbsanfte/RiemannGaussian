@@ -37,3 +37,4 @@ import RiemannGaussian.SuzukiTransportBarrier
 import RiemannGaussian.GramWeilBlockDefect
 import RiemannGaussian.GramWeilMetricPencil
 import RiemannGaussian.GramWeilOnePair
+import RiemannGaussian.FiniteOnePair

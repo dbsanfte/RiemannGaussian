@@ -213,6 +213,12 @@ What is checked here:
   cross-angle `0 < c < 1`, a nonzero generalized eigenvector exists exactly at
   `lambda = ± sqrt (1 - c^2)`, with both converse eigenvectors constructed
   explicitly and the exceptional value `lambda = 1` excluded;
+- the analytic quadratic one-pair realization for `A(z) = z^2 + a^2`: the
+  two improper rational integrals and the odd cross integral are proved from
+  Mathlib's full-line Cauchy integral, the normalized complex zero functions
+  have literal `2 × 2` Gram matrix
+  `(1 / sqrt (1 + a^2)) I`, and the corresponding Weil metric pencil is
+  singular exactly at `lambda = ± 1 / sqrt (1 + a^2)`;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -239,8 +245,8 @@ What is not yet checked here:
 - the analytic finite-polynomial realization of the checked abstract
   Gram--Weil block theorem: finite Krein--Langer factorization, the model-space
   decomposition, injectivity/strict contraction of its cross-angle operator,
-  the spectral theorem counting all `±sqrt(1-s_j^2)` pencil modes, and the
-  one-pair integral formula are not yet formalized.  Nor is any
+  and the spectral theorem counting all `±sqrt(1-s_j^2)` pencil modes are not
+  yet formalized beyond the checked scalar and analytic one-pair cases. Nor is any
   infinite-dimensional lift to the xi function; that remains a research
   program, not an RH proof.
 - a parameter-uniform lower bound for the combined Gaussian prime discrepancy
