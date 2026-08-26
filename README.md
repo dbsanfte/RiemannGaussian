@@ -85,6 +85,10 @@ What is checked here:
   contour in every unit height interval; Jensen's divisor bound makes the
   reciprocal separation radius at most quadratic, and the complete vertical
   segment is proved to stay at least that radius from every spectral xi zero;
+- construction, at each contour scale, of a larger zero-free circle and an
+  extended canonical decomposition of xi there; on that circle the zero-free
+  residual has exactly the same norm as xi, so maximum modulus transfers the
+  checked quadratic-exponential xi growth bound throughout the enclosed disk;
 - a single explicit predicate,
   `GaussianArithmeticExplicitFormulaIdentified`, isolating equality of that
   convergent arithmetic expression with the canonical symmetric zero sum;
@@ -97,8 +101,10 @@ What is checked here:
 What is not yet checked here:
 
 - the resulting exponential bound for the xi logarithmic derivative on the
-  now-constructed quantitatively separated contours; deriving this from the
-  checked quadratic xi growth and zero-counting estimates is now the isolated
+  now-constructed quantitatively separated contours; the remaining step is
+  to bound the logarithmic derivative of the zero-free canonical residual
+  (by a normalized analytic logarithm, Borel--Carathéodory, and Cauchy) and
+  add the explicitly separated finite zero factors. This is now the isolated
   infinite-height input needed to prove
   `GaussianArithmeticExplicitFormulaIdentified` (Lean already proves that
   such a bound kills the vertical contours, while the horizontal limit,
@@ -121,8 +127,8 @@ is sufficient for the unconditional canonical sum; coherent Gram matrix
 positivity remains a separate, stronger connection to Weil's quadratic
 formulation.  The decisive remaining analytic equality is between that
 canonical sum and `gaussianArithmeticExplicitFormula`. The active
-finite-divisor contour development is in
-[`GaussianXiDivisorContour.lean`](RiemannGaussian/GaussianXiDivisorContour.lean).
+logarithmic-derivative development is in
+[`GaussianXiLogDerivativeGrowth.lean`](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean).
 
 Build from this directory with:
 

@@ -25,3 +25,4 @@ import RiemannGaussian.GaussianExplicitContour
 import RiemannGaussian.GaussianArchimedeanContour
 import RiemannGaussian.GaussianXiDivisorContour
 import RiemannGaussian.GaussianXiQuantitativeContour
+import RiemannGaussian.GaussianXiLogDerivativeGrowth
