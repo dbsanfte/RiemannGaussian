@@ -330,6 +330,14 @@ What is checked here:
   background with nonnegative imaginary part forces the degree-two Blaschke
   modulus strictly below that threshold, with no restriction on the quartet's
   horizontal separation;
+- the bottom layer of the symmetric Pick calculation: Lean proves the exact
+  scalar value-disk conclusion from its explicit Schur-complement
+  coefficients and the monotone conversion to
+  `m / sqrt (m^2 + a^2)`; independently, every elementary upper-half-plane
+  Blaschke factor has a rank-one positive Pick kernel, finite products remain
+  positive by the Schur product theorem, and the existing finite residual
+  inner factor therefore has a positive-semidefinite Pick matrix on every
+  finite upper-half-plane node family;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -367,12 +375,14 @@ What is not yet checked here:
   all `±sqrt(1-s_j^2)` pencil modes is also not yet formalized beyond the
   checked scalar and analytic one-pair cases. Nor is any infinite-dimensional
   lift to the xi function; that remains a research program, not an RH proof.
-- the symmetric two-node Nevanlinna--Pick estimate proposed in the newest
-  research note, and its claimed identification with the two nonunit
-  Gram--Weil metric-pencil magnitudes.  The preceding pole-to-Blaschke bound
-  is now checked independently; the Pick-matrix positivity, symmetry data,
-  Schur-complement disk calculation, and metric-pencil link remain separate
-  proof obligations and are not assumed;
+- the complete symmetric two-node Nevanlinna--Pick estimate proposed in the
+  newest research note, and its claimed identification with the two nonunit
+  Gram--Weil metric-pencil magnitudes.  The preceding pole-to-Blaschke bound,
+  finite Pick-kernel positivity, and terminal scalar disk inequality are now
+  checked independently; the exact two-node Schur-complement coefficients,
+  their symmetry identities, the passage from a general/infinite inner
+  factor to Pick positivity, and the metric-pencil link remain separate proof
+  obligations and are not assumed;
 - a parameter-uniform lower bound for the combined Gaussian prime discrepancy
   plus digamma gain.  Numerical falsification shows that neither term may be
   discarded: they undergo a large cancellation before the very small spectral
