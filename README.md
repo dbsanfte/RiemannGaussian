@@ -186,6 +186,15 @@ What is checked here:
   zero-weight non-prime-powers contribute identically zero.  Consequently the
   full tail criterion is now equivalent to one cumulative-surplus lower bound
   at every cutoff, retaining rather than discarding cancellation across cells;
+- the corrected tail reset needed for an actual Suzuki trajectory: Lean splits
+  the full locally finite hinge model after an arbitrary finite prime prefix,
+  shifts the remaining event schedule, and represents a nonpositive audited
+  base slope by one synthetic nonnegative event at the base.  The corrected
+  transport gaps again telescope exactly; cell zero is the descent to the
+  zero-slope point and subsequent cells correspond to the genuine future
+  prime weights.  Subject to one explicit tail-normalization identity, full
+  model positivity is equivalent to the cumulative-surplus bound for this
+  shifted schedule, rather than for an incorrectly restarted prime sequence;
 - the exact Gaussian/Suzuki curvature interface: the quarter-line digamma
   density splits pointwise into the reflected continuous-PNT density plus
   Suzuki's missing curvature; its Gaussian missing-curvature integrand is
@@ -333,9 +342,12 @@ What is not yet checked here:
 - the analytic identification of the full Suzuki screw function with the new
   hinge model, the exact audited initial value/slope normalization, or
   nonnegativity of the resulting canonical infinite transport-gap sequence.
-  Existence, exact evaluation, and the consecutive/block recurrence of those
-  gaps are now checked, but the cumulative-surplus lower bound quantified over
-  all cutoffs remains RH-strength.
+  The finite-prefix shift and nonzero-slope reset are now checked and the
+  required normalization is isolated as the function-valued proposition
+  `SuzukiTailNormalization`; it has not yet been discharged for Suzuki's
+  explicit Archimedean term.  Existence, exact evaluation, and the
+  consecutive/block recurrence of the corrected gaps are checked, but their
+  cumulative-surplus lower bound over all cutoffs remains RH-strength.
 - the remaining analytic finite-polynomial realization of the checked
   abstract Gram--Weil block theorem: although the rational model spaces now
   embed faithfully as closed subspaces of actual boundary `L²` and their
