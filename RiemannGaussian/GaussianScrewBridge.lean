@@ -19,15 +19,13 @@ explicit `exp (-5u/2)` majorant applies.  Subtracting this energy from the
 forward continuous-PNT Gaussian energy gives the literal Gaussian transform
 of `suzukiSmoothCurvature`.
 
-The sole conditional bridge in this file is `GaussianDigammaScrewTransform`.
-It says that the already-defined digamma remainder equals the checked
-missing-curvature integral.  This is the precise consequence of Gauss's
-integral representation of the digamma function still absent from Mathlib;
-it is a proposition passed explicitly to every theorem that uses it, not an
-axiom.  Under that proposition, the resulting Suzuki energy budget is proved
-equivalent to the arithmetic Gaussian frontier and hence, cofinally in the
-width, to RH.  `GaussianDigammaTransform` subsequently reduces this
-proposition to one pointwise quarter-line Gauss difference formula.
+The conditional interface exposed in this file is
+`GaussianDigammaScrewTransform`.  It says that the already-defined digamma
+remainder equals the checked missing-curvature integral.  It is passed
+explicitly to every theorem in this dependency layer, not declared as an
+axiom.  `GaussianDigammaTransform` reduces it to one pointwise quarter-line
+Gauss difference formula, and `GaussianDigammaGauss` subsequently proves that
+formula and discharges the interface unconditionally.
 -/
 
 namespace RiemannGaussian
@@ -340,14 +338,15 @@ theorem gaussianForwardDiscrepancy_add_missing_eq_prime_sub_smooth
   unfold gaussianForwardPrimeEnergyDiscrepancy
   ring
 
-/-! ## The one remaining digamma bridge and the RH-equivalent budget -/
+/-! ## The digamma bridge interface and the RH-equivalent budget -/
 
-/-- The precise analytic identity still needed from Gauss's integral
-representation of `digamma`: after removing the reflected continuous-PNT
-half, the digamma gain is Suzuki's positive missing-curvature energy.
+/-- The precise analytic identity supplied by Gauss's integral representation
+of `digamma`: after removing the reflected continuous-PNT half, the digamma
+gain is Suzuki's positive missing-curvature energy.
 
-This is a proposition, not an axiom; all dependent results below take its
-proof as an explicit argument. -/
+This dependency layer exposes it as a proposition, not an axiom; all dependent
+results below take its proof as an explicit argument.  It is proved in
+`GaussianDigammaGauss`. -/
 def GaussianDigammaScrewTransform : Prop :=
   ∀ {ε : ℝ}, 0 < ε → ∀ t : ℝ,
     gaussianDigammaRemainderGain ε t =

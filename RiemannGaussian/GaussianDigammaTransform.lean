@@ -6,7 +6,7 @@ import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
 # Gauss's digamma difference and the Gaussian--Suzuki transform
 
 This file reduces `GaussianDigammaScrewTransform` to one pointwise special
-case of Gauss's integral representation.  The remaining statement,
+case of Gauss's integral representation.  The statement isolated here,
 `QuarterLineDigammaGaussDifferenceFormula`, says that the real part of
 `digamma (1/4 + I*r/2)` relative to its value at zero is the positive
 quarter-line integral with density
@@ -23,8 +23,9 @@ Everything after that statement is proved here.  In particular:
 * splitting the density into the reflected exponential and Suzuki's missing
   curvature proves `GaussianDigammaScrewTransform`.
 
-The pointwise formula remains an explicit proposition, not an axiom.  Thus
-this module narrows the analytic seam without asserting the missing result.
+At this dependency layer the pointwise formula is an explicit proposition,
+not an axiom.  The later module `GaussianDigammaGauss` proves it from
+Mathlib's Gamma integral and Euler approximation and thereby closes the seam.
 -/
 
 namespace RiemannGaussian
@@ -151,9 +152,10 @@ theorem integrableOn_gaussianSuzukiDigammaOscillationIntegrand (r : ℝ) :
       · exact Or.inr (lt_of_not_ge hu1)] at h
   exact h
 
-/-- The one pointwise identity still missing: the real quarter-line digamma
-difference is Gauss's positive oscillatory integral.  Integrability of the
-right side is proved above, so this proposition contains only the equality. -/
+/-- The pointwise identity isolated at this layer: the real quarter-line
+digamma difference is Gauss's positive oscillatory integral.  Integrability
+of the right side is proved above, so this proposition contains only the
+equality.  `GaussianDigammaGauss` supplies its proof. -/
 def QuarterLineDigammaGaussDifferenceFormula : Prop :=
   ∀ r : ℝ,
     riemannArchimedeanDensity r - riemannArchimedeanDensity 0 =

@@ -177,17 +177,18 @@ What is checked here:
   proved integrable both across the apparent singularity at zero and at
   infinity; and subtracting it from the forward continuous energy is proved
   to be the literal Gaussian transform of `suzukiSmoothCurvature`;
-- conditional on the single explicitly named proposition expressing Gauss's
-  digamma integral transform, the arithmetic formula is exactly endpoint plus
-  atomic prime energy minus Suzuki smooth-curvature energy.  The corresponding
-  cofinal energy-budget criterion is kernel-checked equivalent to RH; the
-  proposition is passed as a hypothesis and is not declared as an axiom;
-- reduction of that transform proposition to the single pointwise identity
-  `QuarterLineDigammaGaussDifferenceFormula`: Lean proves integrability across
-  the density's apparent pole, evaluates the translated-Gaussian cosine
-  transform, verifies the joint kernel is integrable, performs the Fubini
-  exchange, and derives the exact missing-curvature transform from the
-  pointwise Gauss formula;
+- a proof of the pointwise identity
+  `QuarterLineDigammaGaussDifferenceFormula` from Mathlib's Gamma integral and
+  Euler approximation: Lean differentiates the compact Euler approximants,
+  proves dominated convergence for the log-weighted kernels, derives Euler's
+  digamma series on the right half-plane, evaluates each nonnegative vertical
+  difference term as a damped-cosine Laplace integral, performs the Tonelli
+  exchange, sums the geometric kernel, and checks the final `t = 2u`
+  substitution;
+- the resulting unconditional `GaussianDigammaScrewTransform`: the arithmetic
+  formula is exactly endpoint plus atomic prime energy minus Suzuki
+  smooth-curvature energy, and cofinal validity of that exact energy budget is
+  kernel-checked equivalent to RH;
 - the coherent Gaussian cross-term formula and the proof that, under RH and a
   represented zero sum, every finite coherent-state Gram matrix is positive
   semidefinite.
@@ -210,11 +211,6 @@ What is not yet checked here:
   resulting infinite barrier sequence.  The cumulative transport inequality
   proposed in the research note is stronger than necessary when the verified
   base margin is positive, and proving it globally remains RH-strength.
-- the pointwise quarter-line case of Gauss's integral identity encoded by
-  `QuarterLineDigammaGaussDifferenceFormula`.  This is now the single explicit
-  analytic seam between the checked Gaussian arithmetic frontier and the
-  exact Suzuki smooth-curvature budget; all integrability, Fubini, Gaussian
-  transform, and density-splitting steps downstream of it are checked.
 - a parameter-uniform lower bound for the combined Gaussian prime discrepancy
   plus digamma gain.  Numerical falsification shows that neither term may be
   discarded: they undergo a large cancellation before the very small spectral
