@@ -377,6 +377,15 @@ current checked state, not a list of conjectural steps.
   finite-product resultant and its cancellation gap—alongside the already
   exposed analytic remainder relating finite Cauchy windows to genuine
   `xi'/xi`; none is being assumed negligible.
+- Critical-line reflection now joins those two analytic objects in one exact
+  equation. Lean partitions every full xi Cauchy window into upper,
+  critical-line, and lower pieces, proves the lower piece is the reflected
+  upper piece with unchanged multiplicity, and combines the paired plus sum
+  with the signed Blaschke sum. At every noncolliding upper point it obtains
+  `2*upperCauchy = (xi'/xi - analyticRemainder - criticalCauchy)
+  + product'/product`. This is a rigorous bottom-to-frontier identity: both
+  the entire-function remainder and finite Blaschke cancellation remain
+  visible, and controlling them is now the concrete rigidity task.
 - On every zero-free open region, Lean now proves locally uniform convergence
   of the root-pinned polynomial logarithmic derivatives to the genuine
   spectral-xi logarithmic derivative. On each compact zero-free subset the
@@ -938,6 +947,11 @@ RH-level part of the project.
   derivative with the signed paired Cauchy sum, isolates the nonnegative
   triangle-cancellation gap, and bounds finite Poisson mass by the product
   log-derivative norm plus that gap.
+- [`RiemannGaussian/RiemannXiSpectralReflectionPairing.lean`](RiemannGaussian/RiemannXiSpectralReflectionPairing.lean)
+  partitions full xi Cauchy windows by spectral height, pairs upper and lower
+  terms through critical-line reflection, and derives the unified identity
+  connecting genuine `xi'/xi`, its analytic window remainder, critical-line
+  poles, and the finite spectral Blaschke logarithmic derivative.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
