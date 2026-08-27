@@ -281,6 +281,17 @@ current checked state, not a list of conjectural steps.
   full upper-divisor heat sums at every stage and time, while its full masses
   retain the same explicit stage-independent lower bound as the Hardy cores.
   This does not yet give a uniform positive lower bound at one fixed time.
+- The bounded spectral clusters are now placed inside that common full
+  divisor exactly. Their isolating radii are chosen below the centers'
+  positive heights, so the entire multiplicity-counted cluster union is an
+  upper-root submultiset. At fixed positive time, Lean proves the identity
+  `full polynomial heat = convergent xi-window cluster heat + nonnegative
+  unused-root remainder`. For any proposed full limit `L`, convergence of the
+  full polynomial heat sums to `L` is proved equivalent to convergence of the
+  remainder to `L` minus the finite xi window. Taking `L` to be the complete
+  spectral-xi heat sum identifies the exact tail theorem still needed. This
+  package holds for every window along the same root-pinned sequence under
+  `¬RH`.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -376,12 +387,15 @@ heat window is a checked limit of fixed-time heat sums over the corresponding
 full polynomial-root clusters. The Hardy cores are now proved to be
 multiplicity-preserving submultisets of those polynomials' complete upper
 divisors, so their fixed-time and integrated heat contributions are dominated
-by the common full-divisor object. The immediate open passage is uniform
-Gaussian tail control preventing this positive mass from escaping the
-expanding spectral windows (and, separately, the proper-time endpoints).
-That control is necessary before passing to the complete fixed-time xi heat
-sum. A global logarithmic-derivative or arithmetic evaluation of that sum is
-the subsequent rigidity target.
+by the common full-divisor object. Each bounded xi window now cuts an actual
+upper-root submultiset out of that divisor, and the complement is an explicit
+nonnegative heat remainder. Lean proves that full polynomial convergence to
+the complete xi heat sum is equivalent to convergence of this remainder to
+the exact spectral tail `complete sum - window`. The immediate open passage
+is therefore a uniform Gaussian estimate proving that remainder convergence
+and controlling it as the windows expand; proper-time endpoint control is a
+separate subsequent requirement. A global logarithmic-derivative or
+arithmetic evaluation of the complete sum is the later rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -460,6 +474,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   embeds the Hardy core in the full upper polynomial divisor with
   multiplicity and proves fixed-time, truncated-action, and total-mass heat
   domination, including the uniform `¬RH` sequence-level frontier.
+- [`RiemannGaussian/FiniteToEntireHeatWindowRemainder.lean`](RiemannGaussian/FiniteToEntireHeatWindowRemainder.lean)
+  embeds each bounded xi cluster in that full divisor and splits its
+  fixed-time heat sum into the convergent window term plus an exact
+  nonnegative remainder, reducing full convergence to a precise tail limit.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
