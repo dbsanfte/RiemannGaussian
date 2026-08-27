@@ -89,6 +89,16 @@ current checked state, not a list of conjectural steps.
   `complete resultant at 0 = 0` is equivalent to RH, with no noncollision
   premise. This is an exact rigidity reformulation, not yet the arithmetic
   theorem forcing that resultant to vanish.
+- The existing upper-half-plane Poisson/Blaschke chain now reaches that
+  boundary invariant rigorously. Along `x + i*y` as `y -> 0+`, every
+  elementary derivative-variation term is dominated by its summable boundary
+  density, so a checked Tannery argument passes the limit through the complete
+  multiplicity-counted divisor. The real variation total, its extended mass,
+  and the Poisson mass divided by its exact factor `2*y` all converge to one
+  finite boundary limit. That limit equals the embedded norm of the complete
+  signed boundary log derivative and vanishes exactly under RH. The remaining
+  hard step is an arithmetic or entire-function argument forcing this limit
+  to vanish, not an unproved interchange of a limit and an infinite zero sum.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -870,6 +880,10 @@ RH-level part of the project.
   complete signed Blaschke logarithmic derivative on the real spectral
   boundary, including at critical-line zeros, and reduces RH to one fixed
   cancellation-free invariant at the origin.
+- [`RiemannGaussian/RiemannXiBoundaryPoissonLimit.lean`](RiemannGaussian/RiemannXiBoundaryPoissonLimit.lean)
+  proves dominated convergence of the complete Blaschke variation to that
+  boundary invariant and identifies it as the zero-height limit of the
+  exactly normalized complete Poisson mass.
 - [`RiemannGaussian/GaussianPositivityCertificate.lean`](RiemannGaussian/GaussianPositivityCertificate.lean)
   contains the scalable certificate soundness and cofinal-width reductions.
 - [`RiemannGaussian/SuzukiTransportBarrier.lean`](RiemannGaussian/SuzukiTransportBarrier.lean)
