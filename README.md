@@ -146,6 +146,12 @@ current checked state, not a list of conjectural steps.
   homotopy. This is deliberately one-way: it assumes the approximating real
   polynomials and the convergent finite roots, rather than silently invoking
   either their existence or converse root persistence.
+- For the reverse root-matching direction, Lean now verifies an explicit
+  alternative to invoking Hurwitz. A vanishing real affine correction pins a
+  prescribed upper-half-plane zero of `f + i*eta*f'` into every finite
+  homotopy while preserving locally uniform convergence to `f`. Thus the
+  chosen homotopy root need not be selected from drifting finite root sets.
+  Separability and control of the corrected base-root multisets remain open.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -209,10 +215,12 @@ The collective finite Hardy chain is now composed through its strict
 determinant conclusion. The complete core product is used directly and is not
 identified with the determinant product by assumption. A first analytic
 passage is now formalized: homotopies converge locally uniformly and limits of
-convergent finite roots are genuine roots of the limiting homotopy. The next
-Hardy frontier is to construct suitable real-polynomial approximants to xi,
-prove persistence and controlled matching of the required roots, and pass the
-finite strict defect mechanism through that limit.
+convergent finite roots are genuine roots of the limiting homotopy. Exact
+vanishing affine corrections also pin a prescribed limiting homotopy root
+into every corrected approximant without changing the locally uniform limit.
+The next Hardy frontier is to construct suitable real-polynomial approximants
+to xi, obtain separable corrected models with controlled base-root multisets,
+and pass the finite strict defect mechanism through that limit.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -235,6 +243,8 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   the finite Krein--Langer and boundary-Hardy realization.
 - [`RiemannGaussian/FiniteToEntireHomotopy.lean`](RiemannGaussian/FiniteToEntireHomotopy.lean)
   begins the checked locally uniform passage from finite homotopies to xi.
+- [`RiemannGaussian/FiniteToEntireRootPinning.lean`](RiemannGaussian/FiniteToEntireRootPinning.lean)
+  gives the exact vanishing affine correction for a prescribed homotopy root.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
