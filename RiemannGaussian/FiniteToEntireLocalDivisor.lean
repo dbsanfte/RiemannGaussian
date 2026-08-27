@@ -19,12 +19,12 @@ namespace RiemannGaussian
 
 noncomputable section
 
-/-- The local argument principle on some sufficiently small circle around
-one finite-order analytic point. -/
-theorem AnalyticAt.exists_circleIntegral_logDeriv_eq_order
+/-- Given any positive upper bound, the local argument principle holds on a
+strictly smaller circle around a finite-order analytic point. -/
+theorem AnalyticAt.exists_lt_circleIntegral_logDeriv_eq_order
     {f : ℂ → ℂ} {a : ℂ} (hf : AnalyticAt ℂ f a)
-    (hfinite : analyticOrderAt f a ≠ ⊤) :
-    ∃ R : ℝ, 0 < R ∧
+    (hfinite : analyticOrderAt f a ≠ ⊤) {r : ℝ} (hr : 0 < r) :
+    ∃ R : ℝ, 0 < R ∧ R < r ∧
       (∀ z ∈ closedBall a R, z ≠ a → f z ≠ 0) ∧
         (∮ z in C(a, R), logDeriv f z) =
           (analyticOrderNatAt f a : ℂ) *
@@ -56,13 +56,17 @@ theorem AnalyticAt.exists_circleIntegral_logDeriv_eq_order
       filter_upwards [hhan, heq', hfne'] with z hzAnalytic hzEq hzNe
       exact ⟨hzAnalytic, hzEq, hzNe⟩
   obtain ⟨ε, hε, hεsub⟩ := Metric.mem_nhds_iff.mp hlocal
-  let R := ε / 2
+  let R := min (ε / 2) (r / 2)
   have hR : 0 < R := by positivity
+  have hRlt : R < r := by
+    dsimp [R]
+    exact lt_of_le_of_lt (min_le_right _ _) (by linarith)
   have hclosed : closedBall a R ⊆ ball a ε := by
     intro z hz
     rw [mem_closedBall] at hz
     rw [mem_ball]
     dsimp [R] at hz ⊢
+    have hmin : min (ε / 2) (r / 2) ≤ ε / 2 := min_le_left _ _
     linarith
   have hanalytic : ∀ z ∈ closedBall a R, AnalyticAt ℂ h z := by
     intro z hz
@@ -102,7 +106,7 @@ theorem AnalyticAt.exists_circleIntegral_logDeriv_eq_order
       exact (hanalytic z hz).continuousAt.continuousWithinAt
     · intro z hz
       exact (hanalytic z (ball_subset_closedBall hz.1)).differentiableAt
-  refine ⟨R, hR, hfzero, ?_⟩
+  refine ⟨R, hR, hRlt, hfzero, ?_⟩
   rw [circleIntegral.integral_congr hR.le hEqSphere,
     circleIntegral.integral_add hprincipal hhCircle, hhIntegral, add_zero]
   simp only [div_eq_mul_inv, circleIntegral.integral_const_mul,
@@ -110,23 +114,39 @@ theorem AnalyticAt.exists_circleIntegral_logDeriv_eq_order
   push_cast
   ring
 
-/-- Locally uniform real-polynomial approximants eventually carry exactly
-the analytic multiplicity of the limiting function in a sufficiently small
-ball around a finite-order point. -/
-theorem AnalyticAt.exists_eventuallyEq_realPolynomialRootCountInBall_order
+/-- The local argument principle on some sufficiently small circle around
+one finite-order analytic point. -/
+theorem AnalyticAt.exists_circleIntegral_logDeriv_eq_order
+    {f : ℂ → ℂ} {a : ℂ} (hf : AnalyticAt ℂ f a)
+    (hfinite : analyticOrderAt f a ≠ ⊤) :
+    ∃ R : ℝ, 0 < R ∧
+      (∀ z ∈ closedBall a R, z ≠ a → f z ≠ 0) ∧
+        (∮ z in C(a, R), logDeriv f z) =
+          (analyticOrderNatAt f a : ℂ) *
+            (2 * Real.pi : ℝ) * Complex.I := by
+  obtain ⟨R, hR, _, hzero, hIntegral⟩ :=
+    AnalyticAt.exists_lt_circleIntegral_logDeriv_eq_order
+      hf hfinite zero_lt_one
+  exact ⟨R, hR, hzero, hIntegral⟩
+
+/-- Below any prescribed positive radius, locally uniform real-polynomial
+approximants eventually carry exactly the analytic multiplicity of the
+limiting function in an isolating ball around a finite-order point. -/
+theorem AnalyticAt.exists_lt_eventuallyEq_realPolynomialRootCountInBall_order
     {ι : Type*} {phi : Filter ι} [phi.NeBot] [phi.IsCountablyGenerated]
     (A : ι → ℝ[X]) {f : ℂ → ℂ} {a : ℂ}
     (hA : TendstoLocallyUniformlyOn
       (fun n w ↦ ((A n).map Complex.ofRealHom).eval w)
       f phi Set.univ)
-    (hf : AnalyticAt ℂ f a) (hfinite : analyticOrderAt f a ≠ ⊤) :
-    ∃ R : ℝ, 0 < R ∧
+    (hf : AnalyticAt ℂ f a) (hfinite : analyticOrderAt f a ≠ ⊤)
+    {r : ℝ} (hr : 0 < r) :
+    ∃ R : ℝ, 0 < R ∧ R < r ∧
       (∀ z ∈ closedBall a R, z ≠ a → f z ≠ 0) ∧
       ∀ᶠ n in phi,
         realPolynomialRootCountInBall (A n) a R =
           analyticOrderNatAt f a := by
-  obtain ⟨R, hR, hzero, hIntegralOrder⟩ :=
-    AnalyticAt.exists_circleIntegral_logDeriv_eq_order hf hfinite
+  obtain ⟨R, hR, hRlt, hzero, hIntegralOrder⟩ :=
+    AnalyticAt.exists_lt_circleIntegral_logDeriv_eq_order hf hfinite hr
   have hhol : ∀ᶠ n in phi, DifferentiableOn ℂ
       (fun w ↦ ((A n).map Complex.ofRealHom).eval w) Set.univ :=
     Eventually.of_forall fun n ↦
@@ -163,9 +183,60 @@ theorem AnalyticAt.exists_eventuallyEq_realPolynomialRootCountInBall_order
           (((2 * Real.pi : ℝ) : ℂ) * Complex.I) := by ring
   have hmOrder : m = analyticOrderNatAt f a := by
     exact_mod_cast hmCast
-  refine ⟨R, hR, hzero, ?_⟩
+  refine ⟨R, hR, hRlt, hzero, ?_⟩
   filter_upwards [hm] with n hn
   exact hn.trans hmOrder
+
+/-- Locally uniform real-polynomial approximants eventually carry exactly
+the analytic multiplicity of the limiting function in a sufficiently small
+ball around a finite-order point. -/
+theorem AnalyticAt.exists_eventuallyEq_realPolynomialRootCountInBall_order
+    {ι : Type*} {phi : Filter ι} [phi.NeBot] [phi.IsCountablyGenerated]
+    (A : ι → ℝ[X]) {f : ℂ → ℂ} {a : ℂ}
+    (hA : TendstoLocallyUniformlyOn
+      (fun n w ↦ ((A n).map Complex.ofRealHom).eval w)
+      f phi Set.univ)
+    (hf : AnalyticAt ℂ f a) (hfinite : analyticOrderAt f a ≠ ⊤) :
+    ∃ R : ℝ, 0 < R ∧
+      (∀ z ∈ closedBall a R, z ≠ a → f z ≠ 0) ∧
+      ∀ᶠ n in phi,
+        realPolynomialRootCountInBall (A n) a R =
+          analyticOrderNatAt f a := by
+  obtain ⟨R, hR, _, hzero, hcount⟩ :=
+    AnalyticAt.exists_lt_eventuallyEq_realPolynomialRootCountInBall_order
+      A hA hf hfinite zero_lt_one
+  exact ⟨R, hR, hzero, hcount⟩
+
+/-- Below any prescribed positive radius, every spectral xi zero has an
+isolating ball in which globally convergent real-polynomial approximants
+eventually carry exactly its genuine analytic zeta multiplicity. -/
+theorem exists_lt_eventuallyEq_riemannXiSpectral_localRootCount
+    {ι : Type*} {phi : Filter ι} [phi.NeBot] [phi.IsCountablyGenerated]
+    (A : ι → ℝ[X])
+    (hA : TendstoLocallyUniformlyOn
+      (fun n w ↦ ((A n).map Complex.ofRealHom).eval w)
+      riemannXiSpectral phi Set.univ)
+    (rho : NontrivialZetaZero) {r : ℝ} (hr : 0 < r) :
+    ∃ R : ℝ, 0 < R ∧ R < r ∧
+      (∀ z ∈ closedBall (zetaSpectralCoordinate rho.1) R,
+        z ≠ zetaSpectralCoordinate rho.1 → riemannXiSpectral z ≠ 0) ∧
+      ∀ᶠ n in phi,
+        realPolynomialRootCountInBall (A n)
+          (zetaSpectralCoordinate rho.1) R =
+            analyticZetaZeroMultiplicity rho := by
+  have hfinite : analyticOrderAt riemannXiSpectral
+      (zetaSpectralCoordinate rho.1) ≠ ⊤ := by
+    rw [analyticOrderAt_riemannXiSpectral_zetaSpectralCoordinate,
+      analyticOrderAt_riemannXi_eq_riemannZeta]
+    exact analyticOrderAt_riemannZeta_nontrivialZero_ne_top rho
+  obtain ⟨R, hR, hRlt, hzero, hcount⟩ :=
+    AnalyticAt.exists_lt_eventuallyEq_realPolynomialRootCountInBall_order
+      A hA (analyticAt_riemannXiSpectral
+        (zetaSpectralCoordinate rho.1)) hfinite hr
+  refine ⟨R, hR, hRlt, hzero, ?_⟩
+  simpa only
+    [analyticOrderNatAt_riemannXiSpectral_zetaSpectralCoordinate] using
+      hcount
 
 /-- Every spectral xi zero has a fixed small ball in which globally
 convergent real-polynomial approximants eventually carry exactly its genuine
@@ -184,19 +255,10 @@ theorem exists_eventuallyEq_riemannXiSpectral_localRootCount
         realPolynomialRootCountInBall (A n)
           (zetaSpectralCoordinate rho.1) R =
             analyticZetaZeroMultiplicity rho := by
-  have hfinite : analyticOrderAt riemannXiSpectral
-      (zetaSpectralCoordinate rho.1) ≠ ⊤ := by
-    rw [analyticOrderAt_riemannXiSpectral_zetaSpectralCoordinate,
-      analyticOrderAt_riemannXi_eq_riemannZeta]
-    exact analyticOrderAt_riemannZeta_nontrivialZero_ne_top rho
-  obtain ⟨R, hR, hzero, hcount⟩ :=
-    AnalyticAt.exists_eventuallyEq_realPolynomialRootCountInBall_order
-      A hA (analyticAt_riemannXiSpectral
-        (zetaSpectralCoordinate rho.1)) hfinite
-  refine ⟨R, hR, hzero, ?_⟩
-  simpa only
-    [analyticOrderNatAt_riemannXiSpectral_zetaSpectralCoordinate] using
-      hcount
+  obtain ⟨R, hR, _, hzero, hcount⟩ :=
+    exists_lt_eventuallyEq_riemannXiSpectral_localRootCount
+      A hA rho zero_lt_one
+  exact ⟨R, hR, hzero, hcount⟩
 
 /-- Under failure of RH, the same root-pinned canonical Hardy sequence
 recovers the exact analytic multiplicity of every spectral xi zero in a

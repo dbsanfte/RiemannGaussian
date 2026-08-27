@@ -261,6 +261,17 @@ current checked state, not a list of conjectural steps.
   multiset eventually has exactly the genuine analytic zeta multiplicity.
   This holds for every zeta zero along the same root-pinned canonical Hardy
   sequence forced by failure of RH; no simplicity assumption is made.
+- The local divisor passage is now assembled over arbitrary finite families.
+  Lean chooses pairwise disjoint isolating balls and synchronizes all exact
+  multiplicity counts. For any continuous real weight, the weighted sum over
+  the full polynomial root multiset in one isolating ball converges to the
+  analytic multiplicity times the weight at the limiting xi zero. Applying
+  this to the fixed-proper-time upper-half-plane heat kernel proves that every
+  finite upper spectral-xi heat window is the limit of literal heat sums over
+  pairwise disjoint polynomial-root clusters. Under `¬RH` this convergence
+  holds along the same root-pinned canonical Hardy sequence. This is a
+  bounded-window result; it asserts neither uniform control of roots outside
+  the selected clusters nor a complete-window tail limit.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -348,15 +359,16 @@ convergent sum of heat-weighted local residues of `xi'/xi`, and its vanishing
 is equivalent to RH. Expanding finite spectral windows and zero-free boundary
 truncations are now proved to converge to it. Zero-free circle integrals have
 now been combined with the exact polynomial argument principle to prove
-eventual local multiplicity stability for the same finite Hardy sequence, and
-the stabilized count in an isolating ball around each individual xi zero is
-now proved equal to its genuine analytic multiplicity. The immediate open
-passage is to assemble finitely many such isolating balls into a simultaneous
-bounded-divisor statement and prove convergence of the corresponding weighted
-finite Hardy heat sums to the spectral residue windows. Uniform Gaussian tail
-control remains necessary before passing from bounded windows to the complete
-fixed-time heat sum. A global logarithmic-derivative or arithmetic evaluation
-of that sum is the subsequent rigidity target.
+eventual local multiplicity stability for the same finite Hardy sequence. The
+stabilized counts are identified with genuine analytic multiplicities, finite
+families are isolated simultaneously in disjoint balls, and continuous
+weighted root sums now converge. In particular, every bounded upper spectral
+heat window is a checked limit of fixed-time heat sums over the corresponding
+full polynomial-root clusters. The immediate open passage is narrower: relate
+the positive finite Hardy inside-core roots to those full divisor clusters.
+Uniform Gaussian tail control is then necessary before passing from bounded
+windows to the complete fixed-time heat sum. A global logarithmic-derivative
+or arithmetic evaluation of that sum is the subsequent rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -427,6 +439,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
 - [`RiemannGaussian/FiniteToEntireLocalDivisor.lean`](RiemannGaussian/FiniteToEntireLocalDivisor.lean)
   proves the local analytic argument principle and identifies each stabilized
   polynomial count with the exact spectral-xi zero multiplicity.
+- [`RiemannGaussian/FiniteToEntireBoundedHeat.lean`](RiemannGaussian/FiniteToEntireBoundedHeat.lean)
+  synchronizes finite disjoint divisor clusters and proves convergence of
+  their continuous weighted sums, including every fixed finite spectral heat
+  window along the root-pinned Hardy sequence.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built

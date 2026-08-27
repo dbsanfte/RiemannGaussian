@@ -99,6 +99,7 @@ import RiemannGaussian.FiniteToEntireLogDerivative
 import RiemannGaussian.PolynomialLogDerivativeCircle
 import RiemannGaussian.FiniteToEntireRootCountCircle
 import RiemannGaussian.FiniteToEntireLocalDivisor
+import RiemannGaussian.FiniteToEntireBoundedHeat
 import RiemannGaussian.FiniteAlgebraicHilbert
 import RiemannGaussian.FiniteHardySylvesterProjection
 import RiemannGaussian.FiniteRootCountBridge
