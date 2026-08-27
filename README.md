@@ -326,6 +326,14 @@ current checked state, not a list of conjectural steps.
   height mass. In particular, finiteness of the latter implies finiteness of
   the full proper-time action. Finiteness or a decisive arithmetic bound for
   the spectral height mass itself is not assumed.
+- Functional-equation symmetry now identifies that height mass in the
+  original zeta coordinate. Lean proves the exact extended-real identity
+  `sum_rho m(rho) * |Re(rho) - 1/2| = 2 * upperSpectralHeightMass`, using the
+  genuine analytic multiplicities and the critical-line reflection
+  equivalence. Vanishing of this full absolute displacement is again proved
+  equivalent to RH. Thus the new entire-side size target is a literal global
+  arithmetic displacement of the zeta divisor, not an artifact of the
+  rotated coordinate.
 - On every zero-free open region, Lean now proves locally uniform convergence
   of the root-pinned polynomial logarithmic derivatives to the genuine
   spectral-xi logarithmic derivative. On each compact zero-free subset the
@@ -658,9 +666,11 @@ remaining arithmetic/entire-function rigidity theorem must exclude both
 possibilities (or strengthen the dichotomy until one becomes contradictory).
 The complete spectral defect is now also bounded by a finite observation-
 dependent constant times the extended upper spectral height mass, reducing
-the entire-side size question to a concrete divisor statistic. A global
-logarithmic-derivative or explicit-formula evaluation remains the natural
-route to the required rigidity.
+the entire-side size question to a concrete divisor statistic. That statistic
+is now exactly half the full multiplicity-counted sum
+`sum_rho m(rho) * |Re(rho) - 1/2|`. A global logarithmic-derivative or
+explicit-formula evaluation remains the natural route to the required
+rigidity.
 
 The remaining small-time estimate is not assumed. Closing the Gaussian
 positivity statement, or completing the finite-to-xi Hardy route, is the
@@ -859,6 +869,10 @@ RH-level part of the project.
   obtains a uniform gap from a noncolliding observation point to the spectral
   divisor and uses it to bound the complete logarithmic defect and heat action
   by the extended upper spectral height mass.
+- [`RiemannGaussian/RiemannXiCriticalLineDeviation.lean`](RiemannGaussian/RiemannXiCriticalLineDeviation.lean)
+  uses critical-line reflection and multiplicity invariance to identify twice
+  the upper spectral height with the full absolute horizontal displacement of
+  nontrivial zeta zeros from `Re(s) = 1/2`.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
