@@ -220,8 +220,10 @@ current checked state, not a list of conjectural steps.
   radius product. For every canonical finite Hardy core, that mass is bounded
   below by one fixed positive threshold defect. Consequently failure of RH
   produces a root-pinned approximating sequence carrying these uniformly
-  positive finite heat frontiers at every stage. Passing those varying heat
-  actions to an arithmetic or entire limiting object remains open.
+  positive finite heat frontiers at every stage. The full fixed-time and
+  compact positive-time limiting passages for this same sequence are now
+  formalized below; only uniform control at the two improper endpoints remains
+  open.
 - At each fixed positive proper time, Lean now constructs the complete
   multiplicity-counted upper spectral-xi heat sum and proves its absolute
   convergence from the unconditional Gaussian zero bound. Every coefficient
@@ -232,9 +234,10 @@ current checked state, not a list of conjectural steps.
   equivalent to RH. Canonical finite spectral windows, including a concrete
   sequence with zero-free boundaries, are proved to converge to this sum in
   their literal logarithmic-residue form; RH is also equivalent to every such
-  finite window vanishing. What remains open is convergence of the varying
-  finite Hardy heat sums to these spectral windows and a global arithmetic
-  evaluation of the complete sum.
+  finite window vanishing. The later radial chain now proves convergence of
+  the varying full finite Hardy heat sums to this complete sum. What remains
+  open is endpoint-uniform passage of the integrated defect and a global
+  arithmetic evaluation of the complete sum.
 - On every zero-free open region, Lean now proves locally uniform convergence
   of the root-pinned polynomial logarithmic derivatives to the genuine
   spectral-xi logarithmic derivative. On each compact zero-free subset the
@@ -516,8 +519,20 @@ polynomial heat. Under `¬RH`, this fixed-time limit holds at every upper
 observation point and positive proper time for the same canonical finite
 Hardy sequence carrying the persistent integrated defect. The immediate open
 step is proper-time endpoint control strong enough to pass that integrated
-defect through the fixed-time limit. A global logarithmic-derivative or
-arithmetic evaluation of the complete sum is the subsequent rigidity target.
+defect through the fixed-time limit. Lean now closes the entire compact
+positive-time part of that passage: a one-root heat term is proved to be an
+integral of `exp(-x*t)` over an ordered nonnegative squared-distance interval,
+so it is antitone in `t`; finite upper-divisor heats inherit this property.
+Convergence at the left endpoint of any `0 < a <= b` therefore gives a single
+dominating constant on `[a,b]`, and dominated convergence proves that the
+finite polynomial heat actions converge to the interval integral of the
+complete spectral-xi heat. The limiting spectral heat is also proved
+interval-integrable there. Under `¬RH`, the same canonical sequence now
+simultaneously carries the fixed positive total-mass lower bound and this
+compact-action convergence. Hence any surviving finite Hardy defect must
+escape through `t -> 0` or `t -> infinity`; there is no longer an unformalized
+interior proper-time gap. A global logarithmic-derivative or arithmetic
+evaluation of the complete sum is the subsequent rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -668,6 +683,11 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   instantiates that triangular array, proves radial spectral windows exhaust
   the complete residue heat series, and establishes full fixed-time
   polynomial-heat convergence for the canonical `¬RH` Hardy sequence.
+- [`RiemannGaussian/FiniteToEntireProperTimeCompact.lean`](RiemannGaussian/FiniteToEntireProperTimeCompact.lean)
+  proves positive-time antitonicity of the hyperbolic heat kernel and uses
+  dominated convergence to identify every compact proper-time polynomial
+  action with the corresponding complete spectral-xi heat integral, leaving
+  only the endpoints `0` and `infinity` open.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
