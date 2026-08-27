@@ -425,12 +425,18 @@ same scale: a Cauchy coefficient estimate combined with the proved quadratic
 growth of spectral xi gives constants `A ≥ 1` and `c > 0` for which the
 order-`n` real Taylor polynomial converges uniformly to spectral xi throughout
 the expanding disk `‖w‖ ≤ c * √n`, with an explicit geometrically decaying
-majorant. The immediate open passage is to preserve this expanding-disk bound
-through exact root pinning and a suitably faster separability perturbation,
-then use expanding zero-free circles to identify all enclosed polynomial
-roots with genuine xi clusters. Proper-time endpoint control is a separate
-subsequent requirement. A global logarithmic-derivative or arithmetic
-evaluation of the complete sum is the later rigidity target.
+majorant. The separability half of this passage is now discharged: Lean can
+avoid every finite bad-parameter set inside an arbitrary positive vanishing
+budget, and coefficientwise radial majorants make the resulting cubic and
+quadratic modification at most `exp(-n) / 2` on any prescribed growing disk.
+Thus separability and degree lifting preserve any expanding-disk convergence
+already possessed by a root-pinned input sequence. The immediate open step is
+to prove the needed quantitative derivative remainder for the affine
+root-pinning correction itself, then use expanding zero-free circles to
+identify all enclosed polynomial roots with genuine xi clusters. Proper-time
+endpoint control is a separate subsequent requirement. A global logarithmic-
+derivative or arithmetic evaluation of the complete sum is the later rigidity
+target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -524,6 +530,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   derives quantitative Cauchy remainder bounds from xi growth and proves
   uniform convergence of the real Taylor approximants on disks of radius
   `c * √n` for a checked constant `c > 0`.
+- [`RiemannGaussian/FiniteToEntireFastSeparable.lean`](RiemannGaussian/FiniteToEntireFastSeparable.lean)
+  constructs separable exact-root perturbations under arbitrary budgets and
+  proves an `exp(-n) / 2` uniform modification bound on any prescribed
+  stage-dependent disk.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
