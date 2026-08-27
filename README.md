@@ -122,6 +122,11 @@ current checked state, not a list of conjectural steps.
   inside-core nodes are distinct, their interpolation identities make every
   node a literal numerator root, and Lean proves that the complete core-root
   polynomial divides the transformed difference numerator.
+- Lean proves a rational maximum principle on the closed upper half-plane:
+  a polynomial quotient with no closed-half-plane poles and numerator degree
+  at most its denominator degree inherits every uniform real-boundary norm
+  bound. This is the analytic engine for the remaining factored-quotient
+  estimate.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
