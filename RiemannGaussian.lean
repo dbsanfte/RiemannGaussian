@@ -91,6 +91,8 @@ import RiemannGaussian.FiniteToEntireHardyFrontier
 import RiemannGaussian.FiniteToEntireHardyReductio
 import RiemannGaussian.FiniteToEntireTheta
 import RiemannGaussian.FiniteToEntireHardyCluster
+import RiemannGaussian.HyperbolicHeatBridge
+import RiemannGaussian.FiniteToEntireHeatFrontier
 import RiemannGaussian.FiniteAlgebraicHilbert
 import RiemannGaussian.FiniteHardySylvesterProjection
 import RiemannGaussian.FiniteRootCountBridge

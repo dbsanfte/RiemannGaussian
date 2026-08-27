@@ -209,6 +209,16 @@ current checked state, not a list of conjectural steps.
   not yet proved independent of the subsequence or identified with a
   spectral-xi arithmetic invariant; that identification is the active
   rigidity frontier.
+- The logarithmic pseudo-hyperbolic defect now has an exact Gaussian
+  proper-time representation in Lean. For two distinct upper-half-plane
+  points, the truncated integral of a positive heat-kernel difference tends
+  to `-2 log rho`. This is lifted with full multiplicities to finite root
+  multisets, where the limiting heat mass is exactly `-2 log` of the complete
+  radius product. For every canonical finite Hardy core, that mass is bounded
+  below by one fixed positive threshold defect. Consequently failure of RH
+  produces a root-pinned approximating sequence carrying these uniformly
+  positive finite heat frontiers at every stage. Passing those varying heat
+  actions to an arithmetic or entire limiting object remains open.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -288,7 +298,11 @@ conditional construction.
 The un-cancelled theta quotients now converge locally uniformly on every
 zero-free open region. The next Hardy frontier is to construct and identify
 the corresponding cancelled entire-limit invariant at the pinned zero and
-rigorously pass the uniform finite bound to it.
+rigorously pass the uniform finite bound to it. The new proper-time bridge
+recasts the complete finite hyperbolic product as a positive Gaussian heat
+mass with a stage-independent lower bound; the immediate open passage is to
+control these varying multiplicity-counted heat actions as the polynomial
+approximants tend to spectral xi and identify their limit arithmetically.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -333,6 +347,12 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
 - [`RiemannGaussian/FiniteToEntireTheta.lean`](RiemannGaussian/FiniteToEntireTheta.lean)
   proves locally uniform convergence of `E_eta^sharp/E_eta` away from zeros
   of the limiting homotopy and isolates the required cancellation at a pole.
+- [`RiemannGaussian/HyperbolicHeatBridge.lean`](RiemannGaussian/HyperbolicHeatBridge.lean)
+  identifies finite hyperbolic product defects with positive Gaussian
+  proper-time heat actions.
+- [`RiemannGaussian/FiniteToEntireHeatFrontier.lean`](RiemannGaussian/FiniteToEntireHeatFrontier.lean)
+  composes that identity with the finite Hardy sequence forced by failure of
+  RH and proves a uniform positive lower bound for every finite heat mass.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
