@@ -59,6 +59,13 @@ current checked state, not a list of conjectural steps.
   elementary Blaschke derivative variation is finite as well. Each extended
   mass is identified with the embedding of an actually convergent real
   series, so the frontier no longer hides a possible infinite value.
+- The finite Blaschke variation has therefore been promoted to its actual
+  real total `V(z)`. Lean proves `V(z) = 0` exactly under RH and `V(z) > 0`
+  under `not RH`. At every noncolliding upper point, failure of RH now forces
+  a direct two-way finite-window frontier: either the exact xi reflection
+  residual is at least `V(z)/4` along arbitrarily late windows, or the
+  weighted unit-phase chordal energy is eventually at least `(V(z)/4)^2`.
+  This result has no polynomial-height or infinite-mass escape branch.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -824,6 +831,10 @@ RH-level part of the project.
   applies inverse-square summability to prove the complete Poisson,
   logarithmic heat-action, and Blaschke-variation masses finite and realizes
   them as convergent nonnegative real series.
+- [`RiemannGaussian/RiemannXiFiniteVariationFrontier.lean`](RiemannGaussian/RiemannXiFiniteVariationFrontier.lean)
+  defines the actual finite real Blaschke-variation total and, under failure
+  of RH, derives a direct residual-versus-unit-phase-energy dichotomy with no
+  approximation-height branch.
 - [`RiemannGaussian/GaussianPositivityCertificate.lean`](RiemannGaussian/GaussianPositivityCertificate.lean)
   contains the scalable certificate soundness and cofinal-width reductions.
 - [`RiemannGaussian/SuzukiTransportBarrier.lean`](RiemannGaussian/SuzukiTransportBarrier.lean)
