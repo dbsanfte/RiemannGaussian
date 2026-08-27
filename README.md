@@ -233,6 +233,15 @@ current checked state, not a list of conjectural steps.
   error. Thus no mass can disappear in the already-controlled interior: any
   contradiction must come from ruling out escape through proper time zero or
   infinity.
+- The large-time endpoint is now closed away from spectral collision. Lean
+  proves that the complete spectral-xi heat tends to zero as proper time tends
+  to infinity whenever the observation point is not itself a xi zero. Locally
+  uniform polynomial convergence then supplies one eventual positive gap from
+  that point to every polynomial upper root. A relative exponential-decay
+  estimate converts fixed-time heat convergence into uniform tightness of all
+  later finite actions. Consequently the canonical `¬RH` sequence satisfies
+  an exact dichotomy: its large-time endpoint is uniformly tight, or its
+  pinned homotopy point is literally a spectral-xi zero.
 - At each fixed positive proper time, Lean now constructs the complete
   multiplicity-counted upper spectral-xi heat sum and proves its absolute
   convergence from the unconditional Gaussian zero bound. Every coefficient
@@ -549,6 +558,16 @@ into small-time and large-time endpoint estimates. A global
 logarithmic-derivative or arithmetic evaluation of the complete sum is the
 subsequent rigidity target.
 
+At the large-time endpoint, that task is now substantially resolved. Away
+from a spectral-xi zero, the complete heat tends to zero, the approximating
+upper-root divisors acquire a common positive observation gap, and every
+finite action after time `T` is bounded by its heat at `T` divided by the
+squared gap. This proves uniform large-time tightness for the canonical
+sequence. The remaining dichotomy is exact: either endpoint escape is forced
+toward `t -> 0`, or the chosen pinned homotopy point collides with a genuine
+spectral-xi zero. The next work is to eliminate or bypass that collision
+branch and to attack the small-time endpoint.
+
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
 
@@ -707,6 +726,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   proves compact actions are bounded by complete finite mass, defines the
   nonnegative endpoint defect, and gives its exact eventual lower bound along
   the canonical `¬RH` sequence.
+- [`RiemannGaussian/FiniteToEntireProperTimeLarge.lean`](RiemannGaussian/FiniteToEntireProperTimeLarge.lean)
+  proves spectral heat decay at infinity away from the xi divisor, derives an
+  eventual uniform polynomial-root gap from locally uniform convergence, and
+  closes the large-time endpoint except for literal spectral collision.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
