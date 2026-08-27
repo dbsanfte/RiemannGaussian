@@ -100,7 +100,9 @@ current checked state, not a list of conjectural steps.
   `det(I - C† C) = |∏ S(w)|²` for the complete upper-root multiset. Lean also
   proves that any chosen upper-root occurrence controls the complete square-
   root determinant by `sqrt(det(I - C† C)) ≤ |S(w)|`, since every remaining
-  factor is contractive.
+  factor is contractive. A denominator-free Schwarz--Pick contraction for
+  `S` at arbitrary upper-half-plane points is derived directly from the
+  positive `2 × 2` Pick matrix and exact norm-square identities.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -160,10 +162,12 @@ The unequal-height finite hyperbolic optimization and its exact-polynomial
 inside-core specialization are now formalized, as is the higher-index Hardy
 determinant formula conditional on a complete root Cauchy basis. The complete
 finite confluent determinant is now unconditional, including repeated roots.
-The immediate frontier is to join it to the structural inside-core selection
-and turn the selected off-axis configuration into the required global Hardy
-determinant contradiction. Beyond that lies the genuinely analytic passage
-from finite polynomial models to the entire xi function.
+The immediate frontier is to combine its chosen-root bound and the checked
+Schwarz--Pick contraction with the structural inside-core radius product. The
+missing finite step is the corresponding Blaschke/Pick comparison for that
+selected core; it is not being identified with the determinant product by
+assumption. Beyond that lies the genuinely analytic passage from finite
+polynomial models to the entire xi function.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
