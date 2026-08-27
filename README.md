@@ -42,8 +42,13 @@ current checked state, not a list of conjectural steps.
   `4` absorbs `x^u` into half the exponential tail at an explicit cost growing
   like `u^(4/3)`, instead of the earlier quadratic cost. The resulting entire
   upper-tail Mellin bound is strictly subquadratic in the positive real
-  exponent. The next analytic step is to propagate it through the split xi
-  formula and Jensen counting to prove inverse-square divisor summability.
+  exponent.
+- That improvement has been propagated through both reflected halves of the
+  completed-zeta formula and the polynomial xi prefactor. Lean now proves
+  unconditionally that some `A >= 1` satisfies
+  `norm(riemannXi(z)) <= exp(A*(norm(z)+1)^(3/2))` for every complex `z`.
+  This checked global exponent is strictly below two. The next analytic step
+  is the corresponding Jensen count and dyadic inverse-square divisor sum.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -795,6 +800,9 @@ RH-level part of the project.
 - [`RiemannGaussian/GaussianXiMellinSubquadratic.lean`](RiemannGaussian/GaussianXiMellinSubquadratic.lean)
   replaces the quadratic Mellin power-absorption estimate by a checked
   `4/3`-power Young bound, preparing a subquadratic xi divisor count.
+- [`RiemannGaussian/GaussianXiSubquadraticGrowth.lean`](RiemannGaussian/GaussianXiSubquadraticGrowth.lean)
+  propagates that estimate through completed zeta and proves unconditional
+  global `3/2`-power exponential growth for the pole-cleared xi function.
 - [`RiemannGaussian/GaussianPositivityCertificate.lean`](RiemannGaussian/GaussianPositivityCertificate.lean)
   contains the scalable certificate soundness and cofinal-width reductions.
 - [`RiemannGaussian/SuzukiTransportBarrier.lean`](RiemannGaussian/SuzukiTransportBarrier.lean)

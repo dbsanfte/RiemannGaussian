@@ -18,6 +18,7 @@ import RiemannGaussian.GaussianZetaGeometry
 import RiemannGaussian.GaussianZetaCounting
 import RiemannGaussian.GaussianXiGrowth
 import RiemannGaussian.GaussianXiMellinSubquadratic
+import RiemannGaussian.GaussianXiSubquadraticGrowth
 import RiemannGaussian.GaussianComplexHeat
 import RiemannGaussian.GaussianDigammaGrowth
 import RiemannGaussian.GaussianExplicitFormula
