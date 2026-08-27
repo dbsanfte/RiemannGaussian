@@ -237,14 +237,22 @@ current checked state, not a list of conjectural steps.
   spectral-xi logarithmic derivative. On each compact zero-free subset the
   approximants are eventually zero-free, and their logarithmic-derivative
   circle integrals converge to the xi circle integral. These results apply to
-  the same exact finite Hardy sequence forced by failure of RH; converting the
-  boundary integrals into stable multiplicity counts is the next local-divisor
-  step.
+  the same exact finite Hardy sequence forced by failure of RH.
 - On the finite side of that step, Lean proves the full polynomial argument
   principle on a circle: when the boundary is root-free, the integral of
   `p'/p` is exactly `2*pi*i` times the number of roots in the disk, counted by
   the polynomial root multiset with algebraic multiplicity. The proof expands
   every Cauchy kernel and checks its inside/outside circle integral directly.
+- Combining those results, Lean now proves genuine local multiplicity
+  stability. For every circle avoiding the spectral-xi divisor, the number of
+  roots of any globally locally-uniform real-polynomial approximating net is
+  eventually constant, and the limiting xi logarithmic-derivative integral is
+  exactly that stabilized natural number times `2*pi*i`. In particular, this
+  holds simultaneously for every zero-free circle along the same root-pinned
+  canonical Hardy sequence forced by failure of RH. The discreteness passage
+  is explicit: convergence of fixed positive multiples of natural numbers is
+  proved to force eventual equality, rather than assumed from an informal
+  argument-principle limit.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -330,12 +338,15 @@ mass with a stage-independent lower bound. Independently, the complete
 fixed-time spectral-xi heat sum is now constructed as an absolutely
 convergent sum of heat-weighted local residues of `xi'/xi`, and its vanishing
 is equivalent to RH. Expanding finite spectral windows and zero-free boundary
-truncations are now proved to converge to it. The immediate open passage is
-to combine the now-checked boundary-integral convergence with the exact
-polynomial root-count formula and obtain stable local multiplicity counts for
-spectral xi, then prove that the varying finite Hardy heat sums converge to
-the spectral divisor windows. A global logarithmic-derivative or arithmetic
-evaluation of the fixed-time sum remains the subsequent rigidity target.
+truncations are now proved to converge to it. Zero-free circle integrals have
+now been combined with the exact polynomial argument principle to prove
+eventual local multiplicity stability for the same finite Hardy sequence. The
+immediate open passage is to identify those stabilized counts with the actual
+bounded spectral-xi divisor and then prove convergence of the corresponding
+bounded finite Hardy heat sums to the spectral residue windows. Uniform
+Gaussian tail control remains necessary before passing from bounded windows
+to the complete fixed-time heat sum. A global logarithmic-derivative or
+arithmetic evaluation of that sum is the subsequent rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -399,6 +410,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
 - [`RiemannGaussian/PolynomialLogDerivativeCircle.lean`](RiemannGaussian/PolynomialLogDerivativeCircle.lean)
   proves the exact multiplicity-counted polynomial argument principle on
   root-free circles.
+- [`RiemannGaussian/FiniteToEntireRootCountCircle.lean`](RiemannGaussian/FiniteToEntireRootCountCircle.lean)
+  combines the zero-free integral limit with discreteness to prove eventual
+  local multiplicity stability, including for the root-pinned Hardy sequence
+  under failure of RH.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
