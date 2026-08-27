@@ -366,6 +366,17 @@ current checked state, not a list of conjectural steps.
   including infinity. Vanishing of this variation is equivalent to RH. The
   next unchecked issue is cancellation when these individual derivatives are
   assembled into one finite divisor product.
+- That finite-product assembly and its cancellation bookkeeping are now
+  checked. Lean constructs the multiplicity-weighted upper spectral Blaschke
+  product in every window and identifies its logarithmic derivative exactly
+  with the signed paired Cauchy sum. It defines the difference between the
+  sum of individual term norms and the norm of their sum, proves this
+  cancellation gap nonnegative, and obtains the finite bound
+  `PoissonWindow <= ofReal(2*Im(z)) * ofReal(norm(product'/product) + gap)`.
+  Thus a rigidity theorem must now control two explicit analytic objects—the
+  finite-product resultant and its cancellation gap—alongside the already
+  exposed analytic remainder relating finite Cauchy windows to genuine
+  `xi'/xi`; none is being assumed negligible.
 - On every zero-free open region, Lean now proves locally uniform convergence
   of the root-pinned polynomial logarithmic derivatives to the genuine
   spectral-xi logarithmic derivative. On each compact zero-free subset the
@@ -922,6 +933,11 @@ RH-level part of the project.
   computes the elementary spectral Blaschke derivatives and identifies the
   finite and complete Poisson masses exactly with observation height times
   total multiplicity-weighted derivative variation.
+- [`RiemannGaussian/RiemannXiBlaschkeLogDerivativeCancellation.lean`](RiemannGaussian/RiemannXiBlaschkeLogDerivativeCancellation.lean)
+  assembles the finite spectral Blaschke product, identifies its logarithmic
+  derivative with the signed paired Cauchy sum, isolates the nonnegative
+  triangle-cancellation gap, and bounds finite Poisson mass by the product
+  log-derivative norm plus that gap.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
