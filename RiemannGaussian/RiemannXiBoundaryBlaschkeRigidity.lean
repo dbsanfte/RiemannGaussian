@@ -4,10 +4,11 @@ import RiemannGaussian.RiemannXiCompletePhaseDispersion
 # Boundary Blaschke rigidity
 
 On the real spectral axis, every selected upper-half-plane Blaschke
-logarithmic-derivative term is a positive real multiple of `I`.  A real point
-outside the spectral divisor has a uniform gap from every zero; inverse-square
-divisor summability therefore makes the boundary Poisson-density series
-convergent.
+logarithmic-derivative term is a positive real multiple of `I`.  Even if a
+real point is itself a critical-line zero, analyticity isolates that point and
+gives a uniform gap from every selected upper zero.  Inverse-square divisor
+summability therefore makes the boundary Poisson-density series convergent
+at every real point.
 
 The complete signed resultant on that boundary point is exactly `I` times
 this nonnegative real sum.  It vanishes exactly when there are no upper
@@ -100,7 +101,8 @@ spectral-ordinate summand. -/
 theorem zetaUpperBlaschkeBoundaryDensitySummand_le_inverseSquare
     {x delta : ℝ} (hdelta : 0 < delta)
     (hgap : ∀ rho : NontrivialZetaZero,
-      delta ≤ ‖(x : ℂ) - zetaSpectralCoordinate rho.1‖)
+      0 < (zetaSpectralCoordinate rho.1).im →
+        delta ≤ ‖(x : ℂ) - zetaSpectralCoordinate rho.1‖)
     (rho : NontrivialZetaZero) :
     zetaUpperBlaschkeBoundaryDensitySummand x rho ≤
       realBoundaryInverseSquareCoefficient x delta *
@@ -126,7 +128,7 @@ theorem zetaUpperBlaschkeBoundaryDensitySummand_le_inverseSquare
     have hden : Q ≤ C * D := by
       exact
         one_add_re_sq_le_realBoundaryInverseSquareCoefficient_mul_normSq
-          hdelta (hgap rho)
+          hdelta (hgap rho hupper)
     have hrecip : 1 / D ≤ C / Q := by
       rw [div_le_div_iff₀ hD hQ]
       simpa only [one_mul] using hden
@@ -154,13 +156,58 @@ theorem zetaUpperBlaschkeBoundaryDensitySummand_le_inverseSquare
         positivity)
       (div_nonneg (Nat.cast_nonneg _) (by positivity))
 
-/-- At every real point outside the spectral divisor, the complete boundary
-density is summable. -/
+/-- Every real boundary point has a uniform positive distance from the upper
+spectral divisor.  A possible zero at the boundary point itself lies on the
+critical line and is excluded from the selected upper divisor; analyticity
+isolates it from every other spectral zero. -/
+theorem exists_uniform_upper_zetaSpectralCoordinate_gap_real (x : ℝ) :
+    ∃ delta : ℝ, 0 < delta ∧
+      ∀ rho : NontrivialZetaZero,
+        0 < (zetaSpectralCoordinate rho.1).im →
+          delta ≤ ‖(x : ℂ) - zetaSpectralCoordinate rho.1‖ := by
+  by_cases hxi : riemannXiSpectral (x : ℂ) ≠ 0
+  · obtain ⟨delta, hdelta, hgap⟩ :=
+      exists_uniform_zetaSpectralCoordinate_gap_of_ne_zero hxi
+    exact ⟨delta, hdelta, fun rho _ ↦ hgap rho⟩
+  · have hxzero : riemannXiSpectral (x : ℂ) = 0 := not_ne_iff.mp hxi
+    obtain ⟨rho₀, hxrho⟩ :=
+      (riemannXiSpectral_eq_zero_iff_exists_zetaZero (x : ℂ)).mp hxzero
+    have hfinite : analyticOrderAt riemannXiSpectral (x : ℂ) ≠ ⊤ := by
+      rw [hxrho,
+        analyticOrderAt_riemannXiSpectral_zetaSpectralCoordinate,
+        analyticOrderAt_riemannXi_eq_riemannZeta]
+      exact analyticOrderAt_riemannZeta_nontrivialZero_ne_top rho₀
+    have hfne : ∀ᶠ z in 𝓝[≠] (x : ℂ), riemannXiSpectral z ≠ 0 :=
+      (analyticAt_riemannXiSpectral
+        (x : ℂ)).eventually_eq_zero_or_eventually_ne_zero.resolve_left
+          fun hzero ↦ hfinite (analyticOrderAt_eq_top.mpr hzero)
+    have hfne' : ∀ᶠ z in 𝓝 (x : ℂ),
+        z ≠ (x : ℂ) → riemannXiSpectral z ≠ 0 := by
+      rw [eventually_nhdsWithin_iff] at hfne
+      exact hfne
+    obtain ⟨delta, hdelta, hball⟩ := Metric.mem_nhds_iff.mp hfne'
+    refine ⟨delta, hdelta, ?_⟩
+    intro rho hupper
+    by_contra hgap
+    have hlt : ‖(x : ℂ) - zetaSpectralCoordinate rho.1‖ < delta :=
+      lt_of_not_ge hgap
+    have hmem : zetaSpectralCoordinate rho.1 ∈ ball (x : ℂ) delta := by
+      simpa only [mem_ball, dist_eq, norm_sub_rev] using hlt
+    have hne : zetaSpectralCoordinate rho.1 ≠ (x : ℂ) := by
+      intro heq
+      have him := congrArg Complex.im heq
+      simp only [ofReal_im] at him
+      linarith
+    exact (hball hmem hne)
+      ((riemannXiSpectral_eq_zero_iff_exists_zetaZero _).mpr ⟨rho, rfl⟩)
+
+/-- At every real boundary point, including critical-line zeros, the complete
+upper-divisor boundary density is summable. -/
 theorem summable_zetaUpperBlaschkeBoundaryDensitySummand
-    {x : ℝ} (hxi : riemannXiSpectral (x : ℂ) ≠ 0) :
+    (x : ℝ) :
     Summable (zetaUpperBlaschkeBoundaryDensitySummand x) := by
   obtain ⟨delta, hdelta, hgap⟩ :=
-    exists_uniform_zetaSpectralCoordinate_gap_of_ne_zero hxi
+    exists_uniform_upper_zetaSpectralCoordinate_gap_real x
   apply
     (summable_distinct_zetaZeroInverseSquareSpectralRe.mul_left
       (realBoundaryInverseSquareCoefficient x delta)).of_nonneg_of_le
@@ -182,23 +229,21 @@ theorem riemannXiUpperBlaschkeBoundaryDensityTotal_nonneg (x : ℝ) :
   exact tsum_nonneg (zetaUpperBlaschkeBoundaryDensitySummand_nonneg x)
 
 /-- One upper spectral zero makes the complete boundary density strictly
-positive at every noncolliding real point. -/
+positive at every real point. -/
 theorem riemannXiUpperBlaschkeBoundaryDensityTotal_pos_of_upper_zero
-    {x : ℝ} (hxi : riemannXiSpectral (x : ℂ) ≠ 0)
-    (rho : NontrivialZetaZero)
+    (x : ℝ) (rho : NontrivialZetaZero)
     (hupper : 0 < (zetaSpectralCoordinate rho.1).im) :
     0 < riemannXiUpperBlaschkeBoundaryDensityTotal x := by
   unfold riemannXiUpperBlaschkeBoundaryDensityTotal
   exact
-    (summable_zetaUpperBlaschkeBoundaryDensitySummand hxi).tsum_pos
+    (summable_zetaUpperBlaschkeBoundaryDensitySummand x).tsum_pos
       (zetaUpperBlaschkeBoundaryDensitySummand_nonneg x) rho
       (zetaUpperBlaschkeBoundaryDensitySummand_pos x rho hupper)
 
 /-- If RH fails, the complete boundary density is strictly positive at every
-real point outside the spectral divisor. -/
+real point. -/
 theorem riemannXiUpperBlaschkeBoundaryDensityTotal_pos_of_not_rh
-    {x : ℝ} (hxi : riemannXiSpectral (x : ℂ) ≠ 0)
-    (hRH : ¬ RiemannHypothesis) :
+    (x : ℝ) (hRH : ¬ RiemannHypothesis) :
     0 < riemannXiUpperBlaschkeBoundaryDensityTotal x := by
   obtain ⟨w, hwzero, hwupper⟩ :=
     exists_riemannXiSpectral_upper_zero_of_not_riemannHypothesis hRH
@@ -206,19 +251,19 @@ theorem riemannXiUpperBlaschkeBoundaryDensityTotal_pos_of_not_rh
     (riemannXiSpectral_eq_zero_iff_exists_zetaZero w).mp hwzero
   exact
     riemannXiUpperBlaschkeBoundaryDensityTotal_pos_of_upper_zero
-      hxi rho hwupper
+      x rho hwupper
 
-/-- At any real point outside the spectral divisor, vanishing of the complete
-positive boundary density is equivalent to RH. -/
+/-- At every real point, vanishing of the complete positive boundary density
+is equivalent to RH. -/
 theorem riemannXiUpperBlaschkeBoundaryDensityTotal_eq_zero_iff_rh
-    {x : ℝ} (hxi : riemannXiSpectral (x : ℂ) ≠ 0) :
+    (x : ℝ) :
     riemannXiUpperBlaschkeBoundaryDensityTotal x = 0 ↔
       RiemannHypothesis := by
   constructor
   · intro hzero
     by_contra hRH
     have hpos :=
-      riemannXiUpperBlaschkeBoundaryDensityTotal_pos_of_not_rh hxi hRH
+      riemannXiUpperBlaschkeBoundaryDensityTotal_pos_of_not_rh x hRH
     linarith
   · intro hRH
     unfold riemannXiUpperBlaschkeBoundaryDensityTotal
@@ -297,15 +342,15 @@ theorem zetaUpperBlaschkeSelectedLogDerivativeSummand_real_eq_density_mul_I
     simp
 
 /-- The selected complete logarithmic-derivative series has sum `I` times
-the complete positive boundary density at every noncolliding real point. -/
+the complete positive boundary density at every real point. -/
 theorem hasSum_zetaUpperBlaschkeSelectedLogDerivativeSummand_real
-    {x : ℝ} (hxi : riemannXiSpectral (x : ℂ) ≠ 0) :
+    (x : ℝ) :
     HasSum (zetaUpperBlaschkeSelectedLogDerivativeSummand (x : ℂ))
       ((riemannXiUpperBlaschkeBoundaryDensityTotal x : ℂ) * Complex.I) := by
   have hreal :
       HasSum (zetaUpperBlaschkeBoundaryDensitySummand x)
         (riemannXiUpperBlaschkeBoundaryDensityTotal x) := by
-    exact (summable_zetaUpperBlaschkeBoundaryDensitySummand hxi).hasSum
+    exact (summable_zetaUpperBlaschkeBoundaryDensitySummand x).hasSum
   have hcomplex :
       HasSum (fun rho : NontrivialZetaZero ↦
         (zetaUpperBlaschkeBoundaryDensitySummand x rho : ℂ))
@@ -317,47 +362,46 @@ theorem hasSum_zetaUpperBlaschkeSelectedLogDerivativeSummand_real
 /-- On the real spectral boundary, the complete signed Blaschke logarithmic
 derivative is exactly `I` times a convergent nonnegative real sum. -/
 theorem riemannXiUpperBlaschkeCompleteLogDerivative_real_eq_density_mul_I
-    {x : ℝ} (hxi : riemannXiSpectral (x : ℂ) ≠ 0) :
+    (x : ℝ) :
     riemannXiUpperBlaschkeCompleteLogDerivative (x : ℂ) =
       (riemannXiUpperBlaschkeBoundaryDensityTotal x : ℂ) * Complex.I := by
   unfold riemannXiUpperBlaschkeCompleteLogDerivative
   exact
-    (hasSum_zetaUpperBlaschkeSelectedLogDerivativeSummand_real hxi).tsum_eq
+    (hasSum_zetaUpperBlaschkeSelectedLogDerivativeSummand_real x).tsum_eq
 
 /-- The boundary complete logarithmic derivative has zero real part. -/
 theorem riemannXiUpperBlaschkeCompleteLogDerivative_real_re_eq_zero
-    {x : ℝ} (hxi : riemannXiSpectral (x : ℂ) ≠ 0) :
+    (x : ℝ) :
     (riemannXiUpperBlaschkeCompleteLogDerivative (x : ℂ)).re = 0 := by
-  rw [riemannXiUpperBlaschkeCompleteLogDerivative_real_eq_density_mul_I hxi]
+  rw [riemannXiUpperBlaschkeCompleteLogDerivative_real_eq_density_mul_I x]
   simp
 
 /-- The imaginary part of the boundary complete logarithmic derivative is
 exactly the complete positive boundary density. -/
 theorem riemannXiUpperBlaschkeCompleteLogDerivative_real_im_eq_density
-    {x : ℝ} (hxi : riemannXiSpectral (x : ℂ) ≠ 0) :
+    (x : ℝ) :
     (riemannXiUpperBlaschkeCompleteLogDerivative (x : ℂ)).im =
       riemannXiUpperBlaschkeBoundaryDensityTotal x := by
-  rw [riemannXiUpperBlaschkeCompleteLogDerivative_real_eq_density_mul_I hxi]
+  rw [riemannXiUpperBlaschkeCompleteLogDerivative_real_eq_density_mul_I x]
   simp
 
 /-- There is no boundary phase cancellation: the norm of the complete signed
 resultant is exactly its positive density total. -/
 theorem norm_riemannXiUpperBlaschkeCompleteLogDerivative_real_eq_density
-    {x : ℝ} (hxi : riemannXiSpectral (x : ℂ) ≠ 0) :
+    (x : ℝ) :
     ‖riemannXiUpperBlaschkeCompleteLogDerivative (x : ℂ)‖ =
       riemannXiUpperBlaschkeBoundaryDensityTotal x := by
-  rw [riemannXiUpperBlaschkeCompleteLogDerivative_real_eq_density_mul_I hxi,
+  rw [riemannXiUpperBlaschkeCompleteLogDerivative_real_eq_density_mul_I x,
     norm_mul, norm_I, mul_one, norm_real, Real.norm_eq_abs,
     abs_of_nonneg (riemannXiUpperBlaschkeBoundaryDensityTotal_nonneg x)]
 
-/-- Single-invariant boundary rigidity: at any real point outside the
-spectral divisor, the complete signed Blaschke logarithmic derivative
-vanishes exactly when RH holds. -/
+/-- Single-invariant boundary rigidity: at every real point, the complete
+signed Blaschke logarithmic derivative vanishes exactly when RH holds. -/
 theorem riemannXiUpperBlaschkeCompleteLogDerivative_real_eq_zero_iff_rh
-    {x : ℝ} (hxi : riemannXiSpectral (x : ℂ) ≠ 0) :
+    (x : ℝ) :
     riemannXiUpperBlaschkeCompleteLogDerivative (x : ℂ) = 0 ↔
       RiemannHypothesis := by
-  rw [riemannXiUpperBlaschkeCompleteLogDerivative_real_eq_density_mul_I hxi]
+  rw [riemannXiUpperBlaschkeCompleteLogDerivative_real_eq_density_mul_I x]
   constructor
   · intro hzero
     have hcast : (riemannXiUpperBlaschkeBoundaryDensityTotal x : ℂ) = 0 :=
@@ -365,34 +409,48 @@ theorem riemannXiUpperBlaschkeCompleteLogDerivative_real_eq_zero_iff_rh
     have hreal : riemannXiUpperBlaschkeBoundaryDensityTotal x = 0 := by
       exact_mod_cast hcast
     exact
-      (riemannXiUpperBlaschkeBoundaryDensityTotal_eq_zero_iff_rh hxi).mp
+      (riemannXiUpperBlaschkeBoundaryDensityTotal_eq_zero_iff_rh x).mp
         hreal
   · intro hRH
     have hreal : riemannXiUpperBlaschkeBoundaryDensityTotal x = 0 :=
-      (riemannXiUpperBlaschkeBoundaryDensityTotal_eq_zero_iff_rh hxi).mpr
+      (riemannXiUpperBlaschkeBoundaryDensityTotal_eq_zero_iff_rh x).mpr
         hRH
     rw [hreal]
     simp
 
+/-- Concrete origin criterion: one fixed boundary value of the complete
+signed Blaschke logarithmic derivative vanishes exactly when RH holds. -/
+theorem riemannXiUpperBlaschkeCompleteLogDerivative_at_zero_eq_zero_iff_rh :
+    riemannXiUpperBlaschkeCompleteLogDerivative 0 = 0 ↔
+      RiemannHypothesis := by
+  simpa using
+    riemannXiUpperBlaschkeCompleteLogDerivative_real_eq_zero_iff_rh 0
+
 /-- Under failure of RH, the boundary complete signed logarithmic derivative
-is nonzero at every noncolliding real point. -/
+is nonzero at every real point. -/
 theorem riemannXiUpperBlaschkeCompleteLogDerivative_real_ne_zero_of_not_rh
-    {x : ℝ} (hxi : riemannXiSpectral (x : ℂ) ≠ 0)
-    (hRH : ¬ RiemannHypothesis) :
+    (x : ℝ) (hRH : ¬ RiemannHypothesis) :
     riemannXiUpperBlaschkeCompleteLogDerivative (x : ℂ) ≠ 0 := by
   intro hzero
   exact hRH
     ((riemannXiUpperBlaschkeCompleteLogDerivative_real_eq_zero_iff_rh
-      hxi).mp hzero)
+      x).mp hzero)
 
 /-- Under failure of RH, the boundary resultant has strictly positive
-imaginary part at every noncolliding real point. -/
+imaginary part at every real point. -/
 theorem riemannXiUpperBlaschkeCompleteLogDerivative_real_im_pos_of_not_rh
-    {x : ℝ} (hxi : riemannXiSpectral (x : ℂ) ≠ 0)
-    (hRH : ¬ RiemannHypothesis) :
+    (x : ℝ) (hRH : ¬ RiemannHypothesis) :
     0 < (riemannXiUpperBlaschkeCompleteLogDerivative (x : ℂ)).im := by
-  rw [riemannXiUpperBlaschkeCompleteLogDerivative_real_im_eq_density hxi]
-  exact riemannXiUpperBlaschkeBoundaryDensityTotal_pos_of_not_rh hxi hRH
+  rw [riemannXiUpperBlaschkeCompleteLogDerivative_real_im_eq_density x]
+  exact riemannXiUpperBlaschkeBoundaryDensityTotal_pos_of_not_rh x hRH
+
+/-- Under failure of RH, the imaginary part of the fixed origin boundary
+resultant is strictly positive. -/
+theorem riemannXiUpperBlaschkeCompleteLogDerivative_at_zero_im_pos_of_not_rh
+    (hRH : ¬ RiemannHypothesis) :
+    0 < (riemannXiUpperBlaschkeCompleteLogDerivative 0).im := by
+  simpa using
+    riemannXiUpperBlaschkeCompleteLogDerivative_real_im_pos_of_not_rh 0 hRH
 
 end
 

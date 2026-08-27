@@ -82,12 +82,13 @@ current checked state, not a list of conjectural steps.
 - On the real spectral boundary, Lean now proves that all selected upper-zero
   logarithmic-derivative terms align in the same positive imaginary
   direction. Inverse-square divisor summability makes their positive density
-  total finite at every real point where spectral xi is nonzero, and the norm
-  of the complete signed resultant is exactly that density: there is no phase
-  cancellation. Consequently, at any such real point, the single condition
-  `complete resultant = 0` is equivalent to RH. This is an exact rigidity
-  reformulation, not yet the arithmetic theorem forcing that resultant to
-  vanish.
+  total finite at every real point, including critical-line spectral zeros:
+  analyticity isolates any boundary zero from the selected upper divisor.
+  The norm of the complete signed resultant is exactly that density, so there
+  is no phase cancellation. Consequently the single fixed condition
+  `complete resultant at 0 = 0` is equivalent to RH, with no noncollision
+  premise. This is an exact rigidity reformulation, not yet the arithmetic
+  theorem forcing that resultant to vanish.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -867,8 +868,8 @@ RH-level part of the project.
 - [`RiemannGaussian/RiemannXiBoundaryBlaschkeRigidity.lean`](RiemannGaussian/RiemannXiBoundaryBlaschkeRigidity.lean)
   proves absolute convergence and exact positive-imaginary alignment of the
   complete signed Blaschke logarithmic derivative on the real spectral
-  boundary, reducing its RH criterion there to one cancellation-free
-  invariant.
+  boundary, including at critical-line zeros, and reduces RH to one fixed
+  cancellation-free invariant at the origin.
 - [`RiemannGaussian/GaussianPositivityCertificate.lean`](RiemannGaussian/GaussianPositivityCertificate.lean)
   contains the scalable certificate soundness and cofinal-width reductions.
 - [`RiemannGaussian/SuzukiTransportBarrier.lean`](RiemannGaussian/SuzukiTransportBarrier.lean)
