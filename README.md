@@ -458,11 +458,17 @@ quadratic Gaussian tail. The Rouché step itself is now formalized directly:
 the principal logarithm of the boundary quotient proves equality of the two
 logarithmic-derivative circle integrals, and the exact polynomial argument
 principle identifies the scheduled polynomial root count with the spectral-xi
-integral at every stage. The immediate open step is to identify that integral
-with the finite genuine xi divisor inside the same circle and thereby rule
-out every spurious enclosed root. Proper-time endpoint control is a separate
-subsequent requirement. A global logarithmic-derivative or arithmetic
-evaluation of the complete sum is the later rigidity target.
+integral at every stage. The genuine divisor inside an arbitrary positive
+radial disk is now defined as an exact finite subfamily of the spectral zero
+window. Lean proves that it contains every and only xi zero in the disk and
+constructs synchronized pairwise-disjoint isolating balls, all strictly
+inside the disk, whose polynomial root counts equal the genuine analytic
+multiplicities. The immediate open step is the compact-complement argument
+showing that sufficiently late approximants have no other enclosed roots;
+this will identify the circle integral with the finite genuine xi divisor.
+Proper-time endpoint control is a separate subsequent requirement. A global
+logarithmic-derivative or arithmetic evaluation of the complete sum is the
+later rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -580,6 +586,9 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   proves the Rouché comparison through an explicit principal-logarithm
   primitive and equates every scheduled polynomial root count with the
   spectral-xi logarithmic-derivative circle integral.
+- [`RiemannGaussian/FiniteToEntireRadialDivisor.lean`](RiemannGaussian/FiniteToEntireRadialDivisor.lean)
+  defines the exact finite genuine xi divisor in a radial disk and constructs
+  synchronized disjoint multiplicity balls contained strictly inside it.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
