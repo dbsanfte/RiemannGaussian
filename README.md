@@ -94,7 +94,10 @@ current checked state, not a list of conjectural steps.
   the residual-coordinate determinant as both a quotient of resultants and a
   product of inner values over the upper-root multiset. Thus repeated roots
   are counted with their full algebraic multiplicity, with no separability
-  hypothesis.
+  hypothesis. This determinant is transported through the actual boundary
+  realization and residual-inner isometry, proving the unconditional
+  complement Gram formula
+  `det(I - C† C) = |∏ S(w)|²` for the complete upper-root multiset.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -152,13 +155,12 @@ The Hardy route seeks a structural contradiction from any off-axis xi zero.
 The one-quartet finite theory and its real/Herglotz background are formalized.
 The unequal-height finite hyperbolic optimization and its exact-polynomial
 inside-core specialization are now formalized, as is the higher-index Hardy
-determinant formula conditional on a complete root Cauchy basis. The immediate
-frontier is to transport the proved multiplicity-aware residual-coordinate
-determinant through the boundary linear equivalence and the residual inner
-isometry to the actual Hardy complement Gram operator. The resulting
-unconditional confluent determinant must then be joined to the structural
-inside-core selection. Beyond that lies the genuinely analytic passage from
-finite polynomial models to the entire xi function.
+determinant formula conditional on a complete root Cauchy basis. The complete
+finite confluent determinant is now unconditional, including repeated roots.
+The immediate frontier is to join it to the structural inside-core selection
+and turn the selected off-axis configuration into the required global Hardy
+determinant contradiction. Beyond that lies the genuinely analytic passage
+from finite polynomial models to the entire xi function.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
