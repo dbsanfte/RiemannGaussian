@@ -282,8 +282,18 @@ current checked state, not a list of conjectural steps.
   completed-zeta pole frequencies, proves both weighted tests absolutely
   integrable, evaluates their integrals exactly, and recovers the two-pole
   term in Suzuki's arithmetic formula (1.6). No invocation of the Weil
-  formula is hidden in this calculation; the next unchecked RHS component is
-  the von Mangoldt prime sum.
+  formula is hidden in this calculation.
+- The complete prime-sum part is now discharged as well. Lean proves every
+  negative-logarithm sample vanishes, splits each positive-logarithm sample at
+  the exact finite cutoff `1 <= n <= exp(t)`, and identifies the remaining
+  exponential sequence term by term with Mathlib's von Mangoldt `L`-series at
+  `1/2 - i*z`. Absolute convergence in `Im(z) > 1/2` and the Euler-product
+  theorem then sum the tail to `-zeta'/zeta`, while the finite part is exactly
+  Suzuki's prime correction. With the explicit-formula signs, the two prime
+  sums therefore recover the zeta and finite-prime terms of (1.6). Combined
+  with the preceding integral, Lean now evaluates the full elementary and
+  non-Archimedean RHS. The unchecked RHS component is the Archimedean
+  digamma/Lerch integral, followed by the global Weil distribution identity.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
