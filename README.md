@@ -130,6 +130,21 @@ current checked state, not a list of conjectural steps.
   local heat-weighted residue of `logDeriv riemannXiSpectral`, its complete
   normalized series converges to the embedded boundary heat total, and that
   complex total vanishes exactly under RH.
+- The fixed-time boundary invariant now has an exact two-point Gaussian/Gram
+  realization. Lean defines a kernel that is jointly entire in a spectral
+  zero and its critical-line-reflected partner; on every actual reflected
+  zeta pair it is exactly the positive boundary heat residue. The kernel
+  factors through the same analytic half-Gaussian used by the one-point
+  explicit formula, with the precise transverse damping
+  `exp(-2 * tau * height^2)`. These features form a proved square-summable
+  vector indexed by the nontrivial zeta zeros, and its squared `ℓ²` norm is
+  exactly the complete boundary heat total. Thus the matched two-zero
+  correlation, spectral-xi residue limit, and Hilbert Gram diagonal are one
+  rigorously identical invariant, zero exactly under RH. The remaining new
+  mathematics is now sharply localized: obtain independent arithmetic or
+  Suzuki/Fredholm control of this reflected-pair correlation; the existing
+  one-point Gaussian explicit formula alone does not perform the required
+  pair matching.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
