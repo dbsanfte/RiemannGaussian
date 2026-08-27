@@ -107,6 +107,12 @@ current checked state, not a list of conjectural steps.
   bridge
   `sqrt(det(I - C† C)) ≤ 2*rho(z,alpha)/(1 + rho(z,alpha)^2)`
   for every upper root `z` of `E` and upper-half-plane root `alpha` of `A`.
+- The root-multiset decomposition is connected directly to that Pick bridge:
+  every occurrence in the inside influence-disk core is proved to be a
+  genuine base zero and carries the exact interpolation identity and both
+  Schwarz--Pick inequalities. The same theorem packages those data beside
+  the strict complete core-radius product bound while keeping the core and
+  determinant products logically distinct.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -168,11 +174,13 @@ determinant formula conditional on a complete root Cauchy basis. The complete
 finite confluent determinant is now unconditional, including repeated roots.
 The immediate frontier is to combine its chosen-root bound and the checked
 Schwarz--Pick contraction with the structural inside-core radius product. The
-single-root Blaschke/Pick comparison is now formalized; the missing finite
-step is a collective comparison that uses the complete inside-core product,
-not merely one selected radius. The core product is not being identified with
-the determinant product by assumption. Beyond that lies the genuinely
-analytic passage from finite polynomial models to the entire xi function.
+single-root Blaschke/Pick comparison is now formalized, and its interpolation
+and Pick data are derived uniformly for the complete inside core. The missing
+finite step is a collective comparison that uses the complete inside-core
+product, not merely one selected radius. The core product is not being
+identified with the determinant product by assumption. Beyond that lies the
+genuinely analytic passage from finite polynomial models to the entire xi
+function.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
