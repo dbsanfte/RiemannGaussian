@@ -79,6 +79,15 @@ current checked state, not a list of conjectural steps.
   `(V(z)/2)^2` survives in complete phase dispersion. At every noncolliding
   upper point it also proves the exact rigidity criterion
   `RH <-> (complete resultant = 0 and complete phase dispersion = 0)`.
+- On the real spectral boundary, Lean now proves that all selected upper-zero
+  logarithmic-derivative terms align in the same positive imaginary
+  direction. Inverse-square divisor summability makes their positive density
+  total finite at every real point where spectral xi is nonzero, and the norm
+  of the complete signed resultant is exactly that density: there is no phase
+  cancellation. Consequently, at any such real point, the single condition
+  `complete resultant = 0` is equivalent to RH. This is an exact rigidity
+  reformulation, not yet the arithmetic theorem forcing that resultant to
+  vanish.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -855,6 +864,11 @@ RH-level part of the project.
 - [`RiemannGaussian/RiemannXiCompletePhaseDispersion.lean`](RiemannGaussian/RiemannXiCompletePhaseDispersion.lean)
   constructs the complete signed variation, cancellation, and phase
   dispersion limits and proves their joint-vanishing criterion is exactly RH.
+- [`RiemannGaussian/RiemannXiBoundaryBlaschkeRigidity.lean`](RiemannGaussian/RiemannXiBoundaryBlaschkeRigidity.lean)
+  proves absolute convergence and exact positive-imaginary alignment of the
+  complete signed Blaschke logarithmic derivative on the real spectral
+  boundary, reducing its RH criterion there to one cancellation-free
+  invariant.
 - [`RiemannGaussian/GaussianPositivityCertificate.lean`](RiemannGaussian/GaussianPositivityCertificate.lean)
   contains the scalable certificate soundness and cofinal-width reductions.
 - [`RiemannGaussian/SuzukiTransportBarrier.lean`](RiemannGaussian/SuzukiTransportBarrier.lean)
