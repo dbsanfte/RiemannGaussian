@@ -418,14 +418,19 @@ half of the tail estimate is now checked: a radially separated polynomial
 tail is at most `degree * tau⁻¹ * exp(-R²*tau)`, and Lean proves the
 corresponding vanishing criterion. The specific root-pinned separable
 sequence can now be chosen with degree at most `max n 3`, and the selected
-root multiset may vary with the stage. Thus it is enough to construct
-expanding genuine-xi clusters whose complement lies outside radius `√n`;
-Lean then forces the entire unused-root heat remainder to zero at every fixed
-positive time. Proving that expanding localization, and synchronizing its
-cluster heat with the complete spectral-xi sum, is the immediate open
-passage. Proper-time endpoint control is a separate subsequent requirement.
-A global logarithmic-derivative or arithmetic evaluation of the complete sum
-is the later rigidity target.
+root multiset may vary with the stage. Any fixed positive multiple of `√n`
+is enough separation to force the entire unused-root heat remainder to zero
+at every fixed positive time. The analytic approximation now reaches that
+same scale: a Cauchy coefficient estimate combined with the proved quadratic
+growth of spectral xi gives constants `A ≥ 1` and `c > 0` for which the
+order-`n` real Taylor polynomial converges uniformly to spectral xi throughout
+the expanding disk `‖w‖ ≤ c * √n`, with an explicit geometrically decaying
+majorant. The immediate open passage is to preserve this expanding-disk bound
+through exact root pinning and a suitably faster separability perturbation,
+then use expanding zero-free circles to identify all enclosed polynomial
+roots with genuine xi clusters. Proper-time endpoint control is a separate
+subsequent requirement. A global logarithmic-derivative or arithmetic
+evaluation of the complete sum is the later rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -515,6 +520,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
 - [`RiemannGaussian/FiniteToEntireDegreeControl.lean`](RiemannGaussian/FiniteToEntireDegreeControl.lean)
   proves linear degree growth for the separable root-pinned xi sequence and
   the resulting `√n` unused-root separation criterion.
+- [`RiemannGaussian/FiniteToEntireExpandingTaylor.lean`](RiemannGaussian/FiniteToEntireExpandingTaylor.lean)
+  derives quantitative Cauchy remainder bounds from xi growth and proves
+  uniform convergence of the real Taylor approximants on disks of radius
+  `c * √n` for a checked constant `c > 0`.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
