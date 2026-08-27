@@ -258,6 +258,15 @@ current checked state, not a list of conjectural steps.
   action on `[a,T]` and the error. Thus the sole endpoint question is whether
   these stage-dependent small-time concentrations can be uniformly ruled out
   or converted into an arithmetic contradiction.
+- The small-time kernel itself is now evaluated sharply. Lean proves that one
+  upper root has zero-time heat trace exactly
+  `4 * Im(z) * Im(alpha)`, and that its heat is bounded above by this trace at
+  every positive time. Thus a finite divisor's action before `a` is at most
+  `a` times four times the observation height times the total upper-root
+  height, counted with multiplicity. Combining this with the concentration
+  theorem forces an explicit eventual lower bound on that height statistic
+  under `¬RH`; controlling or arithmetically identifying its growth is the
+  newly exposed small-time frontier.
 - At each fixed positive proper time, Lean now constructs the complete
   multiplicity-counted upper spectral-xi heat sum and proves its absolute
   convergence from the unconditional Gaussian zero bound. Every coefficient
@@ -583,9 +592,11 @@ Lean now also splits each finite action into its three adjacent pieces and
 proves the corresponding small-time concentration theorem: for every
 `a > 0`, a suitable finite `T` makes the unaccounted Hardy mass occur in
 stage-dependent intervals `(c_n,a)`, up to arbitrary error. The immediate
-analytic task is to rule out or arithmetically rigidify concentration as
-`c_n -> 0`; a global logarithmic-derivative evaluation of the complete heat
-sum remains the natural meeting point with the explicit-formula line.
+analytic task is now concrete: the zero-time trace is exactly four times the
+observation height times the total upper-root height, so one must control or
+arithmetically rigidify that statistic as the approximation degree grows. A
+global logarithmic-derivative evaluation of the complete heat sum remains the
+natural meeting point with the explicit-formula line.
 
 The remaining small-time estimate is not assumed. Closing the Gaussian
 positivity statement, or completing the finite-to-xi Hardy route, is the
@@ -759,6 +770,10 @@ RH-level part of the project.
   proves exact three-piece action additivity and forces every remaining
   canonical Hardy defect into quantitatively bounded, stage-dependent
   small-time intervals.
+- [`RiemannGaussian/FiniteToEntireProperTimeSmallBound.lean`](RiemannGaussian/FiniteToEntireProperTimeSmallBound.lean)
+  identifies the exact zero-time heat trace with total upper-root height,
+  bounds small-time actions by that statistic, and derives its necessary
+  canonical growth inequality under `¬RH`.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
