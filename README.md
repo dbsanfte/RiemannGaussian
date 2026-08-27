@@ -195,6 +195,12 @@ current checked state, not a list of conjectural steps.
   of `i*xi/xi'` supplies an upper root of `xi + i*eta*xi'` for some positive
   real `eta`. Thus `¬RH` now produces the complete separable, root-pinned
   canonical finite Hardy frontier sequence without an assumed starting root.
+- The fixed meromorphic quotient `Theta_eta = E_eta^sharp/E_eta` is now
+  constructed in the entire setting. Lean proves that its finite polynomial
+  counterparts converge locally uniformly on every open region where the
+  limiting homotopy has no zero, and verifies that the spectral-xi numerator
+  is the literal conjugate reflection of `E_eta`. Passing through the pinned
+  zero still requires the global Krein--Langer cancellation and remains open.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -271,9 +277,10 @@ Failure of RH is now proved to supply the required positive homotopy and upper
 root, for both simple and multiple spectral-xi zeros, so the full finite
 frontier is a checked consequence of the reductio hypothesis rather than a
 conditional construction.
-The next Hardy frontier is to construct and identify the corresponding
-entire-limit Hardy invariant and rigorously pass this uniform finite bound to
-it.
+The un-cancelled theta quotients now converge locally uniformly on every
+zero-free open region. The next Hardy frontier is to construct and identify
+the corresponding cancelled entire-limit invariant at the pinned zero and
+rigorously pass the uniform finite bound to it.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -315,6 +322,9 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
 - [`RiemannGaussian/FiniteToEntireHardyReductio.lean`](RiemannGaussian/FiniteToEntireHardyReductio.lean)
   proves that failure of RH reaches that finite frontier, including analytic
   persistence of simple homotopy roots and the multiple-root case.
+- [`RiemannGaussian/FiniteToEntireTheta.lean`](RiemannGaussian/FiniteToEntireTheta.lean)
+  proves locally uniform convergence of `E_eta^sharp/E_eta` away from zeros
+  of the limiting homotopy and isolates the required cancellation at a pole.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
