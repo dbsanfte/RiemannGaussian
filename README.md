@@ -393,6 +393,13 @@ current checked state, not a list of conjectural steps.
   forces eventual phase dispersion at least `(q/4)^2`. The hard cancellation
   branch is therefore a positive pairwise angular-energy branch, not an
   undefined loss in a triangle inequality.
+- That angular energy now has literal unit-circle geometry. Lean proves that
+  every signed upper-zero Blaschke term is nonzero at a noncolliding upper
+  observation point, normalizes each term to unit modulus, and identifies
+  every pair defect exactly with
+  `norm(u)*norm(v)/2 * norm(unitPhase(u)-unitPhase(v))^2`. Thus the complete
+  double sum is a weighted squared chordal phase-separation energy. No
+  informal appeal to phases or angular cancellation remains in this branch.
 - The connection to the actual spectral-xi logarithmic derivative is now
   formalized at every finite window without dropping an entire-function
   term. Lean decomposes `xi'/xi` exactly into the genuine multiplicity-
@@ -1016,6 +1023,10 @@ RH-level part of the project.
   identifies the squared Blaschke cancellation loss with an exact nonnegative
   double sum of pairwise angular defects and transfers the canonical
   cancellation branch into an eventual positive phase-dispersion threshold.
+- [`RiemannGaussian/RiemannXiBlaschkePhaseGeometry.lean`](RiemannGaussian/RiemannXiBlaschkePhaseGeometry.lean)
+  proves nonvanishing of every upper spectral Blaschke summand at a
+  noncolliding point and rewrites each pair defect as a weighted squared
+  chordal distance between genuine unit complex phases.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
