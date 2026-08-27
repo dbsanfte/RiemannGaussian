@@ -47,8 +47,10 @@ current checked state, not a list of conjectural steps.
   completed-zeta formula and the polynomial xi prefactor. Lean now proves
   unconditionally that some `A >= 1` satisfies
   `norm(riemannXi(z)) <= exp(A*(norm(z)+1)^(3/2))` for every complex `z`.
-  This checked global exponent is strictly below two. The next analytic step
-  is the corresponding Jensen count and dyadic inverse-square divisor sum.
+  This checked global exponent is strictly below two. Jensen's inequality has
+  now also been specialized to turn it into an unconditional
+  multiplicity-aware `O(r^(3/2))` bound for the xi divisor in centered disks.
+  The next analytic step is the dyadic inverse-square divisor sum.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -803,6 +805,9 @@ RH-level part of the project.
 - [`RiemannGaussian/GaussianXiSubquadraticGrowth.lean`](RiemannGaussian/GaussianXiSubquadraticGrowth.lean)
   propagates that estimate through completed zeta and proves unconditional
   global `3/2`-power exponential growth for the pole-cleared xi function.
+- [`RiemannGaussian/GaussianXiSubquadraticCounting.lean`](RiemannGaussian/GaussianXiSubquadraticCounting.lean)
+  inserts the global `3/2` bound into Jensen's inequality and obtains an
+  unconditional multiplicity-aware `O(r^(3/2))` xi-divisor count.
 - [`RiemannGaussian/GaussianPositivityCertificate.lean`](RiemannGaussian/GaussianPositivityCertificate.lean)
   contains the scalable certificate soundness and cofinal-width reductions.
 - [`RiemannGaussian/SuzukiTransportBarrier.lean`](RiemannGaussian/SuzukiTransportBarrier.lean)
