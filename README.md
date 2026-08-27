@@ -357,6 +357,15 @@ current checked state, not a list of conjectural steps.
   finiteness assumption on either mass. Consequently any lower bound that
   survives in the complete logarithmic Hardy defect also survives,
   quantitatively, in the Poisson/Blaschke derivative-variation statistic.
+- The canonical `not RH` alternative has now been transported through that
+  comparison in Lean. Writing `D > 0` for the fixed finite Hardy threshold and
+  `C = 1 + 2*Im(z)/delta^2` for the divisor-gap coefficient, Lean proves that
+  `D/C` and `D/(C*2*Im(z))` are positive and that either the complete Poisson
+  mass and complete Blaschke derivative variation dominate their respective
+  normalized thresholds, or the same finite polynomial upper-height masses
+  exceed every nonnegative bound arbitrarily far along the canonical
+  sequence. This puts the persistent finite Hardy obstruction directly into
+  the analytic statistic whose cancellation must now be controlled.
 - The connection to the actual spectral-xi logarithmic derivative is now
   formalized at every finite window without dropping an entire-function
   term. Lean decomposes `xi'/xi` exactly into the genuine multiplicity-
@@ -964,6 +973,11 @@ RH-level part of the project.
   combines the uniform noncollision gap with the critical-strip height bound
   to prove two-sided comparability of complete logarithmic defect, proper-time
   heat action, and Poisson defect by an explicit finite positive coefficient.
+- [`RiemannGaussian/FiniteToEntirePoissonBlaschkeTransfer.lean`](RiemannGaussian/FiniteToEntirePoissonBlaschkeTransfer.lean)
+  transports the canonical failure-of-RH Hardy alternative into explicit
+  positive normalized lower thresholds for complete Poisson mass and complete
+  spectral Blaschke derivative variation, retaining the unbounded-height
+  alternative exactly.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
