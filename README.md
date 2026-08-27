@@ -207,9 +207,9 @@ current checked state, not a list of conjectural steps.
   `S_t` windows vanish at time zero and differentiate term by term to the raw
   screw modes. This does not silently totalize the analytic gap: the canonical
   holomorphic values at removable points, the full arithmetic formula for
-  `P_t`, unconditional `L²` membership of `S_t`, the infinite expansion, and
-  the off-RH Gram comparison remain to be proved before an arithmetic growth
-  estimate can cross the bridge.
+  `P_t`, unconditional `L²` membership of `S_t`, the real-axis infinite
+  expansion, and the off-RH Gram comparison remain to be proved before an
+  arithmetic growth estimate can cross the bridge.
 - The complete Suzuki coefficient sequence is nevertheless now a rigorous
   unconditional Hilbert vector. Lean represents the extended coefficient as
   the exact interval integral of its raw screw derivative, proves uniform
@@ -231,6 +231,17 @@ current checked state, not a list of conjectural steps.
   This is an infinite spectral Suzuki quantity, not yet the arithmetic
   formula: proving equality with Suzuki's prime/gamma expression and lifting
   evaluation to the entire arithmetic `L²` signal are the next gaps.
+- The point `i` has now been generalized to Suzuki's full safe half-plane
+  `Im(z) > 1/2`. A proved vertical-gap inequality produces an explicit
+  point-dependent inverse-square majorant, hence an `ℓ²` Cauchy-evaluation
+  vector at every such `z`. Lean constructs absolutely convergent infinite
+  spectral functions `P_t(z)` and `S_t(z)`, identifies `P_t(z)` with the
+  coefficient-space Hilbert pairing, proves convergence of genuine finite
+  zero windows, and proves the infinite normalized zero-function expansion
+  (3.6) there. What remains is analytically sharp: identify this safe-domain
+  function with the arithmetic prime/gamma formula, continue its carrier-
+  cancelled boundary values into `L²(R)`, and control the resulting off-RH
+  synthesis/Gram operator.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
