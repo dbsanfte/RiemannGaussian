@@ -267,6 +267,14 @@ current checked state, not a list of conjectural steps.
   theorem forces an explicit eventual lower bound on that height statistic
   under `¬RH`; controlling or arithmetically identifying its growth is the
   newly exposed small-time frontier.
+- Lean also identifies why the first coefficient moment does not immediately
+  control this statistic. For every real polynomial, the signed sum of all
+  root imaginary parts is exactly zero by conjugate cancellation, whereas the
+  upper-root height mass is half the total unsigned imaginary variation. That
+  variation is bounded by half the total root-norm mass. The canonical
+  `¬RH` sequence is now proved to obey explicit eventual lower bounds on both
+  unsigned variation and root-norm mass, isolating a genuinely global root
+  statistic rather than a signed Vieta moment.
 - At each fixed positive proper time, Lean now constructs the complete
   multiplicity-counted upper spectral-xi heat sum and proves its absolute
   convergence from the unconditional Gaussian zero bound. Every coefficient
@@ -594,9 +602,12 @@ proves the corresponding small-time concentration theorem: for every
 stage-dependent intervals `(c_n,a)`, up to arbitrary error. The immediate
 analytic task is now concrete: the zero-time trace is exactly four times the
 observation height times the total upper-root height, so one must control or
-arithmetically rigidify that statistic as the approximation degree grows. A
-global logarithmic-derivative evaluation of the complete heat sum remains the
-natural meeting point with the explicit-formula line.
+arithmetically rigidify that statistic as the approximation degree grows.
+Conjugate decomposition now proves that it is half of the full unsigned
+imaginary variation, while the signed first root moment vanishes identically;
+coefficient control must therefore reach an unsigned/global root statistic.
+A global logarithmic-derivative evaluation of the complete heat sum remains
+the natural meeting point with the explicit-formula line.
 
 The remaining small-time estimate is not assumed. Closing the Gaussian
 positivity statement, or completing the finite-to-xi Hardy route, is the
@@ -774,6 +785,10 @@ RH-level part of the project.
   identifies the exact zero-time heat trace with total upper-root height,
   bounds small-time actions by that statistic, and derives its necessary
   canonical growth inequality under `¬RH`.
+- [`RiemannGaussian/FiniteToEntireProperTimeHeightVariation.lean`](RiemannGaussian/FiniteToEntireProperTimeHeightVariation.lean)
+  identifies upper-root height with half the unsigned imaginary variation,
+  proves exact cancellation of the signed first moment, and propagates the
+  canonical obstruction to total root-norm mass.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
