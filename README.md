@@ -294,6 +294,16 @@ current checked state, not a list of conjectural steps.
   with the preceding integral, Lean now evaluates the full elementary and
   non-Archimedean RHS. The unchecked RHS component is the Archimedean
   digamma/Lerch integral, followed by the global Weil distribution identity.
+- The Archimedean calculation has now been reduced one level further. Lean
+  proves the full complex Euler series for a digamma difference is absolutely
+  summable on the right half-plane, constructs every lower-half-plane mode of
+  the Archimedean geometric kernel, and identifies each mode with an actual
+  integral of Suzuki's test. Partial fractions then sum the complete mode
+  family exactly to the negative of Suzuki's digamma-plus-Lerch contribution,
+  with no appeal to the Weil formula. The remaining local obligation is to
+  prove that expanding the single Archimedean kernel and interchanging its
+  integral with this absolutely convergent mode family is valid. After that,
+  only the global specialized Weil distribution identity remains.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
