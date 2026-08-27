@@ -9,6 +9,9 @@ test and calibrate parts of the argument. The proof is not complete: every
 claim described as proved below is checked by Lean, while the remaining
 research frontier is stated explicitly.
 
+**Research environment:** [GPT-5.6 Sol](https://developers.openai.com/api/docs/models/gpt-5.6-sol)
+with **Max** reasoning effort, running in the **Codex CLI harness**.
+
 The project currently uses Lean 4.33.1 and Mathlib 4.33.1. From the repository
 root:
 
