@@ -77,7 +77,13 @@ current checked state, not a list of conjectural steps.
   Cauchy basis at every degree from all distinct upper roots and obtains the
   product formula with no basis hypothesis. The proof includes the full
   polynomial linear-independence, boundary-map injectivity, and dimension
-  count; only the multiple-root case needs confluent kernels.
+  count.
+- For repeated roots, Lean now constructs the full multiplicity-indexed
+  confluent quotient basis of the algebraic model. Each coordinate is proved
+  to be the literal higher-order inverse-power kernel, partial-fraction
+  uniqueness proves independence, and the multiplicity sum proves
+  completeness. Its boundary `L²` realization and residual determinant are
+  the remaining confluent steps.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -136,11 +142,11 @@ The one-quartet finite theory and its real/Herglotz background are formalized.
 The unequal-height finite hyperbolic optimization and its exact-polynomial
 inside-core specialization are now formalized, as is the higher-index Hardy
 determinant formula conditional on a complete root Cauchy basis. The immediate
-frontier is to extend the now-checked arbitrary-degree simple-root basis to
-full multiplicity-aware generality: repeated roots require a confluent
-Cauchy-kernel theory. It must then be joined to the structural inside-core
-selection. Beyond that lies the genuinely analytic passage from finite
-polynomial models to the entire xi function.
+frontier is to lift the now-checked multiplicity-aware algebraic basis to
+boundary `L²`, prove the triangular projection-residual law for the resulting
+higher-order Cauchy kernels, and derive its determinant. It must then be joined
+to the structural inside-core selection. Beyond that lies the genuinely
+analytic passage from finite polynomial models to the entire xi function.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
