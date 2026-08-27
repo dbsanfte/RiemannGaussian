@@ -219,6 +219,16 @@ current checked state, not a list of conjectural steps.
   produces a root-pinned approximating sequence carrying these uniformly
   positive finite heat frontiers at every stage. Passing those varying heat
   actions to an arithmetic or entire limiting object remains open.
+- At each fixed positive proper time, Lean now constructs the complete
+  multiplicity-counted upper spectral-xi heat sum and proves its absolute
+  convergence from the unconditional Gaussian zero bound. Every coefficient
+  is identified with the heat-weighted local residue of the genuine spectral
+  xi logarithmic derivative, rather than assigned a formal zero weight. The
+  sum is nonnegative, any upper spectral zero makes it strictly positive, and
+  its vanishing for all upper observation points and positive times is proved
+  equivalent to RH. What remains open is convergence of the varying finite
+  Hardy heat sums to this complete residue sum and a global arithmetic
+  evaluation of the latter.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -300,9 +310,13 @@ zero-free open region. The next Hardy frontier is to construct and identify
 the corresponding cancelled entire-limit invariant at the pinned zero and
 rigorously pass the uniform finite bound to it. The new proper-time bridge
 recasts the complete finite hyperbolic product as a positive Gaussian heat
-mass with a stage-independent lower bound; the immediate open passage is to
-control these varying multiplicity-counted heat actions as the polynomial
-approximants tend to spectral xi and identify their limit arithmetically.
+mass with a stage-independent lower bound. Independently, the complete
+fixed-time spectral-xi heat sum is now constructed as an absolutely
+convergent sum of heat-weighted local residues of `xi'/xi`, and its vanishing
+is equivalent to RH. The immediate open passage is to prove that the varying
+finite heat sums converge to this complete residue sum as the polynomial
+approximants tend to spectral xi, and then identify the fixed-time sum by a
+global logarithmic-derivative or arithmetic formula.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -353,6 +367,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
 - [`RiemannGaussian/FiniteToEntireHeatFrontier.lean`](RiemannGaussian/FiniteToEntireHeatFrontier.lean)
   composes that identity with the finite Hardy sequence forced by failure of
   RH and proves a uniform positive lower bound for every finite heat mass.
+- [`RiemannGaussian/RiemannXiHyperbolicHeat.lean`](RiemannGaussian/RiemannXiHyperbolicHeat.lean)
+  constructs the complete fixed-time spectral-xi heat sum, derives every
+  coefficient from a local logarithmic-derivative residue, proves absolute
+  convergence, and characterizes RH by its vanishing.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
