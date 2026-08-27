@@ -430,13 +430,19 @@ avoid every finite bad-parameter set inside an arbitrary positive vanishing
 budget, and coefficientwise radial majorants make the resulting cubic and
 quadratic modification at most `exp(-n) / 2` on any prescribed growing disk.
 Thus separability and degree lifting preserve any expanding-disk convergence
-already possessed by a root-pinned input sequence. The immediate open step is
-to prove the needed quantitative derivative remainder for the affine
-root-pinning correction itself, then use expanding zero-free circles to
-identify all enclosed polynomial roots with genuine xi clusters. Proper-time
-endpoint control is a separate subsequent requirement. A global logarithmic-
-derivative or arithmetic evaluation of the complete sum is the later rigidity
-target.
+already possessed by a root-pinned input sequence. The affine root-pinning
+gap is now closed as well: a Cauchy derivative estimate propagates the
+geometric Taylor error through the finite homotopy residual, and the resulting
+affine correction vanishes uniformly on the same `c * √n` disks. Combining
+this with the fast separability construction gives actual separable,
+exact-root polynomials of degree at most `max n 3` converging uniformly to
+spectral xi on those expanding disks. Under `¬RH`, Lean proves that one common
+positive homotopy parameter and upper-half-plane root make every member of
+this sequence a canonical finite Hardy frontier. The immediate open step is
+to use expanding zero-free circles to identify all enclosed polynomial roots
+with genuine xi clusters. Proper-time endpoint control is a separate
+subsequent requirement. A global logarithmic-derivative or arithmetic
+evaluation of the complete sum is the later rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -534,6 +540,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   constructs separable exact-root perturbations under arbitrary budgets and
   proves an `exp(-n) / 2` uniform modification bound on any prescribed
   stage-dependent disk.
+- [`RiemannGaussian/FiniteToEntireExpandingPinned.lean`](RiemannGaussian/FiniteToEntireExpandingPinned.lean)
+  controls the affine exact-root correction through value and derivative
+  remainders, then constructs the degree-linear canonical finite Hardy
+  sequence converging to spectral xi on `c * √n` disks.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built

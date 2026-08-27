@@ -13,8 +13,8 @@ The formal quadratic growth theorem for spectral xi then yields constants
 `A ≥ 1` and `c > 0` for which its real Taylor polynomial of order `n`
 converges uniformly throughout `‖w‖ ≤ c * sqrt n`.  The same scale makes a
 linearly degree-weighted Gaussian root tail vanish at every fixed positive
-proper time.  The remaining localization task is to retain this expanding-disk
-control through exact root pinning and separability, and then apply a
+proper time.  `FiniteToEntireExpandingPinned` carries this control through
+exact root pinning and separability.  The remaining localization task is a
 zero-counting argument on expanding zero-free circles.
 -/
 
