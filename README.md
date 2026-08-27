@@ -97,7 +97,10 @@ current checked state, not a list of conjectural steps.
   hypothesis. This determinant is transported through the actual boundary
   realization and residual-inner isometry, proving the unconditional
   complement Gram formula
-  `det(I - C† C) = |∏ S(w)|²` for the complete upper-root multiset.
+  `det(I - C† C) = |∏ S(w)|²` for the complete upper-root multiset. Lean also
+  proves that any chosen upper-root occurrence controls the complete square-
+  root determinant by `sqrt(det(I - C† C)) ≤ |S(w)|`, since every remaining
+  factor is contractive.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean

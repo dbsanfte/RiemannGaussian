@@ -157,6 +157,73 @@ theorem finiteHardyCrossAngleComplementGramOperator_det_eq_confluentRootProduct
       (map_multiset_prod (starRingEnd ℂ) s).symm
   rw [hstar, Complex.normSq_conj]
 
+/-- The actual confluent complement Gram determinant has nonnegative real
+value. -/
+theorem finiteHardyCrossAngleComplementGramOperator_det_re_nonneg
+    (A : ℝ[X]) (tau : ℝ) :
+    0 ≤ (LinearMap.det
+      (finiteHardyCrossAngleComplementGramOperator A tau).toLinearMap).re := by
+  rw [finiteHardyCrossAngleComplementGramOperator_det_eq_confluentRootProduct]
+  exact Complex.normSq_nonneg _
+
+/-- Square-root form of the unconditional confluent determinant.  This is the
+interface used by the finite hyperbolic and Pick bounds. -/
+theorem
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_eq_confluentRootProduct
+    (A : ℝ[X]) (tau : ℝ) :
+    Real.sqrt
+        (LinearMap.det
+          (finiteHardyCrossAngleComplementGramOperator A tau).toLinearMap).re =
+      ‖((upperRootFactor (finiteEPolynomial A tau)).roots.map
+        fun w ↦ lowerRootInnerValue (finiteEPolynomial A tau) w).prod‖ := by
+  rw [finiteHardyCrossAngleComplementGramOperator_det_eq_confluentRootProduct]
+  rfl
+
+/-- Any chosen upper root controls the complete Hardy determinant product.
+All remaining residual-inner factors have norm at most one, including when
+the chosen root or another root occurs with multiplicity. -/
+theorem
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_le_innerValue_of_mem
+    (A : ℝ[X]) (tau : ℝ) {w : ℂ}
+    (hw : w ∈ (upperRootFactor (finiteEPolynomial A tau)).roots) :
+    Real.sqrt
+        (LinearMap.det
+          (finiteHardyCrossAngleComplementGramOperator A tau).toLinearMap).re ≤
+      ‖lowerRootInnerValue (finiteEPolynomial A tau) w‖ := by
+  let p := finiteEPolynomial A tau
+  obtain ⟨rest, hroots⟩ := Multiset.exists_cons_of_mem hw
+  have hrest : ∀ z ∈ rest, 0 < z.im := by
+    intro z hz
+    have hzfull : z ∈ (upperRootFactor p).roots := by
+      rw [hroots]
+      simp [hz]
+    rw [upperRootFactor_roots, Multiset.mem_filter] at hzfull
+    exact hzfull.2
+  have hnorm : ∀ s : Multiset ℂ,
+      (∀ z ∈ s, 0 < z.im) →
+        ‖(s.map fun z ↦ lowerRootInnerValue p z).prod‖ ≤ 1 := by
+    intro s hs
+    induction s using Multiset.induction_on with
+    | empty => simp
+    | cons z s ih =>
+        have hz : 0 < z.im := hs z (by simp)
+        have hsTail : ∀ y ∈ s, 0 < y.im := by
+          intro y hy
+          exact hs y (by simp [hy])
+        simp only [Multiset.map_cons, Multiset.prod_cons, norm_mul]
+        apply mul_le_one₀
+        · exact norm_lowerRootInnerValue_le_one p hz
+        · exact norm_nonneg _
+        · exact ih hsTail
+  have hrestNorm :
+      ‖(rest.map fun z ↦ lowerRootInnerValue p z).prod‖ ≤ 1 :=
+    hnorm rest hrest
+  rw [finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_eq_confluentRootProduct]
+  change ‖((upperRootFactor p).roots.map
+    fun z ↦ lowerRootInnerValue p z).prod‖ ≤ _
+  rw [hroots, Multiset.map_cons, Multiset.prod_cons, norm_mul]
+  exact mul_le_of_le_one_right (norm_nonneg _) hrestNorm
+
 end
 
 end RiemannGaussian
