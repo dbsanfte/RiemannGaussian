@@ -506,12 +506,18 @@ prefix of shells that do not yet surround the observation point, by direct
 comparison with a quadratic polynomial times a linear exponential tail. Lean
 also proves the required triangular-array form of Tannery's theorem for a
 moving finite cutoff; it returns both summability of the pointwise shell
-limits and convergence of the moving sums. The immediate open step is to
-instantiate that theorem with the synchronized polynomial annuli and identify
-the varying inside-circle heat with the complete spectral-xi heat sum.
-Proper-time endpoint control is a separate subsequent requirement. A global
-logarithmic-derivative or arithmetic evaluation of the complete sum is the
-later rigidity target.
+limits and convergence of the moving sums. That theorem is now instantiated
+with the synchronized polynomial annuli. Lean proves the selected finite
+spectral windows are cofinal in the complete zero divisor, telescopes both the
+polynomial and spectral annuli exactly, and identifies the varying
+inside-circle polynomial heat with the complete spectral-xi heat sum. Adding
+the vanishing outside-root remainder proves convergence of the full upper
+polynomial heat. Under `¬RH`, this fixed-time limit holds at every upper
+observation point and positive proper time for the same canonical finite
+Hardy sequence carrying the persistent integrated defect. The immediate open
+step is proper-time endpoint control strong enough to pass that integrated
+defect through the fixed-time limit. A global logarithmic-derivative or
+arithmetic evaluation of the complete sum is the subsequent rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -658,6 +664,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   proves summability of the selected quadratic-Gaussian shell majorant and a
   reusable Tannery theorem for dominated triangular arrays with moving finite
   cutoffs.
+- [`RiemannGaussian/FiniteToEntireRadialHeatLimit.lean`](RiemannGaussian/FiniteToEntireRadialHeatLimit.lean)
+  instantiates that triangular array, proves radial spectral windows exhaust
+  the complete residue heat series, and establishes full fixed-time
+  polynomial-heat convergence for the canonical `¬RH` Hardy sequence.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
