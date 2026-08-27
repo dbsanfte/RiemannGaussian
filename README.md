@@ -454,9 +454,13 @@ that the resulting canonical finite Hardy polynomial differs from spectral
 xi by strictly less than both this floor and `‖xi(w)‖` at every point of the
 circle. Its index tends to infinity and its degree is bounded by a fixed
 multiple of `exp(5 * rₙ)`, so the reindexing remains compatible with a
-quadratic Gaussian tail. The immediate open step is the corresponding
-Rouché/argument-principle theorem identifying every enclosed polynomial root
-with the genuine xi divisor. Proper-time endpoint control is a separate
+quadratic Gaussian tail. The Rouché step itself is now formalized directly:
+the principal logarithm of the boundary quotient proves equality of the two
+logarithmic-derivative circle integrals, and the exact polynomial argument
+principle identifies the scheduled polynomial root count with the spectral-xi
+integral at every stage. The immediate open step is to identify that integral
+with the finite genuine xi divisor inside the same circle and thereby rule
+out every spurious enclosed root. Proper-time endpoint control is a separate
 subsequent requirement. A global logarithmic-derivative or arithmetic
 evaluation of the complete sum is the later rigidity target.
 
@@ -572,6 +576,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   reindexes the exact-root separable Taylor sequence at a controlled
   single-exponential rate and proves its error is strictly below xi on each
   selected circle while retaining an explicit degree-growth bound.
+- [`RiemannGaussian/FiniteToEntireRouche.lean`](RiemannGaussian/FiniteToEntireRouche.lean)
+  proves the Rouché comparison through an explicit principal-logarithm
+  primitive and equates every scheduled polynomial root count with the
+  spectral-xi logarithmic-derivative circle integral.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
