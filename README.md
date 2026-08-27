@@ -443,12 +443,17 @@ now quantitatively prepared rather than merely qualitative: canonical
 factorization, zero separation, and the Jensen multiplicity bound give one
 `C > 0` such that spectral xi is at least
 `exp(-C * exp(5 * Tₙ))` on all four sides of every selected expanding
-zero-free spectral rectangle. The next step is to reindex the explicit
-Taylor, root-pinning, and separability errors so that they beat this boundary
-floor, then prove the resulting Rouché/argument-principle identification of
-all enclosed polynomial roots with genuine xi clusters. Proper-time endpoint
-control is a separate subsequent requirement. A global logarithmic-derivative
-or arithmetic evaluation of the complete sum is the later rigidity target.
+zero-free spectral rectangle. More importantly for global tail control, Lean
+now selects radii `rₙ ∈ (n, n + 1)` tending to infinity and quantitatively
+separated from every spectral xi zero. Every point on the full circle
+`‖w‖ = rₙ` is proved to have that separation, and the same canonical argument
+gives the uniform radial floor `exp(-C * exp(5 * rₙ)) ≤ ‖xi(w)‖`. The next
+step is to reindex the explicit Taylor, root-pinning, and separability errors
+so that they beat this circle floor, then prove the resulting
+Rouché/argument-principle identification of every polynomial root inside the
+circle with genuine xi clusters. Proper-time endpoint control is a separate
+subsequent requirement. A global logarithmic-derivative or arithmetic
+evaluation of the complete sum is the later rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -554,6 +559,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   derives a quantitative lower modulus for spectral xi on every side of the
   expanding zero-free rectangles from canonical factorization, divisor
   separation, and Jensen's multiplicity bound.
+- [`RiemannGaussian/FiniteToEntireRadialBoundary.lean`](RiemannGaussian/FiniteToEntireRadialBoundary.lean)
+  selects genuinely expanding zero-free spectral circles, proves uniform
+  separation from every xi zero, and derives the corresponding explicit
+  double-exponential lower modulus on the full circle.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
