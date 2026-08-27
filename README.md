@@ -349,6 +349,14 @@ current checked state, not a list of conjectural steps.
   below both the logarithmic defect and the full proper-time action. Its
   vanishing at any upper observation point is equivalent to RH and hence to
   vanishing of the full absolute critical-line displacement.
+- At a noncolliding upper observation point the comparison is now two-sided.
+  The positive distance from that point to the complete xi divisor, together
+  with the strict critical-strip height bound, gives an explicit finite
+  coefficient `C = 1 + 2*Im(z)/delta^2`. Lean proves in `ℝ≥0∞` that
+  `PoissonMass <= LogDefectMass = HeatAction <= C*PoissonMass`, without a
+  finiteness assumption on either mass. Consequently any lower bound that
+  survives in the complete logarithmic Hardy defect also survives,
+  quantitatively, in the Poisson/Blaschke derivative-variation statistic.
 - The connection to the actual spectral-xi logarithmic derivative is now
   formalized at every finite window without dropping an entire-function
   term. Lean decomposes `xi'/xi` exactly into the genuine multiplicity-
@@ -952,6 +960,10 @@ RH-level part of the project.
   terms through critical-line reflection, and derives the unified identity
   connecting genuine `xi'/xi`, its analytic window remainder, critical-line
   poles, and the finite spectral Blaschke logarithmic derivative.
+- [`RiemannGaussian/RiemannXiHyperbolicDefectPoissonEquivalence.lean`](RiemannGaussian/RiemannXiHyperbolicDefectPoissonEquivalence.lean)
+  combines the uniform noncollision gap with the critical-strip height bound
+  to prove two-sided comparability of complete logarithmic defect, proper-time
+  heat action, and Poisson defect by an explicit finite positive coefficient.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
