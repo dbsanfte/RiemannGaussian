@@ -198,6 +198,14 @@ current checked state, not a list of conjectural steps.
   of `i*xi/xi'` supplies an upper root of `xi + i*eta*xi'` for some positive
   real `eta`. Thus `¬RH` now produces the complete separable, root-pinned
   canonical finite Hardy frontier sequence without an assumed starting root.
+- The simple/multiple split is no longer needed to obtain a noncolliding
+  homotopy root. At a spectral zero of multiplicity `m`, Lean uses the exact
+  logarithmic-derivative principal part to regularize `i*xi/xi'` as
+  `i*(z-a)/(m + (z-a)*h(z))`. This map is proved analytic with derivative
+  `i/m`, so its local inverse gives a positive upper homotopy root where xi
+  itself is nonzero. Propagating this strengthened choice through the
+  scheduled radial construction is the next finite-to-entire composition
+  step.
 - The fixed meromorphic quotient `Theta_eta = E_eta^sharp/E_eta` is now
   constructed in the entire setting. Lean proves that its finite polynomial
   counterparts converge locally uniformly on every open region where the
@@ -608,6 +616,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
 - [`RiemannGaussian/FiniteToEntireHardyReductio.lean`](RiemannGaussian/FiniteToEntireHardyReductio.lean)
   proves that failure of RH reaches that finite frontier, including analytic
   persistence of simple homotopy roots and the multiple-root case.
+- [`RiemannGaussian/FiniteToEntireHomotopyNoncollision.lean`](RiemannGaussian/FiniteToEntireHomotopyNoncollision.lean)
+  removes the logarithmic-derivative pole at an arbitrary finite-multiplicity
+  xi zero and proves that `¬RH` supplies an upper positive-homotopy root at
+  which spectral xi is nonzero.
 - [`RiemannGaussian/FiniteToEntireTheta.lean`](RiemannGaussian/FiniteToEntireTheta.lean)
   proves locally uniform convergence of `E_eta^sharp/E_eta` away from zeros
   of the limiting homotopy and isolates the required cancellation at a pole.
