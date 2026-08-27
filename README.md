@@ -253,6 +253,14 @@ current checked state, not a list of conjectural steps.
   is explicit: convergence of fixed positive multiples of natural numbers is
   proved to force eventual equality, rather than assumed from an informal
   argument-principle limit.
+- Lean now identifies those local counts with the actual analytic divisor at
+  every spectral-xi zero. A direct local argument principle isolates any
+  finite-order analytic point and proves that its logarithmic-derivative
+  circle integral is its analytic order times `2*pi*i`. Therefore each zeta
+  zero has a fixed isolating ball in which the approximating polynomial root
+  multiset eventually has exactly the genuine analytic zeta multiplicity.
+  This holds for every zeta zero along the same root-pinned canonical Hardy
+  sequence forced by failure of RH; no simplicity assumption is made.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -340,13 +348,15 @@ convergent sum of heat-weighted local residues of `xi'/xi`, and its vanishing
 is equivalent to RH. Expanding finite spectral windows and zero-free boundary
 truncations are now proved to converge to it. Zero-free circle integrals have
 now been combined with the exact polynomial argument principle to prove
-eventual local multiplicity stability for the same finite Hardy sequence. The
-immediate open passage is to identify those stabilized counts with the actual
-bounded spectral-xi divisor and then prove convergence of the corresponding
-bounded finite Hardy heat sums to the spectral residue windows. Uniform
-Gaussian tail control remains necessary before passing from bounded windows
-to the complete fixed-time heat sum. A global logarithmic-derivative or
-arithmetic evaluation of that sum is the subsequent rigidity target.
+eventual local multiplicity stability for the same finite Hardy sequence, and
+the stabilized count in an isolating ball around each individual xi zero is
+now proved equal to its genuine analytic multiplicity. The immediate open
+passage is to assemble finitely many such isolating balls into a simultaneous
+bounded-divisor statement and prove convergence of the corresponding weighted
+finite Hardy heat sums to the spectral residue windows. Uniform Gaussian tail
+control remains necessary before passing from bounded windows to the complete
+fixed-time heat sum. A global logarithmic-derivative or arithmetic evaluation
+of that sum is the subsequent rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -414,6 +424,9 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   combines the zero-free integral limit with discreteness to prove eventual
   local multiplicity stability, including for the root-pinned Hardy sequence
   under failure of RH.
+- [`RiemannGaussian/FiniteToEntireLocalDivisor.lean`](RiemannGaussian/FiniteToEntireLocalDivisor.lean)
+  proves the local analytic argument principle and identifies each stabilized
+  polynomial count with the exact spectral-xi zero multiplicity.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
