@@ -481,12 +481,22 @@ heat by a vanishing term. The same boundary error now propagates through the
 whole disk by maximum modulus. Since its double-exponential value is strictly
 below every earlier selected-circle xi floor, Lean proves that the stage-`n`
 polynomial has the genuine xi divisor count simultaneously inside every
-selected circle `rₘ` with `m + 1 ≤ n`. The immediate open step is to convert
-these nested cumulative counts into a multiplicity-aware annular heat
-decomposition and identify the varying inside-circle heat with the complete
-spectral-xi heat sum. Proper-time endpoint control is a separate subsequent
-requirement. A global logarithmic-derivative or arithmetic evaluation of the
-complete sum is the later rigidity target.
+selected circle `rₘ` with `m + 1 ≤ n`. Lean now converts these nested
+cumulative counts into a multiplicity-aware annular heat decomposition, the
+first of the two steps needed to identify the varying inside-circle heat with
+the complete spectral-xi heat sum:
+the polynomial divisor in nested disks splits into the inner divisor plus the
+annular divisor, with algebraic multiplicity, and synchronized inner/outer
+counts identify the complete annular cardinality with the corresponding
+genuine spectral-xi divisor increment. The upper annular roots form a checked
+submultiset. Jensen's quadratic xi-divisor bound then gives every sufficiently
+early consecutive annulus of a cross-stage polynomial a uniform
+quadratic-times-Gaussian heat majorant. The immediate open step is fixed-shell
+weighted convergence to the matching spectral annulus, followed by a
+summable-shell passage identifying the varying inside-circle heat with the
+complete spectral-xi heat sum. Proper-time endpoint control is a separate
+subsequent requirement. A global logarithmic-derivative or arithmetic
+evaluation of the complete sum is the later rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -619,6 +629,11 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   propagates each scheduled boundary error across its disk and proves the
   same polynomial has exact genuine divisor counts on every earlier selected
   circle, preparing a nested annular heat comparison.
+- [`RiemannGaussian/FiniteToEntireRadialAnnulus.lean`](RiemannGaussian/FiniteToEntireRadialAnnulus.lean)
+  splits nested polynomial divisors exactly into radial annuli, identifies
+  their total multiplicities with genuine spectral-divisor increments under
+  the cross-stage counts, and proves uniform quadratic-Gaussian upper bounds
+  for their upper-root heat.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
