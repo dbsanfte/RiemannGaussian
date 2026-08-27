@@ -295,6 +295,15 @@ current checked state, not a list of conjectural steps.
   spectral-xi heat sum identifies the exact tail theorem still needed. This
   package holds for every window along the same root-pinned sequence under
   `¬RH`.
+- At fixed positive proper time, Lean now proves a direct Euclidean Gaussian
+  bound for every hyperbolic heat term. Consequently the radial upper-root
+  heat tail of any real polynomial is bounded, with multiplicity, by
+  `degree * tau⁻¹ * exp(-R²*tau)`. The exact unused-root remainder inherits
+  this bound whenever all unused roots lie at least `R` from the observation
+  point, and an asymptotic squeeze theorem proves its convergence to zero
+  whenever that degree-weighted envelope tends to zero. This isolates the
+  still-unproved global root-localization premise rather than deriving it
+  incorrectly from locally uniform convergence.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -394,11 +403,15 @@ by the common full-divisor object. Each bounded xi window now cuts an actual
 upper-root submultiset out of that divisor, and the complement is an explicit
 nonnegative heat remainder. Lean proves that full polynomial convergence to
 the complete xi heat sum is equivalent to convergence of this remainder to
-the exact spectral tail `complete sum - window`. The immediate open passage
-is therefore a uniform Gaussian estimate proving that remainder convergence
-and controlling it as the windows expand; proper-time endpoint control is a
-separate subsequent requirement. A global logarithmic-derivative or
-arithmetic evaluation of the complete sum is the later rigidity target.
+the exact spectral tail `complete sum - window`. The quantitative Gaussian
+half of the tail estimate is now checked: a radially separated polynomial
+tail is at most `degree * tau⁻¹ * exp(-R²*tau)`, and Lean proves the
+corresponding vanishing criterion. The immediate open passage is to prove
+global localization of the unused roots, synchronize expanding windows, and
+verify that their escape rate beats degree growth. Proper-time endpoint
+control is a separate subsequent requirement. A global logarithmic-
+derivative or arithmetic evaluation of the complete sum is the later
+rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -481,6 +494,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   embeds each bounded xi cluster in that full divisor and splits its
   fixed-time heat sum into the convergent window term plus an exact
   nonnegative remainder, reducing full convergence to a precise tail limit.
+- [`RiemannGaussian/FiniteToEntireGaussianTail.lean`](RiemannGaussian/FiniteToEntireGaussianTail.lean)
+  proves degree-weighted Gaussian bounds for radial polynomial heat tails and
+  reduces unused-root remainder vanishing to explicit escape and growth
+  conditions.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
