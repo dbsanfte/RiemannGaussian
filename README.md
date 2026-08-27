@@ -126,7 +126,9 @@ current checked state, not a list of conjectural steps.
   a polynomial quotient with no closed-half-plane poles and numerator degree
   at most its denominator degree inherits every uniform real-boundary norm
   bound. This is the analytic engine for the remaining factored-quotient
-  estimate.
+  estimate. For the actual finite common transform, Lean now proves the
+  required pole exclusion and degree inequality and derives its global
+  unfactored norm bound.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
