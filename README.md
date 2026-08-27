@@ -250,6 +250,13 @@ current checked state, not a list of conjectural steps.
   double-pole summands. This supplies the analytic side needed for a future
   identity theorem; the missing meeting theorem is still the arithmetic
   prime/gamma identification itself.
+- The first non-elementary term of that arithmetic formula is now constructed
+  from first principles. For every positive screw time, Lean proves uniform
+  geometric convergence of the defining Hurwitz--Lerch series on a common
+  right half-plane containing both `1/4 - i*z/2` and `1/4`, and proves their
+  exact difference holomorphic on `Im(z) > 1/2`. The divergent nome-one case
+  at time zero is explicitly excluded pending a separate removable-limit
+  theorem; no analytic-continuation value is assumed.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
