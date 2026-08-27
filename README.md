@@ -357,6 +357,15 @@ current checked state, not a list of conjectural steps.
   patched into one analytic representative on the full safe contour
   rectangle. Thus the cancellation/residual term requiring new rigidity is
   explicit in the checked chain rather than tacitly set to zero.
+- The Poisson statistic now has an exact analytic derivative interpretation.
+  Lean computes the derivative of each elementary upper-half-plane Blaschke
+  factor and proves that its multiplicity-weighted Poisson contribution is
+  exactly `2*Im(z)` times that derivative's norm. The finite-window identity
+  passes to the complete extended sums, so the full Poisson mass is precisely
+  `ofReal(2*Im(z))` times total spectral Blaschke-derivative variation,
+  including infinity. Vanishing of this variation is equivalent to RH. The
+  next unchecked issue is cancellation when these individual derivatives are
+  assembled into one finite divisor product.
 - On every zero-free open region, Lean now proves locally uniform convergence
   of the root-pinned polynomial logarithmic derivatives to the genuine
   spectral-xi logarithmic derivative. On each compact zero-free subset the
@@ -909,6 +918,10 @@ RH-level part of the project.
   multiplicity-weighted Cauchy divisor sum and a remainder, proves all
   selected singularities removable, and patches the remainder analytically
   across the complete safe contour rectangle.
+- [`RiemannGaussian/RiemannXiBlaschkeDerivativeVariation.lean`](RiemannGaussian/RiemannXiBlaschkeDerivativeVariation.lean)
+  computes the elementary spectral Blaschke derivatives and identifies the
+  finite and complete Poisson masses exactly with observation height times
+  total multiplicity-weighted derivative variation.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
