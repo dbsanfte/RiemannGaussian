@@ -113,6 +113,10 @@ current checked state, not a list of conjectural steps.
   Schwarz--Pick inequalities. The same theorem packages those data beside
   the strict complete core-radius product bound while keeping the core and
   determinant products logically distinct.
+- The sharp scalar terminal step for the collective comparison is also
+  checked. A common radial disk automorphism converts a `2*R` difference
+  estimate, where `R` is the complete zero-radius product, into exactly
+  `2*R/(1+R^2)`; the denominator is not lost to a triangle estimate.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -176,10 +180,11 @@ The immediate frontier is to combine its chosen-root bound and the checked
 Schwarz--Pick contraction with the structural inside-core radius product. The
 single-root Blaschke/Pick comparison is now formalized, and its interpolation
 and Pick data are derived uniformly for the complete inside core. The missing
-finite step is a collective comparison that uses the complete inside-core
-product, not merely one selected radius. The core product is not being
-identified with the determinant product by assumption. Beyond that lies the
-genuinely analytic passage from finite polynomial models to the entire xi
+finite step is the analytic zero-product estimate for the difference of the
+two commonly transformed Schur functions. That estimate must use the complete
+inside-core product, not merely one selected radius. The core product is not
+being identified with the determinant product by assumption. Beyond that lies
+the genuinely analytic passage from finite polynomial models to the entire xi
 function.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
