@@ -192,6 +192,16 @@ current checked state, not a list of conjectural steps.
   norm. What is still missing is a new theorem identifying the appropriate
   arithmetic signal with, or proving it dominates, the raw spectral
   coordinates; that theorem will also have to be formalized in Lean.
+- Lean now reaches Suzuki's published zero-expansion coefficient itself. The
+  continuously extended `(exp(-i*alpha*t)-1)/alpha`, including its removable
+  value at `alpha = 0`, has derivative `-i*exp(-i*alpha*t)`. Exponential future
+  convolution of that derivative is exactly `-i` times the resolvent mode, so
+  every coordinate of the finite RH-detecting Hilbert vector is a proved
+  height-weighted convolution of the derivative of Suzuki's coefficient. This
+  is a coefficient-level bridge: Suzuki's unconditional arithmetic `L²`
+  function `S_t`, its explicit `P_t`, its zero functions, and the full
+  expansion/Gram comparison still need to be formalized before an arithmetic
+  growth estimate can cross the bridge.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
