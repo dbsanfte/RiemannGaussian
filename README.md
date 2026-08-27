@@ -272,6 +272,15 @@ current checked state, not a list of conjectural steps.
   holds along the same root-pinned canonical Hardy sequence. This is a
   bounded-window result; it asserts neither uniform control of roots outside
   the selected clusters nor a complete-window tail limit.
+- The canonical Hardy influence core is now connected to the complete
+  polynomial upper divisor with algebraic multiplicity, not merely as a set
+  of root locations. At every positive proper time its fixed-time heat sum is
+  bounded by the full upper-divisor heat sum, and the same domination is
+  proved for positive truncated actions and limiting logarithmic heat masses.
+  Consequently the root-pinned sequence forced by `¬RH` has strictly positive
+  full upper-divisor heat sums at every stage and time, while its full masses
+  retain the same explicit stage-independent lower bound as the Hardy cores.
+  This does not yet give a uniform positive lower bound at one fixed time.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -364,11 +373,15 @@ stabilized counts are identified with genuine analytic multiplicities, finite
 families are isolated simultaneously in disjoint balls, and continuous
 weighted root sums now converge. In particular, every bounded upper spectral
 heat window is a checked limit of fixed-time heat sums over the corresponding
-full polynomial-root clusters. The immediate open passage is narrower: relate
-the positive finite Hardy inside-core roots to those full divisor clusters.
-Uniform Gaussian tail control is then necessary before passing from bounded
-windows to the complete fixed-time heat sum. A global logarithmic-derivative
-or arithmetic evaluation of that sum is the subsequent rigidity target.
+full polynomial-root clusters. The Hardy cores are now proved to be
+multiplicity-preserving submultisets of those polynomials' complete upper
+divisors, so their fixed-time and integrated heat contributions are dominated
+by the common full-divisor object. The immediate open passage is uniform
+Gaussian tail control preventing this positive mass from escaping the
+expanding spectral windows (and, separately, the proper-time endpoints).
+That control is necessary before passing to the complete fixed-time xi heat
+sum. A global logarithmic-derivative or arithmetic evaluation of that sum is
+the subsequent rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -443,6 +456,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   synchronizes finite disjoint divisor clusters and proves convergence of
   their continuous weighted sums, including every fixed finite spectral heat
   window along the root-pinned Hardy sequence.
+- [`RiemannGaussian/FiniteToEntireFullDivisorHeat.lean`](RiemannGaussian/FiniteToEntireFullDivisorHeat.lean)
+  embeds the Hardy core in the full upper polynomial divisor with
+  multiplicity and proves fixed-time, truncated-action, and total-mass heat
+  domination, including the uniform `¬RH` sequence-level frontier.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
