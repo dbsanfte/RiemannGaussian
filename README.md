@@ -66,6 +66,13 @@ current checked state, not a list of conjectural steps.
   residual is at least `V(z)/4` along arbitrarily late windows, or the
   weighted unit-phase chordal energy is eventually at least `(V(z)/4)^2`.
   This result has no polynomial-height or infinite-mass escape branch.
+- At every noncolliding upper point, the selected signed Blaschke
+  logarithmic-derivative terms are now proved absolutely summable. Their
+  complete complex sum is the limit of both the genuine finite Blaschke
+  windows and the exact xi reflection residuals. Consequently the residual
+  side of the preceding frontier is static: under `not RH`, either the norm
+  of this complete signed sum is at least `V(z)/4`, or the finite-window
+  weighted phase energy is eventually at least `(V(z)/4)^2`.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -835,6 +842,10 @@ RH-level part of the project.
   defines the actual finite real Blaschke-variation total and, under failure
   of RH, derives a direct residual-versus-unit-phase-energy dichotomy with no
   approximation-height branch.
+- [`RiemannGaussian/RiemannXiBlaschkeLogDerivativeSummability.lean`](RiemannGaussian/RiemannXiBlaschkeLogDerivativeSummability.lean)
+  proves absolute convergence of the complete signed Blaschke logarithmic
+  derivative, identifies the finite residual limit, and makes the residual
+  branch of the finite-total frontier a static complete-series bound.
 - [`RiemannGaussian/GaussianPositivityCertificate.lean`](RiemannGaussian/GaussianPositivityCertificate.lean)
   contains the scalable certificate soundness and cofinal-width reductions.
 - [`RiemannGaussian/SuzukiTransportBarrier.lean`](RiemannGaussian/SuzukiTransportBarrier.lean)
