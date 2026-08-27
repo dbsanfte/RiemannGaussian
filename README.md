@@ -145,6 +145,19 @@ current checked state, not a list of conjectural steps.
   Suzuki/Fredholm control of this reflected-pair correlation; the existing
   one-point Gaussian explicit formula alone does not perform the required
   pair matching.
+- Spatial integration now links that boundary Gram invariant to the existing
+  radial-height frontier. Lean integrates the complete fixed-time boundary
+  density over every real center by Tonelli, without assuming the result is
+  finite. After division by the exact Gaussian mass
+  `2 * sqrt(pi / tau)`, the result is the pure positive transform
+  `sum m * height * exp(-tau * height^2)`. The zero-free strip gives the
+  rigorous two-sided bound `exp(-tau/4) * heightMass <= transform <=
+  heightMass`; hence damping preserves vanishing and divergence. As
+  `tau -> 0+`, the normalized spatial boundary heat converges in `ℝ≥0∞` to
+  the full upper spectral height mass, exactly the previously constructed
+  zero-time heat trace at canonical observation height `1/4`. This is now a
+  proved meeting point between the reflected Gaussian Gram density and the
+  off-critical radial-width/Suzuki program.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
