@@ -151,7 +151,8 @@ current checked state, not a list of conjectural steps.
   prescribed upper-half-plane zero of `f + i*eta*f'` into every finite
   homotopy while preserving locally uniform convergence to `f`. Thus the
   chosen homotopy root need not be selected from drifting finite root sets.
-  Separability and control of the corrected base-root multisets remain open.
+  Subsequent checked perturbations make these models separable; quantitative
+  control of their base-root multisets remains open.
 - The real-polynomial approximation premise is now discharged for spectral
   xi itself. Lean proves the conjugation laws for the real Gamma factor, the
   pole-cleared xi normalization, and spectral xi; hence spectral xi is entire
@@ -167,6 +168,13 @@ current checked state, not a list of conjectural steps.
   repetitions whenever the polynomial is separable. Thus the qualitative
   root-decomposition premises of the finite Hardy estimates are discharged
   canonically; quantitative control of those roots remains open.
+- The separability gap for root-pinned approximants is now closed. Lean
+  constructs explicit quadratic and cubic perturbations in the kernel of
+  homotopy evaluation at the prescribed root. A nonzero Wronskian reduces
+  every nonseparable pencil parameter to an explicit finite set; choosing
+  vanishing parameters outside those sets yields separable real polynomials
+  converging locally uniformly to spectral xi while retaining the same exact
+  upper homotopy root in every finite model.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -234,11 +242,11 @@ convergent finite roots are genuine roots of the limiting homotopy. Exact
 vanishing affine corrections also pin a prescribed limiting homotopy root
 into every corrected approximant without changing the locally uniform limit.
 Explicit real Taylor approximants to spectral xi are now constructed and
-proved locally uniform, so that approximation premise is closed. The next
-Hardy frontier is to obtain separable corrected models, prove the required
-quantitative influence-core control for their canonical upper-root
-multisets, and then pass the finite strict defect mechanism through that
-limit.
+proved locally uniform, and separable root-pinned versions retain both that
+limit and the prescribed finite homotopy root. The next Hardy frontier is to
+prove the required quantitative influence-core control for their canonical
+upper-root multisets and then pass the finite strict defect mechanism through
+that limit.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -267,6 +275,8 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   constructs the locally uniform real Taylor approximants to spectral xi.
 - [`RiemannGaussian/FiniteRealRootDecomposition.lean`](RiemannGaussian/FiniteRealRootDecomposition.lean)
   canonically decomposes every real polynomial root multiset with multiplicity.
+- [`RiemannGaussian/FiniteToEntireSeparableApproximation.lean`](RiemannGaussian/FiniteToEntireSeparableApproximation.lean)
+  constructs separable root-pinned approximants converging to spectral xi.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
