@@ -334,6 +334,13 @@ current checked state, not a list of conjectural steps.
   equivalent to RH. Thus the new entire-side size target is a literal global
   arithmetic displacement of the zeta divisor, not an artifact of the
   rotated coordinate.
+- The complete upper-height, absolute-displacement, and logarithmic-defect
+  masses now have explicit finite approximants. Lean proves that the same
+  symmetric spectral windows used by the xi contour argument are cofinal and
+  that all three finite sums converge to their complete `ℝ≥0∞` masses,
+  including when a limit is infinite. Critical-line reflection preserves
+  every finite window, so its absolute displacement is already exactly twice
+  its upper-height sum before passage to the limit.
 - On every zero-free open region, Lean now proves locally uniform convergence
   of the root-pinned polynomial logarithmic derivatives to the genuine
   spectral-xi logarithmic derivative. On each compact zero-free subset the
@@ -873,6 +880,10 @@ RH-level part of the project.
   uses critical-line reflection and multiplicity invariance to identify twice
   the upper spectral height with the full absolute horizontal displacement of
   nontrivial zeta zeros from `Re(s) = 1/2`.
+- [`RiemannGaussian/RiemannXiSpectralWindowMass.lean`](RiemannGaussian/RiemannXiSpectralWindowMass.lean)
+  realizes the complete upper-height, absolute-displacement, and logarithmic-
+  defect masses as limits of explicit cofinal finite spectral-window sums and
+  proves the finite-window reflection identity exactly.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
