@@ -510,7 +510,7 @@ point and every positive proper time. -/
 theorem exists_canonicalFiniteHardyFrontier_fullHeat_tendsto_of_not_rh
     (hRH : ¬ RiemannHypothesis) :
     ∃ eta : ℝ, 0 < eta ∧ ∃ z : ℂ, 0 < z.im ∧
-      ∃ B : ℕ → ℝ[X],
+      riemannXiSpectral z ≠ 0 ∧ ∃ B : ℕ → ℝ[X],
         TendstoLocallyUniformlyOn
           (fun n w ↦ ((B n).map Complex.ofRealHom).eval w)
           riemannXiSpectral atTop Set.univ ∧
@@ -519,14 +519,14 @@ theorem exists_canonicalFiniteHardyFrontier_fullHeat_tendsto_of_not_rh
           Tendsto
             (fun n ↦ realPolynomialUpperHyperbolicHeatSum (B n) u tau)
             atTop (nhds (riemannXiUpperHyperbolicHeatSum u tau)) := by
-  obtain ⟨eta, heta, z, hz, _, _, _, _, B, hdata⟩ :=
+  obtain ⟨eta, heta, z, hz, hxi, _, _, _, _, B, hdata⟩ :=
     exists_radialRouche_crossStageDivisor_vanishingHeatTail_sequence_of_not_rh
       hRH
   dsimp only at hdata
   rcases hdata with
     ⟨_, hlimit, hfrontier, _, _, _, hcurrent, hearlier, htail⟩
   obtain ⟨K, hK, hKbound⟩ := riemannXi_quadraticGrowth
-  refine ⟨eta, heta, z, hz, B, hlimit, ?_, ?_⟩
+  refine ⟨eta, heta, z, hz, hxi, B, hlimit, ?_, ?_⟩
   · intro n
     exact (hfrontier n).1
   · intro u tau hu htau

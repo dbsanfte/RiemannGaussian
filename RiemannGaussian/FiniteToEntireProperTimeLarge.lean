@@ -514,7 +514,7 @@ theorem exists_canonicalFiniteHardyFrontier_largeTimeTight_or_collision_of_not_r
                 upperHalfPlaneHyperbolicHeatAction z
                   (realPolynomialUpperRootMultiset (B n)) (T, U) <
                     epsilon) := by
-  obtain ⟨eta, heta, z, hz, B, hlimit, hfrontier, hheat⟩ :=
+  obtain ⟨eta, heta, z, hz, hxi, B, hlimit, hfrontier, hheat⟩ :=
     exists_canonicalFiniteHardyFrontier_fullHeat_tendsto_of_not_rh hRH
   have hstageZero := realPolynomialUpperHyperbolicHeatAction_frontier
     (hfrontier 0).separable heta hz (hfrontier 0).homotopyRoot
@@ -524,13 +524,65 @@ theorem exists_canonicalFiniteHardyFrontier_largeTimeTight_or_collision_of_not_r
     exact (realPolynomialUpperHyperbolicHeatAction_frontier
       (hfrontier n).separable heta hz
       (hfrontier n).homotopyRoot).2.2
-  · by_cases hcollision : riemannXiSpectral z = 0
-    · exact Or.inl hcollision
-    · right
-      intro epsilon hepsilon
-      exact eventually_realPolynomialUpperHeatAction_largeTime_lt_of_ne_zero
-        B hlimit (fun n ↦ (hfrontier n).separable)
-        hz hcollision (fun T hT ↦ hheat z T hz hT) hepsilon
+  · right
+    intro epsilon hepsilon
+    exact eventually_realPolynomialUpperHeatAction_largeTime_lt_of_ne_zero
+      B hlimit (fun n ↦ (hfrontier n).separable)
+      hz hxi (fun T hT ↦ hheat z T hz hT) hepsilon
+
+/-- Under failure of RH, the canonical radial Hardy sequence may be chosen
+at a noncolliding pinned homotopy root, and its large-time actions are then
+uniformly tight.  This removes the collision branch from the actual
+finite-to-entire sequence while retaining its fixed-time heat limit and
+stage-independent positive full-mass lower bound. -/
+theorem exists_canonicalFiniteHardyFrontier_largeTimeTight_of_not_rh
+    (hRH : ¬ RiemannHypothesis) :
+    ∃ eta : ℝ, 0 < eta ∧ ∃ z : ℂ, 0 < z.im ∧
+      riemannXiSpectral z ≠ 0 ∧ ∃ B : ℕ → ℝ[X],
+        TendstoLocallyUniformlyOn
+          (fun n w ↦ ((B n).map Complex.ofRealHom).eval w)
+          riemannXiSpectral atTop Set.univ ∧
+        (∀ n, CanonicalFiniteHardyFrontier (B n) eta z) ∧
+        (∀ (u : ℂ) (tau : ℝ), 0 < u.im → 0 < tau →
+          Tendsto
+            (fun n ↦ realPolynomialUpperHyperbolicHeatSum (B n) u tau)
+            atTop (nhds (riemannXiUpperHyperbolicHeatSum u tau))) ∧
+        0 < -2 * Real.log (pairHyperbolicThreshold eta z.im) ∧
+        (∀ n,
+          -2 * Real.log (pairHyperbolicThreshold eta z.im) ≤
+            realPolynomialUpperHyperbolicHeatMass (B n) z) ∧
+        (∀ (u : ℂ) (a b : ℝ), 0 < u.im → 0 < a → a ≤ b →
+          IntervalIntegrable (riemannXiUpperHyperbolicHeatSum u)
+              volume a b ∧
+            Tendsto
+              (fun n ↦ upperHalfPlaneHyperbolicHeatAction u
+                (realPolynomialUpperRootMultiset (B n)) (a, b))
+              atTop
+              (nhds (∫ tau in a..b,
+                riemannXiUpperHyperbolicHeatSum u tau))) ∧
+        ∀ epsilon : ℝ, 0 < epsilon →
+          ∃ T : ℝ, 0 < T ∧
+            ∀ᶠ n in atTop, ∀ U : ℝ, T ≤ U →
+              upperHalfPlaneHyperbolicHeatAction z
+                (realPolynomialUpperRootMultiset (B n)) (T, U) <
+                  epsilon := by
+  obtain ⟨eta, heta, z, hz, hxi, B, hlimit, hfrontier, hheat⟩ :=
+    exists_canonicalFiniteHardyFrontier_fullHeat_tendsto_of_not_rh hRH
+  have hstageZero := realPolynomialUpperHyperbolicHeatAction_frontier
+    (hfrontier 0).separable heta hz (hfrontier 0).homotopyRoot
+  refine ⟨eta, heta, z, hz, hxi, B, hlimit, hfrontier, hheat,
+    hstageZero.2.1, ?_, ?_, ?_⟩
+  · intro n
+    exact (realPolynomialUpperHyperbolicHeatAction_frontier
+      (hfrontier n).separable heta hz
+      (hfrontier n).homotopyRoot).2.2
+  · intro u a b hu ha hab
+    apply tendsto_realPolynomialUpperHeatAction_on_compact_of_pointwise
+      B hu (fun tau htau ↦ hheat u tau hu htau) ha hab
+  · intro epsilon hepsilon
+    exact eventually_realPolynomialUpperHeatAction_largeTime_lt_of_ne_zero
+      B hlimit (fun n ↦ (hfrontier n).separable)
+      hz hxi (fun T hT ↦ hheat z T hz hT) hepsilon
 
 end
 

@@ -132,7 +132,7 @@ still vanishes at every fixed positive proper time. -/
 theorem exists_radialRouche_crossStageDivisor_vanishingHeatTail_sequence_of_not_rh
     (hRH : ¬ RiemannHypothesis) :
     ∃ eta : ℝ, 0 < eta ∧ ∃ z : ℂ, 0 < z.im ∧
-      ∃ A : ℝ, 1 ≤ A ∧ ∃ C : ℝ, 0 < C ∧
+      riemannXiSpectral z ≠ 0 ∧ ∃ A : ℝ, 1 ≤ A ∧ ∃ C : ℝ, 0 < C ∧
         ∃ B : ℕ → ℝ[X],
           let L := finiteERootPinnedRadialConstant A eta z
           Tendsto (radialRoucheIndex A L C) atTop atTop ∧
@@ -175,7 +175,7 @@ theorem exists_radialRouche_crossStageDivisor_vanishingHeatTail_sequence_of_not_
                 (B n) (realPolynomialUpperRootMultisetInsideBall (B n)
                   (quantitativeSpectralRadialBoundary n)) u tau)
               atTop (nhds 0) := by
-  obtain ⟨eta, heta, z, hz, A, hA, C, hC, B,
+  obtain ⟨eta, heta, z, hz, hxi, A, hA, C, hC, B,
       hindex, hlimit, hfrontier, hgrowth, hfloor, herror⟩ :=
     exists_radialRouche_canonicalFiniteHardyFrontier_sequence_of_not_rh hRH
   let L : ℝ := finiteERootPinnedRadialConstant A eta z
@@ -183,7 +183,7 @@ theorem exists_radialRouche_crossStageDivisor_vanishingHeatTail_sequence_of_not_
     simpa [L] using
       (finiteERootPinnedRadialConstant_pos (A := A) (eta := eta) (z := z))
   have hA0 : 0 ≤ A := zero_le_one.trans hA
-  refine ⟨eta, heta, z, hz, A, hA, C, hC, B, ?_⟩
+  refine ⟨eta, heta, z, hz, hxi, A, hA, C, hC, B, ?_⟩
   dsimp only
   refine ⟨by simpa [L] using hindex, hlimit, ?_, ?_, ?_, ?_, ?_, ?_, ?_⟩
   · intro n

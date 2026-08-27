@@ -143,7 +143,7 @@ any prescribed positive error. -/
 theorem exists_canonicalFiniteHardyFrontier_endpointEscape_of_not_rh
     (hRH : ¬ RiemannHypothesis) :
     ∃ eta : ℝ, 0 < eta ∧ ∃ z : ℂ, 0 < z.im ∧
-      ∃ B : ℕ → ℝ[X],
+      riemannXiSpectral z ≠ 0 ∧ ∃ B : ℕ → ℝ[X],
         TendstoLocallyUniformlyOn
           (fun n w ↦ ((B n).map Complex.ofRealHom).eval w)
           riemannXiSpectral atTop Set.univ ∧
@@ -168,11 +168,11 @@ theorem exists_canonicalFiniteHardyFrontier_endpointEscape_of_not_rh
                       riemannXiUpperHyperbolicHeatSum z tau) - error ≤
                   realPolynomialUpperHyperbolicHeatEndpointDefect
                     (B n) z a b := by
-  obtain ⟨eta, heta, z, hz, B, hlimit, hfrontier, hpositive,
+  obtain ⟨eta, heta, z, hz, hxi, B, hlimit, hfrontier, hpositive,
       hstage, hcompact⟩ :=
     exists_canonicalFiniteHardyFrontier_compactHeatAction_tendsto_of_not_rh
       hRH
-  refine ⟨eta, heta, z, hz, B, hlimit, hfrontier, hpositive, ?_⟩
+  refine ⟨eta, heta, z, hz, hxi, B, hlimit, hfrontier, hpositive, ?_⟩
   intro a b ha hab
   obtain ⟨hintegrable, haction⟩ := hcompact z a b hz ha hab
   refine ⟨hintegrable, haction, ?_, ?_⟩

@@ -598,7 +598,7 @@ theorem exists_radialRouche_fixedShellHeatTransport_sequence_of_not_rh
               (tau⁻¹ * Real.exp
                 (-((quantitativeSpectralRadialBoundary m - ‖u‖) ^ 2 *
                   tau))) := by
-  obtain ⟨eta, heta, z, hz, A, _, C, _, B, hdata⟩ :=
+  obtain ⟨eta, heta, z, hz, _hxi, A, _, C, _, B, hdata⟩ :=
     exists_radialRouche_crossStageDivisor_vanishingHeatTail_sequence_of_not_rh
       hRH
   dsimp only at hdata

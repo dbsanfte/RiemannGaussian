@@ -359,7 +359,7 @@ proper-time endpoints. -/
 theorem exists_canonicalFiniteHardyFrontier_compactHeatAction_tendsto_of_not_rh
     (hRH : ¬ RiemannHypothesis) :
     ∃ eta : ℝ, 0 < eta ∧ ∃ z : ℂ, 0 < z.im ∧
-      ∃ B : ℕ → ℝ[X],
+      riemannXiSpectral z ≠ 0 ∧ ∃ B : ℕ → ℝ[X],
         TendstoLocallyUniformlyOn
           (fun n w ↦ ((B n).map Complex.ofRealHom).eval w)
           riemannXiSpectral atTop Set.univ ∧
@@ -382,11 +382,11 @@ theorem exists_canonicalFiniteHardyFrontier_compactHeatAction_tendsto_of_not_rh
               atTop
               (nhds (∫ tau in a..b,
                 riemannXiUpperHyperbolicHeatSum u tau)) := by
-  obtain ⟨eta, heta, z, hz, B, hlimit, hfrontier, hheat⟩ :=
+  obtain ⟨eta, heta, z, hz, hxi, B, hlimit, hfrontier, hheat⟩ :=
     exists_canonicalFiniteHardyFrontier_fullHeat_tendsto_of_not_rh hRH
   have hstageZero := realPolynomialUpperHyperbolicHeatAction_frontier
     (hfrontier 0).separable heta hz (hfrontier 0).homotopyRoot
-  refine ⟨eta, heta, z, hz, B, hlimit, hfrontier,
+  refine ⟨eta, heta, z, hz, hxi, B, hlimit, hfrontier,
     hstageZero.2.1, ?_, ?_⟩
   · intro n
     have hstage := realPolynomialUpperHyperbolicHeatAction_frontier

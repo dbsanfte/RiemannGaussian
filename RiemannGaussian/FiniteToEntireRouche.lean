@@ -160,7 +160,7 @@ theorem exists_radialRouche_rootCount_integral_sequence_of_not_rh
                 (2 * Real.pi : ℝ) * Complex.I =
               ∮ w in C(0, quantitativeSpectralRadialBoundary n),
                 logDeriv riemannXiSpectral w := by
-  obtain ⟨eta, heta, z, hz, A, hA, C, hC, B,
+  obtain ⟨eta, heta, z, hz, _hxi, A, hA, C, hC, B,
       hindex, hlimit, hfrontier, hgrowth, hfloor, herror⟩ :=
     exists_radialRouche_canonicalFiniteHardyFrontier_sequence_of_not_rh hRH
   let L : ℝ := finiteERootPinnedRadialConstant A eta z

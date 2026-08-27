@@ -1,5 +1,6 @@
 import RiemannGaussian.FiniteToEntireRadialBoundary
 import RiemannGaussian.FiniteToEntireExpandingPinned
+import RiemannGaussian.FiniteToEntireHomotopyNoncollision
 
 /-!
 # Radial approximation below the xi boundary floor
@@ -497,7 +498,7 @@ bounded by a fixed multiple of `exp (5 * r_n)`. -/
 theorem exists_radialRouche_canonicalFiniteHardyFrontier_sequence_of_not_rh
     (hRH : ¬ RiemannHypothesis) :
     ∃ eta : ℝ, 0 < eta ∧ ∃ z : ℂ, 0 < z.im ∧
-      ∃ A : ℝ, 1 ≤ A ∧ ∃ C : ℝ, 0 < C ∧
+      riemannXiSpectral z ≠ 0 ∧ ∃ A : ℝ, 1 ≤ A ∧ ∃ C : ℝ, 0 < C ∧
         ∃ B : ℕ → ℝ[X],
           let L := finiteERootPinnedRadialConstant A eta z
           Tendsto (radialRoucheIndex A L C) atTop atTop ∧
@@ -524,8 +525,9 @@ theorem exists_radialRouche_canonicalFiniteHardyFrontier_sequence_of_not_rh
                   (5 * quantitativeSpectralRadialBoundary n)) ∧
             ‖((B n).map Complex.ofRealHom).eval w -
                 riemannXiSpectral w‖ < ‖riemannXiSpectral w‖ := by
-  obtain ⟨eta, heta, z, hz, hroot⟩ :=
-    exists_positive_riemannXiSpectral_analyticEValue_upper_root_of_not_rh hRH
+  obtain ⟨eta, heta, z, hz, hroot, hxi⟩ :=
+    exists_positive_riemannXiSpectral_analyticEValue_upper_nonzero_root_of_not_rh
+      hRH
   have hden : z.im + eta ≠ 0 := by linarith
   obtain ⟨A, hA, hPinned⟩ :=
     exists_riemannXiSpectral_pinnedTaylor_radial_geometric_bound
@@ -575,7 +577,7 @@ theorem exists_radialRouche_canonicalFiniteHardyFrontier_sequence_of_not_rh
         _ ≤ max (max (index n) 1) 3 :=
           max_le_max (hPdegree (index n)) le_rfl
         _ = max (index n) 3 := by omega
-  refine ⟨eta, heta, z, hz, A, hA, C, hC, B, ?_⟩
+  refine ⟨eta, heta, z, hz, hxi, A, hA, C, hC, B, ?_⟩
   dsimp only
   refine ⟨by simpa [index, L] using hIndex,
     hBlimit, ?_, ?_, ?_, ?_⟩
