@@ -96,6 +96,7 @@ import RiemannGaussian.FiniteToEntireHeatFrontier
 import RiemannGaussian.RiemannXiHyperbolicHeat
 import RiemannGaussian.RiemannXiHyperbolicHeatWindow
 import RiemannGaussian.FiniteToEntireLogDerivative
+import RiemannGaussian.PolynomialLogDerivativeCircle
 import RiemannGaussian.FiniteAlgebraicHilbert
 import RiemannGaussian.FiniteHardySylvesterProjection
 import RiemannGaussian.FiniteRootCountBridge

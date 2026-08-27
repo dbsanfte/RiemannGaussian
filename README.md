@@ -240,6 +240,11 @@ current checked state, not a list of conjectural steps.
   the same exact finite Hardy sequence forced by failure of RH; converting the
   boundary integrals into stable multiplicity counts is the next local-divisor
   step.
+- On the finite side of that step, Lean proves the full polynomial argument
+  principle on a circle: when the boundary is root-free, the integral of
+  `p'/p` is exactly `2*pi*i` times the number of roots in the disk, counted by
+  the polynomial root multiset with algebraic multiplicity. The proof expands
+  every Cauchy kernel and checks its inside/outside circle integral directly.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -326,11 +331,11 @@ fixed-time spectral-xi heat sum is now constructed as an absolutely
 convergent sum of heat-weighted local residues of `xi'/xi`, and its vanishing
 is equivalent to RH. Expanding finite spectral windows and zero-free boundary
 truncations are now proved to converge to it. The immediate open passage is
-to turn the now-checked zero-free logarithmic-derivative and circle-integral
-convergence into multiplicity-preserving local divisor convergence, then
-prove that the varying finite Hardy heat sums converge to the spectral
-divisor windows. A global logarithmic-derivative or arithmetic evaluation of
-the fixed-time sum remains the subsequent rigidity target.
+to combine the now-checked boundary-integral convergence with the exact
+polynomial root-count formula and obtain stable local multiplicity counts for
+spectral xi, then prove that the varying finite Hardy heat sums converge to
+the spectral divisor windows. A global logarithmic-derivative or arithmetic
+evaluation of the fixed-time sum remains the subsequent rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -391,6 +396,9 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
 - [`RiemannGaussian/FiniteToEntireLogDerivative.lean`](RiemannGaussian/FiniteToEntireLogDerivative.lean)
   proves zero-free locally uniform convergence of the root-pinned polynomial
   logarithmic derivatives and convergence of their circle integrals.
+- [`RiemannGaussian/PolynomialLogDerivativeCircle.lean`](RiemannGaussian/PolynomialLogDerivativeCircle.lean)
+  proves the exact multiplicity-counted polynomial argument principle on
+  root-free circles.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
