@@ -276,7 +276,14 @@ current checked state, not a list of conjectural steps.
   `P_t(z)`; finite symmetric sums recover the genuine zero windows and
   converge to the complete spectral function. The remaining gap is global,
   not local: prove the specialized Weil distribution identity and evaluate
-  its elementary, prime, and Archimedean terms as the arithmetic expression.
+  its prime and Archimedean terms as the arithmetic expression.
+- The elementary part of that global evaluation is now discharged. Lean
+  identifies `exp(x/2)` and `exp(-x/2)` with the test transform at the two
+  completed-zeta pole frequencies, proves both weighted tests absolutely
+  integrable, evaluates their integrals exactly, and recovers the two-pole
+  term in Suzuki's arithmetic formula (1.6). No invocation of the Weil
+  formula is hidden in this calculation; the next unchecked RHS component is
+  the von Mangoldt prime sum.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
