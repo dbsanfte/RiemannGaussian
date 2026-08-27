@@ -117,6 +117,11 @@ current checked state, not a list of conjectural steps.
   checked. A common radial disk automorphism converts a `2*R` difference
   estimate, where `R` is the complete zero-radius product, into exactly
   `2*R/(1+R^2)`; the denominator is not lost to a triangle estimate.
+- The common transform of `-S` and `B` is now represented by explicit
+  numerator and denominator polynomials. Separability proves that the
+  inside-core nodes are distinct, their interpolation identities make every
+  node a literal numerator root, and Lean proves that the complete core-root
+  polynomial divides the transformed difference numerator.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -180,12 +185,12 @@ The immediate frontier is to combine its chosen-root bound and the checked
 Schwarz--Pick contraction with the structural inside-core radius product. The
 single-root Blaschke/Pick comparison is now formalized, and its interpolation
 and Pick data are derived uniformly for the complete inside core. The missing
-finite step is the analytic zero-product estimate for the difference of the
-two commonly transformed Schur functions. That estimate must use the complete
-inside-core product, not merely one selected radius. The core product is not
-being identified with the determinant product by assumption. Beyond that lies
-the genuinely analytic passage from finite polynomial models to the entire xi
-function.
+finite step is the maximum-modulus bound for the explicit rational quotient
+left after dividing the common-transform difference by the checked core-root
+factor. That estimate must use the complete inside-core product, not merely
+one selected radius. The core product is not being identified with the
+determinant product by assumption. Beyond that lies the genuinely analytic
+passage from finite polynomial models to the entire xi function.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.

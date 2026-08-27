@@ -75,6 +75,7 @@ import RiemannGaussian.FiniteNegConjSymmetry
 import RiemannGaussian.SymmetricQuartetHardyMetric
 import RiemannGaussian.SymmetricQuartetFiniteRoots
 import RiemannGaussian.FiniteHardyInsideCoreBridge
+import RiemannGaussian.FiniteHardyMultipointRational
 import RiemannGaussian.FiniteAlgebraicHilbert
 import RiemannGaussian.FiniteHardySylvesterProjection
 import RiemannGaussian.FiniteRootCountBridge
