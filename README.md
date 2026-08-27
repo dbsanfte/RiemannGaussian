@@ -229,9 +229,9 @@ current checked state, not a list of conjectural steps.
   below by one fixed positive threshold defect. Consequently failure of RH
   produces a root-pinned approximating sequence carrying these uniformly
   positive finite heat frontiers at every stage. The full fixed-time and
-  compact positive-time limiting passages for this same sequence are now
-  formalized below; only uniform control at the two improper endpoints remains
-  open.
+  compact positive-time limiting passages for this same sequence are
+  formalized below. The large-time endpoint is closed; only quantitative
+  control as proper time tends to zero remains open.
 - Lean now makes that endpoint obstruction quantitative. Every compact
   positive-time action is at most the complete finite logarithmic heat mass,
   so their difference is a genuine nonnegative endpoint defect. Under
@@ -250,6 +250,14 @@ current checked state, not a list of conjectural steps.
   finite actions. The same `¬RH` sequence retains its stage-independent
   positive full-mass lower bound and compact-action convergence, so endpoint
   escape is now forced entirely toward proper time zero.
+- That last statement is now quantitative in Lean. Every finite action is
+  split exactly into small-, compact-, and large-time pieces. For every
+  `a > 0` and every positive error, Lean chooses a finite `T >= a` such that,
+  at every sufficiently late canonical stage, some `0 < c_n < a` captures
+  before time `a` at least the fixed Hardy threshold minus the spectral-xi
+  action on `[a,T]` and the error. Thus the sole endpoint question is whether
+  these stage-dependent small-time concentrations can be uniformly ruled out
+  or converted into an arithmetic contradiction.
 - At each fixed positive proper time, Lean now constructs the complete
   multiplicity-counted upper spectral-xi heat sum and proves its absolute
   convergence from the unconditional Gaussian zero bound. Every coefficient
@@ -561,10 +569,7 @@ interior proper-time gap. Lean now defines that missing endpoint mass as a
 nonnegative defect and proves an exact eventual lower bound for it under
 `not RH`: on every compact interval it retains the fixed finite Hardy lower
 bound minus the limiting spectral-xi compact action, up to any prescribed
-positive error. The immediate analytic task is therefore sharply separated
-into small-time and large-time endpoint estimates. A global
-logarithmic-derivative or arithmetic evaluation of the complete sum is the
-subsequent rigidity target.
+positive error.
 
 At the large-time endpoint, that task is now closed for the canonical
 sequence. The regularized homotopy-root construction chooses its pinned point
@@ -574,9 +579,17 @@ gap, and every finite action after time `T` is bounded by its heat at `T`
 divided by the squared gap. Lean packages this uniform large-time tightness
 beside the same sequence's fixed positive mass lower bound and compact-action
 convergence. The only remaining proper-time escape frontier is `t -> 0`.
+Lean now also splits each finite action into its three adjacent pieces and
+proves the corresponding small-time concentration theorem: for every
+`a > 0`, a suitable finite `T` makes the unaccounted Hardy mass occur in
+stage-dependent intervals `(c_n,a)`, up to arbitrary error. The immediate
+analytic task is to rule out or arithmetically rigidify concentration as
+`c_n -> 0`; a global logarithmic-derivative evaluation of the complete heat
+sum remains the natural meeting point with the explicit-formula line.
 
-Neither frontier is assumed. Closing the Gaussian positivity statement, or
-completing the finite-to-xi Hardy route, is the RH-level part of the project.
+The remaining small-time estimate is not assumed. Closing the Gaussian
+positivity statement, or completing the finite-to-xi Hardy route, is the
+RH-level part of the project.
 
 ## Repository guide
 
@@ -742,6 +755,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   eventual uniform polynomial-root gap from locally uniform convergence, and
   uses the noncolliding canonical sequence to close the large-time endpoint
   outright, leaving only proper time zero.
+- [`RiemannGaussian/FiniteToEntireProperTimeSmall.lean`](RiemannGaussian/FiniteToEntireProperTimeSmall.lean)
+  proves exact three-piece action additivity and forces every remaining
+  canonical Hardy defect into quantitatively bounded, stage-dependent
+  small-time intervals.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
