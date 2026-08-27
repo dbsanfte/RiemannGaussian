@@ -242,6 +242,14 @@ current checked state, not a list of conjectural steps.
   function with the arithmetic prime/gamma formula, continue its carrier-
   cancelled boundary values into `L²(R)`, and control the resulting off-RH
   synthesis/Gram operator.
+- That safe-half-plane series is now a genuine holomorphic object, not merely
+  a pointwise sum. Lean proves a compact-uniform Weierstrass majorant from the
+  same inverse-square divisor weight, local uniform convergence of the actual
+  symmetric zero windows, and termwise spatial differentiation of the
+  complete series. The derivative is the unconditional sum of the explicit
+  double-pole summands. This supplies the analytic side needed for a future
+  identity theorem; the missing meeting theorem is still the arithmetic
+  prime/gamma identification itself.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
