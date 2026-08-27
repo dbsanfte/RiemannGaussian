@@ -139,6 +139,13 @@ current checked state, not a list of conjectural steps.
   with the strict hyperbolic-energy threshold proves the closed residual-inner
   bound and the corresponding strict bound for the unconditional confluent
   Hardy complement-Gram determinant.
+- The first finite-to-entire limiting bridge is checked. Locally uniform
+  convergence of holomorphic functions transports locally uniformly through
+  `f ↦ f + i*eta*f'`, and any convergent sequence of zeros of the finite
+  polynomial homotopies is proved to limit to a genuine zero of the analytic
+  homotopy. This is deliberately one-way: it assumes the approximating real
+  polynomials and the convergent finite roots, rather than silently invoking
+  either their existence or converse root persistence.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -200,10 +207,12 @@ determinant formula conditional on a complete root Cauchy basis. The complete
 finite confluent determinant is now unconditional, including repeated roots.
 The collective finite Hardy chain is now composed through its strict
 determinant conclusion. The complete core product is used directly and is not
-identified with the determinant product by assumption. The next Hardy
-frontier is the genuinely analytic passage from these finite polynomial
-models to the entire xi function, including a limiting theorem strong enough
-to preserve the strict defect mechanism.
+identified with the determinant product by assumption. A first analytic
+passage is now formalized: homotopies converge locally uniformly and limits of
+convergent finite roots are genuine roots of the limiting homotopy. The next
+Hardy frontier is to construct suitable real-polynomial approximants to xi,
+prove persistence and controlled matching of the required roots, and pass the
+finite strict defect mechanism through that limit.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -224,6 +233,8 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   argument.
 - The `FiniteE*`, `FiniteRoot*`, `FiniteModel*`, and `FiniteHardy*` files build
   the finite Krein--Langer and boundary-Hardy realization.
+- [`RiemannGaussian/FiniteToEntireHomotopy.lean`](RiemannGaussian/FiniteToEntireHomotopy.lean)
+  begins the checked locally uniform passage from finite homotopies to xi.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built

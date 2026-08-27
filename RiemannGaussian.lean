@@ -80,6 +80,7 @@ import RiemannGaussian.FiniteHardyRationalMaximum
 import RiemannGaussian.FiniteHardyMultipointDenominator
 import RiemannGaussian.FiniteHardyMultipointFactor
 import RiemannGaussian.FiniteHardyMultipointConclusion
+import RiemannGaussian.FiniteToEntireHomotopy
 import RiemannGaussian.FiniteAlgebraicHilbert
 import RiemannGaussian.FiniteHardySylvesterProjection
 import RiemannGaussian.FiniteRootCountBridge
