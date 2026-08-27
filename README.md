@@ -384,6 +384,15 @@ current checked state, not a list of conjectural steps.
   canonical polynomial upper-height masses are unbounded. This is the current
   rigidity trichotomy: a proof of RH must eliminate all three branches, not
   assume that divisor-product cancellation disappears.
+- The cancellation branch now has an exact pair-interaction formulation.
+  Lean defines the finite Blaschke phase-dispersion energy as the double sum
+  of `norm(u_rho)*norm(u_sigma) - re(inner(u_rho,u_sigma))`, proves every term
+  nonnegative, and proves exactly that this is
+  `Variation_T^2 - norm(SignedSum_T)^2 = Gap_T*(Variation_T +
+  norm(SignedSum_T))`. Hence an eventual cancellation lower bound `q/4`
+  forces eventual phase dispersion at least `(q/4)^2`. The hard cancellation
+  branch is therefore a positive pairwise angular-energy branch, not an
+  undefined loss in a triangle inequality.
 - The connection to the actual spectral-xi logarithmic derivative is now
   formalized at every finite window without dropping an entire-function
   term. Lean decomposes `xi'/xi` exactly into the genuine multiplicity-
@@ -1003,6 +1012,10 @@ RH-level part of the project.
 - [`RiemannGaussian/FiniteToEntireBlaschkeRigidityTrichotomy.lean`](RiemannGaussian/FiniteToEntireBlaschkeRigidityTrichotomy.lean)
   separates that sum into a frequently-large xi residual, an eventually-large
   Blaschke cancellation gap, or unbounded canonical polynomial height mass.
+- [`RiemannGaussian/RiemannXiBlaschkePhaseDispersion.lean`](RiemannGaussian/RiemannXiBlaschkePhaseDispersion.lean)
+  identifies the squared Blaschke cancellation loss with an exact nonnegative
+  double sum of pairwise angular defects and transfers the canonical
+  cancellation branch into an eventual positive phase-dispersion threshold.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
