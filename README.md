@@ -82,8 +82,10 @@ current checked state, not a list of conjectural steps.
   confluent quotient basis of the algebraic model. Each coordinate is proved
   to be the literal higher-order inverse-power kernel, partial-fraction
   uniqueness proves independence, and the multiplicity sum proves
-  completeness. Its boundary `L²` realization and residual determinant are
-  the remaining confluent steps.
+  completeness. Lean also realizes every such kernel in boundary `L²` and
+  transports the family to a complete basis of the actual negative Hardy
+  subspace, without a separability hypothesis. The triangular projection
+  residual law and its determinant are the remaining confluent steps.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -142,10 +144,9 @@ The one-quartet finite theory and its real/Herglotz background are formalized.
 The unequal-height finite hyperbolic optimization and its exact-polynomial
 inside-core specialization are now formalized, as is the higher-index Hardy
 determinant formula conditional on a complete root Cauchy basis. The immediate
-frontier is to lift the now-checked multiplicity-aware algebraic basis to
-boundary `L²`, prove the triangular projection-residual law for the resulting
-higher-order Cauchy kernels, and derive its determinant. It must then be joined
-to the structural inside-core selection. Beyond that lies the genuinely
+frontier is to prove the triangular projection-residual law for the now-checked
+complete boundary confluent basis and derive its determinant. It must then be
+joined to the structural inside-core selection. Beyond that lies the genuinely
 analytic passage from finite polynomial models to the entire xi function.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or

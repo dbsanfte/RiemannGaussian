@@ -17,7 +17,7 @@ Hardy construction; realizing the higher-order kernels in boundary `L²` is a
 separate analytic step.
 -/
 
-open Polynomial
+open MeasureTheory Polynomial
 
 namespace RiemannGaussian
 
@@ -282,6 +282,146 @@ noncomputable def finiteNegativeConfluentModelBasis
   finiteModelConfluentCauchyBasis _
     (conjugatePolynomial_monic_of_monic
       (upperRootFactor_monic (finiteEPolynomial A tau)))
+
+/-- The boundary `L²` class of a confluent algebraic coordinate.  Its
+existence follows from the general rational finite-model boundary theorem. -/
+def finiteModelConfluentBoundaryLp
+    (P : ℂ[X]) (hP : P.Monic)
+    (hreal : ∀ x : ℝ, P.eval (x : ℂ) ≠ 0)
+    (i : finiteConfluentRootIndex P) :
+    Lp ℂ 2 (volume : Measure ℝ) :=
+  finiteModelBoundaryLpLinearMap P hreal
+    (finiteModelConfluentCauchyCoordinate P hP.ne_zero i)
+
+/-- The boundary representative is almost everywhere the literal
+higher-order inverse-power Cauchy kernel. -/
+theorem finiteModelConfluentBoundaryLp_ae
+    (P : ℂ[X]) (hP : P.Monic)
+    (hreal : ∀ x : ℝ, P.eval (x : ℂ) ≠ 0)
+    (i : finiteConfluentRootIndex P) :
+    finiteModelConfluentBoundaryLp P hP hreal i =ᵐ[volume]
+      fun x : ℝ ↦
+        (((x : ℂ) - (i.1 : ℂ)) ^ finiteConfluentPoleOrder i)⁻¹ := by
+  change finiteModelBoundaryLpLinearMap P hreal
+      (finiteModelConfluentCauchyCoordinate P hP.ne_zero i) =ᵐ[volume] _
+  filter_upwards [finiteModelBoundaryLpLinearMap_ae P hreal
+    (finiteModelConfluentCauchyCoordinate P hP.ne_zero i)]
+    with x hx
+  rw [hx]
+  exact finiteModelValue_confluentCauchyCoordinate hP i (hreal x)
+
+/-- Every inverse-power kernel supplied by a confluent root index belongs to
+`L²(ℝ)`. -/
+theorem finiteConfluentBoundaryValue_memLp_two
+    (P : ℂ[X]) (hP : P.Monic)
+    (hreal : ∀ x : ℝ, P.eval (x : ℂ) ≠ 0)
+    (i : finiteConfluentRootIndex P) :
+    MemLp (fun x : ℝ ↦
+      (((x : ℂ) - (i.1 : ℂ)) ^ finiteConfluentPoleOrder i)⁻¹)
+      2 volume := by
+  exact (memLp_congr_ae
+    (finiteModelConfluentBoundaryLp_ae P hP hreal i)).mp
+      (Lp.memLp (finiteModelConfluentBoundaryLp P hP hreal i))
+
+/-- The complete family of higher-order boundary Cauchy vectors in the
+actual finite negative Hardy subspace. -/
+def finiteNegativeConfluentBoundaryVectors
+    (A : ℝ[X]) (tau : ℝ) :
+    finiteConfluentRootIndex
+        (conjugatePolynomial
+          (upperRootFactor (finiteEPolynomial A tau))) →
+      finiteNegativeBoundarySubspace A tau :=
+  fun i ↦ (finiteNegativeModelBoundaryLpLinearMap A tau).rangeRestrict
+    (finiteModelConfluentCauchyCoordinate
+      (conjugatePolynomial
+        (upperRootFactor (finiteEPolynomial A tau)))
+      (conjugatePolynomial_monic_of_monic
+        (upperRootFactor_monic (finiteEPolynomial A tau))).ne_zero i)
+
+@[simp] theorem finiteNegativeConfluentBoundaryVectors_coe
+    (A : ℝ[X]) (tau : ℝ)
+    (i : finiteConfluentRootIndex
+      (conjugatePolynomial
+        (upperRootFactor (finiteEPolynomial A tau)))) :
+    (finiteNegativeConfluentBoundaryVectors A tau i :
+      Lp ℂ 2 (volume : Measure ℝ)) =
+      finiteModelConfluentBoundaryLp
+        (conjugatePolynomial
+          (upperRootFactor (finiteEPolynomial A tau)))
+        (conjugatePolynomial_monic_of_monic
+          (upperRootFactor_monic (finiteEPolynomial A tau)))
+        (conjugate_upperRootFactor_eval_real_ne_zero
+          (finiteEPolynomial A tau)) i := by
+  rfl
+
+/-- Each actual negative confluent boundary vector has the exact
+inverse-power representative attached to its root and multiplicity index. -/
+theorem finiteNegativeConfluentBoundaryVectors_ae
+    (A : ℝ[X]) (tau : ℝ)
+    (i : finiteConfluentRootIndex
+      (conjugatePolynomial
+        (upperRootFactor (finiteEPolynomial A tau)))) :
+    (finiteNegativeConfluentBoundaryVectors A tau i :
+      Lp ℂ 2 (volume : Measure ℝ)) =ᵐ[volume]
+      fun x : ℝ ↦
+        (((x : ℂ) - (i.1 : ℂ)) ^ finiteConfluentPoleOrder i)⁻¹ := by
+  rw [finiteNegativeConfluentBoundaryVectors_coe]
+  exact finiteModelConfluentBoundaryLp_ae _ _ _ i
+
+/-- The multiplicity-indexed boundary vectors are linearly independent in
+the actual negative subspace, with no separability hypothesis. -/
+theorem finiteNegativeConfluentBoundaryVectors_linearIndependent
+    (A : ℝ[X]) (tau : ℝ) :
+    LinearIndependent ℂ
+      (finiteNegativeConfluentBoundaryVectors A tau) := by
+  let P := conjugatePolynomial
+    (upperRootFactor (finiteEPolynomial A tau))
+  let hP : P.Monic := conjugatePolynomial_monic_of_monic
+    (upperRootFactor_monic (finiteEPolynomial A tau))
+  let f := (finiteNegativeModelBoundaryLpLinearMap A tau).rangeRestrict
+  have hf : Function.Injective f := by
+    intro q r hqr
+    apply finiteNegativeModelBoundaryLpLinearMap_injective A tau
+    exact congrArg Subtype.val hqr
+  have hmapped :=
+    (finiteModelConfluentCauchyCoordinate_linearIndependent hP).map' f
+      (LinearMap.ker_eq_bot_of_injective hf)
+  change LinearIndependent ℂ
+    (f ∘ fun i ↦ finiteModelConfluentCauchyCoordinate P hP.ne_zero i)
+  exact hmapped
+
+/-- A complete multiplicity-aware confluent Cauchy basis of the actual
+negative boundary Hardy subspace. -/
+noncomputable def finiteNegativeConfluentBoundaryBasis
+    (A : ℝ[X]) (tau : ℝ) :
+    Module.Basis
+      (finiteConfluentRootIndex
+        (conjugatePolynomial
+          (upperRootFactor (finiteEPolynomial A tau)))) ℂ
+      (finiteNegativeBoundarySubspace A tau) :=
+  basisOfLinearIndependentOfCardEqFinrank'
+    (finiteNegativeConfluentBoundaryVectors A tau)
+    (finiteNegativeConfluentBoundaryVectors_linearIndependent A tau)
+    (by
+      rw [finiteConfluentRootIndex_card,
+        conjugatePolynomial_natDegree,
+        finiteNegativeBoundarySubspace_finrank])
+
+@[simp] theorem finiteNegativeConfluentBoundaryBasis_apply
+    (A : ℝ[X]) (tau : ℝ)
+    (i : finiteConfluentRootIndex
+      (conjugatePolynomial
+        (upperRootFactor (finiteEPolynomial A tau)))) :
+    finiteNegativeConfluentBoundaryBasis A tau i =
+      finiteNegativeConfluentBoundaryVectors A tau i := by
+  exact congrFun
+    (coe_basisOfLinearIndependentOfCardEqFinrank'
+      (finiteNegativeConfluentBoundaryVectors A tau)
+      (finiteNegativeConfluentBoundaryVectors_linearIndependent A tau)
+      (by
+        rw [finiteConfluentRootIndex_card,
+          conjugatePolynomial_natDegree,
+          finiteNegativeBoundarySubspace_finrank])) i
 
 end
 
