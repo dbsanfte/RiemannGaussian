@@ -266,6 +266,17 @@ current checked state, not a list of conjectural steps.
   remaining meeting theorem is precisely the specialized Weil explicit
   formula proving those two independently constructed holomorphic functions
   coincide.
+- Suzuki's piecewise positive-half-line Weil test is now literal Lean code,
+  not an informal input to that meeting theorem. Lean proves its absolute
+  integrability whenever the evaluation point lies above the spectral
+  frequency and evaluates its full Fourier--Laplace transform exactly as
+  `(exp(-i*gamma*t)-1)/(gamma*(z-gamma))`, with the correct removable value at
+  `gamma = 0`. For every genuine zeta zero, analytic multiplicity times this
+  integral is exactly one summand of the already constructed spectral
+  `P_t(z)`; finite symmetric sums recover the genuine zero windows and
+  converge to the complete spectral function. The remaining gap is global,
+  not local: prove the specialized Weil distribution identity and evaluate
+  its elementary, prime, and Archimedean terms as the arithmetic expression.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
