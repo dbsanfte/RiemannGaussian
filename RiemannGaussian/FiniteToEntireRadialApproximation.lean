@@ -509,6 +509,12 @@ theorem exists_radialRouche_canonicalFiniteHardyFrontier_sequence_of_not_rh
           (∀ n, (radialRoucheIndex A L C n : ℝ) <
             radialRoucheIndexGrowthConstant A L C *
               Real.exp (5 * quantitativeSpectralRadialBoundary n)) ∧
+          (∀ (n : ℕ) {w : ℂ},
+            ‖w‖ = quantitativeSpectralRadialBoundary n →
+              Real.exp
+                  (-C * Real.exp
+                    (5 * quantitativeSpectralRadialBoundary n)) ≤
+                ‖riemannXiSpectral w‖) ∧
           ∀ (n : ℕ) {w : ℂ},
             ‖w‖ = quantitativeSpectralRadialBoundary n →
             ‖((B n).map Complex.ofRealHom).eval w -
@@ -572,12 +578,14 @@ theorem exists_radialRouche_canonicalFiniteHardyFrontier_sequence_of_not_rh
   refine ⟨eta, heta, z, hz, A, hA, C, hC, B, ?_⟩
   dsimp only
   refine ⟨by simpa [index, L] using hIndex,
-    hBlimit, ?_, ?_, ?_⟩
+    hBlimit, ?_, ?_, ?_, ?_⟩
   · intro n
     simpa [index, L] using hB n
   · intro n
     simpa [L] using
       radialRoucheIndex_cast_lt_exponential hA0 hL.le hC.le n
+  · intro n w hw
+    exact hfloor n hw
   · intro n w hw
     let N : ℕ := index n
     let F : ℝ := Real.exp

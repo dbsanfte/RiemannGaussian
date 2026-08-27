@@ -148,6 +148,12 @@ theorem exists_radialRouche_rootCount_integral_sequence_of_not_rh
           (∀ n, (radialRoucheIndex A L C n : ℝ) <
             radialRoucheIndexGrowthConstant A L C *
               Real.exp (5 * quantitativeSpectralRadialBoundary n)) ∧
+          (∀ (n : ℕ) {w : ℂ},
+            ‖w‖ = quantitativeSpectralRadialBoundary n →
+              Real.exp
+                  (-C * Real.exp
+                    (5 * quantitativeSpectralRadialBoundary n)) ≤
+                ‖riemannXiSpectral w‖) ∧
           ∀ n : ℕ,
             (realPolynomialRootCountInBall (B n) 0
                 (quantitativeSpectralRadialBoundary n) : ℂ) *
@@ -155,16 +161,18 @@ theorem exists_radialRouche_rootCount_integral_sequence_of_not_rh
               ∮ w in C(0, quantitativeSpectralRadialBoundary n),
                 logDeriv riemannXiSpectral w := by
   obtain ⟨eta, heta, z, hz, A, hA, C, hC, B,
-      hindex, hlimit, hfrontier, hgrowth, herror⟩ :=
+      hindex, hlimit, hfrontier, hgrowth, hfloor, herror⟩ :=
     exists_radialRouche_canonicalFiniteHardyFrontier_sequence_of_not_rh hRH
   let L : ℝ := finiteERootPinnedRadialConstant A eta z
   refine ⟨eta, heta, z, hz, A, hA, C, hC, B, ?_⟩
   dsimp only
-  refine ⟨by simpa [L] using hindex, hlimit, ?_, ?_, ?_⟩
+  refine ⟨by simpa [L] using hindex, hlimit, ?_, ?_, ?_, ?_⟩
   · intro n
     simpa [L] using hfrontier n
   · intro n
     simpa [L] using hgrowth n
+  · intro n w hw
+    exact hfloor n hw
   · intro n
     apply realPolynomialRootCountInBall_mul_eq_circleIntegral_of_norm_sub_lt
       differentiable_riemannXiSpectral

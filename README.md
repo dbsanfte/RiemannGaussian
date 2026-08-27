@@ -477,11 +477,16 @@ least `rₙ - ‖z‖` from any fixed observation point. The scheduled degree is
 most a fixed multiple of `exp(5*rₙ)`, which the quadratic Gaussian beats at
 every fixed positive proper time. Thus the outside-root heat tends to zero,
 and the complete upper-polynomial heat differs from the literal inside-circle
-heat by a vanishing term. The immediate open step is to identify the varying
-inside-circle heat with the complete spectral-xi heat sum using the local
-divisor transport already proved. Proper-time endpoint control is a separate
-subsequent requirement. A global logarithmic-derivative or arithmetic
-evaluation of the complete sum is the later rigidity target.
+heat by a vanishing term. The same boundary error now propagates through the
+whole disk by maximum modulus. Since its double-exponential value is strictly
+below every earlier selected-circle xi floor, Lean proves that the stage-`n`
+polynomial has the genuine xi divisor count simultaneously inside every
+selected circle `rₘ` with `m + 1 ≤ n`. The immediate open step is to convert
+these nested cumulative counts into a multiplicity-aware annular heat
+decomposition and identify the varying inside-circle heat with the complete
+spectral-xi heat sum. Proper-time endpoint control is a separate subsequent
+requirement. A global logarithmic-derivative or arithmetic evaluation of the
+complete sum is the later rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -610,6 +615,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   selects the literal roots inside each scheduled circle, proves every unused
   upper root lies outside it, and shows their complete fixed-time heat tends
   to zero because the quadratic Gaussian beats the exponential degree bound.
+- [`RiemannGaussian/FiniteToEntireRadialCrossStage.lean`](RiemannGaussian/FiniteToEntireRadialCrossStage.lean)
+  propagates each scheduled boundary error across its disk and proves the
+  same polynomial has exact genuine divisor counts on every earlier selected
+  circle, preparing a nested annular heat comparison.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built

@@ -244,6 +244,12 @@ theorem exists_radialRouche_exactDivisor_vanishingHeatTail_sequence_of_not_rh
           (∀ n, (radialRoucheIndex A L C n : ℝ) <
             radialRoucheIndexGrowthConstant A L C *
               Real.exp (5 * quantitativeSpectralRadialBoundary n)) ∧
+          (∀ (n : ℕ) {w : ℂ},
+            ‖w‖ = quantitativeSpectralRadialBoundary n →
+              Real.exp
+                  (-C * Real.exp
+                    (5 * quantitativeSpectralRadialBoundary n)) ≤
+                ‖riemannXiSpectral w‖) ∧
           (∀ n : ℕ,
             realPolynomialRootCountInBall (B n) 0
                 (quantitativeSpectralRadialBoundary n) =
@@ -256,7 +262,7 @@ theorem exists_radialRouche_exactDivisor_vanishingHeatTail_sequence_of_not_rh
                   (quantitativeSpectralRadialBoundary n)) u tau)
               atTop (nhds 0) := by
   obtain ⟨eta, heta, z, hz, A, hA, C, hC, B,
-      hindexLimit, hlimit, hfrontier, hgrowth, hcount⟩ :=
+      hindexLimit, hlimit, hfrontier, hgrowth, hfloor, hcount⟩ :=
     exists_radialRouche_exactDivisor_sequence_of_not_rh hRH
   let L : ℝ := finiteERootPinnedRadialConstant A eta z
   have hL : 0 < L := by
@@ -265,11 +271,13 @@ theorem exists_radialRouche_exactDivisor_vanishingHeatTail_sequence_of_not_rh
   have hA0 : 0 ≤ A := zero_le_one.trans hA
   refine ⟨eta, heta, z, hz, A, hA, C, hC, B, ?_⟩
   dsimp only
-  refine ⟨by simpa [L] using hindexLimit, hlimit, ?_, ?_, ?_, ?_⟩
+  refine ⟨by simpa [L] using hindexLimit, hlimit, ?_, ?_, ?_, ?_, ?_⟩
   · intro n
     simpa [L] using hfrontier n
   · intro n
     simpa [L] using hgrowth n
+  · intro n w hw
+    exact hfloor n hw
   · intro n
     simpa [L] using hcount n
   · intro u tau hu htau
