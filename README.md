@@ -232,6 +232,14 @@ current checked state, not a list of conjectural steps.
   finite window vanishing. What remains open is convergence of the varying
   finite Hardy heat sums to these spectral windows and a global arithmetic
   evaluation of the complete sum.
+- On every zero-free open region, Lean now proves locally uniform convergence
+  of the root-pinned polynomial logarithmic derivatives to the genuine
+  spectral-xi logarithmic derivative. On each compact zero-free subset the
+  approximants are eventually zero-free, and their logarithmic-derivative
+  circle integrals converge to the xi circle integral. These results apply to
+  the same exact finite Hardy sequence forced by failure of RH; converting the
+  boundary integrals into stable multiplicity counts is the next local-divisor
+  step.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -318,10 +326,11 @@ fixed-time spectral-xi heat sum is now constructed as an absolutely
 convergent sum of heat-weighted local residues of `xi'/xi`, and its vanishing
 is equivalent to RH. Expanding finite spectral windows and zero-free boundary
 truncations are now proved to converge to it. The immediate open passage is
-to prove that the varying finite Hardy heat sums converge to these spectral
-divisor windows as the polynomial approximants tend to spectral xi, and then
-identify the fixed-time sum by a global logarithmic-derivative or arithmetic
-formula.
+to turn the now-checked zero-free logarithmic-derivative and circle-integral
+convergence into multiplicity-preserving local divisor convergence, then
+prove that the varying finite Hardy heat sums converge to the spectral
+divisor windows. A global logarithmic-derivative or arithmetic evaluation of
+the fixed-time sum remains the subsequent rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -379,6 +388,9 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
 - [`RiemannGaussian/RiemannXiHyperbolicHeatWindow.lean`](RiemannGaussian/RiemannXiHyperbolicHeatWindow.lean)
   realizes that sum as the limit of finite spectral residue windows, including
   canonical zero-free boundary truncations.
+- [`RiemannGaussian/FiniteToEntireLogDerivative.lean`](RiemannGaussian/FiniteToEntireLogDerivative.lean)
+  proves zero-free locally uniform convergence of the root-pinned polynomial
+  logarithmic derivatives and convergence of their circle integrals.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
