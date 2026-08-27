@@ -119,6 +119,13 @@ current checked state, not a list of conjectural steps.
   total vanishes exactly under RH, so this fixed-time limit is a direct
   sorry-free RH reformulation derived from the genuine spectral-xi
   logarithmic-derivative residues, not a formal interchange assumption.
+  Lean now also integrates this entire boundary heat sum over positive
+  proper time. Termwise exponential integration plus Tonelli proves that its
+  integral is exactly the finite Poisson boundary limit and exactly the
+  embedded norm of the complete boundary Blaschke logarithmic derivative.
+  The fixed-time residue construction and integrated action therefore meet
+  by a checked identity; the remaining problem is to force this common
+  positive invariant to vanish.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
