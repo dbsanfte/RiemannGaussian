@@ -491,12 +491,21 @@ counts identify the complete annular cardinality with the corresponding
 genuine spectral-xi divisor increment. The upper annular roots form a checked
 submultiset. Jensen's quadratic xi-divisor bound then gives every sufficiently
 early consecutive annulus of a cross-stage polynomial a uniform
-quadratic-times-Gaussian heat majorant. The immediate open step is fixed-shell
-weighted convergence to the matching spectral annulus, followed by a
-summable-shell passage identifying the varying inside-circle heat with the
-complete spectral-xi heat sum. Proper-time endpoint control is a separate
-subsequent requirement. A global logarithmic-derivative or arithmetic
-evaluation of the complete sum is the later rigidity target.
+quadratic-times-Gaussian heat majorant. Fixed-shell transport is now checked as
+well. Lean replaces the discontinuous upper-half-plane root cutoff by the
+continuous positive part of the heat kernel, proves that this weight equals
+the heat kernel on upper roots and vanishes on real and lower roots, and then
+uses exact multiplicity counts to show that the local divisor clusters fill
+every fixed zero-free radial disk. Continuous weighted disk sums therefore
+converge to the genuine spectral divisor, and subtraction of nested disks
+gives convergence on every fixed selected annulus. Under `¬RH`, one theorem
+now packages these shell limits for the same canonical Hardy sequence beside
+its cross-stage counts, vanishing outer heat, and common quadratic-Gaussian
+shell majorant. The immediate open step is the summable triangular-array
+passage identifying the varying inside-circle heat with the complete
+spectral-xi heat sum. Proper-time endpoint control is a separate subsequent
+requirement. A global logarithmic-derivative or arithmetic evaluation of the
+complete sum is the later rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -634,6 +643,11 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   their total multiplicities with genuine spectral-divisor increments under
   the cross-stage counts, and proves uniform quadratic-Gaussian upper bounds
   for their upper-root heat.
+- [`RiemannGaussian/FiniteToEntireRadialShellTransport.lean`](RiemannGaussian/FiniteToEntireRadialShellTransport.lean)
+  uses a continuous positive-part heat weight to transport complete radial
+  divisors across the real axis, proves fixed-disk and fixed-annulus heat
+  convergence, and packages those limits with the same `¬RH` Hardy sequence
+  and its uniform shell majorants.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
