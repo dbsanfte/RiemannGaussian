@@ -189,6 +189,12 @@ current checked state, not a list of conjectural steps.
   for every approximant. The finite singleton and uniform-height obstructions
   are therefore closed. Convergence and identification of these varying
   finite Hardy determinants in the entire limit remains open.
+- The positive-homotopy-root premise is now discharged under failure of RH.
+  Lean proves that `¬RH` gives an upper spectral-xi zero. A multiple zero is
+  fixed by every homotopy, while at a simple zero the local analytic inverse
+  of `i*xi/xi'` supplies an upper root of `xi + i*eta*xi'` for some positive
+  real `eta`. Thus `¬RH` now produces the complete separable, root-pinned
+  canonical finite Hardy frontier sequence without an assumed starting root.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -261,6 +267,10 @@ limit and the prescribed finite homotopy root. Their canonical influence
 cores are nonempty and carry the full pole budget at every finite stage; each
 core root lies above the fixed pinned height. Consequently all stages obey
 the same strict-from-one closed determinant bound, including singleton cores.
+Failure of RH is now proved to supply the required positive homotopy and upper
+root, for both simple and multiple spectral-xi zeros, so the full finite
+frontier is a checked consequence of the reductio hypothesis rather than a
+conditional construction.
 The next Hardy frontier is to construct and identify the corresponding
 entire-limit Hardy invariant and rigorously pass this uniform finite bound to
 it.
@@ -302,6 +312,9 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
 - [`RiemannGaussian/FiniteToEntireHardyFrontier.lean`](RiemannGaussian/FiniteToEntireHardyFrontier.lean)
   composes those approximants with the canonical pole-budget and finite Hardy
   determinant alternatives.
+- [`RiemannGaussian/FiniteToEntireHardyReductio.lean`](RiemannGaussian/FiniteToEntireHardyReductio.lean)
+  proves that failure of RH reaches that finite frontier, including analytic
+  persistence of simple homotopy roots and the multiple-root case.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
