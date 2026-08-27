@@ -89,6 +89,116 @@ theorem realPolynomialUpperRootMultiset_card_le_natDegree (A : ℝ[X]) :
     realPolynomial_realRoot_card_add_two_mul_upperRoot_card A
   omega
 
+/-- The heat carried by all upper polynomial root occurrences outside an
+arbitrary selected root multiset.  Multiset subtraction retains algebraic
+multiplicity. -/
+def realPolynomialUpperHeatRemainderOutsideRootMultiset
+    (A : ℝ[X]) (selected : Multiset ℂ) (z : ℂ) (tau : ℝ) : ℝ :=
+  finiteUpperHyperbolicHeatSum z
+    (realPolynomialUpperRootMultiset A - selected) tau
+
+/-- Any selected upper-root submultiset gives an exact full-heat splitting. -/
+theorem realPolynomialUpperHeatSum_eq_selected_add_remainder
+    (A : ℝ[X]) {selected : Multiset ℂ}
+    (hle : selected ≤ realPolynomialUpperRootMultiset A)
+    (z : ℂ) (tau : ℝ) :
+    realPolynomialUpperHyperbolicHeatSum A z tau =
+      finiteUpperHyperbolicHeatSum z selected tau +
+        realPolynomialUpperHeatRemainderOutsideRootMultiset
+          A selected z tau := by
+  have hdecomp : realPolynomialUpperRootMultiset A =
+      (realPolynomialUpperRootMultiset A - selected) + selected :=
+    (Multiset.sub_add_cancel hle).symm
+  change finiteUpperHyperbolicHeatSum z
+      (realPolynomialUpperRootMultiset A) tau =
+    finiteUpperHyperbolicHeatSum z selected tau +
+      finiteUpperHyperbolicHeatSum z
+        (realPolynomialUpperRootMultiset A - selected) tau
+  rw [hdecomp]
+  simp [finiteUpperHyperbolicHeatSum, add_comm]
+
+/-- At positive time and an upper observation point, every arbitrary
+selected-root complement has nonnegative heat. -/
+theorem realPolynomialUpperHeatRemainderOutsideRootMultiset_nonneg
+    (A : ℝ[X]) (selected : Multiset ℂ)
+    {z : ℂ} (hz : 0 < z.im) {tau : ℝ} (htau : 0 < tau) :
+    0 ≤ realPolynomialUpperHeatRemainderOutsideRootMultiset
+      A selected z tau := by
+  apply finiteUpperHyperbolicHeatSum_nonneg hz
+  · intro alpha halpha
+    exact realPolynomialUpperRootMultiset_im_pos A alpha
+      (Multiset.mem_of_le (Multiset.sub_le_self _ _) halpha)
+  · exact htau
+
+/-- An arbitrary selected-root complement obeys the degree-weighted Gaussian
+bound whenever every unused occurrence is at least `R` from the observation
+point. -/
+theorem realPolynomialUpperHeatRemainderOutsideRootMultiset_le_degreeGaussian
+    (A : ℝ[X]) (selected : Multiset ℂ) (z : ℂ)
+    {tau R : ℝ} (htau : 0 < tau) (hR : 0 ≤ R)
+    (hdist : ∀ alpha ∈ realPolynomialUpperRootMultiset A - selected,
+      R ≤ dist z alpha) :
+    realPolynomialUpperHeatRemainderOutsideRootMultiset
+        A selected z tau ≤
+      (A.natDegree : ℝ) *
+        (tau⁻¹ * Real.exp (-(R ^ 2 * tau))) := by
+  let unused := realPolynomialUpperRootMultiset A - selected
+  let C := tau⁻¹ * Real.exp (-(R ^ 2 * tau))
+  have hsum : finiteUpperHyperbolicHeatSum z unused tau ≤
+      (unused.card : ℝ) * C :=
+    finiteUpperHyperbolicHeatSum_le_card_mul_radialGaussian
+      z unused htau hR hdist
+  have hcard : unused.card ≤ A.natDegree :=
+    (Multiset.card_le_card (Multiset.sub_le_self _ _)).trans
+      (realPolynomialUpperRootMultiset_card_le_natDegree A)
+  have hC : 0 ≤ C :=
+    mul_nonneg (inv_nonneg.mpr htau.le) (Real.exp_pos _).le
+  calc
+    realPolynomialUpperHeatRemainderOutsideRootMultiset A selected z tau =
+        finiteUpperHyperbolicHeatSum z unused tau := rfl
+    _ ≤ (unused.card : ℝ) * C := hsum
+    _ ≤ (A.natDegree : ℝ) * C :=
+      mul_le_mul_of_nonneg_right (by exact_mod_cast hcard) hC
+
+/-- Arbitrarily varying selected root multisets have vanishing complement
+heat when the unused roots are radially separated and the degree-weighted
+Gaussian envelope vanishes. -/
+theorem tendsto_realPolynomialUpperHeatRemainderOutsideRootMultiset_zero_of_degreeGaussian
+    {kappa : Type*} {phi : Filter kappa} (A : kappa → ℝ[X])
+    (selected : kappa → Multiset ℂ) {z : ℂ} (hz : 0 < z.im)
+    {tau : ℝ} (htau : 0 < tau) (R : kappa → ℝ)
+    (hR : ∀ᶠ n in phi, 0 ≤ R n)
+    (hdist : ∀ᶠ n in phi, ∀ alpha ∈
+      realPolynomialUpperRootMultiset (A n) - selected n,
+      R n ≤ dist z alpha)
+    (henvelope : Tendsto
+      (fun n ↦ ((A n).natDegree : ℝ) *
+        (tau⁻¹ * Real.exp (-((R n) ^ 2 * tau))))
+      phi (nhds 0)) :
+    Tendsto
+      (fun n ↦ realPolynomialUpperHeatRemainderOutsideRootMultiset
+        (A n) (selected n) z tau)
+      phi (nhds 0) := by
+  apply squeeze_zero'
+  · filter_upwards with n
+    exact realPolynomialUpperHeatRemainderOutsideRootMultiset_nonneg
+      (A n) (selected n) hz htau
+  · filter_upwards [hR, hdist] with n hRn hdistn
+    exact
+      realPolynomialUpperHeatRemainderOutsideRootMultiset_le_degreeGaussian
+        (A n) (selected n) z htau hRn hdistn
+  · exact henvelope
+
+/-- The earlier remainder outside a finite family of balls is the arbitrary
+selected-root remainder for their combined root multiset. -/
+theorem realPolynomialUpperHeatRemainderOutsideBalls_eq_outsideRootMultiset
+    {iota : Type*} [Fintype iota] (A : ℝ[X])
+    (a : iota → ℂ) (r : iota → ℝ) (z : ℂ) (tau : ℝ) :
+    realPolynomialUpperHeatRemainderOutsideBalls A a r z tau =
+      realPolynomialUpperHeatRemainderOutsideRootMultiset A
+        (∑ i : iota, realPolynomialRootMultisetInBall A (a i) (r i))
+        z tau := rfl
+
 /-- The upper polynomial root occurrences lying on or outside the closed
 observation ball of radius `R`. -/
 def realPolynomialUpperRootMultisetOutsideClosedBall

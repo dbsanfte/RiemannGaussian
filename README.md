@@ -304,6 +304,16 @@ current checked state, not a list of conjectural steps.
   whenever that degree-weighted envelope tends to zero. This isolates the
   still-unproved global root-localization premise rather than deriving it
   incorrectly from locally uniform convergence.
+- Degree is now tracked through the actual xi construction. Taylor
+  truncation, affine root pinning, cubic degree lifting, and the separable
+  quadratic perturbation produce the same canonical Hardy reductio sequence
+  under `¬RH` with `(B n).natDegree ≤ max n 3`. The exact heat splitting and
+  Gaussian bound are also generalized to an arbitrary, stage-varying selected
+  root multiset, so expanding windows are not restricted to a fixed number of
+  clusters. Lean proves that if every unused root is at least `√n` from the
+  observation point, its complete fixed-time remainder tends to zero. The
+  remaining task is to construct expanding genuine-xi cluster multisets and
+  prove that localization premise for this controlled sequence.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -406,12 +416,16 @@ the complete xi heat sum is equivalent to convergence of this remainder to
 the exact spectral tail `complete sum - window`. The quantitative Gaussian
 half of the tail estimate is now checked: a radially separated polynomial
 tail is at most `degree * tau⁻¹ * exp(-R²*tau)`, and Lean proves the
-corresponding vanishing criterion. The immediate open passage is to prove
-global localization of the unused roots, synchronize expanding windows, and
-verify that their escape rate beats degree growth. Proper-time endpoint
-control is a separate subsequent requirement. A global logarithmic-
-derivative or arithmetic evaluation of the complete sum is the later
-rigidity target.
+corresponding vanishing criterion. The specific root-pinned separable
+sequence can now be chosen with degree at most `max n 3`, and the selected
+root multiset may vary with the stage. Thus it is enough to construct
+expanding genuine-xi clusters whose complement lies outside radius `√n`;
+Lean then forces the entire unused-root heat remainder to zero at every fixed
+positive time. Proving that expanding localization, and synchronizing its
+cluster heat with the complete spectral-xi sum, is the immediate open
+passage. Proper-time endpoint control is a separate subsequent requirement.
+A global logarithmic-derivative or arithmetic evaluation of the complete sum
+is the later rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -496,8 +510,11 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   nonnegative remainder, reducing full convergence to a precise tail limit.
 - [`RiemannGaussian/FiniteToEntireGaussianTail.lean`](RiemannGaussian/FiniteToEntireGaussianTail.lean)
   proves degree-weighted Gaussian bounds for radial polynomial heat tails and
-  reduces unused-root remainder vanishing to explicit escape and growth
-  conditions.
+  arbitrary selected-root complements, reducing remainder vanishing to
+  explicit escape and growth conditions.
+- [`RiemannGaussian/FiniteToEntireDegreeControl.lean`](RiemannGaussian/FiniteToEntireDegreeControl.lean)
+  proves linear degree growth for the separable root-pinned xi sequence and
+  the resulting `√n` unused-root separation criterion.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
