@@ -125,12 +125,13 @@ theorem neg_two_log_upperHalfPlaneDistance_le_gapCoefficient_mul_poisson
     neg_two_log_pairHyperbolicRadius_le_gapCoefficient_mul_poisson
       hz halpha hupper hdelta hgapSq halphaHalf
 
-/-- Per spectral zero, a common Euclidean gap controls logarithmic defect by
-the corresponding Poisson defect. -/
+/-- Per selected upper spectral zero, a common upper-divisor Euclidean gap
+controls logarithmic defect by the corresponding Poisson defect. -/
 theorem zetaUpperHyperbolicLogDefectSummand_le_gapCoefficient_mul_poisson
     {z : ℂ} (hz : 0 < z.im) {delta : ℝ} (hdelta : 0 < delta)
     (hgap : ∀ rho : NontrivialZetaZero,
-      delta ≤ ‖z - zetaSpectralCoordinate rho.1‖)
+      0 < (zetaSpectralCoordinate rho.1).im →
+        delta ≤ ‖z - zetaSpectralCoordinate rho.1‖)
     (rho : NontrivialZetaZero) :
     zetaUpperHyperbolicLogDefectSummand z rho ≤
       (1 + 2 * z.im / delta ^ 2) *
@@ -140,7 +141,7 @@ theorem zetaUpperHyperbolicLogDefectSummand_le_gapCoefficient_mul_poisson
       intro heq
       have hzeroNorm : ‖z - zetaSpectralCoordinate rho.1‖ = 0 := by
         rw [heq, sub_self, norm_zero]
-      have := hgap rho
+      have := hgap rho hupper
       rw [hzeroNorm] at this
       linarith
     have hhalf : (zetaSpectralCoordinate rho.1).im ≤ 1 / 2 := by
@@ -161,7 +162,7 @@ theorem zetaUpperHyperbolicLogDefectSummand_le_gapCoefficient_mul_poisson
                   (zetaSpectralCoordinate rho.1)))) :=
         mul_le_mul_of_nonneg_left
           (neg_two_log_upperHalfPlaneDistance_le_gapCoefficient_mul_poisson
-            hz hupper hne hdelta (hgap rho) hhalf)
+            hz hupper hne hdelta (hgap rho hupper) hhalf)
           (Nat.cast_nonneg _)
       _ = (1 + 2 * z.im / delta ^ 2) *
           ((analyticZetaZeroMultiplicity rho : ℝ) *
@@ -172,12 +173,13 @@ theorem zetaUpperHyperbolicLogDefectSummand_le_gapCoefficient_mul_poisson
   · rw [zetaUpperHyperbolicLogDefectSummand, if_neg hupper,
       zetaUpperHyperbolicPoissonDefectSummand, if_neg hupper, mul_zero]
 
-/-- The complete logarithmic defect is bounded by a finite gap coefficient
-times the complete Poisson defect. -/
+/-- The complete logarithmic defect is bounded by a finite upper-divisor gap
+coefficient times the complete Poisson defect. -/
 theorem riemannXiUpperHyperbolicLogDefectMass_le_gapCoefficient_mul_poissonMass
     {z : ℂ} (hz : 0 < z.im) {delta : ℝ} (hdelta : 0 < delta)
     (hgap : ∀ rho : NontrivialZetaZero,
-      delta ≤ ‖z - zetaSpectralCoordinate rho.1‖) :
+      0 < (zetaSpectralCoordinate rho.1).im →
+        delta ≤ ‖z - zetaSpectralCoordinate rho.1‖) :
     riemannXiUpperHyperbolicLogDefectMass z ≤
       ENNReal.ofReal (1 + 2 * z.im / delta ^ 2) *
         riemannXiUpperHyperbolicPoissonDefectMass z := by
@@ -222,7 +224,7 @@ theorem exists_pos_riemannXiUpperHyperbolicDefectMass_comparable_to_poisson
   exact ⟨C, hC,
     riemannXiUpperHyperbolicPoissonDefectMass_le_logDefectMass hz hxi,
     riemannXiUpperHyperbolicLogDefectMass_le_gapCoefficient_mul_poissonMass
-      hz hdelta hgap⟩
+      hz hdelta (fun rho _ ↦ hgap rho)⟩
 
 /-- The same two-sided comparison stated for the complete proper-time heat
 action. -/

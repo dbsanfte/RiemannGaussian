@@ -88,7 +88,7 @@ theorem exists_gap_poisson_blaschke_thresholds_or_height_unbounded
             riemannXiUpperHyperbolicPoissonDefectMass z := by
       simpa [C, riemannXiUpperHyperbolicGapCoefficient] using
         riemannXiUpperHyperbolicLogDefectMass_le_gapCoefficient_mul_poissonMass
-          hz hdelta hgap
+          hz hdelta (fun rho _ ↦ hgap rho)
     have hraw :
         ENNReal.ofReal D ≤ ENNReal.ofReal C *
           riemannXiUpperHyperbolicPoissonDefectMass z :=

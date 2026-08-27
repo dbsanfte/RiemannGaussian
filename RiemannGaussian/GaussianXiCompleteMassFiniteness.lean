@@ -190,7 +190,7 @@ theorem summable_zetaUpperHyperbolicLogDefectSummand
   · intro rho
     exact
       zetaUpperHyperbolicLogDefectSummand_le_gapCoefficient_mul_poisson
-        hz hdelta hgap rho
+        hz hdelta (fun sigma _ ↦ hgap sigma) rho
 
 /-- Hence the complete logarithmic defect is finite at every noncolliding
 upper observation point. -/

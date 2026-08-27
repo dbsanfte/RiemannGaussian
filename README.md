@@ -99,6 +99,17 @@ current checked state, not a list of conjectural steps.
   signed boundary log derivative and vanishes exactly under RH. The remaining
   hard step is an arithmetic or entire-function argument forcing this limit
   to vanish, not an unproved interchange of a limit and an infinite zero sum.
+- The full positive-proper-time heat action now has the same boundary limit.
+  The upper-divisor gap persists with half its size along short vertical
+  approaches, even when the endpoint is a critical-line zero. Lean sandwiches
+  `heatAction(x+i*y)/(2*y)` between the normalized Poisson mass and a factor
+  `1 + 2*y/(delta/2)^2` times that mass; the factor tends to one. Hence, for
+  every real `x`, the normalized action tends to the norm of the complete
+  boundary log derivative. Lean proves the exact reformulation
+  `RH <-> heatAction(x+i*y)/(2*y) -> 0` at any one real `x`. The remaining
+  RH-level target is therefore the concrete arithmetic/entire-function
+  estimate `heatAction(x+i*y) = o(y)`; no divisor-limit or proper-time
+  interchange is left implicit in that target.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -884,6 +895,10 @@ RH-level part of the project.
   proves dominated convergence of the complete Blaschke variation to that
   boundary invariant and identifies it as the zero-height limit of the
   exactly normalized complete Poisson mass.
+- [`RiemannGaussian/RiemannXiBoundaryHeatActionLimit.lean`](RiemannGaussian/RiemannXiBoundaryHeatActionLimit.lean)
+  squeezes the normalized complete proper-time heat action to the same limit
+  and proves that its zero boundary slope at any real point is equivalent to
+  RH.
 - [`RiemannGaussian/GaussianPositivityCertificate.lean`](RiemannGaussian/GaussianPositivityCertificate.lean)
   contains the scalable certificate soundness and cofinal-width reductions.
 - [`RiemannGaussian/SuzukiTransportBarrier.lean`](RiemannGaussian/SuzukiTransportBarrier.lean)
