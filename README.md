@@ -463,9 +463,16 @@ radial disk is now defined as an exact finite subfamily of the spectral zero
 window. Lean proves that it contains every and only xi zero in the disk and
 constructs synchronized pairwise-disjoint isolating balls, all strictly
 inside the disk, whose polynomial root counts equal the genuine analytic
-multiplicities. The immediate open step is the compact-complement argument
-showing that sufficiently late approximants have no other enclosed roots;
-this will identify the circle integral with the finite genuine xi divisor.
+multiplicities. The compact complement of those balls is now proved
+xi-zero-free, hence sufficiently late approximants have no roots there; an
+exact multiset partition identifies their complete enclosed count with the
+genuine radial divisor. Consequently the xi circle integral is proved equal
+to that finite divisor count times `2*pi*i`. Combining this identity with the
+scheduled Rouché theorem shows, at every stage under `¬RH`, that the canonical
+finite Hardy polynomial has exactly the genuine xi divisor multiplicity
+inside its selected expanding circle. The immediate open step is to package
+the enclosed root multiset itself and feed the resulting outside-radius
+localization into the existing degree-weighted Gaussian tail theorem.
 Proper-time endpoint control is a separate subsequent requirement. A global
 logarithmic-derivative or arithmetic evaluation of the complete sum is the
 later rigidity target.
@@ -589,6 +596,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
 - [`RiemannGaussian/FiniteToEntireRadialDivisor.lean`](RiemannGaussian/FiniteToEntireRadialDivisor.lean)
   defines the exact finite genuine xi divisor in a radial disk and constructs
   synchronized disjoint multiplicity balls contained strictly inside it.
+- [`RiemannGaussian/FiniteToEntireRadialRootCount.lean`](RiemannGaussian/FiniteToEntireRadialRootCount.lean)
+  proves the compact-complement root partition, identifies the xi circle
+  integral with the genuine radial divisor, and gives the scheduled canonical
+  Hardy sequence that has exactly this enclosed multiplicity at every stage.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
