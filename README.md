@@ -317,6 +317,15 @@ current checked state, not a list of conjectural steps.
   finite upper-height masses exceed every nonnegative bound arbitrarily far
   along the same sequence. Proving that neither branch can occur is the new
   arithmetic/entire-function rigidity frontier.
+- The two complete spectral endpoint statistics are now quantitatively
+  linked. At every upper observation point outside the xi divisor,
+  continuity of spectral xi yields one positive distance from all of its
+  zeros. Lean combines this gap with `log(1+x) <= x` to prove, first per zero
+  and then for the full extended sums, that the complete logarithmic defect
+  is at most a finite positive constant times the complete upper spectral
+  height mass. In particular, finiteness of the latter implies finiteness of
+  the full proper-time action. Finiteness or a decisive arithmetic bound for
+  the spectral height mass itself is not assumed.
 - On every zero-free open region, Lean now proves locally uniform convergence
   of the root-pinned polynomial logarithmic derivatives to the genuine
   spectral-xi logarithmic derivative. On each compact zero-free subset the
@@ -647,8 +656,11 @@ explicit alternative: the spectral defect dominates that threshold, or the
 finite upper-height masses are unbounded along arbitrarily late stages. The
 remaining arithmetic/entire-function rigidity theorem must exclude both
 possibilities (or strengthen the dichotomy until one becomes contradictory).
-A global logarithmic-derivative or explicit-formula evaluation remains the
-natural route to that rigidity.
+The complete spectral defect is now also bounded by a finite observation-
+dependent constant times the extended upper spectral height mass, reducing
+the entire-side size question to a concrete divisor statistic. A global
+logarithmic-derivative or explicit-formula evaluation remains the natural
+route to the required rigidity.
 
 The remaining small-time estimate is not assumed. Closing the Gaussian
 positivity statement, or completing the finite-to-xi Hardy route, is the
@@ -843,6 +855,10 @@ RH-level part of the project.
   proves compact spectral actions are dominated by the complete action,
   transfers the finite Hardy threshold under eventual height control, and
   derives the canonical spectral-defect-versus-unbounded-height dichotomy.
+- [`RiemannGaussian/RiemannXiHyperbolicDefectHeight.lean`](RiemannGaussian/RiemannXiHyperbolicDefectHeight.lean)
+  obtains a uniform gap from a noncolliding observation point to the spectral
+  divisor and uses it to bound the complete logarithmic defect and heat action
+  by the extended upper spectral height mass.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
