@@ -158,6 +158,18 @@ current checked state, not a list of conjectural steps.
   zero-time heat trace at canonical observation height `1/4`. This is now a
   proved meeting point between the reflected Gaussian Gram density and the
   off-critical radial-width/Suzuki program.
+- That meeting point now extends to an exact complex screw-time bridge. Lean
+  proves that a reflected spectral pair of upper height `h` contributes
+  `2*h*exp(2*h*t)` on real screw time, while its normalized imaginary-time
+  Gaussian average is exactly `2*h*exp(-tau*h^2)`. Genuine finite zeta-zero
+  windows of these Wick-rotated modes converge to the normalized spatial
+  boundary heat, including when the complete mass is infinite. The associated
+  positive real-time mass equals the full upper-height mass at time zero,
+  vanishes at any fixed time exactly under RH, and is subexponential exactly
+  under RH. This isolates a concrete remaining arithmetic target: prove the
+  subexponential estimate from Suzuki's arithmetic screw function or an
+  equivalent explicit-formula rigidity theorem. The spectral equivalence
+  itself does not supply that arithmetic estimate.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
