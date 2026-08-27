@@ -129,6 +129,11 @@ current checked state, not a list of conjectural steps.
   estimate. For the actual finite common transform, Lean now proves the
   required pole exclusion and degree inequality and derives its global
   unfactored norm bound.
+- The complete inside-core factor is now cancelled rigorously. Its reflected
+  polynomial has the same degree and unit real-boundary norm; the residual
+  quotient satisfies the maximum principle, and Lean obtains the exact
+  collective transformed-difference bound `2 * ∏ rho` with every core
+  occurrence retained.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -188,16 +193,12 @@ The unequal-height finite hyperbolic optimization and its exact-polynomial
 inside-core specialization are now formalized, as is the higher-index Hardy
 determinant formula conditional on a complete root Cauchy basis. The complete
 finite confluent determinant is now unconditional, including repeated roots.
-The immediate frontier is to combine its chosen-root bound and the checked
-Schwarz--Pick contraction with the structural inside-core radius product. The
-single-root Blaschke/Pick comparison is now formalized, and its interpolation
-and Pick data are derived uniformly for the complete inside core. The missing
-finite step is the maximum-modulus bound for the explicit rational quotient
-left after dividing the common-transform difference by the checked core-root
-factor. That estimate must use the complete inside-core product, not merely
-one selected radius. The core product is not being identified with the
-determinant product by assumption. Beyond that lies the genuinely analytic
-passage from finite polynomial models to the entire xi function.
+The immediate frontier is to feed the now-checked collective bound through
+the radial scalar lemma and the strict structural inside-core radius estimate,
+then connect the resulting finite determinant contradiction. The complete
+core product is used directly and is not identified with the determinant
+product by assumption. Beyond that lies the genuinely analytic passage from
+finite polynomial models to the entire xi function.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
