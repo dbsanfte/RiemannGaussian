@@ -366,6 +366,16 @@ current checked state, not a list of conjectural steps.
   exceed every nonnegative bound arbitrarily far along the canonical
   sequence. This puts the persistent finite Hardy obstruction directly into
   the analytic statistic whose cancellation must now be controlled.
+- That complete-mass alternative has now been returned to concrete finite
+  spectral windows. If the Blaschke-variation branch holds with positive
+  normalized threshold `q`, Lean proves that every sufficiently large window
+  satisfies `q/2 <= norm(reflectionResidual_T) + cancellationGap_T`. The
+  reflection residual is proved exactly equal to the finite Blaschke
+  product's logarithmic derivative and is expanded without omission into
+  genuine `xi'/xi`, the analytic window remainder, the critical-line Cauchy
+  part, and the upper divisor Cauchy sum. Thus the remaining rigidity theorem
+  must defeat a persistent lower bound on named finite analytic quantities,
+  or rule out the alternative of unbounded polynomial height mass.
 - The connection to the actual spectral-xi logarithmic derivative is now
   formalized at every finite window without dropping an entire-function
   term. Lean decomposes `xi'/xi` exactly into the genuine multiplicity-
@@ -978,6 +988,10 @@ RH-level part of the project.
   positive normalized lower thresholds for complete Poisson mass and complete
   spectral Blaschke derivative variation, retaining the unbounded-height
   alternative exactly.
+- [`RiemannGaussian/FiniteToEntireBlaschkeCancellationFrontier.lean`](RiemannGaussian/FiniteToEntireBlaschkeCancellationFrontier.lean)
+  exhausts a positive complete variation threshold through finite windows and
+  forces half of it into the exact xi reflection residual plus the explicit
+  finite Blaschke cancellation gap at every sufficiently large window.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
