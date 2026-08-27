@@ -308,6 +308,15 @@ current checked state, not a list of conjectural steps.
   action is equivalent to RH. What remains is the rigidity comparison that
   would force the persistent finite Hardy mass into this entire action, or
   otherwise contradict its arithmetic structure.
+- That comparison is now formalized conditionally and as an exact
+  alternative. If the canonical polynomials' upper-height masses are
+  eventually uniformly bounded, Lean proves that the fixed finite Hardy
+  threshold survives in the complete spectral logarithmic-defect mass.
+  Without assuming such a bound, `¬RH` yields the rigorous dichotomy: either
+  the complete spectral defect already dominates that threshold, or the
+  finite upper-height masses exceed every nonnegative bound arbitrarily far
+  along the same sequence. Proving that neither branch can occur is the new
+  arithmetic/entire-function rigidity frontier.
 - On every zero-free open region, Lean now proves locally uniform convergence
   of the root-pinned polynomial logarithmic derivatives to the genuine
   spectral-xi logarithmic derivative. On each compact zero-free subset the
@@ -631,12 +640,15 @@ height times the extended upper spectral height mass; its vanishing is
 equivalent to RH. The full positive-proper-time integral has now also been
 constructed in extended nonnegative reals and evaluated, by Tonelli, as the
 complete multiplicity-counted spectral logarithmic defect. The remaining
-mismatch is therefore precise: Lean must rule out excess finite-polynomial
-height escaping into the shrinking proper-time boundary layer and thereby
-force the finite Hardy lower bound into this entire action, or derive an
-arithmetic rigidity theorem that makes such escape impossible. A global
-logarithmic-derivative or explicit-formula evaluation remains the natural
-route to that rigidity.
+mismatch is therefore precise. Lean now proves that any eventual uniform
+bound on the finite upper-height masses forces the finite Hardy threshold into
+the complete spectral defect. Consequently `¬RH` has been reduced to an
+explicit alternative: the spectral defect dominates that threshold, or the
+finite upper-height masses are unbounded along arbitrarily late stages. The
+remaining arithmetic/entire-function rigidity theorem must exclude both
+possibilities (or strengthen the dichotomy until one becomes contradictory).
+A global logarithmic-derivative or explicit-formula evaluation remains the
+natural route to that rigidity.
 
 The remaining small-time estimate is not assumed. Closing the Gaussian
 positivity statement, or completing the finite-to-xi Hardy route, is the
@@ -827,6 +839,10 @@ RH-level part of the project.
   constructs the complete extended proper-time action, proves the one-zero
   Lebesgue integral identity, exchanges the spectral series and integral by
   Tonelli, and identifies the result with the full logarithmic-defect sum.
+- [`RiemannGaussian/FiniteToEntireProperTimeActionTransfer.lean`](RiemannGaussian/FiniteToEntireProperTimeActionTransfer.lean)
+  proves compact spectral actions are dominated by the complete action,
+  transfers the finite Hardy threshold under eventual height control, and
+  derives the canonical spectral-defect-versus-unbounded-height dichotomy.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
