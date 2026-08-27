@@ -50,7 +50,11 @@ current checked state, not a list of conjectural steps.
   This checked global exponent is strictly below two. Jensen's inequality has
   now also been specialized to turn it into an unconditional
   multiplicity-aware `O(r^(3/2))` bound for the xi divisor in centered disks.
-  The next analytic step is the dyadic inverse-square divisor sum.
+  A checked dyadic-shell argument then proves unconditional convergence of
+  both `sum_rho m(rho)/(1+norm(rho)^2)` and
+  `sum_rho m(rho)/(1+gamma(rho)^2)`, where `gamma` is the real spectral
+  coordinate. The next step is to use this convergence to prove the complete
+  Poisson, logarithmic-defect, and Blaschke-variation masses finite.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -808,6 +812,10 @@ RH-level part of the project.
 - [`RiemannGaussian/GaussianXiSubquadraticCounting.lean`](RiemannGaussian/GaussianXiSubquadraticCounting.lean)
   inserts the global `3/2` bound into Jensen's inequality and obtains an
   unconditional multiplicity-aware `O(r^(3/2))` xi-divisor count.
+- [`RiemannGaussian/GaussianXiInverseSquareSummability.lean`](RiemannGaussian/GaussianXiInverseSquareSummability.lean)
+  partitions the xi divisor into dyadic norm shells and proves unconditional
+  multiplicity-weighted inverse-square summability in both the complex norm
+  and spectral ordinate.
 - [`RiemannGaussian/GaussianPositivityCertificate.lean`](RiemannGaussian/GaussianPositivityCertificate.lean)
   contains the scalable certificate soundness and cofinal-width reductions.
 - [`RiemannGaussian/SuzukiTransportBarrier.lean`](RiemannGaussian/SuzukiTransportBarrier.lean)
