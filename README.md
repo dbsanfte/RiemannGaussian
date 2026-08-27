@@ -73,6 +73,12 @@ current checked state, not a list of conjectural steps.
   side of the preceding frontier is static: under `not RH`, either the norm
   of this complete signed sum is at least `V(z)/4`, or the finite-window
   weighted phase energy is eventually at least `(V(z)/4)^2`.
+- The signed-term variation and phase dispersion now have complete finite
+  limits too. Lean proves the sharper static alternative that at least
+  `V(z)/2` survives in the complete signed resultant or at least
+  `(V(z)/2)^2` survives in complete phase dispersion. At every noncolliding
+  upper point it also proves the exact rigidity criterion
+  `RH <-> (complete resultant = 0 and complete phase dispersion = 0)`.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -846,6 +852,9 @@ RH-level part of the project.
   proves absolute convergence of the complete signed Blaschke logarithmic
   derivative, identifies the finite residual limit, and makes the residual
   branch of the finite-total frontier a static complete-series bound.
+- [`RiemannGaussian/RiemannXiCompletePhaseDispersion.lean`](RiemannGaussian/RiemannXiCompletePhaseDispersion.lean)
+  constructs the complete signed variation, cancellation, and phase
+  dispersion limits and proves their joint-vanishing criterion is exactly RH.
 - [`RiemannGaussian/GaussianPositivityCertificate.lean`](RiemannGaussian/GaussianPositivityCertificate.lean)
   contains the scalable certificate soundness and cofinal-width reductions.
 - [`RiemannGaussian/SuzukiTransportBarrier.lean`](RiemannGaussian/SuzukiTransportBarrier.lean)
