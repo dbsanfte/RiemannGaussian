@@ -298,6 +298,16 @@ current checked state, not a list of conjectural steps.
   the mass is equivalent to RH. This identifies the entire-side small-time
   boundary object exactly; it does not yet prove convergence or uniform
   tightness of the finite polynomials' growing height masses.
+- The complete spectral heat is now integrated over all positive proper time
+  as an extended nonnegative Lebesgue integral. Lean proves a genuine Tonelli
+  identity equating this action to the full multiplicity-counted sum of
+  logarithmic pseudo-hyperbolic defects
+  `sum_rho m(rho) * (-2 * log rho_H(z,A(rho)))`, including the value
+  `infinity`; no global integrability assumption is used. At every upper
+  observation point away from the xi divisor, vanishing of this complete
+  action is equivalent to RH. What remains is the rigidity comparison that
+  would force the persistent finite Hardy mass into this entire action, or
+  otherwise contradict its arithmetic structure.
 - On every zero-free open region, Lean now proves locally uniform convergence
   of the root-pinned polynomial logarithmic derivatives to the genuine
   spectral-xi logarithmic derivative. On each compact zero-free subset the
@@ -618,11 +628,15 @@ coefficient control must therefore reach an unsigned/global root statistic.
 On the entire side, the complete zero-time trace is now constructed without a
 finiteness assumption and identified exactly with four times the observation
 height times the extended upper spectral height mass; its vanishing is
-equivalent to RH. The remaining mismatch is therefore precise: Lean must rule
-out excess finite-polynomial height escaping into the shrinking proper-time
-boundary layer, or derive an arithmetic rigidity theorem that makes such
-escape impossible. A global logarithmic-derivative or explicit-formula
-evaluation remains the natural route to that rigidity.
+equivalent to RH. The full positive-proper-time integral has now also been
+constructed in extended nonnegative reals and evaluated, by Tonelli, as the
+complete multiplicity-counted spectral logarithmic defect. The remaining
+mismatch is therefore precise: Lean must rule out excess finite-polynomial
+height escaping into the shrinking proper-time boundary layer and thereby
+force the finite Hardy lower bound into this entire action, or derive an
+arithmetic rigidity theorem that makes such escape impossible. A global
+logarithmic-derivative or explicit-formula evaluation remains the natural
+route to that rigidity.
 
 The remaining small-time estimate is not assumed. Closing the Gaussian
 positivity statement, or completing the finite-to-xi Hardy route, is the
@@ -809,6 +823,10 @@ RH-level part of the project.
   complete spectral heat tends to its exact trace as proper time approaches
   zero, factors that trace by observation height, and characterizes RH by
   vanishing of the resulting mass.
+- [`RiemannGaussian/RiemannXiHyperbolicHeatAction.lean`](RiemannGaussian/RiemannXiHyperbolicHeatAction.lean)
+  constructs the complete extended proper-time action, proves the one-zero
+  Lebesgue integral identity, exchanges the spectral series and integral by
+  Tonelli, and identifies the result with the full logarithmic-defect sum.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
