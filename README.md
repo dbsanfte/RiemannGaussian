@@ -257,6 +257,15 @@ current checked state, not a list of conjectural steps.
   exact difference holomorphic on `Im(z) > 1/2`. The divergent nome-one case
   at time zero is explicitly excluded pending a separate removable-limit
   theorem; no analytic-continuation value is assumed.
+- Suzuki's complete positive-time arithmetic expression (1.6) is now a Lean
+  definition with a checked analytic domain. Its two completed-zeta pole
+  terms, zeta logarithmic derivative at `1/2 - i*z`, exact finite von Mangoldt
+  window `1 <= n <= exp(t)`, digamma difference, and Lerch difference are all
+  individually proved holomorphic on `Im(z) > 1/2`, hence so is their sum for
+  every `t > 0`. No equality to the spectral zero sum is claimed yet: the
+  remaining meeting theorem is precisely the specialized Weil explicit
+  formula proving those two independently constructed holomorphic functions
+  coincide.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
