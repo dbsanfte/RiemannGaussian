@@ -201,6 +201,14 @@ current checked state, not a list of conjectural steps.
   limiting homotopy has no zero, and verifies that the spectral-xi numerator
   is the literal conjugate reflection of `E_eta`. Passing through the pinned
   zero still requires the global Krein--Langer cancellation and remains open.
+- Compactness now extracts a convergent subsequence of the fully cancelled
+  finite residual-inner values at the fixed pinned root. Its scalar limit
+  retains the explicit uniform gap
+  `norm(s) <= eta / sqrt(eta^2 + z.im^2) < 1`, while the same finite sequence
+  has the locally uniform theta limit away from homotopy zeros. The scalar is
+  not yet proved independent of the subsequence or identified with a
+  spectral-xi arithmetic invariant; that identification is the active
+  rigidity frontier.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean

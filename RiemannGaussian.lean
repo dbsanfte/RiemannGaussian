@@ -90,6 +90,7 @@ import RiemannGaussian.FiniteToEntireSeparableApproximation
 import RiemannGaussian.FiniteToEntireHardyFrontier
 import RiemannGaussian.FiniteToEntireHardyReductio
 import RiemannGaussian.FiniteToEntireTheta
+import RiemannGaussian.FiniteToEntireHardyCluster
 import RiemannGaussian.FiniteAlgebraicHilbert
 import RiemannGaussian.FiniteHardySylvesterProjection
 import RiemannGaussian.FiniteRootCountBridge
