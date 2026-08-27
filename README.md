@@ -134,6 +134,11 @@ current checked state, not a list of conjectural steps.
   quotient satisfies the maximum principle, and Lean obtains the exact
   collective transformed-difference bound `2 * ∏ rho` with every core
   occurrence retained.
+- At an actual upper root of the finite homotopy, the collective estimate is
+  now fed through the sharp radial disk-automorphism identity. Combining it
+  with the strict hyperbolic-energy threshold proves the closed residual-inner
+  bound and the corresponding strict bound for the unconditional confluent
+  Hardy complement-Gram determinant.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -193,12 +198,12 @@ The unequal-height finite hyperbolic optimization and its exact-polynomial
 inside-core specialization are now formalized, as is the higher-index Hardy
 determinant formula conditional on a complete root Cauchy basis. The complete
 finite confluent determinant is now unconditional, including repeated roots.
-The immediate frontier is to feed the now-checked collective bound through
-the radial scalar lemma and the strict structural inside-core radius estimate,
-then connect the resulting finite determinant contradiction. The complete
-core product is used directly and is not identified with the determinant
-product by assumption. Beyond that lies the genuinely analytic passage from
-finite polynomial models to the entire xi function.
+The collective finite Hardy chain is now composed through its strict
+determinant conclusion. The complete core product is used directly and is not
+identified with the determinant product by assumption. The next Hardy
+frontier is the genuinely analytic passage from these finite polynomial
+models to the entire xi function, including a limiting theorem strong enough
+to preserve the strict defect mechanism.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
