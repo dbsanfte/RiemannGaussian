@@ -110,6 +110,15 @@ current checked state, not a list of conjectural steps.
   RH-level target is therefore the concrete arithmetic/entire-function
   estimate `heatAction(x+i*y) = o(y)`; no divisor-limit or proper-time
   interchange is left implicit in that target.
+- The boundary layer is now resolved before proper-time integration as well.
+  For every fixed `tau > 0`, Lean differentiates each reflected Gaussian heat
+  pair at height zero and proves that the complete spectral-xi heat sum
+  divided by `2*y` converges to an absolutely summable positive boundary heat
+  density. A uniform divisor gap supplies a checked `4/tau` Poisson-density
+  dominator for Tannery's theorem. The resulting Gaussian-weighted boundary
+  total vanishes exactly under RH, so this fixed-time limit is a direct
+  sorry-free RH reformulation derived from the genuine spectral-xi
+  logarithmic-derivative residues, not a formal interchange assumption.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
