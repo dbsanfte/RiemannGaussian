@@ -439,10 +439,16 @@ exact-root polynomials of degree at most `max n 3` converging uniformly to
 spectral xi on those expanding disks. Under `¬RH`, Lean proves that one common
 positive homotopy parameter and upper-half-plane root make every member of
 this sequence a canonical finite Hardy frontier. The immediate open step is
-to use expanding zero-free circles to identify all enclosed polynomial roots
-with genuine xi clusters. Proper-time endpoint control is a separate
-subsequent requirement. A global logarithmic-derivative or arithmetic
-evaluation of the complete sum is the later rigidity target.
+now quantitatively prepared rather than merely qualitative: canonical
+factorization, zero separation, and the Jensen multiplicity bound give one
+`C > 0` such that spectral xi is at least
+`exp(-C * exp(5 * Tₙ))` on all four sides of every selected expanding
+zero-free spectral rectangle. The next step is to reindex the explicit
+Taylor, root-pinning, and separability errors so that they beat this boundary
+floor, then prove the resulting Rouché/argument-principle identification of
+all enclosed polynomial roots with genuine xi clusters. Proper-time endpoint
+control is a separate subsequent requirement. A global logarithmic-derivative
+or arithmetic evaluation of the complete sum is the later rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -544,6 +550,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   controls the affine exact-root correction through value and derivative
   remainders, then constructs the degree-linear canonical finite Hardy
   sequence converging to spectral xi on `c * √n` disks.
+- [`RiemannGaussian/FiniteToEntireBoundaryLowerBound.lean`](RiemannGaussian/FiniteToEntireBoundaryLowerBound.lean)
+  derives a quantitative lower modulus for spectral xi on every side of the
+  expanding zero-free rectangles from canonical factorization, divisor
+  separation, and Jensen's multiplicity bound.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
