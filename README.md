@@ -349,6 +349,14 @@ current checked state, not a list of conjectural steps.
   below both the logarithmic defect and the full proper-time action. Its
   vanishing at any upper observation point is equivalent to RH and hence to
   vanishing of the full absolute critical-line displacement.
+- The connection to the actual spectral-xi logarithmic derivative is now
+  formalized at every finite window without dropping an entire-function
+  term. Lean decomposes `xi'/xi` exactly into the genuine multiplicity-
+  weighted Cauchy principal sum plus a raw remainder. Every selected pole of
+  that remainder is proved removable, and the finitely many removals are
+  patched into one analytic representative on the full safe contour
+  rectangle. Thus the cancellation/residual term requiring new rigidity is
+  explicit in the checked chain rather than tacitly set to zero.
 - On every zero-free open region, Lean now proves locally uniform convergence
   of the root-pinned polynomial logarithmic derivatives to the genuine
   spectral-xi logarithmic derivative. On each compact zero-free subset the
@@ -896,6 +904,11 @@ RH-level part of the project.
   identifies the disk defect with its upper-half-plane Poisson weight, proves
   its lower comparison with logarithmic defect per zero and over the complete
   divisor, and characterizes RH by vanishing of the resulting Poisson mass.
+- [`RiemannGaussian/RiemannXiSpectralLogDerivativeWindow.lean`](RiemannGaussian/RiemannXiSpectralLogDerivativeWindow.lean)
+  decomposes the genuine spectral-xi logarithmic derivative into its finite
+  multiplicity-weighted Cauchy divisor sum and a remainder, proves all
+  selected singularities removable, and patches the remainder analytically
+  across the complete safe contour rectangle.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
