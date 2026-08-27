@@ -94,6 +94,7 @@ import RiemannGaussian.FiniteToEntireHardyCluster
 import RiemannGaussian.HyperbolicHeatBridge
 import RiemannGaussian.FiniteToEntireHeatFrontier
 import RiemannGaussian.RiemannXiHyperbolicHeat
+import RiemannGaussian.RiemannXiHyperbolicHeatWindow
 import RiemannGaussian.FiniteAlgebraicHilbert
 import RiemannGaussian.FiniteHardySylvesterProjection
 import RiemannGaussian.FiniteRootCountBridge

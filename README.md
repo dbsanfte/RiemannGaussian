@@ -226,9 +226,12 @@ current checked state, not a list of conjectural steps.
   xi logarithmic derivative, rather than assigned a formal zero weight. The
   sum is nonnegative, any upper spectral zero makes it strictly positive, and
   its vanishing for all upper observation points and positive times is proved
-  equivalent to RH. What remains open is convergence of the varying finite
-  Hardy heat sums to this complete residue sum and a global arithmetic
-  evaluation of the latter.
+  equivalent to RH. Canonical finite spectral windows, including a concrete
+  sequence with zero-free boundaries, are proved to converge to this sum in
+  their literal logarithmic-residue form; RH is also equivalent to every such
+  finite window vanishing. What remains open is convergence of the varying
+  finite Hardy heat sums to these spectral windows and a global arithmetic
+  evaluation of the complete sum.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -313,10 +316,12 @@ recasts the complete finite hyperbolic product as a positive Gaussian heat
 mass with a stage-independent lower bound. Independently, the complete
 fixed-time spectral-xi heat sum is now constructed as an absolutely
 convergent sum of heat-weighted local residues of `xi'/xi`, and its vanishing
-is equivalent to RH. The immediate open passage is to prove that the varying
-finite heat sums converge to this complete residue sum as the polynomial
-approximants tend to spectral xi, and then identify the fixed-time sum by a
-global logarithmic-derivative or arithmetic formula.
+is equivalent to RH. Expanding finite spectral windows and zero-free boundary
+truncations are now proved to converge to it. The immediate open passage is
+to prove that the varying finite Hardy heat sums converge to these spectral
+divisor windows as the polynomial approximants tend to spectral xi, and then
+identify the fixed-time sum by a global logarithmic-derivative or arithmetic
+formula.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -371,6 +376,9 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   constructs the complete fixed-time spectral-xi heat sum, derives every
   coefficient from a local logarithmic-derivative residue, proves absolute
   convergence, and characterizes RH by its vanishing.
+- [`RiemannGaussian/RiemannXiHyperbolicHeatWindow.lean`](RiemannGaussian/RiemannXiHyperbolicHeatWindow.lean)
+  realizes that sum as the limit of finite spectral residue windows, including
+  canonical zero-free boundary truncations.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
