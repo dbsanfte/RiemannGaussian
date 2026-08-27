@@ -341,6 +341,14 @@ current checked state, not a list of conjectural steps.
   including when a limit is infinite. Critical-line reflection preserves
   every finite window, so its absolute displacement is already exactly twice
   its upper-height sum before passage to the limit.
+- The logarithmic defect now also has a checked Poisson lower bound. For each
+  upper spectral zero, Lean proves the exact identity
+  `1 - rho_H(z,alpha)^2 = 4*Im(z)*Im(alpha)/|z-conj(alpha)|^2` and bounds this
+  quantity by `-2*log rho_H(z,alpha)`. With genuine analytic multiplicities,
+  the resulting finite Poisson sums converge to a complete extended mass
+  below both the logarithmic defect and the full proper-time action. Its
+  vanishing at any upper observation point is equivalent to RH and hence to
+  vanishing of the full absolute critical-line displacement.
 - On every zero-free open region, Lean now proves locally uniform convergence
   of the root-pinned polynomial logarithmic derivatives to the genuine
   spectral-xi logarithmic derivative. On each compact zero-free subset the
@@ -884,6 +892,10 @@ RH-level part of the project.
   realizes the complete upper-height, absolute-displacement, and logarithmic-
   defect masses as limits of explicit cofinal finite spectral-window sums and
   proves the finite-window reflection identity exactly.
+- [`RiemannGaussian/RiemannXiHyperbolicPoissonDefect.lean`](RiemannGaussian/RiemannXiHyperbolicPoissonDefect.lean)
+  identifies the disk defect with its upper-half-plane Poisson weight, proves
+  its lower comparison with logarithmic defect per zero and over the complete
+  divisor, and characterizes RH by vanishing of the resulting Poisson mass.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
