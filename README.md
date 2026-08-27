@@ -84,8 +84,11 @@ current checked state, not a list of conjectural steps.
   uniqueness proves independence, and the multiplicity sum proves
   completeness. Lean also realizes every such kernel in boundary `L²` and
   transports the family to a complete basis of the actual negative Hardy
-  subspace, without a separability hypothesis. The triangular projection
-  residual law and its determinant are the remaining confluent steps.
+  subspace, without a separability hypothesis. Multiplication by the residual
+  inner function is now proved, for every negative-model coordinate at once,
+  to land in the orthogonal complement of the entire positive model. The
+  Sylvester projection decomposition, triangular residual law, and determinant
+  are the remaining confluent steps.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -144,10 +147,12 @@ The one-quartet finite theory and its real/Herglotz background are formalized.
 The unequal-height finite hyperbolic optimization and its exact-polynomial
 inside-core specialization are now formalized, as is the higher-index Hardy
 determinant formula conditional on a complete root Cauchy basis. The immediate
-frontier is to prove the triangular projection-residual law for the now-checked
-complete boundary confluent basis and derive its determinant. It must then be
-joined to the structural inside-core selection. Beyond that lies the genuinely
-analytic passage from finite polynomial models to the entire xi function.
+frontier is to turn the exact Sylvester numerator decomposition into the actual
+orthogonal projection decomposition, then prove the triangular residual law
+for the now-checked complete boundary confluent basis and derive its
+determinant. It must then be joined to the structural inside-core selection.
+Beyond that lies the genuinely analytic passage from finite polynomial models
+to the entire xi function.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.

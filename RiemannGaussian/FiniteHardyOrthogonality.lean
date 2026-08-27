@@ -4,11 +4,11 @@ import RiemannGaussian.UpperHalfPlaneIntegral
 /-!
 # Finite Hardy model orthogonality
 
-This file proves the missing analytic orthogonality calculation for the
-finite residual model.  For an upper-half-plane point `w`, multiplication of
-its Hardy Cauchy kernel by the residual rational inner function is orthogonal
-in the genuine boundary `L²(ℝ, ℂ)` space to every residual-model rational
-coordinate.
+This file proves the analytic orthogonality calculation for the finite
+residual model.  Multiplication by the residual rational inner function sends
+every reflected-upper-root model coordinate into the orthogonal complement of
+the lower-root model in the genuine boundary `L²(ℝ, ℂ)` space.  The original
+Cauchy-kernel statement is retained as a useful specialization.
 
 The proof reduces the pointwise inner product to a degree-gap-two polynomial
 quotient with every pole strictly below the real axis, then applies the
@@ -191,6 +191,189 @@ theorem residualInner_cauchy_mem_finiteModelBoundary_orthogonal
   obtain ⟨q, rfl⟩ := hu
   rw [← inner_conj_symm,
     finiteModelBoundaryLp_inner_residualInner_cauchy_eq_zero p q hw,
+    map_zero]
+
+/-- The product of the lower-root denominator and the reflected upper-root
+denominator has no zero in the closed upper half-plane. -/
+theorem lowerRootFactor_mul_conjugateUpperRootFactor_ne_zero_closedUpper
+    (p : ℂ[X]) {z : ℂ} (hz : 0 ≤ z.im) :
+    (lowerRootFactor p *
+      conjugatePolynomial (upperRootFactor p)).eval z ≠ 0 := by
+  rw [eval_mul]
+  apply mul_ne_zero
+  · by_cases hz0 : z.im = 0
+    · have hzReal : (z.re : ℂ) = z := by
+        apply Complex.ext
+        · simp
+        · simp [hz0]
+      simpa [hzReal] using lowerRootFactor_eval_real_ne_zero p z.re
+    · exact lowerRootFactor_eval_ne_zero_of_im_pos p
+        (lt_of_le_of_ne hz (Ne.symm hz0))
+  · by_cases hz0 : z.im = 0
+    · have hzReal : (z.re : ℂ) = z := by
+        apply Complex.ext
+        · simp
+        · simp [hz0]
+      simpa [hzReal] using
+        conjugate_upperRootFactor_eval_real_ne_zero p z.re
+    · exact conjugate_upperRootFactor_eval_ne_zero_of_im_pos p
+        (lt_of_le_of_ne hz (Ne.symm hz0))
+
+/-- Pointwise cancellation for arbitrary coordinates in the positive and
+negative finite models.  The reflected lower-root factor cancels exactly,
+leaving a quotient whose denominator has all roots below the real axis. -/
+theorem finiteModelBoundary_inner_residualInner_negative
+    (p : ℂ[X])
+    (qS : finiteModelSpace (lowerRootFactor p))
+    (qB : finiteModelSpace
+      (conjugatePolynomial (upperRootFactor p)))
+    (x : ℝ) :
+    inner ℂ
+        (finiteModelBoundaryValue (lowerRootFactor p) qS x)
+        (lowerRootInnerBoundaryValue p x *
+          finiteModelBoundaryValue
+            (conjugatePolynomial (upperRootFactor p)) qB x) =
+      (conjugatePolynomial (qS : ℂ[X]) * (qB : ℂ[X])).eval
+          (x : ℂ) /
+        (lowerRootFactor p *
+          conjugatePolynomial (upperRootFactor p)).eval (x : ℂ) := by
+  have hL := lowerRootFactor_eval_real_ne_zero p x
+  have hD := conjugate_upperRootFactor_eval_real_ne_zero p x
+  unfold finiteModelBoundaryValue finiteModelValue
+    lowerRootInnerBoundaryValue lowerRootInnerValue
+  rw [RCLike.inner_apply']
+  change
+    starRingEnd ℂ
+          ((qS : ℂ[X]).eval (x : ℂ) /
+            (lowerRootFactor p).eval (x : ℂ)) *
+        (((conjugatePolynomial (lowerRootFactor p)).eval (x : ℂ) /
+            (lowerRootFactor p).eval (x : ℂ)) *
+          ((qB : ℂ[X]).eval (x : ℂ) /
+            (conjugatePolynomial (upperRootFactor p)).eval (x : ℂ))) = _
+  rw [map_div₀]
+  simp only [eval_mul, conjugatePolynomial_eval_real]
+  field_simp [hL, hD]
+
+/-- Multiplication by the residual inner function sends every element of the
+negative finite model to a vector orthogonal to every element of the positive
+finite model.  This statement is independent of root multiplicities. -/
+theorem finiteModelBoundaryLp_inner_residualInner_negative_eq_zero
+    (p : ℂ[X])
+    (qS : finiteModelSpace (lowerRootFactor p))
+    (qB : finiteModelSpace
+      (conjugatePolynomial (upperRootFactor p))) :
+    inner ℂ
+        (finiteModelBoundaryLpLinearMap
+          (lowerRootFactor p)
+          (lowerRootFactor_eval_real_ne_zero p) qS)
+        (lowerRootInnerBoundaryLpLinearIsometry p
+          (finiteModelBoundaryLpLinearMap
+            (conjugatePolynomial (upperRootFactor p))
+            (conjugate_upperRootFactor_eval_real_ne_zero p) qB)) = 0 := by
+  by_cases hqS : (qS : ℂ[X]) = 0
+  · have hqS0 : qS = 0 := Subtype.ext hqS
+    rw [hqS0, map_zero, inner_zero_left]
+  by_cases hqB : (qB : ℂ[X]) = 0
+  · have hqB0 : qB = 0 := Subtype.ext hqB
+    rw [hqB0, map_zero, map_zero, inner_zero_right]
+  have hqSDegree : (qS : ℂ[X]).natDegree <
+      (lowerRootFactor p).natDegree := by
+    apply (natDegree_lt_natDegree_iff hqS).2
+    rw [degree_eq_natDegree (lowerRootFactor_ne_zero p)]
+    exact mem_degreeLT.mp qS.property
+  have hqBDegree : (qB : ℂ[X]).natDegree <
+      (conjugatePolynomial (upperRootFactor p)).natDegree := by
+    apply (natDegree_lt_natDegree_iff hqB).2
+    rw [degree_eq_natDegree
+      (conjugatePolynomial_ne_zero (upperRootFactor_ne_zero p))]
+    exact mem_degreeLT.mp qB.property
+  have hdenDegree :
+      (lowerRootFactor p *
+          conjugatePolynomial (upperRootFactor p)).natDegree =
+        (lowerRootFactor p).natDegree +
+          (conjugatePolynomial (upperRootFactor p)).natDegree := by
+    rw [natDegree_mul (lowerRootFactor_ne_zero p)
+      (conjugatePolynomial_ne_zero (upperRootFactor_ne_zero p))]
+  have hnumDegree :
+      (conjugatePolynomial (qS : ℂ[X]) *
+          (qB : ℂ[X])).natDegree =
+        (qS : ℂ[X]).natDegree + (qB : ℂ[X]).natDegree := by
+    rw [natDegree_mul (conjugatePolynomial_ne_zero hqS) hqB,
+      conjugatePolynomial_natDegree]
+  have hdegree :
+      (conjugatePolynomial (qS : ℂ[X]) *
+            (qB : ℂ[X])).natDegree + 2 ≤
+        (lowerRootFactor p *
+          conjugatePolynomial (upperRootFactor p)).natDegree := by
+    rw [hnumDegree, hdenDegree]
+    omega
+  let positiveVector : Lp ℂ 2 (volume : Measure ℝ) :=
+    finiteModelBoundaryLpLinearMap
+      (lowerRootFactor p) (lowerRootFactor_eval_real_ne_zero p) qS
+  let negativeVector : Lp ℂ 2 (volume : Measure ℝ) :=
+    finiteModelBoundaryLpLinearMap
+      (conjugatePolynomial (upperRootFactor p))
+      (conjugate_upperRootFactor_eval_real_ne_zero p) qB
+  let shiftedVector : Lp ℂ 2 (volume : Measure ℝ) :=
+    lowerRootInnerBoundaryLpLinearIsometry p negativeVector
+  have hpositiveAe : positiveVector =ᵐ[volume]
+      finiteModelBoundaryValue (lowerRootFactor p) qS := by
+    exact finiteModelBoundaryLpLinearMap_ae
+      (lowerRootFactor p) (lowerRootFactor_eval_real_ne_zero p) qS
+  have hnegativeAe : negativeVector =ᵐ[volume]
+      finiteModelBoundaryValue
+        (conjugatePolynomial (upperRootFactor p)) qB := by
+    exact finiteModelBoundaryLpLinearMap_ae
+      (conjugatePolynomial (upperRootFactor p))
+      (conjugate_upperRootFactor_eval_real_ne_zero p) qB
+  have hshiftedAe : shiftedVector =ᵐ[volume]
+      fun x : ℝ ↦ lowerRootInnerBoundaryValue p x * negativeVector x := by
+    simpa [shiftedVector] using
+      lowerRootInnerBoundaryLpLinearMap_ae p negativeVector
+  have hpointwise :
+      (fun x : ℝ ↦ inner ℂ (positiveVector x) (shiftedVector x)) =ᵐ[volume]
+        fun x : ℝ ↦
+          (conjugatePolynomial (qS : ℂ[X]) * (qB : ℂ[X])).eval
+              (x : ℂ) /
+            (lowerRootFactor p *
+              conjugatePolynomial (upperRootFactor p)).eval (x : ℂ) := by
+    filter_upwards [hpositiveAe, hshiftedAe, hnegativeAe]
+      with x hpositive hshifted hnegative
+    rw [hpositive, hshifted, hnegative]
+    exact finiteModelBoundary_inner_residualInner_negative p qS qB x
+  have hintegrable : Integrable
+      (fun x : ℝ ↦
+        (conjugatePolynomial (qS : ℂ[X]) * (qB : ℂ[X])).eval
+            (x : ℂ) /
+          (lowerRootFactor p *
+            conjugatePolynomial (upperRootFactor p)).eval (x : ℂ)) :=
+    (L2.integrable_inner positiveVector shiftedVector).congr hpointwise
+  change inner ℂ positiveVector shiftedVector = 0
+  rw [L2.inner_def, integral_congr_ae hpointwise]
+  exact integral_polynomialQuotient_eq_zero_of_upperHalfPlane
+    hdegree
+    (fun z hz =>
+      lowerRootFactor_mul_conjugateUpperRootFactor_ne_zero_closedUpper p hz)
+    hintegrable
+
+/-- Subspace form of multiplicity-independent finite-model orthogonality. -/
+theorem residualInner_negative_mem_finiteModelBoundary_orthogonal
+    (p : ℂ[X])
+    (qB : finiteModelSpace
+      (conjugatePolynomial (upperRootFactor p))) :
+    lowerRootInnerBoundaryLpLinearIsometry p
+        (finiteModelBoundaryLpLinearMap
+          (conjugatePolynomial (upperRootFactor p))
+          (conjugate_upperRootFactor_eval_real_ne_zero p) qB) ∈
+      (LinearMap.range
+        (finiteModelBoundaryLpLinearMap
+          (lowerRootFactor p)
+          (lowerRootFactor_eval_real_ne_zero p)))ᗮ := by
+  rw [Submodule.mem_orthogonal']
+  intro u hu
+  obtain ⟨qS, rfl⟩ := hu
+  rw [← inner_conj_symm,
+    finiteModelBoundaryLp_inner_residualInner_negative_eq_zero p qS qB,
     map_zero]
 
 end
