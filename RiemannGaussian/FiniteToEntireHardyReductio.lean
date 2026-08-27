@@ -207,7 +207,7 @@ theorem exists_positive_riemannXiSpectral_analyticEValue_upper_root_of_not_rh
     differentiable_riemannXiSpectral hz₀ hroot
 
 /-- Fully composed reductio entry point: if RH fails, one positive spectral-xi
-homotopy and one upper root admit a sorry-free sequence of separable,
+homotopy and one upper root yield a fully checked sequence of separable,
 root-pinned finite models carrying the complete canonical Hardy frontier. -/
 theorem exists_canonicalFiniteHardyFrontier_sequence_of_not_rh
     (hRH : ¬ RiemannHypothesis) :
