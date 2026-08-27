@@ -168,8 +168,10 @@ current checked state, not a list of conjectural steps.
   repetitions whenever the polynomial is separable. Thus the qualitative
   root-decomposition premises of the finite Hardy estimates are discharged
   canonically. The complete product, residual-inner, and determinant
-  conclusions are now stated directly for this canonical influence core, so
-  only its quantitative cardinality and positive height floor remain open.
+  conclusions are now stated directly for this canonical influence core.
+  Its nonemptiness and a positive finite-stage height floor are automatic;
+  the unresolved alternatives are singleton cores and uniform control along
+  the approximating sequence.
 - The separability gap for root-pinned approximants is now closed. Lean
   constructs explicit quadratic and cubic perturbations in the kernel of
   homotopy evaluation at the prescribed root. A nonzero Wronskian reduces
@@ -177,6 +179,13 @@ current checked state, not a list of conjectural steps.
   vanishing parameters outside those sets yields separable real polynomials
   converging locally uniformly to spectral xi while retaining the same exact
   upper homotopy root in every finite model.
+- The canonical inside influence core at every such finite homotopy root is
+  now proved nonempty and carries the full imaginary pole budget `≤ -1`.
+  Consequently every approximant satisfies an exact alternative: either its
+  core is a singleton, or the complete finite Hardy determinant obeys the
+  strict multipoint bound for a positive finite-stage height floor. Thus the
+  cardinality obstruction is isolated precisely to the singleton branch;
+  uniformity of the strict gap through the entire limit remains open.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -245,10 +254,12 @@ vanishing affine corrections also pin a prescribed limiting homotopy root
 into every corrected approximant without changing the locally uniform limit.
 Explicit real Taylor approximants to spectral xi are now constructed and
 proved locally uniform, and separable root-pinned versions retain both that
-limit and the prescribed finite homotopy root. The next Hardy frontier is to
-prove the required quantitative influence-core control for their canonical
-upper-root multisets and then pass the finite strict defect mechanism through
-that limit.
+limit and the prescribed finite homotopy root. Their canonical influence
+cores are nonempty and carry the full pole budget at every finite stage; each
+is either a singleton or lies in the strict multipoint determinant regime.
+The next Hardy frontier is to control the singleton branch and obtain a
+uniform, limit-stable strict defect before passing the mechanism through the
+entire limit.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -281,6 +292,9 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   specializes the complete finite Hardy chain to that canonical root multiset.
 - [`RiemannGaussian/FiniteToEntireSeparableApproximation.lean`](RiemannGaussian/FiniteToEntireSeparableApproximation.lean)
   constructs separable root-pinned approximants converging to spectral xi.
+- [`RiemannGaussian/FiniteToEntireHardyFrontier.lean`](RiemannGaussian/FiniteToEntireHardyFrontier.lean)
+  composes those approximants with the canonical pole-budget and finite Hardy
+  determinant alternatives.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built

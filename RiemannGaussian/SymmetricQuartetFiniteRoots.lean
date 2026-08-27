@@ -528,6 +528,105 @@ theorem insideInfluenceDiskRoots_logDerivativeContribution_im_neg
       (hne alpha (Multiset.mem_of_mem_filter halphaInside))).mpr
   exact (Multiset.mem_filter.mp halphaInside).2
 
+/-- A root of a positive finite homotopy cannot also be one of the named
+upper roots of its separable base polynomial. -/
+theorem finiteE_root_ne_upperResidual
+    {A : ℝ[X]} (hA : A.Separable) {eta : ℝ} (heta : 0 < eta) {z : ℂ}
+    {realResidual upperResidual : Multiset ℂ}
+    (hroot : (finiteEPolynomial A eta).eval z = 0)
+    (hroots : (A.map Complex.ofRealHom).roots =
+      realResidual + conjugatePairRootMultiset upperResidual) :
+    ∀ alpha ∈ upperResidual, z ≠ alpha := by
+  have hAz : A.eval₂ Complex.ofRealHom z ≠ 0 :=
+    finiteE_root_base_eval_ne_zero hA heta.ne' hroot
+  have hpolyNe : A.map Complex.ofRealHom ≠ 0 :=
+    Polynomial.map_ne_zero hA.ne_zero
+  intro alpha halphaMem heq
+  apply hAz
+  rw [heq]
+  have halphaRoots : alpha ∈ (A.map Complex.ofRealHom).roots := by
+    rw [hroots]
+    simp [conjugatePairRootMultiset, halphaMem]
+  have halphaIsRoot := (Polynomial.mem_roots hpolyNe).mp halphaRoots
+  simpa [Polynomial.IsRoot, Polynomial.eval_map] using halphaIsRoot
+
+/-- The complete negative logarithmic-derivative budget transfers to the
+inside influence core.  This is the cardinality-free quantitative statement
+underlying the multipoint product theorem. -/
+theorem
+    insideInfluenceDiskRoots_logDerivativeSum_im_le_neg_one_of_finiteE_root
+    {A : ℝ[X]} (hA : A.Separable) {eta : ℝ} (heta : 0 < eta) {z : ℂ}
+    {realResidual upperResidual : Multiset ℂ}
+    (hz : 0 < z.im)
+    (hroot : (finiteEPolynomial A eta).eval z = 0)
+    (hroots : (A.map Complex.ofRealHom).roots =
+      realResidual + conjugatePairRootMultiset upperResidual)
+    (hreal : ∀ w ∈ realResidual, w.im = 0)
+    (halpha : ∀ alpha ∈ upperResidual, 0 < alpha.im) :
+    (((insideInfluenceDiskRoots z upperResidual).map fun alpha =>
+      onePairLogDerivativeContribution eta alpha z).sum).im ≤ -1 := by
+  have hAz : A.eval₂ Complex.ofRealHom z ≠ 0 :=
+    finiteE_root_base_eval_ne_zero hA heta.ne' hroot
+  have hne : ∀ alpha ∈ upperResidual, z ≠ alpha :=
+    finiteE_root_ne_upperResidual hA heta hroot hroots
+  have hvalue : finiteNegativeLogDerivativeValue A eta z = -Complex.I :=
+    (finiteNegativeLogDerivativeValue_eq_neg_I_iff hAz).mpr hroot
+  have hsumAll :
+      (((A.map Complex.ofRealHom).roots.map fun w =>
+        -(eta : ℂ) / (z - w)).sum) = -Complex.I := by
+    rw [← finiteNegativeLogDerivativeValue_eq_root_sum hAz]
+    exact hvalue
+  have hdecomp :
+      (realResidual.map fun w => -(eta : ℂ) / (z - w)).sum +
+        (upperResidual.map fun alpha =>
+          onePairLogDerivativeContribution eta alpha z).sum =
+        -Complex.I := by
+    calc
+      (realResidual.map fun w => -(eta : ℂ) / (z - w)).sum +
+          (upperResidual.map fun alpha =>
+            onePairLogDerivativeContribution eta alpha z).sum =
+        ((realResidual + conjugatePairRootMultiset upperResidual).map
+          fun w => -(eta : ℂ) / (z - w)).sum := by
+            rw [Multiset.map_add, Multiset.sum_add,
+              conjugatePairRootMultiset_logDerivative_sum]
+      _ = (((A.map Complex.ofRealHom).roots.map fun w =>
+          -(eta : ℂ) / (z - w)).sum) := by rw [hroots]
+      _ = -Complex.I := hsumAll
+  have hrealNonneg : 0 ≤
+      ((realResidual.map fun w => -(eta : ℂ) / (z - w)).sum).im :=
+    residualRootLogDerivativeSum_im_nonneg_of_real heta.le hz hreal
+  have him := congrArg Complex.im hdecomp
+  rw [Complex.add_im] at him
+  simp only [Complex.neg_im, Complex.I_im] at him
+  have hpairSum :
+      ((upperResidual.map fun alpha =>
+        onePairLogDerivativeContribution eta alpha z).sum).im ≤ -1 := by
+    linarith
+  exact (insideInfluenceDiskRoots_logDerivativeSum_im_le
+    heta.le hz halpha hne).trans hpairSum
+
+/-- The inside influence core is necessarily nonempty at every upper root of
+a positive finite homotopy. -/
+theorem insideInfluenceDiskRoots_card_pos_of_finiteE_root
+    {A : ℝ[X]} (hA : A.Separable) {eta : ℝ} (heta : 0 < eta) {z : ℂ}
+    {realResidual upperResidual : Multiset ℂ}
+    (hz : 0 < z.im)
+    (hroot : (finiteEPolynomial A eta).eval z = 0)
+    (hroots : (A.map Complex.ofRealHom).roots =
+      realResidual + conjugatePairRootMultiset upperResidual)
+    (hreal : ∀ w ∈ realResidual, w.im = 0)
+    (halpha : ∀ alpha ∈ upperResidual, 0 < alpha.im) :
+    0 < (insideInfluenceDiskRoots z upperResidual).card := by
+  have hbudget :=
+    insideInfluenceDiskRoots_logDerivativeSum_im_le_neg_one_of_finiteE_root
+      hA heta hz hroot hroots hreal halpha
+  by_contra hcard
+  have hzero : insideInfluenceDiskRoots z upperResidual = 0 := by
+    apply Multiset.card_eq_zero.mp
+    exact Nat.eq_zero_of_not_pos hcard
+  rw [hzero] at hbudget
+  norm_num at hbudget
+
 /-- Weighted multi-pair consequence for an exact finite polynomial model.
 At a root of `A + I*eta*A'`, real residual roots contribute nonnegatively, so
 the complete off-axis pair sum has imaginary part at most `-1`.  The exact
@@ -550,58 +649,13 @@ theorem
     ((insideInfluenceDiskRoots z upperResidual).map fun alpha =>
       upperHalfPlanePseudoHyperbolicDistance z alpha).prod <
         pairHyperbolicThreshold η a0 := by
-  have hAz : A.eval₂ Complex.ofRealHom z ≠ 0 :=
-    finiteE_root_base_eval_ne_zero hA hη.ne' hroot
-  have hpolyNe : A.map Complex.ofRealHom ≠ 0 :=
-    Polynomial.map_ne_zero hA.ne_zero
   have hne : ∀ alpha ∈ upperResidual, z ≠ alpha := by
-    intro alpha halphaMem heq
-    apply hAz
-    rw [heq]
-    have halphaRoots : alpha ∈ (A.map Complex.ofRealHom).roots := by
-      rw [hroots]
-      simp [conjugatePairRootMultiset, halphaMem]
-    have halphaIsRoot := (Polynomial.mem_roots hpolyNe).mp halphaRoots
-    simpa [Polynomial.IsRoot, Polynomial.eval_map] using halphaIsRoot
-  have hvalue : finiteNegativeLogDerivativeValue A η z = -Complex.I :=
-    (finiteNegativeLogDerivativeValue_eq_neg_I_iff hAz).mpr hroot
-  have hsumAll :
-      (((A.map Complex.ofRealHom).roots.map fun w =>
-        -(η : ℂ) / (z - w)).sum) = -Complex.I := by
-    rw [← finiteNegativeLogDerivativeValue_eq_root_sum hAz]
-    exact hvalue
-  have hdecomp :
-      (realResidual.map fun w => -(η : ℂ) / (z - w)).sum +
-        (upperResidual.map fun alpha =>
-          onePairLogDerivativeContribution η alpha z).sum =
-        -Complex.I := by
-    calc
-      (realResidual.map fun w => -(η : ℂ) / (z - w)).sum +
-          (upperResidual.map fun alpha =>
-            onePairLogDerivativeContribution η alpha z).sum =
-        ((realResidual + conjugatePairRootMultiset upperResidual).map
-          fun w => -(η : ℂ) / (z - w)).sum := by
-            rw [Multiset.map_add, Multiset.sum_add,
-              conjugatePairRootMultiset_logDerivative_sum]
-      _ = (((A.map Complex.ofRealHom).roots.map fun w =>
-          -(η : ℂ) / (z - w)).sum) := by rw [hroots]
-      _ = -Complex.I := hsumAll
-  have hrealNonneg : 0 ≤
-      ((realResidual.map fun w => -(η : ℂ) / (z - w)).sum).im :=
-    residualRootLogDerivativeSum_im_nonneg_of_real hη.le hz hreal
-  have him := congrArg Complex.im hdecomp
-  rw [Complex.add_im] at him
-  simp only [Complex.neg_im, Complex.I_im] at him
-  have hpairSum :
-      ((upperResidual.map fun alpha =>
-        onePairLogDerivativeContribution η alpha z).sum).im ≤ -1 := by
-    linarith
-  have hinsideLe := insideInfluenceDiskRoots_logDerivativeSum_im_le
-    hη.le hz halpha hne
+    exact finiteE_root_ne_upperResidual hA hη hroot hroots
   have hinsideSum :
       (((insideInfluenceDiskRoots z upperResidual).map fun alpha =>
         onePairLogDerivativeContribution η alpha z).sum).im ≤ -1 :=
-    hinsideLe.trans hpairSum
+    insideInfluenceDiskRoots_logDerivativeSum_im_le_neg_one_of_finiteE_root
+      hA hη hz hroot hroots hreal halpha
   apply upperRootPseudoHyperbolicProduct_lt_threshold_of_im_sum
     hη ha0 hz hcard
   · intro alpha halphaMem
