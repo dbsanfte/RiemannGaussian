@@ -289,6 +289,15 @@ current checked state, not a list of conjectural steps.
   the varying full finite Hardy heat sums to this complete sum. What remains
   open is endpoint-uniform passage of the integrated defect and a global
   arithmetic evaluation of the complete sum.
+- Lean now also constructs the complete upper spectral height mass in
+  `ℝ≥0∞`, so no unproved summability assumption is hidden at proper time zero.
+  For every observation point above the real axis, the lifted complete
+  spectral heat is proved to converge as `tau -> 0+` to its exact extended
+  zero-time trace, not just along a subsequence. That trace factors as
+  `ofReal(4 * Im(z))` times the upper spectral height mass, and vanishing of
+  the mass is equivalent to RH. This identifies the entire-side small-time
+  boundary object exactly; it does not yet prove convergence or uniform
+  tightness of the finite polynomials' growing height masses.
 - On every zero-free open region, Lean now proves locally uniform convergence
   of the root-pinned polynomial logarithmic derivatives to the genuine
   spectral-xi logarithmic derivative. On each compact zero-free subset the
@@ -606,8 +615,14 @@ arithmetically rigidify that statistic as the approximation degree grows.
 Conjugate decomposition now proves that it is half of the full unsigned
 imaginary variation, while the signed first root moment vanishes identically;
 coefficient control must therefore reach an unsigned/global root statistic.
-A global logarithmic-derivative evaluation of the complete heat sum remains
-the natural meeting point with the explicit-formula line.
+On the entire side, the complete zero-time trace is now constructed without a
+finiteness assumption and identified exactly with four times the observation
+height times the extended upper spectral height mass; its vanishing is
+equivalent to RH. The remaining mismatch is therefore precise: Lean must rule
+out excess finite-polynomial height escaping into the shrinking proper-time
+boundary layer, or derive an arithmetic rigidity theorem that makes such
+escape impossible. A global logarithmic-derivative or explicit-formula
+evaluation remains the natural route to that rigidity.
 
 The remaining small-time estimate is not assumed. Closing the Gaussian
 positivity statement, or completing the finite-to-xi Hardy route, is the
@@ -789,6 +804,11 @@ RH-level part of the project.
   identifies upper-root height with half the unsigned imaginary variation,
   proves exact cancellation of the signed first moment, and propagates the
   canonical obstruction to total root-norm mass.
+- [`RiemannGaussian/RiemannXiUpperHeightTrace.lean`](RiemannGaussian/RiemannXiUpperHeightTrace.lean)
+  constructs the extended upper spectral height mass, proves that the
+  complete spectral heat tends to its exact trace as proper time approaches
+  zero, factors that trace by observation height, and characterizes RH by
+  vanishing of the resulting mass.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
