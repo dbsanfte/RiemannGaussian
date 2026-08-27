@@ -89,9 +89,12 @@ current checked state, not a list of conjectural steps.
   to land in the orthogonal complement of the entire positive model. The exact
   Sylvester numerator decomposition is also proved to be the genuine boundary
   `L²` orthogonal-projection decomposition, so its first coordinate is exactly
-  the Hardy projection residual before the isometric inner multiplier. The
-  triangular residual-coordinate law and its determinant are the remaining
-  confluent steps.
+  the Hardy projection residual before the isometric inner multiplier. Lean
+  now also proves the lower-triangular Sylvester comparison law and computes
+  the residual-coordinate determinant as both a quotient of resultants and a
+  product of inner values over the upper-root multiset. Thus repeated roots
+  are counted with their full algebraic multiplicity, with no separability
+  hypothesis.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -150,11 +153,12 @@ The one-quartet finite theory and its real/Herglotz background are formalized.
 The unequal-height finite hyperbolic optimization and its exact-polynomial
 inside-core specialization are now formalized, as is the higher-index Hardy
 determinant formula conditional on a complete root Cauchy basis. The immediate
-frontier is to prove the triangular law for the now-identified Sylvester
-residual coordinate on the complete boundary confluent basis and derive its
-determinant. It must then be joined to the structural inside-core selection.
-Beyond that lies the genuinely analytic passage from finite polynomial models
-to the entire xi function.
+frontier is to transport the proved multiplicity-aware residual-coordinate
+determinant through the boundary linear equivalence and the residual inner
+isometry to the actual Hardy complement Gram operator. The resulting
+unconditional confluent determinant must then be joined to the structural
+inside-core selection. Beyond that lies the genuinely analytic passage from
+finite polynomial models to the entire xi function.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
