@@ -82,6 +82,7 @@ import RiemannGaussian.FiniteHardyMultipointFactor
 import RiemannGaussian.FiniteHardyMultipointConclusion
 import RiemannGaussian.FiniteToEntireHomotopy
 import RiemannGaussian.FiniteToEntireRootPinning
+import RiemannGaussian.FiniteToEntireRealApproximation
 import RiemannGaussian.FiniteAlgebraicHilbert
 import RiemannGaussian.FiniteHardySylvesterProjection
 import RiemannGaussian.FiniteRootCountBridge

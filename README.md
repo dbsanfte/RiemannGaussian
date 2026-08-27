@@ -152,6 +152,14 @@ current checked state, not a list of conjectural steps.
   homotopy while preserving locally uniform convergence to `f`. Thus the
   chosen homotopy root need not be selected from drifting finite root sets.
   Separability and control of the corrected base-root multisets remain open.
+- The real-polynomial approximation premise is now discharged for spectral
+  xi itself. Lean proves the conjugation laws for the real Gamma factor, the
+  pole-cleared xi normalization, and spectral xi; hence spectral xi is entire
+  and real on the real axis. Its explicit real Taylor polynomials are proved
+  to converge locally uniformly on the whole complex plane. Applying the
+  vanishing affine correction gives an explicit real-polynomial sequence
+  which still converges to xi and whose finite homotopies all contain any
+  prescribed limiting upper homotopy root exactly.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -218,9 +226,11 @@ passage is now formalized: homotopies converge locally uniformly and limits of
 convergent finite roots are genuine roots of the limiting homotopy. Exact
 vanishing affine corrections also pin a prescribed limiting homotopy root
 into every corrected approximant without changing the locally uniform limit.
-The next Hardy frontier is to construct suitable real-polynomial approximants
-to xi, obtain separable corrected models with controlled base-root multisets,
-and pass the finite strict defect mechanism through that limit.
+Explicit real Taylor approximants to spectral xi are now constructed and
+proved locally uniform, so that approximation premise is closed. The next
+Hardy frontier is to obtain separable corrected models with controlled
+base-root multisets and then pass the finite strict defect mechanism through
+that limit.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -245,6 +255,8 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   begins the checked locally uniform passage from finite homotopies to xi.
 - [`RiemannGaussian/FiniteToEntireRootPinning.lean`](RiemannGaussian/FiniteToEntireRootPinning.lean)
   gives the exact vanishing affine correction for a prescribed homotopy root.
+- [`RiemannGaussian/FiniteToEntireRealApproximation.lean`](RiemannGaussian/FiniteToEntireRealApproximation.lean)
+  constructs the locally uniform real Taylor approximants to spectral xi.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
