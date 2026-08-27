@@ -170,6 +170,18 @@ current checked state, not a list of conjectural steps.
   subexponential estimate from Suzuki's arithmetic screw function or an
   equivalent explicit-formula rigidity theorem. The spectral equivalence
   itself does not supply that arithmetic estimate.
+- The screw bridge now also has a finite Hilbert-space realization with the
+  first-order spectral resolvent `1 + i*alpha`. Lean proves the exact ODE
+  identity `u - u' = exp(-i*alpha*z)` for each regularized mode and uses the
+  unconditional inverse-square xi-divisor theorem to assemble the modes into
+  an actual `ℓ²` vector at every real time. Its squared norm is the positive
+  resolvent-weighted reflected-pair mass, is always finite, has an
+  unconditional `O(exp(|t|))` bound, and is subexponential exactly under RH.
+  The corresponding Gaussian/Wick mass is also absolutely convergent and is
+  the limit of genuine finite zeta windows. This removes the unregularized
+  mass's possible value `∞` and puts the frontier in the same inverse-square
+  Hilbert setting as a Suzuki screw norm; identifying or dominating this norm
+  arithmetically remains open.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
