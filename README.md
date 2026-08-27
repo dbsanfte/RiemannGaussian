@@ -501,11 +501,17 @@ converge to the genuine spectral divisor, and subtraction of nested disks
 gives convergence on every fixed selected annulus. Under `¬RH`, one theorem
 now packages these shell limits for the same canonical Hardy sequence beside
 its cross-stage counts, vanishing outer heat, and common quadratic-Gaussian
-shell majorant. The immediate open step is the summable triangular-array
-passage identifying the varying inside-circle heat with the complete
-spectral-xi heat sum. Proper-time endpoint control is a separate subsequent
-requirement. A global logarithmic-derivative or arithmetic evaluation of the
-complete sum is the later rigidity target.
+shell majorant. That majorant is now proved summable, including the finite
+prefix of shells that do not yet surround the observation point, by direct
+comparison with a quadratic polynomial times a linear exponential tail. Lean
+also proves the required triangular-array form of Tannery's theorem for a
+moving finite cutoff; it returns both summability of the pointwise shell
+limits and convergence of the moving sums. The immediate open step is to
+instantiate that theorem with the synchronized polynomial annuli and identify
+the varying inside-circle heat with the complete spectral-xi heat sum.
+Proper-time endpoint control is a separate subsequent requirement. A global
+logarithmic-derivative or arithmetic evaluation of the complete sum is the
+later rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -648,6 +654,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   divisors across the real axis, proves fixed-disk and fixed-annulus heat
   convergence, and packages those limits with the same `¬RH` Hardy sequence
   and its uniform shell majorants.
+- [`RiemannGaussian/FiniteToEntireRadialShellSummability.lean`](RiemannGaussian/FiniteToEntireRadialShellSummability.lean)
+  proves summability of the selected quadratic-Gaussian shell majorant and a
+  reusable Tannery theorem for dominated triangular arrays with moving finite
+  cutoffs.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
