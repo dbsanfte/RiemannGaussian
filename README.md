@@ -160,6 +160,13 @@ current checked state, not a list of conjectural steps.
   vanishing affine correction gives an explicit real-polynomial sequence
   which still converges to xi and whose finite homotopies all contain any
   prescribed limiting upper homotopy root exactly.
+- Every real base polynomial now has a canonical, multiplicity-preserving
+  decomposition into real-axis roots and conjugate pairs represented by
+  their upper-half-plane members. Lean also checks the exact degree count
+  `#real + 2 * #upper = degree` and proves that the upper multiset has no
+  repetitions whenever the polynomial is separable. Thus the qualitative
+  root-decomposition premises of the finite Hardy estimates are discharged
+  canonically; quantitative control of those roots remains open.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -228,9 +235,10 @@ vanishing affine corrections also pin a prescribed limiting homotopy root
 into every corrected approximant without changing the locally uniform limit.
 Explicit real Taylor approximants to spectral xi are now constructed and
 proved locally uniform, so that approximation premise is closed. The next
-Hardy frontier is to obtain separable corrected models with controlled
-base-root multisets and then pass the finite strict defect mechanism through
-that limit.
+Hardy frontier is to obtain separable corrected models, prove the required
+quantitative influence-core control for their canonical upper-root
+multisets, and then pass the finite strict defect mechanism through that
+limit.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -257,6 +265,8 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   gives the exact vanishing affine correction for a prescribed homotopy root.
 - [`RiemannGaussian/FiniteToEntireRealApproximation.lean`](RiemannGaussian/FiniteToEntireRealApproximation.lean)
   constructs the locally uniform real Taylor approximants to spectral xi.
+- [`RiemannGaussian/FiniteRealRootDecomposition.lean`](RiemannGaussian/FiniteRealRootDecomposition.lean)
+  canonically decomposes every real polynomial root multiset with multiplicity.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built

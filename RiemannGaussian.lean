@@ -74,6 +74,7 @@ import RiemannGaussian.FiniteHardyMultipointScalar
 import RiemannGaussian.FiniteNegConjSymmetry
 import RiemannGaussian.SymmetricQuartetHardyMetric
 import RiemannGaussian.SymmetricQuartetFiniteRoots
+import RiemannGaussian.FiniteRealRootDecomposition
 import RiemannGaussian.FiniteHardyInsideCoreBridge
 import RiemannGaussian.FiniteHardyMultipointRational
 import RiemannGaussian.FiniteHardyRationalMaximum
