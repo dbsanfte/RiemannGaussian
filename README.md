@@ -182,6 +182,16 @@ current checked state, not a list of conjectural steps.
   mass's possible value `∞` and puts the frontier in the same inverse-square
   Hilbert setting as a Suzuki screw norm; identifying or dominating this norm
   arithmetically remains open.
+- The resolvent is now identified in Lean as an actual time-domain operator:
+  each regularized spectral coordinate is the exponential future convolution
+  `integral_0^infinity exp(-s) * rawMode(t+s) ds`. A general normed-space
+  theorem proves that a rate-`epsilon < 1` input bound passes through this
+  convolution with the exact factor `1/(1-epsilon)`, and hence that the
+  operator preserves subexponential growth. This creates a rigorous transfer
+  channel from a future arithmetic Suzuki-screw signal to the finite spectral
+  norm. What is still missing is a new theorem identifying the appropriate
+  arithmetic signal with, or proving it dominates, the raw spectral
+  coordinates; that theorem will also have to be formalized in Lean.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
