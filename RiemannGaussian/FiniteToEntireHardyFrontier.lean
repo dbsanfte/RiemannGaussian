@@ -1,4 +1,4 @@
-import RiemannGaussian.FiniteHardyCanonicalConclusion
+import RiemannGaussian.FiniteHardySingletonFrontier
 import RiemannGaussian.FiniteToEntireSeparableApproximation
 
 /-!
@@ -10,10 +10,13 @@ homotopy, it constructs separable real polynomial approximants which retain
 that zero exactly.  At every finite stage, Lean proves that the canonical
 influence core carries the full negative pole budget and is nonempty.
 
-The remaining cardinality alternative is explicit: either the core is a
-singleton, or the complete finite Hardy determinant satisfies the strict
-multipoint bound for a positive finite-stage height floor.  No root list,
-separability premise, or root-persistence premise remains to be supplied by a
+The remaining geometric alternative is explicit: either the core is a
+singleton whose unique root is vertically aligned with the pinned root, or a
+stagewise strict estimate is available.  More importantly, every inside-core
+root lies above the fixed height `z.im`.  This gives all stages the same
+closed determinant bound `eta / sqrt (eta^2 + z.im^2) < 1`, including the
+aligned singleton case.  No root list, separability premise, root-persistence
+premise, or finite-stage uniform-gap premise remains to be supplied by a
 future limit argument.
 -/
 
@@ -34,13 +37,25 @@ structure CanonicalFiniteHardyFrontier
     (((canonicalInsideInfluenceDiskRoots A z).map fun alpha =>
       onePairLogDerivativeContribution eta alpha z).sum).im ≤ -1
   coreCardPos : 0 < (canonicalInsideInfluenceDiskRoots A z).card
-  singletonOrStrictBound :
-    (canonicalInsideInfluenceDiskRoots A z).card = 1 ∨
+  alignedSingletonOrStrictBound :
+    (∃ alpha : ℂ,
+        canonicalInsideInfluenceDiskRoots A z = {alpha} ∧
+          alpha.re = z.re) ∨
       ∃ a0 : ℝ, 0 < a0 ∧
         Real.sqrt
             (LinearMap.det
               (finiteHardyCrossAngleComplementGramOperator A eta).toLinearMap).re <
           eta / Real.sqrt (eta ^ 2 + a0 ^ 2)
+  uniformDetBound :
+    Real.sqrt
+        (LinearMap.det
+          (finiteHardyCrossAngleComplementGramOperator A eta).toLinearMap).re ≤
+      eta / Real.sqrt (eta ^ 2 + z.im ^ 2)
+  uniformDetLtOne :
+    Real.sqrt
+        (LinearMap.det
+          (finiteHardyCrossAngleComplementGramOperator A eta).toLinearMap).re <
+      1
 
 /-- Every separable finite model with a pinned upper root satisfies the full
 canonical frontier package. -/
@@ -57,15 +72,21 @@ theorem canonicalFiniteHardyFrontier_of_finiteE_root
   coreCardPos :=
     canonicalInsideInfluenceDiskRoots_card_pos_of_finiteE_root
       hA heta hz hroot
-  singletonOrStrictBound :=
-    canonicalInsideCore_card_eq_one_or_exists_finiteHardy_sqrt_det_strict_bound
+  alignedSingletonOrStrictBound :=
+    exists_aligned_canonicalInsideCore_singleton_or_finiteHardy_strict_bound
+      hA heta hz hroot
+  uniformDetBound :=
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_le_closed_bound_of_finiteE_root
+      hA heta hz hroot
+  uniformDetLtOne :=
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_one_of_finiteE_root
       hA heta hz hroot
 
 /-- Spectral-xi specialization of the complete current Hardy frontier.  A
 single locally uniform sequence simultaneously has real coefficients,
 separability, exact root pinning, the full canonical pole budget, nonempty
-influence cores, and the singleton-versus-strict-determinant alternative at
-every index. -/
+influence cores, the refined singleton alternative, and one fixed strict
+determinant gap at every index. -/
 theorem exists_riemannXiSpectral_canonicalFiniteHardyFrontier_sequence
     {eta : ℝ} (heta : 0 < eta) {z : ℂ} (hz : 0 < z.im)
     (hroot : analyticEValue riemannXiSpectral eta z = 0) :

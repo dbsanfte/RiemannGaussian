@@ -169,9 +169,9 @@ current checked state, not a list of conjectural steps.
   root-decomposition premises of the finite Hardy estimates are discharged
   canonically. The complete product, residual-inner, and determinant
   conclusions are now stated directly for this canonical influence core.
-  Its nonemptiness and a positive finite-stage height floor are automatic;
-  the unresolved alternatives are singleton cores and uniform control along
-  the approximating sequence.
+  Its nonemptiness is automatic, and every core root lies strictly above the
+  fixed pinned height. Thus `z.im` is a common lower bound across the entire
+  approximating sequence, rather than a stage-dependent minimum.
 - The separability gap for root-pinned approximants is now closed. Lean
   constructs explicit quadratic and cubic perturbations in the kernel of
   homotopy evaluation at the prescribed root. A nonzero Wronskian reduces
@@ -181,11 +181,14 @@ current checked state, not a list of conjectural steps.
   upper homotopy root in every finite model.
 - The canonical inside influence core at every such finite homotopy root is
   now proved nonempty and carries the full imaginary pole budget `≤ -1`.
-  Consequently every approximant satisfies an exact alternative: either its
-  core is a singleton, or the complete finite Hardy determinant obeys the
-  strict multipoint bound for a positive finite-stage height floor. Thus the
-  cardinality obstruction is isolated precisely to the singleton branch;
-  uniformity of the strict gap through the entire limit remains open.
+  A nonaligned singleton satisfies the strict one-pair threshold, leaving
+  only a vertically aligned singleton as the equality geometry. More
+  importantly, a cardinality-free cost theorem covers that equality case and
+  proves the uniform bound
+  `sqrt(det) ≤ eta / sqrt(eta^2 + z.im^2) < 1`
+  for every approximant. The finite singleton and uniform-height obstructions
+  are therefore closed. Convergence and identification of these varying
+  finite Hardy determinants in the entire limit remains open.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -256,10 +259,11 @@ Explicit real Taylor approximants to spectral xi are now constructed and
 proved locally uniform, and separable root-pinned versions retain both that
 limit and the prescribed finite homotopy root. Their canonical influence
 cores are nonempty and carry the full pole budget at every finite stage; each
-is either a singleton or lies in the strict multipoint determinant regime.
-The next Hardy frontier is to control the singleton branch and obtain a
-uniform, limit-stable strict defect before passing the mechanism through the
-entire limit.
+core root lies above the fixed pinned height. Consequently all stages obey
+the same strict-from-one closed determinant bound, including singleton cores.
+The next Hardy frontier is to construct and identify the corresponding
+entire-limit Hardy invariant and rigorously pass this uniform finite bound to
+it.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -290,6 +294,9 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   canonically decomposes every real polynomial root multiset with multiplicity.
 - [`RiemannGaussian/FiniteHardyCanonicalConclusion.lean`](RiemannGaussian/FiniteHardyCanonicalConclusion.lean)
   specializes the complete finite Hardy chain to that canonical root multiset.
+- [`RiemannGaussian/FiniteHardySingletonFrontier.lean`](RiemannGaussian/FiniteHardySingletonFrontier.lean)
+  proves strict one-pair energy away from vertical alignment and isolates the
+  equality geometry.
 - [`RiemannGaussian/FiniteToEntireSeparableApproximation.lean`](RiemannGaussian/FiniteToEntireSeparableApproximation.lean)
   constructs separable root-pinned approximants converging to spectral xi.
 - [`RiemannGaussian/FiniteToEntireHardyFrontier.lean`](RiemannGaussian/FiniteToEntireHardyFrontier.lean)

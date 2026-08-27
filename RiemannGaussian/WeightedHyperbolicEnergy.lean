@@ -56,6 +56,37 @@ theorem pairHyperbolicCost_multiset_sum_le_commonLowerHeight
           (fun ar har => hrpos ar (by simp [har]))
           (fun ar har => hrone ar (by simp [har])))
 
+/-- Nonstrict unequal-height product theorem, valid for any finite number of
+pairs.  A unit true-cost budget puts the complete radius product at or below
+the common-lower-height threshold. -/
+theorem weightedPairHyperbolicCost_multiset_prod_le_threshold_of_lowerHeight
+    {m a0 : ℝ} (hm : 0 < m) (ha0 : 0 < a0)
+    (pairs : Multiset (ℝ × ℝ))
+    (hheight : ∀ ar ∈ pairs, a0 ≤ ar.1)
+    (hrpos : ∀ ar ∈ pairs, 0 < ar.2)
+    (hrone : ∀ ar ∈ pairs, ar.2 < 1)
+    (hcost : 1 ≤
+      (pairs.map fun ar => pairHyperbolicCost m ar.1 ar.2).sum) :
+    (pairs.map Prod.snd).prod ≤ pairHyperbolicThreshold m a0 := by
+  let radii := pairs.map Prod.snd
+  have hrposRadii : ∀ r ∈ radii, 0 < r := by
+    intro r hr
+    obtain ⟨ar, har, rfl⟩ := Multiset.mem_map.mp hr
+    exact hrpos ar har
+  have hroneRadii : ∀ r ∈ radii, r < 1 := by
+    intro r hr
+    obtain ⟨ar, har, rfl⟩ := Multiset.mem_map.mp hr
+    exact hrone ar har
+  have hcommon : 1 ≤
+      (radii.map fun r => pairHyperbolicCost m a0 r).sum :=
+    hcost.trans
+      (pairHyperbolicCost_multiset_sum_le_commonLowerHeight
+        hm.le ha0 pairs hheight hrpos fun ar har => (hrone ar har).le)
+  apply radius_le_pairHyperbolicThreshold_of_one_le_cost hm ha0
+  exact hcommon.trans
+    (pairHyperbolicCost_multiset_sum_le_cost_prod
+      hm.le ha0 radii hrposRadii fun r hr => (hroneRadii r hr).le)
+
 /-- Unequal-height finite product theorem.  A unit sum of the true weighted
 costs forces the complete radius product below the common-lower-height
 threshold. -/
@@ -158,6 +189,26 @@ theorem onePairLogDerivativeContribution_im_ge_neg_cost_complex
     (onePairLogDerivativeContribution_im_ge_neg_hyperbolicCost
       hm halpha hz hupper)
 
+/-- Away from vertical alignment, the coordinate-free one-pair energy bound
+is strict. -/
+theorem onePairLogDerivativeContribution_im_gt_neg_cost_complex_of_re_ne
+    {m : ℝ} (hm : 0 < m) {z alpha : ℂ}
+    (hz : 0 < z.im) (halpha : 0 < alpha.im)
+    (hre : z.re ≠ alpha.re) :
+    -pairHyperbolicCost m alpha.im
+        (upperHalfPlanePseudoHyperbolicDistance z alpha) <
+      (onePairLogDerivativeContribution m alpha z).im := by
+  have halphaForm :
+      (alpha.re : ℂ) + Complex.I * (alpha.im : ℂ) = alpha := by
+    rw [mul_comm]
+    exact Complex.re_add_im alpha
+  have hzForm : (z.re : ℂ) + Complex.I * (z.im : ℂ) = z := by
+    rw [mul_comm]
+    exact Complex.re_add_im z
+  simpa only [halphaForm, hzForm] using
+    (onePairLogDerivativeContribution_im_gt_neg_hyperbolicCost_of_horizontal_ne
+      hm halpha hz (sub_ne_zero.mpr hre))
+
 /-- If a finite collection of upper-root pair contributions has imaginary
 part at most `-1`, its exact weighted hyperbolic cost sum is at least one. -/
 theorem one_le_weightedPairHyperbolicCost_sum_of_im_le_neg_one
@@ -188,6 +239,49 @@ theorem one_le_weightedPairHyperbolicCost_sum_of_im_le_neg_one
           (fun beta hbeta => hne beta (by simp [hbeta]))
         linarith
   linarith
+
+/-- Nonstrict complex unequal-height product theorem, valid without a
+cardinality hypothesis. -/
+theorem upperRootPseudoHyperbolicProduct_le_threshold_of_im_sum
+    {m a0 : ℝ} (hm : 0 < m) (ha0 : 0 < a0)
+    {z : ℂ} {upper : Multiset ℂ} (hz : 0 < z.im)
+    (halpha : ∀ alpha ∈ upper, 0 < alpha.im)
+    (hne : ∀ alpha ∈ upper, z ≠ alpha)
+    (hminHeight : ∀ alpha ∈ upper, a0 ≤ alpha.im)
+    (hsum : ((upper.map fun alpha =>
+      onePairLogDerivativeContribution m alpha z).sum).im ≤ -1) :
+    (upper.map fun alpha =>
+      upperHalfPlanePseudoHyperbolicDistance z alpha).prod ≤
+        pairHyperbolicThreshold m a0 := by
+  let pairs : Multiset (ℝ × ℝ) := upper.map fun alpha =>
+    (alpha.im, upperHalfPlanePseudoHyperbolicDistance z alpha)
+  have hcost : 1 ≤
+      (upper.map fun alpha =>
+        pairHyperbolicCost m alpha.im
+          (upperHalfPlanePseudoHyperbolicDistance z alpha)).sum :=
+    one_le_weightedPairHyperbolicCost_sum_of_im_le_neg_one
+      hm.le hz halpha hne hsum
+  have hheightPairs : ∀ ar ∈ pairs, a0 ≤ ar.1 := by
+    intro ar har
+    obtain ⟨alpha, halphaMem, rfl⟩ := Multiset.mem_map.mp har
+    exact hminHeight alpha halphaMem
+  have hrposPairs : ∀ ar ∈ pairs, 0 < ar.2 := by
+    intro ar har
+    obtain ⟨alpha, halphaMem, rfl⟩ := Multiset.mem_map.mp har
+    exact upperHalfPlanePseudoHyperbolicDistance_pos_of_ne
+      hz (halpha alpha halphaMem) (hne alpha halphaMem)
+  have hronePairs : ∀ ar ∈ pairs, ar.2 < 1 := by
+    intro ar har
+    obtain ⟨alpha, halphaMem, rfl⟩ := Multiset.mem_map.mp har
+    exact upperHalfPlanePseudoHyperbolicDistance_lt_one
+      hz (halpha alpha halphaMem)
+  have hweighted : 1 ≤
+      (pairs.map fun ar => pairHyperbolicCost m ar.1 ar.2).sum := by
+    simpa [pairs, Multiset.map_map, Function.comp_apply] using hcost
+  have hresult :=
+    weightedPairHyperbolicCost_multiset_prod_le_threshold_of_lowerHeight
+      hm ha0 pairs hheightPairs hrposPairs hronePairs hweighted
+  simpa [pairs, Multiset.map_map, Function.comp_apply] using hresult
 
 /-- Final complex unequal-height product theorem.  The only height input is a
 common positive lower bound for the finite upper-root collection. -/

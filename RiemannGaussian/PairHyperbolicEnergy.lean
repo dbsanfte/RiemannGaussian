@@ -168,7 +168,7 @@ theorem pairHyperbolicRadius_lt_one
   unfold pairHyperbolicRadius pairHyperbolicUpperSq pairHyperbolicLowerSq
   congr 2 <;> ring
 
-@[simp] theorem pairHyperbolicRadius_swap_heights (d v a : ℝ) :
+theorem pairHyperbolicRadius_swap_heights (d v a : ℝ) :
     pairHyperbolicRadius d a v = pairHyperbolicRadius d v a := by
   unfold pairHyperbolicRadius pairHyperbolicUpperSq pairHyperbolicLowerSq
   congr 2 <;> ring
@@ -215,6 +215,52 @@ theorem pair_height_lower_bound
     have hden := add_pos ha hv
     have hlinear : a - v ≤ r * (a + v) :=
       (div_le_iff₀ hden).1 hquot_le_r
+    nlinarith
+
+/-- The pseudo-hyperbolic circle height inequality is strict away from
+vertical alignment of the two points. -/
+theorem pair_height_lower_bound_strict_of_horizontal_ne
+    {d v a : ℝ} (ha : 0 < a) (hv : 0 < v) (hd : d ≠ 0) :
+    a * (1 - pairHyperbolicRadius d v a) <
+      v * (1 + pairHyperbolicRadius d v a) := by
+  let r := pairHyperbolicRadius d v a
+  have hupper : 0 < pairHyperbolicUpperSq d v a := by
+    unfold pairHyperbolicUpperSq
+    nlinarith [sq_pos_of_ne_zero hd, sq_nonneg (v - a)]
+  have hr : 0 < r := pairHyperbolicRadius_pos ha hv hupper
+  by_cases hav : a ≤ v
+  · nlinarith
+  · have hva : v < a := lt_of_not_ge hav
+    let A : ℝ := (a - v) ^ 2
+    let B : ℝ := (a + v) ^ 2
+    let U : ℝ := pairHyperbolicUpperSq d v a
+    let L : ℝ := pairHyperbolicLowerSq d v a
+    have hB : 0 < B := by
+      dsimp only [B]
+      positivity
+    have hL : 0 < L := pairHyperbolicLowerSq_pos ha hv
+    have hBA : 0 < B - A := by
+      dsimp only [A, B]
+      nlinarith
+    have hcross : A * L < U * B := by
+      have hid : U * B - A * L = d ^ 2 * (B - A) := by
+        dsimp only [A, B, U, L]
+        unfold pairHyperbolicUpperSq pairHyperbolicLowerSq
+        ring
+      nlinarith [mul_pos (sq_pos_of_ne_zero hd) hBA]
+    have hratio : A / B < U / L :=
+      (div_lt_div_iff₀ hB hL).2 hcross
+    have hrsq : r ^ 2 = U / L := by
+      exact pairHyperbolicRadius_sq ha hv
+    have hquotpos : 0 ≤ (a - v) / (a + v) := by positivity
+    have hquotSq : ((a - v) / (a + v)) ^ 2 = A / B := by
+      dsimp only [A, B]
+      field_simp [(add_pos ha hv).ne']
+    have hquot_lt_r : (a - v) / (a + v) < r := by
+      nlinarith [hratio, hquotSq]
+    have hden := add_pos ha hv
+    have hlinear : a - v < r * (a + v) :=
+      (div_lt_iff₀ hden).1 hquot_lt_r
     nlinarith
 
 /-- Algebraic normal form of the pair energy in terms of its
@@ -283,6 +329,32 @@ theorem pairImaginaryEnergy_ge_neg_hyperbolicCost
   have hcore : 0 ≤ v * (1 + r) - a * (1 - r) := by linarith
   field_simp [ha.ne', hv.ne', hr.ne']
   nlinarith [mul_nonneg hfactor hcore]
+
+/-- The universal one-pair energy inequality is strict when the evaluation
+point and pair root are not vertically aligned. -/
+theorem pairImaginaryEnergy_gt_neg_hyperbolicCost_of_horizontal_ne
+    {m d v a : ℝ} (hm : 0 < m) (ha : 0 < a) (hv : 0 < v)
+    (hd : d ≠ 0) :
+    -pairHyperbolicCost m a (pairHyperbolicRadius d v a) <
+      pairImaginaryEnergy m d v a := by
+  let r := pairHyperbolicRadius d v a
+  have hupper : 0 < pairHyperbolicUpperSq d v a := by
+    unfold pairHyperbolicUpperSq
+    nlinarith [sq_pos_of_ne_zero hd, sq_nonneg (v - a)]
+  have hr : 0 < r := pairHyperbolicRadius_pos ha hv hupper
+  have hr1 : r < 1 := pairHyperbolicRadius_lt_one ha hv
+  have hheight : a * (1 - r) < v * (1 + r) :=
+    pair_height_lower_bound_strict_of_horizontal_ne ha hv hd
+  rw [pairImaginaryEnergy_eq_hyperbolicNormalForm ha hv hupper]
+  unfold pairHyperbolicCost
+  change -(m / (2 * a) * (1 / r - r)) <
+    m * (1 - r ^ 2) / (4 * a * v * r ^ 2) *
+      (v * (1 + r ^ 2) - a * (1 - r ^ 2))
+  have hfactor : 0 < m * (1 - r ^ 2) * (1 + r) := by
+    exact mul_pos (mul_pos hm (by nlinarith)) (by nlinarith)
+  have hcore : 0 < v * (1 + r) - a * (1 - r) := by linarith
+  field_simp [ha.ne', hv.ne', hr.ne']
+  nlinarith [mul_pos hfactor hcore]
 
 /-! ## Complex-coordinate identification -/
 
@@ -472,6 +544,26 @@ theorem onePairLogDerivativeContribution_im_ge_neg_hyperbolicCost
   rw [upperHalfPlanePseudoHyperbolicDistance_eq_pairRadius c a x v ha hv,
     onePairLogDerivativeContribution_im m c a x v ha hv hupper]
   exact pairImaginaryEnergy_ge_neg_hyperbolicCost hm ha hv hupper
+
+/-- Real-coordinate complex-value form of strict one-pair energy away from
+vertical alignment. -/
+theorem onePairLogDerivativeContribution_im_gt_neg_hyperbolicCost_of_horizontal_ne
+    {m c a x v : ℝ} (hm : 0 < m) (ha : 0 < a) (hv : 0 < v)
+    (hd : x - c ≠ 0) :
+    -pairHyperbolicCost m a
+        (upperHalfPlanePseudoHyperbolicDistance
+          ((x : ℂ) + Complex.I * (v : ℂ))
+          ((c : ℂ) + Complex.I * (a : ℂ))) <
+      (onePairLogDerivativeContribution m
+        ((c : ℂ) + Complex.I * (a : ℂ))
+        ((x : ℂ) + Complex.I * (v : ℂ))).im := by
+  have hupper : 0 < pairHyperbolicUpperSq (x - c) v a := by
+    unfold pairHyperbolicUpperSq
+    nlinarith [sq_pos_of_ne_zero hd, sq_nonneg (v - a)]
+  rw [upperHalfPlanePseudoHyperbolicDistance_eq_pairRadius c a x v ha hv,
+    onePairLogDerivativeContribution_im m c a x v ha hv hupper]
+  exact pairImaginaryEnergy_gt_neg_hyperbolicCost_of_horizontal_ne
+    hm ha hv hd
 
 end
 

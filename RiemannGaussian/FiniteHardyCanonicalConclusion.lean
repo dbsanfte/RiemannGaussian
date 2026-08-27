@@ -10,10 +10,11 @@ real polynomial already has canonical multisets with precisely those
 properties.  This file instantiates the complete finite argument with them.
 
 After this specialization, the pole budget proves that the canonical core is
-nonempty.  A finite-stage positive height floor is automatic, so the exact
-remaining alternative is a singleton core versus the already-closed
-multipoint determinant regime.  Uniform control along an approximating
-sequence is deliberately not asserted here.
+nonempty.  The influence-disk geometry puts every core root strictly above
+the pinned point, making the fixed value `z.im` a common height floor.  A
+cardinality-free cost theorem then gives the same closed determinant bound to
+singleton and multipoint cores, uniformly across every finite model sharing
+the pinned root.
 -/
 
 open Polynomial
@@ -43,6 +44,23 @@ theorem canonicalInsideInfluenceDiskRoots_im_pos
   intro alpha halpha
   exact realPolynomialUpperRootMultiset_im_pos A alpha
     (canonicalInsideInfluenceDiskRoots_mem_upperRoots halpha)
+
+/-- Every root in the canonical inside core lies strictly above the pinned
+evaluation point.  Thus the fixed height `z.im` is a common lower bound,
+uniformly across all finite approximants sharing `z`. -/
+theorem canonicalInsideInfluenceDiskRoots_center_im_lt
+    {A : ℝ[X]} {z : ℂ} (hz : 0 < z.im) :
+    ∀ alpha ∈ canonicalInsideInfluenceDiskRoots A z, z.im < alpha.im := by
+  intro alpha halpha
+  have halphaPos : 0 < alpha.im :=
+    canonicalInsideInfluenceDiskRoots_im_pos alpha halpha
+  have halphaInside : alpha ∈
+      insideInfluenceDiskRoots z (realPolynomialUpperRootMultiset A) := by
+    simpa [canonicalInsideInfluenceDiskRoots] using halpha
+  have hinside := (Multiset.mem_filter.mp halphaInside).2
+  by_contra hnot
+  have hle : alpha.im ≤ z.im := le_of_not_gt hnot
+  nlinarith [sq_nonneg (z.re - alpha.re)]
 
 /-- The canonical influence core has no repeated occurrences when the base
 polynomial is separable. -/
@@ -79,6 +97,29 @@ theorem canonicalInsideInfluenceDiskRoots_card_pos_of_finiteE_root
     (realPolynomial_roots_eq_real_add_conjugatePairs A)
     (realPolynomialRealRootMultiset_im_eq_zero A)
     (realPolynomialUpperRootMultiset_im_pos A)
+
+/-- Cardinality-free canonical product bound at the fixed, limit-stable
+height floor `z.im`.  It covers singleton and multipoint cores uniformly. -/
+theorem
+    canonicalInsideInfluenceDiskRootPseudoHyperbolicProduct_le_threshold_centerHeight
+    {A : ℝ[X]} (hA : A.Separable) {eta : ℝ} (heta : 0 < eta) {z : ℂ}
+    (hz : 0 < z.im)
+    (hroot : (finiteEPolynomial A eta).eval z = 0) :
+    ((canonicalInsideInfluenceDiskRoots A z).map fun alpha =>
+      upperHalfPlanePseudoHyperbolicDistance z alpha).prod ≤
+        pairHyperbolicThreshold eta z.im := by
+  apply upperRootPseudoHyperbolicProduct_le_threshold_of_im_sum
+    heta hz hz
+  · exact canonicalInsideInfluenceDiskRoots_im_pos
+  · intro alpha halpha
+    exact finiteE_root_ne_upperResidual hA heta hroot
+      (realPolynomial_roots_eq_real_add_conjugatePairs A)
+      alpha (canonicalInsideInfluenceDiskRoots_mem_upperRoots halpha)
+  · intro alpha halpha
+    exact (canonicalInsideInfluenceDiskRoots_center_im_lt hz alpha halpha).le
+  · exact
+      canonicalInsideInfluenceDiskRoots_logDerivativeSum_im_le_neg_one_of_finiteE_root
+        hA heta hz hroot
 
 /-- The exact remaining cardinality alternative: a canonical influence core
 at a finite homotopy root is either a singleton or is in the multipoint
@@ -181,6 +222,151 @@ theorem norm_lowerRootInnerValue_le_two_mul_canonicalInsideProduct_div_one_add_s
     (realPolynomial_roots_eq_real_add_conjugatePairs A)
     (realPolynomialUpperRootMultiset_im_pos A) hproductOne
 
+/-- A nonstrict threshold bound for the canonical core product gives the
+closed residual-inner bound. -/
+theorem norm_lowerRootInnerValue_le_closed_bound_of_canonicalProduct
+    {A : ℝ[X]} (hA : A.Separable) {eta a0 : ℝ} {z : ℂ}
+    (heta : 0 < eta) (ha0 : 0 < a0) (hz : 0 < z.im)
+    (hroot : (finiteEPolynomial A eta).eval z = 0)
+    (hproduct :
+      ((canonicalInsideInfluenceDiskRoots A z).map fun alpha =>
+        upperHalfPlanePseudoHyperbolicDistance z alpha).prod ≤
+          pairHyperbolicThreshold eta a0) :
+    ‖lowerRootInnerValue (finiteEPolynomial A eta) z‖ ≤
+      eta / Real.sqrt (eta ^ 2 + a0 ^ 2) := by
+  let R := ((canonicalInsideInfluenceDiskRoots A z).map fun alpha =>
+    upperHalfPlanePseudoHyperbolicDistance z alpha).prod
+  have hR : 0 ≤ R := by
+    apply Multiset.prod_nonneg
+    intro r hr
+    obtain ⟨alpha, _, rfl⟩ := Multiset.mem_map.mp hr
+    exact norm_nonneg _
+  have hRthreshold : R ≤ pairHyperbolicThreshold eta a0 := by
+    simpa [R] using hproduct
+  have hROne : R < 1 :=
+    hRthreshold.trans_lt (pairHyperbolicThreshold_lt_one heta ha0)
+  have hscalar :=
+    norm_lowerRootInnerValue_le_two_mul_canonicalInsideProduct_div_one_add_sq
+      hA heta.ne' hz hroot (by simpa [R] using hROne)
+  exact norm_le_closed_quartet_bound_of_pick_bound heta ha0 hR
+    hRthreshold (by simpa [R] using hscalar)
+
+/-- Determinant form of the nonstrict product-to-bound implication. -/
+theorem
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_le_closed_bound_of_canonicalProduct
+    {A : ℝ[X]} (hA : A.Separable) {eta a0 : ℝ} {z : ℂ}
+    (heta : 0 < eta) (ha0 : 0 < a0) (hz : 0 < z.im)
+    (hroot : (finiteEPolynomial A eta).eval z = 0)
+    (hproduct :
+      ((canonicalInsideInfluenceDiskRoots A z).map fun alpha =>
+        upperHalfPlanePseudoHyperbolicDistance z alpha).prod ≤
+          pairHyperbolicThreshold eta a0) :
+    Real.sqrt
+        (LinearMap.det
+          (finiteHardyCrossAngleComplementGramOperator A eta).toLinearMap).re ≤
+      eta / Real.sqrt (eta ^ 2 + a0 ^ 2) := by
+  have hzUpper := finiteE_root_mem_upperRootFactor_roots hA.ne_zero hz hroot
+  exact (finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_le_innerValue_of_mem
+      A eta hzUpper).trans
+    (norm_lowerRootInnerValue_le_closed_bound_of_canonicalProduct
+      hA heta ha0 hz hroot hproduct)
+
+/-- Any strict threshold bound for the complete canonical core product feeds
+directly through the sharp scalar terminal step.  This statement is agnostic
+about whether the core is a singleton or multipoint. -/
+theorem norm_lowerRootInnerValue_lt_closed_bound_of_canonicalProduct
+    {A : ℝ[X]} (hA : A.Separable) {eta a0 : ℝ} {z : ℂ}
+    (heta : 0 < eta) (ha0 : 0 < a0) (hz : 0 < z.im)
+    (hroot : (finiteEPolynomial A eta).eval z = 0)
+    (hproduct :
+      ((canonicalInsideInfluenceDiskRoots A z).map fun alpha =>
+        upperHalfPlanePseudoHyperbolicDistance z alpha).prod <
+          pairHyperbolicThreshold eta a0) :
+    ‖lowerRootInnerValue (finiteEPolynomial A eta) z‖ <
+      eta / Real.sqrt (eta ^ 2 + a0 ^ 2) := by
+  let R := ((canonicalInsideInfluenceDiskRoots A z).map fun alpha =>
+    upperHalfPlanePseudoHyperbolicDistance z alpha).prod
+  have hR : 0 ≤ R := by
+    apply Multiset.prod_nonneg
+    intro r hr
+    obtain ⟨alpha, _, rfl⟩ := Multiset.mem_map.mp hr
+    exact norm_nonneg _
+  have hRthreshold : R < pairHyperbolicThreshold eta a0 := by
+    simpa [R] using hproduct
+  have hROne : R < 1 :=
+    hRthreshold.trans (pairHyperbolicThreshold_lt_one heta ha0)
+  have hscalar :=
+    norm_lowerRootInnerValue_le_two_mul_canonicalInsideProduct_div_one_add_sq
+      hA heta.ne' hz hroot (by simpa [R] using hROne)
+  exact norm_lt_closed_quartet_bound_of_pick_bound heta ha0 hR
+    hRthreshold (by simpa [R] using hscalar)
+
+/-- Determinant form of the preceding product-to-bound implication. -/
+theorem
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_closed_bound_of_canonicalProduct
+    {A : ℝ[X]} (hA : A.Separable) {eta a0 : ℝ} {z : ℂ}
+    (heta : 0 < eta) (ha0 : 0 < a0) (hz : 0 < z.im)
+    (hroot : (finiteEPolynomial A eta).eval z = 0)
+    (hproduct :
+      ((canonicalInsideInfluenceDiskRoots A z).map fun alpha =>
+        upperHalfPlanePseudoHyperbolicDistance z alpha).prod <
+          pairHyperbolicThreshold eta a0) :
+    Real.sqrt
+        (LinearMap.det
+          (finiteHardyCrossAngleComplementGramOperator A eta).toLinearMap).re <
+      eta / Real.sqrt (eta ^ 2 + a0 ^ 2) := by
+  have hzUpper := finiteE_root_mem_upperRootFactor_roots hA.ne_zero hz hroot
+  exact (finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_le_innerValue_of_mem
+      A eta hzUpper).trans_lt
+    (norm_lowerRootInnerValue_lt_closed_bound_of_canonicalProduct
+      hA heta ha0 hz hroot hproduct)
+
+/-- Uniform finite residual-inner bound using only the fixed pinned height.
+It applies to singleton and multipoint cores alike. -/
+theorem norm_lowerRootInnerValue_le_closed_bound_of_finiteE_root
+    {A : ℝ[X]} (hA : A.Separable) {eta : ℝ} (heta : 0 < eta) {z : ℂ}
+    (hz : 0 < z.im)
+    (hroot : (finiteEPolynomial A eta).eval z = 0) :
+    ‖lowerRootInnerValue (finiteEPolynomial A eta) z‖ ≤
+      eta / Real.sqrt (eta ^ 2 + z.im ^ 2) := by
+  apply norm_lowerRootInnerValue_le_closed_bound_of_canonicalProduct
+    hA heta hz hz hroot
+  exact
+    canonicalInsideInfluenceDiskRootPseudoHyperbolicProduct_le_threshold_centerHeight
+      hA heta hz hroot
+
+/-- Uniform finite Hardy determinant bound using only the fixed pinned
+height. -/
+theorem
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_le_closed_bound_of_finiteE_root
+    {A : ℝ[X]} (hA : A.Separable) {eta : ℝ} (heta : 0 < eta) {z : ℂ}
+    (hz : 0 < z.im)
+    (hroot : (finiteEPolynomial A eta).eval z = 0) :
+    Real.sqrt
+        (LinearMap.det
+          (finiteHardyCrossAngleComplementGramOperator A eta).toLinearMap).re ≤
+      eta / Real.sqrt (eta ^ 2 + z.im ^ 2) := by
+  apply
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_le_closed_bound_of_canonicalProduct
+      hA heta hz hz hroot
+  exact
+    canonicalInsideInfluenceDiskRootPseudoHyperbolicProduct_le_threshold_centerHeight
+      hA heta hz hroot
+
+/-- The preceding fixed bound is uniformly separated from one. -/
+theorem finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_one_of_finiteE_root
+    {A : ℝ[X]} (hA : A.Separable) {eta : ℝ} (heta : 0 < eta) {z : ℂ}
+    (hz : 0 < z.im)
+    (hroot : (finiteEPolynomial A eta).eval z = 0) :
+    Real.sqrt
+        (LinearMap.det
+          (finiteHardyCrossAngleComplementGramOperator A eta).toLinearMap).re <
+      1 := by
+  exact
+    (finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_le_closed_bound_of_finiteE_root
+      hA heta hz hroot).trans_lt
+        (eta_div_sqrt_eta_sq_add_height_sq_lt_one heta hz)
+
 /-- Canonical end-to-end strict residual-inner bound.  Its only root data are
 the size and common positive height of the canonical influence core. -/
 theorem norm_lowerRootInnerValue_lt_closed_bound_of_canonicalInsideCore
@@ -192,12 +378,11 @@ theorem norm_lowerRootInnerValue_lt_closed_bound_of_canonicalInsideCore
       a0 ≤ alpha.im) :
     ‖lowerRootInnerValue (finiteEPolynomial A eta) z‖ <
       eta / Real.sqrt (eta ^ 2 + a0 ^ 2) := by
-  exact norm_lowerRootInnerValue_lt_closed_bound_of_insideCore
+  apply norm_lowerRootInnerValue_lt_closed_bound_of_canonicalProduct
     hA heta ha0 hz hroot
-    (realPolynomial_roots_eq_real_add_conjugatePairs A)
-    (realPolynomialRealRootMultiset_im_eq_zero A)
-    (realPolynomialUpperRootMultiset_im_pos A)
-    hcard hminHeight
+  exact
+    canonicalInsideInfluenceDiskRootPseudoHyperbolicProduct_lt_threshold_of_finiteE_root
+      hA heta ha0 hz hroot hcard hminHeight
 
 /-- Canonical end-to-end finite Hardy determinant bound.  No arbitrary root
 enumeration or qualitative root-decomposition premise remains. -/
@@ -213,13 +398,12 @@ theorem
         (LinearMap.det
           (finiteHardyCrossAngleComplementGramOperator A eta).toLinearMap).re <
       eta / Real.sqrt (eta ^ 2 + a0 ^ 2) := by
-  exact
-    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_closed_bound_of_insideCore
+  apply
+    finiteHardyCrossAngleComplementGramOperator_sqrt_det_re_lt_closed_bound_of_canonicalProduct
       hA heta ha0 hz hroot
-      (realPolynomial_roots_eq_real_add_conjugatePairs A)
-      (realPolynomialRealRootMultiset_im_eq_zero A)
-      (realPolynomialUpperRootMultiset_im_pos A)
-      hcard hminHeight
+  exact
+    canonicalInsideInfluenceDiskRootPseudoHyperbolicProduct_lt_threshold_of_finiteE_root
+      hA heta ha0 hz hroot hcard hminHeight
 
 /-- At every upper root of a positive finite homotopy, either the canonical
 core is exactly the unresolved singleton case or the complete finite Hardy
