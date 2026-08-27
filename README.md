@@ -302,8 +302,8 @@ current checked state, not a list of conjectural steps.
   this bound whenever all unused roots lie at least `R` from the observation
   point, and an asymptotic squeeze theorem proves its convergence to zero
   whenever that degree-weighted envelope tends to zero. This isolates the
-  still-unproved global root-localization premise rather than deriving it
-  incorrectly from locally uniform convergence.
+  global root-localization premise used by the later radial construction
+  rather than deriving it incorrectly from locally uniform convergence.
 - Degree is now tracked through the actual xi construction. Taylor
   truncation, affine root pinning, cubic degree lifting, and the separable
   quadratic perturbation produce the same canonical Hardy reductio sequence
@@ -312,8 +312,9 @@ current checked state, not a list of conjectural steps.
   root multiset, so expanding windows are not restricted to a fixed number of
   clusters. Lean proves that if every unused root is at least `√n` from the
   observation point, its complete fixed-time remainder tends to zero. The
-  remaining task is to construct expanding genuine-xi cluster multisets and
-  prove that localization premise for this controlled sequence.
+  later zero-free radial-circle construction supplies a stronger expanding
+  selection and discharges this localization premise for the scheduled
+  sequence; identifying the selected heat with the complete xi heat remains.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -438,8 +439,8 @@ this with the fast separability construction gives actual separable,
 exact-root polynomials of degree at most `max n 3` converging uniformly to
 spectral xi on those expanding disks. Under `¬RH`, Lean proves that one common
 positive homotopy parameter and upper-half-plane root make every member of
-this sequence a canonical finite Hardy frontier. The immediate open step is
-now quantitatively prepared rather than merely qualitative: canonical
+this sequence a canonical finite Hardy frontier. That construction is now
+fed into a quantitative radial passage: canonical
 factorization, zero separation, and the Jensen multiplicity bound give one
 `C > 0` such that spectral xi is at least
 `exp(-C * exp(5 * Tₙ))` on all four sides of every selected expanding
@@ -470,12 +471,17 @@ genuine radial divisor. Consequently the xi circle integral is proved equal
 to that finite divisor count times `2*pi*i`. Combining this identity with the
 scheduled Rouché theorem shows, at every stage under `¬RH`, that the canonical
 finite Hardy polynomial has exactly the genuine xi divisor multiplicity
-inside its selected expanding circle. The immediate open step is to package
-the enclosed root multiset itself and feed the resulting outside-radius
-localization into the existing degree-weighted Gaussian tail theorem.
-Proper-time endpoint control is a separate subsequent requirement. A global
-logarithmic-derivative or arithmetic evaluation of the complete sum is the
-later rigidity target.
+inside its selected expanding circle. Lean now selects the literal upper-root
+multiset inside that circle and proves every complementary occurrence is at
+least `rₙ - ‖z‖` from any fixed observation point. The scheduled degree is at
+most a fixed multiple of `exp(5*rₙ)`, which the quadratic Gaussian beats at
+every fixed positive proper time. Thus the outside-root heat tends to zero,
+and the complete upper-polynomial heat differs from the literal inside-circle
+heat by a vanishing term. The immediate open step is to identify the varying
+inside-circle heat with the complete spectral-xi heat sum using the local
+divisor transport already proved. Proper-time endpoint control is a separate
+subsequent requirement. A global logarithmic-derivative or arithmetic
+evaluation of the complete sum is the later rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -600,6 +606,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   proves the compact-complement root partition, identifies the xi circle
   integral with the genuine radial divisor, and gives the scheduled canonical
   Hardy sequence that has exactly this enclosed multiplicity at every stage.
+- [`RiemannGaussian/FiniteToEntireRadialHeatTail.lean`](RiemannGaussian/FiniteToEntireRadialHeatTail.lean)
+  selects the literal roots inside each scheduled circle, proves every unused
+  upper root lies outside it, and shows their complete fixed-time heat tends
+  to zero because the quadratic Gaussian beats the exponential degree bound.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
