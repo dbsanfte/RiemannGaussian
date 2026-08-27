@@ -224,6 +224,15 @@ current checked state, not a list of conjectural steps.
   compact positive-time limiting passages for this same sequence are now
   formalized below; only uniform control at the two improper endpoints remains
   open.
+- Lean now makes that endpoint obstruction quantitative. Every compact
+  positive-time action is at most the complete finite logarithmic heat mass,
+  so their difference is a genuine nonnegative endpoint defect. Under
+  `¬RH`, along the same canonical sequence and on every fixed compact
+  interval, this defect eventually retains the uniform Hardy mass lower bound
+  minus the limiting spectral-xi compact action and an arbitrary positive
+  error. Thus no mass can disappear in the already-controlled interior: any
+  contradiction must come from ruling out escape through proper time zero or
+  infinity.
 - At each fixed positive proper time, Lean now constructs the complete
   multiplicity-counted upper spectral-xi heat sum and proves its absolute
   convergence from the unconditional Gaussian zero bound. Every coefficient
@@ -531,8 +540,14 @@ interval-integrable there. Under `¬RH`, the same canonical sequence now
 simultaneously carries the fixed positive total-mass lower bound and this
 compact-action convergence. Hence any surviving finite Hardy defect must
 escape through `t -> 0` or `t -> infinity`; there is no longer an unformalized
-interior proper-time gap. A global logarithmic-derivative or arithmetic
-evaluation of the complete sum is the subsequent rigidity target.
+interior proper-time gap. Lean now defines that missing endpoint mass as a
+nonnegative defect and proves an exact eventual lower bound for it under
+`not RH`: on every compact interval it retains the fixed finite Hardy lower
+bound minus the limiting spectral-xi compact action, up to any prescribed
+positive error. The immediate analytic task is therefore sharply separated
+into small-time and large-time endpoint estimates. A global
+logarithmic-derivative or arithmetic evaluation of the complete sum is the
+subsequent rigidity target.
 
 Neither frontier is assumed. Closing the Gaussian positivity statement, or
 completing the finite-to-xi Hardy route, is the RH-level part of the project.
@@ -688,6 +703,10 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   dominated convergence to identify every compact proper-time polynomial
   action with the corresponding complete spectral-xi heat integral, leaving
   only the endpoints `0` and `infinity` open.
+- [`RiemannGaussian/FiniteToEntireProperTimeEscape.lean`](RiemannGaussian/FiniteToEntireProperTimeEscape.lean)
+  proves compact actions are bounded by complete finite mass, defines the
+  nonnegative endpoint defect, and gives its exact eventual lower bound along
+  the canonical `¬RH` sequence.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
