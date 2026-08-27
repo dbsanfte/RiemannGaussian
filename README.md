@@ -167,7 +167,9 @@ current checked state, not a list of conjectural steps.
   `#real + 2 * #upper = degree` and proves that the upper multiset has no
   repetitions whenever the polynomial is separable. Thus the qualitative
   root-decomposition premises of the finite Hardy estimates are discharged
-  canonically; quantitative control of those roots remains open.
+  canonically. The complete product, residual-inner, and determinant
+  conclusions are now stated directly for this canonical influence core, so
+  only its quantitative cardinality and positive height floor remain open.
 - The separability gap for root-pinned approximants is now closed. Lean
   constructs explicit quadratic and cubic perturbations in the kernel of
   homotopy evaluation at the prescribed root. A nonzero Wronskian reduces
@@ -275,6 +277,8 @@ completing the finite-to-xi Hardy route, is the RH-level part of the project.
   constructs the locally uniform real Taylor approximants to spectral xi.
 - [`RiemannGaussian/FiniteRealRootDecomposition.lean`](RiemannGaussian/FiniteRealRootDecomposition.lean)
   canonically decomposes every real polynomial root multiset with multiplicity.
+- [`RiemannGaussian/FiniteHardyCanonicalConclusion.lean`](RiemannGaussian/FiniteHardyCanonicalConclusion.lean)
+  specializes the complete finite Hardy chain to that canonical root multiset.
 - [`RiemannGaussian/FiniteToEntireSeparableApproximation.lean`](RiemannGaussian/FiniteToEntireSeparableApproximation.lean)
   constructs separable root-pinned approximants converging to spectral xi.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
