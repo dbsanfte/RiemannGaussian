@@ -198,10 +198,18 @@ current checked state, not a list of conjectural steps.
   convolution of that derivative is exactly `-i` times the resolvent mode, so
   every coordinate of the finite RH-detecting Hilbert vector is a proved
   height-weighted convolution of the derivative of Suzuki's coefficient. This
-  is a coefficient-level bridge: Suzuki's unconditional arithmetic `L²`
-  function `S_t`, its explicit `P_t`, its zero functions, and the full
-  expansion/Gram comparison still need to be formalized before an arithmetic
-  growth estimate can cross the bridge.
+  is the coefficient-level bridge into Suzuki's construction.
+- The finite zero-function layer of Suzuki's expansion is now formalized too.
+  Lean defines the actual spectral-xi functions `E_xi`, `E_xi^sharp`, and
+  `Theta_xi`; proves real-axis unimodularity wherever the quotient is defined;
+  installs the published square-root multiplicity normalization; and proves
+  the exact finite genuine-zero version of equation (3.6). Finite `P_t` and
+  `S_t` windows vanish at time zero and differentiate term by term to the raw
+  screw modes. This does not silently totalize the analytic gap: the canonical
+  holomorphic values at removable points, the full arithmetic formula for
+  `P_t`, unconditional `L²` membership of `S_t`, the infinite expansion, and
+  the off-RH Gram comparison remain to be proved before an arithmetic growth
+  estimate can cross the bridge.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
