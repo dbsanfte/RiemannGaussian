@@ -376,6 +376,14 @@ current checked state, not a list of conjectural steps.
   part, and the upper divisor Cauchy sum. Thus the remaining rigidity theorem
   must defeat a persistent lower bound on named finite analytic quantities,
   or rule out the alternative of unbounded polynomial height mass.
+- Lean now separates the two terms in that finite analytic lower bound. Under
+  `not RH`, one of three rigorously quantified behaviors must occur: the exact
+  xi reflection residual is at least one quarter of the normalized threshold
+  along arbitrarily late windows; the Blaschke cancellation gap is at least
+  one quarter of that threshold in every sufficiently large window; or the
+  canonical polynomial upper-height masses are unbounded. This is the current
+  rigidity trichotomy: a proof of RH must eliminate all three branches, not
+  assume that divisor-product cancellation disappears.
 - The connection to the actual spectral-xi logarithmic derivative is now
   formalized at every finite window without dropping an entire-function
   term. Lean decomposes `xi'/xi` exactly into the genuine multiplicity-
@@ -992,6 +1000,9 @@ RH-level part of the project.
   exhausts a positive complete variation threshold through finite windows and
   forces half of it into the exact xi reflection residual plus the explicit
   finite Blaschke cancellation gap at every sufficiently large window.
+- [`RiemannGaussian/FiniteToEntireBlaschkeRigidityTrichotomy.lean`](RiemannGaussian/FiniteToEntireBlaschkeRigidityTrichotomy.lean)
+  separates that sum into a frequently-large xi residual, an eventually-large
+  Blaschke cancellation gap, or unbounded canonical polynomial height mass.
 - The `GramWeil*` files contain the abstract block defect, inertia, and metric
   pencil theory.
 - [`RiemannGaussian.lean`](RiemannGaussian.lean) is the umbrella module built
