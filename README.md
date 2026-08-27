@@ -125,7 +125,11 @@ current checked state, not a list of conjectural steps.
   embedded norm of the complete boundary Blaschke logarithmic derivative.
   The fixed-time residue construction and integrated action therefore meet
   by a checked identity; the remaining problem is to force this common
-  positive invariant to vanish.
+  positive invariant to vanish. The complex residue series itself is now
+  carried through the boundary limit too: every term remains explicitly the
+  local heat-weighted residue of `logDeriv riemannXiSpectral`, its complete
+  normalized series converges to the embedded boundary heat total, and that
+  complex total vanishes exactly under RH.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
