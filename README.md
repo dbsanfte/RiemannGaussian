@@ -53,8 +53,12 @@ current checked state, not a list of conjectural steps.
   A checked dyadic-shell argument then proves unconditional convergence of
   both `sum_rho m(rho)/(1+norm(rho)^2)` and
   `sum_rho m(rho)/(1+gamma(rho)^2)`, where `gamma` is the real spectral
-  coordinate. The next step is to use this convergence to prove the complete
-  Poisson, logarithmic-defect, and Blaschke-variation masses finite.
+  coordinate. This convergence now proves that the complete Poisson mass is
+  finite at every upper observation point, and that the logarithmic
+  proper-time action is finite at every noncolliding upper point. The complete
+  elementary Blaschke derivative variation is finite as well. Each extended
+  mass is identified with the embedding of an actually convergent real
+  series, so the frontier no longer hides a possible infinite value.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -816,6 +820,10 @@ RH-level part of the project.
   partitions the xi divisor into dyadic norm shells and proves unconditional
   multiplicity-weighted inverse-square summability in both the complex norm
   and spectral ordinate.
+- [`RiemannGaussian/GaussianXiCompleteMassFiniteness.lean`](RiemannGaussian/GaussianXiCompleteMassFiniteness.lean)
+  applies inverse-square summability to prove the complete Poisson,
+  logarithmic heat-action, and Blaschke-variation masses finite and realizes
+  them as convergent nonnegative real series.
 - [`RiemannGaussian/GaussianPositivityCertificate.lean`](RiemannGaussian/GaussianPositivityCertificate.lean)
   contains the scalable certificate soundness and cofinal-width reductions.
 - [`RiemannGaussian/SuzukiTransportBarrier.lean`](RiemannGaussian/SuzukiTransportBarrier.lean)
