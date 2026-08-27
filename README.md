@@ -86,9 +86,12 @@ current checked state, not a list of conjectural steps.
   transports the family to a complete basis of the actual negative Hardy
   subspace, without a separability hypothesis. Multiplication by the residual
   inner function is now proved, for every negative-model coordinate at once,
-  to land in the orthogonal complement of the entire positive model. The
-  Sylvester projection decomposition, triangular residual law, and determinant
-  are the remaining confluent steps.
+  to land in the orthogonal complement of the entire positive model. The exact
+  Sylvester numerator decomposition is also proved to be the genuine boundary
+  `L²` orthogonal-projection decomposition, so its first coordinate is exactly
+  the Hardy projection residual before the isometric inner multiplier. The
+  triangular residual-coordinate law and its determinant are the remaining
+  confluent steps.
 - The abstract Gram--Weil block defect and metric-pencil algebra are checked,
   including exact finite-dimensional inertia and the complete one-pair model.
 - For an even polynomial containing one symmetric off-axis quartet, Lean
@@ -147,9 +150,8 @@ The one-quartet finite theory and its real/Herglotz background are formalized.
 The unequal-height finite hyperbolic optimization and its exact-polynomial
 inside-core specialization are now formalized, as is the higher-index Hardy
 determinant formula conditional on a complete root Cauchy basis. The immediate
-frontier is to turn the exact Sylvester numerator decomposition into the actual
-orthogonal projection decomposition, then prove the triangular residual law
-for the now-checked complete boundary confluent basis and derive its
+frontier is to prove the triangular law for the now-identified Sylvester
+residual coordinate on the complete boundary confluent basis and derive its
 determinant. It must then be joined to the structural inside-core selection.
 Beyond that lies the genuinely analytic passage from finite polynomial models
 to the entire xi function.
