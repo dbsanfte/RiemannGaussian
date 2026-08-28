@@ -63,11 +63,11 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
-    label := "Critical eta negative log sublinear"
-    lineOne := "critical eta log⁻"
+    label := "Critical zeta negative log sublinear"
+    lineOne := "critical zeta log⁻"
     lineTwo := "o(T)"
     theoremName :=
-      ``RiemannGaussian.tendsto_pairedEtaCore_critical_log_negativePart_div_quantitative_zero
+      ``RiemannGaussian.tendsto_criticalZeta_log_negativePart_div_quantitative_zero
   }
 ]
 
@@ -132,7 +132,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
       "aria-labelledby=\"title description\" viewBox=\"0 0 1000 235\">\n" ++
     "  <title id=\"title\">Lean-verified RiemannGaussian proof status</title>\n" ++
     "  <desc id=\"description\">Two verified proof branches meet at the open " ++
-      "large-height rigidity frontier before the Riemann hypothesis.</desc>\n" ++
+      "Hardy and heat-defect rigidity frontier before the Riemann hypothesis.</desc>\n" ++
     "  <defs>\n" ++
     "    <marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" " ++
       "markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n" ++
@@ -172,15 +172,15 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     nodes ++
     "  <g class=\"open\">\n" ++
     "    <rect x=\"600\" y=\"108\" width=\"170\" height=\"62\" rx=\"10\"/>\n" ++
-    "    <text x=\"685\" y=\"133\">large-height rigidity</text>\n" ++
+    "    <text x=\"685\" y=\"133\">Hardy/heat rigidity</text>\n" ++
     "    <text x=\"685\" y=\"153\">OPEN</text>\n" ++
     "  </g>\n" ++
     "  <g class=\"goal\">\n" ++
     "    <rect x=\"815\" y=\"114\" width=\"145\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"887\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Current target: negative " ++
-      "part of log |zeta| is o(T_n) on the selected heights.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Current target: force the " ++
+      "positive Hardy/heat defect to vanish.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -243,10 +243,10 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
-      ("label", .str "Uniform large-height rigidity"),
+      ("label", .str "Positive Hardy/heat rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "The negative part of critical-line log |zeta| is o(T_n) on the selected heights")
+        "Force the positive RH-detecting Hardy/heat defect to vanish")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

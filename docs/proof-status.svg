@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description" viewBox="0 0 1000 235">
   <title id="title">Lean-verified RiemannGaussian proof status</title>
-  <desc id="description">Two verified proof branches meet at the open large-height rigidity frontier before the Riemann hypothesis.</desc>
+  <desc id="description">Two verified proof branches meet at the open Hardy and heat-defect rigidity frontier before the Riemann hypothesis.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b949e"/>
@@ -21,7 +21,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-verified proof frontier</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 251 modules · 6813 declarations · 5820 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 252 modules · 6823 declarations · 5830 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <path class="edge" d="M165 102 H187"/>
   <path class="edge" d="M335 102 H357"/>
@@ -62,18 +62,18 @@
   </g>
   <g class="proved">
     <rect x="360" y="155" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.tendsto_pairedEtaCore_critical_log_negativePart_div_quantitative_zero</title>
-    <text x="432" y="178">critical eta log⁻</text>
+    <title>RiemannGaussian.tendsto_criticalZeta_log_negativePart_div_quantitative_zero</title>
+    <text x="432" y="178">critical zeta log⁻</text>
     <text x="432" y="196">o(T)  ✓</text>
   </g>
   <g class="open">
     <rect x="600" y="108" width="170" height="62" rx="10"/>
-    <text x="685" y="133">large-height rigidity</text>
+    <text x="685" y="133">Hardy/heat rigidity</text>
     <text x="685" y="153">OPEN</text>
   </g>
   <g class="goal">
     <rect x="815" y="114" width="145" height="50" rx="9"/>
     <text x="887" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Current target: negative part of log |zeta| is o(T_n) on the selected heights.</text>
+  <text class="frontier" x="20" y="220">Current target: force the positive Hardy/heat defect to vanish.</text>
 </svg>
