@@ -20,18 +20,18 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now proves the integrated static-boundary bridge on every compact safe
-height segment `[a,b]` with `1 < a ≤ b`. The normalized paired horizontal
-boundary action converges to the complete Blaschke detector action, and Lean
-identifies that action exactly as
+Lean now proves the unconditional large-height estimate
 
-`complete defect at ia − complete defect at ib`.
+`complete defect at iy / y → 0`.
 
-The remaining obstruction is therefore genuinely at infinite height: control
-the large-height complete defect and derive arithmetic or entire-function
-rigidity forcing the height-one RH detector to vanish. No cutoff/height limit
-interchange is assumed. This is an RH-strength step; the repository is not yet
-a proof of RH.
+It also connects this estimate to the actual paired static-boundary action in
+the correct limit order: at each fixed upper height Lean first removes the
+quantitative contour cutoff, and only then proves that the complete action has
+vanishing height-average. No cutoff/height limit interchange is assumed.
+
+The remaining obstruction is unscaled rigidity: sublinear escape alone does
+not prove that the endpoint defect tends to zero or force its height-one
+RH-detecting value to vanish. The repository is not yet a proof of RH.
 
 ## Mathematical Program
 
@@ -47,8 +47,8 @@ The development joins two lines of attack:
 
 Finite Hardy spaces, Blaschke products, Pick matrices, Gram determinants,
 root-count transport, and finite-to-entire limit theory provide the supporting
-formal infrastructure. The branches now meet at the large-height rigidity
-problem shown in the generated panel.
+formal infrastructure. The branches now meet at the unscaled large-height
+rigidity problem shown in the generated panel.
 
 ## Repository Structure
 

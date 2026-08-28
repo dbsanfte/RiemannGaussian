@@ -10,11 +10,12 @@ rigorous chain to that target.
 
 The proof is not complete. The generated dashboard in
 `docs/proof-status.svg` is the canonical compact status summary. At present,
-the Gaussian/Weil and Suzuki/contour branches reach a common large-height
-safe-axis arithmetic-rigidity frontier. The missing theorem must control the
-complete defect at infinite observation height and force its height-one
-RH-detecting value to vanish; a restatement, hidden limit interchange, or
-conditional implication is not a substitute.
+the Gaussian/Weil and Suzuki/contour branches prove sublinear large-height
+escape for the complete safe-axis defect and reach a common unscaled
+arithmetic-rigidity frontier. The missing theorem must upgrade that estimate
+to control strong enough to force the height-one RH-detecting value to vanish;
+a restatement, hidden limit interchange, or conditional implication is not a
+substitute.
 
 ## Soundness invariant
 

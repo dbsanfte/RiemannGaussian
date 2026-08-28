@@ -63,11 +63,11 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
-    label := "Integrated static boundary action equals the complete defect drop"
-    lineOne := "boundary action"
-    lineTwo := "defect drop"
+    label := "Static boundary mean has sublinear large-height escape"
+    lineOne := "safe-axis mean"
+    lineTwo := "action -> 0"
     theoremName :=
-      ``RiemannGaussian.staticBoundarySafeAxisAction_tendsto_completeDetector_and_eq_completeDefectDrop
+      ``RiemannGaussian.staticBoundarySafeAxisAction_iteratedMeanVanishes
   }
 ]
 
@@ -131,8 +131,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
   "<svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" " ++
       "aria-labelledby=\"title description\" viewBox=\"0 0 1000 235\">\n" ++
     "  <title id=\"title\">Lean-verified RiemannGaussian proof status</title>\n" ++
-    "  <desc id=\"description\">Two verified proof branches meet at the open " ++
-      "large-height safe-axis rigidity frontier before the Riemann hypothesis.</desc>\n" ++
+    "  <desc id=\"description\">Two verified proof branches establish sublinear " ++
+      "safe-axis escape and meet at the open unscaled large-height rigidity frontier.</desc>\n" ++
     "  <defs>\n" ++
     "    <marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" " ++
       "markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n" ++
@@ -172,15 +172,15 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     nodes ++
     "  <g class=\"open\">\n" ++
     "    <rect x=\"600\" y=\"108\" width=\"170\" height=\"62\" rx=\"10\"/>\n" ++
-    "    <text x=\"685\" y=\"133\">large-height rigidity</text>\n" ++
+    "    <text x=\"685\" y=\"133\">unscaled-height rigidity</text>\n" ++
     "    <text x=\"685\" y=\"153\">OPEN</text>\n" ++
     "  </g>\n" ++
     "  <g class=\"goal\">\n" ++
     "    <rect x=\"815\" y=\"114\" width=\"145\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"887\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Current target: force the " ++
-      "height-one safe-axis RH defect to vanish.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Current target: upgrade " ++
+      "sublinear escape to unscaled rigidity and force the height-one defect to vanish.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -243,10 +243,10 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
-      ("label", .str "Large-height safe-axis rigidity"),
+      ("label", .str "Unscaled large-height safe-axis rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Control the complete defect at infinite height and force its height-one value to vanish")
+        "Upgrade sublinear defect escape to unscaled decay and force its height-one value to vanish")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
