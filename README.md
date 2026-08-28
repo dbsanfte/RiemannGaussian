@@ -20,21 +20,22 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-The latest checked slice replaces the fractional-power Mellin estimate by an
-exact logarithmic optimization and proves unconditional
-`|xi(z)| ≤ exp(O(R log R))`, where `R = |z| + 1`. Jensen's inequality then
-gives an `O(R log R)` centered-disk count of xi zeros with multiplicity. This
-strictly improves the previous `exp(O(R^(3/2)))` growth and `O(R^(3/2))`
-counting bounds.
+The latest checked slice propagates the unconditional
+`|xi(z)| ≤ exp(O(R log R))` bound through Jensen zero counting, quantitative
+endpoint separation, and the zero-free canonical residual. It obtains an
+explicit critical-endpoint lower floor of the form
+`exp(-O(T_n log^2 T_n))`. Lean then proves, for every fixed `epsilon > 0`,
 
-The existing endpoint chain proves
-`max(0, -log |ζ(1/2 + iT_n)|) / (T_n + 1)^2 → 0`. The next checked step is to
-propagate the new log-linear growth and zero count through the quantitative
-separation and canonical-product estimates; that should sharpen the explicit
-negative-log majorant to near-linear scale. The open target remains
-`max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0`, after which the broader rigidity
-argument must force the positive Hardy/heat defect to vanish. This repository
-is not yet a proof of RH.
+`max(0, -log |ζ(1/2 + iT_n)|) / (T_n + 1)^(1 + epsilon) → 0`.
+
+Thus the checked negative-log normalization has advanced from a fixed square
+to every power strictly above one. The open target remains the genuinely
+subexponential estimate
+`max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0`: the remaining gap is now
+logarithmic, and closing it requires cancellation or rigidity beyond radial
+growth and pointwise zero separation. The broader argument must then force
+the positive Hardy/heat defect to vanish. This repository is not yet a proof
+of RH.
 
 ## Mathematical Program
 
