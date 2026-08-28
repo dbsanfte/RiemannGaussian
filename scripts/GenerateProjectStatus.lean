@@ -63,11 +63,11 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
-    label := "Critical zeta upper growth eliminated"
+    label := "Critical zeta lower growth subquadratic"
     lineOne := "critical zeta"
-    lineTwo := "upper growth gone"
+    lineTwo := "lower subquad."
     theoremName :=
-      ``RiemannGaussian.tendsto_neg_I_mul_xiSpectralBlaschkeSignedVerticalRemainderWindow_zero_imaginary_add_criticalZeta_log_negativePart_main_quantitative_zero
+      ``RiemannGaussian.tendsto_criticalZeta_log_negativePart_div_quantitative_sq_zero
   }
 ]
 

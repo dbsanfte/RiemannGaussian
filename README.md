@@ -20,17 +20,18 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-The latest checked maintenance slice removes the six disconnected
-`Eps004*`, `Eps005*`, and `Eps006*` calibration modules. No frontier theorem
-depended on them. The compiled project now contains zero project-defined
-axioms, and the Lean-derived status gate rejects any future project axiom.
+The latest checked slice retains xi's proved three-halves global growth in the
+canonical-product argument and obtains an explicit critical-endpoint lower
+floor of the form `exp(-O(T_n^(3/2) log T_n))`. Lean then proves
+`max(0, -log |ζ(1/2 + iT_n)|) / (T_n + 1)^2 → 0` on the selected nonzero
+endpoints. Together with the existing upper-log estimate, this replaces the
+previous double-exponential lower control by a rigorous subquadratic
+negative-log theorem.
 
-The active verified frontier constructs the paired eta series on `Re(s) > 0`
-and proves `|ζ(1/2 + iT)| ≤ 3 M |1/2 + iT|` for a fixed finite mass `M`.
-Thus the positive part of `log |ζ(1/2 + iT_n)| / T_n` tends to zero on the
-selected nonzero endpoints. The immediate open estimate is the corresponding
-subexponential lower bound,
-`max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0`; the broader rigidity problem must
+The immediate open estimate is still the stronger subexponential lower bound
+`max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0`. The remaining half-power gap cannot
+be closed by the current global-growth and zero-separation estimates alone;
+it requires new cancellation or rigidity. The broader rigidity problem must
 then force the positive Hardy/heat defect to vanish. This repository is not
 yet a proof of RH.
 
