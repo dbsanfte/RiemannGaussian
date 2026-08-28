@@ -546,6 +546,15 @@ current checked state, not a list of conjectural steps.
   genuine spectral windows converge in boundary `L²`, with an explicit norm
   bound by the complete coefficient vector. No witness is proved yet; its
   construction is the current new-mathematics problem.
+- A concrete Schur route to that witness is now formalized. Lean proves the
+  finite symmetric Schur inequality and applies it to the genuine boundary
+  Gram kernel: a uniform absolute row bound, or a complete summable-row bound,
+  implies the required Bessel estimate. Each Gram entry is also identified
+  exactly with the Lebesgue integral of the two literal normalized zero
+  functions, and Cauchy--Schwarz is recorded. Conversely, any Bessel witness
+  must uniformly bound the norm of every individual zero function. The Schur
+  row estimate itself remains open, and cancellation-sensitive alternatives
+  may be weaker than absolute row summability.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1093,9 +1102,12 @@ The genuine symmetric coefficient windows now also converge unconditionally
 in `ℓ²`, with an exact truncation-error identity. The sufficient bounded
 zero-function synthesis estimate has now been stated exactly, proved
 equivalent to a uniform finite Gram bound, and proved to imply quantitative
-boundary-`L²` convergence. What remains is to prove that estimate (or a
-weaker direct estimate for the Suzuki coefficient path), then identify the
-resulting limit with the arithmetic signal or compare its norm directly with
+boundary-`L²` convergence. A sufficient absolute-Gram Schur condition and its
+complete row-sum form are now formally connected to that estimate, with the
+Gram entries reduced to explicit boundary integrals. What remains is to prove
+one of those row bounds, find a cancellation-sensitive weaker Gram estimate,
+or prove a direct estimate for the Suzuki coefficient path; then the resulting
+limit must be identified with the arithmetic signal or compared directly with
 the reflected-height Gaussian invariant. That infinite comparison remains
 genuinely new mathematics; it is not inferred from safe-half-plane pointwise
 equality. This is the step needed to force the Gaussian epsilon-positivity
