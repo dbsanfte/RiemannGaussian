@@ -402,6 +402,19 @@ current checked state, not a list of conjectural steps.
   closed without a residual contour hypothesis. The next frontier is to
   extract new rigidity or positivity consequences from this exact
   arithmetic--spectral identity; the identity itself does not prove RH.
+- The first consequences of that closed identity are now transported in
+  Lean. At `z = i`, the arithmetic formula is literally the previously
+  constructed coefficient-space `ℓ²` inner product and inherits its exact
+  Cauchy--Schwarz bound. Spatial differentiation gives the absolutely
+  convergent complete double-pole zero series. Lean then justifies a further
+  real-time derivative term by term on a unit neighborhood: the square
+  Cauchy denominator supplies a uniform inverse-square divisor majorant, so
+  no convergence of the harder undifferentiated raw screw series is assumed.
+  At `z = i` the result is the complete absolutely convergent
+  square-resolvent raw screw series. The new frontier is to extract control
+  of the positive upper-height Gram component from this arithmetic scalar
+  observable; cancellation in the scalar series is not silently identified
+  with positivity.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
