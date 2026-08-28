@@ -878,9 +878,13 @@ current checked state, not a list of conjectural steps.
   boundary integral of the actual Suzuki-weighted spectral-xi logarithmic
   derivative is exactly `-2*pi` times the upper restricted finite `P_t`
   window. Its top edge `Im=1` lies in the arithmetic safe half-plane. The
-  next contour tasks are the reflected lower rectangle, their signed
-  combination, and estimates permitting the finite contour to approach the
-  real boundary and expand to infinity.
+  reflected lower rectangle is now proved with the same `eta`, using
+  critical-line conjugation to separate its poles. Subtracting the two actual
+  contour integrals gives exactly `-2*pi` times the signed upper-minus-lower
+  Suzuki response. Its actual screw-time derivative at zero is therefore
+  `-2*pi*(-i)` times the finite Blaschke logarithmic derivative. The remaining
+  contour task is quantitative: control the inner horizontal and vertical
+  sides as the inner lines approach the real boundary and the window expands.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
@@ -1574,11 +1578,15 @@ multiplicity exactly, and the upper/lower residue sums equal the prior
 restricted responses. This removes the algebraic-projection ambiguity. Lean
 now also performs the first global deformation: a positive-bottom rectangle
 with top edge on `Im=1` recovers the upper restricted window directly from
-the actual transformed spectral-xi logarithmic derivative. The remaining
-arithmetic-projection frontier is to build and combine the reflected lower
-rectangle, then control the bottom and vertical sides as the bottom approaches
-the real axis and the spectral window grows, using the proved arithmetic
-safe-line, real-axis, and vertical estimates.
+the actual transformed spectral-xi logarithmic derivative. Critical-line
+conjugation proves that the same bottom height separates the lower divisor,
+and the reflected lower rectangle recovers the lower restricted window.
+Their oriented difference is now the signed response itself, up to the exact
+factor `-2*pi`, and differentiating this contour-defined function at time zero
+recovers the finite Blaschke detector. The remaining arithmetic-projection
+frontier is quantitative control of the inner horizontal and vertical sides
+as the inner contours approach the real axis and the spectral window grows,
+using the proved arithmetic safe-line, real-axis, and vertical estimates.
 The isolated real-node remainder is the parallel boundary task. Lean proves
 that these two vanishing statements together recover the prior
 Cayley-weighted tail condition and hence the original coefficient-tail Gram
