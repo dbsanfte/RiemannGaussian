@@ -20,22 +20,22 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-The latest checked slice propagates the unconditional
-`|xi(z)| ≤ exp(O(R log R))` bound through Jensen zero counting, quantitative
-endpoint separation, and the zero-free canonical residual. It obtains an
-explicit critical-endpoint lower floor of the form
-`exp(-O(T_n log^2 T_n))`. Lean then proves, for every fixed `epsilon > 0`,
+The latest checked slice replaces global radial zero counting by a fixed disk
+that moves with the endpoint. It applies Jensen's inequality to the paired
+Dirichlet eta function centered at `3/2 + iT`: Lean proves a linear outer-disk
+bound, a uniform positive lower bound at the safe center, and the explicit
+multiplicity count
 
-`max(0, -log |ζ(1/2 + iT_n)|) / (T_n + 1)^(1 + epsilon) → 0`.
+`N_eta(T) ≤ log(C * (T + 4)) / log(10 / 9)`.
 
-Thus the checked negative-log normalization has advanced from a fixed square
-to every power strictly above one. The open target remains the genuinely
-subexponential estimate
-`max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0`: the remaining gap is now
-logarithmic, and closing it requires cancellation or rigidity beyond radial
-growth and pointwise zero separation. The broader argument must then force
-the positive Hardy/heat defect to vanish. This repository is not yet a proof
-of RH.
+Consequently `N_eta(T_n) / T_n → 0` on the quantitative contour sequence.
+This removes the global `O(T log T)` zero count from the prospective endpoint
+lower bound. The next unchecked step is to construct and control the local
+zero-free eta residual, including separation from genuine zeta zeros and the
+explicit eta-factor zeros. Only then will the target
+`max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0` follow. The broader argument must
+then force the positive Hardy/heat defect to vanish; this repository is not
+yet a proof of RH.
 
 ## Mathematical Program
 

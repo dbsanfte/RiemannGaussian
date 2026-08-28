@@ -63,11 +63,11 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
-    label := "Critical zeta lower growth near-linear"
-    lineOne := "critical zeta"
-    lineTwo := "lower near-linear"
+    label := "Moving local eta zero count sublinear"
+    lineOne := "local eta zeros"
+    lineTwo := "count o(T)"
     theoremName :=
-      ``RiemannGaussian.tendsto_criticalZeta_log_negativePart_div_quantitative_one_add_rpow_zero
+      ``RiemannGaussian.tendsto_sum_divisor_staticContourLocalEta_closedBall_div_quantitative_zero
   }
 ]
 
