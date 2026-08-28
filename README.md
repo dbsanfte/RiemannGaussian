@@ -20,21 +20,19 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now feeds the checked large-height endpoint estimate
-
-`max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0`
-
-into the existing static-contour asymptotic. The normalized zeta correction
-therefore vanishes, and Lean proves that for every fixed `v > 1` the selected
+Lean now strengthens the selected static-contour limit from pointwise to
+compact-uniform control. For every real interval `[a,b]` with `a > 1`, the
 zero-height signed vertical remainder satisfies
 
-`V(T_n, 0, iv) → 0`.
+`V(T_n, 0, iv) → 0` uniformly for `v ∈ [a,b]`.
 
-This removes the endpoint correction from the static boundary limit. The
-unchecked frontier is now to identify the resulting zero boundary data with
-the positive Hardy/heat defect strongly enough to force that defect to vanish.
-That rigidity theorem is the remaining hard step toward RH. This repository
-is not yet a proof of RH.
+The proof also extracts the shared normalized logarithmic-derivative boundary
+term as an explicit `o(1)` theorem. This permits bounded analytic operations
+in the observation height without assuming an exchange of limits. The open
+frontier remains a coercive transport identity or estimate connecting this
+zero static boundary data to the positive reflected-pair Gaussian/Hardy
+defect. That rigidity step is RH-strength; this repository is not yet a proof
+of RH.
 
 ## Mathematical Program
 

@@ -63,11 +63,11 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
-    label := "Static signed vertical remainder vanishes"
+    label := "Static vertical remainder vanishes locally uniformly"
     lineOne := "static vertical"
-    lineTwo := "remainder → 0"
+    lineTwo := "uniformly → 0"
     theoremName :=
-      ``RiemannGaussian.tendsto_xiSpectralBlaschkeSignedVerticalRemainderWindow_zero_imaginary_quantitative_zero
+      ``RiemannGaussian.tendstoUniformlyOn_xiSpectralBlaschkeSignedVerticalRemainderWindow_zero_imaginary_quantitative_zero
   }
 ]
 
