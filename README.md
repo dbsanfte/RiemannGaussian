@@ -24,24 +24,24 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now fixes the canonical transport tail at the first prime event,
-`base = log 2` and `start = 1`. The theorem
+Lean now proves a quantitative positive reserve at the canonical transport
+base. The theorem
 
-`suzukiPointwiseFrozenBaseSlope_logTwo_one_neg`
+`one_div_250_lt_suzukiPointwiseFrozenBaseValue_logTwo_one`
 
-proves that the resulting exact frozen slope is strictly negative. Its proof
-uses checked rational bounds for the quarter-point digamma, the complete
-positive Lerch-slope series, the elementary exponential terms, and the first
-von Mangoldt weight. The companion theorem
-`suzukiPrimeEventCut_logTwo_one` proves that cutoff one is the exact event cut.
+establishes that the literal frozen value at `base = log 2`, after freezing
+the first von Mangoldt event, is greater than `1 / 250`. The proof bounds the
+complete quarter-point digamma Euler difference by a telescoping rational
+tail and bounds the positive order-two Lerch gap from below by eighteen exact
+terms. No floating-point evaluation enters the Lean proof.
 
 Consequently,
-`riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_cumulativeTransportSurplus`
-has no normalization, event-cut, or slope-sign assumptions: it reduces
-nonnegativity of the literal arithmetic Suzuki function on the whole tail
-`t ≥ log 2` directly to its explicit cumulative transport-surplus inequalities.
-Those inequalities remain open. This result does not establish tail positivity
-or a zero-location constraint, and the repository is not yet a proof of RH.
+`riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_positiveCutoff_cumulativeTransportSurplus`
+removes cutoff zero from the assumption-free first-tail criterion. Every
+remaining obligation is a positive cutoff containing actual transported
+arithmetic mass. Those infinitely many inequalities remain open. This result
+does not establish tail positivity or a zero-location constraint, and the
+repository is not yet a proof of RH.
 
 ## Mathematical Program
 

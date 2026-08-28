@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
   },
   {
-    label := "First-tail Suzuki positivity is equivalent to cumulative transport surplus"
+    label := "First-tail Suzuki positivity is equivalent to positive-cutoff cumulative surplus"
     lineOne := "Suzuki first tail"
-    lineTwo := "tail iff surplus"
+    lineTwo := "cutoff > 0 only"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_cumulativeTransportSurplus
+      ``RiemannGaussian.riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_positiveCutoff_cumulativeTransportSurplus
   }
 ]
 
@@ -264,13 +264,13 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("rhImplied", .bool false),
     ("statusNote", .str
-      "The canonical first-tail Suzuki criterion is assumption-free, but its cumulative surplus inequalities and every RH-forcing arithmetic rigidity step remain open."),
+      "The canonical first-tail Suzuki criterion has a positive initial reserve and no base-data assumptions, but all positive-cutoff surplus inequalities and every RH-forcing rigidity step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Prove the explicit first-tail cumulative transport-surplus inequalities, or derive another unconditional zero-location constraint from xi arithmetic")
+        "Prove the explicit positive-cutoff first-tail transport-surplus inequalities by a scalable block argument, or derive another unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
