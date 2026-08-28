@@ -781,6 +781,12 @@ current checked state, not a list of conjectural steps.
   entries are their negatives, and mixed-half-plane entries are zero. The
   resulting spectral Cauchy quadratic is proved equal to the Hardy Gram
   quadratic, not introduced as a replacement assumption.
+  A checked Paley--Wiener realization then expresses the upper block as the
+  positive-half-line Gram energy of `sqrt(2)*exp(i*z*s)` and the lower block
+  as the energy of `sqrt(2)*exp(-i*z*s)`. The full off-axis quadratic is
+  exactly the sum of these two nonnegative real integrals. Its vanishing is
+  therefore equivalent to vanishing of both concrete Laplace energies; no
+  positivity or finite-sum interchange is left implicit in that statement.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
@@ -1415,6 +1421,11 @@ That quadratic is now also proved to be the explicit same-half-plane spectral
 Cauchy form `+/- 2*i/(z_sigma-conj(z_rho))`, with zero cross-half-plane block,
 so contour, entire-function, and arithmetic estimates can address it without
 an intervening Cayley-coordinate translation.
+Lean also realizes this Cauchy form as the sum of two literal positive-time
+Laplace energies of finite exponential syntheses, one for each half-plane,
+and proves that their simultaneous tail decay is equivalent to the off-axis
+Gram condition. The next analytic target can thus be phrased directly as
+decay of two explicit exponential-sum `L2(0,infinity)` energies.
 The isolated real-node remainder is the parallel boundary task. Lean proves
 that these two vanishing statements together recover the prior
 Cayley-weighted tail condition and hence the original coefficient-tail Gram
