@@ -355,10 +355,19 @@ current checked state, not a list of conjectural steps.
   positive-time Laplace integrals, proves the joint frequency/time kernel
   absolutely integrable, applies Fubini and the checked Fourier inversion
   theorem, and recovers exactly `2*pi` times the literal elementary integral.
-  The logarithmic constant vanishes by the zero-mean theorem. What remains in
-  the horizontal term is now only the cancellation-preserving digamma
-  transform, which must equal `-2*pi` times the literal Archimedean kernel
-  integral.
+  The logarithmic constant vanishes by the zero-mean theorem. The final
+  cancellation-preserving digamma transform is now closed as well. Lean
+  retains Gauss's convergent vertical-difference series, dominates every
+  weighted summand by one summable shifted `3/2` series times the integrable
+  square-root envelope, and therefore exchanges the Euler sum with the
+  frequency integral absolutely. Each resulting Cauchy mode is evaluated by
+  the proved Fourier--Laplace theorem; zero mean kills its constant part, and
+  the complete series is exactly `-2*pi` times the literal positive-time
+  Archimedean kernel integral. Thus every local factor needed on the
+  horizontal safe line has now been evaluated independently. The next step is
+  to assemble these factor identities with the completed-zeta logarithmic
+  derivative decomposition, then prove the horizontal contour limit and the
+  remaining quantified vertical-side decay.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real

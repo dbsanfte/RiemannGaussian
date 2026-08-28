@@ -987,6 +987,368 @@ theorem integral_suzukiWeilSafeLineSpectralWeight_mul_elementarySpectralTerms
     integral_suzukiWeilSafeLineSpectralWeight_eq_zero ht hz]
   ring
 
+/-! ## Gauss-series evaluation of the digamma factor -/
+
+/-- A real exponential with the `n`th Archimedean decay rate is exactly the
+Fourier exponential of Suzuki's `n`th lower-half-plane mode. -/
+theorem integral_suzukiWeilTest_mul_archimedeanRealExponential
+    {t : ℝ} (ht : 0 ≤ t) {z : ℂ}
+    (hz : z ∈ suzukiXiSafeUpperHalfPlane) (n : ℕ) :
+    (∫ x : ℝ,
+      suzukiWeilTest t z x *
+        (Real.exp (-(2 * (n : ℝ) + 1 / 2) * x) : ℂ)) =
+      suzukiWeilArchimedeanModeTerm t z n := by
+  rw [← integral_suzukiWeilArchimedeanMode ht hz n]
+  apply integral_congr_ae
+  filter_upwards with x
+  unfold suzukiWeilFourierIntegrand
+  congr 1
+  rw [Complex.ofReal_exp]
+  congr 1
+  unfold suzukiWeilArchimedeanFrequency suzukiWeilArchimedeanShift
+  push_cast
+  ring_nf
+  rw [Complex.I_sq]
+  ring
+
+/-- Each three-quarter-line Euler summand is continuous in the vertical
+frequency. -/
+theorem continuous_suzukiWeilDigammaDifferenceSummand_threeQuarter
+    (n : ℕ) :
+    Continuous (fun r : ℝ ↦
+      suzukiWeilDigammaDifferenceSummand
+        (3 / 4 + Complex.I * (r / 2)) (3 / 4) n) := by
+  unfold suzukiWeilDigammaDifferenceSummand
+  have hden : Continuous (fun r : ℝ ↦
+      (n : ℂ) + (3 / 4 + Complex.I * (r / 2))) := by
+    fun_prop
+  exact continuous_const.sub (hden.inv₀ fun r hzero ↦ by
+    have hre := congrArg Complex.re hzero
+    simp at hre
+    have hn : (0 : ℝ) ≤ n := Nat.cast_nonneg n
+    linarith)
+
+/-- One weighted Euler summand is bounded by its shifted `3/2` coefficient
+times the common integrable square-root envelope. -/
+theorem norm_suzukiWeilSafeLineSpectralWeight_mul_digammaDifferenceSummand_le
+    (t : ℝ) (z : ℂ) (r : ℝ) (n : ℕ) :
+    ‖suzukiWeilSafeLineSpectralWeight t z r *
+        (suzukiWeilDigammaDifferenceSummand
+          (3 / 4 + Complex.I * (r / 2)) (3 / 4) n / 2)‖ ≤
+      suzukiWeilThreeQuarterPSeries n *
+        ‖suzukiWeilSafeLineSpectralWeight t z r *
+          (Real.sqrt (|r| + 1) : ℂ)‖ := by
+  have hterm :=
+    norm_suzukiWeilDigammaDifferenceSummand_threeQuarter_le r n
+  rw [norm_mul, norm_div]
+  have htwo : ‖(2 : ℂ)‖ = 2 := by norm_num
+  rw [htwo]
+  have hhalf :
+      ‖suzukiWeilDigammaDifferenceSummand
+          (3 / 4 + Complex.I * (r / 2)) (3 / 4) n‖ / 2 ≤
+        Real.sqrt (|r| + 1) * suzukiWeilThreeQuarterPSeries n := by
+    have hnorm : 0 ≤
+        ‖suzukiWeilDigammaDifferenceSummand
+          (3 / 4 + Complex.I * (r / 2)) (3 / 4) n‖ := norm_nonneg _
+    linarith
+  calc
+    ‖suzukiWeilSafeLineSpectralWeight t z r‖ *
+        (‖suzukiWeilDigammaDifferenceSummand
+          (3 / 4 + Complex.I * (r / 2)) (3 / 4) n‖ / 2) ≤
+      ‖suzukiWeilSafeLineSpectralWeight t z r‖ *
+        (Real.sqrt (|r| + 1) * suzukiWeilThreeQuarterPSeries n) :=
+      mul_le_mul_of_nonneg_left hhalf (norm_nonneg _)
+    _ = suzukiWeilThreeQuarterPSeries n *
+        ‖suzukiWeilSafeLineSpectralWeight t z r *
+          (Real.sqrt (|r| + 1) : ℂ)‖ := by
+      rw [norm_mul, Complex.norm_real, Real.norm_eq_abs,
+        abs_of_nonneg (Real.sqrt_nonneg _)]
+      ring
+
+/-- Every weighted Euler summand is absolutely integrable on the safe
+frequency line. -/
+theorem integrable_suzukiWeilSafeLineSpectralWeight_mul_digammaDifferenceSummand
+    (t : ℝ) {z : ℂ} (hz : 1 < z.im) (n : ℕ) :
+    Integrable (fun r : ℝ ↦
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (suzukiWeilDigammaDifferenceSummand
+          (3 / 4 + Complex.I * (r / 2)) (3 / 4) n / 2)) := by
+  have hmajor :=
+    (integrable_suzukiWeilSafeLineSpectralWeight_mul_sqrtGrowth t hz).norm
+      |>.const_mul (suzukiWeilThreeQuarterPSeries n)
+  refine hmajor.mono' ?_ (Filter.Eventually.of_forall fun r ↦ ?_)
+  · exact ((continuous_suzukiWeilSafeLineSpectralWeight t hz).mul
+      ((continuous_suzukiWeilDigammaDifferenceSummand_threeQuarter n).div_const
+        (2 : ℂ))).aestronglyMeasurable
+  · exact
+      norm_suzukiWeilSafeLineSpectralWeight_mul_digammaDifferenceSummand_le
+        t z r n
+
+/-- The integrals of the weighted Euler summands are absolutely summable,
+so Gauss's series may be integrated term by term. -/
+theorem summable_integral_norm_suzukiWeilSafeLineSpectralWeight_mul_digammaDifferenceSummand
+    (t : ℝ) {z : ℂ} (hz : 1 < z.im) :
+    Summable (fun n : ℕ ↦ ∫ r : ℝ,
+      ‖suzukiWeilSafeLineSpectralWeight t z r *
+        (suzukiWeilDigammaDifferenceSummand
+          (3 / 4 + Complex.I * (r / 2)) (3 / 4) n / 2)‖) := by
+  let A : ℝ := ∫ r : ℝ,
+    ‖suzukiWeilSafeLineSpectralWeight t z r *
+      (Real.sqrt (|r| + 1) : ℂ)‖
+  have hbase : Summable (fun n : ℕ ↦
+      suzukiWeilThreeQuarterPSeries n * A) :=
+    summable_suzukiWeilThreeQuarterPSeries.mul_right A
+  apply hbase.of_nonneg_of_le
+  · intro n
+    exact integral_nonneg fun _ ↦ norm_nonneg _
+  · intro n
+    have hterm :=
+      integrable_suzukiWeilSafeLineSpectralWeight_mul_digammaDifferenceSummand
+        t hz n
+    have hmajor :=
+      (integrable_suzukiWeilSafeLineSpectralWeight_mul_sqrtGrowth t hz).norm
+        |>.const_mul (suzukiWeilThreeQuarterPSeries n)
+    calc
+      (∫ r : ℝ,
+        ‖suzukiWeilSafeLineSpectralWeight t z r *
+          (suzukiWeilDigammaDifferenceSummand
+            (3 / 4 + Complex.I * (r / 2)) (3 / 4) n / 2)‖) ≤
+          ∫ r : ℝ, suzukiWeilThreeQuarterPSeries n *
+            ‖suzukiWeilSafeLineSpectralWeight t z r *
+              (Real.sqrt (|r| + 1) : ℂ)‖ := by
+        apply integral_mono hterm.norm hmajor
+        intro r
+        exact
+          norm_suzukiWeilSafeLineSpectralWeight_mul_digammaDifferenceSummand_le
+            t z r n
+      _ = suzukiWeilThreeQuarterPSeries n * A := by
+        rw [integral_const_mul]
+
+/-- One integrated Gauss-series summand is exactly minus `2π` times the
+corresponding Archimedean mode.  The constant half of the Euler difference
+vanishes by the zero-mean identity. -/
+theorem integral_suzukiWeilSafeLineSpectralWeight_mul_digammaDifferenceSummand
+    {t : ℝ} (ht : 0 ≤ t) {z : ℂ} (hz : 1 < z.im) (n : ℕ) :
+    (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (suzukiWeilDigammaDifferenceSummand
+          (3 / 4 + Complex.I * (r / 2)) (3 / 4) n / 2)) =
+      -((2 * Real.pi : ℝ) : ℂ) *
+        suzukiWeilArchimedeanModeTerm t z n := by
+  let a : ℝ := 2 * (n : ℝ) + 3 / 2
+  have ha : 0 < a := by
+    dsimp [a]
+    positivity
+  have hzSafe : z ∈ suzukiXiSafeUpperHalfPlane := by
+    change (1 / 2 : ℝ) < z.im
+    linarith
+  have hconstant : Integrable (fun r : ℝ ↦
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (((n : ℂ) + 3 / 4)⁻¹ / 2)) :=
+    (integrable_suzukiWeilSafeLineSpectralWeight t hz).mul_const _
+  have hmoving : Integrable (fun r : ℝ ↦
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (((a : ℂ) + Complex.I * (r : ℂ))⁻¹)) :=
+    integrable_suzukiWeilSafeLineSpectralWeight_mul_inv_add_I t hz ha
+  have hsplit (r : ℝ) :
+      suzukiWeilSafeLineSpectralWeight t z r *
+          (suzukiWeilDigammaDifferenceSummand
+            (3 / 4 + Complex.I * (r / 2)) (3 / 4) n / 2) =
+        suzukiWeilSafeLineSpectralWeight t z r *
+            (((n : ℂ) + 3 / 4)⁻¹ / 2) -
+          suzukiWeilSafeLineSpectralWeight t z r *
+            (((a : ℂ) + Complex.I * (r : ℂ))⁻¹) := by
+    have hA0 : (a : ℂ) + Complex.I * (r : ℂ) ≠ 0 := by
+      intro hzero
+      have hre := congrArg Complex.re hzero
+      simp at hre
+      exact ha.ne' hre
+    have hscale :
+        (n : ℂ) + (3 / 4 + Complex.I * (r / 2)) =
+          ((a : ℂ) + Complex.I * (r : ℂ)) / 2 := by
+      dsimp [a]
+      push_cast
+      ring
+    have hinvScale :
+        ((n : ℂ) + (3 / 4 + Complex.I * (r / 2)))⁻¹ / 2 =
+          ((a : ℂ) + Complex.I * (r : ℂ))⁻¹ := by
+      rw [hscale]
+      field_simp [hA0]
+    unfold suzukiWeilDigammaDifferenceSummand
+    rw [sub_div, mul_sub, hinvScale]
+  have htime :
+      (∫ x : ℝ,
+        suzukiWeilTest t z x *
+          (Real.exp ((1 - a) * x) : ℂ)) =
+        suzukiWeilArchimedeanModeTerm t z n := by
+    rw [← integral_suzukiWeilTest_mul_archimedeanRealExponential ht hzSafe n]
+    apply integral_congr_ae
+    filter_upwards with x
+    have hexponent :
+        (1 - a) * x = -(2 * (n : ℝ) + 1 / 2) * x := by
+      dsimp [a]
+      ring
+    rw [hexponent]
+  calc
+    (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (suzukiWeilDigammaDifferenceSummand
+          (3 / 4 + Complex.I * (r / 2)) (3 / 4) n / 2)) =
+        (∫ r : ℝ,
+          suzukiWeilSafeLineSpectralWeight t z r *
+            (((n : ℂ) + 3 / 4)⁻¹ / 2)) -
+          ∫ r : ℝ,
+            suzukiWeilSafeLineSpectralWeight t z r *
+              (((a : ℂ) + Complex.I * (r : ℂ))⁻¹) := by
+      rw [← integral_sub hconstant hmoving]
+      exact integral_congr_ae (Filter.Eventually.of_forall hsplit)
+    _ = -(∫ r : ℝ,
+          suzukiWeilSafeLineSpectralWeight t z r *
+            (((a : ℂ) + Complex.I * (r : ℂ))⁻¹)) := by
+      rw [integral_mul_const,
+        integral_suzukiWeilSafeLineSpectralWeight_eq_zero ht hz]
+      ring
+    _ = -(((2 * Real.pi : ℝ) : ℂ) *
+        (∫ x : ℝ,
+          suzukiWeilTest t z x *
+            (Real.exp ((1 - a) * x) : ℂ))) := by
+      rw [integral_suzukiWeilSafeLineSpectralWeight_mul_inv_add_I ht hz ha,
+        integral_Ioi_exp_mul_suzukiWeilSymmetricSafeLineTest_neg ht z]
+    _ = -((2 * Real.pi : ℝ) : ℂ) *
+        suzukiWeilArchimedeanModeTerm t z n := by
+      rw [htime]
+      rw [neg_mul]
+
+/-- The complete safe-line digamma factor is exactly minus `2π` times
+Suzuki's literal positive-time Archimedean integral.  This is obtained from
+Gauss's convergent Euler series by an absolutely justified exchange of its
+sum with the frequency integral. -/
+theorem integral_suzukiWeilSafeLineSpectralWeight_mul_digammaFactor
+    {t : ℝ} (ht : 0 < t) {z : ℂ} (hz : 1 < z.im) :
+    (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (Complex.digamma (3 / 4 + Complex.I * (r / 2)) / 2)) =
+      -((2 * Real.pi : ℝ) : ℂ) *
+        (∫ x : ℝ in Ioi 0,
+          suzukiWeilArchimedeanIntegrand t z x) := by
+  let F : ℕ → ℝ → ℂ := fun n r ↦
+    suzukiWeilSafeLineSpectralWeight t z r *
+      (suzukiWeilDigammaDifferenceSummand
+        (3 / 4 + Complex.I * (r / 2)) (3 / 4) n / 2)
+  have hFint : ∀ n : ℕ, Integrable (F n) := by
+    intro n
+    exact
+      integrable_suzukiWeilSafeLineSpectralWeight_mul_digammaDifferenceSummand
+        t hz n
+  have hFnorm : Summable (fun n : ℕ ↦ ∫ r : ℝ, ‖F n r‖) := by
+    simpa only [F] using
+      summable_integral_norm_suzukiWeilSafeLineSpectralWeight_mul_digammaDifferenceSummand
+        t hz
+  have hinterchange :
+      (∑' n : ℕ, ∫ r : ℝ, F n r) =
+        ∫ r : ℝ, ∑' n : ℕ, F n r :=
+    integral_tsum_of_summable_integral_norm hFint hFnorm
+  have hsum (r : ℝ) : HasSum (fun n : ℕ ↦ F n r)
+      (suzukiWeilSafeLineSpectralWeight t z r *
+        ((Complex.digamma (3 / 4 + Complex.I * (r / 2)) -
+          Complex.digamma (3 / 4)) / 2)) := by
+    have hdifference := hasSum_suzukiWeilDigammaDifferenceSummand
+      (a := 3 / 4 + Complex.I * (r / 2)) (b := 3 / 4)
+      (by norm_num) (by norm_num)
+    simpa only [F] using
+      (hdifference.div_const (2 : ℂ)).mul_left
+        (suzukiWeilSafeLineSpectralWeight t z r)
+  have hzSafe : z ∈ suzukiXiSafeUpperHalfPlane := by
+    change (1 / 2 : ℝ) < z.im
+    linarith
+  have hdifferenceIntegral :
+      (∫ r : ℝ,
+        suzukiWeilSafeLineSpectralWeight t z r *
+          ((Complex.digamma (3 / 4 + Complex.I * (r / 2)) -
+            Complex.digamma (3 / 4)) / 2)) =
+        -((2 * Real.pi : ℝ) : ℂ) *
+          (∫ x : ℝ in Ioi 0,
+            suzukiWeilArchimedeanIntegrand t z x) := by
+    calc
+      (∫ r : ℝ,
+        suzukiWeilSafeLineSpectralWeight t z r *
+          ((Complex.digamma (3 / 4 + Complex.I * (r / 2)) -
+            Complex.digamma (3 / 4)) / 2)) =
+          ∫ r : ℝ, ∑' n : ℕ, F n r := by
+        apply integral_congr_ae
+        filter_upwards with r
+        exact (hsum r).tsum_eq.symm
+      _ = ∑' n : ℕ, ∫ r : ℝ, F n r := hinterchange.symm
+      _ = ∑' n : ℕ,
+          (-((2 * Real.pi : ℝ) : ℂ) *
+            suzukiWeilArchimedeanModeTerm t z n) := by
+        apply tsum_congr
+        intro n
+        exact
+          integral_suzukiWeilSafeLineSpectralWeight_mul_digammaDifferenceSummand
+            ht.le hz n
+      _ = -((2 * Real.pi : ℝ) : ℂ) *
+          (∑' n : ℕ, suzukiWeilArchimedeanModeTerm t z n) :=
+        tsum_mul_left
+      _ = -((2 * Real.pi : ℝ) : ℂ) *
+          (∫ x : ℝ in Ioi 0,
+            suzukiWeilArchimedeanIntegrand t z x) := by
+        rw [integral_Ioi_suzukiWeilArchimedeanIntegrand_eq_tsum ht hzSafe]
+  have hfull : Integrable (fun r : ℝ ↦
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (Complex.digamma (3 / 4 + Complex.I * (r / 2)) / 2)) := by
+    have h :=
+      (integrable_suzukiWeilSafeLineSpectralWeight_mul_digamma t hz).mul_const
+        ((2 : ℂ)⁻¹)
+    exact h.congr (Filter.Eventually.of_forall fun r ↦ by ring)
+  have hconstant : Integrable (fun r : ℝ ↦
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (Complex.digamma (3 / 4) / 2)) :=
+    (integrable_suzukiWeilSafeLineSpectralWeight t hz).mul_const _
+  have hdifference : Integrable (fun r : ℝ ↦
+      suzukiWeilSafeLineSpectralWeight t z r *
+        ((Complex.digamma (3 / 4 + Complex.I * (r / 2)) -
+          Complex.digamma (3 / 4)) / 2)) := by
+    exact (hfull.sub hconstant).congr
+      (Filter.Eventually.of_forall fun r ↦ by
+        change
+          suzukiWeilSafeLineSpectralWeight t z r *
+                (Complex.digamma (3 / 4 + Complex.I * (r / 2)) / 2) -
+              suzukiWeilSafeLineSpectralWeight t z r *
+                (Complex.digamma (3 / 4) / 2) =
+            suzukiWeilSafeLineSpectralWeight t z r *
+              ((Complex.digamma (3 / 4 + Complex.I * (r / 2)) -
+                Complex.digamma (3 / 4)) / 2)
+        ring)
+  calc
+    (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (Complex.digamma (3 / 4 + Complex.I * (r / 2)) / 2)) =
+        (∫ r : ℝ,
+          suzukiWeilSafeLineSpectralWeight t z r *
+            ((Complex.digamma (3 / 4 + Complex.I * (r / 2)) -
+              Complex.digamma (3 / 4)) / 2)) +
+          ∫ r : ℝ,
+            suzukiWeilSafeLineSpectralWeight t z r *
+              (Complex.digamma (3 / 4) / 2) := by
+      rw [← integral_add hdifference hconstant]
+      apply integral_congr_ae
+      filter_upwards with r
+      ring
+    _ = -((2 * Real.pi : ℝ) : ℂ) *
+          (∫ x : ℝ in Ioi 0,
+            suzukiWeilArchimedeanIntegrand t z x) +
+        ∫ r : ℝ,
+          suzukiWeilSafeLineSpectralWeight t z r *
+            (Complex.digamma (3 / 4) / 2) := by
+      rw [hdifferenceIntegral]
+    _ = -((2 * Real.pi : ℝ) : ℂ) *
+        (∫ x : ℝ in Ioi 0,
+          suzukiWeilArchimedeanIntegrand t z x) := by
+      rw [integral_mul_const,
+        integral_suzukiWeilSafeLineSpectralWeight_eq_zero ht.le hz]
+      ring
+
 end
 
 end RiemannGaussian
