@@ -21,21 +21,20 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-The latest checked slice cancels the Archimedean part of the completed-xi
-endpoint difference. Lean proves a uniform fourth-root digamma bound throughout
-`1/4 ≤ Re(s) ≤ 3/4`, integrates the horizontal logarithmic derivative of
-`Gammaℝ`, and concludes that the `Gammaℝ` log-modulus difference between
-`3/2 + iT_n` and `1/2 + iT_n` is `o(T_n)` on the established quantitative
-zero-free heights. This handles the shared exponential gamma decay directly;
-it does not incorrectly require either completed-xi endpoint to be sublinear.
+The latest checked slice isolates the arithmetic endpoint obstruction exactly.
+Lean factors each nonzero completed-xi endpoint into its elementary polynomial,
+`Gammaℝ`, and zeta terms; proves the polynomial log difference lies between
+`0` and `log 3`; combines its `o(T_n)` limit with the previously checked gamma
+limit; and concludes that the static vertical contour is asymptotic solely to
+`-(4 / T_n)` times
+`log |ζ(3/2 + iT_n)| - log |ζ(1/2 + iT_n)|`.
 
-The remaining vertical-cancellation theorem must reduce the elementary
-polynomial factors and prove that the zeta endpoint log ratio is `o(T_n)`.
-The safe-line side has an Euler-product route, while the critical-line side
-requires a genuinely quantitative lower bound at the selected zero-separated
-heights. The broader rigidity problem must then force the positive Hardy/heat
-defect to vanish. Until those theorems are proved, this repository is not a
-proof of RH.
+The remaining vertical-cancellation theorem is now literally that this zeta
+endpoint log ratio is `o(T_n)`. The safe-line side has an Euler-product route,
+while the critical-line side requires a genuinely quantitative lower bound at
+the selected zero-separated heights. The broader rigidity problem must then
+force the positive Hardy/heat defect to vanish. Until those theorems are
+proved, this repository is not a proof of RH.
 
 ## Mathematical Program
 

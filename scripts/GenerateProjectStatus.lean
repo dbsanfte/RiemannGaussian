@@ -63,11 +63,11 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
-    label := "Archimedean endpoint cancellation"
-    lineOne := "gamma endpoint"
-    lineTwo := "sublinear"
+    label := "Zeta endpoint reduction"
+    lineOne := "zeta endpoint"
+    lineTwo := "isolated"
     theoremName :=
-      ``RiemannGaussian.tendsto_staticContourGammaRHorizontalLogNorm_sub_div_quantitative_zero
+      ``RiemannGaussian.tendsto_neg_I_mul_xiSpectralBlaschkeSignedVerticalRemainderWindow_zero_imaginary_add_zeta_logNorm_main_quantitative_zero
   }
 ]
 
