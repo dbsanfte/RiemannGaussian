@@ -342,7 +342,17 @@ current checked state, not a list of conjectural steps.
   recovers exactly `2*pi` times both literal Suzuki prime sums. Mathlib's
   Euler-product theorem then identifies the result with the safe-line zeta
   logarithmic derivative. The prime part of the horizontal contour is closed;
-  the completed-zeta elementary and Archimedean terms remain.
+  the completed-zeta elementary and Archimedean evaluation remains. Its
+  analytic foundation is now checked: a new Euler-series argument proves the
+  genuinely sublinear bound
+  `norm(digamma(3/4 + i*r/2)) = O(sqrt(1 + abs(r)))`, while an explicit
+  shifted-Cauchy comparison proves the reflected Suzuki weight is
+  `O((1+r^2)^-1)`. Lean therefore proves their product, and the complete
+  elementary-plus-digamma completed-zeta factor, absolutely integrable. It
+  also proves the reflected weight has exactly zero mean, the cancellation
+  needed to retain Gauss's convergent digamma difference. What remains in the
+  horizontal term is its exact Fourier/Laplace evaluation as the literal
+  elementary integral minus the Archimedean kernel integral.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
