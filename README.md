@@ -20,19 +20,20 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now strengthens the selected static-contour limit from pointwise to
-compact-uniform control. For every real interval `[a,b]` with `a > 1`, the
-zero-height signed vertical remainder satisfies
+Lean now proves that the static contour recovers the complete upper spectral
+Blaschke detector locally uniformly. For every real interval `[a,b]` with
+`a > 1`, the paired horizontal boundary trace minus the fixed arithmetic
+safe-line trace converges uniformly to
 
-`V(T_n, 0, iv) → 0` uniformly for `v ∈ [a,b]`.
+`-2π · (complete upper Blaschke logarithmic derivative)(iv)`
 
-The proof also extracts the shared normalized logarithmic-derivative boundary
-term as an explicit `o(1)` theorem. This permits bounded analytic operations
-in the observation height without assuming an exchange of limits. The open
-frontier remains a coercive transport identity or estimate connecting this
-zero static boundary data to the positive reflected-pair Gaussian/Hardy
-defect. That rigidity step is RH-strength; this repository is not yet a proof
-of RH.
+for `v ∈ [a,b]`. The proof includes an explicit inverse-square majorant for
+each spectral summand, uniform convergence of the genuine finite zero windows
+to the complete divisor, and an explicit detector-recovery error tending to
+zero. The open frontier is now exact: obtain arithmetic or entire-function
+rigidity forcing this recovered horizontal comparison—and hence the positive
+reflected-pair Gaussian/Hardy defect—to vanish. That step is RH-strength; this
+repository is not yet a proof of RH.
 
 ## Mathematical Program
 
