@@ -584,6 +584,18 @@ current checked state, not a list of conjectural steps.
   Suzuki's actual coefficient tails—strictly weaker than a bound for all
   finite coefficient families—implies that vanishing and a published-signal
   `L²` limit. The global Bessel route is proved to imply the tailored one.
+- The unnamed spectral limit is now connected to the already constructed
+  arithmetic `L²` vector by an exact Hilbert-space reduction. Lean defines
+  their genuine squared boundary discrepancy and polarizes it into the finite
+  spectral Gram norm, one mixed arithmetic--spectral inner product, and the
+  arithmetic norm. Strong identification with the arithmetic signal is proved
+  equivalent both to vanishing of this discrepancy and to convergence of the
+  pure Gram norm together with the mixed inner product. Independently, on any
+  dense family of `L²` tests, it is proved equivalent to coefficient-tail Gram
+  vanishing plus weak convergence against that family. None of those missing
+  scalar or weak limits is asserted: the next analytic target is a genuine
+  boundary reproducing/contour theorem deriving them from the proved safe-
+  half-plane arithmetic--spectral identity.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1140,12 +1152,15 @@ norm bound, but no uniform control of its isolation radii. What remains is to
 derive such control from the common carrier and xi arithmetic, prove a sharper
 row bound directly, or prove the now-explicit coefficient-tail Gram vanishing
 (for example through its tailored eventual quadratic comparison). After that,
-the resulting limit must be identified with the arithmetic signal or compared
-directly with the reflected-height Gaussian invariant. That infinite
-comparison remains genuinely new mathematics; it is not inferred from
-safe-half-plane pointwise equality. This is the step needed to force the
-Gaussian epsilon-positivity statement, rather than attempting a non-scalable
-chain of finite certificates.
+the resulting limit must be identified with the arithmetic signal. That
+identification has now been reduced exactly to either weak convergence on any
+dense boundary test family, or the pair of scalar limits consisting of the
+finite spectral Gram norm and the mixed arithmetic--spectral inner product.
+The required boundary reproducing/contour theorem remains genuinely new
+mathematics; it is not inferred from safe-half-plane pointwise equality. The
+same comparison must then be connected to the reflected-height Gaussian
+invariant. This is the step needed to force the Gaussian epsilon-positivity
+statement, rather than attempting a non-scalable chain of finite certificates.
 
 The Hardy route seeks a structural contradiction from any off-axis xi zero.
 The one-quartet finite theory and its real/Herglotz background are formalized.
