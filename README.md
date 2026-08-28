@@ -831,6 +831,14 @@ current checked state, not a list of conjectural steps.
   criterion as well: the ability to enter every positive threshold in every
   collar beyond every cutoff is equivalent to RH. Establishing that cofinal
   smallness from xi's arithmetic or entire-function structure is open.
+  Lean now also resolves the local cancellation geometry term by term. For
+  an upper zero `alpha`, its scaled real response at `x+i*y` is an explicit
+  positive multiple of `normSq(x-alpha)-y^2`. Inside a uniform divisor-gap
+  collar this is positive for every upper zero simultaneously. Hence every
+  finite residual has nonnegative scaled real part, is strictly positive as
+  soon as its window contains one upper zero, and vanishes exactly when that
+  upper window is empty. No finite complex cancellation can mask an off-axis
+  zero in this collar.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
@@ -1502,7 +1510,13 @@ and beyond some genuine spectral cutoff. Equivalently, RH holds exactly when
 cofinally late residuals can become arbitrarily small at arbitrarily low
 positive heights. The next new-mathematics target is to force this checked
 cofinal-smallness condition using the functional equation, growth, or the
-arithmetic Suzuki response.
+arithmetic Suzuki response. Termwise algebra now additionally shows that the
+scaled residual is a positive finite sum throughout the collar: for each
+upper zero its numerator is
+`2*Im(alpha)*(normSq(x-alpha)-y^2)`. Thus the arithmetic attack may target
+the sign or smallness of the full exact residual directly; cancellation
+between different upper zeros is no longer a possible escape in this local
+region.
 The isolated real-node remainder is the parallel boundary task. Lean proves
 that these two vanishing statements together recover the prior
 Cayley-weighted tail condition and hence the original coefficient-tail Gram
