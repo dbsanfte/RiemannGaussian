@@ -332,6 +332,50 @@ def suzukiXiCarrierCayleyLowerTimeTraceWindow (t T : ℝ) : ℂ :=
   suzukiXiCarrierCayleyLowerLaplaceSynthesis
     (riemannXiSuzukiSpectralCoefficientWindowFinsupp t T) 0
 
+/-- The upper Cayley time trace is the finite sum of the normalized,
+Cayley-weighted Suzuki coefficients over precisely the upper off-axis
+nodes. -/
+theorem suzukiXiCarrierCayleyUpperTimeTraceWindow_eq_sum
+    (t T : ℝ) :
+    suzukiXiCarrierCayleyUpperTimeTraceWindow t T =
+      ∑ rho ∈ spectralZetaZeroWindow T,
+        if 0 < (zetaSpectralCoordinate rho.1).im then
+          (Real.sqrt 2 : ℂ) *
+            suzukiXiCarrierCayleyTimeCoefficient t rho
+        else 0 := by
+  unfold suzukiXiCarrierCayleyUpperTimeTraceWindow
+  rw [upperSynthesis_window]
+  apply Finset.sum_congr rfl
+  intro rho _hrho
+  by_cases hupper : 0 < (zetaSpectralCoordinate rho.1).im
+  · simp only [if_pos hupper]
+    unfold suzukiXiCarrierUpperLaplaceFeature
+    simp only [ofReal_zero, mul_zero, exp_zero, mul_one]
+    ring
+  · simp only [if_neg hupper]
+
+/-- The lower Cayley time trace is the finite sum of the normalized,
+Cayley-weighted Suzuki coefficients over precisely the lower off-axis
+nodes. -/
+theorem suzukiXiCarrierCayleyLowerTimeTraceWindow_eq_sum
+    (t T : ℝ) :
+    suzukiXiCarrierCayleyLowerTimeTraceWindow t T =
+      ∑ rho ∈ spectralZetaZeroWindow T,
+        if (zetaSpectralCoordinate rho.1).im < 0 then
+          (Real.sqrt 2 : ℂ) *
+            suzukiXiCarrierCayleyTimeCoefficient t rho
+        else 0 := by
+  unfold suzukiXiCarrierCayleyLowerTimeTraceWindow
+  rw [lowerSynthesis_window]
+  apply Finset.sum_congr rfl
+  intro rho _hrho
+  by_cases hlower : (zetaSpectralCoordinate rho.1).im < 0
+  · simp only [if_pos hlower]
+    unfold suzukiXiCarrierLowerLaplaceFeature
+    simp only [ofReal_zero, mul_zero, exp_zero, mul_one]
+    ring
+  · simp only [if_neg hlower]
+
 /-- Every finite upper Laplace synthesis is exactly a backward shifted-time
 trace difference. -/
 theorem suzukiXiCarrierCayleyUpperLaplaceSynthesis_window_eq_timeTraceDifference

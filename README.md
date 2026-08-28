@@ -794,7 +794,16 @@ current checked state, not a list of conjectural steps.
   every upper or lower tail energy is the literal `L2(0,infinity)` Cauchy
   distance between finite shifted-time Cayley trace increments. Trace-energy
   Cauchy convergence is proved equivalent to the corresponding Laplace
-  subfrontier; convergence itself remains open.
+  subfrontier; convergence itself remains open. Each finite trace is now
+  decomposed further into a multiplicity-weighted unregularized screw trace
+  plus a restricted finite `P_t(-i)` correction. Functional-equation
+  reflection moves that correction exactly to the opposite half of the safe
+  `P_{-t}(i)` series, without assuming convergence at `-i`. Both safe
+  restricted series are proved absolutely convergent. Consequently, at each
+  fixed screw time, convergence of either finite Cayley trace is equivalent
+  to convergence of its corresponding unregularized half-divisor screw
+  trace. Extending this pointwise reduction to the required half-line `L2`
+  trace-increment estimate remains open.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
@@ -1438,7 +1447,14 @@ Those exponential sums are now identified pointwise with differences of
 shifted Suzuki time traces. Thus the same target is equivalently Cauchy
 convergence, in the exact half-line energy metric, of upper and lower trace
 increments. This is the first direct interface from the new Cauchy kernel
-back to the existing screw-time formalism.
+back to the existing screw-time formalism. The finite traces themselves are
+now split exactly into unregularized half-divisor screw traces and restricted
+spectral `P_t` corrections. Functional-equation reflection transports every
+apparently unsafe `P_t(-i)` correction to the opposite restriction of the
+absolutely convergent safe-point series `P_{-t}(i)`. Hence the only remaining
+pointwise convergence issue is the raw half-divisor screw trace; the harder
+frontier is to promote control of that trace to the uniform half-line `L2`
+increment estimate demanded by the Laplace energy.
 The isolated real-node remainder is the parallel boundary task. Lean proves
 that these two vanishing statements together recover the prior
 Cayley-weighted tail condition and hence the original coefficient-tail Gram
