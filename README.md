@@ -803,7 +803,14 @@ current checked state, not a list of conjectural steps.
   fixed screw time, convergence of either finite Cayley trace is equivalent
   to convergence of its corresponding unregularized half-divisor screw
   trace. Extending this pointwise reduction to the required half-line `L2`
-  trace-increment estimate remains open.
+  trace-increment estimate remains open. The upper-minus-lower finite
+  spectral `P_t` response has now also been differentiated exactly in screw
+  time. At `t=0` its velocity is `-i` times the genuine finite spectral
+  Blaschke logarithmic derivative. On every real observation line these
+  velocities converge to the complete positive boundary density already
+  known to vanish exactly under RH; under `not RH` their limit has strictly
+  positive real part. This is a direct formal bridge from Suzuki dynamics to
+  the hard RH rigidity invariant, not a proof that the invariant vanishes.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
@@ -1454,7 +1461,12 @@ apparently unsafe `P_t(-i)` correction to the opposite restriction of the
 absolutely convergent safe-point series `P_{-t}(i)`. Hence the only remaining
 pointwise convergence issue is the raw half-divisor screw trace; the harder
 frontier is to promote control of that trace to the uniform half-line `L2`
-increment estimate demanded by the Laplace energy.
+increment estimate demanded by the Laplace energy. Independently, the
+initial time derivative of the signed upper-minus-lower spectral `P_t`
+response is now proved to converge to the positive boundary Blaschke defect,
+zero exactly under RH. A successful rigidity argument can therefore target
+this concrete Suzuki initial velocity, while the full arithmetic `P_t`
+formula controls the complementary unsigned response.
 The isolated real-node remainder is the parallel boundary task. Lean proves
 that these two vanishing statements together recover the prior
 Cayley-weighted tail condition and hence the original coefficient-tail Gram
