@@ -816,7 +816,13 @@ current checked state, not a list of conjectural steps.
   an explicit combination of the genuine `xi'/xi`, its analytic finite-window
   remainder, the critical-line Cauchy part, and twice the upper Cauchy part.
   These finite velocities and the scaled reflection residuals both converge
-  to the same complete Suzuki initial velocity.
+  to the same complete Suzuki initial velocity. Lean now proves that this
+  complete complex velocity converges vertically to its literal real-boundary
+  value. A uniform gap from the real endpoint to every selected upper zero,
+  including when that endpoint is itself a critical-line zero, bounds each
+  approached term by twice its summable positive boundary density. Thus this
+  entire-function/reflection-residual velocity reaches the positive RH defect
+  without an assumed boundary interchange or a noncollision hypothesis.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
@@ -1476,7 +1482,12 @@ formula controls the complementary unsigned response. Off the boundary this
 velocity is also the cofinal limit of the exact spectral-xi reflection
 residual, so the next rigidity estimate can be formulated directly in terms
 of the entire-function logarithmic derivative and its checked analytic
-window remainder.
+window remainder. The complete complex velocity is now also proved to attain
+that positive defect as its vertical boundary value at every real point,
+including critical-line spectral nodes: a genuine summable divisor majorant
+justifies the infinite-series limit. The open step is therefore rigidity of
+the resulting xi/Suzuki response, not passage from the analytic upper
+half-plane to the boundary.
 The isolated real-node remainder is the parallel boundary task. Lean proves
 that these two vanishing statements together recover the prior
 Cayley-weighted tail condition and hence the original coefficient-tail Gram
