@@ -24,21 +24,25 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now derives the transport curvature directly from Suzuki's literal
-pointwise arithmetic formula. For every positive screw time, the terminal
-theorem
+Lean now discharges the transport-tail normalization hypothesis for Suzuki's
+literal pointwise arithmetic function. For every positive base and every
+finite frozen prime prefix,
 
-`hasDerivAt_deriv_suzukiPointwiseArchimedean`
+`suzukiPointwiseTailNormalization`
 
-proves that the second derivative of the source-exact Archimedean term is
-`suzukiSmoothCurvature`. The proof differentiates the order-two Hurwitz--Lerch
-gap twice under its infinite sum, bounds both derivative series by explicit
-geometric majorants, and evaluates the resulting geometric series exactly.
+proves the required function identity with the base value and base slope
+computed from the literal Archimedean term and exact prime-prefix mass and
+moment. The proof uses the previously derived second derivative
+`hasDerivAt_deriv_suzukiPointwiseArchimedean`, the fundamental theorem of
+calculus, and derivative uniqueness on positive time.
 
-This closes the seam between the literal arithmetic function and the smooth
-curvature used by the transport machinery. It does not establish global
-positivity or a zero-location constraint; those remain conjecture-strength,
-and the repository is not yet a proof of RH.
+Consequently,
+`riemannXiSuzukiPsiNonnegative_on_tail_iff_cumulativeTransportSurplus`
+instantiates the cumulative-surplus criterion for the actual arithmetic
+function without an assumed normalization. Its explicit frozen-slope sign and
+the cumulative-surplus inequalities remain open; the theorem does not establish
+global positivity or a zero-location constraint, and the repository is not yet
+a proof of RH.
 
 ## Mathematical Program
 
