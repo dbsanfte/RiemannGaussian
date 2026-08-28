@@ -388,9 +388,11 @@ current checked state, not a list of conjectural steps.
   residual is now interval-integrable with an explicit Cauchy-estimate bound,
   and the exact canonical decomposition combines both pieces into a complete
   `L¹([-1,1])` estimate for the genuine spectral-xi negative logarithmic
-  derivative. What remains is to combine that estimate with Suzuki's
-  inverse-square transform bound and prove the resulting explicit vertical
-  bound tends to zero.
+  derivative. That estimate is now combined with Suzuki's inverse-square
+  bound on both reflected vertical sides, yielding one explicit real
+  majorant for the norm of the literal two-sided vertical boundary. What
+  remains is the real-asymptotic proof that this majorant tends to zero and
+  substitution into the global meeting theorem.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real

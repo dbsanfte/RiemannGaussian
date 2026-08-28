@@ -1019,6 +1019,31 @@ theorem intervalIntegral_norm_logDeriv_riemannXiCanonicalResidual_quantitative_l
 
 /-! ## The complete right-line xi logarithmic derivative -/
 
+/-- The genuine spectral-xi negative logarithmic derivative is interval
+integrable on every quantitatively separated vertical segment. -/
+theorem intervalIntegrable_xiSpectralNegativeLogDerivative_quantitative
+    (n : ℕ) :
+    IntervalIntegrable
+      (fun y : ℝ ↦
+        xiSpectralNegativeLogDerivative
+          ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+            (y : ℂ) * Complex.I))
+      volume (-1) 1 := by
+  let T := quantitativeSpectralBoundaryTruncation n
+  let w : ℝ → ℂ := fun y ↦ (T : ℂ) + (y : ℂ) * Complex.I
+  have hw : Continuous w := by
+    dsimp only [w]
+    fun_prop
+  have hcontinuous : Continuous
+      (fun y : ℝ ↦ xiSpectralNegativeLogDerivative (w y)) := by
+    apply continuous_comp_of_forall_analyticAt
+      xiSpectralNegativeLogDerivative w hw
+    intro y
+    apply analyticAt_xiSpectralNegativeLogDerivative_of_ne
+    simpa [riemannXiSpectral, w, T] using
+      riemannXi_quantitativeCompletedCoordinate_ne_zero n y
+  simpa [w, T] using hcontinuous.intervalIntegrable (-1) 1
+
 /-- Combining the exact canonical decomposition with the integrated residual
 and multiplicity-weighted factor estimates gives the required `L¹` bound for
 the genuine spectral-xi negative logarithmic derivative. -/
@@ -1125,6 +1150,176 @@ theorem intervalIntegral_norm_xiSpectralNegativeLogDerivative_quantitative_le_of
       exact add_le_add
         (by simpa [s, w, R, T] using hresidualBound)
         (by simpa [S, d, s, w, R, T] using hsumBound)
+
+/-! ## Attaching Suzuki's inverse-square transform -/
+
+/-- A uniform pointwise bound on one factor can be pulled outside an
+interval integral against an interval-integrable complex function. -/
+theorem norm_intervalIntegral_mul_le_const_mul_integral_norm
+    {H L : ℝ → ℂ} {M : ℝ}
+    (hL : IntervalIntegrable L volume (-1) 1)
+    (hH : ∀ y ∈ Ioc (-1 : ℝ) 1, ‖H y‖ ≤ M) :
+    ‖∫ y : ℝ in (-1 : ℝ)..1, H y * L y‖ ≤
+      M * (∫ y : ℝ in (-1 : ℝ)..1, ‖L y‖) := by
+  have hmajorant : IntervalIntegrable
+      (fun y : ℝ ↦ M * ‖L y‖) volume (-1) 1 :=
+    hL.norm.const_mul M
+  have hnorm :
+      ‖∫ y : ℝ in (-1 : ℝ)..1, H y * L y‖ ≤
+        ∫ y : ℝ in (-1 : ℝ)..1, M * ‖L y‖ := by
+    apply intervalIntegral.norm_integral_le_of_norm_le (by norm_num)
+      (Filter.Eventually.of_forall fun y hy ↦ ?_) hmajorant
+    rw [norm_mul]
+    exact mul_le_mul_of_nonneg_right (hH y hy) (norm_nonneg _)
+  calc
+    ‖∫ y : ℝ in (-1 : ℝ)..1, H y * L y‖ ≤
+        ∫ y : ℝ in (-1 : ℝ)..1, M * ‖L y‖ := hnorm
+    _ = M * (∫ y : ℝ in (-1 : ℝ)..1, ‖L y‖) := by
+      rw [intervalIntegral.integral_const_mul]
+
+/-- The right vertical Suzuki-weighted xi integral is bounded by the
+inverse-square transform constant times the checked `L¹` logarithmic-
+derivative norm. -/
+theorem norm_intervalIntegral_suzukiXiWeil_quantitative_right_le
+    (t : ℝ) (z : ℂ) (n : ℕ)
+    (hzT : 2 * |z.re| ≤ quantitativeSpectralBoundaryTruncation n) :
+    ‖∫ y : ℝ in (-1 : ℝ)..1,
+      suzukiWeilSpectralTransform t z
+          ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+            (y : ℂ) * Complex.I) *
+        xiSpectralNegativeLogDerivative
+          ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+            (y : ℂ) * Complex.I)‖ ≤
+      (2 * (Real.exp |t| + 1) /
+          quantitativeSpectralBoundaryTruncation n ^ 2) *
+        (∫ y : ℝ in (-1 : ℝ)..1,
+          ‖xiSpectralNegativeLogDerivative
+            ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+              (y : ℂ) * Complex.I)‖) := by
+  apply norm_intervalIntegral_mul_le_const_mul_integral_norm
+    (intervalIntegrable_xiSpectralNegativeLogDerivative_quantitative n)
+  intro y hy
+  apply norm_suzukiWeilSpectralTransform_quantitative_right_le t z n y
+  · exact (abs_le).mpr ⟨hy.1.le, hy.2⟩
+  · exact hzT
+
+/-- The reflected-left Suzuki transform obeys the identical weighted
+right-line integral bound. -/
+theorem norm_intervalIntegral_suzukiXiWeil_quantitative_left_le
+    (t : ℝ) (z : ℂ) (n : ℕ)
+    (hzT : 2 * |z.re| ≤ quantitativeSpectralBoundaryTruncation n) :
+    ‖∫ y : ℝ in (-1 : ℝ)..1,
+      suzukiWeilSpectralTransform t z
+          (-((quantitativeSpectralBoundaryTruncation n : ℂ) +
+            (y : ℂ) * Complex.I)) *
+        xiSpectralNegativeLogDerivative
+          ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+            (y : ℂ) * Complex.I)‖ ≤
+      (2 * (Real.exp |t| + 1) /
+          quantitativeSpectralBoundaryTruncation n ^ 2) *
+        (∫ y : ℝ in (-1 : ℝ)..1,
+          ‖xiSpectralNegativeLogDerivative
+            ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+              (y : ℂ) * Complex.I)‖) := by
+  apply norm_intervalIntegral_mul_le_const_mul_integral_norm
+    (intervalIntegrable_xiSpectralNegativeLogDerivative_quantitative n)
+  intro y hy
+  apply norm_suzukiWeilSpectralTransform_quantitative_left_le t z n y
+  · exact (abs_le).mpr ⟨hy.1.le, hy.2⟩
+  · exact hzT
+
+/-- The literal two-sided vertical boundary is controlled by twice the
+inverse-square Suzuki constant times the right-line xi logarithmic-derivative
+`L¹` norm. -/
+theorem norm_suzukiXiWeilVerticalBoundaryIntegral_quantitative_le
+    (t : ℝ) (z : ℂ) (n : ℕ)
+    (hzT : 2 * |z.re| ≤ quantitativeSpectralBoundaryTruncation n) :
+    ‖suzukiXiWeilVerticalBoundaryIntegral t z
+        (quantitativeSpectralBoundaryTruncation n)‖ ≤
+      2 * ((2 * (Real.exp |t| + 1) /
+          quantitativeSpectralBoundaryTruncation n ^ 2) *
+        (∫ y : ℝ in (-1 : ℝ)..1,
+          ‖xiSpectralNegativeLogDerivative
+            ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+              (y : ℂ) * Complex.I)‖)) := by
+  let T := quantitativeSpectralBoundaryTruncation n
+  let L : ℝ → ℂ := fun y ↦ xiSpectralNegativeLogDerivative
+    ((T : ℂ) + (y : ℂ) * Complex.I)
+  let IR : ℂ := ∫ y : ℝ in (-1 : ℝ)..1,
+    suzukiWeilSpectralTransform t z
+        ((T : ℂ) + (y : ℂ) * Complex.I) * L y
+  let IL : ℂ := ∫ y : ℝ in (-1 : ℝ)..1,
+    suzukiWeilSpectralTransform t z
+        (-((T : ℂ) + (y : ℂ) * Complex.I)) * L y
+  let M : ℝ := 2 * (Real.exp |t| + 1) / T ^ 2
+  let J : ℝ := ∫ y : ℝ in (-1 : ℝ)..1, ‖L y‖
+  have hright : ‖IR‖ ≤ M * J := by
+    simpa [IR, M, J, L, T] using
+      norm_intervalIntegral_suzukiXiWeil_quantitative_right_le
+        t z n hzT
+  have hleft : ‖IL‖ ≤ M * J := by
+    simpa [IL, M, J, L, T] using
+      norm_intervalIntegral_suzukiXiWeil_quantitative_left_le
+        t z n hzT
+  rw [suzukiXiWeilVerticalBoundaryIntegral_eq_right_reflection]
+  change ‖Complex.I * IR + Complex.I * IL‖ ≤ 2 * (M * J)
+  calc
+    ‖Complex.I * IR + Complex.I * IL‖ ≤
+        ‖Complex.I * IR‖ + ‖Complex.I * IL‖ := norm_add_le _ _
+    _ = ‖IR‖ + ‖IL‖ := by simp
+    _ ≤ M * J + M * J := add_le_add hright hleft
+    _ = 2 * (M * J) := by ring
+
+/-- Substituting the complete checked logarithmic-derivative estimate gives
+one explicit real majorant for the literal vertical boundary. -/
+theorem norm_suzukiXiWeilVerticalBoundaryIntegral_quantitative_le_of_growth
+    {A B : ℝ} (hA : 1 ≤ A)
+    (hThreeHalves : ∀ w : ℂ,
+      ‖riemannXi w‖ ≤
+        Real.exp (A * (‖w‖ + 1) ^ (3 / 2 : ℝ)))
+    (hB : 1 ≤ B)
+    (hQuadratic : ∀ w : ℂ,
+      ‖riemannXi w‖ ≤ Real.exp (B * (‖w‖ + 1) ^ 2))
+    (t : ℝ) (z : ℂ) (n : ℕ)
+    (hzT : 2 * |z.re| ≤ quantitativeSpectralBoundaryTruncation n) :
+    ‖suzukiXiWeilVerticalBoundaryIntegral t z
+        (quantitativeSpectralBoundaryTruncation n)‖ ≤
+      2 * ((2 * (Real.exp |t| + 1) /
+          quantitativeSpectralBoundaryTruncation n ^ 2) *
+        (2 * ((2 * (B * (xiCanonicalRadius n + 1) ^ 2)) /
+            (xiCanonicalRadius n / 4)) +
+          (A * (2 * xiCanonicalRadius n + 1) ^ (3 / 2 : ℝ) /
+              Real.log 2) *
+            (4 / xiCanonicalRadius n +
+              2 * Real.log
+                (1 + 3 / spectralBoundarySeparation n)))) := by
+  have hvertical :=
+    norm_suzukiXiWeilVerticalBoundaryIntegral_quantitative_le t z n hzT
+  have hlog :=
+    intervalIntegral_norm_xiSpectralNegativeLogDerivative_quantitative_le_of_growth
+      hA hThreeHalves hB hQuadratic n
+  calc
+    ‖suzukiXiWeilVerticalBoundaryIntegral t z
+        (quantitativeSpectralBoundaryTruncation n)‖ ≤
+      2 * ((2 * (Real.exp |t| + 1) /
+          quantitativeSpectralBoundaryTruncation n ^ 2) *
+        (∫ y : ℝ in (-1 : ℝ)..1,
+          ‖xiSpectralNegativeLogDerivative
+            ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+              (y : ℂ) * Complex.I)‖)) := hvertical
+    _ ≤ 2 * ((2 * (Real.exp |t| + 1) /
+          quantitativeSpectralBoundaryTruncation n ^ 2) *
+        (2 * ((2 * (B * (xiCanonicalRadius n + 1) ^ 2)) /
+            (xiCanonicalRadius n / 4)) +
+          (A * (2 * xiCanonicalRadius n + 1) ^ (3 / 2 : ℝ) /
+              Real.log 2) *
+            (4 / xiCanonicalRadius n +
+              2 * Real.log
+                (1 + 3 / spectralBoundarySeparation n)))) := by
+      have hT : 0 < quantitativeSpectralBoundaryTruncation n :=
+        (Nat.cast_nonneg n).trans_lt
+          (quantitativeSpectralBoundaryTruncation_spec n).1
+      gcongr
 
 end
 
