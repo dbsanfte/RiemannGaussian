@@ -1,5 +1,6 @@
 import RiemannGaussian.RiemannXiSuzukiWeilArchimedean
 import RiemannGaussian.GaussianXiDivisorContour
+import RiemannGaussian.GaussianXiQuantitativeContour
 
 /-!
 # The global Suzuki--Weil divisor bridge
@@ -700,6 +701,149 @@ theorem suzukiXiWeilSpectralIntegrand_rectangle_eq_spectralPWindow
       t hz hT hboundary,
     spectralRectangleBoundaryIntegral_suzukiXiWeilWindowPrincipalSum
       t z hT hboundary]
+
+/-! ## Passing from finite rectangles to the complete spectral sum -/
+
+/-- The difference of the lower and upper horizontal sides of the Suzuki--xi
+rectangle.  Keeping this separate from the vertical contribution isolates the
+safe-line evaluation needed in the infinite-contour argument. -/
+def suzukiXiWeilHorizontalBoundaryIntegral
+    (t : ℝ) (z : ℂ) (T : ℝ) : ℂ :=
+  (∫ x : ℝ in -T..T,
+      suzukiXiWeilSpectralIntegrand t z ((x : ℂ) - Complex.I)) -
+    (∫ x : ℝ in -T..T,
+      suzukiXiWeilSpectralIntegrand t z ((x : ℂ) + Complex.I))
+
+/-- The two oriented vertical sides of the Suzuki--xi rectangle. -/
+def suzukiXiWeilVerticalBoundaryIntegral
+    (t : ℝ) (z : ℂ) (T : ℝ) : ℂ :=
+  Complex.I * (∫ y : ℝ in (-1 : ℝ)..1,
+      suzukiXiWeilSpectralIntegrand t z
+        ((T : ℂ) + (y : ℂ) * Complex.I)) -
+    Complex.I * (∫ y : ℝ in (-1 : ℝ)..1,
+      suzukiXiWeilSpectralIntegrand t z
+        ((-T : ℂ) + (y : ℂ) * Complex.I))
+
+/-- The full rectangle boundary is exactly its horizontal part plus its
+vertical part. -/
+theorem spectralRectangleBoundaryIntegral_suzukiXiWeilSpectralIntegrand_eq_parts
+    (t : ℝ) (z : ℂ) (T : ℝ) :
+    spectralRectangleBoundaryIntegral T
+        (suzukiXiWeilSpectralIntegrand t z) =
+      suzukiXiWeilHorizontalBoundaryIntegral t z T +
+        suzukiXiWeilVerticalBoundaryIntegral t z T := by
+  unfold spectralRectangleBoundaryIntegral
+    suzukiXiWeilHorizontalBoundaryIntegral
+    suzukiXiWeilVerticalBoundaryIntegral
+  ring
+
+/-- Finite zero-free rectangles already give the exact decomposed identity
+whose limit will be taken below. -/
+theorem suzukiXiWeilHorizontal_add_vertical_eq_spectralPWindow
+    (t : ℝ) {z : ℂ} (hz : 1 < z.im) {T : ℝ} (hT : 0 ≤ T)
+    (hboundary : ∀ rho : NontrivialZetaZero,
+      |(zetaSpectralCoordinate rho.1).re| ≠ T) :
+    suzukiXiWeilHorizontalBoundaryIntegral t z T +
+        suzukiXiWeilVerticalBoundaryIntegral t z T =
+      -(((2 * Real.pi : ℝ) : ℂ)) *
+        suzukiXiSpectralPWindow t T z := by
+  rw [←
+    spectralRectangleBoundaryIntegral_suzukiXiWeilSpectralIntegrand_eq_parts]
+  exact suzukiXiWeilSpectralIntegrand_rectangle_eq_spectralPWindow
+    t hz hT hboundary
+
+/-- Along any nonnegative zero-free truncation sequence tending to infinity,
+convergence of the horizontal contribution to `H` and vanishing of the
+vertical contribution force `H` to be exactly minus `2π` times the complete
+Suzuki spectral function.  Thus no infinite residue theorem is assumed: this
+is a direct limit of the finite identity above. -/
+theorem suzukiXiWeilHorizontalLimit_eq_spectralP_of_admissible_limits
+    (t : ℝ) {z : ℂ} (hz : 1 < z.im) (T : ℕ → ℝ)
+    (hTnonneg : ∀ n, 0 ≤ T n)
+    (hTtop : Tendsto T atTop atTop)
+    (hTboundary : ∀ (n : ℕ) (rho : NontrivialZetaZero),
+      |(zetaSpectralCoordinate rho.1).re| ≠ T n)
+    {H : ℂ}
+    (hhorizontal : Tendsto
+      (fun n : ℕ ↦ suzukiXiWeilHorizontalBoundaryIntegral t z (T n))
+      atTop (𝓝 H))
+    (hvertical : Tendsto
+      (fun n : ℕ ↦ suzukiXiWeilVerticalBoundaryIntegral t z (T n))
+      atTop (𝓝 0)) :
+    H = -(((2 * Real.pi : ℝ) : ℂ)) *
+      riemannXiSuzukiSpectralP t z := by
+  have hleft : Tendsto
+      (fun n : ℕ ↦
+        suzukiXiWeilHorizontalBoundaryIntegral t z (T n) +
+          suzukiXiWeilVerticalBoundaryIntegral t z (T n))
+      atTop (𝓝 H) := by
+    simpa using hhorizontal.add hvertical
+  have hzHalf : (1 / 2 : ℝ) < z.im := by linarith
+  have hwindow :=
+    (tendsto_suzukiXiSpectralPWindow t hzHalf).comp hTtop
+  have hright : Tendsto
+      (fun n : ℕ ↦ -(((2 * Real.pi : ℝ) : ℂ)) *
+        suzukiXiSpectralPWindow t (T n) z)
+      atTop
+      (𝓝 (-(((2 * Real.pi : ℝ) : ℂ)) *
+        riemannXiSuzukiSpectralP t z)) :=
+    tendsto_const_nhds.mul hwindow
+  have hrightAsLeft := hright.congr'
+    (Filter.Eventually.of_forall fun n ↦ by
+      symm
+      exact suzukiXiWeilHorizontal_add_vertical_eq_spectralPWindow
+        t hz (hTnonneg n) (hTboundary n))
+  exact tendsto_nhds_unique hleft hrightAsLeft
+
+/-- The generic limit theorem specialized to the quantitatively separated
+zero-free contour chosen in every unit interval. -/
+theorem suzukiXiWeilHorizontalLimit_eq_spectralP_of_quantitative_limits
+    (t : ℝ) {z : ℂ} (hz : 1 < z.im) {H : ℂ}
+    (hhorizontal : Tendsto
+      (fun n : ℕ ↦ suzukiXiWeilHorizontalBoundaryIntegral t z
+        (quantitativeSpectralBoundaryTruncation n))
+      atTop (𝓝 H))
+    (hvertical : Tendsto
+      (fun n : ℕ ↦ suzukiXiWeilVerticalBoundaryIntegral t z
+        (quantitativeSpectralBoundaryTruncation n))
+      atTop (𝓝 0)) :
+    H = -(((2 * Real.pi : ℝ) : ℂ)) *
+      riemannXiSuzukiSpectralP t z := by
+  apply suzukiXiWeilHorizontalLimit_eq_spectralP_of_admissible_limits
+    t hz quantitativeSpectralBoundaryTruncation
+  · intro n
+    exact (Nat.cast_nonneg n).trans
+      (quantitativeSpectralBoundaryTruncation_spec n).1.le
+  · exact tendsto_quantitativeSpectralBoundaryTruncation_atTop
+  · exact quantitativeSpectralBoundaryTruncation_zeroFree
+  · exact hhorizontal
+  · exact hvertical
+
+/-- Once the safe-line calculation identifies the horizontal limit with the
+already evaluated arithmetic expression and the selected vertical sides
+vanish, the arithmetic and spectral Suzuki functions are equal at the given
+height-above-one point. -/
+theorem riemannXiSuzukiArithmeticPPositive_eq_spectral_of_quantitative_limits
+    (t : ℝ) {z : ℂ} (hz : 1 < z.im)
+    (hhorizontal : Tendsto
+      (fun n : ℕ ↦ suzukiXiWeilHorizontalBoundaryIntegral t z
+        (quantitativeSpectralBoundaryTruncation n))
+      atTop
+      (𝓝 (-(((2 * Real.pi : ℝ) : ℂ)) *
+        riemannXiSuzukiArithmeticPPositive t z)))
+    (hvertical : Tendsto
+      (fun n : ℕ ↦ suzukiXiWeilVerticalBoundaryIntegral t z
+        (quantitativeSpectralBoundaryTruncation n))
+      atTop (𝓝 0)) :
+    riemannXiSuzukiArithmeticPPositive t z =
+      riemannXiSuzukiSpectralP t z := by
+  have hscaled :=
+    suzukiXiWeilHorizontalLimit_eq_spectralP_of_quantitative_limits
+      t hz hhorizontal hvertical
+  have hscale : -(((2 * Real.pi : ℝ) : ℂ)) ≠ 0 :=
+    neg_ne_zero.mpr (Complex.ofReal_ne_zero.mpr
+      (mul_ne_zero (by norm_num) Real.pi_ne_zero))
+  exact mul_left_cancel₀ hscale hscaled
 
 end
 

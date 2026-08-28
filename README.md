@@ -317,11 +317,16 @@ current checked state, not a list of conjectural steps.
   removed by one checked holomorphic regularization. Cauchy's theorem then
   proves that the literal boundary integral of the actual weighted xi
   logarithmic derivative is exactly `-2*pi` times the genuine finite spectral
-  `P_t(z)` window. What remains is the global limiting passage: evaluate the
-  two safe horizontal lines as the already closed local Weil RHS, prove the
-  vertical sides vanish along admissible truncations, pass the finite windows
-  to the complete spectral sum, and then extend from `Im(z) > 1` to the full
-  safe half-plane by holomorphic identity.
+  `P_t(z)` window. The limiting interface is now closed too: Lean separates
+  horizontal and vertical sides, proves the finite decomposed identity, and
+  proves along every admissible zero-free sequence that convergence of the
+  horizontal term and vanishing of the vertical term force its limit to be
+  `-2*pi` times the complete spectral `P_t(z)`. This is specialized to the
+  quantitatively separated contours, where Lean also proves that the two
+  limits imply arithmetic `P_t(z) =` spectral `P_t(z)`. The remaining inputs
+  above height one are therefore exactly the safe-line evaluation and the
+  quantified vertical-side decay; after those, holomorphic identity extends
+  the equality to the full safe half-plane.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
