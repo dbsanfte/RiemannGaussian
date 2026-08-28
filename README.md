@@ -501,6 +501,17 @@ current checked state, not a list of conjectural steps.
   component of Suzuki's positive-time arithmetic signal is therefore in
   `L²(ℝ)`; only the final definitional regrouping and finite-addition theorem
   remain before Proposition 1.1 is closed in Lean.
+- That assembly is now complete. Lean unfolds the literal real-axis
+  restriction of `riemannXiSuzukiArithmeticSignalPositive`, distributes the
+  common xi carrier across the five arithmetic terms, and proves exact
+  pointwise equality with the already verified component sum. Finite
+  `MemLp.add` then proves the complete positive-time arithmetic signal belongs
+  to `L²(ℝ)` for every `t > 0`. The theorem is also restated directly for the
+  original complex signal and packaged as an actual `Lp ℂ 2 ℝ` element with
+  its almost-everywhere representative proved. This closes the positive-time
+  form of Suzuki's `S_t ∈ L²(ℝ)` proposition without asymptotic assumptions,
+  hidden removable values, or appeal to the spectral expansion on the real
+  boundary.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1037,11 +1048,14 @@ The standalone digamma component has now joined them, including a checked
 linear numerator estimate that resolves its totalized zero-frequency
 quotient. The positive-time Hurwitz--Lerch component is now square-integrable
 too, with both its zero-frequency cancellation and geometric tail proved from
-the defining series. The immediate obligation is now only the finite
-addition/identity assembly of Suzuki's complete `S_t ∈ L²(ℝ)` proposition.
-Beyond that lies the genuinely new step: extract a positive Gram/norm
-constraint strong enough to force the Gaussian epsilon-positivity statement,
-rather than attempting a non-scalable chain of finite certificates.
+the defining series. Their literal finite-addition/identity assembly is now
+complete, so Suzuki's positive-time arithmetic signal is an actual element of
+`L²(ℝ, ℂ)`. The project has therefore reached the intended post-analytic
+frontier: extract a positive Gram/norm identity or inequality from this
+Hilbert-space signal and connect it to the reflected-height Gaussian
+invariant. That is the genuinely new step needed to force the Gaussian
+epsilon-positivity statement, rather than attempting a non-scalable chain of
+finite certificates.
 
 The Hardy route seeks a structural contradiction from any off-axis xi zero.
 The one-quartet finite theory and its real/Herglotz background are formalized.
