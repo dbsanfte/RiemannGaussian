@@ -656,6 +656,18 @@ current checked state, not a list of conjectural steps.
   the first scalar Herglotz-transform realization of the cancellation-
   sensitive Gram kernel; a rigidity or quantitative bound for this
   particular transform is still required.
+- The transform's analyticity is now proved from its literal infinite-density
+  integral, not assumed from Herglotz terminology. Lean proves absolute
+  integrability of the density-weighted squared resolvent, constructs a
+  half-height complex neighborhood with an explicit integrable factor-four
+  majorant, and checks dominated differentiation under the integral. Thus
+  `H'(z) = integral density(x)/(x-z)^2 dx` for every nonreal `z`, and `H` is
+  analytic on the complement of the real axis. The carrier Gram kernel is
+  now identified with a total confluent divided difference of `H` for every
+  pair of genuine off-axis xi nodes: it is the ordinary quotient at distinct
+  reflected parameters and exactly `H'` when those parameters collide. This
+  closes the analytic collision case; the still-open step is xi-specific
+  quantitative rigidity along the actual Suzuki coefficient tails.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1217,11 +1229,15 @@ its normalization-weighted quadratic. Its positive weight is now also the
 explicit bounded measurable xi-energy ratio
 `xi(x)^2/(xi(x)^2+xi'(x)^2)`, with the totalized simultaneous-zero value
 handled separately. Its normalized Cauchy transform is now constructed and
-proved to have nonnegative imaginary part in the upper half-plane, and its
-Loewner--Pick kernel at genuine upper xi nodes is exactly the carrier Gram
-kernel. What is still missing is a quantitative bound or rigidity theorem
-for this specific xi-energy Herglotz transform that forces the structured
-quadratic to vanish along the actual Suzuki coefficient tails. After that,
+proved to have nonnegative imaginary part in the upper half-plane. Direct
+dominated differentiation proves it analytic off the real axis with derivative
+equal to the density-weighted squared resolvent. Its Loewner--Pick kernel at
+genuine upper xi nodes is exactly the carrier Gram kernel, and a total
+confluent divided difference gives the same identity for every genuine
+off-axis node pair, including reflected-parameter collisions. What is still
+missing is a quantitative bound or rigidity theorem for this specific
+xi-energy Herglotz transform that forces the structured quadratic to vanish
+along the actual Suzuki coefficient tails. After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
 dense boundary test family, or the pair of scalar limits consisting of the
