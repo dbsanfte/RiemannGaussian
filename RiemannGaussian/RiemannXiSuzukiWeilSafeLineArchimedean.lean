@@ -1349,6 +1349,238 @@ theorem integral_suzukiWeilSafeLineSpectralWeight_mul_digammaFactor
         integral_suzukiWeilSafeLineSpectralWeight_eq_zero ht.le hz]
       ring
 
+/-! ## Assembly of the complete horizontal safe-line factor -/
+
+/-- The complete Archimedean factor in the safe-line completed-zeta
+decomposition is `2π` times the elementary integral minus the literal
+positive-time Archimedean integral. -/
+theorem integral_suzukiWeilSafeLineSpectralWeight_mul_archimedeanTerms
+    {t : ℝ} (ht : 0 < t) {z : ℂ} (hz : 1 < z.im) :
+    (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        archimedeanSpectralTerms ((r : ℂ) - Complex.I)) =
+      ((2 * Real.pi : ℝ) : ℂ) *
+        ((∫ x : ℝ, suzukiWeilElementaryIntegrand t z x) -
+          ∫ x : ℝ in Ioi 0,
+            suzukiWeilArchimedeanIntegrand t z x) := by
+  have harch :=
+    integrable_suzukiWeilSafeLineSpectralWeight_mul_archimedeanTerms t hz
+  have hdigamma : Integrable (fun r : ℝ ↦
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (Complex.digamma (3 / 4 + Complex.I * (r / 2)) / 2)) := by
+    have h :=
+      (integrable_suzukiWeilSafeLineSpectralWeight_mul_digamma t hz).mul_const
+        ((2 : ℂ)⁻¹)
+    exact h.congr (Filter.Eventually.of_forall fun r ↦ by ring)
+  have helementary : Integrable (fun r : ℝ ↦
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (((((3 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹ +
+          (((1 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹) -
+            Complex.log Real.pi / 2)) := by
+    exact (harch.sub hdigamma).congr
+      (Filter.Eventually.of_forall fun r ↦ by
+        change
+          suzukiWeilSafeLineSpectralWeight t z r *
+                archimedeanSpectralTerms ((r : ℂ) - Complex.I) -
+              suzukiWeilSafeLineSpectralWeight t z r *
+                (Complex.digamma
+                  (3 / 4 + Complex.I * (r / 2)) / 2) =
+            suzukiWeilSafeLineSpectralWeight t z r *
+              (((((3 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹ +
+                (((1 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹) -
+                  Complex.log Real.pi / 2)
+        unfold archimedeanSpectralTerms
+        rw [completedSpectralCoordinate_safeLine]
+        have hsecond :
+            3 / 2 + Complex.I * (r : ℂ) - 1 =
+              1 / 2 + Complex.I * (r : ℂ) := by ring
+        have hhalf :
+            (3 / 2 + Complex.I * (r : ℂ)) / 2 =
+              3 / 4 + Complex.I * (r / 2) := by ring
+        rw [hsecond, hhalf]
+        push_cast
+        ring)
+  calc
+    (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        archimedeanSpectralTerms ((r : ℂ) - Complex.I)) =
+        (∫ r : ℝ,
+          suzukiWeilSafeLineSpectralWeight t z r *
+            (((((3 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹ +
+              (((1 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹) -
+                Complex.log Real.pi / 2)) +
+          ∫ r : ℝ,
+            suzukiWeilSafeLineSpectralWeight t z r *
+              (Complex.digamma
+                (3 / 4 + Complex.I * (r / 2)) / 2) := by
+      rw [← integral_add helementary hdigamma]
+      apply integral_congr_ae
+      filter_upwards with r
+      unfold archimedeanSpectralTerms
+      rw [completedSpectralCoordinate_safeLine]
+      have hsecond :
+          3 / 2 + Complex.I * (r : ℂ) - 1 =
+            1 / 2 + Complex.I * (r : ℂ) := by ring
+      have hhalf :
+          (3 / 2 + Complex.I * (r : ℂ)) / 2 =
+            3 / 4 + Complex.I * (r / 2) := by ring
+      rw [hsecond, hhalf]
+      push_cast
+      ring
+    _ = ((2 * Real.pi : ℝ) : ℂ) *
+          (∫ x : ℝ, suzukiWeilElementaryIntegrand t z x) -
+        ((2 * Real.pi : ℝ) : ℂ) *
+          (∫ x : ℝ in Ioi 0,
+            suzukiWeilArchimedeanIntegrand t z x) := by
+      rw [integral_suzukiWeilSafeLineSpectralWeight_mul_elementarySpectralTerms
+          ht.le hz,
+        integral_suzukiWeilSafeLineSpectralWeight_mul_digammaFactor ht hz]
+      ring
+    _ = ((2 * Real.pi : ℝ) : ℂ) *
+        ((∫ x : ℝ, suzukiWeilElementaryIntegrand t z x) -
+          ∫ x : ℝ in Ioi 0,
+            suzukiWeilArchimedeanIntegrand t z x) := by ring
+
+/-- The actual spectral-xi negative logarithmic derivative on the lower safe
+line is absolutely integrable against the reflected Suzuki weight. -/
+theorem integrable_suzukiWeilSafeLineSpectralWeight_mul_xiSpectralNegativeLogDerivative
+    (t : ℝ) {z : ℂ} (hz : 1 < z.im) :
+    Integrable (fun r : ℝ ↦
+      suzukiWeilSafeLineSpectralWeight t z r *
+        xiSpectralNegativeLogDerivative ((r : ℂ) - Complex.I)) := by
+  have hzeta :=
+    integrable_suzukiWeilSafeLineWeight_mul_negLogDeriv_riemannZeta t hz
+  have harch :=
+    integrable_suzukiWeilSafeLineSpectralWeight_mul_archimedeanTerms t hz
+  exact (hzeta.sub harch).congr
+    (Filter.Eventually.of_forall fun r ↦ by
+      change
+        suzukiWeilSafeLineSpectralWeight t z r *
+              (-deriv riemannZeta
+                  (3 / 2 + Complex.I * (r : ℂ)) /
+                riemannZeta (3 / 2 + Complex.I * (r : ℂ))) -
+            suzukiWeilSafeLineSpectralWeight t z r *
+              archimedeanSpectralTerms ((r : ℂ) - Complex.I) =
+          suzukiWeilSafeLineSpectralWeight t z r *
+            xiSpectralNegativeLogDerivative ((r : ℂ) - Complex.I)
+      unfold xiSpectralNegativeLogDerivative
+      rw [completedSpectralCoordinate_safeLine,
+        negLogDeriv_riemannZeta_safeLine_eq_xi_add_archimedean]
+      ring)
+
+/-- The complete lower safe-line spectral-xi integral is exactly `-2π`
+times Suzuki's independently constructed arithmetic function. -/
+theorem integral_suzukiWeilSafeLineSpectralWeight_mul_xiSpectralNegativeLogDerivative
+    {t : ℝ} (ht : 0 < t) {z : ℂ} (hz : 1 < z.im) :
+    (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        xiSpectralNegativeLogDerivative ((r : ℂ) - Complex.I)) =
+      -((2 * Real.pi : ℝ) : ℂ) *
+        riemannXiSuzukiArithmeticPPositive t z := by
+  have hzeta :=
+    integrable_suzukiWeilSafeLineWeight_mul_negLogDeriv_riemannZeta t hz
+  have harch :=
+    integrable_suzukiWeilSafeLineSpectralWeight_mul_archimedeanTerms t hz
+  have hzSafe : z ∈ suzukiXiSafeUpperHalfPlane := by
+    change (1 / 2 : ℝ) < z.im
+    linarith
+  calc
+    (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        xiSpectralNegativeLogDerivative ((r : ℂ) - Complex.I)) =
+        (∫ r : ℝ,
+          suzukiWeilSafeLineSpectralWeight t z r *
+            (-deriv riemannZeta
+                (3 / 2 + Complex.I * (r : ℂ)) /
+              riemannZeta (3 / 2 + Complex.I * (r : ℂ)))) -
+          ∫ r : ℝ,
+            suzukiWeilSafeLineSpectralWeight t z r *
+              archimedeanSpectralTerms ((r : ℂ) - Complex.I) := by
+      rw [← integral_sub hzeta harch]
+      apply integral_congr_ae
+      filter_upwards with r
+      unfold xiSpectralNegativeLogDerivative
+      rw [completedSpectralCoordinate_safeLine,
+        negLogDeriv_riemannZeta_safeLine_eq_xi_add_archimedean]
+      ring
+    _ = ((2 * Real.pi : ℝ) : ℂ) *
+          ((∑' n : ℕ, suzukiWeilPositivePrimeSample t z n) +
+            ∑' n : ℕ, suzukiWeilNegativePrimeSample t z n) -
+        ((2 * Real.pi : ℝ) : ℂ) *
+          ((∫ x : ℝ, suzukiWeilElementaryIntegrand t z x) -
+            ∫ x : ℝ in Ioi 0,
+              suzukiWeilArchimedeanIntegrand t z x) := by
+      rw [integral_suzukiWeilSafeLineWeight_mul_negLogDeriv_riemannZeta
+          ht.le hz,
+        integral_suzukiWeilSafeLineSpectralWeight_mul_archimedeanTerms ht hz]
+    _ = -((2 * Real.pi : ℝ) : ℂ) *
+        ((∫ x : ℝ, suzukiWeilElementaryIntegrand t z x) -
+          ((∑' n : ℕ, suzukiWeilPositivePrimeSample t z n) +
+            ∑' n : ℕ, suzukiWeilNegativePrimeSample t z n) -
+          (∫ x : ℝ in Ioi 0,
+            suzukiWeilArchimedeanIntegrand t z x)) := by ring
+    _ = -((2 * Real.pi : ℝ) : ℂ) *
+        riemannXiSuzukiArithmeticPPositive t z := by
+      rw [suzukiWeilLocalRHS_eq_riemannXiSuzukiArithmeticPPositive
+        ht hzSafe]
+
+/-- As the symmetric horizontal truncation tends to infinity, the genuine
+Suzuki--xi horizontal boundary converges to `-2π` times the arithmetic
+function.  This discharges the horizontal hypothesis of the global contour
+meeting theorem. -/
+theorem tendsto_suzukiXiWeilHorizontalBoundaryIntegral_atTop
+    {t : ℝ} (ht : 0 < t) {z : ℂ} (hz : 1 < z.im) :
+    Tendsto (fun T : ℝ ↦
+      suzukiXiWeilHorizontalBoundaryIntegral t z T) atTop
+      (𝓝 (-((2 * Real.pi : ℝ) : ℂ) *
+        riemannXiSuzukiArithmeticPPositive t z)) := by
+  have hintegrable :=
+    integrable_suzukiWeilSafeLineSpectralWeight_mul_xiSpectralNegativeLogDerivative
+      t hz
+  have hlimit := intervalIntegral_tendsto_integral hintegrable
+    tendsto_neg_atTop_atBot tendsto_id
+  have hhorizontal : Tendsto (fun T : ℝ ↦
+      suzukiXiWeilHorizontalBoundaryIntegral t z T) atTop
+      (𝓝 (∫ r : ℝ,
+        suzukiWeilSafeLineSpectralWeight t z r *
+          xiSpectralNegativeLogDerivative
+            ((r : ℂ) - Complex.I))) := by
+    exact hlimit.congr' (Filter.Eventually.of_forall fun T ↦
+      (suzukiXiWeilHorizontalBoundaryIntegral_eq_safeLineWeight
+        t hz T).symm)
+  rw [integral_suzukiWeilSafeLineSpectralWeight_mul_xiSpectralNegativeLogDerivative
+    ht hz] at hhorizontal
+  exact hhorizontal
+
+/-- The quantitatively separated zero-free truncation sequence inherits the
+proved horizontal limit. -/
+theorem tendsto_suzukiXiWeilHorizontalBoundaryIntegral_quantitative
+    {t : ℝ} (ht : 0 < t) {z : ℂ} (hz : 1 < z.im) :
+    Tendsto (fun n : ℕ ↦
+      suzukiXiWeilHorizontalBoundaryIntegral t z
+        (quantitativeSpectralBoundaryTruncation n)) atTop
+      (𝓝 (-((2 * Real.pi : ℝ) : ℂ) *
+        riemannXiSuzukiArithmeticPPositive t z)) :=
+  (tendsto_suzukiXiWeilHorizontalBoundaryIntegral_atTop ht hz).comp
+    tendsto_quantitativeSpectralBoundaryTruncation_atTop
+
+/-- After the fully evaluated horizontal limit, the arithmetic--spectral
+Suzuki meeting theorem has only the quantified vertical-side limit left as
+an input. -/
+theorem riemannXiSuzukiArithmeticPPositive_eq_spectral_of_quantitative_vertical_limit
+    {t : ℝ} (ht : 0 < t) {z : ℂ} (hz : 1 < z.im)
+    (hvertical : Tendsto
+      (fun n : ℕ ↦ suzukiXiWeilVerticalBoundaryIntegral t z
+        (quantitativeSpectralBoundaryTruncation n))
+      atTop (𝓝 0)) :
+    riemannXiSuzukiArithmeticPPositive t z =
+      riemannXiSuzukiSpectralP t z := by
+  exact
+    riemannXiSuzukiArithmeticPPositive_eq_spectral_of_quantitative_limits
+      t hz
+        (tendsto_suzukiXiWeilHorizontalBoundaryIntegral_quantitative ht hz)
+        hvertical
+
 end
 
 end RiemannGaussian

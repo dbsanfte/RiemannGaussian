@@ -364,10 +364,17 @@ current checked state, not a list of conjectural steps.
   the proved Fourier--Laplace theorem; zero mean kills its constant part, and
   the complete series is exactly `-2*pi` times the literal positive-time
   Archimedean kernel integral. Thus every local factor needed on the
-  horizontal safe line has now been evaluated independently. The next step is
-  to assemble these factor identities with the completed-zeta logarithmic
-  derivative decomposition, then prove the horizontal contour limit and the
-  remaining quantified vertical-side decay.
+  horizontal safe line has now been evaluated independently. Those factors
+  are now assembled in Lean with the exact completed-zeta logarithmic-
+  derivative decomposition: the full reflected safe-line integral of the
+  genuine spectral-xi negative logarithmic derivative is
+  `-2*pi * arithmetic P_t(z)`. Absolute integrability then proves convergence
+  of the symmetric horizontal contour integrals to that value, both as a real
+  cutoff tends to infinity and along the quantitatively separated zero-free
+  truncation sequence. The horizontal hypothesis of the global meeting
+  theorem is therefore discharged. Above height one, arithmetic
+  `P_t(z) =` spectral `P_t(z)` now requires only the quantified vertical-side
+  limit to vanish.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
