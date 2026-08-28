@@ -20,19 +20,21 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now proves the formerly open large-height endpoint estimate:
+Lean now feeds the checked large-height endpoint estimate
 
-`max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0`.
+`max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0`
 
-The checked paired-eta `o(T_n)` theorem transfers through the exact eta
-factorization: Lean proves the critical-line eta factor has norm at most `3`,
-uses its existing positive lower bound and endpoint nonvanishing to split the
-logarithm rigorously, and completes the max/squeeze limit for zeta.
+into the existing static-contour asymptotic. The normalized zeta correction
+therefore vanishes, and Lean proves that for every fixed `v > 1` the selected
+zero-height signed vertical remainder satisfies
 
-This closes the previous orange frontier. The new unchecked frontier is to
-feed the endpoint theorem through the static contour limit and force the
-positive Hardy/heat defect to vanish. That rigidity theorem is the remaining
-hard step toward RH. This repository is not yet a proof of RH.
+`V(T_n, 0, iv) → 0`.
+
+This removes the endpoint correction from the static boundary limit. The
+unchecked frontier is now to identify the resulting zero boundary data with
+the positive Hardy/heat defect strongly enough to force that defect to vanish.
+That rigidity theorem is the remaining hard step toward RH. This repository
+is not yet a proof of RH.
 
 ## Mathematical Program
 

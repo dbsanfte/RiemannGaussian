@@ -63,11 +63,11 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
-    label := "Critical zeta negative log sublinear"
-    lineOne := "critical zeta log⁻"
-    lineTwo := "o(T)"
+    label := "Static signed vertical remainder vanishes"
+    lineOne := "static vertical"
+    lineTwo := "remainder → 0"
     theoremName :=
-      ``RiemannGaussian.tendsto_criticalZeta_log_negativePart_div_quantitative_zero
+      ``RiemannGaussian.tendsto_xiSpectralBlaschkeSignedVerticalRemainderWindow_zero_imaginary_quantitative_zero
   }
 ]
 
