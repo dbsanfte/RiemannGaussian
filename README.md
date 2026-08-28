@@ -374,7 +374,14 @@ current checked state, not a list of conjectural steps.
   truncation sequence. The horizontal hypothesis of the global meeting
   theorem is therefore discharged. Above height one, arithmetic
   `P_t(z) =` spectral `P_t(z)` now requires only the quantified vertical-side
-  limit to vanish.
+  limit to vanish. The direct vertical attack has begun with the strict
+  exponent gap kept intact: Lean proves a `3/2`-power divisor-window count and
+  reciprocal contour-separation bound, a uniform inverse-square bound for
+  Suzuki's transform on both vertical sides, and the exact `arsinh` integral
+  (with a logarithmic upper bound) for reciprocal distance from a zero across
+  the height-two segment. What remains is to sum those integrated
+  canonical-factor estimates, control the residual logarithmic derivative,
+  and prove the resulting vertical boundary tends to zero.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
