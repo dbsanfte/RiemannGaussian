@@ -738,9 +738,17 @@ current checked state, not a list of conjectural steps.
   between nonpositive and strictly positive powers is the Hankel kernel
   `M_(m+n+1)`. Its finite sesquilinear form is exactly the Hilbert pairing of
   the two Hardy-orbit syntheses, while every finite bilateral Toeplitz
-  quadratic is a nonnegative squared norm. Decay or rigidity of this
-  xi-specific Hankel moment sequence is not asserted; it is now a concrete
-  arithmetic target.
+  quadratic is a nonnegative squared norm. Lean now also performs the exact
+  global change of variables `theta=arctan(x)+pi/2`: the Cayley characters
+  become the ordinary Fourier characters on the additive circle of length
+  `pi`, while the transformed xi-carrier density remains bounded by one and
+  belongs to circle `L²`. Parseval therefore proves unconditionally that the
+  full bilateral sequence satisfies `sum_k norm(M_k)^2 < infinity`. In
+  particular `M_n -> 0` for positive integers, and every fixed row and column
+  of the Hardy Hankel block tends entrywise to zero. This proves qualitative
+  Cayley-moment decay but not the weighted square summability
+  `sum (k+1)*norm(M_k)^2`, a quantitative rate, Hankel compactness, or the
+  xi-specific rigidity needed to close the tail theorem.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1340,9 +1348,13 @@ focus on cancellation between these two cyclic Hardy components and the
 separate real-node boundary component. Their scalar cross interaction is now
 identified exactly with the Hankel moment matrix `M_(m+n+1)` of the finite
 xi-energy measure, and the full bilateral moment sequence is proved positive
-definite. Thus one concrete next route is to derive xi-arithmetic decay,
-compactness, or rigidity for this Hankel operator, while retaining a separate
-boundary argument for real nodes. After that,
+definite and square summable. The exact arctangent/Cayley change of variables
+identifies these moments with Fourier coefficients of a bounded circle
+density, so their positive tail and every fixed Hankel row and column now
+vanish. Thus the next route must go beyond qualitative Riemann--Lebesgue
+decay: derive a weighted moment estimate, symbol regularity, compactness, or
+xi-specific rigidity strong enough to annihilate the actual Suzuki tail,
+while retaining a separate boundary argument for real nodes. After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
 dense boundary test family, or the pair of scalar limits consisting of the
