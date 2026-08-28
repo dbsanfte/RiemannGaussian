@@ -83,6 +83,32 @@ Lake builds independent modules in parallel. Direct elaboration of one Lean
 module is normally one process; do not mistake that focused check for the
 parallel full-library build.
 
+## Commit and check-in invariant
+
+The repository history is the durable record of verified progress. Enforce
+this regime yourself; do not rely on the user to request individual commits,
+pushes, or CI checks.
+
+- Begin a new slice only from a clean worktree whose current `HEAD` has a
+  successful GitHub Actions run with exactly the same full commit SHA.
+- Keep one coherent mathematical or infrastructure slice per commit. Do not
+  mix unrelated cleanup into it, and do not leave concrete verified progress
+  only in the working tree.
+- Before committing, stage the complete intended slice and verify the staged
+  content with all applicable local gates, `git diff --cached --check`, and
+  the tracked pre-commit hook. Documentation-only and CI-only commits are not
+  exempt from the gate.
+- Do not bypass the pre-commit hook. If an exceptional environment prevents
+  the hook from running, execute every command it enforces manually and record
+  that fact in the handoff.
+- Push each passing commit promptly, record its full SHA, locate the workflow
+  run whose `headSha` is exactly that SHA, and require a `success` conclusion.
+- While exact-SHA CI is pending, do not start or commit the next slice. If CI
+  fails, work only on repairing that same slice, rerun every affected local
+  gate, push the repair as a new commit, and verify the replacement SHA.
+- Progress reports and handoffs must distinguish local success from remote
+  verification and should cite both the exact commit SHA and CI run number.
+
 ## Mandatory local gates
 
 Use the repository's pinned Lean toolchain. In environments where `lake` is
