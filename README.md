@@ -538,6 +538,14 @@ current checked state, not a list of conjectural steps.
   time. Thus coefficient-space convergence is unconditional; transporting it
   through the zero-function family still requires a bounded synthesis/Gram
   estimate.
+- That missing infinite passage is now isolated as an exact Lean proposition,
+  not silently assumed. Arbitrary finitely supported zero coefficients have
+  canonical linear synthesis and `ℓ²` embedding maps. Lean proves that a
+  uniform Bessel norm bound is equivalent to the corresponding uniform finite
+  Gram-quadratic bound. Any witness makes the normalized and published
+  genuine spectral windows converge in boundary `L²`, with an explicit norm
+  bound by the complete coefficient vector. No witness is proved yet; its
+  construction is the current new-mathematics problem.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1082,14 +1090,16 @@ boundary `L²` vectors as well. The project has therefore reached the intended
 post-analytic frontier. The exact finite Gram/norm identity is now complete,
 including its normalization by the existing complete `ℓ²` coefficient vector.
 The genuine symmetric coefficient windows now also converge unconditionally
-in `ℓ²`, with an exact truncation-error identity. What remains is a bounded
-zero-function synthesis/Gram estimate that transports this convergence to
-boundary `L²`, followed by identification of that limit with the arithmetic
-signal (or a direct norm comparison with it and the reflected-height Gaussian
-invariant). That infinite comparison remains genuinely new mathematics; it is
-not inferred from safe-half-plane pointwise equality. This is the step needed
-to force the Gaussian epsilon-positivity statement, rather than attempting a
-non-scalable chain of finite certificates.
+in `ℓ²`, with an exact truncation-error identity. The sufficient bounded
+zero-function synthesis estimate has now been stated exactly, proved
+equivalent to a uniform finite Gram bound, and proved to imply quantitative
+boundary-`L²` convergence. What remains is to prove that estimate (or a
+weaker direct estimate for the Suzuki coefficient path), then identify the
+resulting limit with the arithmetic signal or compare its norm directly with
+the reflected-height Gaussian invariant. That infinite comparison remains
+genuinely new mathematics; it is not inferred from safe-half-plane pointwise
+equality. This is the step needed to force the Gaussian epsilon-positivity
+statement, rather than attempting a non-scalable chain of finite certificates.
 
 The Hardy route seeks a structural contradiction from any off-axis xi zero.
 The one-quartet finite theory and its real/Herglotz background are formalized.
