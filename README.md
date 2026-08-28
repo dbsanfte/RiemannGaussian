@@ -29,13 +29,19 @@ multiplicity count
 `N_eta(T) ≤ log(C * (T + 4)) / log(10 / 9)`.
 
 Consequently `N_eta(T_n) / T_n → 0` on the quantitative contour sequence.
-This removes the global `O(T log T)` zero count from the prospective endpoint
-lower bound. The next unchecked step is to construct and control the local
-zero-free eta residual, including separation from genuine zeta zeros and the
-explicit eta-factor zeros. Only then will the target
-`max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0` follow. The broader argument must
-then force the positive Hardy/heat defect to vanish; this repository is not
-yet a proof of RH.
+Lean also classifies every local eta-divisor point as either a genuine
+nontrivial zeta zero or an explicit eta-factor zero. The first class inherits
+the quantitative contour separation; the second lies on `Re(s) = 1` and has
+a fixed half-unit horizontal gap. Thus one checked separation radius controls
+every local eta zero.
+
+This removes both the global `O(T log T)` count and the local zero-classification
+obstruction from the prospective endpoint lower bound. The next unchecked
+step is to construct and bound the local zero-free eta residual. That is the
+remaining local analytic step toward
+`max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0`; the broader argument must then force
+the positive Hardy/heat defect to vanish. This repository is not yet a proof
+of RH.
 
 ## Mathematical Program
 
