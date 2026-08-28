@@ -881,10 +881,15 @@ current checked state, not a list of conjectural steps.
   reflected lower rectangle is now proved with the same `eta`, using
   critical-line conjugation to separate its poles. Subtracting the two actual
   contour integrals gives exactly `-2*pi` times the signed upper-minus-lower
-  Suzuki response. Its actual screw-time derivative at zero is therefore
-  `-2*pi*(-i)` times the finite Blaschke logarithmic derivative. The remaining
-  contour task is quantitative: control the inner horizontal and vertical
-  sides as the inner lines approach the real boundary and the window expands.
+  Suzuki response. Lean now passes the screw-time derivative rigorously
+  through all eight finite side integrals using an explicit locally uniform
+  exponential majorant. At time zero, cancellation of the nonzero factor
+  `-i` gives a static identity: the signed upper-minus-lower contour of the
+  genuine spectral `(-xi'/xi)(w)/(z-w)` kernel is exactly `-2*pi` times the
+  finite Blaschke logarithmic derivative. The remaining contour task is
+  quantitative: control the inner horizontal and vertical sides as the inner
+  lines approach the real boundary and the window expands; no unproved
+  derivative--integral interchange remains in that task.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
@@ -1582,11 +1587,13 @@ the actual transformed spectral-xi logarithmic derivative. Critical-line
 conjugation proves that the same bottom height separates the lower divisor,
 and the reflected lower rectangle recovers the lower restricted window.
 Their oriented difference is now the signed response itself, up to the exact
-factor `-2*pi`, and differentiating this contour-defined function at time zero
-recovers the finite Blaschke detector. The remaining arithmetic-projection
-frontier is quantitative control of the inner horizontal and vertical sides
-as the inner contours approach the real axis and the spectral window grows,
-using the proved arithmetic safe-line, real-axis, and vertical estimates.
+factor `-2*pi`. Dominated differentiation is now proved separately on every
+finite side, and at time zero it yields the static signed contour formula for
+the genuine spectral `(-xi'/xi)(w)/(z-w)` kernel and the finite Blaschke
+detector. The remaining arithmetic-projection frontier is quantitative
+control of the inner horizontal and vertical sides as the inner contours
+approach the real axis and the spectral window grows, using the proved
+arithmetic safe-line, real-axis, and vertical estimates.
 The isolated real-node remainder is the parallel boundary task. Lean proves
 that these two vanishing statements together recover the prior
 Cayley-weighted tail condition and hence the original coefficient-tail Gram
