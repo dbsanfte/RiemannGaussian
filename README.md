@@ -728,6 +728,19 @@ current checked state, not a list of conjectural steps.
   every finite weighted synthesis supported off the real axis lies in their
   closed sum. Real spectral nodes remain boundary features and are not
   silently included in a convergent geometric series.
+- The scalar coupling between those two cyclic Hardy sectors is now an
+  explicit xi-energy moment problem. Lean packages every integer power of
+  the boundary Cayley coordinate as an `L²(mu)` vector and proves that its
+  bilateral Gram matrix is Toeplitz, with entry `M_(n-m)`. Each `M_k` is
+  literally the corresponding Cayley character integrated against the
+  finite xi-energy Nevanlinna measure, satisfies
+  `M_(-k)=conj(M_k)`, and has norm at most `mu(R) <= pi`. The cross Gram block
+  between nonpositive and strictly positive powers is the Hankel kernel
+  `M_(m+n+1)`. Its finite sesquilinear form is exactly the Hilbert pairing of
+  the two Hardy-orbit syntheses, while every finite bilateral Toeplitz
+  quadratic is a nonnegative squared norm. Decay or rigidity of this
+  xi-specific Hankel moment sequence is not asserted; it is now a concrete
+  arithmetic target.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1324,7 +1337,12 @@ norm limits of geometric sums of nonpositive unitary powers, lower nodes are
 norm limits of strictly positive powers, and functional partners exchange the
 two through reciprocal Cayley parameters. The open analysis can therefore
 focus on cancellation between these two cyclic Hardy components and the
-separate real-node boundary component. After that,
+separate real-node boundary component. Their scalar cross interaction is now
+identified exactly with the Hankel moment matrix `M_(m+n+1)` of the finite
+xi-energy measure, and the full bilateral moment sequence is proved positive
+definite. Thus one concrete next route is to derive xi-arithmetic decay,
+compactness, or rigidity for this Hankel operator, while retaining a separate
+boundary argument for real nodes. After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
 dense boundary test family, or the pair of scalar limits consisting of the
