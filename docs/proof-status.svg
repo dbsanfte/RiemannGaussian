@@ -24,15 +24,16 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-verified reduction map</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 264 modules · 7067 declarations · 6049 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 265 modules · 7087 declarations · 6069 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <path class="edge" d="M165 102 H187"/>
   <path class="edge" d="M335 102 H357"/>
   <path class="edge" d="M165 182 H187"/>
   <path class="edge" d="M335 182 H357"/>
-  <path class="edge" d="M505 102 C550 102 548 128 598 128"/>
-  <path class="edge" d="M505 182 C550 182 548 150 598 150"/>
-  <path class="edge" d="M770 139 H812"/>
+  <path class="edge" d="M505 102 C512 102 508 58 520 58 H650 C675 58 675 124 688 128"/>
+  <path class="edge" d="M505 182 C570 182 600 153 688 150"/>
+  <path class="edge" d="M665 102 C677 102 677 116 688 118"/>
+  <path class="edge" d="M840 139 H853"/>
   <g class="proved unconditional">
     <rect x="20" y="75" width="145" height="54" rx="9"/>
     <title>RiemannGaussian.riemannXi_logLinearGrowth</title>
@@ -69,14 +70,20 @@
     <text x="432" y="178">Poisson &lt;-&gt; height</text>
     <text x="432" y="196">H(T) = o(T)  ✓</text>
   </g>
+  <g class="proved reduction">
+    <rect x="520" y="75" width="145" height="54" rx="9"/>
+    <title>RiemannGaussian.riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_cumulativeTransportSurplus</title>
+    <text x="592" y="98">Suzuki first tail</text>
+    <text x="592" y="116">tail iff surplus  ✓</text>
+  </g>
   <g class="open">
-    <rect x="600" y="108" width="170" height="62" rx="10"/>
-    <text x="685" y="133">arithmetic rigidity</text>
-    <text x="685" y="153">CONJECTURE-STRENGTH</text>
+    <rect x="690" y="108" width="150" height="62" rx="10"/>
+    <text x="765" y="133">arithmetic rigidity</text>
+    <text x="765" y="153">CONJECTURE-STRENGTH</text>
   </g>
   <g class="goal">
-    <rect x="815" y="114" width="145" height="50" rx="9"/>
-    <text x="887" y="144">RH</text>
+    <rect x="855" y="114" width="125" height="50" rx="9"/>
+    <text x="917" y="144">RH</text>
   </g>
   <text class="frontier" x="20" y="220">Open: derive a zero-location constraint from xi arithmetic. No current theorem implies RH.</text>
 </svg>

@@ -24,25 +24,24 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now discharges the transport-tail normalization hypothesis for Suzuki's
-literal pointwise arithmetic function. For every positive base and every
-finite frozen prime prefix,
+Lean now fixes the canonical transport tail at the first prime event,
+`base = log 2` and `start = 1`. The theorem
 
-`suzukiPointwiseTailNormalization`
+`suzukiPointwiseFrozenBaseSlope_logTwo_one_neg`
 
-proves the required function identity with the base value and base slope
-computed from the literal Archimedean term and exact prime-prefix mass and
-moment. The proof uses the previously derived second derivative
-`hasDerivAt_deriv_suzukiPointwiseArchimedean`, the fundamental theorem of
-calculus, and derivative uniqueness on positive time.
+proves that the resulting exact frozen slope is strictly negative. Its proof
+uses checked rational bounds for the quarter-point digamma, the complete
+positive Lerch-slope series, the elementary exponential terms, and the first
+von Mangoldt weight. The companion theorem
+`suzukiPrimeEventCut_logTwo_one` proves that cutoff one is the exact event cut.
 
 Consequently,
-`riemannXiSuzukiPsiNonnegative_on_tail_iff_cumulativeTransportSurplus`
-instantiates the cumulative-surplus criterion for the actual arithmetic
-function without an assumed normalization. Its explicit frozen-slope sign and
-the cumulative-surplus inequalities remain open; the theorem does not establish
-global positivity or a zero-location constraint, and the repository is not yet
-a proof of RH.
+`riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_cumulativeTransportSurplus`
+has no normalization, event-cut, or slope-sign assumptions: it reduces
+nonnegativity of the literal arithmetic Suzuki function on the whole tail
+`t ≥ log 2` directly to its explicit cumulative transport-surplus inequalities.
+Those inequalities remain open. This result does not establish tail positivity
+or a zero-location constraint, and the repository is not yet a proof of RH.
 
 ## Mathematical Program
 

@@ -20,13 +20,15 @@ with the transport hinge model, and Lean proves it strictly positive on an
 unconditional nonzero punctured neighborhood of the origin. Lean also derives
 the transport smooth curvature as the second derivative of the literal
 Archimedean term on positive time and proves its exact tail normalization with
-computed frozen base value and slope. The resulting literal cumulative-surplus
-criterion still requires the explicit slope sign and every surplus inequality.
-Those results and the sublinear law are not RH and do not exclude a finite or
-sparse off-line divisor. The missing theorem must derive a genuine global
-zero-location constraint from xi's arithmetic or entire-function structure; a
-restatement, hidden limit interchange, or conditional implication is not a
-substitute.
+computed frozen base value and slope. At the canonical first-event base
+`t = log 2`, Lean now proves the exact event cut and strict negativity of the
+frozen slope, so the literal tail-positivity criterion has no remaining
+base-data assumptions. Every cumulative transport-surplus inequality remains
+open. Those results and the sublinear law are not RH and do not exclude a
+finite or sparse off-line divisor. The missing theorem must derive a genuine
+global zero-location constraint from xi's arithmetic or entire-function
+structure; a restatement, hidden limit interchange, or conditional implication
+is not a substitute.
 
 ## Soundness invariant
 

@@ -75,6 +75,14 @@ private def milestones : Array Milestone := #[
     role := "reduction"
     theoremName :=
       ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
+  },
+  {
+    label := "First-tail Suzuki positivity is equivalent to cumulative transport surplus"
+    lineOne := "Suzuki first tail"
+    lineTwo := "tail iff surplus"
+    role := "reduction"
+    theoremName :=
+      ``RiemannGaussian.riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_cumulativeTransportSurplus
   }
 ]
 
@@ -84,7 +92,8 @@ private def milestonePoints : Array Point := #[
   { x := 360, y := 75 },
   { x := 20, y := 155 },
   { x := 190, y := 155 },
-  { x := 360, y := 155 }
+  { x := 360, y := 155 },
+  { x := 520, y := 75 }
 ]
 
 private def projectPrefix : Name := `RiemannGaussian
@@ -177,18 +186,19 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "  <path class=\"edge\" d=\"M335 102 H357\"/>\n" ++
     "  <path class=\"edge\" d=\"M165 182 H187\"/>\n" ++
     "  <path class=\"edge\" d=\"M335 182 H357\"/>\n" ++
-    "  <path class=\"edge\" d=\"M505 102 C550 102 548 128 598 128\"/>\n" ++
-    "  <path class=\"edge\" d=\"M505 182 C550 182 548 150 598 150\"/>\n" ++
-    "  <path class=\"edge\" d=\"M770 139 H812\"/>\n" ++
+    "  <path class=\"edge\" d=\"M505 102 C512 102 508 58 520 58 H650 C675 58 675 124 688 128\"/>\n" ++
+    "  <path class=\"edge\" d=\"M505 182 C570 182 600 153 688 150\"/>\n" ++
+    "  <path class=\"edge\" d=\"M665 102 C677 102 677 116 688 118\"/>\n" ++
+    "  <path class=\"edge\" d=\"M840 139 H853\"/>\n" ++
     nodes ++
     "  <g class=\"open\">\n" ++
-    "    <rect x=\"600\" y=\"108\" width=\"170\" height=\"62\" rx=\"10\"/>\n" ++
-    "    <text x=\"685\" y=\"133\">arithmetic rigidity</text>\n" ++
-    "    <text x=\"685\" y=\"153\">CONJECTURE-STRENGTH</text>\n" ++
+    "    <rect x=\"690\" y=\"108\" width=\"150\" height=\"62\" rx=\"10\"/>\n" ++
+    "    <text x=\"765\" y=\"133\">arithmetic rigidity</text>\n" ++
+    "    <text x=\"765\" y=\"153\">CONJECTURE-STRENGTH</text>\n" ++
     "  </g>\n" ++
     "  <g class=\"goal\">\n" ++
-    "    <rect x=\"815\" y=\"114\" width=\"145\" height=\"50\" rx=\"9\"/>\n" ++
-    "    <text x=\"887\" y=\"144\">RH</text>\n" ++
+    "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
+    "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Open: derive a zero-location " ++
       "constraint from xi arithmetic. No current theorem implies RH.</text>\n" ++
@@ -254,13 +264,13 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("rhImplied", .bool false),
     ("statusNote", .str
-      "No current theorem derives an RH-equivalent vanishing condition from unconditional arithmetic estimates."),
+      "The canonical first-tail Suzuki criterion is assumption-free, but its cumulative surplus inequalities and every RH-forcing arithmetic rigidity step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Derive an unconditional zero-location constraint from xi arithmetic; sublinear cumulative upper-height mass alone is insufficient")
+        "Prove the explicit first-tail cumulative transport-surplus inequalities, or derive another unconditional zero-location constraint from xi arithmetic")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
