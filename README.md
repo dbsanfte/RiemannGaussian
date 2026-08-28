@@ -555,6 +555,16 @@ current checked state, not a list of conjectural steps.
   must uniformly bound the norm of every individual zero function. The Schur
   row estimate itself remains open, and cancellation-sensitive alternatives
   may be weaker than absolute row summability.
+- The first quantitative Gram input is now unconditional. Lean proves the
+  exact translated/scaled Cauchy integral
+  `integral ((x-a)^2+b^2)^(-1) = pi/abs(b)` and uses the unit carrier bound to
+  show that an off-axis zero function satisfies
+  `norm(f_rho)^2 <= multiplicity(rho)/abs(Im(alpha_rho))`. Cauchy--Schwarz then
+  gives the corresponding two-node Gram bound and finite off-axis row
+  majorant. This exposes a real obstruction: the estimate deteriorates as a
+  zero approaches the critical line and does not control the locally
+  cancelled real-node block, so the full row theorem needs sharper carrier
+  structure or cancellation rather than this Cauchy estimate alone.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1104,14 +1114,17 @@ zero-function synthesis estimate has now been stated exactly, proved
 equivalent to a uniform finite Gram bound, and proved to imply quantitative
 boundary-`L²` convergence. A sufficient absolute-Gram Schur condition and its
 complete row-sum form are now formally connected to that estimate, with the
-Gram entries reduced to explicit boundary integrals. What remains is to prove
-one of those row bounds, find a cancellation-sensitive weaker Gram estimate,
-or prove a direct estimate for the Suzuki coefficient path; then the resulting
-limit must be identified with the arithmetic signal or compared directly with
-the reflected-height Gaussian invariant. That infinite comparison remains
-genuinely new mathematics; it is not inferred from safe-half-plane pointwise
-equality. This is the step needed to force the Gaussian epsilon-positivity
-statement, rather than attempting a non-scalable chain of finite certificates.
+Gram entries reduced to explicit boundary integrals. The off-axis block now
+has a checked vertical-gap Cauchy majorant, but that bound degenerates near the
+critical line and leaves the real-node block untouched. What remains is to
+prove a sharper row bound using the common carrier, find a
+cancellation-sensitive weaker Gram estimate, or prove a direct estimate for
+the Suzuki coefficient path; then the resulting limit must be identified with
+the arithmetic signal or compared directly with the reflected-height Gaussian
+invariant. That infinite comparison remains genuinely new mathematics; it is
+not inferred from safe-half-plane pointwise equality. This is the step needed
+to force the Gaussian epsilon-positivity statement, rather than attempting a
+non-scalable chain of finite certificates.
 
 The Hardy route seeks a structural contradiction from any off-axis xi zero.
 The one-quartet finite theory and its real/Herglotz background are formalized.
