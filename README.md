@@ -21,19 +21,20 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-The latest checked slice eliminates the safe zeta endpoint. Lean bounds both
-`|ζ(3/2 + iT)|` and its reciprocal by the same finite `3/2`-Dirichlet mass;
-the reciprocal identity is derived from the absolutely convergent Möbius
-L-series and its convolution with zeta. Consequently
-`log |ζ(3/2 + iT_n)| / T_n → 0`, and the normalized static vertical boundary
-is asymptotic solely to `(4 / T_n) log |ζ(1/2 + iT_n)|`.
+The latest checked slice constructs the paired Dirichlet eta series directly
+on `Re(s) > 0`, proves its analyticity there, and derives its factorization
+with zeta in the upper-right quadrant by analytic continuation. On the
+critical line the eta factor is uniformly separated from zero, giving the
+unconditional bound `|ζ(1/2 + iT)| ≤ 3 M |1/2 + iT|` for a fixed finite
+mass `M`. Lean consequently proves that the positive part of
+`log |ζ(1/2 + iT_n)| / T_n` tends to zero on the selected nonzero endpoints.
 
-The remaining vertical-cancellation theorem is now literally
-`log |ζ(1/2 + iT_n)| = o(T_n)` on the selected zero-separated heights. Its
-lower-bound direction is the genuinely difficult analytic-number-theory
-obligation. The broader rigidity problem must then force the positive
-Hardy/heat defect to vanish. Until those theorems are proved, this repository
-is not a proof of RH.
+The static-contour identity is therefore reduced to the negative logarithmic
+part alone. The immediate open estimate is a subexponential lower bound for
+`|ζ(1/2 + iT_n)|`, equivalently
+`max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0`. The broader rigidity problem must
+then force the positive Hardy/heat defect to vanish. Until those theorems are
+proved, this repository is not a proof of RH.
 
 ## Mathematical Program
 
