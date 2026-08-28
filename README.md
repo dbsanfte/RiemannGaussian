@@ -291,19 +291,23 @@ current checked state, not a list of conjectural steps.
   theorem then sum the tail to `-zeta'/zeta`, while the finite part is exactly
   Suzuki's prime correction. With the explicit-formula signs, the two prime
   sums therefore recover the zeta and finite-prime terms of (1.6). Combined
-  with the preceding integral, Lean now evaluates the full elementary and
-  non-Archimedean RHS. The unchecked RHS component is the Archimedean
-  digamma/Lerch integral, followed by the global Weil distribution identity.
-- The Archimedean calculation has now been reduced one level further. Lean
+  with the preceding integral, Lean evaluates the full elementary and
+  non-Archimedean RHS.
+- The Archimedean calculation is now complete. Lean
   proves the full complex Euler series for a digamma difference is absolutely
   summable on the right half-plane, constructs every lower-half-plane mode of
   the Archimedean geometric kernel, and identifies each mode with an actual
   integral of Suzuki's test. Partial fractions then sum the complete mode
   family exactly to the negative of Suzuki's digamma-plus-Lerch contribution,
-  with no appeal to the Weil formula. The remaining local obligation is to
-  prove that expanding the single Archimedean kernel and interchanging its
-  integral with this absolutely convergent mode family is valid. After that,
-  only the global specialized Weil distribution identity remains.
+  with no appeal to the Weil formula. Endpoint cancellation and zeroth-mode
+  tail domination prove absolute integrability of the single kernel integral;
+  a geometric norm majorant then justifies the mode-sum/integral interchange
+  by dominated convergence. Lean finally combines the literal elementary
+  integral, both prime sums, and the literal Archimedean integral into one
+  theorem identifying the complete signed local RHS with Suzuki's arithmetic
+  `P_t(z)`. All local evaluations are therefore closed. The remaining meeting
+  theorem is exactly the global specialized Weil distribution identity that
+  equates this arithmetic RHS with the already constructed spectral zero sum.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
