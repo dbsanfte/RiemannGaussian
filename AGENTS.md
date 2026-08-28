@@ -13,10 +13,12 @@ The proof is not complete. The generated dashboard in
 the Gaussian/Weil and Suzuki/contour branches prove that the complete
 safe-axis logarithmic defect is asymptotic, with `o(1)` error, to its positive
 Poisson linearization, which is exactly height-scaled Blaschke derivative
-variation. The missing theorem must force that linear quantity to decay from
-xi's arithmetic or entire-function structure and then force the height-one
-RH-detecting value to vanish; a restatement, hidden limit interchange, or
-conditional implication is not a substitute.
+variation. A checked dyadic Tauberian theorem now identifies decay of those
+quantities with `H(T) / T → 0`, where `H` is cumulative upper spectral height.
+That sublinear law is not RH and does not exclude a finite or sparse off-line
+divisor. The missing theorem must derive a genuine zero-location constraint
+from xi's arithmetic or entire-function structure; a restatement, hidden
+limit interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 

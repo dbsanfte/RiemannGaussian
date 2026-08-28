@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description" viewBox="0 0 1000 235">
-  <title id="title">Lean-verified RiemannGaussian proof status</title>
-  <desc id="description">The verified branches reduce unscaled safe-axis decay to positive Poisson and Blaschke-variation rigidity.</desc>
+  <title id="title">Lean-verified RiemannGaussian reduction status</title>
+  <desc id="description">Verified analytic results, equivalences, bridges, and reductions leading to an open conjecture-strength arithmetic rigidity step.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b949e"/>
@@ -11,6 +11,9 @@
       .heading { font-size: 17px; font-weight: 700; text-anchor: start; }
       .metrics { fill: #8b949e; font-size: 11px; text-anchor: end; }
       .proved rect { fill: #12261a; stroke: #3fb950; stroke-width: 1.5; }
+      .proved.equivalence rect { fill: #211735; stroke: #a371f7; }
+      .proved.bridge rect { fill: #111f35; stroke: #58a6ff; }
+      .proved.reduction rect { fill: #102a2c; stroke: #39c5cf; }
       .open rect { fill: #2d210d; stroke: #d29922; stroke-width: 1.8; }
       .goal rect { fill: #161b22; stroke: #8b949e; stroke-width: 1.5; stroke-dasharray: 5 4; }
       .open text { fill: #f2cc60; font-weight: 700; }
@@ -20,8 +23,8 @@
     </style>
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
-  <text class="heading" x="20" y="30">Lean-verified proof frontier</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 259 modules · 6947 declarations · 5948 theorems</text>
+  <text class="heading" x="20" y="30">Lean-verified reduction map</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 260 modules · 6985 declarations · 5984 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <path class="edge" d="M165 102 H187"/>
   <path class="edge" d="M335 102 H357"/>
@@ -30,50 +33,50 @@
   <path class="edge" d="M505 102 C550 102 548 128 598 128"/>
   <path class="edge" d="M505 182 C550 182 548 150 598 150"/>
   <path class="edge" d="M770 139 H812"/>
-  <g class="proved">
+  <g class="proved unconditional">
     <rect x="20" y="75" width="145" height="54" rx="9"/>
     <title>RiemannGaussian.riemannXi_logLinearGrowth</title>
     <text x="92" y="98">xi growth</text>
     <text x="92" y="116">R log R  ✓</text>
   </g>
-  <g class="proved">
+  <g class="proved equivalence">
     <rect x="190" y="75" width="145" height="54" rx="9"/>
     <title>RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh</title>
     <text x="262" y="98">boundary heat</text>
-    <text x="262" y="116">RH detector  ✓</text>
+    <text x="262" y="116">RH equivalence  ✓</text>
   </g>
-  <g class="proved">
+  <g class="proved bridge">
     <rect x="360" y="75" width="145" height="54" rx="9"/>
     <title>RiemannGaussian.riemannXiUpperReflectedPairGaussianTotal_eq_boundaryHeatResidueTotal</title>
     <text x="432" y="98">Gaussian Gram</text>
     <text x="432" y="116">identity  ✓</text>
   </g>
-  <g class="proved">
+  <g class="proved bridge">
     <rect x="20" y="155" width="145" height="54" rx="9"/>
     <title>RiemannGaussian.riemannXiSuzukiArithmeticPPositive_eq_spectral_safe</title>
     <text x="92" y="178">Suzuki identity</text>
     <text x="92" y="196">arith. = spectral  ✓</text>
   </g>
-  <g class="proved">
+  <g class="proved bridge">
     <rect x="190" y="155" width="145" height="54" rx="9"/>
     <title>RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke</title>
     <text x="262" y="178">static signed</text>
     <text x="262" y="196">xi contour  ✓</text>
   </g>
-  <g class="proved">
+  <g class="proved reduction">
     <rect x="360" y="155" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.tendsto_safeAxisLogDefect_toReal_zero_iff_height_mul_blaschkeVariation_zero</title>
-    <text x="432" y="178">log &lt;-&gt; Poisson</text>
-    <text x="432" y="196">unscaled decay  ✓</text>
+    <title>RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear</title>
+    <text x="432" y="178">Poisson &lt;-&gt; height</text>
+    <text x="432" y="196">H(T) = o(T)  ✓</text>
   </g>
   <g class="open">
     <rect x="600" y="108" width="170" height="62" rx="10"/>
-    <text x="685" y="133">Poisson / xi rigidity</text>
-    <text x="685" y="153">OPEN</text>
+    <text x="685" y="133">arithmetic rigidity</text>
+    <text x="685" y="153">CONJECTURE-STRENGTH</text>
   </g>
   <g class="goal">
     <rect x="815" y="114" width="145" height="50" rx="9"/>
     <text x="887" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Current target: force height-scaled Blaschke variation to decay, then annihilate the height-one defect.</text>
+  <text class="frontier" x="20" y="220">Open: derive a zero-location constraint from xi arithmetic. No current theorem implies RH.</text>
 </svg>

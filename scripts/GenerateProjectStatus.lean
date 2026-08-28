@@ -21,6 +21,7 @@ private structure Milestone where
   label : String
   lineOne : String
   lineTwo : String
+  role : String
   theoremName : Name
 
 private structure Point where
@@ -32,12 +33,14 @@ private def milestones : Array Milestone := #[
     label := "Log-linear xi growth"
     lineOne := "xi growth"
     lineTwo := "R log R"
+    role := "unconditional"
     theoremName := ``RiemannGaussian.riemannXi_logLinearGrowth
   },
   {
-    label := "Boundary heat RH detector"
+    label := "Boundary heat vanishing is equivalent to RH"
     lineOne := "boundary heat"
-    lineTwo := "RH detector"
+    lineTwo := "RH equivalence"
+    role := "equivalence"
     theoremName :=
       ``RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh
   },
@@ -45,6 +48,7 @@ private def milestones : Array Milestone := #[
     label := "Gaussian Gram identity"
     lineOne := "Gaussian Gram"
     lineTwo := "identity"
+    role := "bridge"
     theoremName :=
       ``RiemannGaussian.riemannXiUpperReflectedPairGaussianTotal_eq_boundaryHeatResidueTotal
   },
@@ -52,6 +56,7 @@ private def milestones : Array Milestone := #[
     label := "Suzuki arithmetic-spectral identity"
     lineOne := "Suzuki identity"
     lineTwo := "arith. = spectral"
+    role := "bridge"
     theoremName :=
       ``RiemannGaussian.riemannXiSuzukiArithmeticPPositive_eq_spectral_safe
   },
@@ -59,15 +64,17 @@ private def milestones : Array Milestone := #[
     label := "Static signed xi contour"
     lineOne := "static signed"
     lineTwo := "xi contour"
+    role := "bridge"
     theoremName :=
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
-    label := "Unscaled safe-axis defect is equivalent to height-scaled Blaschke variation decay"
-    lineOne := "log <-> Poisson"
-    lineTwo := "unscaled decay"
+    label := "Poisson decay is equivalent to sublinear cumulative upper spectral height"
+    lineOne := "Poisson <-> height"
+    lineTwo := "H(T) = o(T)"
+    role := "reduction"
     theoremName :=
-      ``RiemannGaussian.tendsto_safeAxisLogDefect_toReal_zero_iff_height_mul_blaschkeVariation_zero
+      ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
   }
 ]
 
@@ -111,13 +118,14 @@ private def xmlEscape (value : String) : String :=
 private def milestoneToJson (milestone : Milestone) : Json :=
   Json.mkObj [
     ("label", .str milestone.label),
+    ("role", .str milestone.role),
     ("status", .str "proved"),
     ("theorem", .str milestone.theoremName.toString)
   ]
 
 private def completedNodeSvg (milestone : Milestone) (point : Point) : String :=
   let theoremName := xmlEscape milestone.theoremName.toString
-  s!"  <g class=\"proved\">\n" ++
+  s!"  <g class=\"proved {xmlEscape milestone.role}\">\n" ++
     s!"    <rect x=\"{point.x}\" y=\"{point.y}\" width=\"145\" height=\"54\" rx=\"9\"/>\n" ++
     s!"    <title>{theoremName}</title>\n" ++
     s!"    <text x=\"{point.x + 72}\" y=\"{point.y + 23}\">{xmlEscape milestone.lineOne}</text>\n" ++
@@ -130,9 +138,9 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
       output ++ completedNodeSvg milestonePoint.1 milestonePoint.2) ""
   "<svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" " ++
       "aria-labelledby=\"title description\" viewBox=\"0 0 1000 235\">\n" ++
-    "  <title id=\"title\">Lean-verified RiemannGaussian proof status</title>\n" ++
-    "  <desc id=\"description\">The verified branches reduce unscaled safe-axis " ++
-      "decay to positive Poisson and Blaschke-variation rigidity.</desc>\n" ++
+    "  <title id=\"title\">Lean-verified RiemannGaussian reduction status</title>\n" ++
+    "  <desc id=\"description\">Verified analytic results, equivalences, bridges, " ++
+      "and reductions leading to an open conjecture-strength arithmetic rigidity step.</desc>\n" ++
     "  <defs>\n" ++
     "    <marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" " ++
       "markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n" ++
@@ -145,6 +153,9 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "      .heading { font-size: 17px; font-weight: 700; text-anchor: start; }\n" ++
     "      .metrics { fill: #8b949e; font-size: 11px; text-anchor: end; }\n" ++
     "      .proved rect { fill: #12261a; stroke: #3fb950; stroke-width: 1.5; }\n" ++
+    "      .proved.equivalence rect { fill: #211735; stroke: #a371f7; }\n" ++
+    "      .proved.bridge rect { fill: #111f35; stroke: #58a6ff; }\n" ++
+    "      .proved.reduction rect { fill: #102a2c; stroke: #39c5cf; }\n" ++
     "      .open rect { fill: #2d210d; stroke: #d29922; stroke-width: 1.8; }\n" ++
     "      .goal rect { fill: #161b22; stroke: #8b949e; stroke-width: 1.5; " ++
       "stroke-dasharray: 5 4; }\n" ++
@@ -157,7 +168,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "  </defs>\n" ++
     "  <rect class=\"bg\" x=\"0.75\" y=\"0.75\" width=\"998.5\" " ++
       "height=\"233.5\" rx=\"12\"/>\n" ++
-    "  <text class=\"heading\" x=\"20\" y=\"30\">Lean-verified proof frontier</text>\n" ++
+    "  <text class=\"heading\" x=\"20\" y=\"30\">Lean-verified reduction map</text>\n" ++
     s!"  <text class=\"metrics\" x=\"980\" y=\"28\">Lean {Lean.versionString} · " ++
       s!"{moduleCount} modules · {declarationCount} declarations · {theoremCount} theorems</text>\n" ++
     "  <text class=\"metrics\" x=\"980\" y=\"47\">0 placeholder dependencies · " ++
@@ -172,15 +183,15 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     nodes ++
     "  <g class=\"open\">\n" ++
     "    <rect x=\"600\" y=\"108\" width=\"170\" height=\"62\" rx=\"10\"/>\n" ++
-    "    <text x=\"685\" y=\"133\">Poisson / xi rigidity</text>\n" ++
-    "    <text x=\"685\" y=\"153\">OPEN</text>\n" ++
+    "    <text x=\"685\" y=\"133\">arithmetic rigidity</text>\n" ++
+    "    <text x=\"685\" y=\"153\">CONJECTURE-STRENGTH</text>\n" ++
     "  </g>\n" ++
     "  <g class=\"goal\">\n" ++
     "    <rect x=\"815\" y=\"114\" width=\"145\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"887\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Current target: force " ++
-      "height-scaled Blaschke variation to decay, then annihilate the height-one defect.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Open: derive a zero-location " ++
+      "constraint from xi arithmetic. No current theorem implies RH.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -231,7 +242,7 @@ run_cmd do
       throwError "milestone has nonstandard axioms: {milestone.theoremName}: {unexpectedAxioms}"
 
   let statusJson := Json.mkObj [
-    ("schemaVersion", toJson 2),
+    ("schemaVersion", toJson 3),
     ("generator", .str "scripts/GenerateProjectStatus.lean"),
     ("leanVersion", .str Lean.versionString),
     ("compiledProjectModules", toJson moduleCount),
@@ -241,12 +252,15 @@ run_cmd do
     ("placeholderDependentDeclarations",
       toJson placeholderDependentDeclarations.size),
     ("nonstandardTheoremAxioms", .arr #[]),
+    ("rhImplied", .bool false),
+    ("statusNote", .str
+      "No current theorem derives an RH-equivalent vanishing condition from unconditional arithmetic estimates."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
-      ("label", .str "Poisson and entire-function rigidity"),
+      ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Prove height-scaled Blaschke variation decay from xi arithmetic and force the height-one defect to vanish")
+        "Derive an unconditional zero-location constraint from xi arithmetic; sublinear cumulative upper-height mass alone is insufficient")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

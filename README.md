@@ -11,29 +11,37 @@ repository's verification gates count as established results.
 > **Research agent:** GPT-5.6 Sol with **Max** reasoning effort, running in the
 > **Codex CLI harness**.
 
-![Lean-verified RiemannGaussian proof frontier](docs/proof-status.svg)
+![Lean-verified RiemannGaussian reduction map](docs/proof-status.svg)
 
-This panel is generated from Lean's compiled environment. Green nodes are
-checked theorem constants, orange is the current unproved frontier, and CI
-rejects a stale generated panel. The machine-readable companion is
+This panel is generated from Lean's compiled environment. A checkmark means
+that the named theorem is kernel-checked; it is not a measure of proximity to
+RH. Green denotes unconditional analytic infrastructure, purple an
+RH-equivalent reformulation, and blue/cyan verified bridges or reductions.
+Orange is the conjecture-strength open step. No current theorem derives an
+RH-equivalent vanishing condition from unconditional arithmetic estimates.
+CI rejects a stale generated panel. The machine-readable companion is
 [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the unscaled asymptotic linearization
+Lean now proves the Tauberian equivalence
 
-`logarithmic defect at iy − Poisson defect at iy → 0`.
+`safe-axis Poisson defect → 0  ⇔  cumulative upper spectral height H(T) / T → 0`,
 
-The Poisson term is exactly `2y` times the complete positive elementary
-Blaschke derivative variation. Thus Lean proves that unscaled decay of the
-RH-detecting logarithmic defect is equivalent to decay of this linear,
-height-scaled spectral variation. The proof uses the previously established
-sublinear defect law and an explicit uniform `y − 1/2` divisor gap; it assumes
-no cutoff/height limit interchange.
+where `H(T)` is the multiplicity-weighted sum of upper-half-plane spectral
+heights over zeros with ordinate at most `T`. The difficult direction is an
+explicit dyadic-shell estimate: a bound `H(T) ≤ εT` above the observation
+height forces the complete Poisson mass below `20ε`. The converse follows
+from a central-window lower kernel bound. The theorem assumes no cutoff/height
+limit interchange.
 
-The remaining obstruction is now a positive Poisson/entire-function rigidity
-theorem derived from xi's arithmetic structure, followed by the step forcing
-the height-one RH detector to vanish. The repository is not yet a proof of RH.
+Combined with the previous lossless logarithmic-to-Poisson linearization,
+this also characterizes decay of the logarithmic defect and height-scaled
+Blaschke variation. This condition is not RH: sublinear aggregate displacement
+does not by itself exclude finitely many or sufficiently sparse off-line
+zeros. The missing conjecture-strength theorem must derive an actual
+zero-location constraint from xi's arithmetic or entire-function structure.
+The repository is not yet a proof of RH.
 
 ## Mathematical Program
 
