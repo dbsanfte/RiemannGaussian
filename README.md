@@ -758,10 +758,16 @@ current checked state, not a list of conjectural steps.
   operator norm at most `sqrt(pi)`. Lean proves that it sums every
   square-summable Cayley series, agrees exactly with every previous finite
   synthesis, and transports coefficient-space convergence to carrier-norm
-  convergence. This proves bounded infinite synthesis as well as qualitative
-  Cayley-moment decay, but not weighted square summability, a quantitative
-  moment rate, Hankel compactness, or the xi-specific rigidity needed to
-  close the tail theorem.
+  convergence. Lean then constructs explicit bilateral geometric coefficient
+  vectors for every off-axis xi node: nonpositive frequencies for upper
+  nodes and strictly positive reciprocal frequencies for lower nodes. Their
+  infinite syntheses are proved equal to the genuine rational node features.
+  Every finite Cayley-weighted Suzuki synthesis supported off the real axis
+  is therefore exactly the bounded synthesis of one combined `l2(Z,C)`
+  vector, with squared norm at most `pi` times that vector's coefficient
+  energy. Real spectral nodes remain a separate boundary component. This
+  does not yet prove weighted moment decay, compactness, or the xi-specific
+  combined-tail rigidity needed to close the theorem.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1372,9 +1378,12 @@ been extended to a continuous bilateral `l2(Z,C) -> L2(mu)` synthesis
 operator of norm at most `sqrt(pi)`; its infinite sum, finite compatibility,
 difference bound, and convergence transport are all checked. Boundedness
 alone does not yield compactness or annihilate the structured Suzuki tail.
-Thus the next route must encode the off-axis rational features as geometric
-`l2` coefficient vectors and then add genuinely xi-specific control of their
-combined tails, while retaining a separate boundary argument for real nodes.
+The off-axis rational features are now encoded as explicit geometric
+`l2(Z,C)` vectors, and every finite off-axis Cayley-weighted synthesis is
+identified exactly with the operator applied to their combined vector. Its
+norm is bounded by `sqrt(pi)` times the combined coefficient norm. Thus the
+next route must prove xi-specific decay or cancellation of those combined
+geometric vectors and separately control the real-node boundary component.
 After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
