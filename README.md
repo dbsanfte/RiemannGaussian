@@ -565,6 +565,15 @@ current checked state, not a list of conjectural steps.
   zero approaches the critical line and does not control the locally
   cancelled real-node block, so the full row theorem needs sharper carrier
   structure or cancellation rather than this Cauchy estimate alone.
+- The locally cancelled real-node block now has a quantitative theorem too.
+  Lean computes the existing compact-plus-Cauchy majorant exactly and proves
+  `norm(f_rho)^2 <= 2*delta*C^2 + m_rho*(1+delta^(-2))` from any local bound.
+  Continuity of the analytic multiplicity regularization then supplies the
+  explicit constant `C = 2*sqrt(m_rho/pi)/m_rho`. Consequently every real
+  spectral zero has some `delta > 0` for which
+  `norm(f_rho)^2 <= 8*delta/(pi*m_rho) + m_rho*(1+delta^(-2))`.
+  What remains here is uniform or summable control of those local radii, not
+  justification of the removable singularity.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1116,8 +1125,10 @@ boundary-`L²` convergence. A sufficient absolute-Gram Schur condition and its
 complete row-sum form are now formally connected to that estimate, with the
 Gram entries reduced to explicit boundary integrals. The off-axis block now
 has a checked vertical-gap Cauchy majorant, but that bound degenerates near the
-critical line and leaves the real-node block untouched. What remains is to
-prove a sharper row bound using the common carrier, find a
+critical line. The real-node block now has an explicit multiplicity/radius
+norm bound, but no uniform control of its isolation radii. What remains is to
+derive such control from the common carrier and xi arithmetic, prove a sharper
+row bound directly, find a
 cancellation-sensitive weaker Gram estimate, or prove a direct estimate for
 the Suzuki coefficient path; then the resulting limit must be identified with
 the arithmetic signal or compared directly with the reflected-height Gaussian
