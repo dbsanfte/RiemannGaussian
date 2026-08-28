@@ -624,6 +624,18 @@ current checked state, not a list of conjectural steps.
   equivalent to common-carrier tail vanishing plus the literal compact-test
   integral limits. Carrier-tail vanishing itself is not asserted; this is now
   the cancellation-sensitive kernel estimate to attack.
+- The carrier weight in that kernel is now identified pointwise with a
+  bounded measurable spectral-xi density. Away from a simultaneous real zero
+  of `xi` and `xi'`, Lean proves the exact formula
+  `abs(carrier(x))^2 = xi(x)^2 / (xi(x)^2 + xi'(x)^2)`. At a simultaneous
+  zero it records the literal totalized theta value exactly: the density is
+  `1/4`, rather than silently assigning a value to `0/0`. The resulting
+  piecewise arithmetic density is proved measurable and contained in
+  `[0,1]`. Every carrier-kernel density, carrier-kernel integral, and genuine
+  normalized zero-function Gram entry is then rewritten exactly through
+  this xi-energy density. This supplies a concrete positive
+  entire-function/Herglotz measure for the next rigidity attack; no decay of
+  its Suzuki coefficient tails is inferred yet.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1181,9 +1193,12 @@ derive such control from xi arithmetic or prove the now-explicit common-
 carrier tail quadratic vanishes. The common carrier has now been kept
 exactly: its resolvent density is integrable at all genuine nodes, its kernel
 is Hermitian positive semidefinite, and the original tail Gram is precisely
-its normalization-weighted quadratic. What is still missing is a
-quantitative or rigidity theorem that forces this structured quadratic to
-vanish along the actual Suzuki coefficient tails. After that,
+its normalization-weighted quadratic. Its positive weight is now also the
+explicit bounded measurable xi-energy ratio
+`xi(x)^2/(xi(x)^2+xi'(x)^2)`, with the totalized simultaneous-zero value
+handled separately. What is still missing is a quantitative Herglotz,
+de Branges, or arithmetic rigidity theorem that forces this structured
+quadratic to vanish along the actual Suzuki coefficient tails. After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
 dense boundary test family, or the pair of scalar limits consisting of the
