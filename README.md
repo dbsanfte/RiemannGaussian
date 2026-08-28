@@ -512,6 +512,16 @@ current checked state, not a list of conjectural steps.
   form of Suzuki's `S_t ∈ L²(ℝ)` proposition without asymptotic assumptions,
   hidden removable values, or appeal to the spectral expansion on the real
   boundary.
+- Every individual normalized xi-zero function in Suzuki's spectral expansion
+  is now also an unconditional element of `L²(ℝ)`. For an off-axis zero this
+  follows from the carrier's `L∞` bound and an ordinary nonreal Cauchy kernel.
+  For a critical-line zero, Lean factors the logarithmic derivative using its
+  genuine positive analytic multiplicity and proves the local cancellation
+  `i / (i*m + (z-alpha)*(1+i*h(z)))`; this handles multiple zeros without a
+  simplicity assumption. A compact-plus-shifted-Cauchy majorant then proves
+  the global result. Each finite genuine-zero Suzuki signal is consequently
+  packaged as an actual boundary `L²` vector. No real-axis infinite spectral
+  identity is assumed.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1050,12 +1060,16 @@ quotient. The positive-time Hurwitz--Lerch component is now square-integrable
 too, with both its zero-frequency cancellation and geometric tail proved from
 the defining series. Their literal finite-addition/identity assembly is now
 complete, so Suzuki's positive-time arithmetic signal is an actual element of
-`L²(ℝ, ℂ)`. The project has therefore reached the intended post-analytic
-frontier: extract a positive Gram/norm identity or inequality from this
-Hilbert-space signal and connect it to the reflected-height Gaussian
-invariant. That is the genuinely new step needed to force the Gaussian
-epsilon-positivity statement, rather than attempting a non-scalable chain of
-finite certificates.
+`L²(ℝ, ℂ)`. The normalized zero functions themselves, including multiple
+critical-line zeros, and every finite spectral synthesis are now actual
+boundary `L²` vectors as well. The project has therefore reached the intended
+post-analytic frontier: prove the exact finite Gram/norm identity, then obtain
+a justified real-boundary infinite synthesis or a direct norm comparison with
+the arithmetic signal and reflected-height Gaussian invariant. The latter
+infinite comparison remains genuinely new mathematics; it is not inferred
+from safe-half-plane pointwise equality. This is the step needed to force the
+Gaussian epsilon-positivity statement, rather than attempting a non-scalable
+chain of finite certificates.
 
 The Hardy route seeks a structural contradiction from any off-axis xi zero.
 The one-quartet finite theory and its real/Herglotz background are formalized.
