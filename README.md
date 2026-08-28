@@ -707,6 +707,16 @@ current checked state, not a list of conjectural steps.
   unresolved tail norm is exactly the norm of a Cayley-weighted tail plus one
   explicit rank-one scalar defect. This is an equality, not a bound or a
   tail-vanishing assumption.
+- That rank-one scalar defect is now eliminated rather than left as part of
+  the frontier. Functional-equation reflection reindexes every nonnegative
+  symmetric zero window and proves the exact identity
+  `d_t(T)=(-2*i/sqrt(pi))*P_{-t,T}(i)`. The already proved absolute convergence
+  of the safe-point Suzuki series therefore makes the two-window rank-one
+  vectors Cauchy in the finite Nevanlinna `L²` space. A general checked
+  perturbation lemma then proves that the original coefficient-tail Gram
+  target is equivalent to squared-norm vanishing of the Cayley-weighted
+  synthesis alone. No estimate for that remaining weighted synthesis is
+  asserted.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1290,11 +1300,15 @@ is now a proved unitary `U`, and every node feature satisfies the exact
 operator pencil equation
 `U F_alpha-a(alpha)F_alpha=(1-a(alpha))U1`. The corresponding Suzuki tail
 norm is exactly
-`norm(S(a*c_tail)+d(c_tail) U1)`. The next mathematical target is therefore
-an xi-specific rational-approximation, Clark-measure, or unitary-operator
-rigidity theorem forcing this explicit Cayley-resolved expression to vanish;
-there is no remaining ambiguity about the ambient operator or rank-one
-defect. After that,
+`norm(S(a*c_tail)+d(c_tail) U1)`. Functional-equation reindexing now identifies
+`d_t(T)` exactly with `(-2*i/sqrt(pi))*P_{-t,T}(i)`, so safe-point absolute
+convergence proves that the rank-one tail tends to zero. A checked
+vanishing-perturbation equivalence removes it completely: the open theorem is
+precisely squared-norm vanishing of `S(a*c_tail)`. The next mathematical
+target is therefore an xi-specific rational-approximation, Clark-measure, or
+unitary-operator rigidity theorem for this Cayley-weighted synthesis; there is
+no remaining ambiguity about the ambient operator or an auxiliary rank-one
+term. After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
 dense boundary test family, or the pair of scalar limits consisting of the
