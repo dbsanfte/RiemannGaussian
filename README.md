@@ -466,9 +466,19 @@ current checked state, not a list of conjectural steps.
   pointwise domination of the genuine squared norm. Therefore the
   carrier-weighted zeta contribution belongs unconditionally to `L²(ℝ)` for
   every real screw time. This is an actual `MemLp · 2` theorem, not merely an
-  asymptotic claim. The pole, prime, digamma-difference, and Lerch components
-  must now be assembled with comparable bounds to obtain Suzuki's complete
-  arithmetic signal in `L²(ℝ)`.
+  asymptotic claim.
+- The elementary real-axis components have now joined it in `L²(ℝ)`. Lean
+  proves the common arithmetic screw quotient square-integrable from its
+  uniform central bound and exact `2/|x|` tail, then proves every von Mangoldt
+  term is a fixed scalar multiple of a shifted screw quotient and closes the
+  complete finite prime window by finite summation. Independently, both
+  completed-zeta pole kernels are proved square-integrable using the checked
+  degree-drop theorem for rational boundary functions with no real poles.
+  The measurable xi carrier is promoted to an actual `L∞` multiplier with
+  norm at most one, yielding unconditional `MemLp · 2` theorems for the
+  carrier-weighted pole block, prime block, and their sum. The only arithmetic
+  components still missing from Suzuki's full real-axis `L²` proposition are
+  the standalone digamma difference and the Hurwitz--Lerch difference.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -998,9 +1008,15 @@ gaussianArithmeticExplicitFormula epsilon t >= 0.
 
 Everything connecting this statement to the canonical zero sum and then to
 RH is formalized. What remains is a scalable proof of the positivity itself.
-The leading arithmetic approach is the Suzuki transport formulation; its
-open obligations are the explicit tail normalization and the uniform
-cumulative-surplus lower bound over all cutoffs.
+The leading arithmetic approach is the Suzuki transport formulation. Its
+arithmetic--spectral meeting theorem is formalized, and the carrier-weighted
+zeta, pole, and finite-prime components are now proved to lie in `L²(ℝ)`.
+The immediate obligations are to prove the same for the standalone digamma
+and Hurwitz--Lerch components and assemble Suzuki's complete `S_t ∈ L²(ℝ)`
+proposition. Beyond that lies the genuinely new step: extract a positive
+Gram/norm constraint strong enough to force the Gaussian epsilon-positivity
+statement, rather than attempting a non-scalable chain of finite
+certificates.
 
 The Hardy route seeks a structural contradiction from any off-axis xi zero.
 The one-quartet finite theory and its real/Herglotz background are formalized.
