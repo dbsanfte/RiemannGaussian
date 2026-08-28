@@ -450,6 +450,15 @@ current checked state, not a list of conjectural steps.
   multiplication by the screw quotient's pending `1/|x|` estimate, this will
   decay as `|x|^(-3/4)`, whose square is integrable; the easier square-root
   estimate would have been only borderline.
+- The screw quotient has now been attached to that bound in Lean. On the real
+  axis it is identified away from zero with `-i` times the already extended
+  Suzuki coefficient, yielding a uniform compact-set bound, while its
+  exponential numerator gives the exact tail estimate `2/|x|` (including the
+  totalized value at zero). Regrouping the carrier before taking norms proves
+  that the carrier-weighted zeta contribution is bounded by
+  `C * (|x|+1)^(1/4) / |x|` for one explicit nonnegative constant `C`. This is
+  the first complete arithmetic component with the decay exponent needed for
+  the forthcoming squared-integrability proof.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
