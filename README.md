@@ -870,9 +870,17 @@ current checked state, not a list of conjectural steps.
   signed difference is a genuine finite Cauchy/Hardy residue projection of
   the full function rather than hidden divisor data. Its actual time
   derivative at zero is the finite Blaschke response, and its height integral
-  is exactly the finite Gaussian heat action. The next step is to deform or
-  globalize this finite projection onto contours whose upper boundary lies in
-  the arithmetic safe half-plane; no such deformation is assumed yet.
+  is exactly the finite Gaussian heat action.
+  This local projection has now been globalized to an exact upper rectangle.
+  Every finite genuine window admits a positive height `eta` below all of its
+  upper poles. With zero-free vertical sides, the rectangle
+  `[-T,T] x [eta,1]` encloses precisely those poles. Lean proves that the
+  boundary integral of the actual Suzuki-weighted spectral-xi logarithmic
+  derivative is exactly `-2*pi` times the upper restricted finite `P_t`
+  window. Its top edge `Im=1` lies in the arithmetic safe half-plane. The
+  next contour tasks are the reflected lower rectangle, their signed
+  combination, and estimates permitting the finite contour to approach the
+  real boundary and expand to infinity.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
@@ -1563,11 +1571,14 @@ At the finite level, the signed response is now recovered from the *full*
 Suzuki function by normalized local circle residues. Isolating radii exist
 for every genuine window, the residue calculation retains analytic
 multiplicity exactly, and the upper/lower residue sums equal the prior
-restricted responses. This removes the algebraic-projection ambiguity. The
-remaining arithmetic-projection frontier is global: deform these local
-circles into a contour controlled by the full arithmetic `P_t` identity on
-its safe upper boundary and by the proved real-axis/vertical estimates,
-while retaining exact control of the other contour sides as the window grows.
+restricted responses. This removes the algebraic-projection ambiguity. Lean
+now also performs the first global deformation: a positive-bottom rectangle
+with top edge on `Im=1` recovers the upper restricted window directly from
+the actual transformed spectral-xi logarithmic derivative. The remaining
+arithmetic-projection frontier is to build and combine the reflected lower
+rectangle, then control the bottom and vertical sides as the bottom approaches
+the real axis and the spectral window grows, using the proved arithmetic
+safe-line, real-axis, and vertical estimates.
 The isolated real-node remainder is the parallel boundary task. Lean proves
 that these two vanishing statements together recover the prior
 Cayley-weighted tail condition and hence the original coefficient-tail Gram
