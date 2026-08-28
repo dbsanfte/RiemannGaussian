@@ -24,20 +24,22 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now contains Suzuki's corrected pointwise arithmetic `Psi` exactly as a
-finite von-Mangoldt formula, including the order-two Hurwitz--Lerch constant
-and the `-(t/2) log pi` normalization. The terminal bridge theorem
-`riemannXiSuzukiPsiNonnegative_eq_screwHingeModel` proves that, for every
-nonnegative time, the source cutoff `1 <= n <= exp(t)` is exactly the locally
-finite `n + 2` negative-hinge model used by the transport development.
+Lean now proves unconditional strict positivity of Suzuki's actual arithmetic
+pointwise function on a nonzero punctured neighborhood of the origin:
 
-This closes a normalization and indexing seam: the transport background is
-now the literal arithmetic function rather than an arbitrary parameter. Lean
-also proves convergence of `Phi(q, 2, 1/4)` throughout `0 <= q <= 1` and the
-required value `Psi(0) = 0`. No positivity is assumed or concluded. The next
-target is an unconditional local positivity interval for this actual
-arithmetic `Psi`; global positivity remains RH-strength, and the repository is
-not yet a proof of RH.
+`exists_pos_on_abs_riemannXiSuzukiPsi`.
+
+The proof uses no numerical approximation. Lean selects a finite shifted
+harmonic block large enough to dominate the fixed digamma/`log pi` coefficient,
+then chooses the time interval so a uniform exponential lower bound holds on
+that block and the von-Mangoldt window remains below the first prime. The
+previous terminal bridge
+`riemannXiSuzukiPsiNonnegative_eq_screwHingeModel` ensures this is the literal
+correctly normalized finite-prime formula used by the transport development.
+
+This is genuine unconditional progress in the arithmetic-positivity direction,
+but it is local. It does not imply a global zero-location constraint. Global
+positivity remains RH-strength, and the repository is not yet a proof of RH.
 
 ## Mathematical Program
 
