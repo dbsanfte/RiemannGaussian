@@ -21,19 +21,22 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-The latest checked mathematical slice isolates the only surviving
-large-height term in the static Suzuki/spectral vertical contour. Lean proves
-that subtracting the dominant Cauchy factor `-2 / T` leaves a uniform
-inverse-square error, and that this complete integrated error tends to zero
-on the established quantitative zero-free contour sequence. The vertical
-boundary is therefore asymptotic to `-(4 / T)` times one signed integral of
-the real spectral-xi logarithmic derivative.
+The latest checked mathematical slice evaluates the surviving large-height
+integral exactly. Lean proves that the real spectral-xi logarithmic derivative
+is the vertical derivative of `log |xi|`, applies the fundamental theorem of
+calculus, and uses the functional equation plus conjugation to obtain the
+endpoint difference
+`log |xi(3/2 + iT)| - log |xi(1/2 + iT)|`. The static vertical boundary is
+asymptotic to `-(4 / T)` times this explicit quantity on the established
+quantitative zero-free sequence.
 
-The next theorem is genuinely open: identify that signed integral with
-endpoint log-modulus variation and prove it is `o(T)`. This is the remaining
-vertical cancellation input to the broader large-height rigidity problem,
-which must ultimately force the positive Hardy/heat defect to vanish. Until
-that is proved, this repository is not a proof of RH.
+The next theorem is genuinely open: prove this endpoint log-modulus difference
+is `o(T)`. The safe-line endpoint has an arithmetic Euler-product route; the
+critical-line endpoint requires a quantitative lower bound at the selected
+zero-separated heights. This is the remaining vertical cancellation input to
+the broader large-height rigidity problem, which must ultimately force the
+positive Hardy/heat defect to vanish. Until that is proved, this repository
+is not a proof of RH.
 
 ## Mathematical Program
 

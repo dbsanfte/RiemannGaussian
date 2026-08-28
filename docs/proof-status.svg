@@ -21,7 +21,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-verified proof frontier</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 243 modules · 6575 declarations · 5548 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 244 modules · 6600 declarations · 5572 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · frontier standard-only · 5 legacy cert axioms quarantined</text>
   <path class="edge" d="M165 102 H187"/>
   <path class="edge" d="M335 102 H357"/>
@@ -62,9 +62,9 @@
   </g>
   <g class="proved">
     <rect x="360" y="155" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.tendsto_neg_I_mul_xiSpectralBlaschkeSignedVerticalRemainderWindow_zero_imaginary_add_logDerivative_main_quantitative_zero</title>
-    <text x="432" y="178">vertical main</text>
-    <text x="432" y="196">term isolated  ✓</text>
+    <title>RiemannGaussian.tendsto_neg_I_mul_xiSpectralBlaschkeSignedVerticalRemainderWindow_zero_imaginary_add_completedXi_logNorm_main_quantitative_zero</title>
+    <text x="432" y="178">completed-xi</text>
+    <text x="432" y="196">endpoints  ✓</text>
   </g>
   <g class="open">
     <rect x="600" y="108" width="170" height="62" rx="10"/>

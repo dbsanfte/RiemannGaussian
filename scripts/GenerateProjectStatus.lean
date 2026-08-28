@@ -63,11 +63,11 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
-    label := "Vertical main-term reduction"
-    lineOne := "vertical main"
-    lineTwo := "term isolated"
+    label := "Completed-xi endpoint reduction"
+    lineOne := "completed-xi"
+    lineTwo := "endpoints"
     theoremName :=
-      ``RiemannGaussian.tendsto_neg_I_mul_xiSpectralBlaschkeSignedVerticalRemainderWindow_zero_imaginary_add_logDerivative_main_quantitative_zero
+      ``RiemannGaussian.tendsto_neg_I_mul_xiSpectralBlaschkeSignedVerticalRemainderWindow_zero_imaginary_add_completedXi_logNorm_main_quantitative_zero
   }
 ]
 
