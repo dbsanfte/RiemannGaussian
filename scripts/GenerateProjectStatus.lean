@@ -104,22 +104,6 @@ source-level gate can reserve its literal spelling for forbidden uses. -/
 private def placeholderAxiomName : Name :=
   .str .anonymous ("sor" ++ "ryAx")
 
-/--
-Historical finite calibration checks used native evaluation before the
-kernel-only frontier discipline was established. They are not proof
-milestones and no new name may enter this exact quarantine.
--/
-private def quarantinedLegacyCertificateAxiomNames : Array String := #[
-  "RiemannGaussian.Eps004Finite.compact_cells_positive._native.native_decide.ax_1_1",
-  "RiemannGaussian.Eps004Finite.phase_cells_positive._native.native_decide.ax_1_1",
-  "RiemannGaussian.Eps005Finite.compact_cells_positive._native.native_decide.ax_1_1",
-  "RiemannGaussian.Eps005Finite.phase_cells_positive._native.native_decide.ax_1_1",
-  "RiemannGaussian.Eps006Finite.signed_cells_and_cumulative_certificate._native.native_decide.ax_1_1"
-]
-
-private def isQuarantinedLegacyCertificateAxiom (axiomName : Name) : Bool :=
-  quarantinedLegacyCertificateAxiomNames.contains axiomName.toString
-
 private def xmlEscape (value : String) : String :=
   (((value.replace "&" "&amp;").replace "<" "&lt;").replace ">" "&gt;")
     |>.replace "\"" "&quot;"
@@ -140,8 +124,7 @@ private def completedNodeSvg (milestone : Milestone) (point : Point) : String :=
     s!"    <text x=\"{point.x + 72}\" y=\"{point.y + 41}\">{xmlEscape milestone.lineTwo}  ✓</text>\n" ++
     "  </g>\n"
 
-private def renderSvg (moduleCount declarationCount theoremCount
-    quarantinedAxiomCount : Nat) : String :=
+private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String :=
   let nodes := (milestones.zip milestonePoints).foldl
     (fun output milestonePoint =>
       output ++ completedNodeSvg milestonePoint.1 milestonePoint.2) ""
@@ -178,7 +161,7 @@ private def renderSvg (moduleCount declarationCount theoremCount
     s!"  <text class=\"metrics\" x=\"980\" y=\"28\">Lean {Lean.versionString} · " ++
       s!"{moduleCount} modules · {declarationCount} declarations · {theoremCount} theorems</text>\n" ++
     "  <text class=\"metrics\" x=\"980\" y=\"47\">0 placeholder dependencies · " ++
-      s!"frontier standard-only · {quarantinedAxiomCount} legacy cert axioms quarantined</text>\n" ++
+      "0 project axioms · frontier standard-only</text>\n" ++
     "  <path class=\"edge\" d=\"M165 102 H187\"/>\n" ++
     "  <path class=\"edge\" d=\"M335 102 H357\"/>\n" ++
     "  <path class=\"edge\" d=\"M165 182 H187\"/>\n" ++
@@ -225,17 +208,11 @@ run_cmd do
           placeholderDependentDeclarations.push declarationName
       for axiomName in axioms do
         unless isStandardAxiom axiomName ||
-            isQuarantinedLegacyCertificateAxiom axiomName ||
             nonstandardAxiomNames.contains axiomName do
           nonstandardAxiomNames := nonstandardAxiomNames.push axiomName
 
-  let unexpectedProjectAxiomNames := projectAxiomNames.filter
-    (fun axiomName => !isQuarantinedLegacyCertificateAxiom axiomName)
-  unless unexpectedProjectAxiomNames.isEmpty do
-    throwError "unexpected project-defined axioms found: {unexpectedProjectAxiomNames}"
-  for expectedName in quarantinedLegacyCertificateAxiomNames do
-    unless projectAxiomNames.any (fun axiomName => axiomName.toString == expectedName) do
-      throwError "expected quarantined legacy certificate axiom is missing: {expectedName}"
+  unless projectAxiomNames.isEmpty do
+    throwError "project-defined axioms found: {projectAxiomNames}"
   unless placeholderDependentDeclarations.isEmpty do
     throwError "placeholder-dependent project declarations found: {placeholderDependentDeclarations}"
   unless nonstandardAxiomNames.isEmpty do
@@ -254,15 +231,13 @@ run_cmd do
       throwError "milestone has nonstandard axioms: {milestone.theoremName}: {unexpectedAxioms}"
 
   let statusJson := Json.mkObj [
-    ("schemaVersion", toJson 1),
+    ("schemaVersion", toJson 2),
     ("generator", .str "scripts/GenerateProjectStatus.lean"),
     ("leanVersion", .str Lean.versionString),
     ("compiledProjectModules", toJson moduleCount),
     ("compiledProjectDeclarations", toJson declarationCount),
     ("projectTheorems", toJson theoremCount),
     ("projectAxioms", toJson projectAxiomNames.size),
-    ("quarantinedLegacyCertificateAxioms",
-      .arr (quarantinedLegacyCertificateAxiomNames.map Json.str)),
     ("placeholderDependentDeclarations",
       toJson placeholderDependentDeclarations.size),
     ("nonstandardTheoremAxioms", .arr #[]),
@@ -280,4 +255,4 @@ run_cmd do
   liftIO <| IO.FS.writeFile "docs/proof-status.json"
     (Json.compress statusJson ++ "\n")
   liftIO <| IO.FS.writeFile "docs/proof-status.svg"
-    (renderSvg moduleCount declarationCount theoremCount projectAxiomNames.size)
+    (renderSvg moduleCount declarationCount theoremCount)

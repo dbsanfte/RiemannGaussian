@@ -4,10 +4,9 @@
 
 RiemannGaussian is an open research project building toward a complete,
 kernel-checked Lean proof of the Riemann hypothesis. The repository contains
-the evolving Lean 4 proof development, supporting analytic and finite-model
-theory, and exact certificates used for exploration and calibration. The proof
-is not complete; only declarations accepted by Lean and the repository's
-verification gates count as established results.
+the evolving Lean 4 proof development and supporting analytic and finite-model
+theory. The proof is not complete; only declarations accepted by Lean and the
+repository's verification gates count as established results.
 
 > **Research agent:** GPT-5.6 Sol with **Max** reasoning effort, running in the
 > **Codex CLI harness**.
@@ -21,20 +20,19 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-The latest checked slice constructs the paired Dirichlet eta series directly
-on `Re(s) > 0`, proves its analyticity there, and derives its factorization
-with zeta in the upper-right quadrant by analytic continuation. On the
-critical line the eta factor is uniformly separated from zero, giving the
-unconditional bound `|ζ(1/2 + iT)| ≤ 3 M |1/2 + iT|` for a fixed finite
-mass `M`. Lean consequently proves that the positive part of
-`log |ζ(1/2 + iT_n)| / T_n` tends to zero on the selected nonzero endpoints.
+The latest checked maintenance slice removes the six disconnected
+`Eps004*`, `Eps005*`, and `Eps006*` calibration modules. No frontier theorem
+depended on them. The compiled project now contains zero project-defined
+axioms, and the Lean-derived status gate rejects any future project axiom.
 
-The static-contour identity is therefore reduced to the negative logarithmic
-part alone. The immediate open estimate is a subexponential lower bound for
-`|ζ(1/2 + iT_n)|`, equivalently
-`max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0`. The broader rigidity problem must
-then force the positive Hardy/heat defect to vanish. Until those theorems are
-proved, this repository is not a proof of RH.
+The active verified frontier constructs the paired eta series on `Re(s) > 0`
+and proves `|ζ(1/2 + iT)| ≤ 3 M |1/2 + iT|` for a fixed finite mass `M`.
+Thus the positive part of `log |ζ(1/2 + iT_n)| / T_n` tends to zero on the
+selected nonzero endpoints. The immediate open estimate is the corresponding
+subexponential lower bound,
+`max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0`; the broader rigidity problem must
+then force the positive Hardy/heat defect to vanish. This repository is not
+yet a proof of RH.
 
 ## Mathematical Program
 
@@ -84,18 +82,12 @@ The enforced checks are:
 - the entire library builds with warnings treated as errors;
 - all registered project declaration linters pass;
 - every compiled project declaration is audited for unresolved-proof
-  dependencies and unexpected project axioms;
+  dependencies, and project-defined axioms are rejected;
 - displayed frontier theorems may depend only on Lean's standard
   `propext`, `Classical.choice`, and `Quot.sound` axioms;
 - the generated SVG and JSON must exactly match the compiled environment; and
 - GitHub Actions must pass on the exact pushed commit before another proof
   slice begins.
-
-Three historical finite-calibration modules predate the current discipline
-and produce five compiler-trust axioms through native evaluation. They are
-quarantined by exact name, are absent from every displayed frontier theorem,
-and do not count as formal progress. CI rejects any additional project axiom.
-They must be replaced or removed before a final completion claim.
 
 Numerical experiments, symbolic calculations, research notes, and literature
 dispatches are used only to discover candidate mathematics. Nothing from them

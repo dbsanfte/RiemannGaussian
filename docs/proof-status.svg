@@ -21,8 +21,8 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-verified proof frontier</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 248 modules · 6701 declarations · 5658 theorems</text>
-  <text class="metrics" x="980" y="47">0 placeholder dependencies · frontier standard-only · 5 legacy cert axioms quarantined</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 242 modules · 6601 declarations · 5629 theorems</text>
+  <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <path class="edge" d="M165 102 H187"/>
   <path class="edge" d="M335 102 H357"/>
   <path class="edge" d="M165 182 H187"/>

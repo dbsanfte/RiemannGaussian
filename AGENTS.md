@@ -42,12 +42,9 @@ every commit.
   limit hypotheses. Never silently totalize a singular expression and then
   reason as though the original identity held there.
 
-Three historical finite-calibration modules predate this discipline and use
-native evaluation, producing five compiler-trust axioms. They are pinned by
-exact name in `scripts/GenerateProjectStatus.lean`, are not formal progress,
-and must never occur in a displayed frontier theorem's dependencies. The
-generator rejects any additional project axiom. Do not copy this legacy
-pattern; replace or demote those certificates if work returns to them.
+The compiled project must contain no project-defined axioms. The status
+generator rejects any such axiom, even when it is disconnected from a
+displayed frontier theorem.
 
 ## Proof-slice workflow
 
@@ -151,11 +148,10 @@ import Mathlib.Tactic.Linter
 ```
 
 The generator is also a soundness gate. It scans every declaration in
-compiled project modules for indirect placeholder dependencies, rejects new
-project-defined axioms and disallowed transitive axioms, pins the five
-quarantined legacy certificate axioms, and verifies that every green dashboard
-milestone is an actual project theorem using only the three permitted
-standard axioms.
+compiled project modules for indirect placeholder dependencies, rejects all
+project-defined axioms and disallowed transitive axioms, and verifies that
+every green dashboard milestone is an actual project theorem using only the
+three permitted standard axioms.
 
 ## GitHub gate
 
