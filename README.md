@@ -21,22 +21,21 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-The latest checked mathematical slice evaluates the surviving large-height
-integral exactly. Lean proves that the real spectral-xi logarithmic derivative
-is the vertical derivative of `log |xi|`, applies the fundamental theorem of
-calculus, and uses the functional equation plus conjugation to obtain the
-endpoint difference
-`log |xi(3/2 + iT)| - log |xi(1/2 + iT)|`. The static vertical boundary is
-asymptotic to `-(4 / T)` times this explicit quantity on the established
-quantitative zero-free sequence.
+The latest checked slice cancels the Archimedean part of the completed-xi
+endpoint difference. Lean proves a uniform fourth-root digamma bound throughout
+`1/4 ≤ Re(s) ≤ 3/4`, integrates the horizontal logarithmic derivative of
+`Gammaℝ`, and concludes that the `Gammaℝ` log-modulus difference between
+`3/2 + iT_n` and `1/2 + iT_n` is `o(T_n)` on the established quantitative
+zero-free heights. This handles the shared exponential gamma decay directly;
+it does not incorrectly require either completed-xi endpoint to be sublinear.
 
-The next theorem is genuinely open: prove this endpoint log-modulus difference
-is `o(T)`. The safe-line endpoint has an arithmetic Euler-product route; the
-critical-line endpoint requires a quantitative lower bound at the selected
-zero-separated heights. This is the remaining vertical cancellation input to
-the broader large-height rigidity problem, which must ultimately force the
-positive Hardy/heat defect to vanish. Until that is proved, this repository
-is not a proof of RH.
+The remaining vertical-cancellation theorem must reduce the elementary
+polynomial factors and prove that the zeta endpoint log ratio is `o(T_n)`.
+The safe-line side has an Euler-product route, while the critical-line side
+requires a genuinely quantitative lower bound at the selected zero-separated
+heights. The broader rigidity problem must then force the positive Hardy/heat
+defect to vanish. Until those theorems are proved, this repository is not a
+proof of RH.
 
 ## Mathematical Program
 

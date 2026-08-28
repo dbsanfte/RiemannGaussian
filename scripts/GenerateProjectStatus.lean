@@ -63,11 +63,11 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
-    label := "Completed-xi endpoint reduction"
-    lineOne := "completed-xi"
-    lineTwo := "endpoints"
+    label := "Archimedean endpoint cancellation"
+    lineOne := "gamma endpoint"
+    lineTwo := "sublinear"
     theoremName :=
-      ``RiemannGaussian.tendsto_neg_I_mul_xiSpectralBlaschkeSignedVerticalRemainderWindow_zero_imaginary_add_completedXi_logNorm_main_quantitative_zero
+      ``RiemannGaussian.tendsto_staticContourGammaRHorizontalLogNorm_sub_div_quantitative_zero
   }
 ]
 
@@ -196,8 +196,8 @@ private def renderSvg (moduleCount declarationCount theoremCount
     "    <rect x=\"815\" y=\"114\" width=\"145\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"887\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Current target: uniform " ++
-      "large-height cancellation for the static spectral-xi contour.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Current target: sublinear " ++
+      "zeta endpoint ratio on the selected zero-free heights.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -271,7 +271,7 @@ run_cmd do
       ("label", .str "Uniform large-height rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Uniform large-height cancellation for the static spectral-xi contour")
+        "Sublinear zeta endpoint ratio on the selected zero-free heights")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
