@@ -823,6 +823,14 @@ current checked state, not a list of conjectural steps.
   approached term by twice its summable positive boundary density. Thus this
   entire-function/reflection-residual velocity reaches the positive RH defect
   without an assumed boundary interchange or a noncollision hypothesis.
+  The same height-independent majorant now yields uniform convergence of the
+  genuine finite Blaschke and Suzuki windows throughout a whole positive
+  boundary collar. Consequently `not RH` forces constants `delta,c>0` and a
+  cutoff `R` for which every `0<y<delta` and every `T>=R` satisfies
+  `Re(-i * reflectionResidual(x+i*y,T))>c`. Lean proves the exact converse
+  criterion as well: the ability to enter every positive threshold in every
+  collar beyond every cutoff is equivalent to RH. Establishing that cofinal
+  smallness from xi's arithmetic or entire-function structure is open.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
@@ -1487,7 +1495,14 @@ that positive defect as its vertical boundary value at every real point,
 including critical-line spectral nodes: a genuine summable divisor majorant
 justifies the infinite-series limit. The open step is therefore rigidity of
 the resulting xi/Suzuki response, not passage from the analytic upper
-half-plane to the boundary.
+half-plane to the boundary. This has now been sharpened to a uniform finite
+obstruction. Under `not RH`, the scaled exact xi reflection residual retains
+a fixed positive real part simultaneously throughout some boundary collar
+and beyond some genuine spectral cutoff. Equivalently, RH holds exactly when
+cofinally late residuals can become arbitrarily small at arbitrarily low
+positive heights. The next new-mathematics target is to force this checked
+cofinal-smallness condition using the functional equation, growth, or the
+arithmetic Suzuki response.
 The isolated real-node remainder is the parallel boundary task. Lean proves
 that these two vanishing statements together recover the prior
 Cayley-weighted tail condition and hence the original coefficient-tail Gram
