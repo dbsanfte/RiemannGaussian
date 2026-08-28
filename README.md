@@ -20,17 +20,18 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now proves a two-stage safe-axis transport theorem for the Blaschke
-detector recovered by the static contour. For each fixed quantitative spectral
-window, the improper height integral of the negative response converges to a
-nonnegative log defect at `i`. As the spectral cutoff grows, those real values
-converge to the finite complete hyperbolic log-defect mass at `i`; that limit
-vanishes exactly when the Riemann hypothesis holds.
+Lean now proves the integrated static-boundary bridge on every compact safe
+height segment `[a,b]` with `1 < a ≤ b`. The normalized paired horizontal
+boundary action converges to the complete Blaschke detector action, and Lean
+identifies that action exactly as
 
-The height and spectral-window limits remain explicitly ordered and are not
-interchanged. The open frontier is now to prove arithmetic or entire-function
-rigidity forcing this complete safe-axis target to vanish. This is an
-RH-strength step; the repository is not yet a proof of RH.
+`complete defect at ia − complete defect at ib`.
+
+The remaining obstruction is therefore genuinely at infinite height: control
+the large-height complete defect and derive arithmetic or entire-function
+rigidity forcing the height-one RH detector to vanish. No cutoff/height limit
+interchange is assumed. This is an RH-strength step; the repository is not yet
+a proof of RH.
 
 ## Mathematical Program
 
