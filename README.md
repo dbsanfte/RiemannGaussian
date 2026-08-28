@@ -24,22 +24,21 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now proves unconditional strict positivity of Suzuki's actual arithmetic
-pointwise function on a nonzero punctured neighborhood of the origin:
+Lean now derives the transport curvature directly from Suzuki's literal
+pointwise arithmetic formula. For every positive screw time, the terminal
+theorem
 
-`exists_pos_on_abs_riemannXiSuzukiPsi`.
+`hasDerivAt_deriv_suzukiPointwiseArchimedean`
 
-The proof uses no numerical approximation. Lean selects a finite shifted
-harmonic block large enough to dominate the fixed digamma/`log pi` coefficient,
-then chooses the time interval so a uniform exponential lower bound holds on
-that block and the von-Mangoldt window remains below the first prime. The
-previous terminal bridge
-`riemannXiSuzukiPsiNonnegative_eq_screwHingeModel` ensures this is the literal
-correctly normalized finite-prime formula used by the transport development.
+proves that the second derivative of the source-exact Archimedean term is
+`suzukiSmoothCurvature`. The proof differentiates the order-two Hurwitz--Lerch
+gap twice under its infinite sum, bounds both derivative series by explicit
+geometric majorants, and evaluates the resulting geometric series exactly.
 
-This is genuine unconditional progress in the arithmetic-positivity direction,
-but it is local. It does not imply a global zero-location constraint. Global
-positivity remains RH-strength, and the repository is not yet a proof of RH.
+This closes the seam between the literal arithmetic function and the smooth
+curvature used by the transport machinery. It does not establish global
+positivity or a zero-location constraint; those remain conjecture-strength,
+and the repository is not yet a proof of RH.
 
 ## Mathematical Program
 

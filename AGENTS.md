@@ -17,11 +17,13 @@ variation. A checked dyadic Tauberian theorem now identifies decay of those
 quantities with `H(T) / T → 0`, where `H` is cumulative upper spectral height.
 The literal correctly normalized arithmetic Suzuki `Psi` is now identified
 with the transport hinge model, and Lean proves it strictly positive on an
-unconditional nonzero punctured neighborhood of the origin. That local result
-and the sublinear law are not RH and do not exclude a finite or sparse off-line
-divisor. The missing theorem must derive a genuine global zero-location
-constraint from xi's arithmetic or entire-function structure; a restatement,
-hidden limit interchange, or conditional implication is not a substitute.
+unconditional nonzero punctured neighborhood of the origin. Lean also derives
+the transport smooth curvature as the second derivative of the literal
+Archimedean term on positive time. Those results and the sublinear law are not
+RH and do not exclude a finite or sparse off-line divisor. The missing theorem
+must derive a genuine global zero-location constraint from xi's arithmetic or
+entire-function structure; a restatement, hidden limit interchange, or
+conditional implication is not a substitute.
 
 ## Soundness invariant
 
