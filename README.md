@@ -390,9 +390,18 @@ current checked state, not a list of conjectural steps.
   `L¹([-1,1])` estimate for the genuine spectral-xi negative logarithmic
   derivative. That estimate is now combined with Suzuki's inverse-square
   bound on both reflected vertical sides, yielding one explicit real
-  majorant for the norm of the literal two-sided vertical boundary. What
-  remains is the real-asymptotic proof that this majorant tends to zero and
-  substitution into the global meeting theorem.
+  majorant for the norm of the literal two-sided vertical boundary. Lean now
+  reduces that majorant to a fixed constant times
+  `(n+1)^(-5/16)`: the `3/2` divisor count and `3/16` logarithmic allowance
+  leave a strict margin beneath Suzuki's inverse-square decay. It follows in
+  Lean that the literal vertical boundary tends to zero. Substitution into
+  the finite-rectangle limiting theorem proves arithmetic
+  `P_t(z) =` spectral `P_t(z)` for `t > 0` and `Im(z) > 1`; the analytic
+  identity principle then extends the equality to Suzuki's complete safe
+  half-plane `Im(z) > 1/2`. The specialized Weil meeting theorem is therefore
+  closed without a residual contour hypothesis. The next frontier is to
+  extract new rigidity or positivity consequences from this exact
+  arithmetic--spectral identity; the identity itself does not prove RH.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
