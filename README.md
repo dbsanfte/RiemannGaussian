@@ -21,20 +21,19 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-The latest checked slice isolates the arithmetic endpoint obstruction exactly.
-Lean factors each nonzero completed-xi endpoint into its elementary polynomial,
-`Gammaℝ`, and zeta terms; proves the polynomial log difference lies between
-`0` and `log 3`; combines its `o(T_n)` limit with the previously checked gamma
-limit; and concludes that the static vertical contour is asymptotic solely to
-`-(4 / T_n)` times
-`log |ζ(3/2 + iT_n)| - log |ζ(1/2 + iT_n)|`.
+The latest checked slice eliminates the safe zeta endpoint. Lean bounds both
+`|ζ(3/2 + iT)|` and its reciprocal by the same finite `3/2`-Dirichlet mass;
+the reciprocal identity is derived from the absolutely convergent Möbius
+L-series and its convolution with zeta. Consequently
+`log |ζ(3/2 + iT_n)| / T_n → 0`, and the normalized static vertical boundary
+is asymptotic solely to `(4 / T_n) log |ζ(1/2 + iT_n)|`.
 
-The remaining vertical-cancellation theorem is now literally that this zeta
-endpoint log ratio is `o(T_n)`. The safe-line side has an Euler-product route,
-while the critical-line side requires a genuinely quantitative lower bound at
-the selected zero-separated heights. The broader rigidity problem must then
-force the positive Hardy/heat defect to vanish. Until those theorems are
-proved, this repository is not a proof of RH.
+The remaining vertical-cancellation theorem is now literally
+`log |ζ(1/2 + iT_n)| = o(T_n)` on the selected zero-separated heights. Its
+lower-bound direction is the genuinely difficult analytic-number-theory
+obligation. The broader rigidity problem must then force the positive
+Hardy/heat defect to vanish. Until those theorems are proved, this repository
+is not a proof of RH.
 
 ## Mathematical Program
 

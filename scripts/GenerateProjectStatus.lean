@@ -63,11 +63,11 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
-    label := "Zeta endpoint reduction"
-    lineOne := "zeta endpoint"
-    lineTwo := "isolated"
+    label := "Critical zeta endpoint isolated"
+    lineOne := "critical zeta"
+    lineTwo := "only endpoint"
     theoremName :=
-      ``RiemannGaussian.tendsto_neg_I_mul_xiSpectralBlaschkeSignedVerticalRemainderWindow_zero_imaginary_add_zeta_logNorm_main_quantitative_zero
+      ``RiemannGaussian.tendsto_neg_I_mul_xiSpectralBlaschkeSignedVerticalRemainderWindow_zero_imaginary_sub_criticalZeta_logNorm_main_quantitative_zero
   }
 ]
 
@@ -196,8 +196,8 @@ private def renderSvg (moduleCount declarationCount theoremCount
     "    <rect x=\"815\" y=\"114\" width=\"145\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"887\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Current target: sublinear " ++
-      "zeta endpoint ratio on the selected zero-free heights.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Current target: critical-line " ++
+      "log |zeta| is o(T_n) on the selected heights.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -271,7 +271,7 @@ run_cmd do
       ("label", .str "Uniform large-height rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Sublinear zeta endpoint ratio on the selected zero-free heights")
+        "Critical-line log |zeta| is o(T_n) on the selected heights")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
