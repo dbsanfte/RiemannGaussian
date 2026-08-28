@@ -479,6 +479,16 @@ current checked state, not a list of conjectural steps.
   carrier-weighted pole block, prime block, and their sum. The only arithmetic
   components still missing from Suzuki's full real-axis `L²` proposition are
   the standalone digamma difference and the Hurwitz--Lerch difference.
+- The standalone digamma component is now square-integrable as well. Lean
+  returns to the proved Euler series and bounds each quarter-line difference
+  summand by `(|x|/2) * (n+1/4)^(-2)`. Summing gives a rigorous global linear
+  numerator estimate, so division by `2*i*x` is uniformly bounded at zero,
+  including the totalized zero value. The earlier quarter-power estimate
+  supplies the integrable tail. An explicit compact-plus-tail majorant proves
+  the unweighted quotient is in `L²(ℝ)`, and the xi `L∞` multiplier theorem
+  gives the carrier-weighted result. The Hurwitz--Lerch difference is now the
+  sole remaining component before the full arithmetic signal can be assembled
+  as Suzuki's unconditional `S_t ∈ L²(ℝ)` theorem.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1011,12 +1021,13 @@ RH is formalized. What remains is a scalable proof of the positivity itself.
 The leading arithmetic approach is the Suzuki transport formulation. Its
 arithmetic--spectral meeting theorem is formalized, and the carrier-weighted
 zeta, pole, and finite-prime components are now proved to lie in `L²(ℝ)`.
-The immediate obligations are to prove the same for the standalone digamma
-and Hurwitz--Lerch components and assemble Suzuki's complete `S_t ∈ L²(ℝ)`
+The standalone digamma component has now joined them, including a checked
+linear numerator estimate that resolves its totalized zero-frequency
+quotient. The immediate obligation is the Hurwitz--Lerch component and then
+the finite addition/identity assembly of Suzuki's complete `S_t ∈ L²(ℝ)`
 proposition. Beyond that lies the genuinely new step: extract a positive
 Gram/norm constraint strong enough to force the Gaussian epsilon-positivity
-statement, rather than attempting a non-scalable chain of finite
-certificates.
+statement, rather than attempting a non-scalable chain of finite certificates.
 
 The Hardy route seeks a structural contradiction from any off-axis xi zero.
 The one-quartet finite theory and its real/Herglotz background are formalized.
