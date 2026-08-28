@@ -668,6 +668,18 @@ current checked state, not a list of conjectural steps.
   reflected parameters and exactly `H'` when those parameters collide. This
   closes the analytic collision case; the still-open step is xi-specific
   quantitative rigidity along the actual Suzuki coefficient tails.
+- The normalized transform now has its canonical finite Nevanlinna measure in
+  Lean. Its Radon--Nikodym weight is the arithmetic carrier density divided by
+  `1+x^2`; it is measurable, integrable, and bounded by the Cauchy density.
+  Lean proves that the measure's total mass lies in `(0,pi]`,
+  including an internal analytic-isolation proof that spectral xi is nonzero
+  somewhere on the real axis. Weighted Lebesgue integration is converted
+  exactly to integration against this measure, yielding
+  `H(z)=z*mu(R)+(1+z^2)*resolventTransform(mu,z)`. Mathlib's finite-measure
+  resolvent analyticity and derivative theorems are specialized to this
+  measure, and the normalization gives `H(i)=i*mu(R)`. Consequently `H` maps
+  the open upper half-plane strictly into itself. This supplies a finite,
+  nonzero canonical measure for future uniqueness and rigidity arguments.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1237,7 +1249,12 @@ confluent divided difference gives the same identity for every genuine
 off-axis node pair, including reflected-parameter collisions. What is still
 missing is a quantitative bound or rigidity theorem for this specific
 xi-energy Herglotz transform that forces the structured quadratic to vanish
-along the actual Suzuki coefficient tails. After that,
+along the actual Suzuki coefficient tails. The transform has now also been
+placed in canonical finite-measure form: its positive Nevanlinna measure has
+weight `density(x)/(1+x^2)`, total mass in `(0,pi]`, and standard resolvent
+representation `H(z)=z*mu(R)+(1+z^2)*R_mu(z)`, with `H(i)=i*mu(R)`. Thus the
+next rigidity theorem can be formulated either for `H` or for this explicit
+finite nonzero measure. After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
 dense boundary test family, or the pair of scalar limits consisting of the
