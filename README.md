@@ -21,12 +21,14 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-The latest checked mathematical slice brings the static Suzuki/spectral
-contour to the paired real boundary. At every fixed nonnegative, zero-free
-spectral cutoff, Lean proves that the signed contour is the finite Blaschke
-detector, is independent of the admissible positive inner height, and that its
-paired upper/lower horizontal traces converge to an explicit finite boundary
-value as that height tends to zero.
+The latest checked mathematical slice folds all four vertical terms of the
+static Suzuki/spectral contour onto one right vertical line. At a purely
+imaginary observation point, Lean proves that the remainder is purely
+imaginary and that multiplication by `-I` gives exactly twice a real signed
+integral. A second theorem bounds its norm on the established quantitative
+zero-free contour sequence. Together with the already-checked paired
+real-boundary limit, this exposes cancellation—not an absolute estimate—as
+the remaining large-height problem.
 
 The next theorem is genuinely open: obtain uniform large-height cancellation
 or rigidity as the spectral cutoff tends to infinity. That step must use the

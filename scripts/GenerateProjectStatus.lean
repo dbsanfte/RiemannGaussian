@@ -63,11 +63,11 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
-    label := "Paired real-boundary limit"
-    lineOne := "paired real"
-    lineTwo := "boundary limit"
+    label := "Vertical signed-integral fold"
+    lineOne := "vertical signed"
+    lineTwo := "integral fold"
     theoremName :=
-      ``RiemannGaussian.tendsto_xiSpectralBlaschkeInnerHorizontalPairWindow_div_nat_succ
+      ``RiemannGaussian.neg_I_mul_xiSpectralBlaschkeSignedVerticalRemainderWindow_zero_imaginary
   }
 ]
 
