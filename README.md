@@ -770,10 +770,15 @@ current checked state, not a list of conjectural steps.
   Lean canonically splits every finite Cayley-weighted Suzuki synthesis into
   the bounded synthesis of one combined off-axis `l2(Z,C)` vector plus its
   literal real-node remainder. The difference from that remainder has
-  squared norm at most `pi` times the combined coefficient energy. This does
-  not yet control the real-node remainder or prove weighted moment decay,
-  compactness, or the xi-specific combined-tail rigidity needed to close the
-  theorem.
+  squared norm at most `pi` times the combined coefficient energy. That
+  energy is now expanded as an explicit finite Hardy/Szego Gram quadratic:
+  same-half-plane entries are closed geometric kernels, opposite half-planes
+  are exactly orthogonal, the kernel is Hermitian, and its diagonal is
+  `1 / abs(Im z_rho)`. The quadratic is proved exactly equal to the squared
+  combined-vector norm, so all same-half-plane cancellation is retained.
+  This does not yet control the real-node remainder or prove decay of that
+  explicit xi-weighted quadratic, compactness, or the rigidity needed to
+  close the theorem.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1392,10 +1397,14 @@ node energy is now `1 / abs(Im z_rho)`, so this route also rigorously exposes
 the blow-up at the real spectral boundary. Every arbitrary finite synthesis
 is now split exactly into this bounded off-axis operator term and a literal
 real-node remainder, including a squared-norm bound after subtracting that
-remainder. Thus the next route must preserve xi-specific cancellation in the
-combined geometric vectors and control the isolated real-node term; a
-triangle-inequality sum of individual node energies cannot provide uniform
-control.
+remainder. The combined coefficient norm is now itself an explicit finite
+Hardy/Szego Gram quadratic: same-half-plane entries are rational geometric
+kernels, opposite half-planes are orthogonal, and the quadratic is exactly
+the Hilbert norm square. Thus the off-axis frontier is no longer an abstract
+operator estimate: it is the concrete task of proving xi-specific decay of
+this cancellation-preserving quadratic. The isolated real-node term remains
+the parallel boundary task; a triangle-inequality sum of individual node
+energies cannot provide uniform control.
 After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
