@@ -787,6 +787,14 @@ current checked state, not a list of conjectural steps.
   exactly the sum of these two nonnegative real integrals. Its vanishing is
   therefore equivalent to vanishing of both concrete Laplace energies; no
   positivity or finite-sum interchange is left implicit in that statement.
+  The genuine Suzuki coefficient has now been unfolded inside those
+  exponentials. Lean proves, including at the removable frequency zero, that
+  multiplying `g_t(alpha)` by `exp(-i*alpha*s)` or `exp(i*alpha*s)` is exactly
+  a difference of forward or backward time translates of `g`. Consequently
+  every upper or lower tail energy is the literal `L2(0,infinity)` Cauchy
+  distance between finite shifted-time Cayley trace increments. Trace-energy
+  Cauchy convergence is proved equivalent to the corresponding Laplace
+  subfrontier; convergence itself remains open.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
@@ -1426,6 +1434,11 @@ Laplace energies of finite exponential syntheses, one for each half-plane,
 and proves that their simultaneous tail decay is equivalent to the off-axis
 Gram condition. The next analytic target can thus be phrased directly as
 decay of two explicit exponential-sum `L2(0,infinity)` energies.
+Those exponential sums are now identified pointwise with differences of
+shifted Suzuki time traces. Thus the same target is equivalently Cauchy
+convergence, in the exact half-line energy metric, of upper and lower trace
+increments. This is the first direct interface from the new Cauchy kernel
+back to the existing screw-time formalism.
 The isolated real-node remainder is the parallel boundary task. Lean proves
 that these two vanishing statements together recover the prior
 Cayley-weighted tail condition and hence the original coefficient-tail Gram
