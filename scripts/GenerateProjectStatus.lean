@@ -63,11 +63,11 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
-    label := "Moving local eta zero count sublinear"
-    lineOne := "local eta zeros"
-    lineTwo := "count o(T)"
+    label := "Local eta residual log bound"
+    lineOne := "eta residual log"
+    lineTwo := "endpoint O(log T)"
     theoremName :=
-      ``RiemannGaussian.tendsto_sum_divisor_staticContourLocalEta_closedBall_div_quantitative_zero
+      ``RiemannGaussian.norm_staticContourLocalEtaCanonicalLog_neg_one_le
   }
 ]
 

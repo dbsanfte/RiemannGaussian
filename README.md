@@ -20,31 +20,17 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-The latest checked slice replaces global radial zero counting by a fixed disk
-that moves with the endpoint. It applies Jensen's inequality to the paired
-Dirichlet eta function centered at `3/2 + iT`: Lean proves a linear outer-disk
-bound, a uniform positive lower bound at the safe center, and the explicit
-multiplicity count
+Lean now constructs a normalized analytic logarithm `L_n` of the zero-free
+local eta residual and proves its exact exponential recovery identity. The
+checked linear disk bound and safe-center lower floor give
 
-`N_eta(T) ≤ log(C * (T + 4)) / log(10 / 9)`.
+`Re L_n(z) ≤ log(C * (T_n + 4))`.
 
-Consequently `N_eta(T_n) / T_n → 0` on the quantitative contour sequence.
-Lean also classifies every local eta-divisor point as either a genuine
-nontrivial zeta zero or an explicit eta-factor zero. The first class inherits
-the quantitative contour separation; the second lies on `Re(s) = 1` and has
-a fixed half-unit horizontal gap. Thus one checked separation radius controls
-every local eta zero.
-
-Lean then selects a zero-free canonical radius in `(17/16, 9/8)` for every
-height and constructs the local zero-free analytic residual. Its norm agrees
-with eta on the selected sphere, is at most `O(T)` throughout the disk, and
-retains the uniform positive safe-center lower floor.
-
-This removes the global `O(T log T)` count, zero classification, and residual
-construction obstructions from the prospective endpoint lower bound. The
-next unchecked step is the local Borel--Carathéodory logarithm estimate and
-the resulting canonical-factor product bound. That is the remaining local
-analytic step toward
+Borel--Carathéodory then yields the explicit translated critical-endpoint
+estimate `‖L_n(-1)‖ ≤ 32 log(C * (T_n + 4))`. This closes the zero-free
+residual logarithm obstruction. The next unchecked step is to combine this
+with the sublinear local divisor count and quantitative zero separation to
+bound the canonical-factor product. That is the remaining local step toward
 `max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0`; the broader argument must then force
 the positive Hardy/heat defect to vanish. This repository is not yet a proof
 of RH.

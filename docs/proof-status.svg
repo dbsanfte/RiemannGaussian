@@ -21,7 +21,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-verified proof frontier</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 248 modules · 6759 declarations · 5771 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 249 modules · 6781 declarations · 5791 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <path class="edge" d="M165 102 H187"/>
   <path class="edge" d="M335 102 H357"/>
@@ -62,9 +62,9 @@
   </g>
   <g class="proved">
     <rect x="360" y="155" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.tendsto_sum_divisor_staticContourLocalEta_closedBall_div_quantitative_zero</title>
-    <text x="432" y="178">local eta zeros</text>
-    <text x="432" y="196">count o(T)  ✓</text>
+    <title>RiemannGaussian.norm_staticContourLocalEtaCanonicalLog_neg_one_le</title>
+    <text x="432" y="178">eta residual log</text>
+    <text x="432" y="196">endpoint O(log T)  ✓</text>
   </g>
   <g class="open">
     <rect x="600" y="108" width="170" height="62" rx="10"/>
