@@ -306,7 +306,7 @@ theorem finiteAlgebraicCrossAngle_pointwiseStrictContraction
     WithLp.prod_norm_sq_eq_of_L2]
   nlinarith [sq_pos_of_pos (norm_pos_iff.mpr hsnd)]
 
-@[simp] theorem finiteResidualCoefficientHilbert_finrank
+theorem finiteResidualCoefficientHilbert_finrank
     (A : ℝ[X]) (tau : ℝ) :
     Module.finrank ℂ (finiteResidualCoefficientHilbert A tau) =
       (conjugatePolynomial

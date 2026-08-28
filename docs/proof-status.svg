@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description" viewBox="0 0 1000 235">
+  <title id="title">Lean-verified RiemannGaussian proof status</title>
+  <desc id="description">Two verified proof branches meet at the open large-height rigidity frontier before the Riemann hypothesis.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b949e"/>
+    </marker>
+    <style>
+      .bg { fill: #0d1117; stroke: #30363d; }
+      text { fill: #e6edf3; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; text-anchor: middle; }
+      .heading { font-size: 17px; font-weight: 700; text-anchor: start; }
+      .metrics { fill: #8b949e; font-size: 11px; text-anchor: end; }
+      .proved rect { fill: #12261a; stroke: #3fb950; stroke-width: 1.5; }
+      .open rect { fill: #2d210d; stroke: #d29922; stroke-width: 1.8; }
+      .goal rect { fill: #161b22; stroke: #8b949e; stroke-width: 1.5; stroke-dasharray: 5 4; }
+      .open text { fill: #f2cc60; font-weight: 700; }
+      .goal text { fill: #c9d1d9; font-weight: 700; }
+      .edge { fill: none; stroke: #8b949e; stroke-width: 1.5; marker-end: url(#arrow); }
+      .frontier { fill: #f2cc60; font-size: 11px; text-anchor: start; }
+    </style>
+  </defs>
+  <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
+  <text class="heading" x="20" y="30">Lean-verified proof frontier</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 241 modules · 6554 declarations · 5529 theorems</text>
+  <text class="metrics" x="980" y="47">0 placeholder dependencies · frontier standard-only · 5 legacy cert axioms quarantined</text>
+  <path class="edge" d="M165 102 H187"/>
+  <path class="edge" d="M335 102 H357"/>
+  <path class="edge" d="M165 182 H187"/>
+  <path class="edge" d="M335 182 H357"/>
+  <path class="edge" d="M505 102 C550 102 548 128 598 128"/>
+  <path class="edge" d="M505 182 C550 182 548 150 598 150"/>
+  <path class="edge" d="M770 139 H812"/>
+  <g class="proved">
+    <rect x="20" y="75" width="145" height="54" rx="9"/>
+    <title>RiemannGaussian.riemannXi_threeHalvesGrowth</title>
+    <text x="92" y="98">xi growth</text>
+    <text x="92" y="116">subquadratic  ✓</text>
+  </g>
+  <g class="proved">
+    <rect x="190" y="75" width="145" height="54" rx="9"/>
+    <title>RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh</title>
+    <text x="262" y="98">boundary heat</text>
+    <text x="262" y="116">RH detector  ✓</text>
+  </g>
+  <g class="proved">
+    <rect x="360" y="75" width="145" height="54" rx="9"/>
+    <title>RiemannGaussian.riemannXiUpperReflectedPairGaussianTotal_eq_boundaryHeatResidueTotal</title>
+    <text x="432" y="98">Gaussian Gram</text>
+    <text x="432" y="116">identity  ✓</text>
+  </g>
+  <g class="proved">
+    <rect x="20" y="155" width="145" height="54" rx="9"/>
+    <title>RiemannGaussian.riemannXiSuzukiArithmeticPPositive_eq_spectral_safe</title>
+    <text x="92" y="178">Suzuki identity</text>
+    <text x="92" y="196">arith. = spectral  ✓</text>
+  </g>
+  <g class="proved">
+    <rect x="190" y="155" width="145" height="54" rx="9"/>
+    <title>RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke</title>
+    <text x="262" y="178">static signed</text>
+    <text x="262" y="196">xi contour  ✓</text>
+  </g>
+  <g class="proved">
+    <rect x="360" y="155" width="145" height="54" rx="9"/>
+    <title>RiemannGaussian.tendsto_xiSpectralBlaschkeInnerHorizontalPairWindow_div_nat_succ</title>
+    <text x="432" y="178">paired real</text>
+    <text x="432" y="196">boundary limit  ✓</text>
+  </g>
+  <g class="open">
+    <rect x="600" y="108" width="170" height="62" rx="10"/>
+    <text x="685" y="133">large-height rigidity</text>
+    <text x="685" y="153">OPEN</text>
+  </g>
+  <g class="goal">
+    <rect x="815" y="114" width="145" height="50" rx="9"/>
+    <text x="887" y="144">RH</text>
+  </g>
+  <text class="frontier" x="20" y="220">Current target: uniform large-height cancellation for the static spectral-xi contour.</text>
+</svg>

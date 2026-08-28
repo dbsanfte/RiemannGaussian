@@ -110,7 +110,6 @@ theorem conjugate_conjugate (ρ : NontrivialZetaZero) :
   apply Subtype.ext
   simp
 
-@[simp]
 theorem spectralCoordinate_conjugate (ρ : NontrivialZetaZero) :
     zetaSpectralCoordinate (conjugate ρ).1 =
       -starRingEnd ℂ (zetaSpectralCoordinate ρ.1) := by
@@ -174,7 +173,6 @@ theorem functionalPartner_functionalPartner (ρ : NontrivialZetaZero) :
   apply Subtype.ext
   simp
 
-@[simp]
 theorem spectralCoordinate_functionalPartner (ρ : NontrivialZetaZero) :
     zetaSpectralCoordinate (functionalPartner ρ).1 =
       -zetaSpectralCoordinate ρ.1 := by
@@ -197,7 +195,6 @@ theorem conjugatePartner_conjugatePartner (ρ : NontrivialZetaZero) :
   apply Subtype.ext
   simp
 
-@[simp]
 theorem spectralCoordinate_conjugatePartner (ρ : NontrivialZetaZero) :
     zetaSpectralCoordinate (conjugatePartner ρ).1 =
       starRingEnd ℂ (zetaSpectralCoordinate ρ.1) := by

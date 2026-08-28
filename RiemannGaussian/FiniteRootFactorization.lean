@@ -154,7 +154,7 @@ the argument. -/
 
 /-- On the real axis, a coefficientwise-conjugated polynomial evaluates to
 the conjugate value. -/
-@[simp] theorem conjugatePolynomial_eval_real (p : ℂ[X]) (x : ℝ) :
+theorem conjugatePolynomial_eval_real (p : ℂ[X]) (x : ℝ) :
     (conjugatePolynomial p).eval (x : ℂ) =
       conj (p.eval (x : ℂ)) := by
   simpa [conjugatePolynomial] using
@@ -209,11 +209,11 @@ theorem upperRootBlaschke_denominator_ne_zero
     ‖upperRootBlaschkeValue p (x : ℂ)‖ = 1 := by
   exact norm_upperRootFactor_div_conjugate_real p x
 
-@[simp] theorem upperRootBlaschke_numerator_natDegree (p : ℂ[X]) :
+theorem upperRootBlaschke_numerator_natDegree (p : ℂ[X]) :
     (upperRootFactor p).natDegree = upperHalfPlaneRootCount p :=
   upperRootFactor_natDegree p
 
-@[simp] theorem upperRootBlaschke_denominator_natDegree (p : ℂ[X]) :
+theorem upperRootBlaschke_denominator_natDegree (p : ℂ[X]) :
     (conjugatePolynomial (upperRootFactor p)).natDegree =
       upperHalfPlaneRootCount p := by
   simp

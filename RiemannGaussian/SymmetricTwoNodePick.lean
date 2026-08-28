@@ -13,44 +13,56 @@ noncomputable section
 
 open scoped ComplexConjugate ComplexOrder
 
+/-- Upper interpolation node with real coordinate `tau`. -/
 def symmetricPickAlphaPlus (tau a : ℝ) : ℂ :=
   upperHalfPlanePoint tau a
 
+/-- Upper interpolation node with real coordinate `-tau`. -/
 def symmetricPickAlphaMinus (tau a : ℝ) : ℂ :=
   upperHalfPlanePoint (-tau) a
 
+/-- Candidate upper-half-plane pole used in the symmetric Pick problem. -/
 def symmetricPickPole (x v : ℝ) : ℂ :=
   upperHalfPlanePoint x v
 
+/-- Symmetric two-point Blaschke product attached to the candidate pole. -/
 def symmetricPickBlaschke (x v : ℝ) : ℂ → ℂ :=
   symmetricTwoPointBlaschke x v
 
+/-- First real diagonal entry of the symmetric two-node Pick block. -/
 def symmetricPickBaseA (tau a x v : ℝ) : ℝ :=
   (1 - Complex.normSq
     (symmetricPickBlaschke x v (symmetricPickAlphaPlus tau a))) / (2 * a)
 
+/-- Second real diagonal entry of the symmetric two-node Pick block. -/
 def symmetricPickBaseD (tau a x v : ℝ) : ℝ :=
   (1 - Complex.normSq
     (symmetricPickBlaschke x v (symmetricPickAlphaMinus tau a))) / (2 * a)
 
+/-- Off-diagonal entry of the symmetric two-node Pick block. -/
 def symmetricPickBaseC (tau a x v : ℝ) : ℂ :=
   upperHalfPlanePickKernel (symmetricPickBlaschke x v)
     (symmetricPickAlphaPlus tau a) (symmetricPickAlphaMinus tau a)
 
+/-- Reciprocal-height diagonal factor at the candidate pole. -/
 def symmetricPickH (v : ℝ) : ℝ := 1 / (2 * v)
 
+/-- First Cauchy feature evaluated at the positive interpolation node. -/
 def symmetricPickUPlus (tau a x v : ℝ) : ℂ :=
   Complex.I / (symmetricPickAlphaPlus tau a -
     starRingEnd ℂ (symmetricPickPole x v))
 
+/-- First Cauchy feature evaluated at the negative interpolation node. -/
 def symmetricPickUMinus (tau a x v : ℝ) : ℂ :=
   Complex.I / (symmetricPickAlphaMinus tau a -
     starRingEnd ℂ (symmetricPickPole x v))
 
+/-- Blaschke-weighted Cauchy feature at the positive interpolation node. -/
 def symmetricPickVPlus (tau a x v : ℝ) : ℂ :=
   symmetricPickBlaschke x v (symmetricPickAlphaPlus tau a) *
     symmetricPickUPlus tau a x v
 
+/-- Blaschke-weighted Cauchy feature at the negative interpolation node. -/
 def symmetricPickVMinus (tau a x v : ℝ) : ℂ :=
   symmetricPickBlaschke x v (symmetricPickAlphaMinus tau a) *
     symmetricPickUMinus tau a x v
@@ -66,6 +78,7 @@ def symmetricPickPhaseRatio (tau a x v : ℝ) : ℂ :=
       (elementaryUpperHalfPlaneBlaschke (symmetricPickPole (-x) v)
         (symmetricPickAlphaPlus tau a))
 
+/-- The two symmetric interpolation nodes followed by the candidate pole. -/
 def symmetricPickNodes (tau a x v : ℝ) : Fin 3 → ℂ :=
   ![symmetricPickAlphaPlus tau a,
     symmetricPickAlphaMinus tau a,
@@ -76,13 +89,16 @@ def conjugateSymmetricBlaschke (p z : ℂ) : ℂ :=
   elementaryUpperHalfPlaneBlaschke p z *
     elementaryUpperHalfPlaneBlaschke (-starRingEnd ℂ p) z
 
+/-- First feature in the conjugate-symmetric two-zero factorization. -/
 def conjugateSymmetricFeature0 (p z : ℂ) : ℂ :=
   elementaryPickFeature p z
 
+/-- Second feature in the conjugate-symmetric two-zero factorization. -/
 def conjugateSymmetricFeature1 (p z : ℂ) : ℂ :=
   elementaryUpperHalfPlaneBlaschke p z *
     elementaryPickFeature (-starRingEnd ℂ p) z
 
+/-- Unimodular phase coupling the conjugate-symmetric feature pair. -/
 def conjugateSymmetricPhase (p z : ℂ) : ℂ :=
   starRingEnd ℂ p / p * elementaryUpperHalfPlaneBlaschke p z *
     starRingEnd ℂ

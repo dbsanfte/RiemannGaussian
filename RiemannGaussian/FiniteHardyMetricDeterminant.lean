@@ -141,7 +141,7 @@ theorem finiteHardyCrossAngleComplementGramOperator_eq_residual
 def basisReverseGram
     {𝕜 E ι : Type*} [RCLike 𝕜]
     [NormedAddCommGroup E] [InnerProductSpace 𝕜 E]
-    (b : Module.Basis ι 𝕜 E) [Fintype ι] : Matrix ι ι 𝕜 :=
+    (b : Module.Basis ι 𝕜 E) : Matrix ι ι 𝕜 :=
   fun i j ↦ inner 𝕜 (b j) (b i)
 
 /-- Matrix of the sesquilinear form `inner x (T y)` in the project Gram
@@ -149,7 +149,7 @@ convention. -/
 def basisOperatorReverseGram
     {𝕜 E ι : Type*} [RCLike 𝕜]
     [NormedAddCommGroup E] [InnerProductSpace 𝕜 E]
-    (b : Module.Basis ι 𝕜 E) [Fintype ι] (T : E →ₗ[𝕜] E) :
+    (b : Module.Basis ι 𝕜 E) (T : E →ₗ[𝕜] E) :
     Matrix ι ι 𝕜 :=
   fun i j ↦ inner 𝕜 (b j) (T (b i))
 
@@ -188,7 +188,7 @@ def basisMapReverseGram
     {𝕜 E F ι : Type*} [RCLike 𝕜]
     [NormedAddCommGroup E] [InnerProductSpace 𝕜 E]
     [NormedAddCommGroup F] [InnerProductSpace 𝕜 F]
-    (b : Module.Basis ι 𝕜 E) [Fintype ι] (R : E →L[𝕜] F) :
+    (b : Module.Basis ι 𝕜 E) (R : E →L[𝕜] F) :
     Matrix ι ι 𝕜 :=
   fun i j ↦ inner 𝕜 (R (b j)) (R (b i))
 
@@ -196,7 +196,6 @@ theorem basisMapReverseGram_eq_adjointComp
     {𝕜 E F ι : Type*} [RCLike 𝕜]
     [NormedAddCommGroup E] [InnerProductSpace 𝕜 E] [CompleteSpace E]
     [NormedAddCommGroup F] [InnerProductSpace 𝕜 F] [CompleteSpace F]
-    [Fintype ι]
     (b : Module.Basis ι 𝕜 E) (R : E →L[𝕜] F) :
     basisMapReverseGram b R =
       basisOperatorReverseGram b (R.adjoint.comp R).toLinearMap := by
@@ -239,8 +238,8 @@ weight in each coordinate, then the whole image Gram matrix is obtained by
 left and right diagonal scaling. -/
 theorem basisMapReverseGram_eq_diagonal_mul_of_weighted
     {E F ι : Type*}
-    [NormedAddCommGroup E] [InnerProductSpace ℂ E] [CompleteSpace E]
-    [NormedAddCommGroup F] [InnerProductSpace ℂ F] [CompleteSpace F]
+    [NormedAddCommGroup E] [InnerProductSpace ℂ E]
+    [NormedAddCommGroup F] [InnerProductSpace ℂ F]
     [Fintype ι] [DecidableEq ι]
     (b : Module.Basis ι ℂ E) (R : E →L[ℂ] F) (s : ι → ℂ)
     (hweighted : ∀ i j,
@@ -257,8 +256,8 @@ theorem basisMapReverseGram_eq_diagonal_mul_of_weighted
 is the squared modulus of the product of all coordinate weights. -/
 theorem basisMapReverseGram_det_eq_normSq_prod_of_weighted
     {E F ι : Type*}
-    [NormedAddCommGroup E] [InnerProductSpace ℂ E] [CompleteSpace E]
-    [NormedAddCommGroup F] [InnerProductSpace ℂ F] [CompleteSpace F]
+    [NormedAddCommGroup E] [InnerProductSpace ℂ E]
+    [NormedAddCommGroup F] [InnerProductSpace ℂ F]
     [Fintype ι] [DecidableEq ι]
     (b : Module.Basis ι ℂ E) (R : E →L[ℂ] F) (s : ι → ℂ)
     (hweighted : ∀ i j,

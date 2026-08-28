@@ -587,10 +587,14 @@ The epsilon `3/50` research certificate is intended to instantiate this with
 `74/10000000`. -/
 structure GaussianArithmeticWidthCertificate (ε : ℝ) where
   width_pos : 0 < ε
+  /-- Number of prime-power channels retained in the compact model. -/
   cutoff : ℕ
+  /-- Endpoint separating compact control from the direct large-center bound. -/
   compactRadius : ℝ
   compactRadius_nonneg : 0 ≤ compactRadius
+  /-- Certified lower margin of the full arithmetic formula at the center. -/
   endpointMargin : ℝ
+  /-- Maximum loss assigned to the omitted prime tail on the compact region. -/
   tailLoss : ℝ
   endpoint_lower :
     endpointMargin ≤ gaussianArithmeticExplicitFormula ε 0

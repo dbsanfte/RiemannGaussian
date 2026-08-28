@@ -460,7 +460,7 @@ theorem finiteEPolynomial_separable_neg_parameter
     ← finiteEPolynomial_map_conj]
   exact hseparable.map
 
-@[simp] theorem finiteEPolynomial_neg_parameter_upperCount
+theorem finiteEPolynomial_neg_parameter_upperCount
     (A : ℝ[X]) (tau : ℝ) :
     upperHalfPlaneRootCount (finiteEPolynomial A (-tau)) =
       lowerHalfPlaneRootCount (finiteEPolynomial A tau) := by

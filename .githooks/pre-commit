@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+project_root=$(git rev-parse --show-toplevel)
+cd "$project_root"
+
+if git grep --cached -nE '\<(sorry|admit|sorryAx)\>' -- '*.lean'; then
+  echo 'Staged Lean sources contain a forbidden proof placeholder.' >&2
+  exit 1
+fi
+
+if command -v lake >/dev/null 2>&1; then
+  lake_command=(lake)
+elif [[ -x "$project_root/../.lean/elan/bin/lake" ]]; then
+  project_elan_home="$project_root/../.lean/elan"
+  lake_command=(env "ELAN_HOME=$project_elan_home" \
+    "$project_elan_home/bin/lake")
+else
+  echo 'Cannot find lake; install the pinned Lean toolchain before committing.' >&2
+  exit 1
+fi
+
+echo 'pre-commit: warning-as-error Lean build'
+"${lake_command[@]}" build --wfail
+
+echo 'pre-commit: whole-project declaration lint'
+"${lake_command[@]}" env lean -DwarningAsError=true scripts/LintProject.lean
+
+echo 'pre-commit: compiled-environment integrity and dashboard freshness'
+"${lake_command[@]}" env lean -DwarningAsError=true \
+  scripts/GenerateProjectStatus.lean
+git diff --exit-code -- docs/proof-status.json docs/proof-status.svg
+
+echo 'pre-commit: staged whitespace check'
+git diff --cached --check

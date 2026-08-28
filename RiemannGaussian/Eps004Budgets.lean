@@ -10,6 +10,7 @@ rational inputs.  They do not assert those analytic inputs themselves.
 
 namespace RiemannGaussian.Eps004Budgets
 
+/-- Rational upper bound for the explicitly retained low prime channels. -/
 def lowChannelUpper : ℚ :=
   (65960 / 1000000 : ℚ) /
       (693147180559 / 1000000000000 : ℚ) ^ 2
@@ -18,6 +19,7 @@ def lowChannelUpper : ℚ :=
     + (2284 / 100000000 : ℚ) /
       (1386294361118 / 1000000000000 : ℚ) ^ 2
 
+/-- Low-channel bound enlarged by the certified rounding allowance. -/
 def primeRoundUpper : ℚ := lowChannelUpper + 1 / 1000000
 
 /-- The first three channels plus the rounded `n ≥ 5` tail are below 0.14. -/
@@ -30,6 +32,7 @@ theorem endpoint_budget_positive :
       40402 / 10000 - 32294 / 10000 - 671 / 1000 - primeRoundUpper := by
   norm_num [primeRoundUpper, lowChannelUpper]
 
+/-- Coarse rational lower bound for the large-parameter Archimedean term. -/
 def archLargeLower : ℚ :=
   -1 / 5000 - 81 / 25
     + (138 / 100 : ℚ) * (873 / 100) * (7 / 22)

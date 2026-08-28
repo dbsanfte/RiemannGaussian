@@ -32,6 +32,7 @@ def symmetricQuartetLogDerivativeContribution
 def symmetricQuartetRadiusPlus (tau a x v : ℝ) : ℝ :=
   pairHyperbolicRadius (x - tau) v a
 
+/-- Radius from `x + I*v` to the upper zero with real coordinate `-tau`. -/
 def symmetricQuartetRadiusMinus (tau a x v : ℝ) : ℝ :=
   pairHyperbolicRadius (x + tau) v a
 

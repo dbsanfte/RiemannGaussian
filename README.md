@@ -1,5 +1,12 @@
 # RiemannGaussian
 
+[![Lean Action CI](https://github.com/dbsanfte/RiemannGaussian/actions/workflows/lean_action_ci.yml/badge.svg)](https://github.com/dbsanfte/RiemannGaussian/actions/workflows/lean_action_ci.yml)
+
+![Lean-verified RiemannGaussian proof frontier](docs/proof-status.svg)
+
+The dashboard is generated from Lean's compiled environment. Its green nodes
+are checked theorem constants, and CI rejects stale status artifacts.
+
 ## Project and build
 
 RiemannGaussian is a research project whose goal is a completely formal,
@@ -21,7 +28,8 @@ lake build --wfail
 ```
 
 GitHub Actions runs the same warning-as-error build on every pushed proof
-slice and rejects any Lean source containing `sorry` or `admit`.
+slice and rejects `sorry`, `admit`, or a direct placeholder-axiom escape in
+any Lean source. A second compiled-environment audit detects indirect uses.
 
 ## Formalized progress
 
@@ -1416,6 +1424,10 @@ current checked state, not a list of conjectural steps.
 - The current frontier theorems have been audited with `#print axioms`; they
   depend only on Lean's standard `propext`, `Classical.choice`, and
   `Quot.sound` axioms.
+- Five compiler-trust axioms from three historical finite-calibration modules
+  are explicitly quarantined and do not occur in the displayed frontier
+  theorems. CI rejects any additional project axiom; these legacy checks do
+  not count as formal progress.
 - Numerical and symbolic experiments may guide research, but they do not
   count as progress until the corresponding statement is proved in Lean.
 

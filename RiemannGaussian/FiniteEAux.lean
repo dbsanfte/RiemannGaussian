@@ -33,7 +33,7 @@ def finiteESharpPolynomial (A : ℝ[X]) (tau : ℝ) : ℂ[X] :=
   A.map Complex.ofRealHom -
     (Complex.I * (tau : ℂ)) • A.derivative.map Complex.ofRealHom
 
-@[simp] theorem finiteEPolynomial_eval_real (A : ℝ[X]) (tau x : ℝ) :
+theorem finiteEPolynomial_eval_real (A : ℝ[X]) (tau x : ℝ) :
     (finiteEPolynomial A tau).eval (x : ℂ) =
       Complex.ofReal (A.eval x) +
         Complex.I * (tau : ℂ) *
@@ -46,7 +46,7 @@ def finiteESharpPolynomial (A : ℝ[X]) (tau : ℝ) : ℂ[X] :=
   rw [Polynomial.eval₂_at_apply, Polynomial.eval₂_at_apply]
   simp only [Complex.ofRealHom_eq_coe, smul_eq_mul]
 
-@[simp] theorem finiteESharpPolynomial_eval_real
+theorem finiteESharpPolynomial_eval_real
     (A : ℝ[X]) (tau x : ℝ) :
     (finiteESharpPolynomial A tau).eval (x : ℂ) =
       Complex.ofReal (A.eval x) -

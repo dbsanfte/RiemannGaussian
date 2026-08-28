@@ -14,8 +14,8 @@ jobs:
       - name: Reject unfinished Lean proofs
         shell: bash
         run: |
-          if git grep -nE '\<(sorry|admit)\>' -- '*.lean'; then
-            echo 'Lean sources must not contain sorry or admit.' >&2
+          if git grep -nE '\<(sorry|admit|sorryAx)\>' -- '*.lean'; then
+            echo 'Lean sources contain a forbidden proof placeholder.' >&2
             exit 1
           fi
       # Lean source/tactic linters report warnings.  `--wfail`, together with
@@ -25,3 +25,11 @@ jobs:
         with:
           build: true
           build-args: "--wfail"
+      - name: Run whole-project declaration linters
+        shell: bash
+        run: lake env lean -DwarningAsError=true scripts/LintProject.lean
+      - name: Verify Lean-derived project dashboard
+        shell: bash
+        run: |
+          lake env lean -DwarningAsError=true scripts/GenerateProjectStatus.lean
+          git diff --exit-code -- docs/proof-status.json docs/proof-status.svg

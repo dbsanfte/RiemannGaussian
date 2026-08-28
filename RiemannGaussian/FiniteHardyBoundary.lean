@@ -30,6 +30,7 @@ namespace RiemannGaussian
 
 noncomputable section
 
+/-- Boundary restriction of a finite model-space rational function to `ℝ`. -/
 def finiteModelBoundaryValue (P : ℂ[X]) (q : finiteModelSpace P) (x : ℝ) : ℂ :=
   finiteModelValue P q (x : ℂ)
 
@@ -232,6 +233,7 @@ theorem finiteNegativeModelBoundaryValue_memLp_two
   simp [finiteModelBoundaryValue, finiteModelValue]
   ring
 
+/-- Linear boundary-value embedding of a finite model space into `L²(ℝ)`. -/
 noncomputable def finiteModelBoundaryLpLinearMap
     (P : ℂ[X]) (hreal : ∀ x : ℝ, P.eval (x : ℂ) ≠ 0) :
     finiteModelSpace P →ₗ[ℂ] Lp ℂ 2 (volume : Measure ℝ) where
@@ -348,6 +350,7 @@ theorem finiteModelBoundaryLp_eq_imp_cross_mul
   apply (div_eq_div_iff (hP x) (hQ x)).mp
   simpa [finiteModelBoundaryValue, finiteModelValue] using congrFun hfun x
 
+/-- Boundary `L²` embedding for the positive finite model space. -/
 noncomputable def finitePositiveModelBoundaryLpLinearMap
     (A : ℝ[X]) (tau : ℝ) :
     finitePositiveModelSpace A tau →ₗ[ℂ]
@@ -356,6 +359,7 @@ noncomputable def finitePositiveModelBoundaryLpLinearMap
     (lowerRootFactor (finiteEPolynomial A tau))
     (lowerRootFactor_eval_real_ne_zero (finiteEPolynomial A tau))
 
+/-- Boundary `L²` embedding for the negative finite model space. -/
 noncomputable def finiteNegativeModelBoundaryLpLinearMap
     (A : ℝ[X]) (tau : ℝ) :
     finiteNegativeModelSpace A tau →ₗ[ℂ]

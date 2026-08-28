@@ -18,6 +18,7 @@ noncomputable section
 
 open scoped ComplexConjugate Matrix
 
+/-- Hermitian `2 × 2` matrix with real diagonal entries `A`, `D`. -/
 def twoHermitianMatrix (A D : ℝ) (C : ℂ) : Matrix (Fin 2) (Fin 2) ℂ :=
   !![(A : ℂ), C;
      starRingEnd ℂ C, (D : ℂ)]
@@ -56,6 +57,7 @@ def twoValueWeightedGramPencil
   twoValueWeightedHermitianMatrix A D C s₀ s₁ -
     μ • twoHermitianMatrix A D C
 
+/-- Linear coefficient of the weighted two-value Gram determinant pencil. -/
 def twoValueWeightedGramPencilMiddle
     (A D : ℝ) (C s₀ s₁ : ℂ) : ℂ :=
   -(A * D : ℂ) *

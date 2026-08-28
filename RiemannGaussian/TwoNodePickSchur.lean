@@ -14,18 +14,22 @@ noncomputable section
 
 open scoped ComplexConjugate ComplexOrder
 
+/-- Determinant of a Hermitian `2 × 2` block in scalar coordinates. -/
 def twoHermitianDet (A D : ℝ) (C : ℂ) : ℝ :=
   A * D - Complex.normSq C
 
+/-- Quadratic form of the adjugate of a Hermitian `2 × 2` block. -/
 def twoHermitianAdjugateNorm
     (A D : ℝ) (C x₀ x₁ : ℂ) : ℝ :=
   D * Complex.normSq x₀ + A * Complex.normSq x₁ -
     2 * (starRingEnd ℂ x₀ * C * x₁).re
 
+/-- Quadratic form of the inverse Hermitian block, expressed by its adjugate. -/
 def twoHermitianInvNorm
     (A D : ℝ) (C x₀ x₁ : ℂ) : ℝ :=
   twoHermitianAdjugateNorm A D C x₀ x₁ / twoHermitianDet A D C
 
+/-- Sesquilinear inverse form of a Hermitian `2 × 2` block. -/
 def twoHermitianInvForm
     (A D : ℝ) (C x₀ x₁ y₀ y₁ : ℂ) : ℂ :=
   ((D : ℂ) * starRingEnd ℂ x₀ * y₀ -
@@ -34,6 +38,7 @@ def twoHermitianInvForm
       (A : ℂ) * starRingEnd ℂ x₁ * y₁) /
     (twoHermitianDet A D C : ℂ)
 
+/-- Full `3 × 3` Pick matrix obtained by adjoining one value node. -/
 def generalTwoNodePickMatrix
     (A D : ℝ) (C : ℂ) (h : ℝ)
     (u₀ u₁ v₀ v₁ s : ℂ) : Matrix (Fin 3) (Fin 3) ℂ :=

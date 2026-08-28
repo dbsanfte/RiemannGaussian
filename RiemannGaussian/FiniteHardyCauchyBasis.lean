@@ -89,7 +89,7 @@ theorem finiteModelBoundaryLp_rootCauchyCoordinate
 The proof evaluates a putative relation at each root; separability guarantees
 that the surviving quotient equals a nonzero derivative. -/
 theorem finiteModelRootCauchyCoordinate_linearIndependent_of_injective
-    {ι : Type*} [Fintype ι] [DecidableEq ι]
+    {ι : Type*} [Fintype ι]
     {P : ℂ[X]} (hP : P.Separable) (gamma : ι → ℂ)
     (hgamma : Function.Injective gamma)
     (hroot : ∀ i, P.eval (gamma i) = 0) :

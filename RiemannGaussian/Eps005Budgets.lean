@@ -4,12 +4,14 @@ import Mathlib
 
 namespace RiemannGaussian.Eps005Budgets
 
+/-- Rational upper bound for the explicitly retained low prime channels. -/
 def lowChannelUpper : ℚ :=
   2238670 / 10000000
     + 76630 / 10000000
     + 1174 / 10000000
     + 87 / 10000000
 
+/-- Low-channel bound enlarged by the certified rounding allowance. -/
 def primeRoundUpper : ℚ := lowChannelUpper + 6 / 10000000
 
 theorem prime_round_upper_lt :
@@ -23,6 +25,7 @@ theorem endpoint_budget_positive :
         - 231657 / 1000000 := by
   norm_num
 
+/-- Coarse rational lower bound for the large-parameter Archimedean term. -/
 def archLargeLower : ℚ :=
   -6 / 100000 - 289 / 100
     + (132 / 100 : ℚ) * (7839 / 1000) * (7 / 22)

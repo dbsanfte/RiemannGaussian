@@ -62,7 +62,6 @@ theorem zetaSpectralCoordinate_one_sub (s : ℂ) :
   · simp [zetaSpectralCoordinate]
     ring
 
-@[simp]
 theorem zetaSpectralCoordinate_one_sub_conj (s : ℂ) :
     zetaSpectralCoordinate (1 - starRingEnd ℂ s) =
       starRingEnd ℂ (zetaSpectralCoordinate s) := by
