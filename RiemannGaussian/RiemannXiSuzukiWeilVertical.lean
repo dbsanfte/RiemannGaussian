@@ -11,7 +11,7 @@ the xi divisor count and integrate reciprocal zero distances along the short
 vertical segment instead of replacing them by a pointwise reciprocal gap.
 -/
 
-open Complex Filter MeasureTheory Metric Polynomial Set Topology
+open Complex Filter MeasureTheory MeromorphicOn Metric Polynomial Set Topology
 open scoped Classical ENNReal Interval Topology lp
 
 namespace RiemannGaussian
@@ -33,6 +33,29 @@ theorem spectralZetaZeroWindow_card_le_threeHalves_of_growth
     (by
       simpa using jensen_riemannXi_divisor_le_threeHalves hA
         (by linarith : 0 < T + 1) hbound)
+
+/-- The selected canonical disk inherits the same multiplicity-aware
+`3/2`-power divisor bound. -/
+theorem sum_divisor_riemannXi_ball_le_threeHalves_of_growth
+    {A : ℝ} (hA : 1 ≤ A)
+    (hbound : ∀ z : ℂ,
+      ‖riemannXi z‖ ≤
+        Real.exp (A * (‖z‖ + 1) ^ (3 / 2 : ℝ)))
+    (n : ℕ) :
+    ((∑ᶠ i, divisor riemannXi
+        (ball 0 (xiCanonicalRadius n)) i : ℤ) : ℝ) ≤
+      A * (2 * xiCanonicalRadius n + 1) ^ (3 / 2 : ℝ) /
+        Real.log 2 := by
+  have heq :
+      (∑ᶠ i, divisor riemannXi (ball 0 (xiCanonicalRadius n)) i) =
+        ∑ᶠ i, divisor riemannXi
+          (closedBall 0 (xiCanonicalRadius n)) i := by
+    apply finsum_congr
+    intro i
+    exact divisor_riemannXi_ball_eq_closedBall n i
+  rw [heq]
+  exact_mod_cast jensen_riemannXi_divisor_le_threeHalves hA
+    (xiCanonicalRadius_pos n) hbound
 
 /-- With the `3/2` xi count retained, the reciprocal separation radius of
 the quantitative contour grows at most like a `3/2` power. -/
@@ -189,7 +212,111 @@ theorem norm_suzukiWeilSpectralTransform_quantitative_left_le
     norm_suzukiWeilSpectralTransform_le_inv_sq_of_vertical_bounds
       t z hT halphaNorm hgapNorm halphaIm
 
+/-! ## Reflection of the left vertical side -/
+
+/-- After reversing the height parameter, the left vertical integrand is the
+negative of a reflected Suzuki transform against the logarithmic derivative
+on the right vertical line. -/
+theorem suzukiXiWeilSpectralIntegrand_left_reflection
+    (t : ℝ) (z : ℂ) (T y : ℝ) :
+    suzukiXiWeilSpectralIntegrand t z
+        ((-T : ℂ) + ((-y : ℝ) : ℂ) * Complex.I) =
+      -(suzukiWeilSpectralTransform t z
+          (-((T : ℂ) + (y : ℂ) * Complex.I)) *
+        xiSpectralNegativeLogDerivative
+          ((T : ℂ) + (y : ℂ) * Complex.I)) := by
+  have hpoint :
+      ((-T : ℂ) + ((-y : ℝ) : ℂ) * Complex.I) =
+        -((T : ℂ) + (y : ℂ) * Complex.I) := by
+    push_cast
+    ring
+  unfold suzukiXiWeilSpectralIntegrand
+  rw [hpoint, xiSpectralNegativeLogDerivative_neg]
+  ring
+
+/-- On the symmetric height interval, the complete left vertical integral
+can be reflected onto the right line without any integrability assumption. -/
+theorem intervalIntegral_suzukiXiWeilSpectralIntegrand_left_reflection
+    (t : ℝ) (z : ℂ) (T : ℝ) :
+    (∫ y : ℝ in (-1 : ℝ)..1,
+      suzukiXiWeilSpectralIntegrand t z
+        ((-T : ℂ) + (y : ℂ) * Complex.I)) =
+      -(∫ y : ℝ in (-1 : ℝ)..1,
+        suzukiWeilSpectralTransform t z
+            (-((T : ℂ) + (y : ℂ) * Complex.I)) *
+          xiSpectralNegativeLogDerivative
+            ((T : ℂ) + (y : ℂ) * Complex.I)) := by
+  calc
+    (∫ y : ℝ in (-1 : ℝ)..1,
+        suzukiXiWeilSpectralIntegrand t z
+          ((-T : ℂ) + (y : ℂ) * Complex.I)) =
+      ∫ y : ℝ in (-1 : ℝ)..1,
+        suzukiXiWeilSpectralIntegrand t z
+          ((-T : ℂ) + ((-y : ℝ) : ℂ) * Complex.I) := by
+        simpa using
+          (intervalIntegral.integral_comp_neg
+            (f := fun y : ℝ ↦ suzukiXiWeilSpectralIntegrand t z
+              ((-T : ℂ) + (y : ℂ) * Complex.I))
+            (a := (-1 : ℝ)) (b := 1)).symm
+    _ = ∫ y : ℝ in (-1 : ℝ)..1,
+        -(suzukiWeilSpectralTransform t z
+            (-((T : ℂ) + (y : ℂ) * Complex.I)) *
+          xiSpectralNegativeLogDerivative
+            ((T : ℂ) + (y : ℂ) * Complex.I)) := by
+      apply intervalIntegral.integral_congr
+      intro y _hy
+      exact suzukiXiWeilSpectralIntegrand_left_reflection t z T y
+    _ = -(∫ y : ℝ in (-1 : ℝ)..1,
+        suzukiWeilSpectralTransform t z
+            (-((T : ℂ) + (y : ℂ) * Complex.I)) *
+          xiSpectralNegativeLogDerivative
+            ((T : ℂ) + (y : ℂ) * Complex.I)) :=
+      intervalIntegral.integral_neg
+
+/-- Both oriented vertical sides are exactly two Suzuki transforms against
+the same right-line xi logarithmic derivative. -/
+theorem suzukiXiWeilVerticalBoundaryIntegral_eq_right_reflection
+    (t : ℝ) (z : ℂ) (T : ℝ) :
+    suzukiXiWeilVerticalBoundaryIntegral t z T =
+      Complex.I *
+          (∫ y : ℝ in (-1 : ℝ)..1,
+            suzukiWeilSpectralTransform t z
+                ((T : ℂ) + (y : ℂ) * Complex.I) *
+              xiSpectralNegativeLogDerivative
+                ((T : ℂ) + (y : ℂ) * Complex.I)) +
+        Complex.I *
+          (∫ y : ℝ in (-1 : ℝ)..1,
+            suzukiWeilSpectralTransform t z
+                (-((T : ℂ) + (y : ℂ) * Complex.I)) *
+              xiSpectralNegativeLogDerivative
+                ((T : ℂ) + (y : ℂ) * Complex.I)) := by
+  unfold suzukiXiWeilVerticalBoundaryIntegral
+  rw [intervalIntegral_suzukiXiWeilSpectralIntegrand_left_reflection]
+  unfold suzukiXiWeilSpectralIntegrand
+  ring
+
 /-! ## Integrated reciprocal-distance bounds -/
+
+/-- The quantitative contour construction separates the right vertical
+line from the real coordinate of every spectral xi zero. -/
+theorem spectralBoundarySeparation_le_abs_quantitative_sub_zero_re
+    (n : ℕ) (rho : NontrivialZetaZero) :
+    spectralBoundarySeparation n ≤
+      |quantitativeSpectralBoundaryTruncation n -
+        (zetaSpectralCoordinate rho.1).re| := by
+  let T := quantitativeSpectralBoundaryTruncation n
+  let alpha := zetaSpectralCoordinate rho.1
+  have hTnonneg : 0 ≤ T :=
+    (Nat.cast_nonneg n).trans
+      (quantitativeSpectralBoundaryTruncation_spec n).1.le
+  have hsep : spectralBoundarySeparation n ≤
+      abs (T - abs alpha.re) := by
+    simpa [T, alpha] using
+      (quantitativeSpectralBoundaryTruncation_spec n).2.2 rho
+  have habs : abs (T - abs alpha.re) ≤ abs (T - alpha.re) := by
+    simpa [abs_of_nonneg hTnonneg] using
+      (abs_abs_sub_abs_le T alpha.re)
+  exact hsep.trans habs
 
 /-- The inverse hyperbolic sine is an antiderivative of a translated,
 rescaled reciprocal square root. -/
@@ -311,6 +438,192 @@ theorem intervalIntegral_inv_norm_vertical_sub_le_log
     _ = 2 * Real.log (1 + 3 / δ) := by
       congr 2
       field_simp [hδ.ne']
+
+/-! ## One integrated canonical factor -/
+
+/-- The pointwise canonical-factor estimate with its pole term left as the
+actual reciprocal distance, ready to be integrated. -/
+theorem norm_logDeriv_canonicalFactor_le_radial_add_inv
+    {R : ℝ} (hR : 0 < R) {i z : ℂ}
+    (hi : i ∈ ball 0 R) (hz : ‖z‖ ≤ R / 4) (hzi : z ≠ i) :
+    ‖logDeriv (Complex.canonicalFactor R i) z‖ ≤
+      2 / R + 1 / ‖z - i‖ := by
+  exact norm_logDeriv_canonicalFactor_le hR
+    (norm_pos_iff.mpr (sub_ne_zero.mpr hzi)) hi hz le_rfl
+
+/-- Each xi canonical factor costs only a radial `4/R` term plus a
+logarithmic reciprocal-separation term after integration across the complete
+height-two quantitative vertical segment. -/
+theorem intervalIntegral_norm_logDeriv_canonicalFactor_quantitative_le
+    (n : ℕ) {i : ℂ}
+    (hi : divisor riemannXi (ball 0 (xiCanonicalRadius n)) i ≠ 0) :
+    (∫ y : ℝ in (-1 : ℝ)..1,
+      ‖logDeriv
+        (Complex.canonicalFactor (xiCanonicalRadius n) i)
+        (completedSpectralCoordinate
+          ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+            (y : ℂ) * Complex.I))‖) ≤
+      4 / xiCanonicalRadius n +
+        2 * Real.log (1 + 3 / spectralBoundarySeparation n) := by
+  let R := xiCanonicalRadius n
+  let T := quantitativeSpectralBoundaryTruncation n
+  let alpha := zetaSpectralCoordinate i
+  let rho : NontrivialZetaZero :=
+    ⟨i, (riemannXi_eq_zero_iff_isNontrivialZetaZero i).mp
+      (riemannXi_eq_zero_of_divisor_ball_ne_zero hi)⟩
+  have hR : 0 < R := xiCanonicalRadius_pos n
+  have hδ : 0 < spectralBoundarySeparation n :=
+    spectralBoundarySeparation_pos n
+  have hiBall : i ∈ ball (0 : ℂ) R := by
+    exact (divisor riemannXi (ball 0 R)).supportWithinDomain
+      (by simpa [R] using hi)
+  have hsep : spectralBoundarySeparation n ≤ |T - alpha.re| := by
+    simpa [T, alpha, rho] using
+      spectralBoundarySeparation_le_abs_quantitative_sub_zero_re n rho
+  have hgap : T ≠ alpha.re := by
+    exact sub_ne_zero.mp (abs_pos.mp (hδ.trans_le hsep))
+  have halphaIm : |alpha.im| ≤ 1 / 2 := by
+    exact (NontrivialZetaZero.abs_spectralCoordinate_im_lt_half rho).le
+  have hleftContinuous : ContinuousOn
+      (fun y : ℝ ↦
+        ‖logDeriv (Complex.canonicalFactor R i)
+          (completedSpectralCoordinate
+            ((T : ℂ) + (y : ℂ) * Complex.I))‖)
+      (Icc (-1 : ℝ) 1) := by
+    intro y hy
+    let s := completedSpectralCoordinate
+      ((T : ℂ) + (y : ℂ) * Complex.I)
+    have hsquarter : ‖s‖ ≤ R / 4 := by
+      simpa [s, T, R] using
+        norm_quantitativeCompletedCoordinate_le_quarter n hy.1 hy.2
+    have hsclosed : s ∈ closedBall (0 : ℂ) R := by
+      rw [mem_closedBall, dist_zero_right]
+      exact hsquarter.trans (by linarith)
+    have hsi : s ≠ i := by
+      intro hs
+      have hxi := riemannXi_quantitativeCompletedCoordinate_ne_zero n y
+      apply hxi
+      rw [show completedSpectralCoordinate
+          (((quantitativeSpectralBoundaryTruncation n : ℝ) : ℂ) +
+            (y : ℂ) * Complex.I) = i by simpa [s, T] using hs]
+      exact riemannXi_eq_zero_of_divisor_ball_ne_zero hi
+    have hfactor : Complex.canonicalFactor R i s ≠ 0 :=
+      Complex.canonicalFactor_ne_zero hiBall hsclosed hsi
+    have hcanonical :=
+      Complex.analyticOnNhd_canonicalFactor R i s hsi
+    have hlog : AnalyticAt ℂ
+        (logDeriv (Complex.canonicalFactor R i)) s := by
+      simpa only [logDeriv] using
+        hcanonical.deriv.div hcanonical hfactor
+    have hcurve : Continuous
+        (fun u : ℝ ↦ completedSpectralCoordinate
+          ((T : ℂ) + (u : ℂ) * Complex.I)) := by
+      unfold completedSpectralCoordinate
+      continuity
+    have hcurveAt : ContinuousAt
+        (fun u : ℝ ↦ completedSpectralCoordinate
+          ((T : ℂ) + (u : ℂ) * Complex.I)) y :=
+      hcurve.continuousAt
+    have hcomp : ContinuousAt
+        (fun u : ℝ ↦
+          logDeriv (Complex.canonicalFactor R i)
+            (completedSpectralCoordinate
+              ((T : ℂ) + (u : ℂ) * Complex.I))) y := by
+      apply ContinuousAt.comp'
+        (f := fun u : ℝ ↦ completedSpectralCoordinate
+          ((T : ℂ) + (u : ℂ) * Complex.I))
+        (g := logDeriv (Complex.canonicalFactor R i))
+      · simpa only [s] using hlog.continuousAt
+      · exact hcurveAt
+    exact hcomp.norm.continuousWithinAt
+  have hleftIntegrable : IntervalIntegrable
+      (fun y : ℝ ↦
+        ‖logDeriv (Complex.canonicalFactor R i)
+          (completedSpectralCoordinate
+            ((T : ℂ) + (y : ℂ) * Complex.I))‖)
+      volume (-1) 1 :=
+    hleftContinuous.intervalIntegrable_of_Icc (by norm_num)
+  have hinvContinuous : Continuous
+      (fun y : ℝ ↦
+        ‖((T : ℂ) + (y : ℂ) * Complex.I) - alpha‖⁻¹) := by
+    apply Continuous.inv₀ (by fun_prop)
+    intro y hzero
+    have hsub : ((T : ℂ) + (y : ℂ) * Complex.I) - alpha = 0 :=
+      norm_eq_zero.mp hzero
+    apply hgap
+    have hre := congrArg Complex.re hsub
+    exact sub_eq_zero.mp (by simpa using hre)
+  have hinvIntegrable : IntervalIntegrable
+      (fun y : ℝ ↦
+        ‖((T : ℂ) + (y : ℂ) * Complex.I) - alpha‖⁻¹)
+      volume (-1) 1 :=
+    hinvContinuous.intervalIntegrable (-1) 1
+  have hrightIntegrable : IntervalIntegrable
+      (fun y : ℝ ↦ 2 / R +
+        ‖((T : ℂ) + (y : ℂ) * Complex.I) - alpha‖⁻¹)
+      volume (-1) 1 :=
+    intervalIntegrable_const.add hinvIntegrable
+  have hpoint (y : ℝ) (hy : y ∈ Icc (-1 : ℝ) 1) :
+      ‖logDeriv (Complex.canonicalFactor R i)
+          (completedSpectralCoordinate
+            ((T : ℂ) + (y : ℂ) * Complex.I))‖ ≤
+        2 / R +
+          ‖((T : ℂ) + (y : ℂ) * Complex.I) - alpha‖⁻¹ := by
+    let w : ℂ := (T : ℂ) + (y : ℂ) * Complex.I
+    let s := completedSpectralCoordinate w
+    have hsquarter : ‖s‖ ≤ R / 4 := by
+      simpa [s, w, T, R] using
+        norm_quantitativeCompletedCoordinate_le_quarter n hy.1 hy.2
+    have hsi : s ≠ i := by
+      intro hs
+      have hxi := riemannXi_quantitativeCompletedCoordinate_ne_zero n y
+      apply hxi
+      rw [show completedSpectralCoordinate
+          (((quantitativeSpectralBoundaryTruncation n : ℝ) : ℂ) +
+            (y : ℂ) * Complex.I) = i by simpa [s, w, T] using hs]
+      exact riemannXi_eq_zero_of_divisor_ball_ne_zero hi
+    calc
+      ‖logDeriv (Complex.canonicalFactor R i) s‖ ≤
+          2 / R + 1 / ‖s - i‖ :=
+        norm_logDeriv_canonicalFactor_le_radial_add_inv
+          hR hiBall hsquarter hsi
+      _ = 2 / R + ‖w - alpha‖⁻¹ := by
+        rw [norm_completedSpectralCoordinate_sub]
+        simp only [alpha, one_div]
+  have hmono :
+      (∫ y : ℝ in (-1 : ℝ)..1,
+        ‖logDeriv (Complex.canonicalFactor R i)
+          (completedSpectralCoordinate
+            ((T : ℂ) + (y : ℂ) * Complex.I))‖) ≤
+        ∫ y : ℝ in (-1 : ℝ)..1,
+          (2 / R +
+            ‖((T : ℂ) + (y : ℂ) * Complex.I) - alpha‖⁻¹) := by
+    exact intervalIntegral.integral_mono_on (by norm_num)
+      hleftIntegrable hrightIntegrable hpoint
+  have hinvBound :
+      (∫ y : ℝ in (-1 : ℝ)..1,
+        ‖((T : ℂ) + (y : ℂ) * Complex.I) - alpha‖⁻¹) ≤
+        2 * Real.log (1 + 3 / spectralBoundarySeparation n) :=
+    intervalIntegral_inv_norm_vertical_sub_le_log hδ hsep halphaIm
+  calc
+    (∫ y : ℝ in (-1 : ℝ)..1,
+        ‖logDeriv (Complex.canonicalFactor R i)
+          (completedSpectralCoordinate
+            ((T : ℂ) + (y : ℂ) * Complex.I))‖) ≤
+      ∫ y : ℝ in (-1 : ℝ)..1,
+        (2 / R +
+          ‖((T : ℂ) + (y : ℂ) * Complex.I) - alpha‖⁻¹) := hmono
+    _ = 4 / R +
+        (∫ y : ℝ in (-1 : ℝ)..1,
+          ‖((T : ℂ) + (y : ℂ) * Complex.I) - alpha‖⁻¹) := by
+      rw [intervalIntegral.integral_add intervalIntegrable_const
+        hinvIntegrable, intervalIntegral.integral_const]
+      simp only [sub_neg_eq_add, smul_eq_mul]
+      norm_num
+      ring
+    _ ≤ 4 / R +
+        2 * Real.log (1 + 3 / spectralBoundarySeparation n) :=
+      add_le_add (le_refl _) hinvBound
 
 end
 
