@@ -621,6 +621,372 @@ theorem integrable_suzukiWeilSafeLineSpectralWeight_mul_archimedeanTerms
   rw [hsecondCoordinate, hhalfCoordinate]
   ring
 
+/-! ## Laplace evaluation of the two elementary poles -/
+
+/-- The reflected safe-line weight is continuous as well as absolutely
+integrable. -/
+theorem continuous_suzukiWeilSafeLineSpectralWeight
+    (t : ℝ) {z : ℂ} (hz : 1 < z.im) :
+    Continuous (suzukiWeilSafeLineSpectralWeight t z) := by
+  unfold suzukiWeilSafeLineSpectralWeight
+  apply Continuous.add
+  · apply continuous_comp_of_forall_analyticAt
+      (suzukiWeilSpectralTransform t z)
+      (fun r : ℝ ↦ (r : ℂ) - Complex.I) (by fun_prop)
+    intro r
+    apply analyticAt_suzukiWeilSpectralTransform_of_ne
+    intro heq
+    have him := congrArg Complex.im heq
+    simp at him
+    linarith
+  · apply continuous_comp_of_forall_analyticAt
+      (suzukiWeilSpectralTransform t z)
+      (fun r : ℝ ↦ (((-r : ℝ) : ℂ) + Complex.I)) (by fun_prop)
+    intro r
+    apply analyticAt_suzukiWeilSpectralTransform_of_ne
+    intro heq
+    have him := congrArg Complex.im heq
+    simp at him
+    linarith
+
+/-- A positive-real-part Cauchy factor is bounded on the real frequency
+line. -/
+theorem norm_inv_add_I_mul_le_inv
+    {a : ℝ} (ha : 0 < a) (r : ℝ) :
+    ‖((a : ℂ) + Complex.I * (r : ℂ))⁻¹‖ ≤ a⁻¹ := by
+  have hnorm : a ≤ ‖(a : ℂ) + Complex.I * (r : ℂ)‖ := by
+    calc
+      a = ((a : ℂ) + Complex.I * (r : ℂ)).re := by simp
+      _ ≤ ‖(a : ℂ) + Complex.I * (r : ℂ)‖ := Complex.re_le_norm _
+  have hnormPos : 0 < ‖(a : ℂ) + Complex.I * (r : ℂ)‖ :=
+    ha.trans_le hnorm
+  rw [norm_inv]
+  exact (inv_le_inv₀ hnormPos ha).2 hnorm
+
+/-- The safe-line weight times any positive-real-part Cauchy factor is
+absolutely integrable. -/
+theorem integrable_suzukiWeilSafeLineSpectralWeight_mul_inv_add_I
+    (t : ℝ) {z : ℂ} (hz : 1 < z.im) {a : ℝ} (ha : 0 < a) :
+    Integrable (fun r : ℝ ↦
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (((a : ℂ) + Complex.I * (r : ℂ))⁻¹)) := by
+  apply (integrable_suzukiWeilSafeLineSpectralWeight t hz).mul_bdd
+    (show AEStronglyMeasurable (fun r : ℝ ↦
+      (((a : ℂ) + Complex.I * (r : ℂ))⁻¹)) volume from
+        (show Continuous (fun r : ℝ ↦
+          (((a : ℂ) + Complex.I * (r : ℂ))⁻¹)) from
+            (show Continuous (fun r : ℝ ↦
+              (a : ℂ) + Complex.I * (r : ℂ)) by fun_prop).inv₀
+                (fun r hzero ↦ by
+                  have hre := congrArg Complex.re hzero
+                  simp at hre
+                  exact ha.ne' hre)).aestronglyMeasurable)
+  exact Filter.Eventually.of_forall (norm_inv_add_I_mul_le_inv ha)
+
+/-- Joint frequency/Laplace kernel used for the elementary safe-line poles. -/
+def suzukiWeilSafeLineLaplaceJoint
+    (t : ℝ) (z : ℂ) (a : ℝ) (p : ℝ × ℝ) : ℂ :=
+  suzukiWeilSafeLineSpectralWeight t z p.1 *
+    Complex.exp
+      ((-(a : ℂ) - Complex.I * (p.1 : ℂ)) * (p.2 : ℂ))
+
+/-- The joint Laplace kernel is absolutely integrable on frequency times the
+positive time half-line. -/
+theorem integrable_suzukiWeilSafeLineLaplaceJoint
+    (t : ℝ) {z : ℂ} (hz : 1 < z.im) {a : ℝ} (ha : 0 < a) :
+    Integrable (suzukiWeilSafeLineLaplaceJoint t z a)
+      (volume.prod (volume.restrict (Ioi (0 : ℝ)))) := by
+  have hW := (integrable_suzukiWeilSafeLineSpectralWeight t hz).norm
+  have hExp : Integrable (fun x : ℝ ↦ Real.exp (-a * x))
+      (volume.restrict (Ioi (0 : ℝ))) := by
+    change IntegrableOn (fun x : ℝ ↦ Real.exp (-a * x)) (Ioi (0 : ℝ))
+    convert integrableOn_exp_mul_Ioi (a := -a) (neg_lt_zero.mpr ha) 0 using 1
+  have hmajor := hW.mul_prod hExp
+  refine hmajor.mono' ?_ (Filter.Eventually.of_forall fun p ↦ ?_)
+  · unfold suzukiWeilSafeLineLaplaceJoint
+    exact ((continuous_suzukiWeilSafeLineSpectralWeight t hz).comp
+      continuous_fst).mul (by fun_prop) |>.aestronglyMeasurable
+  · unfold suzukiWeilSafeLineLaplaceJoint
+    rw [norm_mul, Complex.norm_exp]
+    rw [show
+      ((-(a : ℂ) - Complex.I * (p.1 : ℂ)) * (p.2 : ℂ)).re =
+        -a * p.2 by
+      simp only [mul_re, sub_re, neg_re, ofReal_re, I_re, ofReal_im,
+        sub_im, neg_im, I_im]
+      ring]
+
+/-- The positive-half-line Laplace transform of one real-frequency
+oscillation is its Cauchy factor. -/
+theorem integral_Ioi_suzukiWeilSafeLineLaplaceExponential
+    {a : ℝ} (ha : 0 < a) (r : ℝ) :
+    (∫ x : ℝ in Ioi 0,
+      Complex.exp
+        ((-(a : ℂ) - Complex.I * (r : ℂ)) * (x : ℂ))) =
+      ((a : ℂ) + Complex.I * (r : ℂ))⁻¹ := by
+  have hreal : (-(a : ℂ) - Complex.I * (r : ℂ)).re < 0 := by
+    simp
+    exact ha
+  rw [integral_exp_mul_complex_Ioi hreal 0]
+  simp only [ofReal_zero, mul_zero, Complex.exp_zero]
+  rw [show -(a : ℂ) - Complex.I * (r : ℂ) =
+      -((a : ℂ) + Complex.I * (r : ℂ)) by ring,
+    neg_div_neg_eq, one_div]
+
+/-- Fubini and Fourier inversion evaluate an arbitrary positive-real-part
+Cauchy factor against the reflected safe-line weight. -/
+theorem integral_suzukiWeilSafeLineSpectralWeight_mul_inv_add_I
+    {t : ℝ} (ht : 0 ≤ t) {z : ℂ} (hz : 1 < z.im)
+    {a : ℝ} (ha : 0 < a) :
+    (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (((a : ℂ) + Complex.I * (r : ℂ))⁻¹)) =
+      ((2 * Real.pi : ℝ) : ℂ) *
+        (∫ x : ℝ in Ioi 0,
+          (Real.exp (-a * x) : ℂ) *
+            suzukiWeilSymmetricSafeLineTest t z (-x)) := by
+  have hjoint := integrable_suzukiWeilSafeLineLaplaceJoint t hz ha
+  have hswap := integral_integral_swap
+    (f := fun r x ↦ suzukiWeilSafeLineLaplaceJoint t z a (r, x)) hjoint
+  calc
+    (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (((a : ℂ) + Complex.I * (r : ℂ))⁻¹)) =
+      ∫ r : ℝ, ∫ x : ℝ in Ioi 0,
+        suzukiWeilSafeLineLaplaceJoint t z a (r, x) := by
+      apply integral_congr_ae
+      filter_upwards with r
+      unfold suzukiWeilSafeLineLaplaceJoint
+      change suzukiWeilSafeLineSpectralWeight t z r *
+          ((a : ℂ) + Complex.I * (r : ℂ))⁻¹ =
+        ∫ x : ℝ in Ioi 0,
+          suzukiWeilSafeLineSpectralWeight t z r *
+            Complex.exp
+              ((-(a : ℂ) - Complex.I * (r : ℂ)) * (x : ℂ))
+      rw [integral_const_mul,
+        integral_Ioi_suzukiWeilSafeLineLaplaceExponential ha]
+    _ = ∫ x : ℝ in Ioi 0, ∫ r : ℝ,
+        suzukiWeilSafeLineLaplaceJoint t z a (r, x) := hswap
+    _ = ((2 * Real.pi : ℝ) : ℂ) *
+        (∫ x : ℝ in Ioi 0,
+          (Real.exp (-a * x) : ℂ) *
+            suzukiWeilSymmetricSafeLineTest t z (-x)) := by
+      rw [← integral_const_mul]
+      apply integral_congr_ae
+      filter_upwards with x
+      unfold suzukiWeilSafeLineLaplaceJoint
+      have hexponential (r : ℝ) :
+          Complex.exp
+              ((-(a : ℂ) - Complex.I * (r : ℂ)) * (x : ℂ)) =
+            (Real.exp (-a * x) : ℂ) *
+              Complex.exp
+                (Complex.I * (r : ℂ) * ((-x : ℝ) : ℂ)) := by
+        rw [Complex.ofReal_exp, ← Complex.exp_add]
+        congr 1
+        push_cast
+        ring
+      simp_rw [hexponential]
+      rw [show (fun r : ℝ ↦
+          suzukiWeilSafeLineSpectralWeight t z r *
+            ((Real.exp (-a * x) : ℂ) *
+              Complex.exp
+                (Complex.I * (r : ℂ) * ((-x : ℝ) : ℂ)))) =
+        fun r : ℝ ↦ (Real.exp (-a * x) : ℂ) *
+          (suzukiWeilSafeLineSpectralWeight t z r *
+            Complex.exp
+              (Complex.I * (r : ℂ) * ((-x : ℝ) : ℂ))) by
+        funext r
+        ring]
+      rw [integral_const_mul,
+        integral_suzukiWeilSafeLineSpectralWeight_mul_cexp ht hz (-x)]
+      ring
+
+/-- On positive reflected time, the symmetric safe-line test reduces to the
+original positive-half-line Suzuki test with the exact exponential weight. -/
+theorem suzukiWeilSymmetricSafeLineTest_neg_of_pos
+    (t : ℝ) (z : ℂ) {x : ℝ} (hx : 0 < x) :
+    suzukiWeilSymmetricSafeLineTest t z (-x) =
+      (Real.exp x : ℂ) * suzukiWeilTest t z x := by
+  unfold suzukiWeilSymmetricSafeLineTest
+  rw [suzukiWeilTest_of_neg t z (neg_lt_zero.mpr hx)]
+  simp
+
+/-- The reflected time-domain Laplace integral is the original Suzuki test
+with exponent shifted by one. -/
+theorem integral_Ioi_exp_mul_suzukiWeilSymmetricSafeLineTest_neg
+    {t : ℝ} (ht : 0 ≤ t) (z : ℂ) (a : ℝ) :
+    (∫ x : ℝ in Ioi 0,
+      (Real.exp (-a * x) : ℂ) *
+        suzukiWeilSymmetricSafeLineTest t z (-x)) =
+      ∫ x : ℝ,
+        suzukiWeilTest t z x * (Real.exp ((1 - a) * x) : ℂ) := by
+  calc
+    (∫ x : ℝ in Ioi 0,
+      (Real.exp (-a * x) : ℂ) *
+        suzukiWeilSymmetricSafeLineTest t z (-x)) =
+      ∫ x : ℝ in Ioi 0,
+        suzukiWeilTest t z x *
+          (Real.exp ((1 - a) * x) : ℂ) := by
+      apply integral_congr_ae
+      filter_upwards [ae_restrict_mem measurableSet_Ioi] with x hx
+      rw [suzukiWeilSymmetricSafeLineTest_neg_of_pos t z hx]
+      calc
+        (Real.exp (-a * x) : ℂ) *
+            ((Real.exp x : ℂ) * suzukiWeilTest t z x) =
+          (((Real.exp (-a * x) * Real.exp x : ℝ) : ℂ) *
+            suzukiWeilTest t z x) := by push_cast; ring
+        _ = (Real.exp ((1 - a) * x) : ℂ) *
+            suzukiWeilTest t z x := by
+          rw [← Real.exp_add]
+          congr 2
+          ring_nf
+        _ = suzukiWeilTest t z x *
+            (Real.exp ((1 - a) * x) : ℂ) := by ring
+    _ = ∫ x : ℝ,
+        suzukiWeilTest t z x *
+          (Real.exp ((1 - a) * x) : ℂ) := by
+      apply setIntegral_eq_integral_of_forall_compl_eq_zero
+      intro x hx
+      have hxle : x ≤ 0 := by simpa using hx
+      rcases eq_or_lt_of_le hxle with hzero | hneg
+      · subst x
+        simp [suzukiWeilTest_zero ht]
+      · rw [suzukiWeilTest_of_neg t z hneg, zero_mul]
+
+/-- The safe-line pole with real part `3/2` gives the lower elementary
+factor `exp(-x/2)`. -/
+theorem integral_suzukiWeilSafeLineSpectralWeight_mul_threeHalfPole
+    {t : ℝ} (ht : 0 ≤ t) {z : ℂ} (hz : 1 < z.im) :
+    (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (((3 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹) =
+      ((2 * Real.pi : ℝ) : ℂ) *
+        (∫ x : ℝ,
+          suzukiWeilTest t z x * (Real.exp (-x / 2) : ℂ)) := by
+  rw [integral_suzukiWeilSafeLineSpectralWeight_mul_inv_add_I ht hz
+    (by norm_num : (0 : ℝ) < 3 / 2),
+    integral_Ioi_exp_mul_suzukiWeilSymmetricSafeLineTest_neg ht z]
+  congr 2
+  funext x
+  congr 1
+  ring_nf
+
+/-- The safe-line pole with real part `1/2` gives the upper elementary factor
+`exp(x/2)`. -/
+theorem integral_suzukiWeilSafeLineSpectralWeight_mul_oneHalfPole
+    {t : ℝ} (ht : 0 ≤ t) {z : ℂ} (hz : 1 < z.im) :
+    (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (((1 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹) =
+      ((2 * Real.pi : ℝ) : ℂ) *
+        (∫ x : ℝ,
+          suzukiWeilTest t z x * (Real.exp (x / 2) : ℂ)) := by
+  rw [integral_suzukiWeilSafeLineSpectralWeight_mul_inv_add_I ht hz
+    (by norm_num : (0 : ℝ) < 1 / 2),
+    integral_Ioi_exp_mul_suzukiWeilSymmetricSafeLineTest_neg ht z]
+  congr 2
+  funext x
+  congr 1
+  ring_nf
+
+/-- The two elementary completed-zeta poles on the safe line evaluate to
+`2π` times Suzuki's literal elementary integral. -/
+theorem integral_suzukiWeilSafeLineSpectralWeight_mul_elementaryPoles
+    {t : ℝ} (ht : 0 ≤ t) {z : ℂ} (hz : 1 < z.im) :
+    (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        ((((3 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹ +
+          (((1 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹)) =
+      ((2 * Real.pi : ℝ) : ℂ) *
+        (∫ x : ℝ, suzukiWeilElementaryIntegrand t z x) := by
+  have hthree :=
+    integrable_suzukiWeilSafeLineSpectralWeight_mul_inv_add_I t hz
+      (by norm_num : (0 : ℝ) < 3 / 2)
+  have hone :=
+    integrable_suzukiWeilSafeLineSpectralWeight_mul_inv_add_I t hz
+      (by norm_num : (0 : ℝ) < 1 / 2)
+  have hzSafe : z ∈ suzukiXiSafeUpperHalfPlane := by
+    change (1 / 2 : ℝ) < z.im
+    linarith
+  have hupper := integrable_suzukiWeilUpperPoleIntegrand ht hzSafe
+  have hlower := integrable_suzukiWeilLowerPoleIntegrand ht hzSafe
+  rw [show (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        ((((3 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹ +
+          (((1 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹)) =
+      (∫ r : ℝ,
+        suzukiWeilSafeLineSpectralWeight t z r *
+          (((3 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹) +
+      ∫ r : ℝ,
+        suzukiWeilSafeLineSpectralWeight t z r *
+          (((1 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹ by
+    rw [← integral_add hthree hone]
+    apply integral_congr_ae
+    filter_upwards with r
+    ring]
+  rw [integral_suzukiWeilSafeLineSpectralWeight_mul_threeHalfPole ht hz,
+    integral_suzukiWeilSafeLineSpectralWeight_mul_oneHalfPole ht hz]
+  rw [show (∫ x : ℝ, suzukiWeilElementaryIntegrand t z x) =
+      (∫ x : ℝ,
+        suzukiWeilTest t z x * (Real.exp (x / 2) : ℂ)) +
+      ∫ x : ℝ,
+        suzukiWeilTest t z x * (Real.exp (-x / 2) : ℂ) by
+    rw [← integral_add hupper hlower]
+    apply integral_congr_ae
+    filter_upwards with x
+    unfold suzukiWeilElementaryIntegrand
+    ring]
+  ring
+
+/-- The completed-zeta logarithmic constant contributes zero because the
+reflected safe-line weight has zero mean.  Thus the complete elementary
+spectral factor is exactly the literal elementary time integral. -/
+theorem integral_suzukiWeilSafeLineSpectralWeight_mul_elementarySpectralTerms
+    {t : ℝ} (ht : 0 ≤ t) {z : ℂ} (hz : 1 < z.im) :
+    (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (((((3 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹ +
+          (((1 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹) -
+            Complex.log Real.pi / 2)) =
+      ((2 * Real.pi : ℝ) : ℂ) *
+        (∫ x : ℝ, suzukiWeilElementaryIntegrand t z x) := by
+  have hthree :=
+    integrable_suzukiWeilSafeLineSpectralWeight_mul_inv_add_I t hz
+      (by norm_num : (0 : ℝ) < 3 / 2)
+  have hone :=
+    integrable_suzukiWeilSafeLineSpectralWeight_mul_inv_add_I t hz
+      (by norm_num : (0 : ℝ) < 1 / 2)
+  have hpoles : Integrable (fun r : ℝ ↦
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (((((3 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹ +
+          (((1 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹))) := by
+    exact (hthree.add hone).congr (Filter.Eventually.of_forall fun r ↦ by
+      simp only [Pi.add_apply]
+      ring)
+  have hconstant : Integrable (fun r : ℝ ↦
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (Complex.log Real.pi / 2)) :=
+    (integrable_suzukiWeilSafeLineSpectralWeight t hz).mul_const _
+  rw [show (∫ r : ℝ,
+      suzukiWeilSafeLineSpectralWeight t z r *
+        (((((3 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹ +
+          (((1 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹) -
+            Complex.log Real.pi / 2)) =
+      (∫ r : ℝ,
+        suzukiWeilSafeLineSpectralWeight t z r *
+          (((((3 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹ +
+            (((1 / 2 : ℝ) : ℂ) + Complex.I * (r : ℂ))⁻¹))) -
+      ∫ r : ℝ,
+        suzukiWeilSafeLineSpectralWeight t z r *
+          (Complex.log Real.pi / 2) by
+    rw [← integral_sub hpoles hconstant]
+    apply integral_congr_ae
+    filter_upwards with r
+    ring]
+  rw [integral_suzukiWeilSafeLineSpectralWeight_mul_elementaryPoles ht hz]
+  rw [integral_mul_const,
+    integral_suzukiWeilSafeLineSpectralWeight_eq_zero ht hz]
+  ring
+
 end
 
 end RiemannGaussian

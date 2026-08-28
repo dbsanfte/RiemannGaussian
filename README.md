@@ -350,9 +350,15 @@ current checked state, not a list of conjectural steps.
   `O((1+r^2)^-1)`. Lean therefore proves their product, and the complete
   elementary-plus-digamma completed-zeta factor, absolutely integrable. It
   also proves the reflected weight has exactly zero mean, the cancellation
-  needed to retain Gauss's convergent digamma difference. What remains in the
-  horizontal term is its exact Fourier/Laplace evaluation as the literal
-  elementary integral minus the Archimedean kernel integral.
+  needed to retain Gauss's convergent digamma difference. The elementary
+  safe-line transform is now closed too: Lean represents both Cauchy poles by
+  positive-time Laplace integrals, proves the joint frequency/time kernel
+  absolutely integrable, applies Fubini and the checked Fourier inversion
+  theorem, and recovers exactly `2*pi` times the literal elementary integral.
+  The logarithmic constant vanishes by the zero-mean theorem. What remains in
+  the horizontal term is now only the cancellation-preserving digamma
+  transform, which must equal `-2*pi` times the literal Archimedean kernel
+  integral.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
