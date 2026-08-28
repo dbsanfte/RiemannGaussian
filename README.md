@@ -440,6 +440,16 @@ current checked state, not a list of conjectural steps.
   elementary budget plus one quarter-line digamma norm. Thus no local zero
   counting estimate or unproved pole removal remains in this part of the
   `L²` tail proof; the next estimate is the explicit digamma growth bound.
+- That digamma estimate is now proved with an exponent strong enough for
+  `L²`, without importing its classical asymptotic. Lean combines three
+  copies of the Euler summand's `2/d` bound with one copy of its
+  `|x|/(2*d^2)` bound, takes fourth roots, and sums the resulting shifted
+  `d^(-5/4)` majorant. Consequently the quarter-line digamma is bounded by a
+  fixed constant times `(|x|+1)^(1/4)`, and the carrier-weighted critical-line
+  `ζ'/ζ` term inherits an explicit constant-plus-quarter-power bound. After
+  multiplication by the screw quotient's pending `1/|x|` estimate, this will
+  decay as `|x|^(-3/4)`, whose square is integrable; the easier square-root
+  estimate would have been only borderline.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
