@@ -327,6 +327,17 @@ current checked state, not a list of conjectural steps.
   above height one are therefore exactly the safe-line evaluation and the
   quantified vertical-side decay; after those, holomorphic identity extends
   the equality to the full safe half-plane.
+- The horizontal safe-line attack is now rigorous at the Fourier-inversion
+  level. Lean reflects the upper xi line onto the lower line and combines the
+  two transforms into the single weight `H(r-i) + H(-r+i)`. This is proved to
+  be the ordinary Fourier transform of the continuous, absolutely integrable
+  time-domain test `exp(-x) * (g(x) + g(-x))`. An explicit sum of shifted
+  Cauchy kernels proves the spectral weight itself absolutely integrable;
+  hence its Mathlib-normalized Fourier transform is integrable too. Lean then
+  applies the pointwise Fourier inversion theorem and checks the complete
+  scaling to obtain the unnormalized identity with factor `2*pi`. What remains
+  on the horizontal side is to apply this proved inversion identity to the
+  zeta Dirichlet series and completed-zeta Archimedean terms.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
