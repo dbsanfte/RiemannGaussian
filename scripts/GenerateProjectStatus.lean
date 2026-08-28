@@ -63,11 +63,11 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
-    label := "Static boundary recovers the complete detector locally uniformly"
-    lineOne := "static boundary"
-    lineTwo := "recovers detector"
+    label := "Static boundary and safe-axis transport reach the complete RH defect"
+    lineOne := "boundary detector"
+    lineTwo := "to RH defect"
     theoremName :=
-      ``RiemannGaussian.tendstoUniformlyOn_xiSpectralBlaschkePairedBoundary_sub_outer_quantitative_completeDetector
+      ``RiemannGaussian.staticBoundaryRecovery_and_safeAxisBlaschkeTransport_quantitative_complete
   }
 ]
 
@@ -132,7 +132,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
       "aria-labelledby=\"title description\" viewBox=\"0 0 1000 235\">\n" ++
     "  <title id=\"title\">Lean-verified RiemannGaussian proof status</title>\n" ++
     "  <desc id=\"description\">Two verified proof branches meet at the open " ++
-      "Hardy and heat-defect rigidity frontier before the Riemann hypothesis.</desc>\n" ++
+      "safe-axis arithmetic-rigidity frontier before the Riemann hypothesis.</desc>\n" ++
     "  <defs>\n" ++
     "    <marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" " ++
       "markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n" ++
@@ -172,7 +172,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     nodes ++
     "  <g class=\"open\">\n" ++
     "    <rect x=\"600\" y=\"108\" width=\"170\" height=\"62\" rx=\"10\"/>\n" ++
-    "    <text x=\"685\" y=\"133\">Hardy/heat rigidity</text>\n" ++
+    "    <text x=\"685\" y=\"133\">safe-axis rigidity</text>\n" ++
     "    <text x=\"685\" y=\"153\">OPEN</text>\n" ++
     "  </g>\n" ++
     "  <g class=\"goal\">\n" ++
@@ -180,7 +180,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"887\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Current target: force the " ++
-      "positive Hardy/heat defect to vanish.</text>\n" ++
+      "complete safe-axis RH defect to vanish.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -243,10 +243,10 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
-      ("label", .str "Positive Hardy/heat rigidity"),
+      ("label", .str "Safe-axis arithmetic rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Force the positive RH-detecting Hardy/heat defect to vanish")
+        "Force the complete safe-axis RH-detecting log defect to vanish")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

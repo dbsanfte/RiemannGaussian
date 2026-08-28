@@ -10,10 +10,10 @@ rigorous chain to that target.
 
 The proof is not complete. The generated dashboard in
 `docs/proof-status.svg` is the canonical compact status summary. At present,
-the Gaussian/Weil and Suzuki/contour branches reach a common large-height
-rigidity frontier. The missing theorem must force the positive RH-detecting
-boundary invariant to vanish; a restatement or conditional implication is
-not a substitute.
+the Gaussian/Weil and Suzuki/contour branches reach a common safe-axis
+arithmetic-rigidity frontier. The missing theorem must force the finite
+complete RH-detecting log-defect target to vanish; a restatement, hidden limit
+interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 

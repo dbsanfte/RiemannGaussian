@@ -20,20 +20,17 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now proves that the static contour recovers the complete upper spectral
-Blaschke detector locally uniformly. For every real interval `[a,b]` with
-`a > 1`, the paired horizontal boundary trace minus the fixed arithmetic
-safe-line trace converges uniformly to
+Lean now proves a two-stage safe-axis transport theorem for the Blaschke
+detector recovered by the static contour. For each fixed quantitative spectral
+window, the improper height integral of the negative response converges to a
+nonnegative log defect at `i`. As the spectral cutoff grows, those real values
+converge to the finite complete hyperbolic log-defect mass at `i`; that limit
+vanishes exactly when the Riemann hypothesis holds.
 
-`-2π · (complete upper Blaschke logarithmic derivative)(iv)`
-
-for `v ∈ [a,b]`. The proof includes an explicit inverse-square majorant for
-each spectral summand, uniform convergence of the genuine finite zero windows
-to the complete divisor, and an explicit detector-recovery error tending to
-zero. The open frontier is now exact: obtain arithmetic or entire-function
-rigidity forcing this recovered horizontal comparison—and hence the positive
-reflected-pair Gaussian/Hardy defect—to vanish. That step is RH-strength; this
-repository is not yet a proof of RH.
+The height and spectral-window limits remain explicitly ordered and are not
+interchanged. The open frontier is now to prove arithmetic or entire-function
+rigidity forcing this complete safe-axis target to vanish. This is an
+RH-strength step; the repository is not yet a proof of RH.
 
 ## Mathematical Program
 
