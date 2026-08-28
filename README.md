@@ -418,6 +418,18 @@ current checked state, not a list of conjectural steps.
   frontier is to extract control of the positive upper-height Gram component
   from this arithmetic scalar observable; cancellation in the scalar series
   is not silently identified with positivity.
+- The first real-axis step in Suzuki's unconditional `L²` theorem is now
+  formalized. Lean proves that spectral xi and its derivative are real on the
+  real axis and that each has norm at most
+  `‖E_xi(x)‖ = ‖xi(x) + i*xi'(x)‖`. Hence the theta carrier has norm at most
+  one everywhere, including Lean's totalized value at a zero of `E_xi`.
+  Away from the removable set, multiplying the carrier by the spectral
+  negative logarithmic derivative cancels the xi pole exactly to
+  `-xi'(x)/E_xi(x)`, whose norm is at most one; the corresponding totalized
+  product is bounded at every real point. The remaining part of Suzuki's
+  proposition is genuinely global: derive the arithmetic signal's
+  `O(log(2+|x|)/(1+|x|))` tail (with pole cancellation kept grouped) and turn
+  it into membership in `L²(ℝ)`.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
