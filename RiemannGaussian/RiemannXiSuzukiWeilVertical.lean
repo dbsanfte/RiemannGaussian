@@ -645,6 +645,73 @@ theorem intervalIntegral_norm_logDeriv_canonicalFactor_quantitative_le
 
 /-! ## The complete finite canonical-factor sum -/
 
+/-- The multiplicity-weighted finite canonical logarithmic-derivative sum is
+interval integrable on the quantitative vertical segment. -/
+theorem intervalIntegrable_canonicalLogDerivSum_quantitative (n : ℕ) :
+    IntervalIntegrable
+      (fun y : ℝ ↦
+        ∑ᶠ i, divisor riemannXi
+            (ball 0 (xiCanonicalRadius n)) i •
+          logDeriv (Complex.canonicalFactor (xiCanonicalRadius n) i)
+            (completedSpectralCoordinate
+              ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+                (y : ℂ) * Complex.I)))
+      volume (-1) 1 := by
+  classical
+  let R := xiCanonicalRadius n
+  let T := quantitativeSpectralBoundaryTruncation n
+  let d : ℂ → ℤ := fun i ↦ divisor riemannXi (ball 0 R) i
+  let F : ℂ → ℝ → ℂ := fun i y ↦
+    logDeriv (Complex.canonicalFactor R i)
+      (completedSpectralCoordinate
+        ((T : ℂ) + (y : ℂ) * Complex.I))
+  have hdFinite : (Function.support d).Finite := by
+    simpa [d] using
+      (riemannXiCanonicalResidual_decomp n).meromorphicOn
+        |>.divisor_ball_support_finite
+  have hFIntegrable (i : ℂ) (hi : i ∈ hdFinite.toFinset) :
+      IntervalIntegrable (F i) volume (-1) 1 := by
+    have hdi : d i ≠ 0 := by
+      simpa [Function.mem_support] using hdFinite.mem_toFinset.mp hi
+    have hdi' : divisor riemannXi
+        (ball 0 (xiCanonicalRadius n)) i ≠ 0 := by
+      simpa [d, R] using hdi
+    simpa [F, R, T] using
+      intervalIntegrable_logDeriv_canonicalFactor_quantitative n hdi'
+  have hsum : IntervalIntegrable
+      (fun y : ℝ ↦
+        ∑ i ∈ hdFinite.toFinset, d i • F i y)
+      volume (-1) 1 := by
+    have h := IntervalIntegrable.sum hdFinite.toFinset
+      (fun i hi ↦ (hFIntegrable i hi).smul (d i))
+    have heq :
+        (∑ i ∈ hdFinite.toFinset, d i • F i) =
+          (fun y : ℝ ↦
+            ∑ i ∈ hdFinite.toFinset, d i • F i y) := by
+      funext y
+      simp
+    rw [← heq]
+    exact h
+  have hrewrite (y : ℝ) :
+      (∑ᶠ i, d i • F i y) =
+        ∑ i ∈ hdFinite.toFinset, d i • F i y := by
+    apply finsum_eq_sum_of_support_subset
+    intro i hi
+    apply hdFinite.mem_toFinset.mpr
+    intro hdi
+    apply hi
+    simp [hdi]
+  have heq :
+      (fun y : ℝ ↦ ∑ᶠ i, d i • F i y) =
+        (fun y : ℝ ↦
+          ∑ i ∈ hdFinite.toFinset, d i • F i y) := by
+    funext y
+    exact hrewrite y
+  change IntervalIntegrable
+    (fun y : ℝ ↦ ∑ᶠ i, d i • F i y) volume (-1) 1
+  rw [heq]
+  exact hsum
+
 /-- After rewriting the canonical `finsum` over its finite support, the
 integral of its norm is bounded by total divisor multiplicity times the
 single-factor logarithmic cost. -/
@@ -835,6 +902,229 @@ theorem intervalIntegral_norm_canonicalLogDerivSum_quantitative_le_of_growth
     exact add_nonneg (by positivity)
       (mul_nonneg (by norm_num) (Real.log_nonneg harg))
   exact hraw.trans (mul_le_mul_of_nonneg_right hcount hcost)
+
+/-! ## The zero-free canonical residual -/
+
+/-- The logarithmic derivative of the zero-free canonical residual is
+interval integrable on the complete quantitative vertical segment. -/
+theorem intervalIntegrable_logDeriv_riemannXiCanonicalResidual_quantitative
+    (n : ℕ) :
+    IntervalIntegrable
+      (fun y : ℝ ↦
+        logDeriv (riemannXiCanonicalResidual n)
+          (completedSpectralCoordinate
+            ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+              (y : ℂ) * Complex.I)))
+      volume (-1) 1 := by
+  let R := xiCanonicalRadius n
+  let T := quantitativeSpectralBoundaryTruncation n
+  have hR : 0 < R := xiCanonicalRadius_pos n
+  have hcontinuous : ContinuousOn
+      (fun y : ℝ ↦
+        logDeriv (riemannXiCanonicalResidual n)
+          (completedSpectralCoordinate
+            ((T : ℂ) + (y : ℂ) * Complex.I)))
+      (Icc (-1 : ℝ) 1) := by
+    intro y hy
+    let s := completedSpectralCoordinate
+      ((T : ℂ) + (y : ℂ) * Complex.I)
+    have hsquarter : ‖s‖ ≤ R / 4 := by
+      simpa [s, T, R] using
+        norm_quantitativeCompletedCoordinate_le_quarter n hy.1 hy.2
+    have hsclosed : s ∈ closedBall (0 : ℂ) R := by
+      rw [mem_closedBall, dist_zero_right]
+      exact hsquarter.trans (by linarith)
+    have hresidual :=
+      (riemannXiCanonicalResidual_decomp n).analyticOnNhd s hsclosed
+    have hresidualNe :=
+      (riemannXiCanonicalResidual_decomp n).ne_zero s hsclosed
+    have hlog : AnalyticAt ℂ
+        (logDeriv (riemannXiCanonicalResidual n)) s := by
+      simpa only [logDeriv] using
+        hresidual.deriv.div hresidual hresidualNe
+    have hcurve : Continuous
+        (fun u : ℝ ↦ completedSpectralCoordinate
+          ((T : ℂ) + (u : ℂ) * Complex.I)) := by
+      unfold completedSpectralCoordinate
+      continuity
+    have hcomp : ContinuousAt
+        (fun u : ℝ ↦
+          logDeriv (riemannXiCanonicalResidual n)
+            (completedSpectralCoordinate
+              ((T : ℂ) + (u : ℂ) * Complex.I))) y := by
+      apply ContinuousAt.comp'
+        (f := fun u : ℝ ↦ completedSpectralCoordinate
+          ((T : ℂ) + (u : ℂ) * Complex.I))
+        (g := logDeriv (riemannXiCanonicalResidual n))
+      · simpa only [s] using hlog.continuousAt
+      · exact hcurve.continuousAt
+    exact hcomp.continuousWithinAt
+  exact hcontinuous.intervalIntegrable_of_Icc (by norm_num)
+
+/-- The existing Cauchy estimate for the zero-free residual gives an
+explicit length-two `L¹` bound on the quantitative segment. -/
+theorem intervalIntegral_norm_logDeriv_riemannXiCanonicalResidual_quantitative_le_of_growth
+    {B : ℝ} (hB : 1 ≤ B)
+    (hbound : ∀ z : ℂ,
+      ‖riemannXi z‖ ≤ Real.exp (B * (‖z‖ + 1) ^ 2))
+    (n : ℕ) :
+    (∫ y : ℝ in (-1 : ℝ)..1,
+      ‖logDeriv (riemannXiCanonicalResidual n)
+        (completedSpectralCoordinate
+          ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+            (y : ℂ) * Complex.I))‖) ≤
+      2 * ((2 * (B * (xiCanonicalRadius n + 1) ^ 2)) /
+        (xiCanonicalRadius n / 4)) := by
+  let R := xiCanonicalRadius n
+  let T := quantitativeSpectralBoundaryTruncation n
+  let M := (2 * (B * (R + 1) ^ 2)) / (R / 4)
+  have hleftIntegrable : IntervalIntegrable
+      (fun y : ℝ ↦
+        ‖logDeriv (riemannXiCanonicalResidual n)
+          (completedSpectralCoordinate
+            ((T : ℂ) + (y : ℂ) * Complex.I))‖)
+      volume (-1) 1 := by
+    simpa [T] using
+      (intervalIntegrable_logDeriv_riemannXiCanonicalResidual_quantitative n).norm
+  have hpoint (y : ℝ) (hy : y ∈ Icc (-1 : ℝ) 1) :
+      ‖logDeriv (riemannXiCanonicalResidual n)
+          (completedSpectralCoordinate
+            ((T : ℂ) + (y : ℂ) * Complex.I))‖ ≤ M := by
+    have hsquarter :=
+      norm_quantitativeCompletedCoordinate_le_quarter n hy.1 hy.2
+    simpa [M, R, T] using
+      norm_logDeriv_riemannXiCanonicalResidual_le_of_growth
+        hB hbound n hsquarter
+  have hmono :
+      (∫ y : ℝ in (-1 : ℝ)..1,
+        ‖logDeriv (riemannXiCanonicalResidual n)
+          (completedSpectralCoordinate
+            ((T : ℂ) + (y : ℂ) * Complex.I))‖) ≤
+        ∫ _y : ℝ in (-1 : ℝ)..1, M := by
+    exact intervalIntegral.integral_mono_on (by norm_num)
+      hleftIntegrable intervalIntegrable_const hpoint
+  calc
+    (∫ y : ℝ in (-1 : ℝ)..1,
+        ‖logDeriv (riemannXiCanonicalResidual n)
+          (completedSpectralCoordinate
+            ((T : ℂ) + (y : ℂ) * Complex.I))‖) ≤
+      ∫ _y : ℝ in (-1 : ℝ)..1, M := hmono
+    _ = 2 * M := by
+      rw [intervalIntegral.integral_const]
+      simp only [sub_neg_eq_add, smul_eq_mul]
+      norm_num
+    _ = 2 * ((2 * (B * (xiCanonicalRadius n + 1) ^ 2)) /
+        (xiCanonicalRadius n / 4)) := by
+      rfl
+
+/-! ## The complete right-line xi logarithmic derivative -/
+
+/-- Combining the exact canonical decomposition with the integrated residual
+and multiplicity-weighted factor estimates gives the required `L¹` bound for
+the genuine spectral-xi negative logarithmic derivative. -/
+theorem intervalIntegral_norm_xiSpectralNegativeLogDerivative_quantitative_le_of_growth
+    {A B : ℝ} (hA : 1 ≤ A)
+    (hThreeHalves : ∀ z : ℂ,
+      ‖riemannXi z‖ ≤
+        Real.exp (A * (‖z‖ + 1) ^ (3 / 2 : ℝ)))
+    (hB : 1 ≤ B)
+    (hQuadratic : ∀ z : ℂ,
+      ‖riemannXi z‖ ≤ Real.exp (B * (‖z‖ + 1) ^ 2))
+    (n : ℕ) :
+    (∫ y : ℝ in (-1 : ℝ)..1,
+      ‖xiSpectralNegativeLogDerivative
+        ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+          (y : ℂ) * Complex.I)‖) ≤
+      2 * ((2 * (B * (xiCanonicalRadius n + 1) ^ 2)) /
+          (xiCanonicalRadius n / 4)) +
+        (A * (2 * xiCanonicalRadius n + 1) ^ (3 / 2 : ℝ) /
+            Real.log 2) *
+          (4 / xiCanonicalRadius n +
+            2 * Real.log (1 + 3 / spectralBoundarySeparation n)) := by
+  let R := xiCanonicalRadius n
+  let T := quantitativeSpectralBoundaryTruncation n
+  let w : ℝ → ℂ := fun y ↦ (T : ℂ) + (y : ℂ) * Complex.I
+  let s : ℝ → ℂ := fun y ↦ completedSpectralCoordinate (w y)
+  let d : ℂ → ℤ := fun i ↦ divisor riemannXi (ball 0 R) i
+  let S : ℝ → ℂ := fun y ↦
+    ∑ᶠ i, d i • logDeriv (Complex.canonicalFactor R i) (s y)
+  have hR : 0 < R := xiCanonicalRadius_pos n
+  have hwContinuous : Continuous w := by
+    dsimp only [w]
+    fun_prop
+  have hleftContinuous : Continuous
+      (fun y : ℝ ↦ xiSpectralNegativeLogDerivative (w y)) := by
+    apply continuous_comp_of_forall_analyticAt
+      xiSpectralNegativeLogDerivative w hwContinuous
+    intro y
+    apply analyticAt_xiSpectralNegativeLogDerivative_of_ne
+    simpa [riemannXiSpectral, w, T] using
+      riemannXi_quantitativeCompletedCoordinate_ne_zero n y
+  have hleftIntegrable : IntervalIntegrable
+      (fun y : ℝ ↦ ‖xiSpectralNegativeLogDerivative (w y)‖)
+      volume (-1) 1 :=
+    hleftContinuous.norm.intervalIntegrable (-1) 1
+  have hresidualIntegrable : IntervalIntegrable
+      (fun y : ℝ ↦
+        ‖logDeriv (riemannXiCanonicalResidual n) (s y)‖)
+      volume (-1) 1 := by
+    simpa [s, w, T] using
+      (intervalIntegrable_logDeriv_riemannXiCanonicalResidual_quantitative n).norm
+  have hsumIntegrable : IntervalIntegrable
+      (fun y : ℝ ↦ ‖S y‖) volume (-1) 1 := by
+    simpa [S, d, s, w, R, T] using
+      (intervalIntegrable_canonicalLogDerivSum_quantitative n).norm
+  have hpoint (y : ℝ) (hy : y ∈ Icc (-1 : ℝ) 1) :
+      ‖xiSpectralNegativeLogDerivative (w y)‖ ≤
+        ‖logDeriv (riemannXiCanonicalResidual n) (s y)‖ + ‖S y‖ := by
+    have hsquarter : ‖s y‖ ≤ R / 4 := by
+      simpa [s, w, T, R] using
+        norm_quantitativeCompletedCoordinate_le_quarter n hy.1 hy.2
+    have hsball : s y ∈ ball (0 : ℂ) R := by
+      rw [mem_ball, dist_zero_right]
+      exact hsquarter.trans_lt (by linarith)
+    have hxi : riemannXi (s y) ≠ 0 := by
+      simpa [s, w, T] using
+        riemannXi_quantitativeCompletedCoordinate_ne_zero n y
+    have hdecomp := logDeriv_riemannXi_eq_residual_sub_canonical_sum n
+      hsball hxi
+    calc
+      ‖xiSpectralNegativeLogDerivative (w y)‖ =
+          ‖logDeriv riemannXi (s y)‖ := by
+        exact norm_xiSpectralNegativeLogDerivative (w y)
+      _ = ‖logDeriv (riemannXiCanonicalResidual n) (s y) - S y‖ := by
+        rw [hdecomp]
+      _ ≤ ‖logDeriv (riemannXiCanonicalResidual n) (s y)‖ + ‖S y‖ :=
+        norm_sub_le _ _
+  have hmono :
+      (∫ y : ℝ in (-1 : ℝ)..1,
+        ‖xiSpectralNegativeLogDerivative (w y)‖) ≤
+        ∫ y : ℝ in (-1 : ℝ)..1,
+          (‖logDeriv (riemannXiCanonicalResidual n) (s y)‖ + ‖S y‖) := by
+    exact intervalIntegral.integral_mono_on (by norm_num)
+      hleftIntegrable (hresidualIntegrable.add hsumIntegrable) hpoint
+  have hresidualBound :=
+    intervalIntegral_norm_logDeriv_riemannXiCanonicalResidual_quantitative_le_of_growth
+      hB hQuadratic n
+  have hsumBound :=
+    intervalIntegral_norm_canonicalLogDerivSum_quantitative_le_of_growth
+      hA hThreeHalves n
+  calc
+    (∫ y : ℝ in (-1 : ℝ)..1,
+        ‖xiSpectralNegativeLogDerivative (w y)‖) ≤
+      ∫ y : ℝ in (-1 : ℝ)..1,
+        (‖logDeriv (riemannXiCanonicalResidual n) (s y)‖ + ‖S y‖) := hmono
+    _ = (∫ y : ℝ in (-1 : ℝ)..1,
+          ‖logDeriv (riemannXiCanonicalResidual n) (s y)‖) +
+        (∫ y : ℝ in (-1 : ℝ)..1, ‖S y‖) := by
+      rw [intervalIntegral.integral_add hresidualIntegrable hsumIntegrable]
+    _ ≤ 2 * ((2 * (B * (R + 1) ^ 2)) / (R / 4)) +
+        (A * (2 * R + 1) ^ (3 / 2 : ℝ) / Real.log 2) *
+          (4 / R +
+            2 * Real.log (1 + 3 / spectralBoundarySeparation n)) := by
+      exact add_le_add
+        (by simpa [s, w, R, T] using hresidualBound)
+        (by simpa [S, d, s, w, R, T] using hsumBound)
 
 end
 

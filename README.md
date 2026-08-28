@@ -384,9 +384,13 @@ current checked state, not a list of conjectural steps.
   canonical divisor factor, replacing its pointwise reciprocal-separation
   loss by an explicit logarithm. The finite-support `finsum` has now also
   been integrated rigorously with analytic multiplicities and bounded by the
-  `3/2`-power divisor count times that logarithmic cost. What remains is to
-  control the zero-free residual logarithmic derivative, combine it with the
-  Suzuki transform, and prove the resulting explicit bound tends to zero.
+  `3/2`-power divisor count times that logarithmic cost. The zero-free
+  residual is now interval-integrable with an explicit Cauchy-estimate bound,
+  and the exact canonical decomposition combines both pieces into a complete
+  `L¹([-1,1])` estimate for the genuine spectral-xi negative logarithmic
+  derivative. What remains is to combine that estimate with Suzuki's
+  inverse-square transform bound and prove the resulting explicit vertical
+  bound tends to zero.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
