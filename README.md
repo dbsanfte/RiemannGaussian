@@ -335,9 +335,14 @@ current checked state, not a list of conjectural steps.
   Cauchy kernels proves the spectral weight itself absolutely integrable;
   hence its Mathlib-normalized Fourier transform is integrable too. Lean then
   applies the pointwise Fourier inversion theorem and checks the complete
-  scaling to obtain the unnormalized identity with factor `2*pi`. What remains
-  on the horizontal side is to apply this proved inversion identity to the
-  zeta Dirichlet series and completed-zeta Archimedean terms.
+  scaling to obtain the unnormalized identity with factor `2*pi`. That
+  inversion has now been applied to the von Mangoldt `L`-series on
+  `Re(s)=3/2`: Lean proves every weighted term integrable, proves the series of
+  absolute integrals summable, justifies the integral/series exchange, and
+  recovers exactly `2*pi` times both literal Suzuki prime sums. Mathlib's
+  Euler-product theorem then identifies the result with the safe-line zeta
+  logarithmic derivative. The prime part of the horizontal contour is closed;
+  the completed-zeta elementary and Archimedean terms remain.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
