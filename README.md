@@ -382,9 +382,11 @@ current checked state, not a list of conjectural steps.
   the height-two segment. Lean also reflects the left vertical integral onto
   the right xi line and applies the distance integral to each actual
   canonical divisor factor, replacing its pointwise reciprocal-separation
-  loss by an explicit logarithm. What remains is to sum those integrated
-  factor estimates with multiplicity, control the residual logarithmic
-  derivative, and prove the resulting vertical boundary tends to zero.
+  loss by an explicit logarithm. The finite-support `finsum` has now also
+  been integrated rigorously with analytic multiplicities and bounded by the
+  `3/2`-power divisor count times that logarithmic cost. What remains is to
+  control the zero-free residual logarithmic derivative, combine it with the
+  Suzuki transform, and prove the resulting explicit bound tends to zero.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real

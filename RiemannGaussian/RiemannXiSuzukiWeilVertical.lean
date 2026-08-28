@@ -451,6 +451,74 @@ theorem norm_logDeriv_canonicalFactor_le_radial_add_inv
   exact norm_logDeriv_canonicalFactor_le hR
     (norm_pos_iff.mpr (sub_ne_zero.mpr hzi)) hi hz le_rfl
 
+/-- Every supported xi canonical factor has an interval-integrable
+logarithmic derivative on the quantitatively separated vertical segment. -/
+theorem intervalIntegrable_logDeriv_canonicalFactor_quantitative
+    (n : ℕ) {i : ℂ}
+    (hi : divisor riemannXi (ball 0 (xiCanonicalRadius n)) i ≠ 0) :
+    IntervalIntegrable
+      (fun y : ℝ ↦
+        logDeriv (Complex.canonicalFactor (xiCanonicalRadius n) i)
+          (completedSpectralCoordinate
+            ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+              (y : ℂ) * Complex.I)))
+      volume (-1) 1 := by
+  let R := xiCanonicalRadius n
+  let T := quantitativeSpectralBoundaryTruncation n
+  have hR : 0 < R := xiCanonicalRadius_pos n
+  have hiBall : i ∈ ball (0 : ℂ) R := by
+    exact (divisor riemannXi (ball 0 R)).supportWithinDomain
+      (by simpa [R] using hi)
+  have hcontinuous : ContinuousOn
+      (fun y : ℝ ↦
+        logDeriv (Complex.canonicalFactor R i)
+          (completedSpectralCoordinate
+            ((T : ℂ) + (y : ℂ) * Complex.I)))
+      (Icc (-1 : ℝ) 1) := by
+    intro y hy
+    let s := completedSpectralCoordinate
+      ((T : ℂ) + (y : ℂ) * Complex.I)
+    have hsquarter : ‖s‖ ≤ R / 4 := by
+      simpa [s, T, R] using
+        norm_quantitativeCompletedCoordinate_le_quarter n hy.1 hy.2
+    have hsclosed : s ∈ closedBall (0 : ℂ) R := by
+      rw [mem_closedBall, dist_zero_right]
+      exact hsquarter.trans (by linarith)
+    have hsi : s ≠ i := by
+      intro hs
+      have hxi := riemannXi_quantitativeCompletedCoordinate_ne_zero n y
+      apply hxi
+      rw [show completedSpectralCoordinate
+          (((quantitativeSpectralBoundaryTruncation n : ℝ) : ℂ) +
+            (y : ℂ) * Complex.I) = i by simpa [s, T] using hs]
+      exact riemannXi_eq_zero_of_divisor_ball_ne_zero hi
+    have hfactor : Complex.canonicalFactor R i s ≠ 0 :=
+      Complex.canonicalFactor_ne_zero hiBall hsclosed hsi
+    have hcanonical :=
+      Complex.analyticOnNhd_canonicalFactor R i s hsi
+    have hlog : AnalyticAt ℂ
+        (logDeriv (Complex.canonicalFactor R i)) s := by
+      simpa only [logDeriv] using
+        hcanonical.deriv.div hcanonical hfactor
+    have hcurve : Continuous
+        (fun u : ℝ ↦ completedSpectralCoordinate
+          ((T : ℂ) + (u : ℂ) * Complex.I)) := by
+      unfold completedSpectralCoordinate
+      continuity
+    have hcomp : ContinuousAt
+        (fun u : ℝ ↦
+          logDeriv (Complex.canonicalFactor R i)
+            (completedSpectralCoordinate
+              ((T : ℂ) + (u : ℂ) * Complex.I))) y := by
+      apply ContinuousAt.comp'
+        (f := fun u : ℝ ↦ completedSpectralCoordinate
+          ((T : ℂ) + (u : ℂ) * Complex.I))
+        (g := logDeriv (Complex.canonicalFactor R i))
+      · simpa only [s] using hlog.continuousAt
+      · exact hcurve.continuousAt
+    exact hcomp.continuousWithinAt
+  exact hcontinuous.intervalIntegrable_of_Icc (by norm_num)
+
 /-- Each xi canonical factor costs only a radial `4/R` term plus a
 logarithmic reciprocal-separation term after integration across the complete
 height-two quantitative vertical segment. -/
@@ -484,65 +552,15 @@ theorem intervalIntegral_norm_logDeriv_canonicalFactor_quantitative_le
     exact sub_ne_zero.mp (abs_pos.mp (hδ.trans_le hsep))
   have halphaIm : |alpha.im| ≤ 1 / 2 := by
     exact (NontrivialZetaZero.abs_spectralCoordinate_im_lt_half rho).le
-  have hleftContinuous : ContinuousOn
-      (fun y : ℝ ↦
-        ‖logDeriv (Complex.canonicalFactor R i)
-          (completedSpectralCoordinate
-            ((T : ℂ) + (y : ℂ) * Complex.I))‖)
-      (Icc (-1 : ℝ) 1) := by
-    intro y hy
-    let s := completedSpectralCoordinate
-      ((T : ℂ) + (y : ℂ) * Complex.I)
-    have hsquarter : ‖s‖ ≤ R / 4 := by
-      simpa [s, T, R] using
-        norm_quantitativeCompletedCoordinate_le_quarter n hy.1 hy.2
-    have hsclosed : s ∈ closedBall (0 : ℂ) R := by
-      rw [mem_closedBall, dist_zero_right]
-      exact hsquarter.trans (by linarith)
-    have hsi : s ≠ i := by
-      intro hs
-      have hxi := riemannXi_quantitativeCompletedCoordinate_ne_zero n y
-      apply hxi
-      rw [show completedSpectralCoordinate
-          (((quantitativeSpectralBoundaryTruncation n : ℝ) : ℂ) +
-            (y : ℂ) * Complex.I) = i by simpa [s, T] using hs]
-      exact riemannXi_eq_zero_of_divisor_ball_ne_zero hi
-    have hfactor : Complex.canonicalFactor R i s ≠ 0 :=
-      Complex.canonicalFactor_ne_zero hiBall hsclosed hsi
-    have hcanonical :=
-      Complex.analyticOnNhd_canonicalFactor R i s hsi
-    have hlog : AnalyticAt ℂ
-        (logDeriv (Complex.canonicalFactor R i)) s := by
-      simpa only [logDeriv] using
-        hcanonical.deriv.div hcanonical hfactor
-    have hcurve : Continuous
-        (fun u : ℝ ↦ completedSpectralCoordinate
-          ((T : ℂ) + (u : ℂ) * Complex.I)) := by
-      unfold completedSpectralCoordinate
-      continuity
-    have hcurveAt : ContinuousAt
-        (fun u : ℝ ↦ completedSpectralCoordinate
-          ((T : ℂ) + (u : ℂ) * Complex.I)) y :=
-      hcurve.continuousAt
-    have hcomp : ContinuousAt
-        (fun u : ℝ ↦
-          logDeriv (Complex.canonicalFactor R i)
-            (completedSpectralCoordinate
-              ((T : ℂ) + (u : ℂ) * Complex.I))) y := by
-      apply ContinuousAt.comp'
-        (f := fun u : ℝ ↦ completedSpectralCoordinate
-          ((T : ℂ) + (u : ℂ) * Complex.I))
-        (g := logDeriv (Complex.canonicalFactor R i))
-      · simpa only [s] using hlog.continuousAt
-      · exact hcurveAt
-    exact hcomp.norm.continuousWithinAt
   have hleftIntegrable : IntervalIntegrable
       (fun y : ℝ ↦
         ‖logDeriv (Complex.canonicalFactor R i)
           (completedSpectralCoordinate
             ((T : ℂ) + (y : ℂ) * Complex.I))‖)
       volume (-1) 1 :=
-    hleftContinuous.intervalIntegrable_of_Icc (by norm_num)
+    (by
+      simpa [R, T] using
+        (intervalIntegrable_logDeriv_canonicalFactor_quantitative n hi).norm)
   have hinvContinuous : Continuous
       (fun y : ℝ ↦
         ‖((T : ℂ) + (y : ℂ) * Complex.I) - alpha‖⁻¹) := by
@@ -624,6 +642,199 @@ theorem intervalIntegral_norm_logDeriv_canonicalFactor_quantitative_le
     _ ≤ 4 / R +
         2 * Real.log (1 + 3 / spectralBoundarySeparation n) :=
       add_le_add (le_refl _) hinvBound
+
+/-! ## The complete finite canonical-factor sum -/
+
+/-- After rewriting the canonical `finsum` over its finite support, the
+integral of its norm is bounded by total divisor multiplicity times the
+single-factor logarithmic cost. -/
+theorem intervalIntegral_norm_canonicalLogDerivSum_quantitative_le
+    (n : ℕ) :
+    (∫ y : ℝ in (-1 : ℝ)..1,
+      ‖∑ᶠ i, divisor riemannXi
+          (ball 0 (xiCanonicalRadius n)) i •
+        logDeriv (Complex.canonicalFactor (xiCanonicalRadius n) i)
+          (completedSpectralCoordinate
+            ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+              (y : ℂ) * Complex.I))‖) ≤
+      ((∑ᶠ i, divisor riemannXi
+          (ball 0 (xiCanonicalRadius n)) i : ℤ) : ℝ) *
+        (4 / xiCanonicalRadius n +
+          2 * Real.log (1 + 3 / spectralBoundarySeparation n)) := by
+  classical
+  let R := xiCanonicalRadius n
+  let T := quantitativeSpectralBoundaryTruncation n
+  let d : ℂ → ℤ := fun i ↦ divisor riemannXi (ball 0 R) i
+  let F : ℂ → ℝ → ℂ := fun i y ↦
+    logDeriv (Complex.canonicalFactor R i)
+      (completedSpectralCoordinate
+        ((T : ℂ) + (y : ℂ) * Complex.I))
+  let C : ℝ := 4 / R +
+    2 * Real.log (1 + 3 / spectralBoundarySeparation n)
+  have hdFinite : (Function.support d).Finite := by
+    simpa [d] using
+      (riemannXiCanonicalResidual_decomp n).meromorphicOn
+        |>.divisor_ball_support_finite
+  have hdnonneg : ∀ i, 0 ≤ d i := by
+    intro i
+    exact (analyticOnNhd_riemannXi.mono (subset_univ _)).divisor_nonneg i
+  have hdmem {i : ℂ} (hi : i ∈ hdFinite.toFinset) : d i ≠ 0 := by
+    simpa [Function.mem_support] using hdFinite.mem_toFinset.mp hi
+  have hFIntegrable (i : ℂ) (hi : i ∈ hdFinite.toFinset) :
+      IntervalIntegrable (F i) volume (-1) 1 := by
+    have hdi : divisor riemannXi
+        (ball 0 (xiCanonicalRadius n)) i ≠ 0 := by
+      simpa [d, R] using hdmem hi
+    simpa [F, R, T] using
+      intervalIntegrable_logDeriv_canonicalFactor_quantitative n hdi
+  have hsupport (y : ℝ) :
+      Function.support (fun i ↦ d i • F i y) ⊆ hdFinite.toFinset := by
+    intro i hi
+    apply hdFinite.mem_toFinset.mpr
+    intro hdi
+    apply hi
+    simp [hdi]
+  have hrewrite (y : ℝ) :
+      (∑ᶠ i, d i • F i y) =
+        ∑ i ∈ hdFinite.toFinset, d i • F i y :=
+    finsum_eq_sum_of_support_subset _ (hsupport y)
+  have hsumIntegrable : IntervalIntegrable
+      (fun y : ℝ ↦
+        ∑ i ∈ hdFinite.toFinset, d i • F i y)
+      volume (-1) 1 := by
+    have h := IntervalIntegrable.sum hdFinite.toFinset
+      (fun i hi ↦ (hFIntegrable i hi).smul (d i))
+    have heq :
+        (∑ i ∈ hdFinite.toFinset, d i • F i) =
+          (fun y : ℝ ↦
+            ∑ i ∈ hdFinite.toFinset, d i • F i y) := by
+      funext y
+      simp
+    rw [← heq]
+    exact h
+  have hweightedIntegrable : IntervalIntegrable
+      (fun y : ℝ ↦
+        ∑ i ∈ hdFinite.toFinset,
+          ((d i : ℤ) : ℝ) * ‖F i y‖)
+      volume (-1) 1 := by
+    have h := IntervalIntegrable.sum hdFinite.toFinset
+      (fun i hi ↦
+        (hFIntegrable i hi).norm.const_mul (((d i : ℤ) : ℝ)))
+    have heq :
+        (∑ i ∈ hdFinite.toFinset,
+          fun y : ℝ ↦ ((d i : ℤ) : ℝ) * ‖F i y‖) =
+          (fun y : ℝ ↦
+            ∑ i ∈ hdFinite.toFinset,
+              ((d i : ℤ) : ℝ) * ‖F i y‖) := by
+      funext y
+      simp
+    rw [← heq]
+    exact h
+  have hpoint (y : ℝ) :
+      ‖∑ i ∈ hdFinite.toFinset, d i • F i y‖ ≤
+        ∑ i ∈ hdFinite.toFinset,
+          ((d i : ℤ) : ℝ) * ‖F i y‖ := by
+    calc
+      ‖∑ i ∈ hdFinite.toFinset, d i • F i y‖ ≤
+          ∑ i ∈ hdFinite.toFinset, ‖d i • F i y‖ :=
+        norm_sum_le _ _
+      _ = ∑ i ∈ hdFinite.toFinset,
+          ((d i : ℤ) : ℝ) * ‖F i y‖ := by
+        apply Finset.sum_congr rfl
+        intro i _hi
+        rw [norm_zsmul ℂ]
+        rw [Complex.norm_int_of_nonneg (hdnonneg i)]
+  have hmono :
+      (∫ y : ℝ in (-1 : ℝ)..1,
+        ‖∑ i ∈ hdFinite.toFinset, d i • F i y‖) ≤
+        ∫ y : ℝ in (-1 : ℝ)..1,
+          ∑ i ∈ hdFinite.toFinset,
+            ((d i : ℤ) : ℝ) * ‖F i y‖ := by
+    exact intervalIntegral.integral_mono_on (by norm_num)
+      hsumIntegrable.norm hweightedIntegrable (fun y _hy ↦ hpoint y)
+  have hfactorBound (i : ℂ) (hi : i ∈ hdFinite.toFinset) :
+      (∫ y : ℝ in (-1 : ℝ)..1, ‖F i y‖) ≤ C := by
+    have hdi : divisor riemannXi
+        (ball 0 (xiCanonicalRadius n)) i ≠ 0 := by
+      simpa [d, R] using hdmem hi
+    simpa [F, C, R, T] using
+      intervalIntegral_norm_logDeriv_canonicalFactor_quantitative_le n hdi
+  change (∫ y : ℝ in (-1 : ℝ)..1,
+      ‖∑ᶠ i, d i • F i y‖) ≤ ((∑ᶠ i, d i : ℤ) : ℝ) * C
+  calc
+    (∫ y : ℝ in (-1 : ℝ)..1,
+        ‖∑ᶠ i, d i • F i y‖) =
+      ∫ y : ℝ in (-1 : ℝ)..1,
+        ‖∑ i ∈ hdFinite.toFinset, d i • F i y‖ := by
+      apply intervalIntegral.integral_congr
+      intro y _hy
+      change ‖∑ᶠ i, d i • F i y‖ =
+        ‖∑ i ∈ hdFinite.toFinset, d i • F i y‖
+      rw [hrewrite y]
+    _ ≤ ∫ y : ℝ in (-1 : ℝ)..1,
+        ∑ i ∈ hdFinite.toFinset,
+          ((d i : ℤ) : ℝ) * ‖F i y‖ := hmono
+    _ = ∑ i ∈ hdFinite.toFinset,
+        ((d i : ℤ) : ℝ) *
+          (∫ y : ℝ in (-1 : ℝ)..1, ‖F i y‖) := by
+      rw [intervalIntegral.integral_finsetSum]
+      · apply Finset.sum_congr rfl
+        intro i _hi
+        rw [intervalIntegral.integral_const_mul]
+      · intro i hi
+        exact (hFIntegrable i hi).norm.const_mul (((d i : ℤ) : ℝ))
+    _ ≤ ∑ i ∈ hdFinite.toFinset, ((d i : ℤ) : ℝ) * C := by
+      apply Finset.sum_le_sum
+      intro i hi
+      exact mul_le_mul_of_nonneg_left (hfactorBound i hi) (by
+        exact_mod_cast hdnonneg i)
+    _ = (∑ᶠ i, ((d i : ℤ) : ℝ)) * C := by
+      rw [← Finset.sum_mul]
+      congr 1
+      symm
+      exact finsum_eq_sum_of_support_subset _ (by
+        intro i hi
+        apply hdFinite.mem_toFinset.mpr
+        intro hdi
+        apply hi
+        simp [hdi])
+    _ = ((∑ᶠ i, d i : ℤ) : ℝ) * C := by
+      congr 1
+      exact (map_finsum (Int.castRingHom ℝ) hdFinite).symm
+
+/-- With subquadratic xi growth, the complete canonical-factor contribution
+retains the strict `3/2` exponent and pays only the logarithmic contour-gap
+cost. -/
+theorem intervalIntegral_norm_canonicalLogDerivSum_quantitative_le_of_growth
+    {A : ℝ} (hA : 1 ≤ A)
+    (hbound : ∀ z : ℂ,
+      ‖riemannXi z‖ ≤
+        Real.exp (A * (‖z‖ + 1) ^ (3 / 2 : ℝ)))
+    (n : ℕ) :
+    (∫ y : ℝ in (-1 : ℝ)..1,
+      ‖∑ᶠ i, divisor riemannXi
+          (ball 0 (xiCanonicalRadius n)) i •
+        logDeriv (Complex.canonicalFactor (xiCanonicalRadius n) i)
+          (completedSpectralCoordinate
+            ((quantitativeSpectralBoundaryTruncation n : ℂ) +
+              (y : ℂ) * Complex.I))‖) ≤
+      (A * (2 * xiCanonicalRadius n + 1) ^ (3 / 2 : ℝ) /
+          Real.log 2) *
+        (4 / xiCanonicalRadius n +
+          2 * Real.log (1 + 3 / spectralBoundarySeparation n)) := by
+  have hraw := intervalIntegral_norm_canonicalLogDerivSum_quantitative_le n
+  have hcount :=
+    sum_divisor_riemannXi_ball_le_threeHalves_of_growth hA hbound n
+  have hcost : 0 ≤ 4 / xiCanonicalRadius n +
+      2 * Real.log (1 + 3 / spectralBoundarySeparation n) := by
+    have harg : 1 ≤ 1 + 3 / spectralBoundarySeparation n := by
+      have hsep := spectralBoundarySeparation_pos n
+      have hquot : 0 ≤ 3 / spectralBoundarySeparation n := by positivity
+      linarith
+    have hR := xiCanonicalRadius_pos n
+    exact add_nonneg (by positivity)
+      (mul_nonneg (by norm_num) (Real.log_nonneg harg))
+  exact hraw.trans (mul_le_mul_of_nonneg_right hcount hcost)
 
 end
 
