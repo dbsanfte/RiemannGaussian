@@ -839,6 +839,19 @@ current checked state, not a list of conjectural steps.
   soon as its window contains one upper zero, and vanishes exactly when that
   upper window is empty. No finite complex cancellation can mask an off-axis
   zero in this collar.
+  The Suzuki-response and Gaussian proper-time fronts now meet by an exact
+  finite identity. Lean constructs a real squared-distance-ratio
+  antiderivative through height zero and proves that its vertical derivative
+  is exactly twice the scaled finite Blaschke response. Integrating from the
+  boundary to `x+i*y` gives the established finite hyperbolic log-defect
+  window, with the factor and sign checked term by term. A separate finite
+  Tonelli argument identifies that same quantity with the positive-proper-
+  time Gaussian heat action of the finite spectral window. As the genuine
+  cutoff tends to infinity, the height-integrated zero-time Suzuki responses
+  converge in `ℝ≥0∞` to the complete Gaussian heat action. This is an
+  equality of previously independent constructions, not a new hypothesis;
+  the hard remaining task is an arithmetic or entire-function theorem that
+  forces their common positive value to vanish.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
@@ -1517,6 +1530,14 @@ upper zero its numerator is
 the sign or smallness of the full exact residual directly; cancellation
 between different upper zeros is no longer a possible escape in this local
 region.
+The initial-response bridge now goes further than positivity: its exact
+height integral is the finite hyperbolic log defect and, by finite Tonelli,
+the finite Gaussian proper-time action. Cofinal spectral windows converge to
+the complete action. Thus a future arithmetic estimate can be proved on
+either side and transported without an unproved limit interchange. The
+identity itself does not imply RH: the novel rigidity theorem must still
+force this common action to be zero (or force cofinal smallness of the exact
+reflection residuals) from xi's arithmetic structure.
 The isolated real-node remainder is the parallel boundary task. Lean proves
 that these two vanishing statements together recover the prior
 Cayley-weighted tail condition and hence the original coefficient-tail Gram
