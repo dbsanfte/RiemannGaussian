@@ -762,6 +762,11 @@ current checked state, not a list of conjectural steps.
   vectors for every off-axis xi node: nonpositive frequencies for upper
   nodes and strictly positive reciprocal frequencies for lower nodes. Their
   infinite syntheses are proved equal to the genuine rational node features.
+  Lean also computes their coefficient energy exactly: for spectral
+  coordinate `z_rho` off the real axis, the selected vector has squared norm
+  `1 / abs(Im z_rho)`. This identifies the precise boundary singularity and
+  proves that a scalable argument cannot discard cancellation by summing
+  node norms independently.
   Every finite Cayley-weighted Suzuki synthesis supported off the real axis
   is therefore exactly the bounded synthesis of one combined `l2(Z,C)`
   vector, with squared norm at most `pi` times that vector's coefficient
@@ -1381,9 +1386,12 @@ alone does not yield compactness or annihilate the structured Suzuki tail.
 The off-axis rational features are now encoded as explicit geometric
 `l2(Z,C)` vectors, and every finite off-axis Cayley-weighted synthesis is
 identified exactly with the operator applied to their combined vector. Its
-norm is bounded by `sqrt(pi)` times the combined coefficient norm. Thus the
-next route must prove xi-specific decay or cancellation of those combined
-geometric vectors and separately control the real-node boundary component.
+norm is bounded by `sqrt(pi)` times the combined coefficient norm. The exact
+node energy is now `1 / abs(Im z_rho)`, so this route also rigorously exposes
+the blow-up at the real spectral boundary. Thus the next route must preserve
+xi-specific cancellation in those combined geometric vectors and separately
+control the real-node boundary component; a triangle-inequality sum of
+individual node energies cannot provide uniform control.
 After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
