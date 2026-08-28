@@ -574,6 +574,16 @@ current checked state, not a list of conjectural steps.
   `norm(f_rho)^2 <= 8*delta/(pi*m_rho) + m_rho*(1+delta^(-2))`.
   What remains here is uniform or summable control of those local radii, not
   justification of the removable singularity.
+- The cancellation-sensitive alternative to a global Bessel theorem is now
+  exact. Lean represents the difference of two genuine coefficient windows as
+  a finite-support vector and proves that its Gram quadratic's real part is
+  precisely the squared boundary-`L²` distance of the normalized signals;
+  the published distance is `pi` times this value. Uniform late-pair
+  tail-Gram vanishing is proved equivalent to the boundary signals being
+  Cauchy. Even more concretely, an eventual quadratic comparison only along
+  Suzuki's actual coefficient tails—strictly weaker than a bound for all
+  finite coefficient families—implies that vanishing and a published-signal
+  `L²` limit. The global Bessel route is proved to imply the tailored one.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1128,14 +1138,14 @@ has a checked vertical-gap Cauchy majorant, but that bound degenerates near the
 critical line. The real-node block now has an explicit multiplicity/radius
 norm bound, but no uniform control of its isolation radii. What remains is to
 derive such control from the common carrier and xi arithmetic, prove a sharper
-row bound directly, find a
-cancellation-sensitive weaker Gram estimate, or prove a direct estimate for
-the Suzuki coefficient path; then the resulting limit must be identified with
-the arithmetic signal or compared directly with the reflected-height Gaussian
-invariant. That infinite comparison remains genuinely new mathematics; it is
-not inferred from safe-half-plane pointwise equality. This is the step needed
-to force the Gaussian epsilon-positivity statement, rather than attempting a
-non-scalable chain of finite certificates.
+row bound directly, or prove the now-explicit coefficient-tail Gram vanishing
+(for example through its tailored eventual quadratic comparison). After that,
+the resulting limit must be identified with the arithmetic signal or compared
+directly with the reflected-height Gaussian invariant. That infinite
+comparison remains genuinely new mathematics; it is not inferred from
+safe-half-plane pointwise equality. This is the step needed to force the
+Gaussian epsilon-positivity statement, rather than attempting a non-scalable
+chain of finite certificates.
 
 The Hardy route seeks a structural contradiction from any off-axis xi zero.
 The one-quartet finite theory and its real/Herglotz background are formalized.
