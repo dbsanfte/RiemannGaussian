@@ -489,6 +489,18 @@ current checked state, not a list of conjectural steps.
   gives the carrier-weighted result. The Hurwitz--Lerch difference is now the
   sole remaining component before the full arithmetic signal can be assembled
   as Suzuki's unconditional `S_t ∈ L²(ℝ)` theorem.
+- The positive-time Hurwitz--Lerch component is now in `L²(ℝ)`. Lean proves
+  `q = exp(-2*t)` lies strictly below one, identifies each real-axis Lerch
+  difference term with `-q^n` times the already controlled Euler digamma
+  difference term, and sums two complementary majorants. The shifted-square
+  majorant is linear in `|x|` and cancels the quotient at zero; the geometric
+  majorant is uniform in `x` and gives a `C_t/|x|` tail. The defining infinite
+  series is proved continuous and measurable on the real axis, and an
+  explicit compact-indicator-plus-Cauchy majorant yields actual unweighted and
+  carrier-weighted `MemLp · 2` theorems for every `t > 0`. Every individual
+  component of Suzuki's positive-time arithmetic signal is therefore in
+  `L²(ℝ)`; only the final definitional regrouping and finite-addition theorem
+  remain before Proposition 1.1 is closed in Lean.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1023,11 +1035,13 @@ arithmetic--spectral meeting theorem is formalized, and the carrier-weighted
 zeta, pole, and finite-prime components are now proved to lie in `L²(ℝ)`.
 The standalone digamma component has now joined them, including a checked
 linear numerator estimate that resolves its totalized zero-frequency
-quotient. The immediate obligation is the Hurwitz--Lerch component and then
-the finite addition/identity assembly of Suzuki's complete `S_t ∈ L²(ℝ)`
-proposition. Beyond that lies the genuinely new step: extract a positive
-Gram/norm constraint strong enough to force the Gaussian epsilon-positivity
-statement, rather than attempting a non-scalable chain of finite certificates.
+quotient. The positive-time Hurwitz--Lerch component is now square-integrable
+too, with both its zero-frequency cancellation and geometric tail proved from
+the defining series. The immediate obligation is now only the finite
+addition/identity assembly of Suzuki's complete `S_t ∈ L²(ℝ)` proposition.
+Beyond that lies the genuinely new step: extract a positive Gram/norm
+constraint strong enough to force the Gaussian epsilon-positivity statement,
+rather than attempting a non-scalable chain of finite certificates.
 
 The Hardy route seeks a structural contradiction from any off-axis xi zero.
 The one-quartet finite theory and its real/Herglotz background are formalized.
