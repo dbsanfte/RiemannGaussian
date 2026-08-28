@@ -636,6 +636,26 @@ current checked state, not a list of conjectural steps.
   this xi-energy density. This supplies a concrete positive
   entire-function/Herglotz measure for the next rigidity attack; no decay of
   its Suzuki coefficient tails is inferred yet.
+- That Herglotz structure is now an actual Lean construction. Because the
+  bounded carrier density need not have finite total mass, Lean uses the
+  normalized Cauchy kernel
+  `1/(x-z) - x/(1+x^2)`. A reusable degree theorem proves that continuous
+  real-boundary polynomial quotients with two degrees of denominator
+  advantage are absolutely integrable; the normalized kernel is verified
+  exactly as degree one over degree three. Multiplication by the arithmetic
+  xi-energy density therefore defines a genuine scalar transform at every
+  nonreal parameter. Lean proves its Schwarz reflection symmetry and the
+  exact Poisson formula for its imaginary part, hence that it maps the open
+  upper half-plane into the closed upper half-plane. Most importantly, on
+  every pair of genuine upper spectral-xi nodes, the carrier Gram kernel is
+  exactly the transform's Loewner--Pick divided difference
+  `(H(alpha_sigma)-conj(H(alpha_rho))) /
+  (alpha_sigma-conj(alpha_rho))`. On the diagonal it is
+  `Im(H(alpha_rho))/Im(alpha_rho)`, and the normalized zero-function norm
+  square is that ratio times the exact multiplicity normalization. This is
+  the first scalar Herglotz-transform realization of the cancellation-
+  sensitive Gram kernel; a rigidity or quantitative bound for this
+  particular transform is still required.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1196,8 +1216,11 @@ is Hermitian positive semidefinite, and the original tail Gram is precisely
 its normalization-weighted quadratic. Its positive weight is now also the
 explicit bounded measurable xi-energy ratio
 `xi(x)^2/(xi(x)^2+xi'(x)^2)`, with the totalized simultaneous-zero value
-handled separately. What is still missing is a quantitative Herglotz,
-de Branges, or arithmetic rigidity theorem that forces this structured
+handled separately. Its normalized Cauchy transform is now constructed and
+proved to have nonnegative imaginary part in the upper half-plane, and its
+Loewner--Pick kernel at genuine upper xi nodes is exactly the carrier Gram
+kernel. What is still missing is a quantitative bound or rigidity theorem
+for this specific xi-energy Herglotz transform that forces the structured
 quadratic to vanish along the actual Suzuki coefficient tails. After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
