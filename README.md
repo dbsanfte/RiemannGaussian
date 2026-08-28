@@ -861,6 +861,18 @@ current checked state, not a list of conjectural steps.
   positive, and the complete action is strictly increasing throughout the
   collar. Thus no unproved differentiation of the infinite divisor remains
   in the proposed arithmetic attack.
+  The missing upper/lower separation has now been made analytic at every
+  finite stage. For each genuine spectral window, Lean constructs positive
+  pairwise isolating circle radii and proves that the normalized circle
+  integral of the full finite Suzuki `P_t` recovers exactly one pole's true
+  multiplicity-weighted coefficient. Summing those residues over upper and
+  lower poles reconstructs the established restricted windows, so their
+  signed difference is a genuine finite Cauchy/Hardy residue projection of
+  the full function rather than hidden divisor data. Its actual time
+  derivative at zero is the finite Blaschke response, and its height integral
+  is exactly the finite Gaussian heat action. The next step is to deform or
+  globalize this finite projection onto contours whose upper boundary lies in
+  the arithmetic safe half-plane; no such deformation is assumed yet.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
@@ -1547,6 +1559,15 @@ either side and transported without an unproved limit interchange. The
 identity itself does not imply RH: the novel rigidity theorem must still
 force this common action to be zero (or force cofinal smallness of the exact
 reflection residuals) from xi's arithmetic structure.
+At the finite level, the signed response is now recovered from the *full*
+Suzuki function by normalized local circle residues. Isolating radii exist
+for every genuine window, the residue calculation retains analytic
+multiplicity exactly, and the upper/lower residue sums equal the prior
+restricted responses. This removes the algebraic-projection ambiguity. The
+remaining arithmetic-projection frontier is global: deform these local
+circles into a contour controlled by the full arithmetic `P_t` identity on
+its safe upper boundary and by the proved real-axis/vertical estimates,
+while retaining exact control of the other contour sides as the window grows.
 The isolated real-node remainder is the parallel boundary task. Lean proves
 that these two vanishing statements together recover the prior
 Cayley-weighted tail condition and hence the original coefficient-tail Gram
