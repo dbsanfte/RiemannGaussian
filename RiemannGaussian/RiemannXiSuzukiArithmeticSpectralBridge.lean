@@ -46,6 +46,86 @@ theorem norm_riemannXiSuzukiArithmeticPPositive_at_I_le
   rw [riemannXiSuzukiArithmeticPPositive_at_I_eq_inner ht]
   exact norm_inner_le_norm _ _
 
+/-- Suzuki's carrier-weighted arithmetic signal after the arithmetic formula
+has been identified with the spectral Cauchy transform. -/
+def riemannXiSuzukiArithmeticSignalPositive
+    (t : ℝ) (z : ℂ) : ℂ :=
+  suzukiXiZeroCarrier z * riemannXiSuzukiArithmeticPPositive t z
+
+/-- The complete arithmetic and spectral carrier-weighted signals agree on
+Suzuki's safe half-plane. -/
+theorem riemannXiSuzukiArithmeticSignalPositive_eq_spectral
+    {t : ℝ} (ht : 0 < t) {z : ℂ}
+    (hz : z ∈ suzukiXiSafeUpperHalfPlane) :
+    riemannXiSuzukiArithmeticSignalPositive t z =
+      riemannXiSuzukiSpectralSignal t z := by
+  unfold riemannXiSuzukiArithmeticSignalPositive
+    riemannXiSuzukiSpectralSignal
+  rw [riemannXiSuzukiArithmeticPPositive_eq_spectral_safe ht hz]
+
+/-- Pointwise in the safe half-plane, the arithmetic signal is the carrier
+times the exact coefficient-space Hilbert pairing. -/
+theorem riemannXiSuzukiArithmeticSignalPositive_eq_inner
+    {t : ℝ} (ht : 0 < t) {z : ℂ}
+    (hz : z ∈ suzukiXiSafeUpperHalfPlane) :
+    riemannXiSuzukiArithmeticSignalPositive t z =
+      suzukiXiZeroCarrier z *
+        inner ℂ (riemannXiSuzukiUpperEvaluationVector z hz)
+          (riemannXiSuzukiSpectralCoefficientVector t) := by
+  rw [riemannXiSuzukiArithmeticSignalPositive_eq_spectral ht hz]
+  unfold riemannXiSuzukiSpectralSignal
+  rw [riemannXiSuzukiSpectralP_eq_inner t hz]
+
+/-- The arithmetic signal inherits the pointwise coefficient-space
+Cauchy--Schwarz bound. -/
+theorem norm_riemannXiSuzukiArithmeticSignalPositive_le
+    {t : ℝ} (ht : 0 < t) {z : ℂ}
+    (hz : z ∈ suzukiXiSafeUpperHalfPlane) :
+    ‖riemannXiSuzukiArithmeticSignalPositive t z‖ ≤
+      ‖suzukiXiZeroCarrier z‖ *
+        (‖riemannXiSuzukiUpperEvaluationVector z hz‖ *
+          ‖riemannXiSuzukiSpectralCoefficientVector t‖) := by
+  rw [riemannXiSuzukiArithmeticSignalPositive_eq_inner ht hz, norm_mul]
+  exact mul_le_mul_of_nonneg_left (norm_inner_le_norm _ _)
+    (norm_nonneg _)
+
+/-- The normalized zero-function terms in the arithmetic signal are
+absolutely summable at every safe point. -/
+theorem summable_zetaSuzukiArithmeticZeroFunctionSummand
+    (t : ℝ) {z : ℂ} (hz : z ∈ suzukiXiSafeUpperHalfPlane) :
+    Summable (fun rho : NontrivialZetaZero ↦
+      (suzukiXiZeroCoefficientAmplitude rho : ℂ) *
+        suzukiSpectralScrewCoefficient t
+          (zetaSpectralCoordinate rho.1) *
+            suzukiXiZeroFunctionFormula rho z) := by
+  refine (summable_zetaSuzukiSpectralSignalSummand t hz).congr ?_
+  intro rho
+  exact zetaSuzukiSpectralSignalSummand_eq_zeroFunctionFormula t z rho
+
+/-- Suzuki's full normalized zero-function expansion `(3.6)` now holds for
+the arithmetic signal throughout the safe half-plane. -/
+theorem riemannXiSuzukiArithmeticSignalPositive_eq_tsum_zeroFunctionFormulas
+    {t : ℝ} (ht : 0 < t) {z : ℂ}
+    (hz : z ∈ suzukiXiSafeUpperHalfPlane) :
+    riemannXiSuzukiArithmeticSignalPositive t z =
+      ∑' rho : NontrivialZetaZero,
+        (suzukiXiZeroCoefficientAmplitude rho : ℂ) *
+          suzukiSpectralScrewCoefficient t
+            (zetaSpectralCoordinate rho.1) *
+              suzukiXiZeroFunctionFormula rho z := by
+  rw [riemannXiSuzukiArithmeticSignalPositive_eq_spectral ht hz]
+  exact riemannXiSuzukiSpectralSignal_eq_tsum_zeroFunctionFormulas t hz
+
+/-- Genuine finite zero windows converge pointwise to the arithmetic signal,
+not merely to a separately named spectral object. -/
+theorem tendsto_suzukiXiSignalWindow_arithmetic
+    {t : ℝ} (ht : 0 < t) {z : ℂ}
+    (hz : z ∈ suzukiXiSafeUpperHalfPlane) :
+    Tendsto (fun T : ℝ ↦ suzukiXiSignalWindow t T z) atTop
+      (nhds (riemannXiSuzukiArithmeticSignalPositive t z)) := by
+  rw [riemannXiSuzukiArithmeticSignalPositive_eq_spectral ht hz]
+  exact tendsto_suzukiXiSignalWindow t hz
+
 /-- Spatial derivatives of the arithmetic and spectral Suzuki functions
 agree throughout the safe half-plane. -/
 theorem deriv_riemannXiSuzukiArithmeticPPositive_eq_spectral
