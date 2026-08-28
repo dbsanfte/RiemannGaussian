@@ -596,6 +596,17 @@ current checked state, not a list of conjectural steps.
   scalar or weak limits is asserted: the next analytic target is a genuine
   boundary reproducing/contour theorem deriving them from the proved safe-
   half-plane arithmetic--spectral identity.
+- That weak target now has a concrete dense test family. Lean packages every
+  continuous compactly supported complex function as a boundary `L²` vector
+  and specializes the regular-measure approximation theorem to prove that
+  these vectors are dense in `L²(ℝ, ℂ)`. Their products with every finite
+  spectral window and with the positive-time arithmetic signal are proved
+  genuinely Lebesgue integrable, and the corresponding Hilbert pairings are
+  identified exactly with the literal integrals. Strong arithmetic boundary
+  identification is therefore equivalent to tail-Gram vanishing plus
+  convergence of all these compact-test spectral integrals to their literal
+  arithmetic counterparts. The integral convergence is not asserted; it is
+  now the explicit contour/reproducing target.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1156,11 +1167,15 @@ the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
 dense boundary test family, or the pair of scalar limits consisting of the
 finite spectral Gram norm and the mixed arithmetic--spectral inner product.
-The required boundary reproducing/contour theorem remains genuinely new
-mathematics; it is not inferred from safe-half-plane pointwise equality. The
-same comparison must then be connected to the reflected-height Gaussian
-invariant. This is the step needed to force the Gaussian epsilon-positivity
-statement, rather than attempting a non-scalable chain of finite certificates.
+Continuous compactly supported functions have now been packaged and proved
+dense, with their Hilbert pairings reduced to literal integrable boundary
+products. The required theorem is therefore the concrete convergence of those
+compact-test spectral integrals to the arithmetic integrals. Deriving it by a
+boundary reproducing/contour argument remains genuinely new mathematics; it is
+not inferred from safe-half-plane pointwise equality. The same comparison must
+then be connected to the reflected-height Gaussian invariant. This is the step
+needed to force the Gaussian epsilon-positivity statement, rather than
+attempting a non-scalable chain of finite certificates.
 
 The Hardy route seeks a structural contradiction from any off-axis xi zero.
 The one-quartet finite theory and its real/Herglotz background are formalized.
