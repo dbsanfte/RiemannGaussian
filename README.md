@@ -459,6 +459,16 @@ current checked state, not a list of conjectural steps.
   `C * (|x|+1)^(1/4) / |x|` for one explicit nonnegative constant `C`. This is
   the first complete arithmetic component with the decay exponent needed for
   the forthcoming squared-integrability proof.
+- The squared-integrability step for that component is now complete. Lean
+  proves the globally totalized zeta derivative Borel measurable, builds an
+  explicit majorant consisting of a constant indicator on `[-1,1]` plus a
+  multiple of `(1+|x|)^(-3/2)`, proves the majorant integrable, and verifies
+  pointwise domination of the genuine squared norm. Therefore the
+  carrier-weighted zeta contribution belongs unconditionally to `L²(ℝ)` for
+  every real screw time. This is an actual `MemLp · 2` theorem, not merely an
+  asymptotic claim. The pole, prime, digamma-difference, and Lerch components
+  must now be assembled with comparable bounds to obtain Suzuki's complete
+  arithmetic signal in `L²(ℝ)`.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
