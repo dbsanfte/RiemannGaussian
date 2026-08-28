@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
   },
   {
-    label := "First-tail Suzuki positivity is equivalent to cutoff-at-least-two cumulative surplus"
-    lineOne := "Suzuki first tail"
-    lineTwo := "cutoff >= 2 only"
+    label := "First-tail frontier is the exact Chebyshev-Legendre centered-moment family"
+    lineOne := "Suzuki / Chebyshev"
+    lineTwo := "Legendre frontier"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_two_le_cutoff_cumulativeTransportSurplus
+      ``RiemannGaussian.riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevCenteredMoment
   }
 ]
 
@@ -264,13 +264,13 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("rhImplied", .bool false),
     ("statusNote", .str
-      "The canonical first-tail Suzuki criterion has no base-data assumptions, and its cutoff-zero and synthetic cutoff-one inequalities are proved. The arithmetic cutoffs at least two and every RH-forcing rigidity step remain open."),
+      "Cutoffs zero and one are proved. Every remaining first-tail inequality is now an exact Archimedean-plus-centered-moment inequality whose arithmetic term is a finite Abel transform of Chebyshev psi. Proving that infinite family and every RH-forcing rigidity step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Prove the explicit cutoff-at-least-two first-tail transport-surplus inequalities by a scalable block argument, or derive another unconditional zero-location constraint")
+        "Prove a uniform lower bound for the Chebyshev-psi centered moment at all finite-prefix Legendre points, or derive another unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

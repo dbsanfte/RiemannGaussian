@@ -28,11 +28,16 @@ than `7 / 125`, and the first frozen slope is greater than `-3 / 10`. Exact
 curvature bounds then prove the synthetic cutoff-one transport gap strictly
 positive, so cutoff zero and cutoff one are both discharged. The remaining
 criterion begins at cutoff two, where every prefix contains a future
-von Mangoldt event. Those infinitely many arithmetic inequalities, and the
-sublinear law, are not RH and do not exclude a finite or sparse off-line
-divisor. The missing theorem must derive a genuine global zero-location
-constraint from xi's arithmetic or entire-function structure; a restatement,
-hidden limit interchange, or conditional implication is not a substitute.
+von Mangoldt event. Lean now identifies the mass and log-moment of every such
+complete prefix with exact finite Abel transforms of `Chebyshev.psi`, proves
+that its canonical transport point solves the literal Archimedean
+slope-matching equation, and rewrites the open gap as the Archimedean value
+plus a centered Chebyshev log-moment. The required uniform lower bound for
+that infinite family, and the sublinear law, are not RH and do not exclude a
+finite or sparse off-line divisor. The missing theorem must derive a genuine
+global zero-location constraint from xi's arithmetic or entire-function
+structure; a restatement, hidden limit interchange, or conditional
+implication is not a substitute.
 
 ## Soundness invariant
 

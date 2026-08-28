@@ -24,21 +24,25 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now proves that the synthetic zero-slope cell at the canonical Suzuki
-base cannot consume the initial positive reserve. The terminal theorem
+The remaining Suzuki first-tail frontier is now expressed directly through
+the classical Chebyshev function. Lean proves exact finite Abel identities
+for both arithmetic prefix statistics,
 
-`riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_two_le_cutoff_cumulativeTransportSurplus`
+`sum Lambda(n) / sqrt(n)` and `sum Lambda(n) log(n) / sqrt(n)`,
 
-reduces exact first-tail positivity to the cumulative transport-surplus
-inequalities with cutoff at least two. The proof establishes a base reserve
-greater than `7 / 125`, bounds the first frozen slope below by `-3 / 10`,
-locates its curvature-matching point within `9 / 35` of `log 2`, and proves
-that the complete intervening transport loss is less than `7 / 125`. Thus
-cutoff zero and the non-arithmetic cutoff one are both discharged; every
-remaining prefix contains a future von Mangoldt event. The infinitely many
-cutoff-at-least-two inequalities remain open. This does not establish tail
-positivity or a zero-location constraint, and the repository is not yet a
-proof of RH.
+as explicit integral functionals of `Chebyshev.psi`. It also proves that each
+canonical transport point is exactly where the literal Archimedean slope
+matches the complete finite von-Mangoldt prefix mass. Consequently,
+
+`riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevCenteredMoment`
+
+identifies tail positivity with one uniform family: at every remaining
+finite-prefix Legendre point, the literal Archimedean term plus a centered
+Chebyshev-`psi` log-moment must be nonnegative. The already proved cutoff-zero
+and synthetic cutoff-one cases are absent. This is an exact scalable
+Chebyshev/PNT interface, not a numerical certificate; the uniform lower bound
+is still open, so this does not establish tail positivity, a zero-location
+constraint, or RH.
 
 ## Mathematical Program
 
