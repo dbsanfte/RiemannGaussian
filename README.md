@@ -811,6 +811,12 @@ current checked state, not a list of conjectural steps.
   known to vanish exactly under RH; under `not RH` their limit has strictly
   positive real part. This is a direct formal bridge from Suzuki dynamics to
   the hard RH rigidity invariant, not a proof that the invariant vanishes.
+  At every noncolliding upper point the same finite velocity is now proved
+  equal to `-i` times the exact spectral-xi reflection residual, and hence to
+  an explicit combination of the genuine `xi'/xi`, its analytic finite-window
+  remainder, the critical-line Cauchy part, and twice the upper Cauchy part.
+  These finite velocities and the scaled reflection residuals both converge
+  to the same complete Suzuki initial velocity.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
@@ -1466,7 +1472,11 @@ initial time derivative of the signed upper-minus-lower spectral `P_t`
 response is now proved to converge to the positive boundary Blaschke defect,
 zero exactly under RH. A successful rigidity argument can therefore target
 this concrete Suzuki initial velocity, while the full arithmetic `P_t`
-formula controls the complementary unsigned response.
+formula controls the complementary unsigned response. Off the boundary this
+velocity is also the cofinal limit of the exact spectral-xi reflection
+residual, so the next rigidity estimate can be formulated directly in terms
+of the entire-function logarithmic derivative and its checked analytic
+window remainder.
 The isolated real-node remainder is the parallel boundary task. Lean proves
 that these two vanishing statements together recover the prior
 Cayley-weighted tail condition and hence the original coefficient-tail Gram

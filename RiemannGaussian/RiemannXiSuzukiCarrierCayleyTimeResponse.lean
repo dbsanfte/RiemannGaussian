@@ -206,6 +206,35 @@ theorem suzukiXiOffAxisSignedSpectralPResponseDerivativeWindow_zero_time
     riemannXiUpperBlaschkeLogDerivativeWindow_eq_upper_sub_lower hT]
   ring
 
+/-- At a noncolliding upper observation point, the finite initial Suzuki
+velocity is exactly `-i` times the spectral-xi reflection residual. -/
+theorem suzukiXiOffAxisSignedSpectralPResponseDerivativeWindow_zero_time_eq_reflectionResidual
+    {z : ℂ} (hz : 0 < z.im) (hxi : riemannXiSpectral z ≠ 0)
+    {T : ℝ} (hT : 0 ≤ T) :
+    suzukiXiOffAxisSignedSpectralPResponseDerivativeWindow 0 T z =
+      -Complex.I * riemannXiUpperSpectralReflectionResidual z T := by
+  rw [suzukiXiOffAxisSignedSpectralPResponseDerivativeWindow_zero_time hT,
+    riemannXiUpperSpectralReflectionResidual_eq_logDerivativeWindow
+      hz hxi hT]
+
+/-- Expanded entire-function form of the finite initial Suzuki velocity:
+the only terms are the upper Cauchy divisor, the genuine spectral-xi
+logarithmic derivative, its analytic window remainder, and the critical-line
+Cauchy part. -/
+theorem suzukiXiOffAxisSignedSpectralPResponseDerivativeWindow_zero_time_eq_xiLogDerivative
+    {z : ℂ} (hz : 0 < z.im) (hxi : riemannXiSpectral z ≠ 0)
+    {T : ℝ} (hT : 0 ≤ T) :
+    suzukiXiOffAxisSignedSpectralPResponseDerivativeWindow 0 T z =
+      -Complex.I *
+        (2 * riemannXiSpectralUpperCauchyWindow z T -
+          (logDeriv riemannXiSpectral z -
+            riemannXiSpectralWindowLogDerivativeRawRemainder T z -
+            riemannXiSpectralCriticalCauchyWindow z T)) := by
+  rw [
+    suzukiXiOffAxisSignedSpectralPResponseDerivativeWindow_zero_time_eq_reflectionResidual
+      hz hxi hT]
+  rfl
+
 /-- The signed finite Suzuki response has initial derivative `-i` times its
 finite Blaschke logarithmic derivative. -/
 theorem hasDerivAt_suzukiXiOffAxisSignedSpectralPResponseWindow_zero_time
@@ -238,6 +267,33 @@ theorem tendsto_riemannXiUpperBlaschkeLogDerivativeWindow_real
 response. -/
 def riemannXiSuzukiOffAxisSignedPInitialVelocity (z : ℂ) : ℂ :=
   -Complex.I * riemannXiUpperBlaschkeCompleteLogDerivative z
+
+/-- At every noncolliding upper observation point, finite initial Suzuki
+velocities converge to the complete signed initial velocity. -/
+theorem tendsto_suzukiXiOffAxisSignedSpectralPResponseDerivativeWindow_zero_time_upper
+    {z : ℂ} (hz : 0 < z.im) (hxi : riemannXiSpectral z ≠ 0) :
+    Tendsto (fun T : ℝ ↦
+      suzukiXiOffAxisSignedSpectralPResponseDerivativeWindow 0 T z) atTop
+      (nhds (riemannXiSuzukiOffAxisSignedPInitialVelocity z)) := by
+  unfold riemannXiSuzukiOffAxisSignedPInitialVelocity
+  refine
+    (tendsto_const_nhds.mul
+      (tendsto_riemannXiUpperBlaschkeLogDerivativeWindow hz hxi)).congr' ?_
+  filter_upwards [eventually_ge_atTop (0 : ℝ)] with T hT
+  exact
+    (suzukiXiOffAxisSignedSpectralPResponseDerivativeWindow_zero_time
+      hT z).symm
+
+/-- Equivalently, the exact spectral-xi reflection residuals, multiplied by
+`-i`, converge to the complete Suzuki initial velocity. -/
+theorem tendsto_neg_I_mul_riemannXiUpperSpectralReflectionResidual
+    {z : ℂ} (hz : 0 < z.im) (hxi : riemannXiSpectral z ≠ 0) :
+    Tendsto (fun T : ℝ ↦
+      -Complex.I * riemannXiUpperSpectralReflectionResidual z T) atTop
+      (nhds (riemannXiSuzukiOffAxisSignedPInitialVelocity z)) := by
+  unfold riemannXiSuzukiOffAxisSignedPInitialVelocity
+  exact tendsto_const_nhds.mul
+    (tendsto_riemannXiUpperSpectralReflectionResidual hz hxi)
 
 /-- On every real boundary line, finite signed Suzuki initial velocities
 converge to the complete initial velocity. -/
