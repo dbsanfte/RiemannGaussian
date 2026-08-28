@@ -776,6 +776,11 @@ current checked state, not a list of conjectural steps.
   are exactly orthogonal, the kernel is Hermitian, and its diagonal is
   `1 / abs(Im z_rho)`. The quadratic is proved exactly equal to the squared
   combined-vector norm, so all same-half-plane cancellation is retained.
+  Lean now eliminates the Cayley coordinates from this quadratic completely:
+  upper--upper entries are exactly `2*i/(z_sigma-conj(z_rho))`, lower--lower
+  entries are their negatives, and mixed-half-plane entries are zero. The
+  resulting spectral Cauchy quadratic is proved equal to the Hardy Gram
+  quadratic, not introduced as a replacement assumption.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
@@ -1406,6 +1411,10 @@ kernels, opposite half-planes are orthogonal, and the quadratic is exactly
 the Hilbert norm square. Thus the off-axis frontier is no longer an abstract
 operator estimate: on the genuine Suzuki `(t,T,U)` tails it is the concrete
 task of proving xi-specific decay of this cancellation-preserving quadratic.
+That quadratic is now also proved to be the explicit same-half-plane spectral
+Cauchy form `+/- 2*i/(z_sigma-conj(z_rho))`, with zero cross-half-plane block,
+so contour, entire-function, and arithmetic estimates can address it without
+an intervening Cayley-coordinate translation.
 The isolated real-node remainder is the parallel boundary task. Lean proves
 that these two vanishing statements together recover the prior
 Cayley-weighted tail condition and hence the original coefficient-tail Gram
