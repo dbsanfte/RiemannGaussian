@@ -24,24 +24,21 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now proves a quantitative positive reserve at the canonical transport
-base. The theorem
+Lean now proves that the synthetic zero-slope cell at the canonical Suzuki
+base cannot consume the initial positive reserve. The terminal theorem
 
-`one_div_250_lt_suzukiPointwiseFrozenBaseValue_logTwo_one`
+`riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_two_le_cutoff_cumulativeTransportSurplus`
 
-establishes that the literal frozen value at `base = log 2`, after freezing
-the first von Mangoldt event, is greater than `1 / 250`. The proof bounds the
-complete quarter-point digamma Euler difference by a telescoping rational
-tail and bounds the positive order-two Lerch gap from below by eighteen exact
-terms. No floating-point evaluation enters the Lean proof.
-
-Consequently,
-`riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_positiveCutoff_cumulativeTransportSurplus`
-removes cutoff zero from the assumption-free first-tail criterion. Every
-remaining obligation is a positive cutoff containing actual transported
-arithmetic mass. Those infinitely many inequalities remain open. This result
-does not establish tail positivity or a zero-location constraint, and the
-repository is not yet a proof of RH.
+reduces exact first-tail positivity to the cumulative transport-surplus
+inequalities with cutoff at least two. The proof establishes a base reserve
+greater than `7 / 125`, bounds the first frozen slope below by `-3 / 10`,
+locates its curvature-matching point within `9 / 35` of `log 2`, and proves
+that the complete intervening transport loss is less than `7 / 125`. Thus
+cutoff zero and the non-arithmetic cutoff one are both discharged; every
+remaining prefix contains a future von Mangoldt event. The infinitely many
+cutoff-at-least-two inequalities remain open. This does not establish tail
+positivity or a zero-location constraint, and the repository is not yet a
+proof of RH.
 
 ## Mathematical Program
 

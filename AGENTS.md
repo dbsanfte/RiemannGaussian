@@ -24,12 +24,15 @@ computed frozen base value and slope. At the canonical first-event base
 `t = log 2`, Lean now proves the exact event cut and strict negativity of the
 frozen slope, so the literal tail-positivity criterion has no remaining
 base-data assumptions. The literal frozen base value is also proved greater
-than `1 / 250`, which discharges cutoff zero. Every positive-cutoff cumulative
-transport-surplus inequality remains open. Those results and the sublinear law
-are not RH and do not exclude a finite or sparse off-line divisor. The missing
-theorem must derive a genuine global zero-location constraint from xi's
-arithmetic or entire-function structure; a restatement, hidden limit
-interchange, or conditional implication is not a substitute.
+than `7 / 125`, and the first frozen slope is greater than `-3 / 10`. Exact
+curvature bounds then prove the synthetic cutoff-one transport gap strictly
+positive, so cutoff zero and cutoff one are both discharged. The remaining
+criterion begins at cutoff two, where every prefix contains a future
+von Mangoldt event. Those infinitely many arithmetic inequalities, and the
+sublinear law, are not RH and do not exclude a finite or sparse off-line
+divisor. The missing theorem must derive a genuine global zero-location
+constraint from xi's arithmetic or entire-function structure; a restatement,
+hidden limit interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 
