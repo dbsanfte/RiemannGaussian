@@ -522,6 +522,15 @@ current checked state, not a list of conjectural steps.
   the global result. Each finite genuine-zero Suzuki signal is consequently
   packaged as an actual boundary `L²` vector. No real-axis infinite spectral
   identity is assumed.
+- The exact finite Suzuki Gram identity is now proved in that boundary Hilbert
+  space. Lean identifies the literal finite spectral signal with the finite
+  sum of its packaged normalized zero functions, defines their genuine Gram
+  kernel, and expands the full double coefficient sum exactly as the signal's
+  squared `L²` norm. The quadratic is therefore real and nonnegative. Removing
+  Suzuki's two universal `sqrt(pi)` factors yields exactly `pi` times a Gram
+  form whose scalars are coordinates of the already constructed complete
+  `ℓ²` coefficient vector. This is a finite theorem; no bounded infinite Gram
+  operator or arithmetic boundary identification is inferred from it.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1063,13 +1072,14 @@ complete, so Suzuki's positive-time arithmetic signal is an actual element of
 `L²(ℝ, ℂ)`. The normalized zero functions themselves, including multiple
 critical-line zeros, and every finite spectral synthesis are now actual
 boundary `L²` vectors as well. The project has therefore reached the intended
-post-analytic frontier: prove the exact finite Gram/norm identity, then obtain
-a justified real-boundary infinite synthesis or a direct norm comparison with
-the arithmetic signal and reflected-height Gaussian invariant. The latter
-infinite comparison remains genuinely new mathematics; it is not inferred
-from safe-half-plane pointwise equality. This is the step needed to force the
-Gaussian epsilon-positivity statement, rather than attempting a non-scalable
-chain of finite certificates.
+post-analytic frontier. The exact finite Gram/norm identity is now complete,
+including its normalization by the existing complete `ℓ²` coefficient vector.
+What remains is a justified real-boundary infinite synthesis or a direct norm
+comparison with the arithmetic signal and reflected-height Gaussian
+invariant. That infinite comparison remains genuinely new mathematics; it is
+not inferred from safe-half-plane pointwise equality. This is the step needed
+to force the Gaussian epsilon-positivity statement, rather than attempting a
+non-scalable chain of finite certificates.
 
 The Hardy route seeks a structural contradiction from any off-axis xi zero.
 The one-quartet finite theory and its real/Herglotz background are formalized.
