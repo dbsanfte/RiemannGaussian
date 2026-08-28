@@ -29,10 +29,10 @@ private structure Point where
 
 private def milestones : Array Milestone := #[
   {
-    label := "Subquadratic xi growth"
+    label := "Log-linear xi growth"
     lineOne := "xi growth"
-    lineTwo := "subquadratic"
-    theoremName := ``RiemannGaussian.riemannXi_threeHalvesGrowth
+    lineTwo := "R log R"
+    theoremName := ``RiemannGaussian.riemannXi_logLinearGrowth
   },
   {
     label := "Boundary heat RH detector"

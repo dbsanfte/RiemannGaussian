@@ -11,6 +11,7 @@ import RiemannGaussian.GaussianZetaBridge
 import RiemannGaussian.GaussianZetaGeometry
 import RiemannGaussian.GaussianZetaCounting
 import RiemannGaussian.GaussianXiGrowth
+import RiemannGaussian.GaussianXiLogLinearGrowth
 import RiemannGaussian.GaussianXiMellinSubquadratic
 import RiemannGaussian.GaussianXiSubquadraticGrowth
 import RiemannGaussian.GaussianXiSubquadraticCounting
