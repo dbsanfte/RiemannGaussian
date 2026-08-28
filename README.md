@@ -767,12 +767,13 @@ current checked state, not a list of conjectural steps.
   `1 / abs(Im z_rho)`. This identifies the precise boundary singularity and
   proves that a scalable argument cannot discard cancellation by summing
   node norms independently.
-  Every finite Cayley-weighted Suzuki synthesis supported off the real axis
-  is therefore exactly the bounded synthesis of one combined `l2(Z,C)`
-  vector, with squared norm at most `pi` times that vector's coefficient
-  energy. Real spectral nodes remain a separate boundary component. This
-  does not yet prove weighted moment decay, compactness, or the xi-specific
-  combined-tail rigidity needed to close the theorem.
+  Lean canonically splits every finite Cayley-weighted Suzuki synthesis into
+  the bounded synthesis of one combined off-axis `l2(Z,C)` vector plus its
+  literal real-node remainder. The difference from that remainder has
+  squared norm at most `pi` times the combined coefficient energy. This does
+  not yet control the real-node remainder or prove weighted moment decay,
+  compactness, or the xi-specific combined-tail rigidity needed to close the
+  theorem.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1388,10 +1389,13 @@ The off-axis rational features are now encoded as explicit geometric
 identified exactly with the operator applied to their combined vector. Its
 norm is bounded by `sqrt(pi)` times the combined coefficient norm. The exact
 node energy is now `1 / abs(Im z_rho)`, so this route also rigorously exposes
-the blow-up at the real spectral boundary. Thus the next route must preserve
-xi-specific cancellation in those combined geometric vectors and separately
-control the real-node boundary component; a triangle-inequality sum of
-individual node energies cannot provide uniform control.
+the blow-up at the real spectral boundary. Every arbitrary finite synthesis
+is now split exactly into this bounded off-axis operator term and a literal
+real-node remainder, including a squared-norm bound after subtracting that
+remainder. Thus the next route must preserve xi-specific cancellation in the
+combined geometric vectors and control the isolated real-node term; a
+triangle-inequality sum of individual node energies cannot provide uniform
+control.
 After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
