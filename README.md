@@ -886,10 +886,15 @@ current checked state, not a list of conjectural steps.
   exponential majorant. At time zero, cancellation of the nonzero factor
   `-i` gives a static identity: the signed upper-minus-lower contour of the
   genuine spectral `(-xi'/xi)(w)/(z-w)` kernel is exactly `-2*pi` times the
-  finite Blaschke logarithmic derivative. The remaining contour task is
-  quantitative: control the inner horizontal and vertical sides as the inner
-  lines approach the real boundary and the window expands; no unproved
-  derivative--integral interchange remains in that task.
+  finite Blaschke logarithmic derivative. At each fixed zero-free cutoff,
+  admissible inner heights are now proved downward closed. Along an explicit
+  positive sequence tending to zero the complete contour stays exactly
+  constant, its vertical remainder converges by interval-integral
+  continuity, and the paired upper/lower horizontal traces therefore have an
+  explicit finite boundary limit. Keeping the traces paired makes the result
+  valid even when the real axis contains critical-line xi poles. The remaining
+  contour task is quantitative and uniform in the expanding cutoff; no
+  unproved derivative--integral or fixed-window boundary interchange remains.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
@@ -1590,10 +1595,13 @@ Their oriented difference is now the signed response itself, up to the exact
 factor `-2*pi`. Dominated differentiation is now proved separately on every
 finite side, and at time zero it yields the static signed contour formula for
 the genuine spectral `(-xi'/xi)(w)/(z-w)` kernel and the finite Blaschke
-detector. The remaining arithmetic-projection frontier is quantitative
-control of the inner horizontal and vertical sides as the inner contours
-approach the real axis and the spectral window grows, using the proved
-arithmetic safe-line, real-axis, and vertical estimates.
+detector. The fixed-window inner deformation is now complete as a paired
+boundary value: reciprocal admissible heights approach zero, the vertical
+remainder converges, and the paired horizontal traces acquire an explicit
+finite limit even across critical-line poles. The remaining arithmetic-
+projection frontier is quantitative control uniform in the growing spectral
+window, using the proved arithmetic safe-line, real-axis, and vertical
+estimates.
 The isolated real-node remainder is the parallel boundary task. Lean proves
 that these two vanishing statements together recover the prior
 Cayley-weighted tail condition and hence the original coefficient-tail Gram
