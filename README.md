@@ -24,25 +24,21 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-The remaining Suzuki first-tail frontier is now expressed directly through
-the classical Chebyshev function. Lean proves exact finite Abel identities
-for both arithmetic prefix statistics,
+Lean now splits every remaining Suzuki first-tail inequality exactly into a
+closed elementary contribution and a single centered prime-number-theorem
+error functional. The deterministic term is
 
-`sum Lambda(n) / sqrt(n)` and `sum Lambda(n) log(n) / sqrt(n)`,
+`2 * sqrt(b) * (log(b) - r - 2) + r + 4`,
 
-as explicit integral functionals of `Chebyshev.psi`. It also proves that each
-canonical transport point is exactly where the literal Archimedean slope
-matches the complete finite von-Mangoldt prefix mass. Consequently,
-
-`riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevCenteredMoment`
-
-identifies tail positivity with one uniform family: at every remaining
-finite-prefix Legendre point, the literal Archimedean term plus a centered
-Chebyshev-`psi` log-moment must be nonnegative. The already proved cutoff-zero
-and synthetic cutoff-one cases are absent. This is an exact scalable
-Chebyshev/PNT interface, not a numerical certificate; the uniform lower bound
-is still open, so this does not establish tail positivity, a zero-location
-constraint, or RH.
+while the remainder is a boundary term plus an integral of
+`Chebyshev.psi(x) - x` against the verified kernel
+`x^(-3/2) * (1 - (log(x) - r) / 2)`. The theorem
+`riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevPNTErrorLowerBound`
+identifies tail positivity with the corresponding uniform lower bound at all
+canonical finite-prefix Legendre points. Cutoffs zero and one are already
+proved. The uniform PNT-error estimate remains open, and even its proof would
+still require a separate arithmetic-to-zero-location rigidity theorem on the
+route to RH.
 
 ## Mathematical Program
 

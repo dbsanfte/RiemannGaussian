@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
   },
   {
-    label := "First-tail frontier is the exact Chebyshev-Legendre centered-moment family"
-    lineOne := "Suzuki / Chebyshev"
-    lineTwo := "Legendre frontier"
+    label := "First-tail frontier is an exact centered Chebyshev PNT-error lower bound"
+    lineOne := "Suzuki / PNT"
+    lineTwo := "error frontier"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevCenteredMoment
+      ``RiemannGaussian.riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevPNTErrorLowerBound
   }
 ]
 
@@ -264,13 +264,13 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("rhImplied", .bool false),
     ("statusNote", .str
-      "Cutoffs zero and one are proved. Every remaining first-tail inequality is now an exact Archimedean-plus-centered-moment inequality whose arithmetic term is a finite Abel transform of Chebyshev psi. Proving that infinite family and every RH-forcing rigidity step remain open."),
+      "Cutoffs zero and one are proved. For every remaining prefix, the continuous Chebyshev contribution is evaluated exactly and the open inequality is a lower bound on one explicit signed integral against psi(x)-x plus its boundary term. Proving that uniform PNT-error bound and every RH-forcing rigidity step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Prove a uniform lower bound for the Chebyshev-psi centered moment at all finite-prefix Legendre points, or derive another unconditional zero-location constraint")
+        "Prove the exact uniform centered PNT-error lower bound at all finite-prefix Legendre points, then derive an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

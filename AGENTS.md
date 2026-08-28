@@ -32,12 +32,14 @@ von Mangoldt event. Lean now identifies the mass and log-moment of every such
 complete prefix with exact finite Abel transforms of `Chebyshev.psi`, proves
 that its canonical transport point solves the literal Archimedean
 slope-matching equation, and rewrites the open gap as the Archimedean value
-plus a centered Chebyshev log-moment. The required uniform lower bound for
-that infinite family, and the sublinear law, are not RH and do not exclude a
-finite or sparse off-line divisor. The missing theorem must derive a genuine
-global zero-location constraint from xi's arithmetic or entire-function
-structure; a restatement, hidden limit interchange, or conditional
-implication is not a substitute.
+plus a centered Chebyshev log-moment. Lean now evaluates the continuous
+`psi(x) = x` part of that moment in closed form and isolates the remainder as
+one explicit boundary term and signed integral against `psi(x) - x`. The
+required uniform lower bound for that PNT-error family, and the sublinear law,
+are not RH and do not exclude a finite or sparse off-line divisor. The missing
+theorem must derive a genuine global zero-location constraint from xi's
+arithmetic or entire-function structure; a restatement, hidden limit
+interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 
