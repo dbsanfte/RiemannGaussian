@@ -752,11 +752,16 @@ current checked state, not a list of conjectural steps.
   bilateral synthesis satisfies the explicit unconditional bound
   `norm(sum_k c_k u^k)^2 <= pi * sum_k norm(c_k)^2`; the two one-sided Hardy
   syntheses obey the same bound, and their finite Hankel form has the
-  corresponding uniform squared `l2 x l2` bound with constant `pi^2`. This
-  proves boundedness as well as qualitative Cayley-moment decay, but not the
-  weighted square summability `sum (k+1)*norm(M_k)^2`, a quantitative rate,
-  Hankel compactness, or the xi-specific rigidity needed to close the tail
-  theorem.
+  corresponding uniform squared `l2 x l2` bound with constant `pi^2`. The
+  normalized reference orbit is then used to construct an actual continuous
+  synthesis operator from bilateral `l2(Z,C)` into carrier `L2(mu)`, with
+  operator norm at most `sqrt(pi)`. Lean proves that it sums every
+  square-summable Cayley series, agrees exactly with every previous finite
+  synthesis, and transports coefficient-space convergence to carrier-norm
+  convergence. This proves bounded infinite synthesis as well as qualitative
+  Cayley-moment decay, but not weighted square summability, a quantitative
+  moment rate, Hankel compactness, or the xi-specific rigidity needed to
+  close the tail theorem.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1362,12 +1367,15 @@ density, so their positive tail and every fixed Hankel row and column now
 vanish. The carrier measure is now also proved dominated by the exact Cauchy
 reference measure, whose normalized bilateral Cayley orbit is orthonormal.
 Finite Parseval therefore gives a uniform `l2 -> L2(mu)` synthesis bound and
-a bounded finite Hankel form with explicit constants. Boundedness alone does
-not yield compactness or annihilate the structured Suzuki tail. Thus the next
-route must add genuinely xi-specific information: a valid weighted moment
-estimate, symbol regularity or compactness theorem where available, or a
-different rigidity mechanism strong enough to control the actual rational
-tail, while retaining a separate boundary argument for real nodes. After that,
+a bounded finite Hankel form with explicit constants. This finite map has now
+been extended to a continuous bilateral `l2(Z,C) -> L2(mu)` synthesis
+operator of norm at most `sqrt(pi)`; its infinite sum, finite compatibility,
+difference bound, and convergence transport are all checked. Boundedness
+alone does not yield compactness or annihilate the structured Suzuki tail.
+Thus the next route must encode the off-axis rational features as geometric
+`l2` coefficient vectors and then add genuinely xi-specific control of their
+combined tails, while retaining a separate boundary argument for real nodes.
+After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
 dense boundary test family, or the pair of scalar limits consisting of the
