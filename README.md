@@ -693,6 +693,20 @@ current checked state, not a list of conjectural steps.
   `L²(mu)` norm. The open tail theorem is therefore equivalent to norm
   convergence of explicit rational feature syntheses in one finite nonzero
   xi-defined measure, a form suited to Clark/de Branges or operator rigidity.
+- Those rational features are now placed in the resolvent geometry of one
+  rigorously constructed unitary operator. Multiplication on `L²(mu)` by the
+  real-boundary Cayley coordinate `u(x)=(x-i)/(x+i)` is proved to be a
+  surjective complex-linear isometry, with inverse multiplication by
+  `(x+i)/(x-i)`. For every genuine xi node, including real and multiple
+  nodes, Lean proves the exact equation
+  `U F_alpha - a(alpha) F_alpha = (1-a(alpha)) U 1`, where
+  `a(alpha)=(alpha-i)/(alpha+i)`. At a real node the totalized rational
+  identity fails at one collision point, and the formal proof explicitly
+  removes that carrier-null singleton. Summing the equation with the exact
+  Suzuki normalizations gives `U S(c)-S(a*c)=d(c) U 1`; consequently every
+  unresolved tail norm is exactly the norm of a Cayley-weighted tail plus one
+  explicit rank-one scalar defect. This is an equality, not a bound or a
+  tail-vanishing assumption.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1271,9 +1285,16 @@ finite nonzero measure. More sharply, the kernel is now the exact Gram kernel
 in `L²(mu)` of `F_alpha(x)=(x-i)/(x-alpha)`, for all genuine nodes including
 real and multiple ones. The original coefficient-tail Gram target is
 equivalent to the norms of its normalization-weighted finite rational
-syntheses tending to zero. The next mathematical target is therefore an
-xi-specific rational-approximation, Clark-measure, or multiplication-operator
-rigidity theorem forcing that norm convergence. After that,
+syntheses tending to zero. Multiplication by the boundary Cayley coordinate
+is now a proved unitary `U`, and every node feature satisfies the exact
+operator pencil equation
+`U F_alpha-a(alpha)F_alpha=(1-a(alpha))U1`. The corresponding Suzuki tail
+norm is exactly
+`norm(S(a*c_tail)+d(c_tail) U1)`. The next mathematical target is therefore
+an xi-specific rational-approximation, Clark-measure, or unitary-operator
+rigidity theorem forcing this explicit Cayley-resolved expression to vanish;
+there is no remaining ambiguity about the ambient operator or rank-one
+defect. After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
 dense boundary test family, or the pair of scalar limits consisting of the
