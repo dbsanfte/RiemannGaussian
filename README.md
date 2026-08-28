@@ -35,10 +35,16 @@ the quantitative contour separation; the second lies on `Re(s) = 1` and has
 a fixed half-unit horizontal gap. Thus one checked separation radius controls
 every local eta zero.
 
-This removes both the global `O(T log T)` count and the local zero-classification
-obstruction from the prospective endpoint lower bound. The next unchecked
-step is to construct and bound the local zero-free eta residual. That is the
-remaining local analytic step toward
+Lean then selects a zero-free canonical radius in `(17/16, 9/8)` for every
+height and constructs the local zero-free analytic residual. Its norm agrees
+with eta on the selected sphere, is at most `O(T)` throughout the disk, and
+retains the uniform positive safe-center lower floor.
+
+This removes the global `O(T log T)` count, zero classification, and residual
+construction obstructions from the prospective endpoint lower bound. The
+next unchecked step is the local Borel--Carathéodory logarithm estimate and
+the resulting canonical-factor product bound. That is the remaining local
+analytic step toward
 `max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0`; the broader argument must then force
 the positive Hardy/heat defect to vanish. This repository is not yet a proof
 of RH.
