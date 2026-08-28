@@ -20,18 +20,18 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now combines the local residual logarithm, moving Jensen divisor count,
-and quantitative zero separation in the exact canonical decomposition of
-paired eta. Every factor at the translated critical point `-1` is bounded by
-the checked separation radius, with multiplicities controlled by the fixed
-moving disk rather than a global radial zero count. This yields a fully
-explicit Lean theorem bounding `-log |η(1/2+iT_n)|` by a center-floor constant,
-an `O(log T_n)` residual term, and the product of the local `O(log T_n)` count
-with a separation-log term.
+Lean now proves that the negative part of the paired-eta logarithm is
+sublinear on the selected contour heights:
 
-The next unchecked step is to prove that this explicit majorant divided by
-`T_n` tends to zero and then transfer the result through the nonvanishing eta
-factor to zeta. That is the remaining asymptotic step toward
+`max(0, -log |η(1/2 + iT_n)|) / T_n → 0`.
+
+The proof combines the exact local canonical product with a Lean-checked
+polynomial bound on reciprocal contour separation. Taking its logarithm makes
+each factor `O(log T_n)`; the moving Jensen count is also `O(log T_n)`, so the
+full explicit constant/log/log-squared majorant is `o(T_n)`.
+
+The next unchecked step is to transfer this theorem through the uniformly
+nonvanishing critical-line eta factor to obtain
 `max(0, -log |ζ(1/2 + iT_n)|) / T_n → 0`; the broader argument must then force
 the positive Hardy/heat defect to vanish. This repository is not yet a proof
 of RH.

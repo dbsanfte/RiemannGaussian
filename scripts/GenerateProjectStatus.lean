@@ -63,11 +63,11 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
-    label := "Local eta product lower bound"
-    lineOne := "eta factor product"
-    lineTwo := "explicit lower bound"
+    label := "Critical eta negative log sublinear"
+    lineOne := "critical eta log⁻"
+    lineTwo := "o(T)"
     theoremName :=
-      ``RiemannGaussian.neg_log_norm_pairedEtaCore_critical_quantitative_le
+      ``RiemannGaussian.tendsto_pairedEtaCore_critical_log_negativePart_div_quantitative_zero
   }
 ]
 
