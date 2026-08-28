@@ -607,6 +607,23 @@ current checked state, not a list of conjectural steps.
   convergence of all these compact-test spectral integrals to their literal
   arithmetic counterparts. The integral convergence is not asserted; it is
   now the explicit contour/reproducing target.
+- The cancellation retained by Suzuki's common xi carrier is now exposed as
+  an exact resolvent kernel rather than hidden inside abstract Gram entries.
+  For every pair of genuine xi zeros, Lean factors the boundary Gram entry as
+  the product of the two strictly positive zero normalizations and the
+  integral of
+  `conj(carrier(x))*carrier(x) / ((x-conj(alpha_rho))*(x-alpha_sigma))`.
+  The literal density is proved Lebesgue integrable even for real or multiple
+  nodes, using the previously checked removable-singularity `L²` theory
+  rather than treating its apparent denominators as ordinary poles. Lean
+  proves that this unweighted carrier kernel is Hermitian and positive
+  semidefinite on every finite genuine-zero set, with every finite quadratic
+  exactly an `L²` norm square. The original coefficient-tail Gram quadratic
+  is then identified exactly with its normalization-weighted carrier-kernel
+  quadratic. Consequently strong arithmetic boundary identification is
+  equivalent to common-carrier tail vanishing plus the literal compact-test
+  integral limits. Carrier-tail vanishing itself is not asserted; this is now
+  the cancellation-sensitive kernel estimate to attack.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1160,9 +1177,13 @@ Gram entries reduced to explicit boundary integrals. The off-axis block now
 has a checked vertical-gap Cauchy majorant, but that bound degenerates near the
 critical line. The real-node block now has an explicit multiplicity/radius
 norm bound, but no uniform control of its isolation radii. What remains is to
-derive such control from the common carrier and xi arithmetic, prove a sharper
-row bound directly, or prove the now-explicit coefficient-tail Gram vanishing
-(for example through its tailored eventual quadratic comparison). After that,
+derive such control from xi arithmetic or prove the now-explicit common-
+carrier tail quadratic vanishes. The common carrier has now been kept
+exactly: its resolvent density is integrable at all genuine nodes, its kernel
+is Hermitian positive semidefinite, and the original tail Gram is precisely
+its normalization-weighted quadratic. What is still missing is a
+quantitative or rigidity theorem that forces this structured quadratic to
+vanish along the actual Suzuki coefficient tails. After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
 dense boundary test family, or the pair of scalar limits consisting of the
