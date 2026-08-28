@@ -430,6 +430,16 @@ current checked state, not a list of conjectural steps.
   proposition is genuinely global: derive the arithmetic signal's
   `O(log(2+|x|)/(1+|x|))` tail (with pole cancellation kept grouped) and turn
   it into membership in `L²(ℝ)`.
+- The critical-line grouping needed for that global estimate is now exact in
+  Lean. The completed logarithmic-derivative identity has been extended from
+  `Re(s) > 1` to every `Re(s) > 0`, `s != 1` point where zeta is nonzero.
+  At `s = 1/2 - i*x`, the completed-xi term is exactly the spectral negative
+  logarithmic derivative already canceled by the carrier. Splitting on a
+  critical-line zeta zero handles Lean's totalized division explicitly, so
+  the carrier-weighted `ζ'/ζ` term is unconditionally bounded by a fixed
+  elementary budget plus one quarter-line digamma norm. Thus no local zero
+  counting estimate or unproved pole removal remains in this part of the
+  `L²` tail proof; the next estimate is the explicit digamma growth bound.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
