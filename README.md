@@ -717,6 +717,17 @@ current checked state, not a list of conjectural steps.
   target is equivalent to squared-norm vanishing of the Cayley-weighted
   synthesis alone. No estimate for that remaining weighted synthesis is
   asserted.
+- The off-axis geometry of that weighted synthesis is now exposed as a
+  genuine Hardy-orbit split. Lean proves that a node's Cayley parameter is
+  inside, on, or outside the unit circle exactly when its spectral coordinate
+  is above, on, or below the real axis, and functional-equation partners have
+  reciprocal parameters. Iterating the exact unitary resolvent equation gives
+  finite positive- and negative-orbit geometric expansions with exact norm
+  remainders. For every off-axis node the remainder tends to zero, placing
+  its rational feature in the corresponding closed cyclic Hardy subspace;
+  every finite weighted synthesis supported off the real axis lies in their
+  closed sum. Real spectral nodes remain boundary features and are not
+  silently included in a convergent geometric series.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1308,7 +1319,12 @@ precisely squared-norm vanishing of `S(a*c_tail)`. The next mathematical
 target is therefore an xi-specific rational-approximation, Clark-measure, or
 unitary-operator rigidity theorem for this Cayley-weighted synthesis; there is
 no remaining ambiguity about the ambient operator or an auxiliary rank-one
-term. After that,
+term. Its off-axis features are now rigorously split further: upper nodes are
+norm limits of geometric sums of nonpositive unitary powers, lower nodes are
+norm limits of strictly positive powers, and functional partners exchange the
+two through reciprocal Cayley parameters. The open analysis can therefore
+focus on cancellation between these two cyclic Hardy components and the
+separate real-node boundary component. After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
 dense boundary test family, or the pair of scalar limits consisting of the
