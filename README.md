@@ -680,6 +680,19 @@ current checked state, not a list of conjectural steps.
   measure, and the normalization gives `H(i)=i*mu(R)`. Consequently `H` maps
   the open upper half-plane strictly into itself. This supplies a finite,
   nonzero canonical measure for future uniqueness and rigidity arguments.
+- The entire common-carrier Gram frontier now lives concretely in that finite
+  measure space. Lean defines the canonical rational feature
+  `F_z(x)=(x-i)/(x-z)`, with `F_i=1`, and proves the exact pointwise
+  cancellation by which `conj(F_w)*F_z dmu` recovers the original arithmetic
+  carrier resolvent density. Every genuine xi-node feature is proved to lie
+  in `L²(mu)`, including real and multiple nodes; those cases use the checked
+  removable carrier density rather than an invalid off-axis bound. Their
+  Hilbert inner product is exactly the common-carrier Gram kernel. After the
+  exact Suzuki multiplicity normalizations, every finite carrier quadratic
+  and every genuine coefficient-window tail quadratic is literally a squared
+  `L²(mu)` norm. The open tail theorem is therefore equivalent to norm
+  convergence of explicit rational feature syntheses in one finite nonzero
+  xi-defined measure, a form suited to Clark/de Branges or operator rigidity.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1254,7 +1267,13 @@ placed in canonical finite-measure form: its positive Nevanlinna measure has
 weight `density(x)/(1+x^2)`, total mass in `(0,pi]`, and standard resolvent
 representation `H(z)=z*mu(R)+(1+z^2)*R_mu(z)`, with `H(i)=i*mu(R)`. Thus the
 next rigidity theorem can be formulated either for `H` or for this explicit
-finite nonzero measure. After that,
+finite nonzero measure. More sharply, the kernel is now the exact Gram kernel
+in `L²(mu)` of `F_alpha(x)=(x-i)/(x-alpha)`, for all genuine nodes including
+real and multiple ones. The original coefficient-tail Gram target is
+equivalent to the norms of its normalization-weighted finite rational
+syntheses tending to zero. The next mathematical target is therefore an
+xi-specific rational-approximation, Clark-measure, or multiplication-operator
+rigidity theorem forcing that norm convergence. After that,
 the resulting limit must be identified with the arithmetic signal. That
 identification has now been reduced exactly to either weak convergence on any
 dense boundary test family, or the pair of scalar limits consisting of the
