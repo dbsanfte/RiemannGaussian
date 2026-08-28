@@ -21,20 +21,19 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-The latest checked mathematical slice folds all four vertical terms of the
-static Suzuki/spectral contour onto one right vertical line. At a purely
-imaginary observation point, Lean proves that the remainder is purely
-imaginary and that multiplication by `-I` gives exactly twice a real signed
-integral. A second theorem bounds its norm on the established quantitative
-zero-free contour sequence. Together with the already-checked paired
-real-boundary limit, this exposes cancellation—not an absolute estimate—as
-the remaining large-height problem.
+The latest checked mathematical slice isolates the only surviving
+large-height term in the static Suzuki/spectral vertical contour. Lean proves
+that subtracting the dominant Cauchy factor `-2 / T` leaves a uniform
+inverse-square error, and that this complete integrated error tends to zero
+on the established quantitative zero-free contour sequence. The vertical
+boundary is therefore asymptotic to `-(4 / T)` times one signed integral of
+the real spectral-xi logarithmic derivative.
 
-The next theorem is genuinely open: obtain uniform large-height cancellation
-or rigidity as the spectral cutoff tends to infinity. That step must use the
-special arithmetic and entire-function structure of xi to force the remaining
-positive Hardy/heat defect to vanish. Until it is proved, this repository is
-not a proof of RH.
+The next theorem is genuinely open: identify that signed integral with
+endpoint log-modulus variation and prove it is `o(T)`. This is the remaining
+vertical cancellation input to the broader large-height rigidity problem,
+which must ultimately force the positive Hardy/heat defect to vanish. Until
+that is proved, this repository is not a proof of RH.
 
 ## Mathematical Program
 
