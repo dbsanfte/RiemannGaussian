@@ -852,6 +852,15 @@ current checked state, not a list of conjectural steps.
   equality of previously independent constructions, not a new hypothesis;
   the hard remaining task is an arithmetic or entire-function theorem that
   forces their common positive value to vanish.
+  Boundary-density summability now also upgrades the finite identity to a
+  complete differential law. Throughout every uniform zero-free collar,
+  Lean differentiates the complete real Gaussian action in observation
+  height and proves that the derivative is exactly twice the real part of
+  the complete signed Suzuki initial velocity. At any positive collar height
+  this derivative vanishes exactly under RH; under `not RH` it is strictly
+  positive, and the complete action is strictly increasing throughout the
+  collar. Thus no unproved differentiation of the infinite divisor remains
+  in the proposed arithmetic attack.
   The construction is specialized to the genuine `(t,T,U)` Suzuki
   coefficient-window tails. Lean proves that decay of this explicit off-axis
   tail quadratic together with decay of the isolated real-node remainder
