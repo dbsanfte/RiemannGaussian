@@ -531,6 +531,13 @@ current checked state, not a list of conjectural steps.
   form whose scalars are coordinates of the already constructed complete
   `ℓ²` coefficient vector. This is a finite theorem; no bounded infinite Gram
   operator or arithmetic boundary identification is inferred from it.
+- The same genuine symmetric spectral windows now truncate Suzuki's complete
+  coefficient vector in `ℓ²`. Lean proves the exact finite-window norm and
+  exact squared truncation-error formulas, then proves that these windows
+  converge in norm to the complete coefficient vector at every real screw
+  time. Thus coefficient-space convergence is unconditional; transporting it
+  through the zero-function family still requires a bounded synthesis/Gram
+  estimate.
 - The xi contour argument, zero-separated truncations, logarithmic-derivative
   bounds, and limiting passage are formalized. Consequently the canonical
   symmetric zero sum is proved equal, for every positive width and every real
@@ -1074,9 +1081,12 @@ critical-line zeros, and every finite spectral synthesis are now actual
 boundary `L²` vectors as well. The project has therefore reached the intended
 post-analytic frontier. The exact finite Gram/norm identity is now complete,
 including its normalization by the existing complete `ℓ²` coefficient vector.
-What remains is a justified real-boundary infinite synthesis or a direct norm
-comparison with the arithmetic signal and reflected-height Gaussian
-invariant. That infinite comparison remains genuinely new mathematics; it is
+The genuine symmetric coefficient windows now also converge unconditionally
+in `ℓ²`, with an exact truncation-error identity. What remains is a bounded
+zero-function synthesis/Gram estimate that transports this convergence to
+boundary `L²`, followed by identification of that limit with the arithmetic
+signal (or a direct norm comparison with it and the reflected-height Gaussian
+invariant). That infinite comparison remains genuinely new mathematics; it is
 not inferred from safe-half-plane pointwise equality. This is the step needed
 to force the Gaussian epsilon-positivity statement, rather than attempting a
 non-scalable chain of finite certificates.
