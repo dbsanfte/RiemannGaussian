@@ -24,24 +24,20 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now proves the Tauberian equivalence
+Lean now contains Suzuki's corrected pointwise arithmetic `Psi` exactly as a
+finite von-Mangoldt formula, including the order-two Hurwitz--Lerch constant
+and the `-(t/2) log pi` normalization. The terminal bridge theorem
+`riemannXiSuzukiPsiNonnegative_eq_screwHingeModel` proves that, for every
+nonnegative time, the source cutoff `1 <= n <= exp(t)` is exactly the locally
+finite `n + 2` negative-hinge model used by the transport development.
 
-`safe-axis Poisson defect → 0  ⇔  cumulative upper spectral height H(T) / T → 0`,
-
-where `H(T)` is the multiplicity-weighted sum of upper-half-plane spectral
-heights over zeros with ordinate at most `T`. The difficult direction is an
-explicit dyadic-shell estimate: a bound `H(T) ≤ εT` above the observation
-height forces the complete Poisson mass below `20ε`. The converse follows
-from a central-window lower kernel bound. The theorem assumes no cutoff/height
-limit interchange.
-
-Combined with the previous lossless logarithmic-to-Poisson linearization,
-this also characterizes decay of the logarithmic defect and height-scaled
-Blaschke variation. This condition is not RH: sublinear aggregate displacement
-does not by itself exclude finitely many or sufficiently sparse off-line
-zeros. The missing conjecture-strength theorem must derive an actual
-zero-location constraint from xi's arithmetic or entire-function structure.
-The repository is not yet a proof of RH.
+This closes a normalization and indexing seam: the transport background is
+now the literal arithmetic function rather than an arbitrary parameter. Lean
+also proves convergence of `Phi(q, 2, 1/4)` throughout `0 <= q <= 1` and the
+required value `Psi(0) = 0`. No positivity is assumed or concluded. The next
+target is an unconditional local positivity interval for this actual
+arithmetic `Psi`; global positivity remains RH-strength, and the repository is
+not yet a proof of RH.
 
 ## Mathematical Program
 
