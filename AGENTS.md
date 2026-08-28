@@ -10,12 +10,13 @@ rigorous chain to that target.
 
 The proof is not complete. The generated dashboard in
 `docs/proof-status.svg` is the canonical compact status summary. At present,
-the Gaussian/Weil and Suzuki/contour branches prove sublinear large-height
-escape for the complete safe-axis defect and reach a common unscaled
-arithmetic-rigidity frontier. The missing theorem must upgrade that estimate
-to control strong enough to force the height-one RH-detecting value to vanish;
-a restatement, hidden limit interchange, or conditional implication is not a
-substitute.
+the Gaussian/Weil and Suzuki/contour branches prove that the complete
+safe-axis logarithmic defect is asymptotic, with `o(1)` error, to its positive
+Poisson linearization, which is exactly height-scaled Blaschke derivative
+variation. The missing theorem must force that linear quantity to decay from
+xi's arithmetic or entire-function structure and then force the height-one
+RH-detecting value to vanish; a restatement, hidden limit interchange, or
+conditional implication is not a substitute.
 
 ## Soundness invariant
 

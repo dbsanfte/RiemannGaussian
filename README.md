@@ -20,18 +20,20 @@ rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now proves the unconditional large-height estimate
+Lean now proves the unscaled asymptotic linearization
 
-`complete defect at iy / y → 0`.
+`logarithmic defect at iy − Poisson defect at iy → 0`.
 
-It also connects this estimate to the actual paired static-boundary action in
-the correct limit order: at each fixed upper height Lean first removes the
-quantitative contour cutoff, and only then proves that the complete action has
-vanishing height-average. No cutoff/height limit interchange is assumed.
+The Poisson term is exactly `2y` times the complete positive elementary
+Blaschke derivative variation. Thus Lean proves that unscaled decay of the
+RH-detecting logarithmic defect is equivalent to decay of this linear,
+height-scaled spectral variation. The proof uses the previously established
+sublinear defect law and an explicit uniform `y − 1/2` divisor gap; it assumes
+no cutoff/height limit interchange.
 
-The remaining obstruction is unscaled rigidity: sublinear escape alone does
-not prove that the endpoint defect tends to zero or force its height-one
-RH-detecting value to vanish. The repository is not yet a proof of RH.
+The remaining obstruction is now a positive Poisson/entire-function rigidity
+theorem derived from xi's arithmetic structure, followed by the step forcing
+the height-one RH detector to vanish. The repository is not yet a proof of RH.
 
 ## Mathematical Program
 
@@ -47,8 +49,8 @@ The development joins two lines of attack:
 
 Finite Hardy spaces, Blaschke products, Pick matrices, Gram determinants,
 root-count transport, and finite-to-entire limit theory provide the supporting
-formal infrastructure. The branches now meet at the unscaled large-height
-rigidity problem shown in the generated panel.
+formal infrastructure. The branches now meet at the Poisson and
+entire-function rigidity problem shown in the generated panel.
 
 ## Repository Structure
 
