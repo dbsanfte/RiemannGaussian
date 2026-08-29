@@ -24,7 +24,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-verified reduction map</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 270 modules · 7258 declarations · 6230 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 271 modules · 7288 declarations · 6257 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <path class="edge" d="M165 102 H187"/>
   <path class="edge" d="M335 102 H357"/>
@@ -72,9 +72,9 @@
   </g>
   <g class="proved reduction">
     <rect x="520" y="75" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevPNTPositiveKernelMoment</title>
+    <title>RiemannGaussian.riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevCumulativePNTPositiveKernelMoment</title>
     <text x="592" y="98">Suzuki / PNT</text>
-    <text x="592" y="116">positive kernel  ✓</text>
+    <text x="592" y="116">cumulative error  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>

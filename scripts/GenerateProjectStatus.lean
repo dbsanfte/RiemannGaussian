@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
   },
   {
-    label := "First-tail frontier is an exact positive-kernel Chebyshev PNT-error moment bound"
+    label := "First-tail frontier is an exact two-level positive-kernel cumulative PNT-error bound"
     lineOne := "Suzuki / PNT"
-    lineTwo := "positive kernel"
+    lineTwo := "cumulative error"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevPNTPositiveKernelMoment
+      ``RiemannGaussian.riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevCumulativePNTPositiveKernelMoment
   }
 ]
 
@@ -264,13 +264,13 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("rhImplied", .bool false),
     ("statusNote", .str
-      "Cutoffs zero and one are proved. Every canonical Legendre center now satisfies r >= log N - 2, so the explicit PNT-error kernel is nonnegative and monotone on every remaining prefix. The open inequality is exactly a one-sided upper moment bound against that positive kernel. Proving it and every RH-forcing rigidity step remain open."),
+      "Cutoffs zero and one are proved. The first PNT-error weight is nonnegative and strictly decreasing on every remaining prefix; its negative derivative is a second strictly positive kernel. Absolute-continuity integration by parts now expresses the open inequality through the cumulative error integral_1^x (psi(u)-u) du, which is exactly a triangular von-Mangoldt sum minus (x^2-1)/2. Proving that two-level bound and every RH-forcing rigidity step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Prove the uniform one-sided Chebyshev PNT-error moment bound against the verified positive kernel, then derive an unconditional zero-location constraint")
+        "Prove the uniform two-level cumulative Chebyshev-error bound against the verified positive kernels, then derive an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

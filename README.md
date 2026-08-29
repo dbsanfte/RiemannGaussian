@@ -24,19 +24,20 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-The PNT-error test kernel is now proved nonnegative on every unresolved Suzuki
-prefix. Lean derives `Chebyshev.psi(x) >= x / 2` for `x >= 5`, the weighted
-mass bound `sqrt(b) - sqrt(5) / 2`, and the source-exact Archimedean estimate
-`A'(t) < 2 * exp(t / 2) - 1`. Their comparison proves that every canonical
-Legendre point satisfies `r >= log(b) - 2`. Hence the verified kernel
+The positive PNT-error weight is now proved strictly decreasing on every
+unresolved Suzuki prefix. Its negative derivative is the second positive
+kernel
 
-`x^(-3/2) * (1 - (log(x) - r) / 2)`
+`x^(-5/2) * (2 - (3/4) * (log(x) - r))`.
 
-is nonnegative and its Abel primitive is monotone throughout every complete
-prefix interval. The terminal theorem
-`riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevPNTPositiveKernelMoment`
-now makes tail positivity exactly a uniform one-sided moment bound for
-`Chebyshev.psi(x) - x` against this positive kernel. That bound remains open,
+Lean applies absolutely continuous integration by parts, without
+differentiating across the jumps of `Chebyshev.psi`, and rewrites the open
+moment through the cumulative error `C(x) = integral_1^x (psi(u) - u) du`.
+It also proves the exact arithmetic identity
+`C(b) = sum_{n <= b} (b - n) * Lambda(n) - (b^2 - 1) / 2`. The terminal
+theorem
+`riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevCumulativePNTPositiveKernelMoment`
+is an exact two-level positive-kernel criterion. Its inequality remains open,
 as does every subsequent arithmetic-to-zero-location rigidity step; this is
 not a proof of tail positivity or RH.
 

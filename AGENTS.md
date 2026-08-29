@@ -37,13 +37,18 @@ plus a centered Chebyshev log-moment. Lean now evaluates the continuous
 one explicit boundary term and signed integral against `psi(x) - x`. Exact
 Chebyshev mass and Archimedean slope bounds now locate every canonical center
 at `r >= log N - 2`; consequently the elementary derivative kernel is
-nonnegative and the centered Abel kernel is monotone on every unresolved
-prefix. The open arithmetic statement is therefore a uniform one-sided
-PNT-error moment bound against a positive kernel. That bound, and the
-sublinear law, are not RH and do not exclude a finite or sparse off-line
-divisor. The missing theorem must derive a genuine global zero-location
-constraint from xi's arithmetic or entire-function structure; a restatement,
-hidden limit interchange, or conditional implication is not a substitute.
+nonnegative and strictly decreasing on every unresolved prefix. Its negative
+derivative is a second strictly positive kernel. A checked
+absolute-continuity argument rewrites the open moment through the cumulative
+error `integral_1^x (psi(u) - u) du`, and a finite Abel identity identifies
+that primitive with an exact triangular von-Mangoldt sum minus
+`(x^2 - 1) / 2`. The open arithmetic statement is therefore a uniform
+two-level cumulative PNT-error bound against positive kernels. That bound,
+and the sublinear law, are not RH and do not exclude a finite or sparse
+off-line divisor. The missing theorem must derive a genuine global
+zero-location constraint from xi's arithmetic or entire-function structure;
+a restatement, hidden limit interchange, or conditional implication is not a
+substitute.
 
 ## Soundness invariant
 
