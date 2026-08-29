@@ -26,20 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Xi's functional equation and conjugation symmetry now make the checked
-log-norm potential `U(a,y) = log |xi(1/2 + a + I*y)|` exactly even in `a`.
-Lean proves its totalized horizontal derivative and the real heat kernel are
-odd, hence their boundary product is even. The selected near-`s=0` left
-boundary can therefore be reflected exactly to positive shifted coordinate
-`1/4 < a < 1/2`, or actual completed-xi coordinate `3/4 < Re s < 1`.
+Lean now differentiates the exact xi and heat-kernel reflection symmetries and
+proves that the complete pairing `grad K · grad U` is odd in the shifted real
+coordinate. A checked two-dimensional change of variables reflects both
+vertical sides and the whole bulk. Lean separately proves genuine planar
+integrability through the complete finite xi divisor on the reflected
+rectangles, so this is an ordinary set-integral identity rather than a formal
+or punctured substitution.
 
-Lean proves these reflected coordinates tend to `Re s = 1` from below and
-that the finite boundary-minus-`grad K · grad U` scalar is unchanged at every
-stage. The reflected scalar consequently retains the unnormalized limit to
-`2*pi` times the nonnegative xi detector. This is a genuine symmetry
-reduction, not a decay theorem: the boundary remains below the absolute
-Dirichlet-series half-plane, and a divisor-aware arithmetic rigidity estimate
-that retains the singular zero masses is still open.
+At every finite stage, the live detector is therefore an exact
+boundary-plus-gradient functional wholly inside `1/2 < Re s < 1`. Its inner
+edge tends to `1/2` from above, its outer edge tends to `1` from below, and the
+functional retains the unnormalized limit to `2*pi` times the nonnegative xi
+detector. This is a domain reduction, not a decay theorem: the strip remains
+outside the absolute Dirichlet-series region, and an arithmetic estimate that
+retains its singular zero masses is still the open rigidity step.
 
 ## Mathematical Program
 

@@ -213,6 +213,13 @@ even. Lean uses this to reflect the near-`s = 0` left boundary to positive
 shifted coordinates in `(1/4, 1/2)`, equivalently actual xi coordinates in
 `(3/4, 1)` tending to `1` from below, without changing any finite scalar or
 its detector limit. This does not enter the absolute Dirichlet-series region.
+Lean further differentiates the reflection symmetries and proves the complete
+pairing `grad K · grad U` odd in the shifted real coordinate. Both boundaries
+and the entire bulk are now reflected, with genuine through-divisor planar
+integrability proved on the positive rectangles. Thus every finite live
+scalar is an exact boundary-plus-gradient functional wholly in actual xi
+coordinates `1/2 < Re s < 1`; its inner edge tends to `1/2` from above and its
+outer edge to `1` from below. No decay in that open strip has been proved.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
