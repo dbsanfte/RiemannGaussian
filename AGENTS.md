@@ -404,9 +404,16 @@ the completion-weighted leading eta derivatives at `rho` and
 identity is also checked. This is the genuine completed local coupling, but it
 is compatible with off-critical zeros and supplies no inequality between the
 unweighted arithmetic moments.
-The next hard input must rewrite those leading derivatives as explicit
-logarithmic-time moments and prove an independent eta-arithmetic inequality
-that cannot hold at complementary off-critical tilts.
+Lean now proves that every logarithmic-time moment
+`integral t^n*exp(-s*t) dmu(t)` of the fixed infinite eta measure is integrable
+for `Re(s)>0`, and that it is exactly `(-1)^n` times the `n`th derivative of
+the eta Laplace partition. At every nontrivial zero, that partition has the
+full genuine zeta-zero multiplicity, all lower derivatives vanish, and the
+leading moment is nonzero. The completed local coupling is therefore proved
+as an explicit completion- and spectral-parameter-weighted relation between
+the leading moments at `rho` and `1-conj(rho)` for arbitrary multiplicity.
+The next hard input must prove an independent eta-arithmetic inequality for
+these concrete moments that cannot hold at complementary off-critical tilts.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

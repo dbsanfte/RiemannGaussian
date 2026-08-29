@@ -26,20 +26,22 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now constructs the exact completed paired-eta function. With
-`E(s)` the convergent paired eta series and
-`C(s) = s*(1-s)*GammaR(s)/(1-2*2^(-s))`, Lean proves locally throughout
-`0 < Re(s) < 1` that `C(s)*E(s) = xi(s)`. It also proves that the previously
-derived regular logarithmic-derivative correction is exactly `C'(s)/C(s)`.
+Lean now turns the completed paired-eta local symmetry into a literal
+arithmetic moment identity. For the fixed positive logarithmic eta measure
+`mu`, every moment `integral t^n * exp(-s*t) dmu(t)` is proved integrable when
+`Re(s) > 0`, and the `n`th derivative of its infinite Laplace partition is
+exactly `(-1)^n` times that moment. The derivative-under-integral step is
+discharged through a checked exponential-domain argument.
 
-The xi functional equation is then transported to every local derivative.
-At a nontrivial zero of arbitrary multiplicity `m`, Lean proves that all lower
-eta derivatives vanish and that the first nonzero coefficients at `rho` and
-`1-conj(rho)` obey an exact completion-weighted conjugate identity. No zero
-simplicity is assumed. This is genuine eta-specific coupling, but it remains
-compatible with off-critical zeros. The open frontier is an independent
-arithmetic inequality for these explicit leading eta moments that forces the
-horizontal displacement to vanish.
+At every nontrivial zero of arbitrary multiplicity `m`, Lean proves that the
+Laplace partition has exactly multiplicity `m`, its lower derivatives vanish,
+and its leading moment is nonzero. Substitution into the previously proved
+completion identity yields an exact completion- and spectral-parameter-
+weighted conjugate relation between the explicit moments at `rho` and
+`1-conj(rho)`. No simplicity assumption is used. This remains compatible with
+off-critical zeros; the open frontier is an independent eta-arithmetic
+inequality for these two concrete moments that forces the horizontal
+displacement to vanish.
 
 ## Mathematical Program
 

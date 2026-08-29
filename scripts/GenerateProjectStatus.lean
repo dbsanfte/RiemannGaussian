@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Completed paired-eta leading coefficients obey exact complementary symmetry at every zero multiplicity"
-    lineOne := "completed eta local"
-    lineTwo := "coeff. symmetry (all m)"
+    label := "Explicit paired-eta leading logarithmic moments obey exact completed symmetry at every zero multiplicity"
+    lineOne := "explicit eta leading"
+    lineTwo := "log moments (all m)"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaLeadingDerivative_conjugatePartner
+      ``RiemannGaussian.pairedEtaLeadingLogLaplaceMoment_conjugatePartner
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "bound completed eta leading moments to exclude off-line zeros; no theorem implies RH.</text>\n" ++
+      "prove arithmetic rigidity for completed eta leading moments; no theorem implies RH.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -313,17 +313,22 @@ run_cmd do
         "with C'/C. At every nontrivial zero of arbitrary multiplicity m, the " ++
         "first nonzero eta coefficients at rho and 1-conj(rho) satisfy the exact " ++
         "completion-weighted conjugate relation forced by xi. This completed " ++
-        "identity is compatible with off-critical zeros; no independent arithmetic " ++
-        "moment inequality forcing the horizontal displacement to vanish is proved, " ++
+        "identity is compatible with off-critical zeros. Lean now proves every " ++
+        "logarithmic-time eta moment integrable in the positive half-plane and " ++
+        "identifies it with the corresponding iterated Laplace derivative. At a " ++
+        "zero the Laplace partition has the exact zeta multiplicity, its leading " ++
+        "moment is nonzero, and the completed partner identity is a literal relation " ++
+        "between the two explicit leading moments. No independent arithmetic " ++
+        "inequality forcing the horizontal displacement to vanish is proved, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Express the completion-coupled leading eta derivatives as explicit " ++
-        "logarithmic-time moments and prove an independent arithmetic inequality " ++
-        "that excludes complementary off-critical tilts, or force the exact " ++
+        "Prove an independent eta-arithmetic inequality for the explicit " ++
+        "completion-coupled leading logarithmic-time moments that excludes " ++
+        "complementary off-critical tilts, or force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
