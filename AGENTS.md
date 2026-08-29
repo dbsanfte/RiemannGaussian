@@ -236,8 +236,11 @@ a global arithmetic cancellation or coercivity estimate for that flux inside
 the complete live detector. The actual Gaussian boundary-heat weight is now
 inserted into the literal eta quotient: finite selected flux windows recover
 their exact heat-residue totals as the puncture radius shrinks, and these
-limiting values converge to `2*pi` times the complete detector. This is a
-two-stage limit; no limit interchange is assumed.
+limiting values converge to `2*pi` times the complete detector. Lean now
+selects one positive common radius at each natural window height, proves every
+selected integrand is simultaneously `L¹`, bounds the radius and flux error by
+`1/(n+1)`, and proves the resulting single diagonal eta-flux sequence converges
+to the complete detector. This choice supplies no uniform puncture estimate.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

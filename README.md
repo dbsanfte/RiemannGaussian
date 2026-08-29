@@ -26,22 +26,17 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now represents the complete live positive-strip detector with the
-convergent paired-eta quotient `D/E` and rewrites its singular field as
-`(Re(D*conj E), Im(D*conj E)) / |E|^2`. Its squared density is the exact
-singular ratio `|D|^2/|E|^2`; no through-divisor `L²` estimate is assumed.
+Lean now replaces the nested finite-window/small-puncture eta-flux limits by
+one checked diagonal sequence. At stage `n`, a positive common radius is
+chosen below `1/(n+1)` in the simultaneous `L¹` regime for every selected
+zero, and the literal finite paired-eta flux is proved to differ from its
+exact heat-residue window by less than `1/(n+1)`. Lean proves that both the
+radii and errors tend to zero and that this single sequence converges to
+`2*pi` times the complete RH-equivalent detector.
 
-The divisor-preserving replacement is a rigorously proved `L¹` radial flux.
-Paired eta and zeta have the same analytic order at every nontrivial zero, and
-the normalized-bilinear flux is genuinely interval integrable on sufficiently
-small circles and tends to `2*pi` times the positive multiplicity.
-
-Lean now inserts the actual Gaussian boundary-heat kernel into this literal
-eta flux. A common shrinking radius recovers every finite selected heat-residue
-window exactly; at positive heat time those window limits converge to
-`2*pi` times the complete RH-equivalent detector. This is a checked two-stage
-limit, not an interchange of limits or a proof of vanishing. The frontier is
-a global arithmetic cancellation or coercivity theorem for this eta flux.
+This is a rigorous diagonal selection, not a uniform puncture estimate or a
+proof of detector vanishing. The open frontier remains a global arithmetic
+cancellation or coercivity theorem for the normalized paired-eta `L¹` flux.
 
 ## Mathematical Program
 
