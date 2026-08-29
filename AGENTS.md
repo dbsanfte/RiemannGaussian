@@ -336,6 +336,17 @@ the exponent by `1-rho.re`; these decay exponents are distinct under the
 off-critical hypothesis. This remains an upper-bound certificate, not an
 exclusion. The live task is to prove a lower bound or sharp asymptotic that
 couples the two complementary rates and cannot hold when they differ.
+Lean now also extracts the Euler cancellation hidden by that absolute tail
+bound. The support-minus-gap summand is the consecutive second difference
+`(2n+1)^(-s)-2(2n+2)^(-s)+(2n+3)^(-s)`, its complete series is exactly
+`2*E(s)-1`, and it equals `-1` at every nontrivial zeta zero. Solving this
+identity together with the finite telescope gives exactly
+`G_N(rho)-1=-(2N+1)^(-rho)/2+(-1-D_N(rho))/2`. The partner obeys the same
+formula at exponent `1-rho.re`. The immediate analytic task is to prove that
+the second-difference tail is smaller by one endpoint power. That expected
+individual asymptotic is not itself a zero-location contradiction; the live
+arithmetic task remains a rigorously proved coupling that cannot accommodate
+both complementary off-line evaluations.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

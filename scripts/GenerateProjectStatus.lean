@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Any off-critical zero forces distinct complementary power-rate bounds for the two finite eta-gap series"
-    lineOne := "finite eta-gap rates"
-    lineTwo := "sigma vs 1-sigma"
+    label := "Every off-critical zero forces exact Euler-accelerated eta-gap error identities at complementary exponents"
+    lineOne := "Euler eta-gap tail"
+    lineTwo := "endpoint/2 + 2nd diff"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.nontrivialZetaZero_offCritical_etaGapDistinctFiniteRates_certificate
+      ``RiemannGaussian.nontrivialZetaZero_offCritical_etaGapEulerTail_certificate
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "a sharp lower/asymptotic gap bound incompatible with distinct off-line rates; no theorem implies RH.</text>\n" ++
+      "an extra-power Euler-tail bound, then arithmetic coupling incompatible with off-line rates; no theorem implies RH.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -282,7 +282,10 @@ run_cmd do
         "The explicit support and gap partial sums telescope with remainder " ++
         "(2N+1)^(-s). A restricted-tail measure gives closed finite gap-error " ++
         "bounds with complementary exponents sigma and 1-sigma; these are " ++
-        "distinct for an off-critical zero. This " ++
+        "distinct for an off-critical zero. The support-minus-gap Euler " ++
+        "second-difference series is exactly 2*E(s)-1 and equals -1 at a " ++
+        "zero, giving an exact half-endpoint plus second-difference-tail " ++
+        "formula at both complementary evaluations. This " ++
         "is a checked conditional reduction, not a zero-location theorem, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -290,10 +293,11 @@ run_cmd do
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Derive an unconditional lower bound or sharp asymptotic for the " ++
-        "finite eta-gap errors that couples the complementary sigma and " ++
-        "1-sigma rates and is incompatible with an off-critical zero, or force " ++
-        "the exact detector limit to vanish without discarding zero contributions"))
+        "Prove a uniform extra-power bound or sharp asymptotic for the Euler " ++
+        "second-difference tails at rho and its partner, then derive a " ++
+        "genuinely arithmetic coupling incompatible with an off-critical " ++
+        "zero, or force the exact detector limit to vanish without discarding " ++
+        "zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

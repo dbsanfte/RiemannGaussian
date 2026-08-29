@@ -26,25 +26,26 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now controls the explicit gap series at finite truncations. If `E_N(s)`
-is the first `N` paired-eta terms and `G_N(s)` the first `N` adjacent gap
-terms, Lean proves the exact telescope
+Lean now Euler-accelerates the explicit finite eta-gap error. If `E_N(s)` is
+the first `N` paired-eta terms, `G_N(s)` the first `N` adjacent gap terms, and
+`D_N(s)` the corresponding support-minus-gap second-difference sum, Lean
+proves
 
-`E_N(s) + G_N(s) = 1 - (2N+1)^(-s)`.
+`D_N(s) = sum_(n<N) ((2n+1)^(-s)-2(2n+2)^(-s)+(2n+3)^(-s))`.
 
-The infinite eta tail is represented by its actual restricted logarithmic
-measure, not by an assumed remainder. Measure domination and an evaluated
-exponential integral then give, at every nontrivial zero `rho` with
-`sigma = Re rho`,
+On `Re s > 0`, the complete series is exactly `D(s)=2 E(s)-1`. Thus at every
+nontrivial zeta zero `rho`, `D(rho)=-1`, and the finite gap error has the exact
+decomposition
 
-`||G_N(rho)-1|| <= (||rho||/sigma + 1) * (2N+1)^(-sigma)`.
+`G_N(rho)-1 = -(2N+1)^(-rho)/2 + (-1-D_N(rho))/2`.
 
-The functional-equation partner satisfies the corresponding bound with decay
-exponent `1-sigma`; off the critical line the two exponents are provably
-distinct. This is a kernel-checked quantitative consequence of the zero
-hypothesis, but not a contradiction. The open frontier is a matching lower or
-asymptotic rigidity statement that makes those complementary finite rates
-incompatible off-line.
+The same identity holds at the functional-equation partner, and an off-line
+zero makes their real endpoint exponents distinct. This is an exact
+kernel-checked acceleration, not a contradiction. The immediate open target
+is an extra-power bound for the Euler second-difference tail. Even its expected
+individual asymptotic would not by itself prove RH; a further arithmetic
+relation coupling the two complementary evaluations must make off-line
+behavior impossible.
 
 ## Mathematical Program
 
