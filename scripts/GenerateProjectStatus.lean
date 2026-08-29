@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The canonical nonnegative arithmetic scalar converges to two pi times the xi heat detector"
-    lineOne := "canonical scalar"
-    lineTwo := "limit = 2pi xi heat"
+    label := "The genuine near-edge arithmetic functional converges to two pi i times the xi heat detector"
+    lineOne := "near-edge functional"
+    lineTwo := "limit = 2pi i xi heat"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.tendsto_quantitativeSelectedLaplaceBoundarySubArea_im
+      ``RiemannGaussian.tendsto_separatedSelectedLaplaceBoundarySubArea
   }
 ]
 
@@ -275,13 +275,13 @@ run_cmd do
     ("rhImplied", .bool false),
     ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
-      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. After cancelling the apparent boundary pole, Lean constructs a zero-adaptive completed continuation across Re z=1/2 and pole-clears its residues to the exact multiplicities. Fixed-time arithmetic residues recover both the interior xi heat and its RH-equivalent boundary detector. In the shifted coordinate p=rho-1/2, Lean derives the smooth boundary heat kernel, its exact nonzero Cauchy--Green source, and an arithmetic area--boundary identity on every zero-free rectangle. Local circle and square limits recover exact residues, and Lean constructs the genuine finite xi principal-part regularization on every positive bounded-height slab. Every weighted principal-part source is locally integrable through its pole, the iterated rectangular area is identified with a planar set integral, and the actual finite-window arithmetic source is integrable through the complete finite xi divisor. Lean proves parameter-free complete and selected finite Cauchy--Green identities. A canonical finite-extremum exhaustion connects the actual arithmetic boundary-minus-bulk functional to the complete heat detector; its imaginary part is a nonnegative monotone scalar, strictly positive when an off-axis zero enters. Lean now constructs a second, genuinely geometric near-edge exhaustion: the left sides tend to -1/2, the right sides tend to 0, the quantitative zero-free heights tend to infinity, both horizontal sides have an explicit positive finite-gap separation from every bounded-height zero, and every fixed selected zero enters eventually. The exact filtered positive Cauchy--Green identity holds at every stage. Passing these filtered sums to the complete detector and proving unconditional arithmetic rigidity remain open."),
+      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. After cancelling the apparent boundary pole, Lean constructs a zero-adaptive completed continuation across Re z=1/2 and pole-clears its residues to the exact multiplicities. Fixed-time arithmetic residues recover both the interior xi heat and its RH-equivalent boundary detector. In the shifted coordinate p=rho-1/2, Lean derives the smooth boundary heat kernel, its exact nonzero Cauchy--Green source, and an arithmetic area--boundary identity on every zero-free rectangle. Local circle and square limits recover exact residues, and Lean constructs the genuine finite xi principal-part regularization on every positive bounded-height slab. Every weighted principal-part source is locally integrable through its pole, the iterated rectangular area is identified with a planar set integral, and the actual finite-window arithmetic source is integrable through the complete finite xi divisor. Lean proves parameter-free complete and selected finite Cauchy--Green identities. A canonical finite-extremum exhaustion connects the actual arithmetic boundary-minus-bulk functional to the complete heat detector; its imaginary part is a nonnegative monotone scalar, strictly positive when an off-axis zero enters. Lean also constructs a genuinely geometric near-edge exhaustion: the left sides tend to -1/2, the right sides tend to 0, the quantitative zero-free heights tend to infinity, both horizontal sides have an explicit positive finite-gap separation from every bounded-height zero, and every fixed selected zero enters eventually. The exact filtered positive Cauchy--Green identity holds at every stage. Dominated convergence now passes these non-nested filtered sums to the complete detector, yielding a global near-edge arithmetic boundary-minus-bulk limit. Decomposing and estimating its four boundary sides and bulk term, then proving unconditional arithmetic rigidity, remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Pass the genuine near-edge filtered positive sums to the complete heat detector, decompose the four boundary sides and bulk term, then prove unconditional arithmetic rigidity forcing the resulting nonnegative scalar to vanish")
+        "Decompose and estimate the four boundary sides and bulk term in the proved genuine near-edge detector limit, then prove unconditional arithmetic rigidity forcing the resulting nonnegative scalar to vanish")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

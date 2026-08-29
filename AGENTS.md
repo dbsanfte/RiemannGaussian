@@ -166,8 +166,11 @@ exhaustion: the horizontal sides converge to `-1/2` and `0` while staying an
 explicit positive distance from the bounded-height divisor, the vertical
 height tends to infinity, and every fixed selected zero enters eventually.
 Each stage satisfies the exact filtered positive Cauchy--Green identity.
-Passing these filtered sums to the complete detector and then proving an
-unconditional arithmetic rigidity theorem remain open.
+Lean now passes those non-nested filtered sums to the complete detector by
+dominated convergence and obtains a global near-edge arithmetic
+boundary-minus-bulk limit. Decomposing and estimating its four boundary sides
+and bulk term, then proving an unconditional arithmetic rigidity theorem,
+remain open.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.

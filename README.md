@@ -26,20 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now constructs a genuine near-edge selected half-strip exhaustion. Its
-left sides converge to `Re p=-1/2`, its right sides to the critical line
-`Re p=0`, and its vertical heights to infinity. Both horizontal sides avoid
-the complete bounded-height divisor by an explicit positive finite-gap
-radius. Every selected zero in a stage is strictly inside, every other
-bounded-height zero is outside, and every fixed off-axis selected zero is
-proved to enter eventually.
+Lean now proves that the filtered heat sums on the genuine near-edge
+half-strip exhaustion converge to the complete RH-equivalent xi heat detector.
+The proof does not assume nested contours: every fixed upper off-axis zero is
+shown to enter eventually, non-upper zeros contribute identically zero, and
+the already proved absolute summability of the complete residue series gives
+a uniform dominator. Dominated convergence then closes the global limit.
 
-The exact arithmetic boundary-minus-bulk identity holds on each of these
-rectangles with the filtered positive heat sum visible. This replaces the
-earlier zero-extremum geometry, whose correctness was useful but whose sides
-need not approach the strip edges, with contours suitable for independent
-estimates. Passing the filtered sums to the complete detector and then proving
-unconditional rigidity remain open; no zero-location conclusion is claimed.
+Consequently, the actual arithmetic boundary-minus-bulk functional on
+rectangles whose sides tend to `Re p=-1/2`, `Re p=0`, and imaginary height
+infinity converges exactly to `2*pi*i` times the complete detector. This is a
+global arithmetic-spectral identity, not a zero-location result. The next
+frontier is to decompose and estimate its four boundary sides and bulk term,
+then prove the still-open unconditional rigidity forcing the nonnegative
+detector to vanish.
 
 ## Mathematical Program
 
