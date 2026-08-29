@@ -26,20 +26,22 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the exact finite-window, termwise-regularized Cauchy--Green
-identity for the heat-weighted arithmetic response. Whenever a rectangle in a
-positive bounded-height slab strictly contains its finite xi-zero window,
-Lean constructs one analytic remainder, applies ordinary Cauchy--Green to it,
-sums the checked one-principal-part improper limits at a common shrinking
-parameter, and recovers the actual outer boundary minus `2*pi*i` times the
-complete finite multiplicity-weighted heat-residue sum.
+Lean now proves that every heat-weighted simple-pole Cauchy--Green source is
+locally Lebesgue integrable through its pole in the complex plane. Translation
+invariance moves the checked `|z|^-1` estimate to arbitrary xi zeros, and a
+volume-preserving real-coordinate argument identifies the project's iterated
+rectangular area with a genuine planar set integral. Consequently the actual
+finite-window arithmetic source is integrable through its complete finite xi
+divisor and has an honest complex-plane rectangular integral; equality with
+the analytic principal-part regularization is used only almost everywhere on
+the proved finite exceptional set.
 
-The formal statement deliberately distinguishes this termwise regularized
-area from the integral over one geometrically multiply perforated rectangle;
-their equality has not yet been proved. That geometric equivalence, a
-selected-half-strip version that retains rather than cancels off-axis quartet
-information, strict quartet positivity, and global heat rigidity are the next
-steps. No unconditional zero-location conclusion is yet proved.
+The prior exact finite-window termwise Cauchy--Green residue identity remains
+the boundary formula. What is still missing is the convergence theorem that
+identifies its common-radius termwise approximation with one rectangle minus
+all shrinking holes. A selected-half-strip version, strict quartet positivity,
+and global heat rigidity remain beyond that geometric step. No unconditional
+zero-location conclusion is yet proved.
 
 ## Mathematical Program
 
