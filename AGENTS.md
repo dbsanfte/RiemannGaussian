@@ -261,6 +261,11 @@ Lean now also proves the exact radial identity
 integrability, and rewrites the complete diagonal limit as entirely finite
 log-norm variations. No quantitative convergence rate or arithmetic bound
 forcing that finite sequence to vanish is currently claimed.
+Lean now also proves a domain-local Rouché comparison. Every nontrivial zeta
+zero has an arbitrarily small positive-half-plane isolating circle on which
+all sufficiently long finite eta sums are boundary-nonzero and their exact
+logarithmic-derivative winding equals the genuine analytic zeta-zero
+multiplicity. This preserves local divisor mass but supplies no global bound.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

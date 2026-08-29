@@ -26,18 +26,17 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-For every finite paired-eta polynomial `E_N` with explicit derivative `D_N`,
-Lean now proves the exact radial identity
-`d/dr log|E_N(rho+r*exp(i*theta))|² = 2*Re(exp(i*theta)*D_N/E_N)`
-off its finite divisor. The selected finite denominators are uniformly
-nonzero on every detector circle, so this identity also transfers genuine
-`L¹` integrability across each finite spectral window.
+Lean now proves a domain-local Rouché theorem and applies it to the explicit
+finite paired-eta sums `E_N`. On every positive-half-plane circle avoiding the
+limiting eta divisor, all sufficiently long `E_N` are boundary-nonzero and
+their logarithmic-derivative circle integrals equal the limiting eta integral
+exactly, not merely asymptotically.
 
-Consequently the existing growing truncations `N_n ≥ n` now give a single
-sequence of entirely finite heat-weighted log-norm variations converging to
-`2*pi` times the complete RH-equivalent detector. The quotient has been
-removed without erasing its zero mass, but no arithmetic estimate yet forces
-these finite logarithmic variations to vanish.
+In particular, every nontrivial zeta zero has an arbitrarily small fixed
+isolating circle on which the winding of every sufficiently long finite eta
+sum is exactly its genuine analytic zeta-zero multiplicity. This rigorously
+retains divisor mass in the finite arithmetic model; it does not yet provide
+the global arithmetic rigidity estimate needed to rule out off-line zeros.
 
 ## Mathematical Program
 
