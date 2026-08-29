@@ -496,9 +496,16 @@ has no automatic sign. Lean now quantitatively controls the phase loss:
 sqrt(pi/tau)*2*gamma^2*tau*M_sigma^2`. Hence localization is an
 `O(sqrt tau)` perturbation at short proper time, and the localized completion
 distortion converges to the signed zero-centered distortion. This is genuine
-phase control but is not zero-sensitive: the next valid slice must propagate
-control to a scale retaining the cancellation forced by a zero, or prove a
-uniform phase incompatibility on the actual eta support.
+phase control. Lean now also handles the zero-sensitive opposite limit: after
+division by `sqrt(pi/tau)`, dominated convergence identifies the localized
+norm at `tau -> infinity` with the exact squared eta partition value at its
+center ordinate. At every nontrivial zero this limit vanishes at both
+complementary tilts, and so does the normalized localized completion
+distortion. This leading vanishing is compatible with off-critical zeros. The
+next valid slice should extract the first nonzero large-time coefficient at
+the analytic zero multiplicity and connect it to the already formalized
+leading log moments; a mere repetition of the leading zero limit adds no
+rigidity.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

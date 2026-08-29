@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The localized eta completion distortion converges to the signed zero-centered distortion at short proper time"
-    lineOne := "localized phase"
-    lineTwo := "short-time O(sqrt tau)"
-    role := "unconditional"
+    label := "At every nontrivial zeta zero the normalized localized eta completion distortion vanishes at large proper time"
+    lineOne := "zero-localized Gram"
+    lineTwo := "large-time limit = 0"
+    role := "bridge"
     theoremName :=
-      ``RiemannGaussian.tendsto_pairedEtaLocalizedCompletionWeightDistortionIntegral_sub_zeroCentered
+      ``RiemannGaussian.tendsto_pairedEtaLocalizedCompletionWeightDistortionIntegral_div_sqrt_atTop_zero_of_nontrivialZetaZero
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "extend short-time phase control to zero-sensitive coercivity on the eta support.</text>\n" ++
+      "extract the first nonzero large-time coefficient and force complementary tilt rigidity.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -371,7 +371,12 @@ run_cmd do
         "mass. Thus the localized norm and completion distortion converge to their " ++
         "zero-centered counterparts with O(sqrt tau) error as tau tends to zero from " ++
         "the right. This short-time estimate suppresses, rather than resolves, the " ++
-        "zero-defining cancellation. No zero-sensitive phase obstruction forcing " ++
+        "zero-defining cancellation. At the opposite scale, Lean proves by dominated " ++
+        "convergence that the localized norm divided by sqrt(pi/tau) tends exactly to " ++
+        "the squared eta partition value at its center. This normalized limit vanishes " ++
+        "at every nontrivial zero, at its complementary tilt, and for the localized " ++
+        "completion distortion. The leading zero limit is compatible with every zero; " ++
+        "no multiplicity-sensitive coefficient or phase obstruction forcing " ++
         "the horizontal displacement to vanish is proved, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -379,9 +384,9 @@ run_cmd do
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Extend the proved short-time phase bound to a zero-sensitive proper-time " ++
-        "scale, or prove a uniform phase incompatibility on the actual eta support " ++
-        "that forces zero location; alternatively force the exact " ++
+        "Extract the first nonzero multiplicity-dependent coefficient in the " ++
+        "large-proper-time localized eta Gram and prove its complementary relation " ++
+        "forces zero location; alternatively force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
