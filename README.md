@@ -26,23 +26,24 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now optimizes the finite eta moment-tail split at each cutoff by taking
-`theta_N = (m+1)/(sigma*log(2N+1))`. Past a proved explicit threshold, this
-lies in `(0,1)` and converts the earlier fractional-exponent estimate into the
-exact envelope
-`exp(-sigma*log(2N+1)+(m+1))*m!*(log(2N+1)/(m+1))^(m+1)`.
-Thus the bound retains the full horizontal exponent `sigma`, losing only a
-fixed logarithmic power, and Lean proves that it tends to zero.
+Lean now inserts the exact xi completion into the positive eta Laplace
+measure. Throughout the open critical strip it proves the pointwise identity
+`|C(s)*s|^2 * |integral_A exp(-s*t) dt|^2 = |xi(s)|^2`, where `A` is the
+literal union of paired logarithmic intervals and `C` is the already-derived
+eta completion factor. The functional equation and conjugation symmetry then
+give an exact equality between the completion-weighted sums of squared cosine
+and sine moments at the complementary tilts `sigma` and `1-sigma`, for every
+common ordinate.
 
-The sharper rate is propagated through the phase-sensitive finite lower
-certificates and the full complex completed partner residual at complementary
-tilts. Those certificates converge to the exact nonzero leading defect and
-are eventually both valid and positive; the residual is eventually bounded
-by the two full-exponent complementary envelopes. This is stronger finite
-control, not a zero-location theorem: the same decay remains compatible with
-an off-critical zero. The open step is an eta-specific lower or phase
-incompatibility coupling the complementary tilts; no current theorem implies
-RH.
+Lean also lifts this identity to arbitrary finite Gaussian windows. Both
+window integrands are genuinely interval-integrable and nonnegative, and the
+two completed window energies are exactly equal. This is the first positive-
+measure Gaussian object in the eta branch with the true complementary
+symmetry built in rather than assumed. It does not prove RH: the completion
+weight varies with the ordinate, and at a zero both moment energies vanish.
+The open step is an eta-specific coercivity or phase estimate extracting a
+zero-location constraint from this weighted coupling; no current theorem
+implies RH.
 
 ## Mathematical Program
 

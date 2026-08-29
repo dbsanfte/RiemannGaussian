@@ -460,6 +460,15 @@ only a `log(2N+1)^(m+1)` loss and tends to zero. Lean propagates this sharper
 bound to the finite lower certificates and to the complete complex partner
 residual at both complementary tilts. This improves the quantitative
 interface but supplies no independent lower or phase incompatibility.
+Lean now inserts the exact derived eta completion into the infinite positive-
+measure Laplace energy. Pointwise in the open strip, the resulting weighted
+energy is exactly `|xi(s)|^2`; hence the functional equation gives a checked
+complementary equality between explicit weighted sums of squared tilted
+cosine and sine moments of the same arithmetic measure. Arbitrary finite
+Gaussian windows of this energy are genuinely integrable, nonnegative, and
+exactly symmetric under `sigma ↔ 1-sigma`. The completion weight depends on
+the ordinate, and both sides vanish at a zero, so a new eta-specific
+coercivity or phase estimate is still required.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

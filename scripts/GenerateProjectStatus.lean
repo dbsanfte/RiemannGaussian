@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The cutoff-optimized completed eta residual bound retains both full complementary exponents up to logarithmic powers"
-    lineOne := "optimized eta tails"
-    lineTwo := "full sigma rates"
-    role := "reduction"
+    label := "The exact xi completion couples finite Gaussian windows of the positive eta Laplace energy at complementary tilts"
+    lineOne := "completed eta Gram"
+    lineTwo := "sigma <-> 1-sigma"
+    role := "bridge"
     theoremName :=
-      ``RiemannGaussian.norm_pairedEtaCompletedLeadingLogFinitePartnerResidual_le_nearSharp
+      ``RiemannGaussian.pairedEtaCompletedLaplaceGaussianWindowEnergy_complementary
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "an eta-specific lower or phase incompatibility across complementary tilts.</text>\n" ++
+      "eta-specific coercivity from the completed positive-measure Gaussian coupling.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -343,7 +343,14 @@ run_cmd do
         "and derives the full-exponent envelope exp(-sigma log(2N+1)+(n+1)) n! " ++
         "(log(2N+1)/(n+1))^(n+1). This sharper envelope tends to zero, gives convergent " ++
         "eventually valid and positive finite lower certificates, and bounds the " ++
-        "completed residual at both complementary tilts. No arithmetic phase " ++
+        "completed residual at both complementary tilts. Lean now inserts the exact " ++
+        "eta completion into the positive-measure Laplace energy and proves that the " ++
+        "resulting pointwise quantity is |xi(s)|^2 throughout the open strip. This " ++
+        "gives an exact complementary equality between completion-weighted sums of " ++
+        "the squared tilted cosine and sine moments of the same arithmetic measure. " ++
+        "Every finite Gaussian window is genuinely integrable, nonnegative, and " ++
+        "symmetric under sigma <-> 1-sigma. The ordinate-dependent completion weight " ++
+        "does not itself yield a zero-location constraint. No arithmetic phase " ++
         "obstruction forcing " ++
         "the horizontal displacement to vanish is proved, " ++
         "and no current theorem implies RH.")),
@@ -352,8 +359,8 @@ run_cmd do
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove an eta-specific lower or phase incompatibility for the finite completed " ++
-        "eta derivative residual at complementary off-critical tilts, " ++
+        "Prove an eta-specific coercivity or phase estimate that turns the completed " ++
+        "positive-measure Gaussian coupling into a complementary zero-location constraint, " ++
         "or force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),
