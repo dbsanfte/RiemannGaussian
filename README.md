@@ -31,7 +31,9 @@ integral with respect to its real tilt `sigma`. Its first derivative is exactly
 the negative first logarithmic-time moment and its second derivative is exactly
 the second moment. For every nonempty truncation and `tau > 0`, both moments
 are strictly positive. The raw Gram profile is therefore strictly decreasing
-and strictly convex in `sigma`.
+and strictly convex in `sigma`. Lean also proves the exact Cauchy--Schwarz
+moment determinant `M_1(sigma)^2 <= G(sigma) * M_2(sigma)`, computes the second
+derivative of `log G`, and deduces global log-convexity.
 
 As a precise symmetry interface, Lean proves that the two raw complementary
 values at `sigma` and `1-sigma` are equal if and only if `sigma = 1/2`. This is

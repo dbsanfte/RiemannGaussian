@@ -384,7 +384,11 @@ first derivative is exactly the negative first logarithmic-time moment and its
 second derivative is exactly the positive second moment. For every nonempty
 truncation at positive Gaussian time, both moments are strictly positive; the
 raw Gram profile is therefore strictly decreasing and strictly convex. Lean
-also proves that its values at `sigma` and `1-sigma` are equal exactly when
+also proves the exact Cauchy--Schwarz moment determinant
+`M_1(sigma)^2 <= G(sigma)*M_2(sigma)`, identifies the second derivative of
+`log G` with its normalized nonnegative determinant, and proves global
+log-convexity of the raw profile. These remain generic positive-Laplace facts.
+Lean also proves that its values at `sigma` and `1-sigma` are equal exactly when
 `sigma=1/2`. This is a closure interface, not the missing coupling: no theorem
 derives the complementary equality from zeta, xi, or the finite eta zero
 condition.

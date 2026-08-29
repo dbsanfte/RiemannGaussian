@@ -303,9 +303,12 @@ run_cmd do
         "the negative first logarithmic-time moment and its second derivative is " ++
         "the positive second moment. For every nonempty truncation and positive " ++
         "Gaussian time both moments are strictly positive, so the raw profile is " ++
-        "strictly decreasing and strictly convex. Thus equality at complementary " ++
-        "tilts holds exactly at sigma=1/2. No theorem supplies that complementary " ++
-        "equality from zeta or xi, and no current theorem implies RH.")),
+        "strictly decreasing and strictly convex. Cauchy--Schwarz gives the exact " ++
+        "first-moment-squared versus zeroth-times-second-moment determinant, and " ++
+        "Lean derives the corresponding second logarithmic derivative and global " ++
+        "log-convexity. Thus equality at complementary tilts holds exactly at " ++
+        "sigma=1/2. No theorem supplies that complementary equality from zeta or " ++
+        "xi, and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
