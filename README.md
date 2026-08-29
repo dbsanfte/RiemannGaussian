@@ -26,26 +26,26 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now puts Suzuki's weighted Chebyshev logarithmic-average error into
-literal one-sided Laplace coordinates. It proves the global substitution
-`x = exp(t)` including the Jacobian, and separately proves genuine
-integrability of the Mellin and Laplace kernels. With
-`S(t) = -A(exp(t))`, and with `C` the explicit completed-zeta pole,
-`log(pi)`, and digamma correction, Lean proves for every real
-`lambda > 1/2` that
+Lean now constructs the literal complex Laplace transform of Suzuki's
+weighted Chebyshev logarithmic-average signal,
+`T(z) = integral_0^infinity -A(exp(t)) exp(-z t) dt`. It proves genuine
+integrability of both the integrand and its parameter derivative, justifies
+differentiation under the infinite integral, and establishes that `T` is
+holomorphic on `Re z > 1/2`.
 
-`XiNeg(-i lambda)
-  = -lambda^2 (integral_0^infinity S(t) exp(-lambda t) dt
-      - 4/(lambda-1/2)) - C(lambda+1/2)`,
+On the real safe ray, the earlier Mellin calculation gives
+`T(z) = (zeta'/zeta)(z+1/2)/z^2 + 4/(z-1/2)`. Lean now verifies that the
+right side is holomorphic on the same half-plane and applies the complex
+identity theorem at the accumulating real point `z = 1`, proving this formula
+for every complex `z` with `Re z > 1/2`. After exposing the completed-zeta
+pole, `log(pi)`, and digamma correction, it follows there that
 
-where `XiNeg(z) = -xi'(1/2+i z)/xi(1/2+i z)`. The proof rests on checked
-atom integrability, absolute norm summability, countable sum-integral
-exchange, the von-Mangoldt `L`-series identity, and the fully expanded
-completed-zeta logarithmic derivative. This is an exact arithmetic Laplace
-representation of spectral `xi` on its zero-free safe ray. Proved
-continuation toward `lambda = 0`, a Tauberian/sign/rigidity theorem, the
-needed bound on `A_N`, and every unconditional zero-location constraint
-remain open.
+`XiNeg(-i z) = -z^2 (T(z) - 4/(z-1/2)) - C(z+1/2)`.
+
+This closes the real-to-complex continuation inside the literal transform's
+absolute-convergence domain. It does not continue across `Re z = 1/2`, bound
+the transform at that boundary, or impose any unconditional zero-location
+constraint; those remain the conjecture-strength frontier.
 
 ## Mathematical Program
 
