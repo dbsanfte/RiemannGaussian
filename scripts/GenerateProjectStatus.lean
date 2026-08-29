@@ -264,13 +264,13 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("rhImplied", .bool false),
     ("statusNote", .str
-      "Cutoffs zero and one are proved. The exact finite identity is gap_N=E_endpoint(N)-4 sqrt(N) H(q_N)+smooth_correction_N, with H(q_N)>=0 and source-exact correction o(sqrt N). Lean now also proves 4 sqrt(N) H(q_N) <= (E_mass(N)-smooth_slope(r_N))^2/sqrt(N), reducing a sufficient tail certificate to one explicit fixed-endpoint quadratic mass-moment estimate. That stronger arithmetic premise, exact entropy domination, and every RH-forcing rigidity step remain open."),
+      "Cutoffs zero and one are proved. The exact finite entropy identity and its quadratic mass-error majorant remain available. Lean now proves the fixed-endpoint drift law E_endpoint(N+1)-E_endpoint(N)=D_N-log((N+1)/N)E_mass(N), with D_N nonnegative and E_endpoint(2)=4 sqrt(2)-log(2)-4 strictly positive. The resulting telescoping formula reduces the sufficient quadratic certificate to a cumulative block inequality for signed mass-error work. That block bound, exact entropy domination, and every RH-forcing rigidity step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Prove either the exact entropy domination or the verified sufficient quadratic mass-moment inequality at every canonical prefix, then derive an unconditional zero-location constraint")
+        "Control the verified signed cumulative mass-error work strongly enough to prove the exact entropy domination or sufficient quadratic block inequality, then derive an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

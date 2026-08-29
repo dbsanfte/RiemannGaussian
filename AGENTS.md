@@ -74,9 +74,16 @@ quantitative upper bound
 `4 * sqrt N * H(q_N) <= (E_mass(N) - smooth_slope(r_N))^2 / sqrt N`, so a
 specific fixed-endpoint quadratic mass--moment inequality is sufficient for
 every gap and for the uniform tail. Its premise is open and may be strictly
-stronger than the exact entropy condition. These estimates are not RH and do
-not exclude a finite or sparse off-line divisor; a restatement, hidden limit
-interchange, or conditional implication is not a substitute.
+stronger than the exact entropy condition. The fixed-endpoint error now also
+has a checked discrete work law
+`E_endpoint(N+1)-E_endpoint(N) = D_N-log((N+1)/N)E_mass(N)`, with every smooth
+drift `D_N >= 0` and strictly positive evaluated initial margin at `N=2`.
+Lean telescopes this into initial margin plus cumulative smooth drift minus
+cumulative signed mass-error work, and proves a corresponding block-work
+inequality sufficient for the literal tail. Controlling that signed work is
+the open arithmetic task. These estimates are not RH and do not exclude a
+finite or sparse off-line divisor; a restatement, hidden limit interchange,
+or conditional implication is not a substitute.
 
 ## Soundness invariant
 

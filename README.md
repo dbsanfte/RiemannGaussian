@@ -24,25 +24,25 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now gives the entropy frontier a concrete quadratic arithmetic majorant.
-For the corrected mass ratio
+Lean now derives the exact discrete evolution of the fixed-endpoint arithmetic
+error. Writing `M_N` for the weighted Chebyshev mass error, it proves
 
-`q_N = 1 + (E_mass(N) - smooth_slope(r_N)) / (2 * sqrt(N))`
+`E_endpoint(N+1) - E_endpoint(N)
+  = D_N - log((N+1)/N) * M_N`,
 
-the scalar inequality `H(q) <= (q - 1)^2` and the exact mass coupling give
+where the smooth drift `D_N` is proved nonnegative. This telescopes exactly to
 
-`4 * sqrt(N) * H(q_N)
-  <= (E_mass(N) - smooth_slope(r_N))^2 / sqrt(N)`.
+`E_endpoint(N) = E_endpoint(2)
+  + sum D_j - sum log((j+1)/j) * M_j`,
 
-Consequently Lean proves that the fixed-endpoint inequality
+and Lean proves the initial margin
+`E_endpoint(2) = 4 * sqrt(2) - log(2) - 4` is strictly positive. Combined
+with the verified quadratic entropy majorant, a single cumulative block
+inequality for the signed mass-error work is now proved sufficient for the
+literal Suzuki tail.
 
-`(E_mass(N) - smooth_slope(r_N))^2 / sqrt(N)
-  <= E_endpoint(N) + smooth_correction_N`
-
-is sufficient for every canonical gap and, if uniform beyond the discharged
-initial cutoffs, for the literal Suzuki tail. This arithmetic premise is open
-and may be stronger than the exact entropy condition. No tail positivity or
-RH is claimed.
+The required uniform bound on that signed cumulative work remains open; no
+tail positivity or RH is claimed.
 
 ## Mathematical Program
 
