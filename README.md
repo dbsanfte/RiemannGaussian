@@ -26,20 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now constructs one literal rectangle with every zero in its finite xi
-window removed by a common-radius complex ball. Lean proves that the volume of
-this finite hole union tends to zero, uses the already-checked through-pole
-integrability to show that the multiply punctured area converges to the full
-planar arithmetic area, and proves that at every positive radius its integrand
-is exactly the finite principal-part sum plus one analytic remainder. This is
-a genuine set integral over one geometric region, not a termwise definition.
+Lean now proves that the termwise shrinking-square construction and the
+literal common-ball geometry converge to the same ordinary through-divisor
+planar area. The resulting parameter-free finite Cauchy--Green theorem states
+that this genuine arithmetic area equals the actual outer boundary integral
+minus the complete finite multiplicity-weighted heat-residue sum. No square
+radius, ball radius, or analytic regularization witness remains in that public
+identity.
 
-The earlier termwise shrinking-square theorem independently recovers the
-outer boundary minus the complete finite heat-residue sum. The remaining
-finite-geometry obligation is to prove that its termwise square approximation
-and the new common-ball area have the same limit. A selected-half-strip
-version, strict quartet positivity, and global heat rigidity remain beyond
-that comparison. No unconditional zero-location conclusion is yet proved.
+This closes the finite symmetric excision obligation. The next frontier is a
+selected-half-strip identity retaining only `Re (rho - 1/2) < 0`, where the
+existing heat residue is nonnegative and an off-axis zero contributes
+strictly positively, followed by a global rigidity theorem and expanding
+boundary/bulk control. No unconditional zero-location conclusion is yet
+proved.
 
 ## Mathematical Program
 

@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Finite xi windows satisfy the exact termwise-regularized Cauchy--Green identity"
+    label := "Finite xi windows satisfy a parameter-free geometric Cauchy--Green identity"
     lineOne := "finite xi window"
-    lineTwo := "termwise Cauchy--Green"
+    lineTwo := "geometric Cauchy--Green"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.exists_tendsto_suzukiChebyshevLaplaceBoundaryHeatFiniteRegularizedAreaApproximation
+      ``RiemannGaussian.suzukiChebyshevLaplaceBoundaryHeat_finiteCauchyGreen
   }
 ]
 
@@ -275,13 +275,13 @@ run_cmd do
     ("rhImplied", .bool false),
     ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
-      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. After cancelling the apparent boundary pole, Lean constructs a zero-adaptive completed continuation across Re z=1/2 and pole-clears its residues to the exact multiplicities. Fixed-time arithmetic residues recover both the interior xi heat and its RH-equivalent boundary detector. In the shifted coordinate p=rho-1/2, Lean derives the smooth boundary heat kernel, its exact nonzero Cauchy--Green source, and an arithmetic area--boundary identity on every zero-free rectangle. Local circle and square limits recover exact residues, and Lean constructs the genuine finite xi principal-part regularization on every positive bounded-height slab. It proves the exact finite-window termwise-regularized Cauchy--Green identity: a common shrinking parameter recovers the actual outer boundary minus the complete finite multiplicity-weighted heat-residue sum. Lean also proves that every weighted principal-part source is locally integrable through its pole, identifies the iterated rectangular area with a planar set integral, and proves the actual finite-window arithmetic source integrable through the complete finite xi divisor. It now constructs a single rectangle minus all common-radius complex-ball holes, proves that genuine geometric area converges to the full through-divisor area, and identifies its positive-radius integrand exactly with the finite analytic regularization. Equality of this common-ball limit with the existing termwise shrinking-square limit, a selected-half-strip identity preserving off-axis quartet information, quartet positivity, a global heat-rigidity closure theorem, boundary and bulk control, and any unconditional zero-location constraint remain open."),
+      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. After cancelling the apparent boundary pole, Lean constructs a zero-adaptive completed continuation across Re z=1/2 and pole-clears its residues to the exact multiplicities. Fixed-time arithmetic residues recover both the interior xi heat and its RH-equivalent boundary detector. In the shifted coordinate p=rho-1/2, Lean derives the smooth boundary heat kernel, its exact nonzero Cauchy--Green source, and an arithmetic area--boundary identity on every zero-free rectangle. Local circle and square limits recover exact residues, and Lean constructs the genuine finite xi principal-part regularization on every positive bounded-height slab. Every weighted principal-part source is locally integrable through its pole, the iterated rectangular area is identified with a planar set integral, and the actual finite-window arithmetic source is integrable through the complete finite xi divisor. Lean constructs a single rectangle minus all common-radius complex-ball holes and proves its actual-source integral converges to the full through-divisor area. A checked half-open-square decomposition now proves that the termwise shrinking-square approximation has that same ordinary planar limit. Consequently Lean proves the parameter-free finite Cauchy--Green identity: the genuine through-divisor arithmetic area equals the actual outer boundary minus the complete finite multiplicity-weighted heat-residue sum, and the literal common-ball area converges to this value. A selected-half-strip identity preserving the positive off-axis half-divisor, a global heat-rigidity closure theorem, expanding-domain boundary and bulk control, and any unconditional zero-location constraint remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Identify the verified common-ball geometric limit with the termwise shrinking-square Cauchy--Green limit, retain the selected off-axis half-divisor, package strict quartet positivity and a transparent global heat-rigidity closure theorem, then control the expanding half-strip boundary and bulk terms strongly enough to force an unconditional zero-location constraint")
+        "Retain the selected off-axis half-divisor in a finite Cauchy--Green identity, connect its positive residue sum to the existing RH detector, package a transparent global heat-rigidity closure theorem, then control the expanding half-strip boundary and bulk terms strongly enough to force an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

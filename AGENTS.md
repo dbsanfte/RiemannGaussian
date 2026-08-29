@@ -136,27 +136,25 @@ proved complete for the xi divisor, every local multiplicity-weighted
 principal part is subtracted, and one analytic representative patches the raw
 remainder across all selected zeros. The heat-weighted response is therefore
 a proved finite sum of the exact weighted principal parts plus one weighted
-analytic remainder away from the divisor. Assembling their exact finite
-Cauchy--Green identity is now complete in a precisely termwise-regularized
-form: for every admissible outer rectangle strictly containing the finite
-window, a common shrinking parameter recovers the actual boundary minus the
-complete finite multiplicity-weighted heat-residue sum. Equality with one
-geometrically multiply perforated area is not yet proved. Lean proves the
-integrability prerequisite: every weighted principal-part source is locally
-Lebesgue integrable through its pole, the project's iterated rectangular area
-equals a genuine complex-plane set integral, and the actual finite-window
-arithmetic source is integrable through its complete finite xi divisor. Lean
-now also constructs a single rectangle minus the finite union of common-radius
-complex balls, proves its actual-source integral converges to the full planar
-area, and identifies its positive-radius integrand exactly with the checked
-finite principal-part regularization. The remaining finite geometric
-obligation is to prove that this common-ball limit and the existing termwise
-shrinking-square limit coincide. Retaining the selected off-axis half of the
-divisor, packaging strict quartet positivity and an honest global-rigidity
-closure theorem, passing to an expanding half-strip, and controlling its
-boundary and bulk terms are open. These estimates are not RH and do not
-exclude a finite or sparse off-line divisor; a restatement, hidden limit
-interchange, or conditional implication is not a substitute.
+analytic remainder away from the divisor. Lean proves the integrability
+prerequisite: every weighted principal-part source is locally Lebesgue
+integrable through its pole, the project's iterated rectangular area equals a
+genuine complex-plane set integral, and the actual finite-window arithmetic
+source is integrable through its complete finite xi divisor. Lean also
+constructs a single rectangle minus the finite union of common-radius complex
+balls and proves its actual-source integral converges to the full planar area.
+A checked half-open-square decomposition now identifies the termwise
+shrinking-square approximation with that same ordinary through-divisor limit.
+The resulting parameter-free finite Cauchy--Green identity states that the
+actual arithmetic area equals the outer boundary minus the complete finite
+multiplicity-weighted heat-residue sum; the literal common-ball integral
+converges to this value. Retaining the selected off-axis half of the divisor
+in a finite identity, connecting its positive residue sum to the existing RH
+detector, packaging an honest global-rigidity closure theorem, passing to an
+expanding half-strip, and controlling its boundary and bulk terms are open.
+These estimates are not RH and do not exclude a finite or sparse off-line
+divisor; a restatement, hidden limit interchange, or conditional implication
+is not a substitute.
 
 ## Soundness invariant
 
