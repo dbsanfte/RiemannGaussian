@@ -11,21 +11,29 @@ repository's verification gates count as established results.
 > **Research agent:** GPT-5.6 Sol with **Max** reasoning effort, running in the
 > **Codex CLI harness**.
 
-![Lean-verified RiemannGaussian reduction map](docs/proof-status.svg)
+![Lean-verified RiemannGaussian theorem inventory](docs/proof-status.svg)
 
 This panel is generated from Lean's compiled environment. A checkmark means
 that the named theorem is kernel-checked; it is not a measure of proximity to
-RH. Green denotes unconditional analytic infrastructure, purple an
-RH-equivalent reformulation, and blue/cyan verified bridges or reductions.
-Orange is the conjecture-strength open step. No current theorem derives an
-RH-equivalent vanishing condition from unconditional arithmetic estimates.
-CI rejects a stale generated panel. The machine-readable companion is
-[docs/proof-status.json](docs/proof-status.json).
+RH. Its boxes are deliberately not connected as a proof chain: green denotes
+unconditional analytic infrastructure, purple an RH-equivalent reformulation,
+and blue/cyan verified identities or reductions. In particular, proving that
+a detector is equivalent to RH does not establish either side. Orange is the
+conjecture-strength open mathematics, and its dashed arrow is explicitly
+unproved. No current theorem derives an RH-equivalent vanishing condition from
+unconditional arithmetic estimates. CI rejects a stale generated panel. The
+machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now derives the exact discrete evolution of the fixed-endpoint arithmetic
-error. Writing `M_N` for the weighted Chebyshev mass error, it proves
+The generated status panel now presents checked theorems as an inventory, not
+as a green causal chain or a proximity meter. RH-equivalent detectors are
+explicitly labeled as reformulations, and the only arrow to RH begins at the
+orange, unproved arithmetic-rigidity gap.
+
+The latest mathematical slice derives the exact discrete evolution of the
+fixed-endpoint arithmetic error. Writing `M_N` for the weighted Chebyshev mass
+error, Lean proves
 
 `E_endpoint(N+1) - E_endpoint(N)
   = D_N - log((N+1)/N) * M_N`,
@@ -41,8 +49,9 @@ with the verified quadratic entropy majorant, a single cumulative block
 inequality for the signed mass-error work is now proved sufficient for the
 literal Suzuki tail.
 
-The required uniform bound on that signed cumulative work remains open; no
-tail positivity or RH is claimed.
+The required uniform bound on that signed cumulative work remains open; the
+verified infrastructure has not yet supplied any unconditional zero-location
+constraint, tail positivity, or proof of RH.
 
 ## Mathematical Program
 
@@ -58,8 +67,9 @@ The development joins two lines of attack:
 
 Finite Hardy spaces, Blaschke products, Pick matrices, Gram determinants,
 root-count transport, and finite-to-entire limit theory provide the supporting
-formal infrastructure. The branches now meet at the Poisson and
-entire-function rigidity problem shown in the generated panel.
+formal infrastructure. These results expose several interfaces to the same
+missing arithmetic and entire-function rigidity theorem; they do not yet
+prove that theorem.
 
 ## Repository Structure
 

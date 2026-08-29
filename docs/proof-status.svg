@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description" viewBox="0 0 1000 235">
-  <title id="title">Lean-verified RiemannGaussian reduction status</title>
-  <desc id="description">Verified analytic results, equivalences, bridges, and reductions leading to an open conjecture-strength arithmetic rigidity step.</desc>
+  <title id="title">Lean-verified RiemannGaussian theorem inventory</title>
+  <desc id="description">An inventory of checked analytic results, equivalences, bridges, and reductions. The boxes are not a proof chain. No checked implication crosses the displayed conjecture-strength gap to RH.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b949e"/>
@@ -18,63 +18,62 @@
       .goal rect { fill: #161b22; stroke: #8b949e; stroke-width: 1.5; stroke-dasharray: 5 4; }
       .open text { fill: #f2cc60; font-weight: 700; }
       .goal text { fill: #c9d1d9; font-weight: 700; }
-      .edge { fill: none; stroke: #8b949e; stroke-width: 1.5; marker-end: url(#arrow); }
+      .open-edge { fill: none; stroke: #d29922; stroke-width: 1.5; stroke-dasharray: 5 4; marker-end: url(#arrow); }
+      .section { fill: #8b949e; font-size: 10px; font-weight: 700; text-anchor: start; }
+      .gap-label { fill: #d29922; font-size: 10px; font-weight: 700; }
       .frontier { fill: #f2cc60; font-size: 11px; text-anchor: start; }
     </style>
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
-  <text class="heading" x="20" y="30">Lean-verified reduction map</text>
+  <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
   <text class="metrics" x="980" y="28">Lean 4.33.1 · 278 modules · 7456 declarations · 6407 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
-  <path class="edge" d="M165 102 H187"/>
-  <path class="edge" d="M335 102 H357"/>
-  <path class="edge" d="M165 182 H187"/>
-  <path class="edge" d="M335 182 H357"/>
-  <path class="edge" d="M505 102 C512 102 508 58 520 58 H650 C675 58 675 124 688 128"/>
-  <path class="edge" d="M505 182 C570 182 600 153 688 150"/>
-  <path class="edge" d="M665 102 C677 102 677 116 688 118"/>
-  <path class="edge" d="M840 139 H853"/>
+  <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
+  <text class="section" x="20" y="143">EQUIVALENCES AND REDUCTIONS — NOT A PROOF CHAIN</text>
+  <line x1="670" y1="62" x2="670" y2="207" stroke="#30363d"/>
+  <text class="gap-label" x="765" y="94">UNPROVED MATHEMATICS</text>
+  <path class="open-edge" d="M840 139 H853"/>
   <g class="proved unconditional">
-    <rect x="20" y="75" width="145" height="54" rx="9"/>
+    <rect x="20" y="71" width="145" height="54" rx="9"/>
     <title>RiemannGaussian.riemannXi_logLinearGrowth</title>
-    <text x="92" y="98">xi growth</text>
-    <text x="92" y="116">R log R  ✓</text>
+    <text x="92" y="94">xi growth</text>
+    <text x="92" y="112">R log R  ✓</text>
+  </g>
+  <g class="proved bridge">
+    <rect x="180" y="71" width="145" height="54" rx="9"/>
+    <title>RiemannGaussian.riemannXiUpperReflectedPairGaussianTotal_eq_boundaryHeatResidueTotal</title>
+    <text x="252" y="94">Gaussian Gram</text>
+    <text x="252" y="112">identity  ✓</text>
+  </g>
+  <g class="proved bridge">
+    <rect x="340" y="71" width="145" height="54" rx="9"/>
+    <title>RiemannGaussian.riemannXiSuzukiArithmeticPPositive_eq_spectral_safe</title>
+    <text x="412" y="94">Suzuki identity</text>
+    <text x="412" y="112">arith. = spectral  ✓</text>
+  </g>
+  <g class="proved bridge">
+    <rect x="500" y="71" width="145" height="54" rx="9"/>
+    <title>RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke</title>
+    <text x="572" y="94">static signed</text>
+    <text x="572" y="112">xi contour  ✓</text>
   </g>
   <g class="proved equivalence">
-    <rect x="190" y="75" width="145" height="54" rx="9"/>
+    <rect x="20" y="150" width="145" height="54" rx="9"/>
     <title>RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh</title>
-    <text x="262" y="98">boundary heat</text>
-    <text x="262" y="116">RH equivalence  ✓</text>
-  </g>
-  <g class="proved bridge">
-    <rect x="360" y="75" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.riemannXiUpperReflectedPairGaussianTotal_eq_boundaryHeatResidueTotal</title>
-    <text x="432" y="98">Gaussian Gram</text>
-    <text x="432" y="116">identity  ✓</text>
-  </g>
-  <g class="proved bridge">
-    <rect x="20" y="155" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.riemannXiSuzukiArithmeticPPositive_eq_spectral_safe</title>
-    <text x="92" y="178">Suzuki identity</text>
-    <text x="92" y="196">arith. = spectral  ✓</text>
-  </g>
-  <g class="proved bridge">
-    <rect x="190" y="155" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke</title>
-    <text x="262" y="178">static signed</text>
-    <text x="262" y="196">xi contour  ✓</text>
+    <text x="92" y="173">boundary heat = 0</text>
+    <text x="92" y="191">iff RH (reform.)  ✓</text>
   </g>
   <g class="proved reduction">
-    <rect x="360" y="155" width="145" height="54" rx="9"/>
+    <rect x="180" y="150" width="145" height="54" rx="9"/>
     <title>RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear</title>
-    <text x="432" y="178">Poisson &lt;-&gt; height</text>
-    <text x="432" y="196">H(T) = o(T)  ✓</text>
+    <text x="252" y="173">Poisson decay iff</text>
+    <text x="252" y="191">H(T) = o(T) reduction  ✓</text>
   </g>
   <g class="proved reduction">
-    <rect x="520" y="75" width="145" height="54" rx="9"/>
+    <rect x="340" y="150" width="145" height="54" rx="9"/>
     <title>RiemannGaussian.tendsto_normalizedFirstTailGap_sub_endpointError_add_entropy_zero</title>
-    <text x="592" y="98">Suzuki gap / sqrt N</text>
-    <text x="592" y="116">endpoint - entropy  ✓</text>
+    <text x="412" y="173">Suzuki gap / sqrt N</text>
+    <text x="412" y="191">endpoint - entropy  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
@@ -85,5 +84,5 @@
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Open: derive a zero-location constraint from xi arithmetic. No current theorem implies RH.</text>
+  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: derive a zero-location constraint from xi arithmetic; no current theorem implies RH.</text>
 </svg>

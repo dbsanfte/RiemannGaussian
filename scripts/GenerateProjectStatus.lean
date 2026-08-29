@@ -37,14 +37,6 @@ private def milestones : Array Milestone := #[
     theoremName := ``RiemannGaussian.riemannXi_logLinearGrowth
   },
   {
-    label := "Boundary heat vanishing is equivalent to RH"
-    lineOne := "boundary heat"
-    lineTwo := "RH equivalence"
-    role := "equivalence"
-    theoremName :=
-      ``RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh
-  },
-  {
     label := "Gaussian Gram identity"
     lineOne := "Gaussian Gram"
     lineTwo := "identity"
@@ -69,9 +61,17 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.xiSpectralBlaschkeSignedContourWindow_eq_blaschke
   },
   {
+    label := "Boundary heat vanishing is equivalent to RH"
+    lineOne := "boundary heat = 0"
+    lineTwo := "iff RH (reform.)"
+    role := "equivalence"
+    theoremName :=
+      ``RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh
+  },
+  {
     label := "Poisson decay is equivalent to sublinear cumulative upper spectral height"
-    lineOne := "Poisson <-> height"
-    lineTwo := "H(T) = o(T)"
+    lineOne := "Poisson decay iff"
+    lineTwo := "H(T) = o(T) reduction"
     role := "reduction"
     theoremName :=
       ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
@@ -87,13 +87,13 @@ private def milestones : Array Milestone := #[
 ]
 
 private def milestonePoints : Array Point := #[
-  { x := 20, y := 75 },
-  { x := 190, y := 75 },
-  { x := 360, y := 75 },
-  { x := 20, y := 155 },
-  { x := 190, y := 155 },
-  { x := 360, y := 155 },
-  { x := 520, y := 75 }
+  { x := 20, y := 71 },
+  { x := 180, y := 71 },
+  { x := 340, y := 71 },
+  { x := 500, y := 71 },
+  { x := 20, y := 150 },
+  { x := 180, y := 150 },
+  { x := 340, y := 150 }
 ]
 
 private def projectPrefix : Name := `RiemannGaussian
@@ -147,9 +147,10 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
       output ++ completedNodeSvg milestonePoint.1 milestonePoint.2) ""
   "<svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" " ++
       "aria-labelledby=\"title description\" viewBox=\"0 0 1000 235\">\n" ++
-    "  <title id=\"title\">Lean-verified RiemannGaussian reduction status</title>\n" ++
-    "  <desc id=\"description\">Verified analytic results, equivalences, bridges, " ++
-      "and reductions leading to an open conjecture-strength arithmetic rigidity step.</desc>\n" ++
+    "  <title id=\"title\">Lean-verified RiemannGaussian theorem inventory</title>\n" ++
+    "  <desc id=\"description\">An inventory of checked analytic results, " ++
+      "equivalences, bridges, and reductions. The boxes are not a proof chain. " ++
+      "No checked implication crosses the displayed conjecture-strength gap to RH.</desc>\n" ++
     "  <defs>\n" ++
     "    <marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" " ++
       "markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n" ++
@@ -170,26 +171,26 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
       "stroke-dasharray: 5 4; }\n" ++
     "      .open text { fill: #f2cc60; font-weight: 700; }\n" ++
     "      .goal text { fill: #c9d1d9; font-weight: 700; }\n" ++
-    "      .edge { fill: none; stroke: #8b949e; stroke-width: 1.5; " ++
-      "marker-end: url(#arrow); }\n" ++
+    "      .open-edge { fill: none; stroke: #d29922; stroke-width: 1.5; " ++
+      "stroke-dasharray: 5 4; marker-end: url(#arrow); }\n" ++
+    "      .section { fill: #8b949e; font-size: 10px; font-weight: 700; " ++
+      "text-anchor: start; }\n" ++
+    "      .gap-label { fill: #d29922; font-size: 10px; font-weight: 700; }\n" ++
     "      .frontier { fill: #f2cc60; font-size: 11px; text-anchor: start; }\n" ++
     "    </style>\n" ++
     "  </defs>\n" ++
     "  <rect class=\"bg\" x=\"0.75\" y=\"0.75\" width=\"998.5\" " ++
       "height=\"233.5\" rx=\"12\"/>\n" ++
-    "  <text class=\"heading\" x=\"20\" y=\"30\">Lean-verified reduction map</text>\n" ++
+    "  <text class=\"heading\" x=\"20\" y=\"30\">Lean-checked theorem inventory — RH remains open</text>\n" ++
     s!"  <text class=\"metrics\" x=\"980\" y=\"28\">Lean {Lean.versionString} · " ++
       s!"{moduleCount} modules · {declarationCount} declarations · {theoremCount} theorems</text>\n" ++
     "  <text class=\"metrics\" x=\"980\" y=\"47\">0 placeholder dependencies · " ++
       "0 project axioms · frontier standard-only</text>\n" ++
-    "  <path class=\"edge\" d=\"M165 102 H187\"/>\n" ++
-    "  <path class=\"edge\" d=\"M335 102 H357\"/>\n" ++
-    "  <path class=\"edge\" d=\"M165 182 H187\"/>\n" ++
-    "  <path class=\"edge\" d=\"M335 182 H357\"/>\n" ++
-    "  <path class=\"edge\" d=\"M505 102 C512 102 508 58 520 58 H650 C675 58 675 124 688 128\"/>\n" ++
-    "  <path class=\"edge\" d=\"M505 182 C570 182 600 153 688 150\"/>\n" ++
-    "  <path class=\"edge\" d=\"M665 102 C677 102 677 116 688 118\"/>\n" ++
-    "  <path class=\"edge\" d=\"M840 139 H853\"/>\n" ++
+    "  <text class=\"section\" x=\"20\" y=\"64\">UNCONDITIONAL RESULTS AND IDENTITIES</text>\n" ++
+    "  <text class=\"section\" x=\"20\" y=\"143\">EQUIVALENCES AND REDUCTIONS — NOT A PROOF CHAIN</text>\n" ++
+    "  <line x1=\"670\" y1=\"62\" x2=\"670\" y2=\"207\" stroke=\"#30363d\"/>\n" ++
+    "  <text class=\"gap-label\" x=\"765\" y=\"94\">UNPROVED MATHEMATICS</text>\n" ++
+    "  <path class=\"open-edge\" d=\"M840 139 H853\"/>\n" ++
     nodes ++
     "  <g class=\"open\">\n" ++
     "    <rect x=\"690\" y=\"108\" width=\"150\" height=\"62\" rx=\"10\"/>\n" ++
@@ -200,8 +201,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Open: derive a zero-location " ++
-      "constraint from xi arithmetic. No current theorem implies RH.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
+      "derive a zero-location constraint from xi arithmetic; no current theorem implies RH.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -252,7 +253,7 @@ run_cmd do
       throwError "milestone has nonstandard axioms: {milestone.theoremName}: {unexpectedAxioms}"
 
   let statusJson := Json.mkObj [
-    ("schemaVersion", toJson 3),
+    ("schemaVersion", toJson 4),
     ("generator", .str "scripts/GenerateProjectStatus.lean"),
     ("leanVersion", .str Lean.versionString),
     ("compiledProjectModules", toJson moduleCount),
@@ -263,6 +264,7 @@ run_cmd do
       toJson placeholderDependentDeclarations.size),
     ("nonstandardTheoremAxioms", .arr #[]),
     ("rhImplied", .bool false),
+    ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
       "Cutoffs zero and one are proved. The exact finite entropy identity and its quadratic mass-error majorant remain available. Lean now proves the fixed-endpoint drift law E_endpoint(N+1)-E_endpoint(N)=D_N-log((N+1)/N)E_mass(N), with D_N nonnegative and E_endpoint(2)=4 sqrt(2)-log(2)-4 strictly positive. The resulting telescoping formula reduces the sufficient quadratic certificate to a cumulative block inequality for signed mass-error work. That block bound, exact entropy domination, and every RH-forcing rigidity step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),

@@ -143,6 +143,10 @@ abstractions.
    list in `scripts/GenerateProjectStatus.lean` when and only when a new
    theorem genuinely advances the displayed frontier, then regenerate the
    artifacts.
+   The generated panel is a theorem inventory, not a proximity meter: never
+   draw a causal edge between milestones unless a checked theorem proves that
+   implication, and label RH equivalences as reformulations rather than
+   progress on their open direction.
 9. Commit and push the complete slice. Wait for GitHub Actions on that exact
    commit SHA to finish successfully before beginning another slice.
 
