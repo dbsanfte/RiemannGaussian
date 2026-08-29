@@ -26,19 +26,18 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the local puncture theorem needed to extend the arithmetic
-Cauchy--Green identity across xi zeros. A reusable theorem shows that a
-simple-pole limit and eventual circle integrability force the shrinking-circle
-integral to converge to `2*pi*i` times the residue; it does not assume that
-the non-holomorphic heat weight is holomorphic.
+Lean now proves the one-puncture rectangular Cauchy--Green excision theorem
+for the actual non-holomorphic heat-weighted arithmetic response. Four
+zero-free rectangles are glued around a shrinking square, whose boundary is
+proved to recover `2*pi*i` times the exact multiplicity-weighted xi heat
+residue. Consequently the corresponding improper four-piece area integral
+has a rigorously determined limit; integrability through the pole and a limit
+interchange are not assumed.
 
-Applied to the actual moving heat-weighted pole-cleared response, every
-shifted xi-zero puncture recovers its exact multiplicity-weighted boundary
-heat coefficient. Lean also proves the simultaneous limit for every finite
-family of punctures. The next step is the finite punctured-rectangle
-Cauchy--Green excision, followed by the expanding half-strip and control of
-its boundary and bulk terms. No unconditional zero-location conclusion is
-yet proved.
+The next step is to assemble this checked base case for every finite set of
+zeros in a rectangle, then formulate strict off-axis quartet positivity and
+the global heat-rigidity closure theorem before expanding the half-strip. No
+unconditional zero-location conclusion is yet proved.
 
 ## Mathematical Program
 

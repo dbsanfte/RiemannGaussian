@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Finite families of xi punctures recover the exact boundary-heat residues"
-    lineOne := "finite xi punctures"
-    lineTwo := "exact circle residues"
+    label := "One xi puncture satisfies the exact improper rectangular Cauchy--Green identity"
+    lineOne := "one xi puncture"
+    lineTwo := "rectangular excision"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.tendsto_finset_sum_circleIntegral_suzukiChebyshevLaplaceBoundaryHeatWeightedResponse_selected
+      ``RiemannGaussian.tendsto_rectangularAreaIntegralOutsideCenteredSquare_suzukiChebyshevLaplaceBoundaryHeatWeightedResponse_selected
   }
 ]
 
@@ -275,13 +275,13 @@ run_cmd do
     ("rhImplied", .bool false),
     ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
-      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. After cancelling the apparent boundary pole, Lean constructs a zero-adaptive completed continuation across Re z=1/2 and pole-clears its residues to the exact multiplicities. Fixed-time arithmetic residues recover both the interior xi heat and its RH-equivalent boundary detector. In the shifted coordinate p=rho-1/2, Lean derives the smooth boundary heat kernel, its exact nonzero Cauchy--Green source, and an arithmetic area--boundary identity for the heat-weighted pole-cleared response on every zero-free rectangle. It now proves the actual moving weighted response has the exact local residue at each xi-zero puncture and that shrinking circle integrals, individually and for finite families, converge to the corresponding boundary-heat residues without assuming a holomorphic heat weight. Finite punctured-rectangle excision, the expanding half-strip, boundary and bulk control, the required A_N bound, and any unconditional zero-location constraint remain open."),
+      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. After cancelling the apparent boundary pole, Lean constructs a zero-adaptive completed continuation across Re z=1/2 and pole-clears its residues to the exact multiplicities. Fixed-time arithmetic residues recover both the interior xi heat and its RH-equivalent boundary detector. In the shifted coordinate p=rho-1/2, Lean derives the smooth boundary heat kernel, its exact nonzero Cauchy--Green source, and an arithmetic area--boundary identity for the heat-weighted pole-cleared response on every zero-free rectangle. Local circle limits recover the exact heat residues individually and for finite families. Lean now proves the one-puncture rectangular excision base case: four zero-free rectangles glue around a shrinking square, and the improper four-piece source integral converges to the outer boundary minus the exact residue without assuming integrability through the pole. Finite-divisor excision, quartet positivity, a global heat-rigidity closure theorem, the expanding half-strip, boundary and bulk control, and any unconditional zero-location constraint remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Assemble the verified local circle limits into a finite punctured-rectangle Cauchy--Green identity, pass to an expanding shifted half-strip, control the resulting arithmetic boundary and bulk terms, then prove a rigidity estimate—such as the exact A_N entropy bound—that forces an unconditional zero-location constraint")
+        "Extend the verified one-puncture rectangular excision to every finite divisor in a rectangle, package strict off-axis quartet positivity and a transparent global heat-rigidity closure theorem, then pass to an expanding shifted half-strip and prove the arithmetic boundary/bulk estimate that forces an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
