@@ -89,10 +89,15 @@ bounds for this single logarithmic average. Lean further proves
 `0 <= D(b,b+1) <= b^(-3/2)` for `b >= 1`, so the smooth drift series is
 summable and cumulative signed work minus `A_N+log(N)` converges to an
 explicit finite constant. The smooth term therefore cannot provide an
-unbounded margin. Proving the required bound for `A_N` is the open arithmetic
-task. These estimates are not RH and do not exclude a finite or sparse
-off-line divisor; a restatement, hidden limit interchange, or conditional
-implication is not a substitute.
+unbounded margin. Lean now extends the literal formula for the logarithmic
+average to every real endpoint `b >= 1`, proves each real logarithmic Mellin
+atom integrable, and evaluates its weighted integral as the corresponding
+von-Mangoldt Dirichlet term divided by `(sigma - 1/2)^2`; the square-root main
+term is exactly `4/(sigma-1)`. The sum-integral exchange and complete zeta
+logarithmic-derivative transform remain to be proved. Proving the required
+bound for `A_N` is the open arithmetic task. These estimates are not RH and
+do not exclude a finite or sparse off-line divisor; a restatement, hidden
+limit interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 

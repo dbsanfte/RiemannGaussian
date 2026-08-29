@@ -26,23 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the smooth term in the logarithmic-average work identity is
-uniformly bounded. For every `b >= 1`, the unit endpoint drift satisfies
+Lean now extends the literal weighted Chebyshev logarithmic-average formula
+from natural endpoints to every real `b >= 1`, with its prime prefix cut
+exactly at `floor(b)`. It also proves the required real Mellin atoms are
+integrable and evaluates them exactly. For `sigma > 1/2` and `n > 0`,
 
-`0 <= D(b, b + 1) <= b^(-3/2)`.
+`integral_n^infinity log(x/n) x^(-sigma-1/2) dx
+  = n^(-sigma+1/2) / (sigma-1/2)^2`.
 
-The natural drift series is therefore summable, its cumulative partial sums
-converge, and Lean derives the unconditional limit
-
-`cumulative_mass_work(N) - A_N - log(N)
-  -> -log(2) + 4 * sqrt(2) + sum_(j >= 0) D(j + 2, j + 3)`.
-
-Thus the smooth discretization correction cannot supply any unbounded margin:
-at large scale, signed work is exactly the weighted Chebyshev logarithmic
-average `A_N` plus `log(N)` and a convergent correction. Establishing the
-quantitative upper bound on `A_N` needed to dominate the entropy cost, and
-then deriving an unconditional zero-location constraint, remain open; no tail
-positivity or RH is claimed.
+After multiplication by `Lambda(n)/sqrt(n)`, Lean simplifies this to the
+von-Mangoldt Dirichlet term `Lambda(n) n^(-sigma)/(sigma-1/2)^2`. For
+`sigma > 1`, it separately proves that the square-root main term contributes
+exactly `4/(sigma-1)`. This is the checked local kernel behind Suzuki's
+transform criterion. The infinite sum-integral exchange, its identification
+with the zeta logarithmic derivative, the required bound on the logarithmic
+average, and every RH-forcing zero-location step remain open.
 
 ## Mathematical Program
 
