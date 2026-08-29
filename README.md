@@ -26,20 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now retains the oscillatory phase of the leading eta defect in a finite
-arithmetic approximation. For every cutoff `N` and every `0 < theta < 1`, the
-complete complex moment is exactly its first `N` support-interval moments plus
-the literal remaining support tail. Lean bounds that tail by
-`exp(-(1-theta)*sigma*log(2N+1))*m!/(theta*sigma)^(m+1)`.
+Lean now identifies every finite order-`m` moment prefix with `(-1)^m` times
+the corresponding derivative of the actual finite positive eta Laplace
+partition. It then forms the full complex completed partner residual between
+those finite derivatives at `sigma` and `1-sigma`, retaining phase, parity,
+completion factors, and conjugation.
 
-Subtracting this error from the finite-prefix norm gives a rigorous
-nonnegative lower certificate. These certificates converge to the exact
-nonzero leading-defect norm and are eventually strictly positive at every
-nontrivial zero. After completion weighting, the sequences at `sigma` and
-`1-sigma` converge to the same positive magnitude and obey the complementary
-first-gap upper constraints. What remains open is a uniform, tilt-separating
-inequality for the finite arithmetic prefixes strong enough to force
-`sigma = 1/2`; no current theorem implies RH.
+Exact infinite symmetry rewrites this finite residual entirely as the two
+discarded support tails. Lean bounds its norm by the sum of the two explicit
+completion-weighted tail envelopes and proves that the complex residual tends
+to zero. This gives a precise finite arithmetic rigidity target, but the
+decay is also forced for a hypothetical off-critical zero. What remains open
+is a uniform arithmetic phase obstruction showing that such decay cannot
+occur away from `sigma = 1/2`; no current theorem implies RH.
 
 ## Mathematical Program
 

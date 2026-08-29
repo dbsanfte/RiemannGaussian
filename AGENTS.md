@@ -444,6 +444,15 @@ zeros converge to the same positive magnitude while satisfying the opposite
 first-gap upper bounds. The remaining hard input is now a uniform
 tilt-separating estimate on these finite phase-sensitive prefixes; convergence
 alone is compatible with an off-critical pair.
+Lean now proves those finite order-`m` prefixes are signed iterated derivatives
+of the genuine finite positive eta Laplace partition. It defines their full
+complex completed partner residual, including parity and conjugation, and
+rewrites it exactly as the two discarded support-tail errors. Its norm is
+bounded by the sum of the two explicit completion-weighted `theta`-split tail
+envelopes, so the complex residual tends to zero. This is the phase-sensitive
+finite arithmetic target; the next hard input must obstruct that decay
+uniformly away from `sigma=1/2`. The proved decay itself is compatible with a
+hypothetical off-critical zero and is not such an obstruction.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

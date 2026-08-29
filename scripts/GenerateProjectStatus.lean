@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Finite phase-sensitive eta lower certificates converge at both complementary tilts to the common completed defect"
-    lineOne := "finite eta bounds"
-    lineTwo := "common paired limit"
+    label := "The finite completed eta derivative residual has an explicit two-tail bound and tends to zero"
+    lineOne := "completed eta phase"
+    lineTwo := "residual -> 0"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.tendsto_pairedEtaCompletedLeadingLogFiniteLower_both
+      ``RiemannGaussian.tendsto_pairedEtaCompletedLeadingLogFinitePartnerResidual_zero
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "a uniform finite-prefix inequality that separates complementary off-line tilts.</text>\n" ++
+      "an arithmetic phase obstruction to off-line completed-residual decay.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -334,16 +334,20 @@ run_cmd do
         "exp(-(1-theta)sigma log(2N+1)) n!/(theta sigma)^(n+1). The resulting " ++
         "nonnegative finite lower certificates converge to the exact nonzero defect " ++
         "norm and are eventually positive. At complementary zeros their completed " ++
-        "versions converge to the same positive magnitude. No uniform finite-prefix " ++
-        "inequality forcing the horizontal displacement to vanish is proved, " ++
+        "versions converge to the same positive magnitude. Each finite prefix is " ++
+        "also a signed derivative of the genuine finite eta Laplace partition. Lean " ++
+        "forms the full complex completed partner residual, rewrites it exactly as " ++
+        "the two discarded tails, bounds it by their completion-weighted envelopes, " ++
+        "and proves that it tends to zero. No arithmetic phase obstruction forcing " ++
+        "the horizontal displacement to vanish is proved, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove a uniform tilt-separating inequality for the finite phase-sensitive " ++
-        "eta moment prefixes that excludes complementary off-critical tilts, " ++
+        "Prove an arithmetic phase obstruction preventing the finite completed eta " ++
+        "derivative residual from tending to zero at complementary off-critical tilts, " ++
         "or force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),
