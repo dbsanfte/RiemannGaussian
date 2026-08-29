@@ -24,21 +24,21 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now splits every remaining Suzuki first-tail inequality exactly into a
-closed elementary contribution and a single centered prime-number-theorem
-error functional. The deterministic term is
+The PNT-error test kernel is now proved nonnegative on every unresolved Suzuki
+prefix. Lean derives `Chebyshev.psi(x) >= x / 2` for `x >= 5`, the weighted
+mass bound `sqrt(b) - sqrt(5) / 2`, and the source-exact Archimedean estimate
+`A'(t) < 2 * exp(t / 2) - 1`. Their comparison proves that every canonical
+Legendre point satisfies `r >= log(b) - 2`. Hence the verified kernel
 
-`2 * sqrt(b) * (log(b) - r - 2) + r + 4`,
+`x^(-3/2) * (1 - (log(x) - r) / 2)`
 
-while the remainder is a boundary term plus an integral of
-`Chebyshev.psi(x) - x` against the verified kernel
-`x^(-3/2) * (1 - (log(x) - r) / 2)`. The theorem
-`riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevPNTErrorLowerBound`
-identifies tail positivity with the corresponding uniform lower bound at all
-canonical finite-prefix Legendre points. Cutoffs zero and one are already
-proved. The uniform PNT-error estimate remains open, and even its proof would
-still require a separate arithmetic-to-zero-location rigidity theorem on the
-route to RH.
+is nonnegative and its Abel primitive is monotone throughout every complete
+prefix interval. The terminal theorem
+`riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevPNTPositiveKernelMoment`
+now makes tail positivity exactly a uniform one-sided moment bound for
+`Chebyshev.psi(x) - x` against this positive kernel. That bound remains open,
+as does every subsequent arithmetic-to-zero-location rigidity step; this is
+not a proof of tail positivity or RH.
 
 ## Mathematical Program
 

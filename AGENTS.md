@@ -34,12 +34,16 @@ that its canonical transport point solves the literal Archimedean
 slope-matching equation, and rewrites the open gap as the Archimedean value
 plus a centered Chebyshev log-moment. Lean now evaluates the continuous
 `psi(x) = x` part of that moment in closed form and isolates the remainder as
-one explicit boundary term and signed integral against `psi(x) - x`. The
-required uniform lower bound for that PNT-error family, and the sublinear law,
-are not RH and do not exclude a finite or sparse off-line divisor. The missing
-theorem must derive a genuine global zero-location constraint from xi's
-arithmetic or entire-function structure; a restatement, hidden limit
-interchange, or conditional implication is not a substitute.
+one explicit boundary term and signed integral against `psi(x) - x`. Exact
+Chebyshev mass and Archimedean slope bounds now locate every canonical center
+at `r >= log N - 2`; consequently the elementary derivative kernel is
+nonnegative and the centered Abel kernel is monotone on every unresolved
+prefix. The open arithmetic statement is therefore a uniform one-sided
+PNT-error moment bound against a positive kernel. That bound, and the
+sublinear law, are not RH and do not exclude a finite or sparse off-line
+divisor. The missing theorem must derive a genuine global zero-location
+constraint from xi's arithmetic or entire-function structure; a restatement,
+hidden limit interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 

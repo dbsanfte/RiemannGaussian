@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
   },
   {
-    label := "First-tail frontier is an exact centered Chebyshev PNT-error lower bound"
+    label := "First-tail frontier is an exact positive-kernel Chebyshev PNT-error moment bound"
     lineOne := "Suzuki / PNT"
-    lineTwo := "error frontier"
+    lineTwo := "positive kernel"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevPNTErrorLowerBound
+      ``RiemannGaussian.riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevPNTPositiveKernelMoment
   }
 ]
 
@@ -264,13 +264,13 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("rhImplied", .bool false),
     ("statusNote", .str
-      "Cutoffs zero and one are proved. For every remaining prefix, the continuous Chebyshev contribution is evaluated exactly and the open inequality is a lower bound on one explicit signed integral against psi(x)-x plus its boundary term. Proving that uniform PNT-error bound and every RH-forcing rigidity step remain open."),
+      "Cutoffs zero and one are proved. Every canonical Legendre center now satisfies r >= log N - 2, so the explicit PNT-error kernel is nonnegative and monotone on every remaining prefix. The open inequality is exactly a one-sided upper moment bound against that positive kernel. Proving it and every RH-forcing rigidity step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Prove the exact uniform centered PNT-error lower bound at all finite-prefix Legendre points, then derive an unconditional zero-location constraint")
+        "Prove the uniform one-sided Chebyshev PNT-error moment bound against the verified positive kernel, then derive an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
