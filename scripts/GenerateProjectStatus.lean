@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The literal complex arithmetic Laplace transform recovers the spectral-xi logarithmic derivative throughout Re z > 1/2"
-    lineOne := "Complex arithmetic Laplace"
-    lineTwo := "= spectral xi on Re z > 1/2"
+    label := "At every nonzero shifted zeta-zero coordinate, the completed arithmetic Laplace continuation has residue m_rho / p_rho^2"
+    lineOne := "Completed arithmetic"
+    lineTwo := "xi-zero residues"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.xiSpectralNegativeLogDerivative_neg_I_mul_eq_complexLaplaceTransform_of_mem
+      ``RiemannGaussian.tendsto_suzukiChebyshevLaplaceZeroCoordinate_mul_completedContinuation
   }
 ]
 
@@ -275,13 +275,13 @@ run_cmd do
     ("rhImplied", .bool false),
     ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
-      "Cutoffs zero and one are proved. For Suzuki's logarithmic-average error A_N, Lean proves E_endpoint(N)=-A_N-log(N)-4 and rewrites the exact entropy and sufficient quadratic conditions as upper bounds for A_N. Every unit smooth drift satisfies 0 <= D(b,b+1) <= b^(-3/2), so signed mass-error work minus A_N minus log(N) converges to an explicit finite constant. Lean derives the real Mellin transform from absolutely summable supported atoms and an infinite sum-integral exchange. After the global substitution x=exp(t), Lean proves genuine complex integrability, differentiation under the integral, and holomorphy of the literal arithmetic Laplace transform on Re z > 1/2. Equality with the zeta response on the real ray extends by the identity theorem throughout that half-plane, yielding the genuine spectral-xi negative logarithmic derivative at every corresponding complex spectral point. Continuation across Re z=1/2, an arithmetic, Tauberian, or entire-function rigidity theorem, the required upper bound for A_N, and every RH-forcing zero-location step remain open."),
+      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. Lean now cancels the apparent boundary pole and constructs a zero-adaptive completed continuation on an open domain containing Re z >= 1/2 and reaching Re z < 1/2. It equals the literal transform where that integral converges, recovers spectral xi throughout its holomorphic domain, and has residue m_rho/(rho-1/2)^2 at each nonzero shifted zeta-zero coordinate. No integral convergence is asserted in the continued region. Complete fixed-proper-time residue extraction, the required upper bound for A_N, arithmetic rigidity, and every RH-forcing zero-location step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Prove the verified quantitative upper bound for the weighted Chebyshev logarithmic average strongly enough to dominate the exact entropy cost, then derive an unconditional zero-location constraint")
+        "Extract the complete fixed-proper-time heat sum from the proved arithmetic continuation and residues, then prove an arithmetic rigidity estimate—such as the exact A_N entropy bound—that forces an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

@@ -105,12 +105,18 @@ Laplace transform on `Re z > 1/2`. It proves integrability of the parameter
 derivative, differentiation under the infinite integral, and holomorphy. The
 real-ray zeta response extends by the identity theorem throughout that same
 half-plane, where the transform recovers the genuine spectral-xi negative
-logarithmic derivative at every corresponding complex spectral point.
-Extending this identity across `Re z=1/2` by a proved continuation, Tauberian,
-rigidity, or sign theorem and proving the required bound for `A_N` are the
-open arithmetic tasks. These estimates are not RH and do not exclude a
-finite or sparse off-line divisor; a restatement, hidden limit interchange,
-or conditional implication is not a substitute.
+logarithmic derivative at every corresponding complex spectral point. Lean
+now cancels the apparent pole at `z=1/2` and constructs a zero-adaptive
+completed continuation whose open holomorphy domain contains the closed safe
+half-plane and genuinely crosses to `Re z<1/2`. It agrees with the literal
+integral on `Re z>1/2`, recovers spectral xi throughout its holomorphic
+domain, and has residue `m_rho/(rho-1/2)^2` at every nonzero shifted zeta-zero
+coordinate. The original integral is not asserted to converge in the
+continued region. Extracting the complete fixed-proper-time heat sum from
+these residues, proving the required bound for `A_N`, and deriving a global
+zero-location constraint are the open arithmetic tasks. These estimates are
+not RH and do not exclude a finite or sparse off-line divisor; a restatement,
+hidden limit interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 

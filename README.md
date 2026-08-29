@@ -26,26 +26,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now constructs the literal complex Laplace transform of Suzuki's
-weighted Chebyshev logarithmic-average signal,
-`T(z) = integral_0^infinity -A(exp(t)) exp(-z t) dt`. It proves genuine
-integrability of both the integrand and its parameter derivative, justifies
-differentiation under the infinite integral, and establishes that `T` is
-holomorphic on `Re z > 1/2`.
+Lean now cancels the apparent pole at `z = 1/2` in the verified complex
+Suzuki Laplace response and defines the resulting completed continuation in
+terms of `logDeriv riemannXi`, the elementary completed-zeta terms, and
+`digamma`. Its zero-adaptive holomorphy domain is proved open, contains every
+point with `Re z >= 1/2`, and contains a point with `Re z < 1/2`. On the
+original absolute-convergence half-plane, this continuation is exactly the
+literal arithmetic Laplace integral.
 
-On the real safe ray, the earlier Mellin calculation gives
-`T(z) = (zeta'/zeta)(z+1/2)/z^2 + 4/(z-1/2)`. Lean now verifies that the
-right side is holomorphic on the same half-plane and applies the complex
-identity theorem at the accumulating real point `z = 1`, proving this formula
-for every complex `z` with `Re z > 1/2`. After exposing the completed-zeta
-pole, `log(pi)`, and digamma correction, it follows there that
+For a nontrivial zeta zero `rho`, let `p_rho = rho - 1/2`. Whenever
+`p_rho ≠ 0`, Lean proves the local residue formula
+`(z-p_rho) C(z) -> m_rho / p_rho^2`, where `m_rho` is the checked analytic
+zero multiplicity. Lean also recovers the spectral-xi logarithmic derivative
+from `C` throughout its holomorphic domain.
 
-`XiNeg(-i z) = -z^2 (T(z) - 4/(z-1/2)) - C(z+1/2)`.
-
-This closes the real-to-complex continuation inside the literal transform's
-absolute-convergence domain. It does not continue across `Re z = 1/2`, bound
-the transform at that boundary, or impose any unconditional zero-location
-constraint; those remain the conjecture-strength frontier.
+This is a proved arithmetic-to-spectral meromorphic bridge across the former
+boundary, not convergence of the literal integral there. A contour or
+summation theorem extracting the complete fixed-proper-time heat sum from
+these residues—and, ultimately, an arithmetic rigidity theorem forcing the
+required zero-location constraint—remains open.
 
 ## Mathematical Program
 
