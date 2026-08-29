@@ -26,19 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves that the termwise shrinking-square construction and the
-literal common-ball geometry converge to the same ordinary through-divisor
-planar area. The resulting parameter-free finite Cauchy--Green theorem states
-that this genuine arithmetic area equals the actual outer boundary integral
-minus the complete finite multiplicity-weighted heat-residue sum. No square
-radius, ball radius, or analytic regularization witness remains in that public
-identity.
+Lean now proves an asymmetric finite Cauchy--Green identity on every eligible
+rectangle with right edge strictly left of the critical line. Its arithmetic
+outer-boundary minus through-divisor bulk functional equals `2*pi*i` times
+exactly the selected finite xi heat-residue sum. Its real part is nonnegative,
+is strictly positive whenever its window contains an off-axis zero, and the
+sum converges at positive proper time to the existing RH-equivalent
+boundary-heat total.
 
-This closes the finite symmetric excision obligation. The next frontier is a
-selected-half-strip identity retaining only `Re (rho - 1/2) < 0`, where the
-existing heat residue is nonnegative and an off-axis zero contributes
-strictly positively, followed by a global rigidity theorem and expanding
-boundary/bulk control. No unconditional zero-location conclusion is yet
+This is the first checked arithmetic identity that preserves the positive
+off-axis half-divisor instead of allowing symmetric cancellation. The next
+frontier is an admissible expanding-half-strip theorem and unconditional
+boundary/bulk estimates strong enough to force the limiting functional to
+vanish. No such estimate or unconditional zero-location conclusion is yet
 proved.
 
 ## Mathematical Program

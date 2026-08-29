@@ -148,10 +148,14 @@ shrinking-square approximation with that same ordinary through-divisor limit.
 The resulting parameter-free finite Cauchy--Green identity states that the
 actual arithmetic area equals the outer boundary minus the complete finite
 multiplicity-weighted heat-residue sum; the literal common-ball integral
-converges to this value. Retaining the selected off-axis half of the divisor
-in a finite identity, connecting its positive residue sum to the existing RH
-detector, packaging an honest global-rigidity closure theorem, passing to an
-expanding half-strip, and controlling its boundary and bulk terms are open.
+converges to this value. Lean now also retains exactly the selected off-axis
+half-divisor on every eligible negative-real rectangle. The real part of the
+selected finite heat sum is nonnegative and is strictly positive when its
+window contains an off-axis zero; the sum converges to the existing
+RH-equivalent boundary-heat total and equals an explicit arithmetic
+boundary-minus-bulk functional. Constructing
+admissible expanding half-strips and proving unconditional boundary/bulk
+estimates that force this functional to vanish remain open.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.
