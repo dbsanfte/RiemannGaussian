@@ -26,20 +26,18 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now resolves every logarithmic-time eta moment into its support and
-omitted-gap pieces. The complete positive-half-line moment is proved exactly:
-`integral_0^infinity t^n * exp(-s*t) dt = n!/s^(n+1)` for `Re(s) > 0`.
-All complex integrability, differentiation under the integral, and measure
-decomposition steps are checked in Lean.
+Lean now writes every eta gap moment as an absolutely convergent sum over the
+actual omitted intervals `(log(2n+2), log(2n+3)]`. It proves the full positive
+real moment is `n!/sigma^(n+1)` and bounds the complex support and gap moments
+by this positive envelope.
 
-At a nontrivial zero of arbitrary multiplicity `m`, the explicit arithmetic
-gap moment equals this elementary full-half-line value at every order `k < m`
-and differs for the first time at `k = m`. Lean also rewrites the completed
-partner symmetry as an exact relation between these first nonzero gap-moment
-defects at `rho` and `1-conj(rho)`. Thus the open problem is now a concrete
-inequality for integrals over the explicit omitted logarithmic intervals.
-No such inequality is yet proved, and the current results remain compatible
-with off-critical zeros.
+For the first nonzero defect at a zero of multiplicity `m`, Lean obtains a
+strict explicit saving from the first omitted interval `(log 2, log 3]`:
+the defect norm is at most the full factorial bound minus
+`(log 3-log 2)*(log 2)^m*exp(-sigma*log 3)`. This is the first checked
+quantitative estimate on the exact arithmetic defect frontier. It is still
+one-sided; a complementary-tilt comparison or matching lower bound strong
+enough to force `sigma = 1/2` remains open, and no current theorem implies RH.
 
 ## Mathematical Program
 

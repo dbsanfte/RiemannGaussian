@@ -420,6 +420,13 @@ partner identity is checked as an exact relation between these first nonzero
 gap-moment defects. The next hard input must prove an independent quantitative
 inequality for those explicit gap-interval defects that cannot hold at
 complementary off-critical tilts.
+Lean now expands every gap moment as an absolutely convergent sum over the
+literal intervals `(log(2n+2),log(2n+3)]`. The positive real envelope is
+computed as `n!/sigma^(n+1)`, and the first gap gives the strict saving
+`(log 3-log 2)*(log 2)^n*exp(-sigma*log 3)`. This yields a checked one-sided
+upper bound for the first nonzero defect at every zeta zero. It is not the
+missing rigidity: the next hard input is a complementary-tilt comparison or
+lower bound that combines with this saving to force `sigma=1/2`.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
