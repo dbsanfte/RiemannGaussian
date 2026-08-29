@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
   },
   {
-    label := "Canonical Suzuki gap is equivalent to a logarithmic-average entropy bound"
-    lineOne := "Suzuki gap iff"
-    lineTwo := "log-average bound"
+    label := "Smooth endpoint drift is summable and work is asymptotic to the logarithmic average plus log N"
+    lineOne := "signed work - A_N"
+    lineTwo := "- log N converges"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.suzukiFirstTailResetTransportGap_succ_nonnegative_iff_logAverage_entropy_bound
+      ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   }
 ]
 
@@ -266,7 +266,7 @@ run_cmd do
     ("rhImplied", .bool false),
     ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
-      "Cutoffs zero and one are proved. For Suzuki's logarithmic-average error A_N, Lean proves E_endpoint(N)=-A_N-log(N)-4 and identifies the cumulative signed mass-error work exactly as A_N+log(N)-log(2)+4 sqrt(2)+sum D_j, where every smooth drift D_j is nonnegative. The exact entropy condition and its sufficient quadratic majorant are now explicit quantitative upper bounds for A_N. Proving either bound uniformly, and every RH-forcing zero-location step, remain open."),
+      "Cutoffs zero and one are proved. For Suzuki's logarithmic-average error A_N, Lean proves E_endpoint(N)=-A_N-log(N)-4 and rewrites the exact entropy and sufficient quadratic conditions as upper bounds for A_N. Every unit smooth drift now satisfies 0 <= D(b,b+1) <= b^(-3/2), so the drift series is summable and cumulative smooth drift is uniformly bounded. Consequently signed mass-error work minus A_N minus log(N) converges to an explicit finite constant. Proving the required upper bound for A_N, and every RH-forcing zero-location step, remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),

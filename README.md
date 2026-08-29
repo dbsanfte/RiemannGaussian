@@ -26,26 +26,23 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now puts the endpoint and signed-work frontiers into Suzuki's weighted
-Chebyshev logarithmic-average coordinate
+Lean now proves the smooth term in the logarithmic-average work identity is
+uniformly bounded. For every `b >= 1`, the unit endpoint drift satisfies
 
-`A_N = sum_(n <= N) Lambda(n) / sqrt(n) * log(N/n) - 4 * sqrt(N)`.
+`0 <= D(b, b + 1) <= b^(-3/2)`.
 
-It proves the exact identities
+The natural drift series is therefore summable, its cumulative partial sums
+converge, and Lean derives the unconditional limit
 
-`E_endpoint(N) = -A_N - log(N) - 4`
+`cumulative_mass_work(N) - A_N - log(N)
+  -> -log(2) + 4 * sqrt(2) + sum_(j >= 0) D(j + 2, j + 3)`.
 
-and
-
-`cumulative_mass_work(N)
-  = A_N + log(N) - log(2) + 4 * sqrt(2) + cumulative_smooth_drift(N)`.
-
-Thus cumulative signed work and the logarithmic average are the same
-arithmetic obstruction in different coordinates. Lean also rewrites both the
-exact entropy condition and its sufficient quadratic majorant as quantitative
-upper bounds on `A_N`. Establishing either bound uniformly, and then deriving
-an unconditional zero-location constraint, remain open; no tail positivity or
-RH is claimed.
+Thus the smooth discretization correction cannot supply any unbounded margin:
+at large scale, signed work is exactly the weighted Chebyshev logarithmic
+average `A_N` plus `log(N)` and a convergent correction. Establishing the
+quantitative upper bound on `A_N` needed to dominate the entropy cost, and
+then deriving an unconditional zero-location constraint, remain open; no tail
+positivity or RH is claimed.
 
 ## Mathematical Program
 
