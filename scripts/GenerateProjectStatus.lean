@@ -264,13 +264,13 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("rhImplied", .bool false),
     ("statusNote", .str
-      "Cutoffs zero and one are proved. The centered PNT remainder is bounded by 70 sqrt N. The smooth baseline now splits exactly into a nonnegative exponential convexity reserve and a logarithmic lower-order term which is o(sqrt N). Thus the normalized literal gap equals 4(exp(delta_N/2)-1-delta_N/2) plus the normalized centered PNT remainder plus o(1). Controlling the arithmetic sign against this reserve and every RH-forcing rigidity step remain open."),
+      "Cutoffs zero and one are proved. The normalized literal gap equals 4(exp(delta_N/2)-1-delta_N/2) plus the normalized centered PNT remainder plus o(1). The remainder is now exactly E_log(N)-r_N E_mass(N) for weighted Chebyshev log-moment and mass errors from the same arithmetic measure, while E_mass(N)/sqrt N equals 2(exp(delta_N/2)-1)+o(1). A joint sign or covariance estimate protecting the convex reserve and every RH-forcing rigidity step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Prove the normalized centered PNT remainder cannot undercut the verified convex reserve, uniformly enough to make every canonical gap nonnegative, then derive an unconditional zero-location constraint")
+        "Exploit the verified joint mass and log-moment coupling to prove the centered arithmetic remainder cannot undercut the convex reserve, uniformly enough to make every canonical gap nonnegative, then derive an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

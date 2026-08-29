@@ -24,18 +24,21 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now identifies the dimensionless canonical Suzuki frontier. Writing
-`delta_N = r_N - log(N)`, it proves
+Lean now couples the canonical Suzuki center to the two arithmetic statistics
+that form its PNT remainder. If `E_mass(N)` and `E_log(N)` are the weighted
+Chebyshev mass and log-moment errors, and `delta_N = r_N - log(N)`, Lean proves
 
-`gap_N / sqrt(N) - 4 * (exp(delta_N / 2) - 1 - delta_N / 2)
-  - PNTError(r_N, N) / sqrt(N) -> 0`.
+`PNTError(r_N,N) = E_log(N) - r_N * E_mass(N)`
 
-The exponential term is proved nonnegative. All omitted source-exact smooth
-terms are `o(sqrt(N))`, with the finite lower bound
-`gap_N >= reserve_N + PNTError(r_N,N) - (15/8)log(N) - 107/8`.
-Thus the hard step is now explicitly a sign-sensitive lower bound for the
-normalized centered arithmetic remainder against the convex reserve. No such
-bound, tail positivity, or RH is claimed.
+exactly, and
+
+`E_mass(N) / sqrt(N) - 2 * (exp(delta_N / 2) - 1) -> 0`.
+
+Together with the already checked convex-plus-PNT asymptotic for the normalized
+gap, this shows that the displacement, convex reserve, and centered remainder
+are driven by the same weighted arithmetic measure. The hard step is a joint
+sign or covariance estimate for its mass and log-moment errors strong enough
+to protect the reserve. No such estimate, tail positivity, or RH is claimed.
 
 ## Mathematical Program
 

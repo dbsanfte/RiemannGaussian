@@ -58,10 +58,14 @@ by an explicit logarithmic envelope and is `o(sqrt N)`. Hence Lean proves the
 dimensionless asymptotic frontier
 `gap_N / sqrt N = 4 * (exp(delta_N/2) - 1 - delta_N/2) +
 PNTError(r_N,N) / sqrt N + o(1)`, where `delta_N = r_N - log N`.
-The missing arithmetic theorem must control the sign of that normalized PNT
-remainder against the convex reserve and ultimately derive a genuine global
-zero-location constraint. These magnitude estimates are not RH and do not
-exclude a finite or sparse off-line divisor; a restatement, hidden limit
+The center equation is now coupled to the same arithmetic measure: if
+`E_mass` and `E_log` are its weighted mass and log-moment errors, Lean proves
+exactly `PNTError(r_N,N) = E_log(N) - r_N * E_mass(N)` and proves
+`E_mass(N) / sqrt N = 2 * (exp(delta_N/2) - 1) + o(1)`. The missing arithmetic
+theorem must exploit this joint mass--moment structure to control the sign of
+the normalized PNT remainder against the convex reserve and ultimately derive
+a genuine global zero-location constraint. These estimates are not RH and do
+not exclude a finite or sparse off-line divisor; a restatement, hidden limit
 interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
