@@ -26,21 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now differentiates the exact xi and heat-kernel reflection symmetries and
-proves that the complete pairing `grad K · grad U` is odd in the shifted real
-coordinate. A checked two-dimensional change of variables reflects both
-vertical sides and the whole bulk. Lean separately proves genuine planar
-integrability through the complete finite xi divisor on the reflected
-rectangles, so this is an ordinary set-integral identity rather than a formal
-or punctured substitution.
+Lean now extends the paired Dirichlet-eta factorization from the upper-right
+quadrant to every point with `Re s > 0`, except `s = 1`. Conjugation proves
+the lower-half identity term by term, while an explicit continuity and
+closure argument reaches the real axis without assuming a boundary value.
 
-At every finite stage, the live detector is therefore an exact
-boundary-plus-gradient functional wholly inside `1/2 < Re s < 1`. Its inner
-edge tends to `1/2` from above, its outer edge tends to `1` from below, and the
-functional retains the unnormalized limit to `2*pi` times the nonnegative xi
-detector. This is a domain reduction, not a decay theorem: the strip remains
-outside the absolute Dirichlet-series region, and an arithmetic estimate that
-retains its singular zero masses is still the open rigidity step.
+Consequently, at every point of the live region `1/2 < Re s < 1`, an
+absolutely convergent paired arithmetic series sums exactly to
+`(1 - 2 * 2^(-s)) * zeta(s)`. Lean also proves that the elementary factor
+cannot vanish in this strip, so the series retains exactly the zeta divisor.
+This is the first convergent arithmetic representative placed throughout the
+new positive-half-strip frontier. It is not a zero-free estimate; deriving a
+divisor-aware bound strong enough to force the detector limit to vanish
+remains the open rigidity problem.
 
 ## Mathematical Program
 

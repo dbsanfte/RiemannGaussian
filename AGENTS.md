@@ -220,6 +220,10 @@ integrability proved on the positive rectangles. Thus every finite live
 scalar is an exact boundary-plus-gradient functional wholly in actual xi
 coordinates `1/2 < Re s < 1`; its inner edge tends to `1/2` from above and its
 outer edge to `1` from below. No decay in that open strip has been proved.
+Lean now also removes the upper-quadrant restriction from the existing paired
+Dirichlet-eta construction. On every point of `1/2 < Re s < 1`, its absolutely
+convergent paired series equals `(1-2*2^(-s))*zeta(s)`, the elementary factor
+is nonzero, and the paired series therefore retains exactly the zeta divisor.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
