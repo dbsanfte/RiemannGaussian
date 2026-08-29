@@ -26,19 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Starting from the one fixed positive paired-eta measure, Lean now derives a
-direct unconditional zero-location inequality. For every nontrivial zeta zero
-`rho`, it proves
+Lean now strengthens the first direct eta-measure zero restriction by retaining
+the quadratic cosine remainder and the exact second exponential moment. For
+every nontrivial zeta zero `rho`, it proves both
 
-`rho.re * (1 - exp (-rho.re * log 2)) <= |rho.im|`.
+`rho.re^2 * (1 - exp (-rho.re * log 2)) <= rho.im^2`
 
-The proof uses the measure's full first interval `(0, log 2]`, its domination
-by Lebesgue measure on the positive half-line, the exact first exponential
-moment, and the zero's rigorously established cosine cancellation. In
-particular, Lean excludes real nontrivial zeta zeros from this arithmetic
-measure alone. The estimate is numerically weak and does not force
-`rho.re = 1/2`; the frontier is to strengthen this first direct constraint
-into genuine horizontal rigidity.
+and its square-root form
+
+`rho.re * sqrt (1 - exp (-rho.re * log 2)) <= |rho.im|`.
+
+Lean also proves that this threshold is strictly stronger throughout the
+positive half-plane than the preceding first-moment bound. The argument still
+uses only the fixed positive arithmetic measure and exact cancellation. It is
+a genuine unconditional improvement, but remains a weak vertical exclusion;
+the open frontier is to extract horizontal rigidity forcing `rho.re = 1/2`.
 
 ## Mathematical Program
 

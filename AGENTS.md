@@ -296,6 +296,12 @@ Lipschitz estimate for cosine turns exact cancellation into
 zero. This unconditionally excludes real nontrivial zeros, but is far too weak
 to force the critical line. The live task is to exploit more of the interval
 arithmetic than this first-moment bound retains.
+Lean now retains the quadratic cosine remainder and the complete second
+exponential moment. It proves the strictly stronger threshold
+`rho.re * sqrt (1 - exp (-rho.re * log 2)) <= |rho.im|`, together with its
+equivalent squared form, at every nontrivial zeta zero. This is verified direct
+progress beyond the first-moment estimate, but it remains vertical rather than
+horizontal and therefore gives no approach to `rho.re = 1/2` by itself.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
