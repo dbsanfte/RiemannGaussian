@@ -26,20 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves that the filtered heat sums on the genuine near-edge
-half-strip exhaustion converge to the complete RH-equivalent xi heat detector.
-The proof does not assume nested contours: every fixed upper off-axis zero is
-shown to enter eventually, non-upper zeros contribute identically zero, and
-the already proved absolute summability of the complete residue series gives
-a uniform dominator. Dominated convergence then closes the global limit.
+Lean now splits the genuine near-edge arithmetic functional into five named
+terms: the oriented bottom and top horizontal sides, the near-critical-line
+and near-`Re p=-1/2` vertical sides, and the Cauchy--Green bulk. Lean proves
+their exact signed combination equals `2*pi*i` times the filtered selected
+heat-residue sum at every finite stage.
 
-Consequently, the actual arithmetic boundary-minus-bulk functional on
-rectangles whose sides tend to `Re p=-1/2`, `Re p=0`, and imaginary height
-infinity converges exactly to `2*pi*i` times the complete detector. This is a
-global arithmetic-spectral identity, not a zero-location result. The next
-frontier is to decompose and estimate its four boundary sides and bulk term,
-then prove the still-open unconditional rigidity forcing the nonnegative
-detector to vanish.
+The decomposed functional has identically zero real part. Its imaginary part
+is nonnegative, becomes strictly positive whenever a selected off-axis zero
+is present, and converges without height normalization to `2*pi` times the
+complete RH-equivalent xi heat detector. This preserves sensitivity to even
+one fixed off-axis zero. No individual side or bulk decay estimate is yet
+proved; obtaining estimates strong enough to force this absolute scalar to
+vanish is the still-open arithmetic rigidity frontier.
 
 ## Mathematical Program
 
