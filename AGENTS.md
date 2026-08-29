@@ -288,6 +288,14 @@ zero of this one infinite positive-measure transform, and both of its complete
 tilted Fourier moments vanish there. The live zero-location problem is now
 literal rigidity of this explicit arithmetic measure, not passage from finite
 roots to a limiting transform.
+Lean now extracts the first direct zero-location inequality from that fixed
+measure. The first interval gives an explicit tilted-mass lower bound, measure
+domination gives the exact complete first-moment upper bound, and the
+Lipschitz estimate for cosine turns exact cancellation into
+`rho.re * (1 - exp (-rho.re * log 2)) <= |rho.im|` for every nontrivial zeta
+zero. This unconditionally excludes real nontrivial zeros, but is far too weak
+to force the critical line. The live task is to exploit more of the interval
+arithmetic than this first-moment bound retains.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

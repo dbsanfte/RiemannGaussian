@@ -26,17 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now constructs one fixed positive measure by restricting Lebesgue measure
-to the disjoint intervals `(log(2n+1), log(2n+2)]`. On the entire half-plane
-`Re s > 0`, Lean proves the complex exponential genuinely integrable against
-this measure and identifies its Laplace transform exactly with the full paired
-eta function divided by `s`, hence with the literal eta factor times zeta.
+Starting from the one fixed positive paired-eta measure, Lean now derives a
+direct unconditional zero-location inequality. For every nontrivial zeta zero
+`rho`, it proves
 
-Consequently every nontrivial zeta zero is an exact zero of this single
-infinite positive-measure transform—not merely a limit of finite models. Its
-complete exponentially tilted cosine and sine moments both vanish exactly at
-every such zero. The open frontier is now a rigidity theorem for this explicit
-arithmetic measure strong enough to force the zero's real part to `1/2`.
+`rho.re * (1 - exp (-rho.re * log 2)) <= |rho.im|`.
+
+The proof uses the measure's full first interval `(0, log 2]`, its domination
+by Lebesgue measure on the positive half-line, the exact first exponential
+moment, and the zero's rigorously established cosine cancellation. In
+particular, Lean excludes real nontrivial zeta zeros from this arithmetic
+measure alone. The estimate is numerically weak and does not force
+`rho.re = 1/2`; the frontier is to strengthen this first direct constraint
+into genuine horizontal rigidity.
 
 ## Mathematical Program
 

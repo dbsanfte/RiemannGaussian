@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Every zeta zero is an exact zero of one fixed infinite positive eta Laplace measure, with both Fourier moments zero"
-    lineOne := "fixed eta measure"
-    lineTwo := "moments vanish at zeros"
-    role := "bridge"
+    label := "The fixed positive eta measure gives a direct unconditional vertical zero-exclusion inequality"
+    lineOne := "fixed eta rigidity"
+    lineTwo := "direct zero inequality"
+    role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTiltedMoments_eq_zero_of_nontrivialZetaZero
+      ``RiemannGaussian.nontrivialZetaZero_etaMeasure_vertical_exclusion
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "zero-location rigidity for the fixed positive eta measure; no current theorem implies RH.</text>\n" ++
+      "strong horizontal rigidity for the fixed positive eta measure; no current theorem implies RH.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -282,10 +282,10 @@ run_cmd do
       ("status", .str "open"),
       ("target", .str (
         "Derive an unconditional divisor-aware arithmetic rigidity estimate " ++
-        "for the fixed infinite positive paired-eta measure and its " ++
-        "log-variation model that forces every transform zero onto the " ++
-        "critical line, or forces the exact detector limit to vanish, " ++
-        "without discarding zero contributions"))
+        "for the fixed infinite positive paired-eta measure that strengthens " ++
+        "the proved vertical exclusion into a horizontal restriction forcing " ++
+        "every transform zero onto the critical line, or forces the exact " ++
+        "detector limit to vanish, without discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
