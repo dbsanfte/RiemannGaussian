@@ -26,20 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now exposes a genuinely horizontal consequence of the functional
-equation. A zero `sigma + I*y` makes both Fourier moments of the fixed eta
-measure vanish at the complementary tilts `sigma` and `1 - sigma`, with the
-same frequency `y`. Their difference has the exact weight
+Lean now separates the horizontal-defect certificate into its arithmetic and
+non-arithmetic parts. It proves that the paired-eta logarithmic support and its
+omitted gaps partition the full positive half-line, and that the complex
+kernel is exactly the previously proved positive defect density times its
+Fourier phase. Its transform on the full half-line is the explicit rational
+function
 
-`-2 * exp (-t/2) * sinh ((sigma - 1/2) * t)`.
+`2*a^2 / (((1/2+a)+I*y) * ((1/2-a)+I*y))`.
 
-If the zero is off the critical line, Lean proves that multiplying this weight
-by `-(sigma - 1/2)` produces a density strictly positive at every point of the
-complete eta support, while both its cosine and sine moments still vanish at
-`y`. This is a precise positive-measure certificate that every hypothetical
-off-line zero must support. It does not rule the certificate out; the open
-frontier is an arithmetic rigidity theorem showing that this particular
-interval-supported density cannot have both cancellations.
+At a zeta zero the transform on the eta support vanishes. Therefore Lean
+proves that the omitted arithmetic gaps must reproduce the displayed value
+exactly; if the zero is off the critical line, that forced gap transform is
+nonzero. This is an unconditional reduction, not a contradiction. The open
+frontier is now a quantitative estimate using the alternating logarithmic-gap
+geometry that excludes this exact target.
 
 ## Mathematical Program
 

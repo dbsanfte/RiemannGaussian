@@ -309,8 +309,15 @@ damped hyperbolic sine. If `rho.re != 1/2`, sign normalization produces an
 explicit density strictly positive on the complete eta support whose cosine
 and sine moments both vanish at the zero's ordinate. This is a conditional
 off-critical certificate, not an exclusion theorem. The live arithmetic task
-is to prove that this specific positive density cannot support both
-cancellations.
+is no longer left as a generic positive-measure question. Lean now partitions
+the full positive half-line exactly into the eta support and its omitted
+logarithmic gaps, identifies the complex horizontal kernel with that positive
+density times its Fourier phase, and computes its full transform as
+`2*a^2 / (((1/2+a)+I*y)*((1/2-a)+I*y))`. At every zeta zero the support
+transform vanishes, so the gap transform must equal this rational value; it is
+nonzero for an off-critical zero. The live task is a quantitative estimate
+from the alternating logarithmic-gap geometry that contradicts this exact
+target. No such estimate is currently proved.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

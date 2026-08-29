@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Any off-critical zero yields a positive horizontal-defect eta density with both Fourier moments zero"
-    lineOne := "horizontal eta defect"
-    lineTwo := "positive; moments zero"
+    label := "Any off-critical zero forces the eta gaps to reproduce an explicit nonzero defect transform"
+    lineOne := "eta-gap transform"
+    lineTwo := "exact nonzero target"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.nontrivialZetaZero_offCritical_etaPositiveHorizontalDefect_certificate
+      ``RiemannGaussian.nontrivialZetaZero_offCritical_etaHorizontalDefectGap_certificate
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "arithmetic exclusion of the positive horizontal-defect certificate; no current theorem implies RH.</text>\n" ++
+      "an arithmetic gap estimate excluding the exact nonzero target; no current theorem implies RH.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -275,17 +275,24 @@ run_cmd do
     ("rhImplied", .bool false),
     ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
-      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. After cancelling the apparent boundary pole, Lean constructs a zero-adaptive completed continuation across Re z=1/2 and pole-clears its residues to the exact multiplicities. Fixed-time arithmetic residues recover both the interior xi heat and its RH-equivalent boundary detector. In the shifted coordinate p=rho-1/2, Lean derives the smooth boundary heat kernel, its exact nonzero Cauchy--Green source, and an arithmetic area--boundary identity on every zero-free rectangle. Local circle and square limits recover exact residues, and Lean constructs the genuine finite xi principal-part regularization on every positive bounded-height slab. Every weighted principal-part source is locally integrable through its pole, the iterated rectangular area is identified with a planar set integral, and the actual finite-window arithmetic source is integrable through the complete finite xi divisor. Lean proves parameter-free complete and selected finite Cauchy--Green identities. A canonical finite-extremum exhaustion connects the actual arithmetic boundary-minus-bulk functional to the complete heat detector; its imaginary part is a nonnegative monotone scalar, strictly positive when an off-axis zero enters. Lean also constructs a genuinely geometric near-edge exhaustion: the left sides tend to -1/2, the right sides tend to 0, the quantitative zero-free heights tend to infinity, both horizontal sides have an explicit positive finite-gap separation from every bounded-height zero, and every fixed selected zero enters eventually. The exact filtered positive Cauchy--Green identity holds at every stage. Dominated convergence passes these non-nested filtered sums to the complete detector, yielding a global near-edge arithmetic boundary-minus-bulk limit. Lean decomposes that functional into four named oriented sides and one bulk term, then proves a uniform exponential response bound on both horizontal sides. At every fixed positive heat time the Gaussian kernel dominates that bound, so both horizontal integrals tend to zero. Lean splits off the holomorphic Archimedean regular correction, proves the remaining literal xi-logarithmic-derivative integrals genuinely integrable, and takes their imaginary parts to obtain a fully real scalar. Its source coefficients are exactly the two partial derivatives of the real heat kernel. Lean now defines U(a,y)=log|xi(1/2+a+I*y)| and proves off the divisor that U_a=Re(xi'/xi) and U_y=-Im(xi'/xi). The finite divisor in each selected rectangle is planar-null, promoting this identity almost everywhere and proving equality of the ordinary source and grad K dot grad U integrals. The zero-free vertical sides have the matching boundary derivative form. Thus the live scalar is exactly a divisor-aware boundary-minus-gradient functional and still converges without normalization to two pi times the complete detector. Differentiating xi symmetry proves the complete gradient pairing odd in shifted real coordinate. Lean reflects both vertical sides and the entire bulk, proves genuine planar integrability through the complete finite divisor on the reflected rectangles, and rewrites every finite live scalar wholly in the actual xi half-strip 1/2 < Re s < 1. Its inner edge tends to 1/2 from above, its outer edge tends to 1 from below, and its unnormalized detector limit is unchanged. The live functional remains outside the absolute Dirichlet-series region. Lean supplies it with the paired eta series, proves that this absolutely convergent representative retains exactly the zeta divisor throughout 1/2 < Re s < 1, and differentiates it by locally uniform holomorphic convergence. Away from the retained divisor, zeta'/zeta is exactly a quotient of two convergent paired eta series minus the explicit eta-factor correction. Lean substitutes that quotient into both reflected boundary terms and the complete planar gradient pairing. The selected boundaries are pointwise zero-free; the finite interior divisor is removed only almost everywhere. Consequently every finite live scalar, and its detector limit, now has an exact convergent paired-eta arithmetic representation wholly inside 1/2 < Re s < 1. Lean exposes the normalized bilinear eta field and proves that its squared density is the singular ratio |D|^2/|E|^2 without assuming through-divisor L2 control. It then constructs the divisor-preserving L1 formulation: paired eta and zeta have equal analytic order at every nontrivial zero, the convergent quotient D/E has the exact multiplicity residue, and its normalized-bilinear radial flux is genuinely interval integrable on all sufficiently small positive circles. Lean multiplies that literal eta quotient by the actual non-holomorphic Gaussian boundary-heat kernel. A common shrinking radius recovers every finite selected heat-residue window exactly, and those targets converge at positive heat time to two pi times the complete RH-equivalent detector. Lean chooses one positive common radius at each natural window height, proves every selected integrand is simultaneously L1 there, bounds both the radius and flux error by 1/(n+1), and obtains one diagonal detector sequence. The chosen circles are now also proved to stay in Re s > 0 and avoid the complete paired-eta divisor. On that valid geometry Lean proves d/dr log|E|^2 = 2 Re(exp(i theta) D/E), transfers genuine L1 integrability to this logarithmic derivative, and proves the resulting finite heat-weighted log-norm radial variations converge to the complete detector. Lean now approximates this live quotient by the explicit finite paired-eta polynomials E_N and D_N, proves uniform denominator avoidance and uniform flux convergence on every selected compact circle, and selects growing truncations N_n whose finite Dirichlet-polynomial flux windows converge to the complete detector. On these denominator-free finite circles, Lean proves the exact radial identity d/dr log|E_N|^2 = 2 Re(exp(i theta) D_N/E_N), transfers genuine L1 integrability, and obtains the same detector limit from entirely finite log-norm variations. Independently, every zeta zero is now a limit of actual finite E_N zeros; eventually those roots are zeros of finite positive-measure Laplace transforms, satisfy exact tilted cosine and sine cancellations, and have centered phase spread strictly greater than pi. A global rigidity estimate excluding persistent off-line finite roots, or forcing the detector log variation to vanish, remains open."),
+      ("Lean proves exact arithmetic--spectral and Gaussian/Weil bridges, " ++
+        "RH-equivalent detectors, and a fixed positive paired-eta Laplace " ++
+        "measure whose transform vanishes at every nontrivial zeta zero. " ++
+        "Complementary tilts produce a positive horizontal-defect density. " ++
+        "The positive half-line now splits exactly into the eta support and " ++
+        "its logarithmic gaps; any off-critical zero forces the gap transform " ++
+        "to equal an explicit nonzero rational value. This is a checked " ++
+        "conditional reduction, not a zero-location theorem, and no current " ++
+        "theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Derive an unconditional divisor-aware arithmetic rigidity estimate " ++
-        "excluding the explicit positive horizontal-defect density forced by " ++
-        "any off-critical zero, using the arithmetic interval support rather " ++
-        "than generic positivity, or forcing the exact detector limit to " ++
-        "vanish without discarding zero contributions"))
+        "Derive an unconditional quantitative estimate from the alternating " ++
+        "paired-eta logarithmic gaps that contradicts the explicit nonzero " ++
+        "gap transform forced by any off-critical zero, or force the exact " ++
+        "detector limit to vanish without discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
