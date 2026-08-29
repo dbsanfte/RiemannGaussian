@@ -112,11 +112,17 @@ half-plane and genuinely crosses to `Re z<1/2`. It agrees with the literal
 integral on `Re z>1/2`, recovers spectral xi throughout its holomorphic
 domain, and has residue `m_rho/(rho-1/2)^2` at every nonzero shifted zeta-zero
 coordinate. The original integral is not asserted to converge in the
-continued region. Extracting the complete fixed-proper-time heat sum from
-these residues, proving the required bound for `A_N`, and deriving a global
-zero-location constraint are the open arithmetic tasks. These estimates are
-not RH and do not exclude a finite or sparse off-line divisor; a restatement,
-hidden limit interchange, or conditional implication is not a substitute.
+continued region. Lean now removes the inherited `z^(-2)` normalization and
+proves that the pole-cleared response has residue `m_rho` at every shifted
+nontrivial zero, without an exceptional-coordinate hypothesis. Applying the
+fixed-positive-time heat weights to these arithmetic residues gives exactly
+the genuine spectral-xi heat residues, and their absolutely convergent series
+sums to the complete existing fixed-time heat. Representing that series by
+one controllable arithmetic contour or boundary expression, proving the
+required bound for `A_N`, and deriving a global zero-location constraint are
+the open arithmetic tasks. These estimates are not RH and do not exclude a
+finite or sparse off-line divisor; a restatement, hidden limit interchange,
+or conditional implication is not a substitute.
 
 ## Soundness invariant
 

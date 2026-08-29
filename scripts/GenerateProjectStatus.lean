@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "At every nonzero shifted zeta-zero coordinate, the completed arithmetic Laplace continuation has residue m_rho / p_rho^2"
-    lineOne := "Completed arithmetic"
-    lineTwo := "xi-zero residues"
+    label := "The complete fixed-positive-time xi heat is the sum of pole-cleared arithmetic Laplace residues"
+    lineOne := "Arithmetic residues"
+    lineTwo := "sum = fixed-time heat"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.tendsto_suzukiChebyshevLaplaceZeroCoordinate_mul_completedContinuation
+      ``RiemannGaussian.hasSum_suzukiChebyshevLaplaceUpperHyperbolicHeatResidue
   }
 ]
 
@@ -275,13 +275,13 @@ run_cmd do
     ("rhImplied", .bool false),
     ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
-      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. Lean now cancels the apparent boundary pole and constructs a zero-adaptive completed continuation on an open domain containing Re z >= 1/2 and reaching Re z < 1/2. It equals the literal transform where that integral converges, recovers spectral xi throughout its holomorphic domain, and has residue m_rho/(rho-1/2)^2 at each nonzero shifted zeta-zero coordinate. No integral convergence is asserted in the continued region. Complete fixed-proper-time residue extraction, the required upper bound for A_N, arithmetic rigidity, and every RH-forcing zero-location step remain open."),
+      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. After cancelling the apparent boundary pole, Lean constructs a zero-adaptive completed continuation across Re z=1/2. Pole clearing removes the inherited z^(-2) normalization: at every shifted nontrivial zero, with no exceptional-coordinate hypothesis, its local residue is exactly m_rho. Lean proves every fixed-positive-time heat-weighted arithmetic residue equals the genuine spectral-xi heat residue and that their complete series sums to the existing entire fixed-time heat. No single arithmetic contour or boundary expression for that series is yet proved. Such a representation, the required upper bound for A_N, arithmetic rigidity, and every RH-forcing zero-location step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Extract the complete fixed-proper-time heat sum from the proved arithmetic continuation and residues, then prove an arithmetic rigidity estimate—such as the exact A_N entropy bound—that forces an unconditional zero-location constraint")
+        "Represent the complete fixed-time arithmetic residue series by one controllable arithmetic contour or boundary expression, then prove a rigidity estimate—such as the exact A_N entropy bound—that forces an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

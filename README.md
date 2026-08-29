@@ -26,25 +26,24 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now cancels the apparent pole at `z = 1/2` in the verified complex
-Suzuki Laplace response and defines the resulting completed continuation in
-terms of `logDeriv riemannXi`, the elementary completed-zeta terms, and
-`digamma`. Its zero-adaptive holomorphy domain is proved open, contains every
-point with `Re z >= 1/2`, and contains a point with `Re z < 1/2`. On the
-original absolute-convergence half-plane, this continuation is exactly the
-literal arithmetic Laplace integral.
+The completed Suzuki Laplace response inherits an artificial factor `z^-2`
+from the logarithmic-average Mellin transform. Lean now removes that factor
+and constructs the pole-cleared response `P`. On the literal transform's
+absolute-convergence half-plane, `P(z) = z^2 T(z)`; away from xi zeros it is
+holomorphic throughout the shifted right half-plane.
 
-For a nontrivial zeta zero `rho`, let `p_rho = rho - 1/2`. Whenever
-`p_rho ≠ 0`, Lean proves the local residue formula
-`(z-p_rho) C(z) -> m_rho / p_rho^2`, where `m_rho` is the checked analytic
-zero multiplicity. Lean also recovers the spectral-xi logarithmic derivative
-from `C` throughout its holomorphic domain.
+For every nontrivial zeta zero `rho`, with `p_rho = rho - 1/2`, Lean proves
+`(z-p_rho) P(z) -> m_rho`. This is the genuine analytic zero multiplicity and
+has no exceptional `p_rho ≠ 0` hypothesis. Applying the existing
+fixed-positive-time heat weight to each local arithmetic residue gives
+exactly the corresponding spectral-xi heat residue. Lean then proves that
+the complete arithmetic residue series is absolutely convergent and sums to
+the existing entire fixed-time xi heat.
 
-This is a proved arithmetic-to-spectral meromorphic bridge across the former
-boundary, not convergence of the literal integral there. A contour or
-summation theorem extracting the complete fixed-proper-time heat sum from
-these residues—and, ultimately, an arithmetic rigidity theorem forcing the
-required zero-location constraint—remains open.
+This makes the arithmetic continuation and the fixed-proper-time heat meet
+term by term before any integration over proper time. It does not yet express
+the complete series by one arithmetic contour or boundary integral, nor does
+it provide the rigidity or sign estimate needed to force zero locations.
 
 ## Mathematical Program
 
