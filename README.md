@@ -26,22 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now substitutes the convergent paired-eta formula directly into the
-complete live detector in `1/2 < Re s < 1`. At every finite stage, both
-reflected vertical boundary integrals and the planar xi-log-norm gradient
-integral are exactly equal to expressions formed from the paired eta series,
-its rigorously summed derivative series, and explicit completion terms.
+Lean now represents the complete live positive-strip detector with the
+convergent paired-eta quotient `D/E` and rewrites its singular field as
+`(Re(D*conj E), Im(D*conj E)) / |E|^2`. Its squared density is the exact
+singular ratio `|D|^2/|E|^2`; no through-divisor `L²` estimate is assumed.
 
-The selected vertical sides are pointwise zero-free; the finite planar
-divisor is removed only almost everywhere, with genuine integrability proved.
-Lean further rewrites the singular eta quotient as the bilinear vector
-`(Re(D*conj E), Im(D*conj E)) / |E|^2`. Its denominator vanishes exactly on
-the xi divisor, its numerators are the coordinate derivatives of `|E|^2`, and
-its squared magnitude is the nonnegative density `|D|^2 / |E|^2`. This is an
-exact energy formulation, and a checked pointwise Cauchy--Schwarz bound pairs
-it with an explicit Gaussian-polynomial heat-gradient energy. It is not a
-vanishing estimate: the remaining frontier is a divisor-aware coercivity or
-cancellation theorem for this field.
+The new divisor-preserving replacement is a rigorously proved `L¹` radial
+flux. Lean proves that paired eta and zeta have the same analytic order at
+every nontrivial zero, that `(s-rho)D(s)/E(s)` tends to the genuine analytic
+multiplicity, and that the normalized-bilinear radial-flux integrand is
+interval integrable on all sufficiently small circles. Its flux tends exactly
+to `2*pi` times that positive multiplicity and is eventually positive.
+
+This closes the local renormalization interface without erasing divisor mass.
+It does not prove RH: the frontier is now a global arithmetic cancellation or
+coercivity theorem controlling this `L¹` eta flux inside the complete detector.
 
 ## Mathematical Program
 

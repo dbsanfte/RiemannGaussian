@@ -227,6 +227,13 @@ is nonzero, and the paired series therefore retains exactly the zeta divisor.
 Lean now differentiates that series by locally uniform holomorphic
 convergence and obtains an exact quotient of convergent paired eta series for
 `zeta'/zeta` at every nonzero zeta point of the same strip.
+Lean also exposes the squared quotient energy without assuming an unproved
+through-divisor `L²` estimate and develops a divisor-preserving `L¹` radial
+flux. Paired eta has exactly the zeta analytic order at every
+nontrivial zero, and its normalized-bilinear flux on shrinking circles tends
+to `2*pi` times the positive analytic multiplicity. The remaining frontier is
+a global arithmetic cancellation or coercivity estimate for that flux inside
+the complete live detector.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
