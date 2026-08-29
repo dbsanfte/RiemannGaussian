@@ -392,8 +392,21 @@ Lean also proves that its values at `sigma` and `1-sigma` are equal exactly when
 `sigma=1/2`. This is a closure interface, not the missing coupling: no theorem
 derives the complementary equality from zeta, xi, or the finite eta zero
 condition.
-The next hard input must be an independent eta-specific completed symmetry or
-complementary-derivative mechanism deriving the conjecture-strength coupling.
+Lean now derives the correct completion rather than postulating it. For
+`C(s)=s*(1-s)*GammaR(s)/(1-2*2^(-s))`, the actual function `C(s)*E(s)` is
+proved locally equal to the entire xi normalization throughout
+`0 < Re(s) < 1`, and the previously exposed regular correction is exactly
+`C'/C`. Every iterated derivative inherits xi's functional-equation parity
+and conjugation. At each nontrivial zero of arbitrary multiplicity `m`, Lean
+uses the exact analytic order to eliminate every lower Leibniz term and proves
+the completion-weighted leading eta derivatives at `rho` and
+`1-conj(rho)` are exact conjugates up to `(-1)^m`. The corresponding norm
+identity is also checked. This is the genuine completed local coupling, but it
+is compatible with off-critical zeros and supplies no inequality between the
+unweighted arithmetic moments.
+The next hard input must rewrite those leading derivatives as explicit
+logarithmic-time moments and prove an independent eta-arithmetic inequality
+that cannot hold at complementary off-critical tilts.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

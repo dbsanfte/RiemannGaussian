@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Raw complementary finite eta Gram equality holds exactly at the central tilt"
-    lineOne := "raw finite eta Gram"
-    lineTwo := "paired equality iff 1/2"
-    role := "reduction"
+    label := "Completed paired-eta leading coefficients obey exact complementary symmetry at every zero multiplicity"
+    lineOne := "completed eta local"
+    lineTwo := "coeff. symmetry (all m)"
+    role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaFiniteGaussianLaplaceGram_eq_complementary_iff
+      ``RiemannGaussian.pairedEtaLeadingDerivative_conjugatePartner
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "find an eta-specific mechanism for the RH-equivalent coupling; no theorem implies RH.</text>\n" ++
+      "bound completed eta leading moments to exclude off-line zeros; no theorem implies RH.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -307,17 +307,24 @@ run_cmd do
         "first-moment-squared versus zeroth-times-second-moment determinant, and " ++
         "Lean derives the corresponding second logarithmic derivative and global " ++
         "log-convexity. Thus equality at complementary tilts holds exactly at " ++
-        "sigma=1/2. No theorem supplies that complementary equality from zeta or " ++
-        "xi, and no current theorem implies RH.")),
+        "sigma=1/2. Lean now constructs the exact eta completion factor " ++
+        "C(s)=s(1-s)GammaR(s)/(1-2*2^(-s)), proves C(s)E(s)=xi(s) locally " ++
+        "throughout 0<Re(s)<1, and identifies the existing regular correction " ++
+        "with C'/C. At every nontrivial zero of arbitrary multiplicity m, the " ++
+        "first nonzero eta coefficients at rho and 1-conj(rho) satisfy the exact " ++
+        "completion-weighted conjugate relation forced by xi. This completed " ++
+        "identity is compatible with off-critical zeros; no independent arithmetic " ++
+        "moment inequality forcing the horizontal displacement to vanish is proved, " ++
+        "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Find an independent eta-specific Gaussian/Gram or " ++
-        "complementary-derivative mechanism that supplies the RH-equivalent " ++
-        "coupling, or force the exact detector limit to vanish without " ++
-        "discarding zero contributions"))
+        "Express the completion-coupled leading eta derivatives as explicit " ++
+        "logarithmic-time moments and prove an independent arithmetic inequality " ++
+        "that excludes complementary off-critical tilts, or force the exact " ++
+        "detector limit to vanish without discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

@@ -26,21 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now differentiates the genuine finite paired-eta Gaussian--Laplace Gram
-integral with respect to its real tilt `sigma`. Its first derivative is exactly
-the negative first logarithmic-time moment and its second derivative is exactly
-the second moment. For every nonempty truncation and `tau > 0`, both moments
-are strictly positive. The raw Gram profile is therefore strictly decreasing
-and strictly convex in `sigma`. Lean also proves the exact Cauchy--Schwarz
-moment determinant `M_1(sigma)^2 <= G(sigma) * M_2(sigma)`, computes the second
-derivative of `log G`, and deduces global log-convexity.
+Lean now constructs the exact completed paired-eta function. With
+`E(s)` the convergent paired eta series and
+`C(s) = s*(1-s)*GammaR(s)/(1-2*2^(-s))`, Lean proves locally throughout
+`0 < Re(s) < 1` that `C(s)*E(s) = xi(s)`. It also proves that the previously
+derived regular logarithmic-derivative correction is exactly `C'(s)/C(s)`.
 
-As a precise symmetry interface, Lean proves that the two raw complementary
-values at `sigma` and `1-sigma` are equal if and only if `sigma = 1/2`. This is
-not yet a zero-location theorem: no checked result derives that equality from
-the zeta or xi functional equation. The open frontier is to construct the
-correct completed eta-specific normalization or moment identity that supplies
-such a complementary coupling without assuming RH.
+The xi functional equation is then transported to every local derivative.
+At a nontrivial zero of arbitrary multiplicity `m`, Lean proves that all lower
+eta derivatives vanish and that the first nonzero coefficients at `rho` and
+`1-conj(rho)` obey an exact completion-weighted conjugate identity. No zero
+simplicity is assumed. This is genuine eta-specific coupling, but it remains
+compatible with off-critical zeros. The open frontier is an independent
+arithmetic inequality for these explicit leading eta moments that forces the
+horizontal displacement to vanish.
 
 ## Mathematical Program
 
