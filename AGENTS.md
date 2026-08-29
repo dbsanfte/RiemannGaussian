@@ -141,19 +141,22 @@ Cauchy--Green identity is now complete in a precisely termwise-regularized
 form: for every admissible outer rectangle strictly containing the finite
 window, a common shrinking parameter recovers the actual boundary minus the
 complete finite multiplicity-weighted heat-residue sum. Equality with one
-geometrically multiply perforated area is not yet proved. Lean now proves the
-missing integrability prerequisite: every weighted principal-part source is
-locally Lebesgue integrable through its pole, the project's iterated
-rectangular area equals a genuine complex-plane set integral, and the actual
-finite-window arithmetic source is integrable through its complete finite xi
-divisor. The remaining geometric obligation is therefore the checked
-shrinking-finite-hole convergence and its equality with the existing termwise
-limit, not an assumed integrability or limit exchange. Retaining the selected
-off-axis half of the divisor, packaging strict quartet positivity and an
-honest global-rigidity closure theorem, passing to an expanding half-strip,
-and controlling its boundary and bulk terms are open. These estimates are not
-RH and do not exclude a finite or sparse off-line divisor; a restatement,
-hidden limit interchange, or conditional implication is not a substitute.
+geometrically multiply perforated area is not yet proved. Lean proves the
+integrability prerequisite: every weighted principal-part source is locally
+Lebesgue integrable through its pole, the project's iterated rectangular area
+equals a genuine complex-plane set integral, and the actual finite-window
+arithmetic source is integrable through its complete finite xi divisor. Lean
+now also constructs a single rectangle minus the finite union of common-radius
+complex balls, proves its actual-source integral converges to the full planar
+area, and identifies its positive-radius integrand exactly with the checked
+finite principal-part regularization. The remaining finite geometric
+obligation is to prove that this common-ball limit and the existing termwise
+shrinking-square limit coincide. Retaining the selected off-axis half of the
+divisor, packaging strict quartet positivity and an honest global-rigidity
+closure theorem, passing to an expanding half-strip, and controlling its
+boundary and bulk terms are open. These estimates are not RH and do not
+exclude a finite or sparse off-line divisor; a restatement, hidden limit
+interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 

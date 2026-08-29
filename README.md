@@ -26,22 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves that every heat-weighted simple-pole Cauchy--Green source is
-locally Lebesgue integrable through its pole in the complex plane. Translation
-invariance moves the checked `|z|^-1` estimate to arbitrary xi zeros, and a
-volume-preserving real-coordinate argument identifies the project's iterated
-rectangular area with a genuine planar set integral. Consequently the actual
-finite-window arithmetic source is integrable through its complete finite xi
-divisor and has an honest complex-plane rectangular integral; equality with
-the analytic principal-part regularization is used only almost everywhere on
-the proved finite exceptional set.
+Lean now constructs one literal rectangle with every zero in its finite xi
+window removed by a common-radius complex ball. Lean proves that the volume of
+this finite hole union tends to zero, uses the already-checked through-pole
+integrability to show that the multiply punctured area converges to the full
+planar arithmetic area, and proves that at every positive radius its integrand
+is exactly the finite principal-part sum plus one analytic remainder. This is
+a genuine set integral over one geometric region, not a termwise definition.
 
-The prior exact finite-window termwise Cauchy--Green residue identity remains
-the boundary formula. What is still missing is the convergence theorem that
-identifies its common-radius termwise approximation with one rectangle minus
-all shrinking holes. A selected-half-strip version, strict quartet positivity,
-and global heat rigidity remain beyond that geometric step. No unconditional
-zero-location conclusion is yet proved.
+The earlier termwise shrinking-square theorem independently recovers the
+outer boundary minus the complete finite heat-residue sum. The remaining
+finite-geometry obligation is to prove that its termwise square approximation
+and the new common-ball area have the same limit. A selected-half-strip
+version, strict quartet positivity, and global heat rigidity remain beyond
+that comparison. No unconditional zero-location conclusion is yet proved.
 
 ## Mathematical Program
 
