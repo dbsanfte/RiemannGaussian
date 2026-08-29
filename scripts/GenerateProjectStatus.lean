@@ -264,13 +264,13 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("rhImplied", .bool false),
     ("statusNote", .str
-      "Cutoffs zero and one are proved. Absolute-continuity integration by parts expresses every remaining prefix through a two-level positive-kernel moment of the cumulative PNT error. Exact curvature and Chebyshev-mass bounds now trap each canonical center in log N - 2 <= r_N < log N + 5, so the endpoint coefficient is at most 5 N^(-1/2) in absolute value. Proving the uniform moment bound and every RH-forcing rigidity step remain open."),
+      "Cutoffs zero and one are proved. Absolute-continuity integration by parts expresses every remaining prefix through a two-level positive-kernel moment of the cumulative PNT error. Center localization and elementary Chebyshev bounds now give absolute envelopes 45 sqrt N for that moment, 25 sqrt N for the direct boundary, and 70 sqrt N for the complete centered PNT remainder; the remainder divided by N tends to zero. Its sign at square-root scale and every RH-forcing rigidity step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Exploit the controlled endpoint and verified positive kernels to prove the uniform two-level cumulative Chebyshev-error bound, then derive an unconditional zero-location constraint")
+        "Turn the verified square-root-scale magnitude control into a sign-sensitive uniform cumulative Chebyshev-error bound, then derive an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

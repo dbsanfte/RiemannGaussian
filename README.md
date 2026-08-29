@@ -24,18 +24,17 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now traps every canonical Suzuki slope-matching center at endpoint
-`N = count + 2` in the fixed-width strip
+Lean now proves an unconditional square-root envelope for the complete
+centered PNT remainder at every canonical endpoint `N = count + 2`:
 
-`log(N) - 2 <= r_N < log(N) + 5`.
+`|PNTError(r_N, N)| <= 70 * sqrt(N)`.
 
-The new upper bound follows from two unconditional estimates proved in Lean:
-the smooth curvature is at least `(5/6) * exp(t/2)` after `log(2)`, and the
-weighted Chebyshev prefix mass is at most `12 * sqrt(N)`. Consequently the
-endpoint coefficient in the cumulative PNT-error formula satisfies
-`|K_{r_N}(N)| <= 5 * N^(-1/2)`. The remaining two-level positive-kernel
-moment inequality is still open, as is every arithmetic-to-zero-location
-rigidity step; these bounds do not prove tail positivity or RH.
+The proof bounds the exact endpoint-plus-interior cumulative-error moment by
+`45 * sqrt(N)` and the direct boundary term by `25 * sqrt(N)`. It also proves
+that `PNTError(r_N, N) / N` tends to zero. This controls magnitude but not
+sign at the natural square-root scale. The uniform positive-kernel inequality
+and every arithmetic-to-zero-location rigidity step therefore remain open;
+this is not tail positivity or RH.
 
 ## Mathematical Program
 

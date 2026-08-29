@@ -48,11 +48,15 @@ the canonical center at every endpoint `N` in
 the cumulative moment is at most `5 * N^(-1/2)` in absolute value. The open
 arithmetic statement is therefore a uniform two-level cumulative PNT-error
 bound against positive kernels, with its endpoint coefficient now controlled.
-That bound, and the sublinear law, are not RH and do not exclude a finite or
-sparse off-line divisor. The missing theorem must derive a genuine global
-zero-location constraint from xi's arithmetic or entire-function structure;
-a restatement, hidden limit interchange, or conditional implication is not a
-substitute.
+Lean further proves that the complete cumulative moment is at most
+`45 * sqrt N` in absolute value, the direct boundary term is at most
+`25 * sqrt N`, and the full centered PNT remainder is at most `70 * sqrt N`.
+Consequently that remainder divided by `N` tends to zero along the canonical
+centers. These magnitude estimates do not determine the sign at square-root
+scale, are not RH, and do not exclude a finite or sparse off-line divisor.
+The missing theorem must derive a genuine global zero-location constraint
+from xi's arithmetic or entire-function structure; a restatement, hidden
+limit interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 
