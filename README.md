@@ -26,25 +26,22 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now extracts the first formal multiplicity-sensitive coefficient hidden
-behind the vanishing large-proper-time limit. At a nontrivial zero of exact
-multiplicity `m`, every logarithmic-time product difference moment below order
-`2m` vanishes. The order-`2m` moment is exactly the central binomial
-coefficient times the squared norm of the first nonzero eta log moment, with
-the alternating sign that cancels the matching Gaussian Taylor sign. Lean
-therefore defines an explicit coefficient
-`choose(2m,m) * |M_m(rho)|^2 / (4^m * m!)` and proves it strictly positive.
+Lean now proves the actual first multiplicity-sensitive asymptotic hidden
+behind the vanishing large-proper-time limit. At a nontrivial zero `rho` of
+exact multiplicity `m`, a sharp global exponential Taylor bound supplies an
+integrable product-measure majorant, and dominated convergence gives
+`tau^m * G_rho(tau) / sqrt(pi / tau) ->
+choose(2m,m) * |M_m(rho)|^2 / (4^m * m!)`. The limit is explicit and strictly
+positive; every lower Taylor moment is proved to vanish rather than discarded.
 
-The completed functional equation is also propagated to this coefficient:
-the coefficients at complementary zeros agree after multiplication by the
-squares of their exact completion-and-spectral weights. These are integral
-identities for the literal eta product measure, not a symbolic series
-calculation. They still do not prove RH. The next verified step is to control
-the exponential Taylor remainder under the product integral, upgrading the
-formal coefficient to the actual `tau^m` large-time limit. Even then, the
-weighted partner equality is compatible with an off-critical pair; a new
-arithmetic inequality or phase-rigidity theorem must force horizontal
-location.
+The corresponding completion-distortion limit is the difference of the two
+positive coefficients at `rho` and its functional-equation partner. Lean
+proves that this difference vanishes exactly when their explicit completion
+weights are equal. This still does not prove RH: completion balance alone is
+compatible with an off-critical pair. The open frontier is an independent
+arithmetic or phase-rigidity theorem forcing the required coefficient balance,
+followed by a checked analysis of whether that weight equality forces
+`Re rho = 1/2`.
 
 ## Mathematical Program
 

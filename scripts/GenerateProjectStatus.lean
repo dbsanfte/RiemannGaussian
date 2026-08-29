@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The first formal multiplicity-sensitive localized eta Gram coefficient is strictly positive"
-    lineOne := "first formal coeff."
-    lineTwo := "explicit and positive"
+    label := "The multiplicity-scaled localized eta Gram has an explicit strictly positive large-time limit"
+    lineOne := "localized eta Gram"
+    lineTwo := "actual positive limit"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaLocalizedGaussianLargeTimeLeadingCoefficient_pos
+      ``RiemannGaussian.tendsto_pow_mul_pairedEtaLocalizedGaussianLaplaceNorm_div_sqrt_atTop_coefficient
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "upgrade the formal coefficient to the actual limit, then force complementary tilt rigidity.</text>\n" ++
+      "force actual complementary coefficient balance, then prove horizontal rigidity.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -375,27 +375,29 @@ run_cmd do
         "convergence that the localized norm divided by sqrt(pi/tau) tends exactly to " ++
         "the squared eta partition value at its center. This normalized limit vanishes " ++
         "at every nontrivial zero, at its complementary tilt, and for the localized " ++
-        "completion distortion. Lean now expands the literal eta product moments at a " ++
-        "zero of exact multiplicity m: all difference moments below order 2m vanish, " ++
-        "and the order-2m moment is (-1)^m choose(2m,m) times the squared norm of " ++
-        "the first nonzero eta log moment. The matching Gaussian Taylor sign yields " ++
-        "the explicit strictly positive formal coefficient choose(2m,m)|M_m|^2/" ++
-        "(4^m m!). Completion symmetry gives an exact equality between the two " ++
-        "complementary coefficients after their completion-and-spectral weights are " ++
-        "squared. Uniform Taylor-remainder domination under the product integral is " ++
-        "not yet proved, so this formal coefficient is not yet asserted as the actual " ++
-        "scaled large-time limit. No phase obstruction forcing " ++
-        "the horizontal displacement to vanish is proved, " ++
+        "completion distortion. Lean now expands the literal eta product moments at " ++
+        "a zero of exact multiplicity m: all difference moments below order 2m vanish, " ++
+        "and the order-2m moment is (-1)^m choose(2m,m) times the squared norm of the " ++
+        "first nonzero eta log moment. A sharp global exponential Taylor remainder " ++
+        "gives an integrable product-measure majorant. Dominated convergence therefore " ++
+        "proves that tau^m times the localized norm divided by sqrt(pi/tau) tends to " ++
+        "the explicit strictly positive coefficient choose(2m,m)|M_m|^2/(4^m m!). " ++
+        "The complementary norm has the partner coefficient as its actual limit, and " ++
+        "the actual scaled completion-distortion limit is their difference. Completion " ++
+        "symmetry gives an exact weighted balance, and Lean proves that the coefficient " ++
+        "difference vanishes exactly when the two explicit completion weights agree. " ++
+        "No independent arithmetic or phase theorem forces this balance, no checked " ++
+        "theorem yet converts the resulting weight equality to horizontal location, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Upgrade the explicit positive multiplicity-dependent formal coefficient to " ++
-        "the actual scaled large-proper-time localized eta Gram limit by a uniform " ++
-        "Taylor-remainder theorem, then prove its weighted complementary relation " ++
-        "forces zero location; alternatively force the exact " ++
+        "Prove an independent arithmetic or phase constraint forcing the actual " ++
+        "complementary localized eta Gram coefficients to agree, and prove that the " ++
+        "equivalent completion-weight equality forces zero location; alternatively " ++
+        "force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")

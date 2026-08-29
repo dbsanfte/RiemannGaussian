@@ -502,18 +502,20 @@ norm at `tau -> infinity` with the exact squared eta partition value at its
 center ordinate. At every nontrivial zero this limit vanishes at both
 complementary tilts, and so does the normalized localized completion
 distortion. This leading vanishing is compatible with off-critical zeros. The
-first formal coefficient is now extracted. If the zero has exact multiplicity
-`m`, Lean proves every product difference moment below order `2m` vanishes and
-the order-`2m` moment is exactly
+first multiplicity-sensitive asymptotic is now complete. If the zero has exact
+multiplicity `m`, Lean proves every product difference moment below order `2m`
+vanishes and the order-`2m` moment is exactly
 `(-1)^m * choose(2m,m) * |M_m(rho)|^2`. The Gaussian Taylor sign cancels this
 sign, giving the explicit strictly positive coefficient
-`choose(2m,m) * |M_m(rho)|^2 / (4^m*m!)`. Completion symmetry propagates to an
-exact weighted equality of this coefficient at complementary zeros. The next
-valid slice must justify the exponential Taylor remainder uniformly under the
-eta product integral, thereby proving this formal coefficient is the actual
-`tau^m` large-time limit. After that, an independent arithmetic or phase
-inequality must turn the weighted partner equality into horizontal rigidity;
-the equality alone remains compatible with an off-critical pair.
+`choose(2m,m) * |M_m(rho)|^2 / (4^m*m!)`. A sharp global exponential Taylor
+remainder, an integrable product-measure majorant, and dominated convergence
+prove that this is the actual limit of `tau^m` times the normalized localized
+eta Gram. The corresponding actual scaled completion-distortion limit is the
+difference of the coefficients at complementary zeros. Lean proves that this
+difference vanishes exactly when their explicit completion weights agree.
+The next valid slice must derive an independent arithmetic or phase constraint
+forcing that balance and then prove that the resulting weight equality forces
+horizontal location; neither implication is currently established.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
