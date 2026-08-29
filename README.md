@@ -26,20 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now differentiates the paired Dirichlet-eta series throughout
-`Re s > 0`. The explicit derivative terms are logarithmically weighted
-odd-even pairs. Their convergence is not assumed: Lean applies the Cauchy
-derivative theorem to the already proved locally uniform eta-series bound and
-proves that these terms are summable and sum to the genuine derivative of
-paired eta.
+Lean now substitutes the convergent paired-eta formula directly into the
+complete live detector in `1/2 < Re s < 1`. At every finite stage, both
+reflected vertical boundary integrals and the planar xi-log-norm gradient
+integral are exactly equal to expressions formed from the paired eta series,
+its rigorously summed derivative series, and explicit completion terms.
 
-Thus, at every nonzero zeta point in `1/2 < Re s < 1`, Lean proves an exact
-formula for `zeta'/zeta`: the quotient of the convergent paired derivative
-series by the convergent paired eta series, minus an explicit elementary
-eta-factor correction. The zeta-nonvanishing hypothesis remains visible, so
-the formula does not erase the divisor or claim zero-freeness. The next bridge
-is to substitute this arithmetic quotient into the reflected xi
-boundary-plus-gradient detector and retain its singular zero contributions.
+The selected vertical sides are proved pointwise zero-free. The planar
+rectangle may contain finitely many xi zeros, so Lean removes only that finite
+null set, proves almost-everywhere equality, and transfers genuine planar
+integrability to the eta expression. The resulting entirely arithmetic
+positive-strip functional has the same unnormalized limit to the nonnegative
+RH detector. No vanishing estimate follows yet: the open frontier is now a
+direct divisor-aware rigidity estimate for this exact eta functional.
 
 ## Mathematical Program
 
