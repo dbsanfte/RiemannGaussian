@@ -206,9 +206,16 @@ identity promotes to an almost-everywhere equality, the gradient pairing is
 genuinely integrable, and its ordinary planar integral equals the explicit xi
 bulk. Both vertical boundaries are zero-free, making the entire live scalar
 exactly a boundary-minus-`grad K · grad U` functional with the same
-unnormalized detector limit. A valid next step must retain the distributional
-zero contributions in any Green or integration-by-parts argument; erasing
-them would merely erase the detector.
+unnormalized detector limit. The xi functional equation and conjugation
+symmetry now prove `U` even in its shifted real coordinate; its horizontal
+derivative and the real heat kernel are odd, so their boundary product is
+even. Lean uses this to reflect the near-`s = 0` left boundary to positive
+shifted coordinates in `(1/4, 1/2)`, equivalently actual xi coordinates in
+`(3/4, 1)` tending to `1` from below, without changing any finite scalar or
+its detector limit. This does not enter the absolute Dirichlet-series region.
+A valid next step must retain the distributional zero contributions in any
+Green or integration-by-parts argument; erasing them would merely erase the
+detector.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.

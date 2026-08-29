@@ -26,21 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now introduces the shifted xi log-norm potential
-`U(a,y) = log |xi(1/2 + a + I*y)|` and proves, away from zeros, that its two
-partial derivatives are `Re (xi'/xi)` and `-Im (xi'/xi)`. Combined with the
-already-checked heat-kernel derivatives, the explicit planar source is exactly
-the Euclidean pairing `grad K · grad U`.
+Xi's functional equation and conjugation symmetry now make the checked
+log-norm potential `U(a,y) = log |xi(1/2 + a + I*y)|` exactly even in `a`.
+Lean proves its totalized horizontal derivative and the real heat kernel are
+odd, hence their boundary product is even. The selected near-`s=0` left
+boundary can therefore be reflected exactly to positive shifted coordinate
+`1/4 < a < 1/2`, or actual completed-xi coordinate `3/4 < Re s < 1`.
 
-The selected rectangles cross xi zeros, so Lean separately proves that their
-bounded-height divisor lies in an explicit finite zero window and is null for
-planar measure. This justifies the almost-everywhere replacement, proves the
-gradient pairing integrable, and identifies the ordinary planar integrals.
-The vertical sides are genuinely zero-free. Consequently the complete real
-frontier is now an exact boundary-minus-gradient functional and still
-converges without normalization to `2*pi` times the nonnegative xi detector.
-The open step is a divisor-aware Green/Dirichlet or explicit-formula rigidity
-estimate; the singular zero masses cannot simply be discarded.
+Lean proves these reflected coordinates tend to `Re s = 1` from below and
+that the finite boundary-minus-`grad K · grad U` scalar is unchanged at every
+stage. The reflected scalar consequently retains the unnormalized limit to
+`2*pi` times the nonnegative xi detector. This is a genuine symmetry
+reduction, not a decay theorem: the boundary remains below the absolute
+Dirichlet-series half-plane, and a divisor-aware arithmetic rigidity estimate
+that retains the singular zero masses is still open.
 
 ## Mathematical Program
 
