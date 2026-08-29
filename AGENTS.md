@@ -412,8 +412,14 @@ full genuine zeta-zero multiplicity, all lower derivatives vanish, and the
 leading moment is nonzero. The completed local coupling is therefore proved
 as an explicit completion- and spectral-parameter-weighted relation between
 the leading moments at `rho` and `1-conj(rho)` for arbitrary multiplicity.
-The next hard input must prove an independent eta-arithmetic inequality for
-these concrete moments that cannot hold at complementary off-critical tilts.
+Lean now splits every such moment into the explicit eta support and its
+omitted logarithmic gaps, and proves the full positive-half-line value exactly
+as `n!/s^(n+1)`. At a zero of multiplicity `m`, the gap moments equal the full
+moment for every `k<m` and differ for the first time at `k=m`. The completed
+partner identity is checked as an exact relation between these first nonzero
+gap-moment defects. The next hard input must prove an independent quantitative
+inequality for those explicit gap-interval defects that cannot hold at
+complementary off-critical tilts.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

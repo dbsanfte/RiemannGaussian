@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Explicit paired-eta leading logarithmic moments obey exact completed symmetry at every zero multiplicity"
-    lineOne := "explicit eta leading"
-    lineTwo := "log moments (all m)"
-    role := "bridge"
+    label := "Eta gap moments match the full half-line exactly below each zero multiplicity and first differ at that multiplicity"
+    lineOne := "eta gap moments match"
+    lineTwo := "full until first defect"
+    role := "reduction"
     theoremName :=
-      ``RiemannGaussian.pairedEtaLeadingLogLaplaceMoment_conjugatePartner
+      ``RiemannGaussian.pairedEtaLogGapMoment_eq_factorial_iff_lt_multiplicity
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove arithmetic rigidity for completed eta leading moments; no theorem implies RH.</text>\n" ++
+      "bound the explicit first eta gap-moment defects at complementary tilts; no theorem implies RH.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -318,17 +318,22 @@ run_cmd do
         "identifies it with the corresponding iterated Laplace derivative. At a " ++
         "zero the Laplace partition has the exact zeta multiplicity, its leading " ++
         "moment is nonzero, and the completed partner identity is a literal relation " ++
-        "between the two explicit leading moments. No independent arithmetic " ++
-        "inequality forcing the horizontal displacement to vanish is proved, " ++
+        "between the two explicit leading moments. Lean further decomposes each " ++
+        "moment into the eta support and omitted logarithmic gaps and proves the " ++
+        "complete half-line value n!/s^(n+1). At a zero of multiplicity m, the " ++
+        "gap moments match that elementary value exactly for k<m and first differ " ++
+        "at k=m; the completed partner identity is an exact relation between those " ++
+        "first defects. No independent arithmetic inequality forcing the horizontal " ++
+        "displacement to vanish is proved, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove an independent eta-arithmetic inequality for the explicit " ++
-        "completion-coupled leading logarithmic-time moments that excludes " ++
-        "complementary off-critical tilts, or force the exact " ++
+        "Prove an independent quantitative inequality for the explicit first " ++
+        "eta gap-moment defects that excludes complementary off-critical tilts, " ++
+        "or force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")

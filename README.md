@@ -26,22 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now turns the completed paired-eta local symmetry into a literal
-arithmetic moment identity. For the fixed positive logarithmic eta measure
-`mu`, every moment `integral t^n * exp(-s*t) dmu(t)` is proved integrable when
-`Re(s) > 0`, and the `n`th derivative of its infinite Laplace partition is
-exactly `(-1)^n` times that moment. The derivative-under-integral step is
-discharged through a checked exponential-domain argument.
+Lean now resolves every logarithmic-time eta moment into its support and
+omitted-gap pieces. The complete positive-half-line moment is proved exactly:
+`integral_0^infinity t^n * exp(-s*t) dt = n!/s^(n+1)` for `Re(s) > 0`.
+All complex integrability, differentiation under the integral, and measure
+decomposition steps are checked in Lean.
 
-At every nontrivial zero of arbitrary multiplicity `m`, Lean proves that the
-Laplace partition has exactly multiplicity `m`, its lower derivatives vanish,
-and its leading moment is nonzero. Substitution into the previously proved
-completion identity yields an exact completion- and spectral-parameter-
-weighted conjugate relation between the explicit moments at `rho` and
-`1-conj(rho)`. No simplicity assumption is used. This remains compatible with
-off-critical zeros; the open frontier is an independent eta-arithmetic
-inequality for these two concrete moments that forces the horizontal
-displacement to vanish.
+At a nontrivial zero of arbitrary multiplicity `m`, the explicit arithmetic
+gap moment equals this elementary full-half-line value at every order `k < m`
+and differs for the first time at `k = m`. Lean also rewrites the completed
+partner symmetry as an exact relation between these first nonzero gap-moment
+defects at `rho` and `1-conj(rho)`. Thus the open problem is now a concrete
+inequality for integrals over the explicit omitted logarithmic intervals.
+No such inequality is yet proved, and the current results remain compatible
+with off-critical zeros.
 
 ## Mathematical Program
 
