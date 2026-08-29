@@ -99,11 +99,14 @@ exchange, and identifies the complete transform on every real `sigma > 1`
 with `(zeta'/zeta)(sigma)/(sigma-1/2)^2 + 4/(sigma-1)`. After exposing every
 completed-zeta pole and Archimedean term, Lean proves that this same literal
 arithmetic integral recovers the genuine spectral-xi negative logarithmic
-derivative at `-i(sigma-1/2)`. Extending this safe-ray identity by a proved
-continuation, rigidity, or sign theorem and proving the required bound for
-`A_N` are the open arithmetic tasks. These estimates are not RH and do not
-exclude a finite or sparse off-line divisor; a restatement, hidden limit
-interchange, or conditional implication is not a substitute.
+derivative at `-i(sigma-1/2)`. Lean also proves genuine integrability and the
+global substitution `x=exp(t)`, giving a literal one-sided Laplace recovery
+formula at every parameter `lambda > 1/2`. Extending this safe-ray identity
+toward `lambda=0` by a proved continuation, Tauberian, rigidity, or sign
+theorem and proving the required bound for `A_N` are the open arithmetic
+tasks. These estimates are not RH and do not exclude a finite or sparse
+off-line divisor; a restatement, hidden limit interchange, or conditional
+implication is not a substitute.
 
 ## Soundness invariant
 

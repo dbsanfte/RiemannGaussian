@@ -26,22 +26,24 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now converts the complete real Mellin transform of Suzuki's weighted
-Chebyshev logarithmic-average error into the genuine spectral-`xi`
-logarithmic derivative. Write `M(sigma)` for the literal integral of
-`-A(x) x^(-sigma-1/2)` over `x > 1`, and let `C(sigma)` be the explicit two
-pole, `log(pi)`, and digamma correction from the completed zeta function.
-For every real `sigma > 1`, Lean proves
+Lean now puts Suzuki's weighted Chebyshev logarithmic-average error into
+literal one-sided Laplace coordinates. It proves the global substitution
+`x = exp(t)` including the Jacobian, and separately proves genuine
+integrability of the Mellin and Laplace kernels. With
+`S(t) = -A(exp(t))`, and with `C` the explicit completed-zeta pole,
+`log(pi)`, and digamma correction, Lean proves for every real
+`lambda > 1/2` that
 
-`XiNeg(-i(sigma-1/2))
-  = -(sigma-1/2)^2 (M(sigma)-4/(sigma-1)) - C(sigma)`,
+`XiNeg(-i lambda)
+  = -lambda^2 (integral_0^infinity S(t) exp(-lambda t) dt
+      - 4/(lambda-1/2)) - C(lambda+1/2)`,
 
-where `XiNeg(z) = -xi'(1/2+i z)/xi(1/2+i z)`. The proof rests on the already
-checked atom integrability, absolute norm summability, countable
-sum-integral exchange, von-Mangoldt `L`-series identity, and the fully
-expanded completed-zeta logarithmic derivative. This is an exact
-arithmetic-to-spectral recovery theorem on the zero-free safe ray. Analytic
-continuation of the arithmetic integral, a sign or rigidity theorem, the
+where `XiNeg(z) = -xi'(1/2+i z)/xi(1/2+i z)`. The proof rests on checked
+atom integrability, absolute norm summability, countable sum-integral
+exchange, the von-Mangoldt `L`-series identity, and the fully expanded
+completed-zeta logarithmic derivative. This is an exact arithmetic Laplace
+representation of spectral `xi` on its zero-free safe ray. Proved
+continuation toward `lambda = 0`, a Tauberian/sign/rigidity theorem, the
 needed bound on `A_N`, and every unconditional zero-location constraint
 remain open.
 

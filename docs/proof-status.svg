@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 283 modules · 7554 declarations · 6495 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 284 modules · 7565 declarations · 6504 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">EQUIVALENCES AND REDUCTIONS — NOT A PROOF CHAIN</text>
@@ -77,8 +77,8 @@
   </g>
   <g class="proved bridge">
     <rect x="500" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.xiSpectralNegativeLogDerivative_mellinSpectralPoint_eq_arithmeticTransform</title>
-    <text x="572" y="173">Arithmetic Mellin transform</text>
+    <title>RiemannGaussian.xiSpectralNegativeLogDerivative_neg_I_mul_eq_laplaceTransform</title>
+    <text x="572" y="173">Arithmetic Laplace transform</text>
     <text x="572" y="191">= spectral xi log derivative  ✓</text>
   </g>
   <g class="open">

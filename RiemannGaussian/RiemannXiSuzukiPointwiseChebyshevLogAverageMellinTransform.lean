@@ -377,6 +377,55 @@ private theorem tsum_integral_suzukiChebyshevLogAverageMellinFullTerm
           (sigma - 1 / 2 : ℝ) ^ 2 := by rw [tsum_div_const]]
   ring
 
+private theorem integrable_tsum_suzukiChebyshevLogAverageMellinFullTerm
+    {sigma : ℝ} (hsigma : 1 < sigma) :
+    Integrable (fun x : ℝ =>
+      ∑' k : ℕ, suzukiChebyshevLogAverageMellinFullTerm sigma k x) := by
+  have hterm : ∀ k : ℕ,
+      Integrable (suzukiChebyshevLogAverageMellinFullTerm sigma k) :=
+    fun k => integrable_suzukiChebyshevLogAverageMellinFullTerm hsigma k
+  have hmeas : AEStronglyMeasurable (fun x : ℝ =>
+      ∑' k : ℕ, suzukiChebyshevLogAverageMellinFullTerm sigma k x) :=
+    AEStronglyMeasurable.tsum (fun k => (hterm k).aestronglyMeasurable)
+  refine ⟨hmeas, ?_⟩
+  rw [hasFiniteIntegral_iff_enorm]
+  calc
+    (∫⁻ x : ℝ,
+        ‖∑' k : ℕ, suzukiChebyshevLogAverageMellinFullTerm sigma k x‖ₑ) ≤
+        ∫⁻ x : ℝ, ∑' k : ℕ,
+          ‖suzukiChebyshevLogAverageMellinFullTerm sigma k x‖ₑ := by
+      apply lintegral_mono
+      intro x
+      exact enorm_tsum_le_tsum_enorm
+    _ = ∑' k : ℕ, ∫⁻ x : ℝ,
+          ‖suzukiChebyshevLogAverageMellinFullTerm sigma k x‖ₑ := by
+      rw [lintegral_tsum (fun k => (hterm k).aestronglyMeasurable.enorm)]
+    _ = ∑' k : ℕ, ENNReal.ofReal
+          (∫ x : ℝ, ‖suzukiChebyshevLogAverageMellinFullTerm sigma k x‖) := by
+      apply tsum_congr
+      intro k
+      exact (ofReal_integral_norm_eq_lintegral_enorm (hterm k)).symm
+    _ < ⊤ :=
+      (summable_integral_norm_suzukiChebyshevLogAverageMellinFullTerm
+        hsigma).tsum_ofReal_lt_top
+
+/-- Suzuki's logarithmic-average Mellin integrand is genuinely integrable on `x > 1` when `sigma > 1`. -/
+theorem integrableOn_suzukiChebyshevLogAverageError_mul_mellinWeight
+    {sigma : ℝ} (hsigma : 1 < sigma) :
+    IntegrableOn
+      (fun x : ℝ => suzukiChebyshevLogAverageError x *
+        x ^ (-sigma - 1 / 2 : ℝ))
+      (Set.Ioi (1 : ℝ)) := by
+  rw [← integrable_indicator_iff measurableSet_Ioi]
+  rw [show Set.indicator (Set.Ioi (1 : ℝ))
+      (fun x : ℝ => suzukiChebyshevLogAverageError x *
+        x ^ (-sigma - 1 / 2 : ℝ)) =
+      fun x : ℝ =>
+        ∑' k : ℕ, suzukiChebyshevLogAverageMellinFullTerm sigma k x by
+    funext x
+    exact indicator_suzukiChebyshevLogAverageMellin_eq_tsum_full sigma x]
+  exact integrable_tsum_suzukiChebyshevLogAverageMellinFullTerm hsigma
+
 /-- Exact real Mellin transform of Suzuki's logarithmic-average error on the half-plane `sigma > 1`. -/
 theorem integral_suzukiChebyshevLogAverageError_mul_mellinWeight
     {sigma : ℝ} (hsigma : 1 < sigma) :
