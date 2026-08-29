@@ -26,18 +26,18 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now writes every eta gap moment as an absolutely convergent sum over the
-actual omitted intervals `(log(2n+2), log(2n+3)]`. It proves the full positive
-real moment is `n!/sigma^(n+1)` and bounds the complex support and gap moments
-by this positive envelope.
+Lean now packages the first nonzero eta gap-moment defect at every nontrivial
+zero and proves it is nonzero. Completed xi symmetry gives an exact complex
+partner identity, equality of the two positive completion-weighted defect
+magnitudes, and an exact reciprocal-weight ratio for the raw defect norms at
+the complementary tilts `sigma` and `1-sigma`.
 
-For the first nonzero defect at a zero of multiplicity `m`, Lean obtains a
-strict explicit saving from the first omitted interval `(log 2, log 3]`:
-the defect norm is at most the full factorial bound minus
-`(log 3-log 2)*(log 2)^m*exp(-sigma*log 3)`. This is the first checked
-quantitative estimate on the exact arithmetic defect frontier. It is still
-one-sided; a complementary-tilt comparison or matching lower bound strong
-enough to force `sigma = 1/2` remains open, and no current theorem implies RH.
+Combining this identity with the explicit saving from `(log 2, log 3]`, Lean
+bounds the same completed defect simultaneously by the first-gap envelope at
+both tilts. This is a genuine complementary coupling, but symmetry alone is
+compatible with off-critical zeros. An independent matching lower bound or
+strict tilt incompatibility strong enough to force `sigma = 1/2` remains open;
+no current theorem implies RH.
 
 ## Mathematical Program
 

@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The first eta gap-moment defect has a strict explicit saving from the interval between log 2 and log 3"
-    lineOne := "first eta gap defect"
-    lineTwo := "strict first-gap saving"
+    label := "The common completed eta gap defect has simultaneous explicit bounds at both complementary tilts"
+    lineOne := "completed eta defect"
+    lineTwo := "two-tilt bounds"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.norm_pairedEtaLeadingLogGapMomentDefect_le_firstGap
+      ``RiemannGaussian.pairedEtaCompletedLeadingLogGapMomentMagnitude_le_both_tilts
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "compare the bounded first eta gap defects at complementary tilts; no theorem implies RH.</text>\n" ++
+      "a matching lower bound or strict tilt incompatibility that forces Re rho = 1/2.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -326,17 +326,19 @@ run_cmd do
         "first defects. Each gap moment is now an absolutely convergent sum over the " ++
         "literal omitted intervals. Lean computes the positive real envelope as " ++
         "n!/sigma^(n+1) and proves a strict saving from the first gap equal to " ++
-        "(log 3-log 2)(log 2)^n exp(-sigma log 3). This gives a one-sided bound " ++
-        "for the leading defect, but no complementary comparison or lower bound " ++
-        "forcing the horizontal displacement to vanish is proved, " ++
+        "(log 3-log 2)(log 2)^n exp(-sigma log 3). Completion symmetry now gives " ++
+        "an exact reciprocal-weight ratio for the two nonzero leading defects and " ++
+        "bounds their common positive completed magnitude by the explicit envelope " ++
+        "at both complementary tilts. No independent lower bound or strict " ++
+        "incompatibility forcing the horizontal displacement to vanish is proved, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove a complementary-tilt comparison or matching lower bound for the " ++
-        "explicit first eta gap-moment defects that excludes off-critical tilts, " ++
+        "Prove a matching lower bound or strict complementary-tilt incompatibility " ++
+        "for the explicit first eta gap-moment defects that excludes off-critical tilts, " ++
         "or force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),

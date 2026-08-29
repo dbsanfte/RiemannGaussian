@@ -427,6 +427,13 @@ computed as `n!/sigma^(n+1)`, and the first gap gives the strict saving
 upper bound for the first nonzero defect at every zeta zero. It is not the
 missing rigidity: the next hard input is a complementary-tilt comparison or
 lower bound that combines with this saving to force `sigma=1/2`.
+Lean now packages that nonzero leading defect canonically and combines its
+first-gap bound with the exact completed partner symmetry. The two raw defect
+norms have the exact reciprocal completion-weight ratio, while their common
+positive completed magnitude is bounded by the explicit first-gap envelope at
+both complementary tilts. This closes the purely symmetry-driven comparison;
+the remaining hard input must be an independent matching lower bound or strict
+tilt incompatibility that excludes `sigma != 1/2`.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
