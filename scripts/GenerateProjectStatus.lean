@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The common completed eta gap defect has simultaneous explicit bounds at both complementary tilts"
-    lineOne := "completed eta defect"
-    lineTwo := "two-tilt bounds"
+    label := "Finite phase-sensitive eta lower certificates converge at both complementary tilts to the common completed defect"
+    lineOne := "finite eta bounds"
+    lineTwo := "common paired limit"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.pairedEtaCompletedLeadingLogGapMomentMagnitude_le_both_tilts
+      ``RiemannGaussian.tendsto_pairedEtaCompletedLeadingLogFiniteLower_both
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "a matching lower bound or strict tilt incompatibility that forces Re rho = 1/2.</text>\n" ++
+      "a uniform finite-prefix inequality that separates complementary off-line tilts.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -329,16 +329,21 @@ run_cmd do
         "(log 3-log 2)(log 2)^n exp(-sigma log 3). Completion symmetry now gives " ++
         "an exact reciprocal-weight ratio for the two nonzero leading defects and " ++
         "bounds their common positive completed magnitude by the explicit envelope " ++
-        "at both complementary tilts. No independent lower bound or strict " ++
-        "incompatibility forcing the horizontal displacement to vanish is proved, " ++
+        "at both complementary tilts. Lean now preserves phase in arbitrary finite " ++
+        "support prefixes and bounds the remaining order-n moment tail by " ++
+        "exp(-(1-theta)sigma log(2N+1)) n!/(theta sigma)^(n+1). The resulting " ++
+        "nonnegative finite lower certificates converge to the exact nonzero defect " ++
+        "norm and are eventually positive. At complementary zeros their completed " ++
+        "versions converge to the same positive magnitude. No uniform finite-prefix " ++
+        "inequality forcing the horizontal displacement to vanish is proved, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove a matching lower bound or strict complementary-tilt incompatibility " ++
-        "for the explicit first eta gap-moment defects that excludes off-critical tilts, " ++
+        "Prove a uniform tilt-separating inequality for the finite phase-sensitive " ++
+        "eta moment prefixes that excludes complementary off-critical tilts, " ++
         "or force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),

@@ -26,18 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now packages the first nonzero eta gap-moment defect at every nontrivial
-zero and proves it is nonzero. Completed xi symmetry gives an exact complex
-partner identity, equality of the two positive completion-weighted defect
-magnitudes, and an exact reciprocal-weight ratio for the raw defect norms at
-the complementary tilts `sigma` and `1-sigma`.
+Lean now retains the oscillatory phase of the leading eta defect in a finite
+arithmetic approximation. For every cutoff `N` and every `0 < theta < 1`, the
+complete complex moment is exactly its first `N` support-interval moments plus
+the literal remaining support tail. Lean bounds that tail by
+`exp(-(1-theta)*sigma*log(2N+1))*m!/(theta*sigma)^(m+1)`.
 
-Combining this identity with the explicit saving from `(log 2, log 3]`, Lean
-bounds the same completed defect simultaneously by the first-gap envelope at
-both tilts. This is a genuine complementary coupling, but symmetry alone is
-compatible with off-critical zeros. An independent matching lower bound or
-strict tilt incompatibility strong enough to force `sigma = 1/2` remains open;
-no current theorem implies RH.
+Subtracting this error from the finite-prefix norm gives a rigorous
+nonnegative lower certificate. These certificates converge to the exact
+nonzero leading-defect norm and are eventually strictly positive at every
+nontrivial zero. After completion weighting, the sequences at `sigma` and
+`1-sigma` converge to the same positive magnitude and obey the complementary
+first-gap upper constraints. What remains open is a uniform, tilt-separating
+inequality for the finite arithmetic prefixes strong enough to force
+`sigma = 1/2`; no current theorem implies RH.
 
 ## Mathematical Program
 

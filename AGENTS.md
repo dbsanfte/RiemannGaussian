@@ -434,6 +434,16 @@ positive completed magnitude is bounded by the explicit first-gap envelope at
 both complementary tilts. This closes the purely symmetry-driven comparison;
 the remaining hard input must be an independent matching lower bound or strict
 tilt incompatibility that excludes `sigma != 1/2`.
+Lean now retains phase through arbitrary finite support prefixes. For every
+`0<theta<1`, it splits the full order-`m` moment exactly at any cutoff `N` and
+bounds the literal tail by
+`exp(-(1-theta)*sigma*log(2N+1))*m!/(theta*sigma)^(m+1)`. The resulting
+nonnegative finite lower certificates converge to the exact nonzero defect
+norm and are eventually positive. Their completed versions at complementary
+zeros converge to the same positive magnitude while satisfying the opposite
+first-gap upper bounds. The remaining hard input is now a uniform
+tilt-separating estimate on these finite phase-sensitive prefixes; convergence
+alone is compatible with an off-critical pair.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
