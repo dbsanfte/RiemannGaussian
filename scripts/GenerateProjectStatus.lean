@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "At every nontrivial zeta zero the normalized localized eta completion distortion vanishes at large proper time"
-    lineOne := "zero-localized Gram"
-    lineTwo := "large-time limit = 0"
+    label := "The first formal multiplicity-sensitive localized eta Gram coefficient is strictly positive"
+    lineOne := "first formal coeff."
+    lineTwo := "explicit and positive"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.tendsto_pairedEtaLocalizedCompletionWeightDistortionIntegral_div_sqrt_atTop_zero_of_nontrivialZetaZero
+      ``RiemannGaussian.pairedEtaLocalizedGaussianLargeTimeLeadingCoefficient_pos
   }
 ]
 
@@ -210,8 +210,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "extract the first nonzero large-time coefficient and force complementary tilt rigidity.</text>\n" ++
+  "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
+      "upgrade the formal coefficient to the actual limit, then force complementary tilt rigidity.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -375,8 +375,16 @@ run_cmd do
         "convergence that the localized norm divided by sqrt(pi/tau) tends exactly to " ++
         "the squared eta partition value at its center. This normalized limit vanishes " ++
         "at every nontrivial zero, at its complementary tilt, and for the localized " ++
-        "completion distortion. The leading zero limit is compatible with every zero; " ++
-        "no multiplicity-sensitive coefficient or phase obstruction forcing " ++
+        "completion distortion. Lean now expands the literal eta product moments at a " ++
+        "zero of exact multiplicity m: all difference moments below order 2m vanish, " ++
+        "and the order-2m moment is (-1)^m choose(2m,m) times the squared norm of " ++
+        "the first nonzero eta log moment. The matching Gaussian Taylor sign yields " ++
+        "the explicit strictly positive formal coefficient choose(2m,m)|M_m|^2/" ++
+        "(4^m m!). Completion symmetry gives an exact equality between the two " ++
+        "complementary coefficients after their completion-and-spectral weights are " ++
+        "squared. Uniform Taylor-remainder domination under the product integral is " ++
+        "not yet proved, so this formal coefficient is not yet asserted as the actual " ++
+        "scaled large-time limit. No phase obstruction forcing " ++
         "the horizontal displacement to vanish is proved, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -384,8 +392,9 @@ run_cmd do
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Extract the first nonzero multiplicity-dependent coefficient in the " ++
-        "large-proper-time localized eta Gram and prove its complementary relation " ++
+        "Upgrade the explicit positive multiplicity-dependent formal coefficient to " ++
+        "the actual scaled large-proper-time localized eta Gram limit by a uniform " ++
+        "Taylor-remainder theorem, then prove its weighted complementary relation " ++
         "forces zero location; alternatively force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),
