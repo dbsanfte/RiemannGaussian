@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The finite completed eta derivative residual has an explicit two-tail bound and tends to zero"
-    lineOne := "completed eta phase"
-    lineTwo := "residual -> 0"
+    label := "The cutoff-optimized completed eta residual bound retains both full complementary exponents up to logarithmic powers"
+    lineOne := "optimized eta tails"
+    lineTwo := "full sigma rates"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.tendsto_pairedEtaCompletedLeadingLogFinitePartnerResidual_zero
+      ``RiemannGaussian.norm_pairedEtaCompletedLeadingLogFinitePartnerResidual_le_nearSharp
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "an arithmetic phase obstruction to off-line completed-residual decay.</text>\n" ++
+      "an eta-specific lower or phase incompatibility across complementary tilts.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -338,7 +338,13 @@ run_cmd do
         "also a signed derivative of the genuine finite eta Laplace partition. Lean " ++
         "forms the full complex completed partner residual, rewrites it exactly as " ++
         "the two discarded tails, bounds it by their completion-weighted envelopes, " ++
-        "and proves that it tends to zero. No arithmetic phase obstruction forcing " ++
+        "and proves that it tends to zero. Lean now chooses the tail split at each " ++
+        "cutoff as theta_N=(n+1)/(sigma log(2N+1)), proves its eventual admissibility, " ++
+        "and derives the full-exponent envelope exp(-sigma log(2N+1)+(n+1)) n! " ++
+        "(log(2N+1)/(n+1))^(n+1). This sharper envelope tends to zero, gives convergent " ++
+        "eventually valid and positive finite lower certificates, and bounds the " ++
+        "completed residual at both complementary tilts. No arithmetic phase " ++
+        "obstruction forcing " ++
         "the horizontal displacement to vanish is proved, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -346,8 +352,8 @@ run_cmd do
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove an arithmetic phase obstruction preventing the finite completed eta " ++
-        "derivative residual from tending to zero at complementary off-critical tilts, " ++
+        "Prove an eta-specific lower or phase incompatibility for the finite completed " ++
+        "eta derivative residual at complementary off-critical tilts, " ++
         "or force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),

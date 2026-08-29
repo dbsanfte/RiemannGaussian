@@ -26,19 +26,23 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now identifies every finite order-`m` moment prefix with `(-1)^m` times
-the corresponding derivative of the actual finite positive eta Laplace
-partition. It then forms the full complex completed partner residual between
-those finite derivatives at `sigma` and `1-sigma`, retaining phase, parity,
-completion factors, and conjugation.
+Lean now optimizes the finite eta moment-tail split at each cutoff by taking
+`theta_N = (m+1)/(sigma*log(2N+1))`. Past a proved explicit threshold, this
+lies in `(0,1)` and converts the earlier fractional-exponent estimate into the
+exact envelope
+`exp(-sigma*log(2N+1)+(m+1))*m!*(log(2N+1)/(m+1))^(m+1)`.
+Thus the bound retains the full horizontal exponent `sigma`, losing only a
+fixed logarithmic power, and Lean proves that it tends to zero.
 
-Exact infinite symmetry rewrites this finite residual entirely as the two
-discarded support tails. Lean bounds its norm by the sum of the two explicit
-completion-weighted tail envelopes and proves that the complex residual tends
-to zero. This gives a precise finite arithmetic rigidity target, but the
-decay is also forced for a hypothetical off-critical zero. What remains open
-is a uniform arithmetic phase obstruction showing that such decay cannot
-occur away from `sigma = 1/2`; no current theorem implies RH.
+The sharper rate is propagated through the phase-sensitive finite lower
+certificates and the full complex completed partner residual at complementary
+tilts. Those certificates converge to the exact nonzero leading defect and
+are eventually both valid and positive; the residual is eventually bounded
+by the two full-exponent complementary envelopes. This is stronger finite
+control, not a zero-location theorem: the same decay remains compatible with
+an off-critical zero. The open step is an eta-specific lower or phase
+incompatibility coupling the complementary tilts; no current theorem implies
+RH.
 
 ## Mathematical Program
 

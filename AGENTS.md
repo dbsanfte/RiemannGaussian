@@ -453,6 +453,13 @@ envelopes, so the complex residual tends to zero. This is the phase-sensitive
 finite arithmetic target; the next hard input must obstruct that decay
 uniformly away from `sigma=1/2`. The proved decay itself is compatible with a
 hypothetical off-critical zero and is not such an obstruction.
+Lean now also chooses the split as
+`theta_N=(m+1)/(sigma*log(2N+1))` after its explicit admissibility threshold.
+The resulting checked tail envelope retains the full exponent `sigma` with
+only a `log(2N+1)^(m+1)` loss and tends to zero. Lean propagates this sharper
+bound to the finite lower certificates and to the complete complex partner
+residual at both complementary tilts. This improves the quantitative
+interface but supplies no independent lower or phase incompatibility.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
