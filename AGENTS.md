@@ -246,7 +246,13 @@ Lean proves exactly that the normalized radial quotient is one half the
 radius times the radial derivative of `log |E|^2`. Genuine `L¹` integrability
 transfers through this identity, and one sequence of finite heat-weighted
 paired-eta log-norm variations converges to the detector. No arithmetic bound
-forcing that variation to vanish has been proved.
+forcing that variation to vanish has been proved. Lean now also constructs
+the explicit finite paired-eta polynomials `E_N` and derivative polynomials
+`D_N`, proves both converge locally uniformly on `Re s > 0`, and proves
+`D_N / E_N` converges locally uniformly to the literal eta logarithmic
+derivative on its exact zero-free domain. The next interface is the uniform
+transfer of these finite arithmetic quotients to every selected detector
+circle; no quantitative convergence rate is currently claimed.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

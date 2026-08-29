@@ -26,20 +26,18 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now removes the singular quotient from the diagonal eta-flux integrand
-without erasing its divisor mass. On every selected zero-free circle it proves
-the exact arithmetic transport identity
-`d/dr log|E(rho+r*exp(i*theta))|² = 2*Re(exp(i*theta)*D/E)`, where `E`
-and `D` are the convergent paired-eta series and its differentiated series.
-The chosen radii are now also proved to keep every finite-window circle in
-`Re s > 0` and off the complete eta divisor.
+Lean now constructs the explicit finite odd-even eta polynomials `E_N` and
+their termwise derivative polynomials `D_N`. It proves `E_N → E` and
+`D_N → D` locally uniformly throughout `Re s > 0`, using a checked
+summable majorant and the Cauchy derivative theorem. On the exact zero-free
+domain it consequently proves the locally uniform finite-arithmetic limit
+`D_N/E_N → D/E`.
 
-Lean transfers genuine `L¹` integrability through this identity and proves
-that one sequence of finite heat-weighted log-norm radial variations converges
-to `2*pi` times the complete RH-equivalent detector. This does not estimate
-that variation or prove it vanishes. The open frontier is arithmetic rigidity
-for the log norm of the paired-eta series strong enough to force that limit to
-zero.
+This supplies a rigorous finite Dirichlet-polynomial interface to the existing
+diagonal heat-weighted log-norm flux, but it supplies neither a quantitative
+rate nor a vanishing estimate. The next step is to transfer this convergence
+uniformly to every selected detector circle and then isolate the finite
+arithmetic inequality whose global rigidity would force the detector to zero.
 
 ## Mathematical Program
 
