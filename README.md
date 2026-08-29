@@ -26,19 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-On the canonical cofinal selected Cauchy--Green rectangles, Lean now proves
-that the actual arithmetic outer-boundary minus through-divisor bulk functional
-is purely imaginary. Its imaginary part is exactly `2*pi` times the selected
-finite heat sum, so it is nonnegative, monotone with height, and strictly
-positive as soon as a window contains an off-axis zero. It vanishes at a
-finite stage exactly when that selected zero window is empty.
+Lean now constructs a genuine near-edge selected half-strip exhaustion. Its
+left sides converge to `Re p=-1/2`, its right sides to the critical line
+`Re p=0`, and its vertical heights to infinity. Both horizontal sides avoid
+the complete bounded-height divisor by an explicit positive finite-gap
+radius. Every selected zero in a stage is strictly inside, every other
+bounded-height zero is outside, and every fixed off-axis selected zero is
+proved to enter eventually.
 
-These arithmetic scalars converge to `2*pi` times the complete boundary-heat
-total, making convergence to zero equivalent to RH. This removes complex and
-finite-stage cancellation from the frontier, but it is still a reformulation:
-the next step requires an unconditional arithmetic rigidity theorem forcing
-this explicit nonnegative monotone scalar to vanish. No unconditional
-zero-location conclusion is yet proved.
+The exact arithmetic boundary-minus-bulk identity holds on each of these
+rectangles with the filtered positive heat sum visible. This replaces the
+earlier zero-extremum geometry, whose correctness was useful but whose sides
+need not approach the strip edges, with contours suitable for independent
+estimates. Passing the filtered sums to the complete detector and then proving
+unconditional rigidity remain open; no zero-location conclusion is claimed.
 
 ## Mathematical Program
 

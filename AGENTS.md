@@ -161,8 +161,13 @@ to zero is equivalent to RH. Its real part is identically zero, while its
 imaginary part is exactly `2*pi` times the selected finite heat sum. Lean proves
 this scalar is nonnegative, monotone along the quantitative heights, strictly
 positive when a window contains an off-axis zero, and zero exactly when that
-window is empty. Proving an unconditional arithmetic rigidity theorem that
-forces this explicit scalar to vanish remains open.
+window is empty. Lean now also constructs a genuine near-edge half-strip
+exhaustion: the horizontal sides converge to `-1/2` and `0` while staying an
+explicit positive distance from the bounded-height divisor, the vertical
+height tends to infinity, and every fixed selected zero enters eventually.
+Each stage satisfies the exact filtered positive Cauchy--Green identity.
+Passing these filtered sums to the complete detector and then proving an
+unconditional arithmetic rigidity theorem remain open.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.
