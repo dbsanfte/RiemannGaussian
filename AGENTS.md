@@ -117,12 +117,16 @@ proves that the pole-cleared response has residue `m_rho` at every shifted
 nontrivial zero, without an exceptional-coordinate hypothesis. Applying the
 fixed-positive-time heat weights to these arithmetic residues gives exactly
 the genuine spectral-xi heat residues, and their absolutely convergent series
-sums to the complete existing fixed-time heat. Representing that series by
-one controllable arithmetic contour or boundary expression, proving the
-required bound for `A_N`, and deriving a global zero-location constraint are
-the open arithmetic tasks. These estimates are not RH and do not exclude a
-finite or sparse off-line divisor; a restatement, hidden limit interchange,
-or conditional implication is not a substitute.
+sums to the complete existing fixed-time heat. In the same shifted coordinate,
+Lean now derives the smooth boundary heat kernel and its full real derivative,
+proves its Cauchy--Green source is nonzero on the critical boundary, and proves
+an exact arithmetic area--boundary identity for the heat-weighted pole-cleared
+response on every zero-free rectangle. Extending that identity across xi-zero
+punctures and an expanding half-strip, controlling its boundary and bulk
+terms, proving the required bound for `A_N`, and deriving a global
+zero-location constraint are the open arithmetic tasks. These estimates are
+not RH and do not exclude a finite or sparse off-line divisor; a restatement,
+hidden limit interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 

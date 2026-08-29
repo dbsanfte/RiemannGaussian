@@ -26,24 +26,22 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-The completed Suzuki Laplace response inherits an artificial factor `z^-2`
-from the logarithmic-average Mellin transform. Lean now removes that factor
-and constructs the pole-cleared response `P`. On the literal transform's
-absolute-convergence half-plane, `P(z) = z^2 T(z)`; away from xi zeros it is
-holomorphic throughout the shifted right half-plane.
+Lean now places the RH-equivalent fixed-time boundary heat detector directly
+in the shifted arithmetic coordinate `p = rho - 1/2`. Its smooth kernel is
+`-2 re(p) exp(-tau ((x-im(p))^2 + re(p)^2))`: it vanishes on the critical
+boundary, is positive in the selected half-strip, and its pole-cleared local
+arithmetic residues sum to the complete boundary heat.
 
-For every nontrivial zeta zero `rho`, with `p_rho = rho - 1/2`, Lean proves
-`(z-p_rho) P(z) -> m_rho`. This is the genuine analytic zero multiplicity and
-has no exceptional `p_rho ≠ 0` hypothesis. Applying the existing
-fixed-positive-time heat weight to each local arithmetic residue gives
-exactly the corresponding spectral-xi heat residue. Lean then proves that
-the complete arithmetic residue series is absolutely convergent and sums to
-the existing entire fixed-time xi heat.
+Because this weight is not holomorphic, Lean computes its full real
+derivative and exact nonzero Cauchy--Green source instead of applying an
+invalid one-variable residue argument. It now proves a genuine arithmetic
+area--boundary identity for the heat-weighted pole-cleared Laplace response
+on every zero-free rectangle.
 
-This makes the arithmetic continuation and the fixed-proper-time heat meet
-term by term before any integration over proper time. It does not yet express
-the complete series by one arithmetic contour or boundary integral, nor does
-it provide the rigidity or sign estimate needed to force zero locations.
+The next step is to pass this identity across punctures at xi zeros and then
+through an expanding shifted half-strip. The required control of the resulting
+boundary and bulk terms—and the rigidity estimate that would force zero
+locations—remains open.
 
 ## Mathematical Program
 
