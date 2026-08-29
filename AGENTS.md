@@ -379,6 +379,15 @@ normalized finite eta polynomial with the strictly positive double kernel
 eta measure. Lean proves all integrability hypotheses, nonnegativity, and the
 fully expanded finite sum over pairs of support intervals. This remains
 generic positive-Laplace structure and does not relate `sigma` to `1-sigma`.
+Lean now differentiates that genuine double integral twice in `sigma`. Its
+first derivative is exactly the negative first logarithmic-time moment and its
+second derivative is exactly the positive second moment. For every nonempty
+truncation at positive Gaussian time, both moments are strictly positive; the
+raw Gram profile is therefore strictly decreasing and strictly convex. Lean
+also proves that its values at `sigma` and `1-sigma` are equal exactly when
+`sigma=1/2`. This is a closure interface, not the missing coupling: no theorem
+derives the complementary equality from zeta, xi, or the finite eta zero
+condition.
 The next hard input must be an independent eta-specific completed symmetry or
 complementary-derivative mechanism deriving the conjecture-strength coupling.
 A valid next step must retain the distributional zero contributions in any

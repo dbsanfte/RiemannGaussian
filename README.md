@@ -26,24 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now identifies the normalized finite paired-eta polynomial with a
-positive Gaussian--Laplace Gram form. Let `E_N` be the first `N` odd-even eta
-pairs and let `mu_N` be the finite sum of Lebesgue restrictions to their
-logarithmic intervals. For `sigma != 0` and `tau > 0`, Lean proves exactly
+Lean now differentiates the genuine finite paired-eta Gaussian--Laplace Gram
+integral with respect to its real tilt `sigma`. Its first derivative is exactly
+the negative first logarithmic-time moment and its second derivative is exactly
+the second moment. For every nonempty truncation and `tau > 0`, both moments
+are strictly positive. The raw Gram profile is therefore strictly decreasing
+and strictly convex in `sigma`.
 
-`integral exp(-tau*y^2) * |E_N(sigma+i*y)/(sigma+i*y)|^2 dy`
-
-`= sqrt(pi/tau) * integral integral`
-
-`    exp(-sigma*(t+u)) * exp(-(t-u)^2/(4*tau)) dmu_N(u) dmu_N(t)`.
-
-The proof constructs `mu_N`, identifies its Laplace transform with `E_N(s)/s`,
-proves every required integrability and Fubini step, and expands the result as
-a finite sum over all pairs of eta-support intervals. The kernel is strictly
-positive and the resulting Gram forms are nonnegative. This is still not a
-zero-location theorem: the open frontier is an eta-specific completed symmetry
-or moment identity coupling `sigma` to `1-sigma`; positivity by itself cannot
-imply RH.
+As a precise symmetry interface, Lean proves that the two raw complementary
+values at `sigma` and `1-sigma` are equal if and only if `sigma = 1/2`. This is
+not yet a zero-location theorem: no checked result derives that equality from
+the zeta or xi functional equation. The open frontier is to construct the
+correct completed eta-specific normalization or moment identity that supplies
+such a complementary coupling without assuming RH.
 
 ## Mathematical Program
 

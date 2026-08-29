@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The normalized finite paired-eta Gaussian norm is a positive double integral over its logarithmic support"
-    lineOne := "normalized finite eta"
-    lineTwo := "positive Laplace Gram"
-    role := "bridge"
+    label := "Raw complementary finite eta Gram equality holds exactly at the central tilt"
+    lineOne := "raw finite eta Gram"
+    lineTwo := "paired equality iff 1/2"
+    role := "reduction"
     theoremName :=
-      ``RiemannGaussian.normalizedPairedEtaFiniteGaussianNorm_eq_doubleIntegral
+      ``RiemannGaussian.pairedEtaFiniteGaussianLaplaceGram_eq_complementary_iff
   }
 ]
 
@@ -298,9 +298,14 @@ run_cmd do
         "the finite positive logarithmic eta measure, identifies its Laplace " ++
         "transform with E_N(s)/s, and proves that the normalized eta Gaussian " ++
         "norm is exactly a positive double integral over that measure, including " ++
-        "all integrability, Fubini, and interval-expansion steps. No complementary " ++
-        "sigma-to-1-sigma coupling follows from this generic positivity, and no " ++
-        "current theorem implies RH.")),
+        "all integrability, Fubini, and interval-expansion steps. Lean now " ++
+        "differentiates this Gram form twice in sigma: its first derivative is " ++
+        "the negative first logarithmic-time moment and its second derivative is " ++
+        "the positive second moment. For every nonempty truncation and positive " ++
+        "Gaussian time both moments are strictly positive, so the raw profile is " ++
+        "strictly decreasing and strictly convex. Thus equality at complementary " ++
+        "tilts holds exactly at sigma=1/2. No theorem supplies that complementary " ++
+        "equality from zeta or xi, and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
