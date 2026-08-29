@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 333 modules · 8631 declarations · 7393 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 334 modules · 8643 declarations · 7402 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">EQUIVALENCES AND REDUCTIONS — NOT A PROOF CHAIN</text>
@@ -75,11 +75,11 @@
     <text x="412" y="173">signed work - A_N</text>
     <text x="412" y="191">- log N converges  ✓</text>
   </g>
-  <g class="proved bridge">
+  <g class="proved reduction">
     <rect x="500" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.nontrivialZetaZero_offCritical_etaGapSharpComplementary_certificate</title>
-    <text x="572" y="173">sharp eta-gap tails</text>
-    <text x="572" y="191">1/2 endpoint + O(N^-1)  ✓</text>
+    <title>RiemannGaussian.nontrivialZetaZero_re_eq_half_of_etaGapErrors_eventually_comparable</title>
+    <text x="572" y="173">gap comparability</text>
+    <text x="572" y="191">forces Re rho = 1/2  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
@@ -90,5 +90,5 @@
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: a symmetry-aware arithmetic coupling of the compatible complementary gap tails; no theorem implies RH.</text>
+  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: derive complementary eta-gap comparability from symmetry-aware arithmetic; no theorem implies RH.</text>
 </svg>

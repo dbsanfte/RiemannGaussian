@@ -26,27 +26,28 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves a sharp first-order bound for the explicit finite eta-gap
-error. If `D_N(s)` is the first `N` support-minus-gap second differences,
-Lean first proves the pointwise gain
+Lean now upgrades the sharp Euler-tail estimate to an exact normalized
+asymptotic. Throughout `Re(s) > 0`,
 
-`||delta^2 (2n+1)^(-s)|| <= ||s|| ||s+1|| (2n+1)^(-Re(s)-2)`.
+`(2N+1)^s * (G_N(s)-G(s)) -> -1/2`.
 
-An integral-test argument, also checked in Lean, sums this to an explicit
-one-power-smaller Euler-tail bound. Consequently, at every nontrivial zeta
-zero `rho`,
+At every nontrivial zeta zero `rho`, where `G(rho)=1`, taking norms gives
 
-`||G_N(rho)-1+(2N+1)^(-rho)/2||`
+`(2N+1)^Re(rho) * ||G_N(rho)-1|| -> 1/2`.
 
-`<= ||rho|| ||rho+1|| (2N+1)^(-Re(rho)-1)`.
+The functional-equation partner has the complementary exponent
+`1-Re(rho)`. Lean proves a general rigidity lemma: two raw errors with these
+positive scaled limits cannot be eventually comparable above and below by
+fixed positive constants unless their exponents agree. Consequently,
+eventual two-sided comparability of the gap errors at `rho` and its partner
+forces `Re(rho)=1/2`; if that comparison principle holds at every nontrivial
+zero, Lean derives Mathlib's `RiemannHypothesis`.
 
-The functional-equation partner satisfies the same sharp estimate at exponent
-`1-Re(rho)`. This confirms that the distinct complementary raw-tail rates are
-compatible, not contradictory. The immediate formal target is the normalized
-limit and a generic theorem that independent two-sided comparability forces
-the critical line. The genuinely open mathematics is then to derive such a
-coupling from a symmetry-aware arithmetic quantity, likely Gaussian/Gram or a
-complementary eta-moment identity.
+This is a checked conditional reduction, not a proof of its premise or of RH.
+No current theorem supplies the required comparison, and the separate sharp
+tails do not supply it. The open target is to derive a genuine coupling from
+symmetry-aware Gaussian/Gram arithmetic or a complementary eta-moment
+identity.
 
 ## Mathematical Program
 

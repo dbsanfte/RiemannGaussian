@@ -355,11 +355,17 @@ the sharp bound
 ||rho||*||rho+1||*(2N+1)^(-rho.re-1)`, and the partner obeys the corresponding
 bound at real exponent `1-rho.re`. This rigorously confirms the research
 warning: unequal raw-tail rates are the expected compatible endpoint
-asymptotics, not a contradiction. The next short formal step is to package
-the normalized limit and the generic implication from independent eventual
-two-sided comparability to `rho.re=1/2`. The subsequent hard input must derive
-that coupling from symmetry-aware arithmetic rather than from the raw cutoff
-tail itself.
+asymptotics, not a contradiction. Lean now packages the exact complex limit
+`(2N+1)^s*(G_N(s)-G(s)) -> -1/2` and the corresponding positive scaled-norm
+limit. A generic checked theorem proves that independent eventual two-sided
+multiplicative comparability of two such raw errors forces their decay
+exponents to agree. Applied to a zero and its functional-equation partner,
+the explicitly defined complementary eta-gap comparison principle forces
+`rho.re=1/2`; its global version conditionally implies Mathlib's literal
+`RiemannHypothesis`. No theorem proves that comparison principle. The raw
+cutoff-tail analysis is therefore exhausted as a source of contradiction;
+the next hard input must derive the coupling from symmetry-aware
+Gaussian/Gram or complementary-moment arithmetic.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
