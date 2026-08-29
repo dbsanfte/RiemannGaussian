@@ -224,6 +224,9 @@ Lean now also removes the upper-quadrant restriction from the existing paired
 Dirichlet-eta construction. On every point of `1/2 < Re s < 1`, its absolutely
 convergent paired series equals `(1-2*2^(-s))*zeta(s)`, the elementary factor
 is nonzero, and the paired series therefore retains exactly the zeta divisor.
+Lean now differentiates that series by locally uniform holomorphic
+convergence and obtains an exact quotient of convergent paired eta series for
+`zeta'/zeta` at every nonzero zeta point of the same strip.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

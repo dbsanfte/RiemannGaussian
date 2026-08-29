@@ -26,19 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now extends the paired Dirichlet-eta factorization from the upper-right
-quadrant to every point with `Re s > 0`, except `s = 1`. Conjugation proves
-the lower-half identity term by term, while an explicit continuity and
-closure argument reaches the real axis without assuming a boundary value.
+Lean now differentiates the paired Dirichlet-eta series throughout
+`Re s > 0`. The explicit derivative terms are logarithmically weighted
+odd-even pairs. Their convergence is not assumed: Lean applies the Cauchy
+derivative theorem to the already proved locally uniform eta-series bound and
+proves that these terms are summable and sum to the genuine derivative of
+paired eta.
 
-Consequently, at every point of the live region `1/2 < Re s < 1`, an
-absolutely convergent paired arithmetic series sums exactly to
-`(1 - 2 * 2^(-s)) * zeta(s)`. Lean also proves that the elementary factor
-cannot vanish in this strip, so the series retains exactly the zeta divisor.
-This is the first convergent arithmetic representative placed throughout the
-new positive-half-strip frontier. It is not a zero-free estimate; deriving a
-divisor-aware bound strong enough to force the detector limit to vanish
-remains the open rigidity problem.
+Thus, at every nonzero zeta point in `1/2 < Re s < 1`, Lean proves an exact
+formula for `zeta'/zeta`: the quotient of the convergent paired derivative
+series by the convergent paired eta series, minus an explicit elementary
+eta-factor correction. The zeta-nonvanishing hypothesis remains visible, so
+the formula does not erase the divisor or claim zero-freeness. The next bridge
+is to substitute this arithmetic quotient into the reflected xi
+boundary-plus-gradient detector and retain its singular zero contributions.
 
 ## Mathematical Program
 
