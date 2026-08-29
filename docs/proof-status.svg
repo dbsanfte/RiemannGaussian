@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 319 modules · 8310 declarations · 7112 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 320 modules · 8332 declarations · 7130 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">EQUIVALENCES AND REDUCTIONS — NOT A PROOF CHAIN</text>
@@ -77,8 +77,8 @@
   </g>
   <g class="proved bridge">
     <rect x="500" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.tendsto_pairedEtaBoundaryHeatFiniteArithmeticRadialFluxDiagonal</title>
-    <text x="572" y="173">finite eta flux</text>
+    <title>RiemannGaussian.tendsto_pairedEtaBoundaryHeatFiniteLogNormRadialFluxDiagonal</title>
+    <text x="572" y="173">finite eta log flux</text>
     <text x="572" y="191">limit = detector  ✓</text>
   </g>
   <g class="open">
@@ -90,5 +90,5 @@
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: global arithmetic control of finite eta L1 flux; no current theorem implies RH.</text>
+  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: global arithmetic control of finite eta log variation; no current theorem implies RH.</text>
 </svg>

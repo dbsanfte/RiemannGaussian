@@ -255,8 +255,12 @@ uniformly to every selected compact detector circle, proves the finite
 denominators eventually stay nonzero and the finite radial integrands are
 genuinely `L¹`, and selects growing truncations `N_n ≥ n`. The resulting
 single sequence of finite paired-eta Dirichlet-polynomial flux windows
-converges to the complete detector. No quantitative convergence rate or
-arithmetic bound forcing that finite sequence to vanish is currently claimed.
+converges to the complete detector. On every selected finite denominator,
+Lean now also proves the exact radial identity
+`d/dr log |E_N|^2 = 2 Re(exp(i theta) D_N / E_N)`, transfers genuine `L¹`
+integrability, and rewrites the complete diagonal limit as entirely finite
+log-norm variations. No quantitative convergence rate or arithmetic bound
+forcing that finite sequence to vanish is currently claimed.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

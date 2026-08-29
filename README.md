@@ -26,17 +26,18 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now transfers `D_N/E_N → D/E` from the positive zero-free eta domain
-to every selected compact detector circle. It proves the finite denominators
-are eventually uniformly nonzero there, the heat-weighted radial integrands
-converge uniformly, and the finite integrands are genuinely `L¹`. Their
-integrals therefore converge through every finite spectral window.
+For every finite paired-eta polynomial `E_N` with explicit derivative `D_N`,
+Lean now proves the exact radial identity
+`d/dr log|E_N(rho+r*exp(i*theta))|² = 2*Re(exp(i*theta)*D_N/E_N)`
+off its finite divisor. The selected finite denominators are uniformly
+nonzero on every detector circle, so this identity also transfers genuine
+`L¹` integrability across each finite spectral window.
 
-At detector stage `n`, Lean selects a truncation `N_n ≥ n` within the stage
-tolerance and proves `N_n → ∞`. The resulting single sequence of fluxes,
-each built from finite paired-eta Dirichlet polynomials, converges to `2*pi`
-times the complete RH-equivalent detector. This is still an approximation
-theorem: it provides no arithmetic estimate forcing that limit to vanish.
+Consequently the existing growing truncations `N_n ≥ n` now give a single
+sequence of entirely finite heat-weighted log-norm variations converging to
+`2*pi` times the complete RH-equivalent detector. The quotient has been
+removed without erasing its zero mass, but no arithmetic estimate yet forces
+these finite logarithmic variations to vanish.
 
 ## Mathematical Program
 
