@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove rigidity of the exact paired-eta detector functional; no current theorem implies RH.</text>\n" ++
+      "control normalized eta energy through its divisor; no current theorem implies RH.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -281,11 +281,10 @@ run_cmd do
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Derive an unconditional divisor-aware estimate from the exact " ++
-        "convergent paired-eta formula for zeta'/zeta in the xi log-norm " ++
-        "boundary-plus-gradient functional on 1/2 < Re s < 1, now itself " ++
-        "represented exactly by the eta series, that forces its detector " ++
-        "limit to vanish"))
+        "Derive an unconditional divisor-aware coercivity or cancellation " ++
+        "estimate for the normalized paired-eta bilinear field " ++
+        "(Re(D*conj E), Im(D*conj E))/|E|^2 in the exact positive-strip " ++
+        "detector functional that forces its limit to vanish"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

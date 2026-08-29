@@ -32,13 +32,16 @@ reflected vertical boundary integrals and the planar xi-log-norm gradient
 integral are exactly equal to expressions formed from the paired eta series,
 its rigorously summed derivative series, and explicit completion terms.
 
-The selected vertical sides are proved pointwise zero-free. The planar
-rectangle may contain finitely many xi zeros, so Lean removes only that finite
-null set, proves almost-everywhere equality, and transfers genuine planar
-integrability to the eta expression. The resulting entirely arithmetic
-positive-strip functional has the same unnormalized limit to the nonnegative
-RH detector. No vanishing estimate follows yet: the open frontier is now a
-direct divisor-aware rigidity estimate for this exact eta functional.
+The selected vertical sides are pointwise zero-free; the finite planar
+divisor is removed only almost everywhere, with genuine integrability proved.
+Lean further rewrites the singular eta quotient as the bilinear vector
+`(Re(D*conj E), Im(D*conj E)) / |E|^2`. Its denominator vanishes exactly on
+the xi divisor, its numerators are the coordinate derivatives of `|E|^2`, and
+its squared magnitude is the nonnegative density `|D|^2 / |E|^2`. This is an
+exact energy formulation, and a checked pointwise Cauchy--Schwarz bound pairs
+it with an explicit Gaussian-polynomial heat-gradient energy. It is not a
+vanishing estimate: the remaining frontier is a divisor-aware coercivity or
+cancellation theorem for this field.
 
 ## Mathematical Program
 
