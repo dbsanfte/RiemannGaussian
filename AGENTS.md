@@ -469,6 +469,16 @@ Gaussian windows of this energy are genuinely integrable, nonnegative, and
 exactly symmetric under `sigma ↔ 1-sigma`. The completion weight depends on
 the ordinate, and both sides vanish at a zero, so a new eta-specific
 coercivity or phase estimate is still required.
+Lean now proves the corresponding Gaussian Gram identity directly for the
+fixed infinite eta measure, including sigma-finiteness, joint domination,
+both Fubini orders, and the Gaussian Fourier evaluation. The raw infinite
+Gram is an explicit nonnegative double integral with kernel
+`exp(-sigma*(t+u))*exp(-(t-u)^2/(4*tau))`. Combining it with the completed
+symmetry gives an exact balance law: the raw Gram at `sigma` minus the raw
+Gram at `1-sigma` is the common completed energy integrated against the
+difference of the two reciprocal completion weights. There is no remainder;
+the missing theorem is now a sign or coercivity estimate for this distortion
+that genuinely constrains zeros.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

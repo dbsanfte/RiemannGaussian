@@ -26,23 +26,23 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now inserts the exact xi completion into the positive eta Laplace
-measure. Throughout the open critical strip it proves the pointwise identity
-`|C(s)*s|^2 * |integral_A exp(-s*t) dt|^2 = |xi(s)|^2`, where `A` is the
-literal union of paired logarithmic intervals and `C` is the already-derived
-eta completion factor. The functional equation and conjugation symmetry then
-give an exact equality between the completion-weighted sums of squared cosine
-and sine moments at the complementary tilts `sigma` and `1-sigma`, for every
-common ordinate.
+Lean now proves the Gaussian Gram identity directly for the fixed infinite
+positive eta measure. For every `sigma,tau > 0`, the Gaussian vertical norm
+of its Laplace partition is genuinely integrable and equals the positive
+double kernel
+`sqrt(pi/tau)*exp(-sigma*(t+u))*exp(-(t-u)^2/(4*tau))` integrated over two
+copies of the literal arithmetic measure. All sigma-finiteness, domination,
+Fubini, conjugation, and Gaussian Fourier steps are checked in Lean; this is
+not inferred from a finite-limit heuristic.
 
-Lean also lifts this identity to arbitrary finite Gaussian windows. Both
-window integrands are genuinely interval-integrable and nonnegative, and the
-two completed window energies are exactly equal. This is the first positive-
-measure Gaussian object in the eta branch with the true complementary
-symmetry built in rather than assumed. It does not prove RH: the completion
-weight varies with the ordinate, and at a zero both moment energies vanish.
-The open step is an eta-specific coercivity or phase estimate extracting a
-zero-location constraint from this weighted coupling; no current theorem
+This puts the positive arithmetic Gram and the exact completed symmetry on
+the same infinite object. If `H_sigma(y)` is the common completed energy and
+`W_sigma(y)=|C(sigma+iy)*(sigma+iy)|^2`, Lean proves exactly
+that `G_sigma-G_(1-sigma)` is the integral of the Gaussian times
+`H_sigma*(W_sigma^-1-W_(1-sigma)^-1)`. Thus the raw complementary asymmetry is
+now isolated as completion-weight distortion, with no hidden remainder. This
+still does not prove RH: a new sign, coercivity, or phase theorem connecting
+that explicit distortion to zero location is required; no current theorem
 implies RH.
 
 ## Mathematical Program

@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The exact xi completion couples finite Gaussian windows of the positive eta Laplace energy at complementary tilts"
-    lineOne := "completed eta Gram"
-    lineTwo := "sigma <-> 1-sigma"
+    label := "The complementary infinite eta Gaussian norm difference is exactly reciprocal completion-weight distortion"
+    lineOne := "infinite eta Gram"
+    lineTwo := "weight distortion"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaCompletedLaplaceGaussianWindowEnergy_complementary
+      ``RiemannGaussian.pairedEtaGaussianLaplaceNorm_sub_complementary_eq_completionWeightDistortion
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "eta-specific coercivity from the completed positive-measure Gaussian coupling.</text>\n" ++
+      "sign or coercivity of the explicit infinite-Gram completion-weight distortion.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -350,7 +350,14 @@ run_cmd do
         "the squared tilted cosine and sine moments of the same arithmetic measure. " ++
         "Every finite Gaussian window is genuinely integrable, nonnegative, and " ++
         "symmetric under sigma <-> 1-sigma. The ordinate-dependent completion weight " ++
-        "does not itself yield a zero-location constraint. No arithmetic phase " ++
+        "does not itself yield a zero-location constraint. Lean now proves the raw " ++
+        "Gaussian Gram identity directly for the fixed infinite eta measure: its norm " ++
+        "is an explicit nonnegative double integral with kernel exp(-sigma(t+u)) " ++
+        "exp(-(t-u)^2/(4 tau)). Combining this with the completed symmetry isolates " ++
+        "the raw complementary Gram difference exactly as the common completed energy " ++
+        "integrated against the difference of reciprocal completion weights, with no " ++
+        "remainder. No sign or coercivity theorem for this distortion is proved. No " ++
+        "arithmetic phase " ++
         "obstruction forcing " ++
         "the horizontal displacement to vanish is proved, " ++
         "and no current theorem implies RH.")),
@@ -359,8 +366,8 @@ run_cmd do
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove an eta-specific coercivity or phase estimate that turns the completed " ++
-        "positive-measure Gaussian coupling into a complementary zero-location constraint, " ++
+        "Prove a sign, coercivity, or phase estimate for the explicit completion-weight " ++
+        "distortion in the infinite positive eta Gaussian Gram that forces zero location, " ++
         "or force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),
