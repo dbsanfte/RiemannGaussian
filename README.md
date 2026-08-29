@@ -30,15 +30,16 @@ Lean now identifies every finite paired-eta sum exactly as `s` times a finite
 positive-measure Laplace partition function. At every positive-real-part
 finite eta zero, the corresponding exponentially tilted cosine and sine
 moments both vanish exactly. Positivity also proves a quantitative obstruction:
-a nonempty finite eta zero must accumulate at least `pi/2` of uncentered
-Fourier phase across its logarithmic support.
+after centering the logarithmic support, a nonempty finite eta zero must have
+strictly more than `pi` of total Fourier phase spread. This is the elementary
+half-turn exclusion for Fourier transforms of positive measures.
 
 These identities are threaded through the existing divisor-persistence
 theorem. For every nontrivial zeta zero, Lean constructs genuine finite eta
 zeros converging to it which eventually satisfy both exact moment
-cancellations and the phase lower bound. This supplies a concrete finite
-positive-measure rigidity problem; it does not yet prove the global estimate
-needed to exclude off-critical-line zeros.
+cancellations and the strict half-turn lower bound. This supplies a concrete
+finite positive-measure rigidity problem; it does not yet prove the global
+estimate needed to exclude off-critical-line zeros.
 
 ## Mathematical Program
 

@@ -273,12 +273,12 @@ zeros of `E_(N_n)` converging to that zeta zero with distance below
 Lean now also identifies `E_N(s) / s` exactly with a finite positive-measure
 Laplace partition function. Every positive-real-part finite eta zero obeys
 exact exponentially tilted cosine and sine moment cancellations, and every
-nonempty such zero has uncentered phase spread at least `pi / 2`. These
-constraints hold eventually along the verified finite-root sequence
-converging to each nontrivial zeta zero. The open problem is a global rigidity
-estimate strong enough to turn those positive-measure cancellations into a
-zero-location restriction; the phase bound alone decays like `1 / log N` and
-does not do so.
+nonempty such zero has, after centering its support, total phase spread
+strictly greater than `pi`. These constraints hold eventually along the
+verified finite-root sequence converging to each nontrivial zeta zero. The
+open problem is a global rigidity estimate strong enough to turn those
+positive-measure cancellations into a zero-location restriction; the phase
+bound alone decays like `1 / log N` and does not do so.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
