@@ -184,6 +184,52 @@ theorem eventually_circleIntegrable_pairedEtaArithmeticQuotient
     (analyticAt_pairedEtaArithmeticQuotient_of_re_pos_of_ne
       hspositive hseta).continuousAt.continuousWithinAt
 
+/-- Every sufficiently small positive circle about a nontrivial zero stays
+in the positive real half-plane and avoids the paired-eta divisor at every
+point. This exposes the zero-free geometry used internally by the local
+circle-integrability theorem. -/
+theorem eventually_forall_circleMap_pairedEtaCore_ne_zero_re_pos
+    (rho : NontrivialZetaZero) :
+    ∀ᶠ r : ℝ in nhdsWithin (0 : ℝ) (Set.Ioi 0), ∀ theta : ℝ,
+      0 < (circleMap rho.1 r theta).re ∧
+        pairedEtaCore (circleMap rho.1 r theta) ≠ 0 := by
+  have hpositiveAt : 0 < rho.1.re :=
+    NontrivialZetaZero.zero_lt_re rho
+  have heta : AnalyticAt ℂ pairedEtaCore rho.1 :=
+    analyticOnNhd_pairedEtaCore rho.1 hpositiveAt
+  have hfinite : analyticOrderAt pairedEtaCore rho.1 ≠ ⊤ := by
+    rw [analyticOrderAt_pairedEtaCore_eq_riemannZeta rho]
+    exact analyticOrderAt_riemannZeta_nontrivialZero_ne_top rho
+  have hetaNePunctured : ∀ᶠ s in nhdsWithin rho.1 {rho.1}ᶜ,
+      pairedEtaCore s ≠ 0 :=
+    heta.eventually_eq_zero_or_eventually_ne_zero.resolve_left fun hzero =>
+      hfinite (analyticOrderAt_eq_top.mpr hzero)
+  have hetaNeFull : ∀ᶠ s in nhds rho.1, s ≠ rho.1 →
+      pairedEtaCore s ≠ 0 := by
+    rw [eventually_nhdsWithin_iff] at hetaNePunctured
+    filter_upwards [hetaNePunctured] with s hs
+    intro hsne
+    exact hs (by simpa using hsne)
+  have hpositiveFull : ∀ᶠ s in nhds rho.1, 0 < s.re :=
+    (Complex.isOpen_re_gt 0).mem_nhds hpositiveAt
+  have hlocal : ∀ᶠ s in nhds rho.1, s ≠ rho.1 →
+      0 < s.re ∧ pairedEtaCore s ≠ 0 := by
+    filter_upwards [hpositiveFull, hetaNeFull] with s hs hne
+    exact fun hsrho => ⟨hs, hne hsrho⟩
+  obtain ⟨delta, hdelta, hball⟩ := Metric.mem_nhds_iff.mp hlocal
+  have hrange : Ioo (0 : ℝ) delta ∈
+      nhdsWithin (0 : ℝ) (Set.Ioi 0) :=
+    Ioo_mem_nhdsGT hdelta
+  filter_upwards [hrange] with r hr
+  intro theta
+  have hsphere := circleMap_mem_sphere rho.1 hr.1.le theta
+  have hsball : circleMap rho.1 r theta ∈ ball rho.1 delta := by
+    rw [mem_ball]
+    exact (mem_sphere.mp hsphere).trans_lt hr.2
+  have hsne : circleMap rho.1 r theta ≠ rho.1 :=
+    circleMap_ne_center hr.1.ne'
+  exact hball hsball hsne
+
 /-- The paired-eta arithmetic quotient has contour integral tending to
 `2 * pi * I` times the genuine analytic multiplicity on shrinking positive
 circles. This is the complex divisor-preserving flux statement. -/

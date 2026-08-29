@@ -26,17 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now replaces the nested finite-window/small-puncture eta-flux limits by
-one checked diagonal sequence. At stage `n`, a positive common radius is
-chosen below `1/(n+1)` in the simultaneous `L¹` regime for every selected
-zero, and the literal finite paired-eta flux is proved to differ from its
-exact heat-residue window by less than `1/(n+1)`. Lean proves that both the
-radii and errors tend to zero and that this single sequence converges to
-`2*pi` times the complete RH-equivalent detector.
+Lean now removes the singular quotient from the diagonal eta-flux integrand
+without erasing its divisor mass. On every selected zero-free circle it proves
+the exact arithmetic transport identity
+`d/dr log|E(rho+r*exp(i*theta))|² = 2*Re(exp(i*theta)*D/E)`, where `E`
+and `D` are the convergent paired-eta series and its differentiated series.
+The chosen radii are now also proved to keep every finite-window circle in
+`Re s > 0` and off the complete eta divisor.
 
-This is a rigorous diagonal selection, not a uniform puncture estimate or a
-proof of detector vanishing. The open frontier remains a global arithmetic
-cancellation or coercivity theorem for the normalized paired-eta `L¹` flux.
+Lean transfers genuine `L¹` integrability through this identity and proves
+that one sequence of finite heat-weighted log-norm radial variations converges
+to `2*pi` times the complete RH-equivalent detector. This does not estimate
+that variation or prove it vanishes. The open frontier is arithmetic rigidity
+for the log norm of the paired-eta series strong enough to force that limit to
+zero.
 
 ## Mathematical Program
 

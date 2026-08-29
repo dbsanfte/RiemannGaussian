@@ -240,7 +240,13 @@ limiting values converge to `2*pi` times the complete detector. Lean now
 selects one positive common radius at each natural window height, proves every
 selected integrand is simultaneously `L¹`, bounds the radius and flux error by
 `1/(n+1)`, and proves the resulting single diagonal eta-flux sequence converges
-to the complete detector. This choice supplies no uniform puncture estimate.
+to the complete detector. The chosen circles are now also proved to stay in
+the positive eta half-plane and avoid its complete divisor. On those circles,
+Lean proves exactly that the normalized radial quotient is one half the
+radius times the radial derivative of `log |E|^2`. Genuine `L¹` integrability
+transfers through this identity, and one sequence of finite heat-weighted
+paired-eta log-norm variations converges to the detector. No arithmetic bound
+forcing that variation to vanish has been proved.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

@@ -52,7 +52,8 @@ theorem tendsto_pairedEtaBoundaryHeatFluxDiagonalTolerance_zero :
 
 /-- At every finite stage there is a positive common radius below the stage
 tolerance which simultaneously makes every selected eta-flux integrand
-integrable and approximates the exact finite heat-residue window within that
+integrable, keeps every circle in the positive eta half-plane and off the eta
+divisor, and approximates the exact finite heat-residue window within that
 tolerance. -/
 theorem exists_pairedEtaBoundaryHeatFluxDiagonalRadius
     (x tau : ℝ) (n : ℕ) :
@@ -66,7 +67,7 @@ theorem exists_pairedEtaBoundaryHeatFluxDiagonalRadius
             (suzukiChebyshevLaplaceBoundaryHeatResidueWindow
               x tau (n : ℝ)).re) <
         pairedEtaBoundaryHeatFluxDiagonalTolerance n ∧
-      ∀ rho ∈ spectralUpperZetaZeroWindow (n : ℝ),
+      (∀ rho ∈ spectralUpperZetaZeroWindow (n : ℝ),
         IntervalIntegrable
           (fun theta : ℝ =>
             let s := circleMap rho.1 r theta
@@ -78,7 +79,10 @@ theorem exists_pairedEtaBoundaryHeatFluxDiagonalRadius
                 (circleMap 0 r theta).im *
                   (pairedEtaLogDerivativeImaginaryNumerator s /
                     pairedEtaCoreNormSq s)))
-          volume 0 (2 * Real.pi) := by
+          volume 0 (2 * Real.pi)) ∧
+      ∀ rho ∈ spectralUpperZetaZeroWindow (n : ℝ), ∀ theta : ℝ,
+        0 < (circleMap rho.1 r theta).re ∧
+          pairedEtaCore (circleMap rho.1 r theta) ≠ 0 := by
   have htolerance := pairedEtaBoundaryHeatFluxDiagonalTolerance_pos n
   have hclose : ∀ᶠ r : ℝ in nhdsWithin (0 : ℝ) (Set.Ioi 0),
       dist
@@ -118,9 +122,18 @@ theorem exists_pairedEtaBoundaryHeatFluxDiagonalRadius
     exact
       eventually_intervalIntegrable_pairedEtaBoundaryHeatNormalizedNumeratorRadialFlux
         x tau rho
-  obtain ⟨r, hclose_r, hrange_r, hintegrable_r⟩ :=
-    (hclose.and (hrangeEventually.and hintegrable)).exists
-  exact ⟨r, hrange_r.1, hrange_r.2, hclose_r, hintegrable_r⟩
+  have hgeometry : ∀ᶠ r : ℝ in nhdsWithin (0 : ℝ) (Set.Ioi 0),
+      ∀ rho ∈ spectralUpperZetaZeroWindow (n : ℝ), ∀ theta : ℝ,
+        0 < (circleMap rho.1 r theta).re ∧
+          pairedEtaCore (circleMap rho.1 r theta) ≠ 0 := by
+    rw [Finset.eventually_all]
+    intro rho _
+    exact eventually_forall_circleMap_pairedEtaCore_ne_zero_re_pos rho
+  obtain ⟨r, hclose_r, hrange_r, hintegrable_r, hgeometry_r⟩ :=
+    (hclose.and
+      (hrangeEventually.and (hintegrable.and hgeometry))).exists
+  exact
+    ⟨r, hrange_r.1, hrange_r.2, hclose_r, hintegrable_r, hgeometry_r⟩
 
 /-- A classically selected common puncture radius at each diagonal stage. -/
 noncomputable def pairedEtaBoundaryHeatFluxDiagonalRadius
@@ -128,7 +141,8 @@ noncomputable def pairedEtaBoundaryHeatFluxDiagonalRadius
   Classical.choose (exists_pairedEtaBoundaryHeatFluxDiagonalRadius x tau n)
 
 /-- The selected diagonal radius satisfies positivity, quantitative decay,
-finite-window approximation, and simultaneous `L¹` integrability. -/
+finite-window approximation, simultaneous `L¹` integrability, and complete
+zero-free positive-half-plane circle geometry. -/
 theorem pairedEtaBoundaryHeatFluxDiagonalRadius_spec
     (x tau : ℝ) (n : ℕ) :
     0 < pairedEtaBoundaryHeatFluxDiagonalRadius x tau n ∧
@@ -142,7 +156,7 @@ theorem pairedEtaBoundaryHeatFluxDiagonalRadius_spec
           (suzukiChebyshevLaplaceBoundaryHeatResidueWindow
             x tau (n : ℝ)).re) <
       pairedEtaBoundaryHeatFluxDiagonalTolerance n ∧
-    ∀ rho ∈ spectralUpperZetaZeroWindow (n : ℝ),
+    (∀ rho ∈ spectralUpperZetaZeroWindow (n : ℝ),
       IntervalIntegrable
         (fun theta : ℝ =>
           let s := circleMap rho.1
@@ -159,7 +173,13 @@ theorem pairedEtaBoundaryHeatFluxDiagonalRadius_spec
                   theta).im *
                 (pairedEtaLogDerivativeImaginaryNumerator s /
                   pairedEtaCoreNormSq s)))
-        volume 0 (2 * Real.pi) := by
+        volume 0 (2 * Real.pi)) ∧
+    ∀ rho ∈ spectralUpperZetaZeroWindow (n : ℝ), ∀ theta : ℝ,
+      0 < (circleMap rho.1
+          (pairedEtaBoundaryHeatFluxDiagonalRadius x tau n) theta).re ∧
+        pairedEtaCore
+          (circleMap rho.1
+            (pairedEtaBoundaryHeatFluxDiagonalRadius x tau n) theta) ≠ 0 := by
   exact Classical.choose_spec
     (exists_pairedEtaBoundaryHeatFluxDiagonalRadius x tau n)
 
