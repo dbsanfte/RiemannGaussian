@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Any off-critical zero forces two explicit even-odd gap series to equal one and a nonzero defect transform"
-    lineOne := "even-odd gap series"
-    lineTwo := "= 1; defect nonzero"
+    label := "Any off-critical zero forces distinct complementary power-rate bounds for the two finite eta-gap series"
+    lineOne := "finite eta-gap rates"
+    lineTwo := "sigma vs 1-sigma"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.nontrivialZetaZero_offCritical_etaGapArithmeticSeries_certificate
+      ``RiemannGaussian.nontrivialZetaZero_offCritical_etaGapDistinctFiniteRates_certificate
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "a termwise bound on the explicit gap series excluding its off-line target; no theorem implies RH.</text>\n" ++
+      "a sharp lower/asymptotic gap bound incompatible with distinct off-line rates; no theorem implies RH.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -279,10 +279,10 @@ run_cmd do
         "RH-equivalent detectors, and a fixed positive paired-eta Laplace " ++
         "measure whose transform vanishes at every nontrivial zeta zero. " ++
         "Complementary tilts produce a positive horizontal-defect density. " ++
-        "The gaps are exactly the intervals (log(2n+2),log(2n+3)], and their " ++
-        "absolutely convergent even-odd Dirichlet series equals one minus " ++
-        "paired eta. Any off-critical zero forces the two complementary gap " ++
-        "series to equal one and their defect transform to be nonzero. This " ++
+        "The explicit support and gap partial sums telescope with remainder " ++
+        "(2N+1)^(-s). A restricted-tail measure gives closed finite gap-error " ++
+        "bounds with complementary exponents sigma and 1-sigma; these are " ++
+        "distinct for an off-critical zero. This " ++
         "is a checked conditional reduction, not a zero-location theorem, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -290,10 +290,10 @@ run_cmd do
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Derive an unconditional termwise estimate for the explicit " ++
-        "even-odd logarithmic-gap interval series that contradicts its paired " ++
-        "unit sums and nonzero defect transform at any off-critical zero, or " ++
-        "force the exact detector limit to vanish without discarding zero contributions"))
+        "Derive an unconditional lower bound or sharp asymptotic for the " ++
+        "finite eta-gap errors that couples the complementary sigma and " ++
+        "1-sigma rates and is incompatible with an off-critical zero, or force " ++
+        "the exact detector limit to vanish without discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

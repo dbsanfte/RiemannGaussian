@@ -26,21 +26,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now identifies the omitted eta gaps explicitly as the pairwise-disjoint
-intervals `(log(2n+2), log(2n+3)]` and decomposes their measure into the
-corresponding countable sum. Their Laplace transforms are proved absolutely
-summable throughout `Re s > 0`. The resulting literal Dirichlet-difference
-series
+Lean now controls the explicit gap series at finite truncations. If `E_N(s)`
+is the first `N` paired-eta terms and `G_N(s)` the first `N` adjacent gap
+terms, Lean proves the exact telescope
 
-`G(s) = ∑ n, ((2n+2)^(-s) - (2n+3)^(-s))`
+`E_N(s) + G_N(s) = 1 - (2N+1)^(-s)`.
 
-satisfies `G(s) = 1 - eta(s)` on that half-plane. Hence every nontrivial zeta
-zero, and its functional-equation partner, makes this explicit gap series sum
-to exactly `1`. Lean also rewrites the nonzero horizontal-defect target as the
-difference of the two corresponding absolutely convergent interval series.
-This is a sharper arithmetic reduction, not a zero-location theorem. The open
-frontier is a termwise quantitative estimate strong enough to contradict that
-forced paired-series behavior off the critical line.
+The infinite eta tail is represented by its actual restricted logarithmic
+measure, not by an assumed remainder. Measure domination and an evaluated
+exponential integral then give, at every nontrivial zero `rho` with
+`sigma = Re rho`,
+
+`||G_N(rho)-1|| <= (||rho||/sigma + 1) * (2N+1)^(-sigma)`.
+
+The functional-equation partner satisfies the corresponding bound with decay
+exponent `1-sigma`; off the critical line the two exponents are provably
+distinct. This is a kernel-checked quantitative consequence of the zero
+hypothesis, but not a contradiction. The open frontier is a matching lower or
+asymptotic rigidity statement that makes those complementary finite rates
+incompatible off-line.
 
 ## Mathematical Program
 

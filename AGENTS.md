@@ -327,6 +327,15 @@ exactly `1`; the horizontal gap transform is the complementary difference of
 the two interval series and remains nonzero off the line. The live task is now
 a termwise arithmetic estimate on these explicit intervals, not an abstract
 support-complement argument.
+Lean now has the first such finite estimate. For the first `N` support and gap
+sums it proves exactly `E_N(s)+G_N(s)=1-(2N+1)^(-s)`. It realizes the remaining
+eta tail as a restricted positive measure and obtains the closed bound
+`||G_N(rho)-1|| <= (||rho||/rho.re+1)*(2N+1)^(-rho.re)` at every nontrivial
+zero. Applying the same theorem to the functional-equation partner replaces
+the exponent by `1-rho.re`; these decay exponents are distinct under the
+off-critical hypothesis. This remains an upper-bound certificate, not an
+exclusion. The live task is to prove a lower bound or sharp asymptotic that
+couples the two complementary rates and cannot hold when they differ.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
