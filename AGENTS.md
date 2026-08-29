@@ -279,6 +279,15 @@ verified finite-root sequence converging to each nontrivial zeta zero. The
 open problem is a global rigidity estimate strong enough to turn those
 positive-measure cancellations into a zero-location restriction; the phase
 bound alone decays like `1 / log N` and does not do so.
+Lean now removes the truncation completely. It constructs the fixed measure
+obtained by restricting Lebesgue measure to the disjoint union of all
+`(log(2n+1), log(2n+2)]`, proves the complex Laplace kernel genuinely
+integrable against it throughout `Re s > 0`, and proves its transform is
+exactly paired eta divided by `s`. Thus every nontrivial zeta zero is an exact
+zero of this one infinite positive-measure transform, and both of its complete
+tilted Fourier moments vanish there. The live zero-location problem is now
+literal rigidity of this explicit arithmetic measure, not passage from finite
+roots to a limiting transform.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

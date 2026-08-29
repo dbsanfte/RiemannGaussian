@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Every zeta zero is a limit of finite positive-Laplace eta zeros satisfying exact Fourier cancellations and a strict half-turn bound"
-    lineOne := "finite eta roots"
-    lineTwo := "moments=0; phase>pi"
+    label := "Every zeta zero is an exact zero of one fixed infinite positive eta Laplace measure, with both Fourier moments zero"
+    lineOne := "fixed eta measure"
+    lineTwo := "moments vanish at zeros"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.exists_pairedEtaFiniteLaplaceHalfTurnZero_sequence_tendsto
+      ``RiemannGaussian.pairedEtaTiltedMoments_eq_zero_of_nontrivialZetaZero
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "global rigidity for finite eta Laplace cancellations; no current theorem implies RH.</text>\n" ++
+      "zero-location rigidity for the fixed positive eta measure; no current theorem implies RH.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -282,10 +282,10 @@ run_cmd do
       ("status", .str "open"),
       ("target", .str (
         "Derive an unconditional divisor-aware arithmetic rigidity estimate " ++
-        "for the finite paired-eta log-variation and positive-Laplace " ++
-        "cancellation models that excludes persistent off-line roots or " ++
-        "forces the exact diagonal detector limit to vanish without " ++
-        "discarding zero contributions"))
+        "for the fixed infinite positive paired-eta measure and its " ++
+        "log-variation model that forces every transform zero onto the " ++
+        "critical line, or forces the exact detector limit to vanish, " ++
+        "without discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

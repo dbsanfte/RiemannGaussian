@@ -26,20 +26,17 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now identifies every finite paired-eta sum exactly as `s` times a finite
-positive-measure Laplace partition function. At every positive-real-part
-finite eta zero, the corresponding exponentially tilted cosine and sine
-moments both vanish exactly. Positivity also proves a quantitative obstruction:
-after centering the logarithmic support, a nonempty finite eta zero must have
-strictly more than `pi` of total Fourier phase spread. This is the elementary
-half-turn exclusion for Fourier transforms of positive measures.
+Lean now constructs one fixed positive measure by restricting Lebesgue measure
+to the disjoint intervals `(log(2n+1), log(2n+2)]`. On the entire half-plane
+`Re s > 0`, Lean proves the complex exponential genuinely integrable against
+this measure and identifies its Laplace transform exactly with the full paired
+eta function divided by `s`, hence with the literal eta factor times zeta.
 
-These identities are threaded through the existing divisor-persistence
-theorem. For every nontrivial zeta zero, Lean constructs genuine finite eta
-zeros converging to it which eventually satisfy both exact moment
-cancellations and the strict half-turn lower bound. This supplies a concrete
-finite positive-measure rigidity problem; it does not yet prove the global
-estimate needed to exclude off-critical-line zeros.
+Consequently every nontrivial zeta zero is an exact zero of this single
+infinite positive-measure transform—not merely a limit of finite models. Its
+complete exponentially tilted cosine and sine moments both vanish exactly at
+every such zero. The open frontier is now a rigidity theorem for this explicit
+arithmetic measure strong enough to force the zero's real part to `1/2`.
 
 ## Mathematical Program
 
