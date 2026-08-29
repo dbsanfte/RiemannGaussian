@@ -361,11 +361,14 @@ limit. A generic checked theorem proves that independent eventual two-sided
 multiplicative comparability of two such raw errors forces their decay
 exponents to agree. Applied to a zero and its functional-equation partner,
 the explicitly defined complementary eta-gap comparison principle forces
-`rho.re=1/2`; its global version conditionally implies Mathlib's literal
-`RiemannHypothesis`. No theorem proves that comparison principle. The raw
-cutoff-tail analysis is therefore exhausted as a source of contradiction;
-the next hard input must derive the coupling from symmetry-aware
-Gaussian/Gram or complementary-moment arithmetic.
+`rho.re=1/2`. Conversely, RH makes every zero equal to its reflected partner,
+so Lean proves that the global comparison principle is exactly equivalent to
+Mathlib's literal `RiemannHypothesis`. No theorem proves either open direction;
+comparability is conjecture-strength, not a routine estimate. The raw
+cutoff-tail analysis is therefore exhausted as a source of contradiction.
+The next hard input must be an independent eta-specific mechanism deriving
+the coupling from symmetry-aware Gaussian/Gram or complementary-moment
+arithmetic.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

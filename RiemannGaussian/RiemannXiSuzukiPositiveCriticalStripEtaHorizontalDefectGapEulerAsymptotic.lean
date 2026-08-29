@@ -282,6 +282,40 @@ theorem riemannHypothesis_of_allEtaGapComplementaryErrorsEventuallyComparable
     (nontrivialZetaZero_re_eq_half_of_etaGapErrors_eventually_comparable
       rho (hcomp rho))
 
+/-- Under RH, each zero equals its critical-line-reflected partner, so the
+two raw eta-gap error sequences are identically equal. -/
+theorem allEtaGapComplementaryErrorsEventuallyComparable_of_riemannHypothesis
+    (hRH : RiemannHypothesis) :
+    AllEtaGapComplementaryErrorsEventuallyComparable := by
+  intro rho
+  have him : (zetaSpectralCoordinate rho.1).im = 0 :=
+    (riemannHypothesis_iff_spectralCoordinate_real.mp hRH)
+      rho.1 rho.2.1 rho.2.2.1 rho.2.2.2
+  have hre : rho.1.re = 1 / 2 :=
+    (zetaSpectralCoordinate_im_eq_zero_iff rho.1).1 him
+  have hpartner : NontrivialZetaZero.conjugatePartner rho = rho := by
+    apply Subtype.ext
+    apply Complex.ext
+    · simp only [NontrivialZetaZero.conjugatePartner_coe,
+        Complex.sub_re, Complex.one_re, Complex.conj_re]
+      linarith
+    · simp only [NontrivialZetaZero.conjugatePartner_coe,
+        Complex.sub_im, Complex.one_im, Complex.conj_im]
+      ring
+  rw [EtaGapComplementaryErrorsEventuallyComparable, hpartner]
+  refine ⟨1, 1, by norm_num, by norm_num, ?_⟩
+  exact Eventually.of_forall fun N => ⟨by simp, by simp⟩
+
+/-- The global complementary eta-gap comparability principle is exactly
+equivalent to RH. Its open direction is therefore conjecture-strength, not
+a routine tail estimate. -/
+theorem riemannHypothesis_iff_allEtaGapComplementaryErrorsEventuallyComparable :
+    RiemannHypothesis ↔
+      AllEtaGapComplementaryErrorsEventuallyComparable := by
+  constructor
+  · exact allEtaGapComplementaryErrorsEventuallyComparable_of_riemannHypothesis
+  · exact riemannHypothesis_of_allEtaGapComplementaryErrorsEventuallyComparable
+
 end
 
 end RiemannGaussian

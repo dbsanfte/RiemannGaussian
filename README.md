@@ -41,13 +41,16 @@ positive scaled limits cannot be eventually comparable above and below by
 fixed positive constants unless their exponents agree. Consequently,
 eventual two-sided comparability of the gap errors at `rho` and its partner
 forces `Re(rho)=1/2`; if that comparison principle holds at every nontrivial
-zero, Lean derives Mathlib's `RiemannHypothesis`.
+zero, Lean derives Mathlib's `RiemannHypothesis`. Conversely, under RH each
+zero equals its reflected partner, so the two error sequences are identical.
+Lean therefore proves that the global comparison principle is equivalent to
+RH.
 
-This is a checked conditional reduction, not a proof of its premise or of RH.
-No current theorem supplies the required comparison, and the separate sharp
-tails do not supply it. The open target is to derive a genuine coupling from
-symmetry-aware Gaussian/Gram arithmetic or a complementary eta-moment
-identity.
+This is a checked reformulation, not a proof of either side. It shows that the
+comparison principle is conjecture-strength rather than a routine tail
+estimate. The separate sharp tails do not supply it. The open target is an
+independent eta-specific mechanism—Gaussian/Gram arithmetic or complementary
+derivative moments—that supplies genuine symmetry-aware coupling.
 
 ## Mathematical Program
 

@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Independent eventual comparability of complementary eta-gap errors forces the critical line"
-    lineOne := "gap comparability"
-    lineTwo := "forces Re rho = 1/2"
-    role := "reduction"
+    label := "Global complementary eta-gap comparability is equivalent to RH"
+    lineOne := "global gap comparison"
+    lineTwo := "iff RH (reform.)"
+    role := "equivalence"
     theoremName :=
-      ``RiemannGaussian.nontrivialZetaZero_re_eq_half_of_etaGapErrors_eventually_comparable
+      ``RiemannGaussian.riemannHypothesis_iff_allEtaGapComplementaryErrorsEventuallyComparable
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "derive complementary eta-gap comparability from symmetry-aware arithmetic; no theorem implies RH.</text>\n" ++
+      "find an eta-specific mechanism for the RH-equivalent coupling; no theorem implies RH.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -290,19 +290,20 @@ run_cmd do
         "smaller. Lean normalizes this to the exact complex limit -1/2 and " ++
         "the positive scaled-norm limit 1/2 at exponents sigma and 1-sigma. " ++
         "A generic theorem proves that independent eventual two-sided " ++
-        "comparability of the two raw errors forces sigma=1-sigma; globally, " ++
-        "that explicit comparison principle implies Mathlib's RH. The " ++
-        "comparison premise is unproved, so this is a checked conditional " ++
-        "reduction and no current theorem implies RH.")),
+        "comparability of the two raw errors forces sigma=1-sigma. Under RH " ++
+        "each zero equals its reflected partner, so Lean proves that the " ++
+        "global comparison principle is exactly equivalent to Mathlib's RH. " ++
+        "This is a checked reformulation, not a proof of either side, and no " ++
+        "current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Derive AllEtaGapComplementaryErrorsEventuallyComparable " ++
-        "unconditionally from a symmetry-aware Gaussian/Gram or " ++
-        "complementary-moment arithmetic identity, or force the exact " ++
-        "detector limit to vanish without discarding zero contributions"))
+        "Find an independent eta-specific Gaussian/Gram or " ++
+        "complementary-derivative mechanism that supplies the RH-equivalent " ++
+        "coupling, or force the exact detector limit to vanish without " ++
+        "discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
