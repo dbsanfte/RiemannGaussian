@@ -26,17 +26,17 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves a domain-local Rouché theorem and applies it to the explicit
-finite paired-eta sums `E_N`. On every positive-half-plane circle avoiding the
-limiting eta divisor, all sufficiently long `E_N` are boundary-nonzero and
-their logarithmic-derivative circle integrals equal the limiting eta integral
-exactly, not merely asymptotically.
+Lean now turns the exact local Rouché winding of the finite paired-eta sums
+`E_N` into actual finite-sum zeros. Around every nontrivial zeta zero and below
+every prescribed positive radius, there is a smaller isolating disk in which
+every sufficiently long `E_N` has a genuine zero.
 
-In particular, every nontrivial zeta zero has an arbitrarily small fixed
-isolating circle on which the winding of every sufficiently long finite eta
-sum is exactly its genuine analytic zeta-zero multiplicity. This rigorously
-retains divisor mass in the finite arithmetic model; it does not yet provide
-the global arithmetic rigidity estimate needed to rule out off-line zeros.
+Consequently, for each nontrivial zeta zero, Lean constructs truncations
+`N_n ≥ n` and zeros `z_n` of `E_{N_n}` with
+`dist(z_n, rho) < 1/(n+1)`. Thus `N_n → ∞` and `z_n → rho`, with no
+informal appeal to Hurwitz's theorem. This faithfully transfers the complete
+zeta divisor into the finite arithmetic models; it does not distinguish
+on-line from off-line zeros or supply the missing global rigidity estimate.
 
 ## Mathematical Program
 

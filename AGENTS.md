@@ -266,6 +266,10 @@ zero has an arbitrarily small positive-half-plane isolating circle on which
 all sufficiently long finite eta sums are boundary-nonzero and their exact
 logarithmic-derivative winding equals the genuine analytic zeta-zero
 multiplicity. This preserves local divisor mass but supplies no global bound.
+The nonzero winding is now converted into actual finite arithmetic roots:
+for every nontrivial zeta zero, Lean selects growing indices `N_n ≥ n` and
+zeros of `E_(N_n)` converging to that zeta zero with distance below
+`1 / (n + 1)`. This is divisor persistence, not a zero-location estimate.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
