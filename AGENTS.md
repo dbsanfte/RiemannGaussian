@@ -93,11 +93,14 @@ unbounded margin. Lean now extends the literal formula for the logarithmic
 average to every real endpoint `b >= 1`, proves each real logarithmic Mellin
 atom integrable, and evaluates its weighted integral as the corresponding
 von-Mangoldt Dirichlet term divided by `(sigma - 1/2)^2`; the square-root main
-term is exactly `4/(sigma-1)`. The sum-integral exchange and complete zeta
-logarithmic-derivative transform remain to be proved. Proving the required
-bound for `A_N` is the open arithmetic task. These estimates are not RH and
-do not exclude a finite or sparse off-line divisor; a restatement, hidden
-limit interchange, or conditional implication is not a substitute.
+term is exactly `4/(sigma-1)`. Lean now also proves absolute summability of
+the supported atom norm integrals, performs the infinite sum-integral
+exchange, and identifies the complete transform on every real `sigma > 1`
+with `(zeta'/zeta)(sigma)/(sigma-1/2)^2 + 4/(sigma-1)`. Extending this
+safe-half-plane identity into a rigidity or sign theorem and proving the
+required bound for `A_N` are the open arithmetic tasks. These estimates are
+not RH and do not exclude a finite or sparse off-line divisor; a restatement,
+hidden limit interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 

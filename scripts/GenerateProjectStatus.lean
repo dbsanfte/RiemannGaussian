@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Suzuki logarithmic Mellin atoms evaluate to von-Mangoldt Dirichlet terms"
-    lineOne := "Suzuki Mellin atom"
-    lineTwo := "= Dirichlet term"
+    label := "Suzuki logarithmic-average Mellin transform equals the zeta logarithmic derivative for sigma greater than one"
+    lineOne := "Mellin(-A), sigma > 1"
+    lineTwo := "= zeta'/zeta + pole"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.integral_suzukiChebyshevMellinWeightedLogAtom_Ioi
+      ``RiemannGaussian.ofReal_integral_neg_suzukiChebyshevLogAverageError_mul_mellinWeight_eq_logDeriv
   }
 ]
 
@@ -275,7 +275,7 @@ run_cmd do
     ("rhImplied", .bool false),
     ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
-      "Cutoffs zero and one are proved. For Suzuki's logarithmic-average error A_N, Lean proves E_endpoint(N)=-A_N-log(N)-4 and rewrites the exact entropy and sufficient quadratic conditions as upper bounds for A_N. Every unit smooth drift satisfies 0 <= D(b,b+1) <= b^(-3/2), so signed mass-error work minus A_N minus log(N) converges to an explicit finite constant. Lean now extends the literal logarithmic-average formula to every real b >= 1 and evaluates each integrable real Mellin atom exactly as its von-Mangoldt Dirichlet term; the square-root main term contributes 4/(sigma-1). The infinite sum-integral exchange, full zeta logarithmic-derivative identity, required upper bound for A_N, and every RH-forcing zero-location step remain open."),
+      "Cutoffs zero and one are proved. For Suzuki's logarithmic-average error A_N, Lean proves E_endpoint(N)=-A_N-log(N)-4 and rewrites the exact entropy and sufficient quadratic conditions as upper bounds for A_N. Every unit smooth drift satisfies 0 <= D(b,b+1) <= b^(-3/2), so signed mass-error work minus A_N minus log(N) converges to an explicit finite constant. Lean extends the literal formula to every real b >= 1, proves absolute summability of the supported Mellin atom integrals, performs the infinite sum-integral exchange, and derives for every real sigma > 1 the exact identity integral_1^infinity -A(x)x^(-sigma-1/2)dx = (zeta'/zeta)(sigma)/(sigma-1/2)^2 + 4/(sigma-1). Extending this safe-half-plane identity into an arithmetic or entire-function rigidity theorem, proving the required upper bound for A_N, and every RH-forcing zero-location step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),

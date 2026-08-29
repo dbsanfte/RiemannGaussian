@@ -26,21 +26,22 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now extends the literal weighted Chebyshev logarithmic-average formula
-from natural endpoints to every real `b >= 1`, with its prime prefix cut
-exactly at `floor(b)`. It also proves the required real Mellin atoms are
-integrable and evaluates them exactly. For `sigma > 1/2` and `n > 0`,
+Lean now proves the complete real Mellin transform of Suzuki's weighted
+Chebyshev logarithmic-average error. It represents the literal finite prime
+prefix as a pointwise sum of supported atoms, proves every atom integrable,
+proves the series of norm integrals summable from the absolutely convergent
+von-Mangoldt `L`-series, and performs the countable sum-integral exchange.
+For every real `sigma > 1`, Lean obtains the exact identity
 
-`integral_n^infinity log(x/n) x^(-sigma-1/2) dx
-  = n^(-sigma+1/2) / (sigma-1/2)^2`.
+`integral_1^infinity -A(x) x^(-sigma-1/2) dx
+  = (zeta'(sigma)/zeta(sigma))/(sigma-1/2)^2 + 4/(sigma-1)`.
 
-After multiplication by `Lambda(n)/sqrt(n)`, Lean simplifies this to the
-von-Mangoldt Dirichlet term `Lambda(n) n^(-sigma)/(sigma-1/2)^2`. For
-`sigma > 1`, it separately proves that the square-root main term contributes
-exactly `4/(sigma-1)`. This is the checked local kernel behind Suzuki's
-transform criterion. The infinite sum-integral exchange, its identification
-with the zeta logarithmic derivative, the required bound on the logarithmic
-average, and every RH-forcing zero-location step remain open.
+The theorem is stated after casting the real integral to `Complex`, matching
+Mathlib's zeta API. Thus the arithmetic logarithmic-average branch and the
+spectral zeta logarithmic derivative now meet rigorously on the safe
+half-plane, with no assumed interchange. Extending this identity into a
+sign or entire-function rigidity theorem, proving the quantitative bound on
+`A_N`, and deriving any unconditional zero-location constraint remain open.
 
 ## Mathematical Program
 
