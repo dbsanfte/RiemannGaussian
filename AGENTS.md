@@ -250,9 +250,13 @@ forcing that variation to vanish has been proved. Lean now also constructs
 the explicit finite paired-eta polynomials `E_N` and derivative polynomials
 `D_N`, proves both converge locally uniformly on `Re s > 0`, and proves
 `D_N / E_N` converges locally uniformly to the literal eta logarithmic
-derivative on its exact zero-free domain. The next interface is the uniform
-transfer of these finite arithmetic quotients to every selected detector
-circle; no quantitative convergence rate is currently claimed.
+derivative on its exact zero-free domain. Lean now transfers this convergence
+uniformly to every selected compact detector circle, proves the finite
+denominators eventually stay nonzero and the finite radial integrands are
+genuinely `L¹`, and selects growing truncations `N_n ≥ n`. The resulting
+single sequence of finite paired-eta Dirichlet-polynomial flux windows
+converges to the complete detector. No quantitative convergence rate or
+arithmetic bound forcing that finite sequence to vanish is currently claimed.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

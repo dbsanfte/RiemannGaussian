@@ -26,18 +26,17 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now constructs the explicit finite odd-even eta polynomials `E_N` and
-their termwise derivative polynomials `D_N`. It proves `E_N → E` and
-`D_N → D` locally uniformly throughout `Re s > 0`, using a checked
-summable majorant and the Cauchy derivative theorem. On the exact zero-free
-domain it consequently proves the locally uniform finite-arithmetic limit
-`D_N/E_N → D/E`.
+Lean now transfers `D_N/E_N → D/E` from the positive zero-free eta domain
+to every selected compact detector circle. It proves the finite denominators
+are eventually uniformly nonzero there, the heat-weighted radial integrands
+converge uniformly, and the finite integrands are genuinely `L¹`. Their
+integrals therefore converge through every finite spectral window.
 
-This supplies a rigorous finite Dirichlet-polynomial interface to the existing
-diagonal heat-weighted log-norm flux, but it supplies neither a quantitative
-rate nor a vanishing estimate. The next step is to transfer this convergence
-uniformly to every selected detector circle and then isolate the finite
-arithmetic inequality whose global rigidity would force the detector to zero.
+At detector stage `n`, Lean selects a truncation `N_n ≥ n` within the stage
+tolerance and proves `N_n → ∞`. The resulting single sequence of fluxes,
+each built from finite paired-eta Dirichlet polynomials, converges to `2*pi`
+times the complete RH-equivalent detector. This is still an approximation
+theorem: it provides no arithmetic estimate forcing that limit to vanish.
 
 ## Mathematical Program
 
