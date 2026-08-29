@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 278 modules · 7456 declarations · 6407 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 279 modules · 7467 declarations · 6417 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">EQUIVALENCES AND REDUCTIONS — NOT A PROOF CHAIN</text>
@@ -71,9 +71,9 @@
   </g>
   <g class="proved reduction">
     <rect x="340" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.tendsto_normalizedFirstTailGap_sub_endpointError_add_entropy_zero</title>
-    <text x="412" y="173">Suzuki gap / sqrt N</text>
-    <text x="412" y="191">endpoint - entropy  ✓</text>
+    <title>RiemannGaussian.suzukiFirstTailResetTransportGap_succ_nonnegative_iff_logAverage_entropy_bound</title>
+    <text x="412" y="173">Suzuki gap iff</text>
+    <text x="412" y="191">log-average bound  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>

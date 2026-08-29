@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
   },
   {
-    label := "Canonical Suzuki gap has a center-eliminated entropy asymptotic"
-    lineOne := "Suzuki gap / sqrt N"
-    lineTwo := "endpoint - entropy"
+    label := "Canonical Suzuki gap is equivalent to a logarithmic-average entropy bound"
+    lineOne := "Suzuki gap iff"
+    lineTwo := "log-average bound"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.tendsto_normalizedFirstTailGap_sub_endpointError_add_entropy_zero
+      ``RiemannGaussian.suzukiFirstTailResetTransportGap_succ_nonnegative_iff_logAverage_entropy_bound
   }
 ]
 
@@ -266,13 +266,13 @@ run_cmd do
     ("rhImplied", .bool false),
     ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
-      "Cutoffs zero and one are proved. The exact finite entropy identity and its quadratic mass-error majorant remain available. Lean now proves the fixed-endpoint drift law E_endpoint(N+1)-E_endpoint(N)=D_N-log((N+1)/N)E_mass(N), with D_N nonnegative and E_endpoint(2)=4 sqrt(2)-log(2)-4 strictly positive. The resulting telescoping formula reduces the sufficient quadratic certificate to a cumulative block inequality for signed mass-error work. That block bound, exact entropy domination, and every RH-forcing rigidity step remain open."),
+      "Cutoffs zero and one are proved. For Suzuki's logarithmic-average error A_N, Lean proves E_endpoint(N)=-A_N-log(N)-4 and identifies the cumulative signed mass-error work exactly as A_N+log(N)-log(2)+4 sqrt(2)+sum D_j, where every smooth drift D_j is nonnegative. The exact entropy condition and its sufficient quadratic majorant are now explicit quantitative upper bounds for A_N. Proving either bound uniformly, and every RH-forcing zero-location step, remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Control the verified signed cumulative mass-error work strongly enough to prove the exact entropy domination or sufficient quadratic block inequality, then derive an unconditional zero-location constraint")
+        "Prove the verified quantitative upper bound for the weighted Chebyshev logarithmic average strongly enough to dominate the exact entropy cost, then derive an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

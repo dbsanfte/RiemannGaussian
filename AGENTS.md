@@ -80,10 +80,15 @@ has a checked discrete work law
 drift `D_N >= 0` and strictly positive evaluated initial margin at `N=2`.
 Lean telescopes this into initial margin plus cumulative smooth drift minus
 cumulative signed mass-error work, and proves a corresponding block-work
-inequality sufficient for the literal tail. Controlling that signed work is
-the open arithmetic task. These estimates are not RH and do not exclude a
-finite or sparse off-line divisor; a restatement, hidden limit interchange,
-or conditional implication is not a substitute.
+inequality sufficient for the literal tail. For the literal weighted
+Chebyshev logarithmic-average error `A_N`, Lean now proves exactly
+`E_endpoint(N) = -A_N-log(N)-4` and identifies the cumulative signed work as
+`A_N+log(N)-log(2)+4*sqrt(2)+sum D_j`. The exact entropy condition and the
+sufficient quadratic majorant are therefore explicit quantitative upper
+bounds for this single logarithmic average. Proving such a bound is the open
+arithmetic task. These estimates are not RH and do not exclude a finite or
+sparse off-line divisor; a restatement, hidden limit interchange, or
+conditional implication is not a substitute.
 
 ## Soundness invariant
 

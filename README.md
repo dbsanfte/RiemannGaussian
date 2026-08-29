@@ -26,32 +26,26 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-The generated status panel now presents checked theorems as an inventory, not
-as a green causal chain or a proximity meter. RH-equivalent detectors are
-explicitly labeled as reformulations, and the only arrow to RH begins at the
-orange, unproved arithmetic-rigidity gap.
+Lean now puts the endpoint and signed-work frontiers into Suzuki's weighted
+Chebyshev logarithmic-average coordinate
 
-The latest mathematical slice derives the exact discrete evolution of the
-fixed-endpoint arithmetic error. Writing `M_N` for the weighted Chebyshev mass
-error, Lean proves
+`A_N = sum_(n <= N) Lambda(n) / sqrt(n) * log(N/n) - 4 * sqrt(N)`.
 
-`E_endpoint(N+1) - E_endpoint(N)
-  = D_N - log((N+1)/N) * M_N`,
+It proves the exact identities
 
-where the smooth drift `D_N` is proved nonnegative. This telescopes exactly to
+`E_endpoint(N) = -A_N - log(N) - 4`
 
-`E_endpoint(N) = E_endpoint(2)
-  + sum D_j - sum log((j+1)/j) * M_j`,
+and
 
-and Lean proves the initial margin
-`E_endpoint(2) = 4 * sqrt(2) - log(2) - 4` is strictly positive. Combined
-with the verified quadratic entropy majorant, a single cumulative block
-inequality for the signed mass-error work is now proved sufficient for the
-literal Suzuki tail.
+`cumulative_mass_work(N)
+  = A_N + log(N) - log(2) + 4 * sqrt(2) + cumulative_smooth_drift(N)`.
 
-The required uniform bound on that signed cumulative work remains open; the
-verified infrastructure has not yet supplied any unconditional zero-location
-constraint, tail positivity, or proof of RH.
+Thus cumulative signed work and the logarithmic average are the same
+arithmetic obstruction in different coordinates. Lean also rewrites both the
+exact entropy condition and its sufficient quadratic majorant as quantitative
+upper bounds on `A_N`. Establishing either bound uniformly, and then deriving
+an unconditional zero-location constraint, remain open; no tail positivity or
+RH is claimed.
 
 ## Mathematical Program
 
