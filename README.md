@@ -24,21 +24,24 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now couples the canonical Suzuki center to the two arithmetic statistics
-that form its PNT remainder. If `E_mass(N)` and `E_log(N)` are the weighted
-Chebyshev mass and log-moment errors, and `delta_N = r_N - log(N)`, Lean proves
+Lean now eliminates the moving canonical center from the leading Suzuki
+frontier. For the corrected mass ratio
 
-`PNTError(r_N,N) = E_log(N) - r_N * E_mass(N)`
+`q_N = 1 + (E_mass(N) - smooth_slope(r_N)) / (2 * sqrt(N))`
 
-exactly, and
+Lean proves exactly that `q_N = exp((r_N - log(N)) / 2)`. With the
+nonnegative relative entropy `H(q) = q * log(q) - q + 1`, it then proves the
+finite identity
 
-`E_mass(N) / sqrt(N) - 2 * (exp(delta_N / 2) - 1) -> 0`.
+`gap_N = E_endpoint(N) - 4 * sqrt(N) * H(q_N) + smooth_correction_N`,
 
-Together with the already checked convex-plus-PNT asymptotic for the normalized
-gap, this shows that the displacement, convex reserve, and centered remainder
-are driven by the same weighted arithmetic measure. The hard step is a joint
-sign or covariance estimate for its mass and log-moment errors strong enough
-to protect the reserve. No such estimate, tail positivity, or RH is claimed.
+where `E_endpoint` is an explicit finite weighted von Mangoldt sum and the
+source-exact correction divided by `sqrt(N)` tends to zero. Hence
+
+`gap_N / sqrt(N) - E_endpoint(N) / sqrt(N) + 4 * H(q_N) -> 0`.
+
+The open arithmetic step is to prove that the endpoint error dominates this
+entropy cost uniformly. No such bound, tail positivity, or RH is claimed.
 
 ## Mathematical Program
 

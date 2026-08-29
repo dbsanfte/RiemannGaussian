@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
   },
   {
-    label := "Canonical Suzuki gap has a square-root-scale convex-plus-PNT asymptotic"
+    label := "Canonical Suzuki gap has a center-eliminated entropy asymptotic"
     lineOne := "Suzuki gap / sqrt N"
-    lineTwo := "convex + PNT + o(1)"
+    lineTwo := "endpoint - entropy"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.tendsto_normalizedFirstTailGap_sub_exponentialDefect_sub_normalizedPNTError_zero
+      ``RiemannGaussian.tendsto_normalizedFirstTailGap_sub_endpointError_add_entropy_zero
   }
 ]
 
@@ -264,13 +264,13 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("rhImplied", .bool false),
     ("statusNote", .str
-      "Cutoffs zero and one are proved. The normalized literal gap equals 4(exp(delta_N/2)-1-delta_N/2) plus the normalized centered PNT remainder plus o(1). The remainder is now exactly E_log(N)-r_N E_mass(N) for weighted Chebyshev log-moment and mass errors from the same arithmetic measure, while E_mass(N)/sqrt N equals 2(exp(delta_N/2)-1)+o(1). A joint sign or covariance estimate protecting the convex reserve and every RH-forcing rigidity step remain open."),
+      "Cutoffs zero and one are proved. The canonical center has now been eliminated from the leading Legendre pair: for corrected mass ratio q_N and H(q)=q log q-q+1, Lean proves H(q_N)>=0 and the exact finite identity gap_N=E_endpoint(N)-4 sqrt(N) H(q_N)+smooth_correction_N. The endpoint error is a direct finite weighted von-Mangoldt sum and the source-exact correction is o(sqrt N). Uniform entropy domination and every RH-forcing rigidity step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Exploit the verified joint mass and log-moment coupling to prove the centered arithmetic remainder cannot undercut the convex reserve, uniformly enough to make every canonical gap nonnegative, then derive an unconditional zero-location constraint")
+        "Prove the fixed-endpoint weighted Chebyshev error plus the exact smooth correction dominates the verified nonnegative entropy cost at every canonical prefix, then derive an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

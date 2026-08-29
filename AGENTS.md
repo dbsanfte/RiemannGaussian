@@ -61,12 +61,17 @@ PNTError(r_N,N) / sqrt N + o(1)`, where `delta_N = r_N - log N`.
 The center equation is now coupled to the same arithmetic measure: if
 `E_mass` and `E_log` are its weighted mass and log-moment errors, Lean proves
 exactly `PNTError(r_N,N) = E_log(N) - r_N * E_mass(N)` and proves
-`E_mass(N) / sqrt N = 2 * (exp(delta_N/2) - 1) + o(1)`. The missing arithmetic
-theorem must exploit this joint mass--moment structure to control the sign of
-the normalized PNT remainder against the convex reserve and ultimately derive
-a genuine global zero-location constraint. These estimates are not RH and do
-not exclude a finite or sparse off-line divisor; a restatement, hidden limit
-interchange, or conditional implication is not a substitute.
+`E_mass(N) / sqrt N = 2 * (exp(delta_N/2) - 1) + o(1)`. Lean now performs the
+corresponding Legendre elimination exactly. For the corrected mass ratio
+`q_N = exp(delta_N/2)` and relative entropy
+`H(q) = q * log q - q + 1 >= 0`, the literal finite gap is
+`gap_N = E_endpoint(N) - 4 * sqrt N * H(q_N) + smooth_correction_N`, where
+`E_endpoint` is a direct finite weighted von-Mangoldt sum and the source-exact
+correction is `o(sqrt N)`. The missing arithmetic theorem must show that this
+fixed-endpoint error dominates the entropy cost uniformly and ultimately
+derive a genuine global zero-location constraint. These estimates are not RH
+and do not exclude a finite or sparse off-line divisor; a restatement, hidden
+limit interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 
