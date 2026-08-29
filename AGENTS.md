@@ -183,9 +183,15 @@ correction is analytic on every selected rectangle, so its boundary equals
 its bulk exactly; its horizontal sides vanish by the same Gaussian mechanism,
 and its vertical-minus-bulk term tends to zero. Subtracting the entire regular
 piece leaves the unnormalized detector limit unchanged. The live three-term
-remainder is therefore concentrated in the `xi'/xi` component. Identifying or
-estimating that remainder and proving unconditional arithmetic rigidity
-remain open.
+remainder is therefore concentrated in the `xi'/xi` component. Lean now
+proves this at the integral level rather than only pointwise: both selected
+vertical lines lie in the zero-free pole-cleared domain, their interval
+integrals split exactly, the bulk split is justified through genuine planar
+integrability, and the regular-subtracted functional equals the two explicit
+xi-logarithmic-derivative vertical terms minus the explicit xi source bulk at
+every stage. This literal three-term functional retains the unnormalized
+detector limit. Identifying or estimating it and proving unconditional
+arithmetic rigidity remain open.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.

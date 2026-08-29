@@ -26,19 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now removes the explicit Archimedean regular correction from the live
-near-edge frontier. The heat-weighted pole-cleared response and its
-Cauchy--Green source split pointwise into genuine xi-logarithmic-derivative
-and regular-correction pieces. Lean proves that the regular piece is
-holomorphic throughout every selected rectangle, so its complete boundary is
-exactly its bulk at each finite stage.
+Lean now identifies the live near-edge frontier exactly with literal
+`logDeriv riemannXi` integrals. It proves that both selected vertical lines are
+inside the zero-free pole-cleared domain, establishes the required interval
+and planar integrability, and splits the two vertical integrals and the
+Cauchy--Green bulk into genuine xi-logarithmic-derivative and holomorphic
+regular-correction pieces.
 
-Both regular-correction horizontal sides vanish under the fixed-positive-time
-Gaussian. Its two vertical sides minus bulk therefore tend to zero, while the
-regular-subtracted vertical-minus-bulk functional still converges without
-height normalization to `2*pi` times the complete nonnegative xi heat
-detector. The open frontier is now concentrated in the genuine `xi'/xi`
-component: identify or estimate its two vertical terms and bulk strongly
+After the already-proved cancellation of the regular correction, the
+remaining functional is therefore exactly two explicit xi-logarithmic-
+derivative vertical terms minus one explicit xi source bulk—not merely a
+renamed difference. Its imaginary part still converges without height
+normalization to `2*pi` times the complete nonnegative xi heat detector. The
+open frontier is to identify or estimate these three explicit terms strongly
 enough to force their absolute detector scalar to vanish. The corresponding
 RH equivalence remains a closure reformulation, not a proof of that premise.
 
