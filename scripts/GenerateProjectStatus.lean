@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The global infinite eta completion-weight distortion is strictly signed by sigma minus one half"
-    lineOne := "global Gram skew"
-    lineTwo := "signed at 1/2"
-    role := "unconditional"
+    label := "The localized infinite eta completion distortion is exactly an oscillatory complementary-kernel difference"
+    lineOne := "localized eta Gram"
+    lineTwo := "cos-phase bridge"
+    role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaCompletionWeightDistortionIntegral_sign_characterization
+      ``RiemannGaussian.pairedEtaLocalizedCompletionWeightDistortionIntegral_eq_kernelDifference
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "phase-sensitive coercivity after localizing the infinite eta Gram at a zero ordinate.</text>\n" ++
+      "phase coercivity for the oscillatory eta Gram localized at a zero ordinate.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -360,8 +360,14 @@ run_cmd do
         "time, so Lean proves that the raw Gram is strictly decreasing in sigma and " ++
         "derives the complete global distortion sign: positive left of one half, zero " ++
         "exactly at one half, and negative right of one half. This zero-centered sign " ++
-        "is unconditional but does not constrain zeros. No phase-sensitive localized " ++
-        "arithmetic obstruction forcing " ++
+        "is unconditional but does not constrain zeros. Lean now localizes the fixed " ++
+        "infinite Gram at every ordinate gamma and derives its exact arithmetic kernel: " ++
+        "the positive envelope is multiplied by cos(gamma*(u-t)). The localized " ++
+        "reciprocal-weight distortion is exactly the complementary difference of these " ++
+        "oscillatory kernels. Positive phase preserves strict antitonicity in sigma, " ++
+        "while negative phase strictly reverses it; at every nontrivial zero the " ++
+        "localized energy integrand vanishes at its center. No quantitative phase " ++
+        "obstruction forcing " ++
         "the horizontal displacement to vanish is proved, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -369,8 +375,8 @@ run_cmd do
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Formalize localization of the infinite positive eta Gaussian Gram at a zero " ++
-        "ordinate and prove a phase-sensitive coercivity estimate that forces zero " ++
+        "Prove a quantitative phase-coercivity or incompatibility estimate for the " ++
+        "oscillatory infinite eta Gram localized at a zero ordinate that forces zero " ++
         "location, or force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),

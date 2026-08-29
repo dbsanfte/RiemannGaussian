@@ -481,11 +481,17 @@ the measure is nonzero and supported at strictly positive logarithmic time,
 so Lean now proves this raw Gram is strictly decreasing in `sigma`. It follows
 that the global distortion is positive left of `1/2`, zero exactly at `1/2`,
 and negative right of `1/2`. This zero-centered sign law is unconditional but
-does not constrain a zero. The live obstruction is phase-sensitive
-localization at a zero ordinate: the translated Gaussian introduces an
-oscillatory factor in the arithmetic double kernel, so the positive-kernel
-monotonicity proof no longer applies. The next valid slice must formalize that
-localized kernel and prove a genuine phase coercivity or incompatibility.
+does not constrain a zero. Lean now localizes the infinite Gram at an arbitrary
+ordinate `gamma` and proves the exact arithmetic kernel is the positive
+zero-centered envelope multiplied by `cos(gamma*(u-t))`. It connects the
+localized complementary norm difference, the reciprocal-completion-weight
+distortion, and the difference of the two oscillatory arithmetic kernels in
+one checked identity. Positive cosine phase preserves strict antitonicity in
+`sigma`; negative phase strictly reverses it. At every nontrivial zeta zero
+the localized energy integrand vanishes at its center, but the full integral
+has no proved sign. The next valid slice must establish a quantitative phase
+coercivity or incompatibility on the actual eta support, rather than reuse the
+now-inapplicable positive-kernel argument.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

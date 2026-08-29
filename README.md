@@ -26,20 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves that the fixed infinite eta measure is nonzero and supported
-at strictly positive logarithmic time. Its positive Gaussian--Laplace Gram
-norm is therefore strictly decreasing in `sigma`. Combined with the exact
-completed symmetry, this gives a complete sign characterization of the
-reciprocal-completion-weight distortion: it is positive for `sigma < 1/2`,
-zero exactly at `sigma = 1/2`, and negative for `sigma > 1/2` throughout the
-open strip, for every positive Gaussian time.
+Lean now localizes the fixed infinite eta Gaussian Gram at an arbitrary
+ordinate `gamma`. With all domination, integrability, and Fubini obligations
+checked, the localized vertical norm is exactly the double integral of
+`exp(-sigma*(t+u))*exp(-(t-u)^2/(4*tau))*cos(gamma*(u-t))` against two copies
+of the literal positive eta measure. The same theorem identifies the
+localized reciprocal-completion-weight distortion with the difference of
+these oscillatory kernels at `sigma` and `1-sigma`.
 
-This closes the global, zero-centered sign calculation but does not constrain
-zeta zeros and does not imply RH. Centering the Gaussian at a zero ordinate
-introduces an oscillatory phase into the arithmetic double kernel, destroying
-the positivity used here. The next frontier is a rigorously formalized,
-phase-sensitive localized coercivity theorem that can exclude an off-critical
-zero.
+This pinpoints the hard obstruction in Lean: positive cosine phase preserves
+the zero-centered monotonicity in `sigma`, while negative phase strictly
+reverses it. At every nontrivial zeta zero, the localized energy integrand
+vanishes at the center ordinate, but no current theorem controls the full
+phase-weighted integral or excludes an off-critical zero. The frontier is now
+a quantitative phase-coercivity or incompatibility theorem on the actual eta
+support; RH remains open.
 
 ## Mathematical Program
 
