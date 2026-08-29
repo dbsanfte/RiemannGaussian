@@ -198,7 +198,17 @@ derivative components. Lean proves that the bulk coefficients are exactly the
 two partial derivatives of the real heat kernel, so the remaining source is a
 first-order heat-gradient pairing. Turning that pairing into a Green/Dirichlet
 or explicit-formula identity with an unconditional vanishing estimate remains
-open arithmetic rigidity.
+open arithmetic rigidity. Lean now also defines the shifted xi log-norm
+potential `U(a,y) = log |xi(1/2+a+I*y)|` and proves away from the divisor that
+`U_a = Re (xi'/xi)` and `U_y = -Im (xi'/xi)`. The finite bounded-height divisor
+inside every selected rectangle is proved planar-null, so the off-divisor
+identity promotes to an almost-everywhere equality, the gradient pairing is
+genuinely integrable, and its ordinary planar integral equals the explicit xi
+bulk. Both vertical boundaries are zero-free, making the entire live scalar
+exactly a boundary-minus-`grad K · grad U` functional with the same
+unnormalized detector limit. A valid next step must retain the distributional
+zero contributions in any Green or integration-by-parts argument; erasing
+them would merely erase the detector.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.

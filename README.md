@@ -26,19 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now converts the live three-term `logDeriv riemannXi` functional into a
-fully real scalar: two explicit vertical integrals of the real heat kernel
-times `Re (xi'/xi)`, minus one explicit planar source integral involving both
-`Re (xi'/xi)` and `Im (xi'/xi)`. All real/imaginary integral interchanges are
-backed by proved interval and planar integrability.
+Lean now introduces the shifted xi log-norm potential
+`U(a,y) = log |xi(1/2 + a + I*y)|` and proves, away from zeros, that its two
+partial derivatives are `Re (xi'/xi)` and `-Im (xi'/xi)`. Combined with the
+already-checked heat-kernel derivatives, the explicit planar source is exactly
+the Euclidean pairing `grad K · grad U`.
 
-The two source coefficients are also proved to be exactly the horizontal and
-vertical partial derivatives of the real heat kernel. Thus the bulk is now a
-checked first-order heat-gradient pairing, and the explicit real scalar still
-converges without normalization to `2*pi` times the complete nonnegative xi
-heat detector. The open frontier is to turn this pairing into a useful
-Green/Dirichlet or explicit-formula rigidity estimate and force the scalar to
-vanish. No such unconditional vanishing theorem is claimed yet.
+The selected rectangles cross xi zeros, so Lean separately proves that their
+bounded-height divisor lies in an explicit finite zero window and is null for
+planar measure. This justifies the almost-everywhere replacement, proves the
+gradient pairing integrable, and identifies the ordinary planar integrals.
+The vertical sides are genuinely zero-free. Consequently the complete real
+frontier is now an exact boundary-minus-gradient functional and still
+converges without normalization to `2*pi` times the nonnegative xi detector.
+The open step is a divisor-aware Green/Dirichlet or explicit-formula rigidity
+estimate; the singular zero masses cannot simply be discarded.
 
 ## Mathematical Program
 
