@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
   },
   {
-    label := "First-tail frontier is an exact two-level positive-kernel cumulative PNT-error bound"
-    lineOne := "Suzuki / PNT"
-    lineTwo := "cumulative error"
+    label := "Canonical Suzuki gap has a square-root-scale convex-plus-PNT asymptotic"
+    lineOne := "Suzuki gap / sqrt N"
+    lineTwo := "convex + PNT + o(1)"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevCumulativePNTPositiveKernelMoment
+      ``RiemannGaussian.tendsto_normalizedFirstTailGap_sub_exponentialDefect_sub_normalizedPNTError_zero
   }
 ]
 
@@ -264,13 +264,13 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("rhImplied", .bool false),
     ("statusNote", .str
-      "Cutoffs zero and one are proved. Absolute-continuity integration by parts expresses every remaining prefix through a two-level positive-kernel moment of the cumulative PNT error. Center localization and elementary Chebyshev bounds now give absolute envelopes 45 sqrt N for that moment, 25 sqrt N for the direct boundary, and 70 sqrt N for the complete centered PNT remainder; the remainder divided by N tends to zero. Its sign at square-root scale and every RH-forcing rigidity step remain open."),
+      "Cutoffs zero and one are proved. The centered PNT remainder is bounded by 70 sqrt N. The smooth baseline now splits exactly into a nonnegative exponential convexity reserve and a logarithmic lower-order term which is o(sqrt N). Thus the normalized literal gap equals 4(exp(delta_N/2)-1-delta_N/2) plus the normalized centered PNT remainder plus o(1). Controlling the arithmetic sign against this reserve and every RH-forcing rigidity step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Turn the verified square-root-scale magnitude control into a sign-sensitive uniform cumulative Chebyshev-error bound, then derive an unconditional zero-location constraint")
+        "Prove the normalized centered PNT remainder cannot undercut the verified convex reserve, uniformly enough to make every canonical gap nonnegative, then derive an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

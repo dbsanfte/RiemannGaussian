@@ -52,11 +52,17 @@ Lean further proves that the complete cumulative moment is at most
 `45 * sqrt N` in absolute value, the direct boundary term is at most
 `25 * sqrt N`, and the full centered PNT remainder is at most `70 * sqrt N`.
 Consequently that remainder divided by `N` tends to zero along the canonical
-centers. These magnitude estimates do not determine the sign at square-root
-scale, are not RH, and do not exclude a finite or sparse off-line divisor.
-The missing theorem must derive a genuine global zero-location constraint
-from xi's arithmetic or entire-function structure; a restatement, hidden
-limit interchange, or conditional implication is not a substitute.
+centers. The smooth baseline is now split exactly into a nonnegative
+exponential convexity reserve and a lower-order term. The latter is bounded
+by an explicit logarithmic envelope and is `o(sqrt N)`. Hence Lean proves the
+dimensionless asymptotic frontier
+`gap_N / sqrt N = 4 * (exp(delta_N/2) - 1 - delta_N/2) +
+PNTError(r_N,N) / sqrt N + o(1)`, where `delta_N = r_N - log N`.
+The missing arithmetic theorem must control the sign of that normalized PNT
+remainder against the convex reserve and ultimately derive a genuine global
+zero-location constraint. These magnitude estimates are not RH and do not
+exclude a finite or sparse off-line divisor; a restatement, hidden limit
+interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 

@@ -24,17 +24,18 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now proves an unconditional square-root envelope for the complete
-centered PNT remainder at every canonical endpoint `N = count + 2`:
+Lean now identifies the dimensionless canonical Suzuki frontier. Writing
+`delta_N = r_N - log(N)`, it proves
 
-`|PNTError(r_N, N)| <= 70 * sqrt(N)`.
+`gap_N / sqrt(N) - 4 * (exp(delta_N / 2) - 1 - delta_N / 2)
+  - PNTError(r_N, N) / sqrt(N) -> 0`.
 
-The proof bounds the exact endpoint-plus-interior cumulative-error moment by
-`45 * sqrt(N)` and the direct boundary term by `25 * sqrt(N)`. It also proves
-that `PNTError(r_N, N) / N` tends to zero. This controls magnitude but not
-sign at the natural square-root scale. The uniform positive-kernel inequality
-and every arithmetic-to-zero-location rigidity step therefore remain open;
-this is not tail positivity or RH.
+The exponential term is proved nonnegative. All omitted source-exact smooth
+terms are `o(sqrt(N))`, with the finite lower bound
+`gap_N >= reserve_N + PNTError(r_N,N) - (15/8)log(N) - 107/8`.
+Thus the hard step is now explicitly a sign-sensitive lower bound for the
+normalized centered arithmetic remainder against the convex reserve. No such
+bound, tail positivity, or RH is claimed.
 
 ## Mathematical Program
 
