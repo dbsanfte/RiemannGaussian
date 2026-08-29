@@ -24,24 +24,25 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-Lean now eliminates the moving canonical center from the leading Suzuki
-frontier. For the corrected mass ratio
+Lean now gives the entropy frontier a concrete quadratic arithmetic majorant.
+For the corrected mass ratio
 
 `q_N = 1 + (E_mass(N) - smooth_slope(r_N)) / (2 * sqrt(N))`
 
-Lean proves exactly that `q_N = exp((r_N - log(N)) / 2)`. With the
-nonnegative relative entropy `H(q) = q * log(q) - q + 1`, it then proves the
-finite identity
+the scalar inequality `H(q) <= (q - 1)^2` and the exact mass coupling give
 
-`gap_N = E_endpoint(N) - 4 * sqrt(N) * H(q_N) + smooth_correction_N`,
+`4 * sqrt(N) * H(q_N)
+  <= (E_mass(N) - smooth_slope(r_N))^2 / sqrt(N)`.
 
-where `E_endpoint` is an explicit finite weighted von Mangoldt sum and the
-source-exact correction divided by `sqrt(N)` tends to zero. Hence
+Consequently Lean proves that the fixed-endpoint inequality
 
-`gap_N / sqrt(N) - E_endpoint(N) / sqrt(N) + 4 * H(q_N) -> 0`.
+`(E_mass(N) - smooth_slope(r_N))^2 / sqrt(N)
+  <= E_endpoint(N) + smooth_correction_N`
 
-The open arithmetic step is to prove that the endpoint error dominates this
-entropy cost uniformly. No such bound, tail positivity, or RH is claimed.
+is sufficient for every canonical gap and, if uniform beyond the discharged
+initial cutoffs, for the literal Suzuki tail. This arithmetic premise is open
+and may be stronger than the exact entropy condition. No tail positivity or
+RH is claimed.
 
 ## Mathematical Program
 

@@ -69,9 +69,14 @@ corresponding Legendre elimination exactly. For the corrected mass ratio
 `E_endpoint` is a direct finite weighted von-Mangoldt sum and the source-exact
 correction is `o(sqrt N)`. The missing arithmetic theorem must show that this
 fixed-endpoint error dominates the entropy cost uniformly and ultimately
-derive a genuine global zero-location constraint. These estimates are not RH
-and do not exclude a finite or sparse off-line divisor; a restatement, hidden
-limit interchange, or conditional implication is not a substitute.
+derive a genuine global zero-location constraint. Lean further proves the
+quantitative upper bound
+`4 * sqrt N * H(q_N) <= (E_mass(N) - smooth_slope(r_N))^2 / sqrt N`, so a
+specific fixed-endpoint quadratic mass--moment inequality is sufficient for
+every gap and for the uniform tail. Its premise is open and may be strictly
+stronger than the exact entropy condition. These estimates are not RH and do
+not exclude a finite or sparse off-line divisor; a restatement, hidden limit
+interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 

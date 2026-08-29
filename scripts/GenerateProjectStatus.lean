@@ -264,13 +264,13 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("rhImplied", .bool false),
     ("statusNote", .str
-      "Cutoffs zero and one are proved. The canonical center has now been eliminated from the leading Legendre pair: for corrected mass ratio q_N and H(q)=q log q-q+1, Lean proves H(q_N)>=0 and the exact finite identity gap_N=E_endpoint(N)-4 sqrt(N) H(q_N)+smooth_correction_N. The endpoint error is a direct finite weighted von-Mangoldt sum and the source-exact correction is o(sqrt N). Uniform entropy domination and every RH-forcing rigidity step remain open."),
+      "Cutoffs zero and one are proved. The exact finite identity is gap_N=E_endpoint(N)-4 sqrt(N) H(q_N)+smooth_correction_N, with H(q_N)>=0 and source-exact correction o(sqrt N). Lean now also proves 4 sqrt(N) H(q_N) <= (E_mass(N)-smooth_slope(r_N))^2/sqrt(N), reducing a sufficient tail certificate to one explicit fixed-endpoint quadratic mass-moment estimate. That stronger arithmetic premise, exact entropy domination, and every RH-forcing rigidity step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Prove the fixed-endpoint weighted Chebyshev error plus the exact smooth correction dominates the verified nonnegative entropy cost at every canonical prefix, then derive an unconditional zero-location constraint")
+        "Prove either the exact entropy domination or the verified sufficient quadratic mass-moment inequality at every canonical prefix, then derive an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
