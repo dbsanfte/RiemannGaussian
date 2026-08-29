@@ -366,9 +366,13 @@ so Lean proves that the global comparison principle is exactly equivalent to
 Mathlib's literal `RiemannHypothesis`. No theorem proves either open direction;
 comparability is conjecture-strength, not a routine estimate. The raw
 cutoff-tail analysis is therefore exhausted as a source of contradiction.
-The next hard input must be an independent eta-specific mechanism deriving
-the coupling from symmetry-aware Gaussian/Gram or complementary-moment
-arithmetic.
+Lean now begins the symmetry-aware pivot by proving an exact finite Gaussian
+Gram identity for the actual first `2N` alternating eta atoms. Their genuine
+Gaussian `L²` norm equals a completely explicit arithmetic double sum, and
+the same checked theorem proves that sum real and nonnegative. This is generic
+finite Gram structure and does not relate `sigma` to `1-sigma`. The next hard
+input must be an independent eta-specific completed normalization or
+complementary-derivative mechanism deriving the conjecture-strength coupling.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

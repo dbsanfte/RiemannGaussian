@@ -26,31 +26,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now upgrades the sharp Euler-tail estimate to an exact normalized
-asymptotic. Throughout `Re(s) > 0`,
+Lean now connects the actual finite paired-eta polynomial to a positive
+Gaussian Gram form. Write `E_N` for its first `2N` alternating Dirichlet atoms,
+`c_k(sigma)=(-1)^k(k+1)^(-sigma)`, and `lambda_k=log(k+1)`. For every
+`tau>0`, Lean proves the exact finite identity
 
-`(2N+1)^s * (G_N(s)-G(s)) -> -1/2`.
+`integral exp(-tau*(t-x)^2) * |E_N(sigma+it)|^2 dt`
 
-At every nontrivial zeta zero `rho`, where `G(rho)=1`, taking norms gives
+`= sqrt(pi/tau) * sum_(j,k<2N) c_j * conj(c_k)`
 
-`(2N+1)^Re(rho) * ||G_N(rho)-1|| -> 1/2`.
+`    * exp(-(lambda_k-lambda_j)^2/(4*tau)`
 
-The functional-equation partner has the complementary exponent
-`1-Re(rho)`. Lean proves a general rigidity lemma: two raw errors with these
-positive scaled limits cannot be eventually comparable above and below by
-fixed positive constants unless their exponents agree. Consequently,
-eventual two-sided comparability of the gap errors at `rho` and its partner
-forces `Re(rho)=1/2`; if that comparison principle holds at every nontrivial
-zero, Lean derives Mathlib's `RiemannHypothesis`. Conversely, under RH each
-zero equals its reflected partner, so the two error sequences are identical.
-Lean therefore proves that the global comparison principle is equivalent to
-RH.
+`          + i*x*(lambda_k-lambda_j))`.
 
-This is a checked reformulation, not a proof of either side. It shows that the
-comparison principle is conjecture-strength rather than a routine tail
-estimate. The separate sharp tails do not supply it. The open target is an
-independent eta-specific mechanism—Gaussian/Gram arithmetic or complementary
-derivative moments—that supplies genuine symmetry-aware coupling.
+Every interchange is finite, the integral is genuinely integrable, and the
+arithmetic double sum is proved real and nonnegative. This is an unconditional
+bridge between the eta and Gaussian branches, not a zero-location theorem.
+The next frontier is to find an eta-specific completed normalization or moment
+identity that couples its values at `sigma` and `1-sigma`; generic Gram
+positivity alone cannot imply RH.
 
 ## Mathematical Program
 
