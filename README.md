@@ -31,16 +31,17 @@ convergent paired-eta quotient `D/E` and rewrites its singular field as
 `(Re(D*conj E), Im(D*conj E)) / |E|^2`. Its squared density is the exact
 singular ratio `|D|^2/|E|^2`; no through-divisor `L²` estimate is assumed.
 
-The new divisor-preserving replacement is a rigorously proved `L¹` radial
-flux. Lean proves that paired eta and zeta have the same analytic order at
-every nontrivial zero, that `(s-rho)D(s)/E(s)` tends to the genuine analytic
-multiplicity, and that the normalized-bilinear radial-flux integrand is
-interval integrable on all sufficiently small circles. Its flux tends exactly
-to `2*pi` times that positive multiplicity and is eventually positive.
+The divisor-preserving replacement is a rigorously proved `L¹` radial flux.
+Paired eta and zeta have the same analytic order at every nontrivial zero, and
+the normalized-bilinear flux is genuinely interval integrable on sufficiently
+small circles and tends to `2*pi` times the positive multiplicity.
 
-This closes the local renormalization interface without erasing divisor mass.
-It does not prove RH: the frontier is now a global arithmetic cancellation or
-coercivity theorem controlling this `L¹` eta flux inside the complete detector.
+Lean now inserts the actual Gaussian boundary-heat kernel into this literal
+eta flux. A common shrinking radius recovers every finite selected heat-residue
+window exactly; at positive heat time those window limits converge to
+`2*pi` times the complete RH-equivalent detector. This is a checked two-stage
+limit, not an interchange of limits or a proof of vanishing. The frontier is
+a global arithmetic cancellation or coercivity theorem for this eta flux.
 
 ## Mathematical Program
 

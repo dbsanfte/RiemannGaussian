@@ -233,7 +233,11 @@ flux. Paired eta has exactly the zeta analytic order at every
 nontrivial zero, and its normalized-bilinear flux on shrinking circles tends
 to `2*pi` times the positive analytic multiplicity. The remaining frontier is
 a global arithmetic cancellation or coercivity estimate for that flux inside
-the complete live detector.
+the complete live detector. The actual Gaussian boundary-heat weight is now
+inserted into the literal eta quotient: finite selected flux windows recover
+their exact heat-residue totals as the puncture radius shrinks, and these
+limiting values converge to `2*pi` times the complete detector. This is a
+two-stage limit; no limit interchange is assumed.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
