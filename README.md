@@ -26,21 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now constructs a genuine finite principal-part regularization of the
-pole-cleared arithmetic response. In every positive shifted-coordinate slab
-with bounded imaginary height, a finite window is proved to contain exactly
-all xi zeros there. At each selected zero the response is proved to be its
-analytic multiplicity divided by `z-c` plus an analytic remainder; Lean then
-patches all of these removable remainders into one function analytic across
-the entire finite divisor.
+Lean now proves the exact finite-window, termwise-regularized Cauchy--Green
+identity for the heat-weighted arithmetic response. Whenever a rectangle in a
+positive bounded-height slab strictly contains its finite xi-zero window,
+Lean constructs one analytic remainder, applies ordinary Cauchy--Green to it,
+sums the checked one-principal-part improper limits at a common shrinking
+parameter, and recovers the actual outer boundary minus `2*pi*i` times the
+complete finite multiplicity-weighted heat-residue sum.
 
-Consequently the actual heat-weighted response is now proved, away from that
-divisor, to equal a finite sum of exact heat-weighted principal parts plus one
-heat-weighted analytic remainder. The next step is to combine ordinary
-Cauchy--Green for that remainder with the checked one-principal-part excision
-formula and obtain the exact finite-divisor identity. Strict off-axis quartet
-positivity, global heat rigidity, and the expanding half-strip remain open;
-no unconditional zero-location conclusion is yet proved.
+The formal statement deliberately distinguishes this termwise regularized
+area from the integral over one geometrically multiply perforated rectangle;
+their equality has not yet been proved. That geometric equivalence, a
+selected-half-strip version that retains rather than cancels off-axis quartet
+information, strict quartet positivity, and global heat rigidity are the next
+steps. No unconditional zero-location conclusion is yet proved.
 
 ## Mathematical Program
 

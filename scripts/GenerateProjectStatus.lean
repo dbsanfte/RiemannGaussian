@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "One xi puncture satisfies the exact improper rectangular Cauchy--Green identity"
-    lineOne := "one xi puncture"
-    lineTwo := "rectangular excision"
+    label := "Finite xi windows satisfy the exact termwise-regularized Cauchy--Green identity"
+    lineOne := "finite xi window"
+    lineTwo := "termwise Cauchy--Green"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.tendsto_rectangularAreaIntegralOutsideCenteredSquare_suzukiChebyshevLaplaceBoundaryHeatWeightedResponse_selected
+      ``RiemannGaussian.exists_tendsto_suzukiChebyshevLaplaceBoundaryHeatFiniteRegularizedAreaApproximation
   }
 ]
 
@@ -275,13 +275,13 @@ run_cmd do
     ("rhImplied", .bool false),
     ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
-      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. After cancelling the apparent boundary pole, Lean constructs a zero-adaptive completed continuation across Re z=1/2 and pole-clears its residues to the exact multiplicities. Fixed-time arithmetic residues recover both the interior xi heat and its RH-equivalent boundary detector. In the shifted coordinate p=rho-1/2, Lean derives the smooth boundary heat kernel, its exact nonzero Cauchy--Green source, and an arithmetic area--boundary identity for the heat-weighted pole-cleared response on every zero-free rectangle. Local circle limits recover the exact heat residues individually and for finite families. Lean proves the one-puncture rectangular excision base case and the same exact formula for the heat kernel times every arbitrary principal part L/(z-c). It now constructs the genuine finite xi principal-part regularization on every positive shifted-coordinate slab of bounded imaginary height, patches one analytic remainder through the complete finite divisor, and proves the heat-weighted response equals the corresponding finite weighted principal sum plus that weighted analytic remainder away from the divisor. Assembling the exact finite Cauchy--Green identity, quartet positivity, a global heat-rigidity closure theorem, the expanding half-strip, boundary and bulk control, and any unconditional zero-location constraint remain open."),
+      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. After cancelling the apparent boundary pole, Lean constructs a zero-adaptive completed continuation across Re z=1/2 and pole-clears its residues to the exact multiplicities. Fixed-time arithmetic residues recover both the interior xi heat and its RH-equivalent boundary detector. In the shifted coordinate p=rho-1/2, Lean derives the smooth boundary heat kernel, its exact nonzero Cauchy--Green source, and an arithmetic area--boundary identity on every zero-free rectangle. Local circle and square limits recover exact residues, and Lean constructs the genuine finite xi principal-part regularization on every positive bounded-height slab. It now proves the exact finite-window termwise-regularized Cauchy--Green identity: a common shrinking parameter recovers the actual outer boundary minus the complete finite multiplicity-weighted heat-residue sum. Equality with one geometrically multiply perforated area, a selected-half-strip identity preserving off-axis quartet information, quartet positivity, a global heat-rigidity closure theorem, boundary and bulk control, and any unconditional zero-location constraint remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Use the verified finite xi principal-part decomposition to assemble the exact finite-divisor Cauchy--Green identity, package strict off-axis quartet positivity and a transparent global heat-rigidity closure theorem, then pass to an expanding shifted half-strip and prove the arithmetic boundary/bulk estimate that forces an unconditional zero-location constraint")
+        "Identify the verified termwise finite regularized area with one geometrically perforated rectangle, retain the selected off-axis half-divisor, package strict quartet positivity and a transparent global heat-rigidity closure theorem, then control the expanding half-strip boundary and bulk terms strongly enough to force an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

@@ -137,11 +137,17 @@ principal part is subtracted, and one analytic representative patches the raw
 remainder across all selected zeros. The heat-weighted response is therefore
 a proved finite sum of the exact weighted principal parts plus one weighted
 analytic remainder away from the divisor. Assembling their exact finite
-Cauchy--Green identity, packaging strict off-axis quartet positivity and an
-honest global-rigidity closure theorem, passing to an expanding half-strip,
-and controlling its boundary and bulk terms are open. These estimates are not
-RH and do not exclude a finite or sparse off-line divisor; a restatement,
-hidden limit interchange, or conditional implication is not a substitute.
+Cauchy--Green identity is now complete in a precisely termwise-regularized
+form: for every admissible outer rectangle strictly containing the finite
+window, a common shrinking parameter recovers the actual boundary minus the
+complete finite multiplicity-weighted heat-residue sum. Equality with one
+geometrically multiply perforated area is not yet proved. Establishing that
+equivalence, retaining the selected off-axis half of the divisor, packaging
+strict quartet positivity and an honest global-rigidity closure theorem,
+passing to an expanding half-strip, and controlling its boundary and bulk
+terms are open. These estimates are not RH and do not exclude a finite or
+sparse off-line divisor; a restatement, hidden limit interchange, or
+conditional implication is not a substitute.
 
 ## Soundness invariant
 
