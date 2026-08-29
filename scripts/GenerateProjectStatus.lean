@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Canonical selected boundary-minus-bulk rectangles converge to the xi heat detector"
-    lineOne := "canonical selected"
-    lineTwo := "limit = xi heat"
+    label := "The canonical nonnegative arithmetic scalar converges to two pi times the xi heat detector"
+    lineOne := "canonical scalar"
+    lineTwo := "limit = 2pi xi heat"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.tendsto_quantitativeSelectedLaplaceBoundarySubArea
+      ``RiemannGaussian.tendsto_quantitativeSelectedLaplaceBoundarySubArea_im
   }
 ]
 
@@ -275,13 +275,13 @@ run_cmd do
     ("rhImplied", .bool false),
     ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
-      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. After cancelling the apparent boundary pole, Lean constructs a zero-adaptive completed continuation across Re z=1/2 and pole-clears its residues to the exact multiplicities. Fixed-time arithmetic residues recover both the interior xi heat and its RH-equivalent boundary detector. In the shifted coordinate p=rho-1/2, Lean derives the smooth boundary heat kernel, its exact nonzero Cauchy--Green source, and an arithmetic area--boundary identity on every zero-free rectangle. Local circle and square limits recover exact residues, and Lean constructs the genuine finite xi principal-part regularization on every positive bounded-height slab. Every weighted principal-part source is locally integrable through its pole, the iterated rectangular area is identified with a planar set integral, and the actual finite-window arithmetic source is integrable through the complete finite xi divisor. Lean constructs a single rectangle minus all common-radius complex-ball holes and proves its actual-source integral converges to the full through-divisor area. A checked half-open-square decomposition proves that the termwise shrinking-square approximation has that same ordinary planar limit. Consequently Lean proves the parameter-free finite Cauchy--Green identity for the complete finite divisor. It also proves the asymmetric selected identity on negative-real rectangles: the arithmetic boundary-minus-bulk functional equals 2*pi*i times the selected finite heat-residue window. These windows have nonnegative real part, are strictly positive when they contain an off-axis zero, and converge at positive proper time to the existing RH-equivalent boundary-heat total. Lean now removes the remaining geometric-choice hypotheses by constructing canonical horizontal endpoints from finite selected extrema and using the quantitative cofinal zero-free heights vertically. The resulting actual arithmetic boundary-minus-bulk sequence converges to 2*pi*i times the complete detector, and convergence of that explicit sequence to zero is equivalent to RH. An unconditional estimate forcing this limit to vanish, and hence any unconditional zero-location constraint, remain open."),
+      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. After cancelling the apparent boundary pole, Lean constructs a zero-adaptive completed continuation across Re z=1/2 and pole-clears its residues to the exact multiplicities. Fixed-time arithmetic residues recover both the interior xi heat and its RH-equivalent boundary detector. In the shifted coordinate p=rho-1/2, Lean derives the smooth boundary heat kernel, its exact nonzero Cauchy--Green source, and an arithmetic area--boundary identity on every zero-free rectangle. Local circle and square limits recover exact residues, and Lean constructs the genuine finite xi principal-part regularization on every positive bounded-height slab. Every weighted principal-part source is locally integrable through its pole, the iterated rectangular area is identified with a planar set integral, and the actual finite-window arithmetic source is integrable through the complete finite xi divisor. Lean constructs a single rectangle minus all common-radius complex-ball holes and proves its actual-source integral converges to the full through-divisor area. A checked half-open-square decomposition proves that the termwise shrinking-square approximation has that same ordinary planar limit. Consequently Lean proves the parameter-free finite Cauchy--Green identity for the complete finite divisor. It also proves the asymmetric selected identity on negative-real rectangles: the arithmetic boundary-minus-bulk functional equals 2*pi*i times the selected finite heat-residue window. Lean removes the remaining geometric-choice hypotheses by constructing canonical horizontal endpoints from finite selected extrema and using the quantitative cofinal zero-free heights vertically. The canonical functional is purely imaginary; its imaginary part is exactly 2*pi times the selected finite heat window, hence nonnegative, monotone in the quantitative height, strictly positive when an off-axis zero enters, and zero exactly when the selected window is empty. These scalars converge to 2*pi times the complete RH-equivalent heat detector. An unconditional arithmetic rigidity theorem forcing this scalar to vanish, and hence any unconditional zero-location constraint, remains open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Prove unconditional arithmetic control of the canonical selected boundary-minus-bulk sequence strong enough to force its checked limit to vanish, thereby forcing the selected heat total and all off-axis zeros to disappear")
+        "Prove an unconditional arithmetic rigidity theorem forcing the explicit nonnegative monotone canonical boundary-minus-bulk scalar to vanish; positivity rules out cancellation of any off-axis contribution")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

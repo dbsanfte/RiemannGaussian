@@ -157,8 +157,12 @@ boundary-minus-bulk functional. Lean now constructs canonical cofinal
 rectangles using explicit finite real-coordinate extrema and the existing
 quantitative zero-free heights. The corresponding actual boundary-minus-bulk
 sequence converges to `2*pi*i` times the complete detector, and its convergence
-to zero is equivalent to RH. Proving unconditional arithmetic boundary/bulk
-estimates that force this explicit limit to vanish remains open.
+to zero is equivalent to RH. Its real part is identically zero, while its
+imaginary part is exactly `2*pi` times the selected finite heat sum. Lean proves
+this scalar is nonnegative, monotone along the quantitative heights, strictly
+positive when a window contains an off-axis zero, and zero exactly when that
+window is empty. Proving an unconditional arithmetic rigidity theorem that
+forces this explicit scalar to vanish remains open.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.

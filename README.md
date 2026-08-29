@@ -26,18 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now constructs a canonical cofinal sequence of selected Cauchy--Green
-rectangles. Their horizontal sides are explicit finite-extremum midpoints
-inside `-1/2 < Re p < 0`; their vertical sides use the already-checked
-quantitative zero-free heights. Every selected zero in each finite window is
-strictly inside its rectangle, with no geometric choice left as a hypothesis.
+On the canonical cofinal selected Cauchy--Green rectangles, Lean now proves
+that the actual arithmetic outer-boundary minus through-divisor bulk functional
+is purely imaginary. Its imaginary part is exactly `2*pi` times the selected
+finite heat sum, so it is nonnegative, monotone with height, and strictly
+positive as soon as a window contains an off-axis zero. It vanishes at a
+finite stage exactly when that selected zero window is empty.
 
-On this exhaustion, the actual arithmetic outer-boundary minus through-divisor
-bulk functional converges to `2*pi*i` times the complete boundary-heat total.
-Lean therefore proves that convergence of this explicit functional to zero is
-equivalent to RH. This is a reformulation, not a proof of its hard direction:
-the next frontier is an unconditional arithmetic estimate forcing that limit
-to vanish. No unconditional zero-location conclusion is yet proved.
+These arithmetic scalars converge to `2*pi` times the complete boundary-heat
+total, making convergence to zero equivalent to RH. This removes complex and
+finite-stage cancellation from the frontier, but it is still a reformulation:
+the next step requires an unconditional arithmetic rigidity theorem forcing
+this explicit nonnegative monotone scalar to vanish. No unconditional
+zero-location conclusion is yet proved.
 
 ## Mathematical Program
 
