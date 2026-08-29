@@ -24,22 +24,18 @@ CI rejects a stale generated panel. The machine-readable companion is
 
 ## Latest Update
 
-The positive PNT-error weight is now proved strictly decreasing on every
-unresolved Suzuki prefix. Its negative derivative is the second positive
-kernel
+Lean now traps every canonical Suzuki slope-matching center at endpoint
+`N = count + 2` in the fixed-width strip
 
-`x^(-5/2) * (2 - (3/4) * (log(x) - r))`.
+`log(N) - 2 <= r_N < log(N) + 5`.
 
-Lean applies absolutely continuous integration by parts, without
-differentiating across the jumps of `Chebyshev.psi`, and rewrites the open
-moment through the cumulative error `C(x) = integral_1^x (psi(u) - u) du`.
-It also proves the exact arithmetic identity
-`C(b) = sum_{n <= b} (b - n) * Lambda(n) - (b^2 - 1) / 2`. The terminal
-theorem
-`riemannXiSuzukiPsiNonnegative_on_logTwo_tail_iff_chebyshevCumulativePNTPositiveKernelMoment`
-is an exact two-level positive-kernel criterion. Its inequality remains open,
-as does every subsequent arithmetic-to-zero-location rigidity step; this is
-not a proof of tail positivity or RH.
+The new upper bound follows from two unconditional estimates proved in Lean:
+the smooth curvature is at least `(5/6) * exp(t/2)` after `log(2)`, and the
+weighted Chebyshev prefix mass is at most `12 * sqrt(N)`. Consequently the
+endpoint coefficient in the cumulative PNT-error formula satisfies
+`|K_{r_N}(N)| <= 5 * N^(-1/2)`. The remaining two-level positive-kernel
+moment inequality is still open, as is every arithmetic-to-zero-location
+rigidity step; these bounds do not prove tail positivity or RH.
 
 ## Mathematical Program
 

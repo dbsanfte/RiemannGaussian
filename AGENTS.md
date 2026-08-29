@@ -42,10 +42,14 @@ derivative is a second strictly positive kernel. A checked
 absolute-continuity argument rewrites the open moment through the cumulative
 error `integral_1^x (psi(u) - u) du`, and a finite Abel identity identifies
 that primitive with an exact triangular von-Mangoldt sum minus
-`(x^2 - 1) / 2`. The open arithmetic statement is therefore a uniform
-two-level cumulative PNT-error bound against positive kernels. That bound,
-and the sublinear law, are not RH and do not exclude a finite or sparse
-off-line divisor. The missing theorem must derive a genuine global
+`(x^2 - 1) / 2`. Further exact curvature and Chebyshev-mass estimates trap
+the canonical center at every endpoint `N` in
+`log N - 2 <= r_N < log N + 5`; hence the endpoint coefficient left outside
+the cumulative moment is at most `5 * N^(-1/2)` in absolute value. The open
+arithmetic statement is therefore a uniform two-level cumulative PNT-error
+bound against positive kernels, with its endpoint coefficient now controlled.
+That bound, and the sublinear law, are not RH and do not exclude a finite or
+sparse off-line divisor. The missing theorem must derive a genuine global
 zero-location constraint from xi's arithmetic or entire-function structure;
 a restatement, hidden limit interchange, or conditional implication is not a
 substitute.

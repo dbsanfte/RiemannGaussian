@@ -264,13 +264,13 @@ run_cmd do
     ("nonstandardTheoremAxioms", .arr #[]),
     ("rhImplied", .bool false),
     ("statusNote", .str
-      "Cutoffs zero and one are proved. The first PNT-error weight is nonnegative and strictly decreasing on every remaining prefix; its negative derivative is a second strictly positive kernel. Absolute-continuity integration by parts now expresses the open inequality through the cumulative error integral_1^x (psi(u)-u) du, which is exactly a triangular von-Mangoldt sum minus (x^2-1)/2. Proving that two-level bound and every RH-forcing rigidity step remain open."),
+      "Cutoffs zero and one are proved. Absolute-continuity integration by parts expresses every remaining prefix through a two-level positive-kernel moment of the cumulative PNT error. Exact curvature and Chebyshev-mass bounds now trap each canonical center in log N - 2 <= r_N < log N + 5, so the endpoint coefficient is at most 5 N^(-1/2) in absolute value. Proving the uniform moment bound and every RH-forcing rigidity step remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Prove the uniform two-level cumulative Chebyshev-error bound against the verified positive kernels, then derive an unconditional zero-location constraint")
+        "Exploit the controlled endpoint and verified positive kernels to prove the uniform two-level cumulative Chebyshev-error bound, then derive an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
