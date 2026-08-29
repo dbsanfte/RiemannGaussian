@@ -26,21 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves that both horizontal sides of the genuine near-edge
-arithmetic contour vanish at every fixed positive heat time. The proof gives a
-uniform exponential bound for the full pole-cleared arithmetic response on
-the quantitative separated heights, including the Archimedean digamma
-correction, and lets the Gaussian heat kernel dominate it as height tends to
-infinity.
+Lean now removes the explicit Archimedean regular correction from the live
+near-edge frontier. The heat-weighted pole-cleared response and its
+Cauchy--Green source split pointwise into genuine xi-logarithmic-derivative
+and regular-correction pieces. Lean proves that the regular piece is
+holomorphic throughout every selected rectangle, so its complete boundary is
+exactly its bulk at each finite stage.
 
-Consequently the exact five-term boundary-minus-bulk functional reduces
-unconditionally to the two vertical sides minus the Cauchy--Green bulk. The
-imaginary part of this remaining three-term expression still converges,
-without height normalization, to `2*pi` times the complete nonnegative xi heat
-detector and therefore retains sensitivity to a single fixed off-axis zero.
-Estimating or identifying the vertical-minus-bulk limit strongly enough to
-force it to vanish is the open arithmetic-rigidity frontier; the proved RH
-equivalence of such vanishing is a closure reformulation, not a proof of it.
+Both regular-correction horizontal sides vanish under the fixed-positive-time
+Gaussian. Its two vertical sides minus bulk therefore tend to zero, while the
+regular-subtracted vertical-minus-bulk functional still converges without
+height normalization to `2*pi` times the complete nonnegative xi heat
+detector. The open frontier is now concentrated in the genuine `xi'/xi`
+component: identify or estimate its two vertical terms and bulk strongly
+enough to force their absolute detector scalar to vanish. The corresponding
+RH equivalence remains a closure reformulation, not a proof of that premise.
 
 ## Mathematical Program
 

@@ -176,9 +176,16 @@ now proves a uniform exponential bound for the pole-cleared response across
 both selected horizontal sides, including the Archimedean digamma correction.
 The fixed-positive-time Gaussian dominates this bound, so both horizontal
 integrals tend to zero unconditionally. The live contour frontier is therefore
-exactly the two vertical sides minus the bulk. Estimating or identifying this
-three-term remainder and proving unconditional arithmetic rigidity remain
-open.
+exactly the two vertical sides minus the bulk. Lean now also splits both the
+weighted response and its source pointwise into the genuine xi logarithmic
+derivative and the explicit Archimedean regular correction. The regular
+correction is analytic on every selected rectangle, so its boundary equals
+its bulk exactly; its horizontal sides vanish by the same Gaussian mechanism,
+and its vertical-minus-bulk term tends to zero. Subtracting the entire regular
+piece leaves the unnormalized detector limit unchanged. The live three-term
+remainder is therefore concentrated in the `xi'/xi` component. Identifying or
+estimating that remainder and proving unconditional arithmetic rigidity
+remain open.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.
