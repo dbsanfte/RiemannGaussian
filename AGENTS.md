@@ -129,13 +129,19 @@ boundary has the same exact residue limit, and the resulting improper
 four-piece area integral converges to the outer boundary minus that residue.
 It now proves the same fixed-radius and improper identities for the smooth
 heat kernel times an arbitrary principal part `L / (z-c)`, providing the
-termwise interface needed for finite principal-part regularization. Assembling
-that regularization for every finite divisor in a rectangle, packaging strict
-off-axis quartet positivity and an honest global-rigidity closure theorem,
-passing to an expanding half-strip, and controlling its boundary and bulk
-terms are open. These estimates are not RH and do not exclude a finite or
-sparse off-line divisor; a restatement, hidden limit interchange, or
-conditional implication is not a substitute.
+termwise interface needed for finite principal-part regularization. Lean now
+constructs that finite regularization unconditionally on every positive
+shifted-coordinate slab of bounded imaginary height: the finite window is
+proved complete for the xi divisor, every local multiplicity-weighted
+principal part is subtracted, and one analytic representative patches the raw
+remainder across all selected zeros. The heat-weighted response is therefore
+a proved finite sum of the exact weighted principal parts plus one weighted
+analytic remainder away from the divisor. Assembling their exact finite
+Cauchy--Green identity, packaging strict off-axis quartet positivity and an
+honest global-rigidity closure theorem, passing to an expanding half-strip,
+and controlling its boundary and bulk terms are open. These estimates are not
+RH and do not exclude a finite or sparse off-line divisor; a restatement,
+hidden limit interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 

@@ -26,20 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the reusable Cauchy--Pompeiu excision formula for the
-non-holomorphic boundary-heat kernel times an arbitrary principal part
-`L / (z-c)`. On four explicitly pole-free rectangles, its Cauchy--Green source
-is exactly the heat source times that principal part; its shrinking-square
-boundary converges to `2*pi*i*K(c)*L`; and the corresponding improper
-four-piece area limit is determined. Integrability through the pole and a
-limit interchange are not assumed.
+Lean now constructs a genuine finite principal-part regularization of the
+pole-cleared arithmetic response. In every positive shifted-coordinate slab
+with bounded imaginary height, a finite window is proved to contain exactly
+all xi zeros there. At each selected zero the response is proved to be its
+analytic multiplicity divided by `z-c` plus an analytic remainder; Lean then
+patches all of these removable remainders into one function analytic across
+the entire finite divisor.
 
-This supplies the termwise analytic interface for subtracting and restoring
-the finite xi principal-part sum. The next step is to construct that finite
-regularization on a rectangle and assemble the exact finite-divisor identity,
-then formulate strict off-axis quartet positivity and the global heat-rigidity
-closure theorem before expanding the half-strip. No unconditional
-zero-location conclusion is yet proved.
+Consequently the actual heat-weighted response is now proved, away from that
+divisor, to equal a finite sum of exact heat-weighted principal parts plus one
+heat-weighted analytic remainder. The next step is to combine ordinary
+Cauchy--Green for that remainder with the checked one-principal-part excision
+formula and obtain the exact finite-divisor identity. Strict off-axis quartet
+positivity, global heat rigidity, and the expanding half-strip remain open;
+no unconditional zero-location conclusion is yet proved.
 
 ## Mathematical Program
 
