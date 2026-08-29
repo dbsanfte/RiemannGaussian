@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The finite paired-eta Gaussian norm is an explicit nonnegative arithmetic Gram quadratic"
-    lineOne := "finite eta Gaussian"
-    lineTwo := "arithmetic Gram identity"
+    label := "The normalized finite paired-eta Gaussian norm is a positive double integral over its logarithmic support"
+    lineOne := "normalized finite eta"
+    lineTwo := "positive Laplace Gram"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaFiniteGaussianNorm_eq_doubleSum
+      ``RiemannGaussian.normalizedPairedEtaFiniteGaussianNorm_eq_doubleIntegral
   }
 ]
 
@@ -293,11 +293,14 @@ run_cmd do
         "comparability of the two raw errors forces sigma=1-sigma. Under RH " ++
         "each zero equals its reflected partner, so Lean proves that the " ++
         "global comparison principle is exactly equivalent to Mathlib's RH. " ++
-        "Lean now realizes the actual finite paired-eta polynomial's Gaussian " ++
-        "norm as an explicit finite arithmetic double sum and proves the Gram " ++
-        "quadratic real and nonnegative. No complementary sigma-to-1-sigma " ++
-        "coupling follows from this generic positivity, and no current theorem " ++
-        "implies RH.")),
+        "Lean realizes the actual finite paired-eta polynomial's Gaussian " ++
+        "norm as an explicit finite arithmetic Gram sum. It now also constructs " ++
+        "the finite positive logarithmic eta measure, identifies its Laplace " ++
+        "transform with E_N(s)/s, and proves that the normalized eta Gaussian " ++
+        "norm is exactly a positive double integral over that measure, including " ++
+        "all integrability, Fubini, and interval-expansion steps. No complementary " ++
+        "sigma-to-1-sigma coupling follows from this generic positivity, and no " ++
+        "current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),

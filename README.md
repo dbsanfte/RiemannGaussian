@@ -26,25 +26,24 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now connects the actual finite paired-eta polynomial to a positive
-Gaussian Gram form. Write `E_N` for its first `2N` alternating Dirichlet atoms,
-`c_k(sigma)=(-1)^k(k+1)^(-sigma)`, and `lambda_k=log(k+1)`. For every
-`tau>0`, Lean proves the exact finite identity
+Lean now identifies the normalized finite paired-eta polynomial with a
+positive Gaussian--Laplace Gram form. Let `E_N` be the first `N` odd-even eta
+pairs and let `mu_N` be the finite sum of Lebesgue restrictions to their
+logarithmic intervals. For `sigma != 0` and `tau > 0`, Lean proves exactly
 
-`integral exp(-tau*(t-x)^2) * |E_N(sigma+it)|^2 dt`
+`integral exp(-tau*y^2) * |E_N(sigma+i*y)/(sigma+i*y)|^2 dy`
 
-`= sqrt(pi/tau) * sum_(j,k<2N) c_j * conj(c_k)`
+`= sqrt(pi/tau) * integral integral`
 
-`    * exp(-(lambda_k-lambda_j)^2/(4*tau)`
+`    exp(-sigma*(t+u)) * exp(-(t-u)^2/(4*tau)) dmu_N(u) dmu_N(t)`.
 
-`          + i*x*(lambda_k-lambda_j))`.
-
-Every interchange is finite, the integral is genuinely integrable, and the
-arithmetic double sum is proved real and nonnegative. This is an unconditional
-bridge between the eta and Gaussian branches, not a zero-location theorem.
-The next frontier is to find an eta-specific completed normalization or moment
-identity that couples its values at `sigma` and `1-sigma`; generic Gram
-positivity alone cannot imply RH.
+The proof constructs `mu_N`, identifies its Laplace transform with `E_N(s)/s`,
+proves every required integrability and Fubini step, and expands the result as
+a finite sum over all pairs of eta-support intervals. The kernel is strictly
+positive and the resulting Gram forms are nonnegative. This is still not a
+zero-location theorem: the open frontier is an eta-specific completed symmetry
+or moment identity coupling `sigma` to `1-sigma`; positivity by itself cannot
+imply RH.
 
 ## Mathematical Program
 

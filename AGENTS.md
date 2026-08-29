@@ -370,8 +370,16 @@ Lean now begins the symmetry-aware pivot by proving an exact finite Gaussian
 Gram identity for the actual first `2N` alternating eta atoms. Their genuine
 Gaussian `L²` norm equals a completely explicit arithmetic double sum, and
 the same checked theorem proves that sum real and nonnegative. This is generic
-finite Gram structure and does not relate `sigma` to `1-sigma`. The next hard
-input must be an independent eta-specific completed normalization or
+finite Gram structure and does not relate `sigma` to `1-sigma`. Lean now also
+constructs the finite positive logarithmic eta measure and proves its Laplace
+transform exactly equals `E_N(s)/s` away from the origin. A checked Fubini
+exchange and Gaussian Fourier evaluation identify the Gaussian norm of this
+normalized finite eta polynomial with the strictly positive double kernel
+`sqrt(pi/tau)*exp(-sigma*(t+u))*exp(-(t-u)^2/(4*tau))` over two copies of the
+eta measure. Lean proves all integrability hypotheses, nonnegativity, and the
+fully expanded finite sum over pairs of support intervals. This remains
+generic positive-Laplace structure and does not relate `sigma` to `1-sigma`.
+The next hard input must be an independent eta-specific completed symmetry or
 complementary-derivative mechanism deriving the conjecture-strength coupling.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
