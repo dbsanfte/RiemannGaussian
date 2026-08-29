@@ -96,11 +96,14 @@ von-Mangoldt Dirichlet term divided by `(sigma - 1/2)^2`; the square-root main
 term is exactly `4/(sigma-1)`. Lean now also proves absolute summability of
 the supported atom norm integrals, performs the infinite sum-integral
 exchange, and identifies the complete transform on every real `sigma > 1`
-with `(zeta'/zeta)(sigma)/(sigma-1/2)^2 + 4/(sigma-1)`. Extending this
-safe-half-plane identity into a rigidity or sign theorem and proving the
-required bound for `A_N` are the open arithmetic tasks. These estimates are
-not RH and do not exclude a finite or sparse off-line divisor; a restatement,
-hidden limit interchange, or conditional implication is not a substitute.
+with `(zeta'/zeta)(sigma)/(sigma-1/2)^2 + 4/(sigma-1)`. After exposing every
+completed-zeta pole and Archimedean term, Lean proves that this same literal
+arithmetic integral recovers the genuine spectral-xi negative logarithmic
+derivative at `-i(sigma-1/2)`. Extending this safe-ray identity by a proved
+continuation, rigidity, or sign theorem and proving the required bound for
+`A_N` are the open arithmetic tasks. These estimates are not RH and do not
+exclude a finite or sparse off-line divisor; a restatement, hidden limit
+interchange, or conditional implication is not a substitute.
 
 ## Soundness invariant
 

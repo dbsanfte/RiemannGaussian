@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 282 modules · 7545 declarations · 6488 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 283 modules · 7554 declarations · 6495 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">EQUIVALENCES AND REDUCTIONS — NOT A PROOF CHAIN</text>
@@ -77,9 +77,9 @@
   </g>
   <g class="proved bridge">
     <rect x="500" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.ofReal_integral_neg_suzukiChebyshevLogAverageError_mul_mellinWeight_eq_logDeriv</title>
-    <text x="572" y="173">Mellin(-A), sigma &gt; 1</text>
-    <text x="572" y="191">= zeta'/zeta + pole  ✓</text>
+    <title>RiemannGaussian.xiSpectralNegativeLogDerivative_mellinSpectralPoint_eq_arithmeticTransform</title>
+    <text x="572" y="173">Arithmetic Mellin transform</text>
+    <text x="572" y="191">= spectral xi log derivative  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>

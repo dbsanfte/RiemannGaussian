@@ -26,22 +26,24 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the complete real Mellin transform of Suzuki's weighted
-Chebyshev logarithmic-average error. It represents the literal finite prime
-prefix as a pointwise sum of supported atoms, proves every atom integrable,
-proves the series of norm integrals summable from the absolutely convergent
-von-Mangoldt `L`-series, and performs the countable sum-integral exchange.
-For every real `sigma > 1`, Lean obtains the exact identity
+Lean now converts the complete real Mellin transform of Suzuki's weighted
+Chebyshev logarithmic-average error into the genuine spectral-`xi`
+logarithmic derivative. Write `M(sigma)` for the literal integral of
+`-A(x) x^(-sigma-1/2)` over `x > 1`, and let `C(sigma)` be the explicit two
+pole, `log(pi)`, and digamma correction from the completed zeta function.
+For every real `sigma > 1`, Lean proves
 
-`integral_1^infinity -A(x) x^(-sigma-1/2) dx
-  = (zeta'(sigma)/zeta(sigma))/(sigma-1/2)^2 + 4/(sigma-1)`.
+`XiNeg(-i(sigma-1/2))
+  = -(sigma-1/2)^2 (M(sigma)-4/(sigma-1)) - C(sigma)`,
 
-The theorem is stated after casting the real integral to `Complex`, matching
-Mathlib's zeta API. Thus the arithmetic logarithmic-average branch and the
-spectral zeta logarithmic derivative now meet rigorously on the safe
-half-plane, with no assumed interchange. Extending this identity into a
-sign or entire-function rigidity theorem, proving the quantitative bound on
-`A_N`, and deriving any unconditional zero-location constraint remain open.
+where `XiNeg(z) = -xi'(1/2+i z)/xi(1/2+i z)`. The proof rests on the already
+checked atom integrability, absolute norm summability, countable
+sum-integral exchange, von-Mangoldt `L`-series identity, and the fully
+expanded completed-zeta logarithmic derivative. This is an exact
+arithmetic-to-spectral recovery theorem on the zero-free safe ray. Analytic
+continuation of the arithmetic integral, a sign or rigidity theorem, the
+needed bound on `A_N`, and every unconditional zero-location constraint
+remain open.
 
 ## Mathematical Program
 
