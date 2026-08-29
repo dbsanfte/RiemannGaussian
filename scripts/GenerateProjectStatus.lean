@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The boundary heat-weighted arithmetic response satisfies Cauchy--Green on every zero-free rectangle"
-    lineOne := "boundary heat x P"
-    lineTwo := "Cauchy--Green rect."
+    label := "Finite families of xi punctures recover the exact boundary-heat residues"
+    lineOne := "finite xi punctures"
+    lineTwo := "exact circle residues"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.suzukiChebyshevLaplaceBoundaryHeatWeightedResponse_cauchyGreenRectangle
+      ``RiemannGaussian.tendsto_finset_sum_circleIntegral_suzukiChebyshevLaplaceBoundaryHeatWeightedResponse_selected
   }
 ]
 
@@ -275,13 +275,13 @@ run_cmd do
     ("rhImplied", .bool false),
     ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
-      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. After cancelling the apparent boundary pole, Lean constructs a zero-adaptive completed continuation across Re z=1/2 and pole-clears its residues to the exact multiplicities. Fixed-time arithmetic residues recover both the interior xi heat and its RH-equivalent boundary detector. In the shifted coordinate p=rho-1/2, Lean now derives the smooth boundary heat kernel, its exact nonzero Cauchy--Green source, and an arithmetic area--boundary identity for the heat-weighted pole-cleared response on every zero-free rectangle. Extending this identity across zero punctures and an expanding half-strip, controlling its boundary and bulk terms, proving the required A_N bound, and deriving any unconditional zero-location constraint remain open."),
+      "For Suzuki's logarithmic-average error A_N, Lean proves the exact endpoint-entropy reduction and a summable smooth-drift work law. It derives the literal arithmetic Mellin and complex Laplace transforms and identifies the latter with the spectral-xi logarithmic derivative on Re z > 1/2. After cancelling the apparent boundary pole, Lean constructs a zero-adaptive completed continuation across Re z=1/2 and pole-clears its residues to the exact multiplicities. Fixed-time arithmetic residues recover both the interior xi heat and its RH-equivalent boundary detector. In the shifted coordinate p=rho-1/2, Lean derives the smooth boundary heat kernel, its exact nonzero Cauchy--Green source, and an arithmetic area--boundary identity for the heat-weighted pole-cleared response on every zero-free rectangle. It now proves the actual moving weighted response has the exact local residue at each xi-zero puncture and that shrinking circle integrals, individually and for finite families, converge to the corresponding boundary-heat residues without assuming a holomorphic heat weight. Finite punctured-rectangle excision, the expanding half-strip, boundary and bulk control, the required A_N bound, and any unconditional zero-location constraint remain open."),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str
-        "Extend the zero-free Cauchy--Green identity across xi-zero punctures and an expanding shifted half-strip, control the resulting arithmetic boundary and bulk terms, then prove a rigidity estimate—such as the exact A_N entropy bound—that forces an unconditional zero-location constraint")
+        "Assemble the verified local circle limits into a finite punctured-rectangle Cauchy--Green identity, pass to an expanding shifted half-strip, control the resulting arithmetic boundary and bulk terms, then prove a rigidity estimate—such as the exact A_N entropy bound—that forces an unconditional zero-location constraint")
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

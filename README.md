@@ -26,22 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now places the RH-equivalent fixed-time boundary heat detector directly
-in the shifted arithmetic coordinate `p = rho - 1/2`. Its smooth kernel is
-`-2 re(p) exp(-tau ((x-im(p))^2 + re(p)^2))`: it vanishes on the critical
-boundary, is positive in the selected half-strip, and its pole-cleared local
-arithmetic residues sum to the complete boundary heat.
+Lean now proves the local puncture theorem needed to extend the arithmetic
+Cauchy--Green identity across xi zeros. A reusable theorem shows that a
+simple-pole limit and eventual circle integrability force the shrinking-circle
+integral to converge to `2*pi*i` times the residue; it does not assume that
+the non-holomorphic heat weight is holomorphic.
 
-Because this weight is not holomorphic, Lean computes its full real
-derivative and exact nonzero Cauchy--Green source instead of applying an
-invalid one-variable residue argument. It now proves a genuine arithmetic
-area--boundary identity for the heat-weighted pole-cleared Laplace response
-on every zero-free rectangle.
-
-The next step is to pass this identity across punctures at xi zeros and then
-through an expanding shifted half-strip. The required control of the resulting
-boundary and bulk terms—and the rigidity estimate that would force zero
-locations—remains open.
+Applied to the actual moving heat-weighted pole-cleared response, every
+shifted xi-zero puncture recovers its exact multiplicity-weighted boundary
+heat coefficient. Lean also proves the simultaneous limit for every finite
+family of punctures. The next step is the finite punctured-rectangle
+Cauchy--Green excision, followed by the expanding half-strip and control of
+its boundary and bulk terms. No unconditional zero-location conclusion is
+yet proved.
 
 ## Mathematical Program
 

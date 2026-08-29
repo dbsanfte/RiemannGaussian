@@ -121,12 +121,17 @@ sums to the complete existing fixed-time heat. In the same shifted coordinate,
 Lean now derives the smooth boundary heat kernel and its full real derivative,
 proves its Cauchy--Green source is nonzero on the critical boundary, and proves
 an exact arithmetic area--boundary identity for the heat-weighted pole-cleared
-response on every zero-free rectangle. Extending that identity across xi-zero
-punctures and an expanding half-strip, controlling its boundary and bulk
-terms, proving the required bound for `A_N`, and deriving a global
-zero-location constraint are the open arithmetic tasks. These estimates are
-not RH and do not exclude a finite or sparse off-line divisor; a restatement,
-hidden limit interchange, or conditional implication is not a substitute.
+response on every zero-free rectangle. Lean now also isolates each xi-zero
+puncture, proves that the genuinely non-holomorphic weighted response has the
+exact moving-kernel residue, and proves that its shrinking circle integral
+converges to `2*pi*i` times that residue. The same limit is checked for every
+finite family of punctures at a common radius. Constructing the finite
+punctured-rectangle Cauchy--Green excision, passing to an expanding half-strip,
+controlling its boundary and bulk terms, proving the required bound for
+`A_N`, and deriving a global zero-location constraint are the open arithmetic
+tasks. These estimates are not RH and do not exclude a finite or sparse
+off-line divisor; a restatement, hidden limit interchange, or conditional
+implication is not a substitute.
 
 ## Soundness invariant
 
