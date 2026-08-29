@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 297 modules · 7846 declarations · 6747 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 298 modules · 7880 declarations · 6776 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">EQUIVALENCES AND REDUCTIONS — NOT A PROOF CHAIN</text>
@@ -77,9 +77,9 @@
   </g>
   <g class="proved bridge">
     <rect x="500" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.suzukiChebyshevLaplaceBoundaryHeat_selectedFiniteResidue_eq_boundary_sub_area</title>
-    <text x="572" y="173">selected xi heat</text>
-    <text x="572" y="191">= boundary - bulk  ✓</text>
+    <title>RiemannGaussian.tendsto_quantitativeSelectedLaplaceBoundarySubArea</title>
+    <text x="572" y="173">canonical selected</text>
+    <text x="572" y="191">limit = xi heat  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>

@@ -153,9 +153,12 @@ half-divisor on every eligible negative-real rectangle. The real part of the
 selected finite heat sum is nonnegative and is strictly positive when its
 window contains an off-axis zero; the sum converges to the existing
 RH-equivalent boundary-heat total and equals an explicit arithmetic
-boundary-minus-bulk functional. Constructing
-admissible expanding half-strips and proving unconditional boundary/bulk
-estimates that force this functional to vanish remain open.
+boundary-minus-bulk functional. Lean now constructs canonical cofinal
+rectangles using explicit finite real-coordinate extrema and the existing
+quantitative zero-free heights. The corresponding actual boundary-minus-bulk
+sequence converges to `2*pi*i` times the complete detector, and its convergence
+to zero is equivalent to RH. Proving unconditional arithmetic boundary/bulk
+estimates that force this explicit limit to vanish remains open.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.

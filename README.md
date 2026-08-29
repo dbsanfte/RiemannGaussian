@@ -26,20 +26,18 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves an asymmetric finite Cauchy--Green identity on every eligible
-rectangle with right edge strictly left of the critical line. Its arithmetic
-outer-boundary minus through-divisor bulk functional equals `2*pi*i` times
-exactly the selected finite xi heat-residue sum. Its real part is nonnegative,
-is strictly positive whenever its window contains an off-axis zero, and the
-sum converges at positive proper time to the existing RH-equivalent
-boundary-heat total.
+Lean now constructs a canonical cofinal sequence of selected Cauchy--Green
+rectangles. Their horizontal sides are explicit finite-extremum midpoints
+inside `-1/2 < Re p < 0`; their vertical sides use the already-checked
+quantitative zero-free heights. Every selected zero in each finite window is
+strictly inside its rectangle, with no geometric choice left as a hypothesis.
 
-This is the first checked arithmetic identity that preserves the positive
-off-axis half-divisor instead of allowing symmetric cancellation. The next
-frontier is an admissible expanding-half-strip theorem and unconditional
-boundary/bulk estimates strong enough to force the limiting functional to
-vanish. No such estimate or unconditional zero-location conclusion is yet
-proved.
+On this exhaustion, the actual arithmetic outer-boundary minus through-divisor
+bulk functional converges to `2*pi*i` times the complete boundary-heat total.
+Lean therefore proves that convergence of this explicit functional to zero is
+equivalent to RH. This is a reformulation, not a proof of its hard direction:
+the next frontier is an unconditional arithmetic estimate forcing that limit
+to vanish. No unconditional zero-location conclusion is yet proved.
 
 ## Mathematical Program
 
