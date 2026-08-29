@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Every off-critical zero forces exact Euler-accelerated eta-gap error identities at complementary exponents"
-    lineOne := "Euler eta-gap tail"
-    lineTwo := "endpoint/2 + 2nd diff"
+    label := "Every off-critical zero forces sharp compatible half-endpoint gap asymptotics at complementary exponents"
+    lineOne := "sharp eta-gap tails"
+    lineTwo := "1/2 endpoint + O(N^-1)"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.nontrivialZetaZero_offCritical_etaGapEulerTail_certificate
+      ``RiemannGaussian.nontrivialZetaZero_offCritical_etaGapSharpComplementary_certificate
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "an extra-power Euler-tail bound, then arithmetic coupling incompatible with off-line rates; no theorem implies RH.</text>\n" ++
+      "a symmetry-aware arithmetic coupling of the compatible complementary gap tails; no theorem implies RH.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -285,7 +285,10 @@ run_cmd do
         "distinct for an off-critical zero. The support-minus-gap Euler " ++
         "second-difference series is exactly 2*E(s)-1 and equals -1 at a " ++
         "zero, giving an exact half-endpoint plus second-difference-tail " ++
-        "formula at both complementary evaluations. This " ++
+        "formula at both complementary evaluations. A checked integral-test " ++
+        "estimate makes the remaining Euler tail one full endpoint power " ++
+        "smaller and gives sharp compatible asymptotics at exponents sigma " ++
+        "and 1-sigma. This " ++
         "is a checked conditional reduction, not a zero-location theorem, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -293,11 +296,12 @@ run_cmd do
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove a uniform extra-power bound or sharp asymptotic for the Euler " ++
-        "second-difference tails at rho and its partner, then derive a " ++
-        "genuinely arithmetic coupling incompatible with an off-critical " ++
-        "zero, or force the exact detector limit to vanish without discarding " ++
-        "zero contributions"))
+        "Formalize the normalized half-endpoint limits and prove that " ++
+        "independent eventual two-sided comparability forces the critical " ++
+        "line; then derive that comparability unconditionally from a " ++
+        "symmetry-aware Gaussian/Gram or complementary-moment arithmetic " ++
+        "identity, or force the exact detector limit to vanish without " ++
+        "discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

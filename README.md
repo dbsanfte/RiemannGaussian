@@ -26,26 +26,27 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now Euler-accelerates the explicit finite eta-gap error. If `E_N(s)` is
-the first `N` paired-eta terms, `G_N(s)` the first `N` adjacent gap terms, and
-`D_N(s)` the corresponding support-minus-gap second-difference sum, Lean
-proves
+Lean now proves a sharp first-order bound for the explicit finite eta-gap
+error. If `D_N(s)` is the first `N` support-minus-gap second differences,
+Lean first proves the pointwise gain
 
-`D_N(s) = sum_(n<N) ((2n+1)^(-s)-2(2n+2)^(-s)+(2n+3)^(-s))`.
+`||delta^2 (2n+1)^(-s)|| <= ||s|| ||s+1|| (2n+1)^(-Re(s)-2)`.
 
-On `Re s > 0`, the complete series is exactly `D(s)=2 E(s)-1`. Thus at every
-nontrivial zeta zero `rho`, `D(rho)=-1`, and the finite gap error has the exact
-decomposition
+An integral-test argument, also checked in Lean, sums this to an explicit
+one-power-smaller Euler-tail bound. Consequently, at every nontrivial zeta
+zero `rho`,
 
-`G_N(rho)-1 = -(2N+1)^(-rho)/2 + (-1-D_N(rho))/2`.
+`||G_N(rho)-1+(2N+1)^(-rho)/2||`
 
-The same identity holds at the functional-equation partner, and an off-line
-zero makes their real endpoint exponents distinct. This is an exact
-kernel-checked acceleration, not a contradiction. The immediate open target
-is an extra-power bound for the Euler second-difference tail. Even its expected
-individual asymptotic would not by itself prove RH; a further arithmetic
-relation coupling the two complementary evaluations must make off-line
-behavior impossible.
+`<= ||rho|| ||rho+1|| (2N+1)^(-Re(rho)-1)`.
+
+The functional-equation partner satisfies the same sharp estimate at exponent
+`1-Re(rho)`. This confirms that the distinct complementary raw-tail rates are
+compatible, not contradictory. The immediate formal target is the normalized
+limit and a generic theorem that independent two-sided comparability forces
+the critical line. The genuinely open mathematics is then to derive such a
+coupling from a symmetry-aware arithmetic quantity, likely Gaussian/Gram or a
+complementary eta-moment identity.
 
 ## Mathematical Program
 

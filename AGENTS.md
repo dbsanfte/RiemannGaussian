@@ -347,6 +347,19 @@ the second-difference tail is smaller by one endpoint power. That expected
 individual asymptotic is not itself a zero-location contradiction; the live
 arithmetic task remains a rigorously proved coupling that cannot accommodate
 both complementary off-line evaluations.
+Lean now proves the required extra-power estimate rather than assuming it.
+For every `Re s>0`, the Euler second-difference tail from cutoff `N` has norm
+at most `2*||s||*||s+1||*(2N+1)^(-Re(s)-1)`. Hence every nontrivial zero obeys
+the sharp bound
+`||G_N(rho)-1+(2N+1)^(-rho)/2|| <=
+||rho||*||rho+1||*(2N+1)^(-rho.re-1)`, and the partner obeys the corresponding
+bound at real exponent `1-rho.re`. This rigorously confirms the research
+warning: unequal raw-tail rates are the expected compatible endpoint
+asymptotics, not a contradiction. The next short formal step is to package
+the normalized limit and the generic implication from independent eventual
+two-sided comparability to `rho.re=1/2`. The subsequent hard input must derive
+that coupling from symmetry-aware arithmetic rather than from the raw cutoff
+tail itself.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
