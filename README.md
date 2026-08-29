@@ -26,18 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the one-puncture rectangular Cauchy--Green excision theorem
-for the actual non-holomorphic heat-weighted arithmetic response. Four
-zero-free rectangles are glued around a shrinking square, whose boundary is
-proved to recover `2*pi*i` times the exact multiplicity-weighted xi heat
-residue. Consequently the corresponding improper four-piece area integral
-has a rigorously determined limit; integrability through the pole and a limit
-interchange are not assumed.
+Lean now proves the reusable Cauchy--Pompeiu excision formula for the
+non-holomorphic boundary-heat kernel times an arbitrary principal part
+`L / (z-c)`. On four explicitly pole-free rectangles, its Cauchy--Green source
+is exactly the heat source times that principal part; its shrinking-square
+boundary converges to `2*pi*i*K(c)*L`; and the corresponding improper
+four-piece area limit is determined. Integrability through the pole and a
+limit interchange are not assumed.
 
-The next step is to assemble this checked base case for every finite set of
-zeros in a rectangle, then formulate strict off-axis quartet positivity and
-the global heat-rigidity closure theorem before expanding the half-strip. No
-unconditional zero-location conclusion is yet proved.
+This supplies the termwise analytic interface for subtracting and restoring
+the finite xi principal-part sum. The next step is to construct that finite
+regularization on a rectangle and assemble the exact finite-divisor identity,
+then formulate strict off-axis quartet positivity and the global heat-rigidity
+closure theorem before expanding the half-strip. No unconditional
+zero-location conclusion is yet proved.
 
 ## Mathematical Program
 

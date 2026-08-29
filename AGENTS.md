@@ -127,11 +127,14 @@ moving-kernel residue. It now proves the rectangular base case for excision:
 four zero-free rectangles glue around one shrinking square, the square
 boundary has the same exact residue limit, and the resulting improper
 four-piece area integral converges to the outer boundary minus that residue.
-Extending this base case to every finite divisor in a rectangle, packaging
-strict off-axis quartet positivity and an honest global-rigidity closure
-theorem, passing to an expanding half-strip, and controlling its boundary and
-bulk terms are open. These estimates are not RH and do not exclude a finite
-or sparse off-line divisor; a restatement, hidden limit interchange, or
+It now proves the same fixed-radius and improper identities for the smooth
+heat kernel times an arbitrary principal part `L / (z-c)`, providing the
+termwise interface needed for finite principal-part regularization. Assembling
+that regularization for every finite divisor in a rectangle, packaging strict
+off-axis quartet positivity and an honest global-rigidity closure theorem,
+passing to an expanding half-strip, and controlling its boundary and bulk
+terms are open. These estimates are not RH and do not exclude a finite or
+sparse off-line divisor; a restatement, hidden limit interchange, or
 conditional implication is not a substitute.
 
 ## Soundness invariant
