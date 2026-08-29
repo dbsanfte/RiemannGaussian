@@ -190,8 +190,15 @@ integrals split exactly, the bulk split is justified through genuine planar
 integrability, and the regular-subtracted functional equals the two explicit
 xi-logarithmic-derivative vertical terms minus the explicit xi source bulk at
 every stage. This literal three-term functional retains the unnormalized
-detector limit. Identifying or estimating it and proving unconditional
-arithmetic rigidity remain open.
+detector limit. Lean now takes its imaginary part through every integral using
+proved interval and planar integrability. The result is a fully real scalar:
+two vertical integrals of the real heat kernel times `Re (xi'/xi)`, minus an
+explicit planar integral involving both real and imaginary logarithmic-
+derivative components. Lean proves that the bulk coefficients are exactly the
+two partial derivatives of the real heat kernel, so the remaining source is a
+first-order heat-gradient pairing. Turning that pairing into a Green/Dirichlet
+or explicit-formula identity with an unconditional vanishing estimate remains
+open arithmetic rigidity.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.

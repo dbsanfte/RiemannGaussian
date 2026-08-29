@@ -26,21 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now identifies the live near-edge frontier exactly with literal
-`logDeriv riemannXi` integrals. It proves that both selected vertical lines are
-inside the zero-free pole-cleared domain, establishes the required interval
-and planar integrability, and splits the two vertical integrals and the
-Cauchy--Green bulk into genuine xi-logarithmic-derivative and holomorphic
-regular-correction pieces.
+Lean now converts the live three-term `logDeriv riemannXi` functional into a
+fully real scalar: two explicit vertical integrals of the real heat kernel
+times `Re (xi'/xi)`, minus one explicit planar source integral involving both
+`Re (xi'/xi)` and `Im (xi'/xi)`. All real/imaginary integral interchanges are
+backed by proved interval and planar integrability.
 
-After the already-proved cancellation of the regular correction, the
-remaining functional is therefore exactly two explicit xi-logarithmic-
-derivative vertical terms minus one explicit xi source bulk—not merely a
-renamed difference. Its imaginary part still converges without height
-normalization to `2*pi` times the complete nonnegative xi heat detector. The
-open frontier is to identify or estimate these three explicit terms strongly
-enough to force their absolute detector scalar to vanish. The corresponding
-RH equivalence remains a closure reformulation, not a proof of that premise.
+The two source coefficients are also proved to be exactly the horizontal and
+vertical partial derivatives of the real heat kernel. Thus the bulk is now a
+checked first-order heat-gradient pairing, and the explicit real scalar still
+converges without normalization to `2*pi` times the complete nonnegative xi
+heat detector. The open frontier is to turn this pairing into a useful
+Green/Dirichlet or explicit-formula rigidity estimate and force the scalar to
+vanish. No such unconditional vanishing theorem is claimed yet.
 
 ## Mathematical Program
 
