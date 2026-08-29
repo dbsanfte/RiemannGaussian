@@ -26,21 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now strengthens the first direct eta-measure zero restriction by retaining
-the quadratic cosine remainder and the exact second exponential moment. For
-every nontrivial zeta zero `rho`, it proves both
+Lean now exposes a genuinely horizontal consequence of the functional
+equation. A zero `sigma + I*y` makes both Fourier moments of the fixed eta
+measure vanish at the complementary tilts `sigma` and `1 - sigma`, with the
+same frequency `y`. Their difference has the exact weight
 
-`rho.re^2 * (1 - exp (-rho.re * log 2)) <= rho.im^2`
+`-2 * exp (-t/2) * sinh ((sigma - 1/2) * t)`.
 
-and its square-root form
-
-`rho.re * sqrt (1 - exp (-rho.re * log 2)) <= |rho.im|`.
-
-Lean also proves that this threshold is strictly stronger throughout the
-positive half-plane than the preceding first-moment bound. The argument still
-uses only the fixed positive arithmetic measure and exact cancellation. It is
-a genuine unconditional improvement, but remains a weak vertical exclusion;
-the open frontier is to extract horizontal rigidity forcing `rho.re = 1/2`.
+If the zero is off the critical line, Lean proves that multiplying this weight
+by `-(sigma - 1/2)` produces a density strictly positive at every point of the
+complete eta support, while both its cosine and sine moments still vanish at
+`y`. This is a precise positive-measure certificate that every hypothetical
+off-line zero must support. It does not rule the certificate out; the open
+frontier is an arithmetic rigidity theorem showing that this particular
+interval-supported density cannot have both cancellations.
 
 ## Mathematical Program
 

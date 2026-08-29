@@ -302,6 +302,15 @@ exponential moment. It proves the strictly stronger threshold
 equivalent squared form, at every nontrivial zeta zero. This is verified direct
 progress beyond the first-moment estimate, but it remains vertical rather than
 horizontal and therefore gives no approach to `rho.re = 1/2` by itself.
+Lean now uses the functional-equation partner to reach the horizontal
+direction. The same ordinate annihilates the fixed eta measure at tilts
+`rho.re` and `1 - rho.re`. Their difference factors as an exponentially
+damped hyperbolic sine. If `rho.re != 1/2`, sign normalization produces an
+explicit density strictly positive on the complete eta support whose cosine
+and sine moments both vanish at the zero's ordinate. This is a conditional
+off-critical certificate, not an exclusion theorem. The live arithmetic task
+is to prove that this specific positive density cannot support both
+cancellations.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

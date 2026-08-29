@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The fixed positive eta measure gives a strictly stronger quadratic vertical zero-exclusion inequality"
-    lineOne := "quadratic eta rigidity"
-    lineTwo := "stronger zero bound"
-    role := "unconditional"
+    label := "Any off-critical zero yields a positive horizontal-defect eta density with both Fourier moments zero"
+    lineOne := "horizontal eta defect"
+    lineTwo := "positive; moments zero"
+    role := "bridge"
     theoremName :=
-      ``RiemannGaussian.nontrivialZetaZero_etaMeasure_quadratic_vertical_exclusion
+      ``RiemannGaussian.nontrivialZetaZero_offCritical_etaPositiveHorizontalDefect_certificate
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "arithmetic horizontal rigidity beyond universal moment bounds; no current theorem implies RH.</text>\n" ++
+      "arithmetic exclusion of the positive horizontal-defect certificate; no current theorem implies RH.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -282,11 +282,10 @@ run_cmd do
       ("status", .str "open"),
       ("target", .str (
         "Derive an unconditional divisor-aware arithmetic rigidity estimate " ++
-        "for the fixed infinite positive paired-eta measure that goes beyond " ++
-        "universal moment domination, exploits its interval arithmetic, and " ++
-        "turns the proved vertical exclusions into a horizontal restriction " ++
-        "forcing every transform zero onto the critical line, or forces the " ++
-        "exact detector limit to vanish without discarding zero contributions"))
+        "excluding the explicit positive horizontal-defect density forced by " ++
+        "any off-critical zero, using the arithmetic interval support rather " ++
+        "than generic positivity, or forcing the exact detector limit to " ++
+        "vanish without discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
