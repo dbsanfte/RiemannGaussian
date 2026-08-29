@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The localized infinite eta completion distortion is exactly an oscillatory complementary-kernel difference"
-    lineOne := "localized eta Gram"
-    lineTwo := "cos-phase bridge"
-    role := "bridge"
+    label := "The localized eta completion distortion converges to the signed zero-centered distortion at short proper time"
+    lineOne := "localized phase"
+    lineTwo := "short-time O(sqrt tau)"
+    role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.pairedEtaLocalizedCompletionWeightDistortionIntegral_eq_kernelDifference
+      ``RiemannGaussian.tendsto_pairedEtaLocalizedCompletionWeightDistortionIntegral_sub_zeroCentered
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "phase coercivity for the oscillatory eta Gram localized at a zero ordinate.</text>\n" ++
+      "extend short-time phase control to zero-sensitive coercivity on the eta support.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -366,8 +366,12 @@ run_cmd do
         "reciprocal-weight distortion is exactly the complementary difference of these " ++
         "oscillatory kernels. Positive phase preserves strict antitonicity in sigma, " ++
         "while negative phase strictly reverses it; at every nontrivial zero the " ++
-        "localized energy integrand vanishes at its center. No quantitative phase " ++
-        "obstruction forcing " ++
+        "localized energy integrand vanishes at its center. Lean now bounds the phase " ++
+        "loss by sqrt(pi/tau)*2*gamma^2*tau times the square of the exact tilted eta " ++
+        "mass. Thus the localized norm and completion distortion converge to their " ++
+        "zero-centered counterparts with O(sqrt tau) error as tau tends to zero from " ++
+        "the right. This short-time estimate suppresses, rather than resolves, the " ++
+        "zero-defining cancellation. No zero-sensitive phase obstruction forcing " ++
         "the horizontal displacement to vanish is proved, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -375,9 +379,9 @@ run_cmd do
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove a quantitative phase-coercivity or incompatibility estimate for the " ++
-        "oscillatory infinite eta Gram localized at a zero ordinate that forces zero " ++
-        "location, or force the exact " ++
+        "Extend the proved short-time phase bound to a zero-sensitive proper-time " ++
+        "scale, or prove a uniform phase incompatibility on the actual eta support " ++
+        "that forces zero location; alternatively force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")

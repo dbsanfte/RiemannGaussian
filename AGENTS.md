@@ -489,9 +489,16 @@ distortion, and the difference of the two oscillatory arithmetic kernels in
 one checked identity. Positive cosine phase preserves strict antitonicity in
 `sigma`; negative phase strictly reverses it. At every nontrivial zeta zero
 the localized energy integrand vanishes at its center, but the full integral
-has no proved sign. The next valid slice must establish a quantitative phase
-coercivity or incompatibility on the actual eta support, rather than reuse the
-now-inapplicable positive-kernel argument.
+has no automatic sign. Lean now quantitatively controls the phase loss:
+`|cos x-1| <= x^2/2` and the Gaussian estimate
+`d^2*exp(-d^2/(4*tau)) <= 4*tau` give an explicit product-measure bound
+`|G_(sigma,gamma)(tau)-G_(sigma,0)(tau)| <=
+sqrt(pi/tau)*2*gamma^2*tau*M_sigma^2`. Hence localization is an
+`O(sqrt tau)` perturbation at short proper time, and the localized completion
+distortion converges to the signed zero-centered distortion. This is genuine
+phase control but is not zero-sensitive: the next valid slice must propagate
+control to a scale retaining the cancellation forced by a zero, or prove a
+uniform phase incompatibility on the actual eta support.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

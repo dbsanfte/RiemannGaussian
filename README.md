@@ -26,21 +26,22 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now localizes the fixed infinite eta Gaussian Gram at an arbitrary
-ordinate `gamma`. With all domination, integrability, and Fubini obligations
-checked, the localized vertical norm is exactly the double integral of
-`exp(-sigma*(t+u))*exp(-(t-u)^2/(4*tau))*cos(gamma*(u-t))` against two copies
-of the literal positive eta measure. The same theorem identifies the
-localized reciprocal-completion-weight distortion with the difference of
-these oscillatory kernels at `sigma` and `1-sigma`.
+Lean now gives the first quantitative control of the oscillatory localized
+eta Gram. If `M_sigma` is the exact total tilted eta mass, Lean proves
+`|G_(sigma,gamma)(tau)-G_(sigma,0)(tau)|` is at most
+`sqrt(pi/tau)*2*gamma^2*tau*M_sigma^2`. This follows from fully checked global
+bounds `|cos x-1| <= x^2/2` and
+`d^2*exp(-d^2/(4*tau)) <= 4*tau`, lifted through the literal infinite product
+measure.
 
-This pinpoints the hard obstruction in Lean: positive cosine phase preserves
-the zero-centered monotonicity in `sigma`, while negative phase strictly
-reverses it. At every nontrivial zeta zero, the localized energy integrand
-vanishes at the center ordinate, but no current theorem controls the full
-phase-weighted integral or excludes an off-critical zero. The frontier is now
-a quantitative phase-coercivity or incompatibility theorem on the actual eta
-support; RH remains open.
+Consequently the localized norm approaches the positive zero-centered norm
+with `O(sqrt tau)` error as `tau -> 0+`; the localized complementary
+completion distortion likewise converges to the strictly signed global
+distortion. This is unconditional phase control, but it is not RH: short
+proper time suppresses off-diagonal cancellation, whereas a zero is encoded
+by the full oscillatory transform. The frontier is to extend this estimate to
+a zero-sensitive scale or prove a uniform phase incompatibility on the actual
+eta support.
 
 ## Mathematical Program
 
