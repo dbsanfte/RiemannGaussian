@@ -26,19 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now splits the genuine near-edge arithmetic functional into five named
-terms: the oriented bottom and top horizontal sides, the near-critical-line
-and near-`Re p=-1/2` vertical sides, and the Cauchy--Green bulk. Lean proves
-their exact signed combination equals `2*pi*i` times the filtered selected
-heat-residue sum at every finite stage.
+Lean now proves that both horizontal sides of the genuine near-edge
+arithmetic contour vanish at every fixed positive heat time. The proof gives a
+uniform exponential bound for the full pole-cleared arithmetic response on
+the quantitative separated heights, including the Archimedean digamma
+correction, and lets the Gaussian heat kernel dominate it as height tends to
+infinity.
 
-The decomposed functional has identically zero real part. Its imaginary part
-is nonnegative, becomes strictly positive whenever a selected off-axis zero
-is present, and converges without height normalization to `2*pi` times the
-complete RH-equivalent xi heat detector. This preserves sensitivity to even
-one fixed off-axis zero. No individual side or bulk decay estimate is yet
-proved; obtaining estimates strong enough to force this absolute scalar to
-vanish is the still-open arithmetic rigidity frontier.
+Consequently the exact five-term boundary-minus-bulk functional reduces
+unconditionally to the two vertical sides minus the Cauchy--Green bulk. The
+imaginary part of this remaining three-term expression still converges,
+without height normalization, to `2*pi` times the complete nonnegative xi heat
+detector and therefore retains sensitivity to a single fixed off-axis zero.
+Estimating or identifying the vertical-minus-bulk limit strongly enough to
+force it to vanish is the open arithmetic-rigidity frontier; the proved RH
+equivalence of such vanishing is a closure reformulation, not a proof of it.
 
 ## Mathematical Program
 

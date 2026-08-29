@@ -171,9 +171,14 @@ dominated convergence and obtains a global near-edge arithmetic
 boundary-minus-bulk limit. Lean also splits that functional exactly into four
 named oriented boundary sides and one bulk term; its imaginary part is
 stagewise nonnegative, strictly positive when a selected zero is present, and
-converges without height normalization to the complete detector scalar.
-Estimating those five terms and proving an unconditional arithmetic rigidity
-theorem remain open.
+converges without height normalization to the complete detector scalar. Lean
+now proves a uniform exponential bound for the pole-cleared response across
+both selected horizontal sides, including the Archimedean digamma correction.
+The fixed-positive-time Gaussian dominates this bound, so both horizontal
+integrals tend to zero unconditionally. The live contour frontier is therefore
+exactly the two vertical sides minus the bulk. Estimating or identifying this
+three-term remainder and proving unconditional arithmetic rigidity remain
+open.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.
