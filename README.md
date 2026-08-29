@@ -26,21 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now separates the horizontal-defect certificate into its arithmetic and
-non-arithmetic parts. It proves that the paired-eta logarithmic support and its
-omitted gaps partition the full positive half-line, and that the complex
-kernel is exactly the previously proved positive defect density times its
-Fourier phase. Its transform on the full half-line is the explicit rational
-function
+Lean now identifies the omitted eta gaps explicitly as the pairwise-disjoint
+intervals `(log(2n+2), log(2n+3)]` and decomposes their measure into the
+corresponding countable sum. Their Laplace transforms are proved absolutely
+summable throughout `Re s > 0`. The resulting literal Dirichlet-difference
+series
 
-`2*a^2 / (((1/2+a)+I*y) * ((1/2-a)+I*y))`.
+`G(s) = ∑ n, ((2n+2)^(-s) - (2n+3)^(-s))`
 
-At a zeta zero the transform on the eta support vanishes. Therefore Lean
-proves that the omitted arithmetic gaps must reproduce the displayed value
-exactly; if the zero is off the critical line, that forced gap transform is
-nonzero. This is an unconditional reduction, not a contradiction. The open
-frontier is now a quantitative estimate using the alternating logarithmic-gap
-geometry that excludes this exact target.
+satisfies `G(s) = 1 - eta(s)` on that half-plane. Hence every nontrivial zeta
+zero, and its functional-equation partner, makes this explicit gap series sum
+to exactly `1`. Lean also rewrites the nonzero horizontal-defect target as the
+difference of the two corresponding absolutely convergent interval series.
+This is a sharper arithmetic reduction, not a zero-location theorem. The open
+frontier is a termwise quantitative estimate strong enough to contradict that
+forced paired-series behavior off the critical line.
 
 ## Mathematical Program
 

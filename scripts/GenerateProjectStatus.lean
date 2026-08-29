@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "Any off-critical zero forces the eta gaps to reproduce an explicit nonzero defect transform"
-    lineOne := "eta-gap transform"
-    lineTwo := "exact nonzero target"
+    label := "Any off-critical zero forces two explicit even-odd gap series to equal one and a nonzero defect transform"
+    lineOne := "even-odd gap series"
+    lineTwo := "= 1; defect nonzero"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.nontrivialZetaZero_offCritical_etaHorizontalDefectGap_certificate
+      ``RiemannGaussian.nontrivialZetaZero_offCritical_etaGapArithmeticSeries_certificate
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "an arithmetic gap estimate excluding the exact nonzero target; no current theorem implies RH.</text>\n" ++
+      "a termwise bound on the explicit gap series excluding its off-line target; no theorem implies RH.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -279,20 +279,21 @@ run_cmd do
         "RH-equivalent detectors, and a fixed positive paired-eta Laplace " ++
         "measure whose transform vanishes at every nontrivial zeta zero. " ++
         "Complementary tilts produce a positive horizontal-defect density. " ++
-        "The positive half-line now splits exactly into the eta support and " ++
-        "its logarithmic gaps; any off-critical zero forces the gap transform " ++
-        "to equal an explicit nonzero rational value. This is a checked " ++
-        "conditional reduction, not a zero-location theorem, and no current " ++
-        "theorem implies RH.")),
+        "The gaps are exactly the intervals (log(2n+2),log(2n+3)], and their " ++
+        "absolutely convergent even-odd Dirichlet series equals one minus " ++
+        "paired eta. Any off-critical zero forces the two complementary gap " ++
+        "series to equal one and their defect transform to be nonzero. This " ++
+        "is a checked conditional reduction, not a zero-location theorem, " ++
+        "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Derive an unconditional quantitative estimate from the alternating " ++
-        "paired-eta logarithmic gaps that contradicts the explicit nonzero " ++
-        "gap transform forced by any off-critical zero, or force the exact " ++
-        "detector limit to vanish without discarding zero contributions"))
+        "Derive an unconditional termwise estimate for the explicit " ++
+        "even-odd logarithmic-gap interval series that contradicts its paired " ++
+        "unit sums and nonzero defect transform at any off-critical zero, or " ++
+        "force the exact detector limit to vanish without discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

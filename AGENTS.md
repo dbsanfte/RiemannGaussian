@@ -318,6 +318,15 @@ transform vanishes, so the gap transform must equal this rational value; it is
 nonzero for an off-critical zero. The live task is a quantitative estimate
 from the alternating logarithmic-gap geometry that contradicts this exact
 target. No such estimate is currently proved.
+The abstract gaps are now eliminated as well. Lean identifies them exactly as
+the pairwise-disjoint intervals `(log(2n+2), log(2n+3)]`, proves the associated
+interval Laplace series absolutely summable on `Re s > 0`, and proves that its
+literal even-odd Dirichlet series is `1 - pairedEtaCore(s)`. Every nontrivial
+zero and its functional-equation partner therefore make this gap series equal
+exactly `1`; the horizontal gap transform is the complementary difference of
+the two interval series and remains nonzero off the line. The live task is now
+a termwise arithmetic estimate on these explicit intervals, not an abstract
+support-complement argument.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
