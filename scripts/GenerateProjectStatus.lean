@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The complementary infinite eta Gaussian norm difference is exactly reciprocal completion-weight distortion"
-    lineOne := "infinite eta Gram"
-    lineTwo := "weight distortion"
-    role := "bridge"
+    label := "The global infinite eta completion-weight distortion is strictly signed by sigma minus one half"
+    lineOne := "global Gram skew"
+    lineTwo := "signed at 1/2"
+    role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.pairedEtaGaussianLaplaceNorm_sub_complementary_eq_completionWeightDistortion
+      ``RiemannGaussian.pairedEtaCompletionWeightDistortionIntegral_sign_characterization
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "sign or coercivity of the explicit infinite-Gram completion-weight distortion.</text>\n" ++
+      "phase-sensitive coercivity after localizing the infinite eta Gram at a zero ordinate.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -356,9 +356,12 @@ run_cmd do
         "exp(-(t-u)^2/(4 tau)). Combining this with the completed symmetry isolates " ++
         "the raw complementary Gram difference exactly as the common completed energy " ++
         "integrated against the difference of reciprocal completion weights, with no " ++
-        "remainder. No sign or coercivity theorem for this distortion is proved. No " ++
-        "arithmetic phase " ++
-        "obstruction forcing " ++
+        "remainder. The eta measure is nonzero and concentrated at positive logarithmic " ++
+        "time, so Lean proves that the raw Gram is strictly decreasing in sigma and " ++
+        "derives the complete global distortion sign: positive left of one half, zero " ++
+        "exactly at one half, and negative right of one half. This zero-centered sign " ++
+        "is unconditional but does not constrain zeros. No phase-sensitive localized " ++
+        "arithmetic obstruction forcing " ++
         "the horizontal displacement to vanish is proved, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -366,9 +369,9 @@ run_cmd do
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove a sign, coercivity, or phase estimate for the explicit completion-weight " ++
-        "distortion in the infinite positive eta Gaussian Gram that forces zero location, " ++
-        "or force the exact " ++
+        "Formalize localization of the infinite positive eta Gaussian Gram at a zero " ++
+        "ordinate and prove a phase-sensitive coercivity estimate that forces zero " ++
+        "location, or force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")

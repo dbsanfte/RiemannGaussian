@@ -26,24 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the Gaussian Gram identity directly for the fixed infinite
-positive eta measure. For every `sigma,tau > 0`, the Gaussian vertical norm
-of its Laplace partition is genuinely integrable and equals the positive
-double kernel
-`sqrt(pi/tau)*exp(-sigma*(t+u))*exp(-(t-u)^2/(4*tau))` integrated over two
-copies of the literal arithmetic measure. All sigma-finiteness, domination,
-Fubini, conjugation, and Gaussian Fourier steps are checked in Lean; this is
-not inferred from a finite-limit heuristic.
+Lean now proves that the fixed infinite eta measure is nonzero and supported
+at strictly positive logarithmic time. Its positive Gaussian--Laplace Gram
+norm is therefore strictly decreasing in `sigma`. Combined with the exact
+completed symmetry, this gives a complete sign characterization of the
+reciprocal-completion-weight distortion: it is positive for `sigma < 1/2`,
+zero exactly at `sigma = 1/2`, and negative for `sigma > 1/2` throughout the
+open strip, for every positive Gaussian time.
 
-This puts the positive arithmetic Gram and the exact completed symmetry on
-the same infinite object. If `H_sigma(y)` is the common completed energy and
-`W_sigma(y)=|C(sigma+iy)*(sigma+iy)|^2`, Lean proves exactly
-that `G_sigma-G_(1-sigma)` is the integral of the Gaussian times
-`H_sigma*(W_sigma^-1-W_(1-sigma)^-1)`. Thus the raw complementary asymmetry is
-now isolated as completion-weight distortion, with no hidden remainder. This
-still does not prove RH: a new sign, coercivity, or phase theorem connecting
-that explicit distortion to zero location is required; no current theorem
-implies RH.
+This closes the global, zero-centered sign calculation but does not constrain
+zeta zeros and does not imply RH. Centering the Gaussian at a zero ordinate
+introduces an oscillatory phase into the arithmetic double kernel, destroying
+the positivity used here. The next frontier is a rigorously formalized,
+phase-sensitive localized coercivity theorem that can exclude an off-critical
+zero.
 
 ## Mathematical Program
 

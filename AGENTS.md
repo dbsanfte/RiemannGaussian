@@ -477,8 +477,15 @@ Gram is an explicit nonnegative double integral with kernel
 symmetry gives an exact balance law: the raw Gram at `sigma` minus the raw
 Gram at `1-sigma` is the common completed energy integrated against the
 difference of the two reciprocal completion weights. There is no remainder;
-the missing theorem is now a sign or coercivity estimate for this distortion
-that genuinely constrains zeros.
+the measure is nonzero and supported at strictly positive logarithmic time,
+so Lean now proves this raw Gram is strictly decreasing in `sigma`. It follows
+that the global distortion is positive left of `1/2`, zero exactly at `1/2`,
+and negative right of `1/2`. This zero-centered sign law is unconditional but
+does not constrain a zero. The live obstruction is phase-sensitive
+localization at a zero ordinate: the translated Gaussian introduces an
+oscillatory factor in the arithmetic double kernel, so the positive-kernel
+monotonicity proof no longer applies. The next valid slice must formalize that
+localized kernel and prove a genuine phase coercivity or incompatibility.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
