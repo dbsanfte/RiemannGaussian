@@ -26,26 +26,24 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now realizes the current frontier on one literal finite positive measure.
-Every binomially defined centered eta prefix is proved equal to a single
-centered Laplace integral over the finite eta logarithmic measure. The two
-completion-weighted complementary features are integrable on that common
-measure, and their integrals are exactly the finite partner terms whose
-magnitudes are `A_N` and `B_N`. Define
+Lean now gives the finite eta Gram frontier an exact one-step cutoff transport
+law. For the completion-weighted finite partner terms `P_N` and `Q_N`, define
 
-`E_N = A_N^2-B_N^2` and `S_N = A_N+B_N`.
+`E_N = |P_N|^2-|Q_N|^2` and `J_N = E_N-E_(N+1)`.
 
-Lean proves all product-measure integrability and Fubini obligations and shows
-that `E_N` is exactly the integral of one explicit signed rank-one Gram kernel
-over two copies of the finite eta measure. It also proves, including when
-`S_N=0`, that `E_N/S_N=A_N-B_N`; hence the original amplitude mismatch is
-exactly `(E_N/S_N)^2`.
+Writing `dP_N=P_N-P_(N+1)` and `dQ_N=Q_N-Q_(N+1)`, Lean proves exactly that
+`J_N` is the signed increment energy
+`|dP_N|^2-|dQ_N|^2` plus the two explicit successor cross-flux terms. Its
+absolute value is bounded by the corresponding increment energies and
+increment--successor norm products. Both component amplitudes tend to zero,
+so these works telescope and their ordered tail sums recover `E_N`, the
+normalized defect `E_N/S_N`, and its squared amplitude mismatch.
 
-The open target is now concrete finite arithmetic: prove
-`Summable (fun N => (E_N/S_N)^2)` for every nontrivial zero from the explicit
-signed eta Gram integral, by an eta-specific energy, Bessel, orthogonality, or
-transport argument. Lean proves that universal statement equivalent to RH; it
-does not prove the required summability.
+The open target is now local finite arithmetic: prove a weighted summability
+or coercivity estimate for that explicit increment-energy/cross-flux ledger
+strong enough to make `Summable (fun N => (E_N/S_N)^2)` at every nontrivial
+zero. Lean proves the universal summability statement equivalent to RH; it
+does not prove the required estimate.
 
 ## Mathematical Program
 

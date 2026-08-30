@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The signed finite energy is one exact finite eta Gram integral"
-    lineOne := "signed finite energy"
-    lineTwo := "eta Gram integral"
+    label := "The finite eta energy obeys exact one-step cutoff transport"
+    lineOne := "finite eta energy"
+    lineTwo := "cutoff transport"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.integral_topPrefixFiniteEnergyGramKernel_eq_finiteEnergyDifference
+      ``RiemannGaussian.tendsto_sq_sum_range_topPrefixFiniteEnergyWork_div_total
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove summability of the normalized signed finite eta Gram integral.</text>\n" ++
+      "prove weighted coercivity for the explicit finite eta energy flux.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -573,16 +573,22 @@ run_cmd do
         "features are integrable on that common measure and integrate to the finite " ++
         "partner terms. Their signed energy difference E_N is exactly the integral " ++
         "of one explicit integrable real rank-one Gram kernel over the product " ++
-        "measure, with the product exchange and conjugation fully justified.")),
+        "measure, with the product exchange and conjugation fully justified. Lean " ++
+        "now defines the consecutive energy work J_N=E_N-E_(N+1) and proves its " ++
+        "exact decomposition into signed increment energy plus successor cross flux. " ++
+        "Its absolute value is bounded by the two increment energies and the two " ++
+        "increment--successor norm products. Both component amplitudes tend to zero, " ++
+        "so finite work sums telescope to E_N; after division by S_N their squares " ++
+        "converge exactly to the original amplitude mismatch.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove from the explicit signed finite eta Gram integral, using eta-specific " ++
-        "energy, Bessel, orthogonality, or transport structure, that the square of " ++
-        "E_N/S_N is summable over cutoffs at every nontrivial zero without assuming " ++
-        "zero locations; Lean proves this universal summability statement is exactly RH"))
+        "Prove an eta-specific weighted summability or coercivity estimate for the " ++
+        "explicit one-step increment-energy and successor cross-flux ledger strong " ++
+        "enough that the square of E_N/S_N is summable at every nontrivial zero, " ++
+        "without assuming zero locations; Lean proves universal summability is exactly RH"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

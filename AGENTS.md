@@ -687,6 +687,15 @@ measure, with every Fubini and conjugation step checked. Thus the live target
 is square-summability of this signed finite eta Gram integral divided by the
 total finite amplitude. The representation is unconditional; the summability
 estimate remains conjecture-strength.
+Lean now gives this finite Gram energy an exact consecutive-cutoff transport.
+Its one-step work is the signed energy of the partner and conjugate increments
+plus two explicit cross-flux terms against the successor features. A checked
+absolute estimate contains only those increment energies and flux norm
+products. Both component amplitudes tend to zero, so the work telescopes and
+its ordered tail sums recover the signed energy, the normalized defect, and
+the amplitude mismatch. The open target is a weighted eta-specific
+summability or coercivity estimate for this local ledger; no sign for the flux
+is currently proved.
 
 ## Soundness invariant
 
