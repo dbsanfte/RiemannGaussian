@@ -26,23 +26,23 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean has converted the sharp top-prefix amplitude asymptotic into an exact
-Hilbert-space criterion. For each nontrivial zero, let `a_N` be the squared
-difference between the reflected-partner and conjugate-original component
-magnitudes. Lean proves
+Lean has removed both infinite tails and the nonlinear norm difference from
+the current summability frontier. Lower-moment vanishing rewrites each
+top-prefix component magnitude exactly as the completion weight times a
+literal finite centered-prefix magnitude. If these two nonnegative finite
+amplitudes are `A_N` and `B_N`, define
 
-`Summable (fun N => a_N) <-> Re(rho) = 1/2`.
+`E_N = A_N^2-B_N^2` and `S_N = A_N+B_N`.
 
-The proof includes the exact positive-odd-endpoint `p`-series threshold,
-reflection invariance of `a_N`, nonsummability at every left- or right-half
-off-line zero, and pointwise vanishing of `a_N` on the critical line. Globally,
-summability for every nontrivial zero is therefore proved equivalent to
-Mathlib's `RiemannHypothesis`.
+Lean proves, including when `S_N=0`, that `E_N/S_N=A_N-B_N`. Consequently the
+original amplitude mismatch is exactly `(E_N/S_N)^2`. The signed numerator is
+also polarized as the top-prefix Gram energy plus one explicit cross phase
+against the conjugate finite term.
 
-This equivalence is not a proof of RH. It exposes a new concrete attack surface:
-derive the summability of these literal finite arithmetic squared mismatches
-from an eta-specific Gram, Bessel, or orthogonality theorem without assuming
-zero locations. No such arithmetic summability theorem is currently proved.
+The open target is now concrete finite arithmetic: prove
+`Summable (fun N => (E_N/S_N)^2)` for every nontrivial zero by an eta-specific
+energy, Bessel, or orthogonality argument. Lean proves that universal statement
+equivalent to RH; it does not prove the required summability.
 
 ## Mathematical Program
 

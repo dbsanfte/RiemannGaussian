@@ -669,6 +669,15 @@ proved equivalent to RH. This is an equivalence, not progress on its open
 direction. The concrete new research target is an eta-specific Gram, Bessel,
 or orthogonality argument establishing that literal finite-arithmetic
 summability without using zero locations.
+Lean now removes the apparent infinite-tail and nonlinear-norm barriers from
+that target. Lower-moment vanishing rewrites both component magnitudes as
+literal completion-weighted finite centered prefixes. Their magnitude
+difference is exactly the signed difference of their squared energies divided
+by their total amplitude, even when that denominator is zero. The signed
+energy numerator also equals the nonnegative top-prefix Gram energy plus one
+explicit polarized cross phase. Hence the live target is square-summability of
+this normalized signed finite energy defect; its arithmetic proof remains
+open.
 
 ## Soundness invariant
 

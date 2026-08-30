@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "Top-prefix amplitude mismatch is summable exactly on the critical line"
-    lineOne := "amplitude mismatch l2"
-    lineTwo := "iff critical line"
-    role := "equivalence"
+    label := "The amplitude mismatch is the square of a normalized signed finite energy defect"
+    lineOne := "amplitude mismatch"
+    lineTwo := "finite energy square"
+    role := "reduction"
     theoremName :=
-      ``RiemannGaussian.summable_topPrefixAmplitudeImbalance_iff_re_eq_half
+      ``RiemannGaussian.topPrefixAmplitudeImbalance_eq_sq_normalizedFiniteEnergyDefect
   }
 ]
 
@@ -560,16 +560,23 @@ run_cmd do
         "zero is on the critical line. On the line every mismatch is literally zero; " ++
         "off the line the sharp slower exponent makes the nonnegative series diverge. " ++
         "Universal summability is explicitly proved equivalent to RH. This is a " ++
-        "Hilbert-space closure interface, not a proof of its arithmetic direction.")),
+        "Hilbert-space closure interface, not a proof of its arithmetic direction. " ++
+        "Lean now uses the vanishing of the complete order-(m-1) moments to replace " ++
+        "both infinite centered tails exactly by literal finite centered prefixes. " ++
+        "Writing their completion-weighted magnitudes as A_N and B_N, the signed " ++
+        "finite energy difference E_N=A_N^2-B_N^2 divided by the total amplitude " ++
+        "S_N=A_N+B_N equals A_N-B_N even when S_N=0. Thus the amplitude mismatch " ++
+        "is exactly (E_N/S_N)^2. The numerator is also polarized into top-prefix " ++
+        "Gram energy plus one explicit finite cross phase.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
         "Prove from eta-specific finite Gram, Bessel, or orthogonality structure that " ++
-        "the squared complementary top-prefix magnitude mismatch is summable over " ++
-        "cutoffs at every nontrivial zero, without assuming zero locations; Lean " ++
-        "proves this universal summability statement is exactly RH"))
+        "the square of the normalized signed finite prefix energy defect E_N/S_N is " ++
+        "summable over cutoffs at every nontrivial zero, without assuming zero " ++
+        "locations; Lean proves this universal summability statement is exactly RH"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
