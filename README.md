@@ -26,30 +26,34 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now isolates the single arithmetic term carrying the critical finite-work
-obstruction. If `m` is the multiplicity of a hypothetical right-half off-line
-zero, the exact work splits as `W_N = S_N + T_N`, where `S_N` is the new head
-plus every transported order below `m-1`, and Lean simplifies the sole top term
-to
+Lean has reduced the critical finite-work obstruction to one explicit
+square-root cancellation estimate. If `m` is the multiplicity of a
+hypothetical right-half off-line zero, the exact work splits as
+`W_N = S_N + T_N`. Lean proves the new head and every transported order below
+`m-1` satisfy
+
+`(2N+1)^(3/2) * ||S_N|| -> 0`,
+
+and simplifies the sole top term to
 
 `T_N = m * Delta_N * C_(m-1,N+1)`.
 
-Here `Delta_N` is the one-step logarithmic cutoff shift and `C_(m-1,N+1)` is
-one explicit completed, phase-retaining finite eta-prefix coupling. Lean proves
+Here `C_(m-1,N+1)` is one literal completed, phase-retaining finite eta-prefix
+coupling. Lean now proves `(2N+1) * Delta_N -> 2` and the exact scale identity
 
-`(2N+1)^(3/2) * ||S_N|| -> 0`
+`(2N+1)^(3/2)||T_N|| = m*((2N+1)Delta_N)*(2N+1)^(1/2)||C_(m-1,N+1)||`.
 
-while `(2N+1)^(3/2) * ||T_N|| -> +infinity`. Thus the head and the entire
-lower hierarchy are rigorously harmless at the critical scale. With reflection
-handling the opposite half-strip, a universal eventual
-`O((2N+1)^(-3/2))` bound for this single top transport would prove Mathlib's
+Consequently the top-work bound is equivalent, locally and globally, to
+eventual square-root boundedness of `C_(m-1,N+1)`. That global prefix estimate
+would force every nontrivial zero onto the critical line and prove Mathlib's
 `RiemannHypothesis`.
 
 This is not RH. It rigorously identifies the phase-bearing obstruction that an
-unconditional arithmetic cancellation theorem must now defeat. The remaining
-target is no longer the full finite hierarchy: it is the displayed order-`m-1`
-coupled prefix. No theorem yet supplies its critical bound without assuming
-information equivalent to zero locations.
+unconditional arithmetic cancellation theorem must now defeat. All deterministic
+transport factors and lower terms have been removed; the remaining target is
+the half-power saving
+`(2N+1)^(1/2)||C_(m-1,N+1)|| = O(1)`. No theorem yet supplies it without
+assuming information equivalent to zero locations.
 
 ## Mathematical Program
 

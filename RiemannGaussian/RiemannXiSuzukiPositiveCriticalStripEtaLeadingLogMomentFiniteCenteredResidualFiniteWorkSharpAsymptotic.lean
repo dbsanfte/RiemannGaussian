@@ -823,6 +823,14 @@ private theorem topWorkLimit_eq_residualLimit_aux
   field_simp [pow_ne_zero _ hp]
   ring
 
+/-- The odd cutoff endpoint times its one-step logarithmic shift converges to
+the exact constant `2`. -/
+theorem tendsto_oddEndpoint_mul_pairedEtaLogTailShiftIncrement_two :
+    Tendsto (fun N : ℕ =>
+      ((2 * N + 1 : ℕ) : ℝ) * pairedEtaLogTailShiftIncrement N)
+      atTop (nhds 2) :=
+  tendsto_oddEndpoint_mul_shiftIncrement_two_aux
+
 /-- The unique top transported prefix moment in the exact finite-work
 hierarchy.  Positivity of the analytic multiplicity ensures that the index
 `m - 1` is the predecessor of `m`. -/
