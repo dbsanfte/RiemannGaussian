@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "Finite eta zero windows split into positive on-line and hyperbolic off-line blocks"
-    lineOne := "finite eta window"
-    lineTwo := "P + (X - Y)"
+    label := "Finite eta zero-window rank is bounded by its spectral divisor count"
+    lineOne := "finite eta rank"
+    lineTwo := "≤ spectral count"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindowBlock_eq_onLine_add_offLineReal_sub_imag
+      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindowBlock_rank_le_critical_add_two_mul_upper
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove eta-window inertia, then arithmetic trace/Frobenius control.</text>\n" ++
+      "prove eta-window positive-index and arithmetic trace/Frobenius control.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -637,19 +637,22 @@ run_cmd do
         "finite symmetric spectral zero windows, retaining analytic multiplicity. The " ++
         "complete window matrix splits exactly as onLine + (offReal - offImag); all three " ++
         "constituent blocks have their required positive-semidefinite proofs and the full " ++
-        "matrix is Hermitian. Rank, inertia, and eta-arithmetic trace/Frobenius estimates " ++
-        "remain open.")),
+        "matrix is Hermitian. Every constituent and full window block now has a literal " ++
+        "zero-cardinality rank bound, and reflection proves #full=#critical+2*#upper. " ++
+        "Positive-index/inertia and eta-arithmetic trace/Frobenius estimates remain " ++
+        "open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove rank and positive-index bounds for the actual finite eta zero-window " ++
-        "decomposition, then derive trace/Frobenius control from literal eta arithmetic " ++
+        "Prove positive-index bounds for the actual finite eta zero-window decomposition, " ++
+        "then derive trace/Frobenius control from literal eta arithmetic " ++
         "strong enough to prove the critical first absolute moment of the selected " ++
         "leading-current kernels. Lean already proves F_N=L_N+R_N, the critical " ++
         "summability of R_N, the exact cosine/crossover factorization of the higher-" ++
-        "multiplicity L_N kernel, and the finite on-line/off-line block decomposition. " ++
+        "multiplicity L_N kernel, the finite on-line/off-line block decomposition, and " ++
+        "the required divisor-count rank bounds. " ++
         "The required eta-specific aggregate estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++
         "to RH"))

@@ -26,19 +26,18 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now packs any finite family of the two-coordinate eta hyperbolic features
-into genuine finite symmetric zeta-zero windows, retaining analytic
-multiplicity. Every cutoff slice still recovers the existing signed finite eta
-energy, and critical-line reflection sends the packed feature to its
-componentwise conjugate.
+Lean now proves divisor-count rank bounds for the genuine finite eta
+zero-window matrices. Every multiplicity-weighted outer-product summand has
+rank at most one, so the full, critical-line, off-line real, and off-line
+imaginary blocks are bounded by the cardinalities of their literal indexing
+windows. Reflection also gives the exact checked count
+`#full = #critical + 2 * #upper` for every nonnegative symmetric window.
 
-The resulting complex-symmetric window matrix has the exact checked block
-decomposition `onLine + (offReal - offImag)`. The on-line, off-line real, and
-off-line imaginary blocks are all positive semidefinite, so the full window
-matrix is Hermitian. This is the concrete eta-specific input required by a
-rank/inertia argument. Positive-index and rank bounds, and especially the
-arithmetic trace/Frobenius estimates that would control the open leading
-current, remain to be proved.
+Together with the preceding Hermitian decomposition
+`onLine + (offReal - offImag)`, these results supply the concrete rank input
+for an eta-specific inertia argument. The positive-index bound and, more
+decisively, arithmetic trace/Frobenius estimates capable of controlling the
+open leading current remain unproved.
 
 ## Mathematical Program
 

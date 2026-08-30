@@ -798,10 +798,15 @@ finite spectral zero windows, with analytic multiplicity, the resulting
 complex-symmetric matrix splits exactly as
 `onLine + (offReal - offImag)`. The three named blocks are proved positive
 semidefinite where appropriate, and the complete matrix is Hermitian. The
-next step is now sharply separated: prove the rank and positive-index bounds
-for these actual blocks, then seek trace and Frobenius estimates from the eta
-arithmetic. Importing an abstract rank--trace inequality alone is
-infrastructure, not the missing arithmetic estimate.
+rank layer is now also internal: each literal outer-product summand has rank
+at most one, giving separate bounds for the full, on-line, off-line real, and
+off-line imaginary blocks by their genuine zero-window cardinalities.
+Reflection proves the exact count `#full = #critical + 2 * #upper` on every
+nonnegative symmetric window. The next sharply separated obligation is the
+positive-index bound for the actual hyperbolic off-line block, followed by
+trace and Frobenius estimates derived from the eta arithmetic. An abstract
+rank--trace inequality remains infrastructure, not the missing arithmetic
+estimate.
 
 ## Soundness invariant
 
