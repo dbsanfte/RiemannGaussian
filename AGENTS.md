@@ -648,6 +648,18 @@ integration-by-parts argument; erasing them would merely erase the detector.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.
+Lean has since isolated the top transported term, represented its remaining
+prefix as one shifted-tail interference integral, and squared it into an exact
+Hermitian Gram identity. Splitting that integral into the two complementary
+components proves that the cross-phase defect is already bounded at the full
+endpoint scale; the sole remaining target is the squared difference of their
+magnitudes. The sharp centered-tail theorem now gives both component limits.
+For every hypothetical zero with `Re(rho)>1/2`, the slower partner-normalized
+amplitude difference tends to an explicit positive constant, and Lean proves
+that the exact endpoint-scaled squared difference tends to positive infinity.
+Thus the current frontier is an independent eta-arithmetic theorem forcing
+that endpoint-scaled difference to remain bounded. Its off-line divergence is
+proved; the required arithmetic boundedness is not.
 
 ## Soundness invariant
 

@@ -26,30 +26,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean has split the top-prefix interference integral into its reflected-partner
-and conjugate-original components `P_N` and `Q_N`, retaining every completion,
-parity, conjugation, and cutoff phase. It proves the exact nonnegative
-decomposition
+Lean now proves the sharp asymptotic of the two amplitudes at the exact
+top-prefix frontier. Write `sigma = Re(rho)`, `sigma# = 1-sigma`,
+`x_N = 2N+1`, and `y_N = 2N+3`. Each completion-weighted order-`m-1`
+centered tail has an explicit strictly positive limit after multiplication by
+its own power `y_N^sigma` or `y_N^sigma#`.
 
-`||C_(m-1,N+1)||^2 = (||P_N||-||Q_N||)^2 + A_N`,
+For a hypothetical right-half zero, `sigma > 1/2`, the partner tail is the
+slower component. Lean proves that its normalization kills the other component
+and leaves the partner's positive sharp constant `L#`; hence
 
-where `A_N = 2*(||P_N||||Q_N|| + Re(P_N*conj(Q_N))) >= 0` is the
-anti-alignment defect. Lean then proves `A_N <= 4||P_N||||Q_N||` and identifies
-the component norms exactly with completion weights times the two literal
-order-`m-1` centered eta tails.
+`x_N^(2*sigma#) * (w#*||T#_(N+1)|| - w*||T_(N+1)||)^2 -> L#^2 > 0`.
 
-The complementary tail exponents are `rho.re` and `1-rho.re`; their product
-therefore has one full inverse-endpoint power. Lean proves an explicit
-zero-dependent constant bounding `(2N+1)A_N` for every cutoff. Consequently
-the cross-phase half of the Gram frontier is unconditional, and the original
-square-root prefix bound is exactly equivalent to the single amplitude target
-
-`(2N+1)*(w_(rho#)||T_(rho#,N+1)|| - w_rho||T_(rho,N+1)||)^2 = O(1)`.
-
-This is not RH. The remaining amplitude-balance estimate is unproved without
-zero-location information; a universal proof of it would imply Mathlib's
-`RiemannHypothesis`. The verified reduction does show that no additional
-phase-cancellation theorem is needed at the critical scale.
+It follows in Lean that the exact critical quantity obtained by replacing the
+normalizing power with `x_N` tends to positive infinity. This is a sharper
+diagnosis, not RH: every right-half zero violates the desired amplitude bound,
+so a universal bound would rule out every off-line pair by reflection. The
+open mathematics is still to derive that universal `O(1)` bound from an
+independent eta-arithmetic rigidity theorem, without assuming anything about
+zero locations.
 
 ## Mathematical Program
 

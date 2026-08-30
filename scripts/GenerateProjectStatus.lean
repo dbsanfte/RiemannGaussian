@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The top-prefix frontier is exactly complementary centered-tail amplitude balance"
-    lineOne := "top eta frontier iff"
-    lineTwo := "tail amplitude balance"
+    label := "Every right-half zero forces the endpoint-scaled amplitude imbalance to diverge"
+    lineOne := "off-line amplitude"
+    lineTwo := "diverges sharply"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopPrefix_criticalScale_eventuallyBounded_iff_amplitudeImbalance
+      ``RiemannGaussian.tendsto_oddEndpoint_mul_topPrefixAmplitudeImbalance_atTop_of_half_lt_re
   }
 ]
 
@@ -547,7 +547,14 @@ run_cmd do
         "cross-phase contribution is unconditionally controlled, and the prefix/Gram " ++
         "frontier is exactly equivalent to endpoint-scaled squared amplitude balance " ++
         "between the two completion-weighted centered-tail norms. That amplitude " ++
-        "estimate, without zero-location assumptions, is the isolated frontier.")),
+        "estimate, without zero-location assumptions, is the isolated frontier. " ++
+        "Lean now transports the sharp centered-tail asymptotics through both exact " ++
+        "component norms. At every hypothetical right-half zero, the slower partner-" ++
+        "normalized signed amplitude difference tends to an explicit strictly positive " ++
+        "constant, its squared normalization has the corresponding positive limit, " ++
+        "and the exact endpoint-scaled amplitude imbalance tends to positive infinity. " ++
+        "This proves the sharp obstruction but does not supply the independent " ++
+        "arithmetic boundedness theorem needed to exclude it.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -555,8 +562,9 @@ run_cmd do
       ("target", .str (
         "Prove the universal eventual complementary centered-tail amplitude bound " ++
         "(2N+1)*(w_(rho#)*|T_(rho#,N+1)|-w_rho*|T_(rho,N+1)|)^2=O(1) " ++
-        "for order m-1, without assuming zero locations; the cross-phase defect is " ++
-        "already unconditionally bounded"))
+        "for order m-1 from eta arithmetic, without assuming zero locations; the " ++
+        "cross-phase defect is bounded and every right-half zero is proved to make " ++
+        "this exact quantity diverge"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
