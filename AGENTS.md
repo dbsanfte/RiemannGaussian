@@ -633,13 +633,18 @@ exactly Lebesgue measure on its first interval `(0,w_N]` plus the shifted tail
 at `N+1` translated by `Delta_N`, with `0<w_N<Delta_N`. Every shifted moment
 therefore obeys an exact finite binomial transport formula. The completion and
 phase factors align across both complementary tilts, producing a triangular
-work law for the actual residual:
-`R_N-R_(N+1)=head_N+sum_(j<m) choose(m,j)*Delta_N^(m-j)*C_(j,N+1)`.
-The top successor order is exactly `R_(N+1)`; only lower coupled orders remain.
-The present sign-bearing target is an eta-specific bound or cancellation law
-for this finite lower-order hierarchy. A valid next step must retain the
-distributional zero contributions in any Green or integration-by-parts
-argument; erasing them would merely erase the detector.
+work law for the actual residual. Lean now closes that lower-order hierarchy:
+for every `j<m`, vanishing of all complete eta moments through order `j`
+forces the centered tail to be exactly the negative of its literal finite
+centered prefix, at both complementary zeros. Hence
+`R_N-R_(N+1)=head_(m,N)+sum_(j<m) choose(m,j)*Delta_N^(m-j)*P_(j,N+1)`,
+where the head is supported on the single explicit interval `(0,w_N]` and
+every `P_j` is a finite eta-prefix coupling with the original completion,
+parity, conjugation, and phase data. No lower-order infinite tail remains.
+The present sign-bearing target is an eta-specific coercive estimate or
+cancellation law for this completely finite arithmetic identity. A valid next
+step must retain the distributional zero contributions in any Green or
+integration-by-parts argument; erasing them would merely erase the detector.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.

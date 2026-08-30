@@ -26,22 +26,22 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the exact arithmetic transport law between consecutive shifted
-eta tails. At cutoff `N`, the measure is the first translated support interval
-`(0,w_N]` plus the cutoff-`N+1` measure translated by
-`Delta_N=log(2N+3)-log(2N+1)`, with the strict eta gap `0<w_N<Delta_N`.
+Lean now closes the lower-order hierarchy in the exact arithmetic transport
+law for consecutive centered eta residuals. At a zero of multiplicity `m`,
+every complete centered moment of order `j<m` vanishes, so its infinite tail
+is exactly the negative of its literal finite centered prefix. This is proved
+at both complementary zeros with all completion factors, parity, conjugation,
+and cutoff phases retained.
 
-Every shifted Laplace and Fourier--Laplace moment consequently satisfies an
-exact finite binomial recurrence. After inserting both complementary tilts,
-completion factors, conjugation, and cutoff phases, Lean obtains the discrete
-residual work law
+Consequently the residual work law now has the completely finite form
 
-`R_N-R_(N+1) = head_N + sum_(j<m) choose(m,j)*Delta_N^(m-j)*C_(j,N+1)`.
+`R_N-R_(N+1) = head_(m,N) + sum_(j<m) choose(m,j)*Delta_N^(m-j)*P_(j,N+1)`,
 
-Thus the top-order successor is exactly the next completed residual, and the
-remaining obstruction is a finite triangular hierarchy of genuinely lower
-orders. This is eta-specific arithmetic structure, not RH; the frontier is to
-control that hierarchy strongly enough to rule out off-line cancellation.
+where `head_(m,N)` is an integral over the single explicit translated support
+interval `(0,w_N]` and every `P_(j,N+1)` is a finite eta-prefix coupling. No
+lower-order infinite tail remains. This is not RH; the frontier is now an
+eta-specific coercive sign or cancellation estimate for this exact finite
+arithmetic work identity.
 
 ## Mathematical Program
 

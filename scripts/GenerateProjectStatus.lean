@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "Consecutive centered eta residuals obey an exact triangular arithmetic transport law"
-    lineOne := "eta residual"
-    lineTwo := "triangular transport"
+    label := "The lower eta residual transport hierarchy is exactly finite prefix data"
+    lineOne := "eta residual work"
+    lineTwo := "finite-prefix closure"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidual_sub_succ
+      ``RiemannGaussian.pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidual_sub_succ_eq_finitePrefixHierarchy
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "control the lower-order hierarchy in eta residual transport.</text>\n" ++
+      "prove coercive control of the finite eta residual work identity.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -462,18 +462,22 @@ run_cmd do
         "exact finite binomial recurrence. Completion and phase transport align the " ++
         "two complementary tilts, giving the actual residual work law " ++
         "R_N-R_(N+1)=head_N+sum_(j<m) choose(m,j)Delta_N^(m-j)C_(j,N+1). The top " ++
-        "successor order is exactly R_(N+1), leaving only a finite lower-order " ++
-        "hierarchy. The needed eta-specific control of that hierarchy is not proved, " ++
-        "and these results do not imply RH.")),
+        "successor order is exactly R_(N+1). Lean now closes every lower order j<m: " ++
+        "the complete centered moment vanishes, so its infinite centered tail is " ++
+        "exactly the negative of its literal finite prefix at both complementary " ++
+        "zeros. Thus the actual residual work law contains only one explicit head " ++
+        "interval and a finite sum of finite eta-prefix couplings, with completion, " ++
+        "parity, conjugation, and phase retained. The needed eta-specific coercive " ++
+        "sign or cancellation estimate for this finite identity is not proved, and " ++
+        "these results do not imply RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove an eta-specific estimate or cancellation law for the exact lower-order " ++
-        "triangular hierarchy in consecutive centered-residual transport, strong enough " ++
-        "to rule out its off-line behavior and force unit eta reflection multiplier norm " ++
-        "at every nontrivial zero"))
+        "Prove an eta-specific coercive sign or cancellation estimate for the exact " ++
+        "finite-prefix residual work identity, strong enough to rule out its off-line " ++
+        "behavior and force unit eta reflection multiplier norm at every nontrivial zero"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
