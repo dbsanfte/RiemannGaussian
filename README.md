@@ -24,6 +24,27 @@ unproved. No current theorem derives an RH-equivalent vanishing condition from
 unconditional arithmetic estimates. CI rejects a stale generated panel. The
 machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
+## Current Direction
+
+The active research direction is a phase-preserving finite zero-window
+certificate inspired by Anthropic's `zeta23` rank--trace architecture. The
+project has instantiated its linear-algebraic skeleton on genuine
+multiplicity-weighted eta features and enriched it with signed Gaussian heat,
+higher and cross-scale spectral moments, cutoff transport, reflected-zero
+colour, and coherent zero-pair correlations. The first benchmark is a literal
+eta-arithmetic certificate stronger than the earlier two-thirds result; the
+ultimate method target is `18/18`, or 100% of every finite symmetric zero
+window.
+
+Lean currently proves a sharp abstract `13/18` degree-four certificate, but
+that number is not yet a zeta-zero proportion: the normalized moment model has
+not been derived from the literal eta window. The immediate route to close
+that gap is to turn geometric eta sampling, collision-free prime modes, and
+phase rigidity into a finite full-rank cutoff family. That richer family can
+then feed the checked signed-heat and rank--trace ledgers without prematurely
+discarding phase. A subsequent eta-specific arithmetic estimate must exclude
+the sharp finite obstruction before any stronger zero proportion is claimed.
+
 ## Latest Update
 
 Lean now proves prime-base collision avoidance for the checked geometric eta
@@ -41,21 +62,26 @@ injective. No stronger zeta-zero proportion is yet claimed.
 
 ## Mathematical Program
 
-The development joins two lines of attack:
+The current program combines four connected lines:
 
-- The **Gaussian/Weil branch** formalizes subquadratic global growth of xi,
-  convergence of its zero sums, an RH-equivalent boundary heat detector, and
-  Gaussian Gram identities.
-- The **Suzuki/contour branch** connects an arithmetic screw-line quantity to
-  the spectral xi logarithmic derivative, constructs safe finite contours, and
-  deforms the resulting static signed contour to its paired real-boundary
-  limit.
+- The **finite certificate branch** adapts rank--trace and inertia methods to
+  genuine symmetric eta zero windows. Its carrier retains cutoff, phase,
+  multiplicity, reflected-zero colour, and coherent cross-zero interference.
+- The **eta arithmetic branch** realizes completed eta moments as explicit
+  finite interval and endpoint sums, develops exact cutoff work laws, and now
+  uses geometric sampling to seek a full-rank finite feature family.
+- The **Gaussian/heat branch** supplies positive and signed heat flows,
+  higher and mixed-scale moment Grams, projection leakage, closed paths, and
+  the odd proper-time transform connecting heat kernels to the checked
+  Montgomery--Vaughan inequality.
+- The **Suzuki/contour branch** connects arithmetic screw-line quantities to
+  the spectral xi logarithmic derivative and an RH-equivalent boundary-heat
+  detector through rigorously controlled finite contours and limits.
 
-Finite Hardy spaces, Blaschke products, Pick matrices, Gram determinants,
-root-count transport, and finite-to-entire limit theory provide the supporting
-formal infrastructure. These results expose several interfaces to the same
-missing arithmetic and entire-function rigidity theorem; they do not yet
-prove that theorem.
+The older finite Hardy, Blaschke, Pick-matrix, zero-counting, and
+finite-to-entire developments remain checked supporting infrastructure and
+alternative interfaces to the missing rigidity theorem. None of these
+reformulations establishes the open arithmetic direction by itself.
 
 ## Repository Structure
 
@@ -138,7 +164,14 @@ obstruction into assumptions, audits its axioms, runs all local gates, and is
 then committed and pushed. Work resumes only after CI succeeds on that exact
 commit.
 
-The agent may explore new mathematics and connections to analysis, operator
-theory, spectral theory, number theory, or mathematical physics. Such ideas
-enter the project only through kernel-checked Lean proofs grounded in the
-existing verified chain. See [AGENTS.md](AGENTS.md) for the full methodology.
+Every representation is treated as an information-flow decision. Rich source
+objects are retained while norms, traces, asymptotic limits, and triangle
+bounds are exposed only as downstream views; phase, sign, orientation,
+multiplicity, scale, and channel colour are collapsed only when a proved
+estimate gains leverage from doing so.
+
+Lean is also used as a research engine for deriving and testing new
+mathematics across analysis, operator theory, spectral theory, number theory,
+and mathematical physics. Numerical or symbolic experiments may suggest a
+lemma, but only a kernel-checked theorem grounded in the existing chain counts
+as progress. See [AGENTS.md](AGENTS.md) for the full methodology.

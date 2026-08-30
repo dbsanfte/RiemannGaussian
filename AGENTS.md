@@ -1140,9 +1140,13 @@ abstractions.
 7. Run the source placeholder scan, whole-project declaration lint, focused
    build, full build, generated-status check, and whitespace check described
    below.
-8. Update the README only for stable explanatory changes. Update the milestone
-   list in `scripts/GenerateProjectStatus.lean` when and only when a new
-   theorem genuinely advances the displayed frontier, then regenerate the
+8. Keep exactly two live research-status sections near the top of the README:
+   `Current Direction` states the active strategy and immediate frontier, and
+   `Latest Update` states only the newest verified slice and its next
+   obstruction. Review both on every committed slice, replacing stale text
+   rather than appending history. The README is never an audit log. Update the
+   milestone list in `scripts/GenerateProjectStatus.lean` when and only when a
+   new theorem genuinely advances the displayed frontier, then regenerate the
    artifacts.
    The generated panel is a theorem inventory, not a proximity meter: never
    draw a causal edge between milestones unless a checked theorem proves that
