@@ -26,22 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now closes the lower-order hierarchy in the exact arithmetic transport
-law for consecutive centered eta residuals. At a zero of multiplicity `m`,
-every complete centered moment of order `j<m` vanishes, so its infinite tail
-is exactly the negative of its literal finite centered prefix. This is proved
-at both complementary zeros with all completion factors, parity, conjugation,
-and cutoff phases retained.
+Lean now proves the sharp asymptotic of every literal cutoff-centered eta tail
+throughout `Re(s)>0`. For moment order `k`, its complex odd-endpoint
+normalization converges to the explicit nonzero value
 
-Consequently the residual work law now has the completely finite form
+`k! / (2*s^(k+1))`.
 
-`R_N-R_(N+1) = head_(m,N) + sum_(j<m) choose(m,j)*Delta_N^(m-j)*P_(j,N+1)`,
-
-where `head_(m,N)` is an integral over the single explicit translated support
-interval `(0,w_N]` and every `P_(j,N+1)` is a finite eta-prefix coupling. No
-lower-order infinite tail remains. This is not RH; the frontier is now an
-eta-specific coercive sign or cancellation estimate for this exact finite
-arithmetic work identity.
+The proof starts from the exact Euler second-difference remainder, establishes
+locally uniform convergence of the normalized zeroth tail to `1/(2*s)`, and
+then transports that limit through every iterated complex derivative. Taking
+norms gives the exact positive horizontal decay rate. This is not RH; it is
+the nondegenerate asymptotic needed to prove that the two complementary tails
+inside the exact finite residual cannot cancel when their horizontal rates
+differ. That residual-dominance theorem is the next checked target.
 
 ## Mathematical Program
 

@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The lower eta residual transport hierarchy is exactly finite prefix data"
-    lineOne := "eta residual work"
-    lineTwo := "finite-prefix closure"
-    role := "reduction"
+    label := "Every centered eta tail has a sharp positive horizontal decay rate"
+    lineOne := "centered eta tails"
+    lineTwo := "sharp positive rate"
+    role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidual_sub_succ_eq_finitePrefixHierarchy
+      ``RiemannGaussian.tendsto_oddEndpoint_rpow_mul_norm_pairedEtaLogLaplaceMomentCutoffCenteredTail
   }
 ]
 
@@ -467,7 +467,14 @@ run_cmd do
         "exactly the negative of its literal finite prefix at both complementary " ++
         "zeros. Thus the actual residual work law contains only one explicit head " ++
         "interval and a finite sum of finite eta-prefix couplings, with completion, " ++
-        "parity, conjugation, and phase retained. The needed eta-specific coercive " ++
+        "parity, conjugation, and phase retained. Lean now derives a sharp asymptotic " ++
+        "for every literal centered eta tail: after multiplication by the complex " ++
+        "odd-endpoint power, the order-k tail converges to k!/(2*s^(k+1)) throughout " ++
+        "Re(s)>0. The proof promotes the exact Euler second-difference remainder to " ++
+        "locally uniform convergence and transports it through every holomorphic " ++
+        "derivative. The corresponding endpoint-scaled norm has a strictly positive " ++
+        "limit, providing a checked nondegenerate rate-separation input. The needed " ++
+        "eta-specific residual-dominance and coercive " ++
         "sign or cancellation estimate for this finite identity is not proved, and " ++
         "these results do not imply RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -475,9 +482,9 @@ run_cmd do
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove an eta-specific coercive sign or cancellation estimate for the exact " ++
-        "finite-prefix residual work identity, strong enough to rule out its off-line " ++
-        "behavior and force unit eta reflection multiplier norm at every nontrivial zero"))
+        "Use the sharp complementary centered-tail rates to prove off-line residual " ++
+        "dominance, then prove an eta-specific coercive sign or cancellation law for " ++
+        "the exact finite-prefix work identity strong enough to force critical-line zeros"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
