@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Finite same-layer eta modes have a collision-free prime base"
-    lineOne := "eta prime modes"
-    lineTwo := "collision-free layer"
+    label := "Finite eta decay modes have a nonsingular Vandermonde block"
+    lineOne := "eta decay modes"
+    lineTwo := "finite Vandermonde"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.exists_prime_etaGeometricNormalizedMode_injOn_zetaZeros_same_re
+      ``RiemannGaussian.exists_prime_det_etaGeometricDecayModeVandermonde_ne_zero
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "peel eta decay layers and extract finite separating cutoffs.</text>\n" ++
+      "transfer the limiting Vandermonde to literal eta prefixes.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -743,9 +743,11 @@ run_cmd do
         "finite eta prefix at every nontrivial zero has an explicit nonzero complex limit after " ++
         "normalization by the nth power of one fixed mode. A phase collision for two distinct " ++
         "frequencies is now proved possible at at most one prime base. Hence every finite injective " ++
-        "frequency family has an odd prime base with pairwise distinct normalized modes; this is " ++
-        "specialized to finite same-real-part zeta-zero layers. Peeling distinct real-decay layers " ++
-        "and finite-coordinate extraction have not yet been proved. " ++
+        "frequency family has an odd prime base with pairwise distinct normalized modes. The raw " ++
+        "inverse mode restores the real coordinate in its norm, so one odd prime now separates the " ++
+        "complete modes across any finite zeta-zero window. Their first window-cardinality coordinates " ++
+        "form a checked nonsingular Vandermonde matrix. Transferring that limiting block to literal " ++
+        "finite eta prefixes has not yet been proved. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -829,9 +831,11 @@ run_cmd do
         "literal lower-moment finite prefix at each zeta zero has a checked nonzero complex geometric " ++
         "limit. Lean now proves that collisions for any distinct frequency pair occur at at most one " ++
         "prime, and therefore selects one odd prime base with distinct normalized modes across any " ++
-        "finite injective frequency family. The theorem is specialized to every finite same-real-part " ++
-        "zeta-zero layer. Separating the different real-decay layers and extracting a finite " ++
-        "separating cutoff family remain open. " ++
+        "finite injective frequency family. The raw inverse decay mode retains the real coordinate " ++
+        "through its exact norm, allowing one odd prime to separate the entire finite zeta-zero " ++
+        "window without an explicit layer partition. The first window-cardinality mode coordinates " ++
+        "form a nonsingular Vandermonde matrix. The remaining step is to transfer that limiting " ++
+        "finite block to an eventual full-rank matrix of literal eta prefixes. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

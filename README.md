@@ -39,26 +39,27 @@ window.
 Lean currently proves a sharp abstract `13/18` degree-four certificate, but
 that number is not yet a zeta-zero proportion: the normalized moment model has
 not been derived from the literal eta window. The immediate route to close
-that gap is to turn geometric eta sampling, collision-free prime modes, and
-phase rigidity into a finite full-rank cutoff family. That richer family can
-then feed the checked signed-heat and rank--trace ledgers without prematurely
-discarding phase. A subsequent eta-specific arithmetic estimate must exclude
-the sharp finite obstruction before any stronger zero proportion is claimed.
+that gap is now to transfer the nonsingular finite Vandermonde block of the
+limiting geometric eta modes to an eventual evaluation block of the literal
+finite eta prefixes. That richer family can then feed the checked signed-heat
+and rank--trace ledgers without prematurely discarding phase. A subsequent
+eta-specific arithmetic estimate must exclude the sharp finite obstruction
+before any stronger zero proportion is claimed.
 
 ## Latest Update
 
-Lean now proves prime-base collision avoidance for the checked geometric eta
-modes. A collision between two distinct ordinates can occur at at most one
-prime base. Consequently, every finite injective frequency family admits an
-odd prime `q>1` at which all normalized unit phases are distinct. In
-particular, this holds for every finite set of nontrivial zeta zeros lying on
-one fixed real-coordinate layer.
+Lean now separates the raw geometric eta decay modes across an arbitrary
+finite zeta-zero window with one odd prime base. Different real parts are
+distinguished by the exact mode norm `q^(-Re s)`; any residual same-layer
+collision reduces to the checked prime-phase theorem. Thus no explicit
+real-layer partition is needed.
 
-Together with geometric eta sampling and finite geometric-phase rigidity,
-this closes mode separation within each real-decay layer while retaining the
-full complex phase. The next obligations are to peel the finitely many real
-layers and extract a finite cutoff family whose evaluation matrix remains
-injective. No stronger zeta-zero proportion is yet claimed.
+For a window of cardinality `d`, Lean also proves that the first `d`
+coordinates of these separated modes form a Vandermonde matrix with nonzero
+determinant. This is an exact finite full-rank block for the limiting geometric
+modes. The next step is to transfer its nonsingularity, using the checked
+sharp complex asymptotics, to an eventual matrix of literal finite eta
+prefixes. No stronger zeta-zero proportion is yet claimed.
 
 ## Mathematical Program
 

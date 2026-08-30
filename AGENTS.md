@@ -1055,12 +1055,16 @@ multiplicity-minus-one centered prefix inherits an explicit nonzero complex
 geometric asymptotic. Lean now proves that any two distinct frequencies can
 collide at at most one prime base. Thus every finite injective frequency family
 admits an odd prime base at which all normalized modes are distinct, with a
-specialization to every finite same-real-part zeta-zero layer. The next
-obligations are to peel the finitely many real-decay layers and extract
-finitely many cutoff coordinates retaining independence. If completed, that
-route would establish a 100% information ceiling for each finite eta zero
-window; an arithmetic estimate controlling the resulting exact observable
-would still be required for RH.
+specialization to every finite same-real-part zeta-zero layer. The raw inverse
+decay mode now restores the real coordinate as its exact norm. Lean proves that
+one odd prime separates these raw modes across an arbitrary finite zeta-zero
+window, and that their first window-cardinality coordinates form a
+nonsingular Vandermonde matrix. The next obligation is to transfer this finite
+limiting block through the sharp complex asymptotics to an eventual full-rank
+matrix of literal finite eta prefixes. If completed, that route would
+establish a 100% information ceiling for each finite eta zero window; an
+arithmetic estimate controlling the resulting exact observable would still be
+required for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is
