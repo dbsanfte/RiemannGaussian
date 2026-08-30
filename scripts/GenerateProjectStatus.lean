@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The finite eta energy increments are explicit head-plus-prefix works"
-    lineOne := "energy increments"
-    lineTwo := "head + prefixes"
-    role := "bridge"
+    label := "The finite eta energy work is absolutely summable"
+    lineOne := "energy work in ell^1"
+    lineTwo := "HasSum reconstructs E"
+    role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.abs_topPrefixFiniteEnergyWork_le_arithmetic_increment_energy_add_flux
+      ``RiemannGaussian.summable_abs_topPrefixFiniteEnergyWork
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove weighted coercivity for the head-plus-prefix eta energy flux.</text>\n" ++
+      "control E_N/S_N through its vanishing normalization.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -585,17 +585,24 @@ run_cmd do
         "moment vanishing replaces every tail by a finite prefix and cancels the top " ++
         "successor order. Thus both component increments, and hence the absolute " ++
         "energy-work bound, contain only one explicit head interval and strictly lower " ++
-        "finite centered prefixes.")),
+        "finite centered prefixes. The checked cutoff-shift limit now gives each such " ++
+        "term at least one extra endpoint power. Lean consequently proves absolute " ++
+        "summability of both completed component increments, their increment energies " ++
+        "and successor cross-flux products, and the signed energy work J_N. Every tail " ++
+        "has a genuine HasSum reconstruction of E_N and, after division by the fixed " ++
+        "total amplitude, of E_N/S_N. This is unconditional but does not prove RH: " ++
+        "the normalizing amplitude tends to zero, so the remaining theorem must control " ++
+        "that vanishing denominator.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove an eta-specific weighted summability or coercivity estimate for the " ++
-        "explicit head-plus-lower-prefix increment energies and their successor cross " ++
-        "fluxes, strong enough that the square of E_N/S_N is summable at every " ++
-        "nontrivial zero without assuming zero locations; Lean proves universal " ++
-        "summability is exactly RH"))
+        "Strengthen the unconditional absolute summability of finite energy work to an " ++
+        "eta-specific weighted coercivity or cancellation estimate that survives the " ++
+        "vanishing total amplitude S_N and makes the square of E_N/S_N summable at " ++
+        "every nontrivial zero without assuming zero locations; Lean proves that " ++
+        "universal normalized square-summability is exactly RH"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

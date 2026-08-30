@@ -705,6 +705,16 @@ increments are therefore explicit completion-weighted works containing one
 negative new support interval and only strictly lower-order successor
 prefixes. The checked absolute energy-work bound has been rewritten entirely
 in terms of these finite arithmetic increments and their successor fluxes.
+Lean now proves those two component-increment series absolutely summable at
+every nontrivial zero. The exact cutoff-shift asymptotic supplies the additional
+endpoint power for the head and every lower-prefix transport term. Consequently
+the increment energies, successor cross-flux products, and absolute signed
+energy work are summable, and every energy tail has a genuine `HasSum`
+reconstruction. This unconditional result is not the RH criterion: the total
+amplitude in the normalized defect tends to zero. The current frontier is a
+weighted coercivity or cancellation estimate that controls the quotient
+`E_N / S_N` strongly enough to make its square summable without assuming zero
+locations.
 
 ## Soundness invariant
 

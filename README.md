@@ -26,29 +26,23 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean has now eliminated the abstract consecutive differences from the finite
-eta energy transport. For any centered eta tail, Lean proves an exact cutoff
-recurrence: the value at `N` is one newly exposed support interval plus a
-finite binomial hierarchy of successor tails. Below a zeta zero's analytic
-multiplicity, complete-moment vanishing turns every such tail into the negative
-literal finite prefix and cancels the top successor order.
+Lean now proves that both explicit completion-weighted component increments
+are absolutely summable at every nontrivial zero, without assuming where the
+zero lies. The proof uses the exact head-plus-lower-prefix cutoff recurrence
+and the checked limit
+`(2N+1) * (log (2N+3) - log (2N+1)) -> 2`: every increment gains at least one
+full endpoint power, crossing the `p`-series threshold.
 
-Consequently each partner or conjugate increment is exactly a
-completion-weighted finite work consisting of one negative head interval and
-strictly lower-order successor prefixes. Substituting these identities into
-the previous conservation law gives a fully finite arithmetic bound for
+The two increment energies and successor cross-flux norm products are
+therefore summable. Hence the signed energy work `J_N = E_N-E_(N+1)` is
+absolutely summable, and every tail is a genuine Lean `HasSum` reconstruction
+of `E_N`; division by the fixed total amplitude similarly reconstructs the
+normalized defect `E_N/S_N`.
 
-`J_N = E_N-E_(N+1)`
-
-in terms of the two explicit arithmetic increment energies and their two
-cross-flux products against the successor finite terms. No infinite tail or
-unnamed cutoff difference remains in this local ledger.
-
-The open target is now local finite arithmetic: prove a weighted summability
-or coercivity estimate for these head-plus-lower-prefix energy and flux terms
-strong enough to make `Summable (fun N => (E_N/S_N)^2)` at every nontrivial
-zero. Lean proves the universal summability statement equivalent to RH; it
-does not prove the required estimate.
+This does not prove RH. Since `S_N -> 0`, unweighted summability of `J_N` is
+too weak to control the RH-equivalent sequence `(E_N/S_N)^2`. The open target
+is now a weighted eta-specific coercivity or cancellation theorem strong
+enough to survive that vanishing normalization.
 
 ## Mathematical Program
 
