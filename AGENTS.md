@@ -969,6 +969,15 @@ trace identity, zero criterion, and mass-balance ledger. This is not the
 infinite eta-support projection. The next work must evaluate the retained
 spectral-heat path entries arithmetically and measure their effect on the
 multi-scale certificate ceiling before any further collapse.
+The literal eta window now also carries every matrix-valued spectral heat
+moment `A^k exp(-uA^2)`. Lean proves the exact order/scale product law,
+even-order positivity, the derivative hierarchy `dH_k/du=-H_(k+2)`, and a
+positive-semidefinite Gram matrix for arbitrary finite families of orders and
+scales. Each Gram entry is simultaneously a combined higher moment and the
+trace product of the two separate flows. These are real added measurements,
+not yet arithmetic estimates. The next gate is to evaluate or bound them from
+the literal eta endpoint data, then solve the resulting certificate extremal
+problem without assuming the desired zero-location conclusion.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is

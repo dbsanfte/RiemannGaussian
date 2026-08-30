@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 433 modules · 11066 declarations · 9419 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 434 modules · 11094 declarations · 9440 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -71,9 +71,9 @@
   </g>
   <g class="proved bridge">
     <rect x="340" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.rtrace_pairedEtaTopPrefixFiniteZeroWindowCoordinateSpectralHeatFlow_sq_add_leakage</title>
-    <text x="412" y="173">eta heat paths</text>
-    <text x="412" y="191">transition Gram  ✓</text>
+    <title>RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindowSpectralHeatMomentGram_apply_eq_rtrace_mul</title>
+    <text x="412" y="173">eta heat moments</text>
+    <text x="412" y="191">multi-scale Gram  ✓</text>
   </g>
   <g class="proved bridge">
     <rect x="500" y="150" width="145" height="54" rx="9"/>
@@ -90,5 +90,5 @@
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: evaluate eta heat transition paths arithmetically.</text>
+  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: evaluate the eta multi-scale moments arithmetically.</text>
 </svg>

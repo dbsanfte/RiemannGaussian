@@ -26,21 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-The literal eta zero-window spectral heat now has a coordinate-resolved
-leakage calculus. Any decidable selection of packed `(cutoff, colour)`
-coordinates gives a proved Hermitian idempotent projection. Lean expands the
-ordered cross-scale leakage exactly as a finite path sum through the omitted
-coordinates, retaining both endpoint colours and both heat scales.
+The literal eta zero-window matrix now carries the complete higher and
+cross-scale spectral heat hierarchy `A^k*exp(-u*A²)`. Lean proves that products
+add both moment order and heat scale, every even-order flow is positive
+semidefinite, and differentiating an order-`k` heat trace gives the negative
+order-`k+2` trace.
 
-The same object is proved to be the transition Gram `T_uᴴ*T_v`; adjunction
-reverses the scale order, and equal-scale leakage is positive semidefinite.
-Its trace is exactly the transition Frobenius mass, while the compressed
-square plus this named mass equals the longer-time compressed heat trace.
-This closes the finite coordinate-compression interface without information
-loss. It is not yet the infinite logarithmic-time eta support projection and
-does not improve the proved zero proportion. The next task is to evaluate
-these retained eta heat paths arithmetically and feed them into a multi-scale
-certificate ceiling.
+Any finite family of orders and scales is retained simultaneously as a
+positive-semidefinite Gram matrix. Each entry is exactly both the combined
+moment `tr(A^(k_i+k_j) exp(-(u_i+u_j)A²))` and the trace product of the two
+separate matrix-valued flows. This supplies rigorously checked extra
+measurements beyond the original trace/Frobenius snapshot without charging
+away their cross-scale correlations. Their eta-arithmetic evaluation is not
+yet proved, so no improved zero proportion is claimed. The next task is to
+derive those values or bounds and compute the resulting formal certificate
+ceiling.
 
 ## Mathematical Program
 
