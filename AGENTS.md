@@ -519,9 +519,15 @@ multiplier `B(s)` for the literal positive eta Laplace partition. It proves
 explicit spectral--Gamma--eta factorization of `B`. Its squared norm is the
 complementary weight ratio, so the actual distortion coefficient vanishes
 exactly when `|B(rho)|^2 = 1`; the critical line implies this condition. The
-next valid slice must prove the converse horizontal rigidity for this explicit
-multiplier and derive unit norm at zeros from an independent arithmetic or
-phase constraint. Neither open direction may be inserted as an assumption.
+horizontal logarithmic derivative of `B` is now computed throughout the open
+strip. Lean cancels its apparent endpoint poles using the digamma recurrence
+and rewrites it as a symmetric shifted-digamma term plus two explicit dyadic
+resolvents. The same-ordinate log norm is antisymmetric about `1/2`, and its
+horizontal derivative is exactly the real part of this pole-free expression.
+The next valid slice must prove the required global integral sign or another
+converse horizontal-rigidity theorem for this explicit multiplier and derive
+unit norm at zeros from an independent arithmetic or phase constraint.
+Neither open direction may be inserted as an assumption.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

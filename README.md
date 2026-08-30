@@ -26,20 +26,17 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now exposes the exact nonvanishing reflection multiplier `B(s)` governing
-the literal positive-measure eta Laplace partition `P(s)`. Throughout the open
-critical strip, Lean proves the complex functional equation
-`P(1-s) = B(s) * P(s)`, the reciprocal and conjugation laws for `B`, and its
-explicit formula as the product of the spectral, completed-Gamma, and
-elementary eta-factor reflection ratios.
+Lean now computes the exact horizontal logarithmic derivative of the
+nonvanishing eta reflection multiplier `B(s)`. The apparent endpoint poles
+cancel by the digamma recurrence, leaving a symmetric shifted-digamma term
+and two explicit dyadic resolvents. Lean also proves that
+`log |B(sigma+i*y)|` is antisymmetric about `sigma = 1/2` and that its
+horizontal derivative is the real part of this pole-free expression.
 
-The squared norm of `B(s)` is exactly the ratio of the two complementary
-completion weights. Consequently, at every nontrivial zero, the previously
-proved actual multiplicity-scaled completion-distortion coefficient vanishes
-exactly when `|B(rho)|^2 = 1`; the critical line implies this unit-norm
-condition. This still does not prove RH. The two open directions are to force
-unit norm from the arithmetic localized Gram and to prove global horizontal
-rigidity for the explicit multiplier: `|B(s)|^2 = 1` only at `Re s = 1/2`.
+This is a rigorous reduction of multiplier rigidity, not a proof of it. The
+open analytic task is to control the integral sign of the explicit slope well
+enough to prove `|B(s)| = 1` only when `Re s = 1/2`. Independently, an
+arithmetic or phase theorem must still force unit norm at nontrivial zeros.
 
 ## Mathematical Program
 

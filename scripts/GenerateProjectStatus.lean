@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "force the reflection multiplier to unit norm, then prove horizontal rigidity.</text>\n" ++
+      "force unit norm at zeros and prove the explicit pole-free slope gives rigidity.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -392,8 +392,13 @@ run_cmd do
         "B, and its explicit spectral--Gamma--eta factorization. Its squared norm is " ++
         "exactly the complementary completion-weight ratio. Thus the actual first " ++
         "distortion coefficient vanishes exactly when |B(rho)|^2=1, and the critical " ++
-        "line implies this unit-norm equation. No independent arithmetic or phase " ++
-        "theorem forces unit norm, no checked theorem proves its converse horizontal " ++
+        "line implies this unit-norm equation. Lean now differentiates B throughout " ++
+        "the open strip and cancels the apparent endpoint poles by the digamma " ++
+        "recurrence. Its logarithmic derivative is a symmetric shifted-digamma term " ++
+        "plus two explicit dyadic resolvents. The same-ordinate log norm is exactly " ++
+        "antisymmetric about one half, and its horizontal derivative is the real part " ++
+        "of that pole-free expression. No independent arithmetic or phase theorem " ++
+        "forces unit norm, no checked sign theorem proves the required horizontal " ++
         "rigidity, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -403,7 +408,8 @@ run_cmd do
       ("target", .str (
         "Prove an independent arithmetic or phase constraint forcing the explicit " ++
         "eta Laplace reflection multiplier to have unit norm at every nontrivial zero, " ++
-        "and prove that its unit-norm equation forces real part one half; alternatively " ++
+        "and prove from its explicit pole-free horizontal log slope that the unit-norm " ++
+        "equation forces real part one half; alternatively " ++
         "force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),
