@@ -26,20 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now extends the finite signed spectral heat layer with an exact
-information-preserving projection calculus. For the Hermitian heat semigroup
-`H_u` and two Hermitian idempotents `P,C`, it retains the ordered cross-scale
-leakage instead of replacing it by a bound. Each leakage is proved to be a
-transition Gram `T_uᴴ*T_v`, so adjunction reverses the heat scales and every
-same-scale leakage is positive semidefinite.
+The continuous signed spectral heat transform is now attached to the literal
+multiplicity-weighted eta zero-window matrix, not merely to an abstract
+Hermitian matrix. Lean retains its complete matrix-valued heat semigroup and
+signed flow, proves the singularly weighted signed current genuinely
+integrable, and identifies its normalized integral exactly with positive
+minus negative inertia.
 
-For `K_u=P*H_u*P` and `M_u=C*K_u*C`, Lean proves the exact two-stage ledger
-`M_u*M_v = M_(u+v) - L_support(u,v) - L_compression(u,v)`. At equal scales,
-the two correction traces are exactly the squared Frobenius masses of their
-separate transition channels. This finite algebra does not yet instantiate
-the literal eta support operator or improve a zeta-zero proportion. The next
-step is to transport these scale- and channel-resolved leakage observables
-into the existing eta zero-window arithmetic.
+Together with the ordinary heat-trace limit, these observables reconstruct
+the eta matrix's positive inertia exactly. Lean also translates the existing
+eta inertia theorem into this continuous language: the signed-heat expression
+is bounded by `#critical + #upper` in the represented spectral window. This
+is a richer exact representation of the current certificate, not yet an
+improved zeta-zero proportion. Next, the checked cross-scale projection and
+two-stage leakage carriers will be instantiated around this literal eta heat
+flow and opened back into arithmetic data.
 
 ## Mathematical Program
 

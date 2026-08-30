@@ -955,8 +955,13 @@ that adjunction reverses scale order. A second projection retains two distinct
 loss channels: compressed first-projection leakage and finite-compression
 leakage. Their exact two-stage matrix and trace ledgers, same-scale positivity,
 and transition Frobenius identities are checked. The next hybrid interface
-must instantiate these carriers on the literal eta support/window arithmetic;
-only then should it seek unconditional control of the extra observables.
+now feeds the literal multiplicity-weighted eta zero-window matrix into the
+complete spectral heat and signed spectral heat flows. Lean proves the exact
+signature integral, nullity limit, positive-inertia reconstruction, and the
+continuous form of the existing `#critical + #upper` eta inertia bound. This
+does not yet improve the zero proportion. The next slice must wrap the checked
+cross-scale and two-stage leakage carriers around this literal eta heat flow,
+then open their transition Grams back into eta arithmetic before estimating.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is
