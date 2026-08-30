@@ -26,20 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves that every positive-time spectral heat moment of the literal
-eta zero-window matrix retains the complete parity-compatible matrix-power
-tower. In particular, the ordinary eta heat trace is exactly the convergent
-series
-`H₀(u)=Σₘ (-u)ᵐ/m! · rtr(A²ᵐ)`. The theorem has a genuine `HasSum`
-conclusion: convergence and the finite spectral interchange are checked, not
-hidden behind a totalized infinite sum.
+Lean now opens every coefficient of the positive-time eta heat series into
+ordered closed paths through the actual cutoff/colour coordinates. Each edge
+remains the literal complex multiplicity-weighted eta zero sum, so channel,
+phase, path order, cutoff, and zero multiplicity survive. The ordinary heat
+trace has a genuine convergent `HasSum` expansion over all even path lengths;
+no infinite interchange or totalized divergent sum is hidden.
 
-This gives the independent `H₀(u)<5/36` separator a concrete carrier for
-eta arithmetic without discarding coherent higher correlations. Only its
-first coefficients have so far been evaluated as literal eta endpoint sums;
-the next task is to expand or bound the higher matrix-power traces and derive
-a normalized heat crossing. No such crossing or new zeta-zero proportion is
-currently claimed.
+The length-two closed path is proved exactly equal to the existing endpoint
+diagonal plus signed distinct-zero correlation. Higher paths therefore extend,
+rather than replace, the checked arithmetic ledger and give the independent
+`H₀(u)<5/36` separator a phase-preserving eta carrier. Their required
+aggregate estimate and the normalized heat crossing remain open, so no new
+zeta-zero proportion is currently claimed.
 
 ## Mathematical Program
 

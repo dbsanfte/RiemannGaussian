@@ -394,6 +394,7 @@ import RiemannGaussian.Hybrid.EtaSignedHeatCoordinateLeakage
 import RiemannGaussian.Hybrid.EtaSpectralHeatMoments
 import RiemannGaussian.Hybrid.EtaSpectralHeatArithmeticBridge
 import RiemannGaussian.Hybrid.EtaSpectralHeatPowerSeries
+import RiemannGaussian.Hybrid.EtaSpectralHeatClosedPaths
 import RiemannGaussian.Hybrid.HigherMomentCeiling
 import RiemannGaussian.Hybrid.HigherMomentHeatCeiling
 import RiemannGaussian.Hybrid.HigherMomentIndependentHeat

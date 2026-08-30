@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Positive-time eta heat retains every even matrix-power trace"
+    label := "Eta heat retains every ordered even closed-path correlation"
     lineOne := "eta heat HasSum"
-    lineTwo := "all even powers"
+    lineTwo := "ordered closed paths"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindowSpectralHeatMomentTrace_zero_eq_tsum_even_rtrace_powers
+      ``RiemannGaussian.hasSum_pairedEtaTopPrefixFiniteZeroWindowSpectralHeatTrace_even_closedPaths
   }
 ]
 
@@ -725,9 +725,11 @@ run_cmd do
         "and squared Frobenius mass. On the literal eta window the order-two value, and hence the " ++
         "negative initial ordinary-heat slope, is exactly the evaluated endpoint diagonal plus " ++
         "signed off-diagonal arithmetic correlation. Every positive-time eta heat moment is now " ++
-        "also a genuinely convergent series of all parity-compatible matrix-power traces; in " ++
-        "particular, the ordinary heat trace retains the complete even tower. Powers above two " ++
-        "and genuinely mixed scales have not yet been evaluated from eta endpoint arithmetic. " ++
+        "also a genuinely convergent series of all parity-compatible matrix-power traces. Every " ++
+        "coefficient is now opened further as an ordered closed path through the literal eta " ++
+        "cutoff/colour coordinates, with each edge still a complex multiplicity-weighted zero " ++
+        "sum. The length-two path is exactly the existing endpoint arithmetic ledger. Higher " ++
+        "paths and genuinely mixed scales have not yet been estimated from eta arithmetic. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -798,8 +800,10 @@ run_cmd do
         "trace and endpoint-expanded coherent Frobenius ledgers; the order-two ledger is also the " ++
         "negative initial heat slope. The complete positive-time hierarchy is now a checked " ++
         "convergent series of parity-compatible matrix-power traces, so the ordinary eta heat " ++
-        "channel retains every even coherent power rather than collapsing at positive scale. " ++
-        "Only the first powers currently have literal endpoint evaluations. An abstract degree-four " ++
+        "channel retains every even coherent power rather than collapsing at positive scale. Each " ++
+        "power trace is now an exact ordered closed eta path sum; its edge factors retain cutoff, " ++
+        "colour, phase, zero multiplicity, and path order. The length-two path recovers the checked " ++
+        "endpoint ledger, while higher path estimates remain open. An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
         "the five-moment information class. The witness-weighted heat refinement is monotone and " ++
@@ -809,7 +813,7 @@ run_cmd do
         "the certificate is greater than 13/18, while the sharp model never crosses at finite scale. " ++
         "What is not yet proved is that eta arithmetic supplies the corresponding normalized model " ++
         "and crossing bound, another independent observable nonzero on the sharp root channels, the additional normalized " ++
-        "moments, an arithmetic estimate for the higher power-series coefficients or genuinely mixed " ++
+        "moments, a phase-preserving aggregate estimate for the higher closed-path coefficients or genuinely mixed " ++
         "heat scales, an estimate for the transition paths, or a cross-zero estimate " ++
         "strong enough to improve that triangle bound. The required signed " ++
         "finite-endpoint correlation estimate and the multiplicity-one head " ++

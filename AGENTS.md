@@ -1022,6 +1022,16 @@ spectral collapse, but only powers zero through two currently have explicit
 eta arithmetic evaluations. The next information-preserving step is to open
 the higher powers as literal closed eta paths and obtain a normalized crossing
 or obstruction from those signed correlations.
+That path expansion is now checked. For every finite matrix Lean recursively
+retains every ordered intermediate coordinate and proves the closed-path sum
+equal to the corresponding power trace. Each eta edge is then opened as the
+literal complex multiplicity-weighted zero-window sum of completed finite eta
+features. The ordinary eta heat trace is a genuine convergent series of all
+even closed path correlations, with cutoff, colour, phase, multiplicity, and
+path order intact. Its length-two coefficient is proved exactly equal to the
+existing endpoint diagonal plus signed off-diagonal arithmetic mass. Higher
+path estimates remain open; applying absolute values edgewise would discard
+the new information and is not an acceptable substitute.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is
