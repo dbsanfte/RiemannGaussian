@@ -26,18 +26,18 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves divisor-count rank bounds for the genuine finite eta
-zero-window matrices. Every multiplicity-weighted outer-product summand has
-rank at most one, so the full, critical-line, off-line real, and off-line
-imaginary blocks are bounded by the cardinalities of their literal indexing
-windows. Reflection also gives the exact checked count
-`#full = #critical + 2 * #upper` for every nonnegative symmetric window.
+Lean now proves the eta-window positive-index bound. A checked Hermitian
+spectral-subspace argument establishes `n₊(P - N) ≤ rank(P)` for positive
+semidefinite matrices. Applied to the genuine analytic-multiplicity-weighted
+decomposition `onLine + (offReal - offImag)`, it gives
+`n₊(full) ≤ #critical + #upper`; the off-line difference alone has
+positive index at most `#upper`.
 
-Together with the preceding Hermitian decomposition
-`onLine + (offReal - offImag)`, these results supply the concrete rank input
-for an eta-specific inertia argument. The positive-index bound and, more
-decisively, arithmetic trace/Frobenius estimates capable of controlling the
-open leading current remain unproved.
+This closes the finite zero-side rank/inertia layer proposed by the zeta23
+architecture for the actual eta matrix, not an abstract surrogate. The next
+frontier is to derive trace and Frobenius identities and then arithmetic
+estimates strong enough to control the open leading current. The current
+inertia theorem alone supplies no such estimate.
 
 ## Mathematical Program
 

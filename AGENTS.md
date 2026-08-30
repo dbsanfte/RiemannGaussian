@@ -802,9 +802,13 @@ rank layer is now also internal: each literal outer-product summand has rank
 at most one, giving separate bounds for the full, on-line, off-line real, and
 off-line imaginary blocks by their genuine zero-window cardinalities.
 Reflection proves the exact count `#full = #critical + 2 * #upper` on every
-nonnegative symmetric window. The next sharply separated obligation is the
-positive-index bound for the actual hyperbolic off-line block, followed by
-trace and Frobenius estimates derived from the eta arithmetic. An abstract
+nonnegative symmetric window. Lean now closes the corresponding inertia
+layer as well. A directly checked positive-spectral-subspace argument proves
+`n₊(P-N) ≤ rank(P)` for positive semidefinite `P,N`. Hence the actual
+off-line hyperbolic block has positive index at most `#upper`, and the complete
+eta window satisfies `n₊(full) ≤ #critical + #upper`. The next sharply
+separated obligation is to derive trace and Frobenius identities for these
+literal eta blocks and obtain estimates from the eta arithmetic. An abstract
 rank--trace inequality remains infrastructure, not the missing arithmetic
 estimate.
 
