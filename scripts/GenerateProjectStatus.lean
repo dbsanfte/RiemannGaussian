@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The higher-multiplicity leading eta current has an explicit four-factor kernel"
-    lineOne := "higher-mult eta"
-    lineTwo := "four-factor kernel"
+    label := "The signed finite eta energy has an exact hyperbolic pair-block realization"
+    lineOne := "finite eta energy"
+    lineTwo := "hyperbolic block"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.topPrefixFiniteEnergyAdjacentMomentKernel_eq_factored
+      ``RiemannGaussian.topPrefixFiniteEnergyDifference_eq_hyperbolicForm
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "control the cosine/crossover eta kernel arithmetically.</text>\n" ++
+      "derive arithmetic trace/Frobenius control for eta pair blocks.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -627,22 +627,27 @@ run_cmd do
         "an almost-everywhere negative odd centered monomial, one cosine phase, and one " ++
         "complementary horizontal-tilt bracket. The bracket vanishes identically on the " ++
         "critical line; off the line it has one explicit crossover and its sign is the " ++
-        "oriented distance from that point. The eta-specific integral estimate remains " ++
-        "open.")),
+        "oriented distance from that point. Lean now compresses the two completed finite " ++
+        "eta-prefix terms into a reflection-equivariant two-coordinate feature and " ++
+        "proves that their signed energy is its quadratic form against a fixed Hermitian " ++
+        "hyperbolic signature matrix. The transpose conjugate-pair block is exactly a " ++
+        "positive real rank-one block minus a positive imaginary rank-one block, while " ++
+        "the ordinary Hermitian Gram has a plus sign and is positive semidefinite. This " ++
+        "opens a finite-window rank/inertia route, but the eta-specific integral estimate " ++
+        "remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove universally, without assuming zero locations, that the critical first " ++
-        "absolute moment of the multiplicity-selected literal leading-current kernel " ++
-        "integrals is finite. Lean proves F_N=L_N+R_N, proves R_N summable from its " ++
-        "degree-two shift gain, and identifies L_N with either the head--successor " ++
-        "kernel or the adjacent-moment kernel. At higher multiplicity the latter is " ++
-        "exactly a positive scale times a negative centered monomial, a cosine, and a " ++
-        "single complementary-tilt crossover bracket. This summability criterion is " ++
-        "equivalent to RH. No eta-specific cosine/crossover cancellation or coercivity " ++
-        "estimate establishing it is currently known"))
+        "Aggregate the reflection-equivariant eta hyperbolic features over finite cutoff " ++
+        "and zero windows, then derive trace/Frobenius control from literal eta arithmetic " ++
+        "strong enough to prove the critical first absolute moment of the selected " ++
+        "leading-current kernels. Lean already proves F_N=L_N+R_N, the critical " ++
+        "summability of R_N, and the exact cosine/crossover factorization of the " ++
+        "higher-multiplicity L_N kernel. The required eta-specific aggregate estimate, " ++
+        "and the multiplicity-one head estimate, remain unproved; the resulting first-" ++
+        "moment criterion is equivalent to RH"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

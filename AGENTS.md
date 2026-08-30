@@ -775,6 +775,21 @@ product support lies in the proved window `(0, 2*a_(N+2))`. Consequently the
 remaining higher-multiplicity cancellation can only come from the cosine and
 this single horizontal crossover. Controlling their integral arithmetically,
 without importing zero-location information, remains open.
+Lean now also places the two completed finite-prefix terms in an exact
+two-dimensional hyperbolic coordinate system. After the existing parity is
+aligned, partner reflection swaps the two terms through conjugation; the even
+coordinate is conjugation-even and `I` times the odd coordinate is likewise
+sent to its componentwise conjugate. The signed finite eta energy is exactly
+the Hermitian quadratic form of this feature against one fixed `2 x 2`
+signature matrix. The corresponding complex-symmetric conjugate-pair block is
+proved to be a positive rank-one real block minus a positive rank-one
+imaginary block. Lean separately proves that the ordinary Hermitian Gram pair
+has a plus sign and is positive semidefinite, preventing those two
+constructions from being conflated. This is the eta-specific seam for the
+finite-window rank/inertia strategy suggested by the zeta23 architecture.
+The next legitimate step is to aggregate these features over finite cutoff and
+zero windows and derive trace/Frobenius information from the literal eta
+arithmetic; abstract rank bounds alone do not control the open current.
 
 ## Soundness invariant
 

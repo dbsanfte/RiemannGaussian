@@ -26,18 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean has expanded the higher-multiplicity part of the isolated leading eta
-current into four explicit real factors: a positive cutoff-shift scale, an
-almost-everywhere negative odd centered monomial, one cosine phase, and one
-complementary horizontal-tilt bracket. The resulting kernel is integrable and
-its integral is exactly the previously isolated leading flux.
+Lean now compresses the two completed finite eta-prefix terms into an explicit
+two-coordinate hyperbolic feature. Critical-line reflection sends this feature
+to its componentwise complex conjugate, and its quadratic form against one
+fixed Hermitian `2 x 2` signature matrix is exactly the existing signed finite
+eta energy.
 
-On the critical line the horizontal bracket vanishes pointwise. Away from the
-line, Lean proves it has exactly one explicit crossover and determines its
-sign from the oriented distance to that crossover; the two-time support lies
-in a proved finite open window. The open mathematics is now a cancellation or
-coercivity estimate for this cosine/crossover kernel, together with the
-multiplicity-one head branch. No such estimate has yet been proved.
+The conjugate-pair sign convention is also checked in Lean: the transpose
+block is a positive rank-one real part minus a positive rank-one imaginary
+part, whereas the ordinary Hermitian Gram is their positive sum. This supplies
+a rigorous eta-specific interface for finite-window rank/inertia compression.
+No trace, Frobenius, or arithmetic estimate strong enough to control those
+blocks has yet been proved; the cosine/crossover leading-current estimate and
+the multiplicity-one branch remain open.
 
 ## Mathematical Program
 
