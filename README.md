@@ -26,25 +26,26 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the sharp complex asymptotic of the exact finite residual work.
+Lean now isolates the critical decay rate of the exact finite residual work.
 For a hypothetical right-half off-line zero `rho`, write
 `rho# = 1-conjugate(rho)`, let `R_N` be its completed centered eta residual,
-and set `W_N = R_N-R_(N+1)`. Then Lean proves
+and set `W_N = R_N-R_(N+1)`. From the sharp complex limit
 
 `(2N+1)^(rho#+1) * W_N -> 2*rho#*L(rho) != 0`,
 
-where `L(rho)` is the previously identified nonzero complex residual constant.
-The proof does not differentiate a bare asymptotic equivalence. It uses the
-exact triangular cutoff-transport law: the new head interval vanishes at this
-scale, every transported order below `m-1` vanishes, and the sole surviving
-order `m-1` produces the displayed constant. Lean also proves the corresponding
-scaled-norm limit and eventual nonvanishing of the literal finite work.
+Lean now proves the stronger critical-scale obstruction
+
+`(2N+1)^(3/2) * ||W_N|| -> +infinity`.
+
+It follows, with reflection handling the opposite half-strip, that a universal
+eventual `O((2N+1)^(-3/2))` bound for this literal finite head-plus-prefix work
+would force every nontrivial zero onto the critical line and therefore prove
+Mathlib's `RiemannHypothesis`.
 
 This is not RH. It rigorously identifies the phase-bearing obstruction that an
-unconditional arithmetic cancellation theorem must now defeat. A bound forcing
-this normalized signed work to vanish for every nontrivial zero, or strong
-enough critical square-root control of its telescoped tail, would exclude every
-off-line pair. No such arithmetic estimate is currently proved.
+unconditional arithmetic cancellation theorem must now defeat. The new
+`3/2`-scale bound is a concrete finite-arithmetic target, but no theorem yet
+derives it without assuming information equivalent to zero locations.
 
 ## Mathematical Program
 

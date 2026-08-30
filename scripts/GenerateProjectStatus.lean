@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "An off-line finite eta work has a nonzero sharp complex limit"
+    label := "Off-line finite eta work diverges at the critical 3/2 scale"
     lineOne := "off-line eta work"
-    lineTwo := "nonzero sharp limit"
+    lineTwo := "3/2 scale diverges"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.tendsto_oddEndpoint_partner_add_one_cpow_mul_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWork
+      ``RiemannGaussian.tendsto_oddEndpoint_threeHalves_rpow_mul_norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWork_atTop_of_half_lt_re
   }
 ]
 
@@ -507,16 +507,21 @@ run_cmd do
         "work asymptotic. At a hypothetical right-half zero, (2N+1)^(rho#+1)W_N " ++
         "tends to 2*rho# times the nonzero complex residual constant. The head and " ++
         "every transported order below m-1 vanish; the unique m-1 term survives. " ++
-        "Thus the signed phase-bearing obstruction is explicit, while an " ++
-        "unconditional arithmetic cancellation contradicting it remains open.")),
+        "At the universal critical work scale this has a stronger consequence: " ++
+        "for every right-half off-line zero, (2N+1)^(3/2)|W_N| tends to positive " ++
+        "infinity. Reflection covers the opposite half-strip. Therefore an " ++
+        "eventual O((2N+1)^(-3/2)) bound for the literal finite head-plus-prefix " ++
+        "work at every nontrivial zero forces RH. That finite-arithmetic bound is " ++
+        "not proved; deriving it unconditionally is now the precise cancellation " ++
+        "frontier.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove an unconditional arithmetic cancellation theorem incompatible with " ++
-        "the nonzero off-line finite-work limit, and derive the critical square-root " ++
-        "residual bound without assuming zero locations"))
+        "Prove the universal eventual O((2N+1)^(-3/2)) bound for the literal finite " ++
+        "head-plus-prefix eta work, or an equally strong signed cancellation theorem, " ++
+        "without assuming zero locations"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
