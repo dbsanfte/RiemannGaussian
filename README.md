@@ -26,19 +26,18 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean splits the successor flux exactly as `F_N = L_N + R_N` and proves
-unconditionally that `sum_N (2N+1) * |R_N|` is finite. It now also expands the
-entire remaining current `L_N` into literal product-measure kernels without
-assuming zero simplicity.
+Lean has expanded the higher-multiplicity part of the isolated leading eta
+current into four explicit real factors: a positive cutoff-shift scale, an
+almost-everywhere negative odd centered monomial, one cosine phase, and one
+complementary horizontal-tilt bracket. The resulting kernel is integrable and
+its integral is exactly the previously isolated leading flux.
 
-At multiplicity one the kernel couples the translated new eta support interval
-to the successor finite prefix. At every higher multiplicity it couples the
-immediately lower centered moment to the top moment on two copies of the same
-finite positive eta measure, with the unique degree-one cutoff shift. Lean
-proves both kernels integrable and their multiplicity-selected integral equal
-to `L_N`. Its critical first moment is summable exactly on the critical line,
-and universally exactly under RH. The open problem is now an eta-specific
-cancellation or coercivity estimate for these two explicit kernel branches.
+On the critical line the horizontal bracket vanishes pointwise. Away from the
+line, Lean proves it has exactly one explicit crossover and determines its
+sign from the oriented distance to that crossover; the two-time support lies
+in a proved finite open window. The open mathematics is now a cancellation or
+coercivity estimate for this cosine/crossover kernel, together with the
+multiplicity-one head branch. No such estimate has yet been proved.
 
 ## Mathematical Program
 

@@ -765,7 +765,16 @@ The multiplicity-selected integral equals `L_N` for every zero and cutoff;
 its first-moment summability is locally equivalent to the critical line and
 universally equivalent to RH. The live arithmetic task is therefore to
 control these explicit boundary-head and adjacent-moment kernels, not a hidden
-abstract increment.
+abstract increment. Lean now factors the higher-multiplicity adjacent kernel
+pointwise into a strictly positive cutoff scale, an almost-everywhere strictly
+negative odd centered monomial, one cosine phase, and one complementary
+horizontal-tilt bracket. The bracket is identically zero on the critical line;
+off the line it has one explicit crossover, with its sign completely fixed by
+the oriented distance from that point. The sum coordinate of the finite
+product support lies in the proved window `(0, 2*a_(N+2))`. Consequently the
+remaining higher-multiplicity cancellation can only come from the cosine and
+this single horizontal crossover. Controlling their integral arithmetically,
+without importing zero-location information, remains open.
 
 ## Soundness invariant
 

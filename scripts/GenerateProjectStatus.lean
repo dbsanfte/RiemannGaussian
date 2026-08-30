@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The first moment of the literal leading-current eta kernels detects the critical line"
-    lineOne := "leading eta kernels"
-    lineTwo := "summable iff line"
-    role := "reduction"
+    label := "The higher-multiplicity leading eta current has an explicit four-factor kernel"
+    lineOne := "higher-mult eta"
+    lineTwo := "four-factor kernel"
+    role := "bridge"
     theoremName :=
-      ``RiemannGaussian.summable_oddEndpoint_mul_abs_topPrefixFiniteEnergyLeadingKernelIntegral_iff_re_eq_half
+      ``RiemannGaussian.topPrefixFiniteEnergyAdjacentMomentKernel_eq_factored
   }
 ]
 
@@ -210,8 +210,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-  "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "control the eta flux-kernel integrals arithmetically.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
+      "control the cosine/crossover eta kernel arithmetically.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -622,8 +622,13 @@ run_cmd do
         "to the successor prefix. At higher multiplicity it is a product integral " ++
         "coupling the adjacent centered orders m-2 and m-1 on the successor finite " ++
         "eta measure, with the one remaining shift factor. Both kernels are genuinely " ++
-        "integrable and a multiplicity-selected integral equals L_N exactly. The " ++
-        "eta-specific estimate for these explicit kernels remains open.")),
+        "integrable and a multiplicity-selected integral equals L_N exactly. Lean now " ++
+        "factors the higher-multiplicity kernel pointwise into a positive shift scale, " ++
+        "an almost-everywhere negative odd centered monomial, one cosine phase, and one " ++
+        "complementary horizontal-tilt bracket. The bracket vanishes identically on the " ++
+        "critical line; off the line it has one explicit crossover and its sign is the " ++
+        "oriented distance from that point. The eta-specific integral estimate remains " ++
+        "open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -633,9 +638,11 @@ run_cmd do
         "absolute moment of the multiplicity-selected literal leading-current kernel " ++
         "integrals is finite. Lean proves F_N=L_N+R_N, proves R_N summable from its " ++
         "degree-two shift gain, and identifies L_N with either the head--successor " ++
-        "kernel or the adjacent-moment kernel. This summability criterion is equivalent " ++
-        "to RH. No eta-specific phase cancellation or coercivity estimate establishing " ++
-        "it is currently known"))
+        "kernel or the adjacent-moment kernel. At higher multiplicity the latter is " ++
+        "exactly a positive scale times a negative centered monomial, a cosine, and a " ++
+        "single complementary-tilt crossover bracket. This summability criterion is " ++
+        "equivalent to RH. No eta-specific cosine/crossover cancellation or coercivity " ++
+        "estimate establishing it is currently known"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
