@@ -724,7 +724,15 @@ every off-line zero. Hence the weighted work series is summable exactly on the
 critical line, and its universal summability is equivalent to RH. Treat this
 as a reduction: the live arithmetic task is to prove the first-moment bound
 without assuming zero locations, not to cite the equivalence as progress on
-that open direction.
+that open direction. Lean now discharges the local increment-energy portion
+of that task. The literal extra cutoff-shift power proves both component
+increments have summable `(2N+1)`-weighted squared norms, hence their signed
+increment energy has a finite first absolute moment unconditionally. Since
+`J_N` is exactly that increment energy plus the successor cross flux `F_N`,
+the weighted flux series is summable exactly when the weighted work series is.
+Thus the remaining RH-equivalent arithmetic target is specifically
+`sum_N (2N+1) * |F_N| < infinity`: an eta-specific cancellation or coercivity
+estimate for the successor coupling. No theorem proves that open estimate.
 
 ## Soundness invariant
 

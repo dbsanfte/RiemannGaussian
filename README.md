@@ -26,23 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now identifies the exact first-moment threshold for the explicit finite
-eta energy work `J_N = E_N-E_(N+1)`. A general checked tail theorem shows that
+Lean now splits the explicit finite eta energy work exactly as `J_N=I_N+F_N`,
+where `I_N` is the signed energy of the two component increments and `F_N` is
+their cross flux against the successor finite terms. Using the literal
+head-plus-lower-prefix increment formula and its extra cutoff-shift power,
+Lean proves unconditionally at every nontrivial zero that both series
+`sum_N (2*N+1)*normSq(increment_N)` converge. Consequently
+`sum_N (2*N+1)*|I_N|` converges as well.
 
-`Summable (fun N => (2*N+1) * |J_N|)`
-
-forces `(2*N+1) * |E_N| -> 0`. Conversely, the existing sharp complementary
-tail asymptotics make the endpoint-scaled amplitude imbalance diverge at every
-off-critical zero, and Lean proves that imbalance is pointwise at most
-`|E_N|`. Therefore the weighted work series is summable at a nontrivial zero
-exactly when its real part is `1/2`.
-
-Universal first-moment summability of this literal finite arithmetic work is
-now proved equivalent to Mathlib's RH, and also equivalent to the existing
-normalized-energy square-summability criterion. This is a sharper reduction,
-not an RH proof: the open arithmetic theorem is to establish that weighted
-summability universally without using zero locations. The unweighted series
-is already proved absolutely summable and is too weak.
+The entire critical first-moment obstruction is therefore isolated in the
+successor flux: `sum_N (2*N+1)*|F_N|` converges exactly when the corresponding
+work series converges, hence exactly when the zero has real part `1/2`.
+Universal flux first-moment summability is proved equivalent to Mathlib's RH.
+This remains a reduction, not an RH proof; the open arithmetic theorem is now
+a cancellation or coercivity estimate for the explicit successor flux, with
+the local increment-energy contribution already discharged.
 
 ## Mathematical Program
 

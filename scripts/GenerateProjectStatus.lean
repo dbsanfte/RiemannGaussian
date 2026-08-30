@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The first moment of finite eta energy work detects the critical line"
-    lineOne := "weighted energy work"
+    label := "The first moment of finite eta successor flux detects the critical line"
+    lineOne := "weighted eta flux"
     lineTwo := "summable iff line"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.summable_oddEndpoint_mul_abs_topPrefixFiniteEnergyWork_iff_re_eq_half
+      ``RiemannGaussian.summable_oddEndpoint_mul_abs_topPrefixFiniteEnergyFlux_iff_re_eq_half
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove the eta energy-work first moment arithmetically.</text>\n" ++
+      "prove the eta successor-flux first moment arithmetically.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -597,18 +597,24 @@ run_cmd do
         "imbalance is pointwise at most |E_N| and its checked endpoint scaling diverges " ++
         "at every off-critical zero. Consequently the first-moment work series is " ++
         "summable exactly on the critical line, and universal summability is equivalent " ++
-        "to RH and to normalized-energy square-summability. This is a reduction; its " ++
-        "universal arithmetic premise remains open.")),
+        "to RH and to normalized-energy square-summability. Lean now uses the explicit " ++
+        "extra cutoff-shift power once more after squaring: both component increments " ++
+        "have summable odd-endpoint-weighted norm squares, so the signed increment " ++
+        "energy I_N has an unconditional finite first moment. Since J_N=I_N+F_N, the " ++
+        "successor cross flux F_N has a finite first moment exactly when J_N does. Thus " ++
+        "the entire remaining critical first-moment obstruction is isolated in the " ++
+        "flux. This is a reduction; its universal arithmetic premise remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove universally, from the explicit eta head-plus-prefix increment formula " ++
-        "and without assuming zero locations, that the first moment " ++
-        "sum_N (2N+1)|J_N| is finite; Lean proves this statement equivalent to RH and " ++
-        "to universal normalized-energy square-summability, while the corresponding " ++
-        "unweighted absolute summability is already unconditional"))
+        "Prove universally, from the explicit eta successor coupling and without " ++
+        "assuming zero locations, that the first moment sum_N (2N+1)|F_N| of the " ++
+        "cross flux is finite. Lean proves the weighted component-increment energy is " ++
+        "already summable unconditionally and proves this remaining flux statement " ++
+        "equivalent to RH; no cancellation or coercivity estimate establishing it is " ++
+        "currently known"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
