@@ -534,12 +534,19 @@ equation. Lean now also computes the exact squared norm of `B(1+it)` on the
 outer boundary. Away from `t=0` and the explicit dyadic resonances, it proves
 that norm strictly greater than one for every positive or negative ordinate.
 The low-height proof uses exact Taylor and hyperbolic inequalities plus a
-rational polynomial certificate; the high-height proof is elementary. This
-closes the missing outer-boundary sign but does not propagate it through the
-low-ordinate open strip. The remaining work must derive unit norm at zeros
-from an independent arithmetic or phase constraint and must either carry the
-boundary sign through the low strip with every divisor term retained or prove
-a checked zero-free result there. Neither open input may be assumed.
+rational polynomial certificate; the high-height proof is elementary. Lean
+then constructs a holomorphic reciprocal extension `F` with `F=1/B` in the
+open strip. The eta zeros fill every dyadic outer-boundary singularity, and
+Lean proves `|F(1+it)|<1` for every real `t`. The high-ordinate multiplier
+estimate controls the horizontal sides of the low-height rectangle. A checked
+maximum-modulus argument, with strictness forced by `F(1)=0`, proves throughout
+the entire open strip that `|B(s)|<1`, `=1`, or `>1` exactly as `Re s<1/2`,
+`=1/2`, or `>1/2`. Thus the low-ordinate rigidity gap is closed. At every
+nontrivial zero, vanishing of the actual first localized distortion
+coefficient is now equivalent to the critical-line equation without a height
+hypothesis. The remaining work must derive that vanishing, or equivalently
+unit norm at zeros, from an independent arithmetic or phase constraint. That
+open input may not be assumed.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

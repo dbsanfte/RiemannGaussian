@@ -26,20 +26,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now evaluates the eta reflection multiplier `B(s)` exactly on the outer
-boundary `s = 1 + it`. Away from `t = 0` and the explicit dyadic resonances
-`cos(t log 2) = 1`, it proves
+Lean now proves height-free horizontal rigidity for the eta reflection
+multiplier `B(s)` throughout the complete open critical strip:
 
-`|B(1+it)|² = ((1+t²)/(2*pi*t)) tanh(pi*t/2)
-              ((5-4*cos(t*log 2))/(2-2*cos(t*log 2))) > 1`.
+`|B(s)| < 1`, `= 1`, or `> 1` according as
+`Re s < 1/2`, `= 1/2`, or `> 1/2`.
 
-The strict inequality holds at every positive or negative nonzero ordinate,
-not just at large height. Its Lean proof combines exact Gamma and eta-factor
-norm identities with checked Taylor and hyperbolic inequalities and an exact
-rational polynomial certificate. This supplies the missing outer-boundary
-sign for a future divisor-aware maximum-principle argument. It does not yet
-propagate that sign into the low-ordinate open strip or force unit norm at zeta
-zeros, so it does not prove RH.
+The proof constructs an explicit holomorphic extension of `1/B(s)` across
+`Re s = 1`. Its eta zeros fill the dyadic boundary singularities, and its norm
+is strictly below one on that whole boundary. The high-ordinate estimate
+controls the remaining horizontal sides; the maximum-modulus principle and
+the extension's zero at `s=1` give strict contraction throughout the compact
+low-height rectangle.
+
+Consequently, at every nontrivial zeta zero, Lean proves that vanishing of the
+actual first localized completion-distortion coefficient is equivalent to the
+critical-line equation, with no height hypothesis. This does not prove that
+the coefficient vanishes. The remaining conjecture-strength step is an
+independent arithmetic or phase argument forcing that vanishing, equivalently
+forcing `|B(rho)|=1` at every zero.
 
 ## Mathematical Program
 

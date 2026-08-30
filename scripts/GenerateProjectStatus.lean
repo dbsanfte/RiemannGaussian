@@ -77,20 +77,20 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
   },
   {
-    label := "At absolute ordinate at least eight, eta multiplier unit norm is equivalent to the critical line"
-    lineOne := "high-ordinate eta"
+    label := "The holomorphic reciprocal eta multiplier extension contracts the complete outer boundary"
+    lineOne := "reciprocal extension"
+    lineTwo := "outer norm < 1"
+    role := "unconditional"
+    theoremName :=
+      ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
+  },
+  {
+    label := "Throughout the open critical strip, eta multiplier unit norm is equivalent to the critical line"
+    lineOne := "all-height eta"
     lineTwo := "unit norm iff line"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.normSq_pairedEtaLaplaceReflectionMultiplier_eq_one_iff_re_eq_half_of_eight_le_abs
-  },
-  {
-    label := "At every nonsingular nonzero point of Re s = 1, the eta multiplier squared norm exceeds one"
-    lineOne := "outer eta boundary"
-    lineTwo := "norm² > 1"
-    role := "unconditional"
-    theoremName :=
-      ``RiemannGaussian.normSq_pairedEtaLaplaceReflectionMultiplier_one_add_mul_I_gt_one
+      ``RiemannGaussian.normSq_pairedEtaLaplaceReflectionMultiplier_eq_one_iff_re_eq_half
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "force unit norm at zeros; propagate boundary sign through the low strip.</text>\n" ++
+      "force eta multiplier unit norm at zeros by independent arithmetic.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -401,12 +401,16 @@ run_cmd do
         "checked Euler-constant bound, and two disk-resolvent estimates now prove the " ++
         "slope strictly positive across the whole open strip whenever |Im(s)|>=8. " ++
         "Thus the multiplier log norm is strictly increasing and its unit-norm equation " ++
-        "is equivalent to Re(s)=1/2 throughout that high-ordinate region. Lean now also " ++
+        "is equivalent to Re(s)=1/2 throughout that high-ordinate region. Lean also " ++
         "evaluates the multiplier norm exactly on Re(s)=1 and proves its square strictly " ++
         "greater than one at every nonzero ordinate away from the explicit dyadic " ++
-        "resonances. This supplies rigorous outer-boundary sign data, but does not " ++
-        "propagate it through the low-ordinate open strip. No independent arithmetic or " ++
-        "phase theorem forces unit norm at zeros; no current theorem implies RH.")),
+        "resonances. A holomorphic reciprocal extension turns those resonances into zeros " ++
+        "and has norm strictly below one on the complete outer boundary. Combining this " ++
+        "with the high-ordinate result and the maximum-modulus principle closes the compact " ++
+        "low-height rectangle. Thus throughout the entire open critical strip the " ++
+        "multiplier norm is below one left of Re(s)=1/2, equal to one exactly there, and " ++
+        "above one to its right. No independent arithmetic or phase theorem forces unit " ++
+        "norm at zeros; no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -414,10 +418,8 @@ run_cmd do
       ("target", .str (
         "Prove an independent arithmetic or phase constraint forcing the explicit " ++
         "eta Laplace reflection multiplier to have unit norm at every nontrivial zero; " ++
-        "propagate the proved nonsingular outer-boundary strict norm inequality through " ++
-        "the low-ordinate open strip with all divisor terms retained, or prove that the " ++
-        "low region is zero-free; alternatively " ++
-        "force the exact " ++
+        "equivalently, prove that the exact first localized completion-distortion " ++
+        "coefficient vanishes at every zero; alternatively force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
