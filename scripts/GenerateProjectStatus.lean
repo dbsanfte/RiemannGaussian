@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The square-root prefix is one shifted positive-measure interference integral"
-    lineOne := "top eta prefix ="
-    lineTwo := "one interference integral"
-    role := "bridge"
+    label := "The square-root prefix bound is equivalent to one endpoint-scaled Hermitian Gram bound"
+    lineOne := "sqrt eta prefix iff"
+    lineTwo := "endpoint Gram bound"
+    role := "reduction"
     theoremName :=
-      ``RiemannGaussian.norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopPrefix_eq_integral_halfIntegrand
+      ``RiemannGaussian.pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopPrefix_criticalScale_eventuallyBounded_iff_gram
   }
 ]
 
@@ -529,15 +529,24 @@ run_cmd do
         "completion coefficients, cutoff phase, and ordinate oscillation. The direct " ++
         "positive-measure triangle envelope is also proved, but it discards the " ++
         "required phase cancellation. The half-power arithmetic cancellation estimate " ++
-        "is not proved; it remains the isolated frontier.")),
+        "is not proved. Lean now squares the one-measure representation without " ++
+        "losing phase. The top-prefix norm square is exactly the product-measure " ++
+        "integral of a symmetric Hermitian kernel. Its integral is nonnegative even " ++
+        "though the kernel can change sign. The phase-free absolute product kernel " ++
+        "dominates it, and their integral difference is a proved nonnegative phase-" ++
+        "cancellation defect satisfying the exact ledger |C|^2+defect=(integral " ++
+        "|f|)^2. Endpoint-scaled Hermitian Gram boundedness is exactly equivalent, " ++
+        "locally and globally, to the square-root prefix bound. Estimating this signed " ++
+        "Gram mass without zero-location assumptions remains the isolated frontier.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove the universal eventual square-root bound " ++
-        "(2N+1)^(1/2)*|C_(m-1,N+1)|=O(1) for the single literal completed " ++
-        "phase-retaining eta prefix, without assuming zero locations"))
+        "Prove the universal eventual endpoint-scaled Hermitian Gram bound " ++
+        "(2N+1)*integral integral Re(f_N(u)*conj(f_N(v)))=O(1), equivalently " ++
+        "the square-root bound for the completed top eta prefix, without assuming " ++
+        "zero locations"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

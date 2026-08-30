@@ -26,24 +26,27 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now identifies the isolated top prefix `C_(m-1,N+1)` with one integral
-over the positive shifted eta-tail measure. Lower-moment vanishing first turns
-the literal finite prefix into a complementary tail coupling; after extracting
-the common critical half-tilt, Lean proves
+Lean has squared the one-measure representation of the isolated top prefix
+without discarding its phase. If `f_(rho,N)` is the previously verified
+critical-half interference integrand and `mu_N` the shifted positive eta-tail
+measure, Lean proves the exact Gram identity
 
-`||C_(m-1,N+1)|| = ||integral u^(m-1) exp(-u/2) F_(rho,N+1)(u) dmu_(N+1)(u)||`.
+`||C_(m-1,N+1)||^2 = integral integral Re(f(u) * conj(f(v))) dmu_N(u)dmu_N(v)`.
 
-The explicit complex factor `F` retains both reciprocal horizontal tilts,
-completion coefficients, cutoff phase, and ordinate oscillation. Lean also
-proves integrability and the direct positive-measure triangle bound. That
-bound discards the interference phase and does not yield the needed saving.
+The Hermitian kernel is symmetric and its complete integral is nonnegative,
+although the kernel need not be pointwise positive. The phase-free product
+kernel `||f(u)|| ||f(v)||` is integrable and dominates it. Lean defines their
+integral difference `D_N`, proves `D_N >= 0`, and verifies the exact ledger
 
-This is not RH. The open arithmetic theorem remains
-`(2N+1)^(1/2)||C_(m-1,N+1)|| = O(1)` uniformly at nontrivial zeros; the new
-identity places that theorem on one concrete phase-sensitive integral rather
-than an opaque finite coupling. Proving its cancellation without assuming
-zero locations would imply Mathlib's `RiemannHypothesis` through the already
-checked finite-work reduction.
+`||C_(m-1,N+1)||^2 + D_N = (integral ||f(u)|| dmu_N(u))^2`.
+
+Finally, Lean proves that eventual boundedness of the endpoint-scaled
+Hermitian Gram mass is exactly equivalent to the existing square-root prefix
+frontier, locally and globally. This is not RH: the open arithmetic theorem is
+now the cancellation-preserving estimate
+`(2N+1) * integral integral Re(f(u) * conj(f(v))) = O(1)` at every nontrivial
+zero. Proving it without zero-location assumptions would imply Mathlib's
+`RiemannHypothesis` through the checked equivalence.
 
 ## Mathematical Program
 
