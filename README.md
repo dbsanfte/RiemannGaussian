@@ -26,22 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the actual first multiplicity-sensitive asymptotic hidden
-behind the vanishing large-proper-time limit. At a nontrivial zero `rho` of
-exact multiplicity `m`, a sharp global exponential Taylor bound supplies an
-integrable product-measure majorant, and dominated convergence gives
-`tau^m * G_rho(tau) / sqrt(pi / tau) ->
-choose(2m,m) * |M_m(rho)|^2 / (4^m * m!)`. The limit is explicit and strictly
-positive; every lower Taylor moment is proved to vanish rather than discarded.
+Lean now exposes the exact nonvanishing reflection multiplier `B(s)` governing
+the literal positive-measure eta Laplace partition `P(s)`. Throughout the open
+critical strip, Lean proves the complex functional equation
+`P(1-s) = B(s) * P(s)`, the reciprocal and conjugation laws for `B`, and its
+explicit formula as the product of the spectral, completed-Gamma, and
+elementary eta-factor reflection ratios.
 
-The corresponding completion-distortion limit is the difference of the two
-positive coefficients at `rho` and its functional-equation partner. Lean
-proves that this difference vanishes exactly when their explicit completion
-weights are equal. This still does not prove RH: completion balance alone is
-compatible with an off-critical pair. The open frontier is an independent
-arithmetic or phase-rigidity theorem forcing the required coefficient balance,
-followed by a checked analysis of whether that weight equality forces
-`Re rho = 1/2`.
+The squared norm of `B(s)` is exactly the ratio of the two complementary
+completion weights. Consequently, at every nontrivial zero, the previously
+proved actual multiplicity-scaled completion-distortion coefficient vanishes
+exactly when `|B(rho)|^2 = 1`; the critical line implies this unit-norm
+condition. This still does not prove RH. The two open directions are to force
+unit norm from the arithmetic localized Gram and to prove global horizontal
+rigidity for the explicit multiplier: `|B(s)|^2 = 1` only at `Re s = 1/2`.
 
 ## Mathematical Program
 

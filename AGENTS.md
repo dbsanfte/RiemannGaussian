@@ -513,9 +513,15 @@ prove that this is the actual limit of `tau^m` times the normalized localized
 eta Gram. The corresponding actual scaled completion-distortion limit is the
 difference of the coefficients at complementary zeros. Lean proves that this
 difference vanishes exactly when their explicit completion weights agree.
-The next valid slice must derive an independent arithmetic or phase constraint
-forcing that balance and then prove that the resulting weight equality forces
-horizontal location; neither implication is currently established.
+Lean now packages those weights into a nonvanishing analytic reflection
+multiplier `B(s)` for the literal positive eta Laplace partition. It proves
+`P(1-s) = B(s)P(s)`, the exact reciprocal and conjugation laws, and the
+explicit spectral--Gamma--eta factorization of `B`. Its squared norm is the
+complementary weight ratio, so the actual distortion coefficient vanishes
+exactly when `|B(rho)|^2 = 1`; the critical line implies this condition. The
+next valid slice must prove the converse horizontal rigidity for this explicit
+multiplier and derive unit norm at zeros from an independent arithmetic or
+phase constraint. Neither open direction may be inserted as an assumption.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

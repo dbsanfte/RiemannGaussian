@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "force actual complementary coefficient balance, then prove horizontal rigidity.</text>\n" ++
+      "force the reflection multiplier to unit norm, then prove horizontal rigidity.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -386,17 +386,24 @@ run_cmd do
         "the actual scaled completion-distortion limit is their difference. Completion " ++
         "symmetry gives an exact weighted balance, and Lean proves that the coefficient " ++
         "difference vanishes exactly when the two explicit completion weights agree. " ++
-        "No independent arithmetic or phase theorem forces this balance, no checked " ++
-        "theorem yet converts the resulting weight equality to horizontal location, " ++
+        "Lean now packages this comparison into a nonvanishing analytic reflection " ++
+        "multiplier B(s) for the literal positive eta Laplace partition P(s). Throughout " ++
+        "the open strip it proves P(1-s)=B(s)P(s), reciprocal and conjugation laws for " ++
+        "B, and its explicit spectral--Gamma--eta factorization. Its squared norm is " ++
+        "exactly the complementary completion-weight ratio. Thus the actual first " ++
+        "distortion coefficient vanishes exactly when |B(rho)|^2=1, and the critical " ++
+        "line implies this unit-norm equation. No independent arithmetic or phase " ++
+        "theorem forces unit norm, no checked theorem proves its converse horizontal " ++
+        "rigidity, " ++
         "and no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove an independent arithmetic or phase constraint forcing the actual " ++
-        "complementary localized eta Gram coefficients to agree, and prove that the " ++
-        "equivalent completion-weight equality forces zero location; alternatively " ++
+        "Prove an independent arithmetic or phase constraint forcing the explicit " ++
+        "eta Laplace reflection multiplier to have unit norm at every nontrivial zero, " ++
+        "and prove that its unit-norm equation forces real part one half; alternatively " ++
         "force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),
