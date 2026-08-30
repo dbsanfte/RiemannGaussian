@@ -1047,9 +1047,13 @@ finite set of distinct unit-modulus complex modes, Lean proves that a linear
 combination of their geometric sequences can converge to zero only when every
 coefficient vanishes; equivalently, those full sequences are linearly
 independent. The proof uses repeated shift differences and preserves the
-complex phase. This is not yet an eta theorem. The next obligations are to
-sample the sharp eta-tail asymptotics along a geometric odd-endpoint
-subsequence with provably distinct modes, peel the finitely many real-decay
+complex phase. Lean now connects this abstraction to literal eta arithmetic:
+for every odd base `q > 1`, the cutoff `(q^n-1)/2` tends to infinity, its odd
+endpoint is exactly `q^n`, and the sharp complex eta-tail normalization becomes
+the `n`th power of one fixed mode. At every nontrivial zero the literal
+multiplicity-minus-one centered prefix inherits an explicit nonzero complex
+geometric asymptotic. The next obligations are to choose a base whose modes do
+not collide across a finite zero window, peel the finitely many real-decay
 layers, and extract finitely many cutoff coordinates retaining independence.
 If completed, that route would establish a 100% information ceiling for each
 finite eta zero window; an arithmetic estimate controlling the resulting

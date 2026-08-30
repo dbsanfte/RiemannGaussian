@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Distinct finite geometric phases are linearly independent"
-    lineOne := "geometric phases"
-    lineTwo := "finite independence"
-    role := "reduction"
+    label := "Literal eta lower moments have geometric phase sampling"
+    lineOne := "eta phase sampling"
+    lineTwo := "nonzero complex limit"
+    role := "bridge"
     theoremName :=
-      ``RiemannGaussian.finite_geometric_phase_linearIndependent
+      ``RiemannGaussian.tendsto_etaGeometricCutoff_cpow_mul_pairedEtaLowerMomentCenteredPartialSum
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "instantiate phase separation on the eta cutoff asymptotics.</text>\n" ++
+      "prove collision-free eta modes and finite cutoff separation.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -737,9 +737,12 @@ run_cmd do
         "A generic shift-difference argument now proves that a finite sum of distinct unit-circle " ++
         "geometric modes cannot converge to zero unless every coefficient vanishes. Lean packages " ++
         "this as linear independence of the corresponding full geometric sequences. This is the " ++
-        "finite phase-rigidity lemma needed for geometric sampling of the sharp eta cutoff " ++
-        "asymptotics, but distinct sampled eta modes and finite-coordinate extraction have not yet " ++
-        "been proved. " ++
+        "finite phase-rigidity lemma needed for geometric sampling of the sharp eta cutoff asymptotics. " ++
+        "Lean now performs that sampling for every odd base q>1 at the exact cutoff (q^n-1)/2. " ++
+        "The sampled odd endpoint is q^n, the cutoff tends to infinity, and the multiplicity-minus-one " ++
+        "finite eta prefix at every nontrivial zero has an explicit nonzero complex limit after " ++
+        "normalization by the nth power of one fixed mode. Collision avoidance between different " ++
+        "zeros and finite-coordinate extraction have not yet been proved. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -818,9 +821,12 @@ run_cmd do
         "positive semidefinite at equal scale. Their literal retained/omitted double path sums are " ++
         "checked, while their aggregate arithmetic estimate remains open. A generic finite " ++
         "geometric-phase rigidity theorem now proves, by repeated shift differences, that distinct " ++
-        "unit-circle modes have linearly independent full sequences. Connecting the sharp eta-tail " ++
-        "asymptotics to collision-free geometric modes and extracting a finite separating cutoff " ++
-        "family remain open. An abstract degree-four " ++
+        "unit-circle modes have linearly independent full sequences. The sharp complex eta-tail " ++
+        "asymptotic is now sampled at exact geometric odd endpoints q^n for every odd q>1, and the " ++
+        "literal lower-moment finite prefix at each zeta zero has a checked nonzero complex geometric " ++
+        "limit. Proving that one base is collision-free on a given finite window, separating the " ++
+        "different real-decay layers, and extracting a finite separating cutoff family remain open. " ++
+        "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
         "the five-moment information class. The witness-weighted heat refinement is monotone and " ++

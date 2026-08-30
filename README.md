@@ -26,17 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves a finite geometric-phase rigidity theorem: if a linear
-combination of distinct unit-modulus sequences `n ↦ zⁿ` converges to zero,
-every coefficient is zero. A repeated shift difference removes one phase at a
-time, and the result is packaged as linear independence in the full sequence
-space.
+Lean now samples the checked complex eta-tail asymptotic at the exact cutoffs
+`(qⁿ−1)/2` for every odd `q>1`. Lean proves these cutoffs tend to infinity,
+their odd endpoints are exactly `qⁿ`, and the normalization becomes the
+power of one fixed complex mode. At every nontrivial zeta zero, the literal
+multiplicity-minus-one finite eta prefix has an explicit nonzero complex
+geometric asymptotic.
 
-This supplies the first abstract separation lemma for the proposed 18/18
-information ceiling. The next obligations are to derive collision-free
-geometric modes from the already checked sharp eta-tail asymptotics and then
-extract a finite set of cutoff coordinates that separates each finite zero
-window. Neither step, nor any stronger zeta-zero proportion, is yet claimed.
+Together with the preceding finite geometric-phase rigidity theorem, this
+connects actual eta arithmetic to the proposed 18/18 separation route without
+discarding phase. The next obligations are to choose a base with no mode
+collisions across a finite zero window and extract finitely many cutoff
+coordinates retaining the resulting independence. No stronger zeta-zero
+proportion is yet claimed.
 
 ## Mathematical Program
 
