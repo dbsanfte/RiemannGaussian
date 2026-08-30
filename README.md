@@ -26,20 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now applies the sharp centered-tail rates to the actual completed
-partner residual. If a hypothetical nontrivial zero satisfies
-`Re(rho)>1/2`, scaling the residual norm at the slower reflected-partner rate
-makes it converge to the explicit completion weight times a strictly positive
-centered-tail constant. The faster original tail vanishes at that scale, so
-the full phase-bearing complex residual is eventually nonzero.
+Lean now sharpens off-line residual dominance at the critical square-root
+scale. For a hypothetical zero with `Re(rho)>1/2`, the actual completed
+centered residual satisfies
 
-Reflection proves the complementary statement for `Re(rho)<1/2`: every
-off-critical-line pair has one orientation whose actual residual is nonzero at
-all sufficiently large cutoffs. This is not RH. The same residual tends to
-zero unconditionally, and an eventually nonzero sequence may still do so. The
-frontier is now a concrete arithmetic rigidity law for the exact finite work
-identity strong enough to force eventual vanishing, monotonic incompatibility,
-or an equivalent contradiction with this checked off-line asymptotic.
+`(2N+1)^(1/2) * norm(R_N(rho)) -> +infinity`.
+
+Reflection supplies the obstructed orientation for every off-critical-line
+pair. Lean therefore proves that eventual `O((2N+1)^(-1/2))` control of the
+residual at every nontrivial zero implies Mathlib's `RiemannHypothesis`.
+Conversely, RH makes both explicit centered-tail envelopes have exponent
+`1/2`, so the global bound follows; the residual-rate criterion is exactly
+equivalent to RH. This equivalence is a reformulation, not a proof. The open
+arithmetic direction is now precise: derive that critical-scale bound from the
+exact finite residual work identity without assuming zero locations.
 
 ## Mathematical Program
 

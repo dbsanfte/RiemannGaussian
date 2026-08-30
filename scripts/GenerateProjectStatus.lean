@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "An off-line complementary pair has an eventually nonzero centered residual"
+    label := "An off-line centered residual diverges at the critical square-root scale"
     lineOne := "off-line eta residual"
-    lineTwo := "eventually nonzero"
+    lineTwo := "critical-scale blowup"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.eventually_one_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidual_ne_zero_of_re_ne_half
+      ``RiemannGaussian.tendsto_oddEndpoint_half_rpow_mul_norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidual_atTop_of_half_lt_re
   }
 ]
 
@@ -479,17 +479,22 @@ run_cmd do
         "completion-weighted constant, so the actual phase-bearing residual is " ++
         "eventually nonzero. Reflection covers Re(rho)<1/2: every off-line pair has " ++
         "one eventually nonzero orientation. This remains compatible with the proved " ++
-        "unscaled convergence to zero. The needed eta-specific coercive sign, " ++
-        "monotonicity, or cancellation estimate for the finite work identity is not " ++
-        "proved, and these results do not imply RH.")),
+        "unscaled convergence to zero. Lean now moves to the critical square-root " ++
+        "scale and proves that the normalized residual tends to positive infinity at " ++
+        "every right-half off-line zero. Hence a global eventual O((2N+1)^(-1/2)) " ++
+        "residual bound forces every zero onto the line. Under RH, the explicit " ++
+        "two-tail envelope proves that bound, so the global rate criterion is exactly " ++
+        "equivalent to RH. Its forward arithmetic direction is not proved: the needed " ++
+        "critical-scale control must still be derived from the finite residual work " ++
+        "identity without assuming zero locations.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove an eta-specific coercive sign, monotonicity, or cancellation law for " ++
-        "the exact finite-prefix residual work identity that contradicts the checked " ++
-        "eventual nonvanishing of every off-line complementary pair"))
+        "Derive a global eventual O((2N+1)^(-1/2)) bound for the actual completed " ++
+        "centered residual from its exact finite-prefix arithmetic work identity, " ++
+        "without assuming RH or an equivalent zero-location statement"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
