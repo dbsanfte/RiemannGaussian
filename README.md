@@ -26,20 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now identifies the exact arithmetic gain between the first nonzero
-localized Gaussian coefficients at complementary zeros. If `a(rho)>0` is the
-coefficient at `rho` and `rho* = 1-conj(rho)`, then the kernel checks
+Lean now proves an explicit quantitative version of high-ordinate eta
+reflection rigidity. Throughout the open strip at `|Im s| >= 8`, the checked
+horizontal derivative of `log |B(s)|` is greater than `1/200`. If `a(rho)>0`
+is the first nonzero localized Gaussian coefficient at a zero and
+`rho* = 1-conj(rho)`, this combines with the exact identity
+`a(rho*)/a(rho)=|B(rho)|²` to give
 
-`a(rho*) / a(rho) = |B(rho)|²`,
+`(1/100) |Re rho - 1/2| <= |log(a(rho*)/a(rho))|`.
 
-where `B` is the explicit eta reflection multiplier. Combined with the
-height-free multiplier rigidity theorem, Lean proves that `a(rho*)<a(rho)`,
-`=`, or `>` exactly when `Re rho<1/2`, `=1/2`, or `>1/2`; the corresponding
-signed coefficient differences are proved as well.
-
-This turns the remaining conjecture-strength step into a precise arithmetic
-statement: prove independently that `a(rho*)=a(rho)` at every nontrivial zero.
-The project does not yet prove that equality or RH.
+Thus any future arithmetic estimate making the complementary coefficient
+ratio close to one will quantitatively force the corresponding zero close to
+the critical line. No current theorem supplies that smallness or equality;
+the project does not yet prove RH. The displayed bound has the explicit
+high-ordinate hypothesis, while the qualitative unit-norm rigidity theorem
+remains valid at every height.
 
 ## Mathematical Program
 

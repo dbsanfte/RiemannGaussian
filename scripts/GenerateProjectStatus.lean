@@ -412,8 +412,11 @@ run_cmd do
         "above one to its right. Lean now proves that at every nontrivial zero the exact " ++
         "partner-to-original leading Gaussian coefficient ratio is |B(rho)|^2. Hence the " ++
         "coefficient ordering, and equivalently the sign of their difference, detects the " ++
-        "side of the critical line exactly. No independent arithmetic or phase theorem " ++
-        "forces the two coefficients to agree; no current theorem implies RH.")),
+        "side of the critical line exactly. At absolute ordinate at least 8, Lean sharpens " ++
+        "the horizontal log-norm slope to the explicit lower bound 1/200 and derives " ++
+        "(1/100)|Re(rho)-1/2| <= |log(a(rho#)/a(rho))| for the two positive leading " ++
+        "coefficients. No independent arithmetic or phase theorem bounds this ratio by " ++
+        "one or forces the two coefficients to agree; no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),

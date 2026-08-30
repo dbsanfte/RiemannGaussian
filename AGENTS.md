@@ -554,6 +554,13 @@ coefficient is smaller, equal, or larger exactly when `Re(rho)` is left of, on,
 or right of `1/2`. The remaining target is therefore the independent equality
 of these two positive arithmetic coefficients. The exact ratio and its sign
 classification do not supply that equality.
+The high-ordinate analytic estimate is now quantitative. Lean sharpens the
+horizontal derivative of `log |B(s)|` to the uniform lower bound `1/200` when
+`|Im(s)|>=8`, and the real mean-value theorem transfers it to
+`(1/100)*|Re(rho)-1/2| <= |log(a(rho#)/a(rho))|` for the two positive leading
+coefficients. This is a coercive interface: an independent arithmetic upper
+bound on the logarithmic ratio would control zero displacement. No such upper
+bound, and no independent equality, is currently proved.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
