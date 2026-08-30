@@ -37,8 +37,9 @@ ultimate method target is `18/18`, or 100% of every finite symmetric zero
 window.
 
 Lean currently proves a sharp abstract `13/18` degree-four certificate, but
-that number is not yet a zeta-zero proportion: the normalized moment model has
-not been derived from the literal eta window. Lean now proves eventual linear
+that number is not yet a zeta-zero proportion: the prescribed degree-four
+moments and separator bound have not been derived from the literal eta window.
+Lean now proves eventual linear
 independence of the actual packed two-channel eta features and an exact
 multiplicity-weighted positive coordinate Gram whose rank is the number of
 represented distinct zeros. On every symmetric window, Lean now couples that
@@ -55,26 +56,29 @@ mixed trace `Re tr(PK) / Re tr(K)`, the full ordered same-scale hierarchy
 `Re tr((PK)^r)`, and two-step cross-scale words. Lean now realizes this entire
 hierarchy on the exact positive support of a Hermitian packed-coordinate
 carrier, without adding the artificial zero eigenspace or cancelling `K`.
-The next route is to turn that support realization into a normalized positive
-Hankel/finite-atom model and derive eta-arithmetic bounds strong enough to
-exclude the sharp `13/18` adversary. No stronger zero proportion will be
-claimed until those steps are checked.
+That support now yields a normalized positive-semidefinite Hankel model for
+every finite family of mixed moment orders. The next route is to extract or
+bypass an explicit finite-atom representation and derive eta-arithmetic bounds
+strong enough to exclude the sharp `13/18` adversary. No stronger zero
+proportion will be claimed until those steps are checked.
 
 ## Latest Update
 
-Lean now constructs the packed-coordinate Hermitian carrier `S = C P Cᴴ` and
-the metric support `Q = C K⁻¹ Cᴴ`, where `K = Cᴴ C`. Whenever the actual eta
-features are separated, Lean proves `Q` is positive semidefinite, Hermitian,
-and idempotent, with `tr Q` equal to the number of represented distinct zeros.
-It also proves `QS = SQ = S`, so `Q` removes exactly the artificial zero
-eigenspace of the packed representation.
+Lean now flattens the exact supported powers `Q S^k` into feature columns. For
+every finite order family `(kᵢ)`, their Hermitian column Gram is positive
+semidefinite and its `(i,j)` entry is proved exactly equal to
+`Re tr((P K)^(kᵢ+kⱼ))`. This turns the complete phase-preserving mixed eta
+hierarchy into an actual Hankel Gram, including its correctly supported
+zeroth moment.
 
-For every order, including zero, Lean proves the exact identity
-`Re tr(Q S^r) = Re tr((P K)^r)`. Thus the ordered, phase-preserving eta moments
-now have a genuine Hermitian realization on their exact positive support while
-retaining the amplitudes in `K`. This is not yet a stronger zero proportion.
-The next hard step is the normalized positive Hankel/finite-atom model and an
-eta-arithmetic estimate that rules out the sharp `13/18` moment adversary.
+Writing `N` for the represented distinct-zero count and
+`m₀ = Re tr(K)`, Lean also checks the dimensionless normalization
+`νᵣ = N⁻¹ (N/m₀)^r Re tr((PK)^r)`. Every finite matrix
+`(ν_(kᵢ+kⱼ))` is positive semidefinite; on a nonempty separated window,
+`ν₀ = 1` and `ν₁ = Re tr(PK)/Re tr(K)`. Lean derives the universal Hankel
+inequality `ν_(a+b)^2 ≤ ν_(2a)ν_(2b)`. This is not yet a stronger zero
+proportion: the live problem is an eta-arithmetic bound on these normalized
+moments or heat observables that excludes the sharp `13/18` adversary.
 
 ## Mathematical Program
 

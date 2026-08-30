@@ -1119,11 +1119,17 @@ Hermitian, and idempotent whenever `K` is positive definite. Lean proves
 `QS=SQ=S`, `tr(Q)` equals the represented distinct-zero count, and
 `Re tr(QS^r)=Re tr((PK)^r)` for every order including zero. Thus the packed
 realization no longer pads the mixed moment model with a spurious zero
-eigenspace, and it still retains the amplitudes in `K`. The next obligation is
-to derive the normalized positive Hankel or explicit finite-atom model from
-this support and then an eta-arithmetic estimate that excludes the sharp
-finite obstruction. That quantitative estimate remains necessary for any
-stronger zeta-zero proportion and ultimately for RH.
+eigenspace, and it still retains the amplitudes in `K`. Lean now flattens every
+finite family of supported powers `QS^k`; their column Gram is positive
+semidefinite and its entries are exactly the mixed moments at summed orders.
+It then normalizes by the distinct-zero count `N` and mean positive eta mass
+`m₀/N`. The resulting dimensionless moments
+`ν_r=N⁻¹(N/m₀)^r Re tr((PK)^r)` form a positive-semidefinite Hankel matrix for
+every finite order family, with `ν₀=1`, `ν₁=m₁/m₀`, and
+`ν_(a+b)^2≤ν_(2a)ν_(2b)`. The next obligation is to extract or bypass an
+explicit finite-atom representation and prove an eta-arithmetic estimate that
+excludes the sharp finite obstruction. That quantitative estimate remains
+necessary for any stronger zeta-zero proportion and ultimately for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is

@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Every mixed eta reflection moment has an exact positive support realization"
-    lineOne := "mixed eta moments"
-    lineTwo := "exact positive support"
+    label := "Every finite normalized mixed eta Hankel matrix is positive semidefinite"
+    lineOne := "normalized eta Hankel"
+    lineTwo := "positive semidefinite"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaGeometricReflectionSupportedMoment_eq_mixedMoment
+      ``RiemannGaussian.pairedEtaGeometricReflectionNormalizedMomentGram_posSemidef_and_apply
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "derive the normalized positive Hankel model and arithmetic bounds for the mixed moments.</text>\n" ++
+      "prove eta-arithmetic bounds excluding the sharp 13/18 moment adversary.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -895,8 +895,12 @@ run_cmd do
         "Hermitian carrier S=C*P*C^* and its exact metric support Q=C*K^-1*C^*. Whenever K is " ++
         "positive definite, Q is positive semidefinite, Hermitian, and idempotent, QS=SQ=S, and " ++
         "tr(Q) is the represented distinct-zero count. Every supported moment Re tr(Q*S^r), " ++
-        "including order zero, equals Re tr((P*K)^r). The remaining step is to derive the normalized " ++
-        "positive Hankel or finite-atom model and eta-arithmetic estimates for this hierarchy. " ++
+        "including order zero, equals Re tr((P*K)^r). Flattening arbitrary finite families of " ++
+        "supported powers now gives a positive-semidefinite Hankel Gram with exactly those moments " ++
+        "as entries. Lean normalizes it by the distinct-zero count N and mean positive eta mass " ++
+        "m0/N: nu_r=N^-1*(N/m0)^r*Re tr((P*K)^r). Every finite normalized Hankel matrix is positive " ++
+        "semidefinite, nu_0=1, nu_1=m1/m0, and nu_(a+b)^2<=nu_(2a)*nu_(2b). The remaining step is " ++
+        "an eta-arithmetic bound or explicit atom analysis excluding the sharp finite adversary. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
