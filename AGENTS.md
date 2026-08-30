@@ -847,7 +847,15 @@ positivity gives the sharp formal floor `O >= -D`. The multiplicity-aware
 `c=2` ledger is now written directly with `-D-O`, so `O` is the only
 cross-zero term left in the finite inequality. The required aggregate bound
 on this ledger remains open; the algebraic floor alone gives no zero-location
-constraint.
+constraint. Lean now opens each packed-feature correlation into the two
+literal completed finite-prefix channels `P` and `Q`. The even/odd
+hyperbolic construction proves exactly
+`<v_sigma,v_rho>=2*sum_j(conj(P_sigma,j)P_rho,j+
+conj(Q_sigma,j)Q_rho,j)`; every mixed `P`--`Q` term cancels algebraically.
+Consequently both `D` and `O`, and the full multiplicity ledger, are expressed
+in same-channel completed eta-prefix variables. This is the first
+eta-arithmetic refinement of the zero-pair ledger, but it remains an identity:
+no signed distinct-zero estimate is inferred.
 
 ## Soundness invariant
 

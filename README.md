@@ -26,20 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now splits the exact finite eta zero-pair mass into
+Lean now opens the packed eta features inside the finite zero-pair ledger. If
+`P_{ρ,j}` and `Q_{ρ,j}` are its two literal completed finite-prefix
+channels, Lean proves the exact cancellation
 
-`F = D + O`, &nbsp; `D = ∑_ρ m_ρ² ‖v_ρ‖⁴ ≥ 0`,
+`⟨v_σ,v_ρ⟩ = 2 ∑_j (conj(P_{σ,j}) P_{ρ,j} + conj(Q_{σ,j}) Q_{ρ,j})`.
 
-where `O` is the sum over distinct ordered pairs of
-`m_ρ m_σ Re (⟨v_σ,v_ρ⟩²)`. Lean also proves the unconditional
-floor `O ≥ -D` and rewrites the multiplicity-aware rank--trace inequality as
-
-`4 (M_on + M_off) - D - O ≤ ∑_{ρ critical} k₂(m_ρ‖v_ρ‖²) + 4 #upper`.
-
-Thus the only cross-zero term in the finite ledger is now an explicit signed
-off-diagonal correlation retaining its complex phase. No arithmetic estimate
-strong enough to close this ledger, and hence no new zero-location theorem,
-is asserted yet.
+All mixed `P`–`Q` terms cancel because of the hyperbolic `I`-twist. Thus the
+positive diagonal is `4 ∑_ρ m_ρ² (∑_j(|P_{ρ,j}|²+|Q_{ρ,j}|²))²`,
+while the only distinct-zero term is the real part of the square of the same
+channel sum. The multiplicity-aware rank--trace ledger has been rewritten in
+these literal completed-prefix variables. No bound for their signed
+distinct-zero correlation, and hence no new zero-location theorem, is
+asserted yet.
 
 ## Mathematical Program
 

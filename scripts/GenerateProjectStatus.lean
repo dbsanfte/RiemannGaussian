@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The multiplicity-aware eta ledger separates diagonal and signed off-diagonal zero pairs"
-    lineOne := "eta pair ledger"
-    lineTwo := "diagonal + interference"
+    label := "The eta pair ledger cancels all mixed completed-prefix channels"
+    lineOne := "eta component ledger"
+    lineTwo := "mixed channels cancel"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_two_pairCorrelation_ledger
+      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_two_sameChannel_ledger
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "bound the signed off-diagonal eta zero-pair interference.</text>\n" ++
+      "bound signed same-channel correlations between distinct zeros.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -651,7 +651,11 @@ run_cmd do
         "complex phase. It is now split exactly as F=D+O, with positive diagonal " ++
         "D=sum m_rho^2*||v_rho||^4 and signed distinct-pair interference O. Frobenius " ++
         "positivity gives O>=-D, and the multiplicity ledger is rewritten directly in " ++
-        "D and O. Eta-arithmetic cancellation estimates for this ledger remain open.")),
+        "D and O. Opening every packed feature into its two literal completed-prefix " ++
+        "channels proves that all mixed channels cancel: each feature correlation is " ++
+        "twice the sum of its partner--partner and aligned-conjugate--conjugate terms. " ++
+        "Both D and O, and the ledger itself, now use these same-channel eta variables. " ++
+        "Arithmetic cancellation estimates for the distinct-zero sum remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -667,8 +671,10 @@ run_cmd do
         "trace/Frobenius identities, their checked coarse and multiplicity-aware " ++
         "rank--trace closures, the exact phase-preserving zero-pair expansion of the " ++
         "coherent Frobenius mass, and its positive-diagonal plus signed-off-diagonal " ++
-        "decomposition inside the literal multiplicity ledger. " ++
-        "The required signed off-diagonal eta pair estimate and the multiplicity-one head " ++
+        "decomposition inside the literal multiplicity ledger. Each packed-feature " ++
+        "correlation is further reduced to the two same-channel completed eta-prefix " ++
+        "correlations, with every mixed channel proved to cancel. " ++
+        "The required signed same-channel distinct-zero estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++
         "to RH"))
     ]),
