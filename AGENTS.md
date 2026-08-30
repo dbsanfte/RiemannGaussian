@@ -561,6 +561,16 @@ horizontal derivative of `log |B(s)|` to the uniform lower bound `1/200` when
 coefficients. This is a coercive interface: an independent arithmetic upper
 bound on the logarithmic ratio would control zero displacement. No such upper
 bound, and no independent equality, is currently proved.
+Lean now supplies a first non-circular finite upper bound for that same ratio.
+A phase-sensitive finite eta moment prefix minus its rigorous tail envelope is
+a lower certificate `L_N(rho)`, while the first-gap estimate gives an explicit
+upper envelope `U(rho#)`. Whenever `L_N(rho)>0`, Lean proves directly from the
+raw moment definition that `a(rho#)/a(rho) <= (U(rho#)/L_N(rho))^2`; existing
+convergence makes the positivity condition eventual. For a right-half zero at
+absolute ordinate at least `8`, this yields
+`Re(rho)-1/2 <= 100*log((U(rho#)/L_N(rho))^2)` eventually. This is a genuine
+finite arithmetic certificate, but no theorem yet makes its right side zero
+or asymptotically small enough to imply RH.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

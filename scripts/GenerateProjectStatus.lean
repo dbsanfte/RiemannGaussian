@@ -415,8 +415,13 @@ run_cmd do
         "side of the critical line exactly. At absolute ordinate at least 8, Lean sharpens " ++
         "the horizontal log-norm slope to the explicit lower bound 1/200 and derives " ++
         "(1/100)|Re(rho)-1/2| <= |log(a(rho#)/a(rho))| for the two positive leading " ++
-        "coefficients. No independent arithmetic or phase theorem bounds this ratio by " ++
-        "one or forces the two coefficients to agree; no current theorem implies RH.")),
+        "coefficients. Lean now bounds that ratio without completion symmetry: a positive " ++
+        "finite phase-sensitive lower certificate L_N(rho) and the complementary explicit " ++
+        "first-gap envelope U(rho#) give a(rho#)/a(rho) <= (U/L_N)^2. The lower " ++
+        "certificate is eventually positive, so right-half high-ordinate zeros satisfy the " ++
+        "eventual explicit displacement bound Re(rho)-1/2 <= 100*log((U/L_N)^2). No " ++
+        "theorem makes this upper bound vanish or forces the coefficients to agree; no " ++
+        "current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),

@@ -26,21 +26,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves an explicit quantitative version of high-ordinate eta
-reflection rigidity. Throughout the open strip at `|Im s| >= 8`, the checked
-horizontal derivative of `log |B(s)|` is greater than `1/200`. If `a(rho)>0`
-is the first nonzero localized Gaussian coefficient at a zero and
-`rho* = 1-conj(rho)`, this combines with the exact identity
-`a(rho*)/a(rho)=|B(rho)|²` to give
+Lean now turns finite eta arithmetic into a rigorous upper certificate for the
+complementary leading-coefficient ratio. A phase-sensitive finite moment
+prefix minus its proved tail envelope gives a lower certificate `L_N(rho)`;
+the first omitted eta interval gives an explicit upper envelope `U(rho*)` at
+the complementary zero. Whenever `L_N(rho)>0`, the kernel checks
 
-`(1/100) |Re rho - 1/2| <= |log(a(rho*)/a(rho))|`.
+`a(rho*) / a(rho) <= (U(rho*) / L_N(rho))²`.
 
-Thus any future arithmetic estimate making the complementary coefficient
-ratio close to one will quantitatively force the corresponding zero close to
-the critical line. No current theorem supplies that smallness or equality;
-the project does not yet prove RH. The displayed bound has the explicit
-high-ordinate hypothesis, while the qualitative unit-norm rigidity theorem
-remains valid at every height.
+The previously proved convergence of `L_N` to the nonzero leading moment
+makes this bound eventually valid for every fixed admissible tail split. For a
+right-half zero with `|Im rho|>=8`, the quantitative reflection theorem then
+gives the fully explicit displacement certificate
+
+`Re rho - 1/2 <= 100 log((U(rho*) / L_N(rho))²)`.
+
+This upper bound is derived without using completion symmetry. It becomes an
+RH mechanism only if new arithmetic proves that its right side vanishes, or
+is uniformly small enough for a limiting argument; no such estimate is yet
+proved, and the project does not claim RH.
 
 ## Mathematical Program
 
