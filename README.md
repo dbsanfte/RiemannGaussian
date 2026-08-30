@@ -26,20 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the generalized Montgomery--Vaughan weighted Hilbert
-inequality internally. For arbitrary finite distinct real frequencies and
-positive admissible gap weights, the diagonal form has explicit constant
-`13`; polarization gives the bilinear theorem
-`RiemannGaussian.MontgomeryVaughan.mvHilbert_twentySix` with constant `26`.
-The checked proof includes the interval-spacing estimates, the quadratic-form
-bound, the Preissmann--Lévêque eigen-identity, and the Hermitian spectral
-reduction. It is not imported as a hypothesis.
+Lean now connects the proved Montgomery--Vaughan inequality to the literal eta
+endpoint spectrum. For the first `K` frequencies `k ↦ log(k+1)`, Lean proves
+injectivity and the uniform admissible separation
+`1/K ≤ |log(r+1)-log(s+1)|` for `r ≠ s`. The theorem
+`RiemannGaussian.pairedEtaFiniteLog_mvHilbert_twentySix` therefore gives the
+explicit bilinear bound
 
-This supplies the separated-frequency inequality suggested by the current eta
-endpoint ledger, but it does not yet estimate that ledger: a further checked
-bridge must turn the explicit logarithmic endpoint correlation into the
-Hilbert kernel with denominator `log n - log m`. No zero-location consequence
-is claimed by this slice.
+`|Σ_{r≠s} x_r conj(z_s)/(log(r+1)-log(s+1))|`
+`≤ 26 sqrt(K Σ|x_r|²) sqrt(K Σ|z_r|²)`.
+
+This closes the frequency-spacing side of the proposed attack. It still does
+not estimate the zero-pair endpoint ledger: a further checked averaging or
+transform identity must produce this Hilbert kernel from that correlation.
+No zero-location consequence is claimed by this slice.
 
 ## Mathematical Program
 

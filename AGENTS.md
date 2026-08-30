@@ -886,11 +886,13 @@ separated-frequency estimate on that form, while retaining the signed
 zero-pair phase. Lean now proves the full generalized Montgomery--Vaughan
 weighted Hilbert inequality internally: `mvDiag_thirteen` gives the diagonal
 constant `13`, and `mvHilbert_twentySix` gives the bilinear constant `26`.
-This is verified reusable infrastructure, not yet an estimate for the eta
-ledger. The next slice must prove admissible gaps for the literal logarithmic
-endpoint frequencies and then identify an averaging or transform that
-produces the required `1/(log n-log m)` kernel from the checked endpoint
-correlation; that bridge may not be assumed.
+Lean further proves that the first `K` literal eta frequencies `log(k+1)` are
+injective with admissible uniform gap `1/K`, and specializes the bilinear
+theorem as `pairedEtaFiniteLog_mvHilbert_twentySix`. This closes the elementary
+frequency-spacing side but is not yet an estimate for the eta ledger. The next
+slice must identify an averaging or transform that produces the required
+`1/(log n-log m)` kernel from the checked endpoint correlation; that bridge
+may not be assumed.
 
 ## Soundness invariant
 

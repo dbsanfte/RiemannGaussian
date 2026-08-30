@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
   },
   {
-    label := "Montgomery--Vaughan weighted Hilbert inequality with explicit constant 26"
-    lineOne := "weighted Hilbert"
-    lineTwo := "MV constant 26"
+    label := "The first K eta log frequencies satisfy a Hilbert bound with constant 26"
+    lineOne := "eta log gaps"
+    lineTwo := "Hilbert bound 26"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.MontgomeryVaughan.mvHilbert_twentySix
+      ``RiemannGaussian.pairedEtaFiniteLog_mvHilbert_twentySix
   },
   {
     label := "The eta pair ledger is a finite odd--even endpoint correlation"
