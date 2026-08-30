@@ -872,7 +872,12 @@ finite eta moment. Its Gram kernel is therefore
 arithmetic kernel `B_sigma,rho=sum_j conj(M_sigma,j)M_rho,j`. The complete
 feature correlation, diagonal, off-diagonal mass, and ledger are rewritten
 with the `W` factors explicit. The live estimate is now concentrated in the
-reflection coupling of the finite arithmetic kernels `B`.
+reflection coupling of the finite arithmetic kernels `B`. Every centered
+moment is now also expanded exactly into its retained logarithmic interval
+integrals, making `B` a literal finite cutoff/interval triple sum. The same
+expansion is propagated through both masses and the terminal ledger; the open
+problem is a signed estimate for this explicit interval correlation, not an
+additional algebraic unpacking step.
 
 ## Soundness invariant
 

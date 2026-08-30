@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The eta pair ledger separates fixed spectral weights from finite moment correlations"
-    lineOne := "weighted eta ledger"
-    lineTwo := "finite moment kernel"
+    label := "The eta pair ledger expands into literal finite interval correlations"
+    lineOne := "eta interval ledger"
+    lineTwo := "literal triple sum"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_two_weightedMoment_ledger
+      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_two_intervalCorrelation_ledger
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "bound the reflected finite eta moment correlation.</text>\n" ++
+      "bound the reflected finite eta interval correlation.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -661,7 +661,10 @@ run_cmd do
         "W_rho*M_rho,j, separating each fixed completion weight W from the finite " ++
         "cutoff-centered eta moment. The resulting Gram kernel is a product of two W " ++
         "weights and the finite arithmetic moment correlation B. The masses and ledger " ++
-        "now expose this factorization. Arithmetic cancellation estimates for " ++
+        "now expose this factorization. Every centered moment is further expanded into " ++
+        "its literal retained logarithmic interval atoms, so B is an exact finite " ++
+        "cutoff/interval triple sum throughout the masses and terminal ledger. " ++
+        "Arithmetic cancellation estimates for " ++
         "the distinct-zero sum remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
@@ -683,8 +686,9 @@ run_cmd do
         "correlations, with every mixed channel proved to cancel. Those two channels " ++
         "are further identified with one original completed-prefix Gram kernel at the " ++
         "original and reflected zero pairs. Fixed completion weights are further factored " ++
-        "away from a finite cutoff-centered eta-moment Gram kernel. " ++
-        "The required reflected finite-moment estimate and the multiplicity-one head " ++
+        "away from a finite cutoff-centered eta-moment Gram kernel, and that kernel is " ++
+        "expanded exactly into a finite triple sum over literal retained eta intervals. " ++
+        "The required reflected finite-interval estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++
         "to RH"))
     ]),

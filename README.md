@@ -26,20 +26,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now separates the fixed spectral completion weights from the finite eta
-arithmetic. Put `W_ρ = C(ρ)ρ`, let `M_{ρ,j}` be the literal order-`m_ρ-1`
-cutoff-centered eta prefix, and set
-`B_{σ,ρ} = ∑_j conj(M_{σ,j}) M_{ρ,j}`. Lean proves exactly
+Lean now expands the finite eta arithmetic in the zero-pair ledger all the way
+to its retained logarithmic intervals. For the center
+`a_N = log(2(N+1)+1)`, define the literal atom
 
-`⟨v_σ,v_ρ⟩ = 2 (conj(W_{σ#}) W_{ρ#} B_{σ#,ρ#}`
-`+ W_σ conj(W_ρ) conj(B_{σ,ρ}))`.
+`I_{ρ,N,n} = ∫_[log(2n+1),log(2n+2)]`
+`(t-a_N)^(m_ρ-1) exp(-ρt) dt`.
 
-Here `#` is the genuine critical-line reflection. The diagonal, signed
-distinct-zero mass, coherent Frobenius mass, and multiplicity-aware
-rank--trace ledger are all rewritten with these weights outside the finite
-moment kernel `B`. The remaining theorem must bound the resulting signed
-reflection coupling from the explicit finite eta arithmetic; no such bound
-or new zero-location result is asserted yet.
+Lean proves `M_{ρ,N} = ∑_{n=0}^N I_{ρ,N,n}` and therefore expands the finite
+moment Gram kernel exactly as
+
+`B_{σ,ρ} = ∑_j ∑_{n=0}^{c_j} ∑_{m=0}^{c_j}`
+`conj(I_{σ,c_j,n}) I_{ρ,c_j,m}`.
+
+This literal triple sum, together with the fixed completion weights
+`W_ρ = C(ρ)ρ` and genuine critical-line reflection `ρ ↦ ρ#`, is propagated
+through the diagonal, signed distinct-zero mass, coherent Frobenius mass, and
+multiplicity-aware rank--trace ledger. The remaining theorem must obtain a
+signed cancellation or coercivity estimate from these explicit interval
+atoms; no such estimate or new zero-location result is asserted yet.
 
 ## Mathematical Program
 
