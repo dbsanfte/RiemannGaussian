@@ -26,25 +26,27 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now turns finite eta arithmetic into a rigorous upper certificate for the
-complementary leading-coefficient ratio. A phase-sensitive finite moment
-prefix minus its proved tail envelope gives a lower certificate `L_N(rho)`;
-the first omitted eta interval gives an explicit upper envelope `U(rho*)` at
-the complementary zero. Whenever `L_N(rho)>0`, the kernel checks
+Lean now constructs a convergent two-sided finite arithmetic enclosure of the
+exact gain between complementary leading Gaussian coefficients. Let `L_N` be
+the norm of a finite eta moment prefix minus its rigorous tail envelope, and
+`V_N` the same prefix norm plus that envelope. For every fixed admissible tail
+split, Lean proves eventually
 
-`a(rho*) / a(rho) <= (U(rho*) / L_N(rho))²`.
+`(L_N(rho*) / V_N(rho))² <= a(rho*) / a(rho)`
 
-The previously proved convergence of `L_N` to the nonzero leading moment
-makes this bound eventually valid for every fixed admissible tail split. For a
-right-half zero with `|Im rho|>=8`, the quantitative reflection theorem then
-gives the fully explicit displacement certificate
+and
 
-`Re rho - 1/2 <= 100 log((U(rho*) / L_N(rho))²)`.
+`a(rho*) / a(rho) <= (V_N(rho*) / L_N(rho))²`.
 
-This upper bound is derived without using completion symmetry. It becomes an
-RH mechanism only if new arithmetic proves that its right side vanishes, or
-is uniformly small enough for a limiting argument; no such estimate is yet
-proved, and the project does not claim RH.
+Both endpoints converge to the exact ratio and their difference tends to
+zero. At any ordinate, one checked upper endpoint at most `1` certifies that a
+right-half zero is on the critical line. At `|Im rho|>=8`, every eventually
+valid upper endpoint also gives the quantitative displacement bound
+`Re rho-1/2 <= 100 log(upper)`.
+
+The open step is eta-specific: prove that an upper certificate at most `1`
+exists for each right-half zero. The enclosure converges rigorously, but
+convergence alone does not prove that inequality or RH.
 
 ## Mathematical Program
 

@@ -420,8 +420,12 @@ run_cmd do
         "first-gap envelope U(rho#) give a(rho#)/a(rho) <= (U/L_N)^2. The lower " ++
         "certificate is eventually positive, so right-half high-ordinate zeros satisfy the " ++
         "eventual explicit displacement bound Re(rho)-1/2 <= 100*log((U/L_N)^2). No " ++
-        "theorem makes this upper bound vanish or forces the coefficients to agree; no " ++
-        "current theorem implies RH.")),
+        "theorem makes this coarse upper bound vanish. Lean now also puts finite " ++
+        "prefix-plus-tail upper certificates on both moments. The resulting lower and " ++
+        "upper squared quotients eventually enclose a(rho#)/a(rho), both converge to the " ++
+        "exact ratio, and the enclosure width tends to zero. At any height, one upper " ++
+        "endpoint at most 1 certifies that a right-half zero is on the critical line. No " ++
+        "current theorem proves that finite eta inequality for every zero or implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),

@@ -571,6 +571,16 @@ absolute ordinate at least `8`, this yields
 `Re(rho)-1/2 <= 100*log((U(rho#)/L_N(rho))^2)` eventually. This is a genuine
 finite arithmetic certificate, but no theorem yet makes its right side zero
 or asymptotically small enough to imply RH.
+Lean now replaces the coarse partner envelope by a phase-sensitive
+prefix-plus-tail upper certificate `V_N` as well. The two squared quotients
+`(L_N(rho#)/V_N(rho))^2` and `(V_N(rho#)/L_N(rho))^2` eventually enclose the
+exact coefficient ratio; both converge to it and their width tends to zero.
+At every height, a single positive-denominator upper enclosure at most `1`
+forces a right-half zero onto the critical line. At absolute ordinate at least
+`8`, the convergent upper enclosures also give the explicit displacement bound
+`Re(rho)-1/2 <= 100*log(upper_N)`. The remaining arithmetic task is to prove
+`upper_N<=1` for some cutoff; convergence by itself cannot do this for a
+hypothetical off-line zero.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
