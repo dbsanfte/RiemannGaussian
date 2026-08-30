@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "Every centered eta tail has a sharp positive horizontal decay rate"
-    lineOne := "centered eta tails"
-    lineTwo := "sharp positive rate"
-    role := "unconditional"
+    label := "An off-line complementary pair has an eventually nonzero centered residual"
+    lineOne := "off-line eta residual"
+    lineTwo := "eventually nonzero"
+    role := "reduction"
     theoremName :=
-      ``RiemannGaussian.tendsto_oddEndpoint_rpow_mul_norm_pairedEtaLogLaplaceMomentCutoffCenteredTail
+      ``RiemannGaussian.eventually_one_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidual_ne_zero_of_re_ne_half
   }
 ]
 
@@ -473,18 +473,23 @@ run_cmd do
         "Re(s)>0. The proof promotes the exact Euler second-difference remainder to " ++
         "locally uniform convergence and transports it through every holomorphic " ++
         "derivative. The corresponding endpoint-scaled norm has a strictly positive " ++
-        "limit, providing a checked nondegenerate rate-separation input. The needed " ++
-        "eta-specific residual-dominance and coercive " ++
-        "sign or cancellation estimate for this finite identity is not proved, and " ++
-        "these results do not imply RH.")),
+        "limit, providing a checked nondegenerate rate-separation input. Lean applies " ++
+        "that input to the exact completed residual. For Re(rho)>1/2, scaling at the " ++
+        "slower partner rate makes its norm converge to an explicit strictly positive " ++
+        "completion-weighted constant, so the actual phase-bearing residual is " ++
+        "eventually nonzero. Reflection covers Re(rho)<1/2: every off-line pair has " ++
+        "one eventually nonzero orientation. This remains compatible with the proved " ++
+        "unscaled convergence to zero. The needed eta-specific coercive sign, " ++
+        "monotonicity, or cancellation estimate for the finite work identity is not " ++
+        "proved, and these results do not imply RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Use the sharp complementary centered-tail rates to prove off-line residual " ++
-        "dominance, then prove an eta-specific coercive sign or cancellation law for " ++
-        "the exact finite-prefix work identity strong enough to force critical-line zeros"))
+        "Prove an eta-specific coercive sign, monotonicity, or cancellation law for " ++
+        "the exact finite-prefix residual work identity that contradicts the checked " ++
+        "eventual nonvanishing of every off-line complementary pair"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

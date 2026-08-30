@@ -26,19 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the sharp asymptotic of every literal cutoff-centered eta tail
-throughout `Re(s)>0`. For moment order `k`, its complex odd-endpoint
-normalization converges to the explicit nonzero value
+Lean now applies the sharp centered-tail rates to the actual completed
+partner residual. If a hypothetical nontrivial zero satisfies
+`Re(rho)>1/2`, scaling the residual norm at the slower reflected-partner rate
+makes it converge to the explicit completion weight times a strictly positive
+centered-tail constant. The faster original tail vanishes at that scale, so
+the full phase-bearing complex residual is eventually nonzero.
 
-`k! / (2*s^(k+1))`.
-
-The proof starts from the exact Euler second-difference remainder, establishes
-locally uniform convergence of the normalized zeroth tail to `1/(2*s)`, and
-then transports that limit through every iterated complex derivative. Taking
-norms gives the exact positive horizontal decay rate. This is not RH; it is
-the nondegenerate asymptotic needed to prove that the two complementary tails
-inside the exact finite residual cannot cancel when their horizontal rates
-differ. That residual-dominance theorem is the next checked target.
+Reflection proves the complementary statement for `Re(rho)<1/2`: every
+off-critical-line pair has one orientation whose actual residual is nonzero at
+all sufficiently large cutoffs. This is not RH. The same residual tends to
+zero unconditionally, and an eventually nonzero sequence may still do so. The
+frontier is now a concrete arithmetic rigidity law for the exact finite work
+identity strong enough to force eventual vanishing, monotonic incompatibility,
+or an equivalent contradiction with this checked off-line asymptotic.
 
 ## Mathematical Program
 

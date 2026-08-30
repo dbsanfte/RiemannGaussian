@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 371 modules · 9635 declarations · 8280 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 372 modules · 9644 declarations · 8288 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -75,11 +75,11 @@
     <text x="412" y="173">reciprocal extension</text>
     <text x="412" y="191">outer norm &lt; 1  ✓</text>
   </g>
-  <g class="proved unconditional">
+  <g class="proved reduction">
     <rect x="500" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.tendsto_oddEndpoint_rpow_mul_norm_pairedEtaLogLaplaceMomentCutoffCenteredTail</title>
-    <text x="572" y="173">centered eta tails</text>
-    <text x="572" y="191">sharp positive rate  ✓</text>
+    <title>RiemannGaussian.eventually_one_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidual_ne_zero_of_re_ne_half</title>
+    <text x="572" y="173">off-line eta residual</text>
+    <text x="572" y="191">eventually nonzero  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
