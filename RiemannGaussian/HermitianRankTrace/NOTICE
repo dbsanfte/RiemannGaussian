@@ -8,4 +8,6 @@ Original source: https://github.com/anthropics/formal-math/tree/main/zeta23
 Licensed under the Apache License, Version 2.0 (see LICENSE in this directory).
 
 Local changes: import paths and the enclosing namespace were adjusted for
-RiemannGaussian. The mathematical proof bodies were retained.
+RiemannGaussian. Warning-cleanup changes remove unused binders, instances,
+and simp arguments; the mathematical statements and proof strategy are
+retained.

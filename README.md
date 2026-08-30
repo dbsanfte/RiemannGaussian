@@ -26,19 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now applies a checked rank--trace theorem to the genuine finite eta
-matrix. If `C` and `U` are the distinct critical-line and upper off-line zero
-counts, `M_on` and `M_off` are the exact on-line and signed off-line trace
-masses, and `F` is the coherent Frobenius mass, then every nonnegative window
-satisfies
+Lean now applies the multiplicity-aware rank--trace theorem to the genuine
+finite eta matrix. Write `x_ρ = m_ρ ‖v_ρ‖²` for each critical zero's analytic
+multiplicity times its packed-feature mass and
+`k₂(x) = 4 - max(2 - x, 0)²`. If `M_on`, `M_off`, and `F` are the exact
+on-line trace, signed off-line trace, and coherent Frobenius masses, then
+every nonnegative window satisfies
 
-`2 M_on + 4 M_off - 4 U - F ≤ C`.
+`4 (M_on + M_off) - F ≤ ∑_{ρ critical} k₂(x_ρ) + 4 #upper`.
 
-This closes the finite zero-side linear-algebra layer using the literal eta
-features, analytic multiplicities, spectral windows, rank bounds, and
-off-line inertia. It is not the decisive arithmetic estimate. The next
-frontier is to bound this ledger from the eta arithmetic without destroying
-the cross-zero and within-feature phase cancellation.
+Thus multiplicity and feature size survive the interaction between zeros;
+they are not collapsed into a coarse rank count. This closes the finite
+zero-side linear-algebra layer, not the decisive arithmetic estimate. The
+next frontier is to bound this literal ledger from the eta arithmetic without
+destroying cross-zero or within-feature phase cancellation.
 
 ## Mathematical Program
 

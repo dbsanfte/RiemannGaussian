@@ -823,7 +823,17 @@ linear-algebra closure is instantiated, not merely abstract. The remaining
 obligation is to obtain estimates for this ledger from the eta arithmetic
 without replacing the coherent sums by phase-free termwise bounds. The
 rank--trace theorem itself is still infrastructure, not the missing
-arithmetic estimate.
+arithmetic estimate. Lean now also specializes the multiplicity-aware
+rank--trace refinement. Critical-line reflection makes the on-line
+complex-symmetric block exactly the required positive Gram matrix. For
+`x_rho = m_rho*||v_rho||^2` and
+`k_c(x)=c^2-max(c-x,0)^2`, the checked literal ledger is
+`2*c*(M_on+M_off)-F ≤ sum_(rho critical) k_c(x_rho)+c^2*#upper`.
+At `c=2` this retains one nonlinear term for every actual critical zero,
+including its analytic multiplicity and packed eta feature norm. No bound on
+that sum or on `F` is inferred. This exhausts the imported finite-dimensional
+rank--trace layer; further progress must estimate the named eta quantities or
+connect them to an independently controlled arithmetic form.
 
 ## Soundness invariant
 

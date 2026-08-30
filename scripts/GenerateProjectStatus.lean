@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The genuine finite eta block satisfies a literal rank--trace ledger"
-    lineOne := "finite eta rank--trace"
-    lineTwo := "literal zero ledger"
+    label := "The finite eta block satisfies a multiplicity-aware rank--trace ledger"
+    lineOne := "eta multiplicity ledger"
+    lineTwo := "rank--trace retained"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindow_rankTrace_two_ledger
+      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_two_ledger
   }
 ]
 
@@ -644,9 +644,9 @@ run_cmd do
         "positive index at most #critical+#upper. The on-line and off-line traces are " ++
         "now exact squared-coordinate sums, and the complete squared Frobenius mass " ++
         "is an explicit coherent multiplicity-weighted zero sum. The checked rank--trace " ++
-        "theorem is now instantiated on these literal blocks, yielding the exact c=2 " ++
-        "ledger 2*M_on+4*M_off-4*#upper-F<=#critical. Eta-arithmetic estimates for " ++
-        "this ledger remain open.")),
+        "theorem is now instantiated on these literal blocks. Its multiplicity-aware " ++
+        "refinement retains one nonlinear k_c(m_rho*||v_rho||^2) term for every actual " ++
+        "critical zero. Eta-arithmetic estimates for this ledger remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -659,7 +659,8 @@ run_cmd do
         "summability of R_N, the exact cosine/crossover factorization of the higher-" ++
         "multiplicity L_N kernel, the finite on-line/off-line block decomposition, " ++
         "the required divisor-count rank and positive-index bounds, exact scalar " ++
-        "trace/Frobenius identities, and their checked rank--trace closure. " ++
+        "trace/Frobenius identities, and their checked coarse and multiplicity-aware " ++
+        "rank--trace closures. " ++
         "The required eta-specific aggregate estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++
         "to RH"))
