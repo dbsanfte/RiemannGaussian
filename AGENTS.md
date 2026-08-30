@@ -1082,11 +1082,16 @@ the Hermitian Gram is exactly `onLine + offReal + offImag`, whereas the signed
 block is `onLine + offReal - offImag`. Hence their difference is exactly twice
 the positive imaginary off-line block and their sum is twice the positive
 on-line-plus-real block; both are positive semidefinite. At the same eventual
-geometric blocks, the Hermitian Gram retains full represented rank. The next
-obligation is to extract a normalized arithmetic trace or spectral estimate
-from this joint carrier that excludes the sharp finite obstruction. That
-quantitative estimate remains necessary for any stronger zeta-zero proportion
-and ultimately for RH.
+geometric blocks, the Hermitian Gram retains full represented rank. Pulling the
+same multiplicity-weighted synthesis matrix `C` back to zero-index space now
+gives the square metric `K = Cᴴ C`. Actual packed-feature linear independence
+makes `C` injective, so Lean proves that `K` and `K⁻¹` are both positive
+definite for one odd prime and every sufficiently late block. The next
+obligation is to pull the signed ledger back to zero-index space, whiten it
+with this metric, and prove a normalized Hermitian contraction from which an
+arithmetic trace or spectral estimate can be extracted. That quantitative
+estimate remains necessary for any stronger zeta-zero proportion and
+ultimately for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is

@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "estimate the joint eta carrier strongly enough to exclude off-line mass.</text>\n" ++
+      "whiten the signed eta pullback and estimate its normalized spectrum.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -761,8 +761,10 @@ run_cmd do
         "is kept distinct from the complex-symmetric signed block. On every nonnegative symmetric " ++
         "window Lean now proves Gram=onLine+offReal+offImag while Signed=onLine+offReal-offImag. " ++
         "Thus Gram-Signed is twice the positive imaginary block and Gram+Signed is twice the positive " ++
-        "on-line-plus-real block. The normalized arithmetic estimate on this joint carrier has not " ++
-        "yet been proved. " ++
+        "on-line-plus-real block. Pulling the same synthesis matrix C back to zero-index space gives " ++
+        "K=C^*C. Actual packed-feature linear independence makes C injective, so one odd prime makes " ++
+        "K and its inverse positive definite at every sufficiently late block. The signed pullback " ++
+        "has not yet been whitened and its normalized arithmetic spectral estimate has not been proved. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -863,8 +865,10 @@ run_cmd do
         "rank equal to the number of represented distinct zeros. The positive Gram and the distinct " ++
         "complex-symmetric signed block now satisfy an exact joint colour ledger: their difference " ++
         "is twice the positive off-line-imaginary block and their sum is twice the positive on-line-" ++
-        "plus-real block. Both combinations are positive semidefinite. The remaining step is to " ++
-        "derive a normalized arithmetic trace or spectral estimate from this joint carrier. " ++
+        "plus-real block. Both combinations are positive semidefinite. Pulling the same synthesis " ++
+        "matrix C back to zero-index space gives K=C^*C; its injectivity makes K and its inverse " ++
+        "positive definite for one odd prime at all sufficiently late blocks. The remaining step is " ++
+        "to whiten the signed pullback and derive a normalized arithmetic trace or spectral estimate. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

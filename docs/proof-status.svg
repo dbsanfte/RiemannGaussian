@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 449 modules · 11395 declarations · 9676 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 450 modules · 11401 declarations · 9681 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -90,5 +90,5 @@
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: estimate the joint eta carrier strongly enough to exclude off-line mass.</text>
+  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: whiten the signed eta pullback and estimate its normalized spectrum.</text>
 </svg>

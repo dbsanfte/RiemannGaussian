@@ -43,27 +43,28 @@ independence of the actual packed two-channel eta features and an exact
 multiplicity-weighted positive coordinate Gram whose rank is the number of
 represented distinct zeros. On every symmetric window, Lean now couples that
 Gram to the complex-symmetric signed eta block through two exact positive
-channels, `Gram − Signed` and `Gram + Signed`. The immediate route is to
-extract normalized trace or spectral data from this joint ledger and derive
-an arithmetic observable that excludes the sharp three-atom obstruction. No
-stronger zero proportion will be claimed until that eta-specific estimate is
-proved.
+channels, `Gram − Signed` and `Gram + Signed`. Pulling the same synthesis back
+to zero-index space gives an eventually positive-definite metric `K = Cᴴ C`
+whose inverse is also positive definite. The immediate route is to use this
+metric to whiten the signed pullback, prove a normalized Hermitian contraction,
+and then derive an arithmetic observable that excludes the sharp three-atom
+obstruction. No stronger zero proportion will be claimed until that
+eta-specific estimate is proved.
 
 ## Latest Update
 
-Lean now places the positive Hermitian eta Gram and the sign-bearing
-complex-symmetric eta block in one exact colour ledger. On every nonnegative
-symmetric spectral window it proves
-`Gram = onLine + offReal + offImag` while
-`Signed = onLine + offReal − offImag`.
+Lean now pulls the multiplicity-weighted eta synthesis matrix `C` back from
+packed cutoff/colour coordinates to the represented-zero index space. The
+resulting square Hermitian Gram is exactly `K = Cᴴ C`. Linear independence of
+the actual packed eta features makes `C` injective, so Lean proves that `K` is
+positive definite and that `K⁻¹` is positive definite as well.
 
-Consequently `Gram − Signed = 2·offImag` and
-`Gram + Signed = 2·(onLine + offReal)`, so both combinations are positive
-semidefinite without erasing the reflected-zero colour split. For one odd
-prime base and all sufficiently late geometric blocks, the same Gram also has
-rank exactly equal to the number of represented distinct zeros. This is a
-full-rank joint carrier, not an `18/18` certificate; the next step is a
-normalized arithmetic trace or spectral estimate on this ledger.
+For every finite zeta-zero window, Lean proves that one odd prime base makes
+both conclusions hold at every sufficiently late geometric block. This is an
+invertible normalization metric, not an `18/18` certificate. The next checked
+step is to pull back the signed colour ledger, whiten it with `K⁻¹`, and prove
+the resulting normalized Hermitian operator is a contraction before seeking
+the eta-arithmetic spectral estimate.
 
 ## Mathematical Program
 
