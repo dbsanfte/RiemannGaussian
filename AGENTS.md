@@ -626,10 +626,20 @@ pointwise form is
 `u^m*exp(-u/2)*(A_N*exp(delta*u)*exp(-I*gamma*u)
 +B_N*exp(-delta*u)*exp(I*gamma*u))`, where
 `delta=rho.re-1/2`. The residual norm is exactly the norm of this single
-interference integral. The present sign-bearing target is an independent
-eta-specific coercivity or cancellation theorem for that integral. A valid
-next step must retain the distributional zero contributions in any Green or
-integration-by-parts argument; erasing them would merely erase the detector.
+interference integral.
+Lean now exploits the literal alternating interval geometry across cutoffs.
+Writing `Delta_N=log(2N+3)-log(2N+1)`, the shifted tail measure at `N` is
+exactly Lebesgue measure on its first interval `(0,w_N]` plus the shifted tail
+at `N+1` translated by `Delta_N`, with `0<w_N<Delta_N`. Every shifted moment
+therefore obeys an exact finite binomial transport formula. The completion and
+phase factors align across both complementary tilts, producing a triangular
+work law for the actual residual:
+`R_N-R_(N+1)=head_N+sum_(j<m) choose(m,j)*Delta_N^(m-j)*C_(j,N+1)`.
+The top successor order is exactly `R_(N+1)`; only lower coupled orders remain.
+The present sign-bearing target is an eta-specific bound or cancellation law
+for this finite lower-order hierarchy. A valid next step must retain the
+distributional zero contributions in any Green or integration-by-parts
+argument; erasing them would merely erase the detector.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.

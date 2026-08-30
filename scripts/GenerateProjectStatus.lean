@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The completed centered eta residual norm is one critical-half-centered interference integral"
-    lineOne := "residual = one"
-    lineTwo := "interference integral"
+    label := "Consecutive centered eta residuals obey an exact triangular arithmetic transport law"
+    lineOne := "eta residual"
+    lineTwo := "triangular transport"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidual_eq_integral_halfIntegrand
+      ``RiemannGaussian.pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidual_sub_succ
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "rule out off-line cancellation in the shifted eta interference integral.</text>\n" ++
+      "control the lower-order hierarchy in eta residual transport.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -455,18 +455,25 @@ run_cmd do
         "function on the common shifted measure. After extracting exp(-u/2), horizontal " ++
         "displacement delta=rho.re-1/2 occurs only through the reciprocal tilts " ++
         "exp(delta*u) and exp(-delta*u) in one oscillatory interference factor. The " ++
-        "residual norm is exactly the norm of that single integral. The needed " ++
-        "eta-specific coercivity or cancellation theorem is not proved, and these " ++
-        "results do not imply RH.")),
+        "residual norm is exactly the norm of that single integral. Lean now proves " ++
+        "the eta-specific cutoff transport mu_N=head_N+translate(Delta_N,mu_(N+1)), " ++
+        "where the head is Lebesgue measure on (0,w_N] and 0<w_N<Delta_N exposes the " ++
+        "omitted arithmetic gap. Every shifted Laplace and Fourier moment inherits an " ++
+        "exact finite binomial recurrence. Completion and phase transport align the " ++
+        "two complementary tilts, giving the actual residual work law " ++
+        "R_N-R_(N+1)=head_N+sum_(j<m) choose(m,j)Delta_N^(m-j)C_(j,N+1). The top " ++
+        "successor order is exactly R_(N+1), leaving only a finite lower-order " ++
+        "hierarchy. The needed eta-specific control of that hierarchy is not proved, " ++
+        "and these results do not imply RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove an eta-specific coercivity or cancellation theorem for the exact " ++
-        "critical-half-centered shifted interference integral, strong enough to rule " ++
-        "out the required residual behavior when rho.re differs from one half and hence " ++
-        "force unit eta reflection multiplier norm at every nontrivial zero"))
+        "Prove an eta-specific estimate or cancellation law for the exact lower-order " ++
+        "triangular hierarchy in consecutive centered-residual transport, strong enough " ++
+        "to rule out its off-line behavior and force unit eta reflection multiplier norm " ++
+        "at every nontrivial zero"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

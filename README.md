@@ -26,19 +26,22 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now combines the two complementary centered eta tails into one
-absolutely integrable expression over their common positive shifted measure.
-For `delta=rho.re-1/2`, the completed residual is exactly a unit cutoff phase
-times
+Lean now proves the exact arithmetic transport law between consecutive shifted
+eta tails. At cutoff `N`, the measure is the first translated support interval
+`(0,w_N]` plus the cutoff-`N+1` measure translated by
+`Delta_N=log(2N+3)-log(2N+1)`, with the strict eta gap `0<w_N<Delta_N`.
 
-`integral u^m*exp(-u/2)*(A_N*exp(delta*u)*exp(-I*gamma*u)
-  + B_N*exp(-delta*u)*exp(I*gamma*u)) dmu_N(u)`.
+Every shifted Laplace and Fourier--Laplace moment consequently satisfies an
+exact finite binomial recurrence. After inserting both complementary tilts,
+completion factors, conjugation, and cutoff phases, Lean obtains the discrete
+residual work law
 
-Its norm is therefore exactly the norm of this single interference integral.
-All translations, conjugations, frequency reversals, integral combinations,
-and integrability conditions are checked in Lean. This is not RH: the open
-frontier is an eta-specific coercivity or cancellation theorem showing that
-this integral cannot have the required off-line behavior when `delta != 0`.
+`R_N-R_(N+1) = head_N + sum_(j<m) choose(m,j)*Delta_N^(m-j)*C_(j,N+1)`.
+
+Thus the top-order successor is exactly the next completed residual, and the
+remaining obstruction is a finite triangular hierarchy of genuinely lower
+orders. This is eta-specific arithmetic structure, not RH; the frontier is to
+control that hierarchy strongly enough to rule out off-line cancellation.
 
 ## Mathematical Program
 
