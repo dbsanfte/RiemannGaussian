@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_zero_one_eq_integral_mixedChannelZeroSumAt
   },
   {
-    label := "The first K eta log frequencies satisfy a Hilbert bound with constant 26"
-    lineOne := "eta log gaps"
-    lineTwo := "Hilbert bound 26"
+    label := "Signed spectral heat reconstructs finite Hermitian inertia exactly"
+    lineOne := "signed spectral heat"
+    lineTwo := "positive inertia"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.pairedEtaFiniteLog_mvHilbert_twentySix
+      ``RiemannGaussian.HermitianRankTrace.posIndex_eq_signedHeat
   },
   {
     label := "The eta pair ledger is a finite odd--even endpoint correlation"
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "bound the scale-resolved signed eta endpoint correlation.</text>\n" ++
+      "connect signed heat leakage to eta arithmetic.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -695,7 +695,12 @@ run_cmd do
         "scale its surviving block is exactly the signed zero sum of three literal cross-colour " ++
         "eta forms; same-colour cancellation holds pointwise. The reciprocal-gap Hilbert block " ++
         "is proved to be the positive-time integral of that richer phase-, colour-, multiplicity-, " ++
-        "and scale-resolved carrier. A stronger eta-arithmetic cross-zero cancellation estimate " ++
+        "and scale-resolved carrier. Lean now also constructs the continuous spectral heat flow " ++
+        "of every finite Hermitian matrix. The u^(-1/2)-weighted signed current is genuinely " ++
+        "integrable and its normalized integral is exactly n_+-n_-; the ordinary heat trace " ++
+        "converges to the zero index, giving exact positive-inertia recovery. This abstract " ++
+        "matrix theorem is not yet connected to eta arithmetic or a zeta-zero proportion. " ++
+        "A stronger eta-arithmetic cross-zero cancellation estimate " ++
         "remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
@@ -736,8 +741,10 @@ run_cmd do
         "with same-colour cancellation and mixed-colour antisymmetry retained before the coarse " ++
         "sum-of-envelopes norm bound. The underlying direct odd-heat family is also retained " ++
         "pointwise: at every proper time the surviving block is the exact three-colour signed " ++
-        "zero sum, and its positive-time integral is the reciprocal-gap block. What is not yet " ++
-        "proved is a cross-zero arithmetic estimate " ++
+        "zero sum, and its positive-time integral is the reciprocal-gap block. The abstract " ++
+        "finite Hermitian signed heat flow now reconstructs positive inertia exactly from its " ++
+        "continuous trace/current observables. What is not yet proved is the eta support-gap " ++
+        "and finite-compression leakage interface, or a cross-zero arithmetic estimate " ++
         "strong enough to improve that triangle bound. The required signed " ++
         "finite-endpoint correlation estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++

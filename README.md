@@ -26,23 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now carries the direct odd transform
-`integral₀^∞ Delta * exp (-u*Delta²) du = Delta⁻¹` through the actual eta
-leading current while retaining the entire proper-time trajectory. At every
-heat scale the current is skew-symmetric: same-colour blocks vanish and the
-two mixed-colour blocks are negatives.
+Lean now formalizes the continuous signed spectral heat transform of an
+arbitrary finite Hermitian matrix. If its eigenvalues are `lambda_i`, the two
+checked observables are the full heat trace
+`sum_i exp(-u*lambda_i²)` and the signed current
+`sum_i lambda_i*exp(-u*lambda_i²)`.
 
-The surviving `0,1` block is opened into the literal completed eta colours.
-For each genuine zero it is exactly
-`2*i*m_rho*(H(q,p)+H(q,P)+H(Q,p))`, where `H` is the integrated odd-heat
-Hilbert form, `p,q` are the partner and aligned leading increments, and `P,Q`
-are their successor features. The same formula with the scale-resolved form
-`H_u` holds at every heat time for the exact complex signed zero sum. Lean
-proves that its positive-time integral is the reciprocal-gap Hilbert block, so
-scale, phase, multiplicity, and colour survive until the final displayed
-integration. The remaining frontier is a phase-sensitive cross-zero
-arithmetic estimate strong enough to improve the proved coarse Hilbert
-envelope and establish the critical first moment.
+The singularly weighted signed current is proved genuinely integrable, and
+Lean proves exactly that its normalized positive-time integral is
+`n_+ - n_-`. The ordinary heat trace tends to the zero index, so these
+continuous observables reconstruct positive inertia exactly. This is the
+abstract finite spectral layer only: it does not yet improve a zeta-zero
+proportion or prove RH. The next steps are to retain eta support-gap leakage
+and finite-compression leakage as exact positive operators, then determine
+whether their arithmetic evaluation supplies genuinely stronger certificate
+data.
 
 ## Mathematical Program
 

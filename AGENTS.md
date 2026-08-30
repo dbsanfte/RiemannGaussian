@@ -944,6 +944,14 @@ same-colour blocks vanish pointwise. Lean then proves that the reciprocal-gap
 Hilbert block is the positive-time integral of this richer scale-resolved zero
 sum. Thus the Gaussian--Hilbert bridge and rank-two coefficient interface are
 closed without discarding orientation, phase, channel, or heat-scale data.
+The abstract finite Hermitian spectral layer now has its own continuous
+signed heat carrier. Lean proves the `u^(-1/2)`-weighted signed current
+integrable, its normalized integral exactly equal to `n_+ - n_-`, and the
+ordinary heat trace convergent to the zero index. Positive inertia is therefore
+reconstructed exactly from the continuous observables. This is not yet an eta
+or zeta theorem. The next hybrid interfaces must name eta support-gap leakage
+and finite-compression leakage exactly before any inequality, and only then
+seek unconditional arithmetic control of the extra observables.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is
