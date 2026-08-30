@@ -407,6 +407,7 @@ import RiemannGaussian.Hybrid.EtaGeometricSignedGramLedger
 import RiemannGaussian.Hybrid.EtaGeometricZeroGram
 import RiemannGaussian.Hybrid.EtaGeometricNormalizedSignedPullback
 import RiemannGaussian.Hybrid.EtaGeometricNormalizedReflection
+import RiemannGaussian.Hybrid.EtaGeometricMixedReflectionTrace
 import RiemannGaussian.Hybrid.HigherMomentCeiling
 import RiemannGaussian.Hybrid.HigherMomentHeatCeiling
 import RiemannGaussian.Hybrid.HigherMomentIndependentHeat

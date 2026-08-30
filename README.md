@@ -52,24 +52,27 @@ it is the permutation `P` sending each enumerated zero to its critical-line
 reflection. Thus complete whitening cancels the eta amplitudes. The immediate
 route is instead to retain the coupled normal form `B = K P K` and derive a
 literal eta-arithmetic mixed trace or spectral observable before that
-cancellation. No stronger zero proportion will be claimed until such an
-eta-specific estimate is proved.
+cancellation. Lean now checks the first such observable, the normalized mixed
+trace `Re tr(PK) / Re tr(K)`. The next route is its higher and cross-scale
+moment hierarchy. No stronger zero proportion will be claimed until an
+eta-specific estimate on that richer hierarchy is proved.
 
 ## Latest Update
 
-Lean now transports critical-line reflection to a permutation matrix `P` on
-the enumerated finite zero window. For the actual multiplicity-weighted eta
-synthesis matrix it proves `P Cᴴ = Cᵀ`, while the existing signed coordinate
-block is exactly `C Cᵀ`. Consequently the zero-space pullback has the exact
-normal form `B = K P K`, with `K = Cᴴ C`.
+Lean now retains the first scalar coupling between the positive eta metric `K`
+and zero reflection `P`. It defines the positive mass
+`m₀ = Re tr(K)` and mixed trace `m₁ = Re tr(PK)`, then proves that `m₀` is
+exactly the Hermitian eta Gram trace while `m₁` is exactly the literal signed
+eta-window trace.
 
-At every separated geometric block Lean cancels the checked inverse metric and
-proves `A = K⁻¹ B K⁻¹ = P`. Hence `A² = I`, and its trace is exactly the number
-of fixed indices of zero reflection. For every nonnegative finite zeta-zero
-window, one odd prime makes all of these identities hold eventually. This is
-not an `18/18` result: it rigorously shows that full whitening erases the eta
-amplitudes. The next hard step is therefore a mixed arithmetic estimate that
-retains the coupling between `K` and `P`, rather than an estimate of `A` alone.
+The colour split survives intact:
+`m₀ − m₁ = 2·offImag` and
+`m₀ + m₁ = 2·(onLine + offReal)` at the real-trace level. Consequently
+`−m₀ ≤ m₁ ≤ m₀`. For every nonempty nonnegative finite zeta-zero window, one
+odd prime makes `m₀ > 0` and the amplitude-sensitive balance
+`m₁ / m₀ ∈ [-1,1]` at all sufficiently late blocks. This is not a stronger
+zero proportion. The next hard step is to build and arithmetically estimate
+higher and cross-scale mixed `(P,K)` moments without collapsing them to `P`.
 
 ## Mathematical Program
 

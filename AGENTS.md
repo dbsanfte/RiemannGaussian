@@ -1100,9 +1100,15 @@ obeys `P Cᴴ = Cᵀ`, and the signed coordinate block is `C Cᵀ`. Therefore
 that full whitening cancels all eta amplitudes and cannot be the arithmetic
 observable by itself. The next obligation is to retain the coupled pair
 `(K,P)` through mixed traces, one-sided normalization, or an equivalent
-information-preserving construction, and then prove an eta-arithmetic estimate
-that excludes the sharp finite obstruction. That quantitative estimate remains
-necessary for any stronger zeta-zero proportion and ultimately for RH.
+information-preserving construction. Lean now checks the first scalar layer:
+`m₀ = Re tr(K)` is exactly the positive Hermitian eta trace and
+`m₁ = Re tr(PK)` is exactly the signed eta trace. Their difference is twice
+the imaginary off-line mass and their sum is twice the on-line-plus-real mass,
+so `-m₀ ≤ m₁ ≤ m₀`; on nonempty separated windows `m₁/m₀ ∈ [-1,1]`.
+The next obligation is to retain higher powers and cross-scale versions of
+this `(P,K)` coupling and prove an eta-arithmetic estimate that excludes the
+sharp finite obstruction. That quantitative estimate remains necessary for
+any stronger zeta-zero proportion and ultimately for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is

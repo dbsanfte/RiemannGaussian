@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Complete eta whitening is exactly the reflected-zero permutation"
-    lineOne := "eta whitening"
-    lineTwo := "K⁻¹ B K⁻¹ = P"
+    label := "The first amplitude-sensitive eta reflection balance lies in [-1,1]"
+    lineOne := "mixed eta trace"
+    lineTwo := "Re tr(PK)/tr(K)"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.exists_prime_eventually_normalizedSignedZeroPullback_eq_reflection
+      ``RiemannGaussian.exists_prime_eventually_positive_zeroGramTraceMass_and_reflectionBalance_mem_Icc
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "retain the K-reflection coupling and estimate it arithmetically.</text>\n" ++
+      "build higher and cross-scale (P,K) moments and estimate them arithmetically.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -769,8 +769,11 @@ run_cmd do
         "semidefinite. Lean now proves P*C^*=C^T for the reflected-zero permutation P and " ++
         "Signed=C*C^T. Therefore B=K*P*K and complete whitening gives A=P, with A^2=I and trace " ++
         "equal to the number of fixed reflection indices. This shows that full whitening cancels " ++
-        "the eta amplitudes. An arithmetic estimate retaining the coupled pair (K,P) has not yet " ++
-        "been proved. " ++
+        "the eta amplitudes. Lean now retains m0=Re tr(K) and m1=Re tr(PK). These are exactly the " ++
+        "positive Hermitian and signed literal eta traces, with m0-m1 twice the imaginary off-line " ++
+        "mass and m0+m1 twice the on-line-plus-real mass. Hence -m0<=m1<=m0, and every nonempty " ++
+        "eventually separated window has m0>0 and m1/m0 in [-1,1]. Higher and cross-scale mixed " ++
+        "moments and their arithmetic estimates have not yet been proved. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -878,8 +881,11 @@ run_cmd do
         "A=K^-1*B*K^-1 is Hermitian with I-A and I+A positive semidefinite. The reflected-zero " ++
         "permutation P satisfies P*C^*=C^T, so Signed=C*C^T, B=K*P*K, and complete whitening " ++
         "collapses exactly to A=P. It squares to I and its trace counts fixed reflection indices. " ++
-        "The remaining step is to retain K coupled to P and derive an eta-arithmetic mixed trace " ++
-        "or spectral estimate before complete cancellation. " ++
+        "Lean now retains K coupled to P through m0=Re tr(K) and m1=Re tr(PK), identifies these " ++
+        "with the positive and signed literal eta traces, and proves the exact colour identities " ++
+        "m0-m1=2*offImag and m0+m1=2*(onLine+offReal). The normalized balance lies in [-1,1] on " ++
+        "every nonempty separated window. The remaining step is to build higher and cross-scale " ++
+        "mixed (P,K) moments and derive eta-arithmetic estimates before complete cancellation. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
