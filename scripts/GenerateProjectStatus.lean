@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "Critical top-work boundedness is equivalent to one square-root prefix bound"
-    lineOne := "top eta work iff"
-    lineTwo := "sqrt prefix bound"
-    role := "reduction"
+    label := "The square-root prefix is one shifted positive-measure interference integral"
+    lineOne := "top eta prefix ="
+    lineTwo := "one interference integral"
+    role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport_criticalScale_eventuallyBounded_iff_topPrefix
+      ``RiemannGaussian.norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopPrefix_eq_integral_halfIntegrand
   }
 ]
 
@@ -523,8 +523,13 @@ run_cmd do
         "It proves that critical 3/2 boundedness of T_N is exactly equivalent, " ++
         "locally and globally, to square-root boundedness of the one literal " ++
         "phase-retaining prefix C_(m-1,N+1). The global prefix bound implies RH. " ++
-        "That half-power arithmetic cancellation estimate is not proved; it is " ++
-        "now the isolated frontier.")),
+        "Lean now identifies that prefix, in norm, with one absolutely integrable " ++
+        "critical-half interference integral over the shifted positive eta-tail " ++
+        "measure. Its explicit factor retains the two reciprocal horizontal tilts, " ++
+        "completion coefficients, cutoff phase, and ordinate oscillation. The direct " ++
+        "positive-measure triangle envelope is also proved, but it discards the " ++
+        "required phase cancellation. The half-power arithmetic cancellation estimate " ++
+        "is not proved; it remains the isolated frontier.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),

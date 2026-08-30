@@ -26,34 +26,24 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean has reduced the critical finite-work obstruction to one explicit
-square-root cancellation estimate. If `m` is the multiplicity of a
-hypothetical right-half off-line zero, the exact work splits as
-`W_N = S_N + T_N`. Lean proves the new head and every transported order below
-`m-1` satisfy
+Lean now identifies the isolated top prefix `C_(m-1,N+1)` with one integral
+over the positive shifted eta-tail measure. Lower-moment vanishing first turns
+the literal finite prefix into a complementary tail coupling; after extracting
+the common critical half-tilt, Lean proves
 
-`(2N+1)^(3/2) * ||S_N|| -> 0`,
+`||C_(m-1,N+1)|| = ||integral u^(m-1) exp(-u/2) F_(rho,N+1)(u) dmu_(N+1)(u)||`.
 
-and simplifies the sole top term to
+The explicit complex factor `F` retains both reciprocal horizontal tilts,
+completion coefficients, cutoff phase, and ordinate oscillation. Lean also
+proves integrability and the direct positive-measure triangle bound. That
+bound discards the interference phase and does not yield the needed saving.
 
-`T_N = m * Delta_N * C_(m-1,N+1)`.
-
-Here `C_(m-1,N+1)` is one literal completed, phase-retaining finite eta-prefix
-coupling. Lean now proves `(2N+1) * Delta_N -> 2` and the exact scale identity
-
-`(2N+1)^(3/2)||T_N|| = m*((2N+1)Delta_N)*(2N+1)^(1/2)||C_(m-1,N+1)||`.
-
-Consequently the top-work bound is equivalent, locally and globally, to
-eventual square-root boundedness of `C_(m-1,N+1)`. That global prefix estimate
-would force every nontrivial zero onto the critical line and prove Mathlib's
-`RiemannHypothesis`.
-
-This is not RH. It rigorously identifies the phase-bearing obstruction that an
-unconditional arithmetic cancellation theorem must now defeat. All deterministic
-transport factors and lower terms have been removed; the remaining target is
-the half-power saving
-`(2N+1)^(1/2)||C_(m-1,N+1)|| = O(1)`. No theorem yet supplies it without
-assuming information equivalent to zero locations.
+This is not RH. The open arithmetic theorem remains
+`(2N+1)^(1/2)||C_(m-1,N+1)|| = O(1)` uniformly at nontrivial zeros; the new
+identity places that theorem on one concrete phase-sensitive integral rather
+than an opaque finite coupling. Proving its cancellation without assuming
+zero locations would imply Mathlib's `RiemannHypothesis` through the already
+checked finite-work reduction.
 
 ## Mathematical Program
 
