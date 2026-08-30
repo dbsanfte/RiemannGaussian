@@ -1136,10 +1136,16 @@ the actual eta metric gives positive carriers `E₊KE₊` and `E₋KE₋`. Under
 already checked positive-definiteness hypothesis, `ker(E₊KE₊)` is exactly the
 reflection-odd subspace, its nullity is the upper off-line count, and the two
 compressed traces are exactly the on-line-plus-real and off-line-imaginary eta
-masses. The next obligation is to extract the normalized finite spectral atom
-model of `E₊KE₊` and prove an eta-arithmetic estimate excluding the sharp
-finite obstruction. That estimate remains necessary for any stronger
-zeta-zero proportion and ultimately for RH.
+masses. Lean now extracts the literal uniform eigenvalue-atom model of
+`E₊KE₊`: its nonnegative nodes are the eigenvalues divided by their positive
+mean, its ordinary and heat moments are exact normalized matrix traces, and
+its zero mass is exactly the upper off-line-pair fraction. Its certificate is
+therefore the literal critical-zero fraction. Lean also proves that this
+fraction is strictly greater than `13/18` exactly when the normalized ordinary
+heat trace of `E₊KE₊` crosses below `5/36` at some nonnegative scale. The next
+obligation is the eta-arithmetic estimate establishing that crossing, or a
+stronger information-preserving exclusion. Such an estimate remains necessary
+for any stronger zeta-zero proportion and ultimately for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is

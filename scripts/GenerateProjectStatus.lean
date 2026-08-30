@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "The positive eta parity carrier has exact off-line nullity"
-    lineOne := "eta parity carrier"
-    lineTwo := "exact bad nullity"
+    label := "The literal eta atom certificate has an exact heat separator"
+    lineOne := "eta eigenvalue atoms"
+    lineTwo := "exact heat separator"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaGeometricReflectionParityCertificateInterface
+      ``RiemannGaussian.pairedEtaGeometricReflectionEvenAtomModel_thirteen_eighteen_lt_criticalFraction_iff_exists_rtrace_heat
   }
 ]
 
@@ -780,7 +780,11 @@ run_cmd do
         "hierarchy now has a checked positive normalized Hankel realization, but positive K makes " ++
         "P*K invertible, so that spectrum has the wrong zero-atom semantics. Reflection-parity " ++
         "compression supplies the correct off-line nullity and exact eta-weighted colour masses. " ++
-        "Its normalized atom extraction and arithmetic estimates have not yet been proved. " ++
+        "Lean now extracts its uniform normalized nonnegative eigenvalue atoms. Every power and " ++
+        "heat moment is an exact normalized trace of E+*K*E+, zero mass is the upper off-line-pair " ++
+        "fraction, and the resulting certificate is the literal critical-zero fraction. Strict " ++
+        "improvement over 13/18 is exactly a normalized ordinary-heat crossing below 5/36. The " ++
+        "eta-arithmetic crossing estimate has not yet been proved. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -910,8 +914,12 @@ run_cmd do
         "eta-weighted carriers E+*K*E+ and E-*K*E- are positive semidefinite. Under positive " ++
         "definiteness of K, the first has nullity exactly equal to the upper off-line-pair count, " ++
         "the second has that exact rank, and their traces recover the on-line-plus-real and " ++
-        "off-line-imaginary eta masses. The remaining step is to extract the normalized spectral " ++
-        "atom model of E+*K*E+ and prove an eta-arithmetic bound excluding the sharp finite adversary. " ++
+        "off-line-imaginary eta masses. Lean now extracts the normalized uniform eigenvalue-atom " ++
+        "model of E+*K*E+. Its nodes are nonnegative, every ordinary and heat moment is an exact " ++
+        "normalized matrix trace, and its zero mass is precisely the upper off-line-pair fraction. " ++
+        "Thus its certificate is the literal critical-zero fraction, with strict improvement over " ++
+        "13/18 equivalent to one normalized ordinary-heat crossing below 5/36. The remaining step " ++
+        "is to prove that crossing or a stronger exclusion from literal eta arithmetic. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
@@ -920,8 +928,8 @@ run_cmd do
         "does not instantiate the eta window. The independent ordinary heat trace now separates " ++
         "strict improvement exactly: it crosses below 5/36 at some nonnegative scale if and only if " ++
         "the certificate is greater than 13/18, while the sharp model never crosses at finite scale. " ++
-        "What is not yet proved is the normalized eigenvalue-atom extraction from the parity " ++
-        "carrier and its arithmetic crossing bound, another independent observable nonzero on " ++
+        "What is not yet proved is the parity carrier's arithmetic crossing bound, another " ++
+        "independent observable nonzero on " ++
         "the sharp root channels, the additional normalized " ++
         "moments, a phase-preserving aggregate estimate for the paired cubic one-gap channel, higher " ++
         "closed-path coefficients, or genuinely mixed " ++

@@ -38,41 +38,40 @@ window.
 
 Lean currently proves a sharp abstract `13/18` degree-four certificate, but
 that number is not yet a zeta-zero proportion: the prescribed degree-four
-moments and separator bound have not been derived from the literal eta window.
-The coupled zero-index data are the positive eta metric `K = CᴴC` and the
-critical-line reflection permutation `P`. The mixed hierarchy
-`Re tr((PK)^r)` remains available as a phase-preserving companion channel, but
-its spectral zero atom does not encode off-line zeros when `K` is positive
-definite. The certificate route therefore now uses the reflection projections
-`E₊ = (I+P)/2` and `E₋ = (I-P)/2`, with positive eta carriers
-`E₊KE₊` and `E₋KE₋`. This keeps the count semantics and eta amplitudes coupled:
-the nullity of `E₊KE₊` is exactly the upper off-line-pair count, while the
-trace of `E₋KE₋` is the literal off-line-imaginary eta mass.
+moments have not been derived from the literal eta window. The coupled
+zero-index data are the positive eta metric `K = CᴴC` and the critical-line
+reflection permutation `P`. The mixed hierarchy `Re tr((PK)^r)` remains
+available as a phase-preserving companion channel, but its spectrum has the
+wrong zero-atom semantics when `K` is positive definite. The certificate
+carrier is instead the positive reflection-even compression
+`A₊ = E₊KE₊`, where `E₊ = (I+P)/2`; its nullity is exactly the upper
+off-line-pair count while its nonzero eigenvalues retain eta arithmetic.
 
-The immediate frontier is to extract the normalized finite spectral atom
-model of `E₊KE₊`, connect its zero mass exactly to that checked nullity, and
-derive eta-arithmetic moment, heat, or cross-scale bounds that exclude the
-sharp `13/18` adversary. That is the route toward a first certificate stronger
-than Anthropic's benchmark and ultimately `18/18`. No stronger zero proportion
-will be claimed until the arithmetic estimate itself is checked in Lean.
+The normalized finite eigenvalue-atom model of `A₊` is now checked in Lean,
+including an exact ordinary-heat separator: its literal critical-zero
+fraction is greater than `13/18` exactly when a normalized heat trace of `A₊`
+crosses below `5/36` at some nonnegative scale. The immediate frontier is to
+prove that crossing, or a stronger moment/cross-scale exclusion, directly
+from the retained eta arithmetic. Repeating the same information-preserving
+strategy with successively stronger exclusions is the route toward `18/18`.
+No improved zeta-zero proportion will be claimed until its arithmetic bound
+is checked in Lean.
 
 ## Latest Update
 
-Lean now proves that `E₊` and `E₋` are orthogonal Hermitian
-positive-semidefinite projections resolving the identity. Their traces are
-computed from the genuine zeta-zero window: `tr(E₋)` is exactly the number of
-upper off-line reflection pairs, and `tr(E₊)` is that number plus the
-critical-line count. On every nonempty window, the resulting count certificate
-`1 - 2 tr(E₋)/N` is exactly the represented critical-zero proportion.
+Lean now constructs the literal uniform eigenvalue-atom model of
+`A₊ = E₊KE₊` on every nonempty eta-separated zero window. The normalizing
+trace is proved strictly positive; every atom has weight `1/N`, every node is
+nonnegative, total mass and first moment are one, and every ordinary moment
+and heat moment is exactly a normalized matrix-power or Hermitian heat trace
+of `A₊`.
 
-The eta-weighted carriers `E₊KE₊` and `E₋KE₋` are also proved positive
-semidefinite. Whenever the already checked feature separation makes `K`
-positive definite, Lean proves that `ker(E₊KE₊)` is precisely the
-reflection-odd subspace, its nullity is exactly the upper off-line count, and
-`rank(E₋KE₋)` equals that same count. Their real traces recover exactly the
-existing on-line-plus-real and off-line-imaginary eta colour masses. This fixes
-the certificate semantics but does not yet improve `13/18`; finite spectral
-atom extraction and the decisive eta-arithmetic separator remain open.
+The model's zero mass is proved equal to `nullity(A₊)/N`, hence exactly the
+upper off-line-pair fraction. Its certificate is therefore exactly the
+represented critical-zero fraction, and Lean reduces strict improvement over
+`13/18` to one explicit normalized heat-trace crossing below `5/36`. No such
+eta-arithmetic crossing has yet been proved, so this slice establishes a
+literal, information-preserving target rather than an improved proportion.
 
 ## Mathematical Program
 
