@@ -69,12 +69,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh
   },
   {
-    label := "Poisson decay is equivalent to sublinear cumulative upper spectral height"
-    lineOne := "Poisson decay iff"
-    lineTwo := "H(T) = o(T) reduction"
-    role := "reduction"
+    label := "Finite eta zero-window blocks satisfy exact matrix cutoff transport"
+    lineOne := "eta matrix work"
+    lineTwo := "increment + flux"
+    role := "bridge"
     theoremName :=
-      ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
+      ``RiemannGaussian.topPrefixFiniteZeroWindowMatrixWork_eq_incrementEnergy_add_flux
   },
   {
     label := "The first K eta log frequencies satisfy a Hilbert bound with constant 26"
@@ -667,9 +667,15 @@ run_cmd do
         "A checked finite integration-by-parts recurrence now evaluates every atom " ++
         "as an odd-endpoint complex power minus an even-endpoint complex power with " ++
         "explicit polynomial log coefficients. The full ledger is therefore a finite " ++
-        "arithmetic endpoint correlation with no interval integrals remaining. " ++
-        "Arithmetic cancellation estimates for " ++
-        "the distinct-zero sum remain open.")),
+        "arithmetic endpoint correlation with no interval integrals remaining. Lean " ++
+        "also proves the weighted Montgomery--Vaughan Hilbert inequality with constant " ++
+        "26 and specializes it to the separated frequencies log(k+1). The multi-cutoff " ++
+        "eta zero-window block now has an exact matrix-valued cutoff work law: its " ++
+        "successor difference is the arithmetic feature-increment outer product plus " ++
+        "both successor cross terms, entry by entry. The arithmetic increment is " ++
+        "identified with the existing head-plus-prefix work and its leading/remainder " ++
+        "split. Arithmetic cancellation estimates for the distinct-zero sum, and a " ++
+        "transform connecting it to the Hilbert kernel, remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -693,7 +699,11 @@ run_cmd do
         "away from a finite cutoff-centered eta-moment Gram kernel, and that kernel is " ++
         "expanded exactly into a finite triple sum over literal retained eta intervals. " ++
         "Every interval is further evaluated into explicit odd--even endpoint complex " ++
-        "powers with finite polynomial logarithmic coefficients. The required signed " ++
+        "powers with finite polynomial logarithmic coefficients. The packed cutoff " ++
+        "family also obeys an exact entrywise matrix work law whose increment is the " ++
+        "proved leading-plus-remainder eta arithmetic increment. The proved eta-log " ++
+        "Montgomery--Vaughan estimate is not yet connected to that matrix observable. " ++
+        "The required signed " ++
         "finite-endpoint correlation estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++
         "to RH"))

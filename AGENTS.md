@@ -890,9 +890,18 @@ Lean further proves that the first `K` literal eta frequencies `log(k+1)` are
 injective with admissible uniform gap `1/K`, and specializes the bilinear
 theorem as `pairedEtaFiniteLog_mvHilbert_twentySix`. This closes the elementary
 frequency-spacing side but is not yet an estimate for the eta ledger. The next
-slice must identify an averaging or transform that produces the required
-`1/(log n-log m)` kernel from the checked endpoint correlation; that bridge
-may not be assumed.
+matrix-hybrid layer is now concrete as well. Advancing every member of an
+arbitrary packed cutoff family by one gives an exact matrix work identity for
+the genuine multiplicity-weighted zero-window block: the block difference is
+the arithmetic feature-increment outer product plus both successor cross
+terms, entry by entry. Lean identifies that feature increment with the existing
+head-plus-prefix arithmetic increment and proves its leading/remainder split
+in both hyperbolic coordinates. The outer products remain the project's
+complex-symmetric transpose products; no complex-linear Hermitian compression
+is inferred. The next slice must transport the leading/remainder split through
+this matrix current and identify an averaging or transform that produces the
+required `1/(log n-log m)` kernel from the checked endpoint correlation; that
+bridge may not be assumed.
 
 ## Soundness invariant
 

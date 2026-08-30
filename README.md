@@ -26,20 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now connects the proved Montgomery--Vaughan inequality to the literal eta
-endpoint spectrum. For the first `K` frequencies `k ↦ log(k+1)`, Lean proves
-injectivity and the uniform admissible separation
-`1/K ≤ |log(r+1)-log(s+1)|` for `r ≠ s`. The theorem
-`RiemannGaussian.pairedEtaFiniteLog_mvHilbert_twentySix` therefore gives the
-explicit bilinear bound
+Lean now proves an exact matrix-valued cutoff conservation law for the genuine
+finite eta zero-window blocks. Advancing every packed cutoff by one changes the
+full complex-symmetric block by precisely the arithmetic feature-increment
+outer product plus its two cross terms with the successor feature. The theorem
+`RiemannGaussian.topPrefixFiniteZeroWindowMatrixWork_eq_incrementEnergy_add_flux`
+holds entry by entry, so correlations between distinct cutoff scales are not
+collapsed to a trace or norm.
 
-`|Σ_{r≠s} x_r conj(z_s)/(log(r+1)-log(s+1))|`
-`≤ 26 sqrt(K Σ|x_r|²) sqrt(K Σ|z_r|²)`.
-
-This closes the frequency-spacing side of the proposed attack. It still does
-not estimate the zero-pair endpoint ledger: a further checked averaging or
-transform identity must produce this Hilbert kernel from that correlation.
-No zero-location consequence is claimed by this slice.
+Lean also identifies that feature increment with the existing finite
+head-plus-prefix eta arithmetic and proves its leading/remainder split in both
+hyperbolic coordinates. This is the first concrete continuous/matrix-hybrid
+transport interface. It supplies no cancellation estimate by itself: the next
+step is to transport the leading/remainder split through the matrix current and
+connect the resulting cross-scale observable to the proved eta-log
+Montgomery--Vaughan bound.
 
 ## Mathematical Program
 
