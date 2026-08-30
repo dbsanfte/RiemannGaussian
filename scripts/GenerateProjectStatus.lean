@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The amplitude mismatch is the square of a normalized signed finite energy defect"
-    lineOne := "amplitude mismatch"
-    lineTwo := "finite energy square"
-    role := "reduction"
+    label := "The signed finite energy is one exact finite eta Gram integral"
+    lineOne := "signed finite energy"
+    lineTwo := "eta Gram integral"
+    role := "bridge"
     theoremName :=
-      ``RiemannGaussian.topPrefixAmplitudeImbalance_eq_sq_normalizedFiniteEnergyDefect
+      ``RiemannGaussian.integral_topPrefixFiniteEnergyGramKernel_eq_finiteEnergyDifference
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove arithmetic cancellation incompatible with the off-line work limit.</text>\n" ++
+      "prove summability of the normalized signed finite eta Gram integral.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -567,16 +567,22 @@ run_cmd do
         "finite energy difference E_N=A_N^2-B_N^2 divided by the total amplitude " ++
         "S_N=A_N+B_N equals A_N-B_N even when S_N=0. Thus the amplitude mismatch " ++
         "is exactly (E_N/S_N)^2. The numerator is also polarized into top-prefix " ++
-        "Gram energy plus one explicit finite cross phase.")),
+        "Gram energy plus one explicit finite cross phase. Lean now proves every " ++
+        "centered finite prefix is one literal centered Laplace integral over the " ++
+        "finite positive eta logarithmic measure. The two complementary completed " ++
+        "features are integrable on that common measure and integrate to the finite " ++
+        "partner terms. Their signed energy difference E_N is exactly the integral " ++
+        "of one explicit integrable real rank-one Gram kernel over the product " ++
+        "measure, with the product exchange and conjugation fully justified.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove from eta-specific finite Gram, Bessel, or orthogonality structure that " ++
-        "the square of the normalized signed finite prefix energy defect E_N/S_N is " ++
-        "summable over cutoffs at every nontrivial zero, without assuming zero " ++
-        "locations; Lean proves this universal summability statement is exactly RH"))
+        "Prove from the explicit signed finite eta Gram integral, using eta-specific " ++
+        "energy, Bessel, orthogonality, or transport structure, that the square of " ++
+        "E_N/S_N is summable over cutoffs at every nontrivial zero without assuming " ++
+        "zero locations; Lean proves this universal summability statement is exactly RH"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

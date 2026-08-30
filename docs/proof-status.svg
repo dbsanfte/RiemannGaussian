@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 385 modules · 9920 declarations · 8518 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 386 modules · 9941 declarations · 8534 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -75,11 +75,11 @@
     <text x="412" y="173">reciprocal extension</text>
     <text x="412" y="191">outer norm &lt; 1  ✓</text>
   </g>
-  <g class="proved reduction">
+  <g class="proved bridge">
     <rect x="500" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.topPrefixAmplitudeImbalance_eq_sq_normalizedFiniteEnergyDefect</title>
-    <text x="572" y="173">amplitude mismatch</text>
-    <text x="572" y="191">finite energy square  ✓</text>
+    <title>RiemannGaussian.integral_topPrefixFiniteEnergyGramKernel_eq_finiteEnergyDifference</title>
+    <text x="572" y="173">signed finite energy</text>
+    <text x="572" y="191">eta Gram integral  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
@@ -90,5 +90,5 @@
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: prove arithmetic cancellation incompatible with the off-line work limit.</text>
+  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: prove summability of the normalized signed finite eta Gram integral.</text>
 </svg>

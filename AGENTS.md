@@ -678,6 +678,15 @@ energy numerator also equals the nonnegative top-prefix Gram energy plus one
 explicit polarized cross phase. Hence the live target is square-summability of
 this normalized signed finite energy defect; its arithmetic proof remains
 open.
+Lean now further collapses every binomially defined centered finite prefix to
+one literal centered integral over the finite positive eta logarithmic
+measure. The two completion-weighted complementary finite terms are integrals
+of explicit integrable features on that common measure. Their signed energy
+difference is exactly one integrable real rank-one Gram kernel over the product
+measure, with every Fubini and conjugation step checked. Thus the live target
+is square-summability of this signed finite eta Gram integral divided by the
+total finite amplitude. The representation is unconditional; the summability
+estimate remains conjecture-strength.
 
 ## Soundness invariant
 

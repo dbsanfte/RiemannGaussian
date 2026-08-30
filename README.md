@@ -26,23 +26,26 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean has removed both infinite tails and the nonlinear norm difference from
-the current summability frontier. Lower-moment vanishing rewrites each
-top-prefix component magnitude exactly as the completion weight times a
-literal finite centered-prefix magnitude. If these two nonnegative finite
-amplitudes are `A_N` and `B_N`, define
+Lean now realizes the current frontier on one literal finite positive measure.
+Every binomially defined centered eta prefix is proved equal to a single
+centered Laplace integral over the finite eta logarithmic measure. The two
+completion-weighted complementary features are integrable on that common
+measure, and their integrals are exactly the finite partner terms whose
+magnitudes are `A_N` and `B_N`. Define
 
 `E_N = A_N^2-B_N^2` and `S_N = A_N+B_N`.
 
-Lean proves, including when `S_N=0`, that `E_N/S_N=A_N-B_N`. Consequently the
-original amplitude mismatch is exactly `(E_N/S_N)^2`. The signed numerator is
-also polarized as the top-prefix Gram energy plus one explicit cross phase
-against the conjugate finite term.
+Lean proves all product-measure integrability and Fubini obligations and shows
+that `E_N` is exactly the integral of one explicit signed rank-one Gram kernel
+over two copies of the finite eta measure. It also proves, including when
+`S_N=0`, that `E_N/S_N=A_N-B_N`; hence the original amplitude mismatch is
+exactly `(E_N/S_N)^2`.
 
 The open target is now concrete finite arithmetic: prove
-`Summable (fun N => (E_N/S_N)^2)` for every nontrivial zero by an eta-specific
-energy, Bessel, or orthogonality argument. Lean proves that universal statement
-equivalent to RH; it does not prove the required summability.
+`Summable (fun N => (E_N/S_N)^2)` for every nontrivial zero from the explicit
+signed eta Gram integral, by an eta-specific energy, Bessel, orthogonality, or
+transport argument. Lean proves that universal statement equivalent to RH; it
+does not prove the required summability.
 
 ## Mathematical Program
 
