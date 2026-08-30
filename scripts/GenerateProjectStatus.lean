@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The first moment of the finite eta flux-kernel integrals detects the critical line"
-    lineOne := "eta flux integral"
+    label := "The first moment of the isolated leading eta flux detects the critical line"
+    lineOne := "leading eta flux"
     lineTwo := "summable iff line"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.summable_oddEndpoint_mul_abs_integral_pairedEtaTopPrefixFiniteEnergyFluxKernel_iff_re_eq_half
+      ``RiemannGaussian.summable_oddEndpoint_mul_abs_topPrefixFiniteEnergyLeadingFlux_iff_re_eq_half
   }
 ]
 
@@ -610,19 +610,24 @@ run_cmd do
         "Subtracting |F_N| from the envelope integral gives a checked nonnegative " ++
         "cancellation reserve and the exact ledger |F_N|+reserve_N=integral envelope_N. " ++
         "Partner reflection swaps both components and makes the signed energy, work, " ++
-        "increment energy, and flux odd, while |F_N| is invariant. This is a " ++
-        "representation of the remaining cancellation problem; its universal " ++
-        "arithmetic estimate remains open.")),
+        "increment energy, and flux odd, while |F_N| is invariant. Lean now splits " ++
+        "each finite work into its unique degree-one leading transport and a remainder " ++
+        "whose head and strict lower hierarchy all have shift degree at least two " ++
+        "(with the head itself leading at multiplicity one). The two endpoint decays " ++
+        "prove unconditionally that the remainder flux R_N has a finite critical first " ++
+        "absolute moment. Since F_N=L_N+R_N, leading-flux summability is equivalent " ++
+        "to full-flux summability, locally to the critical-line equation, and " ++
+        "universally to RH. The eta-specific estimate for L_N remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove universally, without assuming zero locations, that the first moment of " ++
-        "the absolute integrals of the explicit finite eta successor-flux kernels is " ++
-        "finite. Lean proves the kernel integral equals F_N, provides a phase-free " ++
-        "envelope and nonnegative cancellation-reserve ledger, and proves this remaining " ++
-        "summability statement equivalent to RH. No eta-specific phase cancellation or " ++
+        "Prove universally, without assuming zero locations, that the critical first " ++
+        "absolute moment of the isolated degree-one leading eta current L_N is finite. " ++
+        "Lean proves F_N=L_N+R_N and proves the entire remainder R_N summable from its " ++
+        "degree-two shift gain. Leading-current summability is equivalent to the full " ++
+        "flux criterion and hence to RH. No eta-specific phase cancellation or " ++
         "coercivity estimate establishing it is currently known"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")

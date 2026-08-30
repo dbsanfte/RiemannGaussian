@@ -743,6 +743,17 @@ energy, work, and flux odd; the absolute flux is invariant. The open estimate
 is therefore the first moment of these literal finite kernel integrals. Do not
 replace it by summability of the phase-free envelope: that loses precisely the
 cross-component and within-integral phase cancellation that the proof needs.
+Lean now splits each explicit finite work into its unique slow term and a
+remainder. At multiplicity one the negative head is the slow term. At every
+higher multiplicity it is the single top lower-order transport term, with
+exactly one factor of `Delta_N`; the head and every strict lower term left in
+the remainder have shift degree at least two. The two endpoint decays then
+prove unconditionally that `sum_N (2N+1) * |R_N| < infinity` for the completed
+remainder flux. Since `F_N = L_N + R_N`, Lean proves that the leading-flux
+first moment is summable exactly when the full flux first moment is, locally
+exactly on the critical line and universally exactly under RH. This is still
+a reduction. The current open theorem is the eta-specific cancellation or
+coercivity estimate for the isolated degree-one leading current `L_N`.
 
 ## Soundness invariant
 

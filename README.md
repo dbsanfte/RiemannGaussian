@@ -26,20 +26,18 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now realizes the remaining successor flux `F_N` as one literal finite-eta
-integral. Its real kernel pairs each explicit head-plus-lower-prefix arithmetic
-increment with the corresponding completed successor feature on the finite
-positive logarithmic eta measure, and Lean proves that its integral is exactly
-`F_N`. The kernel is integrable and has an explicit phase-free envelope.
+Lean now splits the remaining successor flux exactly as `F_N = L_N + R_N`.
+Here `L_N` contains only the unique degree-one cutoff transport in each
+complementary component (or the new head in the multiplicity-one case), while
+`R_N` contains the head and strict lower hierarchy, all with shift degree at
+least two. Lean proves unconditionally that
+`sum_N (2N+1) * |R_N|` is finite.
 
-Subtracting `|F_N|` from the envelope integral defines a checked nonnegative
-cancellation reserve, with the exact ledger
-`|F_N| + reserve_N = integral envelope_N`. Partner reflection swaps the two
-components and makes the signed energy, increment energy, work, and flux odd;
-the absolute flux is invariant. Thus the open RH-equivalent theorem is now the
-weighted absolute summability of these explicit finite kernel integrals. The
-component-increment energy was already discharged unconditionally; no theorem
-yet supplies the required eta-specific phase cancellation for the flux.
+It follows, in Lean, that the critical first moment of `L_N` is summable
+exactly when that of `F_N` is, hence exactly when the zero lies on the critical
+line; the universal statement is equivalent to RH. This narrows the open
+arithmetic problem to one explicit leading current per complementary
+component. No theorem yet proves its required cancellation or coercivity.
 
 ## Mathematical Program
 
