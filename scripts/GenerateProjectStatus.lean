@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The finite eta energy obeys exact one-step cutoff transport"
-    lineOne := "finite eta energy"
-    lineTwo := "cutoff transport"
+    label := "The finite eta energy increments are explicit head-plus-prefix works"
+    lineOne := "energy increments"
+    lineTwo := "head + prefixes"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.tendsto_sq_sum_range_topPrefixFiniteEnergyWork_div_total
+      ``RiemannGaussian.abs_topPrefixFiniteEnergyWork_le_arithmetic_increment_energy_add_flux
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove weighted coercivity for the explicit finite eta energy flux.</text>\n" ++
+      "prove weighted coercivity for the head-plus-prefix eta energy flux.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -579,16 +579,23 @@ run_cmd do
         "Its absolute value is bounded by the two increment energies and the two " ++
         "increment--successor norm products. Both component amplitudes tend to zero, " ++
         "so finite work sums telescope to E_N; after division by S_N their squares " ++
-        "converge exactly to the original amplitude mismatch.")),
+        "converge exactly to the original amplitude mismatch. Lean now expands every " ++
+        "individual centered tail across one cutoff as the new eta support interval " ++
+        "plus a triangular successor hierarchy. Below zero multiplicity, complete-" ++
+        "moment vanishing replaces every tail by a finite prefix and cancels the top " ++
+        "successor order. Thus both component increments, and hence the absolute " ++
+        "energy-work bound, contain only one explicit head interval and strictly lower " ++
+        "finite centered prefixes.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
         "Prove an eta-specific weighted summability or coercivity estimate for the " ++
-        "explicit one-step increment-energy and successor cross-flux ledger strong " ++
-        "enough that the square of E_N/S_N is summable at every nontrivial zero, " ++
-        "without assuming zero locations; Lean proves universal summability is exactly RH"))
+        "explicit head-plus-lower-prefix increment energies and their successor cross " ++
+        "fluxes, strong enough that the square of E_N/S_N is summable at every " ++
+        "nontrivial zero without assuming zero locations; Lean proves universal " ++
+        "summability is exactly RH"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

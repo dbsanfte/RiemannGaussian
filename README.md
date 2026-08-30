@@ -26,21 +26,26 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now gives the finite eta Gram frontier an exact one-step cutoff transport
-law. For the completion-weighted finite partner terms `P_N` and `Q_N`, define
+Lean has now eliminated the abstract consecutive differences from the finite
+eta energy transport. For any centered eta tail, Lean proves an exact cutoff
+recurrence: the value at `N` is one newly exposed support interval plus a
+finite binomial hierarchy of successor tails. Below a zeta zero's analytic
+multiplicity, complete-moment vanishing turns every such tail into the negative
+literal finite prefix and cancels the top successor order.
 
-`E_N = |P_N|^2-|Q_N|^2` and `J_N = E_N-E_(N+1)`.
+Consequently each partner or conjugate increment is exactly a
+completion-weighted finite work consisting of one negative head interval and
+strictly lower-order successor prefixes. Substituting these identities into
+the previous conservation law gives a fully finite arithmetic bound for
 
-Writing `dP_N=P_N-P_(N+1)` and `dQ_N=Q_N-Q_(N+1)`, Lean proves exactly that
-`J_N` is the signed increment energy
-`|dP_N|^2-|dQ_N|^2` plus the two explicit successor cross-flux terms. Its
-absolute value is bounded by the corresponding increment energies and
-increment--successor norm products. Both component amplitudes tend to zero,
-so these works telescope and their ordered tail sums recover `E_N`, the
-normalized defect `E_N/S_N`, and its squared amplitude mismatch.
+`J_N = E_N-E_(N+1)`
+
+in terms of the two explicit arithmetic increment energies and their two
+cross-flux products against the successor finite terms. No infinite tail or
+unnamed cutoff difference remains in this local ledger.
 
 The open target is now local finite arithmetic: prove a weighted summability
-or coercivity estimate for that explicit increment-energy/cross-flux ledger
+or coercivity estimate for these head-plus-lower-prefix energy and flux terms
 strong enough to make `Summable (fun N => (E_N/S_N)^2)` at every nontrivial
 zero. Lean proves the universal summability statement equivalent to RH; it
 does not prove the required estimate.

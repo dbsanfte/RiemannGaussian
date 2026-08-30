@@ -696,6 +696,15 @@ its ordered tail sums recover the signed energy, the normalized defect, and
 the amplitude mismatch. The open target is a weighted eta-specific
 summability or coercivity estimate for this local ledger; no sign for the flux
 is currently proved.
+Lean now removes the abstract consecutive differences from that ledger. Every
+absolute-coordinate centered eta tail satisfies the exact head-interval plus
+binomial successor-tail transport. Below the analytic zero multiplicity,
+complete-moment vanishing changes all successor tails into literal finite
+prefixes and cancels the top order. Both partner and conjugate energy
+increments are therefore explicit completion-weighted works containing one
+negative new support interval and only strictly lower-order successor
+prefixes. The checked absolute energy-work bound has been rewritten entirely
+in terms of these finite arithmetic increments and their successor fluxes.
 
 ## Soundness invariant
 
