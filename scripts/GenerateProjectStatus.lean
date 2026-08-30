@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "Throughout the open critical strip, eta multiplier unit norm is equivalent to the critical line"
-    lineOne := "all-height eta"
-    lineTwo := "unit norm iff line"
+    label := "The centered completed eta residual has the norm of one common shifted-measure coupled core"
+    lineOne := "centered eta residual"
+    lineTwo := "shifted coupled core"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.normSq_pairedEtaLaplaceReflectionMultiplier_eq_one_iff_re_eq_half
+      ``RiemannGaussian.norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidual_eq_shiftedCoupledCore
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "force eta multiplier unit norm at zeros by independent arithmetic.</text>\n" ++
+      "control the shifted complementary eta core by independent arithmetic.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -443,18 +443,25 @@ run_cmd do
         "completion-weighted envelope tends to zero and is strictly smaller than the old " ++
         "near-sharp residual envelope whenever both former cutoffs apply. Exact " ++
         "polarization writes the two completed finite prefix norm-square difference as " ++
-        "|R_N|^2+2*Re(D_N*conj(R_N)), isolating the only sign-bearing cross-phase. The " ++
-        "needed eta-specific constraint on that phase is not proved, and these results " ++
-        "do not imply RH.")),
+        "|R_N|^2+2*Re(D_N*conj(R_N)), isolating the only sign-bearing cross-phase. Lean " ++
+        "now translates the discarded tail by a_N=log(2N+1), proves the shifted measure " ++
+        "is almost everywhere supported on positive time, and proves absolute " ++
+        "integrability of its Laplace and separated Fourier--Laplace moments. The rho " ++
+        "and 1-conj(rho) tails become complementary real tilts of this same measure at " ++
+        "one frequency. Conjugation is exactly frequency reversal plus the relative " ++
+        "phase exp(2*I*rho.im*a_N). The completed residual is a common unit phase times " ++
+        "one explicit shifted coupled core and therefore has exactly its norm. The " ++
+        "needed eta-specific arithmetic constraint on that core is not proved, and " ++
+        "these results do not imply RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove an eta-specific constraint on the exact cutoff-centered residual " ++
-        "cross-phase Re(D_N*conj(R_N)) strong enough to force complementary leading " ++
-        "coefficient equality; equivalently force the eta reflection multiplier to have " ++
-        "unit norm at every nontrivial zero"))
+        "Prove an eta-specific arithmetic constraint on the exact common-measure " ++
+        "shifted coupled core, equivalently on its residual cross-phase, strong enough " ++
+        "to force complementary leading coefficient equality and unit eta reflection " ++
+        "multiplier norm at every nontrivial zero"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

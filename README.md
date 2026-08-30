@@ -26,35 +26,22 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now uses the full multiplicity information at a zeta zero to recenter its
-first nonzero eta moment at the arithmetic cutoff `a_N=log(2N+1)`. Because all
-lower moments vanish, this changes neither the exact leading moment nor its
-completed meaning. It replaces the old uncentered tail by the rigorously
-proved envelope
+Lean now translates each discarded centered eta tail by its arithmetic cutoff
+`a_N=log(2N+1)`. The translated measure is proved to live almost everywhere on
+`u>0`, and its complex Laplace and separated Fourier--Laplace integrands are
+proved absolutely integrable for every positive horizontal tilt.
 
-`exp(-sigma*a_N) * m! / sigma^(m+1)`.
+For a zero `rho` and its same-ordinate partner `1-conj(rho)`, Lean factors both
+tails over this one positive shifted measure. Their real tilts are exactly
+`rho.re` and `1-rho.re`, while their cutoff oscillation is common. Conjugation
+is reduced exactly to frequency reversal and the single relative phase
+`exp(2*I*rho.im*a_N)`.
 
-This retains the full horizontal exponent, has no logarithmic-power loss, and
-needs no cutoff hypothesis. Lean proves it is strictly smaller than the prior
-balanced near-sharp envelope whenever that older cutoff is valid. The new
-finite lower and upper certificates enclose the exact nonzero leading defect
-for every `N`; their width is at most twice the displayed tail and tends to
-zero.
-
-Lean now also inserts the centered prefixes into the completed
-complementary-partner identity. The resulting finite complex residual is
-exactly the signed sum of the two literal centered tails, and its explicit
-completion-weighted envelope tends to zero. Whenever the older near-sharp
-residual bound applies, the new envelope is strictly smaller.
-
-An exact polarization identity further rewrites the difference of the two
-completion-weighted finite prefix norm squares as
-`|R_N|² + 2 Re(D_N*conj(R_N))`. This isolates the genuinely sign-bearing
-cross-phase term in checked Lean.
-
-This is sharper phase-preserving arithmetic control, not RH: the residual
-decay is still compatible with an off-line zero. The frontier is now an
-independent eta-specific constraint on that exact cross-phase.
+Consequently the completed finite residual is now proved equal to a unit phase
+times one explicit symmetry-aware coupled core, and its norm equals the norm
+of that core. This is a phase-preserving reduction, not RH: the open frontier
+is an independent eta-specific arithmetic constraint on this common-measure
+core.
 
 ## Mathematical Program
 

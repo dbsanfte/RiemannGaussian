@@ -610,11 +610,20 @@ eta-specific phase or sign theorem for this exact residual.
 Lean also polarizes the completed finite prefix norm defect exactly as the
 residual norm square plus twice the real cross-phase between the original
 completed conjugate prefix and the residual. Consequently a negative norm
-defect requires a strictly negative cross-phase. This is the present literal
-sign-bearing target; the nonnegative residual-energy term cannot supply it.
-A valid next step must retain the distributional zero contributions in any
-Green or integration-by-parts argument; erasing them would merely erase the
-detector.
+defect requires a strictly negative cross-phase; the nonnegative
+residual-energy term cannot supply it.
+Lean now translates every discarded centered tail by
+`a_N=log(2N+1)`. The resulting measure is proved almost everywhere supported
+on `u>0`, and the relevant Laplace and separated Fourier--Laplace integrands
+are proved absolutely integrable. At `rho` and `1-conj(rho)`, the two tails are
+exact complementary real tilts `rho.re` and `1-rho.re` of this same measure at
+one Fourier frequency. Conjugation is reduced to frequency reversal and the
+single relative cutoff phase `exp(2*I*rho.im*a_N)`. The completed residual is
+exactly a common unit phase times one named coupled core, so their norms are
+equal. The present sign-bearing target is an independent eta-specific
+arithmetic constraint on that core. A valid next step must retain the
+distributional zero contributions in any Green or integration-by-parts
+argument; erasing them would merely erase the detector.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.
