@@ -107,6 +107,19 @@ def pairedEtaLogLaplaceMomentCenteredTailUpper (k : ℕ) (sigma : ℝ) (N : ℕ)
   Real.exp (-sigma * Real.log (((2 * N + 1 : ℕ) : ℝ))) *
     ((k.factorial : ℝ) / sigma ^ (k + 1))
 
+/-- The centered envelope is exactly an arithmetic odd-endpoint power times
+the fixed shifted Gamma moment. -/
+theorem pairedEtaLogLaplaceMomentCenteredTailUpper_eq_rpow
+    (k : ℕ) (sigma : ℝ) (N : ℕ) :
+    pairedEtaLogLaplaceMomentCenteredTailUpper k sigma N =
+      (((2 * N + 1 : ℕ) : ℝ) ^ (-sigma)) *
+        ((k.factorial : ℝ) / sigma ^ (k + 1)) := by
+  unfold pairedEtaLogLaplaceMomentCenteredTailUpper
+  rw [Real.rpow_def_of_pos (by positivity :
+    (0 : ℝ) < (((2 * N + 1 : ℕ) : ℝ)))]
+  congr 2
+  ring
+
 /-- The cutoff-centered tail envelope is strictly positive at every positive
 horizontal tilt. -/
 theorem pairedEtaLogLaplaceMomentCenteredTailUpper_pos
@@ -378,6 +391,23 @@ def pairedEtaLogLaplaceMomentCutoffCenteredPartialSum (k : ℕ) (s : ℂ) (N : �
   pairedEtaLogLaplaceMomentCenteredPartialSum k s
     (Real.log (((2 * N + 1 : ℕ) : ℝ))) N
 
+/-- The literal order-`k` eta support tail centered at its first arithmetic
+endpoint `log (2N+1)`. -/
+def pairedEtaLogLaplaceMomentCutoffCenteredTail
+    (k : ℕ) (s : ℂ) (N : ℕ) : ℂ :=
+  ∫ t : ℝ,
+    (((t - Real.log (((2 * N + 1 : ℕ) : ℝ)) : ℝ) : ℂ) ^ k) *
+      Complex.exp (-s * t)
+    ∂pairedEtaLogTailMeasure N
+
+/-- The norm of the literal cutoff-centered tail obeys the centered
+full-exponent envelope throughout the positive half-plane. -/
+theorem norm_pairedEtaLogLaplaceMomentCutoffCenteredTail_le
+    (k : ℕ) {s : ℂ} (hs : 0 < s.re) (N : ℕ) :
+    ‖pairedEtaLogLaplaceMomentCutoffCenteredTail k s N‖ ≤
+      pairedEtaLogLaplaceMomentCenteredTailUpper k s.re N := by
+  exact norm_integral_pairedEtaLogLaplaceMoment_centeredTail_le k hs N
+
 /-- The exact leading-moment split specialized to the arithmetic cutoff
 center `log (2N+1)`. -/
 theorem pairedEtaLeadingLogLaplaceMoment_eq_cutoffCenteredPartial_add_tail
@@ -386,13 +416,12 @@ theorem pairedEtaLeadingLogLaplaceMoment_eq_cutoffCenteredPartial_add_tail
         (analyticZetaZeroMultiplicity rho) rho.1 =
       pairedEtaLogLaplaceMomentCutoffCenteredPartialSum
           (analyticZetaZeroMultiplicity rho) rho.1 N +
-        ∫ t : ℝ,
-          (((t - Real.log (((2 * N + 1 : ℕ) : ℝ)) : ℝ) : ℂ) ^
-              analyticZetaZeroMultiplicity rho) *
-            Complex.exp (-rho.1 * t)
-          ∂pairedEtaLogTailMeasure N := by
-  exact pairedEtaLeadingLogLaplaceMoment_eq_centeredPartial_add_tail rho
-    (Real.log (((2 * N + 1 : ℕ) : ℝ))) N
+        pairedEtaLogLaplaceMomentCutoffCenteredTail
+          (analyticZetaZeroMultiplicity rho) rho.1 N := by
+  simpa only [pairedEtaLogLaplaceMomentCutoffCenteredPartialSum,
+    pairedEtaLogLaplaceMomentCutoffCenteredTail] using
+    pairedEtaLeadingLogLaplaceMoment_eq_centeredPartial_add_tail rho
+      (Real.log (((2 * N + 1 : ℕ) : ℝ))) N
 
 /-- The cutoff-centered finite prefix approximates the exact leading moment
 with the centered full-exponent error envelope. -/
@@ -410,22 +439,16 @@ theorem norm_pairedEtaLogLaplaceMomentCutoffCenteredPartialSum_sub_le
           (analyticZetaZeroMultiplicity rho) rho.1 N -
         pairedEtaLogLaplaceMoment
           (analyticZetaZeroMultiplicity rho) rho.1‖ =
-      ‖-(∫ t : ℝ,
-          (((t - Real.log (((2 * N + 1 : ℕ) : ℝ)) : ℝ) : ℂ) ^
-              analyticZetaZeroMultiplicity rho) *
-            Complex.exp (-rho.1 * t)
-          ∂pairedEtaLogTailMeasure N)‖ := by
+      ‖-pairedEtaLogLaplaceMomentCutoffCenteredTail
+          (analyticZetaZeroMultiplicity rho) rho.1 N‖ := by
         rw [hsplit]
         congr 1
         ring
-    _ = ‖∫ t : ℝ,
-          (((t - Real.log (((2 * N + 1 : ℕ) : ℝ)) : ℝ) : ℂ) ^
-              analyticZetaZeroMultiplicity rho) *
-            Complex.exp (-rho.1 * t)
-          ∂pairedEtaLogTailMeasure N‖ := norm_neg _
+    _ = ‖pairedEtaLogLaplaceMomentCutoffCenteredTail
+          (analyticZetaZeroMultiplicity rho) rho.1 N‖ := norm_neg _
     _ ≤ pairedEtaLogLaplaceMomentCenteredTailUpper
           (analyticZetaZeroMultiplicity rho) rho.1.re N :=
-      norm_integral_pairedEtaLogLaplaceMoment_centeredTail_le
+      norm_pairedEtaLogLaplaceMomentCutoffCenteredTail_le
         (analyticZetaZeroMultiplicity rho)
         (NontrivialZetaZero.zero_lt_re rho) N
 

@@ -41,9 +41,20 @@ finite lower and upper certificates enclose the exact nonzero leading defect
 for every `N`; their width is at most twice the displayed tail and tends to
 zero.
 
-This is a sharper arithmetic approximation, not RH. The next frontier is to
-insert these centered prefixes into the completed complementary-partner
-identity and isolate a genuinely eta-specific phase or sign constraint.
+Lean now also inserts the centered prefixes into the completed
+complementary-partner identity. The resulting finite complex residual is
+exactly the signed sum of the two literal centered tails, and its explicit
+completion-weighted envelope tends to zero. Whenever the older near-sharp
+residual bound applies, the new envelope is strictly smaller.
+
+An exact polarization identity further rewrites the difference of the two
+completion-weighted finite prefix norm squares as
+`|R_N|² + 2 Re(D_N*conj(R_N))`. This isolates the genuinely sign-bearing
+cross-phase term in checked Lean.
+
+This is sharper phase-preserving arithmetic control, not RH: the residual
+decay is still compatible with an off-line zero. The frontier is now an
+independent eta-specific constraint on that exact cross-phase.
 
 ## Mathematical Program
 

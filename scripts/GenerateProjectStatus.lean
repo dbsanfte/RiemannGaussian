@@ -437,17 +437,24 @@ run_cmd do
         "condition. Lean proves this is strictly smaller than the balanced near-sharp " ++
         "envelope whenever the latter applies. The resulting centered lower and upper " ++
         "certificates enclose the exact nonzero defect for every N, converge to it, and " ++
-        "have width at most twice the centered tail. This sharper interface does not " ++
-        "supply the missing complementary phase or sign constraint and does not imply RH.")),
+        "have width at most twice the centered tail. Lean now inserts these centered " ++
+        "prefixes into the completed partner identity. Their full complex finite residual " ++
+        "is exactly a signed sum of the two literal centered tails; its explicit " ++
+        "completion-weighted envelope tends to zero and is strictly smaller than the old " ++
+        "near-sharp residual envelope whenever both former cutoffs apply. Exact " ++
+        "polarization writes the two completed finite prefix norm-square difference as " ++
+        "|R_N|^2+2*Re(D_N*conj(R_N)), isolating the only sign-bearing cross-phase. The " ++
+        "needed eta-specific constraint on that phase is not proved, and these results " ++
+        "do not imply RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Insert the cutoff-centered, no-log-loss eta moment prefixes into the completed " ++
-        "partner identity and prove an independent arithmetic phase or sign constraint " ++
-        "forcing the complementary leading coefficients to agree; equivalently force " ++
-        "the eta reflection multiplier to have unit norm at every nontrivial zero"))
+        "Prove an eta-specific constraint on the exact cutoff-centered residual " ++
+        "cross-phase Re(D_N*conj(R_N)) strong enough to force complementary leading " ++
+        "coefficient equality; equivalently force the eta reflection multiplier to have " ++
+        "unit norm at every nontrivial zero"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

@@ -598,6 +598,20 @@ whenever the latter is valid. The centered finite lower and upper certificates
 enclose the exact nonzero defect for every cutoff, converge to it, and have
 width at most twice this new envelope. This sharpens the arithmetic interface;
 it does not provide the missing complementary sign constraint.
+The centered prefixes are now also coupled through the completed functional
+equation. Lean defines their full complex finite partner residual and rewrites
+it exactly as a signed sum of the two literal centered support tails, retaining
+completion factors, parity, conjugation, and phase. Its unconditional envelope
+is the sum of the two completion-weighted centered Gamma tails, tends to zero,
+and is strictly below the older near-sharp completed-residual envelope whenever
+both former cutoffs apply. This closes the representation step; decay alone is
+compatible with an off-line zero, so the open step is an independent
+eta-specific phase or sign theorem for this exact residual.
+Lean also polarizes the completed finite prefix norm defect exactly as the
+residual norm square plus twice the real cross-phase between the original
+completed conjugate prefix and the residual. Consequently a negative norm
+defect requires a strictly negative cross-phase. This is the present literal
+sign-bearing target; the nonnegative residual-energy term cannot supply it.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
