@@ -26,26 +26,30 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now isolates the critical decay rate of the exact finite residual work.
-For a hypothetical right-half off-line zero `rho`, write
-`rho# = 1-conjugate(rho)`, let `R_N` be its completed centered eta residual,
-and set `W_N = R_N-R_(N+1)`. From the sharp complex limit
+Lean now isolates the single arithmetic term carrying the critical finite-work
+obstruction. If `m` is the multiplicity of a hypothetical right-half off-line
+zero, the exact work splits as `W_N = S_N + T_N`, where `S_N` is the new head
+plus every transported order below `m-1`, and Lean simplifies the sole top term
+to
 
-`(2N+1)^(rho#+1) * W_N -> 2*rho#*L(rho) != 0`,
+`T_N = m * Delta_N * C_(m-1,N+1)`.
 
-Lean now proves the stronger critical-scale obstruction
+Here `Delta_N` is the one-step logarithmic cutoff shift and `C_(m-1,N+1)` is
+one explicit completed, phase-retaining finite eta-prefix coupling. Lean proves
 
-`(2N+1)^(3/2) * ||W_N|| -> +infinity`.
+`(2N+1)^(3/2) * ||S_N|| -> 0`
 
-It follows, with reflection handling the opposite half-strip, that a universal
-eventual `O((2N+1)^(-3/2))` bound for this literal finite head-plus-prefix work
-would force every nontrivial zero onto the critical line and therefore prove
-Mathlib's `RiemannHypothesis`.
+while `(2N+1)^(3/2) * ||T_N|| -> +infinity`. Thus the head and the entire
+lower hierarchy are rigorously harmless at the critical scale. With reflection
+handling the opposite half-strip, a universal eventual
+`O((2N+1)^(-3/2))` bound for this single top transport would prove Mathlib's
+`RiemannHypothesis`.
 
 This is not RH. It rigorously identifies the phase-bearing obstruction that an
-unconditional arithmetic cancellation theorem must now defeat. The new
-`3/2`-scale bound is a concrete finite-arithmetic target, but no theorem yet
-derives it without assuming information equivalent to zero locations.
+unconditional arithmetic cancellation theorem must now defeat. The remaining
+target is no longer the full finite hierarchy: it is the displayed order-`m-1`
+coupled prefix. No theorem yet supplies its critical bound without assuming
+information equivalent to zero locations.
 
 ## Mathematical Program
 

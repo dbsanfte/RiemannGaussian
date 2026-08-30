@@ -146,6 +146,78 @@ private theorem tendsto_oddEndpoint_mul_shiftIncrement_pow_zero_aux
     rw [show 2 + e = (e + 1) + 1 by omega, pow_succ]
     ring)
 
+private theorem
+    tendsto_oddEndpoint_threeHalves_sub_rpow_mul_shiftIncrement_pow_zero_aux
+    {a : ℝ} (ha : 0 < a) {d : ℕ} (hd : 2 ≤ d) :
+    Tendsto (fun N : ℕ =>
+      (((2 * N + 1 : ℕ) : ℝ) ^ ((3 / 2 : ℝ) - a)) *
+        pairedEtaLogTailShiftIncrement N ^ d)
+      atTop (nhds 0) := by
+  obtain ⟨e, rfl⟩ := Nat.exists_eq_add_of_le hd
+  have hbase : Tendsto (fun N : ℕ => ((2 * N + 1 : ℕ) : ℝ))
+      atTop atTop := by
+    convert tendsto_atTop_add_const_right atTop 1
+      ((tendsto_natCast_atTop_atTop (R := ℝ)).const_mul_atTop
+        (by norm_num : (0 : ℝ) < 2)) using 1
+    funext N
+    norm_num
+  have hdecay : Tendsto (fun N : ℕ =>
+      (((2 * N + 1 : ℕ) : ℝ) ^ (-(a + 1 / 2))))
+      atTop (nhds 0) := by
+    convert
+      (tendsto_rpow_neg_atTop (by linarith : 0 < a + 1 / 2)).comp hbase
+      using 1
+    funext N
+    rfl
+  have hscale := tendsto_oddEndpoint_mul_shiftIncrement_two_aux
+  have hremaining := tendsto_shiftIncrement_zero_aux.pow e
+  have hproduct := (hdecay.mul (hscale.pow 2)).mul hremaining
+  have hzero : Tendsto
+      (fun N : ℕ =>
+        ((((2 * N + 1 : ℕ) : ℝ) ^ (-(a + 1 / 2)) *
+            (((2 * N + 1 : ℕ) : ℝ) *
+              pairedEtaLogTailShiftIncrement N) ^ 2) *
+          pairedEtaLogTailShiftIncrement N ^ e))
+      atTop (nhds 0) := by
+    simpa using hproduct
+  apply hzero.congr'
+  filter_upwards with N
+  let x : ℝ := ((2 * N + 1 : ℕ) : ℝ)
+  let delta : ℝ := pairedEtaLogTailShiftIncrement N
+  have hx : 0 < x := by dsimp [x]; positivity
+  have hxpow : x ^ (-(a + 1 / 2)) * x ^ 2 =
+      x ^ ((3 / 2 : ℝ) - a) := by
+    rw [← Real.rpow_natCast, ← Real.rpow_add hx]
+    congr 1
+    ring
+  change (x ^ (-(a + 1 / 2)) * (x * delta) ^ 2) * delta ^ e =
+    x ^ ((3 / 2 : ℝ) - a) * delta ^ (2 + e)
+  rw [pow_add, mul_pow]
+  rw [← hxpow]
+  ring
+
+private theorem
+    tendsto_oddEndpoint_threeHalves_sub_cpow_mul_shiftIncrement_pow_zero_aux
+    {p : ℂ} (hp : 0 < p.re) {d : ℕ} (hd : 2 ≤ d) :
+    Tendsto (fun N : ℕ =>
+      ((((2 * N + 1 : ℕ) : ℝ) : ℂ) ^ ((3 / 2 : ℂ) - p)) *
+        (pairedEtaLogTailShiftIncrement N : ℂ) ^ d)
+      atTop (nhds 0) := by
+  have hreal :=
+    tendsto_oddEndpoint_threeHalves_sub_rpow_mul_shiftIncrement_pow_zero_aux
+      hp hd
+  apply squeeze_zero_norm (a := fun N : ℕ =>
+    (((2 * N + 1 : ℕ) : ℝ) ^ ((3 / 2 : ℝ) - p.re)) *
+      pairedEtaLogTailShiftIncrement N ^ d)
+  · intro N
+    have hx : 0 < ((2 * N + 1 : ℕ) : ℝ) := by positivity
+    have hdelta : 0 < pairedEtaLogTailShiftIncrement N :=
+      pairedEtaLogTailShiftIncrement_pos N
+    rw [norm_mul, Complex.norm_cpow_eq_rpow_re_of_pos hx,
+      norm_pow, norm_real, Real.norm_eq_abs, abs_of_pos hdelta]
+    norm_num [Complex.sub_re]
+  · exact hreal
+
 private theorem norm_shiftedHeadLaplaceMoment_le_aux
     (k : ℕ) {s : ℂ} (hs : 0 < s.re) (N : ℕ) :
     ‖pairedEtaShiftedLogHeadLaplaceMoment k s N‖ ≤
@@ -443,6 +515,81 @@ private theorem tendsto_scaled_phase_headCoupled_zero_aux
           pairedEtaLogTailShiftIncrement N ^ (m + 1)) := by rfl
   · exact hupper
 
+private theorem tendsto_threeHalves_scaled_phase_headCoupled_zero_aux
+    (rho : NontrivialZetaZero) (hrho : 1 / 2 < rho.1.re) :
+    Tendsto (fun N : ℕ =>
+      ((((2 * N + 1 : ℕ) : ℝ) : ℂ) ^ (3 / 2 : ℂ)) *
+        (pairedEtaLogTailCutoffOscillation rho.1.im N *
+          pairedEtaCompletedLeadingLogCutoffCenteredShiftedHeadCoupledMoment
+            rho (analyticZetaZeroMultiplicity rho) N))
+      atTop (nhds 0) := by
+  let m := analyticZetaZeroMultiplicity rho
+  let p := (NontrivialZetaZero.conjugatePartner rho).1
+  let C := finiteWorkHeadBoundConstantAux rho
+  have hm : 0 < m := analyticZetaZeroMultiplicity_positive rho
+  have hp : 0 < p.re := by
+    exact NontrivialZetaZero.zero_lt_re
+      (NontrivialZetaZero.conjugatePartner rho)
+  have hrate :=
+    tendsto_oddEndpoint_threeHalves_sub_rpow_mul_shiftIncrement_pow_zero_aux
+      hp (d := m + 1) (by omega)
+  have hupper : Tendsto (fun N : ℕ =>
+      C * ((((2 * N + 1 : ℕ) : ℝ) ^ ((3 / 2 : ℝ) - p.re)) *
+        pairedEtaLogTailShiftIncrement N ^ (m + 1)))
+      atTop (nhds 0) := by
+    simpa only [mul_zero] using Filter.Tendsto.const_mul C hrate
+  apply squeeze_zero_norm (a := fun N : ℕ =>
+    C * ((((2 * N + 1 : ℕ) : ℝ) ^ ((3 / 2 : ℝ) - p.re)) *
+      pairedEtaLogTailShiftIncrement N ^ (m + 1)))
+  · intro N
+    let x : ℝ := ((2 * N + 1 : ℕ) : ℝ)
+    let w : ℝ := pairedEtaShiftedLogHeadWidth N
+    let delta : ℝ := pairedEtaLogTailShiftIncrement N
+    have hx : 0 < x := by dsimp [x]; positivity
+    have hw : 0 < w := by
+      simpa only [w] using pairedEtaShiftedLogHeadWidth_pos N
+    have hwDelta : w ≤ delta := by
+      exact (pairedEtaShiftedLogHeadWidth_lt_shiftIncrement N).le
+    have hhead := norm_phase_headCoupled_le_aux rho hrho m N
+    have hpowLe : w ^ (m + 1) ≤ delta ^ (m + 1) :=
+      pow_le_pow_left₀ hw.le hwDelta _
+    have hC : 0 ≤ C := by
+      unfold C finiteWorkHeadBoundConstantAux
+      positivity
+    have hxcombine : x ^ (3 / 2 : ℝ) * x ^ (-p.re) =
+        x ^ ((3 / 2 : ℝ) - p.re) := by
+      rw [← Real.rpow_add hx]
+      congr 1
+    calc
+      ‖((x : ℂ) ^ (3 / 2 : ℂ)) *
+          (pairedEtaLogTailCutoffOscillation rho.1.im N *
+            pairedEtaCompletedLeadingLogCutoffCenteredShiftedHeadCoupledMoment
+              rho m N)‖ =
+          x ^ (3 / 2 : ℝ) *
+            ‖pairedEtaLogTailCutoffOscillation rho.1.im N *
+              pairedEtaCompletedLeadingLogCutoffCenteredShiftedHeadCoupledMoment
+                rho m N‖ := by
+        rw [norm_mul, Complex.norm_cpow_eq_rpow_re_of_pos hx]
+        norm_num
+      _ ≤ x ^ (3 / 2 : ℝ) *
+          (C * x ^ (-p.re) * w ^ (m + 1)) := by
+        exact mul_le_mul_of_nonneg_left
+          (by simpa only [C, p, x, w, m] using hhead)
+          (Real.rpow_nonneg hx.le _)
+      _ = C * ((x ^ (3 / 2 : ℝ) * x ^ (-p.re)) *
+          w ^ (m + 1)) := by ring
+      _ = C * (x ^ ((3 / 2 : ℝ) - p.re) * w ^ (m + 1)) := by
+        rw [hxcombine]
+      _ ≤ C * (x ^ ((3 / 2 : ℝ) - p.re) *
+          delta ^ (m + 1)) := by
+        exact mul_le_mul_of_nonneg_left
+          (mul_le_mul_of_nonneg_left hpowLe
+            (Real.rpow_nonneg hx.le _)) hC
+      _ = C * ((((2 * N + 1 : ℕ) : ℝ) ^
+          ((3 / 2 : ℝ) - p.re)) *
+            pairedEtaLogTailShiftIncrement N ^ (m + 1)) := by rfl
+  · exact hupper
+
 private theorem tendsto_scaled_lowerFinitePrefixWorkTerm_zero_aux
     (rho : NontrivialZetaZero) (hrho : 1 / 2 < rho.1.re)
     {j : ℕ} (hj : j < analyticZetaZeroMultiplicity rho)
@@ -487,6 +634,44 @@ private theorem tendsto_scaled_lowerFinitePrefixWorkTerm_zero_aux
         Complex.cpow_one]
       simp only [m, p, d, x]
       ring)
+
+private theorem tendsto_threeHalves_scaled_lowerFinitePrefixWorkTerm_zero_aux
+    (rho : NontrivialZetaZero) (hrho : 1 / 2 < rho.1.re)
+    {j : ℕ} (hj : j < analyticZetaZeroMultiplicity rho)
+    (hdegree : 2 ≤ analyticZetaZeroMultiplicity rho - j) :
+    Tendsto (fun N : ℕ =>
+      ((((2 * N + 1 : ℕ) : ℝ) : ℂ) ^ (3 / 2 : ℂ)) *
+        (((((analyticZetaZeroMultiplicity rho).choose j : ℕ) : ℂ) *
+          (pairedEtaLogTailShiftIncrement N : ℂ) ^
+            (analyticZetaZeroMultiplicity rho - j)) *
+          pairedEtaCompletedLeadingLogCutoffCenteredFinitePrefixCoupledMoment
+            rho j (N + 1)))
+      atTop (nhds 0) := by
+  let m := analyticZetaZeroMultiplicity rho
+  let p := (NontrivialZetaZero.conjugatePartner rho).1
+  let d := m - j
+  have hp : 0 < p.re := by
+    exact NontrivialZetaZero.zero_lt_re
+      (NontrivialZetaZero.conjugatePartner rho)
+  have hscale :=
+    tendsto_oddEndpoint_threeHalves_sub_cpow_mul_shiftIncrement_pow_zero_aux
+      hp (d := d) (by simpa only [d, m] using hdegree)
+  have hcoupled := tendsto_succ_lowerPhaseWeightedCoupledMoment_aux rho hrho j
+  have hprod := hscale.mul hcoupled
+  have hweighted := Filter.Tendsto.const_mul
+    (((m.choose j : ℕ) : ℂ)) hprod
+  simpa only [zero_mul, mul_zero] using hweighted.congr'
+    (Eventually.of_forall fun N => by
+      let x : ℝ := ((2 * N + 1 : ℕ) : ℝ)
+      have hx : 0 < x := by dsimp [x]; positivity
+      have hfinite :=
+        pairedEtaCompletedLeadingLogCutoffCenteredShiftedPhaseWeightedCoupledMoment_eq_finitePrefix_of_lt_multiplicity
+          rho hj (N + 1)
+      rw [← hfinite]
+      rw [show (3 / 2 : ℂ) = ((3 / 2 : ℂ) - p) + p by ring,
+        Complex.cpow_add _ _ (Complex.ofReal_ne_zero.mpr hx.ne')]
+      simp only [m, p, d, x]
+      ring_nf)
 
 private theorem tendsto_scaled_topFinitePrefixWorkTerm_aux
     (rho : NontrivialZetaZero) (hrho : 1 / 2 < rho.1.re)
@@ -638,6 +823,143 @@ private theorem topWorkLimit_eq_residualLimit_aux
   field_simp [pow_ne_zero _ hp]
   ring
 
+/-- The unique top transported prefix moment in the exact finite-work
+hierarchy.  Positivity of the analytic multiplicity ensures that the index
+`m - 1` is the predecessor of `m`. -/
+def pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+    (rho : NontrivialZetaZero) (N : ℕ) : ℂ :=
+  let m := analyticZetaZeroMultiplicity rho
+  ((((m.choose (m - 1) : ℕ) : ℂ) *
+      (pairedEtaLogTailShiftIncrement N : ℂ) ^ (m - (m - 1))) *
+    pairedEtaCompletedLeadingLogCutoffCenteredFinitePrefixCoupledMoment
+      rho (m - 1) (N + 1))
+
+/-- The top transport is literally multiplicity times the one-step logarithmic
+shift times the order-`m-1` finite coupled prefix. -/
+theorem
+    pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport_eq
+    (rho : NontrivialZetaZero) (N : ℕ) :
+    pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+        rho N =
+      (((analyticZetaZeroMultiplicity rho : ℕ) : ℂ) *
+        (pairedEtaLogTailShiftIncrement N : ℂ)) *
+        pairedEtaCompletedLeadingLogCutoffCenteredFinitePrefixCoupledMoment
+          rho (analyticZetaZeroMultiplicity rho - 1) (N + 1) := by
+  obtain ⟨k, hm⟩ := Nat.exists_eq_succ_of_ne_zero
+    (Nat.ne_of_gt (analyticZetaZeroMultiplicity_positive rho))
+  unfold
+    pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+  rw [hm]
+  simp only [Nat.choose_succ_self_right, Nat.succ_sub_one]
+  rw [show k.succ - k = 1 by omega, pow_one]
+
+/-- The exact finite head plus every transported prefix order strictly below
+the top order `m - 1`. -/
+def pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkSubtop
+    (rho : NontrivialZetaZero) (N : ℕ) : ℂ :=
+  let m := analyticZetaZeroMultiplicity rho
+  pairedEtaLogTailCutoffOscillation rho.1.im N *
+      pairedEtaCompletedLeadingLogCutoffCenteredShiftedHeadCoupledMoment
+        rho m N +
+    ∑ j ∈ Finset.range (m - 1),
+      ((((m.choose j : ℕ) : ℂ) *
+        (pairedEtaLogTailShiftIncrement N : ℂ) ^ (m - j)) *
+        pairedEtaCompletedLeadingLogCutoffCenteredFinitePrefixCoupledMoment
+          rho j (N + 1))
+
+/-- The literal finite work splits exactly into the subtop hierarchy and its
+single top transported moment. -/
+theorem
+    pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWork_eq_subtop_add_topTransport
+    (rho : NontrivialZetaZero) (N : ℕ) :
+    pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWork rho N =
+      pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkSubtop
+          rho N +
+        pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+          rho N := by
+  obtain ⟨k, hm⟩ := Nat.exists_eq_succ_of_ne_zero
+    (Nat.ne_of_gt (analyticZetaZeroMultiplicity_positive rho))
+  unfold pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWork
+    pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkSubtop
+    pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+  rw [hm, Finset.sum_range_succ]
+  simp
+  ring
+
+/-- At a hypothetical right-half zero, the finite head and every transported
+order below `m - 1` jointly vanish after the universal critical `3 / 2`
+normalization.  Thus none of these terms can carry the off-line obstruction. -/
+theorem
+    tendsto_oddEndpoint_threeHalves_cpow_mul_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkSubtop_zero
+    (rho : NontrivialZetaZero) (hrho : 1 / 2 < rho.1.re) :
+    Tendsto (fun N : ℕ =>
+      ((((2 * N + 1 : ℕ) : ℝ) : ℂ) ^ (3 / 2 : ℂ)) *
+        pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkSubtop
+          rho N)
+      atTop (nhds 0) := by
+  let m := analyticZetaZeroMultiplicity rho
+  obtain ⟨k, hm⟩ := Nat.exists_eq_succ_of_ne_zero
+    (Nat.ne_of_gt (analyticZetaZeroMultiplicity_positive rho))
+  let scale : ℕ → ℂ := fun N =>
+    ((((2 * N + 1 : ℕ) : ℝ) : ℂ) ^ (3 / 2 : ℂ))
+  let head : ℕ → ℂ := fun N =>
+    pairedEtaLogTailCutoffOscillation rho.1.im N *
+      pairedEtaCompletedLeadingLogCutoffCenteredShiftedHeadCoupledMoment
+        rho m N
+  let term : ℕ → ℕ → ℂ := fun j N =>
+    ((((m.choose j : ℕ) : ℂ) *
+      (pairedEtaLogTailShiftIncrement N : ℂ) ^ (m - j)) *
+      pairedEtaCompletedLeadingLogCutoffCenteredFinitePrefixCoupledMoment
+        rho j (N + 1))
+  have hhead : Tendsto (fun N : ℕ => scale N * head N)
+      atTop (nhds 0) := by
+    simpa only [scale, head, m] using
+      tendsto_threeHalves_scaled_phase_headCoupled_zero_aux rho hrho
+  have hlower : Tendsto (fun N : ℕ =>
+      ∑ j ∈ Finset.range k, scale N * term j N)
+      atTop (nhds 0) := by
+    have hsum := tendsto_finsetSum (Finset.range k) (f := fun j N =>
+        scale N * term j N) (a := fun _ => 0) (by
+      intro j hj
+      have hjk : j < k := Finset.mem_range.mp hj
+      have hjm : j < analyticZetaZeroMultiplicity rho := by omega
+      have hdegree : 2 ≤ analyticZetaZeroMultiplicity rho - j := by omega
+      simpa only [scale, term, m] using
+        tendsto_threeHalves_scaled_lowerFinitePrefixWorkTerm_zero_aux
+          rho hrho hjm hdegree)
+    simpa using hsum
+  have hcombined := hhead.add hlower
+  have heq : Filter.EventuallyEq atTop
+      (fun N : ℕ => scale N * head N +
+        ∑ j ∈ Finset.range k, scale N * term j N)
+      (fun N : ℕ => scale N *
+        pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkSubtop
+          rho N) := by
+    filter_upwards with N
+    unfold
+      pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkSubtop
+    simp [hm, head, term, m, mul_add, Finset.mul_sum]
+  have hout := hcombined.congr' heq
+  simpa only [zero_add, scale] using hout
+
+/-- Norm form of the critical-scale subtop vanishing theorem. -/
+theorem
+    tendsto_oddEndpoint_threeHalves_rpow_mul_norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkSubtop_zero
+    (rho : NontrivialZetaZero) (hrho : 1 / 2 < rho.1.re) :
+    Tendsto (fun N : ℕ =>
+      (((2 * N + 1 : ℕ) : ℝ) ^ (3 / 2 : ℝ)) *
+        ‖pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkSubtop
+          rho N‖)
+      atTop (nhds 0) := by
+  have hlimit :=
+    (tendsto_oddEndpoint_threeHalves_cpow_mul_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkSubtop_zero
+      rho hrho).norm
+  convert hlimit using 1
+  · funext N
+    rw [norm_mul, Complex.norm_cpow_eq_rpow_re_of_pos (by positivity)]
+    norm_num
+  · norm_num
+
 
 /-- The nonzero complex leading constant of the one-step finite residual work
 at a hypothetical right-half off-line zero. -/
@@ -688,6 +1010,50 @@ theorem
   simpa only [
     pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkComplexSharpLimit]
     using hlimit
+
+/-- The unique top transported prefix moment carries the entire nonzero
+partner-scale work limit. -/
+theorem
+    tendsto_oddEndpoint_partner_add_one_cpow_mul_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+    (rho : NontrivialZetaZero) (hrho : 1 / 2 < rho.1.re) :
+    Tendsto (fun N : ℕ =>
+      ((((2 * N + 1 : ℕ) : ℝ) : ℂ)) ^
+          ((NontrivialZetaZero.conjugatePartner rho).1 + 1) *
+        pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+          rho N)
+      atTop
+      (nhds
+        (pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkComplexSharpLimit
+          rho)) := by
+  obtain ⟨k, hm⟩ := Nat.exists_eq_succ_of_ne_zero
+    (Nat.ne_of_gt (analyticZetaZeroMultiplicity_positive rho))
+  have hlimit := tendsto_scaled_topFinitePrefixWorkTerm_aux rho hrho k hm
+  rw [topWorkLimit_eq_residualLimit_aux rho k hm] at hlimit
+  simpa [
+    pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport,
+    pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkComplexSharpLimit,
+    hm] using hlimit
+
+/-- Norm form of the sharp top-transport limit. -/
+theorem
+    tendsto_oddEndpoint_partner_add_one_rpow_mul_norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+    (rho : NontrivialZetaZero) (hrho : 1 / 2 < rho.1.re) :
+    Tendsto (fun N : ℕ =>
+      (((2 * N + 1 : ℕ) : ℝ) ^
+          ((NontrivialZetaZero.conjugatePartner rho).1.re + 1)) *
+        ‖pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+          rho N‖)
+      atTop
+      (nhds
+        ‖pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkComplexSharpLimit
+          rho‖) := by
+  have hlimit :=
+    (tendsto_oddEndpoint_partner_add_one_cpow_mul_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+      rho hrho).norm
+  convert hlimit using 1
+  funext N
+  rw [norm_mul, Complex.norm_cpow_eq_rpow_re_of_pos (by positivity)]
+  simp only [add_re, one_re]
 
 /-- Taking norms gives the exact real decay rate and magnitude of the finite
 work at every hypothetical right-half off-line zero. -/

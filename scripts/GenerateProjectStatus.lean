@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "Off-line finite eta work diverges at the critical 3/2 scale"
-    lineOne := "off-line eta work"
-    lineTwo := "3/2 scale diverges"
+    label := "Every non-top finite eta work term vanishes at the critical 3/2 scale"
+    lineOne := "non-top eta work"
+    lineTwo := "vanishes at 3/2"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.tendsto_oddEndpoint_threeHalves_rpow_mul_norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWork_atTop_of_half_lt_re
+      ``RiemannGaussian.tendsto_oddEndpoint_threeHalves_rpow_mul_norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkSubtop_zero
   }
 ]
 
@@ -511,17 +511,22 @@ run_cmd do
         "for every right-half off-line zero, (2N+1)^(3/2)|W_N| tends to positive " ++
         "infinity. Reflection covers the opposite half-strip. Therefore an " ++
         "eventual O((2N+1)^(-3/2)) bound for the literal finite head-plus-prefix " ++
-        "work at every nontrivial zero forces RH. That finite-arithmetic bound is " ++
-        "not proved; deriving it unconditionally is now the precise cancellation " ++
-        "frontier.")),
+        "work at every nontrivial zero forces RH. Lean now splits that work exactly " ++
+        "into a subtop hierarchy and one top transported moment. The subtop part--" ++
+        "the new head and every order below m-1--vanishes at the critical 3/2 scale. " ++
+        "The top part simplifies literally to m*Delta_N*C_(m-1,N+1), carries the " ++
+        "entire nonzero partner-scale limit, and diverges at the critical scale for " ++
+        "every right-half off-line zero. Thus a universal critical bound for this " ++
+        "single finite coupled prefix transport forces RH. That bound is not proved; " ++
+        "it is now the isolated arithmetic cancellation frontier.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove the universal eventual O((2N+1)^(-3/2)) bound for the literal finite " ++
-        "head-plus-prefix eta work, or an equally strong signed cancellation theorem, " ++
-        "without assuming zero locations"))
+        "Prove the universal eventual O((2N+1)^(-3/2)) bound for the single literal " ++
+        "top transport m*Delta_N*C_(m-1,N+1), or an equally strong signed cancellation " ++
+        "theorem, without assuming zero locations"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

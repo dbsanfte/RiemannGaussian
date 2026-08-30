@@ -81,6 +81,62 @@ theorem
   congr 2
   ring
 
+/-- The unique top transported prefix moment alone has the same critical-scale
+divergence.  The finite head and every lower transported order are therefore
+irrelevant to the off-line obstruction at this scale. -/
+theorem
+    tendsto_oddEndpoint_threeHalves_rpow_mul_norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport_atTop_of_half_lt_re
+    (rho : NontrivialZetaZero) (hrho : 1 / 2 < rho.1.re) :
+    Tendsto (fun N : ℕ =>
+      (((2 * N + 1 : ℕ) : ℝ) ^ (3 / 2 : ℝ)) *
+        ‖pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+          rho N‖)
+      atTop atTop := by
+  let partner : NontrivialZetaZero :=
+    NontrivialZetaZero.conjugatePartner rho
+  have hpartnerRate :=
+    tendsto_oddEndpoint_partner_add_one_rpow_mul_norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+      rho hrho
+  have hgap : 0 < (3 / 2 : ℝ) - (partner.1.re + 1) := by
+    have hpartnerRe : partner.1.re = 1 - rho.1.re := by
+      simp [partner, NontrivialZetaZero.conjugatePartner_coe]
+    rw [hpartnerRe]
+    linarith
+  have hbase : Tendsto (fun N : ℕ => (2 : ℝ) * N + 1)
+      atTop atTop :=
+    tendsto_atTop_add_const_right atTop 1
+      ((tendsto_natCast_atTop_atTop (R := ℝ)).const_mul_atTop (by norm_num))
+  have hfactor : Tendsto (fun N : ℕ =>
+      ((2 * N + 1 : ℕ) : ℝ) ^
+        ((3 / 2 : ℝ) - (partner.1.re + 1)))
+      atTop atTop := by
+    convert (tendsto_rpow_atTop hgap).comp hbase using 1
+    funext N
+    norm_num
+  have hlimitPos :
+      0 <
+        ‖pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkComplexSharpLimit
+          rho‖ :=
+    norm_pos_iff.mpr
+      (pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkComplexSharpLimit_ne_zero
+        rho)
+  have hproduct := hfactor.atTop_mul_pos hlimitPos hpartnerRate
+  convert hproduct using 1
+  funext N
+  let x : ℝ := ((2 * N + 1 : ℕ) : ℝ)
+  have hx : 0 < x := by dsimp [x]; positivity
+  symm
+  change x ^ ((3 / 2 : ℝ) - (partner.1.re + 1)) *
+      (x ^ (partner.1.re + 1) *
+        ‖pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+          rho N‖) =
+    x ^ (3 / 2 : ℝ) *
+      ‖pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+        rho N‖
+  rw [← mul_assoc, ← Real.rpow_add hx]
+  congr 2
+  ring
+
 /-- Consequently no eventual finite upper bound can hold at the critical
 work scale for a right-half off-line zero. -/
 theorem
@@ -93,6 +149,22 @@ theorem
   rintro ⟨C, hupper⟩
   have hlower :=
     (tendsto_oddEndpoint_threeHalves_rpow_mul_norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWork_atTop_of_half_lt_re
+      rho hrho).eventually_gt_atTop C
+  obtain ⟨N, hle, hlt⟩ := (hupper.and hlower).exists
+  exact (not_lt_of_ge hle hlt)
+
+/-- No eventual critical-scale upper bound can hold even for the single top
+transported moment at a right-half off-line zero. -/
+theorem
+    not_exists_eventually_oddEndpoint_threeHalves_rpow_mul_norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport_le_of_half_lt_re
+    (rho : NontrivialZetaZero) (hrho : 1 / 2 < rho.1.re) :
+    ¬ ∃ C : ℝ, ∀ᶠ N : ℕ in atTop,
+      (((2 * N + 1 : ℕ) : ℝ) ^ (3 / 2 : ℝ)) *
+          ‖pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+            rho N‖ ≤ C := by
+  rintro ⟨C, hupper⟩
+  have hlower :=
+    (tendsto_oddEndpoint_threeHalves_rpow_mul_norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport_atTop_of_half_lt_re
       rho hrho).eventually_gt_atTop C
   obtain ⟨N, hle, hlt⟩ := (hupper.and hlower).exists
   exact (not_lt_of_ge hle hlt)
@@ -142,6 +214,53 @@ theorem
   let rho : NontrivialZetaZero := ⟨s, hs, hnontrivial, hone⟩
   exact (zetaSpectralCoordinate_im_eq_zero_iff s).2
     (nontrivialZetaZero_re_eq_half_of_all_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWork_criticalScale_eventuallyBounded
+      hbounded rho)
+
+/-- The narrowed global arithmetic target: critical-scale boundedness is
+required only for the single top transported prefix moment, not for the head
+or any lower member of the finite hierarchy. -/
+def AllPairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransportCriticalScaleEventuallyBounded :
+    Prop :=
+  ∀ rho : NontrivialZetaZero, ∃ C : ℝ, ∀ᶠ N : ℕ in atTop,
+    (((2 * N + 1 : ℕ) : ℝ) ^ (3 / 2 : ℝ)) *
+        ‖pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport
+          rho N‖ ≤ C
+
+/-- Global critical-scale boundedness of just the top transport forces every
+nontrivial zero onto the critical line. -/
+theorem
+    nontrivialZetaZero_re_eq_half_of_all_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport_criticalScale_eventuallyBounded
+    (hbounded :
+      AllPairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransportCriticalScaleEventuallyBounded)
+    (rho : NontrivialZetaZero) :
+    rho.1.re = 1 / 2 := by
+  by_contra hne
+  rcases lt_or_gt_of_ne hne with hleft | hright
+  · have hpartnerRight :
+        1 / 2 < (NontrivialZetaZero.conjugatePartner rho).1.re := by
+      have h : 1 / 2 < 1 - rho.1.re := by linarith
+      simpa [NontrivialZetaZero.conjugatePartner_coe] using h
+    exact
+      (not_exists_eventually_oddEndpoint_threeHalves_rpow_mul_norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport_le_of_half_lt_re
+        (NontrivialZetaZero.conjugatePartner rho) hpartnerRight)
+        (hbounded (NontrivialZetaZero.conjugatePartner rho))
+  · exact
+      (not_exists_eventually_oddEndpoint_threeHalves_rpow_mul_norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport_le_of_half_lt_re
+        rho hright) (hbounded rho)
+
+/-- The universal critical-scale estimate for the single explicit top
+transported prefix moment implies Mathlib's Riemann hypothesis.  This estimate
+is the remaining arithmetic theorem, not an established premise. -/
+theorem
+    riemannHypothesis_of_all_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport_criticalScale_eventuallyBounded
+    (hbounded :
+      AllPairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransportCriticalScaleEventuallyBounded) :
+    RiemannHypothesis := by
+  rw [riemannHypothesis_iff_spectralCoordinate_real]
+  intro s hs hnontrivial hone
+  let rho : NontrivialZetaZero := ⟨s, hs, hnontrivial, hone⟩
+  exact (zetaSpectralCoordinate_im_eq_zero_iff s).2
+    (nontrivialZetaZero_re_eq_half_of_all_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopTransport_criticalScale_eventuallyBounded
       hbounded rho)
 
 end
