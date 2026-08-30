@@ -26,27 +26,30 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean has squared the one-measure representation of the isolated top prefix
-without discarding its phase. If `f_(rho,N)` is the previously verified
-critical-half interference integrand and `mu_N` the shifted positive eta-tail
-measure, Lean proves the exact Gram identity
+Lean has split the top-prefix interference integral into its reflected-partner
+and conjugate-original components `P_N` and `Q_N`, retaining every completion,
+parity, conjugation, and cutoff phase. It proves the exact nonnegative
+decomposition
 
-`||C_(m-1,N+1)||^2 = integral integral Re(f(u) * conj(f(v))) dmu_N(u)dmu_N(v)`.
+`||C_(m-1,N+1)||^2 = (||P_N||-||Q_N||)^2 + A_N`,
 
-The Hermitian kernel is symmetric and its complete integral is nonnegative,
-although the kernel need not be pointwise positive. The phase-free product
-kernel `||f(u)|| ||f(v)||` is integrable and dominates it. Lean defines their
-integral difference `D_N`, proves `D_N >= 0`, and verifies the exact ledger
+where `A_N = 2*(||P_N||||Q_N|| + Re(P_N*conj(Q_N))) >= 0` is the
+anti-alignment defect. Lean then proves `A_N <= 4||P_N||||Q_N||` and identifies
+the component norms exactly with completion weights times the two literal
+order-`m-1` centered eta tails.
 
-`||C_(m-1,N+1)||^2 + D_N = (integral ||f(u)|| dmu_N(u))^2`.
+The complementary tail exponents are `rho.re` and `1-rho.re`; their product
+therefore has one full inverse-endpoint power. Lean proves an explicit
+zero-dependent constant bounding `(2N+1)A_N` for every cutoff. Consequently
+the cross-phase half of the Gram frontier is unconditional, and the original
+square-root prefix bound is exactly equivalent to the single amplitude target
 
-Finally, Lean proves that eventual boundedness of the endpoint-scaled
-Hermitian Gram mass is exactly equivalent to the existing square-root prefix
-frontier, locally and globally. This is not RH: the open arithmetic theorem is
-now the cancellation-preserving estimate
-`(2N+1) * integral integral Re(f(u) * conj(f(v))) = O(1)` at every nontrivial
-zero. Proving it without zero-location assumptions would imply Mathlib's
-`RiemannHypothesis` through the checked equivalence.
+`(2N+1)*(w_(rho#)||T_(rho#,N+1)|| - w_rho||T_(rho,N+1)||)^2 = O(1)`.
+
+This is not RH. The remaining amplitude-balance estimate is unproved without
+zero-location information; a universal proof of it would imply Mathlib's
+`RiemannHypothesis`. The verified reduction does show that no additional
+phase-cancellation theorem is needed at the critical scale.
 
 ## Mathematical Program
 

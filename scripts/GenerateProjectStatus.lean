@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The square-root prefix bound is equivalent to one endpoint-scaled Hermitian Gram bound"
-    lineOne := "sqrt eta prefix iff"
-    lineTwo := "endpoint Gram bound"
+    label := "The top-prefix frontier is exactly complementary centered-tail amplitude balance"
+    lineOne := "top eta frontier iff"
+    lineTwo := "tail amplitude balance"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopPrefix_criticalScale_eventuallyBounded_iff_gram
+      ``RiemannGaussian.pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWorkTopPrefix_criticalScale_eventuallyBounded_iff_amplitudeImbalance
   }
 ]
 
@@ -537,16 +537,26 @@ run_cmd do
         "cancellation defect satisfying the exact ledger |C|^2+defect=(integral " ++
         "|f|)^2. Endpoint-scaled Hermitian Gram boundedness is exactly equivalent, " ++
         "locally and globally, to the square-root prefix bound. Estimating this signed " ++
-        "Gram mass without zero-location assumptions remains the isolated frontier.")),
+        "Gram mass without zero-location assumptions remains the isolated frontier. " ++
+        "Lean now splits the interference integral into its reflected-partner and " ++
+        "conjugate-original components P_N and Q_N. It proves |C|^2=(|P_N|-|Q_N|)^2" ++
+        "+A_N with a nonnegative anti-alignment defect A_N. Each component norm is " ++
+        "exactly a completion weight times the corresponding literal order-(m-1) " ++
+        "centered tail. Since their complementary decay exponents add to one, Lean " ++
+        "proves an explicit fixed bound for (2N+1)A_N at every cutoff. Thus the entire " ++
+        "cross-phase contribution is unconditionally controlled, and the prefix/Gram " ++
+        "frontier is exactly equivalent to endpoint-scaled squared amplitude balance " ++
+        "between the two completion-weighted centered-tail norms. That amplitude " ++
+        "estimate, without zero-location assumptions, is the isolated frontier.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove the universal eventual endpoint-scaled Hermitian Gram bound " ++
-        "(2N+1)*integral integral Re(f_N(u)*conj(f_N(v)))=O(1), equivalently " ++
-        "the square-root bound for the completed top eta prefix, without assuming " ++
-        "zero locations"))
+        "Prove the universal eventual complementary centered-tail amplitude bound " ++
+        "(2N+1)*(w_(rho#)*|T_(rho#,N+1)|-w_rho*|T_(rho,N+1)|)^2=O(1) " ++
+        "for order m-1, without assuming zero locations; the cross-phase defect is " ++
+        "already unconditionally bounded"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
