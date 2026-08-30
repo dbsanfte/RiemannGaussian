@@ -26,21 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-The continuous signed spectral heat transform is now attached to the literal
-multiplicity-weighted eta zero-window matrix, not merely to an abstract
-Hermitian matrix. Lean retains its complete matrix-valued heat semigroup and
-signed flow, proves the singularly weighted signed current genuinely
-integrable, and identifies its normalized integral exactly with positive
-minus negative inertia.
+The literal eta zero-window spectral heat now has a coordinate-resolved
+leakage calculus. Any decidable selection of packed `(cutoff, colour)`
+coordinates gives a proved Hermitian idempotent projection. Lean expands the
+ordered cross-scale leakage exactly as a finite path sum through the omitted
+coordinates, retaining both endpoint colours and both heat scales.
 
-Together with the ordinary heat-trace limit, these observables reconstruct
-the eta matrix's positive inertia exactly. Lean also translates the existing
-eta inertia theorem into this continuous language: the signed-heat expression
-is bounded by `#critical + #upper` in the represented spectral window. This
-is a richer exact representation of the current certificate, not yet an
-improved zeta-zero proportion. Next, the checked cross-scale projection and
-two-stage leakage carriers will be instantiated around this literal eta heat
-flow and opened back into arithmetic data.
+The same object is proved to be the transition Gram `T_uᴴ*T_v`; adjunction
+reverses the scale order, and equal-scale leakage is positive semidefinite.
+Its trace is exactly the transition Frobenius mass, while the compressed
+square plus this named mass equals the longer-time compressed heat trace.
+This closes the finite coordinate-compression interface without information
+loss. It is not yet the infinite logarithmic-time eta support projection and
+does not improve the proved zero proportion. The next task is to evaluate
+these retained eta heat paths arithmetically and feed them into a multi-scale
+certificate ceiling.
 
 ## Mathematical Program
 

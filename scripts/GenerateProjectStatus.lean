@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_zero_one_eq_integral_mixedChannelZeroSumAt
   },
   {
-    label := "The literal eta zero window has an exact signed-heat inertia certificate"
-    lineOne := "eta signed heat"
-    lineTwo := "exact inertia"
+    label := "Eta heat leakage is an exact omitted-coordinate transition Gram"
+    lineOne := "eta heat paths"
+    lineTwo := "transition Gram"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindowSignedHeatCertificate_le_critical_add_upper
+      ``RiemannGaussian.rtrace_pairedEtaTopPrefixFiniteZeroWindowCoordinateSpectralHeatFlow_sq_add_leakage
   },
   {
     label := "The eta pair ledger is a finite odd--even endpoint correlation"
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "open eta heat transition Grams into arithmetic.</text>\n" ++
+      "evaluate eta heat transition paths arithmetically.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -710,7 +710,13 @@ run_cmd do
         "and the resulting exact positive-inertia expression obeys the checked critical-plus-upper " ++
         "zero-count bound. This is a richer representation of the current certificate, not an " ++
         "improved zero proportion. The eta leakage transitions have not yet been arithmetically " ++
-        "evaluated. " ++
+        "evaluated. Every decidable packed cutoff/colour coordinate selection now defines a " ++
+        "checked Hermitian idempotent projection of that eta spectral heat. Its ordered leakage " ++
+        "is expanded entrywise as the exact finite path sum through omitted coordinates and is " ++
+        "simultaneously factored as the cross-scale transition Gram. Same-scale positivity, the " ++
+        "zero-transition criterion, exact Frobenius trace mass, and the longer-time trace-balance " ++
+        "ledger are all checked. This is finite coordinate compression, not yet the infinite " ++
+        "logarithmic-time eta support operator. " ++
         "A stronger eta-arithmetic cross-zero cancellation estimate " ++
         "remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -758,8 +764,10 @@ run_cmd do
         "ordered cross-scale transition Grams and separates the two nonnegative same-scale " ++
         "leakage masses exactly. The literal eta zero-window matrix now carries the complete " ++
         "signed spectral heat trajectory, exact signature integral, nullity limit, positive-inertia " ++
-        "reconstruction, and continuous critical-plus-upper count bound. What is not yet proved " ++
-        "is an arithmetic evaluation of its projection-transition Grams, or a cross-zero estimate " ++
+        "reconstruction, and continuous critical-plus-upper count bound. Arbitrary retained " ++
+        "cutoff/colour coordinates now also have exact omitted-coordinate cross-scale path sums, " ++
+        "transition-Gram factorizations, and same-scale mass-balance ledgers. What is not yet proved " ++
+        "is an arithmetic estimate for those eta spectral-heat transition paths, or a cross-zero estimate " ++
         "strong enough to improve that triangle bound. The required signed " ++
         "finite-endpoint correlation estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++

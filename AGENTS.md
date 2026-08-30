@@ -960,8 +960,15 @@ complete spectral heat and signed spectral heat flows. Lean proves the exact
 signature integral, nullity limit, positive-inertia reconstruction, and the
 continuous form of the existing `#critical + #upper` eta inertia bound. This
 does not yet improve the zero proportion. The next slice must wrap the checked
-cross-scale and two-stage leakage carriers around this literal eta heat flow,
-then open their transition Grams back into eta arithmetic before estimating.
+cross-scale carrier around this literal eta heat flow. That finite coordinate
+instantiation is now checked: every decidable packed cutoff/colour selection
+is a Hermitian idempotent projection, the ordered leakage is opened into the
+literal sum over omitted coordinates, and the same matrix remains an exact
+transition Gram with scale-reversing adjoint, same-scale positivity, Frobenius
+trace identity, zero criterion, and mass-balance ledger. This is not the
+infinite eta-support projection. The next work must evaluate the retained
+spectral-heat path entries arithmetically and measure their effect on the
+multi-scale certificate ceiling before any further collapse.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is
