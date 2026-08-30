@@ -864,7 +864,15 @@ Lean proves the partner channel is `A_(rho#),j`, the aligned channel is
 `2*(H_(sigma#),(rho#)+conj(H_sigma,rho))`. The diagonal, off-diagonal,
 coherent mass, and multiplicity ledger are all rewritten through this one
 kernel and its reflected copy. Controlling the signed squares of that
-reflection coupling remains open.
+reflection coupling remains open. Lean now factors the original channel as
+`A_rho,j=W_rho*M_rho,j`, where `W_rho=C(rho)*rho` is the fixed completed
+spectral weight and `M_rho,j` is the literal order-`m_rho-1` cutoff-centered
+finite eta moment. Its Gram kernel is therefore
+`H_sigma,rho=conj(W_sigma)W_rho*B_sigma,rho`, with the purely finite
+arithmetic kernel `B_sigma,rho=sum_j conj(M_sigma,j)M_rho,j`. The complete
+feature correlation, diagonal, off-diagonal mass, and ledger are rewritten
+with the `W` factors explicit. The live estimate is now concentrated in the
+reflection coupling of the finite arithmetic kernels `B`.
 
 ## Soundness invariant
 

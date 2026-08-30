@@ -26,21 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now compresses the two surviving eta channels to one completed finite
-prefix. Write `A_{ρ,j}` for the literal completion-weighted order-`m_ρ-1`
-eta prefix at `ρ`, and
-`H_{σ,ρ} = ∑_j conj(A_{σ,j}) A_{ρ,j}`. Lean proves that the partner
-channel is `A_{ρ#,j}`, the aligned conjugate channel is `conj(A_{ρ,j})`, and
-therefore
+Lean now separates the fixed spectral completion weights from the finite eta
+arithmetic. Put `W_ρ = C(ρ)ρ`, let `M_{ρ,j}` be the literal order-`m_ρ-1`
+cutoff-centered eta prefix, and set
+`B_{σ,ρ} = ∑_j conj(M_{σ,j}) M_{ρ,j}`. Lean proves exactly
 
-`⟨v_σ,v_ρ⟩ = 2 (H_{σ#,ρ#} + conj(H_{σ,ρ}))`.
+`⟨v_σ,v_ρ⟩ = 2 (conj(W_{σ#}) W_{ρ#} B_{σ#,ρ#}`
+`+ W_σ conj(W_ρ) conj(B_{σ,ρ}))`.
 
-Here `#` is the genuine critical-line reflection on zeta zeros. The diagonal,
-signed distinct-zero mass, coherent Frobenius mass, and multiplicity-aware
-rank--trace ledger are all now expressed through this single finite eta Gram
-kernel and its reflected copy. The missing theorem is an arithmetic bound for
-the resulting reflection-coupled signed correlation; no such bound or new
-zero-location result is asserted yet.
+Here `#` is the genuine critical-line reflection. The diagonal, signed
+distinct-zero mass, coherent Frobenius mass, and multiplicity-aware
+rank--trace ledger are all rewritten with these weights outside the finite
+moment kernel `B`. The remaining theorem must bound the resulting signed
+reflection coupling from the explicit finite eta arithmetic; no such bound
+or new zero-location result is asserted yet.
 
 ## Mathematical Program
 
