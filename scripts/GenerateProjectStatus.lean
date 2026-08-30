@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_zero_one_eq_integral_mixedChannelZeroSumAt
   },
   {
-    label := "Signed spectral heat reconstructs finite Hermitian inertia exactly"
-    lineOne := "signed spectral heat"
-    lineTwo := "positive inertia"
-    role := "unconditional"
+    label := "Two-stage heat compression retains both leakage channels exactly"
+    lineOne := "two-stage heat"
+    lineTwo := "leakage ledger"
+    role := "bridge"
     theoremName :=
-      ``RiemannGaussian.HermitianRankTrace.posIndex_eq_signedHeat
+      ``RiemannGaussian.HermitianRankTrace.rtrace_twoStageCompressedHermitianHeatFlow_sq_add_leakages
   },
   {
     label := "The eta pair ledger is a finite odd--even endpoint correlation"
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "connect signed heat leakage to eta arithmetic.</text>\n" ++
+      "instantiate the leakage carriers on eta arithmetic.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -700,6 +700,11 @@ run_cmd do
         "integrable and its normalized integral is exactly n_+-n_-; the ordinary heat trace " ++
         "converges to the zero index, giving exact positive-inertia recovery. This abstract " ++
         "matrix theorem is not yet connected to eta arithmetic or a zeta-zero proportion. " ++
+        "Lean now also proves the exact ordered cross-scale projection identity, factors every " ++
+        "leakage as a transition Gram, and retains separate first-projection and second-compression " ++
+        "losses in a two-stage heat ledger. At equal scales both losses are positive semidefinite " ++
+        "and their traces are exact transition Frobenius masses. This remains finite matrix " ++
+        "algebra; the literal eta support and window instantiation is still open. " ++
         "A stronger eta-arithmetic cross-zero cancellation estimate " ++
         "remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -743,8 +748,10 @@ run_cmd do
         "pointwise: at every proper time the surviving block is the exact three-colour signed " ++
         "zero sum, and its positive-time integral is the reciprocal-gap block. The abstract " ++
         "finite Hermitian signed heat flow now reconstructs positive inertia exactly from its " ++
-        "continuous trace/current observables. What is not yet proved is the eta support-gap " ++
-        "and finite-compression leakage interface, or a cross-zero arithmetic estimate " ++
+        "continuous trace/current observables. Its finite two-projection calculus now retains " ++
+        "ordered cross-scale transition Grams and separates the two nonnegative same-scale " ++
+        "leakage masses exactly. What is not yet proved is an instantiation of those carriers " ++
+        "on the literal eta support/window arithmetic, or a cross-zero arithmetic estimate " ++
         "strong enough to improve that triangle bound. The required signed " ++
         "finite-endpoint correlation estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++

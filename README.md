@@ -26,21 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now formalizes the continuous signed spectral heat transform of an
-arbitrary finite Hermitian matrix. If its eigenvalues are `lambda_i`, the two
-checked observables are the full heat trace
-`sum_i exp(-u*lambda_i²)` and the signed current
-`sum_i lambda_i*exp(-u*lambda_i²)`.
+Lean now extends the finite signed spectral heat layer with an exact
+information-preserving projection calculus. For the Hermitian heat semigroup
+`H_u` and two Hermitian idempotents `P,C`, it retains the ordered cross-scale
+leakage instead of replacing it by a bound. Each leakage is proved to be a
+transition Gram `T_uᴴ*T_v`, so adjunction reverses the heat scales and every
+same-scale leakage is positive semidefinite.
 
-The singularly weighted signed current is proved genuinely integrable, and
-Lean proves exactly that its normalized positive-time integral is
-`n_+ - n_-`. The ordinary heat trace tends to the zero index, so these
-continuous observables reconstruct positive inertia exactly. This is the
-abstract finite spectral layer only: it does not yet improve a zeta-zero
-proportion or prove RH. The next steps are to retain eta support-gap leakage
-and finite-compression leakage as exact positive operators, then determine
-whether their arithmetic evaluation supplies genuinely stronger certificate
-data.
+For `K_u=P*H_u*P` and `M_u=C*K_u*C`, Lean proves the exact two-stage ledger
+`M_u*M_v = M_(u+v) - L_support(u,v) - L_compression(u,v)`. At equal scales,
+the two correction traces are exactly the squared Frobenius masses of their
+separate transition channels. This finite algebra does not yet instantiate
+the literal eta support operator or improve a zeta-zero proportion. The next
+step is to transport these scale- and channel-resolved leakage observables
+into the existing eta zero-window arithmetic.
 
 ## Mathematical Program
 

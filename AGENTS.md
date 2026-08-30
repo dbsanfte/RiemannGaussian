@@ -949,9 +949,14 @@ signed heat carrier. Lean proves the `u^(-1/2)`-weighted signed current
 integrable, its normalized integral exactly equal to `n_+ - n_-`, and the
 ordinary heat trace convergent to the zero index. Positive inertia is therefore
 reconstructed exactly from the continuous observables. This is not yet an eta
-or zeta theorem. The next hybrid interfaces must name eta support-gap leakage
-and finite-compression leakage exactly before any inequality, and only then
-seek unconditional arithmetic control of the extra observables.
+or zeta theorem. The finite projection layer now names the ordered cross-scale
+leakage before any inequality, factors it as a transition Gram, and proves
+that adjunction reverses scale order. A second projection retains two distinct
+loss channels: compressed first-projection leakage and finite-compression
+leakage. Their exact two-stage matrix and trace ledgers, same-scale positivity,
+and transition Frobenius identities are checked. The next hybrid interface
+must instantiate these carriers on the literal eta support/window arithmetic;
+only then should it seek unconditional control of the extra observables.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is
