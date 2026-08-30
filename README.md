@@ -26,19 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now opens every coefficient of the positive-time eta heat series into
-ordered closed paths through the actual cutoff/colour coordinates. Each edge
-remains the literal complex multiplicity-weighted eta zero sum, so channel,
-phase, path order, cutoff, and zero multiplicity survive. The ordinary heat
-trace has a genuine convergent `HasSum` expansion over all even path lengths;
-no infinite interchange or totalized divergent sum is hidden.
+Lean now resolves the cubic coordinate-compressed eta heat into three exact
+channel-coloured paths: gap at the first separator, gap at the second, and
+gaps at both. The two one-gap channels are adjoints and have equal real traces
+at one scale. The two-gap channel is a positive-semidefinite weighted
+transition Gram. Entrywise, all three remain ordered double sums over literal
+retained or omitted cutoff/colour coordinates.
 
-The length-two closed path is proved exactly equal to the existing endpoint
-diagonal plus signed distinct-zero correlation. Higher paths therefore extend,
-rather than replace, the checked arithmetic ledger and give the independent
-`H₀(u)<5/36` separator a phase-preserving eta carrier. Their required
-aggregate estimate and the normalized heat crossing remain open, so no new
-zeta-zero proportion is currently claimed.
+This is the first higher-path ledger beyond the quadratic leakage identity.
+It preserves the sign and phase of the paired one-gap contribution instead of
+replacing it by an absolute envelope, while isolating a genuinely nonnegative
+two-gap reserve. Estimating that signed pair strongly enough to force the
+independent `H₀(u)<5/36` crossing remains open, so no new zeta-zero
+proportion is currently claimed.
 
 ## Mathematical Program
 

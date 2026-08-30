@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Eta heat retains every ordered even closed-path correlation"
-    lineOne := "eta heat HasSum"
-    lineTwo := "ordered closed paths"
+    label := "Cubic eta heat retains first-gap, second-gap, and two-gap paths"
+    lineOne := "eta cubic heat"
+    lineTwo := "3 channel paths"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.hasSum_pairedEtaTopPrefixFiniteZeroWindowSpectralHeatTrace_even_closedPaths
+      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindowCoordinateSpectralHeatFlow_mul_three
   }
 ]
 
@@ -730,6 +730,10 @@ run_cmd do
         "cutoff/colour coordinates, with each edge still a complex multiplicity-weighted zero " ++
         "sum. The length-two path is exactly the existing endpoint arithmetic ledger. Higher " ++
         "paths and genuinely mixed scales have not yet been estimated from eta arithmetic. " ++
+        "At cubic order, coordinate compression now retains three distinct ordered paths: a gap " ++
+        "at either separator and gaps at both. The one-gap pair is adjoint with equal real traces " ++
+        "at equal scale; the two-gap path is a positive weighted transition Gram. Every eta entry " ++
+        "is the corresponding retained/omitted double coordinate sum. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -803,7 +807,10 @@ run_cmd do
         "channel retains every even coherent power rather than collapsing at positive scale. Each " ++
         "power trace is now an exact ordered closed eta path sum; its edge factors retain cutoff, " ++
         "colour, phase, zero multiplicity, and path order. The length-two path recovers the checked " ++
-        "endpoint ledger, while higher path estimates remain open. An abstract degree-four " ++
+        "endpoint ledger. The cubic coordinate-compression ledger separately retains both ordered " ++
+        "one-gap paths and the two-gap path; the former pair by adjunction and the latter is " ++
+        "positive semidefinite at equal scale. Their literal retained/omitted double path sums are " ++
+        "checked, while their aggregate arithmetic estimate remains open. An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
         "the five-moment information class. The witness-weighted heat refinement is monotone and " ++
@@ -813,7 +820,8 @@ run_cmd do
         "the certificate is greater than 13/18, while the sharp model never crosses at finite scale. " ++
         "What is not yet proved is that eta arithmetic supplies the corresponding normalized model " ++
         "and crossing bound, another independent observable nonzero on the sharp root channels, the additional normalized " ++
-        "moments, a phase-preserving aggregate estimate for the higher closed-path coefficients or genuinely mixed " ++
+        "moments, a phase-preserving aggregate estimate for the paired cubic one-gap channel, higher " ++
+        "closed-path coefficients, or genuinely mixed " ++
         "heat scales, an estimate for the transition paths, or a cross-zero estimate " ++
         "strong enough to improve that triangle bound. The required signed " ++
         "finite-endpoint correlation estimate and the multiplicity-one head " ++

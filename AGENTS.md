@@ -1032,6 +1032,16 @@ path order intact. Its length-two coefficient is proved exactly equal to the
 existing endpoint diagonal plus signed off-diagonal arithmetic mass. Higher
 path estimates remain open; applying absolute values edgewise would discard
 the new information and is not an acceptable substitute.
+The first higher projection path is now explicit as well. The product of three
+coordinate-compressed eta heat flows is the longer-time compressed flow minus
+three separately named channels: first-gap, second-gap, and two-gap. Lean
+opens each entry as its ordered retained/omitted double path sum. At equal
+scale the two one-gap paths are adjoints with equal real trace, while the
+two-gap path factors through the complementary compressed heat as a positive
+weighted transition Gram and is positive semidefinite. The live estimate must
+use cancellation in the paired one-gap trace together with the nonnegative
+two-gap reserve; bounding both one-gap paths separately by norms would undo
+the purpose of this slice.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is
