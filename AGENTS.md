@@ -1059,12 +1059,16 @@ specialization to every finite same-real-part zeta-zero layer. The raw inverse
 decay mode now restores the real coordinate as its exact norm. Lean proves that
 one odd prime separates these raw modes across an arbitrary finite zeta-zero
 window, and that their first window-cardinality coordinates form a
-nonsingular Vandermonde matrix. The next obligation is to transfer this finite
-limiting block through the sharp complex asymptotics to an eventual full-rank
-matrix of literal finite eta prefixes. If completed, that route would
-establish a 100% information ceiling for each finite eta zero window; an
-arithmetic estimate controlling the resulting exact observable would still be
-required for RH.
+nonsingular Vandermonde matrix. Lean now transfers that finite limiting block
+through the sharp complex asymptotics. For every finite zeta-zero window, one
+odd prime base makes all sufficiently late square matrices of literal
+multiplicity-aware centered eta prefixes nonsingular. This establishes a 100%
+finite information-separation carrier: no represented zero is lost at the
+feature level. The next obligation is to instantiate the normalized signed-
+heat/rank--trace certificate on this full-rank carrier and derive an
+eta-arithmetic bound that excludes the sharp finite obstruction. That
+quantitative estimate would still be required for any stronger zeta-zero
+proportion and ultimately for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is

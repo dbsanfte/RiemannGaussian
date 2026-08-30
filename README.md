@@ -39,27 +39,28 @@ window.
 Lean currently proves a sharp abstract `13/18` degree-four certificate, but
 that number is not yet a zeta-zero proportion: the normalized moment model has
 not been derived from the literal eta window. The immediate route to close
-that gap is now to transfer the nonsingular finite Vandermonde block of the
-limiting geometric eta modes to an eventual evaluation block of the literal
-finite eta prefixes. That richer family can then feed the checked signed-heat
-and rank--trace ledgers without prematurely discarding phase. A subsequent
-eta-specific arithmetic estimate must exclude the sharp finite obstruction
-before any stronger zero proportion is claimed.
+that gap is now to instantiate the checked signed-heat and rank--trace ledgers
+with the new eventual full-rank blocks of literal finite eta prefixes. The
+resulting normalized finite model must retain the complete cutoff, phase,
+multiplicity, and reflected-zero data and expose an independent observable
+that excludes the sharp three-atom obstruction. No stronger zero proportion
+will be claimed until that eta-specific arithmetic estimate is proved.
 
 ## Latest Update
 
-Lean now separates the raw geometric eta decay modes across an arbitrary
-finite zeta-zero window with one odd prime base. Different real parts are
-distinguished by the exact mode norm `q^(-Re s)`; any residual same-layer
-collision reduces to the checked prime-phase theorem. Thus no explicit
-real-layer partition is needed.
+Lean now transfers the separated decay-mode Vandermonde all the way to literal
+eta arithmetic. For every finite zeta-zero window of cardinality `d`, Lean
+selects one odd prime base and proves that all sufficiently late `d × d`
+matrices of multiplicity-aware centered eta prefixes, sampled at `d`
+consecutive geometric cutoffs, have nonzero determinant.
 
-For a window of cardinality `d`, Lean also proves that the first `d`
-coordinates of these separated modes form a Vandermonde matrix with nonzero
-determinant. This is an exact finite full-rank block for the limiting geometric
-modes. The next step is to transfer its nonsingularity, using the checked
-sharp complex asymptotics, to an eventual matrix of literal finite eta
-prefixes. No stronger zeta-zero proportion is yet claimed.
+The proof row-scales the literal matrix, proves entrywise convergence to a
+nonzero diagonal multiple of the checked decay-mode Vandermonde, passes the
+limit through the determinant, and then removes the exact diagonal scaling.
+This closes finite information separation: no zero in the selected window is
+lost at the feature level. It is not yet an `18/18` certificate; the next step
+is to insert this full-rank carrier into the normalized signed-heat/rank--trace
+model and derive a quantitative eta-arithmetic certificate bound.
 
 ## Mathematical Program
 

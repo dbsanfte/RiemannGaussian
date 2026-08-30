@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Finite eta decay modes have a nonsingular Vandermonde block"
-    lineOne := "eta decay modes"
-    lineTwo := "finite Vandermonde"
+    label := "Literal finite eta prefixes have eventual nonsingular blocks"
+    lineOne := "literal eta prefixes"
+    lineTwo := "eventual full rank"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.exists_prime_det_etaGeometricDecayModeVandermonde_ne_zero
+      ``RiemannGaussian.exists_prime_eventually_det_pairedEtaLowerMomentGeometricPrefixMatrix_ne_zero
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "transfer the limiting Vandermonde to literal eta prefixes.</text>\n" ++
+      "instantiate the full-rank eta block in the certificate ledger.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -746,8 +746,12 @@ run_cmd do
         "frequency family has an odd prime base with pairwise distinct normalized modes. The raw " ++
         "inverse mode restores the real coordinate in its norm, so one odd prime now separates the " ++
         "complete modes across any finite zeta-zero window. Their first window-cardinality coordinates " ++
-        "form a checked nonsingular Vandermonde matrix. Transferring that limiting block to literal " ++
-        "finite eta prefixes has not yet been proved. " ++
+        "form a checked nonsingular Vandermonde matrix. Lean now row-scales the literal multiplicity-" ++
+        "aware centered eta-prefix matrix, proves its entrywise convergence to a nonzero diagonal " ++
+        "multiple of that Vandermonde block, passes the limit through the determinant, and removes " ++
+        "the exact row scaling. Hence one odd prime makes every sufficiently late square block of " ++
+        "literal eta prefixes nonsingular. Instantiating the normalized certificate ledger on this " ++
+        "full-rank carrier has not yet been proved. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -834,8 +838,12 @@ run_cmd do
         "finite injective frequency family. The raw inverse decay mode retains the real coordinate " ++
         "through its exact norm, allowing one odd prime to separate the entire finite zeta-zero " ++
         "window without an explicit layer partition. The first window-cardinality mode coordinates " ++
-        "form a nonsingular Vandermonde matrix. The remaining step is to transfer that limiting " ++
-        "finite block to an eventual full-rank matrix of literal eta prefixes. " ++
+        "form a nonsingular Vandermonde matrix. Lean now transfers that block through the sharp " ++
+        "complex eta asymptotics: the row-scaled literal prefix matrices converge to a nonzero " ++
+        "diagonal multiple of the Vandermonde, so all sufficiently late unscaled square eta-prefix " ++
+        "blocks have nonzero determinant. This closes finite feature separation. The remaining step " ++
+        "is to instantiate and estimate the normalized signed-heat/rank--trace certificate on this " ++
+        "full-rank literal carrier. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

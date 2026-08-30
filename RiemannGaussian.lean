@@ -400,6 +400,7 @@ import RiemannGaussian.Hybrid.GeometricPhaseRigidity
 import RiemannGaussian.Hybrid.EtaGeometricPhaseSampling
 import RiemannGaussian.Hybrid.EtaGeometricModeSeparation
 import RiemannGaussian.Hybrid.EtaGeometricDecayVandermonde
+import RiemannGaussian.Hybrid.EtaGeometricPrefixVandermonde
 import RiemannGaussian.Hybrid.HigherMomentCeiling
 import RiemannGaussian.Hybrid.HigherMomentHeatCeiling
 import RiemannGaussian.Hybrid.HigherMomentIndependentHeat

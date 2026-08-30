@@ -197,17 +197,18 @@ theorem exists_prime_etaGeometricDecayMode_injOn_zetaZeros
   intro rho _hrho zeta _hzeta hval
   exact Subtype.ext hval
 
-private noncomputable def finsetEquivFin
-    {ι : Type*} (s : Finset ι) : s ≃ Fin s.card :=
+/-- A fixed finite-coordinate enumeration of a finite zeta-zero window. -/
+def etaZeroWindowEquivFin
+    (s : Finset NontrivialZetaZero) : s ≃ Fin s.card :=
   Fintype.equivFinOfCardEq (by simp)
 
 /-- Square evaluation matrix of the raw decay modes on the first `s.card`
 geometric coordinates. -/
 def etaGeometricDecayModeVandermonde
     (q : ℕ) (s : Finset NontrivialZetaZero) :
-    Matrix (Fin s.card) (Fin s.card) ℂ :=
+  Matrix (Fin s.card) (Fin s.card) ℂ :=
   Matrix.vandermonde (fun i ↦
-    etaGeometricDecayMode q ((finsetEquivFin s).symm i).val)
+    etaGeometricDecayMode q ((etaZeroWindowEquivFin s).symm i).val)
 
 /-- Each entry of the finite raw-mode evaluation matrix is the corresponding
 mode raised to its coordinate index. -/
@@ -215,7 +216,8 @@ theorem etaGeometricDecayModeVandermonde_apply
     (q : ℕ) (s : Finset NontrivialZetaZero)
     (i j : Fin s.card) :
     etaGeometricDecayModeVandermonde q s i j =
-      etaGeometricDecayMode q ((finsetEquivFin s).symm i).val ^ (j : ℕ) :=
+      etaGeometricDecayMode q
+        ((etaZeroWindowEquivFin s).symm i).val ^ (j : ℕ) :=
   rfl
 
 /-- Pairwise separation of the raw modes makes their first-cardinality
@@ -228,11 +230,11 @@ theorem det_etaGeometricDecayModeVandermonde_ne_zero
     (etaGeometricDecayModeVandermonde q s).det ≠ 0 := by
   apply Matrix.det_vandermonde_ne_zero_iff.mpr
   intro i j hmode
-  apply (finsetEquivFin s).symm.injective
+  apply (etaZeroWindowEquivFin s).symm.injective
   apply Subtype.ext
   exact hinj
-    ((finsetEquivFin s).symm i).property
-    ((finsetEquivFin s).symm j).property hmode
+    ((etaZeroWindowEquivFin s).symm i).property
+    ((etaZeroWindowEquivFin s).symm j).property hmode
 
 /-- One odd prime simultaneously separates every raw decay mode in a finite
 zeta-zero window and makes the first-cardinality geometric evaluation matrix
