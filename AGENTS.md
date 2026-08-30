@@ -1012,6 +1012,16 @@ threshold at every finite scale. The next arithmetic gate is therefore not
 another abstract reweighting: it is construction of the correct normalized
 eta model plus a proved ordinary-heat crossing, or another independent
 observable with a comparably explicit separator criterion.
+The literal eta positive-time hierarchy now retains its complete matrix-power
+carrier. Lean proves a genuine convergent `HasSum` expansion
+`H_k(u) = sum_m (-u)^m/m! * rtrace(A^(k+2m))` for every Hermitian matrix and
+instantiates it on the multiplicity-weighted eta zero-window block. In
+particular, the independent ordinary eta heat trace is the exact series of all
+even coherent matrix-power traces. This removes any hidden positive-time
+spectral collapse, but only powers zero through two currently have explicit
+eta arithmetic evaluations. The next information-preserving step is to open
+the higher powers as literal closed eta paths and obtain a normalized crossing
+or obstruction from those signed correlations.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is

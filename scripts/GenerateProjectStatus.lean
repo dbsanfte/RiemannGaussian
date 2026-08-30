@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "The eta pair ledger is a finite odd--even endpoint correlation"
-    lineOne := "eta arithmetic ledger"
-    lineTwo := "odd/even endpoints"
+    label := "Positive-time eta heat retains every even matrix-power trace"
+    lineOne := "eta heat HasSum"
+    lineTwo := "all even powers"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_two_arithmeticCorrelation_ledger
+      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindowSpectralHeatMomentTrace_zero_eq_tsum_even_rtrace_powers
   }
 ]
 
@@ -724,8 +724,11 @@ run_cmd do
         "zero heat scale the first three traces are now identified with dimension, signed trace, " ++
         "and squared Frobenius mass. On the literal eta window the order-two value, and hence the " ++
         "negative initial ordinary-heat slope, is exactly the evaluated endpoint diagonal plus " ++
-        "signed off-diagonal arithmetic correlation. Positive heat scales and genuinely mixed " ++
-        "scales have not yet been evaluated from eta endpoint arithmetic. Separately, every " ++
+        "signed off-diagonal arithmetic correlation. Every positive-time eta heat moment is now " ++
+        "also a genuinely convergent series of all parity-compatible matrix-power traces; in " ++
+        "particular, the ordinary heat trace retains the complete even tower. Powers above two " ++
+        "and genuinely mixed scales have not yet been evaluated from eta endpoint arithmetic. " ++
+        "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
         "so this degree-four information class has a sharp ceiling below one. Its moments are " ++
@@ -793,7 +796,11 @@ run_cmd do
         "eta spectral moments now form an exact positive Gram with a checked derivative hierarchy. " ++
         "Their zero-scale order-one and order-two boundary values are now exactly the checked eta " ++
         "trace and endpoint-expanded coherent Frobenius ledgers; the order-two ledger is also the " ++
-        "negative initial heat slope. An abstract degree-four nonnegative moment model now yields " ++
+        "negative initial heat slope. The complete positive-time hierarchy is now a checked " ++
+        "convergent series of parity-compatible matrix-power traces, so the ordinary eta heat " ++
+        "channel retains every even coherent power rather than collapsing at positive scale. " ++
+        "Only the first powers currently have literal endpoint evaluations. An abstract degree-four " ++
+        "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
         "the five-moment information class. The witness-weighted heat refinement is monotone and " ++
         "converges to the exact certificate, but the sharp model saturates it at every scale. This " ++
@@ -802,8 +809,8 @@ run_cmd do
         "the certificate is greater than 13/18, while the sharp model never crosses at finite scale. " ++
         "What is not yet proved is that eta arithmetic supplies the corresponding normalized model " ++
         "and crossing bound, another independent observable nonzero on the sharp root channels, the additional normalized " ++
-        "moments, an arithmetic estimate at positive " ++
-        "or genuinely mixed heat scales, an estimate for the transition paths, or a cross-zero estimate " ++
+        "moments, an arithmetic estimate for the higher power-series coefficients or genuinely mixed " ++
+        "heat scales, an estimate for the transition paths, or a cross-zero estimate " ++
         "strong enough to improve that triangle bound. The required signed " ++
         "finite-endpoint correlation estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++

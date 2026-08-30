@@ -26,20 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now isolates an independent heat channel that does distinguish the sharp
-root support: the ordinary weighted heat trace
-`H₀(u)=Σ wᵢ exp(-u xᵢ²)`. The first-moment normalization forces positive
-mass away from zero, so `H₀(u)` is strictly larger than the zero-atom mass at
-every finite scale and converges to that mass as `u→∞`.
+Lean now proves that every positive-time spectral heat moment of the literal
+eta zero-window matrix retains the complete parity-compatible matrix-power
+tower. In particular, the ordinary eta heat trace is exactly the convergent
+series
+`H₀(u)=Σₘ (-u)ᵐ/m! · rtr(A²ᵐ)`. The theorem has a genuine `HasSum`
+conclusion: convergence and the finite spectral interchange are checked, not
+hidden behind a totalized infinite sum.
 
-This yields an exact separator theorem: a degree-four model has certificate
-strictly above `13/18` if and only if some nonnegative scale satisfies
-`H₀(u)<5/36`. The sharp three-atom adversary is proved to remain strictly
-above `5/36` at every finite scale. We therefore have a concrete target for
-the arithmetic side: construct the appropriate normalized eta moment model
-and prove one ordinary heat-trace crossing. Neither that normalization nor
-the crossing estimate is currently derived from eta arithmetic, so no new
-zeta-zero proportion is claimed.
+This gives the independent `H₀(u)<5/36` separator a concrete carrier for
+eta arithmetic without discarding coherent higher correlations. Only its
+first coefficients have so far been evaluated as literal eta endpoint sums;
+the next task is to expand or bound the higher matrix-power traces and derive
+a normalized heat crossing. No such crossing or new zeta-zero proportion is
+currently claimed.
 
 ## Mathematical Program
 
