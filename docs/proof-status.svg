@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 414 modules · 10564 declarations · 9030 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 422 modules · 10685 declarations · 9134 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -71,9 +71,9 @@
   </g>
   <g class="proved unconditional">
     <rect x="340" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one</title>
-    <text x="412" y="173">reciprocal extension</text>
-    <text x="412" y="191">outer norm &lt; 1  ✓</text>
+    <title>RiemannGaussian.MontgomeryVaughan.mvHilbert_twentySix</title>
+    <text x="412" y="173">weighted Hilbert</text>
+    <text x="412" y="191">MV constant 26  ✓</text>
   </g>
   <g class="proved bridge">
     <rect x="500" y="150" width="145" height="54" rx="9"/>

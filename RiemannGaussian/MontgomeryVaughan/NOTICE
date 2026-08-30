@@ -1,0 +1,14 @@
+The Lean files in this directory are adapted from the self-contained
+Montgomery--Vaughan development in Anthropic's Zeta23 project.
+
+Zeta23 -- a Lean 4 formalization of critical-line zero-proportion theorems
+Copyright 2026 Anthropic, PBC
+
+Original source: https://github.com/anthropics/formal-math/tree/main/zeta23
+Licensed under the Apache License, Version 2.0 (see LICENSE in this directory).
+
+Local changes: import paths and namespaces were adjusted for RiemannGaussian;
+the project-wide `MVHilbert` interface was isolated from Zeta23's larger
+hypothesis bundle; and the existing local Hermitian spectral-map API replaces
+the original namespace.  The mathematical statements and proof strategy are
+otherwise retained.

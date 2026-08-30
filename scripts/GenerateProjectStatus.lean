@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
   },
   {
-    label := "The holomorphic reciprocal eta multiplier extension contracts the complete outer boundary"
-    lineOne := "reciprocal extension"
-    lineTwo := "outer norm < 1"
+    label := "Montgomery--Vaughan weighted Hilbert inequality with explicit constant 26"
+    lineOne := "weighted Hilbert"
+    lineTwo := "MV constant 26"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
+      ``RiemannGaussian.MontgomeryVaughan.mvHilbert_twentySix
   },
   {
     label := "The eta pair ledger is a finite odd--even endpoint correlation"

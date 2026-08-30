@@ -26,25 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now evaluates every retained interval in the finite eta zero-pair ledger
-at its literal arithmetic endpoints. Repeated integration by parts is encoded
-by the finite recursion
+Lean now proves the generalized Montgomery--Vaughan weighted Hilbert
+inequality internally. For arbitrary finite distinct real frequencies and
+positive admissible gap weights, the diagonal form has explicit constant
+`13`; polarization gives the bilinear theorem
+`RiemannGaussian.MontgomeryVaughan.mvHilbert_twentySix` with constant `26`.
+The checked proof includes the interval-spacing estimates, the quadratic-form
+bound, the Preissmann--Lévêque eigen-identity, and the Hermitian spectral
+reduction. It is not imported as a hypothesis.
 
-`Q_0(s;a,t)=s⁻¹`,
-`Q_(k+1)(s;a,t)=(t-a)^(k+1)/s + (k+1)Q_k(s;a,t)/s`.
-
-For `a_N=log(2(N+1)+1)`, Lean proves the exact formula
-
-`I_{ρ,N,n} = (2n+1)^(-ρ) Q_(m_ρ-1)(ρ;a_N,log(2n+1))`
-`- (2n+2)^(-ρ) Q_(m_ρ-1)(ρ;a_N,log(2n+2))`.
-
-Thus the finite moment Gram kernel and the complete multiplicity-aware
-rank--trace ledger are now finite sums of explicit odd/even complex powers
-and polynomial log-endpoint coefficients; no interval integrals remain in
-the named arithmetic form. The next hard input is an aggregate signed
-off-diagonal estimate for these frequencies—potentially a separated-frequency
-or Montgomery--Vaughan-style bound. No such estimate or new zero-location
-result is asserted yet.
+This supplies the separated-frequency inequality suggested by the current eta
+endpoint ledger, but it does not yet estimate that ledger: a further checked
+bridge must turn the explicit logarithmic endpoint correlation into the
+Hilbert kernel with denominator `log n - log m`. No zero-location consequence
+is claimed by this slice.
 
 ## Mathematical Program
 
@@ -74,6 +69,9 @@ prove that theorem.
 - [RiemannGaussian/HermitianRankTrace/](RiemannGaussian/HermitianRankTrace/)
   contains the attributed Apache-2.0 adaptation of the finite-dimensional
   rank--trace stack used by the eta specialization.
+- [RiemannGaussian/MontgomeryVaughan/](RiemannGaussian/MontgomeryVaughan/)
+  contains the attributed Apache-2.0 proof of the weighted Hilbert inequality
+  and its explicit constants.
 - [scripts/GenerateProjectStatus.lean](scripts/GenerateProjectStatus.lean)
   audits the compiled environment and generates the status artifacts in
   [docs/](docs/).

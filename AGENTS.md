@@ -883,7 +883,14 @@ odd-endpoint complex power minus an even-endpoint complex power with literal
 logarithmic coefficients. The terminal ledger therefore has a fully finite
 arithmetic endpoint form. The next live experiment is an aggregate
 separated-frequency estimate on that form, while retaining the signed
-zero-pair phase.
+zero-pair phase. Lean now proves the full generalized Montgomery--Vaughan
+weighted Hilbert inequality internally: `mvDiag_thirteen` gives the diagonal
+constant `13`, and `mvHilbert_twentySix` gives the bilinear constant `26`.
+This is verified reusable infrastructure, not yet an estimate for the eta
+ledger. The next slice must prove admissible gaps for the literal logarithmic
+endpoint frequencies and then identify an averaging or transform that
+produces the required `1/(log n-log m)` kernel from the checked endpoint
+correlation; that bridge may not be assumed.
 
 ## Soundness invariant
 
