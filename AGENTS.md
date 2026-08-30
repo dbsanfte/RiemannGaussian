@@ -790,6 +790,18 @@ finite-window rank/inertia strategy suggested by the zeta23 architecture.
 The next legitimate step is to aggregate these features over finite cutoff and
 zero windows and derive trace/Frobenius information from the literal eta
 arithmetic; abstract rank bounds alone do not control the open current.
+Lean now performs that first aggregation without introducing abstract zero
+data. Any finite cutoff family is packed into one feature on `d × Fin 2`, every
+cutoff slice retains the exact signed eta energy, and the packed feature obeys
+the literal conjugate-partner law. Over the project's genuine symmetric
+finite spectral zero windows, with analytic multiplicity, the resulting
+complex-symmetric matrix splits exactly as
+`onLine + (offReal - offImag)`. The three named blocks are proved positive
+semidefinite where appropriate, and the complete matrix is Hermitian. The
+next step is now sharply separated: prove the rank and positive-index bounds
+for these actual blocks, then seek trace and Frobenius estimates from the eta
+arithmetic. Importing an abstract rank--trace inequality alone is
+infrastructure, not the missing arithmetic estimate.
 
 ## Soundness invariant
 

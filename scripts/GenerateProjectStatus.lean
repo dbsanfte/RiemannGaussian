@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The signed finite eta energy has an exact hyperbolic pair-block realization"
-    lineOne := "finite eta energy"
-    lineTwo := "hyperbolic block"
+    label := "Finite eta zero windows split into positive on-line and hyperbolic off-line blocks"
+    lineOne := "finite eta window"
+    lineTwo := "P + (X - Y)"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.topPrefixFiniteEnergyDifference_eq_hyperbolicForm
+      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindowBlock_eq_onLine_add_offLineReal_sub_imag
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "derive arithmetic trace/Frobenius control for eta pair blocks.</text>\n" ++
+      "prove eta-window inertia, then arithmetic trace/Frobenius control.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -633,21 +633,26 @@ run_cmd do
         "hyperbolic signature matrix. The transpose conjugate-pair block is exactly a " ++
         "positive real rank-one block minus a positive imaginary rank-one block, while " ++
         "the ordinary Hermitian Gram has a plus sign and is positive semidefinite. This " ++
-        "opens a finite-window rank/inertia route, but the eta-specific integral estimate " ++
-        "remains open.")),
+        "feature is now packed over arbitrary finite cutoff families and the genuine " ++
+        "finite symmetric spectral zero windows, retaining analytic multiplicity. The " ++
+        "complete window matrix splits exactly as onLine + (offReal - offImag); all three " ++
+        "constituent blocks have their required positive-semidefinite proofs and the full " ++
+        "matrix is Hermitian. Rank, inertia, and eta-arithmetic trace/Frobenius estimates " ++
+        "remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Aggregate the reflection-equivariant eta hyperbolic features over finite cutoff " ++
-        "and zero windows, then derive trace/Frobenius control from literal eta arithmetic " ++
+        "Prove rank and positive-index bounds for the actual finite eta zero-window " ++
+        "decomposition, then derive trace/Frobenius control from literal eta arithmetic " ++
         "strong enough to prove the critical first absolute moment of the selected " ++
         "leading-current kernels. Lean already proves F_N=L_N+R_N, the critical " ++
-        "summability of R_N, and the exact cosine/crossover factorization of the " ++
-        "higher-multiplicity L_N kernel. The required eta-specific aggregate estimate, " ++
-        "and the multiplicity-one head estimate, remain unproved; the resulting first-" ++
-        "moment criterion is equivalent to RH"))
+        "summability of R_N, the exact cosine/crossover factorization of the higher-" ++
+        "multiplicity L_N kernel, and the finite on-line/off-line block decomposition. " ++
+        "The required eta-specific aggregate estimate and the multiplicity-one head " ++
+        "estimate remain unproved; the resulting first-moment criterion is equivalent " ++
+        "to RH"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

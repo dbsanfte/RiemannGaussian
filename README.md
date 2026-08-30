@@ -26,19 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now compresses the two completed finite eta-prefix terms into an explicit
-two-coordinate hyperbolic feature. Critical-line reflection sends this feature
-to its componentwise complex conjugate, and its quadratic form against one
-fixed Hermitian `2 x 2` signature matrix is exactly the existing signed finite
-eta energy.
+Lean now packs any finite family of the two-coordinate eta hyperbolic features
+into genuine finite symmetric zeta-zero windows, retaining analytic
+multiplicity. Every cutoff slice still recovers the existing signed finite eta
+energy, and critical-line reflection sends the packed feature to its
+componentwise conjugate.
 
-The conjugate-pair sign convention is also checked in Lean: the transpose
-block is a positive rank-one real part minus a positive rank-one imaginary
-part, whereas the ordinary Hermitian Gram is their positive sum. This supplies
-a rigorous eta-specific interface for finite-window rank/inertia compression.
-No trace, Frobenius, or arithmetic estimate strong enough to control those
-blocks has yet been proved; the cosine/crossover leading-current estimate and
-the multiplicity-one branch remain open.
+The resulting complex-symmetric window matrix has the exact checked block
+decomposition `onLine + (offReal - offImag)`. The on-line, off-line real, and
+off-line imaginary blocks are all positive semidefinite, so the full window
+matrix is Hermitian. This is the concrete eta-specific input required by a
+rank/inertia argument. Positive-index and rank bounds, and especially the
+arithmetic trace/Frobenius estimates that would control the open leading
+current, remain to be proved.
 
 ## Mathematical Program
 
