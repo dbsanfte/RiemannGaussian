@@ -53,26 +53,28 @@ reflection. Thus complete whitening cancels the eta amplitudes. The immediate
 route is instead to retain the coupled normal form `B = K P K` and derive a
 literal eta-arithmetic mixed trace or spectral observable before that
 cancellation. Lean now checks the first such observable, the normalized mixed
-trace `Re tr(PK) / Re tr(K)`. The next route is its higher and cross-scale
-moment hierarchy. No stronger zero proportion will be claimed until an
-eta-specific estimate on that richer hierarchy is proved.
+trace `Re tr(PK) / Re tr(K)`, and the full ordered same-scale moment hierarchy
+`Re tr((PK)^r)` together with two-step cross-scale words. The next route is to
+prove the positivity and normalization needed by the finite certificate and
+then obtain eta-arithmetic bounds on this richer hierarchy. No stronger zero
+proportion will be claimed until those steps are checked.
 
 ## Latest Update
 
-Lean now retains the first scalar coupling between the positive eta metric `K`
-and zero reflection `P`. It defines the positive mass
-`m₀ = Re tr(K)` and mixed trace `m₁ = Re tr(PK)`, then proves that `m₀` is
-exactly the Hermitian eta Gram trace while `m₁` is exactly the literal signed
-eta-window trace.
+Lean now defines the reflection-coupled cross-scale carrier
+`Mₙₘ = P(Cₙᴴ Cₘ)` and proves the information-preserving identity
+`Mₙₘ = Cₙᵀ Cₘ`. Every entry is an explicit correlation of two actual packed
+eta features with separate scales, zero labels, phases, and square-root
+multiplicity weights. Scale reversal gives `Mₙₘᵀ = Mₘₙ`.
 
-The colour split survives intact:
-`m₀ − m₁ = 2·offImag` and
-`m₀ + m₁ = 2·(onLine + offReal)` at the real-trace level. Consequently
-`−m₀ ≤ m₁ ≤ m₀`. For every nonempty nonnegative finite zeta-zero window, one
-odd prime makes `m₀ > 0` and the amplitude-sensitive balance
-`m₁ / m₀ ∈ [-1,1]` at all sufficiently late blocks. This is not a stronger
-zero proportion. The next hard step is to build and arithmetically estimate
-higher and cross-scale mixed `(P,K)` moments without collapsing them to `P`.
+At equal scales `Mₙₙ = PK`. For every order `r`, Lean expands
+`μᵣ = Re tr((PK)^r)` as the real part of the complete ordered closed path sum
+on zero-index space. It proves `μ₀` is the represented distinct-zero count and
+`μ₁` is the checked mixed eta trace. The ordered two-step cross-scale moment is
+also symmetric in its scales and is exactly a literal double-edge sum. This is
+not a stronger zero proportion. The next hard step is to prove an appropriate
+positive normalized moment model and eta-arithmetic bounds for these retained
+paths, strong enough to improve the abstract `13/18` certificate.
 
 ## Mathematical Program
 

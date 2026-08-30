@@ -1105,10 +1105,17 @@ information-preserving construction. Lean now checks the first scalar layer:
 `m₁ = Re tr(PK)` is exactly the signed eta trace. Their difference is twice
 the imaginary off-line mass and their sum is twice the on-line-plus-real mass,
 so `-m₀ ≤ m₁ ≤ m₀`; on nonempty separated windows `m₁/m₀ ∈ [-1,1]`.
-The next obligation is to retain higher powers and cross-scale versions of
-this `(P,K)` coupling and prove an eta-arithmetic estimate that excludes the
-sharp finite obstruction. That quantitative estimate remains necessary for
-any stronger zeta-zero proportion and ultimately for RH.
+Lean now retains the higher powers and first cross-scale version as well. For
+geometric blocks `n,m`, the carrier `Mₙₘ = P(Cₙᴴ Cₘ)` is exactly `Cₙᵀ Cₘ`,
+has `Mₙₘᵀ = Mₘₙ`, and exposes literal multiplicity-weighted eta correlations
+entrywise. At equal scales every `Re tr((PK)^r)` is the real part of a complete
+ordered closed zero-index path sum; order zero is the distinct-zero count and
+order one is `m₁`. The two-step cross-scale word is a checked symmetric
+double-edge sum. The next obligation is to prove the positive normalization
+needed to place these moments inside the finite certificate model and then an
+eta-arithmetic estimate that excludes the sharp finite obstruction. That
+quantitative estimate remains necessary for any stronger zeta-zero proportion
+and ultimately for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is
