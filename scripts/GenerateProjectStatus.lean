@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "Finite eta Frobenius mass is an explicit coherent zero sum"
-    lineOne := "finite eta Frobenius"
-    lineTwo := "coherent zero sum"
+    label := "The genuine finite eta block satisfies a literal rank--trace ledger"
+    lineOne := "finite eta rank--trace"
+    lineTwo := "literal zero ledger"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindowBlock_frobSq_eq
+      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindow_rankTrace_two_ledger
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove eta-arithmetic estimates for the trace/Frobenius ledger.</text>\n" ++
+      "prove eta-arithmetic bounds closing the rank--trace ledger.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -643,8 +643,10 @@ run_cmd do
         "difference has positive index at most #upper and the complete window has " ++
         "positive index at most #critical+#upper. The on-line and off-line traces are " ++
         "now exact squared-coordinate sums, and the complete squared Frobenius mass " ++
-        "is an explicit coherent multiplicity-weighted zero sum. Eta-arithmetic " ++
-        "estimates for this ledger remain open.")),
+        "is an explicit coherent multiplicity-weighted zero sum. The checked rank--trace " ++
+        "theorem is now instantiated on these literal blocks, yielding the exact c=2 " ++
+        "ledger 2*M_on+4*M_off-4*#upper-F<=#critical. Eta-arithmetic estimates for " ++
+        "this ledger remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -656,8 +658,8 @@ run_cmd do
         "leading-current kernels. Lean already proves F_N=L_N+R_N, the critical " ++
         "summability of R_N, the exact cosine/crossover factorization of the higher-" ++
         "multiplicity L_N kernel, the finite on-line/off-line block decomposition, " ++
-        "the required divisor-count rank and positive-index bounds, and exact scalar " ++
-        "trace/Frobenius identities. " ++
+        "the required divisor-count rank and positive-index bounds, exact scalar " ++
+        "trace/Frobenius identities, and their checked rank--trace closure. " ++
         "The required eta-specific aggregate estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++
         "to RH"))

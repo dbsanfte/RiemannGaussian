@@ -26,18 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now evaluates the trace and Frobenius quantities of the genuine finite
-eta matrix. The on-line trace is exactly a multiplicity-weighted sum of packed
-feature norms, while the off-line trace is exactly its real-coordinate mass
-minus its imaginary-coordinate mass. The complete squared Frobenius mass is
-an explicit finite sum of squared norms of coherent multiplicity-weighted
-zero sums; its nonnegativity is checked entrywise.
+Lean now applies a checked rank--trace theorem to the genuine finite eta
+matrix. If `C` and `U` are the distinct critical-line and upper off-line zero
+counts, `M_on` and `M_off` are the exact on-line and signed off-line trace
+masses, and `F` is the coherent Frobenius mass, then every nonnegative window
+satisfies
 
-Together with the existing rank and positive-index bounds, this supplies the
-literal zero-side data needed by a rank--trace argument. It does not provide
-the decisive estimate: the next frontier is to derive arithmetic bounds on
-this trace/Frobenius ledger strong enough to control the leading current,
-without destroying the cross-zero and within-feature phase cancellation.
+`2 M_on + 4 M_off - 4 U - F ≤ C`.
+
+This closes the finite zero-side linear-algebra layer using the literal eta
+features, analytic multiplicities, spectral windows, rank bounds, and
+off-line inertia. It is not the decisive arithmetic estimate. The next
+frontier is to bound this ledger from the eta arithmetic without destroying
+the cross-zero and within-feature phase cancellation.
 
 ## Mathematical Program
 
@@ -64,6 +65,9 @@ prove that theorem.
 - [RiemannGaussian/](RiemannGaussian/) contains the Lean proof modules.
   Module families named `Gaussian*`, `Finite*`, `RiemannXi*`, and
   `Suzuki*` correspond to the principal parts of the program.
+- [RiemannGaussian/HermitianRankTrace/](RiemannGaussian/HermitianRankTrace/)
+  contains the attributed Apache-2.0 adaptation of the finite-dimensional
+  rank--trace stack used by the eta specialization.
 - [scripts/GenerateProjectStatus.lean](scripts/GenerateProjectStatus.lean)
   audits the compiled environment and generates the status artifacts in
   [docs/](docs/).

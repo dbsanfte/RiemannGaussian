@@ -1,0 +1,11 @@
+The Lean files in this directory are adapted from the self-contained
+RHLinalg development in Anthropic's Zeta23 project.
+
+Zeta23 — a Lean 4 formalization of critical-line zero-proportion theorems
+Copyright 2026 Anthropic, PBC
+
+Original source: https://github.com/anthropics/formal-math/tree/main/zeta23
+Licensed under the Apache License, Version 2.0 (see LICENSE in this directory).
+
+Local changes: import paths and the enclosing namespace were adjusted for
+RiemannGaussian. The mathematical proof bodies were retained.

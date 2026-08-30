@@ -812,10 +812,18 @@ trace is the multiplicity-weighted squared norm of the packed eta features;
 the off-line trace is the explicit real-coordinate mass minus
 imaginary-coordinate mass. The complete squared Frobenius mass is an
 entrywise sum of squared norms of coherent multiplicity-weighted zero sums.
-All are finite and literal. The remaining obligation is to obtain estimates
-for this trace/Frobenius ledger from the eta arithmetic without replacing
-the coherent sums by phase-free termwise bounds. An abstract rank--trace
-inequality remains infrastructure, not the missing arithmetic estimate.
+All are finite and literal. Lean now also adapts the attributed Apache-2.0
+rank--trace theorem from Anthropic's zeta23 development and applies it to the
+actual decomposition with the on-line block as `P` and the off-line
+difference as `Q`. For every `c > 0`, the resulting checked inequality is
+`c*M_on - (c^2/4)*#critical + 2*c*M_off - c^2*#upper ≤ F`, where `F` is the
+literal coherent Frobenius mass. At `c=2` this becomes
+`2*M_on + 4*M_off - 4*#upper - F ≤ #critical`. Thus the finite zero-side
+linear-algebra closure is instantiated, not merely abstract. The remaining
+obligation is to obtain estimates for this ledger from the eta arithmetic
+without replacing the coherent sums by phase-free termwise bounds. The
+rank--trace theorem itself is still infrastructure, not the missing
+arithmetic estimate.
 
 ## Soundness invariant
 
