@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_zero_one_eq_integral_mixedChannelZeroSumAt
   },
   {
-    label := "The sharp model saturates the entire witness-heat family"
-    lineOne := "sharp heat ceiling"
-    lineTwo := "13/18 at all scales"
+    label := "Independent heat crosses 5/36 exactly beyond the 13/18 ceiling"
+    lineOne := "independent heat"
+    lineTwo := "crossing iff >13/18"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.degreeFourSharpModel_heatCertificate
+      ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
     label := "The eta pair ledger is a finite odd--even endpoint correlation"
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "find eta heat data nonzero on the sharp root channels.</text>\n" ++
+      "derive the normalized eta ordinary-heat crossing.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -735,7 +735,11 @@ run_cmd do
         "certificate is monotone from 13/18 and converges to the exact model certificate. The " ++
         "sharp three-atom model nonetheless stays exactly at 13/18 at every nonnegative scale, " ++
         "because both nonzero atoms are roots of the witness. Hence heat-damping this same " ++
-        "collapsed channel does not supply independent information. " ++
+        "collapsed channel does not supply independent information. The ordinary heat trace is " ++
+        "now retained as a genuinely independent channel. It is strictly above zero mass at every " ++
+        "finite scale and converges to zero mass. Lean proves that the certificate exceeds 13/18 " ++
+        "exactly when this trace crosses below 5/36 at some nonnegative scale; the sharp model " ++
+        "stays strictly above 5/36 at every finite scale. " ++
         "A stronger eta-arithmetic cross-zero cancellation estimate " ++
         "remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -793,8 +797,11 @@ run_cmd do
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
         "the five-moment information class. The witness-weighted heat refinement is monotone and " ++
         "converges to the exact certificate, but the sharp model saturates it at every scale. This " ++
-        "does not instantiate the eta window. What is not yet proved is that eta arithmetic supplies " ++
-        "an independent observable nonzero on the sharp root channels, the additional normalized " ++
+        "does not instantiate the eta window. The independent ordinary heat trace now separates " ++
+        "strict improvement exactly: it crosses below 5/36 at some nonnegative scale if and only if " ++
+        "the certificate is greater than 13/18, while the sharp model never crosses at finite scale. " ++
+        "What is not yet proved is that eta arithmetic supplies the corresponding normalized model " ++
+        "and crossing bound, another independent observable nonzero on the sharp root channels, the additional normalized " ++
         "moments, an arithmetic estimate at positive " ++
         "or genuinely mixed heat scales, an estimate for the transition paths, or a cross-zero estimate " ++
         "strong enough to improve that triangle bound. The required signed " ++

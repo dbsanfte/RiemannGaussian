@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 437 modules · 11202 declarations · 9525 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 438 modules · 11215 declarations · 9537 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -71,9 +71,9 @@
   </g>
   <g class="proved bridge">
     <rect x="340" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.degreeFourSharpModel_heatCertificate</title>
-    <text x="412" y="173">sharp heat ceiling</text>
-    <text x="412" y="191">13/18 at all scales  ✓</text>
+    <title>RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat</title>
+    <text x="412" y="173">independent heat</text>
+    <text x="412" y="191">crossing iff &gt;13/18  ✓</text>
   </g>
   <g class="proved bridge">
     <rect x="500" y="150" width="145" height="54" rx="9"/>
@@ -90,5 +90,5 @@
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: find eta heat data nonzero on the sharp root channels.</text>
+  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: derive the normalized eta ordinary-heat crossing.</text>
 </svg>

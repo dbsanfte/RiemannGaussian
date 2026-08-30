@@ -26,21 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-The sharp degree-four witness is now retained through continuous heat time.
-Lean proves that
-`W(u)=Σ wᵢ p(xᵢ)² exp(-u xᵢ²)` is exactly one signed linear combination
-of the five simultaneous heat moments. For every `u≥0`, the resulting
-certificate `1-2W(u)` increases from the static `13/18` bound, never exceeds
-the exact model certificate, and converges to it as `u→∞`.
+Lean now isolates an independent heat channel that does distinguish the sharp
+root support: the ordinary weighted heat trace
+`H₀(u)=Σ wᵢ exp(-u xᵢ²)`. The first-moment normalization forces positive
+mass away from zero, so `H₀(u)` is strictly larger than the zero-atom mass at
+every finite scale and converges to that mass as `u→∞`.
 
-This also exposes a rigorous ceiling. The checked sharp three-atom model has
-`W(u)=5/36` and certificate exactly `13/18` at every nonnegative scale: its
-two nonzero atoms are precisely annihilated by the quadratic witness. Thus
-simply heat-damping the same degree-four collapse does not add distinguishing
-information, even though the carrier is continuous. To beat this ceiling, an
-eta-backed observable must remain nonzero on at least one of those two root
-channels—for example a genuinely independent heat trace, signed current, or
-cross-scale correlation. No such arithmetic separation is yet proved.
+This yields an exact separator theorem: a degree-four model has certificate
+strictly above `13/18` if and only if some nonnegative scale satisfies
+`H₀(u)<5/36`. The sharp three-atom adversary is proved to remain strictly
+above `5/36` at every finite scale. We therefore have a concrete target for
+the arithmetic side: construct the appropriate normalized eta moment model
+and prove one ordinary heat-trace crossing. Neither that normalization nor
+the crossing estimate is currently derived from eta arithmetic, so no new
+zeta-zero proportion is claimed.
 
 ## Mathematical Program
 

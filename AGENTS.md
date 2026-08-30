@@ -1003,6 +1003,15 @@ new information. The next observable must be eta-backed and nonvanishing on
 at least one sharp root channel; a separate heat trace, signed current, or
 genuine cross-scale correlation is admissible, but its arithmetic value must
 be proved rather than postulated.
+The independent ordinary heat channel now has an exact separator theorem.
+The first-moment normalization forces `H₀(u)` strictly above zero mass at
+every finite scale, while `H₀(u)` converges to zero mass at infinity. Hence
+the certificate is strictly above `13/18` exactly when some nonnegative scale
+has `H₀(u)<5/36`. The sharp three-atom model stays strictly above this
+threshold at every finite scale. The next arithmetic gate is therefore not
+another abstract reweighting: it is construction of the correct normalized
+eta model plus a proved ordinary-heat crossing, or another independent
+observable with a comparably explicit separator criterion.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is
