@@ -26,18 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now rewrites the coherent Frobenius mass `F` of every genuine finite eta
-zero window as the exact signed pair correlation
+Lean now splits the exact finite eta zero-pair mass into
 
-`F = ∑_{ρ,σ} m_ρ m_σ Re (⟨v_σ,v_ρ⟩²)`.
+`F = D + O`, &nbsp; `D = ∑_ρ m_ρ² ‖v_ρ‖⁴ ≥ 0`,
 
-Here `m_ρ` is the analytic zero multiplicity and `v_ρ` is the literal
-packed eta feature. The summand contains the real part of a complex square,
-not an absolute square, so the identity preserves the off-diagonal phase
-cancellation that termwise norm bounds would destroy. Together with the
-checked multiplicity-aware rank--trace ledger, this identifies the precise
-finite arithmetic object that must be controlled. No such cancellation
-estimate, and hence no new zero-location theorem, is asserted yet.
+where `O` is the sum over distinct ordered pairs of
+`m_ρ m_σ Re (⟨v_σ,v_ρ⟩²)`. Lean also proves the unconditional
+floor `O ≥ -D` and rewrites the multiplicity-aware rank--trace inequality as
+
+`4 (M_on + M_off) - D - O ≤ ∑_{ρ critical} k₂(m_ρ‖v_ρ‖²) + 4 #upper`.
+
+Thus the only cross-zero term in the finite ledger is now an explicit signed
+off-diagonal correlation retaining its complex phase. No arithmetic estimate
+strong enough to close this ledger, and hence no new zero-location theorem,
+is asserted yet.
 
 ## Mathematical Program
 

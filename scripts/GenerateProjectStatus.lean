@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The finite eta Frobenius mass is an exact signed zero-pair correlation"
-    lineOne := "eta zero-pair mass"
-    lineTwo := "phase retained"
+    label := "The multiplicity-aware eta ledger separates diagonal and signed off-diagonal zero pairs"
+    lineOne := "eta pair ledger"
+    lineTwo := "diagonal + interference"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindowCoherentFrobeniusMass_eq_pairCorrelationMass
+      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_two_pairCorrelation_ledger
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove arithmetic cancellation for the signed eta zero-pair sum.</text>\n" ++
+      "bound the signed off-diagonal eta zero-pair interference.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -648,7 +648,10 @@ run_cmd do
         "refinement retains one nonlinear k_c(m_rho*||v_rho||^2) term for every actual " ++
         "critical zero. The coherent Frobenius mass is now exactly the signed double " ++
         "zero-pair correlation sum m_rho*m_sigma*Re(<v_sigma,v_rho>^2), retaining " ++
-        "complex phase. Eta-arithmetic cancellation estimates for this sum remain open.")),
+        "complex phase. It is now split exactly as F=D+O, with positive diagonal " ++
+        "D=sum m_rho^2*||v_rho||^4 and signed distinct-pair interference O. Frobenius " ++
+        "positivity gives O>=-D, and the multiplicity ledger is rewritten directly in " ++
+        "D and O. Eta-arithmetic cancellation estimates for this ledger remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -662,9 +665,10 @@ run_cmd do
         "multiplicity L_N kernel, the finite on-line/off-line block decomposition, " ++
         "the required divisor-count rank and positive-index bounds, exact scalar " ++
         "trace/Frobenius identities, their checked coarse and multiplicity-aware " ++
-        "rank--trace closures, and the exact phase-preserving zero-pair expansion of " ++
-        "the coherent Frobenius mass. " ++
-        "The required signed eta pair-correlation estimate and the multiplicity-one head " ++
+        "rank--trace closures, the exact phase-preserving zero-pair expansion of the " ++
+        "coherent Frobenius mass, and its positive-diagonal plus signed-off-diagonal " ++
+        "decomposition inside the literal multiplicity ledger. " ++
+        "The required signed off-diagonal eta pair estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++
         "to RH"))
     ]),

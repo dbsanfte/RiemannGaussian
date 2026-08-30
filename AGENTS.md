@@ -840,7 +840,14 @@ the diagonal and cross-zero interference on which an eta-arithmetic estimate
 must act, but supplies no such estimate. Further progress must prove
 cancellation or coercivity for this named finite pair correlation without
 discarding its complex phase, or connect it to an independently controlled
-arithmetic form.
+arithmetic form. Lean now separates that sum exactly as `F=D+O`, where
+`D=sum_rho m_rho^2*||v_rho||^4` is nonnegative and `O` is the same signed
+phase-bearing correlation restricted to distinct ordered pairs. Frobenius
+positivity gives the sharp formal floor `O >= -D`. The multiplicity-aware
+`c=2` ledger is now written directly with `-D-O`, so `O` is the only
+cross-zero term left in the finite inequality. The required aggregate bound
+on this ledger remains open; the algebraic floor alone gives no zero-location
+constraint.
 
 ## Soundness invariant
 
