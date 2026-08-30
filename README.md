@@ -26,20 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now verifies the signed-heat steer's degree-four certificate calculation
-as an exact extremal theorem. Every finite nonnegative weighted model with
-moments `(1, 1, 4/3, 2, 13/4)` has zero-atom mass at most `5/36`, hence
-certificate `1 - 2*zeroMass` at least `13/18 ≈ 72.22%`. The proof uses the
-explicit quadratic witness `1 - (7/4)x + (2/3)x²`.
+The sharp degree-four witness is now retained through continuous heat time.
+Lean proves that
+`W(u)=Σ wᵢ p(xᵢ)² exp(-u xᵢ²)` is exactly one signed linear combination
+of the five simultaneous heat moments. For every `u≥0`, the resulting
+certificate `1-2W(u)` increases from the static `13/18` bound, never exceeds
+the exact model certificate, and converges to it as `u→∞`.
 
-The bound is sharp: Lean constructs a nonnegative three-atom model with those
-five moments and certificate exactly `13/18`. Thus this information class
-rigorously beats the cited lower-moment benchmark, but it also has a proved
-ceiling below 100%. The five moments are formalized as the zero-scale jet of a
-continuous weighted heat hierarchy. They have not been derived from the
-literal eta arithmetic, so this is not yet a zeta-zero proportion. The next
-task is to supply additional eta-backed moments or positive heat-scale data
-that exclude the sharp adversarial model.
+This also exposes a rigorous ceiling. The checked sharp three-atom model has
+`W(u)=5/36` and certificate exactly `13/18` at every nonnegative scale: its
+two nonzero atoms are precisely annihilated by the quadratic witness. Thus
+simply heat-damping the same degree-four collapse does not add distinguishing
+information, even though the carrier is continuous. To beat this ceiling, an
+eta-backed observable must remain nonzero on at least one of those two root
+channels—for example a genuinely independent heat trace, signed current, or
+cross-scale correlation. No such arithmetic separation is yet proved.
 
 ## Mathematical Program
 

@@ -993,6 +993,16 @@ one. They are also exposed as the zero-scale jet of a continuous weighted heat
 hierarchy. This is not an eta instantiation. Future work must derive the extra
 moments or positive-scale heat data from literal eta arithmetic and show that
 they exclude the sharp model before claiming a stronger zeta-zero proportion.
+The quadratic witness is now also transported through heat time as the exact
+linear combination of orders zero through four at one common scale. Its
+certificate is monotone from `13/18` and converges to the exact model
+certificate. The sharp three-atom model nevertheless remains exactly at
+`13/18` for every nonnegative scale because both nonzero atoms are roots of
+the witness. Therefore reweighting the same collapsed channel by heat is not
+new information. The next observable must be eta-backed and nonvanishing on
+at least one sharp root channel; a separate heat trace, signed current, or
+genuine cross-scale correlation is admissible, but its arithmetic value must
+be proved rather than postulated.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is

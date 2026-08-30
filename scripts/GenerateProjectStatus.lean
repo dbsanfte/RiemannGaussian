@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_zero_one_eq_integral_mixedChannelZeroSumAt
   },
   {
-    label := "The abstract degree-four moment ceiling is exactly 13/18"
-    lineOne := "degree-four ceiling"
-    lineTwo := "13/18, attained"
+    label := "The sharp model saturates the entire witness-heat family"
+    lineOne := "sharp heat ceiling"
+    lineTwo := "13/18 at all scales"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_bound_attained
+      ``RiemannGaussian.degreeFourSharpModel_heatCertificate
   },
   {
     label := "The eta pair ledger is a finite odd--even endpoint correlation"
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "exclude the sharp moment model with eta-backed heat data.</text>\n" ++
+      "find eta heat data nonzero on the sharp root channels.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -730,7 +730,12 @@ run_cmd do
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
         "so this degree-four information class has a sharp ceiling below one. Its moments are " ++
         "the zero-scale jet of a checked continuous weighted heat hierarchy, but no theorem " ++
-        "derives them from the eta window. " ++
+        "derives them from the eta window. The quadratic witness is now retained through heat " ++
+        "time as an exact linear combination of orders zero through four. Its scale-dependent " ++
+        "certificate is monotone from 13/18 and converges to the exact model certificate. The " ++
+        "sharp three-atom model nonetheless stays exactly at 13/18 at every nonnegative scale, " ++
+        "because both nonzero atoms are roots of the witness. Hence heat-damping this same " ++
+        "collapsed channel does not supply independent information. " ++
         "A stronger eta-arithmetic cross-zero cancellation estimate " ++
         "remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -786,8 +791,11 @@ run_cmd do
         "trace and endpoint-expanded coherent Frobenius ledgers; the order-two ledger is also the " ++
         "negative initial heat slope. An abstract degree-four nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
-        "the five-moment information class. This does not instantiate the eta window. What is not " ++
-        "yet proved is that eta arithmetic supplies the additional normalized moments, an arithmetic estimate at positive " ++
+        "the five-moment information class. The witness-weighted heat refinement is monotone and " ++
+        "converges to the exact certificate, but the sharp model saturates it at every scale. This " ++
+        "does not instantiate the eta window. What is not yet proved is that eta arithmetic supplies " ++
+        "an independent observable nonzero on the sharp root channels, the additional normalized " ++
+        "moments, an arithmetic estimate at positive " ++
         "or genuinely mixed heat scales, an estimate for the transition paths, or a cross-zero estimate " ++
         "strong enough to improve that triangle bound. The required signed " ++
         "finite-endpoint correlation estimate and the multiplicity-one head " ++
