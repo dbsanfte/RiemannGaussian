@@ -26,25 +26,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now expands the finite eta arithmetic in the zero-pair ledger all the way
-to its retained logarithmic intervals. For the center
-`a_N = log(2(N+1)+1)`, define the literal atom
+Lean now evaluates every retained interval in the finite eta zero-pair ledger
+at its literal arithmetic endpoints. Repeated integration by parts is encoded
+by the finite recursion
 
-`I_{ρ,N,n} = ∫_[log(2n+1),log(2n+2)]`
-`(t-a_N)^(m_ρ-1) exp(-ρt) dt`.
+`Q_0(s;a,t)=s⁻¹`,
+`Q_(k+1)(s;a,t)=(t-a)^(k+1)/s + (k+1)Q_k(s;a,t)/s`.
 
-Lean proves `M_{ρ,N} = ∑_{n=0}^N I_{ρ,N,n}` and therefore expands the finite
-moment Gram kernel exactly as
+For `a_N=log(2(N+1)+1)`, Lean proves the exact formula
 
-`B_{σ,ρ} = ∑_j ∑_{n=0}^{c_j} ∑_{m=0}^{c_j}`
-`conj(I_{σ,c_j,n}) I_{ρ,c_j,m}`.
+`I_{ρ,N,n} = (2n+1)^(-ρ) Q_(m_ρ-1)(ρ;a_N,log(2n+1))`
+`- (2n+2)^(-ρ) Q_(m_ρ-1)(ρ;a_N,log(2n+2))`.
 
-This literal triple sum, together with the fixed completion weights
-`W_ρ = C(ρ)ρ` and genuine critical-line reflection `ρ ↦ ρ#`, is propagated
-through the diagonal, signed distinct-zero mass, coherent Frobenius mass, and
-multiplicity-aware rank--trace ledger. The remaining theorem must obtain a
-signed cancellation or coercivity estimate from these explicit interval
-atoms; no such estimate or new zero-location result is asserted yet.
+Thus the finite moment Gram kernel and the complete multiplicity-aware
+rank--trace ledger are now finite sums of explicit odd/even complex powers
+and polynomial log-endpoint coefficients; no interval integrals remain in
+the named arithmetic form. The next hard input is an aggregate signed
+off-diagonal estimate for these frequencies—potentially a separated-frequency
+or Montgomery--Vaughan-style bound. No such estimate or new zero-location
+result is asserted yet.
 
 ## Mathematical Program
 

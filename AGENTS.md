@@ -877,7 +877,13 @@ moment is now also expanded exactly into its retained logarithmic interval
 integrals, making `B` a literal finite cutoff/interval triple sum. The same
 expansion is propagated through both masses and the terminal ledger; the open
 problem is a signed estimate for this explicit interval correlation, not an
-additional algebraic unpacking step.
+additional algebraic unpacking step. Lean now also evaluates each interval by
+an explicit finite integration-by-parts polynomial: every atom is an
+odd-endpoint complex power minus an even-endpoint complex power with literal
+logarithmic coefficients. The terminal ledger therefore has a fully finite
+arithmetic endpoint form. The next live experiment is an aggregate
+separated-frequency estimate on that form, while retaining the signed
+zero-pair phase.
 
 ## Soundness invariant
 

@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The eta pair ledger expands into literal finite interval correlations"
-    lineOne := "eta interval ledger"
-    lineTwo := "literal triple sum"
+    label := "The eta pair ledger is a finite odd--even endpoint correlation"
+    lineOne := "eta arithmetic ledger"
+    lineTwo := "odd/even endpoints"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_two_intervalCorrelation_ledger
+      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_two_arithmeticCorrelation_ledger
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "bound the reflected finite eta interval correlation.</text>\n" ++
+      "bound the signed finite eta endpoint correlation.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -664,6 +664,10 @@ run_cmd do
         "now expose this factorization. Every centered moment is further expanded into " ++
         "its literal retained logarithmic interval atoms, so B is an exact finite " ++
         "cutoff/interval triple sum throughout the masses and terminal ledger. " ++
+        "A checked finite integration-by-parts recurrence now evaluates every atom " ++
+        "as an odd-endpoint complex power minus an even-endpoint complex power with " ++
+        "explicit polynomial log coefficients. The full ledger is therefore a finite " ++
+        "arithmetic endpoint correlation with no interval integrals remaining. " ++
         "Arithmetic cancellation estimates for " ++
         "the distinct-zero sum remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -688,7 +692,9 @@ run_cmd do
         "original and reflected zero pairs. Fixed completion weights are further factored " ++
         "away from a finite cutoff-centered eta-moment Gram kernel, and that kernel is " ++
         "expanded exactly into a finite triple sum over literal retained eta intervals. " ++
-        "The required reflected finite-interval estimate and the multiplicity-one head " ++
+        "Every interval is further evaluated into explicit odd--even endpoint complex " ++
+        "powers with finite polynomial logarithmic coefficients. The required signed " ++
+        "finite-endpoint correlation estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++
         "to RH"))
     ]),
