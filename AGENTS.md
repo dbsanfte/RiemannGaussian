@@ -984,6 +984,15 @@ mixed scales, and the transition paths remain unevaluated. The next gate is
 to evaluate or sharply bound those retained quantities, then solve the
 resulting certificate extremal problem without assuming the desired
 zero-location conclusion.
+The abstract degree-four ceiling experiment is now exact. For any finite
+nonnegative weighted spectral model with moments `(1, 1, 4/3, 2, 13/4)`, Lean
+uses the explicit Christoffel witness `1-(7/4)x+(2/3)x²` to prove zero mass at
+most `5/36` and certificate at least `13/18`. A checked nonnegative three-atom
+model attains equality, so those five moments alone have a sharp ceiling below
+one. They are also exposed as the zero-scale jet of a continuous weighted heat
+hierarchy. This is not an eta instantiation. Future work must derive the extra
+moments or positive-scale heat data from literal eta arithmetic and show that
+they exclude the sharp model before claiming a stronger zeta-zero proportion.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is

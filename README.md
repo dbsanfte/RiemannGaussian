@@ -26,19 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-The zero-scale boundary of the new eta spectral heat hierarchy is now tied
-back to literal arithmetic. For every finite Hermitian matrix, Lean proves
-`H₀(0)=dimension`, `H₁(0)=Re tr(A)`, and `H₂(0)=‖A‖_F²`. It also proves that
-the initial derivative of the ordinary heat trace is `-‖A‖_F²`.
+Lean now verifies the signed-heat steer's degree-four certificate calculation
+as an exact extremal theorem. Every finite nonnegative weighted model with
+moments `(1, 1, 4/3, 2, 13/4)` has zero-atom mass at most `5/36`, hence
+certificate `1 - 2*zeroMass` at least `13/18 ≈ 72.22%`. The proof uses the
+explicit quadratic witness `1 - (7/4)x + (2/3)x²`.
 
-For the multiplicity-weighted eta zero-window matrix, `H₁(0)` is exactly the
-on-line plus signed off-line trace mass. More importantly, `H₂(0)` and the
-negative initial heat slope are exactly the fully evaluated odd--even
-endpoint correlation, with its positive diagonal and signed distinct-zero
-off-diagonal terms still separate. Thus the first nontrivial heat boundary
-data now meet the existing eta arithmetic ledger without information loss.
-Positive heat times and genuinely mixed scales are not yet arithmetically
-evaluated, so no improved zero proportion is claimed.
+The bound is sharp: Lean constructs a nonnegative three-atom model with those
+five moments and certificate exactly `13/18`. Thus this information class
+rigorously beats the cited lower-moment benchmark, but it also has a proved
+ceiling below 100%. The five moments are formalized as the zero-scale jet of a
+continuous weighted heat hierarchy. They have not been derived from the
+literal eta arithmetic, so this is not yet a zeta-zero proportion. The next
+task is to supply additional eta-backed moments or positive heat-scale data
+that exclude the sharp adversarial model.
 
 ## Mathematical Program
 

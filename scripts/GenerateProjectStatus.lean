@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_zero_one_eq_integral_mixedChannelZeroSumAt
   },
   {
-    label := "The eta initial heat slope is an exact endpoint correlation"
-    lineOne := "initial heat slope"
-    lineTwo := "endpoint correlation"
+    label := "The abstract degree-four moment ceiling is exactly 13/18"
+    lineOne := "degree-four ceiling"
+    lineTwo := "13/18, attained"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.hasDerivAt_pairedEtaTopPrefixFiniteZeroWindowSpectralHeatTrace_at_zero_arithmetic
+      ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_bound_attained
   },
   {
     label := "The eta pair ledger is a finite odd--even endpoint correlation"
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "evaluate positive eta heat scales arithmetically.</text>\n" ++
+      "exclude the sharp moment model with eta-backed heat data.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -725,7 +725,12 @@ run_cmd do
         "and squared Frobenius mass. On the literal eta window the order-two value, and hence the " ++
         "negative initial ordinary-heat slope, is exactly the evaluated endpoint diagonal plus " ++
         "signed off-diagonal arithmetic correlation. Positive heat scales and genuinely mixed " ++
-        "scales have not yet been evaluated from eta endpoint arithmetic. " ++
+        "scales have not yet been evaluated from eta endpoint arithmetic. Separately, every " ++
+        "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
+        "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
+        "so this degree-four information class has a sharp ceiling below one. Its moments are " ++
+        "the zero-scale jet of a checked continuous weighted heat hierarchy, but no theorem " ++
+        "derives them from the eta window. " ++
         "A stronger eta-arithmetic cross-zero cancellation estimate " ++
         "remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -779,7 +784,10 @@ run_cmd do
         "eta spectral moments now form an exact positive Gram with a checked derivative hierarchy. " ++
         "Their zero-scale order-one and order-two boundary values are now exactly the checked eta " ++
         "trace and endpoint-expanded coherent Frobenius ledgers; the order-two ledger is also the " ++
-        "negative initial heat slope. What is not yet proved is an arithmetic estimate at positive " ++
+        "negative initial heat slope. An abstract degree-four nonnegative moment model now yields " ++
+        "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
+        "the five-moment information class. This does not instantiate the eta window. What is not " ++
+        "yet proved is that eta arithmetic supplies the additional normalized moments, an arithmetic estimate at positive " ++
         "or genuinely mixed heat scales, an estimate for the transition paths, or a cross-zero estimate " ++
         "strong enough to improve that triangle bound. The required signed " ++
         "finite-endpoint correlation estimate and the multiplicity-one head " ++
