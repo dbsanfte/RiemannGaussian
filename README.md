@@ -26,19 +26,17 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now resolves the cubic coordinate-compressed eta heat into three exact
-channel-coloured paths: gap at the first separator, gap at the second, and
-gaps at both. The two one-gap channels are adjoints and have equal real traces
-at one scale. The two-gap channel is a positive-semidefinite weighted
-transition Gram. Entrywise, all three remain ordered double sums over literal
-retained or omitted cutoff/colour coordinates.
+Lean now proves a finite geometric-phase rigidity theorem: if a linear
+combination of distinct unit-modulus sequences `n ↦ zⁿ` converges to zero,
+every coefficient is zero. A repeated shift difference removes one phase at a
+time, and the result is packaged as linear independence in the full sequence
+space.
 
-This is the first higher-path ledger beyond the quadratic leakage identity.
-It preserves the sign and phase of the paired one-gap contribution instead of
-replacing it by an absolute envelope, while isolating a genuinely nonnegative
-two-gap reserve. Estimating that signed pair strongly enough to force the
-independent `H₀(u)<5/36` crossing remains open, so no new zeta-zero
-proportion is currently claimed.
+This supplies the first abstract separation lemma for the proposed 18/18
+information ceiling. The next obligations are to derive collision-free
+geometric modes from the already checked sharp eta-tail asymptotics and then
+extract a finite set of cutoff coordinates that separates each finite zero
+window. Neither step, nor any stronger zeta-zero proportion, is yet claimed.
 
 ## Mathematical Program
 

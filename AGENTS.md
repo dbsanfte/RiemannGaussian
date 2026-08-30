@@ -1042,6 +1042,18 @@ weighted transition Gram and is positive semidefinite. The live estimate must
 use cancellation in the paired one-gap trace together with the nonnegative
 two-gap reserve; bounding both one-gap paths separately by norms would undo
 the purpose of this slice.
+The phase-separation route now has its first checked rigidity theorem. For any
+finite set of distinct unit-modulus complex modes, Lean proves that a linear
+combination of their geometric sequences can converge to zero only when every
+coefficient vanishes; equivalently, those full sequences are linearly
+independent. The proof uses repeated shift differences and preserves the
+complex phase. This is not yet an eta theorem. The next obligations are to
+sample the sharp eta-tail asymptotics along a geometric odd-endpoint
+subsequence with provably distinct modes, peel the finitely many real-decay
+layers, and extract finitely many cutoff coordinates retaining independence.
+If completed, that route would establish a 100% information ceiling for each
+finite eta zero window; an arithmetic estimate controlling the resulting
+exact observable would still be required for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is

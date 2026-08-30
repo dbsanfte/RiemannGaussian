@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Cubic eta heat retains first-gap, second-gap, and two-gap paths"
-    lineOne := "eta cubic heat"
-    lineTwo := "3 channel paths"
-    role := "bridge"
+    label := "Distinct finite geometric phases are linearly independent"
+    lineOne := "geometric phases"
+    lineTwo := "finite independence"
+    role := "reduction"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindowCoordinateSpectralHeatFlow_mul_three
+      ``RiemannGaussian.finite_geometric_phase_linearIndependent
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "derive the normalized eta ordinary-heat crossing.</text>\n" ++
+      "instantiate phase separation on the eta cutoff asymptotics.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -734,6 +734,12 @@ run_cmd do
         "at either separator and gaps at both. The one-gap pair is adjoint with equal real traces " ++
         "at equal scale; the two-gap path is a positive weighted transition Gram. Every eta entry " ++
         "is the corresponding retained/omitted double coordinate sum. " ++
+        "A generic shift-difference argument now proves that a finite sum of distinct unit-circle " ++
+        "geometric modes cannot converge to zero unless every coefficient vanishes. Lean packages " ++
+        "this as linear independence of the corresponding full geometric sequences. This is the " ++
+        "finite phase-rigidity lemma needed for geometric sampling of the sharp eta cutoff " ++
+        "asymptotics, but distinct sampled eta modes and finite-coordinate extraction have not yet " ++
+        "been proved. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -810,7 +816,11 @@ run_cmd do
         "endpoint ledger. The cubic coordinate-compression ledger separately retains both ordered " ++
         "one-gap paths and the two-gap path; the former pair by adjunction and the latter is " ++
         "positive semidefinite at equal scale. Their literal retained/omitted double path sums are " ++
-        "checked, while their aggregate arithmetic estimate remains open. An abstract degree-four " ++
+        "checked, while their aggregate arithmetic estimate remains open. A generic finite " ++
+        "geometric-phase rigidity theorem now proves, by repeated shift differences, that distinct " ++
+        "unit-circle modes have linearly independent full sequences. Connecting the sharp eta-tail " ++
+        "asymptotics to collision-free geometric modes and extracting a finite separating cutoff " ++
+        "family remain open. An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
         "the five-moment information class. The witness-weighted heat refinement is monotone and " ++
@@ -818,7 +828,8 @@ run_cmd do
         "does not instantiate the eta window. The independent ordinary heat trace now separates " ++
         "strict improvement exactly: it crosses below 5/36 at some nonnegative scale if and only if " ++
         "the certificate is greater than 13/18, while the sharp model never crosses at finite scale. " ++
-        "What is not yet proved is that eta arithmetic supplies the corresponding normalized model " ++
+        "What is not yet proved is that eta arithmetic supplies a finite full-rank feature family, " ++
+        "the corresponding normalized model " ++
         "and crossing bound, another independent observable nonzero on the sharp root channels, the additional normalized " ++
         "moments, a phase-preserving aggregate estimate for the paired cubic one-gap channel, higher " ++
         "closed-path coefficients, or genuinely mixed " ++
