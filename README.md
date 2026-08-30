@@ -41,27 +41,29 @@ that number is not yet a zeta-zero proportion: the normalized moment model has
 not been derived from the literal eta window. Lean now proves eventual linear
 independence of the actual packed two-channel eta features and an exact
 multiplicity-weighted positive coordinate Gram whose rank is the number of
-represented distinct zeros. The immediate route is to normalize the existing
-complex-symmetric signed eta block against this lossless positive companion,
-then derive an independent arithmetic observable that excludes the sharp
-three-atom obstruction. No stronger zero proportion will be claimed until
-that eta-specific estimate is proved.
+represented distinct zeros. On every symmetric window, Lean now couples that
+Gram to the complex-symmetric signed eta block through two exact positive
+channels, `Gram − Signed` and `Gram + Signed`. The immediate route is to
+extract normalized trace or spectral data from this joint ledger and derive
+an arithmetic observable that excludes the sharp three-atom obstruction. No
+stronger zero proportion will be claimed until that eta-specific estimate is
+proved.
 
 ## Latest Update
 
-Lean now builds a positive Hermitian companion from the actual packed
-geometric eta features without dropping analytic multiplicity. Each genuine
-zero column is scaled by the square root of its divisor multiplicity; Lean
-proves that the resulting coordinate matrix is exactly the sum of the
-multiplicity-weighted Hermitian outer products `v v*`.
+Lean now places the positive Hermitian eta Gram and the sign-bearing
+complex-symmetric eta block in one exact colour ledger. On every nonnegative
+symmetric spectral window it proves
+`Gram = onLine + offReal + offImag` while
+`Signed = onLine + offReal − offImag`.
 
-For every finite zeta-zero window, one odd prime base makes this companion
-positive semidefinite with rank exactly equal to the number of represented
-distinct zeros at every sufficiently late block. The existing sign-bearing
-complex-symmetric `v vᵀ` matrix is deliberately not identified with this
-positive Gram. This proves a lossless positive carrier, not an `18/18`
-certificate; the next step is a normalized joint ledger and an arithmetic
-bound coupling the two matrices.
+Consequently `Gram − Signed = 2·offImag` and
+`Gram + Signed = 2·(onLine + offReal)`, so both combinations are positive
+semidefinite without erasing the reflected-zero colour split. For one odd
+prime base and all sufficiently late geometric blocks, the same Gram also has
+rank exactly equal to the number of represented distinct zeros. This is a
+full-rank joint carrier, not an `18/18` certificate; the next step is a
+normalized arithmetic trace or spectral estimate on this ledger.
 
 ## Mathematical Program
 
@@ -69,7 +71,8 @@ The current program combines four connected lines:
 
 - The **finite certificate branch** adapts rank--trace and inertia methods to
   genuine symmetric eta zero windows. Its carrier retains cutoff, phase,
-  multiplicity, reflected-zero colour, and coherent cross-zero interference.
+  multiplicity, reflected-zero colour, and coherent cross-zero interference,
+  with separate positive and signed matrices joined by exact channel laws.
 - The **eta arithmetic branch** realizes completed eta moments as explicit
   finite interval and endpoint sums, develops exact cutoff work laws, and uses
   geometric sampling to produce full-rank actual feature families and their

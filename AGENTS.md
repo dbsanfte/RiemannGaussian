@@ -1076,9 +1076,15 @@ its conjugate transpose. This matrix is exactly the sum of the literal
 multiplicity-weighted Hermitian outer products `v v*`, is positive
 semidefinite, and eventually has rank equal to the number of represented
 distinct zeros. It remains rigorously distinct from the complex-symmetric
-`v vᵀ` block used by the signed inertia certificate. The next obligation is
-to normalize and couple these two checked carriers, then derive an
-eta-arithmetic bound that excludes the sharp finite obstruction. That
+`v vᵀ` block used by the signed inertia certificate. Lean now couples the
+two without identifying them. On every nonnegative symmetric spectral window,
+the Hermitian Gram is exactly `onLine + offReal + offImag`, whereas the signed
+block is `onLine + offReal - offImag`. Hence their difference is exactly twice
+the positive imaginary off-line block and their sum is twice the positive
+on-line-plus-real block; both are positive semidefinite. At the same eventual
+geometric blocks, the Hermitian Gram retains full represented rank. The next
+obligation is to extract a normalized arithmetic trace or spectral estimate
+from this joint carrier that excludes the sharp finite obstruction. That
 quantitative estimate remains necessary for any stronger zeta-zero proportion
 and ultimately for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or

@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "The multiplicity-weighted positive eta Gram has full represented rank"
-    lineOne := "positive eta Gram"
-    lineTwo := "rank = #zeros"
+    label := "The full-rank positive eta Gram dominates the signed block in both directions"
+    lineOne := "joint eta carriers"
+    lineTwo := "Gram ± signed ≽ 0"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.exists_prime_eventually_posSemidef_and_rank_pairedEtaGeometricMultiplicityWeightedCoordinateGram_eq_card
+      ``RiemannGaussian.exists_prime_eventually_fullRank_zeroWindowHermitianGram_and_signed_dominance
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "couple the positive and signed eta carriers arithmetically.</text>\n" ++
+      "estimate the joint eta carrier strongly enough to exclude off-line mass.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -758,8 +758,11 @@ run_cmd do
         "zero column by its positive square-root analytic multiplicity now gives a coordinate Gram " ++
         "equal to the sum of the literal multiplicity-weighted Hermitian v*v blocks. It is positive " ++
         "semidefinite and eventually has rank exactly the number of represented distinct zeros. It " ++
-        "is kept distinct from the complex-symmetric signed block. Their normalized arithmetic " ++
-        "coupling has not yet been proved. " ++
+        "is kept distinct from the complex-symmetric signed block. On every nonnegative symmetric " ++
+        "window Lean now proves Gram=onLine+offReal+offImag while Signed=onLine+offReal-offImag. " ++
+        "Thus Gram-Signed is twice the positive imaginary block and Gram+Signed is twice the positive " ++
+        "on-line-plus-real block. The normalized arithmetic estimate on this joint carrier has not " ++
+        "yet been proved. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -857,8 +860,11 @@ run_cmd do
         "retains analytic multiplicity through positive square-root column weights and forms the " ++
         "coordinate synthesis matrix times its conjugate transpose. This is exactly the sum of the " ++
         "multiplicity-weighted Hermitian v*v blocks, is positive semidefinite, and eventually has " ++
-        "rank equal to the number of represented distinct zeros. The remaining step is to normalize " ++
-        "and estimate this positive carrier jointly with the distinct complex-symmetric signed block. " ++
+        "rank equal to the number of represented distinct zeros. The positive Gram and the distinct " ++
+        "complex-symmetric signed block now satisfy an exact joint colour ledger: their difference " ++
+        "is twice the positive off-line-imaginary block and their sum is twice the positive on-line-" ++
+        "plus-real block. Both combinations are positive semidefinite. The remaining step is to " ++
+        "derive a normalized arithmetic trace or spectral estimate from this joint carrier. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
@@ -867,7 +873,7 @@ run_cmd do
         "does not instantiate the eta window. The independent ordinary heat trace now separates " ++
         "strict improvement exactly: it crosses below 5/36 at some nonnegative scale if and only if " ++
         "the certificate is greater than 13/18, while the sharp model never crosses at finite scale. " ++
-        "What is not yet proved is the corresponding jointly normalized eta model " ++
+        "What is not yet proved is the corresponding normalized eta trace/spectral model " ++
         "and crossing bound, another independent observable nonzero on the sharp root channels, the additional normalized " ++
         "moments, a phase-preserving aggregate estimate for the paired cubic one-gap channel, higher " ++
         "closed-path coefficients, or genuinely mixed " ++
