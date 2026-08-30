@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Every finite normalized mixed eta Hankel matrix is positive semidefinite"
-    lineOne := "normalized eta Hankel"
-    lineTwo := "positive semidefinite"
+    label := "The positive eta parity carrier has exact off-line nullity"
+    lineOne := "eta parity carrier"
+    lineTwo := "exact bad nullity"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaGeometricReflectionNormalizedMomentGram_posSemidef_and_apply
+      ``RiemannGaussian.pairedEtaGeometricReflectionParityCertificateInterface
   }
 ]
 
@@ -776,8 +776,11 @@ run_cmd do
         "carrier M_nm=P*(C_n^*C_m)=C_n^T*C_m, proves M_nm^T=M_mn, and expands every same-scale " ++
         "moment Re tr((P*K)^r) as a complete ordered closed zero-index path sum with literal " ++
         "multiplicity-weighted eta edges. Order zero is the represented-zero count and order one is " ++
-        "m1. The two-step cross-scale word is an exact symmetric double-edge sum. Positive " ++
-        "normalization and arithmetic estimates for this hierarchy have not yet been proved. " ++
+        "m1. The two-step cross-scale word is an exact symmetric double-edge sum. The mixed " ++
+        "hierarchy now has a checked positive normalized Hankel realization, but positive K makes " ++
+        "P*K invertible, so that spectrum has the wrong zero-atom semantics. Reflection-parity " ++
+        "compression supplies the correct off-line nullity and exact eta-weighted colour masses. " ++
+        "Its normalized atom extraction and arithmetic estimates have not yet been proved. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -899,8 +902,16 @@ run_cmd do
         "supported powers now gives a positive-semidefinite Hankel Gram with exactly those moments " ++
         "as entries. Lean normalizes it by the distinct-zero count N and mean positive eta mass " ++
         "m0/N: nu_r=N^-1*(N/m0)^r*Re tr((P*K)^r). Every finite normalized Hankel matrix is positive " ++
-        "semidefinite, nu_0=1, nu_1=m1/m0, and nu_(a+b)^2<=nu_(2a)*nu_(2b). The remaining step is " ++
-        "an eta-arithmetic bound or explicit atom analysis excluding the sharp finite adversary. " ++
+        "semidefinite, nu_0=1, nu_1=m1/m0, and nu_(a+b)^2<=nu_(2a)*nu_(2b). Lean now proves " ++
+        "that P*K is invertible whenever K is positive definite, so its spectral zero atom cannot " ++
+        "encode off-line zeros. The correct count channel is retained by the orthogonal positive " ++
+        "reflection projections E+=(I+P)/2 and E-=(I-P)/2. Their traces are exactly critical+upper " ++
+        "and upper respectively, and 1-2*tr(E-)/N is the literal critical-zero proportion. The " ++
+        "eta-weighted carriers E+*K*E+ and E-*K*E- are positive semidefinite. Under positive " ++
+        "definiteness of K, the first has nullity exactly equal to the upper off-line-pair count, " ++
+        "the second has that exact rank, and their traces recover the on-line-plus-real and " ++
+        "off-line-imaginary eta masses. The remaining step is to extract the normalized spectral " ++
+        "atom model of E+*K*E+ and prove an eta-arithmetic bound excluding the sharp finite adversary. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
@@ -909,8 +920,9 @@ run_cmd do
         "does not instantiate the eta window. The independent ordinary heat trace now separates " ++
         "strict improvement exactly: it crosses below 5/36 at some nonnegative scale if and only if " ++
         "the certificate is greater than 13/18, while the sharp model never crosses at finite scale. " ++
-        "What is not yet proved is the corresponding normalized eta trace/spectral model " ++
-        "and crossing bound, another independent observable nonzero on the sharp root channels, the additional normalized " ++
+        "What is not yet proved is the normalized eigenvalue-atom extraction from the parity " ++
+        "carrier and its arithmetic crossing bound, another independent observable nonzero on " ++
+        "the sharp root channels, the additional normalized " ++
         "moments, a phase-preserving aggregate estimate for the paired cubic one-gap channel, higher " ++
         "closed-path coefficients, or genuinely mixed " ++
         "heat scales, an estimate for the transition paths, or a cross-zero estimate " ++

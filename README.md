@@ -39,46 +39,40 @@ window.
 Lean currently proves a sharp abstract `13/18` degree-four certificate, but
 that number is not yet a zeta-zero proportion: the prescribed degree-four
 moments and separator bound have not been derived from the literal eta window.
-Lean now proves eventual linear
-independence of the actual packed two-channel eta features and an exact
-multiplicity-weighted positive coordinate Gram whose rank is the number of
-represented distinct zeros. On every symmetric window, Lean now couples that
-Gram to the complex-symmetric signed eta block through two exact positive
-channels, `Gram − Signed` and `Gram + Signed`. Pulling the same synthesis back
-to zero-index space gives an eventually positive-definite metric `K = Cᴴ C`
-whose inverse is also positive definite. Lean now uses this metric to normalize
-the signed pullback into a Hermitian matrix `A` satisfying both `I − A ⪰ 0`
-and `I + A ⪰ 0`. Lean further determines this fully whitened matrix exactly:
-it is the permutation `P` sending each enumerated zero to its critical-line
-reflection. Thus complete whitening cancels the eta amplitudes. The immediate
-route instead retains the coupled normal form `B = K P K`, the normalized
-mixed trace `Re tr(PK) / Re tr(K)`, the full ordered same-scale hierarchy
-`Re tr((PK)^r)`, and two-step cross-scale words. Lean now realizes this entire
-hierarchy on the exact positive support of a Hermitian packed-coordinate
-carrier, without adding the artificial zero eigenspace or cancelling `K`.
-That support now yields a normalized positive-semidefinite Hankel model for
-every finite family of mixed moment orders. The next route is to extract or
-bypass an explicit finite-atom representation and derive eta-arithmetic bounds
-strong enough to exclude the sharp `13/18` adversary. No stronger zero
-proportion will be claimed until those steps are checked.
+The coupled zero-index data are the positive eta metric `K = CᴴC` and the
+critical-line reflection permutation `P`. The mixed hierarchy
+`Re tr((PK)^r)` remains available as a phase-preserving companion channel, but
+its spectral zero atom does not encode off-line zeros when `K` is positive
+definite. The certificate route therefore now uses the reflection projections
+`E₊ = (I+P)/2` and `E₋ = (I-P)/2`, with positive eta carriers
+`E₊KE₊` and `E₋KE₋`. This keeps the count semantics and eta amplitudes coupled:
+the nullity of `E₊KE₊` is exactly the upper off-line-pair count, while the
+trace of `E₋KE₋` is the literal off-line-imaginary eta mass.
+
+The immediate frontier is to extract the normalized finite spectral atom
+model of `E₊KE₊`, connect its zero mass exactly to that checked nullity, and
+derive eta-arithmetic moment, heat, or cross-scale bounds that exclude the
+sharp `13/18` adversary. That is the route toward a first certificate stronger
+than Anthropic's benchmark and ultimately `18/18`. No stronger zero proportion
+will be claimed until the arithmetic estimate itself is checked in Lean.
 
 ## Latest Update
 
-Lean now flattens the exact supported powers `Q S^k` into feature columns. For
-every finite order family `(kᵢ)`, their Hermitian column Gram is positive
-semidefinite and its `(i,j)` entry is proved exactly equal to
-`Re tr((P K)^(kᵢ+kⱼ))`. This turns the complete phase-preserving mixed eta
-hierarchy into an actual Hankel Gram, including its correctly supported
-zeroth moment.
+Lean now proves that `E₊` and `E₋` are orthogonal Hermitian
+positive-semidefinite projections resolving the identity. Their traces are
+computed from the genuine zeta-zero window: `tr(E₋)` is exactly the number of
+upper off-line reflection pairs, and `tr(E₊)` is that number plus the
+critical-line count. On every nonempty window, the resulting count certificate
+`1 - 2 tr(E₋)/N` is exactly the represented critical-zero proportion.
 
-Writing `N` for the represented distinct-zero count and
-`m₀ = Re tr(K)`, Lean also checks the dimensionless normalization
-`νᵣ = N⁻¹ (N/m₀)^r Re tr((PK)^r)`. Every finite matrix
-`(ν_(kᵢ+kⱼ))` is positive semidefinite; on a nonempty separated window,
-`ν₀ = 1` and `ν₁ = Re tr(PK)/Re tr(K)`. Lean derives the universal Hankel
-inequality `ν_(a+b)^2 ≤ ν_(2a)ν_(2b)`. This is not yet a stronger zero
-proportion: the live problem is an eta-arithmetic bound on these normalized
-moments or heat observables that excludes the sharp `13/18` adversary.
+The eta-weighted carriers `E₊KE₊` and `E₋KE₋` are also proved positive
+semidefinite. Whenever the already checked feature separation makes `K`
+positive definite, Lean proves that `ker(E₊KE₊)` is precisely the
+reflection-odd subspace, its nullity is exactly the upper off-line count, and
+`rank(E₋KE₋)` equals that same count. Their real traces recover exactly the
+existing on-line-plus-real and off-line-imaginary eta colour masses. This fixes
+the certificate semantics but does not yet improve `13/18`; finite spectral
+atom extraction and the decisive eta-arithmetic separator remain open.
 
 ## Mathematical Program
 

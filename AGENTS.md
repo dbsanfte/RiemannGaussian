@@ -1126,10 +1126,20 @@ It then normalizes by the distinct-zero count `N` and mean positive eta mass
 `m₀/N`. The resulting dimensionless moments
 `ν_r=N⁻¹(N/m₀)^r Re tr((PK)^r)` form a positive-semidefinite Hankel matrix for
 every finite order family, with `ν₀=1`, `ν₁=m₁/m₀`, and
-`ν_(a+b)^2≤ν_(2a)ν_(2b)`. The next obligation is to extract or bypass an
-explicit finite-atom representation and prove an eta-arithmetic estimate that
-excludes the sharp finite obstruction. That quantitative estimate remains
-necessary for any stronger zeta-zero proportion and ultimately for RH.
+`ν_(a+b)^2≤ν_(2a)ν_(2b)`. Lean now also proves why this mixed spectrum cannot
+by itself supply the certificate's distinguished zero atom: positive `K` makes
+`PK` invertible. The semantically correct count channel is instead the pair of
+reflection projections `E₊=(I+P)/2` and `E₋=(I-P)/2`. They are orthogonal
+positive-semidefinite idempotents; `tr(E₋)` is exactly the upper off-line-pair
+count, and `1-2 tr(E₋)/N` is exactly the critical-zero proportion. Compressing
+the actual eta metric gives positive carriers `E₊KE₊` and `E₋KE₋`. Under the
+already checked positive-definiteness hypothesis, `ker(E₊KE₊)` is exactly the
+reflection-odd subspace, its nullity is the upper off-line count, and the two
+compressed traces are exactly the on-line-plus-real and off-line-imaginary eta
+masses. The next obligation is to extract the normalized finite spectral atom
+model of `E₊KE₊` and prove an eta-arithmetic estimate excluding the sharp
+finite obstruction. That estimate remains necessary for any stronger
+zeta-zero proportion and ultimately for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is
