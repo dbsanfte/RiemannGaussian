@@ -896,12 +896,18 @@ the genuine multiplicity-weighted zero-window block: the block difference is
 the arithmetic feature-increment outer product plus both successor cross
 terms, entry by entry. Lean identifies that feature increment with the existing
 head-plus-prefix arithmetic increment and proves its leading/remainder split
-in both hyperbolic coordinates. The outer products remain the project's
-complex-symmetric transpose products; no complex-linear Hermitian compression
-is inferred. The next slice must transport the leading/remainder split through
-this matrix current and identify an averaging or transform that produces the
-required `1/(log n-log m)` kernel from the checked endpoint correlation; that
-bridge may not be assumed.
+in both hyperbolic coordinates. Lean now transports this split through the
+full matrix current. For each genuine zero, both the leading current and the
+collection of all terms containing a remainder factor as a sum of two literal
+outer products, hence have rank at most two even after analytic multiplicity.
+Their complete window sums have rank at most twice the number of represented
+zeros, and their sum is exactly the original matrix work. The outer products
+remain the project's complex-symmetric transpose products; no complex-linear
+Hermitian compression is inferred. The next slice must transport the
+leading/remainder split through
+heat time and identify an averaging or transform that produces the required
+`1/(log n-log m)` kernel from the checked endpoint correlation; that bridge may
+not be assumed.
 
 ## Soundness invariant
 

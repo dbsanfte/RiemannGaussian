@@ -26,21 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves an exact matrix-valued cutoff conservation law for the genuine
-finite eta zero-window blocks. Advancing every packed cutoff by one changes the
-full complex-symmetric block by precisely the arithmetic feature-increment
-outer product plus its two cross terms with the successor feature. The theorem
-`RiemannGaussian.topPrefixFiniteZeroWindowMatrixWork_eq_incrementEnergy_add_flux`
-holds entry by entry, so correlations between distinct cutoff scales are not
-collapsed to a trace or norm.
+Lean now transports the proved leading/remainder eta arithmetic split through
+the complete finite zero-window matrix. The theorem
+`RiemannGaussian.topPrefixFiniteZeroWindowMatrixWork_lowRank_decomposition`
+proves that advancing every packed cutoff changes the matrix by exactly one
+leading current plus one remainder current, retaining every cross-cutoff entry.
 
-Lean also identifies that feature increment with the existing finite
-head-plus-prefix eta arithmetic and proves its leading/remainder split in both
-hyperbolic coordinates. This is the first concrete continuous/matrix-hybrid
-transport interface. It supplies no cancellation estimate by itself: the next
-step is to transport the leading/remainder split through the matrix current and
-connect the resulting cross-scale observable to the proved eta-log
-Montgomery--Vaughan bound.
+For each genuine zero, Lean factors each current as a sum of two literal outer
+products and proves its rank is at most two, including analytic multiplicity.
+The corresponding finite-window ranks are at most twice the number of distinct
+represented zeros. This supplies a checked low-rank matrix-current interface,
+not the missing cancellation theorem: the next step is to combine this
+structure with heat-time transport and the proved eta-log Montgomery--Vaughan
+bound.
 
 ## Mathematical Program
 

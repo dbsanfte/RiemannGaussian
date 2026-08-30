@@ -38,7 +38,8 @@ namespace RiemannGaussian
 
 noncomputable section
 
-private theorem matrixRank_add_le
+/-- Rank is subadditive for square complex matrices. -/
+theorem matrixRank_add_le
     {n : Type*} [Fintype n] (A B : Matrix n n ℂ) :
     (A + B).rank ≤ A.rank + B.rank := by
   unfold Matrix.rank
@@ -48,7 +49,9 @@ private theorem matrixRank_add_le
   simp only [Matrix.mulVecLin_apply, Matrix.add_mulVec]
   exact Submodule.add_mem_sup ⟨x, rfl⟩ ⟨x, rfl⟩
 
-private theorem matrixRank_finsetSum_le
+/-- The rank of a finite matrix sum is bounded by the sum of any pointwise
+rank bounds. -/
+theorem matrixRank_finsetSum_le
     {n α : Type*} [Fintype n] (s : Finset α)
     (f : α → Matrix n n ℂ) (bound : α → ℕ)
     (hbound : ∀ a ∈ s, (f a).rank ≤ bound a) :
@@ -63,7 +66,8 @@ private theorem matrixRank_finsetSum_le
           (hbound a (Finset.mem_insert_self a s))
           (ih fun b hb ↦ hbound b (Finset.mem_insert_of_mem hb)))
 
-private theorem matrixRank_smul_vecMulVec_le
+/-- A scalar multiple of a complex outer product has rank at most one. -/
+theorem matrixRank_smul_vecMulVec_le
     {n : Type*} [Fintype n] (c : ℂ) (w v : n → ℂ) :
     (c • Matrix.vecMulVec w v).rank ≤ 1 := by
   rw [← Matrix.smul_vecMulVec]

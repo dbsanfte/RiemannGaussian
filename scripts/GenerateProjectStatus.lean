@@ -69,12 +69,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh
   },
   {
-    label := "Finite eta zero-window blocks satisfy exact matrix cutoff transport"
+    label := "Eta matrix work splits into low-rank leading and remainder currents"
     lineOne := "eta matrix work"
-    lineTwo := "increment + flux"
+    lineTwo := "leading + remainder"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.topPrefixFiniteZeroWindowMatrixWork_eq_incrementEnergy_add_flux
+      ``RiemannGaussian.topPrefixFiniteZeroWindowMatrixWork_lowRank_decomposition
   },
   {
     label := "The first K eta log frequencies satisfy a Hilbert bound with constant 26"
@@ -670,11 +670,13 @@ run_cmd do
         "arithmetic endpoint correlation with no interval integrals remaining. Lean " ++
         "also proves the weighted Montgomery--Vaughan Hilbert inequality with constant " ++
         "26 and specializes it to the separated frequencies log(k+1). The multi-cutoff " ++
-        "eta zero-window block now has an exact matrix-valued cutoff work law: its " ++
-        "successor difference is the arithmetic feature-increment outer product plus " ++
-        "both successor cross terms, entry by entry. The arithmetic increment is " ++
-        "identified with the existing head-plus-prefix work and its leading/remainder " ++
-        "split. Arithmetic cancellation estimates for the distinct-zero sum, and a " ++
+        "eta zero-window block now has an exact matrix-valued cutoff work law. The " ++
+        "arithmetic feature increment is identified with the existing head-plus-prefix " ++
+        "work and its leading/remainder split. Transporting that split through every " ++
+        "matrix entry gives exact leading and remainder currents. Each individual zero " ++
+        "contributes rank at most two to either current, and each finite-window current " ++
+        "has rank at most twice the number of represented zeros. Arithmetic cancellation " ++
+        "estimates for the distinct-zero sum, and a " ++
         "transform connecting it to the Hilbert kernel, remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
@@ -700,8 +702,9 @@ run_cmd do
         "expanded exactly into a finite triple sum over literal retained eta intervals. " ++
         "Every interval is further evaluated into explicit odd--even endpoint complex " ++
         "powers with finite polynomial logarithmic coefficients. The packed cutoff " ++
-        "family also obeys an exact entrywise matrix work law whose increment is the " ++
-        "proved leading-plus-remainder eta arithmetic increment. The proved eta-log " ++
+        "family also obeys an exact entrywise matrix work law which splits into literal " ++
+        "leading and remainder currents. Both per-zero currents have checked rank at " ++
+        "most two, with aggregate rank at most twice the window cardinality. The proved eta-log " ++
         "Montgomery--Vaughan estimate is not yet connected to that matrix observable. " ++
         "The required signed " ++
         "finite-endpoint correlation estimate and the multiplicity-one head " ++
