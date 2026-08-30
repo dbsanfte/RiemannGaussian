@@ -69,12 +69,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh
   },
   {
-    label := "The eta leading/remainder matrix law survives Gaussian proper time"
-    lineOne := "eta heat current"
-    lineTwo := "leading + remainder"
+    label := "The eta Gaussian heat integral satisfies the Hilbert bound with constant 26"
+    lineOne := "eta heat integral"
+    lineTwo := "Hilbert bound 26"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteHeatCompressedZeroWindowMatrixWork_eq_leading_add_remainder
+      ``RiemannGaussian.pairedEtaFiniteCutoffLog_orientedSqrtHeat_mvHilbert_twentySix
   },
   {
     label := "The first K eta log frequencies satisfy a Hilbert bound with constant 26"
@@ -681,9 +681,14 @@ run_cmd do
         "for u>0. Schur compression at the exact eta cutoff nodes log(2*N+1) has a checked " ++
         "entrywise derivative, commutes with the genuine multiplicity-weighted zero sum, " ++
         "preserves the on-line/off-line decomposition and Hermitian symmetry, and carries " ++
-        "the leading/remainder matrix-current law through every heat time. Arithmetic " ++
-        "cancellation estimates for the distinct-zero sum, and a controlled heat transform " ++
-        "connecting the leading current to the Hilbert kernel, remain open.")),
+        "the leading/remainder matrix-current law through every heat time. Lean now proves " ++
+        "the oriented square-root heat integral equals the reciprocal nonzero frequency gap, " ++
+        "with coincident nodes explicitly removed before integration. The centered eta cutoff " ++
+        "nodes log(2*N+1) have a checked gap 1/(2*K), so the Montgomery--Vaughan constant-26 " ++
+        "bound now applies directly to their heat bilinear form. The transform is also " ++
+        "instantiated entrywise on the genuine eta zero-window matrix work and preserves its " ++
+        "leading/remainder law. Arithmetic coefficient and signed zero-window cancellation " ++
+        "estimates remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -714,8 +719,12 @@ run_cmd do
         "law is now transported through a continuous positive-semidefinite Gaussian " ++
         "proper-time kernel at the exact eta cutoff nodes; the compressed genuine zero " ++
         "sum, signed block decomposition, Hermitian symmetry, and entrywise derivative " ++
-        "are all checked. The proved eta-log Montgomery--Vaughan estimate is not yet " ++
-        "connected to the resulting heat current by a proved transform. " ++
+        "are all checked. An oriented square-root heat integral now produces the reciprocal " ++
+        "logarithmic-gap kernel exactly, and the Montgomery--Vaughan constant-26 estimate is " ++
+        "proved directly in that heat form for the separated nodes log(2*N+1). The same " ++
+        "transform acts entrywise on the actual matrix work and preserves its leading/remainder " ++
+        "split. What is not yet proved is the blockwise application to the actual rank-two " ++
+        "leading-current coefficients or a signed estimate after the spectral zero sum. " ++
         "The required signed " ++
         "finite-endpoint correlation estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++

@@ -914,11 +914,23 @@ commutation with the genuine multiplicity-weighted zero sum, preservation of
 the on-line plus off-line-real minus off-line-imaginary decomposition and
 Hermitian symmetry, and commutation with the complete leading/remainder matrix
 work law. These are finite identities; no infinite operator, heat-time
-integral, or cancellation estimate has been inferred. The next live bridge is
-to derive a controlled heat transform of the leading current that produces
-the signed `1/(log n-log m)` kernel required to apply the checked
-Montgomery--Vaughan estimate. That transform and its eta-arithmetic estimate
-must be proved, not assumed.
+integral, or cancellation estimate is inferred at that stage. Lean now closes
+the finite kernel-transform bridge as well. For every nonzero gap `Delta`, the
+oriented square-root proper-time integral of `exp(-t^2*Delta^2)` is proved
+exactly equal to `Delta⁻¹`; coincident-frequency entries are explicitly zeroed
+before integration, so the nonintegrable diagonal is not silently totalized.
+The Gaussian kernels and compressions obey their exact additive semigroup
+laws. The first `K` centered eta cutoff nodes `log(2*N+1)` are proved injective
+and uniformly separated by `1/(2*K)`, and the checked Montgomery--Vaughan
+constant-26 bound is now stated and proved directly for their oriented heat
+bilinear form. The same transform is instantiated entrywise on the genuine
+eta zero-window matrix work, where it becomes reciprocal logarithmic-gap
+multiplication and preserves the leading/remainder law. This connects the
+Gaussian and Hilbert kernels but does not yet estimate the actual eta current:
+the next obligation is to apply the bilinear inequality blockwise to the two
+outer products in each leading current, retain the signed zero-window
+aggregation, and prove a bound strong enough for the critical first moment.
+None of that coefficient control may be inferred from the transform alone.
 
 ## Soundness invariant
 
