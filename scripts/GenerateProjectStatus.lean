@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Literal eta lower moments have geometric phase sampling"
-    lineOne := "eta phase sampling"
-    lineTwo := "nonzero complex limit"
+    label := "Finite same-layer eta modes have a collision-free prime base"
+    lineOne := "eta prime modes"
+    lineTwo := "collision-free layer"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.tendsto_etaGeometricCutoff_cpow_mul_pairedEtaLowerMomentCenteredPartialSum
+      ``RiemannGaussian.exists_prime_etaGeometricNormalizedMode_injOn_zetaZeros_same_re
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove collision-free eta modes and finite cutoff separation.</text>\n" ++
+      "peel eta decay layers and extract finite separating cutoffs.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -741,8 +741,11 @@ run_cmd do
         "Lean now performs that sampling for every odd base q>1 at the exact cutoff (q^n-1)/2. " ++
         "The sampled odd endpoint is q^n, the cutoff tends to infinity, and the multiplicity-minus-one " ++
         "finite eta prefix at every nontrivial zero has an explicit nonzero complex limit after " ++
-        "normalization by the nth power of one fixed mode. Collision avoidance between different " ++
-        "zeros and finite-coordinate extraction have not yet been proved. " ++
+        "normalization by the nth power of one fixed mode. A phase collision for two distinct " ++
+        "frequencies is now proved possible at at most one prime base. Hence every finite injective " ++
+        "frequency family has an odd prime base with pairwise distinct normalized modes; this is " ++
+        "specialized to finite same-real-part zeta-zero layers. Peeling distinct real-decay layers " ++
+        "and finite-coordinate extraction have not yet been proved. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -824,8 +827,11 @@ run_cmd do
         "unit-circle modes have linearly independent full sequences. The sharp complex eta-tail " ++
         "asymptotic is now sampled at exact geometric odd endpoints q^n for every odd q>1, and the " ++
         "literal lower-moment finite prefix at each zeta zero has a checked nonzero complex geometric " ++
-        "limit. Proving that one base is collision-free on a given finite window, separating the " ++
-        "different real-decay layers, and extracting a finite separating cutoff family remain open. " ++
+        "limit. Lean now proves that collisions for any distinct frequency pair occur at at most one " ++
+        "prime, and therefore selects one odd prime base with distinct normalized modes across any " ++
+        "finite injective frequency family. The theorem is specialized to every finite same-real-part " ++
+        "zeta-zero layer. Separating the different real-decay layers and extracting a finite " ++
+        "separating cutoff family remain open. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

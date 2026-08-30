@@ -1052,12 +1052,15 @@ for every odd base `q > 1`, the cutoff `(q^n-1)/2` tends to infinity, its odd
 endpoint is exactly `q^n`, and the sharp complex eta-tail normalization becomes
 the `n`th power of one fixed mode. At every nontrivial zero the literal
 multiplicity-minus-one centered prefix inherits an explicit nonzero complex
-geometric asymptotic. The next obligations are to choose a base whose modes do
-not collide across a finite zero window, peel the finitely many real-decay
-layers, and extract finitely many cutoff coordinates retaining independence.
-If completed, that route would establish a 100% information ceiling for each
-finite eta zero window; an arithmetic estimate controlling the resulting
-exact observable would still be required for RH.
+geometric asymptotic. Lean now proves that any two distinct frequencies can
+collide at at most one prime base. Thus every finite injective frequency family
+admits an odd prime base at which all normalized modes are distinct, with a
+specialization to every finite same-real-part zeta-zero layer. The next
+obligations are to peel the finitely many real-decay layers and extract
+finitely many cutoff coordinates retaining independence. If completed, that
+route would establish a 100% information ceiling for each finite eta zero
+window; an arithmetic estimate controlling the resulting exact observable
+would still be required for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is

@@ -26,19 +26,18 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now samples the checked complex eta-tail asymptotic at the exact cutoffs
-`(qⁿ−1)/2` for every odd `q>1`. Lean proves these cutoffs tend to infinity,
-their odd endpoints are exactly `qⁿ`, and the normalization becomes the
-power of one fixed complex mode. At every nontrivial zeta zero, the literal
-multiplicity-minus-one finite eta prefix has an explicit nonzero complex
-geometric asymptotic.
+Lean now proves prime-base collision avoidance for the checked geometric eta
+modes. A collision between two distinct ordinates can occur at at most one
+prime base. Consequently, every finite injective frequency family admits an
+odd prime `q>1` at which all normalized unit phases are distinct. In
+particular, this holds for every finite set of nontrivial zeta zeros lying on
+one fixed real-coordinate layer.
 
-Together with the preceding finite geometric-phase rigidity theorem, this
-connects actual eta arithmetic to the proposed 18/18 separation route without
-discarding phase. The next obligations are to choose a base with no mode
-collisions across a finite zero window and extract finitely many cutoff
-coordinates retaining the resulting independence. No stronger zeta-zero
-proportion is yet claimed.
+Together with geometric eta sampling and finite geometric-phase rigidity,
+this closes mode separation within each real-decay layer while retaining the
+full complex phase. The next obligations are to peel the finitely many real
+layers and extract a finite cutoff family whose evaluation matrix remains
+injective. No stronger zeta-zero proportion is yet claimed.
 
 ## Mathematical Program
 
