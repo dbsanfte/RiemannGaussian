@@ -524,10 +524,16 @@ strip. Lean cancels its apparent endpoint poles using the digamma recurrence
 and rewrites it as a symmetric shifted-digamma term plus two explicit dyadic
 resolvents. The same-ordinate log norm is antisymmetric about `1/2`, and its
 horizontal derivative is exactly the real part of this pole-free expression.
-The next valid slice must prove the required global integral sign or another
-converse horizontal-rigidity theorem for this explicit multiplier and derive
-unit norm at zeros from an independent arithmetic or phase constraint.
-Neither open direction may be inserted as an assumption.
+Lean now proves that real part strictly positive throughout the whole open
+strip at every absolute ordinate at least `8`. Hence the same-ordinate log
+norm is strictly increasing there, and `|B(s)|^2 = 1` is equivalent to
+`Re s = 1/2` in this high-ordinate region. For every nontrivial zero satisfying
+that explicit height hypothesis, vanishing of the actual first localized
+distortion coefficient is therefore equivalent to the critical-line
+equation. The remaining work must derive unit norm at zeros from an
+independent arithmetic or phase constraint and must either prove a checked
+zero-free result for `|Im s| < 8` or establish the missing low-ordinate
+rigidity by a non-monotonic argument. Neither open input may be assumed.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

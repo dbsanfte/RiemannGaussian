@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
   },
   {
-    label := "The multiplicity-scaled localized eta Gram has an explicit strictly positive large-time limit"
-    lineOne := "localized eta Gram"
-    lineTwo := "actual positive limit"
-    role := "bridge"
+    label := "At absolute ordinate at least eight, eta multiplier unit norm is equivalent to the critical line"
+    lineOne := "high-ordinate eta"
+    lineTwo := "unit norm iff line"
+    role := "reduction"
     theoremName :=
-      ``RiemannGaussian.tendsto_pow_mul_pairedEtaLocalizedGaussianLaplaceNorm_div_sqrt_atTop_coefficient
+      ``RiemannGaussian.normSq_pairedEtaLaplaceReflectionMultiplier_eq_one_iff_re_eq_half_of_eight_le_abs
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "force unit norm at zeros and prove the explicit pole-free slope gives rigidity.</text>\n" ++
+      "force unit norm at zeros; close the low-ordinate region below height 8.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -397,19 +397,23 @@ run_cmd do
         "recurrence. Its logarithmic derivative is a symmetric shifted-digamma term " ++
         "plus two explicit dyadic resolvents. The same-ordinate log norm is exactly " ++
         "antisymmetric about one half, and its horizontal derivative is the real part " ++
-        "of that pole-free expression. No independent arithmetic or phase theorem " ++
-        "forces unit norm, no checked sign theorem proves the required horizontal " ++
-        "rigidity, " ++
-        "and no current theorem implies RH.")),
+        "of that pole-free expression. Four exact positive Euler-series terms, a " ++
+        "checked Euler-constant bound, and two disk-resolvent estimates now prove the " ++
+        "slope strictly positive across the whole open strip whenever |Im(s)|>=8. " ++
+        "Thus the multiplier log norm is strictly increasing and its unit-norm equation " ++
+        "is equivalent to Re(s)=1/2 throughout that high-ordinate region. No independent " ++
+        "arithmetic or phase theorem forces unit norm at zeros; neither a checked " ++
+        "zero-free theorem below height 8 nor low-ordinate multiplier rigidity has been " ++
+        "proved; no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
         "Prove an independent arithmetic or phase constraint forcing the explicit " ++
-        "eta Laplace reflection multiplier to have unit norm at every nontrivial zero, " ++
-        "and prove from its explicit pole-free horizontal log slope that the unit-norm " ++
-        "equation forces real part one half; alternatively " ++
+        "eta Laplace reflection multiplier to have unit norm at every nontrivial zero; " ++
+        "extend the proved high-ordinate horizontal rigidity below height 8 or prove that " ++
+        "the low region is zero-free; alternatively " ++
         "force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),

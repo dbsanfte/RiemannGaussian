@@ -26,17 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now computes the exact horizontal logarithmic derivative of the
-nonvanishing eta reflection multiplier `B(s)`. The apparent endpoint poles
-cancel by the digamma recurrence, leaving a symmetric shifted-digamma term
-and two explicit dyadic resolvents. Lean also proves that
-`log |B(sigma+i*y)|` is antisymmetric about `sigma = 1/2` and that its
-horizontal derivative is the real part of this pole-free expression.
+Lean now proves a first unconditional region of horizontal rigidity for the
+nonvanishing eta reflection multiplier `B(s)`. Across the whole open critical
+strip, whenever `|Im s| >= 8`, the exact pole-free horizontal log slope is
+strictly positive. Consequently `log |B(sigma+i*y)|` is strictly increasing
+in `sigma`, and Lean proves
+`|B(s)|^2 = 1` if and only if `Re s = 1/2` in that region.
 
-This is a rigorous reduction of multiplier rigidity, not a proof of it. The
-open analytic task is to control the integral sign of the explicit slope well
-enough to prove `|B(s)| = 1` only when `Re s = 1/2`. Independently, an
-arithmetic or phase theorem must still force unit norm at nontrivial zeros.
+The estimate is analytic and uniform: it uses four exact positive terms from
+Euler's convergent digamma series, checked bounds for Euler's constant and
+`log pi`, and a disk-resolvent inequality for both dyadic terms. This does not
+prove RH. The project still has no theorem forcing unit norm at zeros, and it
+has not formally excluded nontrivial zeros with `|Im s| < 8` or proved the
+corresponding low-ordinate multiplier rigidity.
 
 ## Mathematical Program
 
