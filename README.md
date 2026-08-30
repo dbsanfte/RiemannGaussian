@@ -26,23 +26,23 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves that both explicit completion-weighted component increments
-are absolutely summable at every nontrivial zero, without assuming where the
-zero lies. The proof uses the exact head-plus-lower-prefix cutoff recurrence
-and the checked limit
-`(2N+1) * (log (2N+3) - log (2N+1)) -> 2`: every increment gains at least one
-full endpoint power, crossing the `p`-series threshold.
+Lean now identifies the exact first-moment threshold for the explicit finite
+eta energy work `J_N = E_N-E_(N+1)`. A general checked tail theorem shows that
 
-The two increment energies and successor cross-flux norm products are
-therefore summable. Hence the signed energy work `J_N = E_N-E_(N+1)` is
-absolutely summable, and every tail is a genuine Lean `HasSum` reconstruction
-of `E_N`; division by the fixed total amplitude similarly reconstructs the
-normalized defect `E_N/S_N`.
+`Summable (fun N => (2*N+1) * |J_N|)`
 
-This does not prove RH. Since `S_N -> 0`, unweighted summability of `J_N` is
-too weak to control the RH-equivalent sequence `(E_N/S_N)^2`. The open target
-is now a weighted eta-specific coercivity or cancellation theorem strong
-enough to survive that vanishing normalization.
+forces `(2*N+1) * |E_N| -> 0`. Conversely, the existing sharp complementary
+tail asymptotics make the endpoint-scaled amplitude imbalance diverge at every
+off-critical zero, and Lean proves that imbalance is pointwise at most
+`|E_N|`. Therefore the weighted work series is summable at a nontrivial zero
+exactly when its real part is `1/2`.
+
+Universal first-moment summability of this literal finite arithmetic work is
+now proved equivalent to Mathlib's RH, and also equivalent to the existing
+normalized-energy square-summability criterion. This is a sharper reduction,
+not an RH proof: the open arithmetic theorem is to establish that weighted
+summability universally without using zero locations. The unweighted series
+is already proved absolutely summable and is too weak.
 
 ## Mathematical Program
 

@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The finite eta energy work is absolutely summable"
-    lineOne := "energy work in ell^1"
-    lineTwo := "HasSum reconstructs E"
-    role := "unconditional"
+    label := "The first moment of finite eta energy work detects the critical line"
+    lineOne := "weighted energy work"
+    lineTwo := "summable iff line"
+    role := "reduction"
     theoremName :=
-      ``RiemannGaussian.summable_abs_topPrefixFiniteEnergyWork
+      ``RiemannGaussian.summable_oddEndpoint_mul_abs_topPrefixFiniteEnergyWork_iff_re_eq_half
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "control E_N/S_N through its vanishing normalization.</text>\n" ++
+      "prove the eta energy-work first moment arithmetically.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -592,17 +592,23 @@ run_cmd do
         "has a genuine HasSum reconstruction of E_N and, after division by the fixed " ++
         "total amplitude, of E_N/S_N. This is unconditional but does not prove RH: " ++
         "the normalizing amplitude tends to zero, so the remaining theorem must control " ++
-        "that vanishing denominator.")),
+        "that vanishing denominator. Lean now proves a general weighted-tail lemma: " ++
+        "summability of (2N+1)|J_N| forces (2N+1)|E_N| to vanish. The amplitude " ++
+        "imbalance is pointwise at most |E_N| and its checked endpoint scaling diverges " ++
+        "at every off-critical zero. Consequently the first-moment work series is " ++
+        "summable exactly on the critical line, and universal summability is equivalent " ++
+        "to RH and to normalized-energy square-summability. This is a reduction; its " ++
+        "universal arithmetic premise remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Strengthen the unconditional absolute summability of finite energy work to an " ++
-        "eta-specific weighted coercivity or cancellation estimate that survives the " ++
-        "vanishing total amplitude S_N and makes the square of E_N/S_N summable at " ++
-        "every nontrivial zero without assuming zero locations; Lean proves that " ++
-        "universal normalized square-summability is exactly RH"))
+        "Prove universally, from the explicit eta head-plus-prefix increment formula " ++
+        "and without assuming zero locations, that the first moment " ++
+        "sum_N (2N+1)|J_N| is finite; Lean proves this statement equivalent to RH and " ++
+        "to universal normalized-energy square-summability, while the corresponding " ++
+        "unweighted absolute summability is already unconditional"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

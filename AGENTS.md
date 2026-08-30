@@ -715,6 +715,16 @@ amplitude in the normalized defect tends to zero. The current frontier is a
 weighted coercivity or cancellation estimate that controls the quotient
 `E_N / S_N` strongly enough to make its square summable without assuming zero
 locations.
+Lean now isolates the exact first weight needed for that strengthening. A
+generic weighted-tail theorem applied to the absolute `HasSum` reconstruction
+shows that summability of `(2N+1) * |J_N|` forces
+`(2N+1) * |E_N| -> 0`. The amplitude imbalance is pointwise bounded by
+`|E_N|`, while its checked sharp asymptotic diverges at this endpoint scale for
+every off-line zero. Hence the weighted work series is summable exactly on the
+critical line, and its universal summability is equivalent to RH. Treat this
+as a reduction: the live arithmetic task is to prove the first-moment bound
+without assuming zero locations, not to cite the equivalence as progress on
+that open direction.
 
 ## Soundness invariant
 
