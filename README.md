@@ -26,25 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves height-free horizontal rigidity for the eta reflection
-multiplier `B(s)` throughout the complete open critical strip:
+Lean now identifies the exact arithmetic gain between the first nonzero
+localized Gaussian coefficients at complementary zeros. If `a(rho)>0` is the
+coefficient at `rho` and `rho* = 1-conj(rho)`, then the kernel checks
 
-`|B(s)| < 1`, `= 1`, or `> 1` according as
-`Re s < 1/2`, `= 1/2`, or `> 1/2`.
+`a(rho*) / a(rho) = |B(rho)|²`,
 
-The proof constructs an explicit holomorphic extension of `1/B(s)` across
-`Re s = 1`. Its eta zeros fill the dyadic boundary singularities, and its norm
-is strictly below one on that whole boundary. The high-ordinate estimate
-controls the remaining horizontal sides; the maximum-modulus principle and
-the extension's zero at `s=1` give strict contraction throughout the compact
-low-height rectangle.
+where `B` is the explicit eta reflection multiplier. Combined with the
+height-free multiplier rigidity theorem, Lean proves that `a(rho*)<a(rho)`,
+`=`, or `>` exactly when `Re rho<1/2`, `=1/2`, or `>1/2`; the corresponding
+signed coefficient differences are proved as well.
 
-Consequently, at every nontrivial zeta zero, Lean proves that vanishing of the
-actual first localized completion-distortion coefficient is equivalent to the
-critical-line equation, with no height hypothesis. This does not prove that
-the coefficient vanishes. The remaining conjecture-strength step is an
-independent arithmetic or phase argument forcing that vanishing, equivalently
-forcing `|B(rho)|=1` at every zero.
+This turns the remaining conjecture-strength step into a precise arithmetic
+statement: prove independently that `a(rho*)=a(rho)` at every nontrivial zero.
+The project does not yet prove that equality or RH.
 
 ## Mathematical Program
 

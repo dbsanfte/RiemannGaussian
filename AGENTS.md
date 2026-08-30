@@ -547,6 +547,13 @@ coefficient is now equivalent to the critical-line equation without a height
 hypothesis. The remaining work must derive that vanishing, or equivalently
 unit norm at zeros, from an independent arithmetic or phase constraint. That
 open input may not be assumed.
+Lean now transfers this complete multiplier sign law back to the literal
+leading Gaussian coefficients. At every nontrivial zero `rho`, the partner-to-
+original coefficient ratio is exactly `|B(rho)|^2`; consequently the partner
+coefficient is smaller, equal, or larger exactly when `Re(rho)` is left of, on,
+or right of `1/2`. The remaining target is therefore the independent equality
+of these two positive arithmetic coefficients. The exact ratio and its sign
+classification do not supply that equality.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
