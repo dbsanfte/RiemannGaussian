@@ -530,10 +530,16 @@ norm is strictly increasing there, and `|B(s)|^2 = 1` is equivalent to
 `Re s = 1/2` in this high-ordinate region. For every nontrivial zero satisfying
 that explicit height hypothesis, vanishing of the actual first localized
 distortion coefficient is therefore equivalent to the critical-line
-equation. The remaining work must derive unit norm at zeros from an
-independent arithmetic or phase constraint and must either prove a checked
-zero-free result for `|Im s| < 8` or establish the missing low-ordinate
-rigidity by a non-monotonic argument. Neither open input may be assumed.
+equation. Lean now also computes the exact squared norm of `B(1+it)` on the
+outer boundary. Away from `t=0` and the explicit dyadic resonances, it proves
+that norm strictly greater than one for every positive or negative ordinate.
+The low-height proof uses exact Taylor and hyperbolic inequalities plus a
+rational polynomial certificate; the high-height proof is elementary. This
+closes the missing outer-boundary sign but does not propagate it through the
+low-ordinate open strip. The remaining work must derive unit norm at zeros
+from an independent arithmetic or phase constraint and must either carry the
+boundary sign through the low strip with every divisor term retained or prove
+a checked zero-free result there. Neither open input may be assumed.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

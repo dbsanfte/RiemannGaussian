@@ -26,19 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves a first unconditional region of horizontal rigidity for the
-nonvanishing eta reflection multiplier `B(s)`. Across the whole open critical
-strip, whenever `|Im s| >= 8`, the exact pole-free horizontal log slope is
-strictly positive. Consequently `log |B(sigma+i*y)|` is strictly increasing
-in `sigma`, and Lean proves
-`|B(s)|^2 = 1` if and only if `Re s = 1/2` in that region.
+Lean now evaluates the eta reflection multiplier `B(s)` exactly on the outer
+boundary `s = 1 + it`. Away from `t = 0` and the explicit dyadic resonances
+`cos(t log 2) = 1`, it proves
 
-The estimate is analytic and uniform: it uses four exact positive terms from
-Euler's convergent digamma series, checked bounds for Euler's constant and
-`log pi`, and a disk-resolvent inequality for both dyadic terms. This does not
-prove RH. The project still has no theorem forcing unit norm at zeros, and it
-has not formally excluded nontrivial zeros with `|Im s| < 8` or proved the
-corresponding low-ordinate multiplier rigidity.
+`|B(1+it)|² = ((1+t²)/(2*pi*t)) tanh(pi*t/2)
+              ((5-4*cos(t*log 2))/(2-2*cos(t*log 2))) > 1`.
+
+The strict inequality holds at every positive or negative nonzero ordinate,
+not just at large height. Its Lean proof combines exact Gamma and eta-factor
+norm identities with checked Taylor and hyperbolic inequalities and an exact
+rational polynomial certificate. This supplies the missing outer-boundary
+sign for a future divisor-aware maximum-principle argument. It does not yet
+propagate that sign into the low-ordinate open strip or force unit norm at zeta
+zeros, so it does not prove RH.
 
 ## Mathematical Program
 

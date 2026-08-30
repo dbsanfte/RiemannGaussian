@@ -77,20 +77,20 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_safeAxisPoisson_toReal_zero_iff_upperSpectralHeight_sublinear
   },
   {
-    label := "Smooth endpoint drift is summable and work is asymptotic to the logarithmic average plus log N"
-    lineOne := "signed work - A_N"
-    lineTwo := "- log N converges"
-    role := "reduction"
-    theoremName :=
-      ``RiemannGaussian.tendsto_cumulativeMassErrorWork_sub_logAverage_sub_log
-  },
-  {
     label := "At absolute ordinate at least eight, eta multiplier unit norm is equivalent to the critical line"
     lineOne := "high-ordinate eta"
     lineTwo := "unit norm iff line"
     role := "reduction"
     theoremName :=
       ``RiemannGaussian.normSq_pairedEtaLaplaceReflectionMultiplier_eq_one_iff_re_eq_half_of_eight_le_abs
+  },
+  {
+    label := "At every nonsingular nonzero point of Re s = 1, the eta multiplier squared norm exceeds one"
+    lineOne := "outer eta boundary"
+    lineTwo := "norm² > 1"
+    role := "unconditional"
+    theoremName :=
+      ``RiemannGaussian.normSq_pairedEtaLaplaceReflectionMultiplier_one_add_mul_I_gt_one
   }
 ]
 
@@ -196,7 +196,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "  <text class=\"metrics\" x=\"980\" y=\"47\">0 placeholder dependencies · " ++
       "0 project axioms · frontier standard-only</text>\n" ++
     "  <text class=\"section\" x=\"20\" y=\"64\">UNCONDITIONAL RESULTS AND IDENTITIES</text>\n" ++
-    "  <text class=\"section\" x=\"20\" y=\"143\">EQUIVALENCES AND REDUCTIONS — NOT A PROOF CHAIN</text>\n" ++
+    "  <text class=\"section\" x=\"20\" y=\"143\">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>\n" ++
     "  <line x1=\"670\" y1=\"62\" x2=\"670\" y2=\"207\" stroke=\"#30363d\"/>\n" ++
     "  <text class=\"gap-label\" x=\"765\" y=\"94\">UNPROVED MATHEMATICS</text>\n" ++
     "  <path class=\"open-edge\" d=\"M840 139 H853\"/>\n" ++
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "force unit norm at zeros; close the low-ordinate region below height 8.</text>\n" ++
+      "force unit norm at zeros; propagate boundary sign through the low strip.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -401,10 +401,12 @@ run_cmd do
         "checked Euler-constant bound, and two disk-resolvent estimates now prove the " ++
         "slope strictly positive across the whole open strip whenever |Im(s)|>=8. " ++
         "Thus the multiplier log norm is strictly increasing and its unit-norm equation " ++
-        "is equivalent to Re(s)=1/2 throughout that high-ordinate region. No independent " ++
-        "arithmetic or phase theorem forces unit norm at zeros; neither a checked " ++
-        "zero-free theorem below height 8 nor low-ordinate multiplier rigidity has been " ++
-        "proved; no current theorem implies RH.")),
+        "is equivalent to Re(s)=1/2 throughout that high-ordinate region. Lean now also " ++
+        "evaluates the multiplier norm exactly on Re(s)=1 and proves its square strictly " ++
+        "greater than one at every nonzero ordinate away from the explicit dyadic " ++
+        "resonances. This supplies rigorous outer-boundary sign data, but does not " ++
+        "propagate it through the low-ordinate open strip. No independent arithmetic or " ++
+        "phase theorem forces unit norm at zeros; no current theorem implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -412,8 +414,9 @@ run_cmd do
       ("target", .str (
         "Prove an independent arithmetic or phase constraint forcing the explicit " ++
         "eta Laplace reflection multiplier to have unit norm at every nontrivial zero; " ++
-        "extend the proved high-ordinate horizontal rigidity below height 8 or prove that " ++
-        "the low region is zero-free; alternatively " ++
+        "propagate the proved nonsingular outer-boundary strict norm inequality through " ++
+        "the low-ordinate open strip with all divisor terms retained, or prove that the " ++
+        "low region is zero-free; alternatively " ++
         "force the exact " ++
         "detector limit to vanish without discarding zero contributions"))
     ]),
