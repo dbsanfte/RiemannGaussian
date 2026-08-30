@@ -26,20 +26,23 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now sharpens off-line residual dominance at the critical square-root
-scale. For a hypothetical zero with `Re(rho)>1/2`, the actual completed
-centered residual satisfies
+Lean now turns the exact finite residual transport law into a tail-work
+criterion. Writing its explicit head interval plus finite lower-prefix
+hierarchy as `W_N`, Lean proves the finite telescope
 
-`(2N+1)^(1/2) * norm(R_N(rho)) -> +infinity`.
+`sum_(q<L) W_(N+q) = R_N - R_(N+L)`
 
-Reflection supplies the obstructed orientation for every off-critical-line
-pair. Lean therefore proves that eventual `O((2N+1)^(-1/2))` control of the
-residual at every nontrivial zero implies Mathlib's `RiemannHypothesis`.
-Conversely, RH makes both explicit centered-tail envelopes have exponent
-`1/2`, so the global bound follows; the residual-rate criterion is exactly
-equivalent to RH. This equivalence is a reformulation, not a proof. The open
-arithmetic direction is now precise: derive that critical-scale bound from the
-exact finite residual work identity without assuming zero locations.
+and proves that the left side converges to `R_N` as `L` tends to infinity.
+Consequently, a uniform bound on
+
+`(2N+1)^(1/2) * sum_(q<L) norm(W_(N+q))`
+
+for every base cutoff, finite tail length, and nontrivial zero implies the
+critical-scale residual bound and hence RH. The absolute tail-work estimate is
+not proved and may be stronger than necessary. It is a concrete coercive
+arithmetic target built entirely from finite eta head integrals and finite
+prefixes; signed cancellation estimates strong enough to imply the same rate
+remain viable alternatives.
 
 ## Mathematical Program
 

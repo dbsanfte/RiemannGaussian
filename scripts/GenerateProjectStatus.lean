@@ -486,15 +486,21 @@ run_cmd do
         "two-tail envelope proves that bound, so the global rate criterion is exactly " ++
         "equivalent to RH. Its forward arithmetic direction is not proved: the needed " ++
         "critical-scale control must still be derived from the finite residual work " ++
-        "identity without assuming zero locations.")),
+        "identity without assuming zero locations. Lean now names that exact finite " ++
+        "one-step work W_N, proves sum_(q<L) W_(N+q)=R_N-R_(N+L), and passes L to " ++
+        "infinity to reconstruct R_N. A uniform bound on (2N+1)^(1/2) times the sum " ++
+        "of the norms of every finite work tail therefore implies the critical-scale " ++
+        "residual bound and RH. This absolute coercivity premise is not proved and " ++
+        "may be stronger than necessary; it exposes one explicit finite-arithmetic " ++
+        "route to the required rate.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Derive a global eventual O((2N+1)^(-1/2)) bound for the actual completed " ++
-        "centered residual from its exact finite-prefix arithmetic work identity, " ++
-        "without assuming RH or an equivalent zero-location statement"))
+        "Prove the uniform square-root absolute tail-work bound, or a weaker signed " ++
+        "cancellation estimate implying the same critical residual rate, for the " ++
+        "explicit finite head-plus-prefix work without assuming zero locations"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
