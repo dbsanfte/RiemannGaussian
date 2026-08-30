@@ -69,12 +69,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh
   },
   {
-    label := "Eta matrix work splits into low-rank leading and remainder currents"
-    lineOne := "eta matrix work"
+    label := "The eta leading/remainder matrix law survives Gaussian proper time"
+    lineOne := "eta heat current"
     lineTwo := "leading + remainder"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.topPrefixFiniteZeroWindowMatrixWork_lowRank_decomposition
+      ``RiemannGaussian.pairedEtaTopPrefixFiniteHeatCompressedZeroWindowMatrixWork_eq_leading_add_remainder
   },
   {
     label := "The first K eta log frequencies satisfy a Hilbert bound with constant 26"
@@ -675,9 +675,15 @@ run_cmd do
         "work and its leading/remainder split. Transporting that split through every " ++
         "matrix entry gives exact leading and remainder currents. Each individual zero " ++
         "contributes rank at most two to either current, and each finite-window current " ++
-        "has rank at most twice the number of represented zeros. Arithmetic cancellation " ++
-        "estimates for the distinct-zero sum, and a " ++
-        "transform connecting it to the Hilbert kernel, remain open.")),
+        "has rank at most twice the number of represented zeros. Lean now identifies the " ++
+        "existing finite Gaussian arithmetic quadratic with a literal kernel matrix and " ++
+        "proves the proper-time kernel exp(-u*(lambda_i-lambda_j)^2) positive semidefinite " ++
+        "for u>0. Schur compression at the exact eta cutoff nodes log(2*N+1) has a checked " ++
+        "entrywise derivative, commutes with the genuine multiplicity-weighted zero sum, " ++
+        "preserves the on-line/off-line decomposition and Hermitian symmetry, and carries " ++
+        "the leading/remainder matrix-current law through every heat time. Arithmetic " ++
+        "cancellation estimates for the distinct-zero sum, and a controlled heat transform " ++
+        "connecting the leading current to the Hilbert kernel, remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -704,8 +710,12 @@ run_cmd do
         "powers with finite polynomial logarithmic coefficients. The packed cutoff " ++
         "family also obeys an exact entrywise matrix work law which splits into literal " ++
         "leading and remainder currents. Both per-zero currents have checked rank at " ++
-        "most two, with aggregate rank at most twice the window cardinality. The proved eta-log " ++
-        "Montgomery--Vaughan estimate is not yet connected to that matrix observable. " ++
+        "most two, with aggregate rank at most twice the window cardinality. That matrix " ++
+        "law is now transported through a continuous positive-semidefinite Gaussian " ++
+        "proper-time kernel at the exact eta cutoff nodes; the compressed genuine zero " ++
+        "sum, signed block decomposition, Hermitian symmetry, and entrywise derivative " ++
+        "are all checked. The proved eta-log Montgomery--Vaughan estimate is not yet " ++
+        "connected to the resulting heat current by a proved transform. " ++
         "The required signed " ++
         "finite-endpoint correlation estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++

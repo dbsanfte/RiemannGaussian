@@ -903,11 +903,22 @@ outer products, hence have rank at most two even after analytic multiplicity.
 Their complete window sums have rank at most twice the number of represented
 zeros, and their sum is exactly the original matrix work. The outer products
 remain the project's complex-symmetric transpose products; no complex-linear
-Hermitian compression is inferred. The next slice must transport the
-leading/remainder split through
-heat time and identify an averaging or transform that produces the required
-`1/(log n-log m)` kernel from the checked endpoint correlation; that bridge may
-not be assumed.
+Hermitian compression is inferred. Lean now adds a continuous Gaussian
+proper-time layer without making that identification. The kernel matrix
+`exp(-u*(lambda_i-lambda_j)^2)` is proved positive semidefinite for `u>0`, and
+its quadratic form is exactly the previously checked finite Gaussian
+arithmetic double sum after the proved positive rescaling. Schur compression
+therefore preserves every positive eta constituent. At the literal packed
+cutoff nodes `log(2*N+1)`, Lean proves the explicit entrywise heat derivative,
+commutation with the genuine multiplicity-weighted zero sum, preservation of
+the on-line plus off-line-real minus off-line-imaginary decomposition and
+Hermitian symmetry, and commutation with the complete leading/remainder matrix
+work law. These are finite identities; no infinite operator, heat-time
+integral, or cancellation estimate has been inferred. The next live bridge is
+to derive a controlled heat transform of the leading current that produces
+the signed `1/(log n-log m)` kernel required to apply the checked
+Montgomery--Vaughan estimate. That transform and its eta-arithmetic estimate
+must be proved, not assumed.
 
 ## Soundness invariant
 

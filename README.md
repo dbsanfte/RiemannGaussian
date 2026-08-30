@@ -26,19 +26,24 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now transports the proved leading/remainder eta arithmetic split through
-the complete finite zero-window matrix. The theorem
-`RiemannGaussian.topPrefixFiniteZeroWindowMatrixWork_lowRank_decomposition`
-proves that advancing every packed cutoff changes the matrix by exactly one
-leading current plus one remainder current, retaining every cross-cutoff entry.
+Lean now gives the genuine finite eta zero-window matrices a continuous
+Gaussian proper-time parameter. The theorem
+`RiemannGaussian.finiteGaussianGramKernelMatrix_quadratic_eq` identifies the
+kernel's quadratic form exactly with the project's existing Gaussian
+arithmetic double sum, and Lean proves that the resulting
+`exp (-u * (lambda_i-lambda_j)^2)` matrix is positive semidefinite for every
+`u > 0`.
 
-For each genuine zero, Lean factors each current as a sum of two literal outer
-products and proves its rank is at most two, including analytic multiplicity.
-The corresponding finite-window ranks are at most twice the number of distinct
-represented zeros. This supplies a checked low-rank matrix-current interface,
-not the missing cancellation theorem: the next step is to combine this
-structure with heat-time transport and the proved eta-log Montgomery--Vaughan
-bound.
+At the literal eta cutoff nodes `log (2*N+1)`, the compression retains the
+multiplicity-weighted zero sum, the on-line/off-line signed decomposition, and
+Hermitian symmetry, with an explicit entrywise proper-time derivative. The
+theorem
+`RiemannGaussian.pairedEtaTopPrefixFiniteHeatCompressedZeroWindowMatrixWork_eq_leading_add_remainder`
+also transports the checked leading/remainder matrix-current law through every
+heat time. No infinite-operator limit, signed cancellation estimate, or RH
+consequence is inferred. The next open bridge is a controlled heat transform
+of the leading current that yields the reciprocal logarithmic-gap kernel used
+by the proved Montgomery--Vaughan estimate.
 
 ## Mathematical Program
 
