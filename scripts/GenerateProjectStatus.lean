@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Literal finite eta prefixes have eventual nonsingular blocks"
-    lineOne := "literal eta prefixes"
+    label := "Actual packed eta features are eventually linearly independent"
+    lineOne := "packed eta features"
     lineTwo := "eventual full rank"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.exists_prime_eventually_det_pairedEtaLowerMomentGeometricPrefixMatrix_ne_zero
+      ``RiemannGaussian.exists_prime_eventually_linearIndependent_pairedEtaGeometricPackedHyperbolicFeature
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "instantiate the full-rank eta block in the certificate ledger.</text>\n" ++
+      "normalize and estimate the full-rank eta certificate carrier.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -750,8 +750,12 @@ run_cmd do
         "aware centered eta-prefix matrix, proves its entrywise convergence to a nonzero diagonal " ++
         "multiple of that Vandermonde block, passes the limit through the determinant, and removes " ++
         "the exact row scaling. Hence one odd prime makes every sufficiently late square block of " ++
-        "literal eta prefixes nonsingular. Instantiating the normalized certificate ledger on this " ++
-        "full-rank carrier has not yet been proved. " ++
+        "literal eta prefixes nonsingular. Lean now identifies the corresponding completed original-" ++
+        "channel matrix as a nonzero diagonal scaling of that literal block and its aligned channel " ++
+        "as the entrywise conjugate. A fixed complex-linear projection recovers the aligned channel " ++
+        "from the actual packed even/odd hyperbolic feature. Thus one odd prime makes all sufficiently " ++
+        "late packed features of every finite zeta-zero window linearly independent. The positive " ++
+        "Gram/rank companion and normalized arithmetic estimate have not yet been proved. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -841,9 +845,13 @@ run_cmd do
         "form a nonsingular Vandermonde matrix. Lean now transfers that block through the sharp " ++
         "complex eta asymptotics: the row-scaled literal prefix matrices converge to a nonzero " ++
         "diagonal multiple of the Vandermonde, so all sufficiently late unscaled square eta-prefix " ++
-        "blocks have nonzero determinant. This closes finite feature separation. The remaining step " ++
-        "is to instantiate and estimate the normalized signed-heat/rank--trace certificate on this " ++
-        "full-rank literal carrier. " ++
+        "blocks have nonzero determinant. The corresponding completed original-channel matrix is a " ++
+        "nonzero diagonal scaling, its aligned channel is the entrywise complex conjugate, and one " ++
+        "fixed complex-linear projection extracts that channel from the actual packed even/odd " ++
+        "hyperbolic features. Therefore every finite zeta-zero window has one odd prime base for " ++
+        "which all sufficiently late packed certificate features are linearly independent. The " ++
+        "remaining step is to build and estimate the normalized positive Gram/rank companion while " ++
+        "retaining the distinct complex-symmetric signed block. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
@@ -852,8 +860,7 @@ run_cmd do
         "does not instantiate the eta window. The independent ordinary heat trace now separates " ++
         "strict improvement exactly: it crosses below 5/36 at some nonnegative scale if and only if " ++
         "the certificate is greater than 13/18, while the sharp model never crosses at finite scale. " ++
-        "What is not yet proved is that eta arithmetic supplies a finite full-rank feature family, " ++
-        "the corresponding normalized model " ++
+        "What is not yet proved is the corresponding normalized eta model " ++
         "and crossing bound, another independent observable nonzero on the sharp root channels, the additional normalized " ++
         "moments, a phase-preserving aggregate estimate for the paired cubic one-gap channel, higher " ++
         "closed-path coefficients, or genuinely mixed " ++

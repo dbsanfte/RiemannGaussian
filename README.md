@@ -38,29 +38,30 @@ window.
 
 Lean currently proves a sharp abstract `13/18` degree-four certificate, but
 that number is not yet a zeta-zero proportion: the normalized moment model has
-not been derived from the literal eta window. The immediate route to close
-that gap is now to instantiate the checked signed-heat and rank--trace ledgers
-with the new eventual full-rank blocks of literal finite eta prefixes. The
-resulting normalized finite model must retain the complete cutoff, phase,
-multiplicity, and reflected-zero data and expose an independent observable
-that excludes the sharp three-atom obstruction. No stronger zero proportion
-will be claimed until that eta-specific arithmetic estimate is proved.
+not been derived from the literal eta window. Lean now proves eventual linear
+independence of the actual packed two-channel eta features on every finite
+zero window. The immediate route is to turn that carrier theorem into an exact
+positive Gram/rank witness alongside the existing complex-symmetric signed
+eta block, then derive the normalized finite model and an independent
+arithmetic observable that excludes the sharp three-atom obstruction. No
+stronger zero proportion will be claimed until that eta-specific estimate is
+proved.
 
 ## Latest Update
 
-Lean now transfers the separated decay-mode Vandermonde all the way to literal
-eta arithmetic. For every finite zeta-zero window of cardinality `d`, Lean
-selects one odd prime base and proves that all sufficiently late `d × d`
-matrices of multiplicity-aware centered eta prefixes, sampled at `d`
-consecutive geometric cutoffs, have nonzero determinant.
+Lean now lifts literal eta-prefix separation into the actual two-channel
+hyperbolic features used by the finite certificate. For every finite zeta-zero
+window, Lean selects one odd prime base and proves that all sufficiently late
+packed geometric cutoff features belonging to its distinct zeros are
+linearly independent.
 
-The proof row-scales the literal matrix, proves entrywise convergence to a
-nonzero diagonal multiple of the checked decay-mode Vandermonde, passes the
-limit through the determinant, and then removes the exact diagonal scaling.
-This closes finite information separation: no zero in the selected window is
-lost at the feature level. It is not yet an `18/18` certificate; the next step
-is to insert this full-rank carrier into the normalized signed-heat/rank--trace
-model and derive a quantitative eta-arithmetic certificate bound.
+The proof identifies the completed original channel as a nonzero diagonal
+row scaling of the checked literal prefix matrix, transports nonsingularity
+through entrywise complex conjugation, and applies a fixed complex-linear
+projection recovering that aligned channel from the even/odd packed feature.
+Thus completion, conjugation, and hyperbolic packing lose no represented zero.
+This is still a carrier theorem, not an `18/18` certificate: the next step is
+an exact positive Gram/rank companion and a normalized eta-arithmetic bound.
 
 ## Mathematical Program
 
@@ -70,8 +71,9 @@ The current program combines four connected lines:
   genuine symmetric eta zero windows. Its carrier retains cutoff, phase,
   multiplicity, reflected-zero colour, and coherent cross-zero interference.
 - The **eta arithmetic branch** realizes completed eta moments as explicit
-  finite interval and endpoint sums, develops exact cutoff work laws, and now
-  uses geometric sampling to seek a full-rank finite feature family.
+  finite interval and endpoint sums, develops exact cutoff work laws, and uses
+  geometric sampling to produce full-rank actual feature families for the
+  normalized certificate problem.
 - The **Gaussian/heat branch** supplies positive and signed heat flows,
   higher and mixed-scale moment Grams, projection leakage, closed paths, and
   the odd proper-time transform connecting heat kernels to the checked
