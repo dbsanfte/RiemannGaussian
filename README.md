@@ -26,19 +26,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now opens the packed eta features inside the finite zero-pair ledger. If
-`P_{ρ,j}` and `Q_{ρ,j}` are its two literal completed finite-prefix
-channels, Lean proves the exact cancellation
+Lean now compresses the two surviving eta channels to one completed finite
+prefix. Write `A_{ρ,j}` for the literal completion-weighted order-`m_ρ-1`
+eta prefix at `ρ`, and
+`H_{σ,ρ} = ∑_j conj(A_{σ,j}) A_{ρ,j}`. Lean proves that the partner
+channel is `A_{ρ#,j}`, the aligned conjugate channel is `conj(A_{ρ,j})`, and
+therefore
 
-`⟨v_σ,v_ρ⟩ = 2 ∑_j (conj(P_{σ,j}) P_{ρ,j} + conj(Q_{σ,j}) Q_{ρ,j})`.
+`⟨v_σ,v_ρ⟩ = 2 (H_{σ#,ρ#} + conj(H_{σ,ρ}))`.
 
-All mixed `P`–`Q` terms cancel because of the hyperbolic `I`-twist. Thus the
-positive diagonal is `4 ∑_ρ m_ρ² (∑_j(|P_{ρ,j}|²+|Q_{ρ,j}|²))²`,
-while the only distinct-zero term is the real part of the square of the same
-channel sum. The multiplicity-aware rank--trace ledger has been rewritten in
-these literal completed-prefix variables. No bound for their signed
-distinct-zero correlation, and hence no new zero-location theorem, is
-asserted yet.
+Here `#` is the genuine critical-line reflection on zeta zeros. The diagonal,
+signed distinct-zero mass, coherent Frobenius mass, and multiplicity-aware
+rank--trace ledger are all now expressed through this single finite eta Gram
+kernel and its reflected copy. The missing theorem is an arithmetic bound for
+the resulting reflection-coupled signed correlation; no such bound or new
+zero-location result is asserted yet.
 
 ## Mathematical Program
 

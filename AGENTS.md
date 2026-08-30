@@ -855,7 +855,16 @@ conj(Q_sigma,j)Q_rho,j)`; every mixed `P`--`Q` term cancels algebraically.
 Consequently both `D` and `O`, and the full multiplicity ledger, are expressed
 in same-channel completed eta-prefix variables. This is the first
 eta-arithmetic refinement of the zero-pair ledger, but it remains an identity:
-no signed distinct-zero estimate is inferred.
+no signed distinct-zero estimate is inferred. The two surviving channels are
+now further compressed to one original completed finite-prefix channel
+`A_rho,j`. Its ordinary Gram kernel
+`H_sigma,rho=sum_j conj(A_sigma,j)A_rho,j` satisfies Hermitian swap symmetry.
+Lean proves the partner channel is `A_(rho#),j`, the aligned channel is
+`conj(A_rho,j)`, and hence the packed correlation is exactly
+`2*(H_(sigma#),(rho#)+conj(H_sigma,rho))`. The diagonal, off-diagonal,
+coherent mass, and multiplicity ledger are all rewritten through this one
+kernel and its reflected copy. Controlling the signed squares of that
+reflection coupling remains open.
 
 ## Soundness invariant
 
