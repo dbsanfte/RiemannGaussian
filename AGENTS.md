@@ -807,10 +807,15 @@ layer as well. A directly checked positive-spectral-subspace argument proves
 `n₊(P-N) ≤ rank(P)` for positive semidefinite `P,N`. Hence the actual
 off-line hyperbolic block has positive index at most `#upper`, and the complete
 eta window satisfies `n₊(full) ≤ #critical + #upper`. The next sharply
-separated obligation is to derive trace and Frobenius identities for these
-literal eta blocks and obtain estimates from the eta arithmetic. An abstract
-rank--trace inequality remains infrastructure, not the missing arithmetic
-estimate.
+separated layer now has exact scalar identities as well. The on-line real
+trace is the multiplicity-weighted squared norm of the packed eta features;
+the off-line trace is the explicit real-coordinate mass minus
+imaginary-coordinate mass. The complete squared Frobenius mass is an
+entrywise sum of squared norms of coherent multiplicity-weighted zero sums.
+All are finite and literal. The remaining obligation is to obtain estimates
+for this trace/Frobenius ledger from the eta arithmetic without replacing
+the coherent sums by phase-free termwise bounds. An abstract rank--trace
+inequality remains infrastructure, not the missing arithmetic estimate.
 
 ## Soundness invariant
 

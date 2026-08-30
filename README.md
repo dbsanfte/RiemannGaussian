@@ -26,18 +26,18 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the eta-window positive-index bound. A checked Hermitian
-spectral-subspace argument establishes `n₊(P - N) ≤ rank(P)` for positive
-semidefinite matrices. Applied to the genuine analytic-multiplicity-weighted
-decomposition `onLine + (offReal - offImag)`, it gives
-`n₊(full) ≤ #critical + #upper`; the off-line difference alone has
-positive index at most `#upper`.
+Lean now evaluates the trace and Frobenius quantities of the genuine finite
+eta matrix. The on-line trace is exactly a multiplicity-weighted sum of packed
+feature norms, while the off-line trace is exactly its real-coordinate mass
+minus its imaginary-coordinate mass. The complete squared Frobenius mass is
+an explicit finite sum of squared norms of coherent multiplicity-weighted
+zero sums; its nonnegativity is checked entrywise.
 
-This closes the finite zero-side rank/inertia layer proposed by the zeta23
-architecture for the actual eta matrix, not an abstract surrogate. The next
-frontier is to derive trace and Frobenius identities and then arithmetic
-estimates strong enough to control the open leading current. The current
-inertia theorem alone supplies no such estimate.
+Together with the existing rank and positive-index bounds, this supplies the
+literal zero-side data needed by a rank--trace argument. It does not provide
+the decisive estimate: the next frontier is to derive arithmetic bounds on
+this trace/Frobenius ledger strong enough to control the leading current,
+without destroying the cross-zero and within-feature phase cancellation.
 
 ## Mathematical Program
 
