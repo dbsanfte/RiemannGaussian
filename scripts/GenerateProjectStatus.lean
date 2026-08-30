@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The centered completed eta residual has the norm of one common shifted-measure coupled core"
-    lineOne := "centered eta residual"
-    lineTwo := "shifted coupled core"
+    label := "The completed centered eta residual norm is one critical-half-centered interference integral"
+    lineOne := "residual = one"
+    lineTwo := "interference integral"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidual_eq_shiftedCoupledCore
+      ``RiemannGaussian.norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidual_eq_integral_halfIntegrand
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "control the shifted complementary eta core by independent arithmetic.</text>\n" ++
+      "rule out off-line cancellation in the shifted eta interference integral.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -450,18 +450,23 @@ run_cmd do
         "and 1-conj(rho) tails become complementary real tilts of this same measure at " ++
         "one frequency. Conjugation is exactly frequency reversal plus the relative " ++
         "phase exp(2*I*rho.im*a_N). The completed residual is a common unit phase times " ++
-        "one explicit shifted coupled core and therefore has exactly its norm. The " ++
-        "needed eta-specific arithmetic constraint on that core is not proved, and " ++
-        "these results do not imply RH.")),
+        "one explicit shifted coupled core and therefore has exactly its norm. Lean " ++
+        "combines the two complementary moments into one absolutely integrable " ++
+        "function on the common shifted measure. After extracting exp(-u/2), horizontal " ++
+        "displacement delta=rho.re-1/2 occurs only through the reciprocal tilts " ++
+        "exp(delta*u) and exp(-delta*u) in one oscillatory interference factor. The " ++
+        "residual norm is exactly the norm of that single integral. The needed " ++
+        "eta-specific coercivity or cancellation theorem is not proved, and these " ++
+        "results do not imply RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove an eta-specific arithmetic constraint on the exact common-measure " ++
-        "shifted coupled core, equivalently on its residual cross-phase, strong enough " ++
-        "to force complementary leading coefficient equality and unit eta reflection " ++
-        "multiplier norm at every nontrivial zero"))
+        "Prove an eta-specific coercivity or cancellation theorem for the exact " ++
+        "critical-half-centered shifted interference integral, strong enough to rule " ++
+        "out the required residual behavior when rho.re differs from one half and hence " ++
+        "force unit eta reflection multiplier norm at every nontrivial zero"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

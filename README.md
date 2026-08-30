@@ -26,22 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now translates each discarded centered eta tail by its arithmetic cutoff
-`a_N=log(2N+1)`. The translated measure is proved to live almost everywhere on
-`u>0`, and its complex Laplace and separated Fourier--Laplace integrands are
-proved absolutely integrable for every positive horizontal tilt.
+Lean now combines the two complementary centered eta tails into one
+absolutely integrable expression over their common positive shifted measure.
+For `delta=rho.re-1/2`, the completed residual is exactly a unit cutoff phase
+times
 
-For a zero `rho` and its same-ordinate partner `1-conj(rho)`, Lean factors both
-tails over this one positive shifted measure. Their real tilts are exactly
-`rho.re` and `1-rho.re`, while their cutoff oscillation is common. Conjugation
-is reduced exactly to frequency reversal and the single relative phase
-`exp(2*I*rho.im*a_N)`.
+`integral u^m*exp(-u/2)*(A_N*exp(delta*u)*exp(-I*gamma*u)
+  + B_N*exp(-delta*u)*exp(I*gamma*u)) dmu_N(u)`.
 
-Consequently the completed finite residual is now proved equal to a unit phase
-times one explicit symmetry-aware coupled core, and its norm equals the norm
-of that core. This is a phase-preserving reduction, not RH: the open frontier
-is an independent eta-specific arithmetic constraint on this common-measure
-core.
+Its norm is therefore exactly the norm of this single interference integral.
+All translations, conjugations, frequency reversals, integral combinations,
+and integrability conditions are checked in Lean. This is not RH: the open
+frontier is an eta-specific coercivity or cancellation theorem showing that
+this integral cannot have the required off-line behavior when `delta != 0`.
 
 ## Mathematical Program
 

@@ -620,10 +620,16 @@ exact complementary real tilts `rho.re` and `1-rho.re` of this same measure at
 one Fourier frequency. Conjugation is reduced to frequency reversal and the
 single relative cutoff phase `exp(2*I*rho.im*a_N)`. The completed residual is
 exactly a common unit phase times one named coupled core, so their norms are
-equal. The present sign-bearing target is an independent eta-specific
-arithmetic constraint on that core. A valid next step must retain the
-distributional zero contributions in any Green or integration-by-parts
-argument; erasing them would merely erase the detector.
+equal. Lean further combines the two moments into one absolutely integrable
+function on that common measure. After extracting the critical half-tilt its
+pointwise form is
+`u^m*exp(-u/2)*(A_N*exp(delta*u)*exp(-I*gamma*u)
++B_N*exp(-delta*u)*exp(I*gamma*u))`, where
+`delta=rho.re-1/2`. The residual norm is exactly the norm of this single
+interference integral. The present sign-bearing target is an independent
+eta-specific coercivity or cancellation theorem for that integral. A valid
+next step must retain the distributional zero contributions in any Green or
+integration-by-parts argument; erasing them would merely erase the detector.
 These estimates are not RH and do not exclude a finite or sparse off-line
 divisor; a restatement, hidden limit interchange, or conditional implication
 is not a substitute.

@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 367 modules · 9540 declarations · 8203 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 368 modules · 9554 declarations · 8212 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -77,9 +77,9 @@
   </g>
   <g class="proved reduction">
     <rect x="500" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidual_eq_shiftedCoupledCore</title>
-    <text x="572" y="173">centered eta residual</text>
-    <text x="572" y="191">shifted coupled core  ✓</text>
+    <title>RiemannGaussian.norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidual_eq_integral_halfIntegrand</title>
+    <text x="572" y="173">residual = one</text>
+    <text x="572" y="191">interference integral  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
@@ -90,5 +90,5 @@
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: control the shifted complementary eta core by independent arithmetic.</text>
+  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: rule out off-line cancellation in the shifted eta interference integral.</text>
 </svg>
