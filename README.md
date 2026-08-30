@@ -26,20 +26,18 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now applies the multiplicity-aware rank--trace theorem to the genuine
-finite eta matrix. Write `x_ρ = m_ρ ‖v_ρ‖²` for each critical zero's analytic
-multiplicity times its packed-feature mass and
-`k₂(x) = 4 - max(2 - x, 0)²`. If `M_on`, `M_off`, and `F` are the exact
-on-line trace, signed off-line trace, and coherent Frobenius masses, then
-every nonnegative window satisfies
+Lean now rewrites the coherent Frobenius mass `F` of every genuine finite eta
+zero window as the exact signed pair correlation
 
-`4 (M_on + M_off) - F ≤ ∑_{ρ critical} k₂(x_ρ) + 4 #upper`.
+`F = ∑_{ρ,σ} m_ρ m_σ Re (⟨v_σ,v_ρ⟩²)`.
 
-Thus multiplicity and feature size survive the interaction between zeros;
-they are not collapsed into a coarse rank count. This closes the finite
-zero-side linear-algebra layer, not the decisive arithmetic estimate. The
-next frontier is to bound this literal ledger from the eta arithmetic without
-destroying cross-zero or within-feature phase cancellation.
+Here `m_ρ` is the analytic zero multiplicity and `v_ρ` is the literal
+packed eta feature. The summand contains the real part of a complex square,
+not an absolute square, so the identity preserves the off-diagonal phase
+cancellation that termwise norm bounds would destroy. Together with the
+checked multiplicity-aware rank--trace ledger, this identifies the precise
+finite arithmetic object that must be controlled. No such cancellation
+estimate, and hence no new zero-location theorem, is asserted yet.
 
 ## Mathematical Program
 

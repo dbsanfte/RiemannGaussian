@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The finite eta block satisfies a multiplicity-aware rank--trace ledger"
-    lineOne := "eta multiplicity ledger"
-    lineTwo := "rank--trace retained"
+    label := "The finite eta Frobenius mass is an exact signed zero-pair correlation"
+    lineOne := "eta zero-pair mass"
+    lineTwo := "phase retained"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_two_ledger
+      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindowCoherentFrobeniusMass_eq_pairCorrelationMass
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove eta-arithmetic bounds closing the rank--trace ledger.</text>\n" ++
+      "prove arithmetic cancellation for the signed eta zero-pair sum.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -646,7 +646,9 @@ run_cmd do
         "is an explicit coherent multiplicity-weighted zero sum. The checked rank--trace " ++
         "theorem is now instantiated on these literal blocks. Its multiplicity-aware " ++
         "refinement retains one nonlinear k_c(m_rho*||v_rho||^2) term for every actual " ++
-        "critical zero. Eta-arithmetic estimates for this ledger remain open.")),
+        "critical zero. The coherent Frobenius mass is now exactly the signed double " ++
+        "zero-pair correlation sum m_rho*m_sigma*Re(<v_sigma,v_rho>^2), retaining " ++
+        "complex phase. Eta-arithmetic cancellation estimates for this sum remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -659,9 +661,10 @@ run_cmd do
         "summability of R_N, the exact cosine/crossover factorization of the higher-" ++
         "multiplicity L_N kernel, the finite on-line/off-line block decomposition, " ++
         "the required divisor-count rank and positive-index bounds, exact scalar " ++
-        "trace/Frobenius identities, and their checked coarse and multiplicity-aware " ++
-        "rank--trace closures. " ++
-        "The required eta-specific aggregate estimate and the multiplicity-one head " ++
+        "trace/Frobenius identities, their checked coarse and multiplicity-aware " ++
+        "rank--trace closures, and the exact phase-preserving zero-pair expansion of " ++
+        "the coherent Frobenius mass. " ++
+        "The required signed eta pair-correlation estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++
         "to RH"))
     ]),

@@ -832,8 +832,15 @@ complex-symmetric block exactly the required positive Gram matrix. For
 At `c=2` this retains one nonlinear term for every actual critical zero,
 including its analytic multiplicity and packed eta feature norm. No bound on
 that sum or on `F` is inferred. This exhausts the imported finite-dimensional
-rank--trace layer; further progress must estimate the named eta quantities or
-connect them to an independently controlled arithmetic form.
+rank--trace layer. Lean now expands the literal coherent Frobenius mass exactly
+as the double genuine-zero sum
+`sum_(rho,sigma) m_rho*m_sigma*Re(<v_sigma,v_rho>^2)`. This is a signed
+phase-preserving pair correlation, not a sum of absolute squares. It exposes
+the diagonal and cross-zero interference on which an eta-arithmetic estimate
+must act, but supplies no such estimate. Further progress must prove
+cancellation or coercivity for this named finite pair correlation without
+discarding its complex phase, or connect it to an independently controlled
+arithmetic form.
 
 ## Soundness invariant
 
