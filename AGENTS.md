@@ -1112,10 +1112,18 @@ entrywise. At equal scales every `Re tr((PK)^r)` is the real part of a complete
 ordered closed zero-index path sum; order zero is the distinct-zero count and
 order one is `m₁`. The two-step cross-scale word is a checked symmetric
 double-edge sum. The next obligation is to prove the positive normalization
-needed to place these moments inside the finite certificate model and then an
-eta-arithmetic estimate that excludes the sharp finite obstruction. That
-quantitative estimate remains necessary for any stronger zeta-zero proportion
-and ultimately for RH.
+needed to place these moments inside the finite certificate model. Lean now
+constructs the exact packed-coordinate support for that step. The literal
+Hermitian carrier is `S=CPCᴴ`, while `Q=CK⁻¹Cᴴ` is positive semidefinite,
+Hermitian, and idempotent whenever `K` is positive definite. Lean proves
+`QS=SQ=S`, `tr(Q)` equals the represented distinct-zero count, and
+`Re tr(QS^r)=Re tr((PK)^r)` for every order including zero. Thus the packed
+realization no longer pads the mixed moment model with a spurious zero
+eigenspace, and it still retains the amplitudes in `K`. The next obligation is
+to derive the normalized positive Hankel or explicit finite-atom model from
+this support and then an eta-arithmetic estimate that excludes the sharp
+finite obstruction. That quantitative estimate remains necessary for any
+stronger zeta-zero proportion and ultimately for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is

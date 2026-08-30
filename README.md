@@ -50,31 +50,31 @@ the signed pullback into a Hermitian matrix `A` satisfying both `I − A ⪰ 0`
 and `I + A ⪰ 0`. Lean further determines this fully whitened matrix exactly:
 it is the permutation `P` sending each enumerated zero to its critical-line
 reflection. Thus complete whitening cancels the eta amplitudes. The immediate
-route is instead to retain the coupled normal form `B = K P K` and derive a
-literal eta-arithmetic mixed trace or spectral observable before that
-cancellation. Lean now checks the first such observable, the normalized mixed
-trace `Re tr(PK) / Re tr(K)`, and the full ordered same-scale moment hierarchy
-`Re tr((PK)^r)` together with two-step cross-scale words. The next route is to
-prove the positivity and normalization needed by the finite certificate and
-then obtain eta-arithmetic bounds on this richer hierarchy. No stronger zero
-proportion will be claimed until those steps are checked.
+route instead retains the coupled normal form `B = K P K`, the normalized
+mixed trace `Re tr(PK) / Re tr(K)`, the full ordered same-scale hierarchy
+`Re tr((PK)^r)`, and two-step cross-scale words. Lean now realizes this entire
+hierarchy on the exact positive support of a Hermitian packed-coordinate
+carrier, without adding the artificial zero eigenspace or cancelling `K`.
+The next route is to turn that support realization into a normalized positive
+Hankel/finite-atom model and derive eta-arithmetic bounds strong enough to
+exclude the sharp `13/18` adversary. No stronger zero proportion will be
+claimed until those steps are checked.
 
 ## Latest Update
 
-Lean now defines the reflection-coupled cross-scale carrier
-`Mₙₘ = P(Cₙᴴ Cₘ)` and proves the information-preserving identity
-`Mₙₘ = Cₙᵀ Cₘ`. Every entry is an explicit correlation of two actual packed
-eta features with separate scales, zero labels, phases, and square-root
-multiplicity weights. Scale reversal gives `Mₙₘᵀ = Mₘₙ`.
+Lean now constructs the packed-coordinate Hermitian carrier `S = C P Cᴴ` and
+the metric support `Q = C K⁻¹ Cᴴ`, where `K = Cᴴ C`. Whenever the actual eta
+features are separated, Lean proves `Q` is positive semidefinite, Hermitian,
+and idempotent, with `tr Q` equal to the number of represented distinct zeros.
+It also proves `QS = SQ = S`, so `Q` removes exactly the artificial zero
+eigenspace of the packed representation.
 
-At equal scales `Mₙₙ = PK`. For every order `r`, Lean expands
-`μᵣ = Re tr((PK)^r)` as the real part of the complete ordered closed path sum
-on zero-index space. It proves `μ₀` is the represented distinct-zero count and
-`μ₁` is the checked mixed eta trace. The ordered two-step cross-scale moment is
-also symmetric in its scales and is exactly a literal double-edge sum. This is
-not a stronger zero proportion. The next hard step is to prove an appropriate
-positive normalized moment model and eta-arithmetic bounds for these retained
-paths, strong enough to improve the abstract `13/18` certificate.
+For every order, including zero, Lean proves the exact identity
+`Re tr(Q S^r) = Re tr((P K)^r)`. Thus the ordered, phase-preserving eta moments
+now have a genuine Hermitian realization on their exact positive support while
+retaining the amplitudes in `K`. This is not yet a stronger zero proportion.
+The next hard step is the normalized positive Hankel/finite-atom model and an
+eta-arithmetic estimate that rules out the sharp `13/18` moment adversary.
 
 ## Mathematical Program
 
