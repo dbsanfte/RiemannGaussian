@@ -26,21 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now splits the explicit finite eta energy work exactly as `J_N=I_N+F_N`,
-where `I_N` is the signed energy of the two component increments and `F_N` is
-their cross flux against the successor finite terms. Using the literal
-head-plus-lower-prefix increment formula and its extra cutoff-shift power,
-Lean proves unconditionally at every nontrivial zero that both series
-`sum_N (2*N+1)*normSq(increment_N)` converge. Consequently
-`sum_N (2*N+1)*|I_N|` converges as well.
+Lean now realizes the remaining successor flux `F_N` as one literal finite-eta
+integral. Its real kernel pairs each explicit head-plus-lower-prefix arithmetic
+increment with the corresponding completed successor feature on the finite
+positive logarithmic eta measure, and Lean proves that its integral is exactly
+`F_N`. The kernel is integrable and has an explicit phase-free envelope.
 
-The entire critical first-moment obstruction is therefore isolated in the
-successor flux: `sum_N (2*N+1)*|F_N|` converges exactly when the corresponding
-work series converges, hence exactly when the zero has real part `1/2`.
-Universal flux first-moment summability is proved equivalent to Mathlib's RH.
-This remains a reduction, not an RH proof; the open arithmetic theorem is now
-a cancellation or coercivity estimate for the explicit successor flux, with
-the local increment-energy contribution already discharged.
+Subtracting `|F_N|` from the envelope integral defines a checked nonnegative
+cancellation reserve, with the exact ledger
+`|F_N| + reserve_N = integral envelope_N`. Partner reflection swaps the two
+components and makes the signed energy, increment energy, work, and flux odd;
+the absolute flux is invariant. Thus the open RH-equivalent theorem is now the
+weighted absolute summability of these explicit finite kernel integrals. The
+component-increment energy was already discharged unconditionally; no theorem
+yet supplies the required eta-specific phase cancellation for the flux.
 
 ## Mathematical Program
 

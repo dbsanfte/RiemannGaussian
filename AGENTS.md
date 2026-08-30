@@ -732,7 +732,17 @@ increment energy has a finite first absolute moment unconditionally. Since
 the weighted flux series is summable exactly when the weighted work series is.
 Thus the remaining RH-equivalent arithmetic target is specifically
 `sum_N (2N+1) * |F_N| < infinity`: an eta-specific cancellation or coercivity
-estimate for the successor coupling. No theorem proves that open estimate.
+estimate for the successor coupling. Lean now realizes `F_N` exactly as the
+integral of one explicit real Hermitian kernel over the finite positive eta
+logarithmic measure. The kernel pairs the head-plus-lower-prefix arithmetic
+increment with its completed successor feature. Its phase-free envelope is
+integrable, dominates it pointwise, and gives a nonnegative cancellation
+reserve satisfying `|F_N| + reserve_N = integral envelope_N`. Partner
+reflection swaps the components and makes the signed energy, increment
+energy, work, and flux odd; the absolute flux is invariant. The open estimate
+is therefore the first moment of these literal finite kernel integrals. Do not
+replace it by summability of the phase-free envelope: that loses precisely the
+cross-component and within-integral phase cancellation that the proof needs.
 
 ## Soundness invariant
 
