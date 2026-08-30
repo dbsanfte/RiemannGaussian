@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "Every right-half zero forces the endpoint-scaled amplitude imbalance to diverge"
-    lineOne := "off-line amplitude"
-    lineTwo := "diverges sharply"
-    role := "reduction"
+    label := "Top-prefix amplitude mismatch is summable exactly on the critical line"
+    lineOne := "amplitude mismatch l2"
+    lineTwo := "iff critical line"
+    role := "equivalence"
     theoremName :=
-      ``RiemannGaussian.tendsto_oddEndpoint_mul_topPrefixAmplitudeImbalance_atTop_of_half_lt_re
+      ``RiemannGaussian.summable_topPrefixAmplitudeImbalance_iff_re_eq_half
   }
 ]
 
@@ -554,17 +554,22 @@ run_cmd do
         "constant, its squared normalization has the corresponding positive limit, " ++
         "and the exact endpoint-scaled amplitude imbalance tends to positive infinity. " ++
         "This proves the sharp obstruction but does not supply the independent " ++
-        "arithmetic boundedness theorem needed to exclude it.")),
+        "arithmetic boundedness theorem needed to exclude it. Lean now proves the " ++
+        "positive-odd-endpoint p-series threshold and uses reflection to classify the " ++
+        "whole mismatch sequence: its sum over all cutoffs is finite exactly when the " ++
+        "zero is on the critical line. On the line every mismatch is literally zero; " ++
+        "off the line the sharp slower exponent makes the nonnegative series diverge. " ++
+        "Universal summability is explicitly proved equivalent to RH. This is a " ++
+        "Hilbert-space closure interface, not a proof of its arithmetic direction.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove the universal eventual complementary centered-tail amplitude bound " ++
-        "(2N+1)*(w_(rho#)*|T_(rho#,N+1)|-w_rho*|T_(rho,N+1)|)^2=O(1) " ++
-        "for order m-1 from eta arithmetic, without assuming zero locations; the " ++
-        "cross-phase defect is bounded and every right-half zero is proved to make " ++
-        "this exact quantity diverge"))
+        "Prove from eta-specific finite Gram, Bessel, or orthogonality structure that " ++
+        "the squared complementary top-prefix magnitude mismatch is summable over " ++
+        "cutoffs at every nontrivial zero, without assuming zero locations; Lean " ++
+        "proves this universal summability statement is exactly RH"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

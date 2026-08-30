@@ -660,6 +660,15 @@ that the exact endpoint-scaled squared difference tends to positive infinity.
 Thus the current frontier is an independent eta-arithmetic theorem forcing
 that endpoint-scaled difference to remain bounded. Its off-line divergence is
 proved; the required arithmetic boundedness is not.
+Lean now also packages a Hilbert-space alternative. The squared magnitude
+mismatch is invariant under the reflected partner, is identically zero at
+every critical-line zero, and is nonsummable over cutoffs at every off-line
+zero by the sharp odd-endpoint p-series threshold. Its local summability is
+therefore equivalent to `Re(rho)=1/2`, and universal summability is explicitly
+proved equivalent to RH. This is an equivalence, not progress on its open
+direction. The concrete new research target is an eta-specific Gram, Bessel,
+or orthogonality argument establishing that literal finite-arithmetic
+summability without using zero locations.
 
 ## Soundness invariant
 

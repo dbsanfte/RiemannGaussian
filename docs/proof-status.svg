@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 383 modules · 9876 declarations · 8484 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 384 modules · 9891 declarations · 8498 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -75,11 +75,11 @@
     <text x="412" y="173">reciprocal extension</text>
     <text x="412" y="191">outer norm &lt; 1  ✓</text>
   </g>
-  <g class="proved reduction">
+  <g class="proved equivalence">
     <rect x="500" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.tendsto_oddEndpoint_mul_topPrefixAmplitudeImbalance_atTop_of_half_lt_re</title>
-    <text x="572" y="173">off-line amplitude</text>
-    <text x="572" y="191">diverges sharply  ✓</text>
+    <title>RiemannGaussian.summable_topPrefixAmplitudeImbalance_iff_re_eq_half</title>
+    <text x="572" y="173">amplitude mismatch l2</text>
+    <text x="572" y="191">iff critical line  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
