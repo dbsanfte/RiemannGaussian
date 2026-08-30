@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "The first moment of the isolated leading eta flux detects the critical line"
-    lineOne := "leading eta flux"
+    label := "The first moment of the literal leading-current eta kernels detects the critical line"
+    lineOne := "leading eta kernels"
     lineTwo := "summable iff line"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.summable_oddEndpoint_mul_abs_topPrefixFiniteEnergyLeadingFlux_iff_re_eq_half
+      ``RiemannGaussian.summable_oddEndpoint_mul_abs_topPrefixFiniteEnergyLeadingKernelIntegral_iff_re_eq_half
   }
 ]
 
@@ -617,18 +617,25 @@ run_cmd do
         "prove unconditionally that the remainder flux R_N has a finite critical first " ++
         "absolute moment. Since F_N=L_N+R_N, leading-flux summability is equivalent " ++
         "to full-flux summability, locally to the critical-line equation, and " ++
-        "universally to RH. The eta-specific estimate for L_N remains open.")),
+        "universally to RH. Lean now expands L_N without assuming simplicity. At " ++
+        "multiplicity one it is a product integral coupling the translated new head " ++
+        "to the successor prefix. At higher multiplicity it is a product integral " ++
+        "coupling the adjacent centered orders m-2 and m-1 on the successor finite " ++
+        "eta measure, with the one remaining shift factor. Both kernels are genuinely " ++
+        "integrable and a multiplicity-selected integral equals L_N exactly. The " ++
+        "eta-specific estimate for these explicit kernels remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
         "Prove universally, without assuming zero locations, that the critical first " ++
-        "absolute moment of the isolated degree-one leading eta current L_N is finite. " ++
-        "Lean proves F_N=L_N+R_N and proves the entire remainder R_N summable from its " ++
-        "degree-two shift gain. Leading-current summability is equivalent to the full " ++
-        "flux criterion and hence to RH. No eta-specific phase cancellation or " ++
-        "coercivity estimate establishing it is currently known"))
+        "absolute moment of the multiplicity-selected literal leading-current kernel " ++
+        "integrals is finite. Lean proves F_N=L_N+R_N, proves R_N summable from its " ++
+        "degree-two shift gain, and identifies L_N with either the head--successor " ++
+        "kernel or the adjacent-moment kernel. This summability criterion is equivalent " ++
+        "to RH. No eta-specific phase cancellation or coercivity estimate establishing " ++
+        "it is currently known"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

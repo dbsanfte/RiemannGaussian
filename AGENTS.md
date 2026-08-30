@@ -754,6 +754,18 @@ first moment is summable exactly when the full flux first moment is, locally
 exactly on the critical line and universally exactly under RH. This is still
 a reduction. The current open theorem is the eta-specific cancellation or
 coercivity estimate for the isolated degree-one leading current `L_N`.
+Lean now realizes that current by an exhaustive literal kernel construction,
+without a simplicity assumption. If the analytic multiplicity is one, `L_N`
+is the integral of a real kernel on the translated new-head measure times the
+successor finite eta measure. If the multiplicity is at least two, `L_N` is
+the integral of the degree-one-shifted Hermitian kernel coupling the order
+`m-2` and order `m-1` centered features on two copies of the successor finite
+eta measure. Integrability and both exact integral identities are checked.
+The multiplicity-selected integral equals `L_N` for every zero and cutoff;
+its first-moment summability is locally equivalent to the critical line and
+universally equivalent to RH. The live arithmetic task is therefore to
+control these explicit boundary-head and adjacent-moment kernels, not a hidden
+abstract increment.
 
 ## Soundness invariant
 
