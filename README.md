@@ -26,21 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-The literal eta zero-window matrix now carries the complete higher and
-cross-scale spectral heat hierarchy `A^k*exp(-u*A²)`. Lean proves that products
-add both moment order and heat scale, every even-order flow is positive
-semidefinite, and differentiating an order-`k` heat trace gives the negative
-order-`k+2` trace.
+The zero-scale boundary of the new eta spectral heat hierarchy is now tied
+back to literal arithmetic. For every finite Hermitian matrix, Lean proves
+`H₀(0)=dimension`, `H₁(0)=Re tr(A)`, and `H₂(0)=‖A‖_F²`. It also proves that
+the initial derivative of the ordinary heat trace is `-‖A‖_F²`.
 
-Any finite family of orders and scales is retained simultaneously as a
-positive-semidefinite Gram matrix. Each entry is exactly both the combined
-moment `tr(A^(k_i+k_j) exp(-(u_i+u_j)A²))` and the trace product of the two
-separate matrix-valued flows. This supplies rigorously checked extra
-measurements beyond the original trace/Frobenius snapshot without charging
-away their cross-scale correlations. Their eta-arithmetic evaluation is not
-yet proved, so no improved zero proportion is claimed. The next task is to
-derive those values or bounds and compute the resulting formal certificate
-ceiling.
+For the multiplicity-weighted eta zero-window matrix, `H₁(0)` is exactly the
+on-line plus signed off-line trace mass. More importantly, `H₂(0)` and the
+negative initial heat slope are exactly the fully evaluated odd--even
+endpoint correlation, with its positive diagonal and signed distinct-zero
+off-diagonal terms still separate. Thus the first nontrivial heat boundary
+data now meet the existing eta arithmetic ledger without information loss.
+Positive heat times and genuinely mixed scales are not yet arithmetically
+evaluated, so no improved zero proportion is claimed.
 
 ## Mathematical Program
 

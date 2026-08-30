@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_zero_one_eq_integral_mixedChannelZeroSumAt
   },
   {
-    label := "Eta higher and cross-scale heat moments form an exact positive Gram"
-    lineOne := "eta heat moments"
-    lineTwo := "multi-scale Gram"
+    label := "The eta initial heat slope is an exact endpoint correlation"
+    lineOne := "initial heat slope"
+    lineTwo := "endpoint correlation"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteZeroWindowSpectralHeatMomentGram_apply_eq_rtrace_mul
+      ``RiemannGaussian.hasDerivAt_pairedEtaTopPrefixFiniteZeroWindowSpectralHeatTrace_at_zero_arithmetic
   },
   {
     label := "The eta pair ledger is a finite odd--even endpoint correlation"
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "evaluate the eta multi-scale moments arithmetically.</text>\n" ++
+      "evaluate positive eta heat scales arithmetically.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -720,8 +720,12 @@ run_cmd do
         "matrix hierarchy A^k*exp(-u*A^2). Products add order and scale, every even-order flow is " ++
         "positive semidefinite, and differentiation raises trace order by two with a negative sign. " ++
         "Every finite family of orders and scales forms a checked positive-semidefinite Gram matrix; " ++
-        "each entry is exactly the combined higher moment and the cross-scale trace product. These " ++
-        "additional observables have not yet been evaluated from eta endpoint arithmetic. " ++
+        "each entry is exactly the combined higher moment and the cross-scale trace product. At " ++
+        "zero heat scale the first three traces are now identified with dimension, signed trace, " ++
+        "and squared Frobenius mass. On the literal eta window the order-two value, and hence the " ++
+        "negative initial ordinary-heat slope, is exactly the evaluated endpoint diagonal plus " ++
+        "signed off-diagonal arithmetic correlation. Positive heat scales and genuinely mixed " ++
+        "scales have not yet been evaluated from eta endpoint arithmetic. " ++
         "A stronger eta-arithmetic cross-zero cancellation estimate " ++
         "remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -773,8 +777,10 @@ run_cmd do
         "cutoff/colour coordinates now also have exact omitted-coordinate cross-scale path sums, " ++
         "transition-Gram factorizations, and same-scale mass-balance ledgers. Higher and mixed-scale " ++
         "eta spectral moments now form an exact positive Gram with a checked derivative hierarchy. " ++
-        "What is not yet proved is an arithmetic estimate for those eta spectral-heat moments and " ++
-        "transition paths, or a cross-zero estimate " ++
+        "Their zero-scale order-one and order-two boundary values are now exactly the checked eta " ++
+        "trace and endpoint-expanded coherent Frobenius ledgers; the order-two ledger is also the " ++
+        "negative initial heat slope. What is not yet proved is an arithmetic estimate at positive " ++
+        "or genuinely mixed heat scales, an estimate for the transition paths, or a cross-zero estimate " ++
         "strong enough to improve that triangle bound. The required signed " ++
         "finite-endpoint correlation estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++
