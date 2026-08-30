@@ -492,15 +492,21 @@ run_cmd do
         "of the norms of every finite work tail therefore implies the critical-scale " ++
         "residual bound and RH. This absolute coercivity premise is not proved and " ++
         "may be stronger than necessary; it exposes one explicit finite-arithmetic " ++
-        "route to the required rate.")),
+        "route to the required rate. Lean now restores the full complex endpoint " ++
+        "phase in the off-line residual asymptotic. For Re(rho)>1/2 it proves " ++
+        "(2N+1)^(rho#)R_N tends to an explicit nonzero completion-weighted Gamma " ++
+        "constant, with rho#=1-conj(rho). The faster original tail vanishes at this " ++
+        "complex normalization. This phase-bearing limit is not yet a signed work " ++
+        "asymptotic: differentiating consecutive cutoffs requires a quantified " ++
+        "remainder beyond bare convergence.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove the uniform square-root absolute tail-work bound, or a weaker signed " ++
-        "cancellation estimate implying the same critical residual rate, for the " ++
-        "explicit finite head-plus-prefix work without assuming zero locations"))
+        "Quantify the normalized all-order centered-tail remainder, derive the sharp " ++
+        "signed asymptotic of the explicit finite head-plus-prefix work, and prove a " ++
+        "square-root cancellation bound without assuming zero locations"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

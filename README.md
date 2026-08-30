@@ -26,23 +26,23 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now turns the exact finite residual transport law into a tail-work
-criterion. Writing its explicit head interval plus finite lower-prefix
-hierarchy as `W_N`, Lean proves the finite telescope
+Lean now restores the full complex phase in the sharp off-line residual
+asymptotic. For a hypothetical right-half zero and its reflected partner
+`rho# = 1-conjugate(rho)`, Lean proves
 
-`sum_(q<L) W_(N+q) = R_N - R_(N+L)`
+`(2N+1)^(rho#) * R_N(rho) -> L(rho)`,
 
-and proves that the left side converges to `R_N` as `L` tends to infinity.
-Consequently, a uniform bound on
+where `L(rho)` is the explicit completion-weighted Gamma-moment constant, and
+proves `L(rho) != 0`. The faster original completed tail vanishes under this
+complex normalization; no phase, parity, conjugation, multiplicity, or
+completion factor is discarded.
 
-`(2N+1)^(1/2) * sum_(q<L) norm(W_(N+q))`
-
-for every base cutoff, finite tail length, and nontrivial zero implies the
-critical-scale residual bound and hence RH. The absolute tail-work estimate is
-not proved and may be stronger than necessary. It is a concrete coercive
-arithmetic target built entirely from finite eta head integrals and finite
-prefixes; signed cancellation estimates strong enough to imply the same rate
-remain viable alternatives.
+This is not RH. It provides the phase-bearing leading term needed to study
+the signed finite work `W_N = R_N-R_(N+1)`. Plain convergence is insufficient
+to differentiate consecutive asymptotics, so the next analytic target is a
+quantified remainder for the normalized all-order centered-tail limit. That
+remainder can then be transported into a sharp signed work estimate before
+attempting the square-root cancellation bound.
 
 ## Mathematical Program
 
