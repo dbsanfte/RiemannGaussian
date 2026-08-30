@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.norm_pairedEtaLaplaceReflectionReciprocalExtension_one_add_mul_I_lt_one
   },
   {
-    label := "An off-line centered residual diverges at the critical square-root scale"
-    lineOne := "off-line eta residual"
-    lineTwo := "critical-scale blowup"
+    label := "An off-line finite eta work has a nonzero sharp complex limit"
+    lineOne := "off-line eta work"
+    lineTwo := "nonzero sharp limit"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.tendsto_oddEndpoint_half_rpow_mul_norm_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidual_atTop_of_half_lt_re
+      ``RiemannGaussian.tendsto_oddEndpoint_partner_add_one_cpow_mul_pairedEtaCompletedLeadingLogCutoffCenteredPartnerResidualFiniteWork
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
   "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove coercive control of the finite eta residual work identity.</text>\n" ++
+      "prove arithmetic cancellation incompatible with the off-line work limit.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -502,16 +502,21 @@ run_cmd do
         "centered tail differs from k!/(2*s^(k+1)) by at most an explicit " ++
         "constant times (2N+1)^(-1), uniformly for every cutoff N. The proof " ++
         "derives the zeroth-order Euler remainder and propagates it through all " ++
-        "derivatives by a Cauchy estimate. The next step is the sharp signed work " ++
-        "asymptotic; the arithmetic square-root cancellation remains open.")),
+        "derivatives by a Cauchy estimate. Lean now combines the exact triangular " ++
+        "cutoff transport law with these sharp tails and proves the actual finite " ++
+        "work asymptotic. At a hypothetical right-half zero, (2N+1)^(rho#+1)W_N " ++
+        "tends to 2*rho# times the nonzero complex residual constant. The head and " ++
+        "every transported order below m-1 vanish; the unique m-1 term survives. " ++
+        "Thus the signed phase-bearing obstruction is explicit, while an " ++
+        "unconditional arithmetic cancellation contradicting it remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Derive the sharp signed asymptotic of the explicit finite head-plus-prefix " ++
-        "work from the proved O((2N+1)^(-1)) tail remainder, then prove a square-root " ++
-        "cancellation bound without assuming zero locations"))
+        "Prove an unconditional arithmetic cancellation theorem incompatible with " ++
+        "the nonzero off-line finite-work limit, and derive the critical square-root " ++
+        "residual bound without assuming zero locations"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

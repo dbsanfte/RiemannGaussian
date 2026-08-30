@@ -26,25 +26,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves a quantitative, all-order version of the sharp centered
-eta-tail asymptotic. For every `k`, every complex `s` with `Re(s) > 0`, and
-every cutoff `N`, the literal endpoint-normalized tail satisfies
+Lean now proves the sharp complex asymptotic of the exact finite residual work.
+For a hypothetical right-half off-line zero `rho`, write
+`rho# = 1-conjugate(rho)`, let `R_N` be its completed centered eta residual,
+and set `W_N = R_N-R_(N+1)`. Then Lean proves
 
-`||(2N+1)^s T_k(N,s) - k!/(2*s^(k+1))|| <= C(k,s)/(2N+1)`,
+`(2N+1)^(rho#+1) * W_N -> 2*rho#*L(rho) != 0`,
 
-with the explicit constant
-`C(k,s) = k!*(||s|| + Re(s)/2 + 1)/(Re(s)/2)^k`. Lean derives this from the
-exact zeroth-order Euler remainder by a Cauchy derivative estimate on the disk
-of radius `Re(s)/2`, then transfers it exactly to every logarithmic moment.
-The estimate retains the complex endpoint phase and is valid at every cutoff.
+where `L(rho)` is the previously identified nonzero complex residual constant.
+The proof does not differentiate a bare asymptotic equivalence. It uses the
+exact triangular cutoff-transport law: the new head interval vanishes at this
+scale, every transported order below `m-1` vanishes, and the sole surviving
+order `m-1` produces the displayed constant. Lean also proves the corresponding
+scaled-norm limit and eventual nonvanishing of the literal finite work.
 
-This is not RH. It closes the rate gap that previously prevented consecutive
-cutoff differences from being justified. The next analytic step is to combine
-the two complementary completed tails, including their distinct decay rates,
-into a sharp signed asymptotic for the exact finite work
-`W_N = R_N-R_(N+1)`. The conjecture-strength task remains an unconditional
-arithmetic cancellation estimate strong enough to control the resulting work
-tail at the critical square-root scale.
+This is not RH. It rigorously identifies the phase-bearing obstruction that an
+unconditional arithmetic cancellation theorem must now defeat. A bound forcing
+this normalized signed work to vanish for every nontrivial zero, or strong
+enough critical square-root control of its telescoped tail, would exclude every
+off-line pair. No such arithmetic estimate is currently proved.
 
 ## Mathematical Program
 
