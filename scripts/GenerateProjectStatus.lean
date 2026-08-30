@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Actual packed eta features are eventually linearly independent"
-    lineOne := "packed eta features"
-    lineTwo := "eventual full rank"
+    label := "The multiplicity-weighted positive eta Gram has full represented rank"
+    lineOne := "positive eta Gram"
+    lineTwo := "rank = #zeros"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.exists_prime_eventually_linearIndependent_pairedEtaGeometricPackedHyperbolicFeature
+      ``RiemannGaussian.exists_prime_eventually_posSemidef_and_rank_pairedEtaGeometricMultiplicityWeightedCoordinateGram_eq_card
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "normalize and estimate the full-rank eta certificate carrier.</text>\n" ++
+      "couple the positive and signed eta carriers arithmetically.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -754,8 +754,12 @@ run_cmd do
         "channel matrix as a nonzero diagonal scaling of that literal block and its aligned channel " ++
         "as the entrywise conjugate. A fixed complex-linear projection recovers the aligned channel " ++
         "from the actual packed even/odd hyperbolic feature. Thus one odd prime makes all sufficiently " ++
-        "late packed features of every finite zeta-zero window linearly independent. The positive " ++
-        "Gram/rank companion and normalized arithmetic estimate have not yet been proved. " ++
+        "late packed features of every finite zeta-zero window linearly independent. Scaling each " ++
+        "zero column by its positive square-root analytic multiplicity now gives a coordinate Gram " ++
+        "equal to the sum of the literal multiplicity-weighted Hermitian v*v blocks. It is positive " ++
+        "semidefinite and eventually has rank exactly the number of represented distinct zeros. It " ++
+        "is kept distinct from the complex-symmetric signed block. Their normalized arithmetic " ++
+        "coupling has not yet been proved. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -849,9 +853,12 @@ run_cmd do
         "nonzero diagonal scaling, its aligned channel is the entrywise complex conjugate, and one " ++
         "fixed complex-linear projection extracts that channel from the actual packed even/odd " ++
         "hyperbolic features. Therefore every finite zeta-zero window has one odd prime base for " ++
-        "which all sufficiently late packed certificate features are linearly independent. The " ++
-        "remaining step is to build and estimate the normalized positive Gram/rank companion while " ++
-        "retaining the distinct complex-symmetric signed block. " ++
+        "which all sufficiently late packed certificate features are linearly independent. Lean " ++
+        "retains analytic multiplicity through positive square-root column weights and forms the " ++
+        "coordinate synthesis matrix times its conjugate transpose. This is exactly the sum of the " ++
+        "multiplicity-weighted Hermitian v*v blocks, is positive semidefinite, and eventually has " ++
+        "rank equal to the number of represented distinct zeros. The remaining step is to normalize " ++
+        "and estimate this positive carrier jointly with the distinct complex-symmetric signed block. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
@@ -860,7 +867,7 @@ run_cmd do
         "does not instantiate the eta window. The independent ordinary heat trace now separates " ++
         "strict improvement exactly: it crosses below 5/36 at some nonnegative scale if and only if " ++
         "the certificate is greater than 13/18, while the sharp model never crosses at finite scale. " ++
-        "What is not yet proved is the corresponding normalized eta model " ++
+        "What is not yet proved is the corresponding jointly normalized eta model " ++
         "and crossing bound, another independent observable nonzero on the sharp root channels, the additional normalized " ++
         "moments, a phase-preserving aggregate estimate for the paired cubic one-gap channel, higher " ++
         "closed-path coefficients, or genuinely mixed " ++

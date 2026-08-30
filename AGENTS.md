@@ -1069,12 +1069,18 @@ channel is a nonzero completion-row scaling of the literal prefix matrix, the
 aligned channel is its entrywise conjugate, and one fixed complex-linear
 projection recovers the aligned channel from every packed even/odd feature.
 Consequently, for every finite zeta-zero window, one odd prime makes all
-sufficiently late packed certificate features linearly independent. The next
-obligation is to construct the corresponding exact positive Gram/rank
-companion without conflating it with the existing complex-symmetric signed
-block, then derive a normalized eta-arithmetic bound that excludes the sharp
-finite obstruction. That quantitative estimate remains necessary for any
-stronger zeta-zero proportion and ultimately for RH.
+sufficiently late packed certificate features linearly independent. Lean now
+retains analytic multiplicity by scaling every zero column with its positive
+square-root multiplicity and forms the corresponding coordinate matrix times
+its conjugate transpose. This matrix is exactly the sum of the literal
+multiplicity-weighted Hermitian outer products `v v*`, is positive
+semidefinite, and eventually has rank equal to the number of represented
+distinct zeros. It remains rigorously distinct from the complex-symmetric
+`v vᵀ` block used by the signed inertia certificate. The next obligation is
+to normalize and couple these two checked carriers, then derive an
+eta-arithmetic bound that excludes the sharp finite obstruction. That
+quantitative estimate remains necessary for any stronger zeta-zero proportion
+and ultimately for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is

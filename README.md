@@ -39,29 +39,29 @@ window.
 Lean currently proves a sharp abstract `13/18` degree-four certificate, but
 that number is not yet a zeta-zero proportion: the normalized moment model has
 not been derived from the literal eta window. Lean now proves eventual linear
-independence of the actual packed two-channel eta features on every finite
-zero window. The immediate route is to turn that carrier theorem into an exact
-positive Gram/rank witness alongside the existing complex-symmetric signed
-eta block, then derive the normalized finite model and an independent
-arithmetic observable that excludes the sharp three-atom obstruction. No
-stronger zero proportion will be claimed until that eta-specific estimate is
-proved.
+independence of the actual packed two-channel eta features and an exact
+multiplicity-weighted positive coordinate Gram whose rank is the number of
+represented distinct zeros. The immediate route is to normalize the existing
+complex-symmetric signed eta block against this lossless positive companion,
+then derive an independent arithmetic observable that excludes the sharp
+three-atom obstruction. No stronger zero proportion will be claimed until
+that eta-specific estimate is proved.
 
 ## Latest Update
 
-Lean now lifts literal eta-prefix separation into the actual two-channel
-hyperbolic features used by the finite certificate. For every finite zeta-zero
-window, Lean selects one odd prime base and proves that all sufficiently late
-packed geometric cutoff features belonging to its distinct zeros are
-linearly independent.
+Lean now builds a positive Hermitian companion from the actual packed
+geometric eta features without dropping analytic multiplicity. Each genuine
+zero column is scaled by the square root of its divisor multiplicity; Lean
+proves that the resulting coordinate matrix is exactly the sum of the
+multiplicity-weighted Hermitian outer products `v v*`.
 
-The proof identifies the completed original channel as a nonzero diagonal
-row scaling of the checked literal prefix matrix, transports nonsingularity
-through entrywise complex conjugation, and applies a fixed complex-linear
-projection recovering that aligned channel from the even/odd packed feature.
-Thus completion, conjugation, and hyperbolic packing lose no represented zero.
-This is still a carrier theorem, not an `18/18` certificate: the next step is
-an exact positive Gram/rank companion and a normalized eta-arithmetic bound.
+For every finite zeta-zero window, one odd prime base makes this companion
+positive semidefinite with rank exactly equal to the number of represented
+distinct zeros at every sufficiently late block. The existing sign-bearing
+complex-symmetric `v vᵀ` matrix is deliberately not identified with this
+positive Gram. This proves a lossless positive carrier, not an `18/18`
+certificate; the next step is a normalized joint ledger and an arithmetic
+bound coupling the two matrices.
 
 ## Mathematical Program
 
@@ -72,8 +72,8 @@ The current program combines four connected lines:
   multiplicity, reflected-zero colour, and coherent cross-zero interference.
 - The **eta arithmetic branch** realizes completed eta moments as explicit
   finite interval and endpoint sums, develops exact cutoff work laws, and uses
-  geometric sampling to produce full-rank actual feature families for the
-  normalized certificate problem.
+  geometric sampling to produce full-rank actual feature families and their
+  multiplicity-weighted positive Gram companion.
 - The **Gaussian/heat branch** supplies positive and signed heat flows,
   higher and mixed-scale moment Grams, projection leakage, closed paths, and
   the odd proper-time transform connecting heat kernels to the checked
