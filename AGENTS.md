@@ -587,6 +587,17 @@ intrinsic self-slack
 validity of this near-sharp finite-upper monotonicity is equivalent to the
 critical-line equation. No theorem currently proves the arithmetic direction
 of that equivalence.
+Lean now also exploits a fact absent from those uncentered certificates: at a
+zero of multiplicity `m`, every eta logarithmic moment below `m` vanishes.
+Recentring the leading moment at `a_N=log(2N+1)` therefore preserves it exactly
+while changing the literal tail integrand from `t^m` to `(t-a_N)^m`. A checked
+translation of the Gamma integral yields the unconditional envelope
+`exp(-Re(rho)*a_N)*m!/Re(rho)^(m+1)`, with no logarithmic-power loss and no
+cutoff condition. It is strictly smaller than the balanced near-sharp bound
+whenever the latter is valid. The centered finite lower and upper certificates
+enclose the exact nonzero defect for every cutoff, converge to it, and have
+width at most twice this new envelope. This sharpens the arithmetic interface;
+it does not provide the missing complementary sign constraint.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.

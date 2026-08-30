@@ -430,17 +430,24 @@ run_cmd do
         "(V_N(rho)/L_N(rho))^2-1 tends to zero, and allowing it reduces exactly to eventual " ++
         "finite-upper monotonicity V_N(rho#)<=V_N(rho). For closed-right-half zeros that " ++
         "eventual comparison is equivalent to the critical-line equation. No current " ++
-        "theorem proves its arithmetic direction or implies RH.")),
+        "theorem proves its arithmetic direction. Lean now uses the vanishing of every " ++
+        "eta log moment below the exact zero multiplicity m to recenter the leading " ++
+        "moment at a_N=log(2N+1). The exact centered tail has the unconditional envelope " ++
+        "exp(-Re(rho)*a_N)*m!/Re(rho)^(m+1), with no logarithmic-power loss and no cutoff " ++
+        "condition. Lean proves this is strictly smaller than the balanced near-sharp " ++
+        "envelope whenever the latter applies. The resulting centered lower and upper " ++
+        "certificates enclose the exact nonzero defect for every N, converge to it, and " ++
+        "have width at most twice the centered tail. This sharper interface does not " ++
+        "supply the missing complementary phase or sign constraint and does not imply RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove an independent arithmetic or phase constraint forcing the explicit " ++
-        "eta Laplace reflection multiplier to have unit norm at every nontrivial zero; " ++
-        "equivalently, prove that the exact first localized completion-distortion " ++
-        "coefficient vanishes at every zero; alternatively force the exact " ++
-        "detector limit to vanish without discarding zero contributions"))
+        "Insert the cutoff-centered, no-log-loss eta moment prefixes into the completed " ++
+        "partner identity and prove an independent arithmetic phase or sign constraint " ++
+        "forcing the complementary leading coefficients to agree; equivalently force " ++
+        "the eta reflection multiplier to have unit norm at every nontrivial zero"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

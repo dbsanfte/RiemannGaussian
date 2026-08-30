@@ -26,32 +26,24 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now upgrades the finite arithmetic enclosure to the balanced near-sharp
-tail, retaining the full horizontal decay exponent. If `L_N` is finite-prefix
-norm minus the rigorous tail and `V_N` is prefix norm plus tail, Lean proves
-eventually
+Lean now uses the full multiplicity information at a zeta zero to recenter its
+first nonzero eta moment at the arithmetic cutoff `a_N=log(2N+1)`. Because all
+lower moments vanish, this changes neither the exact leading moment nor its
+completed meaning. It replaces the old uncentered tail by the rigorously
+proved envelope
 
-`(L_N(rho*) / V_N(rho))² <= a(rho*) / a(rho)`
+`exp(-sigma*a_N) * m! / sigma^(m+1)`.
 
-and
+This retains the full horizontal exponent, has no logarithmic-power loss, and
+needs no cutoff hypothesis. Lean proves it is strictly smaller than the prior
+balanced near-sharp envelope whenever that older cutoff is valid. The new
+finite lower and upper certificates enclose the exact nonzero leading defect
+for every `N`; their width is at most twice the displayed tail and tends to
+zero.
 
-`a(rho*) / a(rho) <= (V_N(rho*) / L_N(rho))²`.
-
-Both endpoints converge to the exact ratio and their difference tends to
-zero. The formal analysis also catches an important false lead: every valid
-finite upper endpoint is strictly greater than `1` for a right-half zero,
-including a zero on the critical line, because the tail allowance is positive.
-
-The correct finite uncertainty is
-`delta_N=(V_N(rho)/L_N(rho))²-1`, and Lean proves `delta_N -> 0`. The viable
-comparison
-
-`upper_N(rho,rho*) <= 1 + delta_N`
-
-is exactly `V_N(rho*) <= V_N(rho)`. For a zero in the closed right half-strip,
-eventual validity of that eta-specific finite-upper monotonicity is equivalent
-to `Re rho=1/2`. No theorem yet proves the forward arithmetic inequality, so
-RH remains open.
+This is a sharper arithmetic approximation, not RH. The next frontier is to
+insert these centered prefixes into the completed complementary-partner
+identity and isolate a genuinely eta-specific phase or sign constraint.
 
 ## Mathematical Program
 
