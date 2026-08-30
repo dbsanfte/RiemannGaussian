@@ -47,25 +47,29 @@ channels, `Gram − Signed` and `Gram + Signed`. Pulling the same synthesis back
 to zero-index space gives an eventually positive-definite metric `K = Cᴴ C`
 whose inverse is also positive definite. Lean now uses this metric to normalize
 the signed pullback into a Hermitian matrix `A` satisfying both `I − A ⪰ 0`
-and `I + A ⪰ 0`. The immediate route is to derive a literal eta-arithmetic
-trace or spectral observable for this contraction that excludes the sharp
-three-atom obstruction. No stronger zero proportion will be claimed until
-that eta-specific estimate is proved.
+and `I + A ⪰ 0`. Lean further determines this fully whitened matrix exactly:
+it is the permutation `P` sending each enumerated zero to its critical-line
+reflection. Thus complete whitening cancels the eta amplitudes. The immediate
+route is instead to retain the coupled normal form `B = K P K` and derive a
+literal eta-arithmetic mixed trace or spectral observable before that
+cancellation. No stronger zero proportion will be claimed until such an
+eta-specific estimate is proved.
 
 ## Latest Update
 
-Lean now defines the signed zero-space pullback `B = Cᴴ Signed C` alongside
-the positive metric `K = Cᴴ C`. Congruence of the checked coordinate ledger
-proves the exact bounds `K² − B ⪰ 0` and `K² + B ⪰ 0`. When the actual packed
-eta features are independent, `K` is positive definite, so the normalized
-matrix `A = K⁻¹ B K⁻¹` is Hermitian and satisfies both
-`I − A ⪰ 0` and `I + A ⪰ 0`.
+Lean now transports critical-line reflection to a permutation matrix `P` on
+the enumerated finite zero window. For the actual multiplicity-weighted eta
+synthesis matrix it proves `P Cᴴ = Cᵀ`, while the existing signed coordinate
+block is exactly `C Cᵀ`. Consequently the zero-space pullback has the exact
+normal form `B = K P K`, with `K = Cᴴ C`.
 
-For every nonnegative finite zeta-zero window, Lean proves that one odd prime
-base makes this contraction theorem hold at every sufficiently late geometric
-block. This is a certificate-ready normalization, not an `18/18` result. The
-next hard step is an eta-arithmetic trace or spectral estimate for `A` strong
-enough to improve the sharp abstract `13/18` ceiling.
+At every separated geometric block Lean cancels the checked inverse metric and
+proves `A = K⁻¹ B K⁻¹ = P`. Hence `A² = I`, and its trace is exactly the number
+of fixed indices of zero reflection. For every nonnegative finite zeta-zero
+window, one odd prime makes all of these identities hold eventually. This is
+not an `18/18` result: it rigorously shows that full whitening erases the eta
+amplitudes. The next hard step is therefore a mixed arithmetic estimate that
+retains the coupling between `K` and `P`, rather than an estimate of `A` alone.
 
 ## Mathematical Program
 
@@ -78,8 +82,8 @@ The current program combines four connected lines:
 - The **eta arithmetic branch** realizes completed eta moments as explicit
   finite interval and endpoint sums, develops exact cutoff work laws, and uses
   geometric sampling to produce full-rank actual feature families and their
-  multiplicity-weighted positive Gram companion and normalized signed
-  contraction.
+  multiplicity-weighted positive Gram companion, signed reflection normal
+  form, and information-loss diagnosis for complete whitening.
 - The **Gaussian/heat branch** supplies positive and signed heat flows,
   higher and mixed-scale moment Grams, projection leakage, closed paths, and
   the odd proper-time transform connecting heat kernels to the checked

@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "The normalized signed eta pullback is eventually a Hermitian contraction"
-    lineOne := "normalized eta pullback"
-    lineTwo := "I ± A ≽ 0"
+    label := "Complete eta whitening is exactly the reflected-zero permutation"
+    lineOne := "eta whitening"
+    lineTwo := "K⁻¹ B K⁻¹ = P"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.exists_prime_eventually_pairedEtaGeometricNormalizedSignedZeroPullback_contraction
+      ``RiemannGaussian.exists_prime_eventually_normalizedSignedZeroPullback_eq_reflection
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "derive an eta-arithmetic spectral estimate for the normalized contraction.</text>\n" ++
+      "retain the K-reflection coupling and estimate it arithmetically.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -766,7 +766,11 @@ run_cmd do
         "K and its inverse positive definite at every sufficiently late block. Lean now pulls the " ++
         "signed coordinate block back as B=C^*Signed*C. Congruence gives K^2-B and K^2+B positive " ++
         "semidefinite. The normalized A=K^-1*B*K^-1 is Hermitian with I-A and I+A positive " ++
-        "semidefinite. Its eta-arithmetic trace or spectral estimate has not yet been proved. " ++
+        "semidefinite. Lean now proves P*C^*=C^T for the reflected-zero permutation P and " ++
+        "Signed=C*C^T. Therefore B=K*P*K and complete whitening gives A=P, with A^2=I and trace " ++
+        "equal to the number of fixed reflection indices. This shows that full whitening cancels " ++
+        "the eta amplitudes. An arithmetic estimate retaining the coupled pair (K,P) has not yet " ++
+        "been proved. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -871,8 +875,11 @@ run_cmd do
         "matrix C back to zero-index space gives K=C^*C; its injectivity makes K and its inverse " ++
         "positive definite for one odd prime at all sufficiently late blocks. The signed pullback " ++
         "B=C^*Signed*C obeys K^2-B and K^2+B positive semidefinite. Its normalization " ++
-        "A=K^-1*B*K^-1 is Hermitian with I-A and I+A positive semidefinite. The remaining step is " ++
-        "to derive an eta-arithmetic trace or spectral estimate for this contraction. " ++
+        "A=K^-1*B*K^-1 is Hermitian with I-A and I+A positive semidefinite. The reflected-zero " ++
+        "permutation P satisfies P*C^*=C^T, so Signed=C*C^T, B=K*P*K, and complete whitening " ++
+        "collapses exactly to A=P. It squares to I and its trace counts fixed reflection indices. " ++
+        "The remaining step is to retain K coupled to P and derive an eta-arithmetic mixed trace " ++
+        "or spectral estimate before complete cancellation. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

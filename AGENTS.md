@@ -1092,10 +1092,17 @@ the signed coordinate block back as `B = Cᴴ Signed C`. Congruence gives
 produces a Hermitian matrix `A = K⁻¹ B K⁻¹` with both `I - A` and `I + A`
 positive semidefinite. One odd prime makes this contraction conclusion hold
 at every sufficiently late block of each nonnegative finite spectral window.
-The next obligation is to extract an eta-arithmetic trace or spectral estimate
-from `A` that excludes the sharp finite obstruction. That quantitative
-estimate remains necessary for any stronger zeta-zero proportion and
-ultimately for RH.
+Lean now determines this normalization exactly. Critical-line reflection
+induces a permutation matrix `P` on the enumerated window, the actual synthesis
+obeys `P Cᴴ = Cᵀ`, and the signed coordinate block is `C Cᵀ`. Therefore
+`B = K P K` and complete two-sided whitening gives `A = P`. In particular,
+`A² = I` and its trace is the number of fixed reflection indices. This proves
+that full whitening cancels all eta amplitudes and cannot be the arithmetic
+observable by itself. The next obligation is to retain the coupled pair
+`(K,P)` through mixed traces, one-sided normalization, or an equivalent
+information-preserving construction, and then prove an eta-arithmetic estimate
+that excludes the sharp finite obstruction. That quantitative estimate remains
+necessary for any stronger zeta-zero proportion and ultimately for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is
