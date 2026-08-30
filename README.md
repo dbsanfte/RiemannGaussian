@@ -26,22 +26,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the exact transform from Gaussian proper time to the
-reciprocal logarithmic-gap kernel. For every nonzero real gap `Delta`, the
-oriented square-root heat integral of `exp (-t^2*Delta^2)` is `Delta⁻¹`.
-Equal-frequency entries are explicitly removed before integration, so the
-nonintegrable diagonal is never silently totalized.
+Lean now proves the direct sign-bearing transform
+`integral₀^∞ Delta * exp (-u*Delta²) du = Delta⁻¹` for every nonzero real
+gap. Equal-frequency entries are removed before integration. The resulting
+kernel is odd under index swap, and its transform of a complex-symmetric
+matrix is rigorously skew-symmetric.
 
-The theorem
-`RiemannGaussian.pairedEtaFiniteCutoffLog_orientedSqrtHeat_mvHilbert_twentySix`
-proves the constant-26 Montgomery--Vaughan bound directly in this heat-integral
-form at the actual centered eta cutoff nodes `log (2*N+1)`, using a checked
-uniform gap `1/(2*K)`. Lean also applies the transform entrywise to the genuine
-eta zero-window matrix work: it becomes reciprocal-gap multiplication and its
-leading/remainder law remains exact. This connects the Gaussian and Hilbert
-kernels, but does not yet bound the actual leading-current coefficients. The
-next step is to apply the estimate blockwise to their proved rank-two outer
-product factorization and retain the signed spectral aggregation.
+The constant-26 Montgomery--Vaughan bound is now applied blockwise to both
+literal outer products in every genuine zero's eta leading current. Lean
+retains the exact complex signed zero-window sum, analytic multiplicities, and
+all four ordered hyperbolic channel blocks before taking a coarse norm bound.
+The two same-colour block sums vanish and the mixed-colour blocks are exact
+negatives. The remaining frontier is a cross-zero eta-arithmetic cancellation
+or coercivity estimate stronger than the proved sum-of-envelopes bound and
+strong enough to establish the critical first moment.
 
 ## Mathematical Program
 

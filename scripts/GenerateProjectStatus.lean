@@ -69,12 +69,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh
   },
   {
-    label := "The eta Gaussian heat integral satisfies the Hilbert bound with constant 26"
-    lineOne := "eta heat integral"
-    lineTwo := "Hilbert bound 26"
+    label := "The signed eta odd-heat leading current has a blockwise Hilbert envelope"
+    lineOne := "eta odd-heat current"
+    lineTwo := "signed block bound"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaFiniteCutoffLog_orientedSqrtHeat_mvHilbert_twentySix
+      ``RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_norm_le_sum
   },
   {
     label := "The first K eta log frequencies satisfy a Hilbert bound with constant 26"
@@ -681,14 +681,17 @@ run_cmd do
         "for u>0. Schur compression at the exact eta cutoff nodes log(2*N+1) has a checked " ++
         "entrywise derivative, commutes with the genuine multiplicity-weighted zero sum, " ++
         "preserves the on-line/off-line decomposition and Hermitian symmetry, and carries " ++
-        "the leading/remainder matrix-current law through every heat time. Lean now proves " ++
-        "the oriented square-root heat integral equals the reciprocal nonzero frequency gap, " ++
-        "with coincident nodes explicitly removed before integration. The centered eta cutoff " ++
-        "nodes log(2*N+1) have a checked gap 1/(2*K), so the Montgomery--Vaughan constant-26 " ++
-        "bound now applies directly to their heat bilinear form. The transform is also " ++
-        "instantiated entrywise on the genuine eta zero-window matrix work and preserves its " ++
-        "leading/remainder law. Arithmetic coefficient and signed zero-window cancellation " ++
-        "estimates remain open.")),
+        "the leading/remainder matrix-current law through every heat time. Lean now proves both " ++
+        "the oriented square-root representation and the direct odd proper-time identity " ++
+        "integral Delta*exp(-u*Delta^2) du=Delta^(-1), with coincident nodes explicitly removed " ++
+        "before integration. The direct kernel reverses sign under index swap and turns every " ++
+        "complex-symmetric source into a skew-symmetric transform. The centered eta cutoff nodes " ++
+        "log(2*N+1) have checked gap 1/(2*K), so Montgomery--Vaughan with constant 26 applies " ++
+        "directly to the odd-heat bilinear form. Lean applies it blockwise to both rank-one terms " ++
+        "in each genuine zero's leading current, retains analytic multiplicity and the exact " ++
+        "complex signed spectral-window sum, and only then proves a coarse sum-of-envelopes norm " ++
+        "bound. Both same-colour block sums vanish and the mixed-colour blocks are negatives. " ++
+        "A stronger eta-arithmetic cross-zero cancellation estimate remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -719,13 +722,15 @@ run_cmd do
         "law is now transported through a continuous positive-semidefinite Gaussian " ++
         "proper-time kernel at the exact eta cutoff nodes; the compressed genuine zero " ++
         "sum, signed block decomposition, Hermitian symmetry, and entrywise derivative " ++
-        "are all checked. An oriented square-root heat integral now produces the reciprocal " ++
-        "logarithmic-gap kernel exactly, and the Montgomery--Vaughan constant-26 estimate is " ++
-        "proved directly in that heat form for the separated nodes log(2*N+1). The same " ++
-        "transform acts entrywise on the actual matrix work and preserves its leading/remainder " ++
-        "split. What is not yet proved is the blockwise application to the actual rank-two " ++
-        "leading-current coefficients or a signed estimate after the spectral zero sum. " ++
-        "The required signed " ++
+        "are all checked. Both direct odd and oriented square-root heat integrals produce the " ++
+        "reciprocal logarithmic-gap kernel exactly, and the Montgomery--Vaughan constant-26 " ++
+        "estimate is proved in that heat form for the separated nodes log(2*N+1). The transform " ++
+        "acts entrywise on the actual matrix work and preserves its leading/remainder split. " ++
+        "Its application to the two actual rank-one leading terms is now checked blockwise. " ++
+        "The complete block remains the exact multiplicity-weighted complex signed zero sum, " ++
+        "with same-colour cancellation and mixed-colour antisymmetry retained before the coarse " ++
+        "sum-of-envelopes norm bound. What is not yet proved is a cross-zero arithmetic estimate " ++
+        "strong enough to improve that triangle bound. The required signed " ++
         "finite-endpoint correlation estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++
         "to RH"))

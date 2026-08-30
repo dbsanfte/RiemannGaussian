@@ -6,15 +6,21 @@ import RiemannGaussian.EtaEndpointLogHilbert
 
 This module turns the Gaussian heat parameter into the reciprocal frequency
 kernel used by the checked Montgomery--Vaughan inequality.  For a nonzero real
-gap `Delta`, Lean proves the square-root proper-time identity
+gap `Delta`, Lean proves both the direct odd proper-time identity
+
+`integral_0^infinity Delta * exp(-u * Delta^2) du = Delta⁻¹`
+
+and the equivalent square-root proper-time identity
 
 `(2 / sqrt pi) * sign(Delta) * integral_0^infinity exp(-t^2 Delta^2) dt
     = Delta⁻¹`.
 
-The square-root parameter `u = t^2` avoids placing a singular `u^(-1/2)`
-weight in the formal integral.  Zero gaps are explicitly assigned the value
-zero before integration; the development never treats the nonintegrable
-diagonal Gaussian as an ordinary improper integral.
+The direct form retains the sign and oddness of the frequency difference.
+The square-root parameter `u = t^2` supplies an equivalent representation
+without placing a singular `u^(-1/2)` weight in the formal integral.  Zero
+gaps are explicitly assigned the value zero before integration; the
+development never treats the nonintegrable diagonal Gaussian as an ordinary
+improper integral.
 
 The identity is lifted entrywise to arbitrary finite matrices.  It proves
 that an oriented integral of the Gaussian Schur-compression semigroup is
@@ -69,6 +75,106 @@ theorem gaussianSqrtHeatIntegral_sign_mul_eq_inv_mul
       ((gap⁻¹ : ℝ) : ℂ) * a := by
   rw [integral_mul_const, integral_complex_ofReal, ← mul_assoc,
     ← Complex.ofReal_mul, gaussianSqrtHeatIntegral_sign_eq_inv hgap]
+
+/-! ## Direct odd proper-time transform -/
+
+/-- The direct odd heat kernel has reciprocal-gap integral:
+`∫₀∞ gap * exp (-u * gap²) du = gap⁻¹` for every nonzero real gap. -/
+theorem gaussianOddHeatIntegral_eq_inv {gap : ℝ} (hgap : gap ≠ 0) :
+    (∫ u : ℝ in Set.Ioi 0,
+      gap * Real.exp (-u * gap ^ 2)) = gap⁻¹ := by
+  rw [show (fun u : ℝ ↦ gap * Real.exp (-u * gap ^ 2)) =
+      (fun u : ℝ ↦ gap * Real.exp ((-gap ^ 2) * u)) by
+        funext u
+        congr 2
+        ring]
+  rw [integral_const_mul,
+    integral_exp_mul_Ioi (a := -gap ^ 2)
+      (neg_neg_of_pos (sq_pos_of_ne_zero hgap)) 0]
+  simp only [mul_zero, Real.exp_zero]
+  field_simp
+
+/-- Complex scalar multiples pass through the direct odd proper-time
+integral. -/
+theorem gaussianOddHeatIntegral_mul_eq_inv_mul
+    {gap : ℝ} (hgap : gap ≠ 0) (a : ℂ) :
+    (∫ u : ℝ in Set.Ioi 0,
+      (((gap : ℝ) : ℂ) *
+        ((Real.exp (-u * gap ^ 2) : ℝ) : ℂ)) * a) =
+      (((gap⁻¹ : ℝ) : ℂ) * a) := by
+  simp_rw [← Complex.ofReal_mul]
+  rw [integral_mul_const, integral_complex_ofReal,
+    gaussianOddHeatIntegral_eq_inv hgap]
+
+/-- Direct odd proper-time integral of one Gaussian kernel entry.  Equal
+frequency nodes are explicitly set to zero before integration. -/
+def finiteGaussianOddHeatKernelIntegral {d : Type*}
+    (frequency : d → ℝ) (i j : d) : ℂ :=
+  if frequency i = frequency j then 0
+  else
+    ∫ u : ℝ in Set.Ioi 0,
+      (((frequency i - frequency j : ℝ) : ℂ) *
+        finiteGaussianProperTimeKernelMatrix frequency u i j)
+
+/-- The direct odd heat-kernel integral is exactly the off-diagonal
+reciprocal frequency gap. -/
+theorem finiteGaussianOddHeatKernelIntegral_eq
+    {d : Type*} (frequency : d → ℝ) (i j : d) :
+    finiteGaussianOddHeatKernelIntegral frequency i j =
+      if frequency i = frequency j then 0
+      else (((frequency i - frequency j)⁻¹ : ℝ) : ℂ) := by
+  unfold finiteGaussianOddHeatKernelIntegral
+  by_cases hfreq : frequency i = frequency j
+  · simp [hfreq]
+  · rw [if_neg hfreq, if_neg hfreq]
+    unfold finiteGaussianProperTimeKernelMatrix
+    simpa using gaussianOddHeatIntegral_mul_eq_inv_mul
+      (sub_ne_zero.mpr hfreq) 1
+
+/-- The direct odd heat kernel reverses sign under exchange of its frequency
+indices.  This is the sign information lost by the unoriented Gaussian Gram
+kernel. -/
+theorem finiteGaussianOddHeatKernelIntegral_swap
+    {d : Type*} (frequency : d → ℝ) (i j : d) :
+    finiteGaussianOddHeatKernelIntegral frequency j i =
+      -finiteGaussianOddHeatKernelIntegral frequency i j := by
+  rw [finiteGaussianOddHeatKernelIntegral_eq,
+    finiteGaussianOddHeatKernelIntegral_eq]
+  by_cases hfreq : frequency i = frequency j
+  · simp [hfreq]
+  · have hrev : frequency j ≠ frequency i := Ne.symm hfreq
+    rw [if_neg hrev, if_neg hfreq]
+    push_cast
+    rw [show ((frequency j : ℝ) : ℂ) - ((frequency i : ℝ) : ℂ) =
+        -(((frequency i : ℝ) : ℂ) - ((frequency j : ℝ) : ℂ)) by ring,
+      inv_neg]
+
+/-- Direct odd proper-time transform of a Gaussian-compressed matrix. -/
+def finiteGaussianOddHeatTransform {d : Type*}
+    (frequency : d → ℝ) (A : Matrix d d ℂ) : Matrix d d ℂ :=
+  fun i j ↦
+    if frequency i = frequency j then 0
+    else
+      ∫ u : ℝ in Set.Ioi 0,
+        (((frequency i - frequency j : ℝ) : ℂ) *
+          finiteGaussianProperTimeCompression frequency u A i j)
+
+/-- The direct odd heat transform divides every noncoincident matrix entry
+by its frequency gap. -/
+theorem finiteGaussianOddHeatTransform_apply
+    {d : Type*} (frequency : d → ℝ) (A : Matrix d d ℂ) (i j : d) :
+    finiteGaussianOddHeatTransform frequency A i j =
+      if frequency i = frequency j then 0
+      else (((frequency i - frequency j)⁻¹ : ℝ) : ℂ) * A i j := by
+  unfold finiteGaussianOddHeatTransform
+  by_cases hfreq : frequency i = frequency j
+  · simp [hfreq]
+  · rw [if_neg hfreq, if_neg hfreq]
+    simp only [finiteGaussianProperTimeCompression, Matrix.hadamard_apply,
+      finiteGaussianProperTimeKernelMatrix]
+    simp_rw [← mul_assoc]
+    exact gaussianOddHeatIntegral_mul_eq_inv_mul
+      (sub_ne_zero.mpr hfreq) (A i j)
 
 /-! ## Gaussian semigroup and reciprocal-gap transform -/
 
@@ -169,6 +275,37 @@ theorem finiteGaussianOrientedSqrtHeatTransform_apply
     exact gaussianSqrtHeatIntegral_sign_mul_eq_inv_mul
       (sub_ne_zero.mpr hfreq) (A i j)
 
+/-- The direct odd and oriented square-root proper-time transforms are the
+same reciprocal-gap transform, entry by entry. -/
+theorem finiteGaussianOddHeatTransform_eq_orientedSqrt
+    {d : Type*} (frequency : d → ℝ) (A : Matrix d d ℂ) :
+    finiteGaussianOddHeatTransform frequency A =
+      finiteGaussianOrientedSqrtHeatTransform frequency A := by
+  ext i j
+  rw [finiteGaussianOddHeatTransform_apply,
+    finiteGaussianOrientedSqrtHeatTransform_apply]
+
+/-- The direct odd transform of a complex-symmetric matrix is
+skew-symmetric.  Thus ordered channel information survives the heat
+integration with its orientation intact. -/
+theorem finiteGaussianOddHeatTransform_transpose_of_isSymm
+    {d : Type*} (frequency : d → ℝ) (A : Matrix d d ℂ)
+    (hA : A.IsSymm) :
+    (finiteGaussianOddHeatTransform frequency A)ᵀ =
+      -finiteGaussianOddHeatTransform frequency A := by
+  ext i j
+  simp only [Matrix.transpose_apply, Matrix.neg_apply,
+    finiteGaussianOddHeatTransform_apply]
+  by_cases hfreq : frequency i = frequency j
+  · simp [hfreq]
+  · have hrev : frequency j ≠ frequency i := Ne.symm hfreq
+    rw [if_neg hrev, if_neg hfreq, hA.apply i j]
+    push_cast
+    rw [show ((frequency j : ℝ) : ℂ) - ((frequency i : ℝ) : ℂ) =
+        -(((frequency i : ℝ) : ℂ) - ((frequency j : ℝ) : ℂ)) by ring,
+      inv_neg]
+    simp
+
 /-- Matrix form of the transform: oriented square-root heat integration is
 exactly Hadamard multiplication by the reciprocal-gap matrix. -/
 theorem finiteGaussianOrientedSqrtHeatTransform_eq_hadamard
@@ -195,6 +332,17 @@ theorem finiteGaussianOrientedSqrtHeatTransform_add
   · simp [hfreq]
     ring
 
+/-- The direct odd proper-time transform is additive. -/
+theorem finiteGaussianOddHeatTransform_add
+    {d : Type*} (frequency : d → ℝ) (A B : Matrix d d ℂ) :
+    finiteGaussianOddHeatTransform frequency (A + B) =
+      finiteGaussianOddHeatTransform frequency A +
+        finiteGaussianOddHeatTransform frequency B := by
+  rw [finiteGaussianOddHeatTransform_eq_orientedSqrt,
+    finiteGaussianOrientedSqrtHeatTransform_add,
+    finiteGaussianOddHeatTransform_eq_orientedSqrt,
+    finiteGaussianOddHeatTransform_eq_orientedSqrt]
+
 /-! ## Bilinear heat transform and the Montgomery--Vaughan form -/
 
 /-- Finite sesquilinear sum built from the oriented square-root heat-kernel
@@ -205,6 +353,30 @@ def finiteGaussianOrientedSqrtHeatBilinear
   ∑ i, ∑ j,
     x i * conj (z j) *
       finiteGaussianOrientedSqrtHeatKernelIntegral frequency i j
+
+/-- Finite sesquilinear sum built directly from the sign-bearing odd
+proper-time kernel `gap * exp (-u * gap²)`. -/
+def finiteGaussianOddHeatBilinear
+    {d : Type*} [Fintype d] (frequency : d → ℝ)
+    (x z : d → ℂ) : ℂ :=
+  ∑ i, ∑ j,
+    x i * conj (z j) *
+      finiteGaussianOddHeatKernelIntegral frequency i j
+
+/-- The direct odd and square-root heat bilinear forms agree exactly. -/
+theorem finiteGaussianOddHeatBilinear_eq_orientedSqrt
+    {d : Type*} [Fintype d] (frequency : d → ℝ)
+    (x z : d → ℂ) :
+    finiteGaussianOddHeatBilinear frequency x z =
+      finiteGaussianOrientedSqrtHeatBilinear frequency x z := by
+  unfold finiteGaussianOddHeatBilinear
+    finiteGaussianOrientedSqrtHeatBilinear
+  apply Finset.sum_congr rfl
+  intro i _hi
+  apply Finset.sum_congr rfl
+  intro j _hj
+  rw [finiteGaussianOddHeatKernelIntegral_eq,
+    finiteGaussianOrientedSqrtHeatKernelIntegral_eq]
 
 /-- The heat bilinear form is exactly the reciprocal-gap sum with all
 coincident-frequency pairs explicitly removed. -/
@@ -369,6 +541,20 @@ theorem pairedEtaFiniteCutoffLog_orientedSqrtHeat_mvHilbert_twentySix
     (pairedEtaCutoffLogFrequency_fin_injective K)]
   exact pairedEtaFiniteCutoffLog_mvHilbert_twentySix hK x z
 
+/-- Direct odd proper-time form of Montgomery--Vaughan at the centered eta
+cutoff nodes.  Its left side literally integrates
+`(lambda_i-lambda_j) * exp(-u*(lambda_i-lambda_j)^2)` before applying the
+checked constant-26 Hilbert bound. -/
+theorem pairedEtaFiniteCutoffLog_oddHeat_mvHilbert_twentySix
+    {K : ℕ} (hK : 0 < K) (x z : Fin K → ℂ) :
+    ‖finiteGaussianOddHeatBilinear
+        (fun r : Fin K ↦ pairedEtaCutoffLogFrequency r.val) x z‖ ≤
+      26 * Real.sqrt ((((2 * K : ℕ) : ℝ)) * ∑ r, ‖x r‖ ^ 2) *
+        Real.sqrt ((((2 * K : ℕ) : ℝ)) * ∑ r, ‖z r‖ ^ 2) := by
+  rw [finiteGaussianOddHeatBilinear_eq_orientedSqrt]
+  exact pairedEtaFiniteCutoffLog_orientedSqrtHeat_mvHilbert_twentySix
+    hK x z
+
 /-! ## The transform on the genuine eta zero-window matrix work -/
 
 /-- Oriented heat/Hilbert transform of the actual eta zero-window matrix work
@@ -417,6 +603,36 @@ theorem pairedEtaTopPrefixFiniteHeatHilbertMatrixWork_apply_eq_heatIntegral
           ∫ t : ℝ in Set.Ioi 0,
             pairedEtaTopPrefixFiniteHeatCompressedZeroWindowMatrixWork
               (fun r : Fin K ↦ r.val) T (t ^ 2) i j := by
+  rfl
+
+/-- The actual eta heat/Hilbert matrix work is equally the direct odd
+proper-time transform of the checked Gaussian-compressed work. -/
+theorem pairedEtaTopPrefixFiniteHeatHilbertMatrixWork_eq_oddHeatTransform
+    (K : ℕ) (T : ℝ) :
+    pairedEtaTopPrefixFiniteHeatHilbertMatrixWork K T =
+      finiteGaussianOddHeatTransform
+        (pairedEtaTopPrefixFiniteCutoffFamilyHeatNode
+          (fun r : Fin K ↦ r.val))
+        (pairedEtaTopPrefixFiniteZeroWindowMatrixWork
+          (fun r : Fin K ↦ r.val) T) := by
+  unfold pairedEtaTopPrefixFiniteHeatHilbertMatrixWork
+  exact (finiteGaussianOddHeatTransform_eq_orientedSqrt _ _).symm
+
+/-- Each actual eta matrix-work entry is the direct signed proper-time
+integral `gap * heatCompression`; coincident cutoff frequencies are removed
+before integration. -/
+theorem pairedEtaTopPrefixFiniteHeatHilbertMatrixWork_apply_eq_oddHeatIntegral
+    (K : ℕ) (T : ℝ) (i j : Fin K × Fin 2) :
+    pairedEtaTopPrefixFiniteHeatHilbertMatrixWork K T i j =
+      if pairedEtaCutoffLogFrequency i.1.val =
+          pairedEtaCutoffLogFrequency j.1.val then 0
+      else
+        ∫ u : ℝ in Set.Ioi 0,
+          (((pairedEtaCutoffLogFrequency i.1.val -
+            pairedEtaCutoffLogFrequency j.1.val : ℝ) : ℂ) *
+            pairedEtaTopPrefixFiniteHeatCompressedZeroWindowMatrixWork
+              (fun r : Fin K ↦ r.val) T u i j) := by
+  rw [pairedEtaTopPrefixFiniteHeatHilbertMatrixWork_eq_oddHeatTransform]
   rfl
 
 /-- The actual heat/Hilbert matrix-work entry is the matrix work divided by

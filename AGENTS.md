@@ -913,24 +913,30 @@ cutoff nodes `log(2*N+1)`, Lean proves the explicit entrywise heat derivative,
 commutation with the genuine multiplicity-weighted zero sum, preservation of
 the on-line plus off-line-real minus off-line-imaginary decomposition and
 Hermitian symmetry, and commutation with the complete leading/remainder matrix
-work law. These are finite identities; no infinite operator, heat-time
-integral, or cancellation estimate is inferred at that stage. Lean now closes
-the finite kernel-transform bridge as well. For every nonzero gap `Delta`, the
-oriented square-root proper-time integral of `exp(-t^2*Delta^2)` is proved
-exactly equal to `Delta⁻¹`; coincident-frequency entries are explicitly zeroed
-before integration, so the nonintegrable diagonal is not silently totalized.
-The Gaussian kernels and compressions obey their exact additive semigroup
-laws. The first `K` centered eta cutoff nodes `log(2*N+1)` are proved injective
-and uniformly separated by `1/(2*K)`, and the checked Montgomery--Vaughan
-constant-26 bound is now stated and proved directly for their oriented heat
-bilinear form. The same transform is instantiated entrywise on the genuine
-eta zero-window matrix work, where it becomes reciprocal logarithmic-gap
-multiplication and preserves the leading/remainder law. This connects the
-Gaussian and Hilbert kernels but does not yet estimate the actual eta current:
-the next obligation is to apply the bilinear inequality blockwise to the two
-outer products in each leading current, retain the signed zero-window
-aggregation, and prove a bound strong enough for the critical first moment.
-None of that coefficient control may be inferred from the transform alone.
+work law. These are finite identities; no infinite operator or cancellation
+estimate is inferred at that stage. Lean now closes the finite kernel-transform
+bridge in two exactly equivalent parameterizations. For every nonzero gap
+`Delta`, both the oriented square-root heat integral and the direct odd
+proper-time integral `integral Delta*exp(-u*Delta^2) du` are proved exactly
+equal to `Delta⁻¹`; coincident-frequency entries are explicitly zeroed before
+integration, so the nonintegrable diagonal is not silently totalized. The
+direct kernel reverses sign under index swap. Applied to any complex-symmetric
+matrix it therefore yields a checked skew-symmetric transform, retaining the
+ordered channel colour. The Gaussian kernels and compressions obey their
+exact additive semigroup laws. The first `K` centered eta cutoff nodes
+`log(2*N+1)` are injective and uniformly separated by `1/(2*K)`, and the
+checked Montgomery--Vaughan constant-26 bound is proved directly for both heat
+representations. Lean now applies that inequality blockwise to the two literal
+transpose outer products in each genuine zero's leading current, including
+analytic multiplicity. The complete finite-window block is the exact complex
+signed zero sum before the triangle inequality, with an explicit sum of
+constant-26 envelopes. The aggregate transform is skew-symmetric: both
+same-colour block sums vanish and the two mixed-colour blocks are negatives.
+Thus the Gaussian--Hilbert bridge and rank-two coefficient interface are
+closed without discarding sign or channel data. The remaining hard step is an
+eta-arithmetic cross-zero cancellation or coercivity estimate substantially
+stronger than the recorded sum-of-envelopes bound, strong enough to prove the
+critical first moment. No such estimate is currently proved.
 
 ## Soundness invariant
 
