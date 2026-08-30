@@ -423,9 +423,14 @@ run_cmd do
         "theorem makes this coarse upper bound vanish. Lean now also puts finite " ++
         "prefix-plus-tail upper certificates on both moments. The resulting lower and " ++
         "upper squared quotients eventually enclose a(rho#)/a(rho), both converge to the " ++
-        "exact ratio, and the enclosure width tends to zero. At any height, one upper " ++
-        "endpoint at most 1 certifies that a right-half zero is on the critical line. No " ++
-        "current theorem proves that finite eta inequality for every zero or implies RH.")),
+        "exact ratio, and the enclosure width tends to zero. The balanced near-sharp " ++
+        "version retains the full horizontal exponent. Lean proves that every valid finite " ++
+        "upper endpoint is nevertheless strictly above 1 for a right-half zero, even on " ++
+        "the critical line, so upper<=1 is a vacuous target. The intrinsic self-slack " ++
+        "(V_N(rho)/L_N(rho))^2-1 tends to zero, and allowing it reduces exactly to eventual " ++
+        "finite-upper monotonicity V_N(rho#)<=V_N(rho). For closed-right-half zeros that " ++
+        "eventual comparison is equivalent to the critical-line equation. No current " ++
+        "theorem proves its arithmetic direction or implies RH.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),

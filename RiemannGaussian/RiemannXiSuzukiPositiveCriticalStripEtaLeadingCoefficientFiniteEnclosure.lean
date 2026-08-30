@@ -15,9 +15,10 @@ certificate is positive, and both converge to the exact ratio.  Thus the
 enclosure width is not an analytic remainder or an appeal to computation: its
 collapse is proved in Lean.
 
-A single upper enclosure at most one certifies that a high-ordinate
-right-half zero lies on the critical line.  The open arithmetic problem is to
-prove that such a cutoff exists uniformly from eta's special structure.
+The finite upper endpoint remains strictly above one for right-half zeros,
+including critical-line zeros, because its tail allowance is positive.  Thus
+`upper ≤ 1` is not a viable finite target; useful closure criteria must retain
+a positive uncertainty that tends to zero.
 -/
 
 open Complex Filter MeasureTheory Metric Set Topology
@@ -68,6 +69,26 @@ theorem norm_pairedEtaLeadingLogGapMomentDefect_le_finiteUpper
   exact norm_pairedEtaLogLaplaceMoment_le_finiteUpper
     (analyticZetaZeroMultiplicity rho)
     (NontrivialZetaZero.zero_lt_re rho) htheta hthetaOne N
+
+/-- For every positive split parameter, prefix-minus-tail is strictly smaller
+than prefix-plus-tail. -/
+theorem pairedEtaLogLaplaceMomentFiniteLower_lt_finiteUpper
+    (k : ℕ) {s : ℂ} (hs : 0 < s.re) {theta : ℝ}
+    (htheta : 0 < theta) (N : ℕ) :
+    pairedEtaLogLaplaceMomentFiniteLower k s theta N <
+      pairedEtaLogLaplaceMomentFiniteUpper k s theta N := by
+  have htail : 0 < pairedEtaLogLaplaceMomentTailUpper k s.re theta N :=
+    pairedEtaLogLaplaceMomentTailUpper_pos k hs htheta N
+  unfold pairedEtaLogLaplaceMomentFiniteLower
+    pairedEtaLogLaplaceMomentFiniteUpper
+  by_cases hdiff : 0 ≤
+      ‖pairedEtaLogLaplaceMomentPartialSum k s N‖ -
+        pairedEtaLogLaplaceMomentTailUpper k s.re theta N
+  · rw [max_eq_right hdiff]
+    nlinarith
+  · rw [max_eq_left (le_of_not_ge hdiff)]
+    nlinarith [norm_nonneg
+      (pairedEtaLogLaplaceMomentPartialSum k s N)]
 
 /-- Finite prefix-plus-tail upper certificates converge to the exact complex
 eta moment norm. -/
@@ -399,33 +420,48 @@ theorem
     re_sub_half_le_100_mul_realLog_finiteEnclosureUpper_of_eight_le_abs_im
       rho htheta hthetaOne N hlower hhalf hy
 
-/-- At any ordinate, a single finite upper enclosure at most one certifies
-that a right-half zero lies on the critical line. -/
-theorem re_eq_half_of_finiteEnclosureUpper_le_one
+/-- Every valid fixed-split upper enclosure is strictly greater than one for a
+zero on or to the right of the critical line.  In particular, the tempting
+finite target `upper ≤ 1` is vacuous even on the critical line. -/
+theorem one_lt_pairedEtaLeadingCoefficientRatioFiniteEnclosureUpper_of_half_le_re
     (rho : NontrivialZetaZero) {theta : ℝ}
     (htheta : 0 < theta) (hthetaOne : theta < 1) (N : ℕ)
     (hlower : 0 < pairedEtaLogLaplaceMomentFiniteLower
       (analyticZetaZeroMultiplicity rho) rho.1 theta N)
-    (hhalf : 1 / 2 ≤ rho.1.re)
-    (hupper : pairedEtaLeadingCoefficientRatioFiniteEnclosureUpper
-      rho theta N ≤ 1) :
-    rho.1.re = 1 / 2 := by
+    (hhalf : 1 / 2 ≤ rho.1.re) :
+    1 < pairedEtaLeadingCoefficientRatioFiniteEnclosureUpper
+      rho theta N := by
   rcases hhalf.eq_or_lt with hline | hright
-  · exact hline.symm
-  · have hratioBound :=
-      pairedEtaLeadingCoefficientRatio_exact_le_finiteEnclosureUpper
-        rho htheta hthetaOne N hlower
-    have hcoefficientLt :=
-      (pairedEtaLocalizedGaussianLargeTimeLeadingCoefficient_lt_conjugatePartner_iff_half_lt_re
-        rho).2 hright
+  · have hpartner : NontrivialZetaZero.conjugatePartner rho = rho := by
+      apply Subtype.ext
+      rw [NontrivialZetaZero.conjugatePartner_coe]
+      apply Complex.ext
+      · simp only [Complex.sub_re, Complex.one_re, Complex.conj_re]
+        linarith
+      · simp
+    have hstrict := pairedEtaLogLaplaceMomentFiniteLower_lt_finiteUpper
+      (analyticZetaZeroMultiplicity rho)
+      (NontrivialZetaZero.zero_lt_re rho) htheta N
     have hratioGt :
+        1 < pairedEtaLogLaplaceMomentFiniteUpper
+              (analyticZetaZeroMultiplicity rho) rho.1 theta N /
+            pairedEtaLogLaplaceMomentFiniteLower
+              (analyticZetaZeroMultiplicity rho) rho.1 theta N :=
+      (one_lt_div₀ hlower).2 hstrict
+    unfold pairedEtaLeadingCoefficientRatioFiniteEnclosureUpper
+    rw [hpartner]
+    nlinarith
+  · have hratioExact :
         1 < pairedEtaLocalizedGaussianLargeTimeLeadingCoefficient
               (NontrivialZetaZero.conjugatePartner rho) /
             pairedEtaLocalizedGaussianLargeTimeLeadingCoefficient rho :=
       (one_lt_div₀
         (pairedEtaLocalizedGaussianLargeTimeLeadingCoefficient_pos rho)).2
-          hcoefficientLt
-    linarith
+          ((pairedEtaLocalizedGaussianLargeTimeLeadingCoefficient_lt_conjugatePartner_iff_half_lt_re
+            rho).2 hright)
+    exact hratioExact.trans_le
+      (pairedEtaLeadingCoefficientRatio_exact_le_finiteEnclosureUpper
+        rho htheta hthetaOne N hlower)
 
 end
 end RiemannGaussian

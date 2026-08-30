@@ -26,11 +26,10 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now constructs a convergent two-sided finite arithmetic enclosure of the
-exact gain between complementary leading Gaussian coefficients. Let `L_N` be
-the norm of a finite eta moment prefix minus its rigorous tail envelope, and
-`V_N` the same prefix norm plus that envelope. For every fixed admissible tail
-split, Lean proves eventually
+Lean now upgrades the finite arithmetic enclosure to the balanced near-sharp
+tail, retaining the full horizontal decay exponent. If `L_N` is finite-prefix
+norm minus the rigorous tail and `V_N` is prefix norm plus tail, Lean proves
+eventually
 
 `(L_N(rho*) / V_N(rho))² <= a(rho*) / a(rho)`
 
@@ -39,14 +38,20 @@ and
 `a(rho*) / a(rho) <= (V_N(rho*) / L_N(rho))²`.
 
 Both endpoints converge to the exact ratio and their difference tends to
-zero. At any ordinate, one checked upper endpoint at most `1` certifies that a
-right-half zero is on the critical line. At `|Im rho|>=8`, every eventually
-valid upper endpoint also gives the quantitative displacement bound
-`Re rho-1/2 <= 100 log(upper)`.
+zero. The formal analysis also catches an important false lead: every valid
+finite upper endpoint is strictly greater than `1` for a right-half zero,
+including a zero on the critical line, because the tail allowance is positive.
 
-The open step is eta-specific: prove that an upper certificate at most `1`
-exists for each right-half zero. The enclosure converges rigorously, but
-convergence alone does not prove that inequality or RH.
+The correct finite uncertainty is
+`delta_N=(V_N(rho)/L_N(rho))²-1`, and Lean proves `delta_N -> 0`. The viable
+comparison
+
+`upper_N(rho,rho*) <= 1 + delta_N`
+
+is exactly `V_N(rho*) <= V_N(rho)`. For a zero in the closed right half-strip,
+eventual validity of that eta-specific finite-upper monotonicity is equivalent
+to `Re rho=1/2`. No theorem yet proves the forward arithmetic inequality, so
+RH remains open.
 
 ## Mathematical Program
 

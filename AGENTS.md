@@ -575,12 +575,18 @@ Lean now replaces the coarse partner envelope by a phase-sensitive
 prefix-plus-tail upper certificate `V_N` as well. The two squared quotients
 `(L_N(rho#)/V_N(rho))^2` and `(V_N(rho#)/L_N(rho))^2` eventually enclose the
 exact coefficient ratio; both converge to it and their width tends to zero.
-At every height, a single positive-denominator upper enclosure at most `1`
-forces a right-half zero onto the critical line. At absolute ordinate at least
-`8`, the convergent upper enclosures also give the explicit displacement bound
-`Re(rho)-1/2 <= 100*log(upper_N)`. The remaining arithmetic task is to prove
-`upper_N<=1` for some cutoff; convergence by itself cannot do this for a
-hypothetical off-line zero.
+The cutoff-balanced near-sharp version retains the full horizontal exponent.
+Lean then proves a necessary correction: every valid finite upper enclosure
+is strictly above `1` for a right-half zero, including an on-line zero, because
+prefix-plus-tail is strictly larger than prefix-minus-tail. Thus the proposed
+one-cutoff target `upper_N<=1` is vacuous and must not be pursued. Define the
+intrinsic self-slack
+`delta_N=(V_N(rho)/L_N(rho))^2-1`; Lean proves `delta_N -> 0` and proves that
+`upper_N(rho,rho#)<=1+delta_N` is exactly the finite comparison
+`V_N(rho#)<=V_N(rho)`. For a zero in the closed right half-strip, eventual
+validity of this near-sharp finite-upper monotonicity is equivalent to the
+critical-line equation. No theorem currently proves the arithmetic direction
+of that equivalence.
 A valid next step must retain the distributional zero contributions in any
 Green or integration-by-parts argument; erasing them would merely erase the
 detector.
