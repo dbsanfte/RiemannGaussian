@@ -26,23 +26,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now restores the full complex phase in the sharp off-line residual
-asymptotic. For a hypothetical right-half zero and its reflected partner
-`rho# = 1-conjugate(rho)`, Lean proves
+Lean now proves a quantitative, all-order version of the sharp centered
+eta-tail asymptotic. For every `k`, every complex `s` with `Re(s) > 0`, and
+every cutoff `N`, the literal endpoint-normalized tail satisfies
 
-`(2N+1)^(rho#) * R_N(rho) -> L(rho)`,
+`||(2N+1)^s T_k(N,s) - k!/(2*s^(k+1))|| <= C(k,s)/(2N+1)`,
 
-where `L(rho)` is the explicit completion-weighted Gamma-moment constant, and
-proves `L(rho) != 0`. The faster original completed tail vanishes under this
-complex normalization; no phase, parity, conjugation, multiplicity, or
-completion factor is discarded.
+with the explicit constant
+`C(k,s) = k!*(||s|| + Re(s)/2 + 1)/(Re(s)/2)^k`. Lean derives this from the
+exact zeroth-order Euler remainder by a Cauchy derivative estimate on the disk
+of radius `Re(s)/2`, then transfers it exactly to every logarithmic moment.
+The estimate retains the complex endpoint phase and is valid at every cutoff.
 
-This is not RH. It provides the phase-bearing leading term needed to study
-the signed finite work `W_N = R_N-R_(N+1)`. Plain convergence is insufficient
-to differentiate consecutive asymptotics, so the next analytic target is a
-quantified remainder for the normalized all-order centered-tail limit. That
-remainder can then be transported into a sharp signed work estimate before
-attempting the square-root cancellation bound.
+This is not RH. It closes the rate gap that previously prevented consecutive
+cutoff differences from being justified. The next analytic step is to combine
+the two complementary completed tails, including their distinct decay rates,
+into a sharp signed asymptotic for the exact finite work
+`W_N = R_N-R_(N+1)`. The conjecture-strength task remains an unconditional
+arithmetic cancellation estimate strong enough to control the resulting work
+tail at the critical square-root scale.
 
 ## Mathematical Program
 

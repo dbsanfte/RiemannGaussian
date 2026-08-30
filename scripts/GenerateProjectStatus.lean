@@ -497,16 +497,21 @@ run_cmd do
         "(2N+1)^(rho#)R_N tends to an explicit nonzero completion-weighted Gamma " ++
         "constant, with rho#=1-conj(rho). The faster original tail vanishes at this " ++
         "complex normalization. This phase-bearing limit is not yet a signed work " ++
-        "asymptotic: differentiating consecutive cutoffs requires a quantified " ++
-        "remainder beyond bare convergence.")),
+        "asymptotic. Lean now supplies the missing quantitative input: at every " ++
+        "order k and every Re(s)>0, the complex-endpoint-normalized literal " ++
+        "centered tail differs from k!/(2*s^(k+1)) by at most an explicit " ++
+        "constant times (2N+1)^(-1), uniformly for every cutoff N. The proof " ++
+        "derives the zeroth-order Euler remainder and propagates it through all " ++
+        "derivatives by a Cauchy estimate. The next step is the sharp signed work " ++
+        "asymptotic; the arithmetic square-root cancellation remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Quantify the normalized all-order centered-tail remainder, derive the sharp " ++
-        "signed asymptotic of the explicit finite head-plus-prefix work, and prove a " ++
-        "square-root cancellation bound without assuming zero locations"))
+        "Derive the sharp signed asymptotic of the explicit finite head-plus-prefix " ++
+        "work from the proved O((2N+1)^(-1)) tail remainder, then prove a square-root " ++
+        "cancellation bound without assuming zero locations"))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
