@@ -26,20 +26,23 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Latest Update
 
-Lean now proves the direct sign-bearing transform
-`integral₀^∞ Delta * exp (-u*Delta²) du = Delta⁻¹` for every nonzero real
-gap. Equal-frequency entries are removed before integration. The resulting
-kernel is odd under index swap, and its transform of a complex-symmetric
-matrix is rigorously skew-symmetric.
+Lean now carries the direct odd transform
+`integral₀^∞ Delta * exp (-u*Delta²) du = Delta⁻¹` through the actual eta
+leading current while retaining the entire proper-time trajectory. At every
+heat scale the current is skew-symmetric: same-colour blocks vanish and the
+two mixed-colour blocks are negatives.
 
-The constant-26 Montgomery--Vaughan bound is now applied blockwise to both
-literal outer products in every genuine zero's eta leading current. Lean
-retains the exact complex signed zero-window sum, analytic multiplicities, and
-all four ordered hyperbolic channel blocks before taking a coarse norm bound.
-The two same-colour block sums vanish and the mixed-colour blocks are exact
-negatives. The remaining frontier is a cross-zero eta-arithmetic cancellation
-or coercivity estimate stronger than the proved sum-of-envelopes bound and
-strong enough to establish the critical first moment.
+The surviving `0,1` block is opened into the literal completed eta colours.
+For each genuine zero it is exactly
+`2*i*m_rho*(H(q,p)+H(q,P)+H(Q,p))`, where `H` is the integrated odd-heat
+Hilbert form, `p,q` are the partner and aligned leading increments, and `P,Q`
+are their successor features. The same formula with the scale-resolved form
+`H_u` holds at every heat time for the exact complex signed zero sum. Lean
+proves that its positive-time integral is the reciprocal-gap Hilbert block, so
+scale, phase, multiplicity, and colour survive until the final displayed
+integration. The remaining frontier is a phase-sensitive cross-zero
+arithmetic estimate strong enough to improve the proved coarse Hilbert
+envelope and establish the critical first moment.
 
 ## Mathematical Program
 

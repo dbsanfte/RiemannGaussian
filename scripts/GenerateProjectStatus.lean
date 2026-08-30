@@ -69,12 +69,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh
   },
   {
-    label := "The signed eta odd-heat leading current has a blockwise Hilbert envelope"
-    lineOne := "eta odd-heat current"
-    lineTwo := "signed block bound"
+    label := "The eta odd-heat trajectory retains an exact three-colour zero sum"
+    lineOne := "eta heat trajectory"
+    lineTwo := "3-colour zero sum"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_norm_le_sum
+      ``RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_zero_one_eq_integral_mixedChannelZeroSumAt
   },
   {
     label := "The first K eta log frequencies satisfy a Hilbert bound with constant 26"
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "bound the signed finite eta endpoint correlation.</text>\n" ++
+      "bound the scale-resolved signed eta endpoint correlation.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -691,7 +691,12 @@ run_cmd do
         "in each genuine zero's leading current, retains analytic multiplicity and the exact " ++
         "complex signed spectral-window sum, and only then proves a coarse sum-of-envelopes norm " ++
         "bound. Both same-colour block sums vanish and the mixed-colour blocks are negatives. " ++
-        "A stronger eta-arithmetic cross-zero cancellation estimate remains open.")),
+        "The full direct odd-heat trajectory is now retained before integration. At every heat " ++
+        "scale its surviving block is exactly the signed zero sum of three literal cross-colour " ++
+        "eta forms; same-colour cancellation holds pointwise. The reciprocal-gap Hilbert block " ++
+        "is proved to be the positive-time integral of that richer phase-, colour-, multiplicity-, " ++
+        "and scale-resolved carrier. A stronger eta-arithmetic cross-zero cancellation estimate " ++
+        "remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -729,7 +734,10 @@ run_cmd do
         "Its application to the two actual rank-one leading terms is now checked blockwise. " ++
         "The complete block remains the exact multiplicity-weighted complex signed zero sum, " ++
         "with same-colour cancellation and mixed-colour antisymmetry retained before the coarse " ++
-        "sum-of-envelopes norm bound. What is not yet proved is a cross-zero arithmetic estimate " ++
+        "sum-of-envelopes norm bound. The underlying direct odd-heat family is also retained " ++
+        "pointwise: at every proper time the surviving block is the exact three-colour signed " ++
+        "zero sum, and its positive-time integral is the reciprocal-gap block. What is not yet " ++
+        "proved is a cross-zero arithmetic estimate " ++
         "strong enough to improve that triangle bound. The required signed " ++
         "finite-endpoint correlation estimate and the multiplicity-one head " ++
         "estimate remain unproved; the resulting first-moment criterion is equivalent " ++

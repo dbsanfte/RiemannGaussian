@@ -176,6 +176,94 @@ theorem finiteGaussianOddHeatTransform_apply
     exact gaussianOddHeatIntegral_mul_eq_inv_mul
       (sub_ne_zero.mpr hfreq) (A i j)
 
+/-! ## The unintegrated odd heat trajectory -/
+
+/-- Sign-bearing Gaussian current at one proper time.  Unlike the unoriented
+heat kernel, this current retains the direction of every frequency gap.  Its
+coincident-frequency entries vanish pointwise, so no diagonal singularity is
+present before time integration. -/
+def finiteGaussianOddHeatCurrent {d : Type*} (frequency : d → ℝ)
+    (heat : ℝ) (A : Matrix d d ℂ) : Matrix d d ℂ :=
+  fun i j ↦
+    (((frequency i - frequency j : ℝ) : ℂ) *
+      finiteGaussianProperTimeCompression frequency heat A i j)
+
+/-- At every proper time, the odd heat current of a complex-symmetric matrix
+is skew-symmetric.  Thus orientation is retained along the full heat
+trajectory, not only after integration. -/
+theorem finiteGaussianOddHeatCurrent_transpose_of_isSymm
+    {d : Type*} (frequency : d → ℝ) (heat : ℝ)
+    (A : Matrix d d ℂ) (hA : A.IsSymm) :
+    (finiteGaussianOddHeatCurrent frequency heat A)ᵀ =
+      -finiteGaussianOddHeatCurrent frequency heat A := by
+  ext i j
+  simp only [Matrix.transpose_apply, Matrix.neg_apply,
+    finiteGaussianOddHeatCurrent, finiteGaussianProperTimeCompression,
+    Matrix.hadamard_apply, finiteGaussianProperTimeKernelMatrix]
+  rw [hA.apply i j]
+  rw [show (frequency j - frequency i) ^ 2 =
+      (frequency i - frequency j) ^ 2 by ring]
+  rw [show frequency j - frequency i =
+      -(frequency i - frequency j) by ring]
+  push_cast
+  ring
+
+/-- The direct reciprocal-gap transform is the entrywise positive-time
+integral of the full odd heat trajectory.  This statement also covers equal
+frequencies because their trajectory is identically zero. -/
+theorem finiteGaussianOddHeatTransform_apply_eq_integral_current
+    {d : Type*} (frequency : d → ℝ) (A : Matrix d d ℂ) (i j : d) :
+    finiteGaussianOddHeatTransform frequency A i j =
+      ∫ u : ℝ in Set.Ioi 0,
+        finiteGaussianOddHeatCurrent frequency u A i j := by
+  unfold finiteGaussianOddHeatTransform finiteGaussianOddHeatCurrent
+  by_cases hfreq : frequency i = frequency j
+  · simp [hfreq]
+  · rw [if_neg hfreq]
+
+/-- Every entry of the full odd heat trajectory is genuinely integrable over
+positive proper time. -/
+theorem finiteGaussianOddHeatCurrent_apply_integrableOn
+    {d : Type*} (frequency : d → ℝ) (A : Matrix d d ℂ) (i j : d) :
+    IntegrableOn
+      (fun u : ℝ ↦ finiteGaussianOddHeatCurrent frequency u A i j)
+      (Set.Ioi 0) := by
+  unfold finiteGaussianOddHeatCurrent
+  simp only [finiteGaussianProperTimeCompression, Matrix.hadamard_apply,
+    finiteGaussianProperTimeKernelMatrix]
+  by_cases hfreq : frequency i = frequency j
+  · simp [hfreq]
+  · have hneg : -(frequency i - frequency j) ^ 2 < 0 :=
+      neg_neg_of_pos (sq_pos_of_ne_zero (sub_ne_zero.mpr hfreq))
+    have hexpR := integrableOn_exp_mul_Ioi hneg 0
+    have hexpC : IntegrableOn
+        (fun u : ℝ ↦
+          ((Real.exp ((-(frequency i - frequency j) ^ 2) * u) : ℝ) : ℂ))
+        (Set.Ioi 0) := hexpR.ofReal
+    have hscaled :=
+      (hexpC.const_mul
+        (((frequency i - frequency j : ℝ) : ℂ))).mul_const (A i j)
+    change Integrable
+      (fun u : ℝ ↦
+        (((frequency i - frequency j : ℝ) : ℂ) *
+          (((Real.exp (-u * (frequency i - frequency j) ^ 2) : ℝ) : ℂ) *
+            A i j))) (volume.restrict (Set.Ioi 0))
+    have hfun :
+        (fun u : ℝ ↦
+          (((frequency i - frequency j : ℝ) : ℂ) *
+            (((Real.exp (-u * (frequency i - frequency j) ^ 2) : ℝ) : ℂ) *
+              A i j))) =
+          (fun u : ℝ ↦
+            (((frequency i - frequency j : ℝ) : ℂ) *
+              ((Real.exp (-(frequency i - frequency j) ^ 2 * u) : ℝ) : ℂ) *
+              A i j)) := by
+      funext u
+      rw [show -u * (frequency i - frequency j) ^ 2 =
+          -(frequency i - frequency j) ^ 2 * u by ring]
+      ring
+    rw [hfun]
+    exact hscaled
+
 /-! ## Gaussian semigroup and reciprocal-gap transform -/
 
 /-- The finite Gaussian kernel has the exact additive proper-time semigroup

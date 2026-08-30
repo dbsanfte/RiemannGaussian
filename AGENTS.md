@@ -932,11 +932,22 @@ analytic multiplicity. The complete finite-window block is the exact complex
 signed zero sum before the triangle inequality, with an explicit sum of
 constant-26 envelopes. The aggregate transform is skew-symmetric: both
 same-colour block sums vanish and the two mixed-colour blocks are negatives.
-Thus the Gaussian--Hilbert bridge and rank-two coefficient interface are
-closed without discarding sign or channel data. The remaining hard step is an
-eta-arithmetic cross-zero cancellation or coercivity estimate substantially
-stronger than the recorded sum-of-envelopes bound, strong enough to prove the
-critical first moment. No such estimate is currently proved.
+Lean now opens the surviving `0,1` block back into the literal completed eta
+colours. If `p,q` are the partner and aligned leading increments and `P,Q`
+their successor features, every zero contributes exactly
+`2*I*m_rho*(H(q,p)+H(q,P)+H(Q,p))`, where `H` is the direct odd-heat transpose
+form. All partner--partner and aligned--aligned terms cancel algebraically.
+The same reduction is now proved before time integration. At every proper
+time, the complete window is the exact complex signed sum of the corresponding
+three-colour forms; the full matrix trajectory is pointwise skew, and the
+same-colour blocks vanish pointwise. Lean then proves that the reciprocal-gap
+Hilbert block is the positive-time integral of this richer scale-resolved zero
+sum. Thus the Gaussian--Hilbert bridge and rank-two coefficient interface are
+closed without discarding orientation, phase, channel, or heat-scale data.
+The remaining hard step is an eta-arithmetic cross-zero cancellation or
+coercivity estimate substantially stronger than the recorded sum-of-envelopes
+bound, strong enough to prove the critical first moment. No such estimate is
+currently proved.
 
 ## Soundness invariant
 
@@ -968,6 +979,26 @@ every commit.
 The compiled project must contain no project-defined axioms. The status
 generator rejects any such axiom, even when it is disconnected from a
 displayed frontier theorem.
+
+## Information-flow invariant
+
+Treat every theorem interface as a transport decision. Before applying a
+lossy operation such as a norm, absolute value, trace, determinant, scalar
+integration, asymptotic limit, or channel sum, identify which phase, sign,
+orientation, multiplicity, scale, correlation, and cutoff data it forgets.
+
+- Fork, do not discard: retain the richer source object and prove the lossy
+  summary as a named downstream theorem.
+- Keep sign-bearing odd and even channels, completion phases, reflected-zero
+  colours, and the full heat-time family available until a proved estimate
+  uses their cancellation or ordering leverage.
+- Prefer commuting-diagram theorems that connect the rich carrier to each
+  compressed view, so later work can move back upstream without rebuilding it.
+- Before investing in a compressed statistic, test whether distinct
+  on-line/off-line or positive/negative configurations can share that
+  statistic. If so, add a companion channel or stronger carrier first.
+- Collapse information at the latest theorem where it produces a concrete
+  estimate. Never replace an exact signed identity by only its triangle bound.
 
 ## Proof-slice workflow
 

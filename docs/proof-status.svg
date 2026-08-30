@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 428 modules · 10880 declarations · 9272 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 429 modules · 10937 declarations · 9316 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -65,9 +65,9 @@
   </g>
   <g class="proved bridge">
     <rect x="180" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_norm_le_sum</title>
-    <text x="252" y="173">eta odd-heat current</text>
-    <text x="252" y="191">signed block bound  ✓</text>
+    <title>RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_zero_one_eq_integral_mixedChannelZeroSumAt</title>
+    <text x="252" y="173">eta heat trajectory</text>
+    <text x="252" y="191">3-colour zero sum  ✓</text>
   </g>
   <g class="proved unconditional">
     <rect x="340" y="150" width="145" height="54" rx="9"/>
@@ -90,5 +90,5 @@
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: bound the signed finite eta endpoint correlation.</text>
+  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: bound the scale-resolved signed eta endpoint correlation.</text>
 </svg>
