@@ -1086,10 +1086,14 @@ geometric blocks, the Hermitian Gram retains full represented rank. Pulling the
 same multiplicity-weighted synthesis matrix `C` back to zero-index space now
 gives the square metric `K = Cᴴ C`. Actual packed-feature linear independence
 makes `C` injective, so Lean proves that `K` and `K⁻¹` are both positive
-definite for one odd prime and every sufficiently late block. The next
-obligation is to pull the signed ledger back to zero-index space, whiten it
-with this metric, and prove a normalized Hermitian contraction from which an
-arithmetic trace or spectral estimate can be extracted. That quantitative
+definite for one odd prime and every sufficiently late block. Lean now pulls
+the signed coordinate block back as `B = Cᴴ Signed C`. Congruence gives
+`K² - B` and `K² + B` positive semidefinite, and normalization by `K⁻¹`
+produces a Hermitian matrix `A = K⁻¹ B K⁻¹` with both `I - A` and `I + A`
+positive semidefinite. One odd prime makes this contraction conclusion hold
+at every sufficiently late block of each nonnegative finite spectral window.
+The next obligation is to extract an eta-arithmetic trace or spectral estimate
+from `A` that excludes the sharp finite obstruction. That quantitative
 estimate remains necessary for any stronger zeta-zero proportion and
 ultimately for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or

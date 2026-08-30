@@ -405,6 +405,7 @@ import RiemannGaussian.Hybrid.EtaGeometricPackedFeatureRank
 import RiemannGaussian.Hybrid.EtaGeometricPackedFeatureGram
 import RiemannGaussian.Hybrid.EtaGeometricSignedGramLedger
 import RiemannGaussian.Hybrid.EtaGeometricZeroGram
+import RiemannGaussian.Hybrid.EtaGeometricNormalizedSignedPullback
 import RiemannGaussian.Hybrid.HigherMomentCeiling
 import RiemannGaussian.Hybrid.HigherMomentHeatCeiling
 import RiemannGaussian.Hybrid.HigherMomentIndependentHeat

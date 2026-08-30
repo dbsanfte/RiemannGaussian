@@ -45,26 +45,27 @@ represented distinct zeros. On every symmetric window, Lean now couples that
 Gram to the complex-symmetric signed eta block through two exact positive
 channels, `Gram − Signed` and `Gram + Signed`. Pulling the same synthesis back
 to zero-index space gives an eventually positive-definite metric `K = Cᴴ C`
-whose inverse is also positive definite. The immediate route is to use this
-metric to whiten the signed pullback, prove a normalized Hermitian contraction,
-and then derive an arithmetic observable that excludes the sharp three-atom
-obstruction. No stronger zero proportion will be claimed until that
-eta-specific estimate is proved.
+whose inverse is also positive definite. Lean now uses this metric to normalize
+the signed pullback into a Hermitian matrix `A` satisfying both `I − A ⪰ 0`
+and `I + A ⪰ 0`. The immediate route is to derive a literal eta-arithmetic
+trace or spectral observable for this contraction that excludes the sharp
+three-atom obstruction. No stronger zero proportion will be claimed until
+that eta-specific estimate is proved.
 
 ## Latest Update
 
-Lean now pulls the multiplicity-weighted eta synthesis matrix `C` back from
-packed cutoff/colour coordinates to the represented-zero index space. The
-resulting square Hermitian Gram is exactly `K = Cᴴ C`. Linear independence of
-the actual packed eta features makes `C` injective, so Lean proves that `K` is
-positive definite and that `K⁻¹` is positive definite as well.
+Lean now defines the signed zero-space pullback `B = Cᴴ Signed C` alongside
+the positive metric `K = Cᴴ C`. Congruence of the checked coordinate ledger
+proves the exact bounds `K² − B ⪰ 0` and `K² + B ⪰ 0`. When the actual packed
+eta features are independent, `K` is positive definite, so the normalized
+matrix `A = K⁻¹ B K⁻¹` is Hermitian and satisfies both
+`I − A ⪰ 0` and `I + A ⪰ 0`.
 
-For every finite zeta-zero window, Lean proves that one odd prime base makes
-both conclusions hold at every sufficiently late geometric block. This is an
-invertible normalization metric, not an `18/18` certificate. The next checked
-step is to pull back the signed colour ledger, whiten it with `K⁻¹`, and prove
-the resulting normalized Hermitian operator is a contraction before seeking
-the eta-arithmetic spectral estimate.
+For every nonnegative finite zeta-zero window, Lean proves that one odd prime
+base makes this contraction theorem hold at every sufficiently late geometric
+block. This is a certificate-ready normalization, not an `18/18` result. The
+next hard step is an eta-arithmetic trace or spectral estimate for `A` strong
+enough to improve the sharp abstract `13/18` ceiling.
 
 ## Mathematical Program
 
@@ -77,7 +78,8 @@ The current program combines four connected lines:
 - The **eta arithmetic branch** realizes completed eta moments as explicit
   finite interval and endpoint sums, develops exact cutoff work laws, and uses
   geometric sampling to produce full-rank actual feature families and their
-  multiplicity-weighted positive Gram companion.
+  multiplicity-weighted positive Gram companion and normalized signed
+  contraction.
 - The **Gaussian/heat branch** supplies positive and signed heat flows,
   higher and mixed-scale moment Grams, projection leakage, closed paths, and
   the odd proper-time transform connecting heat kernels to the checked

@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "The full-rank positive eta Gram dominates the signed block in both directions"
-    lineOne := "joint eta carriers"
-    lineTwo := "Gram ± signed ≽ 0"
+    label := "The normalized signed eta pullback is eventually a Hermitian contraction"
+    lineOne := "normalized eta pullback"
+    lineTwo := "I ± A ≽ 0"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.exists_prime_eventually_fullRank_zeroWindowHermitianGram_and_signed_dominance
+      ``RiemannGaussian.exists_prime_eventually_pairedEtaGeometricNormalizedSignedZeroPullback_contraction
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "whiten the signed eta pullback and estimate its normalized spectrum.</text>\n" ++
+      "derive an eta-arithmetic spectral estimate for the normalized contraction.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -763,8 +763,10 @@ run_cmd do
         "Thus Gram-Signed is twice the positive imaginary block and Gram+Signed is twice the positive " ++
         "on-line-plus-real block. Pulling the same synthesis matrix C back to zero-index space gives " ++
         "K=C^*C. Actual packed-feature linear independence makes C injective, so one odd prime makes " ++
-        "K and its inverse positive definite at every sufficiently late block. The signed pullback " ++
-        "has not yet been whitened and its normalized arithmetic spectral estimate has not been proved. " ++
+        "K and its inverse positive definite at every sufficiently late block. Lean now pulls the " ++
+        "signed coordinate block back as B=C^*Signed*C. Congruence gives K^2-B and K^2+B positive " ++
+        "semidefinite. The normalized A=K^-1*B*K^-1 is Hermitian with I-A and I+A positive " ++
+        "semidefinite. Its eta-arithmetic trace or spectral estimate has not yet been proved. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -867,8 +869,10 @@ run_cmd do
         "is twice the positive off-line-imaginary block and their sum is twice the positive on-line-" ++
         "plus-real block. Both combinations are positive semidefinite. Pulling the same synthesis " ++
         "matrix C back to zero-index space gives K=C^*C; its injectivity makes K and its inverse " ++
-        "positive definite for one odd prime at all sufficiently late blocks. The remaining step is " ++
-        "to whiten the signed pullback and derive a normalized arithmetic trace or spectral estimate. " ++
+        "positive definite for one odd prime at all sufficiently late blocks. The signed pullback " ++
+        "B=C^*Signed*C obeys K^2-B and K^2+B positive semidefinite. Its normalization " ++
+        "A=K^-1*B*K^-1 is Hermitian with I-A and I+A positive semidefinite. The remaining step is " ++
+        "to derive an eta-arithmetic trace or spectral estimate for this contraction. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
