@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Eta 13/18 and finite 18/18 reduce to two coloured moments"
-    lineOne := "eta effective rank"
-    lineTwo := "2-moment targets"
+    label := "Eta certificate targets are literal frame-potential bounds"
+    lineOne := "eta frame potential"
+    lineTwo := "zero-pair squares"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.exists_prime_eventually_pairedEtaGeometricReflectionEvenColouredEffectiveRankCertificateInterface
+      ``RiemannGaussian.exists_prime_eventually_pairedEtaGeometricReflectionEvenFramePotentialCertificateInterface
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove the literal eta two-moment inequality; no improved proportion yet.</text>\n" ++
+      "bound the literal eta frame potential; no improved proportion yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -804,17 +804,16 @@ run_cmd do
         "finite scale and converges to zero mass. Lean proves that the certificate exceeds 13/18 " ++
         "exactly when this trace crosses below 5/36 at some nonnegative scale; the sharp model " ++
         "stays strictly above 5/36 at every finite scale. " ++
-        "A stronger eta-arithmetic cross-zero cancellation estimate " ++
-        "remains open.")),
+        "The literal reflection-even eta frame-potential upper bound remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Derive the literal eta inequality 31*N*Re(path2)<36*Re(path1)^2 on an " ++
+        "Derive the literal eta inequality 31*N*potential<36*mass^2 on an " ++
         "eventually separated geometric window. The checked effective-rank bridge makes " ++
         "this sufficient to beat 13/18, while the stronger endpoint ceiling " ++
-        "N*Re(path2)<=Re(path1)^2 is sufficient for finite-window 18/18. " ++
+        "N*potential<=mass^2 is sufficient for finite-window 18/18. " ++
         "Lean already proves F_N=L_N+R_N, the critical " ++
         "summability of R_N, the exact cosine/crossover factorization of the higher-" ++
         "multiplicity L_N kernel, the finite on-line/off-line block decomposition, " ++
@@ -933,8 +932,12 @@ run_cmd do
         "real length-one and length-two coloured path sums. The explicit inequality " ++
         "31*N*Re(path2)<36*Re(path1)^2 is sufficient for a proportion above 13/18; the endpoint " ++
         "ceiling N*Re(path2)<=Re(path1)^2 is sufficient for every represented zero to be critical. " ++
-        "These are checked implications, not proved eta estimates. The remaining step is to derive " ++
-        "one of their premises from the literal eta correlations. " ++
+        "The two paths are now opened as a literal reflection-even eta frame: one weighted atom " ++
+        "per critical zero and one real-coordinate atom per upper off-line pair. The first path is " ++
+        "its weighted squared-norm mass and the second is its full weighted frame potential. Every " ++
+        "pair term is a checked nonnegative squared real eta correlation, with both atom colours " ++
+        "retained. These are checked implications and identities, not proved eta estimates. The " ++
+        "remaining step is to upper-bound that literal frame potential. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
@@ -943,7 +946,7 @@ run_cmd do
         "does not instantiate the eta window. The independent ordinary heat trace now separates " ++
         "strict improvement exactly: it crosses below 5/36 at some nonnegative scale if and only if " ++
         "the certificate is greater than 13/18, while the sharp model never crosses at finite scale. " ++
-        "What is not yet proved is either colour-resolved two-moment premise (and hence the " ++
+        "What is not yet proved is either literal frame-potential premise (and hence the " ++
         "coordinate carrier's arithmetic crossing), another " ++
         "independent observable nonzero on " ++
         "the sharp root channels, the additional normalized " ++

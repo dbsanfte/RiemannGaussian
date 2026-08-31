@@ -55,25 +55,29 @@ transported to the genuine coordinate carrier `C E₊ Cᴴ`, proved equal to the
 positive on-line-plus-off-line-real eta block, and expanded into ordered paths
 that retain both colours on every edge. Lean now also proves that this
 carrier's rank is exactly `#critical + #upper-off-line` and converts its first
-two coloured path moments into explicit sufficient certificate targets. The
-immediate frontier is an eta-arithmetic proof of the strict `13/18` target;
-successively stronger information-preserving moment bounds are the route
-toward `18/18`. No improved zeta-zero proportion will be claimed until one of
-those arithmetic premises is itself checked in Lean.
+two coloured path moments into explicit sufficient certificate targets. Those
+moments are now opened further as the mass and frame potential of literal eta
+atoms, with critical and upper-off-line-real colours kept distinct. The
+immediate frontier is an eta-arithmetic upper bound for that frame potential;
+successively stronger information-preserving bounds are the route toward
+`18/18`. No improved zeta-zero proportion will be claimed until one of those
+arithmetic premises is itself checked in Lean.
 
 ## Latest Update
 
-For every Hermitian matrix, Lean now derives the effective-rank inequality
-`rtrace(A)² ≤ rank(A) · frobSq(A)` directly from its nonzero eigenvalues.
-On the reflection-even eta coordinate carrier, both moments are exactly the
-real parts of the length-one and length-two colour-resolved closed-path sums.
-Actual feature separation supplies one odd prime base for which these
-interfaces hold at every sufficiently late geometric block. If `N` is the
-represented window size, the checked implication
-`31 N Re(path₂) < 36 Re(path₁)²` yields a critical-zero fraction greater
-than `13/18`. The stronger ceiling `N Re(path₂) ≤ Re(path₁)²` yields
-`#critical = N`, the finite-window `18/18` endpoint. Neither arithmetic
-inequality has been proved for eta data yet; they are now the literal targets.
+Lean now realizes the reflection-even carrier as a literal weighted eta
+frame: one atom for each critical zero and one real-coordinate atom for each
+upper off-line pair. Its trace is exactly the weighted squared-norm mass, and
+its Frobenius square is exactly the full double frame potential. Every pair
+term is proved to be a nonnegative squared real eta correlation; sign and the
+critical/off-line-real colour remain explicit until that conclusion.
+
+The earlier coloured-path targets are proved exactly equivalent to these
+frame formulas. Thus `31 N · potential < 36 · mass²` suffices for `>13/18`,
+while `N · potential ≤ mass²` suffices for finite-window `18/18`. One odd
+prime base makes the interfaces valid at every sufficiently late block. No
+upper bound for the literal frame potential is proved yet, so the zero
+proportion has not improved.
 
 ## Mathematical Program
 

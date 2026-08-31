@@ -1160,13 +1160,18 @@ critical-zero proportion above `13/18`, while
 finite-window `18/18` conclusion. These implications do not prove either
 premise. The existing geometric feature-separation theorem discharges the
 positive-definiteness condition for one odd prime base at every sufficiently
-late block. The next obligation is to derive the first literal two-moment
-inequality from eta arithmetic, then strengthen it toward the endpoint
-without discarding its sign and colour data.
+late block. Lean now opens those two paths one step further as a literal
+reflection-even eta frame, indexed by critical zeros and upper off-line pairs.
+Its length-one mass is the weighted sum of squared atom norms; its length-two
+frame potential is the complete weighted double sum of squared real eta
+correlations. Every pair term is checked nonnegative, with both atom colours
+retained through the proof. The next obligation is to upper-bound this literal
+frame potential strongly enough for the first inequality, then strengthen the
+bound toward the endpoint without collapsing the richer upstream channels.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, now concretely sufficient if it proves the displayed colour-resolved
-two-moment inequality. No such estimate is currently proved.
+frame-potential inequality. No such estimate is currently proved.
 
 ## Soundness invariant
 
