@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "The pointwise eta reserve floor has a uniform long-block ceiling"
-    lineOne := "pointwise eta floor"
-    lineTwo := "long-block ceiling"
+    label := "The exact eta reserve retains sixteen signed colour interactions"
+    lineOne := "signed eta reserve"
+    lineTwo := "16 interactions"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.eventually_forall_pairedEtaGeometricUpperWindowNonnegativeReserveGapLower_eq_zero
+      ``RiemannGaussian.exists_prime_eventually_pairedEtaGeometricReflectionEvenLongBlockSignedMetricReserveCertificateInterface
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "replace the pointwise triangle floor by a signed aggregate; no improved proportion yet.</text>\n" ++
+      "bound the exact 16-interaction signed reserve for 13/18; no improved proportion yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -861,20 +861,27 @@ run_cmd do
         "uniformly in the block start, every upper-pair floor is eventually negative and the " ++
         "nonnegative complete upper-window floor is eventually exactly zero. This does not bound " ++
         "the actual reserve; it proves that a successful long-block estimate must retain signed " ++
-        "four-colour cancellation before applying triangle inequalities.")),
+        "four-colour cancellation before applying triangle inequalities. Lean now constructs that " ++
+        "upstream carrier: the exact metric contraction is a signed sum of four colour terms, and " ++
+        "its real square is the ordered sum of all sixteen cross-colour products. After exact " ++
+        "multiplicity weighting and upper-window aggregation, this carrier equals the literal " ++
+        "upper--upper decorrelation reserve, is nonnegative, and lies below the complete reserve. " ++
+        "One odd prime eventually makes thresholds on this exact signed aggregate imply >13/18 " ++
+        "and 18/18. Neither threshold estimate is yet proved.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Construct and bound a signed pre-triangle upper-window reserve aggregate large enough to establish " ++
+        "Bound the checked exact signed pre-triangle upper-window reserve aggregate large enough to establish " ++
         "(31*N-36)*potential<36*floor on an eventually separated geometric window. " ++
         "The checked exact identity mass^2=potential+reserve makes this equivalent to " ++
         "the frame-moment premise sufficient to beat 13/18, while the endpoint bound " ++
         "(N-1)*potential<=floor is sufficient for finite-window 18/18. The current pointwise " ++
         "coercivity-minus-triangle-envelope floor cannot do this merely by increasing block " ++
         "length: Lean proves its nonnegative truncation eventually vanishes uniformly in the " ++
-        "block start. " ++
+        "block start. The replacement carrier is now constructed and proved equal to the actual " ++
+        "upper--upper reserve while retaining all sixteen ordered cross-colour interactions. " ++
         "Lean already proves F_N=L_N+R_N, the critical " ++
         "summability of R_N, the exact cosine/crossover factorization of the higher-" ++
         "multiplicity L_N kernel, the finite on-line/off-line block decomposition, " ++
@@ -1062,7 +1069,11 @@ run_cmd do
         "feed the same >13/18 and 18/18 conclusions. Lean now proves that increasing M cannot make " ++
         "the present pointwise coercivity-minus-triangle-envelope floor asymptotically useful: " ++
         "uniformly in the block start, its nonnegative upper-window truncation is eventually zero. " ++
-        "A signed pre-triangle window aggregate is therefore required. " ++
+        "The required pre-triangle carrier is now explicit: every full metric contraction is split " ++
+        "into four signed colour terms, its square retains all sixteen ordered interactions, and " ++
+        "the multiplicity-weighted window sum is exactly the actual upper--upper reserve. It feeds " ++
+        "both long-block certificate implications directly. Its arithmetic threshold estimate " ++
+        "remains open. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

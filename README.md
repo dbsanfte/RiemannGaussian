@@ -26,24 +26,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian is pursuing a phase-preserving eta zero-window certificate that beats Anthropic's two-thirds benchmark and ultimately reaches `18/18`. Lean now proves that longer blocks cannot rescue the current pointwise coercivity-minus-triangle-envelope floor: it eventually vanishes uniformly in the block start. The frontier is therefore to retain and estimate the signed four-colour correlation aggregate before triangle inequalities destroy cancellation.
+RiemannGaussian is pursuing a phase-preserving eta zero-window certificate that beats Anthropic's two-thirds benchmark and ultimately reaches `18/18`. Lean now routes all four reflected/original colours and their 16 signed cross-interactions into an exact upper-window reserve that feeds both certificate thresholds. The frontier is to bound its coherent correlation part—or lower-bound the reserve itself—strongly enough for `13/18`, then `18/18`.
 
 ## Latest Update
 
-Lean now proves a sharp limitation of the current explicit long-block floor.
-For every upper zero pair, its transported atom coercivity is at most the
-exact two-colour coefficient energy times `M / (2 q^(M-1))`. The squared
-pointwise triangle envelope, meanwhile, has a strictly positive lower bound
-given by the product of both coefficient energies and a block-independent
-four-gap constant.
+Lean now exposes each exact upper-pair metric correlation as the signed sum of
+four reflected/original colour contributions. Its real square is proved equal
+to the full ordered sum of all 16 cross-colour products, so phase cancellation
+survives rather than being replaced by four separate absolute-value bounds.
 
-Since the first rate tends to zero, Lean proves uniformly over every block
-start that each pair floor is eventually negative. The complete weighted
-upper-window floor is therefore eventually nonpositive, and its nonnegative
-truncation is exactly zero. This is a theorem about the present lower-bound
-method, not the actual certificate reserve: it rules out obtaining long-block
-leverage by extending the same pointwise triangle estimate and makes a signed
-pre-triangle aggregate the next required object.
+After analytic-multiplicity weighting and summation over every ordered
+distinct upper pair, this signed carrier is proved exactly equal to the
+literal upper--upper decorrelation reserve. It is therefore nonnegative and
+bounded by the complete reflection-even reserve with no asymptotic envelope.
+For every eligible long block, Lean selects an odd prime base that eventually
+makes either signed-aggregate threshold imply respectively a proportion above
+`13/18` or the finite-window `18/18` conclusion. The thresholds themselves
+remain open; the active arithmetic problem now acts on the information-rich
+16-interaction carrier rather than the pointwise floor whose long-block
+collapse was just proved.
 
 ## Mathematical Program
 
