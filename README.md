@@ -57,27 +57,30 @@ that retain both colours on every edge. Lean now also proves that this
 carrier's rank is exactly `#critical + #upper-off-line` and converts its first
 two coloured path moments into explicit sufficient certificate targets. Those
 moments are now opened further as the mass and frame potential of literal eta
-atoms, with critical and upper-off-line-real colours kept distinct. The
-immediate frontier is an eta-arithmetic upper bound for that frame potential;
-successively stronger information-preserving bounds are the route toward
+atoms, with critical and upper-off-line-real colours kept distinct. Lean now
+separates the potential into diagonal self-mass and distinct-pair correlation,
+and isolates the complementary pairwise decorrelation reserve without taking
+absolute-value envelopes. The immediate frontier is an eta-arithmetic lower
+bound for that reserve relative to the surviving correlation potential;
+successively stronger colour- and phase-preserving bounds are the route toward
 `18/18`. No improved zeta-zero proportion will be claimed until one of those
 arithmetic premises is itself checked in Lean.
 
 ## Latest Update
 
-Lean now realizes the reflection-even carrier as a literal weighted eta
-frame: one atom for each critical zero and one real-coordinate atom for each
-upper off-line pair. Its trace is exactly the weighted squared-norm mass, and
-its Frobenius square is exactly the full double frame potential. Every pair
-term is proved to be a nonnegative squared real eta correlation; sign and the
-critical/off-line-real colour remain explicit until that conclusion.
+Lean now opens the reflection-even eta frame potential pair by pair. It proves
+the exact identity `mass² = potential + reserve`, where `reserve` is the sum
+over ordered distinct coloured atoms of
+`w_a w_b (‖v_a‖²‖v_b‖² - correlation(a,b)²)`. Complex
+Cauchy--Schwarz proves every individual reserve term nonnegative, using the
+already-checked fact that the relevant eta correlations are real.
 
-The earlier coloured-path targets are proved exactly equivalent to these
-frame formulas. Thus `31 N · potential < 36 · mass²` suffices for `>13/18`,
-while `N · potential ≤ mass²` suffices for finite-window `18/18`. One odd
-prime base makes the interfaces valid at every sufficiently late block. No
-upper bound for the literal frame potential is proved yet, so the zero
-proportion has not improved.
+The certificate thresholds are now exact angular-separation targets:
+`(31N-36) · potential < 36 · reserve` is equivalent to the premise that
+suffices for `>13/18`, and `(N-1) · potential ≤ reserve` is equivalent to
+the finite-window `18/18` premise. One odd prime base makes both conditional
+interfaces valid at every sufficiently late block. Neither reserve lower
+bound has been proved arithmetically, so the zero proportion has not improved.
 
 ## Mathematical Program
 

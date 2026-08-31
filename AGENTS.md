@@ -1165,13 +1165,18 @@ reflection-even eta frame, indexed by critical zeros and upper off-line pairs.
 Its length-one mass is the weighted sum of squared atom norms; its length-two
 frame potential is the complete weighted double sum of squared real eta
 correlations. Every pair term is checked nonnegative, with both atom colours
-retained through the proof. The next obligation is to upper-bound this literal
-frame potential strongly enough for the first inequality, then strengthen the
-bound toward the endpoint without collapsing the richer upstream channels.
-The remaining hard step is an eta-arithmetic cross-zero cancellation or
-coercivity estimate substantially stronger than the recorded sum-of-envelopes
-bound, now concretely sufficient if it proves the displayed colour-resolved
-frame-potential inequality. No such estimate is currently proved.
+retained through the proof. Lean now splits that potential into diagonal
+self-mass and distinct-pair correlation and defines the complementary
+decorrelation reserve as the weighted sum of
+`norm_a²*norm_b²-correlation(a,b)²` over ordered distinct coloured atoms.
+Complex Euclidean Cauchy--Schwarz proves every reserve summand nonnegative,
+and Lean proves the exact conservation law `mass²=potential+reserve`. The
+`13/18` premise is therefore exactly
+`(31*N-36)*potential < 36*reserve`; the finite-window `18/18` premise is
+exactly `(N-1)*potential ≤ reserve`. The next obligation is an eta-arithmetic
+angular-separation estimate strong enough for the first reserve inequality,
+then a strengthening toward the endpoint without collapsing the richer
+upstream channels. No such lower bound is currently proved.
 
 ## Soundness invariant
 
