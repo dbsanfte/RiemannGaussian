@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.externalZeta23_montgomeryTaylor_simple_projectFiniteWindows
   },
   {
-    label := "The exact Zeta23 defect bounds literal eta negative inertia"
-    lineOne := "eta negative inertia"
-    lineTwo := "exact HD(1) defect"
-    role := "external"
+    label := "The literal endpoint sampler converges uniformly to the exact inverse-sampling kernel"
+    lineOne := "literal full sampler"
+    lineTwo := "MT kernel + 14w/L"
+    role := "bridge"
     theoremName :=
-      ``RiemannGaussian.externalZeta23_montgomeryTaylor_etaBlockNegativeInertia
+      ``RiemannGaussian.Zeta23InverseSampling.atD_fullNormalizedCorrelation_close_montgomeryTaylorKernel
   }
 ]
 
@@ -203,7 +203,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     nodes ++
     "  <g class=\"open\">\n" ++
     "    <rect x=\"690\" y=\"108\" width=\"150\" height=\"62\" rx=\"10\"/>\n" ++
-    "    <text x=\"765\" y=\"133\">eta arithmetic bound</text>\n" ++
+    "    <text x=\"765\" y=\"133\">finite-sample tail</text>\n" ++
     "    <text x=\"765\" y=\"153\">NO NEW PROPORTION</text>\n" ++
     "  </g>\n" ++
     "  <g class=\"goal\">\n" ++
@@ -278,8 +278,10 @@ run_cmd do
       ("The build rechecks the pinned external Zeta23 unconditional two-thirds and exact " ++
         "multiplicity-aware Montgomery--Taylor HD(1) simple-zero theorems, proves in Lean that " ++
         "HD(1) > 2/3, and derives the corresponding project-native simple finite-window form and " ++
-        "exact negative-inertia bound for " ++
-        "the literal signed eta block. RiemannGaussian has exact analytic, eta, " ++
+        "exact negative-inertia bound for the literal signed eta block. The project now also " ++
+        "retains the simple-zero convex defect, pays disjoint triple correlations, and proves " ++
+        "that the complete literal endpoint sampler is within 14w/L of the exact " ++
+        "Montgomery--Taylor kernel. RiemannGaussian has exact analytic, eta, " ++
         "heat, matrix, and contour infrastructure, but no unconditional eta certificate " ++
         "currently improves that external zeta-zero proportion. Conditional threshold " ++
         "interfaces and generic finite models are not counted as achieved proportions.")),
@@ -315,12 +317,13 @@ run_cmd do
     ]),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
-      ("label", .str "Actual eta zero-proportion certification"),
+      ("label", .str "Actual inverse-sampling zero-proportion certification"),
       ("status", .str "open"),
       ("target", .str
-        ("Prove an unconditional eta-arithmetic inequality that yields a zeta " ++
-          "zero-proportion strictly above the imported exact HD(1) baseline. " ++
-          "No such theorem is currently present; 13/18 and 18/18 remain targets."))
+        ("Control the finite sampling collar, aggregate the checked disjoint-triple " ++
+          "kernel certificate, and derive a literal zeta zero-proportion strictly above " ++
+          "the imported exact HD(1) baseline. No such proportion theorem is currently " ++
+          "present; 13/18 and 18/18 remain targets."))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

@@ -26,16 +26,16 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian is pursuing an unconditional, phase-preserving eta bound for simple critical-line zeta zeros that strictly improves the imported multiplicity-aware Montgomery--Taylor `HD(1)` benchmark, then reaches `13/18` and ultimately `18/18`. No project theorem improves that baseline; conditional threshold interfaces are not certificates.
+RiemannGaussian is pursuing a phase-preserving inverse-sampling certificate for literal simple critical zeta zeros. The checked zero side now retains nonlinear Gram defect and disjoint triple correlations, while the complete endpoint sampler approaches the exact Montgomery--Taylor kernel with explicit error. Next: control the finite sampling collar and aggregate the triples to beat `HD(1)`, then reach `13/18` and `18/18`.
 
 ## Latest Update
 
-The complete pinned Zeta23 multiplicity-aware chain is now rechecked under the
-project gate. Lean proves the literal headline bound `HD(1)` for simple
-critical-line zeros over the analytic-multiplicity zero count and identifies
-its numerator with the project-native simple dyadic window. This corrects the
-earlier distinct-critical-only bridge. The eta negative-inertia defect remains
-checked separately; no project theorem improves the external baseline.
+Lean now proves the literal Zeta23 zero-side ledger pays capped correlations
+over every disjoint triple of simple critical zeros, with an exact charge for
+zero padding. Independently, the complete literal endpoint sample correlation,
+normalized by its actual Poisson mass, is within `14w/L` of the exact
+Montgomery--Taylor kernel. The finite sample collar and asymptotic triple
+aggregation remain open; no project theorem yet improves `HD(1)`.
 
 ## Mathematical Program
 

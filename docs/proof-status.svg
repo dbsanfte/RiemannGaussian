@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 488 modules · 12318 declarations · 10415 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 491 modules · 12486 declarations · 10565 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · milestones standard-only</text>
   <text class="section" x="20" y="64">CHECKED RESULTS, IDENTITIES, AND ATTRIBUTED BASELINE</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -75,15 +75,15 @@
     <text x="412" y="173">external simple zeros</text>
     <text x="412" y="191">HD(1) &gt; 2/3  ✓</text>
   </g>
-  <g class="proved external">
+  <g class="proved bridge">
     <rect x="500" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.externalZeta23_montgomeryTaylor_etaBlockNegativeInertia</title>
-    <text x="572" y="173">eta negative inertia</text>
-    <text x="572" y="191">exact HD(1) defect  ✓</text>
+    <title>RiemannGaussian.Zeta23InverseSampling.atD_fullNormalizedCorrelation_close_montgomeryTaylorKernel</title>
+    <text x="572" y="173">literal full sampler</text>
+    <text x="572" y="191">MT kernel + 14w/L  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
-    <text x="765" y="133">eta arithmetic bound</text>
+    <text x="765" y="133">finite-sample tail</text>
     <text x="765" y="153">NO NEW PROPORTION</text>
   </g>
   <g class="goal">
