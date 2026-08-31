@@ -18,6 +18,15 @@ jobs:
             echo 'Lean sources contain a forbidden proof placeholder.' >&2
             exit 1
           fi
+      # Path dependencies keep their artifacts outside the root `.lake`, which
+      # is the only directory cached by lean-action.  Key this external proof
+      # closure by every compiler, dependency, configuration, and source input;
+      # Lake still runs below and validates the restored build traces.
+      - name: Cache pinned Zeta23 proof artifacts
+        uses: actions/cache@v5
+        with:
+          path: vendor/zeta23/.lake/build
+          key: zeta23-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json', 'vendor/zeta23/lakefile.toml', 'vendor/zeta23/lake-manifest.json', 'vendor/zeta23/Zeta23.lean', 'vendor/zeta23/Zeta23/**/*.lean') }}
       # Lean source/tactic linters report warnings.  `--wfail`, together with
       # `warningAsError` in lakefile.toml, makes every such diagnostic fail CI.
       - name: Build and enforce Lean lints

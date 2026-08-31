@@ -30,15 +30,11 @@ RiemannGaussian is pursuing an unconditional, phase-preserving eta zero-window b
 
 ## Latest Update
 
-The repository now rechecks the pinned Apache-2.0 Zeta23 proof closure for the
-unconditional two-thirds theorem and the stronger exact Montgomery--Taylor
-`HD(1)` theorem. Project wrappers have only Lean's standard logical axioms and
-use the source's genuine multiplicity-weighted zeta counts.
-
-The abstract degree-four `13/18` toy-model modules and dashboard milestone
-were removed. The generated status now distinguishes the attributed external
-baseline from original project results and states the certification gap
-directly: no literal eta/zeta theorem here yet improves `HD(1)`.
+CI now caches the complete compiled Zeta23 proof closure under a key derived
+from the Lean toolchain, both Lake manifests and configurations, and every
+vendored Lean source. This removes repeated elaboration of the unchanged
+external baseline while preserving the full warning-as-error build, whole-
+project lints, compiled-environment audit, and generated-dashboard gate.
 
 ## Mathematical Program
 
