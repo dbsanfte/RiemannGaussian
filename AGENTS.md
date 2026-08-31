@@ -1213,13 +1213,18 @@ strictly positive Gram reserve at each length greater than one. Lean now turns
 that reserve into an explicit quantitative lower bound: every complex
 combination is bounded below by `(A*B-M^2)/(A+B)` times the squared coefficient
 norm, and this determinant-over-trace constant is proved positive for the
-literal shifted zero/reflection modes. The next obligation is to transport the
-actual cutoff-dependent completion coefficients through this inequality,
-bound correlations between completed reflection sums, absorb the resulting
-local coercivity and common tilt into the actual certificate comparison, and
-aggregate the pairwise estimate into a reserve lower bound strong enough for
-the first displayed inequality and eventually the endpoint. No such aggregate
-quantitative lower bound is currently proved.
+literal shifted zero/reflection modes. The actual cutoff-dependent completion
+coefficients must also reach this inequality. Lean now completes the exact
+algebraic part of that transport: after common
+coordinate tilt, each completed channel is its normalized literal prefix times
+one explicit nonzero coefficient containing the completion weight, sharp
+prefix limit, and inverse cutoff row scale. After lossless coordinate recovery,
+the actual upper frame atom is exactly the sum of the two normalized reflected
+prefix columns with both coefficients retained. The next obligation is a
+uniform perturbative coercivity estimate for these finite columns, followed by
+completed-reflection-sum correlation bounds and aggregation into a reserve
+lower bound strong enough for the first displayed inequality and eventually
+the endpoint. No such aggregate quantitative lower bound is currently proved.
 
 ## Soundness invariant
 

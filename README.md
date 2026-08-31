@@ -89,29 +89,33 @@ cross-correlation, its full signed two-coefficient norm ledger, noncancellation,
 and a strictly positive Gram reserve at every length greater than one. That
 reserve now yields a quantitative lower bound: every complex combination is
 at least determinant-over-trace times its coefficient norm, with the constant
-proved strictly positive for each literal off-line pair. The remaining
-frontier is to transport the actual completion coefficients through this
-bound, control correlations between completed reflection sums, and aggregate
-the local coercivity strongly enough to cross the certificate threshold. No
+proved strictly positive for each literal off-line pair. Lean now transports
+the actual cutoff-dependent completion coefficients exactly: after lossless
+recovery and common critical tilt, every upper frame atom is the corresponding
+two normalized literal eta-prefix columns with both explicit nonzero
+coefficients retained. The remaining frontier is a uniform coercive
+perturbation bound for those finite columns, followed by cross-sum correlation
+control and aggregation strong enough to cross the certificate threshold. No
 improved zeta-zero proportion will be claimed until that quantitative premise
 is itself checked in Lean.
 
 ## Latest Update
 
-Lean now upgrades the positive Gram reserve of every literal off-line
-critical-shifted eta pair to an explicit coercive inequality. If `A` and `B`
-are the two finite mode norm squares, their exact cross-correlation is `M`, so
-every complex coefficient pair satisfies
-`norm² ≥ (A·B-M²)/(A+B) · (|c|²+|d|²)`. Lean proves the constant
-strictly positive, retains the signed complex interference through the proof,
-and identifies both the combination and the constant with the actual shifted
-zero/reflection modes in every upper spectral window.
+Lean now transports the actual completion coefficients into the geometric
+reflection-pair interface without discarding their phase or scale. For every
+geometric block, one completed channel after a common coordinate tilt is
+exactly its normalized literal eta-prefix column times an explicit nonzero
+coefficient containing the xi completion weight, the checked sharp prefix
+limit, and the inverse cutoff row scale. The completed reflection sum is
+therefore exactly the two normalized columns with two distinct
+cutoff-dependent coefficients.
 
-This is quantitative local coercivity, not yet the certificate estimate. The
-actual upper frame atom contains cutoff-dependent completion coefficients and
-a completed-channel reflection sum; those coefficients must be transported
-into this bound, and correlations between different sums still have to be
-controlled and aggregated. The project still needs
+At the critical tilt, Lean proves that this combination is precisely the
+complex channel recovered from the two retained coordinates of the actual
+upper reflection-even certificate atom. The remaining local step is to
+transfer the positive determinant-over-trace mode bound uniformly to these
+finite prefix columns; cross-atom correlations must then be controlled and
+aggregated. The project still needs
 `(31N-36) · potential < 36 · reserve` to beat `13/18`, and the stronger
 `(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither
 quantitative comparison is proved yet, so the zero proportion has not
