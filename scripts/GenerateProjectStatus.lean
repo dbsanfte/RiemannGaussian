@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "The upper-pair reserve is an exact two-colour metric matrix contraction"
-    lineOne := "upper pair metric"
-    lineTwo := "2x2 contraction"
+    label := "All upper-pair metric entries inherit an explicit raw-mode gap bound"
+    lineOne := "upper metric matrix"
+    lineTwo := "gap < 2 + eps"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.pairedEtaGeometricUpperPairWeightedDecorrelationReserve_eq_metricContractionLedger
+      ``RiemannGaussian.eventually_spectralUpperZetaZeroWindow_geometricCriticalMetricPrefixCorrelationMatrix_mul_gap_lt
   }
 ]
 
@@ -835,14 +835,17 @@ run_cmd do
         "colours form a 2x2 normalized-prefix metric correlation matrix, its contraction against " ++
         "the moving completion coefficients is the original unweighted correlation, and every " ++
         "entry converges to an explicit shifted-mode metric correlation. Bounding this matrix " ++
-        "carrier and " ++
+        "carrier now begins with an exact evaluation: the recovery metric cancels the critical " ++
+        "tilt, every limit entry is a finite geometric sum of raw decay modes, and all four literal " ++
+        "entries eventually obey norm(entry)*norm(relativeMode-1)<2+epsilon simultaneously over " ++
+        "the upper window. Contracting this bound against the moving completion coefficients and " ++
         "aggregating the pairwise reserve remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Bound the checked two-colour metric correlation matrices and their completion-coefficient contractions, then " ++
+        "Contract the checked two-colour raw-mode gap bounds against the moving completion coefficients, then " ++
         "strengthen the literal frame-metric coercivity of each upper atom into the " ++
         "quantitative inequality " ++
         "(31*N-36)*potential<36*reserve on an eventually separated geometric window. " ++
@@ -1015,8 +1018,12 @@ run_cmd do
         "squared imaginary correlation. Lean now inserts the exact inverse squared-modulus metric " ++
         "for the critical tilt. The two reflection colours form a 2x2 normalized-prefix correlation " ++
         "matrix whose completion-coefficient contraction is the original unweighted correlation; " ++
-        "each entry converges to its explicit shifted-mode metric correlation. It remains to bound " ++
-        "these metric matrix contractions and absorb their local reserves into the aggregate " ++
+        "each entry converges to its explicit shifted-mode metric correlation. The recovery metric " ++
+        "now cancels the critical tilt in that limit, making every entry a finite geometric sum of " ++
+        "raw eta decay modes. Since every relative mode lies inside the unit disk, all four literal " ++
+        "matrix entries eventually satisfy the simultaneous gap-times-correlation bound 2+epsilon " ++
+        "over the finite upper window. It remains to contract these bounds with the exact moving " ++
+        "completion coefficients and absorb their local reserves into the aggregate " ++
         "certificate comparison. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++

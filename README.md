@@ -112,32 +112,37 @@ as two indices, the normalized literal prefixes form a `2 × 2` metric
 correlation matrix and the moving completion weights form coefficient
 vectors. Their contraction is exactly the original unweighted upper--upper
 correlation; every matrix entry converges to the matching explicit shifted
-geometric-mode correlation. The actual weighted pair reserve is exactly the
-positive multiplicity weight times the contraction Gram reserve plus its
-imaginary square. The remaining frontier is a quantitative estimate for this
-matrix carrier and its aggregation strong enough to cross the certificate
-threshold. No improved zeta-zero proportion will be claimed until that
-quantitative premise is itself checked in Lean.
+geometric-mode correlation. The recovery metric is now evaluated on that
+limit: it cancels the critical tilt exactly, so every entry is an explicit
+finite geometric sum of raw eta decay modes. Those relative modes lie
+strictly inside the unit disk, yielding one simultaneous eventual
+gap-times-correlation bound with constant `2` over the complete upper window
+and all four colour entries. The actual weighted pair reserve remains exactly
+the positive multiplicity weight times the contraction Gram reserve plus its
+imaginary square. The remaining frontier is to combine the checked matrix
+entry bounds with the moving completion coefficients and aggregate them
+strongly enough to cross the certificate threshold. No improved zeta-zero
+proportion will be claimed until that quantitative premise is itself checked
+in Lean.
 
 ## Latest Update
 
-Lean now preserves the critical tilt metric all the way through an
-upper--upper correlation. For any nonvanishing diagonal coordinate weight,
-Lean constructs the inverse squared-modulus recovery metric and proves that
-metric correlation of the weighted vectors is exactly their original
-Hermitian correlation. This is instantiated on every critical eta tilt
-coordinate.
+Lean now evaluates the limiting `2 × 2` metric correlation matrix explicitly.
+Every critically shifted mode is the common coordinate tilt times its raw eta
+decay mode, so the inverse squared-modulus recovery metric cancels the tilt
+entrywise. Each matrix entry is therefore exactly the finite geometric sum
+with ratio `conj(decay_zeta) · decay_rho`, retaining both reflection colours
+and the full complex phase.
 
-Each upper atom is then represented by a two-colour normalized-prefix family
-and its exact moving completion-coefficient vector. The four cross-colour
-metric correlations form a literal `2 × 2` matrix. Lean proves that its
-coefficient contraction equals the original unweighted reflection-sum
-correlation, and that every matrix entry converges to the corresponding
-metric correlation of the explicit shifted geometric modes. The full
-multiplicity-weighted certificate summand is exactly a positive weight times
-the resulting contraction Gram reserve plus the squared imaginary
-contraction. The next step is a quantitative matrix estimate and aggregation
-across distinct atoms. The project still needs
+At every base greater than one, Lean proves that every nontrivial-zero decay
+mode—and hence every such relative ratio—lies strictly inside the unit disk.
+A general finite geometric-sum theorem gives
+`‖sum‖ · ‖ratio - 1‖ ≤ 2`. Convergence then transports this to the literal
+normalized-prefix matrix: with any positive slack, the bound holds eventually
+and simultaneously for every upper zero pair and all four colour entries in
+the finite window. The next step is to contract these entrywise bounds against
+the exact moving completion coefficients and aggregate the resulting
+upper-pair reserves. The project still needs
 `(31N-36) · potential < 36 · reserve` to beat `13/18`, and the stronger
 `(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither
 quantitative comparison is proved yet, so the zero proportion has not

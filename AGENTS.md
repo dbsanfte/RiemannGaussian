@@ -1253,11 +1253,18 @@ completion-coefficient vectors. That contraction is the unweighted
 upper--upper correlation, every matrix entry converges to the corresponding
 explicit shifted-mode metric correlation, and the full weighted certificate
 summand is exactly the contraction Gram reserve plus its imaginary square
-times the positive multiplicity weight. The next obligation is a quantitative
-bound on these metric matrix contractions and their aggregation into a
-reserve lower bound strong enough for the first displayed inequality and
-eventually the endpoint. No such aggregate quantitative lower bound is
-currently proved.
+times the positive multiplicity weight. Lean now evaluates the limiting
+metric matrix itself. The inverse squared-modulus metric cancels the common
+critical tilt entrywise, leaving four explicit finite geometric sums of the
+raw eta decay modes. Every relevant relative mode lies strictly inside the
+unit disk, and Lean proves the phase-and-radius estimate
+`norm(entry)*norm(relativeMode-1)≤2`. With arbitrary positive slack this bound
+holds eventually and simultaneously over the complete finite upper window
+and all four colour entries of the literal prefix matrix. The next obligation
+is to contract these quantitative entry bounds against the moving completion
+coefficients and aggregate the resulting pair reserves strongly enough for
+the first displayed inequality and eventually the endpoint. No such aggregate
+quantitative lower bound is currently proved.
 
 ## Soundness invariant
 
