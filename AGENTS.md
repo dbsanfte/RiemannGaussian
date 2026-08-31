@@ -1283,9 +1283,21 @@ substitutes that floor into both certificate theorems. One checked odd-prime
 choice simultaneously makes the literal eta Gram positive definite, so at all
 sufficiently late blocks the strict floor inequality implies `>13/18` and the
 endpoint floor inequality implies `18/18`. Those two inequalities remain open
-antecedents. The next obligation is to audit whether longer coordinate blocks
-strengthen the floor, then prove an eta-specific phase, coefficient, and gap
-estimate making one of the literal antecedents hold.
+antecedents. Lean has now audited the longer-block behavior and proved that the
+current pointwise coercivity-minus-triangle floor eventually vanishes
+uniformly in the block start. It therefore moves upstream: the exact signed
+four-colour contraction retains all sixteen ordered interactions, and its
+complete window aggregate is the literal upper--upper reserve. The natural
+original-colour normalization is proved to collapse to one colour, so Lean
+now supplies an exact polar--hyperbolic alternative. Each completion pair is
+factored into a common positive geometric mean, two reciprocal positive radial
+colours, and two unit phases; every raw contraction is reconstructed exactly.
+Each literal signed pair reserve is a strictly positive scale times a
+nonnegative balanced reserve, and the complete signed window is exactly the
+corresponding scale-weighted balanced aggregate. The existing eventual
+odd-prime `>13/18` and `18/18` interfaces transport unchanged. The live
+obligation is an eta-arithmetic bound on this exact balanced carrier strong
+enough to prove one of those threshold antecedents; neither is yet proved.
 
 ## Soundness invariant
 

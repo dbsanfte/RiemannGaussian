@@ -26,29 +26,27 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian is pursuing a phase-preserving eta zero-window certificate that beats Anthropic's two-thirds benchmark and ultimately reaches `18/18`. Lean's exact 16-interaction reserve now reveals a second information bottleneck: at fixed block length, natural completion normalization selects one colour uniformly over the finite window. The frontier is an exact balanced-colour carrier—or a finite-start estimate—that retains enough cancellation for `13/18`, then `18/18`.
+RiemannGaussian is pursuing a phase-preserving eta zero-window certificate that beats Anthropic's two-thirds benchmark and ultimately reaches `18/18`. Lean now factors every completion pair into a common positive scale, reciprocal radial colours, and unit phases, and reconstructs the literal reserve as their exact scale-weighted balanced aggregate. The frontier is an eta-arithmetic bound on this carrier strong enough for `13/18`, then `18/18`; neither threshold is proved.
 
 ## Latest Update
 
-Lean now determines the relative scale of the two completion colours in every
-upper-window atom. The reflected-partner/original coefficient ratio is proved
-exactly equal to a fixed leading ratio times a geometric power whose norm is
-`q^(2 Re ρ - 1) < 1`; consequently that ratio tends to zero.
+Lean now gives every moving reflected/original completion pair an exact
+polar--hyperbolic ledger. Each coefficient is reconstructed from one common
+strictly positive geometric mean, one strictly positive radial colour, and a
+unit complex phase; the two radial colours multiply to one. No colour, sign,
+or phase is discarded.
 
-Dividing both coefficient vectors by their nonzero original entries gives an
-exact factorization of every four-colour metric contraction. The normalized
-coefficient vector converges to the original-colour basis vector, and the
-normalized contraction converges to the single original--original
-metric-mode entry. More strongly, Lean splits the literal contraction into
-that dominant entry plus a complex remainder and proves the remainder tends
-to zero uniformly over every pair in the complete finite upper window at
-fixed block length.
+Every raw four-colour metric contraction is exactly its balanced contraction
+times the two common amplitudes. Consequently each literal signed pair
+reserve is a strictly positive scale times a nonnegative balanced reserve,
+and the complete scale-weighted balanced window is exactly the existing
+upper--upper reserve. Lean also transports the eventual odd-prime `13/18` and
+finite-window `18/18` certificate interfaces through this equality.
 
-This does not bound the reserve or improve the known zero proportion. It
-shows rigorously that simply taking the late block-start limit would discard
-15 of the 16 signed interactions just preserved. The next carrier must either
-balance both completion colours exactly or obtain its cancellation estimate
-at finite block start.
+This is a lossless reparameterization, not the missing arithmetic estimate:
+neither threshold antecedent has been proved. The next step is to exploit the
+reciprocal radii and unit phases inside this exact carrier strongly enough to
+bound its aggregate reserve.
 
 ## Mathematical Program
 

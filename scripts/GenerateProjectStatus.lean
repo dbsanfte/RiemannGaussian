@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Natural late-start normalization selects one eta colour"
-    lineOne := "eta colour flow"
-    lineTwo := "one-colour limit"
-    role := "reduction"
+    label := "The signed eta reserve has an exact polar--hyperbolic balance"
+    lineOne := "eta reserve"
+    lineTwo := "balanced exactly"
+    role := "bridge"
     theoremName :=
-      ``RiemannGaussian.eventually_forall_pairedEtaGeometricCriticalUpperOriginalDominantColourRemainder_norm_lt
+      ``RiemannGaussian.pairedEtaGeometricUpperWindowSignedMetricReserve_eq_scaled_balanced
   }
 ]
 
@@ -873,15 +873,20 @@ run_cmd do
         "normalization, every four-colour contraction is exactly its original--original metric " ++
         "entry plus a complex remainder, and that remainder tends uniformly to zero over the " ++
         "finite upper window at fixed block length. Thus the unbalanced late-start limit selects " ++
-        "one colour; a balanced carrier or finite-start estimate is still required. Neither " ++
-        "certificate threshold is proved.")),
+        "one colour. Lean now replaces that lossy normalization by an exact polar--hyperbolic " ++
+        "ledger: every moving coefficient is a common positive geometric mean times a positive " ++
+        "radial colour and a unit phase, with the two radial colours reciprocal. Every raw " ++
+        "metric contraction factors through the balanced carrier, and the literal signed window " ++
+        "reserve is exactly the sum of the positive pair scales times the nonnegative balanced " ++
+        "pair reserves. The existing eventual odd-prime >13/18 and 18/18 certificate interfaces " ++
+        "transport unchanged. No theorem yet proves either threshold.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Balance the two completion colours exactly, or bound the checked signed pre-triangle " ++
-        "upper-window reserve at finite block start, strongly enough to establish " ++
+        "Bound the checked exact polar--hyperbolic balanced upper-window carrier strongly enough " ++
+        "to establish " ++
         "(31*N-36)*potential<36*floor on an eventually separated geometric window. " ++
         "The checked exact identity mass^2=potential+reserve makes this equivalent to " ++
         "the frame-moment premise sufficient to beat 13/18, while the endpoint bound " ++
@@ -892,6 +897,10 @@ run_cmd do
         "upper--upper reserve while retaining all sixteen ordered cross-colour interactions. Its " ++
         "natural original-coefficient normalization nevertheless converges uniformly to one colour " ++
         "at fixed block length, so the late-start limit alone cannot exploit those interactions. " ++
+        "Lean now factors each moving completion pair instead into a common positive scale, " ++
+        "reciprocal positive radial colours, and unit phases. The raw contractions and complete " ++
+        "literal reserve are exactly reconstructed as the corresponding positive scale-weighted " ++
+        "balanced aggregate. The open step is an eta-arithmetic bound on that exact carrier. " ++
         "Lean already proves F_N=L_N+R_N, the critical " ++
         "summability of R_N, the exact cosine/crossover factorization of the higher-" ++
         "multiplicity L_N kernel, the finite on-line/off-line block decomposition, " ++
@@ -1087,8 +1096,10 @@ run_cmd do
         "q^(2*Re(rho)-1)<1. Dividing by the dominant original coefficients factors every metric " ++
         "contraction into its original--original entry plus a remainder that tends uniformly to " ++
         "zero over the finite window at fixed block length. Therefore an unbalanced late-start " ++
-        "limit collapses fifteen signed interactions. Exact colour balancing or a finite-start " ++
-        "arithmetic estimate remains open. " ++
+        "limit collapses fifteen signed interactions. Exact colour balancing is now checked: " ++
+        "common positive amplitudes are extracted, the remaining radial colours are reciprocal, " ++
+        "the phases have unit norm, and the literal reserve is the positive scale-weighted " ++
+        "balanced aggregate. A quantitative arithmetic estimate for that carrier remains open. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
