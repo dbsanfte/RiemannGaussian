@@ -1179,11 +1179,17 @@ carrier, and uses the checked carrier rank to prove all literal frame atoms
 linearly independent at every separated block. Hence every distinct pair has
 strictly positive Gram-determinant reserve. The total reserve is positive
 exactly when the frame has at least two atoms, and one odd prime base makes
-this characterization hold at every sufficiently late block. The next
-obligation is to strengthen this qualitative positivity into an
-eta-arithmetic lower bound strong enough for the first displayed inequality,
-then toward the endpoint without collapsing the richer upstream channels. No
-such quantitative lower bound is currently proved.
+this characterization hold at every sufficiently late block. Lean now also
+retains the exact complex correlation of length-`M` unit geometric mode blocks
+and proves `|corr|²|conj(w)z-1|²≤4`. Every finite injective unit-mode family
+has a checked positive minimum phase gap, giving a uniform `O(M⁻²)` bound
+for all distinct-pair squared coherences; one collision-free odd prime
+instantiates this on any same-real-part zeta-zero layer and on the critical
+window. The next obligation is to transport that quantitative limit-mode
+estimate through the sharp eta-prefix asymptotics to long literal cutoff
+blocks, retaining off-line real decay, then prove a reserve lower bound strong
+enough for the first displayed inequality and eventually the endpoint. No
+such literal quantitative lower bound is currently proved.
 
 ## Soundness invariant
 

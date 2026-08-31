@@ -64,24 +64,34 @@ absolute-value envelopes. At every sufficiently late separated block Lean now
 proves that each distinct atom pair has strictly positive decorrelation, hence
 the total reserve is positive exactly when at least two frame atoms are
 present. The immediate frontier is a quantitative eta-arithmetic lower bound
-for that reserve relative to the surviving correlation potential;
-successively stronger colour- and phase-preserving bounds are the route toward
-`18/18`. No improved zeta-zero proportion will be claimed until one of those
-quantitative premises is itself checked in Lean.
+for that reserve relative to the surviving correlation potential. The active
+route now lengthens the geometric sampling block before collapsing its phase:
+for every finite injective unit-mode family Lean proves an exact positive
+minimum phase gap and a uniform `O(M⁻²)` bound on all distinct-pair squared
+coherences. This is instantiated on same-real-part zeta-zero layers after one
+odd-prime choice. The next step is to transport that bound through the checked
+sharp eta-prefix asymptotics into long literal cutoff blocks while preserving
+the off-line real-decay channel, then aggregate it in the reserve. No improved
+zeta-zero proportion will be claimed until the resulting quantitative
+certificate premise is itself checked in Lean.
 
 ## Latest Update
 
-Lean now realizes the reflection-even eta atoms as columns of an exact
-square-root-weighted synthesis matrix. The already-checked rank of its Gram
-carrier proves those literal critical and upper-off-line-real vectors linearly
-independent at every separated geometric block. Consequently every distinct
-pair satisfies strict Cauchy--Schwarz, and every corresponding term in the
-colour-resolved decorrelation reserve is strictly positive.
+Lean now proves a quantitative finite-block decorrelation theorem for the
+geometric eta modes. A length-`M` unit-mode vector has norm square `M`, its
+complex correlation is exactly the geometric sum with ratio `conj(w)z`, and
+the full phase-sensitive inequality
+`|correlation|² |conj(w)z-1|² ≤ 4` holds. For any finite injective
+unit-mode family with at least two elements, Lean extracts a positive minimum
+phase gap and obtains a simultaneous `O(M⁻²)` squared-coherence bound for
+every distinct pair.
 
-Thus the literal reserve is positive exactly when the frame contains at least
-two atoms, and one odd prime base makes this exact characterization valid at
-all sufficiently late blocks. This is an unconditional eta-arithmetic result,
-but it is qualitative: the project still needs
+The theorem is instantiated on every finite same-real-part family of
+nontrivial zeta zeros and on the critical-zero window, using one checked
+collision-free odd prime. This supplies a scalable angular estimate beyond
+the previous qualitative strict reserve. It has not yet been transported from
+normalized limit modes to the literal eta-prefix frame, especially across
+off-line real-decay layers. The project still needs
 `(31N-36) · potential < 36 · reserve` to beat `13/18`, and the stronger
 `(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither
 quantitative comparison is proved yet, so the zero proportion has not

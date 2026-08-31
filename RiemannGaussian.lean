@@ -399,6 +399,7 @@ import RiemannGaussian.Hybrid.EtaSpectralHeatCubicPaths
 import RiemannGaussian.Hybrid.GeometricPhaseRigidity
 import RiemannGaussian.Hybrid.EtaGeometricPhaseSampling
 import RiemannGaussian.Hybrid.EtaGeometricModeSeparation
+import RiemannGaussian.Hybrid.EtaGeometricPhaseDecorrelation
 import RiemannGaussian.Hybrid.EtaGeometricDecayVandermonde
 import RiemannGaussian.Hybrid.EtaGeometricPrefixVandermonde
 import RiemannGaussian.Hybrid.EtaGeometricPackedFeatureRank

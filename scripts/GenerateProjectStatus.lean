@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Separated eta atoms have strict pairwise decorrelation"
-    lineOne := "eta pair reserve"
-    lineTwo := "strict iff >=2 atoms"
+    label := "Finite eta phase blocks decorrelate at rate O(M^-2)"
+    lineOne := "eta phase blocks"
+    lineTwo := "coherence O(M^-2)"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.exists_prime_eventually_pairedEtaGeometricReflectionEvenFrameDecorrelationReserve_pos_iff
+      ``RiemannGaussian.exists_prime_uniform_spectralCriticalZetaZeroWindowModeCoherence_bound
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "quantify eta pairwise decorrelation; no improved proportion yet.</text>\n" ++
+      "transport phase decay to the literal eta reserve; no improved proportion yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -804,15 +804,18 @@ run_cmd do
         "finite scale and converges to zero mass. Lean proves that the certificate exceeds 13/18 " ++
         "exactly when this trace crosses below 5/36 at some nonnegative scale; the sharp model " ++
         "stays strictly above 5/36 at every finite scale. " ++
-        "Distinct separated eta atoms now have strict pairwise decorrelation, but the " ++
-        "quantitative lower bound required by the certificate remains open.")),
+        "Distinct separated eta atoms now have strict pairwise decorrelation. Finite injective " ++
+        "unit-mode blocks now have an exact positive phase gap and uniform O(M^-2) distinct-pair " ++
+        "squared coherence, instantiated on same-real-part zeta-zero layers. Transport to the " ++
+        "literal eta-prefix reserve required by the certificate remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Strengthen the checked strict positivity of every distinct separated eta-pair " ++
-        "reserve into the quantitative inequality " ++
+        "Transport the checked O(M^-2) unit-mode coherence estimate through the sharp eta-prefix " ++
+        "asymptotics, retaining off-line real decay, and strengthen strict positivity of every " ++
+        "distinct separated eta-pair reserve into the quantitative inequality " ++
         "(31*N-36)*potential<36*reserve on an eventually separated geometric window. " ++
         "The checked exact identity mass^2=potential+reserve makes this equivalent to " ++
         "the frame-moment premise sufficient to beat 13/18, while the endpoint bound " ++
@@ -946,7 +949,11 @@ run_cmd do
         "the frame Gram with the coordinate carrier; full checked rank makes the literal atoms " ++
         "linearly independent at separated blocks. Thus every distinct pair has strict positive " ++
         "Gram-determinant reserve, and the total reserve is positive exactly for at least two atoms. " ++
-        "This is qualitative: the remaining step is to quantify that pairwise decorrelation. " ++
+        "Long finite unit-mode blocks now retain their exact complex geometric-sum correlation and " ++
+        "obey |corr|^2*|conj(w)z-1|^2<=4. A finite injective mode family has a positive minimum " ++
+        "phase gap and hence uniform O(M^-2) distinct-pair squared coherence; one odd prime " ++
+        "instantiates this on same-real-part zeta-zero layers. The remaining step is to transport " ++
+        "this quantitative estimate to literal eta-prefix blocks without losing real-decay colour. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
