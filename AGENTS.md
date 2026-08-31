@@ -1143,9 +1143,16 @@ its zero mass is exactly the upper off-line-pair fraction. Its certificate is
 therefore the literal critical-zero fraction. Lean also proves that this
 fraction is strictly greater than `13/18` exactly when the normalized ordinary
 heat trace of `E₊KE₊` crosses below `5/36` at some nonnegative scale. The next
-obligation is the eta-arithmetic estimate establishing that crossing, or a
-stronger information-preserving exclusion. Such an estimate remains necessary
-for any stronger zeta-zero proportion and ultimately for RH.
+bridge now writes `W=C E₊`, proves `WᴴW=E₊KE₊`, and transports its nonzero
+spectrum to `WWᴴ=C E₊ Cᴴ`. The latter is exactly the positive on-line plus
+off-line-real eta block. All positive moments transfer without loss, while
+ordinary heat has one exact ambient-cardinality padding correction. Lean also
+expands that coordinate heat into a convergent series of ordered even paths
+whose intermediate packed coordinates and on-line/off-line-real edge colours
+remain explicit. The next obligation is the eta-arithmetic estimate forcing
+the crossing from this colour-resolved path carrier, or a stronger
+information-preserving exclusion. Such an estimate remains necessary for any
+stronger zeta-zero proportion and ultimately for RH.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
 bound, strong enough to prove the critical first moment. No such estimate is

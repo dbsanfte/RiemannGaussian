@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "The literal eta atom certificate has an exact heat separator"
-    lineOne := "eta eigenvalue atoms"
-    lineTwo := "exact heat separator"
+    label := "The eta separator is a colour-resolved coordinate heat trace"
+    lineOne := "eta coordinate heat"
+    lineTwo := "colour paths retained"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaGeometricReflectionEvenAtomModel_thirteen_eighteen_lt_criticalFraction_iff_exists_rtrace_heat
+      ``RiemannGaussian.pairedEtaGeometricReflectionEvenCoordinateHeatCertificateInterface
   }
 ]
 
@@ -783,8 +783,12 @@ run_cmd do
         "Lean now extracts its uniform normalized nonnegative eigenvalue atoms. Every power and " ++
         "heat moment is an exact normalized trace of E+*K*E+, zero mass is the upper off-line-pair " ++
         "fraction, and the resulting certificate is the literal critical-zero fraction. Strict " ++
-        "improvement over 13/18 is exactly a normalized ordinary-heat crossing below 5/36. The " ++
-        "eta-arithmetic crossing estimate has not yet been proved. " ++
+        "improvement over 13/18 is exactly a normalized ordinary-heat crossing below 5/36. Writing " ++
+        "W=C*E+, Lean transfers every positive moment from W^*W to W*W^*. The latter is exactly " ++
+        "the positive on-line-plus-off-line-real coordinate block; ordinary heat transfers with " ++
+        "one explicit cardinality padding correction. Its convergent even closed-path series now " ++
+        "retains every intermediate packed coordinate and both eta edge colours. The arithmetic " ++
+        "crossing estimate has not yet been proved. " ++
         "Separately, every " ++
         "finite nonnegative weighted model with moments (1,1,4/3,2,13/4) now has a checked " ++
         "certificate at least 13/18. An explicit nonnegative three-atom model attains equality, " ++
@@ -918,8 +922,13 @@ run_cmd do
         "model of E+*K*E+. Its nodes are nonnegative, every ordinary and heat moment is an exact " ++
         "normalized matrix trace, and its zero mass is precisely the upper off-line-pair fraction. " ++
         "Thus its certificate is the literal critical-zero fraction, with strict improvement over " ++
-        "13/18 equivalent to one normalized ordinary-heat crossing below 5/36. The remaining step " ++
-        "is to prove that crossing or a stronger exclusion from literal eta arithmetic. " ++
+        "13/18 equivalent to one normalized ordinary-heat crossing below 5/36. Lean now factors " ++
+        "the carrier as W^*W for W=C*E+ and transports its nonzero spectrum to W*W^*, exactly the " ++
+        "positive on-line-plus-off-line-real coordinate block. Positive moments agree, and ordinary " ++
+        "heat differs by one exact zero-padding cardinality. A checked coloured closed-path series " ++
+        "retains the intermediate packed coordinate and on-line/off-line-real choice at every edge. " ++
+        "The remaining step is to prove the crossing or a stronger exclusion from those literal " ++
+        "eta correlations. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
@@ -928,7 +937,8 @@ run_cmd do
         "does not instantiate the eta window. The independent ordinary heat trace now separates " ++
         "strict improvement exactly: it crosses below 5/36 at some nonnegative scale if and only if " ++
         "the certificate is greater than 13/18, while the sharp model never crosses at finite scale. " ++
-        "What is not yet proved is the parity carrier's arithmetic crossing bound, another " ++
+        "What is not yet proved is the colour-resolved coordinate carrier's arithmetic crossing " ++
+        "bound, another " ++
         "independent observable nonzero on " ++
         "the sharp root channels, the additional normalized " ++
         "moments, a phase-preserving aggregate estimate for the paired cubic one-gap channel, higher " ++

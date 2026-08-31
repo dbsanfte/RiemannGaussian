@@ -413,6 +413,7 @@ import RiemannGaussian.Hybrid.EtaGeometricReflectionSupport
 import RiemannGaussian.Hybrid.EtaGeometricReflectionMomentGram
 import RiemannGaussian.Hybrid.EtaGeometricReflectionParity
 import RiemannGaussian.Hybrid.EtaGeometricReflectionAtomModel
+import RiemannGaussian.Hybrid.EtaGeometricReflectionCoordinateHeat
 import RiemannGaussian.Hybrid.HigherMomentCeiling
 import RiemannGaussian.Hybrid.HigherMomentHeatCeiling
 import RiemannGaussian.Hybrid.HigherMomentIndependentHeat

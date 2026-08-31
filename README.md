@@ -50,28 +50,29 @@ off-line-pair count while its nonzero eigenvalues retain eta arithmetic.
 The normalized finite eigenvalue-atom model of `A₊` is now checked in Lean,
 including an exact ordinary-heat separator: its literal critical-zero
 fraction is greater than `13/18` exactly when a normalized heat trace of `A₊`
-crosses below `5/36` at some nonnegative scale. The immediate frontier is to
-prove that crossing, or a stronger moment/cross-scale exclusion, directly
-from the retained eta arithmetic. Repeating the same information-preserving
-strategy with successively stronger exclusions is the route toward `18/18`.
-No improved zeta-zero proportion will be claimed until its arithmetic bound
-is checked in Lean.
+crosses below `5/36` at some nonnegative scale. That heat trace is now
+transported to the genuine coordinate carrier `C E₊ Cᴴ`, proved equal to the
+positive on-line-plus-off-line-real eta block, and expanded into ordered paths
+that retain both colours on every edge. The immediate frontier is a signed or
+coercive eta-arithmetic estimate for this coloured path series that forces the
+crossing. Successively stronger information-preserving exclusions are the
+route toward `18/18`. No improved zeta-zero proportion will be claimed until
+its arithmetic bound is checked in Lean.
 
 ## Latest Update
 
-Lean now constructs the literal uniform eigenvalue-atom model of
-`A₊ = E₊KE₊` on every nonempty eta-separated zero window. The normalizing
-trace is proved strictly positive; every atom has weight `1/N`, every node is
-nonnegative, total mass and first moment are one, and every ordinary moment
-and heat moment is exactly a normalized matrix-power or Hermitian heat trace
-of `A₊`.
+Writing `W = C E₊`, Lean now proves `WᴴW = A₊` and identifies the coordinate
+carrier `WWᴴ = C E₊ Cᴴ` exactly with the existing positive sum of the on-line
+and off-line-real eta blocks. Every positive-order atom moment transfers
+without loss between these two Grams. Their ordinary heat traces differ only
+by the explicitly proved `N`-dimensional zero-padding correction.
 
-The model's zero mass is proved equal to `nullity(A₊)/N`, hence exactly the
-upper off-line-pair fraction. Its certificate is therefore exactly the
-represented critical-zero fraction, and Lean reduces strict improvement over
-`13/18` to one explicit normalized heat-trace crossing below `5/36`. No such
-eta-arithmetic crossing has yet been proved, so this slice establishes a
-literal, information-preserving target rather than an improved proportion.
+The coordinate heat is also a checked convergent series of even-length
+ordered eta paths. Each step retains its intermediate packed coordinate and
+whether its edge came from the on-line or off-line-real block. The exact
+`13/18` crossing criterion is now stated on this literal colour-resolved
+carrier. No arithmetic bound forcing the crossing is yet proved, so the zero
+proportion itself has not improved.
 
 ## Mathematical Program
 
