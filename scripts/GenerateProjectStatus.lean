@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.externalZeta23_montgomeryTaylor_simple_projectFiniteWindows
   },
   {
-    label := "The literal endpoint sampler converges uniformly to the exact inverse-sampling kernel"
-    lineOne := "literal full sampler"
-    lineTwo := "MT kernel + 14w/L"
-    role := "bridge"
+    label := "Unconditional project improvement beyond the Zeta23 HD(1) benchmark"
+    lineOne := "literal simple zeros"
+    lineTwo := "exists C > HD(1)"
+    role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.Zeta23InverseSampling.atD_fullNormalizedCorrelation_close_montgomeryTaylorKernel
+      ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_simple_strict_improvement
   }
 ]
 
@@ -158,8 +158,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
       "aria-labelledby=\"title description\" viewBox=\"0 0 1000 235\">\n" ++
     "  <title id=\"title\">Lean-verified RiemannGaussian theorem inventory</title>\n" ++
     "  <desc id=\"description\">Checked project results, identities, an attributed " ++
-      "external baseline, and equivalences. The boxes are not a proof chain. No project " ++
-      "theorem improves the external zero-proportion baseline or proves RH.</desc>\n" ++
+      "external baseline, a project zero-proportion improvement, and equivalences. The boxes " ++
+      "are not a proof chain. The 13/18 target and RH remain unproved.</desc>\n" ++
     "  <defs>\n" ++
     "    <marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" " ++
       "markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n" ++
@@ -203,15 +203,15 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     nodes ++
     "  <g class=\"open\">\n" ++
     "    <rect x=\"690\" y=\"108\" width=\"150\" height=\"62\" rx=\"10\"/>\n" ++
-    "    <text x=\"765\" y=\"133\">finite-sample tail</text>\n" ++
-    "    <text x=\"765\" y=\"153\">NO NEW PROPORTION</text>\n" ++
+    "    <text x=\"765\" y=\"133\">larger-block bound</text>\n" ++
+    "    <text x=\"765\" y=\"153\">TARGET 13/18</text>\n" ++
     "  </g>\n" ++
     "  <g class=\"goal\">\n" ++
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Current fact: no RiemannGaussian " ++
-      "certificate improves the imported exact HD(1) zeta baseline.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Current fact: Lean proves a literal " ++
+      "simple-zero constant C &gt; HD(1); 13/18 remains open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -262,7 +262,7 @@ run_cmd do
       throwError "milestone has nonstandard axioms: {milestone.theoremName}: {unexpectedAxioms}"
 
   let statusJson := Json.mkObj [
-    ("schemaVersion", toJson 9),
+    ("schemaVersion", toJson 10),
     ("generator", .str "scripts/GenerateProjectStatus.lean"),
     ("leanVersion", .str Lean.versionString),
     ("compiledProjectModules", toJson moduleCount),
@@ -277,14 +277,11 @@ run_cmd do
     ("statusNote", .str
       ("The build rechecks the pinned external Zeta23 unconditional two-thirds and exact " ++
         "multiplicity-aware Montgomery--Taylor HD(1) simple-zero theorems, proves in Lean that " ++
-        "HD(1) > 2/3, and derives the corresponding project-native simple finite-window form and " ++
-        "exact negative-inertia bound for the literal signed eta block. The project now also " ++
-        "retains the simple-zero convex defect, pays disjoint triple correlations, and proves " ++
-        "that the complete literal endpoint sampler is within 14w/L of the exact " ++
-        "Montgomery--Taylor kernel. RiemannGaussian has exact analytic, eta, " ++
-        "heat, matrix, and contour infrastructure, but no unconditional eta certificate " ++
-        "currently improves that external zeta-zero proportion. Conditional threshold " ++
-        "interfaces and generic finite models are not counted as achieved proportions.")),
+        "HD(1) > 2/3. RiemannGaussian now controls the finite endpoint-sampling collar, packs " ++
+        "the literal simple zeros into disjoint consecutive triples, retains their nonlinear " ++
+        "Gram energy through the Zeta23 seam, and proves an unconditional literal simple-zero " ++
+        "constant C with HD(1) < C. This is a strict project improvement over the imported " ++
+        "baseline, but no 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[
       Json.mkObj [
         ("source", .str "anthropics/zeta-23-lean"),
@@ -315,15 +312,24 @@ run_cmd do
         ("status", .str "unconditional; rechecked")
       ]
     ]),
+    ("projectAdvances", .arr #[
+      Json.mkObj [
+        ("theorem", .str
+          "RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_simple_strict_improvement"),
+        ("constant", .str "C with Zeta23.ThmD.HD 1 < C"),
+        ("numerator", .str "Zeta23.N0simple T (2*T)"),
+        ("denominator", .str "Zeta23.Ncount T (2*T)"),
+        ("status", .str "unconditional; Lean-checked project improvement")
+      ]
+    ]),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
-      ("label", .str "Actual inverse-sampling zero-proportion certification"),
+      ("label", .str "Quantitative larger-block certification to 13/18"),
       ("status", .str "open"),
       ("target", .str
-        ("Control the finite sampling collar, aggregate the checked disjoint-triple " ++
-          "kernel certificate, and derive a literal zeta zero-proportion strictly above " ++
-          "the imported exact HD(1) baseline. No such proportion theorem is currently " ++
-          "present; 13/18 and 18/18 remain targets."))
+        ("Replace the capped three-point certificate by an explicit phase-retaining " ++
+          "larger-block estimate strong enough to prove the literal 13/18 proportion; " ++
+          "then iterate the certificate toward 18/18."))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

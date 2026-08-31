@@ -26,16 +26,18 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian is pursuing a phase-preserving inverse-sampling certificate for literal simple critical zeta zeros. The checked zero side now retains nonlinear Gram defect and disjoint triple correlations, while the complete endpoint sampler approaches the exact Montgomery--Taylor kernel with explicit error. Next: control the finite sampling collar and aggregate the triples to beat `HD(1)`, then reach `13/18` and `18/18`.
+RiemannGaussian is strengthening literal simple-critical-zero certificates through phase-preserving inverse sampling. Lean now carries the finite sampler and disjoint-triple energy through the full Zeta23 endpoint argument to an unconditional constant `C > HD(1)`. The next target is an explicit larger-block certificate that preserves more correlation than the capped three-point scheme and reaches `13/18`, before iterating toward `18/18`.
 
 ## Latest Update
 
-Lean now proves the literal Zeta23 zero-side ledger pays capped correlations
-over every disjoint triple of simple critical zeros, with an exact charge for
-zero padding. Independently, the complete literal endpoint sample correlation,
-normalized by its actual Poisson mass, is within `14w/L` of the exact
-Montgomery--Taylor kernel. The finite sample collar and asymptotic triple
-aggregation remain open; no project theorem yet improves `HD(1)`.
+Lean theorem
+`externalZeta23_montgomeryTaylor_simple_strict_improvement` now constructs a
+constant `C > HD(1)` and proves, for every positive `ε`, that
+`(C - ε) N(T,2T) ≤ N₀ˢ(T,2T)` eventually. Its proof specializes the actual
+zeta configuration and paper inputs, controls the finite sampler collar, and
+carries disjoint-triple energy through the endpoint asymptotics. This is the
+first unconditional project improvement over the imported exact baseline; it
+does not yet reach `13/18`.
 
 ## Mathematical Program
 
