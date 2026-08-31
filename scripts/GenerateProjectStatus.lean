@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Finite eta phase blocks decorrelate at rate O(M^-2)"
-    lineOne := "eta phase blocks"
-    lineTwo := "coherence O(M^-2)"
+    label := "Literal eta-prefix coherence inherits the phase bound"
+    lineOne := "literal eta prefixes"
+    lineTwo := "phase bound + epsilon"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.exists_prime_uniform_spectralCriticalZetaZeroWindowModeCoherence_bound
+      ``RiemannGaussian.exists_prime_uniform_eventually_spectralCriticalZetaZeroWindowPhaseNormalizedPrefixCoherenceSq
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "transport phase decay to the literal eta reserve; no improved proportion yet.</text>\n" ++
+      "lift normalized prefixes to the packed eta reserve; no improved proportion yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -805,17 +805,19 @@ run_cmd do
         "exactly when this trace crosses below 5/36 at some nonnegative scale; the sharp model " ++
         "stays strictly above 5/36 at every finite scale. " ++
         "Distinct separated eta atoms now have strict pairwise decorrelation. Finite injective " ++
-        "unit-mode blocks now have an exact positive phase gap and uniform O(M^-2) distinct-pair " ++
-        "squared coherence, instantiated on same-real-part zeta-zero layers. Transport to the " ++
-        "literal eta-prefix reserve required by the certificate remains open.")),
+        "unit-mode blocks have an exact positive phase gap and uniform O(M^-2) distinct-pair " ++
+        "squared coherence. Explicitly normalized literal eta-prefix vectors and their coherence " ++
+        "converge to that model, giving a uniform eventual 4/M^2+epsilon bound on finite " ++
+        "same-real-part zero layers. Lifting it to the packed reserve remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Transport the checked O(M^-2) unit-mode coherence estimate through the sharp eta-prefix " ++
-        "asymptotics, retaining off-line real decay, and strengthen strict positivity of every " ++
-        "distinct separated eta-pair reserve into the quantitative inequality " ++
+        "Lift the checked eventual O(M^-2) normalized literal-prefix coherence estimate through " ++
+        "the packed reflection-even features, retaining cross-layer off-line real decay, and " ++
+        "strengthen strict positivity of every distinct separated eta-pair reserve into the " ++
+        "quantitative inequality " ++
         "(31*N-36)*potential<36*reserve on an eventually separated geometric window. " ++
         "The checked exact identity mass^2=potential+reserve makes this equivalent to " ++
         "the frame-moment premise sufficient to beat 13/18, while the endpoint bound " ++
@@ -952,8 +954,12 @@ run_cmd do
         "Long finite unit-mode blocks now retain their exact complex geometric-sum correlation and " ++
         "obey |corr|^2*|conj(w)z-1|^2<=4. A finite injective mode family has a positive minimum " ++
         "phase gap and hence uniform O(M^-2) distinct-pair squared coherence; one odd prime " ++
-        "instantiates this on same-real-part zeta-zero layers. The remaining step is to transport " ++
-        "this quantitative estimate to literal eta-prefix blocks without losing real-decay colour. " ++
+        "instantiates this on same-real-part zeta-zero layers. Explicit nonzero row and common " ++
+        "coordinate normalization now transports the actual finite eta prefixes, their complex " ++
+        "correlations, norms, and squared coherences to that phase model. Every distinct pair in a " ++
+        "finite same-real-part layer therefore has the uniform eventual 4/M^2+epsilon bound. The " ++
+        "remaining step is to lift it through the packed reflection-even frame without losing " ++
+        "cross-layer real-decay colour. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

@@ -69,29 +69,34 @@ route now lengthens the geometric sampling block before collapsing its phase:
 for every finite injective unit-mode family Lean proves an exact positive
 minimum phase gap and a uniform `O(M⁻²)` bound on all distinct-pair squared
 coherences. This is instantiated on same-real-part zeta-zero layers after one
-odd-prime choice. The next step is to transport that bound through the checked
-sharp eta-prefix asymptotics into long literal cutoff blocks while preserving
-the off-line real-decay channel, then aggregate it in the reserve. No improved
-zeta-zero proportion will be claimed until the resulting quantitative
-certificate premise is itself checked in Lean.
+odd-prime choice. Lean now transports that bound through the checked sharp
+asymptotics: after explicit nonzero row and common same-layer coordinate
+normalizations, the literal finite eta-prefix vectors, their complex
+correlations, norms, and squared coherences converge to the phase model. Every
+distinct pair in a finite layer therefore obeys an eventual uniform
+`4/M² + ε` gap-weighted coherence ceiling. The next step is to lift these
+normalizations through the packed reflection-even features while preserving
+cross-layer off-line real decay, then aggregate the bound in the reserve. No
+improved zeta-zero proportion will be claimed until the resulting
+quantitative certificate premise is itself checked in Lean.
 
 ## Latest Update
 
-Lean now proves a quantitative finite-block decorrelation theorem for the
-geometric eta modes. A length-`M` unit-mode vector has norm square `M`, its
-complex correlation is exactly the geometric sum with ratio `conj(w)z`, and
-the full phase-sensitive inequality
-`|correlation|² |conj(w)z-1|² ≤ 4` holds. For any finite injective
-unit-mode family with at least two elements, Lean extracts a positive minimum
-phase gap and obtains a simultaneous `O(M⁻²)` squared-coherence bound for
-every distinct pair.
+Lean now transports the quantitative phase estimate to literal finite eta
+prefixes. For a zero on a fixed real-coordinate layer, it defines the exact
+row-, leading-constant-, and coordinate-normalized length-`M` prefix block and
+proves that block converges to the corresponding unit-mode vector. Lean then
+passes the limit through the full complex correlation, both squared norms,
+and their normalized squared coherence.
 
-The theorem is instantiated on every finite same-real-part family of
-nontrivial zeta zeros and on the critical-zero window, using one checked
-collision-free odd prime. This supplies a scalable angular estimate beyond
-the previous qualitative strict reserve. It has not yet been transported from
-normalized limit modes to the literal eta-prefix frame, especially across
-off-line real-decay layers. The project still needs
+Consequently, for any finite same-real-part family with at least two zeros,
+one odd prime and one positive phase gap give, for every `M > 0` and
+`ε > 0`, an eventual simultaneous bound
+`literalCoherenceSq · gap² < 4/M² + ε` for every distinct pair. The
+critical-zero window is a checked specialization. This is now a quantitative
+literal eta theorem, but it still uses explicit normalization and does not yet
+cover the packed reflection-even cross-layer/off-line-real carrier. The
+project still needs
 `(31N-36) · potential < 36 · reserve` to beat `13/18`, and the stronger
 `(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither
 quantitative comparison is proved yet, so the zero proportion has not

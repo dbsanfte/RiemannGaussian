@@ -1185,11 +1185,17 @@ and proves `|corr|²|conj(w)z-1|²≤4`. Every finite injective unit-mode family
 has a checked positive minimum phase gap, giving a uniform `O(M⁻²)` bound
 for all distinct-pair squared coherences; one collision-free odd prime
 instantiates this on any same-real-part zeta-zero layer and on the critical
-window. The next obligation is to transport that quantitative limit-mode
-estimate through the sharp eta-prefix asymptotics to long literal cutoff
-blocks, retaining off-line real decay, then prove a reserve lower bound strong
-enough for the first displayed inequality and eventually the endpoint. No
-such literal quantitative lower bound is currently proved.
+window. Lean now performs the first arithmetic transport: explicitly
+normalized literal eta-prefix vectors converge to the unit-mode vectors, and
+their complex correlations, squared norms, and squared coherences converge as
+well. Hence one prime and one positive gap give the eventual simultaneous
+bound `literalCoherenceSq*gap² < 4/M²+ε` for every distinct pair in a finite
+same-real-part layer, including the critical window. The next obligation is
+to carry those exact normalizations through the actual packed
+reflection-even features, retain cross-layer off-line real decay, and
+aggregate the estimate into a reserve lower bound strong enough for the first
+displayed inequality and eventually the endpoint. No such packed quantitative
+lower bound is currently proved.
 
 ## Soundness invariant
 
