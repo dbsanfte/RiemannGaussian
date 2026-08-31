@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description" viewBox="0 0 1000 235">
   <title id="title">Lean-verified RiemannGaussian theorem inventory</title>
-  <desc id="description">An inventory of checked analytic results, equivalences, bridges, and reductions. The boxes are not a proof chain. No checked implication crosses the displayed conjecture-strength gap to RH.</desc>
+  <desc id="description">Checked project results, identities, an attributed external baseline, and equivalences. The boxes are not a proof chain. No project theorem improves the external zero-proportion baseline or proves RH.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b949e"/>
@@ -13,7 +13,7 @@
       .proved rect { fill: #12261a; stroke: #3fb950; stroke-width: 1.5; }
       .proved.equivalence rect { fill: #211735; stroke: #a371f7; }
       .proved.bridge rect { fill: #111f35; stroke: #58a6ff; }
-      .proved.reduction rect { fill: #102a2c; stroke: #39c5cf; }
+      .proved.external rect { fill: #20220f; stroke: #d2a822; }
       .open rect { fill: #2d210d; stroke: #d29922; stroke-width: 1.8; }
       .goal rect { fill: #161b22; stroke: #8b949e; stroke-width: 1.5; stroke-dasharray: 5 4; }
       .open text { fill: #f2cc60; font-weight: 700; }
@@ -26,9 +26,9 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 487 modules · 12330 declarations · 10416 theorems</text>
-  <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
-  <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 485 modules · 12231 declarations · 10341 theorems</text>
+  <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · milestones standard-only</text>
+  <text class="section" x="20" y="64">CHECKED RESULTS, IDENTITIES, AND ATTRIBUTED BASELINE</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
   <line x1="670" y1="62" x2="670" y2="207" stroke="#30363d"/>
   <text class="gap-label" x="765" y="94">UNPROVED MATHEMATICS</text>
@@ -69,11 +69,11 @@
     <text x="252" y="173">eta heat trajectory</text>
     <text x="252" y="191">3-colour zero sum  ✓</text>
   </g>
-  <g class="proved bridge">
+  <g class="proved external">
     <rect x="340" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat</title>
-    <text x="412" y="173">independent heat</text>
-    <text x="412" y="191">crossing iff &gt;13/18  ✓</text>
+    <title>RiemannGaussian.externalZeta23_montgomeryTaylor_distinctCritical</title>
+    <text x="412" y="173">external baseline</text>
+    <text x="412" y="191">exact HD(1)  ✓</text>
   </g>
   <g class="proved bridge">
     <rect x="500" y="150" width="145" height="54" rx="9"/>
@@ -83,12 +83,12 @@
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
-    <text x="765" y="133">arithmetic rigidity</text>
-    <text x="765" y="153">CONJECTURE-STRENGTH</text>
+    <text x="765" y="133">eta arithmetic bound</text>
+    <text x="765" y="153">NO NEW PROPORTION</text>
   </g>
   <g class="goal">
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: bound the fixed-step recovered eta carrier for &gt;13/18; no improvement yet.</text>
+  <text class="frontier" x="20" y="220">Current fact: no RiemannGaussian certificate improves the imported exact HD(1) zeta baseline.</text>
 </svg>

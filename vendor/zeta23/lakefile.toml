@@ -1,0 +1,16 @@
+name = "Zeta23"
+version = "0.1.0"
+defaultTargets = ["Zeta23"]
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+warningAsError = true
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.33.1"
+
+[[lean_lib]]
+name = "Zeta23"

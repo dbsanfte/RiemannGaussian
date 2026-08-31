@@ -26,27 +26,19 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian is pursuing a phase-preserving eta zero-window certificate beyond Anthropic's two-thirds benchmark and ultimately `18/18`. Lean now factors adjacent probes through a cutoff-independent step matrix and exactly recovers the coefficient-weighted four-colour reserve without inverting any shrinking radial coefficient. The frontier is a quantitative eta-arithmetic bound on this scale-free recovered carrier strong enough for `13/18`, then `18/18`; neither threshold is proved.
+RiemannGaussian is pursuing an unconditional, phase-preserving eta zero-window bound that strictly improves the imported exact Montgomery--Taylor `HD(1)` benchmark and ultimately reaches `18/18`. No project theorem currently improves that baseline. Conditional threshold interfaces are not certificates; `13/18` counts only when a literal zeta-window inequality is proved and discharged in Lean.
 
 ## Latest Update
 
-Lean now factors the adjacent-start coefficient matrix exactly as `Dₙ V`.
-The diagonal `Dₙ` contains both moving completion coefficients, while `V`
-contains only their zeroth and first step-mode powers. Its determinant is the
-difference of the two step modes and is nonzero for every `q > 1`; crucially,
-`V` is independent of the cutoff start.
+The repository now rechecks the pinned Apache-2.0 Zeta23 proof closure for the
+unconditional two-thirds theorem and the stronger exact Montgomery--Taylor
+`HD(1)` theorem. Project wrappers have only Lean's standard logical axioms and
+use the source's genuine multiplicity-weighted zeta counts.
 
-The four adjacent probes therefore recover `Dζᴴ K Dρ` by inverting only the
-fixed step matrices. Its entries are precisely the coefficient-weighted
-complex colour interactions whose real parts form the signed eta reserve.
-Lean transports this recovery through all sixteen ordered interactions, the
-pair and window reserves, removal of the universal `q^(-2n)` scale, and both
-existing certificate interfaces.
-
-This removes the vanishing radial coefficient from the inverse without
-discarding phase, sign, or colour. It does not bound the recovered carrier:
-neither `13/18` nor `18/18` is proved. The next task is a finite-window
-conditioning bound followed by an arithmetic estimate on the four probes.
+The abstract degree-four `13/18` toy-model modules and dashboard milestone
+were removed. The generated status now distinguishes the attributed external
+baseline from original project results and states the certification gap
+directly: no literal eta/zeta theorem here yet improves `HD(1)`.
 
 ## Mathematical Program
 
@@ -87,6 +79,9 @@ reformulations establishes the open arithmetic direction by itself.
 - [RiemannGaussian/MontgomeryVaughan/](RiemannGaussian/MontgomeryVaughan/)
   contains the attributed Apache-2.0 proof of the weighted Hilbert inequality
   and its explicit constants.
+- [vendor/zeta23/](vendor/zeta23/) contains the pinned, warning-clean
+  transitive source closure for the attributed external zero-proportion
+  baselines, with upstream commit and compatibility changes recorded there.
 - [scripts/GenerateProjectStatus.lean](scripts/GenerateProjectStatus.lean)
   audits the compiled environment and generates the status artifacts in
   [docs/](docs/).

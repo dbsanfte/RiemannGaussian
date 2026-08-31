@@ -1344,8 +1344,17 @@ every commit.
 - Every mathematical progress claim must name a compiled theorem. Comments,
   Markdown, Python output, numerical evidence, and successful examples are
   not proof.
-- External research notes are leads, not trusted inputs. Re-derive every fact
-  in Lean from already checked definitions and theorems.
+- A zero-proportion threshold counts as achieved only when a compiled theorem
+  is stated for the literal zeta counting functions and every arithmetic or
+  analytic antecedent is discharged. Generic moment models, toy measures,
+  conditional implications, equivalent criteria, and method ceilings are not
+  certificates and must not appear as achieved dashboard milestones.
+- Decimal labels are descriptive unless Lean proves exact enclosing
+  inequalities. State the exact checked constant in theorem claims.
+- External research notes are leads, not trusted inputs. A pinned external
+  Lean proof may be used only with attribution, license provenance, a strict
+  build, and a complete transitive axiom audit; it must be labeled an external
+  baseline rather than original project progress.
 - Numerical and symbolic computation may explore conjectures, find constants,
   or produce exact certificates. The final theorem must check in Lean without
   trusting Python or floating-point output.
@@ -1494,6 +1503,11 @@ compiled project modules for indirect placeholder dependencies, rejects all
 project-defined axioms and disallowed transitive axioms, and verifies that
 every green dashboard milestone is an actual project theorem using only the
 three permitted standard axioms.
+
+Public status language is an additional gate: never describe an abstract or
+conditional `13/18` statement as a result. Until a theorem over literal zeta
+counts discharges the required eta-arithmetic inequality, README, dashboard,
+commit messages, and handoffs must say that no `13/18` certificate exists.
 
 ## GitHub gate
 
