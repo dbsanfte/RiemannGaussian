@@ -281,6 +281,20 @@ lemma simpleDefect_nonneg (x : ℝ) : 0 ≤ simpleDefect x := by
   · rw [simpleDefect_eq_two_mul_sub_three h.le]
     linarith
 
+/-- On the full spectral range of a normalized three-column Gram matrix,
+Devine's convex defect retains three quarters of the quadratic defect.  The
+constant is sharp at the rank-one endpoint `x = 3`. -/
+lemma three_quarters_sq_sub_one_le_simpleDefect
+    {x : ℝ} (_hx0 : 0 ≤ x) (hx3 : x ≤ 3) :
+    (3 / 4 : ℝ) * (x - 1) ^ 2 ≤ simpleDefect x := by
+  rcases le_or_gt x 2 with hx2 | hx2
+  · rw [simpleDefect_eq_sq_sub_one hx2]
+    nlinarith [sq_nonneg (x - 1)]
+  · rw [simpleDefect_eq_two_mul_sub_three hx2.le]
+    have hfactor : 0 ≤ (3 - x) * (3 * x - 5) :=
+      mul_nonneg (sub_nonneg.mpr hx3) (by linarith)
+    nlinarith
+
 /-- The three pairwise off-diagonal energies of a `3 × 3` Hermitian block. -/
 def tripleOffDiagEnergy (K : Matrix (Fin 3) (Fin 3) ℂ) : ℝ :=
   2 * (‖K 0 1‖ ^ 2 + ‖K 1 2‖ ^ 2 + ‖K 0 2‖ ^ 2)
@@ -295,6 +309,73 @@ lemma frobSq_eq_sum_norm_sq_local
   rw [Finset.sum_comm]
   refine sum_congr rfl fun i _ => sum_congr rfl fun j _ => ?_
   rw [RCLike.conj_mul, ← RCLike.ofReal_pow, RCLike.ofReal_re]
+
+omit [Fintype ι] [DecidableEq ι] [Fintype d] [DecidableEq d] in
+/-- The off-diagonal energy of a Hermitian three-by-three matrix is bounded
+by its full quadratic spectral displacement from the identity. -/
+lemma tripleOffDiagEnergy_le_sum_sq_sub_one
+    {K : Matrix (Fin 3) (Fin 3) ℂ} (hK : K.IsHermitian) :
+    tripleOffDiagEnergy K ≤ ∑ i, (hK.eigenvalues i - 1) ^ 2 := by
+  have hspec : (∑ i, (hK.eigenvalues i - 1) ^ 2) =
+      frobSq K - 2 * rtrace K + 3 := by
+    rw [rtrace_eq_sum_eigenvalues hK,
+      frobSq_hermitian_eq_sum_sq_eigenvalues hK]
+    simp_rw [sub_sq]
+    rw [Finset.sum_add_distrib, Finset.sum_sub_distrib, Finset.mul_sum]
+    simp
+  have hsymm : ∀ i j, ‖K j i‖ = ‖K i j‖ := by
+    intro i j
+    have hij := congrFun (congrFun hK i) j
+    rw [conjTranspose_apply] at hij
+    calc
+      ‖K j i‖ = ‖starRingEnd ℂ (K j i)‖ := by simp
+      _ = ‖K i j‖ := congrArg norm hij
+  have hgap : ∀ i, 0 ≤ ‖K i i‖ ^ 2 - 2 * (K i i).re + 1 := by
+    intro i
+    nlinarith [sq_nonneg (‖K i i‖ - 1), Complex.re_le_norm (K i i)]
+  rw [hspec, frobSq_eq_sum_norm_sq_local]
+  unfold tripleOffDiagEnergy rtrace trace
+  simp only [diag_apply, Fin.sum_univ_succ, Finset.univ_unique,
+    Finset.sum_singleton, map_add]
+  norm_num
+  have h10 := congrArg (fun x : ℝ => x ^ 2) (hsymm (0 : Fin 3) 1)
+  have h20 := congrArg (fun x : ℝ => x ^ 2) (hsymm (0 : Fin 3) 2)
+  have h21 := congrArg (fun x : ℝ => x ^ 2) (hsymm (1 : Fin 3) 2)
+  nlinarith [hgap 0, hgap 1, hgap 2, h10, h20, h21]
+
+omit [Fintype ι] [DecidableEq ι] [Fintype d] [DecidableEq d] in
+/-- A normalized positive three-column Gram block pays three quarters of its
+entire off-diagonal energy.  Unlike the qualitative predecessor below, this
+has no unit cap and therefore preserves large coherent correlations. -/
+theorem three_quarters_tripleOffDiagEnergy_le_sum_simpleDefect
+    {K : Matrix (Fin 3) (Fin 3) ℂ} (hK : K.PosSemidef)
+    (hdiag : ∀ i, (K i i).re ≤ 1) :
+    (3 / 4 : ℝ) * tripleOffDiagEnergy K ≤
+      ∑ i, simpleDefect (hK.1.eigenvalues i) := by
+  have htrace : rtrace K ≤ 3 := by
+    unfold rtrace trace
+    simp only [diag_apply, Fin.sum_univ_succ, Finset.univ_unique,
+      Finset.sum_singleton, map_add]
+    norm_num
+    linarith [hdiag 0, hdiag 1, hdiag 2]
+  have heig3 : ∀ i, hK.1.eigenvalues i ≤ 3 := by
+    intro i
+    have hsingle : hK.1.eigenvalues i ≤ ∑ j, hK.1.eigenvalues j :=
+      Finset.single_le_sum (fun j _ => hK.eigenvalues_nonneg j)
+        (Finset.mem_univ i)
+    rw [← rtrace_eq_sum_eigenvalues hK.1] at hsingle
+    linarith
+  have henergy := tripleOffDiagEnergy_le_sum_sq_sub_one hK.1
+  calc
+    (3 / 4 : ℝ) * tripleOffDiagEnergy K ≤
+        (3 / 4 : ℝ) * ∑ i, (hK.1.eigenvalues i - 1) ^ 2 :=
+      mul_le_mul_of_nonneg_left henergy (by norm_num)
+    _ = ∑ i, (3 / 4 : ℝ) * (hK.1.eigenvalues i - 1) ^ 2 := by
+      rw [Finset.mul_sum]
+    _ ≤ ∑ i, simpleDefect (hK.1.eigenvalues i) :=
+      Finset.sum_le_sum fun i _ =>
+        three_quarters_sq_sub_one_le_simpleDefect
+          (hK.eigenvalues_nonneg i) (heig3 i)
 
 omit [Fintype ι] [DecidableEq ι] [Fintype d] [DecidableEq d] in
 /-- A three-dimensional spectral block pays either its full off-diagonal
@@ -507,10 +588,48 @@ theorem sum_min_tripleOffDiagEnergy_le_sum_simpleDefect
     _ ≤ ∑ p, simpleDefect (hK.1.eigenvalues p) :=
       sumSimpleDefect_tripleBlocks_le_sumSimpleDefect_eigenvalues hK
 
+omit [Fintype ι] [DecidableEq ι] [Fintype d] [DecidableEq d] in
+/-- Disjoint normalized triples pay additively without truncating their
+off-diagonal energies. -/
+theorem sum_three_quarters_tripleOffDiagEnergy_le_sum_simpleDefect
+    {β : Type*} [Fintype β] [DecidableEq β]
+    {K : Matrix (Fin 3 × β) (Fin 3 × β) ℂ} (hK : K.PosSemidef)
+    (hdiag : ∀ p, (K p p).re ≤ 1) :
+    (∑ b, (3 / 4 : ℝ) *
+      tripleOffDiagEnergy
+        (K.submatrix (fun j : Fin 3 => (j, b)) (fun j : Fin 3 => (j, b)))) ≤
+      ∑ p, simpleDefect (hK.1.eigenvalues p) := by
+  calc
+    (∑ b, (3 / 4 : ℝ) *
+        tripleOffDiagEnergy
+          (K.submatrix (fun j : Fin 3 => (j, b))
+            (fun j : Fin 3 => (j, b)))) ≤
+        ∑ b, ∑ i, simpleDefect
+          ((hK.1.submatrix (fun j : Fin 3 => (j, b))).eigenvalues i) := by
+      refine Finset.sum_le_sum fun b _ => ?_
+      exact three_quarters_tripleOffDiagEnergy_le_sum_simpleDefect
+        (hK.submatrix (fun j : Fin 3 => (j, b)))
+        (fun i => hdiag (i, b))
+    _ ≤ ∑ p, simpleDefect (hK.1.eigenvalues p) :=
+      sumSimpleDefect_tripleBlocks_le_sumSimpleDefect_eigenvalues hK
+
 /-- Gram matrix of a finite family of complex columns. -/
 def columnGram {α n : Type*} [Fintype n]
     (v : α → n → ℂ) : Matrix α α ℂ :=
   (Wmat (fun _ : α => (1 : ℝ)) v)ᴴ * Wmat (fun _ : α => (1 : ℝ)) v
+
+lemma columnGram_diag_re
+    {α n : Type*} [Fintype n] (v : α → n → ℂ) (a : α) :
+    (columnGram v a a).re = ∑ k, ‖v a k‖ ^ 2 := by
+  let W : Matrix n α ℂ := Wmat (fun _ : α => (1 : ℝ)) v
+  change ((Wᴴ * W) a a).re = _
+  rw [Matrix.mul_apply]
+  change RCLike.re (∑ j : n, starRingEnd ℂ (W j a) * W j a) = _
+  rw [map_sum]
+  refine Finset.sum_congr rfl fun k _ => ?_
+  simp only [W, Zeta23.ZeroSide.RankTraceMult.Wmat, Real.sqrt_one]
+  rw [RCLike.conj_mul, ← RCLike.ofReal_pow, RCLike.ofReal_re]
+  norm_num
 
 lemma columnGram_posSemidef {α n : Type*} [Fintype α]
     [Fintype n] (v : α → n → ℂ) :
@@ -522,6 +641,111 @@ def paddedPackedFamily
     (v : α → n → ℂ) :
     Fin 3 × β → n → ℂ :=
   fun p => Sum.elim v (fun _ _ => 0) (e p)
+
+lemma paddedPackedFamily_normSq_le_one
+    {α κ β n : Type*} [Fintype n]
+    (e : Fin 3 × β ≃ Sum α κ) (v : α → n → ℂ)
+    (hv : ∀ a, ∑ k, ‖v a k‖ ^ 2 ≤ 1) (p : Fin 3 × β) :
+    ∑ k, ‖paddedPackedFamily e v p k‖ ^ 2 ≤ 1 := by
+  unfold paddedPackedFamily
+  cases hep : e p with
+  | inl a => simpa [hep] using hv a
+  | inr r => simp
+
+omit [Fintype ι] [DecidableEq ι] [Fintype d] [DecidableEq d] in
+/-- Exact spectral-defect ledger for adjoining zero columns and reindexing
+into triples. -/
+theorem sumSimpleDefect_paddedPackedFamily_eq
+    {α κ β n : Type*}
+    [Fintype α] [DecidableEq α] [Fintype κ]
+    [Fintype β] [DecidableEq β] [Fintype n] [DecidableEq n]
+    (v : α → n → ℂ) (e : Fin 3 × β ≃ Sum α κ) :
+    let vp := paddedPackedFamily e v
+    (∑ p, simpleDefect ((columnGram_posSemidef vp).1.eigenvalues p)) =
+      (∑ i, simpleDefect ((columnGram_posSemidef v).1.eigenvalues i)) +
+        Fintype.card κ := by
+  let vp := paddedPackedFamily e v
+  let W₀ := Wmat (fun _ : α => (1 : ℝ)) v
+  let Wp := Wmat (fun _ : Fin 3 × β => (1 : ℝ)) vp
+  have hP : Wp * Wpᴴ = W₀ * W₀ᴴ := by
+    change Pmat (fun _ : Fin 3 × β => (1 : ℝ)) vp =
+      Pmat (fun _ : α => (1 : ℝ)) v
+    ext a b
+    rw [Pmat_apply (fun _ => zero_le_one), Pmat_apply (fun _ => zero_le_one)]
+    norm_num
+    let g : Sum α κ → ℂ := fun s =>
+      Sum.elim v (fun _ _ => 0) s a * starRingEnd ℂ (Sum.elim v (fun _ _ => 0) s b)
+    change (∑ x, g (e x)) = ∑ x, v x a * starRingEnd ℂ (v x b)
+    rw [e.sum_comp]
+    simp [g, Fintype.sum_sum_type]
+  have hgc :
+      (∑ p, gc 2 ((columnGram_posSemidef vp).1.eigenvalues p)) =
+        ∑ i, gc 2 ((columnGram_posSemidef v).1.eigenvalues i) := by
+    calc
+      (∑ p, gc 2 ((columnGram_posSemidef vp).1.eigenvalues p)) =
+          ∑ p, gc 2
+            ((Matrix.posSemidef_conjTranspose_mul_self Wp).1.eigenvalues p) := rfl
+      _ = ∑ j, gc 2
+          ((Matrix.posSemidef_self_mul_conjTranspose Wp).1.eigenvalues j) :=
+        (sum_eigenvalues_comm Wp (gc 2) (by norm_num)).symm
+      _ = ∑ j, gc 2
+          ((Matrix.posSemidef_self_mul_conjTranspose W₀).1.eigenvalues j) :=
+        sumEigenvalues_congr_matrix
+          (Matrix.posSemidef_self_mul_conjTranspose Wp).1
+          (Matrix.posSemidef_self_mul_conjTranspose W₀).1 hP (gc 2)
+      _ = ∑ i, gc 2
+          ((Matrix.posSemidef_conjTranspose_mul_self W₀).1.eigenvalues i) :=
+        sum_eigenvalues_comm W₀ (gc 2) (by norm_num)
+      _ = ∑ i, gc 2 ((columnGram_posSemidef v).1.eigenvalues i) := rfl
+  have hcard : Fintype.card (Fin 3 × β) =
+      Fintype.card α + Fintype.card κ := by
+    calc
+      Fintype.card (Fin 3 × β) = Fintype.card (Sum α κ) := Fintype.card_congr e
+      _ = Fintype.card α + Fintype.card κ := Fintype.card_sum
+  unfold simpleDefect
+  simp only [Finset.sum_add_distrib, Finset.sum_const, Finset.card_univ,
+    nsmul_eq_mul]
+  norm_num
+  rw [hgc]
+  have hcardNat : 3 * Fintype.card β =
+      Fintype.card α + Fintype.card κ := by
+    simpa [Fintype.card_prod] using hcard
+  have hcardReal : (3 : ℝ) * Fintype.card β =
+      Fintype.card α + Fintype.card κ := by
+    exact_mod_cast hcardNat
+  linarith
+
+omit [Fintype ι] [DecidableEq ι] [Fintype d] [DecidableEq d] in
+/-- The uncapped packing ledger for normalized columns.  The factor `3/4`
+is the sharp coercivity constant for a three-column positive Gram block. -/
+theorem packedThreeQuartersEnergy_le_originalDefect_add_padding
+    {α κ β n : Type*}
+    [Fintype α] [DecidableEq α] [Fintype κ]
+    [Fintype β] [DecidableEq β] [Fintype n] [DecidableEq n]
+    (v : α → n → ℂ) (e : Fin 3 × β ≃ Sum α κ)
+    (hv : ∀ a, ∑ k, ‖v a k‖ ^ 2 ≤ 1) :
+    let vp := paddedPackedFamily e v
+    (∑ b, (3 / 4 : ℝ) *
+      tripleOffDiagEnergy
+        ((columnGram vp).submatrix (fun j : Fin 3 => (j, b))
+          (fun j : Fin 3 => (j, b)))) ≤
+      (∑ i, simpleDefect ((columnGram_posSemidef v).1.eigenvalues i)) +
+        Fintype.card κ := by
+  let vp := paddedPackedFamily e v
+  have hdiag : ∀ p, (columnGram vp p p).re ≤ 1 := by
+    intro p
+    rw [columnGram_diag_re]
+    exact paddedPackedFamily_normSq_le_one e v hv p
+  calc
+    (∑ b, (3 / 4 : ℝ) *
+        tripleOffDiagEnergy
+          ((columnGram vp).submatrix (fun j : Fin 3 => (j, b))
+            (fun j : Fin 3 => (j, b)))) ≤
+        ∑ p, simpleDefect ((columnGram_posSemidef vp).1.eigenvalues p) :=
+      sum_three_quarters_tripleOffDiagEnergy_le_sum_simpleDefect
+        (columnGram_posSemidef vp) hdiag
+    _ = (∑ i, simpleDefect ((columnGram_posSemidef v).1.eigenvalues i)) +
+        Fintype.card κ := sumSimpleDefect_paddedPackedFamily_eq v e
 
 omit [Fintype ι] [DecidableEq ι] [Fintype d] [DecidableEq d] in
 /-- Exact packing ledger.  Adding `r` zero columns costs exactly `r` units
@@ -684,6 +908,29 @@ lemma rtrace_simplePart :
     RCLike.re_to_complex, Complex.ofReal_re, hzData.2]
   simp
 
+/-- The Poisson normalization controls each simple-zero column separately,
+not merely their average trace. -/
+lemma simpleVhat_normSq_le_one {c : ℝ} (hc : 0 < c)
+    (hPois : ∀ z ∈ D.onLine, ∑ k, ‖D.v z k‖ ^ 2 ≤ c)
+    (z : D.S₁) :
+    ∑ k, ‖simpleVhat D c z k‖ ^ 2 ≤ 1 := by
+  have hzOn : z.1 ∈ D.onLine := by
+    rw [D.onLine_eq_S₁_union_S₂]
+    exact Finset.mem_union_left _ z.2
+  have hscale : (∑ k, ‖simpleVhat D c z k‖ ^ 2) =
+      c⁻¹ * ∑ k, ‖D.v z k‖ ^ 2 := by
+    rw [Finset.mul_sum]
+    refine Finset.sum_congr rfl fun k _ => ?_
+    unfold simpleVhat
+    rw [norm_div, Complex.norm_real, Real.norm_eq_abs,
+      abs_of_nonneg (Real.sqrt_nonneg c), div_pow, Real.sq_sqrt hc.le]
+    ring
+  rw [hscale]
+  calc
+    c⁻¹ * ∑ k, ‖D.v z k‖ ^ 2 ≤ c⁻¹ * c :=
+      mul_le_mul_of_nonneg_left (hPois z hzOn) (inv_nonneg.mpr hc.le)
+    _ = 1 := inv_mul_cancel₀ hc.ne'
+
 /-- Each normalized simple vector has squared norm at most one, so the trace
 of the simple block is bounded by the literal number `s₁` of simple on-line
 zeros. -/
@@ -818,6 +1065,39 @@ theorem hatAz_mult2_tripleCertificate
       (ZeroBlockData.tripleOffDiagEnergy
         ((zetaSimplePackedGram Z T P hconj e).submatrix
           (fun j : Fin 3 => (j, b)) (fun j : Fin 3 => (j, b)))) 1) ≤
+    (∑ z, ZeroBlockData.simpleDefect
+      ((zetaSimpleGram_posSemidef Z T P hconj).1.eigenvalues z)) +
+      Fintype.card κ at hpack
+  linarith
+
+/-- The literal inverse-sampling zero side with the uncapped three-column
+coercivity ledger.  This strictly retains more usable correlation energy than
+the earlier `min(E,1)` certificate whenever a coherent block has `E > 4/3`. -/
+theorem hatAz_mult2_tripleCertificate_uncapped
+    {κ β : Type*} [Fintype κ]
+    [Fintype β] [DecidableEq β]
+    (hconj : PhiHatConj T P) (hreal : PhiHatReal T P)
+    (hPois : PoissonSq T P) (hc : 0 < P.a T * P.L T ^ 2)
+    (e : Fin 3 × β ≃ Sum (blockData Z T P hconj).S₁ κ) :
+    4 * rtrace (P.hat T (Z.Az P T)) -
+        frobSq (P.hat T (Z.Az P T)) - 2 * (Z.NIprime T : ℝ) +
+        (∑ b, (3 / 4 : ℝ) *
+          ZeroBlockData.tripleOffDiagEnergy
+            ((zetaSimplePackedGram Z T P hconj e).submatrix
+              (fun j : Fin 3 => (j, b)) (fun j : Fin 3 => (j, b))))
+      ≤ (Z.s1 T : ℝ) + Fintype.card κ := by
+  have hzero := hatAz_mult2_retained Z T P hconj hreal hPois hc
+  have hv := ZeroBlockData.simpleVhat_normSq_le_one
+    (blockData Z T P hconj) hc
+    (sum_normSq_v_le Z T P hconj hreal hPois)
+  have hpack :=
+    ZeroBlockData.packedThreeQuartersEnergy_le_originalDefect_add_padding
+      (v := ZeroBlockData.simpleVhat (blockData Z T P hconj)
+        (P.a T * P.L T ^ 2)) e hv
+  change (∑ b, (3 / 4 : ℝ) *
+      ZeroBlockData.tripleOffDiagEnergy
+        ((zetaSimplePackedGram Z T P hconj e).submatrix
+          (fun j : Fin 3 => (j, b)) (fun j : Fin 3 => (j, b)))) ≤
     (∑ z, ZeroBlockData.simpleDefect
       ((zetaSimpleGram_posSemidef Z T P hconj).1.eigenvalues z)) +
       Fintype.card κ at hpack

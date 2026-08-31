@@ -580,6 +580,86 @@ theorem exists_montgomeryTaylorTripleAffineCertificate :
       exact mul_le_mul_of_nonneg_left hab.le hA.le
     exact hspan.trans (le_add_of_nonneg_left (montgomeryTaylorTripleEnergy_nonneg a b))
 
+/-- The uncapped three-column coercivity improves the affine coefficient by
+an exact factor `3/2`, using the same compact energy floor as the original
+capped certificate.  Keeping both witnesses in one theorem makes the strict
+gain available to the concrete endpoint without comparing unrelated choices
+of compact minima. -/
+theorem exists_montgomeryTaylorTripleAffineCertificates_strict :
+    ∃ A₀ B₀ A₁ B₁ : ℝ,
+      0 < A₀ ∧ 0 < B₀ ∧ A₀ ≤ 1 ∧ B₀ = A₀ / (6 * Real.pi) ∧
+      (∀ a b : ℝ, 0 ≤ a → 0 ≤ b →
+        A₀ ≤ montgomeryTaylorTripleEnergy a b + B₀ * (a + b)) ∧
+      A₀ < A₁ ∧ A₁ = (3 / 2 : ℝ) * A₀ ∧
+      0 < B₁ ∧ A₁ ≤ (3 / 2 : ℝ) ∧ B₁ = A₁ / (6 * Real.pi) ∧
+      ∀ a b : ℝ, 0 ≤ a → 0 ≤ b →
+        A₁ ≤ (3 / 4 : ℝ) * montgomeryTaylorTripleEnergy a b +
+          B₁ * (a + b) := by
+  obtain ⟨m, hm, hfloor⟩ := exists_montgomeryTaylorTripleEnergy_floor
+  let A₀ : ℝ := min (m / 2) 1
+  let B₀ : ℝ := A₀ / (6 * Real.pi)
+  let A₁ : ℝ := (3 / 2 : ℝ) * A₀
+  let B₁ : ℝ := A₁ / (6 * Real.pi)
+  have hA₀ : 0 < A₀ := by
+    dsimp [A₀]
+    exact lt_min (by positivity) zero_lt_one
+  have hA₀one : A₀ ≤ 1 := min_le_right _ _
+  have hA₀half : A₀ ≤ m / 2 := min_le_left _ _
+  have hB₀ : 0 < B₀ := by
+    dsimp [B₀]
+    positivity
+  have hA₁ : 0 < A₁ := by
+    dsimp [A₁]
+    positivity
+  have hA₀A₁ : A₀ < A₁ := by
+    dsimp [A₁]
+    linarith
+  have hA₁cap : A₁ ≤ (3 / 2 : ℝ) := by
+    dsimp [A₁]
+    nlinarith
+  have hA₁floor : A₁ ≤ (3 / 4 : ℝ) * m := by
+    dsimp [A₁]
+    nlinarith
+  have hB₁ : 0 < B₁ := by
+    dsimp [B₁]
+    positivity
+  have hcert₀ : ∀ a b : ℝ, 0 ≤ a → 0 ≤ b →
+      A₀ ≤ montgomeryTaylorTripleEnergy a b + B₀ * (a + b) := by
+    intro a b ha hb
+    rcases le_or_gt (a + b) (6 * Real.pi) with hab | hab
+    · have hE := hfloor a b ha hb hab
+      have hspan : 0 ≤ B₀ * (a + b) :=
+        mul_nonneg hB₀.le (add_nonneg ha hb)
+      linarith
+    · have hspan : A₀ ≤ B₀ * (a + b) := by
+        dsimp [B₀]
+        rw [div_mul_eq_mul_div,
+          le_div_iff₀ (mul_pos (by norm_num) Real.pi_pos)]
+        exact mul_le_mul_of_nonneg_left hab.le hA₀.le
+      exact hspan.trans
+        (le_add_of_nonneg_left (montgomeryTaylorTripleEnergy_nonneg a b))
+  have hcert₁ : ∀ a b : ℝ, 0 ≤ a → 0 ≤ b →
+      A₁ ≤ (3 / 4 : ℝ) * montgomeryTaylorTripleEnergy a b +
+        B₁ * (a + b) := by
+    intro a b ha hb
+    rcases le_or_gt (a + b) (6 * Real.pi) with hab | hab
+    · have hE := hfloor a b ha hb hab
+      have henergy : A₁ ≤
+          (3 / 4 : ℝ) * montgomeryTaylorTripleEnergy a b := by
+        nlinarith
+      exact henergy.trans
+        (le_add_of_nonneg_right (mul_nonneg hB₁.le (add_nonneg ha hb)))
+    · have hspan : A₁ ≤ B₁ * (a + b) := by
+        dsimp [B₁]
+        rw [div_mul_eq_mul_div,
+          le_div_iff₀ (mul_pos (by norm_num) Real.pi_pos)]
+        exact mul_le_mul_of_nonneg_left hab.le hA₁.le
+      exact hspan.trans
+        (le_add_of_nonneg_left
+          (mul_nonneg (by norm_num) (montgomeryTaylorTripleEnergy_nonneg a b)))
+  exact ⟨A₀, B₀, A₁, B₁, hA₀, hB₀, hA₀one, rfl, hcert₀,
+    hA₀A₁, rfl, hB₁, hA₁cap, rfl, hcert₁⟩
+
 lemma sqrt_two_lt_thirteen_halves : Real.sqrt 2 < (13 : ℝ) / 2 := by
   have := Real.sq_sqrt (by norm_num : (0 : ℝ) ≤ 2)
   nlinarith [Real.sqrt_nonneg 2]

@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.externalZeta23_montgomeryTaylor_simple_projectFiniteWindows
   },
   {
-    label := "Unconditional project improvement beyond the Zeta23 HD(1) benchmark"
+    label := "Uncapped project improvement beyond the preceding certificate"
     lineOne := "literal simple zeros"
-    lineTwo := "exists C > HD(1)"
+    lineTwo := "HD(1) < C₀ < C₁"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_simple_strict_improvement
+      ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   }
 ]
 
@@ -158,7 +158,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
       "aria-labelledby=\"title description\" viewBox=\"0 0 1000 235\">\n" ++
     "  <title id=\"title\">Lean-verified RiemannGaussian theorem inventory</title>\n" ++
     "  <desc id=\"description\">Checked project results, identities, an attributed " ++
-      "external baseline, a project zero-proportion improvement, and equivalences. The boxes " ++
+      "external baseline, ordered project zero-proportion improvements, and equivalences. The boxes " ++
       "are not a proof chain. The 13/18 target and RH remain unproved.</desc>\n" ++
     "  <defs>\n" ++
     "    <marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" " ++
@@ -203,15 +203,15 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     nodes ++
     "  <g class=\"open\">\n" ++
     "    <rect x=\"690\" y=\"108\" width=\"150\" height=\"62\" rx=\"10\"/>\n" ++
-    "    <text x=\"765\" y=\"133\">larger-block bound</text>\n" ++
-    "    <text x=\"765\" y=\"153\">TARGET 13/18</text>\n" ++
+    "    <text x=\"765\" y=\"133\">arithmetic/block bound</text>\n" ++
+    "    <text x=\"765\" y=\"153\">NEXT &gt; 68%</text>\n" ++
     "  </g>\n" ++
     "  <g class=\"goal\">\n" ++
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Current fact: Lean proves a literal " ++
-      "simple-zero constant C &gt; HD(1); 13/18 remains open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Current fact: Lean proves literal " ++
+      "simple-zero constants HD(1) &lt; C₀ &lt; C₁; 13/18 remains open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -262,7 +262,7 @@ run_cmd do
       throwError "milestone has nonstandard axioms: {milestone.theoremName}: {unexpectedAxioms}"
 
   let statusJson := Json.mkObj [
-    ("schemaVersion", toJson 10),
+    ("schemaVersion", toJson 11),
     ("generator", .str "scripts/GenerateProjectStatus.lean"),
     ("leanVersion", .str Lean.versionString),
     ("compiledProjectModules", toJson moduleCount),
@@ -277,11 +277,10 @@ run_cmd do
     ("statusNote", .str
       ("The build rechecks the pinned external Zeta23 unconditional two-thirds and exact " ++
         "multiplicity-aware Montgomery--Taylor HD(1) simple-zero theorems, proves in Lean that " ++
-        "HD(1) > 2/3. RiemannGaussian now controls the finite endpoint-sampling collar, packs " ++
-        "the literal simple zeros into disjoint consecutive triples, retains their nonlinear " ++
-        "Gram energy through the Zeta23 seam, and proves an unconditional literal simple-zero " ++
-        "constant C with HD(1) < C. This is a strict project improvement over the imported " ++
-        "baseline, but no 13/18 certificate or RH proof is claimed.")),
+        "HD(1) > 2/3. RiemannGaussian now proves the sharp normalized three-column coercivity " ++
+        "bound defect >= (3/4) off-diagonal-energy, carries its uncapped energy through the " ++
+        "finite endpoint sampler and Zeta23 seam, and constructs ordered unconditional literal " ++
+        "simple-zero constants HD(1) < C0 < C1. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[
       Json.mkObj [
         ("source", .str "anthropics/zeta-23-lean"),
@@ -315,21 +314,23 @@ run_cmd do
     ("projectAdvances", .arr #[
       Json.mkObj [
         ("theorem", .str
-          "RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_simple_strict_improvement"),
-        ("constant", .str "C with Zeta23.ThmD.HD 1 < C"),
+          "RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger"),
+        ("constant", .str "C0, C1 with Zeta23.ThmD.HD 1 < C0 < C1"),
         ("numerator", .str "Zeta23.N0simple T (2*T)"),
         ("denominator", .str "Zeta23.Ncount T (2*T)"),
-        ("status", .str "unconditional; Lean-checked project improvement")
+        ("comparisonTheorem", .str
+          "RiemannGaussian.Zeta23InverseSampling.montgomeryTaylor_affine_constant_strict_mono"),
+        ("status", .str "unconditional; strictly improves preceding project certificate")
       ]
     ]),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
-      ("label", .str "Quantitative larger-block certification to 13/18"),
+      ("label", .str "Strict literal certification above 68%"),
       ("status", .str "open"),
       ("target", .str
-        ("Replace the capped three-point certificate by an explicit phase-retaining " ++
-          "larger-block estimate strong enough to prove the literal 13/18 proportion; " ++
-          "then iterate the certificate toward 18/18."))
+        ("Add phase-, colour-, or scale-sensitive arithmetic beyond the sharp uncapped " ++
+          "three-column coercivity bound, first proving a literal proportion strictly " ++
+          "above 17/25, then 13/18, and ultimately 18/18."))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

@@ -26,18 +26,18 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian is strengthening literal simple-critical-zero certificates through phase-preserving inverse sampling. Lean now carries the finite sampler and disjoint-triple energy through the full Zeta23 endpoint argument to an unconditional constant `C > HD(1)`. The next target is an explicit larger-block certificate that preserves more correlation than the capped three-point scheme and reaches `13/18`, before iterating toward `18/18`.
+RiemannGaussian is strengthening literal simple-critical-zero certificates through information-preserving inverse sampling. Lean now carries uncapped three-column coercivity to a constant strictly above the prior project result. The next check-in threshold is a literal Lean theorem above `68%`; intermediate work stays local. The following targets are `13/18`, then `18/18`.
 
 ## Latest Update
 
 Lean theorem
-`externalZeta23_montgomeryTaylor_simple_strict_improvement` now constructs a
-constant `C > HD(1)` and proves, for every positive `ε`, that
-`(C - ε) N(T,2T) ≤ N₀ˢ(T,2T)` eventually. Its proof specializes the actual
-zeta configuration and paper inputs, controls the finite sampler collar, and
-carries disjoint-triple energy through the endpoint asymptotics. This is the
-first unconditional project improvement over the imported exact baseline; it
-does not yet reach `13/18`.
+`externalZeta23_montgomeryTaylor_uncapped_strictly_stronger` constructs
+ordered constants `HD(1) < C₀ < C₁` and proves the eventual literal bound
+`(Cᵢ - ε) N(T,2T) ≤ N₀ˢ(T,2T)` for both. The new endpoint uses the sharp
+three-column inequality `defect ≥ (3/4)·offDiagonalEnergy` on normalized Gram
+blocks, so it strictly improves the preceding capped project certificate.
+The constants remain non-numerical compact-minimum witnesses, and this does
+not yet reach `13/18`.
 
 ## Mathematical Program
 

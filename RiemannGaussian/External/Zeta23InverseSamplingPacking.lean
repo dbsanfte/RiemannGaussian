@@ -889,5 +889,208 @@ theorem exists_literalPackedEnergy_affine_lower
   change A * (q : ℝ) ≤ (∑ b : Fin Q, E b) + _ + _
   linarith
 
+/-- The strengthened affine endpoint certificate lower-bounds three quarters
+of every actual packed block energy without truncation.  The endpoint error
+shrinks from 36 to 27 under the same factor, while the span and padding ledgers
+remain exact. -/
+theorem exists_literalPackedThreeQuartersEnergy_affine_lower
+    {Z : Zeta23.ZeroConfig} {P : Zeta23.Params} (hP : P.Valid)
+    (hlam : P.lam = 1) {T : ℝ}
+    (hT : 4 ≤ T)
+    (h8 : 8 * P.w ≤ P.L T)
+    (h4pi : 4 * Real.pi * P.w ≤ P.L T)
+    (hgrid : 2 * Real.pi / P.L T ≤ Real.sqrt T / 2)
+    (hconj : Zeta23.ZeroSide.PhiHatConj T (P.atD T))
+    {A B : ℝ} (hB0 : 0 < B)
+    (hcert : ∀ a b : ℝ, 0 ≤ a → 0 ≤ b →
+      A ≤ (3 / 4 : ℝ) * montgomeryTaylorTripleEnergy a b + B * (a + b))
+    (herr1 : endpointSamplerError P T ≤ 1) :
+    let α := (Zeta23.ZeroSide.blockData Z T (P.atD T) hconj).S₁
+    let Q := (Fintype.card α + 2) / 3
+    let pad := 3 * Q - Fintype.card α
+    ∃ q : ℕ, ∃ e : Fin 3 × Fin Q ≃ Sum α (Fin pad),
+      q ≤ Q ∧
+      (interiorSimpleZeros Z (P.atD T) T hconj).card ≤ 3 * q + 4 ∧
+      pad ≤ 2 ∧
+      A * (q : ℝ) ≤
+        (∑ b : Fin Q, (3 / 4 : ℝ) *
+          ZeroBlockData.tripleOffDiagEnergy
+            ((zetaSimplePackedGram Z T (P.atD T) hconj e).submatrix
+              (fun j : Fin 3 => (j, b))
+              (fun j : Fin 3 => (j, b)))) +
+          (2 * B * P.L T * T) / 3 +
+          27 * endpointSamplerError P T * (q : ℝ) := by
+  classical
+  have hTpos : 0 < T := by linarith
+  have hL : 0 < P.L T := by linarith [hP.one_le_w]
+  have herr0 : 0 ≤ endpointSamplerError P T :=
+    endpointSamplerError_nonneg hP h8 h4pi hTpos
+  obtain ⟨r, q, f, e, hqQ, hr, hq, hmem, hord, hspan,
+      hcard, hpad, he⟩ :=
+    exists_literalInteriorTriplePacking (Z := Z) (P := P.atD T) hT hconj
+  let Q : ℕ :=
+    (Fintype.card
+      (Zeta23.ZeroSide.blockData Z T (P.atD T) hconj).S₁ + 2) / 3
+  let packed := zetaSimplePackedGram Z T (P.atD T) hconj e
+  let E : Fin Q → ℝ := fun b => (3 / 4 : ℝ) *
+    ZeroBlockData.tripleOffDiagEnergy
+      (packed.submatrix (fun j : Fin 3 => (j, b))
+        (fun j : Fin 3 => (j, b)))
+  have hper : ∀ b : Fin q,
+      A ≤ E (Fin.castLE hqQ b) +
+        B * (P.L T *
+          (simpleZeroOrdinate (f (2, b)) -
+            simpleZeroOrdinate (f (0, b)))) +
+        27 * endpointSamplerError P T := by
+    intro b
+    let z0 := f ((0 : Fin 3), b)
+    let z1 := f ((1 : Fin 3), b)
+    let z2 := f ((2 : Fin 3), b)
+    let a : ℝ := P.L T *
+      (simpleZeroOrdinate z1 - simpleZeroOrdinate z0)
+    let c : ℝ := P.L T *
+      (simpleZeroOrdinate z2 - simpleZeroOrdinate z1)
+    let K : Matrix (Fin 3) (Fin 3) ℂ :=
+      packed.submatrix
+        (fun j : Fin 3 => (j, Fin.castLE hqQ b))
+        (fun j : Fin 3 => (j, Fin.castLE hqQ b))
+    have ha0 : 0 ≤ a := by
+      dsimp [a, z0, z1]
+      exact mul_nonneg hL.le (sub_nonneg.mpr (hord b).1)
+    have hc0 : 0 ≤ c := by
+      dsimp [c, z1, z2]
+      exact mul_nonneg hL.le (sub_nonneg.mpr (hord b).2)
+    have hz0 := mem_interiorSimpleZeros_iff.mp (hmem ((0 : Fin 3), b))
+    have hz1 := mem_interiorSimpleZeros_iff.mp (hmem ((1 : Fin 3), b))
+    have hz2 := mem_interiorSimpleZeros_iff.mp (hmem ((2 : Fin 3), b))
+    have h01raw := atD_zetaSimpleGram_apply_close_montgomeryTaylorKernel
+      hP hlam h8 h4pi hTpos hgrid z0 z1 hz0.1 hz0.2 hz1.1 hz1.2
+    have h12raw := atD_zetaSimpleGram_apply_close_montgomeryTaylorKernel
+      hP hlam h8 h4pi hTpos hgrid z1 z2 hz1.1 hz1.2 hz2.1 hz2.2
+    have h02raw := atD_zetaSimpleGram_apply_close_montgomeryTaylorKernel
+      hP hlam h8 h4pi hTpos hgrid z0 z2 hz0.1 hz0.2 hz2.1 hz2.2
+    have h01 : ‖K 0 1 - (montgomeryTaylorKernel a : ℂ)‖ ≤
+        endpointSamplerError P T := by
+      change ‖packed (0, Fin.castLE hqQ b) (1, Fin.castLE hqQ b) -
+        (montgomeryTaylorKernel a : ℂ)‖ ≤ _
+      dsimp only [packed]
+      rw [zetaSimplePackedGram_apply_of_inl hconj e _ _ z0 z1
+        (he 0 b) (he 1 b)]
+      have hsign : P.L T *
+          (simpleZeroOrdinate z0 - simpleZeroOrdinate z1) = -a := by
+        dsimp [a]
+        ring_nf
+      have hsignRaw : P.L T *
+          (((z0.1 : Zeta23.ZeroSide.ZI Z T) : ℂ).im -
+            ((z1.1 : Zeta23.ZeroSide.ZI Z T) : ℂ).im) = -a := by
+        simpa only [simpleZeroOrdinate] using hsign
+      rw [hsignRaw, montgomeryTaylorKernel_neg] at h01raw
+      simpa only [endpointSamplerError] using h01raw
+    have h12 : ‖K 1 2 - (montgomeryTaylorKernel c : ℂ)‖ ≤
+        endpointSamplerError P T := by
+      change ‖packed (1, Fin.castLE hqQ b) (2, Fin.castLE hqQ b) -
+        (montgomeryTaylorKernel c : ℂ)‖ ≤ _
+      dsimp only [packed]
+      rw [zetaSimplePackedGram_apply_of_inl hconj e _ _ z1 z2
+        (he 1 b) (he 2 b)]
+      have hsign : P.L T *
+          (simpleZeroOrdinate z1 - simpleZeroOrdinate z2) = -c := by
+        dsimp [c]
+        ring
+      have hsignRaw : P.L T *
+          (((z1.1 : Zeta23.ZeroSide.ZI Z T) : ℂ).im -
+            ((z2.1 : Zeta23.ZeroSide.ZI Z T) : ℂ).im) = -c := by
+        simpa only [simpleZeroOrdinate] using hsign
+      rw [hsignRaw, montgomeryTaylorKernel_neg] at h12raw
+      simpa only [endpointSamplerError] using h12raw
+    have h02 : ‖K 0 2 - (montgomeryTaylorKernel (a + c) : ℂ)‖ ≤
+        endpointSamplerError P T := by
+      change ‖packed (0, Fin.castLE hqQ b) (2, Fin.castLE hqQ b) -
+        (montgomeryTaylorKernel (a + c) : ℂ)‖ ≤ _
+      dsimp only [packed]
+      rw [zetaSimplePackedGram_apply_of_inl hconj e _ _ z0 z2
+        (he 0 b) (he 2 b)]
+      have hsign : P.L T *
+          (simpleZeroOrdinate z0 - simpleZeroOrdinate z2) = -(a + c) := by
+        dsimp [a, c]
+        ring
+      have hsignRaw : P.L T *
+          (((z0.1 : Zeta23.ZeroSide.ZI Z T) : ℂ).im -
+            ((z2.1 : Zeta23.ZeroSide.ZI Z T) : ℂ).im) = -(a + c) := by
+        simpa only [simpleZeroOrdinate] using hsign
+      rw [hsignRaw, montgomeryTaylorKernel_neg] at h02raw
+      simpa only [endpointSamplerError] using h02raw
+    have hstable :=
+      tripleOffDiagEnergy_ge_montgomeryTaylorTripleEnergy_sub
+        K herr0 herr1 h01 h12 h02
+    have haffine := hcert a c ha0 hc0
+    have hscaled :
+        A ≤ (3 / 4 : ℝ) * ZeroBlockData.tripleOffDiagEnergy K +
+          B * (a + c) + 27 * endpointSamplerError P T := by
+      nlinarith
+    have hac : a + c = P.L T *
+        (simpleZeroOrdinate z2 - simpleZeroOrdinate z0) := by
+      dsimp [a, c]
+      ring
+    change A ≤ (3 / 4 : ℝ) * ZeroBlockData.tripleOffDiagEnergy K + _ + _
+    rw [hac] at hscaled
+    exact hscaled
+  have hselected :
+      A * (q : ℝ) ≤
+        (∑ b : Fin q, E (Fin.castLE hqQ b)) +
+          B * P.L T *
+            (∑ b : Fin q,
+              (simpleZeroOrdinate (f (2, b)) -
+                simpleZeroOrdinate (f (0, b)))) +
+          27 * endpointSamplerError P T * (q : ℝ) := by
+    calc
+      A * (q : ℝ) = ∑ _b : Fin q, A := by simp [mul_comm]
+      _ ≤ ∑ b : Fin q, (E (Fin.castLE hqQ b) +
+          B * (P.L T *
+            (simpleZeroOrdinate (f (2, b)) -
+              simpleZeroOrdinate (f (0, b)))) +
+          27 * endpointSamplerError P T) :=
+        Finset.sum_le_sum fun b hb => hper b
+      _ = (∑ b : Fin q, E (Fin.castLE hqQ b)) +
+          B * P.L T *
+            (∑ b : Fin q,
+              (simpleZeroOrdinate (f (2, b)) -
+                simpleZeroOrdinate (f (0, b)))) +
+          27 * endpointSamplerError P T * (q : ℝ) := by
+        simp only [Finset.sum_add_distrib, Finset.mul_sum,
+          Finset.sum_const, Finset.card_univ, Fintype.card_fin,
+          nsmul_eq_mul]
+        ring_nf
+  have hE0 : ∀ b : Fin Q, 0 ≤ E b := by
+    intro b
+    unfold E ZeroBlockData.tripleOffDiagEnergy
+    positivity
+  have hselectedFull :
+      (∑ b : Fin q, E (Fin.castLE hqQ b)) ≤ ∑ b : Fin Q, E b := by
+    let emb : Fin q ↪ Fin Q := Fin.castLEEmb hqQ
+    calc
+      (∑ b : Fin q, E (Fin.castLE hqQ b)) =
+          ∑ b ∈ Finset.univ.map emb, E b := by
+        rw [Finset.sum_map]
+        rfl
+      _ ≤ ∑ b ∈ (Finset.univ : Finset (Fin Q)), E b :=
+        Finset.sum_le_sum_of_subset_of_nonneg (by simp)
+          (fun b hb hnot => hE0 b)
+      _ = ∑ b : Fin Q, E b := rfl
+  have hspanCost :
+      B * P.L T *
+          (∑ b : Fin q,
+            (simpleZeroOrdinate (f (2, b)) -
+              simpleZeroOrdinate (f (0, b)))) ≤
+        (2 * B * P.L T * T) / 3 := by
+    have hBL : 0 ≤ B * P.L T := mul_nonneg hB0.le hL.le
+    rw [le_div_iff₀ (by norm_num : (0 : ℝ) < 3)]
+    nlinarith [mul_le_mul_of_nonneg_left hspan hBL]
+  refine ⟨q, e, hqQ, hcard, hpad, ?_⟩
+  change A * (q : ℝ) ≤ (∑ b : Fin Q, E b) + _ + _
+  linarith
+
+
+
 end Zeta23InverseSampling
 end RiemannGaussian

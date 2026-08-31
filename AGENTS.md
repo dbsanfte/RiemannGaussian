@@ -1329,9 +1329,11 @@ conditioning bound and eta-arithmetic estimate for this scale-free carrier.
 Lean now also rechecks the complete pinned multiplicity-aware Zeta23 chain.
 The exact external `HD(1)` theorem is instantiated for the literal simple
 critical-line count over the analytic-multiplicity denominator and bridged to
-the project-native simple dyadic window. This is the correct external baseline,
-not original progress beyond it; no RiemannGaussian theorem improves that
-proportion.
+the project-native simple dyadic window. Beyond that external baseline, the
+project now proves two ordered unconditional literal constants
+`HD(1) < C₀ < C₁`; the stronger one uses uncapped three-column coercivity and
+strictly improves the preceding project certificate. No `13/18` theorem is
+claimed.
 
 ## Certification-advance commit gate
 
@@ -1342,6 +1344,14 @@ with every arithmetic and analytic premise discharged, whose exact certified
 critical-line proportion is strictly stronger than the best unconditional
 bound already present at its parent commit. The immediate milestones are a real
 `13/18` certificate and then `18/18`.
+
+After the uncapped three-column `HD(1) < C₀ < C₁` slice, strict improvement
+alone is no longer enough to authorize a commit. The next commit and push must
+contain an unconditional theorem over the literal zeta counting functions
+whose certified proportion is strictly greater than `17 / 25` (exactly 68%).
+Any improvement that remains at or below `17 / 25`, even if mathematically
+strict, stays uncommitted research. After crossing that gate, the next exact
+milestones remain `13 / 18` and then `18 / 18`.
 
 No commit is justified merely because it proves a real lemma. Representations,
 interfaces, bridge lemmas, conditional implications, abstract finite models,
