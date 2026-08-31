@@ -1306,6 +1306,16 @@ square equal to the exact coefficient-ratio norm and tends to zero, so the
 true reciprocal hyperbolic imbalance remains visible. The live obligation is
 an eta-arithmetic bound on this scale-free carrier strong enough to prove one
 of the threshold antecedents; neither is yet proved.
+Lean now prevents that shrinking colour from being erased by a one-scale
+contraction. The two reflected completion coefficients advance by distinct
+complex step modes for every `q > 1`, so their adjacent-start `2 × 2` matrix
+is nonsingular. Two coefficient probes recover an arbitrary colour vector,
+and four left/right probes recover the entire literal normalized-prefix colour
+metric exactly. The `(0,0)` probe is the existing eta contraction; the other
+three vary the adjacent coefficient rows against that same fixed-start metric,
+not a silently frozen prefix at `n + 1`. No conditioning or arithmetic bound
+follows from inversion alone. The live obligation is a quantitative estimate
+on this scale-free multi-start carrier that yields `13/18`, then `18/18`.
 
 ## Soundness invariant
 

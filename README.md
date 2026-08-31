@@ -26,27 +26,27 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian is pursuing a phase-preserving eta zero-window certificate that beats Anthropic's two-thirds benchmark and ultimately reaches `18/18`. Lean has now removed the universal `q^(-2n)` cutoff decay from the exact polar--hyperbolic reserve and certificate, leaving reciprocal radial imbalance, unit phases, and signed colour interactions explicit. The frontier is an eta-arithmetic estimate on this normalized carrier strong enough for `13/18`, then `18/18`; neither threshold is proved.
+RiemannGaussian is pursuing a phase-preserving eta zero-window certificate beyond Anthropic's two-thirds benchmark and ultimately `18/18`. Lean now reconstructs every four-colour prefix metric exactly from four adjacent-start coefficient probes, so the shrinking reflected colour is not erased at one scale. The frontier is a quantitative eta-arithmetic bound on this scale-free two-scale carrier strong enough for `13/18`, then `18/18`; neither threshold is proved.
 
 ## Latest Update
 
-Lean now computes the common cutoff scale in the exact polar--hyperbolic
-ledger. The norm of each completed coefficient is its fixed leading norm
-times the inverse geometric decay at `Re ρ`. Since reflected real parts sum
-to one, every completion pair has norm product equal to a fixed positive
-leading product times `q^(-n)`.
+Lean now proves exact finite two-start tomography for the reflected/original
+eta colours. Each completion coefficient advances by a fixed complex step
+mode, and the two reflected step modes are unequal for every base `q > 1`.
+Consequently the adjacent-start `2 × 2` coefficient matrix has nonzero
+determinant and exactly recovers any two-colour vector.
 
-It follows that every ordered-pair reserve contains the same `q^(-2n)`
-factor. Lean removes this factor from the complete signed upper-window
-reserve, multiplies the full frame potential by the matching positive scale,
-and proves that both the eventual `13/18` and finite-window `18/18`
-certificate targets are logically unchanged.
+Applying the construction on both sides of a colour metric gives four
+cross-start coefficient probes. Two-sided inversion recovers every entry of
+the literal normalized-prefix `2 × 2` metric. The `(0,0)` probe is exactly the
+existing one-start eta coefficient contraction; the other three retain the
+same fixed prefix metric while changing the coefficient rows.
 
-The normalization isolates rather than erases the hard structure: the square
-of the reflected radial colour is exactly the norm of the completion ratio
-and tends to zero, while its partner remains reciprocal and all phases stay
-present. No threshold is proved. The next task is a quantitative arithmetic
-estimate for this scale-free hyperbolic carrier.
+This prevents the late shrinking of one radial colour from destroying finite
+information before it reaches the certificate. It is not yet a conditioning
+estimate or an arithmetic threshold: neither `13/18` nor `18/18` is proved.
+The next task is to obtain a quantitative bound from the recovered multi-scale
+carrier.
 
 ## Mathematical Program
 

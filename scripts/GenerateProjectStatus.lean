@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "The balanced eta certificate has one universal cutoff scale"
-    lineOne := "eta cutoff scale"
-    lineTwo := "q^(-2n) removed"
+    label := "Two adjacent eta starts recover the complete colour metric"
+    lineOne := "two-start eta"
+    lineTwo := "4 colours recovered"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaGeometricUpperWindowSignedMetricReserve_eq_universalScale_mul_normalizedBalanced
+      ``RiemannGaussian.pairedEtaGeometricCriticalUpperTwoStartMetricPrefixObservation_recover
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "bound the exact scale-free signed eta carrier for &gt;13/18; no improvement yet.</text>\n" ++
+      "bound the exact scale-free two-start eta carrier for &gt;13/18; no improvement yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -884,7 +884,12 @@ run_cmd do
         "ordered-pair reserve contains the same q^(-2*n) factor. Removing it from the reserve and " ++
         "multiplying the frame potential by the matching positive scale leaves both certificate " ++
         "targets equivalent. The reflected radial colour still tends to zero in square, exposing " ++
-        "the remaining hyperbolic imbalance. No theorem yet proves either threshold.")),
+        "the remaining hyperbolic imbalance. Lean now retains one adjacent coefficient start. " ++
+        "The two reflected colours have distinct exact step modes for every q>1, making the " ++
+        "two-start coefficient matrix nonsingular. Four left/right coefficient probes therefore " ++
+        "recover the complete fixed-start 2x2 literal prefix metric, with the (0,0) probe equal " ++
+        "to the existing eta contraction. This exact tomography supplies no conditioning or " ++
+        "arithmetic estimate. No theorem yet proves either threshold.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -908,7 +913,10 @@ run_cmd do
         "balanced aggregate. Functional-equation reflection further makes every pair scale share " ++
         "one universal q^(-2*n) cutoff factor. Lean removes it from both sides of the certificate, " ++
         "leaving an equivalent coefficient-normalized carrier whose reciprocal radial imbalance " ++
-        "and unit phases remain explicit. The open step is an eta-arithmetic bound on that carrier. " ++
+        "and unit phases remain explicit. Lean now proves that the two adjacent completion-" ++
+        "coefficient rows are nonsingular and that four left/right probes recover every colour of " ++
+        "the fixed-start literal prefix metric exactly. The open step is an eta-arithmetic bound " ++
+        "on this scale-free multi-start carrier; matrix inversion alone gives no estimate. " ++
         "Lean already proves F_N=L_N+R_N, the critical " ++
         "summability of R_N, the exact cosine/crossover factorization of the higher-" ++
         "multiplicity L_N kernel, the finite on-line/off-line block decomposition, " ++
