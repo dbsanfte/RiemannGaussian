@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "The eta separator is a colour-resolved coordinate heat trace"
-    lineOne := "eta coordinate heat"
-    lineTwo := "colour paths retained"
+    label := "Eta 13/18 and finite 18/18 reduce to two coloured moments"
+    lineOne := "eta effective rank"
+    lineTwo := "2-moment targets"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaGeometricReflectionEvenCoordinateHeatCertificateInterface
+      ``RiemannGaussian.exists_prime_eventually_pairedEtaGeometricReflectionEvenColouredEffectiveRankCertificateInterface
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove eta-arithmetic bounds excluding the sharp 13/18 moment adversary.</text>\n" ++
+      "prove the literal eta two-moment inequality; no improved proportion yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -811,10 +811,11 @@ run_cmd do
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Derive estimates for the checked trace/Frobenius ledger from the literal eta " ++
-        "arithmetic strong enough " ++
-        "to prove the critical first absolute moment of the selected " ++
-        "leading-current kernels. Lean already proves F_N=L_N+R_N, the critical " ++
+        "Derive the literal eta inequality 31*N*Re(path2)<36*Re(path1)^2 on an " ++
+        "eventually separated geometric window. The checked effective-rank bridge makes " ++
+        "this sufficient to beat 13/18, while the stronger endpoint ceiling " ++
+        "N*Re(path2)<=Re(path1)^2 is sufficient for finite-window 18/18. " ++
+        "Lean already proves F_N=L_N+R_N, the critical " ++
         "summability of R_N, the exact cosine/crossover factorization of the higher-" ++
         "multiplicity L_N kernel, the finite on-line/off-line block decomposition, " ++
         "the required divisor-count rank and positive-index bounds, exact scalar " ++
@@ -927,8 +928,13 @@ run_cmd do
         "positive on-line-plus-off-line-real coordinate block. Positive moments agree, and ordinary " ++
         "heat differs by one exact zero-padding cardinality. A checked coloured closed-path series " ++
         "retains the intermediate packed coordinate and on-line/off-line-real choice at every edge. " ++
-        "The remaining step is to prove the crossing or a stronger exclusion from those literal " ++
-        "eta correlations. " ++
+        "Its rank is now exactly critical plus upper-off-line. Finite Cauchy--Schwarz gives the " ++
+        "effective-rank bound rtrace^2<=rank*frobSq, while the first two moments are exactly the " ++
+        "real length-one and length-two coloured path sums. The explicit inequality " ++
+        "31*N*Re(path2)<36*Re(path1)^2 is sufficient for a proportion above 13/18; the endpoint " ++
+        "ceiling N*Re(path2)<=Re(path1)^2 is sufficient for every represented zero to be critical. " ++
+        "These are checked implications, not proved eta estimates. The remaining step is to derive " ++
+        "one of their premises from the literal eta correlations. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
@@ -937,8 +943,8 @@ run_cmd do
         "does not instantiate the eta window. The independent ordinary heat trace now separates " ++
         "strict improvement exactly: it crosses below 5/36 at some nonnegative scale if and only if " ++
         "the certificate is greater than 13/18, while the sharp model never crosses at finite scale. " ++
-        "What is not yet proved is the colour-resolved coordinate carrier's arithmetic crossing " ++
-        "bound, another " ++
+        "What is not yet proved is either colour-resolved two-moment premise (and hence the " ++
+        "coordinate carrier's arithmetic crossing), another " ++
         "independent observable nonzero on " ++
         "the sharp root channels, the additional normalized " ++
         "moments, a phase-preserving aggregate estimate for the paired cubic one-gap channel, higher " ++

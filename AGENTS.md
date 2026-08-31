@@ -1149,14 +1149,24 @@ off-line-real eta block. All positive moments transfer without loss, while
 ordinary heat has one exact ambient-cardinality padding correction. Lean also
 expands that coordinate heat into a convergent series of ordered even paths
 whose intermediate packed coordinates and on-line/off-line-real edge colours
-remain explicit. The next obligation is the eta-arithmetic estimate forcing
-the crossing from this colour-resolved path carrier, or a stronger
-information-preserving exclusion. Such an estimate remains necessary for any
-stronger zeta-zero proportion and ultimately for RH.
+remain explicit. Lean now proves that the coordinate carrier has rank exactly
+`#critical + #upper-off-line` and derives
+`rtrace(A)^2 ≤ rank(A) * frobSq(A)` from finite Cauchy--Schwarz on its nonzero
+eigenvalues. Its first two moments are exactly the real length-one and
+length-two coloured path sums. Therefore
+`31*N*Re(path₂) < 36*Re(path₁)^2` is a checked sufficient premise for a
+critical-zero proportion above `13/18`, while
+`N*Re(path₂) ≤ Re(path₁)^2` is a checked sufficient premise for the
+finite-window `18/18` conclusion. These implications do not prove either
+premise. The existing geometric feature-separation theorem discharges the
+positive-definiteness condition for one odd prime base at every sufficiently
+late block. The next obligation is to derive the first literal two-moment
+inequality from eta arithmetic, then strengthen it toward the endpoint
+without discarding its sign and colour data.
 The remaining hard step is an eta-arithmetic cross-zero cancellation or
 coercivity estimate substantially stronger than the recorded sum-of-envelopes
-bound, strong enough to prove the critical first moment. No such estimate is
-currently proved.
+bound, now concretely sufficient if it proves the displayed colour-resolved
+two-moment inequality. No such estimate is currently proved.
 
 ## Soundness invariant
 
