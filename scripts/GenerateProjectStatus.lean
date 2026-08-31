@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "The complete eta reserve inherits a nonnegative explicit upper-sector floor"
-    lineOne := "complete reserve"
-    lineTwo := "explicit floor"
-    role := "unconditional"
+    label := "The literal eta floor certificate accepts arbitrary longer coordinate blocks"
+    lineOne := "eta certificate"
+    lineTwo := "arbitrary blocks"
+    role := "reduction"
     theoremName :=
-      ``RiemannGaussian.eventually_pairedEtaGeometricUpperWindowNonnegativeReserveGapLower_le_fullDecorrelationReserve
+      ``RiemannGaussian.exists_prime_eventually_pairedEtaGeometricReflectionEvenLongBlockUpperReserveGapFloorCertificateInterface
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove the explicit full-reserve floor large enough for a certificate; no improved proportion yet.</text>\n" ++
+      "prove some long-block reserve floor large enough for a certificate; no improved proportion yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -851,7 +851,11 @@ run_cmd do
         "certificate reserve. Substitution into the checked certificate theorems now gives the " ++
         "literal floor targets: after one odd-prime choice and at every sufficiently late block, " ++
         "the strict floor inequality implies a proportion above 13/18 and the endpoint floor " ++
-        "inequality implies 18/18. Neither inequality is yet proved.")),
+        "inequality implies 18/18. Lean now removes the square-block restriction: restriction " ++
+        "to the checked initial block proves separation for every longer coordinate block, and " ++
+        "a generic frame operator transports exact rank, trace mass, frame potential, and both " ++
+        "floor certificate implications to every M at least the zero-window cardinality. Neither " ++
+        "quantitative floor inequality is yet proved.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -1043,8 +1047,12 @@ run_cmd do
         "and the upper sector is that aggregate. Hence max(0,upperLower) is an eventual lower bound " ++
         "for the full certificate reserve. One odd-prime choice now also discharges positive " ++
         "definiteness eventually, and Lean proves that the two literal floor inequalities imply " ++
-        "respectively >13/18 and 18/18. It remains to prove either antecedent; the next audit asks " ++
-        "whether coordinate blocks longer than the zero-window cardinality strengthen the floor. " ++
+        "respectively >13/18 and 18/18. Restriction to the checked square block now proves literal " ++
+        "frame separation for every longer consecutive block. A generic positive frame operator " ++
+        "reruns the rank--trace argument with exact trace and potential identities, so for every " ++
+        "M at least the zero-window cardinality the corresponding long-block floor inequalities " ++
+        "feed the same >13/18 and 18/18 conclusions. It remains to prove either antecedent and to " ++
+        "determine quantitatively whether increasing M makes one attainable. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

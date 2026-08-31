@@ -1366,6 +1366,8 @@ abstractions.
    `Latest Update` states only the newest verified slice and its next
    obstruction. Review both on every committed slice, replacing stale text
    rather than appending history. The README is never an audit log. Update the
+   `Current Direction` body must be exactly one paragraph and no more than 500
+   characters; replace it instead of extending it. Update the
    milestone list in `scripts/GenerateProjectStatus.lean` when and only when a
    new theorem genuinely advances the displayed frontier, then regenerate the
    artifacts.

@@ -26,141 +26,39 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-The active research direction is a phase-preserving finite zero-window
-certificate inspired by Anthropic's `zeta23` rank--trace architecture. The
-project has instantiated its linear-algebraic skeleton on genuine
-multiplicity-weighted eta features and enriched it with signed Gaussian heat,
-higher and cross-scale spectral moments, cutoff transport, reflected-zero
-colour, and coherent zero-pair correlations. The first benchmark is a literal
-eta-arithmetic certificate stronger than the earlier two-thirds result; the
-ultimate method target is `18/18`, or 100% of every finite symmetric zero
-window.
-
-Lean currently proves a sharp abstract `13/18` degree-four certificate, but
-that number is not yet a zeta-zero proportion: the prescribed degree-four
-moments have not been derived from the literal eta window. The coupled
-zero-index data are the positive eta metric `K = CᴴC` and the critical-line
-reflection permutation `P`. The mixed hierarchy `Re tr((PK)^r)` remains
-available as a phase-preserving companion channel, but its spectrum has the
-wrong zero-atom semantics when `K` is positive definite. The certificate
-carrier is instead the positive reflection-even compression
-`A₊ = E₊KE₊`, where `E₊ = (I+P)/2`; its nullity is exactly the upper
-off-line-pair count while its nonzero eigenvalues retain eta arithmetic.
-
-The normalized finite eigenvalue-atom model of `A₊` is now checked in Lean,
-including an exact ordinary-heat separator: its literal critical-zero
-fraction is greater than `13/18` exactly when a normalized heat trace of `A₊`
-crosses below `5/36` at some nonnegative scale. That heat trace is now
-transported to the genuine coordinate carrier `C E₊ Cᴴ`, proved equal to the
-positive on-line-plus-off-line-real eta block, and expanded into ordered paths
-that retain both colours on every edge. Lean now also proves that this
-carrier's rank is exactly `#critical + #upper-off-line` and converts its first
-two coloured path moments into explicit sufficient certificate targets. Those
-moments are now opened further as the mass and frame potential of literal eta
-atoms, with critical and upper-off-line-real colours kept distinct. Lean now
-separates the potential into diagonal self-mass and distinct-pair correlation,
-and isolates the complementary pairwise decorrelation reserve without taking
-absolute-value envelopes. At every sufficiently late separated block Lean now
-proves that each distinct atom pair has strictly positive decorrelation, hence
-the total reserve is positive exactly when at least two frame atoms are
-present. The immediate frontier is a quantitative eta-arithmetic lower bound
-for that reserve relative to the surviving correlation potential. The active
-route now lengthens the geometric sampling block before collapsing its phase:
-for every finite injective unit-mode family Lean proves an exact positive
-minimum phase gap and a uniform `O(M⁻²)` bound on all distinct-pair squared
-coherences. This is instantiated on same-real-part zeta-zero layers after one
-odd-prime choice. Lean now transports that bound through the checked sharp
-asymptotics: after explicit nonzero row and common same-layer coordinate
-normalizations, the literal finite eta-prefix vectors, their complex
-correlations, norms, and squared coherences converge to the phase model. Every
-distinct pair in a finite layer therefore obeys an eventual uniform
-`4/M² + ε` gap-weighted coherence ceiling. The first packed-channel lift is
-now checked: the two hyperbolic coordinates form an injective realification
-of the complex eta channel, the literal critical-line packed feature is
-exactly that realification, and normalized
-packed same-layer coherence inherits the complex `4/M² + ε` estimate. The
-cross-layer carrier is now exposed as well: an actual upper off-line atom is
-half the same realification applied to the sum of the completed channels at a
-zero and its reflected partner, and its two coordinates reconstruct that
-complex sum exactly. Under one common critical tilt, critical modes have
-radius one while each off-line reflection pair keeps one shared phase and two
-strictly reciprocal radii. Lean now proves the pair's exact finite
-cross-correlation, its full signed two-coefficient norm ledger, noncancellation,
-and a strictly positive Gram reserve at every length greater than one. That
-reserve now yields a quantitative lower bound: every complex combination is
-at least determinant-over-trace times its coefficient norm, with the constant
-proved strictly positive for each literal off-line pair. Lean now transports
-the actual cutoff-dependent completion coefficients exactly: after lossless
-recovery and common critical tilt, every upper frame atom is the corresponding
-two normalized literal eta-prefix columns with both explicit nonzero
-coefficients retained. Lean now proves the literal two-column Gram coefficient
-converges to the positive reciprocal-mode constant and obtains one eventual
-half-limit bound uniform in both coefficients. It therefore applies directly
-to the moving completion coefficients and gives a positive norm lower bound
-for every sufficiently late recovered upper frame channel. Lean now pays the
-nonunitary common-tilt cost explicitly through its finite coordinate energy
-and proves that half-realification preserves the norm after recovery. The
-lower bound therefore reaches the literal packed frame metric. Lean now also
-opens an upper--upper packed correlation without destroying its complex
-information: it is exactly the real part of a Hermitian reflection-sum
-correlation, which expands into four named completed eta Gram kernels. The
-literal multiplicity-weighted pair reserve is exactly its full complex Gram
-reserve plus the square of the retained correlation's imaginary part. The
-nonunitary critical tilt is now preserved at correlation level through its
-exact inverse squared-modulus diagonal metric. With reflected/original colours
-as two indices, the normalized literal prefixes form a `2 × 2` metric
-correlation matrix and the moving completion weights form coefficient
-vectors. Their contraction is exactly the original unweighted upper--upper
-correlation; every matrix entry converges to the matching explicit shifted
-geometric-mode correlation. The recovery metric is now evaluated on that
-limit: it cancels the critical tilt exactly, so every entry is an explicit
-finite geometric sum of raw eta decay modes. Those relative modes lie
-strictly inside the unit disk, yielding one simultaneous eventual
-gap-times-correlation bound with constant `2` over the complete upper window
-and all four colour entries. Lean now contracts those entry bounds against
-the exact moving completion coefficients. The actual unweighted complex
-upper--upper correlation, and hence the literal packed real correlation, is
-eventually bounded by the explicit sum of all four coefficient products
-divided by their positive raw-mode gaps. The actual weighted pair reserve
-remains exactly the positive multiplicity weight times the contraction Gram
-reserve plus its imaginary square. Lean now joins these two estimates in the
-literal certificate metric. For every ordered upper pair it proves the
-eventual lower bound
-`weight_rho * weight_zeta * (coerciveLower_rho * coerciveLower_zeta -
-correlationEnvelope^2)`, simultaneously over the complete finite upper
-window, and sums the same inequality over its ordered distinct upper--upper
-sector. The coercive atom factors are strictly positive, but the displayed
-difference is not yet proved positive. Lean now splits the complete
-reflection-even reserve exactly into critical--critical, both oriented
-critical--upper, and upper--upper sectors. Every sector is nonnegative, the
-upper diagonal vanishes exactly, and the bounded ordered-distinct upper sum is
-therefore a literal sector of the full reserve. Consequently
-`max 0 upperLower` is an eventual lower bound for the complete certificate
-reserve. Lean now substitutes this floor into both certificate theorems and
-uses the checked odd-prime separation result to discharge positive
-definiteness eventually. The remaining frontier is an eta-arithmetic estimate
-making the explicit floor satisfy either displayed certificate inequality. No
-improved zeta-zero proportion will be claimed until that quantitative premise
-is itself checked in Lean.
+RiemannGaussian is pursuing a phase-preserving eta zero-window certificate
+that beats Anthropic's two-thirds benchmark and ultimately reaches `18/18`.
+Lean now supports every geometric block length `M` at least the represented
+zero count, with separation, rank, trace, potential, and reserve transport
+proved. The open frontier is to prove that some long-block explicit reserve
+floor exceeds the checked `13/18` or `18/18` threshold without discarding the
+phase cancellation needed to do so.
 
 ## Latest Update
 
-Lean now installs the explicit nonnegative full-reserve floor directly in the
-certificate interface. For every eligible finite zero window, one checked odd
-prime base makes the literal eta Gram positive definite at all sufficiently
-late geometric blocks. At every such block Lean proves both exact
-implications:
+Lean now proves that the literal eta certificate may use arbitrarily long
+consecutive geometric coordinate blocks. If `N` zeros are represented and
+`M ≥ N`, restricting an `M`-block to its checked first `N` coordinates proves
+that all reflection-even frame atoms remain linearly independent. A generic
+positive frame operator then has exactly one rank direction per atom, with
+real trace equal to the literal frame mass and Frobenius square equal to the
+phase-preserving frame potential.
+
+Consequently, for every eligible finite window and every `M ≥ N` with
+`M > 1`, one checked odd prime base makes the following exact implications
+valid at all sufficiently late blocks:
 
 - `(31N-36) · potential < 36 · floor` implies a critical-zero fraction
   strictly greater than `13/18`;
 - `(N-1) · potential ≤ floor` implies that every represented zero is critical.
 
-These are now the literal eta-arithmetic targets, with no remaining rank,
-positive-definiteness, colour-decomposition, or reserve-transport premise.
-Neither inequality itself is proved, so this is a sharpened reduction rather
-than an improved zero proportion. The next step is to determine whether longer
-coordinate blocks strengthen the checked floor before spending effort on its
-pointwise triangle envelope.
+Here `potential` and `floor` are both evaluated on the same length-`M` literal
+eta block. No rank, separation, colour-decomposition, or reserve-transport
+premise remains. Neither inequality itself is proved, so this expands the
+search space rigorously rather than improving the known zeta-zero proportion.
+The next step is to compare their verified scaling in `M` and identify which
+phase-bearing term must replace the current pointwise envelope if that scaling
+still cannot cross the certificate threshold.
 
 ## Mathematical Program
 
