@@ -106,28 +106,38 @@ information: it is exactly the real part of a Hermitian reflection-sum
 correlation, which expands into four named completed eta Gram kernels. The
 literal multiplicity-weighted pair reserve is exactly its full complex Gram
 reserve plus the square of the retained correlation's imaginary part. The
-remaining frontier is a quantitative estimate for those four-channel
-carriers and its aggregation strong enough to cross the certificate
+nonunitary critical tilt is now preserved at correlation level through its
+exact inverse squared-modulus diagonal metric. With reflected/original colours
+as two indices, the normalized literal prefixes form a `2 × 2` metric
+correlation matrix and the moving completion weights form coefficient
+vectors. Their contraction is exactly the original unweighted upper--upper
+correlation; every matrix entry converges to the matching explicit shifted
+geometric-mode correlation. The actual weighted pair reserve is exactly the
+positive multiplicity weight times the contraction Gram reserve plus its
+imaginary square. The remaining frontier is a quantitative estimate for this
+matrix carrier and its aggregation strong enough to cross the certificate
 threshold. No improved zeta-zero proportion will be claimed until that
 quantitative premise is itself checked in Lean.
 
 ## Latest Update
 
-Lean now exposes the exact information ledger for correlations between two
-literal upper off-line atoms. Their packed correlation is the real part of
-the Hermitian correlation between the two recovered complex reflection sums.
-Before taking that real part, Lean expands the carrier into all four completed
-original-channel eta Gram kernels: reflected--reflected,
-reflected--original, original--reflected, and original--original. Hermitian
-swap symmetry is retained.
+Lean now preserves the critical tilt metric all the way through an
+upper--upper correlation. For any nonvanishing diagonal coordinate weight,
+Lean constructs the inverse squared-modulus recovery metric and proves that
+metric correlation of the weighted vectors is exactly their original
+Hermitian correlation. This is instantiated on every critical eta tilt
+coordinate.
 
-For arbitrary finite complex vectors, Lean proves that the real-correlation
-reserve is exactly the full Hermitian Gram-determinant reserve plus the square
-of the imaginary correlation, with both terms nonnegative. Instantiating this
-identity gives the exact multiplicity-weighted upper--upper summand occurring
-in the certificate reserve. The next step is a quantitative bound on these
-four-channel correlations and its aggregation across distinct atoms. The
-project still needs
+Each upper atom is then represented by a two-colour normalized-prefix family
+and its exact moving completion-coefficient vector. The four cross-colour
+metric correlations form a literal `2 × 2` matrix. Lean proves that its
+coefficient contraction equals the original unweighted reflection-sum
+correlation, and that every matrix entry converges to the corresponding
+metric correlation of the explicit shifted geometric modes. The full
+multiplicity-weighted certificate summand is exactly a positive weight times
+the resulting contraction Gram reserve plus the squared imaginary
+contraction. The next step is a quantitative matrix estimate and aggregation
+across distinct atoms. The project still needs
 `(31N-36) · potential < 36 · reserve` to beat `13/18`, and the stronger
 `(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither
 quantitative comparison is proved yet, so the zero proportion has not

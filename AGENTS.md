@@ -1243,11 +1243,21 @@ reflections. For arbitrary finite complex vectors, the real-correlation
 reserve is proved exactly equal to the full Hermitian Gram reserve plus the
 square of the imaginary correlation. Thus every actual
 multiplicity-weighted upper--upper reserve summand has a checked two-part
-nonnegative ledger with all four arithmetic channels retained. The next
-obligation is a quantitative bound on those four-channel correlations and its
-aggregation into a reserve lower bound strong enough for the first displayed
-inequality and eventually the endpoint. No such aggregate quantitative lower
-bound is currently proved.
+nonnegative ledger with all four arithmetic channels retained. Lean now also
+preserves the nonunitary critical tilt at correlation level. Its inverse
+squared-modulus diagonal recovery metric makes the correlation of tilted
+vectors exactly equal to the original Hermitian correlation. The two
+reflected/original prefix colours of each upper atom therefore form a literal
+`2 × 2` metric correlation matrix, contracted against the exact moving
+completion-coefficient vectors. That contraction is the unweighted
+upper--upper correlation, every matrix entry converges to the corresponding
+explicit shifted-mode metric correlation, and the full weighted certificate
+summand is exactly the contraction Gram reserve plus its imaginary square
+times the positive multiplicity weight. The next obligation is a quantitative
+bound on these metric matrix contractions and their aggregation into a
+reserve lower bound strong enough for the first displayed inequality and
+eventually the endpoint. No such aggregate quantitative lower bound is
+currently proved.
 
 ## Soundness invariant
 

@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Upper-pair reserve retains the full four-channel correlation ledger"
-    lineOne := "upper pair reserve"
-    lineTwo := "4-channel ledger"
+    label := "The upper-pair reserve is an exact two-colour metric matrix contraction"
+    lineOne := "upper pair metric"
+    lineTwo := "2x2 contraction"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.pairedEtaGeometricUpperPairWeightedDecorrelationReserve_eq
+      ``RiemannGaussian.pairedEtaGeometricUpperPairWeightedDecorrelationReserve_eq_metricContractionLedger
   }
 ]
 
@@ -830,15 +830,19 @@ run_cmd do
         "certificate metric. The packed correlation of two upper atoms is now the exact real part " ++
         "of their complex reflection-sum correlation, and that carrier expands into four named " ++
         "completed original-channel eta Gram kernels. Its actual multiplicity-weighted reserve is " ++
-        "exactly the full Hermitian Gram reserve plus the squared imaginary correlation. Bounding " ++
-        "those four-channel correlations and " ++
+        "exactly the full Hermitian Gram reserve plus the squared imaginary correlation. The " ++
+        "critical tilt now retains its inverse squared-modulus recovery metric: the two reflection " ++
+        "colours form a 2x2 normalized-prefix metric correlation matrix, its contraction against " ++
+        "the moving completion coefficients is the original unweighted correlation, and every " ++
+        "entry converges to an explicit shifted-mode metric correlation. Bounding this matrix " ++
+        "carrier and " ++
         "aggregating the pairwise reserve remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Bound the checked four-channel completed reflection-sum correlations and " ++
+        "Bound the checked two-colour metric correlation matrices and their completion-coefficient contractions, then " ++
         "strengthen the literal frame-metric coercivity of each upper atom into the " ++
         "quantitative inequality " ++
         "(31*N-36)*potential<36*reserve on an eventually separated geometric window. " ++
@@ -1008,8 +1012,12 @@ run_cmd do
         "of two literal upper atoms is now exactly the real part of a complex reflection-sum " ++
         "correlation. That carrier expands into four completed original-channel eta Gram kernels, " ++
         "and its weighted certificate reserve is exactly a full Hermitian Gram reserve plus the " ++
-        "squared imaginary correlation. It remains to bound these four retained channels and " ++
-        "absorb their local reserves into the aggregate certificate comparison. " ++
+        "squared imaginary correlation. Lean now inserts the exact inverse squared-modulus metric " ++
+        "for the critical tilt. The two reflection colours form a 2x2 normalized-prefix correlation " ++
+        "matrix whose completion-coefficient contraction is the original unweighted correlation; " ++
+        "each entry converges to its explicit shifted-mode metric correlation. It remains to bound " ++
+        "these metric matrix contractions and absorb their local reserves into the aggregate " ++
+        "certificate comparison. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
