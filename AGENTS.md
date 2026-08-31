@@ -1278,10 +1278,14 @@ critical--upper, upper--critical, and upper--upper. Every sector is
 nonnegative, the diagonal terms vanish exactly, and the upper sector is the
 ordered-distinct aggregate above. Thus the explicit upper lower bound reaches
 the complete certificate reserve, and combining it with global reserve
-nonnegativity gives the eventual certified floor `max 0 upperLower`. The next
-obligation is an eta-specific phase, coefficient, and gap estimate making that
-floor large enough for the `13/18` inequality and eventually the `18/18`
-endpoint.
+nonnegativity gives the eventual certified floor `max 0 upperLower`. Lean now
+substitutes that floor into both certificate theorems. One checked odd-prime
+choice simultaneously makes the literal eta Gram positive definite, so at all
+sufficiently late blocks the strict floor inequality implies `>13/18` and the
+endpoint floor inequality implies `18/18`. Those two inequalities remain open
+antecedents. The next obligation is to audit whether longer coordinate blocks
+strengthen the floor, then prove an eta-specific phase, coefficient, and gap
+estimate making one of the literal antecedents hold.
 
 ## Soundness invariant
 

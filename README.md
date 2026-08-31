@@ -136,30 +136,31 @@ critical--upper, and upper--upper sectors. Every sector is nonnegative, the
 upper diagonal vanishes exactly, and the bounded ordered-distinct upper sum is
 therefore a literal sector of the full reserve. Consequently
 `max 0 upperLower` is an eventual lower bound for the complete certificate
-reserve. The remaining frontier is an eta-arithmetic estimate making this
-explicit full-reserve floor large enough to cross the certificate threshold.
-No improved zeta-zero proportion will be claimed until that quantitative
-premise is itself checked in Lean.
+reserve. Lean now substitutes this floor into both certificate theorems and
+uses the checked odd-prime separation result to discharge positive
+definiteness eventually. The remaining frontier is an eta-arithmetic estimate
+making the explicit floor satisfy either displayed certificate inequality. No
+improved zeta-zero proportion will be claimed until that quantitative premise
+is itself checked in Lean.
 
 ## Latest Update
 
-Lean now identifies where the quantitative upper-pair bound sits in the
-complete certificate. A checked full ordered-pair representation removes only
-diagonal terms proved exactly zero, then splits the reserve into four literal
-atom-colour sectors: critical--critical, critical--upper, upper--critical, and
-upper--upper. Every sector is proved nonnegative. The upper--upper sector is
-proved exactly equal to the previously bounded ordered-distinct sum.
+Lean now installs the explicit nonnegative full-reserve floor directly in the
+certificate interface. For every eligible finite zero window, one checked odd
+prime base makes the literal eta Gram positive definite at all sufficiently
+late geometric blocks. At every such block Lean proves both exact
+implications:
 
-It follows unconditionally that the complete decorrelation reserve eventually
-dominates the explicit upper coercivity-product-minus-envelope-square sum.
-Combining this with the independent global nonnegativity theorem yields the
-stronger certified floor `max 0 upperLower ≤ fullReserve`. The floor itself is
-not proved strictly positive or quantitatively large. The next hard step is an
-eta-specific phase, gap, and coefficient estimate for that explicit sum. The
-project still needs
-`(31N-36) · potential < 36 · reserve` to beat `13/18`, and
-`(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither certificate
-inequality is proved, so the zero proportion has not improved.
+- `(31N-36) · potential < 36 · floor` implies a critical-zero fraction
+  strictly greater than `13/18`;
+- `(N-1) · potential ≤ floor` implies that every represented zero is critical.
+
+These are now the literal eta-arithmetic targets, with no remaining rank,
+positive-definiteness, colour-decomposition, or reserve-transport premise.
+Neither inequality itself is proved, so this is a sharpened reduction rather
+than an improved zero proportion. The next step is to determine whether longer
+coordinate blocks strengthen the checked floor before spending effort on its
+pointwise triangle envelope.
 
 ## Mathematical Program
 

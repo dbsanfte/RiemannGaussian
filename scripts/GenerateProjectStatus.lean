@@ -848,19 +848,21 @@ run_cmd do
         "complete reserve is now split exactly into four atom-colour sectors, every sector is " ++
         "nonnegative, and its upper sector is exactly that ordered-distinct sum. Consequently the " ++
         "maximum of zero and the explicit upper lower bound is an eventual floor for the complete " ++
-        "certificate reserve. That floor is not yet proved positive or certificate-sized.")),
+        "certificate reserve. Substitution into the checked certificate theorems now gives the " ++
+        "literal floor targets: after one odd-prime choice and at every sufficiently late block, " ++
+        "the strict floor inequality implies a proportion above 13/18 and the endpoint floor " ++
+        "inequality implies 18/18. Neither inequality is yet proved.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
         "Prove the checked nonnegative full-reserve floor from the upper " ++
-        "coercivity-product-minus-correlation-envelope-square sum large enough to establish the " ++
-        "quantitative inequality " ++
-        "(31*N-36)*potential<36*reserve on an eventually separated geometric window. " ++
+        "coercivity-product-minus-correlation-envelope-square sum large enough to establish " ++
+        "(31*N-36)*potential<36*floor on an eventually separated geometric window. " ++
         "The checked exact identity mass^2=potential+reserve makes this equivalent to " ++
         "the frame-moment premise sufficient to beat 13/18, while the endpoint bound " ++
-        "(N-1)*potential<=reserve is sufficient for finite-window 18/18. " ++
+        "(N-1)*potential<=floor is sufficient for finite-window 18/18. " ++
         "Lean already proves F_N=L_N+R_N, the critical " ++
         "summability of R_N, the exact cosine/crossover factorization of the higher-" ++
         "multiplicity L_N kernel, the finite on-line/off-line block decomposition, " ++
@@ -1039,8 +1041,10 @@ run_cmd do
         "eventual lower bound for every actual weighted upper-pair reserve and its ordered-distinct " ++
         "aggregate. The complete reserve is now exactly split into four nonnegative colour sectors, " ++
         "and the upper sector is that aggregate. Hence max(0,upperLower) is an eventual lower bound " ++
-        "for the full certificate reserve. It remains to prove this explicit floor positive and " ++
-        "sufficiently large. " ++
+        "for the full certificate reserve. One odd-prime choice now also discharges positive " ++
+        "definiteness eventually, and Lean proves that the two literal floor inequalities imply " ++
+        "respectively >13/18 and 18/18. It remains to prove either antecedent; the next audit asks " ++
+        "whether coordinate blocks longer than the zero-window cardinality strengthen the floor. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
