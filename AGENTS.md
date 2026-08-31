@@ -1333,6 +1333,31 @@ the project-native simple dyadic window. This is the correct external baseline,
 not original progress beyond it; no RiemannGaussian theorem improves that
 proportion.
 
+## Certification-advance commit gate
+
+Until the user explicitly changes this rule, every new commit and push must
+advance the actual unconditional zeta-zero certification result. A qualifying
+slice must contain a compiled theorem about the literal zeta counting functions,
+with every arithmetic and analytic premise discharged, whose exact certified
+critical-line proportion is strictly stronger than the best unconditional
+bound already present at its parent commit. The immediate milestones are a real
+`13/18` certificate and then `18/18`.
+
+No commit is justified merely because it proves a real lemma. Representations,
+interfaces, bridge lemmas, conditional implications, abstract finite models,
+method ceilings, numerical experiments, refactors, documentation, CI changes,
+and dashboard changes do not satisfy this gate when the literal unconditional
+proportion is unchanged. They may accompany a qualifying certification theorem
+in the same coherent slice; otherwise keep them in the working tree and do not
+stage, commit, or push them.
+
+Before staging a slice, identify the parent commit's strongest literal
+unconditional proportion theorem, the proposed replacement theorem, and the
+Lean-checked exact inequality showing strict improvement. If those three items
+are unavailable, the slice is research in progress rather than check-in-ready.
+Do not turn an interface closure or a reduction of the remaining obstruction
+into a milestone or use it to justify a commit.
+
 ## Soundness invariant
 
 The repository must remain a continuous, bottom-up Lean proof chain after
@@ -1430,8 +1455,10 @@ abstractions.
    draw a causal edge between milestones unless a checked theorem proves that
    implication, and label RH equivalences as reformulations rather than
    progress on their open direction.
-9. Commit and push the complete slice. Wait for GitHub Actions on that exact
-   commit SHA to finish successfully before beginning another slice.
+9. Apply the certification-advance commit gate. Commit and push the complete
+   slice only if it includes the required stronger literal unconditional
+   proportion theorem. Wait for GitHub Actions on that exact commit SHA to
+   finish successfully before beginning another slice.
 
 Lake builds independent modules in parallel. Direct elaboration of one Lean
 module is normally one process; do not mistake that focused check for the
@@ -1445,9 +1472,10 @@ pushes, or CI checks.
 
 - Begin a new slice only from a clean worktree whose current `HEAD` has a
   successful GitHub Actions run with exactly the same full commit SHA.
-- Keep one coherent mathematical or infrastructure slice per commit. Do not
-  mix unrelated cleanup into it, and do not leave concrete verified progress
-  only in the working tree.
+- Keep one coherent certification-advancing mathematical slice per commit. An
+  infrastructure or documentation change may ride with that slice only when it
+  is needed by the same advance; it is never independently commit-worthy under
+  the current certification gate. Do not mix unrelated cleanup into the slice.
 - Before committing, stage the complete intended slice and verify the staged
   content with all applicable local gates, `git diff --cached --check`, and
   the tracked pre-commit hook. Documentation-only and CI-only commits are not
