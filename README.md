@@ -74,29 +74,34 @@ asymptotics: after explicit nonzero row and common same-layer coordinate
 normalizations, the literal finite eta-prefix vectors, their complex
 correlations, norms, and squared coherences converge to the phase model. Every
 distinct pair in a finite layer therefore obeys an eventual uniform
-`4/M² + ε` gap-weighted coherence ceiling. The next step is to lift these
-normalizations through the packed reflection-even features while preserving
-cross-layer off-line real decay, then aggregate the bound in the reserve. No
-improved zeta-zero proportion will be claimed until the resulting
-quantitative certificate premise is itself checked in Lean.
+`4/M² + ε` gap-weighted coherence ceiling. The first packed-channel lift is
+now checked: the two hyperbolic coordinates form an injective realification
+of the complex eta channel, the literal
+critical-line packed feature is exactly that realification, and normalized
+packed same-layer coherence inherits the complex `4/M² + ε` estimate. The
+remaining frontier is to absorb the normalizations into the actual certificate
+carrier, add the upper off-line/cross-real-layer colour without erasing its
+different decay, and sum the resulting pair estimates strongly enough to
+cross the certificate threshold. No improved zeta-zero proportion will be
+claimed until that quantitative premise is itself checked in Lean.
 
 ## Latest Update
 
-Lean now transports the quantitative phase estimate to literal finite eta
-prefixes. For a zero on a fixed real-coordinate layer, it defines the exact
-row-, leading-constant-, and coordinate-normalized length-`M` prefix block and
-proves that block converges to the corresponding unit-mode vector. Lean then
-passes the limit through the full complex correlation, both squared norms,
-and their normalized squared coherence.
+Lean now proves that the certificate's two real hyperbolic coordinates are an
+injective encoding of one complex eta vector, with an explicit reconstruction
+formula. Their squared norm is exactly four times the complex squared norm,
+and their correlation is exactly four times the real part of the complex
+correlation. On the critical line, the actual literal packed cutoff feature is
+proved equal to this realification of the completed original eta channel.
 
-Consequently, for any finite same-real-part family with at least two zeros,
-one odd prime and one positive phase gap give, for every `M > 0` and
-`ε > 0`, an eventual simultaneous bound
-`literalCoherenceSq · gap² < 4/M² + ε` for every distinct pair. The
-critical-zero window is a checked specialization. This is now a quantitative
-literal eta theorem, but it still uses explicit normalization and does not yet
-cover the packed reflection-even cross-layer/off-line-real carrier. The
-project still needs
+This exact interface transports the earlier phase estimate one step into the
+packed carrier: normalized packed coherence is at most full complex coherence,
+so one odd prime and one positive phase gap give the simultaneous eventual
+bound `packedCoherenceSq · gap² < 4/M² + ε` on every finite
+same-real-part layer, including each critical-zero window. The theorem still
+uses explicit phase normalization and does not yet compare critical atoms
+with the differently decaying upper off-line-real atoms. The project still
+needs
 `(31N-36) · potential < 36 · reserve` to beat `13/18`, and the stronger
 `(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither
 quantitative comparison is proved yet, so the zero proportion has not

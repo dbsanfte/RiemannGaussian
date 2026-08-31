@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Literal eta-prefix coherence inherits the phase bound"
-    lineOne := "literal eta prefixes"
+    label := "Packed eta realification inherits the phase bound"
+    lineOne := "packed eta channel"
     lineTwo := "phase bound + epsilon"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.exists_prime_uniform_eventually_spectralCriticalZetaZeroWindowPhaseNormalizedPrefixCoherenceSq
+      ``RiemannGaussian.exists_prime_uniform_eventually_spectralCriticalZetaZeroWindowPhaseNormalizedPackedPrefixCoherenceSq
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "lift normalized prefixes to the packed eta reserve; no improved proportion yet.</text>\n" ++
+      "extend the packed bound across off-line colours and aggregate it; no improved proportion yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -808,14 +808,17 @@ run_cmd do
         "unit-mode blocks have an exact positive phase gap and uniform O(M^-2) distinct-pair " ++
         "squared coherence. Explicitly normalized literal eta-prefix vectors and their coherence " ++
         "converge to that model, giving a uniform eventual 4/M^2+epsilon bound on finite " ++
-        "same-real-part zero layers. Lifting it to the packed reserve remains open.")),
+        "same-real-part zero layers. The two hyperbolic coordinates are now proved to be an " ++
+        "injective realification of the completed complex eta channel, and normalized packed " ++
+        "same-layer coherence inherits the same bound. Extending it across off-line colours and " ++
+        "aggregating it into the reserve remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Lift the checked eventual O(M^-2) normalized literal-prefix coherence estimate through " ++
-        "the packed reflection-even features, retaining cross-layer off-line real decay, and " ++
+        "Absorb the checked eventual O(M^-2) normalized packed-prefix coherence estimate into " ++
+        "the actual reflection-even certificate carrier, retain cross-layer off-line real decay, and " ++
         "strengthen strict positivity of every distinct separated eta-pair reserve into the " ++
         "quantitative inequality " ++
         "(31*N-36)*potential<36*reserve on an eventually separated geometric window. " ++
@@ -958,8 +961,11 @@ run_cmd do
         "coordinate normalization now transports the actual finite eta prefixes, their complex " ++
         "correlations, norms, and squared coherences to that phase model. Every distinct pair in a " ++
         "finite same-real-part layer therefore has the uniform eventual 4/M^2+epsilon bound. The " ++
-        "remaining step is to lift it through the packed reflection-even frame without losing " ++
-        "cross-layer real-decay colour. " ++
+        "two hyperbolic coordinates are an injective realification with exact reconstruction, " ++
+        "correlation, and norm laws; the literal critical packed feature is exactly this " ++
+        "realification. Normalized packed same-layer coherence inherits the complex bound. The " ++
+        "remaining step is to absorb the normalization and add the cross-layer off-line-real " ++
+        "colour without losing its distinct decay. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

@@ -1190,12 +1190,18 @@ normalized literal eta-prefix vectors converge to the unit-mode vectors, and
 their complex correlations, squared norms, and squared coherences converge as
 well. Hence one prime and one positive gap give the eventual simultaneous
 bound `literalCoherenceSq*gap² < 4/M²+ε` for every distinct pair in a finite
-same-real-part layer, including the critical window. The next obligation is
-to carry those exact normalizations through the actual packed
-reflection-even features, retain cross-layer off-line real decay, and
-aggregate the estimate into a reserve lower bound strong enough for the first
-displayed inequality and eventually the endpoint. No such packed quantitative
-lower bound is currently proved.
+same-real-part layer, including the critical window. Lean now proves that the
+two hyperbolic coordinates are an injective realification of this complex
+channel, with an exact inverse, correlation law, and norm law. The literal
+critical-line packed cutoff feature is exactly the realification of the
+completed original eta channel. Consequently the phase-normalized packed
+same-layer coherence is bounded by the full complex coherence and inherits
+the eventual simultaneous `4/M²+ε` estimate. The next obligation is to absorb
+the normalization into the actual certificate carrier, retain the differently
+decaying upper off-line/cross-real-layer colour, and aggregate the pairwise
+estimate into a reserve lower bound strong enough for the first displayed
+inequality and eventually the endpoint. No such aggregate quantitative lower
+bound is currently proved.
 
 ## Soundness invariant
 

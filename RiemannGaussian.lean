@@ -404,6 +404,7 @@ import RiemannGaussian.Hybrid.EtaGeometricDecayVandermonde
 import RiemannGaussian.Hybrid.EtaGeometricPrefixVandermonde
 import RiemannGaussian.Hybrid.EtaGeometricPrefixPhaseTransport
 import RiemannGaussian.Hybrid.EtaGeometricPackedFeatureRank
+import RiemannGaussian.Hybrid.EtaGeometricPackedPhaseTransport
 import RiemannGaussian.Hybrid.EtaGeometricPackedFeatureGram
 import RiemannGaussian.Hybrid.EtaGeometricSignedGramLedger
 import RiemannGaussian.Hybrid.EtaGeometricZeroGram
