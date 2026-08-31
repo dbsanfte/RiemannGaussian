@@ -117,32 +117,35 @@ limit: it cancels the critical tilt exactly, so every entry is an explicit
 finite geometric sum of raw eta decay modes. Those relative modes lie
 strictly inside the unit disk, yielding one simultaneous eventual
 gap-times-correlation bound with constant `2` over the complete upper window
-and all four colour entries. The actual weighted pair reserve remains exactly
-the positive multiplicity weight times the contraction Gram reserve plus its
-imaginary square. The remaining frontier is to combine the checked matrix
-entry bounds with the moving completion coefficients and aggregate them
-strongly enough to cross the certificate threshold. No improved zeta-zero
-proportion will be claimed until that quantitative premise is itself checked
-in Lean.
+and all four colour entries. Lean now contracts those entry bounds against
+the exact moving completion coefficients. The actual unweighted complex
+upper--upper correlation, and hence the literal packed real correlation, is
+eventually bounded by the explicit sum of all four coefficient products
+divided by their positive raw-mode gaps. The actual weighted pair reserve
+remains exactly the positive multiplicity weight times the contraction Gram
+reserve plus its imaginary square. The remaining frontier is to compare the
+squared coefficient-gap envelope with the checked atom coercivity and
+aggregate the resulting reserve lower bounds strongly enough to cross the
+certificate threshold. No improved zeta-zero proportion will be claimed
+until that quantitative premise is itself checked in Lean.
 
 ## Latest Update
 
-Lean now evaluates the limiting `2 × 2` metric correlation matrix explicitly.
-Every critically shifted mode is the common coordinate tilt times its raw eta
-decay mode, so the inverse squared-modulus recovery metric cancels the tilt
-entrywise. Each matrix entry is therefore exactly the finite geometric sum
-with ratio `conj(decay_zeta) · decay_rho`, retaining both reflection colours
-and the full complex phase.
+Lean now contracts the simultaneous `2 × 2` matrix-entry estimate against the
+actual cutoff-dependent completion coefficients. A checked finite triangle
+inequality retains all four reflected/original terms. Since every raw-mode gap
+is strictly positive, the entrywise inequalities divide cleanly and produce
+an explicit moving envelope: the sum over four colours of
+`‖coefficient_zeta‖ · ‖coefficient_rho‖ · (2+ε)/gap`.
 
-At every base greater than one, Lean proves that every nontrivial-zero decay
-mode—and hence every such relative ratio—lies strictly inside the unit disk.
-A general finite geometric-sum theorem gives
-`‖sum‖ · ‖ratio - 1‖ ≤ 2`. Convergence then transports this to the literal
-normalized-prefix matrix: with any positive slack, the bound holds eventually
-and simultaneously for every upper zero pair and all four colour entries in
-the finite window. The next step is to contract these entrywise bounds against
-the exact moving completion coefficients and aggregate the resulting
-upper-pair reserves. The project still needs
+For every fixed finite upper zero window, this envelope eventually bounds the
+original unweighted complex reflection-sum correlation simultaneously for
+every ordered upper pair. The literal packed frame correlation is its real
+part and inherits the same bound. This is the first direct quantitative
+cross-atom bound in the actual certificate metric. The next step is to compare
+the square of this envelope against the existing coercive lower bounds for
+both atom norms, then aggregate those pairwise reserve bounds. The project
+still needs
 `(31N-36) · potential < 36 · reserve` to beat `13/18`, and the stronger
 `(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither
 quantitative comparison is proved yet, so the zero proportion has not

@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "All upper-pair metric entries inherit an explicit raw-mode gap bound"
-    lineOne := "upper metric matrix"
-    lineTwo := "gap < 2 + eps"
+    label := "Actual upper-pair correlations obey a four-colour coefficient-gap envelope"
+    lineOne := "upper correlation"
+    lineTwo := "coefficient envelope"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.eventually_spectralUpperZetaZeroWindow_geometricCriticalMetricPrefixCorrelationMatrix_mul_gap_lt
+      ``RiemannGaussian.eventually_spectralUpperZetaZeroWindow_geometricFrameCorrelation_upper_upper_abs_le_gapEnvelope
   }
 ]
 
@@ -839,13 +839,15 @@ run_cmd do
         "tilt, every limit entry is a finite geometric sum of raw decay modes, and all four literal " ++
         "entries eventually obey norm(entry)*norm(relativeMode-1)<2+epsilon simultaneously over " ++
         "the upper window. Contracting this bound against the moving completion coefficients and " ++
-        "aggregating the pairwise reserve remain open.")),
+        "retaining all four colours now gives an explicit eventual envelope for every actual " ++
+        "unweighted complex and packed real upper-pair correlation. Comparing its square with " ++
+        "the checked atom coercivity and aggregating the pairwise reserve remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Contract the checked two-colour raw-mode gap bounds against the moving completion coefficients, then " ++
+        "Compare the checked four-colour completion-coefficient gap envelope with atom coercivity, then " ++
         "strengthen the literal frame-metric coercivity of each upper atom into the " ++
         "quantitative inequality " ++
         "(31*N-36)*potential<36*reserve on an eventually separated geometric window. " ++
@@ -1022,9 +1024,12 @@ run_cmd do
         "now cancels the critical tilt in that limit, making every entry a finite geometric sum of " ++
         "raw eta decay modes. Since every relative mode lies inside the unit disk, all four literal " ++
         "matrix entries eventually satisfy the simultaneous gap-times-correlation bound 2+epsilon " ++
-        "over the finite upper window. It remains to contract these bounds with the exact moving " ++
-        "completion coefficients and absorb their local reserves into the aggregate " ++
-        "certificate comparison. " ++
+        "over the finite upper window. Lean now contracts these bounds with the exact moving " ++
+        "completion coefficients without freezing any " ++
+        "coefficient: every actual unweighted complex upper-pair correlation and its packed real " ++
+        "part are eventually bounded by the explicit four-term coefficient-gap envelope. It " ++
+        "remains to compare the squared envelope with the checked atom coercivity and absorb the " ++
+        "resulting local reserves into the aggregate certificate comparison. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

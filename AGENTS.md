@@ -1260,11 +1260,17 @@ raw eta decay modes. Every relevant relative mode lies strictly inside the
 unit disk, and Lean proves the phase-and-radius estimate
 `norm(entry)*norm(relativeMode-1)≤2`. With arbitrary positive slack this bound
 holds eventually and simultaneously over the complete finite upper window
-and all four colour entries of the literal prefix matrix. The next obligation
-is to contract these quantitative entry bounds against the moving completion
-coefficients and aggregate the resulting pair reserves strongly enough for
-the first displayed inequality and eventually the endpoint. No such aggregate
-quantitative lower bound is currently proved.
+and all four colour entries of the literal prefix matrix. Lean now contracts
+these estimates against the exact moving completion coefficients. The norm of
+the actual unweighted complex upper--upper reflection-sum correlation is
+eventually bounded, simultaneously over the entire finite upper window, by
+the four-term sum of coefficient-norm products times `(2+epsilon)/gap`; every
+gap is proved strictly positive. The literal packed real correlation inherits
+the same envelope. The next obligation is to compare the squared envelope
+with the two checked atom-coercivity lower bounds and aggregate the resulting
+pair reserves strongly enough for the first displayed inequality and
+eventually the endpoint. No such aggregate quantitative lower bound is
+currently proved.
 
 ## Soundness invariant
 
