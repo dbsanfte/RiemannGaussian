@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "The literal eta floor certificate accepts arbitrary longer coordinate blocks"
-    lineOne := "eta certificate"
-    lineTwo := "arbitrary blocks"
+    label := "The pointwise eta reserve floor has a uniform long-block ceiling"
+    lineOne := "pointwise eta floor"
+    lineTwo := "long-block ceiling"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.exists_prime_eventually_pairedEtaGeometricReflectionEvenLongBlockUpperReserveGapFloorCertificateInterface
+      ``RiemannGaussian.eventually_forall_pairedEtaGeometricUpperWindowNonnegativeReserveGapLower_eq_zero
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove some long-block reserve floor large enough for a certificate; no improved proportion yet.</text>\n" ++
+      "replace the pointwise triangle floor by a signed aggregate; no improved proportion yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -854,19 +854,27 @@ run_cmd do
         "inequality implies 18/18. Lean now removes the square-block restriction: restriction " ++
         "to the checked initial block proves separation for every longer coordinate block, and " ++
         "a generic frame operator transports exact rank, trace mass, frame potential, and both " ++
-        "floor certificate implications to every M at least the zero-window cardinality. Neither " ++
-        "quantitative floor inequality is yet proved.")),
+        "floor certificate implications to every M at least the zero-window cardinality. Lean " ++
+        "now proves a uniform ceiling for the present pointwise lower-bound method: atom " ++
+        "coercivity is bounded by M/(2*q^(M-1)) times exact coefficient energy, while the squared " ++
+        "triangle envelope retains a positive block-independent coefficient-energy floor. Thus, " ++
+        "uniformly in the block start, every upper-pair floor is eventually negative and the " ++
+        "nonnegative complete upper-window floor is eventually exactly zero. This does not bound " ++
+        "the actual reserve; it proves that a successful long-block estimate must retain signed " ++
+        "four-colour cancellation before applying triangle inequalities.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove the checked nonnegative full-reserve floor from the upper " ++
-        "coercivity-product-minus-correlation-envelope-square sum large enough to establish " ++
+        "Construct and bound a signed pre-triangle upper-window reserve aggregate large enough to establish " ++
         "(31*N-36)*potential<36*floor on an eventually separated geometric window. " ++
         "The checked exact identity mass^2=potential+reserve makes this equivalent to " ++
         "the frame-moment premise sufficient to beat 13/18, while the endpoint bound " ++
-        "(N-1)*potential<=floor is sufficient for finite-window 18/18. " ++
+        "(N-1)*potential<=floor is sufficient for finite-window 18/18. The current pointwise " ++
+        "coercivity-minus-triangle-envelope floor cannot do this merely by increasing block " ++
+        "length: Lean proves its nonnegative truncation eventually vanishes uniformly in the " ++
+        "block start. " ++
         "Lean already proves F_N=L_N+R_N, the critical " ++
         "summability of R_N, the exact cosine/crossover factorization of the higher-" ++
         "multiplicity L_N kernel, the finite on-line/off-line block decomposition, " ++
@@ -1051,8 +1059,10 @@ run_cmd do
         "frame separation for every longer consecutive block. A generic positive frame operator " ++
         "reruns the rank--trace argument with exact trace and potential identities, so for every " ++
         "M at least the zero-window cardinality the corresponding long-block floor inequalities " ++
-        "feed the same >13/18 and 18/18 conclusions. It remains to prove either antecedent and to " ++
-        "determine quantitatively whether increasing M makes one attainable. " ++
+        "feed the same >13/18 and 18/18 conclusions. Lean now proves that increasing M cannot make " ++
+        "the present pointwise coercivity-minus-triangle-envelope floor asymptotically useful: " ++
+        "uniformly in the block start, its nonnegative upper-window truncation is eventually zero. " ++
+        "A signed pre-triangle window aggregate is therefore required. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

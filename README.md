@@ -26,39 +26,24 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian is pursuing a phase-preserving eta zero-window certificate
-that beats Anthropic's two-thirds benchmark and ultimately reaches `18/18`.
-Lean now supports every geometric block length `M` at least the represented
-zero count, with separation, rank, trace, potential, and reserve transport
-proved. The open frontier is to prove that some long-block explicit reserve
-floor exceeds the checked `13/18` or `18/18` threshold without discarding the
-phase cancellation needed to do so.
+RiemannGaussian is pursuing a phase-preserving eta zero-window certificate that beats Anthropic's two-thirds benchmark and ultimately reaches `18/18`. Lean now proves that longer blocks cannot rescue the current pointwise coercivity-minus-triangle-envelope floor: it eventually vanishes uniformly in the block start. The frontier is therefore to retain and estimate the signed four-colour correlation aggregate before triangle inequalities destroy cancellation.
 
 ## Latest Update
 
-Lean now proves that the literal eta certificate may use arbitrarily long
-consecutive geometric coordinate blocks. If `N` zeros are represented and
-`M ≥ N`, restricting an `M`-block to its checked first `N` coordinates proves
-that all reflection-even frame atoms remain linearly independent. A generic
-positive frame operator then has exactly one rank direction per atom, with
-real trace equal to the literal frame mass and Frobenius square equal to the
-phase-preserving frame potential.
+Lean now proves a sharp limitation of the current explicit long-block floor.
+For every upper zero pair, its transported atom coercivity is at most the
+exact two-colour coefficient energy times `M / (2 q^(M-1))`. The squared
+pointwise triangle envelope, meanwhile, has a strictly positive lower bound
+given by the product of both coefficient energies and a block-independent
+four-gap constant.
 
-Consequently, for every eligible finite window and every `M ≥ N` with
-`M > 1`, one checked odd prime base makes the following exact implications
-valid at all sufficiently late blocks:
-
-- `(31N-36) · potential < 36 · floor` implies a critical-zero fraction
-  strictly greater than `13/18`;
-- `(N-1) · potential ≤ floor` implies that every represented zero is critical.
-
-Here `potential` and `floor` are both evaluated on the same length-`M` literal
-eta block. No rank, separation, colour-decomposition, or reserve-transport
-premise remains. Neither inequality itself is proved, so this expands the
-search space rigorously rather than improving the known zeta-zero proportion.
-The next step is to compare their verified scaling in `M` and identify which
-phase-bearing term must replace the current pointwise envelope if that scaling
-still cannot cross the certificate threshold.
+Since the first rate tends to zero, Lean proves uniformly over every block
+start that each pair floor is eventually negative. The complete weighted
+upper-window floor is therefore eventually nonpositive, and its nonnegative
+truncation is exactly zero. This is a theorem about the present lower-bound
+method, not the actual certificate reserve: it rules out obtaining long-block
+leverage by extending the same pointwise triangle estimate and makes a signed
+pre-triangle aggregate the next required object.
 
 ## Mathematical Program
 
