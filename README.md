@@ -100,28 +100,34 @@ to the moving completion coefficients and gives a positive norm lower bound
 for every sufficiently late recovered upper frame channel. Lean now pays the
 nonunitary common-tilt cost explicitly through its finite coordinate energy
 and proves that half-realification preserves the norm after recovery. The
-lower bound therefore reaches the literal packed frame metric. The remaining
-frontier is cross-atom completed-sum correlation control and aggregation
-strong enough to cross the certificate threshold. No improved zeta-zero
-proportion will be claimed until that quantitative premise is itself checked
-in Lean.
+lower bound therefore reaches the literal packed frame metric. Lean now also
+opens an upper--upper packed correlation without destroying its complex
+information: it is exactly the real part of a Hermitian reflection-sum
+correlation, which expands into four named completed eta Gram kernels. The
+literal multiplicity-weighted pair reserve is exactly its full complex Gram
+reserve plus the square of the retained correlation's imaginary part. The
+remaining frontier is a quantitative estimate for those four-channel
+carriers and its aggregation strong enough to cross the certificate
+threshold. No improved zeta-zero proportion will be claimed until that
+quantitative premise is itself checked in Lean.
 
 ## Latest Update
 
-Lean now absorbs the common critical coordinate tilt into the original
-certificate metric. For arbitrary finite vectors, pointwise weighting is
-bounded by the finite energy of the coordinate weights. The critical tilt
-energy is proved strictly positive. Independently, Lean proves that the packed
-norm square of an actual upper atom is exactly the norm square of its recovered
-complex reflection sum: the half-scaling and two-coordinate realification
-cancel exactly.
+Lean now exposes the exact information ledger for correlations between two
+literal upper off-line atoms. Their packed correlation is the real part of
+the Hermitian correlation between the two recovered complex reflection sums.
+Before taking that real part, Lean expands the carrier into all four completed
+original-channel eta Gram kernels: reflected--reflected,
+reflected--original, original--reflected, and original--original. Hermitian
+swap symmetry is retained.
 
-Dividing the moving-coefficient tilted lower bound by the explicit positive
-tilt energy gives a coercive lower bound for every sufficiently late literal
-upper frame atom itself. Its squared norm is therefore strictly positive in
-the metric used by the certificate. The remaining work is to control
-correlations between distinct completed upper atoms and aggregate their
-reserves. The project still needs
+For arbitrary finite complex vectors, Lean proves that the real-correlation
+reserve is exactly the full Hermitian Gram-determinant reserve plus the square
+of the imaginary correlation, with both terms nonnegative. Instantiating this
+identity gives the exact multiplicity-weighted upper--upper summand occurring
+in the certificate reserve. The next step is a quantitative bound on these
+four-channel correlations and its aggregation across distinct atoms. The
+project still needs
 `(31N-36) · potential < 36 · reserve` to beat `13/18`, and the stronger
 `(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither
 quantitative comparison is proved yet, so the zero proportion has not

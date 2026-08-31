@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Literal upper eta atoms inherit coercivity in the frame metric"
-    lineOne := "upper eta atom"
-    lineTwo := "frame-norm coercivity"
+    label := "Upper-pair reserve retains the full four-channel correlation ledger"
+    lineOne := "upper pair reserve"
+    lineTwo := "4-channel ledger"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.eventually_spectralUpperZetaZeroWindow_geometricFrameAtomNormSq_coercive
+      ``RiemannGaussian.pairedEtaGeometricUpperPairWeightedDecorrelationReserve_eq
   }
 ]
 
@@ -827,14 +827,18 @@ run_cmd do
         "frame channel. The common critical tilt is now absorbed through its explicit positive " ++
         "coordinate energy, while half-realification is proved exactly norm-preserving after " ++
         "recovery. Thus the literal packed upper atom itself inherits a positive lower bound in the " ++
-        "certificate metric. Bounding correlations between distinct completed reflection sums and " ++
+        "certificate metric. The packed correlation of two upper atoms is now the exact real part " ++
+        "of their complex reflection-sum correlation, and that carrier expands into four named " ++
+        "completed original-channel eta Gram kernels. Its actual multiplicity-weighted reserve is " ++
+        "exactly the full Hermitian Gram reserve plus the squared imaginary correlation. Bounding " ++
+        "those four-channel correlations and " ++
         "aggregating the pairwise reserve remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Bound correlations between checked completed reflection-summed reciprocal-radius channels and " ++
+        "Bound the checked four-channel completed reflection-sum correlations and " ++
         "strengthen the literal frame-metric coercivity of each upper atom into the " ++
         "quantitative inequality " ++
         "(31*N-36)*potential<36*reserve on an eventually separated geometric window. " ++
@@ -1000,9 +1004,12 @@ run_cmd do
         "frame channel. Lean now also pays the nonunitary common-tilt cost explicitly: pointwise " ++
         "weighting is bounded by its finite coordinate energy, and the packed upper-atom norm is " ++
         "exactly the unweighted recovered-channel norm. Dividing by that positive energy transfers " ++
-        "coercivity and strict noncollapse to the literal certificate frame metric. It remains to " ++
-        "bound correlations between distinct completed reflection " ++
-        "sums and absorb this local coercivity into the aggregate reserve comparison. " ++
+        "coercivity and strict noncollapse to the literal certificate frame metric. The correlation " ++
+        "of two literal upper atoms is now exactly the real part of a complex reflection-sum " ++
+        "correlation. That carrier expands into four completed original-channel eta Gram kernels, " ++
+        "and its weighted certificate reserve is exactly a full Hermitian Gram reserve plus the " ++
+        "squared imaginary correlation. It remains to bound these four retained channels and " ++
+        "absorb their local reserves into the aggregate certificate comparison. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

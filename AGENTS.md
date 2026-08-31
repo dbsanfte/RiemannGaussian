@@ -1234,11 +1234,20 @@ that energy is strictly positive, and the half-scaled two-coordinate
 realification of an actual upper atom is proved to have exactly the norm square
 of its unweighted recovered complex reflection sum. Dividing by the tilt
 energy therefore transfers the coercive lower bound and strict noncollapse to
-the literal packed upper frame atom itself. The next obligation is a
-quantitative correlation bound between distinct completed reflection sums and
-its aggregation into a reserve lower bound strong enough for the first
-displayed inequality and eventually the endpoint. No such aggregate
-quantitative lower bound is currently proved.
+the literal packed upper frame atom itself. Lean now opens the next
+cross-atom interface without discarding complex phase. The packed correlation
+of two literal upper atoms is exactly the real part of their recovered complex
+reflection-sum correlation, and that complex carrier is expanded into the
+four completed original-channel eta Gram kernels at the two zeros and their
+reflections. For arbitrary finite complex vectors, the real-correlation
+reserve is proved exactly equal to the full Hermitian Gram reserve plus the
+square of the imaginary correlation. Thus every actual
+multiplicity-weighted upper--upper reserve summand has a checked two-part
+nonnegative ledger with all four arithmetic channels retained. The next
+obligation is a quantitative bound on those four-channel correlations and its
+aggregation into a reserve lower bound strong enough for the first displayed
+inequality and eventually the endpoint. No such aggregate quantitative lower
+bound is currently proved.
 
 ## Soundness invariant
 
