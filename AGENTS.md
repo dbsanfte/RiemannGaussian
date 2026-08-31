@@ -1273,10 +1273,15 @@ every actual multiplicity-weighted upper--upper reserve:
 `weight_rho*weight_zeta*(lower_rho*lower_zeta-envelope^2)`. The conclusion is
 simultaneous over the complete upper window and is summed without loss over
 all ordered distinct upper pairs. The difference need not yet be positive.
-The next obligation is an eta-specific phase, coefficient, and gap estimate
-making this aggregate large enough, then inserting it into the complete
-colour-resolved reserve strongly enough for the `13/18` inequality and
-eventually the `18/18` endpoint.
+Lean now proves the exact complete colour decomposition: critical--critical,
+critical--upper, upper--critical, and upper--upper. Every sector is
+nonnegative, the diagonal terms vanish exactly, and the upper sector is the
+ordered-distinct aggregate above. Thus the explicit upper lower bound reaches
+the complete certificate reserve, and combining it with global reserve
+nonnegativity gives the eventual certified floor `max 0 upperLower`. The next
+obligation is an eta-specific phase, coefficient, and gap estimate making that
+floor large enough for the `13/18` inequality and eventually the `18/18`
+endpoint.
 
 ## Soundness invariant
 

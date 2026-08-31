@@ -130,28 +130,33 @@ eventual lower bound
 correlationEnvelope^2)`, simultaneously over the complete finite upper
 window, and sums the same inequality over its ordered distinct upper--upper
 sector. The coercive atom factors are strictly positive, but the displayed
-difference is not yet proved positive. The remaining frontier is an
-eta-arithmetic estimate making this aggregate lower bound large enough,
-together with the other colour sectors, to cross the certificate threshold.
+difference is not yet proved positive. Lean now splits the complete
+reflection-even reserve exactly into critical--critical, both oriented
+critical--upper, and upper--upper sectors. Every sector is nonnegative, the
+upper diagonal vanishes exactly, and the bounded ordered-distinct upper sum is
+therefore a literal sector of the full reserve. Consequently
+`max 0 upperLower` is an eventual lower bound for the complete certificate
+reserve. The remaining frontier is an eta-arithmetic estimate making this
+explicit full-reserve floor large enough to cross the certificate threshold.
 No improved zeta-zero proportion will be claimed until that quantitative
 premise is itself checked in Lean.
 
 ## Latest Update
 
-Lean now names the transported coercive lower bound for every literal packed
-upper atom and proves it strictly positive. It then combines both atom bounds
-with the four-colour correlation envelope: simultaneously for every ordered
-upper pair in a fixed finite window, the actual multiplicity-weighted reserve
-eventually dominates
-`weight_rho * weight_zeta * (lower_rho * lower_zeta - envelope^2)`.
-Lean also sums this inequality over the full ordered distinct upper--upper
-sector, with no loss between the pointwise and aggregate statements.
+Lean now identifies where the quantitative upper-pair bound sits in the
+complete certificate. A checked full ordered-pair representation removes only
+diagonal terms proved exactly zero, then splits the reserve into four literal
+atom-colour sectors: critical--critical, critical--upper, upper--critical, and
+upper--upper. Every sector is proved nonnegative. The upper--upper sector is
+proved exactly equal to the previously bounded ordered-distinct sum.
 
-This is an unconditional quantitative reserve lower bound, but it can still
-be negative; positivity of its coercivity-minus-envelope difference has not
-been inferred. The next hard step is to exploit eta-specific phase, gap, and
-coefficient structure to control that aggregate, then place it inside the
-complete colour-resolved reserve. The project still needs
+It follows unconditionally that the complete decorrelation reserve eventually
+dominates the explicit upper coercivity-product-minus-envelope-square sum.
+Combining this with the independent global nonnegativity theorem yields the
+stronger certified floor `max 0 upperLower ≤ fullReserve`. The floor itself is
+not proved strictly positive or quantitatively large. The next hard step is an
+eta-specific phase, gap, and coefficient estimate for that explicit sum. The
+project still needs
 `(31N-36) · potential < 36 · reserve` to beat `13/18`, and
 `(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither certificate
 inequality is proved, so the zero proportion has not improved.

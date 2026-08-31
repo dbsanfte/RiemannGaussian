@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "The actual upper-pair reserve sector inherits an aggregate coercivity-minus-envelope lower bound"
-    lineOne := "upper-pair reserve"
-    lineTwo := "aggregate lower"
+    label := "The complete eta reserve inherits a nonnegative explicit upper-sector floor"
+    lineOne := "complete reserve"
+    lineTwo := "explicit floor"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.eventually_pairedEtaGeometricUpperWindowWeightedReserveGapLower_le_decorrelationReserve
+      ``RiemannGaussian.eventually_pairedEtaGeometricUpperWindowNonnegativeReserveGapLower_le_fullDecorrelationReserve
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove the aggregate eta reserve lower bound large enough for a certificate; no improved proportion yet.</text>\n" ++
+      "prove the explicit full-reserve floor large enough for a certificate; no improved proportion yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -845,15 +845,18 @@ run_cmd do
         "multiplicity-weighted upper-pair reserve eventually dominates the resulting " ++
         "coercivity-product-minus-envelope-square expression, simultaneously over the finite " ++
         "upper window, and the inequality is summed over all ordered distinct upper pairs. The " ++
-        "explicit aggregate lower bound is not yet proved positive or certificate-sized.")),
+        "complete reserve is now split exactly into four atom-colour sectors, every sector is " ++
+        "nonnegative, and its upper sector is exactly that ordered-distinct sum. Consequently the " ++
+        "maximum of zero and the explicit upper lower bound is an eventual floor for the complete " ++
+        "certificate reserve. That floor is not yet proved positive or certificate-sized.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Prove the checked aggregate coercivity-product-minus-correlation-envelope-square lower " ++
-        "bound positive and large enough, place the upper sector inside the complete " ++
-        "colour-resolved reserve, and establish the quantitative inequality " ++
+        "Prove the checked nonnegative full-reserve floor from the upper " ++
+        "coercivity-product-minus-correlation-envelope-square sum large enough to establish the " ++
+        "quantitative inequality " ++
         "(31*N-36)*potential<36*reserve on an eventually separated geometric window. " ++
         "The checked exact identity mass^2=potential+reserve makes this equivalent to " ++
         "the frame-moment premise sufficient to beat 13/18, while the endpoint bound " ++
@@ -1034,8 +1037,10 @@ run_cmd do
         "part are eventually bounded by the explicit four-term coefficient-gap envelope. Lean " ++
         "now compares its square with both positive atom-coercivity lower bounds, obtaining an " ++
         "eventual lower bound for every actual weighted upper-pair reserve and its ordered-distinct " ++
-        "aggregate. It remains to prove that explicit aggregate positive and sufficiently large, " ++
-        "then absorb it into the complete colour-resolved certificate comparison. " ++
+        "aggregate. The complete reserve is now exactly split into four nonnegative colour sectors, " ++
+        "and the upper sector is that aggregate. Hence max(0,upperLower) is an eventual lower bound " ++
+        "for the full certificate reserve. It remains to prove this explicit floor positive and " ++
+        "sufficiently large. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
