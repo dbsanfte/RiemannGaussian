@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Off-line eta reflection pairs have positive Gram reserve"
+    label := "Off-line eta pairs obey a determinant-over-trace lower bound"
     lineOne := "off-line eta pair"
-    lineTwo := "positive Gram reserve"
+    lineTwo := "quantitative coercivity"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.spectralUpperZetaZeroWindow_criticalShiftedPair_gramReserve_pos
+      ``RiemannGaussian.spectralUpperZetaZeroWindow_criticalShiftedReflectionCombination_gramLowerBound
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "bound completed reflection-sum correlations and aggregate their reserve; no improved proportion yet.</text>\n" ++
+      "transport local eta-pair coercivity to completed reflection sums and aggregate it; no improved proportion yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -815,7 +815,9 @@ run_cmd do
         "off-line modes keep one phase and reciprocal radii. Their exact cross-correlation is the " ++
         "window length, their signed two-coefficient norm ledger retains the full interference " ++
         "term, and every literal off-line critical-shifted pair has strictly positive Gram " ++
-        "reserve beyond length one. The actual upper frame atom is half the injective " ++
+        "reserve beyond length one. More quantitatively, every complex combination is bounded " ++
+        "below by determinant over trace times its coefficient norm, and that constant is proved " ++
+        "positive. The actual upper frame atom is half the injective " ++
         "realification of its completed-channel sum. Bounding correlations between those completed " ++
         "reflection sums and aggregating the pairwise reserve remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
@@ -978,8 +980,10 @@ run_cmd do
         "that complex sum exactly. The two underlying critical-shifted modes are now identified " ++
         "with an exact reciprocal-radius pair: their cross-correlation is the window length, their " ++
         "arbitrary signed combination has an exact interference ledger and cannot cancel, and the " ++
-        "literal off-line pair has strictly positive Gram reserve beyond length one. The remaining " ++
-        "step is to bound correlations between the completed reflection sums and absorb this local " ++
+        "literal off-line pair has strictly positive Gram reserve beyond length one. Its full " ++
+        "quadratic form is now bounded below by the explicit positive determinant-over-trace " ++
+        "constant times the coefficient norm. The remaining step is to transport the actual " ++
+        "completion coefficients, bound correlations between the completed reflection sums, and absorb this local " ++
         "coercivity into the aggregate reserve comparison. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++

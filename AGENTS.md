@@ -1209,12 +1209,17 @@ Lean now identifies the two underlying literal critical-shifted modes with the
 abstract reciprocal-radius pair. Their cross-correlation is exactly the window
 length; their full two-coefficient norm square retains the signed interference
 term; no nontrivial coefficient pair cancels; and every off-line pair has
-strictly positive Gram reserve at each length greater than one. The next
-obligation is to bound correlations between completed reflection sums, absorb
-this local coercivity and the common tilt into the actual certificate
-comparison, and aggregate the pairwise estimate into a reserve lower bound
-strong enough for the first displayed inequality and eventually the endpoint.
-No such aggregate quantitative lower bound is currently proved.
+strictly positive Gram reserve at each length greater than one. Lean now turns
+that reserve into an explicit quantitative lower bound: every complex
+combination is bounded below by `(A*B-M^2)/(A+B)` times the squared coefficient
+norm, and this determinant-over-trace constant is proved positive for the
+literal shifted zero/reflection modes. The next obligation is to transport the
+actual cutoff-dependent completion coefficients through this inequality,
+bound correlations between completed reflection sums, absorb the resulting
+local coercivity and common tilt into the actual certificate comparison, and
+aggregate the pairwise estimate into a reserve lower bound strong enough for
+the first displayed inequality and eventually the endpoint. No such aggregate
+quantitative lower bound is currently proved.
 
 ## Soundness invariant
 

@@ -86,30 +86,32 @@ complex sum exactly. Under one common critical tilt, critical modes have
 radius one while each off-line reflection pair keeps one shared phase and two
 strictly reciprocal radii. Lean now proves the pair's exact finite
 cross-correlation, its full signed two-coefficient norm ledger, noncancellation,
-and a strictly positive Gram reserve at every length greater than one. The
-remaining frontier is to control correlations between the completed
-reflection sums represented by the actual off-line frame atoms, absorb this
-local reciprocal-radius coercivity into the certificate carrier, and aggregate
-it strongly enough to cross the certificate threshold. No improved zeta-zero
-proportion will be claimed until that quantitative premise is itself checked
-in Lean.
+and a strictly positive Gram reserve at every length greater than one. That
+reserve now yields a quantitative lower bound: every complex combination is
+at least determinant-over-trace times its coefficient norm, with the constant
+proved strictly positive for each literal off-line pair. The remaining
+frontier is to transport the actual completion coefficients through this
+bound, control correlations between completed reflection sums, and aggregate
+the local coercivity strongly enough to cross the certificate threshold. No
+improved zeta-zero proportion will be claimed until that quantitative premise
+is itself checked in Lean.
 
 ## Latest Update
 
-Lean now identifies every literal off-line critical-shifted eta pair with two
-finite geometric modes carrying one common unit phase and reciprocal positive
-radii. Their complex cross-correlation is exactly the window length. The
-two-by-two Gram determinant is strictly positive at every length greater than
-one, and an exact quadratic ledger proves that every nontrivial complex linear
-combination has positive norm while retaining its signed interference term.
-Thus the underlying radial colours cannot cancel; this is proved for the
-actual zero/reflection pair in each upper spectral window, not assumed from a
-model.
+Lean now upgrades the positive Gram reserve of every literal off-line
+critical-shifted eta pair to an explicit coercive inequality. If `A` and `B`
+are the two finite mode norm squares, their exact cross-correlation is `M`, so
+every complex coefficient pair satisfies
+`norm² ≥ (A·B-M²)/(A+B) · (|c|²+|d|²)`. Lean proves the constant
+strictly positive, retains the signed complex interference through the proof,
+and identifies both the combination and the constant with the actual shifted
+zero/reflection modes in every upper spectral window.
 
-This is local pairwise coercivity, not yet the certificate estimate. The actual
-upper frame atom contains a completed-channel reflection sum, and correlations
-between different such sums still have to be bounded and aggregated. The
-project still needs
+This is quantitative local coercivity, not yet the certificate estimate. The
+actual upper frame atom contains cutoff-dependent completion coefficients and
+a completed-channel reflection sum; those coefficients must be transported
+into this bound, and correlations between different sums still have to be
+controlled and aggregated. The project still needs
 `(31N-36) · potential < 36 · reserve` to beat `13/18`, and the stronger
 `(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither
 quantitative comparison is proved yet, so the zero proportion has not
