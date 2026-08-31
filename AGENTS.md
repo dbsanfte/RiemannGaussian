@@ -1316,6 +1316,16 @@ three vary the adjacent coefficient rows against that same fixed-start metric,
 not a silently frozen prefix at `n + 1`. No conditioning or arithmetic bound
 follows from inversion alone. The live obligation is a quantitative estimate
 on this scale-free multi-start carrier that yields `13/18`, then `18/18`.
+Lean now removes the cutoff-dependent inverse from that interface. The moving
+adjacent-start matrix factors exactly as `D_n*V`, with every completion
+coefficient in `D_n` and only the zeroth/first step modes in `V`. Distinct
+reflection modes make `V` nonsingular for `q > 1`, independently of `n`.
+Inverting the four probes through `V` recovers `D_zeta^* K D_rho`, whose
+entries are exactly the literal coefficient-weighted signed-colour terms.
+This recovery propagates through all sixteen interactions, the complete
+upper reserve, universal scale removal, and both certificate interfaces. It
+still supplies no bound on the probes. The live task is a finite-window
+conditioning bound and eta-arithmetic estimate for this scale-free carrier.
 
 ## Soundness invariant
 

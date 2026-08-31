@@ -26,27 +26,27 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian is pursuing a phase-preserving eta zero-window certificate beyond Anthropic's two-thirds benchmark and ultimately `18/18`. Lean now reconstructs every four-colour prefix metric exactly from four adjacent-start coefficient probes, so the shrinking reflected colour is not erased at one scale. The frontier is a quantitative eta-arithmetic bound on this scale-free two-scale carrier strong enough for `13/18`, then `18/18`; neither threshold is proved.
+RiemannGaussian is pursuing a phase-preserving eta zero-window certificate beyond Anthropic's two-thirds benchmark and ultimately `18/18`. Lean now factors adjacent probes through a cutoff-independent step matrix and exactly recovers the coefficient-weighted four-colour reserve without inverting any shrinking radial coefficient. The frontier is a quantitative eta-arithmetic bound on this scale-free recovered carrier strong enough for `13/18`, then `18/18`; neither threshold is proved.
 
 ## Latest Update
 
-Lean now proves exact finite two-start tomography for the reflected/original
-eta colours. Each completion coefficient advances by a fixed complex step
-mode, and the two reflected step modes are unequal for every base `q > 1`.
-Consequently the adjacent-start `2 × 2` coefficient matrix has nonzero
-determinant and exactly recovers any two-colour vector.
+Lean now factors the adjacent-start coefficient matrix exactly as `Dₙ V`.
+The diagonal `Dₙ` contains both moving completion coefficients, while `V`
+contains only their zeroth and first step-mode powers. Its determinant is the
+difference of the two step modes and is nonzero for every `q > 1`; crucially,
+`V` is independent of the cutoff start.
 
-Applying the construction on both sides of a colour metric gives four
-cross-start coefficient probes. Two-sided inversion recovers every entry of
-the literal normalized-prefix `2 × 2` metric. The `(0,0)` probe is exactly the
-existing one-start eta coefficient contraction; the other three retain the
-same fixed prefix metric while changing the coefficient rows.
+The four adjacent probes therefore recover `Dζᴴ K Dρ` by inverting only the
+fixed step matrices. Its entries are precisely the coefficient-weighted
+complex colour interactions whose real parts form the signed eta reserve.
+Lean transports this recovery through all sixteen ordered interactions, the
+pair and window reserves, removal of the universal `q^(-2n)` scale, and both
+existing certificate interfaces.
 
-This prevents the late shrinking of one radial colour from destroying finite
-information before it reaches the certificate. It is not yet a conditioning
-estimate or an arithmetic threshold: neither `13/18` nor `18/18` is proved.
-The next task is to obtain a quantitative bound from the recovered multi-scale
-carrier.
+This removes the vanishing radial coefficient from the inverse without
+discarding phase, sign, or colour. It does not bound the recovered carrier:
+neither `13/18` nor `18/18` is proved. The next task is a finite-window
+conditioning bound followed by an arithmetic estimate on the four probes.
 
 ## Mathematical Program
 

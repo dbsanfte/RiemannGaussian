@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 486 modules · 12297 declarations · 10394 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 487 modules · 12330 declarations · 10416 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · frontier standard-only</text>
   <text class="section" x="20" y="64">UNCONDITIONAL RESULTS AND IDENTITIES</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -77,9 +77,9 @@
   </g>
   <g class="proved bridge">
     <rect x="500" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.pairedEtaGeometricCriticalUpperTwoStartMetricPrefixObservation_recover</title>
-    <text x="572" y="173">two-start eta</text>
-    <text x="572" y="191">4 colours recovered  ✓</text>
+    <title>RiemannGaussian.pairedEtaGeometricUpperWindowCoefficientNormalizedTwoStartRecoveredReserve_eq_balanced</title>
+    <text x="572" y="173">fixed-step inverse</text>
+    <text x="572" y="191">eta reserve recovered  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
@@ -90,5 +90,5 @@
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: bound the exact scale-free two-start eta carrier for &gt;13/18; no improvement yet.</text>
+  <text class="frontier" x="20" y="220">Inventory, not proximity meter. Open: bound the fixed-step recovered eta carrier for &gt;13/18; no improvement yet.</text>
 </svg>

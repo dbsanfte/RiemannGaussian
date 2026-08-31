@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Two adjacent eta starts recover the complete colour metric"
-    lineOne := "two-start eta"
-    lineTwo := "4 colours recovered"
+    label := "A cutoff-independent two-start inverse recovers the eta reserve"
+    lineOne := "fixed-step inverse"
+    lineTwo := "eta reserve recovered"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaGeometricCriticalUpperTwoStartMetricPrefixObservation_recover
+      ``RiemannGaussian.pairedEtaGeometricUpperWindowCoefficientNormalizedTwoStartRecoveredReserve_eq_balanced
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "bound the exact scale-free two-start eta carrier for &gt;13/18; no improvement yet.</text>\n" ++
+      "bound the fixed-step recovered eta carrier for &gt;13/18; no improvement yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -888,8 +888,13 @@ run_cmd do
         "The two reflected colours have distinct exact step modes for every q>1, making the " ++
         "two-start coefficient matrix nonsingular. Four left/right coefficient probes therefore " ++
         "recover the complete fixed-start 2x2 literal prefix metric, with the (0,0) probe equal " ++
-        "to the existing eta contraction. This exact tomography supplies no conditioning or " ++
-        "arithmetic estimate. No theorem yet proves either threshold.")),
+        "to the existing eta contraction. Lean now factors that matrix as D_n*V. The diagonal " ++
+        "D_n contains all moving completion coefficients, while the nonsingular step matrix V " ++
+        "is independent of n. Inverting only V recovers the coefficient-weighted colour matrix " ++
+        "D_zeta^* K D_rho whose real entries generate the literal signed reserve. This recovery " ++
+        "is transported through the full window, universal scale removal, and both certificate " ++
+        "interfaces. The exact factorization supplies no arithmetic bound on the probes. No " ++
+        "theorem yet proves either threshold.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -915,8 +920,12 @@ run_cmd do
         "leaving an equivalent coefficient-normalized carrier whose reciprocal radial imbalance " ++
         "and unit phases remain explicit. Lean now proves that the two adjacent completion-" ++
         "coefficient rows are nonsingular and that four left/right probes recover every colour of " ++
-        "the fixed-start literal prefix metric exactly. The open step is an eta-arithmetic bound " ++
-        "on this scale-free multi-start carrier; matrix inversion alone gives no estimate. " ++
+        "the fixed-start literal prefix metric exactly. Factoring the moving coefficient matrix " ++
+        "as D_n*V puts all cutoff dependence in D_n and leaves V nonsingular and independent of " ++
+        "n. Inverting only V recovers the coefficient-weighted matrix D_zeta^* K D_rho, and the " ++
+        "resulting scale-free window reserve is proved equal to the balanced carrier. The open " ++
+        "step is a finite-window conditioning theorem and eta-arithmetic bound on these four " ++
+        "probes; exact inversion alone gives no estimate. " ++
         "Lean already proves F_N=L_N+R_N, the critical " ++
         "summability of R_N, the exact cosine/crossover factorization of the higher-" ++
         "multiplicity L_N kernel, the finite on-line/off-line block decomposition, " ++
