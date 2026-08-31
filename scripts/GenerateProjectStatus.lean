@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.externalZeta23_strictlyAboveTwoThirds_projectFiniteWindows
   },
   {
-    label := "A cutoff-independent two-start inverse recovers the eta reserve"
-    lineOne := "fixed-step inverse"
-    lineTwo := "eta reserve recovered"
-    role := "bridge"
+    label := "The exact Zeta23 defect bounds literal eta negative inertia"
+    lineOne := "eta negative inertia"
+    lineTwo := "exact HD(1) defect"
+    role := "external"
     theoremName :=
-      ``RiemannGaussian.pairedEtaGeometricUpperWindowCoefficientNormalizedTwoStartRecoveredReserve_eq_balanced
+      ``RiemannGaussian.externalZeta23_montgomeryTaylor_etaBlockNegativeInertia
   }
 ]
 
@@ -262,7 +262,7 @@ run_cmd do
       throwError "milestone has nonstandard axioms: {milestone.theoremName}: {unexpectedAxioms}"
 
   let statusJson := Json.mkObj [
-    ("schemaVersion", toJson 7),
+    ("schemaVersion", toJson 8),
     ("generator", .str "scripts/GenerateProjectStatus.lean"),
     ("leanVersion", .str Lean.versionString),
     ("compiledProjectModules", toJson moduleCount),
@@ -277,7 +277,8 @@ run_cmd do
     ("statusNote", .str
       ("The build rechecks the pinned external Zeta23 unconditional two-thirds and exact " ++
         "Montgomery--Taylor HD(1) theorems, proves in Lean that HD(1) > 2/3, and derives " ++
-        "the corresponding project-native finite-window form. RiemannGaussian has exact analytic, eta, " ++
+        "the corresponding project-native finite-window form and exact negative-inertia bound for " ++
+        "the literal signed eta block. RiemannGaussian has exact analytic, eta, " ++
         "heat, matrix, and contour infrastructure, but no unconditional eta certificate " ++
         "currently improves that external zeta-zero proportion. Conditional threshold " ++
         "interfaces and generic finite models are not counted as achieved proportions.")),
@@ -302,6 +303,8 @@ run_cmd do
           "RiemannGaussian.externalZeta23_montgomeryTaylor_distinctDenominator"),
         ("projectFiniteWindowTheorem", .str
           "RiemannGaussian.externalZeta23_montgomeryTaylor_projectFiniteWindows"),
+        ("etaBlockNegativeInertiaTheorem", .str
+          "RiemannGaussian.externalZeta23_montgomeryTaylor_etaBlockNegativeInertia"),
         ("status", .str "unconditional; rechecked")
       ]
     ]),

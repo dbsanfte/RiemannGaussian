@@ -30,12 +30,13 @@ RiemannGaussian is pursuing an unconditional, phase-preserving eta zero-window b
 
 ## Latest Update
 
-The exact Zeta23 benchmark now reaches the eta development's own finite zero
-windows. Lean proves that coercing those project-native windows gives exactly
-Zeta23's `zerosIn`, identifies their cards with `Ndist` and `N0star`, and
-identifies each positive dyadic window as a literal filter of the symmetric
-spectral window used by the eta carrier. The exact `HD(1)` and strict-gain
-theorems are transported through this seam; no new proportion is claimed.
+The literal multiplicity-weighted eta block now reproduces the imported exact
+Zeta23 benchmark. On the same project-native dyadic zero window, Lean proves
+the signed decomposition, bounds negative inertia by the upper off-line pair
+count, and derives the full asymptotic `HD(1)` defect inequality plus a fixed
+strict saving over the old two-thirds ceiling. This verifies the external
+baseline inside the eta certificate carrier; no stronger proportion is yet
+proved.
 
 ## Mathematical Program
 
