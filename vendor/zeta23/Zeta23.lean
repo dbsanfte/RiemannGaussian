@@ -6,5 +6,8 @@ SPDX-License-Identifier: Apache-2.0
 
 import Zeta23.Final
 import Zeta23.ThmD.Final
+import Zeta23.FinalMult
+import Zeta23.ThmD.Mult
 
-/-! The warning-clean transitive roots imported by RiemannGaussian's external baseline. -/
+/-! The warning-clean transitive roots, including the multiplicity-aware
+headline theorems, imported by RiemannGaussian's external baseline. -/

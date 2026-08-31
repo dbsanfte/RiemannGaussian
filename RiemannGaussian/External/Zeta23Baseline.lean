@@ -1,4 +1,4 @@
-import Zeta23
+import Zeta23.ThmD.Mult
 
 /-!
 # Kernel-checked external zeta-zero proportion baselines
@@ -8,10 +8,11 @@ from the Apache-2.0 `anthropics/zeta-23-lean` development.  The imported
 source is pinned and vendored under `vendor/zeta23`; it is external prior work,
 not a RiemannGaussian certificate.
 
-The counting functions below are exactly `Zeta23.Ncount` and
-`Zeta23.N0star`: nontrivial zeros in the positive-ordinate dyadic window
-`T < Im rho <= 2T`, counted with analytic multiplicity in the denominator and
-as distinct critical-line points in the numerator.
+The counting functions below are exactly `Zeta23.Ncount`,
+`Zeta23.N0star`, and `Zeta23.N0simple`: nontrivial zeros in the
+positive-ordinate dyadic window `T < Im rho <= 2T`, counted with analytic
+multiplicity in the denominator and respectively as distinct or simple
+critical-line points in the numerator.
 
 The first theorem is the exact unconditional two-thirds baseline.  The second
 is the stronger unconditional Montgomery--Taylor theorem with exact constant
@@ -40,6 +41,18 @@ theorem externalZeta23_montgomeryTaylor_distinctCritical :
           (Zeta23.Ncount T (2 * T) : ℝ) ≤
         Zeta23.N0star T (2 * T) :=
   Zeta23.ThmD.thmD₀
+
+/-- External unconditional multiplicity-aware Montgomery--Taylor baseline.
+The numerator is the literal count of simple critical-line zeta zeros, and
+the denominator counts all nontrivial zeta zeros with analytic multiplicity.
+This is the headline `HD 1` theorem against which the project's `13/18`
+target must be measured. -/
+theorem externalZeta23_montgomeryTaylor_simpleCritical :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀,
+      (Zeta23.ThmD.HD 1 - ε) *
+          (Zeta23.Ncount T (2 * T) : ℝ) ≤
+        Zeta23.N0simple T (2 * T) :=
+  Zeta23.ThmD.thmD₀_simple_mult
 
 end
 

@@ -10,10 +10,11 @@ zeros. The eta development is indexed by this project's subtype
 seam.
 
 For arbitrary ordinates `T₁ < Im rho ≤ T₂`, Lean constructs finite project
-windows of all distinct nontrivial zeros and of their critical-line subset.
+windows of all distinct nontrivial zeros, their critical-line subset, and the
+simple critical-line subset.
 The subtype coercion maps these windows exactly onto `Zeta23.zerosIn` and its
 critical-line intersection. Consequently their cardinalities are exactly
-`Zeta23.Ndist` and `Zeta23.N0star`.
+`Zeta23.Ndist`, `Zeta23.N0star`, and `Zeta23.N0simple`.
 
 The final theorems restate both the exact Montgomery--Taylor benchmark and
 its checked strict gain over `2/3` directly on these project-native finite
@@ -122,6 +123,43 @@ theorem positiveSpectralCriticalZetaZeroWindow_eq_filter (T₁ T₂ : ℝ) :
   ext rho
   simp [and_assoc]
 
+/-- Project-subtype simple critical-line zeros in a half-open ordinate
+window. -/
+def positiveSpectralSimpleCriticalZetaZeroWindowSet (T₁ T₂ : ℝ) :
+    Set NontrivialZetaZero :=
+  {rho | rho ∈ positiveSpectralCriticalZetaZeroWindowSet T₁ T₂ ∧
+    analyticZetaZeroMultiplicity rho = 1}
+
+/-- Every simple critical-line ordinate window is finite. -/
+theorem positiveSpectralSimpleCriticalZetaZeroWindowSet_finite (T₁ T₂ : ℝ) :
+    (positiveSpectralSimpleCriticalZetaZeroWindowSet T₁ T₂).Finite := by
+  apply (positiveSpectralCriticalZetaZeroWindowSet_finite T₁ T₂).subset
+  intro rho hrho
+  exact hrho.1
+
+/-- The finite project-native window of simple critical-line zeta zeros. -/
+def positiveSpectralSimpleCriticalZetaZeroWindow (T₁ T₂ : ℝ) :
+    Finset NontrivialZetaZero :=
+  (positiveSpectralSimpleCriticalZetaZeroWindowSet_finite T₁ T₂).toFinset
+
+@[simp]
+theorem mem_positiveSpectralSimpleCriticalZetaZeroWindow
+    {T₁ T₂ : ℝ} {rho : NontrivialZetaZero} :
+    rho ∈ positiveSpectralSimpleCriticalZetaZeroWindow T₁ T₂ ↔
+      ((T₁ < rho.1.im ∧ rho.1.im ≤ T₂) ∧ rho.1.re = 1 / 2) ∧
+        analyticZetaZeroMultiplicity rho = 1 := by
+  simp [positiveSpectralSimpleCriticalZetaZeroWindow,
+    positiveSpectralSimpleCriticalZetaZeroWindowSet,
+    positiveSpectralCriticalZetaZeroWindowSet,
+    positiveSpectralZetaZeroWindowSet]
+
+/-- The two projects use definitionally the same analytic multiplicity for a
+nontrivial zeta zero. -/
+theorem analyticZetaZeroMultiplicity_eq_zeta23ZeroMult
+    (rho : NontrivialZetaZero) :
+    analyticZetaZeroMultiplicity rho = Zeta23.zeroMult rho.1 := by
+  rfl
+
 /-- For nonnegative `T`, the positive dyadic window is exactly the indicated
 filter of the symmetric spectral window already used by the eta carrier. -/
 theorem positiveSpectralZetaZeroWindow_dyadic_eq_spectral_filter
@@ -191,6 +229,33 @@ theorem image_positiveSpectralCriticalZetaZeroWindowSet_val (T₁ T₂ : ℝ) :
       ⟨s, (zeta23IsNontrivialZero_iff_isNontrivialZetaZero s).1 hs.1.1⟩
     exact ⟨rho, ⟨hs.1.2, hs.2⟩, rfl⟩
 
+/-- Coercing the project-native simple critical window gives exactly
+Zeta23's literal simple critical-line zero set. -/
+theorem image_positiveSpectralSimpleCriticalZetaZeroWindowSet_val
+    (T₁ T₂ : ℝ) :
+    ((fun rho : NontrivialZetaZero ↦ (rho.1 : ℂ)) ''
+        positiveSpectralSimpleCriticalZetaZeroWindowSet T₁ T₂) =
+      Zeta23.zerosIn T₁ T₂ ∩ {rho | rho.re = 1 / 2} ∩
+        {rho | Zeta23.zeroMult rho = 1} := by
+  ext s
+  constructor
+  · rintro ⟨rho, hrho, rfl⟩
+    exact ⟨
+      ⟨
+        ⟨(zeta23IsNontrivialZero_iff_isNontrivialZetaZero rho.1).2 rho.2,
+          hrho.1.1⟩,
+        hrho.1.2⟩,
+      by simpa [analyticZetaZeroMultiplicity_eq_zeta23ZeroMult] using hrho.2⟩
+  · intro hs
+    change
+      ((Zeta23.IsNontrivialZero s ∧ T₁ < s.im ∧ s.im ≤ T₂) ∧
+        s.re = 1 / 2) ∧ Zeta23.zeroMult s = 1 at hs
+    let rho : NontrivialZetaZero :=
+      ⟨s, (zeta23IsNontrivialZero_iff_isNontrivialZetaZero s).1 hs.1.1.1⟩
+    refine ⟨rho, ?_, rfl⟩
+    exact ⟨⟨hs.1.1.2, hs.1.2⟩,
+      by simpa [analyticZetaZeroMultiplicity_eq_zeta23ZeroMult] using hs.2⟩
+
 /-- The project-native distinct-zero window card is exactly `Zeta23.Ndist`.
 -/
 theorem card_positiveSpectralZetaZeroWindow_eq_Ndist (T₁ T₂ : ℝ) :
@@ -223,6 +288,25 @@ theorem card_positiveSpectralCriticalZetaZeroWindow_eq_N0star
       rw [image_positiveSpectralCriticalZetaZeroWindowSet_val]
     _ = Zeta23.N0star T₁ T₂ := rfl
 
+/-- The project-native simple critical-window card is exactly
+`Zeta23.N0simple`. -/
+theorem card_positiveSpectralSimpleCriticalZetaZeroWindow_eq_N0simple
+    (T₁ T₂ : ℝ) :
+    (positiveSpectralSimpleCriticalZetaZeroWindow T₁ T₂).card =
+      Zeta23.N0simple T₁ T₂ := by
+  let S := positiveSpectralSimpleCriticalZetaZeroWindowSet T₁ T₂
+  have hfinite :=
+    positiveSpectralSimpleCriticalZetaZeroWindowSet_finite T₁ T₂
+  calc
+    (positiveSpectralSimpleCriticalZetaZeroWindow T₁ T₂).card = S.ncard := by
+      exact (Set.ncard_eq_toFinset_card S hfinite).symm
+    _ = ((fun rho : NontrivialZetaZero ↦ (rho.1 : ℂ)) '' S).ncard :=
+      Subtype.val_injective.injOn.ncard_image.symm
+    _ = (Zeta23.zerosIn T₁ T₂ ∩ {rho | rho.re = 1 / 2} ∩
+        {rho | Zeta23.zeroMult rho = 1}).ncard := by
+      rw [image_positiveSpectralSimpleCriticalZetaZeroWindowSet_val]
+    _ = Zeta23.N0simple T₁ T₂ := rfl
+
 /-- The exact imported Montgomery--Taylor benchmark, now stated entirely on
 project-native finite windows of the actual zeta-zero subtype. -/
 theorem externalZeta23_montgomeryTaylor_projectFiniteWindows :
@@ -236,6 +320,22 @@ theorem externalZeta23_montgomeryTaylor_projectFiniteWindows :
   refine ⟨T₀, fun T hT ↦ ?_⟩
   rw [card_positiveSpectralZetaZeroWindow_eq_Ndist,
     card_positiveSpectralCriticalZetaZeroWindow_eq_N0star]
+  exact hT₀ T hT
+
+/-- The actual multiplicity-aware Montgomery--Taylor headline theorem on the
+project-native simple critical window.  The denominator remains the literal
+analytic-multiplicity count `Ncount`; no distinct-denominator weakening is
+used. -/
+theorem externalZeta23_montgomeryTaylor_simple_projectFiniteWindows :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀,
+      (Zeta23.ThmD.HD 1 - ε) *
+          (Zeta23.Ncount T (2 * T) : ℝ) ≤
+        (positiveSpectralSimpleCriticalZetaZeroWindow T (2 * T)).card := by
+  intro ε hε
+  obtain ⟨T₀, hT₀⟩ :=
+    externalZeta23_montgomeryTaylor_simpleCritical ε hε
+  refine ⟨T₀, fun T hT ↦ ?_⟩
+  rw [card_positiveSpectralSimpleCriticalZetaZeroWindow_eq_N0simple]
   exact hT₀ T hT
 
 /-- The checked strict positive gain over two-thirds, now stated entirely on

@@ -26,17 +26,16 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian is pursuing an unconditional, phase-preserving eta zero-window bound that strictly improves the imported exact Montgomery--Taylor `HD(1)` benchmark and ultimately reaches `18/18`. No project theorem currently improves that baseline. Conditional threshold interfaces are not certificates; `13/18` counts only when a literal zeta-window inequality is proved and discharged in Lean.
+RiemannGaussian is pursuing an unconditional, phase-preserving eta bound for simple critical-line zeta zeros that strictly improves the imported multiplicity-aware Montgomery--Taylor `HD(1)` benchmark, then reaches `13/18` and ultimately `18/18`. No project theorem improves that baseline; conditional threshold interfaces are not certificates.
 
 ## Latest Update
 
-The literal multiplicity-weighted eta block now reproduces the imported exact
-Zeta23 benchmark. On the same project-native dyadic zero window, Lean proves
-the signed decomposition, bounds negative inertia by the upper off-line pair
-count, and derives the full asymptotic `HD(1)` defect inequality plus a fixed
-strict saving over the old two-thirds ceiling. This verifies the external
-baseline inside the eta certificate carrier; no stronger proportion is yet
-proved.
+The complete pinned Zeta23 multiplicity-aware chain is now rechecked under the
+project gate. Lean proves the literal headline bound `HD(1)` for simple
+critical-line zeros over the analytic-multiplicity zero count and identifies
+its numerator with the project-native simple dyadic window. This corrects the
+earlier distinct-critical-only bridge. The eta negative-inertia defect remains
+checked separately; no project theorem improves the external baseline.
 
 ## Mathematical Program
 

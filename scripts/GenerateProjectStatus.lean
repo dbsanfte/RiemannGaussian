@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_zero_one_eq_integral_mixedChannelZeroSumAt
   },
   {
-    label := "External Montgomery--Taylor benchmark is strictly above two-thirds"
-    lineOne := "external baseline"
+    label := "External Montgomery--Taylor simple-zero benchmark"
+    lineOne := "external simple zeros"
     lineTwo := "HD(1) > 2/3"
     role := "external"
     theoremName :=
-      ``RiemannGaussian.externalZeta23_strictlyAboveTwoThirds_projectFiniteWindows
+      ``RiemannGaussian.externalZeta23_montgomeryTaylor_simple_projectFiniteWindows
   },
   {
     label := "The exact Zeta23 defect bounds literal eta negative inertia"
@@ -262,7 +262,7 @@ run_cmd do
       throwError "milestone has nonstandard axioms: {milestone.theoremName}: {unexpectedAxioms}"
 
   let statusJson := Json.mkObj [
-    ("schemaVersion", toJson 8),
+    ("schemaVersion", toJson 9),
     ("generator", .str "scripts/GenerateProjectStatus.lean"),
     ("leanVersion", .str Lean.versionString),
     ("compiledProjectModules", toJson moduleCount),
@@ -276,8 +276,9 @@ run_cmd do
     ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
       ("The build rechecks the pinned external Zeta23 unconditional two-thirds and exact " ++
-        "Montgomery--Taylor HD(1) theorems, proves in Lean that HD(1) > 2/3, and derives " ++
-        "the corresponding project-native finite-window form and exact negative-inertia bound for " ++
+        "multiplicity-aware Montgomery--Taylor HD(1) simple-zero theorems, proves in Lean that " ++
+        "HD(1) > 2/3, and derives the corresponding project-native simple finite-window form and " ++
+        "exact negative-inertia bound for " ++
         "the literal signed eta block. RiemannGaussian has exact analytic, eta, " ++
         "heat, matrix, and contour infrastructure, but no unconditional eta certificate " ++
         "currently improves that external zeta-zero proportion. Conditional threshold " ++
@@ -295,10 +296,14 @@ run_cmd do
         ("source", .str "anthropics/zeta-23-lean"),
         ("commit", .str "2bafb8c88f177284a2123b5fefa2ff84e2365eb6"),
         ("theorem", .str
-          "RiemannGaussian.externalZeta23_montgomeryTaylor_distinctCritical"),
+          "RiemannGaussian.externalZeta23_montgomeryTaylor_simpleCritical"),
         ("constant", .str "Zeta23.ThmD.HD 1"),
         ("comparisonTheorem", .str
           "RiemannGaussian.externalZeta23_HD_one_gt_two_thirds"),
+        ("projectSimpleFiniteWindowTheorem", .str
+          "RiemannGaussian.externalZeta23_montgomeryTaylor_simple_projectFiniteWindows"),
+        ("distinctCriticalTheorem", .str
+          "RiemannGaussian.externalZeta23_montgomeryTaylor_distinctCritical"),
         ("distinctDenominatorTheorem", .str
           "RiemannGaussian.externalZeta23_montgomeryTaylor_distinctDenominator"),
         ("projectFiniteWindowTheorem", .str

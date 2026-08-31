@@ -1326,6 +1326,12 @@ This recovery propagates through all sixteen interactions, the complete
 upper reserve, universal scale removal, and both certificate interfaces. It
 still supplies no bound on the probes. The live task is a finite-window
 conditioning bound and eta-arithmetic estimate for this scale-free carrier.
+Lean now also rechecks the complete pinned multiplicity-aware Zeta23 chain.
+The exact external `HD(1)` theorem is instantiated for the literal simple
+critical-line count over the analytic-multiplicity denominator and bridged to
+the project-native simple dyadic window. This is the correct external baseline,
+not original progress beyond it; no RiemannGaussian theorem improves that
+proportion.
 
 ## Soundness invariant
 
