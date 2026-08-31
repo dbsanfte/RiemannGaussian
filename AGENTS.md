@@ -1196,12 +1196,20 @@ channel, with an exact inverse, correlation law, and norm law. The literal
 critical-line packed cutoff feature is exactly the realification of the
 completed original eta channel. Consequently the phase-normalized packed
 same-layer coherence is bounded by the full complex coherence and inherits
-the eventual simultaneous `4/M²+ε` estimate. The next obligation is to absorb
-the normalization into the actual certificate carrier, retain the differently
-decaying upper off-line/cross-real-layer colour, and aggregate the pairwise
-estimate into a reserve lower bound strong enough for the first displayed
-inequality and eventually the endpoint. No such aggregate quantitative lower
-bound is currently proved.
+the eventual simultaneous `4/M²+ε` estimate. Lean now removes the same-layer
+restriction from the convergence interface: under one common tilt `σ`, every
+literal block converges to a geometric mode of exact radius
+`q^(σ-Re(rho))`, and correlations, norms, absolute coherence, and packed real
+coherence converge without erasing that radius. At `σ=1/2`, critical modes
+have radius one, while an upper off-line representative and its reflected
+partner retain one shared unit phase and strictly reciprocal radii. The actual
+upper off-line frame atom is exactly half the injective realification of the
+sum of those two completed channels, and its coordinates reconstruct that sum.
+The next obligation is to bound these reflection-summed reciprocal-radius
+correlations, absorb the common tilt into the actual certificate comparison,
+and aggregate the pairwise estimate into a reserve lower bound strong enough
+for the first displayed inequality and eventually the endpoint. No such
+aggregate quantitative lower bound is currently proved.
 
 ## Soundness invariant
 

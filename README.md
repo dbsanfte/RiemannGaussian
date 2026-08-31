@@ -76,32 +76,39 @@ correlations, norms, and squared coherences converge to the phase model. Every
 distinct pair in a finite layer therefore obeys an eventual uniform
 `4/M² + ε` gap-weighted coherence ceiling. The first packed-channel lift is
 now checked: the two hyperbolic coordinates form an injective realification
-of the complex eta channel, the literal
-critical-line packed feature is exactly that realification, and normalized
+of the complex eta channel, the literal critical-line packed feature is
+exactly that realification, and normalized
 packed same-layer coherence inherits the complex `4/M² + ε` estimate. The
-remaining frontier is to absorb the normalizations into the actual certificate
-carrier, add the upper off-line/cross-real-layer colour without erasing its
-different decay, and sum the resulting pair estimates strongly enough to
+cross-layer carrier is now exposed as well: an actual upper off-line atom is
+half the same realification applied to the sum of the completed channels at a
+zero and its reflected partner, and its two coordinates reconstruct that
+complex sum exactly. Under one common critical tilt, critical modes have
+radius one while each off-line reflection pair keeps one shared phase and two
+strictly reciprocal radii. The remaining frontier is to bound correlations of
+these reflection-summed reciprocal-radius channels, absorb the common tilt
+into the certificate carrier, and aggregate the estimates strongly enough to
 cross the certificate threshold. No improved zeta-zero proportion will be
 claimed until that quantitative premise is itself checked in Lean.
 
 ## Latest Update
 
-Lean now proves that the certificate's two real hyperbolic coordinates are an
-injective encoding of one complex eta vector, with an explicit reconstruction
-formula. Their squared norm is exactly four times the complex squared norm,
-and their correlation is exactly four times the real part of the complex
-correlation. On the critical line, the actual literal packed cutoff feature is
-proved equal to this realification of the completed original eta channel.
+Lean now generalizes the literal eta-prefix transport from one unit-radius
+layer to one common real-coordinate tilt across arbitrary layers. A zero with
+coordinate `Re ρ` converges to a shifted geometric mode of exact radius
+`q^(σ-Re ρ)`, and the full complex correlation, both norms, absolute
+coherence, and packed real coherence all converge to their corresponding
+arbitrary-radius finite-mode quantities.
 
-This exact interface transports the earlier phase estimate one step into the
-packed carrier: normalized packed coherence is at most full complex coherence,
-so one odd prime and one positive phase gap give the simultaneous eventual
-bound `packedCoherenceSq · gap² < 4/M² + ε` on every finite
-same-real-part layer, including each critical-zero window. The theorem still
-uses explicit phase normalization and does not yet compare critical atoms
-with the differently decaying upper off-line-real atoms. The project still
-needs
+At the critical tilt `σ=1/2`, Lean proves the exact colour law needed by the
+reflection-even certificate. Critical modes have radius one. An off-line zero
+and its reflected partner have the same unit phase, radii strictly on opposite
+sides of one, and radius product exactly one. The actual critical frame atom
+is the realification of one completed eta channel; the actual upper off-line
+atom is half the realification of the two reflected channels' sum, and that
+complex sum is explicitly recoverable from the retained coordinates.
+
+No aggregate bound for those reflection-summed reciprocal-radius correlations
+is proved yet. The project still needs
 `(31N-36) · potential < 36 · reserve` to beat `13/18`, and the stronger
 `(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither
 quantitative comparison is proved yet, so the zero proportion has not

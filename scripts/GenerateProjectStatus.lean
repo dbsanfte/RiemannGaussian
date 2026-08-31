@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Packed eta realification inherits the phase bound"
-    lineOne := "packed eta channel"
-    lineTwo := "phase bound + epsilon"
+    label := "Packed cross-layer eta transport retains radial colour"
+    lineOne := "cross-layer eta"
+    lineTwo := "reciprocal radii"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.exists_prime_uniform_eventually_spectralCriticalZetaZeroWindowPhaseNormalizedPackedPrefixCoherenceSq
+      ``RiemannGaussian.spectralCriticalUpperZetaZeroWindow_criticalShiftedPackedCoherence_colourLaw
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "extend the packed bound across off-line colours and aggregate it; no improved proportion yet.</text>\n" ++
+      "bound reflection-summed cross-layer coherence and aggregate it; no improved proportion yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -810,15 +810,18 @@ run_cmd do
         "converge to that model, giving a uniform eventual 4/M^2+epsilon bound on finite " ++
         "same-real-part zero layers. The two hyperbolic coordinates are now proved to be an " ++
         "injective realification of the completed complex eta channel, and normalized packed " ++
-        "same-layer coherence inherits the same bound. Extending it across off-line colours and " ++
-        "aggregating it into the reserve remains open.")),
+        "same-layer coherence inherits the same bound. A common tilt now transports arbitrary " ++
+        "real layers to modes of exact radius q^(sigma-Re(rho)). At the critical tilt, reflected " ++
+        "off-line modes keep one phase and reciprocal radii. The actual upper frame atom is half " ++
+        "the injective realification of their completed-channel sum. Bounding those sums and " ++
+        "aggregating them into the reserve remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Absorb the checked eventual O(M^-2) normalized packed-prefix coherence estimate into " ++
-        "the actual reflection-even certificate carrier, retain cross-layer off-line real decay, and " ++
+        "Bound the checked reflection-summed reciprocal-radius cross-layer channels, absorb the " ++
+        "common critical tilt into the actual reflection-even certificate comparison, and " ++
         "strengthen strict positivity of every distinct separated eta-pair reserve into the " ++
         "quantitative inequality " ++
         "(31*N-36)*potential<36*reserve on an eventually separated geometric window. " ++
@@ -963,9 +966,14 @@ run_cmd do
         "finite same-real-part layer therefore has the uniform eventual 4/M^2+epsilon bound. The " ++
         "two hyperbolic coordinates are an injective realification with exact reconstruction, " ++
         "correlation, and norm laws; the literal critical packed feature is exactly this " ++
-        "realification. Normalized packed same-layer coherence inherits the complex bound. The " ++
-        "remaining step is to absorb the normalization and add the cross-layer off-line-real " ++
-        "colour without losing its distinct decay. " ++
+        "realification. Normalized packed same-layer coherence inherits the complex bound. One " ++
+        "common tilt now transports arbitrary layers to shifted modes with exact radius " ++
+        "q^(sigma-Re(rho)); correlations, norms, and both complex and packed coherences converge " ++
+        "with that colour retained. At the critical tilt, every reflected off-line pair has a " ++
+        "shared phase and reciprocal radii on opposite sides of one. The actual upper frame atom " ++
+        "is half the realification of the reflection-summed completed channel and reconstructs " ++
+        "that complex sum exactly. The remaining step is to bound these sums and absorb the " ++
+        "common tilt into the aggregate reserve comparison. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
