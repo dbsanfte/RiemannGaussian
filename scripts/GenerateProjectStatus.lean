@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "The signed eta reserve has an exact polar--hyperbolic balance"
-    lineOne := "eta reserve"
-    lineTwo := "balanced exactly"
+    label := "The balanced eta certificate has one universal cutoff scale"
+    lineOne := "eta cutoff scale"
+    lineTwo := "q^(-2n) removed"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaGeometricUpperWindowSignedMetricReserve_eq_scaled_balanced
+      ``RiemannGaussian.pairedEtaGeometricUpperWindowSignedMetricReserve_eq_universalScale_mul_normalizedBalanced
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "balance both eta colours or control the signed reserve at finite start; no improvement yet.</text>\n" ++
+      "bound the exact scale-free signed eta carrier for &gt;13/18; no improvement yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -879,7 +879,12 @@ run_cmd do
         "metric contraction factors through the balanced carrier, and the literal signed window " ++
         "reserve is exactly the sum of the positive pair scales times the nonnegative balanced " ++
         "pair reserves. The existing eventual odd-prime >13/18 and 18/18 certificate interfaces " ++
-        "transport unchanged. No theorem yet proves either threshold.")),
+        "transport unchanged. Lean now computes the common scale exactly: reflection makes every " ++
+        "completion-pair norm product a fixed positive leading product times q^(-n), so every " ++
+        "ordered-pair reserve contains the same q^(-2*n) factor. Removing it from the reserve and " ++
+        "multiplying the frame potential by the matching positive scale leaves both certificate " ++
+        "targets equivalent. The reflected radial colour still tends to zero in square, exposing " ++
+        "the remaining hyperbolic imbalance. No theorem yet proves either threshold.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -900,7 +905,10 @@ run_cmd do
         "Lean now factors each moving completion pair instead into a common positive scale, " ++
         "reciprocal positive radial colours, and unit phases. The raw contractions and complete " ++
         "literal reserve are exactly reconstructed as the corresponding positive scale-weighted " ++
-        "balanced aggregate. The open step is an eta-arithmetic bound on that exact carrier. " ++
+        "balanced aggregate. Functional-equation reflection further makes every pair scale share " ++
+        "one universal q^(-2*n) cutoff factor. Lean removes it from both sides of the certificate, " ++
+        "leaving an equivalent coefficient-normalized carrier whose reciprocal radial imbalance " ++
+        "and unit phases remain explicit. The open step is an eta-arithmetic bound on that carrier. " ++
         "Lean already proves F_N=L_N+R_N, the critical " ++
         "summability of R_N, the exact cosine/crossover factorization of the higher-" ++
         "multiplicity L_N kernel, the finite on-line/off-line block decomposition, " ++
@@ -1099,7 +1107,10 @@ run_cmd do
         "limit collapses fifteen signed interactions. Exact colour balancing is now checked: " ++
         "common positive amplitudes are extracted, the remaining radial colours are reciprocal, " ++
         "the phases have unit norm, and the literal reserve is the positive scale-weighted " ++
-        "balanced aggregate. A quantitative arithmetic estimate for that carrier remains open. " ++
+        "balanced aggregate. Their common scale is now evaluated exactly: each pair contributes " ++
+        "the same q^(-2*n) factor, and removing it gives equivalent normalized >13/18 and 18/18 " ++
+        "targets. The reflected radial square still tends to zero, so a quantitative arithmetic " ++
+        "estimate for the remaining hyperbolic carrier remains open. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

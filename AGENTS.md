@@ -1295,9 +1295,17 @@ colours, and two unit phases; every raw contraction is reconstructed exactly.
 Each literal signed pair reserve is a strictly positive scale times a
 nonnegative balanced reserve, and the complete signed window is exactly the
 corresponding scale-weighted balanced aggregate. The existing eventual
-odd-prime `>13/18` and `18/18` interfaces transport unchanged. The live
-obligation is an eta-arithmetic bound on this exact balanced carrier strong
-enough to prove one of those threshold antecedents; neither is yet proved.
+odd-prime `>13/18` and `18/18` interfaces transport unchanged. Reflection now
+also exposes one universal cutoff scale: the two coefficient norms in every
+completion pair have product equal to a fixed leading product times
+`q^(-n)`, so every ordered-pair reserve contains the same `q^(-2n)` factor.
+Lean removes it from the complete reserve and multiplies the frame potential
+by the matching positive factor, proving both certificate targets equivalent
+to their coefficient-normalized forms. The reflected radial colour still has
+square equal to the exact coefficient-ratio norm and tends to zero, so the
+true reciprocal hyperbolic imbalance remains visible. The live obligation is
+an eta-arithmetic bound on this scale-free carrier strong enough to prove one
+of the threshold antecedents; neither is yet proved.
 
 ## Soundness invariant
 

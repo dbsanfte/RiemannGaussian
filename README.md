@@ -26,27 +26,27 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian is pursuing a phase-preserving eta zero-window certificate that beats Anthropic's two-thirds benchmark and ultimately reaches `18/18`. Lean now factors every completion pair into a common positive scale, reciprocal radial colours, and unit phases, and reconstructs the literal reserve as their exact scale-weighted balanced aggregate. The frontier is an eta-arithmetic bound on this carrier strong enough for `13/18`, then `18/18`; neither threshold is proved.
+RiemannGaussian is pursuing a phase-preserving eta zero-window certificate that beats Anthropic's two-thirds benchmark and ultimately reaches `18/18`. Lean has now removed the universal `q^(-2n)` cutoff decay from the exact polar--hyperbolic reserve and certificate, leaving reciprocal radial imbalance, unit phases, and signed colour interactions explicit. The frontier is an eta-arithmetic estimate on this normalized carrier strong enough for `13/18`, then `18/18`; neither threshold is proved.
 
 ## Latest Update
 
-Lean now gives every moving reflected/original completion pair an exact
-polar--hyperbolic ledger. Each coefficient is reconstructed from one common
-strictly positive geometric mean, one strictly positive radial colour, and a
-unit complex phase; the two radial colours multiply to one. No colour, sign,
-or phase is discarded.
+Lean now computes the common cutoff scale in the exact polar--hyperbolic
+ledger. The norm of each completed coefficient is its fixed leading norm
+times the inverse geometric decay at `Re ρ`. Since reflected real parts sum
+to one, every completion pair has norm product equal to a fixed positive
+leading product times `q^(-n)`.
 
-Every raw four-colour metric contraction is exactly its balanced contraction
-times the two common amplitudes. Consequently each literal signed pair
-reserve is a strictly positive scale times a nonnegative balanced reserve,
-and the complete scale-weighted balanced window is exactly the existing
-upper--upper reserve. Lean also transports the eventual odd-prime `13/18` and
-finite-window `18/18` certificate interfaces through this equality.
+It follows that every ordered-pair reserve contains the same `q^(-2n)`
+factor. Lean removes this factor from the complete signed upper-window
+reserve, multiplies the full frame potential by the matching positive scale,
+and proves that both the eventual `13/18` and finite-window `18/18`
+certificate targets are logically unchanged.
 
-This is a lossless reparameterization, not the missing arithmetic estimate:
-neither threshold antecedent has been proved. The next step is to exploit the
-reciprocal radii and unit phases inside this exact carrier strongly enough to
-bound its aggregate reserve.
+The normalization isolates rather than erases the hard structure: the square
+of the reflected radial colour is exactly the norm of the completion ratio
+and tends to zero, while its partner remains reciprocal and all phases stay
+present. No threshold is proved. The next task is a quantitative arithmetic
+estimate for this scale-free hyperbolic carrier.
 
 ## Mathematical Program
 
