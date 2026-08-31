@@ -123,33 +123,38 @@ upper--upper correlation, and hence the literal packed real correlation, is
 eventually bounded by the explicit sum of all four coefficient products
 divided by their positive raw-mode gaps. The actual weighted pair reserve
 remains exactly the positive multiplicity weight times the contraction Gram
-reserve plus its imaginary square. The remaining frontier is to compare the
-squared coefficient-gap envelope with the checked atom coercivity and
-aggregate the resulting reserve lower bounds strongly enough to cross the
-certificate threshold. No improved zeta-zero proportion will be claimed
-until that quantitative premise is itself checked in Lean.
+reserve plus its imaginary square. Lean now joins these two estimates in the
+literal certificate metric. For every ordered upper pair it proves the
+eventual lower bound
+`weight_rho * weight_zeta * (coerciveLower_rho * coerciveLower_zeta -
+correlationEnvelope^2)`, simultaneously over the complete finite upper
+window, and sums the same inequality over its ordered distinct upper--upper
+sector. The coercive atom factors are strictly positive, but the displayed
+difference is not yet proved positive. The remaining frontier is an
+eta-arithmetic estimate making this aggregate lower bound large enough,
+together with the other colour sectors, to cross the certificate threshold.
+No improved zeta-zero proportion will be claimed until that quantitative
+premise is itself checked in Lean.
 
 ## Latest Update
 
-Lean now contracts the simultaneous `2 × 2` matrix-entry estimate against the
-actual cutoff-dependent completion coefficients. A checked finite triangle
-inequality retains all four reflected/original terms. Since every raw-mode gap
-is strictly positive, the entrywise inequalities divide cleanly and produce
-an explicit moving envelope: the sum over four colours of
-`‖coefficient_zeta‖ · ‖coefficient_rho‖ · (2+ε)/gap`.
+Lean now names the transported coercive lower bound for every literal packed
+upper atom and proves it strictly positive. It then combines both atom bounds
+with the four-colour correlation envelope: simultaneously for every ordered
+upper pair in a fixed finite window, the actual multiplicity-weighted reserve
+eventually dominates
+`weight_rho * weight_zeta * (lower_rho * lower_zeta - envelope^2)`.
+Lean also sums this inequality over the full ordered distinct upper--upper
+sector, with no loss between the pointwise and aggregate statements.
 
-For every fixed finite upper zero window, this envelope eventually bounds the
-original unweighted complex reflection-sum correlation simultaneously for
-every ordered upper pair. The literal packed frame correlation is its real
-part and inherits the same bound. This is the first direct quantitative
-cross-atom bound in the actual certificate metric. The next step is to compare
-the square of this envelope against the existing coercive lower bounds for
-both atom norms, then aggregate those pairwise reserve bounds. The project
-still needs
-`(31N-36) · potential < 36 · reserve` to beat `13/18`, and the stronger
-`(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither
-quantitative comparison is proved yet, so the zero proportion has not
-improved.
+This is an unconditional quantitative reserve lower bound, but it can still
+be negative; positivity of its coercivity-minus-envelope difference has not
+been inferred. The next hard step is to exploit eta-specific phase, gap, and
+coefficient structure to control that aggregate, then place it inside the
+complete colour-resolved reserve. The project still needs
+`(31N-36) · potential < 36 · reserve` to beat `13/18`, and
+`(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither certificate
+inequality is proved, so the zero proportion has not improved.
 
 ## Mathematical Program
 

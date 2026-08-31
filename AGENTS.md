@@ -1266,11 +1266,17 @@ the actual unweighted complex upper--upper reflection-sum correlation is
 eventually bounded, simultaneously over the entire finite upper window, by
 the four-term sum of coefficient-norm products times `(2+epsilon)/gap`; every
 gap is proved strictly positive. The literal packed real correlation inherits
-the same envelope. The next obligation is to compare the squared envelope
-with the two checked atom-coercivity lower bounds and aggregate the resulting
-pair reserves strongly enough for the first displayed inequality and
-eventually the endpoint. No such aggregate quantitative lower bound is
-currently proved.
+the same envelope. Lean now names the transported atom-coercivity lower bound
+and proves it strictly positive. Combining the two atom bounds with the square
+of the correlation envelope gives an unconditional eventual lower bound for
+every actual multiplicity-weighted upper--upper reserve:
+`weight_rho*weight_zeta*(lower_rho*lower_zeta-envelope^2)`. The conclusion is
+simultaneous over the complete upper window and is summed without loss over
+all ordered distinct upper pairs. The difference need not yet be positive.
+The next obligation is an eta-specific phase, coefficient, and gap estimate
+making this aggregate large enough, then inserting it into the complete
+colour-resolved reserve strongly enough for the `13/18` inequality and
+eventually the `18/18` endpoint.
 
 ## Soundness invariant
 

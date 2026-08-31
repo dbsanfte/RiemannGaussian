@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Actual upper-pair correlations obey a four-colour coefficient-gap envelope"
-    lineOne := "upper correlation"
-    lineTwo := "coefficient envelope"
+    label := "The actual upper-pair reserve sector inherits an aggregate coercivity-minus-envelope lower bound"
+    lineOne := "upper-pair reserve"
+    lineTwo := "aggregate lower"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.eventually_spectralUpperZetaZeroWindow_geometricFrameCorrelation_upper_upper_abs_le_gapEnvelope
+      ``RiemannGaussian.eventually_pairedEtaGeometricUpperWindowWeightedReserveGapLower_le_decorrelationReserve
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "bound correlations between completed upper atoms and aggregate their reserve; no improved proportion yet.</text>\n" ++
+      "prove the aggregate eta reserve lower bound large enough for a certificate; no improved proportion yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -840,16 +840,20 @@ run_cmd do
         "entries eventually obey norm(entry)*norm(relativeMode-1)<2+epsilon simultaneously over " ++
         "the upper window. Contracting this bound against the moving completion coefficients and " ++
         "retaining all four colours now gives an explicit eventual envelope for every actual " ++
-        "unweighted complex and packed real upper-pair correlation. Comparing its square with " ++
-        "the checked atom coercivity and aggregating the pairwise reserve remain open.")),
+        "unweighted complex and packed real upper-pair correlation. Lean now combines its square " ++
+        "with both strictly positive transported atom-coercivity bounds. Every actual " ++
+        "multiplicity-weighted upper-pair reserve eventually dominates the resulting " ++
+        "coercivity-product-minus-envelope-square expression, simultaneously over the finite " ++
+        "upper window, and the inequality is summed over all ordered distinct upper pairs. The " ++
+        "explicit aggregate lower bound is not yet proved positive or certificate-sized.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Compare the checked four-colour completion-coefficient gap envelope with atom coercivity, then " ++
-        "strengthen the literal frame-metric coercivity of each upper atom into the " ++
-        "quantitative inequality " ++
+        "Prove the checked aggregate coercivity-product-minus-correlation-envelope-square lower " ++
+        "bound positive and large enough, place the upper sector inside the complete " ++
+        "colour-resolved reserve, and establish the quantitative inequality " ++
         "(31*N-36)*potential<36*reserve on an eventually separated geometric window. " ++
         "The checked exact identity mass^2=potential+reserve makes this equivalent to " ++
         "the frame-moment premise sufficient to beat 13/18, while the endpoint bound " ++
@@ -1027,9 +1031,11 @@ run_cmd do
         "over the finite upper window. Lean now contracts these bounds with the exact moving " ++
         "completion coefficients without freezing any " ++
         "coefficient: every actual unweighted complex upper-pair correlation and its packed real " ++
-        "part are eventually bounded by the explicit four-term coefficient-gap envelope. It " ++
-        "remains to compare the squared envelope with the checked atom coercivity and absorb the " ++
-        "resulting local reserves into the aggregate certificate comparison. " ++
+        "part are eventually bounded by the explicit four-term coefficient-gap envelope. Lean " ++
+        "now compares its square with both positive atom-coercivity lower bounds, obtaining an " ++
+        "eventual lower bound for every actual weighted upper-pair reserve and its ordered-distinct " ++
+        "aggregate. It remains to prove that explicit aggregate positive and sufficiently large, " ++
+        "then absorb it into the complete colour-resolved certificate comparison. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
