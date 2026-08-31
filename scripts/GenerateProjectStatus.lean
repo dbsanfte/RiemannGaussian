@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Actual upper eta atoms retain both completion coefficients"
+    label := "Actual upper eta atoms eventually inherit uniform coercivity"
     lineOne := "upper eta atom"
-    lineTwo := "2 completed columns"
+    lineTwo := "uniform coercivity"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.spectralUpperZetaZeroWindow_geometricCriticalTiltedFrame_eq_completedPrefixCombination
+      ``RiemannGaussian.eventually_spectralUpperZetaZeroWindow_geometricCriticalTiltedFrame_coercive
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove uniform finite-prefix coercivity, then bound cross-sum correlations; no improved proportion yet.</text>\n" ++
+      "bound correlations between completed upper atoms and aggregate their reserve; no improved proportion yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -820,9 +820,12 @@ run_cmd do
         "positive. The actual upper frame atom is half the injective " ++
         "realification of its completed-channel sum. After lossless recovery and common critical " ++
         "tilt, that actual atom is exactly the two normalized literal eta-prefix columns with " ++
-        "their distinct nonzero cutoff-dependent completion coefficients. Proving a uniform " ++
-        "finite-prefix coercive perturbation, bounding correlations between completed reflection " ++
-        "sums, and aggregating the pairwise reserve remain open.")),
+        "their distinct nonzero cutoff-dependent completion coefficients. The literal two-column " ++
+        "Gram coefficient converges to the positive reciprocal-mode constant, so every sufficiently " ++
+        "late pair has one half-limit coercive bound uniform in both coefficients. Substituting the " ++
+        "actual moving coefficients proves an explicit positive lower bound for the recovered upper " ++
+        "frame channel. Bounding correlations between distinct completed reflection sums and " ++
+        "aggregating the pairwise reserve remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
@@ -988,9 +991,12 @@ run_cmd do
         "constant times the coefficient norm. The actual frame is now joined exactly to that " ++
         "interface: after coordinate recovery and critical tilt, each upper atom is the two " ++
         "normalized literal prefix columns with explicit nonzero cutoff-dependent completion " ++
-        "coefficients. It remains to prove a uniform perturbative version of the mode coercivity " ++
-        "for those finite prefixes, bound correlations between completed reflection sums, and absorb this local " ++
-        "coercivity into the aggregate reserve comparison. " ++
+        "coefficients. Lean now proves the finite two-column Gram coefficient converges to the " ++
+        "positive mode constant and obtains an eventual half-limit lower bound simultaneously for " ++
+        "all coefficient pairs. It therefore applies to the actual moving completion coefficients, " ++
+        "giving a quantitative lower bound and strict noncollapse of every late recovered upper " ++
+        "frame channel. It remains to bound correlations between distinct completed reflection " ++
+        "sums and absorb this local coercivity into the aggregate reserve comparison. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

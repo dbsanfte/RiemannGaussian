@@ -93,29 +93,30 @@ proved strictly positive for each literal off-line pair. Lean now transports
 the actual cutoff-dependent completion coefficients exactly: after lossless
 recovery and common critical tilt, every upper frame atom is the corresponding
 two normalized literal eta-prefix columns with both explicit nonzero
-coefficients retained. The remaining frontier is a uniform coercive
-perturbation bound for those finite columns, followed by cross-sum correlation
-control and aggregation strong enough to cross the certificate threshold. No
-improved zeta-zero proportion will be claimed until that quantitative premise
-is itself checked in Lean.
+coefficients retained. Lean now proves the literal two-column Gram coefficient
+converges to the positive reciprocal-mode constant and obtains one eventual
+half-limit bound uniform in both coefficients. It therefore applies directly
+to the moving completion coefficients and gives a positive norm lower bound
+for every sufficiently late recovered upper frame channel. The remaining
+frontier is cross-atom completed-sum correlation control and aggregation strong
+enough to cross the certificate threshold. No improved zeta-zero proportion
+will be claimed until that quantitative premise is itself checked in Lean.
 
 ## Latest Update
 
-Lean now transports the actual completion coefficients into the geometric
-reflection-pair interface without discarding their phase or scale. For every
-geometric block, one completed channel after a common coordinate tilt is
-exactly its normalized literal eta-prefix column times an explicit nonzero
-coefficient containing the xi completion weight, the checked sharp prefix
-limit, and the inverse cutoff row scale. The completed reflection sum is
-therefore exactly the two normalized columns with two distinct
-cutoff-dependent coefficients.
+Lean now closes the local finite-prefix perturbation step. It proves an exact
+signed quadratic ledger and determinant-over-trace lower bound for any two
+finite complex vectors. For an upper zero/reflection pair, the literal
+normalized-prefix Gram coefficient converges to the strictly positive
+reciprocal-mode coefficient. Hence every sufficiently late pair obeys one
+half-limit coercive bound simultaneously for all complex coefficient pairs.
 
-At the critical tilt, Lean proves that this combination is precisely the
-complex channel recovered from the two retained coordinates of the actual
-upper reflection-even certificate atom. The remaining local step is to
-transfer the positive determinant-over-trace mode bound uniformly to these
-finite prefix columns; cross-atom correlations must then be controlled and
-aggregated. The project still needs
+Uniformity is essential: Lean can substitute the actual cutoff-dependent
+completion coefficients, rather than freezing them before taking the limit.
+The complex channel recovered from every sufficiently late actual upper frame
+atom now has an explicit positive lower bound and strictly positive squared
+norm. The remaining work is to control correlations between distinct
+completed upper atoms and aggregate their reserves. The project still needs
 `(31N-36) · potential < 36 · reserve` to beat `13/18`, and the stronger
 `(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither
 quantitative comparison is proved yet, so the zero proportion has not

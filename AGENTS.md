@@ -1220,11 +1220,17 @@ coordinate tilt, each completed channel is its normalized literal prefix times
 one explicit nonzero coefficient containing the completion weight, sharp
 prefix limit, and inverse cutoff row scale. After lossless coordinate recovery,
 the actual upper frame atom is exactly the sum of the two normalized reflected
-prefix columns with both coefficients retained. The next obligation is a
-uniform perturbative coercivity estimate for these finite columns, followed by
-completed-reflection-sum correlation bounds and aggregation into a reserve
-lower bound strong enough for the first displayed inequality and eventually
-the endpoint. No such aggregate quantitative lower bound is currently proved.
+prefix columns with both coefficients retained. Lean now closes the uniform
+perturbative step: a generic signed two-vector Gram ledger gives the
+determinant-over-trace bound, the literal finite-prefix coefficient converges
+to the positive reciprocal-mode constant, and one eventual half-limit estimate
+holds simultaneously for all complex coefficient pairs. Substitution of the
+actual moving completion coefficients yields an explicit positive lower bound
+and strict noncollapse for every sufficiently late recovered upper frame
+channel. The next obligation is a quantitative correlation bound between
+distinct completed reflection sums and its aggregation into a reserve lower
+bound strong enough for the first displayed inequality and eventually the
+endpoint. No such aggregate quantitative lower bound is currently proved.
 
 ## Soundness invariant
 
