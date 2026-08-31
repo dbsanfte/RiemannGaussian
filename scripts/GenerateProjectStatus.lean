@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Actual upper eta atoms eventually inherit uniform coercivity"
+    label := "Literal upper eta atoms inherit coercivity in the frame metric"
     lineOne := "upper eta atom"
-    lineTwo := "uniform coercivity"
+    lineTwo := "frame-norm coercivity"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.eventually_spectralUpperZetaZeroWindow_geometricCriticalTiltedFrame_coercive
+      ``RiemannGaussian.eventually_spectralUpperZetaZeroWindow_geometricFrameAtomNormSq_coercive
   }
 ]
 
@@ -824,16 +824,18 @@ run_cmd do
         "Gram coefficient converges to the positive reciprocal-mode constant, so every sufficiently " ++
         "late pair has one half-limit coercive bound uniform in both coefficients. Substituting the " ++
         "actual moving coefficients proves an explicit positive lower bound for the recovered upper " ++
-        "frame channel. Bounding correlations between distinct completed reflection sums and " ++
+        "frame channel. The common critical tilt is now absorbed through its explicit positive " ++
+        "coordinate energy, while half-realification is proved exactly norm-preserving after " ++
+        "recovery. Thus the literal packed upper atom itself inherits a positive lower bound in the " ++
+        "certificate metric. Bounding correlations between distinct completed reflection sums and " ++
         "aggregating the pairwise reserve remain open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Bound correlations between checked completed reflection-summed reciprocal-radius channels, absorb the " ++
-        "common critical tilt into the actual reflection-even certificate comparison, and " ++
-        "strengthen strict positivity of every distinct separated eta-pair reserve into the " ++
+        "Bound correlations between checked completed reflection-summed reciprocal-radius channels and " ++
+        "strengthen the literal frame-metric coercivity of each upper atom into the " ++
         "quantitative inequality " ++
         "(31*N-36)*potential<36*reserve on an eventually separated geometric window. " ++
         "The checked exact identity mass^2=potential+reserve makes this equivalent to " ++
@@ -995,7 +997,11 @@ run_cmd do
         "positive mode constant and obtains an eventual half-limit lower bound simultaneously for " ++
         "all coefficient pairs. It therefore applies to the actual moving completion coefficients, " ++
         "giving a quantitative lower bound and strict noncollapse of every late recovered upper " ++
-        "frame channel. It remains to bound correlations between distinct completed reflection " ++
+        "frame channel. Lean now also pays the nonunitary common-tilt cost explicitly: pointwise " ++
+        "weighting is bounded by its finite coordinate energy, and the packed upper-atom norm is " ++
+        "exactly the unweighted recovered-channel norm. Dividing by that positive energy transfers " ++
+        "coercivity and strict noncollapse to the literal certificate frame metric. It remains to " ++
+        "bound correlations between distinct completed reflection " ++
         "sums and absorb this local coercivity into the aggregate reserve comparison. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++

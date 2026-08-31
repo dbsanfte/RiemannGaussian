@@ -1227,10 +1227,18 @@ to the positive reciprocal-mode constant, and one eventual half-limit estimate
 holds simultaneously for all complex coefficient pairs. Substitution of the
 actual moving completion coefficients yields an explicit positive lower bound
 and strict noncollapse for every sufficiently late recovered upper frame
-channel. The next obligation is a quantitative correlation bound between
-distinct completed reflection sums and its aggregation into a reserve lower
-bound strong enough for the first displayed inequality and eventually the
-endpoint. No such aggregate quantitative lower bound is currently proved.
+channel. Lean now also discharges the conditioning gap between that recovered
+channel and the certificate metric. Pointwise multiplication by the common
+critical coordinate tilt is bounded by its explicit finite weight energy,
+that energy is strictly positive, and the half-scaled two-coordinate
+realification of an actual upper atom is proved to have exactly the norm square
+of its unweighted recovered complex reflection sum. Dividing by the tilt
+energy therefore transfers the coercive lower bound and strict noncollapse to
+the literal packed upper frame atom itself. The next obligation is a
+quantitative correlation bound between distinct completed reflection sums and
+its aggregation into a reserve lower bound strong enough for the first
+displayed inequality and eventually the endpoint. No such aggregate
+quantitative lower bound is currently proved.
 
 ## Soundness invariant
 

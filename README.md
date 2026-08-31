@@ -97,26 +97,31 @@ coefficients retained. Lean now proves the literal two-column Gram coefficient
 converges to the positive reciprocal-mode constant and obtains one eventual
 half-limit bound uniform in both coefficients. It therefore applies directly
 to the moving completion coefficients and gives a positive norm lower bound
-for every sufficiently late recovered upper frame channel. The remaining
-frontier is cross-atom completed-sum correlation control and aggregation strong
-enough to cross the certificate threshold. No improved zeta-zero proportion
-will be claimed until that quantitative premise is itself checked in Lean.
+for every sufficiently late recovered upper frame channel. Lean now pays the
+nonunitary common-tilt cost explicitly through its finite coordinate energy
+and proves that half-realification preserves the norm after recovery. The
+lower bound therefore reaches the literal packed frame metric. The remaining
+frontier is cross-atom completed-sum correlation control and aggregation
+strong enough to cross the certificate threshold. No improved zeta-zero
+proportion will be claimed until that quantitative premise is itself checked
+in Lean.
 
 ## Latest Update
 
-Lean now closes the local finite-prefix perturbation step. It proves an exact
-signed quadratic ledger and determinant-over-trace lower bound for any two
-finite complex vectors. For an upper zero/reflection pair, the literal
-normalized-prefix Gram coefficient converges to the strictly positive
-reciprocal-mode coefficient. Hence every sufficiently late pair obeys one
-half-limit coercive bound simultaneously for all complex coefficient pairs.
+Lean now absorbs the common critical coordinate tilt into the original
+certificate metric. For arbitrary finite vectors, pointwise weighting is
+bounded by the finite energy of the coordinate weights. The critical tilt
+energy is proved strictly positive. Independently, Lean proves that the packed
+norm square of an actual upper atom is exactly the norm square of its recovered
+complex reflection sum: the half-scaling and two-coordinate realification
+cancel exactly.
 
-Uniformity is essential: Lean can substitute the actual cutoff-dependent
-completion coefficients, rather than freezing them before taking the limit.
-The complex channel recovered from every sufficiently late actual upper frame
-atom now has an explicit positive lower bound and strictly positive squared
-norm. The remaining work is to control correlations between distinct
-completed upper atoms and aggregate their reserves. The project still needs
+Dividing the moving-coefficient tilted lower bound by the explicit positive
+tilt energy gives a coercive lower bound for every sufficiently late literal
+upper frame atom itself. Its squared norm is therefore strictly positive in
+the metric used by the certificate. The remaining work is to control
+correlations between distinct completed upper atoms and aggregate their
+reserves. The project still needs
 `(31N-36) · potential < 36 · reserve` to beat `13/18`, and the stronger
 `(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither
 quantitative comparison is proved yet, so the zero proportion has not
