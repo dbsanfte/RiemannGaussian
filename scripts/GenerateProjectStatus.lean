@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Packed cross-layer eta transport retains radial colour"
-    lineOne := "cross-layer eta"
-    lineTwo := "reciprocal radii"
+    label := "Off-line eta reflection pairs have positive Gram reserve"
+    lineOne := "off-line eta pair"
+    lineTwo := "positive Gram reserve"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.spectralCriticalUpperZetaZeroWindow_criticalShiftedPackedCoherence_colourLaw
+      ``RiemannGaussian.spectralUpperZetaZeroWindow_criticalShiftedPair_gramReserve_pos
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "bound reflection-summed cross-layer coherence and aggregate it; no improved proportion yet.</text>\n" ++
+      "bound completed reflection-sum correlations and aggregate their reserve; no improved proportion yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -812,15 +812,18 @@ run_cmd do
         "injective realification of the completed complex eta channel, and normalized packed " ++
         "same-layer coherence inherits the same bound. A common tilt now transports arbitrary " ++
         "real layers to modes of exact radius q^(sigma-Re(rho)). At the critical tilt, reflected " ++
-        "off-line modes keep one phase and reciprocal radii. The actual upper frame atom is half " ++
-        "the injective realification of their completed-channel sum. Bounding those sums and " ++
-        "aggregating them into the reserve remains open.")),
+        "off-line modes keep one phase and reciprocal radii. Their exact cross-correlation is the " ++
+        "window length, their signed two-coefficient norm ledger retains the full interference " ++
+        "term, and every literal off-line critical-shifted pair has strictly positive Gram " ++
+        "reserve beyond length one. The actual upper frame atom is half the injective " ++
+        "realification of its completed-channel sum. Bounding correlations between those completed " ++
+        "reflection sums and aggregating the pairwise reserve remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Bound the checked reflection-summed reciprocal-radius cross-layer channels, absorb the " ++
+        "Bound correlations between checked completed reflection-summed reciprocal-radius channels, absorb the " ++
         "common critical tilt into the actual reflection-even certificate comparison, and " ++
         "strengthen strict positivity of every distinct separated eta-pair reserve into the " ++
         "quantitative inequality " ++
@@ -972,8 +975,12 @@ run_cmd do
         "with that colour retained. At the critical tilt, every reflected off-line pair has a " ++
         "shared phase and reciprocal radii on opposite sides of one. The actual upper frame atom " ++
         "is half the realification of the reflection-summed completed channel and reconstructs " ++
-        "that complex sum exactly. The remaining step is to bound these sums and absorb the " ++
-        "common tilt into the aggregate reserve comparison. " ++
+        "that complex sum exactly. The two underlying critical-shifted modes are now identified " ++
+        "with an exact reciprocal-radius pair: their cross-correlation is the window length, their " ++
+        "arbitrary signed combination has an exact interference ledger and cannot cancel, and the " ++
+        "literal off-line pair has strictly positive Gram reserve beyond length one. The remaining " ++
+        "step is to bound correlations between the completed reflection sums and absorb this local " ++
+        "coercivity into the aggregate reserve comparison. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

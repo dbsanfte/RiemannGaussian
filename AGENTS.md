@@ -1205,11 +1205,16 @@ have radius one, while an upper off-line representative and its reflected
 partner retain one shared unit phase and strictly reciprocal radii. The actual
 upper off-line frame atom is exactly half the injective realification of the
 sum of those two completed channels, and its coordinates reconstruct that sum.
-The next obligation is to bound these reflection-summed reciprocal-radius
-correlations, absorb the common tilt into the actual certificate comparison,
-and aggregate the pairwise estimate into a reserve lower bound strong enough
-for the first displayed inequality and eventually the endpoint. No such
-aggregate quantitative lower bound is currently proved.
+Lean now identifies the two underlying literal critical-shifted modes with the
+abstract reciprocal-radius pair. Their cross-correlation is exactly the window
+length; their full two-coefficient norm square retains the signed interference
+term; no nontrivial coefficient pair cancels; and every off-line pair has
+strictly positive Gram reserve at each length greater than one. The next
+obligation is to bound correlations between completed reflection sums, absorb
+this local coercivity and the common tilt into the actual certificate
+comparison, and aggregate the pairwise estimate into a reserve lower bound
+strong enough for the first displayed inequality and eventually the endpoint.
+No such aggregate quantitative lower bound is currently proved.
 
 ## Soundness invariant
 
