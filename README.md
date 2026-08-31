@@ -30,12 +30,12 @@ RiemannGaussian is pursuing an unconditional, phase-preserving eta zero-window b
 
 ## Latest Update
 
-Lean now proves, without decimal evaluation, that the imported exact
-Montgomery--Taylor constant satisfies `HD(1) > 2/3`. The checked proof derives
-a fifth-order tangent bound by derivative monotonicity, packages an explicit
-positive gain over two-thirds in the literal zeta count theorem, and transports
-the benchmark to a distinct-zero denominator. This normalizes the attributed
-external result; it is not a new project proportion.
+The exact Zeta23 benchmark now reaches the eta development's own finite zero
+windows. Lean proves that coercing those project-native windows gives exactly
+Zeta23's `zerosIn`, identifies their cards with `Ndist` and `N0star`, and
+identifies each positive dyadic window as a literal filter of the symmetric
+spectral window used by the eta carrier. The exact `HD(1)` and strict-gain
+theorems are transported through this seam; no new proportion is claimed.
 
 ## Mathematical Program
 

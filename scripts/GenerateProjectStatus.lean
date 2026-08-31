@@ -82,7 +82,7 @@ private def milestones : Array Milestone := #[
     lineTwo := "HD(1) > 2/3"
     role := "external"
     theoremName :=
-      ``RiemannGaussian.externalZeta23_strictlyAboveTwoThirds_distinctCritical
+      ``RiemannGaussian.externalZeta23_strictlyAboveTwoThirds_projectFiniteWindows
   },
   {
     label := "A cutoff-independent two-start inverse recovers the eta reserve"
@@ -262,7 +262,7 @@ run_cmd do
       throwError "milestone has nonstandard axioms: {milestone.theoremName}: {unexpectedAxioms}"
 
   let statusJson := Json.mkObj [
-    ("schemaVersion", toJson 6),
+    ("schemaVersion", toJson 7),
     ("generator", .str "scripts/GenerateProjectStatus.lean"),
     ("leanVersion", .str Lean.versionString),
     ("compiledProjectModules", toJson moduleCount),
@@ -277,7 +277,7 @@ run_cmd do
     ("statusNote", .str
       ("The build rechecks the pinned external Zeta23 unconditional two-thirds and exact " ++
         "Montgomery--Taylor HD(1) theorems, proves in Lean that HD(1) > 2/3, and derives " ++
-        "the corresponding distinct-denominator form. RiemannGaussian has exact analytic, eta, " ++
+        "the corresponding project-native finite-window form. RiemannGaussian has exact analytic, eta, " ++
         "heat, matrix, and contour infrastructure, but no unconditional eta certificate " ++
         "currently improves that external zeta-zero proportion. Conditional threshold " ++
         "interfaces and generic finite models are not counted as achieved proportions.")),
@@ -300,6 +300,8 @@ run_cmd do
           "RiemannGaussian.externalZeta23_HD_one_gt_two_thirds"),
         ("distinctDenominatorTheorem", .str
           "RiemannGaussian.externalZeta23_montgomeryTaylor_distinctDenominator"),
+        ("projectFiniteWindowTheorem", .str
+          "RiemannGaussian.externalZeta23_montgomeryTaylor_projectFiniteWindows"),
         ("status", .str "unconditional; rechecked")
       ]
     ]),
