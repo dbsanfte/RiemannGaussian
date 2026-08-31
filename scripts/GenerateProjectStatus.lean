@@ -77,12 +77,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_zero_one_eq_integral_mixedChannelZeroSumAt
   },
   {
-    label := "External unconditional Montgomery--Taylor zeta baseline"
+    label := "External Montgomery--Taylor benchmark is strictly above two-thirds"
     lineOne := "external baseline"
-    lineTwo := "exact HD(1)"
+    lineTwo := "HD(1) > 2/3"
     role := "external"
     theoremName :=
-      ``RiemannGaussian.externalZeta23_montgomeryTaylor_distinctCritical
+      ``RiemannGaussian.externalZeta23_strictlyAboveTwoThirds_distinctCritical
   },
   {
     label := "A cutoff-independent two-start inverse recovers the eta reserve"
@@ -262,7 +262,7 @@ run_cmd do
       throwError "milestone has nonstandard axioms: {milestone.theoremName}: {unexpectedAxioms}"
 
   let statusJson := Json.mkObj [
-    ("schemaVersion", toJson 5),
+    ("schemaVersion", toJson 6),
     ("generator", .str "scripts/GenerateProjectStatus.lean"),
     ("leanVersion", .str Lean.versionString),
     ("compiledProjectModules", toJson moduleCount),
@@ -276,7 +276,8 @@ run_cmd do
     ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
       ("The build rechecks the pinned external Zeta23 unconditional two-thirds and exact " ++
-        "Montgomery--Taylor HD(1) theorems. RiemannGaussian has exact analytic, eta, " ++
+        "Montgomery--Taylor HD(1) theorems, proves in Lean that HD(1) > 2/3, and derives " ++
+        "the corresponding distinct-denominator form. RiemannGaussian has exact analytic, eta, " ++
         "heat, matrix, and contour infrastructure, but no unconditional eta certificate " ++
         "currently improves that external zeta-zero proportion. Conditional threshold " ++
         "interfaces and generic finite models are not counted as achieved proportions.")),
@@ -295,6 +296,10 @@ run_cmd do
         ("theorem", .str
           "RiemannGaussian.externalZeta23_montgomeryTaylor_distinctCritical"),
         ("constant", .str "Zeta23.ThmD.HD 1"),
+        ("comparisonTheorem", .str
+          "RiemannGaussian.externalZeta23_HD_one_gt_two_thirds"),
+        ("distinctDenominatorTheorem", .str
+          "RiemannGaussian.externalZeta23_montgomeryTaylor_distinctDenominator"),
         ("status", .str "unconditional; rechecked")
       ]
     ]),

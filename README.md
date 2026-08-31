@@ -30,11 +30,12 @@ RiemannGaussian is pursuing an unconditional, phase-preserving eta zero-window b
 
 ## Latest Update
 
-CI now caches the complete compiled Zeta23 proof closure under a key derived
-from the Lean toolchain, both Lake manifests and configurations, and every
-vendored Lean source. This removes repeated elaboration of the unchanged
-external baseline while preserving the full warning-as-error build, whole-
-project lints, compiled-environment audit, and generated-dashboard gate.
+Lean now proves, without decimal evaluation, that the imported exact
+Montgomery--Taylor constant satisfies `HD(1) > 2/3`. The checked proof derives
+a fifth-order tangent bound by derivative monotonicity, packages an explicit
+positive gain over two-thirds in the literal zeta count theorem, and transports
+the benchmark to a distinct-zero denominator. This normalizes the attributed
+external result; it is not a new project proportion.
 
 ## Mathematical Program
 
