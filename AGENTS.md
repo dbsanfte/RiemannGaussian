@@ -1173,10 +1173,17 @@ Complex Euclidean Cauchy--Schwarz proves every reserve summand nonnegative,
 and Lean proves the exact conservation law `mass²=potential+reserve`. The
 `13/18` premise is therefore exactly
 `(31*N-36)*potential < 36*reserve`; the finite-window `18/18` premise is
-exactly `(N-1)*potential ≤ reserve`. The next obligation is an eta-arithmetic
-angular-separation estimate strong enough for the first reserve inequality,
-then a strengthening toward the endpoint without collapsing the richer
-upstream channels. No such lower bound is currently proved.
+exactly `(N-1)*potential ≤ reserve`. Lean now builds the corresponding
+square-root-weighted frame synthesis, identifies its Gram with the coordinate
+carrier, and uses the checked carrier rank to prove all literal frame atoms
+linearly independent at every separated block. Hence every distinct pair has
+strictly positive Gram-determinant reserve. The total reserve is positive
+exactly when the frame has at least two atoms, and one odd prime base makes
+this characterization hold at every sufficiently late block. The next
+obligation is to strengthen this qualitative positivity into an
+eta-arithmetic lower bound strong enough for the first displayed inequality,
+then toward the endpoint without collapsing the richer upstream channels. No
+such quantitative lower bound is currently proved.
 
 ## Soundness invariant
 

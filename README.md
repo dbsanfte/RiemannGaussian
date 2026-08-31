@@ -60,27 +60,32 @@ moments are now opened further as the mass and frame potential of literal eta
 atoms, with critical and upper-off-line-real colours kept distinct. Lean now
 separates the potential into diagonal self-mass and distinct-pair correlation,
 and isolates the complementary pairwise decorrelation reserve without taking
-absolute-value envelopes. The immediate frontier is an eta-arithmetic lower
-bound for that reserve relative to the surviving correlation potential;
+absolute-value envelopes. At every sufficiently late separated block Lean now
+proves that each distinct atom pair has strictly positive decorrelation, hence
+the total reserve is positive exactly when at least two frame atoms are
+present. The immediate frontier is a quantitative eta-arithmetic lower bound
+for that reserve relative to the surviving correlation potential;
 successively stronger colour- and phase-preserving bounds are the route toward
 `18/18`. No improved zeta-zero proportion will be claimed until one of those
-arithmetic premises is itself checked in Lean.
+quantitative premises is itself checked in Lean.
 
 ## Latest Update
 
-Lean now opens the reflection-even eta frame potential pair by pair. It proves
-the exact identity `mass² = potential + reserve`, where `reserve` is the sum
-over ordered distinct coloured atoms of
-`w_a w_b (‖v_a‖²‖v_b‖² - correlation(a,b)²)`. Complex
-Cauchy--Schwarz proves every individual reserve term nonnegative, using the
-already-checked fact that the relevant eta correlations are real.
+Lean now realizes the reflection-even eta atoms as columns of an exact
+square-root-weighted synthesis matrix. The already-checked rank of its Gram
+carrier proves those literal critical and upper-off-line-real vectors linearly
+independent at every separated geometric block. Consequently every distinct
+pair satisfies strict Cauchy--Schwarz, and every corresponding term in the
+colour-resolved decorrelation reserve is strictly positive.
 
-The certificate thresholds are now exact angular-separation targets:
-`(31N-36) · potential < 36 · reserve` is equivalent to the premise that
-suffices for `>13/18`, and `(N-1) · potential ≤ reserve` is equivalent to
-the finite-window `18/18` premise. One odd prime base makes both conditional
-interfaces valid at every sufficiently late block. Neither reserve lower
-bound has been proved arithmetically, so the zero proportion has not improved.
+Thus the literal reserve is positive exactly when the frame contains at least
+two atoms, and one odd prime base makes this exact characterization valid at
+all sufficiently late blocks. This is an unconditional eta-arithmetic result,
+but it is qualitative: the project still needs
+`(31N-36) · potential < 36 · reserve` to beat `13/18`, and the stronger
+`(N-1) · potential ≤ reserve` for finite-window `18/18`. Neither
+quantitative comparison is proved yet, so the zero proportion has not
+improved.
 
 ## Mathematical Program
 

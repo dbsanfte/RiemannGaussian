@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "Eta certificate gap is a pairwise decorrelation reserve"
+    label := "Separated eta atoms have strict pairwise decorrelation"
     lineOne := "eta pair reserve"
-    lineTwo := "exact angular gap"
-    role := "bridge"
+    lineTwo := "strict iff >=2 atoms"
+    role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.exists_prime_eventually_pairedEtaGeometricReflectionEvenDecorrelationReserveCertificateInterface
+      ``RiemannGaussian.exists_prime_eventually_pairedEtaGeometricReflectionEvenFrameDecorrelationReserve_pos_iff
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "prove eta pairwise decorrelation; no improved proportion yet.</text>\n" ++
+      "quantify eta pairwise decorrelation; no improved proportion yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -804,13 +804,15 @@ run_cmd do
         "finite scale and converges to zero mass. Lean proves that the certificate exceeds 13/18 " ++
         "exactly when this trace crosses below 5/36 at some nonnegative scale; the sharp model " ++
         "stays strictly above 5/36 at every finite scale. " ++
-        "The equivalent literal eta pairwise-decorrelation lower bound remains open.")),
+        "Distinct separated eta atoms now have strict pairwise decorrelation, but the " ++
+        "quantitative lower bound required by the certificate remains open.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Derive the literal eta pairwise-decorrelation inequality " ++
+        "Strengthen the checked strict positivity of every distinct separated eta-pair " ++
+        "reserve into the quantitative inequality " ++
         "(31*N-36)*potential<36*reserve on an eventually separated geometric window. " ++
         "The checked exact identity mass^2=potential+reserve makes this equivalent to " ++
         "the frame-moment premise sufficient to beat 13/18, while the endpoint bound " ++
@@ -940,8 +942,11 @@ run_cmd do
         "retained. Lean now splits diagonal self-mass from distinct-pair correlation and proves " ++
         "mass^2=potential+reserve, where every colour-resolved reserve summand is nonnegative by " ++
         "complex Cauchy--Schwarz. The 13/18 and endpoint premises are exactly equivalent to the " ++
-        "corresponding lower bounds on this reserve. These are checked implications and identities, " ++
-        "not proved eta estimates. The remaining step is to prove literal pairwise decorrelation. " ++
+        "corresponding lower bounds on this reserve. A square-root-weighted synthesis now identifies " ++
+        "the frame Gram with the coordinate carrier; full checked rank makes the literal atoms " ++
+        "linearly independent at separated blocks. Thus every distinct pair has strict positive " ++
+        "Gram-determinant reserve, and the total reserve is positive exactly for at least two atoms. " ++
+        "This is qualitative: the remaining step is to quantify that pairwise decorrelation. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++
@@ -950,7 +955,7 @@ run_cmd do
         "does not instantiate the eta window. The independent ordinary heat trace now separates " ++
         "strict improvement exactly: it crosses below 5/36 at some nonnegative scale if and only if " ++
         "the certificate is greater than 13/18, while the sharp model never crosses at finite scale. " ++
-        "What is not yet proved is either equivalent literal decorrelation premise (and hence the " ++
+        "What is not yet proved is either quantitative literal decorrelation premise (and hence the " ++
         "coordinate carrier's arithmetic crossing), another " ++
         "independent observable nonzero on " ++
         "the sharp root channels, the additional normalized " ++
