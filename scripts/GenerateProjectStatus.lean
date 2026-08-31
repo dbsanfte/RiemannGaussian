@@ -85,12 +85,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.DegreeFourMomentModel.thirteen_eighteen_lt_certificate_iff_exists_heat
   },
   {
-    label := "The exact eta reserve retains sixteen signed colour interactions"
-    lineOne := "signed eta reserve"
-    lineTwo := "16 interactions"
+    label := "Natural late-start normalization selects one eta colour"
+    lineOne := "eta colour flow"
+    lineTwo := "one-colour limit"
     role := "reduction"
     theoremName :=
-      ``RiemannGaussian.exists_prime_eventually_pairedEtaGeometricReflectionEvenLongBlockSignedMetricReserveCertificateInterface
+      ``RiemannGaussian.eventually_forall_pairedEtaGeometricCriticalUpperOriginalDominantColourRemainder_norm_lt
   }
 ]
 
@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Inventory, not proximity meter. Open: " ++
-      "bound the exact 16-interaction signed reserve for 13/18; no improved proportion yet.</text>\n" ++
+      "balance both eta colours or control the signed reserve at finite start; no improvement yet.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -867,13 +867,21 @@ run_cmd do
         "multiplicity weighting and upper-window aggregation, this carrier equals the literal " ++
         "upper--upper decorrelation reserve, is nonnegative, and lies below the complete reserve. " ++
         "One odd prime eventually makes thresholds on this exact signed aggregate imply >13/18 " ++
-        "and 18/18. Neither threshold estimate is yet proved.")),
+        "and 18/18. Lean now determines the natural late-start information flow inside this " ++
+        "carrier. For every upper representative, the reflected/original completion ratio is a " ++
+        "fixed factor times a base of exact norm q^(2*Re(rho)-1)<1. After original-colour " ++
+        "normalization, every four-colour contraction is exactly its original--original metric " ++
+        "entry plus a complex remainder, and that remainder tends uniformly to zero over the " ++
+        "finite upper window at fixed block length. Thus the unbalanced late-start limit selects " ++
+        "one colour; a balanced carrier or finite-start estimate is still required. Neither " ++
+        "certificate threshold is proved.")),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
       ("label", .str "Arithmetic-to-zero-location rigidity"),
       ("status", .str "open"),
       ("target", .str (
-        "Bound the checked exact signed pre-triangle upper-window reserve aggregate large enough to establish " ++
+        "Balance the two completion colours exactly, or bound the checked signed pre-triangle " ++
+        "upper-window reserve at finite block start, strongly enough to establish " ++
         "(31*N-36)*potential<36*floor on an eventually separated geometric window. " ++
         "The checked exact identity mass^2=potential+reserve makes this equivalent to " ++
         "the frame-moment premise sufficient to beat 13/18, while the endpoint bound " ++
@@ -881,7 +889,9 @@ run_cmd do
         "coercivity-minus-triangle-envelope floor cannot do this merely by increasing block " ++
         "length: Lean proves its nonnegative truncation eventually vanishes uniformly in the " ++
         "block start. The replacement carrier is now constructed and proved equal to the actual " ++
-        "upper--upper reserve while retaining all sixteen ordered cross-colour interactions. " ++
+        "upper--upper reserve while retaining all sixteen ordered cross-colour interactions. Its " ++
+        "natural original-coefficient normalization nevertheless converges uniformly to one colour " ++
+        "at fixed block length, so the late-start limit alone cannot exploit those interactions. " ++
         "Lean already proves F_N=L_N+R_N, the critical " ++
         "summability of R_N, the exact cosine/crossover factorization of the higher-" ++
         "multiplicity L_N kernel, the finite on-line/off-line block decomposition, " ++
@@ -1072,8 +1082,13 @@ run_cmd do
         "The required pre-triangle carrier is now explicit: every full metric contraction is split " ++
         "into four signed colour terms, its square retains all sixteen ordered interactions, and " ++
         "the multiplicity-weighted window sum is exactly the actual upper--upper reserve. It feeds " ++
-        "both long-block certificate implications directly. Its arithmetic threshold estimate " ++
-        "remains open. " ++
+        "both long-block certificate implications directly. Lean now proves that the moving " ++
+        "reflected/original completion ratio decays geometrically with exact base norm " ++
+        "q^(2*Re(rho)-1)<1. Dividing by the dominant original coefficients factors every metric " ++
+        "contraction into its original--original entry plus a remainder that tends uniformly to " ++
+        "zero over the finite window at fixed block length. Therefore an unbalanced late-start " ++
+        "limit collapses fifteen signed interactions. Exact colour balancing or a finite-start " ++
+        "arithmetic estimate remains open. " ++
         "An abstract degree-four " ++
         "nonnegative moment model now yields " ++
         "a universal 13/18 certificate, and a checked three-atom model proves that bound sharp for " ++

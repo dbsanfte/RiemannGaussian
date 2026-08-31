@@ -26,25 +26,29 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian is pursuing a phase-preserving eta zero-window certificate that beats Anthropic's two-thirds benchmark and ultimately reaches `18/18`. Lean now routes all four reflected/original colours and their 16 signed cross-interactions into an exact upper-window reserve that feeds both certificate thresholds. The frontier is to bound its coherent correlation part—or lower-bound the reserve itself—strongly enough for `13/18`, then `18/18`.
+RiemannGaussian is pursuing a phase-preserving eta zero-window certificate that beats Anthropic's two-thirds benchmark and ultimately reaches `18/18`. Lean's exact 16-interaction reserve now reveals a second information bottleneck: at fixed block length, natural completion normalization selects one colour uniformly over the finite window. The frontier is an exact balanced-colour carrier—or a finite-start estimate—that retains enough cancellation for `13/18`, then `18/18`.
 
 ## Latest Update
 
-Lean now exposes each exact upper-pair metric correlation as the signed sum of
-four reflected/original colour contributions. Its real square is proved equal
-to the full ordered sum of all 16 cross-colour products, so phase cancellation
-survives rather than being replaced by four separate absolute-value bounds.
+Lean now determines the relative scale of the two completion colours in every
+upper-window atom. The reflected-partner/original coefficient ratio is proved
+exactly equal to a fixed leading ratio times a geometric power whose norm is
+`q^(2 Re ρ - 1) < 1`; consequently that ratio tends to zero.
 
-After analytic-multiplicity weighting and summation over every ordered
-distinct upper pair, this signed carrier is proved exactly equal to the
-literal upper--upper decorrelation reserve. It is therefore nonnegative and
-bounded by the complete reflection-even reserve with no asymptotic envelope.
-For every eligible long block, Lean selects an odd prime base that eventually
-makes either signed-aggregate threshold imply respectively a proportion above
-`13/18` or the finite-window `18/18` conclusion. The thresholds themselves
-remain open; the active arithmetic problem now acts on the information-rich
-16-interaction carrier rather than the pointwise floor whose long-block
-collapse was just proved.
+Dividing both coefficient vectors by their nonzero original entries gives an
+exact factorization of every four-colour metric contraction. The normalized
+coefficient vector converges to the original-colour basis vector, and the
+normalized contraction converges to the single original--original
+metric-mode entry. More strongly, Lean splits the literal contraction into
+that dominant entry plus a complex remainder and proves the remainder tends
+to zero uniformly over every pair in the complete finite upper window at
+fixed block length.
+
+This does not bound the reserve or improve the known zero proportion. It
+shows rigorously that simply taking the late block-start limit would discard
+15 of the 16 signed interactions just preserved. The next carrier must either
+balance both completion colours exactly or obtain its cancellation estimate
+at finite block start.
 
 ## Mathematical Program
 
