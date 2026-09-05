@@ -18,11 +18,20 @@ the continuous displacement identity (4), the exact coefficient
 every real ordinate. The actual continuous kernel is integrable; no model
 measure replaces the eta support.
 
+The second slice, `Hybrid/EtaSupportGapPhaseGram.lean` and
+`Hybrid/EtaSupportGapPhaseCoercivity.lean`, supplies the exact complex
+mixed-entry and integral-of-squares formulas, genuine integrability, and
+positive semidefiniteness for measurable phases. Exact integer Fourier
+orthogonality proves `B ≥ (exp(-1)/√π) I`; the actual eta matrix then satisfies
+(5b) with **`C = 32`**, for both real and complex coefficients. The explicit
+threshold is `log(1/h) ≥ 64m/c*`. The labels are chosen probes, with no
+assumption about zeta-zero spacings.
+
 Still outstanding: the independent cutoff and fixed-ordinate estimates,
-the literal eta spectral identity (6), mixed finite Gram coercivity (5b),
-kernel normalization (7), the moving-tilt/cubic scaling target (8), and the
+the literal eta spectral identity (6), kernel normalization (7),
+the moving-tilt/cubic scaling target (8), and the
 review of a quantitative application to the completed signed leading flux.
-No RH or improved-proportion milestone follows from the completed slice.
+No RH or improved-proportion milestone follows from these auxiliary results.
 
 **Recommendation:** make Gaussian heat on the literal eta support quantitative,
 retaining its phase channels and its omitted intervals. The core deliverable is

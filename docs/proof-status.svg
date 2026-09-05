@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 505 modules · 13025 declarations · 11041 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 507 modules · 13094 declarations · 11102 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · milestones standard-only</text>
   <text class="section" x="20" y="64">CHECKED RESULTS, IDENTITIES, AND ATTRIBUTED BASELINE</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -83,12 +83,12 @@
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
-    <text x="765" y="133">arithmetic/block bound</text>
-    <text x="765" y="153">NEXT &gt; 68%</text>
+    <text x="765" y="133">signed eta flux</text>
+    <text x="765" y="153">summability OPEN</text>
   </g>
   <g class="goal">
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Current fact: Lean proves literal simple-zero constants HD(1) &lt; C₀ &lt; C₁; 13/18 remains open.</text>
+  <text class="frontier" x="20" y="220">Actual eta heat: uniform error 32h and dimension-dependent phase coercivity; RH remains open.</text>
 </svg>

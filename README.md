@@ -27,20 +27,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian is making Gaussian heat on the literal eta support quantitative, retaining phase and support/gap information. The critical heat law now has an explicit error uniform in the ordinate. The next targets are the literal eta spectral identity and a dimension-dependent lower bound for finite phase matrices; the signed cancellation required for RH remains open.
+RiemannGaussian is making Gaussian heat on the literal eta support quantitative, retaining phase and support/gap information. The critical heat law and a dimension-dependent lower bound for finite phase matrices are checked. The next targets are the literal eta spectral identity, cutoff control, and joint cubic-phase scaling; the signed cancellation required for RH remains open.
 
 ## Latest Update
 
-The actual alternating eta intervals now have an exact phase-resolved
-boundary decomposition and an explicit critical displacement error.
-[pairedEtaSupportGapGaussianLeakage_uniform_error_le](RiemannGaussian/EtaSupportGapGaussian.lean#L349)
-proves `|Λ(h,γ) − h log(1/h) Ψ(hγ)| ≤ 32h` for every real ordinate `γ`
-and `0 < h ≤ 1`. The continuous kernel is identified with the arithmetic
-displacement integral, and `Ψ(0) = 2/√π` is evaluated exactly. The spectral eta
-bridge and finite matrix coercivity remain the next obligations in the
-[overnight theorem plan](docs/rh-overnight-theorem-plan.md). These auxiliary
-theorems do not prove RH or improve a zero-count certificate. No `13/18`
-certificate exists.
+The finite phase matrix now has an exact complex integral-of-squares formula
+on the actual eta support. For `m` distinct integer probes, Lean proves
+`K(h) ≥ h(c* log(1/h) − 32m) I`, with `c* = exp(-1)/√π`, including
+[all complex coefficient vectors](RiemannGaussian/Hybrid/EtaSupportGapPhaseCoercivity.lean#L348).
+The proof combines exact Fourier orthogonality with the uniform critical
+heat error; it assumes no spacing law for zeta zeros. The spectral eta
+identity, independent cutoff estimates, and cubic-phase scaling remain
+outstanding in the [overnight theorem plan](docs/rh-overnight-theorem-plan.md).
+The completed signed eta cancellation needed for RH remains open.
+No `13/18` certificate exists.
 
 ## Notable Formalisations
 
@@ -56,6 +56,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Finite Hardy-space geometry** | Orthogonality in genuine boundary `L²`, including repeated roots, and a basis-independent determinant formula for the residual Gram operator. | [finiteModelBoundaryLp_inner_residualInner_negative_eq_zero](RiemannGaussian/FiniteHardyOrthogonality.lean#L260), [finiteHardyCrossAngleComplementGramOperator_det_eq_basisResidual_ratio](RiemannGaussian/FiniteHardyMetricDeterminant.lean#L294) |
 | **Eta as a positive-measure Laplace transform** | On `Re s > 0`, paired eta divided by `s` is exactly the Laplace transform of Lebesgue measure restricted to the alternating logarithmic intervals `(log(2n+1), log(2n+2)]`. | [integral_exp_neg_mul_pairedEtaLogMeasure_eq_pairedEtaCore_div](RiemannGaussian/RiemannXiSuzukiPositiveCriticalStripEtaInfiniteLaplaceMeasure.lean#L219) |
 | **Critical eta support/gap heat law** | A phase-resolved boundary decomposition on the actual eta intervals gives the sharp critical term `(2/√π) h log(1/h)` with error at most `32h`; the stronger phase-profile error is uniform in the ordinate. | [pairedEtaPhaseMismatch_boundary_error_le](RiemannGaussian/EtaLogSupportShift.lean), [pairedEtaSupportGapGaussianLeakage_uniform_error_le](RiemannGaussian/EtaSupportGapGaussian.lean#L349) |
+| **Continuous eta phase matrix coercivity** | Mixed phase entries retain their complex Gram integral. Distinct integer probes give the full matrix lower bound `K(h) ≥ h(c* log(1/h) − 32m) I`, with an explicit dimension cost and small-width threshold. | [pairedEtaSupportGapPhaseGram_complex_energy_eq_integral](RiemannGaussian/Hybrid/EtaSupportGapPhaseGram.lean#L304), [pairedEtaSupportGapScaledPhaseGram_integer_coercive](RiemannGaussian/Hybrid/EtaSupportGapPhaseCoercivity.lean#L276) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 
@@ -115,6 +116,13 @@ positivity or vanishing direction remains unproved.
   with one error constant `32`, valid for every ordinate, including ordinates
   growing like `1/h`. This is new in the repository; wider mathematical
   priority has not been established.
+- **Made actual eta phase-matrix positivity quantitative.**
+  [pairedEtaSupportGapScaledPhaseGram_integer_coercive](RiemannGaussian/Hybrid/EtaSupportGapPhaseCoercivity.lean#L276)
+  proves a lower bound for the entire continuous phase Gram, with the cost
+  of `m` probes explicitly retained as `32m`. The complex integral and
+  coefficient bounds preserve mixed phase interference. This auxiliary
+  coercivity does not establish the sign of the completed reflected eta
+  kernel that remains in the RH criterion.
 
 The auxiliary contributions above have project-developed Lean proofs.
 Priority or novelty relative to the wider mathematical literature has not

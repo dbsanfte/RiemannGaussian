@@ -203,15 +203,15 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     nodes ++
     "  <g class=\"open\">\n" ++
     "    <rect x=\"690\" y=\"108\" width=\"150\" height=\"62\" rx=\"10\"/>\n" ++
-    "    <text x=\"765\" y=\"133\">arithmetic/block bound</text>\n" ++
-    "    <text x=\"765\" y=\"153\">NEXT &gt; 68%</text>\n" ++
+    "    <text x=\"765\" y=\"133\">signed eta flux</text>\n" ++
+    "    <text x=\"765\" y=\"153\">summability OPEN</text>\n" ++
     "  </g>\n" ++
     "  <g class=\"goal\">\n" ++
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Current fact: Lean proves literal " ++
-      "simple-zero constants HD(1) &lt; C₀ &lt; C₁; 13/18 remains open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h and " ++
+      "dimension-dependent phase coercivity; RH remains open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -275,12 +275,12 @@ run_cmd do
     ("rhImplied", .bool false),
     ("presentation", .str "verified theorem inventory; milestones are not a proof chain"),
     ("statusNote", .str
-      ("The build rechecks the pinned external Zeta23 unconditional two-thirds and exact " ++
-        "multiplicity-aware Montgomery--Taylor HD(1) simple-zero theorems, proves in Lean that " ++
-        "HD(1) > 2/3. RiemannGaussian now proves the sharp normalized three-column coercivity " ++
-        "bound defect >= (3/4) off-diagonal-energy, carries its uncapped energy through the " ++
-        "finite endpoint sampler and Zeta23 seam, and constructs ordered unconditional literal " ++
-        "simple-zero constants HD(1) < C0 < C1. No 13/18 certificate or RH proof is claimed.")),
+      ("The external two-thirds and Montgomery--Taylor baselines and the checked literal " ++
+        "simple-zero constants HD(1) < C0 < C1 remain in the library. The active theorem " ++
+        "program proves a uniform critical heat error of 32h on the actual eta support " ++
+        "and a full phase-matrix lower bound with explicit dimension cost 32m. These " ++
+        "auxiliary estimates do not supply the signed completed eta cancellation required " ++
+        "for RH. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[
       Json.mkObj [
         ("source", .str "anthropics/zeta-23-lean"),
@@ -325,12 +325,13 @@ run_cmd do
     ]),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
-      ("label", .str "Strict literal certification above 68%"),
+      ("label", .str "Signed completed eta cancellation"),
       ("status", .str "open"),
       ("target", .str
-        ("Add phase-, colour-, or scale-sensitive arithmetic beyond the sharp uncapped " ++
-          "three-column coercivity bound, first proving a literal proportion strictly " ++
-          "above 17/25, then 13/18, and ultimately 18/18."))
+        ("Prove first absolute-moment summability of the actual completed eta leading " ++
+          "flux at every nontrivial zero, preserving completion weights, multiplicity, " ++
+          "and the simple-zero head term. The new positive support/gap heat estimates " ++
+          "do not discharge this RH-equivalent signed arithmetic obligation."))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
