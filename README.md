@@ -27,18 +27,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian is seeking stronger literal simple-critical-zero certificates through inverse sampling and phase-sensitive fourth moments. The checked frontier remains `HD(1) < C₀ < C₁`. The next arithmetic target is an unconditional bound above `17/25`, followed by `13/18` and `18/18`; the required prime-correlation estimates remain open.
+RiemannGaussian is making Gaussian heat on the literal eta support quantitative, retaining phase and support/gap information. The critical heat law now has an explicit error uniform in the ordinate. The next targets are the literal eta spectral identity and a dimension-dependent lower bound for finite phase matrices; the signed cancellation required for RH remains open.
 
 ## Latest Update
 
-The fourth-moment research now includes a correctly scaled finite spectral
-bound in `zeta23_simple_lower_of_scaledFourthMoment`, the exact continuum-core
-value `-1/48` in `fourthMomentContinuumCore_eq_neg_one_div_fortyEight`, and a
-summable frequency majorant in `fourthMomentArcMass_summable`. The new modules
-also check phase-colour identities, a separable tensor Montgomery--Vaughan
-bound, and obstructions to two proposed shortcuts. These are auxiliary
-results: the prime-moment asymptotics needed for a stronger literal
-certificate remain open. No `13/18` certificate exists.
+The actual alternating eta intervals now have an exact phase-resolved
+boundary decomposition and an explicit critical displacement error.
+[pairedEtaSupportGapGaussianLeakage_uniform_error_le](RiemannGaussian/EtaSupportGapGaussian.lean#L349)
+proves `|Λ(h,γ) − h log(1/h) Ψ(hγ)| ≤ 32h` for every real ordinate `γ`
+and `0 < h ≤ 1`. The continuous kernel is identified with the arithmetic
+displacement integral, and `Ψ(0) = 2/√π` is evaluated exactly. The spectral eta
+bridge and finite matrix coercivity remain the next obligations in the
+[overnight theorem plan](docs/rh-overnight-theorem-plan.md). These auxiliary
+theorems do not prove RH or improve a zero-count certificate. No `13/18`
+certificate exists.
 
 ## Notable Formalisations
 
@@ -53,6 +55,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Xi growth and divisor summability** | Unconditional `exp(O(R log R))` xi growth and convergence of the multiplicity-weighted inverse-square zero series. | [riemannXi_logLinearGrowth](RiemannGaussian/GaussianXiLogLinearGrowth.lean#L315), [summable_distinct_zetaZeroInverseSquareNorm](RiemannGaussian/GaussianXiInverseSquareSummability.lean#L294) |
 | **Finite Hardy-space geometry** | Orthogonality in genuine boundary `L²`, including repeated roots, and a basis-independent determinant formula for the residual Gram operator. | [finiteModelBoundaryLp_inner_residualInner_negative_eq_zero](RiemannGaussian/FiniteHardyOrthogonality.lean#L260), [finiteHardyCrossAngleComplementGramOperator_det_eq_basisResidual_ratio](RiemannGaussian/FiniteHardyMetricDeterminant.lean#L294) |
 | **Eta as a positive-measure Laplace transform** | On `Re s > 0`, paired eta divided by `s` is exactly the Laplace transform of Lebesgue measure restricted to the alternating logarithmic intervals `(log(2n+1), log(2n+2)]`. | [integral_exp_neg_mul_pairedEtaLogMeasure_eq_pairedEtaCore_div](RiemannGaussian/RiemannXiSuzukiPositiveCriticalStripEtaInfiniteLaplaceMeasure.lean#L219) |
+| **Critical eta support/gap heat law** | A phase-resolved boundary decomposition on the actual eta intervals gives the sharp critical term `(2/√π) h log(1/h)` with error at most `32h`; the stronger phase-profile error is uniform in the ordinate. | [pairedEtaPhaseMismatch_boundary_error_le](RiemannGaussian/EtaLogSupportShift.lean), [pairedEtaSupportGapGaussianLeakage_uniform_error_le](RiemannGaussian/EtaSupportGapGaussian.lean#L349) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 
@@ -104,6 +107,14 @@ positivity or vanishing direction remains unproved.
   [generated inventory](docs/proof-status.json) covers more than 500 compiled
   project modules, with zero project-defined axioms, zero placeholder-dependent
   declarations, and no nonstandard theorem axioms.
+- **Proved a uniform critical heat estimate on the literal eta support.**
+  [pairedEtaMismatch_critical_error_le](RiemannGaussian/EtaLogSupportCritical.lean)
+  bounds the displacement error by `5r` for `0 < r ≤ 1/8`.
+  [pairedEtaSupportGapGaussianLeakage_uniform_error_le](RiemannGaussian/EtaSupportGapGaussian.lean#L349)
+  carries this arithmetic information into the continuous Gaussian kernel
+  with one error constant `32`, valid for every ordinate, including ordinates
+  growing like `1/h`. This is new in the repository; wider mathematical
+  priority has not been established.
 
 The auxiliary contributions above have project-developed Lean proofs.
 Priority or novelty relative to the wider mathematical literature has not

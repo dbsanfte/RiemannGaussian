@@ -484,3 +484,7 @@ import RiemannGaussian.FiniteERootContinuity
 import RiemannGaussian.FiniteERootMoments
 import RiemannGaussian.FiniteERootCountContinuity
 import RiemannGaussian.FiniteERootCountEndpoint
+import RiemannGaussian.EtaLogSupportShift
+import RiemannGaussian.EtaLogSupportCritical
+import RiemannGaussian.EtaSupportGapGaussianProfile
+import RiemannGaussian.EtaSupportGapGaussian
