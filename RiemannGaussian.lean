@@ -490,3 +490,5 @@ import RiemannGaussian.EtaSupportGapGaussianProfile
 import RiemannGaussian.EtaSupportGapGaussian
 import RiemannGaussian.Hybrid.EtaSupportGapPhaseGram
 import RiemannGaussian.Hybrid.EtaSupportGapPhaseCoercivity
+import RiemannGaussian.EtaSupportGapGaussianCross
+import RiemannGaussian.EtaSupportGapGaussianSpectral

@@ -27,9 +27,16 @@ orthogonality proves `B ≥ (exp(-1)/√π) I`; the actual eta matrix then satis
 threshold is `log(1/h) ≥ 64m/c*`. The labels are chosen probes, with no
 assumption about zeta-zero spacings.
 
+The third slice, `EtaSupportGapGaussianCross.lean` and
+`EtaSupportGapGaussianSpectral.lean`, proves the actual support/gap
+decomposition, the full complex mixed Fourier--Laplace identity, and (6)
+with the exact coefficient **`1/π`**. Both Fubini exchanges have an integrable
+joint majorant. The gap factor is the existing literal partition, identified
+with `1/s - P(s)` on `Re s > 0`. The `32h` uniform critical estimate is also
+proved directly for the resulting spectral integral.
+
 Still outstanding: the independent cutoff and fixed-ordinate estimates,
-the literal eta spectral identity (6), kernel normalization (7),
-the moving-tilt/cubic scaling target (8), and the
+kernel normalization (7), the moving-tilt/cubic scaling target (8), and the
 review of a quantitative application to the completed signed leading flux.
 No RH or improved-proportion milestone follows from these auxiliary results.
 

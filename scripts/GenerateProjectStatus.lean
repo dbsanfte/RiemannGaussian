@@ -210,8 +210,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h and " ++
-      "dimension-dependent phase coercivity; RH remains open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
+      "phase coercivity, and the literal eta spectral identity.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -278,7 +278,9 @@ run_cmd do
       ("The external two-thirds and Montgomery--Taylor baselines and the checked literal " ++
         "simple-zero constants HD(1) < C0 < C1 remain in the library. The active theorem " ++
         "program proves a uniform critical heat error of 32h on the actual eta support " ++
-        "and a full phase-matrix lower bound with explicit dimension cost 32m. These " ++
+        "and a full phase-matrix lower bound with explicit dimension cost 32m. The " ++
+        "continuous support/gap transfer is exactly the literal eta/gap spectral " ++
+        "correlation, with both Fubini exchanges and normalization checked. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[
