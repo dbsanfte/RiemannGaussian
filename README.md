@@ -1,6 +1,7 @@
 # RiemannGaussian
 
 [![Lean Action CI](https://github.com/dbsanfte/RiemannGaussian/actions/workflows/lean_action_ci.yml/badge.svg)](https://github.com/dbsanfte/RiemannGaussian/actions/workflows/lean_action_ci.yml)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
 RiemannGaussian is an open research project building toward a complete,
 kernel-checked Lean proof of the Riemann hypothesis. The repository contains
@@ -230,3 +231,14 @@ mathematics across analysis, operator theory, spectral theory, number theory,
 and mathematical physics. Numerical or symbolic experiments may suggest a
 lemma, but only a kernel-checked theorem grounded in the existing chain counts
 as progress. See [AGENTS.md](AGENTS.md) for the full methodology.
+
+## License
+
+Copyright 2026 David Sanftenberg.
+
+RiemannGaussian is licensed under the [Apache License, Version 2.0](LICENSE)
+(`Apache-2.0`). Third-party source retains its original copyright and
+attribution notices; see the notices for
+[Zeta23](vendor/zeta23/NOTICE),
+[HermitianRankTrace](RiemannGaussian/HermitianRankTrace/NOTICE), and
+[MontgomeryVaughan](RiemannGaussian/MontgomeryVaughan/NOTICE).
