@@ -479,12 +479,20 @@ run_cmd do
         "The complete difference is retained as a complex divisor sum and has " ++
         "norm at most B_rho*D^2/M. The unmodified family retains the original " ++
         "complex pair kernel. " ++
-        "pairedEtaCompletedMoebiusOriginalMeanSquare_le_growing proves its " ++
-        "mean square at most C_rho*D*(1+log D)*A^(-2*Re(rho)) in the same cubic " ++
-        "range, with C_rho=2*K_rho+2*B_rho^2. " ++
-        "pairedEtaSignedCompletedMoebiusOriginalMeanAbsolute_le_growing " ++
+        "Exact finite Fourier inversion now proves the literal quotient family's " ++
+        "spectrum from its divisor periods. Integer annihilator divisibility " ++
+        "gives frequency separation on Q=2*(D!)^2*(4*D^2+L), and finite " ++
+        "sampling duality bounds window energy by S*(4*D^2+L) times its " ++
+        "complete signed gcd energy, with S=4+16*pi^2. The auxiliary grid " ++
+        "cancels. pairedEtaCompletedMoebiusFamilyMeanSquare_le_quadratic " ++
+        "gives K2_rho*D*(1+log D) for D>=1 and D^2<=A,L, where " ++
+        "K2_rho=5*S*norm(X)^2+8*H^2. " ++
+        "pairedEtaCompletedMoebiusOriginalMeanSquare_le_quadratic proves " ++
+        "mean square at most C2_rho*D*(1+log D)*A^(-2*Re(rho)) in this " ++
+        "enlarged quadratic range, with C2_rho=2*K2_rho+2*B_rho^2. " ++
+        "pairedEtaSignedCompletedMoebiusOriginalMeanAbsolute_le_quadratic " ++
         "bounds the actual signed first absolute average by D*(1+log D)*" ++
-        "(C_partner*A^(-2*(1-Re(rho)))+C_rho*A^(-2*Re(rho))), retaining both " ++
+        "(C2_partner*A^(-2*(1-Re(rho)))+C2_rho*A^(-2*Re(rho))), retaining both " ++
         "original completion channels without a simplicity hypothesis. " ++
         "The full physical divisor range and transfer to the inverse weights, " ++
         "moving centers, and adjacent higher moments remain uncontrolled by " ++

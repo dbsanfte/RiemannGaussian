@@ -2218,6 +2218,101 @@ odd-weighted first absolute partial-sum bound remain open. This slice does
 not exclude any additional zero, tighten the previous zero-free margin,
 or prove RH or a `13/18` certificate.
 
+## Checked Fourier sampling and the quadratic divisor range
+
+The original forward-family estimate now holds when
+`D² ≤ min(A,L)`, enlarging the previous cubic range with a new explicit
+constant. The terminal theorems are
+[pairedEtaCompletedMoebiusOriginalMeanSquare_le_quadratic](../RiemannGaussian/EtaMoebiusOriginalQuadraticFamily.lean)
+and
+[pairedEtaSignedCompletedMoebiusOriginalMeanAbsolute_le_quadratic](../RiemannGaussian/EtaMoebiusOriginalQuadraticFamily.lean).
+They retain the original completed terms, their physical decay, both
+reflected channels, and every actual zero without a simplicity hypothesis.
+
+Write `S = 4 + 16 pi²`, `X = pairedEtaXiCompletionFactor(rho)`,
+`H = pairedEtaCompletedMoebiusPhaseErrorConstant(rho)`, and
+`B = pairedEtaCompletedMoebiusPhysicalErrorConstant(rho)`. Define
+
+\[
+ K^{(2)}_\rho=5S|X|^2+8H^2,\qquad
+ C^{(2)}_\rho=2K^{(2)}_\rho+2B^2.
+\]
+
+These are the literal Lean definitions
+`pairedEtaCompletedMoebiusQuadraticFamilyConstant` and
+`pairedEtaCompletedMoebiusOriginalQuadraticConstant`. For `D ≥ 1` and
+`D² ≤ A,L`, the endpoint family has mean square at most
+`K^(2)_rho D(1+log D)`, and the unmodified completed terms satisfy
+
+\[
+ \frac1L\sum_{n<L}\left|\sum_{d=1}^D T_\rho(A+n,d)\right|^2
+ \le C^{(2)}_\rho D(1+\log D)A^{-2\operatorname{Re}\rho}.
+\]
+
+The corresponding first absolute average of the original signed pair is
+at most
+
+\[
+ D(1+\log D)\left(
+ C^{(2)}_{\rho^*} A^{-2(1-\operatorname{Re}\rho)}+
+ C^{(2)}_\rho A^{-2\operatorname{Re}\rho}\right).
+\]
+
+The proof uses the following checked interfaces, with exact complex
+identities retained before all scalar estimates:
+
+1. [sum_norm_sq_separated_sampling_le](../RiemannGaussian/FiniteSeparatedSampling.lean)
+   proves a discrete sampling inequality from the local forward-difference
+   estimate. Disjoint blocks and a doubled complete period bound samples by
+   `(4/h)` times the full energy plus `4h` times the full difference energy.
+   [sum_range_finiteCircleSynthesis_mul_conj](../RiemannGaussian/FiniteCircleEnergy.lean)
+   retains both coefficient families and every frequency coincidence;
+   orthogonality evaluates the two energies exactly for a distinct band.
+2. [sum_range_finiteCircleSynthesis_separated_le](../RiemannGaussian/FiniteCircleDualSampling.lean)
+   transfers the band estimate by an exact complex transpose identity and
+   finite Cauchy--Schwarz. With `Q=hT`, `L≤T`, and representative gaps at
+   least `h`, the physical `L`-sample energy is at most `S T` times the
+   complete coefficient energy.
+3. The auxiliary arithmetic grid is
+   `h=2(D!)²`, `T=4D²+L`, and `Q=hT`. Every literal divisor period `2d`
+   and every pair period `2de` divides `Q` for `1≤d,e≤D`.
+   [pairedEtaDivisorFourierSpectrum_separated](../RiemannGaussian/EtaDivisorFourierGrid.lean)
+   proves separation from exact divisibility: distinct frequencies with
+   divisor witnesses `d,e` satisfy `Q | 4de(l.val-k.val)`, which forces
+   `l.val-k.val ≥ h`. No frequency rounding is used.
+4. [pairedEtaCompletedMoebiusParityFamily_fourier_eq_zero](../RiemannGaussian/EtaMoebiusFourierSpectrum.lean)
+   derives the actual Fourier support from literal quotient periodicity.
+   Exact inversion reconstructs the original parity family at every
+   physical sample. Its coefficient energy equals its complete-period
+   energy; neither spectral support nor a bound on it is assumed.
+5. [pairedEtaCompletedMoebiusParityFamily_period_energy_eq](../RiemannGaussian/EtaMoebiusParityEnergy.lean)
+   evaluates that energy as the full signed sum
+   `sum_(d,e≤D) mu(d)mu(e)|X|² c(d,e)/4`.
+   The earlier gcd-sum bound gives `|X|² D(1+log D)/2`.
+   [pairedEtaCompletedMoebiusParityFamily_window_sq_le](../RiemannGaussian/EtaMoebiusParitySampling.lean)
+   consequently bounds the physical window energy by
+   `S(4D²+L)|X|² D(1+log D)/2`; the auxiliary grid size cancels.
+6. [pairedEtaCompletedMoebiusFamilyMeanSquare_le_quadratic](../RiemannGaussian/EtaMoebiusQuadraticFamily.lean)
+   uses the retained complex endpoint-family error of norm at most
+   `2H D²/M`. The resulting square error is `8H² D⁴/A²`, at most `8H²`
+   when `D²≤A`. The previous exact physical normalization then transfers
+   this result to the original terms with error `2B² D⁴/A²`.
+
+Finite Fourier sampling and large-sieve duality are classical methods;
+see P. X. Gallagher,
+[The large sieve](https://www.cambridge.org/core/journals/mathematika/article/abs/large-sieve/4DC1EC8072D840195F1EF81F5828BB0F),
+*Mathematika* 14 (1967), 14–20. The checked contribution here is the explicit
+application to the literal completed eta family with its full arithmetic
+covariance and physical normalization. No optimal constant or claim of
+mathematical priority is asserted.
+
+This removes the cubic restriction for this forward-family estimate, but
+the full physical divisor range remains outside the new quadratic range.
+The original inverse-weighted head, adjacent higher moments, and moving
+centers are still not bounded by this theorem. The existing zero-free
+strip is unchanged, and the uniform odd-weighted first absolute moment
+goal remains open. No RH proof or `13/18` certificate follows from this slice.
+
 ## Next mathematical obligations
 
 The signed prime input now excludes the explicit reciprocal-logarithm edge
@@ -2326,9 +2421,11 @@ Excluding the surviving off-critical endpoint contribution remains open. The nex
    Full transformed moments now have fixed-center bounds at every order,
    and the original repeated-zero current has an exact double inverse sum.
    Uniform control of that inverse sum at moving centers remains open.
-   The growing-family estimate above supplies a quantitative bound in the
-   cubic truncated range. Extending it to the full physical range must
-   control the explicit `D^4/L` error. The individual endpoint powers are
+   The Fourier sampling estimate above supplies a quantitative bound in the
+   quadratic truncated range, replacing the earlier `D^4/L` window error
+   by a complete-energy cost with factor `1+4D²/L`. Extending it to the
+   full physical range must control that remaining scale dependence and
+   the `D^4/A²` physical correction. The individual endpoint powers are
    now removed for the original zeroth-order forward terms with their exact
    physical decay. Transfer through the inverse weights and higher adjacent
    moments at moving centers remains open.
