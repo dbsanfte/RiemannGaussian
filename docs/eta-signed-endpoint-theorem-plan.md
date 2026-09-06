@@ -17,7 +17,7 @@ averaging or second-order asymptotic premise qualifies as implementation.
 | Part | Checked result | Remaining work |
 | --- | --- | --- |
 | 1. Actual arithmetic overlap | [Exact eta/periodic-colour identity](../RiemannGaussian/EtaAlternatingReal.lean), [real-scale cell and primitive estimates](../RiemannGaussian/EtaOverlapAveraging.lean), [Wallis integral](../RiemannGaussian/EtaOverlapWallis.lean), [quantitative infinite-tail evaluation](../RiemannGaussian/EtaOverlapTail.lean), and [exact transport back to the logarithmic eta tail](../RiemannGaussian/EtaLogTailWallis.lean). | Complete for the scalar arithmetic tail; retain it as input to the weighted law. |
-| 2. Two-endpoint finite part | [Scalar finite part and constant complex tests](../RiemannGaussian/EtaLogFinitePart.lean). | Refine the finite harmonic quadrature, control nonconstant complex tests on the actual tail, and prove the two-endpoint limit with a uniform error for bounded Lipschitz tests. |
+| 2. Two-endpoint finite part | [Scalar finite part and constant complex tests](../RiemannGaussian/EtaLogFinitePart.lean), [uniform complex harmonic quadrature](../RiemannGaussian/EtaLogBoundaryFinitePart.lean), [actual weighted-tail freezing](../RiemannGaussian/EtaLogWeightedTail.lean), and [uniform complex decomposition at the arithmetic cutoff](../RiemannGaussian/EtaLogWeightedEndpoint.lean). | Cancel the cutoff terms against the moving logarithmic integral and prove the fixed two-endpoint limit, including the scale offset needed for Gaussian integration. |
 | 3. Signed heat reflection | Not yet proved. | Add the quadratic phase, prove the second-order Gaussian expansion and its integrable remainder, then cancel the leading profiles by reflection. |
 | 4. Full mixed matrix | Not yet proved. | Apply the second-order law to every mixed entry, preserving the signed endpoint decomposition and any dimension cost. |
 | 5. Completed-current audit | The [previous review](rh-overnight-signed-flux-review.md) identifies a support mismatch and missing completion/moment estimates. | Audit one exact proposed pairing with the new signed heat object. A remaining conjecture-strength estimate must be left open explicitly. |
@@ -52,7 +52,24 @@ with `epsilon = exp(r)-1` and `M = floor(1/(2r))`, the difference between
 `harmonic(M)-log(M)-log(pi/2)` is at most `32*epsilon` for `0 < r ≤ 1/8`.
 Changing normalization back to `r` includes a separate proof that the
 singular logarithmic correction vanishes. Constant complex tests inherit
-the limit exactly; nonconstant tests remain the immediate obstruction.
+the limit exactly.
+
+Nonconstant complex tests now have the following uniform decomposition,
+proved by `pairedEtaWeightedMismatch_cutoff_endpoint_error_le`. For
+`0 < r ≤ 1/8`, `R > 0`, `epsilon = exp(r)-1`, and the same actual cutoff `M`,
+
+\[
+ \epsilon^{-1}W(r,R,F)=\int_0^{\log(M+1)}F(t/R)\,dt
+ +(H_M-1-\log(M+1))F(0)
+ +(1-\log(\pi/2)-\log(\epsilon M))F(\log M/R)+E,
+\]
+
+with `norm(E) ≤ 8K/R + 32*epsilon*B` whenever `F` is `K`-Lipschitz and
+`norm(F(x)) ≤ B` everywhere. This uses a `3K/R` harmonic quadrature remainder,
+the actual tail's `K/(R*M)` freezing estimate, and its scalar Wallis value.
+The fixed two-endpoint limit has not yet been proved: the remaining passage
+must cancel the moving cutoff terms and retain `log(1/r)-R`. That scale
+offset becomes `-log(v)` when the displacement is `r = exp(-R)*v`.
 
 ## 1. Arithmetic averaging on the actual carrier
 

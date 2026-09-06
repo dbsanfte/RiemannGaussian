@@ -514,3 +514,6 @@ import RiemannGaussian.EtaOverlapWallis
 import RiemannGaussian.EtaOverlapTail
 import RiemannGaussian.EtaLogTailWallis
 import RiemannGaussian.EtaLogFinitePart
+import RiemannGaussian.EtaLogBoundaryFinitePart
+import RiemannGaussian.EtaLogWeightedTail
+import RiemannGaussian.EtaLogWeightedEndpoint
