@@ -35,6 +35,7 @@ the objective.
 | Quantify the dependence of reconstruction on the arithmetic cutoff | Exact multiplier and signed defect in [EtaGapReturnMultiplier.lean](../RiemannGaussian/EtaGapReturnMultiplier.lean); `pairedEtaLeadingCurrentNormalizedGapReturn_error_le` and its small-tilt bound in [EtaCurrentReconstructionError.lean](../RiemannGaussian/EtaCurrentReconstructionError.lean). | Proved with the actual absolute kernel mass and physical endpoint retained. |
 | Control the completed absolute kernel masses across cutoffs | The actual measure bounds in [EtaFiniteCurrentMeasureBounds.lean](../RiemannGaussian/EtaFiniteCurrentMeasureBounds.lean), completed envelopes in [EtaCurrentKernelEnvelope.lean](../RiemannGaussian/EtaCurrentKernelEnvelope.lean), and `pairedEtaLeadingCurrentAbsoluteKernelMass_le` in [EtaCurrentKernelMass.lean](../RiemannGaussian/EtaCurrentKernelMass.lean). | Proved with an explicit completion-dependent constant and logarithmic-over-cutoff bound. |
 | Choose simultaneous heat and tilt parameters with summable weighted reconstruction error | `pairedEtaLeadingCurrentScheduledGapReturn_weighted_error_le` in [EtaCurrentReconstructionSchedule.lean](../RiemannGaussian/EtaCurrentReconstructionSchedule.lean) and the summability and finite-prefix stability theorems in [EtaCurrentWeightedReconstruction.lean](../RiemannGaussian/EtaCurrentWeightedReconstruction.lean). | Proved with a schedule independent of the zero and a finite completion- and multiplicity-dependent error budget. |
+| Compare the actual continuous gap return with composed Gaussian heat | Full-line composition in [EtaTiltedHeatComposition.lean](../RiemannGaussian/EtaTiltedHeatComposition.lean) and `pairedEtaLeadingCurrentIntegratedGapReturn_eq_composed_sub_corrections` in [EtaCurrentFullHeatComparison.lean](../RiemannGaussian/EtaCurrentFullHeatComparison.lean). | Proved with both support and nonpositive-time corrections; all three-time integrals converge even at zero tilt. No cancellation estimate follows from the identity alone. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -229,6 +230,61 @@ bound either moment itself. All completion weights, the actual head branch,
 and analytic multiplicity entered through the previously checked mass bound.
 No arithmetic cancellation premise was used.
 
+## Checked continuous composition and the exact corrections
+
+Let `K_h` be the existing normalized Gaussian `etaNormalizedHeatKernel h`.
+Before imposing any intermediate-time restriction, two equal-width
+half-tilted transitions have the positive envelope
+
+\[
+ F_{a,h}(t,u,w)=e^{-a(t+w)/2}K_{\sqrt2h}(w-t)
+                e^{-a(w+u)/2}K_{\sqrt2h}(u-w).
+\]
+
+The exact pointwise factorization is
+
+\[
+ F_{a,h}(t,u,w)=
+ e^{a^2h^2-a(t+u)}K_{2h}(u-t)
+ K_h\!\left(w-\left[\tfrac{t+u}{2}-2ah^2\right]\right).
+\]
+
+Consequently its full-line `w` integral is
+`exp(a²h²-a(t+u))*K_(2h)(u-t)`. With a common probe phase, the intermediate
+phase cancels exactly, leaving `exp(i(phi(t)-phi(u)))`. Arbitrary ordered
+probe phases remain in the source kernel and in the subsequent signed
+decomposition; only the evaluated composition specializes them to one phase.
+
+For `a≥0`, `h>0`, and nonnegative endpoint times, the full-line slice mass
+is at most `exp(a²h²)/(4*sqrt(pi)*h)`. Fubini and this bound prove genuine
+three-time integrability against the original integrable current. This
+includes **zero tilt** and both actual multiplicity carriers, with the
+translated head coordinate restored. Restriction of the intermediate measure
+then proves integrability on eta support, eta gap, and nonpositive time.
+
+The measure identity is exactly
+
+\[
+ dw=d\mu_{\eta}(w)+d\mu_{\mathrm{gap}}(w)
+       +\mathbf1_{(-\infty,0]}(w)\,dw.
+\]
+
+Thus `pairedEtaLeadingCurrentIntegratedGapReturn_eq_composed_sub_corrections`
+proves that the actual completed gap return equals the explicitly composed
+broader Gaussian pairing minus the support return minus the nonpositive-time
+correction. Every term retains the original signed completed kernel. The
+decomposition does not assert that either correction is negligible.
+
+The checked theorem
+`pairedEtaCurrentReconstructionSchedule_fullLine_amplification` evaluates the
+full-line envelope factor on the existing reconstruction schedule as
+`exp((N+1)^4)`. This is not a lower bound on the signed pairing; it shows why
+discarding the signed correction balance does not produce the desired
+estimate. The new zero-tilt integrability removes this amplification at the
+kernel-composition level, but the old Laplace-mass normalization applies only
+at positive tilt. Any zero-tilt reconstruction must instead prove its own
+actual-gap Gaussian normalization and weighted error bound.
+
 ## Next mathematical obligations
 
 1. Establish arithmetic cancellation on the retained current or return
@@ -263,15 +319,16 @@ limiting spectral identification remains conjectural. The repository's
 candidate contribution should therefore be judged at the level of the
 specific eta arithmetic and completed signed estimates.
 
-For a further overnight session, the useful experimental direction is an
-**actual continuous comparison between heat scales with the completion
-channels retained**. The following are proposed targets, not established
-theorems or premises to add to Lean:
+The next work builds on the checked two-transition comparison and seeks a
+quantitative comparison between heat scales with the completion channels
+retained. The table distinguishes the completed identity from proposed
+estimates and longer-path targets. None of the open targets is a premise
+to add to Lean:
 
 | Step | Existing input | Concrete target and acceptance condition |
 | --- | --- | --- |
-| Compare ordered heat compositions on the actual domain | Full gap-time Fubini and the literal commutator factorization. | Evaluate the continuous Gaussian composition, explicitly retaining the positive-time restriction and intermediate tilt. A free full-line semigroup identity does not apply to these weighted restricted kernels without correction terms. |
-| Keep all support/gap paths | The finite two-stage identity in [ProjectionHeatLeakage](../RiemannGaussian/Hybrid/ProjectionHeatLeakage.lean) and ordered cubic paths in [EtaSpectralHeatCubicPaths](../RiemannGaussian/Hybrid/EtaSpectralHeatCubicPaths.lean). | Prove the corresponding identities on the actual continuous eta measure, then pair each path with both completed current branches. Include every omitted-time and compression term with its sign. The existing finite matrix algebra alone is insufficient. |
+| Compare ordered heat compositions on the actual domain | The exact continuous composition and full three-time integrability above. | The two-transition identity is now proved, with support and nonpositive-time corrections. The next estimate must preserve their cancellation against the composed term. At zero tilt, first prove a valid actual-gap Gaussian normalization if that specialization is used for reconstruction. |
+| Keep all support/gap paths | The actual two-transition decomposition above, the finite two-stage identity in [ProjectionHeatLeakage](../RiemannGaussian/Hybrid/ProjectionHeatLeakage.lean), and ordered cubic paths in [EtaSpectralHeatCubicPaths](../RiemannGaussian/Hybrid/EtaSpectralHeatCubicPaths.lean). | For any longer-path comparison, prove its identities on the actual continuous eta measure and pair every path with both completed current branches. Include every omitted-time and compression term with its sign. The existing finite matrix algebra alone is insufficient. |
 | Test a quantitative scale comparison | The signed two-endpoint heat law, full mixed phase matrix, and the new reconstruction error budget. | Derive an estimate for the actual signed return with cutoff, phase-family size, moving tilt, multiplicity, and accumulated path error explicit. A sufficient endpoint would be a summable majorant for `(2N+1)‖R_N‖`; the exact target is a bound on its partial sums uniform in `K`. |
 
 The decisive test is whether the zero condition and completion symmetry

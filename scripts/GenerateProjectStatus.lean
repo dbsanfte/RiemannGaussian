@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "second-order heat, signed matrices, and summable weighted completed-current reconstruction.</text>\n" ++
+      "signed matrices, weighted reconstruction, and exact continuous composition with both corrections.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -340,8 +340,15 @@ run_cmd do
         "weighted complex error series is retained. A single proved finite error " ++
         "budget bounds the difference of the return and original current's finite " ++
         "first absolute moments at every terminal cutoff. A uniform bound for either " ++
-        "moment still requires the signed arithmetic estimate. The broad " ++
-        "heat reconstruction does not identify a bound from the small-width signed law. These " ++
+        "moment still requires the signed arithmetic estimate. The actual completed gap " ++
+        "return now has an exact continuous heat-composition formula. Full-line composition " ++
+        "at a common phase retains exp(a^2*h^2-a*(t+u)) and the broader Gaussian, while " ++
+        "the gap return subtracts both the actual eta-support return and the nonpositive-time " ++
+        "correction. Both completed multiplicity carriers have full three-time integrability " ++
+        "for a>=0 and h>0, including zero tilt, with arbitrary ordered phases retained. " ++
+        "The positive-tilt Laplace-mass normalization is not extended to zero. The signed " ++
+        "correction balance still needs a quantitative estimate; the small-width signed law " ++
+        "does not supply one through composition alone. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[

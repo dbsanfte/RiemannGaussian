@@ -541,3 +541,5 @@ import RiemannGaussian.EtaCurrentKernelEnvelope
 import RiemannGaussian.EtaCurrentKernelMass
 import RiemannGaussian.EtaCurrentReconstructionSchedule
 import RiemannGaussian.EtaCurrentWeightedReconstruction
+import RiemannGaussian.EtaTiltedHeatComposition
+import RiemannGaussian.EtaCurrentFullHeatComparison
