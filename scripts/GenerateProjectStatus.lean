@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "Moebius diagonal estimate and retained cross-cutoff correlations; uniform bound open.</text>\n" ++
+      "signed dyadic Moebius correlation estimate with divisor errors; full uniform bound open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -444,7 +444,19 @@ run_cmd do
         "in an exact signed-pair identity. At a hypothetical actual zero with " ++
         "Re(rho)>1/2, the diagonal tends to zero while the off-diagonal sum " ++
         "tends to the strictly positive source norm squared. Thus the latter " ++
-        "cannot be dropped. No transfer from these quadratic aggregates " ++
+        "cannot be dropped. A further arithmetic estimate now controls the " ++
+        "full-period correlation of each fixed odd/even divisor pair. Multiplying " ++
+        "each original completed term by its exact complex divisor-times-odd-endpoint " ++
+        "power leaves the parity phase mu(d)*X_rho*a(floor(M/d))/2, with error " ++
+        "at most 2*H_rho*d/M, where H_rho=norm(X_rho)*norm(rho)*norm(rho+1). " ++
+        "For odd d and even e, these leading complex pair phases cancel over " ++
+        "every period of length 2*d*e. The actual normalized pair average starting " ++
+        "at A>=1 has norm at most H_rho*norm(X_rho)*(d+e)/A+4*H_rho^2*d*e/A^2. " ++
+        "The original signed completion pair retains both channel error bounds; " ++
+        "its fixed-divisor period average tends to zero at every actual zero. " ++
+        "The physical endpoint normalizers, divisor sizes, and period length " ++
+        "are explicit. No bound on the growing full divisor family, the higher " ++
+        "moment orders, or the original unnormalized current follows. No transfer from these quadratic aggregates " ++
         "to the original current's weighted absolute moment is proved. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

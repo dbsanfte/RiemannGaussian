@@ -1104,15 +1104,135 @@ zero. No new zero-location bound, uniform bound for the original return,
 or RH theorem follows from this slice. Priority for the auxiliary estimate
 has not been established.
 
+## Checked dyadic cancellation in the actual completed correlations
+
+The next arithmetic estimate is now compiled in
+[EtaMoebiusEndpointPhase](../RiemannGaussian/EtaMoebiusEndpointPhase.lean),
+[EtaMoebiusDyadicPhase](../RiemannGaussian/EtaMoebiusDyadicPhase.lean), and
+[EtaMoebiusDyadicCorrelation](../RiemannGaussian/EtaMoebiusDyadicCorrelation.lean).
+It applies to the original **zeroth** completed Möbius terms. It uses the
+arithmetic parity of their actual divided cutoffs to cancel an entire
+odd/even divisor interaction over a full period.
+
+Write
+
+\[
+ q(m)=2\lfloor m/2\rfloor+1,
+ \qquad
+ \widehat F_{\rho,M}(d)=(d\,q(\lfloor M/d\rfloor))^\rho F_{\rho,M}(d),
+ \qquad
+ V_{\rho,M}(d)=\frac{\mu(d)X_\rho}{2}a(\lfloor M/d\rfloor).
+\]
+
+The normalization is the **complex power of each literal divisor times
+its paired odd endpoint**. It is not an implicit common cutoff or a
+replacement of the original current. The theorem
+`pairedEtaCompletedMoebiusEndpointPair_eq_physical_kernel` retains both
+such powers multiplying the original complex pair kernel.
+
+`pairedEtaUnpairedDirichletPrefix_endpoint_phase_error` proves the exact
+complex identity
+
+\[
+ q(m)^\rho E_m(\rho)-a(m)/2
+ =-\left(G_{\rho,\lfloor m/2\rfloor}+1/2\right),
+\]
+
+where `G` is the repository's original normalized finite eta-gap error.
+This uses the actual zero equation and retains the unpaired odd term.
+The proved Euler gap estimate and `|mu(d)|<=1` give
+
+\[
+ |\widehat F_{\rho,M}(d)-V_{\rho,M}(d)|
+ \le \frac{H_\rho}{q(\lfloor M/d\rfloor)}
+ \le \frac{2H_\rho d}{M},\qquad M,d\ge1,
+ \qquad H_\rho=|X_\rho|\,|\rho|\,|\rho+1|.
+\]
+
+The terminal bound for this step is
+`norm_pairedEtaCompletedMoebiusEndpointPhase_sub_parity_cutoff_le`.
+The divisor dependence is explicit. The coefficient `H_rho` is finite
+and independent of both the divisor and the cutoff.
+
+Let `d` be odd and `e=2k` be any positive even divisor. A shift by `d*e`
+adds the even number `e` to `floor(M/d)` and the odd number `d` to
+`floor(M/e)`. The first parity phase is preserved and the second changes
+sign. Consequently,
+`sum_pairedEtaCompletedMoebiusParityPair_period_eq_zero` proves, for
+every starting integer `A`,
+
+\[
+ \sum_{0\le r<2de}V_{\rho,A+r}(d)\overline{V_{\rho,A+r}(e)}=0.
+\]
+
+Both completion and Möbius coefficients remain in this exact complex
+identity. The proof does not average absolute values of the leading terms.
+The actual pair error is then split at both complex positions before
+taking its norm. Define
+
+\[
+ \mathcal E_\rho(d,e,A)=
+ \frac{H_\rho|X_\rho|(d+e)}{A}
+ +\frac{4H_\rho^2de}{A^2}.
+\]
+
+`norm_pairedEtaCompletedMoebiusDyadicCorrelation_le` proves
+
+\[
+ \left|\frac1{2de}\sum_{0\le r<2de}
+   \widehat F_{\rho,A+r}(d)\overline{\widehat F_{\rho,A+r}(e)}\right|
+ \le \mathcal E_\rho(d,e,A),\qquad A\ge1.
+\]
+
+This controls the actual completed terms, including their finite-tail
+error. The quadratic error term `de/A^2` is retained. For each fixed pair
+of divisors the right side tends to zero, giving the compiled limit
+`pairedEtaCompletedMoebiusDyadicCorrelation_tendsto_zero` at every
+actual zero, without a critical-line hypothesis.
+
+The original `etaSignedCompletedPair` orientation is carried through the
+same period average. Its exact channel identity is the partner average
+minus the conjugate original average. The terminal theorem
+`norm_pairedEtaSignedCompletedMoebiusDyadicCorrelation_le` bounds its
+norm by
+
+\[
+ \mathcal E_{\rho^*}(d,e,A)+\mathcal E_\rho(d,e,A).
+\]
+
+`pairedEtaSignedCompletedMoebiusDyadicCorrelation_tendsto_zero`
+proves the corresponding signed limit with both actual completion
+channels. No multiplicity-one assumption is used; the carrier here is
+still the zeroth completed moment, not all higher centered orders.
+
+The arithmetic cancellation is a new checked estimate on an existing
+carrier. Its present limits matter to the full goal: the normalizers
+depend on the divisor, the period length is `2*d*e`, and the error grows
+with both divisor sizes. A fixed-pair period average does not control the
+growing divisor family at a single cutoff or the original weighted
+absolute-return sum. The same-parity interactions, higher centered
+orders, and simple-zero head must still be handled in any transfer to
+that target. No zero-location bound or RH theorem is claimed here.
+
+As a research check, the related Nyman–Beurling asymptotic of
+[Bettin–Conrey–Farmer](https://arxiv.org/abs/1211.5191) assumes RH and an
+additional derivative-moment estimate. It supplies no unconditional
+bound for this goal. The estimate above instead uses the repository's
+proved Euler error and a finite parity identity; no external analytic
+premise was added. Priority for the combined auxiliary mathematics has
+not been established.
+
 ## Next mathematical obligations
 
-1. Use the full signed Möbius cross-cutoff relations to seek an estimate
-   on the original completed current. The diagonal estimate above is
-   proved, but its complementary correlation sum can have a nonzero
-   limit; that sum cannot be treated as a negligible error. No transfer
-   from these divisor aggregates to the original current is currently
-   proved. All cross-cutoff terms and odd endpoint corrections must be
-   retained. The
+1. Extend the proved odd/even divisor cancellation toward a bound on
+   the original completed current. Account quantitatively for the
+   divisor-dependent endpoint normalizers, the growing divisor range,
+   and the increasing averaging period. The same-parity interactions
+   and higher centered orders are not controlled by the new zeroth-order
+   estimate. The earlier diagonal bound has a complementary correlation
+   sum with a possible nonzero limit; that sum cannot be dropped.
+   No transfer to the original weighted return is currently proved.
+   All cross-cutoff terms and odd endpoint corrections must be retained. The
    proved matching power bounds show that removing the cutoff growth
    requires such an exclusion; a sharper local approximation alone cannot
    provide it. The signed Euler, half-step head, and heat reconstruction
@@ -1178,8 +1298,10 @@ Excluding the surviving off-critical endpoint contribution remains open. The nex
 
 1. Seek an arithmetic estimate on the retained cross-cutoff interactions
    that controls the original completed moment pairs. Their finite
-   Möbius constraint and positive diagonal bound are now checked, but
-   do not supply this transfer. Any use of the
+   Möbius constraint, positive diagonal bound, and odd/even fixed-pair
+   cancellation are now checked. The divisor-dependent normalizers,
+   averaging period, and product-error bound must remain in any
+   extension to the full growing matrix. Any use of the
    mixed phase matrix must identify the actual finite eta feature vector
    and control its dimension, scale, and compression errors. The above
    midpoint and Euler error estimates alone cannot bound `S_rho(K)`

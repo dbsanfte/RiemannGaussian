@@ -581,3 +581,6 @@ import RiemannGaussian.EtaMoebiusFinitePrefix
 import RiemannGaussian.EtaMoebiusCompletedTail
 import RiemannGaussian.EtaMoebiusTermBounds
 import RiemannGaussian.EtaMoebiusQuadratic
+import RiemannGaussian.EtaMoebiusEndpointPhase
+import RiemannGaussian.EtaMoebiusDyadicPhase
+import RiemannGaussian.EtaMoebiusDyadicCorrelation
