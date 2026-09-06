@@ -35,9 +35,9 @@ Lean now proves an **explicit zero margin using full analytic multiplicity**.
 For every actual zero `rho = sigma + i*gamma` of multiplicity `m>=1`,
 
 \[
- \Delta_m(\gamma)\le\sigma\le1-\Delta_m(\gamma),\qquad
+ 0<\Delta_m(\gamma)\le\sigma\le1-\Delta_m(\gamma),\qquad
  \Delta_m(t)=\min\left\{\frac1{16},
- \left(\frac{|t|^5}{16\cdot3200^3\cdot8^{4m+4}(|t|+21)^{10}}\right)^{1/(4m-3)}\right\}>0.
+ \left(\frac{|t|^5}{16\cdot3200^3\cdot8^{4m+4}(|t|+21)^{10}}\right)^{1/(4m-3)}\right\}.
 \]
 
 The terminal theorem is
