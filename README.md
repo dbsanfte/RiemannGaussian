@@ -27,25 +27,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-The completed eta leading current is reconstructed through the full gap return, with explicit errors retaining the cutoff endpoint, absolute kernel mass, tilt, and heat width. Both multiplicity branches use their actual measures and the restored head coordinate. The frontier is controlling those kernel masses across cutoffs and proving the signed arithmetic cancellation needed for the uniform `(2N+1)`-weighted absolute-current estimate.
+The completed eta leading current is reconstructed through the full gap return. Its absolute kernel mass now has an explicit logarithmic-over-cutoff bound, giving an arithmetic reconstruction error with completion factors, multiplicity, tilt, and heat width retained. The next step is a simultaneous heat/tilt schedule with summable weighted error, followed by the signed arithmetic cancellation required for the full `(2N+1)`-weighted current estimate.
 
 ## Latest Update
 
-The reconstruction now has an explicit finite-width error. For the actual
-normalized return `R(a,h)`, leading flux `J(N)`, physical endpoint
-`L_N = log(2N+5)`, and absolute completed-kernel mass `B_N`, Lean proves
-`‖R(a,h) − J(N)‖ ≤ B_N [aL_N + (M₂(a)/M(a) + 2L_N²)/h²]`.
-Here `M` and `M₂` are the actual exponential gap mass and second moment.
-For `0 < a ≤ 1`, their ratio is at most `2/(M(1)a³)`, with `M(1)>0`
-proved. The exact signed multiplier defect is retained before the bound.
+The actual absolute kernel mass now satisfies
+`B_N ≤ Cρ (1+log(2N+5))^(2m)/(N+1)` at every arithmetic cutoff.
+Here `m` is the analytic multiplicity and
+`Cρ = 2m[Wpartner/(1−Re ρ)² + Wρ/(Re ρ)²]`, with the actual completed
+Laplace weights. The proof retains the short translated head interval at
+multiplicity one and the centered adjacent powers otherwise. The original
+signed kernel formulas remain available upstream of these absolute bounds.
 
-See the [gap multiplier](RiemannGaussian/EtaGapReturnMultiplier.lean),
-[actual-current error theorem](RiemannGaussian/EtaCurrentReconstructionError.lean),
+Substituting this theorem into the gap-return reconstruction gives a fully
+explicit arithmetic error bound. See the
+[kernel mass and error theorems](RiemannGaussian/EtaCurrentKernelMass.lean)
 and [current theorem plan](docs/eta-current-reconstruction-plan.md).
-The estimate covers both multiplicity branches and the restored head time.
-Growth of `B_N` and the signed arithmetic estimate for the weighted current
-remain open; no passage through its infinite weighted absolute series is
-asserted. RH remains open. No `13/18` certificate exists.
+A simultaneous parameter schedule with summable weighted reconstruction
+error is next; bounding the signed current itself remains open.
+RH remains open. No `13/18` certificate exists.
 
 ## Notable Formalisations
 
@@ -74,6 +74,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Completed-current heat pairing audit** | Direct signed-heat insertion vanishes in both literal multiplicity branches. Two ordered continuous heat transitions have an exact, integrable gap-return pairing retaining the completion factors, both widths and phases, cutoff, and restored head coordinate. | [pairedEtaLeadingCurrentSignedHeatPairing_eq_zero](RiemannGaussian/EtaSignedHeatCurrentAudit.lean), [pairedEtaLeadingCurrentTwoTransitionPairing_eq_neg_gapReturn](RiemannGaussian/EtaCompletedGapReturnPairing.lean), [pairedEtaLeadingCurrentPolynomialReturn_audit](RiemannGaussian/EtaCompletedGapReturnPairing.lean) |
 | **Full gap-return reconstruction** | The infinite gap-time integral is absolutely convergent at positive total tilt. Exact Gaussian and gap-mass normalization, followed by broad heat and vanishing tilt, reconstructs the original completed leading current at every fixed zero and cutoff. | [pairedEtaLeadingCurrentIntegratedGapReturn_eq_prod](RiemannGaussian/EtaIntegratedGapReturn.lean), [pairedEtaLeadingCurrent_gapReturn_reconstruction](RiemannGaussian/EtaLeadingCurrentReconstruction.lean) |
 | **Quantitative current reconstruction** | The normalized return has an explicit error in the actual absolute kernel mass, physical cutoff, tilt, and inverse-square heat width. The full gap moment contributes at most `2/(M(1)a³)` for `0 < a ≤ 1`; the exact signed error integral remains available. | [normalized_current_gapReturn_sub_integral](RiemannGaussian/EtaCurrentReconstructionError.lean), [pairedEtaLeadingCurrentNormalizedGapReturn_error_le_smallTilt](RiemannGaussian/EtaCurrentReconstructionError.lean) |
+| **Completed arithmetic kernel masses** | Both actual multiplicity carriers have an absolute kernel-mass bound `Cρ(1+log(2N+5))^(2m)/(N+1)`, with the two completion weights and horizontal coordinates explicit. It supplies the mass factor in the quantitative reconstruction error. | [pairedEtaLeadingCurrentAbsoluteKernelMass_le](RiemannGaussian/EtaCurrentKernelMass.lean), [pairedEtaLeadingCurrentNormalizedGapReturn_error_le_arithmetic](RiemannGaussian/EtaCurrentKernelMass.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 

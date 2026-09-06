@@ -33,7 +33,8 @@ the objective.
 | Integrate the ordered return over the entire actual gap | `integrable_leadingCurrent_gapReturn_prod`, `pairedEtaLeadingCurrentIntegratedGapReturn_eq_prod`, and `pairedEtaLeadingCurrentIntegratedTwoTransition_eq_neg_gapReturn` in [EtaIntegratedGapReturn.lean](../RiemannGaussian/EtaIntegratedGapReturn.lean). | Proved for nonnegative tilts with positive sum, positive widths, and measurable phases. |
 | Normalize the actual return and reconstruct the original current | Positive gap mass and dominated broad-heat limit in [EtaBroadGapReturn.lean](../RiemannGaussian/EtaBroadGapReturn.lean); `pairedEtaLeadingCurrent_gapReturn_reconstruction` in [EtaLeadingCurrentReconstruction.lean](../RiemannGaussian/EtaLeadingCurrentReconstruction.lean). | Proved as iterated limits at every fixed zero and cutoff. |
 | Quantify the dependence of reconstruction on the arithmetic cutoff | Exact multiplier and signed defect in [EtaGapReturnMultiplier.lean](../RiemannGaussian/EtaGapReturnMultiplier.lean); `pairedEtaLeadingCurrentNormalizedGapReturn_error_le` and its small-tilt bound in [EtaCurrentReconstructionError.lean](../RiemannGaussian/EtaCurrentReconstructionError.lean). | Proved with the actual absolute kernel mass and physical endpoint retained. |
-| Control the completed absolute kernel masses across cutoffs | Requires an arithmetic upper bound for the actual `pairedEtaLeadingCurrentAbsoluteKernelMass`. | Open. |
+| Control the completed absolute kernel masses across cutoffs | The actual measure bounds in [EtaFiniteCurrentMeasureBounds.lean](../RiemannGaussian/EtaFiniteCurrentMeasureBounds.lean), completed envelopes in [EtaCurrentKernelEnvelope.lean](../RiemannGaussian/EtaCurrentKernelEnvelope.lean), and `pairedEtaLeadingCurrentAbsoluteKernelMass_le` in [EtaCurrentKernelMass.lean](../RiemannGaussian/EtaCurrentKernelMass.lean). | Proved with an explicit completion-dependent constant and logarithmic-over-cutoff bound. |
+| Choose simultaneous heat and tilt parameters with summable weighted reconstruction error | The arithmetic error theorem now has every mass and scale dependence explicit. | Open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -130,16 +131,50 @@ value, `pairedEtaLeadingCurrentNormalizedGapReturn_error_le` proves
 \]
 
 The small-tilt corollary replaces the moment ratio by `2/(M(1)a³)`.
-The factor `B_rho(N)` is finite by the existing genuine kernel integrability;
-it has not been assumed bounded or summable across cutoffs. This estimate
-controls reconstruction error and does not bound the original signed flux
-itself. The separate weighted arithmetic target remains unchanged.
+The factor `B_rho(N)` is finite by the existing genuine kernel integrability.
+Its arithmetic growth is now bounded as described below; it has not been
+assumed summable across cutoffs. The reconstruction estimate controls the
+error of replacing the current by its exact return. The separate weighted
+arithmetic target remains unchanged.
+
+## Checked completed kernel mass
+
+Write `sigma=Re rho`, `tau=1-sigma`, and let `W_rho` and `W_partner` be the
+existing completed Laplace weights. Every actual zero has `0<sigma,tau<1`.
+The finite eta measures are now proved dominated by the full positive-time
+Lebesgue measure, giving exponential masses at most `1/sigma`. Their product
+has mass at most `1/sigma²`. On the distinct translated head, the first mass
+is instead at most the actual cutoff increment `delta_(N+1)`.
+
+The actual head kernel is bounded by twice the sum of its two completed
+exponentials at the restored physical coordinate. The adjacent kernel keeps
+`2(m-1)delta_(N+1)`, and its centered powers are at most `(1+L_N)^(2m)`.
+The phases and signed completion difference remain in the original kernels;
+these absolute envelopes are used only downstream to control reconstruction.
+
+Defining the explicit constant
+
+\[
+ C_\rho=2m\left[\frac{W_{\mathrm{partner}}}{(1-\Re\rho)^2}
+                   +\frac{W_\rho}{(\Re\rho)^2}\right],
+\]
+
+`pairedEtaLeadingCurrentAbsoluteKernelMass_le_increment` first retains the
+actual increment in `B_rho(N) ≤ C_rho delta_(N+1) (1+L_N)^(2m)`.
+The all-cutoff estimate `delta_(N+1) ≤ 1/(N+1)` then proves
+
+\[
+ B_\rho(N)\le\frac{C_\rho(1+\log(2N+5))^{2m}}{N+1}.
+\]
+
+`pairedEtaLeadingCurrentNormalizedGapReturn_error_le_arithmetic` substitutes
+this bound into the small-tilt reconstruction estimate. Every constant in
+that result is an actual proved mass, completion weight, zero coordinate,
+or analytic multiplicity. No mass bound is left as an antecedent.
 
 ## Next mathematical obligations
 
-1. Bound the actual completed absolute kernel mass across cutoffs, with
-   dependence on zero, multiplicity, and completion factors explicit. Use
-   that bound and the checked scale errors to select simultaneous tilt and
+1. Use the checked absolute kernel-mass bound and scale errors to select simultaneous tilt and
    heat parameters with a summable cutoff-weighted reconstruction error.
    Preserve the exact signed error integral upstream of this bound.
 2. Establish arithmetic cancellation on the retained current or return
@@ -154,15 +189,13 @@ itself. The separate weighted arithmetic target remains unchanged.
    full library, generated status, and exact-commit CI before any completion
    claim.
 
-A candidate for step 1 is a bound of the form
-`B_rho(N) ≤ C_rho (1+L_N)^d_rho/(N+1)`, derived from the literal completed
-features and the one cutoff increment. With such a proved bound, the explicit
-schedule `a_N=(N+1)^(-2)`, `h_N=(N+1)^4` would put both displayed scale
-errors at order `(1+L_N)^2/(N+1)^2` or better before the kernel-mass factor.
+With the mass bound now proved, the candidate schedule
+`a_N=(N+1)^(-2)`, `h_N=(N+1)^4` would put both displayed scale errors at
+order `(1+L_N)^2/(N+1)^2` or better before the kernel-mass factor.
 The weighted error would then have a summable logarithmic-over-square
-majorant. The mass bound and this schedule's summability are next proof
-targets, not current theorems. Even after them, bounding the reconstructed
-signed return itself remains necessary for the full objective.
+majorant. This schedule and its weighted summability are next proof targets,
+not current theorems. Even after them, bounding the reconstructed signed
+return itself remains necessary for the full objective.
 
 No reconstruction or summability premise has been introduced as an axiom.
 The goal remains open because the uniform weighted arithmetic estimate is

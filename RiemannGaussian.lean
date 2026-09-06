@@ -536,3 +536,6 @@ import RiemannGaussian.EtaBroadGapReturn
 import RiemannGaussian.EtaLeadingCurrentReconstruction
 import RiemannGaussian.EtaGapReturnMultiplier
 import RiemannGaussian.EtaCurrentReconstructionError
+import RiemannGaussian.EtaFiniteCurrentMeasureBounds
+import RiemannGaussian.EtaCurrentKernelEnvelope
+import RiemannGaussian.EtaCurrentKernelMass

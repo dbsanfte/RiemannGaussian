@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "second-order heat, signed matrices, and quantitative reconstruction of the completed current.</text>\n" ++
+      "second-order heat, signed matrices, and explicit arithmetic mass and reconstruction bounds.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -329,8 +329,14 @@ run_cmd do
         "B_N*[a*L_N+(M2(a)/M(a)+2*L_N^2)/h^2], where B_N is the actual absolute " ++
         "completed-kernel mass and L_N=log(2*N+5) bounds both physical times. The actual " ++
         "second gap moment is at most 2/a^3, and for 0<a<=1 its normalized ratio is at " ++
-        "most 2/(M(1)*a^3), with M(1)>0 proved. Growth control for B_N, the signed " ++
-        "arithmetic bound, and passage through the cutoff-weighted absolute series remain open. The broad " ++
+        "most 2/(M(1)*a^3), with M(1)>0 proved. The actual completed kernel mass is now " ++
+        "bounded at every cutoff by C_rho*(1+log(2*N+5))^(2*m)/(N+1), with " ++
+        "C_rho=2*m*[W_partner/(1-Re(rho))^2+W_rho/Re(rho)^2]. The proof retains " ++
+        "the translated simple-zero head and the adjacent centered moments, and " ++
+        "substitution supplies the fully explicit arithmetic reconstruction error. " ++
+        "A simultaneous parameter schedule with summable weighted reconstruction error, " ++
+        "the signed arithmetic bound, and passage through the weighted current series " ++
+        "remain open. The broad " ++
         "heat reconstruction does not identify a bound from the small-width signed law. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
