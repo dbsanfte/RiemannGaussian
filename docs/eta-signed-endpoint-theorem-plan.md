@@ -19,7 +19,7 @@ averaging or second-order asymptotic premise qualifies as implementation.
 | 1. Actual arithmetic overlap | [Exact eta/periodic-colour identity](../RiemannGaussian/EtaAlternatingReal.lean), [real-scale cell and primitive estimates](../RiemannGaussian/EtaOverlapAveraging.lean), [Wallis integral](../RiemannGaussian/EtaOverlapWallis.lean), [quantitative infinite-tail evaluation](../RiemannGaussian/EtaOverlapTail.lean), and [exact transport back to the logarithmic eta tail](../RiemannGaussian/EtaLogTailWallis.lean). | Complete for the scalar arithmetic tail; retain it as input to the weighted law. |
 | 2. Two-endpoint finite part | [Scalar finite part](../RiemannGaussian/EtaLogFinitePart.lean), [uniform harmonic quadrature](../RiemannGaussian/EtaLogBoundaryFinitePart.lean), [weighted-tail freezing](../RiemannGaussian/EtaLogWeightedTail.lean), [cutoff decomposition](../RiemannGaussian/EtaLogWeightedEndpoint.lean), [uniform fixed-endpoint remainder](../RiemannGaussian/EtaLogTwoEndpoint.lean), and [full complex two-endpoint limit with scale offset](../RiemannGaussian/EtaLogTwoEndpointLimit.lean). | Complete; the actual second-order Gaussian application is now checked in part 3. |
 | 3. Signed heat reflection | [Actual polynomial-phase finite part](../RiemannGaussian/EtaPolynomialMismatchFinitePart.lean), [global bound after subtraction](../RiemannGaussian/EtaWeightedFinitePartBound.lean), [damped complex domination and limit](../RiemannGaussian/EtaPolynomialFinitePartDomination.lean), [logarithmic endpoint profile](../RiemannGaussian/EtaPolynomialHeatProfile.lean), [full second-order heat law](../RiemannGaussian/EtaPolynomialHeatFinitePart.lean), and [signed reflection](../RiemannGaussian/EtaPolynomialHeatReflection.lean). | Complete. Preserve the signed law in every mixed matrix entry. |
-| 4. Full mixed matrix | Not yet proved. | Apply the second-order law to every mixed entry, preserving the signed endpoint decomposition and any dimension cost. |
+| 4. Full mixed matrix | [Actual mixed matrix finite part, exact leading cancellation, signed endpoint limit, and dimension-dependent aggregate error](../RiemannGaussian/Hybrid/EtaPolynomialHeatMatrix.lean). | Complete for every fixed finite family. The completed-current pairing remains part 5. |
 | 5. Completed-current audit | The [previous review](rh-overnight-signed-flux-review.md) identifies a support mismatch and missing completion/moment estimates. | Audit one exact proposed pairing with the new signed heat object. A remaining conjecture-strength estimate must be left open explicitly. |
 
 Part 1 proves, for every real `0 < epsilon ≤ 1` and `0 < a ≤ 1`,
@@ -232,6 +232,18 @@ Use differences of phase parameters to preserve every mixed entry of a
 fixed finite family. Retain the signed matrix; subtracting the leading Gram
 does not establish positive semidefiniteness. Any matrix-norm estimate must
 retain its dependence on the family size.
+
+Part 4 is now checked in `Hybrid/EtaPolynomialHeatMatrix.lean`.
+`pairedEtaSupportGapPolynomialPhaseGram_finite_part_tendsto` proves the
+complete second-order matrix limit for the actual continuous phase Gram.
+`pairedEtaSignedPolynomialPhaseGram_tendsto` retains every reflected entry
+as `J(kappa_j-kappa_i)-exp(-2*lambda)*J(q_j-q_i)`, with
+`q_i=kappa_i+beta_i+3*alpha_i`. Both endpoint matrices are real symmetric.
+The exact finite-width leading cancellation is retained as a separate
+theorem. For every fixed finite family, the sum of absolute entry errors
+tends to zero; simultaneous errors at most `epsilon` give the explicit
+bound `card(iota)^2 * epsilon`. No positivity of the signed difference is
+inferred.
 
 The reflection factor `exp(-2*lambda)` comes from logarithmic time. It is
 not the xi completion multiplier. The literal higher-multiplicity current

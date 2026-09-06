@@ -528,3 +528,4 @@ import RiemannGaussian.EtaPolynomialHeatProfile
 import RiemannGaussian.EtaPolynomialFinitePartDomination
 import RiemannGaussian.EtaPolynomialHeatFinitePart
 import RiemannGaussian.EtaPolynomialHeatReflection
+import RiemannGaussian.Hybrid.EtaPolynomialHeatMatrix

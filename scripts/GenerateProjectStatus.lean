@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "phase/matrix limits, second-order polynomial heat, and signed reflection.</text>\n" ++
+      "second-order polynomial heat, signed reflection, and full mixed matrix limits.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -309,8 +309,11 @@ run_cmd do
         "finite part, with a global cubic polynomial majorant. The complete second-order " ++
         "polynomial heat law evaluates its endpoint coefficient using the logarithmic " ++
         "Gaussian cosine moment. Exact leading-profile reflection then proves the signed " ++
-        "limit J(kappa)-exp(-2*lambda)*J(kappa+beta+3*alpha). The full mixed signed matrix " ++
-        "and completed-current pairing audit remain targets. " ++
+        "limit J(kappa)-exp(-2*lambda)*J(kappa+beta+3*alpha). The full actual mixed " ++
+        "polynomial-phase matrix now has its second-order and signed endpoint limits. " ++
+        "The sum of absolute entry errors tends to zero for each fixed finite family; " ++
+        "simultaneous entry error epsilon gives the explicit cost card(iota)^2*epsilon. " ++
+        "The exact completed-current pairing audit remains the last package target. " ++
         "The signed-flux application review " ++
         "identifies the missing completed kernel identity and uniform estimates. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
