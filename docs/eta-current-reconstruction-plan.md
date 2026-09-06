@@ -729,13 +729,121 @@ position. It supplies no new zero-location constraint. The original goal
 requires a bound on `S_R(rho,K)` independent of `K`, without dividing by
 the cutoff. That requirement is unchanged and remains open.
 
+## Checked common principal endpoints in both multiplicity branches
+
+The simple-zero head's remaining local phase now has an explicit
+summable weighted correction. The compiled modules are
+[EtaCurrentHeadHalfWidth](../RiemannGaussian/EtaCurrentHeadHalfWidth.lean),
+[EtaCurrentHalfStepHead](../RiemannGaussian/EtaCurrentHalfStepHead.lean),
+[EtaCurrentHalfStepPairs](../RiemannGaussian/EtaCurrentHalfStepPairs.lean),
+and [EtaCurrentPrincipalEndpoints](../RiemannGaussian/EtaCurrentPrincipalEndpoints.lean).
+
+Write `q=2N+3`, `x=N+1`, `a=log(q)`, `L=log(q+2)`,
+`delta=log((q+2)/q)`, and `w=log((q+1)/q)`. The exact interval identity
+`pairedEtaShiftedLogHeadWidth_sub_half_step_eq` gives
+
+\[
+ w-\delta/2=\tfrac12\log\left(1+\frac1{q(q+2)}\right),
+ \qquad 0\le w-\delta/2\le\frac1{2x^2}.
+\]
+
+For `c_rho=pairedEtaXiCompletionFactor(rho)*rho`, put
+`K_rho=norm(rho)*exp(norm(rho))` and
+`D_head(rho)=norm(c_rho)*(2*K_rho+1)`. The original completed head
+`H_rho(N)` is compared with
+
+\[
+ H^{1/2}_\rho(N)=-c_\rho e^{-\rho L}\delta/2
+               =\delta\rho U_{\rho,0}(N).
+\]
+
+`pairedEtaHeadCompletedMoment_sub_halfStep` retains its exact complex
+defect, with the integral variation, unequal support/gap widths, and
+endpoint translation separately visible. The compiled theorem
+`norm_pairedEtaHeadCompletedMoment_sub_halfStep_le` proves
+
+\[
+ \|H_\rho(N)-H^{1/2}_\rho(N)\|
+ \le D_{\mathrm{head}}(\rho)d_\rho(N)/x^2.
+\]
+
+Define `C_head(rho)=D_head(rho)*pairedEtaCurrentEulerMomentAmplitude(rho,0)`
+and the explicitly summable envelope
+
+\[
+ B_{\mathrm{head}}(\rho,N)=
+ \frac{C_{\mathrm{head}}(\rho^*)d_{\rho^*}(N)
+       +C_{\mathrm{head}}(\rho)d_\rho(N)}{x}.
+\]
+
+Both signed complex product defects are retained in
+`pairedEtaCurrentEulerHeadPair_sub_halfStep`; their real-current error
+with the original odd weight is at most `4*B_head(rho,N)`.
+The half-step product's common endpoint phase cancels exactly in
+`pairedEtaCurrentHalfStepHead_mul_conj_euler`. Its simple coefficient is
+
+\[
+ A_{\mathrm{simple}}(\rho)=
+ 2\sigma\|c_\rho\|^2|a_{\rho,0}|^2>0.
+\]
+
+The multiplicity-selected coefficient is
+
+\[
+ A_\rho=\begin{cases}
+ A_{\mathrm{simple}}(\rho),&m=1,\\
+ 2(m-1)P_{\rho,m-2},&m\ge2,
+ \end{cases}
+\]
+
+where `P` is the previously evaluated completed adjacent Euler
+coefficient. `pairedEtaCurrentPrincipalCoefficient_pos` proves
+`A_rho>0` in both actual branches. Reflection preserves the multiplicity.
+The resulting common principal expression is
+
+\[
+ J_{\mathrm{principal}}(\rho,N)=\delta_{N+1}
+ \left[A_{\rho^*}e^{-2(1-\sigma)L_N}
+       -A_\rho e^{-2\sigma L_N}\right].
+\]
+
+It equals the repeated-zero Euler expression exactly and the simple
+half-step expression exactly. The original current has odd-weighted
+error at most `4*B_Euler+4*B_head`. The **unchanged** actual linear-width
+return has odd-weighted norm error at most
+
+\[
+ F_{\mathrm{principal}}(\rho,N)=
+ F_{\mathrm{heat}}(\rho,N)+4B_{\mathrm{Euler}}(\rho,N)
+                         +4B_{\mathrm{head}}(\rho,N),
+\]
+
+whose series is proved summable. The terminal theorem
+`pairedEtaLeadingCurrentLinearHeatReturn_principal_firstMoment_stability`
+proves, at every cutoff `K`,
+
+\[
+ \left|S_R(\rho,K)-
+ \sum_{N<K}(2N+1)|J_{\mathrm{principal}}(\rho,N)|\right|
+ \le\sum_{N\ge0}F_{\mathrm{principal}}(\rho,N)<\infty.
+\]
+
+The sum's finiteness is the named summability theorem, not an inference
+from Lean's totalized `tsum`. This completes the simple-head phase
+comparison on the original return. It leaves two positive leading
+coefficients and complementary horizontal powers. The next quantitative
+test is whether that explicit term forces the previously allowed
+displacement-power growth off the critical line. No cutoff-independent
+bound for the principal term, original current, or original return has
+been proved here.
+
 ## Next mathematical obligations
 
 1. Improve the proved displacement-power growth estimate to a bound
    independent of cutoff for every actual zero. This requires an
    independent arithmetic constraint on the surviving completed endpoint
-   contribution. The signed Euler error and the heat reconstruction error
-   are now summable. Bounds for a positive heat Gram
+   contribution. The signed Euler, half-step head, and heat reconstruction
+   errors are now summable in both actual multiplicity branches. Bounds for a positive heat Gram
    or a norm of a single phase channel do not establish the required signed
    completed-current bound. The small-width signed endpoint theorem and the
    broad-width reconstruction concern different regimes; a use of one to

@@ -569,3 +569,7 @@ import RiemannGaussian.EtaCurrentEulerEstimate
 import RiemannGaussian.EtaCurrentArithmeticEnvelope
 import RiemannGaussian.EtaCurrentPowerSum
 import RiemannGaussian.EtaCurrentReturnGrowth
+import RiemannGaussian.EtaCurrentHeadHalfWidth
+import RiemannGaussian.EtaCurrentHalfStepHead
+import RiemannGaussian.EtaCurrentHalfStepPairs
+import RiemannGaussian.EtaCurrentPrincipalEndpoints

@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "signed matrices, explicit current endpoints, and a sublinear bound for the actual weighted return.</text>\n" ++
+      "signed matrices, positive principal endpoints, and summable weighted return errors; uniform bound open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -403,7 +403,18 @@ run_cmd do
         "The exponent is strictly less than one, so this same actual moment divided by " ++
         "K+1 tends to zero unconditionally. Its bound without cutoff normalization " ++
         "remains open; the exponent depends on the unknown zero position and yields " ++
-        "no new zero-location constraint. These " ++
+        "no new zero-location constraint. Both actual multiplicity branches now share " ++
+        "the signed principal term delta_N*[A_partner*exp(-2*(1-sigma)*L_N)-" ++
+        "A_rho*exp(-2*sigma*L_N)], with both actual completion coefficients proved " ++
+        "strictly positive. The simple head differs from half the actual logarithmic " ++
+        "step at the successor endpoint by an explicit complex defect of size at most " ++
+        "D_head*rho_decay(N)/(N+1)^2. Its full two-channel odd-weighted product error " ++
+        "is summable. The common endpoint phase cancels exactly at the complex product " ++
+        "level before real parts are taken. The unchanged current and linear-width " ++
+        "return differ from this same principal expression by summable weighted " ++
+        "errors. One explicit convergent sum of the heat, Euler, and head majorants " ++
+        "bounds every difference of their first absolute moments. The principal " ++
+        "term itself is not bounded independently of cutoff. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[
