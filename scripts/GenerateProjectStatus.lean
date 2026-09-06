@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "signed matrices, Wallis gap expansion, and the original current's explicit midpoint correction.</text>\n" ++
+      "signed matrices, actual midpoint arithmetic, and a zero-tail gain for both completed current branches.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -364,8 +364,18 @@ run_cmd do
         "head, have their actual midpoint moment M as coefficient: " ++
         "norm(R(h)-J-M/(sqrt(pi)*h))<=19*C_rho*(1+L_N)^(2*m+3)/((N+1)*h^2) " ++
         "for h>=2. The exact signed defect remains available before its norm estimate. " ++
-        "Finite eta-moment evaluation and cancellation of M remain open, as does the " ++
-        "uniform weighted arithmetic bound for the original current. These " ++
+        "The midpoint coefficient is now evaluated in actual finite completed eta moments " ++
+        "in both branches. For m>=2 it is L_N*J+(m-1)*delta_(N+1)*Re(Gamma_(m-1,m-1)+Gamma_(m-2,m)); " ++
+        "the simple head retains both cutoff origins and its two raised moment pairs. " ++
+        "The functional equation isolates a finite reflection defect times the nonzero " ++
+        "leading completed moment, with both signed tails retained. It does not make the " ++
+        "defect vanish. The actual lower-order zero-tail bounds now prove " ++
+        "abs(M_rho(N))<=2*m*(1+L_N)/(N+1)*" ++
+        "[Q_partner^2*(2*N+3)^(-(1-Re(rho)))+Q_rho^2*(2*N+3)^(-Re(rho))], " ++
+        "where Q_rho=abs(c_rho)+abs(D_rho)+abs(c_rho)*m!/Re(rho)^(m+1), " ++
+        "c_rho is the actual completion factor times rho, and D_rho its nonzero leading " ++
+        "completed moment. This is a proved arithmetic endpoint gain for the midpoint, " ++
+        "not a uniform weighted bound on the original current. That bound remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[

@@ -40,6 +40,8 @@ the objective.
 | Preserve the weighted frontier with zero tilt and quadratic width | `summable_oddEndpoint_mul_norm_pairedEtaLeadingCurrentZeroTiltScheduledReturn_error` and `pairedEtaLeadingCurrentZeroTiltScheduledReturn_firstMoment_stability` in [EtaZeroTiltWeightedReconstruction.lean](../RiemannGaussian/EtaZeroTiltWeightedReconstruction.lean). | Proved at width `2(N+1)²`, with explicit finite error budget and no exponential tilt amplification. |
 | Evaluate the literal colour primitive and broad Gaussian gap term | `pairedEtaLogColourPrimitive_wallis_error_le` in [EtaLogColourPrimitive.lean](../RiemannGaussian/EtaLogColourPrimitive.lean), the exact signed remainder in [EtaGaussianColourRemainder.lean](../RiemannGaussian/EtaGaussianColourRemainder.lean), and `pairedEtaGaussianGapMass_wallis_expansion_error_le` in [EtaGaussianGapExpansion.lean](../RiemannGaussian/EtaGaussianGapExpansion.lean). | Proved with the evaluated Wallis constant, exponential primitive error `9 exp(−t)`, and uniform remainder `2(1+c)³/h³`. |
 | Identify the first broad-heat coefficient of the original current | The normalized expansion in [EtaZeroTiltFirstCorrection.lean](../RiemannGaussian/EtaZeroTiltFirstCorrection.lean) and `pairedEtaLeadingCurrentZeroTiltGapReturn_midpoint_error_le_arithmetic` in [EtaCurrentMidpointCorrection.lean](../RiemannGaussian/EtaCurrentMidpointCorrection.lean). | Proved in both actual multiplicity branches, retaining an exact signed defect and an explicit inverse-square-width error. Arithmetic cancellation of the midpoint coefficient remains open. |
+| Evaluate the midpoint coefficient in finite eta arithmetic | The complex integral identity in [EtaCurrentFiniteMomentPair.lean](../RiemannGaussian/EtaCurrentFiniteMomentPair.lean), the repeated-zero formula in [EtaCurrentAdjacentMidpoint.lean](../RiemannGaussian/EtaCurrentAdjacentMidpoint.lean), and the translated head formula in [EtaCurrentHeadMidpoint.lean](../RiemannGaussian/EtaCurrentHeadMidpoint.lean). | Proved with both physical cutoff origins, all centered orders, and complex channel orientation retained. |
+| Apply completed reflection and the actual zero-tail bounds to the midpoint | Both branch decompositions in [EtaCurrentMidpointReflection.lean](../RiemannGaussian/EtaCurrentMidpointReflection.lean), finite moment bounds in [EtaCurrentMomentBounds.lean](../RiemannGaussian/EtaCurrentMomentBounds.lean), and `abs_pairedEtaLeadingCurrentMidpointMoment_le_arithmetic` in [EtaCurrentMidpointBounds.lean](../RiemannGaussian/EtaCurrentMidpointBounds.lean). | Proved with an explicit additional endpoint decay factor. The finite reflection defect times the nonzero leading moment is retained; no vanishing or original-current weighted bound follows. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -434,9 +436,90 @@ arithmetic error theorem proves
 \]
 
 The coefficient is the unchanged signed current's physical midpoint
-moment. Its evaluation in finite eta moments, any gain from completed
-reflection, and the uniform weighted bound for `J_rho` remain unproved.
-An improved reconstruction remainder alone does not give that bound.
+moment. Its finite arithmetic evaluation and a zero-tail gain are now
+proved below. An improved reconstruction remainder alone does not give
+the uniform weighted bound for `J_rho`.
+
+## Checked midpoint arithmetic, reflection, and endpoint gain
+
+Put `c_rho=pairedEtaXiCompletionFactor(rho)*rho`, and write
+`A_rho,k(n)=c_rho*P_k(rho,n)` for the existing centered finite eta moment
+with its actual completion factor. The complex pair is
+
+\[
+ \Gamma_{k,l}(n)=A_{\rho^*,k}(n)\overline{A_{\rho^*,l}(n)}
+                    -\overline{A_{\rho,k}(n)}A_{\rho,l}(n).
+\]
+
+The two parity factors cancel exactly in this product, leaving the
+original conjugate channel's orientation intact. Genuine integration on
+the actual finite product measure evaluates this complex pair. Multiplying
+its kernel by the physical midpoint raises either centered order. For
+`m>=2`, the checked identity for the unchanged current is
+
+\[
+ M_\rho(N)=L_NJ_\rho(N)+(m-1)\delta_{N+1}
+   \Re\!\left(\Gamma_{m-1,m-1}(N+2)+\Gamma_{m-2,m}(N+2)\right).
+\]
+
+For the simple-zero head let
+`H_rho,k(N)=-c_rho*Head_k(rho,N+1)`, with the actual shifted-head moment.
+Write `Gamma^H_(k,l)` for the signed complex pair of `H_k` and
+`A_l(N+2)` in the same orientation. If `a_N=pairedEtaLogTailCutoff(N+1)`,
+the checked simple-zero formula is
+
+\[
+ M_\rho(N)=\frac{a_N+L_N}{2}J_\rho(N)
+              +\Re\Gamma^H_{1,0}(N)+\Re\Gamma^H_{0,1}(N).
+\]
+
+Both the old head origin and the successor prefix center are necessary.
+Each product integral has its own genuine integrability proof.
+
+The leading full moment `D_rho=c_rho*P_m(rho)` is proved nonzero.
+Completed reflection gives `D_partner=(-1)^m*conj(D_rho)`. Let
+`T_rho,k(n)` denote the actual completed centered tail. The exact identity
+`A_rho,m(n)=D_rho-T_rho,m(n)` then evaluates the order-`m` pair as
+
+\[
+ \Gamma_{k,m}(n)=(-1)^m\Delta_k(n)D_\rho
+  -\left(A_{\rho^*,k}(n)\overline{T_{\rho^*,m}(n)}
+          -\overline{A_{\rho,k}(n)}T_{\rho,m}(n)\right),
+ \quad
+ \Delta_k(n)=A_{\rho^*,k}(n)-(-1)^m\overline{A_{\rho,k}(n)}.
+\]
+
+The actual head has the same identity with `A_k` replaced by `H_k` and
+the successor tail retained. Thus completed symmetry identifies a finite
+defect multiplying a nonzero moment; it does not establish that this
+defect, or its real pairing in `M`, vanishes.
+
+There is nevertheless a proved arithmetic gain from the existing zero
+equation below multiplicity. Define the explicit finite constant
+
+\[
+ Q_\rho=|c_\rho|+|D_\rho|
+                 +\frac{|c_\rho|\,m!}{(\Re\rho)^{m+1}},
+ \qquad d_\rho(N)=(2N+3)^{-\Re\rho}.
+\]
+
+At every cutoff, the checked moment bounds give
+`|A_rho,k(N+2)|<=Q_rho*d_rho(N)` for `k<m` and
+`|A_rho,k(N+2)|<=Q_rho` for `k<=m`. Every actual shifted head order also
+satisfies `|H_rho,k(N)|<=Q_rho*delta_(N+1)*d_rho(N)`. Applying these
+only after the exact signed identities proves
+
+\[
+ |M_\rho(N)|\le\frac{2m(1+L_N)}{N+1}
+   \left(Q_{\rho^*}^{\,2}(2N+3)^{-(1-\sigma)}
+          +Q_\rho^{\,2}(2N+3)^{-\sigma}\right),\qquad\sigma=\Re\rho.
+\]
+
+This removes the growing centered-monomial envelope and retains a
+strictly positive endpoint decay exponent in both actual branches. It
+bounds the midpoint coefficient; it is not the uniform first absolute
+moment estimate for the original current. No new cancellation of the
+finite reflection defect has been established.
 
 ## Next mathematical obligations
 
@@ -492,38 +575,34 @@ fixed off-axis zero: their tilt parameter grows with the logarithmic scale.
 If no estimate survives these dependencies, the next result should state
 the obstruction precisely rather than rename it as another RH criterion.
 
-### The next overnight arithmetic test in Lean
+### Next estimates after the midpoint arithmetic test
 
-The primitive, Gaussian expansion, and exact midpoint coefficient proposed
-in the preceding experiment are now proved above. The next target is to
-evaluate that coefficient on the actual completed eta features. The
-following identities and estimates are **proposed targets**, not premises
-to add to the proof chain.
+The arithmetic test has produced the exact two branch formulas, the
+completed reflection defect, and the endpoint gain above. The new bound
+uses the established zero-tail estimates; it does not prove cancellation
+of the retained defect. The next targets are **proposed work**, not
+assumptions to add to the proof chain.
 
-1. For multiplicity `m>=2`, express the midpoint integral in the existing
-   centered finite eta moments. If `I_(k,l)` denotes the completed signed
-   pair integral of centered orders `k,l`, expanding the physical midpoint
-   suggests the exact identity
-   `M = L_N*J + (m-1)*delta_(N+1)*(I_(m-1,m-1)+I_(m-2,m))`.
-   Prove the product-integral formula with both completion weights, the
-   ordinate phase, and all finite cutoffs retained.
-2. Evaluate the simple-zero head separately, using the physical translated
-   time in its order-one head moment. Its two product terms must use the
-   actual shifted head and finite prefix, with genuine integrability.
-3. Apply the existing zero-tail bounds only at moment orders below `m`.
-   The full order-`m` eta moment is proved nonzero; the new order-`m` term
-   cannot be discarded by multiplicity. Use its exact completed reflection
-   relation to test cancellation against the other channel before taking
-   absolute values. Record either an explicit arithmetic gain or the
-   surviving signed term with all cutoff dependence.
+1. With the candidate linear width `h_N=2(N+1)`, prove summability of
+   `(2N+1)*|M_rho(N)|/h_N` from the new bound. Its majorants have the
+   form `constant*(1+log(2N+5))/(N+1)^(1+sigma)` and the complementary
+   exponent `1+(1-sigma)`. Keep the constants explicit. Combine this
+   with the checked inverse-square-width remainder to prove a new
+   all-cutoff reconstruction stability budget for the original return.
+2. Use the retained finite reflection defect and signed tail pairs to
+   seek an independent estimate of the return itself. Any use of the
+   mixed phase matrix must identify the actual finite eta feature vector
+   and control its dimension, scale, and compression errors. The above
+   midpoint estimate alone cannot bound `S_rho(K)`.
+3. Preserve the unchanged final target: partial sums of
+   `(2N+1)*|J_rho(N)|` bounded uniformly in `K` for every actual zero.
+   That bound would imply RH through the already checked equivalence;
+   it is not an auxiliary estimate already supplied by this package.
 
-The decision point is whether this exact coefficient calculation supplies
-a useful signed estimate beyond the absolute kernel envelope. A gain for
-`M/h` would still need to be connected to an independent estimate for the
-return to control `S_rho(K)`. Two-width subtraction `2*R(2h)-R(h)` could
-remove the first heat correction, but that would improve reconstruction
-only. Broader claims of novelty require comparison with the literature;
-Gaussian asymptotics and operator positivity are established techniques.
+Broader claims of novelty require comparison with the literature.
+Gaussian expansions, moment raising, and operator positivity are
+established techniques; the contribution checked here is their explicit
+combination on the original completed eta carriers.
 
 No reconstruction or summability premise has been introduced as an axiom.
 The goal remains open because the uniform weighted arithmetic estimate is
