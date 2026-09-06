@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "signed matrices and finite Moebius constraints on actual eta tails; uniform bound open.</text>\n" ++
+      "Moebius diagonal estimate and retained cross-cutoff correlations; uniform bound open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -436,8 +436,16 @@ run_cmd do
         "genuine tail. Their signed aggregate with weights mu(d)*d^(-rho), " ++
         "retaining all endpoint corrections, equals the same nonzero source " ++
         "pairedEtaXiCompletionFactor(rho)*(1-2*2^(-rho)) for every M>=2. " ++
-        "This controls a linear combination across divided cutoffs; no transfer " ++
-        "to the original quadratic current's weighted absolute moment is proved. These " ++
+        "Each actual completed divisor term now has the uniform-in-divisor bound " ++
+        "C_rho*M^(-Re(rho)), where C_rho=norm(X_rho)*(norm(rho)/Re(rho)+1)*2^Re(rho). " ++
+        "The actual diagonal energy is at most C_rho^2*M^(1-2*Re(rho)). " ++
+        "The full complex off-diagonal sum equals the source norm squared minus " ++
+        "that diagonal energy, and both reflected completion channels remain " ++
+        "in an exact signed-pair identity. At a hypothetical actual zero with " ++
+        "Re(rho)>1/2, the diagonal tends to zero while the off-diagonal sum " ++
+        "tends to the strictly positive source norm squared. Thus the latter " ++
+        "cannot be dropped. No transfer from these quadratic aggregates " ++
+        "to the original current's weighted absolute moment is proved. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[

@@ -996,19 +996,123 @@ dilation methods are part of the classical
 that connection does not supply the missing approximation or norm estimate.
 No priority claim is made here.
 
-The next concrete test is to propagate these simultaneous linear
-constraints through the actual completed moment pairs and their Gaussian
-returns, accounting for all cross-cutoff terms. A bound on the linear
-aggregate alone does not discharge the goal. Taking absolute values
-before exploiting the Möbius phases loses the arithmetic cancellation
-that this identity has preserved.
+The quadratic test below now propagates these simultaneous linear
+constraints through the actual completed moment pairs, accounting for
+all cross-cutoff terms. Their transfer to the original current and its
+Gaussian returns is still open. Taking absolute values before exploiting
+the Möbius phases loses the arithmetic cancellation that this identity
+has preserved.
+
+## Checked quadratic estimate and surviving cross-cutoff correlations
+
+The compiled modules are
+[EtaMoebiusTermBounds](../RiemannGaussian/EtaMoebiusTermBounds.lean) and
+[EtaMoebiusQuadratic](../RiemannGaussian/EtaMoebiusQuadratic.lean).
+Write `sigma=Re(rho)` and retain each exact completed term as
+
+\[
+ F_{\rho,M}(d)=\mu(d)d^{-\rho}
+ \left[-T_\rho\!\left(\left\lfloor
+       \frac{\lfloor M/d\rfloor}{2}\right\rfloor,0\right)
+       +B_\rho(\lfloor M/d\rfloor)\right].
+\]
+
+`pairedEtaCompletedMoebiusTerm_eq_completed_prefix` identifies it with
+`mu(d)*d^(-rho)*X_rho*E_floor(M/d)(rho)` exactly. No endpoint or phase
+has been removed. At every actual zero,
+`norm_pairedEtaUnpairedDirichletPrefix_le` proves
+
+\[
+ |E_m(\rho)|\le (|\rho|/\sigma+1)m^{-\sigma},\qquad m\ge1.
+\]
+
+The original zero-tail bound controls the paired part. The odd endpoint
+contributes the additional `1` to the coefficient. For every
+`1<=d<=M`, the integer division estimate
+`half_le_mul_nat_div` gives `M/2<=d*floor(M/d)`. Keeping the full complex
+term before applying its norm yields the compiled bound
+`norm_pairedEtaCompletedMoebiusTerm_le`:
+
+\[
+ |F_{\rho,M}(d)|\le C_\rho M^{-\sigma},\qquad
+ C_\rho=|X_\rho|(|\rho|/\sigma+1)2^\sigma>0.
+\]
+
+This coefficient is explicit and independent of both `M` and `d`.
+`pairedEtaCompletedMoebiusDiagonal_le` then proves, for every `M>=1`,
+
+\[
+ 0\le D_\rho(M):=\sum_{d\le M}|F_{\rho,M}(d)|^2
+ \le C_\rho^2 M^{1-2\sigma}.
+\]
+
+This is a genuine quadratic estimate for the original completed divisor
+terms. It does not bound the current's weighted absolute moment.
+The complete complex kernel is retained as
+`F_rho,M(d)*conj(F_rho,M(e))`. Define its off-diagonal sum by
+
+\[
+ O_\rho(M)=\sum_{d\le M}\sum_{\substack{e\le M\\e\ne d}}
+ F_{\rho,M}(d)\overline{F_{\rho,M}(e)}.
+\]
+
+`pairedEtaCompletedMoebiusOffDiagonal_eq_source_sub_diagonal`
+proves the exact complex identity
+
+\[
+ O_\rho(M)=|C_{\mu,\rho}|^2-D_\rho(M),\qquad
+ C_{\mu,\rho}=X_\rho(1-2\,2^{-\rho})\ne0,\quad M\ge2.
+\]
+
+Consequently,
+`norm_pairedEtaCompletedMoebiusOffDiagonal_sub_source_le` proves
+
+\[
+ \left|O_\rho(M)-|C_{\mu,\rho}|^2\right|
+ \le C_\rho^2M^{1-2\sigma}.
+\]
+
+The reflected signed kernel uses the existing
+`etaSignedCompletedPair(F_partner(d), F_partner(e), F_rho(d), F_rho(e))`.
+`sum_offDiagonal_pairedEtaSignedCompletedMoebiusPairKernel`
+retains both original completion channels and their exact orientation:
+its sum over distinct divisors is the signed source pair minus
+`D_partner(M)-D_rho(M)`. The subtraction of the diagonal is an identity,
+not permission to omit it or its off-diagonal complement.
+
+At a hypothetical actual zero with `sigma>1/2`, the proved exponent is
+negative. The terminal theorem
+`pairedEtaCompletedMoebiusOffDiagonal_tendsto_source_of_half_lt_re`
+therefore gives
+
+\[
+ D_\rho(M)\longrightarrow0,
+ \qquad O_\rho(M)\longrightarrow |C_{\mu,\rho}|^2>0.
+\]
+
+`pairedEtaCompletedMoebiusOffDiagonal_re_lower_eventually` additionally
+proves that the real part is eventually at least
+`|C_mu,rho|^2/2`. The distinct-divisor correlations carry a fixed positive
+amount even though the positive diagonal energy vanishes. A quadratic
+argument must therefore retain and estimate these correlations. Smallness
+of the individual terms or their squared-norm sum does not make the
+complete pair sum small.
+
+This test provides an explicit arithmetic rate and identifies the terms
+that prevent a diagonal reduction. It does not exclude an off-critical
+zero. No new zero-location bound, uniform bound for the original return,
+or RH theorem follows from this slice. Priority for the auxiliary estimate
+has not been established.
 
 ## Next mathematical obligations
 
-1. Use the proved finite Möbius constraints to seek a quadratic estimate
-   that rules out the surviving positive endpoint contribution at an
-   actual off-critical zero. All cross-cutoff terms and odd endpoint
-   corrections must be retained. The
+1. Use the full signed Möbius cross-cutoff relations to seek an estimate
+   on the original completed current. The diagonal estimate above is
+   proved, but its complementary correlation sum can have a nonzero
+   limit; that sum cannot be treated as a negligible error. No transfer
+   from these divisor aggregates to the original current is currently
+   proved. All cross-cutoff terms and odd endpoint corrections must be
+   retained. The
    proved matching power bounds show that removing the cutoff growth
    requires such an exclusion; a sharper local approximation alone cannot
    provide it. The signed Euler, half-step head, and heat reconstruction
@@ -1043,11 +1147,12 @@ limiting spectral identification remains conjectural. The repository's
 candidate contribution should therefore be judged at the level of the
 specific eta arithmetic and completed signed estimates.
 
-The next work builds on the checked two-transition comparison and seeks a
+The checked two-transition comparison also remains available for a
 quantitative comparison between heat scales with the completion channels
-retained. The table distinguishes the completed identity from proposed
-estimates and longer-path targets. None of the open targets is a premise
-to add to Lean:
+retained. Any use of it must respect the surviving cross-cutoff
+correlations above. The table distinguishes the completed identity from
+proposed estimates and longer-path targets. None of the open targets is
+a premise to add to Lean:
 
 | Step | Existing input | Concrete target and acceptance condition |
 | --- | --- | --- |
@@ -1071,9 +1176,10 @@ off-critical power bounds for the actual weighted return are now proved.
 Excluding the surviving off-critical endpoint contribution remains open. The next targets are
 **proposed work**, not assumptions to add to the proof chain.
 
-1. Test the simultaneous finite Möbius relations against the actual
-   completed moment pairs, beyond the single-cutoff zero-tail expansion
-   and completion symmetry. Any use of the
+1. Seek an arithmetic estimate on the retained cross-cutoff interactions
+   that controls the original completed moment pairs. Their finite
+   Möbius constraint and positive diagonal bound are now checked, but
+   do not supply this transfer. Any use of the
    mixed phase matrix must identify the actual finite eta feature vector
    and control its dimension, scale, and compression errors. The above
    midpoint and Euler error estimates alone cannot bound `S_rho(K)`

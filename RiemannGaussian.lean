@@ -579,3 +579,5 @@ import RiemannGaussian.EtaCurrentReturnSharpGrowth
 import RiemannGaussian.EtaMoebiusDivisor
 import RiemannGaussian.EtaMoebiusFinitePrefix
 import RiemannGaussian.EtaMoebiusCompletedTail
+import RiemannGaussian.EtaMoebiusTermBounds
+import RiemannGaussian.EtaMoebiusQuadratic
