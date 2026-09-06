@@ -27,20 +27,20 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian is making Gaussian heat on the literal eta support quantitative. Critical heat asymptotics, matrix coercivity, the eta spectral identity, and cutoff/commutator bounds are checked. A quantitative complex-test boundary distribution now supplies the weighted arithmetic input for joint cubic-phase/moving-tilt scaling. That joint limit and its signed-flux application remain the next targets; the cancellation required for RH is open.
+RiemannGaussian is making Gaussian heat on the literal eta support quantitative. The critical heat law, matrix coercivity, spectral identity, and cutoff/commutator bounds are checked. The actual complex displacement now has a proved joint cubic-phase/moving-tilt limit. The next targets are its Gaussian average, mixed matrix limit, and signed-flux application review; the cancellation required for RH remains open.
 
 ## Latest Update
 
-The critical eta boundary law now retains every bounded Lipschitz complex
-test on logarithmic time. With test bound `B`, Lipschitz constant `K`, and
-`R = log(1/r)`, the actual weighted displacement differs from
-`r R ∫₀¹ F(z) dz` by at most `(12B + 4K)r`. The theorem also keeps `R`
-independent of `r`; Lean proves the resulting boundary-distribution limit
-for general asymptotically equivalent scales and for `r = v exp(-R)`.
-These are the weighted arithmetic inputs for the cubic-phase/moving-tilt
-target in the [overnight theorem plan](docs/rh-overnight-theorem-plan.md).
-That joint heat limit and the completed signed eta cancellation remain open.
-No `13/18` certificate exists.
+The actual complex eta displacement now has a joint cubic-phase/moving-tilt
+limit. For `h = exp(-R)`, `σ = 1/2 + λ/R`, and
+`φ(t) = κt/h + αt³/(hR²)`, Lean proves
+`D_{σ,φ}(hv)/(hR) → v ∫₀¹ exp(-2λz) exp(i v(κ+3αz²)) dz` for each `v > 0`.
+The proof retains the exact cubic remainder, bounds its full comparison
+error by an explicit constant times `h`, and controls the moving-tilt tail
+beyond `2R` by `2h² exp(4|λ|)`. Gaussian averaging and the mixed matrix limit
+remain in the [overnight theorem plan](docs/rh-overnight-theorem-plan.md).
+Cubic modulation does not inherit eta's zeros; the completed signed
+cancellation required for RH remains open. No `13/18` certificate exists.
 
 ## Notable Formalisations
 
@@ -60,6 +60,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Eta heat/spectral correspondence** | The actual support/gap heat transfer equals `(1/π) ∫ exp(-h²(y-γ)²) Re(P(s) conj(1/s-P(s))) dy` on every vertical line `Re s > 0`. The uniform critical heat estimate consequently bounds the literal eta spectral correlation. | [pairedEtaSupportGapGaussianLeakage_eq_eta_spectral](RiemannGaussian/EtaSupportGapGaussianSpectral.lean), [pairedEtaSupportGapSpectralKernel_uniform_error_le](RiemannGaussian/EtaSupportGapGaussianSpectral.lean) |
 | **Finite cutoffs and continuous commutator kernels** | Explicit cutoff and fixed-ordinate errors; exact half-tilt commutator factorization, square-integrability, and mixed phase kernel inner products. A logarithmically growing finite cutoff preserves the critical heat profile. | [pairedEtaSupportGapGaussianLeakage_cutoff_error_le](RiemannGaussian/EtaSupportGapGaussianCutoff.lean#L92), [integral_pairedEtaHeatCommutatorPhaseKernel_mixed](RiemannGaussian/Hybrid/EtaSupportGapHeatCommutator.lean#L215) |
 | **Complex weighted eta boundary distribution** | The actual critical boundary measure converges on logarithmic time to the uniform distribution on `[0,1]`, against bounded Lipschitz complex tests. An explicit `(12B + 4K)r` error preserves the test's phase. | [pairedEtaWeightedMismatch_critical_error_le](RiemannGaussian/EtaLogWeightedBoundary.lean), [pairedEtaWeightedMismatch_scaled_tendsto](RiemannGaussian/EtaLogWeightedBoundaryLimit.lean) |
+| **Joint cubic-phase and moving-tilt displacement law** | The actual complex eta displacement has a joint critical scaling profile, with a proved phase comparison error and moving-tilt tail control. The full complex limit precedes Gaussian averaging. | [pairedEtaPhaseMismatch_cubic_test_error_le](RiemannGaussian/EtaCubicMismatchLimit.lean), [pairedEtaPhaseMismatch_cubic_movingTilt_tendsto](RiemannGaussian/EtaCubicMismatchLimit.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 
@@ -127,6 +128,9 @@ positivity or vanishing direction remains unproved.
   The [weighted boundary law](RiemannGaussian/EtaLogWeightedBoundary.lean)
   further retains arbitrary bounded Lipschitz complex tests, with an explicit
   error and a [logarithmic distribution limit](RiemannGaussian/EtaLogWeightedBoundaryLimit.lean).
+  This now gives a [joint cubic-phase/moving-tilt limit](RiemannGaussian/EtaCubicMismatchLimit.lean)
+  for the actual complex displacement, with the signed phase remainder and
+  the omitted time interval controlled separately.
   This is new in the repository; wider mathematical priority has not been established.
 - **Made actual eta phase-matrix positivity quantitative.**
   [pairedEtaSupportGapScaledPhaseGram_integer_coercive](RiemannGaussian/Hybrid/EtaSupportGapPhaseCoercivity.lean#L276)

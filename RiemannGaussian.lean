@@ -500,3 +500,7 @@ import RiemannGaussian.Hybrid.EtaSupportGapHeatCommutator
 import RiemannGaussian.EtaLogBoundaryQuadrature
 import RiemannGaussian.EtaLogWeightedBoundary
 import RiemannGaussian.EtaLogWeightedBoundaryLimit
+import RiemannGaussian.EtaPhaseMismatchBounds
+import RiemannGaussian.EtaCubicBoundaryTest
+import RiemannGaussian.EtaCubicPhaseIncrement
+import RiemannGaussian.EtaCubicMismatchLimit

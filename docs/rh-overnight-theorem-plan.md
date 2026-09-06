@@ -57,10 +57,23 @@ test bounded by `B` with Lipschitz constant `K`, it proves
 converges to `integral_0^1 F`, including `r = v exp(-R)` for every fixed
 `v > 0`. The complex test is not replaced by its modulus.
 
-The core targets through (7) and this weighted input are implemented. Still
-outstanding: substituting the moving tilt and cubic phase, justifying the
-Gaussian dominated limit in (8), its finite mixed matrix limit, and the
-review of a quantitative application to the completed signed leading flux.
+The sixth slice supplies the actual complex displacement limit underlying
+(8). `EtaCubicBoundaryTest.lean` constructs the bounded Lipschitz test and
+checks its exact agreement on the limiting interval.
+`EtaCubicPhaseIncrement.lean` retains the signed cubic remainder and its
+quantitative local bound. `EtaPhaseMismatchBounds.lean` provides genuine
+measurability and phase-uniform time tails. `EtaCubicMismatchLimit.lean`
+proves, with `h = exp(-R)`, `R >= max(1,4|lambda|)`, and `v >= 0`, that the
+true displacement differs from the complex boundary test by at most
+`h exp(4|lambda|) (|alpha| v^2 (6+v) + 3)`.
+For every fixed `v > 0`, its normalization by `h R` converges to
+`v integral_0^1 exp(-2lambda z) exp(i v(kappa+3alpha z^2)) dz`.
+The moving-tilt time tail beyond `2R` is at most `2h^2 exp(4|lambda|)`.
+
+The core targets through (7) and the full complex displacement limit are
+implemented. Still outstanding: the Gaussian dominated limit in (8), its
+finite mixed matrix limit, and the review of a quantitative application to
+the completed signed leading flux.
 No RH or improved-proportion milestone follows from these auxiliary results.
 
 **Recommendation:** make Gaussian heat on the literal eta support quantitative,
