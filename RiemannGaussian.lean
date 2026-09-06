@@ -598,3 +598,7 @@ import RiemannGaussian.EtaZetaDyadicRectangle
 import RiemannGaussian.EtaZetaStripDerivative
 import RiemannGaussian.EtaZetaPrimeProduct
 import RiemannGaussian.EtaPrimeProductZeroMargin
+import RiemannGaussian.EtaMomentDivisorEndpoints
+import RiemannGaussian.EtaMomentMoebiusTransform
+import RiemannGaussian.EtaMomentMoebiusInverse
+import RiemannGaussian.EtaCurrentMomentMoebiusInverse

@@ -27,30 +27,30 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Use independent arithmetic constraints to exclude the off-critical contribution to the original signed eta current. The literal eta support and classical prime-product positivity now give an explicit positive zero margin from both strip edges, and an ordinate-based return-growth exponent. That exponent still permits cutoff growth. The full cutoff-independent weighted estimate and RH remain open.
+Seek arithmetic cancellation in the original signed eta current. Every centered moment now has exact Möbius reconstruction, and complete transformed sums have uniform bounds at fixed centers. The next estimate must control their signed inverse weights and moving centers. The explicit zero margin still permits interior off-critical zeros; the cutoff-independent weighted bound and RH remain open.
 
 ## Latest Update
 
-Lean now proves an **explicit zero-location bound for every actual
-nontrivial zeta zero** `rho = sigma + i*gamma`:
-`delta(gamma) <= sigma <= 1-delta(gamma)`, where
-`delta(t) = min(1/4, |t|^5 / (16*3200^3*64^4*(|t|+21)^10)) > 0`
-at every actual zero. The terminal theorem is
-[nontrivialZetaZero_mem_etaPrimeProduct_strip](RiemannGaussian/EtaPrimeProductZeroMargin.lean).
+Lean now proves **Möbius reconstruction at every centered moment order**,
+including the adjacent moments required by repeated zeros. Each divisor keeps
+its complex weight, divided cutoff, center shift by `log(d)`, and odd endpoint
+correction. The entire transformed sum reduces to two explicit endpoint
+polynomials and has a bound uniform in the cutoff **at a fixed center**:
+[norm_pairedEtaCompletedMomentMoebiusAggregate_le](RiemannGaussian/EtaMomentMoebiusTransform.lean).
 
-The proof combines the literal eta support bound with maximum modulus,
-Cauchy's derivative estimate, and Mathlib's classical three-four-one
-prime-product inequality. The pole-removed zeta bound holds across every
-dyadic resonance, so no division by a vanishing eta factor is assumed.
-Reflection supplies the bound at both strip edges. This is a deliberately
-weak application of the classical [prime-positivity method](https://people.math.harvard.edu/~elkies/M229.20/free.pdf); no improvement over established
-analytic zero-free regions or novelty priority is claimed.
+The inverse recovers the original completed moments exactly in
+[pairedEtaFiniteCompletedMoment_eq_momentInverse](RiemannGaussian/EtaMomentMoebiusInverse.lean).
+It gives the unchanged current as a signed double divisor sum for repeated
+zeros and the corresponding head sum for simple zeros:
+[pairedEtaLeadingCurrent_eq_momentInverse_adjacent](RiemannGaussian/EtaCurrentMomentMoebiusInverse.lean),
+[pairedEtaLeadingCurrent_eq_momentInverse_head](RiemannGaussian/EtaCurrentMomentMoebiusInverse.lean).
 
-For the unchanged Gaussian return, Lean consequently proves
-`S_rho(K) <= C_rho*(K+1)^(1-2*delta(gamma))` in both multiplicity branches:
-[pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaPrimeProduct](RiemannGaussian/EtaPrimeProductZeroMargin.lean).
-The exponent remains positive. The [full goal](docs/eta-current-reconstruction-plan.md)
-still requires a bound independent of `K`; RH and the `13/18` certificate remain open.
+This closes the higher-order reconstruction interface. The inverse weights
+and translated centers still depend on the physical cutoff; the fixed-center
+aggregate bound does not control the current's weighted absolute sum.
+The [full goal](docs/eta-current-reconstruction-plan.md), RH, and the
+`13/18` certificate remain open. This update does not improve the previously
+proved explicit zero margin.
 
 ## Notable Formalisations
 
@@ -88,10 +88,10 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Linear-width weighted reconstruction** | The actual midpoint gain makes the entire odd-weighted reconstruction error summable already at width `2(N+1)`. One explicit finite budget bounds every partial error sum and the difference of the original return and current's first absolute moments. | [pairedEtaLeadingCurrentLinearHeatReturn_weighted_error_le](RiemannGaussian/EtaCurrentLinearHeatSchedule.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_stability](RiemannGaussian/EtaCurrentLinearHeatReconstruction.lean) |
 | **Signed arithmetic endpoint estimate** | Both original current branches and the actual linear-width return have summable weighted error from explicit completed Euler endpoint expressions. The head evaluates exactly, and adjacent Euler products retain positive coefficients after their common Fourier phase cancels. | [pairedEtaHeadCompletedMoment_zero_eq_endpoints](RiemannGaussian/EtaCurrentEulerArithmetic.lean), [pairedEtaCurrentEulerAdjacentCoefficient_pos](RiemannGaussian/EtaCurrentEulerArithmetic.lean), [pairedEtaLeadingCurrentLinearHeatReturn_euler_error_sum_le](RiemannGaussian/EtaCurrentEulerEstimate.lean) |
 | **Sublinear weighted return bound** | The actual return's first absolute moment is at most `C_rho (K+1)^|2 Re(rho)-1|`. Both multiplicity branches and their completion constants are retained, with exact critical-line cancellation handled separately; dividing the moment by `K+1` gives a limit of zero. | [pairedEtaLeadingCurrent_weighted_le_doubleDecay](RiemannGaussian/EtaCurrentArithmeticEnvelope.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_growth_le](RiemannGaussian/EtaCurrentReturnGrowth.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_div_cutoff_tendsto_zero](RiemannGaussian/EtaCurrentReturnGrowth.lean) |
-| **Explicit eta and prime-product zero margin** | Every actual zero satisfies `delta(Im rho) <= Re rho <= 1-delta(Im rho)` for the explicit positive rational-power function above. The literal eta support bounds pole-removed zeta across dyadic resonances; Cauchy's estimate and classical prime positivity discharge the zero exclusion. It gives an ordinate-based exponent for the original return, while its uniform weighted bound remains open. | [norm_riemannZeta₁_le_etaStrip](RiemannGaussian/EtaZetaDyadicRectangle.lean), [one_le_etaPrimeProduct_zero_gap](RiemannGaussian/EtaZetaPrimeProduct.lean), [nontrivialZetaZero_mem_etaPrimeProduct_strip](RiemannGaussian/EtaPrimeProductZeroMargin.lean) |
+| **Explicit eta and prime-product zero margin** | Every actual zero satisfies `delta(Im rho) <= Re rho <= 1-delta(Im rho)` for the explicit positive function `etaPrimeProductZeroMargin`. The literal eta support bounds pole-removed zeta across dyadic resonances; Cauchy's estimate and classical prime positivity discharge the zero exclusion. It gives an ordinate-based exponent for the original return, while its uniform weighted bound remains open. | [norm_riemannZeta₁_le_etaStrip](RiemannGaussian/EtaZetaDyadicRectangle.lean), [one_le_etaPrimeProduct_zero_gap](RiemannGaussian/EtaZetaPrimeProduct.lean), [nontrivialZetaZero_mem_etaPrimeProduct_strip](RiemannGaussian/EtaPrimeProductZeroMargin.lean) |
 | **Positive principal endpoints for both multiplicities** | The actual current and return have summable weighted error from one signed difference of complementary endpoint decays, with both completion coefficients strictly positive. The simple head's complex phase correction is explicit; one finite budget controls every difference of first absolute moments. | [pairedEtaCurrentPrincipalCoefficient_pos](RiemannGaussian/EtaCurrentPrincipalEndpoints.lean), [pairedEtaCurrentHalfStepHead_mul_conj_euler](RiemannGaussian/EtaCurrentHalfStepPairs.lean), [pairedEtaLeadingCurrentLinearHeatReturn_principal_firstMoment_stability](RiemannGaussian/EtaCurrentPrincipalEndpoints.lean) |
 | **Sharp growth at a hypothetical off-critical zero** | Assuming an actual zero is off the critical line, its slower positive completion channel gives matching eventual displacement-power bounds for the original return's weighted first absolute moment. An explicit finite offset gives an all-cutoff lower bound, and the moment tends to infinity. This does not exclude such a zero. | [pairedEtaCurrentPrincipalEndpoint_eq_dominant_factor](RiemannGaussian/EtaCurrentPrincipalDominance.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_lower_with_offset](RiemannGaussian/EtaCurrentReturnSharpGrowth.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_power_bounds_eventually](RiemannGaussian/EtaCurrentReturnSharpGrowth.lean) |
-| **Finite Möbius constraints and eta phase cancellation** | Fixed odd/even divisor pairs have period cancellation, and the full parity aggregates have uniform bounds. Exact inverse weights recover the original simple-zero current. Whole inverse blocks at different divided cutoffs retain opposite explicit complex Mellin main terms with a decaying joint error; the current's uniform weighted bound remains open. | [norm_pairedEtaSignedCompletedMoebiusDyadicCorrelation_le](RiemannGaussian/EtaMoebiusDyadicCorrelation.lean), [pairedEtaLeadingCurrent_eq_oddInverse_head](RiemannGaussian/EtaCurrentMoebiusInverse.lean), [norm_pairedEtaCompletedOddInverseTop_sub_main_le](RiemannGaussian/EtaMoebiusGroupedInverse.lean), [norm_pairedEtaCompletedOddInverseBottom_add_main_le](RiemannGaussian/EtaMoebiusGroupedInverse.lean) |
+| **Finite Möbius constraints and eta phase cancellation** | Fixed odd/even divisor pairs have period cancellation, and zeroth-order parity aggregates have uniform bounds. Every centered moment now has full Möbius inversion with exact center translations and a fixed-center aggregate bound. Both original current branches reconstruct, including the adjacent-order double sum for repeated zeros. The weighted bound remains open. | [norm_pairedEtaSignedCompletedMoebiusDyadicCorrelation_le](RiemannGaussian/EtaMoebiusDyadicCorrelation.lean), [pairedEtaLeadingCurrent_eq_oddInverse_head](RiemannGaussian/EtaCurrentMoebiusInverse.lean), [norm_pairedEtaCompletedOddInverseTop_sub_main_le](RiemannGaussian/EtaMoebiusGroupedInverse.lean), [norm_pairedEtaCompletedOddInverseBottom_add_main_le](RiemannGaussian/EtaMoebiusGroupedInverse.lean), [norm_pairedEtaCompletedMomentMoebiusAggregate_le](RiemannGaussian/EtaMomentMoebiusTransform.lean), [pairedEtaLeadingCurrent_eq_momentInverse_adjacent](RiemannGaussian/EtaCurrentMomentMoebiusInverse.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 

@@ -210,8 +210,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Eta support + prime positivity: explicit zero margin; " ++
-      "return exponent 1-2*delta, uniform weighted bound open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">All-order centered Moebius reconstruction checked; " ++
+      "fixed-center aggregate bounds; original weighted bound open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -502,8 +502,19 @@ run_cmd do
         "S_R(rho,K)<=C_rho*(K+1)^(1-2*delta(Im(rho))) in both multiplicity " ++
         "branches. This exponent lies in [1/2,1) and still allows cutoff growth. " ++
         "The zero margin is deliberately weak; no improvement over classical " ++
-        "analytic zero-free regions or novelty priority is claimed. A weighted signed " ++
-        "estimate and higher centered order control remain open. No uniform transfer estimate " ++
+        "analytic zero-free regions or novelty priority is claimed. The full Moebius " ++
+        "transform now also evaluates every centered moment order. Its divisor d " ++
+        "keeps the center a-log(d), divided cutoff floor(M/d), and exact odd " ++
+        "endpoint polynomial. With c=X_rho*rho and Q_k the existing moment " ++
+        "antiderivative polynomial, the aggregate is exactly " ++
+        "c*(Q_k(-a)-2*2^(-rho)*Q_k(log(2)-a)) for M>=2. An explicit " ++
+        "polynomial envelope bounds all cutoffs at every fixed center. Finite " ++
+        "inversion with both cutoff and center translations recovers every " ++
+        "original completed moment; both current branches consequently have " ++
+        "exact signed inverse formulas, including the double divisor sum at " ++
+        "adjacent orders for repeated zeros. The inverse weights and moving " ++
+        "centers are still uncontrolled in the weighted current estimate. " ++
+        "This does not improve the explicit zero margin. No uniform transfer estimate " ++
         "to the original current's weighted absolute moment is proved. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

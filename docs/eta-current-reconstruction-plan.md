@@ -50,6 +50,7 @@ the objective.
 | Recover the original simple-zero current from the parity aggregates | `pairedEtaFiniteCompletedMoment_zero_eq_oddInverse` in [EtaMoebiusParityInverse.lean](../RiemannGaussian/EtaMoebiusParityInverse.lean) and `pairedEtaLeadingCurrent_eq_oddInverse_head` in [EtaCurrentMoebiusInverse.lean](../RiemannGaussian/EtaCurrentMoebiusInverse.lean). | The exact inverse weights, divided cutoffs, and both signed head channels are proved. Their absolute weight mass has matching positive-power bounds in [EtaMoebiusInverseWeights.lean](../RiemannGaussian/EtaMoebiusInverseWeights.lean), so termwise norms do not supply a uniform transfer. |
 | Sum equal-cutoff inverse phases and retain cancellation with the complementary cutoffs | Complex midpoint control in [EtaOddPowerQuadrature.lean](../RiemannGaussian/EtaOddPowerQuadrature.lean), the nonzero Mellin coefficient in [EtaOddPowerMellin.lean](../RiemannGaussian/EtaOddPowerMellin.lean), and `norm_pairedEtaCompletedOddInverseBottom_add_main_le` in [EtaMoebiusGroupedInverse.lean](../RiemannGaussian/EtaMoebiusGroupedInverse.lean). | The full top inverse block grows after its phases are summed. The complementary block has the opposite explicit complex main term with a decaying error. Their sum is the actual zeroth completed moment; the weighted signed-current bound remains open. |
 | Obtain an independent arithmetic exclusion and transport it to the original return | `one_le_etaPrimeProduct_zero_gap` in [EtaZetaPrimeProduct.lean](../RiemannGaussian/EtaZetaPrimeProduct.lean), `nontrivialZetaZero_mem_etaPrimeProduct_strip`, and `pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaPrimeProduct` in [EtaPrimeProductZeroMargin.lean](../RiemannGaussian/EtaPrimeProductZeroMargin.lean). | Every actual zero lies between the explicit positive margins `delta(Im rho)` and `1-delta(Im rho)`. The original return is bounded by `C_rho*(K+1)^(1-2*delta(Im rho))`. The exponent remains positive; the uniform weighted goal remains open. |
+| Reconstruct and control full Möbius transforms at every centered moment order | `norm_pairedEtaCompletedMomentMoebiusAggregate_le` in [EtaMomentMoebiusTransform.lean](../RiemannGaussian/EtaMomentMoebiusTransform.lean), `pairedEtaFiniteCompletedMoment_eq_momentInverse` in [EtaMomentMoebiusInverse.lean](../RiemannGaussian/EtaMomentMoebiusInverse.lean), and both current branches in [EtaCurrentMomentMoebiusInverse.lean](../RiemannGaussian/EtaCurrentMomentMoebiusInverse.lean). | Exact two-endpoint cancellation and all-cutoff aggregate bounds are proved at fixed centers for every order. The inverse preserves all center shifts and recovers the original repeated-zero double sum. The weighted inverse estimate at moving physical centers remains open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -1585,6 +1586,100 @@ the new exponent in `[1/2,1)`. It therefore still permits cutoff growth.
 The interior off-critical contribution remains unexcluded, and the full
 cutoff-independent weighted arithmetic estimate remains open.
 
+## Centered Möbius reconstruction at every moment order
+
+The full moment transform now extends the arithmetic reconstruction to every
+order, including the adjacent pair required at repeated zeros. Write
+`c_rho = X_rho*rho` and let `Q_(k,rho)(u)` denote the existing centered
+antiderivative polynomial, expressed in its offset `u`:
+
+\[
+ Q_{0,\rho}(u)=\rho^{-1},\qquad
+ Q_{k+1,\rho}(u)=\frac{u^{k+1}}\rho+
+   \frac{k+1}\rho Q_{k,\rho}(u).
+\]
+
+The new unpaired arithmetic prefix is
+
+\[
+ E_{k,\rho}(M,a)=\sum_{1\le n\le M}
+   a(n)n^{-\rho}Q_{k,\rho}(\log n-a),
+\]
+
+where `a(n)` is the original odd-positive/even-negative eta coefficient.
+`pairedEtaUnpairedCenteredMomentPrefix_even` identifies its even cutoffs
+with the original finite centered eta moment. The theorem
+`pairedEtaUnpairedCenteredMomentPrefix_eq_paired_add_endpoint` retains the
+exact odd endpoint at every divided cutoff. All integral hypotheses come
+from the existing interval antiderivative theorem; its nonzero spectral
+parameter is discharged for every actual zero.
+
+Define the full completed transform
+
+\[
+ T_{k,\rho}(M,a)=\sum_{1\le d\le M}\mu(d)d^{-\rho}
+   c_\rho E_{k,\rho}(\lfloor M/d\rfloor,a-\log d).
+\]
+
+The center translation applies to every term of the endpoint polynomial.
+`pairedEtaCompletedMomentMoebiusAggregate_eq_source` proves, for `M>=2`,
+
+\[
+ T_{k,\rho}(M,a)=c_\rho\left(
+   Q_{k,\rho}(-a)-2\,2^{-\rho}Q_{k,\rho}(\log2-a)\right).
+\]
+
+This follows from actual finite divisor cancellation, with both Mellin
+phases recombined before the Möbius convolution is evaluated. At order
+zero, `pairedEtaCompletedMomentMoebiusTerm_zero` proves exact agreement
+with the previously used completed divisor term.
+
+The explicit nonnegative polynomial envelope is
+
+\[
+ B_{0,\rho}(R)=\|\rho\|^{-1},\qquad
+ B_{k+1,\rho}(R)=\frac{R^{k+1}}{\|\rho\|}+
+   \frac{k+1}{\|\rho\|}B_{k,\rho}(R).
+\]
+
+`norm_pairedEtaCompletedMomentMoebiusAggregate_le` proves, for **every**
+integer cutoff `M`,
+
+\[
+ \|T_{k,\rho}(M,a)\|\le
+ \|c_\rho\|(1+2\|2^{-\rho}\|)B_{k,\rho}(|a|+\log2).
+\]
+
+This is uniform in `M` at each fixed center `a`. Its center dependence is
+explicit and cannot be discarded at a moving physical center.
+
+Finite inversion translates the center and the cutoff together. The
+terminal theorem `pairedEtaFiniteCompletedMoment_eq_momentInverse` proves
+
+\[
+ A_{\rho,N,k}=\sum_{1\le d\le2N}d^{-\rho}
+   T_{k,\rho}(\lfloor2N/d\rfloor,L_N-\log d),
+ \qquad L_N=\texttt{pairedEtaLogTailCutoff}(N).
+\]
+
+The complex pair theorem
+`pairedEtaFiniteCompletedMomentPair_eq_momentInverse` keeps both independent
+divisor indices. It yields
+`pairedEtaLeadingCurrent_eq_momentInverse_adjacent` for the original
+repeated-zero current at orders `m-2,m-1`, with the original factor
+`2*(m-1)*delta_N` and physical cutoff `2*(N+2)`. The simple-zero branch is
+`pairedEtaLeadingCurrent_eq_momentInverse_head`, retaining the actual head
+and the order-zero inverse sum. These theorems precede any absolute-value
+estimate and keep both completed reflection channels.
+
+The higher-order reconstruction interface is now discharged. The full
+transformed moments have proved fixed-center bounds, but their inverses
+use complex weights and centers depending on `N` and each divisor. No
+bound for the unchanged weighted current follows by discarding those
+dependencies. The earlier sharp off-critical return growth remains in
+force; excluding that contribution remains the open objective. This slice
+does not improve the explicit zero-location margin or claim novelty priority.
+
 ## Next mathematical obligations
 
 The independent prime-product input now excludes the explicit edge regions
@@ -1595,8 +1690,8 @@ target. The following inverse and heat carriers remain available for that
 task; their established identities alone do not supply the missing estimate.
 
 1. Prove cancellation in the exact inverse-weighted signed head sum
-   above, strong enough to bound the original current's weighted absolute
-   moment, and supply the corresponding higher-centered-order control.
+   above and its now-proved higher-order counterpart, strong enough to bound
+   the original current's weighted absolute moment at moving physical centers.
    The entire odd and even aggregate and all four quadratic block sums
    already have uniform bounds at one physical cutoff. The simple-zero
    current now has an exact reconstruction from those odd aggregates.
@@ -1689,7 +1784,9 @@ Excluding the surviving off-critical endpoint contribution remains open. The nex
    and the complementary cutoffs have the opposite term with a decaying
    error. These relations must remain available when estimating the
    two completed channels together.
-   Higher-centered-order estimates also remain open.
+   Full transformed moments now have fixed-center bounds at every order,
+   and the original repeated-zero current has an exact double inverse sum.
+   Uniform control of that inverse sum at moving centers remains open.
    Any use of the earlier period averages must also preserve their
    divisor-dependent normalizers and errors. Any use of the
    mixed phase matrix must identify the actual finite eta feature vector
