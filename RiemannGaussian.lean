@@ -512,3 +512,5 @@ import RiemannGaussian.EtaAlternatingReal
 import RiemannGaussian.EtaOverlapAveraging
 import RiemannGaussian.EtaOverlapWallis
 import RiemannGaussian.EtaOverlapTail
+import RiemannGaussian.EtaLogTailWallis
+import RiemannGaussian.EtaLogFinitePart

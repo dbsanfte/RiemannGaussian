@@ -16,8 +16,8 @@ averaging or second-order asymptotic premise qualifies as implementation.
 
 | Part | Checked result | Remaining work |
 | --- | --- | --- |
-| 1. Actual arithmetic overlap | [Exact eta/periodic-colour identity](../RiemannGaussian/EtaAlternatingReal.lean), [real-scale cell and primitive estimates](../RiemannGaussian/EtaOverlapAveraging.lean), [Wallis integral](../RiemannGaussian/EtaOverlapWallis.lean), and [quantitative infinite-tail evaluation](../RiemannGaussian/EtaOverlapTail.lean). | Carry the exponential change of variables through the actual complex weighted tail. |
-| 2. Two-endpoint finite part | Not yet proved. | Refine the finite harmonic quadrature, combine it with the evaluated tail, and prove a uniform error for bounded Lipschitz complex tests. |
+| 1. Actual arithmetic overlap | [Exact eta/periodic-colour identity](../RiemannGaussian/EtaAlternatingReal.lean), [real-scale cell and primitive estimates](../RiemannGaussian/EtaOverlapAveraging.lean), [Wallis integral](../RiemannGaussian/EtaOverlapWallis.lean), [quantitative infinite-tail evaluation](../RiemannGaussian/EtaOverlapTail.lean), and [exact transport back to the logarithmic eta tail](../RiemannGaussian/EtaLogTailWallis.lean). | Complete for the scalar arithmetic tail; retain it as input to the weighted law. |
+| 2. Two-endpoint finite part | [Scalar finite part and constant complex tests](../RiemannGaussian/EtaLogFinitePart.lean). | Refine the finite harmonic quadrature, control nonconstant complex tests on the actual tail, and prove the two-endpoint limit with a uniform error for bounded Lipschitz tests. |
 | 3. Signed heat reflection | Not yet proved. | Add the quadratic phase, prove the second-order Gaussian expansion and its integrable remainder, then cancel the leading profiles by reflection. |
 | 4. Full mixed matrix | Not yet proved. | Apply the second-order law to every mixed entry, preserving the signed endpoint decomposition and any dimension cost. |
 | 5. Completed-current audit | The [previous review](rh-overnight-signed-flux-review.md) identifies a support mismatch and missing completion/moment estimates. | Audit one exact proposed pairing with the new signed heat object. A remaining conjecture-strength estimate must be left open explicitly. |
@@ -37,6 +37,22 @@ theorem is `integral_Ioi_etaRescaledOverlap_div_sq_error_le`; at `a = 1`
 the error is at most `5 * epsilon`. The proof retains the exact signed
 integration-by-parts identity
 `integral_etaOverlapError_div_sq_eq_primitive` upstream of the bound.
+
+The scalar specialization of part 2 is now proved by
+`pairedEtaMismatch_half_finite_part_tendsto`:
+
+\[
+ D_{1/2}(r)/r-\log(1/r)\longrightarrow\gamma_E-\log(\pi/2)
+ \quad(r\to0^+).
+\]
+
+The proof retains a quantitative harmonic remainder at the existing cutoff:
+with `epsilon = exp(r)-1` and `M = floor(1/(2r))`, the difference between
+`D_(1/2)(r)/epsilon + log(epsilon)` and
+`harmonic(M)-log(M)-log(pi/2)` is at most `32*epsilon` for `0 < r ≤ 1/8`.
+Changing normalization back to `r` includes a separate proof that the
+singular logarithmic correction vanishes. Constant complex tests inherit
+the limit exactly; nonconstant tests remain the immediate obstruction.
 
 ## 1. Arithmetic averaging on the actual carrier
 

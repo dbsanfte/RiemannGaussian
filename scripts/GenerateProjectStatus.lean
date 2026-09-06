@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "phase/matrix limits, and quantitative Wallis overlap-tail evaluation.</text>\n" ++
+      "phase/matrix limits, Wallis tail, and evaluated scalar finite part.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -293,8 +293,11 @@ run_cmd do
         "an exact triangular period average and Wallis inverse-square integral. " ++
         "At every real scale 0 < epsilon <= 1 and lower cutoff 0 < a <= 1, " ++
         "the actual infinite tail has error at most 4*epsilon/a + epsilon/a^2; " ++
-        "the signed primitive identity is retained. The weighted two-endpoint " ++
-        "finite part and second-order signed heat/matrix laws remain targets. " ++
+        "the signed primitive identity is retained. Exact logarithmic-tail transport " ++
+        "and harmonic cutoff cancellation now prove the actual scalar limit " ++
+        "D_(1/2)(r)/r - log(1/r) -> gamma_E - log(pi/2), including every constant " ++
+        "complex test. Nonconstant weighted endpoint corrections and second-order " ++
+        "signed heat/matrix laws remain targets. " ++
         "The signed-flux application review " ++
         "identifies the missing completed kernel identity and uniform estimates. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
