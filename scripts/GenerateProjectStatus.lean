@@ -210,8 +210,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">All-order centered Moebius reconstruction checked; " ++
-      "fixed-center aggregate bounds; original weighted bound open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Eta + prime positivity: stronger repeated-zero margin; " ++
+      "positive return exponent; uniform weighted bound open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -514,7 +514,23 @@ run_cmd do
         "exact signed inverse formulas, including the double divisor sum at " ++
         "adjacent orders for repeated zeros. The inverse weights and moving " ++
         "centers are still uncontrolled in the weighted current estimate. " ++
-        "This does not improve the explicit zero margin. No uniform transfer estimate " ++
+        "A separate multiplicity argument now strengthens the zero margin. The " ++
+        "entire pole-removed zeta function retains the full analytic multiplicity m. " ++
+        "The higher-order Schwarz lemma on the eta-bounded quarter-radius disc " ++
+        "gives norm(Z1(2-Re(rho)+i*Im(rho)))<=8*(abs(Im(rho))+21)^2*" ++
+        "(8*(1-Re(rho)))^m when Re(rho)>=15/16. Combining this actual small " ++
+        "value with the same prime-product inequality yields " ++
+        "(1-Re(rho))^(4*m-3)>=abs(Im(rho))^5/" ++
+        "(16*3200^3*8^(4*m+4)*(abs(Im(rho))+21)^10). The explicit margin " ++
+        "Delta_m(y) is the minimum of 1/16 and the positive (4*m-3)-th root " ++
+        "of that ratio. Every actual zero satisfies " ++
+        "Delta_m(Im(rho))<=Re(rho)<=1-Delta_m(Im(rho)). Lean proves " ++
+        "Delta_1(y)=delta(y) and Delta_m(y)>delta(y) for m>=2 and y!=0. " ++
+        "Thus the original return has a strictly smaller proved exponent for " ++
+        "repeated zeros, while the simple-zero bound is unchanged. The exponent " ++
+        "1-2*Delta_m(Im(rho)) remains in [7/8,1). This improves the repository's " ++
+        "previous bound; no improvement over classical zero-free regions or " ++
+        "novelty priority is claimed. No uniform transfer estimate " ++
         "to the original current's weighted absolute moment is proved. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

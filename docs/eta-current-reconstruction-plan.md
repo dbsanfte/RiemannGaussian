@@ -51,6 +51,7 @@ the objective.
 | Sum equal-cutoff inverse phases and retain cancellation with the complementary cutoffs | Complex midpoint control in [EtaOddPowerQuadrature.lean](../RiemannGaussian/EtaOddPowerQuadrature.lean), the nonzero Mellin coefficient in [EtaOddPowerMellin.lean](../RiemannGaussian/EtaOddPowerMellin.lean), and `norm_pairedEtaCompletedOddInverseBottom_add_main_le` in [EtaMoebiusGroupedInverse.lean](../RiemannGaussian/EtaMoebiusGroupedInverse.lean). | The full top inverse block grows after its phases are summed. The complementary block has the opposite explicit complex main term with a decaying error. Their sum is the actual zeroth completed moment; the weighted signed-current bound remains open. |
 | Obtain an independent arithmetic exclusion and transport it to the original return | `one_le_etaPrimeProduct_zero_gap` in [EtaZetaPrimeProduct.lean](../RiemannGaussian/EtaZetaPrimeProduct.lean), `nontrivialZetaZero_mem_etaPrimeProduct_strip`, and `pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaPrimeProduct` in [EtaPrimeProductZeroMargin.lean](../RiemannGaussian/EtaPrimeProductZeroMargin.lean). | Every actual zero lies between the explicit positive margins `delta(Im rho)` and `1-delta(Im rho)`. The original return is bounded by `C_rho*(K+1)^(1-2*delta(Im rho))`. The exponent remains positive; the uniform weighted goal remains open. |
 | Reconstruct and control full Möbius transforms at every centered moment order | `norm_pairedEtaCompletedMomentMoebiusAggregate_le` in [EtaMomentMoebiusTransform.lean](../RiemannGaussian/EtaMomentMoebiusTransform.lean), `pairedEtaFiniteCompletedMoment_eq_momentInverse` in [EtaMomentMoebiusInverse.lean](../RiemannGaussian/EtaMomentMoebiusInverse.lean), and both current branches in [EtaCurrentMomentMoebiusInverse.lean](../RiemannGaussian/EtaCurrentMomentMoebiusInverse.lean). | Exact two-endpoint cancellation and all-cutoff aggregate bounds are proved at fixed centers for every order. The inverse preserves all center shifts and recovers the original repeated-zero double sum. The weighted inverse estimate at moving physical centers remains open. |
+| Strengthen the independent zero margin using actual multiplicity | `one_le_etaPrimeProduct_multiplicity_gap` in [EtaPrimeProductMultiplicityGap.lean](../RiemannGaussian/EtaPrimeProductMultiplicityGap.lean), `nontrivialZetaZero_mem_etaPrimeProductMultiplicity_strip` in [EtaPrimeProductMultiplicityMargin.lean](../RiemannGaussian/EtaPrimeProductMultiplicityMargin.lean), and `etaPrimeProductZeroMargin_lt_multiplicity` in [EtaPrimeProductMultiplicityComparison.lean](../RiemannGaussian/EtaPrimeProductMultiplicityComparison.lean). | The exact margin equals the previous bound at multiplicity one and is strictly larger at every nonzero ordinate for multiplicity at least two. The original return has the smaller exponent `1-2*Delta_m(Im rho)`, still in `[7/8,1)`. The uniform weighted goal remains open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -1680,11 +1681,108 @@ dependencies. The earlier sharp off-critical return growth remains in
 force; excluding that contribution remains the open objective. This slice
 does not improve the explicit zero-location margin or claim novelty priority.
 
+## Independent prime positivity with full zero multiplicity
+
+The fixed-center moment transform does not itself remove the original
+current's proved off-critical growth. A separate use of the actual analytic
+multiplicity now strengthens the independent prime-product exclusion.
+Write `m=analyticZetaZeroMultiplicity rho>=1`, `t=abs(Im rho)`, and
+`d=1-Re rho>0`.
+
+`riemannZeta₁_eventuallyEq_multiplicity_factor` proves that the entire
+pole-removed zeta function has the local form
+
+\[
+ Z_1(z)=(z-\rho)^m g(z),
+\]
+
+with `g` analytic and nonzero at the original zero. It uses the checked analytic
+multiplicity of the literal zeta function and the factor `z-1`, which is
+nonzero at that zero. No assumed derivative vanishing or assigned
+multiplicity enters the estimate. This supplies the full little-oh
+condition for Mathlib's higher-order Schwarz lemma.
+
+The actual eta strip estimate bounds the whole radius-`1/4` disc by
+`8*(t+21)^2` when `Re rho>=3/4`.
+`norm_riemannZeta₁_le_etaMultiplicity_ball` consequently proves
+
+\[
+ \|Z_1(z)\|\le8(t+21)^2(4\|z-\rho\|)^m
+ \quad\text{for }|z-\rho|<1/4.
+\]
+
+If `Re rho>=15/16`, the point `2-Re rho+i*Im rho` lies strictly inside
+this disc. The terminal small-value theorem
+`norm_riemannZeta₁_reflected_across_one_le_multiplicity` gives
+
+\[
+ \|Z_1(1+d+i\gamma)\|\le8(t+21)^2(8d)^m.
+\]
+
+Inserting that value into the already specialized three-four-one
+prime-product inequality proves
+`one_le_etaPrimeProduct_multiplicity_gap`. Its equivalent positive
+power form, `etaPrimeProduct_multiplicity_gap_power_le`, is
+
+\[
+ d^{4m-3}\ge
+ \frac{t^5}{16\cdot3200^3\cdot8^{4m+4}(t+21)^{10}}.
+\]
+
+The real-axis pole costs three powers of `d`; the actual multiplicity
+supplies `4m` powers through the middle zeta factor. The previous real-axis
+and double-ordinate bounds are reused with all their hypotheses discharged.
+
+Define the explicit margin
+
+\[
+ \Delta_m(y)=\min\left\{\frac1{16},
+ \left(\frac{|y|^5}{16\cdot3200^3\cdot8^{4m+4}(|y|+21)^{10}}\right)^{1/(4m-3)}\right\}.
+\]
+
+The exponent denominator is proved positive at every actual zero. The
+original eta mass excludes ordinate zero, so the margin is positive there.
+Reflection preserves both the ordinate and analytic multiplicity;
+`nontrivialZetaZero_mem_etaPrimeProductMultiplicity_strip` proves
+
+\[
+ \Delta_m(\gamma)\le\operatorname{Re}\rho\le1-\Delta_m(\gamma)
+\]
+
+for every literal nontrivial zero, including those outside the small-disc
+threshold by the explicit minimum.
+
+The comparison with the previous margin is itself checked:
+`etaPrimeProductMultiplicityZeroMargin_one` proves `Delta_1(y)=delta(y)`
+for every real ordinate. For `m>=2` and `y!=0`,
+`etaPrimeProductZeroMargin_lt_multiplicity` proves the strict inequality
+`delta(y)<Delta_m(y)`. Thus this result never weakens the earlier bound and
+strictly strengthens it for a repeated actual zero. It makes no assertion
+that repeated zeros exist. The methods are classical; the improvement here
+is relative to the repository's earlier bound, with no priority or
+improvement over established analytic zero-free regions claimed.
+
+Finally,
+`pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaPrimeProductMultiplicity`
+proves the actual return estimate
+
+\[
+ S_R(\rho,K)\le C_\rho(K+1)^{1-2\Delta_m(\gamma)}.
+\]
+
+`etaPrimeProductMultiplicity_return_exponent_lt` proves the exponent is
+strictly smaller than the earlier one when `m>=2`.
+`etaPrimeProductMultiplicity_return_exponent_bounds` still places it in
+`[7/8,1)`. The unchanged completion-dependent constant is retained, and the
+simple-zero exponent is unchanged. This leaves positive cutoff growth and
+does not exclude the remaining interior off-critical zeros. The uniform
+weighted arithmetic estimate and RH remain open.
+
 ## Next mathematical obligations
 
 The independent prime-product input now excludes the explicit edge regions
-above. It does not force real part `1/2`, and its return bound has a proved
-positive exponent. The remaining task is to rule out the interior
+above, with a strictly larger margin for repeated zeros. It does not force
+real part `1/2`, and its return bound has a proved positive exponent. The remaining task is to rule out the interior
 off-critical contribution while retaining the unchanged absolute weighted
 target. The following inverse and heat carriers remain available for that
 task; their established identities alone do not supply the missing estimate.
