@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "signed matrices, linear-width reconstruction, and explicit current endpoints with summable error.</text>\n" ++
+      "signed matrices, explicit current endpoints, and a sublinear bound for the actual weighted return.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -392,8 +392,18 @@ run_cmd do
         "positive coefficients with complementary horizontal decay rates. The unchanged " ++
         "linear-width return differs from this same endpoint expression by a summable " ++
         "weighted error, and every finite error sum is bounded by the explicit sum of the " ++
-        "arithmetic and heat majorants. The endpoint expression's own first absolute moment " ++
-        "remains uncontrolled, as does the return's. These " ++
+        "arithmetic and heat majorants. Both factors of the original leading current now " ++
+        "retain their actual zero-tail decay, giving the weighted pointwise bound " ++
+        "4*m*(Q_partner^2*d_partner(N)^2+Q_rho^2*d_rho(N)^2). At a critical-line " ++
+        "zero both original real current branches cancel exactly. For every actual zero " ++
+        "the return's first absolute moment through cutoff K is now at most " ++
+        "C_rho*(K+1)^abs(2*Re(rho)-1), with the positive-displacement denominator " ++
+        "handled separately from exact critical-line cancellation. C_rho is explicit in " ++
+        "the finite heat budget, completion moments, multiplicity, and displacement. " ++
+        "The exponent is strictly less than one, so this same actual moment divided by " ++
+        "K+1 tends to zero unconditionally. Its bound without cutoff normalization " ++
+        "remains open; the exponent depends on the unknown zero position and yields " ++
+        "no new zero-location constraint. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[

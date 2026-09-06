@@ -27,23 +27,24 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Combine literal eta colour, phase probes, and Gaussian gap returns with the completed arithmetic current. Both current branches now have explicit endpoint expressions with summable weighted arithmetic and heat errors. The repeated-zero expression retains two positive coefficients with complementary decay rates and no cutoff Fourier oscillation. Next, seek arithmetic control of this surviving contribution. The uniform weighted return bound remains open.
+Combine literal eta colour, phase probes, and Gaussian gap returns with the completed arithmetic current. Its actual return now has a proved weighted first-moment bound with growth exponent |2 Re rho - 1| < 1. Exact endpoint expressions and summable errors remain available. Next, seek an arithmetic estimate that removes this cutoff growth at every actual zero. The uniform weighted bound remains open.
 
 ## Latest Update
 
-The original signed current and its actual linear-width return now differ
-from an **explicit completed Euler endpoint expression** by a summable
-odd-weighted error. This is an arithmetic estimate on both original
-multiplicity branches, with all completion constants retained; see
-[pairedEtaLeadingCurrentLinearHeatReturn_weighted_euler_error_le](RiemannGaussian/EtaCurrentEulerEstimate.lean)
-and its finite error-sum bound.
+Lean now bounds the **actual return's weighted first absolute moment**:
+`sum_(N<K) (2N+1) norm(R_rho(N)) <= C_rho (K+1)^|2 Re(rho)-1|`.
+The constant is explicit in the proved heat error budget, completion
+amplitudes, and analytic multiplicity. Both factors of each original
+current pair retain their zero-tail decay; on the critical line, exact
+signed cancellation handles the zero exponent separately. See
+[pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_growth_le](RiemannGaussian/EtaCurrentReturnGrowth.lean).
 
-The [simple-zero head evaluates exactly in endpoint exponentials](RiemannGaussian/EtaCurrentEulerArithmetic.lean).
-In the repeated-zero branch, the common endpoint phase cancels exactly,
-leaving a signed difference of **two positive coefficients with
-complementary horizontal decay rates**. The weighted endpoint expression
-itself remains uncontrolled. The [research ledger](docs/eta-current-reconstruction-plan.md)
-records why a bound on oscillatory errors alone cannot finish this route.
+The [same module](RiemannGaussian/EtaCurrentReturnGrowth.lean) proves that
+this moment divided by `K+1` tends to zero for every actual zero. The
+exponent is strictly less than one, but still depends on the zero's
+unknown horizontal position. A bound independent of `K` remains the
+[full arithmetic goal](docs/eta-current-reconstruction-plan.md); this
+sublinear estimate supplies no new zero-location constraint.
 RH remains open. No `13/18` certificate exists.
 
 ## Notable Formalisations
@@ -81,6 +82,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Midpoint arithmetic and zero-tail gain** | Both original midpoint coefficients evaluate in finite completed eta moments. The full complex orientation and exact reflection defect survive; the zero equation gives an extra endpoint decay factor in an explicit all-cutoff bound, including the translated simple-zero head. | [pairedEtaLeadingCurrentMidpointMoment_eq_adjacent_reflection](RiemannGaussian/EtaCurrentMidpointReflection.lean), [pairedEtaLeadingCurrentMidpointMoment_eq_head_reflection](RiemannGaussian/EtaCurrentMidpointReflection.lean), [abs_pairedEtaLeadingCurrentMidpointMoment_le_arithmetic](RiemannGaussian/EtaCurrentMidpointBounds.lean) |
 | **Linear-width weighted reconstruction** | The actual midpoint gain makes the entire odd-weighted reconstruction error summable already at width `2(N+1)`. One explicit finite budget bounds every partial error sum and the difference of the original return and current's first absolute moments. | [pairedEtaLeadingCurrentLinearHeatReturn_weighted_error_le](RiemannGaussian/EtaCurrentLinearHeatSchedule.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_stability](RiemannGaussian/EtaCurrentLinearHeatReconstruction.lean) |
 | **Signed arithmetic endpoint estimate** | Both original current branches and the actual linear-width return have summable weighted error from explicit completed Euler endpoint expressions. The head evaluates exactly, and adjacent Euler products retain positive coefficients after their common Fourier phase cancels. | [pairedEtaHeadCompletedMoment_zero_eq_endpoints](RiemannGaussian/EtaCurrentEulerArithmetic.lean), [pairedEtaCurrentEulerAdjacentCoefficient_pos](RiemannGaussian/EtaCurrentEulerArithmetic.lean), [pairedEtaLeadingCurrentLinearHeatReturn_euler_error_sum_le](RiemannGaussian/EtaCurrentEulerEstimate.lean) |
+| **Sublinear weighted return bound** | The actual return's first absolute moment is at most `C_rho (K+1)^|2 Re(rho)-1|`. Both multiplicity branches and their completion constants are retained, with exact critical-line cancellation handled separately; dividing the moment by `K+1` gives a limit of zero. | [pairedEtaLeadingCurrent_weighted_le_doubleDecay](RiemannGaussian/EtaCurrentArithmeticEnvelope.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_growth_le](RiemannGaussian/EtaCurrentReturnGrowth.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_div_cutoff_tendsto_zero](RiemannGaussian/EtaCurrentReturnGrowth.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 

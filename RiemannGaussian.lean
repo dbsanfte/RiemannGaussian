@@ -566,3 +566,6 @@ import RiemannGaussian.EtaCurrentEulerMoments
 import RiemannGaussian.EtaCurrentEulerPairs
 import RiemannGaussian.EtaCurrentEulerArithmetic
 import RiemannGaussian.EtaCurrentEulerEstimate
+import RiemannGaussian.EtaCurrentArithmeticEnvelope
+import RiemannGaussian.EtaCurrentPowerSum
+import RiemannGaussian.EtaCurrentReturnGrowth

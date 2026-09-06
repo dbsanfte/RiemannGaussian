@@ -44,6 +44,7 @@ the objective.
 | Apply completed reflection and the actual zero-tail bounds to the midpoint | Both branch decompositions in [EtaCurrentMidpointReflection.lean](../RiemannGaussian/EtaCurrentMidpointReflection.lean), finite moment bounds in [EtaCurrentMomentBounds.lean](../RiemannGaussian/EtaCurrentMomentBounds.lean), and `abs_pairedEtaLeadingCurrentMidpointMoment_le_arithmetic` in [EtaCurrentMidpointBounds.lean](../RiemannGaussian/EtaCurrentMidpointBounds.lean). | Proved with an explicit additional endpoint decay factor. The finite reflection defect times the nonzero leading moment is retained; no vanishing or original-current weighted bound follows. |
 | Preserve the weighted frontier at linear heat width | `pairedEtaLeadingCurrentLinearHeatReturn_weighted_error_le` in [EtaCurrentLinearHeatSchedule.lean](../RiemannGaussian/EtaCurrentLinearHeatSchedule.lean), and summability and finite-prefix stability in [EtaCurrentLinearHeatReconstruction.lean](../RiemannGaussian/EtaCurrentLinearHeatReconstruction.lean). | Proved at width `2(N+1)`, with separate summable midpoint and remaining-defect majorants and an explicit finite total error budget. No bound on the return's own weighted moment is proved. |
 | Estimate the retained signed arithmetic against explicit endpoint terms | Complex prefix and pair errors in [EtaCurrentEulerMoments.lean](../RiemannGaussian/EtaCurrentEulerMoments.lean) and [EtaCurrentEulerPairs.lean](../RiemannGaussian/EtaCurrentEulerPairs.lean); elementary head and positive adjacent coefficients in [EtaCurrentEulerArithmetic.lean](../RiemannGaussian/EtaCurrentEulerArithmetic.lean); `pairedEtaLeadingCurrentLinearHeatReturn_euler_error_sum_le` in [EtaCurrentEulerEstimate.lean](../RiemannGaussian/EtaCurrentEulerEstimate.lean). | Proved with summable weighted error in both actual branches. The endpoint expression itself still requires an independent weighted bound. The repeated-zero contribution has no cutoff Fourier oscillation. |
+| Bound the original return's weighted moment as the cutoff grows | The two-factor estimate in [EtaCurrentArithmeticEnvelope.lean](../RiemannGaussian/EtaCurrentArithmeticEnvelope.lean), the finite power-sum comparison in [EtaCurrentPowerSum.lean](../RiemannGaussian/EtaCurrentPowerSum.lean), and `pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_growth_le` in [EtaCurrentReturnGrowth.lean](../RiemannGaussian/EtaCurrentReturnGrowth.lean). | Proved with explicit growth `C_rho*(K+1)^abs(2*Re(rho)-1)` and exact treatment of the critical line. The exponent is below one, and the cutoff-normalized moment tends to zero. A cutoff-independent bound remains open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -660,11 +661,81 @@ completed endpoint contribution. No bound on its first absolute moment
 has been proved, and no zero-location conclusion follows from the error
 estimate alone.
 
+## Checked growth bound for the actual weighted return moment
+
+The direct current estimate now retains both lower-order zero-tail decays.
+Write `d_rho(N)=(2N+3)^(-Re(rho))` as above. The two finite moments in
+the repeated-zero leading pair are both below multiplicity. In the
+simple-zero branch the actual head and successor order-zero prefix each
+retain one endpoint decay. Consequently
+`pairedEtaLeadingCurrent_weighted_le_doubleDecay` proves
+
+\[
+ (2N+1)|J_\rho(N)|\le4m\left(
+ Q_{\rho^*}^2d_{\rho^*}(N)^2+Q_\rho^2d_\rho(N)^2\right).
+\]
+
+This is a bound on the original current itself. The exact complex signed
+pairs and endpoint identities remain available upstream of this norm
+estimate. At `Re(rho)=1/2`, the compiled theorem
+`pairedEtaLeadingCurrent_eq_zero_of_re_eq_half` proves the original real
+current zero at every cutoff in both multiplicity branches.
+
+Set `e_rho=abs(2*Re(rho)-1)` and
+`A_rho=4m*(Q_partner^2+Q_rho^2)`. Reflection preserves `e_rho`, and
+the actual critical-strip hypotheses give `0<=e_rho<1`. Both endpoint
+powers are at most `(N+1)^(e_rho-1)`.
+The finite integral comparison `sum_range_nat_add_one_rpow_le` proves
+
+\[
+ \sum_{N<K}(N+1)^r\le\frac{(K+1)^{r+1}}{r+1},\qquad -1<r\le0.
+\]
+
+For an actual off-critical zero, `e_rho>0` is proved before division.
+The current and return therefore satisfy the explicit bounds
+
+\[
+ \sum_{N<K}(2N+1)|J_\rho(N)|
+ \le\frac{A_\rho}{e_\rho}(K+1)^{e_\rho},
+\]
+\[
+ S_R(\rho,K):=\sum_{N<K}(2N+1)\|R_N\|
+ \le E_{\mathrm{linear}}(\rho)
+      +\frac{A_\rho}{e_\rho}(K+1)^{e_\rho}.
+\]
+
+At a critical-line zero, exact current cancellation instead gives
+`S_R(rho,K)<=E_linear(rho)`. Define the explicit finite constant
+
+\[
+ C_\rho=E_{\mathrm{linear}}(\rho)+
+ \begin{cases}0,&\Re\rho=1/2,\\ A_\rho/e_\rho,&\Re\rho\ne1/2.\end{cases}
+\]
+
+The terminal theorem
+`pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_growth_le` proves
+`S_R(rho,K)<=C_rho*(K+1)^e_rho` for every actual zero and cutoff.
+The same module proves
+`pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_div_cutoff_tendsto_zero`:
+
+\[
+ \frac{S_R(\rho,K)}{K+1}\longrightarrow0.
+\]
+
+This is a proved sublinear bound for the original weighted return moment,
+including all absolute values, completion constants, and multiplicity.
+The exponent still depends on the actual zero's unknown horizontal
+position. It supplies no new zero-location constraint. The original goal
+requires a bound on `S_R(rho,K)` independent of `K`, without dividing by
+the cutoff. That requirement is unchanged and remains open.
+
 ## Next mathematical obligations
 
-1. Establish an independent arithmetic bound on the surviving completed
-   endpoint contribution sufficient to control `S_rho(K)`. The signed
-   Euler error and the heat reconstruction error are now summable. Bounds for a positive heat Gram
+1. Improve the proved displacement-power growth estimate to a bound
+   independent of cutoff for every actual zero. This requires an
+   independent arithmetic constraint on the surviving completed endpoint
+   contribution. The signed Euler error and the heat reconstruction error
+   are now summable. Bounds for a positive heat Gram
    or a norm of a single phase channel do not establish the required signed
    completed-current bound. The small-width signed endpoint theorem and the
    broad-width reconstruction concern different regimes; a use of one to
@@ -718,8 +789,9 @@ the obstruction precisely rather than rename it as another RH criterion.
 ### Next estimates on the retained signed arithmetic
 
 The exact branch formulas, completed reflection defect, endpoint gain,
-linear-width summability, and signed Euler error are now proved. The
-surviving endpoint expression remains uncontrolled. The next targets are
+linear-width summability, signed Euler error, and sublinear growth bound
+for the actual weighted return are now proved. Uniform control of the
+surviving endpoint contribution remains open. The next targets are
 **proposed work**, not assumptions to add to the proof chain.
 
 1. Seek an arithmetic relation constraining the explicit endpoint
@@ -727,7 +799,9 @@ surviving endpoint expression remains uncontrolled. The next targets are
    expansion and completion symmetry. Any use of the
    mixed phase matrix must identify the actual finite eta feature vector
    and control its dimension, scale, and compression errors. The above
-   midpoint and Euler error estimates alone cannot bound `S_rho(K)`.
+   midpoint and Euler error estimates alone cannot bound `S_rho(K)`
+   independently of cutoff. The proved power bound still allows growth
+   when the actual zero is off the critical line.
 2. Preserve the unchanged final target: partial sums of
    `(2N+1)*|J_rho(N)|` bounded uniformly in `K` for every actual zero.
    That bound would imply RH through the already checked equivalence;
