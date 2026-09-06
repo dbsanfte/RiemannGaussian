@@ -27,24 +27,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-The actual eta heat and every mixed polynomial-phase matrix now have proved second-order limits. Exact reflection retains a signed difference of full endpoint matrices, and finite-family error bounds retain their dimension cost. The remaining task in this package is an exact pairing audit against the completed eta current, preserving completion weights, multiplicity, cutoff, and heat width. Its uniform signed arithmetic estimate remains open.
+The eta endpoint, second-order heat, signed reflection, and full mixed matrix package is proved. Its completed-current audit rules out direct support/gap insertion and proves an integrable ordered return pairing through the actual gap, including the translated head branch. The next frontier is reconstructing the original leading current from that richer pairing and proving uniform estimates with cutoff, multiplicity, and heat width retained.
 
 ## Latest Update
 
-The second-order heat law now holds for every mixed entry of the actual
-continuous quadratic/cubic phase matrix. Its reflected limit is
-`J(κⱼ−κᵢ) − exp(−2λ) J(qⱼ−qᵢ)`, where `qᵢ = κᵢ+βᵢ+3αᵢ`.
-The two full endpoint matrices are retained with their signs and are real
-symmetric. The complete finite part also has its own matrix limit before
-reflection.
+The completed-current pairing audit is now checked. Direct insertion of the
+new signed support/gap kernel is identically zero in both multiplicity
+branches; the head branch requires restoring its original time coordinate.
+Two ordered actual heat commutators instead return through the gap with an
+exact negative sign. Their pairing with the literal completed head or
+adjacent-moment kernel is genuinely integrable at every fixed positive
+intermediate time, and the polynomial reflected family satisfies all of
+those analytic hypotheses.
 
-For every fixed finite family, the sum of absolute errors over all entries
-tends to zero. A simultaneous entry bound `ε` gives the explicit total
-bound `n²ε`; no dimension-independent matrix estimate is claimed.
-See the [matrix theorems](RiemannGaussian/Hybrid/EtaPolynomialHeatMatrix.lean)
-and [implementation ledger](docs/eta-signed-endpoint-theorem-plan.md).
-Next is the exact completed-current pairing audit, with cutoff, multiplicity,
-and completion weights retained. RH remains open. No `13/18` certificate exists.
+See the [carrier audit](RiemannGaussian/EtaSignedHeatCurrentAudit.lean),
+[completed return pairing](RiemannGaussian/EtaCompletedGapReturnPairing.lean),
+and [completed package ledger](docs/eta-signed-endpoint-theorem-plan.md).
+The original leading flux has not been reconstructed from this pairing;
+integration over the intermediate time and the uniform `(2N+1)`-weighted
+signed estimate remain open. RH remains open. No `13/18` certificate exists.
 
 ## Notable Formalisations
 
@@ -70,6 +71,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Complex two-endpoint eta law** | The actual weighted finite part converges to `(γ_E−1)F(0) + (1−log(π/2)+d)F(1)` when `log(1/r)−R → d`. The proof retains uniform errors; Gaussian scaling has the checked offset `d = −log(v)`. | [pairedEtaWeightedMismatch_endpoint_error_le](RiemannGaussian/EtaLogTwoEndpoint.lean), [pairedEtaWeightedMismatch_two_endpoint_tendsto](RiemannGaussian/EtaLogTwoEndpointLimit.lean), [pairedEtaWeightedMismatch_exp_scaled_finite_part_tendsto](RiemannGaussian/EtaLogTwoEndpointLimit.lean) |
 | **Second-order eta heat and signed reflection** | The actual polynomial-phase heat has its evaluated second-order coefficient, including the logarithmic Gaussian moment. Exact leading cancellation proves the signed endpoint difference `J(κ) − exp(−2λ)J(κ+β+3α)`. | [pairedEtaSupportGapGaussianLeakage_polynomial_finite_part_tendsto](RiemannGaussian/EtaPolynomialHeatFinitePart.lean), [pairedEtaSignedPolynomialHeat_tendsto](RiemannGaussian/EtaPolynomialHeatReflection.lean) |
 | **Full signed mixed heat matrix** | Every mixed entry of the actual polynomial-phase matrix has its second-order law and signed two-endpoint limit. The total entrywise error tends to zero for fixed finite families, with an explicit `n²ε` bound from simultaneous entry errors. | [pairedEtaSupportGapPolynomialPhaseGram_finite_part_tendsto](RiemannGaussian/Hybrid/EtaPolynomialHeatMatrix.lean), [pairedEtaSignedPolynomialPhaseGram_tendsto](RiemannGaussian/Hybrid/EtaPolynomialHeatMatrix.lean), [pairedEtaSignedPolynomialPhaseGramError_sum_abs_eventually_le](RiemannGaussian/Hybrid/EtaPolynomialHeatMatrix.lean) |
+| **Completed-current heat pairing audit** | Direct signed-heat insertion vanishes in both literal multiplicity branches. Two ordered continuous heat transitions have an exact, integrable gap-return pairing retaining the completion factors, both widths and phases, cutoff, and restored head coordinate. | [pairedEtaLeadingCurrentSignedHeatPairing_eq_zero](RiemannGaussian/EtaSignedHeatCurrentAudit.lean), [pairedEtaLeadingCurrentTwoTransitionPairing_eq_neg_gapReturn](RiemannGaussian/EtaCompletedGapReturnPairing.lean), [pairedEtaLeadingCurrentPolynomialReturn_audit](RiemannGaussian/EtaCompletedGapReturnPairing.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 

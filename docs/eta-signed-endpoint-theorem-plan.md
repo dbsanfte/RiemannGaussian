@@ -20,7 +20,7 @@ averaging or second-order asymptotic premise qualifies as implementation.
 | 2. Two-endpoint finite part | [Scalar finite part](../RiemannGaussian/EtaLogFinitePart.lean), [uniform harmonic quadrature](../RiemannGaussian/EtaLogBoundaryFinitePart.lean), [weighted-tail freezing](../RiemannGaussian/EtaLogWeightedTail.lean), [cutoff decomposition](../RiemannGaussian/EtaLogWeightedEndpoint.lean), [uniform fixed-endpoint remainder](../RiemannGaussian/EtaLogTwoEndpoint.lean), and [full complex two-endpoint limit with scale offset](../RiemannGaussian/EtaLogTwoEndpointLimit.lean). | Complete; the actual second-order Gaussian application is now checked in part 3. |
 | 3. Signed heat reflection | [Actual polynomial-phase finite part](../RiemannGaussian/EtaPolynomialMismatchFinitePart.lean), [global bound after subtraction](../RiemannGaussian/EtaWeightedFinitePartBound.lean), [damped complex domination and limit](../RiemannGaussian/EtaPolynomialFinitePartDomination.lean), [logarithmic endpoint profile](../RiemannGaussian/EtaPolynomialHeatProfile.lean), [full second-order heat law](../RiemannGaussian/EtaPolynomialHeatFinitePart.lean), and [signed reflection](../RiemannGaussian/EtaPolynomialHeatReflection.lean). | Complete. Preserve the signed law in every mixed matrix entry. |
 | 4. Full mixed matrix | [Actual mixed matrix finite part, exact leading cancellation, signed endpoint limit, and dimension-dependent aggregate error](../RiemannGaussian/Hybrid/EtaPolynomialHeatMatrix.lean). | Complete for every fixed finite family. The completed-current pairing remains part 5. |
-| 5. Completed-current audit | The [previous review](rh-overnight-signed-flux-review.md) identifies a support mismatch and missing completion/moment estimates. | Audit one exact proposed pairing with the new signed heat object. A remaining conjecture-strength estimate must be left open explicitly. |
+| 5. Completed-current audit | [Exact zero direct insertion, with both physical support carriers and the head translation checked](../RiemannGaussian/EtaSignedHeatCurrentAudit.lean), and [genuine ordered two-transition/gap-return pairing for both completed-current branches](../RiemannGaussian/EtaCompletedGapReturnPairing.lean). | Audit complete. Reconstruction of the original leading flux, intermediate-time integration, and the conjecture-strength uniform signed estimate remain open. |
 
 Part 1 proves, for every real `0 < epsilon ≤ 1` and `0 < a ≤ 1`,
 
@@ -252,6 +252,49 @@ An exact two-transition or polarized Dirichlet-form pairing must retain
 completion weights, adjacent centered moments, ordinate colour, cutoff,
 and the distinct multiplicity-one head. A representation alone does not
 prove the required `(2N+1)`-weighted summability estimate.
+
+Part 5 is now a checked carrier audit. The signed heat kernel is retained
+and its positive-plane integral is proved equal to the actual signed heat.
+`pairedEtaLeadingCurrentSignedHeatPairing_eq_zero` shows that inserting this
+kernel directly into the literal multiplicity-selected current gives zero
+at every zero and arithmetic cutoff. For the head branch, the first time
+coordinate is correctly restored to `u + pairedEtaLogTailCutoff(N+1)`;
+its membership in the actual support is proved almost everywhere. Both
+inserted integrands are genuinely integrable.
+
+The richer return channel is also retained. For two actual phase-conjugated
+continuous commutator kernels `C_(sigma,h,phi)` and `C_(tau,k,psi)`, and
+support endpoints `t,u` with `w > 0`,
+`pairedEtaHeatCommutatorPhaseKernel_two_transition` proves
+
+\[
+ C_{\sigma,h,\phi}(t,w) C_{\tau,k,\psi}(w,u)
+ =-G_{\sigma,h,\tau,k,\phi,\psi}(t,u,w).
+\]
+
+Here `G` contains the two normalized Gaussians at widths `sqrt(2)*h` and
+`sqrt(2)*k`, both half-tilt weights, the literal gap factor `1-chi(w)`, and
+the two ordered complex phase factors. Multiplying by either literal
+completed-current kernel retains its completion factors and adjacent moments
+or negative head, then integrating over the actual finite current measure
+gives `pairedEtaLeadingCurrentTwoTransitionPairing_eq_neg_gapReturn`.
+Both sides are genuinely integrable for nonnegative tilts, positive widths,
+and measurable phases, at each fixed positive `w`. The bound on each
+commutator is `1/(2*sqrt(pi)*sqrt(2)*h)`, so the two-width dependence is
+explicit. `pairedEtaLeadingCurrentPolynomialReturn_audit` discharges these
+hypotheses for the reflected polynomial family and actual moving tilts.
+
+This completes the authorized audit, with a concrete exact pairing and its
+limits stated. It does **not** identify the ordered return pairing with the
+original unweighted leading flux. Reconstruction, an infinite integral over
+the intermediate time, and estimates uniform in zero, cutoff, multiplicity,
+phase parameters, and width remain future work. The existing RH-equivalent
+`(2N+1)`-weighted first-moment condition remains unproved. No custom axiom or
+assumed reconstruction or summability premise has been introduced.
+
+All five stages of this package are now implemented at their stated scope.
+The outstanding RH application is a separate research frontier, not a
+claimed consequence of the auxiliary heat or matrix limits.
 
 Fixed-horizontal-tilt asymptotics and nonlinear Gram conditioning are reserve
 targets. They do not replace the arithmetic finite part or signed heat law.

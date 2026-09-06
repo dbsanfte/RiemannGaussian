@@ -529,3 +529,5 @@ import RiemannGaussian.EtaPolynomialFinitePartDomination
 import RiemannGaussian.EtaPolynomialHeatFinitePart
 import RiemannGaussian.EtaPolynomialHeatReflection
 import RiemannGaussian.Hybrid.EtaPolynomialHeatMatrix
+import RiemannGaussian.EtaSignedHeatCurrentAudit
+import RiemannGaussian.EtaCompletedGapReturnPairing
