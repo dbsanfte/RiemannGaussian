@@ -494,9 +494,29 @@ run_cmd do
         "bounds the actual signed first absolute average by D*(1+log D)*" ++
         "(C2_partner*A^(-2*(1-Re(rho)))+C2_rho*A^(-2*Re(rho))), retaining both " ++
         "original completion channels without a simplicity hypothesis. " ++
-        "The full physical divisor range and transfer to the inverse weights, " ++
-        "moving centers, and adjacent higher moments remain uncontrolled by " ++
-        "these estimates. They do not improve the zero-free strip or prove the " ++
+        "Exact binomial center transport now extends the quadratic range to " ++
+        "every moment k below the actual analytic zero multiplicity. " ++
+        "pairedEtaMomentParityCoefficient_eq evaluates its complex coefficient " ++
+        "alpha_k=k!/rho^k. " ++
+        "norm_pairedEtaCompletedMomentMoebiusTerm_physical_sub_zero_le " ++
+        "bounds norm(M^rho*(U_k-alpha_k*T_0)) by R_k*d/M at every physical " ++
+        "divisor and every center between log(M) and log(M+1), with explicit R_k. " ++
+        "The full complex family difference consequently has norm at most " ++
+        "R_k*D^2/M. pairedEtaCompletedMomentOriginalMeanSquare_le_quadratic " ++
+        "proves the original family mean square at its actual center log(M+1) " ++
+        "is at most C_k*D*(1+log D)*A^(-2*Re(rho)), where " ++
+        "C_k=2*norm(alpha_k)^2*C2_rho+2*R_k^2, for D>=1 and D^2<=A,L. " ++
+        "pairedEtaSignedCompletedMomentOriginalMeanAbsolute_adjacent_le_quadratic " ++
+        "includes the actual adjacent repeated-zero orders, preserving both " ++
+        "completion channels and their complementary decay rates. " ++
+        "pairedEtaMomentInverseCenter_mem_interval proves the translated " ++
+        "center log(M+1)-log(d) lies between log(q) and log(q+1), q=floor(M/d). " ++
+        "norm_pairedEtaCompletedMomentInversePartialTerm_sub_zero_le bounds " ++
+        "the actual inverse-entry difference, after multiplication by q^rho, " ++
+        "by d^(-Re(rho))*R_k*D^2/q for D<=q. The full inner range equals the " ++
+        "original inverse term exactly. Its D^2/q cost and the complete outer " ++
+        "inverse head and mixed sums still require cross-cutoff cancellation. " ++
+        "These estimates do not improve the zero-free strip or prove the " ++
         "original uniform weighted current bound. A separate exact dyadic " ++
         "recurrence controls the entire " ++
         "growing divisor family at each physical cutoff: E(M)=-r*O(floor(M/2)) " ++

@@ -54,6 +54,7 @@ the objective.
 | Strengthen the independent zero margin using actual multiplicity | `one_le_etaPrimeProduct_multiplicity_gap` in [EtaPrimeProductMultiplicityGap.lean](../RiemannGaussian/EtaPrimeProductMultiplicityGap.lean), `nontrivialZetaZero_mem_etaPrimeProductMultiplicity_strip` in [EtaPrimeProductMultiplicityMargin.lean](../RiemannGaussian/EtaPrimeProductMultiplicityMargin.lean), and `etaPrimeProductZeroMargin_lt_multiplicity` in [EtaPrimeProductMultiplicityComparison.lean](../RiemannGaussian/EtaPrimeProductMultiplicityComparison.lean). | The exact margin equals the previous bound at multiplicity one and is strictly larger at every nonzero ordinate for multiplicity at least two. The original return has the smaller exponent `1-2*Delta_m(Im rho)`, still in `[7/8,1)`. The uniform weighted goal remains open. |
 | Improve the zero margin for simple zeros using height-adapted eta bounds | `norm_riemannZeta₁_le_etaThinStrip` in [EtaThinStripRectangle.lean](../RiemannGaussian/EtaThinStripRectangle.lean), `nontrivialZetaZero_mem_reciprocal_logarithmic_strip` and `etaPrimeProductZeroMargin_lt_logarithmic` in [EtaLogarithmicMarginComparison.lean](../RiemannGaussian/EtaLogarithmicMarginComparison.lean), and `pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaRefinedPrimeProduct` in [EtaLogarithmicZeroMargin.lean](../RiemannGaussian/EtaLogarithmicZeroMargin.lean). | A positive explicit logarithmic margin constrains every actual zero; above height twenty-one it dominates `1/(32*C*log(|gamma|+21)^14)`. It strictly improves the earlier ordinate-only margin. The maximum with the previous multiplicity margin retains both bounds and strictly lowers the exponent for simple zeros. The exponent remains in `[7/8,1)`, and the uniform goal is open. |
 | Retain signed local zero poles in the prime comparison | `norm_localZetaLogRemainder_le` in [ZetaLocalLogDerivative.lean](../RiemannGaussian/ZetaLocalLogDerivative.lean), `neg_logDeriv_riemannZeta_re_le_sub_zero` in [ZetaSignedLocalEstimate.lean](../RiemannGaussian/ZetaSignedLocalEstimate.lean), and `nontrivialZetaZero_mem_signedLogarithmic_strip` in [ZetaSignedZeroMargin.lean](../RiemannGaussian/ZetaSignedZeroMargin.lean). | Every actual zero has the positive margin `abs(y)/(1800000*(abs(y)+1)*log(abs(y)+22))`. This strictly improves the previous logarithmic margin at every nonzero ordinate. The maximum preserves all previous multiplicity bounds and improves the original return exponent for simple zeros; the exponent remains in `[7/8,1)`. |
+| Transport Fourier estimates to actual moving-center moments and inverse entries | `pairedEtaCompletedMomentOriginalMeanSquare_le_quadratic` in [EtaMomentQuadraticMeanSquare.lean](../RiemannGaussian/EtaMomentQuadraticMeanSquare.lean), the signed adjacent bound in [EtaMomentSignedQuadraticFamily.lean](../RiemannGaussian/EtaMomentSignedQuadraticFamily.lean), and `norm_pairedEtaCompletedMomentInversePartialTerm_sub_zero_le` in [EtaMomentInverseReduction.lean](../RiemannGaussian/EtaMomentInverseReduction.lean). | Every order below the actual multiplicity has the original physical mean-square bound for `D²≤A,L`. Each actual inverse center satisfies the required logarithmic interval, giving an explicit inner-range error with the outer complex weight retained. The full inverse sums and uniform current bound remain open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -2313,6 +2314,160 @@ centers are still not bounded by this theorem. The existing zero-free
 strip is unchanged, and the uniform odd-weighted first absolute moment
 goal remains open. No RH proof or `13/18` certificate follows from this slice.
 
+## Checked moving-center moments and reduction inside the actual inverse
+
+The quadratic divisor-range estimate now applies to every order below
+the actual analytic zero multiplicity, including the adjacent orders
+that occur in the repeated-zero current. The terminal mean-square theorem is
+[pairedEtaCompletedMomentOriginalMeanSquare_le_quadratic](../RiemannGaussian/EtaMomentQuadraticMeanSquare.lean).
+The corresponding signed statement is
+[pairedEtaSignedCompletedMomentOriginalMeanAbsolute_le_quadratic](../RiemannGaussian/EtaMomentSignedQuadraticFamily.lean);
+[pairedEtaSignedCompletedMomentOriginalMeanAbsolute_adjacent_le_quadratic](../RiemannGaussian/EtaMomentSignedQuadraticFamily.lean)
+discharges the order conditions for `k=m-2`, `l=m-1`, when `m≥2`.
+The companion inverse-entry estimate is
+[norm_pairedEtaCompletedMomentInversePartialTerm_sub_zero_le](../RiemannGaussian/EtaMomentInverseReduction.lean).
+These statements use the original completed moments and actual moving
+centers, with all their analytic and geometric premises proved.
+
+Write `m=analyticZetaZeroMultiplicity(rho)`, `sigma=Re rho`,
+`X=pairedEtaXiCompletionFactor(rho)`, and
+
+\[
+ U_{\rho,k}(a;M,d)
+ =\operatorname{pairedEtaCompletedMomentMoebiusTerm}(\rho,k,a,M,d),
+ \qquad
+ F_{\rho,k}(a;M,D)=\sum_{d=1}^D U_{\rho,k}(a;M,d).
+\]
+
+The terms retain their literal factor `mu(d)d^(-rho)X rho`, centered
+endpoint polynomial, and divided cutoff `floor(M/d)`. At order zero
+they equal the existing terms `T_rho(M,d)`, independently of `a`.
+The exact complex reduction has coefficient
+
+\[
+ \alpha_{\rho,k}=\frac{k!}{\rho^k}.
+\]
+
+[pairedEtaMomentParityCoefficient_eq](../RiemannGaussian/EtaMomentDivisorPhase.lean)
+evaluates this coefficient. For `k<m`, `1≤d≤M`, and
+`log M≤a≤log(M+1)`,
+[norm_pairedEtaCompletedMomentMoebiusTerm_physical_sub_zero_le](../RiemannGaussian/EtaMomentPhysicalReduction.lean)
+proves
+
+\[
+ \left|M^\rho\left(
+ U_{\rho,k}(a;M,d)-\alpha_{\rho,k}T_\rho(M,d)\right)\right|
+ \le R_{\rho,k}\frac dM.
+\]
+
+Here are the explicit constants in that estimate, using nonnegative radii `r`. Let
+`c_(rho,k)=pairedEtaCenteredTailQuantitativeAsymptoticConstant(k,rho)` and
+`E_(rho,k)=pairedEtaCurrentEulerMomentValue(rho,k)`. Define
+
+\[
+ \begin{aligned}
+ W_{\rho,k}&=|E_{\rho,k}|+c_{\rho,k},\\
+ B_{\rho,k}(r)&=\sum_{j<k}\binom kj r^{k-j-1}W_{\rho,j},\\
+ V_{\rho,0}(r)&=0,\qquad
+ V_{\rho,k+1}(r)=\frac{r^k}{|\rho|}
+                  +\frac{k+1}{|\rho|}V_{\rho,k}(r),\\
+ H_{\rho,k}&=|X\rho|\bigl(2c_{\rho,k}
+                     +4(B_{\rho,k}(4)+V_{\rho,k}(4))\bigr),\\
+ R_{\rho,k}&=2\bigl(H_{\rho,k}+2|\alpha_{\rho,k}|H_\rho\bigr).
+ \end{aligned}
+\]
+
+The last `H_rho` is the previously proved zeroth-order phase-error
+constant `|X| |rho| |rho+1|`. The new `R_(rho,k)` is the literal definition
+`pairedEtaCompletedMomentPhysicalErrorConstant`. All these constants
+are finite and nonnegative. No simplicity or critical-line assumption
+is used.
+
+The proof first retains the exact binomial center transport of the
+actual eta tail and the odd unpaired endpoint. The central endpoint
+polynomial evaluates to `k!/rho^(k+1)`, and its displacement error is
+bounded by `V_(rho,k)(r)|delta|`. The actual divisor geometry gives
+`|delta|≤4d/M`, including every physical divisor. The complex physical
+normalization ratio has norm at most two.
+[pairedEtaCompletedMomentMoebiusTerm_physical_sub_zero](../RiemannGaussian/EtaMomentPhysicalReduction.lean)
+retains the resulting complex difference before its norm is bounded.
+
+For `D≤M`, the exact family difference is the sum of those original term
+differences, and
+[norm_pairedEtaCompletedMomentOriginalFamily_physical_sub_zero_le](../RiemannGaussian/EtaMomentPhysicalFamily.lean)
+gives
+
+\[
+ \left|M^\rho\left(
+ F_{\rho,k}(a;M,D)-\alpha_{\rho,k}F_{\rho,0}(a;M,D)\right)\right|
+ \le R_{\rho,k}\frac{D^2}{M}.
+\]
+
+Every original mixed divisor pair remains in
+`pairedEtaCompletedMomentOriginalFamily_norm_sq_eq_pairs`. Consequently,
+at the actual moving center `a(M)=log(M+1)`, the proved Fourier bound yields
+
+\[
+ \frac1L\sum_{n<L}
+ |F_{\rho,k}(\log(A+n+1);A+n,D)|^2
+ \le C_{\rho,k}D(1+\log D)A^{-2\sigma},
+ \qquad k<m,\quad 1\le D,\quad D^2\le A,L,
+\]
+
+where
+`C_(rho,k)=2|alpha_(rho,k)|² C^(2)_rho+2R_(rho,k)²` is
+`pairedEtaCompletedMomentQuadraticConstant`. The retained square error
+is `2R_(rho,k)²D⁴/A²`, and `D²≤A` bounds its scale factor by one.
+For any `k,l<m`, the original signed mixed family has first absolute
+average at most
+
+\[
+ D(1+\log D)\left(
+ C^{\rm mix}_{\rho^*,k,l}A^{-2(1-\sigma)}
+ +C^{\rm mix}_{\rho,k,l}A^{-2\sigma}\right),\qquad
+ C^{\rm mix}_{\rho,k,l}=\frac{C_{\rho,k}+C_{\rho,l}}2.
+\]
+
+The exact signed double sum is retained before this estimate, and
+reflection preserves the actual analytic multiplicity.
+
+The inverse interface also uses the original arithmetic carrier. Put
+`q=floor(M/d)` and
+
+\[
+ I_{\rho,k}(a;M,d,D)
+ =d^{-\rho}F_{\rho,k}(a-\log d;q,D).
+\]
+
+At `D=q`,
+[pairedEtaCompletedMomentInversePartialTerm_full](../RiemannGaussian/EtaMomentInverseReduction.lean)
+identifies this exactly with the existing
+`pairedEtaCompletedMomentInverseTerm`. For every `1≤d≤M`,
+[pairedEtaMomentInverseCenter_mem_interval](../RiemannGaussian/EtaMomentPhysicalGeometry.lean)
+proves `log q≤log(M+1)-log d≤log(q+1)`. Thus the center condition is
+discharged inside each actual inverse term. For `k<m` and `D≤q`,
+
+\[
+ \left|q^\rho\left(
+ I_{\rho,k}(\log(M+1);M,d,D)
+ -\alpha_{\rho,k}I_{\rho,0}(\log(M+1);M,d,D)\right)\right|
+ \le d^{-\sigma}R_{\rho,k}\frac{D^2}{q}.
+\]
+
+The exact identity preceding this estimate keeps the outer complex weight
+`d^(-rho)` and the inner normalized family error.
+
+This resolves the lower-order moving-center transfer in the truncated
+forward family and supplies an error bound inside each original inverse
+entry. It does not bound the full inverse sum: at `D=q` the inner error
+scale is `q`, and subsequent outer divisor sums require cancellation
+across their different cutoffs. The original inverse-weighted head and
+adjacent mixed sums still need that cancellation to control the unchanged
+odd-weighted first absolute current moment. The zero-free strip is
+unchanged, and the uniform bound and RH remain open. The proof uses
+binomial moment transport and the preceding classical Fourier estimate;
+no mathematical priority claim is made.
+
 ## Next mathematical obligations
 
 The signed prime input now excludes the explicit reciprocal-logarithm edge
@@ -2427,8 +2582,12 @@ Excluding the surviving off-critical endpoint contribution remains open. The nex
    full physical range must control that remaining scale dependence and
    the `D^4/A²` physical correction. The individual endpoint powers are
    now removed for the original zeroth-order forward terms with their exact
-   physical decay. Transfer through the inverse weights and higher adjacent
-   moments at moving centers remains open.
+   physical decay. The moving-center transfer now extends this truncated
+   estimate to all moments below the actual multiplicity, including the
+   signed adjacent pair. The inverse-entry error above retains each outer
+   complex weight and proves its translated center condition, but its
+   `D²/q` cost does not control the full inner range. Summing the actual
+   inverse head and adjacent mixed terms over all outer cutoffs remains open.
    Any use of the earlier period averages must also preserve their
    divisor-dependent normalizers and errors. Any use of the
    mixed phase matrix must identify the actual finite eta feature vector

@@ -27,35 +27,37 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Use exact Fourier phase separation and gcd covariance to control the actual completed eta divisor families. The mean-square estimate reaches the square-root divisor scale and retains physical decay and both reflected channels. The frontier is the full divisor range and transfer through the inverse-weighted head and adjacent moments to a cutoff-independent bound for the original weighted current.
+Transport the proved divisor Fourier estimates through the original completed moment inverse. Every moment below the zero multiplicity now has a quantitative reduction at its actual moving center, and truncated mixed families retain physical decay and both reflected channels. The frontier is cancellation across the full inverse divisor ranges strong enough to bound the original odd-weighted first absolute current moment uniformly.
 
 ## Latest Update
 
-Lean now enlarges the proved divisor range from a **cube-root scale to a
-square-root scale** for the original completed Möbius eta terms. Write
-`T_rho(M,d)=pairedEtaCompletedMoebiusTerm(rho,M,d)` and `sigma=Re rho`. Then
+Lean now transports the square-root divisor-range estimate to **every moment
+below the actual zero multiplicity**, at the moving physical center. Let
+`U_rho,k(a;M,d)=pairedEtaCompletedMomentMoebiusTerm(rho,k,a,M,d)`,
+`m=analyticZetaZeroMultiplicity(rho)`, and `sigma=Re rho`. Then
 
 \[
- \frac1L\sum_{r=0}^{L-1}\left|\sum_{d=1}^D T_\rho(A+r,d)\right|^2
- \le C_\rho D(1+\log D)A^{-2\sigma},\qquad 1\le D,\quad D^2\le\min(A,L).
+ \frac1L\sum_{n=0}^{L-1}\left|\sum_{d=1}^D
+ U_{\rho,k}(\log(A+n+1);A+n,d)\right|^2
+ \le C_{\rho,k}D(1+\log D)A^{-2\sigma},
+ \quad k<m,\quad 1\le D,\quad D^2\le\min(A,L).
 \]
 
-[pairedEtaCompletedMoebiusOriginalMeanSquare_le_quadratic](RiemannGaussian/EtaMoebiusOriginalQuadraticFamily.lean)
-proves this with a new explicit completion-dependent constant. Exact finite
-Fourier inversion, proved divisor-frequency separation, and the full signed
-gcd covariance replace the earlier `D⁴/L` window cost. Every Möbius weight,
-complex completion factor, and physical normalization correction remains
-in the proof chain.
-[pairedEtaSignedCompletedMoebiusOriginalMeanAbsolute_le_quadratic](RiemannGaussian/EtaMoebiusOriginalQuadraticFamily.lean)
-also bounds the first absolute average of the original signed family,
-retaining both complementary physical decay rates. No simplicity or
-critical-line assumption is used.
+[pairedEtaCompletedMomentOriginalMeanSquare_le_quadratic](RiemannGaussian/EtaMomentQuadraticMeanSquare.lean)
+proves this with explicit constants. The underlying complex reduction has
+coefficient `k!/rho^k` and normalized term error at most `R_rho,k d/M`.
+[pairedEtaSignedCompletedMomentOriginalMeanAbsolute_adjacent_le_quadratic](RiemannGaussian/EtaMomentSignedQuadraticFamily.lean)
+covers the two adjacent orders used in the repeated-zero current, retaining
+both reflected completion channels and their complementary decay rates.
+[norm_pairedEtaCompletedMomentInversePartialTerm_sub_zero_le](RiemannGaussian/EtaMomentInverseReduction.lean)
+also proves the reduction inside each actual inverse term, with its outer
+complex weight, divided cutoff, and translated center retained.
 
-The full divisor range and transfer to the original current's inverse-weighted
-head and adjacent higher moments remain open. This estimate does not
-strengthen the existing zero-free strip or prove the
-[uniform weighted goal](docs/eta-current-reconstruction-plan.md), RH, or a
-`13/18` certificate.
+The full inverse divisor sums still require cancellation beyond these
+truncated estimates; their explicit error cost is not uniformly bounded.
+The [uniform weighted goal](docs/eta-current-reconstruction-plan.md) remains
+open, and the existing zero-free strip is unchanged. This slice proves
+neither RH nor a `13/18` certificate.
 
 ## Notable Formalisations
 
@@ -99,6 +101,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Sharp growth at a hypothetical off-critical zero** | Assuming an actual zero is off the critical line, its slower positive completion channel gives matching eventual displacement-power bounds for the original return's weighted first absolute moment. An explicit finite offset gives an all-cutoff lower bound, and the moment tends to infinity. This does not exclude such a zero. | [pairedEtaCurrentPrincipalEndpoint_eq_dominant_factor](RiemannGaussian/EtaCurrentPrincipalDominance.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_lower_with_offset](RiemannGaussian/EtaCurrentReturnSharpGrowth.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_power_bounds_eventually](RiemannGaussian/EtaCurrentReturnSharpGrowth.lean) |
 | **Finite Möbius constraints and eta phase cancellation** | Fixed odd/even divisor pairs have period cancellation, and zeroth-order parity aggregates have uniform bounds. Every centered moment now has full Möbius inversion with exact center translations and a fixed-center aggregate bound. Both original current branches reconstruct, including the adjacent-order double sum for repeated zeros. The weighted bound remains open. | [norm_pairedEtaSignedCompletedMoebiusDyadicCorrelation_le](RiemannGaussian/EtaMoebiusDyadicCorrelation.lean), [pairedEtaLeadingCurrent_eq_oddInverse_head](RiemannGaussian/EtaCurrentMoebiusInverse.lean), [norm_pairedEtaCompletedOddInverseTop_sub_main_le](RiemannGaussian/EtaMoebiusGroupedInverse.lean), [norm_pairedEtaCompletedOddInverseBottom_add_main_le](RiemannGaussian/EtaMoebiusGroupedInverse.lean), [norm_pairedEtaCompletedMomentMoebiusAggregate_le](RiemannGaussian/EtaMomentMoebiusTransform.lean), [pairedEtaLeadingCurrent_eq_momentInverse_adjacent](RiemannGaussian/EtaCurrentMomentMoebiusInverse.lean) |
 | **Divisor Fourier separation and physical mean square** | Literal quotient phases have proved finite Fourier support, exact gcd covariance, and separated divisor frequencies. Their original completed Möbius family has mean square at most `C_rho D(1+log D) A^(-2 Re rho)` when `D²` is at most both the starting cutoff and averaging length. The original signed pair retains both complementary physical decay rates. | [pairedEtaCompletedMoebiusParityFamily_eq_fourier](RiemannGaussian/EtaMoebiusFourierSpectrum.lean), [pairedEtaDivisorFourierSpectrum_separated](RiemannGaussian/EtaDivisorFourierGrid.lean), [pairedEtaCompletedMoebiusParityFamily_period_energy_eq](RiemannGaussian/EtaMoebiusParityEnergy.lean), [pairedEtaCompletedMoebiusOriginalMeanSquare_le_quadratic](RiemannGaussian/EtaMoebiusOriginalQuadraticFamily.lean), [pairedEtaSignedCompletedMoebiusOriginalMeanAbsolute_le_quadratic](RiemannGaussian/EtaMoebiusOriginalQuadraticFamily.lean) |
+| **Moving-center moments and inverse-term reduction** | Every moment below the actual multiplicity reduces quantitatively to the original zeroth-order family with coefficient `k!/rho^k`. The square-root divisor-range mean square and signed adjacent-order bound hold at moving physical centers. An explicit companion error applies inside the original inverse terms; the full weighted inverse sum remains open. | [norm_pairedEtaCompletedMomentMoebiusTerm_physical_sub_zero_le](RiemannGaussian/EtaMomentPhysicalReduction.lean), [pairedEtaCompletedMomentOriginalMeanSquare_le_quadratic](RiemannGaussian/EtaMomentQuadraticMeanSquare.lean), [pairedEtaSignedCompletedMomentOriginalMeanAbsolute_adjacent_le_quadratic](RiemannGaussian/EtaMomentSignedQuadraticFamily.lean), [norm_pairedEtaCompletedMomentInversePartialTerm_sub_zero_le](RiemannGaussian/EtaMomentInverseReduction.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 
