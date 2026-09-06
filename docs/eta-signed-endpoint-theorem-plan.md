@@ -17,7 +17,7 @@ averaging or second-order asymptotic premise qualifies as implementation.
 | Part | Checked result | Remaining work |
 | --- | --- | --- |
 | 1. Actual arithmetic overlap | [Exact eta/periodic-colour identity](../RiemannGaussian/EtaAlternatingReal.lean), [real-scale cell and primitive estimates](../RiemannGaussian/EtaOverlapAveraging.lean), [Wallis integral](../RiemannGaussian/EtaOverlapWallis.lean), [quantitative infinite-tail evaluation](../RiemannGaussian/EtaOverlapTail.lean), and [exact transport back to the logarithmic eta tail](../RiemannGaussian/EtaLogTailWallis.lean). | Complete for the scalar arithmetic tail; retain it as input to the weighted law. |
-| 2. Two-endpoint finite part | [Scalar finite part and constant complex tests](../RiemannGaussian/EtaLogFinitePart.lean), [uniform complex harmonic quadrature](../RiemannGaussian/EtaLogBoundaryFinitePart.lean), [actual weighted-tail freezing](../RiemannGaussian/EtaLogWeightedTail.lean), and [uniform complex decomposition at the arithmetic cutoff](../RiemannGaussian/EtaLogWeightedEndpoint.lean). | Cancel the cutoff terms against the moving logarithmic integral and prove the fixed two-endpoint limit, including the scale offset needed for Gaussian integration. |
+| 2. Two-endpoint finite part | [Scalar finite part](../RiemannGaussian/EtaLogFinitePart.lean), [uniform harmonic quadrature](../RiemannGaussian/EtaLogBoundaryFinitePart.lean), [weighted-tail freezing](../RiemannGaussian/EtaLogWeightedTail.lean), [cutoff decomposition](../RiemannGaussian/EtaLogWeightedEndpoint.lean), [uniform fixed-endpoint remainder](../RiemannGaussian/EtaLogTwoEndpoint.lean), and [full complex two-endpoint limit with scale offset](../RiemannGaussian/EtaLogTwoEndpointLimit.lean). | Complete. The Gaussian application must still prove the stronger phase comparison and domination after subtraction. |
 | 3. Signed heat reflection | Not yet proved. | Add the quadratic phase, prove the second-order Gaussian expansion and its integrable remainder, then cancel the leading profiles by reflection. |
 | 4. Full mixed matrix | Not yet proved. | Apply the second-order law to every mixed entry, preserving the signed endpoint decomposition and any dimension cost. |
 | 5. Completed-current audit | The [previous review](rh-overnight-signed-flux-review.md) identifies a support mismatch and missing completion/moment estimates. | Audit one exact proposed pairing with the new signed heat object. A remaining conjecture-strength estimate must be left open explicitly. |
@@ -67,9 +67,31 @@ proved by `pairedEtaWeightedMismatch_cutoff_endpoint_error_le`. For
 with `norm(E) ≤ 8K/R + 32*epsilon*B` whenever `F` is `K`-Lipschitz and
 `norm(F(x)) ≤ B` everywhere. This uses a `3K/R` harmonic quadrature remainder,
 the actual tail's `K/(R*M)` freezing estimate, and its scalar Wallis value.
-The fixed two-endpoint limit has not yet been proved: the remaining passage
-must cancel the moving cutoff terms and retain `log(1/r)-R`. That scale
-offset becomes `-log(v)` when the displacement is `r = exp(-R)*v`.
+The cutoff is now cancelled exactly by
+`pairedEtaShiftBoundaryCutoff_endpoint_cancel`. With `d_r = log(1/r)-R`
+and `A_M = harmonic(M)-1-log(M+1)`, the stronger theorem
+`pairedEtaWeightedMismatch_endpoint_error_le` gives
+
+\[
+ \left\|r^{-1}W-R\int_0^1F-A_MF(0)-(c_1+d_r)F(1)\right\|
+ \le rB(140+R+|d_r|)+(K/R)(76+12d_r^2).
+\]
+
+For any positive real displacements `r -> 0`, scales `R -> infinity`, and
+offset `log(1/r)-R -> d`,
+`pairedEtaWeightedMismatch_two_endpoint_tendsto` proves
+
+\[
+ r^{-1}W-R\int_0^1F\longrightarrow c_0F(0)+(c_1+d)F(1).
+\]
+
+The critical case and the exponential parametrization are separate compiled
+corollaries. In particular,
+`pairedEtaWeightedMismatch_exp_scaled_finite_part_tendsto` retains the
+`-log(v)` upper-endpoint term for every fixed `v > 0` when
+`r = exp(-R)*v`. These complete parts 1 and 2. The actual phase comparison
+and Gaussian domination at scale `h` remain part 3, not consequences of the
+old first-order heat limit alone.
 
 ## 1. Arithmetic averaging on the actual carrier
 

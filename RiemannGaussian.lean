@@ -517,3 +517,6 @@ import RiemannGaussian.EtaLogFinitePart
 import RiemannGaussian.EtaLogBoundaryFinitePart
 import RiemannGaussian.EtaLogWeightedTail
 import RiemannGaussian.EtaLogWeightedEndpoint
+import RiemannGaussian.EtaLogEndpointControl
+import RiemannGaussian.EtaLogTwoEndpoint
+import RiemannGaussian.EtaLogTwoEndpointLimit

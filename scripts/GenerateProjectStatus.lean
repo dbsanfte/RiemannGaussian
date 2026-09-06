@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "phase/matrix limits, scalar finite part, and complex endpoint decomposition.</text>\n" ++
+      "phase/matrix limits and the full complex two-endpoint finite-part law.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -296,10 +296,12 @@ run_cmd do
         "the signed primitive identity is retained. Exact logarithmic-tail transport " ++
         "and harmonic cutoff cancellation now prove the actual scalar limit " ++
         "D_(1/2)(r)/r - log(1/r) -> gamma_E - log(pi/2), including every constant " ++
-        "complex test. Nonconstant complex tests now retain separate harmonic and " ++
-        "Wallis endpoint coefficients at the actual cutoff, with full remainder " ++
-        "8*K/R + 32*(exp(r)-1)*B. The fixed two-endpoint limit with its heat-scale " ++
-        "offset and second-order signed heat/matrix laws remain targets. " ++
+        "complex test. The full complex two-endpoint finite-part limit is now " ++
+        "proved: W/r - R*integral(F) -> (gamma_E-1)*F(0) + " ++
+        "(1-log(pi/2)+d)*F(1), when log(1/r)-R -> d. Its uniform remainder " ++
+        "retains the test bound, Lipschitz constant, and scale offset. The Gaussian " ++
+        "specialization explicitly includes -log(v). Second-order phase comparison, " ++
+        "Gaussian domination after subtraction, and signed heat/matrix laws remain targets. " ++
         "The signed-flux application review " ++
         "identifies the missing completed kernel identity and uniform estimates. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
