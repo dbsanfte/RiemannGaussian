@@ -43,6 +43,7 @@ the objective.
 | Evaluate the midpoint coefficient in finite eta arithmetic | The complex integral identity in [EtaCurrentFiniteMomentPair.lean](../RiemannGaussian/EtaCurrentFiniteMomentPair.lean), the repeated-zero formula in [EtaCurrentAdjacentMidpoint.lean](../RiemannGaussian/EtaCurrentAdjacentMidpoint.lean), and the translated head formula in [EtaCurrentHeadMidpoint.lean](../RiemannGaussian/EtaCurrentHeadMidpoint.lean). | Proved with both physical cutoff origins, all centered orders, and complex channel orientation retained. |
 | Apply completed reflection and the actual zero-tail bounds to the midpoint | Both branch decompositions in [EtaCurrentMidpointReflection.lean](../RiemannGaussian/EtaCurrentMidpointReflection.lean), finite moment bounds in [EtaCurrentMomentBounds.lean](../RiemannGaussian/EtaCurrentMomentBounds.lean), and `abs_pairedEtaLeadingCurrentMidpointMoment_le_arithmetic` in [EtaCurrentMidpointBounds.lean](../RiemannGaussian/EtaCurrentMidpointBounds.lean). | Proved with an explicit additional endpoint decay factor. The finite reflection defect times the nonzero leading moment is retained; no vanishing or original-current weighted bound follows. |
 | Preserve the weighted frontier at linear heat width | `pairedEtaLeadingCurrentLinearHeatReturn_weighted_error_le` in [EtaCurrentLinearHeatSchedule.lean](../RiemannGaussian/EtaCurrentLinearHeatSchedule.lean), and summability and finite-prefix stability in [EtaCurrentLinearHeatReconstruction.lean](../RiemannGaussian/EtaCurrentLinearHeatReconstruction.lean). | Proved at width `2(N+1)`, with separate summable midpoint and remaining-defect majorants and an explicit finite total error budget. No bound on the return's own weighted moment is proved. |
+| Estimate the retained signed arithmetic against explicit endpoint terms | Complex prefix and pair errors in [EtaCurrentEulerMoments.lean](../RiemannGaussian/EtaCurrentEulerMoments.lean) and [EtaCurrentEulerPairs.lean](../RiemannGaussian/EtaCurrentEulerPairs.lean); elementary head and positive adjacent coefficients in [EtaCurrentEulerArithmetic.lean](../RiemannGaussian/EtaCurrentEulerArithmetic.lean); `pairedEtaLeadingCurrentLinearHeatReturn_euler_error_sum_le` in [EtaCurrentEulerEstimate.lean](../RiemannGaussian/EtaCurrentEulerEstimate.lean). | Proved with summable weighted error in both actual branches. The endpoint expression itself still requires an independent weighted bound. The repeated-zero contribution has no cutoff Fourier oscillation. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -568,10 +569,102 @@ while preserving both original completed carriers. It does not bound
 either first absolute moment itself. That independent arithmetic estimate
 remains the full goal's unresolved part.
 
+## Checked signed Euler endpoint estimate
+
+The direct arithmetic test now uses the quantitative Euler theorem for
+the actual centered eta tails. Define the explicit complex terms
+
+\[
+ a_{\rho,k}=\frac{k!}{2\rho^{k+1}},\qquad
+ U_{\rho,k}(N)=-c_\rho e^{-\rho L_N}a_{\rho,k},\qquad
+ D_{\rho,k}=|c_\rho|\frac{k!(|\rho|+\sigma/2+1)}{(\sigma/2)^k}.
+\]
+
+For every `k<m`, the original finite completed moment satisfies the
+exact phased identity
+
+\[
+ A_{\rho,k}(N+2)-U_{\rho,k}(N)
+ =-c_\rho e^{-\rho L_N}
+   \bigl(\widetilde T_{\rho,k}(N+2)-a_{\rho,k}\bigr),
+\]
+
+where the shifted tail is the genuine eta integral. The compiled theorem
+`norm_pairedEtaFiniteCompletedMoment_sub_euler_le` bounds this error by
+`D_rho,k*d_rho(N)/(N+1)`. The endpoint phase is retained before its norm
+is taken. The signed pair comparison keeps the partner product error
+minus the conjugate original product error, and each product keeps both
+error positions. All comparison constants are explicit in
+[EtaCurrentEulerPairs.lean](../RiemannGaussian/EtaCurrentEulerPairs.lean).
+
+The new expression `J_E(rho,N)=pairedEtaCurrentEulerExpression rho N`
+substitutes these `U` terms in the two original current formulas. In the
+simple-zero branch it retains the actual order-zero head, which Lean now
+evaluates exactly:
+
+\[
+ H_{\rho,0}(N)=\operatorname{Completion}(\rho)
+   \left(e^{-\rho\log(2N+4)}-e^{-\rho\log(2N+3)}\right).
+\]
+
+In the repeated-zero branch, `k=m-2`, Lean proves
+
+\[
+ J_E(\rho,N)=2(m-1)\delta_{N+1}
+   \left(P_{\rho^*,k}e^{-2(1-\sigma)L_N}
+         -P_{\rho,k}e^{-2\sigma L_N}\right),
+\]
+
+where each coefficient is strictly positive:
+
+\[
+ P_{\rho,k}=|c_\rho|^2\Re(a_{\rho,k}\overline{a_{\rho,k+1}}),
+ \qquad
+ \Re(a_{\rho,k}\overline{a_{\rho,k+1}})
+ =\frac{(k+1)\sigma}{|\rho|^2}|a_{\rho,k}|^2>0.
+\]
+
+These are the compiled theorems
+`pairedEtaCurrentEulerMoment_mul_conj`,
+`pairedEtaCurrentEulerAdjacentCoefficient_pos`, and
+`pairedEtaCurrentEulerExpression_eq_adjacent_endpoints`. The first
+identity cancels the common endpoint Fourier phase at the complex level;
+the remaining coefficients retain their dependence on the actual zero.
+
+The explicit function `B_rho(N)=pairedEtaCurrentEulerErrorEnvelope rho N`
+is proved summable. Its head branch is
+`Q_partner*D_partner,0*d_partner(N)/(N+1) + Q_rho*D_rho,0*d_rho(N)/(N+1)`.
+Its repeated-zero branch is `(m-1)` times the corresponding sum with
+pair constants `D_rho,k*Q_rho + |c_rho|*|a_rho,k|*D_rho,k+1`.
+The final estimates, valid at every cutoff, are
+
+\[
+ (2N+1)|J_\rho(N)-J_E(\rho,N)|\le4B_\rho(N),
+\]
+\[
+ (2N+1)\|R_N-J_E(\rho,N)\|\le F_\rho(N)+4B_\rho(N).
+\]
+
+Both error series are proved summable. The terminal theorem
+`pairedEtaLeadingCurrentLinearHeatReturn_euler_error_sum_le` bounds every
+finite return error sum by the same genuine finite total
+`sum_N (F_rho(N)+4B_rho(N))`.
+
+This supplies an arithmetic estimate on the original current and return,
+beyond heat reconstruction alone. It also identifies a specific limit of
+the proposed phase approach: the repeated-zero leading expression itself
+has no cutoff Fourier oscillation left to average away. Our assessment is
+that controlling only oscillatory errors cannot finish the argument;
+an independent arithmetic constraint must also control this surviving
+completed endpoint contribution. No bound on its first absolute moment
+has been proved, and no zero-location conclusion follows from the error
+estimate alone.
+
 ## Next mathematical obligations
 
-1. Establish arithmetic cancellation on the retained current or return
-   family sufficient to control `S_rho(K)`. Bounds for a positive heat Gram
+1. Establish an independent arithmetic bound on the surviving completed
+   endpoint contribution sufficient to control `S_rho(K)`. The signed
+   Euler error and the heat reconstruction error are now summable. Bounds for a positive heat Gram
    or a norm of a single phase channel do not establish the required signed
    completed-current bound. The small-width signed endpoint theorem and the
    broad-width reconstruction concern different regimes; a use of one to
@@ -625,15 +718,16 @@ the obstruction precisely rather than rename it as another RH criterion.
 ### Next estimates on the retained signed arithmetic
 
 The exact branch formulas, completed reflection defect, endpoint gain,
-and linear-width summability are now proved. None proves cancellation
-of the retained defect. The next targets are **proposed work**, not
-assumptions to add to the proof chain.
+linear-width summability, and signed Euler error are now proved. The
+surviving endpoint expression remains uncontrolled. The next targets are
+**proposed work**, not assumptions to add to the proof chain.
 
-1. Use the retained finite reflection defect and signed tail pairs to
-   seek an independent estimate of the return itself. Any use of the
+1. Seek an arithmetic relation constraining the explicit endpoint
+   contribution at an actual zero, beyond the existing zero-tail
+   expansion and completion symmetry. Any use of the
    mixed phase matrix must identify the actual finite eta feature vector
    and control its dimension, scale, and compression errors. The above
-   midpoint estimate alone cannot bound `S_rho(K)`.
+   midpoint and Euler error estimates alone cannot bound `S_rho(K)`.
 2. Preserve the unchanged final target: partial sums of
    `(2N+1)*|J_rho(N)|` bounded uniformly in `K` for every actual zero.
    That bound would imply RH through the already checked equivalence;

@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 579 modules · 14209 declarations · 12105 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 583 modules · 14273 declarations · 12159 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · milestones standard-only</text>
   <text class="section" x="20" y="64">CHECKED RESULTS, IDENTITIES, AND ATTRIBUTED BASELINE</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -90,5 +90,5 @@
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Actual eta heat: uniform error 32h, signed matrices, actual midpoint arithmetic, and summable linear-width current reconstruction.</text>
+  <text class="frontier" x="20" y="220">Actual eta heat: uniform error 32h, signed matrices, linear-width reconstruction, and explicit current endpoints with summable error.</text>
 </svg>

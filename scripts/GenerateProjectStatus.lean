@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "signed matrices, actual midpoint arithmetic, and summable linear-width current reconstruction.</text>\n" ++
+      "signed matrices, linear-width reconstruction, and explicit current endpoints with summable error.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -382,7 +382,18 @@ run_cmd do
         "gives a summable bound for the full weighted reconstruction error, with both its " ++
         "norm series and signed complex series retained. Its total sum bounds all finite " ++
         "error sums and the difference of the return and current's first absolute moments. " ++
-        "A bound on either first absolute moment itself remains open. These " ++
+        "The original current now also has an explicit completed Euler endpoint expression " ++
+        "with summable odd-weighted arithmetic error. Below the actual multiplicity, each " ++
+        "finite moment is the negative genuine tail; its phased Euler error has an extra " ++
+        "inverse-cutoff power. The signed pair error retains both product positions and " ++
+        "both completion channels. The actual simple-zero head evaluates exactly as a " ++
+        "difference of endpoint exponentials. In the repeated-zero branch the common " ++
+        "endpoint Fourier phase cancels at the complex product level, leaving two proved " ++
+        "positive coefficients with complementary horizontal decay rates. The unchanged " ++
+        "linear-width return differs from this same endpoint expression by a summable " ++
+        "weighted error, and every finite error sum is bounded by the explicit sum of the " ++
+        "arithmetic and heat majorants. The endpoint expression's own first absolute moment " ++
+        "remains uncontrolled, as does the return's. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[
