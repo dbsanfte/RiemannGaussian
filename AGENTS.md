@@ -1344,9 +1344,12 @@ that every commit improve a literal zero-proportion certificate above `17/25`.
 On 2026-09-06 the user authorized the next full theorem package: actual
 overlap averaging, complex weighted endpoint corrections, signed Gaussian
 reflection, mixed matrices, and an exact completed-current audit. The active
-mathematical targets and implementation ledger are in
-`docs/eta-signed-endpoint-theorem-plan.md`; the completed first program remains
-recorded in `docs/rh-overnight-theorem-plan.md`.
+mathematical targets and implementation ledger were recorded in
+`docs/eta-signed-endpoint-theorem-plan.md`; that package is complete at its
+stated scope. The user then authorized the full objective: reconstruct the
+original leading current and prove the uniform weighted arithmetic estimate.
+The active ledger is `docs/eta-current-reconstruction-plan.md`. The completed
+first program remains recorded in `docs/rh-overnight-theorem-plan.md`.
 
 A qualifying slice must prove a concrete target from that program, with all
 analytic hypotheses discharged for the actual carrier. Retain exact phase,

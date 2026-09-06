@@ -20,7 +20,7 @@ averaging or second-order asymptotic premise qualifies as implementation.
 | 2. Two-endpoint finite part | [Scalar finite part](../RiemannGaussian/EtaLogFinitePart.lean), [uniform harmonic quadrature](../RiemannGaussian/EtaLogBoundaryFinitePart.lean), [weighted-tail freezing](../RiemannGaussian/EtaLogWeightedTail.lean), [cutoff decomposition](../RiemannGaussian/EtaLogWeightedEndpoint.lean), [uniform fixed-endpoint remainder](../RiemannGaussian/EtaLogTwoEndpoint.lean), and [full complex two-endpoint limit with scale offset](../RiemannGaussian/EtaLogTwoEndpointLimit.lean). | Complete; the actual second-order Gaussian application is now checked in part 3. |
 | 3. Signed heat reflection | [Actual polynomial-phase finite part](../RiemannGaussian/EtaPolynomialMismatchFinitePart.lean), [global bound after subtraction](../RiemannGaussian/EtaWeightedFinitePartBound.lean), [damped complex domination and limit](../RiemannGaussian/EtaPolynomialFinitePartDomination.lean), [logarithmic endpoint profile](../RiemannGaussian/EtaPolynomialHeatProfile.lean), [full second-order heat law](../RiemannGaussian/EtaPolynomialHeatFinitePart.lean), and [signed reflection](../RiemannGaussian/EtaPolynomialHeatReflection.lean). | Complete. Preserve the signed law in every mixed matrix entry. |
 | 4. Full mixed matrix | [Actual mixed matrix finite part, exact leading cancellation, signed endpoint limit, and dimension-dependent aggregate error](../RiemannGaussian/Hybrid/EtaPolynomialHeatMatrix.lean). | Complete for every fixed finite family. The completed-current pairing remains part 5. |
-| 5. Completed-current audit | [Exact zero direct insertion, with both physical support carriers and the head translation checked](../RiemannGaussian/EtaSignedHeatCurrentAudit.lean), and [genuine ordered two-transition/gap-return pairing for both completed-current branches](../RiemannGaussian/EtaCompletedGapReturnPairing.lean). | Audit complete. Reconstruction of the original leading flux, intermediate-time integration, and the conjecture-strength uniform signed estimate remain open. |
+| 5. Completed-current audit | [Exact zero direct insertion, with both physical support carriers and the head translation checked](../RiemannGaussian/EtaSignedHeatCurrentAudit.lean), and [genuine ordered two-transition/gap-return pairing for both completed-current branches](../RiemannGaussian/EtaCompletedGapReturnPairing.lean). | Audit complete. The subsequent [current reconstruction program](eta-current-reconstruction-plan.md) proves the infinite gap integral and iterated reconstruction; the uniform signed estimate remains open. |
 
 Part 1 proves, for every real `0 < epsilon ≤ 1` and `0 < a ≤ 1`,
 
@@ -285,12 +285,15 @@ explicit. `pairedEtaLeadingCurrentPolynomialReturn_audit` discharges these
 hypotheses for the reflected polynomial family and actual moving tilts.
 
 This completes the authorized audit, with a concrete exact pairing and its
-limits stated. It does **not** identify the ordered return pairing with the
-original unweighted leading flux. Reconstruction, an infinite integral over
-the intermediate time, and estimates uniform in zero, cutoff, multiplicity,
-phase parameters, and width remain future work. The existing RH-equivalent
-`(2N+1)`-weighted first-moment condition remains unproved. No custom axiom or
-assumed reconstruction or summability premise has been introduced.
+limits stated. At completion of this package, reconstruction and the infinite
+intermediate-time integral remained open. The subsequent
+[current reconstruction program](eta-current-reconstruction-plan.md) proves
+that integral at positive total tilt and reconstructs the original flux by
+iterated broad-heat and vanishing-tilt limits at every fixed zero and cutoff.
+Estimates uniform in zero, cutoff, multiplicity, phase parameters, and width
+remain open. The existing RH-equivalent `(2N+1)`-weighted first-moment
+condition remains unproved. No custom axiom or assumed reconstruction or
+summability premise has been introduced.
 
 All five stages of this package are now implemented at their stated scope.
 The outstanding RH application is a separate research frontier, not a

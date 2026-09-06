@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "second-order heat, signed mixed matrices, and an exact completed-current pairing audit.</text>\n" ++
+      "second-order heat, signed mixed matrices, and iterated reconstruction of the completed current.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -318,10 +318,15 @@ run_cmd do
         "Two ordered actual heat commutators instead have an exact negative gap-return " ++
         "pairing with the completed current. Both branches are genuinely integrable " ++
         "at fixed positive intermediate time; the reflected polynomial family discharges " ++
-        "all phase and moving-tilt hypotheses. Reconstruction of the original leading " ++
-        "flux, intermediate-time integration, and uniform signed estimates remain open. " ++
-        "The signed-flux application review " ++
-        "identifies the missing completed kernel identity and uniform estimates. These " ++
+        "all phase and moving-tilt hypotheses. The infinite intermediate-time gap integral " ++
+        "is now absolutely convergent at positive total tilt, with Fubini retaining the " ++
+        "ordered complex phases and both actual multiplicity carriers. At equal positive " ++
+        "tilts and zero probe phases, the exact normalization 8*pi*h^2/M(a), with M(a) " ++
+        "the proved positive exponential gap mass, reconstructs the endpoint-damped " ++
+        "current as h tends to infinity. Removing the tilt then recovers the original " ++
+        "leading flux at each fixed zero and cutoff. Uniform arithmetic estimates and " ++
+        "passage through the cutoff-weighted absolute series remain open. The broad " ++
+        "heat reconstruction does not identify a bound from the small-width signed law. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[

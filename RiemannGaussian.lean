@@ -531,3 +531,6 @@ import RiemannGaussian.EtaPolynomialHeatReflection
 import RiemannGaussian.Hybrid.EtaPolynomialHeatMatrix
 import RiemannGaussian.EtaSignedHeatCurrentAudit
 import RiemannGaussian.EtaCompletedGapReturnPairing
+import RiemannGaussian.EtaIntegratedGapReturn
+import RiemannGaussian.EtaBroadGapReturn
+import RiemannGaussian.EtaLeadingCurrentReconstruction
