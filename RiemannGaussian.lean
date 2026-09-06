@@ -559,3 +559,6 @@ import RiemannGaussian.EtaCurrentHeadMidpoint
 import RiemannGaussian.EtaCurrentMidpointReflection
 import RiemannGaussian.EtaCurrentMomentBounds
 import RiemannGaussian.EtaCurrentMidpointBounds
+import RiemannGaussian.EtaCurrentEndpointSeries
+import RiemannGaussian.EtaCurrentLinearHeatSchedule
+import RiemannGaussian.EtaCurrentLinearHeatReconstruction

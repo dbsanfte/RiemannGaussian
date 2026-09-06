@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "signed matrices, actual midpoint arithmetic, and a zero-tail gain for both completed current branches.</text>\n" ++
+      "signed matrices, actual midpoint arithmetic, and summable linear-width current reconstruction.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -375,7 +375,14 @@ run_cmd do
         "where Q_rho=abs(c_rho)+abs(D_rho)+abs(c_rho)*m!/Re(rho)^(m+1), " ++
         "c_rho is the actual completion factor times rho, and D_rho its nonzero leading " ++
         "completed moment. This is a proved arithmetic endpoint gain for the midpoint, " ++
-        "not a uniform weighted bound on the original current. That bound remains open. These " ++
+        "not a uniform weighted bound on the original current. At linear width h_N=2*(N+1), " ++
+        "the odd-weighted midpoint term is now proved summable using both positive zero " ++
+        "coordinates. The remaining weighted defect is at most " ++
+        "(19/2)*C_rho*(1+L_N)^(2*m+3)/(N+1)^2. Adding the explicit midpoint majorant " ++
+        "gives a summable bound for the full weighted reconstruction error, with both its " ++
+        "norm series and signed complex series retained. Its total sum bounds all finite " ++
+        "error sums and the difference of the return and current's first absolute moments. " ++
+        "A bound on either first absolute moment itself remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[

@@ -27,26 +27,22 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Combine literal eta colour, phase probes, and Gaussian gap returns with the completed arithmetic current. Its midpoint correction now has an exact finite eta formula and a proved zero-tail decay gain in both multiplicity branches. Next, control this correction across cutoffs and test the retained signed reflection defect. The uniform weighted bound on the original leading current remains open.
+Combine literal eta colour, phase probes, and Gaussian gap returns with the completed arithmetic current. Linear heat width now reconstructs that current with a proved finite weighted error budget in both multiplicity branches. Next, test the retained signed reflection defect and tail pairs for an independent bound on the return itself. The uniform weighted arithmetic estimate remains open.
 
 ## Latest Update
 
-The physical midpoint coefficient `M` now has its exact finite eta
-arithmetic formula in both the [repeated-zero branch](RiemannGaussian/EtaCurrentAdjacentMidpoint.lean)
-and the [translated simple-zero head](RiemannGaussian/EtaCurrentHeadMidpoint.lean).
-The completed functional equation isolates a finite reflection defect
-times the nonzero leading moment, with both signed tails retained. It
-does not make that defect vanish; see the
-[reflection decomposition](RiemannGaussian/EtaCurrentMidpointReflection.lean).
+Lean now proves summable odd-weighted reconstruction error for the original
+completed current at **linear heat width `h_N=2(N+1)`**, using the entire
+actual gap at zero tilt. The midpoint correction and remaining Gaussian
+defect each have a proved summable arithmetic majorant, with completion
+and multiplicity constants retained. See
+[pairedEtaLeadingCurrentLinearHeatReturn_weighted_error_le](RiemannGaussian/EtaCurrentLinearHeatSchedule.lean)
+and [summable_oddEndpoint_mul_norm_pairedEtaLeadingCurrentLinearHeatReturn_error](RiemannGaussian/EtaCurrentLinearHeatReconstruction.lean).
 
-Using the actual zero-tail bounds, Lean now proves
-`|Mρ(N)| ≤ 2m(1+L_N)/(N+1) · [Q_partner²(2N+3)^(-(1−σ)) + Qρ²(2N+3)^(-σ)]`,
-where `σ=Re(ρ)`, `m` is the analytic multiplicity, `L_N=log(2N+5)`, and
-the completion-dependent `Q` constants are explicit. This supplies an
-arithmetic decay gain for the first heat correction beyond the absolute
-kernel bound. See the [midpoint bound](RiemannGaussian/EtaCurrentMidpointBounds.lean)
-and [next estimates](docs/eta-current-reconstruction-plan.md). The uniform
-weighted bound on the original leading current remains unproved.
+The [finite first-moment stability theorem](RiemannGaussian/EtaCurrentLinearHeatReconstruction.lean)
+bounds the difference between return and current moments uniformly in the
+terminal cutoff. An independent bound on the return moment itself remains
+the [next arithmetic obligation](docs/eta-current-reconstruction-plan.md).
 RH remains open. No `13/18` certificate exists.
 
 ## Notable Formalisations
@@ -82,6 +78,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Zero-tilt weighted current reconstruction** | Arithmetic interval balance bounds the full Gaussian gap mass away from zero. Its exact midpoint multiplier reconstructs both original current branches with summable odd-weighted error at width `2(N+1)²`, retaining a finite first-moment stability budget. | [pairedEtaGaussianGapMass_zero_bounds](RiemannGaussian/EtaGaussianGapMass.lean), [pairedEtaLeadingCurrentZeroTiltScheduledReturn_firstMoment_stability](RiemannGaussian/EtaZeroTiltWeightedReconstruction.lean) |
 | **Wallis colour and the actual current's first heat correction** | The cumulative literal colour approaches `log(π/2)` with error at most `9 exp(−t)`. This evaluates the broad-Gaussian gap term with a cubic-width remainder, then identifies the original signed current's physical midpoint coefficient with an explicit inverse-square-width error. | [pairedEtaLogColourPrimitive_wallis_error_le](RiemannGaussian/EtaLogColourPrimitive.lean), [pairedEtaGaussianGapMass_wallis_expansion_error_le](RiemannGaussian/EtaGaussianGapExpansion.lean), [pairedEtaLeadingCurrentZeroTiltGapReturn_midpoint_error_le_arithmetic](RiemannGaussian/EtaCurrentMidpointCorrection.lean) |
 | **Midpoint arithmetic and zero-tail gain** | Both original midpoint coefficients evaluate in finite completed eta moments. The full complex orientation and exact reflection defect survive; the zero equation gives an extra endpoint decay factor in an explicit all-cutoff bound, including the translated simple-zero head. | [pairedEtaLeadingCurrentMidpointMoment_eq_adjacent_reflection](RiemannGaussian/EtaCurrentMidpointReflection.lean), [pairedEtaLeadingCurrentMidpointMoment_eq_head_reflection](RiemannGaussian/EtaCurrentMidpointReflection.lean), [abs_pairedEtaLeadingCurrentMidpointMoment_le_arithmetic](RiemannGaussian/EtaCurrentMidpointBounds.lean) |
+| **Linear-width weighted reconstruction** | The actual midpoint gain makes the entire odd-weighted reconstruction error summable already at width `2(N+1)`. One explicit finite budget bounds every partial error sum and the difference of the original return and current's first absolute moments. | [pairedEtaLeadingCurrentLinearHeatReturn_weighted_error_le](RiemannGaussian/EtaCurrentLinearHeatSchedule.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_stability](RiemannGaussian/EtaCurrentLinearHeatReconstruction.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 

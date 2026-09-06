@@ -42,6 +42,7 @@ the objective.
 | Identify the first broad-heat coefficient of the original current | The normalized expansion in [EtaZeroTiltFirstCorrection.lean](../RiemannGaussian/EtaZeroTiltFirstCorrection.lean) and `pairedEtaLeadingCurrentZeroTiltGapReturn_midpoint_error_le_arithmetic` in [EtaCurrentMidpointCorrection.lean](../RiemannGaussian/EtaCurrentMidpointCorrection.lean). | Proved in both actual multiplicity branches, retaining an exact signed defect and an explicit inverse-square-width error. Arithmetic cancellation of the midpoint coefficient remains open. |
 | Evaluate the midpoint coefficient in finite eta arithmetic | The complex integral identity in [EtaCurrentFiniteMomentPair.lean](../RiemannGaussian/EtaCurrentFiniteMomentPair.lean), the repeated-zero formula in [EtaCurrentAdjacentMidpoint.lean](../RiemannGaussian/EtaCurrentAdjacentMidpoint.lean), and the translated head formula in [EtaCurrentHeadMidpoint.lean](../RiemannGaussian/EtaCurrentHeadMidpoint.lean). | Proved with both physical cutoff origins, all centered orders, and complex channel orientation retained. |
 | Apply completed reflection and the actual zero-tail bounds to the midpoint | Both branch decompositions in [EtaCurrentMidpointReflection.lean](../RiemannGaussian/EtaCurrentMidpointReflection.lean), finite moment bounds in [EtaCurrentMomentBounds.lean](../RiemannGaussian/EtaCurrentMomentBounds.lean), and `abs_pairedEtaLeadingCurrentMidpointMoment_le_arithmetic` in [EtaCurrentMidpointBounds.lean](../RiemannGaussian/EtaCurrentMidpointBounds.lean). | Proved with an explicit additional endpoint decay factor. The finite reflection defect times the nonzero leading moment is retained; no vanishing or original-current weighted bound follows. |
+| Preserve the weighted frontier at linear heat width | `pairedEtaLeadingCurrentLinearHeatReturn_weighted_error_le` in [EtaCurrentLinearHeatSchedule.lean](../RiemannGaussian/EtaCurrentLinearHeatSchedule.lean), and summability and finite-prefix stability in [EtaCurrentLinearHeatReconstruction.lean](../RiemannGaussian/EtaCurrentLinearHeatReconstruction.lean). | Proved at width `2(N+1)`, with separate summable midpoint and remaining-defect majorants and an explicit finite total error budget. No bound on the return's own weighted moment is proved. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -521,6 +522,52 @@ bounds the midpoint coefficient; it is not the uniform first absolute
 moment estimate for the original current. No new cancellation of the
 finite reflection defect has been established.
 
+## Checked linear-width weighted reconstruction
+
+Set `x_N=N+1`, `b_N=1+L_N`, and let `E_rho(N)` denote the two-channel
+endpoint envelope in the preceding midpoint bound. The unchanged actual
+zero-tilt gap return is now evaluated at `h_N=2x_N`; write it as `R_N` and
+retain its signed midpoint term `T_N=M_rho(N)/(sqrt(pi)*h_N)`.
+[EtaCurrentLinearHeatSchedule.lean](../RiemannGaussian/EtaCurrentLinearHeatSchedule.lean)
+proves, for every actual zero and cutoff,
+
+\[
+ (2N+1)|T_N|\le\frac{2m}{\sqrt\pi}\frac{b_NE_\rho(N)}{x_N},
+ \qquad
+ (2N+1)\|R_N-J_N-T_N\|
+ \le\frac{19}{2}C_\rho\frac{b_N^{2m+3}}{x_N^2}.
+\]
+
+The general logarithmic series theorem
+`summable_pairedEtaCurrent_logPower_div_rpow` in
+[EtaCurrentEndpointSeries.lean](../RiemannGaussian/EtaCurrentEndpointSeries.lean)
+proves summability of `b_N^k/x_N^p` for every fixed `k` and `p>1`.
+The actual zero coordinates supply the strict margins `p=1+Re(rho)`
+and `p=1+(1-Re(rho))` needed for the midpoint term. Consequently
+
+\[
+ F_\rho(N)=\frac{19}{2}C_\rho\frac{b_N^{2m+3}}{x_N^2}
+       +\frac{2m}{\sqrt\pi}\frac{b_NE_\rho(N)}{x_N}
+\]
+
+is a proved summable majorant of `(2N+1)*norm(R_N-J_N)`.
+[EtaCurrentLinearHeatReconstruction.lean](../RiemannGaussian/EtaCurrentLinearHeatReconstruction.lean)
+retains both the norm-summable and signed complex weighted error series.
+The explicit finite budget `E_linear(rho)=sum_N F_rho(N)` bounds every
+finite error sum. Its terminal theorem
+`pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_stability` gives
+
+\[
+ \left|\sum_{N<K}(2N+1)\|R_N\|
+       -\sum_{N<K}(2N+1)|J_N|\right|\le E_{\mathrm{linear}}(\rho)
+ \quad\text{for every }K.
+\]
+
+This improves the checked reconstruction width from quadratic to linear
+while preserving both original completed carriers. It does not bound
+either first absolute moment itself. That independent arithmetic estimate
+remains the full goal's unresolved part.
+
 ## Next mathematical obligations
 
 1. Establish arithmetic cancellation on the retained current or return
@@ -563,7 +610,7 @@ to add to Lean:
 
 | Step | Existing input | Concrete target and acceptance condition |
 | --- | --- | --- |
-| Compare ordered heat compositions on the actual domain | The exact continuous composition, full three-time integrability, and new zero-tilt weighted reconstruction above. | The normalization and reconstruction error are now controlled with quadratic width. The next estimate must preserve cancellation of the signed completed current against the composed term and both corrections. |
+| Compare ordered heat compositions on the actual domain | The exact continuous composition, full three-time integrability, and zero-tilt weighted reconstruction above. | The normalization and reconstruction error are now controlled with linear width. The next estimate must preserve cancellation of the signed completed current against the composed term and both corrections. |
 | Keep all support/gap paths | The actual two-transition decomposition above, the finite two-stage identity in [ProjectionHeatLeakage](../RiemannGaussian/Hybrid/ProjectionHeatLeakage.lean), and ordered cubic paths in [EtaSpectralHeatCubicPaths](../RiemannGaussian/Hybrid/EtaSpectralHeatCubicPaths.lean). | For any longer-path comparison, prove its identities on the actual continuous eta measure and pair every path with both completed current branches. Include every omitted-time and compression term with its sign. The existing finite matrix algebra alone is insufficient. |
 | Test a quantitative scale comparison | The signed two-endpoint heat law, full mixed phase matrix, and the new reconstruction error budget. | Derive an estimate for the actual signed return with cutoff, phase-family size, moving tilt, multiplicity, and accumulated path error explicit. A sufficient endpoint would be a summable majorant for `(2N+1)‖R_N‖`; the exact target is a bound on its partial sums uniform in `K`. |
 
@@ -575,26 +622,19 @@ fixed off-axis zero: their tilt parameter grows with the logarithmic scale.
 If no estimate survives these dependencies, the next result should state
 the obstruction precisely rather than rename it as another RH criterion.
 
-### Next estimates after the midpoint arithmetic test
+### Next estimates on the retained signed arithmetic
 
-The arithmetic test has produced the exact two branch formulas, the
-completed reflection defect, and the endpoint gain above. The new bound
-uses the established zero-tail estimates; it does not prove cancellation
+The exact branch formulas, completed reflection defect, endpoint gain,
+and linear-width summability are now proved. None proves cancellation
 of the retained defect. The next targets are **proposed work**, not
 assumptions to add to the proof chain.
 
-1. With the candidate linear width `h_N=2(N+1)`, prove summability of
-   `(2N+1)*|M_rho(N)|/h_N` from the new bound. Its majorants have the
-   form `constant*(1+log(2N+5))/(N+1)^(1+sigma)` and the complementary
-   exponent `1+(1-sigma)`. Keep the constants explicit. Combine this
-   with the checked inverse-square-width remainder to prove a new
-   all-cutoff reconstruction stability budget for the original return.
-2. Use the retained finite reflection defect and signed tail pairs to
+1. Use the retained finite reflection defect and signed tail pairs to
    seek an independent estimate of the return itself. Any use of the
    mixed phase matrix must identify the actual finite eta feature vector
    and control its dimension, scale, and compression errors. The above
    midpoint estimate alone cannot bound `S_rho(K)`.
-3. Preserve the unchanged final target: partial sums of
+2. Preserve the unchanged final target: partial sums of
    `(2N+1)*|J_rho(N)|` bounded uniformly in `K` for every actual zero.
    That bound would imply RH through the already checked equivalence;
    it is not an auxiliary estimate already supplied by this package.
