@@ -27,39 +27,40 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Combine height-adapted eta bounds with independent prime positivity to constrain off-critical zeros. A logarithmic zero margin now improves the bound for simple zeros, while retaining the earlier multiplicity bound. The remaining task is to exclude the interior off-critical contribution and prove the original weighted sum uniformly bounded in the cutoff; RH remains open.
+Use the signed zeta logarithmic derivative, exact eta bounds, and prime positivity to constrain actual zeros while retaining full multiplicity. A reciprocal-logarithm margin now bounds both strip edges and strengthens the original return estimate. Excluding interior off-critical zeros and proving the weighted first absolute moment uniformly bounded in the cutoff remain open.
 
 ## Latest Update
 
-Lean now proves a **logarithmic zero margin for every actual nontrivial zero**.
-For `rho=sigma+i*gamma`, put `L(t)=log(|t|+21)` and `C=144*4^3*576^4`. Then
+Lean now proves an **explicit reciprocal-logarithm margin for every actual
+nontrivial zero**. For `rho=sigma+i*gamma`,
 
 \[
- 0<\delta_{\log}(\gamma)\le\sigma\le1-\delta_{\log}(\gamma),\qquad
- \delta_{\log}(t)=\frac{|t|^5}{C(|t|+21)^5L(t)^{14}}.
+ 0<\delta(\gamma)\le\sigma\le1-\delta(\gamma),\qquad
+ \delta(t)=\frac{|t|}{1{,}800{,}000(|t|+1)\log(|t|+22)}.
 \]
 
 The terminal theorem is
-[nontrivialZetaZero_mem_etaLogPrimeProduct_strip](RiemannGaussian/EtaLogarithmicZeroMargin.lean).
-Height-adapted finite eta prefixes, the actual tail, shrinking dyadic
-rectangles, Schwarz's lemma, and classical prime positivity discharge every
-premise. For `|gamma|>=21`,
-[nontrivialZetaZero_mem_reciprocal_logarithmic_strip](RiemannGaussian/EtaLogarithmicMarginComparison.lean)
-gives the simpler edge margin `1/(32*C*L(gamma)^14)`.
+[nontrivialZetaZero_mem_signedLogarithmic_strip](RiemannGaussian/ZetaSignedZeroMargin.lean).
+The proof bounds the actual local eta residual after removing every enclosed
+zero with its full multiplicity. It retains each zero's signed pole term
+and combines it with the convergent von Mangoldt series. For `|gamma|>=1`,
+[nontrivialZetaZero_mem_reciprocal_log_strip](RiemannGaussian/ZetaSignedZeroMargin.lean)
+gives the simpler margin `1/(3,600,000*log(|gamma|+22))`.
 
-The new margin is **strictly larger than our previous ordinate-only margin**
-at every nonzero ordinate:
-[etaPrimeProductZeroMargin_lt_logarithmic](RiemannGaussian/EtaLogarithmicMarginComparison.lean).
-Taking its maximum with the earlier multiplicity margin preserves both
-bounds and strictly improves the return exponent for every simple zero.
-[pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaRefinedPrimeProduct](RiemannGaussian/EtaLogarithmicZeroMargin.lean)
+The margin is **strictly larger than our previous fourteenth-logarithmic-power
+margin** at every nonzero ordinate:
+[etaLogPrimeProductZeroMargin_lt_signed](RiemannGaussian/ZetaSignedMarginComparison.lean).
+Taking its maximum with the previous bounds preserves their multiplicity
+information and strictly improves the return exponent for every simple zero.
+[pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaSignedPrimeProduct](RiemannGaussian/ZetaSignedZeroMargin.lean)
 transports this to the unchanged Gaussian return. Its exponent still lies in
 `[7/8,1)`, so the [uniform weighted goal](docs/eta-current-reconstruction-plan.md),
 RH, and the `13/18` certificate remain open.
 
-This improves the repository's bound; it is weaker than the
-[classical reciprocal-logarithm zero-free region](https://people.math.harvard.edu/~elkies/M229.20/free.pdf).
-No novelty priority or improvement over the literature is claimed.
+This formalises the shape of the
+[classical reciprocal-logarithm zero-free region](https://people.math.harvard.edu/~elkies/M229.20/free.pdf)
+with conservative explicit constants derived from the repository's eta
+bounds. No novelty priority or improvement over the literature is claimed.
 
 ## Notable Formalisations
 
@@ -72,6 +73,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Gaussian heat and reflected-zero Grams** | The complete matched Gaussian correlation equals the boundary heat-residue sum. At positive heat time, its vanishing is equivalent to RH. | [riemannXiUpperReflectedPairGaussianTotal_eq_boundaryHeatResidueTotal](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L187), [riemannXiUpperReflectedPairGaussianTotal_eq_zero_iff_rh](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L197) |
 | **Suzuki arithmetic and spectral formulas** | Suzuki's positive-time arithmetic function equals its spectral expansion on `Im z > 1/2`. The literal arithmetic `Psi` is strictly positive on a nonzero punctured neighbourhood of the origin. | [riemannXiSuzukiArithmeticPPositive_eq_spectral_safe](RiemannGaussian/RiemannXiSuzukiWeilVerticalLimit.lean#L462), [exists_pos_on_abs_riemannXiSuzukiPsi](RiemannGaussian/RiemannXiSuzukiPointwiseLocalPositivity.lean#L298) |
 | **Xi growth and divisor summability** | Unconditional `exp(O(R log R))` xi growth and convergence of the multiplicity-weighted inverse-square zero series. | [riemannXi_logLinearGrowth](RiemannGaussian/GaussianXiLogLinearGrowth.lean#L315), [summable_distinct_zetaZeroInverseSquareNorm](RiemannGaussian/GaussianXiInverseSquareSummability.lean#L294) |
+| **Explicit zero-free strip from signed prime positivity** | A complete local divisor and bounded analytic remainder retain every zero's signed pole contribution. The actual von Mangoldt series gives a reciprocal-logarithm edge margin for every nontrivial zero, with conservative explicit constants. | [neg_logDeriv_riemannZeta_re_le_sub_zero](RiemannGaussian/ZetaSignedLocalEstimate.lean), [nontrivialZetaZero_mem_signedLogarithmic_strip](RiemannGaussian/ZetaSignedZeroMargin.lean) |
 | **Finite Hardy-space geometry** | Orthogonality in genuine boundary `L²`, including repeated roots, and a basis-independent determinant formula for the residual Gram operator. | [finiteModelBoundaryLp_inner_residualInner_negative_eq_zero](RiemannGaussian/FiniteHardyOrthogonality.lean#L260), [finiteHardyCrossAngleComplementGramOperator_det_eq_basisResidual_ratio](RiemannGaussian/FiniteHardyMetricDeterminant.lean#L294) |
 | **Eta as a positive-measure Laplace transform** | On `Re s > 0`, paired eta divided by `s` is exactly the Laplace transform of Lebesgue measure restricted to the alternating logarithmic intervals `(log(2n+1), log(2n+2)]`. | [integral_exp_neg_mul_pairedEtaLogMeasure_eq_pairedEtaCore_div](RiemannGaussian/RiemannXiSuzukiPositiveCriticalStripEtaInfiniteLaplaceMeasure.lean#L219) |
 | **Critical eta support/gap heat law** | A phase-resolved boundary decomposition on the actual eta intervals gives the sharp critical term `(2/√π) h log(1/h)` with error at most `32h`; the stronger phase-profile error is uniform in the ordinate. | [pairedEtaPhaseMismatch_boundary_error_le](RiemannGaussian/EtaLogSupportShift.lean), [pairedEtaSupportGapGaussianLeakage_uniform_error_le](RiemannGaussian/EtaSupportGapGaussian.lean#L349) |
@@ -148,6 +150,13 @@ positivity or vanishing direction remains unproved.
   independent. This preserves the information needed to distinguish every
   represented zero, including its completion factors and multiplicity-aware
   features; it supplies no critical-line proportion by itself.
+- **Formalised a concrete reciprocal-logarithm zero-free strip.**
+  [nontrivialZetaZero_mem_signedLogarithmic_strip](RiemannGaussian/ZetaSignedZeroMargin.lean)
+  gives an explicit margin at both edges for every actual nontrivial zero,
+  combining the repository's eta bounds with classical signed prime
+  positivity. The [strict comparison](RiemannGaussian/ZetaSignedMarginComparison.lean)
+  improves the previous project bound at every nonzero ordinate. This is a
+  formalisation of a classical type of region, with no novelty claim.
 - **Combined literal eta arithmetic, polynomial phase, and Gaussian heat at second order.**
   [pairedEtaSupportGapGaussianLeakage_polynomial_finite_part_tendsto](RiemannGaussian/EtaPolynomialHeatFinitePart.lean)
   evaluates the actual heat finite part using separate harmonic and Wallis

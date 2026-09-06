@@ -69,12 +69,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh
   },
   {
-    label := "The eta odd-heat trajectory retains an exact three-colour zero sum"
-    lineOne := "eta heat trajectory"
-    lineTwo := "3-colour zero sum"
-    role := "bridge"
+    label := "Actual zeta zeros lie in an explicit reciprocal-logarithm strip"
+    lineOne := "zero-free strip"
+    lineTwo := "explicit 1/log"
+    role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_zero_one_eq_integral_mixedChannelZeroSumAt
+      ``RiemannGaussian.nontrivialZetaZero_mem_signedLogarithmic_strip
   },
   {
     label := "External Montgomery--Taylor simple-zero benchmark"
@@ -210,7 +210,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Eta + prime positivity: logarithmic zero margin; " ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Signed prime positivity: reciprocal-log zero margin; " ++
       "positive return exponent; uniform weighted bound open.</text>\n" ++
     "</svg>\n"
 
@@ -548,8 +548,32 @@ run_cmd do
         "independent estimates and gives the original return exponent " ++
         "1-2*max(Delta_m(y),delta_log(y)), strictly smaller for every " ++
         "actual simple zero. It still lies in [7/8,1). This is weaker " ++
-        "than the classical reciprocal-logarithm zero-free region, and " ++
-        "no novelty priority is claimed. No uniform transfer estimate " ++
+        "than the classical reciprocal-logarithm zero-free region. The signed " ++
+        "local logarithmic derivative now improves this margin to " ++
+        "delta_signed(y)=abs(y)/(1800000*(abs(y)+1)*log(abs(y)+22)). " ++
+        "At every real ordinate the actual translated unit disc for Z1 has " ++
+        "norm bound 8*(abs(y)+22)^2 and center floor 1/16 from the safe-line " ++
+        "Moebius series. A zero-free sphere of radius between 3/4 and 7/8 " ++
+        "permits complete canonical zero removal. Jensen bounds its full " ++
+        "multiplicity count by 32*log(abs(y)+22); Borel-Caratheodory and " ++
+        "Cauchy bound the residual logarithmic derivative by 320 times that " ++
+        "logarithm. The complete regular remainder is bounded by 448 times " ++
+        "the logarithm, while every local zero stays in the exact signed pole " ++
+        "sum. The genuine multiplicity m contributes -m/(x+1-Re(rho)) " ++
+        "to the negative real zeta logarithmic derivative at 1+x+i*Im(rho). " ++
+        "The actual convergent von Mangoldt series proves signed three-height " ++
+        "3-4-1 positivity. The real-axis bound preserves the leading pole " ++
+        "coefficient one: 1/x+28224 for 0<x<=1/28224. Choosing x=4*(1-Re(rho)) " ++
+        "and reflecting yields the explicit positive delta_signed margin " ++
+        "at both edges for every actual zero. For abs(y)>=1 it is at least " ++
+        "1/(3600000*log(abs(y)+22)). Lean proves delta_signed(y)>delta_log(y) " ++
+        "at every nonzero ordinate. The maximum with all previous bounds " ++
+        "preserves multiplicity information and transports to the unchanged " ++
+        "Gaussian return with its original C_rho. The exponent strictly " ++
+        "decreases at every actual simple zero but remains in [7/8,1). " ++
+        "This formalises the classical reciprocal-logarithm shape with " ++
+        "conservative explicit constants; no novelty priority or improvement " ++
+        "over the literature is claimed. No uniform transfer estimate " ++
         "to the original current's weighted absolute moment is proved. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

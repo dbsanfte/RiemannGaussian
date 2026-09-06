@@ -53,6 +53,7 @@ the objective.
 | Reconstruct and control full Möbius transforms at every centered moment order | `norm_pairedEtaCompletedMomentMoebiusAggregate_le` in [EtaMomentMoebiusTransform.lean](../RiemannGaussian/EtaMomentMoebiusTransform.lean), `pairedEtaFiniteCompletedMoment_eq_momentInverse` in [EtaMomentMoebiusInverse.lean](../RiemannGaussian/EtaMomentMoebiusInverse.lean), and both current branches in [EtaCurrentMomentMoebiusInverse.lean](../RiemannGaussian/EtaCurrentMomentMoebiusInverse.lean). | Exact two-endpoint cancellation and all-cutoff aggregate bounds are proved at fixed centers for every order. The inverse preserves all center shifts and recovers the original repeated-zero double sum. The weighted inverse estimate at moving physical centers remains open. |
 | Strengthen the independent zero margin using actual multiplicity | `one_le_etaPrimeProduct_multiplicity_gap` in [EtaPrimeProductMultiplicityGap.lean](../RiemannGaussian/EtaPrimeProductMultiplicityGap.lean), `nontrivialZetaZero_mem_etaPrimeProductMultiplicity_strip` in [EtaPrimeProductMultiplicityMargin.lean](../RiemannGaussian/EtaPrimeProductMultiplicityMargin.lean), and `etaPrimeProductZeroMargin_lt_multiplicity` in [EtaPrimeProductMultiplicityComparison.lean](../RiemannGaussian/EtaPrimeProductMultiplicityComparison.lean). | The exact margin equals the previous bound at multiplicity one and is strictly larger at every nonzero ordinate for multiplicity at least two. The original return has the smaller exponent `1-2*Delta_m(Im rho)`, still in `[7/8,1)`. The uniform weighted goal remains open. |
 | Improve the zero margin for simple zeros using height-adapted eta bounds | `norm_riemannZeta₁_le_etaThinStrip` in [EtaThinStripRectangle.lean](../RiemannGaussian/EtaThinStripRectangle.lean), `nontrivialZetaZero_mem_reciprocal_logarithmic_strip` and `etaPrimeProductZeroMargin_lt_logarithmic` in [EtaLogarithmicMarginComparison.lean](../RiemannGaussian/EtaLogarithmicMarginComparison.lean), and `pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaRefinedPrimeProduct` in [EtaLogarithmicZeroMargin.lean](../RiemannGaussian/EtaLogarithmicZeroMargin.lean). | A positive explicit logarithmic margin constrains every actual zero; above height twenty-one it dominates `1/(32*C*log(|gamma|+21)^14)`. It strictly improves the earlier ordinate-only margin. The maximum with the previous multiplicity margin retains both bounds and strictly lowers the exponent for simple zeros. The exponent remains in `[7/8,1)`, and the uniform goal is open. |
+| Retain signed local zero poles in the prime comparison | `norm_localZetaLogRemainder_le` in [ZetaLocalLogDerivative.lean](../RiemannGaussian/ZetaLocalLogDerivative.lean), `neg_logDeriv_riemannZeta_re_le_sub_zero` in [ZetaSignedLocalEstimate.lean](../RiemannGaussian/ZetaSignedLocalEstimate.lean), and `nontrivialZetaZero_mem_signedLogarithmic_strip` in [ZetaSignedZeroMargin.lean](../RiemannGaussian/ZetaSignedZeroMargin.lean). | Every actual zero has the positive margin `abs(y)/(1800000*(abs(y)+1)*log(abs(y)+22))`. This strictly improves the previous logarithmic margin at every nonzero ordinate. The maximum preserves all previous multiplicity bounds and improves the original return exponent for simple zeros; the exponent remains in `[7/8,1)`. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -1890,10 +1891,116 @@ This is an improvement to the repository's checked estimate, with no
 novelty priority claim. Interior off-critical exclusion and the uniform
 weighted estimate remain open.
 
+## Signed local poles and an explicit reciprocal-logarithm margin
+
+The next independent arithmetic constraint uses the signed logarithmic
+derivative rather than norms of three zeta values. The actual local function
+is `f_y(z)=Z1(3/2+i*y+z)`, where `Z1(s)=(s-1)*zeta(s)` away from one and
+`Z1(1)=1`. The following inputs are proved at every real ordinate:
+
+- `norm_localZetaPoleRemoved_le` gives `norm(f_y(z))<=8*(abs(y)+22)^2`
+  on the entire closed unit disc. The eta rectangle and safe-line factor
+  estimates cover the full disc.
+- `sixteenth_le_norm_localZetaPoleRemoved_zero` gives the center floor
+  `1/16`, using the actual absolutely convergent Möbius series at real
+  part `3/2`.
+- `exists_localZetaSphere_zeroFree` selects a radius `3/4<R_y<7/8` with
+  no boundary zeros. `localZetaCanonicalResidual_decomp` removes the
+  **complete** enclosed divisor and leaves a nonvanishing analytic residual.
+  The exact boundary norms and center floor survive this removal.
+- `norm_logDeriv_localZetaCanonicalResidual_le` bounds the residual
+  logarithmic derivative by `320*L_y` on `norm(z)<=1/2`, where
+  `L_y=log(abs(y)+22)>2`. This follows from a normalized analytic logarithm,
+  Borel--Carathéodory, and Cauchy's derivative estimate.
+- `sum_divisor_localZetaPoleRemoved_canonicalBall_le` bounds the full
+  multiplicity count by `32*L_y`. Jensen's inequality uses the outer unit
+  disc and the actual center floor.
+
+These declarations are in [ZetaLocalDiscBounds.lean](../RiemannGaussian/ZetaLocalDiscBounds.lean),
+[ZetaLocalCanonical.lean](../RiemannGaussian/ZetaLocalCanonical.lean),
+[ZetaLocalResidualBounds.lean](../RiemannGaussian/ZetaLocalResidualBounds.lean),
+[ZetaLocalResidualLog.lean](../RiemannGaussian/ZetaLocalResidualLog.lean), and
+[ZetaLocalJensen.lean](../RiemannGaussian/ZetaLocalJensen.lean).
+
+The exact complex decomposition
+`logDeriv_localZetaPoleRemoved_eq_remainder_add_poleSum` in
+[ZetaLocalLogDerivative.lean](../RiemannGaussian/ZetaLocalLogDerivative.lean)
+keeps every local divisor coefficient in the pole sum. Only the analytic
+remainder is norm-bounded: `norm_localZetaLogRemainder_le` gives `448*L_y`.
+No infinite partial-fraction limit or unproved residual bound is assumed.
+
+For `0<x<=1/4`, all local zero Cauchy terms have nonnegative real part at
+`s=1+x+i*y`. At an actual zero `rho=sigma+i*gamma` with `sigma>=3/4`,
+`divisor_localZetaPoleRemoved_nontrivialZero` identifies its coefficient
+with the **full genuine multiplicity** `m`. Thus
+`neg_logDeriv_riemannZeta_re_le_sub_zero` proves
+
+\[
+ -\Re\frac{\zeta'}{\zeta}(1+x+i\gamma)
+ \le \frac1{|\gamma|}+448\log(|\gamma|+22)
+       -\frac{m}{x+1-\sigma}.
+\]
+
+The simple pole at one also keeps its leading coefficient exactly:
+`neg_logDeriv_riemannZeta_real_le` gives `1/x+28224` for
+`0<x<=1/28224`. See [ZetaSignedPoleControl.lean](../RiemannGaussian/ZetaSignedPoleControl.lean)
+and [ZetaSignedLocalEstimate.lean](../RiemannGaussian/ZetaSignedLocalEstimate.lean).
+
+The exact complex von Mangoldt identity and absolute convergence precede
+the real inequality in [ZetaSignedPrimeSeries.lean](../RiemannGaussian/ZetaSignedPrimeSeries.lean).
+`neg_logDeriv_riemannZeta_three_height_nonneg` proves the signed `3-4-1`
+inequality by the nonnegative square `2*(1+cos(theta))^2`.
+Combining these actual inputs proves
+`four_mul_multiplicity_div_gap_le_signedLogHeight`:
+
+\[
+ \frac{4m}{x+1-\sigma}
+ \le \frac3x+90000\log(|\gamma|+22)(1+1/|\gamma|).
+\]
+
+Choosing `x=4*(1-sigma)` gives
+`one_le_signedLogHeight_mul_zero_gap` in
+[ZetaSignedLogarithmicGap.lean](../RiemannGaussian/ZetaSignedLogarithmicGap.lean).
+The resulting ratio lies below the required near-pole threshold at every
+ordinate. Reflection then proves the unconditional terminal theorem
+`nontrivialZetaZero_mem_signedLogarithmic_strip`:
+
+\[
+ 0<\delta_{\rm signed}(\gamma)\le\sigma\le1-\delta_{\rm signed}(\gamma),
+ \qquad
+ \delta_{\rm signed}(y)=
+ \frac{|y|}{1800000(|y|+1)\log(|y|+22)}.
+\]
+
+For `abs(gamma)>=1`, `nontrivialZetaZero_mem_reciprocal_log_strip` gives
+the simpler margin `1/(3600000*log(abs(gamma)+22))`. Both are in
+[ZetaSignedZeroMargin.lean](../RiemannGaussian/ZetaSignedZeroMargin.lean).
+`etaLogPrimeProductZeroMargin_lt_signed` in
+[ZetaSignedMarginComparison.lean](../RiemannGaussian/ZetaSignedMarginComparison.lean)
+proves strict improvement over the previous fourteenth-logarithmic-power
+margin at **every** nonzero ordinate, including small heights.
+
+The combined margin `etaSignedPrimeProductZeroMargin` takes the maximum
+with all previous bounds. The terminal theorem
+`pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaSignedPrimeProduct`
+keeps the original `C_rho` and the unchanged Gaussian return, with exponent
+`1-2*etaSignedPrimeProductZeroMargin(m,gamma)`. The exponent strictly decreases
+for every actual simple zero, while all previously established multiplicity
+constraints survive. `etaSignedPrimeProduct_return_exponent_bounds` proves
+that it remains in `[7/8,1)`; no cutoff-independent bound follows.
+
+This is the shape of the [classical reciprocal-logarithm argument](https://people.math.harvard.edu/~elkies/M229.20/free.pdf),
+with conservative explicit constants obtained from the repository's eta
+and complete local divisor estimates. It is an improvement to the checked
+project bound, with no novelty priority or improvement over the literature
+claimed. The signed prime comparison excludes edge regions, while the
+interior off-critical contribution and the original uniform weighted goal
+remain open. No RH proof or `13/18` certificate is claimed.
+
 ## Next mathematical obligations
 
-The independent prime-product input now excludes the explicit edge regions
-above using the maximum of the logarithmic and multiplicity margins. The
+The signed prime input now excludes the explicit reciprocal-logarithm edge
+regions above, preserving every earlier multiplicity margin. The
 simple-zero bound has strictly improved. It does not force real part `1/2`,
 and its return bound has a proved positive exponent. The remaining task is to rule out the interior
 off-critical contribution while retaining the unchanged absolute weighted

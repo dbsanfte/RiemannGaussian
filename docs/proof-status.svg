@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 630 modules · 14913 declarations · 12726 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 642 modules · 15017 declarations · 12820 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · milestones standard-only</text>
   <text class="section" x="20" y="64">CHECKED RESULTS, IDENTITIES, AND ATTRIBUTED BASELINE</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -63,11 +63,11 @@
     <text x="92" y="173">boundary heat = 0</text>
     <text x="92" y="191">iff RH (reform.)  ✓</text>
   </g>
-  <g class="proved bridge">
+  <g class="proved unconditional">
     <rect x="180" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.pairedEtaTopPrefixFiniteHeatHilbertWindowLeadingBlock_zero_one_eq_integral_mixedChannelZeroSumAt</title>
-    <text x="252" y="173">eta heat trajectory</text>
-    <text x="252" y="191">3-colour zero sum  ✓</text>
+    <title>RiemannGaussian.nontrivialZetaZero_mem_signedLogarithmic_strip</title>
+    <text x="252" y="173">zero-free strip</text>
+    <text x="252" y="191">explicit 1/log  ✓</text>
   </g>
   <g class="proved external">
     <rect x="340" y="150" width="145" height="54" rx="9"/>
@@ -90,5 +90,5 @@
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Eta + prime positivity: logarithmic zero margin; positive return exponent; uniform weighted bound open.</text>
+  <text class="frontier" x="20" y="220">Signed prime positivity: reciprocal-log zero margin; positive return exponent; uniform weighted bound open.</text>
 </svg>
