@@ -47,6 +47,7 @@ the objective.
 | Bound the original return's weighted moment as the cutoff grows | The two-factor estimate in [EtaCurrentArithmeticEnvelope.lean](../RiemannGaussian/EtaCurrentArithmeticEnvelope.lean), the finite power-sum comparison in [EtaCurrentPowerSum.lean](../RiemannGaussian/EtaCurrentPowerSum.lean), and `pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_growth_le` in [EtaCurrentReturnGrowth.lean](../RiemannGaussian/EtaCurrentReturnGrowth.lean). | Proved with explicit growth `C_rho*(K+1)^abs(2*Re(rho)-1)` and exact treatment of the critical line. The exponent is below one, and the cutoff-normalized moment tends to zero. A cutoff-independent bound remains open. |
 | Couple actual completed eta tails across multiplicatively divided cutoffs | `sum_moebius_mul_pairedEtaCorePartialSum_add_endpoint` in [EtaMoebiusFinitePrefix.lean](../RiemannGaussian/EtaMoebiusFinitePrefix.lean) and `pairedEtaCompletedMoebiusTailAggregate_eq_source` in [EtaMoebiusCompletedTail.lean](../RiemannGaussian/EtaMoebiusCompletedTail.lean). | Proved at every actual zero and every integer cutoff at least two, with all odd endpoint corrections and complex Möbius weights. The resulting linear constraint has no proved quadratic-current bound yet. |
 | Bound both complete parity aggregates and their signed block sums | Exact halved-cutoff identities in [EtaMoebiusParityRecurrence.lean](../RiemannGaussian/EtaMoebiusParityRecurrence.lean), `norm_pairedEtaCompletedMoebiusOddAggregate_le` in [EtaMoebiusParityBound.lean](../RiemannGaussian/EtaMoebiusParityBound.lean), and `norm_pairedEtaSignedCompletedMoebiusParityBlock_le` in [EtaMoebiusParityBlocks.lean](../RiemannGaussian/EtaMoebiusParityBlocks.lean). | Proved uniformly in the physical cutoff, with every divisor and both completion channels retained. These are norms of block sums; a bound for the original weighted absolute return does not follow yet. |
+| Recover the original simple-zero current from the parity aggregates | `pairedEtaFiniteCompletedMoment_zero_eq_oddInverse` in [EtaMoebiusParityInverse.lean](../RiemannGaussian/EtaMoebiusParityInverse.lean) and `pairedEtaLeadingCurrent_eq_oddInverse_head` in [EtaCurrentMoebiusInverse.lean](../RiemannGaussian/EtaCurrentMoebiusInverse.lean). | The exact inverse weights, divided cutoffs, and both signed head channels are proved. Their absolute weight mass has matching positive-power bounds in [EtaMoebiusInverseWeights.lean](../RiemannGaussian/EtaMoebiusInverseWeights.lean), so termwise norms do not supply a uniform transfer. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -1312,19 +1313,95 @@ including the higher centered moments and the simple-zero head. The
 contraction and finite inversion are classical arithmetic; no priority
 claim is made for their application here.
 
+### Exact inverse to the original current and its weight cost
+
+The first transfer identity is now proved, with its missing estimate
+distinguished from the identity. Classical odd-divisor inversion gives
+`sum_pairedEtaCompletedOddInverseTerm`:
+
+\[
+ X_\rho E_M(\rho)=\sum_{\substack{1\le d\le M\\d\text{ odd}}}
+ d^{-\rho}O_\rho(\lfloor M/d\rfloor).
+\]
+
+The prefix `E_M` in this formula is the original unpaired Dirichlet
+prefix. The proof checks the odd-restricted Möbius convolution, retains
+the exact complex product powers, and regroups only finite divisor
+fibers. It includes cutoff zero with its actual zero initial value.
+At an even endpoint, `pairedEtaFiniteCompletedMoment_zero_eq_oddInverse`
+therefore gives the original completed moment
+
+\[
+ A_\rho(N,0)=\sum_{\substack{1\le d\le2N\\d\text{ odd}}}
+ d^{-\rho}O_\rho(\lfloor2N/d\rfloor).
+\]
+
+For the head current put `M=2*(N+2)` and define, just for this display,
+`B_rho(N,d)=d^(-rho)*O_rho(floor(M/d))`. Before taking its real part,
+`pairedEtaHeadCompletedMomentPair_zero_eq_oddInverse` retains the
+complex signed sum
+
+\[
+ \sum_{\substack{1\le d\le M\\d\text{ odd}}}
+ \operatorname{etaSignedCompletedPair}
+   (H_{\rho^*}(N,0),B_{\rho^*}(N,d),H_\rho(N,0),B_\rho(N,d)).
+\]
+
+`pairedEtaLeadingCurrent_eq_oddInverse_head` proves that twice the real
+part of this sum is exactly `J_rho(N)` when the actual multiplicity is
+one. The original shifted head coordinate, successor prefix cutoff,
+completion factors, and conjugation orientation all remain unchanged.
+This is a proved connection to the original current in that branch,
+not a bound for its weighted absolute moment. Higher centered orders
+are not covered by this zeroth-order inverse.
+
+Taking norms term by term introduces the literal weight mass
+
+\[
+ W_\rho(M)=\sum_{\substack{1\le d\le M\\d\text{ odd}}}|d^{-\rho}|.
+\]
+
+`norm_completed_pairedEtaUnpairedDirichletPrefix_le_oddInverseWeightMass`
+proves the resulting bound `|X_rho E_M(rho)| <= B_rho W_rho(M)` using the
+previous uniform odd-aggregate constant. The exact index count and the
+finite integral comparison now give
+
+\[
+ \frac{M^{1-\sigma}}2\le W_\rho(M)\le
+ \frac{(M+1)^{1-\sigma}}{1-\sigma}\qquad(M\ge1),
+ \quad \sigma=\Re\rho.
+\]
+
+The compiled endpoints are `pairedEtaOddInverseWeightMass_lower`,
+`pairedEtaOddInverseWeightMass_upper`, and
+`pairedEtaOddInverseWeightMass_tendsto_atTop`. In particular, the weight
+cost diverges at **every** actual zero, including the critical line.
+This diagnoses the loss in this particular triangle estimate. It does
+not prove that the inverse operator norm diverges after grouping equal
+divided cutoffs, nor that the original signed current diverges. No
+cancellation in the richer inverse sum has been ruled out.
+
+The next estimate must therefore act on that weighted signed sum before
+absolute values, with an accumulated cutoff bound strong enough for the
+original `S_rho(K)`. Merely inserting the uniform aggregate constant
+under a sum of inverse-weight norms cannot give it. The inversion and
+power comparison are classical; no novelty priority is claimed.
+
 ## Next mathematical obligations
 
-1. Prove an estimate controlling the original completed current from
-   the retained divisor data. The entire odd and even aggregate and all
-   four quadratic block sums now have uniform bounds at one physical
-   cutoff. The missing estimate must control the required feature
-   weights and the sum of absolute returns across cutoffs; bounded block
-   sums do not provide either. Higher centered orders and the simple-zero
-   head also remain outside this zeroth-order bound. Any use of the earlier
+1. Prove cancellation in the exact inverse-weighted signed head sum
+   above, strong enough to bound the original current's weighted absolute
+   moment, and supply the corresponding higher-centered-order control.
+   The entire odd and even aggregate and all four quadratic block sums
+   already have uniform bounds at one physical cutoff. The simple-zero
+   current now has an exact reconstruction from those odd aggregates.
+   Its termwise absolute inverse-weight cost, however, has proved growth
+   `M^(1-Re rho)`; bounding each aggregate separately cannot close this
+   transfer estimate. Any use of the earlier
    fixed-pair estimate must still account for its divisor-dependent
    normalizers and averaging period. The earlier diagonal bound has a complementary correlation
    sum with a possible nonzero limit; that sum cannot be dropped.
-   No transfer to the original weighted return is currently proved.
+   No uniform estimate for the original weighted return is currently proved.
    All cross-cutoff terms and odd endpoint corrections must be retained. The
    proved matching power bounds show that removing the cutoff growth
    requires such an exclusion; a sharper local approximation alone cannot
@@ -1393,9 +1470,12 @@ Excluding the surviving off-critical endpoint contribution remains open. The nex
    that controls the original completed moment pairs. Their finite
    Möbius constraint, positive diagonal bound, and odd/even fixed-pair
    cancellation are now checked, as are the uniform bounds for the whole
-   growing parity aggregates and all four signed block sums. Recovering
-   the original moment pairs from these arithmetic data requires a
-   proved estimate that retains their feature weights and cutoff sum.
+   growing parity aggregates and all four signed block sums. The exact
+   simple-zero current now reconstructs by the odd inverse formula.
+   Its inverse-weight mass has positive-power growth even on the critical
+   line; the next estimate must exploit cancellation in the weighted
+   signed sum rather than replace it with termwise absolute values.
+   Higher-centered-order estimates also remain open.
    Any use of the earlier period averages must also preserve their
    divisor-dependent normalizers and errors. Any use of the
    mixed phase matrix must identify the actual finite eta feature vector

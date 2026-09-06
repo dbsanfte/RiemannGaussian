@@ -27,28 +27,30 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Prove a cutoff-independent bound for the original signed eta current's weighted absolute moment. Exact Möbius recurrences now bound both complete parity aggregates and all four quadratic block sums at each cutoff. The missing step is an estimate controlling the original current from these arithmetic identities, with higher moments and the simple-zero head retained. The full bound and RH remain open.
+Seek cancellation in the exact inverse divisor formula for the original completed eta current. The simple-zero head now reconstructs from whole odd Möbius aggregates with all complex weights retained. Termwise norms incur a proved growing inverse-weight cost, so the global aggregate bounds alone do not close the goal. A weighted signed estimate and control of higher centered orders remain open, as do RH and the full return bound.
 
 ## Latest Update
 
-Lean now proves **uniform bounds for the complete growing Möbius parity
-sums**, retaining the actual completed eta tails and every odd endpoint.
-The exact identities `E(M) = -r*O(floor(M/2))` and
-`O(M) = C + r*O(floor(M/2))` (the latter for `M >= 2`) use
-`r = 2^(-rho)` and the original source `C = X_rho*(1-2*r)`.
-Since `|r| < 1`, the explicit constant
-`B = |X_rho| + |C|/(1-|r|)` bounds `|O(M)|`, and `|r|*B` bounds
-`|E(M)|`, for every cutoff. See
-[norm_pairedEtaCompletedMoebiusOddAggregate_le](RiemannGaussian/EtaMoebiusParityBound.lean).
+Lean now proves the **exact inverse from whole odd Möbius aggregates to
+the original completed eta moments**:
+`A_rho(N,0) = sum_{odd d <= 2*N} d^(-rho)*O_rho(floor(2*N/d))`.
+The theorem
+[pairedEtaFiniteCompletedMoment_zero_eq_oddInverse](RiemannGaussian/EtaMoebiusParityInverse.lean)
+retains every complex inverse weight and divided physical cutoff.
+[pairedEtaLeadingCurrent_eq_oddInverse_head](RiemannGaussian/EtaCurrentMoebiusInverse.lean)
+then reconstructs the unchanged simple-zero current, with both completion
+channels and their original signed orientation.
 
-All four complete quadratic parity block sums, including their original
-signed reflected completion channels, consequently have uniform bounds:
-[norm_pairedEtaSignedCompletedMoebiusParityBlock_le](RiemannGaussian/EtaMoebiusParityBlocks.lean).
-These estimates take the norm after summing each block. They do not yet
-control the original current's weighted absolute moment or its higher
-centered orders. That transfer is the open step in the
-[full goal](docs/eta-current-reconstruction-plan.md). RH remains open;
-no new zero-location bound, `13/18` certificate, or priority claim is made.
+The cost of taking termwise norms is now explicit. For `sigma=Re rho`,
+the inverse-weight mass `W(M)=sum_{odd d <= M} |d^(-rho)|` satisfies
+`M^(1-sigma)/2 <= W(M) <= (M+1)^(1-sigma)/(1-sigma)` for `M >= 1`;
+see [pairedEtaOddInverseWeightMass_lower](RiemannGaussian/EtaMoebiusInverseWeights.lean)
+and [pairedEtaOddInverseWeightMass_upper](RiemannGaussian/EtaMoebiusInverseWeights.lean).
+It diverges even on the critical line. This measures a loss in the
+triangle estimate, not divergence of the original current. The
+[full goal](docs/eta-current-reconstruction-plan.md) still needs cancellation
+in the weighted signed inverse sum and control of higher centered orders.
+RH remains open; no new zero-location bound or `13/18` certificate is claimed.
 
 ## Notable Formalisations
 
@@ -88,7 +90,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Sublinear weighted return bound** | The actual return's first absolute moment is at most `C_rho (K+1)^|2 Re(rho)-1|`. Both multiplicity branches and their completion constants are retained, with exact critical-line cancellation handled separately; dividing the moment by `K+1` gives a limit of zero. | [pairedEtaLeadingCurrent_weighted_le_doubleDecay](RiemannGaussian/EtaCurrentArithmeticEnvelope.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_growth_le](RiemannGaussian/EtaCurrentReturnGrowth.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_div_cutoff_tendsto_zero](RiemannGaussian/EtaCurrentReturnGrowth.lean) |
 | **Positive principal endpoints for both multiplicities** | The actual current and return have summable weighted error from one signed difference of complementary endpoint decays, with both completion coefficients strictly positive. The simple head's complex phase correction is explicit; one finite budget controls every difference of first absolute moments. | [pairedEtaCurrentPrincipalCoefficient_pos](RiemannGaussian/EtaCurrentPrincipalEndpoints.lean), [pairedEtaCurrentHalfStepHead_mul_conj_euler](RiemannGaussian/EtaCurrentHalfStepPairs.lean), [pairedEtaLeadingCurrentLinearHeatReturn_principal_firstMoment_stability](RiemannGaussian/EtaCurrentPrincipalEndpoints.lean) |
 | **Sharp growth at a hypothetical off-critical zero** | Assuming an actual zero is off the critical line, its slower positive completion channel gives matching eventual displacement-power bounds for the original return's weighted first absolute moment. An explicit finite offset gives an all-cutoff lower bound, and the moment tends to infinity. This does not exclude such a zero. | [pairedEtaCurrentPrincipalEndpoint_eq_dominant_factor](RiemannGaussian/EtaCurrentPrincipalDominance.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_lower_with_offset](RiemannGaussian/EtaCurrentReturnSharpGrowth.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_power_bounds_eventually](RiemannGaussian/EtaCurrentReturnSharpGrowth.lean) |
-| **Finite Möbius constraints and eta phase cancellation** | Classical divisor inversion couples actual completed tails at divided cutoffs. Fixed odd/even divisor pairs have quantitative period cancellation. An exact dyadic recurrence bounds both complete growing parity aggregates and all four signed quadratic block sums uniformly in cutoff; transfer to the original weighted current remains open. | [pairedEtaCompletedMoebiusTailAggregate_eq_source](RiemannGaussian/EtaMoebiusCompletedTail.lean), [norm_pairedEtaSignedCompletedMoebiusDyadicCorrelation_le](RiemannGaussian/EtaMoebiusDyadicCorrelation.lean), [norm_pairedEtaCompletedMoebiusOddAggregate_le](RiemannGaussian/EtaMoebiusParityBound.lean), [norm_pairedEtaSignedCompletedMoebiusParityBlock_le](RiemannGaussian/EtaMoebiusParityBlocks.lean) |
+| **Finite Möbius constraints and eta phase cancellation** | Classical divisor inversion couples actual completed tails at divided cutoffs. Fixed odd/even divisor pairs have period cancellation; both full parity aggregates and all four signed block sums have uniform bounds. Exact inverse weights recover the original simple-zero current, with their growing absolute mass quantified; its weighted signed bound remains open. | [norm_pairedEtaSignedCompletedMoebiusDyadicCorrelation_le](RiemannGaussian/EtaMoebiusDyadicCorrelation.lean), [norm_pairedEtaSignedCompletedMoebiusParityBlock_le](RiemannGaussian/EtaMoebiusParityBlocks.lean), [pairedEtaLeadingCurrent_eq_oddInverse_head](RiemannGaussian/EtaCurrentMoebiusInverse.lean), [pairedEtaOddInverseWeightMass_lower](RiemannGaussian/EtaMoebiusInverseWeights.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 

@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "uniform complete Moebius parity block sums; original weighted return bound open.</text>\n" ++
+      "exact simple-zero Moebius inverse; growing weight cost; signed return bound open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -465,8 +465,17 @@ run_cmd do
         "including the original signed reflected completion channels. These " ++
         "bounds take the norm after each whole block sum; they do not bound " ++
         "arbitrary divisor feature weights or the original weighted cutoff sum. " ++
-        "Higher centered orders and the simple-zero head remain uncontrolled by " ++
-        "this zeroth-order arithmetic estimate. No transfer from these quadratic aggregates " ++
+        "Finite odd-divisor inversion now reconstructs the original zeroth " ++
+        "completed moment exactly as the sum of d^(-rho)*O(floor(2*N/d)) " ++
+        "over odd d<=2*N. The original simple-zero current is consequently " ++
+        "the exact signed head/inverse sum with both completion channels retained. " ++
+        "Taking termwise norms incurs W(M)=sum over odd d<=M of norm(d^(-rho)). " ++
+        "The proved bounds M^(1-Re(rho))/2<=W(M)<=(M+1)^(1-Re(rho))/(1-Re(rho)) " ++
+        "show that this weight cost diverges at every actual zero, including " ++
+        "the critical line. This diagnoses the triangle estimate; it does not " ++
+        "show divergence of the original signed current or rule out cancellation " ++
+        "in the exact inverse sum. A weighted signed estimate and higher centered " ++
+        "order control remain open. No uniform transfer estimate " ++
         "to the original current's weighted absolute moment is proved. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

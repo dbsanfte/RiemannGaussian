@@ -587,3 +587,6 @@ import RiemannGaussian.EtaMoebiusDyadicCorrelation
 import RiemannGaussian.EtaMoebiusParityRecurrence
 import RiemannGaussian.EtaMoebiusParityBound
 import RiemannGaussian.EtaMoebiusParityBlocks
+import RiemannGaussian.EtaMoebiusParityInverse
+import RiemannGaussian.EtaMoebiusInverseWeights
+import RiemannGaussian.EtaCurrentMoebiusInverse
