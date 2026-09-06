@@ -210,7 +210,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Eta + prime positivity: stronger repeated-zero margin; " ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Eta + prime positivity: logarithmic zero margin; " ++
       "positive return exponent; uniform weighted bound open.</text>\n" ++
     "</svg>\n"
 
@@ -530,7 +530,26 @@ run_cmd do
         "repeated zeros, while the simple-zero bound is unchanged. The exponent " ++
         "1-2*Delta_m(Im(rho)) remains in [7/8,1). This improves the repository's " ++
         "previous bound; no improvement over classical zero-free regions or " ++
-        "novelty priority is claimed. No uniform transfer estimate " ++
+        "novelty priority is claimed. Height-adapted actual finite eta prefixes " ++
+        "and their proved tails now give norm(eta(s))<=6*T^epsilon/epsilon " ++
+        "when 0<epsilon<=1/2, Re(s)>=1-epsilon, and T>=max(3,norm(s)). " ++
+        "Variable-width dyadic rectangles carry this bound through every " ++
+        "dyadic resonance. At width 1/L, L=log(abs(y)+21)>2, the actual " ++
+        "zero disc has norm(Z1)<=72*(abs(y)+21)*L^2, and Schwarz gives " ++
+        "norm(Z1(2-Re(rho)+i*y))<=576*(abs(y)+21)*L^3*(1-Re(rho)) " ++
+        "when Re(rho)>=1-1/(16*L). Positive real eta mass also improves " ++
+        "the pole estimate to norm(zeta(1+x))<=4/x for 0<x<=1/2. The resulting " ++
+        "three-four-one constraint gives delta_log(y)=abs(y)^5/" ++
+        "(C*(abs(y)+21)^5*L^14), C=144*4^3*576^4, as a positive " ++
+        "two-sided margin at every actual zero. Above abs(y)>=21 the " ++
+        "margin is at least 1/(32*C*L^14). Lean proves delta_log(y) " ++
+        "strictly exceeds the earlier ordinate-only delta(y) for y!=0. " ++
+        "The refined margin max(Delta_m(y),delta_log(y)) preserves both " ++
+        "independent estimates and gives the original return exponent " ++
+        "1-2*max(Delta_m(y),delta_log(y)), strictly smaller for every " ++
+        "actual simple zero. It still lies in [7/8,1). This is weaker " ++
+        "than the classical reciprocal-logarithm zero-free region, and " ++
+        "no novelty priority is claimed. No uniform transfer estimate " ++
         "to the original current's weighted absolute moment is proved. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

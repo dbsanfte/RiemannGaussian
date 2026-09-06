@@ -52,6 +52,7 @@ the objective.
 | Obtain an independent arithmetic exclusion and transport it to the original return | `one_le_etaPrimeProduct_zero_gap` in [EtaZetaPrimeProduct.lean](../RiemannGaussian/EtaZetaPrimeProduct.lean), `nontrivialZetaZero_mem_etaPrimeProduct_strip`, and `pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaPrimeProduct` in [EtaPrimeProductZeroMargin.lean](../RiemannGaussian/EtaPrimeProductZeroMargin.lean). | Every actual zero lies between the explicit positive margins `delta(Im rho)` and `1-delta(Im rho)`. The original return is bounded by `C_rho*(K+1)^(1-2*delta(Im rho))`. The exponent remains positive; the uniform weighted goal remains open. |
 | Reconstruct and control full Möbius transforms at every centered moment order | `norm_pairedEtaCompletedMomentMoebiusAggregate_le` in [EtaMomentMoebiusTransform.lean](../RiemannGaussian/EtaMomentMoebiusTransform.lean), `pairedEtaFiniteCompletedMoment_eq_momentInverse` in [EtaMomentMoebiusInverse.lean](../RiemannGaussian/EtaMomentMoebiusInverse.lean), and both current branches in [EtaCurrentMomentMoebiusInverse.lean](../RiemannGaussian/EtaCurrentMomentMoebiusInverse.lean). | Exact two-endpoint cancellation and all-cutoff aggregate bounds are proved at fixed centers for every order. The inverse preserves all center shifts and recovers the original repeated-zero double sum. The weighted inverse estimate at moving physical centers remains open. |
 | Strengthen the independent zero margin using actual multiplicity | `one_le_etaPrimeProduct_multiplicity_gap` in [EtaPrimeProductMultiplicityGap.lean](../RiemannGaussian/EtaPrimeProductMultiplicityGap.lean), `nontrivialZetaZero_mem_etaPrimeProductMultiplicity_strip` in [EtaPrimeProductMultiplicityMargin.lean](../RiemannGaussian/EtaPrimeProductMultiplicityMargin.lean), and `etaPrimeProductZeroMargin_lt_multiplicity` in [EtaPrimeProductMultiplicityComparison.lean](../RiemannGaussian/EtaPrimeProductMultiplicityComparison.lean). | The exact margin equals the previous bound at multiplicity one and is strictly larger at every nonzero ordinate for multiplicity at least two. The original return has the smaller exponent `1-2*Delta_m(Im rho)`, still in `[7/8,1)`. The uniform weighted goal remains open. |
+| Improve the zero margin for simple zeros using height-adapted eta bounds | `norm_riemannZeta₁_le_etaThinStrip` in [EtaThinStripRectangle.lean](../RiemannGaussian/EtaThinStripRectangle.lean), `nontrivialZetaZero_mem_reciprocal_logarithmic_strip` and `etaPrimeProductZeroMargin_lt_logarithmic` in [EtaLogarithmicMarginComparison.lean](../RiemannGaussian/EtaLogarithmicMarginComparison.lean), and `pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaRefinedPrimeProduct` in [EtaLogarithmicZeroMargin.lean](../RiemannGaussian/EtaLogarithmicZeroMargin.lean). | A positive explicit logarithmic margin constrains every actual zero; above height twenty-one it dominates `1/(32*C*log(|gamma|+21)^14)`. It strictly improves the earlier ordinate-only margin. The maximum with the previous multiplicity margin retains both bounds and strictly lowers the exponent for simple zeros. The exponent remains in `[7/8,1)`, and the uniform goal is open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -1778,11 +1779,123 @@ simple-zero exponent is unchanged. This leaves positive cutoff growth and
 does not exclude the remaining interior off-critical zeros. The uniform
 weighted arithmetic estimate and RH remain open.
 
+## Height-adapted eta bounds and a logarithmic zero margin
+
+The earlier eta mass estimate loses a full power of height before the
+dyadic-factor argument. The finite arithmetic prefix and the actual tail
+give a stronger estimate when used at the same height-adapted cutoff.
+For `0<epsilon<=1/2` and `Re(s)>=1-epsilon`,
+[EtaThinStripPrefix.lean](../RiemannGaussian/EtaThinStripPrefix.lean) proves
+
+\[
+ \|\eta_{2N}(s)\|\le\frac{(2N+1)^\epsilon}{\epsilon},\qquad
+ \|\eta(s)-\eta_{2N}(s)\|\le2(2N+1)^\epsilon
+ \quad(\|s\|\le2N+1).
+\]
+
+The first bound uses the existing exact odd/even prefix identity and a
+finite power-sum comparison. The second uses the existing literal eta-tail
+integral. Choosing `N=ceil(T)` proves
+`norm_pairedEtaCore_le_thinStrip_height`:
+
+\[
+ \|\eta(s)\|\le\frac{6T^\epsilon}{\epsilon}
+ \quad(T\ge3,\ \|s\|\le T).
+\]
+
+[EtaThinStripFactor.lean](../RiemannGaussian/EtaThinStripFactor.lean) bounds
+the dyadic factor below by `epsilon/4` at both vertical edges
+`Re(s)=1+-epsilon`. The negative dyadic phase still bounds it below by one
+on the horizontal edges. Maximum modulus for the entire pole-removed
+function therefore proves `norm_riemannZeta₁_le_etaThinStrip`:
+
+\[
+ \|Z_1(s)\|\le
+ \frac{24(|\Im s|+20)(|\Im s|+20)^\epsilon}{\epsilon^2}
+ \quad(1-\epsilon\le\Re s\le1+\epsilon).
+\]
+
+The estimate includes every interior dyadic resonance and the removable
+point at one. Independently, the real eta mass is at most one, which
+improves the pole constant to `norm(zeta(1+x))<=4/x` for `0<x<=1/2`.
+
+Set `t=|gamma|`, `T=t+21`, and `L=log(T)>2`. At `epsilon=1/L`,
+`T^epsilon=exp(1)<3`. For every actual zero `rho=sigma+i*gamma`
+with `sigma>=1-1/(16*L)`, its entire disc of radius `1/(4*L)` has
+`norm(Z1)<=72*T*L^2`. Schwarz's lemma on that actual disc yields
+`norm_riemannZeta₁_reflected_across_one_le_etaLog`:
+
+\[
+ \|Z_1(2-\sigma+i\gamma)\|\le576TL^3(1-\sigma).
+\]
+
+All analytic inputs are discharged in
+[EtaLogarithmicStrip.lean](../RiemannGaussian/EtaLogarithmicStrip.lean).
+The original eta mass already proves `gamma!=0`, so division by the
+ordinate is valid. At `d=1-sigma`, the three actual zeta values obey
+
+\[
+ \|\zeta(1+d)\|\le4/d,\qquad
+ \|\zeta(1+d+i\gamma)\|\le576TL^3d/t,\qquad
+ \|\zeta(1+d+2i\gamma)\|\le144TL^2/t.
+\]
+
+Their classical three-four-one product is at least one. Substitution
+proves `one_le_etaLogPrimeProduct_zero_gap` in
+[EtaLogarithmicPrimeProduct.lean](../RiemannGaussian/EtaLogarithmicPrimeProduct.lean):
+
+\[
+ 1\le\frac{CT^5L^{14}}{t^5}d,\qquad C=144\cdot4^3\cdot576^4.
+\]
+
+The ratio `delta_log(y)=|y|^5/(C*(|y|+21)^5*log(|y|+21)^14)`
+is at most the disc threshold `1/(16*L)` for every real ordinate.
+The near-edge argument and its complementary case consequently prove
+`nontrivialZetaZero_mem_etaLogPrimeProduct_strip`:
+
+\[
+ 0<\delta_{\log}(\gamma)\le\sigma\le1-\delta_{\log}(\gamma)
+\]
+
+for every actual nontrivial zero. No zero-location estimate is an
+antecedent of this theorem. For `t>=21`, `T<=2t`, and
+`nontrivialZetaZero_mem_reciprocal_logarithmic_strip` gives the explicit
+two-sided edge margin `1/(32*C*L^14)`.
+
+The comparison is also checked. A positive term of the exponential
+series proves `L^14<=15*T^5`; the exact constants then show
+`etaPrimeProductZeroMargin_lt_logarithmic`, strictly at every nonzero
+ordinate. Define
+
+\[
+ \widehat\Delta_m(y)=\max\{\Delta_m(y),\delta_{\log}(y)\}.
+\]
+
+This preserves the earlier full-multiplicity constraint. For an actual
+simple zero, `etaRefinedPrimeProductZeroMargin_eq_logarithmic_of_simple`
+identifies the maximum with the strictly larger logarithmic margin.
+The actual unchanged return satisfies
+`pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaRefinedPrimeProduct`:
+
+\[
+ S_R(\rho,K)\le C_\rho(K+1)^{1-2\widehat\Delta_m(\gamma)}.
+\]
+
+`etaRefinedPrimeProduct_return_exponent_lt_of_simple` proves the strict
+improvement for every actual simple zero, and
+`etaRefinedPrimeProduct_return_exponent_bounds` retains the range `[7/8,1)`.
+The logarithmic zero-free region is weaker than the
+[classical reciprocal-logarithm bound](https://people.math.harvard.edu/~elkies/M229.20/free.pdf).
+This is an improvement to the repository's checked estimate, with no
+novelty priority claim. Interior off-critical exclusion and the uniform
+weighted estimate remain open.
+
 ## Next mathematical obligations
 
 The independent prime-product input now excludes the explicit edge regions
-above, with a strictly larger margin for repeated zeros. It does not force
-real part `1/2`, and its return bound has a proved positive exponent. The remaining task is to rule out the interior
+above using the maximum of the logarithmic and multiplicity margins. The
+simple-zero bound has strictly improved. It does not force real part `1/2`,
+and its return bound has a proved positive exponent. The remaining task is to rule out the interior
 off-critical contribution while retaining the unchanged absolute weighted
 target. The following inverse and heat carriers remain available for that
 task; their established identities alone do not supply the missing estimate.
