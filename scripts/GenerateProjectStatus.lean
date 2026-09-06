@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "phase/matrix limits and the full complex two-endpoint finite-part law.</text>\n" ++
+      "phase/matrix limits and the polynomial-phase complex finite part.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -300,8 +300,12 @@ run_cmd do
         "proved: W/r - R*integral(F) -> (gamma_E-1)*F(0) + " ++
         "(1-log(pi/2)+d)*F(1), when log(1/r)-R -> d. Its uniform remainder " ++
         "retains the test bound, Lipschitz constant, and scale offset. The Gaussian " ++
-        "specialization explicitly includes -log(v). Second-order phase comparison, " ++
-        "Gaussian domination after subtraction, and signed heat/matrix laws remain targets. " ++
+        "specialization explicitly includes -log(v). The reflection-closed quadratic/cubic " ++
+        "phase now has a proved actual-displacement finite part: its boundary-test " ++
+        "comparison error is at most h*exp(4*abs(lambda))*" ++
+        "[v^2*(abs(beta)+abs(alpha)*(6+v))/R+3*h]. The complex test retains an explicit " ++
+        "Lipschitz constant linear in abs(v) and its exact reflection identity. " ++
+        "Gaussian domination after subtraction and signed heat/matrix laws remain targets. " ++
         "The signed-flux application review " ++
         "identifies the missing completed kernel identity and uniform estimates. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++

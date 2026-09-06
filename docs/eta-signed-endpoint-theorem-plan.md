@@ -18,7 +18,7 @@ averaging or second-order asymptotic premise qualifies as implementation.
 | --- | --- | --- |
 | 1. Actual arithmetic overlap | [Exact eta/periodic-colour identity](../RiemannGaussian/EtaAlternatingReal.lean), [real-scale cell and primitive estimates](../RiemannGaussian/EtaOverlapAveraging.lean), [Wallis integral](../RiemannGaussian/EtaOverlapWallis.lean), [quantitative infinite-tail evaluation](../RiemannGaussian/EtaOverlapTail.lean), and [exact transport back to the logarithmic eta tail](../RiemannGaussian/EtaLogTailWallis.lean). | Complete for the scalar arithmetic tail; retain it as input to the weighted law. |
 | 2. Two-endpoint finite part | [Scalar finite part](../RiemannGaussian/EtaLogFinitePart.lean), [uniform harmonic quadrature](../RiemannGaussian/EtaLogBoundaryFinitePart.lean), [weighted-tail freezing](../RiemannGaussian/EtaLogWeightedTail.lean), [cutoff decomposition](../RiemannGaussian/EtaLogWeightedEndpoint.lean), [uniform fixed-endpoint remainder](../RiemannGaussian/EtaLogTwoEndpoint.lean), and [full complex two-endpoint limit with scale offset](../RiemannGaussian/EtaLogTwoEndpointLimit.lean). | Complete. The Gaussian application must still prove the stronger phase comparison and domination after subtraction. |
-| 3. Signed heat reflection | Not yet proved. | Add the quadratic phase, prove the second-order Gaussian expansion and its integrable remainder, then cancel the leading profiles by reflection. |
+| 3. Signed heat reflection | [Reflection-closed complex polynomial test with explicit Lipschitz bound](../RiemannGaussian/EtaPolynomialBoundaryTest.lean), [exact phase increment and refined remainder](../RiemannGaussian/EtaPolynomialPhaseIncrement.lean), and [actual complex displacement finite part](../RiemannGaussian/EtaPolynomialMismatchFinitePart.lean). | Prove Gaussian domination after subtraction and the second-order heat law, then cancel the leading profiles by reflection. |
 | 4. Full mixed matrix | Not yet proved. | Apply the second-order law to every mixed entry, preserving the signed endpoint decomposition and any dimension cost. |
 | 5. Completed-current audit | The [previous review](rh-overnight-signed-flux-review.md) identifies a support mismatch and missing completion/moment estimates. | Audit one exact proposed pairing with the new signed heat object. A remaining conjecture-strength estimate must be left open explicitly. |
 
@@ -89,9 +89,9 @@ The critical case and the exponential parametrization are separate compiled
 corollaries. In particular,
 `pairedEtaWeightedMismatch_exp_scaled_finite_part_tendsto` retains the
 `-log(v)` upper-endpoint term for every fixed `v > 0` when
-`r = exp(-R)*v`. These complete parts 1 and 2. The actual phase comparison
-and Gaussian domination at scale `h` remain part 3, not consequences of the
-old first-order heat limit alone.
+`r = exp(-R)*v`. These complete parts 1 and 2. The actual phase comparison at scale `h` is now also proved, as detailed
+below. Gaussian domination after subtraction remains part 3; it does not
+follow from the old first-order heat limit alone.
 
 ## 1. Arithmetic averaging on the actual carrier
 
@@ -191,6 +191,24 @@ has exactly cancelling leading profiles. The target is
  B_h/h\longrightarrow J(a(0))-e^{-2\lambda}J(a(1)),\qquad
  J=(c_0-c_1)\Psi+\Omega.
 \]
+
+The phase comparison and pointwise finite part are now checked. With
+`h = exp(-R)`, `R >= 1`, `R >= 4*abs(lambda)`, and `v >= 0`,
+`pairedEtaPhaseMismatch_polynomial_test_error_le` bounds the difference
+between the actual complex displacement and the bounded polynomial test by
+
+\[
+ h e^{4|\lambda|}\left[\frac{v^2(|b|+|\alpha|(6+v))}{R}+3h\right].
+\]
+
+The local phase error retains `h/R`; the two omitted time tails retain
+`h^2`. Hence `pairedEtaPhaseMismatch_polynomial_finite_part_tendsto`
+proves the actual complex displacement finite part for every fixed `v > 0`.
+The extension has the explicit Lipschitz constant
+`exp(4*abs(lambda)) * (2*abs(lambda) + abs(v)*(abs(b)+12*abs(alpha)))`.
+The exact test reflection is
+`pairedEtaPolynomialBoundaryTest_reflection`. Gaussian domination of the
+subtracted expression and the heat reflection limit remain unproved targets.
 
 ## 4. Mixed matrix and 5. completed-current audit
 

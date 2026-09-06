@@ -27,23 +27,22 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-The actual eta boundary law now has a proved complex two-endpoint correction with uniform errors and the scale offset needed for Gaussian integration. The next frontier is the second-order heat law for a phase family closed under reflection, followed by its signed mixed matrix limit. The weighted arithmetic part is complete. Connecting the resulting auxiliary laws to the completed signed current still requires a separate identity and uniform estimates.
+The actual eta boundary law and polynomial-phase displacement now have proved complex two-endpoint finite parts. The phase family is closed under logarithmic reflection, and its comparison error is smaller than the heat width. Next is Gaussian domination after subtracting the leading term, then the signed heat and mixed matrix limits. Connecting these auxiliary laws to the completed signed current still requires a separate identity and uniform estimates.
 
 ## Latest Update
 
-The full complex two-endpoint finite-part law is checked. For every bounded
-Lipschitz complex test `F`, as `r → 0⁺`, `R → ∞`, and `log(1/r)−R → d`,
-
-`W(r,R,F)/r − R∫₀¹F → (γ_E−1)F(0) + (1−log(π/2)+d)F(1)`.
-
-The proof uses the literal eta mismatch, cancels the actual arithmetic
-cutoff, and retains an explicit uniform remainder. For `r = exp(−R)v`,
-the checked specialization includes `−log(v)` at the upper endpoint.
-See the [terminal theorems](RiemannGaussian/EtaLogTwoEndpointLimit.lean)
+The full quadratic/cubic phase now has a checked finite part for the actual
+complex eta displacement. For `h = exp(−R)`, its difference from the bounded
+boundary test has norm at most
+`h exp(4|λ|) [v²(|β|+|α|(6+v))/R + 3h]`.
+Consequently the evaluated endpoint correction survives division by `h`,
+including the required `−log(v)` coefficient. The test also has an explicit
+Lipschitz constant linear in `|v|`, and its exact reflection identity retains
+the complex phase and tilt weight.
+See the [terminal theorem](RiemannGaussian/EtaPolynomialMismatchFinitePart.lean)
 and [implementation ledger](docs/eta-signed-endpoint-theorem-plan.md).
-This completes the arithmetic part of the new package. Next is the
-second-order phase comparison and Gaussian domination at scale `h`, then
-the signed reflection and mixed matrix laws. RH remains open.
+Next is a Gaussian-integrable bound for the subtracted expression and the
+second-order heat law, followed by the signed matrix limit. RH remains open.
 No `13/18` certificate exists.
 
 ## Notable Formalisations
@@ -68,6 +67,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Actual eta overlap and Wallis tail** | The literal logarithmic support becomes a periodic unit-interval colour. Its triangular average has an exact Wallis integral, and the actual infinite inverse-square tail has error at most `4ε/a + ε/a²` for every real `0 < ε ≤ 1`, `0 < a ≤ 1`. | [pairedEtaLogShiftMismatch_eq_rescaledOverlap](RiemannGaussian/EtaOverlapAveraging.lean), [integral_Ioi_etaOverlapProfile_div_sq](RiemannGaussian/EtaOverlapWallis.lean), [integral_Ioi_etaRescaledOverlap_div_sq_error_le](RiemannGaussian/EtaOverlapTail.lean) |
 | **Evaluated critical eta finite part** | After the critical divergence, the literal mismatch has the constant `γ_E − log(π/2)`: `D₁/₂(r)/r − log(1/r)` converges to it for all positive real displacements tending to zero. Constant complex tests retain their value. | [pairedEtaMismatch_half_finite_part_tendsto](RiemannGaussian/EtaLogFinitePart.lean), [pairedEtaWeightedMismatch_const_finite_part_tendsto](RiemannGaussian/EtaLogFinitePart.lean) |
 | **Complex two-endpoint eta law** | The actual weighted finite part converges to `(γ_E−1)F(0) + (1−log(π/2)+d)F(1)` when `log(1/r)−R → d`. The proof retains uniform errors; Gaussian scaling has the checked offset `d = −log(v)`. | [pairedEtaWeightedMismatch_endpoint_error_le](RiemannGaussian/EtaLogTwoEndpoint.lean), [pairedEtaWeightedMismatch_two_endpoint_tendsto](RiemannGaussian/EtaLogTwoEndpointLimit.lean), [pairedEtaWeightedMismatch_exp_scaled_finite_part_tendsto](RiemannGaussian/EtaLogTwoEndpointLimit.lean) |
+| **Polynomial-phase eta finite part** | The actual quadratic/cubic phase displacement retains the complex endpoint correction, with explicit comparison error `h exp(4|λ|)[v²(|β|+|α|(6+v))/R + 3h]`. The phase family and exact complex test are closed under logarithmic reflection. | [pairedEtaPhaseMismatch_polynomial_finite_part_tendsto](RiemannGaussian/EtaPolynomialMismatchFinitePart.lean), [pairedEtaPolynomialBoundaryTest_reflection](RiemannGaussian/EtaPolynomialBoundaryTest.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 

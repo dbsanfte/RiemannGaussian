@@ -520,3 +520,6 @@ import RiemannGaussian.EtaLogWeightedEndpoint
 import RiemannGaussian.EtaLogEndpointControl
 import RiemannGaussian.EtaLogTwoEndpoint
 import RiemannGaussian.EtaLogTwoEndpointLimit
+import RiemannGaussian.EtaPolynomialBoundaryTest
+import RiemannGaussian.EtaPolynomialPhaseIncrement
+import RiemannGaussian.EtaPolynomialMismatchFinitePart
