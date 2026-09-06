@@ -471,9 +471,24 @@ run_cmd do
         "retains the original signed reflection channels and bounds their " ++
         "first absolute average by (K_partner+K_rho)*D*(1+log D) in the same " ++
         "cubic range, without assuming a simple or critical-line zero. " ++
-        "The full physical divisor range, removal of endpoint powers, inverse " ++
-        "weights, moving centers, and adjacent higher moments remain uncontrolled " ++
-        "by this estimate. It does not improve the zero-free strip or prove the " ++
+        "The individual endpoint powers are now removed from the actual " ++
+        "zeroth-order forward Moebius terms. " ++
+        "norm_pairedEtaCompletedMoebiusTerm_physical_sub_endpoint_le bounds " ++
+        "the complex difference from a common M^rho normalization by B_rho*d/M " ++
+        "for every 1<=d<=M, with B_rho=2*norm(rho)*TermConstant(rho). " ++
+        "The complete difference is retained as a complex divisor sum and has " ++
+        "norm at most B_rho*D^2/M. The unmodified family retains the original " ++
+        "complex pair kernel. " ++
+        "pairedEtaCompletedMoebiusOriginalMeanSquare_le_growing proves its " ++
+        "mean square at most C_rho*D*(1+log D)*A^(-2*Re(rho)) in the same cubic " ++
+        "range, with C_rho=2*K_rho+2*B_rho^2. " ++
+        "pairedEtaSignedCompletedMoebiusOriginalMeanAbsolute_le_growing " ++
+        "bounds the actual signed first absolute average by D*(1+log D)*" ++
+        "(C_partner*A^(-2*(1-Re(rho)))+C_rho*A^(-2*Re(rho))), retaining both " ++
+        "original completion channels without a simplicity hypothesis. " ++
+        "The full physical divisor range and transfer to the inverse weights, " ++
+        "moving centers, and adjacent higher moments remain uncontrolled by " ++
+        "these estimates. They do not improve the zero-free strip or prove the " ++
         "original uniform weighted current bound. A separate exact dyadic " ++
         "recurrence controls the entire " ++
         "growing divisor family at each physical cutoff: E(M)=-r*O(floor(M/2)) " ++

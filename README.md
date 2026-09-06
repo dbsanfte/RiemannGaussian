@@ -27,35 +27,33 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Control correlations across growing divisor families in the exact eta reconstruction. The completed family, with its physical endpoint powers retained, now has a linear logarithmic mean-square bound when D³ fits within both the starting cutoff and averaging length. Extending this to the full inverse-weighted moment family and bounding the original weighted current uniformly remain open.
+Transfer phase-correlation bounds through the actual eta reconstruction. The growing-family estimate now applies to the original completed Möbius terms, with their physical decay and both reflected channels. The remaining frontier is to control the full divisor range and the inverse-weighted head and adjacent moments strongly enough to bound the original weighted current uniformly in the cutoff.
 
 ## Latest Update
 
-Lean now bounds a **growing family of actual completed Möbius eta terms**
-after summing their phases together. Write `F_rho(M,d)` for the completed
-divisor term with its own complex physical endpoint power. Then
+Lean now transfers the growing-family estimate to the **original completed
+Möbius eta terms**, removing their individual endpoint powers. Write
+`T_rho(M,d)=pairedEtaCompletedMoebiusTerm(rho,M,d)` and `sigma=Re rho`. Then
 
 \[
- \frac1L\sum_{r=0}^{L-1}\left|\sum_{d=1}^D F_\rho(A+r,d)\right|^2
- \le K_\rho D(1+\log D),\qquad 1\le D,\quad D^3\le\min(A,L).
+ \frac1L\sum_{r=0}^{L-1}\left|\sum_{d=1}^D T_\rho(A+r,d)\right|^2
+ \le C_\rho D(1+\log D)A^{-2\sigma},\qquad 1\le D,\quad D^3\le\min(A,L).
 \]
 
-[pairedEtaCompletedMoebiusFamilyMeanSquare_le_growing](RiemannGaussian/EtaMoebiusGrowingFamily.lean)
-evaluates `K_rho` in the actual completion and endpoint-error constants.
-The proof retains the exact gcd covariance, including nonzero same-colour
-correlations, and bounds the unfinished arithmetic window explicitly.
-[pairedEtaSignedCompletedMoebiusFamilyMeanAbsolute_le_growing](RiemannGaussian/EtaMoebiusSignedFamily.lean)
-also bounds the first absolute average of the two reflected completion
-channels in their original signed orientation. Neither theorem assumes
-that the zero is simple or on the critical line.
+[pairedEtaCompletedMoebiusOriginalMeanSquare_le_growing](RiemannGaussian/EtaMoebiusPhysicalMeanSquare.lean)
+proves this with an explicit completion-dependent constant. The exact
+complex normalization error is retained before its bound `B_rho D²/M`;
+the original complex pair kernel and every divisor weight remain present.
+[pairedEtaSignedCompletedMoebiusOriginalMeanAbsolute_le_growing](RiemannGaussian/EtaMoebiusOriginalSignedFamily.lean)
+also bounds the first absolute average of the original signed family, with
+both complementary decay rates `A^(-2 sigma)` and `A^(-2(1-sigma))`.
+No simplicity or critical-line assumption is used.
 
-The cubic restriction, endpoint powers, inverse weights, and higher moment
-orders still prevent transfer to the full original current. This slice
-does not strengthen the existing zero-free strip. The
-[uniform weighted goal](docs/eta-current-reconstruction-plan.md), RH, and
-the `13/18` certificate remain open. Gcd correlation estimates have
-[established antecedents](https://arxiv.org/abs/1210.0741); no novelty priority
-for this eta application is claimed.
+These are forward Möbius families. The cubic range restriction and transfer
+to the original current's inverse-weighted head and adjacent higher moments
+remain open. The estimate does not strengthen the existing zero-free strip
+or prove the [uniform weighted goal](docs/eta-current-reconstruction-plan.md),
+RH, or a `13/18` certificate.
 
 ## Notable Formalisations
 
@@ -98,7 +96,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Positive principal endpoints for both multiplicities** | The actual current and return have summable weighted error from one signed difference of complementary endpoint decays, with both completion coefficients strictly positive. The simple head's complex phase correction is explicit; one finite budget controls every difference of first absolute moments. | [pairedEtaCurrentPrincipalCoefficient_pos](RiemannGaussian/EtaCurrentPrincipalEndpoints.lean), [pairedEtaCurrentHalfStepHead_mul_conj_euler](RiemannGaussian/EtaCurrentHalfStepPairs.lean), [pairedEtaLeadingCurrentLinearHeatReturn_principal_firstMoment_stability](RiemannGaussian/EtaCurrentPrincipalEndpoints.lean) |
 | **Sharp growth at a hypothetical off-critical zero** | Assuming an actual zero is off the critical line, its slower positive completion channel gives matching eventual displacement-power bounds for the original return's weighted first absolute moment. An explicit finite offset gives an all-cutoff lower bound, and the moment tends to infinity. This does not exclude such a zero. | [pairedEtaCurrentPrincipalEndpoint_eq_dominant_factor](RiemannGaussian/EtaCurrentPrincipalDominance.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_lower_with_offset](RiemannGaussian/EtaCurrentReturnSharpGrowth.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_power_bounds_eventually](RiemannGaussian/EtaCurrentReturnSharpGrowth.lean) |
 | **Finite Möbius constraints and eta phase cancellation** | Fixed odd/even divisor pairs have period cancellation, and zeroth-order parity aggregates have uniform bounds. Every centered moment now has full Möbius inversion with exact center translations and a fixed-center aggregate bound. Both original current branches reconstruct, including the adjacent-order double sum for repeated zeros. The weighted bound remains open. | [norm_pairedEtaSignedCompletedMoebiusDyadicCorrelation_le](RiemannGaussian/EtaMoebiusDyadicCorrelation.lean), [pairedEtaLeadingCurrent_eq_oddInverse_head](RiemannGaussian/EtaCurrentMoebiusInverse.lean), [norm_pairedEtaCompletedOddInverseTop_sub_main_le](RiemannGaussian/EtaMoebiusGroupedInverse.lean), [norm_pairedEtaCompletedOddInverseBottom_add_main_le](RiemannGaussian/EtaMoebiusGroupedInverse.lean), [norm_pairedEtaCompletedMomentMoebiusAggregate_le](RiemannGaussian/EtaMomentMoebiusTransform.lean), [pairedEtaLeadingCurrent_eq_momentInverse_adjacent](RiemannGaussian/EtaCurrentMomentMoebiusInverse.lean) |
-| **Growing divisor-family covariance and mean square** | Literal quotient phases have an exact gcd covariance. The actual completed family has mean square at most `K_rho D(1+log D)` when `D³` is at most both the starting cutoff and averaging length. Its signed reflected pair has the corresponding first absolute average bound, with every physical endpoint power retained. | [sum_range_pairedEtaDivisorParity_eq_gcd](RiemannGaussian/EtaDivisorParityGcd.lean), [pairedEtaCompletedMoebiusFamilyMeanSquare_le](RiemannGaussian/EtaMoebiusFamilyMeanSquare.lean), [pairedEtaCompletedMoebiusFamilyMeanSquare_le_growing](RiemannGaussian/EtaMoebiusGrowingFamily.lean), [pairedEtaSignedCompletedMoebiusFamilyMeanAbsolute_le_growing](RiemannGaussian/EtaMoebiusSignedFamily.lean) |
+| **Growing divisor-family covariance and physical mean square** | Literal quotient phases have an exact gcd covariance. Removing their individual endpoint powers transfers the bound to the original completed Möbius terms: mean square at most `C_rho D(1+log D) A^(-2 Re rho)` when `D³` is at most both the starting cutoff and averaging length. The original signed pair retains both complementary physical decay rates. | [sum_range_pairedEtaDivisorParity_eq_gcd](RiemannGaussian/EtaDivisorParityGcd.lean), [norm_pairedEtaCompletedMoebiusPartialAggregate_physical_sub_endpoint_le](RiemannGaussian/EtaMoebiusPhysicalFamily.lean), [pairedEtaCompletedMoebiusOriginalMeanSquare_le_growing](RiemannGaussian/EtaMoebiusPhysicalMeanSquare.lean), [pairedEtaSignedCompletedMoebiusOriginalMeanAbsolute_le_growing](RiemannGaussian/EtaMoebiusOriginalSignedFamily.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 

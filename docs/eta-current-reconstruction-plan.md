@@ -2124,6 +2124,100 @@ dependencies retained. The previous reciprocal-logarithm zero-free margin
 is unchanged. The uniform weighted goal, RH, and the `13/18` certificate
 remain open.
 
+## Removing the individual physical endpoint powers
+
+The growing-family covariance estimate now applies to the original
+`pairedEtaCompletedMoebiusTerm` itself, without its separate complex
+endpoint multiplier. This discharges the normalization transfer for the
+zeroth-order forward Möbius family. It does not discharge the full divisor
+range or the inverse-weighted current estimate.
+
+For `1<=d<=M`, the literal endpoint `p=d*Q(floor(M/d))` satisfies
+`M/2<=p` and `abs(M-p)<=d`:
+`pairedEtaDivisorOddEndpoint_physical_bounds` in
+[EtaMoebiusPhysicalNormalization.lean](../RiemannGaussian/EtaMoebiusPhysicalNormalization.lean).
+The existing complex-power derivative bound and the actual completed-term
+decay therefore give
+
+\[
+ \left|M^\rho T_\rho(M,d)-p^\rho T_\rho(M,d)\right|
+ \le B_\rho\frac dM,\qquad
+ B_\rho=2\|\rho\|\operatorname{pairedEtaCompletedMoebiusTermConstant}(\rho).
+\]
+
+This is
+`norm_pairedEtaCompletedMoebiusTerm_physical_sub_endpoint_le`. Its inputs
+hold over the entire physical divisor range; it does not assume that `d/M`
+is small. The exact complex difference is kept before taking a norm.
+
+Write `P_rho(M,D)=sum_{d=1}^D T_rho(M,d)` for
+`pairedEtaCompletedMoebiusPartialAggregate`. At `D=M` it is exactly the
+previous completed tail aggregate. The theorem
+`pairedEtaCompletedMoebiusPartialAggregate_norm_sq_eq_kernel` retains its
+full original complex pair kernel, with no individual endpoint powers.
+The exact normalization-error sum and its quantitative consequence are
+proved in [EtaMoebiusPhysicalFamily.lean](../RiemannGaussian/EtaMoebiusPhysicalFamily.lean):
+
+\[
+ \begin{aligned}
+ M^\rho P_\rho(M,D)-\sum_{d=1}^D F_\rho(M,d)
+ &=\sum_{d=1}^D(M^\rho-p_d^\rho)T_\rho(M,d),\\
+ \left|M^\rho P_\rho(M,D)-\sum_{d=1}^D F_\rho(M,d)\right|
+ &\le B_\rho D^2/M\qquad(D\le M).
+ \end{aligned}
+\]
+
+The estimate is
+`norm_pairedEtaCompletedMoebiusPartialAggregate_physical_sub_endpoint_le`.
+It is a bound for the actual summed complex normalization error.
+
+`pairedEtaCompletedMoebiusPhysicalMeanSquare_le_endpoint` in
+[EtaMoebiusPhysicalMeanSquare.lean](../RiemannGaussian/EtaMoebiusPhysicalMeanSquare.lean)
+then bounds the mean square of `M^rho*P_rho(M,D)` by twice the previous
+endpoint-family mean square plus `2*B_rho^2*D^4/A^2`, for `D<=A` and
+positive `A,L`. The exact norm identity evaluates the common factor as
+the original physical decay. Consequently the terminal theorem
+`pairedEtaCompletedMoebiusOriginalMeanSquare_le_growing` proves
+
+\[
+ \frac1L\sum_{r<L}|P_\rho(A+r,D)|^2
+ \le C_\rho D(1+\log D)A^{-2\operatorname{Re}\rho},\qquad
+ C_\rho=2K_\rho+2B_\rho^2,
+\]
+
+for `D>=1` and `D^3<=A,L`. The constant `K_rho` is evaluated in the preceding
+section; `C_rho` is `pairedEtaCompletedMoebiusOriginalFamilyConstant`.
+
+The exact signed pair of the two original sums is expanded into every
+original divisor pair before its norm is bounded.
+`pairedEtaSignedCompletedMoebiusOriginalMeanAbsolute_le_growing` in
+[EtaMoebiusOriginalSignedFamily.lean](../RiemannGaussian/EtaMoebiusOriginalSignedFamily.lean)
+proves the first absolute average bound
+
+\[
+ \frac1L\sum_{r<L}
+  \left|\operatorname{etaSignedCompletedPair}
+    (P_{\rho^*},P_{\rho^*},P_\rho,P_\rho)(A+r,D)\right|
+ \le D(1+\log D)
+   \left(C_{\rho^*}A^{-2(1-\sigma)}+C_\rho A^{-2\sigma}\right),
+ \qquad \sigma=\operatorname{Re}\rho.
+\]
+
+Here `rho*` is the original conjugate partner. Both complementary rates
+come from the actual zero coordinates. No critical-line or simplicity
+hypothesis is imposed. The oriented channel difference also has an exact
+average identity before the absolute estimate.
+
+The retained `D^2/M` normalization error is small only in a suitable range,
+and the covariance estimate still requires cubic separation of the family
+size from the physical averaging scales. The full forward aggregate already
+has its proved nonzero dyadic source; a bound for it is not a bound for the
+current. The latter requires the inverse-weighted head sum and the adjacent
+higher moments at moving centers. Those transfers and the original uniform
+odd-weighted first absolute partial-sum bound remain open. This slice does
+not exclude any additional zero, tighten the previous zero-free margin,
+or prove RH or a `13/18` certificate.
+
 ## Next mathematical obligations
 
 The signed prime input now excludes the explicit reciprocal-logarithm edge
@@ -2234,8 +2328,10 @@ Excluding the surviving off-critical endpoint contribution remains open. The nex
    Uniform control of that inverse sum at moving centers remains open.
    The growing-family estimate above supplies a quantitative bound in the
    cubic truncated range. Extending it to the full physical range must
-   control the explicit `D^4/L` error and transport the retained endpoint
-   powers through the inverse weights and higher adjacent moments.
+   control the explicit `D^4/L` error. The individual endpoint powers are
+   now removed for the original zeroth-order forward terms with their exact
+   physical decay. Transfer through the inverse weights and higher adjacent
+   moments at moving centers remains open.
    Any use of the earlier period averages must also preserve their
    divisor-dependent normalizers and errors. Any use of the
    mixed phase matrix must identify the actual finite eta feature vector
