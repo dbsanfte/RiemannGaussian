@@ -504,3 +504,7 @@ import RiemannGaussian.EtaPhaseMismatchBounds
 import RiemannGaussian.EtaCubicBoundaryTest
 import RiemannGaussian.EtaCubicPhaseIncrement
 import RiemannGaussian.EtaCubicMismatchLimit
+import RiemannGaussian.EtaMovingTiltGaussianBound
+import RiemannGaussian.EtaCubicHeatProfile
+import RiemannGaussian.EtaCubicHeatLimit
+import RiemannGaussian.Hybrid.EtaCubicHeatGram

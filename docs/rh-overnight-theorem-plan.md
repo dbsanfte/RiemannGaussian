@@ -70,10 +70,26 @@ For every fixed `v > 0`, its normalization by `h R` converges to
 `v integral_0^1 exp(-2lambda z) exp(i v(kappa+3alpha z^2)) dz`.
 The moving-tilt time tail beyond `2R` is at most `2h^2 exp(4|lambda|)`.
 
-The core targets through (7) and the full complex displacement limit are
-implemented. Still outstanding: the Gaussian dominated limit in (8), its
-finite mixed matrix limit, and the review of a quantitative application to
-the completed signed leading flux.
+The seventh slice completes (8).
+`EtaMovingTiltGaussianBound.lean` proves the phase-independent normalized
+majorant `exp(4|lambda|)(12+11v^2)` for
+`R >= max(1,4|lambda|)`. `EtaCubicHeatProfile.lean` proves genuine profile
+integrability and the linear/uncoloured consistency identities.
+`EtaCubicHeatLimit.lean` discharges Gaussian dominated convergence and
+identifies the result with the actual continuous heat, in both `R` and
+`h` coordinates. `Hybrid/EtaCubicHeatGram.lean` proves convergence of every
+fixed mixed entry, genuine integrability of its quadratic form, an explicit
+cosine/sine integral-of-squares formula, and positivity for real and complex
+coefficients.
+
+All mathematical targets (1)--(8), including the finite matrix consequence
+(5b), are implemented. The [signed-flux application review](rh-overnight-signed-flux-review.md)
+is complete: it identifies the different integration carriers, the missing
+completed kernel identity, the cutoff/multiplicity dependence, and the
+fixed-parameter limitation. No quantitative estimate for the completed
+signed leading flux was established. The plan explicitly leaves that
+application open when the available result is only a triangle bound or a
+reformulation.
 No RH or improved-proportion milestone follows from these auxiliary results.
 
 **Recommendation:** make Gaussian heat on the literal eta support quantitative,
@@ -354,8 +370,10 @@ The proposed limit is
         \cos\!\left(v(\kappa+3\alpha z^2)\right)\,dz\,dv. \tag{8}
 \]
 
-This is a conjectured target with an explicit proof route, not an established
-result of this audit. For `r=h*v`, apply (1), approximate the phase increment
+This originally conjectured target is now proved by
+`pairedEtaSupportGapGaussianLeakage_cubic_movingTilt_tendsto` in
+`EtaCubicHeatLimit.lean`; the ledger above records its prerequisite estimates.
+The original proof route was: for `r=h*v`, apply (1), approximate the phase increment
 on the boundary at `log n` by
 `v * (kappa + 3*alpha*(log n/ell_h)^2)`, and turn the weighted harmonic sum
 into an integral in `z=log n/ell_h`. Bound the unresolved tail before the
@@ -476,11 +494,13 @@ separates approximation from the difficult coefficient control and studies
 structured Gram matrices. This is a useful warning against mistaking a new
 representation for the missing estimate.
 
-Source searches found no counterpart of (1), (5a), (5b), or (8) in the current
-project. The concrete new-in-repo target is the uniform phase estimate and
-its dimension-dependent matrix coercivity. The strongest candidate for
-original auxiliary mathematics is the quantitative joint phase/moving-tilt
-estimate behind (8), together with its actual eta and finite Gram connections.
+The initial source audit found no counterpart of (1), (5a), (5b), or (8) in
+the project. The concrete new-in-repo results are the uniform phase estimate
+and its dimension-dependent matrix coercivity. The joint phase/moving-tilt
+theorem (8), its quantitative complex boundary estimate, and its actual
+eta-support and finite Gram connections are also now checked. These are
+candidates for original auxiliary mathematics; the statements need a wider
+literature comparison before making a priority claim.
 Priority in the wider literature is
 **not established** by this bounded search; use “new in this repository”
 until a dedicated comparison justifies a stronger claim.
@@ -493,4 +513,5 @@ misses small intervals. For `r=2^-4, 2^-10, 2^-14`, the truncated ratios
 `1.01137`. The omitted integral beyond `x=32/r` is at most `r/32`; rounding
 error was not certified. These checks support the normalization and the
 boundary decomposition only. They prove none of the proposed Lean theorems
-and do not validate the full phase scaling conjecture.
+and do not validate the full phase scaling law. That law is now established
+by the Lean proofs recorded in the implementation ledger.
