@@ -590,3 +590,6 @@ import RiemannGaussian.EtaMoebiusParityBlocks
 import RiemannGaussian.EtaMoebiusParityInverse
 import RiemannGaussian.EtaMoebiusInverseWeights
 import RiemannGaussian.EtaCurrentMoebiusInverse
+import RiemannGaussian.EtaOddPowerQuadrature
+import RiemannGaussian.EtaOddPowerMellin
+import RiemannGaussian.EtaMoebiusGroupedInverse

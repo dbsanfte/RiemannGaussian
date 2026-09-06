@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "exact simple-zero Moebius inverse; growing weight cost; signed return bound open.</text>\n" ++
+      "grouped inverse Mellin phases and decaying cross-cutoff error; signed bound open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -474,8 +474,19 @@ run_cmd do
         "show that this weight cost diverges at every actual zero, including " ++
         "the critical line. This diagnoses the triangle estimate; it does not " ++
         "show divergence of the original signed current or rule out cancellation " ++
-        "in the exact inverse sum. A weighted signed estimate and higher centered " ++
-        "order control remain open. No uniform transfer estimate " ++
+        "in the exact inverse sum. Grouping the entire divided-cutoff-one block " ++
+        "at cutoff 4*K now gives the complex main term " ++
+        "X_rho*(2*K)^(1-rho)*(2^(1-rho)-1)/(2*(1-rho)), with error at most " ++
+        "norm(X_rho)*norm(rho)*(2*K)^(-Re(rho))/2. Its Mellin coefficient " ++
+        "is nonzero throughout the critical strip, and the norm of this whole " ++
+        "completed inverse block tends to infinity after all its phases are summed. " ++
+        "The complementary divided cutoffs have the opposite complex main term " ++
+        "with error at most norm(X_rho)*((norm(rho)/Re(rho)+1)*(4*K)^(-Re(rho)) " ++
+        "+norm(rho)*(2*K)^(-Re(rho))/2). Their exact sum is the original " ++
+        "zeroth completed moment with its actual zero-prefix decay. This proves " ++
+        "a cross-cutoff cancellation constraint; it does not exclude off-critical " ++
+        "zeros or supply the signed weighted-current bound. A weighted signed " ++
+        "estimate and higher centered order control remain open. No uniform transfer estimate " ++
         "to the original current's weighted absolute moment is proved. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

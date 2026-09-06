@@ -48,6 +48,7 @@ the objective.
 | Couple actual completed eta tails across multiplicatively divided cutoffs | `sum_moebius_mul_pairedEtaCorePartialSum_add_endpoint` in [EtaMoebiusFinitePrefix.lean](../RiemannGaussian/EtaMoebiusFinitePrefix.lean) and `pairedEtaCompletedMoebiusTailAggregate_eq_source` in [EtaMoebiusCompletedTail.lean](../RiemannGaussian/EtaMoebiusCompletedTail.lean). | Proved at every actual zero and every integer cutoff at least two, with all odd endpoint corrections and complex Möbius weights. The resulting linear constraint has no proved quadratic-current bound yet. |
 | Bound both complete parity aggregates and their signed block sums | Exact halved-cutoff identities in [EtaMoebiusParityRecurrence.lean](../RiemannGaussian/EtaMoebiusParityRecurrence.lean), `norm_pairedEtaCompletedMoebiusOddAggregate_le` in [EtaMoebiusParityBound.lean](../RiemannGaussian/EtaMoebiusParityBound.lean), and `norm_pairedEtaSignedCompletedMoebiusParityBlock_le` in [EtaMoebiusParityBlocks.lean](../RiemannGaussian/EtaMoebiusParityBlocks.lean). | Proved uniformly in the physical cutoff, with every divisor and both completion channels retained. These are norms of block sums; a bound for the original weighted absolute return does not follow yet. |
 | Recover the original simple-zero current from the parity aggregates | `pairedEtaFiniteCompletedMoment_zero_eq_oddInverse` in [EtaMoebiusParityInverse.lean](../RiemannGaussian/EtaMoebiusParityInverse.lean) and `pairedEtaLeadingCurrent_eq_oddInverse_head` in [EtaCurrentMoebiusInverse.lean](../RiemannGaussian/EtaCurrentMoebiusInverse.lean). | The exact inverse weights, divided cutoffs, and both signed head channels are proved. Their absolute weight mass has matching positive-power bounds in [EtaMoebiusInverseWeights.lean](../RiemannGaussian/EtaMoebiusInverseWeights.lean), so termwise norms do not supply a uniform transfer. |
+| Sum equal-cutoff inverse phases and retain cancellation with the complementary cutoffs | Complex midpoint control in [EtaOddPowerQuadrature.lean](../RiemannGaussian/EtaOddPowerQuadrature.lean), the nonzero Mellin coefficient in [EtaOddPowerMellin.lean](../RiemannGaussian/EtaOddPowerMellin.lean), and `norm_pairedEtaCompletedOddInverseBottom_add_main_le` in [EtaMoebiusGroupedInverse.lean](../RiemannGaussian/EtaMoebiusGroupedInverse.lean). | The full top inverse block grows after its phases are summed. The complementary block has the opposite explicit complex main term with a decaying error. Their sum is the actual zeroth completed moment; the weighted signed-current bound remains open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -1387,6 +1388,93 @@ original `S_rho(K)`. Merely inserting the uniform aggregate constant
 under a sum of inverse-weight norms cannot give it. The inversion and
 power comparison are classical; no novelty priority is claimed.
 
+### Grouped inverse Mellin phases and actual cross-cutoff cancellation
+
+The next test sums the inverse weights with a common divided cutoff
+before taking any norm. It therefore goes beyond the previous sum of
+individual weight norms. At physical cutoff `4*K`, all odd indices in
+`2*K < d <= 4*K` have divided cutoff one. The complete power sum is
+
+\[
+ G_\rho(K)=\sum_{0\le k<K}(2K+2k+1)^{-\rho},\qquad
+ b_\rho=\frac{2^{1-\rho}-1}{2(1-\rho)}.
+\]
+
+`norm_pairedEtaOddTopPowerSum_sub_half_integral_le` compares this
+literal midpoint sum with half its complex power integral. The proof
+uses an explicit positive-axis derivative bound, checks interval
+integrability, and joins every adjacent interval exactly. The theorem
+`half_integral_cpow_eq_pairedEtaOddTopPowerMain` evaluates that integral
+without discarding its phase. Consequently
+`norm_pairedEtaOddTopPowerSum_sub_main_le` proves
+
+\[
+ \left|G_\rho(K)-(2K)^{1-\rho}b_\rho\right|
+ \le \frac{|\rho|}{2}(2K)^{-\sigma},\qquad K\ge1,
+ \quad\sigma=\Re\rho.
+\]
+
+The coefficient retains its ordinate dependence. It is nonzero throughout
+the open critical strip: `pairedEtaOddTopPowerCoefficient_ne_zero` uses
+`|2^(1-rho)|=2^(1-sigma)>1`. The lower estimate
+`pairedEtaOddTopPowerSum_norm_lower_of_cutoff` gives
+
+\[
+ |G_\rho(K)|\ge\frac{|b_\rho|}{2}(2K)^{1-\sigma}
+ \quad\text{if }K\ge1\text{ and }|\rho|\le2K|b_\rho|.
+\]
+
+`pairedEtaOddTopPowerSum_norm_tendsto_atTop` therefore proves that
+this **whole grouped coefficient**, not only its termwise absolute
+majorant, is unbounded. No inverse operator norm is introduced here.
+
+For the actual completed inverse define its two retained pieces
+
+\[
+ T_\rho(K)=\sum_{\substack{2K<d\le4K\\d\text{ odd}}}
+ d^{-\rho}O_\rho(\lfloor4K/d\rfloor),\qquad
+ B_\rho(K)=\sum_{\substack{1\le d\le2K\\d\text{ odd}}}
+ d^{-\rho}O_\rho(\lfloor4K/d\rfloor).
+\]
+
+The symbols `B_rho(K)` and `b_rho` here denote the bottom inverse block
+and Mellin coefficient, respectively, not the earlier uniform parity
+constant. `pairedEtaCompletedOddInverseTop_eq_powerSum` gives the exact
+complex equality `T_rho(K)=X_rho*G_rho(K)`. The finite partition theorem
+`pairedEtaCompletedOddInverseBottom_add_top` retains
+`B_rho(K)+T_rho(K)=A_rho(2*K,0)`.
+
+With `L_rho(K)=X_rho*(2*K)^(1-rho)*b_rho`, the terminal estimates are
+
+\[
+ |T_\rho(K)-L_\rho(K)|
+ \le |X_\rho|\frac{|\rho|}{2}(2K)^{-\sigma},
+\]
+\[
+ |B_\rho(K)+L_\rho(K)|
+ \le |X_\rho|\left[
+ (|\rho|/\sigma+1)(4K)^{-\sigma}
+ +\frac{|\rho|}{2}(2K)^{-\sigma}\right].
+\]
+
+These are `norm_pairedEtaCompletedOddInverseTop_sub_main_le` and
+`norm_pairedEtaCompletedOddInverseBottom_add_main_le`. The latter
+uses the actual zero-prefix decay only after retaining the exact sum
+of the two inverse blocks. The theorem
+`pairedEtaCompletedOddInverseTop_norm_tendsto_atTop` proves that the
+top completed piece itself is unbounded. Its growing phase is canceled
+by the other divided cutoffs, with the explicit decaying error above.
+
+Thus grouping equal cutoffs does not justify bounding each grouped
+inverse piece separately by a cutoff-independent constant. The new
+constraint preserves the cancellation across different cutoffs that
+such a transfer would lose. It is still a zeroth-moment statement,
+valid separately in both completion channels, and does not establish
+the original signed current's uniform weighted absolute moment. The
+existing conditional off-critical power growth remains compatible with
+all these identities. Midpoint quadrature and Mellin integration are
+classical; no priority claim is made for this application.
+
 ## Next mathematical obligations
 
 1. Prove cancellation in the exact inverse-weighted signed head sum
@@ -1397,7 +1485,12 @@ power comparison are classical; no novelty priority is claimed.
    current now has an exact reconstruction from those odd aggregates.
    Its termwise absolute inverse-weight cost, however, has proved growth
    `M^(1-Re rho)`; bounding each aggregate separately cannot close this
-   transfer estimate. Any use of the earlier
+   transfer estimate. Summing phases within an equal-cutoff block also
+   leaves a proved positive-power main term. The complementary cutoffs
+   cancel that term with the quantitative complex error above, so their
+   interaction must survive any subsequent estimate for the signed pair.
+   This zeroth-moment cancellation alone does not exclude an off-critical
+   zero or improve the known sharp original-return exponent. Any use of the earlier
    fixed-pair estimate must still account for its divisor-dependent
    normalizers and averaging period. The earlier diagonal bound has a complementary correlation
    sum with a possible nonzero limit; that sum cannot be dropped.
@@ -1475,6 +1568,10 @@ Excluding the surviving off-critical endpoint contribution remains open. The nex
    Its inverse-weight mass has positive-power growth even on the critical
    line; the next estimate must exploit cancellation in the weighted
    signed sum rather than replace it with termwise absolute values.
+   The grouped top inverse block now has its nonzero Mellin main term,
+   and the complementary cutoffs have the opposite term with a decaying
+   error. These relations must remain available when estimating the
+   two completed channels together.
    Higher-centered-order estimates also remain open.
    Any use of the earlier period averages must also preserve their
    divisor-dependent normalizers and errors. Any use of the
