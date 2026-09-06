@@ -38,6 +38,8 @@ the objective.
 | Compare the actual continuous gap return with composed Gaussian heat | Full-line composition in [EtaTiltedHeatComposition.lean](../RiemannGaussian/EtaTiltedHeatComposition.lean) and `pairedEtaLeadingCurrentIntegratedGapReturn_eq_composed_sub_corrections` in [EtaCurrentFullHeatComparison.lean](../RiemannGaussian/EtaCurrentFullHeatComparison.lean). | Proved with both support and nonpositive-time corrections; all three-time integrals converge even at zero tilt. No cancellation estimate follows from the identity alone. |
 | Reconstruct at zero tilt with controlled actual-gap normalization | Arithmetic balance in [EtaDecreasingGapMass.lean](../RiemannGaussian/EtaDecreasingGapMass.lean), Gaussian mass and translation bounds in [EtaGaussianGapMass.lean](../RiemannGaussian/EtaGaussianGapMass.lean), exact multiplier in [EtaZeroTiltGapMultiplier.lean](../RiemannGaussian/EtaZeroTiltGapMultiplier.lean), and the two completed branches in [EtaZeroTiltCurrentReconstruction.lean](../RiemannGaussian/EtaZeroTiltCurrentReconstruction.lean). | Proved using the entire actual gap, without extending the positive-tilt Laplace normalization to zero. |
 | Preserve the weighted frontier with zero tilt and quadratic width | `summable_oddEndpoint_mul_norm_pairedEtaLeadingCurrentZeroTiltScheduledReturn_error` and `pairedEtaLeadingCurrentZeroTiltScheduledReturn_firstMoment_stability` in [EtaZeroTiltWeightedReconstruction.lean](../RiemannGaussian/EtaZeroTiltWeightedReconstruction.lean). | Proved at width `2(N+1)²`, with explicit finite error budget and no exponential tilt amplification. |
+| Evaluate the literal colour primitive and broad Gaussian gap term | `pairedEtaLogColourPrimitive_wallis_error_le` in [EtaLogColourPrimitive.lean](../RiemannGaussian/EtaLogColourPrimitive.lean), the exact signed remainder in [EtaGaussianColourRemainder.lean](../RiemannGaussian/EtaGaussianColourRemainder.lean), and `pairedEtaGaussianGapMass_wallis_expansion_error_le` in [EtaGaussianGapExpansion.lean](../RiemannGaussian/EtaGaussianGapExpansion.lean). | Proved with the evaluated Wallis constant, exponential primitive error `9 exp(−t)`, and uniform remainder `2(1+c)³/h³`. |
+| Identify the first broad-heat coefficient of the original current | The normalized expansion in [EtaZeroTiltFirstCorrection.lean](../RiemannGaussian/EtaZeroTiltFirstCorrection.lean) and `pairedEtaLeadingCurrentZeroTiltGapReturn_midpoint_error_le_arithmetic` in [EtaCurrentMidpointCorrection.lean](../RiemannGaussian/EtaCurrentMidpointCorrection.lean). | Proved in both actual multiplicity branches, retaining an exact signed defect and an explicit inverse-square-width error. Arithmetic cancellation of the midpoint coefficient remains open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -367,6 +369,75 @@ first absolute moment. A norm bound on the positive multiplier alone still
 gives only the insufficient absolute kernel-mass scale; a new use of the
 zero equation and signed completion symmetry is needed.
 
+## Checked Wallis expansion and the actual midpoint correction
+
+Write `ell=log(pi/2)` and let `chi` be the literal eta support indicator.
+The actual signed primitive and its remainder are
+
+\[
+ A(t)=\int_0^t(2\chi(w)-1)\,dw,\qquad B(t)=A(t)-\ell.
+\]
+
+Complete support/gap pairs give exactly `A(log(2n+1))=log(W_n)` for
+Mathlib's finite Wallis product. Its two product bounds, together with the
+final partial pair, prove `|B(t)| <= 9 exp(-t)` for every `t>=0`.
+This uses the actual interval colour at every real time.
+
+For `K_h(r)=exp(-r²/(4h²))/(2 sqrt(pi) h)`, define the signed correction
+
+\[
+ C_h(c)=\int_0^\infty B(w)K'_h(w-c)\,dw.
+\]
+
+Absolute continuity of the primitive, genuine integrability, and a proved
+vanishing endpoint justify integration by parts and give the exact identity
+
+\[
+ g_h(c)=\frac14+\frac12\int_0^c K_h(w)\,dw
+             -\frac{\ell K_h(c)}2+\frac{C_h(c)}2,
+ \qquad |C_h(c)|\le\frac{9(1+c)}{4\sqrt\pi h^3}.
+\]
+
+For every `h>0`, `c>=0`, the resulting expansion is
+
+\[
+ \left|g_h(c)-\frac14-\frac{c-\ell}{4\sqrt\pi h}\right|
+ \le \frac{2(1+c)^3}{h^3}.
+\]
+
+Normalization by `g_h(0)` cancels the Wallis constant at first order.
+For `h>=2`, the actual ratio has error at most `18(1+c)^3/h²` after
+subtracting `1+c/(sqrt(pi)h)`. Including the displacement Gaussian gives
+
+\[
+ \left|Q_h(t,u)-1-\frac{(t+u)/2}{\sqrt\pi h}\right|
+ \le \frac{19(1+L)^3}{h^2}\quad(0\le t,u\le L).
+\]
+
+Let `f_rho,N` be the original selected signed kernel, with its actual
+measure, and set
+
+\[
+ M_\rho(N)=\int f_{\rho,N}(p)\frac{T(p)+p_2}{2}\,d\mu_{\rho,N}(p).
+\]
+
+Here `T(p)=p_1+L_(N+1)` in the simple-zero head and `T(p)=p_1` in the
+adjacent-moment branch. Both midpoint integrals are proved integrable.
+The exact signed current defect is still an integral against
+`Q_h-1-midpoint/(sqrt(pi)h)` before its norm is bounded. The terminal
+arithmetic error theorem proves
+
+\[
+ \left\|R^0_{\rho,N}(h)-J_\rho(N)
+             -\frac{M_\rho(N)}{\sqrt\pi h}\right\|
+ \le \frac{19C_\rho(1+L_N)^{2m+3}}{(N+1)h^2}.
+\]
+
+The coefficient is the unchanged signed current's physical midpoint
+moment. Its evaluation in finite eta moments, any gain from completed
+reflection, and the uniform weighted bound for `J_rho` remain unproved.
+An improved reconstruction remainder alone does not give that bound.
+
 ## Next mathematical obligations
 
 1. Establish arithmetic cancellation on the retained current or return
@@ -421,41 +492,38 @@ fixed off-axis zero: their tilt parameter grows with the logarithmic scale.
 If no estimate survives these dependencies, the next result should state
 the obstruction precisely rather than rename it as another RH criterion.
 
-### A concrete next overnight experiment in Lean
+### The next overnight arithmetic test in Lean
 
-The new normalization suggests a more specific use of the repository's
-evaluated Wallis constants. These are **proposed targets**, not results or
-assumptions to add to the theorem chain. Write `ell=log(pi/2)`.
+The primitive, Gaussian expansion, and exact midpoint coefficient proposed
+in the preceding experiment are now proved above. The next target is to
+evaluate that coefficient on the actual completed eta features. The
+following identities and estimates are **proposed targets**, not premises
+to add to the proof chain.
 
-1. Prove a quantitative Wallis limit for the literal cumulative colour
-   imbalance `A(t)=integral_0^t (indicator_support-indicator_gap)`.
-   The target is `|A(t)-ell| <= C*exp(-t)` for `t>=0`, with a proved
-   universal constant. The existing periodic colour and Wallis proofs
-   supply arithmetic building blocks; this cumulative statement still
-   needs its own proof.
-2. Integrate that exact primitive against the Gaussian derivative. The
-   candidate broad-width expansion, uniform for `c>=0` and `h>=2`, is
-   `g_h(c)=1/4+(c-ell)/(4*sqrt(pi)*h)+O((1+c)^3/h^3)`, with an explicit
-   remainder bound replacing the `O` notation in Lean. This would connect
-   the evaluated eta endpoint constant to the new full-gap normalization.
-3. Carry the expansion through the original signed current before taking
-   norms. Its candidate first correction is
-   `R_rho,N(h)-J_rho(N) = M_rho,N/(sqrt(pi)*h) + error`, where
-   `M_rho,N` is the actual current integral against `(t+u)/2`, using the
-   restored head coordinate when necessary. Express this moment in the
-   existing finite eta moments and apply only the vanishing identities
-   justified by the actual zero's multiplicity. Determine whether the
-   completed reflected channels cancel a term that a positive Gram loses.
+1. For multiplicity `m>=2`, express the midpoint integral in the existing
+   centered finite eta moments. If `I_(k,l)` denotes the completed signed
+   pair integral of centered orders `k,l`, expanding the physical midpoint
+   suggests the exact identity
+   `M = L_N*J + (m-1)*delta_(N+1)*(I_(m-1,m-1)+I_(m-2,m))`.
+   Prove the product-integral formula with both completion weights, the
+   ordinate phase, and all finite cutoffs retained.
+2. Evaluate the simple-zero head separately, using the physical translated
+   time in its order-one head moment. Its two product terms must use the
+   actual shifted head and finite prefix, with genuine integrability.
+3. Apply the existing zero-tail bounds only at moment orders below `m`.
+   The full order-`m` eta moment is proved nonzero; the new order-`m` term
+   cannot be discarded by multiplicity. Use its exact completed reflection
+   relation to test cancellation against the other channel before taking
+   absolute values. Record either an explicit arithmetic gain or the
+   surviving signed term with all cutoff dependence.
 
-This session has a clear decision point: either the signed moment gives
-an arithmetic gain beyond the current absolute envelope, or the calculation
-identifies a surviving term. In the latter case, a checked two-width
-subtraction `2*R(2h)-R(h)` could remove the first heat correction, but that
-would improve reconstruction only. It would not count as progress on the
-uniform weighted current bound without an independent estimate on the
-resulting signed return. Broader claims of novelty require comparison with
-the literature; Gaussian asymptotics and operator positivity by themselves
-are established techniques.
+The decision point is whether this exact coefficient calculation supplies
+a useful signed estimate beyond the absolute kernel envelope. A gain for
+`M/h` would still need to be connected to an independent estimate for the
+return to control `S_rho(K)`. Two-width subtraction `2*R(2h)-R(h)` could
+remove the first heat correction, but that would improve reconstruction
+only. Broader claims of novelty require comparison with the literature;
+Gaussian asymptotics and operator positivity are established techniques.
 
 No reconstruction or summability premise has been introduced as an axiom.
 The goal remains open because the uniform weighted arithmetic estimate is

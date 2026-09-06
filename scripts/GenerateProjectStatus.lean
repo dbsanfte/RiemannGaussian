@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "signed matrices, exact continuous composition, and weighted zero-tilt reconstruction on the full gap.</text>\n" ++
+      "signed matrices, Wallis gap expansion, and the original current's explicit midpoint correction.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -355,9 +355,17 @@ run_cmd do
         "h_N=2*(N+1)^2, both actual completed-current branches have weighted error at most " ++
         "13*C_rho*(1+log(2*N+5))^(2*m+2)/(N+1)^2. Its series is summable, and " ++
         "the first absolute moments differ by the explicit finite budget obtained from " ++
-        "that majorant. No exponential tilt amplification enters this schedule. The signed " ++
-        "correction balance still needs a quantitative estimate; the small-width signed law " ++
-        "does not supply one through composition alone. These " ++
+        "that majorant. No exponential tilt amplification enters this schedule. The actual " ++
+        "cumulative colour A(t) now satisfies abs(A(t)-log(pi/2))<=9*exp(-t) for t>=0. " ++
+        "An exact, integrable signed primitive correction then gives " ++
+        "abs(g_h(c)-1/4-(c-log(pi/2))/(4*sqrt(pi)*h))<=2*(1+c)^3/h^3 " ++
+        "for h>0 and c>=0. Normalizing by g_h(0) cancels the Wallis constant at first " ++
+        "order. Both original completed-current branches, including the physical translated " ++
+        "head, have their actual midpoint moment M as coefficient: " ++
+        "norm(R(h)-J-M/(sqrt(pi)*h))<=19*C_rho*(1+L_N)^(2*m+3)/((N+1)*h^2) " ++
+        "for h>=2. The exact signed defect remains available before its norm estimate. " ++
+        "Finite eta-moment evaluation and cancellation of M remain open, as does the " ++
+        "uniform weighted arithmetic bound for the original current. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[
