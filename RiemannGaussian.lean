@@ -573,3 +573,6 @@ import RiemannGaussian.EtaCurrentHeadHalfWidth
 import RiemannGaussian.EtaCurrentHalfStepHead
 import RiemannGaussian.EtaCurrentHalfStepPairs
 import RiemannGaussian.EtaCurrentPrincipalEndpoints
+import RiemannGaussian.EtaCurrentPrincipalDominance
+import RiemannGaussian.EtaCurrentPrincipalLowerBound
+import RiemannGaussian.EtaCurrentReturnSharpGrowth

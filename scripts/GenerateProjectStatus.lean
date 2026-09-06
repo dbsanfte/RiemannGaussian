@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "signed matrices, positive principal endpoints, and summable weighted return errors; uniform bound open.</text>\n" ++
+      "signed matrices and sharp conditional off-critical return growth; uniform bound open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -414,7 +414,19 @@ run_cmd do
         "return differ from this same principal expression by summable weighted " ++
         "errors. One explicit convergent sum of the heat, Euler, and head majorants " ++
         "bounds every difference of their first absolute moments. The principal " ++
-        "term itself is not bounded independently of cutoff. These " ++
+        "term itself is not bounded independently of cutoff. At a hypothetical actual " ++
+        "off-critical zero, the exact signed principal factorization now isolates " ++
+        "the slower positive completion coefficient A_dom. The relative faster " ++
+        "channel tends to zero, leaving the eventual odd-weighted lower bound " ++
+        "c_floor*(N+1)^(e-1), with e=abs(2*Re(rho)-1)>0 and " ++
+        "c_floor=(A_dom/5)*5^(e-1)>0. A finite initial-segment allowance and the " ++
+        "proved principal error budget give the all-cutoff actual-return bound " ++
+        "S_R(rho,K)>=(c_floor/e)*(K+1)^e-D_rho. Consequently the original " ++
+        "weighted first absolute moment eventually lies between " ++
+        "(c_floor/(2*e))*(K+1)^e and its previously proved C_rho*(K+1)^e " ++
+        "upper bound, and tends to infinity under that off-critical hypothesis. " ++
+        "The displacement exponent is therefore sharp for the unchanged return. " ++
+        "No contradiction excluding an off-critical zero is supplied. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[

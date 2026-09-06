@@ -837,12 +837,103 @@ displacement-power growth off the critical line. No cutoff-independent
 bound for the principal term, original current, or original return has
 been proved here.
 
+## Checked sharp growth under the off-critical hypothesis
+
+The quantitative test above is now proved in
+[EtaCurrentPrincipalDominance](../RiemannGaussian/EtaCurrentPrincipalDominance.lean),
+[EtaCurrentPrincipalLowerBound](../RiemannGaussian/EtaCurrentPrincipalLowerBound.lean),
+and [EtaCurrentReturnSharpGrowth](../RiemannGaussian/EtaCurrentReturnSharpGrowth.lean).
+It applies to the unchanged actual linear-width Gaussian return. Its
+off-critical hypothesis is explicit; it supplies no assertion that such
+a zero exists or a contradiction excluding one.
+
+Let `e=abs(2*Re(rho)-1)`. The coefficient `A_dom` is `A_rho` when
+`Re(rho)<=1/2` and `A_partner` otherwise; `A_fast` is the other coefficient.
+Both are strictly positive. The exact signed factorization
+`pairedEtaCurrentPrincipalEndpoint_eq_dominant_factor` retains the side
+sign `s_rho=-1` on the left of the critical line and `+1` on the right:
+
+\[
+ J_{\mathrm{principal}}(\rho,N)=s_\rho\delta_{N+1}
+ e^{(e-1)L_N}\left(A_{\mathrm{dom}}-A_{\mathrm{fast}}e^{-2eL_N}\right).
+\]
+
+For an actual off-critical zero, `0<e<1` is proved and
+`A_fast*exp(-2eL_N)` tends to zero. Eventually the bracket is at least
+`A_dom/2`. The literal cutoff geometry also gives
+
+\[
+ (2N+1)\delta_{N+1}\ge\frac25,
+ \qquad e^{(e-1)L_N}\ge5^{e-1}(N+1)^{e-1}.
+\]
+
+Consequently `pairedEtaCurrentPrincipalEndpoint_weighted_lower_eventually`
+proves the eventual bound
+
+\[
+ (2N+1)|J_{\mathrm{principal}}(\rho,N)|
+ \ge c_{\mathrm{floor}}(\rho)(N+1)^{e-1},
+ \qquad c_{\mathrm{floor}}(\rho)=\frac{A_{\mathrm{dom}}}{5}5^{e-1}>0.
+\]
+
+The finite power-sum lower comparison is
+
+\[
+ \frac{(K+1)^e-1}{e}\le\sum_{N<K}(N+1)^{e-1}.
+\]
+
+For a finite cutoff `N0` beyond which dominance holds, define the
+explicit allowance
+
+\[
+ D_\rho(N_0)=\sum_{N\ge0}F_{\mathrm{principal}}(\rho,N)
+ +\frac{c_{\mathrm{floor}}(\rho)}e
+ +\sum_{N<N_0}c_{\mathrm{floor}}(\rho)(N+1)^{e-1}.
+\]
+
+The infinite error sum is already proved summable, and all terms are
+nonnegative. The compiled theorem
+`pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_lower_with_offset`
+constructs such a finite `N0` and proves, at **every** terminal cutoff,
+
+\[
+ S_R(\rho,K)\ge
+ \frac{c_{\mathrm{floor}}(\rho)}e(K+1)^e-D_\rho(N_0).
+\]
+
+It uses the exact first-absolute-moment stability bound; it does not
+replace the original return by a model without accounting for the error.
+The terminal theorem
+`pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_power_bounds_eventually`
+therefore proves
+
+\[
+ \frac{c_{\mathrm{floor}}(\rho)}{2e}(K+1)^e
+ \le S_R(\rho,K)\le C_\rho(K+1)^e
+ \quad\text{eventually}.
+\]
+
+`pairedEtaCurrentReturnGrowthLowerCoefficient_pos` supplies the strictly
+positive lower coefficient. The same module proves
+`pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_tendsto_atTop_of_re_ne_half`:
+the actual weighted first absolute moment tends to infinity under the
+off-critical hypothesis.
+
+The previous growth exponent is thus sharp for the unchanged return at
+any hypothetical off-critical zero. A further approximation whose
+weighted norm error has a fixed finite sum cannot remove this positive
+power growth. The original goal therefore needs an independent
+arithmetic argument excluding the surviving off-critical contribution.
+The new lower bound does not provide that argument, improve a zero
+proportion, or locate an additional zeta zero.
+
 ## Next mathematical obligations
 
-1. Improve the proved displacement-power growth estimate to a bound
-   independent of cutoff for every actual zero. This requires an
-   independent arithmetic constraint on the surviving completed endpoint
-   contribution. The signed Euler, half-step head, and heat reconstruction
+1. Derive an independent arithmetic constraint that rules out the surviving
+   positive endpoint contribution at an actual off-critical zero. The
+   proved matching power bounds show that removing the cutoff growth
+   requires such an exclusion; a sharper local approximation alone cannot
+   provide it. The signed Euler, half-step head, and heat reconstruction
    errors are now summable in both actual multiplicity branches. Bounds for a positive heat Gram
    or a norm of a single phase channel do not establish the required signed
    completed-current bound. The small-width signed endpoint theorem and the
@@ -897,9 +988,9 @@ the obstruction precisely rather than rename it as another RH criterion.
 ### Next estimates on the retained signed arithmetic
 
 The exact branch formulas, completed reflection defect, endpoint gain,
-linear-width summability, signed Euler error, and sublinear growth bound
-for the actual weighted return are now proved. Uniform control of the
-surviving endpoint contribution remains open. The next targets are
+linear-width summability, signed principal errors, and matching conditional
+off-critical power bounds for the actual weighted return are now proved.
+Excluding the surviving off-critical endpoint contribution remains open. The next targets are
 **proposed work**, not assumptions to add to the proof chain.
 
 1. Seek an arithmetic relation constraining the explicit endpoint
@@ -908,8 +999,8 @@ surviving endpoint contribution remains open. The next targets are
    mixed phase matrix must identify the actual finite eta feature vector
    and control its dimension, scale, and compression errors. The above
    midpoint and Euler error estimates alone cannot bound `S_rho(K)`
-   independently of cutoff. The proved power bound still allows growth
-   when the actual zero is off the critical line.
+   independently of cutoff. The proved lower bound forces growth
+   under the hypothesis that the actual zero is off the critical line.
 2. Preserve the unchanged final target: partial sums of
    `(2N+1)*|J_rho(N)|` bounded uniformly in `K` for every actual zero.
    That bound would imply RH through the already checked equivalence;
