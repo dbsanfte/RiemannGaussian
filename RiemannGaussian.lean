@@ -534,3 +534,5 @@ import RiemannGaussian.EtaCompletedGapReturnPairing
 import RiemannGaussian.EtaIntegratedGapReturn
 import RiemannGaussian.EtaBroadGapReturn
 import RiemannGaussian.EtaLeadingCurrentReconstruction
+import RiemannGaussian.EtaGapReturnMultiplier
+import RiemannGaussian.EtaCurrentReconstructionError

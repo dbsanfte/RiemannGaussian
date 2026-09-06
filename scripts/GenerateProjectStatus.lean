@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "second-order heat, signed mixed matrices, and iterated reconstruction of the completed current.</text>\n" ++
+      "second-order heat, signed matrices, and quantitative reconstruction of the completed current.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -324,8 +324,13 @@ run_cmd do
         "tilts and zero probe phases, the exact normalization 8*pi*h^2/M(a), with M(a) " ++
         "the proved positive exponential gap mass, reconstructs the endpoint-damped " ++
         "current as h tends to infinity. Removing the tilt then recovers the original " ++
-        "leading flux at each fixed zero and cutoff. Uniform arithmetic estimates and " ++
-        "passage through the cutoff-weighted absolute series remain open. The broad " ++
+        "leading flux at each fixed zero and cutoff. The exact normalized gap multiplier " ++
+        "and its signed defect integral now give the quantitative error " ++
+        "B_N*[a*L_N+(M2(a)/M(a)+2*L_N^2)/h^2], where B_N is the actual absolute " ++
+        "completed-kernel mass and L_N=log(2*N+5) bounds both physical times. The actual " ++
+        "second gap moment is at most 2/a^3, and for 0<a<=1 its normalized ratio is at " ++
+        "most 2/(M(1)*a^3), with M(1)>0 proved. Growth control for B_N, the signed " ++
+        "arithmetic bound, and passage through the cutoff-weighted absolute series remain open. The broad " ++
         "heat reconstruction does not identify a bound from the small-width signed law. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
