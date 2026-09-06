@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "phase coercivity, spectral identity, and controlled finite cutoffs.</text>\n" ++
+      "phase coercivity, spectral identity, and complex weighted boundary limits.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -282,7 +282,10 @@ run_cmd do
         "continuous support/gap transfer is exactly the literal eta/gap spectral " ++
         "correlation, with both Fubini exchanges and normalization checked. Independent " ++
         "finite cutoff errors, half-tilted commutator kernel norms, mixed phase inner " ++
-        "products, and critical limits are also checked. These " ++
+        "products, and critical limits are also checked. The critical boundary law " ++
+        "now retains bounded Lipschitz complex tests with an explicit error, and " ++
+        "its logarithmic distribution limit is proved. The joint cubic-phase and " ++
+        "moving-tilt heat limit remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[

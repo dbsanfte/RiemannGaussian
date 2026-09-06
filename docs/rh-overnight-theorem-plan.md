@@ -46,9 +46,21 @@ and the mixed phase inner products with the same normalization.
 including arbitrary width-dependent ordinates, the logarithmic finite
 cutoff, and entrywise convergence of the full fixed phase matrix.
 
-The core targets through (7) are implemented. Still outstanding: the
-moving-tilt/cubic scaling target (8) and the review of a quantitative
-application to the completed signed leading flux.
+The fifth slice supplies the weighted arithmetic input for (8).
+`EtaLogBoundaryQuadrature.lean` compares complex harmonic sums with
+logarithmic integrals, and `EtaLogWeightedBoundary.lean` transfers this to
+the actual eta support, retaining its exact complex tail. For any complex
+test bounded by `B` with Lipschitz constant `K`, it proves
+`|W(r,R,F) - r integral_0^log(1/r) F(t/R) dt|`
+`<= r (12 B + 4 K log(1/r)/R)` on `0 < r <= 1/8`, `R > 0`.
+`EtaLogWeightedBoundaryLimit.lean` proves the normalized boundary distribution
+converges to `integral_0^1 F`, including `r = v exp(-R)` for every fixed
+`v > 0`. The complex test is not replaced by its modulus.
+
+The core targets through (7) and this weighted input are implemented. Still
+outstanding: substituting the moving tilt and cubic phase, justifying the
+Gaussian dominated limit in (8), its finite mixed matrix limit, and the
+review of a quantitative application to the completed signed leading flux.
 No RH or improved-proportion milestone follows from these auxiliary results.
 
 **Recommendation:** make Gaussian heat on the literal eta support quantitative,

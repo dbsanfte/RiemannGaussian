@@ -497,3 +497,6 @@ import RiemannGaussian.EtaSupportGapGaussianPhaseBound
 import RiemannGaussian.EtaSupportGapGaussianCutoff
 import RiemannGaussian.EtaSupportGapGaussianLimit
 import RiemannGaussian.Hybrid.EtaSupportGapHeatCommutator
+import RiemannGaussian.EtaLogBoundaryQuadrature
+import RiemannGaussian.EtaLogWeightedBoundary
+import RiemannGaussian.EtaLogWeightedBoundaryLimit
