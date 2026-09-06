@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "phase/matrix limits and the polynomial-phase complex finite part.</text>\n" ++
+      "phase/matrix limits, second-order polynomial heat, and signed reflection.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -305,7 +305,12 @@ run_cmd do
         "comparison error is at most h*exp(4*abs(lambda))*" ++
         "[v^2*(abs(beta)+abs(alpha)*(6+v))/R+3*h]. The complex test retains an explicit " ++
         "Lipschitz constant linear in abs(v) and its exact reflection identity. " ++
-        "Gaussian domination after subtraction and signed heat/matrix laws remain targets. " ++
+        "Gaussian domination after subtraction is now proved for the actual damped complex " ++
+        "finite part, with a global cubic polynomial majorant. The complete second-order " ++
+        "polynomial heat law evaluates its endpoint coefficient using the logarithmic " ++
+        "Gaussian cosine moment. Exact leading-profile reflection then proves the signed " ++
+        "limit J(kappa)-exp(-2*lambda)*J(kappa+beta+3*alpha). The full mixed signed matrix " ++
+        "and completed-current pairing audit remain targets. " ++
         "The signed-flux application review " ++
         "identifies the missing completed kernel identity and uniform estimates. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++

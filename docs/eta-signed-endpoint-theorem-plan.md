@@ -17,8 +17,8 @@ averaging or second-order asymptotic premise qualifies as implementation.
 | Part | Checked result | Remaining work |
 | --- | --- | --- |
 | 1. Actual arithmetic overlap | [Exact eta/periodic-colour identity](../RiemannGaussian/EtaAlternatingReal.lean), [real-scale cell and primitive estimates](../RiemannGaussian/EtaOverlapAveraging.lean), [Wallis integral](../RiemannGaussian/EtaOverlapWallis.lean), [quantitative infinite-tail evaluation](../RiemannGaussian/EtaOverlapTail.lean), and [exact transport back to the logarithmic eta tail](../RiemannGaussian/EtaLogTailWallis.lean). | Complete for the scalar arithmetic tail; retain it as input to the weighted law. |
-| 2. Two-endpoint finite part | [Scalar finite part](../RiemannGaussian/EtaLogFinitePart.lean), [uniform harmonic quadrature](../RiemannGaussian/EtaLogBoundaryFinitePart.lean), [weighted-tail freezing](../RiemannGaussian/EtaLogWeightedTail.lean), [cutoff decomposition](../RiemannGaussian/EtaLogWeightedEndpoint.lean), [uniform fixed-endpoint remainder](../RiemannGaussian/EtaLogTwoEndpoint.lean), and [full complex two-endpoint limit with scale offset](../RiemannGaussian/EtaLogTwoEndpointLimit.lean). | Complete. The Gaussian application must still prove the stronger phase comparison and domination after subtraction. |
-| 3. Signed heat reflection | [Reflection-closed complex polynomial test with explicit Lipschitz bound](../RiemannGaussian/EtaPolynomialBoundaryTest.lean), [exact phase increment and refined remainder](../RiemannGaussian/EtaPolynomialPhaseIncrement.lean), and [actual complex displacement finite part](../RiemannGaussian/EtaPolynomialMismatchFinitePart.lean). | Prove Gaussian domination after subtraction and the second-order heat law, then cancel the leading profiles by reflection. |
+| 2. Two-endpoint finite part | [Scalar finite part](../RiemannGaussian/EtaLogFinitePart.lean), [uniform harmonic quadrature](../RiemannGaussian/EtaLogBoundaryFinitePart.lean), [weighted-tail freezing](../RiemannGaussian/EtaLogWeightedTail.lean), [cutoff decomposition](../RiemannGaussian/EtaLogWeightedEndpoint.lean), [uniform fixed-endpoint remainder](../RiemannGaussian/EtaLogTwoEndpoint.lean), and [full complex two-endpoint limit with scale offset](../RiemannGaussian/EtaLogTwoEndpointLimit.lean). | Complete; the actual second-order Gaussian application is now checked in part 3. |
+| 3. Signed heat reflection | [Actual polynomial-phase finite part](../RiemannGaussian/EtaPolynomialMismatchFinitePart.lean), [global bound after subtraction](../RiemannGaussian/EtaWeightedFinitePartBound.lean), [damped complex domination and limit](../RiemannGaussian/EtaPolynomialFinitePartDomination.lean), [logarithmic endpoint profile](../RiemannGaussian/EtaPolynomialHeatProfile.lean), [full second-order heat law](../RiemannGaussian/EtaPolynomialHeatFinitePart.lean), and [signed reflection](../RiemannGaussian/EtaPolynomialHeatReflection.lean). | Complete. Preserve the signed law in every mixed matrix entry. |
 | 4. Full mixed matrix | Not yet proved. | Apply the second-order law to every mixed entry, preserving the signed endpoint decomposition and any dimension cost. |
 | 5. Completed-current audit | The [previous review](rh-overnight-signed-flux-review.md) identifies a support mismatch and missing completion/moment estimates. | Audit one exact proposed pairing with the new signed heat object. A remaining conjecture-strength estimate must be left open explicitly. |
 
@@ -89,9 +89,9 @@ The critical case and the exponential parametrization are separate compiled
 corollaries. In particular,
 `pairedEtaWeightedMismatch_exp_scaled_finite_part_tendsto` retains the
 `-log(v)` upper-endpoint term for every fixed `v > 0` when
-`r = exp(-R)*v`. These complete parts 1 and 2. The actual phase comparison at scale `h` is now also proved, as detailed
-below. Gaussian domination after subtraction remains part 3; it does not
-follow from the old first-order heat limit alone.
+`r = exp(-R)*v`. These complete parts 1 and 2. The actual phase comparison at scale `h` and Gaussian domination after
+subtraction are now proved, as detailed below. They use quantitative error
+bounds, rather than subtracting two first-order limits.
 
 ## 1. Arithmetic averaging on the actual carrier
 
@@ -207,8 +207,24 @@ proves the actual complex displacement finite part for every fixed `v > 0`.
 The extension has the explicit Lipschitz constant
 `exp(4*abs(lambda)) * (2*abs(lambda) + abs(v)*(abs(b)+12*abs(alpha)))`.
 The exact test reflection is
-`pairedEtaPolynomialBoundaryTest_reflection`. Gaussian domination of the
-subtracted expression and the heat reflection limit remain unproved targets.
+`pairedEtaPolynomialBoundaryTest_reflection`.
+
+The complete Gaussian passage is now proved. The global weighted majorant
+`norm_pairedEtaWeightedMismatch_finite_part_le` holds for every `v > 0`,
+including the region `exp(-R)*v > 1/8`. Combining it with the phase error and
+moving damping gives an explicit cubic polynomial majorant, integrable
+against the heat Gaussian. The full complex damped finite part is retained
+upstream of its real projection. The logarithmic Gaussian moment is proved
+integrable even at zero, and its exact signed contribution is evaluated.
+
+The terminal theorem
+`pairedEtaSupportGapGaussianLeakage_polynomial_finite_part_tendsto` proves
+the second-order heat law in the original positive width. The leading
+profile reflection is an exact integral identity. Consequently
+`pairedEtaSignedPolynomialHeat_tendsto` proves the signed endpoint limit
+above. These complete part 3; no positivity is inferred for this signed
+combination, and the xi completion multiplier has not been substituted by
+the logarithmic reflection weight.
 
 ## 4. Mixed matrix and 5. completed-current audit
 
