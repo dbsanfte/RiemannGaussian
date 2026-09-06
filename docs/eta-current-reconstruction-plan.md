@@ -36,6 +36,8 @@ the objective.
 | Control the completed absolute kernel masses across cutoffs | The actual measure bounds in [EtaFiniteCurrentMeasureBounds.lean](../RiemannGaussian/EtaFiniteCurrentMeasureBounds.lean), completed envelopes in [EtaCurrentKernelEnvelope.lean](../RiemannGaussian/EtaCurrentKernelEnvelope.lean), and `pairedEtaLeadingCurrentAbsoluteKernelMass_le` in [EtaCurrentKernelMass.lean](../RiemannGaussian/EtaCurrentKernelMass.lean). | Proved with an explicit completion-dependent constant and logarithmic-over-cutoff bound. |
 | Choose simultaneous heat and tilt parameters with summable weighted reconstruction error | `pairedEtaLeadingCurrentScheduledGapReturn_weighted_error_le` in [EtaCurrentReconstructionSchedule.lean](../RiemannGaussian/EtaCurrentReconstructionSchedule.lean) and the summability and finite-prefix stability theorems in [EtaCurrentWeightedReconstruction.lean](../RiemannGaussian/EtaCurrentWeightedReconstruction.lean). | Proved with a schedule independent of the zero and a finite completion- and multiplicity-dependent error budget. |
 | Compare the actual continuous gap return with composed Gaussian heat | Full-line composition in [EtaTiltedHeatComposition.lean](../RiemannGaussian/EtaTiltedHeatComposition.lean) and `pairedEtaLeadingCurrentIntegratedGapReturn_eq_composed_sub_corrections` in [EtaCurrentFullHeatComparison.lean](../RiemannGaussian/EtaCurrentFullHeatComparison.lean). | Proved with both support and nonpositive-time corrections; all three-time integrals converge even at zero tilt. No cancellation estimate follows from the identity alone. |
+| Reconstruct at zero tilt with controlled actual-gap normalization | Arithmetic balance in [EtaDecreasingGapMass.lean](../RiemannGaussian/EtaDecreasingGapMass.lean), Gaussian mass and translation bounds in [EtaGaussianGapMass.lean](../RiemannGaussian/EtaGaussianGapMass.lean), exact multiplier in [EtaZeroTiltGapMultiplier.lean](../RiemannGaussian/EtaZeroTiltGapMultiplier.lean), and the two completed branches in [EtaZeroTiltCurrentReconstruction.lean](../RiemannGaussian/EtaZeroTiltCurrentReconstruction.lean). | Proved using the entire actual gap, without extending the positive-tilt Laplace normalization to zero. |
+| Preserve the weighted frontier with zero tilt and quadratic width | `summable_oddEndpoint_mul_norm_pairedEtaLeadingCurrentZeroTiltScheduledReturn_error` and `pairedEtaLeadingCurrentZeroTiltScheduledReturn_firstMoment_stability` in [EtaZeroTiltWeightedReconstruction.lean](../RiemannGaussian/EtaZeroTiltWeightedReconstruction.lean). | Proved at width `2(N+1)²`, with explicit finite error budget and no exponential tilt amplification. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -282,8 +284,88 @@ full-line envelope factor on the existing reconstruction schedule as
 discarding the signed correction balance does not produce the desired
 estimate. The new zero-tilt integrability removes this amplification at the
 kernel-composition level, but the old Laplace-mass normalization applies only
-at positive tilt. Any zero-tilt reconstruction must instead prove its own
-actual-gap Gaussian normalization and weighted error bound.
+at positive tilt. A separate actual-gap Gaussian normalization and weighted
+error bound are now proved below.
+
+## Checked zero-tilt reconstruction
+
+For a nonnegative decreasing function integrable on positive time,
+consecutive logarithmic unit intervals carry decreasing mass. Summing the
+actual alternating support and gap intervals gives
+
+\[
+ \int_{\mathrm{gap}}f\le\int_{\eta}f
+ \le\int_0^{\log2}f+\int_{\mathrm{gap}}f.
+\]
+
+The theorem `pairedEta_decreasing_gap_mass_bounds` retains genuine
+integrability and bounds the first interval by `log(2)*f(0)`. For `h>0`, define
+`g_h(c)=integral_gap K_h(w-c) dw`. The Gaussian specialization proves
+
+\[
+ \frac14-\frac{\log2}{4\sqrt\pi h}\le g_h(0)\le\frac14,
+ \qquad g_h(0)\ge\frac18\quad(h\ge2).
+\]
+
+Every translated mass is positive and at most one. Its shift estimate is
+
+\[
+ |g_h(c)-g_h(0)|\le\frac{3c}{2\sqrt\pi h}\qquad(c\ge0).
+\]
+
+The proof compares the absolute Gaussian translation error with
+`K_h(w-c)+K_h(w)-2K_h(w+c)` on positive time. Its integral is exactly
+three times `integral_0^c K_h`. Domination of the actual gap measure by
+positive-time volume then proves the bound; the gap is never assumed
+translation invariant or replaced by a density model.
+
+Normalize the existing zero-tilt full-gap return by
+`A_h=4*sqrt(pi)*h/g_h(0)`. Lean proves `0<A_h<=32*sqrt(pi)*h` for `h>=2`.
+The exact normalized slice is
+
+\[
+ Q_h(t,u)=e^{-(u-t)^2/(16h^2)}\frac{g_h((t+u)/2)}{g_h(0)}.
+\]
+
+`integral_fullTwoHeat_zero_phase_gap_normalized` connects this formula to
+the existing two-transition kernel. Its multiplier is positive, at most
+eight, and jointly measurable. For physical endpoints in `[0,L]`,
+`pairedEtaZeroTiltGapMultiplier_window_error_le` proves
+
+\[
+ |Q_h(t,u)-1|\le\frac{13(1+L)^2}{h}.
+\]
+
+Fubini retains the exact signed current integral against `Q_h-1`.
+`pairedEtaLeadingCurrentZeroTiltGapReturn_error_le` applies the bound to
+both unchanged multiplicity carriers, including the restored head time.
+Only the added probe phases are zero; the original ordinate phase and
+completion difference remain inside the current.
+
+Set `h_N=2(N+1)²` and write `R_N^0` for this normalized return. The actual
+mass bound above now gives
+
+\[
+ \|R_N^0-J_\rho(N)\|\le\frac{13C_\rho}{2}
+ \frac{b_N^{2m+2}}{(N+1)^3},\qquad
+ (2N+1)\|R_N^0-J_\rho(N)\|\le13C_\rho
+ \frac{b_N^{2m+2}}{(N+1)^2}.
+\]
+
+The existing logarithmic-series theorem proves summability of the weighted
+norm errors and the signed complex errors. With the finite budget
+`E_rho^0=13*C_rho*sum_N b_N^(2m+2)/(N+1)^2`, Lean proves
+
+\[
+ \left|\sum_{N<K}(2N+1)\|R_N^0\|-S_\rho(K)\right|\le E_\rho^0
+ \quad\text{for every }K.
+\]
+
+This removes the previous tilt-amplification obstruction while retaining
+the entire arithmetic gap. It bounds the reconstruction error, not either
+first absolute moment. A norm bound on the positive multiplier alone still
+gives only the insufficient absolute kernel-mass scale; a new use of the
+zero equation and signed completion symmetry is needed.
 
 ## Next mathematical obligations
 
@@ -327,7 +409,7 @@ to add to Lean:
 
 | Step | Existing input | Concrete target and acceptance condition |
 | --- | --- | --- |
-| Compare ordered heat compositions on the actual domain | The exact continuous composition and full three-time integrability above. | The two-transition identity is now proved, with support and nonpositive-time corrections. The next estimate must preserve their cancellation against the composed term. At zero tilt, first prove a valid actual-gap Gaussian normalization if that specialization is used for reconstruction. |
+| Compare ordered heat compositions on the actual domain | The exact continuous composition, full three-time integrability, and new zero-tilt weighted reconstruction above. | The normalization and reconstruction error are now controlled with quadratic width. The next estimate must preserve cancellation of the signed completed current against the composed term and both corrections. |
 | Keep all support/gap paths | The actual two-transition decomposition above, the finite two-stage identity in [ProjectionHeatLeakage](../RiemannGaussian/Hybrid/ProjectionHeatLeakage.lean), and ordered cubic paths in [EtaSpectralHeatCubicPaths](../RiemannGaussian/Hybrid/EtaSpectralHeatCubicPaths.lean). | For any longer-path comparison, prove its identities on the actual continuous eta measure and pair every path with both completed current branches. Include every omitted-time and compression term with its sign. The existing finite matrix algebra alone is insufficient. |
 | Test a quantitative scale comparison | The signed two-endpoint heat law, full mixed phase matrix, and the new reconstruction error budget. | Derive an estimate for the actual signed return with cutoff, phase-family size, moving tilt, multiplicity, and accumulated path error explicit. A sufficient endpoint would be a summable majorant for `(2N+1)‖R_N‖`; the exact target is a bound on its partial sums uniform in `K`. |
 
@@ -338,6 +420,42 @@ themselves. In particular, fixed moving-tilt asymptotics do not control a
 fixed off-axis zero: their tilt parameter grows with the logarithmic scale.
 If no estimate survives these dependencies, the next result should state
 the obstruction precisely rather than rename it as another RH criterion.
+
+### A concrete next overnight experiment in Lean
+
+The new normalization suggests a more specific use of the repository's
+evaluated Wallis constants. These are **proposed targets**, not results or
+assumptions to add to the theorem chain. Write `ell=log(pi/2)`.
+
+1. Prove a quantitative Wallis limit for the literal cumulative colour
+   imbalance `A(t)=integral_0^t (indicator_support-indicator_gap)`.
+   The target is `|A(t)-ell| <= C*exp(-t)` for `t>=0`, with a proved
+   universal constant. The existing periodic colour and Wallis proofs
+   supply arithmetic building blocks; this cumulative statement still
+   needs its own proof.
+2. Integrate that exact primitive against the Gaussian derivative. The
+   candidate broad-width expansion, uniform for `c>=0` and `h>=2`, is
+   `g_h(c)=1/4+(c-ell)/(4*sqrt(pi)*h)+O((1+c)^3/h^3)`, with an explicit
+   remainder bound replacing the `O` notation in Lean. This would connect
+   the evaluated eta endpoint constant to the new full-gap normalization.
+3. Carry the expansion through the original signed current before taking
+   norms. Its candidate first correction is
+   `R_rho,N(h)-J_rho(N) = M_rho,N/(sqrt(pi)*h) + error`, where
+   `M_rho,N` is the actual current integral against `(t+u)/2`, using the
+   restored head coordinate when necessary. Express this moment in the
+   existing finite eta moments and apply only the vanishing identities
+   justified by the actual zero's multiplicity. Determine whether the
+   completed reflected channels cancel a term that a positive Gram loses.
+
+This session has a clear decision point: either the signed moment gives
+an arithmetic gain beyond the current absolute envelope, or the calculation
+identifies a surviving term. In the latter case, a checked two-width
+subtraction `2*R(2h)-R(h)` could remove the first heat correction, but that
+would improve reconstruction only. It would not count as progress on the
+uniform weighted current bound without an independent estimate on the
+resulting signed return. Broader claims of novelty require comparison with
+the literature; Gaussian asymptotics and operator positivity by themselves
+are established techniques.
 
 No reconstruction or summability premise has been introduced as an axiom.
 The goal remains open because the uniform weighted arithmetic estimate is

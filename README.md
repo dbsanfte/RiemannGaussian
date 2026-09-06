@@ -27,26 +27,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-The actual completed eta gap return now has an exact continuous heat-composition formula: broader Gaussian minus the eta-support return and a nonpositive-time correction. All terms are integrable, including at zero tilt, with phase, completion, and multiplicity retained. Weighted reconstruction error is already summable. The open task is to estimate this signed combination uniformly across arithmetic cutoffs.
+Combine the actual eta interval geometry, phase probes, and continuous Gaussian gap returns to estimate the signed completed current. A proved full-gap normalization now gives summable weighted reconstruction error at zero tilt with quadratic heat width. Completion, multiplicity, and the translated head remain intact. The open task is a uniform weighted bound on the signed return itself.
 
 ## Latest Update
 
-Two equal-width tilted heat transitions now have their exact continuous
-composition, including the factor `exp(a²h²−a(t+u))` and the common endpoint
-phase. The actual completed-current gap return is exactly that broader
-Gaussian pairing minus two named corrections: the eta-support return and
-the nonpositive-time integral. Both original multiplicity branches retain
-their completion factors and the restored physical head coordinate.
+The actual alternating eta intervals now give a quantitative Gaussian gap
+mass: it lies between `1/4 − log(2)/(4√πh)` and `1/4`, and is at least `1/8`
+for `h≥2`. Its proved translation bound supplies a valid zero-tilt
+normalization and a uniform multiplier error `13(1+L)²/h` on the physical
+window `[0,L]`. See the [gap mass](RiemannGaussian/EtaGaussianGapMass.lean)
+and [exact multiplier](RiemannGaussian/EtaZeroTiltGapMultiplier.lean).
 
-Every integral converges absolutely for `a≥0` and `h>0`, so zero tilt is now
-available before normalization. The existing positive-tilt normalization
-cannot simply be evaluated at zero. See the
-[heat composition](RiemannGaussian/EtaTiltedHeatComposition.lean),
-[actual current comparison](RiemannGaussian/EtaCurrentFullHeatComparison.lean),
+With width `h_N=2(N+1)²`, both original completed-current branches now have
+summable odd-weighted reconstruction error. Their first absolute moments
+and those of the normalized return differ by one explicit finite budget.
+This uses the entire actual gap and removes the tilt amplification from
+continuous composition. The signed return itself still needs a uniform
+weighted arithmetic bound. See the
+[weighted reconstruction](RiemannGaussian/EtaZeroTiltWeightedReconstruction.lean)
 and [current theorem plan](docs/eta-current-reconstruction-plan.md).
-The signed combination still needs a uniform weighted arithmetic estimate;
-the already proved summable reconstruction error supplies the final
-transport to the original current once that estimate is established.
 RH remains open. No `13/18` certificate exists.
 
 ## Notable Formalisations
@@ -79,6 +78,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Completed arithmetic kernel masses** | Both actual multiplicity carriers have an absolute kernel-mass bound `Cρ(1+log(2N+5))^(2m)/(N+1)`, with the two completion weights and horizontal coordinates explicit. It supplies the mass factor in the quantitative reconstruction error. | [pairedEtaLeadingCurrentAbsoluteKernelMass_le](RiemannGaussian/EtaCurrentKernelMass.lean), [pairedEtaLeadingCurrentNormalizedGapReturn_error_le_arithmetic](RiemannGaussian/EtaCurrentKernelMass.lean) |
 | **Summable weighted current reconstruction** | One simultaneous heat/tilt schedule gives a summable odd-weighted error for the actual completed current. Its complex error series converges, and the finite first absolute moments of return and current differ by a single proved finite bound. | [summable_oddEndpoint_mul_norm_pairedEtaLeadingCurrentScheduledGapReturn_error](RiemannGaussian/EtaCurrentWeightedReconstruction.lean), [pairedEtaLeadingCurrentScheduledGapReturn_firstMoment_stability](RiemannGaussian/EtaCurrentWeightedReconstruction.lean) |
 | **Actual continuous heat composition** | The completed gap return equals the explicitly composed broader Gaussian minus its support and nonpositive-time corrections. Full three-time convergence holds even at zero tilt; arbitrary ordered phases remain available before the common-phase composition is evaluated. | [integrable_leadingCurrent_fullTwoHeat_prod](RiemannGaussian/EtaCurrentFullHeatComparison.lean), [pairedEtaLeadingCurrentIntegratedGapReturn_eq_composed_sub_corrections](RiemannGaussian/EtaCurrentFullHeatComparison.lean) |
+| **Zero-tilt weighted current reconstruction** | Arithmetic interval balance bounds the full Gaussian gap mass away from zero. Its exact midpoint multiplier reconstructs both original current branches with summable odd-weighted error at width `2(N+1)²`, retaining a finite first-moment stability budget. | [pairedEtaGaussianGapMass_zero_bounds](RiemannGaussian/EtaGaussianGapMass.lean), [pairedEtaLeadingCurrentZeroTiltScheduledReturn_firstMoment_stability](RiemannGaussian/EtaZeroTiltWeightedReconstruction.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 

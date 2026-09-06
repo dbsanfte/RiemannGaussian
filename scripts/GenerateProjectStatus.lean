@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "signed matrices, weighted reconstruction, and exact continuous composition with both corrections.</text>\n" ++
+      "signed matrices, exact continuous composition, and weighted zero-tilt reconstruction on the full gap.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -346,7 +346,16 @@ run_cmd do
         "the gap return subtracts both the actual eta-support return and the nonpositive-time " ++
         "correction. Both completed multiplicity carriers have full three-time integrability " ++
         "for a>=0 and h>0, including zero tilt, with arbitrary ordered phases retained. " ++
-        "The positive-tilt Laplace-mass normalization is not extended to zero. The signed " ++
+        "A separate actual-gap Gaussian normalization is now proved at zero tilt. Decreasing " ++
+        "test masses on consecutive logarithmic intervals bound the gap mass g_h(0) between " ++
+        "1/4-log(2)/(4*sqrt(pi)*h) and 1/4, hence by at least 1/8 for h>=2. " ++
+        "The actual translated gap mass has error at most 3*c/(2*sqrt(pi)*h) for c>=0. " ++
+        "Normalization 4*sqrt(pi)*h/g_h(0) retains the exact midpoint multiplier and " ++
+        "gives error at most 13*(1+L)^2/h on the physical window. With zero tilt and " ++
+        "h_N=2*(N+1)^2, both actual completed-current branches have weighted error at most " ++
+        "13*C_rho*(1+log(2*N+5))^(2*m+2)/(N+1)^2. Its series is summable, and " ++
+        "the first absolute moments differ by the explicit finite budget obtained from " ++
+        "that majorant. No exponential tilt amplification enters this schedule. The signed " ++
         "correction balance still needs a quantitative estimate; the small-width signed law " ++
         "does not supply one through composition alone. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
