@@ -46,6 +46,7 @@ the objective.
 | Estimate the retained signed arithmetic against explicit endpoint terms | Complex prefix and pair errors in [EtaCurrentEulerMoments.lean](../RiemannGaussian/EtaCurrentEulerMoments.lean) and [EtaCurrentEulerPairs.lean](../RiemannGaussian/EtaCurrentEulerPairs.lean); elementary head and positive adjacent coefficients in [EtaCurrentEulerArithmetic.lean](../RiemannGaussian/EtaCurrentEulerArithmetic.lean); `pairedEtaLeadingCurrentLinearHeatReturn_euler_error_sum_le` in [EtaCurrentEulerEstimate.lean](../RiemannGaussian/EtaCurrentEulerEstimate.lean). | Proved with summable weighted error in both actual branches. The endpoint expression itself still requires an independent weighted bound. The repeated-zero contribution has no cutoff Fourier oscillation. |
 | Bound the original return's weighted moment as the cutoff grows | The two-factor estimate in [EtaCurrentArithmeticEnvelope.lean](../RiemannGaussian/EtaCurrentArithmeticEnvelope.lean), the finite power-sum comparison in [EtaCurrentPowerSum.lean](../RiemannGaussian/EtaCurrentPowerSum.lean), and `pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_growth_le` in [EtaCurrentReturnGrowth.lean](../RiemannGaussian/EtaCurrentReturnGrowth.lean). | Proved with explicit growth `C_rho*(K+1)^abs(2*Re(rho)-1)` and exact treatment of the critical line. The exponent is below one, and the cutoff-normalized moment tends to zero. A cutoff-independent bound remains open. |
 | Couple actual completed eta tails across multiplicatively divided cutoffs | `sum_moebius_mul_pairedEtaCorePartialSum_add_endpoint` in [EtaMoebiusFinitePrefix.lean](../RiemannGaussian/EtaMoebiusFinitePrefix.lean) and `pairedEtaCompletedMoebiusTailAggregate_eq_source` in [EtaMoebiusCompletedTail.lean](../RiemannGaussian/EtaMoebiusCompletedTail.lean). | Proved at every actual zero and every integer cutoff at least two, with all odd endpoint corrections and complex Möbius weights. The resulting linear constraint has no proved quadratic-current bound yet. |
+| Bound both complete parity aggregates and their signed block sums | Exact halved-cutoff identities in [EtaMoebiusParityRecurrence.lean](../RiemannGaussian/EtaMoebiusParityRecurrence.lean), `norm_pairedEtaCompletedMoebiusOddAggregate_le` in [EtaMoebiusParityBound.lean](../RiemannGaussian/EtaMoebiusParityBound.lean), and `norm_pairedEtaSignedCompletedMoebiusParityBlock_le` in [EtaMoebiusParityBlocks.lean](../RiemannGaussian/EtaMoebiusParityBlocks.lean). | Proved uniformly in the physical cutoff, with every divisor and both completion channels retained. These are norms of block sums; a bound for the original weighted absolute return does not follow yet. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -1222,14 +1223,106 @@ proved Euler error and a finite parity identity; no external analytic
 premise was added. Priority for the combined auxiliary mathematics has
 not been established.
 
+### Global parity recurrences and uniform block bounds
+
+The growing zeroth-order divisor family is now controlled at each physical
+cutoff by an exact recurrence, rather than by summing fixed-pair error
+bounds. The source object is unchanged:
+
+\[
+ F_{\rho,M}(d)=\mu(d)d^{-\rho}X_\rho
+ E_{\lfloor M/d\rfloor}(\rho),\qquad
+ O_\rho(M)=\sum_{\substack{1\le d\le M\\d\text{ odd}}}F_{\rho,M}(d),
+ \quad E_\rho(M)=\sum_{\substack{1\le d\le M\\d\text{ even}}}F_{\rho,M}(d).
+\]
+
+Here the unpaired prefix in the first expression is still exactly the
+negative actual completed tail plus its possible odd endpoint, with the
+original completion factor. The symbol `E_rho(M)` in the last expression
+denotes the even aggregate, not that prefix. Put
+`r_rho = 2^(-rho)` and `C_rho = X_rho*(1-2*r_rho)`.
+
+`pairedEtaCompletedMoebiusEvenAggregate_eq_half_odd` and
+`pairedEtaCompletedMoebiusOddAggregate_recurrence` prove the exact
+complex identities
+
+\[
+ E_\rho(M)=-r_\rho O_\rho(\lfloor M/2\rfloor),\qquad
+ O_\rho(M)=C_\rho+r_\rho O_\rho(\lfloor M/2\rfloor)\quad(M\ge2).
+\]
+
+The initial values are `O_rho(0)=0` and `O_rho(1)=X_rho`. The proof uses
+the checked coefficient identity
+`mu(2*d) = if Odd d then -mu(d) else 0` and a bijection of the entire
+even divisor set with the halved cutoff. All endpoints and complex phases
+survive these steps. The full finite Möbius source identity supplies the
+second recurrence.
+
+Since `a_rho = |r_rho| = 2^(-Re rho) < 1`, define the explicit finite
+constant
+
+\[
+ B_\rho=|X_\rho|+\frac{|C_\rho|}{1-a_\rho}.
+\]
+
+The terminal theorems `norm_pairedEtaCompletedMoebiusOddAggregate_le`
+and `norm_pairedEtaCompletedMoebiusEvenAggregate_le` prove, for every
+natural cutoff including zero,
+
+\[
+ |O_\rho(M)|\le B_\rho,\qquad |E_\rho(M)|\le a_\rho B_\rho.
+\]
+
+Strong induction on the cutoff applies the strict contraction at its
+halved argument. There is no divisor-dependent normalizer, period average,
+or restriction to a fixed divisor family in these bounds.
+
+For parity labels `p,q`, let `A_rho(M,p)` be the appropriate odd or even
+aggregate and `b_rho(p)` its above bound. The literal block retains
+every pair at the common physical cutoff:
+
+\[
+ Q_\rho(M;p,q)=\sum_{d\in I_p(M)}\sum_{e\in I_q(M)}
+ F_{\rho,M}(d)\overline{F_{\rho,M}(e)}.
+\]
+
+`pairedEtaCompletedMoebiusParityBlock_eq_pair` identifies this with
+`A_rho(M,p)*conj(A_rho(M,q))` before applying any norm. The theorem
+`norm_pairedEtaCompletedMoebiusParityBlock_le` bounds all four block
+sums by `b_rho(p)*b_rho(q)`, including the same-parity interactions.
+For the original signed reflected kernel,
+`pairedEtaSignedCompletedMoebiusParityBlock_eq_channels` retains the
+partner block minus the conjugate original block. The terminal estimate
+`norm_pairedEtaSignedCompletedMoebiusParityBlock_le` gives
+
+\[
+ |Q^{\mathrm{signed}}_\rho(M;p,q)|\le
+ b_{\rho^*}(p)b_{\rho^*}(q)+b_\rho(p)b_\rho(q).
+\]
+
+These are uniform bounds on the **sums of the full blocks**, not sums of
+the absolute values of their entries or bounds for arbitrary
+divisor-dependent feature vectors. They also do not sum over physical
+cutoffs with the original current's weights. They hold throughout
+`0 < Re rho < 1`, so the estimate itself does not exclude an off-critical
+zero. The existing conditional power-growth theorem for the original
+return remains compatible with them. A proved estimate recovering the
+original current from the retained divisor data is still missing,
+including the higher centered moments and the simple-zero head. The
+contraction and finite inversion are classical arithmetic; no priority
+claim is made for their application here.
+
 ## Next mathematical obligations
 
-1. Extend the proved odd/even divisor cancellation toward a bound on
-   the original completed current. Account quantitatively for the
-   divisor-dependent endpoint normalizers, the growing divisor range,
-   and the increasing averaging period. The same-parity interactions
-   and higher centered orders are not controlled by the new zeroth-order
-   estimate. The earlier diagonal bound has a complementary correlation
+1. Prove an estimate controlling the original completed current from
+   the retained divisor data. The entire odd and even aggregate and all
+   four quadratic block sums now have uniform bounds at one physical
+   cutoff. The missing estimate must control the required feature
+   weights and the sum of absolute returns across cutoffs; bounded block
+   sums do not provide either. Higher centered orders and the simple-zero
+   head also remain outside this zeroth-order bound. Any use of the earlier
+   fixed-pair estimate must still account for its divisor-dependent
+   normalizers and averaging period. The earlier diagonal bound has a complementary correlation
    sum with a possible nonzero limit; that sum cannot be dropped.
    No transfer to the original weighted return is currently proved.
    All cross-cutoff terms and odd endpoint corrections must be retained. The
@@ -1299,9 +1392,12 @@ Excluding the surviving off-critical endpoint contribution remains open. The nex
 1. Seek an arithmetic estimate on the retained cross-cutoff interactions
    that controls the original completed moment pairs. Their finite
    Möbius constraint, positive diagonal bound, and odd/even fixed-pair
-   cancellation are now checked. The divisor-dependent normalizers,
-   averaging period, and product-error bound must remain in any
-   extension to the full growing matrix. Any use of the
+   cancellation are now checked, as are the uniform bounds for the whole
+   growing parity aggregates and all four signed block sums. Recovering
+   the original moment pairs from these arithmetic data requires a
+   proved estimate that retains their feature weights and cutoff sum.
+   Any use of the earlier period averages must also preserve their
+   divisor-dependent normalizers and errors. Any use of the
    mixed phase matrix must identify the actual finite eta feature vector
    and control its dimension, scale, and compression errors. The above
    midpoint and Euler error estimates alone cannot bound `S_rho(K)`

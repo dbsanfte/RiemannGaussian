@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "signed dyadic Moebius correlation estimate with divisor errors; full uniform bound open.</text>\n" ++
+      "uniform complete Moebius parity block sums; original weighted return bound open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -455,8 +455,18 @@ run_cmd do
         "The original signed completion pair retains both channel error bounds; " ++
         "its fixed-divisor period average tends to zero at every actual zero. " ++
         "The physical endpoint normalizers, divisor sizes, and period length " ++
-        "are explicit. No bound on the growing full divisor family, the higher " ++
-        "moment orders, or the original unnormalized current follows. No transfer from these quadratic aggregates " ++
+        "are explicit. A separate exact dyadic recurrence now controls the entire " ++
+        "growing divisor family at each physical cutoff: E(M)=-r*O(floor(M/2)) " ++
+        "and O(M)=C+r*O(floor(M/2)) for M>=2, with r=2^(-rho) and " ++
+        "C=X_rho*(1-2*r). Since abs(r)<1, B=norm(X_rho)+norm(C)/(1-abs(r)) " ++
+        "bounds every odd aggregate, and abs(r)*B bounds every even aggregate. " ++
+        "All four full complex parity block sums factor exactly into the " ++
+        "corresponding aggregate pairs and have cutoff-independent bounds, " ++
+        "including the original signed reflected completion channels. These " ++
+        "bounds take the norm after each whole block sum; they do not bound " ++
+        "arbitrary divisor feature weights or the original weighted cutoff sum. " ++
+        "Higher centered orders and the simple-zero head remain uncontrolled by " ++
+        "this zeroth-order arithmetic estimate. No transfer from these quadratic aggregates " ++
         "to the original current's weighted absolute moment is proved. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

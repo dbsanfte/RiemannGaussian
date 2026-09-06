@@ -584,3 +584,6 @@ import RiemannGaussian.EtaMoebiusQuadratic
 import RiemannGaussian.EtaMoebiusEndpointPhase
 import RiemannGaussian.EtaMoebiusDyadicPhase
 import RiemannGaussian.EtaMoebiusDyadicCorrelation
+import RiemannGaussian.EtaMoebiusParityRecurrence
+import RiemannGaussian.EtaMoebiusParityBound
+import RiemannGaussian.EtaMoebiusParityBlocks
