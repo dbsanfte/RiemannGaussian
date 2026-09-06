@@ -210,8 +210,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "grouped inverse Mellin phases and decaying cross-cutoff error; signed bound open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Eta support + prime positivity: explicit zero margin; " ++
+      "return exponent 1-2*delta, uniform weighted bound open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -402,8 +402,8 @@ run_cmd do
         "the finite heat budget, completion moments, multiplicity, and displacement. " ++
         "The exponent is strictly less than one, so this same actual moment divided by " ++
         "K+1 tends to zero unconditionally. Its bound without cutoff normalization " ++
-        "remains open; the exponent depends on the unknown zero position and yields " ++
-        "no new zero-location constraint. Both actual multiplicity branches now share " ++
+        "remains open; that growth estimate alone gives no zero-location constraint. " ++
+        "Both actual multiplicity branches now share " ++
         "the signed principal term delta_N*[A_partner*exp(-2*(1-sigma)*L_N)-" ++
         "A_rho*exp(-2*sigma*L_N)], with both actual completion coefficients proved " ++
         "strictly positive. The simple head differs from half the actual logarithmic " ++
@@ -426,7 +426,7 @@ run_cmd do
         "(c_floor/(2*e))*(K+1)^e and its previously proved C_rho*(K+1)^e " ++
         "upper bound, and tends to infinity under that off-critical hypothesis. " ++
         "The displacement exponent is therefore sharp for the unchanged return. " ++
-        "No contradiction excluding an off-critical zero is supplied. Classical " ++
+        "That conditional growth argument alone excludes no off-critical zero. Classical " ++
         "Moebius inversion now gives an exact finite multiplicative constraint on " ++
         "the original completed eta tails. The literal odd-even Dirichlet " ++
         "coefficients convolved with mu are supported exactly at one and two. " ++
@@ -485,7 +485,24 @@ run_cmd do
         "+norm(rho)*(2*K)^(-Re(rho))/2). Their exact sum is the original " ++
         "zeroth completed moment with its actual zero-prefix decay. This proves " ++
         "a cross-cutoff cancellation constraint; it does not exclude off-critical " ++
-        "zeros or supply the signed weighted-current bound. A weighted signed " ++
+        "zeros or supply the signed weighted-current bound. An independent arithmetic " ++
+        "input now gives an explicit zero-location bound. The literal eta mass proves " ++
+        "norm(eta(s))<=norm(s)/Re(s). On rectangles of dyadic imaginary period " ++
+        "2*pi/log(2), the factor is bounded away from zero on the boundary; maximum " ++
+        "modulus for the entire pole-removed function Z1(s) then yields " ++
+        "norm(Z1(s))<=8*(abs(Im(s))+20)^2 throughout 1/2<=Re(s)<=3/2, including " ++
+        "all interior dyadic resonances. Cauchy's estimate gives " ++
+        "norm(deriv Z1(s))<=32*(abs(Im(s))+21)^2 on 3/4<=Re(s)<=5/4. " ++
+        "Mathlib's classical three-four-one prime-product inequality, these actual " ++
+        "bounds, and reflection prove delta(Im(rho))<=Re(rho)<=1-delta(Im(rho)) " ++
+        "for every nontrivial zero, where delta(y)=min(1/4,abs(y)^5/" ++
+        "(16*3200^3*64^4*(abs(y)+21)^10)). Positivity of the original eta mass " ++
+        "rules out a zero ordinate, so this explicit margin is positive at every " ++
+        "actual zero. The original return consequently satisfies " ++
+        "S_R(rho,K)<=C_rho*(K+1)^(1-2*delta(Im(rho))) in both multiplicity " ++
+        "branches. This exponent lies in [1/2,1) and still allows cutoff growth. " ++
+        "The zero margin is deliberately weak; no improvement over classical " ++
+        "analytic zero-free regions or novelty priority is claimed. A weighted signed " ++
         "estimate and higher centered order control remain open. No uniform transfer estimate " ++
         "to the original current's weighted absolute moment is proved. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++

@@ -593,3 +593,8 @@ import RiemannGaussian.EtaCurrentMoebiusInverse
 import RiemannGaussian.EtaOddPowerQuadrature
 import RiemannGaussian.EtaOddPowerMellin
 import RiemannGaussian.EtaMoebiusGroupedInverse
+import RiemannGaussian.EtaZetaPoleBounds
+import RiemannGaussian.EtaZetaDyadicRectangle
+import RiemannGaussian.EtaZetaStripDerivative
+import RiemannGaussian.EtaZetaPrimeProduct
+import RiemannGaussian.EtaPrimeProductZeroMargin

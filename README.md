@@ -27,28 +27,30 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek an arithmetic estimate that rules out the surviving off-critical contribution to the original signed eta current. Equal-cutoff grouping now has an exact complex Mellin law: a growing inverse block is canceled by the complementary divided cutoffs with a decaying error. This preserves the necessary cross-cutoff phase information but does not bound the signed weighted return. The full uniform estimate and RH remain open.
+Use independent arithmetic constraints to exclude the off-critical contribution to the original signed eta current. The literal eta support and classical prime-product positivity now give an explicit positive zero margin from both strip edges, and an ordinate-based return-growth exponent. That exponent still permits cutoff growth. The full cutoff-independent weighted estimate and RH remain open.
 
 ## Latest Update
 
-Lean now proves **quantitative cancellation between the actual inverse
-blocks at different divided cutoffs**. At physical cutoff `4*K`, every
-odd divisor in `2*K < d <= 4*K` has divided cutoff one. Their complete
-inverse contribution has the explicit complex main term
-`X_rho*(2*K)^(1-rho)*(2^(1-rho)-1)/(2*(1-rho))`, with error at most
-`|X_rho|*|rho|*(2*K)^(-Re rho)/2`:
-[norm_pairedEtaCompletedOddInverseTop_sub_main_le](RiemannGaussian/EtaMoebiusGroupedInverse.lean).
+Lean now proves an **explicit zero-location bound for every actual
+nontrivial zeta zero** `rho = sigma + i*gamma`:
+`delta(gamma) <= sigma <= 1-delta(gamma)`, where
+`delta(t) = min(1/4, |t|^5 / (16*3200^3*64^4*(|t|+21)^10)) > 0`
+at every actual zero. The terminal theorem is
+[nontrivialZetaZero_mem_etaPrimeProduct_strip](RiemannGaussian/EtaPrimeProductZeroMargin.lean).
 
-The main coefficient is nonzero, and the norm of this whole inverse block
-grows even after all its divisor phases have been summed. The complementary
-divided cutoffs have the **opposite complex main term** with a proved
-decaying error:
-[norm_pairedEtaCompletedOddInverseBottom_add_main_le](RiemannGaussian/EtaMoebiusGroupedInverse.lean).
-Together, both blocks reconstruct the original zeroth completed moment
-with its actual zero-prefix decay. This identifies cancellation that a
-transfer estimate must preserve; it does not give the original current's
-uniform weighted bound. The [full goal](docs/eta-current-reconstruction-plan.md)
-and RH remain open. No new zero-location bound or `13/18` certificate is claimed.
+The proof combines the literal eta support bound with maximum modulus,
+Cauchy's derivative estimate, and Mathlib's classical three-four-one
+prime-product inequality. The pole-removed zeta bound holds across every
+dyadic resonance, so no division by a vanishing eta factor is assumed.
+Reflection supplies the bound at both strip edges. This is a deliberately
+weak application of the classical [prime-positivity method](https://people.math.harvard.edu/~elkies/M229.20/free.pdf); no improvement over established
+analytic zero-free regions or novelty priority is claimed.
+
+For the unchanged Gaussian return, Lean consequently proves
+`S_rho(K) <= C_rho*(K+1)^(1-2*delta(gamma))` in both multiplicity branches:
+[pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaPrimeProduct](RiemannGaussian/EtaPrimeProductZeroMargin.lean).
+The exponent remains positive. The [full goal](docs/eta-current-reconstruction-plan.md)
+still requires a bound independent of `K`; RH and the `13/18` certificate remain open.
 
 ## Notable Formalisations
 
@@ -86,6 +88,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Linear-width weighted reconstruction** | The actual midpoint gain makes the entire odd-weighted reconstruction error summable already at width `2(N+1)`. One explicit finite budget bounds every partial error sum and the difference of the original return and current's first absolute moments. | [pairedEtaLeadingCurrentLinearHeatReturn_weighted_error_le](RiemannGaussian/EtaCurrentLinearHeatSchedule.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_stability](RiemannGaussian/EtaCurrentLinearHeatReconstruction.lean) |
 | **Signed arithmetic endpoint estimate** | Both original current branches and the actual linear-width return have summable weighted error from explicit completed Euler endpoint expressions. The head evaluates exactly, and adjacent Euler products retain positive coefficients after their common Fourier phase cancels. | [pairedEtaHeadCompletedMoment_zero_eq_endpoints](RiemannGaussian/EtaCurrentEulerArithmetic.lean), [pairedEtaCurrentEulerAdjacentCoefficient_pos](RiemannGaussian/EtaCurrentEulerArithmetic.lean), [pairedEtaLeadingCurrentLinearHeatReturn_euler_error_sum_le](RiemannGaussian/EtaCurrentEulerEstimate.lean) |
 | **Sublinear weighted return bound** | The actual return's first absolute moment is at most `C_rho (K+1)^|2 Re(rho)-1|`. Both multiplicity branches and their completion constants are retained, with exact critical-line cancellation handled separately; dividing the moment by `K+1` gives a limit of zero. | [pairedEtaLeadingCurrent_weighted_le_doubleDecay](RiemannGaussian/EtaCurrentArithmeticEnvelope.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_growth_le](RiemannGaussian/EtaCurrentReturnGrowth.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_div_cutoff_tendsto_zero](RiemannGaussian/EtaCurrentReturnGrowth.lean) |
+| **Explicit eta and prime-product zero margin** | Every actual zero satisfies `delta(Im rho) <= Re rho <= 1-delta(Im rho)` for the explicit positive rational-power function above. The literal eta support bounds pole-removed zeta across dyadic resonances; Cauchy's estimate and classical prime positivity discharge the zero exclusion. It gives an ordinate-based exponent for the original return, while its uniform weighted bound remains open. | [norm_riemannZeta₁_le_etaStrip](RiemannGaussian/EtaZetaDyadicRectangle.lean), [one_le_etaPrimeProduct_zero_gap](RiemannGaussian/EtaZetaPrimeProduct.lean), [nontrivialZetaZero_mem_etaPrimeProduct_strip](RiemannGaussian/EtaPrimeProductZeroMargin.lean) |
 | **Positive principal endpoints for both multiplicities** | The actual current and return have summable weighted error from one signed difference of complementary endpoint decays, with both completion coefficients strictly positive. The simple head's complex phase correction is explicit; one finite budget controls every difference of first absolute moments. | [pairedEtaCurrentPrincipalCoefficient_pos](RiemannGaussian/EtaCurrentPrincipalEndpoints.lean), [pairedEtaCurrentHalfStepHead_mul_conj_euler](RiemannGaussian/EtaCurrentHalfStepPairs.lean), [pairedEtaLeadingCurrentLinearHeatReturn_principal_firstMoment_stability](RiemannGaussian/EtaCurrentPrincipalEndpoints.lean) |
 | **Sharp growth at a hypothetical off-critical zero** | Assuming an actual zero is off the critical line, its slower positive completion channel gives matching eventual displacement-power bounds for the original return's weighted first absolute moment. An explicit finite offset gives an all-cutoff lower bound, and the moment tends to infinity. This does not exclude such a zero. | [pairedEtaCurrentPrincipalEndpoint_eq_dominant_factor](RiemannGaussian/EtaCurrentPrincipalDominance.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_lower_with_offset](RiemannGaussian/EtaCurrentReturnSharpGrowth.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_power_bounds_eventually](RiemannGaussian/EtaCurrentReturnSharpGrowth.lean) |
 | **Finite Möbius constraints and eta phase cancellation** | Fixed odd/even divisor pairs have period cancellation, and the full parity aggregates have uniform bounds. Exact inverse weights recover the original simple-zero current. Whole inverse blocks at different divided cutoffs retain opposite explicit complex Mellin main terms with a decaying joint error; the current's uniform weighted bound remains open. | [norm_pairedEtaSignedCompletedMoebiusDyadicCorrelation_le](RiemannGaussian/EtaMoebiusDyadicCorrelation.lean), [pairedEtaLeadingCurrent_eq_oddInverse_head](RiemannGaussian/EtaCurrentMoebiusInverse.lean), [norm_pairedEtaCompletedOddInverseTop_sub_main_le](RiemannGaussian/EtaMoebiusGroupedInverse.lean), [norm_pairedEtaCompletedOddInverseBottom_add_main_le](RiemannGaussian/EtaMoebiusGroupedInverse.lean) |

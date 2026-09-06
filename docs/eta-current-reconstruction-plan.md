@@ -49,6 +49,7 @@ the objective.
 | Bound both complete parity aggregates and their signed block sums | Exact halved-cutoff identities in [EtaMoebiusParityRecurrence.lean](../RiemannGaussian/EtaMoebiusParityRecurrence.lean), `norm_pairedEtaCompletedMoebiusOddAggregate_le` in [EtaMoebiusParityBound.lean](../RiemannGaussian/EtaMoebiusParityBound.lean), and `norm_pairedEtaSignedCompletedMoebiusParityBlock_le` in [EtaMoebiusParityBlocks.lean](../RiemannGaussian/EtaMoebiusParityBlocks.lean). | Proved uniformly in the physical cutoff, with every divisor and both completion channels retained. These are norms of block sums; a bound for the original weighted absolute return does not follow yet. |
 | Recover the original simple-zero current from the parity aggregates | `pairedEtaFiniteCompletedMoment_zero_eq_oddInverse` in [EtaMoebiusParityInverse.lean](../RiemannGaussian/EtaMoebiusParityInverse.lean) and `pairedEtaLeadingCurrent_eq_oddInverse_head` in [EtaCurrentMoebiusInverse.lean](../RiemannGaussian/EtaCurrentMoebiusInverse.lean). | The exact inverse weights, divided cutoffs, and both signed head channels are proved. Their absolute weight mass has matching positive-power bounds in [EtaMoebiusInverseWeights.lean](../RiemannGaussian/EtaMoebiusInverseWeights.lean), so termwise norms do not supply a uniform transfer. |
 | Sum equal-cutoff inverse phases and retain cancellation with the complementary cutoffs | Complex midpoint control in [EtaOddPowerQuadrature.lean](../RiemannGaussian/EtaOddPowerQuadrature.lean), the nonzero Mellin coefficient in [EtaOddPowerMellin.lean](../RiemannGaussian/EtaOddPowerMellin.lean), and `norm_pairedEtaCompletedOddInverseBottom_add_main_le` in [EtaMoebiusGroupedInverse.lean](../RiemannGaussian/EtaMoebiusGroupedInverse.lean). | The full top inverse block grows after its phases are summed. The complementary block has the opposite explicit complex main term with a decaying error. Their sum is the actual zeroth completed moment; the weighted signed-current bound remains open. |
+| Obtain an independent arithmetic exclusion and transport it to the original return | `one_le_etaPrimeProduct_zero_gap` in [EtaZetaPrimeProduct.lean](../RiemannGaussian/EtaZetaPrimeProduct.lean), `nontrivialZetaZero_mem_etaPrimeProduct_strip`, and `pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaPrimeProduct` in [EtaPrimeProductZeroMargin.lean](../RiemannGaussian/EtaPrimeProductZeroMargin.lean). | Every actual zero lies between the explicit positive margins `delta(Im rho)` and `1-delta(Im rho)`. The original return is bounded by `C_rho*(K+1)^(1-2*delta(Im rho))`. The exponent remains positive; the uniform weighted goal remains open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -1475,7 +1476,123 @@ existing conditional off-critical power growth remains compatible with
 all these identities. Midpoint quadrature and Mellin integration are
 classical; no priority claim is made for this application.
 
+### Independent prime positivity and an explicit zero margin
+
+The preceding inverse identities are compatible with off-critical power
+growth. A new arithmetic input comes from the classical three-four-one
+Euler-product inequality, already proved in pinned Mathlib as
+`DirichletCharacter.norm_LFunction_product_ge_one`. Its specialization
+`one_le_riemannZeta_three_four_one` preserves the actual zeta values:
+
+\[
+ 1\le |\zeta(1+x)|^3|\zeta(1+x+i\gamma)|^4
+       |\zeta(1+x+2i\gamma)|,\qquad x>0.
+\]
+
+No positivity of a difference of heat Grams is inferred. Instead, the
+literal eta support bound supplies the needed analytic upper estimates.
+Write `Z1(s)=riemannZeta₁(s)` for Mathlib's entire completion of
+`(s-1)*zeta(s)` at one. `norm_pairedEtaCore_le_div_re` proves
+`|eta(s)| <= |s|/Re(s)` throughout the positive half-plane. The exact
+identity `pairedEtaCore_mul_sub_one_eq_factor_riemannZeta₁` retains
+
+\[
+ (s-1)\eta(s)=(1-2\cdot2^{-s})Z_1(s),
+\]
+
+including the removable point. Rectangles centered at integer multiples
+of `2*pi/log(2)` have horizontal edges at dyadic phase minus one and
+vertical edges at real parts `1/2` and `3/2`. The factor's norm is at least
+`1/4` on the full boundary. The maximum-modulus principle for the entire
+`Z1` therefore crosses all interior dyadic resonances without dividing
+by a vanishing factor. The terminal bounds are
+
+\[
+ |Z_1(s)|\le8(|\Im s|+20)^2,
+ \qquad \tfrac12\le\Re s\le\tfrac32,
+\]
+\[
+ |Z_1'(s)|\le32(|\Im s|+21)^2,
+ \qquad \tfrac34\le\Re s\le\tfrac54.
+\]
+
+These are `norm_riemannZeta₁_le_etaStrip` and
+`norm_deriv_riemannZeta₁_le_etaStrip`; the latter uses Cauchy's estimate
+on an actual disc of radius `1/4`. The horizontal mean-value theorem
+then compares the original function to a genuine zero. For
+`rho=sigma+i*gamma`, `sigma>=3/4`, `d=1-sigma`, and `t=|gamma|`,
+`norm_riemannZeta₁_reflected_across_one_le` gives
+
+\[
+ |Z_1(1+d+i\gamma)|\le64(t+21)^2d.
+\]
+
+The zero's ordinate is nonzero by the strict positivity of the original
+eta mass at frequency zero, checked in
+`NontrivialZetaZero.im_ne_zero_of_eta_mass`. The pole denominator and
+the same strip bound also prove
+
+\[
+ |\zeta(1+d)|\le3200/d,\qquad
+ |\zeta(1+d+2i\gamma)|\le16(t+21)^2/t.
+\]
+
+Combining these actual upper bounds with prime positivity yields
+`one_le_etaPrimeProduct_zero_gap`:
+
+\[
+ 1\le\frac{16\cdot3200^3\cdot64^4(t+21)^{10}}{t^5}(1-\sigma).
+\]
+
+Define the explicit function, with the Cauchy strip threshold retained,
+
+\[
+ \delta(y)=\min\left\{\frac14,
+ \frac{|y|^5}{16\cdot3200^3\cdot64^4(|y|+21)^{10}}\right\}.
+\]
+
+It is strictly positive when `y!=0` by
+`etaPrimeProductZeroMargin_pos`. Reflection supplies the left margin
+at the same ordinate. Thus
+`nontrivialZetaZero_mem_etaPrimeProduct_strip` proves for **every actual
+nontrivial zero**, with no growth or zero-free premise,
+
+\[
+ \delta(\gamma)\le\sigma\le1-\delta(\gamma).
+\]
+
+This is a deliberately crude zero-location bound derived using classical
+methods. The [classical prime-positivity argument](https://people.math.harvard.edu/~elkies/M229.20/free.pdf)
+has long supported substantially stronger analytic zero-free regions;
+no improvement over that literature or novelty priority is claimed here.
+The contribution to this proof chain is the fully discharged eta-based
+estimate and its transport to the unchanged current/return exponent.
+
+Specifically,
+`pairedEtaCurrentHorizontalDisplacement_le_etaPrimeProduct` bounds
+`abs(2*sigma-1)` by `1-2*delta(gamma)`, and
+`pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaPrimeProduct`
+proves
+
+\[
+ S_R(\rho,K)\le C_\rho(K+1)^{1-2\delta(\gamma)}.
+\]
+
+The existing completion- and multiplicity-dependent constant is retained.
+Both analytic multiplicity branches are covered by the original return
+growth theorem. `etaPrimeProduct_return_exponent_bounds` explicitly places
+the new exponent in `[1/2,1)`. It therefore still permits cutoff growth.
+The interior off-critical contribution remains unexcluded, and the full
+cutoff-independent weighted arithmetic estimate remains open.
+
 ## Next mathematical obligations
+
+The independent prime-product input now excludes the explicit edge regions
+above. It does not force real part `1/2`, and its return bound has a proved
+positive exponent. The remaining task is to rule out the interior
+off-critical contribution while retaining the unchanged absolute weighted
+target. The following inverse and heat carriers remain available for that
+task; their established identities alone do not supply the missing estimate.
 
 1. Prove cancellation in the exact inverse-weighted signed head sum
    above, strong enough to bound the original current's weighted absolute
