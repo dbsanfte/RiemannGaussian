@@ -35,9 +35,20 @@ joint majorant. The gap factor is the existing literal partition, identified
 with `1/s - P(s)` on `Re s > 0`. The `32h` uniform critical estimate is also
 proved directly for the resulting spectral integral.
 
-Still outstanding: the independent cutoff and fixed-ordinate estimates,
-kernel normalization (7), the moving-tilt/cubic scaling target (8), and the
-review of a quantitative application to the completed signed leading flux.
+The fourth slice supplies the independent two-time cutoff error
+`exp(sigma^2 h^2) exp(-2 sigma L)/sigma`, retaining the exact signed omitted
+integral. At `L = log(1/h)`, the actual finite time square has uniform
+critical error **`(32 + 2 exp(1/4))h`**. It also proves the fixed-ordinate
+loss bound `gamma^2 h^2/(2 sigma)`. `Hybrid/EtaSupportGapHeatCommutator.lean`
+checks the literal two-half-tilt factorization, square-integrability, (7),
+and the mixed phase inner products with the same normalization.
+`EtaSupportGapGaussianLimit.lean` packages (3) and (5a) as actual limits,
+including arbitrary width-dependent ordinates, the logarithmic finite
+cutoff, and entrywise convergence of the full fixed phase matrix.
+
+The core targets through (7) are implemented. Still outstanding: the
+moving-tilt/cubic scaling target (8) and the review of a quantitative
+application to the completed signed leading flux.
 No RH or improved-proportion milestone follows from these auxiliary results.
 
 **Recommendation:** make Gaussian heat on the literal eta support quantitative,
