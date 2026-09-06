@@ -539,3 +539,5 @@ import RiemannGaussian.EtaCurrentReconstructionError
 import RiemannGaussian.EtaFiniteCurrentMeasureBounds
 import RiemannGaussian.EtaCurrentKernelEnvelope
 import RiemannGaussian.EtaCurrentKernelMass
+import RiemannGaussian.EtaCurrentReconstructionSchedule
+import RiemannGaussian.EtaCurrentWeightedReconstruction

@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "second-order heat, signed matrices, and explicit arithmetic mass and reconstruction bounds.</text>\n" ++
+      "second-order heat, signed matrices, and summable weighted completed-current reconstruction.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -334,9 +334,13 @@ run_cmd do
         "C_rho=2*m*[W_partner/(1-Re(rho))^2+W_rho/Re(rho)^2]. The proof retains " ++
         "the translated simple-zero head and the adjacent centered moments, and " ++
         "substitution supplies the fully explicit arithmetic reconstruction error. " ++
-        "A simultaneous parameter schedule with summable weighted reconstruction error, " ++
-        "the signed arithmetic bound, and passage through the weighted current series " ++
-        "remain open. The broad " ++
+        "The simultaneous tilt a_N=(N+1)^(-2) and width h_N=(N+1)^4 now give the " ++
+        "all-cutoff error D_rho*(1+log(2*N+5))^(2*m+2)/(N+1)^3, with " ++
+        "D_rho=C_rho*(3+2/M(1)). The odd-weighted norm errors are summable, and the " ++
+        "weighted complex error series is retained. A single proved finite error " ++
+        "budget bounds the difference of the return and original current's finite " ++
+        "first absolute moments at every terminal cutoff. A uniform bound for either " ++
+        "moment still requires the signed arithmetic estimate. The broad " ++
         "heat reconstruction does not identify a bound from the small-width signed law. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

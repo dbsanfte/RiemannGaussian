@@ -27,24 +27,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-The completed eta leading current is reconstructed through the full gap return. Its absolute kernel mass now has an explicit logarithmic-over-cutoff bound, giving an arithmetic reconstruction error with completion factors, multiplicity, tilt, and heat width retained. The next step is a simultaneous heat/tilt schedule with summable weighted error, followed by the signed arithmetic cancellation required for the full `(2N+1)`-weighted current estimate.
+The completed eta leading current now has a simultaneous Gaussian gap-return reconstruction with summable `(2N+1)`-weighted error. A single finite bound controls the difference of their weighted absolute moments at every cutoff, retaining completion factors and multiplicity. The remaining frontier is arithmetic cancellation in the signed return. Connecting the small-width phase laws to this broad-width return requires an exact scale comparison and a quantitative estimate.
 
 ## Latest Update
 
-The actual absolute kernel mass now satisfies
-`B_N ≤ Cρ (1+log(2N+5))^(2m)/(N+1)` at every arithmetic cutoff.
-Here `m` is the analytic multiplicity and
-`Cρ = 2m[Wpartner/(1−Re ρ)² + Wρ/(Re ρ)²]`, with the actual completed
-Laplace weights. The proof retains the short translated head interval at
-multiplicity one and the centered adjacent powers otherwise. The original
-signed kernel formulas remain available upstream of these absolute bounds.
+At tilt `a_N=(N+1)⁻²` and heat width `h_N=(N+1)⁴`, the actual normalized
+return differs from the original completed current by at most
+`Dρ (1+log(2N+5))^(2m+2)/(N+1)³`, with the completion-dependent coefficient
+`Dρ=Cρ(3+2/M(1))` explicit. Lean proves that the odd-weighted norm errors
+are summable and retains the convergent complex error series.
+Here `m` is analytic multiplicity, `Cρ` is the proved completed kernel-mass
+constant, and `M(1)>0` is the actual exponential gap mass.
 
-Substituting this theorem into the gap-return reconstruction gives a fully
-explicit arithmetic error bound. See the
-[kernel mass and error theorems](RiemannGaussian/EtaCurrentKernelMass.lean)
+One finite error budget now bounds the difference of the two weighted
+absolute moments at every terminal cutoff. See the
+[schedule](RiemannGaussian/EtaCurrentReconstructionSchedule.lean),
+[weighted reconstruction theorems](RiemannGaussian/EtaCurrentWeightedReconstruction.lean),
 and [current theorem plan](docs/eta-current-reconstruction-plan.md).
-A simultaneous parameter schedule with summable weighted reconstruction
-error is next; bounding the signed current itself remains open.
+This establishes stability of the approximation; a uniform bound for the
+signed return's weighted absolute moment remains unproved.
 RH remains open. No `13/18` certificate exists.
 
 ## Notable Formalisations
@@ -75,6 +76,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Full gap-return reconstruction** | The infinite gap-time integral is absolutely convergent at positive total tilt. Exact Gaussian and gap-mass normalization, followed by broad heat and vanishing tilt, reconstructs the original completed leading current at every fixed zero and cutoff. | [pairedEtaLeadingCurrentIntegratedGapReturn_eq_prod](RiemannGaussian/EtaIntegratedGapReturn.lean), [pairedEtaLeadingCurrent_gapReturn_reconstruction](RiemannGaussian/EtaLeadingCurrentReconstruction.lean) |
 | **Quantitative current reconstruction** | The normalized return has an explicit error in the actual absolute kernel mass, physical cutoff, tilt, and inverse-square heat width. The full gap moment contributes at most `2/(M(1)a³)` for `0 < a ≤ 1`; the exact signed error integral remains available. | [normalized_current_gapReturn_sub_integral](RiemannGaussian/EtaCurrentReconstructionError.lean), [pairedEtaLeadingCurrentNormalizedGapReturn_error_le_smallTilt](RiemannGaussian/EtaCurrentReconstructionError.lean) |
 | **Completed arithmetic kernel masses** | Both actual multiplicity carriers have an absolute kernel-mass bound `Cρ(1+log(2N+5))^(2m)/(N+1)`, with the two completion weights and horizontal coordinates explicit. It supplies the mass factor in the quantitative reconstruction error. | [pairedEtaLeadingCurrentAbsoluteKernelMass_le](RiemannGaussian/EtaCurrentKernelMass.lean), [pairedEtaLeadingCurrentNormalizedGapReturn_error_le_arithmetic](RiemannGaussian/EtaCurrentKernelMass.lean) |
+| **Summable weighted current reconstruction** | One simultaneous heat/tilt schedule gives a summable odd-weighted error for the actual completed current. Its complex error series converges, and the finite first absolute moments of return and current differ by a single proved finite bound. | [summable_oddEndpoint_mul_norm_pairedEtaLeadingCurrentScheduledGapReturn_error](RiemannGaussian/EtaCurrentWeightedReconstruction.lean), [pairedEtaLeadingCurrentScheduledGapReturn_firstMoment_stability](RiemannGaussian/EtaCurrentWeightedReconstruction.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 
