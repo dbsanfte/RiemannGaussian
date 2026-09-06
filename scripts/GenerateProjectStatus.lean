@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "phase coercivity, spectral identity, and joint cubic heat/matrix limits.</text>\n" ++
+      "phase/matrix limits, and quantitative Wallis overlap-tail evaluation.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -289,7 +289,13 @@ run_cmd do
         "comparison error and moving-tilt tail bound. A phase-independent polynomial " ++
         "majorant justifies the full Gaussian heat limit; every fixed mixed matrix " ++
         "entry converges, and its limiting Gram has an explicit integral-of-squares " ++
-        "formula and real/complex positivity. The signed-flux application review " ++
+        "formula and real/complex positivity. The actual rescaled overlap now has " ++
+        "an exact triangular period average and Wallis inverse-square integral. " ++
+        "At every real scale 0 < epsilon <= 1 and lower cutoff 0 < a <= 1, " ++
+        "the actual infinite tail has error at most 4*epsilon/a + epsilon/a^2; " ++
+        "the signed primitive identity is retained. The weighted two-endpoint " ++
+        "finite part and second-order signed heat/matrix laws remain targets. " ++
+        "The signed-flux application review " ++
         "identifies the missing completed kernel identity and uniform estimates. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

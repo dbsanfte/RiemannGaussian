@@ -1,0 +1,165 @@
+# Eta overlap, signed endpoint corrections, and heat matrices
+
+The user authorized implementation of this package on 2026-09-06, following
+the completed [first eta heat program](rh-overnight-theorem-plan.md).
+The aim is new auxiliary Lean mathematics combining the actual eta support,
+phase colour, Gaussian heat, and mixed finite matrices. This is not a
+zero-proportion certificate program. Priority of the proposed combined
+results has not been established.
+
+Every mathematical statement below is a target unless the implementation
+ledger links to a checked theorem. Integrals use the literal alternating eta
+intervals, with genuine measurability and integrability proofs. No assumed
+averaging or second-order asymptotic premise qualifies as implementation.
+
+## Implementation ledger
+
+| Part | Checked result | Remaining work |
+| --- | --- | --- |
+| 1. Actual arithmetic overlap | [Exact eta/periodic-colour identity](../RiemannGaussian/EtaAlternatingReal.lean), [real-scale cell and primitive estimates](../RiemannGaussian/EtaOverlapAveraging.lean), [Wallis integral](../RiemannGaussian/EtaOverlapWallis.lean), and [quantitative infinite-tail evaluation](../RiemannGaussian/EtaOverlapTail.lean). | Carry the exponential change of variables through the actual complex weighted tail. |
+| 2. Two-endpoint finite part | Not yet proved. | Refine the finite harmonic quadrature, combine it with the evaluated tail, and prove a uniform error for bounded Lipschitz complex tests. |
+| 3. Signed heat reflection | Not yet proved. | Add the quadratic phase, prove the second-order Gaussian expansion and its integrable remainder, then cancel the leading profiles by reflection. |
+| 4. Full mixed matrix | Not yet proved. | Apply the second-order law to every mixed entry, preserving the signed endpoint decomposition and any dimension cost. |
+| 5. Completed-current audit | The [previous review](rh-overnight-signed-flux-review.md) identifies a support mismatch and missing completion/moment estimates. | Audit one exact proposed pairing with the new signed heat object. A remaining conjecture-strength estimate must be left open explicitly. |
+
+Part 1 proves, for every real `0 < epsilon ≤ 1` and `0 < a ≤ 1`,
+
+\[
+\left|\int_a^\infty
+ \frac{(A(y/\epsilon+y)-A(y/\epsilon))^2}{y^2}\,dy
+ -\left[1-\log(\pi/2)-\log a\right]\right|
+ \le \frac{4\epsilon}{a}+\frac{\epsilon}{a^2}.
+\]
+
+Here `A(x) = 1` exactly when `ceil(x)` is even. This right-closed convention
+matches the eta intervals at their endpoints. The precise compiled terminal
+theorem is `integral_Ioi_etaRescaledOverlap_div_sq_error_le`; at `a = 1`
+the error is at most `5 * epsilon`. The proof retains the exact signed
+integration-by-parts identity
+`integral_etaOverlapError_div_sq_eq_primitive` upstream of the bound.
+
+## 1. Arithmetic averaging on the actual carrier
+
+Let `chi` indicate the union of `(log(2n+1), log(2n+2)]`. The substitutions
+`x = exp(t)`, `epsilon = exp(r)-1`, and `y = epsilon*x` turn its mismatch into
+
+\[
+ g_\epsilon(y)=(A(y/\epsilon+y)-A(y/\epsilon))^2.
+\]
+
+The exact period average is the triangular wave `q`, equal to `y` on
+`[0,1]`, `2-y` on `[1,2]`, and periodic with period two. The mismatch is
+periodic with period one in its observation coordinate. Freezing the slow
+displacement on a cell of length `epsilon` gives error at most
+`2 * epsilon^2`, uniformly in the cell origin. Summing complete cells and
+retaining the last incomplete cell gives
+
+\[
+ \left|\int_a^b(g_\epsilon-q)\right|
+ \le 2\epsilon(b-a)+\epsilon.
+\]
+
+Integration by parts against `y^-2` gives the infinite-tail estimate above.
+The constant follows from exact consecutive-cell integration and Mathlib's
+Wallis product theorem. This works for all sufficiently small real scales,
+not just a rational sequence of dilation ratios.
+
+## 2. Complex weighted two-endpoint correction
+
+Use the existing `pairedEtaWeightedMismatch` definition
+
+\[
+ W(r,R,F)=\int_0^\infty e^{-t}(\chi(t+r)-\chi(t))^2 F(t/R)\,dt.
+\]
+
+For `r = exp(-R)` and bounded Lipschitz `F : R -> C`, prove
+
+\[
+ \frac{W(r,R,F)}r-R\int_0^1F(z)\,dz
+ \longrightarrow c_0F(0)+c_1F(1),\qquad
+ c_0=\gamma_E-1,\quad c_1=1-\log(\pi/2).
+\]
+
+First establish the scalar specialization, then an estimate uniform in
+families with fixed test bound and Lipschitz constant. Keep the finite
+crossing sum and complex infinite tail separate until their cutoff terms
+cancel. The current first-order `O(r)` remainder does not evaluate this
+finite part.
+
+## 3. Quadratic/cubic phase and signed heat reflection
+
+Set `R = log(1/h)`, `sigma = 1/2 + lambda/R`, and
+
+\[
+ \phi_h(t)=\kappa t/h+b t^2/(2hR)+\alpha t^3/(hR^2),\qquad
+ a(z)=\kappa+bz+3\alpha z^2.
+\]
+
+Reflection `a_rev(z)=a(1-z)` sends the parameters to
+`(kappa+b+3*alpha, -b-6*alpha, alpha)`. The quadratic term makes this family
+closed under reflection.
+
+Write `Lambda_(lambda,a)(h)` for the actual support/gap heat integral with
+this tilt and phase. Prove
+
+\[
+ \Lambda_{\lambda,a}(h)=hR\mathcal K_{\lambda,a}
+       +h\mathcal L_{\lambda,a}+o(h),
+\]
+
+\[
+ \mathcal K_{\lambda,a}=\frac1{\sqrt\pi}\int_0^\infty
+ v e^{-v^2/4}\int_0^1e^{-2\lambda z}\cos(v a(z))\,dz\,dv,
+\]
+
+\[
+ \mathcal L_{\lambda,a}=c_0\Psi(a(0))+
+ e^{-2\lambda}[c_1\Psi(a(1))-\Omega(a(1))],
+\]
+
+where `Psi(s)` is the existing Gaussian cosine profile and
+
+\[
+ \Omega(s)=\frac1{\sqrt\pi}\int_0^\infty
+ v e^{-v^2/4}\log(v)\cos(sv)\,dv.
+\]
+
+The logarithmic Gaussian moment is required because
+`log(1/(hv)) = R-log(v)`. Prove phase comparison and domination after
+subtraction at scale `h`; two `o(hR)` statements cannot supply `o(h)`.
+
+The reflected combination
+`B_h = Lambda_(lambda,a)(h) - exp(-2*lambda)*Lambda_(-lambda,a_rev)(h)`
+has exactly cancelling leading profiles. The target is
+
+\[
+ B_h/h\longrightarrow J(a(0))-e^{-2\lambda}J(a(1)),\qquad
+ J=(c_0-c_1)\Psi+\Omega.
+\]
+
+## 4. Mixed matrix and 5. completed-current audit
+
+Use differences of phase parameters to preserve every mixed entry of a
+fixed finite family. Retain the signed matrix; subtracting the leading Gram
+does not establish positive semidefiniteness. Any matrix-norm estimate must
+retain its dependence on the family size.
+
+The reflection factor `exp(-2*lambda)` comes from logarithmic time. It is
+not the xi completion multiplier. The literal higher-multiplicity current
+lives on support times support, where a single support/gap mismatch is zero.
+An exact two-transition or polarized Dirichlet-form pairing must retain
+completion weights, adjacent centered moments, ordinate colour, cutoff,
+and the distinct multiplicity-one head. A representation alone does not
+prove the required `(2N+1)`-weighted summability estimate.
+
+Fixed-horizontal-tilt asymptotics and nonlinear Gram conditioning are reserve
+targets. They do not replace the arithmetic finite part or signed heat law.
+
+## Verification and publication
+
+Each coherent slice must pass the focused warning-as-error build, root
+imports, whole-project declaration lint, terminal axiom audit, full build,
+generated inventory, placeholder scan, and whitespace checks. Commit through
+the tracked hook, push, and require successful CI at that exact SHA before
+starting the next slice. Keep this ledger and the README's two research
+status sections current. No `13/18` certificate or RH proof is claimed.

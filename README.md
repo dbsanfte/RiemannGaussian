@@ -27,22 +27,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-RiemannGaussian now has quantitative heat laws on the literal eta support, including joint cubic-phase/moving-tilt scaling, mixed matrix limits, explicit coercivity, and spectral/commutator identities. The next frontier is an exact connection to the completed signed eta current with cutoff and multiplicity control. The application review identifies the missing kernel identity and uniform estimates; the cancellation required for RH remains open.
+The active program evaluates the next term of the actual eta heat law: arithmetic overlap averaging, complex weighted endpoint corrections, signed phase reflection, and full mixed matrices. The infinite overlap tail now has an explicit Wallis value and a quantitative real-scale error. Next is the weighted two-endpoint finite part. Connecting these auxiliary laws to the completed signed current still requires a separate identity and uniform estimates.
 
 ## Latest Update
 
-The full joint cubic-phase/moving-tilt heat theorem is checked. With
-`ℓ = log(1/h)`, `σ = 1/2 + λ/ℓ`, and `φ(t) = κt/h + αt³/(hℓ²)`, the actual
-heat transfer divided by `hℓ` converges to its explicit Gaussian/logarithmic
-phase profile. The normalized displacement has the phase-independent
-majorant `exp(4|λ|)(12+11v²)`, which justifies Gaussian dominated convergence.
-Every fixed mixed matrix entry converges, and its limit has a genuine
-integral-of-squares formula and is positive semidefinite for real and complex
-coefficients. This completes the mathematical targets in the
-[overnight theorem plan](docs/rh-overnight-theorem-plan.md).
-The [signed-flux review](docs/rh-overnight-signed-flux-review.md) records the
-missing connection to the completed current. Cubic modulation does not
-inherit eta's zeros; RH remains open. No `13/18` certificate exists.
+The literal eta overlap now has a checked triangular period average and
+an evaluated infinite arithmetic tail. For every real `0 < ε ≤ 1` and
+`0 < a ≤ 1`, the inverse-square tail differs from
+`1 − log(π/2) − log(a)` by at most `4ε/a + ε/a²`. The proof retains exact
+endpoint conventions and a signed primitive identity, with genuine
+integrability on the infinite tail. See the
+[terminal theorem](RiemannGaussian/EtaOverlapTail.lean) and
+[implementation plan](docs/eta-signed-endpoint-theorem-plan.md).
+Next is transporting this estimate through the complex weighted boundary
+sum to prove the two-endpoint correction; the second-order heat and signed
+matrix laws remain targets. RH remains open. No `13/18` certificate exists.
 
 ## Notable Formalisations
 
@@ -63,6 +62,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Finite cutoffs and continuous commutator kernels** | Explicit cutoff and fixed-ordinate errors; exact half-tilt commutator factorization, square-integrability, and mixed phase kernel inner products. A logarithmically growing finite cutoff preserves the critical heat profile. | [pairedEtaSupportGapGaussianLeakage_cutoff_error_le](RiemannGaussian/EtaSupportGapGaussianCutoff.lean#L92), [integral_pairedEtaHeatCommutatorPhaseKernel_mixed](RiemannGaussian/Hybrid/EtaSupportGapHeatCommutator.lean#L215) |
 | **Complex weighted eta boundary distribution** | The actual critical boundary measure converges on logarithmic time to the uniform distribution on `[0,1]`, against bounded Lipschitz complex tests. An explicit `(12B + 4K)r` error preserves the test's phase. | [pairedEtaWeightedMismatch_critical_error_le](RiemannGaussian/EtaLogWeightedBoundary.lean), [pairedEtaWeightedMismatch_scaled_tendsto](RiemannGaussian/EtaLogWeightedBoundaryLimit.lean) |
 | **Joint cubic-phase and moving-tilt heat law** | The actual complex displacement and continuous heat have a joint critical scaling profile. A phase-independent polynomial majorant justifies the Gaussian limit; every mixed matrix entry converges to a Gram with an explicit integral-of-squares formula. | [pairedEtaSupportGapGaussianLeakage_cubic_movingTilt_tendsto](RiemannGaussian/EtaCubicHeatLimit.lean), [pairedEtaCubicHeatProfileGram_energy_eq_squares](RiemannGaussian/Hybrid/EtaCubicHeatGram.lean), [pairedEtaSupportGapCubicPhaseGram_tendsto](RiemannGaussian/Hybrid/EtaCubicHeatGram.lean) |
+| **Actual eta overlap and Wallis tail** | The literal logarithmic support becomes a periodic unit-interval colour. Its triangular average has an exact Wallis integral, and the actual infinite inverse-square tail has error at most `4ε/a + ε/a²` for every real `0 < ε ≤ 1`, `0 < a ≤ 1`. | [pairedEtaLogShiftMismatch_eq_rescaledOverlap](RiemannGaussian/EtaOverlapAveraging.lean), [integral_Ioi_etaOverlapProfile_div_sq](RiemannGaussian/EtaOverlapWallis.lean), [integral_Ioi_etaRescaledOverlap_div_sq_error_le](RiemannGaussian/EtaOverlapTail.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 

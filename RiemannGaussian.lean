@@ -508,3 +508,7 @@ import RiemannGaussian.EtaMovingTiltGaussianBound
 import RiemannGaussian.EtaCubicHeatProfile
 import RiemannGaussian.EtaCubicHeatLimit
 import RiemannGaussian.Hybrid.EtaCubicHeatGram
+import RiemannGaussian.EtaAlternatingReal
+import RiemannGaussian.EtaOverlapAveraging
+import RiemannGaussian.EtaOverlapWallis
+import RiemannGaussian.EtaOverlapTail

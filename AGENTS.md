@@ -1341,8 +1341,12 @@ On 2026-09-05 the user explicitly changed the objective to an overnight Lean
 theorem push using phase colour, Gaussian heat, the literal eta support, and
 finite/continuous representations. This supersedes the former requirement
 that every commit improve a literal zero-proportion certificate above `17/25`.
-The active mathematical targets and their implementation ledger are in
-`docs/rh-overnight-theorem-plan.md`.
+On 2026-09-06 the user authorized the next full theorem package: actual
+overlap averaging, complex weighted endpoint corrections, signed Gaussian
+reflection, mixed matrices, and an exact completed-current audit. The active
+mathematical targets and implementation ledger are in
+`docs/eta-signed-endpoint-theorem-plan.md`; the completed first program remains
+recorded in `docs/rh-overnight-theorem-plan.md`.
 
 A qualifying slice must prove a concrete target from that program, with all
 analytic hypotheses discharged for the actual carrier. Retain exact phase,
