@@ -455,7 +455,27 @@ run_cmd do
         "The original signed completion pair retains both channel error bounds; " ++
         "its fixed-divisor period average tends to zero at every actual zero. " ++
         "The physical endpoint normalizers, divisor sizes, and period length " ++
-        "are explicit. A separate exact dyadic recurrence now controls the entire " ++
+        "are explicit. The literal quotient parity matrix now has exact " ++
+        "covariance gcd(d,e)^2/(d*e) when both reduced divisors are odd and zero " ++
+        "otherwise, with arbitrary-window error at most 4*d*e/L. " ++
+        "sum_Icc_pairedEtaDivisorParityCovariance_le_log bounds the whole " ++
+        "covariance sum by 2*D*(1+log D). The actual completed family retains " ++
+        "both physical endpoint powers in its exact complex Gram. " ++
+        "pairedEtaCompletedMoebiusFamilyMeanSquare_le bounds its mean square " ++
+        "by norm(X)^2*D*(1+log D)/2+norm(X)^2*D^4/L+" ++
+        "2*H*norm(X)*D^3/A+4*H^2*D^4/A^2, for positive A and L. " ++
+        "pairedEtaCompletedMoebiusFamilyMeanSquare_le_growing consequently " ++
+        "gives K_rho*D*(1+log D) for D>=1 and D^3<=A,L, with " ++
+        "K_rho=2*norm(X)^2+2*H*norm(X)+4*H^2. " ++
+        "pairedEtaSignedCompletedMoebiusFamilyMeanAbsolute_le_growing " ++
+        "retains the original signed reflection channels and bounds their " ++
+        "first absolute average by (K_partner+K_rho)*D*(1+log D) in the same " ++
+        "cubic range, without assuming a simple or critical-line zero. " ++
+        "The full physical divisor range, removal of endpoint powers, inverse " ++
+        "weights, moving centers, and adjacent higher moments remain uncontrolled " ++
+        "by this estimate. It does not improve the zero-free strip or prove the " ++
+        "original uniform weighted current bound. A separate exact dyadic " ++
+        "recurrence controls the entire " ++
         "growing divisor family at each physical cutoff: E(M)=-r*O(floor(M/2)) " ++
         "and O(M)=C+r*O(floor(M/2)) for M>=2, with r=2^(-rho) and " ++
         "C=X_rho*(1-2*r). Since abs(r)<1, B=norm(X_rho)+norm(C)/(1-abs(r)) " ++

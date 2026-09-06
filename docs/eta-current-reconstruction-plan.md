@@ -1997,6 +1997,133 @@ claimed. The signed prime comparison excludes edge regions, while the
 interior off-critical contribution and the original uniform weighted goal
 remain open. No RH proof or `13/18` certificate is claimed.
 
+## Growing divisor covariance on the actual completed family
+
+The earlier odd/even estimate concerned one fixed divisor pair. The
+following package bounds a whole family while keeping its size, physical
+normalizers, and averaging errors explicit. Its terminal theorems concern
+the actual completed zeroth-order terms; they do not establish the original
+weighted current bound.
+
+Let `a(n)=pairedEtaDirichletSign(n)`, with `a(n)=-1` for even `n` and `+1`
+for odd `n`. For positive `d,e`, put `g=gcd(d,e)` and
+
+\[
+ c_{d,e}=\begin{cases}
+   g^2/(de),&d/g\text{ and }e/g\text{ are both odd},\\
+   0,&\text{otherwise}.
+ \end{cases}
+\]
+
+`sum_range_pairedEtaDivisorParity_eq_gcd` in
+[EtaDivisorParityGcd.lean](../RiemannGaussian/EtaDivisorParityGcd.lean)
+proves the exact complete-period identity
+
+\[
+ \sum_{M<2de}a(\lfloor M/d\rfloor)a(\lfloor M/e\rfloor)
+ =2de\,c_{d,e}.
+\]
+
+Thus odd coprime columns retain a nonzero covariance. An independence
+assumption would lose a real arithmetic contribution. Chinese remainders,
+common-divisor blocks, and exact sign reversal prove the formula without
+an asymptotic premise. The arbitrary-window theorem
+`abs_pairedEtaDivisorParityAverage_sub_covariance_le` in
+[EtaDivisorParityAverage.lean](../RiemannGaussian/EtaDivisorParityAverage.lean)
+gives, for every `A` and positive `L`,
+
+\[
+ \left|\frac1L\sum_{r<L}
+   a(\lfloor(A+r)/d\rfloor)a(\lfloor(A+r)/e\rfloor)-c_{d,e}\right|
+ \le\frac{4de}{L}.
+\]
+
+`sum_Icc_pairedEtaDivisorParityCovariance_le_log` in
+[EtaDivisorGcdBound.lean](../RiemannGaussian/EtaDivisorGcdBound.lean)
+then proves
+
+\[
+ \sum_{d,e\le D}c_{d,e}
+ \le\sum_{d,e\le D}\frac{\gcd(d,e)^2}{de}
+ \le2D\sum_{g=1}^D\frac1g\le2D(1+\log D).
+\]
+
+The proof keeps a common-divisor decomposition and the exact divided-cutoff
+harmonic sums before using finite Cauchy--Schwarz and a telescoping
+inverse-square bound.
+
+For the actual carrier, set `X_rho=pairedEtaXiCompletionFactor(rho)` and
+`H_rho=norm(X_rho)*norm(rho)*norm(rho+1)`. Write
+
+\[
+ Q(m)=2\lfloor m/2\rfloor+1,\qquad
+ F_\rho(M,d)=(dQ(\lfloor M/d\rfloor))^\rho\,
+   \operatorname{pairedEtaCompletedMoebiusTerm}(\rho,M,d).
+\]
+
+This is the existing `pairedEtaCompletedMoebiusEndpointPhase`; its complex
+physical power is part of the statement. The exact theorem
+`pairedEtaCompletedMoebiusDivisorCorrelation_eq_covariance_add_errors` in
+[EtaMoebiusDivisorCorrelation.lean](../RiemannGaussian/EtaMoebiusDivisorCorrelation.lean)
+retains the main coefficient `mu(d)*mu(e)*norm(X_rho)^2/4`, the full
+covariance, the literal unfinished-period remainder, and the complex
+endpoint error. Only its downstream norm bound discards the two Möbius
+signs. The theorem
+`pairedEtaCompletedMoebiusEndpointFamily_norm_sq_eq_physical_kernel` in
+[EtaMoebiusFamilyMeanSquare.lean](../RiemannGaussian/EtaMoebiusFamilyMeanSquare.lean)
+retains both endpoint powers on every entry of the original pair kernel.
+
+The actual mean-square terminal theorem
+`pairedEtaCompletedMoebiusFamilyMeanSquare_le` proves, for `A,L>=1`,
+
+\[
+ \begin{aligned}
+ \frac1L\sum_{r<L}\left|\sum_{d=1}^D F_\rho(A+r,d)\right|^2
+ &\le \frac{\|X_\rho\|^2}{2}D(1+\log D)
+   +\frac{\|X_\rho\|^2D^4}{L}\\
+ &\quad+\frac{2H_\rho\|X_\rho\|D^3}{A}
+   +\frac{4H_\rho^2D^4}{A^2}.
+ \end{aligned}
+\]
+
+`pairedEtaCompletedMoebiusFamilyMeanSquare_le_growing` in
+[EtaMoebiusGrowingFamily.lean](../RiemannGaussian/EtaMoebiusGrowingFamily.lean)
+therefore gives the bound `K_rho*D*(1+log D)` when `D>=1` and
+`D^3<=A,L`, with the evaluated constant
+
+\[
+ K_\rho=2\|X_\rho\|^2+2H_\rho\|X_\rho\|+4H_\rho^2.
+\]
+
+The signed pair remains the repository's original `etaSignedCompletedPair`
+on the two completed families. Its exact double sum and oriented difference
+of channel squares precede the estimate.
+`pairedEtaSignedCompletedMoebiusFamilyMeanAbsolute_le_growing` in
+[EtaMoebiusSignedFamily.lean](../RiemannGaussian/EtaMoebiusSignedFamily.lean)
+bounds its first absolute window average by
+`(K_partner+K_rho)*D*(1+log D)` in the same cubic range. These results apply
+to every actual nontrivial zero, without a critical-line or simplicity
+assumption.
+
+The remaining transfer is substantive. The divisor cutoff is truncated to
+the cubic range; the full current requires all physical divisors. The
+period-error term `norm(X_rho)^2*D^4/L` cannot be suppressed when the family
+grows as fast as the averaging window. The complex endpoint powers must
+also be transported back through the original inverse weights and moving
+centers. Repeated-zero currents involve adjacent higher moments, whereas
+this estimate concerns zeroth-order family self-pairs. Finally, a finite
+window average is not the original odd-weighted first absolute partial sum.
+None of those open transfers is supplied as an assumption or declared proved.
+
+Gcd covariance bounds and their relation to periodic dilations have
+[established prior work by Aistleitner, Berkes, and Seip](https://arxiv.org/abs/1210.0741).
+No literature improvement or novelty priority is claimed. The checked
+contribution here is the explicit arithmetic identity and quantitative
+application to the actual completed eta carriers with all finite-window
+dependencies retained. The previous reciprocal-logarithm zero-free margin
+is unchanged. The uniform weighted goal, RH, and the `13/18` certificate
+remain open.
+
 ## Next mathematical obligations
 
 The signed prime input now excludes the explicit reciprocal-logarithm edge
@@ -2105,6 +2232,10 @@ Excluding the surviving off-critical endpoint contribution remains open. The nex
    Full transformed moments now have fixed-center bounds at every order,
    and the original repeated-zero current has an exact double inverse sum.
    Uniform control of that inverse sum at moving centers remains open.
+   The growing-family estimate above supplies a quantitative bound in the
+   cubic truncated range. Extending it to the full physical range must
+   control the explicit `D^4/L` error and transport the retained endpoint
+   powers through the inverse weights and higher adjacent moments.
    Any use of the earlier period averages must also preserve their
    divisor-dependent normalizers and errors. Any use of the
    mixed phase matrix must identify the actual finite eta feature vector
