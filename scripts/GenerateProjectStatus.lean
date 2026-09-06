@@ -211,7 +211,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
     "  <text class=\"frontier\" x=\"20\" y=\"220\">Actual eta heat: uniform error 32h, " ++
-      "signed matrices and sharp conditional off-critical return growth; uniform bound open.</text>\n" ++
+      "signed matrices and finite Moebius constraints on actual eta tails; uniform bound open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -426,7 +426,18 @@ run_cmd do
         "(c_floor/(2*e))*(K+1)^e and its previously proved C_rho*(K+1)^e " ++
         "upper bound, and tends to infinity under that off-critical hypothesis. " ++
         "The displacement exponent is therefore sharp for the unchanged return. " ++
-        "No contradiction excluding an off-critical zero is supplied. These " ++
+        "No contradiction excluding an off-critical zero is supplied. Classical " ++
+        "Moebius inversion now gives an exact finite multiplicative constraint on " ++
+        "the original completed eta tails. The literal odd-even Dirichlet " ++
+        "coefficients convolved with mu are supported exactly at one and two. " ++
+        "Regrouping finite divisor fibers gives eta prefixes at floor(M/d), " ++
+        "each split into the original paired prefix and its exact odd last term. " ++
+        "At every actual zero, the completed zeroth prefix is the negative " ++
+        "genuine tail. Their signed aggregate with weights mu(d)*d^(-rho), " ++
+        "retaining all endpoint corrections, equals the same nonzero source " ++
+        "pairedEtaXiCompletionFactor(rho)*(1-2*2^(-rho)) for every M>=2. " ++
+        "This controls a linear combination across divided cutoffs; no transfer " ++
+        "to the original quadratic current's weighted absolute moment is proved. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[

@@ -27,25 +27,26 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-The actual eta return's displacement-power bound is now sharp under the hypothesis of an off-critical zero. Next, seek an independent arithmetic constraint ruling out its surviving positive endpoint contribution. Exact completion signs and the Gaussian reconstruction's finite error budget remain available; further local approximations with summable weighted error preserve this growth. The cutoff-independent bound and RH remain open.
+Use the exact finite Möbius identity to couple actual completed eta tails across divided cutoffs, retaining odd endpoint corrections and complex phases. The Gaussian reconstruction and sharp conditional growth bound remain available. Next, test whether these coupled identities control the original quadratic current's weighted absolute moment. The full uniform bound and RH remain open.
 
 ## Latest Update
 
-Lean now proves **matching power bounds for the actual return**, under
-the hypothesis that an actual zero is off the critical line. With
-`e_rho = |2 Re(rho)-1| > 0`, eventually
-`c_rho (K+1)^e_rho <= sum_(N<K) (2N+1) norm(R_rho(N)) <= C_rho (K+1)^e_rho`.
-The lower coefficient is explicit and strictly positive. See
-[pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_power_bounds_eventually](RiemannGaussian/EtaCurrentReturnSharpGrowth.lean).
+Lean now proves an **exact finite Möbius constraint on the original
+completed eta tails** at every actual zero. The Möbius-weighted sum at
+divided integer cutoffs, including every odd endpoint correction, equals
+the same nonzero completion-weighted dyadic source for every cutoff
+`M >= 2`. See
+[pairedEtaCompletedMoebiusTailAggregate_eq_source](RiemannGaussian/EtaMoebiusCompletedTail.lean).
 
-The exact signed factorization retains the slower completion channel;
-its positive contribution eventually dominates. A finite initial-segment
-allowance and the proved Gaussian error budget give an all-cutoff lower
-bound, so the same actual moment would tend to infinity at any off-critical
-zero. This establishes the sharpness of the prior exponent. It supplies
-no contradiction excluding such a zero. The next step needs an independent
-arithmetic constraint on that surviving term to discharge the
-[full uniform-bound goal](docs/eta-current-reconstruction-plan.md).
+The proof applies classical Möbius inversion to the literal eta
+coefficients, regroups only finite sums, and uses the actual zero equation
+to replace completed prefixes by negative genuine tails. All complex
+weights survive. This controls a signed linear combination across
+prefixes. The next obligation is to obtain a quadratic estimate for the
+original current from the coupled identities; that transfer and the
+[full uniform-bound goal](docs/eta-current-reconstruction-plan.md)
+remain open. Möbius inversion itself is classical; no novelty claim is
+made for it.
 RH remains open. No `13/18` certificate exists.
 
 ## Notable Formalisations
@@ -86,6 +87,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Sublinear weighted return bound** | The actual return's first absolute moment is at most `C_rho (K+1)^|2 Re(rho)-1|`. Both multiplicity branches and their completion constants are retained, with exact critical-line cancellation handled separately; dividing the moment by `K+1` gives a limit of zero. | [pairedEtaLeadingCurrent_weighted_le_doubleDecay](RiemannGaussian/EtaCurrentArithmeticEnvelope.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_growth_le](RiemannGaussian/EtaCurrentReturnGrowth.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_div_cutoff_tendsto_zero](RiemannGaussian/EtaCurrentReturnGrowth.lean) |
 | **Positive principal endpoints for both multiplicities** | The actual current and return have summable weighted error from one signed difference of complementary endpoint decays, with both completion coefficients strictly positive. The simple head's complex phase correction is explicit; one finite budget controls every difference of first absolute moments. | [pairedEtaCurrentPrincipalCoefficient_pos](RiemannGaussian/EtaCurrentPrincipalEndpoints.lean), [pairedEtaCurrentHalfStepHead_mul_conj_euler](RiemannGaussian/EtaCurrentHalfStepPairs.lean), [pairedEtaLeadingCurrentLinearHeatReturn_principal_firstMoment_stability](RiemannGaussian/EtaCurrentPrincipalEndpoints.lean) |
 | **Sharp growth at a hypothetical off-critical zero** | Assuming an actual zero is off the critical line, its slower positive completion channel gives matching eventual displacement-power bounds for the original return's weighted first absolute moment. An explicit finite offset gives an all-cutoff lower bound, and the moment tends to infinity. This does not exclude such a zero. | [pairedEtaCurrentPrincipalEndpoint_eq_dominant_factor](RiemannGaussian/EtaCurrentPrincipalDominance.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_lower_with_offset](RiemannGaussian/EtaCurrentReturnSharpGrowth.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_power_bounds_eventually](RiemannGaussian/EtaCurrentReturnSharpGrowth.lean) |
+| **Finite Möbius constraints on completed eta tails** | Classical divisor inversion, with exact complex weights, couples the original completed eta prefixes at divided cutoffs. At every actual zero these become genuine tails plus odd endpoint corrections, whose signed linear sum equals one nonzero source at every cutoff at least two. | [sum_moebius_mul_pairedEtaCorePartialSum_add_endpoint](RiemannGaussian/EtaMoebiusFinitePrefix.lean), [pairedEtaCompletedMoebiusTailAggregate_eq_source](RiemannGaussian/EtaMoebiusCompletedTail.lean), [pairedEtaCompletedMoebiusSource_ne_zero](RiemannGaussian/EtaMoebiusCompletedTail.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
 

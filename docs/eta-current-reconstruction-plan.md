@@ -45,6 +45,7 @@ the objective.
 | Preserve the weighted frontier at linear heat width | `pairedEtaLeadingCurrentLinearHeatReturn_weighted_error_le` in [EtaCurrentLinearHeatSchedule.lean](../RiemannGaussian/EtaCurrentLinearHeatSchedule.lean), and summability and finite-prefix stability in [EtaCurrentLinearHeatReconstruction.lean](../RiemannGaussian/EtaCurrentLinearHeatReconstruction.lean). | Proved at width `2(N+1)`, with separate summable midpoint and remaining-defect majorants and an explicit finite total error budget. No bound on the return's own weighted moment is proved. |
 | Estimate the retained signed arithmetic against explicit endpoint terms | Complex prefix and pair errors in [EtaCurrentEulerMoments.lean](../RiemannGaussian/EtaCurrentEulerMoments.lean) and [EtaCurrentEulerPairs.lean](../RiemannGaussian/EtaCurrentEulerPairs.lean); elementary head and positive adjacent coefficients in [EtaCurrentEulerArithmetic.lean](../RiemannGaussian/EtaCurrentEulerArithmetic.lean); `pairedEtaLeadingCurrentLinearHeatReturn_euler_error_sum_le` in [EtaCurrentEulerEstimate.lean](../RiemannGaussian/EtaCurrentEulerEstimate.lean). | Proved with summable weighted error in both actual branches. The endpoint expression itself still requires an independent weighted bound. The repeated-zero contribution has no cutoff Fourier oscillation. |
 | Bound the original return's weighted moment as the cutoff grows | The two-factor estimate in [EtaCurrentArithmeticEnvelope.lean](../RiemannGaussian/EtaCurrentArithmeticEnvelope.lean), the finite power-sum comparison in [EtaCurrentPowerSum.lean](../RiemannGaussian/EtaCurrentPowerSum.lean), and `pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_growth_le` in [EtaCurrentReturnGrowth.lean](../RiemannGaussian/EtaCurrentReturnGrowth.lean). | Proved with explicit growth `C_rho*(K+1)^abs(2*Re(rho)-1)` and exact treatment of the critical line. The exponent is below one, and the cutoff-normalized moment tends to zero. A cutoff-independent bound remains open. |
+| Couple actual completed eta tails across multiplicatively divided cutoffs | `sum_moebius_mul_pairedEtaCorePartialSum_add_endpoint` in [EtaMoebiusFinitePrefix.lean](../RiemannGaussian/EtaMoebiusFinitePrefix.lean) and `pairedEtaCompletedMoebiusTailAggregate_eq_source` in [EtaMoebiusCompletedTail.lean](../RiemannGaussian/EtaMoebiusCompletedTail.lean). | Proved at every actual zero and every integer cutoff at least two, with all odd endpoint corrections and complex Möbius weights. The resulting linear constraint has no proved quadratic-current bound yet. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -927,10 +928,87 @@ arithmetic argument excluding the surviving off-critical contribution.
 The new lower bound does not provide that argument, improve a zero
 proportion, or locate an additional zeta zero.
 
+## Checked finite Möbius constraint on the original completed tails
+
+The sharp growth result rules out progress through a smaller summable
+local error alone. The next arithmetic input now couples different
+prefixes through their actual multiplicative indices. The compiled
+modules are [EtaMoebiusDivisor](../RiemannGaussian/EtaMoebiusDivisor.lean),
+[EtaMoebiusFinitePrefix](../RiemannGaussian/EtaMoebiusFinitePrefix.lean),
+and [EtaMoebiusCompletedTail](../RiemannGaussian/EtaMoebiusCompletedTail.lean).
+
+Let `a(n)=1` for odd `n` and `-1` for even `n`. Mathlib's classical
+Möbius inversion theorem gives the exact finite coefficient identity
+
+\[
+ \sum_{dk=n}\mu(d)a(k)=\mathbf1_{n=1}-2\mathbf1_{n=2}
+ \qquad(n\ge1).
+\]
+
+`sum_moebius_mul_pairedEtaDirichletTerm` retains both complex powers
+`d^(-s)` and `k^(-s)`, using their exact natural-product identity.
+`sum_Icc_divisorsAntidiagonal_eq_sum_divided_prefix` gives a finite
+bijection from the divisor fibers to pairs with `1<=d<=M` and
+`1<=k<=floor(M/d)`. There is no infinite rearrangement.
+Writing `E_m(s)=sum_(1<=k<=m) a(k)k^(-s)`, the resulting identity is
+
+\[
+ \sum_{d\le M}\mu(d)d^{-s}E_{\lfloor M/d\rfloor}(s)
+ =1-2\,2^{-s},\qquad M\ge2.
+\]
+
+Every such prefix is proved to equal the repository's original
+`pairedEtaCorePartialSum(m/2,s)` plus `m^(-s)` when `m` is odd.
+That endpoint term cannot be omitted. For an actual zero `rho`, let
+`X_rho=pairedEtaXiCompletionFactor(rho)` and
+
+\[
+ B_\rho(m)=X_\rho\mathbf1_{m\text{ odd}}m^{-\rho}.
+\]
+
+The original zeroth completed moment is exactly
+`X_rho*pairedEtaCorePartialSum(N,rho)`.
+Since the actual multiplicity is positive, its zeroth order is below
+the multiplicity and it is the negative genuine completed tail
+`-T_rho(N,0)`. Thus the compiled terminal theorem
+`pairedEtaCompletedMoebiusTailAggregate_eq_source` proves
+
+\[
+ \sum_{d\le M}\mu(d)d^{-\rho}
+ \left[-T_\rho\!\left(\left\lfloor
+       \frac{\lfloor M/d\rfloor}{2}\right\rfloor,0\right)
+       +B_\rho(\lfloor M/d\rfloor)\right]
+ =X_\rho(1-2\,2^{-\rho}),\qquad M\ge2.
+\]
+
+`pairedEtaCompletedMoebiusSource_ne_zero` proves the right-hand side
+nonzero using the actual critical-strip hypotheses. Its norm is therefore
+a fixed positive value, independent of `M`, for the complete **signed
+linear aggregate**. This is not the original current's weighted first
+absolute moment. No quadratic estimate or cancellation of that current
+is inferred from this identity.
+
+Möbius inversion itself is classical. The new project interface is its
+exact application to the existing completed eta moments, with divided
+cutoffs, complex phases, and unpaired endpoints retained. More general
+dilation methods are part of the classical
+[Nyman–Beurling/Müntz framework](https://arxiv.org/abs/math/0505453);
+that connection does not supply the missing approximation or norm estimate.
+No priority claim is made here.
+
+The next concrete test is to propagate these simultaneous linear
+constraints through the actual completed moment pairs and their Gaussian
+returns, accounting for all cross-cutoff terms. A bound on the linear
+aggregate alone does not discharge the goal. Taking absolute values
+before exploiting the Möbius phases loses the arithmetic cancellation
+that this identity has preserved.
+
 ## Next mathematical obligations
 
-1. Derive an independent arithmetic constraint that rules out the surviving
-   positive endpoint contribution at an actual off-critical zero. The
+1. Use the proved finite Möbius constraints to seek a quadratic estimate
+   that rules out the surviving positive endpoint contribution at an
+   actual off-critical zero. All cross-cutoff terms and odd endpoint
+   corrections must be retained. The
    proved matching power bounds show that removing the cutoff growth
    requires such an exclusion; a sharper local approximation alone cannot
    provide it. The signed Euler, half-step head, and heat reconstruction
@@ -993,9 +1071,9 @@ off-critical power bounds for the actual weighted return are now proved.
 Excluding the surviving off-critical endpoint contribution remains open. The next targets are
 **proposed work**, not assumptions to add to the proof chain.
 
-1. Seek an arithmetic relation constraining the explicit endpoint
-   contribution at an actual zero, beyond the existing zero-tail
-   expansion and completion symmetry. Any use of the
+1. Test the simultaneous finite Möbius relations against the actual
+   completed moment pairs, beyond the single-cutoff zero-tail expansion
+   and completion symmetry. Any use of the
    mixed phase matrix must identify the actual finite eta feature vector
    and control its dimension, scale, and compression errors. The above
    midpoint and Euler error estimates alone cannot bound `S_rho(K)`

@@ -576,3 +576,6 @@ import RiemannGaussian.EtaCurrentPrincipalEndpoints
 import RiemannGaussian.EtaCurrentPrincipalDominance
 import RiemannGaussian.EtaCurrentPrincipalLowerBound
 import RiemannGaussian.EtaCurrentReturnSharpGrowth
+import RiemannGaussian.EtaMoebiusDivisor
+import RiemannGaussian.EtaMoebiusFinitePrefix
+import RiemannGaussian.EtaMoebiusCompletedTail
