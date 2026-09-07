@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "Quantitative harmonic Moebius cancellation bounds the accumulated signed product coefficients across an entire actual inner-truncated inverse region, with every integer remainder retained; the completed quadratic current remains open"
-    lineOne := "harmonic Moebius"
-    lineTwo := "inverse coefficients"
+    label := "An exact eta projection and a finite paired prefix with complete tail error bound the actual zero displacement and the original current's cutoff power; this single-projection exponent formula stays at least 1/11"
+    lineOne := "finite eta phase"
+    lineTwo := "current power bound"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.exists_pairedEtaInverseInnerCapCoefficient_cubic_rate
+      ``RiemannGaussian.pairedEtaLeadingCurrent_firstMoment_le_finitePhase
   }
 ]
 
@@ -228,8 +228,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">Harmonic cancellation bounds signed inverse coefficients; " ++
-      "the full inverse-energy estimate and uniform current bound remain open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">Finite eta arithmetic bounds the current's power; " ++
+      "this projection retains a positive exponent. The uniform weighted bound remains open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -821,8 +821,31 @@ run_cmd do
         "or a quadratic completed-current estimate. " ++
         "Smaller blocks, the complete two-divisor inverse, and " ++
         "both reflected mixed energies still need a stronger joint estimate. " ++
-        "This does not improve the zero margin or " ++
-        "the current's positive exponent. The uniform cutoff-independent " ++
+        "Those coefficient estimates do not improve the zero margin or " ++
+        "the current's positive exponent. A separate phase projection now " ++
+        "bounds the actual zero coordinate directly. For beta>1/2 the exact " ++
+        "residual exp(-t/2)-((2*beta-1)/beta)*exp(-(beta-1/2)*t) has " ++
+        "full half-line square integral ((1-beta)/beta)^2. Its retained " ++
+        "complex phase and the actual eta zero condition give " ++
+        "norm(eta(1+i*gamma)/(1+i*gamma))<=(1-beta)/beta. Reflection " ++
+        "gives both strip edges at the same ordinate. Put " ++
+        "q_N=max(0,norm(eta_N(1+i*gamma)/(1+i*gamma))-1/(2*N+1)) " ++
+        "for the original 2*N-term paired prefix. The complete tail proves " ++
+        "delta_N=q_N/(1+q_N)<=beta<=1-delta_N at every N. The finite " ++
+        "norm and margin errors are each at most 2/(2*N+1). With " ++
+        "kappa_N=min(p_old,(1-q_N)/(1+q_N)), the theorem " ++
+        "pairedEtaLeadingCurrent_firstMoment_le_finitePhase bounds the " ++
+        "unchanged odd-weighted absolute current by C_rho*(K+1)^kappa_N " ++
+        "at every K, in both multiplicity branches. The actual linear-width " ++
+        "Gaussian return and full signed inverse energy inherit the same " ++
+        "exponent with their original finite error budgets. The minimum " ++
+        "never weakens the earlier bound; no strict numerical improvement " ++
+        "at a specified height is certified here. One exact prefix at " ++
+        "zero frequency and the tail give q_N<=5/6. Consequently " ++
+        "one_eleventh_le_etaFinitePhaseCurrentExponent proves kappa_N>=1/11 " ++
+        "for every N. This is a floor on this upper-bound formula, not " ++
+        "on any zero's displacement. A larger cutoff in this single " ++
+        "projection cannot eliminate its power. The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

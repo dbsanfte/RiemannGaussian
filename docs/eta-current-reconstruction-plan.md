@@ -4019,6 +4019,154 @@ No improved zero strip, fixed power saving for the original return,
 or uniform weighted current bound follows from this slice. Novelty
 priority for these auxiliary results has not been established.
 
+## Checked finite eta phase bounds on the surviving cutoff power
+
+**Terminal original-current theorem:**
+[pairedEtaLeadingCurrent_firstMoment_le_finitePhase](../RiemannGaussian/EtaCurrentFinitePhasePower.lean).
+The same module proves the corresponding statements for the literal
+linear-width Gaussian return and the full signed inverse energy. These
+are unconditional theorems for actual nontrivial zeros, every finite eta
+cutoff, and every physical current cutoff. Both analytic multiplicity
+branches and their original completion constants are retained.
+
+The preceding Möbius estimates improve a coefficient on a positive power
+scale. This slice instead constrains the horizontal displacement that
+is the original current's sharp exponent. Write
+
+\[
+ F(s)=\frac{\eta(s)}s
+     =\int_{\text{actual eta support}}e^{-st}\,dt,
+ \quad \rho=\beta+i\gamma,
+ \quad a_\beta=\frac{2\beta-1}{\beta}.
+\]
+
+For `beta>1/2`, retain the full real projection residual
+
+\[
+ r_\beta(t)=e^{-t/2}-a_\beta e^{-(\beta-1/2)t}.
+\]
+
+[integral_etaPhaseProjectionResidual_sq](../RiemannGaussian/EtaPhaseProjectionKernel.lean)
+proves the exact integral, including its cross term and all three decay
+rates:
+
+\[
+ \int_0^\infty r_\beta(t)^2\,dt
+ =1-\frac{2a_\beta}{\beta}
+      +\frac{a_\beta^2}{2\beta-1}
+ =\left(\frac{1-\beta}{\beta}\right)^2.
+\]
+
+Every integrability premise is discharged. Restriction of this
+nonnegative square to the literal eta measure preserves the bound.
+Before taking any norm,
+[pairedEtaPhaseProjectionKernel_eq_phase](../RiemannGaussian/EtaPhaseProjectionBound.lean)
+and `integral_pairedEtaPhaseProjectionKernel` preserve the exact complex
+identity
+
+\[
+ e^{-(1+i\gamma)t}-a_\beta e^{-(\beta+i\gamma)t}
+ =e^{-i\gamma t}e^{-t/2}r_\beta(t),
+ \qquad
+ \int_{\rm eta}(\cdots)=F(1+i\gamma)-a_\beta F(\rho).
+\]
+
+The actual zero annihilates `F(rho)`. Cauchy--Schwarz and the proved
+base square mass at most one therefore give
+[norm_pairedEtaPhaseBoundaryValue_le_zero_ratio](../RiemannGaussian/EtaPhaseProjectionBound.lean):
+
+\[
+ q(\gamma):=|F(1+i\gamma)|\le\frac{1-\beta}{\beta}
+ \quad(\beta>1/2).
+\]
+
+With `delta=q/(1+q)`, the right edge bound is immediate in this half
+strip and follows from `delta≤1/2` in the other half. Completion
+reflection sends an actual zero to `1-conj(rho)` at the same ordinate,
+so
+[nontrivialZetaZero_mem_etaPhaseProjection_strip](../RiemannGaussian/EtaPhaseProjectionMargin.lean)
+proves `delta(gamma)≤beta≤1-delta(gamma)` for every actual zero.
+
+For the original paired prefix `eta_N`, with exactly `2N` terms, set
+
+\[
+ P_N(y)=\frac{\eta_N(1+iy)}{1+iy},\qquad
+ \varepsilon_N=\frac1{2N+1},\qquad
+ q_N(y)=\max(0,|P_N(y)|-\varepsilon_N),\qquad
+ \delta_N(y)=\frac{q_N(y)}{1+q_N(y)}.
+\]
+
+[norm_pairedEtaPhaseBoundaryValue_sub_finite_le](../RiemannGaussian/EtaFinitePhaseMargin.lean)
+proves `|F(1+iy)-P_N(y)|≤epsilon_N` at every `N,y`. This is the
+original full paired-eta tail estimate, divided by the same nonzero
+complex spectral parameter. In particular,
+
+\[
+ 0\le q_N\le q,\qquad q-q_N\le2\varepsilon_N,
+ \qquad0\le\delta-\delta_N\le2\varepsilon_N.
+\]
+
+Thus
+[nontrivialZetaZero_mem_etaFinitePhase_strip](../RiemannGaussian/EtaFinitePhaseMargin.lean)
+is a literal finite arithmetic zero-location bound with no assumed
+approximation, convergence, or numerical tail certificate.
+
+Combine it with the preceding multiplicity-sensitive prime margin:
+
+\[
+ p_{\rm old}(m,y)=1-2\Delta_{\rm prime}(m,y),\qquad
+ \kappa_{m,N}(y)=\min\left(p_{\rm old}(m,y),
+                  \frac{1-q_N(y)}{1+q_N(y)}\right).
+\]
+
+[pairedEtaCurrentHorizontalDisplacement_le_finitePhase](../RiemannGaussian/EtaCurrentFinitePhasePower.lean)
+proves `|2 beta-1|≤kappa_{m,N}(gamma)`, where `m` is the actual
+analytic multiplicity. The minimum never increases the previous exponent.
+The original current consequently obeys
+
+\[
+ \sum_{n<K}(2n+1)|J_\rho(n)|
+ \le C_\rho(K+1)^{\kappa_{m,N}(\gamma)}
+ \quad\text{for every }N,K.
+\]
+
+The actual Gaussian return has the same constant and exponent. For
+`E_rho`, the full signed inverse energy, the constant is the same
+`C_rho` plus the original summable zero-energy transport budget.
+`etaFinitePhaseCurrentExponent_bounds` also proves the combined exponent
+is below one. No current, physical cutoff, weight, or multiplicity has
+been replaced by an auxiliary model.
+
+**Proved limitation of this particular bound.** The boundary norm is
+at most its zero-frequency value. The exact first prefix
+`P_1(0)=1/2` and its tail at most `1/3` give `q(y)≤5/6` for all
+ordinates. Since `p_old≥7/8`,
+[one_eleventh_le_etaFinitePhaseCurrentExponent](../RiemannGaussian/EtaCurrentFinitePhasePower.lean)
+proves
+
+\[
+ \kappa_{m,N}(\gamma)\ge\frac1{11}
+ \quad\text{for every actual zero and every }N.
+\]
+
+This is a lower bound on the **available upper-bound exponent**, not
+on `|2 beta-1|` and not on any actual current's growth. It shows that
+simply increasing this one finite prefix cannot remove the positive
+power. The finite approximation converges to a fixed boundary value,
+not to a value that forces `beta=1/2`. No strict improvement at a
+specified numerical ordinate or height window is certified here, and
+no zero-count proportion or RH proof follows.
+
+The Hilbert projection mechanism is classical in character. Burnol's
+[quantitative Nyman--Beurling projection work](https://arxiv.org/abs/math/9910055)
+is relevant prior context. The
+[generalized polynomial approximation work of Alouges, Darses, and Hillion](https://arxiv.org/abs/2006.02953)
+also separates approximation from the remaining coefficient/Gram
+control. Neither supplies the missing unconditional estimate here.
+This slice adds the explicit actual eta projection, finite tail transport,
+and both-branch original-current exponent theorem to this repository;
+novelty priority is not claimed.
+
 ## Next mathematical obligations
 
 The exact-pole prime input now excludes the larger explicit
@@ -4028,10 +4176,18 @@ factor of thirty-one at every nonzero ordinate. The simultaneous edge
 windows now additionally exclude multiple zeros and nearby distinct pairs
 in their stated rectangles, and discharge the original head branch near
 either edge. These constraints do not force real part `1/2`,
-and the return bound has a proved positive exponent. The remaining task is to rule out the interior
-off-critical contribution while retaining the unchanged absolute weighted
-target. The following inverse and heat carriers remain available for that
-task; their established identities alone do not supply the missing estimate.
+and the return bound retains a positive exponent. The new finite eta
+projection constrains the actual horizontal displacement directly, with
+all infinite-to-finite errors discharged. Its combined exponent formula
+has a proved floor `1/11`, uniformly in the finite approximation cutoff.
+The immediate task is therefore stronger joint control, for example an
+approximation using several zero-annihilating eta translates and the full
+complex residual Gram, with dimension and tail costs proved. Positivity
+of a finite Gram or convergence of each separate entry does not supply
+that control. The remaining target is to rule out the interior off-critical
+contribution while retaining the unchanged absolute weighted moment. The
+following inverse and heat carriers remain available for that task; their
+established identities alone do not supply the missing estimate.
 The independent Gaussian reciprocal contour now gives a bound for the
 actual convergent Möbius sum, with its full integral identification and
 every horizontal and infinite-tail correction proved. The moving mass

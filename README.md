@@ -27,45 +27,47 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek the uniform weighted bound for the original signed inverse energy using quantitative Möbius cancellation. The finite hyperbola identity now controls the harmonic inverse weight and accumulated signed coefficients across an entire inner-truncated physical region, with every floor error included. Next estimate the completed complex weights and both reflected quadratic interactions together. Linear coefficient cancellation does not supply the global bound; RH remains open.
+Attack the surviving cutoff power through the actual eta phase and its continuous projection geometry. A finite paired eta prefix, with its complete tail error, now bounds every zero's horizontal displacement and the original current's exponent. One projection has a proved positive exponent floor, so a larger cutoff alone cannot close the goal. Next seek stronger joint control from zero-annihilating eta translates and their full complex Gram. The uniform weighted bound and RH remain open.
 
 ## Latest Update
 
-Lean now proves **quantitative harmonic Möbius cancellation and a joint
-signed coefficient bound for the actual truncated inverse**.
-Put `A(h)=10^15 h^3` and `H_mu(D)=sum_{d≤D} mu(d)/d`.
-For all sufficiently large `h`,
+Lean now proves a **finite arithmetic bound on the original current's
+cutoff exponent**. For an actual zero `rho=beta+i gamma`, define
 
 \[
- |H_\mu(D)|\le (6+4C_\mu)e^{-h/8}
- \qquad\text{when }D\ge e^{2A(h)}.
+ q_N(\gamma)=\max\left(0,
+ \left|\frac{\eta_N(1+i\gamma)}{1+i\gamma}\right|
+ -\frac1{2N+1}\right),
+ \qquad \delta_N=\frac{q_N}{1+q_N},
 \]
 
-[exists_moebiusHarmonicPrefix_cubic_rate](RiemannGaussian/MoebiusHarmonicCancellation.lean)
-uses the exact finite hyperbola identity, the previous unsmoothed
-cancellation rate, and all integer rounding terms. The literal ordered
-partial sums tend to zero; no absolute convergence is asserted.
+where `eta_N` is the original paired prefix with `2N` terms.
+[nontrivialZetaZero_mem_etaFinitePhase_strip](RiemannGaussian/EtaFinitePhaseMargin.lean)
+proves `delta_N ≤ beta ≤ 1−delta_N` for every `N`. Its analytic input is
+an exactly integrated exponential projection on the literal eta support;
+the infinite-to-finite error is proved, with no numerical premise.
 
-For the original inverse region `e*d≤M, d≤D`, let `c_D(n)` be the sum
-of the original inner Möbius signs over factor pairs `e*d=n` in that
-region. The complete signed coefficient sum satisfies
+If `p_old` is the previously proved multiplicity-sensitive prime exponent,
+set `kappa_N=min(p_old,(1−q_N)/(1+q_N))`.
+[pairedEtaLeadingCurrent_firstMoment_le_finitePhase](RiemannGaussian/EtaCurrentFinitePhasePower.lean)
+then proves, at every physical cutoff `K`,
 
 \[
- \sum_{n\le M}c_D(n)=M H_\mu(D)-R(M,D),\qquad |R(M,D)|\le D.
+ \sum_{n<K}(2n+1)|J_\rho(n)|\le C_\rho(K+1)^{\kappa_N}.
 \]
 
-Thus [exists_pairedEtaInverseInnerCapCoefficient_cubic_rate](RiemannGaussian/EtaInverseHarmonicCoefficients.lean)
-proves `abs(sum c_D(n)) ≤ (6+4C_mu) exp(−h/8) M + D` at every physical
-cutoff `M` when `D≥exp(2A(h))`. Exact product grouping
-retains the original completed moments, complex phase, translated centers,
-and divided cutoffs before this scalar coefficient estimate.
+The literal linear-width Gaussian return and full signed inverse energy
+inherit the same exponent, retaining their finite transport budgets.
+Taking the minimum never weakens the preceding bound; no strict numerical
+improvement at a specified height is certified in this slice.
 
-This bounds the signed linear coefficient sum. It does not bound its
-absolute mass or the completed quadratic current. The starting scale is
-existential, and no numerical threshold or novelty priority is claimed.
-The [uniform weighted goal](docs/eta-current-reconstruction-plan.md),
-the full reflected interactions, and RH remain open. This slice does not
-improve the zero strip.
+The method's limit is also checked:
+[one_eleventh_le_etaFinitePhaseCurrentExponent](RiemannGaussian/EtaCurrentFinitePhasePower.lean)
+proves `kappa_N ≥ 1/11` for every `N`. This is a floor on this **upper-bound
+formula**, not on a zero's actual displacement. Increasing this one
+prefix cannot make its exponent zero. The
+[uniform weighted goal](docs/eta-current-reconstruction-plan.md) and RH
+remain open; novelty priority is not claimed.
 
 ## Notable Formalisations
 
@@ -81,6 +83,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Gaussian heat and reflected-zero Grams** | The complete matched Gaussian correlation equals the boundary heat-residue sum. At positive heat time, its vanishing is equivalent to RH. | [riemannXiUpperReflectedPairGaussianTotal_eq_boundaryHeatResidueTotal](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L187), [riemannXiUpperReflectedPairGaussianTotal_eq_zero_iff_rh](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L197) |
 | **Suzuki arithmetic and spectral formulas** | Suzuki's positive-time arithmetic function equals its spectral expansion on `Im z > 1/2`. The literal arithmetic `Psi` is strictly positive on a nonzero punctured neighbourhood of the origin. | [riemannXiSuzukiArithmeticPPositive_eq_spectral_safe](RiemannGaussian/RiemannXiSuzukiWeilVerticalLimit.lean#L462), [exists_pos_on_abs_riemannXiSuzukiPsi](RiemannGaussian/RiemannXiSuzukiPointwiseLocalPositivity.lean#L298) |
 | **Xi growth and divisor summability** | Unconditional `exp(O(R log R))` xi growth and convergence of the multiplicity-weighted inverse-square zero series. | [riemannXi_logLinearGrowth](RiemannGaussian/GaussianXiLogLinearGrowth.lean#L315), [summable_distinct_zetaZeroInverseSquareNorm](RiemannGaussian/GaussianXiInverseSquareSummability.lean#L294) |
+| **Finite eta phase bounds on zero coordinates and current powers** | An exact continuous exponential projection and a finite paired eta prefix with complete tail error give `delta_N ≤ Re(rho) ≤ 1−delta_N`. The resulting exponent bounds both original current branches, the Gaussian return, and the full inverse energy at every cutoff. Its proved `1/11` floor limits this particular upper-bound formula. | [norm_pairedEtaPhaseBoundaryValue_le_zero_ratio](RiemannGaussian/EtaPhaseProjectionBound.lean), [nontrivialZetaZero_mem_etaFinitePhase_strip](RiemannGaussian/EtaFinitePhaseMargin.lean), [pairedEtaCurrentFullInverseEnergy_firstMoment_le_finitePhase](RiemannGaussian/EtaCurrentFinitePhasePower.lean) |
 | **Explicit zero-free strip from signed prime positivity** | The exact pole geometry and complete signed local zero sum give a multiplicity-sensitive margin more than 31 times the preceding signed margin. Every actual zero of absolute ordinate at least one stays at least `1/(56458 log(abs(gamma)+22))` from either edge. | [multiplicity_le_quadratic_signed_zero_gap](RiemannGaussian/ZetaSignedExactPole.lean), [nontrivialZetaZero_mem_signedQuadratic_strip](RiemannGaussian/ZetaSignedQuadraticMargin.lean), [nontrivialZetaZero_mem_quadratic_reciprocal_log_strip](RiemannGaussian/ZetaSignedQuadraticComparison.lean) |
 | **Simultaneous edge-window simplicity and separation** | At absolute center height at least one, a rectangle of width and ordinate half-width `1/(6000 log(abs(y)+22))` adjoining either strip edge has total analytic multiplicity at most one. The common complex pole sum and its full complement remain available. | [sum_multiplicity_le_one_in_signedEdgeWindow](RiemannGaussian/ZetaSignedWindowMultiplicity.lean), [sum_multiplicity_le_one_in_signedLeftEdgeWindow](RiemannGaussian/ZetaSignedZeroSeparation.lean), [signedEdgeWindowWidth_lt_im_sub_of_ne](RiemannGaussian/ZetaSignedZeroSeparation.lean) |
 | **Finite Hardy-space geometry** | Orthogonality in genuine boundary `L²`, including repeated roots, and a basis-independent determinant formula for the residual Gram operator. | [finiteModelBoundaryLp_inner_residualInner_negative_eq_zero](RiemannGaussian/FiniteHardyOrthogonality.lean#L260), [finiteHardyCrossAngleComplementGramOperator_det_eq_basisResidual_ratio](RiemannGaussian/FiniteHardyMetricDeterminant.lean#L294) |
