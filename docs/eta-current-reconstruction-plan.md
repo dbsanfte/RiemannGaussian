@@ -69,6 +69,7 @@ the objective.
 | Discharge the full coefficient cost and actual infinite tail for a specified arithmetic candidate | `pairedEtaMoebiusTrialCoefficient_sum_abs_le` in [EtaMoebiusTrialCoefficients.lean](../RiemannGaussian/EtaMoebiusTrialCoefficients.lean), `pairedEtaDyadicMoebiusTrialPenalty_tendsto_zero` in [EtaMoebiusTrialPenalty.lean](../RiemannGaussian/EtaMoebiusTrialPenalty.lean), and `pairedEtaDyadicMoebiusTrialResidualTail_tendsto_zero` in [EtaMoebiusTrialResidual.lean](../RiemannGaussian/EtaMoebiusTrialResidual.lean). | The exact balanced logarithmic Möbius law has zero signed coefficient mass, absolute sum at most `2(k+1)`, and full penalty at most `(k+1)^2/2^k→0`. The actual entire omitted residual integral also tends to zero. The canonical deficit is at most the growing finite residual plus that vanishing allowance. Decay of the finite residual and canonical deficit remains open. |
 | Remove grid-refinement costs from the actual arithmetic candidate comparison | `pairedEtaMoebiusTrialRefinementError_le` in [EtaMoebiusTrialRefinement.lean](../RiemannGaussian/EtaMoebiusTrialRefinement.lean), and `pairedEtaDyadicMoebiusResidual_sub_refined_tendsto_zero`, `pairedEtaDyadicTranslateDeficit_le_refined_moebius` in [EtaMoebiusRefinedBudget.lean](../RiemannGaussian/EtaMoebiusRefinedBudget.lean). | With the stage arithmetic weights fixed, every positive integer refinement of the physical grid changes the full critical square approximation and complete residual energy by proved vanishing amounts. The canonical deficit and actual zero displacement are at most any refined arithmetic residual plus an explicit allowance tending to zero. Decay of that arithmetic residual remains open. |
 | Prove decay of part of the refined arithmetic residual itself | `pairedEtaMoebiusLogHarmonic_tendsto_zero` in [EtaMoebiusLogHarmonic.lean](../RiemannGaussian/EtaMoebiusLogHarmonic.lean), `pairedEtaMoebiusTrialHeadResidual_eq` in [EtaMoebiusTrialHead.lean](../RiemannGaussian/EtaMoebiusTrialHead.lean), and `pairedEtaDyadicMoebiusRefinedHeadResidual_tendsto_zero` in [EtaMoebiusRefinedHeadDecay.lean](../RiemannGaussian/EtaMoebiusRefinedHeadDecay.lean). | The actual residual square integral on the entire compact target interval tends to zero for every refinement schedule, using the proved signed harmonic Möbius cancellation. The full residual splits exactly into this vanishing term and the complete exterior integral over `t>log 2`. Decay of that exterior arithmetic integral, the full residual, and the canonical deficit remains open. |
+| Identify the whole refined exterior with signed arithmetic and a controlled infinite tail | `pairedEtaMoebiusTrialGridCombination_eq_arithmeticPrefix` in [EtaMoebiusGridArithmetic.lean](../RiemannGaussian/EtaMoebiusGridArithmetic.lean), the complete integrable split in [EtaMoebiusExteriorArithmetic.lean](../RiemannGaussian/EtaMoebiusExteriorArithmetic.lean), and `pairedEtaDyadicMoebiusRefinedExteriorEnergy_eq_arithmetic_add_tail` in [EtaMoebiusExteriorBudget.lean](../RiemannGaussian/EtaMoebiusExteriorBudget.lean). | The actual complete exterior equals a growing square integral of the exact signed odd/even primitive formula plus its genuine full tail. That tail is at most `(k+1)^2/4^k→0` for every refinement schedule. Every head, grid, coefficient, and tail cost in the original deficit and zero-displacement comparison is discharged. Decay of the growing signed arithmetic square integral remains open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -5064,6 +5065,132 @@ has an optimal mean-square asymptotic under RH and an additional
 inverse-derivative moment assumption; that result cannot supply the
 unconditional exterior bound required here.
 
+## Checked complete exterior arithmetic and its infinite tail
+
+The previous turn proved actual head-residual decay. The next slice retains
+the entire exterior and identifies its original finite-grid combination in
+explicit signed arithmetic. The result does not replace the exterior by
+a fixed compact region, a continuum approximation, or a numerical model.
+
+### Exact causal steps and paired arithmetic
+
+For arbitrary arithmetic weights `w`, write `A_(M,w)` for the unchanged
+balanced Möbius primitive. Its exact physical-grid coefficients satisfy
+
+\[
+ \sum_j c_{d,M,w,j}\,1_{\{a_{d,j}<v\}}
+   =A_{M,w}\!\left(\frac d{\lfloor d/e^v\rfloor+1}\right).
+\]
+
+`pairedEtaMoebiusTrialGridStep_sum` proves this identity at every real
+`v`, including nonpositive times, with no bounded-weight premise. All
+initial and terminal coefficients are included. The preceding head theorem
+is now a specialization of this actual causal-step identity; its statement
+and proof of arithmetic head decay are preserved.
+
+Each original eta interval is the difference of its two causal steps.
+With `y_d(v)=d/(floor(d/exp(v))+1)`, define
+
+\[
+ F_{N,d,M,w}(t)=\sum_{n<N}\left[
+  A_{M,w}(y_d(t-\log(2n+1)))
+ -A_{M,w}(y_d(t-\log(2n+2)))\right].
+\]
+
+`pairedEtaMoebiusTrialGridCombination_eq_arithmeticPrefix` proves
+
+\[
+ U_{d,M,w}(t)=F_{N,d,M,w}(t),\qquad t\le\log(2N+1).
+\]
+
+This is equality of the original complex carrier with the real arithmetic
+formula embedded in `Complex`. It keeps each odd/even endpoint, harmonic
+correction, weight, and exact integer rounding before any norm or square.
+The formula works for every `d`, `M`, and real weight function; alternative
+coefficient laws can therefore use the same arithmetic interface.
+
+### Complete exterior integral and quantitative omitted range
+
+Let `L=log 2` and `T_N=log(2N+1)`. The actual combination has an integrable
+critical square on every upper half-line. Its equality with `F` proves
+genuine integrability of `exp(-t)*F(t)^2` on the complete finite exterior
+window. For `N≥1`,
+`pairedEtaMoebiusTrialExteriorEnergy_eq_arithmetic_add_tail` gives
+
+\[
+ \int_L^\infty e^{-t}|U_{d,M,w}(t)|^2dt
+  =\int_L^{T_N}e^{-t}F_{N,d,M,w}(t)^2dt
+   +\int_{T_N}^\infty e^{-t}|U_{d,M,w}(t)|^2dt.
+\]
+
+The last term is the actual entire integral, not a replaced allowance.
+For `|w(n)|≤1` on `1≤n≤M`, the complete coefficient mass bound gives
+
+\[
+ \int_{T_N}^\infty e^{-t}|U_{d,M,w}(t)|^2dt
+ \le\frac{4M^2}{2N+1}.
+\]
+
+The estimate is independent of `d` and includes every infinite eta band.
+For the original logarithmic family, let
+
+\[
+ d'_{k,q}=2^k(q+1),\quad M_k=k+1,\quad N_k=4(2^k)^2,
+\]
+
+and let `V_k(q)` be the actual growing arithmetic square integral of `F`
+on `(log 2,T_(N_k)]`. The existing exterior `X'_k(q)` satisfies
+
+\[
+ X'_k(q)=V_k(q)+\tau'_k(q),\qquad
+ 0\le\tau'_k(q)\le L^{\rm far}_k:=(k+1)^2/4^k\to0.
+\]
+
+`pairedEtaDyadicMoebiusRefinedExteriorEnergy_eq_arithmetic_add_tail`
+retains the exact equality. The actual entire tail limit is
+`pairedEtaDyadicMoebiusRefinedArithmeticTail_tendsto_zero`, proved for
+every `q : Nat → Nat`. Thus `X'_k(q_k)-V_k(q_k)→0`, with the complete
+omitted region controlled uniformly in the refinement schedule.
+
+Adding the previously proved head, grid, and coefficient allowance `C_k`
+gives the unchanged original comparison
+
+\[
+ |2\Re\rho-1|W_\rho\le D_k\le V_k(q)+
+       \underbrace{L^{\rm far}_k+C_k}_{\to0}.
+\]
+
+Its compiled terminal theorem is
+`pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_exterior_arithmetic`.
+Every ancestor in this chain remains unconditional. **The limit of
+`V_k(q_k)` itself is not proved.** Its square retains all cross terms,
+and its integration interval grows with the original cutoff. Bounding
+individual primitive values or replacing the signed square by a sum of
+absolute channel bounds does not establish the missing joint estimate.
+
+### Coefficient-family audit from primary literature
+
+The classical logarithmic Möbius polynomial has an additional possible
+obstruction which must inform the coefficient search. [Wei and Wu,
+Proposition 1.9](https://bimsa.net/doc/publication/1424.pdf), in
+*A characterization of the zero-free region of the Riemann zeta function
+and its applications*, proves that decay of its standard critical-line
+Nyman–Beurling mean square implies RH **and simplicity of all zeros**.
+Their Theorem 1.10 gives an RH equivalence using lines strictly to the
+right of the critical line, and also a critical-line boundedness criterion.
+These are external mathematical results, not imported Lean theorems.
+
+Our balanced eta primitive has an extra harmonic correction and eta
+factor. A rigorous norm comparison with that classical approximation is
+not yet in the checked chain. Consequently this slice does **not** claim
+that our exact family is impossible, that it forces simplicity, or that
+RH alone suffices to make it converge. The general-weight arithmetic
+identity keeps alternative bounded tapers available without changing the
+canonical minimizing family or the original weighted-current objective.
+The next mathematical work is to estimate the full signed arithmetic
+square and audit such a comparison before assuming that the linear
+logarithmic taper is the final sufficient coefficient law.
+
 ## Next mathematical obligations
 
 The exact-pole prime input now excludes the larger explicit
@@ -5086,12 +5213,18 @@ grid has full target residual `E'_k` satisfying `D_k≤E'_k+A_k`, where
 to zero by the exact logarithmic harmonic identity and complete finite-grid
 head formula. The full residual equals this vanishing head term plus the
 unchanged exterior energy `X'_k` on `t>log 2`; the canonical deficit is
-at most `X'_k` plus a proved vanishing allowance. The immediate task is to
-bound this complete exterior arithmetic integral, including the region
-which grows with the arithmetic cutoff, or find a better structured
-candidate with a provable complete bound. Grid stability permits arbitrary
-integer refinements, but no continuous Möbius-multiplier identification or
-full residual decay is proved. The desired `D_k→0` remains open. Numerical
+at most `X'_k` plus a proved vanishing allowance. The whole exterior now
+also equals a growing square integral `V_k` of the exact signed odd/even
+primitive formula plus a genuine infinite tail at most `(k+1)^2/4^k`.
+The original zero displacement is bounded by `V_k` plus an allowance
+tending to zero. The immediate task is a joint estimate for this full
+growing arithmetic square, or a better structured candidate with a
+provable complete bound. The identity is available for arbitrary real
+weights, retaining every physical rounding and signed endpoint. The
+classical linear logarithmic taper has the additional simplicity issue
+recorded above; that issue has not been transported to our carrier in
+Lean. Grid stability permits arbitrary integer refinements, but no
+continuous Möbius-multiplier identification or full residual decay is proved. The desired `D_k→0` remains open. Numerical
 decreases and the definition of a minimizing coefficient law do not prove
 this estimate. The positive target normalization must also be bounded
 in the intended zero region if a numerical strip is to be certified.

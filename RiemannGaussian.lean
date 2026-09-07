@@ -774,3 +774,6 @@ import RiemannGaussian.EtaMoebiusRefinedBudget
 import RiemannGaussian.EtaMoebiusLogHarmonic
 import RiemannGaussian.EtaMoebiusTrialHead
 import RiemannGaussian.EtaMoebiusRefinedHeadDecay
+import RiemannGaussian.EtaMoebiusGridArithmetic
+import RiemannGaussian.EtaMoebiusExteriorArithmetic
+import RiemannGaussian.EtaMoebiusExteriorBudget

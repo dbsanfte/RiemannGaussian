@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "The actual refined logarithmic Möbius residual square integral on the entire compact target interval tends to zero for every grid-refinement schedule, using proved signed harmonic cancellation; decay of the complete exterior arithmetic integral and canonical deficit remains open"
-    lineOne := "arithmetic head"
-    lineTwo := "residual → 0"
-    role := "unconditional"
+    label := "The complete refined exterior energy is exactly a growing square integral of the original signed odd/even arithmetic primitive plus its genuine infinite tail, bounded by (k+1)^2/4^k for every refinement; decay of the growing arithmetic square integral remains open"
+    lineOne := "exterior arithmetic"
+    lineTwo := "exact + full tail"
+    role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaDyadicMoebiusRefinedHeadResidual_tendsto_zero
+      ``RiemannGaussian.pairedEtaDyadicMoebiusRefinedExteriorEnergy_eq_arithmetic_add_tail
   }
 ]
 
@@ -228,8 +228,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">The actual Möbius residual tends to zero on the target interval. " ++
-      "Complete exterior arithmetic decay and the uniform current bound remain open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">The complete exterior has exact signed arithmetic and a vanishing full tail. " ++
+      "The growing square estimate and uniform current bound remain open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -945,6 +945,27 @@ run_cmd do
         "proved vanishing head, grid, and coefficient allowance. " ++
         "Decay of the exterior arithmetic integral, the full residual, " ++
         "and D_k is unproved; no numerical zero-strip improvement follows. " ++
+        "The complete exterior now has an exact finite signed arithmetic " ++
+        "description with the genuine infinite tail retained. For arbitrary " ++
+        "real arithmetic weights w, let A_(M,w) be the original balanced " ++
+        "Moebius primitive and y_d(v)=d/(floor(d/exp(v))+1). For every " ++
+        "t<=log(2*N+1), pairedEtaMoebiusTrialGridCombination_eq_arithmeticPrefix " ++
+        "identifies the actual U_(d,M,w)(t) with " ++
+        "sum_(n<N)[A_(M,w)(y_d(t-log(2*n+1)))-A_(M,w)(y_d(t-log(2*n+2)))]. " ++
+        "All signs, odd/even endpoints, harmonic corrections, and grid rounding " ++
+        "are retained before squaring. Actual integrability is proved. " ++
+        "For abs(w(n))<=1, the entire infinite tail past log(2*N+1) is at most " ++
+        "4*M^2/(2*N+1), independently of the grid dimension. At M=k+1, " ++
+        "N=4*(2^k)^2, every refinement has actual full tail at most " ++
+        "(k+1)^2/4^k, which tends to zero. " ++
+        "pairedEtaDyadicMoebiusRefinedExteriorEnergy_eq_arithmetic_add_tail " ++
+        "retains the exact complete exterior split. The unchanged canonical " ++
+        "deficit and original actual zero displacement are bounded by the " ++
+        "growing signed arithmetic square integral plus an allowance tending " ++
+        "to zero, including head, grid, coefficient, and infinite-tail costs. " ++
+        "Decay of that growing arithmetic square integral is unproved. " ++
+        "The formula does not identify a continuous Moebius candidate, prove " ++
+        "full residual decay, or certify a sharper numerical zero strip. " ++
         "The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++

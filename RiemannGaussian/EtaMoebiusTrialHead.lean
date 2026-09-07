@@ -61,11 +61,11 @@ private theorem gridPoint_lt_iff_floor {d : ℕ} (j : Fin d) (t : ℝ) :
     hf, div_lt_iff₀ (Real.exp_pos t)]
   rw [mul_comm]
 
-/-- The complete original finite-grid combination telescopes to its signed arithmetic primitive throughout the target interval. -/
-theorem pairedEtaMoebiusTrialGridCombination_eq_head_primitive (d M : ℕ) (w : ℕ → ℝ)
-    {t : ℝ} (ht : t ≤ Real.log 2) :
-    pairedEtaMoebiusTrialGridCombination d M w t =
-      (pairedEtaMoebiusTrialPrimitive M w (pairedEtaMoebiusTrialHeadCoordinate d t) : ℂ) := by
+/-- The complete coefficient sum against an original causal step telescopes to the exact sampled arithmetic primitive at every time. -/
+theorem pairedEtaMoebiusTrialGridStep_sum (d M : ℕ) (w : ℕ → ℝ) (t : ℝ) :
+    (∑ j : Fin d, pairedEtaMoebiusTrialCoefficient d M w j *
+      (if pairedEtaMoebiusTrialGridPoint d (j.1 + 1) < t then 1 else 0)) =
+        pairedEtaMoebiusTrialPrimitive M w (pairedEtaMoebiusTrialHeadCoordinate d t) := by
   let A := fun j : ℕ ↦ pairedEtaMoebiusTrialPrimitive M w ((d : ℝ) / (j + 1 : ℝ))
   let r := ⌊(d : ℝ) / Real.exp t⌋₊
   have hA : A d = 0 := pairedEtaMoebiusTrialPrimitive_eq_zero_of_lt_one M w
@@ -80,18 +80,27 @@ theorem pairedEtaMoebiusTrialGridCombination_eq_head_primitive (d M : ℕ) (w : 
       apply (div_lt_one (by positivity)).mpr
       exact_mod_cast (show d < r + 1 by omega)
   rw [hAr] at hsum
-  have hcomb : pairedEtaMoebiusTrialGridCombination d M w t =
-      ((∑ j : Fin d, if r ≤ j.1 then A j.1 - A (j.1 + 1) else 0) : ℝ) := by
-    unfold pairedEtaMoebiusTrialGridCombination pairedEtaTranslatedCombination
-    rw [Complex.ofReal_sum]
-    apply Finset.sum_congr rfl
-    intro j _
-    rw [pairedEtaTranslatedColour_eq_head_ite (pairedEtaMoebiusTrialGridPoint_nonneg _ _) ht]
-    simp only [gridPoint_lt_iff_floor, ← Complex.ofReal_mul]
-    split_ifs <;> simp [pairedEtaMoebiusTrialCoefficient, A, Nat.cast_add, Nat.cast_one, add_assoc]
-    norm_num
-  rw [hcomb]
-  exact_mod_cast (by simpa only [← Fin.sum_univ_eq_sum_range, A, r, pairedEtaMoebiusTrialHeadCoordinate] using hsum)
+  calc
+    _ = ∑ j : Fin d, if r ≤ j.1 then A j.1 - A (j.1 + 1) else 0 := by
+      apply Finset.sum_congr rfl
+      intro j _
+      simp only [gridPoint_lt_iff_floor]
+      split_ifs <;> simp [pairedEtaMoebiusTrialCoefficient, A, Nat.cast_add, Nat.cast_one, add_assoc]
+      norm_num
+    _ = _ := by
+      simpa only [← Fin.sum_univ_eq_sum_range, A, r, pairedEtaMoebiusTrialHeadCoordinate] using hsum
+
+/-- The complete original finite-grid combination telescopes to its signed arithmetic primitive throughout the target interval. -/
+theorem pairedEtaMoebiusTrialGridCombination_eq_head_primitive (d M : ℕ) (w : ℕ → ℝ)
+    {t : ℝ} (ht : t ≤ Real.log 2) :
+    pairedEtaMoebiusTrialGridCombination d M w t =
+      (pairedEtaMoebiusTrialPrimitive M w (pairedEtaMoebiusTrialHeadCoordinate d t) : ℂ) := by
+  rw [← pairedEtaMoebiusTrialGridStep_sum d M w t, Complex.ofReal_sum]
+  unfold pairedEtaMoebiusTrialGridCombination pairedEtaTranslatedCombination
+  apply Finset.sum_congr rfl
+  intro j _
+  rw [pairedEtaTranslatedColour_eq_head_ite (pairedEtaMoebiusTrialGridPoint_nonneg _ _) ht,
+    Complex.ofReal_mul]
 
 /-- On the positive target interval the rounded coordinate remains above one and strictly below the true physical coordinate. -/
 theorem pairedEtaMoebiusTrialHeadCoordinate_bounds {d : ℕ} (hd : 0 < d) {t : ℝ}
