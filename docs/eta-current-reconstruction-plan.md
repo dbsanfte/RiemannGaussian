@@ -3668,6 +3668,155 @@ while retaining every divided cutoff, completion factor, and mixed term.
 The current exponent and zero-free strip are unchanged. The uniform
 weighted arithmetic goal remains open; no novelty priority is claimed.
 
+## Checked finite Möbius cancellation and original quotient blocks
+
+The new finite-cutoff chain removes the Gaussian smoothing and then
+applies the resulting cancellation to the original complex coefficient
+blocks with a common divided cutoff.
+
+[GaussianMoebiusHeatScale.lean](../RiemannGaussian/GaussianMoebiusHeatScale.lean)
+proves `gaussianMoebiusSum_le_reciprocal_log_gain_eventually` at every
+fixed `tau>0`. The full contour estimate still includes both horizontal
+corrections and both infinite tails. The threshold depends on `tau`;
+arbitrarily small positive heat times are permitted.
+[GaussianMoebiusPrimitive.lean](../RiemannGaussian/GaussianMoebiusPrimitive.lean)
+proves a global bound for `S_tau(a)/exp(a)` and the cumulative limit
+
+\[
+ U_\tau(a)=\int_{-\infty}^a S_\tau(u)\,du,
+ \qquad U_\tau(a)/e^a\longrightarrow0.
+\]
+
+Let
+
+\[
+ M_\mu(M)=\sum_{n=1}^M\mu(n),\qquad
+ g_\tau(v)=e^{-v^2/(4\tau)},\qquad
+ A_\tau=\sqrt{4\pi\tau}.
+\]
+
+[GaussianMoebiusCumulativeAtoms.lean](../RiemannGaussian/GaussianMoebiusCumulativeAtoms.lean)
+proves summability of the absolute integrals of the actual arithmetic
+atoms up to each real cutoff.
+[MoebiusGaussianCutoff.lean](../RiemannGaussian/MoebiusGaussianCutoff.lean)
+then proves `gaussianMoebiusCumulative_eq_smoothed_finitePrefix`:
+
+\[
+ U_\tau(a)=
+ \int_{\mathbb R}g_\tau(v)M_\mu(\lfloor e^{a+v}\rfloor)\,dv.
+\]
+
+The source identity retains every signed integer endpoint.
+[MoebiusFiniteCutoff.lean](../RiemannGaussian/MoebiusFiniteCutoff.lean)
+proves the literal prefix displacement bound with one floor-error unit.
+Consequently, `abs_moebiusFinitePrefix_gaussian_error_le` gives
+
+\[
+ |A_\tau M_\mu(\lfloor e^a\rfloor)-U_\tau(a)|
+ \le e^a\int_{\mathbb R}g_\tau(v)|e^v-1|\,dv+A_\tau.
+\]
+
+The exact exponential moments in
+[GaussianMoebiusCutoffKernel.lean](../RiemannGaussian/GaussianMoebiusCutoffKernel.lean)
+give, for every `eta>0`,
+
+\[
+ \frac{\int g_\tau(v)|e^v-1|\,dv}{A_\tau}
+ \le \eta+\frac{e^{4\tau}-2e^\tau+1}{\eta}.
+\]
+
+`exists_moebiusCutoffGaussian_error_le` proves that a positive heat
+time makes this normalized error as small as prescribed.
+All integrability and arithmetic exchanges are discharged.
+[MoebiusFiniteCancellation.lean](../RiemannGaussian/MoebiusFiniteCancellation.lean)
+therefore proves `moebiusFinitePrefix_div_tendsto_zero`:
+
+\[
+ M_\mu(M)/M\longrightarrow0.
+\]
+
+This is the ordinary unsmoothed finite sum. The real-cutoff version
+retains `floor(X)` and proves `M_mu(floor X)/X→0` as well.
+
+The original complex weights are then retained in
+[MoebiusFiniteMellin.lean](../RiemannGaussian/MoebiusFiniteMellin.lean).
+Writing `P_s(M)=sum_{1≤n≤M} mu(n)n^(-s)`,
+`complexMoebiusFinitePrefix_eq_abel` proves the exact finite identity
+
+\[
+ P_s(M)=M_\mu(M)(M+1)^{-s}
+ +\sum_{n=0}^{M-1}M_\mu(n+1)
+   \bigl((n+1)^{-s}-(n+2)^{-s}\bigr).
+\]
+
+The complete endpoint and weight differences remain complex.
+The existing positive-axis power derivative bound and the proved finite
+Möbius remainder give
+[exists_complexMoebiusFinitePrefix_power_remainder](../RiemannGaussian/MoebiusFiniteMellinBound.lean):
+for every fixed `0<Re(s)<1` and `eps>0`, one finite `C_s,eps` satisfies
+
+\[
+ \|P_s(M)\|\le\varepsilon(M+1)^{1-\Re(s)}+C_{s,\varepsilon}
+ \quad\hbox{for every }M.
+\]
+
+[complexMoebiusFinitePrefix_normalized_tendsto_zero](../RiemannGaussian/MoebiusFiniteMellinCancellation.lean)
+proves the full complex limit `(M+1)^(s−1)P_s(M)→0`.
+The original eta completion is retained in the actual-zero
+specialization in the same module.
+
+[MoebiusDividedCutoffBlocks.lean](../RiemannGaussian/MoebiusDividedCutoffBlocks.lean)
+now keeps the actual divisor set `{d∈[1,M] : M/d=q}`, for `q>0`.
+It is exactly `[M/(q+1)+1,M/q]` with integer division. Its full complex
+coefficient is
+
+\[
+ D_s(M,q)=\sum_{\substack{1\le d\le M\\ \lfloor M/d\rfloor=q}}
+   \mu(d)d^{-s}
+ =P_s(\lfloor M/q\rfloor)-P_s(\lfloor M/(q+1)\rfloor).
+\]
+
+`exists_complexMoebiusDividedCutoffBlock_power_remainder` supplies one
+remainder independent of both `M` and `q`:
+
+\[
+ \|D_s(M,q)\|\le
+ \varepsilon(\lfloor M/q\rfloor+1)^{1-\Re(s)}+C_{s,\varepsilon}.
+\]
+
+Finally,
+[EtaMoebiusDividedBlockCancellation.lean](../RiemannGaussian/EtaMoebiusDividedBlockCancellation.lean)
+identifies the original zeroth completed moment block exactly as
+
+\[
+ \sum_{\substack{1\le d\le M\\ \lfloor M/d\rfloor=q}}
+   \operatorname{MomentMoebiusTerm}_{\rho,0}(a;M,d)
+ =D_\rho(M,q)\,X_\rho\,
+   \operatorname{UnpairedEtaPrefix}_{\rho}(q).
+\]
+
+Every divided cutoff, completion phase, and odd last endpoint survives.
+The terminal theorem
+`exists_pairedEtaCompletedMoebius_divided_block_remainder` bounds the
+norm of this actual block by
+
+\[
+ \bigl[\varepsilon(\lfloor M/q\rfloor+1)^{1-\beta}+C_{\rho,\varepsilon}\bigr]\,
+ \|X_\rho\|\left(\frac{\|\rho\|}{\beta}+1\right)q^{-\beta},
+ \qquad \beta=\Re(\rho).
+\]
+
+The constant is independent of `a,M,q`; the zero equation supplies the
+displayed endpoint factor. The result applies equally to the actual
+reflected partner by instantiation.
+
+This closes a finite-cutoff coefficient estimate, not the original
+full inverse-energy estimate. Its scale still has a positive power, and
+the remainder cannot simply be summed over the growing quotient family
+and outer inverse weights. Both reflected mixed energies must still be
+controlled jointly with a stronger bound. No fixed power saving, improved
+zero strip, uniform weighted current bound, or novelty priority is claimed.
+
 ## Next mathematical obligations
 
 The exact-pole prime input now excludes the larger explicit
@@ -3685,13 +3834,16 @@ The independent Gaussian reciprocal contour now gives a bound for the
 actual convergent Möbius sum, with its full integral identification and
 every horizontal and infinite-tail correction proved. The moving mass
 and unit-time scale choice now give the unconditional eventual rate above.
-The exact complex heat transport now carries that cancellation to the
-actual weighted Gaussian family at heat time two, preserving the
-normalization phase and giving `W_s,2(log X)=o(X^(1−Re(s)))` for every
-fixed complex `s`. The next step requires a stronger estimate and its
-transfer through the original divided finite cutoffs, retaining both
-completed reflected channels and all mixed terms. The current fixed-weight
-Gaussian limit does not establish the signed full inverse-energy bound.
+The exact complex heat transport remains available upstream. Removing
+Gaussian smoothing now also gives the ordinary finite Möbius cancellation,
+and exact Abel summation carries it to the original finite complex weights.
+The actual quotient blocks and completed zeroth eta blocks now have the
+all-cutoff remainder above, with their odd endpoints retained. Their
+positive power scale and the accumulated remainder remain obstacles to
+summing through the complete two-divisor inverse. The next step requires a
+stronger joint estimate for that inverse and both completed reflected mixed
+energies. The finite coefficient cancellation does not establish the signed
+full inverse-energy bound.
 
 1. Bound the signed full zeroth-order inverse energy's weighted absolute
    moment uniformly. The checked transport above now covers both the

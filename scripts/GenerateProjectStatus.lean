@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "Actual complex-weighted Gaussian Moebius cancellation: exp((s-1)*a)*W_s,2(a) tends to zero for every fixed complex s, with exact phase-preserving heat transport"
-    lineOne := "Gaussian Moebius"
-    lineTwo := "fixed complex weights"
+    label := "Actual finite Moebius cancellation and an all-quotient remainder for the original completed zeroth eta blocks, retaining the complex coefficient and odd endpoint factor"
+    lineOne := "finite Moebius blocks"
+    lineTwo := "completed eta bound"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.complexGaussianMoebiusSum_two_normalized_tendsto_zero
+      ``RiemannGaussian.exists_pairedEtaCompletedMoebius_divided_block_remainder
   }
 ]
 
@@ -228,8 +228,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">Complex Gaussian Moebius cancellation proved; " ++
-      "physical-cutoff transfer and uniform current bound remain open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">Finite Moebius quotient-block cancellation proved; " ++
+      "the full inverse-energy estimate and uniform current bound remain open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -760,10 +760,33 @@ run_cmd do
         "The terminal theorem complexGaussianMoebiusSum_two_normalized_tendsto_zero " ++
         "proves exp((s-1)*a)*W_s,2(a) tends to zero for every fixed complex s. " ++
         "Its norm consequence is W_s,2(log(X))=o(X^(1-Re(s))). " ++
-        "The full normalization phase is retained; no uniformity in s " ++
-        "or fixed power saving is asserted. A sufficiently strong estimate " ++
-        "through the original divided finite cutoffs, completion factors, and " ++
-        "reflected channels remains open. This does not improve the zero margin or " ++
+        "The full normalization phase is retained. The Gaussian cancellation " ++
+        "rate is now proved for every fixed positive heat time tau, including " ++
+        "arbitrarily small times. Its cumulative source U_tau(a)=integral_{u<=a} " ++
+        "S_tau(u) du has U_tau(a)/exp(a) tending to zero. Let M_mu(M) be the " ++
+        "ordinary finite Moebius sum, g_tau(v)=exp(-v^2/(4*tau)), and " ++
+        "A_tau=sqrt(4*pi*tau). The exact full arithmetic exchange gives " ++
+        "U_tau(a)=integral g_tau(v)*M_mu(floor(exp(a+v))) dv. The literal " ++
+        "cutoff error is at most exp(a)*integral g_tau(v)*abs(exp(v)-1) dv+A_tau. " ++
+        "A positive heat time makes the normalized integral error as small " ++
+        "as prescribed; integer rounding is retained. The terminal ordinary " ++
+        "theorem moebiusFinitePrefix_div_tendsto_zero proves M_mu(M)/M tends " ++
+        "to zero without Gaussian smoothing. Exact discrete Abel summation " ++
+        "then proves (M+1)^(s-1)*P_s(M) tends to zero for the actual finite " ++
+        "P_s(M)=sum_{1<=n<=M} mu(n)*n^(-s), for each fixed s with 0<Re(s)<1. " ++
+        "For every eps>0, norm(P_s(M))<=eps*(M+1)^(1-Re(s))+C_s,eps at all M. " ++
+        "The original quotient block D_s(M,q)=sum_{d<=M,M/d=q} mu(d)*d^(-s) " ++
+        "equals P_s(M/q)-P_s(M/(q+1)), retaining integer division and phase. " ++
+        "One remainder gives norm(D_s(M,q))<=eps*(floor(M/q)+1)^(1-Re(s))+C " ++
+        "for every M and q>0. The actual completed zeroth moment block " ++
+        "equals D_rho(M,q)*X_rho*etaPrefix(q), including odd last endpoints. " ++
+        "The theorem exists_pairedEtaCompletedMoebius_divided_block_remainder " ++
+        "retains its completion and the proved factor " ++
+        "norm(X_rho)*(norm(rho)/Re(rho)+1)*q^(-Re(rho)). The finite " ++
+        "estimates still have a positive power scale and assert no uniformity " ++
+        "in s or fixed power saving. The complete two-divisor inverse and " ++
+        "both reflected mixed energies still need a stronger joint estimate. " ++
+        "This does not improve the zero margin or " ++
         "the current's positive exponent. The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++

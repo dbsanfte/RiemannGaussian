@@ -27,49 +27,54 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek control of the original signed inverse energy using the checked Gaussian Möbius cancellation and exact complex heat transport. For each fixed complex s, the weighted Gaussian sum is o(X^(1−Re(s))). Next strengthen this estimate and transfer it through the original divided finite cutoffs, completion factors, and reflected channels. The current result gives no fixed power saving or tighter zero bound; the cutoff-independent weighted current estimate remains open.
+Seek a uniform bound for the original signed inverse energy using proved finite Möbius cancellation. The ordinary prefix is o(M); each fixed complex weight in the critical strip gives o((M+1)^(1−Re(s))). Exact quotient blocks connect this to the original completed zeroth moments, retaining odd endpoints. Next control the whole two-divisor inverse and both reflected mixed energies. The positive power scale survives, so the global weighted bound and RH remain open.
 
 ## Latest Update
 
-Lean now proves **cancellation for every fixed complex Mellin weight**
-in the actual Gaussian Möbius sum:
+Lean now proves **cancellation at ordinary finite arithmetic cutoffs**,
+including the complex weights and quotient blocks used by the eta carrier.
+Writing
 
 \[
- W_{s,\tau}(a)=\sum_{n\ge1}\mu(n)n^{-s}
- e^{-(a-\log n)^2/(4\tau)},
+ M_\mu(M)=\sum_{n=1}^{M}\mu(n),
  \qquad
- e^{(s-1)a}W_{s,2}(a)\longrightarrow0.
+ P_s(M)=\sum_{n=1}^{M}\mu(n)n^{-s},
 \]
 
-The limit is as real `a → +∞`, with `s` fixed.
-[complexGaussianMoebiusSum_two_normalized_tendsto_zero](RiemannGaussian/GaussianMoebiusComplexCancellation.lean)
-retains the full complex normalization phase.
-The series is absolutely convergent for every `s : ℂ` and `tau > 0`
-([summable_complexGaussianMoebiusSummand](RiemannGaussian/ComplexGaussianMoebius.lean)).
+[moebiusFinitePrefix_div_tendsto_zero](RiemannGaussian/MoebiusFiniteCancellation.lean)
+proves `M_mu(M)/M → 0`, and
+[complexMoebiusFinitePrefix_normalized_tendsto_zero](RiemannGaussian/MoebiusFiniteMellinCancellation.lean)
+proves `(M+1)^(s−1) P_s(M) → 0` for each fixed `s` with `0<Re(s)<1`.
+The latter retains the full complex normalization phase.
 
-The proof transports the existing signed unit-time cancellation through
-an exact complex heat integral. Writing `F(a)=W_{0,1}(a)/exp(a)` and
-`K_s(v)=exp((1−2s)v−v²/4)`,
-[integral_normalizedGaussianMoebius_heat](RiemannGaussian/GaussianMoebiusPhaseHeat.lean)
-proves
+The cutoff is unsmoothed. Cancellation at every positive heat time,
+the exact cumulative Gaussian identity, and a vanishing cutoff error
+justify removing the smoothing. The integer-floor error is included
+([gaussianMoebiusCumulative_eq_smoothed_finitePrefix](RiemannGaussian/MoebiusGaussianCutoff.lean),
+[abs_moebiusFinitePrefix_gaussian_error_le](RiemannGaussian/MoebiusGaussianCutoff.lean)).
+An exact finite Abel identity then carries the signed prefixes into
+the complex weights.
+
+For the literal block `D_s(M,q)=sum_{d≤M, M/d=q} mu(d) d^(-s)`,
+[complexMoebiusDividedCutoffBlock_eq_prefix_sub](RiemannGaussian/MoebiusDividedCutoffBlocks.lean)
+retains exactly `P_s(M/q)−P_s(M/(q+1))`, using integer division.
+For each `eps>0`, one finite remainder works for **every** `M` and `q>0`:
 
 \[
- \int_{\mathbb R}F(a+v)K_s(v)\,dv
- =\sqrt{2\pi}\,e^{(s-1)a+2s^2}W_{s,2}(a).
+ \|D_s(M,q)\|\le
+ \varepsilon(\lfloor M/q\rfloor+1)^{1-\Re(s)}+C_{s,\varepsilon}.
 \]
 
-The global source bound, kernel integrability, absolute sum–integral
-exchange, and dominated convergence are all proved for these actual
-arithmetic coefficients.
-[complexGaussianMoebiusSum_log_two_norm_ratio_tendsto_zero](RiemannGaussian/GaussianMoebiusComplexCancellation.lean)
-gives the norm consequence `W_{s,2}(log X)=o(X^(1−Re(s)))`.
+[exists_pairedEtaCompletedMoebius_divided_block_remainder](RiemannGaussian/EtaMoebiusDividedBlockCancellation.lean)
+applies this to the original completed zeroth-moment blocks, retaining
+the actual eta prefix at `q`, its completion, and its odd last endpoint.
+The zero equation supplies the factor `q^(-Re(rho))`.
 
-This is a fixed-weight result for an infinite Gaussian sum. It supplies
-neither a fixed power saving nor uniformity over the complex weights.
-When `0<Re(s)<1`, its comparison scale still grows. A sufficiently strong
-estimate for the original divided finite cutoffs and both completed
-reflected channels remains necessary. The established zero-free strip and
-current exponent are unchanged; the
+The coefficient estimate still has a positive power scale. Summing its
+remainder through the growing two-divisor inverse needs further control.
+The signed combination of the full reflected energies still lacks the
+required uniform weighted bound.
+There is no new fixed power saving or tighter zero bound; the
 [uniform weighted goal](docs/eta-current-reconstruction-plan.md) and RH
 remain open. No novelty priority is claimed.
 
@@ -82,6 +87,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | --- | --- | --- |
 | **Gaussian/Weil explicit formula** | The arithmetic Gaussian expression, including prime-power and Archimedean terms, equals the canonical multiplicity-weighted symmetric zeta-zero sum for every positive width. | [gaussianArithmeticExplicitFormula_eq_canonical](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean#L1235) |
 | **Gaussian Möbius arithmetic and cancellation** | The full reciprocal integral equals the actual Möbius sum, with every contour correction controlled. Its unit-time cancellation transfers through an exact complex heat identity: for each fixed complex `s`, `exp((s−1)a) W_s,2(a) → 0` with full phase retained, hence `W_s,2(log X)=o(X^(1−Re(s)))`. Absolute convergence holds for every positive heat time. | [gaussianMoebiusSum_one_le_reciprocal_log_gain_eventually](RiemannGaussian/GaussianMoebiusCancellation.lean), [summable_complexGaussianMoebiusSummand](RiemannGaussian/ComplexGaussianMoebius.lean), [integral_normalizedGaussianMoebius_heat](RiemannGaussian/GaussianMoebiusPhaseHeat.lean), [complexGaussianMoebiusSum_two_normalized_tendsto_zero](RiemannGaussian/GaussianMoebiusComplexCancellation.lean) |
+| **Finite Möbius cancellation and completed quotient blocks** | Removing Gaussian smoothing proves `sum_{n≤M} mu(n)=o(M)`. The actual finite complex prefix has a vanishing normalized limit throughout `0<Re(s)<1`. Exact divided-cutoff blocks have one remainder uniform in both cutoffs, and the original completed zeroth eta blocks retain their completion and odd endpoint decay. | [moebiusFinitePrefix_div_tendsto_zero](RiemannGaussian/MoebiusFiniteCancellation.lean), [complexMoebiusFinitePrefix_normalized_tendsto_zero](RiemannGaussian/MoebiusFiniteMellinCancellation.lean), [exists_pairedEtaCompletedMoebius_divided_block_remainder](RiemannGaussian/EtaMoebiusDividedBlockCancellation.lean) |
 | **Gaussian heat and reflected-zero Grams** | The complete matched Gaussian correlation equals the boundary heat-residue sum. At positive heat time, its vanishing is equivalent to RH. | [riemannXiUpperReflectedPairGaussianTotal_eq_boundaryHeatResidueTotal](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L187), [riemannXiUpperReflectedPairGaussianTotal_eq_zero_iff_rh](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L197) |
 | **Suzuki arithmetic and spectral formulas** | Suzuki's positive-time arithmetic function equals its spectral expansion on `Im z > 1/2`. The literal arithmetic `Psi` is strictly positive on a nonzero punctured neighbourhood of the origin. | [riemannXiSuzukiArithmeticPPositive_eq_spectral_safe](RiemannGaussian/RiemannXiSuzukiWeilVerticalLimit.lean#L462), [exists_pos_on_abs_riemannXiSuzukiPsi](RiemannGaussian/RiemannXiSuzukiPointwiseLocalPositivity.lean#L298) |
 | **Xi growth and divisor summability** | Unconditional `exp(O(R log R))` xi growth and convergence of the multiplicity-weighted inverse-square zero series. | [riemannXi_logLinearGrowth](RiemannGaussian/GaussianXiLogLinearGrowth.lean#L315), [summable_distinct_zetaZeroInverseSquareNorm](RiemannGaussian/GaussianXiInverseSquareSummability.lean#L294) |
