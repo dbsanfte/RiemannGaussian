@@ -17,6 +17,11 @@ The complement has at most `2*A^(1/3)` quotient blocks. The single clipped
 boundary now has a checked vanishing norm and mean-square allowance.
 Completing that fibre leaves the same source limit, and the surviving
 blocks are grouped into exact dyadic shells with every cross term retained.
+The original parity recurrence now holds inside these complete shells:
+the even part is `-2^(-rho)` times the odd part at half the physical
+cutoff, with the original quotient cap retained. The full shell form is
+exactly a two-scale Hermitian parity matrix; its energy retains both whole
+odd-channel energies and their phase-weighted mixed correlation.
 The immediate target is any independent upper bound with a fixed positive
 gap below the source square; a decay or power rate is sufficient but not
 required. That arithmetic estimate remains open. The present sampler's

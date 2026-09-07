@@ -14,7 +14,10 @@ cost extends the earlier square-root range. The remaining source has at
 most `2*A^(1/3)` quotient indices. The single clipped boundary now has
 vanishing mean square, and completing it leaves the same source limit.
 The complete blocks are grouped into exact dyadic shells with all cross
-terms retained. **An independent bound with a fixed positive gap below
+terms retained. The original parity recurrence now factors their full
+energy through two odd-divisor channels at the original and halved physical
+cutoffs, retaining the same quotient cap and the complex mixed correlation.
+**An independent bound with a fixed positive gap below
 the source square is not proved.** A full decay or power rate is a stronger
 sufficient target, not a requirement. No theorem excluding right-half
 zeros or proving RH has been added. The earlier splits are recorded first,
@@ -384,6 +387,98 @@ Dependence on the zero, shell sizes, moving arithmetic coefficients, and
 physical window must remain explicit. A route should not be rejected for
 failing to deliver the earlier full power rate if it can yield the fixed
 gap instead.
+
+## The parity recurrence inside the full shell form
+
+The user pointed to the exact recurrence in
+[EtaMoebiusParityRecurrence](../RiemannGaussian/EtaMoebiusParityRecurrence.lean).
+Its term-level identity is
+
+\[
+ T_\rho(M,2d)=-a_\rho\mathbf1_{d\ \mathrm{odd}}
+                 T_\rho(\lfloor M/2\rfloor,d),\qquad a_\rho=2^{-\rho}.
+\]
+
+The new module
+[EtaMoebiusQuotientParityRecurrence](../RiemannGaussian/EtaMoebiusQuotientParityRecurrence.lean)
+uses the finite even-divisor bijection and the exact identity
+`floor(M/(2d))=floor(floor(M/2)/d)`. Thus the quotient index is unchanged.
+If `B^odd_rho(M,q)` is the odd-divisor part of a complete quotient block,
+the theorem `pairedEtaCompletedMoebiusQuotientBlock_eq_odd_sub_half` gives
+
+\[
+ B_{\rho,M}(q)=B^{\rm odd}_{\rho,M}(q)
+                 -a_\rho B^{\rm odd}_{\rho,\lfloor M/2\rfloor}(q).
+\]
+
+For the actual cap `Q(M,T)=floor(M/(T+1))`, define
+
+\[
+ O_{Q,j}(N)=\sum_{2^j\le q<2^{j+1}}\mathbf1_{q\le Q}
+                                      B^{\rm odd}_{\rho,N}(q).
+\]
+
+The actual shell recurrence is exactly
+
+\[
+ Z_j(M)=O_{Q(M,T),j}(M)
+          -a_\rho O_{Q(M,T),j}(\lfloor M/2\rfloor).
+\]
+
+This is `pairedEtaCompletedMoebiusQuotientShell_eq_odd_sub_half`.
+**Both terms use the cap selected by the original `M`.** Replacing the
+second cap by `Q(floor(M/2),T)`, or silently changing the divisor cut,
+would change the carrier. The whole complete quotient aggregate has the
+same recurrence before any energy estimate.
+
+The new module
+[EtaMoebiusQuotientParityMatrix](../RiemannGaussian/EtaMoebiusQuotientParityMatrix.lean)
+defines the two odd scale channels `O_(j,0)(M)` and `O_(j,1)(M)` above.
+For the original cubic window and `j,l≤k`, retain
+
+\[
+ G^{bc}_{jl}=\frac1{u^3}\sum_{n<u^3}
+       O_{j,b}(u^3+n)\overline{O_{l,c}(u^3+n)},\qquad
+ G^{bc}=\sum_{j,l\le k}G^{bc}_{jl}.
+\]
+
+The theorem `pairedEtaCompletedMoebiusQuotientShellCorrelation_eq_parityMatrix`
+proves, for every shell pair and every physical window,
+
+\[
+ \Gamma(j,l)=G^{00}_{jl}-\overline{a_\rho}G^{01}_{jl}
+                         -a_\rho G^{10}_{jl}+|a_\rho|^2G^{11}_{jl}.
+\]
+
+The full two-scale entries are proved to equal the physical averages of
+the **whole** odd shell sums. Their diagonal entries therefore retain all
+within-channel shell cross terms, rather than only individual shell squares.
+The exact Hermitian relation is
+`conj(G^bc)=G^cb`, and both diagonal entries are nonnegative.
+
+The terminal theorem
+`pairedEtaCompletedMoebiusCompleteQuotientMeanSquare_twoThirds_eq_parityEnergy`
+gives
+
+\[
+ H^C_{2^k}=E_{0,k}+2^{-2\sigma}E_{1,k}
+               -2\Re(\overline{2^{-\rho}}B_k),\qquad
+ E_{b,k}=\Re G^{bb},\quad B_k=G^{01}.
+\]
+
+This transports the original recurrence to the current remaining
+quadratic form with no unproved arithmetic hypothesis. It supplies a
+specific mixed correlation to study jointly with the two odd-channel
+energies. The small multiplier alone does not close the bound: the
+existing global odd recurrence is forced by the nonzero source,
+`Odd(M)=S_rho+a_rho*Odd(floor(M/2))`. The new shell identities do not
+turn that forced recurrence into homogeneous decay.
+
+The immediate arithmetic target remains a fixed gap below `|S_rho|²`
+for the **entire displayed combination**, on arbitrarily large scales.
+No sign, independence, or vanishing limit for `B_k` is assumed. A bound
+only on `2^(-2*sigma)`, either diagonal alone, or a fixed shell pair
+would not establish this target. The divisor exponent remains unchanged.
 
 The prior logarithmic Möbius family remains available as a separate
 arithmetic program. Its complete growing head and quadratic tail decay,

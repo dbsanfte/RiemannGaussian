@@ -27,34 +27,35 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Prove the uniform weighted arithmetic bound through the completed Möbius source. The A^(2/3) low-divisor range is controlled, and the single clipped boundary now has vanishing mean square. The surviving complete quotient blocks form exact dyadic shells with all cross terms retained. Target any fixed positive gap below the source square; a power rate is optional. That arithmetic bound, full residual decay, and RH remain unproved.
+Prove the uniform weighted arithmetic bound through the completed Möbius source. The A^(2/3) low-divisor range and single clipped boundary are controlled. The exact parity recurrence now couples complete quotient shells at the original and halved physical cutoffs, preserving all cross terms. Target a fixed gap below the source square through their joint energy and phase-weighted correlation; a power rate is optional. This bound and RH remain unproved.
 
 ## Latest Update
 
-Lean now **removes the single clipped quotient boundary**. For
-`u³≤M<2u³` and divisor cut `u²`, completing all retained blocks adds
-only one partial fibre, containing at most `u` divisors. Its exact
-complex identity and [uniform bound](RiemannGaussian/EtaMoebiusBoundaryFibre.lean) give
+Lean now lifts the existing **Möbius parity recurrence into every complete
+quotient block and dyadic shell**. The
+[exact shell recurrence](RiemannGaussian/EtaMoebiusQuotientParityRecurrence.lean)
+is `Z_j(M)=O_j(M)-2^(-rho) O_j(floor(M/2))`, with the original quotient
+cap retained on both terms. The
+[full parity matrix](RiemannGaussian/EtaMoebiusQuotientParityMatrix.lean)
+then gives the checked energy identity
 
 \[
- |\operatorname{boundary}_\rho(M,u^2)|
- \le K_\rho u^{1-3\Re\rho}.
+ H_k=E_{0,k}+2^{-2\Re\rho}E_{1,k}
+       -2\Re\!\left(\overline{2^{-\rho}}\,B_k\right).
 \]
 
-Its [full-window mean square tends to zero](RiemannGaussian/EtaMoebiusBoundaryFibreDecay.lean)
-when `Re(rho)>1/3`, including every hypothetical right-half zero.
-For `u=2^k`, the surviving complete blocks are exactly `k+1`
-[dyadic quotient shells](RiemannGaussian/EtaMoebiusQuotientShells.lean).
-Their full energy equals the entire shell-to-shell correlation form;
-every cross term and the moving quotient cutoff remain present.
+Each `E` is the energy of a whole odd shell channel, including all
+within-channel shell cross terms. `B_k` is the complete complex
+correlation between the original and halved scales. The matrix is
+Hermitian and its diagonal entries are nonnegative. The mixed term's
+phase is retained throughout.
 
-That energy still tends to the nonzero source square under
-`Re(rho)>1/2`. **An independent upper bound with any fixed positive
-gap below that square remains open.** Full decay or a power saving
-would suffice but is unnecessary; a gap tending to zero would not
-close the reductio. The [assessment](docs/eta-hyperbola-endgame-assessment.md)
-records the exact remaining target. No sharper zero strip, full
-arithmetic decay, uniform weighted current bound, or RH proof is established.
+**A joint arithmetic bound with a fixed positive gap below the source
+square remains unproved.** The small dyadic multiplier alone does not
+supply it. The [assessment](docs/eta-hyperbola-endgame-assessment.md)
+records the source-preserving recurrence and the remaining signed
+correlation target. No sharper zero strip, full arithmetic decay,
+uniform weighted current bound, or RH proof is established.
 
 ## Notable Formalisations
 
@@ -80,6 +81,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Exact Hardy transform and balanced floor-cell norm comparison** | The full arithmetic Hardy transform preserves the original reciprocal-cell-weighted norm, including the vanishing endpoint term. The actual eta residual is its signed dyadic difference. Its full energy lies between `1/6` and `6` times the balanced floor-cell energy for all original bounded weights. Decay of either full norm remains unproved. | [tsum_etaDiscreteHardyTransform_sq_eq](RiemannGaussian/EtaDiscreteHardyTransform.lean), [pairedEtaMoebiusArithmeticCellResidual_eq_hardy_dyadic](RiemannGaussian/EtaMoebiusBeurlingComparison.lean), [pairedEtaMoebiusContinuumResidualEnergy_beurling_bounds](RiemannGaussian/EtaMoebiusBeurlingComparison.lean) |
 | **Exact Möbius normalization main term and uniform prime discrepancy** | The entire signed Euler quotient correction tends to zero, giving `p_M log M→1` for the original coefficients. Every interior cell has the exact rescaled residual `Δ(L)+e_M H_eta(L)`, uniformly within `2|e_M|` of its prime discrepancy. The complete signed cross moment and the growing normalization square cost remain explicit; full residual decay is open. | [pairedEtaMoebiusLogEulerCorrection_tendsto_zero](RiemannGaussian/EtaMoebiusLogEulerCancellation.lean), [pairedEtaMoebiusLogHarmonic_mul_log_tendsto_one](RiemannGaussian/EtaMoebiusNormalizationMainTerm.lean), [pairedEtaMoebiusArithmeticSquarePrefix_mul_log_sq_eq_discrepancy](RiemannGaussian/EtaMoebiusNormalizationMainTerm.lean) |
 | **Completed Möbius hyperbola, boundary decay, and exact quotient shells** | The original divisor aggregate through `A^(2/3)` has vanishing mean square at a hypothetical right-half zero. The single clipped fibre also has vanishing mean square, leaving complete quotient blocks grouped into exact dyadic shells with all cross terms retained. Their nonzero source limit is checked; an independent upper bound with a fixed gap below the source remains open. | [pairedEtaCompletedMoebiusOriginalMeanSquare_twoThirds_tendsto_zero](RiemannGaussian/EtaMoebiusTwoThirdsMeanSquare.lean), [norm_pairedEtaCompletedMoebiusBoundaryFibre_twoThirds_le](RiemannGaussian/EtaMoebiusBoundaryFibre.lean), [pairedEtaCompletedMoebiusBoundaryMeanSquare_twoThirds_tendsto_zero](RiemannGaussian/EtaMoebiusBoundaryFibreDecay.lean), [pairedEtaCompletedMoebiusCompleteQuotientMeanSquare_twoThirds_eq_shellCorrelations](RiemannGaussian/EtaMoebiusQuotientShells.lean) |
+| **Parity coupling of complete quotient shells** | The literal even-divisor contribution is an exact multiple of the odd contribution at half the physical cutoff, with the original quotient cap held fixed. The full shell energy factors through a Hermitian two-scale matrix, retaining every shell pair and the phase-weighted mixed correlation. Its arithmetic upper bound remains open. | [pairedEtaCompletedMoebiusQuotientShell_eq_odd_sub_half](RiemannGaussian/EtaMoebiusQuotientParityRecurrence.lean), [pairedEtaCompletedMoebiusCompleteQuotientMeanSquare_twoThirds_eq_parityEnergy](RiemannGaussian/EtaMoebiusQuotientParityMatrix.lean) |
 | **Actual exterior parity energy and signed covariance** | Exact period-two waves represent the original full grid exterior. Discrete summation by parts has zero boundary terms, and the resulting short-window covariance retains every signed primitive cross term. The entire far part costs at most `M²/(2d)`. The original zero comparison transfers to the remaining near energy with a vanishing allowance; its decay remains open. | [integral_pairedEtaMoebiusGrid_exterior_eq_parity](RiemannGaussian/EtaMoebiusExteriorParityEnergy.lean), [pairedEtaMoebiusGridParitySum_eq_primitive_differences](RiemannGaussian/EtaMoebiusExteriorParity.lean), [integral_pairedEtaMoebiusGridParitySum_sq_eq_covariance](RiemannGaussian/EtaMoebiusParityCovariance.lean), [pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_nearParity](RiemannGaussian/EtaMoebiusParityBudget.lean) |
 | **Exact exterior Möbius arithmetic and partial residual decay** | The harmonic correction and actual target-interval residual tend to zero. The entire exterior energy is exactly the square integral of a signed odd/even primitive formula plus its full infinite tail, bounded by `(k+1)^2/4^k` for every refinement schedule. Decay of the growing arithmetic square integral remains open. | [pairedEtaDyadicMoebiusRefinedHeadResidual_tendsto_zero](RiemannGaussian/EtaMoebiusRefinedHeadDecay.lean), [pairedEtaMoebiusTrialGridCombination_eq_arithmeticPrefix](RiemannGaussian/EtaMoebiusGridArithmetic.lean), [pairedEtaDyadicMoebiusRefinedExteriorEnergy_eq_arithmetic_add_tail](RiemannGaussian/EtaMoebiusExteriorBudget.lean) |
 | **Explicit zero-free strip from signed prime positivity** | The exact pole geometry and complete signed local zero sum give a multiplicity-sensitive margin more than 31 times the preceding signed margin. Every actual zero of absolute ordinate at least one stays at least `1/(56458 log(abs(gamma)+22))` from either edge. | [multiplicity_le_quadratic_signed_zero_gap](RiemannGaussian/ZetaSignedExactPole.lean), [nontrivialZetaZero_mem_signedQuadratic_strip](RiemannGaussian/ZetaSignedQuadraticMargin.lean), [nontrivialZetaZero_mem_quadratic_reciprocal_log_strip](RiemannGaussian/ZetaSignedQuadraticComparison.lean) |

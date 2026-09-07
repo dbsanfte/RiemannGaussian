@@ -820,3 +820,5 @@ import RiemannGaussian.EtaMoebiusTwoThirdsQuotientEnergy
 import RiemannGaussian.EtaMoebiusBoundaryFibre
 import RiemannGaussian.EtaMoebiusBoundaryFibreDecay
 import RiemannGaussian.EtaMoebiusQuotientShells
+import RiemannGaussian.EtaMoebiusQuotientParityRecurrence
+import RiemannGaussian.EtaMoebiusQuotientParityMatrix

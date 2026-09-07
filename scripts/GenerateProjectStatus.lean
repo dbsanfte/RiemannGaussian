@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "The single clipped quotient boundary has vanishing full-window mean square; the remaining complete dyadic shells retain all cross terms and still need a uniform sub-source bound"
-    lineOne := "single boundary decay"
-    lineTwo := "complete quotient shells"
+    label := "The exact parity recurrence factors the whole complete quotient-shell energy through its two-scale odd matrix, retaining all cross terms and the mixed phase; a joint sub-source bound remains open"
+    lineOne := "exact shell parity"
+    lineTwo := "full two-scale matrix"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaCompletedMoebiusBoundaryMeanSquare_twoThirds_tendsto_zero
+      ``RiemannGaussian.pairedEtaCompletedMoebiusCompleteQuotientMeanSquare_twoThirds_eq_parityEnergy
   }
 ]
 
@@ -1119,6 +1119,16 @@ run_cmd do
         "fixed delta>0, that form eventually exceeds norm(source)^2-delta. An independent " ++
         "upper bound with a fixed positive gap below the source would suffice; full " ++
         "decay or a prescribed power rate is not required. No such upper bound is proved. " ++
+        "The original Mobius parity recurrence now holds inside each complete quotient " ++
+        "block and capped dyadic shell. Each shell is its odd contribution at M minus " ++
+        "2^(-rho) times its odd contribution at floor(M/2), with the same quotient cap " ++
+        "selected by M on both scales. Its exact correlation matrix has all four " ++
+        "odd scale-channel terms. Summing all shell pairs gives the actual energy " ++
+        "H=E0+2^(-2*Re(rho))*E1-2*Re(conj(2^(-rho))*B). The two channel energies " ++
+        "retain all within-channel shell cross terms, and B is the whole complex " ++
+        "mixed-scale correlation. Hermitian symmetry and nonnegative diagonal entries " ++
+        "are proved. The small dyadic coefficient alone does not give a sub-source " ++
+        "bound; the joint signed arithmetic estimate remains open. " ++
         "The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
@@ -1176,8 +1186,10 @@ run_cmd do
           "gap below the source square for the full completed Moebius quotient shell " ++
           "form at a hypothetical right-half zero. Divisors through A^(2/3) and the " ++
           "single clipped boundary have vanishing mean square. Complete quotient blocks " ++
-          "now form exact dyadic shells with all cross terms retained. Their independent " ++
-          "sub-source bound remains open; a full decay or power rate is not required."))
+          "now form exact dyadic shells with all cross terms retained. Their parity " ++
+          "recurrence gives the complete two-scale odd energy and its phase-weighted " ++
+          "mixed correlation, keeping the original quotient cap on both scales. The " ++
+          "joint sub-source bound remains open; a full decay or power rate is not required."))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
