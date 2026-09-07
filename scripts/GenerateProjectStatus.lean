@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "Actual Gaussian reciprocal-zeta contour with proved zero avoidance and both horizontal corrections"
-    lineOne := "reciprocal contour"
-    lineTwo := "Gaussian bound"
+    label := "Actual convergent Gaussian Moebius sum bounded by a proved contour shift with all horizontal corrections and infinite tails"
+    lineOne := "Gaussian Moebius"
+    lineTwo := "full contour bound"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.zetaReciprocalGaussian_right_integral_le
+      ``RiemannGaussian.gaussianMoebiusSum_contour_bound
   }
 ]
 
@@ -228,8 +228,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">Gaussian reciprocal contour: left line and both horizontal errors bounded; " ++
-      "Moebius transfer pending; uniform current bound open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">Actual Gaussian Moebius sum: full integral identity and all contour errors proved; " ++
+      "scale choice and signed-current bound open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -727,9 +727,21 @@ run_cmd do
         "is bounded by 2*T*B(T)*exp(a*(1-w)+tau*(1-w)^2) plus " ++
         "4*w*B(T)*exp(a*(1+w)+tau*(1+w)^2-tau*T^2). The complete complex " ++
         "contour identity retains both oriented horizontal errors. " ++
-        "Identification with the full Gaussian Moebius sum and its " ++
-        "unbounded vertical tails remain to be proved; this is not a " ++
-        "bound for the original signed current. The uniform cutoff-independent " ++
+        "The actual Gaussian Moebius sum S_tau(a)=sum_n mu(n)*" ++
+        "exp(-(a-log(n))^2/(4*tau)) is now proved summable for tau>0. " ++
+        "At every sigma>1 its full reciprocal integral equals " ++
+        "sqrt(pi/tau)*S_tau(a), with individual integrability, full " ++
+        "integrability, and absolute sum-integral exchange discharged. " ++
+        "Let D(sigma)=sum_n norm(mu(n)/n^sigma), a proved finite mass. " ++
+        "The two infinite tails outside (-T,T] have total norm at most " ++
+        "D(sigma)*sqrt(2*pi/tau)*exp(a*sigma+tau*sigma^2-tau*T^2/2). " ++
+        "At sigma=1+w(T), adding this tail bound to the two finite-contour " ++
+        "terms and dividing by sqrt(pi/tau) bounds abs(S_tau(a)) for " ++
+        "a>=0,tau>0,T>=2. The exact arithmetic contour identity retains " ++
+        "every complex correction. Scale choices yielding a quantitative " ++
+        "arithmetic gain and transfer to the original signed inverse " ++
+        "energy remain open. This does not improve the zero margin or " ++
+        "the current's positive exponent. The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

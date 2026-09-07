@@ -27,41 +27,50 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Control the original signed inverse energy using an independent Gaussian estimate for the Möbius sums. A proved reciprocal-zeta bound now covers a rectangle crossing Re s = 1, and the Gaussian contour shift retains both horizontal errors. Next identify the full contour integral with the actual arithmetic Gaussian sum and bound its tails. The target remains a cutoff-independent weighted bound for the unchanged current; the off-critical contribution is still open.
+Use the proved Gaussian Möbius-sum bound to seek cancellation in the original signed inverse energy. The full reciprocal integral now equals the actual convergent arithmetic series, with both horizontal corrections and infinite tails controlled. Next choose heat and height scales and derive a quantitative arithmetic gain, preserving the original cutoffs, completion factors, and reflected channels. The cutoff-independent weighted current bound remains open.
 
 ## Latest Update
 
-Lean now proves **a quantitative Gaussian contour estimate for the
-actual reciprocal of zeta**, extending to the left of `Re s = 1`.
-[norm_zetaReciprocalExtension_le_on_box](RiemannGaussian/ZetaReciprocalBox.lean)
-supplies one finite bound `B(T)` on the whole rectangle
-`abs(Re s-1) ≤ w(T)`, `abs(Im s) ≤ T`.
-The width is positive and equals `1/(500000 log(T+22))` beyond a
-proved fixed threshold. The compact middle includes the reciprocal's
-genuine removable value at zeta's pole.
-
-[zetaReciprocalGaussian_contour_shift](RiemannGaussian/ZetaReciprocalGaussianContour.lean)
-retains the exact complex left integral and both oriented horizontal
-corrections. For `T ≥ 2` and `a,tau ≥ 0`,
-[zetaReciprocalGaussian_right_integral_le](RiemannGaussian/ZetaReciprocalGaussianContour.lean)
-bounds the vertical integral of `exp(a s + tau s²)/zeta(s)` along
-`Re s = 1+w(T)`, from ordinate `-T` to `T`, by
+Lean now proves **a contour bound for the actual convergent Gaussian
+Möbius sum**
 
 \[
- 2TB(T)e^{a(1-w)+\tau(1-w)^2}
- +4wB(T)e^{a(1+w)+\tau(1+w)^2-\tau T^2},
- \qquad w=w(T).
+ S_\tau(a)=\sum_{n\ge1}\mu(n)e^{-(a-\log n)^2/(4\tau)}.
 \]
 
-Zero avoidance, the full local divisor, the residual logarithm, and the
-low-height norm floor are all proved. The first term keeps the smaller
-left-line exponent; the second accounts for both horizontal segments.
+[integral_zetaReciprocalGaussianKernel_eq_gaussianMoebiusSum](RiemannGaussian/GaussianMoebiusMellin.lean)
+identifies the full vertical integral of `exp(a s+tau s²)/zeta(s)`
+with `sqrt(pi/tau) S_tau(a)` at every abscissa greater than one.
+Integrability, absolute convergence, and the sum–integral exchange are
+proved. The exact complex
+[gaussianMoebiusSum_contour_identity](RiemannGaussian/GaussianMoebiusContourBound.lean)
+keeps both oriented horizontal corrections and both infinite tails.
 
-The next step is the exact Gaussian Möbius-series identity and control
-of the unbounded vertical tails. This contour estimate does not yet
-bound the original signed current. The
+For `a ≥ 0`, `tau > 0`, and `T ≥ 2`,
+[gaussianMoebiusSum_contour_bound](RiemannGaussian/GaussianMoebiusContourBound.lean)
+gives
+
+\[
+ |S_\tau(a)|\le\frac{
+ 2TB e^{a\ell+\tau\ell^2}
+ +4wB e^{a\sigma+\tau\sigma^2-\tau T^2}
+ +D(\sigma)\sqrt{2\pi/\tau}\,
+   e^{a\sigma+\tau\sigma^2-\tau T^2/2}}
+ {\sqrt{\pi/\tau}},
+ \qquad \ell=1-w,\quad \sigma=1+w.
+\]
+
+Here `w=w(T)>0` and `B=B(T)` are the
+[proved contour width and reciprocal bound](RiemannGaussian/ZetaReciprocalBox.lean);
+`D(sigma)=sum |mu(n)|/n^sigma` is a proved finite Dirichlet mass.
+All three contributions are retained.
+
+The next step is to choose the heat and height scales and prove a
+quantitative arithmetic gain. Transferring it to the full signed inverse
+energy remains open. This estimate changes neither the established
+zero-free strip nor the current's positive growth exponent; the
 [uniform weighted goal](docs/eta-current-reconstruction-plan.md) and RH
-remain open; no novelty priority is claimed.
+remain open. No novelty priority is claimed.
 
 ## Notable Formalisations
 
@@ -71,7 +80,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
 | **Gaussian/Weil explicit formula** | The arithmetic Gaussian expression, including prime-power and Archimedean terms, equals the canonical multiplicity-weighted symmetric zeta-zero sum for every positive width. | [gaussianArithmeticExplicitFormula_eq_canonical](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean#L1235) |
-| **Gaussian reciprocal-zeta contour** | A proved positive-width rectangle crosses `Re s = 1` with a uniform bound for the genuine reciprocal. The exact Gaussian contour shift keeps both horizontal corrections, and the actual right integral has a left-line bound plus their explicit Gaussian suppression. The arithmetic Möbius-series transfer remains to be proved. | [norm_zetaReciprocalExtension_le_on_box](RiemannGaussian/ZetaReciprocalBox.lean), [zetaReciprocalGaussian_contour_shift](RiemannGaussian/ZetaReciprocalGaussianContour.lean), [zetaReciprocalGaussian_right_integral_le](RiemannGaussian/ZetaReciprocalGaussianContour.lean) |
+| **Gaussian Möbius arithmetic and contour** | The full reciprocal-zeta Gaussian integral equals the actual convergent Möbius sum at every abscissa greater than one. Moving the contour left gives an arithmetic bound with both horizontal corrections and both infinite tails controlled; the exact complex identity remains available. | [integral_zetaReciprocalGaussianKernel_eq_gaussianMoebiusSum](RiemannGaussian/GaussianMoebiusMellin.lean), [gaussianMoebiusSum_contour_identity](RiemannGaussian/GaussianMoebiusContourBound.lean), [gaussianMoebiusSum_contour_bound](RiemannGaussian/GaussianMoebiusContourBound.lean) |
 | **Gaussian heat and reflected-zero Grams** | The complete matched Gaussian correlation equals the boundary heat-residue sum. At positive heat time, its vanishing is equivalent to RH. | [riemannXiUpperReflectedPairGaussianTotal_eq_boundaryHeatResidueTotal](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L187), [riemannXiUpperReflectedPairGaussianTotal_eq_zero_iff_rh](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L197) |
 | **Suzuki arithmetic and spectral formulas** | Suzuki's positive-time arithmetic function equals its spectral expansion on `Im z > 1/2`. The literal arithmetic `Psi` is strictly positive on a nonzero punctured neighbourhood of the origin. | [riemannXiSuzukiArithmeticPPositive_eq_spectral_safe](RiemannGaussian/RiemannXiSuzukiWeilVerticalLimit.lean#L462), [exists_pos_on_abs_riemannXiSuzukiPsi](RiemannGaussian/RiemannXiSuzukiPointwiseLocalPositivity.lean#L298) |
 | **Xi growth and divisor summability** | Unconditional `exp(O(R log R))` xi growth and convergence of the multiplicity-weighted inverse-square zero series. | [riemannXi_logLinearGrowth](RiemannGaussian/GaussianXiLogLinearGrowth.lean#L315), [summable_distinct_zetaZeroInverseSquareNorm](RiemannGaussian/GaussianXiInverseSquareSummability.lean#L294) |

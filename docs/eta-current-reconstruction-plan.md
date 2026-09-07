@@ -61,7 +61,8 @@ the objective.
 | Transport complete zeroth-order inverse cancellation to both original current branches | `pairedEtaLeadingCurrent_fullInverseEnergy_firstMoment_stability` in [EtaCurrentFullInverseEnergy.lean](../RiemannGaussian/EtaCurrentFullInverseEnergy.lean), and `pairedEtaLeadingCurrent_weighted_coherentComplement_error_le` in [EtaCurrentCoherentComplement.lean](../RiemannGaussian/EtaCurrentCoherentComplement.lean). | Both branches reduce to signed complete zeroth energies with positive real coefficients and summable odd-weighted error. Independent band/complement splits retain all mixed products, and the actual coherent bands fit every literal cutoff by integer division. The weighted absolute sum of the full signed energy remains open. |
 | Sharpen the actual prime constraint on the current's horizontal growth | `multiplicity_le_quadratic_signed_zero_gap` in [ZetaSignedExactPole.lean](../RiemannGaussian/ZetaSignedExactPole.lean), `nontrivialZetaZero_mem_signedQuadratic_strip` in [ZetaSignedQuadraticMargin.lean](../RiemannGaussian/ZetaSignedQuadraticMargin.lean), and `pairedEtaLeadingCurrent_firstMoment_le_quadraticPrime` in [EtaCurrentQuadraticPrimeBound.lean](../RiemannGaussian/EtaCurrentQuadraticPrimeBound.lean). | Exact pole geometry gives a multiplicity-sensitive margin more than 31 times the previous signed margin at every nonzero ordinate. For absolute ordinate at least one, the margin is at least `1/(56458 log(abs(y)+22))`. Both original current branches, the Gaussian return, and the complete inverse energy inherit the improved exponent while preserving all preceding margins. The exponent remains positive. |
 | Bound several nearby actual zeros simultaneously | `sum_multiplicity_le_one_in_signedEdgeWindow` in [ZetaSignedWindowMultiplicity.lean](../RiemannGaussian/ZetaSignedWindowMultiplicity.lean), with reflection, simplicity, separation, and the original head inverse formula in [ZetaSignedZeroSeparation.lean](../RiemannGaussian/ZetaSignedZeroSeparation.lean). | For every center of absolute height at least one, an edge rectangle of width and ordinate half-width `1/(6000 log(abs(y)+22))` contains total analytic multiplicity at most one. The exact selected complex pole sum and full complement are retained. This rules out multiple zeros and close pairs within that layer, while the uniform weighted goal remains open. |
-| Establish an independent Gaussian reciprocal contour for the Möbius sums | `norm_zetaReciprocalExtension_le_on_box` in [ZetaReciprocalBox.lean](../RiemannGaussian/ZetaReciprocalBox.lean), and `zetaReciprocalGaussian_contour_shift` with `zetaReciprocalGaussian_right_integral_le` in [ZetaReciprocalGaussianContour.lean](../RiemannGaussian/ZetaReciprocalGaussianContour.lean). | The actual reciprocal is analytic and uniformly bounded on a rectangle crossing real part one. The Gaussian contour shift retains both horizontal corrections and bounds them with their height damping. The full arithmetic Gaussian-series identity, unbounded vertical tails, and transfer to the original signed current remain to be proved. |
+| Establish an independent Gaussian reciprocal contour for the Möbius sums | `norm_zetaReciprocalExtension_le_on_box` in [ZetaReciprocalBox.lean](../RiemannGaussian/ZetaReciprocalBox.lean), and `zetaReciprocalGaussian_contour_shift` with `zetaReciprocalGaussian_right_integral_le` in [ZetaReciprocalGaussianContour.lean](../RiemannGaussian/ZetaReciprocalGaussianContour.lean). | The actual reciprocal is analytic and uniformly bounded on a rectangle crossing real part one. The Gaussian contour shift retains both horizontal corrections and bounds them with their height damping. Its arithmetic identification and infinite-tail estimates are now discharged by the following row. |
+| Transfer the full contour to the actual convergent Gaussian Möbius sum | `integral_zetaReciprocalGaussianKernel_eq_gaussianMoebiusSum` in [GaussianMoebiusMellin.lean](../RiemannGaussian/GaussianMoebiusMellin.lean), and `gaussianMoebiusSum_contour_identity` with `gaussianMoebiusSum_contour_bound` in [GaussianMoebiusContourBound.lean](../RiemannGaussian/GaussianMoebiusContourBound.lean). | The full integral equals the arithmetic sum at every abscissa greater than one, with all convergence and interchange premises proved. The actual sum has a left-line bound plus both horizontal corrections and infinite tails. Scale selection for an arithmetic gain and transfer to the original signed inverse energy remain open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -3377,10 +3378,9 @@ discharged on the actual full rectangle, including the middle segment.
 The exact complex kernel retains its Gaussian phase before the norm
 estimate is taken.
 
-The next proof target on this independent arithmetic route is to
-identify the full right-line Gaussian integral with its original
-Möbius series, justify the sum-integral exchange, and bound the two
-unbounded vertical tails. Scale choices must then give a proved
+The full right-line Gaussian integral is now identified with its
+original Möbius series, with sum-integral exchange and both
+unbounded vertical tails justified in the following slice. Scale choices must then give a proved
 arithmetic cancellation estimate before attempting a transfer to the
 original inverse energy. That transfer must preserve the moving
 physical cutoffs, completion factors, and both reflected channels.
@@ -3389,6 +3389,101 @@ not by itself supply the missing critical-strength arithmetic estimate.
 It changes neither the established zero-free margin nor the original
 current's positive growth exponent. The uniform weighted goal and RH
 remain open, with no novelty-priority or new certificate claim.
+
+## Checked full Gaussian Möbius identity and arithmetic contour bound
+
+[GaussianMellinVertical.lean](../RiemannGaussian/GaussianMellinVertical.lean),
+[ZetaReciprocalDirichlet.lean](../RiemannGaussian/ZetaReciprocalDirichlet.lean),
+[GaussianMoebiusMellin.lean](../RiemannGaussian/GaussianMoebiusMellin.lean),
+and [GaussianMoebiusContourBound.lean](../RiemannGaussian/GaussianMoebiusContourBound.lean)
+close the full arithmetic identification and all infinite-tail obligations
+for the preceding contour.
+
+For real `a` and `tau>0`, define the actual signed sum
+
+\[
+ S_\tau(a)=\sum_{n\ge1}\mu(n)
+  \exp\!\left(-\frac{(a-\log n)^2}{4\tau}\right).
+\]
+
+The Lean series runs over natural numbers; its zero term is exactly zero
+because `mu(0)=0`. `summable_gaussianMoebiusSummand` proves convergence,
+without assuming a conjectural Möbius cancellation estimate.
+`zetaReciprocalExtension_eq_moebius_LSeries` identifies the genuine
+reciprocal with its absolutely convergent Dirichlet series for every
+`Re(s)>1`. The original complex summands keep their full logarithmic
+phases in `moebius_LSeries_term_eq_exp` and
+`gaussianMoebiusMellinTerm_eq_atom`.
+
+`integral_gaussianMellin_vertical` gives the exact full Gaussian atom:
+
+\[
+ \int_{\mathbb R}e^{b(\sigma+it)+\tau(\sigma+it)^2}\,dt
+ =\sqrt{\pi/\tau}\,e^{-b^2/(4\tau)}.
+\]
+
+The cancellation of the abscissa occurs only after integration.
+Individual integrability, full reciprocal-kernel integrability, and
+summability of the norm integrals are established before exchanging the
+full series and integral. Thus
+`integral_zetaReciprocalGaussianKernel_eq_gaussianMoebiusSum` proves,
+for every real `sigma>1`,
+
+\[
+ \int_{\mathbb R}
+  \frac{e^{a(\sigma+it)+\tau(\sigma+it)^2}}{\zeta(\sigma+it)}\,dt
+ =\sqrt{\pi/\tau}\,S_\tau(a).
+\]
+
+Let `D(sigma)=sum_n |mu(n)|/n^sigma` be
+`moebiusDirichletMass sigma`. Its summability is proved at every
+`sigma>1`, as is the uniform vertical reciprocal bound by `D(sigma)`.
+At every `T>=0`,
+`zetaReciprocalGaussian_infinite_tails_le` bounds the integral over
+the complement of `(-T,T]` by
+
+\[
+ D(\sigma)\sqrt{2\pi/\tau}\,
+ e^{a\sigma+\tau\sigma^2-\tau T^2/2}.
+\]
+
+Both tails are included. Half the Gaussian exponent supplies height
+suppression, and the other half supplies an integrable majorant.
+`gaussianMoebiusSum_eq_truncated_add_tail` proves the exact finite/full
+split. At the actual contour abscissa `sigma=1+w(T)`,
+`gaussianMoebiusSum_contour_identity` retains
+
+\[
+ i\sqrt{\pi/\tau}\,S_\tau(a)
+ =iV_{1-w}+H_T-H_{-T}+iR_{1+w,T},
+\]
+
+where `R` is the complete right-line tail integral and `V,H` are
+the original finite contour segments. No boundary or phase term is
+discarded from this source identity.
+
+Finally, `gaussianMoebiusSum_contour_bound` proves for
+`a>=0,tau>0,T>=2`, with `ell=1-w(T)` and `sigma=1+w(T)`,
+
+\[
+ |S_\tau(a)|\le
+ \frac{
+ 2TB(T)e^{a\ell+\tau\ell^2}
+ +4w(T)B(T)e^{a\sigma+\tau\sigma^2-\tau T^2}
+ +D(\sigma)\sqrt{2\pi/\tau}\,
+    e^{a\sigma+\tau\sigma^2-\tau T^2/2}
+ }{\sqrt{\pi/\tau}}.
+\]
+
+This is an unconditional bound for the actual arithmetic Gaussian sum.
+The next obligation is to control the scale dependence of `D(1+w(T))`
+and choose `tau,T` relative to `a` to extract a quantitative cancellation
+rate. Such a rate must then be tested against the original full inverse
+energy, preserving physical cutoffs, completion factors, reflected
+channels, and every mixed term. The contour still remains near real
+part one; this slice gives no improved zero-free strip, no decrease in
+the original current's established positive exponent, and no critical-line
+strength bound. The unchanged uniform weighted target remains open.
 
 ## Next mathematical obligations
 
@@ -3403,11 +3498,12 @@ and the return bound has a proved positive exponent. The remaining task is to ru
 off-critical contribution while retaining the unchanged absolute weighted
 target. The following inverse and heat carriers remain available for that
 task; their established identities alone do not supply the missing estimate.
-The independent Gaussian reciprocal contour above now provides a checked
-left-line estimate with both horizontal errors controlled. Its full
-Möbius-series identification and unbounded-tail estimates are the next
-concrete analytic steps; their eventual transfer to the signed full
-inverse energy still requires a proved arithmetic gain.
+The independent Gaussian reciprocal contour now gives a bound for the
+actual convergent Möbius sum, with its full integral identification and
+every horizontal and infinite-tail correction proved. The next step on
+that route is to control the moving Dirichlet mass and choose scales
+that yield a quantitative cancellation rate. Transfer to the signed
+full inverse energy still requires an arithmetic gain of sufficient strength.
 
 1. Bound the signed full zeroth-order inverse energy's weighted absolute
    moment uniformly. The checked transport above now covers both the
