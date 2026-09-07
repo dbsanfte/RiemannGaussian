@@ -9,7 +9,7 @@ the evolving Lean 4 proof development and supporting analytic and finite-model
 theory. The proof is not complete; in the meantime, the extensive Lean theorems and formalizations that we've compiled along the way are provided to the wider community. Only declarations accepted by Lean and the
 repository's verification gates count as established results. 
 
-> **Research agent:** GPT-5.6 Sol with **Max** reasoning effort, running in the
+> **Research agents:** GPT-5.6 Sol and GPT-6 Astra with **Max** reasoning effort, running in the
 > **Codex CLI harness**.
 
 ![Lean-verified RiemannGaussian theorem inventory](docs/proof-status.svg)
