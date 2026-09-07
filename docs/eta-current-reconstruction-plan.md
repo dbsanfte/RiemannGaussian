@@ -3574,6 +3574,100 @@ zero-free strip or the current's established positive exponent. It
 does not exclude an interior off-critical zero or prove the uniform
 weighted current bound. No novelty priority or new certificate is claimed.
 
+## Checked complex-weighted Gaussian Möbius cancellation
+
+[GaussianMoebiusNormalized.lean](../RiemannGaussian/GaussianMoebiusNormalized.lean),
+[ComplexGaussianMoebius.lean](../RiemannGaussian/ComplexGaussianMoebius.lean),
+[GaussianMoebiusPhaseAtom.lean](../RiemannGaussian/GaussianMoebiusPhaseAtom.lean),
+[GaussianMoebiusPhaseHeat.lean](../RiemannGaussian/GaussianMoebiusPhaseHeat.lean),
+and [GaussianMoebiusComplexCancellation.lean](../RiemannGaussian/GaussianMoebiusComplexCancellation.lean)
+transfer the actual signed unit-time cancellation to every fixed complex
+Mellin weight. No convergence or domination hypothesis is left open.
+
+The full arithmetic family is
+
+\[
+ W_{s,\tau}(a)=\sum_{n\ge1}\mu(n)n^{-s}
+ \exp\!\left(-\frac{(a-\log n)^2}{4\tau}\right).
+\]
+
+`complexGaussianMoebiusSummand_eq_cpow` retains exactly the original
+complex Dirichlet power, including the vanishing zero index.
+The exact norm identity `norm_complexGaussianMoebiusSummand` is
+
+\[
+ \|W_{s,\tau,n}(a)\|
+ =e^{-\Re(s)a+\tau\Re(s)^2}
+   |S_{\tau,n}(a-2\tau\Re(s))|.
+\]
+
+Thus `summable_complexGaussianMoebiusSummand` proves absolute convergence
+for every complex `s`, real center `a`, and positive `tau`.
+This summability uses no zeta-zero premise.
+
+Let `F(a)=S_1(a)/exp(a)`. The proved unit-time cancellation gives
+`F(a)→0` at the positive end. A direct absolutely convergent reciprocal-line
+bound controls every remaining real center:
+`abs_gaussianMoebiusSum_le_dirichlet` proves
+`|S_tau(a)|≤D(sigma) exp(a sigma+tau sigma²)` for all real `a`,
+`tau>0`, and `sigma>1`. Combining these two estimates,
+`exists_bound_normalizedGaussianMoebius` proves one finite global bound
+`|F(a)|≤C` for every real `a`.
+
+The phase kernel is
+
+\[
+ K_s(v)=e^{(1-2s)v-v^2/4}.
+\]
+
+For the actual signed source atom
+`H_s,a,n(v)=S_1,n(a+v) exp(−a−v) K_s(v)`,
+`integral_complexGaussianMoebiusHeatTerm` evaluates the full complex
+Gaussian integral:
+
+\[
+ \int_{\mathbb R}H_{s,a,n}(v)\,dv
+ =\sqrt{2\pi}\,e^{(s-1)a+2s^2}W_{s,2,n}(a).
+\]
+
+Every atom is integrable, and the exact norm integral is
+`sqrt(2 pi) exp((Re(s)−1)a+2 Re(s)²) norm(W_s,2,n(a))`.
+`summable_integral_norm_complexGaussianMoebiusHeatTerm` therefore
+discharges the infinite arithmetic exchange. The full signed identity
+`integral_normalizedGaussianMoebius_heat` is
+
+\[
+ \int_{\mathbb R}F(a+v)K_s(v)\,dv
+ =\sqrt{2\pi}\,e^{(s-1)a+2s^2}W_{s,2}(a).
+\]
+
+The fixed kernel is integrable for every complex `s`. The global source
+bound supplies the integrable dominator `C norm(K_s(v))`, and each fixed
+translate of `F` tends to zero. Dominated convergence gives the terminal
+theorem `complexGaussianMoebiusSum_two_normalized_tendsto_zero`:
+
+\[
+ e^{(s-1)a}W_{s,2}(a)\longrightarrow0
+ \quad(a\longrightarrow+\infty).
+\]
+
+The normalization retains its complex phase. The separate theorem
+`complexGaussianMoebiusSum_log_two_normalized_tendsto_zero` gives
+`X^(s−1) W_s,2(log X)→0` using the actual complex power.
+Only downstream,
+`complexGaussianMoebiusSum_log_two_norm_ratio_tendsto_zero` takes norms
+to obtain `norm(W_s,2(log X))/X^(1−Re(s))→0`.
+
+These are fixed-weight limits for infinite Gaussian sums. They assert
+neither uniformity in `s` nor a fixed power saving. For an actual zero
+`rho`, both natural comparison exponents `1−Re(rho)` and `Re(rho)`
+remain positive. No estimate here transfers the cancellation to the
+original divisor-dependent finite cutoffs or compares their completed
+reflected energies. Such a transfer needs a sufficiently strong bound
+while retaining every divided cutoff, completion factor, and mixed term.
+The current exponent and zero-free strip are unchanged. The uniform
+weighted arithmetic goal remains open; no novelty priority is claimed.
+
 ## Next mathematical obligations
 
 The exact-pole prime input now excludes the larger explicit
@@ -3591,10 +3685,13 @@ The independent Gaussian reciprocal contour now gives a bound for the
 actual convergent Möbius sum, with its full integral identification and
 every horizontal and infinite-tail correction proved. The moving mass
 and unit-time scale choice now give the unconditional eventual rate above.
-The next step is an estimate of sufficient strength through the original
-complex weights and physical cutoffs, retaining both completed reflected
-channels and all mixed terms. The current o(X) rate alone does not
-establish the signed full inverse-energy bound.
+The exact complex heat transport now carries that cancellation to the
+actual weighted Gaussian family at heat time two, preserving the
+normalization phase and giving `W_s,2(log X)=o(X^(1−Re(s)))` for every
+fixed complex `s`. The next step requires a stronger estimate and its
+transfer through the original divided finite cutoffs, retaining both
+completed reflected channels and all mixed terms. The current fixed-weight
+Gaussian limit does not establish the signed full inverse-energy bound.
 
 1. Bound the signed full zeroth-order inverse energy's weighted absolute
    moment uniformly. The checked transport above now covers both the

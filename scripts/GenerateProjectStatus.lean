@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "Actual unit-time Gaussian Moebius cancellation: eventually abs(S_1(a)) <= exp(a-a/(1000000*log(a+22))) with all contour errors controlled"
+    label := "Actual complex-weighted Gaussian Moebius cancellation: exp((s-1)*a)*W_s,2(a) tends to zero for every fixed complex s, with exact phase-preserving heat transport"
     lineOne := "Gaussian Moebius"
-    lineTwo := "unit-time o(X) rate"
+    lineTwo := "fixed complex weights"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.gaussianMoebiusSum_one_le_reciprocal_log_gain_eventually
+      ``RiemannGaussian.complexGaussianMoebiusSum_two_normalized_tendsto_zero
   }
 ]
 
@@ -228,8 +228,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">Unit-time Gaussian Moebius cancellation rate proved; " ++
-      "complex weighted-current transfer and uniform bound remain open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">Complex Gaussian Moebius cancellation proved; " ++
+      "physical-cutoff transfer and uniform current bound remain open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -749,9 +749,20 @@ run_cmd do
         "the final actual bound is eventually " ++
         "abs(S_1(a))<=exp(a-a/(1000000*log(a+22))). The threshold is " ++
         "proved to exist, without an asserted numerical starting point. " ++
-        "Lean also proves S_1(log(X))/X tends to zero. This rate supplies " ++
-        "no fixed power saving; a sufficient estimate through the original " ++
-        "complex weights, physical cutoffs, completion factors, and " ++
+        "Lean also proves S_1(log(X))/X tends to zero. The actual weighted " ++
+        "family W_s,tau(a)=sum_n mu(n)*n^(-s)*exp(-(a-log(n))^2/(4*tau)) " ++
+        "is now absolutely summable for every complex s and tau>0. " ++
+        "The normalized source F(a)=S_1(a)/exp(a) has a proved global " ++
+        "bound. For K_s(v)=exp((1-2*s)*v-v^2/4), exact heat transport gives " ++
+        "integral F(a+v)*K_s(v) dv = sqrt(2*pi)*exp((s-1)*a+2*s^2)*W_s,2(a). " ++
+        "Individual integrability, summable norm integrals, the complete " ++
+        "arithmetic exchange, and dominated convergence are discharged. " ++
+        "The terminal theorem complexGaussianMoebiusSum_two_normalized_tendsto_zero " ++
+        "proves exp((s-1)*a)*W_s,2(a) tends to zero for every fixed complex s. " ++
+        "Its norm consequence is W_s,2(log(X))=o(X^(1-Re(s))). " ++
+        "The full normalization phase is retained; no uniformity in s " ++
+        "or fixed power saving is asserted. A sufficiently strong estimate " ++
+        "through the original divided finite cutoffs, completion factors, and " ++
         "reflected channels remains open. This does not improve the zero margin or " ++
         "the current's positive exponent. The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
