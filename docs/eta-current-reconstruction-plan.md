@@ -65,6 +65,7 @@ the objective.
 | Transfer the full contour to the actual convergent Gaussian Möbius sum | `integral_zetaReciprocalGaussianKernel_eq_gaussianMoebiusSum` in [GaussianMoebiusMellin.lean](../RiemannGaussian/GaussianMoebiusMellin.lean), and `gaussianMoebiusSum_contour_identity` with `gaussianMoebiusSum_contour_bound` in [GaussianMoebiusContourBound.lean](../RiemannGaussian/GaussianMoebiusContourBound.lean). | The full integral equals the arithmetic sum at every abscissa greater than one, with all convergence and interchange premises proved. The actual sum has a left-line bound plus both horizontal corrections and infinite tails. The following row discharges a scale choice and arithmetic rate. |
 | Extract an unconditional cancellation rate from the actual Gaussian contour | `moebiusDirichletMass_contour_le_log` in [ZetaMoebiusMassBound.lean](../RiemannGaussian/ZetaMoebiusMassBound.lean), `gaussianMoebiusSum_one_le_logSquare_envelope` in [GaussianMoebiusScaleEnvelope.lean](../RiemannGaussian/GaussianMoebiusScaleEnvelope.lean), and `gaussianMoebiusSum_one_le_reciprocal_log_gain_eventually` with `gaussianMoebiusSum_log_one_div_tendsto_zero` in [GaussianMoebiusCancellation.lean](../RiemannGaussian/GaussianMoebiusCancellation.lean). | At unit heat time and height `T=a`, the actual sum is eventually bounded by `exp(a-a/(1000000 log(a+22)))`, and `S_1(log X)/X→0`. All constants and scale conditions are discharged, with an existential threshold. An estimate of sufficient strength for the original complex weights, physical cutoffs, and completed reflected current remains open. |
 | Bound the current power by complete finite eta translate arithmetic | `pairedEtaTranslatedResidualEnergyCutoff_eq_finiteForm` and `pairedEtaTranslatedResidualEnergy_le_finiteBudget` in [EtaTranslatedFiniteResidual.lean](../RiemannGaussian/EtaTranslatedFiniteResidual.lean), followed by `pairedEtaLeadingCurrent_firstMoment_le_translatedProjection` in [EtaCurrentTranslatedProjectionPower.lean](../RiemannGaussian/EtaCurrentTranslatedProjectionPower.lean). | The compact target shares the elementary eta factor and stays nonzero at actual zeta zeros. Every finite nonnegative translate family gives a complete Gram-plus-tail budget for actual horizontal displacement and both current branches. The Gaussian return and full inverse energy inherit the same exponent. A family with vanishing full budget and an improved numerical zero strip remain open. |
+| Define an exact growing coefficient law and certify complete finite bounds | `pairedEtaCanonicalTranslateBudget_le_trial` in [EtaCanonicalTranslateBound.lean](../RiemannGaussian/EtaCanonicalTranslateBound.lean), `pairedEtaFourProjection_residualEnergy_lt_one_fifth` in [EtaFourTranslateBound.lean](../RiemannGaussian/EtaFourTranslateBound.lean), and `pairedEtaLeadingCurrent_firstMoment_le_dyadicTranslate` in [EtaCanonicalTranslateFamily.lean](../RiemannGaussian/EtaCanonicalTranslateFamily.lean). | The actual regularized Gram inverse specifies a dyadic family, with complete residual at most its exact deficit. Structured trial coefficients bound that deficit. Four explicit rational coefficients have complete residual below `1/5`; comparison gives canonical four-point deficit below `1/4`. Decay of the growing family deficit remains open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -4344,6 +4345,187 @@ coefficient estimate here. This slice proves the stated actual eta
 identities and transports their full finite budget to the existing
 current; novelty priority is not claimed.
 
+## Checked exact coefficient laws and the four-translate residual bound
+
+The next slice constructs mathematically specified coefficients for the
+actual eta translates, and proves a concrete complete approximation bound.
+Numerical experiments guided the choice of grid and a small rational trial
+vector. The coefficients and theorems below are independent of floating-point
+output. No convergence theorem for the growing family is asserted.
+
+**Exact coefficient rule.** For any nonnegative translates `a_j`, let
+`G=G_(N,T_N)` be the real matrix of all actual overlap integrals, and let
+`b_j=max(0,log 2-a_j)`. In dimension `d`, define
+
+\[
+ \lambda=\frac{d+1}{2N+1},\qquad A=G+\lambda I,\qquad
+ c_*=A^{-1}b,\qquad \mathcal D=1-b^Tc_*.
+\]
+
+[EtaCanonicalTranslateMatrix.lean](../RiemannGaussian/EtaCanonicalTranslateMatrix.lean)
+identifies the quadratic form of `G` with the actual weighted square
+integral, proves `G` positive semidefinite, and proves `A` positive definite.
+Thus the inverse and normal equation `Ac_*=b` are justified for every
+finite nonnegative translate family, without an independence hypothesis.
+The positive regularization also handles the empty family.
+
+For real coefficients `c`, the regularized objective is
+
+\[
+ \mathcal Q(c)=1+c^TAc-2b^Tc
+             =E_{T_N}(a,c)+\lambda\sum_j c_j^2.
+\]
+
+The dimension-dependent square penalty pays for the whole infinite tail:
+
+\[
+ \frac{(\sum_j|c_j|)^2}{2N+1}
+ \le\lambda\sum_jc_j^2.
+\]
+
+All mixed entries remain in `G`; the original complex translated carrier
+and its exact tail decomposition remain available upstream.
+[pairedEtaTranslateRidgeObjective_eq_canonical_add_square](../RiemannGaussian/EtaCanonicalTranslateBound.lean)
+proves the exact identity
+
+\[
+ \mathcal Q(c)=\mathcal D+(c-c_*)^TA(c-c_*).
+\]
+
+Consequently the canonical rule minimizes this regularized objective.
+For `N≥1`, the checked bounds give
+
+\[
+ 0\le E(a,c_*)\le B_N(a,c_*)\le\mathcal D\le1,
+ \qquad \mathcal D\le\mathcal Q(c)\quad\text{for every real trial vector }c.
+\]
+
+The last inequality is
+[pairedEtaCanonicalTranslateBudget_le_trial](../RiemannGaussian/EtaCanonicalTranslateBound.lean).
+It is the intended route from arithmetic trial coefficients to a bound
+for the exact canonical rule. The unresolved estimate is now explicit:
+control both the trial residual and the square penalty along a growing
+family. Existence of the inverse or its minimizing property alone does
+not imply that its deficit vanishes.
+
+**A fully specified growing family.**
+[EtaCanonicalTranslateFamily.lean](../RiemannGaussian/EtaCanonicalTranslateFamily.lean)
+fixes every parameter by
+
+\[
+ d_k=2^k,\quad N_k=4d_k^2,\quad
+ r_{k,j}=\frac{j+1}{d_k},\quad a_{k,j}=-\log r_{k,j},
+ \quad 0\le j<d_k.
+\]
+
+The coefficients use the same formula `c_k=(G_k+lambda_k I)^(-1)b_k`
+at every stage. In particular, neither an optimizer output nor a choice
+of a favorable subsequence enters their definition. Lean proves
+`0≤D_k≤1`, full residual `E_k≤D_k`, and, for every actual zero,
+
+\[
+ |2\Re\rho-1|W_\rho\le\mathcal D_k.
+\]
+
+The terminal theorem
+[pairedEtaLeadingCurrent_firstMoment_le_dyadicTranslate](../RiemannGaussian/EtaCanonicalTranslateFamily.lean)
+therefore proves, for both original multiplicity branches and every `K`,
+
+\[
+ S_\rho(K)\le C_\rho(K+1)^{p_{\rho,k}},\qquad
+ p_{\rho,k}=\min\bigl(\kappa_{m,N_k}(\Im\rho),\mathcal D_k/W_\rho\bigr).
+\]
+
+The literal Gaussian return and full signed inverse energy inherit the
+same exponent and their existing finite transport budgets. `W_rho` is
+the original strictly positive reflected target weight; it still depends
+on the actual zero coordinates.
+
+**An exact four-coefficient bound.** At `N=64`, choose
+
+\[
+ r=(1/4,1/2,3/4,1),\qquad c=(-1/2,-1/2,1/2,1).
+\]
+
+The resulting actual function is
+
+\[
+ U(t)=\chi(t)+\tfrac12\chi(t-\log(4/3))
+       -\tfrac12\chi(t-\log2)-\tfrac12\chi(t-\log4).
+\]
+
+[EtaRationalTranslateGram.lean](../RiemannGaussian/EtaRationalTranslateGram.lean)
+proves that positive rational physical scales give an exact rational
+formula for every Gram entry. With `R_N` denoting the quadratic Gram term
+plus the entire coefficient tail, the full budget is
+
+\[
+ B_N=1+R_N-2\sum_jc_j\max(0,\log(2r_j)).
+\]
+
+[pairedEtaFourProjection_rationalQuadraticBudget_lt](../RiemannGaussian/EtaFourTranslateProjection.lean)
+checks `R_64<99/100` by Lean kernel reduction. The exact target pairing
+is `(log 2+log 3)/2`. Rigorous logarithm bounds then give
+[pairedEtaFourProjection_finiteBudget_lt_one_fifth](../RiemannGaussian/EtaFourTranslateBound.lean)
+and `pairedEtaFourProjection_residualEnergy_lt_one_fifth`:
+
+\[
+ E(a,c)\le B_{64}(a,c)<1/5.
+\]
+
+Thus every actual zero satisfies `|2 Re rho-1| W_rho<1/5`. This is a
+normalized coordinate constraint, not a certified improvement of an
+ordinate-only zero strip. The rational check uses no compiler-trusting
+decision procedure and imports no numerical result.
+
+The dyadic stage `k=2` has exactly this four-point grid. Its trial square
+penalty exceeds the preceding tail allowance by exactly `5/258`, so
+comparison gives
+
+\[
+ \mathcal D_2\le B_{64}(a,c)+5/258<1/4.
+\]
+
+This is
+[pairedEtaDyadicTranslateDeficit_two_lt_one_quarter](../RiemannGaussian/EtaCanonicalTranslateFamily.lean).
+It is a finite-stage anchor for the exact family, not an asymptotic rate.
+
+**Exploratory comparison, not Lean-certified numerical bounds.**
+[search_eta_translate_coefficients.py](../scripts/search_eta_translate_coefficients.py)
+evaluates the full finite interval formulas in floating point and compares
+the exact canonical law with free numerical optimization of `B_N`.
+The tested uniform physical grids gave:
+
+| Dimension `d` | Cutoff `N` | Canonical deficit `D` | Canonical full budget `B` | Canonical tail allowance | Freely optimized `B` |
+| --- | --- | --- | --- | --- | --- |
+| 4 | 64 | 0.20302740 | 0.18835512 | 0.03844739 | 0.18787523 |
+| 16 | 1024 | 0.08321057 | 0.07920480 | 0.00479720 | 0.07901803 |
+| 64 | 16384 | 0.05432276 | 0.05291250 | 0.00065742 | 0.05284615 |
+
+Reproduce with NumPy and SciPy (tested versions `2.2.6` and `1.15.3`):
+
+```bash
+python scripts/search_eta_translate_coefficients.py --dimensions 4 16 64 \
+  --solvers canonical free --output /tmp/eta-coefficients.json
+```
+
+The output retains all coefficients, finite residuals, full tail
+allowances, and numerical diagnostics. The interval formulas were also
+compared with direct pairwise interval intersection on small grids.
+The observed agreement supports investigating the exact rule, but proves
+neither monotonicity nor convergence. It also shows why checking the
+residual alone is insufficient: the regularization and tail costs must
+be tracked separately.
+
+One proposed source of structured trials is the desired transform
+multiplier `H(s)/F(s)=s/((s-1) zeta(s))` on `Re s>1`, which suggests a
+Möbius inversion followed by a continuous integration term. Turning that
+suggestion into actual finite trial vectors and proving their full
+critical residual and coefficient estimates remains work to do. The
+existing harmonic Möbius cancellation does not itself provide the required
+power-strength bound. No novelty priority claim is made for the general
+regularized projection method.
+
 ## Next mathematical obligations
 
 The exact-pole prime input now excludes the larger explicit
@@ -4354,13 +4536,16 @@ windows now additionally exclude multiple zeros and nearby distinct pairs
 in their stated rectangles, and discharge the original head branch near
 either edge. These constraints do not force real part `1/2`,
 and the return bound retains a positive exponent. The single-phase eta
-projection has a proved `1/11` exponent floor. The compact-target family
-now supplies a different bound through the complete finite translate
-Gram and its proved coefficient-dependent tail. The immediate task is
-to construct nonnegative real translates and coefficients for which the
-full budget `B_N=Q_N+(sum |c_j|)^2/(2N+1)` becomes small. A successful
-estimate must control coefficient growth as well as finite residual
-approximation. The positive target normalization must also be bounded
+projection has a proved `1/11` exponent floor. The exact dyadic translate
+family now supplies a different bound through its canonical deficit
+`D_k=1-b_k^T (G_k+lambda_k I)^(-1)b_k`. Its definition, complete tail
+control, minimizing identity, and four-point `D_2<1/4` bound are checked.
+The immediate task is to prove `D_k→0`, or an explicit useful bound over
+a prescribed range, using structured trial coefficients and the checked
+comparison theorem. This requires bounding the trial's finite residual
+and its full `lambda_k sum_j c_(k,j)^2` cost together. Numerical decreases
+and the definition of a minimizing coefficient law do not prove this
+estimate. The positive target normalization must also be bounded
 in the intended zero region if a numerical strip is to be certified.
 Positivity of a finite Gram or convergence of each separate entry does
 not supply that control. The remaining target is to rule out the interior off-critical

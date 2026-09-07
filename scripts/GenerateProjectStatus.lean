@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "The complete eta translate residual has an exact finite overlap Gram and a proved coefficient-dependent tail budget; reflection bounds the actual zero displacement and both original current branches, without assuming a vanishing coefficient family"
-    lineOne := "eta translate Gram"
-    lineTwo := "full current budget"
+    label := "An exact growing eta coefficient family is defined by the actual regularized Gram inverse; its full residual deficit bounds both original current branches, and structured trial coefficients bound the deficit; convergence to zero remains open"
+    lineOne := "exact eta family"
+    lineTwo := "full residual bound"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.pairedEtaLeadingCurrent_firstMoment_le_translatedProjection
+      ``RiemannGaussian.pairedEtaLeadingCurrent_firstMoment_le_dyadicTranslate
   }
 ]
 
@@ -228,8 +228,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">Finite eta translate Grams retain the full coefficient and tail cost. " ++
-      "Vanishing residual control and the uniform current bound remain open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">Exact eta coefficients and a full four-translate bound are checked. " ++
+      "Family error decay and the uniform current bound remain open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -868,12 +868,30 @@ run_cmd do
         "bounds both original current branches by C_rho*(K+1)^p, " ++
         "p=min(kappa_N,B_N/W_rho), at every K. The literal Gaussian " ++
         "return and full signed inverse energy retain this exponent and " ++
-        "their existing finite error budgets. No coefficient family with " ++
-        "B_N tending to zero is constructed; W_rho depends on actual " ++
-        "zero coordinates. This is not yet an ordinate-only numerical " ++
+        "their existing finite error budgets. An exact growing family now " ++
+        "uses d_k=2^k, N_k=4*d_k^2, a_(k,j)=-log((j+1)/d_k), " ++
+        "lambda_k=(d_k+1)/(2*N_k+1), and c_k=(G_k+lambda_k*I)^(-1)*b_k. " ++
+        "The actual matrix is proved positive definite. Completing the " ++
+        "square proves that these coefficients minimize the regularized " ++
+        "residual objective, so every structured trial coefficient vector " ++
+        "bounds the canonical deficit D_k=1-b_k^T*c_k. Its square penalty " ++
+        "dominates the entire coefficient-dependent tail. The theorem " ++
+        "pairedEtaDyadicTranslate_residualEnergy_le proves E_k<=D_k, " ++
+        "with 0<=D_k<=1, and reflection gives abs(2*beta-1)*W_rho<=D_k. " ++
+        "pairedEtaLeadingCurrent_firstMoment_le_dyadicTranslate bounds " ++
+        "the original current at every cutoff by the minimum exponent " ++
+        "p=min(kappa_(N_k),D_k/W_rho). The actual Gaussian return and " ++
+        "full inverse energy retain their existing transport budgets. " ++
+        "At scales [1/4,1/2,3/4,1], exact coefficients [-1/2,-1/2,1/2,1] " ++
+        "have full B_64<1/5, checked by kernel reduction of the rational " ++
+        "Gram and rigorous logarithm bounds. Comparison with this trial " ++
+        "proves pairedEtaDyadicTranslateDeficit_two_lt_one_quarter. " ++
+        "No floating-point result enters these proofs. Convergence of " ++
+        "D_k to zero is not proved. W_rho depends on actual zero " ++
+        "coordinates, so this is not yet an ordinate-only numerical " ++
         "zero-strip improvement or removal of the cutoff power. The " ++
-        "next estimate must control finite residual approximation and " ++
-        "coefficient growth together. The uniform cutoff-independent " ++
+        "next estimate must bound a structured trial family with its " ++
+        "full residual and coefficient cost. The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
