@@ -7,12 +7,14 @@ the zero-dependent source reductio suggested in
 `/home/dbsanfte/riemann/RiemannGaussian_hyperbola_reductio_steer-1.md`.
 The memo is a research proposal, not an input to Lean's proof kernel.
 
-The checked result is an exact hyperbola decomposition, small-half decay,
-the full quotient correlation formula, and a quantitative limit for the
-source retained by the large half. **The proposed vanishing operator
-estimate is not proved.** No theorem excluding right-half zeros or proving
-RH has been added. This package audits the proposed route; it does not
-establish the conjecture-strength step.
+The checked result now controls the original divisor aggregate through
+`A^(2/3)` on a physical window of starting cutoff and length `A`, under a
+hypothetical right-half-zero assumption. Keeping the complete sampling
+cost extends the earlier square-root range. The remaining source is an
+exact clipped quotient form with at most `2*A^(1/3)` indices. **Decay of
+that form is not proved.** No theorem excluding right-half zeros or
+proving RH has been added. The earlier square-root split is recorded
+first, followed by the enlarged range and its current open target.
 
 ## Actual carrier and a necessary correction to the memo
 
@@ -158,13 +160,78 @@ The contradiction has not been obtained.
 
 ## The open arithmetic target and an exponent audit
 
+The full sampling cost can be useful even when it is larger than the
+window length. The new
+`pairedEtaCompletedMoebiusOriginalMeanSquare_le_window` in
+[EtaMoebiusWindowMeanSquare](../RiemannGaussian/EtaMoebiusWindowMeanSquare.lean)
+proves, for `A≥1`, `L>0`, and `1≤T≤A`,
+
+\[
+ \frac1L\sum_{n<L}|\operatorname{low}(A+n,T)|^2
+ \le C_\rho\left[
+       \left(1+\frac{4T^2}{L}\right)T(1+\log T)
+       +\frac{T^4}{A^2}\right] A^{-2\sigma}.
+\]
+
+Both endpoint errors and the entire window loss remain explicit. No
+condition `T²≤L` is imposed on this theorem. Setting `A=L=u³` and `T=u²`
+gives the genuinely larger controlled range in
+[EtaMoebiusTwoThirdsMeanSquare](../RiemannGaussian/EtaMoebiusTwoThirdsMeanSquare.lean):
+
+\[
+ L^{(2/3)}_u:=\frac1{u^3}\sum_{n<u^3}|\operatorname{low}(u^3+n,u^2)|^2
+ \le V_u:=11C_\rho(1+\log u)u^{3-6\sigma}.
+\]
+
+The theorem `pairedEtaCompletedMoebiusOriginalMeanSquare_twoThirds_le`
+includes every original divisor through `u²`. The allowance and the
+entire mean square tend to zero when `sigma>1/2`; this is also checked
+for `u=2^k`, so `A=8^k` and the divisor cutoff is `4^k`. The new bound
+controls the sum over the full enlarged range, not individual terms
+estimated independently. It remains a theorem under a zero-location
+hypothesis, and does not establish a new zero-free strip.
+
+The larger divisor cut can bisect a quotient fibre. The new
+[clipped block module](../RiemannGaussian/EtaMoebiusClippedQuotientBlocks.lean)
+proves the exact general arithmetic formula
+
+\[
+ D_{\rho,M,T}^{\rm clip}(q)
+ =P_\rho(\lfloor M/q\rfloor)
+  -P_\rho\!\left(\max\{T,\lfloor M/(q+1)\rfloor\}\right),
+ \quad P_\rho(x)=\sum_{d\le x}\mu(d)d^{-\rho},
+\]
+
+for `1≤q≤floor(M/(T+1))`. The completed block is this arithmetic
+difference times the unchanged `X_rho(q)`. At `T=u²` and `M<2u³`, the
+upper quotient is strictly below `2u`; the clipped blocks are already
+zero beyond the actual quotient boundary. Thus no endpoint cell is
+dropped when using a fixed family of size `2u`.
+
+Let `H^(2/3)_u` be the full large-half mean square beyond `u²` on
+`[u³,2u³)`. In
+[EtaMoebiusTwoThirdsQuotientEnergy](../RiemannGaussian/EtaMoebiusTwoThirdsQuotientEnergy.lean),
+`pairedEtaCompletedMoebiusLargeMeanSquare_twoThirds_eq_quotientCorrelations`
+identifies it with the complete complex double correlation sum on
+`q,r≤2u`, retaining all signed cross terms and the clipped boundary.
+The source comparison is quantitatively preserved:
+
+\[
+ |H^{(2/3)}_u-|S_\rho|^2|
+ \le V_u+2|S_\rho|\sqrt{V_u}.
+\]
+
+`pairedEtaCompletedMoebiusLargeMeanSquare_twoThirds_tendsto_source`
+and its dyadic specialization prove the nonzero source limit for this
+smaller remaining quotient form under `sigma>1/2`.
+
 The remaining proposed estimate is
 
 \[
- H_{D_k}\le C_{\rho,\varepsilon}
+ H^{(2/3)}_{u_k}\le C_{\rho,\varepsilon}
           A_k^{1-2\sigma+\varepsilon}
  \quad\text{eventually, for every }\varepsilon>0,
- \qquad A_k=D_k^2.
+ \qquad u_k=2^k,\quad A_k=u_k^3.
 \]
 
 For `sigma>1/2`, choose `epsilon=(2*sigma-1)/2`. The exponent is negative,
@@ -181,12 +248,12 @@ The following checks determine what further work is necessary:
 | Exact quotient factorization | Original arithmetic prefix differences times the completed eta prefix. | Equality preserves the source contribution as well as the oscillation. |
 | Individual term bound | Each original term has norm at most `K_rho M^(-sigma)`. | A triangle sum over order `M` terms permits an energy of order `M^(2-2*sigma)`, one full power above the requested scale. This exponent comparison is an audit calculation, not a new Lean estimate. |
 | Existing power-remainder block cancellation | For every fixed positive tolerance, a uniform block bound at its natural `M^(1-sigma)` scale with a remainder. | An arbitrarily small coefficient on a positive power is not an arbitrary saving in that power. Its sum over a growing quotient family remains uncontrolled. |
-| Existing divisor Fourier sampler | A window cost retaining `4*T²+L`; the useful mean-square theorem requires `T²≤L`. | The large divisors reach order `A`, while the averaging length is `A`. Reusing the small-half bound there would discard an order-`A` window loss. |
-| Quotient transposition | A family with only order `sqrt(A)` quotient indices. | Its arithmetic block coefficients themselves vary with the physical cutoff. The fixed-coefficient divisor sampler does not become a uniform estimate for this moving family merely by renaming its indices. |
+| Existing divisor Fourier sampler | The full `4*T²+L` cost is now retained and absorbed through `T=A^(2/3)` when `sigma>1/2`. | At `T` of order `A`, the remaining order-`A` window loss still prevents the needed decay. |
+| Quotient transposition | The newly checked complement has only order `A^(1/3)` quotient indices, with exact clipping. | Its arithmetic block coefficients themselves vary with the physical cutoff. The fixed-coefficient divisor sampler does not become a uniform estimate for this moving family merely by renaming its indices. |
 | Product-fibre collision energy | A proved coefficient-energy bound with logarithmic factors. | This alone does not bound the moving physical correlation operator or remove its window-dependent cost. |
 
-The next mathematical work is on the full `q,r` form, preferably with
-dyadic quotient shells and the exact moving arithmetic intervals retained.
+The next mathematical work is on the full `q,r≤2*A^(1/3)` form, preferably
+with dyadic quotient shells and the exact moving arithmetic intervals retained.
 Any proposed operator bound must display its dependence on the starting
 cutoff, window length, shell sizes, and coefficient variation, and must
 give a negative power for every `sigma>1/2` after a sufficiently small

@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "The complete large-divisor mean square on square windows equals the actual complex quotient correlation sum with every cross term retained; the vanishing operator estimate remains open"
-    lineOne := "hyperbola quotient form"
-    lineTwo := "all cross terms retained"
+    label := "The original completed divisor mean square is bounded through A^(2/3) with the full sampling-window loss retained; the complementary clipped quotient form still needs a decay estimate"
+    lineOne := "larger divisor range"
+    lineTwo := "A^(2/3) mean square"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaCompletedMoebiusLargeMeanSquare_eq_quotientCorrelations
+      ``RiemannGaussian.pairedEtaCompletedMoebiusOriginalMeanSquare_twoThirds_le
   }
 ]
 
@@ -1092,6 +1092,22 @@ run_cmd do
         "axiom or placeholder. The fixed-divisor sampler and product collision bounds " ++
         "do not yet control the moving quotient coefficients and their physical window " ++
         "cost. The logarithmic residual's remaining middle band is still open. " ++
+        "Retaining that full window cost now proves an enlarged range for the actual " ++
+        "original aggregate. For A>=1, L>0, and 1<=T<=A, its mean square is at most " ++
+        "C_rho*[(1+4*T^2/L)*T*(1+log(T))+T^4/A^2]*A^(-2*Re(rho)). Both original " ++
+        "endpoint errors are retained. At A=L=u^3 and T=u^2 the bound is " ++
+        "V_u=11*C_rho*(1+log(u))*u^(3-6*Re(rho)), which tends to zero at every " ++
+        "hypothetical right-half zero. This controls the complete divisor aggregate " ++
+        "through A^(2/3), extending the earlier square-root range. Arbitrary divisor " ++
+        "cuts now have exact clipped quotient blocks, with arithmetic prefix difference " ++
+        "P_rho(floor(M/q))-P_rho(max(T,floor(M/(q+1)))). On the new cubic windows " ++
+        "the entire complement has at most 2*u quotient indices. Its full mean square " ++
+        "equals the complete complex q,r correlation form with the clipped boundary " ++
+        "and every off-diagonal term retained. Its difference from the positive source " ++
+        "square is at most V_u+2*norm(source)*sqrt(V_u), and tends to zero under the " ++
+        "right-half-zero hypothesis, including for u=2^k. Decay of the uncentered " ++
+        "remaining form, full arithmetic decay, and any sharper zero strip remain " ++
+        "unproved. The new two-thirds exponent describes a divisor cutoff. " ++
         "The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
@@ -1147,8 +1163,9 @@ run_cmd do
           "flux at every nontrivial zero, preserving completion weights, multiplicity, " ++
           "and the simple-zero head term. The current route seeks a vanishing estimate " ++
           "for the full completed Moebius quotient correlation form at a hypothetical " ++
-          "right-half zero. The checked hyperbola split and small-half decay retain a " ++
-          "nonzero large-half source; the required independent operator bound is open."))
+          "right-half zero. Divisors through A^(2/3) now have vanishing mean square " ++
+          "under that hypothesis. The complement has at most 2*A^(1/3) clipped quotient " ++
+          "indices and retains a nonzero source; its independent decay bound is open."))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]
