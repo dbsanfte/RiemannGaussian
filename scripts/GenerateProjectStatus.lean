@@ -99,6 +99,14 @@ private def milestones : Array Milestone := #[
     role := "unconditional"
     theoremName :=
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
+  },
+  {
+    label := "Actual Gaussian reciprocal-zeta contour with proved zero avoidance and both horizontal corrections"
+    lineOne := "reciprocal contour"
+    lineTwo := "Gaussian bound"
+    role := "unconditional"
+    theoremName :=
+      ``RiemannGaussian.zetaReciprocalGaussian_right_integral_le
   }
 ]
 
@@ -111,7 +119,8 @@ private def milestonePoints : Array Point := #[
   { x := 180, y := 150 },
   { x := 340, y := 150 },
   { x := 500, y := 150 },
-  { x := 20, y := 229 }
+  { x := 20, y := 229 },
+  { x := 180, y := 229 }
 ]
 
 private def projectPrefix : Name := `RiemannGaussian
@@ -219,8 +228,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">For |y| ≥ 1: edge windows have multiplicity ≤ 1, D=1/(6000 log(|y|+22)); " ++
-      "uniform current bound open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">Gaussian reciprocal contour: left line and both horizontal errors bounded; " ++
+      "Moebius transfer pending; uniform current bound open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -699,7 +708,28 @@ run_cmd do
         "layer at the first zero's ordinate have separation greater than D. " ++
         "Near either edge, simplicity is discharged in the original " ++
         "current's full head inverse formula. These local constraints do " ++
-        "not improve the preceding all-zero strip or current exponent. The uniform cutoff-independent " ++
+        "not improve the preceding all-zero strip or current exponent. " ++
+        "An independent Gaussian reciprocal contour is now checked for the " ++
+        "actual function. Put L(y)=log(abs(y)+22) and e(y)=1/(500000*L(y)). " ++
+        "Every local divisor point at abs(y)>=2 leaves distance at least " ++
+        "3*e(y) from the shifted strip. The normalized residual logarithm " ++
+        "has norm at most 40*L(y) on the 5/8 disc; the complete canonical " ++
+        "factor cost is at most 32*L(y)*log(2/e(y)), with the exact complex " ++
+        "factorization retained. The resulting reciprocal height bound is " ++
+        "B_h(y)=16*(abs(y)+1)*exp(40*L(y)+32*L(y)*log(1000000*L(y))). " ++
+        "A positive compact floor c for norm(Z1(1+i*y)), abs(y)<=2, is " ++
+        "proved, and the eta derivative bound gives w0=min(1/8,c/33856). " ++
+        "The genuine reciprocal extension (s-1)/Z1(s) is analytic and " ++
+        "bounded by B(T)=max(6/c,B_h(T)) on abs(Re(s)-1)<=w(T), " ++
+        "abs(Im(s))<=T, where w(T)=min(w0,e(T)). For " ++
+        "T>=max(2,exp(1/(500000*w0))), w(T)=e(T). For T>=2 and a,tau>=0, " ++
+        "the actual truncated right-line integral of exp(a*s+tau*s^2)/zeta(s) " ++
+        "is bounded by 2*T*B(T)*exp(a*(1-w)+tau*(1-w)^2) plus " ++
+        "4*w*B(T)*exp(a*(1+w)+tau*(1+w)^2-tau*T^2). The complete complex " ++
+        "contour identity retains both oriented horizontal errors. " ++
+        "Identification with the full Gaussian Moebius sum and its " ++
+        "unbounded vertical tails remain to be proved; this is not a " ++
+        "bound for the original signed current. The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

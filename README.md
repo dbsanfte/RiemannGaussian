@@ -27,35 +27,41 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Use the complete signed local zero sum alongside the original eta inverse energy. Explicit edge windows now contain at most one zero counting multiplicity, so any zero there is simple and isolated. Near either edge the original current therefore uses its exact head branch. The global frontier remains excluding the surviving interior off-critical contribution and bounding the weighted absolute moment uniformly in the cutoff.
+Control the original signed inverse energy using an independent Gaussian estimate for the Möbius sums. A proved reciprocal-zeta bound now covers a rectangle crossing Re s = 1, and the Gaussian contour shift retains both horizontal errors. Next identify the full contour integral with the actual arithmetic Gaussian sum and bound its tails. The target remains a cutoff-independent weighted bound for the unchanged current; the off-critical contribution is still open.
 
 ## Latest Update
 
-Lean now proves **a simultaneous bound on nearby zeros, counting
-multiplicity**. For any real center `y` with `abs(y) ≥ 1`, put
+Lean now proves **a quantitative Gaussian contour estimate for the
+actual reciprocal of zeta**, extending to the left of `Re s = 1`.
+[norm_zetaReciprocalExtension_le_on_box](RiemannGaussian/ZetaReciprocalBox.lean)
+supplies one finite bound `B(T)` on the whole rectangle
+`abs(Re s-1) ≤ w(T)`, `abs(Im s) ≤ T`.
+The width is positive and equals `1/(500000 log(T+22))` beyond a
+proved fixed threshold. The compact middle includes the reciprocal's
+genuine removable value at zeta's pole.
+
+[zetaReciprocalGaussian_contour_shift](RiemannGaussian/ZetaReciprocalGaussianContour.lean)
+retains the exact complex left integral and both oriented horizontal
+corrections. For `T ≥ 2` and `a,tau ≥ 0`,
+[zetaReciprocalGaussian_right_integral_le](RiemannGaussian/ZetaReciprocalGaussianContour.lean)
+bounds the vertical integral of `exp(a s + tau s²)/zeta(s)` along
+`Re s = 1+w(T)`, from ordinate `-T` to `T`, by
 
 \[
- D(y)=\frac{1}{6000\log(|y|+22)}.
+ 2TB(T)e^{a(1-w)+\tau(1-w)^2}
+ +4wB(T)e^{a(1+w)+\tau(1+w)^2-\tau T^2},
+ \qquad w=w(T).
 \]
 
-[sum_multiplicity_le_one_in_signedEdgeWindow](RiemannGaussian/ZetaSignedWindowMultiplicity.lean)
-bounds the total analytic multiplicity of every finite set of actual
-zeros in `1-D(y) ≤ beta < 1`, `abs(gamma-y) ≤ D(y)` by **one**.
-[ZetaSignedZeroSeparation](RiemannGaussian/ZetaSignedZeroSeparation.lean)
-proves uniqueness and simplicity there, an explicit ordinate separation
-for distinct zeros in the indicated edge layer, and the reflected
-multiplicity bound at the left edge.
+Zero avoidance, the full local divisor, the residual logarithm, and the
+low-height norm floor are all proved. The first term keeps the smaller
+left-line exponent; the second accounts for both horizontal segments.
 
-The proof retains the exact complex selected-pole sum and its full
-complement, then uses their common real sign in the prime estimate.
-[pairedEtaLeadingCurrent_eq_momentInverse_head_of_near_edge](RiemannGaussian/ZetaSignedZeroSeparation.lean)
-consequently gives the original current's full head inverse formula
-near either edge, with simplicity proved from the actual zero location.
-
-These local constraints do not exclude every off-critical zero.
-The [uniform weighted goal](docs/eta-current-reconstruction-plan.md)
-and RH remain open. No novelty priority or improvement over the
-mathematical literature is claimed.
+The next step is the exact Gaussian Möbius-series identity and control
+of the unbounded vertical tails. This contour estimate does not yet
+bound the original signed current. The
+[uniform weighted goal](docs/eta-current-reconstruction-plan.md) and RH
+remain open; no novelty priority is claimed.
 
 ## Notable Formalisations
 
@@ -65,6 +71,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
 | **Gaussian/Weil explicit formula** | The arithmetic Gaussian expression, including prime-power and Archimedean terms, equals the canonical multiplicity-weighted symmetric zeta-zero sum for every positive width. | [gaussianArithmeticExplicitFormula_eq_canonical](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean#L1235) |
+| **Gaussian reciprocal-zeta contour** | A proved positive-width rectangle crosses `Re s = 1` with a uniform bound for the genuine reciprocal. The exact Gaussian contour shift keeps both horizontal corrections, and the actual right integral has a left-line bound plus their explicit Gaussian suppression. The arithmetic Möbius-series transfer remains to be proved. | [norm_zetaReciprocalExtension_le_on_box](RiemannGaussian/ZetaReciprocalBox.lean), [zetaReciprocalGaussian_contour_shift](RiemannGaussian/ZetaReciprocalGaussianContour.lean), [zetaReciprocalGaussian_right_integral_le](RiemannGaussian/ZetaReciprocalGaussianContour.lean) |
 | **Gaussian heat and reflected-zero Grams** | The complete matched Gaussian correlation equals the boundary heat-residue sum. At positive heat time, its vanishing is equivalent to RH. | [riemannXiUpperReflectedPairGaussianTotal_eq_boundaryHeatResidueTotal](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L187), [riemannXiUpperReflectedPairGaussianTotal_eq_zero_iff_rh](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L197) |
 | **Suzuki arithmetic and spectral formulas** | Suzuki's positive-time arithmetic function equals its spectral expansion on `Im z > 1/2`. The literal arithmetic `Psi` is strictly positive on a nonzero punctured neighbourhood of the origin. | [riemannXiSuzukiArithmeticPPositive_eq_spectral_safe](RiemannGaussian/RiemannXiSuzukiWeilVerticalLimit.lean#L462), [exists_pos_on_abs_riemannXiSuzukiPsi](RiemannGaussian/RiemannXiSuzukiPointwiseLocalPositivity.lean#L298) |
 | **Xi growth and divisor summability** | Unconditional `exp(O(R log R))` xi growth and convergence of the multiplicity-weighted inverse-square zero series. | [riemannXi_logLinearGrowth](RiemannGaussian/GaussianXiLogLinearGrowth.lean#L315), [summable_distinct_zetaZeroInverseSquareNorm](RiemannGaussian/GaussianXiInverseSquareSummability.lean#L294) |

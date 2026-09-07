@@ -61,6 +61,7 @@ the objective.
 | Transport complete zeroth-order inverse cancellation to both original current branches | `pairedEtaLeadingCurrent_fullInverseEnergy_firstMoment_stability` in [EtaCurrentFullInverseEnergy.lean](../RiemannGaussian/EtaCurrentFullInverseEnergy.lean), and `pairedEtaLeadingCurrent_weighted_coherentComplement_error_le` in [EtaCurrentCoherentComplement.lean](../RiemannGaussian/EtaCurrentCoherentComplement.lean). | Both branches reduce to signed complete zeroth energies with positive real coefficients and summable odd-weighted error. Independent band/complement splits retain all mixed products, and the actual coherent bands fit every literal cutoff by integer division. The weighted absolute sum of the full signed energy remains open. |
 | Sharpen the actual prime constraint on the current's horizontal growth | `multiplicity_le_quadratic_signed_zero_gap` in [ZetaSignedExactPole.lean](../RiemannGaussian/ZetaSignedExactPole.lean), `nontrivialZetaZero_mem_signedQuadratic_strip` in [ZetaSignedQuadraticMargin.lean](../RiemannGaussian/ZetaSignedQuadraticMargin.lean), and `pairedEtaLeadingCurrent_firstMoment_le_quadraticPrime` in [EtaCurrentQuadraticPrimeBound.lean](../RiemannGaussian/EtaCurrentQuadraticPrimeBound.lean). | Exact pole geometry gives a multiplicity-sensitive margin more than 31 times the previous signed margin at every nonzero ordinate. For absolute ordinate at least one, the margin is at least `1/(56458 log(abs(y)+22))`. Both original current branches, the Gaussian return, and the complete inverse energy inherit the improved exponent while preserving all preceding margins. The exponent remains positive. |
 | Bound several nearby actual zeros simultaneously | `sum_multiplicity_le_one_in_signedEdgeWindow` in [ZetaSignedWindowMultiplicity.lean](../RiemannGaussian/ZetaSignedWindowMultiplicity.lean), with reflection, simplicity, separation, and the original head inverse formula in [ZetaSignedZeroSeparation.lean](../RiemannGaussian/ZetaSignedZeroSeparation.lean). | For every center of absolute height at least one, an edge rectangle of width and ordinate half-width `1/(6000 log(abs(y)+22))` contains total analytic multiplicity at most one. The exact selected complex pole sum and full complement are retained. This rules out multiple zeros and close pairs within that layer, while the uniform weighted goal remains open. |
+| Establish an independent Gaussian reciprocal contour for the Möbius sums | `norm_zetaReciprocalExtension_le_on_box` in [ZetaReciprocalBox.lean](../RiemannGaussian/ZetaReciprocalBox.lean), and `zetaReciprocalGaussian_contour_shift` with `zetaReciprocalGaussian_right_integral_le` in [ZetaReciprocalGaussianContour.lean](../RiemannGaussian/ZetaReciprocalGaussianContour.lean). | The actual reciprocal is analytic and uniformly bounded on a rectangle crossing real part one. The Gaussian contour shift retains both horizontal corrections and bounds them with their height damping. The full arithmetic Gaussian-series identity, unbounded vertical tails, and transfer to the original signed current remain to be proved. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -3258,6 +3259,137 @@ previously proved positive-power current obstruction. The uniform
 weighted arithmetic bound and RH remain open. This slice makes no
 novelty-priority or improvement-over-literature claim.
 
+## Checked Gaussian reciprocal-zeta contour with complete corrections
+
+The compiled terminal
+[zetaReciprocalGaussian_right_integral_le](../RiemannGaussian/ZetaReciprocalGaussianContour.lean)
+gives an independent analytic bound for the actual reciprocal-zeta
+Gaussian kernel. It is intended to feed estimates for the original
+Möbius coefficients. It is not yet an estimate for their infinite
+Gaussian sum or for the signed eta current.
+
+Write `L(y)=log(abs(y)+22)` and `e(y)=1/(500000 L(y))`.
+[ZetaReciprocalGeometry](../RiemannGaussian/ZetaReciprocalGeometry.lean)
+proves nonvanishing of the actual pole-removed zeta function on
+`Re s ≥ 1-e(Im s)` when `abs(Im s)≥1`. For a common local center with
+`abs(y)≥2`, every nonzero divisor coefficient has
+
+\[
+ \Re i\le-\frac12-4e(y).
+\]
+
+Consequently every point with `Re z≥-1/2-e(y)` stays at norm distance at
+least `3e(y)` from every enclosed pole. The proof constructs each
+divisor point as an actual nontrivial zero and applies the previously
+checked margin at its own ordinate; neighbouring logarithmic heights
+are compared explicitly.
+
+[ZetaLocalReciprocal](../RiemannGaussian/ZetaLocalReciprocal.lean)
+retains the complete complex factorisation before taking a norm:
+
+\[
+ \left(\prod_i B_i(z)^{d_i}\right) f_y(z)
+ =\exp(\mathcal L_y(z))g_y(0).
+\]
+
+Here `f_y` is the actual translated pole-removed zeta function, `d_i` its
+complete local analytic divisor, `B_i` its canonical factors, `g_y`
+its nonvanishing residual, and `mathcal L_y(0)=0` the normalized
+logarithm. The named source is
+`localZetaPoleRemoved_mul_canonical_eq_exp`. On `norm(z)≤5/8`,
+`norm_localZetaCanonicalLog_le_forty` gives `norm(mathcal L_y(z))≤40L(y)`.
+The proved pole distance bounds each canonical factor by `2/e(y)`.
+Jensen's complete multiplicity count gives
+
+\[
+ \sum_i d_i\log|B_i(z)|\le32L(y)\log(2/e(y)).
+\]
+
+Together with the safe-center norm floor `1/16` this proves
+`norm_inv_localZetaPoleRemoved_le`. At an actual point
+`1-e(y)≤Re s≤3/2`, `Im s=y`, `abs(y)≥2`, the resulting bound is
+
+\[
+ B_h(y)=16(|y|+1)
+ \exp\!\left(40L(y)+32L(y)\log(1000000L(y))\right).
+\]
+
+The compact middle of the contour is also discharged.
+[ZetaReciprocalLowHeight](../RiemannGaussian/ZetaReciprocalLowHeight.lean)
+constructs a fixed `c>0` such that
+`c≤norm(riemannZeta₁(1+i y))` for every `abs(y)≤2`.
+This constant is obtained from an actual positive compact minimum,
+not supplied as a hypothesis and not asserted to have a checked
+numerical value. The eta derivative bound is at most `16928` throughout
+the required horizontal segments. Thus
+
+\[
+ w_0=\min\!\left(\frac18,\frac{c}{33856}\right)>0
+\]
+
+preserves the lower bound `c/2` when `abs(Re s-1)≤w0` and `abs(Im s)≤2`.
+The genuine reciprocal extension
+
+\[
+ E(s)=\frac{s-1}{\operatorname{riemannZeta}_1(s)}
+\]
+
+is exactly `1/zeta(s)` away from one and has its removable value
+`E(1)=0`. Its norm is at most `6/c` on the low-height rectangle.
+The extension and its analytic identity are proved; no singular
+expression is used as though nonzero at the pole.
+
+[ZetaReciprocalBox](../RiemannGaussian/ZetaReciprocalBox.lean) defines
+
+\[
+ w(T)=\min(w_0,e(T)),\qquad B(T)=\max(6/c,B_h(T)).
+\]
+
+`riemannZeta₁_ne_zero_on_reciprocalBox`,
+`analyticAt_zetaReciprocalExtension_on_box`, and
+`norm_zetaReciprocalExtension_le_on_box` prove that `E` is analytic near
+every point of the whole closed rectangle
+`abs(Re s-1)≤w(T)`, `abs(Im s)≤T` and has norm at most `B(T)` there.
+Both bounds are finite and positive. The threshold theorem proves
+`w(T)=e(T)` whenever
+`T≥max(2, exp(1/(500000 w0)))`.
+
+For the actual kernel `K(s)=exp(a s+tau s²)E(s)`, let `V_sigma` be its
+vertical integral with ordinates from `-T` to `T`, and `H_t` its
+horizontal integral from `1-w` to `1+w` at ordinate `t`.
+`zetaReciprocalGaussian_contour_shift` retains the exact orientation:
+
+\[
+ iV_{1+w}=iV_{1-w}+H_T-H_{-T}.
+\]
+
+For `T≥2`, `a≥0`, and `tau≥0`, the compiled right-integral bound is
+
+\[
+ |V_{1+w}|
+ \le 2TB(T)e^{a(1-w)+\tau(1-w)^2}
+   +4wB(T)e^{a(1+w)+\tau(1+w)^2-\tau T^2}.
+\]
+
+The horizontal-integral theorem bounds each correction separately.
+All zero avoidance and analyticity needed by Cauchy's theorem are
+discharged on the actual full rectangle, including the middle segment.
+The exact complex kernel retains its Gaussian phase before the norm
+estimate is taken.
+
+The next proof target on this independent arithmetic route is to
+identify the full right-line Gaussian integral with its original
+Möbius series, justify the sum-integral exchange, and bound the two
+unbounded vertical tails. Scale choices must then give a proved
+arithmetic cancellation estimate before attempting a transfer to the
+original inverse energy. That transfer must preserve the moving
+physical cutoffs, completion factors, and both reflected channels.
+The current contour stays at real part at least `7/8`; this result does
+not by itself supply the missing critical-strength arithmetic estimate.
+It changes neither the established zero-free margin nor the original
+current's positive growth exponent. The uniform weighted goal and RH
+remain open, with no novelty-priority or new certificate claim.
+
 ## Next mathematical obligations
 
 The exact-pole prime input now excludes the larger explicit
@@ -3271,6 +3403,11 @@ and the return bound has a proved positive exponent. The remaining task is to ru
 off-critical contribution while retaining the unchanged absolute weighted
 target. The following inverse and heat carriers remain available for that
 task; their established identities alone do not supply the missing estimate.
+The independent Gaussian reciprocal contour above now provides a checked
+left-line estimate with both horizontal errors controlled. Its full
+Möbius-series identification and unbounded-tail estimates are the next
+concrete analytic steps; their eventual transfer to the signed full
+inverse energy still requires a proved arithmetic gain.
 
 1. Bound the signed full zeroth-order inverse energy's weighted absolute
    moment uniformly. The checked transport above now covers both the
