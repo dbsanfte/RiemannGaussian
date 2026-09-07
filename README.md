@@ -27,40 +27,37 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Prove the uniform weighted arithmetic bound through the exact Möbius residual. Lean compares its full energy with the balanced floor-cell norm by constants 1/6 and 6. The quadratic tail decays, but the growing prefix remains uncontrolled. The next estimate must use the retained prime and normalization terms; changing only the eta representation cannot remove their full norm-decay obligation. Full arithmetic decay and RH remain open.
+Prove the uniform weighted arithmetic bound by controlling the exact Möbius residual on floor(log M) < L ≤ M². Lean now proves decay of the entire growing logarithmic head and the complete quadratic tail for the original coefficients. The remaining band retains the prime variance, normalization cost, and signed quotient correlations. Full arithmetic decay, the uniform weighted current bound, and RH remain open.
 
 ## Latest Update
 
-Lean now proves an **exact arithmetic transform and a comparison of the
-full norms** for every original bounded weight family. Define the balanced
-floor cell by `B_M(L)=1−Σ_(n≤M) μ(n)w(n)floor(L/n)+p_M L` for `L≥1`,
-where `p_M=Σ_(n≤M) μ(n)w(n)/n`. Its weighted energy is
-`F_M=Σ_(L≥1) B_M(L)²/(L(L+1))`. The
-[full comparison](RiemannGaussian/EtaMoebiusBeurlingComparison.lean) gives
+Lean now proves **decay of an entire growing initial arithmetic interval**
+for the original logarithmic Möbius coefficients. The
+[normalization theorem](RiemannGaussian/EtaMoebiusLogHarmonicBound.lean)
+gives `|p_M|≤5/log M` for every `M>1`, retaining the exact signed Euler
+remainder before bounding it. The actual prime-shell identity and a proved
+Chebyshev bound then give `|r_M(L)|≤22/log M` for all `1≤L≤M`.
+The [joint prefix bound](RiemannGaussian/EtaMoebiusArithmeticGrowingHead.lean)
+is
 
 \[
- \frac{F_M}{6}\le E^\infty_M\le6F_M.
+ \sum_{L=1}^{R} r_M(L)^2\le\frac{484R}{(\log M)^2}
+ \qquad(M>1,\ R\le M).
 \]
 
-The [discrete Hardy transform](RiemannGaussian/EtaDiscreteHardyTransform.lean)
-preserves the entire weighted cell energy exactly, with its finite boundary
-term and limit checked. The original eta residual is the signed difference
-between a transformed cell and its parent at `floor(L/2)`. The
-[dyadic energy identity](RiemannGaussian/EtaDyadicDifferenceEnergy.lean)
-retains the full signed cross moment before proving both bounds. Every
-infinite series used in the comparison is genuinely summable.
+Thus the complete prefix through `floor(log M)` has energy at most
+`484/log M`, which tends to zero while that physical cutoff grows without
+bound. Together with the proved [complete quadratic-tail decay](RiemannGaussian/EtaMoebiusArithmeticSamplingTail.lean),
+the exact full residual differs from the intervening square sum on
+`floor(log M)<L≤M²` by a proved vanishing quantity.
 
-For the exact logarithmic coefficients, full eta-residual decay is therefore
-equivalent to decay of this balanced floor-cell norm. This constrains what
-the parity representation can achieve for a fixed coefficient family.
-The previous [complete quadratic-tail decay](RiemannGaussian/EtaMoebiusArithmeticSamplingTail.lean)
-remains proved; it leaves the growing prefix through `M²` to control.
-
-**Neither full norm has been proved to decay.** The
-[endgame assessment](docs/eta-parity-endgame-assessment.md) distinguishes
-this checked comparison from the remaining arithmetic estimate and the
-separate classical simplicity question. No RH proof or sharper numerical
-zero strip is claimed.
+The [original zero comparison](RiemannGaussian/EtaMoebiusMiddleBudget.lean)
+bounds the unchanged canonical deficit and actual zero displacement by
+that middle energy plus the explicit head, tail, grid, and coefficient
+allowance, all proved to vanish. **The middle energy remains uncontrolled.**
+This is a partial arithmetic decay result; it gives neither full decay nor
+a sharper numerical zero strip. The [endgame assessment](docs/eta-parity-endgame-assessment.md)
+records the remaining prime and normalization estimates.
 
 ## Notable Formalisations
 
@@ -82,7 +79,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Exact Möbius candidates with vanishing coefficient cost and infinite tail** | Balanced logarithmic Möbius coefficients have zero signed total mass and absolute sum at most `2(k+1)`. Their full regularization penalty is at most `(k+1)^2/2^k` and tends to zero, as does the actual entire omitted residual integral. The canonical deficit is bounded by the growing finite residual plus this vanishing allowance; decay of that finite residual remains open. | [pairedEtaMoebiusTrialPrimitive_eq_harmonic_difference](RiemannGaussian/EtaMoebiusTrialCoefficients.lean), [pairedEtaDyadicMoebiusTrialPenalty_tendsto_zero](RiemannGaussian/EtaMoebiusTrialPenalty.lean), [pairedEtaDyadicMoebiusTrialResidualTail_tendsto_zero](RiemannGaussian/EtaMoebiusTrialResidual.lean), [pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_cutoff_add_allowance](RiemannGaussian/EtaMoebiusTrialResidual.lean) |
 | **Full Möbius grid-refinement and residual stability** | Exact signed block sums identify every coarse and fine candidate. With the arithmetic weights fixed at each stage, arbitrary integer refinement changes both the full critical square approximation and the complete target residual energy by proved vanishing amounts. The canonical deficit is bounded by any refined arithmetic residual plus an explicit allowance tending to zero. Decay of the arithmetic residual remains open. | [pairedEtaTranslateDifferenceEnergy_zero_eq](RiemannGaussian/EtaTranslateDifference.lean), [pairedEtaMoebiusTrialRefinementError_le](RiemannGaussian/EtaMoebiusTrialRefinement.lean), [pairedEtaDyadicMoebiusResidual_sub_refined_tendsto_zero](RiemannGaussian/EtaMoebiusRefinedBudget.lean), [pairedEtaDyadicTranslateDeficit_le_refined_moebius](RiemannGaussian/EtaMoebiusRefinedBudget.lean) |
 | **Full critical-square transport to signed continuum arithmetic** | Every actual grid converges to an explicit locally finite odd/even primitive formula with the exact endpoint convention. Its entire critical square error is at most `32M²√(2M/d)` under the stated grid conditions. Every refined residual and the identified continuum residual differ by a proved vanishing amount along the original stages. Decay of that arithmetic residual remains open. | [pairedEtaMoebiusTrialGridCombination_tendsto_continuum](RiemannGaussian/EtaMoebiusContinuumCombination.lean), [pairedEtaMoebiusContinuumGridError_le](RiemannGaussian/EtaMoebiusContinuumEnergy.lean), [pairedEtaDyadicMoebiusRefinedResidual_sub_continuum_tendsto_zero](RiemannGaussian/EtaMoebiusContinuumBudget.lean) |
-| **Complete divisor square sum, prime variance, and quadratic tail decay** | The full continuum energy equals a genuinely summable sequence of squared signed divisor residuals. Its interior splits into nonnegative prime variance and normalization cost. Exact alternating-harmonic amplitudes connect the residual to the signed quotient-parity sampler, with error at most `M²/L²`. The complete tail past `M²` tends to zero. Decay of the growing prefix remains open. | [hasSum_pairedEtaMoebiusArithmeticCellResidual_sq](RiemannGaussian/EtaMoebiusArithmeticEnergy.lean), [pairedEtaMoebiusContinuumResidualEnergy_eq_primeVariance_add_exterior](RiemannGaussian/EtaMoebiusPrimeVariance.lean), [abs_pairedEtaMoebiusArithmeticCellResidual_sub_quotientLeading_le](RiemannGaussian/EtaMoebiusQuotientError.lean), [pairedEtaMoebiusContinuumResidualEnergy_sub_quadraticPrefix_tendsto_zero](RiemannGaussian/EtaMoebiusArithmeticSamplingTail.lean) |
+| **Complete divisor square sum and decay of both arithmetic ends** | The full continuum energy equals a genuinely summable sequence of squared signed divisor residuals. Its interior retains the exact prime variance and normalization cost. The original normalization is at most `5/log M` in absolute value, giving a joint prefix bound `484R/log² M` for `R≤M`. The complete head through `floor(log M)` and tail past `M²` both decay. The intervening band remains uncontrolled and enters the original zero comparison unchanged. | [hasSum_pairedEtaMoebiusArithmeticCellResidual_sq](RiemannGaussian/EtaMoebiusArithmeticEnergy.lean), [pairedEtaMoebiusContinuumResidualEnergy_eq_primeVariance_add_exterior](RiemannGaussian/EtaMoebiusPrimeVariance.lean), [pairedEtaMoebiusArithmeticSquarePrefix_le_log_bound](RiemannGaussian/EtaMoebiusArithmeticGrowingHead.lean), [pairedEtaMoebiusArithmeticSquareTail_quadratic_tendsto_zero](RiemannGaussian/EtaMoebiusArithmeticSamplingTail.lean), [pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_middle](RiemannGaussian/EtaMoebiusMiddleBudget.lean) |
 | **Exact Hardy transform and balanced floor-cell norm comparison** | The full arithmetic Hardy transform preserves the original reciprocal-cell-weighted norm, including the vanishing endpoint term. The actual eta residual is its signed dyadic difference. Its full energy lies between `1/6` and `6` times the balanced floor-cell energy for all original bounded weights. Decay of either full norm remains unproved. | [tsum_etaDiscreteHardyTransform_sq_eq](RiemannGaussian/EtaDiscreteHardyTransform.lean), [pairedEtaMoebiusArithmeticCellResidual_eq_hardy_dyadic](RiemannGaussian/EtaMoebiusBeurlingComparison.lean), [pairedEtaMoebiusContinuumResidualEnergy_beurling_bounds](RiemannGaussian/EtaMoebiusBeurlingComparison.lean) |
 | **Actual exterior parity energy and signed covariance** | Exact period-two waves represent the original full grid exterior. Discrete summation by parts has zero boundary terms, and the resulting short-window covariance retains every signed primitive cross term. The entire far part costs at most `M²/(2d)`. The original zero comparison transfers to the remaining near energy with a vanishing allowance; its decay remains open. | [integral_pairedEtaMoebiusGrid_exterior_eq_parity](RiemannGaussian/EtaMoebiusExteriorParityEnergy.lean), [pairedEtaMoebiusGridParitySum_eq_primitive_differences](RiemannGaussian/EtaMoebiusExteriorParity.lean), [integral_pairedEtaMoebiusGridParitySum_sq_eq_covariance](RiemannGaussian/EtaMoebiusParityCovariance.lean), [pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_nearParity](RiemannGaussian/EtaMoebiusParityBudget.lean) |
 | **Exact exterior Möbius arithmetic and partial residual decay** | The harmonic correction and actual target-interval residual tend to zero. The entire exterior energy is exactly the square integral of a signed odd/even primitive formula plus its full infinite tail, bounded by `(k+1)^2/4^k` for every refinement schedule. Decay of the growing arithmetic square integral remains open. | [pairedEtaDyadicMoebiusRefinedHeadResidual_tendsto_zero](RiemannGaussian/EtaMoebiusRefinedHeadDecay.lean), [pairedEtaMoebiusTrialGridCombination_eq_arithmeticPrefix](RiemannGaussian/EtaMoebiusGridArithmetic.lean), [pairedEtaDyadicMoebiusRefinedExteriorEnergy_eq_arithmetic_add_tail](RiemannGaussian/EtaMoebiusExteriorBudget.lean) |

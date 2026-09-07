@@ -2,8 +2,9 @@
 
 The full arithmetic decay theorem remains unproved. The active goal
 remains reconstruction of the original leading current and its uniform
-weighted arithmetic bound. The results below retain that objective and
-identify the growing arithmetic prefix that still needs a decay estimate.
+weighted arithmetic bound. Both the growing head through `floor(log M)`
+and the complete tail beyond `M²` now decay. The intervening arithmetic
+band still needs a uniform estimate.
 
 ## The exact arithmetic target
 
@@ -73,8 +74,8 @@ proves `A≥1`, `V≥0`, and the exact full identity
 \]
 
 Thus changing only a scalar harmonic correction cannot eliminate the
-prime variance. The existing result `p_M→0` is insufficient to control the
-normalization term with its growing coefficient `A_M`.
+prime variance. Neither `p_M→0` nor the new bound `|p_M|≤5/log M` controls
+the full normalization term with its growing coefficient `A_M`.
 
 A floating-point check at `M=10000` found prime-variance contribution
 about `0.0270902`, normalization contribution about `0.00000407`, and
@@ -341,8 +342,72 @@ For the exact logarithmic family, the compiled
 proves equivalence of the two full decay assertions. Neither assertion
 is proved. This is an audit of the representation's strength: changing
 the eta colour description alone cannot bypass decay of the same
-coefficient family's balanced floor-cell norm. The quadratic-tail theorem
-remains the latest quantitative decay result.
+coefficient family's balanced floor-cell norm. The quantitative end
+estimates below do not follow from this comparison alone.
+
+## Uniform inverse-logarithmic estimate and growing head decay
+
+[EtaMoebiusLogHarmonicBound](../RiemannGaussian/EtaMoebiusLogHarmonicBound.lean)
+uses the exact Möbius convolution
+
+\[
+ \sum_{n\le M}\frac{\mu(n)}n H(\lfloor M/n\rfloor)=1 \quad(M\ge1).
+\]
+
+Writing `m(M)=Σ_(n≤M) μ(n)/n`, `γ` for the Euler constant, and
+`e(M,n)=H(floor(M/n))−log(M/n)−γ`, its retained signed identity is
+
+\[
+ p_M\log M=1-\gamma m(M)-\sum_{n\le M}\frac{\mu(n)}n e(M,n).
+\]
+
+Lean proves `|m(M)|≤2`, `|e(M,n)|≤2n/M` for `1≤n≤M`, and absolute
+value at most `2` for the complete signed remainder sum. Hence
+`abs_pairedEtaMoebiusLogHarmonic_le_five_div_log` gives
+`|p_M|≤5/log M` at every `M>1`. This is a bound on the unchanged
+normalization, not a proof that `p_M log M→1` or that its full weighted
+distance from the prime optimum tends to zero.
+
+The harmonic Möbius bound is classical; Tao's
+[2010 paper, §1](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/D8B367C2D4EECF135A190CCC1B1D057F/S0004972709000884a.pdf/a-remark-on-partial-sums-involving-the-mobius-function.pdf)
+proves the sharper constant `1` by elementary Möbius inversion. The present
+Lean proof derives the sufficient constant `2` directly from the repo's
+checked full floor identity. No external theorem is added as an axiom,
+and no novelty claim is made for this classical normalization argument.
+
+[EtaMoebiusArithmeticGrowingHead](../RiemannGaussian/EtaMoebiusArithmeticGrowingHead.lean)
+keeps the exact prime shell `P(L)=Σ_(L/2<n≤L) Λ(n)/n`. The proved
+Chebyshev bound `ψ(L)≤6L` gives `0≤P(L)≤12`; the actual alternating
+harmonic prefixes have absolute value at most `2`. Substitution into the
+original prime-shell identity proves, for `M>1` and `1≤L≤M`,
+
+\[
+ |r_M(L)|\le\frac{22}{\log M},\qquad
+ \sum_{L\le R}r_M(L)^2\le\frac{484R}{(\log M)^2}\quad(R\le M).
+\]
+
+In particular `R=floor(log M)` grows to infinity and the complete head
+energy is at most `484/log M→0`. This extends the former fixed-prefix
+convergence to a specific growing physical interval. It remains far
+short of controlling the prefix through `M²`.
+
+Define `Q_M=Σ_(floor(log M)<L≤M²) r_M(L)^2`. The exact head/middle/tail
+split and `pairedEtaMoebiusContinuumResidualEnergy_sub_middle_tendsto_zero`
+prove `E^∞_M−Q_M→0`, using both genuine full end estimates. Finally,
+[EtaMoebiusMiddleBudget](../RiemannGaussian/EtaMoebiusMiddleBudget.lean)
+proves for each actual zero and original stage `k≥7`, with `M=k+1`,
+
+\[
+ d_\rho W_\rho\le D_k\le Q_{k+1}+B_k,\qquad
+ B_k=\frac{484}{\log(k+1)}+T_{k+1}+A_k\longrightarrow0.
+\]
+
+Here `T_M` is the existing complete quadratic-tail allowance and `A_k`
+is the unchanged grid/coefficient transport allowance. The compiled
+terminal zero theorem is
+`pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_middle`.
+No decay bound for `Q_M` has been proved. The new estimate gives no
+sharper numerical zero strip or full uniform weighted current bound.
 
 ## Literature checks and the remaining arithmetic test
 
@@ -355,8 +420,8 @@ to be estimated; it does not supply full residual decay for this project.
 
 The amplitude comparison and the quadratic-range tail estimate are now
 proved above, with the sampler's window cost retained. The next estimate
-must control the original growing prefix through `M²`, including the
-prime-variance contribution on `L≤M`. Full-period covariance formulas and
+must control the original band `floor(log M)<L≤M²`, including its
+remaining prime-variance contribution on `L≤M`. Full-period covariance formulas and
 the present large-window sampling bound do not discharge that estimate.
 
 Wei and Wu's Proposition 1.9 proves that the classical logarithmic

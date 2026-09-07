@@ -802,3 +802,6 @@ import RiemannGaussian.EtaMoebiusBeurlingCells
 import RiemannGaussian.EtaDiscreteHardyTransform
 import RiemannGaussian.EtaDyadicDifferenceEnergy
 import RiemannGaussian.EtaMoebiusBeurlingComparison
+import RiemannGaussian.EtaMoebiusLogHarmonicBound
+import RiemannGaussian.EtaMoebiusArithmeticGrowingHead
+import RiemannGaussian.EtaMoebiusMiddleBudget

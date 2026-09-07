@@ -5447,11 +5447,52 @@ The terminal theorem
 
 For the logarithmic family, decay of the two full norms is equivalent.
 This audits the strength of the representation; it does not prove
-either decay assertion. The latest quantitative decay theorem remains
-the complete tail beyond `M²`. The further classical fractional-part
+either decay assertion. Separate estimates now control the growing
+logarithmic head and complete tail beyond `M²`. The further classical fractional-part
 integral/Mellin comparison and the external simplicity consequence have
 not been transported into Lean. The detailed distinction and literature
 attribution appear in the [endgame assessment](eta-parity-endgame-assessment.md).
+
+## Quantitative normalization and the complete growing arithmetic head
+
+`EtaMoebiusLogHarmonicBound` retains the exact finite identity
+`p_M log M=1−γ m(M)−Σ_(n≤M) μ(n)e(M,n)/n`, where
+`e(M,n)=H(floor(M/n))−log(M/n)−γ`. The full Möbius–harmonic
+convolution equals one; the elementary remainder bound `|e(M,n)|≤2n/M`
+controls the entire signed remainder sum by `2`. With the proved
+`|m(M)|≤2`, the actual coefficient normalization satisfies
+`|p_M|≤5/log M` for all `M>1`.
+
+`EtaMoebiusArithmeticGrowingHead` uses the original prime-shell identity
+and the proved Chebyshev bound to establish `0≤P(L)≤12` and
+`|r_M(L)|≤22/log M` for every `1≤L≤M`. Its joint estimate is
+
+\[
+ \sum_{L\le R}r_M(L)^2\le484R/(\log M)^2\quad(M>1,\ R\le M).
+\]
+
+The compiled theorem
+`pairedEtaMoebiusArithmeticSquarePrefix_logarithmic_tendsto_zero`
+therefore controls the complete growing head through `floor(log M)`.
+The cutoff itself is proved to grow to infinity. The former complete
+quadratic-tail theorem controls the other end. With the original finite
+middle sum `Q_M=Σ_(floor(log M)<L≤M²)r_M(L)^2`, the exact three-part
+identity proves `E^∞_M−Q_M→0`.
+
+`EtaMoebiusMiddleBudget` carries this estimate to the original canonical
+deficit and actual zero displacement. For `k≥7`,
+`d_rho W_rho≤D_k≤Q_(k+1)+B_k`, where
+`B_k=484/log(k+1)+QuadraticTailAllowance(k+1)+RefinedAllowance(k)`
+is proved to tend to zero. Its terminal theorem is
+`pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_middle`.
+
+The middle sum remains uncontrolled. The normalization bound does not
+prove `p_M log M→1`, the complete prime variance still requires a bound,
+and no full arithmetic decay or sharper numerical zero strip follows.
+These are partial arithmetic estimates on the original family, not a
+replacement for the active full-current objective. The
+[endgame assessment](eta-parity-endgame-assessment.md) records the full
+formulas and the classical provenance of the elementary harmonic bound.
 
 ## Next mathematical obligations
 
@@ -5493,8 +5534,9 @@ now identifies its exact infinite square sum and interior prime variance.
 The parity rewrite additionally identifies the original near-exterior
 short-window covariance with every far cost vanishing. The exact quotient
 amplitude comparison now applies the existing sampler in its valid
-range and proves decay of every arithmetic cell beyond `M²`. The next
-task is a uniform signed estimate through that growing quadratic cutoff,
+range and proves decay of every arithmetic cell beyond `M²`. The new
+joint prefix bound also controls the complete head through `floor(log M)`.
+The next task is a uniform signed estimate on `floor(log M)<L≤M²`,
 including its prime variance and normalization cost, respecting its
 physical-window dependence and the two-cell inverse-logarithmic lower
 rate. The full balanced floor-cell norm is now equivalent to the original

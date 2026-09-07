@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "The complete continuum residual differs from its unchanged signed arithmetic prefix through the quadratic physical cutoff by a proved vanishing tail; the growing prefix decay required for the original current bound remains open"
-    lineOne := "quadratic arithmetic tail"
-    lineTwo := "full tail tends to zero"
+    label := "The complete growing logarithmic head and quadratic tail both decay; the full continuum residual differs from the unchanged intervening arithmetic band by a proved vanishing quantity, while decay of that band remains open"
+    lineOne := "both arithmetic ends"
+    lineTwo := "intervening band open"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaMoebiusContinuumResidualEnergy_sub_quadraticPrefix_tendsto_zero
+      ``RiemannGaussian.pairedEtaMoebiusContinuumResidualEnergy_sub_middle_tendsto_zero
   }
 ]
 
@@ -1036,7 +1036,25 @@ run_cmd do
         "eta energy lies between 1/6 and 6 times the balanced floor-cell " ++
         "energy. For the logarithmic family the two full decay statements " ++
         "are equivalent; neither is proved. This is a comparison of " ++
-        "representations, not an advance on the open decay assertion. No " ++
+        "representations, not an advance on the open decay assertion. " ++
+        "Separately, the exact Moebius convolution with the unpaired " ++
+        "harmonic prefix equals one. Subtracting the logarithm and Euler " ++
+        "constant retains a full signed quotient remainder bounded by " ++
+        "2*n/M at every original divisor. Its complete weighted sum is " ++
+        "bounded by 2, giving abs(p_M)<=5/log(M) for every M>1. " ++
+        "The actual dyadic prime shell lies between 0 and 12 by the " ++
+        "proved Chebyshev bound, so every residual on 1<=L<=M has " ++
+        "abs(r_M(L))<=22/log(M). The unchanged prefix of any length " ++
+        "R<=M is therefore at most 484*R/log(M)^2. In particular, its " ++
+        "complete growing head through floor(log(M)) is at most " ++
+        "484/log(M) and tends to zero. The exact complete energy splits " ++
+        "into that head, the original band floor(log(M))<L<=M^2, and " ++
+        "the complete quadratic tail. Its difference from the middle " ++
+        "band tends to zero. The original canonical deficit and actual " ++
+        "zero displacement are bounded by this unchanged band plus " ++
+        "484/log(k+1), the quadratic-tail allowance, and the original " ++
+        "refined transport allowance; their sum tends to zero. The " ++
+        "intervening arithmetic band remains uncontrolled. No " ++
         "Mellin norm comparison with the classical logarithmic approximation " ++
         "or sharper numerical zero strip is certified. " ++
         "The uniform cutoff-independent " ++
