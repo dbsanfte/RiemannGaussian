@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="313.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 751 modules · 16314 declarations · 13977 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 755 modules · 16372 declarations · 14030 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · milestones standard-only</text>
   <text class="section" x="20" y="64">CHECKED RESULTS, IDENTITIES, AND ATTRIBUTED BASELINE</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -89,9 +89,9 @@
   </g>
   <g class="proved unconditional">
     <rect x="180" y="229" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.exists_pairedEtaCompletedMoebius_divided_block_cubic_rate</title>
-    <text x="252" y="252">finite Moebius rate</text>
-    <text x="252" y="270">completed eta bound  ✓</text>
+    <title>RiemannGaussian.exists_pairedEtaInverseInnerCapCoefficient_cubic_rate</title>
+    <text x="252" y="252">harmonic Moebius</text>
+    <text x="252" y="270">inverse coefficients  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
@@ -102,5 +102,5 @@
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="300">Quantitative finite Moebius block decay proved; the full inverse-energy estimate and uniform current bound remain open.</text>
+  <text class="frontier" x="20" y="300">Harmonic cancellation bounds signed inverse coefficients; the full inverse-energy estimate and uniform current bound remain open.</text>
 </svg>

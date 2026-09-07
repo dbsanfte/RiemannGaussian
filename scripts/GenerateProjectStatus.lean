@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "Quantitative finite Moebius decay on a cubic logarithmic scale for the original completed eta quotient blocks above a specified arithmetic cutoff, retaining the weight dependence, completion, and odd endpoint factor"
-    lineOne := "finite Moebius rate"
-    lineTwo := "completed eta bound"
+    label := "Quantitative harmonic Moebius cancellation bounds the accumulated signed product coefficients across an entire actual inner-truncated inverse region, with every integer remainder retained; the completed quadratic current remains open"
+    lineOne := "harmonic Moebius"
+    lineTwo := "inverse coefficients"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.exists_pairedEtaCompletedMoebius_divided_block_cubic_rate
+      ``RiemannGaussian.exists_pairedEtaInverseInnerCapCoefficient_cubic_rate
   }
 ]
 
@@ -228,7 +228,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">Quantitative finite Moebius block decay proved; " ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">Harmonic cancellation bounds signed inverse coefficients; " ++
       "the full inverse-energy estimate and uniform current bound remain open.</text>\n" ++
     "</svg>\n"
 
@@ -805,6 +805,20 @@ run_cmd do
         "dependence remains in C_s and the cutoff. H is existential, " ++
         "without a numerical starting cutoff. The bound retains a " ++
         "positive power scale and proves no fixed power saving. " ++
+        "The full finite hyperbola identity now gives an accumulated harmonic bound. " ++
+        "For H_mu(D)=sum_{d<=D}mu(d)/d, one H>=22 gives " ++
+        "abs(H_mu(D))<=(6+4*C_mu)*exp(-h/8) for h>=H and D>=exp(2*A(h)). " ++
+        "The literal ordered harmonic prefixes tend to zero; no unordered " ++
+        "or absolute convergence of this series is asserted. On the original " ++
+        "inner-truncated physical region e*d<=M, d<=D, the signed product " ++
+        "coefficients satisfy sum_{n<=M}c_D(n)=M*H_mu(D)-R(M,D), with " ++
+        "every signed Euclidean remainder retained and abs(R(M,D))<=D. " ++
+        "The theorem exists_pairedEtaInverseInnerCapCoefficient_cubic_rate " ++
+        "therefore gives abs(sum c_D(n))<=(6+4*C_mu)*exp(-h/8)*M+D " ++
+        "at every M when D>=exp(2*A(h)). Exact grouping " ++
+        "retains the original completed complex atoms before this linear " ++
+        "coefficient estimate. It is not an absolute coefficient-mass bound " ++
+        "or a quadratic completed-current estimate. " ++
         "Smaller blocks, the complete two-divisor inverse, and " ++
         "both reflected mixed energies still need a stronger joint estimate. " ++
         "This does not improve the zero margin or " ++

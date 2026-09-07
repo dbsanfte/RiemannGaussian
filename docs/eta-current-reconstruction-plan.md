@@ -3935,6 +3935,90 @@ as an extra saving on the full current. This slice changes neither the
 proved zero strip nor the hypothetical off-critical current exponent.
 No novelty priority is claimed.
 
+## Checked harmonic cancellation and the actual inverse coefficient sum
+
+The terminal theorem is
+[exists_pairedEtaInverseInnerCapCoefficient_cubic_rate](../RiemannGaussian/EtaInverseHarmonicCoefficients.lean).
+It controls the signed product coefficients throughout an entire original
+inner-truncated physical inverse region. All arithmetic premises are
+discharged. The estimate is linear in these coefficients; the completed
+quadratic current remains the open obligation.
+
+Write `M_mu(N)=sum_{n≤N} mu(n)` and `H_mu(D)=sum_{d≤D} mu(d)/d`.
+The exact finite identity
+
+\[
+ \sum_{d\le D}\mu(d)\lfloor DQ/d\rfloor
+ +\sum_{q\le Q}M_\mu(\lfloor DQ/q\rfloor)
+ =1+Q M_\mu(D),\qquad D,Q>0,
+\]
+
+is proved by the actual finite Möbius convolution and a bijective
+hyperbola regrouping, in
+[moebiusFinitePrefix_hyperbola_identity](../RiemannGaussian/MoebiusFiniteHyperbola.lean).
+Retaining the signed remainder `sum_{d≤D} mu(d)*((DQ) mod d)/d`, whose
+absolute value is at most `D`, gives
+
+\[
+ |H_\mu(D)|\le 2/Q+\delta(2+\log Q)
+ \quad\text{if }|M_\mu(n)|\le\delta n\text{ for every }n\ge D.
+\]
+
+This intermediate premise is discharged by the previous quantitative
+unsmoothed estimate: with `A(h)=10^15 h^3`, for all sufficiently large
+`h` and `D≥exp(2A(h))`, every `n≥D` satisfies
+`abs(M_mu(n))≤(C_mu+1)*exp(−h/2)*n`.
+Choose `Q=ceil(exp(h/8))`. The complete quotient and rounding costs yield
+
+\[
+ |H_\mu(D)|\le C_H e^{-h/8},\qquad C_H=6+4C_\mu.
+\]
+
+[exists_moebiusHarmonicPrefix_cubic_rate](../RiemannGaussian/MoebiusHarmonicCancellation.lean)
+has one common scale threshold, proved to exist. No numerical starting
+cutoff is asserted.
+[moebiusHarmonicPrefix_tendsto_zero](../RiemannGaussian/MoebiusHarmonicCancellation.lean)
+proves the limit of the ordered finite prefixes. It does not assert
+unordered or absolute convergence of the harmonic Möbius series.
+
+For the actual region
+
+\[
+ S_{M,D}=\{(e,d):e,d\ge1,\ ed\le M,\ d\le D\},
+ \qquad c_D(n)=\sum_{(e,d)\in S_{M,D},\ ed=n}\mu(d),
+\]
+
+[pairedEtaCompletedMomentInverseInnerCap_eq_atoms](../RiemannGaussian/EtaInverseHarmonicCoefficients.lean)
+retains the unmodified completed moments, complex weights, translated
+centers, and integer divided cutoffs in the original inverse. Before
+taking an absolute value, the entire signed coefficient sum obeys
+
+\[
+ \sum_{n\le M}c_D(n)
+ =\sum_{d\le D}\mu(d)\lfloor M/d\rfloor
+ =M H_\mu(D)-\sum_{d\le D}\mu(d)\frac{M\bmod d}{d}.
+\]
+
+The exact floor contribution has absolute value at most `D`. Therefore,
+for every `M` and every inner cutoff `D≥exp(2A(h))`,
+
+\[
+ \left|\sum_{n\le M}c_D(n)\right|\le C_H e^{-h/8}M+D.
+\]
+
+This supplies cancellation across the complete two-divisor coefficient
+region, including its curved boundary. Its relative remainder is `D/M`,
+so the estimate is useful when the inner cutoff is large but small
+relative to the physical cutoff. It does not control the absolute mass
+`sum |c_D(n)|`, products of two coefficients, or the same sum against the
+original varying completed eta atoms. In particular, multiplying two
+Möbius factors on a diagonal replaces the sign by its square; the linear
+cancellation cannot simply be inserted into that quadratic sum.
+
+No improved zero strip, fixed power saving for the original return,
+or uniform weighted current bound follows from this slice. Novelty
+priority for these auxiliary results has not been established.
+
 ## Next mathematical obligations
 
 The exact-pole prime input now excludes the larger explicit
@@ -3962,8 +4046,11 @@ above an explicit weight-dependent cutoff. The positive power scale,
 smaller blocks, and accumulation through the complete two-divisor inverse
 remain obstacles. The next step requires a
 stronger joint estimate for that inverse and both completed reflected mixed
-energies. The finite coefficient cancellation does not establish the signed
-full inverse-energy bound.
+energies. The harmonic hyperbola estimate now also controls the accumulated
+signed coefficients of an entire inner-truncated inverse region, with exact
+rounding cost `D`. It does not yet control their original complex eta
+weights or quadratic products. The finite coefficient cancellation does
+not establish the signed full inverse-energy bound.
 
 1. Bound the signed full zeroth-order inverse energy's weighted absolute
    moment uniformly. The checked transport above now covers both the
