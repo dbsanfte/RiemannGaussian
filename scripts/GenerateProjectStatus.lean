@@ -514,8 +514,33 @@ run_cmd do
         "norm_pairedEtaCompletedMomentInversePartialTerm_sub_zero_le bounds " ++
         "the actual inverse-entry difference, after multiplication by q^rho, " ++
         "by d^(-Re(rho))*R_k*D^2/q for D<=q. The full inner range equals the " ++
-        "original inverse term exactly. Its D^2/q cost and the complete outer " ++
-        "inverse head and mixed sums still require cross-cutoff cancellation. " ++
+        "original inverse term exactly. Joint control now estimates both actual " ++
+        "inverse divisor sums on a physical rectangle. " ++
+        "pairedEtaCompletedMomentInverseRectangle_eq_atoms groups them at " ++
+        "the exact product n=d*e, with coefficient w(n)=sum_(d<=E,e<=D,de=n) " ++
+        "mu(e), retaining the original powers and both center translations. " ++
+        "card_Icc_product_collision_le_gcd counts the actual factor collisions, " ++
+        "and sum_sq_pairedEtaInverseProductCoefficient_le_log_sq proves " ++
+        "sum_(n<=E*D) w(n)^2 <= E*D*(1+log E)^2. The absolute coefficient " ++
+        "mass is at most E*D. Every full gcd-covariance row is bounded by " ++
+        "the squared harmonic sum, so the exact signed complete-period energy " ++
+        "is at most (1+log(E*D))^2 times the retained coefficient energy. " ++
+        "The literal quotient periods prove its Fourier support and separation. " ++
+        "norm_pairedEtaMomentPhysicalRatio_sub_one_le bounds the actual " ++
+        "ratio error by 2*norm(rho)*n/M. The complete rectangle has complex " ++
+        "parity amplitude beta_k=X_rho*alpha_k/2 and normalized error at most " ++
+        "Gamma_k*(E*D)^2/M, with Gamma_k=2*(H_k+norm(rho)*norm(beta_k)). " ++
+        "pairedEtaCompletedMomentInverseRectangleMeanSquare_le_quadratic " ++
+        "bounds the unmodified original rectangle at center log(M+1) by " ++
+        "Crect_k*E*D*(1+log E)^2*(1+log(E*D))^2*A^(-2*Re(rho)), for " ++
+        "E,D>=1, (E*D)^2<=A,L, and k below the full analytic multiplicity. " ++
+        "Here Crect_k=10*S*norm(beta_k)^2+2*Gamma_k^2. " ++
+        "pairedEtaSignedCompletedMomentInverseRectangleMeanAbsolute_adjacent_le_quadratic " ++
+        "retains the actual adjacent orders and both reflected completion " ++
+        "channels with their complementary physical decay rates. The full " ++
+        "hyperbolic inverse range d*e<=M, interactions between rectangles, " ++
+        "and the unchanged weighted head and mixed current sums still require " ++
+        "an independent global cancellation estimate. " ++
         "These estimates do not improve the zero-free strip or prove the " ++
         "original uniform weighted current bound. A separate exact dyadic " ++
         "recurrence controls the entire " ++
