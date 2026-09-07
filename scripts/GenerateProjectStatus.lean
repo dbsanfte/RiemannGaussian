@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "An exact eta projection and a finite paired prefix with complete tail error bound the actual zero displacement and the original current's cutoff power; this single-projection exponent formula stays at least 1/11"
-    lineOne := "finite eta phase"
-    lineTwo := "current power bound"
+    label := "The complete eta translate residual has an exact finite overlap Gram and a proved coefficient-dependent tail budget; reflection bounds the actual zero displacement and both original current branches, without assuming a vanishing coefficient family"
+    lineOne := "eta translate Gram"
+    lineTwo := "full current budget"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.pairedEtaLeadingCurrent_firstMoment_le_finitePhase
+      ``RiemannGaussian.pairedEtaLeadingCurrent_firstMoment_le_translatedProjection
   }
 ]
 
@@ -228,8 +228,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">Finite eta arithmetic bounds the current's power; " ++
-      "this projection retains a positive exponent. The uniform weighted bound remains open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">Finite eta translate Grams retain the full coefficient and tail cost. " ++
+      "Vanishing residual control and the uniform current bound remain open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -845,7 +845,35 @@ run_cmd do
         "one_eleventh_le_etaFinitePhaseCurrentExponent proves kappa_N>=1/11 " ++
         "for every N. This is a floor on this upper-bound formula, not " ++
         "on any zero's displacement. A larger cutoff in this single " ++
-        "projection cannot eliminate its power. The uniform cutoff-independent " ++
+        "projection cannot eliminate its power. A different finite family now " ++
+        "uses actual eta translates U(t)=sum_j c_j*chi(t-a_j), a_j>=0, " ++
+        "and the compact target h(t)=exp(t)*1_(0,log(2)](t). The full " ++
+        "complex transform of U is F(s)*sum_j c_j*exp(-s*a_j), so every " ++
+        "actual nontrivial zero annihilates it. The target has literal " ++
+        "integral transform H(s)=(1-2^(1-s))/(s-1) for s!=1, sharing " ++
+        "the extra eta factor zeros while staying nonzero at actual zeta " ++
+        "zeros. Its complete critical square mass is one. At the original " ++
+        "odd endpoint T_N=log(2*N+1), N>=1, every translated colour is " ++
+        "exactly its first N intervals. Their overlap integrals have " ++
+        "explicit exponential endpoint values, and the target pairing is " ++
+        "b(a)=max(0,log(2)-a). The unchanged finite residual energy is " ++
+        "Q_N=1+sum_jk Re(c_j*conj(c_k))*G_N(a_j,a_k)-2*sum_j Re(c_j)*b(a_j), " ++
+        "retaining every mixed coefficient. Its complete infinite tail is " ++
+        "at most (sum_j norm(c_j))^2/(2*N+1). Consequently the full " ++
+        "energy is at most B_N=Q_N+(sum_j norm(c_j))^2/(2*N+1). " ++
+        "Cauchy--Schwarz and actual zero reflection give " ++
+        "abs(2*beta-1)<=B_N/W_rho, where " ++
+        "W_rho=min(norm(H(rho))^2,norm(H(1-conj(rho)))^2)>0. The theorem " ++
+        "pairedEtaLeadingCurrent_firstMoment_le_translatedProjection " ++
+        "bounds both original current branches by C_rho*(K+1)^p, " ++
+        "p=min(kappa_N,B_N/W_rho), at every K. The literal Gaussian " ++
+        "return and full signed inverse energy retain this exponent and " ++
+        "their existing finite error budgets. No coefficient family with " ++
+        "B_N tending to zero is constructed; W_rho depends on actual " ++
+        "zero coordinates. This is not yet an ordinate-only numerical " ++
+        "zero-strip improvement or removal of the cutoff power. The " ++
+        "next estimate must control finite residual approximation and " ++
+        "coefficient growth together. The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

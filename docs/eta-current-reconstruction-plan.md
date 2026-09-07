@@ -64,6 +64,7 @@ the objective.
 | Establish an independent Gaussian reciprocal contour for the Möbius sums | `norm_zetaReciprocalExtension_le_on_box` in [ZetaReciprocalBox.lean](../RiemannGaussian/ZetaReciprocalBox.lean), and `zetaReciprocalGaussian_contour_shift` with `zetaReciprocalGaussian_right_integral_le` in [ZetaReciprocalGaussianContour.lean](../RiemannGaussian/ZetaReciprocalGaussianContour.lean). | The actual reciprocal is analytic and uniformly bounded on a rectangle crossing real part one. The Gaussian contour shift retains both horizontal corrections and bounds them with their height damping. Its arithmetic identification and infinite-tail estimates are now discharged by the following row. |
 | Transfer the full contour to the actual convergent Gaussian Möbius sum | `integral_zetaReciprocalGaussianKernel_eq_gaussianMoebiusSum` in [GaussianMoebiusMellin.lean](../RiemannGaussian/GaussianMoebiusMellin.lean), and `gaussianMoebiusSum_contour_identity` with `gaussianMoebiusSum_contour_bound` in [GaussianMoebiusContourBound.lean](../RiemannGaussian/GaussianMoebiusContourBound.lean). | The full integral equals the arithmetic sum at every abscissa greater than one, with all convergence and interchange premises proved. The actual sum has a left-line bound plus both horizontal corrections and infinite tails. The following row discharges a scale choice and arithmetic rate. |
 | Extract an unconditional cancellation rate from the actual Gaussian contour | `moebiusDirichletMass_contour_le_log` in [ZetaMoebiusMassBound.lean](../RiemannGaussian/ZetaMoebiusMassBound.lean), `gaussianMoebiusSum_one_le_logSquare_envelope` in [GaussianMoebiusScaleEnvelope.lean](../RiemannGaussian/GaussianMoebiusScaleEnvelope.lean), and `gaussianMoebiusSum_one_le_reciprocal_log_gain_eventually` with `gaussianMoebiusSum_log_one_div_tendsto_zero` in [GaussianMoebiusCancellation.lean](../RiemannGaussian/GaussianMoebiusCancellation.lean). | At unit heat time and height `T=a`, the actual sum is eventually bounded by `exp(a-a/(1000000 log(a+22)))`, and `S_1(log X)/X→0`. All constants and scale conditions are discharged, with an existential threshold. An estimate of sufficient strength for the original complex weights, physical cutoffs, and completed reflected current remains open. |
+| Bound the current power by complete finite eta translate arithmetic | `pairedEtaTranslatedResidualEnergyCutoff_eq_finiteForm` and `pairedEtaTranslatedResidualEnergy_le_finiteBudget` in [EtaTranslatedFiniteResidual.lean](../RiemannGaussian/EtaTranslatedFiniteResidual.lean), followed by `pairedEtaLeadingCurrent_firstMoment_le_translatedProjection` in [EtaCurrentTranslatedProjectionPower.lean](../RiemannGaussian/EtaCurrentTranslatedProjectionPower.lean). | The compact target shares the elementary eta factor and stays nonzero at actual zeta zeros. Every finite nonnegative translate family gives a complete Gram-plus-tail budget for actual horizontal displacement and both current branches. The Gaussian return and full inverse energy inherit the same exponent. A family with vanishing full budget and an improved numerical zero strip remain open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -4167,6 +4168,182 @@ This slice adds the explicit actual eta projection, finite tail transport,
 and both-branch original-current exponent theorem to this repository;
 novelty priority is not claimed.
 
+## Checked compact-target eta translates and the full finite Gram budget
+
+The preceding single-phase bound has a proved `1/11` exponent floor.
+This slice develops a different, finite-family estimate on the actual
+eta indicator, including its full complex transform, all mixed overlap
+terms, and the complete coefficient-dependent infinite tail.
+
+**Target choice and actual zero identity.** Write `L=log 2`,
+`chi=pairedEtaLogIndicator`, and `F(s)=eta(s)/s`. For any finite family
+of nonnegative real translates `a_j` and arbitrary complex coefficients
+`c_j`, set
+
+\[
+ U_{a,c}(t)=\sum_j c_j\chi(t-a_j),\qquad
+ h(t)=e^t\mathbf1_{(0,L]}(t),\qquad R_{a,c}=h-U_{a,c}.
+\]
+
+[integral_pairedEtaTranslatedCombination](../RiemannGaussian/EtaTranslatedLaplace.lean)
+proves the complete complex identity
+
+\[
+ \int_{\mathbb R}U_{a,c}(t)e^{-st}\,dt
+ =F(s)\sum_j c_je^{-sa_j},\qquad\Re s>0.
+\]
+
+Every actual nontrivial zero therefore annihilates the full combination.
+Nonnegative translates keep the entire residual supported on positive
+time. All relevant Laplace and critical-square integrability is proved.
+
+A plain exponential target would fail at the additional zeros of the
+eta factor `1-2^(1-s)`. The chosen target has the actual integral transform
+
+\[
+ H(s)=\int_0^L e^{(1-s)t}\,dt
+ =\frac{1-2^{1-s}}{s-1}\quad(s\ne1).
+\]
+
+The definition is the integral, including at the removable point `s=1`.
+[pairedEtaProjectionHeadTransform_eq_zero_of_factor](../RiemannGaussian/EtaProjectionHeadTarget.lean)
+retains the shared nonremovable factor zeros, while
+[pairedEtaProjectionHeadTransform_ne_zero](../RiemannGaussian/EtaProjectionHeadTarget.lean)
+proves `H(rho)≠0` at every actual nontrivial zeta zero. The complete
+critical square mass of `h` is exactly one. This target removes the
+specific elementary-factor mismatch; no density theorem or absence of
+other approximation obstructions is asserted.
+
+Define the unchanged complete energy
+
+\[
+ E(a,c)=\int_0^\infty e^{-t}|R_{a,c}(t)|^2\,dt.
+\]
+
+[integral_Ioi_pairedEtaTranslatedResidual_mul_exp_zero](../RiemannGaussian/EtaTranslatedResidual.lean)
+recovers exactly `H(rho)` from the residual at an actual zero. The proved
+Cauchy--Schwarz estimate
+[two_mul_re_sub_one_mul_head_norm_sq_le_residual](../RiemannGaussian/EtaTranslatedProjectionBound.lean)
+then gives
+
+\[
+ (2\beta-1)|H(\rho)|^2\le E(a,c),\qquad\beta=\Re\rho>1/2.
+\]
+
+**Exact finite arithmetic and every omitted tail term.** For `N≥1`, put
+`T_N=log(2N+1)`. Throughout `t≤T_N`,
+[pairedEtaTranslatedColour_eq_prefix](../RiemannGaussian/EtaTranslatedFiniteIntervals.lean)
+identifies every full translated colour with its first `N` original
+intervals
+
+\[
+ I_{a,n}=(a+\log(2n+1),a+\log(2n+2)].
+\]
+
+For arbitrary endpoints, the exact exponential interval mass is
+`M(l,u)=max(0,exp(-l)-exp(-u))`, including empty intervals. Define
+
+\[
+ G_{N,T}(a,b)=\sum_{n,m<N}
+ M\!\left(\max(0,a+\log(2n+1),b+\log(2m+1)),
+          \min(T,a+\log(2n+2),b+\log(2m+2))\right).
+\]
+
+[integral_pairedEtaTranslatedColour_product_eq_finiteGram](../RiemannGaussian/EtaTranslatedFiniteGram.lean)
+proves that this is the literal cutoff Gram integral. Its full complex
+quadratic form is retained before taking real parts. The target pairing
+is also evaluated exactly:
+
+\[
+ b(a)=\max(0,L-a),\qquad
+ \int_0^T e^{-t}h(t)\overline{U_{a,c}(t)}\,dt
+ =\sum_j\overline{c_j}b(a_j),\qquad T\ge L.
+\]
+
+For `L≤T≤T_N`,
+[pairedEtaTranslatedResidualEnergyCutoff_eq_finiteForm](../RiemannGaussian/EtaTranslatedFiniteResidual.lean)
+proves the full finite residual identity
+
+\[
+ E_T(a,c)=Q_{N,T}(a,c)
+ :=1+\sum_{j,k}\Re(c_j\overline{c_k})G_{N,T}(a_j,a_k)
+       -2\sum_j\Re(c_j)b(a_j).
+\]
+
+This form is nonnegative because it equals the actual energy; no
+independent matrix positivity assumption is introduced. Beyond the
+compact target, `R=-U`, so the complete omitted tail is bounded by
+`exp(-T)(sum_j |c_j|)^2`. Consequently
+[pairedEtaTranslatedResidualEnergy_le_finiteBudget](../RiemannGaussian/EtaTranslatedFiniteResidual.lean)
+proves, for every finite family and `N≥1`,
+
+\[
+ E(a,c)\le B_N(a,c)
+ :=Q_{N,T_N}(a,c)+\frac{(\sum_j|c_j|)^2}{2N+1}.
+\]
+
+Every term on the right is finite elementary arithmetic in the original
+translated interval endpoints and coefficients. It is an upper bound for
+the complete energy, not just a finite-window approximation. The richer
+exact residual and cutoff-plus-tail identities remain available.
+
+**Return to the original current.** Let `rho*=1-conj(rho)` and put
+
+\[
+ W_\rho=\min(|H(\rho)|^2,|H(\rho^*)|^2)>0.
+\]
+
+[pairedEtaCurrentHorizontalDisplacement_le_translatedFiniteBudget](../RiemannGaussian/EtaCurrentTranslatedProjectionPower.lean)
+uses the reflected actual zero to prove
+
+\[
+ |2\beta-1|\le\frac{B_N(a,c)}{W_\rho}.
+\]
+
+With the preceding phase/prime exponent `kappa_{m,N}(gamma)`, define
+
+\[
+ p_{\rho,N,a,c}=\min\left(\kappa_{m,N}(\gamma),
+                         B_N(a,c)/W_\rho\right).
+\]
+
+The new exponent is proved nonnegative and below one, and never exceeds
+the preceding exponent. The terminal theorem
+[pairedEtaLeadingCurrent_firstMoment_le_translatedProjection](../RiemannGaussian/EtaCurrentTranslatedProjectionPower.lean)
+proves
+
+\[
+ \sum_{n<K}(2n+1)|J_\rho(n)|
+ \le C_\rho(K+1)^{p_{\rho,N,a,c}}
+ \quad\text{for every }K,
+\]
+
+for both original multiplicity branches. The literal linear-width
+Gaussian return has the same constant and exponent. The full signed
+inverse energy retains the same exponent and adds its existing summable
+zero-energy error to the constant. No current or weighted cutoff is
+replaced by the auxiliary residual.
+
+**Precise remaining estimate.** No coefficient family making `B_N` tend
+to zero is constructed. The positive normalization `W_rho` depends on the
+actual zero coordinates, so this theorem is not yet a new numerical
+ordinate-only zero strip. The old single-phase `1/11` floor is not proved
+for this larger family; neither is a family overcoming it. A useful
+construction must control the full residual and coefficient growth
+together. Finite-interval approximation alone, with an uncontrolled
+`(sum |c_j|)^2/(2N+1)` tail cost, cannot establish the target. Nonnegative
+real translates are allowed; no restriction to integer dilation factors
+is imposed. The uniform weighted arithmetic bound and RH remain open.
+
+The approximation mechanism has substantial prior context in
+[Báez-Duarte's generalized Nyman--Beurling criterion](https://arxiv.org/abs/math/0505453).
+[Alouges, Darses, and Hillion](https://www.numdam.org/articles/10.5802/jtnb.1227/)
+explicitly distinguish approximation from the coefficient/Gram control
+that remains difficult. Neither paper supplies the missing unconditional
+coefficient estimate here. This slice proves the stated actual eta
+identities and transports their full finite budget to the existing
+current; novelty priority is not claimed.
+
 ## Next mathematical obligations
 
 The exact-pole prime input now excludes the larger explicit
@@ -4176,15 +4353,17 @@ factor of thirty-one at every nonzero ordinate. The simultaneous edge
 windows now additionally exclude multiple zeros and nearby distinct pairs
 in their stated rectangles, and discharge the original head branch near
 either edge. These constraints do not force real part `1/2`,
-and the return bound retains a positive exponent. The new finite eta
-projection constrains the actual horizontal displacement directly, with
-all infinite-to-finite errors discharged. Its combined exponent formula
-has a proved floor `1/11`, uniformly in the finite approximation cutoff.
-The immediate task is therefore stronger joint control, for example an
-approximation using several zero-annihilating eta translates and the full
-complex residual Gram, with dimension and tail costs proved. Positivity
-of a finite Gram or convergence of each separate entry does not supply
-that control. The remaining target is to rule out the interior off-critical
+and the return bound retains a positive exponent. The single-phase eta
+projection has a proved `1/11` exponent floor. The compact-target family
+now supplies a different bound through the complete finite translate
+Gram and its proved coefficient-dependent tail. The immediate task is
+to construct nonnegative real translates and coefficients for which the
+full budget `B_N=Q_N+(sum |c_j|)^2/(2N+1)` becomes small. A successful
+estimate must control coefficient growth as well as finite residual
+approximation. The positive target normalization must also be bounded
+in the intended zero region if a numerical strip is to be certified.
+Positivity of a finite Gram or convergence of each separate entry does
+not supply that control. The remaining target is to rule out the interior off-critical
 contribution while retaining the unchanged absolute weighted moment. The
 following inverse and heat carriers remain available for that task; their
 established identities alone do not supply the missing estimate.

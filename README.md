@@ -27,47 +27,46 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Attack the surviving cutoff power through the actual eta phase and its continuous projection geometry. A finite paired eta prefix, with its complete tail error, now bounds every zero's horizontal displacement and the original current's exponent. One projection has a proved positive exponent floor, so a larger cutoff alone cannot close the goal. Next seek stronger joint control from zero-annihilating eta translates and their full complex Gram. The uniform weighted bound and RH remain open.
+Attack the surviving cutoff power with finite families of actual eta translates. Their complete residual now has an exact finite interval Gram and an explicit coefficient-dependent tail bound, which controls both original current branches. Next construct translates and coefficients that make the full budget small while controlling coefficient growth. The uniform weighted bound and RH remain open.
 
 ## Latest Update
 
-Lean now proves a **finite arithmetic bound on the original current's
-cutoff exponent**. For an actual zero `rho=beta+i gamma`, define
+Lean now proves a **complete finite translate budget for the original
+current's cutoff power**. Let `chi` be the actual eta interval indicator,
+`h(t)=exp(t) 1_(0,log 2](t)`, and `U(t)=sum_j c_j chi(t-a_j)`, with arbitrary
+complex coefficients and nonnegative real translates. At `T_N=log(2N+1)`,
+`N≥1`, Lean evaluates the finite residual exactly and bounds its full tail:
 
 \[
- q_N(\gamma)=\max\left(0,
- \left|\frac{\eta_N(1+i\gamma)}{1+i\gamma}\right|
- -\frac1{2N+1}\right),
- \qquad \delta_N=\frac{q_N}{1+q_N},
+ \int_0^\infty e^{-t}|h(t)-U(t)|^2\,dt
+ \le B_N:=Q_N(a,c)+\frac{(\sum_j|c_j|)^2}{2N+1}.
 \]
 
-where `eta_N` is the original paired prefix with `2N` terms.
-[nontrivialZetaZero_mem_etaFinitePhase_strip](RiemannGaussian/EtaFinitePhaseMargin.lean)
-proves `delta_N ≤ beta ≤ 1−delta_N` for every `N`. Its analytic input is
-an exactly integrated exponential projection on the literal eta support;
-the infinite-to-finite error is proved, with no numerical premise.
+Here `Q_N` is an explicit finite interval-overlap Gram form retaining
+every mixed coefficient and the exact target pairing.
+[pairedEtaTranslatedResidualEnergy_le_finiteBudget](RiemannGaussian/EtaTranslatedFiniteResidual.lean)
+discharges all integrability, cutoff, and infinite-tail obligations.
 
-If `p_old` is the previously proved multiplicity-sensitive prime exponent,
-set `kappa_N=min(p_old,(1−q_N)/(1+q_N))`.
-[pairedEtaLeadingCurrent_firstMoment_le_finitePhase](RiemannGaussian/EtaCurrentFinitePhasePower.lean)
-then proves, at every physical cutoff `K`,
+The target transform `H(s)=(1-2^(1-s))/(s-1)`, for `s≠1`, shares eta's extra factor
+zeros and is proved nonzero at every actual nontrivial zeta zero. For
+`rho=beta+i gamma` and its partner `rho*=1-conj(rho)`, put
+`W_rho=min(|H(rho)|²,|H(rho*)|²)>0`. Then
+[pairedEtaCurrentHorizontalDisplacement_le_translatedFiniteBudget](RiemannGaussian/EtaCurrentTranslatedProjectionPower.lean)
+proves `|2 beta-1|≤B_N/W_rho`. Taking the minimum with the previous exponent
+gives `p` and the checked all-cutoff bound
 
 \[
- \sum_{n<K}(2n+1)|J_\rho(n)|\le C_\rho(K+1)^{\kappa_N}.
+ \sum_{n<K}(2n+1)|J_\rho(n)|\le C_\rho(K+1)^p.
 \]
 
-The literal linear-width Gaussian return and full signed inverse energy
-inherit the same exponent, retaining their finite transport budgets.
-Taking the minimum never weakens the preceding bound; no strict numerical
-improvement at a specified height is certified in this slice.
-
-The method's limit is also checked:
-[one_eleventh_le_etaFinitePhaseCurrentExponent](RiemannGaussian/EtaCurrentFinitePhasePower.lean)
-proves `kappa_N ≥ 1/11` for every `N`. This is a floor on this **upper-bound
-formula**, not on a zero's actual displacement. Increasing this one
-prefix cannot make its exponent zero. The
+The literal Gaussian return and full signed inverse energy inherit `p`
+with their existing finite transport budgets. The target normalization
+still depends on the actual zero coordinates. **No coefficient family
+with vanishing full budget, sharper numerical zero strip, or zero
+exponent is established.** Constructing such quantitative approximation
+control is the next task; the
 [uniform weighted goal](docs/eta-current-reconstruction-plan.md) and RH
-remain open; novelty priority is not claimed.
+remain open.
 
 ## Notable Formalisations
 
@@ -84,6 +83,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Suzuki arithmetic and spectral formulas** | Suzuki's positive-time arithmetic function equals its spectral expansion on `Im z > 1/2`. The literal arithmetic `Psi` is strictly positive on a nonzero punctured neighbourhood of the origin. | [riemannXiSuzukiArithmeticPPositive_eq_spectral_safe](RiemannGaussian/RiemannXiSuzukiWeilVerticalLimit.lean#L462), [exists_pos_on_abs_riemannXiSuzukiPsi](RiemannGaussian/RiemannXiSuzukiPointwiseLocalPositivity.lean#L298) |
 | **Xi growth and divisor summability** | Unconditional `exp(O(R log R))` xi growth and convergence of the multiplicity-weighted inverse-square zero series. | [riemannXi_logLinearGrowth](RiemannGaussian/GaussianXiLogLinearGrowth.lean#L315), [summable_distinct_zetaZeroInverseSquareNorm](RiemannGaussian/GaussianXiInverseSquareSummability.lean#L294) |
 | **Finite eta phase bounds on zero coordinates and current powers** | An exact continuous exponential projection and a finite paired eta prefix with complete tail error give `delta_N ≤ Re(rho) ≤ 1−delta_N`. The resulting exponent bounds both original current branches, the Gaussian return, and the full inverse energy at every cutoff. Its proved `1/11` floor limits this particular upper-bound formula. | [norm_pairedEtaPhaseBoundaryValue_le_zero_ratio](RiemannGaussian/EtaPhaseProjectionBound.lean), [nontrivialZetaZero_mem_etaFinitePhase_strip](RiemannGaussian/EtaFinitePhaseMargin.lean), [pairedEtaCurrentFullInverseEnergy_firstMoment_le_finitePhase](RiemannGaussian/EtaCurrentFinitePhasePower.lean) |
+| **Finite eta translate Grams and complete current-power budgets** | Nonnegative real translates annihilate every actual eta zero. A compact target sharing the elementary eta factor remains nonzero at actual zeta zeros. Its full residual is bounded by an exact finite overlap Gram plus the complete coefficient-dependent tail; reflection transports this to both current branches, the Gaussian return, and the full inverse energy. A coefficient family making the budget vanish remains open. | [pairedEtaProjectionHeadTransform_ne_zero](RiemannGaussian/EtaProjectionHeadTarget.lean), [pairedEtaTranslatedResidualEnergyCutoff_eq_finiteForm](RiemannGaussian/EtaTranslatedFiniteResidual.lean), [pairedEtaCurrentFullInverseEnergy_firstMoment_le_translatedProjection](RiemannGaussian/EtaCurrentTranslatedProjectionPower.lean) |
 | **Explicit zero-free strip from signed prime positivity** | The exact pole geometry and complete signed local zero sum give a multiplicity-sensitive margin more than 31 times the preceding signed margin. Every actual zero of absolute ordinate at least one stays at least `1/(56458 log(abs(gamma)+22))` from either edge. | [multiplicity_le_quadratic_signed_zero_gap](RiemannGaussian/ZetaSignedExactPole.lean), [nontrivialZetaZero_mem_signedQuadratic_strip](RiemannGaussian/ZetaSignedQuadraticMargin.lean), [nontrivialZetaZero_mem_quadratic_reciprocal_log_strip](RiemannGaussian/ZetaSignedQuadraticComparison.lean) |
 | **Simultaneous edge-window simplicity and separation** | At absolute center height at least one, a rectangle of width and ordinate half-width `1/(6000 log(abs(y)+22))` adjoining either strip edge has total analytic multiplicity at most one. The common complex pole sum and its full complement remain available. | [sum_multiplicity_le_one_in_signedEdgeWindow](RiemannGaussian/ZetaSignedWindowMultiplicity.lean), [sum_multiplicity_le_one_in_signedLeftEdgeWindow](RiemannGaussian/ZetaSignedZeroSeparation.lean), [signedEdgeWindowWidth_lt_im_sub_of_ne](RiemannGaussian/ZetaSignedZeroSeparation.lean) |
 | **Finite Hardy-space geometry** | Orthogonality in genuine boundary `L²`, including repeated roots, and a basis-independent determinant formula for the residual Gram operator. | [finiteModelBoundaryLp_inner_residualInner_negative_eq_zero](RiemannGaussian/FiniteHardyOrthogonality.lean#L260), [finiteHardyCrossAngleComplementGramOperator_det_eq_basisResidual_ratio](RiemannGaussian/FiniteHardyMetricDeterminant.lean#L294) |
