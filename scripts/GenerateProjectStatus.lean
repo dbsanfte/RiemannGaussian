@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "The original completed divisor mean square is bounded through A^(2/3) with the full sampling-window loss retained; the complementary clipped quotient form still needs a decay estimate"
-    lineOne := "larger divisor range"
-    lineTwo := "A^(2/3) mean square"
+    label := "The single clipped quotient boundary has vanishing full-window mean square; the remaining complete dyadic shells retain all cross terms and still need a uniform sub-source bound"
+    lineOne := "single boundary decay"
+    lineTwo := "complete quotient shells"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaCompletedMoebiusOriginalMeanSquare_twoThirds_le
+      ``RiemannGaussian.pairedEtaCompletedMoebiusBoundaryMeanSquare_twoThirds_tendsto_zero
   }
 ]
 
@@ -1108,6 +1108,17 @@ run_cmd do
         "right-half-zero hypothesis, including for u=2^k. Decay of the uncentered " ++
         "remaining form, full arithmetic decay, and any sharper zero strip remain " ++
         "unproved. The new two-thirds exponent describes a divisor cutoff. " ++
+        "Completing the retained quotient blocks now adds exactly the omitted part of " ++
+        "the single last fibre. On M>=u^3 with divisor cut u^2, its cardinality is at most " ++
+        "u and its norm is at most K_rho*u^(1-3*Re(rho)). Its full-window mean square " ++
+        "therefore tends to zero when Re(rho)>1/3; this is an auxiliary threshold, not a " ++
+        "zero-free boundary. The complete-block sum retains the original nonzero source " ++
+        "limit at a hypothetical right-half zero. On u=2^k, it is exactly the sum of k+1 " ++
+        "dyadic quotient shells, and its energy is the entire complex shell correlation " ++
+        "form, including every cross term and the moving quotient cutoff. For each " ++
+        "fixed delta>0, that form eventually exceeds norm(source)^2-delta. An independent " ++
+        "upper bound with a fixed positive gap below the source would suffice; full " ++
+        "decay or a prescribed power rate is not required. No such upper bound is proved. " ++
         "The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
@@ -1161,11 +1172,12 @@ run_cmd do
       ("target", .str
         ("Prove first absolute-moment summability of the actual completed eta leading " ++
           "flux at every nontrivial zero, preserving completion weights, multiplicity, " ++
-          "and the simple-zero head term. The current route seeks a vanishing estimate " ++
-          "for the full completed Moebius quotient correlation form at a hypothetical " ++
-          "right-half zero. Divisors through A^(2/3) now have vanishing mean square " ++
-          "under that hypothesis. The complement has at most 2*A^(1/3) clipped quotient " ++
-          "indices and retains a nonzero source; its independent decay bound is open."))
+          "and the simple-zero head term. The current route seeks any fixed positive " ++
+          "gap below the source square for the full completed Moebius quotient shell " ++
+          "form at a hypothetical right-half zero. Divisors through A^(2/3) and the " ++
+          "single clipped boundary have vanishing mean square. Complete quotient blocks " ++
+          "now form exact dyadic shells with all cross terms retained. Their independent " ++
+          "sub-source bound remains open; a full decay or power rate is not required."))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

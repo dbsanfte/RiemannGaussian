@@ -13,8 +13,14 @@ checked exact quotient reindexing, complete small-half decay, full signed
 correlation form, and quantitative nonzero source limit for the large
 half. Retaining the complete sampling-window cost now extends the
 controlled divisor range to `A^(2/3)` at a hypothetical right-half zero.
-The complement has at most `2*A^(1/3)` clipped quotient blocks. Its
-separate operator estimate remains open. The
+The complement has at most `2*A^(1/3)` quotient blocks. The single clipped
+boundary now has a checked vanishing norm and mean-square allowance.
+Completing that fibre leaves the same source limit, and the surviving
+blocks are grouped into exact dyadic shells with every cross term retained.
+The immediate target is any independent upper bound with a fixed positive
+gap below the source square; a decay or power rate is sufficient but not
+required. That arithmetic estimate remains open. The present sampler's
+`A^(2/3)` range will not be extended as a substitute for this target. The
 logarithmic residual program is preserved in the
 [arithmetic assessment](eta-parity-endgame-assessment.md); its growing
 middle band is also uncontrolled. Neither route has completed the

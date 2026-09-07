@@ -10,11 +10,15 @@ The memo is a research proposal, not an input to Lean's proof kernel.
 The checked result now controls the original divisor aggregate through
 `A^(2/3)` on a physical window of starting cutoff and length `A`, under a
 hypothetical right-half-zero assumption. Keeping the complete sampling
-cost extends the earlier square-root range. The remaining source is an
-exact clipped quotient form with at most `2*A^(1/3)` indices. **Decay of
-that form is not proved.** No theorem excluding right-half zeros or
-proving RH has been added. The earlier square-root split is recorded
-first, followed by the enlarged range and its current open target.
+cost extends the earlier square-root range. The remaining source has at
+most `2*A^(1/3)` quotient indices. The single clipped boundary now has
+vanishing mean square, and completing it leaves the same source limit.
+The complete blocks are grouped into exact dyadic shells with all cross
+terms retained. **An independent bound with a fixed positive gap below
+the source square is not proved.** A full decay or power rate is a stronger
+sufficient target, not a requirement. No theorem excluding right-half
+zeros or proving RH has been added. The earlier splits are recorded first,
+followed by the boundary removal and shell target.
 
 ## Actual carrier and a necessary correction to the memo
 
@@ -225,7 +229,7 @@ The source comparison is quantitatively preserved:
 and its dyadic specialization prove the nonzero source limit for this
 smaller remaining quotient form under `sigma>1/2`.
 
-The remaining proposed estimate is
+A stronger sufficient estimate considered in the original steer is
 
 \[
  H^{(2/3)}_{u_k}\le C_{\rho,\varepsilon}
@@ -252,13 +256,134 @@ The following checks determine what further work is necessary:
 | Quotient transposition | The newly checked complement has only order `A^(1/3)` quotient indices, with exact clipping. | Its arithmetic block coefficients themselves vary with the physical cutoff. The fixed-coefficient divisor sampler does not become a uniform estimate for this moving family merely by renaming its indices. |
 | Product-fibre collision energy | A proved coefficient-energy bound with logarithmic factors. | This alone does not bound the moving physical correlation operator or remove its window-dependent cost. |
 
-The next mathematical work is on the full `q,r≤2*A^(1/3)` form, preferably
-with dyadic quotient shells and the exact moving arithmetic intervals retained.
-Any proposed operator bound must display its dependence on the starting
-cutoff, window length, shell sizes, and coefficient variation, and must
-give a negative power for every `sigma>1/2` after a sufficiently small
-epsilon loss. Bounds only for fixed quotients, or for the centered
-quantity `high-S`, do not meet this target.
+The current target is weaker than that power estimate. The user's revised
+priority is to remove the single clipped boundary, use complete quotient
+blocks, group them into dyadic shells, and attack the entire shell form.
+Any fixed gap below the source square suffices. The present sampler is
+already at its critical low-divisor exponent; extending that range is
+not the current research task.
+
+## The single clipped boundary is now negligible
+
+For a general divisor cut `T≤M`, put
+
+\[
+ Q=\left\lfloor\frac{M}{T+1}\right\rfloor,\qquad
+ R=\left\lfloor\frac{M}{Q+1}\right\rfloor,\qquad
+ E_\rho(M,T)=\sum_{R<d\le T}T_\rho(M,d),\qquad
+ C_\rho(M,T)=\sum_{1\le q\le Q}B_{\rho,M}(q).
+\]
+
+The module [EtaMoebiusBoundaryFibre](../RiemannGaussian/EtaMoebiusBoundaryFibre.lean)
+proves `R≤T` and the exact complex identity
+
+\[
+ C_\rho(M,T)=E_\rho(M,T)+\operatorname{high}_\rho(M,T).
+\]
+
+The theorem
+`pairedEtaCompletedMoebiusBoundaryFibre_eq_block_sub_clipped` identifies
+`E` with the complete last block `q=Q` minus its clipped version, for
+`T<M`. Thus only one fibre has changed. No boundary is discarded by an
+algebraic approximation.
+
+At `T=u²`, `u≥1`, `M≥u³`, the theorem
+`moebiusTwoThirds_boundary_card_le` proves `T-R≤u`. Applying the existing
+uniform estimate for each original completed term gives
+
+\[
+ |E_\rho(M,u^2)|\le e_u:=K_\rho u^{1-3\sigma}.
+\]
+
+This is `norm_pairedEtaCompletedMoebiusBoundaryFibre_twoThirds_le`.
+It holds uniformly over the entire physical window, indeed for every
+`M≥u³`. The module
+[EtaMoebiusBoundaryFibreDecay](../RiemannGaussian/EtaMoebiusBoundaryFibreDecay.lean)
+proves `e_u→0` when `sigma>1/3`, and
+
+\[
+ \frac1{u^3}\sum_{n<u^3}|E_\rho(u^3+n,u^2)|^2\le e_u^2\longrightarrow0.
+\]
+
+The terminal boundary theorem is
+`pairedEtaCompletedMoebiusBoundaryMeanSquare_twoThirds_tendsto_zero`.
+The threshold `1/3` concerns this auxiliary boundary, not a zero-free strip.
+
+The full signed identity remains available as
+`pairedEtaCompletedMoebiusCompleteQuotientAggregate_sub_source`:
+
+\[
+ C_\rho(M,T)-S_\rho=E_\rho(M,T)-\operatorname{low}_\rho(M,T).
+\]
+
+With `U_u=2V_u+2e_u²`, its mean-square error is at most `U_u`. The complete
+block energy `H^C_u=mean_(u³≤M<2u³)|C_rho(M,u²)|²` therefore satisfies
+
+\[
+ |H^C_u-|S_\rho|^2|\le U_u+2|S_\rho|\sqrt{U_u}\longrightarrow0
+ \qquad(\sigma>1/2).
+\]
+
+Both the explicit bound and the limit are checked in
+`pairedEtaCompletedMoebiusCompleteQuotientMeanSquare_twoThirds_source_error_le`
+and `pairedEtaCompletedMoebiusCompleteQuotientMeanSquare_twoThirds_tendsto_source`.
+The boundary is removed as an obstruction; the complete-block source
+itself has not been bounded below its required limiting value.
+
+## Exact dyadic shells and the weaker sufficient target
+
+Let `u=2^k`, and retain the actual moving cutoff in each complete block:
+
+\[
+ F_k(M,q)=\mathbf1_{q\le Q(M,u^2)}B_{\rho,M}(q),\qquad
+ Z_{k,j}(M)=\sum_{2^j\le q<2^{j+1}}F_k(M,q),\quad 0\le j\le k.
+\]
+
+The module [EtaMoebiusQuotientShells](../RiemannGaussian/EtaMoebiusQuotientShells.lean)
+proves `C=sum_j Z_(k,j)` exactly. Define
+
+\[
+ \Gamma_k(j,l)=\frac1{u^3}\sum_{n<u^3}
+ Z_{k,j}(u^3+n)\overline{Z_{k,l}(u^3+n)}.
+\]
+
+The theorem
+`pairedEtaCompletedMoebiusCompleteQuotientMeanSquare_twoThirds_eq_shellCorrelations`
+proves the full complex equality
+
+\[
+ H^C_{2^k}=\sum_{j,l\le k}\Gamma_k(j,l).
+\]
+
+Each `Gamma` is also exactly the sum of the original block correlations
+inside that shell pair, as proved by
+`pairedEtaCompletedMoebiusQuotientShellCorrelation_eq_blockCorrelations`.
+All cross terms, phases, completion factors, arithmetic endpoints, and the
+original averaging length remain present.
+
+The immediate open estimate is any `delta_rho>0`, independent of `k`, with
+
+\[
+ \Re\sum_{j,l\le k}\Gamma_k(j,l)
+ \le |S_\rho|^2-\delta_\rho
+ \quad\text{for arbitrarily large }k,
+ \qquad\sigma>1/2.
+\]
+
+A uniform eventual bound would suffice in particular. The checked theorem
+`pairedEtaCompletedMoebiusQuotientShellForm_eventually_above_sub_source`
+states that every such fixed threshold is eventually exceeded under the
+right-half-zero hypothesis. The proposed independent upper bound would
+contradict that theorem. No upper bound of this kind is assumed or proved
+in the new modules. An inequality strictly below the source at each finite
+cutoff with a gap tending to zero is not sufficient.
+
+The next estimate must address the **whole** shell form. Separate diagonal
+bounds do not control it, and decay only of `C-S` has already been proved.
+Dependence on the zero, shell sizes, moving arithmetic coefficients, and
+physical window must remain explicit. A route should not be rejected for
+failing to deliver the earlier full power rate if it can yield the fixed
+gap instead.
 
 The prior logarithmic Möbius family remains available as a separate
 arithmetic program. Its complete growing head and quadratic tail decay,

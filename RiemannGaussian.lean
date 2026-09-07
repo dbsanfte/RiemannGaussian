@@ -817,3 +817,6 @@ import RiemannGaussian.EtaMoebiusWindowMeanSquare
 import RiemannGaussian.EtaMoebiusTwoThirdsMeanSquare
 import RiemannGaussian.EtaMoebiusClippedQuotientBlocks
 import RiemannGaussian.EtaMoebiusTwoThirdsQuotientEnergy
+import RiemannGaussian.EtaMoebiusBoundaryFibre
+import RiemannGaussian.EtaMoebiusBoundaryFibreDecay
+import RiemannGaussian.EtaMoebiusQuotientShells
