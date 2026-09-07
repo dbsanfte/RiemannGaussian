@@ -27,56 +27,51 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek a uniform bound for the original signed inverse energy using proved finite Möbius cancellation. The ordinary prefix is o(M); each fixed complex weight in the critical strip gives o((M+1)^(1−Re(s))). Exact quotient blocks connect this to the original completed zeroth moments, retaining odd endpoints. Next control the whole two-divisor inverse and both reflected mixed energies. The positive power scale survives, so the global weighted bound and RH remain open.
+Seek the uniform weighted bound for the original signed inverse energy using quantitative finite Möbius cancellation. Shrinking Gaussian heat and a growing contour give exponential decay on a cubic logarithmic scale, with specified remainder costs for complex weights and completed eta quotient blocks. Next control the full moving inverse and both reflected mixed energies, including blocks below the proved cutoff. The global bound and RH remain open.
 
 ## Latest Update
 
-Lean now proves **cancellation at ordinary finite arithmetic cutoffs**,
-including the complex weights and quotient blocks used by the eta carrier.
-Writing
+Lean now proves a **quantitative cancellation rate at ordinary finite
+arithmetic cutoffs**, including the original completed eta quotient blocks.
+Put `A(h)=10^15 h^3` and `M_mu(M)=sum_{n≤M} mu(n)`. The actual contour
+height `exp(h)` and heat time `exp(−h)` give, for all sufficiently large `h`,
 
 \[
- M_\mu(M)=\sum_{n=1}^{M}\mu(n),
- \qquad
- P_s(M)=\sum_{n=1}^{M}\mu(n)n^{-s},
+ |M_\mu(\lfloor e^{A(h)}\rfloor)|
+ \le C_\mu e^{A(h)-h/2}.
 \]
 
-[moebiusFinitePrefix_div_tendsto_zero](RiemannGaussian/MoebiusFiniteCancellation.lean)
-proves `M_mu(M)/M → 0`, and
-[complexMoebiusFinitePrefix_normalized_tendsto_zero](RiemannGaussian/MoebiusFiniteMellinCancellation.lean)
-proves `(M+1)^(s−1) P_s(M) → 0` for each fixed `s` with `0<Re(s)<1`.
-The latter retains the full complex normalization phase.
+[abs_moebiusLogPrefix_cubic_le_eventually](RiemannGaussian/MoebiusFiniteQuantitativeCancellation.lean)
+includes the complete negative-center integral, horizontal corrections,
+infinite contour tails, cutoff displacement, and integer rounding.
+The unsmoothed sum has a specified all-cutoff remainder:
+`|M_mu(M)| ≤ C_mu exp(−h/2) M + exp(A(h))`.
 
-The cutoff is unsmoothed. Cancellation at every positive heat time,
-the exact cumulative Gaussian identity, and a vanishing cutoff error
-justify removing the smoothing. The integer-floor error is included
-([gaussianMoebiusCumulative_eq_smoothed_finitePrefix](RiemannGaussian/MoebiusGaussianCutoff.lean),
-[abs_moebiusFinitePrefix_gaussian_error_le](RiemannGaussian/MoebiusGaussianCutoff.lean)).
-An exact finite Abel identity then carries the signed prefixes into
-the complex weights.
-
-For the literal block `D_s(M,q)=sum_{d≤M, M/d=q} mu(d) d^(-s)`,
-[complexMoebiusDividedCutoffBlock_eq_prefix_sub](RiemannGaussian/MoebiusDividedCutoffBlocks.lean)
-retains exactly `P_s(M/q)−P_s(M/(q+1))`, using integer division.
-For each `eps>0`, one finite remainder works for **every** `M` and `q>0`:
+Exact finite complex Abel summation carries both terms into the actual
+Mellin weights. For `0<Re(s)<1`, put `p=1−Re(s)` and
+`U=floor(M/q)+1`. The literal block
+`D_s(M,q)=sum_{d≤M, M/d=q} mu(d) d^(−s)` satisfies
 
 \[
- \|D_s(M,q)\|\le
- \varepsilon(\lfloor M/q\rfloor+1)^{1-\Re(s)}+C_{s,\varepsilon}.
+ \|D_s(M,q)\|\le 2C_s U^p e^{-h/2}
+ \qquad\text{when }q>0\text{ and }U\ge e^{2A(h)/p}.
 \]
 
-[exists_pairedEtaCompletedMoebius_divided_block_remainder](RiemannGaussian/EtaMoebiusDividedBlockCancellation.lean)
-applies this to the original completed zeroth-moment blocks, retaining
-the actual eta prefix at `q`, its completion, and its odd last endpoint.
-The zero equation supplies the factor `q^(-Re(rho))`.
+[exists_complexMoebiusDividedCutoffBlock_cubic_rate](RiemannGaussian/EtaMoebiusDividedBlockRate.lean)
+uses one common scale threshold for all weights, with their dependence
+retained in `C_s` and the arithmetic cutoff. The terminal theorem
+[exists_pairedEtaCompletedMoebius_divided_block_cubic_rate](RiemannGaussian/EtaMoebiusDividedBlockRate.lean)
+multiplies this by the original completion and the proved eta endpoint
+factor `norm(X_rho)*(norm(rho)/Re(rho)+1)*q^(−Re(rho))`.
+The exact complex block identity and odd last endpoint remain available.
 
-The coefficient estimate still has a positive power scale. Summing its
-remainder through the growing two-divisor inverse needs further control.
-The signed combination of the full reflected energies still lacks the
-required uniform weighted bound.
-There is no new fixed power saving or tighter zero bound; the
-[uniform weighted goal](docs/eta-current-reconstruction-plan.md) and RH
-remain open. No novelty priority is claimed.
+The scale threshold is proved to exist; no numerical starting cutoff is
+claimed. This is a quantitative decay rate on the existing positive power
+scale, with no fixed power saving. Smaller blocks and the full reflected
+inverse interactions remain uncontrolled at the strength needed for the
+[uniform weighted goal](docs/eta-current-reconstruction-plan.md).
+The zero strip is unchanged by this slice, and RH remains open.
+No novelty priority is claimed.
 
 ## Notable Formalisations
 
@@ -87,7 +82,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | --- | --- | --- |
 | **Gaussian/Weil explicit formula** | The arithmetic Gaussian expression, including prime-power and Archimedean terms, equals the canonical multiplicity-weighted symmetric zeta-zero sum for every positive width. | [gaussianArithmeticExplicitFormula_eq_canonical](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean#L1235) |
 | **Gaussian Möbius arithmetic and cancellation** | The full reciprocal integral equals the actual Möbius sum, with every contour correction controlled. Its unit-time cancellation transfers through an exact complex heat identity: for each fixed complex `s`, `exp((s−1)a) W_s,2(a) → 0` with full phase retained, hence `W_s,2(log X)=o(X^(1−Re(s)))`. Absolute convergence holds for every positive heat time. | [gaussianMoebiusSum_one_le_reciprocal_log_gain_eventually](RiemannGaussian/GaussianMoebiusCancellation.lean), [summable_complexGaussianMoebiusSummand](RiemannGaussian/ComplexGaussianMoebius.lean), [integral_normalizedGaussianMoebius_heat](RiemannGaussian/GaussianMoebiusPhaseHeat.lean), [complexGaussianMoebiusSum_two_normalized_tendsto_zero](RiemannGaussian/GaussianMoebiusComplexCancellation.lean) |
-| **Finite Möbius cancellation and completed quotient blocks** | Removing Gaussian smoothing proves `sum_{n≤M} mu(n)=o(M)`. The actual finite complex prefix has a vanishing normalized limit throughout `0<Re(s)<1`. Exact divided-cutoff blocks have one remainder uniform in both cutoffs, and the original completed zeroth eta blocks retain their completion and odd endpoint decay. | [moebiusFinitePrefix_div_tendsto_zero](RiemannGaussian/MoebiusFiniteCancellation.lean), [complexMoebiusFinitePrefix_normalized_tendsto_zero](RiemannGaussian/MoebiusFiniteMellinCancellation.lean), [exists_pairedEtaCompletedMoebius_divided_block_remainder](RiemannGaussian/EtaMoebiusDividedBlockCancellation.lean) |
+| **Quantitative finite Möbius cancellation and completed quotient blocks** | The unsmoothed sum has exponential decay in the cubic logarithmic scale `A(h)=10^15 h^3`, with all contour and cutoff errors included. Complex prefixes and literal quotient blocks inherit a quantitative rate above a specified weight-dependent cutoff. A common scale threshold works for all weights, with explicit weight dependence in the constants. The original completed zeroth eta blocks retain their completion and odd endpoint decay. | [abs_moebiusLogPrefix_cubic_le_eventually](RiemannGaussian/MoebiusFiniteQuantitativeCancellation.lean), [exists_complexMoebiusFinitePrefix_cubic_rate](RiemannGaussian/MoebiusFiniteMellinRate.lean), [exists_pairedEtaCompletedMoebius_divided_block_cubic_rate](RiemannGaussian/EtaMoebiusDividedBlockRate.lean) |
 | **Gaussian heat and reflected-zero Grams** | The complete matched Gaussian correlation equals the boundary heat-residue sum. At positive heat time, its vanishing is equivalent to RH. | [riemannXiUpperReflectedPairGaussianTotal_eq_boundaryHeatResidueTotal](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L187), [riemannXiUpperReflectedPairGaussianTotal_eq_zero_iff_rh](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L197) |
 | **Suzuki arithmetic and spectral formulas** | Suzuki's positive-time arithmetic function equals its spectral expansion on `Im z > 1/2`. The literal arithmetic `Psi` is strictly positive on a nonzero punctured neighbourhood of the origin. | [riemannXiSuzukiArithmeticPPositive_eq_spectral_safe](RiemannGaussian/RiemannXiSuzukiWeilVerticalLimit.lean#L462), [exists_pos_on_abs_riemannXiSuzukiPsi](RiemannGaussian/RiemannXiSuzukiPointwiseLocalPositivity.lean#L298) |
 | **Xi growth and divisor summability** | Unconditional `exp(O(R log R))` xi growth and convergence of the multiplicity-weighted inverse-square zero series. | [riemannXi_logLinearGrowth](RiemannGaussian/GaussianXiLogLinearGrowth.lean#L315), [summable_distinct_zetaZeroInverseSquareNorm](RiemannGaussian/GaussianXiInverseSquareSummability.lean#L294) |

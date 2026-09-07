@@ -16,20 +16,15 @@ namespace RiemannGaussian
 
 noncomputable section
 
-/-- Finite cancellation survives the original complex Mellin weights, with one remainder valid at every arithmetic cutoff. -/
-theorem exists_complexMoebiusFinitePrefix_power_remainder {s : ℂ}
-    (hs : 0 < s.re) (hsone : s.re < 1) {eps : ℝ} (heps : 0 < eps) :
-    ∃ C : ℝ, 0 ≤ C ∧ ∀ M : ℕ,
-      ‖complexMoebiusFinitePrefix s M‖ ≤ eps * (M + 1 : ℝ) ^ (1 - s.re) + C := by
+/-- The actual finite complex Abel formula retains the complete coefficient and remainder from any proved bound for its original signed integer prefixes. -/
+theorem norm_complexMoebiusFinitePrefix_le_linear_remainder {s : ℂ}
+    (hs : 0 < s.re) (hsone : s.re < 1) {delta B : ℝ} (hd : 0 ≤ delta) (hB : 0 ≤ B)
+    (hprefix : ∀ M : ℕ, |moebiusFinitePrefix M| ≤ delta * M + B) (M : ℕ) :
+    ‖complexMoebiusFinitePrefix s M‖ ≤
+      (delta * (1 + ‖s‖ / (1 - s.re))) * (M + 1 : ℝ) ^ (1 - s.re) +
+        B * (1 + ‖s‖ * moebiusMellinDerivativeMass s) := by
   let A := 1 + ‖s‖ / (1 - s.re)
-  have hA : 0 < A := by dsimp [A]; positivity
-  let delta := eps / A
-  have hd : 0 < delta := div_pos heps hA
-  have hdA : delta * A = eps := by dsimp [delta]; field_simp
-  obtain ⟨B, hB, hprefix⟩ := exists_moebiusFinitePrefix_linear_remainder hd
   let C := B * (1 + ‖s‖ * moebiusMellinDerivativeMass s)
-  have hZ := moebiusMellinDerivativeMass_nonneg s
-  refine ⟨C, by dsimp [C]; positivity, fun M ↦ ?_⟩
   have hMpos : (0 : ℝ) < M + 1 := by positivity
   have hMone : (1 : ℝ) ≤ M + 1 := by linarith [Nat.cast_nonneg (α := ℝ) M]
   have hneg : (M + 1 : ℝ) ^ (-s.re) ≤ 1 :=
@@ -71,7 +66,7 @@ theorem exists_complexMoebiusFinitePrefix_power_remainder {s : ℂ}
         rw [Finset.sum_add_distrib, ← Finset.mul_sum, ← Finset.mul_sum]
       _ ≤ _ := by
         apply add_le_add
-        · apply mul_le_mul_of_nonneg_left _ hd.le
+        · apply mul_le_mul_of_nonneg_left _ hd
           simpa only [neg_add_eq_sub] using
             sum_range_nat_add_one_rpow_le (by linarith : -1 < -s.re) (by linarith : -s.re ≤ 0) M
         · exact mul_le_mul_of_nonneg_left (sum_moebiusMellinDerivative_le hs M) hB
@@ -84,7 +79,24 @@ theorem exists_complexMoebiusFinitePrefix_power_remainder {s : ℂ}
           B * moebiusMellinDerivativeMass s) :=
       add_le_add hendpoint (mul_le_mul_of_nonneg_left hsum (norm_nonneg _))
     _ = (delta * A) * (M + 1 : ℝ) ^ (1 - s.re) + C := by dsimp [A, C]; ring
-    _ = _ := by rw [hdA]
+
+/-- Finite cancellation survives the original complex Mellin weights, with one remainder valid at every arithmetic cutoff. -/
+theorem exists_complexMoebiusFinitePrefix_power_remainder {s : ℂ}
+    (hs : 0 < s.re) (hsone : s.re < 1) {eps : ℝ} (heps : 0 < eps) :
+    ∃ C : ℝ, 0 ≤ C ∧ ∀ M : ℕ,
+      ‖complexMoebiusFinitePrefix s M‖ ≤ eps * (M + 1 : ℝ) ^ (1 - s.re) + C := by
+  let A := 1 + ‖s‖ / (1 - s.re)
+  have hA : 0 < A := by dsimp [A]; positivity
+  let delta := eps / A
+  have hd : 0 < delta := div_pos heps hA
+  have hdA : delta * A = eps := by dsimp [delta]; field_simp
+  obtain ⟨B, hB, hprefix⟩ := exists_moebiusFinitePrefix_linear_remainder hd
+  have hZ := moebiusMellinDerivativeMass_nonneg s
+  refine ⟨B * (1 + ‖s‖ * moebiusMellinDerivativeMass s), by positivity, fun M ↦ ?_⟩
+  have hb := norm_complexMoebiusFinitePrefix_le_linear_remainder hs hsone hd.le hB hprefix M
+  change ‖complexMoebiusFinitePrefix s M‖ ≤
+    (delta * A) * (M + 1 : ℝ) ^ (1 - s.re) + B * (1 + ‖s‖ * moebiusMellinDerivativeMass s) at hb
+  rwa [hdA] at hb
 
 end
 

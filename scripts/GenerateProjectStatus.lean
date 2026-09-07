@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "Actual finite Moebius cancellation and an all-quotient remainder for the original completed zeroth eta blocks, retaining the complex coefficient and odd endpoint factor"
-    lineOne := "finite Moebius blocks"
+    label := "Quantitative finite Moebius decay on a cubic logarithmic scale for the original completed eta quotient blocks above a specified arithmetic cutoff, retaining the weight dependence, completion, and odd endpoint factor"
+    lineOne := "finite Moebius rate"
     lineTwo := "completed eta bound"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.exists_pairedEtaCompletedMoebius_divided_block_remainder
+      ``RiemannGaussian.exists_pairedEtaCompletedMoebius_divided_block_cubic_rate
   }
 ]
 
@@ -228,7 +228,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">Finite Moebius quotient-block cancellation proved; " ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">Quantitative finite Moebius block decay proved; " ++
       "the full inverse-energy estimate and uniform current bound remain open.</text>\n" ++
     "</svg>\n"
 
@@ -782,9 +782,30 @@ run_cmd do
         "equals D_rho(M,q)*X_rho*etaPrefix(q), including odd last endpoints. " ++
         "The theorem exists_pairedEtaCompletedMoebius_divided_block_remainder " ++
         "retains its completion and the proved factor " ++
-        "norm(X_rho)*(norm(rho)/Re(rho)+1)*q^(-Re(rho)). The finite " ++
-        "estimates still have a positive power scale and assert no uniformity " ++
-        "in s or fixed power saving. The complete two-divisor inverse and " ++
+        "norm(X_rho)*(norm(rho)/Re(rho)+1)*q^(-Re(rho)). A quantitative " ++
+        "shrinking-heat argument now specifies the finite remainder. " ++
+        "The normalized absolute cutoff error is at most 9*sqrt(tau) for " ++
+        "0<tau<=1/4. The complete cumulative contour bound retains its " ++
+        "negative-center Dirichlet integral and all three contour terms. " ++
+        "At A(h)=10^15*h^3, T=exp(h), tau=exp(-h), the full contour " ++
+        "majorant is at most P*exp(A(h)-h), with a fixed explicit P. " ++
+        "The theorem abs_moebiusLogPrefix_cubic_le_eventually gives " ++
+        "abs(M_mu(floor(exp(A(h)))))<=C_mu*exp(A(h)-h/2) eventually. " ++
+        "One H>=22 gives abs(M_mu(M))<=C_mu*exp(-h/2)*M+exp(A(h)) " ++
+        "for every h>=H and integer M. Exact complex Abel summation " ++
+        "retains both costs. Put p=1-Re(s), Z_s=sum_n(n+1)^(-Re(s)-1), " ++
+        "and C_s=C_mu*(1+norm(s)/p)+(1+norm(s)*Z_s). For every " ++
+        "critical-strip s, norm(P_s(M))<=C_s*(M+1)^p*exp(-h/2) " ++
+        "when M+1>=exp(2*A(h)/p). The literal quotient coefficient " ++
+        "satisfies norm(D_s(M,q))<=2*C_s*U^p*exp(-h/2) for q>0, " ++
+        "U=floor(M/q)+1>=exp(2*A(h)/p). The terminal actual theorem " ++
+        "exists_pairedEtaCompletedMoebius_divided_block_cubic_rate " ++
+        "retains its completion and the same unpaired eta endpoint " ++
+        "factor. A common H works for all weights and zeros; the weight " ++
+        "dependence remains in C_s and the cutoff. H is existential, " ++
+        "without a numerical starting cutoff. The bound retains a " ++
+        "positive power scale and proves no fixed power saving. " ++
+        "Smaller blocks, the complete two-divisor inverse, and " ++
         "both reflected mixed energies still need a stronger joint estimate. " ++
         "This does not improve the zero margin or " ++
         "the current's positive exponent. The uniform cutoff-independent " ++

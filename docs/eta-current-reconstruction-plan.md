@@ -3817,6 +3817,124 @@ and outer inverse weights. Both reflected mixed energies must still be
 controlled jointly with a stronger bound. No fixed power saving, improved
 zero strip, uniform weighted current bound, or novelty priority is claimed.
 
+## Checked quantitative finite Möbius rate and completed blocks
+
+The finite-cutoff cancellation now has a specified decay rate and a
+specified dependence of its all-cutoff remainder on the scale. The
+terminal actual-carrier theorem is
+[exists_pairedEtaCompletedMoebius_divided_block_cubic_rate](../RiemannGaussian/EtaMoebiusDividedBlockRate.lean).
+Its bound applies above a stated arithmetic cutoff, with the original
+completion, divided cutoff, and odd eta endpoint intact.
+
+Write `G(a,tau,T)=gaussianMoebiusContourMajorant a tau T` for the complete
+three-term contour envelope. The checked cumulative estimate is
+
+\[
+ |U_\tau(a)|\le D(2)e^{4\tau}/2+2G(a,\tau,T),
+ \qquad a\ge0,\quad\tau>0,\quad T\ge2.
+\]
+
+[abs_gaussianMoebiusCumulative_le_contourMajorant](../RiemannGaussian/GaussianMoebiusCumulativeBound.lean)
+includes the entire negative-center integral and every left-line,
+horizontal, and infinite-tail contribution. Every center exponential is
+integrable over the full one-sided range. The upstream signed arithmetic
+and oriented contour identities remain available.
+
+[integral_moebiusCutoffGaussian_error_div_le_sqrt](../RiemannGaussian/MoebiusFiniteContourBound.lean)
+gives the normalized absolute cutoff error at most `9 sqrt(tau)` for
+`0<tau≤1/4`. The Gaussian normalization identity is exact, and integer
+rounding still contributes the normalized unit `exp(−a)`.
+
+The coupled schedule is
+
+\[
+ A(h)=10^{15}h^3,\qquad T=e^h,\qquad\tau=e^{-h}.
+\]
+
+The actual local height is at most `2h`; the reciprocal norm is at most
+`C exp(132000000 h²)`; the width gain satisfies
+`A(h) w(exp h) ≥ 1000000000 h²`; the moving absolute Möbius mass is at
+most `4000000 h`. Here `C=gaussianMoebiusContourConstant` is the proved
+fixed constant including the compact reciprocal bound. All these inputs
+are discharged in
+[MoebiusExponentialContourScale.lean](../RiemannGaussian/MoebiusExponentialContourScale.lean).
+
+For `h≥22`, `h≥1/(500000 w0)`, and `exp(h)≥4A(h)`,
+[gaussianMoebiusContourMajorant_exponentialScale_le](../RiemannGaussian/MoebiusExponentialContourBound.lean)
+proves `G(A(h),exp(−h),exp(h)) ≤ P exp(A(h)−h)`, with
+`P=3C+4000000 sqrt(2 pi)`. The tail suppression is exactly
+`tau*T²=exp(h)`. The simultaneous size conditions hold eventually.
+
+Put `C_mu=10+D(2) exp(4)/2+2P`. The unsmoothed terminal bound is
+
+\[
+ |M_\mu(\lfloor e^{A(h)}\rfloor)|
+ \le C_\mu e^{A(h)-h/2}
+\]
+
+for all sufficiently large `h`
+([abs_moebiusLogPrefix_cubic_le_eventually](../RiemannGaussian/MoebiusFiniteQuantitativeCancellation.lean)).
+The stronger all-cutoff interface supplies one `H≥22` such that, for
+every `h≥H` and every integer `M`,
+
+\[
+ |M_\mu(M)|\le C_\mu e^{-h/2}M+e^{A(h)}.
+\]
+
+This replaces the unspecified epsilon remainder with its specified
+scale dependence. The threshold `H` is proved to exist and is not
+numerically evaluated. No numerical starting cutoff is claimed.
+
+The exact finite complex Abel identity then carries both contributions.
+For `0<Re(s)<1`, let
+
+\[
+ p=1-\Re(s),\quad Z_s=\sum_{n\ge0}(n+1)^{-\Re(s)-1},\quad
+ C_s=C_\mu\left(1+\frac{\|s\|}{p}\right)
+       +1+\|s\|Z_s.
+\]
+
+`Z_s` is the previously proved summable derivative mass. One common
+`H` works for all these weights. For `h≥H`,
+[exists_complexMoebiusFinitePrefix_cubic_rate](../RiemannGaussian/MoebiusFiniteMellinRate.lean)
+proves
+
+\[
+ \|P_s(M)\|\le C_s(M+1)^p e^{-h/2}
+ \quad\text{if }M+1\ge e^{2A(h)/p}.
+\]
+
+For the literal quotient block, put `U=floor(M/q)+1`. Its exact
+complex prefix-difference identity and the all-cutoff Abel remainder give
+
+\[
+ \|D_s(M,q)\|\le2C_s U^p e^{-h/2},
+ \qquad q>0,\quad U\ge e^{2A(h)/p}.
+\]
+
+Both endpoints are included; the smaller prefix need not separately
+satisfy the size threshold. The terminal theorem on the original carrier
+multiplies this coefficient bound by
+
+\[
+ \|X_\rho\|
+ \left(\frac{\|\rho\|}{\Re(\rho)}+1\right)q^{-\Re(\rho)}.
+\]
+
+The common scale threshold also works for every actual zero, while the
+constant and the arithmetic cutoff retain the zero dependence. The
+original complex coefficient, completion phase, and unpaired endpoint
+remain in the upstream exact block identity.
+
+This is quantitative decay on a positive power scale; it gives no fixed
+power saving. The blocks below the stated cutoff and the complete
+reflected inverse interactions remain open at the strength required for
+the original uniform weighted bound. Exact full inversion cancels the
+Möbius convolution, so finite-prefix cancellation alone cannot be treated
+as an extra saving on the full current. This slice changes neither the
+proved zero strip nor the hypothetical off-critical current exponent.
+No novelty priority is claimed.
+
 ## Next mathematical obligations
 
 The exact-pole prime input now excludes the larger explicit
@@ -3837,10 +3955,12 @@ and unit-time scale choice now give the unconditional eventual rate above.
 The exact complex heat transport remains available upstream. Removing
 Gaussian smoothing now also gives the ordinary finite Möbius cancellation,
 and exact Abel summation carries it to the original finite complex weights.
-The actual quotient blocks and completed zeroth eta blocks now have the
-all-cutoff remainder above, with their odd endpoints retained. Their
-positive power scale and the accumulated remainder remain obstacles to
-summing through the complete two-divisor inverse. The next step requires a
+The actual quotient blocks and completed zeroth eta blocks now also have
+the quantitative cubic-scale rate above, with their odd endpoints retained.
+The all-cutoff remainder has specified scale dependence and is absorbed
+above an explicit weight-dependent cutoff. The positive power scale,
+smaller blocks, and accumulation through the complete two-divisor inverse
+remain obstacles. The next step requires a
 stronger joint estimate for that inverse and both completed reflected mixed
 energies. The finite coefficient cancellation does not establish the signed
 full inverse-energy bound.
