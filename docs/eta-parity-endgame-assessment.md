@@ -364,9 +364,9 @@ Writing `m(M)=Σ_(n≤M) μ(n)/n`, `γ` for the Euler constant, and
 Lean proves `|m(M)|≤2`, `|e(M,n)|≤2n/M` for `1≤n≤M`, and absolute
 value at most `2` for the complete signed remainder sum. Hence
 `abs_pairedEtaMoebiusLogHarmonic_le_five_div_log` gives
-`|p_M|≤5/log M` at every `M>1`. This is a bound on the unchanged
-normalization, not a proof that `p_M log M→1` or that its full weighted
-distance from the prime optimum tends to zero.
+`|p_M|≤5/log M` at every `M>1`. The sharper main-term limit is now
+proved below. The full weighted distance from the prime optimum still
+has no decay estimate.
 
 The harmonic Möbius bound is classical; Tao's
 [2010 paper, §1](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/D8B367C2D4EECF135A190CCC1B1D057F/S0004972709000884a.pdf/a-remark-on-partial-sums-involving-the-mobius-function.pdf)
@@ -408,6 +408,84 @@ terminal zero theorem is
 `pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_middle`.
 No decay bound for `Q_M` has been proved. The new estimate gives no
 sharper numerical zero strip or full uniform weighted current bound.
+
+## Complete Euler cancellation and the normalization main term
+
+[MoebiusHarmonicMonotoneTail](../RiemannGaussian/MoebiusHarmonicMonotoneTail.lean)
+proves the exact finite Abel identity on every interval `D<n≤M`:
+
+\[
+ \sum_{D<n\le M}\frac{\mu(n)}n b(n)
+ =b(M)m(M)-b(D+1)m(D)
+  -\sum_{D<n<M}[b(n+1)-b(n)]m(n).
+\]
+
+For a nonnegative decreasing `b` on that same interval, a proved bound
+`|m(n)|≤ε` for all `D≤n≤M` gives absolute value at most `2ε b(D+1)`.
+Both endpoints and every increment are retained before this estimate.
+
+Let `C_M=Σ_(n≤M) μ(n)e(M,n)/n` be the complete original Euler correction.
+[EtaMoebiusLogEulerCancellation](../RiemannGaussian/EtaMoebiusLogEulerCancellation.lean)
+splits it at `D=floor(M/Q)` for an integer `Q≥2`. The low part costs at
+most `2/Q`. On the complementary interval, both `H(floor(M/n))` and
+`log(M/n)` are nonnegative decreasing weights, each controlled at its
+original first endpoint. The resulting full bound is
+
+\[
+ |C_M|\le\frac2Q+4\varepsilon(1+\log Q)
+ \quad\text{if } |m(n)|\le\varepsilon\text{ for }\lfloor M/Q\rfloor\le n\le M.
+\]
+
+The repo's proved harmonic Möbius cancellation makes this entire
+complement small at every fixed `Q`; choosing `Q` large controls the
+low part. `pairedEtaMoebiusLogEulerCorrection_tendsto_zero` proves
+`C_M→0` without replacing the complete sum by finitely many fixed terms.
+
+The unchanged signed identity `p_M log M=1−γ m(M)−C_M` now gives
+
+\[
+ p_M\log M\longrightarrow1,
+ \qquad e_M:=p_M\log M-1\longrightarrow0.
+\]
+
+The compiled main-term theorem is
+`pairedEtaMoebiusLogHarmonic_mul_log_tendsto_one` in
+[EtaMoebiusNormalizationMainTerm](../RiemannGaussian/EtaMoebiusNormalizationMainTerm.lean).
+The original coefficients have not been adjusted to impose this limit.
+
+For the exact prime discrepancy `Δ(L)=H_eta(L)−P(L)`, the same module
+proves at every `M>1` and `1≤L≤M`
+
+\[
+ \log M\,r_M(L)=\Delta(L)+e_M H_\eta(L),
+ \qquad |\log M\,r_M(L)-\Delta(L)|\le2|e_M|.
+\]
+
+The convergence to the prime discrepancy is uniform over the entire
+growing interior at the cell level. Its complete finite square identity,
+for `R≤M`, retains the signed cross moment:
+
+\[
+ (\log M)^2\sum_{L\le R}r_M(L)^2
+ =\sum_{L\le R}\Delta(L)^2
+  +2e_M\sum_{L\le R}H_\eta(L)\Delta(L)
+  +e_M^2\sum_{L\le R}H_\eta(L)^2.
+\]
+
+A proved sufficient upper bound is
+
+\[
+ \sum_{L\le R}r_M(L)^2\le
+ \frac{2\sum_{L\le R}\Delta(L)^2+8R e_M^2}{(\log M)^2}.
+\]
+
+The factor `R` remains explicit. The new qualitative main-term limit
+does not prove decay of this bound at `R=M`, nor has the needed growing
+prime-discrepancy square estimate been proved. The exact cross term
+remains available for a sharper argument. The complementary range
+`M<L≤M²` still retains its truncated quotient correlations. Full
+arithmetic decay, the original uniform weighted current bound, and a
+new numerical zero strip remain unproved.
 
 ## Literature checks and the remaining arithmetic test
 

@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "The complete growing logarithmic head and quadratic tail both decay; the full continuum residual differs from the unchanged intervening arithmetic band by a proved vanishing quantity, while decay of that band remains open"
-    lineOne := "both arithmetic ends"
-    lineTwo := "intervening band open"
+    label := "The original logarithmic Moebius normalization has its exact leading coefficient one after the complete signed Euler correction is proved to vanish; the growing arithmetic square-sum bound remains open"
+    lineOne := "normalization main term"
+    lineTwo := "p_M log M tends to 1"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaMoebiusContinuumResidualEnergy_sub_middle_tendsto_zero
+      ``RiemannGaussian.pairedEtaMoebiusLogHarmonic_mul_log_tendsto_one
   }
 ]
 
@@ -1054,7 +1054,23 @@ run_cmd do
         "zero displacement are bounded by this unchanged band plus " ++
         "484/log(k+1), the quadratic-tail allowance, and the original " ++
         "refined transport allowance; their sum tends to zero. The " ++
-        "intervening arithmetic band remains uncontrolled. No " ++
+        "intervening arithmetic band remains uncontrolled. " ++
+        "The complete signed Euler quotient correction now tends to " ++
+        "zero. Finite Abel summation retains both original harmonic " ++
+        "Moebius endpoints and every weight increment. At the divided " ++
+        "cutoff M/Q, the low terms cost at most 2/Q and the entire " ++
+        "complementary correction is at most 4*epsilon*(1+log(Q)) " ++
+        "when the actual harmonic prefixes from floor(M/Q) through M " ++
+        "have absolute value at most epsilon. Their proved cancellation discharges the " ++
+        "whole correction, yielding p_M*log(M)->1. With the exact " ++
+        "error e_M=p_M*log(M)-1, each original interior cell satisfies " ++
+        "log(M)*r_M(L)=H_eta(L)-P(L)+e_M*H_eta(L), uniformly within " ++
+        "2*abs(e_M) of its prime discrepancy for 1<=L<=M. The full " ++
+        "finite square expansion retains its signed cross moment. " ++
+        "Its upper bound keeps 2*sum_(L<=R)(H_eta(L)-P(L))^2 and " ++
+        "8*R*e_M^2, all divided by log(M)^2, for R<=M. The qualitative " ++
+        "normalization limit does not absorb this growing dimension " ++
+        "cost or prove the required prime-discrepancy square bound. No " ++
         "Mellin norm comparison with the classical logarithmic approximation " ++
         "or sharper numerical zero strip is certified. " ++
         "The uniform cutoff-independent " ++

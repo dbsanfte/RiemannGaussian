@@ -5486,13 +5486,45 @@ deficit and actual zero displacement. For `k≥7`,
 is proved to tend to zero. Its terminal theorem is
 `pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_middle`.
 
-The middle sum remains uncontrolled. The normalization bound does not
-prove `p_M log M→1`, the complete prime variance still requires a bound,
+The middle sum remains uncontrolled. The sharper normalization main term
+is now proved below; the complete prime variance still requires a bound,
 and no full arithmetic decay or sharper numerical zero strip follows.
 These are partial arithmetic estimates on the original family, not a
 replacement for the active full-current objective. The
 [endgame assessment](eta-parity-endgame-assessment.md) records the full
 formulas and the classical provenance of the elementary harmonic bound.
+
+## Full Euler correction decay and the original normalization main term
+
+The actual finite harmonic Möbius tail has a checked signed Abel
+identity, including both original endpoints and every monotone-weight
+increment. `MoebiusHarmonicMonotoneTail` proves its absolute bound
+`2ε b(D+1)` for nonnegative decreasing weights when every original
+harmonic prefix from `D` through `M` has absolute value at most `ε`.
+
+`EtaMoebiusLogEulerCancellation` applies this to the two actual quotient
+weights in `C_M=Σ_(n≤M) μ(n)e(M,n)/n`. At `D=floor(M/Q)`, `Q≥2`, the
+low part costs at most `2/Q`, and the complete complementary sum costs
+at most `4ε(1+log Q)`. The repo's harmonic Möbius cancellation supplies
+the uniform prefix hypothesis as `M` grows for each fixed `Q`.
+The entire correction therefore tends to zero, with no exchange of a
+growing arithmetic limit and an uncontrolled infinite sum.
+
+The terminal normalization theorem
+`pairedEtaMoebiusLogHarmonic_mul_log_tendsto_one` in
+`EtaMoebiusNormalizationMainTerm` proves `p_M log M→1`. With the exact
+error `e_M=p_M log M−1` and `Δ(L)=H_eta(L)−P(L)`, every original cell
+`1≤L≤M` satisfies `log M*r_M(L)=Δ(L)+e_M H_eta(L)`. The error from
+the prime discrepancy is uniformly at most `2|e_M|`, and that allowance
+tends to zero over the entire interior.
+
+Before any estimate, the full square expansion retains
+`ΣΔ²+2e_M ΣH_eta Δ+e_M²ΣH_eta²`, all divided by `log² M`.
+The proved upper bound for a prefix of length `R≤M` is
+`(2Σ_(L≤R)Δ(L)²+8R e_M²)/log² M`. Its growing dimension cost remains;
+qualitative `e_M→0` does not make it vanish at `R=M`. Neither the full
+prime-discrepancy square estimate nor the full intervening arithmetic
+band has been bounded. The full weighted-current objective is unchanged.
 
 ## Next mathematical obligations
 
@@ -5537,7 +5569,10 @@ amplitude comparison now applies the existing sampler in its valid
 range and proves decay of every arithmetic cell beyond `M²`. The new
 joint prefix bound also controls the complete head through `floor(log M)`.
 The next task is a uniform signed estimate on `floor(log M)<L≤M²`,
-including its prime variance and normalization cost, respecting its
+including its prime variance and normalization cost. The normalization
+main term is now exactly `p_M log M→1`, with a uniform interior
+prime-discrepancy formula; its growing square cost still needs a rate.
+The estimate must respect its
 physical-window dependence and the two-cell inverse-logarithmic lower
 rate. The full balanced floor-cell norm is now equivalent to the original
 eta residual norm, so changing that representation alone cannot supply

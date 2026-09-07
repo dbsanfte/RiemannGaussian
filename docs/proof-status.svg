@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="313.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 822 modules · 17348 declarations · 14878 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 825 modules · 17401 declarations · 14929 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · milestones standard-only</text>
   <text class="section" x="20" y="64">CHECKED RESULTS, IDENTITIES, AND ATTRIBUTED BASELINE</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -89,9 +89,9 @@
   </g>
   <g class="proved bridge">
     <rect x="180" y="229" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.pairedEtaMoebiusContinuumResidualEnergy_sub_middle_tendsto_zero</title>
-    <text x="252" y="252">both arithmetic ends</text>
-    <text x="252" y="270">intervening band open  ✓</text>
+    <title>RiemannGaussian.pairedEtaMoebiusLogHarmonic_mul_log_tendsto_one</title>
+    <text x="252" y="252">normalization main term</text>
+    <text x="252" y="270">p_M log M tends to 1  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
