@@ -70,6 +70,7 @@ the objective.
 | Remove grid-refinement costs from the actual arithmetic candidate comparison | `pairedEtaMoebiusTrialRefinementError_le` in [EtaMoebiusTrialRefinement.lean](../RiemannGaussian/EtaMoebiusTrialRefinement.lean), and `pairedEtaDyadicMoebiusResidual_sub_refined_tendsto_zero`, `pairedEtaDyadicTranslateDeficit_le_refined_moebius` in [EtaMoebiusRefinedBudget.lean](../RiemannGaussian/EtaMoebiusRefinedBudget.lean). | With the stage arithmetic weights fixed, every positive integer refinement of the physical grid changes the full critical square approximation and complete residual energy by proved vanishing amounts. The canonical deficit and actual zero displacement are at most any refined arithmetic residual plus an explicit allowance tending to zero. Decay of that arithmetic residual remains open. |
 | Prove decay of part of the refined arithmetic residual itself | `pairedEtaMoebiusLogHarmonic_tendsto_zero` in [EtaMoebiusLogHarmonic.lean](../RiemannGaussian/EtaMoebiusLogHarmonic.lean), `pairedEtaMoebiusTrialHeadResidual_eq` in [EtaMoebiusTrialHead.lean](../RiemannGaussian/EtaMoebiusTrialHead.lean), and `pairedEtaDyadicMoebiusRefinedHeadResidual_tendsto_zero` in [EtaMoebiusRefinedHeadDecay.lean](../RiemannGaussian/EtaMoebiusRefinedHeadDecay.lean). | The actual residual square integral on the entire compact target interval tends to zero for every refinement schedule, using the proved signed harmonic Möbius cancellation. The full residual splits exactly into this vanishing term and the complete exterior integral over `t>log 2`. Decay of that exterior arithmetic integral, the full residual, and the canonical deficit remains open. |
 | Identify the whole refined exterior with signed arithmetic and a controlled infinite tail | `pairedEtaMoebiusTrialGridCombination_eq_arithmeticPrefix` in [EtaMoebiusGridArithmetic.lean](../RiemannGaussian/EtaMoebiusGridArithmetic.lean), the complete integrable split in [EtaMoebiusExteriorArithmetic.lean](../RiemannGaussian/EtaMoebiusExteriorArithmetic.lean), and `pairedEtaDyadicMoebiusRefinedExteriorEnergy_eq_arithmetic_add_tail` in [EtaMoebiusExteriorBudget.lean](../RiemannGaussian/EtaMoebiusExteriorBudget.lean). | The actual complete exterior equals a growing square integral of the exact signed odd/even primitive formula plus its genuine full tail. That tail is at most `(k+1)^2/4^k→0` for every refinement schedule. Every head, grid, coefficient, and tail cost in the original deficit and zero-displacement comparison is discharged. Decay of the growing signed arithmetic square integral remains open. |
+| Identify the full continuum arithmetic residual and discharge its complete grid-transport error | `pairedEtaMoebiusTrialGridCombination_tendsto_continuum` in [EtaMoebiusContinuumCombination.lean](../RiemannGaussian/EtaMoebiusContinuumCombination.lean), `pairedEtaMoebiusContinuumGridError_le` in [EtaMoebiusContinuumEnergy.lean](../RiemannGaussian/EtaMoebiusContinuumEnergy.lean), and `pairedEtaDyadicMoebiusRefinedResidual_sub_continuum_tendsto_zero` in [EtaMoebiusContinuumBudget.lean](../RiemannGaussian/EtaMoebiusContinuumBudget.lean). | The signed continuum formula is the actual grid limit at every time with its strict arithmetic endpoints. Its complete critical-square comparison is integrable and quantitatively controlled. For every refinement schedule, the full original residual differs from the full continuum residual by at most `2R_k→0`. The canonical deficit is bounded by that continuum residual plus the existing vanishing allowance. Decay of the arithmetic residual itself remains open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -5191,6 +5192,220 @@ The next mathematical work is to estimate the full signed arithmetic
 square and audit such a comparison before assuming that the linear
 logarithmic taper is the final sufficient coefficient law.
 
+## Checked complete critical-square transport to continuum arithmetic
+
+The preceding exterior formula retained physical-grid rounding inside
+every arithmetic endpoint. Direct divisor regrouping needs a formula
+whose arguments are the actual physical ratios. This slice identifies
+that precise arithmetic carrier and proves its complete critical-square
+comparison with the original grids.
+
+### Signed primitive and exact endpoint convention
+
+The rounded coordinate `y_d(v)` is strictly below `exp(v)` for every
+grid size and converges to it as `d→∞`. Consequently the actual sampled
+primitive selects strict arithmetic steps, including when `exp(v)` is
+an integer. Define
+
+\[
+ A^-_{M,w}(x)=x\sum_{n\le M}\frac{\mu(n)w(n)}n
+      \left(1_{n<x}-1_{1<x}\right).
+\]
+
+`pairedEtaMoebiusTrialPrimitive_tendsto_continuum` proves
+`A_(M,w)(y_d(v))→A^-_(M,w)(exp(v))` at every real `v`, for arbitrary
+real arithmetic weights. It keeps the entire harmonic correction and
+handles the unit and all other integer endpoints explicitly. In
+particular, this is not justified by assuming continuity of the original
+discontinuous primitive.
+
+The complete signed arithmetic carrier is
+
+\[
+ U^\infty_{M,w}(t)=\sum_{j\ge0}\left[
+ A^-_{M,w}(e^t/(2j+1))-A^-_{M,w}(e^t/(2j+2))\right].
+\]
+
+Only finitely many terms are nonzero at any given time. For
+`t≤log(2N+1)` the first `N` pairs give the full sum, including the
+cutoff endpoint. `pairedEtaMoebiusTrialGridCombination_tendsto_continuum`
+proves `U_(d,M,w)(t)→U^∞_(M,w)(t)` at every real time. The limit is
+the original complex-valued combination, with the signed real arithmetic
+embedded in `Complex`; no norm is taken during its identification.
+
+### Entire critical square and quantitative grid error
+
+The continuum combination is measurable as the actual everywhere limit.
+For `|w(n)|≤1` on the active arithmetic indices, both the grids and the
+continuum carrier have norm at most `2M` at every time. Thus their full
+critical square differences and target residuals have genuine
+integrability on `(0,∞)`. Dominated convergence uses an exponential
+majorant on that entire domain at each fixed `M`.
+
+`pairedEtaMoebiusTrialRefinementError_tendsto_continuum` passes the
+original full refinement integral to its continuum value. For `d>0`,
+`M≤d`, and `2M/d≤1/8`,
+`pairedEtaMoebiusContinuumGridError_le` gives
+
+\[
+ \int_0^\infty e^{-t}
+    |U_{d,M,w}(t)-U^\infty_{M,w}(t)|^2\,dt
+ \le32M^2\sqrt{2M/d}.
+\]
+
+The bound includes the entire infinite time range. At `d=2^k`,
+`M=k+1`, and the original logarithmic weights, it is at most the existing
+`G_k=32√(2(k+1)^5/2^k)→0`. The actual full square distance limit is
+`pairedEtaDyadicMoebiusContinuumGridError_tendsto_zero`.
+
+### Growing arithmetic cutoff without exchanging uncontrolled limits
+
+Write
+
+\[
+ E^\infty_k=\int_0^\infty e^{-t}
+   |h(t)-U^\infty_{k+1,w_{k+1}}(t)|^2\,dt.
+\]
+
+At fixed `k`, `pairedEtaDyadicMoebiusRefinedResidual_tendsto_continuum`
+proves that the existing full refined energy `E'_k(q)` tends to
+`E^∞_k` as `q→∞`. The existing uniform comparison with the original
+coarse-grid energy gives
+
+\[
+ |E^{\rm coarse}_k-E^\infty_k|\le R_k,
+ \qquad |E'_k(q)-E^\infty_k|\le2R_k,
+\]
+
+where the unchanged proved allowance is
+
+\[
+ R_k=\frac{16}{k+1}
+      +64\sqrt{\frac{2(k+1)^{11}}{2^k}}\longrightarrow0.
+\]
+
+This pointwise-in-`k`, uniform-in-`q` inequality is established before
+allowing `k` to grow. Consequently
+`pairedEtaDyadicMoebiusRefinedResidual_sub_continuum_tendsto_zero`
+proves `|E'_k(q_k)-E^∞_k|→0` for every refinement schedule. A
+fixed-arithmetic-cutoff dominated-convergence theorem alone would not
+justify that conclusion.
+
+Finally, with the unchanged `A_k=R_k+L_k→0`,
+
+\[
+ |2\Re\rho-1|W_\rho\le D_k\le E^\infty_k+A_k.
+\]
+
+The compiled terminal comparison is
+`pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_continuum`.
+The original canonical family, zero weight, target residual, and weighted
+current objective are unchanged.
+
+**Decay of `E^∞_k` remains open.** Direct divisor regrouping, the complete
+cell square-sum identity, and the exact interior prime-variance identity
+are now proved in the work described below. The next estimate
+must control their joint square on a growing range. A Mellin comparison
+with the classical logarithmic Nyman–Beurling approximation has not been
+proved for this carrier. The coefficient-family simplicity
+issue recorded above therefore remains a research lead, not a transported
+Lean consequence. No full arithmetic residual decay, canonical-deficit
+decay, RH proof, or new numerical zero strip follows from this slice.
+
+## Complete arithmetic squares and the exterior-parity steer
+
+The current arithmetic development identifies the entire continuum energy as
+`∑_(L≥1) r_M(L)^2`, with `HasSum` and square summability proved in
+[EtaMoebiusArithmeticEnergy.lean](../RiemannGaussian/EtaMoebiusArithmeticEnergy.lean).
+For the actual logarithmic coefficients and `1≤L≤M`,
+`pairedEtaMoebiusArithmeticCellResidual_log_eq_primeShell` gives
+
+\[
+ r_M(L)=p_M H_\eta(L)-\frac{P(L)}{\log M},\qquad
+ P(L)=\sum_{n\le L}\frac{\Lambda(n)}n-
+      \sum_{n\le L/2}\frac{\Lambda(n)}n.
+\]
+
+The exact complete energy, prime variance, fixed-cell decay, quartic tail
+bound, and the subsequent parity route are recorded in the
+[endgame assessment](eta-parity-endgame-assessment.md). In particular,
+`pairedEtaMoebiusContinuumResidualEnergy_eq_primeVariance_add_exterior`
+retains all three nonnegative terms: prime variance, actual normalization
+cost, and the entire exterior arithmetic square sum.
+
+The supplied exterior-leakage steer now has these compiled interfaces:
+
+- `pairedEtaMoebiusTrialGridCombination_eq_paritySum`: exact original-grid
+  identity at every positive physical coordinate, including endpoints.
+- `integral_pairedEtaMoebiusGrid_exterior_eq_parity`: the entire original
+  exterior is `1/(4d) ∫_(2/d,∞) F(z)^2/z^2 dz`.
+- `pairedEtaMoebiusGridParitySum_eq_primitive_differences`: summation by
+  parts with both original primitive endpoints proved zero.
+- `integral_pairedEtaMoebiusGridParitySum_sq_eq_covariance`: the exact
+  signed covariance on the requested short interval, including all pairs.
+- `integral_pairedEtaMoebiusGrid_exterior_le_near_add_allowance`: the
+  entire far part costs at most `M²/(2d)`.
+- `pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_nearParity`:
+  the unchanged original zero displacement and canonical deficit are
+  bounded by the near-parity energy plus a proved vanishing allowance.
+
+The required uniform estimate for that near energy is still unproved.
+The existing divisor sampling theorem has its explicit `4T²+L` cost and
+its quadratic-range corollary assumes `T²≤L`. No new theorem removes this
+cost or replaces the short-window kernel by a full-period gcd covariance.
+The actual two-cell lower bound also rules out treating the logarithmic
+family's exterior error as exponentially small in its dyadic grid stage;
+the precise compiled lower bound and the rate inference are distinguished
+in the assessment.
+
+The arithmetic-decay goal has not been completed or weakened.
+
+## Signed quotient amplitudes and the complete quadratic tail
+
+The exact alternating-harmonic remainder now has its positive amplitude
+`I_L=∫_0^1 x^L/(1+x) dx` and its original parity sign. The compiled
+`etaAlternatingHarmonicAmplitude_quotient_error_le` proves
+`|I_floor(L/n)/n-1/(2L)|≤n/(2L²)` for every positive `L,n`.
+The complete truncated divisor sum is regrouped without losing its
+Möbius signs or quotient endpoints in
+`pairedEtaMoebiusArithmeticCellResidual_eq_signed_quotient_amplitudes`.
+The logarithmic constants cancel exactly.
+
+For `M≥1,L≥2` and bounded original weights, the checked comparison is
+
+\[
+ \left|r_{M,w}(L)-\frac{p_{M,w}\eta(L)-S_{M,w}(L)}{2L}\right|
+ \le\frac{M^2}{L^2},\qquad
+ S_{M,w}(L)=\sum_{n\le M}\mu(n)w(n)\eta(\lfloor L/n\rfloor).
+\]
+
+`S` is the existing signed quotient-parity family. Its full square enters
+the sampler before any absolute bound on that family is taken. The
+original quadratic window condition is retained. With `R≥M²`,
+`pairedEtaMoebiusArithmeticSquareTail_le_sampling` proves
+
+\[
+ \sum_{L>R}r_{M,w}(L)^2\le
+ \frac{2[p_{M,w}^2+5C(1+\log M)^2M]}R+\frac{4M^4}{R^3},
+\]
+
+where `C=finiteCircleSamplingConstant`. Genuine square summability and
+the quotient/remainder equivalence justify regrouping every tail cell
+into consecutive blocks. A telescoping reciprocal majorant includes
+the whole infinite tail.
+
+For the exact logarithmic weights at `R=M²`, the bound becomes
+`(2p_M²+4)/M²+10C(1+log M)²/M`, whose decay follows from the already
+proved harmonic cancellation and logarithmic limits. Both the bound and
+the limit are checked in
+[EtaMoebiusArithmeticSamplingTail.lean](../RiemannGaussian/EtaMoebiusArithmeticSamplingTail.lean).
+Its terminal theorem
+`pairedEtaMoebiusContinuumResidualEnergy_sub_quadraticPrefix_tendsto_zero`
+states that the full continuum energy minus its unchanged signed prefix
+through `M²` tends to zero. The unresolved growing range is now through
+`M²`, including the interior prime variance and actual normalization
+cost. No full arithmetic decay or canonical-deficit decay follows yet.
+
 ## Next mathematical obligations
 
 The exact-pole prime input now excludes the larger explicit
@@ -5223,8 +5438,20 @@ provable complete bound. The identity is available for arbitrary real
 weights, retaining every physical rounding and signed endpoint. The
 classical linear logarithmic taper has the additional simplicity issue
 recorded above; that issue has not been transported to our carrier in
-Lean. Grid stability permits arbitrary integer refinements, but no
-continuous Möbius-multiplier identification or full residual decay is proved. The desired `D_k→0` remains open. Numerical
+Lean. The full signed continuum arithmetic carrier is now identified
+at every time and in the complete critical-square comparison. Every
+refined full residual differs from its continuum counterpart by at most
+`2R_k→0`, and `D_k≤E^∞_k+A_k` with `A_k→0`. Direct divisor cancellation
+now identifies its exact infinite square sum and interior prime variance.
+The parity rewrite additionally identifies the original near-exterior
+short-window covariance with every far cost vanishing. The exact quotient
+amplitude comparison now applies the existing sampler in its valid
+range and proves decay of every arithmetic cell beyond `M²`. The next
+task is a uniform signed estimate through that growing quadratic cutoff,
+including its prime variance and normalization cost, respecting its
+physical-window dependence and the two-cell inverse-logarithmic lower
+rate. A Mellin-multiplier comparison with the classical approximation
+and full residual decay are not proved. The desired `D_k→0` remains open. Numerical
 decreases and the definition of a minimizing coefficient law do not prove
 this estimate. The positive target normalization must also be bounded
 in the intended zero region if a numerical strip is to be certified.

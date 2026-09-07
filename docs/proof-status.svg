@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="313.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 794 modules · 16933 declarations · 14505 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 815 modules · 17207 declarations · 14748 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · milestones standard-only</text>
   <text class="section" x="20" y="64">CHECKED RESULTS, IDENTITIES, AND ATTRIBUTED BASELINE</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -89,9 +89,9 @@
   </g>
   <g class="proved bridge">
     <rect x="180" y="229" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.pairedEtaDyadicMoebiusRefinedExteriorEnergy_eq_arithmetic_add_tail</title>
-    <text x="252" y="252">exterior arithmetic</text>
-    <text x="252" y="270">exact + full tail  ✓</text>
+    <title>RiemannGaussian.pairedEtaMoebiusContinuumResidualEnergy_sub_quadraticPrefix_tendsto_zero</title>
+    <text x="252" y="252">quadratic arithmetic tail</text>
+    <text x="252" y="270">full tail tends to zero  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
@@ -102,5 +102,5 @@
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="300">The complete exterior has exact signed arithmetic and a vanishing full tail. The growing square estimate and uniform current bound remain open.</text>
+  <text class="frontier" x="20" y="300">The complete arithmetic tail beyond M² tends to zero. Decay through the growing quadratic cutoff and the original current bound remain open.</text>
 </svg>

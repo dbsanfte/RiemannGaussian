@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "The complete refined exterior energy is exactly a growing square integral of the original signed odd/even arithmetic primitive plus its genuine infinite tail, bounded by (k+1)^2/4^k for every refinement; decay of the growing arithmetic square integral remains open"
-    lineOne := "exterior arithmetic"
-    lineTwo := "exact + full tail"
+    label := "The complete continuum residual differs from its unchanged signed arithmetic prefix through the quadratic physical cutoff by a proved vanishing tail; the growing prefix decay required for the original current bound remains open"
+    lineOne := "quadratic arithmetic tail"
+    lineTwo := "full tail tends to zero"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaDyadicMoebiusRefinedExteriorEnergy_eq_arithmetic_add_tail
+      ``RiemannGaussian.pairedEtaMoebiusContinuumResidualEnergy_sub_quadraticPrefix_tendsto_zero
   }
 ]
 
@@ -228,8 +228,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">The complete exterior has exact signed arithmetic and a vanishing full tail. " ++
-      "The growing square estimate and uniform current bound remain open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">The complete arithmetic tail beyond M² tends to zero. " ++
+      "Decay through the growing quadratic cutoff and the original current bound remain open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -964,8 +964,67 @@ run_cmd do
         "growing signed arithmetic square integral plus an allowance tending " ++
         "to zero, including head, grid, coefficient, and infinite-tail costs. " ++
         "Decay of that growing arithmetic square integral is unproved. " ++
-        "The formula does not identify a continuous Moebius candidate, prove " ++
-        "full residual decay, or certify a sharper numerical zero strip. " ++
+        "The rounded formula alone does not prove full residual decay or " ++
+        "certify a sharper numerical zero strip. The continuum arithmetic " ++
+        "carrier is now explicitly identified from the original grids. Its " ++
+        "primitive is Aminus_(M,w)(x)=x*sum_(n<=M)mu(n)*w(n)/n*" ++
+        "(indicator(n<x)-indicator(1<x)). The complete continuum combination " ++
+        "is the locally finite signed odd/even sum of this primitive at " ++
+        "exp(t)/(2*j+1) and exp(t)/(2*j+2). The actual grids converge to it " ++
+        "at every time, including all arithmetic endpoints. Measurability, " ++
+        "full critical-square integrability for bounded weights, and an " ++
+        "integrable dominator on the entire positive axis are proved. " ++
+        "For d>0, M<=d, abs(w(n))<=1, and 2*M/d<=1/8, the actual full " ++
+        "grid-to-continuum square error is at most 32*M^2*sqrt(2*M/d). " ++
+        "At the original stages it tends to zero. The complete continuum " ++
+        "target residual Econt_k differs from every refined full residual " ++
+        "Eprime_k(q) by at most 2*R_k, where the existing R_k tends to zero. " ++
+        "pairedEtaDyadicMoebiusRefinedResidual_sub_continuum_tendsto_zero " ++
+        "proves this for every refinement schedule using the uniform bound " ++
+        "before the arithmetic cutoff grows. The unchanged canonical " ++
+        "deficit and original actual zero displacement are bounded by " ++
+        "Econt_k plus the existing proved vanishing allowance A_k. " ++
+        "The full continuum energy now equals a genuinely summable infinite " ++
+        "sum of squared signed divisor residuals r_M(L), including all L>M. " ++
+        "For logarithmic weights and 1<=L<=M, r_M(L)=p_M*H_eta(L)-P(L)/log(M), " ++
+        "where P(L)=sum_(n<=L)Lambda(n)/n-sum_(n<=L/2)Lambda(n)/n. " ++
+        "The exact interior energy is its nonnegative prime variance divided " ++
+        "by log(M)^2 plus the actual harmonic normalization cost. " ++
+        "Every fixed physical cell and every fixed finite prefix decays, " ++
+        "and the entire tail past (M+1)^4 is at most 4/(M+1)^2. " ++
+        "The growing square sum does not yet have a uniform decay estimate. " ++
+        "The exterior-leakage endgame steer is implemented as an exact " ++
+        "right-closed parity rewrite. F(z)=sum_j c_j*epsilon((j+1)*z) is " ++
+        "periodic with period two, and exact coefficient cancellation gives " ++
+        "U(log(d*z))=-F(z)/2 for every positive z. The actual full exterior " ++
+        "is (1/(4*d))*integral_(2/d,infinity)F(z)^2/z^2. " ++
+        "Summation by parts transfers the discrete derivatives onto the " ++
+        "parity waves with both original primitive endpoints zero. " ++
+        "The full signed short-window covariance form is proved with " ++
+        "genuine entry integrability; it is not replaced by a period average. " ++
+        "The entire far contribution z>2 is at most M^2/(2*d). " ++
+        "At d=2^k, M=k+1, the unchanged canonical deficit and original zero " ++
+        "displacement are bounded by the actual near-parity energy plus " ++
+        "ExteriorAllowance_k+TrialAllowance_k/2, which tends to zero. " ++
+        "The actual cells L=2 and L=3 have sum of squares at least " ++
+        "(log(3)-log(2))^2/(34*log(M)^2) for M>=3, constraining possible rates. " ++
+        "No uniform near-parity covariance decay or full arithmetic decay " ++
+        "is proved. The existing quadratic-range sampling bound retains " ++
+        "its 4*T^2+L cost and cannot be invoked as a uniform short-window " ++
+        "bound without additional mathematics. The exact alternating harmonic " ++
+        "remainder now equals eta(L)*I_L, with I_L=integral_0^1 x^L/(1+x). " ++
+        "Its quotient amplitude satisfies |I_floor(L/n)/n-1/(2*L)|<=n/(2*L^2). " ++
+        "The actual divisor residual is exactly regrouped into signed quotient " ++
+        "amplitudes, and its difference from the common-amplitude parity " ++
+        "family is at most M^2/L^2 for M>=1, L>=2. Applying the original " ++
+        "sampler only in its valid quadratic window range and regrouping the " ++
+        "genuinely summable full square sum bounds the total of all residual " ++
+        "squares past M^2 by " ++
+        "(2*p_M^2+4)/M^2+10*C*(1+log(M))^2/M, which tends to zero. " ++
+        "The full continuum energy minus its unchanged prefix through M^2 " ++
+        "therefore tends to zero; no decay of that growing prefix is proved. No " ++
+        "Mellin norm comparison with the classical logarithmic approximation " ++
+        "or sharper numerical zero strip is certified. " ++
         "The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
