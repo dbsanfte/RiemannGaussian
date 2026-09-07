@@ -27,57 +27,50 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Attack the surviving cutoff power with an exact growing family of eta translates. A regularized Gram inverse now defines every coefficient, and Lean bounds the full residual and original current by its explicit deficit. Next use structured arithmetic trial coefficients to prove that this deficit tends to zero, including the full coefficient and tail cost. The uniform weighted bound and RH remain open.
+Attack the surviving cutoff power through the exact eta Gram family's deficit. Balanced logarithmic Möbius candidates now have a proved vanishing coefficient penalty and entire infinite tail. The deficit is bounded by their actual finite residual plus `(k+1)^2/2^k`. The next target is decay of that residual on its growing interval. The uniform weighted bound and RH remain open.
 
 ## Latest Update
 
-Lean now defines **an exact growing coefficient family** and proves its
-complete error bound. For the actual eta indicator `chi` and target
-`h(t)=exp(t) 1_(0,log 2](t)`, stage `k` uses
+Lean now proves **vanishing coefficient cost and vanishing entire infinite
+tail** for a specified arithmetic candidate family. On the original
+`d_k=2^k` physical grid with eta cutoff `N_k=4d_k²`, the coefficients use
+Möbius cutoff `M_k=k+1`, weights `1-log(n)/log(M_k)`, and an exact harmonic
+correction. The unit cutoff is defined separately. The
+[signed primitive and coefficient identities](RiemannGaussian/EtaMoebiusTrialCoefficients.lean)
+retain both cancellation channels and prove
 
 \[
- d_k=2^k,\qquad N_k=4d_k^2,\qquad
- a_{k,j}=-\log\frac{j+1}{d_k},\quad 0\le j<d_k,
-\]
-\[
- \lambda_k=\frac{d_k+1}{2N_k+1},\qquad
- c_k=(G_k+\lambda_k I)^{-1}b_k,\qquad
- \mathcal D_k=1-b_k^Tc_k.
+ \sum_j c_{k,j}=0,\qquad \sum_j|c_{k,j}|\le2(k+1).
 \]
 
-Here `G_k` is the actual finite interval-overlap Gram and
-`b_(k,j)=max(0,log 2-a_(k,j))`. Lean proves the matrix is invertible and
-the coefficients minimize the regularized residual objective. The exact
-[comparison theorem](RiemannGaussian/EtaCanonicalTranslateBound.lean)
-lets any structured trial family bound this canonical family's deficit.
-No numerical optimizer is part of the definition or proof.
-
-[pairedEtaDyadicTranslate_residualEnergy_le](RiemannGaussian/EtaCanonicalTranslateFamily.lean)
-includes the entire infinite tail and proves
+With the original regularization `lambda_k=(d_k+1)/(2N_k+1)`,
+[pairedEtaDyadicMoebiusTrialPenalty_tendsto_zero](RiemannGaussian/EtaMoebiusTrialPenalty.lean)
+proves
 
 \[
- \int_0^\infty e^{-t}\left|h(t)-\sum_jc_{k,j}\chi(t-a_{k,j})\right|^2dt
- \le\mathcal D_k,\qquad 0\le\mathcal D_k\le1.
+ 0\le P_k:=\lambda_k\sum_j c_{k,j}^2
+ \le L_k:=\frac{(k+1)^2}{2^k}\longrightarrow0.
 \]
 
-The four-point stage has the checked bound **`D_2<1/4`**. Separately,
-the explicit signed coefficients `[-1/2,-1/2,1/2,1]` at physical scales
-`[1/4,1/2,3/4,1]` have **full residual energy below `1/5`**, proved by
-[exact rational Gram arithmetic and logarithm bounds](RiemannGaussian/EtaFourTranslateBound.lean).
+The [complete residual accounting](RiemannGaussian/EtaMoebiusTrialResidual.lean)
+also proves that the actual residual integral over
+`(log(2N_k+1),infinity)` is at most `P_k` and tends to zero. If `E_k`
+denotes the actual residual on the remaining growing interval, the
+canonical minimizing family's deficit satisfies
 
-For every actual zero `rho=beta+i gamma`, reflection gives
-`|2 beta-1| W_rho≤D_k`, where
-`W_rho=min(|H(rho)|²,|H(1-conj(rho))|²)>0` and
-`H(s)=(1-2^(1-s))/(s-1)` for `s≠1`. The resulting exponent bounds both
-original current branches, the literal Gaussian return, and the full
-signed inverse energy at every cutoff.
+\[
+ |2\Re\rho-1|W_\rho\le\mathcal D_k\le E_k+P_k\le E_k+L_k
+\]
 
-**Proving `D_k→0` remains open.** Numerical comparisons help choose
-structured trial laws, but establish no decay theorem. The target weight
-still depends on the actual zero coordinates; this slice certifies no
-sharper numerical zero strip. The
-[uniform weighted goal](docs/eta-current-reconstruction-plan.md) and RH
-remain open.
+for every actual nontrivial zero, with the existing positive weight
+`W_rho`. This follows from the proved comparison with arbitrary candidates.
+
+**Decay of `E_k`, and hence the desired `D_k→0`, remains unproved.**
+The new limits discharge the candidate's coefficient and tail cost;
+they do not establish convergence of its full residual or a sharper
+numerical zero strip. The
+[remaining arithmetic obligation](docs/eta-current-reconstruction-plan.md)
+and the uniform weighted goal remain open.
 
 ## Notable Formalisations
 
@@ -96,6 +89,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Finite eta phase bounds on zero coordinates and current powers** | An exact continuous exponential projection and a finite paired eta prefix with complete tail error give `delta_N ≤ Re(rho) ≤ 1−delta_N`. The resulting exponent bounds both original current branches, the Gaussian return, and the full inverse energy at every cutoff. Its proved `1/11` floor limits this particular upper-bound formula. | [norm_pairedEtaPhaseBoundaryValue_le_zero_ratio](RiemannGaussian/EtaPhaseProjectionBound.lean), [nontrivialZetaZero_mem_etaFinitePhase_strip](RiemannGaussian/EtaFinitePhaseMargin.lean), [pairedEtaCurrentFullInverseEnergy_firstMoment_le_finitePhase](RiemannGaussian/EtaCurrentFinitePhasePower.lean) |
 | **Finite eta translate Grams and complete current-power budgets** | Nonnegative real translates annihilate every actual eta zero. A compact target sharing the elementary eta factor remains nonzero at actual zeta zeros. Its full residual is bounded by an exact finite overlap Gram plus the complete coefficient-dependent tail; reflection transports this to both current branches, the Gaussian return, and the full inverse energy. A coefficient family making the budget vanish remains open. | [pairedEtaProjectionHeadTransform_ne_zero](RiemannGaussian/EtaProjectionHeadTarget.lean), [pairedEtaTranslatedResidualEnergyCutoff_eq_finiteForm](RiemannGaussian/EtaTranslatedFiniteResidual.lean), [pairedEtaCurrentFullInverseEnergy_firstMoment_le_translatedProjection](RiemannGaussian/EtaCurrentTranslatedProjectionPower.lean) |
 | **Exact eta coefficient laws and a complete four-translate bound** | A regularized inverse of the actual Gram defines a growing dyadic coefficient family. Its exact minimizing identity bounds the complete residual and original current; its four-point deficit is below `1/4`. Four explicit rational coefficients separately give full residual energy below `1/5`. Decay of the family deficit remains open. | [pairedEtaCanonicalTranslateBudget_le_trial](RiemannGaussian/EtaCanonicalTranslateBound.lean), [pairedEtaDyadicTranslateDeficit_two_lt_one_quarter](RiemannGaussian/EtaCanonicalTranslateFamily.lean), [pairedEtaFourProjection_residualEnergy_lt_one_fifth](RiemannGaussian/EtaFourTranslateBound.lean), [pairedEtaLeadingCurrent_firstMoment_le_dyadicTranslate](RiemannGaussian/EtaCanonicalTranslateFamily.lean) |
+| **Exact Möbius candidates with vanishing coefficient cost and infinite tail** | Balanced logarithmic Möbius coefficients have zero signed total mass and absolute sum at most `2(k+1)`. Their full regularization penalty is at most `(k+1)^2/2^k` and tends to zero, as does the actual entire omitted residual integral. The canonical deficit is bounded by the growing finite residual plus this vanishing allowance; decay of that finite residual remains open. | [pairedEtaMoebiusTrialPrimitive_eq_harmonic_difference](RiemannGaussian/EtaMoebiusTrialCoefficients.lean), [pairedEtaDyadicMoebiusTrialPenalty_tendsto_zero](RiemannGaussian/EtaMoebiusTrialPenalty.lean), [pairedEtaDyadicMoebiusTrialResidualTail_tendsto_zero](RiemannGaussian/EtaMoebiusTrialResidual.lean), [pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_cutoff_add_allowance](RiemannGaussian/EtaMoebiusTrialResidual.lean) |
 | **Explicit zero-free strip from signed prime positivity** | The exact pole geometry and complete signed local zero sum give a multiplicity-sensitive margin more than 31 times the preceding signed margin. Every actual zero of absolute ordinate at least one stays at least `1/(56458 log(abs(gamma)+22))` from either edge. | [multiplicity_le_quadratic_signed_zero_gap](RiemannGaussian/ZetaSignedExactPole.lean), [nontrivialZetaZero_mem_signedQuadratic_strip](RiemannGaussian/ZetaSignedQuadraticMargin.lean), [nontrivialZetaZero_mem_quadratic_reciprocal_log_strip](RiemannGaussian/ZetaSignedQuadraticComparison.lean) |
 | **Simultaneous edge-window simplicity and separation** | At absolute center height at least one, a rectangle of width and ordinate half-width `1/(6000 log(abs(y)+22))` adjoining either strip edge has total analytic multiplicity at most one. The common complex pole sum and its full complement remain available. | [sum_multiplicity_le_one_in_signedEdgeWindow](RiemannGaussian/ZetaSignedWindowMultiplicity.lean), [sum_multiplicity_le_one_in_signedLeftEdgeWindow](RiemannGaussian/ZetaSignedZeroSeparation.lean), [signedEdgeWindowWidth_lt_im_sub_of_ne](RiemannGaussian/ZetaSignedZeroSeparation.lean) |
 | **Finite Hardy-space geometry** | Orthogonality in genuine boundary `L²`, including repeated roots, and a basis-independent determinant formula for the residual Gram operator. | [finiteModelBoundaryLp_inner_residualInner_negative_eq_zero](RiemannGaussian/FiniteHardyOrthogonality.lean#L260), [finiteHardyCrossAngleComplementGramOperator_det_eq_basisResidual_ratio](RiemannGaussian/FiniteHardyMetricDeterminant.lean#L294) |

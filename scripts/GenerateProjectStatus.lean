@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "An exact growing eta coefficient family is defined by the actual regularized Gram inverse; its full residual deficit bounds both original current branches, and structured trial coefficients bound the deficit; convergence to zero remains open"
-    lineOne := "exact eta family"
-    lineTwo := "full residual bound"
+    label := "The actual entire infinite residual tail of the exact balanced logarithmic Möbius candidates tends to zero; their coefficient penalty also vanishes, while decay of the growing finite residual and canonical deficit remains open"
+    lineOne := "Möbius trial tail"
+    lineTwo := "tends to zero"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.pairedEtaLeadingCurrent_firstMoment_le_dyadicTranslate
+      ``RiemannGaussian.pairedEtaDyadicMoebiusTrialResidualTail_tendsto_zero
   }
 ]
 
@@ -228,8 +228,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">Exact eta coefficients and a full four-translate bound are checked. " ++
-      "Family error decay and the uniform current bound remain open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">The exact Möbius trial penalty and entire infinite tail tend to zero. " ++
+      "Growing finite residual decay and the uniform current bound remain open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -890,8 +890,21 @@ run_cmd do
         "D_k to zero is not proved. W_rho depends on actual zero " ++
         "coordinates, so this is not yet an ordinate-only numerical " ++
         "zero-strip improvement or removal of the cutoff power. The " ++
-        "next estimate must bound a structured trial family with its " ++
-        "full residual and coefficient cost. The uniform cutoff-independent " ++
+        "exact balanced logarithmic Moebius candidates now use arithmetic " ++
+        "cutoff M_k=k+1 on the same dyadic grid. Their coefficients are " ++
+        "finite differences of a signed primitive whose harmonic endpoint " ++
+        "correction is retained exactly. Lean proves zero total coefficient " ++
+        "mass and sum_j abs(c_(k,j))<=2*(k+1). The full diagonal cost " ++
+        "P_k=lambda_k*sum_j c_(k,j)^2 is at most L_k=(k+1)^2/2^k, and " ++
+        "pairedEtaDyadicMoebiusTrialPenalty_tendsto_zero proves P_k->0. " ++
+        "The actual entire infinite residual integral beyond log(2*N_k+1) " ++
+        "is at most P_k; pairedEtaDyadicMoebiusTrialResidualTail_tendsto_zero " ++
+        "proves that actual tail tends to zero. The unchanged comparison " ++
+        "gives D_k<=E_k+P_k<=E_k+L_k, where E_k is the actual residual " ++
+        "on the growing finite interval. The original zero displacement " ++
+        "satisfies abs(2*beta-1)*W_rho<=E_k+L_k. Decay of E_k remains " ++
+        "unproved; the penalty and tail limits do not establish D_k->0. " ++
+        "The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

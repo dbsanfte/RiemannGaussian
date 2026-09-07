@@ -66,6 +66,7 @@ the objective.
 | Extract an unconditional cancellation rate from the actual Gaussian contour | `moebiusDirichletMass_contour_le_log` in [ZetaMoebiusMassBound.lean](../RiemannGaussian/ZetaMoebiusMassBound.lean), `gaussianMoebiusSum_one_le_logSquare_envelope` in [GaussianMoebiusScaleEnvelope.lean](../RiemannGaussian/GaussianMoebiusScaleEnvelope.lean), and `gaussianMoebiusSum_one_le_reciprocal_log_gain_eventually` with `gaussianMoebiusSum_log_one_div_tendsto_zero` in [GaussianMoebiusCancellation.lean](../RiemannGaussian/GaussianMoebiusCancellation.lean). | At unit heat time and height `T=a`, the actual sum is eventually bounded by `exp(a-a/(1000000 log(a+22)))`, and `S_1(log X)/X→0`. All constants and scale conditions are discharged, with an existential threshold. An estimate of sufficient strength for the original complex weights, physical cutoffs, and completed reflected current remains open. |
 | Bound the current power by complete finite eta translate arithmetic | `pairedEtaTranslatedResidualEnergyCutoff_eq_finiteForm` and `pairedEtaTranslatedResidualEnergy_le_finiteBudget` in [EtaTranslatedFiniteResidual.lean](../RiemannGaussian/EtaTranslatedFiniteResidual.lean), followed by `pairedEtaLeadingCurrent_firstMoment_le_translatedProjection` in [EtaCurrentTranslatedProjectionPower.lean](../RiemannGaussian/EtaCurrentTranslatedProjectionPower.lean). | The compact target shares the elementary eta factor and stays nonzero at actual zeta zeros. Every finite nonnegative translate family gives a complete Gram-plus-tail budget for actual horizontal displacement and both current branches. The Gaussian return and full inverse energy inherit the same exponent. A family with vanishing full budget and an improved numerical zero strip remain open. |
 | Define an exact growing coefficient law and certify complete finite bounds | `pairedEtaCanonicalTranslateBudget_le_trial` in [EtaCanonicalTranslateBound.lean](../RiemannGaussian/EtaCanonicalTranslateBound.lean), `pairedEtaFourProjection_residualEnergy_lt_one_fifth` in [EtaFourTranslateBound.lean](../RiemannGaussian/EtaFourTranslateBound.lean), and `pairedEtaLeadingCurrent_firstMoment_le_dyadicTranslate` in [EtaCanonicalTranslateFamily.lean](../RiemannGaussian/EtaCanonicalTranslateFamily.lean). | The actual regularized Gram inverse specifies a dyadic family, with complete residual at most its exact deficit. Structured trial coefficients bound that deficit. Four explicit rational coefficients have complete residual below `1/5`; comparison gives canonical four-point deficit below `1/4`. Decay of the growing family deficit remains open. |
+| Discharge the full coefficient cost and actual infinite tail for a specified arithmetic candidate | `pairedEtaMoebiusTrialCoefficient_sum_abs_le` in [EtaMoebiusTrialCoefficients.lean](../RiemannGaussian/EtaMoebiusTrialCoefficients.lean), `pairedEtaDyadicMoebiusTrialPenalty_tendsto_zero` in [EtaMoebiusTrialPenalty.lean](../RiemannGaussian/EtaMoebiusTrialPenalty.lean), and `pairedEtaDyadicMoebiusTrialResidualTail_tendsto_zero` in [EtaMoebiusTrialResidual.lean](../RiemannGaussian/EtaMoebiusTrialResidual.lean). | The exact balanced logarithmic Möbius law has zero signed coefficient mass, absolute sum at most `2(k+1)`, and full penalty at most `(k+1)^2/2^k→0`. The actual entire omitted residual integral also tends to zero. The canonical deficit is at most the growing finite residual plus that vanishing allowance. Decay of the finite residual and canonical deficit remains open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -4529,6 +4530,180 @@ existing harmonic Möbius cancellation does not itself provide the required
 power-strength bound. No novelty priority claim is made for the general
 regularized projection method.
 
+## Checked balanced Möbius candidates: vanishing penalty and actual infinite tail
+
+This slice defines an arithmetic coefficient family on the unchanged
+dyadic eta grids and discharges its complete coefficient and tail costs.
+It does **not** prove that the canonical family's deficit tends to zero.
+The new open term is an explicitly defined actual growing finite residual,
+rather than an omitted coefficient or infinite-tail assumption.
+
+**Exact signed atoms and harmonic correction.** For integers `n≥1`, set
+
+\[
+ u_n(x)=\mathbf1_{[n,\infty)}(x),\qquad
+ v_n(x)=\mathbf1_{[1,\infty)}(x)\frac{\min(x,n)}n,
+ \qquad \psi_n(x)=u_n(x)-v_n(x).
+\]
+
+[EtaMoebiusTrialAtoms.lean](../RiemannGaussian/EtaMoebiusTrialAtoms.lean)
+retains these two monotone channels separately, proves both are between
+zero and one, and bounds the entire sampled variation of their signed
+difference by two. The sampling coordinates are the original
+`x_j=d/(j+1)`. No arithmetic cancellation hypothesis enters that bound.
+
+For weights `w(n)`, define
+
+\[
+ A_{M,w}(x)=\sum_{1\le n\le M}\mu(n)w(n)\psi_n(x),\qquad
+ c_{d,M,w,j}=A_{M,w}\!\left(\frac d{j+1}\right)
+             -A_{M,w}\!\left(\frac d{j+2}\right),\quad 0\le j<d.
+\]
+
+The exact signed harmonic identity is
+
+\[
+ A_{M,w}(x)=x\left(
+   \sum_{\substack{1\le n\le M\\n\le x}}\frac{\mu(n)w(n)}n
+   -\sum_{1\le n\le M}\frac{\mu(n)w(n)}n\right)\quad(x\ge1).
+\]
+
+This is
+[pairedEtaMoebiusTrialPrimitive_eq_harmonic_difference](../RiemannGaussian/EtaMoebiusTrialCoefficients.lean).
+The complete endpoint correction is part of the definition. The primitive
+vanishes below one and at or beyond `M`, so `M≤d` gives exact telescoping
+`sum_j c_(d,M,w,j)=0`. The coefficient remains a signed sum of the two
+atom-channel differences. Only its downstream bound takes absolute values:
+
+\[
+ |w(n)|\le1\ (1\le n\le M)quad\Longrightarrow\quad
+ \sum_j|c_{d,M,w,j}|\le2M,\qquad \sum_jc_{d,M,w,j}^2\le4M^2.
+\]
+
+These are
+`pairedEtaMoebiusTrialCoefficient_sum_abs_le` and
+`pairedEtaMoebiusTrialCoefficient_sum_sq_le`. Both bounds are independent
+of the grid dimension. The finite primitive motivates an arithmetic
+approximation to the desired transform multiplier; this slice does not
+assert an exact identity between the gridded translate polynomial and a
+continuous inverse-transform formula.
+
+**The specified stage law.** Keep
+`d_k=2^k`, `N_k=4d_k²`, and `a_(k,j)=-log((j+1)/d_k)`. Choose
+
+\[
+ M_k=k+1,\qquad
+ w_M(n)=
+ \begin{cases}1-\log(n)/\log(M),&M>1,\\0,&M\le1,\end{cases}
+ \qquad c_{k,j}=c_{d_k,M_k,w_{M_k},j}.
+\]
+
+Lean proves `M_k≤d_k` and `0≤w_M(n)≤1` on every active arithmetic
+index, with the singular unit cutoff handled explicitly. Every coefficient
+is thus mathematically defined; numerical optimization is not used to
+choose it. The bounds above give zero total mass and
+`sum_j abs(c_(k,j))≤2(k+1)` at every stage.
+
+**The complete coefficient cost tends to zero.** Use the unchanged
+regularization `lambda_k=(d_k+1)/(2N_k+1)` and define
+
+\[
+ P_k=\lambda_k\sum_jc_{k,j}^2,\qquad L_k=\frac{(k+1)^2}{2^k}.
+\]
+
+[EtaMoebiusTrialPenalty.lean](../RiemannGaussian/EtaMoebiusTrialPenalty.lean)
+proves `lambda_k≤1/(4d_k)`, and hence
+
+\[
+ 0\le P_k\le L_k\longrightarrow0.
+\]
+
+Both limits are compiled theorems:
+`pairedEtaDyadicMoebiusTrialAllowance_tendsto_zero` and
+`pairedEtaDyadicMoebiusTrialPenalty_tendsto_zero`. The result is
+unconditional for this exact growing family. It does not use a bound for
+its approximation residual.
+
+**Actual finite and infinite residuals.** Let `T_k=log(2N_k+1)` and retain
+the original actual indicator `chi` and compact target `h`. Write
+
+\[
+ R_k(t)=h(t)-\sum_jc_{k,j}\chi(t-a_{k,j}),\quad
+ E_k=\int_{(0,T_k]}e^{-t}|R_k(t)|^2\,dt,\quad
+ \tau_k=\int_{(T_k,\infty)}e^{-t}|R_k(t)|^2\,dt.
+\]
+
+[EtaMoebiusTrialResidual.lean](../RiemannGaussian/EtaMoebiusTrialResidual.lean)
+defines these actual integrals and proves the full accounting:
+
+\[
+ \mathcal Q_k(c_k)=E_k+P_k,\qquad
+ \mathcal D_k\le E_k+P_k\le E_k+L_k,
+\]
+\[
+ 0\le\tau_k\le
+ \frac{(\sum_j|c_{k,j}|)^2}{2N_k+1}\le P_k\longrightarrow0,
+ \qquad E(c_k)=E_k+\tau_k\le E_k+L_k.
+\]
+
+The terminal actual-tail theorem is
+`pairedEtaDyadicMoebiusTrialResidualTail_tendsto_zero`. The original
+canonical comparison remains unchanged, and the original actual zero
+coordinates inherit
+
+\[
+ |2\Re\rho-1|W_\rho\le E_k+L_k
+\]
+
+through
+`pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_cutoff_add_allowance`.
+The full residual decomposition and the signed primitive identities remain
+available alongside these inequalities.
+
+**How the candidate is assessed.** A successful candidate would have a
+proved bound `E_k+P_k≤f(k)` with `f(k)→0`; the exact comparison would then
+give `D_k→0`. The present slice proves only the `P_k` and actual `tau_k`
+limits. The remaining `E_k→0` statement concerns a growing interval.
+Pointwise or fixed-window approximation does not justify moving that limit
+through the full weighted square integral. In particular, existing harmonic
+Möbius cancellation is not a proved dominating square-integral estimate.
+
+The numerical explorer now evaluates exactly this stage law, retains the
+finite residual and full coefficient costs separately, and compares with
+the same-stage canonical minimizer. The following values are exploratory
+floating-point evaluations, not Lean-certified bounds:
+
+| Stage `k` | Dimension `d_k` | Arithmetic cutoff `M_k` | Finite residual `E_k` | Penalty `P_k` | Score `E_k+P_k` | Canonical deficit `D_k` |
+| --- | --- | --- | --- | --- | --- | --- |
+| 2 | 4 | 3 | 0.73077777 | 0.00381302 | 0.73459079 | 0.20302740 |
+| 4 | 16 | 5 | 0.43058143 | 0.00399969 | 0.43458112 | 0.08321057 |
+| 6 | 64 | 7 | 0.31266283 | 0.00166384 | 0.31432667 | 0.05432276 |
+| 7 | 128 | 8 | 0.27642524 | 0.00097687 | 0.27740211 | 0.04749796 |
+
+Reproduce with the same NumPy and SciPy versions used above:
+
+```bash
+python scripts/search_eta_translate_coefficients.py --dimensions 4 16 64 128 \
+  --solvers moebius_log --output /tmp/eta-log-moebius.json
+```
+
+The output also evaluates the exact comparison identity numerically:
+`Q(c)-D=(c-c_*)^T A(c-c_*)`. The observed error in this identity is below
+`4e-16` in the listed cases. This is a consistency check, not a proof of
+decay. These sizes suggest that residual error dominates the penalty and
+that the specified logarithmic law leaves substantial room compared with
+the minimizer. They prove neither convergence nor a positive limiting
+floor for this candidate. Changing the taper or arithmetic cutoff must be
+assessed with the full objective and must retain proved coefficient costs.
+
+All four modules and the root pass strict direct elaboration and the full
+warning-as-error build. The verbose root declaration audit and eighteen
+terminal axiom checks use only `propext`, `Classical.choice`, and
+`Quot.sound`. No numerical optimizer or floating-point constant enters a
+Lean theorem. Mathematical priority for this combined candidate construction
+is not claimed. This slice proves no sharper numerical zero strip and does
+not close the original uniform weighted current bound.
+
 ## Next mathematical obligations
 
 The exact-pole prime input now excludes the larger explicit
@@ -4543,12 +4718,13 @@ projection has a proved `1/11` exponent floor. The exact dyadic translate
 family now supplies a different bound through its canonical deficit
 `D_k=1-b_k^T (G_k+lambda_k I)^(-1)b_k`. Its definition, complete tail
 control, minimizing identity, and four-point `D_2<1/4` bound are checked.
-The immediate task is to prove `D_k→0`, or an explicit useful bound over
-a prescribed range, using structured trial coefficients and the checked
-comparison theorem. This requires bounding the trial's finite residual
-and its full `lambda_k sum_j c_(k,j)^2` cost together. Numerical decreases
-and the definition of a minimizing coefficient law do not prove this
-estimate. The positive target normalization must also be bounded
+The exact balanced logarithmic Möbius candidates now discharge their
+complete penalty and actual infinite-tail decay, with
+`D_k≤E_k+(k+1)^2/2^k`. The immediate task is to prove decay of their actual
+growing finite residual `E_k`, or find a better structured candidate with
+a provable complete bound. The desired `D_k→0` remains open. Numerical
+decreases and the definition of a minimizing coefficient law do not prove
+this estimate. The positive target normalization must also be bounded
 in the intended zero region if a numerical strip is to be certified.
 Positivity of a finite Gram or convergence of each separate entry does
 not supply that control. The remaining target is to rule out the interior off-critical

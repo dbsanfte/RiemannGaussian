@@ -12,6 +12,12 @@ Requirements: numpy and scipy (tested with 2.2.6 and 1.15.3).
 Example:
   python scripts/search_eta_translate_coefficients.py --dimensions 4 16 64 \
       --solvers canonical free --output /tmp/eta-coefficients.json
+The moebius_log candidate implements EtaMoebiusTrialPenalty.lean on
+d=2^k physical grids, with arithmetic cutoff M=k+1 and a balanced
+logarithmic taper. Use --solvers canonical moebius_log to compare it
+with the minimizer. The default eta cutoff agrees with the Lean schedule
+for d>=4; use --cutoff 4 or 16 for its d=1 or d=2 stages.
+
 The output includes coefficients, the residual, the full tail allowance,
 and numerical optimization diagnostics. It certifies no zeta zero region.
 """
@@ -59,6 +65,31 @@ def finite_gram(scales, cutoff):
     return gram
 
 
+def moebius_log_coefficients(dimension):
+    """Numerical evaluation of the exact balanced logarithmic candidate law."""
+    if dimension < 1 or dimension & (dimension - 1):
+        raise ValueError("The logarithmic candidate requires a power-of-two dimension.")
+    stage = dimension.bit_length() - 1
+    arithmetic_cutoff = stage + 1
+    mu = np.ones(arithmetic_cutoff + 1, dtype=np.int64)
+    mu[0] = 0
+    prime = np.ones(arithmetic_cutoff + 1, dtype=bool)
+    for p in range(2, arithmetic_cutoff + 1):
+        if prime[p]:
+            mu[p::p] *= -1
+            mu[p * p::p * p] = 0
+            prime[p * p::p] = False
+    n = np.arange(1, arithmetic_cutoff + 1)
+    weights = (1 - np.log(n) / np.log(arithmetic_cutoff)
+               if arithmetic_cutoff > 1 else np.zeros(1))
+    harmonic = np.r_[0.0, np.cumsum(mu[1:] * weights / n)]
+    denominators = np.arange(1, dimension + 2)
+    x = dimension / denominators
+    prefix_indices = np.minimum(arithmetic_cutoff, dimension // denominators)
+    values = np.where(x >= 1, x * (harmonic[prefix_indices] - harmonic[-1]), 0.0)
+    return values[:-1] - values[1:]
+
+
 def search(scales, cutoff, label, solver="free"):
     scales = np.asarray(scales, dtype=float)
     if cutoff < 1 or len(scales) < 1 or np.any(scales <= 0) or np.any(scales > 1):
@@ -68,6 +99,40 @@ def search(scales, cutoff, label, solver="free"):
     pairing = np.maximum(0.0, np.log(2 * scales))
     tail_factor = 1.0 / (2 * cutoff + 1)
     dimension = len(scales)
+
+    if solver == "moebius_log":
+        if label != "uniform_scale" or not np.array_equal(scales, np.arange(1, dimension + 1) / dimension):
+            raise ValueError("The logarithmic candidate requires the uniform physical scale grid.")
+        coefficients = moebius_log_coefficients(dimension)
+        stage = dimension.bit_length() - 1
+        diagonal = (dimension + 1) * tail_factor
+        regularized = gram + diagonal * np.eye(dimension)
+        canonical = np.linalg.solve(regularized, pairing)
+        residual = float(1 + coefficients @ (gram @ coefficients) - 2 * pairing @ coefficients)
+        coefficient_norm = float(np.abs(coefficients).sum())
+        tail = float(tail_factor * coefficient_norm ** 2)
+        penalty = float(diagonal * (coefficients @ coefficients))
+        score = residual + penalty
+        deficit = float(1 - pairing @ canonical)
+        difference = coefficients - canonical
+        gap = float(difference @ (regularized @ difference))
+        return {
+            "grid": label, "solver": solver, "dimension": dimension, "cutoff": cutoff,
+            "stage": stage, "arithmetic_cutoff": stage + 1,
+            "matches_lean_cutoff": cutoff == 4 * dimension ** 2,
+            "budget": residual + tail, "finite_residual": residual,
+            "tail_allowance": tail, "coefficient_l1": coefficient_norm,
+            "coefficient_sum": float(coefficients.sum()), "regularization": diagonal,
+            "coefficient_square_allowance": penalty, "ridge_objective": score,
+            "proved_stage_allowance": ((stage + 1) ** 2 / dimension
+                                       if cutoff == 4 * dimension ** 2 else None),
+            "canonical_deficit": deficit, "canonical_objective_gap": gap,
+            "comparison_identity_error": abs(score - deficit - gap),
+            "ridge_gradient_max": float(np.max(np.abs(2 * (regularized @ coefficients - pairing)))),
+            "active_coefficients": int((abs(coefficients) > 1e-7).sum()),
+            "seconds": time.monotonic() - started,
+            "scales": scales.tolist(), "coefficients": coefficients.tolist(),
+        }
 
     def objective(split):
         # c=u-v, u,v>=0. The penalty makes shared positive mass costly.
@@ -130,12 +195,16 @@ def main():
     parser.add_argument("--cutoff", type=int, help="Use this common N; default is max(64,4*d*d).")
     parser.add_argument("--grids", nargs="+", choices=["uniform_scale", "uniform_log", "reciprocal"],
                         default=["uniform_scale"])
-    parser.add_argument("--solvers", nargs="+", choices=["canonical", "free"], default=["canonical", "free"],
-                        help="Canonical uses (G+(d+1)/(2N+1)*I)^(-1)b, as defined in Lean.")
+    parser.add_argument("--solvers", nargs="+", choices=["canonical", "free", "moebius_log"],
+                        default=["canonical", "free"],
+                        help="Canonical uses the Lean Gram inverse; moebius_log uses the balanced arithmetic law.")
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     if any(d < 1 for d in args.dimensions) or (args.cutoff is not None and args.cutoff < 1):
         parser.error("Dimensions and cutoff must be positive.")
+    if "moebius_log" in args.solvers:
+        if args.grids != ["uniform_scale"] or any(d & (d - 1) for d in args.dimensions):
+            parser.error("moebius_log requires uniform_scale and power-of-two dimensions.")
     report = {"status": "exploratory floating-point output; no Lean proof or certified zero bound",
               "numpy_version": np.__version__, "scipy_version": scipy.__version__, "results": []}
     for dimension in args.dimensions:

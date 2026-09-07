@@ -758,3 +758,7 @@ import RiemannGaussian.EtaFourTranslateBound
 import RiemannGaussian.EtaCanonicalTranslateMatrix
 import RiemannGaussian.EtaCanonicalTranslateBound
 import RiemannGaussian.EtaCanonicalTranslateFamily
+import RiemannGaussian.EtaMoebiusTrialAtoms
+import RiemannGaussian.EtaMoebiusTrialCoefficients
+import RiemannGaussian.EtaMoebiusTrialPenalty
+import RiemannGaussian.EtaMoebiusTrialResidual
