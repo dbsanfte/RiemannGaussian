@@ -77,6 +77,14 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.nontrivialZetaZero_mem_signedQuadratic_strip
   },
   {
+    label := "Explicit edge windows contain at most one actual zero counting multiplicity"
+    lineOne := "edge zero windows"
+    lineTwo := "multiplicity <= 1"
+    role := "unconditional"
+    theoremName :=
+      ``RiemannGaussian.sum_multiplicity_le_one_in_signedEdgeWindow
+  },
+  {
     label := "External Montgomery--Taylor simple-zero benchmark"
     lineOne := "external simple zeros"
     lineTwo := "HD(1) > 2/3"
@@ -102,7 +110,8 @@ private def milestonePoints : Array Point := #[
   { x := 20, y := 150 },
   { x := 180, y := 150 },
   { x := 340, y := 150 },
-  { x := 500, y := 150 }
+  { x := 500, y := 150 },
+  { x := 20, y := 229 }
 ]
 
 private def projectPrefix : Name := `RiemannGaussian
@@ -155,7 +164,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     (fun output milestonePoint =>
       output ++ completedNodeSvg milestonePoint.1 milestonePoint.2) ""
   "<svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" " ++
-      "aria-labelledby=\"title description\" viewBox=\"0 0 1000 235\">\n" ++
+      "aria-labelledby=\"title description\" viewBox=\"0 0 1000 315\">\n" ++
     "  <title id=\"title\">Lean-verified RiemannGaussian theorem inventory</title>\n" ++
     "  <desc id=\"description\">Checked project results, identities, an attributed " ++
       "external baseline, ordered project zero-proportion improvements, and equivalences. The boxes " ++
@@ -189,7 +198,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    </style>\n" ++
     "  </defs>\n" ++
     "  <rect class=\"bg\" x=\"0.75\" y=\"0.75\" width=\"998.5\" " ++
-      "height=\"233.5\" rx=\"12\"/>\n" ++
+      "height=\"313.5\" rx=\"12\"/>\n" ++
     "  <text class=\"heading\" x=\"20\" y=\"30\">Lean-checked theorem inventory — RH remains open</text>\n" ++
     s!"  <text class=\"metrics\" x=\"980\" y=\"28\">Lean {Lean.versionString} · " ++
       s!"{moduleCount} modules · {declarationCount} declarations · {theoremCount} theorems</text>\n" ++
@@ -197,7 +206,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
       "0 project axioms · milestones standard-only</text>\n" ++
     "  <text class=\"section\" x=\"20\" y=\"64\">CHECKED RESULTS, IDENTITIES, AND ATTRIBUTED BASELINE</text>\n" ++
     "  <text class=\"section\" x=\"20\" y=\"143\">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>\n" ++
-    "  <line x1=\"670\" y1=\"62\" x2=\"670\" y2=\"207\" stroke=\"#30363d\"/>\n" ++
+    "  <line x1=\"670\" y1=\"62\" x2=\"670\" y2=\"287\" stroke=\"#30363d\"/>\n" ++
     "  <text class=\"gap-label\" x=\"765\" y=\"94\">UNPROVED MATHEMATICS</text>\n" ++
     "  <path class=\"open-edge\" d=\"M840 139 H853\"/>\n" ++
     nodes ++
@@ -210,11 +219,13 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Exact pole geometry: >31x previous signed zero margin; " ++
-      "positive return exponent; uniform weighted bound open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">For |y| ≥ 1: edge windows have multiplicity ≤ 1, D=1/(6000 log(|y|+22)); " ++
+      "uniform current bound open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
+  unless milestones.size == milestonePoints.size do
+    throwError "every milestone must have exactly one visible inventory position"
   let env <- getEnv
   let moduleCount := env.header.moduleNames.countP isProjectModule
   let mut declarationCount := 0
@@ -676,7 +687,19 @@ run_cmd do
         "finite weighted transport budget under this bound. " ++
         "This formalises the classical reciprocal-logarithm shape with " ++
         "conservative explicit constants; no novelty priority or improvement " ++
-        "over the literature is claimed. The uniform cutoff-independent " ++
+        "over the literature is claimed. An additional local geometric " ++
+        "constraint now holds: at abs(y)>=1, " ++
+        "put D=1/(6000*log(abs(y)+22)). Every finite set of actual zeros " ++
+        "with 1-D<=Re(rho)<1 and abs(Im(rho)-y)<=D has total analytic " ++
+        "multiplicity at most one. Reflection gives the same count for " ++
+        "0<Re(rho)<=D. The exact complex selected pole sum and its " ++
+        "complete complement reconstruct the common local sum before " ++
+        "the real prime estimate is taken. Thus any zero in these windows " ++
+        "is simple and unique. Distinct zeros in the common right-edge " ++
+        "layer at the first zero's ordinate have separation greater than D. " ++
+        "Near either edge, simplicity is discharged in the original " ++
+        "current's full head inverse formula. These local constraints do " ++
+        "not improve the preceding all-zero strip or current exponent. The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),

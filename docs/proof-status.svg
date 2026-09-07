@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description" viewBox="0 0 1000 235">
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description" viewBox="0 0 1000 315">
   <title id="title">Lean-verified RiemannGaussian theorem inventory</title>
   <desc id="description">Checked project results, identities, an attributed external baseline, ordered project zero-proportion improvements, and equivalences. The boxes are not a proof chain. The 13/18 target and RH remain unproved.</desc>
   <defs>
@@ -24,13 +24,13 @@
       .frontier { fill: #f2cc60; font-size: 11px; text-anchor: start; }
     </style>
   </defs>
-  <rect class="bg" x="0.75" y="0.75" width="998.5" height="233.5" rx="12"/>
+  <rect class="bg" x="0.75" y="0.75" width="998.5" height="313.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 711 modules · 15929 declarations · 13631 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 714 modules · 15974 declarations · 13673 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · milestones standard-only</text>
   <text class="section" x="20" y="64">CHECKED RESULTS, IDENTITIES, AND ATTRIBUTED BASELINE</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
-  <line x1="670" y1="62" x2="670" y2="207" stroke="#30363d"/>
+  <line x1="670" y1="62" x2="670" y2="287" stroke="#30363d"/>
   <text class="gap-label" x="765" y="94">UNPROVED MATHEMATICS</text>
   <path class="open-edge" d="M840 139 H853"/>
   <g class="proved unconditional">
@@ -69,17 +69,23 @@
     <text x="252" y="173">zero-free strip</text>
     <text x="252" y="191">explicit 1/log  ✓</text>
   </g>
-  <g class="proved external">
+  <g class="proved unconditional">
     <rect x="340" y="150" width="145" height="54" rx="9"/>
+    <title>RiemannGaussian.sum_multiplicity_le_one_in_signedEdgeWindow</title>
+    <text x="412" y="173">edge zero windows</text>
+    <text x="412" y="191">multiplicity &lt;= 1  ✓</text>
+  </g>
+  <g class="proved external">
+    <rect x="500" y="150" width="145" height="54" rx="9"/>
     <title>RiemannGaussian.externalZeta23_montgomeryTaylor_simple_projectFiniteWindows</title>
-    <text x="412" y="173">external simple zeros</text>
-    <text x="412" y="191">HD(1) &gt; 2/3  ✓</text>
+    <text x="572" y="173">external simple zeros</text>
+    <text x="572" y="191">HD(1) &gt; 2/3  ✓</text>
   </g>
   <g class="proved unconditional">
-    <rect x="500" y="150" width="145" height="54" rx="9"/>
+    <rect x="20" y="229" width="145" height="54" rx="9"/>
     <title>RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger</title>
-    <text x="572" y="173">literal simple zeros</text>
-    <text x="572" y="191">HD(1) &lt; C₀ &lt; C₁  ✓</text>
+    <text x="92" y="252">literal simple zeros</text>
+    <text x="92" y="270">HD(1) &lt; C₀ &lt; C₁  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
@@ -90,5 +96,5 @@
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="220">Exact pole geometry: >31x previous signed zero margin; positive return exponent; uniform weighted bound open.</text>
+  <text class="frontier" x="20" y="300">For |y| ≥ 1: edge windows have multiplicity ≤ 1, D=1/(6000 log(|y|+22)); uniform current bound open.</text>
 </svg>

@@ -60,6 +60,7 @@ the objective.
 | Test proportional windows and retain the full moving complement | `exists_coherentBand_dyadic_window_exceeding_region_budget` in [EtaCoherentBandWindowObstruction.lean](../RiemannGaussian/EtaCoherentBandWindowObstruction.lean), and `pairedEtaCompletedMomentInverseCoherentComplement_cross_re_le` in [EtaCoherentBandComplement.lean](../RiemannGaussian/EtaCoherentBandComplement.lean). | An explicit original band has coefficient energy `K` and physical mean square at least `abs(X_rho)² K²/4` on windows `A=(B_rho+2)K,L=K`. A quadratic lower bound also persists over `[A,2A)`, refuting the same logarithmic region budget there. The full moving complement has mixed real part at most `-abs(X_rho)² K²/8` in the initial subwindow beyond an explicit threshold. The original signed current estimate remains open. |
 | Transport complete zeroth-order inverse cancellation to both original current branches | `pairedEtaLeadingCurrent_fullInverseEnergy_firstMoment_stability` in [EtaCurrentFullInverseEnergy.lean](../RiemannGaussian/EtaCurrentFullInverseEnergy.lean), and `pairedEtaLeadingCurrent_weighted_coherentComplement_error_le` in [EtaCurrentCoherentComplement.lean](../RiemannGaussian/EtaCurrentCoherentComplement.lean). | Both branches reduce to signed complete zeroth energies with positive real coefficients and summable odd-weighted error. Independent band/complement splits retain all mixed products, and the actual coherent bands fit every literal cutoff by integer division. The weighted absolute sum of the full signed energy remains open. |
 | Sharpen the actual prime constraint on the current's horizontal growth | `multiplicity_le_quadratic_signed_zero_gap` in [ZetaSignedExactPole.lean](../RiemannGaussian/ZetaSignedExactPole.lean), `nontrivialZetaZero_mem_signedQuadratic_strip` in [ZetaSignedQuadraticMargin.lean](../RiemannGaussian/ZetaSignedQuadraticMargin.lean), and `pairedEtaLeadingCurrent_firstMoment_le_quadraticPrime` in [EtaCurrentQuadraticPrimeBound.lean](../RiemannGaussian/EtaCurrentQuadraticPrimeBound.lean). | Exact pole geometry gives a multiplicity-sensitive margin more than 31 times the previous signed margin at every nonzero ordinate. For absolute ordinate at least one, the margin is at least `1/(56458 log(abs(y)+22))`. Both original current branches, the Gaussian return, and the complete inverse energy inherit the improved exponent while preserving all preceding margins. The exponent remains positive. |
+| Bound several nearby actual zeros simultaneously | `sum_multiplicity_le_one_in_signedEdgeWindow` in [ZetaSignedWindowMultiplicity.lean](../RiemannGaussian/ZetaSignedWindowMultiplicity.lean), with reflection, simplicity, separation, and the original head inverse formula in [ZetaSignedZeroSeparation.lean](../RiemannGaussian/ZetaSignedZeroSeparation.lean). | For every center of absolute height at least one, an edge rectangle of width and ordinate half-width `1/(6000 log(abs(y)+22))` contains total analytic multiplicity at most one. The exact selected complex pole sum and full complement are retained. This rules out multiple zeros and close pairs within that layer, while the uniform weighted goal remains open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -3162,13 +3163,111 @@ cutoff-independent estimate or exclude every off-critical zero.
 The global goal remains open, with no new zero-proportion certificate
 or novelty-priority claim.
 
+## Checked simultaneous edge-window multiplicity and separation
+
+The new terminal theorem
+[sum_multiplicity_le_one_in_signedEdgeWindow](../RiemannGaussian/ZetaSignedWindowMultiplicity.lean)
+is stated for actual nontrivial zeta zeros and their full analytic
+multiplicities. For an arbitrary real center `y` with `abs(y) ≥ 1`, define
+
+\[
+ L(y)=\log(|y|+22),\qquad D(y)=\frac1{6000L(y)}.
+\]
+
+Every finite set `S` of actual zeros satisfying
+
+\[
+ 1-D(y)\le\Re\rho<1,\qquad |\Im\rho-y|\le D(y)
+ \quad(\rho\in S)
+\]
+
+has
+
+\[
+ \sum_{\rho\in S}m_\rho\le1.
+\]
+
+This is a simultaneous count, rather than an estimate that selects just
+one zero. [ZetaSignedZeroSeparation](../RiemannGaussian/ZetaSignedZeroSeparation.lean)
+discharges its consequences on the actual carrier:
+
+- `analyticZetaZeroMultiplicity_eq_one_in_signedEdgeWindow` proves every
+  zero there is simple.
+- `eq_of_mem_signedEdgeWindow` proves any two zeros in that window equal.
+- `signedEdgeWindowWidth_lt_im_sub_of_ne` proves
+  `abs(Im tau - Im rho) > D(Im rho)` for distinct zeros when
+  `abs(Im rho) ≥ 1` and both real parts are at least `1-D(Im rho)`.
+- `sum_multiplicity_le_one_in_signedLeftEdgeWindow` transfers the entire
+  finite multiplicity count by `rho ↦ 1-conj(rho)` to
+  `0 < Re rho ≤ D(y)` with the same ordinate window.
+
+The common-center analytic input is proved in
+[ZetaSignedWindowPole](../RiemannGaussian/ZetaSignedWindowPole.lean).
+`localZetaZeroTranslate_mem_canonicalBall` places every selected actual
+zero in the common canonical disc; translation retains its full
+meromorphic order. Before taking real parts,
+`localZetaPoleSum_eq_selected_add_complement` reconstructs the full
+complex pole sum from the selected zero terms and every remaining
+divisor term. Thus ordinate displacement, phase, and multiplicity are
+retained in an exact source identity.
+
+`four_mul_localZetaPoleSum_re_le_quadraticHeight` proves, for
+`0 < x ≤ 1/4` and `y ≠ 0`,
+
+\[
+ 4\Re P_y(x-\tfrac12)
+ \le \frac3x+4032L(y)+\frac{17x}{4y^2}.
+\]
+
+All selected zeros are evaluated at the same `x=4D`. Writing
+`u=1+4D-Re rho` and `v=y-Im rho` gives `4D≤u≤5D` and `abs(v)≤D`.
+The checked Cauchy floor is
+
+\[
+ \frac{u}{u^2+v^2}\ge\frac5{26D}.
+\]
+
+The real contributions of every complementary divisor point are
+nonnegative. A total multiplicity of at least two would therefore imply
+
+\[
+ \frac{20}{13}
+ \le\frac34+\frac{4032}{6000}+17D^2
+ \le\frac34+\frac{4032}{6000}+\frac{17}{256}
+ <\frac{20}{13},
+\]
+
+an exact rational contradiction. Positivity of `D`, `D≤1/16`,
+`L(y)D=1/6000`, and `y²≥1` are all discharged in Lean.
+
+Finally,
+`analyticZetaZeroMultiplicity_eq_one_of_near_edge` proves simplicity
+when `abs(Im rho)≥1` and
+`min(Re rho,1-Re rho)≤D(Im rho)`.
+`pairedEtaLeadingCurrent_eq_momentInverse_head_of_near_edge` then gives
+the unchanged original current's complete head inverse sum at every
+physical cutoff. Both completion colours and every original inverse
+term remain present; multiplicity one is a consequence of location,
+not an extra analytic premise.
+
+The new result is a local simplicity and separation constraint. It does
+not improve the preceding all-zero zero-free strip or the positive
+current-growth exponent, and it does not establish global simplicity.
+A possible isolated simple off-critical zero still produces the
+previously proved positive-power current obstruction. The uniform
+weighted arithmetic bound and RH remain open. This slice makes no
+novelty-priority or improvement-over-literature claim.
+
 ## Next mathematical obligations
 
 The exact-pole prime input now excludes the larger explicit
 multiplicity-sensitive edge regions above, preserving every earlier
 margin. Its improvement over the previous signed margin exceeds a
-factor of thirty-one at every nonzero ordinate. It does not force real part `1/2`,
-and its return bound has a proved positive exponent. The remaining task is to rule out the interior
+factor of thirty-one at every nonzero ordinate. The simultaneous edge
+windows now additionally exclude multiple zeros and nearby distinct pairs
+in their stated rectangles, and discharge the original head branch near
+either edge. These constraints do not force real part `1/2`,
+and the return bound has a proved positive exponent. The remaining task is to rule out the interior
 off-critical contribution while retaining the unchanged absolute weighted
 target. The following inverse and heat carriers remain available for that
 task; their established identities alone do not supply the missing estimate.

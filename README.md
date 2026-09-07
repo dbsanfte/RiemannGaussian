@@ -27,40 +27,35 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Control the original current through its complete signed inverse energy and the actual prime series. Exact pole geometry now gives a multiplicity-sensitive zero-free margin more than 31 times the previous signed margin. Both current branches and the Gaussian return inherit the bound; the exponent strictly improves at simple zeros. That exponent remains positive. The global frontier is excluding the surviving off-critical contribution and bounding the weighted absolute moment uniformly.
+Use the complete signed local zero sum alongside the original eta inverse energy. Explicit edge windows now contain at most one zero counting multiplicity, so any zero there is simple and isolated. Near either edge the original current therefore uses its exact head branch. The global frontier remains excluding the surviving interior off-critical contribution and bounding the weighted absolute moment uniformly in the cutoff.
 
 ## Latest Update
 
-Lean now proves **a strictly stronger concrete zero-free strip**.
-For every actual zero `rho=beta+i gamma` of analytic multiplicity `m`,
-[nontrivialZetaZero_mem_signedQuadratic_strip](RiemannGaussian/ZetaSignedQuadraticMargin.lean)
-gives `delta_m(gamma) ≤ beta ≤ 1-delta_m(gamma)`, where
+Lean now proves **a simultaneous bound on nearby zeros, counting
+multiplicity**. For any real center `y` with `abs(y) ≥ 1`, put
 
 \[
- q_m=8m-7,\qquad
- \delta_m(\gamma)=\min\!\left\{\frac1{24},
- \frac{q_m|\gamma|}
- {56448|\gamma|\log(|\gamma|+22)+19q_m}\right\}.
+ D(y)=\frac{1}{6000\log(|y|+22)}.
 \]
 
-[thirtyOne_mul_signedLogZeroMargin_lt_quadratic](RiemannGaussian/ZetaSignedQuadraticComparison.lean)
-proves that this margin exceeds **31 times the previous signed margin**
-at every nonzero ordinate. Above height one,
-`1/(56458 log(|gamma|+22))` is a simpler checked lower bound.
-The gain comes from retaining the exact pole contribution
-`x/(x²+gamma²)` and applying the signed local decomposition on the real
-axis; the complete local zero sum and genuine multiplicity remain present.
+[sum_multiplicity_le_one_in_signedEdgeWindow](RiemannGaussian/ZetaSignedWindowMultiplicity.lean)
+bounds the total analytic multiplicity of every finite set of actual
+zeros in `1-D(y) ≤ beta < 1`, `abs(gamma-y) ≤ D(y)` by **one**.
+[ZetaSignedZeroSeparation](RiemannGaussian/ZetaSignedZeroSeparation.lean)
+proves uniqueness and simplicity there, an explicit ordinate separation
+for distinct zeros in the indicated edge layer, and the reflected
+multiplicity bound at the left edge.
 
-[pairedEtaLeadingCurrent_firstMoment_le_quadraticPrime](RiemannGaussian/EtaCurrentQuadraticPrimeBound.lean)
-transports the new strip to both original current branches.
-The same file bounds the actual Gaussian return and complete signed
-inverse energy, preserves every previous margin, and proves a strictly
-smaller exponent at every actual simple zero.
+The proof retains the exact complex selected-pole sum and its full
+complement, then uses their common real sign in the prime estimate.
+[pairedEtaLeadingCurrent_eq_momentInverse_head_of_near_edge](RiemannGaussian/ZetaSignedZeroSeparation.lean)
+consequently gives the original current's full head inverse formula
+near either edge, with simplicity proved from the actual zero location.
 
-The resulting bound still grows with cutoff: its stated exponent lies
-in `[7/8,1)`. The [uniform weighted goal](docs/eta-current-reconstruction-plan.md)
-and RH remain open. This improves the project's formal bound; no
-improvement over classical zero-free regions or novelty priority is claimed.
+These local constraints do not exclude every off-critical zero.
+The [uniform weighted goal](docs/eta-current-reconstruction-plan.md)
+and RH remain open. No novelty priority or improvement over the
+mathematical literature is claimed.
 
 ## Notable Formalisations
 
@@ -74,6 +69,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Suzuki arithmetic and spectral formulas** | Suzuki's positive-time arithmetic function equals its spectral expansion on `Im z > 1/2`. The literal arithmetic `Psi` is strictly positive on a nonzero punctured neighbourhood of the origin. | [riemannXiSuzukiArithmeticPPositive_eq_spectral_safe](RiemannGaussian/RiemannXiSuzukiWeilVerticalLimit.lean#L462), [exists_pos_on_abs_riemannXiSuzukiPsi](RiemannGaussian/RiemannXiSuzukiPointwiseLocalPositivity.lean#L298) |
 | **Xi growth and divisor summability** | Unconditional `exp(O(R log R))` xi growth and convergence of the multiplicity-weighted inverse-square zero series. | [riemannXi_logLinearGrowth](RiemannGaussian/GaussianXiLogLinearGrowth.lean#L315), [summable_distinct_zetaZeroInverseSquareNorm](RiemannGaussian/GaussianXiInverseSquareSummability.lean#L294) |
 | **Explicit zero-free strip from signed prime positivity** | The exact pole geometry and complete signed local zero sum give a multiplicity-sensitive margin more than 31 times the preceding signed margin. Every actual zero of absolute ordinate at least one stays at least `1/(56458 log(abs(gamma)+22))` from either edge. | [multiplicity_le_quadratic_signed_zero_gap](RiemannGaussian/ZetaSignedExactPole.lean), [nontrivialZetaZero_mem_signedQuadratic_strip](RiemannGaussian/ZetaSignedQuadraticMargin.lean), [nontrivialZetaZero_mem_quadratic_reciprocal_log_strip](RiemannGaussian/ZetaSignedQuadraticComparison.lean) |
+| **Simultaneous edge-window simplicity and separation** | At absolute center height at least one, a rectangle of width and ordinate half-width `1/(6000 log(abs(y)+22))` adjoining either strip edge has total analytic multiplicity at most one. The common complex pole sum and its full complement remain available. | [sum_multiplicity_le_one_in_signedEdgeWindow](RiemannGaussian/ZetaSignedWindowMultiplicity.lean), [sum_multiplicity_le_one_in_signedLeftEdgeWindow](RiemannGaussian/ZetaSignedZeroSeparation.lean), [signedEdgeWindowWidth_lt_im_sub_of_ne](RiemannGaussian/ZetaSignedZeroSeparation.lean) |
 | **Finite Hardy-space geometry** | Orthogonality in genuine boundary `L²`, including repeated roots, and a basis-independent determinant formula for the residual Gram operator. | [finiteModelBoundaryLp_inner_residualInner_negative_eq_zero](RiemannGaussian/FiniteHardyOrthogonality.lean#L260), [finiteHardyCrossAngleComplementGramOperator_det_eq_basisResidual_ratio](RiemannGaussian/FiniteHardyMetricDeterminant.lean#L294) |
 | **Eta as a positive-measure Laplace transform** | On `Re s > 0`, paired eta divided by `s` is exactly the Laplace transform of Lebesgue measure restricted to the alternating logarithmic intervals `(log(2n+1), log(2n+2)]`. | [integral_exp_neg_mul_pairedEtaLogMeasure_eq_pairedEtaCore_div](RiemannGaussian/RiemannXiSuzukiPositiveCriticalStripEtaInfiniteLaplaceMeasure.lean#L219) |
 | **Critical eta support/gap heat law** | A phase-resolved boundary decomposition on the actual eta intervals gives the sharp critical term `(2/√π) h log(1/h)` with error at most `32h`; the stronger phase-profile error is uniform in the ordinate. | [pairedEtaPhaseMismatch_boundary_error_le](RiemannGaussian/EtaLogSupportShift.lean), [pairedEtaSupportGapGaussianLeakage_uniform_error_le](RiemannGaussian/EtaSupportGapGaussian.lean#L349) |
@@ -160,6 +156,12 @@ positivity or vanishing direction remains unproved.
   positivity. [thirtyOne_mul_signedLogZeroMargin_lt_quadratic](RiemannGaussian/ZetaSignedQuadraticComparison.lean)
   proves a margin more than 31 times the previous signed project bound at every nonzero ordinate. This is a
   formalisation of a classical type of region, with no novelty claim.
+- **Proved local simplicity and separation for actual zeros near either edge.**
+  [sum_multiplicity_le_one_in_signedEdgeWindow](RiemannGaussian/ZetaSignedWindowMultiplicity.lean)
+  and its [reflected counterpart](RiemannGaussian/ZetaSignedZeroSeparation.lean)
+  bound the full multiplicity in an explicit rectangle by one. This
+  constrains several zeros together and proves simplicity from location;
+  it does not establish global simplicity or RH.
 - **Combined literal eta arithmetic, polynomial phase, and Gaussian heat at second order.**
   [pairedEtaSupportGapGaussianLeakage_polynomial_finite_part_tendsto](RiemannGaussian/EtaPolynomialHeatFinitePart.lean)
   evaluates the actual heat finite part using separate harmonic and Wallis

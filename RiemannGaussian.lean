@@ -694,3 +694,6 @@ import RiemannGaussian.ZetaSignedExactPole
 import RiemannGaussian.ZetaSignedQuadraticMargin
 import RiemannGaussian.ZetaSignedQuadraticComparison
 import RiemannGaussian.EtaCurrentQuadraticPrimeBound
+import RiemannGaussian.ZetaSignedWindowPole
+import RiemannGaussian.ZetaSignedWindowMultiplicity
+import RiemannGaussian.ZetaSignedZeroSeparation
