@@ -65,12 +65,16 @@ def finite_gram(scales, cutoff):
     return gram
 
 
-def moebius_log_coefficients(dimension):
-    """Numerical evaluation of the exact balanced logarithmic candidate law."""
-    if dimension < 1 or dimension & (dimension - 1):
-        raise ValueError("The logarithmic candidate requires a power-of-two dimension.")
-    stage = dimension.bit_length() - 1
-    arithmetic_cutoff = stage + 1
+def moebius_log_coefficients(dimension, arithmetic_cutoff=None):
+    """Evaluate the exact law; an explicit cutoff keeps weights fixed during grid refinement."""
+    if dimension < 1:
+        raise ValueError("The logarithmic candidate requires a positive dimension.")
+    if arithmetic_cutoff is None:
+        if dimension & (dimension - 1):
+            raise ValueError("The dyadic stage law requires a power-of-two dimension.")
+        arithmetic_cutoff = dimension.bit_length()
+    if not 1 <= arithmetic_cutoff <= dimension:
+        raise ValueError("The arithmetic cutoff must lie between one and the grid dimension.")
     mu = np.ones(arithmetic_cutoff + 1, dtype=np.int64)
     mu[0] = 0
     prime = np.ones(arithmetic_cutoff + 1, dtype=bool)

@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "The actual entire infinite residual tail of the exact balanced logarithmic Möbius candidates tends to zero; their coefficient penalty also vanishes, while decay of the growing finite residual and canonical deficit remains open"
-    lineOne := "Möbius trial tail"
-    lineTwo := "tends to zero"
+    label := "With the exact stage arithmetic weights fixed, every positive integer physical-grid refinement changes the full Möbius target residual energy by a proved vanishing amount; decay of the arithmetic residual and canonical deficit remains open"
+    lineOne := "grid refinement"
+    lineTwo := "energy change → 0"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.pairedEtaDyadicMoebiusTrialResidualTail_tendsto_zero
+      ``RiemannGaussian.pairedEtaDyadicMoebiusResidual_sub_refined_tendsto_zero
   }
 ]
 
@@ -228,8 +228,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">The exact Möbius trial penalty and entire infinite tail tend to zero. " ++
-      "Growing finite residual decay and the uniform current bound remain open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">Grid refinement changes full Möbius residual energy by a vanishing amount. " ++
+      "Arithmetic residual decay and the uniform current bound remain open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -904,6 +904,26 @@ run_cmd do
         "on the growing finite interval. The original zero displacement " ++
         "satisfies abs(2*beta-1)*W_rho<=E_k+L_k. Decay of E_k remains " ++
         "unproved; the penalty and tail limits do not establish D_k->0. " ++
+        "A complete grid-refinement estimate now keeps M_k=k+1 and its " ++
+        "logarithmic weights fixed while replacing the 2^k physical grid " ++
+        "by any positive integer multiple. Exact signed block sums retain " ++
+        "both original candidates and prove every reindexing boundary " ++
+        "coefficient zero. The actual eta support-mismatch formula includes " ++
+        "the initial interval and full infinite tail. Weighted Cauchy--Schwarz " ++
+        "gives full critical square difference at most " ++
+        "32*sqrt(2*(k+1)^5/2^k) for k>=7, uniformly over refinement factors. " ++
+        "pairedEtaDyadicMoebiusTrialRefinementError_tendsto_zero proves this " ++
+        "error tends to zero for every refinement schedule. The actual full " ++
+        "target-residual energy changes by at most " ++
+        "R_k=16/(k+1)+64*sqrt(2*(k+1)^11/2^k), and " ++
+        "pairedEtaDyadicMoebiusResidual_sub_refined_tendsto_zero proves " ++
+        "that change tends to zero. The unchanged canonical deficit is " ++
+        "bounded by any such refined full arithmetic residual plus R_k+L_k; " ++
+        "pairedEtaDyadicMoebiusRefinedAllowance_tendsto_zero proves all " ++
+        "these added costs vanish. The same bound reaches the original " ++
+        "actual zero displacement. Decay of the refined arithmetic residual " ++
+        "itself, and hence D_k->0, is still unproved. This does not identify " ++
+        "a continuous Moebius multiplier or certify a sharper numerical zero strip. " ++
         "The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++

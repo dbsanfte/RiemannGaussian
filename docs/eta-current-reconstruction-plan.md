@@ -67,6 +67,7 @@ the objective.
 | Bound the current power by complete finite eta translate arithmetic | `pairedEtaTranslatedResidualEnergyCutoff_eq_finiteForm` and `pairedEtaTranslatedResidualEnergy_le_finiteBudget` in [EtaTranslatedFiniteResidual.lean](../RiemannGaussian/EtaTranslatedFiniteResidual.lean), followed by `pairedEtaLeadingCurrent_firstMoment_le_translatedProjection` in [EtaCurrentTranslatedProjectionPower.lean](../RiemannGaussian/EtaCurrentTranslatedProjectionPower.lean). | The compact target shares the elementary eta factor and stays nonzero at actual zeta zeros. Every finite nonnegative translate family gives a complete Gram-plus-tail budget for actual horizontal displacement and both current branches. The Gaussian return and full inverse energy inherit the same exponent. A family with vanishing full budget and an improved numerical zero strip remain open. |
 | Define an exact growing coefficient law and certify complete finite bounds | `pairedEtaCanonicalTranslateBudget_le_trial` in [EtaCanonicalTranslateBound.lean](../RiemannGaussian/EtaCanonicalTranslateBound.lean), `pairedEtaFourProjection_residualEnergy_lt_one_fifth` in [EtaFourTranslateBound.lean](../RiemannGaussian/EtaFourTranslateBound.lean), and `pairedEtaLeadingCurrent_firstMoment_le_dyadicTranslate` in [EtaCanonicalTranslateFamily.lean](../RiemannGaussian/EtaCanonicalTranslateFamily.lean). | The actual regularized Gram inverse specifies a dyadic family, with complete residual at most its exact deficit. Structured trial coefficients bound that deficit. Four explicit rational coefficients have complete residual below `1/5`; comparison gives canonical four-point deficit below `1/4`. Decay of the growing family deficit remains open. |
 | Discharge the full coefficient cost and actual infinite tail for a specified arithmetic candidate | `pairedEtaMoebiusTrialCoefficient_sum_abs_le` in [EtaMoebiusTrialCoefficients.lean](../RiemannGaussian/EtaMoebiusTrialCoefficients.lean), `pairedEtaDyadicMoebiusTrialPenalty_tendsto_zero` in [EtaMoebiusTrialPenalty.lean](../RiemannGaussian/EtaMoebiusTrialPenalty.lean), and `pairedEtaDyadicMoebiusTrialResidualTail_tendsto_zero` in [EtaMoebiusTrialResidual.lean](../RiemannGaussian/EtaMoebiusTrialResidual.lean). | The exact balanced logarithmic Möbius law has zero signed coefficient mass, absolute sum at most `2(k+1)`, and full penalty at most `(k+1)^2/2^k→0`. The actual entire omitted residual integral also tends to zero. The canonical deficit is at most the growing finite residual plus that vanishing allowance. Decay of the finite residual and canonical deficit remains open. |
+| Remove grid-refinement costs from the actual arithmetic candidate comparison | `pairedEtaMoebiusTrialRefinementError_le` in [EtaMoebiusTrialRefinement.lean](../RiemannGaussian/EtaMoebiusTrialRefinement.lean), and `pairedEtaDyadicMoebiusResidual_sub_refined_tendsto_zero`, `pairedEtaDyadicTranslateDeficit_le_refined_moebius` in [EtaMoebiusRefinedBudget.lean](../RiemannGaussian/EtaMoebiusRefinedBudget.lean). | With the stage arithmetic weights fixed, every positive integer refinement of the physical grid changes the full critical square approximation and complete residual energy by proved vanishing amounts. The canonical deficit and actual zero displacement are at most any refined arithmetic residual plus an explicit allowance tending to zero. Decay of that arithmetic residual remains open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -4704,6 +4705,206 @@ Lean theorem. Mathematical priority for this combined candidate construction
 is not claimed. This slice proves no sharper numerical zero strip and does
 not close the original uniform weighted current bound.
 
+## Checked full grid-refinement and target-residual stability
+
+This slice controls the complete effect of refining the physical grid
+while keeping the arithmetic cutoff and weights fixed. It combines the
+existing eta support-mismatch theorem with exact signed Möbius coefficient
+blocks. The result reaches the unchanged canonical deficit and actual
+zero coordinates. It does **not** prove decay of the arithmetic residual
+or of `D_k`.
+
+**Complete translate distance, including the initial interval.** Define
+
+\[
+ I(a,b)=\int_0^\infty e^{-t}|\chi(t-a)-\chi(t-b)|^2\,dt.
+\]
+
+[EtaTranslateDifference.lean](../RiemannGaussian/EtaTranslateDifference.lean)
+proves integrability and the exact identities
+
+\[
+ I(a,a+r)=e^{-a}I(0,r)\quad(a,r\ge0),
+\]
+\[
+ I(0,r)=1-e^{-r}+e^{-r}\operatorname{Mismatch}(1/2,r)
+ \quad(0\le r\le\log2).
+\]
+
+The first term is the actual initial support interval; the second is
+the entire original arithmetic mismatch. Applying the existing checked
+critical mismatch estimate gives
+
+\[
+ I(0,r)\le r\log(1/r)+6r\le8\sqrt r\quad(0<r\le1/8).
+\]
+
+Consequently `a,b≥0` and `|a-b|≤r≤1/8` give `I(a,b)≤8 sqrt(r)`.
+There is no finite-time tail assumption in this modulus.
+
+**Complex coefficients retained until weighted Cauchy--Schwarz.** For
+two grids carrying the same coefficients, the exact difference remains
+
+\[
+ U_a(t)-U_b(t)=\sum_jc_j\bigl(\chi(t-a_j)-\chi(t-b_j)\bigr).
+\]
+
+[EtaTranslateGridError.lean](../RiemannGaussian/EtaTranslateGridError.lean)
+proves the complete integral bound
+
+\[
+ \int_0^\infty e^{-t}|U_a-U_b|^2dt
+ \le\left(\sum_j|c_j|\right)\sum_j|c_j|I(a_j,b_j)
+ \le8\sqrt r\left(\sum_j|c_j|\right)^2.
+\]
+
+Only active coefficients need the shift bound. The estimate depends on
+their complete absolute sum, rather than the dimension. The signed
+pointwise identity and every original pair distance remain available
+before this norm estimate.
+
+**Exact refinement of the original arithmetic coefficients.** Using the
+unchanged signed primitive `A_(M,w)`, index a coefficient by its physical
+denominator:
+
+\[
+ C_{d,M,w}(m)=A_{M,w}(d/m)-A_{M,w}(d/(m+1)),\qquad m\ge1.
+\]
+
+On `1≤m≤d` these are precisely the original coefficients. They vanish
+when `M(m+1)≤d` and when `m>d`. For every positive integer refinement
+factor `q`, the entire signed block identity is
+
+\[
+ \sum_{0\le l<q} C_{dq,M,w}\bigl(q(j+1)+l\bigr)
+ =C_{d,M,w}(j+1).
+\]
+
+[EtaMoebiusTrialGridBlocks.lean](../RiemannGaussian/EtaMoebiusTrialGridBlocks.lean)
+also proves all reindexing boundary terms zero when `M≤d`. Therefore
+regrouping preserves the whole original coarse and fine combinations,
+and the reindexed fine coefficients still have absolute sum at most `2M`
+for `|w(n)|≤1` on `1≤n≤M`.
+
+An active fine coefficient satisfies `d<M(j+2)` in its coarse cell.
+[EtaMoebiusTrialGridGeometry.lean](../RiemannGaussian/EtaMoebiusTrialGridGeometry.lean)
+uses this exact support fact to prove
+
+\[
+ \left|\log\frac d{j+1}
+ -\log\frac{dq}{q(j+1)+l}\right|\le\frac{2M}{d}.
+\]
+
+The nonnegative extension of logarithmic grid points outside the valid
+index range affects only coefficients already proved zero. On every
+original grid index it is exactly `-log(m/d)`.
+
+**Full refinement error, uniform in the refinement factor.** Write
+`U_(d,M,w)` for the actual finite eta combination. With `d≥1`,
+`1≤q`, `M≤d`, bounded weights, and `2M/d≤1/8`,
+[pairedEtaMoebiusTrialRefinementError_le](../RiemannGaussian/EtaMoebiusTrialRefinement.lean)
+proves
+
+\[
+ \int_0^\infty e^{-t}|U_{d,M,w}(t)-U_{dq,M,w}(t)|^2dt
+ \le32M^2\sqrt{2M/d}.
+\]
+
+All hypotheses are discharged for the original stage parameters
+`M_k=k+1`, `d_k=2^k`, and exact logarithmic weights once `k≥7`.
+The refinement factor is arbitrary. Lean indexes it by `q+1`, so every
+natural index specifies a positive integer refinement without a further
+premise. The resulting allowance is
+
+\[
+ G_k=32\sqrt{\frac{2(k+1)^5}{2^k}}\longrightarrow0.
+\]
+
+[pairedEtaDyadicMoebiusTrialRefinementError_tendsto_zero](../RiemannGaussian/EtaMoebiusTrialRefinementLimit.lean)
+proves convergence of the actual entire square-error integral for every
+refinement schedule. The arithmetic cutoff remains `k+1` on both grids;
+the fine grid is not silently assigned a later stage's arithmetic weights.
+
+**Stability of the complete target residual itself.** The original full
+target residual energy is `E(d,M,w)=integral_0^infinity e^(-t)|h-U|²`.
+[EtaTranslateResidualStability.lean](../RiemannGaussian/EtaTranslateResidualStability.lean)
+first proves, for every positive `epsilon`, the same-coefficient bound
+
+\[
+ |E(a,c)-E(b,c)|
+ \le\epsilon\left(2+\sum_j|c_j|\right)^2
+ +(1+1/\epsilon)\int_0^\infty e^{-t}|U_a-U_b|^2dt.
+\]
+
+This uses weighted Young's inequality and genuine integrability of every
+term. Taking `epsilon=M^(-3)` after the exact refinement identities gives
+[abs_pairedEtaMoebiusTrialGridResidualEnergy_sub_le_explicit](../RiemannGaussian/EtaMoebiusTrialResidualRefinement.lean):
+
+\[
+ |E(d,M,w)-E(dq,M,w)|
+ \le\frac{16}{M}+64\sqrt{\frac{2M^{11}}d}\quad(M\ge1).
+\]
+
+Thus at the original stages, uniformly in all positive integer refinements,
+
+\[
+ |E_k-E'_k|\le R_k:=\frac{16}{k+1}
+       +64\sqrt{\frac{2(k+1)^{11}}{2^k}}\longrightarrow0.
+\]
+
+The actual limit is
+[pairedEtaDyadicMoebiusResidual_sub_refined_tendsto_zero](../RiemannGaussian/EtaMoebiusRefinedBudget.lean).
+It concerns the difference of the complete energies. It does not assert
+that either energy has a limit or tends to zero.
+
+**Back to the original deficit and zero coordinates.** Combine this with
+the preceding coefficient allowance `L_k=(k+1)^2/2^k` and set
+`A_k=R_k+L_k`. Lean proves `A_k→0` and, for every `k≥7` and refinement,
+
+\[
+ |2\Re\rho-1|W_\rho\le\mathcal D_k\le E'_k+A_k.
+\]
+
+These are `pairedEtaDyadicMoebiusRefinedAllowance_tendsto_zero`,
+`pairedEtaDyadicTranslateDeficit_le_refined_moebius`, and
+`pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_refined_moebius`.
+The canonical definition, compact target, complete residual, and positive
+zero weight are unchanged. The remaining estimate is the actual refined
+arithmetic residual `E'_k→0`; the vanishing added costs do not prove it.
+
+**Reproducible construction checks and the next analytic bridge.** The
+numerical coefficient constructor accepts an explicit arithmetic cutoff
+so refinement experiments preserve the same weights:
+
+```python
+from scripts.search_eta_translate_coefficients import moebius_log_coefficients
+d, M, q = 16, 5, 3
+coarse = moebius_log_coefficients(d, M)
+fine = moebius_log_coefficients(d * q, M)
+```
+
+Finite construction checks covered 48 combinations of dimensions,
+arithmetic cutoffs, and refinement factors. The tested block sums had
+zero floating-point discrepancy; the sampled whole-combination identities
+differed by at most `2.3e-16`. These checks validate the explorer's
+implementation and are not Lean-certified numerical approximation bounds.
+The default stage law and preceding numerical scores remain unchanged.
+
+The full-grid estimates support investigating a continuous arithmetic
+representation. An exact identification of that representation with the
+Möbius primitive, and a possible von-Mangoldt shell formula for its
+residual, are still analytic obligations. Neither a continuous-transform
+identity nor a critical mean-square bound is imported from an informal
+calculation. Fixed-window or pointwise convergence alone remains
+insufficient for the complete residual. No sharper numerical zero strip,
+uniform weighted current bound, or mathematical priority claim follows
+from this slice.
+
+All nine modules and the root pass strict direct elaboration and the
+warning-as-error full build. Whole-project and verbose root declaration
+lint pass; twenty-one terminal axiom audits use only the three permitted
+standard axioms. The numerical constructor is outside the proof chain.
+
 ## Next mathematical obligations
 
 The exact-pole prime input now excludes the larger explicit
@@ -4719,10 +4920,14 @@ family now supplies a different bound through its canonical deficit
 `D_k=1-b_k^T (G_k+lambda_k I)^(-1)b_k`. Its definition, complete tail
 control, minimizing identity, and four-point `D_2<1/4` bound are checked.
 The exact balanced logarithmic Möbius candidates now discharge their
-complete penalty and actual infinite-tail decay, with
-`D_k≤E_k+(k+1)^2/2^k`. The immediate task is to prove decay of their actual
-growing finite residual `E_k`, or find a better structured candidate with
-a provable complete bound. The desired `D_k→0` remains open. Numerical
+complete penalty, actual infinite-tail, and full grid-refinement costs.
+With the stage arithmetic cutoff and weights fixed, every finer physical
+grid has full target residual `E'_k` satisfying `D_k≤E'_k+A_k`, where
+`A_k→0` is proved. The immediate task is to bound this complete arithmetic
+residual, or find a better structured candidate with a provable complete
+bound. The new grid stability permits arbitrary integer refinements; it
+does not identify a continuous Möbius multiplier or establish decay of
+the arithmetic residual. The desired `D_k→0` remains open. Numerical
 decreases and the definition of a minimizing coefficient law do not prove
 this estimate. The positive target normalization must also be bounded
 in the intended zero region if a numerical strip is to be certified.
