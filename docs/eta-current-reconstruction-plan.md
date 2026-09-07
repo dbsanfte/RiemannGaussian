@@ -56,7 +56,8 @@ the objective.
 | Retain signed local zero poles in the prime comparison | `norm_localZetaLogRemainder_le` in [ZetaLocalLogDerivative.lean](../RiemannGaussian/ZetaLocalLogDerivative.lean), `neg_logDeriv_riemannZeta_re_le_sub_zero` in [ZetaSignedLocalEstimate.lean](../RiemannGaussian/ZetaSignedLocalEstimate.lean), and `nontrivialZetaZero_mem_signedLogarithmic_strip` in [ZetaSignedZeroMargin.lean](../RiemannGaussian/ZetaSignedZeroMargin.lean). | Every actual zero has the positive margin `abs(y)/(1800000*(abs(y)+1)*log(abs(y)+22))`. This strictly improves the previous logarithmic margin at every nonzero ordinate. The maximum preserves all previous multiplicity bounds and improves the original return exponent for simple zeros; the exponent remains in `[7/8,1)`. |
 | Transport Fourier estimates to actual moving-center moments and inverse entries | `pairedEtaCompletedMomentOriginalMeanSquare_le_quadratic` in [EtaMomentQuadraticMeanSquare.lean](../RiemannGaussian/EtaMomentQuadraticMeanSquare.lean), the signed adjacent bound in [EtaMomentSignedQuadraticFamily.lean](../RiemannGaussian/EtaMomentSignedQuadraticFamily.lean), and `norm_pairedEtaCompletedMomentInversePartialTerm_sub_zero_le` in [EtaMomentInverseReduction.lean](../RiemannGaussian/EtaMomentInverseReduction.lean). | Every order below the actual multiplicity has the original physical mean-square bound for `D²≤A,L`. Each actual inverse center satisfies the required logarithmic interval, giving an explicit inner-range error with the outer complex weight retained. The full inverse sums and uniform current bound remain open. |
 | Estimate both actual inverse divisor sums on physical rectangles | `pairedEtaCompletedMomentInverseRectangleMeanSquare_le_quadratic` in [EtaInverseRectangleMeanSquare.lean](../RiemannGaussian/EtaInverseRectangleMeanSquare.lean), with the original signed adjacent bound in [EtaInverseRectangleSigned.lean](../RiemannGaussian/EtaInverseRectangleSigned.lean). | Joint mean square is at most `C_rho,k ED(1+log E)²(1+log(ED))² A^(-2 Re rho)` for `(ED)²≤A,L`, below the actual multiplicity. Exact signed product grouping, collision counts, Fourier support, and physical corrections are all proved. The extension below covers fixed curved regions and their mixed pairs; the complete growing inverse remains open. |
-| Extend joint inverse control to curved regions and average the full physical error | `pairedEtaCompletedMomentInverseRegionMeanSquare_le` and the exact original-band identity in [EtaMomentInverseRegion.lean](../RiemannGaussian/EtaMomentInverseRegion.lean); `pairedEtaSignedCompletedMomentInverseHyperbolicBands_adjacent_le` in [EtaInverseRegionSigned.lean](../RiemannGaussian/EtaInverseRegionSigned.lean). | Every fixed subregion of `de≤T` has mean square at most `C_rho,k T(1+log T)^5 A^(-2 Re rho)` for `1≤T≤A` and `T²≤L`. Two independent regions retain all mixed pairs and both reflected channels. The quadratic averaging-length cost and the full region growing with the physical index remain open. |
+| Extend joint inverse control to curved regions and average the full physical error | `pairedEtaCompletedMomentInverseRegionMeanSquare_le` and the exact original-band identity in [EtaMomentInverseRegion.lean](../RiemannGaussian/EtaMomentInverseRegion.lean); `pairedEtaSignedCompletedMomentInverseHyperbolicBands_adjacent_le` in [EtaInverseRegionSigned.lean](../RiemannGaussian/EtaInverseRegionSigned.lean). | Every fixed subregion of `de≤T` has mean square at most `C_rho,k T(1+log T)^5 A^(-2 Re rho)` for `1≤T≤A` and `T²≤L`. Two independent regions retain all mixed pairs and both reflected channels. Extending the same physical budget to all proportional windows is refuted below; the original weighted current estimate remains open. |
+| Test proportional windows and retain the full moving complement | `exists_coherentBand_dyadic_window_exceeding_region_budget` in [EtaCoherentBandWindowObstruction.lean](../RiemannGaussian/EtaCoherentBandWindowObstruction.lean), and `pairedEtaCompletedMomentInverseCoherentComplement_cross_re_le` in [EtaCoherentBandComplement.lean](../RiemannGaussian/EtaCoherentBandComplement.lean). | An explicit original band has coefficient energy `K` and physical mean square at least `abs(X_rho)² K²/4` on windows `A=(B_rho+2)K,L=K`. A quadratic lower bound also persists over `[A,2A)`, refuting the same logarithmic region budget there. The full moving complement has mixed real part at most `-abs(X_rho)² K²/8` in the initial subwindow beyond an explicit threshold. The original signed current estimate remains open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -2772,6 +2773,144 @@ has not been excluded; RH, the explicit zero-free strip, and certificate
 status are unchanged. No mathematical priority claim is made for this
 finite estimate or its elementary divisor-counting inputs.
 
+## Checked coherent windows and the complete moving complement
+
+The proposed extension to every proportional window is false when it
+must hold uniformly for all original inverse subregions.
+[exists_coherentBand_dyadic_window_exceeding_region_budget](../RiemannGaussian/EtaCoherentBandWindowObstruction.lean)
+proves a counterexample on the actual completed inverse at every actual
+zero. It makes no assumption that the zero is off the critical line.
+The same slice quantifies the compensating mixed contribution from
+the full moving complement in
+[pairedEtaCompletedMomentInverseCoherentComplement_cross_re_le](../RiemannGaussian/EtaCoherentBandComplement.lean).
+
+For a fixed actual zero set
+
+\[
+ B=B_\rho=4(1+\lceil|\rho|\rceil),\quad
+ S_{B,K}=\{(BK+2j+1,1):0\le j<K\},\quad
+ A=T=(B+2)K,\quad L=K.
+\]
+
+These are `pairedEtaInverseCoherenceScale` and
+`pairedEtaInverseCoherentBand`. The scale obeys `B≥4` and `B≥4|rho|`.
+Every outer divisor is odd, every inner Möbius factor is literally
+`mu(1)=1`, and the entire band belongs to `H_T`. For `M=A+r`,
+`0≤r<K`, the actual quotient `floor(M/(BK+2j+1))` stays one.
+Thus the original order-zero band is constant on the whole window:
+
+\[
+ V_{\rho,0}(a;M,S_{B,K})=
+ X_\rho\sum_{j<K}(BK+2j+1)^{-\rho}.
+\]
+
+[pairedEtaCompletedMomentInverseCoherentBand_eq_powerSum](../RiemannGaussian/EtaInverseCoherentBand.lean)
+retains this exact complex identity for every center `a`, including
+`log(M+1)`. The selected product coefficient is exactly the indicator
+of these divisors.
+[sum_sq_pairedEtaInverseRegionCoefficient_coherentBand](../RiemannGaussian/EtaCoherentBandCoefficients.lean)
+proves its energy is `K`, and
+`pairedEtaWeightedDivisorParityFamily_coherentBand_eq` proves the
+complete original parity sum is `K` at every index in the window.
+
+The analytic comparison also retains the full complex phase. The
+positive-axis power derivative gives
+
+\[
+ \left|\sum_{j<K}(BK+2j+1)^{-\rho}-K(BK)^{-\rho}\right|
+ \le \frac K2(BK)^{-\operatorname{Re}\rho}.
+\]
+
+This is
+[norm_pairedEtaCoherentBandPowerSum_sub_anchor_le](../RiemannGaussian/EtaCoherentBandPhase.lean),
+with the phase condition discharged by the explicit `B_rho`.
+Writing `P_M=M^\rho V_(rho,0)(a;M,S_(B,K))`, the compiled
+`pairedEtaCompletedMomentInverseCoherentBand_physical_norm_lower`
+therefore gives `abs(P_M)≥abs(X_rho)K/2` throughout the window.
+Consequently
+
+\[
+ \frac1K\sum_{r<K}|P_{A+r}|^2
+ \ge \frac{|X_\rho|^2}{4}K^2,\qquad
+ \frac{\frac1K\sum_{r<K}|P_{A+r}|^2}
+      {\sum_{n\le T}w_{S_{B,K}}(n)^2}
+ \ge\frac{|X_\rho|^2}{4}K.
+\]
+
+The two terminal bounds are
+[pairedEtaCompletedMomentInverseCoherentBandPhysicalMeanSquare_lower](../RiemannGaussian/EtaCoherentBandLowerBound.lean)
+and `pairedEtaCompletedMomentInverseCoherentBand_energy_ratio_lower`.
+The coefficient `abs(X_rho)²/4` is strictly positive for every actual
+zero. Keeping the coherent initial subwindow inside the full doubling
+window gives the stronger domain statement
+
+\[
+ \frac1A\sum_{r<A}|P_{A+r}|^2
+ \ge \frac{|X_\rho|^2}{4(B_\rho+2)}K^2,
+ \qquad A=(B_\rho+2)K.
+\]
+
+This is
+`pairedEtaCompletedMomentInverseCoherentBandPhysicalMeanSquare_dyadic_lower`.
+The remaining window terms are retained through their nonnegative
+norm squares; their quotients need not stay one. A proved
+scaled-logarithm limit shows that
+`T(1+log T)^5/K²→0` for `T=(B+2)K`. Hence every fixed constant
+multiple of that previous physical region budget is exceeded by some
+member of this explicit family even on `[A,2A)`. This does not claim
+that the original quadratic window condition
+is optimal in every regime; it rules out its unrestricted proportional
+extension with the same region budget.
+
+Every remaining original inverse cell is retained in
+
+\[
+ R_{B,K,M}=\mathcal H_M\setminus S_{B,K},\qquad
+ Q_M=M^\rho V_{\rho,0}(a;M,R_{B,K,M}).
+\]
+
+The complete region `H_M` now moves with `M`. Exact finite inversion gives
+
+\[
+ P_M+Q_M=M^\rho X_\rho
+       \operatorname{pairedEtaUnpairedDirichletPrefix}(M,\rho).
+\]
+
+This is the composition of
+`pairedEtaCompletedMomentInverseCoherentComplement_add_band` and
+`pairedEtaCompletedMomentInverseRegion_full_zero`, using the existing
+full moment inversion rather than a new cancellation premise.
+The whole physical prefix has norm at most
+`abs(X_rho) Z_rho`, where `Z_rho=abs(rho)/Re(rho)+1`.
+Before any norm or real part is taken,
+`pairedEtaCompletedMomentInverseCoherentComplement_cross_eq` proves
+
+\[
+ Q_M\overline{P_M}+|P_M|^2
+ =\left(M^\rho X_\rho
+       \operatorname{pairedEtaUnpairedDirichletPrefix}(M,\rho)\right)
+       \overline{P_M}.
+\]
+
+Its exact complex correction has norm at most
+`abs(X_rho) Z_rho abs(P_M)`. If `K≥4Z_rho`, the anchored lower
+bound implies
+
+\[
+ \operatorname{Re}(Q_M\overline{P_M})
+ \le-\frac{|X_\rho|^2}{8}K^2,\qquad 0\le r<K.
+\]
+
+This identifies a quantitative negative interaction with the full moving
+complement at order zero. Taking separate region norms before this
+interaction is used loses a leading quadratic cancellation. The result
+does not control the completed signed current's weighted first absolute
+moment, and it does not compare away the surviving off-critical principal
+endpoint. The next estimate must retain the full cross-region identity,
+both reflected completion channels, and the actual head and adjacent
+moment orders. The global goal, zero-free strip, and certificate status
+are unchanged; no mathematical priority claim is made.
+
 ## Next mathematical obligations
 
 The signed prime input now excludes the explicit reciprocal-logarithm edge
@@ -2898,10 +3037,14 @@ Excluding the surviving off-critical endpoint contribution remains open. The nex
    and mixed pairs of independently selected regions, using the actual
    signed product coefficients. Averaging the physical error weakens the
    starting constraint to `T≤A`, but the window must still satisfy `T²≤L`.
-   Controlling the full region as it grows with `M`, on the scales needed
-   for the original weighted current, requires an additional estimate.
-   Taking absolute values of every separate band does not by itself
-   supply a uniform current bound.
+   The coherent-band counterexample now rules out extending that same
+   physical budget uniformly to all proportional windows. The complete
+   moving complement supplies a proved negative mixed contribution at
+   order zero. Its exact complex correction must be retained when
+   estimating the original head and adjacent reflected moment pairs.
+   Separate-band norm bounds cannot replace that leading cancellation.
+   Controlling the original weighted signed current still requires an
+   additional arithmetic estimate on the full completed channels.
    Any use of the earlier period averages must also preserve their
    divisor-dependent normalizers and errors. Any use of the
    mixed phase matrix must identify the actual finite eta feature vector

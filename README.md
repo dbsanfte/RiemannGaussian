@@ -27,35 +27,42 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Estimate the original completed eta inverse on curved divisor regions, retaining product signs, moving centers, multiplicity, and mixed reflected channels. Finite-region mean-square control now permits products up to the starting cutoff. The frontier is the remaining quadratic averaging-length cost and the divisor region that grows with the physical index; both must be controlled to bound the original odd-weighted first absolute current moment uniformly.
+Couple original inverse bands with their full moving complements before estimating the completed signed current. Actual coherent bands rule out extending the separate-region logarithmic budget to every proportional window. Their negative mixed interaction with the complement is now quantified at order zero. The frontier is using the complete cancellation, both reflected channels, and every multiplicity branch to bound the original odd-weighted first absolute current moment uniformly.
 
 ## Latest Update
 
-Lean now bounds the original completed inverse on **any fixed portion
-of the curved divisor region** `d,e≥1, de≤T`. Write `V_rho,k(M;S)` for
-`pairedEtaCompletedMomentInverseRegion` at center `log(M+1)` on such a
-portion `S`. For `sigma=Re rho`,
+Lean now identifies **a coherent contribution and its compensating mixed
+term in the original inverse**. For every actual zero and `K≥1`, an explicit band
+of `K` odd outer divisors keeps inner divisor and divided cutoff one
+throughout a window of length `K`, starting at `A=(B_rho+2)K`.
+Here `B_rho=4(1+ceil(norm(rho)))` retains the full complex frequency,
+and `X_rho` is the original xi completion factor.
+Write `V_rho,0(M;S)` for the original inverse sum on this band at
+center `log(M+1)`, and `w_S` for its signed product coefficients.
 
 \[
- \frac1L\sum_{n=0}^{L-1}|V_{\rho,k}(A+n;S)|^2
- \le C_{\rho,k}T(1+\log T)^5 A^{-2\sigma},
- \qquad 1\le T\le A,\quad T^2\le L.
+ \frac1K\sum_{r<K}|(A+r)^\rho V_{\rho,0}(A+r;S)|^2
+ \ge \frac{|X_\rho|^2}{4}K^2,
+ \qquad \sum_{1\le n\le A} w_S(n)^2=K.
 \]
 
-[pairedEtaCompletedMomentInverseRegionMeanSquare_le](RiemannGaussian/EtaMomentInverseRegion.lean)
-proves this below the actual zero multiplicity, with an explicit constant.
-Exact product grouping retains every inner Möbius sign and translated
-center. Complete factorization counts control the coefficient energy;
-averaging the physical error allows `T≤A` in place of the previous
-`T²≤A` restriction.
-[pairedEtaSignedCompletedMomentInverseHyperbolicBands_adjacent_le](RiemannGaussian/EtaInverseRegionSigned.lean)
-also bounds the signed mixed pair of two independently selected outer
-bands, including their complete curved inner ranges and both reflected
-completion channels.
+[pairedEtaCompletedMomentInverseCoherentBandPhysicalMeanSquare_lower](RiemannGaussian/EtaCoherentBandLowerBound.lean)
+proves this after summing the complete complex band.
+[exists_coherentBand_dyadic_window_exceeding_region_budget](RiemannGaussian/EtaCoherentBandWindowObstruction.lean)
+then shows that no zero-dependent constant can extend the previous
+`T(1+log T)^5` physical mean-square budget to all full doubling windows.
+This rules out that proposed strengthening, independently of whether
+the zero is on the critical line.
 
-The regions in these averages are fixed, and the averaging length must
-still be at least `T²`. Controlling the full divisor region as it grows
-with the physical index remains open. The
+With `P,Q` denoting the band and its full moving complement after
+multiplication by `M^rho`, the mixed contribution is negative.
+[pairedEtaCompletedMomentInverseCoherentComplement_cross_re_le](RiemannGaussian/EtaCoherentBandComplement.lean)
+bounds `Re(Q*conj(P))` by `-|X_rho|²K²/8` during the initial `K` steps once
+`K≥4(norm(rho)/Re(rho)+1)`. The preceding exact complex identity retains
+the entire complement and the completed eta prefix.
+
+This quantifies cancellation between inverse regions at order zero.
+The complete signed current still needs its own uniform estimate. The
 [uniform weighted goal](docs/eta-current-reconstruction-plan.md) remains
 open, and the existing zero-free strip is unchanged. This slice proves
 neither RH nor a `13/18` certificate.
