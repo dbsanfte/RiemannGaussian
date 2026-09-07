@@ -27,45 +27,41 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Prove the uniform weighted arithmetic bound on the remaining band floor(log M) < L ≤ M². The original normalization now satisfies p_M log M → 1, and each interior residual has an exact prime-discrepancy formula with one common vanishing error. Its growing square-sum cost and the remaining quotient correlations still need bounds. The logarithmic head and quadratic tail decay; full arithmetic decay and RH remain open.
+Attack the uniform weighted arithmetic goal through the zero-dependent Möbius hyperbola split. The small-divisor half decays on square windows, and the large half has an exact quotient correlation formula. Its mean square retains the nonzero source. The open step is an independent operator bound forcing decay at a hypothetical right-half zero. The logarithmic residual program remains available; full arithmetic decay and RH are unproved.
 
 ## Latest Update
 
-Lean now proves the **exact leading coefficient of the original Möbius
-normalization**:
+Lean now checks the **completed Möbius hyperbola split and its full
+quotient correlation form** on `D²≤M<2D²`. The
+[exact reindexing](RiemannGaussian/EtaMoebiusHyperbolaSplit.lean)
+retains every endpoint and complex coefficient. The square-range
+hypothesis ensures that the divisor cut does not bisect a quotient fibre.
+
+The [existing quadratic sampler](RiemannGaussian/EtaMoebiusHyperbolaLowMeanSquare.lean)
+gives the small-half mean square the bound
 
 \[
- p_M\log M\longrightarrow1.
+ L_D\le U_D=C_\rho(1+\log D)D^{1-4\Re\rho},
 \]
 
-The [complete Euler correction](RiemannGaussian/EtaMoebiusLogEulerCancellation.lean)
-tends to zero by the repo's proved harmonic Möbius cancellation.
-Finite [summation by parts](RiemannGaussian/MoebiusHarmonicMonotoneTail.lean)
-includes every quotient jump and both endpoints. A split at `M/Q` bounds
-the whole correction by `2/Q+4ε(1+log Q)` when the actual harmonic
-prefixes from `floor(M/Q)` through `M` have absolute value at most `ε`.
-
-With `e_M=p_M log M−1→0` and the exact prime discrepancy
-`Δ(L)=H_eta(L)−P(L)`, the
-[interior formula](RiemannGaussian/EtaMoebiusNormalizationMainTerm.lean)
-is `log M*r_M(L)=Δ(L)+e_M H_eta(L)` for every `1≤L≤M`.
-The error from `Δ(L)` is uniformly at most `2|e_M|`. The full signed
-square expansion retains its cross moment; a sufficient upper bound is
+which tends to zero when `Re(ρ)>1/4`. This threshold concerns an
+auxiliary convergence theorem; it is not a new zero-free strip.
+The large-half energy `H_D` retains the
+[complete signed quotient correlations](RiemannGaussian/EtaMoebiusHyperbolaLargeMeanSquare.lean).
+The source identity also yields the checked
+[quantitative estimate](RiemannGaussian/EtaMoebiusHyperbolaSourceLimit.lean)
 
 \[
- \sum_{L\le R}r_M(L)^2\le
- \frac{2\sum_{L\le R}\Delta(L)^2+8R e_M^2}{(\log M)^2}
- \quad(R\le M).
+ |H_D-|S_\rho|^2|\le U_D+2|S_\rho|\sqrt{U_D},
 \]
 
-**The growing square sum is still uncontrolled.** The main-term limit
-does not provide the rate needed to absorb its factor `R`. The proved
-logarithmic head and complete quadratic tail remain available, while
-`floor(log M)<L≤M²` still needs an arithmetic estimate. Full decay, the
-uniform weighted current bound, and a sharper numerical zero strip do
-not follow from this normalization result. The
-[endgame assessment](docs/eta-parity-endgame-assessment.md) records the
-precise remaining obligations.
+so `H_D→|S_ρ|²>0` at any hypothetical right-half zero.
+**A separate large-half decay estimate remains unproved.** Such an
+estimate would supply the proposed contradiction. The
+[hyperbola assessment](docs/eta-hyperbola-endgame-assessment.md) records
+the precise operator target and the window losses that existing estimates
+do not remove. This package does not prove RH, full arithmetic decay,
+the uniform weighted current bound, or a sharper numerical zero strip.
 
 ## Notable Formalisations
 
@@ -90,6 +86,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Complete divisor square sum and decay of both arithmetic ends** | The full continuum energy equals a genuinely summable sequence of squared signed divisor residuals. Its interior retains the exact prime variance and normalization cost. The original normalization is at most `5/log M` in absolute value, giving a joint prefix bound `484R/log² M` for `R≤M`. The complete head through `floor(log M)` and tail past `M²` both decay. The intervening band remains uncontrolled and enters the original zero comparison unchanged. | [hasSum_pairedEtaMoebiusArithmeticCellResidual_sq](RiemannGaussian/EtaMoebiusArithmeticEnergy.lean), [pairedEtaMoebiusContinuumResidualEnergy_eq_primeVariance_add_exterior](RiemannGaussian/EtaMoebiusPrimeVariance.lean), [pairedEtaMoebiusArithmeticSquarePrefix_le_log_bound](RiemannGaussian/EtaMoebiusArithmeticGrowingHead.lean), [pairedEtaMoebiusArithmeticSquareTail_quadratic_tendsto_zero](RiemannGaussian/EtaMoebiusArithmeticSamplingTail.lean), [pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_middle](RiemannGaussian/EtaMoebiusMiddleBudget.lean) |
 | **Exact Hardy transform and balanced floor-cell norm comparison** | The full arithmetic Hardy transform preserves the original reciprocal-cell-weighted norm, including the vanishing endpoint term. The actual eta residual is its signed dyadic difference. Its full energy lies between `1/6` and `6` times the balanced floor-cell energy for all original bounded weights. Decay of either full norm remains unproved. | [tsum_etaDiscreteHardyTransform_sq_eq](RiemannGaussian/EtaDiscreteHardyTransform.lean), [pairedEtaMoebiusArithmeticCellResidual_eq_hardy_dyadic](RiemannGaussian/EtaMoebiusBeurlingComparison.lean), [pairedEtaMoebiusContinuumResidualEnergy_beurling_bounds](RiemannGaussian/EtaMoebiusBeurlingComparison.lean) |
 | **Exact Möbius normalization main term and uniform prime discrepancy** | The entire signed Euler quotient correction tends to zero, giving `p_M log M→1` for the original coefficients. Every interior cell has the exact rescaled residual `Δ(L)+e_M H_eta(L)`, uniformly within `2|e_M|` of its prime discrepancy. The complete signed cross moment and the growing normalization square cost remain explicit; full residual decay is open. | [pairedEtaMoebiusLogEulerCorrection_tendsto_zero](RiemannGaussian/EtaMoebiusLogEulerCancellation.lean), [pairedEtaMoebiusLogHarmonic_mul_log_tendsto_one](RiemannGaussian/EtaMoebiusNormalizationMainTerm.lean), [pairedEtaMoebiusArithmeticSquarePrefix_mul_log_sq_eq_discrepancy](RiemannGaussian/EtaMoebiusNormalizationMainTerm.lean) |
+| **Completed Möbius hyperbola and full quotient correlations** | The original source splits exactly at a square-root divisor cutoff, with complete quotient fibres and every signed cross term retained. The small-half mean square decays for `Re(rho)>1/4`. The large half converges to the positive source square with an explicit error; an independent right-half decay estimate remains open. | [pairedEtaCompletedMoebiusLargeAggregate_eq_quotientBlocks](RiemannGaussian/EtaMoebiusHyperbolaSplit.lean), [pairedEtaCompletedMoebiusOriginalMeanSquare_hyperbola_tendsto_zero](RiemannGaussian/EtaMoebiusHyperbolaLowMeanSquare.lean), [pairedEtaCompletedMoebiusLargeMeanSquare_eq_quotientCorrelations](RiemannGaussian/EtaMoebiusHyperbolaLargeMeanSquare.lean), [pairedEtaCompletedMoebiusLargeMeanSquare_square_source_error_le](RiemannGaussian/EtaMoebiusHyperbolaSourceLimit.lean) |
 | **Actual exterior parity energy and signed covariance** | Exact period-two waves represent the original full grid exterior. Discrete summation by parts has zero boundary terms, and the resulting short-window covariance retains every signed primitive cross term. The entire far part costs at most `M²/(2d)`. The original zero comparison transfers to the remaining near energy with a vanishing allowance; its decay remains open. | [integral_pairedEtaMoebiusGrid_exterior_eq_parity](RiemannGaussian/EtaMoebiusExteriorParityEnergy.lean), [pairedEtaMoebiusGridParitySum_eq_primitive_differences](RiemannGaussian/EtaMoebiusExteriorParity.lean), [integral_pairedEtaMoebiusGridParitySum_sq_eq_covariance](RiemannGaussian/EtaMoebiusParityCovariance.lean), [pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_nearParity](RiemannGaussian/EtaMoebiusParityBudget.lean) |
 | **Exact exterior Möbius arithmetic and partial residual decay** | The harmonic correction and actual target-interval residual tend to zero. The entire exterior energy is exactly the square integral of a signed odd/even primitive formula plus its full infinite tail, bounded by `(k+1)^2/4^k` for every refinement schedule. Decay of the growing arithmetic square integral remains open. | [pairedEtaDyadicMoebiusRefinedHeadResidual_tendsto_zero](RiemannGaussian/EtaMoebiusRefinedHeadDecay.lean), [pairedEtaMoebiusTrialGridCombination_eq_arithmeticPrefix](RiemannGaussian/EtaMoebiusGridArithmetic.lean), [pairedEtaDyadicMoebiusRefinedExteriorEnergy_eq_arithmetic_add_tail](RiemannGaussian/EtaMoebiusExteriorBudget.lean) |
 | **Explicit zero-free strip from signed prime positivity** | The exact pole geometry and complete signed local zero sum give a multiplicity-sensitive margin more than 31 times the preceding signed margin. Every actual zero of absolute ordinate at least one stays at least `1/(56458 log(abs(gamma)+22))` from either edge. | [multiplicity_le_quadratic_signed_zero_gap](RiemannGaussian/ZetaSignedExactPole.lean), [nontrivialZetaZero_mem_signedQuadratic_strip](RiemannGaussian/ZetaSignedQuadraticMargin.lean), [nontrivialZetaZero_mem_quadratic_reciprocal_log_strip](RiemannGaussian/ZetaSignedQuadraticComparison.lean) |

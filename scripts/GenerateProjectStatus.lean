@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "The original logarithmic Moebius normalization has its exact leading coefficient one after the complete signed Euler correction is proved to vanish; the growing arithmetic square-sum bound remains open"
-    lineOne := "normalization main term"
-    lineTwo := "p_M log M tends to 1"
+    label := "The complete large-divisor mean square on square windows equals the actual complex quotient correlation sum with every cross term retained; the vanishing operator estimate remains open"
+    lineOne := "hyperbola quotient form"
+    lineTwo := "all cross terms retained"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaMoebiusLogHarmonic_mul_log_tendsto_one
+      ``RiemannGaussian.pairedEtaCompletedMoebiusLargeMeanSquare_eq_quotientCorrelations
   }
 ]
 
@@ -1073,6 +1073,25 @@ run_cmd do
         "cost or prove the required prime-discrepancy square bound. No " ++
         "Mellin norm comparison with the classical logarithmic approximation " ++
         "or sharper numerical zero strip is certified. " ++
+        "The zero-dependent completed Moebius hyperbola split now retains its exact " ++
+        "small and large divisor sums. For D>=1 and D^2<=M, the strict quotient gap " ++
+        "floor(M/(D+1))<floor(M/D) proves that the large half is a sum of whole quotient " ++
+        "fibres, correcting the insufficient D<M hypothesis in the supplied steer. " ++
+        "On D^2<=M<2*D^2 it is exactly a zero-extended family on q<=2*D. Its full " ++
+        "mean square equals the complete complex q,r correlation sum over the actual " ++
+        "square window, retaining all moving boundaries and cross terms. The existing " ++
+        "quadratic sampler gives the small-half bound U_D=C_rho*(1+log(D))*D^(1-4*Re(rho)), " ++
+        "hence small-half decay when Re(rho)>1/4; this is not a zero-free strip. " ++
+        "The exact source expansion retains its mixed term with the complex small-half " ++
+        "average. The large-half mean square H_D satisfies " ++
+        "abs(H_D-norm(source)^2)<=U_D+2*norm(source)*sqrt(U_D), so it tends to the " ++
+        "strictly positive source square whenever Re(rho)>1/4, including on D=2^k. " ++
+        "At a hypothetical right-half zero a separately proved estimate " ++
+        "H_D=O_rho,epsilon((D^2)^(1-2*Re(rho)+epsilon)) would contradict that limit; " ++
+        "this operator estimate remains unproved and has not been introduced as an " ++
+        "axiom or placeholder. The fixed-divisor sampler and product collision bounds " ++
+        "do not yet control the moving quotient coefficients and their physical window " ++
+        "cost. The logarithmic residual's remaining middle band is still open. " ++
         "The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
@@ -1126,8 +1145,10 @@ run_cmd do
       ("target", .str
         ("Prove first absolute-moment summability of the actual completed eta leading " ++
           "flux at every nontrivial zero, preserving completion weights, multiplicity, " ++
-          "and the simple-zero head term. The new positive support/gap heat estimates " ++
-          "do not discharge this RH-equivalent signed arithmetic obligation."))
+          "and the simple-zero head term. The current route seeks a vanishing estimate " ++
+          "for the full completed Moebius quotient correlation form at a hypothetical " ++
+          "right-half zero. The checked hyperbola split and small-half decay retain a " ++
+          "nonzero large-half source; the required independent operator bound is open."))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

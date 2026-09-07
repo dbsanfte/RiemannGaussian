@@ -6,6 +6,12 @@ weighted arithmetic bound. Both the growing head through `floor(log M)`
 and the complete tail beyond `M²` now decay. The intervening arithmetic
 band still needs a uniform estimate.
 
+The new [hyperbola source assessment](eta-hyperbola-endgame-assessment.md)
+records a separate zero-dependent route suggested by the later steer.
+Its exact quotient form and small-half decay are checked; a large-half
+operator estimate remains open. The logarithmic residual results below
+are preserved and are not a prerequisite for that route.
+
 ## The exact arithmetic target
 
 For real weights `w`, define

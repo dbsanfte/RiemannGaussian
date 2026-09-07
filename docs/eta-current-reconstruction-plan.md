@@ -6,6 +6,17 @@ estimate**. The objective remains active until both parts are proved and
 verified. The completed [signed endpoint package](eta-signed-endpoint-theorem-plan.md)
 provides the actual support, gap, phase, Gaussian, and mixed-matrix inputs.
 
+The current research route audits the supplied hyperbola reductio on the
+original zero-dependent Möbius source. The
+[hyperbola assessment](eta-hyperbola-endgame-assessment.md) records the
+checked exact quotient reindexing, complete small-half decay, full signed
+correlation form, and quantitative nonzero source limit for the large
+half. The separate large-half operator estimate remains open. The
+logarithmic residual program is preserved in the
+[arithmetic assessment](eta-parity-endgame-assessment.md); its growing
+middle band is also uncontrolled. Neither route has completed the
+uniform weighted estimate.
+
 ## Actual target and current status
 
 Write `J_rho(N)` for the existing, unchanged
