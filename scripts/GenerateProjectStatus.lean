@@ -69,12 +69,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh
   },
   {
-    label := "Actual zeta zeros lie in an explicit reciprocal-logarithm strip"
+    label := "Exact pole geometry gives an improved multiplicity-sensitive zero-free strip"
     lineOne := "zero-free strip"
     lineTwo := "explicit 1/log"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.nontrivialZetaZero_mem_signedLogarithmic_strip
+      ``RiemannGaussian.nontrivialZetaZero_mem_signedQuadratic_strip
   },
   {
     label := "External Montgomery--Taylor simple-zero benchmark"
@@ -210,7 +210,7 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"220\">Signed prime positivity: reciprocal-log zero margin; " ++
+    "  <text class=\"frontier\" x=\"20\" y=\"220\">Exact pole geometry: >31x previous signed zero margin; " ++
       "positive return exponent; uniform weighted bound open.</text>\n" ++
     "</svg>\n"
 
@@ -659,10 +659,25 @@ run_cmd do
         "preserves multiplicity information and transports to the unchanged " ++
         "Gaussian return with its original C_rho. The exponent strictly " ++
         "decreases at every actual simple zero but remains in [7/8,1). " ++
+        "The exact-pole refinement now applies the local decomposition at " ++
+        "height zero on 0<x<=1/4, giving 1/x+448*log(22), and retains " ++
+        "the pole's real Cauchy kernel x/(x^2+y^2) at nonzero height. " ++
+        "The full signed prime estimate yields 8*m-7 <= " ++
+        "56448*log(abs(y)+22)*d+357*d^2/y^2 for d=1-Re(rho)<=1/24. " ++
+        "A positive rational subsolution and reflection give " ++
+        "delta_quad(m,y)=min(1/24,q*abs(y)/(56448*log(abs(y)+22)*abs(y)+19*q)), " ++
+        "where q=8*m-7 for every actual positive analytic multiplicity. " ++
+        "Lean proves delta_quad(m,y)>31*delta_signed(y) for y!=0, and " ++
+        "delta_quad(m,y)>=1/(56458*log(abs(y)+22)) for abs(y)>=1. " ++
+        "The maximum with every preceding margin gives the original " ++
+        "current and Gaussian return the exponent 1-2*Delta(m,y), " ++
+        "strictly smaller at every actual simple zero and still in [7/8,1). " ++
+        "The complete signed zeroth-order inverse energy retains its proved " ++
+        "finite weighted transport budget under this bound. " ++
         "This formalises the classical reciprocal-logarithm shape with " ++
         "conservative explicit constants; no novelty priority or improvement " ++
-        "over the literature is claimed. No uniform transfer estimate " ++
-        "to the original current's weighted absolute moment is proved. These " ++
+        "over the literature is claimed. The uniform cutoff-independent " ++
+        "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
         "for RH. No 13/18 certificate or RH proof is claimed.")),
     ("externalBaselines", .arr #[

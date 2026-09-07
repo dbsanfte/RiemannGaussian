@@ -59,6 +59,7 @@ the objective.
 | Extend joint inverse control to curved regions and average the full physical error | `pairedEtaCompletedMomentInverseRegionMeanSquare_le` and the exact original-band identity in [EtaMomentInverseRegion.lean](../RiemannGaussian/EtaMomentInverseRegion.lean); `pairedEtaSignedCompletedMomentInverseHyperbolicBands_adjacent_le` in [EtaInverseRegionSigned.lean](../RiemannGaussian/EtaInverseRegionSigned.lean). | Every fixed subregion of `de≤T` has mean square at most `C_rho,k T(1+log T)^5 A^(-2 Re rho)` for `1≤T≤A` and `T²≤L`. Two independent regions retain all mixed pairs and both reflected channels. Extending the same physical budget to all proportional windows is refuted below; the original weighted current estimate remains open. |
 | Test proportional windows and retain the full moving complement | `exists_coherentBand_dyadic_window_exceeding_region_budget` in [EtaCoherentBandWindowObstruction.lean](../RiemannGaussian/EtaCoherentBandWindowObstruction.lean), and `pairedEtaCompletedMomentInverseCoherentComplement_cross_re_le` in [EtaCoherentBandComplement.lean](../RiemannGaussian/EtaCoherentBandComplement.lean). | An explicit original band has coefficient energy `K` and physical mean square at least `abs(X_rho)² K²/4` on windows `A=(B_rho+2)K,L=K`. A quadratic lower bound also persists over `[A,2A)`, refuting the same logarithmic region budget there. The full moving complement has mixed real part at most `-abs(X_rho)² K²/8` in the initial subwindow beyond an explicit threshold. The original signed current estimate remains open. |
 | Transport complete zeroth-order inverse cancellation to both original current branches | `pairedEtaLeadingCurrent_fullInverseEnergy_firstMoment_stability` in [EtaCurrentFullInverseEnergy.lean](../RiemannGaussian/EtaCurrentFullInverseEnergy.lean), and `pairedEtaLeadingCurrent_weighted_coherentComplement_error_le` in [EtaCurrentCoherentComplement.lean](../RiemannGaussian/EtaCurrentCoherentComplement.lean). | Both branches reduce to signed complete zeroth energies with positive real coefficients and summable odd-weighted error. Independent band/complement splits retain all mixed products, and the actual coherent bands fit every literal cutoff by integer division. The weighted absolute sum of the full signed energy remains open. |
+| Sharpen the actual prime constraint on the current's horizontal growth | `multiplicity_le_quadratic_signed_zero_gap` in [ZetaSignedExactPole.lean](../RiemannGaussian/ZetaSignedExactPole.lean), `nontrivialZetaZero_mem_signedQuadratic_strip` in [ZetaSignedQuadraticMargin.lean](../RiemannGaussian/ZetaSignedQuadraticMargin.lean), and `pairedEtaLeadingCurrent_firstMoment_le_quadraticPrime` in [EtaCurrentQuadraticPrimeBound.lean](../RiemannGaussian/EtaCurrentQuadraticPrimeBound.lean). | Exact pole geometry gives a multiplicity-sensitive margin more than 31 times the previous signed margin at every nonzero ordinate. For absolute ordinate at least one, the margin is at least `1/(56458 log(abs(y)+22))`. Both original current branches, the Gaussian return, and the complete inverse energy inherit the improved exponent while preserving all preceding margins. The exponent remains positive. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -3042,14 +3043,131 @@ to both multiplicities are established. They do not cancel the different
 horizontal powers in the two reflected full channels. The existing
 conditional positive-power lower bound still applies at a hypothetical
 off-critical zero. The uniform bound, an off-critical exclusion, and RH
-remain open; the concrete zero-free strip is unchanged. No priority claim
-or new zero-proportion certificate is made.
+remain open. That transport did not alter the concrete zero-free strip;
+the following arithmetic estimate strengthens it. No priority claim or
+new zero-proportion certificate is made.
+
+## Checked exact-pole quadratic margin and the original current
+
+The compiled terminal
+[nontrivialZetaZero_mem_signedQuadratic_strip](../RiemannGaussian/ZetaSignedQuadraticMargin.lean)
+gives a strictly stronger explicit region containing every actual
+nontrivial zero. Its arithmetic input is the unchanged von Mangoldt
+series with signed `3-4-1` positivity and the complete local divisor.
+The canonical disc contains a selected zero near the right boundary,
+not both reflected zeros simultaneously. Reflection is applied only after
+proving the right margin.
+
+The real-axis estimate
+`neg_logDeriv_riemannZeta_real_le_local` in
+[ZetaSignedExactPole.lean](../RiemannGaussian/ZetaSignedExactPole.lean)
+uses the existing signed decomposition at height zero:
+
+\[
+ \operatorname{Re}\!\left(-\frac{\zeta'}{\zeta}(1+x)\right)
+ \le \frac1x+448\log 22,\qquad 0<x\le\frac14.
+\]
+
+This removes the preceding error `28224` and the much smaller restriction
+`x≤1/28224`. The exact identity
+`zetaPole_real_part` retains
+
+\[
+ \operatorname{Re}\frac1{x+i y}=\frac{x}{x^2+y^2}.
+\]
+
+`neg_logDeriv_riemannZeta_re_le_exactPole_sub_poleSum` keeps the
+entire signed local zero sum beside this term. At `y≠0` it is at
+most `x/y²`. At the selected actual zero, the full analytic
+multiplicity contributes `-m/(x+1-beta)`.
+`four_mul_multiplicity_div_gap_le_exactPole` therefore proves
+
+\[
+ \frac{4m}{x+1-\beta}\le\frac3x+
+ 448\bigl(3L(0)+4L(y)+L(2y)\bigr)+\frac{17x}{4y^2},
+ \qquad L(y)=\log(|y|+22),
+\]
+
+for `beta≥3/4` and `0<x≤1/4`. The full complex prime series and
+local logarithmic-derivative identities remain available upstream.
+Using `L(0)≤L(y)` and `L(2y)≤2L(y)` bounds the logarithmic
+error by `4032L(y)`.
+
+Set `d=1-beta`. When `d≤1/24`, choosing `x=6d` preserves every
+analytic side condition. The terminal
+`multiplicity_le_quadratic_signed_zero_gap` proves
+
+\[
+ 8m-7\le 56448L(y)d+357\frac{d^2}{y^2}.
+\]
+
+The rational subsolution in
+`rational_margin_le_of_quadratic_gap` gives the explicit margin
+
+\[
+ q_m=8m-7,\qquad
+ \delta_{\rm quad}(m,y)=
+ \min\!\left\{\frac1{24},
+ \frac{q_m|y|}{56448L(y)|y|+19q_m}\right\}.
+\]
+
+Every actual analytic multiplicity has `m≥1` and `q_m≥1`. The
+implemented weight is `8*(m-1)+1` with natural subtraction so its unused
+order-zero definition is also positive; `zetaSignedMultiplicityWeight_eq`
+proves the displayed coefficient at every actual order.
+The cap handles zeros outside the local boundary neighborhood.
+Completed reflection preserves the ordinate and multiplicity, giving
+
+\[
+ \delta_{\rm quad}(m,\gamma)
+ \le\operatorname{Re}\rho
+ \le1-\delta_{\rm quad}(m,\gamma).
+\]
+
+[thirtyOne_mul_signedLogZeroMargin_lt_quadratic](../RiemannGaussian/ZetaSignedQuadraticComparison.lean)
+proves the exact strict comparison
+`31*delta_signed(y)<delta_quad(m,y)` for every `y≠0`.
+`nontrivialZetaZero_mem_quadratic_reciprocal_log_strip` gives the simpler
+margin `1/(56458 log(abs(gamma)+22))` for `abs(gamma)≥1`.
+These are bounds on the literal zeros, with all analytic premises
+discharged. They improve the preceding project formalisation; they are
+not presented as improving classical analytic zero-free regions.
+
+The bridge in
+[EtaCurrentQuadraticPrimeBound.lean](../RiemannGaussian/EtaCurrentQuadraticPrimeBound.lean)
+takes the maximum `Delta(m,y)` of this new margin and every previous
+signed, eta, and multiplicity margin. The compiled terminals
+`pairedEtaLeadingCurrent_firstMoment_le_quadraticPrime` and
+`pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_quadraticPrime`
+give the unchanged current and actual return the bound
+
+\[
+ S_\rho(K),\ S^{\rm return}_\rho(K)
+ \le C_\rho(K+1)^{\,1-2\Delta(m,\gamma)}.
+\]
+
+The existing explicit `pairedEtaCurrentReturnGrowthConstant` supplies
+`C_rho`, with exact critical-line cancellation handled separately.
+`pairedEtaCurrentFullInverseEnergy_firstMoment_le_quadraticPrime` gives
+the complete signed inverse energy the same exponent and the constant
+`C_rho+sum_N pairedEtaCurrentZeroEnergyErrorEnvelope rho N`.
+That additional sum is already proved finite, and all band/complement
+cross terms remain available in the exact inverse representation.
+
+`etaQuadraticPrimeProduct_return_exponent_lt_of_simple` proves strict
+improvement over the preceding exponent at every actual simple zero.
+`etaQuadraticPrimeProduct_return_exponent_bounds` still places the
+stated exponent in `[7/8,1)`. This does not establish the uniform
+cutoff-independent estimate or exclude every off-critical zero.
+The global goal remains open, with no new zero-proportion certificate
+or novelty-priority claim.
 
 ## Next mathematical obligations
 
-The signed prime input now excludes the explicit reciprocal-logarithm edge
-regions above, preserving every earlier multiplicity margin. The
-simple-zero bound has strictly improved. It does not force real part `1/2`,
+The exact-pole prime input now excludes the larger explicit
+multiplicity-sensitive edge regions above, preserving every earlier
+margin. Its improvement over the previous signed margin exceeds a
+factor of thirty-one at every nonzero ordinate. It does not force real part `1/2`,
 and its return bound has a proved positive exponent. The remaining task is to rule out the interior
 off-critical contribution while retaining the unchanged absolute weighted
 target. The following inverse and heat carriers remain available for that

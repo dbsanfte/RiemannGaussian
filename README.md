@@ -27,37 +27,40 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Bound the signed energies of the complete zeroth-order inverse sums, keeping each band together with its moving complement. Both original current branches now reduce to these energies with summable odd-weighted error and positive multiplicity-dependent coefficients. The remaining frontier is a uniform bound for the weighted absolute sum of the full signed energy. Internal band/complement cancellation is proved; excluding the surviving off-critical contribution remains open.
+Control the original current through its complete signed inverse energy and the actual prime series. Exact pole geometry now gives a multiplicity-sensitive zero-free margin more than 31 times the previous signed margin. Both current branches and the Gaussian return inherit the bound; the exponent strictly improves at simple zeros. That exponent remains positive. The global frontier is excluding the surviving off-critical contribution and bounding the weighted absolute moment uniformly.
 
 ## Latest Update
 
-Lean now connects **both original current branches to the complete
-zeroth-order inverse energy with a finite weighted error budget**.
-For the actual multiplicity, let `c_rho=rho` at a simple zero and
-`c_rho=(m-1) alpha_(m-2) conj(alpha_(m-1))` otherwise, where
-`alpha_k=k!/rho^k`. Both have strictly positive real part.
-Writing `V_rho` for the full original inverse sum at cutoff `2(N+2)`,
-the signed energy is
+Lean now proves **a strictly stronger concrete zero-free strip**.
+For every actual zero `rho=beta+i gamma` of analytic multiplicity `m`,
+[nontrivialZetaZero_mem_signedQuadratic_strip](RiemannGaussian/ZetaSignedQuadraticMargin.lean)
+gives `delta_m(gamma) ≤ beta ≤ 1-delta_m(gamma)`, where
 
 \[
- E_\rho(N)=2\delta_N
- \bigl(\operatorname{Re}(c_{\rho^*})|V_{\rho^*}|^2
-       -\operatorname{Re}(c_\rho)|V_\rho|^2\bigr).
+ q_m=8m-7,\qquad
+ \delta_m(\gamma)=\min\!\left\{\frac1{24},
+ \frac{q_m|\gamma|}
+ {56448|\gamma|\log(|\gamma|+22)+19q_m}\right\}.
 \]
 
-[pairedEtaLeadingCurrent_fullInverseEnergy_firstMoment_stability](RiemannGaussian/EtaCurrentFullInverseEnergy.lean)
-bounds the difference between the original current's weighted first
-absolute moment and that of `E_rho`, uniformly in terminal cutoff.
-The same file proves the corresponding Gaussian-return budget.
-[pairedEtaLeadingCurrent_weighted_coherentComplement_error_le](RiemannGaussian/EtaCurrentCoherentComplement.lean)
-keeps `|P|²+|Q|²+2 Re(Q conj(P))` in each channel at the literal cutoff;
-the complex four-product identity remains available upstream.
+[thirtyOne_mul_signedLogZeroMargin_lt_quadratic](RiemannGaussian/ZetaSignedQuadraticComparison.lean)
+proves that this margin exceeds **31 times the previous signed margin**
+at every nonzero ordinate. Above height one,
+`1/(56458 log(|gamma|+22))` is a simpler checked lower bound.
+The gain comes from retaining the exact pole contribution
+`x/(x²+gamma²)` and applying the signed local decomposition on the real
+axis; the complete local zero sum and genuine multiplicity remain present.
 
-This closes the transport of the complete zeroth-order cancellation to
-both multiplicity branches. A uniform bound for the weighted absolute
-sum of `E_rho` itself remains open. The
-[global goal](docs/eta-current-reconstruction-plan.md) and the existing
-zero-free strip are unchanged; neither RH nor a `13/18` certificate is proved.
+[pairedEtaLeadingCurrent_firstMoment_le_quadraticPrime](RiemannGaussian/EtaCurrentQuadraticPrimeBound.lean)
+transports the new strip to both original current branches.
+The same file bounds the actual Gaussian return and complete signed
+inverse energy, preserves every previous margin, and proves a strictly
+smaller exponent at every actual simple zero.
+
+The resulting bound still grows with cutoff: its stated exponent lies
+in `[7/8,1)`. The [uniform weighted goal](docs/eta-current-reconstruction-plan.md)
+and RH remain open. This improves the project's formal bound; no
+improvement over classical zero-free regions or novelty priority is claimed.
 
 ## Notable Formalisations
 
@@ -70,7 +73,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Gaussian heat and reflected-zero Grams** | The complete matched Gaussian correlation equals the boundary heat-residue sum. At positive heat time, its vanishing is equivalent to RH. | [riemannXiUpperReflectedPairGaussianTotal_eq_boundaryHeatResidueTotal](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L187), [riemannXiUpperReflectedPairGaussianTotal_eq_zero_iff_rh](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L197) |
 | **Suzuki arithmetic and spectral formulas** | Suzuki's positive-time arithmetic function equals its spectral expansion on `Im z > 1/2`. The literal arithmetic `Psi` is strictly positive on a nonzero punctured neighbourhood of the origin. | [riemannXiSuzukiArithmeticPPositive_eq_spectral_safe](RiemannGaussian/RiemannXiSuzukiWeilVerticalLimit.lean#L462), [exists_pos_on_abs_riemannXiSuzukiPsi](RiemannGaussian/RiemannXiSuzukiPointwiseLocalPositivity.lean#L298) |
 | **Xi growth and divisor summability** | Unconditional `exp(O(R log R))` xi growth and convergence of the multiplicity-weighted inverse-square zero series. | [riemannXi_logLinearGrowth](RiemannGaussian/GaussianXiLogLinearGrowth.lean#L315), [summable_distinct_zetaZeroInverseSquareNorm](RiemannGaussian/GaussianXiInverseSquareSummability.lean#L294) |
-| **Explicit zero-free strip from signed prime positivity** | A complete local divisor and bounded analytic remainder retain every zero's signed pole contribution. The actual von Mangoldt series gives a reciprocal-logarithm edge margin for every nontrivial zero, with conservative explicit constants. | [neg_logDeriv_riemannZeta_re_le_sub_zero](RiemannGaussian/ZetaSignedLocalEstimate.lean), [nontrivialZetaZero_mem_signedLogarithmic_strip](RiemannGaussian/ZetaSignedZeroMargin.lean) |
+| **Explicit zero-free strip from signed prime positivity** | The exact pole geometry and complete signed local zero sum give a multiplicity-sensitive margin more than 31 times the preceding signed margin. Every actual zero of absolute ordinate at least one stays at least `1/(56458 log(abs(gamma)+22))` from either edge. | [multiplicity_le_quadratic_signed_zero_gap](RiemannGaussian/ZetaSignedExactPole.lean), [nontrivialZetaZero_mem_signedQuadratic_strip](RiemannGaussian/ZetaSignedQuadraticMargin.lean), [nontrivialZetaZero_mem_quadratic_reciprocal_log_strip](RiemannGaussian/ZetaSignedQuadraticComparison.lean) |
 | **Finite Hardy-space geometry** | Orthogonality in genuine boundary `L²`, including repeated roots, and a basis-independent determinant formula for the residual Gram operator. | [finiteModelBoundaryLp_inner_residualInner_negative_eq_zero](RiemannGaussian/FiniteHardyOrthogonality.lean#L260), [finiteHardyCrossAngleComplementGramOperator_det_eq_basisResidual_ratio](RiemannGaussian/FiniteHardyMetricDeterminant.lean#L294) |
 | **Eta as a positive-measure Laplace transform** | On `Re s > 0`, paired eta divided by `s` is exactly the Laplace transform of Lebesgue measure restricted to the alternating logarithmic intervals `(log(2n+1), log(2n+2)]`. | [integral_exp_neg_mul_pairedEtaLogMeasure_eq_pairedEtaCore_div](RiemannGaussian/RiemannXiSuzukiPositiveCriticalStripEtaInfiniteLaplaceMeasure.lean#L219) |
 | **Critical eta support/gap heat law** | A phase-resolved boundary decomposition on the actual eta intervals gives the sharp critical term `(2/√π) h log(1/h)` with error at most `32h`; the stronger phase-profile error is uniform in the ordinate. | [pairedEtaPhaseMismatch_boundary_error_le](RiemannGaussian/EtaLogSupportShift.lean), [pairedEtaSupportGapGaussianLeakage_uniform_error_le](RiemannGaussian/EtaSupportGapGaussian.lean#L349) |
@@ -151,11 +154,11 @@ positivity or vanishing direction remains unproved.
   represented zero, including its completion factors and multiplicity-aware
   features; it supplies no critical-line proportion by itself.
 - **Formalised a concrete reciprocal-logarithm zero-free strip.**
-  [nontrivialZetaZero_mem_signedLogarithmic_strip](RiemannGaussian/ZetaSignedZeroMargin.lean)
-  gives an explicit margin at both edges for every actual nontrivial zero,
+  [nontrivialZetaZero_mem_signedQuadratic_strip](RiemannGaussian/ZetaSignedQuadraticMargin.lean)
+  gives a multiplicity-sensitive margin at both edges for every actual nontrivial zero,
   combining the repository's eta bounds with classical signed prime
-  positivity. The [strict comparison](RiemannGaussian/ZetaSignedMarginComparison.lean)
-  improves the previous project bound at every nonzero ordinate. This is a
+  positivity. [thirtyOne_mul_signedLogZeroMargin_lt_quadratic](RiemannGaussian/ZetaSignedQuadraticComparison.lean)
+  proves a margin more than 31 times the previous signed project bound at every nonzero ordinate. This is a
   formalisation of a classical type of region, with no novelty claim.
 - **Combined literal eta arithmetic, polynomial phase, and Gaussian heat at second order.**
   [pairedEtaSupportGapGaussianLeakage_polynomial_finite_part_tendsto](RiemannGaussian/EtaPolynomialHeatFinitePart.lean)
