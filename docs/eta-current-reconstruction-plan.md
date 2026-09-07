@@ -55,7 +55,8 @@ the objective.
 | Improve the zero margin for simple zeros using height-adapted eta bounds | `norm_riemannZeta₁_le_etaThinStrip` in [EtaThinStripRectangle.lean](../RiemannGaussian/EtaThinStripRectangle.lean), `nontrivialZetaZero_mem_reciprocal_logarithmic_strip` and `etaPrimeProductZeroMargin_lt_logarithmic` in [EtaLogarithmicMarginComparison.lean](../RiemannGaussian/EtaLogarithmicMarginComparison.lean), and `pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_le_etaRefinedPrimeProduct` in [EtaLogarithmicZeroMargin.lean](../RiemannGaussian/EtaLogarithmicZeroMargin.lean). | A positive explicit logarithmic margin constrains every actual zero; above height twenty-one it dominates `1/(32*C*log(|gamma|+21)^14)`. It strictly improves the earlier ordinate-only margin. The maximum with the previous multiplicity margin retains both bounds and strictly lowers the exponent for simple zeros. The exponent remains in `[7/8,1)`, and the uniform goal is open. |
 | Retain signed local zero poles in the prime comparison | `norm_localZetaLogRemainder_le` in [ZetaLocalLogDerivative.lean](../RiemannGaussian/ZetaLocalLogDerivative.lean), `neg_logDeriv_riemannZeta_re_le_sub_zero` in [ZetaSignedLocalEstimate.lean](../RiemannGaussian/ZetaSignedLocalEstimate.lean), and `nontrivialZetaZero_mem_signedLogarithmic_strip` in [ZetaSignedZeroMargin.lean](../RiemannGaussian/ZetaSignedZeroMargin.lean). | Every actual zero has the positive margin `abs(y)/(1800000*(abs(y)+1)*log(abs(y)+22))`. This strictly improves the previous logarithmic margin at every nonzero ordinate. The maximum preserves all previous multiplicity bounds and improves the original return exponent for simple zeros; the exponent remains in `[7/8,1)`. |
 | Transport Fourier estimates to actual moving-center moments and inverse entries | `pairedEtaCompletedMomentOriginalMeanSquare_le_quadratic` in [EtaMomentQuadraticMeanSquare.lean](../RiemannGaussian/EtaMomentQuadraticMeanSquare.lean), the signed adjacent bound in [EtaMomentSignedQuadraticFamily.lean](../RiemannGaussian/EtaMomentSignedQuadraticFamily.lean), and `norm_pairedEtaCompletedMomentInversePartialTerm_sub_zero_le` in [EtaMomentInverseReduction.lean](../RiemannGaussian/EtaMomentInverseReduction.lean). | Every order below the actual multiplicity has the original physical mean-square bound for `D²≤A,L`. Each actual inverse center satisfies the required logarithmic interval, giving an explicit inner-range error with the outer complex weight retained. The full inverse sums and uniform current bound remain open. |
-| Estimate both actual inverse divisor sums on physical rectangles | `pairedEtaCompletedMomentInverseRectangleMeanSquare_le_quadratic` in [EtaInverseRectangleMeanSquare.lean](../RiemannGaussian/EtaInverseRectangleMeanSquare.lean), with the original signed adjacent bound in [EtaInverseRectangleSigned.lean](../RiemannGaussian/EtaInverseRectangleSigned.lean). | Joint mean square is at most `C_rho,k ED(1+log E)²(1+log(ED))² A^(-2 Re rho)` for `(ED)²≤A,L`, below the actual multiplicity. Exact signed product grouping, collision counts, Fourier support, and physical corrections are all proved. The complete inverse range and interactions between rectangles remain open. |
+| Estimate both actual inverse divisor sums on physical rectangles | `pairedEtaCompletedMomentInverseRectangleMeanSquare_le_quadratic` in [EtaInverseRectangleMeanSquare.lean](../RiemannGaussian/EtaInverseRectangleMeanSquare.lean), with the original signed adjacent bound in [EtaInverseRectangleSigned.lean](../RiemannGaussian/EtaInverseRectangleSigned.lean). | Joint mean square is at most `C_rho,k ED(1+log E)²(1+log(ED))² A^(-2 Re rho)` for `(ED)²≤A,L`, below the actual multiplicity. Exact signed product grouping, collision counts, Fourier support, and physical corrections are all proved. The extension below covers fixed curved regions and their mixed pairs; the complete growing inverse remains open. |
+| Extend joint inverse control to curved regions and average the full physical error | `pairedEtaCompletedMomentInverseRegionMeanSquare_le` and the exact original-band identity in [EtaMomentInverseRegion.lean](../RiemannGaussian/EtaMomentInverseRegion.lean); `pairedEtaSignedCompletedMomentInverseHyperbolicBands_adjacent_le` in [EtaInverseRegionSigned.lean](../RiemannGaussian/EtaInverseRegionSigned.lean). | Every fixed subregion of `de≤T` has mean square at most `C_rho,k T(1+log T)^5 A^(-2 Re rho)` for `1≤T≤A` and `T²≤L`. Two independent regions retain all mixed pairs and both reflected channels. The quadratic averaging-length cost and the full region growing with the physical index remain open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -2622,13 +2623,13 @@ average at most
        =\frac{C^\square_{\rho,k}+C^\square_{\rho,l}}2.
 \]
 
-This supplies a joint estimate for a genuine part of the original inverse,
-including its adjacent repeated-zero orders. The complete inverse extends
-over `de≤M`, whereas the present mean-square estimate requires
-`(ED)²≤min(A,L)` for each rectangle. The remaining products, interactions
-between rectangles, and the unchanged weighted head and mixed current
-sums still need an independent global cancellation estimate. The uniform
-weighted goal and RH remain open, and the zero-free strip is unchanged.
+This rectangle theorem supplies a joint estimate for a genuine part of
+the original inverse, including its adjacent repeated-zero orders. It
+requires `(ED)²≤min(A,L)`. The following extension handles fixed curved
+regions and their mixed interactions with a weaker starting-cutoff
+condition. The unchanged weighted head and mixed current sums still need
+an independent global cancellation estimate. The uniform weighted goal
+and RH remain open, and the zero-free strip is unchanged.
 
 The connection between gcd sums and multiplicative energy is classical;
 see de la Bretèche, Munsch, and Tenenbaum,
@@ -2636,6 +2637,140 @@ see de la Bretèche, Munsch, and Tenenbaum,
 section 1.2. The checked contribution here is the explicit application to the
 original completed inverse with all product coefficients, moving centers,
 and physical error costs retained. No priority claim is made.
+
+## Checked curved inverse regions and averaged physical errors
+
+The terminal estimate is now
+[pairedEtaCompletedMomentInverseRegionMeanSquare_le](../RiemannGaussian/EtaMomentInverseRegion.lean).
+It applies to every fixed finite subset `S` of
+
+\[
+ \mathcal H_T=\{(d,e):d,e\ge1,\ de\le T\}.
+\]
+
+The carrier `pairedEtaCompletedMomentInverseRegion` is the literal sum
+of the original inverse cells:
+
+\[
+ V_{\rho,k}(a;M,S)=
+ \sum_{(d,e)\in S}d^{-\rho}
+ U_{\rho,k}(a-\log d;\lfloor M/d\rfloor,e).
+\]
+
+Here `U` is `pairedEtaCompletedMomentMoebiusTerm` from the preceding
+moment reconstruction. The compiled
+`pairedEtaInverseHyperbolicRegion_inner_cutoff` proves
+`e≤floor(M/d)` whenever `(d,e)∈H_T` and `T≤M`.
+For the actual outer band
+`S_(T,E,F)={(d,e)∈H_T:E<d≤F}`,
+[pairedEtaCompletedMomentInverseHyperbolicBand_eq_sum](../RiemannGaussian/EtaMomentInverseRegion.lean)
+proves the exact original nested form
+
+\[
+ V_{\rho,k}(a;M,S_{T,E,F})
+ =\sum_{E<d\le F}
+ I_{\rho,k}(a;M,d,\lfloor T/d\rfloor).
+\]
+
+Every inner range is curved, and the translated centers and original
+physical cutoff `M` remain intact. Exact product grouping gives
+
+\[
+ w_S(n)=\sum_{\substack{(d,e)\in S\\de=n}}\mu(e),\qquad
+ V_{\rho,k}(a;M,S)=\sum_{n\le T}w_S(n)A_{\rho,k}(a;M,n).
+\]
+
+The latter is
+`pairedEtaCompletedMomentInverseRegion_eq_atoms`; the atom `A` is the
+same original completed atom used for rectangles. The complete complex
+kernel on two independently selected regions is retained by
+`pairedEtaCompletedMomentInverseRegion_mul_conj_eq_pairs` and
+`pairedEtaSignedCompletedMomentInverseRegionPair_eq_double_sum`.
+Neither region has to be a rectangle, and no disjointness is required.
+
+The arithmetic estimate counts every pair of divisors through its
+common-multiple condition:
+
+\[
+ \sum_{n\le T}\tau(n)^2
+ =\sum_{d,e\le T}\left\lfloor
+       \frac{T}{\operatorname{lcm}(d,e)}\right\rfloor
+ \le T\sum_{d,e\le T}\frac{\gcd(d,e)}{de}
+ \le T H_T^3\le T(1+\log T)^3.
+\]
+
+[sum_Icc_card_divisors_sq_le_log_cube](../RiemannGaussian/NatDivisorSquareMean.lean)
+proves the final bound, using the full common-divisor expansion in
+[sum_Icc_gcd_div_mul_le_harmonic_cube](../RiemannGaussian/NatDivisorCommonGcd.lean).
+Each positive product fiber embeds in its actual divisor antidiagonal.
+Consequently
+[sum_sq_pairedEtaInverseRegionCoefficient_le_log_cube](../RiemannGaussian/EtaInverseHyperbolicCoefficients.lean)
+proves `sum_(n≤T) w_S(n)²≤T(1+log T)³`, including interactions
+between separate parts of the selected region.
+
+The physical correction now uses the same coefficient energy
+`E_w=sum_(n≤T)w(n)²` as Fourier sampling. For any real signed coefficients,
+`k<m`, `T≤M`, and `log M≤a≤log(M+1)`,
+[pairedEtaWeightedMomentDivisorFamily_physical_error_sq_le](../RiemannGaussian/EtaWeightedAtomPhysical.lean)
+proves
+
+\[
+ \left|M^\rho\sum_{n\le T}w(n)A_{\rho,k}(a;M,n)
+ -\beta_{\rho,k}\sum_{n\le T}w(n)
+          \operatorname{sign}_\eta(\lfloor M/n\rfloor)\right|^2
+ \le \Gamma_{\rho,k}^2\frac{T^3}{M^2}E_w.
+\]
+
+Its preceding theorem retains the full complex signed error sum.
+[mean_range_inv_sq_le](../RiemannGaussian/FiniteInverseSquareWindow.lean)
+uses an adjacent reciprocal telescope to prove
+
+\[
+ \frac1L\sum_{r<L}\frac1{(A+r)^2}
+ \le\frac2{A(A+L)},\qquad A,L\ge1.
+\]
+
+This replaces a uniform `A^(-2)` error cost with the average over
+the actual window. The physical square correction therefore costs at most
+`4 Gamma_(rho,k)² T³ E_w/[A(A+L)]`. For `1≤T≤A` and `T²≤L`,
+its scale factor `T³/[A(A+L)]` is at most one. Combined with the
+proved weighted Fourier estimate, this gives
+
+\[
+ \frac1L\sum_{r<L}|V_{\rho,k}(\log(A+r+1);A+r,S)|^2
+ \le C_{\rho,k}\,T(1+\log T)^5 A^{-2\operatorname{Re}\rho},
+ \quad C_{\rho,k}=10S_0|\beta_{\rho,k}|^2+4\Gamma_{\rho,k}^2,
+ \quad S_0=4+16\pi^2.
+\]
+
+The theorem is valid below the actual analytic zero multiplicity.
+The corresponding signed mixed first absolute estimate is
+[pairedEtaSignedCompletedMomentInverseRegionMeanAbsolute_le](../RiemannGaussian/EtaInverseRegionSigned.lean).
+Its right side is
+
+\[
+ T(1+\log T)^5
+ \left(C^{\mathrm{mix}}_{\rho^*,k,l}A^{-2(1-\operatorname{Re}\rho)}
+       +C^{\mathrm{mix}}_{\rho,k,l}A^{-2\operatorname{Re}\rho}\right),
+ \qquad C^{\mathrm{mix}}_{\rho,k,l}=(C_{\rho,k}+C_{\rho,l})/2.
+\]
+
+The compiled terminal
+`pairedEtaSignedCompletedMomentInverseHyperbolicBands_adjacent_le`
+discharges both band inclusions and the two adjacent orders
+`k=m−2,l=m−1` for `m≥2`. This controls mixed pairs between independently
+selected curved bands as well as pairs within one band.
+
+The precise gain is `T≤A` in place of the previous `T²≤A` condition,
+and control of fixed curved regions rather than just rectangles.
+The region is fixed while `M=A+r` varies, and `L≥T²` remains necessary
+for this stated estimate. In particular, setting `T=A` covers the whole
+physical region at the start of a long window, not the full growing
+region `H_(A+r)` at every index. The original odd-weighted first absolute
+current bound is still open. Its conditional off-critical power growth
+has not been excluded; RH, the explicit zero-free strip, and certificate
+status are unchanged. No mathematical priority claim is made for this
+finite estimate or its elementary divisor-counting inputs.
 
 ## Next mathematical obligations
 
@@ -2757,12 +2892,16 @@ Excluding the surviving off-critical endpoint contribution remains open. The nex
    complex weight and proves its translated center condition, but its
    `D²/q` cost does not control the full inner range. Summing the actual
    inverse head and adjacent mixed terms over all outer cutoffs remains open.
-   The new rectangle estimate now controls both divisor sums jointly on
+   The rectangle estimate controls both divisor sums jointly on
    `(ED)²≤A,L`, with area cost `ED` and explicit logarithmic factors.
-   Extending that bound across the complete hyperbolic range `de≤M` must
-   preserve the exact signed product coefficients and interactions between
-   rectangles; taking absolute values of every rectangle separately is not
-   yet justified as a route to the uniform current bound.
+   The curved-region extension now controls any fixed subregion of `de≤T`
+   and mixed pairs of independently selected regions, using the actual
+   signed product coefficients. Averaging the physical error weakens the
+   starting constraint to `T≤A`, but the window must still satisfy `T²≤L`.
+   Controlling the full region as it grows with `M`, on the scales needed
+   for the original weighted current, requires an additional estimate.
+   Taking absolute values of every separate band does not by itself
+   supply a uniform current bound.
    Any use of the earlier period averages must also preserve their
    divisor-dependent normalizers and errors. Any use of the
    mixed phase matrix must identify the actual finite eta feature vector

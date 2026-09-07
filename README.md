@@ -27,34 +27,35 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Transport Fourier phase estimates through the original completed eta inverse. Joint mean-square control now covers both divisor sums on physical rectangles, preserving actual moving centers, multiplicity, and signed reflected channels. The frontier is extending this control beyond the quadratic product range and combining all remaining inverse terms strongly enough to bound the original odd-weighted first absolute current moment uniformly.
+Estimate the original completed eta inverse on curved divisor regions, retaining product signs, moving centers, multiplicity, and mixed reflected channels. Finite-region mean-square control now permits products up to the starting cutoff. The frontier is the remaining quadratic averaging-length cost and the divisor region that grows with the physical index; both must be controlled to bound the original odd-weighted first absolute current moment uniformly.
 
 ## Latest Update
 
-Lean now bounds **both original inverse divisor sums together** on a
-physical rectangle. Write `V_rho,k(M;E,D)` for
-`pairedEtaCompletedMomentInverseRectangle` at center `log(M+1)`, with
-outer range `1≤d≤E` and inner range `1≤e≤D`. For `sigma=Re rho`,
+Lean now bounds the original completed inverse on **any fixed portion
+of the curved divisor region** `d,e≥1, de≤T`. Write `V_rho,k(M;S)` for
+`pairedEtaCompletedMomentInverseRegion` at center `log(M+1)` on such a
+portion `S`. For `sigma=Re rho`,
 
 \[
- \frac1L\sum_{n=0}^{L-1}|V_{\rho,k}(A+n;E,D)|^2
- \le C^\square_{\rho,k}ED(1+\log E)^2(1+\log(ED))^2 A^{-2\sigma},
- \qquad (ED)^2\le\min(A,L).
+ \frac1L\sum_{n=0}^{L-1}|V_{\rho,k}(A+n;S)|^2
+ \le C_{\rho,k}T(1+\log T)^5 A^{-2\sigma},
+ \qquad 1\le T\le A,\quad T^2\le L.
 \]
 
-[pairedEtaCompletedMomentInverseRectangleMeanSquare_le_quadratic](RiemannGaussian/EtaInverseRectangleMeanSquare.lean)
-proves this for `E,D≥1` and every `k` below the actual analytic zero
-multiplicity, with an explicit completion-dependent constant. Exact
-product grouping retains the inner Möbius signs, divided cutoffs, and
-translated centers. A proved count of equal products controls their
-coefficient energy, and the full physical correction is at most
-`Gamma_rho,k (ED)²/M`.
-[pairedEtaSignedCompletedMomentInverseRectangleMeanAbsolute_adjacent_le_quadratic](RiemannGaussian/EtaInverseRectangleSigned.lean)
-also bounds the original signed adjacent-order rectangle, retaining both
-reflected completion channels and their complementary decay rates.
+[pairedEtaCompletedMomentInverseRegionMeanSquare_le](RiemannGaussian/EtaMomentInverseRegion.lean)
+proves this below the actual zero multiplicity, with an explicit constant.
+Exact product grouping retains every inner Möbius sign and translated
+center. Complete factorization counts control the coefficient energy;
+averaging the physical error allows `T≤A` in place of the previous
+`T²≤A` restriction.
+[pairedEtaSignedCompletedMomentInverseHyperbolicBands_adjacent_le](RiemannGaussian/EtaInverseRegionSigned.lean)
+also bounds the signed mixed pair of two independently selected outer
+bands, including their complete curved inner ranges and both reflected
+completion channels.
 
-The complete inverse includes products beyond this range and interactions
-between rectangles that are not yet controlled. The
+The regions in these averages are fixed, and the averaging length must
+still be at least `T²`. Controlling the full divisor region as it grows
+with the physical index remains open. The
 [uniform weighted goal](docs/eta-current-reconstruction-plan.md) remains
 open, and the existing zero-free strip is unchanged. This slice proves
 neither RH nor a `13/18` certificate.
