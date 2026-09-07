@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "With the exact stage arithmetic weights fixed, every positive integer physical-grid refinement changes the full Möbius target residual energy by a proved vanishing amount; decay of the arithmetic residual and canonical deficit remains open"
-    lineOne := "grid refinement"
-    lineTwo := "energy change → 0"
+    label := "The actual refined logarithmic Möbius residual square integral on the entire compact target interval tends to zero for every grid-refinement schedule, using proved signed harmonic cancellation; decay of the complete exterior arithmetic integral and canonical deficit remains open"
+    lineOne := "arithmetic head"
+    lineTwo := "residual → 0"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.pairedEtaDyadicMoebiusResidual_sub_refined_tendsto_zero
+      ``RiemannGaussian.pairedEtaDyadicMoebiusRefinedHeadResidual_tendsto_zero
   }
 ]
 
@@ -228,8 +228,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">Grid refinement changes full Möbius residual energy by a vanishing amount. " ++
-      "Arithmetic residual decay and the uniform current bound remain open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">The actual Möbius residual tends to zero on the target interval. " ++
+      "Complete exterior arithmetic decay and the uniform current bound remain open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -924,6 +924,27 @@ run_cmd do
         "actual zero displacement. Decay of the refined arithmetic residual " ++
         "itself, and hence D_k->0, is still unproved. This does not identify " ++
         "a continuous Moebius multiplier or certify a sharper numerical zero strip. " ++
+        "The actual arithmetic residual on the complete compact target interval " ++
+        "now tends to zero for every refinement schedule. Write " ++
+        "p_M=sum_(n<=M) mu(n)*(1-log(n)/log(M))/n for M>1. " ++
+        "pairedEtaMoebiusLogHarmonic_eq_log_average proves p_M equals " ++
+        "sum_(n<M) H_mu(n)*(log(n+1)-log(n))/log(M), retaining the original " ++
+        "signed harmonic prefixes. Their proved unconditional cancellation " ++
+        "gives pairedEtaMoebiusLogHarmonic_tendsto_zero. On 0<t<=log(2), " ++
+        "the actual finite-grid candidate is exactly y*(1-p_M), where " ++
+        "y=d/(floor(d/exp(t))+1), and abs(exp(t)-y)<=4/d. Thus its complete " ++
+        "target-interval residual integral is at most " ++
+        "(2*abs(p_M)+4*abs(1-p_M)/d)^2. " ++
+        "pairedEtaDyadicMoebiusRefinedHeadResidual_tendsto_zero proves " ++
+        "that actual integral tends to zero for M=k+1 and " ++
+        "d=2^k*(q_k+1), for every refinement schedule q_k. The full " ++
+        "refined residual equals this head integral plus the entire " ++
+        "exterior integral over t>log(2) of exp(-t)*norm(U_k(t))^2. " ++
+        "The canonical deficit and original actual zero displacement " ++
+        "are bounded by that unchanged exterior integral plus a " ++
+        "proved vanishing head, grid, and coefficient allowance. " ++
+        "Decay of the exterior arithmetic integral, the full residual, " ++
+        "and D_k is unproved; no numerical zero-strip improvement follows. " ++
         "The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++

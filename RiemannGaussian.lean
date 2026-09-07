@@ -771,3 +771,6 @@ import RiemannGaussian.EtaMoebiusTrialRefinementLimit
 import RiemannGaussian.EtaTranslateResidualStability
 import RiemannGaussian.EtaMoebiusTrialResidualRefinement
 import RiemannGaussian.EtaMoebiusRefinedBudget
+import RiemannGaussian.EtaMoebiusLogHarmonic
+import RiemannGaussian.EtaMoebiusTrialHead
+import RiemannGaussian.EtaMoebiusRefinedHeadDecay
