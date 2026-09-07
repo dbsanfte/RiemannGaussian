@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "The exact parity recurrence factors the whole complete quotient-shell energy through its two-scale odd matrix, retaining all cross terms and the mixed phase; a joint sub-source bound remains open"
-    lineOne := "exact shell parity"
-    lineTwo := "full two-scale matrix"
+    label := "Deleting all product rows and columns divisible by a fixed odd prime changes the original cubic-window energy by a vanishing amount at a hypothetical right-half zero; the complementary sub-source bound remains open"
+    lineOne := "odd-prime product rows"
+    lineTwo := "mixed terms vanish"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaCompletedMoebiusCompleteQuotientMeanSquare_twoThirds_eq_parityEnergy
+      ``RiemannGaussian.pairedEtaMoebiusLargeMeanSquare_sub_primeFree_tendsto_zero
   }
 ]
 
@@ -1129,6 +1129,51 @@ run_cmd do
         "mixed-scale correlation. Hermitian symmetry and nonnegative diagonal entries " ++
         "are proved. The small dyadic coefficient alone does not give a sub-source " ++
         "bound; the joint signed arithmetic estimate remains open. " ++
+        "Exact Abel summation now retains both endpoints of every capped quotient " ++
+        "shell and combines its alternating bulk with the upper boundary into the " ++
+        "literal hyperbolic region q*d<=M, d>floor(M/(Q+1)). The quotient cap then " ++
+        "follows from the product constraint. Its alternating product coefficients " ++
+        "are the difference of the existing odd and even inverse-region coefficients " ++
+        "and inherit the full M*(1+log(M))^3 collision-energy bound. The original high " ++
+        "aggregate is exactly completion times sum_(n<=M) b_D(n)*n^(-rho), where " ++
+        "b_D(n)=sum_(q*d=n,d>D) eta(q)*mu(d) is fixed across the physical window. " ++
+        "It is zero for n<=D and equals mu(n) on D<n<=2*D. The complete quotient " ++
+        "carrier differs only by the already vanishing boundary fibre. Its full " ++
+        "high energy is now an explicit matrix on all ordered product pairs with " ++
+        "kernel (L-(max(n,m)-A)_+)_+/L. The kernel is one on the entire initial " ++
+        "product square, including off-diagonal entries. Coefficient energy alone " ++
+        "does not prove the open signed bilinear bound below the source square. " ++
+        "The divisor-square Dirichlet mass now converges at every exponent p>1. " ++
+        "It bounds the full product diagonal uniformly in the physical window by " ++
+        "C_rho*u^(1-2*sigma) at D=u^2, where sigma=Re(rho)>1/2 and C_rho is " ++
+        "the convergent mass at p=sigma+1/2 times the squared completion norm. " ++
+        "A proved row count also bounds every signed product pair with " ++
+        "abs(n-m)<=floor(u^(sigma-1/2)) together by 3*C_rho*u^(1/2-sigma) in " ++
+        "complex norm. This complete short-shift contribution tends to zero " ++
+        "while its radius tends to infinity. The exact complementary long-shift " ++
+        "form retains all other product interactions and the source-square " ++
+        "limit on the original cubic windows; its independent sub-source " ++
+        "upper bound is not proved. " ++
+        "The reduced-ratio extension proves at most R^2 partners per product " ++
+        "when both gcd-reduced factors are at most R. It controls long shifts " ++
+        "with both factors through floor(u^((sigma-1/2)/2)) by another " ++
+        "C_rho*u^(1/2-sigma). Removing both growing selections changes the " ++
+        "original whole-window energy by at most 4*C_rho*u^(1/2-sigma). " ++
+        "Every remaining signed product pair has a long shift and at least " ++
+        "one large reduced ratio factor. This exact remainder still retains " ++
+        "the source-square limit; an independent upper bound with a fixed " ++
+        "positive gap below that source remains open. " ++
+        "For each fixed odd prime p, the full product prefix on p-divisible " ++
+        "products is now exactly -p^(-rho) times the original divisor annulus " ++
+        "D/p<d<=D with p not dividing d, at cutoff M/p. The selected-family " ++
+        "window estimate retains all Fourier and endpoint costs. Along " ++
+        "original scales u=p*v, this whole family's mean square is bounded " ++
+        "by C_(rho,p)*(1+log v)^2*v^(3-6*sigma) and tends to zero for " ++
+        "sigma>1/2. The full mixed correlation with the original high " ++
+        "aggregate also vanishes. Deleting these product rows and columns " ++
+        "therefore has vanishing total signed cost. The exact complement " ++
+        "still carries the source square. A growing simultaneous prime " ++
+        "exclusion and a complementary sub-source estimate are not proved. " ++
         "The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++

@@ -27,35 +27,30 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Prove the uniform weighted arithmetic bound through the completed Möbius source. The A^(2/3) low-divisor range and single clipped boundary are controlled. The exact parity recurrence now couples complete quotient shells at the original and halved physical cutoffs, preserving all cross terms. Target a fixed gap below the source square through their joint energy and phase-weighted correlation; a power rate is optional. This bound and RH remain unproved.
+Prove the uniform weighted arithmetic bound through the completed Möbius source. The A^(2/3) divisor range, boundary fibre, growing short shifts and small product ratios are controlled. Exact odd-prime cancellation now removes whole divisible product families and their mixed terms on arbitrarily large cubic windows. Seek a fixed positive gap below the source square for the surviving signed energy. The uniform bound and RH remain unproved.
 
 ## Latest Update
 
-Lean now lifts the existing **Möbius parity recurrence into every complete
-quotient block and dyadic shell**. The
-[exact shell recurrence](RiemannGaussian/EtaMoebiusQuotientParityRecurrence.lean)
-is `Z_j(M)=O_j(M)-2^(-rho) O_j(floor(M/2))`, with the original quotient
-cap retained on both terms. The
-[full parity matrix](RiemannGaussian/EtaMoebiusQuotientParityMatrix.lean)
-then gives the checked energy identity
+Lean now proves [exact cancellation across an odd-prime product family](RiemannGaussian/EtaMoebiusPrimeProduct.lean).
+For each fixed odd prime `p`, the entire completed sum over products
+divisible by `p` equals `-p^(-rho)` times the original Möbius divisor
+annulus `D/p<d<=D`, restricted to `p` not dividing `d`, at cutoff `M/p`.
+The full complex factor and every finite endpoint are retained.
 
-\[
- H_k=E_{0,k}+2^{-2\Re\rho}E_{1,k}
-       -2\Re\!\left(\overline{2^{-\rho}}\,B_k\right).
-\]
+On the original schedule `D=u²`, `A=L=u³`, along `u=p*v`, its
+[mean square](RiemannGaussian/EtaMoebiusPrimeProductDecay.lean) is at most
+`C_(rho,p)*(1+log v)²*v^(3-6*Re(rho))`. This tends to zero for a
+hypothetical right-half zero. Lean also controls the whole
+[mixed correlation](RiemannGaussian/EtaMoebiusPrimeExclusion.lean), so
+deleting all rows and columns divisible by that fixed prime changes the
+original full energy by a vanishing amount.
 
-Each `E` is the energy of a whole odd shell channel, including all
-within-channel shell cross terms. `B_k` is the complete complex
-correlation between the original and halved scales. The matrix is
-Hermitian and its diagonal entries are nonnegative. The mixed term's
-phase is retained throughout.
-
-**A joint arithmetic bound with a fixed positive gap below the source
-square remains unproved.** The small dyadic multiplier alone does not
-supply it. The [assessment](docs/eta-hyperbola-endgame-assessment.md)
-records the source-preserving recurrence and the remaining signed
-correlation target. No sharper zero strip, full arithmetic decay,
-uniform weighted current bound, or RH proof is established.
+**The complementary products still carry the nonzero source square;
+their independent sub-source upper bound remains unproved.** The prime
+is fixed in this limit; a simultaneous growing prime exclusion is not
+established. The [assessment](docs/eta-hyperbola-endgame-assessment.md)
+records the exact bound and its limits. No new zero bound or RH proof
+is claimed.
 
 ## Notable Formalisations
 
@@ -82,6 +77,8 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Exact Möbius normalization main term and uniform prime discrepancy** | The entire signed Euler quotient correction tends to zero, giving `p_M log M→1` for the original coefficients. Every interior cell has the exact rescaled residual `Δ(L)+e_M H_eta(L)`, uniformly within `2|e_M|` of its prime discrepancy. The complete signed cross moment and the growing normalization square cost remain explicit; full residual decay is open. | [pairedEtaMoebiusLogEulerCorrection_tendsto_zero](RiemannGaussian/EtaMoebiusLogEulerCancellation.lean), [pairedEtaMoebiusLogHarmonic_mul_log_tendsto_one](RiemannGaussian/EtaMoebiusNormalizationMainTerm.lean), [pairedEtaMoebiusArithmeticSquarePrefix_mul_log_sq_eq_discrepancy](RiemannGaussian/EtaMoebiusNormalizationMainTerm.lean) |
 | **Completed Möbius hyperbola, boundary decay, and exact quotient shells** | The original divisor aggregate through `A^(2/3)` has vanishing mean square at a hypothetical right-half zero. The single clipped fibre also has vanishing mean square, leaving complete quotient blocks grouped into exact dyadic shells with all cross terms retained. Their nonzero source limit is checked; an independent upper bound with a fixed gap below the source remains open. | [pairedEtaCompletedMoebiusOriginalMeanSquare_twoThirds_tendsto_zero](RiemannGaussian/EtaMoebiusTwoThirdsMeanSquare.lean), [norm_pairedEtaCompletedMoebiusBoundaryFibre_twoThirds_le](RiemannGaussian/EtaMoebiusBoundaryFibre.lean), [pairedEtaCompletedMoebiusBoundaryMeanSquare_twoThirds_tendsto_zero](RiemannGaussian/EtaMoebiusBoundaryFibreDecay.lean), [pairedEtaCompletedMoebiusCompleteQuotientMeanSquare_twoThirds_eq_shellCorrelations](RiemannGaussian/EtaMoebiusQuotientShells.lean) |
 | **Parity coupling of complete quotient shells** | The literal even-divisor contribution is an exact multiple of the odd contribution at half the physical cutoff, with the original quotient cap held fixed. The full shell energy factors through a Hermitian two-scale matrix, retaining every shell pair and the phase-weighted mixed correlation. Its arithmetic upper bound remains open. | [pairedEtaCompletedMoebiusQuotientShell_eq_odd_sub_half](RiemannGaussian/EtaMoebiusQuotientParityRecurrence.lean), [pairedEtaCompletedMoebiusCompleteQuotientMeanSquare_twoThirds_eq_parityEnergy](RiemannGaussian/EtaMoebiusQuotientParityMatrix.lean) |
+| **Abel transport to a fixed alternating Möbius matrix** | Exact shell Abel identities retain both boundaries and identify the actual alternating bilinear hyperbola. Its product coefficients connect to the existing signed inverse regions and collision bound. The high aggregate uses one fixed coefficient sequence over the physical window; its full energy has an evaluated overlap kernel, with every product cross term retained. The sub-source bound remains open. | [pairedEtaCompletedMoebiusQuotientShell_eq_abel](RiemannGaussian/EtaMoebiusQuotientAbel.lean), [pairedEtaCompletedMoebiusCompleteQuotientAggregate_eq_bilinear](RiemannGaussian/EtaMoebiusQuotientBilinear.lean), [sum_sq_pairedEtaMoebiusHighProductCoefficient_le_log_cube](RiemannGaussian/EtaAlternatingHyperbolicCoefficients.lean), [pairedEtaCompletedMoebiusLargeMeanSquare_eq_bilinear_window](RiemannGaussian/EtaMoebiusBilinearWindow.lean) |
+| **Uniform decay of short shifts and small product ratios** | The true divisor-square Dirichlet mass converges above exponent one. It bounds the actual product diagonal, growing short shifts, and a growing range of small reduced product ratios at a hypothetical right-half zero. The combined removal costs at most `4*C_rho*u^(1/2-Re(rho))`. The remaining whole signed form still carries the source square; its independent upper bound remains open. | [summable_card_divisors_sq_mul_rpow_neg](RiemannGaussian/NatDivisorSquareDirichlet.lean), [pairedEtaCompletedMoebiusBilinearDiagonal_twoThirds_le](RiemannGaussian/EtaMoebiusBilinearDiagonal.lean), [norm_pairedEtaCompletedMoebiusBilinearNearForm_twoThirds_le](RiemannGaussian/EtaMoebiusBilinearShortShifts.lean), [norm_pairedEtaCompletedMoebiusLargeMeanSquare_sub_ratioRemainder_twoThirds_le](RiemannGaussian/EtaMoebiusBilinearRatioBands.lean) |
 | **Actual exterior parity energy and signed covariance** | Exact period-two waves represent the original full grid exterior. Discrete summation by parts has zero boundary terms, and the resulting short-window covariance retains every signed primitive cross term. The entire far part costs at most `M²/(2d)`. The original zero comparison transfers to the remaining near energy with a vanishing allowance; its decay remains open. | [integral_pairedEtaMoebiusGrid_exterior_eq_parity](RiemannGaussian/EtaMoebiusExteriorParityEnergy.lean), [pairedEtaMoebiusGridParitySum_eq_primitive_differences](RiemannGaussian/EtaMoebiusExteriorParity.lean), [integral_pairedEtaMoebiusGridParitySum_sq_eq_covariance](RiemannGaussian/EtaMoebiusParityCovariance.lean), [pairedEtaCurrentHorizontalDisplacement_mul_headWeight_le_moebius_nearParity](RiemannGaussian/EtaMoebiusParityBudget.lean) |
 | **Exact exterior Möbius arithmetic and partial residual decay** | The harmonic correction and actual target-interval residual tend to zero. The entire exterior energy is exactly the square integral of a signed odd/even primitive formula plus its full infinite tail, bounded by `(k+1)^2/4^k` for every refinement schedule. Decay of the growing arithmetic square integral remains open. | [pairedEtaDyadicMoebiusRefinedHeadResidual_tendsto_zero](RiemannGaussian/EtaMoebiusRefinedHeadDecay.lean), [pairedEtaMoebiusTrialGridCombination_eq_arithmeticPrefix](RiemannGaussian/EtaMoebiusGridArithmetic.lean), [pairedEtaDyadicMoebiusRefinedExteriorEnergy_eq_arithmetic_add_tail](RiemannGaussian/EtaMoebiusExteriorBudget.lean) |
 | **Explicit zero-free strip from signed prime positivity** | The exact pole geometry and complete signed local zero sum give a multiplicity-sensitive margin more than 31 times the preceding signed margin. Every actual zero of absolute ordinate at least one stays at least `1/(56458 log(abs(gamma)+22))` from either edge. | [multiplicity_le_quadratic_signed_zero_gap](RiemannGaussian/ZetaSignedExactPole.lean), [nontrivialZetaZero_mem_signedQuadratic_strip](RiemannGaussian/ZetaSignedQuadraticMargin.lean), [nontrivialZetaZero_mem_quadratic_reciprocal_log_strip](RiemannGaussian/ZetaSignedQuadraticComparison.lean) |
@@ -120,6 +117,16 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Joint control of original inverse rectangles** | Exact product grouping and a proved collision-energy estimate bound both actual inverse divisor sums together, with mean square at most `C_rho,k ED(1+log E)²(1+log(ED))² A^(-2 Re rho)` for `(ED)²≤A,L`. The original signed adjacent pair retains both physical decay rates. The complete inverse range remains open. | [sum_sq_pairedEtaInverseProductCoefficient_le_log_sq](RiemannGaussian/EtaInverseProductCoefficients.lean), [pairedEtaCompletedMomentInverseRectangleMeanSquare_le_quadratic](RiemannGaussian/EtaInverseRectangleMeanSquare.lean), [pairedEtaSignedCompletedMomentInverseRectangleMeanAbsolute_adjacent_le_quadratic](RiemannGaussian/EtaInverseRectangleSigned.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
 | **Montgomery--Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant `13` and bilinear constant `26`. | [MontgomeryVaughan.mvDiag_thirteen](RiemannGaussian/MontgomeryVaughan/Final.lean#L28), [MontgomeryVaughan.mvHilbert_twentySix](RiemannGaussian/MontgomeryVaughan/Final.lean#L31) |
+
+Odd-prime product cancellation now supplies a further arithmetic entry point:
+[pairedEtaMoebiusHighProductCoefficient_prime_mul](RiemannGaussian/EtaMoebiusPrimeProduct.lean)
+identifies the exact divisor annulus;
+[pairedEtaMoebiusPrimeProductCubicEnergy_tendsto_zero](RiemannGaussian/EtaMoebiusPrimeProductDecay.lean)
+proves decay of the entire divisible product family; and
+[pairedEtaMoebiusLargeMeanSquare_sub_primeFree_tendsto_zero](RiemannGaussian/EtaMoebiusPrimeExclusion.lean)
+retains and controls all mixed terms when deleting its rows and columns.
+These theorems use one fixed odd prime and a hypothetical right-half zero.
+The complementary upper bound remains open.
 
 The RH equivalences in this inventory are reformulations. Their open
 positivity or vanishing direction remains unproved.

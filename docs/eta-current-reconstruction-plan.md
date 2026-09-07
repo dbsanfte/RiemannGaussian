@@ -22,6 +22,63 @@ the even part is `-2^(-rho)` times the odd part at half the physical
 cutoff, with the original quotient cap retained. The full shell form is
 exactly a two-scale Hermitian parity matrix; its energy retains both whole
 odd-channel energies and their phase-weighted mixed correlation.
+The subsequent Abel transform now retains both endpoints of every capped
+shell and absorbs the upper endpoint into an alternating bilinear
+hyperbola. The high aggregate is exactly a completed partial Dirichlet sum
+with fixed coefficients `b_D(n)=sum_(qd=n,d>D) eta(q)*mu(d)` throughout the
+physical window. Their collision energy is bounded, and their first band
+is exactly the original Möbius sequence. The compiled terminal theorem
+`pairedEtaCompletedMoebiusLargeMeanSquare_eq_bilinear_window` in
+[EtaMoebiusBilinearWindow](../RiemannGaussian/EtaMoebiusBilinearWindow.lean)
+evaluates the full physical overlap kernel, retaining every product pair.
+The only difference from the complete quotient carrier is the already
+controlled boundary fibre, with its complex interference retained in
+[EtaMoebiusBilinearEnergy](../RiemannGaussian/EtaMoebiusBilinearEnergy.lean).
+This supplies a fixed coefficient vector and an explicit matrix for the
+next arithmetic estimate. Its initial product square has kernel one,
+including off-diagonal entries, so a coefficient square bound alone does
+not control that coherent contribution.
+The [weighted collision mass](../RiemannGaussian/NatDivisorSquareDirichlet.lean)
+now converges at every exponent above one. Consequently the actual
+[product diagonal](../RiemannGaussian/EtaMoebiusBilinearDiagonal.lean) is
+at most `C_rho*u^(1-2*sigma)` at `D=u²`, uniformly in the physical window.
+The checked short-shift estimate
+`norm_pairedEtaCompletedMoebiusBilinearNearForm_twoThirds_le` in
+[EtaMoebiusBilinearShortShifts](../RiemannGaussian/EtaMoebiusBilinearShortShifts.lean)
+controls the diagonal and every pair with
+`abs(n-m)<=floor(u^(sigma-1/2))` together by
+`3*C_rho*u^(1/2-sigma)`. For `sigma>1/2` this contribution vanishes and
+its radius grows without bound. The exact complementary complex form
+retains every longer product shift; its real part still tends to the
+source square on the original cubic windows. No sign or cancellation
+bound for this remaining form has been assumed.
+The [reduced-ratio extension](../RiemannGaussian/EtaMoebiusBilinearRatioBands.lean)
+now proves at most `R²` partners per product when both factors of the
+reduced ratio are at most `R`. This controls long shifts with both factors
+through `floor(u^((sigma-1/2)/2))` by another
+`C_rho*u^(1/2-sigma)`, uniformly over windows. The terminal theorem
+`norm_pairedEtaCompletedMoebiusLargeMeanSquare_sub_ratioRemainder_twoThirds_le`
+bounds the combined removal from the original full energy by
+`4*C_rho*u^(1/2-sigma)`. The exact remaining form has a long shift and at
+least one large reduced ratio factor; it still has the source-square
+limit. Its independent signed upper bound remains open.
+The [odd-prime product identity](../RiemannGaussian/EtaMoebiusPrimeProduct.lean)
+now makes an arithmetic cancellation inside a whole divisibility class:
+the completed product prefix over `p|n`, for any odd prime `p`, is exactly
+`-p^(-rho)` times the original divisor annulus `D/p<d<=D`, with `p` not
+dividing `d`, at physical cutoff `M/p`. The selected-family Fourier
+estimate retains all window and endpoint costs. On original cubic
+windows along `u=p*v`, the entire prime-product mean square is at most
+`C_(rho,p)*(1+log v)^2*v^(3-6*sigma)` and tends to zero for `sigma>1/2`.
+The full mixed correlation with the original high aggregate also tends
+to zero. The terminal theorem
+`pairedEtaMoebiusLargeMeanSquare_sub_primeFree_tendsto_zero` in
+[EtaMoebiusPrimeExclusion](../RiemannGaussian/EtaMoebiusPrimeExclusion.lean)
+therefore removes every product row and column divisible by that fixed
+prime with a vanishing total signed cost. Its exact complement still
+has the source-square limit. This is one fixed prime at a time; neither
+a growing simultaneous exclusion nor the complementary sub-source
+estimate is proved.
 The immediate target is any independent upper bound with a fixed positive
 gap below the source square; a decay or power rate is sufficient but not
 required. That arithmetic estimate remains open. The present sampler's

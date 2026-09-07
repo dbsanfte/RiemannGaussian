@@ -17,6 +17,12 @@ The complete blocks are grouped into exact dyadic shells with all cross
 terms retained. The original parity recurrence now factors their full
 energy through two odd-divisor channels at the original and halved physical
 cutoffs, retaining the same quotient cap and the complex mixed correlation.
+Abel summation now also identifies every capped shell with an alternating
+Möbius bilinear sum and both boundary terms. The high aggregate uses one
+fixed product coefficient sequence across its physical window, and its
+entire energy has an explicit overlap matrix. The original hyperbolic
+collision bound applies to the alternating coefficients, but does not
+bound their full signed quadratic form.
 **An independent bound with a fixed positive gap below
 the source square is not proved.** A full decay or power rate is a stronger
 sufficient target, not a requirement. No theorem excluding right-half
@@ -480,6 +486,293 @@ No sign, independence, or vanishing limit for `B_k` is assumed. A bound
 only on `2^(-2*sigma)`, either diagonal alone, or a fixed shell pair
 would not establish this target. The divisor exponent remains unchanged.
 
+## Abel transport to fixed alternating product coefficients
+
+The user's subsequent steer proposed an Abel transform to an alternating
+bilinear Möbius sum. This is now checked for the actual complete shells;
+the parity matrix remains available, without assuming that its mixed
+correlation has a helpful sign or a vanishing limit.
+
+Write `X_rho` for the completion factor, `F(q)=sum_(r<=q) eta(r)r^(-rho)`,
+and `P(x)=sum_(d<=x) mu(d)d^(-rho)`, where `eta(r)=(-1)^(r+1)`.
+[EtaMoebiusQuotientAbel](../RiemannGaussian/EtaMoebiusQuotientAbel.lean)
+proves the complex identity
+
+\[
+ \sum_{L<q\le U}B_{\rho,M}(q)
+ =X_\rho\left[
+   \sum_{L<q\le U}\eta(q)q^{-\rho}P(\lfloor M/q\rfloor)
+   +F(L)P(\lfloor M/(L+1)\rfloor)
+   -F(U)P(\lfloor M/(U+1)\rfloor)\right]
+ \qquad(L\le U).
+\]
+
+For the actual shell, the theorem
+`pairedEtaCompletedMoebiusQuotientShell_eq_abel` uses
+`L=min(Q,2^j-1)` and `U=min(Q,2^(j+1)-1)`, with the original
+`Q=floor(M/(D+1))`. Empty shells and both clipped endpoints are included.
+The complete prefix has only its upper boundary left; that boundary must
+not be discarded when estimating the alternating bulk.
+
+[EtaMoebiusQuotientBilinear](../RiemannGaussian/EtaMoebiusQuotientBilinear.lean)
+absorbs this boundary exactly. For any quotient cap `Q`, put
+`R=floor(M/(Q+1))`. The remaining uncompleted sum is
+
+\[
+ \sum_{\substack{q,d\ge1\\qd\le M\\q\le Q,\ d>R}}
+                  \eta(q)\mu(d)(qd)^{-\rho}.
+\]
+
+The theorem `pairedEtaMoebiusQuotientBilinearRegion_eq_divisor_cut`
+proves that `q<=Q` already follows from `qd<=M` and `d>R`. Thus this is a
+literal divisor-cut subregion of the existing
+`pairedEtaInverseHyperbolicRegion M`, not an approximate rectangular
+replacement. `pairedEtaCompletedMoebiusCompleteQuotientAggregate_eq_bilinear`
+identifies it with the actual complete carrier after multiplication by
+`X_rho`.
+
+[EtaAlternatingHyperbolicCoefficients](../RiemannGaussian/EtaAlternatingHyperbolicCoefficients.lean)
+groups by the product while keeping both signs. The generic alternating
+region coefficient is exactly the existing odd-quotient inverse-region
+coefficient minus its even-quotient counterpart. The proved divisor
+second moment gives
+
+\[
+ b_D(n)=\sum_{\substack{qd=n\\d>D}}\eta(q)\mu(d),\qquad
+ \sum_{n\le M}b_D(n)^2\le M(1+\log M)^3.
+\]
+
+The terminal coefficient bound is
+`sum_sq_pairedEtaMoebiusHighProductCoefficient_le_log_cube`.
+Also `b_D(n)=0` for `n<=D`, and
+`pairedEtaMoebiusHighProductCoefficient_eq_moebius` proves
+`b_D(n)=mu(n)` on `D<n<=2D`. The first product band therefore contains a
+literal Möbius sum; the rest of the form and its cross terms remain present.
+
+[EtaMoebiusBilinearEnergy](../RiemannGaussian/EtaMoebiusBilinearEnergy.lean)
+then proves, for every physical endpoint and fixed divisor cutoff,
+
+\[
+ \mathrm{High}_\rho(M,D)=X_\rho V_{\rho,D}(M),\qquad
+ V_{\rho,D}(M)=\sum_{n\le M}b_D(n)n^{-\rho}.
+\]
+
+This is `pairedEtaCompletedMoebiusLargeAggregate_eq_product_prefix`.
+The coefficient sequence `b_D` is fixed while `M` ranges over the window.
+The complete quotient sum is exactly `X_rho*V+Boundary`, not an
+independently modified candidate. On `D=u²`, `M>=u³`, the difference has
+norm at most the existing `K_rho*u^(1-3*Re(rho))`. The exact energy identity
+also keeps `2 Re(X_rho V conj(Boundary))` before that error is bounded.
+
+[EtaMoebiusBilinearWindow](../RiemannGaussian/EtaMoebiusBilinearWindow.lean)
+counts which physical cutoffs contain both product indices. With both
+subtractions truncated at zero, its explicit kernel is
+
+\[
+ K_{A,L}(n,m)=\frac{[L-[\max(n,m)-A]_+]_+}{L}.
+\]
+
+The compiled theorem
+`pairedEtaCompletedMoebiusLargeMeanSquare_eq_bilinear_window` gives the
+whole complex matrix identity
+
+\[
+ H^{\rm High}_{A,L,D}
+ =|X_\rho|^2\sum_{n,m\le A+L}
+ K_{A,L}(n,m)b_D(n)b_D(m)n^{-\rho}\overline{m^{-\rho}}.
+\]
+
+All ordered pairs are included. The kernel is proved to lie in `[0,1]`,
+and for `L>0` it is **one on the entire square `n,m<=A`**, including its
+off-diagonal entries. Neither physical averaging nor the coefficient
+collision bound makes this initial contribution diagonal. The next
+estimate must use the actual Möbius coefficients and their signed
+correlations against this explicit matrix, jointly across the product
+bands. On `A=L=u³`, `D=u²`, any fixed positive gap below `|S_rho|²` on
+arbitrarily large scales still suffices. No such gap or decay of this
+uncentered form has been proved. No extension of the low-divisor range
+is part of this slice.
+
+## Uniform product-diagonal and growing short-shift decay
+
+The next estimate uses the fixed coefficient sequence to remove a genuine
+part of the whole product matrix. Put `sigma=Re(rho)` and
+
+\[
+ Z(p)=\sum_{n\ge1}\tau(n)^2 n^{-p},\qquad
+ C_\rho=|X_\rho|^2 Z(\sigma+1/2).
+\]
+
+[NatDivisorSquareDirichlet](../RiemannGaussian/NatDivisorSquareDirichlet.lean)
+proves `summable_card_divisors_sq_mul_rpow_neg`: `Z(p)` is a genuinely
+convergent series for every `p>1`. The proof uses the checked full
+`M*(1+log M)^3` divisor-square mean bound and Abel summation through
+Mathlib's `LSeriesSummable_of_sum_norm_bigO_and_nonneg`. For
+`1<p<=s`, `D>=1`, every finite upper endpoint satisfies the explicit bound
+
+\[
+ \sum_{D<n\le M}\tau(n)^2n^{-s}\le Z(p)D^{p-s}.
+\]
+
+This is `sum_Ioc_card_divisors_sq_mul_rpow_neg_le`. Since `b_D(n)=0`
+for `n<=D` and `|b_D(n)|<=tau(n)`, it applies to the actual signed
+coefficients without a moving-endpoint loss. In
+[EtaMoebiusBilinearDiagonal](../RiemannGaussian/EtaMoebiusBilinearDiagonal.lean),
+`pairedEtaCompletedMoebiusBilinearDiagonal_le_power` bounds the **entire
+actual product diagonal**, with its physical overlap weights, by
+
+\[
+ \mathrm{Diag}_{\rho,A,L,D}
+ \le |X_\rho|^2 Z(p)D^{p-2\sigma}.
+\]
+
+Taking `D=u²`, `p=sigma+1/2`, and `sigma>1/2` gives
+`Diag<=C_rho*u^(1-2*sigma)` uniformly for every `A,L`. Its convergence
+to zero is proved even for arbitrary sequences of physical windows.
+The exact companion theorem
+`pairedEtaCompletedMoebiusLargeMeanSquare_eq_diagonal_add_offDiagonal`
+keeps the signed complex sum of all distinct products.
+
+[EtaMoebiusBilinearShortShifts](../RiemannGaussian/EtaMoebiusBilinearShortShifts.lean)
+goes beyond that diagonal. Define the actual completed near form by the
+same full matrix, restricted only to `abs(n-m)<=H`; define the far form
+by the complementary strict inequality. Both contain the original
+complex coefficients and phases. The theorem
+`pairedEtaCompletedMoebiusLargeMeanSquare_eq_near_add_far` proves
+
+\[
+ H^{\rm High}_{A,L,D}=\mathrm{Near}_{A,L,D,H}
+                         +\mathrm{Far}_{A,L,D,H}
+\]
+
+as a complex identity, before taking real parts. Each band row has at
+most `2H+1` entries. The finite quadratic estimate and the weighted
+coefficient bound give
+
+\[
+ |\mathrm{Near}_{\rho,A,L,D,H}|
+ \le (2H+1)|X_\rho|^2Z(p)D^{p-2\sigma}.
+\]
+
+In particular, for the mathematically defined radius
+
+\[
+ H_\rho(u)=\lfloor u^{\sigma-1/2}\rfloor,
+\]
+
+the compiled theorem
+`norm_pairedEtaCompletedMoebiusBilinearNearForm_twoThirds_le` proves
+
+\[
+ |\mathrm{Near}_{\rho,A,L,u^2,H_\rho(u)}|
+ \le 3C_\rho u^{1/2-\sigma}\longrightarrow0.
+\]
+
+The companion `pairedEtaMoebiusBilinearNearRadius_tendsto_atTop` proves
+that this radius tends to infinity when `sigma>1/2`. Thus the estimate
+removes an unbounded family of cross terms together with the diagonal;
+it is not an assumption about the sign of any individual correlation.
+The bound is uniform in `A,L`, including the original cubic windows.
+
+The terminal source transport
+`pairedEtaCompletedMoebiusBilinearFarForm_twoThirds_tendsto_source`
+proves that the real part of the exact remaining long-shift form still
+tends to `|S_rho|²` under the hypothetical right-half-zero assumption.
+The next arithmetic target is a fixed positive gap below this source
+square for that **whole signed far form**, on arbitrarily large original
+scales. Near-form decay supplies no such gap by itself. A power rate for
+the far form is sufficient but remains optional. No extension of the
+low-divisor sampler, shifted-Möbius cancellation hypothesis, or RH-level
+upper bound was used in the proved short-shift estimate.
+
+## Growing reduced-ratio control among the long shifts
+
+The next selection acts inside the surviving long-shift form, so it is
+disjoint from the short band above. Write `g=gcd(n,m)` and retain the
+pairs satisfying
+
+\[
+ H<|n-m|,\qquad n/g\le R,\quad m/g\le R.
+\]
+
+[EtaMoebiusBilinearRatioBands](../RiemannGaussian/EtaMoebiusBilinearRatioBands.lean)
+proves `card_pairedEtaBilinearSmallRatio_le`: for each positive `n`, there
+are at most `R²` such partners, uniformly in the endpoint. The injection
+sends `m` to the pair `(n/g,m/g)`; equality of the first reduced factor
+and the fixed positive `n` recovers `g`, then the second recovers `m`.
+This bounds the row count even for long-range interactions such as
+`m=2n`, which need not be in any short additive band.
+
+Let `Ratio` be this actual completed complex selection and `Remainder`
+the selection with `H<abs(n-m)` and at least one reduced factor greater
+than `R`. The exact theorem
+`pairedEtaCompletedMoebiusBilinearFarForm_eq_ratio_add_remainder`
+proves `Far=Ratio+Remainder`, with all original matrix weights, Möbius
+signs and Mellin phases. The finite quadratic estimate gives
+
+\[
+ |\mathrm{Ratio}_{\rho,A,L,D,H,R}|
+ \le R^2|X_\rho|^2Z(p)D^{p-2\sigma}.
+\]
+
+Set
+
+\[
+ R_\rho(u)=\left\lfloor u^{(\sigma-1/2)/2}\right\rfloor.
+\]
+
+For `sigma>1/2`, this ratio bound is proved to tend to infinity, and
+`norm_pairedEtaCompletedMoebiusBilinearRatioForm_twoThirds_le` gives
+
+\[
+ |\mathrm{Ratio}_{\rho,A,L,u^2,H,R_\rho(u)}|
+ \le C_\rho u^{1/2-\sigma}\longrightarrow0
+\]
+
+uniformly in `A,L,H`. Thus an unbounded collection of long-range
+rational product interactions is controlled as a whole, without making
+an assumption about its individual signs. The combined terminal bound
+`norm_pairedEtaCompletedMoebiusLargeMeanSquare_sub_ratioRemainder_twoThirds_le`
+is the explicit estimate on the **original full physical energy**:
+
+\[
+ \left|H^{\rm High}_{\rho,A,L,u^2}
+       -\mathrm{Remainder}_{\rho,A,L,u^2,H_\rho(u),R_\rho(u)}\right|
+ \le 4C_\rho u^{1/2-\sigma}.
+\]
+
+The exact remainder is neither a new trial coefficient family nor a
+substitute carrier. Both removed complex selections and their vanishing
+allowance are proved. Its real part still tends to the nonzero source
+square on the actual cubic windows, by
+`pairedEtaCompletedMoebiusBilinearRatioRemainder_twoThirds_tendsto_source`.
+The outstanding arithmetic task is an independent fixed sub-source gap
+for this **whole signed remainder**, whose pairs have both long shifts
+and a large reduced ratio factor. No uniform upper bound for it is
+proved here. The divisor schedule and the original RH objective are
+unchanged.
+
+### Exploratory diagnostics for the remaining correlations
+
+Floating-point probes used the actual fixed coefficient arrays through
+`2*u³` for `u=32,64,128`, with mpmath approximations to the first two
+critical-line zeros. They are exploration, not Lean certificates or
+asymptotic estimates. An FFT evaluation grouped the exact physical
+matrix by additive product shift and reconstructed the directly averaged
+prefix energy to within `2e-13` in these samples. The positive and negative
+shift totals were much larger than their signed difference: at the first
+sampled zero and `u=128`, after division by the source square, they were
+about `506.37` and `-506.22`, leaving about `0.151` off diagonal.
+
+A separate gcd-ratio probe retained both reduced factors through `32`.
+The remaining normalized contribution at `u=128` was about `-0.0178`
+for the first sampled zero and `0.1071` for the second. These diagnostics
+give no universal sign for the omitted ratio groups. In particular, the
+proved vanishing selections above must not be used to discard the phase
+or replace the remaining signed form by a sum of independently estimated
+absolute correlations. The next estimate still needs a bound on that
+whole remaining form; no numerical observation here supplies it.
+
 The prior logarithmic Möbius family remains available as a separate
 arithmetic program. Its complete growing head and quadratic tail decay,
 and `p_M log M→1`; the band `floor(log M)<L≤M²` is still uncontrolled.
@@ -487,3 +780,100 @@ See the [arithmetic residual assessment](eta-parity-endgame-assessment.md).
 Neither that gap nor the original weighted-current objective is closed
 by this hyperbola package. No sharper numerical zero strip or novelty
 claim about an RH-level theorem is made.
+
+## Arithmetic cancellation across whole odd-prime product families
+
+The next estimate uses the actual Möbius coefficients, rather than a
+uniform bound for arbitrary vectors in the product matrix. For any odd
+prime `p`,
+[EtaMoebiusPrimeProduct](../RiemannGaussian/EtaMoebiusPrimeProduct.lean)
+proves the exact coefficient identity
+
+\[
+ b_D(pn)=-\sum_{qd=n\atop D/p<d\le D,\ p\nmid d}\eta(q)\mu(d).
+\]
+
+The proof separates the two positions of `p` in the product. Its oddness
+preserves the eta sign on the quotient, and Möbius multiplication gives
+`mu(p*d)=-mu(d)` when `p` does not divide `d`, and zero otherwise. Both
+divisor bijections retain the complete finite antidiagonal. In particular,
+the square-factor zero is part of the proof, not an independence model.
+
+Let `U_(p,D)(M)` be the original completed product prefix restricted to
+`p|n`. The compiled theorem
+`pairedEtaCompletedMoebiusPrimeProductAggregate_eq_annulus` identifies
+this entire family, when `D<=M/p`, with
+
+\[
+ U_{p,D}(M)=-p^{-\rho}
+   \sum_{D/p<d\le D\atop p\nmid d} T_\rho(M/p,d).
+\]
+
+[EtaMoebiusSelectedFamily](../RiemannGaussian/EtaMoebiusSelectedFamily.lean)
+proves the full physical-window estimate uniformly for any fixed
+selection `S` of original divisors through `D`. Both complex endpoint
+errors remain in its allowance, and the weighted Fourier sampler retains
+the complete factor `(4D²+L)/L`. No extension of the low-divisor sampling
+range is asserted.
+
+On the original schedule `u=p*v`, `D=u²`, `A=L=u³`, each divided
+physical endpoint occurs exactly `p` times. The normalized sampling
+identity retains the factor `p^(-2*sigma)`. The theorem
+`pairedEtaMoebiusPrimeProductCubicEnergy_le` in
+[EtaMoebiusPrimeProductDecay](../RiemannGaussian/EtaMoebiusPrimeProductDecay.lean)
+proves
+
+\[
+ \frac1{u^3}\sum_{t<u^3}|U_{p,u^2}(u^3+t)|^2
+ \le C_{\rho,p}(1+\log v)^2v^{3-6\sigma},
+ \qquad \sigma=\operatorname{Re}\rho,
+\]
+
+where, with the existing physical and endpoint error constants `B,H`,
+
+\[
+ C_{\rho,p}=
+ \bigl(10|X_\rho|^2C_{\rm sampling}+2(B+2H)^2\bigr)
+ p^4(1+\log p)^2.
+\]
+
+The terminal `pairedEtaMoebiusPrimeProductCubicEnergy_tendsto_zero`
+proves decay for every fixed odd prime and hypothetical `sigma>1/2`.
+These are arbitrarily large members of the original cubic windows; the
+theorem is stated along `u=p*v`, not along powers of two.
+
+The removal includes the mixed terms. Write `H(v)` for the original
+whole-window high energy and `P(v)` for the energy above. Define `W(v)`
+as the complex average of the original full high prefix times the
+conjugate of its entire prime-divisible part. The exact complementary
+prefix keeps products with `p` not dividing `n`.
+[EtaMoebiusPrimeExclusion](../RiemannGaussian/EtaMoebiusPrimeExclusion.lean)
+proves
+
+\[
+ H_{p\nmid n}(v)=H(v)+P(v)-2\operatorname{Re}W(v),
+ \qquad |W(v)|^2\le H(v)P(v).
+\]
+
+The original source limit and `P(v)->0` give `W(v)->0`. Consequently
+`pairedEtaMoebiusLargeMeanSquare_sub_primeFree_tendsto_zero` proves that
+deleting every row and column divisible by this fixed prime has vanishing
+total signed cost. The actual complementary full energy still tends to
+`|S_rho|²`, by `pairedEtaMoebiusPrimeFreeCubicEnergy_tendsto_source`.
+No sign has been assigned to an individual cross term.
+
+This controls dense divisibility classes of products by arithmetic
+cancellation. It does not supply a fixed gap below the source for the
+complement. The constant depends on `p`, and the present theorem treats
+one fixed odd prime at a time; simultaneous exclusion of a growing prime
+set, its overlaps, and its accumulated error have not been bounded.
+The oddness condition is essential to this identity. None of these
+statements proves the original uniform weighted bound or a new zero strip.
+
+As a diagnostic only, floating-point samples at the first two
+critical-line zeros gave normalized prime-product energies for `p=3`,
+`v` replaced here by the original `u`, of about `0.00197` and `0.00822`
+at `u=16`, and `0.0000719` and `0.0000976` at `u=128`. The numerical
+test used the actual coefficient arrays and checked the prime coefficient
+recurrence exactly as integer arrays. The Lean identities and bounds
+above do not depend on those samples; no off-critical zero was sampled.
