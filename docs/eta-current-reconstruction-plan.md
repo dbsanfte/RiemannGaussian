@@ -58,6 +58,7 @@ the objective.
 | Estimate both actual inverse divisor sums on physical rectangles | `pairedEtaCompletedMomentInverseRectangleMeanSquare_le_quadratic` in [EtaInverseRectangleMeanSquare.lean](../RiemannGaussian/EtaInverseRectangleMeanSquare.lean), with the original signed adjacent bound in [EtaInverseRectangleSigned.lean](../RiemannGaussian/EtaInverseRectangleSigned.lean). | Joint mean square is at most `C_rho,k ED(1+log E)²(1+log(ED))² A^(-2 Re rho)` for `(ED)²≤A,L`, below the actual multiplicity. Exact signed product grouping, collision counts, Fourier support, and physical corrections are all proved. The extension below covers fixed curved regions and their mixed pairs; the complete growing inverse remains open. |
 | Extend joint inverse control to curved regions and average the full physical error | `pairedEtaCompletedMomentInverseRegionMeanSquare_le` and the exact original-band identity in [EtaMomentInverseRegion.lean](../RiemannGaussian/EtaMomentInverseRegion.lean); `pairedEtaSignedCompletedMomentInverseHyperbolicBands_adjacent_le` in [EtaInverseRegionSigned.lean](../RiemannGaussian/EtaInverseRegionSigned.lean). | Every fixed subregion of `de≤T` has mean square at most `C_rho,k T(1+log T)^5 A^(-2 Re rho)` for `1≤T≤A` and `T²≤L`. Two independent regions retain all mixed pairs and both reflected channels. Extending the same physical budget to all proportional windows is refuted below; the original weighted current estimate remains open. |
 | Test proportional windows and retain the full moving complement | `exists_coherentBand_dyadic_window_exceeding_region_budget` in [EtaCoherentBandWindowObstruction.lean](../RiemannGaussian/EtaCoherentBandWindowObstruction.lean), and `pairedEtaCompletedMomentInverseCoherentComplement_cross_re_le` in [EtaCoherentBandComplement.lean](../RiemannGaussian/EtaCoherentBandComplement.lean). | An explicit original band has coefficient energy `K` and physical mean square at least `abs(X_rho)² K²/4` on windows `A=(B_rho+2)K,L=K`. A quadratic lower bound also persists over `[A,2A)`, refuting the same logarithmic region budget there. The full moving complement has mixed real part at most `-abs(X_rho)² K²/8` in the initial subwindow beyond an explicit threshold. The original signed current estimate remains open. |
+| Transport complete zeroth-order inverse cancellation to both original current branches | `pairedEtaLeadingCurrent_fullInverseEnergy_firstMoment_stability` in [EtaCurrentFullInverseEnergy.lean](../RiemannGaussian/EtaCurrentFullInverseEnergy.lean), and `pairedEtaLeadingCurrent_weighted_coherentComplement_error_le` in [EtaCurrentCoherentComplement.lean](../RiemannGaussian/EtaCurrentCoherentComplement.lean). | Both branches reduce to signed complete zeroth energies with positive real coefficients and summable odd-weighted error. Independent band/complement splits retain all mixed products, and the actual coherent bands fit every literal cutoff by integer division. The weighted absolute sum of the full signed energy remains open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -2911,6 +2912,139 @@ both reflected completion channels, and the actual head and adjacent
 moment orders. The global goal, zero-free strip, and certificate status
 are unchanged; no mathematical priority claim is made.
 
+## Checked transport to complete zeroth-order inverse energies
+
+The compiled terminal
+[pairedEtaLeadingCurrent_fullInverseEnergy_firstMoment_stability](../RiemannGaussian/EtaCurrentFullInverseEnergy.lean)
+proves a uniform finite difference between the original current's first
+absolute moment and that of a signed expression in the **full original**
+zeroth-order inverse regions. The companion
+`pairedEtaLeadingCurrentLinearHeatReturn_fullInverseEnergy_firstMoment_stability`
+retains the actual Gaussian return and its additional summable heat error.
+These are estimates for the transport error; neither bounds the signed
+energy's first absolute moment itself.
+
+Write `m=analyticZetaZeroMultiplicity rho`, `M_N=2(N+2)`,
+`L_N=pairedEtaLogTailCutoff(N+2)`, and
+`F_k(N)=pairedEtaFiniteCompletedMoment rho (N+2) k`. The exact
+complex coefficient is `alpha_k=k!/rho^k`.
+[pairedEtaFiniteCompletedMoment_sub_coefficient_mul_zero](../RiemannGaussian/EtaCurrentZeroMomentReduction.lean)
+retains both Euler defects:
+
+\[
+ F_k-\alpha_kF_0=(F_k-e_k)-\alpha_k(F_0-e_0).
+\]
+
+For every `k<m`, the same file proves
+
+\[
+ |F_k-\alpha_kF_0|
+ \le (E_k+|\alpha_k|E_0)\frac{D_\rho(N)}{N+1},
+ \qquad D_\rho(N)=(2(N+1)+1)^{-\operatorname{Re}\rho},
+\]
+
+where `E_k` is the existing explicit completed Euler error constant.
+The actual zero multiplicity supplies every lower-moment hypothesis.
+For the literal head `H_rho(N)`,
+`pairedEtaHeadCompletedMoment_sub_shift_mul_zero` keeps the geometric
+half-step defect and the zeroth Euler defect separately. Its norm is at
+most
+
+\[
+ |H_\rho-\delta_N\rho F_0|
+ \le (H_{\rm half}+|\rho|E_0)\frac{D_\rho(N)}{(N+1)^2}.
+\]
+
+Here `H_half` is the existing explicit half-step error constant.
+The complete product identity
+`pairedEtaFiniteCompletedMoment_product_sub_zero` retains both positions
+before estimating. If `A_k=E_k+|alpha_k|E_0` and
+`Q_rho=pairedEtaCurrentMomentConstant rho`, its error constant is
+`P_(k,l)=A_k Q_rho+|alpha_k|Q_rho A_l`.
+Both exact complex branch errors and their weighted estimates are in
+[EtaCurrentZeroEnergyTransport.lean](../RiemannGaussian/EtaCurrentZeroEnergyTransport.lean).
+
+Define the complex coefficient
+
+\[
+ c_\rho=
+ \begin{cases}
+ \rho,&m=1,\\
+ (m-1)\alpha_{m-2}\overline{\alpha_{m-1}},&m\ge2.
+ \end{cases}
+\]
+
+`pairedEtaCurrentZeroEnergyCoefficient_re_pos` proves
+`Re(c_rho)>0` for both actual branches. No completion factor is dropped:
+it remains inside `F_0` and the original inverse terms.
+`pairedEtaFiniteCompletedMoment_eq_fullInverseRegion` gives the exact
+identity
+
+\[
+ F_0(N)=V_{\rho,0}(L_N;M_N,\mathcal H_{M_N}),
+ \qquad \mathcal H_M=\{(d,e):d,e\ge1,\ de\le M\}.
+\]
+
+Thus the derived full inverse energy is
+
+\[
+ E_\rho(N)=2\delta_N\left[
+   \operatorname{Re}(c_{\rho^*})|V_{\rho^*,0}|^2
+   -\operatorname{Re}(c_\rho)|V_{\rho,0}|^2\right].
+\]
+
+Let `C_rho` equal `(H_half+|rho|E_0)Q_rho` in the simple branch
+and `(m-1)P_(m-2,m-1)` otherwise. The pointwise terminal
+`pairedEtaLeadingCurrent_weighted_fullInverseEnergy_error_le` proves
+
+\[
+ (2N+1)|J_\rho(N)-E_\rho(N)|
+ \le e_\rho(N):=
+ 4\,\frac{C_{\rho^*}D_{\rho^*}(N)+C_\rho D_\rho(N)}{N+1}.
+\]
+
+`summable_pairedEtaCurrentZeroEnergyErrorEnvelope` proves
+`sum_N e_rho(N)<infinity` from the actual positive horizontal coordinates.
+The uniform stability budget is its genuine finite sum. Adding the
+already summable linear-width heat majorant gives the corresponding
+return budget; the signed complex weighted return-error series is also
+proved summable.
+
+The complete carrier remains available before these norm estimates.
+`pairedEtaCompletedMomentInverseRegion_full_product_eq_split`
+retains all four ordered complex products for two independently selected
+subregions and arbitrary moment orders. In each zeroth channel,
+`pairedEtaCurrentFullInverseEnergy_eq_split` keeps
+
+\[
+ |V_{\rho,0}|^2=|Q_\rho|^2+|P_\rho|^2
+                  +2\operatorname{Re}(Q_\rho\overline{P_\rho}),
+\]
+
+where `P` is the chosen region and `Q` its entire moving complement.
+[EtaCurrentCoherentComplement.lean](../RiemannGaussian/EtaCurrentCoherentComplement.lean)
+chooses the original coherent region with
+`K=floor(M_N/(B_rho+2))`, `B_rho=4(1+ceil(norm(rho)))`.
+`pairedEtaCurrentCoherentBand_subset` discharges its physical inclusion
+at every `N`.
+`pairedEtaLeadingCurrent_weighted_coherentComplement_error_le` then
+states the original-current estimate directly in these full signed split
+energies with the same summable envelope and no auxiliary region premise.
+For `K≥B_rho+2` and `K≥4(norm(rho)/Re(rho)+1)`,
+`pairedEtaCurrentCoherentComplement_cross_re_le` transfers the negative
+physical mixed bound `-|X_rho|²K²/8` to this literal current cutoff.
+The integer remainder is smaller than `B_rho+2≤K`, so the original
+coherence window condition is proved.
+
+The remaining obligation is now directly on `sum_(N<K) (2N+1)|E_rho(N)|`,
+uniformly in `K`. The internal complement cancellation and its transport
+to both multiplicities are established. They do not cancel the different
+horizontal powers in the two reflected full channels. The existing
+conditional positive-power lower bound still applies at a hypothetical
+off-critical zero. The uniform bound, an off-critical exclusion, and RH
+remain open; the concrete zero-free strip is unchanged. No priority claim
+or new zero-proportion certificate is made.
+
 ## Next mathematical obligations
 
 The signed prime input now excludes the explicit reciprocal-logarithm edge
@@ -2921,9 +3055,10 @@ off-critical contribution while retaining the unchanged absolute weighted
 target. The following inverse and heat carriers remain available for that
 task; their established identities alone do not supply the missing estimate.
 
-1. Prove cancellation in the exact inverse-weighted signed head sum
-   above and its now-proved higher-order counterpart, strong enough to bound
-   the original current's weighted absolute moment at moving physical centers.
+1. Bound the signed full zeroth-order inverse energy's weighted absolute
+   moment uniformly. The checked transport above now covers both the
+   original head and the repeated-zero adjacent pair, with a finite
+   odd-weighted error budget at their literal physical cutoffs.
    The entire odd and even aggregate and all four quadratic block sums
    already have uniform bounds at one physical cutoff. The simple-zero
    current now has an exact reconstruction from those odd aggregates.
@@ -3040,8 +3175,10 @@ Excluding the surviving off-critical endpoint contribution remains open. The nex
    The coherent-band counterexample now rules out extending that same
    physical budget uniformly to all proportional windows. The complete
    moving complement supplies a proved negative mixed contribution at
-   order zero. Its exact complex correction must be retained when
-   estimating the original head and adjacent reflected moment pairs.
+   order zero. The checked full inverse-energy transport now carries
+   that complete split to the original head and adjacent reflected
+   moment pairs with summable weighted error. The exact complex
+   correction remains available in every channel.
    Separate-band norm bounds cannot replace that leading cancellation.
    Controlling the original weighted signed current still requires an
    additional arithmetic estimate on the full completed channels.

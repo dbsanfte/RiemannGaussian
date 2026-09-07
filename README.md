@@ -27,45 +27,37 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Couple original inverse bands with their full moving complements before estimating the completed signed current. Actual coherent bands rule out extending the separate-region logarithmic budget to every proportional window. Their negative mixed interaction with the complement is now quantified at order zero. The frontier is using the complete cancellation, both reflected channels, and every multiplicity branch to bound the original odd-weighted first absolute current moment uniformly.
+Bound the signed energies of the complete zeroth-order inverse sums, keeping each band together with its moving complement. Both original current branches now reduce to these energies with summable odd-weighted error and positive multiplicity-dependent coefficients. The remaining frontier is a uniform bound for the weighted absolute sum of the full signed energy. Internal band/complement cancellation is proved; excluding the surviving off-critical contribution remains open.
 
 ## Latest Update
 
-Lean now identifies **a coherent contribution and its compensating mixed
-term in the original inverse**. For every actual zero and `K≥1`, an explicit band
-of `K` odd outer divisors keeps inner divisor and divided cutoff one
-throughout a window of length `K`, starting at `A=(B_rho+2)K`.
-Here `B_rho=4(1+ceil(norm(rho)))` retains the full complex frequency,
-and `X_rho` is the original xi completion factor.
-Write `V_rho,0(M;S)` for the original inverse sum on this band at
-center `log(M+1)`, and `w_S` for its signed product coefficients.
+Lean now connects **both original current branches to the complete
+zeroth-order inverse energy with a finite weighted error budget**.
+For the actual multiplicity, let `c_rho=rho` at a simple zero and
+`c_rho=(m-1) alpha_(m-2) conj(alpha_(m-1))` otherwise, where
+`alpha_k=k!/rho^k`. Both have strictly positive real part.
+Writing `V_rho` for the full original inverse sum at cutoff `2(N+2)`,
+the signed energy is
 
 \[
- \frac1K\sum_{r<K}|(A+r)^\rho V_{\rho,0}(A+r;S)|^2
- \ge \frac{|X_\rho|^2}{4}K^2,
- \qquad \sum_{1\le n\le A} w_S(n)^2=K.
+ E_\rho(N)=2\delta_N
+ \bigl(\operatorname{Re}(c_{\rho^*})|V_{\rho^*}|^2
+       -\operatorname{Re}(c_\rho)|V_\rho|^2\bigr).
 \]
 
-[pairedEtaCompletedMomentInverseCoherentBandPhysicalMeanSquare_lower](RiemannGaussian/EtaCoherentBandLowerBound.lean)
-proves this after summing the complete complex band.
-[exists_coherentBand_dyadic_window_exceeding_region_budget](RiemannGaussian/EtaCoherentBandWindowObstruction.lean)
-then shows that no zero-dependent constant can extend the previous
-`T(1+log T)^5` physical mean-square budget to all full doubling windows.
-This rules out that proposed strengthening, independently of whether
-the zero is on the critical line.
+[pairedEtaLeadingCurrent_fullInverseEnergy_firstMoment_stability](RiemannGaussian/EtaCurrentFullInverseEnergy.lean)
+bounds the difference between the original current's weighted first
+absolute moment and that of `E_rho`, uniformly in terminal cutoff.
+The same file proves the corresponding Gaussian-return budget.
+[pairedEtaLeadingCurrent_weighted_coherentComplement_error_le](RiemannGaussian/EtaCurrentCoherentComplement.lean)
+keeps `|P|²+|Q|²+2 Re(Q conj(P))` in each channel at the literal cutoff;
+the complex four-product identity remains available upstream.
 
-With `P,Q` denoting the band and its full moving complement after
-multiplication by `M^rho`, the mixed contribution is negative.
-[pairedEtaCompletedMomentInverseCoherentComplement_cross_re_le](RiemannGaussian/EtaCoherentBandComplement.lean)
-bounds `Re(Q*conj(P))` by `-|X_rho|²K²/8` during the initial `K` steps once
-`K≥4(norm(rho)/Re(rho)+1)`. The preceding exact complex identity retains
-the entire complement and the completed eta prefix.
-
-This quantifies cancellation between inverse regions at order zero.
-The complete signed current still needs its own uniform estimate. The
-[uniform weighted goal](docs/eta-current-reconstruction-plan.md) remains
-open, and the existing zero-free strip is unchanged. This slice proves
-neither RH nor a `13/18` certificate.
+This closes the transport of the complete zeroth-order cancellation to
+both multiplicity branches. A uniform bound for the weighted absolute
+sum of `E_rho` itself remains open. The
+[global goal](docs/eta-current-reconstruction-plan.md) and the existing
+zero-free strip are unchanged; neither RH nor a `13/18` certificate is proved.
 
 ## Notable Formalisations
 
