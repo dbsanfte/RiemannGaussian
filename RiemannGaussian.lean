@@ -706,3 +706,7 @@ import RiemannGaussian.GaussianMellinVertical
 import RiemannGaussian.ZetaReciprocalDirichlet
 import RiemannGaussian.GaussianMoebiusMellin
 import RiemannGaussian.GaussianMoebiusContourBound
+import RiemannGaussian.ZetaMoebiusMassBound
+import RiemannGaussian.GaussianMoebiusScaleConstants
+import RiemannGaussian.GaussianMoebiusScaleEnvelope
+import RiemannGaussian.GaussianMoebiusCancellation

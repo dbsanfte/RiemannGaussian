@@ -62,7 +62,8 @@ the objective.
 | Sharpen the actual prime constraint on the current's horizontal growth | `multiplicity_le_quadratic_signed_zero_gap` in [ZetaSignedExactPole.lean](../RiemannGaussian/ZetaSignedExactPole.lean), `nontrivialZetaZero_mem_signedQuadratic_strip` in [ZetaSignedQuadraticMargin.lean](../RiemannGaussian/ZetaSignedQuadraticMargin.lean), and `pairedEtaLeadingCurrent_firstMoment_le_quadraticPrime` in [EtaCurrentQuadraticPrimeBound.lean](../RiemannGaussian/EtaCurrentQuadraticPrimeBound.lean). | Exact pole geometry gives a multiplicity-sensitive margin more than 31 times the previous signed margin at every nonzero ordinate. For absolute ordinate at least one, the margin is at least `1/(56458 log(abs(y)+22))`. Both original current branches, the Gaussian return, and the complete inverse energy inherit the improved exponent while preserving all preceding margins. The exponent remains positive. |
 | Bound several nearby actual zeros simultaneously | `sum_multiplicity_le_one_in_signedEdgeWindow` in [ZetaSignedWindowMultiplicity.lean](../RiemannGaussian/ZetaSignedWindowMultiplicity.lean), with reflection, simplicity, separation, and the original head inverse formula in [ZetaSignedZeroSeparation.lean](../RiemannGaussian/ZetaSignedZeroSeparation.lean). | For every center of absolute height at least one, an edge rectangle of width and ordinate half-width `1/(6000 log(abs(y)+22))` contains total analytic multiplicity at most one. The exact selected complex pole sum and full complement are retained. This rules out multiple zeros and close pairs within that layer, while the uniform weighted goal remains open. |
 | Establish an independent Gaussian reciprocal contour for the Möbius sums | `norm_zetaReciprocalExtension_le_on_box` in [ZetaReciprocalBox.lean](../RiemannGaussian/ZetaReciprocalBox.lean), and `zetaReciprocalGaussian_contour_shift` with `zetaReciprocalGaussian_right_integral_le` in [ZetaReciprocalGaussianContour.lean](../RiemannGaussian/ZetaReciprocalGaussianContour.lean). | The actual reciprocal is analytic and uniformly bounded on a rectangle crossing real part one. The Gaussian contour shift retains both horizontal corrections and bounds them with their height damping. Its arithmetic identification and infinite-tail estimates are now discharged by the following row. |
-| Transfer the full contour to the actual convergent Gaussian Möbius sum | `integral_zetaReciprocalGaussianKernel_eq_gaussianMoebiusSum` in [GaussianMoebiusMellin.lean](../RiemannGaussian/GaussianMoebiusMellin.lean), and `gaussianMoebiusSum_contour_identity` with `gaussianMoebiusSum_contour_bound` in [GaussianMoebiusContourBound.lean](../RiemannGaussian/GaussianMoebiusContourBound.lean). | The full integral equals the arithmetic sum at every abscissa greater than one, with all convergence and interchange premises proved. The actual sum has a left-line bound plus both horizontal corrections and infinite tails. Scale selection for an arithmetic gain and transfer to the original signed inverse energy remain open. |
+| Transfer the full contour to the actual convergent Gaussian Möbius sum | `integral_zetaReciprocalGaussianKernel_eq_gaussianMoebiusSum` in [GaussianMoebiusMellin.lean](../RiemannGaussian/GaussianMoebiusMellin.lean), and `gaussianMoebiusSum_contour_identity` with `gaussianMoebiusSum_contour_bound` in [GaussianMoebiusContourBound.lean](../RiemannGaussian/GaussianMoebiusContourBound.lean). | The full integral equals the arithmetic sum at every abscissa greater than one, with all convergence and interchange premises proved. The actual sum has a left-line bound plus both horizontal corrections and infinite tails. The following row discharges a scale choice and arithmetic rate. |
+| Extract an unconditional cancellation rate from the actual Gaussian contour | `moebiusDirichletMass_contour_le_log` in [ZetaMoebiusMassBound.lean](../RiemannGaussian/ZetaMoebiusMassBound.lean), `gaussianMoebiusSum_one_le_logSquare_envelope` in [GaussianMoebiusScaleEnvelope.lean](../RiemannGaussian/GaussianMoebiusScaleEnvelope.lean), and `gaussianMoebiusSum_one_le_reciprocal_log_gain_eventually` with `gaussianMoebiusSum_log_one_div_tendsto_zero` in [GaussianMoebiusCancellation.lean](../RiemannGaussian/GaussianMoebiusCancellation.lean). | At unit heat time and height `T=a`, the actual sum is eventually bounded by `exp(a-a/(1000000 log(a+22)))`, and `S_1(log X)/X→0`. All constants and scale conditions are discharged, with an existential threshold. An estimate of sufficient strength for the original complex weights, physical cutoffs, and completed reflected current remains open. |
 | Prove a signed arithmetic estimate controlling `S_rho(K)` uniformly in `K` | Must preserve completion factors, multiplicity, the head branch, and the correlations needed before taking absolute values. | Open; this is the remaining conjecture-strength objective. |
 
 ## Checked reconstruction
@@ -3380,9 +3381,10 @@ estimate is taken.
 
 The full right-line Gaussian integral is now identified with its
 original Möbius series, with sum-integral exchange and both
-unbounded vertical tails justified in the following slice. Scale choices must then give a proved
-arithmetic cancellation estimate before attempting a transfer to the
-original inverse energy. That transfer must preserve the moving
+unbounded vertical tails justified in the following slice. The subsequent
+unit-time scale choice supplies a proved arithmetic cancellation rate.
+An estimate of sufficient strength for transfer to the
+original inverse energy is still needed. That transfer must preserve the moving
 physical cutoffs, completion factors, and both reflected channels.
 The current contour stays at real part at least `7/8`; this result does
 not by itself supply the missing critical-strength arithmetic estimate.
@@ -3476,14 +3478,101 @@ Finally, `gaussianMoebiusSum_contour_bound` proves for
 \]
 
 This is an unconditional bound for the actual arithmetic Gaussian sum.
-The next obligation is to control the scale dependence of `D(1+w(T))`
-and choose `tau,T` relative to `a` to extract a quantitative cancellation
-rate. Such a rate must then be tested against the original full inverse
+The following slice controls `D(1+w(T))` and chooses `tau,T` relative
+to `a` to extract a quantitative cancellation rate. An estimate of
+sufficient strength is still needed for the original full inverse
 energy, preserving physical cutoffs, completion factors, reflected
-channels, and every mixed term. The contour still remains near real
-part one; this slice gives no improved zero-free strip, no decrease in
-the original current's established positive exponent, and no critical-line
-strength bound. The unchanged uniform weighted target remains open.
+channels, and every mixed term. The contour remains near real part one;
+the unchanged uniform weighted target remains open.
+
+## Checked unit-time Gaussian Möbius cancellation rate
+
+[ZetaMoebiusMassBound.lean](../RiemannGaussian/ZetaMoebiusMassBound.lean),
+[GaussianMoebiusScaleConstants.lean](../RiemannGaussian/GaussianMoebiusScaleConstants.lean),
+[GaussianMoebiusScaleEnvelope.lean](../RiemannGaussian/GaussianMoebiusScaleEnvelope.lean),
+and [GaussianMoebiusCancellation.lean](../RiemannGaussian/GaussianMoebiusCancellation.lean)
+give the next independent arithmetic input with all scale assumptions
+discharged.
+
+The actual Möbius mass is at most the positive real zeta series:
+`moebiusDirichletMass_le_norm_zeta` proves
+`D(sigma)≤norm(zeta(sigma))` for `sigma>1`.
+The original eta support estimate then gives
+`moebiusDirichletMass_contour_le_four_div`:
+
+\[
+ D(1+w(T))\le \frac4{w(T)}.
+\]
+
+Beyond the already proved fixed threshold where
+`w(T)=1/(500000 L(T))`, this is at most `2000000 L(T)`.
+No Möbius cancellation is assumed in this bound.
+
+Define the fixed constants
+
+\[
+ C=\max(6/c,16),\qquad
+ P=C(3+4000000\sqrt{2\pi})e^2,\qquad
+ G=33000001+|\log P|.
+\]
+
+Here `c>0` is the previously proved compact pole-removed zeta norm floor;
+none of these constants depends on height or arithmetic scale.
+`zetaReciprocalContourBound_le_logSquare` gives
+
+\[
+ B(T)\le C\,e^{33000000L(T)^2}.
+\]
+
+Choose the actual contour height `T=a` and fix heat time `tau=1`.
+For `a≥22` beyond the width threshold,
+`gaussianMoebiusSum_one_le_scale_prefactor` retains all three
+contour contributions in the bound
+
+\[
+ |S_1(a)|\le P\,a\,e^{33000000L(a)^2}e^{a(1-w(a))}.
+\]
+
+Both horizontal corrections and both infinite tails are included.
+The first tail suppression `e^{-a^2/2}` already absorbs the cost of
+using the right line. The fixed prefactor and `a` can also be absorbed,
+giving `gaussianMoebiusSum_one_le_logSquare_envelope`:
+
+\[
+ |S_1(a)|\le
+ e^{a-a/(500000L(a))+G L(a)^2}.
+\]
+
+`tendsto_localZetaLogHeight_pow_div_zero` proves `L(a)^n/a→0`
+for every fixed natural `n`.
+In particular, `eventually_gaussianMoebiusScaleCost_le_half_gain`
+proves `G L(a)^2≤a/(1000000L(a))` eventually.
+The terminal theorem
+`gaussianMoebiusSum_one_le_reciprocal_log_gain_eventually` therefore
+has no open scale, convergence, or arithmetic hypotheses:
+
+\[
+ \text{eventually}\quad
+ |S_1(a)|\le
+ \exp\!\left(a-\frac{a}{1000000\log(a+22)}\right).
+\]
+
+The threshold is proved to exist; no numerical starting point is
+asserted. `gaussianMoebiusSum_one_exp_ratio_tendsto_zero` proves
+`S_1(a)/exp(a)→0`, and
+`gaussianMoebiusSum_log_one_div_tendsto_zero` carries this to
+`S_1(log X)/X→0` on the original multiplicative scale.
+The earlier complex atoms and full oriented contour identity remain
+available; the scalar estimate is a named downstream consequence.
+
+The displayed saving is not a fixed power saving in `X`. An estimate
+strong enough for the original complex weights and moving physical
+cutoffs is still needed before transferring to the signed full inverse
+energy. Completion factors, both reflected channels, and mixed terms
+must survive that transfer. The new rate does not improve the existing
+zero-free strip or the current's established positive exponent. It
+does not exclude an interior off-critical zero or prove the uniform
+weighted current bound. No novelty priority or new certificate is claimed.
 
 ## Next mathematical obligations
 
@@ -3500,10 +3589,12 @@ target. The following inverse and heat carriers remain available for that
 task; their established identities alone do not supply the missing estimate.
 The independent Gaussian reciprocal contour now gives a bound for the
 actual convergent Möbius sum, with its full integral identification and
-every horizontal and infinite-tail correction proved. The next step on
-that route is to control the moving Dirichlet mass and choose scales
-that yield a quantitative cancellation rate. Transfer to the signed
-full inverse energy still requires an arithmetic gain of sufficient strength.
+every horizontal and infinite-tail correction proved. The moving mass
+and unit-time scale choice now give the unconditional eventual rate above.
+The next step is an estimate of sufficient strength through the original
+complex weights and physical cutoffs, retaining both completed reflected
+channels and all mixed terms. The current o(X) rate alone does not
+establish the signed full inverse-energy bound.
 
 1. Bound the signed full zeroth-order inverse energy's weighted absolute
    moment uniformly. The checked transport above now covers both the

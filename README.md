@@ -27,48 +27,42 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Use the proved Gaussian Möbius-sum bound to seek cancellation in the original signed inverse energy. The full reciprocal integral now equals the actual convergent arithmetic series, with both horizontal corrections and infinite tails controlled. Next choose heat and height scales and derive a quantitative arithmetic gain, preserving the original cutoffs, completion factors, and reflected channels. The cutoff-independent weighted current bound remains open.
+Seek control of the original signed inverse energy using the proved Gaussian Möbius cancellation rate. At unit heat time, the actual sum is eventually at most exp(a − a/(1000000 log(a+22))) in absolute value. Next carry a sufficiently strong estimate through the original complex weights, physical cutoffs, completion factors, and reflected channels. The current rate gives o(X) on the multiplicative scale; the cutoff-independent weighted current bound remains open.
 
 ## Latest Update
 
-Lean now proves **a contour bound for the actual convergent Gaussian
-Möbius sum**
+Lean now proves **an unconditional eventual cancellation rate** for
+the actual Gaussian Möbius sum at fixed heat time one:
 
 \[
- S_\tau(a)=\sum_{n\ge1}\mu(n)e^{-(a-\log n)^2/(4\tau)}.
+ S_1(a)=\sum_{n\ge1}\mu(n)e^{-(a-\log n)^2/4},
+ \qquad
+ |S_1(a)|\le
+ \exp\!\left(a-\frac{a}{1000000\log(a+22)}\right)
 \]
 
-[integral_zetaReciprocalGaussianKernel_eq_gaussianMoebiusSum](RiemannGaussian/GaussianMoebiusMellin.lean)
-identifies the full vertical integral of `exp(a s+tau s²)/zeta(s)`
-with `sqrt(pi/tau) S_tau(a)` at every abscissa greater than one.
-Integrability, absolute convergence, and the sum–integral exchange are
-proved. The exact complex
-[gaussianMoebiusSum_contour_identity](RiemannGaussian/GaussianMoebiusContourBound.lean)
-keeps both oriented horizontal corrections and both infinite tails.
+for all sufficiently large real `a`.
+[gaussianMoebiusSum_one_le_reciprocal_log_gain_eventually](RiemannGaussian/GaussianMoebiusCancellation.lean)
+discharges the scale conditions with contour height `T=a`.
+The threshold is proved to exist; no numerical starting point is asserted.
 
-For `a ≥ 0`, `tau > 0`, and `T ≥ 2`,
-[gaussianMoebiusSum_contour_bound](RiemannGaussian/GaussianMoebiusContourBound.lean)
-gives
+The original eta estimate bounds the moving Dirichlet mass by
+`4/w(T)`, eventually at most `2000000 log(T+22)`
+([moebiusDirichletMass_contour_le_log](RiemannGaussian/ZetaMoebiusMassBound.lean)).
+The complete reciprocal envelope, both horizontal errors, and both
+infinite tails are absorbed into a fixed squared-logarithm cost
+([gaussianMoebiusSum_one_le_logSquare_envelope](RiemannGaussian/GaussianMoebiusScaleEnvelope.lean)).
+That cost is eventually smaller than half the left-line gain.
 
-\[
- |S_\tau(a)|\le\frac{
- 2TB e^{a\ell+\tau\ell^2}
- +4wB e^{a\sigma+\tau\sigma^2-\tau T^2}
- +D(\sigma)\sqrt{2\pi/\tau}\,
-   e^{a\sigma+\tau\sigma^2-\tau T^2/2}}
- {\sqrt{\pi/\tau}},
- \qquad \ell=1-w,\quad \sigma=1+w.
-\]
+[gaussianMoebiusSum_log_one_div_tendsto_zero](RiemannGaussian/GaussianMoebiusCancellation.lean)
+also proves `S_1(log X)/X → 0`. The exact complex integral and
+arithmetic contour identities remain available upstream.
 
-Here `w=w(T)>0` and `B=B(T)` are the
-[proved contour width and reciprocal bound](RiemannGaussian/ZetaReciprocalBox.lean);
-`D(sigma)=sum |mu(n)|/n^sigma` is a proved finite Dirichlet mass.
-All three contributions are retained.
-
-The next step is to choose the heat and height scales and prove a
-quantitative arithmetic gain. Transferring it to the full signed inverse
-energy remains open. This estimate changes neither the established
-zero-free strip nor the current's positive growth exponent; the
+This rate supplies no fixed power saving and does not yet control the
+original signed inverse energy. The next step is an estimate of sufficient
+strength through its complex weights and physical cutoffs, retaining both
+completed reflected channels. The established zero-free strip and the
+current's positive growth exponent are unchanged; the
 [uniform weighted goal](docs/eta-current-reconstruction-plan.md) and RH
 remain open. No novelty priority is claimed.
 
@@ -80,7 +74,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
 | **Gaussian/Weil explicit formula** | The arithmetic Gaussian expression, including prime-power and Archimedean terms, equals the canonical multiplicity-weighted symmetric zeta-zero sum for every positive width. | [gaussianArithmeticExplicitFormula_eq_canonical](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean#L1235) |
-| **Gaussian Möbius arithmetic and contour** | The full reciprocal-zeta Gaussian integral equals the actual convergent Möbius sum at every abscissa greater than one. Moving the contour left gives an arithmetic bound with both horizontal corrections and both infinite tails controlled; the exact complex identity remains available. | [integral_zetaReciprocalGaussianKernel_eq_gaussianMoebiusSum](RiemannGaussian/GaussianMoebiusMellin.lean), [gaussianMoebiusSum_contour_identity](RiemannGaussian/GaussianMoebiusContourBound.lean), [gaussianMoebiusSum_contour_bound](RiemannGaussian/GaussianMoebiusContourBound.lean) |
+| **Gaussian Möbius arithmetic and cancellation** | The full reciprocal integral equals the actual convergent Möbius sum. At unit heat time and height `T=a`, its absolute value is eventually at most `exp(a−a/(1000000 log(a+22)))`; consequently `S_1(log X)=o(X)`. The exact complex contour identity and every horizontal and infinite-tail correction remain available. | [integral_zetaReciprocalGaussianKernel_eq_gaussianMoebiusSum](RiemannGaussian/GaussianMoebiusMellin.lean), [gaussianMoebiusSum_contour_identity](RiemannGaussian/GaussianMoebiusContourBound.lean), [gaussianMoebiusSum_one_le_reciprocal_log_gain_eventually](RiemannGaussian/GaussianMoebiusCancellation.lean), [gaussianMoebiusSum_log_one_div_tendsto_zero](RiemannGaussian/GaussianMoebiusCancellation.lean) |
 | **Gaussian heat and reflected-zero Grams** | The complete matched Gaussian correlation equals the boundary heat-residue sum. At positive heat time, its vanishing is equivalent to RH. | [riemannXiUpperReflectedPairGaussianTotal_eq_boundaryHeatResidueTotal](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L187), [riemannXiUpperReflectedPairGaussianTotal_eq_zero_iff_rh](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L197) |
 | **Suzuki arithmetic and spectral formulas** | Suzuki's positive-time arithmetic function equals its spectral expansion on `Im z > 1/2`. The literal arithmetic `Psi` is strictly positive on a nonzero punctured neighbourhood of the origin. | [riemannXiSuzukiArithmeticPPositive_eq_spectral_safe](RiemannGaussian/RiemannXiSuzukiWeilVerticalLimit.lean#L462), [exists_pos_on_abs_riemannXiSuzukiPsi](RiemannGaussian/RiemannXiSuzukiPointwiseLocalPositivity.lean#L298) |
 | **Xi growth and divisor summability** | Unconditional `exp(O(R log R))` xi growth and convergence of the multiplicity-weighted inverse-square zero series. | [riemannXi_logLinearGrowth](RiemannGaussian/GaussianXiLogLinearGrowth.lean#L315), [summable_distinct_zetaZeroInverseSquareNorm](RiemannGaussian/GaussianXiInverseSquareSummability.lean#L294) |

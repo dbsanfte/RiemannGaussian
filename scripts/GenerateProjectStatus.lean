@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "Actual convergent Gaussian Moebius sum bounded by a proved contour shift with all horizontal corrections and infinite tails"
+    label := "Actual unit-time Gaussian Moebius cancellation: eventually abs(S_1(a)) <= exp(a-a/(1000000*log(a+22))) with all contour errors controlled"
     lineOne := "Gaussian Moebius"
-    lineTwo := "full contour bound"
+    lineTwo := "unit-time o(X) rate"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.gaussianMoebiusSum_contour_bound
+      ``RiemannGaussian.gaussianMoebiusSum_one_le_reciprocal_log_gain_eventually
   }
 ]
 
@@ -228,8 +228,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">Actual Gaussian Moebius sum: full integral identity and all contour errors proved; " ++
-      "scale choice and signed-current bound open.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">Unit-time Gaussian Moebius cancellation rate proved; " ++
+      "complex weighted-current transfer and uniform bound remain open.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -738,9 +738,21 @@ run_cmd do
         "At sigma=1+w(T), adding this tail bound to the two finite-contour " ++
         "terms and dividing by sqrt(pi/tau) bounds abs(S_tau(a)) for " ++
         "a>=0,tau>0,T>=2. The exact arithmetic contour identity retains " ++
-        "every complex correction. Scale choices yielding a quantitative " ++
-        "arithmetic gain and transfer to the original signed inverse " ++
-        "energy remain open. This does not improve the zero margin or " ++
+        "every complex correction. The unit-time height choice T=a now " ++
+        "gives an unconditional eventual cancellation rate. The original " ++
+        "eta bound gives D(1+w(T))<=4/w(T), eventually at most " ++
+        "2000000*L(T). Put C=max(6/c,16), P=C*(3+4000000*sqrt(2*pi))*exp(2), " ++
+        "and G=33000001+abs(log(P)); these are fixed constants. The full " ++
+        "reciprocal envelope is at most C*exp(33000000*L(T)^2). At T=a>=22 " ++
+        "beyond the proved width threshold, abs(S_1(a)) is at most " ++
+        "exp(a-a/(500000*L(a))+G*L(a)^2). Since L(a)^3/a tends to zero, " ++
+        "the final actual bound is eventually " ++
+        "abs(S_1(a))<=exp(a-a/(1000000*log(a+22))). The threshold is " ++
+        "proved to exist, without an asserted numerical starting point. " ++
+        "Lean also proves S_1(log(X))/X tends to zero. This rate supplies " ++
+        "no fixed power saving; a sufficient estimate through the original " ++
+        "complex weights, physical cutoffs, completion factors, and " ++
+        "reflected channels remains open. This does not improve the zero margin or " ++
         "the current's positive exponent. The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
