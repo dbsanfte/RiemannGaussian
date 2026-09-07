@@ -1022,7 +1022,21 @@ run_cmd do
         "squares past M^2 by " ++
         "(2*p_M^2+4)/M^2+10*C*(1+log(M))^2/M, which tends to zero. " ++
         "The full continuum energy minus its unchanged prefix through M^2 " ++
-        "therefore tends to zero; no decay of that growing prefix is proved. No " ++
+        "therefore tends to zero; no decay of that growing prefix is proved. " ++
+        "The original balanced floor cells B(0)=0 and " ++
+        "B(L)=1-sum_(n<=M)mu(n)*w(n)*floor(L/n)+p*L for L>=1 are now " ++
+        "identified with their exact signed fractional remainders and " ++
+        "bounded by 1+M. Their full discrete Hardy transform " ++
+        "q(L)=B(L)/(L+1)-sum_(j>L)B(j)/(j*(j+1)) preserves the " ++
+        "reciprocal-cell-weighted square norm exactly, after proving " ++
+        "genuine summability and decay of the finite boundary square. " ++
+        "The actual residual equals q(L)-q(floor(L/2)) at every cell. " ++
+        "The complete signed dyadic cross moment remains explicit. " ++
+        "Uniformly in the cutoff and bounded weights, the actual full " ++
+        "eta energy lies between 1/6 and 6 times the balanced floor-cell " ++
+        "energy. For the logarithmic family the two full decay statements " ++
+        "are equivalent; neither is proved. This is a comparison of " ++
+        "representations, not an advance on the open decay assertion. No " ++
         "Mellin norm comparison with the classical logarithmic approximation " ++
         "or sharper numerical zero strip is certified. " ++
         "The uniform cutoff-independent " ++

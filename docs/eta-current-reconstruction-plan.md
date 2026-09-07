@@ -5406,6 +5406,53 @@ through `M²` tends to zero. The unresolved growing range is now through
 `M²`, including the interior prime variance and actual normalization
 cost. No full arithmetic decay or canonical-deficit decay follows yet.
 
+## Exact Hardy and dyadic norm audit of the coefficient family
+
+The next checked interface identifies the original balanced floor cell
+`B(0)=0`, `B(L)=1−Σ_(n≤M) μ(n)w(n)floor(L/n)+pL` for `L≥1`.
+Its exact remainder formula gives `|B(L)|≤1+M` for bounded original
+weights. The associated unpaired harmonic primitive has increment
+`(B(L+1)−B(L))/(L+1)`, and its dyadic difference is the unchanged
+eta residual at every cell.
+
+The full discrete Hardy transform
+
+\[
+ q(L)=\frac{B(L)}{L+1}-\sum_{j>L}\frac{B(j)}{j(j+1)}
+\]
+
+has the exact finite energy identity
+
+\[
+ \sum_{L=0}^{N}q(L)^2
+ =\sum_{L=1}^{N}\frac{B(L)^2}{L(L+1)}+(N+1)T(N)^2,
+ \qquad T(N)=\sum_{j>N}\frac{B(j)}{j(j+1)}.
+\]
+
+All sums are genuinely summable, and the boundary square tends to zero.
+`tsum_etaDiscreteHardyTransform_sq_eq` therefore preserves the complete
+weighted norm, rather than only a finite truncation. The original
+residual is exactly `q(L)−q(floor(L/2))`. Every parent appears twice;
+the full signed parent-child cross moment remains explicit before
+universal estimates are applied.
+
+The terminal theorem
+`pairedEtaMoebiusContinuumResidualEnergy_beurling_bounds` proves
+
+\[
+ \frac16\sum_{L\ge1}\frac{B(L)^2}{L(L+1)}
+ \le E^\infty_{M,w}\le
+ 6\sum_{L\ge1}\frac{B(L)^2}{L(L+1)}.
+\]
+
+For the logarithmic family, decay of the two full norms is equivalent.
+This audits the strength of the representation; it does not prove
+either decay assertion. The latest quantitative decay theorem remains
+the complete tail beyond `M²`. The further classical fractional-part
+integral/Mellin comparison and the external simplicity consequence have
+not been transported into Lean. The detailed distinction and literature
+attribution appear in the [endgame assessment](eta-parity-endgame-assessment.md).
+
 ## Next mathematical obligations
 
 The exact-pole prime input now excludes the larger explicit
@@ -5450,7 +5497,9 @@ range and proves decay of every arithmetic cell beyond `M²`. The next
 task is a uniform signed estimate through that growing quadratic cutoff,
 including its prime variance and normalization cost, respecting its
 physical-window dependence and the two-cell inverse-logarithmic lower
-rate. A Mellin-multiplier comparison with the classical approximation
+rate. The full balanced floor-cell norm is now equivalent to the original
+eta residual norm, so changing that representation alone cannot supply
+decay for the same coefficients. A Mellin-multiplier comparison with the classical approximation
 and full residual decay are not proved. The desired `D_k→0` remains open. Numerical
 decreases and the definition of a minimizing coefficient law do not prove
 this estimate. The positive target normalization must also be bounded

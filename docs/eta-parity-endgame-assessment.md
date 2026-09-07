@@ -264,6 +264,86 @@ unchanged finite square sum through `M²` by a quantity tending to zero.
 This reduces the uncontrolled physical range. It does not prove decay
 of the growing prefix, its prime variance, or its normalization cost.
 
+## Full comparison with the original balanced floor cells
+
+Put `a_n=μ(n)w(n)` and retain the original `p=Σ_(n≤M) a_n/n`.
+[EtaMoebiusBeurlingCells](../RiemannGaussian/EtaMoebiusBeurlingCells.lean)
+defines `B(0)=0` and, for `L≥1`,
+
+\[
+ B(L)=1-\sum_{n\le M}a_n\lfloor L/n\rfloor+pL
+     =1+\sum_{n\le M}a_n\frac{L\bmod n}{n}.
+\]
+
+The remainder identity is exact, and bounded original weights imply
+`|B(L)|≤1+M` for every physical cell. Let `H(L)=Σ_(n≤L)1/n` and
+
+\[
+ R(L)=1_{L\ne0}-\sum_{n\le M}\frac{a_n}{n}H(\lfloor L/n\rfloor)+pH(L).
+\]
+
+The same module proves, at all integer endpoints,
+
+\[
+ r(L)=R(L)-R(\lfloor L/2\rfloor),\qquad
+ R(L+1)-R(L)=\frac{B(L+1)-B(L)}{L+1}.
+\]
+
+[EtaDiscreteHardyTransform](../RiemannGaussian/EtaDiscreteHardyTransform.lean)
+defines the genuine full tail and transformed coefficient
+
+\[
+ T(L)=\sum_{j>L}\frac{B(j)}{j(j+1)},\qquad
+ q(L)=\frac{B(L)}{L+1}-T(L).
+\]
+
+For bounded cells it proves tail summability and
+`|T(L)|≤C/(L+1)`. The exact finite identity is
+
+\[
+ \sum_{L=0}^{N}q(L)^2
+ =\sum_{L=1}^{N}\frac{B(L)^2}{L(L+1)}+(N+1)T(N)^2.
+\]
+
+The boundary term tends to zero with an explicit bound `C²/(N+1)`.
+All square sums are proved summable, so the full identity is
+
+\[
+ \sum_{L\ge0}q(L)^2=\sum_{L\ge1}\frac{B(L)^2}{L(L+1)}.
+\]
+
+The actual primitive and this transform satisfy `q(L)=q(0)+R(L)`.
+Consequently the unchanged residual is exactly
+`r(L)=q(L)-q(floor(L/2))`, including its empty-cell cancellation.
+[EtaDyadicDifferenceEnergy](../RiemannGaussian/EtaDyadicDifferenceEnergy.lean)
+proves the full signed cross identity
+
+\[
+ \sum_{L\ge0}[q(L)-q(\lfloor L/2\rfloor)]^2
+ =3\sum_{L\ge0}q(L)^2
+   -2\sum_{L\ge0}q(L)q(\lfloor L/2\rfloor).
+\]
+
+Every parent occurs twice, giving exactly doubled parent energy. The
+cross series is genuinely summable. Universal inequalities give lower
+and upper constants `1/6` and `6`, without assuming arithmetic cancellation.
+[pairedEtaMoebiusContinuumResidualEnergy_beurling_bounds](../RiemannGaussian/EtaMoebiusBeurlingComparison.lean)
+therefore proves
+
+\[
+ \frac16\sum_{L\ge1}\frac{B(L)^2}{L(L+1)}
+ \le E^\infty_{M,w}\le
+ 6\sum_{L\ge1}\frac{B(L)^2}{L(L+1)}.
+\]
+
+For the exact logarithmic family, the compiled
+`pairedEtaMoebiusContinuumResidualEnergy_tendsto_zero_iff_beurling`
+proves equivalence of the two full decay assertions. Neither assertion
+is proved. This is an audit of the representation's strength: changing
+the eta colour description alone cannot bypass decay of the same
+coefficient family's balanced floor-cell norm. The quadratic-tail theorem
+remains the latest quantitative decay result.
+
 ## Literature checks and the remaining arithmetic test
 
 Maier and Rassias prove unconditional cancellation in a restricted
@@ -278,6 +358,18 @@ proved above, with the sampler's window cost retained. The next estimate
 must control the original growing prefix through `M²`, including the
 prime-variance contribution on `L≤M`. Full-period covariance formulas and
 the present large-window sampling bound do not discharge that estimate.
+
+Wei and Wu's Proposition 1.9 proves that the classical logarithmic
+Nyman–Beurling norm tending to zero implies both RH and simplicity of all
+zeros. Their Theorem 1.10 also records a boundedness criterion sufficient
+for RH. [Published paper](https://www.sciencedirect.com/science/article/pii/S0723086922000524),
+[author-hosted preprint](https://bimsa.net/doc/publication/1424.pdf).
+The new checked comparison is specifically with the explicit balanced
+floor-cell series above. The further identification with the classical
+fractional-part integral and its Mellin boundary norm, and a transported
+simplicity theorem, have not been formalized. These external results
+remain evidence for auditing the fixed logarithmic coefficient choice,
+not assumptions inserted into the Lean chain.
 
 Acceptance remains a proof that the actual full square sum, equivalently
 the transported full residual, tends to zero. Fixed-cell convergence,
