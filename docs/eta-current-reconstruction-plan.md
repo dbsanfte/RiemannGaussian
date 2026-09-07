@@ -4464,7 +4464,10 @@ plus the entire coefficient tail, the full budget is
 \]
 
 [pairedEtaFourProjection_rationalQuadraticBudget_lt](../RiemannGaussian/EtaFourTranslateProjection.lean)
-checks `R_64<99/100` by Lean kernel reduction. The exact target pairing
+checks `R_64<99/100` by Lean kernel reduction of ten separate exact Gram
+entries and symmetry. The entries are checked serially to keep the
+calculation within CI memory; the final rational inequality is assembled
+from those proofs. The exact target pairing
 is `(log 2+log 3)/2`. Rigorous logarithm bounds then give
 [pairedEtaFourProjection_finiteBudget_lt_one_fifth](../RiemannGaussian/EtaFourTranslateBound.lean)
 and `pairedEtaFourProjection_residualEnergy_lt_one_fifth`:
