@@ -74,6 +74,28 @@ and exact heat-compression leakage. Applying these to the actual arithmetic
 direction still needs a concrete inequality; their generic positivity or
 trace statements do not furnish the missing signed upper bound.
 
+The newest compiled estimate in
+[EtaGammaFactorTail](../RiemannGaussian/EtaGammaFactorTail.lean)
+retains both vanished factor ranges through the entire majorant argument.
+`norm_evaluate_mixed_factor_le` bounds their full cofactor by
+`B(rho,A,L,V)=64*norm(chi(rho))*A^2*(L*V)^(-1-sigma)*exp(-L*V/(2*A))`
+when `A>0` and `L*V>=2*A`. The balanced source allowance is now the sum of the two
+original short allowances, `32*C_rho*L^4/A^3`, `5*B`, and the original
+physical endpoint allowance. The compiled
+`norm_balancedRectangle_sub_source_factor_le` retains them all.
+For the square schedule `A=u^6,U=u^4`, `u>=2`, and `sigma>=1/2`,
+`norm_smoothQuadratic_sixth_sub_source_factor_le` gives the complete budget
+`2*C_rho*u^(-2-4*sigma)+64*norm(chi(rho))*exp(-u^2/2)` plus the
+physical endpoint allowance. This is a substantially smaller error budget;
+the main signed upper bound is still required.
+
+The [full product-shell probe](../scripts/probe_eta_gamma_product_shells.py)
+keeps every complex block and its heat complement. Both tested shell
+absolute comparisons worsen in all 12 cases. A product-heat filter can
+make the retained part negative while the removed part exceeds the source.
+The next comparison must therefore keep the complete arithmetic direction;
+neither the localized part nor its marginal shell envelopes bound it.
+
 ## Current first-mean route
 
 The newest estimate uses the full complex first mean of the same completed

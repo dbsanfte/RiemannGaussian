@@ -4230,3 +4230,122 @@ cross terms, and all source corrections available. An independently proved
 signed upper bound below the source by more than the allowance at one
 admissible scale per hypothetical right-half zero would suffice. The branch
 review and these finite diagnostics add no Lean theorem or zero bound.
+
+#### Product shells, their heat complements, and a sharper factor tail
+
+The [product-shell probe](../scripts/probe_eta_gamma_product_shells.py)
+retains the complete balanced convolution, its complex phases, every
+two-dimensional dyadic block, and the original short, cofactor, and
+centering corrections. Its independent checks include 92 exact rational
+product coefficients and 60 complete kernel evaluations using
+`tau(n)-2*1_(2|n)*tau(n/2)`. The coefficient checks agree exactly; the
+largest kernel discrepancy is below `2.8e-15`. All 12 original records
+are reproduced exactly before adding these checks, and the complete
+source reconstruction discrepancies remain below `2.4e-14`.
+
+After removing the reciprocal-product component, grouping by product
+shells or by pairs of factor shells gives weaker absolute comparisons
+than completing the entire inner Möbius factor first, in all 12 cases.
+At `u=6`, the critical-line controls give:
+
+| Control | Full inner factor, then row envelope | Product-shell envelope | Two-dimensional shell envelope |
+| --- | ---: | ---: | ---: |
+| First ordinate | `1.043158` | `2.022516` | `2.165036` |
+| Second ordinate | `1.250334` | `1.993680` | `2.687796` |
+
+The multiplier `exp(-h*log(ab/A)^2)` is tested with its entire signed
+complement retained. At `h=2`, the retained real parts are `-0.142803`
+and `-0.200741`, but the removed parts are `1.132962` and `1.209192`.
+Their sums recover the original rectangles. Thus the negative localized
+value cannot bound the original signed sum. The main positive product
+shells in these controls lie between about `A/16` and `A/2`; the
+negative blocks at larger products remain important.
+
+The eta factor vanishes at the zeta pole, cancelling the potential double
+pole of `zeta(z)^2`. The cofactor kernel consequently has the single
+reciprocal-product component already used in the balancing audit. A
+formal Mellin expansion of the centered kernel predicts a leading cubic
+remainder `-(eta(s-3)-eta(s))*zeta(s-3)*x^3/6`. Forty additional finite
+evaluations at `x=2^-k`, `k=3,...,12`, approach that coefficient; these
+records are `/tmp/eta-gamma-product-cubic.json`. This is an analytic lead,
+not a compiled asymptotic or a proved cubic bound for the cofactor kernel.
+Even a low-product bound would leave the measured positive region above.
+
+There is also a general exponent check on a pointwise divisor-error
+approach. If its proposed remainder is `O(x^(sigma-theta))` with
+`0<=theta<1`, taking absolute values of both coefficient vectors gives
+an upper budget proportional to
+`A^(theta-sigma)*(L*V)^(1-theta)`. For power schedules
+`L*V=A^q`, `q>=1`, its exponent is
+`1-sigma+(1-theta)*(q-1)`, which is positive in the critical strip.
+This does not bound the actual sum from below or exclude a special finite
+scale. It shows that sharpening the pointwise exponent alone does not
+make this absolute comparison an asymptotic sub-source bound.
+
+The new compiled estimate is instead a sharper bound for the full omitted
+cofactor in [EtaGammaFactorTail](../RiemannGaussian/EtaGammaFactorTail.lean).
+It avoids the earlier loss from replacing both factor cutoffs by the
+single coefficient envelope `n^2`. For actual factors `f,g` bounded by
+one and vanishing through `L,V`, respectively,
+`norm_evaluate_mixed_factor_le` proves
+
+```
+norm(Eval_gamma(zeta * f * g)) <= B(rho,A,L,V),
+B = 64*norm(chi(rho))*A^2*(L*V)^(-1-sigma)*exp(-L*V/(2*A)),
+```
+
+provided `A>0` and `L*V>=2*A`. To see where the saving comes from,
+keep the actual triple `a*b*k`, with `a>L`, `b>V`, `k>=1`. Then
+
+```
+a*b*k >= a*V + b*L + k*L*V - 2*L*V.
+```
+
+The original exponential carrier bound retains `(a*b*k)^(-sigma)`.
+Three separately summable exponential arithmetic functions then majorize
+the full convolution. Their masses are bounded by
+`exp(-L*V/(2*A))*2*A/V`, `exp(-L*V/(2*A))*2*A/L`, and
+`2*exp(-L*V/(2*A))`. The proof uses the exact multiplication theorem
+for convergent arithmetic-function sums; no product fibre or infinite
+cofactor is dropped.
+
+The theorem `norm_smoothError_sixth_factor_le` specializes this to
+
+```
+norm(J(rho,u^6,u^4)) <= 64*norm(chi(rho))*exp(-u^2/2)
+```
+
+for `u>=2`, `sigma>=1/2`. At `u=6`, this is approximately
+`9.75e-7*norm(chi)`, replacing approximately `1.28e13*norm(chi)`.
+These numbers compare only the omitted-cofactor allowance. Both short
+sums and the physical endpoint correction still have to be paid.
+The compiled `norm_smoothQuadratic_sixth_sub_source_factor_le` gives
+their complete sum:
+
+```
+norm(Q(rho,u^6,u^4)-S_rho)
+  <= 2*C_rho*u^(-2-4*sigma) + 64*norm(chi(rho))*exp(-u^2/2)
+     + norm(chi(rho))*(1+16*2^(-sigma))/(6*u^18).
+```
+
+The original rectangle also inherits the new bound. For the balanced
+rectangle, `norm_balancedRectangle_sub_source_factor_le` includes both
+short allowances, `32*C_rho*L^4/A^3`, five copies of `B`, and the
+physical endpoint allowance. The factor five pays one original omitted
+cofactor and the added interval's factor of at most four.
+
+This is an independently proved improvement to the full source error
+budget. It does not establish a sub-source bound for the surviving signed
+sum, a new zero exclusion, or RH. The ongoing target is unchanged.
+
+Verification: warnings-as-errors direct elaboration, the focused build
+(`4429` jobs), and the full root build (`9721` jobs) passed. All 14 verbose
+root declaration-lint checks passed, as did the project lint. The six
+public terminal theorems in `EtaGammaFactorTail` depend only on
+`propext`, `Classical.choice`, and `Quot.sound`. The compiled inventory
+contains 874 project modules, 18617 declarations, and 16009 theorems,
+with zero project axioms, zero placeholder-dependent declarations, and
+no nonstandard theorem axioms. The product-shell probe passed all 12
+cases and its independent coefficient and kernel checks; the two-record
+CLI subset also reproduces the full run exactly. These numerical checks
+remain exploration rather than theorem evidence.

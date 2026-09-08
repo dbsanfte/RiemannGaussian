@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "Completing the inner Moebius sum bounds the entire outer strip u^2<a<=u^3 with inner cutoff u^5 by C_rho u^(-6-3 Re(rho)) + 1024 norm(chi(rho)) u^18 exp(-u/4); the shorter smooth rectangle retains the original nonzero source with explicit vanishing costs, while its independent signed upper bound remains open"
-    lineOne := "signed outer strip"
-    lineTwo := "vanishing allowance"
+    label := "Retaining both omitted factor cutoffs gives the full gamma cofactor allowance 64 norm(chi(rho)) A^2 (L V)^(-1-Re(rho)) exp(-L V/(2 A)) when A>0 and L V>=2 A; on the square schedule A=u^6 and U=u^4 this is at most 64 norm(chi(rho)) exp(-u^2/2) for u>=2 and Re(rho)>=1/2, with complete source comparisons and the independent signed upper bound still open"
+    lineOne := "both factor cutoffs"
+    lineTwo := "smaller cofactor tail"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.EtaGammaRectangular.norm_foldedOuterBand_sixth_le
+      ``RiemannGaussian.EtaGammaFactorTail.norm_smoothError_sixth_factor_le
   }
 ]
 
@@ -1312,6 +1312,12 @@ run_cmd do
           "The entire balancing correction on the same schedule has norm at most " ++
           "32 C_rho/u^10 + 4096 norm(chi(rho)) u^18 exp(-u/4), which tends to zero. " ++
           "The balanced rectangle therefore retains the original source as well. " ++
+          "Keeping both vanished arithmetic factor ranges now sharpens the complete " ++
+          "cofactor allowance to 64 norm(chi(rho)) A^2 (L V)^(-1-Re(rho)) " ++
+          "exp(-L V/(2 A)) when A>0 and L V>=2 A. On A=u^6 and U=u^4 it is at most " ++
+          "64 norm(chi(rho)) exp(-u^2/2) for u>=2 and Re(rho)>=1/2. The square and " ++
+          "balanced source comparisons retain both short sums, all balancing terms, " ++
+          "and both physical endpoints with this smaller tail allowance. " ++
           "An independent signed upper bound below that source at a hypothetical " ++
           "right-half zero remains open. The source limit holds on the critical line and " ++
           "does not exclude any zero. No new zero bound or RH proof follows. " ++

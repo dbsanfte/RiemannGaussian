@@ -851,3 +851,4 @@ import RiemannGaussian.EtaGammaPhysicalAverage
 import RiemannGaussian.EtaGammaFiniteBand
 import RiemannGaussian.EtaGammaRectangular
 import RiemannGaussian.EtaGammaBalancedOuter
+import RiemannGaussian.EtaGammaFactorTail

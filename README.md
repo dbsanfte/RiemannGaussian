@@ -27,31 +27,28 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Prove one independent signed inequality below the source at each hypothetical zero right of 1/2. The smooth Möbius rectangle retains that source with explicit vanishing errors. An exact harmonic balancing rule now removes every reciprocal-product component while preserving the source limit. The remaining full signed sum must beat the source by more than all proved errors. This estimate and RH remain open.
+Prove one independent signed inequality that beats the source at each hypothetical zero right of 1/2. The gamma square and harmonically balanced rectangle retain the full source. Keeping both arithmetic factor cutoffs now gives a much smaller cofactor-tail allowance. The remaining signed sum must beat the source by more than every short-sum, tail, and endpoint cost. That estimate and RH remain open.
 
 ## Latest Update
 
-Lean now verifies [explicit harmonically balanced outer coefficients](RiemannGaussian/EtaGammaBalancedOuter.lean).
-They equal `mu(n)` through `L`, take the constant value
-`-H_mu(L)/sum_(L<n≤2L)(1/n)` on the next interval, and vanish beyond `2L`.
-The theorem `EtaGammaBalancedOuter.reciprocalProduct_balancedOuter_eq_zero`
-proves that these actual coefficients cancel every matrix term `C/(a*b)`
-exactly. The added constant has a uniform bound of four.
+Lean now proves [sharper gamma cofactor-tail bounds](RiemannGaussian/EtaGammaFactorTail.lean).
+The theorem `EtaGammaFactorTail.norm_evaluate_mixed_factor_le` keeps both
+factor cutoffs `L,V` and bounds the entire omitted cofactor by
+`64*norm(chi(rho))*A^2*(L*V)^(-1-Re(rho))*exp(-L*V/(2*A))`,
+provided `A>0` and `L*V≥2*A`. It retains the complex-power decay and sums the three
+arithmetic factors separately.
 
-The theorem `EtaGammaBalancedOuter.norm_balancedRectangle_sixth_sub_original_le`
-bounds the whole change at `A=u^6`, `L=u^2`, `V=u^5` by
-`32*C_rho/u^10 + 4096*norm(chi(rho))*u^18*exp(-u/4)`.
-Both terms tend to zero. Consequently,
-`EtaGammaBalancedOuter.balancedRectangle_sixth_tendsto_source`
-retains the original source for `Re(rho)>2/5`, with no simplicity assumption.
+On `A=u^6`, `U=u^4`, the theorem
+`EtaGammaFactorTail.norm_smoothError_sixth_factor_le` gives the simpler
+allowance `64*norm(chi(rho))*exp(-u^2/2)` for `u≥2` and `Re(rho)≥1/2`.
+The complete source comparisons for both the square and the balanced
+rectangle include this improvement, both short sums, and every physical
+endpoint correction.
 
-**The independent signed upper bound remains unproved.** The
-[numerical probe](scripts/probe_eta_gamma_balanced_outer.py) confirms
-the exact coefficient rule and full source reconstruction, but its
-absolute-row comparisons do not improve. This removes one matrix component
-and gives no new zero bound or RH proof. The
-[assessment](docs/eta-hyperbola-endgame-assessment.md) records all costs
-and the remaining signed estimate.
+**The independent signed upper bound remains unproved.** This reduces the
+error budget and establishes no new zero bound or RH proof. The
+[assessment](docs/eta-hyperbola-endgame-assessment.md) records the full
+allowance and the signed shell and heat diagnostics.
 
 ## Notable Formalisations
 
