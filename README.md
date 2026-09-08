@@ -27,30 +27,31 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Prove the uniform weighted arithmetic bound through the completed Möbius source. The A^(2/3) divisor range, boundary fibre, growing short shifts and small product ratios are controlled. Exact odd-prime cancellation now removes whole divisible product families and their mixed terms on arbitrarily large cubic windows. Seek a fixed positive gap below the source square for the surviving signed energy. The uniform bound and RH remain unproved.
+Bound the full signed sum of explicit prime pairs and complementary Möbius products below the nonzero source. Lean controls replacement of every product containing a prime above 2*u² by that prime-pair model, with error C_rho*u^(2-4*Re(rho)). The remaining joint sum still tends to the source at a hypothetical right-half zero. Its independent upper bound, the original weighted bound, and RH remain open.
 
 ## Latest Update
 
-Lean now proves [exact cancellation across an odd-prime product family](RiemannGaussian/EtaMoebiusPrimeProduct.lean).
-For each fixed odd prime `p`, the entire completed sum over products
-divisible by `p` equals `-p^(-rho)` times the original Möbius divisor
-annulus `D/p<d<=D`, restricted to `p` not dividing `d`, at cutoff `M/p`.
-The full complex factor and every finite endpoint are retained.
+Lean now verifies [joint cancellation across large-prime product groups](RiemannGaussian/EtaMoebiusLargePrimeFirstMean.lean).
+On the complete window `u⁴≤M<2*u⁴`, products containing an odd prime
+above `2*u²` form disjoint classes. Each class retains its prime terms
+and all its composites. Their difference from an explicit sum at `p`
+and `2*p` is exactly a selection of the original low-divisor terms.
 
-On the original schedule `D=u²`, `A=L=u³`, along `u=p*v`, its
-[mean square](RiemannGaussian/EtaMoebiusPrimeProductDecay.lean) is at most
-`C_(rho,p)*(1+log v)²*v^(3-6*Re(rho))`. This tends to zero for a
-hypothetical right-half zero. Lean also controls the whole
-[mixed correlation](RiemannGaussian/EtaMoebiusPrimeExclusion.lean), so
-deleting all rows and columns divisible by that fixed prime changes the
-original full energy by a vanishing amount.
+The theorem `norm_pairedEtaMoebiusLargePrimeProductFirstMean_sub_model_le`
+bounds the entire resulting first-mean error by
+`C_rho*u^(2-4*Re(rho))`. The terminal theorem
+`pairedEtaMoebiusLargePrimeProductFirstMean_sub_model_tendsto_zero`
+proves that this allowance tends to zero at a hypothetical right-half
+zero. The explicit prime sum itself is not asserted to decay.
 
-**The complementary products still carry the nonzero source square;
-their independent sub-source upper bound remains unproved.** The prime
-is fixed in this limit; a simultaneous growing prime exclusion is not
-established. The [assessment](docs/eta-hyperbola-endgame-assessment.md)
-records the exact bound and its limits. No new zero bound or RH proof
-is claimed.
+The retained carrier pairs that explicit sum with every complementary
+Möbius product before taking a norm. Lean proves that its whole complex
+first mean still tends to the original nonzero source.
+**An independent upper bound below that source remains open.** The
+[assessment](docs/eta-hyperbola-endgame-assessment.md) records the exact
+identities, their estimates, and the numerical checks retaining every
+mixed term. No whole quartic mean-square bound, new zero bound, or RH
+proof follows from this slice.
 
 ## Notable Formalisations
 
@@ -113,6 +114,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Sharp growth at a hypothetical off-critical zero** | Assuming an actual zero is off the critical line, its slower positive completion channel gives matching eventual displacement-power bounds for the original return's weighted first absolute moment. An explicit finite offset gives an all-cutoff lower bound, and the moment tends to infinity. This does not exclude such a zero. | [pairedEtaCurrentPrincipalEndpoint_eq_dominant_factor](RiemannGaussian/EtaCurrentPrincipalDominance.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_lower_with_offset](RiemannGaussian/EtaCurrentReturnSharpGrowth.lean), [pairedEtaLeadingCurrentLinearHeatReturn_firstMoment_power_bounds_eventually](RiemannGaussian/EtaCurrentReturnSharpGrowth.lean) |
 | **Finite Möbius constraints and eta phase cancellation** | Fixed odd/even divisor pairs have period cancellation, and zeroth-order parity aggregates have uniform bounds. Every centered moment now has full Möbius inversion with exact center translations and a fixed-center aggregate bound. Both original current branches reconstruct, including the adjacent-order double sum for repeated zeros. The weighted bound remains open. | [norm_pairedEtaSignedCompletedMoebiusDyadicCorrelation_le](RiemannGaussian/EtaMoebiusDyadicCorrelation.lean), [pairedEtaLeadingCurrent_eq_oddInverse_head](RiemannGaussian/EtaCurrentMoebiusInverse.lean), [norm_pairedEtaCompletedOddInverseTop_sub_main_le](RiemannGaussian/EtaMoebiusGroupedInverse.lean), [norm_pairedEtaCompletedOddInverseBottom_add_main_le](RiemannGaussian/EtaMoebiusGroupedInverse.lean), [norm_pairedEtaCompletedMomentMoebiusAggregate_le](RiemannGaussian/EtaMomentMoebiusTransform.lean), [pairedEtaLeadingCurrent_eq_momentInverse_adjacent](RiemannGaussian/EtaCurrentMomentMoebiusInverse.lean) |
 | **Divisor Fourier separation and physical mean square** | Literal quotient phases have proved finite Fourier support, exact gcd covariance, and separated divisor frequencies. Their original completed Möbius family has mean square at most `C_rho D(1+log D) A^(-2 Re rho)` when `D²` is at most both the starting cutoff and averaging length. The original signed pair retains both complementary physical decay rates. | [pairedEtaCompletedMoebiusParityFamily_eq_fourier](RiemannGaussian/EtaMoebiusFourierSpectrum.lean), [pairedEtaDivisorFourierSpectrum_separated](RiemannGaussian/EtaDivisorFourierGrid.lean), [pairedEtaCompletedMoebiusParityFamily_period_energy_eq](RiemannGaussian/EtaMoebiusParityEnergy.lean), [pairedEtaCompletedMoebiusOriginalMeanSquare_le_quadratic](RiemannGaussian/EtaMoebiusOriginalQuadraticFamily.lean), [pairedEtaSignedCompletedMoebiusOriginalMeanAbsolute_le_quadratic](RiemannGaussian/EtaMoebiusOriginalQuadraticFamily.lean) |
+| **Direct parity first means and a growing coprime sieve** | The norm of the complex mean of every selected divisor family through `D≤A` is at most `C_rho D² A^(-Re(rho)-1)`. On `A=u⁴`, `D=u³`, the whole low mean vanishes at a hypothetical right-half zero. Simultaneous odd-prime exclusion costs at most `C_rho P² u^(2-4 Re(rho))`; an explicit growing schedule makes that cost vanish and preserves the source in the surviving first mean. Its independent bound below the source norm remains open. | [norm_pairedEtaCompletedMoebiusSelectedFirstMean_le](RiemannGaussian/EtaMoebiusFirstMean.lean), [norm_pairedEtaCompletedMoebiusSmallAverage_quartic_le](RiemannGaussian/EtaMoebiusQuarterQuotientMean.lean), [norm_pairedEtaMoebiusCoprimeLowQuarticFirstMean_le](RiemannGaussian/EtaMoebiusCoprimeFirstMean.lean), [pairedEtaMoebiusCoprimeQuarticFirstMean_growing_tendsto_source](RiemannGaussian/EtaMoebiusCoprimeFirstMean.lean) |
 | **Moving-center moments and inverse-term reduction** | Every moment below the actual multiplicity reduces quantitatively to the original zeroth-order family with coefficient `k!/rho^k`. The square-root divisor-range mean square and signed adjacent-order bound hold at moving physical centers. An explicit companion error applies inside the original inverse terms; the full weighted inverse sum remains open. | [norm_pairedEtaCompletedMomentMoebiusTerm_physical_sub_zero_le](RiemannGaussian/EtaMomentPhysicalReduction.lean), [pairedEtaCompletedMomentOriginalMeanSquare_le_quadratic](RiemannGaussian/EtaMomentQuadraticMeanSquare.lean), [pairedEtaSignedCompletedMomentOriginalMeanAbsolute_adjacent_le_quadratic](RiemannGaussian/EtaMomentSignedQuadraticFamily.lean), [norm_pairedEtaCompletedMomentInversePartialTerm_sub_zero_le](RiemannGaussian/EtaMomentInverseReduction.lean) |
 | **Joint control of original inverse rectangles** | Exact product grouping and a proved collision-energy estimate bound both actual inverse divisor sums together, with mean square at most `C_rho,k ED(1+log E)²(1+log(ED))² A^(-2 Re rho)` for `(ED)²≤A,L`. The original signed adjacent pair retains both physical decay rates. The complete inverse range remains open. | [sum_sq_pairedEtaInverseProductCoefficient_le_log_sq](RiemannGaussian/EtaInverseProductCoefficients.lean), [pairedEtaCompletedMomentInverseRectangleMeanSquare_le_quadratic](RiemannGaussian/EtaInverseRectangleMeanSquare.lean), [pairedEtaSignedCompletedMomentInverseRectangleMeanAbsolute_adjacent_le_quadratic](RiemannGaussian/EtaInverseRectangleSigned.lean) |
 | **Multiplicity-aware rank--trace inequalities** | The attributed Anthropic linear-algebra stack is specialised to actual finite eta zero windows, retaining analytic multiplicity and the signed off-line contribution. | [pairedEtaTopPrefixFiniteZeroWindow_multiplicityRankTrace_ledger](RiemannGaussian/EtaEnergyFiniteWindowMultiplicityRankTrace.lean#L78) |
@@ -125,8 +127,12 @@ identifies the exact divisor annulus;
 proves decay of the entire divisible product family; and
 [pairedEtaMoebiusLargeMeanSquare_sub_primeFree_tendsto_zero](RiemannGaussian/EtaMoebiusPrimeExclusion.lean)
 retains and controls all mixed terms when deleting its rows and columns.
-These theorems use one fixed odd prime and a hypothetical right-half zero.
-The complementary upper bound remains open.
+The [simultaneous coprime sieve](RiemannGaussian/EtaMoebiusCoprimeWindow.lean)
+now bounds the accumulated intersection cost uniformly in the modulus.
+[pairedEtaMoebiusLargeMeanSquare_sub_growingCoprime_tendsto_zero](RiemannGaussian/EtaMoebiusCoprimeExclusion.lean)
+extends the deletion to every odd prime through a growing threshold on
+explicit cofinal scales. These decay statements use a hypothetical
+right-half zero. The complementary upper bound remains open.
 
 The RH equivalences in this inventory are reformulations. Their open
 positivity or vanishing direction remains unproved.

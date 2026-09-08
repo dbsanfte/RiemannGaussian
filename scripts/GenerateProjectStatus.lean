@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "Deleting all product rows and columns divisible by a fixed odd prime changes the original cubic-window energy by a vanishing amount at a hypothetical right-half zero; the complementary sub-source bound remains open"
-    lineOne := "odd-prime product rows"
-    lineTwo := "mixed terms vanish"
+    label := "All products carrying a prime above 2 u^2, including their composites, differ from the explicit prime/twice-prime sum by exactly a selected low-divisor mean; its norm is at most C_rho u^(2-4 Re(rho)) and tends to zero at a hypothetical right-half zero, while the retained prime model plus complementary products still has an open independent upper bound below the source"
+    lineOne := "large-prime products"
+    lineTwo := "joint error decays"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaMoebiusLargeMeanSquare_sub_primeFree_tendsto_zero
+      ``RiemannGaussian.norm_pairedEtaMoebiusLargePrimeProductFirstMean_sub_model_le
   }
 ]
 
@@ -1172,8 +1172,64 @@ run_cmd do
         "sigma>1/2. The full mixed correlation with the original high " ++
         "aggregate also vanishes. Deleting these product rows and columns " ++
         "therefore has vanishing total signed cost. The exact complement " ++
-        "still carries the source square. A growing simultaneous prime " ++
-        "exclusion and a complementary sub-source estimate are not proved. " ++
+        "still carries the source square. Finite coprime sieving now " ++
+        "retains every prime intersection as a selected original divisor " ++
+        "family at its own divided physical cutoff. For every odd modulus " ++
+        "P dividing u, its whole low mean square is at most " ++
+        "C_rho*P^4*(1+log u)^2*u^(3-6*sigma), with a modulus-independent " ++
+        "constant and all sampling losses retained. On the explicit " ++
+        "schedule P_v=product_(j<=v)(2*j+1), u_v=P_v^m, " ++
+        "m=ceil(8/(6*sigma-3))+1, this allowance tends to zero for " ++
+        "sigma>1/2. Every odd prime through 2*v+1 is excluded together. " ++
+        "The entire removed family's mean square and its full complex " ++
+        "mixed correlation with the original family both vanish. Deleting " ++
+        "all these product rows and columns therefore has vanishing total " ++
+        "signed cost. The exact surviving energy still tends to the " ++
+        "nonzero source square. Products with growing odd prime factors " ++
+        "remain; an independent complementary sub-source estimate is " ++
+        "not proved. " ++
+        "A separate direct parity-shift argument now bounds the complex " ++
+        "first mean of every selected original divisor family through " ++
+        "D<=A by C_rho*D^2*A^(-sigma-1), retaining both normalization " ++
+        "errors. On A=L=u^4 and D=u^3, this is C_rho*u^(2-4*sigma), " ++
+        "which tends to zero for sigma>1/2. The remaining first mean is " ++
+        "one exact signed product sum with the literal ramp window, and " ++
+        "the high quotient cap is less than 2*u. Every divided window " ++
+        "in the coprime sieve costs only its dividing integer e in this " ++
+        "first-mean estimate. The entire low sieve is therefore at most " ++
+        "C_rho*P^2*u^(2-4*sigma), uniformly for odd P dividing u. The " ++
+        "same explicit P_v and u_v=P_v^m make this allowance vanish on " ++
+        "the quartic windows, with all growing prime intersections " ++
+        "retained. The surviving complex first mean still tends to the " ++
+        "nonzero source, and removing the whole growing prime family " ++
+        "changes the original first mean by a quantity tending to zero. " ++
+        "These are bounds for the norm of the complex mean, not its " ++
+        "mean square or mean absolute value. No quartic mean-square " ++
+        "extension is asserted. An independent first-mean upper bound " ++
+        "with a fixed positive gap below the source norm remains open. " ++
+        "For the original quartic divisor cut, completing the last " ++
+        "quotient fibre adds at most u^2 divisors, at every physical " ++
+        "cutoff M>=u^4. The entire boundary norm is at most " ++
+        "C_term*u^(2-4*sigma), and its mean square is at most " ++
+        "C_term^2*u^(4-8*sigma). Both allowances vanish for sigma>1/2. " ++
+        "The signed completion identity is retained in the first mean. " ++
+        "Consequently the complete quotient mean differs from the " ++
+        "original source by at most (C_term+C_mean)*u^(2-4*sigma) " ++
+        "and tends to that nonzero source. This boundary estimate does " ++
+        "not bound the whole quartic mean square or supply the missing " ++
+        "independent upper bound below the source. " ++
+        "The same boundary is now controlled after the growing coprime " ++
+        "sieve. Every actual intersection is an original completed term " ++
+        "at a multiplied divisor; intersections beyond the physical " ++
+        "cutoff vanish. The whole sieved boundary has norm at most " ++
+        "C_term*P*u^(2-4*sigma), uniformly in the odd modulus. Exact " ++
+        "quotient reindexing retains coprimality on both factors. The " ++
+        "complete sieved first mean therefore differs from the source " ++
+        "by at most (C_term+C_mean)*P^2*u^(2-4*sigma) when P divides u. " ++
+        "The existing explicit growing schedule makes this allowance " ++
+        "vanish, so complete coprime blocks retain the original nonzero " ++
+        "complex source. This proves no independent upper bound below " ++
+        "that source and no whole quartic mean-square estimate. " ++
         "The uniform cutoff-independent " ++
         "bound for the original current's weighted absolute moment remains open. These " ++
         "auxiliary estimates do not supply the signed completed eta cancellation required " ++
@@ -1227,14 +1283,31 @@ run_cmd do
       ("target", .str
         ("Prove first absolute-moment summability of the actual completed eta leading " ++
           "flux at every nontrivial zero, preserving completion weights, multiplicity, " ++
-          "and the simple-zero head term. The current route seeks any fixed positive " ++
-          "gap below the source square for the full completed Moebius quotient shell " ++
-          "form at a hypothetical right-half zero. Divisors through A^(2/3) and the " ++
-          "single clipped boundary have vanishing mean square. Complete quotient blocks " ++
-          "now form exact dyadic shells with all cross terms retained. Their parity " ++
-          "recurrence gives the complete two-scale odd energy and its phase-weighted " ++
-          "mixed correlation, keeping the original quotient cap on both scales. The " ++
-          "joint sub-source bound remains open; a full decay or power rate is not required."))
+          "and the simple-zero head term. The current route seeks a fixed positive " ++
+          "gap below the nonzero source norm for the complete complex Moebius first " ++
+          "mean at a hypothetical right-half zero. On quartic windows, divisors " ++
+          "through A^(3/4) and the single clipped boundary are controlled. The " ++
+          "growing coprime sieve leaves complete quotient blocks with all " ++
+          "intersection and boundary costs paid. A separate weighted sieve on " ++
+          "the original product carrier now uses the exact weights " ++
+          "p/((p-1)(1+H_R)), where H_R sums 1/(p-1) over odd primes through R. " ++
+          "At R=floor(u^(2 Re(rho)-1)), the whole weighted correction has " ++
+          "norm at most 2 C_rho/(1+H_R), which tends to zero at a " ++
+          "hypothetical right-half zero. The exact weights retain the " ++
+          "literal residual multiplier 1-sum_(p|n) w_R(p), " ++
+          "including every overlap; this is not a prime-free indicator. The " ++
+          "residual whole complex mean still tends to the source. A subsequent " ++
+          "joint estimate handles every original product carrying a prime above " ++
+          "2 u^2, including all its composites: replacing this entire group by " ++
+          "the literal prime/twice-prime sum costs at most C_rho u^(2-4 Re(rho)) " ++
+          "in the first mean. The retained carrier pairs that explicit prime " ++
+          "sum with every complementary product before taking a norm, and " ++
+          "still tends to the nonzero source. Neither component is asserted " ++
+          "to decay separately. A bound " ++
+          "below the source square for its " ++
+          "source-directed real projection would also suffice. The independent " ++
+          "arithmetic upper bound remains open; full decay or a power rate is " ++
+          "not required. The retained cubic mean-square route is separate."))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

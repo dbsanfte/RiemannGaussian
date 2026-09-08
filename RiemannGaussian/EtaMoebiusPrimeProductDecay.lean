@@ -123,7 +123,8 @@ theorem pairedEtaMoebiusPrimeProductCubicEnergy_le
   rw [pairedEtaMoebiusPrimeProductDecayConstant, ← hscale]
   ring
 
-private theorem tendsto_log_square_mul_rpow_neg {a : ℝ} (ha : a < 0) :
+/-- A squared logarithmic factor is dominated by every fixed negative power along the natural cutoffs. -/
+theorem tendsto_log_square_mul_rpow_neg {a : ℝ} (ha : a < 0) :
     Tendsto (fun v : ℕ ↦ (1 + Real.log v) ^ 2 * (v : ℝ) ^ a) atTop (𝓝 0) := by
   have he : 0 < -a / 2 := by linarith
   have hp : Tendsto (fun v : ℕ ↦ (v : ℝ) ^ (a / 2)) atTop (𝓝 0) := by

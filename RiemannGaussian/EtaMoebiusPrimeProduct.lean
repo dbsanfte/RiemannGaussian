@@ -31,7 +31,8 @@ theorem moebius_prime_mul_eq_not_dvd {p : ℕ} (hp : p.Prime) (d : ℕ) :
       (hp.coprime_iff_not_dvd.mpr hd), ArithmeticFunction.moebius_apply_prime hp]
     ring
 
-private theorem etaSign_odd_mul {p : ℕ} (hp : Odd p) (q : ℕ) :
+/-- An odd factor preserves the literal alternating eta coefficient. -/
+theorem pairedEtaDirichletSign_odd_mul {p : ℕ} (hp : Odd p) (q : ℕ) :
     pairedEtaDirichletSign (p * q) = pairedEtaDirichletSign q := by
   simp only [pairedEtaDirichletSign, Nat.even_mul, Nat.not_even_iff_odd.mpr hp, false_or]
 
@@ -118,7 +119,7 @@ theorem pairedEtaMoebiusHighProductCoefficient_prime_mul {p : ℕ}
       (fun q d ↦ if D < d then pairedEtaDirichletSign q * μ d else 0),
     sum_prime_antidiagonal_not_dvd hp n
       (fun q d ↦ if D < d then pairedEtaDirichletSign q * μ d else 0)]
-  simp only [moebius_prime_mul_eq_not_dvd hp, etaSign_odd_mul hodd,
+  simp only [moebius_prime_mul_eq_not_dvd hp, pairedEtaDirichletSign_odd_mul hodd,
     Finset.sum_filter, ← Finset.sum_add_distrib, ← Finset.sum_neg_distrib]
   apply Finset.sum_congr rfl
   intro a _
@@ -152,7 +153,8 @@ def pairedEtaCompletedMoebiusPrimeProductAggregate
     ∑ n ∈ (Finset.Icc 1 M).filter (fun n ↦ p ∣ n),
       (pairedEtaMoebiusHighProductCoefficient D n : ℂ) * (n : ℂ) ^ (-rho.1)
 
-private theorem sum_Icc_dvd_eq_divided {p : ℕ} (hp : 0 < p) (M : ℕ) (f : ℕ → ℂ) :
+/-- A finite prefix restricted to multiples keeps the exact divided endpoint. -/
+theorem sum_Icc_dvd_eq_divided {p : ℕ} (hp : 0 < p) (M : ℕ) (f : ℕ → ℂ) :
     (∑ n ∈ (Finset.Icc 1 M).filter (fun n ↦ p ∣ n), f n) =
       ∑ n ∈ Finset.Icc 1 (M / p), f (p * n) := by
   apply Finset.sum_bij (fun n _ ↦ n / p)

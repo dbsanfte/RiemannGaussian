@@ -6,6 +6,199 @@ estimate**. The objective remains active until both parts are proved and
 verified. The completed [signed endpoint package](eta-signed-endpoint-theorem-plan.md)
 provides the actual support, gap, phase, Gaussian, and mixed-matrix inputs.
 
+## Current first-mean route
+
+The newest estimate uses the full complex first mean of the same completed
+Möbius source. The theorem
+`norm_pairedEtaCompletedMoebiusSelectedFirstMean_le` in
+[EtaMoebiusFirstMean](../RiemannGaussian/EtaMoebiusFirstMean.lean)
+bounds every selected divisor family through `D≤A` by
+`C_rho*D²*A^(-sigma-1)`. It pairs each parity wave with its divisor shift
+before estimating the complex-power difference. Both original
+normalization errors are retained. This is a separate linear estimate;
+the Fourier sampler's mean-square range remains `A^(2/3)`.
+
+On `A=L=u⁴`, `D=u³`, the low complex mean is at most
+`C_rho*u^(2-4*sigma)` and tends to zero for `sigma>1/2`.
+[EtaMoebiusQuarterQuotientMean](../RiemannGaussian/EtaMoebiusQuarterQuotientMean.lean)
+identifies the high mean with one exact signed product sum with the literal
+ramp weights, proves its quotient cap is less than `2*u`, and proves that
+it tends to the original nonzero source. The new
+[quartic boundary estimate](../RiemannGaussian/EtaMoebiusQuarticBoundary.lean)
+now completes the last fibre at a cost of at most `u²` divisors and norm
+`C_term*u^(2-4*sigma)`, uniformly for `M≥u⁴`. The boundary's full mean
+square also tends to zero. The complete quotient first mean consequently
+has source error at most `(C_term+C_mean)*u^(2-4*sigma)` and retains the
+same nonzero limit. This is a new estimate for the quartic fibre, not an
+application of the earlier cubic bound outside its hypotheses.
+
+The theorem `norm_pairedEtaMoebiusCoprimeLowQuarticFirstMean_le` in
+[EtaMoebiusCoprimeFirstMean](../RiemannGaussian/EtaMoebiusCoprimeFirstMean.lean)
+now combines that estimate with simultaneous prime exclusion. For odd
+`P` dividing `u`, every divided window costs its dividing integer `e`,
+so the complete low sieve has norm at most
+`C_rho*P²*u^(2-4*sigma)`. The existing explicit
+`P_v=product_(j<=v)(2*j+1)`, `u_v=P_v^m`,
+`m=ceil(8/(6*sigma-3))+1`, satisfies
+`2+m*(2-4*sigma)<0`. Thus the whole first-mean sieve allowance vanishes
+while every odd prime through `2*v+1` is excluded together. The terminal
+`pairedEtaMoebiusCoprimeQuarticFirstMean_growing_tendsto_source`
+retains the original nonzero source in the surviving complex mean.
+
+The new [coprime boundary estimate](../RiemannGaussian/EtaMoebiusCoprimeBoundary.lean)
+also completes the sieved quotient blocks. Each prime intersection is
+exactly an original term at divisor `d*e`, using `gcd(d,e)=1`; terms
+beyond the physical cutoff vanish. The boundary has norm at most
+`C_term*P*u^(2-4*sigma)`, with no fixed-modulus assumption. The exact
+completion identity and quotient reindexing retain coprimality on both
+factors. For `P|u`, the entire complete mean has source error at most
+`(C_term+C_mean)*P²*u^(2-4*sigma)`. The terminal theorem
+`pairedEtaMoebiusCoprimeCompleteQuarticFirstMean_growing_tendsto_source`
+proves that the same explicit schedule makes this allowance vanish.
+
+The immediate target is an independent upper bound for the norm of the
+complete quotient mean, including its growing-sieve version, with a fixed
+positive gap below the source norm on arbitrarily
+large scales. A bound below the source square for its real projection
+against the conjugate source would also suffice. These are still open
+arithmetic estimates. No mean-square extension to quartic windows, new
+zero bound, full arithmetic decay, or RH proof follows from the new
+first-mean bounds alone. The detailed estimate and its limitations are in
+the [hyperbola assessment](eta-hyperbola-endgame-assessment.md).
+
+The subsequent surviving-sum audit checks a specific obstruction: the
+complete quotient operator applied to logarithmic prefix increments
+returns the genuine eta derivative. At a simple zero, normalization by
+`1/zeta'(rho)` therefore reproduces the entire nonzero source. Fixed-prime
+coprimality has the same model response after the exact Euler factors
+cancel. These statements do not estimate the actual Möbius prefix. The
+research probe also finds finite sieve gaps in this model that disappear
+at larger quotient caps. The next arithmetic estimate must control the
+corresponding possible contribution in the actual weighted Möbius sum;
+shell sizes or finite gaps alone do not supply it. The assessment records
+the precise Lean diagnostic and numerical scope.
+
+The subsequent quadratic audit tests Heath--Brown factorization of the
+actual Möbius coefficients. Subtracting its explicit smooth pole leaves
+an indefinite form in every numerical case tested. Adding a second eta
+factor removes the pole exactly, but a separate Lean diagnostic proves
+that the finite arithmetic identity then retains the source square.
+Its regularized numerical response is the negative square of the
+actual inverse-prefix defect, plus the explicit small eta-tail error.
+This does not yield an independent bound for that defect. The audit and
+reproducible full-matrix checks are recorded at the end of the assessment.
+The primary target remains the complete first mean: the next useful
+estimate must use the actual Möbius cross terms, beyond a generic matrix
+norm or repeated eta factorization.
+
+The subsequent primary-source correlation review makes another transfer
+cost explicit. Direct use of a normalized first-sum error leaves
+`epsilon(A)*A^(1-sigma)`; an averaged absolute correlation error in the
+first Möbius band leaves `epsilon(D)*D^(2-2*sigma)`, subject also to
+the required weighted partial-sum uniformity. Known logarithmic rates
+do not yet put these allowances below the source. A separate Lean
+diagnostic proves that bounded complete multiplicativity and uniform
+logarithmically normalized correlation decay can coexist with a matched
+weighted dyadic block of norm at least `1/2` at every scale. Its
+coefficients are a comparison sequence, not Möbius. The assessment
+records the primary sources and exact theorem scope. The next estimate
+must use additional arithmetic of the actual coefficients, preserving
+their full complex sum; replacing that sum by normalized correlation
+decay alone has not closed the gap.
+
+The newest arithmetic estimate returns to the exact prime identity on
+the original product carrier. In
+[EtaMoebiusPrimeFirstMean](../RiemannGaussian/EtaMoebiusPrimeFirstMean.lean),
+`pairedEtaCompletedMoebiusPrimeProductAggregate_eq_original_annulus`
+moves the odd prime into the original divisor index `p*d`. The direct
+parity estimate then gives first-mean norm at most
+`C_rho*p*u^(2-4*sigma)` for every odd prime `p≤u`, on every quartic
+scale `u`; no condition `p|u` is needed.
+The theorem `sum_norm_pairedEtaMoebiusPrimeProductFirstMean_growing_le`
+bounds the sum of these norms over **all** odd primes through
+`floor(u^(sigma-1/2))` by `C_rho*u^(1-2*sigma)`. The whole allowance
+tends to zero when `sigma>1/2`, uniformly for complex weights of norm
+at most one that may vary with the scale.
+
+The exact weighted residual has product multiplier
+`1-sum_(p|n) w(p)`. Every overlap is retained; this is not a prime-free
+indicator. Its first mean still tends to the nonzero source. This gives
+a controlled family for choosing arithmetic sieve weights on the
+original product sum, separate from the complete coprime selection
+above. The next bound must estimate the resulting whole signed residual
+below the source. Neither a bound for the hard union of these prime
+classes nor a whole quartic mean-square estimate is inferred.
+
+The new [exact prime weights](../RiemannGaussian/EtaMoebiusPrimeSieveWeights.lean)
+now reach the endpoint of that quadratic cutoff budget. Define
+`H_R=sum_(p≤R, p odd prime) 1/(p-1)` and
+`w_R(p)=p/((p-1)*(1+H_R))`. Lean proves both `0≤w_R(p)≤1` on the
+selected primes and the stronger bound `w_R(p)≤2/(1+H_R)`.
+The theorem `norm_pairedEtaMoebiusHarmonicPrimeFirstMean_le` then
+bounds the entire weighted prime correction by `2*C_rho/(1+H_R)`
+at `R=floor(u^(2*sigma-1))`. The checked divergence of prime
+reciprocals proves that this allowance tends to zero for `sigma>1/2`.
+Thus these specific arithmetic weights double the earlier cutoff
+exponent while retaining all product overlaps. No logarithmic rate for
+the harmonic divergence is required or asserted by this theorem.
+
+The [full-weight probe](../scripts/probe_eta_prime_sieve_weights.py)
+also checks the candidate against every original physical endpoint,
+retaining its whole mean square and every prime-class cross term.
+Its exact rational density calculation and the actual Möbius residual
+are separate quantities. Finite source gaps in critical-line samples
+disappear at larger tested scales even while the density improvement
+persists. This does not refute a zero-specific argument, but it supplies
+no independent bound for the signed residual. The next estimate must
+control that actual residual, including its prime/composite interference;
+the new theorem pays for the enlarged weighted correction only.
+
+The subsequent prime/composite audit sharpens that next target. A local
+Lean check proves that the small-prime weights leave every active
+single-odd-prime ray unchanged; higher powers of its sole odd prime vanish
+on quartic windows with `u>=3`. Any active product carrying a prime above
+`D=u^3` is that prime or twice that prime, so all remaining composite
+products have prime factors at most `D`. The complete numerical Gram
+retains these channels' mixed term, which can be positive. An independent
+prime-only formula reconstructs the unchanged channel exactly.
+
+Classical partial summation using the prime number theorem predicts more
+than a finite obstruction: for fixed `s` in the strip, that channel's
+first mean has nonzero leading term
+`c_s*A^(1-s)/(log A)^2`, with `A=u^4`. The assessment derives this
+consequence and identifies its external analytic input; it is not a Lean
+asymptotic theorem or a finite numerical bound. Separate decay of the
+prime and composite groups is therefore the wrong intermediate target.
+Use the exact prime-removal recurrence on admissible cofactors to keep
+their phases and smaller-cutoff Möbius coefficients in one signed sum.
+The required estimate still has to control that whole sum below the
+source on an absolute scale; relative alignment alone does not suffice.
+
+The newest checked estimate now controls a joint prime/composite group.
+[EtaMoebiusLargePrimeFirstMean](../RiemannGaussian/EtaMoebiusLargePrimeFirstMean.lean)
+selects all primes `p>2*u^2` through `2*u^4`. No positive product in
+the physical window carries two selected primes. The entire original
+product group containing one of them differs from its explicit sum at
+`p` and `2*p` by exactly the negative original low-divisor family whose
+divisors carry a selected prime. The theorem
+`norm_pairedEtaMoebiusLargePrimeProductFirstMean_sub_model_le` bounds
+this whole first-mean error by `C_rho*u^(2-4*sigma)`; its decay is
+checked for `sigma>1/2`. Both the primes and their composites have been
+retained in obtaining this estimate.
+
+The remaining candidate is the explicit prime-pair sum **plus all
+complementary original products**, taken as a single complex first mean.
+`pairedEtaMoebiusPrimeSmoothFirstMean_tendsto_source` proves that it
+still tends to the nonzero source. The new theorem does not assert decay
+of the prime model or estimate either component separately. It applies
+to the original unweighted carrier; the previously proved harmonic
+weighted correction remains a separate vanishing term. The next task is
+an independent upper bound for this coupled prime/complementary sum,
+or its source-directed real projection. The full arithmetic gap and RH
+remain open.
+
+## Retained cubic mean-square route
+
 The current research route audits the supplied hyperbola reductio on the
 original zero-dependent Möbius source. The
 [hyperbola assessment](eta-hyperbola-endgame-assessment.md) records the
@@ -76,10 +269,32 @@ to zero. The terminal theorem
 [EtaMoebiusPrimeExclusion](../RiemannGaussian/EtaMoebiusPrimeExclusion.lean)
 therefore removes every product row and column divisible by that fixed
 prime with a vanishing total signed cost. Its exact complement still
-has the source-square limit. This is one fixed prime at a time; neither
-a growing simultaneous exclusion nor the complementary sub-source
-estimate is proved.
-The immediate target is any independent upper bound with a fixed positive
+has the source-square limit. That fixed-prime theorem alone does not
+justify simultaneous exclusion.
+The [finite coprime sieve](../RiemannGaussian/EtaMoebiusCoprimeProduct.lean)
+now retains every prime intersection as a selected original divisor
+family at its exact divided physical cutoff. For any odd modulus `P`
+dividing `u`, the compiled
+`pairedEtaMoebiusCoprimeLowCubicEnergy_le` in
+[EtaMoebiusCoprimeWindow](../RiemannGaussian/EtaMoebiusCoprimeWindow.lean)
+bounds the whole low sieve by
+`C_rho*P^4*(1+log u)^2*u^(3-6*sigma)`, with modulus-independent constant.
+The explicit growing schedule uses
+`P_v=product_(j<=v)(2*j+1)` and
+`u_v=P_v^m`, where `m=ceil(8/(6*sigma-3))+1`.
+[EtaMoebiusCoprimeGrowth](../RiemannGaussian/EtaMoebiusCoprimeGrowth.lean)
+proves the complete allowance tends to zero for `sigma>1/2` and that
+every odd prime through `2*v+1` is excluded together.
+The terminal theorem
+`pairedEtaMoebiusLargeMeanSquare_sub_growingCoprime_tendsto_zero` in
+[EtaMoebiusCoprimeExclusion](../RiemannGaussian/EtaMoebiusCoprimeExclusion.lean)
+controls deletion of the whole growing selection of product rows and
+columns, including all their mixed terms. Its exact complement still
+has the nonzero source-square limit. This closes the simultaneous
+exclusion and accumulated-error obligations on these explicit cofinal
+scales. Products with growing odd prime factors survive; their independent
+sub-source bound remains open.
+On this cubic energy route, the target is any independent upper bound with a fixed positive
 gap below the source square; a decay or power rate is sufficient but not
 required. That arithmetic estimate remains open. The present sampler's
 `A^(2/3)` range will not be extended as a substitute for this target. The
