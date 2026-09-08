@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "The actual signed weighted eta current has an explicit positive side-oriented displacement-power lower bound at every hypothetical off-critical zero, with the entire summable error and finite initial segment paid; the cancellation deficit is summable and the exact energy Abel expression retains the weighted boundary; the independent upper estimate remains open"
-    lineOne := "signed current growth"
-    lineTwo := "side W >= c K^e - B"
+    label := "The complete reflected inverse energies retain the actual signed current up to two proved summable transport errors; quantitative odd-weight/log-step normalization gives an unweighted signed energy sum with eventual lower bound side*S >= (c_rho/8)*(K+1)^e at every hypothetical off-critical zero; the independent relative upper saving remains open"
+    lineOne := "normalized energy"
+    lineTwo := "8 side S ≥ c K^e"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.pairedEtaLeadingFluxSignedPartialSum_lower_with_offset
+      ``RiemannGaussian.pairedEtaNormalizedReflectedEnergyPartialSum_power_lower_eventually
   }
 ]
 
@@ -1283,8 +1283,21 @@ run_cmd do
       ("target", .str
         ("Prove an independent signed arithmetic inequality contradicting every " ++
           "hypothetical zero right of one half, with all proved error allowances paid. " ++
-          "The primary target is now a uniform bound for the signed weighted partial " ++
-          "sums of the actual eta leading current; a sub-power upper estimate also suffices. " ++
+          "The primary target is a relative vanishing upper factor compared with K^e " ++
+          "for the complete unweighted signed reflected-energy sum S(K), where " ++
+          "e=abs(2*Re(rho)-1)>0. Uniform boundedness is not required. " ++
+          "The full inverse-energy sum differs from the actual signed current by a " ++
+          "convergent signed correction with a fixed finite budget. Quantitative " ++
+          "normalization proves abs((2*N+1)*Delta_(N+1)-2)<=4/(N+1), and the entire " ++
+          "energy-weighted normalization error has a summable explicit envelope. " ++
+          "Thus W(K)=4*S(K)+O_rho(1), with eventual lower bound " ++
+          "side*S(K)>=(c_rho/8)*(K+1)^e. Complete low-product inverse cuts with " ++
+          "1<=T<=M already equal the full physical inverse at M; the complete " ++
+          "high-product complement is exactly zero. Arbitrary complex weights " ++
+          "depending only on the product preserve the full prefix times their " ++
+          "value at one. These identities hold before norms, with original centers, " ++
+          "cutoffs and all moment orders retained. Shrinking the complete product " ++
+          "range therefore does not reduce the arithmetic target. " ++
           "The signed current now has the proved lower bound side*W(K)>=c_rho*(K+1)^e-B_rho " ++
           "for e=abs(2*Re(rho)-1)>0, c_rho>0, and a finite allowance paying the principal " ++
           "error and initial cutoffs. Its cancellation deficit is summable, so cutoff " ++

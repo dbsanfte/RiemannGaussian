@@ -27,25 +27,29 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek an independent upper estimate for the signed weighted eta current. Lean now proves its off-line signed power growth, a finite total cancellation deficit, and an exact energy Abel formula retaining the terminal boundary. Any upper rate strictly below that power would suffice. Cutoff cancellation and unweighted telescoping do not supply it; the arithmetic estimate and RH remain open.
+Seek a relative vanishing upper factor for the complete signed reflected eta-energy sum. Lean transports the current's off-line power lower bound to this unweighted sum with finite error. Complete product cuts retain the entire energy, so shrinking that range gives no saving. A successful estimate must control the reflected comparison with all mixed terms present. The arithmetic bound and RH remain open.
 
 ## Latest Update
 
-Lean now proves [signed power growth of the actual current](RiemannGaussian/EtaLeadingFluxSignedPartialSum.lean).
-At any hypothetical off-line zero, put `e = |2*Re(rho)-1| > 0` and
-`W(K) = sum_(N<K) (2*N+1)*J_rho(N)`. With the side sign retained,
-`side*W(K) >= c_rho*(K+1)^e - B_rho`, where `c_rho > 0` and the
-finite allowance includes the early cutoffs and the proved arithmetic
-error. Thus `W` tends to positive infinity on the right and negative
-infinity on the left. Its total cancellation deficit is summable.
+Lean now transports the actual signed current to the
+[complete inverse-energy sum](RiemannGaussian/EtaLeadingFluxSignedInversePartialSum.lean)
+with a convergent signed correction and a fixed finite budget. The
+[quantitative normalization](RiemannGaussian/EtaCurrentOddWeightStepAsymptotic.lean)
+proves `|(2*N+1)*Delta_(N+1)-2| <= 4/(N+1)` and pays its entire
+energy-weighted error by a summable envelope. Thus `W(K)=4*S(K)+O_rho(1)`,
+where `S` is the unweighted difference of the full reflected energies.
+At an off-line zero, `side*S(K) >= (c_rho/8)*(K+1)^e` eventually,
+with `e=|2*Re(rho)-1|>0` and `c_rho>0`.
 
-The [exact signed Abel identity](RiemannGaussian/EtaLeadingFluxSignedAbel.lean)
-retains the terminal weighted energy and both summable corrections.
-The complete Abel expression inherits the same signed power lower bound.
-The independent upper estimate is still open: these are checked growth
-and transport theorems, with no new zero exclusion or RH proof.
-The [ledger](docs/eta-signed-current-partial-sums.md) gives the constants,
-the boundary identity, and the remaining arithmetic target.
+The [product-cut audit](RiemannGaussian/EtaInverseProductShellCollapse.lean)
+also proves that every positive complete low-product cutoff already
+equals the full physical inverse; its high-product complement is exactly
+zero. Even arbitrary complex product weights preserve the full prefix
+times their value at one. This rules out treating that selected region
+as a smaller target. The independent relative upper saving remains open;
+no new zero exclusion or RH proof follows. The
+[ledger](docs/eta-signed-inverse-energy.md) records the estimates and the
+corrections to the proposed block strategy.
 
 ## Notable Formalisations
 

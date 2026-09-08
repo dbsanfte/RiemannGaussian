@@ -46,6 +46,28 @@ summability of the prime-square correction for `sigma>1/2`, nor prove
 that every possible signed Gamma-boundary argument must fail. It does
 rule out treating the full completion boundary as a negligible error.
 
+The subsequent signed-current/inverse-energy memo is audited in
+[the normalized inverse-energy ledger](eta-signed-inverse-energy.md).
+Lean now proves a convergent signed transport from `W` to the complete
+inverse-energy sum, and the quantitative estimate
+`|(2*N+1)*Delta_(N+1)-2|<=4/(N+1)`. Its full energy-weighted error has
+a proved summable envelope. Consequently `W(K)=4*S(K)+O_rho(1)`, where
+`S` is the unweighted complete reflected-energy sum; its eventual signed
+lower bound is `(c_rho/8)*(K+1)^e`. The target can therefore be a relative
+vanishing upper factor for this normalized sum.
+
+The memo's proposed low-product split does not reduce that target.
+`pairedEtaCompletedMomentInverseRegion_lowProduct_eq_full` proves that
+every complete product cutoff `1<=T<=M` already equals the full physical
+inverse at `M`, and `pairedEtaCompletedMomentInverseRegion_highProduct_eq_zero`
+proves its complement is exactly zero. The complete product coefficient
+is the Dirichlet identity, so all products greater than one cancel.
+This remains true before taking norms and for arbitrary moment orders;
+the actual reflected low-product energy retains the entire lower power.
+The existing rectangle/region bounds also supply no relative saving by
+direct substitution: their product budget multiplies the same `A^e`
+block scale. A new estimate for the full signed correlation remains open.
+
 The preceding Gamma branch followed the user's gamma-reflection steering memo:
 the full square on `A=u^8`, `U=u^5` is decomposed by its exact gcd before
 combining the conjugate-partner and original channels. The
