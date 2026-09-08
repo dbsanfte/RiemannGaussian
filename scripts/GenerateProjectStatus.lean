@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "All products carrying a prime above 2 u^2, including their composites, differ from the explicit prime/twice-prime sum by exactly a selected low-divisor mean; its norm is at most C_rho u^(2-4 Re(rho)) and tends to zero at a hypothetical right-half zero, while the retained prime model plus complementary products still has an open independent upper bound below the source"
-    lineOne := "large-prime products"
-    lineTwo := "joint error decays"
+    label := "Positive gamma smoothing of the original selected completed Moebius carrier has norm at most C_rho A^(-3) D^(4-Re(rho)); on A=u^6 and D=u^5 the whole low family decays for Re(rho)>2/5, including critical-line zeros, while the independent full high-family upper bound remains open"
+    lineOne := "positive eta smoothing"
+    lineTwo := "low divisors decay"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.norm_pairedEtaMoebiusLargePrimeProductFirstMean_sub_model_le
+      ``RiemannGaussian.EtaGammaSmoothing.norm_tsum_gammaPhysicalWeight_moebiusSelected_le
   }
 ]
 
@@ -1282,32 +1282,19 @@ run_cmd do
       ("status", .str "open"),
       ("target", .str
         ("Prove first absolute-moment summability of the actual completed eta leading " ++
-          "flux at every nontrivial zero, preserving completion weights, multiplicity, " ++
-          "and the simple-zero head term. The current route seeks a fixed positive " ++
-          "gap below the nonzero source norm for the complete complex Moebius first " ++
-          "mean at a hypothetical right-half zero. On quartic windows, divisors " ++
-          "through A^(3/4) and the single clipped boundary are controlled. The " ++
-          "growing coprime sieve leaves complete quotient blocks with all " ++
-          "intersection and boundary costs paid. A separate weighted sieve on " ++
-          "the original product carrier now uses the exact weights " ++
-          "p/((p-1)(1+H_R)), where H_R sums 1/(p-1) over odd primes through R. " ++
-          "At R=floor(u^(2 Re(rho)-1)), the whole weighted correction has " ++
-          "norm at most 2 C_rho/(1+H_R), which tends to zero at a " ++
-          "hypothetical right-half zero. The exact weights retain the " ++
-          "literal residual multiplier 1-sum_(p|n) w_R(p), " ++
-          "including every overlap; this is not a prime-free indicator. The " ++
-          "residual whole complex mean still tends to the source. A subsequent " ++
-          "joint estimate handles every original product carrying a prime above " ++
-          "2 u^2, including all its composites: replacing this entire group by " ++
-          "the literal prime/twice-prime sum costs at most C_rho u^(2-4 Re(rho)) " ++
-          "in the first mean. The retained carrier pairs that explicit prime " ++
-          "sum with every complementary product before taking a norm, and " ++
-          "still tends to the nonzero source. Neither component is asserted " ++
-          "to decay separately. A bound " ++
-          "below the source square for its " ++
-          "source-directed real projection would also suffice. The independent " ++
-          "arithmetic upper bound remains open; full decay or a power rate is " ++
-          "not required. The retained cubic mean-square route is separate."))
+          "flux at every nontrivial zero, preserving completion weights and multiplicity. " ++
+          "The current route uses positive gamma physical averaging with survival " ++
+          "Q(x)=exp(-x)(1+x+x^2/2). Its literal damped eta transform has error at most " ++
+          "Gamma(Re(rho))/(6 norm(Gamma(rho))) times x^3 at an actual zero. " ++
+          "Every selected original divisor family through D has average norm at most " ++
+          "C_rho A^(-3) D^(4-Re(rho)). At A=u^6 and D=u^5 this decays for Re(rho)>2/5, " ++
+          "including the critical line. The full signed high-divisor average is " ++
+          "exactly the smoothed source minus that low family. Both source endpoints " ++
+          "Q(1/A) and Q(2/A) are retained, with an explicit cubic correction. " ++
+          "An independent upper bound below the source at a hypothetical right-half " ++
+          "zero remains open. Low-family decay also holds on the critical line and " ++
+          "does not exclude any zero by itself. No new zero bound or RH proof follows. " ++
+          "The previous quartic first-mean and cubic mean-square routes remain separate."))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

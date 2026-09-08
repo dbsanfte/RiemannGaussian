@@ -2475,3 +2475,839 @@ syntax checks, generated SVG parsing, README constraints, and whitespace
 checks pass. The README and dashboard display the joint large-prime error
 estimate and explicitly retain the remaining independent source-gap
 obligation.
+
+## Second prime removal: the rough model retains its unit source
+
+The second removal was audited before attempting a rough-number decay
+estimate. It reveals a normalization obstruction: the model excludes the
+integer `1`, and that omission leaves exactly the original nonzero source.
+This is a diagnostic of the proposed estimate, not a new bound for the
+full signed carrier.
+
+### The checked source identity and its modulus cost
+
+For an odd positive integer `P`, define
+
+\[
+ E_P(M)=\sum_{\substack{1\le n\le M\\(n,P)=1}}
+          (-1)^{n+1}n^{-\rho},\qquad
+ R_P(M)=\sum_{\substack{1\le n\le M\\n\text{ odd},\ (n,P)=1}}n^{-\rho}.
+\]
+
+Write `R_P^>(M)=R_P(M)-1` for the nonunit prefix when `M>=1`.
+The literal rough-number model is
+
+\[
+ V_P(M)=\chi(\rho)\left[
+   2\,2^{-\rho}R_P^>(\lfloor M/2\rfloor)-R_P^>(M)\right].
+\]
+
+The root-importing local diagnostic `/tmp/EtaRoughSourceAudit.lean`
+proves the positive-prefix odd/even split, keeps its complex dyadic
+factor, and removes the unit explicitly. Its theorem
+`EtaRoughSourceAudit.roughModel_sub_source` states, for `M>=2`,
+
+\[
+ \boxed{\quad V_P(M)=S_\rho-G_P(M),\qquad
+ G_P(M)=\chi(\rho)\left[E_P(M)-2^{-\rho}E_P(\lfloor M/2\rfloor)\right].\quad}
+\]
+
+The theorem `norm_completed_coprimeEta_le` uses the compiled coprime
+term estimate at divisor `1`, including the vanishing terms beyond the
+physical cutoff. It yields
+
+\[
+ |\chi(\rho)E_P(M)|\le C_{\rm term}(\rho)P M^{-\sigma},\qquad
+ |V_P(2N)-S_\rho|\le2C_{\rm term}(\rho)P N^{-\sigma}\quad(N\ge1).
+\]
+
+The latter is `norm_roughModel_even_sub_source_le`. Since every actual
+nontrivial zero has `sigma>0`, `roughModel_even_fixed_tendsto_source`
+proves convergence to the source for each **fixed** positive odd `P`.
+`roughModel_even_fixed_not_tendsto_zero` then proves that this model
+cannot tend to zero for fixed `P`. Neither conclusion requires the
+stronger hypothetical condition `sigma>1/2`.
+
+For a growing prime threshold `y`, the intended modulus is the product
+of the odd primes at most `y`. The exact identity holds at each such
+modulus, but the displayed allowance still contains that whole `P`.
+No growing-modulus convergence theorem follows by treating `P` as
+constant. More fundamentally, any independent proof that `G_P` tends
+to zero would make `V_P` approach the **source**, not zero. Removing
+the unit before a density approximation cannot erase this constant.
+
+### The actual growing-cutoff coefficient calculation
+
+The [rough-model probe](../scripts/probe_eta_rough_model.py) implements
+the second removal at `y=2*u`, as well as the already checked
+`y=2*u^2` case. At `A=u^4`, `D=u^3`, each product is classified using
+its actual prime factors. Let `K_y` contain the original products with
+a prime above `y`, `Q_y` the complementary original products, and
+`L_y` the original low-divisor family whose divisors carry such a prime.
+The rough model has coefficient `-1` at every nonunit odd `y`-rough
+integer `r`, and coefficient `2` at `2*r`.
+
+The working coefficient calculation is
+
+\[
+ K_y(M)-V_y(M)=-L_y(M),\qquad y=2u,\quad D\le M\le2A.
+\]
+
+Here is the arithmetic reason for the formula. If `n<=2*A` has a prime
+above `y`, write `n=m*r` with all prime factors of `m` at most `y` and
+all prime factors of `r` above `y`. Then `r` is odd and nonunit, and
+`m<=n/p<D` for any prime `p>y` dividing `r`. The divisors of `n`
+containing no large prime are exactly the divisors of `m`, and all are
+within the low cutoff. Their complete Möbius--eta convolution is
+`delta_(m=1)-2*delta_(m=2)`. The full convolution at `n` is zero,
+leaving precisely the stated model and selected low-divisor error.
+This general growing-cutoff calculation has **not** been added as a
+Lean theorem. The probe checks its integer coefficients on every
+tested product before applying floating-point powers.
+
+At `y=2*u`, at most three rough prime factors fit, **counting
+multiplicity**, since `(2*u)^4>2*u^4`. Consequently the model includes
+prime squares, prime cubes when they fit, and mixed prime products.
+It is a rough-number counting model; assigning it extra Möbius signs
+would change the identity. The numerical carrier has four channels:
+one, two, or three rough prime factors, and `Q_y`. All sixteen complex
+Gram entries are retained.
+
+### What an effective next bound would have to prove
+
+Combining the model with its complement leaves
+
+\[
+ J_y=\operatorname{mean}(V_y+Q_y)
+     =S_\rho+\operatorname{mean}(Q_y-G_y).
+\]
+
+Thus a sufficient independent bound would be, for some fixed
+`delta>0`, on arbitrarily large admissible scales at a hypothetical
+right-half zero,
+
+\[
+ \Re\!\left(\overline{S_\rho}\,
+       \operatorname{mean}(Q_y-G_y)\right)
+ \le-\delta|S_\rho|^2.
+\]
+
+The corresponding inequality for the already compiled `y=2*u^2`
+carrier would contradict its proved source limit. Using `y=2*u` in
+that chain also requires formalizing the displayed growing-cutoff
+decomposition and transferring the selected low-divisor estimate.
+An estimate tending to zero for `Q_y-G_y` would only reconstruct the
+source again; separate rough density estimates or relative cancellation
+are not a substitute for the fixed negative source projection.
+
+Thirty-two floating-point cases use `u=4,8,16,32`, both thresholds,
+the first two numerical zero ordinates, and real parts `1/2` and `3/4`.
+The `3/4` samples are **not zeros**; their zeta values are recorded.
+For the first critical-line zero and `y=2*u`:
+
+| `u` | Rough model mean / source | Complementary mean / source | Retained joint mean / source | Joint energy / source square |
+| ---: | --- | --- | --- | ---: |
+| 4 | `0.903621 - 0.010986 i` | `0.100849 + 0.012954 i` | `1.004470 + 0.001968 i` | `1.009860` |
+| 8 | `0.960941 + 0.043632 i` | `0.038631 - 0.043593 i` | `0.999573 + 0.000039 i` | `0.999299` |
+| 16 | `1.000464 + 0.043976 i` | `-0.000496 - 0.043993 i` | `0.999968 - 0.000018 i` | `0.999990` |
+| 32 | `0.999123 - 0.025869 i` | `0.000862 + 0.025895 i` | `0.999985 + 0.000026 i` | `0.999997` |
+
+These values show the importance of the complete signed sum and its
+unit term. They do not establish a uniform gap, and critical-line
+samples do not refute an estimate restricted to right-half zeros.
+
+The diagnostic passes warning-as-error Lean compilation and all 14
+linters on 14 declarations plus 16 automatically generated ones. Its
+four terminal axiom checks use only `propext`, `Classical.choice`, and
+`Quot.sound`; the log is `/tmp/eta-rough-source-audit.log`. The main
+records are `/tmp/eta-rough-model.json`. An independent direct-divisor
+checker passes six complete integer windows and twelve complete
+complex mean/Gram cases at `u=2,3,4`, recorded in
+`/tmp/eta-rough-model-direct-checks.json`. This diagnostic does not
+change the root-imported theorem inventory or its displayed frontier.
+The independent signed upper bound, full arithmetic decay, and RH
+remain open.
+
+## Smooth-divisor audit: inverse defects and a growing first band
+
+The next test keeps the actual smooth Möbius coefficients and checks what
+the apparent off-critical source gaps measure. It also checks whether
+separate cancellation of smooth divisor bands is a viable intermediate
+bound. Both checks retain the source identified above.
+
+### Exact link to the compiled joint carrier
+
+For a finite divisor selection `S`, put
+
+\[
+ a(s)=1-2\,2^{-s},\qquad
+ B_S(s)=\sum_{d\in S}\mu(d)d^{-s},
+\]
+\[
+ W_S(s)=\frac1A\sum_{M=A}^{2A-1}\sum_{d\in S}\mu(d)d^{-s}
+       \left[F_s(\lfloor M/d\rfloor)-a(s)\zeta(s)\right].
+\]
+
+The root-importing diagnostic `/tmp/EtaSmoothInverseAudit.lean` proves
+`source_sub_selected_eq_inverse_defect` by exact finite summation.
+It then takes `S` to be the complement of the compiled large-prime low
+divisors inside `[1,u^3]`. The theorem
+`primeSmoothFirstMean_eq_source_sub_selected` proves that the **actual
+compiled** joint first mean is source minus this single selected low
+family. No extra triangle bound or model assumption enters that step.
+
+The terminal theorem
+`primeSmoothFirstMean_eq_inverse_defect_sub_centered` gives
+
+\[
+ J_u=S_\rho\bigl(1-\zeta(\rho)B_S(\rho)\bigr)
+                  -\chi(\rho)W_S(\rho).
+\]
+
+Here `selectedInverseDefect_at_zero` proves the parenthesized finite
+defect is exactly `1` for **every actual zero**, regardless of the
+selected divisors. Meanwhile `norm_completed_centered_firstMean_le`
+transfers the already checked allowance
+`C_rho*D^2*A^(-sigma-1)` to `chi(rho)*W_S(rho)`. Its decay recovers
+the source. It does not bound the finite defect below one.
+
+The compiled-carrier link in this diagnostic uses the existing
+`y=2*u^2` selection. For `y=2*u`, the general finite inverse identity
+also applies to its selected low divisors, while the separate general
+rough-product reconstruction still has the formalization status stated
+in the previous section.
+
+### The first smooth product band has a nonzero main term
+
+The root theorem `pairedEtaMoebiusHighProductCoefficient_eq_moebius`
+identifies every coefficient on `D<n<=2*D` with `mu(n)`. The new local
+theorem `smoothHighBand_eq_moebius` retains the actual smooth restriction
+and complex powers in this equality. On quartic windows `2*D<=A`, so
+this entire band lies inside every physical prefix.
+
+For `M(x,y)=sum_(n<=x, P+(n)<=y) mu(n)`, Corollary 1.3 of
+[de la Bretèche–Tenenbaum, *Friable averages of oscillating arithmetic functions*](https://arxiv.org/abs/2207.04777)
+gives, in its admissible range,
+`M(x,y)=x*omega'(log(x)/log(y))/(log y)^2+O(x/(log y)^3)` on the
+compact smoothness range used here. This is an external asymptotic,
+not a Lean theorem.
+
+Our partial-summation calculation at `D=u^3`, `y=2*u` consequently gives,
+for fixed `s` with `0<Re(s)<1`,
+
+\[
+ \sum_{\substack{D<n\le2D\\P^+(n)\le y}}\mu(n)n^{-s}
+ =c_s\frac{D^{1-s}}{(\log y)^2}
+       +O_s\!\left(\frac{D^{1-\Re(s)}}{(\log y)^3}\right),
+ \qquad
+ c_s=\frac{1/2-\log2}{9}\frac{2^{1-s}-1}{1-s}\ne0.
+\]
+
+Indeed `log(D)/log(y)` approaches `3` from below, where
+`omega(v)=(1+log(v-1))/v`. This first band grows in norm. Any fixed
+order of the separated logarithmic expansion still leaves a positive
+power in its remainder allowance. This inference does not exclude a
+bound for the complete signed sum.
+
+The local theorem `hasDerivAt_buchstabMiddle_three` checks the displayed
+derivative from its elementary logarithmic formula;
+`buchstabSlopeThree_neg` and `smoothBandLeadingCoefficient_ne_zero`
+check its sign and the nonvanishing complex dyadic factor. The theorem
+`smoothBand_power_over_logPower_tendsto_atTop` proves that
+`x^(1-sigma)/(log x)^k` tends to infinity for every fixed natural `k`
+when `sigma<1`. These Lean checks validate the coefficient and the
+exponent audit. They do **not** formalize the external Möbius asymptotic.
+In particular, a triangle bound that estimates this band separately
+cannot yield the desired fixed upper bound for the whole carrier.
+
+### Whole-window checks and the resulting next target
+
+The [smooth-inverse probe](../scripts/probe_eta_smooth_inverse.py)
+computes every divisor's physical mean by complete quotient blocks,
+checks their integer counts before applying complex powers, and retains
+the complex centered eta error. All 32 cases reconstruct the earlier
+full-product means, including every physical endpoint. The first zero
+ordinate at `u=32`, `y=64` gives:
+
+| Sample | Finite inverse defect | Centered eta error / source | Whole joint mean / source |
+| --- | --- | --- | --- |
+| `1/2+14.134725…i` | `1` to numerical precision | `0.000014733 - 0.000026396 i` | `0.999985267 + 0.000026396 i` |
+| `3/4+14.134725…i` (**not a zero**) | `0.224176032 - 0.022018660 i` | `0.000000468 - 0.000000864 i` | `0.224175563 - 0.022017796 i` |
+
+Thus the promising second-row value measures ordinary finite inverse
+approximation at a nonzero zeta point. It is not evidence that the
+defect becomes less than one at a zero. The probe also evaluates the
+first smooth band and the Abel transform of the Buchstab leading model.
+The leading model is inaccurate in some tested cases and is explicitly
+**not an error bound**.
+
+Twelve independent cases at `u=4,5,6` enumerate every physical endpoint
+for every divisor, use direct prime factorizations and Möbius values,
+and check the inverse defect, centered mean, and first smooth band.
+They independently evaluate the model using its derivative density
+instead of Abel boundary terms. All pass. Records are
+`/tmp/eta-smooth-inverse.json` and
+`/tmp/eta-smooth-inverse-direct-checks.json`.
+
+The Lean diagnostic passes warning-as-error compilation and all 14
+linters on 22 declarations plus 10 automatically generated ones. Its
+seven terminal audits use only the three permitted standard axioms;
+the log is `/tmp/eta-smooth-inverse-audit.log`. It does not change the
+root theorem inventory or the displayed frontier.
+
+The next independent estimate must keep the interference between the
+first smooth band, later smooth bands, and the rough model. Separate
+smooth-band decay, a fixed-order logarithmic allowance, and the finite
+inverse-defect identity have not supplied a fixed source gap. The full
+signed arithmetic upper bound, the original weighted goal, and RH
+remain open. No new zero bound follows from this audit.
+
+## Complete cutoff mixtures with their coefficient costs retained
+
+The next coefficient test combines entire rough/smooth carriers. It does
+not estimate rough factors or smooth bands separately. At `A=u^4`,
+`D=u^3`, it uses seven prime thresholds between `2*u` and `2*u^2`,
+deduplicated at small scales. For the corresponding smooth low-divisor
+selections `S_i`, each physical column is
+
+\[
+ J_i(M)=S_\rho-\sum_{d\in S_i}T_\rho(M,d).
+\]
+
+The [probe](../scripts/probe_eta_cutoff_mixture.py) checks, with integer
+coefficients at every product through `2*A`, that each column is exactly
+its full rough model plus its complementary original product group.
+This finite numerical audit includes the unit coefficient, prime powers,
+and every physical prefix. The general rough-product identity retains
+the formalization status stated above; the local Lean theorems below
+apply directly to the actual selected-divisor expression displayed here.
+
+### An admissible coefficient family
+
+Let `sum_i w_i=1`, and let `J_w` be the complex first mean of
+`sum_i w_i J_i(M)`. The root-importing diagnostic
+`/tmp/EtaCutoffMixtureAudit.lean` proves exactly
+
+\[
+ J_w-S_\rho=-\sum_i w_i\operatorname{mean}
+                    \sum_{d\in S_i}T_\rho(M,d).
+\]
+
+The first allowance follows from the compiled selected-family estimate:
+
+\[
+ \|J_w-S_\rho\|
+ \le C_\rho u^{2-4\sigma}\sum_i|w_i|.
+\]
+
+However, using that triangle bound too early loses cancellation between
+overlapping selections. Define the combined divisor coefficients and
+their size-weighted mass by
+
+\[
+ g_w(d)=\sum_{i:d\in S_i}w_i,\qquad
+ B_D(w)=\sum_{1\le d\le D}d\,|g_w(d)|.
+\]
+
+`cutoffMixture_sub_source_eq_weighted` retains this exact combined
+coefficient vector. The terminal bound
+`norm_cutoffMixture_sub_source_le_overlap` then proves
+
+\[
+ \boxed{\ \|J_w-S_\rho\|
+       \le C_\rho A^{-\sigma-1}B_D(w)\ },\qquad
+ B_D(w)\le D^2\sum_i|w_i|.
+\]
+
+The comparison is checked by `divisorMass_effective_le`. It does not
+require nested selections; all their intersections are combined before
+norms are taken. It uses the existing per-divisor first-mean theorem,
+with the original Möbius term and completion factor retained.
+
+An exact clipping rule makes this a usable mathematical constraint on
+fitted coefficients. Start from an affine base vector `w0` with
+`B_D(w0)<=R`, and put
+
+\[
+ \theta=\begin{cases}
+  1,&B_D(w)\le R,\\[2pt]
+  \dfrac{R-B_D(w_0)}{B_D(w)-B_D(w_0)},&B_D(w)>R.
+ \end{cases}
+ \qquad w_{\rm clip}=(1-\theta)w_0+\theta w.
+\]
+
+Lean proves `0<=theta<=1`, preserves the full complex affine
+normalization, and proves `B_D(w_clip)<=R` in
+`divisorMass_effective_clipped_le`. The denominator in the second case
+is proved nonzero; no division at an exceptional case is hidden. This
+rule uses the actual base mass instead of replacing it by one.
+
+On the quartic schedule, choose `R=u^(5+2*sigma)`. Then
+`norm_cutoffMixture_quartic_sub_source_le_overlap_budget` gives
+
+\[
+ \|J_{w_{\rm clip}}-S_\rho\|\le C_\rho u^{1-2\sigma}.
+\]
+
+`cutoffMixture_overlap_budget_tendsto_source` proves convergence to
+`S_rho` when `sigma>1/2`, even when the selections, their number, and
+the coefficients vary with `u`. Its budget is required only for
+`u>=1`. This is a coefficient admissibility theorem. It supplies no
+independent upper bound for the whole mixed carrier.
+
+### Full physical optimization and checks
+
+The numerical Gram matrix is
+
+\[
+ H_{ij}=\frac1A\sum_{M=A}^{2A-1}
+          \overline{J_i(M)/S_\rho}\,J_j(M)/S_\rho.
+\]
+
+Every entry is retained, and the directly evaluated mixed energy is
+checked against `w* H w`. Five choices are tested: unconstrained affine
+least squares, regularized affine least squares, equal weights, clipping
+by the coarse coefficient norm, and clipping by the combined divisor
+mass. The regularized numerical solve uses
+`(H+lambda*I)^(-1) 1`, normalized to have coefficient sum one, with
+`lambda=u^(2-4*sigma)`. Its objective is checked against a feasible equal
+mixture. No Lean optimality or rounding certificate is asserted.
+
+At the first critical-line zero, all quantities below are numerical and
+the RMS is normalized by the source norm:
+
+| `u` | Unconstrained RMS | Coefficient mass | Combined mass `B_D/D^2` | RMS after combined-cost clipping |
+| ---: | ---: | ---: | ---: | ---: |
+| 4 | `0.860302` | `72.341092` | `1.878212` | `0.907002` |
+| 8 | `0.991510` | `38.556049` | `1.031175` | `0.991523` |
+| 16 | `0.998518` | `29.425124` | `0.750367` | `0.998518` |
+| 32 | `0.999941` | `6.771525` | `0.323136` | `0.999941` |
+
+Thus the coarse coefficient budget would discard useful overlap
+cancellation. The sharper rule keeps the full unconstrained fit at the
+last two scales, but those finite critical-line gaps still shrink.
+Critical-line samples neither prove nor refute a bound restricted to
+right-half zeros. The very small fitted values at `3/4+it` remain
+samples at **nonzero** zeta points and retain the inverse-defect issue
+identified in the preceding audit.
+
+Every record also includes the measured signed correction to the
+original carrier, its termwise triangle cost, and the full measured
+source error. The inequality
+`RMS + norm(measured mean - source) >= norm(source)` is a general
+triangle/Jensen consistency check. It is not a new obstruction theorem
+and does not rule out proving a stronger independent estimate under the
+actual zero hypothesis. The recorded theoretical budget shapes omit
+`C_rho/norm(S_rho)` and are explicitly not certified bounds.
+
+The main run has 16 cases and 80 mixtures, recorded in
+`/tmp/eta-cutoff-mixture.json`. Three independent integer-window checks
+and six complete mean/Gram/optimization cases at `u=2,3,4` pass. The
+checker uses direct factorizations and Möbius values, enumerates every
+physical prefix with 40-digit powers, recomputes all Gram entries and
+combined divisor masses, checks the affine normal equations, and solves
+the regularized system independently. Its records are in
+`/tmp/eta-cutoff-mixture-direct-checks.json`.
+
+The local Lean diagnostic passes warning-as-error compilation and all
+14 linters on 29 declarations plus 19 automatically generated ones.
+Its eight terminal axiom audits use only `propext`, `Classical.choice`,
+and `Quot.sound`; the log is `/tmp/eta-cutoff-mixture-audit.log`.
+
+The next candidate should be assessed using the combined divisor cost
+and the exact centered eta representation from the preceding audit.
+An independent signed upper bound below the source remains necessary.
+Neither the new coefficient rule nor the numerical fits prove arithmetic
+decay, a new zero bound, or RH. The root theorem inventory and public
+frontier are unchanged.
+
+## Centering the cutoff scan removes its inverse-defect signal
+
+The next [probe](../scripts/probe_eta_centered_cutoffs.py) retains the
+same complete physical columns and divisor budget, but also tests the
+exact centered eta representation. Put `a(s)=1-2*2^(-s)` and
+`B_i(s)=sum_(d in S_i) mu(d)*d^(-s)`. Before completion, the centered
+column is
+
+\[
+ \widehat J_i(M)=a(s)-\sum_{d\in S_i}\mu(d)d^{-s}
+       \bigl[F_s(\lfloor M/d\rfloor)-a(s)\zeta(s)\bigr]
+       =J_i(M)+a(s)\zeta(s)B_i(s).
+\]
+
+The local diagnostic `/tmp/EtaCenteredCutoffAudit.lean` proves this
+pointwise in `centeredCarrier_eq_raw_add`. Its theorem
+`completed_centeredCarrier_at_zero` identifies the completed centered
+column with the original source minus the literal selected low family
+at every actual zero. Centering at a nonzero point produces a different
+carrier; it does not produce a new zero or impose a zero equation.
+
+That distinction also affects the **total** Möbius convolution. Lean
+proves `total_centered_eq_inverse_defect`:
+
+\[
+ \sum_{d\le M}\mu(d)d^{-s}
+       [F_s(\lfloor M/d\rfloor)-a(s)\zeta(s)]
+       =a(s)[1-\zeta(s)B_{[1,M]}(s)],\qquad M\ge2.
+\]
+
+Consequently the actual high centered divisor sum is
+`centeredCarrier(s,[1,D],M)-a(s)*zeta(s)*B_[1,M](s)`, when `D<=M`.
+This is checked by `high_centered_eq_carrier_sub_inverse`. The extra
+term vanishes under the actual zero hypothesis; it cannot be dropped
+at the off-critical nonzero samples. The centered experiment therefore
+tests the local tail mechanism without pretending to satisfy the
+complete zero-dependent arithmetic constraint.
+
+### Every covariance cross term survives
+
+For normalized column means `m_i` and shifts `c_i=zeta(s)*B_i(s)`,
+the full Gram update is
+
+\[
+ \widehat H_{ij}=H_{ij}+\overline{m_i}c_j+
+                   \overline{c_i}m_j+\overline{c_i}c_j.
+\]
+
+All centered covariance entries are unchanged. The diagnostic proves
+the pointwise product expansion in `gramProduct_add_const` and the
+whole-window covariance identity in `covarianceEntry_add_const`.
+The numerical code checks the Gram update and independently recomputes
+every covariance entry from its physical column. The largest observed
+entry change is below `3.3e-19`.
+
+Each sample fits the raw and centered matrices independently, using
+unconstrained affine least squares, equal weights, and the combined
+divisor-cost clipping rule. It also transfers each fitted coefficient
+vector between both carriers without refitting. At
+`s=3/4+14.134725…i`, which is **not a zero**, the results are:
+
+| `u` | Raw fitted RMS | Same coefficients, centered RMS | Centered refit after divisor-budget clipping |
+| ---: | ---: | ---: | ---: |
+| 4 | `0.031118` | `0.990411` | `0.936122` |
+| 8 | `0.003808` | `0.999670` | `0.994711` |
+| 16 | `0.001295` | `1.000016` | `0.999070` |
+| 32 | `0.000235` | `1.0000003` | `0.999947` |
+
+The large apparent improvement in the raw fit uses the finite inverse
+shift. Refitting the centered carrier keeps a small finite RMS gap, but
+that tested gap shrinks. At critical-line zeros the raw and centered
+tests agree, as their exact identity requires. None of these observations
+proves or refutes an estimate restricted to right-half zeros.
+
+The main run records 16 cases, 96 fitted mixtures, and all 96 coefficient
+transfers in `/tmp/eta-centered-cutoffs.json`. Twelve independent cases
+at `u=2,3,4` use literal divisor selections, 40-digit complex powers,
+every physical prefix, and both full Gram/covariance matrices. They
+check the inverse polynomials, affine normal equations, combined divisor
+masses, clipping budgets, and transferred fits. All pass; records are
+in `/tmp/eta-centered-cutoffs-direct-checks.json`.
+
+The local Lean audit passes warning-as-error compilation and all 14
+linters on 14 declarations plus 14 automatically generated ones. Its
+six terminal axiom checks use only the three permitted standard axioms;
+the log is `/tmp/eta-centered-cutoffs-audit.log`. No root theorem,
+dashboard milestone, or zero bound is added.
+
+The inverse-defect signal is therefore not a reason to enlarge this
+same numerical scan. A future signed bound must use additional
+arithmetic information from the actual zero constraint. The full
+arithmetic decay theorem and RH remain open.
+
+### Checked positive gamma physical averaging
+
+The numerical lead following [DLMF 25.12.11](https://dlmf.nist.gov/25.12.E11)
+now has a Lean proof for the actual eta series and the original completed
+Möbius carrier. The proof does not assume a polylogarithm identity: it
+identifies the Mellin integral from the convergent paired eta prefixes
+using dominated convergence. The four root modules are
+[`EtaGammaKernel`](../RiemannGaussian/EtaGammaKernel.lean),
+[`EtaGammaMellin`](../RiemannGaussian/EtaGammaMellin.lean),
+[`EtaGammaDampedMoebius`](../RiemannGaussian/EtaGammaDampedMoebius.lean), and
+[`EtaGammaPhysicalAverage`](../RiemannGaussian/EtaGammaPhysicalAverage.lean).
+The declarations share namespace `RiemannGaussian.EtaGammaSmoothing`.
+
+Put `f(t)=1/(1+exp(t))`. The theorem `abs_fermiThree_le` proves the
+sharper derivative envelope `abs(f'''(t)) <= exp(-t)` on the entire real
+line. For the exact transform
+
+\[
+ H(t,x)=f(t+x)-xf'(t+x)+\frac{x^2}{2}f''(t+x),
+\]
+
+`hasDerivAt_gammaTransform` gives
+`dH/dx = x^2*f'''(t+x)/2`. The full signed difference is its derivative
+integral. Consequently `abs_gammaTransform_sub_le` proves
+
+\[
+ |H(t,x)-f(t)|\le\frac{x^3}{6}e^{-t},\qquad x\ge0.
+\]
+
+The complex Mellin integral is absolutely integrable for every
+`Re(s)>0`. Its phase is retained before the derivative envelope is
+integrated. The theorem `integral_mellinFermi_eq_gamma_eta` identifies
+it with `Gamma(s)*pairedEtaCore(s)`. The transformed integral is exactly
+that actual eta value plus a remainder bounded by
+`Gamma(Re(s))*x^3/(6*norm(Gamma(s)))`.
+
+Define `Q(x)=exp(-x)*(1+x+x^2/2)`. The literal absolutely convergent
+series
+
+\[
+ G_s(x)=\sum_{q\ge1}(-1)^{q+1}q^{-s}Q(qx),\qquad x>0,
+\]
+
+is the same Mellin transform by `hasSum_gammaDampedEta`. At an actual
+nontrivial zero, `norm_gammaDampedEta_at_zero_le` proves
+
+\[
+ \|G_\rho(x)\|\le
+ \frac{\Gamma(\sigma)}{6\|\Gamma(\rho)\|}x^3,
+ \qquad \sigma=\Re\rho.
+\]
+
+#### Connection to the original physical carrier
+
+The discrete physical weights are
+
+\[
+ \omega_A(M)=Q(M/A)-Q((M+1)/A),\qquad M\ge0.
+\]
+
+Lean proves they are nonnegative, summable, and have total mass one.
+`gammaPhysicalWeight_eq_integral` identifies each weight with the
+integral of `t^2*exp(-t)/2` over its scaled physical interval. Thus the
+whole continuous physical half-line is represented, including the
+interval below the first integer. That interval has an empty eta prefix.
+
+Discrete Abel summation identifies the eta series with the weighted
+literal unpaired prefixes. The infinite boundary is discharged using
+the checked uniform prefix bound and exponential survival summability.
+Every complete quotient fibre is then summed exactly. The theorem
+`hasSum_gammaPhysicalWeight_moebiusTerm` gives
+
+\[
+ \sum_{M\ge0}\omega_A(M)T_\rho(M,d)
+  =\mu(d)d^{-\rho}\chi(\rho)G_\rho(d/A),\qquad d\ge1.
+\]
+
+No interchange is justified by an unproved cancellation assumption:
+the relevant complex sequences are absolutely summable. The theorem
+`hasSum_gammaPhysicalWeight_moebiusSelected` sums this identity over
+any finite positive divisor selection.
+
+#### A stronger proved low-family allowance
+
+Let
+
+\[
+ C_\rho=\|\chi(\rho)\|
+       \frac{\Gamma(\sigma)}{6\|\Gamma(\rho)\|}>0.
+\]
+
+For every `S` contained in the positive integers through `D`, the theorem
+`norm_tsum_gammaPhysicalWeight_moebiusSelected_le` proves
+
+\[
+ \left\|\sum_{M\ge0}\omega_A(M)
+             \sum_{d\in S}T_\rho(M,d)\right\|
+ \le C_\rho A^{-3}D^{4-\sigma},\qquad A>0.
+\]
+
+The full complex selected carrier is retained before applying a norm.
+The sixth/fifth-power schedule `A=u^6`, `D=u^5` has allowance
+`C_rho*u^(2-5*sigma)`. The terminal theorem
+`tsum_gammaPhysicalWeight_moebiusSelected_sixth_tendsto_zero`
+proves the **original selected low average** tends to zero for
+`sigma>2/5`, with arbitrary scale-dependent selections.
+
+This includes critical-line zeros. It improves the controlled divisor
+range for this new kernel, but cannot itself rule out a zero anywhere.
+It is not a stronger estimate for the old finite-window sampler, a
+mean-square theorem, or a uniform estimate in zero height.
+
+#### Exact source endpoints and the remaining high carrier
+
+The theorem `hasSum_gammaPhysicalWeight_moebiusSource` proves that the
+complete original Möbius average has source
+
+\[
+ S_{\rho,A}=\chi(\rho)
+        \bigl[Q(1/A)-2\,2^{-\rho}Q(2/A)\bigr].
+\]
+
+The `M=1` prefix is handled explicitly. It is incorrect to replace this
+source by `S_rho` at a finite scale. The theorem
+`norm_gammaMoebiusSource_sub_le` proves
+
+\[
+ \|S_{\rho,A}-S_\rho\|
+ \le \frac{\|\chi(\rho)\|(1+16\,2^{-\sigma})}{6A^3}.
+\]
+
+Finally, `hasSum_gammaPhysicalWeight_moebiusLarge` retains the actual
+whole high-divisor carrier:
+
+\[
+ \sum_{M\ge0}\omega_A(M)\operatorname{High}_\rho(M,D)
+ =S_{\rho,A}-\sum_{M\ge0}\omega_A(M)
+                \operatorname{Low}_\rho(M,D).
+\]
+
+This identity also handles physical cutoffs below `D`: out-of-range
+divisor terms have empty prefixes and are zero. No clipped endpoint is
+silently omitted.
+
+The remaining obligation is an **independent upper bound for this full
+signed high average below the nonzero source at a hypothetical
+right-half zero**. The new low decay and source correction do not
+supply that upper bound. The goal of full arithmetic decay and RH
+remains open, and this slice establishes no new zeta zero bound.
+
+The earlier numerical seed compared polylogarithms, the damped series,
+and physical prefixes in 12 cases at `x=1/4,1/8,1/16`, with 45-digit
+arithmetic and agreement within `1e-37`; its record is
+`/tmp/eta-gamma-seed.json`. The mathematics above is checked in Lean
+independently of that numerical evidence.
+
+The slice passes direct warning-as-error checks for all four modules,
+the focused build (4,387 jobs), and the full build (9,715 jobs). The
+whole-project audit reports zero findings across 12,356 declarations
+plus 5,980 automatically generated declarations, using all 14 linters.
+All 21 terminal axiom checks use only `propext`, `Classical.choice`,
+and `Quot.sound`. The generated inventory contains 868 modules,
+18,357 compiled declarations and 15,773 theorems, with zero project
+axioms, placeholder-dependent declarations, or nonstandard theorem
+axioms; `rhImplied` remains false. Regeneration is byte-identical.
+These are local verification results; remote verification is recorded by
+the GitHub Actions run for the exact committed SHA. Logs are `/tmp/eta-gamma-focused-build.log`,
+`/tmp/eta-gamma-full-build.log`, `/tmp/eta-gamma-root-audit.log`,
+`/tmp/eta-gamma-project-lint.log`, and `/tmp/eta-gamma-status.log`.
+
+
+### The logarithmic mode survives gamma smoothing
+
+The local audit `/tmp/EtaGammaLogModeAudit.lean` now checks the complete
+logarithmic moment of the cubic gamma kernel. This tests whether the
+stronger low-family cancellation also provides a way to shrink the
+kernel norm independently of the actual Möbius signs.
+
+For every positive integer `q`, define
+
+\[
+ L_q(x)=\frac{Q(qx)-Q((q+1)x)}{x}.
+\]
+
+The theorem `integrableOn_logarithmicCell` proves absolute integrability
+on the entire positive axis. Near zero the cubic survival correction
+removes the apparent singularity; at infinity the actual survival
+function is an integrable dominator. Applying Mathlib's Frullani integral,
+`integral_logarithmicCell` proves
+
+\[
+ \int_0^\infty L_q(x)\,dx=\log\frac{q+1}{q}.
+\]
+
+The actual eta prefix decay gives an absolutely summable integral budget
+`sum_q log((q+1)/q)*norm(F_rho(q))`. The theorem
+`summable_integral_norm_gammaLogTerm` discharges this condition before
+any quotient sum and logarithmic integral are interchanged. The finite
+Abel identity and the already checked eta derivative series then give
+
+\[
+ \boxed{\displaystyle
+ \int_0^\infty G_\rho(x)\,\frac{dx}{x}=\eta'(\rho).}
+\]
+
+This is `integral_gammaDampedEta_div_eq_deriv`. It is an identity for the
+whole literal damped eta series, with no assertion about a Möbius prefix
+asymptotic. At a simple actual zero, `eta'(rho)=a(rho)*zeta'(rho)`, and
+`normalized_gammaLogMoment_eq_source` gives
+
+\[
+ \frac{\chi(\rho)}{\zeta'(\rho)}
+       \int_0^\infty G_\rho(x)\,\frac{dx}{x}=S_\rho\ne0.
+\]
+
+The nonzero zeta derivative is an explicit hypothesis of this comparison
+statement. No simplicity assumption is added to the original Möbius
+source identity or to the root gamma low-family bound.
+
+#### Normalized scale mixtures retain the same moment
+
+The theorem `integral_gammaDampedEta_dilation_div` proves invariance under
+every positive scale `c`. For any finite complex weights with
+`sum_i w_i=1` and positive scales `c_i`, the theorem
+`integral_gammaDilation_mixture` gives
+
+\[
+ \int_0^\infty\sum_i w_iG_\rho(c_i x)\,\frac{dx}{x}=\eta'(\rho)
+\]
+
+when the eta derivative is nonzero. Integrability of every dilated kernel
+and every finite mixture is discharged in the proof. The terminal theorem
+`norm_source_le_normalized_gammaDilation_mixture` consequently proves
+
+\[
+ \|S_\rho\|\le
+ \int_0^\infty\left|
+   \frac{\chi(\rho)}{\zeta'(\rho)}
+       \sum_i w_iG_\rho(c_i x)\right|\frac{dx}{x}
+\]
+
+at a simple actual zero. The weights can be complex and can cancel;
+normalization still preserves the moment. Thus fitting these scales
+cannot drive this logarithmic comparison norm to zero or below the
+source norm. This does **not** prohibit an estimate using additional
+arithmetic properties of the actual Möbius coefficients.
+
+#### Numerical check across smoothing orders
+
+The [probe](../scripts/probe_eta_gamma_log_mode.py) checks gamma orders
+`1,2,3,4,6` at the first three numerical critical-line zeros and at
+`3/4+it` with the same ordinates. Away from zeros it explicitly uses
+`G_s,k(x)-eta(s)*Q_k(x)`; this centering is not treated as a zero equation.
+The logarithmic integral is computed by an integrated Taylor expansion
+on `(0,1)` and an independent incomplete-gamma series on `(1,infinity)`.
+Each is also checked with 30 fewer terms. All 30 full moments agree with
+the independently evaluated eta derivative: the largest observed error
+is below `2.8e-77`, and the largest truncation-comparison difference is
+below `6.8e-69`, using 80-digit arithmetic. These are numerical checks,
+not certified remainder bounds. The Lean theorem above concerns the
+cubic gamma kernel and its positive dilations; it does not assert the
+whole arbitrary-order generalization.
+
+At the first numerical zero, the complex contributions divided by the
+eta derivative illustrate where the comparison mode goes:
+
+| Gamma order | Integral on `(0,1)` | Integral on `(1,infinity)` |
+| ---: | ---: | ---: |
+| 1 | `0.871170 - 0.001290i` | `0.128830 + 0.001290i` |
+| 3 | `0.425492 + 0.010553i` | `0.574508 - 0.010553i` |
+| 6 | `0.069735 + 0.020198i` | `0.930265 - 0.020198i` |
+
+Their sum remains one. Increasing the smoothing order shifts this
+comparison contribution into larger `x`, rather than supplying a smaller
+whole moment. These entries do not estimate the actual Möbius carrier.
+Full records are in `/tmp/eta-gamma-log-mode-repo.json`.
+
+#### Scope of the external cancellation estimate reviewed
+
+[Maier–Rassias, Theorem 2.1](https://arxiv.org/pdf/1806.05070) bounds a
+Möbius sum against a periodic Estermann/continued-fraction function
+`g(n/k)` over `k^D <= n < 2*k^D`, with `D>=2`, saving a fixed power of
+`k`. Its weight, frequency scale, and summation range differ from the
+present smooth kernel `G_rho(d/A)`. Transferring that result would require
+a new identity and estimates that retain the remaining terms; no such
+transfer has been proved. The paper's auxiliary saving is therefore not
+used as an upper bound for this carrier. This is a scope audit, not an
+impossibility claim about all uses of its methods.
+
+The local diagnostic passes warnings as errors, all 14 declaration
+linters on 39 declarations plus 31 automatically generated declarations,
+and 11 terminal axiom checks using only the three permitted standard
+axioms. Its log is `/tmp/eta-gamma-log-mode-audit.log`. The root theorem
+inventory and its generated artifacts are unchanged by this diagnostic.
+The next arithmetic estimate must retain the actual signed high Möbius
+family; the kernel norm alone does not remove its comparison source
+mode. Full arithmetic decay, a new zero bound, and RH remain unproved.

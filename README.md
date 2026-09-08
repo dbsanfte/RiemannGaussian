@@ -27,31 +27,28 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Bound the full signed sum of explicit prime pairs and complementary Möbius products below the nonzero source. Lean controls replacement of every product containing a prime above 2*u² by that prime-pair model, with error C_rho*u^(2-4*Re(rho)). The remaining joint sum still tends to the source at a hypothetical right-half zero. Its independent upper bound, the original weighted bound, and RH remain open.
+Use positive gamma smoothing to control the original low-divisor average through D=A^(5/6), then bound the remaining full signed high-divisor average below its source at a hypothetical right-half zero. Lean proves the low-family allowance C_rho*A^(-3)*D^(4-Re(rho)) and retains both source endpoints. The independent high-family estimate, the original weighted bound, and RH remain open.
 
 ## Latest Update
 
-Lean now verifies [joint cancellation across large-prime product groups](RiemannGaussian/EtaMoebiusLargePrimeFirstMean.lean).
-On the complete window `u⁴≤M<2*u⁴`, products containing an odd prime
-above `2*u²` form disjoint classes. Each class retains its prime terms
-and all its composites. Their difference from an explicit sum at `p`
-and `2*p` is exactly a selection of the original low-divisor terms.
+Lean now verifies [positive gamma averaging of the original Möbius carrier](RiemannGaussian/EtaGammaPhysicalAverage.lean).
+The theorem `EtaGammaSmoothing.norm_tsum_gammaPhysicalWeight_moebiusSelected_le`
+bounds every selected low-divisor average by
+`C_rho*A^(-3)*D^(4-Re(rho))`. The averaging weights are nonnegative,
+have total mass one, and preserve the literal completed eta prefixes.
 
-The theorem `norm_pairedEtaMoebiusLargePrimeProductFirstMean_sub_model_le`
-bounds the entire resulting first-mean error by
-`C_rho*u^(2-4*Re(rho))`. The terminal theorem
-`pairedEtaMoebiusLargePrimeProductFirstMean_sub_model_tendsto_zero`
-proves that this allowance tends to zero at a hypothetical right-half
-zero. The explicit prime sum itself is not asserted to decay.
+With `A=u^6` and `D=u^5`, the allowance is `C_rho*u^(2-5*Re(rho))`.
+The theorem `EtaGammaSmoothing.tsum_gammaPhysicalWeight_moebiusSelected_sixth_tendsto_zero`
+proves decay for `Re(rho)>2/5`, including critical-line zeros. This changes
+the averaging kernel; it does not extend the old sampling estimate.
 
-The retained carrier pairs that explicit sum with every complementary
-Möbius product before taking a norm. Lean proves that its whole complex
-first mean still tends to the original nonzero source.
-**An independent upper bound below that source remains open.** The
-[assessment](docs/eta-hyperbola-endgame-assessment.md) records the exact
-identities, their estimates, and the numerical checks retaining every
-mixed term. No whole quartic mean-square bound, new zero bound, or RH
-proof follows from this slice.
+The full high-divisor average equals the exact smoothed source minus that
+low family. Both source endpoints at 1 and 2 are retained and their
+correction has an explicit cubic bound. **An independent upper bound
+for the full signed high-divisor average remains open.** This slice
+establishes no new zero bound or RH proof. The
+[assessment](docs/eta-hyperbola-endgame-assessment.md) records the formulas
+and the remaining obligation.
 
 ## Notable Formalisations
 

@@ -847,3 +847,4 @@ import RiemannGaussian.EtaMoebiusCoprimeBoundary
 import RiemannGaussian.EtaMoebiusPrimeFirstMean
 import RiemannGaussian.EtaMoebiusPrimeSieveWeights
 import RiemannGaussian.EtaMoebiusLargePrimeFirstMean
+import RiemannGaussian.EtaGammaPhysicalAverage

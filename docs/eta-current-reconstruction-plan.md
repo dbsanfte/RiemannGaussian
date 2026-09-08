@@ -197,6 +197,146 @@ an independent upper bound for this coupled prime/complementary sum,
 or its source-directed real projection. The full arithmetic gap and RH
 remain open.
 
+The next prime-removal audit exposes a unit term that must survive any
+such bound. For the odd small-prime modulus `P`, let `E_P(M)` be the
+complete coprime eta prefix and let `V_P(M)` be the dyadic rough-number
+model with its unit removed. The local Lean diagnostic
+`EtaRoughSourceAudit.roughModel_sub_source` proves exactly
+`V_P(M)=S_rho-chi(rho)*(E_P(M)-2^(-rho)*E_P(floor(M/2)))`.
+Its fixed-modulus limit is the nonzero source, with the explicit
+allowance `2*C_term*P*N^(-sigma)` at `M=2*N`. The factor `P` prevents
+silently applying that limit to a growing small-prime modulus.
+
+The [rough-model probe](../scripts/probe_eta_rough_model.py) checks the
+second removal down to the growing threshold `2*u`, including prime
+powers and all products of up to three rough prime factors. It retains
+every physical endpoint and all sixteen entries of the resulting Gram
+matrix. Its general growing-cutoff decomposition is still a working
+coefficient calculation, not a root-imported Lean theorem. The full
+candidate is `S_rho+(Q_u-G_u)`, where `Q_u` is the complementary original
+product group and `G_u` is the complete rough eta pair. An independent
+fixed negative bound for the source projection of `mean(Q_u-G_u)` would
+close the reductio. Decay of `G_u`, or decay of `Q_u-G_u`, would instead
+recover the source and leave the gap open. The assessment records the
+checked unit identity and the finite evidence; neither is a new zero
+bound. The next estimate must address this signed source projection,
+not separate rough-prefix decay.
+
+The subsequent smooth-divisor audit now connects the **compiled**
+`2*u^2` joint carrier to an exact finite inverse-zeta defect. In
+`/tmp/EtaSmoothInverseAudit.lean`,
+`primeSmoothFirstMean_eq_inverse_defect_sub_centered` writes it as
+`S_rho*(1-zeta(rho)*B_S(rho))-chi(rho)*W_S(rho)`, where `B_S` is the
+actual complementary low Möbius polynomial and `W_S` is its centered
+eta first mean. Lean proves the finite defect is exactly `1` at every
+actual zero and transfers the existing first-mean allowance to `W_S`.
+The new [probe](../scripts/probe_eta_smooth_inverse.py) reconstructs all
+32 previous whole-product means from independently grouped divisors.
+The small values at the nonzero `3/4+it` samples track their inverse
+defects; those values do not test a bound at a zero.
+
+A primary-source friable-sum review also identifies a nonzero Buchstab
+main term in the **first smooth product band**, where the compiled
+coefficient is exactly Möbius. Its weighted band has leading size
+`D^(1-sigma)/(log y)^2` at `D=u^3`, `y=2*u`. The assessment derives this
+consequence, gives its source and scope, and separates it from the local
+Lean checks of the coefficient and its growth. The finite numerical
+leading model is not an error bound. Thus the next candidate must retain
+cancellation both between smooth bands and with the rough model.
+Separate band norms and a finite inverse-zeta factorization supply no
+independent source gap. The full signed arithmetic estimate remains the
+target; the new audit does not prove a zero bound.
+
+The [cutoff-mixture probe](../scripts/probe_eta_cutoff_mixture.py) now
+optimizes several complete rough/smooth cutoffs together, retaining every
+entry of their complex physical Gram matrix. The local Lean diagnostic
+`/tmp/EtaCutoffMixtureAudit.lean` checks the coefficient budget before any
+fitted improvement is interpreted. It combines shared divisor coefficients
+as `g(d)=sum_(i:d in S_i) w_i`, then proves the actual source error is at
+most `C_rho*A^(-sigma-1)*sum_(d<=D) d*norm(g(d))`. This cost is at most
+the previous `C_rho*D^2*A^(-sigma-1)*sum_i norm(w_i)` and can be much
+smaller. Exact convex clipping preserves `sum_i w_i=1` and meets the
+combined-divisor budget. On the quartic schedule, the budget
+`sum_(d<=u^3) d*norm(g(d)) <= u^(5+2*sigma)` gives source error at most
+`C_rho*u^(1-2*sigma)`, which tends to zero to the right of `1/2`.
+
+The 16 complete numerical cases test five coefficient choices each.
+Combining overlaps admits some fits rejected by the coarse coefficient
+budget, but the tested critical-line RMS gaps still shrink as the scale
+grows. The small off-critical values remain samples at nonzero zeta
+points. Neither a measured error nor a budget shape with its theorem
+constant omitted is a certified bound. The new admissibility rule
+improves the coefficient search; an independent upper bound below the
+source is still missing. These are local diagnostics, with no change to
+the root theorem inventory or the zero bounds.
+
+The [centered-cutoff test](../scripts/probe_eta_centered_cutoffs.py) now
+checks that next distinction explicitly. Centering adds exactly
+`zeta(s)*B_(S_i)(s)` to each source-normalized physical column and
+preserves every covariance entry. It leaves the carrier unchanged at
+an actual zero. At `u=32`, the first off-critical sample's raw fitted
+RMS `0.000235` becomes `1.0000003` under the same coefficients after
+centering; refitting and clipping gives `0.999947`. The 96 fits and 12
+independent complete checks supply no persistent gap. The local Lean
+audit also retains the full inverse term in the total centered Möbius
+convolution away from zeros, so centering is not treated as producing
+an artificial zero. This numerical signal is no longer a reason to
+expand the same cutoff scan.
+
+Positive gamma physical averaging now has a checked chain in four root
+modules, ending at
+[`EtaGammaPhysicalAverage.lean`](../RiemannGaussian/EtaGammaPhysicalAverage.lean).
+Its survival function is `Q(x)=exp(-x)*(1+x+x^2/2)` and its literal
+physical weights are `Q(M/A)-Q((M+1)/A)`, including `M=0`. The weights
+are nonnegative, have total mass one, and are integrals of the positive
+gamma density. The Mellin proof identifies the transformed kernel with
+the actual eta function and retains an explicit cubic remainder.
+
+The theorem
+`EtaGammaSmoothing.norm_tsum_gammaPhysicalWeight_moebiusSelected_le`
+now bounds the **original** selected completed Möbius average by
+`C_rho*A^(-3)*D^(4-Re(rho))`. Every finite selection through `D` is
+allowed. Discrete Abel summation, absolute convergence, the infinite
+boundary, and all complete quotient fibres are discharged in the proof.
+The terminal theorem
+`EtaGammaSmoothing.tsum_gammaPhysicalWeight_moebiusSelected_sixth_tendsto_zero`
+proves decay on `A=u^6`, `D=u^5` for `Re(rho)>2/5`, **including the
+critical line**. This is a new positive averaging kernel, not an
+extension of the earlier sampler's critical exponent.
+
+The theorem `EtaGammaSmoothing.hasSum_gammaPhysicalWeight_moebiusLarge`
+retains the full high family as the exact smoothed source minus the low
+family. Its source is
+`chi(rho)*(Q(1/A)-2*2^(-rho)*Q(2/A))`, with an explicit cubic endpoint
+allowance. The next target is an independent bound for this **whole
+signed high average** below the nonzero source at a hypothetical
+right-half zero. The stronger low-family bound alone cannot distinguish
+such a zero from a critical-line zero. No new zero bound, full arithmetic
+decay theorem, or RH proof is established.
+
+The subsequent local audit `/tmp/EtaGammaLogModeAudit.lean` identifies
+what smoothing leaves in the high-range comparison mode. The theorem
+`integral_gammaDampedEta_div_eq_deriv` proves the full logarithmic
+moment `integral_(0,infinity) G_rho(x)/x dx = eta'(rho)`. At a simple
+actual zero its completion-normalized value is the original nonzero
+source. Positive dilations preserve this moment, and
+`norm_source_le_normalized_gammaDilation_mixture` proves that every
+finite complex mixture of those scales with coefficient sum one has
+logarithmic comparison norm at least the source norm. This is a
+statement about the kernel's comparison mode, not a bound or asymptotic
+formula for the actual Möbius sequence.
+
+The [new probe](../scripts/probe_eta_gamma_log_mode.py) checks five gamma
+orders at three numerical zeros and three off-critical nonzero samples,
+with independent integrated Taylor and incomplete-gamma expansions.
+All 30 cases preserve the eta-derivative moment. At the first numerical
+zero, increasing the order from 1 to 6 moves the real projection of
+that comparison moment above `x=1` from about 13% to 93%. The next
+estimate must therefore retain the actual signed Möbius coefficients;
+normalized scale fitting cannot make this kernel norm vanish. The
+assessment records the exact scope, proof checks, and literature audit.
+These diagnostics do not add a root milestone or improve a zero bound.
+
 ## Retained cubic mean-square route
 
 The current research route audits the supplied hyperbola reductio on the
