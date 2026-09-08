@@ -27,30 +27,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek a uniform bound for signed weighted partial sums of the actual eta leading current, retaining signs and the summable principal-term error. The gamma audit proves local prime cancellation but also a completion boundary tending to twice the source. The next step is to formalize the signed divergence forced by an off-line zero, then attack its independent upper bound. RH remains open.
+Seek an independent upper estimate for the signed weighted eta current. Lean now proves its off-line signed power growth, a finite total cancellation deficit, and an exact energy Abel formula retaining the terminal boundary. Any upper rate strictly below that power would suffice. Cutoff cancellation and unweighted telescoping do not supply it; the arithmetic estimate and RH remain open.
 
 ## Latest Update
 
-Lean now proves the [complete reduced-product formula](RiemannGaussian/EtaGammaReducedProduct.lean):
-the coefficient is `mu(n)*2^card(primeFactors(n))` for squarefree `n`
-coprime to `g`, and zero otherwise. After two zeta convolutions, its
-coefficient at `p^k` is exactly `1-k` whenever `p` is prime and does not
-divide `g`. The first-order prime term therefore cancels.
+Lean now proves [signed power growth of the actual current](RiemannGaussian/EtaLeadingFluxSignedPartialSum.lean).
+At any hypothetical off-line zero, put `e = |2*Re(rho)-1| > 0` and
+`W(K) = sum_(N<K) (2*N+1)*J_rho(N)`. With the side sign retained,
+`side*W(K) >= c_rho*(K+1)^e - B_rho`, where `c_rho > 0` and the
+finite allowance includes the early cutoffs and the proved arithmetic
+error. Thus `W` tends to positive infinity on the right and negative
+infinity on the left. Its total cancellation deficit is summable.
 
-The [clipped coprime divisor coefficient](RiemannGaussian/EtaCoprimeRadicalCutoff.lean)
-also has an exact radical-sign formula and absolute value at most one
-through the product cutoff. Its [full gamma transport](RiemannGaussian/EtaGammaRadicalQuadratic.lean)
-includes every gcd tail, with allowance
-`32*norm(chi(rho))*A*U^2*exp(-U^2/(8*A))` for `A>0`, `U^2≥8*A`.
-
-**The completion boundary does not disappear.** Lean proves the complete
-untruncated square tends to `-S_rho`, while the original clipped square
-tends to `S_rho`; their [exact coefficient boundary tends to `2*S_rho≠0`](RiemannGaussian/EtaGammaCompletionBoundary.lean).
-This rules out dismissing that boundary as a decaying error. The next
-primary target is a bound on the actual signed weighted current.
-Its independent upper estimate remains open; this slice proves no new
-zero exclusion or RH. The [ledger](docs/eta-gamma-radical-bulk.md) records
-the proofs, the remaining obligations, and the change of direction.
+The [exact signed Abel identity](RiemannGaussian/EtaLeadingFluxSignedAbel.lean)
+retains the terminal weighted energy and both summable corrections.
+The complete Abel expression inherits the same signed power lower bound.
+The independent upper estimate is still open: these are checked growth
+and transport theorems, with no new zero exclusion or RH proof.
+The [ledger](docs/eta-signed-current-partial-sums.md) gives the constants,
+the boundary identity, and the remaining arithmetic target.
 
 ## Notable Formalisations
 

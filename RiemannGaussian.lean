@@ -861,3 +861,5 @@ import RiemannGaussian.EtaGammaRadicalBulk
 import RiemannGaussian.EtaGammaRadicalQuadratic
 import RiemannGaussian.EtaGammaReducedProduct
 import RiemannGaussian.EtaGammaCompletionBoundary
+import RiemannGaussian.EtaLeadingFluxSignedPartialSum
+import RiemannGaussian.EtaLeadingFluxSignedAbel

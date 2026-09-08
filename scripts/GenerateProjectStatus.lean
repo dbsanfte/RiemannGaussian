@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "The complete reduced coprime product coefficient is mu(n) times 2 to the number of distinct prime factors on squarefree integers coprime to g; after two actual zeta convolutions its coefficient at p^k is 1-k for primes p not dividing g, so the first-order prime term cancels; the full finite completion boundary still tends to twice the nonzero source and the independent signed upper bound remains open"
-    lineOne := "reduced prime powers"
-    lineTwo := "h(p^k) = 1-k"
+    label := "The actual signed weighted eta current has an explicit positive side-oriented displacement-power lower bound at every hypothetical off-critical zero, with the entire summable error and finite initial segment paid; the cancellation deficit is summable and the exact energy Abel expression retains the weighted boundary; the independent upper estimate remains open"
+    lineOne := "signed current growth"
+    lineTwo := "side W >= c K^e - B"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.EtaGammaGcd.reducedZetaSquareCoefficient_prime_pow
+      ``RiemannGaussian.pairedEtaLeadingFluxSignedPartialSum_lower_with_offset
   }
 ]
 
@@ -1284,10 +1284,14 @@ run_cmd do
         ("Prove an independent signed arithmetic inequality contradicting every " ++
           "hypothetical zero right of one half, with all proved error allowances paid. " ++
           "The primary target is now a uniform bound for the signed weighted partial " ++
-          "sums of the actual eta leading current. The existing principal-endpoint " ++
-          "formula and summable weighted principal error are to be used first to " ++
-          "formalize off-line one-sided divergence; that new signed-sum theorem and " ++
-          "the independent upper bound are not yet established. The Gamma audit " ++
+          "sums of the actual eta leading current; a sub-power upper estimate also suffices. " ++
+          "The signed current now has the proved lower bound side*W(K)>=c_rho*(K+1)^e-B_rho " ++
+          "for e=abs(2*Re(rho)-1)>0, c_rho>0, and a finite allowance paying the principal " ++
+          "error and initial cutoffs. Its cancellation deficit is summable, so cutoff " ++
+          "cancellation cannot remove that power. Exact signed summation by parts " ++
+          "retains E_0+2*sum_(N<K) E_(N+1)-(2*K+1)*E_K and both summable corrections; " ++
+          "the complete Abel expression inherits the signed lower bound. The independent " ++
+          "upper estimate is still unproved; no new zero exclusion follows. The Gamma audit " ++
           "proves the complete reduced product coefficient mu(n)*2^card(primeFactors n) " ++
           "on squarefree integers coprime to g, and zero otherwise. After two actual " ++
           "zeta convolutions the coefficient at a nonexceptional p^k is 1-k, so the " ++

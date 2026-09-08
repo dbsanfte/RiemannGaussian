@@ -27,11 +27,19 @@ boundary between the actual clipped square and the complete multiplicative
 square tends to `2*S_rho`, with `S_rho!=0`.
 
 The primary attack therefore moves to the memo's signed weighted partial
-sums of the actual leading current. First formalize the off-line
-one-sided divergence using `pairedEtaCurrentPrincipalEndpoint_eq_dominant_factor`
-and the already summable weighted principal error; then seek an independent
-uniform bound for those signed partial sums. This is an intended next
-theorem and open arithmetic target, not an achieved bound or RH proof.
+sums of the actual leading current. The
+[signed-current slice](eta-signed-current-partial-sums.md) now proves
+`pairedEtaLeadingFluxSignedPartialSum_lower_with_offset` and
+`pairedEtaLeadingFluxSignedPartialSum_tendsto_side_infinity_of_re_ne_half`
+for every hypothetical off-critical actual zero, using the existing principal
+endpoint and summable weighted error. The actual cancellation deficit is
+summable, so cancellation across cutoff indices changes the oriented sum
+by only a finite total. Exact signed summation by parts retains the terminal
+weighted energy and the two summable corrections; its complete Abel
+expression inherits the same power lower bound. The independent upper
+estimate remains open. A uniform bound would suffice, but any upper rate
+strictly below the positive displacement power would also suffice. Neither
+the new signed criterion nor the Abel identity establishes that estimate.
 The complete and clipped Gamma objects, signs, and allowances remain
 available. The coefficient audit does not establish absolute Dirichlet
 summability of the prime-square correction for `sigma>1/2`, nor prove
