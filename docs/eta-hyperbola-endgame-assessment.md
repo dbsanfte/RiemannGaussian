@@ -4349,3 +4349,34 @@ no nonstandard theorem axioms. The product-shell probe passed all 12
 cases and its independent coefficient and kernel checks; the two-record
 CLI subset also reproduces the full run exactly. These numerical checks
 remain exploration rather than theorem evidence.
+
+
+## Exact gcd blocks and reflected diagonal control
+
+The subsequent [gamma gcd and reflection ledger](eta-gamma-gcd-reflection.md)
+records the response to the user's new steering memo. The original smooth
+quadratic now has an absolutely convergent complete-row expansion and an
+exact finite gcd partition, including both divided cutoffs, all three
+coprimality conditions, and the full complex common-factor power.
+
+`EtaGammaGcd.norm_largeGcd_le` bounds the complete large-gcd contribution
+by `64*norm(chi)*G^(1-2*sigma)/(2*sigma-1)` for `sigma>1/2`, `G>=1`,
+`G^2>=2A`. On the concrete `A=u^8`, `U=u^5`, `G=2u^4` schedule it
+vanishes, while `EtaGammaQuadratic.smallGcd_eighth_fifth_tendsto_source`
+proves that the remaining core retains the original source.
+
+`EtaGammaReflection.smoothQuadratic_partner_mul_conj` keeps the entire
+reflected product. Its actual common-gcd diagonal coefficient is
+`mu(g)^2/g^2`; its complete reduced core remains complex. The terminal
+`norm_gcdCrossDiagonalTail_le` bounds that diagonal above `G` by
+`4096*norm(chi(rho#))*norm(chi(rho))/G`, with both physical thresholds
+paid. This holds throughout the strip and yields `O(u^-4)` on the same
+schedule. It does not bound the unequal-gcd interactions.
+
+The source normalization now connects exactly to the existing Laplace
+reflection rigidity theorem, but equality of the normalized source
+energies is still unproved. The single-index reflected Moebius diagonal
+has `mu(d)^2/d`, not a signed `mu(d)/d`; harmonic Moebius cancellation
+cannot be substituted for that coefficient. The remaining test is a
+signed estimate on the retained small-gcd and off-diagonal objects,
+including every source allowance. No new zero exclusion is claimed.

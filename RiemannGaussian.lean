@@ -852,3 +852,7 @@ import RiemannGaussian.EtaGammaFiniteBand
 import RiemannGaussian.EtaGammaRectangular
 import RiemannGaussian.EtaGammaBalancedOuter
 import RiemannGaussian.EtaGammaFactorTail
+import RiemannGaussian.EtaGammaQuadraticExpansion
+import RiemannGaussian.EtaGammaQuadraticGcd
+import RiemannGaussian.EtaGammaNearSquare
+import RiemannGaussian.EtaGammaReflection

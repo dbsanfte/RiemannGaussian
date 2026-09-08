@@ -27,28 +27,30 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Prove one independent signed inequality that beats the source at each hypothetical zero right of 1/2. The gamma square and harmonically balanced rectangle retain the full source. Keeping both arithmetic factor cutoffs now gives a much smaller cofactor-tail allowance. The remaining signed sum must beat the source by more than every short-sum, tail, and endpoint cost. That estimate and RH remain open.
+Attack the gamma quadratic through its exact gcd blocks and reflected partner, retaining complex phases and all cross terms. The complete large-gcd contribution is controlled right of one half, and the reflected common-gcd diagonal tail is controlled throughout the strip. The smaller-gcd core and unequal-gcd interactions still need an independent signed inequality that beats the source and all errors. RH remains open.
 
 ## Latest Update
 
-Lean now proves [sharper gamma cofactor-tail bounds](RiemannGaussian/EtaGammaFactorTail.lean).
-The theorem `EtaGammaFactorTail.norm_evaluate_mixed_factor_le` keeps both
-factor cutoffs `L,V` and bounds the entire omitted cofactor by
-`64*norm(chi(rho))*A^2*(L*V)^(-1-Re(rho))*exp(-L*V/(2*A))`,
-provided `A>0` and `L*V≥2*A`. It retains the complex-power decay and sums the three
-arithmetic factors separately.
+Lean now proves the [exact gcd decomposition and complete large-gcd bound](RiemannGaussian/EtaGammaQuadraticGcd.lean)
+for the original smooth Möbius quadratic. For `A>0`, `G≥1`,
+`sigma=Re(rho)>1/2`, and `G^2≥2A`, the full contribution with `gcd(a,b)>G` is at most
+`64*norm(chi(rho))*G^(1-2*sigma)/(2*sigma-1)`.
+On `A=u^8`, `U=u^5`, `G=2u^4`, it tends to zero. The
+[near-square source comparison](RiemannGaussian/EtaGammaNearSquare.lean)
+includes both short sums, the complete cofactor tail, and the physical endpoints.
 
-On `A=u^6`, `U=u^4`, the theorem
-`EtaGammaFactorTail.norm_smoothError_sixth_factor_le` gives the simpler
-allowance `64*norm(chi(rho))*exp(-u^2/2)` for `u≥2` and `Re(rho)≥1/2`.
-The complete source comparisons for both the square and the balanced
-rectangle include this improvement, both short sums, and every physical
-endpoint correction.
+The [reflected quadratic identity](RiemannGaussian/EtaGammaReflection.lean)
+retains every unequal-gcd interaction. Its common-gcd diagonal has the exact
+coefficient `mu(g)^2/g^2`; the complete diagonal tail is at most
+`4096*norm(chi(rho#))*norm(chi(rho))/G` throughout the strip for positive `A,B`, `G≥1`,
+`G^2≥2A` and `G^2≥2B`. This gives `O(u^-4)` on the same schedule.
+The full reduced cores and their completion phases remain in the identity.
 
-**The independent signed upper bound remains unproved.** This reduces the
-error budget and establishes no new zero bound or RH proof. The
-[assessment](docs/eta-hyperbola-endgame-assessment.md) records the full
-allowance and the signed shell and heat diagnostics.
+**The smaller-gcd core still tends to the nonzero source.** Its independent
+signed bound, and control of the reflected unequal-gcd interactions, remain
+unproved. This slice establishes no new zero bound or RH proof. The
+[proof and obstruction ledger](docs/eta-gamma-gcd-reflection.md) records the
+exact identities, allowances, and next test.
 
 ## Notable Formalisations
 

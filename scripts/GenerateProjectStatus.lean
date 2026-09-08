@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "Retaining both omitted factor cutoffs gives the full gamma cofactor allowance 64 norm(chi(rho)) A^2 (L V)^(-1-Re(rho)) exp(-L V/(2 A)) when A>0 and L V>=2 A; on the square schedule A=u^6 and U=u^4 this is at most 64 norm(chi(rho)) exp(-u^2/2) for u>=2 and Re(rho)>=1/2, with complete source comparisons and the independent signed upper bound still open"
-    lineOne := "both factor cutoffs"
-    lineTwo := "smaller cofactor tail"
+    label := "At positive physical scales and G>=1, the exact gamma quadratic gcd decomposition has a complete large-gcd allowance 64 norm(chi) G^(1-2 sigma)/(2 sigma-1) for sigma>1/2 and G^2>=2 A; the actual reflected common-gcd diagonal tail is at most 4096 norm(chi(rho#)) norm(chi(rho))/G throughout the strip when G^2>=2 A and G^2>=2 B, while the smaller-gcd core, unequal-gcd interactions, independent signed upper bound, and RH remain open"
+    lineOne := "exact reflected gcd"
+    lineTwo := "diagonal tail <= C/G"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.EtaGammaFactorTail.norm_smoothError_sixth_factor_le
+      ``RiemannGaussian.EtaGammaReflection.norm_gcdCrossDiagonalTail_le
   }
 ]
 
@@ -1281,47 +1281,28 @@ run_cmd do
       ("label", .str "Signed completed eta cancellation"),
       ("status", .str "open"),
       ("target", .str
-        ("Prove first absolute-moment summability of the actual completed eta leading " ++
-          "flux at every nontrivial zero, preserving completion weights and multiplicity. " ++
-          "The current route uses positive gamma physical averaging with survival " ++
-          "Q(x)=exp(-x)(1+x+x^2/2). Its literal damped eta transform has error at most " ++
-          "Gamma(Re(rho))/(6 norm(Gamma(rho))) times x^3 at an actual zero. " ++
-          "Every selected original divisor family through D has average norm at most " ++
-          "C_rho A^(-3) D^(4-Re(rho)). At A=u^6 and D=u^5 this decays for Re(rho)>2/5, " ++
-          "including the critical line. The full signed high-divisor average is " ++
-          "exactly the smoothed source minus that low family. Both source endpoints " ++
-          "Q(1/A) and Q(2/A) are retained, with an explicit cubic correction. " ++
-          "The actual infinite damped Moebius divisor series is now proved absolutely " ++
-          "convergent and equal to that same original source. Beyond R>=2 A its entire " ++
-          "tail has norm at most 16 norm(chi(rho)) A R^(-Re(rho)) exp(-R/(2 A)). " ++
-          "At R=ceil(2 A (1+2 log A)), replacing the original high average by its " ++
-          "finite signed divisor band costs at most 16 norm(chi(rho))/A. On the " ++
-          "sixth/fifth-power schedule the band retains the source with three explicit " ++
-          "allowances: C_rho u^(2-5 Re(rho)), the outer-tail term of order u^(-6), " ++
-          "and the physical-source term of order u^(-18). The full smooth quadratic " ++
-          "and mixed rectangles retain both short contributions and an absolutely " ++
-          "convergent complementary cofactor with allowance 1024 norm(chi(rho)) " ++
-          "A^3 exp(-L V/(4 A)). Completing the inner Moebius sum bounds the whole " ++
-          "outer strip u^2<a<=u^3 at inner cutoff u^5 by C_rho u^(-6-3 Re(rho)) " ++
-          "+ 1024 norm(chi(rho)) u^18 exp(-u/4), which tends to zero. The shorter " ++
-          "rectangle a<=u^2, b<=u^5 retains the original source for Re(rho)>2/5. " ++
-          "An explicit alternative keeps the Mobius coefficients through L and " ++
-          "adds the constant -H_mu(L)/sum_(L<n<=2L)(1/n) on the next interval. " ++
-          "Its harmonic moment is exactly zero and its added constant has norm " ++
-          "at most four. It annihilates every reciprocal-product term C/(a b). " ++
-          "The entire balancing correction on the same schedule has norm at most " ++
-          "32 C_rho/u^10 + 4096 norm(chi(rho)) u^18 exp(-u/4), which tends to zero. " ++
-          "The balanced rectangle therefore retains the original source as well. " ++
-          "Keeping both vanished arithmetic factor ranges now sharpens the complete " ++
-          "cofactor allowance to 64 norm(chi(rho)) A^2 (L V)^(-1-Re(rho)) " ++
-          "exp(-L V/(2 A)) when A>0 and L V>=2 A. On A=u^6 and U=u^4 it is at most " ++
-          "64 norm(chi(rho)) exp(-u^2/2) for u>=2 and Re(rho)>=1/2. The square and " ++
-          "balanced source comparisons retain both short sums, all balancing terms, " ++
-          "and both physical endpoints with this smaller tail allowance. " ++
-          "An independent signed upper bound below that source at a hypothetical " ++
-          "right-half zero remains open. The source limit holds on the critical line and " ++
-          "does not exclude any zero. No new zero bound or RH proof follows. " ++
-          "The previous quartic first-mean and cubic mean-square routes remain separate."))
+        ("Prove one independent signed inequality that beats the original completed " ++
+          "eta source, including all error allowances, at one admissible scale for " ++
+          "each hypothetical zero right of one half. The current gamma quadratic " ++
+          "has an absolutely convergent complete-row expansion and an exact gcd " ++
+          "partition retaining both divided cutoffs, all coprimality conditions, " ++
+          "and the complex factor mu(g)^2 g^(-2 rho). At positive physical scales, for sigma=Re(rho)>1/2, " ++
+          "G>=1, and G^2>=2 A, the entire large-gcd contribution is at most " ++
+          "64 norm(chi(rho)) G^(1-2 sigma)/(2 sigma-1). On A=u^8, U=u^5, " ++
+          "G=2 u^4 it tends to zero; the surviving smaller-gcd core still tends " ++
+          "to the original nonzero source. Both short sums, the complete omitted " ++
+          "cofactor, and the physical source endpoints have explicit allowances. " ++
+          "The conjugate-partner/original quadratic product retains every unequal-gcd " ++
+          "interaction. Its common-gcd diagonal has the exact coefficient mu(g)^2/g^2 " ++
+          "times the two full reduced cores. When G^2>=2 A and G^2>=2 B, the " ++
+          "complete reflected diagonal tail is at most 4096 norm(chi(rho#)) " ++
+          "norm(chi(rho))/G throughout the strip, giving O(u^-4) on the same " ++
+          "schedule. This does not bound the unequal-gcd interactions or establish " ++
+          "positivity of the complex reduced-core product. Source normalization " ++
+          "connects exactly to the existing Laplace reflection rigidity theorem, " ++
+          "but equality of normalized energies remains unproved. The independent " ++
+          "signed estimate for the smaller-gcd core and reflected cross terms " ++
+          "remains open. No new zero bound or RH proof follows."))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

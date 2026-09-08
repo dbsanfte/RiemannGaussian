@@ -17,7 +17,21 @@ part, and uniformity in the zero are not requirements. The gamma band is
 the first candidate because its source and all discarded ranges are
 already controlled. Its independent signed estimate remains open.
 
-The current alternative carrier is the full smooth rectangle in
+The current branch follows the user's gamma-reflection steering memo:
+the full square on `A=u^8`, `U=u^5` is decomposed by its exact gcd before
+combining the conjugate-partner and original channels. The
+[gcd and reflection ledger](eta-gamma-gcd-reflection.md) records the
+compiled terminal theorems. `EtaGammaGcd.norm_largeGcd_le` controls the
+entire original contribution above `G^2>=2A` for `sigma>1/2`.
+`EtaGammaReflection.norm_gcdCrossDiagonalTail_le` separately controls
+the complete reflected common-gcd diagonal by
+`4096*norm(chi(rho#))*norm(chi(rho))/G` throughout the strip, when both
+physical thresholds are met. Every unequal-gcd interaction remains in
+the exact reflected product. The smaller-gcd core still tends to the
+nonzero source; neither it nor the reflected off-diagonal has the needed
+independent signed saving. No new zero bound or RH proof follows.
+
+An earlier alternative carrier is the full smooth rectangle in
 [EtaGammaRectangular](../RiemannGaussian/EtaGammaRectangular.lean).
 `norm_foldedOuterBand_sixth_le` independently bounds the actual signed
 outer strip `u^2<a<=u^3`, after completing the inner range `b<=u^5`,
