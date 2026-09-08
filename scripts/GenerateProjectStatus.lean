@@ -1286,6 +1286,16 @@ run_cmd do
           "The primary target is a relative vanishing upper factor compared with K^e " ++
           "for the complete unweighted signed reflected-energy sum S(K), where " ++
           "e=abs(2*Re(rho)-1)>0. Uniform boundedness is not required. " ++
+          "At every actual right-half zero, the original positive zeroth-energy " ++
+          "channel is now summable. Its entire tail from K>=1 is bounded by " ++
+          "C_rho.re*Q_rho^2/(2*Re(rho)-1)*K^(1-2*Re(rho)), uniformly over " ++
+          "finite bands as well. The exact signed identity is " ++
+          "S(K)=P_reflected(K)-T_original+tail(K), with a nonnegative tail " ++
+          "and an explicitly bounded genuine original-channel total. Both " ++
+          "upstream transport budgets carry this comparison to the original " ++
+          "weighted current. This auxiliary bound limits the cancellation " ++
+          "available from the original colour; the surviving reflected " ++
+          "channel's independent upper saving remains open. " ++
           "The full inverse-energy sum differs from the actual signed current by a " ++
           "convergent signed correction with a fixed finite budget. Quantitative " ++
           "normalization proves abs((2*N+1)*Delta_(N+1)-2)<=4/(N+1), and the entire " ++

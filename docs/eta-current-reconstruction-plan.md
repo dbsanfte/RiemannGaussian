@@ -83,6 +83,20 @@ family, but the full quadratic still retains its source contribution.
 An off-diagonal Hilbert estimate alone does not bound that diagonal term;
 the independent relative upper saving remains open.
 
+The [recessive-energy slice](eta-current-recessive-energy.md) now bounds
+the entire original colour at every hypothetical right-half zero.
+`tsum_pairedEtaCurrentChannelEnergy_tail_le` gives its complete tail
+from `K>=1` an upper bound
+`C_rho.re*Q_rho^2/(2*sigma-1)*K^(1-2*sigma)`. The same bound holds
+uniformly over every finite band starting at `K`. The exact comparison
+is `S(K)=P_reflected(K)-T_original+tail(K)`, where the actual original
+total is finite and explicitly bounded. Its nonnegative tail is retained
+in the signed identity. Both original-current transport budgets are
+included in `pairedEtaLeadingFluxSignedPartialSum_reflected_error_le`.
+Thus the original colour has only a finite total available to offset
+the reflected energy. The latter still requires an independent upper
+saving; the slice does not establish one or exclude a new zero.
+
 The preceding Gamma branch followed the user's gamma-reflection steering memo:
 the full square on `A=u^8`, `U=u^5` is decomposed by its exact gcd before
 combining the conjugate-partner and original channels. The

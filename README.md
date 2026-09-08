@@ -27,26 +27,24 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek a relative vanishing upper factor for the complete signed reflected eta-energy sum. Lean transports the current's off-line power lower bound to this unweighted sum with finite error. An outer-divisibility cut now has weighted coefficient energy exactly q+3, independent of the larger cutoff. Its full reflected quadratic still retains the source contribution. The arithmetic bound and RH remain open.
+Bound the full reflected eta-energy channel at each hypothetical zero right of 1/2. Lean now bounds the original colour's entire tail by A_rho*K^(1-2*Re(rho)) and retains its finite total in the signed identity. The surviving reflected energy still carries the known positive cutoff power. The required independent upper saving and RH remain open.
 
 ## Latest Update
 
-Lean now proves a [sparse signed fibre bound](RiemannGaussian/EtaInverseDivisibilityFibres.lean)
-for an actual cut through the inverse product fibres. Selecting outer
-divisors divisible by `q` leaves just coefficient `1` at product `q`.
-The full moving complement has coefficients `+1` at product `1` and
-`-1` at product `q`. For `2<=q<=T`, its entire weighted coefficient
-energy is exactly `sum_(n<=T) (n+1)*c(n)^2 = q+3`, independent of `T`.
+Lean now proves a [decaying bound for the entire recessive energy channel](RiemannGaussian/EtaCurrentRecessiveEnergy.lean).
+For every actual zero with `sigma=Re(rho)>1/2`, its original colour's
+energy tail from `K>=1` is at most
+`C_rho.re * Q_rho^2 / (2*sigma-1) * K^(1-2*sigma)`, uniformly over any
+finite band or the complete infinite tail. The actual multiplicity,
+completion factor, and physical prefixes are retained.
 
-The same module identifies the actual selected moment with its
-product-`q` atom and the complement with the difference of the two atoms.
-The full signed current retains both reflected coefficients, both
-diagonal energies, and every mixed interaction. This removes the generic
-area cost for this coefficient family; it does not bound the full current
-by a relative vanishing factor. The source contribution remains, and no
-new zero exclusion or RH proof follows. The
-[ledger](docs/eta-inverse-divisibility-fibres.md) records the exact formulas
-and the remaining diagonal/Hilbert bridge.
+The exact signed comparison is now `S(K)=P_reflected(K)-T_original+tail(K)`.
+The finite total `T_original` is also explicitly bounded, and both
+upstream transport budgets carry the comparison back to the original
+weighted current. This limits the cancellation available from the
+original colour. The independent bound for the surviving reflected
+energy remains open; no new zero exclusion follows. The
+[ledger](docs/eta-current-recessive-energy.md) records the checked bounds.
 
 ## Notable Formalisations
 
