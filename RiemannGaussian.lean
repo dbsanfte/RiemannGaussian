@@ -848,3 +848,6 @@ import RiemannGaussian.EtaMoebiusPrimeFirstMean
 import RiemannGaussian.EtaMoebiusPrimeSieveWeights
 import RiemannGaussian.EtaMoebiusLargePrimeFirstMean
 import RiemannGaussian.EtaGammaPhysicalAverage
+import RiemannGaussian.EtaGammaFiniteBand
+import RiemannGaussian.EtaGammaRectangular
+import RiemannGaussian.EtaGammaBalancedOuter

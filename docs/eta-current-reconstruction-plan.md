@@ -6,6 +6,74 @@ estimate**. The objective remains active until both parts are proved and
 verified. The completed [signed endpoint package](eta-signed-endpoint-theorem-plan.md)
 provides the actual support, gap, phase, Gaussian, and mixed-matrix inputs.
 
+The immediate arithmetic goal is one independent signed inequality that
+contradicts the proved finite-band source comparison for every hypothetical
+actual zero strictly right of `1/2`. It suffices to beat the source by
+more than the complete error allowance at one admissible scale for that
+zero. A fixed positive saving at arbitrarily large scales is a convenient
+rate-free route; even a shrinking saving suffices if it exceeds the
+allowance. Full decay of the band, a bound for its norm or positive spectral
+part, and uniformity in the zero are not requirements. The gamma band is
+the first candidate because its source and all discarded ranges are
+already controlled. Its independent signed estimate remains open.
+
+The current alternative carrier is the full smooth rectangle in
+[EtaGammaRectangular](../RiemannGaussian/EtaGammaRectangular.lean).
+`norm_foldedOuterBand_sixth_le` independently bounds the actual signed
+outer strip `u^2<a<=u^3`, after completing the inner range `b<=u^5`,
+by `C_rho*u^(-6-3*sigma)+1024*norm(chi(rho))*u^18*exp(-u/4)`.
+The exact strip identity retains every cross term and the complementary
+product tail. The terminal `smoothRectangle_sixth_tendsto_source`
+proves that the shorter rectangle `a<=u^2`, `b<=u^5` still tends to
+the original source when `sigma>2/5`; both short sums and all source
+corrections are included. The independent signed upper estimate is
+therefore concentrated on this surviving sum. Ordinary and complex-weighted
+Abel transforms with subsequent absolute values gave weaker comparisons
+in all 12 numerical samples; their exact endpoints and signed versions
+remain available. This rules out no signed Abel argument, but gives no
+reason to replace the current target by those absolute envelopes.
+
+The subsequent [exact harmonic balancing rule](../RiemannGaussian/EtaGammaBalancedOuter.lean)
+keeps `mu(n)` through `L`, assigns
+`c_L=-H_mu(L)/sum_(L<n<=2L)(1/n)` on `(L,2L]`, and vanishes thereafter.
+The denominator is at least `1/2` and `|c_L|<=4`. Its full harmonic
+moment is exactly zero, so the compiled
+`reciprocalProduct_balancedOuter_eq_zero` annihilates every term `C/(a*b)`
+against these actual outer coefficients. Completing the inner Möbius sum
+proves that the full added correction costs at most
+`32*C_rho/u^10+4096*norm(chi(rho))*u^18*exp(-u/4)` on the same scale.
+The theorem `norm_balancedRectangle_sixth_sub_source_le` combines this
+with every preceding source allowance, and
+`balancedRectangle_sixth_tendsto_source` preserves the source for
+`sigma>2/5`, without assuming simple zeros. The remaining signed sum
+still requires the independent saving. Its direct absolute-row comparison
+increases slightly in all 12 numerical samples; exact removal of this
+matrix component has not supplied the required inequality.
+
+A subsequent numerical [prime-orbit audit](eta-hyperbola-endgame-assessment.md#small-prime-folding-of-the-balanced-rectangle-numerical-route-audit)
+keeps small-prime multiplicativity inside the full balanced inner sum.
+Grouping improves the tested coordinate comparisons, but reducing the
+remaining cores to primes still reproduces the source after all corrections.
+An Abel transform retains every proper prime power and both endpoints.
+The available `abs(psi(n)-n)<=5*n` estimate gives upper costs far above the
+source. Even using the measured finite prime discrepancy inside that
+absolute comparison is insufficient in the critical-line controls. This
+adds no Lean theorem; a viable continuation must bound the full signed
+prime-discrepancy correlation with the moving arithmetic weight, or supply
+a different independent signed estimate for the original rectangle.
+
+The [cumulative prime audit and branch review](eta-hyperbola-endgame-assessment.md#cumulative-prime-audit-and-existing-library-connections)
+test the existing Suzuki cumulative estimate on the same moving weight.
+Both Abel endpoints, the second-difference terms, and the discrete-to-continuous
+correction are retained. Taking absolute values after the second transform
+worsens all 12 comparisons. Cutoff jumps contribute little of the tested
+first-transform cost; the common-divisor part dominates. The available
+other Git branch is already contained in `main`. The useful existing
+connections preserve reflected-channel correlations, mixed phase kernels,
+and exact heat-compression leakage. Applying these to the actual arithmetic
+direction still needs a concrete inequality; their generic positivity or
+trace statements do not furnish the missing signed upper bound.
+
 ## Current first-mean route
 
 The newest estimate uses the full complex first mean of the same completed
@@ -56,11 +124,10 @@ factors. For `P|u`, the entire complete mean has source error at most
 `pairedEtaMoebiusCoprimeCompleteQuarticFirstMean_growing_tendsto_source`
 proves that the same explicit schedule makes this allowance vanish.
 
-The immediate target is an independent upper bound for the norm of the
-complete quotient mean, including its growing-sieve version, with a fixed
-positive gap below the source norm on arbitrarily
-large scales. A bound below the source square for its real projection
-against the conjugate source would also suffice. These are still open
+For this quotient form, the independent arithmetic target is a bound for
+its real projection against the conjugate source, including the complete
+allowance. A fixed gap below the source square on arbitrarily large scales
+would suffice. A bound for the norm is optional. These are still open
 arithmetic estimates. No mean-square extension to quartic windows, new
 zero bound, full arithmetic decay, or RH proof follows from the new
 first-mean bounds alone. The detailed estimate and its limitations are in
@@ -336,6 +403,94 @@ estimate must therefore retain the actual signed Möbius coefficients;
 normalized scale fitting cannot make this kernel norm vanish. The
 assessment records the exact scope, proof checks, and literature audit.
 These diagnostics do not add a root milestone or improve a zero bound.
+
+The two subsequent root modules
+[`EtaGammaDivisorTail.lean`](../RiemannGaussian/EtaGammaDivisorTail.lean)
+and [`EtaGammaFiniteBand.lean`](../RiemannGaussian/EtaGammaFiniteBand.lean)
+now localize that original high average to a finite divisor band.
+`EtaGammaSmoothing.hasSum_gammaMoebiusTerm` proves that the entire
+absolutely convergent damped Möbius series equals the exact smoothed
+source. The connection to the original physical average uses a proved
+summable dominator; it does not assume Möbius cancellation.
+
+For `R>=2*A`, `norm_gammaPhysicalHigh_sub_band_le` bounds the omitted
+tail by `16*norm(chi(rho))*A*R^(-sigma)*exp(-R/(2*A))`. At the literal
+rounded cutoff `R(A)=ceil(2*A*(1+2*log A))`, the terminal theorem
+`norm_gammaPhysicalHigh_sub_logBand_le` bounds the error by
+`16*norm(chi(rho))/A`. Both removed divisor ranges and both source
+endpoints therefore have explicit allowances.
+
+Write `B_rho(u)` for the actual finite band on `A=u^6`, `D=u^5`.
+`norm_gammaMoebiusSixthBand_sub_source_le` proves
+`norm(B_rho(u)-S_rho)<=E_rho(u)`, where
+
+```
+E_rho(u) = C_rho*u^(2-5*sigma)
+         + 16*norm(chi(rho))/u^6
+         + norm(chi(rho))*(1+16*2^(-sigma))/(6*(u^6)^3).
+```
+
+`gammaMoebiusSixthBand_tendsto_source` proves convergence to the source
+for `sigma>2/5`, including critical-line zeros. These are lower/source
+comparison results, not an independent upper estimate for the band.
+The direct target is the real source projection
+`P_rho(u)=Re(conj(S_rho)*B_rho(u))`. A sufficient independent estimate
+at one admissible scale is `P_rho(u)<=U_rho(u)` with
+`U_rho(u)+norm(S_rho)*E_rho(u)<norm(S_rho)^2`. A fixed strict gap at
+arbitrarily large admissible scales also suffices. No full power-saving
+rate is required. The estimate must apply to every hypothetical actual
+zero with `sigma>1/2`; the source comparison alone provides no such gap.
+
+Equivalently, write `q_rho(u)=Re(B_rho(u)/S_rho)` and
+`e_rho(u)=E_rho(u)/norm(S_rho)`. The source is nonzero, and the checked
+comparison implies `q_rho(u)>=1-e_rho(u)`, with `e_rho(u)->0`.
+The finite acceptance test is `q_rho(u)<=1-delta_rho(u)` and
+`e_rho(u)<delta_rho(u)` at the same admissible scale. The saving may
+depend on both the zero and the scale. To avoid proving an explicit
+starting scale or a rate, it is sufficient to obtain some `delta_rho>0`
+such that, for every `N`, a scale `u>=max(1,N)` has
+`q_rho(u)<=1-delta_rho`. Merely bounding `q_rho` by an unspecified
+constant cannot contradict its already proved limit of one.
+
+The family-strength audit in the
+[assessment](eta-hyperbola-endgame-assessment.md) keeps that minimal
+signed acceptance condition as the target. Positive spectral energy,
+a scale-independent multiple of its trace, a prescribed decay rate,
+and uniform estimates for all coefficient vectors are optional methods.
+Retain the negative spectral contribution when it helps; a method's
+failure does not establish that the gamma family fails. The existing
+source comparison allows arbitrary zero multiplicity. The classical
+logarithmic family's critical-line simplicity issue has not been
+transported to this band. Alternative arithmetic weights remain
+available through the original general-weight interfaces, with their
+source normalization and every comparison allowance to be proved.
+
+The [finite-band probe](../scripts/probe_eta_gamma_high.py) retains the
+whole signed band, its actual infinite-tail truncation, all dyadic divisor
+bands, and all squarefree factor-count channels. Sixteen cases pass the
+independent integer product reconstruction and full source split. Four
+additional 40-digit checks use direct polylogarithms and independently
+enumerated physical coefficients. They are numerical diagnostics, not
+certified bounds or evidence that the off-critical sample points are zeros.
+The [assessment](eta-hyperbola-endgame-assessment.md) records the checks
+and the subsequent prime-error attack. The independent finite-band upper
+bound, full arithmetic decay, and RH remain open. Changes in this slice
+are local; commits are on hold under the user's latest instruction.
+
+The [full smooth quadratic](../RiemannGaussian/EtaGammaSmoothQuadratic.lean)
+removes the sharp product band from an alternative carrier. It proves the exact source identity
+`S_(rho,A)=2*Low_(rho,A,U)+Q_(rho,A,U)+J_(rho,A,U)`, absolute
+convergence of both cofactor series, and the whole omitted-square bound
+`norm(J)<=1024*norm(chi)*A^3*exp(-U^2/(4*A))` for `2*A<=U^2`.
+On `A=u^6`, `U=u^4`, both short copies and this new tail tend to zero;
+the full smooth quadratic retains the source at every actual zero.
+The proof is imported by the root library, together with the subsequent
+mixed-cutoff cancellation in `EtaGammaRectangular`. It does not prove
+the independent signed saving. Numerical
+tests preserve the critical-line source after removing the sharp cutoff.
+The assessment records the exact scope and subsequent unequal-cutoff
+tests, which retain the actual Möbius sums on one side before evaluating
+their outer signed contributions.
 
 ## Retained cubic mean-square route
 

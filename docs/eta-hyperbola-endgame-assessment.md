@@ -3311,3 +3311,922 @@ inventory and its generated artifacts are unchanged by this diagnostic.
 The next arithmetic estimate must retain the actual signed high Möbius
 family; the kernel norm alone does not remove its comparison source
 mode. Full arithmetic decay, a new zero bound, and RH remain unproved.
+
+### Finite localization with a paid infinite arithmetic tail
+
+The next two root modules are
+[`EtaGammaDivisorTail`](../RiemannGaussian/EtaGammaDivisorTail.lean) and
+[`EtaGammaFiniteBand`](../RiemannGaussian/EtaGammaFiniteBand.lean).
+The original divisor series, rather than a comparison sequence, now has
+an absolutely convergent sum and a quantitative finite localization.
+
+The bounds `gammaSurvival_le_exp_half` and
+`norm_gammaDampedEta_le_exp_half` prove
+`Q(x)<=4*exp(-x/2)` for `x>=0` and `norm(G_s(x))<=8*exp(-x/2)` for
+`x>=2`, `Re(s)>0`. The actual geometric majorant gives
+`summable_norm_gammaMoebiusTerm` and
+
+\[
+ \left\|\sum_{d>R}\mu(d)d^{-\rho}\chi(\rho)G_\rho(d/A)\right\|
+ \le 16\|\chi(\rho)\| A R^{-\sigma}e^{-R/(2A)},\qquad R\ge2A.
+\]
+
+The terminal theorem for this estimate is
+`norm_tsum_gammaMoebiusTerm_tail_le`. The theorem
+`hasSum_gammaMoebiusTerm` identifies the entire sum with `S_(rho,A)`.
+Its proof first takes the increasing finite divisor selection through
+the original physical average, using a summable bound proportional to
+`M*exp(-M/(2*A))` independent of that selection. Thus neither the sum
+identity nor the interchange assumes the missing arithmetic estimate.
+
+Let `R(A)=ceil(2*A*(1+2*log A))`. For `A>=1`, the compiled terminal
+theorem `norm_gammaPhysicalHigh_sub_logBand_le` proves
+
+\[
+ \left\|\sum_{M\ge0}\omega_A(M)\operatorname{High}_\rho(M,D)
+   -\sum_{D<d\le R(A)}\mu(d)d^{-\rho}\chi(\rho)G_\rho(d/A)\right\|
+ \le\frac{16\|\chi(\rho)\|}{A},\qquad D\le R(A).
+\]
+
+The exact difference is retained by
+`gammaPhysicalHigh_sub_band_eq_tail`. The sharper logarithmic-cutoff
+tail theorem also retains the factor `R(A)^(-sigma)`.
+
+For the full finite band `B_rho(u)` on `A=u^6`, `D=u^5`, the theorem
+`norm_gammaMoebiusSixthBand_sub_source_le` pays all three costs:
+
+\[
+ \|B_\rho(u)-S_\rho\|\le E_\rho(u)
+ := C_\rho u^{2-5\sigma}
+   +\frac{16\|\chi(\rho)\|}{u^6}
+   +\frac{\|\chi(\rho)\|(1+16\,2^{-\sigma})}{6(u^6)^3}.
+\]
+
+The source limit `gammaMoebiusSixthBand_tendsto_source` holds for
+`sigma>2/5`. It includes actual critical-line zeros and establishes no
+independent upper bound below the source at a right-half zero.
+
+#### Acceptance condition for the direct finite-band attack
+
+Retain the real projection `P_rho(u)=Re(conj(S_rho)*B_rho(u))` rather
+than requiring a bound on every component of the band. The proved norm
+comparison implies
+
+\[
+ P_\rho(u)\ge\|S_\rho\|^2-\|S_\rho\|E_\rho(u).
+\]
+
+An independent upper estimate `P_rho(u)<=U_rho(u)` closes the reductio
+if `U_rho(u)+norm(S_rho)*E_rho(u)<norm(S_rho)^2` at one admissible
+scale for the hypothetical zero. A fixed strict saving along an
+unbounded admissible sequence is sufficient as well. These are acceptance
+conditions derived from the checked comparison, not new assumptions
+discharged by the current proof chain. A full decay rate is unnecessary.
+The estimate must distinguish `sigma>1/2` from the critical line.
+
+The minimal finite test can also use a shrinking saving. With
+`q_rho(u)=Re(B_rho(u)/S_rho)` and `e_rho(u)=E_rho(u)/norm(S_rho)`,
+it is enough to prove independently `q_rho(u)<=1-delta_rho(u)` and
+`delta_rho(u)>e_rho(u)` at the same admissible scale. For an asymptotic
+attack without an explicit cutoff, a sufficient target is some
+`delta_rho>0` and arbitrarily large scales with
+`q_rho(u)<=1-delta_rho`. The existing vanishing allowance then supplies
+the final contradiction. No statement that this independent target is
+proved or known to be easier to establish than RH is intended.
+
+#### Numerical checks of the entire arithmetic band
+
+The [probe](../scripts/probe_eta_gamma_high.py) checks `u=2,3,4,6` at
+the first two numerical critical-line zeros and at `3/4+it` with the
+same ordinates. It keeps every Möbius sign, all factor-count channels,
+and the divisor tail. Independent integer product coefficients reproduce
+the complete high average. The largest source-split discrepancy among
+the 16 cases is below `3e-14`; the largest product-reconstruction
+discrepancy is below `1.8e-14`. These are floating-point comparisons.
+
+At the first numerical zero, the source-normalized complex finite band is:
+
+| `u` | Full finite band divided by source | Sum of norms of all factor-count channels |
+| ---: | ---: | ---: |
+| 2 | `0.868447 + 0.056539i` | `0.907821` |
+| 3 | `0.927537 - 0.024214i` | `0.950256` |
+| 4 | `0.971735 - 0.003547i` | `0.976484` |
+| 6 | `0.990940 - 0.004169i` | `0.995171` |
+
+The factor-count channels cover one, two, three, and at least four
+distinct prime factors. The small difference between the final channel
+norm sum and the full norm says nothing about cancellation inside a
+channel. The approach to one is consistent with the proved source limit
+on the critical line. The off-critical samples are nonzeros, so their
+small raw values do not establish the required estimate under a zero
+hypothesis. These are complex first means, not physical mean squares.
+
+Four independent 40-digit checks at `u=2` construct every finite physical
+prefix using SymPy divisors and Möbius values, and evaluate every band
+kernel by the direct polylogarithm formula. They retain the last finite
+Abel boundary. The largest band discrepancy is below `3e-15`, the
+source discrepancy below `8.2e-35`, and the finite physical Abel
+discrepancy below `6.9e-40`. These checks do not certify interval bounds.
+Records are `/tmp/eta-gamma-high.json` and
+`/tmp/eta-gamma-high-direct-checks.json`; the independent checker is
+`/tmp/check_eta_gamma_high.py`.
+
+Both new root modules pass direct warnings-as-errors elaboration. The
+focused and full builds pass, the latter with 9,717 jobs. The root audit
+checks 12,385 declarations plus 6,000 automatically generated declarations
+with all 14 linters finding no errors; all 17 terminal axiom checks use
+only the three permitted standard axioms. The whole-project declaration
+linter also passes. This is local verification. The latest remotely
+verified commit remains `d0d07f3200fedc964fdfb56d564bce0918c3e69e`, CI
+34200679878. The user has put further commits on hold pending concrete
+progress on the independent upper-bound goal.
+
+#### Direct attack through the complete prime-error/cofactor pairing
+
+The local Lean audit `/tmp/EtaGammaPrimeErrorAudit.lean` proves the
+exact identity
+
+\[
+ \mu(n)\log n
+   =-\sum_{qm=n}\bigl(\Lambda(q)-1\bigr)\mu(m),\qquad n>1.
+\]
+
+The constant-density part cancels because the full Möbius divisor sum
+is zero at every nonunit product. All prime powers in `Lambda`, every
+composite contribution from `-1`, and the `q=1` cofactor are retained.
+This is classical Möbius inversion used as an exact transport, not a
+claim of new cancellation or novel number theory.
+
+`gammaMoebiusSelected_eq_prime_error` applies it to the actual completed
+gamma band. `weighted_moebius_eq_cofactor_prime_error` transposes all
+product fibres into complete quotient intervals. With
+
+\[
+ K_{\rho,A}(n)=
+ \frac{n^{-\rho}\chi(\rho)G_\rho(n/A)}{\log n},
+\]
+
+the resulting band is exactly
+
+\[
+ B_\rho(A,D)=
+ -\sum_{1\le m\le R(A)}\mu(m)
+    \sum_{D/m<q\le R(A)/m}
+       (\Lambda(q)-1)K_{\rho,A}(qm),
+\]
+
+where the two divided endpoints are integer floors. The logarithm is
+never divided by zero: every retained product exceeds `D>=1`.
+
+This suggests applying finite Abel summation to each complete `q`
+interval using the signed prefix `psi(q)-q`, then retaining the sum over
+`m` and every boundary before projecting along the source. The new task
+is an estimate for that **whole signed pairing**. The Gaussian prime
+Abel and weighted Chebyshev modules provide possible test-kernel tools,
+but their existing estimates concern their stated kernels. Transport to
+this cofactor-dependent kernel, including the full coefficient cost,
+would need proof. A generic norm estimate or prime-density substitution
+does not supply a strict source gap.
+
+The local numerical probe `/tmp/probe_eta_gamma_prime_error.py` checks
+six complete bands (`u=2,3,4`, first two numerical zeros), including every
+cofactor Abel row, its two endpoints, and every finite difference. The
+constant-density sum vanishes to floating-point precision, and the
+largest whole reconstruction discrepancy is below `5.7e-15`. The
+literal termwise absolute Abel budgets at `u=3,4` are:
+
+| `u` | First-zero budget divided by source norm | Second-zero budget divided by source norm |
+| ---: | ---: | ---: |
+| 3 | `14.579862` | `22.199771` |
+| 4 | `28.084685` | `43.256882` |
+
+These are computed absolute majorants, not interval certificates. They
+show why this tested termwise comparison cannot close the source gap.
+The signed sum still approaches the source, consistently with the
+critical-line theorem. No independent right-half estimate is inferred
+from these samples. All records, including dyadic cofactor and prime-index
+shells, are in `/tmp/eta-gamma-prime-error.json`.
+
+The exact-identity audit passes warnings as errors, all 14 linters on
+8 declarations plus 10 automatically generated declarations, and three
+terminal axiom checks containing only the permitted standard axioms.
+Its log is `/tmp/eta-gamma-prime-error-audit.log`. It remains a local
+route diagnostic and adds no dashboard milestone. The independent
+finite-band upper bound remains unproved.
+
+#### Auditing the Gaussian/Suzuki transfer and the full quadratic alternative
+
+The Suzuki envelope is not an unweighted square-root estimate for
+`psi(x)-x`. In
+[`RiemannXiSuzukiPointwiseChebyshevCumulativeEnvelope`](../RiemannGaussian/RiemannXiSuzukiPointwiseChebyshevCumulativeEnvelope.lean),
+the input `abs_chebyshevPsi_sub_self_le_five_mul_self_of_one_le`
+is the linear bound `abs(psi(x)-x)<=5*x`. The later square-root envelopes
+include inverse powers of the endpoint in their kernels. Those powers
+must be paid for when transporting an estimate to the prime-error pairing
+above. No direct square-root cancellation theorem is obtained by that
+substitution.
+
+The next numerical test uses the full quadratic identity already audited
+in `/tmp/EtaQuadraticMobiusAudit.lean`, now on the actual gamma band.
+For `U=ceil(sqrt(R))<=D`, define the source-normalized weight
+`F(n)=n^(-rho)*chi(rho)*G_rho(n/A)/S_rho` and the symmetric complex matrix
+
+\[
+ K_{a,b}=-\sum_{D<kab\le R}F(kab),\qquad 1\le a,b\le U.
+\]
+
+The classical finite coefficient identity gives
+`B_rho/S_rho=mu^T K mu`, with every entry retained. Its continuous
+comparison has rank one:
+
+\[
+ K^{\mathrm{cont}}_{a,b}=-\frac{I}{ab},\qquad
+ I=\int_D^R F(x)\,dx,
+ \qquad
+ \mu^T K^{\mathrm{cont}}\mu
+   =-I\left(\sum_{a\le U}\frac{\mu(a)}a\right)^2.
+\]
+
+The squared harmonic sum is nonnegative, so a favorable phase of `I`
+can make this main term's real projection nonpositive. This does not
+control the remainder. The local probe
+`/tmp/probe_eta_gamma_quadratic.py` checks all finite integer
+coefficients before evaluating the complete complex matrix. In the 12
+cases (`u=3,4,6`, first two ordinates, `sigma=1/2,3/4`), the continuous
+main term's norm is below `7.4e-6` after source normalization. Most of the
+critical-line source is already in the arithmetic remainder. The general
+matrix estimate is too large even when the main term has the favorable
+sign.
+
+Let `H=Re(K-K_cont)` and let `H_+` denote its positive spectral part.
+The real projection has the finite upper comparison
+
+\[
+ \Re(B_\rho/S_\rho)
+ \le \Re(-I H_\mu(U)^2)+\mu^T H_+\mu.
+\]
+
+This retains the actual Möbius vector in every spectral coordinate. It
+is more selective than `lambda_max(H)*norm(mu)^2`, but its arithmetic
+size still needs proof. The gamma-matrix comparison is a local analytic
+and numerical candidate; no new root upper-bound theorem is claimed.
+
+At `u=6`, the full numerical results are:
+
+| Sample | General matrix upper comparison | Upper comparison using the actual positive spectral energy |
+| --- | ---: | ---: |
+| First critical-line zero | `127.519035` | `1.164513` |
+| `3/4` at the first ordinate | `10.358730` | `0.123428` |
+| Second critical-line zero | `219.420559` | `1.346888` |
+| `3/4` at the second ordinate | `18.404076` | `0.154798` |
+
+The figures are rounded source-normalized upper comparisons; all
+unrounded data are retained.
+The off-critical points are nonzeros. Furthermore, evaluating the
+**proved** zero-specific error formula at these parameters gives about
+`3.73e6` at the first off-critical sample and `1.96e11` at the second.
+Thus none of these small raw spectral values passes the complete source
+gap test. The cubic Mellin constant's dependence on the ordinate is
+included, not discarded.
+
+The positive spectral trace is much smaller than the general matrix
+budget in these samples. A bound for `mu^T H_+ mu` by a scale-independent
+multiple of that trace, together with a decaying trace estimate, remains
+an optional diagnostic route. **Neither estimate has been proved, and
+neither is required by the finite-band acceptance condition.** A trace
+estimate alone would not bound the actual vector's energy. Further work
+must retain the negative spectral contribution whenever it helps the
+signed source projection. Growth in an auxiliary comparison constant
+is acceptable if the complete resulting bound still passes that test.
+
+The largest whole matrix reconstruction discrepancy in the 12 cases is
+below `2.5e-12`. Four independent 40-digit checks at `u=3` verify 16
+selected complete matrix entries using polylogarithms and all four
+continuous main terms using incomplete gamma integrals. Their largest
+entry discrepancy is below `2.7e-17` and their largest continuous-main
+discrepancy below `1.1e-19`. These are numerical consistency checks, not
+interval certificates or arithmetic bounds. Records are
+`/tmp/eta-gamma-quadratic.json` and
+`/tmp/eta-gamma-quadratic-direct-checks.json`; the independent checker is
+`/tmp/check_eta_gamma_quadratic.py`.
+
+The regenerated root inventory contains 870 modules, 18,406 compiled
+declarations, and 15,820 project theorems. It reports zero project axioms,
+zero placeholder-dependent declarations, no nonstandard theorem axioms,
+and `rhImplied=false`. Regeneration is byte-identical on repetition.
+No commit or push has been made. The independent finite-band upper
+bound and RH remain open.
+
+#### Audit of the family and the strength of its proposed estimates
+
+The user's question about choosing an unnecessarily hard family changes
+the priority of the auxiliary estimates. There are two separate issues:
+a prescribed coefficient law can demand additional mathematics, and a
+bound used to analyze it can discard cancellation needed for the original
+goal. Neither issue is resolved by making the finite computation larger.
+
+There is an established warning for the earlier logarithmic choice.
+[Wei and Wu, Proposition 1.9](https://bimsa.net/doc/publication/1424.pdf)
+prove that the standard critical-line Nyman–Beurling mean-square error
+for `V_N(s)=sum_(n<=N) mu(n)*(1-log(n)/log(N))*n^(-s)` tending to zero
+implies both RH and simplicity of the zeros. Their Theorem 1.10 gives
+an RH equivalence for convergence on every fixed line strictly to the
+right of `1/2`. The distinction concerns the actual norm and domain,
+not just the appearance of Möbius coefficients. The repo's balanced eta
+correction and the present gamma band have not been identified with that
+critical-line norm. No simplicity obstruction for either actual carrier
+is established by citing this result.
+
+For the current gamma route, keep the precise quantifiers: for each
+hypothetical actual zero with `sigma>1/2`, find one admissible scale and
+an independent upper bound satisfying
+`U_rho(u)+norm(S_rho)*E_rho(u)<norm(S_rho)^2`. Constants and the scale
+may depend on that zero. Its multiplicity is unrestricted. An estimate
+on all complex parameters, all coefficient vectors, or every scale is
+an additional proposal. No uniformity as `sigma` approaches `1/2`,
+prescribed power rate, or bound on the positive spectral part alone is
+required. Under RH there are no zeros in this quantified domain, so
+the zero-conditional acceptance statement itself cannot demand a
+separate simplicity assertion. This logical audit is not a new Lean
+theorem or a proof of the independent arithmetic estimate.
+
+For example, the symmetric matrix `diag(L,-L)` and vector `(1,-1)`
+have signed quadratic value zero and positive spectral energy `L`
+for every `L>=0`. This elementary comparison only illustrates the
+information lost by deleting negative spectral contributions; it does
+not assert that the actual gamma matrix has this form. Failure of a
+positive-energy or constant-trace target is therefore not, by itself,
+a rejection of the signed route.
+
+The next estimates should address the complete signed projection and
+be judged with all three proved allowances included. Keep full decay,
+uniform trace comparison, and power savings optional. If a fixed kernel
+or taper introduces an extra obstruction, vary it and re-establish its
+source normalization and complete comparison costs. The original
+[`EtaMoebiusTrialCoefficients.lean`](../RiemannGaussian/EtaMoebiusTrialCoefficients.lean)
+already preserves arbitrary real arithmetic weights and proves complete
+coefficient bounds when their absolute values are at most one; those
+interfaces do not force the logarithmic law. They also do not establish
+decay for an alternative family. The remaining independent inequality
+still has RH-level consequences, and no argument here makes it known
+to be tractable with the present arithmetic input.
+
+#### Full smooth quadratic: exact remainder and cutoff audit
+
+The root-imported
+[EtaGammaSmoothQuadratic](../RiemannGaussian/EtaGammaSmoothQuadratic.lean)
+removes the sharp divisor-band endpoints from the quadratic kernel.
+Write `m_U=mu_(<=U)`, `l_U=mu_(>U)`, and let `*` denote Dirichlet
+convolution. The coefficient identity is the classical formula
+
+```
+mu = 2*m_U - (1*m_U*m_U) + (1*l_U*l_U).
+```
+
+Here `1` denotes the arithmetic function that equals one at every
+positive integer. Define the entire smooth quadratic and its omitted
+contribution by
+
+```
+Q(rho,A,U) = -sum_(n>=1) (1*m_U*m_U)(n) n^(-rho) chi(rho) G_rho(n/A),
+J(rho,A,U) =  sum_(n>=1) (1*l_U*l_U)(n) n^(-rho) chi(rho) G_rho(n/A).
+```
+
+The theorem `summable_norm_cofactor_gamma` proves absolute convergence
+before using any source identity. The coefficient bound is at most
+`n^2`, independent of `U`; the exponential envelope absorbs that entire
+factor. The theorem `source_eq_short_add_quadratic_add_error` proves
+
+```
+S_(rho,A) = 2*Low(rho,A,U) + Q(rho,A,U) + J(rho,A,U).
+```
+
+Every coefficient of the omitted square through `U^2` vanishes.
+The theorem `norm_smoothError_le` consequently bounds its entire
+remaining series by
+
+```
+norm(J(rho,A,U)) <= 1024*norm(chi(rho))*A^3*exp(-U^2/(4*A)),
+```
+
+provided `A>0` and `2*A<=U^2`. This estimate assumes no Möbius
+cancellation. It controls the additional cofactor tail, which was not
+covered merely by the original single-divisor tail estimate.
+
+On the explicit schedule `A=u^6`, `U=u^4`,
+`norm_short_sixth_fourth_le` bounds each short copy by
+`C_rho*u^(-2-4*sigma)`. The omitted-square allowance is
+`1024*norm(chi(rho))*u^18*exp(-u^2/4)` and tends to zero by
+`smoothError_sixth_tendsto_zero`. The source endpoints retain their
+existing cubic allowance. Thus `smoothQuadratic_sixth_tendsto_source`
+proves `Q(rho,u^6,u^4)->S_rho` at every actual nontrivial zero.
+This does not establish a strict signed saving. It justifies using a
+full smooth quadratic as an alternative carrier for the same
+contradiction, without a discontinuous product-band kernel or an
+uncontrolled infinite cofactor tail.
+
+The local audit passes warnings-as-errors elaboration, all 14 linters
+on 29 declarations plus 14 generated declarations, and four terminal
+axiom checks using only `propext`, `Classical.choice`, and `Quot.sound`.
+Its initial log is `/tmp/eta-gamma-smooth-quadratic-audit.log`. The proof
+is now in the root-imported
+[EtaGammaSmoothQuadratic](../RiemannGaussian/EtaGammaSmoothQuadratic.lean),
+under namespace `RiemannGaussian.EtaGammaQuadratic`. The independent
+signed arithmetic estimate remains unproved.
+
+The numerical audit `/tmp/probe_eta_gamma_smooth_quadratic.py` retains
+all integer cofactor coefficients, both short linear contributions,
+the omitted square, and every signed spectral contribution. It checks
+24 cases: `u=3,4,6`, the first two ordinates, real parts `1/2,3/4`,
+and both the original kernel and `G_s(x)-eta(s)*Q_survival(x)`.
+For these numerical tests `U=floor(sqrt(R(A)))+1`, rather than the
+fourth-power schedule used in the limit theorem. The exact identity
+and tail bound apply to both choices.
+
+The centered kernel agrees with the original only at an actual eta
+zero. At a nonzero its full source includes the additional term
+`-eta(s)*sum_(n>=1) mu(n)*n^(-s)*Q_survival(n/A)` (before completion).
+This term is retained in every reconstruction; the small values of
+the centered off-critical samples are not zero exclusions.
+
+At `u=6`, the original smooth quadratic divided by `S_rho` has real
+part `0.999785` at the first numerical critical-line zero and `0.999661`
+at the second. The respective positive spectral contributions are
+`1.159355` and `1.297832`, while the negative contributions are
+`-0.159571` and `-0.298171`; the continuous main is also retained.
+The source persists when the sharp lower cutoff is removed. Therefore
+cutoff removal alone supplies no evidence of a strict saving, and the
+negative contributions remain necessary data for further estimates.
+
+The maximum complete reconstruction discrepancy is below `2e-13`.
+An independent 40-digit check evaluates 16 complete matrix entries in
+both kernel variants using the divisor coefficient
+`tau(j)-2*1_(2|j)*tau(j/2)`, rather than the nested eta series. The
+largest entry discrepancy is below `1.7e-15`. These are numerical
+consistency checks, with finite exponential shadows, not interval
+certificates or bounds for hypothetical off-critical zeros. Records
+are `/tmp/eta-gamma-smooth-quadratic.json` and
+`/tmp/eta-gamma-smooth-quadratic-direct-checks.json`; the independent
+checker is `/tmp/check_eta_gamma_smooth_quadratic.py`.
+
+[Huxley and Watt](https://arxiv.org/pdf/1807.05890), Section 1, give
+classical truncated Möbius identities with independently chosen factor
+cutoffs, including their quadratic matrix form. Their subsequent
+spectral estimates concern their real unweighted matrix and do not
+provide an estimate for this complex gamma kernel or its actual Möbius
+projection. The classical identity is useful here as exact bookkeeping;
+its signed arithmetic estimate is still an additional obligation.
+
+#### Unequal factor cutoffs and the retained outer signed sum
+
+The subsequent local probe `/tmp/probe_eta_gamma_rectangular.py`
+tests the classical mixed version
+`mu=m_L+m_V-(1*m_L*m_V)+(1*l_L*l_V)` with the same full smooth,
+zero-centered kernel. Its 36 cases use `u=3,4,6`, both ordinates and
+real parts above, and the three factor ranges `(u^2,u^5)`, `(u^3,u^5)`,
+and `(u^4,u^4)`. Every integer coefficient of the omitted convolution
+through `L*V` is checked to be zero, and both short sums and the complete
+finite shadow of the omitted convolution are retained. Their maximum
+source/product reconstruction discrepancy is below `2e-13`.
+
+Let `K` be the source-normalized real matrix and retain the actual
+right Möbius vector first: `c_a=sum_b K_(a,b)*mu(b)`. The remaining
+signed quantity is `sum_a mu(a)*c_a`. The probe compares it with
+the sum of `abs(c_a)` over the actual nonzero Möbius coordinates,
+and also with both Cauchy comparisons obtained by folding either
+actual vector first. These comparisons are optional diagnostics;
+the full outer signed sum is still available and remains the target.
+
+For `u=6`, `L=216`, `V=7776`, the results are:
+
+| Sample | Actual real bilinear projection | Best tested outer comparison |
+| --- | ---: | ---: |
+| First critical-line zero | `0.990939` | `1.046121` |
+| `3/4` at the first ordinate | `0.048694` | `0.050679` |
+| Second critical-line zero | `1.007405` | `1.254928` |
+| `3/4` at the second ordinate | `0.047603` | `0.055487` |
+
+This geometry reduces the tested comparison relative to the balanced
+cutoffs; it is evidence to retain the completed inner Möbius sum before
+estimating the outer expression. It is not an independent bound. The
+off-critical samples are nonzeros, their centered source correction is
+retained, and none supplies a full acceptance certificate. The more
+extreme `(u^2,u^5)` choice has a substantially larger omitted cofactor
+cost in these samples, so its smaller outer comparison cannot be judged
+in isolation. The mixed-cutoff transport is now proved in
+[EtaGammaRectangular](../RiemannGaussian/EtaGammaRectangular.lean),
+as detailed below. Records are `/tmp/eta-gamma-rectangular.json`.
+
+#### Complete inner cancellation and the surviving short rectangle
+
+The root-imported `EtaGammaRectangular` works with actual short Möbius
+factors `m_L,m_V`, their complements `l_L,l_V`, and the literal outer
+interval `f_(W,L)(a)=mu(a)*1_(W<a<=L)`. The theorem
+`mixedCofactor_short_eq_sub_long` proves the exact identity
+
+```
+1*f*m_V = f - 1*f*l_V.
+```
+
+Here `*` is Dirichlet convolution and `1` is the arithmetic function
+equal to one on positive integers. This uses the classical inverse
+identity `1*mu=delta`, with no cancellation estimate assumed. After
+gamma evaluation, `foldedOuterBand_eq_low_add_error` gives
+
+```
+B_(W,L,V) = -Low_((W,L]) + Eval(1*f_(W,L)*l_V).
+```
+
+The complementary cofactor vanishes through `W*V`. The proved absolute
+convergence and `norm_evaluate_mixed_le` consequently control its whole
+remaining series. The theorem `norm_foldedOuterBand_le` establishes
+
+```
+norm(B_(W,L,V)) <= C_rho*A^(-3)*L^(4-sigma)
+                  +1024*norm(chi(rho))*A^3*exp(-W*V/(4*A)),
+```
+
+for `A>0` and `2*A<=W*V`. On `A=u^6`, `W=u^2`, `L=u^3`, `V=u^5`,
+`norm_foldedOuterBand_sixth_le` reduces this allowance to
+
+```
+C_rho*u^(-6-3*sigma)+1024*norm(chi(rho))*u^18*exp(-u/4).
+```
+
+The terminal `foldedOuterBand_sixth_tendsto_zero` proves that the entire
+outer strip vanishes at every actual nontrivial zero. This bound keeps
+the completed inner Möbius sum before taking the norm. It does not use
+the earlier Fourier sampler outside its range.
+
+For the full rectangle `Q_(L,V)=-Eval(1*m_L*m_V)`, the theorem
+`source_eq_shorts_add_rectangle_add_error` retains the exact source law
+
+```
+S_(rho,A)=Low_L+Low_V+Q_(L,V)+Eval(1*l_L*l_V).
+```
+
+All four series converge before they are combined. The theorem
+`smoothRectangle_sub_eq_foldedOuterBand` also proves
+`Q_(L,V)-Q_(W,V)=B_(W,L,V)` for `W<=L`, so the removed strip is exactly
+the difference of the original signed rectangles. No matrix entries or
+cross terms have been dropped.
+
+For the surviving `Q_(u^2,u^5)`,
+`norm_smoothRectangle_sixth_sub_source_le` proves source error at most
+
+```
+2*C_rho*u^(2-5*sigma)+1024*norm(chi(rho))*u^18*exp(-u/4)
+```
+
+relative to `S_(rho,u^6)`. The original cubic endpoint correction is
+retained when passing to `S_rho`. Thus
+`smoothRectangle_sixth_tendsto_source` proves convergence to the
+original nonzero source for `sigma>2/5`, including the critical line.
+The independent upper bound for the surviving short outer sum remains
+unproved. This localization gives no new zero exclusion.
+
+The initial local audit has 28 declarations plus 27 generated declarations,
+passes all 14 linters, and has nine terminal axiom checks using only
+`propext`, `Classical.choice`, and `Quot.sound`. Its log is
+`/tmp/eta-gamma-rectangular-audit.log`. The root module uses namespace
+`RiemannGaussian.EtaGammaRectangular`.
+
+Both root modules pass direct warnings-as-errors elaboration, the focused
+build (4391 jobs), and the full build (9719 jobs). The root audit passes
+all 14 linters on 12442 declarations plus 6041 generated declarations;
+all 13 terminal axiom checks use only the standard three axioms. The
+project lint and source scans pass. The regenerated inventory records
+872 modules, 18504 declarations, 15907 theorems, no project axioms,
+no placeholder dependencies, and `rhImplied=false`; repeating generation
+produces byte-identical JSON and SVG. The root audit log is
+`/tmp/eta-gamma-rectangular-root-audit.log`. This slice remains local and
+uncommitted under the user's hold; no new remote CI result is claimed.
+
+#### Testing the remaining outer Abel estimate
+
+The subsequent diagnostic `/tmp/probe_eta_gamma_outer_abel.py` computes
+the completed inner coefficients independently as
+`c_V(n)=sum_(b|n,b<=V) mu(b)`. It checks their exact vanishing on
+`2<=n<=V`, and `c_V(n)=-mu(n)` on `V<n<=2*V`. It reconstructs each
+outer row from these coefficients, independently of the earlier matrix
+grouping. For `L=u^2`, the ordinary Abel transform retains the terminal
+term `M(L)*Re(w_L)` and all terms `M(a)*(Re(w_a)-Re(w_(a+1)))`.
+The complex-weighted version retains the actual prefix
+`sum_(n<=a)mu(n)*n^(-s)` and the corresponding complex weight differences.
+
+Both reconstructions and the complete dyadic outer-shell sum agree with
+the prior full rectangle to within `2.1e-13` in 12 numerical cases:
+`u=3,4,6`, the first two ordinates, and real parts `1/2,3/4`.
+Every source correction and complementary cofactor from the earlier
+probe remains recorded; off-critical points are nonzeros.
+
+Taking absolute values after either Abel transform gives a larger upper
+comparison than the completed-row absolute comparison in all 12 cases.
+At `u=6`, the two critical-line samples give:
+
+| Sample | Actual real projection | Completed-row comparison | Ordinary Abel comparison | Complex-weighted Abel comparison |
+| --- | ---: | ---: | ---: | ---: |
+| First zero | `0.990076` | `1.042974` | `2.814930` | `2.171799` |
+| Second zero | `1.008330` | `1.250050` | `4.454489` | `2.774512` |
+
+For example, the first ordinary Abel sum contains positive contribution
+`1.902503` and negative contribution `-0.912427`; taking their absolute
+values discards material cancellation. These observations do not rule
+out an argument retaining those signs. They do not support replacing
+the surviving signed target by either tested absolute Abel envelope.
+The complete records are `/tmp/eta-gamma-outer-abel.json`; none is a
+certified upper bound for a hypothetical off-critical zero.
+
+
+#### Exact harmonic balancing of the surviving outer factor
+
+The module [EtaGammaBalancedOuter](../RiemannGaussian/EtaGammaBalancedOuter.lean)
+provides a mathematically specified coefficient choice on every positive
+integer cutoff. Define
+
+```
+H_L = sum_(n<=L) mu(n)/n,
+K_L = sum_(L<n<=2L) 1/n,
+c_L = -H_L/K_L,
+f_L(n) = mu(n)                 for 1<=n<=L,
+         c_L                  for L<n<=2L,
+         0                    otherwise.
+```
+
+Theorems `half_le_harmonicBlock` and `abs_balancingConstant_le_four`
+prove `K_L>=1/2` and `|c_L|<=4`. The original prefix is unchanged,
+including its zero Möbius coefficients. The added interval uses the
+literal constant above, including at integers where Möbius is zero;
+it is a different arithmetic factor, whose full correction is retained.
+No sign-change conjecture or quantitative harmonic decay is needed.
+
+The theorem `harmonic_balancedOuter_eq_zero` proves
+`sum_(n<=2L) f_L(n)/n=0`. Consequently,
+`reciprocalProduct_balancedOuter_eq_zero` kills the whole matrix term
+`C/(a*b)` for every complex constant `C` and every other factor.
+This is the reciprocal-product component isolated in the earlier
+continuous-main calculation. The proof uses finite arithmetic and
+does not assume a Voronoi expansion or a bound for its remainder.
+
+Let `Q_bal=-Eval(1*f_L*m_V)`, where `Eval` is the original completed
+gamma evaluation. The theorem `balancedRectangle_eq_original_sub`
+retains its exact difference from the original rectangle. Completing
+the inner sum in the added interval gives a finite low term and the
+whole complementary cofactor above `L*V`; both are bounded before
+passing to a limit. On `A=u^6`, `L=u^2`, `V=u^5`,
+`norm_balancedRectangle_sixth_sub_original_le` proves
+
+```
+norm(Q_bal-Q_original) <= 32*C_rho/u^10
+                        +4096*norm(chi(rho))*u^18*exp(-u/4).
+```
+
+The terminal `norm_balancedRectangle_sixth_sub_source_le` includes all
+costs against the original source:
+
+```
+E_bal(rho,u) = 2*C_rho*u^(2-5*sigma) + 32*C_rho/u^10
+              +5120*norm(chi(rho))*u^18*exp(-u/4)
+              +norm(chi(rho))*(1+16*2^(-sigma))/(6*u^18).
+```
+
+The theorem `balancedRectangle_sixth_tendsto_source` proves the unchanged
+source limit for `sigma>2/5`. No simplicity assumption is used. At a
+hypothetical right-half zero, the acceptance condition remains an
+independent bound on `Re(Q_bal/S_rho)` strictly below
+`1-E_bal(rho,u)/norm(S_rho)` at an admissible scale. Neither the exact
+zero harmonic moment nor the limit theorem supplies that bound.
+
+The standalone [probe](../scripts/probe_eta_gamma_balanced_outer.py)
+checks the harmonic moment using exact rational arithmetic. It also
+checks the original integer cofactor support, reconstructs the complete
+inner rows independently, and retains the added low term, complementary
+cofactor, full source, and off-zero centering correction. Its 12 cases
+use `u=3,4,6`, the first two ordinates, and real parts `1/2,3/4`.
+The maximum reconstruction discrepancy is below `2.5e-14`.
+
+At `u=6`, the first critical-line sample has balanced real projection
+`0.99015949` and absolute-row comparison `1.04315787`; the second has
+`1.00845022` and `1.25033372`. Each absolute-row comparison increases
+slightly relative to the unchanged rectangle, as it includes the
+additional interval. The centered off-critical samples are nonzeros.
+Thus the coefficient rule removes one matrix component exactly, but
+the tested absolute estimates do not close the signed arithmetic gap.
+Records are `/tmp/eta-gamma-balanced-outer.json`. These diagnostics are
+not interval certificates or new zero exclusions.
+
+The root module passes direct warnings-as-errors elaboration, the focused
+build (4428 jobs), and the full build (9720 jobs). All 14 root declaration
+linters pass on 12468 declarations plus 6069 generated declarations;
+the seven terminal axiom checks use only `propext`, `Classical.choice`,
+and `Quot.sound`. Project lint, source scans, the standalone probe CLI,
+and whitespace checks pass. The inventory contains 873 modules, 18558
+declarations, and 15955 theorems, with no project axioms, placeholder
+dependencies, or nonstandard theorem axioms; `rhImplied` remains false.
+Repeated inventory generation is byte-identical. Logs are
+`/tmp/eta-gamma-balanced-outer-root-audit.log` and the corresponding
+`direct`, `focused`, `full`, and `status` logs. These gates passed while
+commits were held; the user subsequently authorized the combined gamma
+checkpoint for further research review.
+
+#### Divisor-transform audit for the remaining signed part
+
+The complete cofactor kernel has divisor coefficients
+`tau(n)-2*1_(2|n)*tau(n/2)`. A transform must keep its full remainder and
+handle the origin of the test function `y^(-s)*Q(x*y)`, which is singular
+there. The infinite divisor-transform formulation reviewed in
+[Banerjee, Dixit and Gupta](https://arxiv.org/pdf/2304.05923), Section 1,
+uses Schwartz test functions. It cannot be substituted for this singular
+test function without additional justification.
+
+A pointwise square-root divisor-error bound by itself would still lose
+too much when summed over both arithmetic factors. Even if it supplies
+a kernel remainder of size `C_s*x^(sigma-1/2)`, termwise summation
+would give a budget proportional to
+
+```
+A^(1/2-sigma) * (sum_(a<=2L) |f_L(a)|/sqrt(a))
+             * (sum_(b<=V) |mu(b)|/sqrt(b)).
+```
+
+Using only the proved coefficient bounds makes this of order
+`A^(1/2-sigma)*sqrt(L*V)`, or `u^(13/2-6*sigma)` on the current schedule.
+That exponent is positive throughout the right half of the critical
+strip. This is an audit of a proposed bound's loss, not a Lean theorem
+asserting that a divisor transform has been completed. A useful version
+must estimate the joint signed arithmetic expression before taking
+absolute values.
+
+Direct Möbius transformation also has additional obligations:
+[Chorge and Dixit](https://arxiv.org/pdf/2410.04506), Theorem 2.9,
+assumes simple nontrivial zeros and retains an explicit sum over those
+zeros with reciprocal zeta derivatives. It provides no independent
+upper estimate for that zero sum. No theorem from either paper has
+been imported as a premise of the balanced-coefficient proof.
+
+#### Small-prime folding of the balanced rectangle: numerical route audit
+
+The next [probe](../scripts/probe_eta_gamma_prime_orbits.py) tests the
+arithmetic signs before applying an upper comparison. It folds the actual
+balanced outer coefficients into the entire inner weight `r_b`, and checks
+the result independently by completing the inner Möbius convolution first.
+Both calculations retain every product through the common exponential
+cutoff `P=80*A`. The added balancing interval, both short sums, the complete
+cofactor correction, and the off-zero centering correction remain present.
+This is an exploratory calculation; no new Lean theorem or zero exclusion
+is claimed in this subsection.
+
+For a selected prime cutoff `y`, each squarefree inner index is partitioned
+as `b=d*k`, where every prime factor of `d` is at most `y`, and every prime
+factor of `k` exceeds `y`. The probe checks coprimality and
+`mu(b)=mu(d)*mu(k)` using integer arithmetic, then forms
+
+```
+W_y(k) = sum_(d*k<=V, d squarefree and y-smooth) mu(d)*r_(d*k).
+Q_bal  = sum_k mu(k)*W_y(k).
+```
+
+The full complex sum is kept. Grouping the real terms by these prime orbits
+reduces their absolute envelope in every tested case, as expected from
+finite grouping. A second comparison keeps the known signs for `k=1` and
+prime `k` and bounds only the remaining composite cores by absolute values.
+Thus it measures what the prime recurrences contribute, rather than deleting
+prime-divisible indices. Once `y>sqrt(V)`, there are no remaining squarefree
+composite cores: the result consists of the smooth part and a signed sum over
+primes. This removes the unknown core signs but does not bound the weighted
+prime sum independently.
+
+At `u=6`, with `L=36`, `V=7776`, the critical-line controls give:
+
+| Sample | Original inner coordinate envelope | Prime-sign comparison, `y=29` | Full signed rectangle |
+| --- | ---: | ---: | ---: |
+| First ordinate | `9.578654` | `1.171802` | `0.990159` |
+| Second ordinate | `12.725496` | `1.211142` | `1.008450` |
+
+At `y=89`, the prime-sign comparison equals the full rectangle. Adding the
+measured absolute source corrections gives `1.001323` and `1.034631`,
+respectively. Keeping those corrections signed reproduces the normalized
+source, up to its finite smoothing correction. These measured costs are
+not substitutes for the proved `E_bal` allowance. Merely exhausting the
+composite cores therefore gives no strict saving.
+
+The probe also tests a direct connection to the existing prime-counting
+machinery. In the prime-only case it extends `W_y(n)` to all positive
+integers, puts `w_n=W_y(n)/log(n)` for `n>y`, and keeps every proper prime
+power. The finite calculation has the form
+
+```
+B = W_y(1) - sum_(y<n<=V) w_n
+    + sum_(y<p^j<=V, j>=2) W_y(p^j)/j,
+Q_bal = B - sum_(y<n<=V) (Lambda(n)-1)*w_n.
+```
+
+Writing `E(n)=psi(n)-n`, its complete signed error is
+
+```
+-E(V)*w_V + E(y)*w_(y+1)
+- sum_(y<n<V) E(n)*(w_n-w_(n+1)).
+```
+
+Neither endpoint nor the proper prime powers are dropped. The available
+root theorem
+`abs_chebyshevPsi_sub_self_le_five_mul_self_of_one_le` in
+[`RiemannXiSuzukiPointwiseChebyshevCumulativeEnvelope`](../RiemannGaussian/RiemannXiSuzukiPointwiseChebyshevCumulativeEnvelope.lean)
+supplies `abs(E(n)) <= 5*n`. Inserting it into this particular absolute
+Abel comparison gives numerical upper costs `415.273` and `581.594` at
+the two critical-line controls at `u=6`, before source corrections. Even
+replacing `5*n` by the actual finite numerical `abs(E(n))` leaves costs
+`1.331367` and `1.598365`. The signed prime-discrepancy contributions are
+about `0.512143` and `0.535095`, respectively; this channel cannot be
+treated as a small error in these controls.
+
+The 12 cases use `u=3,4,6`, the first two ordinates, and real parts
+`1/2,3/4`. Complete source and convolution reconstruction discrepancies
+are below `2.5e-14`; the prime-orbit and Abel reconstructions are below
+`2.5e-15`. Selected orbits are additionally checked by independent smooth
+divisor enumeration. Records are `/tmp/eta-gamma-prime-orbits.json`.
+Off-critical samples are nonzeros, so their smaller centered values give
+no evidence of an exclusion for a hypothetical zero. These are finite
+floating-point shadows, not interval certificates.
+
+This test does not rule out a signed prime-error approach. It does show
+that the tested small-prime grouping and the existing `5*n` envelope do
+not supply the missing estimate. Further work on this branch must control
+the full signed correlation of `E(n)` with the changes in `w_n`, together
+with `B` and all source corrections. Replacing this correlation by another
+pointwise absolute envelope is not supported by the tests. No root theorem
+or dashboard milestone was added for this numerical audit; its reproducible
+probe accompanies the gamma theorem checkpoint.
+
+#### Cumulative prime audit and existing library connections
+
+The [second Abel probe](../scripts/probe_eta_gamma_cumulative_prime.py)
+extends the preceding audit without changing its balanced coefficients,
+prime-power corrections, source terms, or finite exponential cutoff. Put
+`D(n)=sum_(j<=n) E(j)` and `delta w_n=w_n-w_(n+1)`. The complete signed
+prime-discrepancy term becomes
+
+```
+-E(V)*w_V + E(y)*w_(y+1)
+-D(V-1)*delta w_(V-1) + D(y)*delta w_(y+1)
+-sum_(y<n<V-1) D(n)*(delta w_n-delta w_(n+1)).
+```
+
+The continuous primitive in
+[`RiemannXiSuzukiPointwiseChebyshevCumulative`](../RiemannGaussian/RiemannXiSuzukiPointwiseChebyshevCumulative.lean)
+does not equal `D(n)`. The exact lattice correction is
+`D(n)=integral_1^(n+1) (psi(t)-t) dt+n/2`, checked independently against
+the triangular von Mangoldt sum. The existing continuous envelope therefore
+gives `abs(D(n)) <= (5/2)*((n+1)^2-1)+n/2`. Summing the available
+pointwise estimate instead gives `(5/2)*n*(n+1)`.
+
+At `u=6`, the critical-line controls give the following numerical upper
+comparisons. They include the signed baseline `B`, keep the original
+`E` endpoints signed for the second transform, and precede all source
+corrections. Even this favorable treatment does not make them sufficient.
+
+| Control | First Abel, measured `abs(E)` | Second Abel, measured `abs(D)` | Second Abel, summed `5*n` envelope |
+| --- | ---: | ---: | ---: |
+| First ordinate | `1.331367` | `6.638897` | `6704.057302` |
+| Second ordinate | `1.598365` | `15.852540` | `20952.819798` |
+
+The probe separately retains the first difference caused by smooth divisors
+leaving at the cutoff `d*n=V`, and the part from divisors present in both
+adjacent weights. In the first Abel comparison using `5*n`, the jump costs
+are `3.260034` and `12.448303`; the common-divisor costs are `406.507273`
+and `563.336913`. Thus clipping jumps are not the dominant loss in these
+tests. Smoothing just those jumps has no demonstrated route to a useful
+bound. All 12 second-transform absolute comparisons worsen; this does
+not rule out an estimate that retains the signed correlation.
+
+The full records are `/tmp/eta-gamma-cumulative-prime.json`; the portable
+script reproduces them with its default arguments. Its standalone CLI was
+also checked on both real parts at `u=3`, first ordinate, with exact JSON
+value agreement against the original run. The largest second Abel
+reconstruction discrepancy is below `2e-15`. As above, off-critical samples
+are nonzeros and floating-point identities are diagnostics, not proofs.
+
+A fetched branch review on 2026-09-08 found only `main`, `origin/main`, and
+`origin/copilot/analyse-mathematical-claims`. The latter points to
+`35b8c8fd50c88e5897a82c0cdb0c93538526ffb0` and is an ancestor of the
+checkpoint's parent `d0d07f3200fedc964fdfb56d564bce0918c3e69e`.
+There are 310 commits unique to that parent and zero unique to the other
+branch. No missing branch implementation was found. Relevant machinery
+already imported into the root library includes:
+
+| Existing module | Information retained | What an arithmetic application still needs |
+| --- | --- | --- |
+| [EtaPhaseProjectionMargin](../RiemannGaussian/EtaPhaseProjectionMargin.lean) | Actual eta-support phase projection and the proved zero-dependent edge margin | A bound for the surviving gamma rectangle; the existing strip margin does not imply it |
+| [EtaEnergyFiniteWindowReflectionCorrelation](../RiemannGaussian/EtaEnergyFiniteWindowReflectionCorrelation.lean) | Original and reflected complex correlations, self terms, and multiplicities | A useful estimate on the full correlated expression |
+| [EtaEnergyFiniteWindowHeatMatrix](../RiemannGaussian/EtaEnergyFiniteWindowHeatMatrix.lean) | The complete finite Gaussian matrix, including off-line real and imaginary terms | An independent arithmetic inequality; Gaussian positive semidefiniteness alone is insufficient |
+| [ProjectionHeatLeakage](../RiemannGaussian/Hybrid/ProjectionHeatLeakage.lean) | Exact `P H_u P H_v P = P H_(u+v) P - P H_u (1-P) H_v P` and the cross-time transition Gram | An embedding of the actual arithmetic direction with controlled leakage; cross-time sign is not automatic |
+| [EtaSupportGapHeatCommutator](../RiemannGaussian/Hybrid/EtaSupportGapHeatCommutator.lean) | Actual support/gap kernels and mixed phase inner products | A joint estimate using their phases; the individual norm forgets them |
+| [EtaCurrentFullHeatComparison](../RiemannGaussian/EtaCurrentFullHeatComparison.lean) | Full current equals support, gap, and nonpositive contributions, with integrability | An inequality for all signed companion terms together |
+| [EtaSignedHeatCertificate](../RiemannGaussian/Hybrid/EtaSignedHeatCertificate.lean) | Spectral signed heat of the actual finite zero matrix and its inertia | A new upper estimate; its existing count consequence does not improve the certificate |
+| [RiemannXiSuzukiGramSchur](../RiemannGaussian/RiemannXiSuzukiGramSchur.lean) | A precise implication from an absolute Gram-row premise to a Bessel bound | The Gram-row premise, which is an explicit unproved condition |
+
+The next research target remains the full arithmetic direction, with phases,
+cross terms, and all source corrections available. An independently proved
+signed upper bound below the source by more than the allowance at one
+admissible scale per hypothetical right-half zero would suffice. The branch
+review and these finite diagnostics add no Lean theorem or zero bound.

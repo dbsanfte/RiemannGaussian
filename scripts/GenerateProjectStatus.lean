@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "Positive gamma smoothing of the original selected completed Moebius carrier has norm at most C_rho A^(-3) D^(4-Re(rho)); on A=u^6 and D=u^5 the whole low family decays for Re(rho)>2/5, including critical-line zeros, while the independent full high-family upper bound remains open"
-    lineOne := "positive eta smoothing"
-    lineTwo := "low divisors decay"
+    label := "Completing the inner Moebius sum bounds the entire outer strip u^2<a<=u^3 with inner cutoff u^5 by C_rho u^(-6-3 Re(rho)) + 1024 norm(chi(rho)) u^18 exp(-u/4); the shorter smooth rectangle retains the original nonzero source with explicit vanishing costs, while its independent signed upper bound remains open"
+    lineOne := "signed outer strip"
+    lineTwo := "vanishing allowance"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.EtaGammaSmoothing.norm_tsum_gammaPhysicalWeight_moebiusSelected_le
+      ``RiemannGaussian.EtaGammaRectangular.norm_foldedOuterBand_sixth_le
   }
 ]
 
@@ -1291,9 +1291,30 @@ run_cmd do
           "including the critical line. The full signed high-divisor average is " ++
           "exactly the smoothed source minus that low family. Both source endpoints " ++
           "Q(1/A) and Q(2/A) are retained, with an explicit cubic correction. " ++
-          "An independent upper bound below the source at a hypothetical right-half " ++
-          "zero remains open. Low-family decay also holds on the critical line and " ++
-          "does not exclude any zero by itself. No new zero bound or RH proof follows. " ++
+          "The actual infinite damped Moebius divisor series is now proved absolutely " ++
+          "convergent and equal to that same original source. Beyond R>=2 A its entire " ++
+          "tail has norm at most 16 norm(chi(rho)) A R^(-Re(rho)) exp(-R/(2 A)). " ++
+          "At R=ceil(2 A (1+2 log A)), replacing the original high average by its " ++
+          "finite signed divisor band costs at most 16 norm(chi(rho))/A. On the " ++
+          "sixth/fifth-power schedule the band retains the source with three explicit " ++
+          "allowances: C_rho u^(2-5 Re(rho)), the outer-tail term of order u^(-6), " ++
+          "and the physical-source term of order u^(-18). The full smooth quadratic " ++
+          "and mixed rectangles retain both short contributions and an absolutely " ++
+          "convergent complementary cofactor with allowance 1024 norm(chi(rho)) " ++
+          "A^3 exp(-L V/(4 A)). Completing the inner Moebius sum bounds the whole " ++
+          "outer strip u^2<a<=u^3 at inner cutoff u^5 by C_rho u^(-6-3 Re(rho)) " ++
+          "+ 1024 norm(chi(rho)) u^18 exp(-u/4), which tends to zero. The shorter " ++
+          "rectangle a<=u^2, b<=u^5 retains the original source for Re(rho)>2/5. " ++
+          "An explicit alternative keeps the Mobius coefficients through L and " ++
+          "adds the constant -H_mu(L)/sum_(L<n<=2L)(1/n) on the next interval. " ++
+          "Its harmonic moment is exactly zero and its added constant has norm " ++
+          "at most four. It annihilates every reciprocal-product term C/(a b). " ++
+          "The entire balancing correction on the same schedule has norm at most " ++
+          "32 C_rho/u^10 + 4096 norm(chi(rho)) u^18 exp(-u/4), which tends to zero. " ++
+          "The balanced rectangle therefore retains the original source as well. " ++
+          "An independent signed upper bound below that source at a hypothetical " ++
+          "right-half zero remains open. The source limit holds on the critical line and " ++
+          "does not exclude any zero. No new zero bound or RH proof follows. " ++
           "The previous quartic first-mean and cubic mean-square routes remain separate."))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")

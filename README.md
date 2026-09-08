@@ -27,28 +27,31 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Use positive gamma smoothing to control the original low-divisor average through D=A^(5/6), then bound the remaining full signed high-divisor average below its source at a hypothetical right-half zero. Lean proves the low-family allowance C_rho*A^(-3)*D^(4-Re(rho)) and retains both source endpoints. The independent high-family estimate, the original weighted bound, and RH remain open.
+Prove one independent signed inequality below the source at each hypothetical zero right of 1/2. The smooth Möbius rectangle retains that source with explicit vanishing errors. An exact harmonic balancing rule now removes every reciprocal-product component while preserving the source limit. The remaining full signed sum must beat the source by more than all proved errors. This estimate and RH remain open.
 
 ## Latest Update
 
-Lean now verifies [positive gamma averaging of the original Möbius carrier](RiemannGaussian/EtaGammaPhysicalAverage.lean).
-The theorem `EtaGammaSmoothing.norm_tsum_gammaPhysicalWeight_moebiusSelected_le`
-bounds every selected low-divisor average by
-`C_rho*A^(-3)*D^(4-Re(rho))`. The averaging weights are nonnegative,
-have total mass one, and preserve the literal completed eta prefixes.
+Lean now verifies [explicit harmonically balanced outer coefficients](RiemannGaussian/EtaGammaBalancedOuter.lean).
+They equal `mu(n)` through `L`, take the constant value
+`-H_mu(L)/sum_(L<n≤2L)(1/n)` on the next interval, and vanish beyond `2L`.
+The theorem `EtaGammaBalancedOuter.reciprocalProduct_balancedOuter_eq_zero`
+proves that these actual coefficients cancel every matrix term `C/(a*b)`
+exactly. The added constant has a uniform bound of four.
 
-With `A=u^6` and `D=u^5`, the allowance is `C_rho*u^(2-5*Re(rho))`.
-The theorem `EtaGammaSmoothing.tsum_gammaPhysicalWeight_moebiusSelected_sixth_tendsto_zero`
-proves decay for `Re(rho)>2/5`, including critical-line zeros. This changes
-the averaging kernel; it does not extend the old sampling estimate.
+The theorem `EtaGammaBalancedOuter.norm_balancedRectangle_sixth_sub_original_le`
+bounds the whole change at `A=u^6`, `L=u^2`, `V=u^5` by
+`32*C_rho/u^10 + 4096*norm(chi(rho))*u^18*exp(-u/4)`.
+Both terms tend to zero. Consequently,
+`EtaGammaBalancedOuter.balancedRectangle_sixth_tendsto_source`
+retains the original source for `Re(rho)>2/5`, with no simplicity assumption.
 
-The full high-divisor average equals the exact smoothed source minus that
-low family. Both source endpoints at 1 and 2 are retained and their
-correction has an explicit cubic bound. **An independent upper bound
-for the full signed high-divisor average remains open.** This slice
-establishes no new zero bound or RH proof. The
-[assessment](docs/eta-hyperbola-endgame-assessment.md) records the formulas
-and the remaining obligation.
+**The independent signed upper bound remains unproved.** The
+[numerical probe](scripts/probe_eta_gamma_balanced_outer.py) confirms
+the exact coefficient rule and full source reconstruction, but its
+absolute-row comparisons do not improve. This removes one matrix component
+and gives no new zero bound or RH proof. The
+[assessment](docs/eta-hyperbola-endgame-assessment.md) records all costs
+and the remaining signed estimate.
 
 ## Notable Formalisations
 
