@@ -27,30 +27,30 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Attack the gamma quadratic through its exact gcd blocks and reflected partner, retaining complex phases and all cross terms. The complete large-gcd contribution is controlled right of one half, and the reflected common-gcd diagonal tail is controlled throughout the strip. The smaller-gcd core and unequal-gcd interactions still need an independent signed inequality that beats the source and all errors. RH remains open.
+Seek a uniform bound for signed weighted partial sums of the actual eta leading current, retaining signs and the summable principal-term error. The gamma audit proves local prime cancellation but also a completion boundary tending to twice the source. The next step is to formalize the signed divergence forced by an off-line zero, then attack its independent upper bound. RH remains open.
 
 ## Latest Update
 
-Lean now proves the [exact gcd decomposition and complete large-gcd bound](RiemannGaussian/EtaGammaQuadraticGcd.lean)
-for the original smooth Möbius quadratic. For `A>0`, `G≥1`,
-`sigma=Re(rho)>1/2`, and `G^2≥2A`, the full contribution with `gcd(a,b)>G` is at most
-`64*norm(chi(rho))*G^(1-2*sigma)/(2*sigma-1)`.
-On `A=u^8`, `U=u^5`, `G=2u^4`, it tends to zero. The
-[near-square source comparison](RiemannGaussian/EtaGammaNearSquare.lean)
-includes both short sums, the complete cofactor tail, and the physical endpoints.
+Lean now proves the [complete reduced-product formula](RiemannGaussian/EtaGammaReducedProduct.lean):
+the coefficient is `mu(n)*2^card(primeFactors(n))` for squarefree `n`
+coprime to `g`, and zero otherwise. After two zeta convolutions, its
+coefficient at `p^k` is exactly `1-k` whenever `p` is prime and does not
+divide `g`. The first-order prime term therefore cancels.
 
-The [reflected quadratic identity](RiemannGaussian/EtaGammaReflection.lean)
-retains every unequal-gcd interaction. Its common-gcd diagonal has the exact
-coefficient `mu(g)^2/g^2`; the complete diagonal tail is at most
-`4096*norm(chi(rho#))*norm(chi(rho))/G` throughout the strip for positive `A,B`, `G≥1`,
-`G^2≥2A` and `G^2≥2B`. This gives `O(u^-4)` on the same schedule.
-The full reduced cores and their completion phases remain in the identity.
+The [clipped coprime divisor coefficient](RiemannGaussian/EtaCoprimeRadicalCutoff.lean)
+also has an exact radical-sign formula and absolute value at most one
+through the product cutoff. Its [full gamma transport](RiemannGaussian/EtaGammaRadicalQuadratic.lean)
+includes every gcd tail, with allowance
+`32*norm(chi(rho))*A*U^2*exp(-U^2/(8*A))` for `A>0`, `U^2≥8*A`.
 
-**The smaller-gcd core still tends to the nonzero source.** Its independent
-signed bound, and control of the reflected unequal-gcd interactions, remain
-unproved. This slice establishes no new zero bound or RH proof. The
-[proof and obstruction ledger](docs/eta-gamma-gcd-reflection.md) records the
-exact identities, allowances, and next test.
+**The completion boundary does not disappear.** Lean proves the complete
+untruncated square tends to `-S_rho`, while the original clipped square
+tends to `S_rho`; their [exact coefficient boundary tends to `2*S_rho≠0`](RiemannGaussian/EtaGammaCompletionBoundary.lean).
+This rules out dismissing that boundary as a decaying error. The next
+primary target is a bound on the actual signed weighted current.
+Its independent upper estimate remains open; this slice proves no new
+zero exclusion or RH. The [ledger](docs/eta-gamma-radical-bulk.md) records
+the proofs, the remaining obligations, and the change of direction.
 
 ## Notable Formalisations
 

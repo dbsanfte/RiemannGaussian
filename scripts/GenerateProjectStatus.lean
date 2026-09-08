@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "At positive physical scales and G>=1, the exact gamma quadratic gcd decomposition has a complete large-gcd allowance 64 norm(chi) G^(1-2 sigma)/(2 sigma-1) for sigma>1/2 and G^2>=2 A; the actual reflected common-gcd diagonal tail is at most 4096 norm(chi(rho#)) norm(chi(rho))/G throughout the strip when G^2>=2 A and G^2>=2 B, while the smaller-gcd core, unequal-gcd interactions, independent signed upper bound, and RH remain open"
-    lineOne := "exact reflected gcd"
-    lineTwo := "diagonal tail <= C/G"
+    label := "The complete reduced coprime product coefficient is mu(n) times 2 to the number of distinct prime factors on squarefree integers coprime to g; after two actual zeta convolutions its coefficient at p^k is 1-k for primes p not dividing g, so the first-order prime term cancels; the full finite completion boundary still tends to twice the nonzero source and the independent signed upper bound remains open"
+    lineOne := "reduced prime powers"
+    lineTwo := "h(p^k) = 1-k"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.EtaGammaReflection.norm_gcdCrossDiagonalTail_le
+      ``RiemannGaussian.EtaGammaGcd.reducedZetaSquareCoefficient_prime_pow
   }
 ]
 
@@ -1281,28 +1281,28 @@ run_cmd do
       ("label", .str "Signed completed eta cancellation"),
       ("status", .str "open"),
       ("target", .str
-        ("Prove one independent signed inequality that beats the original completed " ++
-          "eta source, including all error allowances, at one admissible scale for " ++
-          "each hypothetical zero right of one half. The current gamma quadratic " ++
-          "has an absolutely convergent complete-row expansion and an exact gcd " ++
-          "partition retaining both divided cutoffs, all coprimality conditions, " ++
-          "and the complex factor mu(g)^2 g^(-2 rho). At positive physical scales, for sigma=Re(rho)>1/2, " ++
-          "G>=1, and G^2>=2 A, the entire large-gcd contribution is at most " ++
-          "64 norm(chi(rho)) G^(1-2 sigma)/(2 sigma-1). On A=u^8, U=u^5, " ++
-          "G=2 u^4 it tends to zero; the surviving smaller-gcd core still tends " ++
-          "to the original nonzero source. Both short sums, the complete omitted " ++
-          "cofactor, and the physical source endpoints have explicit allowances. " ++
-          "The conjugate-partner/original quadratic product retains every unequal-gcd " ++
-          "interaction. Its common-gcd diagonal has the exact coefficient mu(g)^2/g^2 " ++
-          "times the two full reduced cores. When G^2>=2 A and G^2>=2 B, the " ++
-          "complete reflected diagonal tail is at most 4096 norm(chi(rho#)) " ++
-          "norm(chi(rho))/G throughout the strip, giving O(u^-4) on the same " ++
-          "schedule. This does not bound the unequal-gcd interactions or establish " ++
-          "positivity of the complex reduced-core product. Source normalization " ++
-          "connects exactly to the existing Laplace reflection rigidity theorem, " ++
-          "but equality of normalized energies remains unproved. The independent " ++
-          "signed estimate for the smaller-gcd core and reflected cross terms " ++
-          "remains open. No new zero bound or RH proof follows."))
+        ("Prove an independent signed arithmetic inequality contradicting every " ++
+          "hypothetical zero right of one half, with all proved error allowances paid. " ++
+          "The primary target is now a uniform bound for the signed weighted partial " ++
+          "sums of the actual eta leading current. The existing principal-endpoint " ++
+          "formula and summable weighted principal error are to be used first to " ++
+          "formalize off-line one-sided divergence; that new signed-sum theorem and " ++
+          "the independent upper bound are not yet established. The Gamma audit " ++
+          "proves the complete reduced product coefficient mu(n)*2^card(primeFactors n) " ++
+          "on squarefree integers coprime to g, and zero otherwise. After two actual " ++
+          "zeta convolutions the coefficient at a nonexceptional p^k is 1-k, so the " ++
+          "first-order prime term cancels. Within each clipped gcd core the complete " ++
+          "coprime divisor coefficient is an exact eligible-radical sign of absolute " ++
+          "value at most one for 1<=n<=N^2. The finite radical expression approximates " ++
+          "the original full quadratic with allowance 32 norm(chi) A U^2 exp(-U^2/(8 A)) " ++
+          "for A>0 and U^2>=8 A, including all gcd tails. However, the complete " ++
+          "untruncated square equals the negative smoothed source, and its full " ++
+          "coefficient boundary with the original clipped square tends to 2*S_rho!=0 " ++
+          "on A=u^8, U=u^5. This rules out discarding that boundary as a decaying " ++
+          "error; it does not rule out every possible signed boundary argument. " ++
+          "Absolute Dirichlet summability of the prime-square correction for sigma>1/2 " ++
+          "is not established in this slice. All prior complex gcd and reflected " ++
+          "cross-term identities remain available. No new zero bound or RH proof follows."))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
   ]

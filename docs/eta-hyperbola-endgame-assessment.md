@@ -4380,3 +4380,76 @@ has `mu(d)^2/d`, not a signed `mu(d)/d`; harmonic Moebius cancellation
 cannot be substituted for that coefficient. The remaining test is a
 signed estimate on the retained small-gcd and off-diagonal objects,
 including every source allowance. No new zero exclusion is claimed.
+
+## Full-matrix audit and exact cancellation within each gcd
+
+The full reflected gcd matrix was tested after `8759725`, retaining its
+two complete block vectors and every source correction. At the first
+critical-zero ordinate with `u=4`, its normalized full product is about
+`0.9999505768`, with common-gcd diagonal `0.4924521005` and unequal-gcd
+part `0.5074984763`. Other tested ordinates give negative off-diagonal
+contributions. These are numerical diagnostics, not a universal sign
+theorem. Off-line samples are not zeta zeros; subtracting their eta value
+changes their sources and cannot be treated as a zero specialization.
+The matrix audit supplied no independent inequality beating the source.
+
+An attempted iteration of the existing four-translate approximation also
+fails its simplest numerical operator test. Its normalized residual
+multiplier is
+
+```
+E(s) = 1 - ((s-1)/s)*zeta(s)*P(s),
+P(s) = 1 - (1/2)*4^(-s) - (1/2)*2^(-s) + (1/2)*(3/4)^s.
+```
+
+At `s=1/2+15i`, `abs(E(s))` is approximately `1.4049814641`.
+Thus the proved one-target residual energy below `1/5` cannot simply be
+promoted to a repeatable multiplier contraction. This numerical audit is
+not a Lean theorem and does not rule out a different operator or signed
+estimate.
+
+The subsequent [radical bulk ledger](eta-gamma-radical-bulk.md) records a
+proved arithmetic input instead: exact cancellation among all coprime
+divisor pairs of each physical integer, separately for every gcd block.
+For `1<=n<=N^2`, the coefficient is the Moebius sign of the eligible
+radical, reversed above its radical cutoff, and its absolute value is at
+most one. The complete original quadratic is connected to the finite
+signed radical expression with an explicit bound for every omitted tail.
+
+This removes a multiplicity loss before mixing the gcd channels. At the
+aggregate level the pre-existing global Moebius identity already permits
+a scalar reduction, so this is not a new global cancellation rate. The
+remaining signed physical sum still needs an independent source-beating
+estimate; generic norm bounds or positivity of squared coefficients do
+not supply it.
+
+## Reduced-product steer and completion-boundary decision
+
+The new reduced-product steer is now tested by finite Lean arithmetic.
+`EtaGammaGcd.reducedProductCoefficient_eq` gives the complete coefficient
+`mu(n)*2^card(primeFactors(n))` on squarefree integers coprime to `g`,
+and zero otherwise. Its actual two-zeta convolution has coefficient
+`1-k` at `p^k` when `p` is prime and does not divide `g`. In particular,
+`reducedZetaSquareCoefficient_prime` proves the desired first-order prime
+cancellation. No infinite Euler-product or half-plane summability claim
+is needed for these finite identities.
+
+The full rectangular completion was checked separately against the
+original source. `completeQuadratic_eq_neg_source` evaluates the complete
+untruncated cofactor `zeta*mu^2` with the actual gamma carrier.
+`completionBoundary_eq_sub` identifies its coefficientwise difference
+from the actual clipped square, with both complete series convergent.
+On `A=u^8`, `U=u^5`, `completionBoundary_eighth_tendsto_two_source`
+proves that difference tends to `2*S_rho`, and
+`completionBoundary_eighth_not_tendsto_zero` rules out a decaying boundary.
+This is a statement about the full boundary after aggregation, not a
+limit for each individual gcd boundary.
+
+Local prime cancellation is real, but completing the core and discarding
+the finite boundary therefore does not close the inequality. Further
+Gamma/gcd layers are no longer the primary attack. The next primary
+target follows the memo: signed weighted partial sums of the actual
+leading current, with off-line principal sign and the summable weighted
+error retained. Their one-sided divergence is to be formalized next;
+the independent uniform upper bound remains open. This decision does not
+assert that no more informative Gamma-boundary estimate can ever work.

@@ -13,11 +13,32 @@ more than the complete error allowance at one admissible scale for that
 zero. A fixed positive saving at arbitrarily large scales is a convenient
 rate-free route; even a shrinking saving suffices if it exceeds the
 allowance. Full decay of the band, a bound for its norm or positive spectral
-part, and uniformity in the zero are not requirements. The gamma band is
+part, and uniformity in the zero are not requirements. The gamma band was
 the first candidate because its source and all discarded ranges are
 already controlled. Its independent signed estimate remains open.
 
-The current branch follows the user's gamma-reflection steering memo:
+The user's subsequent `RiemannGaussian_reduced_product_or_signed_current_steer.md`
+sets a stopping criterion for more Gamma/gcd layers. The current slice
+confirms both the complete reduced-product formula and exact cancellation
+of its nonexceptional prime coefficient after two zeta convolutions.
+It also proves `EtaGammaQuadratic.completionBoundary_eighth_tendsto_two_source`
+and `completionBoundary_eighth_not_tendsto_zero`: the full coefficient
+boundary between the actual clipped square and the complete multiplicative
+square tends to `2*S_rho`, with `S_rho!=0`.
+
+The primary attack therefore moves to the memo's signed weighted partial
+sums of the actual leading current. First formalize the off-line
+one-sided divergence using `pairedEtaCurrentPrincipalEndpoint_eq_dominant_factor`
+and the already summable weighted principal error; then seek an independent
+uniform bound for those signed partial sums. This is an intended next
+theorem and open arithmetic target, not an achieved bound or RH proof.
+The complete and clipped Gamma objects, signs, and allowances remain
+available. The coefficient audit does not establish absolute Dirichlet
+summability of the prime-square correction for `sigma>1/2`, nor prove
+that every possible signed Gamma-boundary argument must fail. It does
+rule out treating the full completion boundary as a negligible error.
+
+The preceding Gamma branch followed the user's gamma-reflection steering memo:
 the full square on `A=u^8`, `U=u^5` is decomposed by its exact gcd before
 combining the conjugate-partner and original channels. The
 [gcd and reflection ledger](eta-gamma-gcd-reflection.md) records the
@@ -30,6 +51,20 @@ physical thresholds are met. Every unequal-gcd interaction remains in
 the exact reflected product. The smaller-gcd core still tends to the
 nonzero source; neither it nor the reflected off-diagonal has the needed
 independent signed saving. No new zero bound or RH proof follows.
+
+The [coprime radical slice](eta-gamma-radical-bulk.md) evaluates the
+divisor coefficient separately inside each gcd block. The compiled
+`EtaCoprimeRadical.coefficient_square_eq_signed_radical` gives the exact
+eligible-radical sign and its cutoff reversal through `n=N^2`, and
+`abs_coefficient_le_one` removes the divisor-multiplicity cost there.
+`EtaGammaGcd.norm_smoothQuadratic_sub_radicalQuadratic_le` transports this
+to the original full quadratic with all gcd tails bounded by
+`32*norm(chi)*A*U^2*exp(-U^2/(8*A))`, for `A>0`, `U^2>=8A`.
+This preserves the gcd channels before any reflected comparison. The
+global Moebius identity already supplies a scalar reduction after those
+channels are recombined; the new bound does not improve the global
+cancellation rate. The signed estimate across the surviving physical
+integers remains open on that branch.
 
 An earlier alternative carrier is the full smooth rectangle in
 [EtaGammaRectangular](../RiemannGaussian/EtaGammaRectangular.lean).

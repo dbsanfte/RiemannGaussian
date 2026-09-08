@@ -856,3 +856,8 @@ import RiemannGaussian.EtaGammaQuadraticExpansion
 import RiemannGaussian.EtaGammaQuadraticGcd
 import RiemannGaussian.EtaGammaNearSquare
 import RiemannGaussian.EtaGammaReflection
+import RiemannGaussian.EtaCoprimeRadicalCutoff
+import RiemannGaussian.EtaGammaRadicalBulk
+import RiemannGaussian.EtaGammaRadicalQuadratic
+import RiemannGaussian.EtaGammaReducedProduct
+import RiemannGaussian.EtaGammaCompletionBoundary
