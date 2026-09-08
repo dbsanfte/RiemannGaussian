@@ -27,29 +27,26 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek a relative vanishing upper factor for the complete signed reflected eta-energy sum. Lean transports the current's off-line power lower bound to this unweighted sum with finite error. Complete product cuts retain the entire energy, so shrinking that range gives no saving. A successful estimate must control the reflected comparison with all mixed terms present. The arithmetic bound and RH remain open.
+Seek a relative vanishing upper factor for the complete signed reflected eta-energy sum. Lean transports the current's off-line power lower bound to this unweighted sum with finite error. An outer-divisibility cut now has weighted coefficient energy exactly q+3, independent of the larger cutoff. Its full reflected quadratic still retains the source contribution. The arithmetic bound and RH remain open.
 
 ## Latest Update
 
-Lean now transports the actual signed current to the
-[complete inverse-energy sum](RiemannGaussian/EtaLeadingFluxSignedInversePartialSum.lean)
-with a convergent signed correction and a fixed finite budget. The
-[quantitative normalization](RiemannGaussian/EtaCurrentOddWeightStepAsymptotic.lean)
-proves `|(2*N+1)*Delta_(N+1)-2| <= 4/(N+1)` and pays its entire
-energy-weighted error by a summable envelope. Thus `W(K)=4*S(K)+O_rho(1)`,
-where `S` is the unweighted difference of the full reflected energies.
-At an off-line zero, `side*S(K) >= (c_rho/8)*(K+1)^e` eventually,
-with `e=|2*Re(rho)-1|>0` and `c_rho>0`.
+Lean now proves a [sparse signed fibre bound](RiemannGaussian/EtaInverseDivisibilityFibres.lean)
+for an actual cut through the inverse product fibres. Selecting outer
+divisors divisible by `q` leaves just coefficient `1` at product `q`.
+The full moving complement has coefficients `+1` at product `1` and
+`-1` at product `q`. For `2<=q<=T`, its entire weighted coefficient
+energy is exactly `sum_(n<=T) (n+1)*c(n)^2 = q+3`, independent of `T`.
 
-The [product-cut audit](RiemannGaussian/EtaInverseProductShellCollapse.lean)
-also proves that every positive complete low-product cutoff already
-equals the full physical inverse; its high-product complement is exactly
-zero. Even arbitrary complex product weights preserve the full prefix
-times their value at one. This rules out treating that selected region
-as a smaller target. The independent relative upper saving remains open;
-no new zero exclusion or RH proof follows. The
-[ledger](docs/eta-signed-inverse-energy.md) records the estimates and the
-corrections to the proposed block strategy.
+The same module identifies the actual selected moment with its
+product-`q` atom and the complement with the difference of the two atoms.
+The full signed current retains both reflected coefficients, both
+diagonal energies, and every mixed interaction. This removes the generic
+area cost for this coefficient family; it does not bound the full current
+by a relative vanishing factor. The source contribution remains, and no
+new zero exclusion or RH proof follows. The
+[ledger](docs/eta-inverse-divisibility-fibres.md) records the exact formulas
+and the remaining diagonal/Hilbert bridge.
 
 ## Notable Formalisations
 

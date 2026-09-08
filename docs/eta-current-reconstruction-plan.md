@@ -68,6 +68,21 @@ The existing rectangle/region bounds also supply no relative saving by
 direct substitution: their product budget multiplies the same `A^e`
 block scale. A new estimate for the full signed correlation remains open.
 
+The local-gap/signed-fibre steer then motivates an actual cut through the
+product fibres. The [outer-divisibility slice](eta-inverse-divisibility-fibres.md)
+proves exact coefficient anti-correlation with every selected region's
+complement. For the region with outer divisor divisible by `q`, the only
+coefficient is at product `q`; its complement has coefficients `delta_1-delta_q`.
+For `2<=q<=T`, the complete weighted coefficient energy is exactly `q+3`,
+independent of `T`. The selected and complementary moment carriers are
+the literal product-q atom and the difference of the product-one and
+product-q atoms, with physical cutoffs and centers unchanged. The actual
+reflected current has an exact two-atom split retaining all mixed terms.
+This supplies a sharper weighted coefficient estimate for one actual
+family, but the full quadratic still retains its source contribution.
+An off-diagonal Hilbert estimate alone does not bound that diagonal term;
+the independent relative upper saving remains open.
+
 The preceding Gamma branch followed the user's gamma-reflection steering memo:
 the full square on `A=u^8`, `U=u^5` is decomposed by its exact gcd before
 combining the conjugate-partner and original channels. The

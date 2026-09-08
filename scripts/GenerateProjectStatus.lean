@@ -1298,6 +1298,16 @@ run_cmd do
           "value at one. These identities hold before norms, with original centers, " ++
           "cutoffs and all moment orders retained. Shrinking the complete product " ++
           "range therefore does not reduce the arithmetic target. " ++
+          "A separate cut by divisibility of the outer factor now has exactly " ++
+          "one nonzero product coefficient, at q. Its full moving complement " ++
+          "has coefficients delta_1-delta_q and exact weighted coefficient " ++
+          "energy sum_(n<=T)(n+1)*c(n)^2=q+3 for 2<=q<=T, independent of T. " ++
+          "The selected and complementary moment carriers are the product-q " ++
+          "atom and the difference of the product-one and product-q atoms. " ++
+          "The exact current split keeps both reflected coefficients and all " ++
+          "mixed interactions. This removes the generic coefficient area cost " ++
+          "for that family, but does not supply a relative saving for the full " ++
+          "signed current or control its surviving diagonal through Hilbert. " ++
           "The signed current now has the proved lower bound side*W(K)>=c_rho*(K+1)^e-B_rho " ++
           "for e=abs(2*Re(rho)-1)>0, c_rho>0, and a finite allowance paying the principal " ++
           "error and initial cutoffs. Its cancellation deficit is summable, so cutoff " ++

@@ -866,3 +866,4 @@ import RiemannGaussian.EtaLeadingFluxSignedAbel
 import RiemannGaussian.EtaLeadingFluxSignedInversePartialSum
 import RiemannGaussian.EtaInverseProductShellCollapse
 import RiemannGaussian.EtaCurrentOddWeightStepAsymptotic
+import RiemannGaussian.EtaInverseDivisibilityFibres
