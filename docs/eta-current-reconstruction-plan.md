@@ -6,6 +6,17 @@ estimate**. The objective remains active until both parts are proved and
 verified. The completed [signed endpoint package](eta-signed-endpoint-theorem-plan.md)
 provides the actual support, gap, phase, Gaussian, and mixed-matrix inputs.
 
+The [signed Suzuki time-heat bridge](suzuki-time-heat.md) now identifies
+the literal causal Gaussian average with the complete complex Laplace
+contour. Its full-line affine-centered Legendre completion has one
+nonnegative boundary term, bounded by `4 exp(-a^2/(4 tau))` at nonnegative
+centers. `tendsto_suzukiTimeHeatBoundary_zero_of_sublinear` proves its
+decay for every eventually positive sublinear width schedule.
+`tendsto_log_norm_suzukiTimeHeatZeroSource_div_time` preserves each zero's
+exponential source rate for all such schedules. Neither theorem bounds
+the complete signed prime response or supplies controlled recovery times.
+The independent arithmetic floor and the full goal remain open.
+
 The [general subexponential compensator](suzuki-subexponential-compensator.md)
 now relaxes the full-cutoff arithmetic target. The compiled theorem
 `riemannHypothesis_of_suzukiMassLegendrePotential_eventually_subpolynomial_lower_bound`

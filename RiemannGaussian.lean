@@ -945,3 +945,6 @@ import RiemannGaussian.SuzukiDivisorQuotientOptimizer
 import RiemannGaussian.SuzukiBalancedCells
 import RiemannGaussian.SuzukiLaplaceCompensator
 import RiemannGaussian.SuzukiSubexponentialWork
+import RiemannGaussian.GaussianLaplaceHeat
+import RiemannGaussian.SuzukiTimeHeat
+import RiemannGaussian.SuzukiTimeHeatBoundary

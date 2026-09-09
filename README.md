@@ -27,22 +27,22 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek a one-sided subpolynomial bound for the exact Suzuki arithmetic optimum. The general Landau compensator now permits an eventual allowance C(ε)N^ε for every ε>0 over all cutoffs. Exact quotient coefficients already attain the unrestricted optimum, so coefficient searches are unnecessary. A constant floor restricted to mass-balanced cells remains an alternative. Neither arithmetic bound is proved; the existing o(sqrt(N)) estimate is weaker.
+Seek a one-sided subpolynomial floor for the exact Suzuki arithmetic optimum over all cutoffs. Use the signed time-heat identity while retaining the full complex response. Sublinear heat widths preserve each zero's source exponent, and the support-completion boundary decays exponentially. The independent arithmetic bound and controlled localization to balanced cells remain open; coefficient searches are unnecessary.
 
 ## Latest Update
 
-Lean now proves the [general subexponential compensator argument](RiemannGaussian/SuzukiLaplaceCompensator.lean).
-Any nonnegative locally integrable compensator with subexponential growth
-has a genuinely convergent Laplace response at every positive damping.
-Subtracting it preserves the hypothetical zero's pole and multiplicity.
+Lean now proves an [exact Gaussian time-heat formula](RiemannGaussian/SuzukiTimeHeat.lean)
+for the actual signed Suzuki signal and its complete complex Laplace response.
+Convergence and the time–frequency integral exchange are discharged.
+The [support-completion boundary](RiemannGaussian/SuzukiTimeHeatBoundary.lean)
+is nonnegative and at most `4 exp(-a^2/(4 tau))` for `a >= 0`.
 
-The [arithmetic transfer](RiemannGaussian/SuzukiSubexponentialWork.lean)
-therefore permits an eventual lower allowance `C(ε)N^ε` for the exact
-potential, for every `ε>0`. Constants and starting cutoffs may depend on
-the exponent. A right-half zero would instead force negative excursions
-of some positive power size. The required one-sided arithmetic bound
-remains open; this criterion gives no new unconditional zero bound.
-See the [precise scope and remaining target](docs/suzuki-subexponential-compensator.md).
+Every eventually positive sublinear width schedule makes that boundary
+vanish while preserving each zero residue's exponential rate. Linear
+widths can suppress the source itself. These are exact identities and a
+boundary estimate; the surviving signed arithmetic bound is still open,
+and no new unconditional zero bound follows.
+See the [normalizations, width conditions, and remaining gap](docs/suzuki-time-heat.md).
 
 ## Notable Formalisations
 
