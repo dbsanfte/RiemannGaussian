@@ -27,22 +27,26 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek a one-sided subpolynomial floor for the exact Suzuki arithmetic optimum over all cutoffs. Use the signed time-heat identity while retaining the full complex response. Sublinear heat widths preserve each zero's source exponent, and the support-completion boundary decays exponentially. The independent arithmetic bound and controlled localization to balanced cells remain open; coefficient searches are unnecessary.
+Seek an independent subpolynomial floor for the exact Suzuki arithmetic optimum. Positive delay averages now force the actual signal to recover within a fixed multiple of every sufficiently large time. Use that estimate to localize deep excursions to balanced cells, retaining signed prime interactions. The depth bound remains open; coefficient searches are unnecessary.
 
 ## Latest Update
 
-Lean now proves an [exact Gaussian time-heat formula](RiemannGaussian/SuzukiTimeHeat.lean)
-for the actual signed Suzuki signal and its complete complex Laplace response.
-Convergence and the time–frequency integral exchange are discharged.
-The [support-completion boundary](RiemannGaussian/SuzukiTimeHeatBoundary.lean)
-is nonnegative and at most `4 exp(-a^2/(4 tau))` for `a >= 0`.
+Lean now proves [controlled recovery for the actual Suzuki signal](RiemannGaussian/SuzukiControlledRecovery.lean):
+after every sufficiently large time `a`, the unaveraged signal is positive
+somewhere in `[a, 4096*a]`. The exact Legendre signal therefore recovers
+above an explicit linear threshold within the same interval. No RH or
+arithmetic floor is assumed.
 
-Every eventually positive sublinear width schedule makes that boundary
-vanish while preserving each zero residue's exponential rate. Linear
-widths can suppress the source itself. These are exact identities and a
-boundary estimate; the surviving signed arithmetic bound is still open,
-and no new unconditional zero bound follows.
-See the [normalizations, width conditions, and remaining gap](docs/suzuki-time-heat.md).
+The proof combines [positive delay cancellation](RiemannGaussian/PositiveDelayAveraging.lean),
+the genuine finite zero decomposition, and an independent
+[factorial-kernel tail estimate](RiemannGaussian/GammaMomentRecovery.lean).
+For every finite delay family covering the required zero window, its
+[signed arithmetic moments](RiemannGaussian/SuzukiPositiveDelayMoments.lean)
+equal a fixed positive linear term plus a uniformly bounded error.
+The next step is to use the controlled recovery times to localize deep
+excursions to balanced cells. Their depth still needs an independent
+arithmetic bound; no new zero exclusion follows.
+See the [exact theorem chain and remaining gap](docs/suzuki-controlled-recovery.md).
 
 ## Notable Formalisations
 
@@ -51,6 +55,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
+| **Controlled arithmetic recovery from positive delays** | Every sufficiently late interval `[a,4096*a]` contains a positive value of the actual Suzuki signal. Finite positive delay averages cancel prescribed nonreal modes exactly; the genuine filtered arithmetic moments retain a universal linear coefficient with bounded error. Recovery times are controlled, while negative excursion depths remain open. | [controlled recovery](RiemannGaussian/SuzukiControlledRecovery.lean), [exact delay transform](RiemannGaussian/PositiveDelayAveraging.lean), [signed moment bound](RiemannGaussian/SuzukiPositiveDelayMoments.lean), [independent tail estimate](RiemannGaussian/GammaMomentRecovery.lean) |
 | **Exact phase optimisation and arithmetic floors** | A unique maximiser for the specified shift and linear cost, among all feasible finite or infinite integer-frequency families. Exactly eight nonconstant frequencies occur. Its four contact cosines avoid their doubled images. Weighted prime-power returns give a uniform arithmetic floor `1/120` for `1 < sigma <= 5/4` and an explicit reserve in actual zero exclusion. | [existsUnique_phaseContactOptimizer](RiemannGaussian/ZetaPhaseExactOptimizer.lean), [phaseContactExact_doubled_contact_gap](RiemannGaussian/ZetaPhaseContactDoubling.lean), [phaseContactExact_arithmetic_floor](RiemannGaussian/ZetaPhaseWeightedRecurrence.lean), [phaseContactExact_weighted_exclusion](RiemannGaussian/ZetaPhaseWeightedRecurrence.lean) |
 | **Literal signed prime detection of hypothetical zeros** | An exact local-divisor polynomial isolates each right-half zero's negative multiplicity in a finite ordinary-prime band. Proper prime powers, both arithmetic tails, and the complete analytic remainder are negligible. The independent lower bound for the retained signed band remains open. | [tendsto_zetaRightHalfOrdinaryPrimeBandFilter_re](RiemannGaussian/ZetaPrimeMomentBand.lean), [tendsto_zetaRightHalfPrimeBandChebyshevIntegral_re](RiemannGaussian/ZetaPrimeBandChebyshev.lean) |
 | **Prime Gram rank and quadratic source separation** | Actual complex prime Gram matrices retain full finite rank after every finite prefix. A separate quadratic identity has independently negligible mixed and same-prime terms, leaving its nonzero zero-source on distinct-prime products. | [zetaPrimeGram_sub_prefix_rank](RiemannGaussian/ZetaPrimeGram.lean), [exists_zetaPrimeMixedProductMoment_decay_bound](RiemannGaussian/ZetaPrimeQuadraticMoments.lean), [tendsto_zetaDistinctPrimePair_source](RiemannGaussian/ZetaPrimePairDiagonal.lean) |

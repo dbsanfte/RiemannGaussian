@@ -101,6 +101,9 @@ The time-heat identity can now be used without a missing support correction
 or an untracked loss in an individual zero's source exponent. The central
 open problem is still an independent bound for the complete signed
 arithmetic response, strong enough to yield the unsmoothed potential's
-subpolynomial lower allowance. In particular, a growing allowance on only
-balanced cells still needs controlled localization of excursions and
-recovery times. The existing `o(sqrt(N))` estimate does not close this gap.
+subpolynomial lower allowance. The subsequent
+[positive-delay recovery theorem](suzuki-controlled-recovery.md) now
+controls recovery times independently. Passing from those endpoints to a
+subpolynomial allowance on balanced minima remains a separate step, as
+does the independent arithmetic depth bound. The existing `o(sqrt(N))`
+estimate does not close this gap.
