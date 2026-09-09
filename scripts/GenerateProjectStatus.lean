@@ -115,6 +115,14 @@ private def milestones : Array Milestone := #[
     role := "unconditional"
     theoremName :=
       ``RiemannGaussian.phaseContactExact_binomial_scaled_arithmetic_floor
+  },
+  {
+    label := "The actual infinite eta curvature has Gaussian integral norm at most 2*sqrt(pi/tau)*exp(-(log 2)^2/(8*tau)), uniformly over all positive vertical lines and centers for 0 < tau <= log(2)/32; the complete normalized reflection-source inequality remains open"
+    lineOne := "eta curvature heat bound"
+    lineTwo := "uniform in line + center"
+    role := "unconditional"
+    theoremName :=
+      ``RiemannGaussian.norm_integral_pairedEta_curvature_gaussian_le
   }
 ]
 
@@ -129,7 +137,8 @@ private def milestonePoints : Array Point := #[
   { x := 500, y := 150 },
   { x := 20, y := 229 },
   { x := 180, y := 229 },
-  { x := 340, y := 229 }
+  { x := 340, y := 229 },
+  { x := 500, y := 229 }
 ]
 
 private def projectPrefix : Name := `RiemannGaussian
@@ -230,15 +239,15 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     nodes ++
     "  <g class=\"open\">\n" ++
     "    <rect x=\"690\" y=\"108\" width=\"150\" height=\"62\" rx=\"10\"/>\n" ++
-    "    <text x=\"765\" y=\"133\">Suzuki potential</text>\n" ++
-    "    <text x=\"765\" y=\"153\">subpower bound OPEN</text>\n" ++
+    "    <text x=\"765\" y=\"133\">Signed Suzuki source</text>\n" ++
+    "    <text x=\"765\" y=\"153\">ceiling OPEN</text>\n" ++
     "  </g>\n" ++
     "  <g class=\"goal\">\n" ++
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">Across all cutoffs, C(epsilon)N^epsilon allowances suffice for every epsilon&gt;0. " ++
-      "The one-sided arithmetic bound remains unproved.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">All poles and both strip sides are retained. The independent source ceiling remains unproved; " ++
+      "the remaining pole, energy and favorable remainder terms must stay coupled.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -384,8 +393,102 @@ run_cmd do
       "finite arithmetic contours recover the full complex weighted xi source and " ++
       "carrier-pole sum, including all higher orders. Subtracting the exact xi source " ++
       "gives signed upper bounds for complete fixed pole groups with arbitrarily " ++
-      "small positive errors. No bound at the source threshold, uniform estimate for " ++
-      "expanding contours, or joint pole/strip ceiling is claimed. " ++
+      "small positive errors. The same completion and finite coefficients now work in " ++
+      "the positive half-plane away from one and the dyadic factor zeros. Their " ++
+      "spectral exceptions are countable on height one half; compatible vertical " ++
+      "sides and arbitrarily large rectangles are constructed. Both complete strip " ++
+      "segments have their arithmetic limits, including the endpoints. A positive " ++
+      "bottom lift preserves every genuine carrier pole in the real-bottom rectangle. " ++
+      "One bottom recovers the full complex joint correction for every finite weight " ++
+      "family, with the lifted contour's exact xi source subtracted. Along constructed " ++
+      "expanding contours, growing common eta truncations recover the actual signed " ++
+      "reflection correction with error below 1/(n+1). This is an adapted diagonal " ++
+      "approximation, not a uniform estimate for independent contour and truncation " ++
+      "sizes. Actual expanding contours can now have negative dyadic cosines on both " ++
+      "vertical sides. The completion factor stays uniformly nonzero; on each complete " ++
+      "strip segment, minus its logarithmic derivative has real part between log(2)/2 " ++
+      "and 2*log(2)/3. Every complex weighted finite carrier has a centered dyadic error " ++
+      "bounded by log(2)/2 times the weight norm and its own quadratic energy. The signed " ++
+      "eta/derivative interaction and true denominator remain intact. " ++
+      "These phase choices preserve the complete source-plus-energy recovery limit. " ++
+      "Every selected truncation has proved nonzero denominators on all observation " ++
+      "paths, with genuine weighted path integrability for each regular truncation. " ++
+      "Completing a complex square now gives an independent one-sided bound for the " ++
+      "signed eta remainder without denominator separation. Matching opposite sine " ++
+      "quadrants to the actual side orientations bounds its integrated negative part " ++
+      "by 512*Im(alpha)^2/(log(2)*R^4), uniformly in regular truncations. This part " ++
+      "tends to zero along constructed expanding contours. The exact joint correction " ++
+      "retains the complete pole term plus nonnegative strip energy minus the signed " ++
+      "remainder. Removing only the vanishing adverse part keeps the favorable " ++
+      "remainder coupled and preserves the original source-plus-energy limit. " ++
+      "Clearing the full eta denominator now gives an analytic expression with " ++
+      "quadratic local height growth and a fixed safe-center floor. Its exact " ++
+      "multiplicity is the genuine denominator order plus two at each dyadic " ++
+      "exception. Moving-disk Jensen bounds actual genuine carrier-pole multiplicity " ++
+      "in each fixed strip window by log(C*(abs(T)+4)^2)/log(18/17), on both sides. " ++
+      "This controls local counts, not the signed weighted residues or strip energy. " ++
+      "For every positive arithmetic height at least two, the full cleared denominator " ++
+      "now has a canonical analytic unit with a polynomial upper bound and fixed " ++
+      "center floor. Its normalized complex logarithm and logarithmic derivative are " ++
+      "bounded by logarithmic height on the unit disk, with an explicit positive " ++
+      "lower bound for the unit. An exact carrier identity retains the literal eta " ++
+      "numerator, full pole product and analytic phase. Admissible left strip segments " ++
+      "satisfy its regularity conditions through both endpoints. The separate absolute " ++
+      "envelope has a large polynomial cost and does not control the signed pole product. " ++
+      "The full complex parameter circle is now evaluated exactly, with genuine trace " ++
+      "integrability away from its explicit denominator-zero threshold. It preserves " ++
+      "the local source coefficient at every xi zero and gives a bounded projection " ++
+      "of the original carrier. Both projected strip integrals are integrable through " ++
+      "all cutoff crossings and have combined bound 64*Im(alpha)^2/(r*R^4). The " ++
+      "complete original correction differs by at most this amount from every " ++
+      "genuine pole residue coupled to both signed large-value strip integrals. " ++
+      "No global holomorphy of the cutoff or bound for that retained expression is claimed. " ++
+      "The actual entire numerator and denominator now define a globally real-smooth " ++
+      "carrier bounded by 1/(2*r), with a continuous exact Wronskian area source through " ++
+      "all genuine poles and common zeros. For fixed positive smoothing radius and heat " ++
+      "time, both signed Gaussian area terms together are bounded by " ++
+      "4*R^2/r*exp(-tau*R^2/4) and their exhausting rectangle integrals tend to zero. " ++
+      "The original reflection weight still has shrinking-circle source -2*pi*i/m, " ++
+      "also with the moving Gaussian evaluated at the node. Its weighted density " ++
+      "retains the complete bulk. Geometric excision now evaluates the actual four-rectangle " ++
+      "improper area as the outer boundary plus 2*pi*i*B(beta)/m. The full weighted " ++
+      "outer boundary has a Gaussian decay bound and tends to zero, so the iterated " ++
+      "area limit is exactly that source, with strictly positive imaginary part at " ++
+      "a hypothetical right-half zero. An independent signed upper bound below this " ++
+      "source is open; one fixed positive smoothing radius would suffice. " ++
+      "The same full signed density now has an exact eta expression on the complete " ++
+      "completion domain, including genuine carrier poles and common xi zeros. The " ++
+      "common completion factor cancels; its first logarithmic correction cancels " ++
+      "from the Wronskian, leaving eta'^2-eta*eta''-Q'*eta^2 with full complex phase. " ++
+      "The correction Q remains in the denominator. Literal finite eta prefixes " ++
+      "recover both signed density terms pointwise through every genuine upper " ++
+      "carrier pole of arbitrary order. Polynomial curvature convergence includes " ++
+      "common zeros, while quotient convergence excludes common numerator/denominator " ++
+      "zeros. No finite-sum/area/puncture limit exchange or contradictory bound is proved. " ++
+      "The bare eta curvature now has an exact bilinear logarithmic-gap expansion, " ++
+      "with parity signs and integer-product phases retained. Gaussian averaging has " ++
+      "a cutoff-independent bound for all finite complex coefficient families bounded " ++
+      "by one. Cauchy derivative estimates supply a polynomial dominator, so the " ++
+      "Gaussian integral of the actual infinite eta curvature has norm at most " ++
+      "2*sqrt(pi/tau)*exp(-(log 2)^2/(8*tau)) for 0 < tau <= log(2)/32, " ++
+      "uniformly over every positive vertical line and every center. Its averages " ++
+      "vanish even along arbitrary moving positive lines and centers. This justified " ++
+      "prefix/Gaussian integral exchange concerns bare curvature only. The completion " ++
+      "curvature, variable smoothing denominator, reflection weight and companion " ++
+      "Gaussian term remain coupled in the open source inequality. " ++
+      "An exact weighted-current identity now retains the full normalization " ++
+      "derivative, complex phase and completion curvature. Its pointwise signed " ++
+      "upper expression applies to the actual reflection density through genuine " ++
+      "upper carrier poles, with all eta conditions discharged. At each such pole " ++
+      "the normalization derivative cancels the entire signed quadratic interaction. " ++
+      "The full source also equals 2*i*r^2*(S*U'-U*S') along arithmetic vertical " ++
+      "lines on the completion domain away from common zeros. Here S is the actual " ++
+      "smooth carrier, 0 <= U <= 1/r^2 and normSq(S)=U-r^2*U^2. The companion " ++
+      "heat term is retained. These are exact pointwise identities and value bounds; " ++
+      "no bound for their global coupled variation or new area-limit exchange is proved. " ++
+      "Removing smoothing is singular at genuine carrier poles, where the exact " ++
+      "source is -2/r^2*conj(E'/A). No area or pole-sum limit interchange is asserted. " ++
+      "The independent source ceiling is still open; no zero exclusion follows. " ++
       "The preceding contact-doubling theorem explains why an angle and its double " ++
       "cannot both be contacts. Actual prime Gram " ++
       "matrices have full finite rank after every finite prime prefix. Every hypothetical " ++
@@ -490,12 +593,31 @@ run_cmd do
     ]),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
-      ("label", .str "One-sided subpolynomial Suzuki bound"),
+      ("label", .str "Independent signed Suzuki source ceiling"),
       ("status", .str "open"),
       ("target", .str
         ("For every hypothetical zero right of one half, prove an independent signed inequality " ++
-        "beating its source after the proved error allowances. The active arithmetic route is " ++
-        "a one-sided subpolynomial lower allowance for the exact Suzuki mass-moment " ++
+        "beating its source after the proved error allowances. The active smooth-area " ++
+        "target is an independent signed upper bound below the positive imaginary source " ++
+        "of the complete Gaussian reflection area. Geometric excision and outer-boundary " ++
+        "decay prove its iterated limit 2*pi*i*B(beta)/m through all carrier poles. One " ++
+        "fixed positive smoothing radius suffices; the opposite arithmetic bound is open. " ++
+        "The original unsmoothed target remains an eventual ceiling 2*pi/m+o(1) for the " ++
+        "complete finite eta pole/strip correction along actual expanding contours. " ++
+        "The full source-plus-positive-energy limit " ++
+        "and vanishing common truncation error are proved, including on favorable " ++
+        "dyadic phases. The signed completed eta remainder now has negative part at most " ++
+        "512*Im(alpha)^2/(log(2)*R^4), uniformly in regular truncations, and this adverse " ++
+        "part tends to zero. The complete pole term plus quadratic strip energy minus " ++
+        "the favorable remainder still needs an independent source ceiling. Actual " ++
+        "carrier-pole multiplicities in fixed strip windows now have a logarithmic " ++
+        "bound at both signs of the ordinate, with all dyadic extras separated exactly. " ++
+        "The analytic unit now has proved logarithmic variation and an explicit polynomial " ++
+        "inverse bound on positive-height local disks. Its separate norm cost is too large " ++
+        "for the quartic weight; numerator and pole-product phases must stay coupled. " ++
+        "The signed weighted residues remain uncontrolled. No decay " ++
+        "of the whole remainder or new zero exclusion is asserted. An alternative route is a one-sided " ++
+        "subpolynomial lower allowance for the exact Suzuki mass-moment " ++
         "potential: for every epsilon>0, B_N >= -C(epsilon)*N^epsilon eventually on " ++
         "mass-balanced cutoffs. Controlled recovery and the general subexponential " ++
         "compensator prove this implies RH. " ++

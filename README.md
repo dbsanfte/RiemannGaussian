@@ -7,7 +7,7 @@ RiemannGaussian is an open research project building toward a complete,
 kernel-checked Lean proof of the Riemann hypothesis. The repository contains
 the evolving Lean 4 proof development and supporting analytic and finite-model
 theory. The proof is not complete; in the meantime, the extensive Lean theorems and formalizations that we've compiled along the way are provided to the wider community. Only declarations accepted by Lean and the
-repository's verification gates count as established results. 
+repository's verification gates count as established results.
 
 > **Research agents:** GPT-5.6 Sol and GPT-6 Astra with **Max** reasoning effort, running in the
 > **Codex CLI harness**.
@@ -27,24 +27,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Prove an independent source ceiling for the joint Suzuki pole and strip correction. Finite eta contours now recover complete pole groups inside the open strip, including multiple poles, with the exact xi source and all complex weights retained. Use the logarithmically weighted eta denominator to bound this signed arithmetic expression together with the strip sides. Fixed-contour approximation is established; the bound as contours expand remains open.
+Prove an independent signed arithmetic upper bound below the positive Gaussian reflection source. Use the exact coupled variation of the bounded complex carrier and normalized eta mass, retaining completion and heat terms. At genuine carrier poles, normalization cancels the apparent negative quadratic margin. The next obstruction is a signed global estimate for that coupled variation with the actual reflection and heat weights. The RH inequality remains open.
 
 ## Latest Update
 
-Lean now expresses the actual carrier through paired eta and its explicit
-completion correction. The finite denominator keeps the original odd/even
-terms with weights `1+L(s)-log(n)`. Its complex quotient converges uniformly
-on compact sets avoiding the actual carrier denominator; eta zeros need
-not be removed separately.
+Lean now carries the signed curvature identity through the actual varying
+normalization and full complex reflection weight. At every genuine upper
+carrier pole, differentiation of that normalization cancels the whole
+apparent negative quadratic margin. All eta side conditions follow from
+the original xi pole; arbitrary pole orders are included.
 
-On fixed admissible rectangles strictly inside the open spectral strip,
-the finite arithmetic contours recover the full weighted residue matrix,
-including every pole order and the exact xi source. They give a signed
-upper bound for the pole contribution with any prescribed positive error
-after sufficiently long truncation. The finite arithmetic expression still
-needs a source-level bound together with the strip sides and expanding
-contour limits. No new zeta zeros have been excluded. See the
-[arithmetic carrier and complete pole groups](docs/suzuki-eta-pole-groups.md).
+The full complex eta source is also exactly `2*i*r^2*(S*U' - U*S')`,
+where `S` is the bounded smooth carrier and `U` is the normalized eta mass.
+Lean proves `0 <= U <= 1/r^2` and `normSq(S) = U - r^2*U^2`.
+The derivative identity applies on the completion domain away from common
+zeros, including genuine carrier poles, and retains the companion heat term
+in the complete reflection density. An estimate for its global signed
+variation remains open. No new zero is excluded. The full local build,
+declaration lint, and transitive axiom audit pass.
+See [the signed normalization and coupled current](docs/suzuki-eta-signed-current.md).
 
 ## Notable Formalisations
 
@@ -59,7 +60,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Prime Gram rank and quadratic source separation** | Actual complex prime Gram matrices retain full finite rank after every finite prefix. A separate quadratic identity has independently negligible mixed and same-prime terms, leaving its nonzero zero-source on distinct-prime products. | [zetaPrimeGram_sub_prefix_rank](RiemannGaussian/ZetaPrimeGram.lean), [exists_zetaPrimeMixedProductMoment_decay_bound](RiemannGaussian/ZetaPrimeQuadraticMoments.lean), [tendsto_zetaDistinctPrimePair_source](RiemannGaussian/ZetaPrimePairDiagonal.lean) |
 | **Suzuki work floors, divisor certificates, and positive Laplace continuation** | The analytic chain from the literal Suzuki signal to Mathlib's RH, including genuine Laplace convergence and the zero-residue contradiction. The unrestricted finite divisor-certificate maximum equals the exact mass–moment potential; all optimizers have equality on prime powers. General subexponential compensators allow eventual one-sided bounds by every positive cutoff power. This arithmetic premise remains open. | [riemannHypothesis_of_suzuki_psi_nonnegative_tail](RiemannGaussian/SuzukiPositivityRH.lean), [divisor-certificate theorem](RiemannGaussian/SuzukiLegendreDivisorDual.lean), [all-weight optimality](RiemannGaussian/SuzukiDivisorDualOptimality.lean), [general compensator](RiemannGaussian/SuzukiLaplaceCompensator.lean), [subpolynomial allowance](RiemannGaussian/SuzukiSubexponentialWork.lean) |
 | **Global xi expansion and signed carrier bounds** | The full multiplicity-weighted paired logarithmic derivative is absolutely convergent, with both canonical difference remainders proved to vanish. Finite local signed bands bound its imaginary part from above. Every genuine upper carrier pole lies in an actual reflected-zero Jensen disk; the literal carrier is bounded by one outside their union. Collective pole-residue control and the global arithmetic bound remain open. | [global paired expansion](RiemannGaussian/RiemannXiGlobalLogDerivative.lean), [finite signed upper bounds](RiemannGaussian/RiemannXiJensenDiskBound.lean), [local carrier-pole bounds](RiemannGaussian/SuzukiCarrierLocalPoleBudget.lean), [outer contour decay](RiemannGaussian/SuzukiCarrierSafeContour.lean) |
-| **Arithmetic carrier contours and signed residue bounds** | The completed eta quotient has the actual carrier denominator, including at xi zeros. Finite eta contours recover complete weighted pole groups of arbitrary order on admissible rectangles inside the open strip, with signed approximation error tending to zero. A companion signed-tail estimate gives finite slope disks at simple poles. The global source ceiling remains open. | [exact eta denominator](RiemannGaussian/SuzukiEtaCarrier.lean), [compact contour convergence](RiemannGaussian/SuzukiEtaCarrierLimit.lean), [signed bound for complete pole groups](RiemannGaussian/SuzukiEtaPoleGroups.lean), [signed tail derivative](RiemannGaussian/RiemannXiSignedTailDerivative.lean), [finite residue disks](RiemannGaussian/SuzukiCarrierFiniteResidueDisk.lean) |
+| **Arithmetic carrier contours and signed residue bounds** | The completed eta quotient has the actual carrier denominator, including at xi zeros. Finite eta contours recover all genuine pole orders and both complete strip sides. A common truncation gives error below `1/(n+1)` along constructed expanding contours. Companion signed-tail estimates give finite slope and residue disks at simple poles. The independent global source ceiling remains open. | [exact eta denominator](RiemannGaussian/SuzukiEtaCarrier.lean), [complete weighted joint recovery](RiemannGaussian/SuzukiEtaJointRecovery.lean), [expanding arithmetic recovery](RiemannGaussian/SuzukiEtaExpandingRecovery.lean), [signed tail derivative](RiemannGaussian/RiemannXiSignedTailDerivative.lean), [finite residue disks](RiemannGaussian/SuzukiCarrierFiniteResidueDisk.lean) |
 | **Actual real Gram and signed strip contour** | Full Laurent subtraction handles arbitrary pole orders and removable real boundary points. For pairs without a repeated real node, the actual real Gram equals the reflected xi source and full carrier-pole correction minus the oriented sides. Safe outer sides cost at most `32/R`, leaving two fixed-height strip segments with all mixed phases retained. The independent signed correction bound remains open. | [real boundary limit](RiemannGaussian/SuzukiCarrierRealBoundary.lean), [actual real contour](RiemannGaussian/SuzukiCarrierRealContour.lean), [signed strip comparison](RiemannGaussian/SuzukiCarrierContourStrip.lean) |
 | **Reflection cancellation and positive source excess** | The canonical reflected pair has a quartic resolvent denominator, cubic safe-contour error, and strictly positive actual Gram energy off the critical line. Its joint pole/strip correction converges to the exact source plus that energy. An independent source ceiling with vanishing allowance would suffice for exclusion; this ceiling is open. | [exact reflection contrast](RiemannGaussian/SuzukiCarrierReflectionContrast.lean), [cubic contour error](RiemannGaussian/SuzukiCarrierReflectionBounds.lean), [complete correction and source ceiling](RiemannGaussian/SuzukiCarrierReflectionLimit.lean) |
 | **Gaussian/Weil explicit formula** | The arithmetic Gaussian expression, including prime-power and Archimedean terms, equals the canonical multiplicity-weighted symmetric zeta-zero sum for every positive width. | [gaussianArithmeticExplicitFormula_eq_canonical](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean#L1235) |

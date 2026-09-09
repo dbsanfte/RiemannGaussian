@@ -167,15 +167,33 @@ fixed pole groups by explicit finite arithmetic contours, but does not
 show that those contours lie below the required source ceiling after
 coupling them to the two strip sides.
 
-The eta convergence domain is the **open** spectral strip. The endpoint
-`Im(z)=1/2` is not included: the completion has apparent dyadic-factor
-singularities on the corresponding line `Re(s)=1`. At the real spectral
-boundary, shared xi/denominator zeros also need the existing removable
-boundary analysis. Neither passage is supplied by fixed compact
-convergence alone. Expanding contours and changing truncations require
-their own controlled limit argument.
+The original convergence theorem above covers the **open** spectral
+strip. The subsequent [expanding arithmetic recovery](suzuki-eta-expanding-recovery.md)
+extends the unchanged carrier to its full completion domain, constructs
+compatible sides through height one half, and preserves all genuine poles
+with a positive bottom lift. Both complete strip sides and the original
+pole group now have a common arithmetic approximation. Along constructed
+expanding contours its error is below `1/(n+1)`.
 
-The next arithmetic estimate must control the retained logarithmically
-weighted eta numerator together with its denominator and oriented strip
-terms. The finite expression can still carry the full source excess.
-No new zero has been excluded and no global source bound has been proved.
+The remaining arithmetic estimate must bound that coupled expression at
+the source threshold. The approximation retains the logarithmically
+weighted eta numerator, its denominator, all mixed weights, the exact
+source subtraction, and both oriented strip terms. It can still carry the
+full positive source excess. No new zero has been excluded and no global
+source ceiling has been proved.
+
+The subsequent [local carrier count](suzuki-eta-local-pole-count.md)
+proves a logarithmic bound for the total multiplicity of the actual
+genuine pole group in fixed strip windows on both sides. Its cleared
+eta denominator separates all artificial dyadic orders exactly. This
+controls local counts; the signed weighted pole contribution and its
+coupling to both strip sides still require an independent estimate.
+
+The [full parameter-circle calculation](suzuki-carrier-parameter-average.md)
+now gives an exact bounded projection of the actual carrier while
+preserving every local xi-zero source. Both projected strip segments
+have combined norm at most `64*Im(alpha)^2/(r*R^4)`. Removing them from
+the original complete correction leaves every genuine pole residue
+coupled to the two signed large-value strip integrals, with that explicit
+error. An independent upper bound for this retained combination remains
+open; averaging does not discard the large-value or pole contribution.
