@@ -6,7 +6,17 @@ estimate**. The objective remains active until both parts are proved and
 verified. The completed [signed endpoint package](eta-signed-endpoint-theorem-plan.md)
 provides the actual support, gap, phase, Gaussian, and mixed-matrix inputs.
 
-The user's subsequent focus on the exact phase optimiser led to
+The latest [weighted phase-return bound](zeta-phase-weighted-recurrence.md)
+retains every triangular difference multiplicity in the full Gram block.
+For a positive block source it improves the preceding arithmetic floor
+by the exact factor `N(N+1)/2`, with all phase hypotheses discharged for
+the exact optimiser. Five powers of 2 give a uniform floor `1/120` on
+`1 < sigma <= 5/4`. The compiled terminal theorem
+`phaseContactExact_weighted_exclusion` carries the additional `d/120`
+reserve into actual zeta nonvanishing. This is a bounded local improvement;
+the independent global signed prime-band estimate remains open.
+
+The user's preceding focus on the exact phase optimiser led to
 [contact doubling and a prime-square reserve](zeta-phase-contact-doubling.md).
 Every doubled contact stays at least `1/20` from every contact, so
 `P(theta)+P(2*theta)` has a uniform positive floor. The actual linked

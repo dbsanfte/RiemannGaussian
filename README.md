@@ -27,23 +27,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Find an independent signed bound for the finite ordinary-prime band that detects every hypothetical zero right of 1/2. Its normalized value tends to the negative zero multiplicity, with all omitted terms controlled. A one-sided bound on arbitrarily large orders would suffice. The exact phase optimiser supplies separate local zero constraints; its bounded arithmetic reserves do not close the global RH gap.
+Find an independent signed bound for the finite ordinary-prime band that detects every hypothetical zero right of 1/2. Its normalized value tends to the negative zero multiplicity, with all omitted terms controlled. A one-sided bound on arbitrarily large orders would suffice. The exact phase optimiser now supplies a uniform arithmetic floor of 1/120 and stronger local zero constraints; the global signed bound remains open.
 
 ## Latest Update
 
-The exact optimiser's [four contacts cannot persist under angle doubling](RiemannGaussian/ZetaPhaseContactDoubling.lean).
-Lean proves a uniform positive floor for `P(theta)+P(2*theta)`, then
-transfers it to the linked prime and prime-square terms in zeta's actual
-arithmetic sum. The resulting positive reserve strengthens the local
-zero inequality that previously discarded that work and gives a literal
-nonvanishing test.
+Lean now proves a [stronger arithmetic floor](RiemannGaussian/ZetaPhaseWeightedRecurrence.lean)
+by retaining the multiplicities of linked phase returns. The general
+bound improves by a factor `N(N+1)/2` at a positive block source: tenfold
+for the same four powers. Five powers of 2 give the exact optimiser a
+proved floor of **`1/120`**, uniformly in height for `1 < sigma <= 5/4`.
 
-This explains an arithmetic constraint on the contact geometry. It is
-not claimed to outperform the existing four-return floor, and no new
-numerical strip constant is asserted. The independent global signed
-prime-band bound remains open. See the
-[contact analysis](docs/zeta-phase-contact-doubling.md) and
-[research ledger](docs/eta-current-reconstruction-plan.md).
+The actual zero inequality now retains an explicit `d/120` reserve,
+where `d=1-Re(rho)`, and yields a stronger nonvanishing test. This is a
+bounded local improvement; the independent global signed prime-band
+bound remains open. See the
+[weighted-return proof and comparison](docs/zeta-phase-weighted-recurrence.md).
 
 ## Notable Formalisations
 
@@ -52,7 +50,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
-| **Exact phase optimisation and contact geometry** | A unique maximiser for the specified shift and linear cost, among all feasible finite or infinite integer-frequency families. Exactly eight nonconstant frequencies occur. Its four contact cosines avoid their doubled images, forcing positive work from a prime and its square. | [existsUnique_phaseContactOptimizer](RiemannGaussian/ZetaPhaseExactOptimizer.lean), [phaseContactExact_doubled_contact_gap](RiemannGaussian/ZetaPhaseContactDoubling.lean), [exists_phaseContactExact_prime_square_exclusion](RiemannGaussian/ZetaPhaseContactDoubling.lean) |
+| **Exact phase optimisation and arithmetic floors** | A unique maximiser for the specified shift and linear cost, among all feasible finite or infinite integer-frequency families. Exactly eight nonconstant frequencies occur. Its four contact cosines avoid their doubled images. Weighted prime-power returns give a uniform arithmetic floor `1/120` for `1 < sigma <= 5/4` and an explicit reserve in actual zero exclusion. | [existsUnique_phaseContactOptimizer](RiemannGaussian/ZetaPhaseExactOptimizer.lean), [phaseContactExact_doubled_contact_gap](RiemannGaussian/ZetaPhaseContactDoubling.lean), [phaseContactExact_arithmetic_floor](RiemannGaussian/ZetaPhaseWeightedRecurrence.lean), [phaseContactExact_weighted_exclusion](RiemannGaussian/ZetaPhaseWeightedRecurrence.lean) |
 | **Literal signed prime detection of hypothetical zeros** | An exact local-divisor polynomial isolates each right-half zero's negative multiplicity in a finite ordinary-prime band. Proper prime powers, both arithmetic tails, and the complete analytic remainder are negligible. The independent lower bound for the retained signed band remains open. | [tendsto_zetaRightHalfOrdinaryPrimeBandFilter_re](RiemannGaussian/ZetaPrimeMomentBand.lean), [tendsto_zetaRightHalfPrimeBandChebyshevIntegral_re](RiemannGaussian/ZetaPrimeBandChebyshev.lean) |
 | **Prime Gram rank and quadratic source separation** | Actual complex prime Gram matrices retain full finite rank after every finite prefix. A separate quadratic identity has independently negligible mixed and same-prime terms, leaving its nonzero zero-source on distinct-prime products. | [zetaPrimeGram_sub_prefix_rank](RiemannGaussian/ZetaPrimeGram.lean), [exists_zetaPrimeMixedProductMoment_decay_bound](RiemannGaussian/ZetaPrimeQuadraticMoments.lean), [tendsto_zetaDistinctPrimePair_source](RiemannGaussian/ZetaPrimePairDiagonal.lean) |
 | **Suzuki work floors and positive Laplace continuation** | The analytic chain from the literal Suzuki signal to Mathlib's RH, including genuine Laplace convergence and the zero-residue contradiction. The sufficient signed-work bounds remain unproved arithmetic premises. | [riemannHypothesis_of_suzuki_psi_nonnegative_tail](RiemannGaussian/SuzukiPositivityRH.lean), [bounded-work reduction](RiemannGaussian/SuzukiBoundedWork.lean), [logarithmic allowance](RiemannGaussian/SuzukiLogarithmicWork.lean) |
@@ -141,6 +139,8 @@ positivity or vanishing direction remains unproved.
   infinite competitors. The tiny high-frequency coefficients are necessary
   for that optimum. Its actual zeta application proves the
   [reciprocal-logarithm edge strip with denominator `23000`](RiemannGaussian/ZetaPhaseExactZeroBound.lean).
+  Preserving weighted phase returns also gives a proved
+  [arithmetic floor `1/120` and an explicit local zero reserve](RiemannGaussian/ZetaPhaseWeightedRecurrence.lean).
   This is a project improvement within a classical type of zero-free region,
   not a claim of a best known bound, an intrinsic zeta frequency count, or RH.
 - **Reproduced Anthropic's `2/3` certificate in Lean.**

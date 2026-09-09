@@ -107,6 +107,14 @@ private def milestones : Array Milestone := #[
     role := "bridge"
     theoremName :=
       ``RiemannGaussian.tendsto_zetaRightHalfOrdinaryPrimeBandFilter_re
+  },
+  {
+    label := "Five powers of two give the exact phase optimiser a uniform arithmetic floor 1/120 for 1 < sigma <= 5/4"
+    lineOne := "phase arithmetic floor"
+    lineTwo := "uniform >= 1/120"
+    role := "unconditional"
+    theoremName :=
+      ``RiemannGaussian.phaseContactExact_arithmetic_floor
   }
 ]
 
@@ -120,7 +128,8 @@ private def milestonePoints : Array Point := #[
   { x := 340, y := 150 },
   { x := 500, y := 150 },
   { x := 20, y := 229 },
-  { x := 180, y := 229 }
+  { x := 180, y := 229 },
+  { x := 340, y := 229 }
 ]
 
 private def projectPrefix : Name := `RiemannGaussian
@@ -299,9 +308,12 @@ run_cmd do
       "constants HD(1) < C0 < C1 remain checked. The exact nonnegative phase optimiser is unique " ++
       "for its fixed shift and linear cost, including infinite integer-frequency competitors. Its " ++
       "actual zeta height budget proves a reciprocal-logarithm edge margin with denominator " ++
-      "23000*log(abs(gamma)+22). The contact-doubling theorem forces a positive prime-square " ++
-      "reserve and a stronger local inequality; its new reserve has no calibrated numerical value " ++
-      "and is not claimed stronger than the earlier general four-return floor. Actual prime Gram " ++
+      "23000*log(abs(gamma)+22). Retaining the triangular phase-return multiplicities improves " ++
+      "the general arithmetic floor by N*(N+1)/2 at a positive block source. Five powers of two " ++
+      "give the exact optimiser a uniform floor 1/120 for 1 < sigma <= 5/4, and an explicit d/120 " ++
+      "reserve in its actual local zero inequality. This bounded gain leaves the global signed " ++
+      "bound open. The preceding contact-doubling theorem explains why an angle and its double " ++
+      "cannot both be contacts. Actual prime Gram " ++
       "matrices have full finite rank after every finite prime prefix. Every hypothetical " ++
       "right-half zero has an exact finite ordinary-prime band whose normalized signed value tends " ++
       "to its negative analytic multiplicity. All omitted analytic modes, proper prime powers, and " ++
