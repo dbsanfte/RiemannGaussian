@@ -80,18 +80,18 @@ private theorem affine_weight_integrable (C D : ℝ) {x : ℝ} (hx : x < 0) :
   dsimp only [Pi.add_apply]
   ring
 
-/-- An affine time loss is harmless to the analytic RH implication. The
-compensator's Laplace transform genuinely converges throughout `Re z > 0`
-and is subtracted before applying the zero-residue contradiction. -/
-theorem riemannHypothesis_of_suzuki_signal_affine_lower_bound
-    {C D : ℝ} (hC : 0 ≤ C) (hD : 0 ≤ D)
-    (hb : ∀ t : ℝ, 0 < t → -(C + D * t) ≤ suzukiChebyshevLogAverageLaplaceSignal t) :
+/-- Either orientation of an affine one-sided bound forces RH. Multiplying
+the genuine signal by a nonzero real constant preserves its zero poles;
+the affine compensator is removed from the analytic extension. -/
+theorem riemannHypothesis_of_suzuki_signal_scaled_affine_lower_bound
+    {a C D : ℝ} (ha : a ≠ 0) (hC : 0 ≤ C) (hD : 0 ≤ D)
+    (hb : ∀ t : ℝ, 0 < t → -(C + D * t) ≤ a * suzukiChebyshevLogAverageLaplaceSignal t) :
     RiemannHypothesis := by
   let f : ℝ → ℝ := fun t => C + D * t
-  let g : ℝ → ℝ := fun t => suzukiChebyshevLogAverageLaplaceSignal t + f t
+  let g : ℝ → ℝ := fun t => a * suzukiChebyshevLogAverageLaplaceSignal t + f t
   have hf : AEMeasurable f (volume.restrict (Ioi 0)) := by dsimp [f]; fun_prop
   have hg : AEMeasurable g (volume.restrict (Ioi 0)) :=
-    aemeasurable_suzukiChebyshevLogAverageLaplaceSignal.add hf
+    (aemeasurable_suzukiChebyshevLogAverageLaplaceSignal.const_mul a).add hf
   have hfpos : ∀ t : ℝ, 0 < t → 0 ≤ f t := by intro t ht; dsimp [f]; positivity
   have hgpos : ∀ t : ℝ, 0 < t → 0 ≤ g t := by intro t ht; dsimp [g, f]; linarith [hb t ht]
   have hfi : ∀ x : ℝ, x < 0 → x ∈ integrableExpSet id (timeDensity f) := by
@@ -103,14 +103,15 @@ theorem riemannHypothesis_of_suzuki_signal_affine_lower_bound
     intro x hx
     apply timeDensity_integrable_exp g hg hgpos x
     have hi := (integrableOn_suzukiChebyshevLogAverageLaplaceKernel
-      (lambda := -x) (by linarith)).add (affine_weight_integrable C D (by linarith : x < 0))
+      (lambda := -x) (by linarith)).const_mul a |>.add
+        (affine_weight_integrable C D (by linarith : x < 0))
     apply hi.congr
     filter_upwards [] with t
     dsimp [g, f, suzukiChebyshevLogAverageLaplaceKernel]
     ring_nf
   have heq : ∀ z : ℂ, 1 / 2 < z.re →
       complexMGF id (timeDensity g) (-z) =
-        suzukiChebyshevLogAverageComplexLaplaceTransform z +
+        (a : ℂ) * suzukiChebyshevLogAverageComplexLaplaceTransform z +
           complexMGF id (timeDensity f) (-z) := by
     intro z hz
     have hsig : IntegrableOn
@@ -123,20 +124,22 @@ theorem riemannHypothesis_of_suzuki_signal_affine_lower_bound
       (affine_weight_integrable C D (by simp only [neg_re]; linarith : (-z).re < 0))
     rw [timeDensity_complexMGF g hg hgpos, timeDensity_complexMGF f hf hfpos]
     have hfun : (fun t : ℝ => (g t : ℂ) * Complex.exp (-z * (t : ℂ))) =
-        fun t => (suzukiChebyshevLogAverageLaplaceSignal t : ℂ) * Complex.exp (-z * (t : ℂ)) +
+        fun t => (a : ℂ) * ((suzukiChebyshevLogAverageLaplaceSignal t : ℂ) *
+          Complex.exp (-z * (t : ℂ))) +
           (f t : ℂ) * Complex.exp (-z * (t : ℂ)) := by
       ext t
       dsimp [g]
       push_cast
       ring
-    rw [hfun, integral_add hsig hfint]
+    rw [hfun, integral_add (hsig.const_mul (a : ℂ)) hfint, integral_const_mul]
     unfold suzukiChebyshevLogAverageComplexLaplaceTransform
       suzukiChebyshevLogAverageComplexLaplaceIntegrand
     rw [integral_indicator measurableSet_Ioi]
   have hF : AnalyticOnNhd ℝ (fun x : ℝ =>
-      (suzukiChebyshevLogAverageLaplaceCompletedContinuation (-x : ℂ)).re +
+      a * (suzukiChebyshevLogAverageLaplaceCompletedContinuation (-x : ℂ)).re +
         mgf id (timeDensity f) x) (Iio 0) :=
-    analyticOnNhd_suzukiCompletedResponse_neg_real.add (fun _ hx => analyticAt_mgf (hfd hx))
+    fun x hx => (analyticAt_const.mul
+      (analyticOnNhd_suzukiCompletedResponse_neg_real x hx)).add (analyticAt_mgf (hfd hx))
   have hgd : Iio (0 : ℝ) ⊆ interior (integrableExpSet id (timeDensity g)) := by
     apply Iio_subset_interior_integrableExpSet_of_analytic_mgf
       measurable_id.aemeasurable (timeDensity_nonneg_time g hg)
@@ -148,18 +151,32 @@ theorem riemannHypothesis_of_suzuki_signal_affine_lower_bound
     rw [suzukiChebyshevLogAverageComplexLaplaceTransform_eq_completedContinuation hz] at h
     have hr := congrArg Complex.re h
     simpa [complexMGF_ofReal] using hr.symm
-  let H : ℂ → ℂ := fun z => complexMGF id (timeDensity g) (-z) -
-    complexMGF id (timeDensity f) (-z)
+  let H : ℂ → ℂ := fun z => (a : ℂ)⁻¹ * (complexMGF id (timeDensity g) (-z) -
+    complexMGF id (timeDensity f) (-z))
   have hH : AnalyticOnNhd ℂ H {z : ℂ | 0 < z.re} := by
     intro z hz
     have hx : (-z).re ∈ Iio (0 : ℝ) := by change -z.re < 0; exact neg_neg_of_pos hz
-    exact ((analyticAt_complexMGF (hgd hx)).comp analyticAt_id.neg).sub
-      ((analyticAt_complexMGF (hfd hx)).comp analyticAt_id.neg)
+    exact analyticAt_const.mul
+      (((analyticAt_complexMGF (hgd hx)).comp analyticAt_id.neg).sub
+        ((analyticAt_complexMGF (hfd hx)).comp analyticAt_id.neg))
   apply riemannHypothesis_of_suzukiLaplace_extension H hH
   intro z hz
   dsimp [H]
   rw [heq z hz]
+  have ha' : (a : ℂ) ≠ 0 := by exact_mod_cast ha
+  field_simp
   ring
+
+/-- An affine time loss is harmless to the analytic RH implication. The
+compensator's Laplace transform genuinely converges throughout `Re z > 0`
+and is subtracted before applying the zero-residue contradiction. -/
+theorem riemannHypothesis_of_suzuki_signal_affine_lower_bound
+    {C D : ℝ} (hC : 0 ≤ C) (hD : 0 ≤ D)
+    (hb : ∀ t : ℝ, 0 < t → -(C + D * t) ≤ suzukiChebyshevLogAverageLaplaceSignal t) :
+    RiemannHypothesis := by
+  apply riemannHypothesis_of_suzuki_signal_scaled_affine_lower_bound
+    (a := 1) (by norm_num) hC hD
+  simpa using hb
 
 private abbrev firstTailGap (cutoff : ℕ) : ℝ :=
   curvatureTransportGap

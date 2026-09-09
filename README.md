@@ -27,21 +27,22 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek an independent lower floor for the exact Suzuki potential. Explicit finite Möbius coefficients now attain its divisor-certificate optimum on complete quotient cells, with zero approximation loss and at most twice the integer square root of the endpoint many cells. The remaining task is a uniform lower bound after the exact Archimedean terms are included. Exact coefficients and class comparisons do not supply that arithmetic bound.
+Seek an independent signed floor on the mass-balanced Suzuki cells. Every hypothetical right-half zero forces arbitrarily low potentials within this restricted set. On these cells Lean bounds the nonlinear entropy correction by N^(-3/2), leaving a single signed prime logarithmic average. Exact quotient coefficients retain the complete arithmetic sum. The remaining uniform floor is open; the restriction and correction estimate do not prove RH.
 
 ## Latest Update
 
-Lean now verifies [explicit quotient-cell optimizers](RiemannGaussian/SuzukiDivisorQuotientOptimizer.lean)
-for every endpoint and center. On each cell where `floor(N/m)` is constant,
-`sqrt(m)*w(m)` is affine in `log(m)`, with two exact finite Möbius
-coefficients. At most `2*floor(sqrt(N))` cells suffice, and the resulting
-certificate equals the original potential exactly at its mass center.
+Lean now restricts the arithmetic target to
+[mass-balanced cells](RiemannGaussian/SuzukiBalancedCells.lean), where the
+corrected prime mass lies between `2*sqrt(N)` and `2*sqrt(N+1)`. A signed
+Laplace argument proves that any right-half zero forces arbitrarily late
+local minima and arbitrarily low potentials on these cells, without a
+zero-simplicity assumption.
 
-A boundary theorem keeps the slope and intercept jumps coupled: their
-value jumps cancel at the endpoint center `log(N)`. This explains the
-quotient structure that coarse interval families approximate. It removes
-approximation loss, but provides no independent uniform floor or new zero
-bound. See the [formula, numerical check, and remaining obligation](docs/suzuki-divisor-quotient-optimizer.md).
+On every balanced cell the full nonlinear entropy correction is between
+zero and `1/(N*sqrt(N))`, with uniform decay proved. A finite eventual floor
+for the remaining signed endpoint statistic on just these cells would
+therefore imply RH. That arithmetic floor remains open; no new zero bound
+is claimed. See the [proof and remaining target](docs/suzuki-balanced-cells.md).
 
 ## Notable Formalisations
 

@@ -6,6 +6,19 @@ estimate**. The objective remains active until both parts are proved and
 verified. The completed [signed endpoint package](eta-signed-endpoint-theorem-plan.md)
 provides the actual support, gap, phase, Gaussian, and mixed-matrix inputs.
 
+The [mass-balanced-cell restriction](suzuki-balanced-cells.md) now proves
+that every hypothetical right-half zero forces arbitrarily low potentials
+on cells with `2*sqrt(N) <= M_N-c <= 2*sqrt(N+1)`. The terminal source
+theorem is `suzuki_balanced_potential_frequently_below_of_right_half_zero`.
+The independent `suzuki_balanced_entropy_bounds` controls the entire
+nonlinear correction there by `1/(N*sqrt(N))`, with uniform decay proved.
+`riemannHypothesis_of_suzuki_balanced_endpoint_eventual_floor` leaves only
+an eventual finite floor for the signed endpoint statistic on these cells.
+That arithmetic premise is open. Both signal orientations use the genuine
+positive-Laplace argument, so the local-minimum selection does not assume
+oscillation or simple zeros. No uniform signed floor or new zero bound has
+been proved. The full goal is unchanged.
+
 The [complete quotient optimizer](suzuki-divisor-quotient-optimizer.md) now
 removes approximation loss for every endpoint and center.
 `suzukiDivisorDualKernel_quotientWeight` proves exact kernel equality for

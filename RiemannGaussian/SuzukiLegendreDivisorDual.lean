@@ -92,7 +92,9 @@ def suzukiLegendreTrial (count : ℕ) (r : ℝ) : ℝ :=
   suzukiArchimedeanIntercept + 4 * Real.exp (r / 2) +
     suzukiArchimedeanSlopeConstant * r + suzukiLegendreLinearForm (count + 2) r
 
-private theorem linear_eq (count : ℕ) (r : ℝ) :
+/-- The finite divisor target is the signed first moment of the same prefix
+mass, with no change of endpoint. -/
+theorem suzukiLegendreLinearForm_eq_prefixMoment_sub_mass (count : ℕ) (r : ℝ) :
     suzukiLegendreLinearForm (count + 2) r =
       screwPrefixMoment suzukiPrimeLocation suzukiPrimeWeight (count + 1) -
         r * suzukiOldPrimeMass count := by
@@ -115,7 +117,7 @@ theorem suzukiLegendreTrial_massCenter (count : ℕ) :
   have hm := suzukiFirstTailCorrectedMass_pos count
   change 0 < suzukiOldPrimeMass count - suzukiArchimedeanSlopeConstant at hm
   unfold suzukiLegendreTrial
-  rw [linear_eq]
+  rw [suzukiLegendreLinearForm_eq_prefixMoment_sub_mass]
   unfold suzukiLegendreMassCenter suzukiMassLegendrePotential
   rw [show 2 * Real.log ((suzukiOldPrimeMass count - suzukiArchimedeanSlopeConstant) / 2) / 2 =
     Real.log ((suzukiOldPrimeMass count - suzukiArchimedeanSlopeConstant) / 2) by ring,
@@ -136,7 +138,7 @@ theorem suzukiLegendreTrial_sub_potential_eq (count : ℕ) (r : ℝ) :
     rw [show (r - 2 * Real.log (m / 2)) / 2 = r / 2 - Real.log (m / 2) by ring,
       Real.exp_sub, Real.exp_log (by positivity)]
   unfold suzukiLegendreTrial
-  rw [linear_eq, he]
+  rw [suzukiLegendreLinearForm_eq_prefixMoment_sub_mass, he]
   unfold suzukiMassLegendrePotential suzukiLegendreMassCenter
   change _ = 2 * m * (Real.exp (r / 2) / (m / 2) - 1 - (r - 2 * Real.log (m / 2)) / 2)
   field_simp

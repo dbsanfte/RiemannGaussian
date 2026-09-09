@@ -237,8 +237,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">Explicit quotient weights attain the Suzuki potential with zero approximation loss. " ++
-      "Its uniform finite lower floor is still unproved.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">Balanced cells suffice; their nonlinear correction is at most N^(-3/2). " ++
+      "The signed arithmetic floor on those cells remains unproved.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -332,8 +332,12 @@ run_cmd do
       "now attain the optimum on complete quotient cells for every endpoint and center. " ++
       "At most twice the integer square root of the endpoint many cells suffice. Their " ++
       "coupled slope and intercept jumps cancel in value at the endpoint center. This " ++
-      "removes approximation loss without supplying an independent lower bound. The uniform floor and an explicit " ++
-      "asymptotic class obstruction remain open. These are separate results and reductions, not a completed " ++
+      "removes approximation loss without supplying an independent lower bound. A " ++
+      "right-half zero now forces arbitrarily low potentials on mass-balanced cells, " ++
+      "using both signal orientations and actual local minima. Their full entropy " ++
+      "correction is independently bounded by 1/(N*sqrt(N)), with uniform decay proved. " ++
+      "A signed endpoint floor on only those cells would imply RH. That arithmetic " ++
+      "floor and an explicit asymptotic class obstruction remain open. These are separate results and reductions, not a completed " ++
       "proof chain or a new zero-proportion certificate. No RH proof or mathematical-priority " ++
       "claim is made. Detailed scope and proof histories are in " ++
       "docs/eta-current-reconstruction-plan.md.")),
@@ -392,9 +396,12 @@ run_cmd do
         "characterized on all prime powers. A class comparison theorem now tests every " ++
         "coefficient choice from finite basis observations. Explicit finite Mobius " ++
         "coefficients attain the optimum on at most 2*floor(sqrt(N)) complete quotient " ++
-        "cells with zero approximation loss. Prove an independent uniform lower floor " ++
-        "for their signed logarithmic sum after the exact Archimedean terms. Finite " ++
-        "inversion alone does not provide this estimate. The finite " ++
+        "cells with zero approximation loss. The target may now be restricted to " ++
+        "mass-balanced cells: every right-half zero forces arbitrarily low potentials " ++
+        "there. Their nonlinear entropy correction is at most 1/(N*sqrt(N)) and " ++
+        "uniformly tends to zero. Prove an independent uniform floor for the remaining " ++
+        "signed prime logarithmic average on those cells. The balance condition and " ++
+        "finite inversion do not provide that estimate. The finite " ++
         "prime-band criterion, phase floor 1/120, and complete eta identities remain available; " ++
         "none supplies the missing global estimate."))
     ]),
