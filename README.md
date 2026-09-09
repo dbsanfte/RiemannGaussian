@@ -27,22 +27,22 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek an independent signed floor on the mass-balanced Suzuki cells. Every hypothetical right-half zero forces arbitrarily low potentials within this restricted set. On these cells Lean bounds the nonlinear entropy correction by N^(-3/2), leaving a single signed prime logarithmic average. Exact quotient coefficients retain the complete arithmetic sum. The remaining uniform floor is open; the restriction and correction estimate do not prove RH.
+Seek a one-sided subpolynomial bound for the exact Suzuki arithmetic optimum. The general Landau compensator now permits an eventual allowance C(ε)N^ε for every ε>0 over all cutoffs. Exact quotient coefficients already attain the unrestricted optimum, so coefficient searches are unnecessary. A constant floor restricted to mass-balanced cells remains an alternative. Neither arithmetic bound is proved; the existing o(sqrt(N)) estimate is weaker.
 
 ## Latest Update
 
-Lean now restricts the arithmetic target to
-[mass-balanced cells](RiemannGaussian/SuzukiBalancedCells.lean), where the
-corrected prime mass lies between `2*sqrt(N)` and `2*sqrt(N+1)`. A signed
-Laplace argument proves that any right-half zero forces arbitrarily late
-local minima and arbitrarily low potentials on these cells, without a
-zero-simplicity assumption.
+Lean now proves the [general subexponential compensator argument](RiemannGaussian/SuzukiLaplaceCompensator.lean).
+Any nonnegative locally integrable compensator with subexponential growth
+has a genuinely convergent Laplace response at every positive damping.
+Subtracting it preserves the hypothetical zero's pole and multiplicity.
 
-On every balanced cell the full nonlinear entropy correction is between
-zero and `1/(N*sqrt(N))`, with uniform decay proved. A finite eventual floor
-for the remaining signed endpoint statistic on just these cells would
-therefore imply RH. That arithmetic floor remains open; no new zero bound
-is claimed. See the [proof and remaining target](docs/suzuki-balanced-cells.md).
+The [arithmetic transfer](RiemannGaussian/SuzukiSubexponentialWork.lean)
+therefore permits an eventual lower allowance `C(ε)N^ε` for the exact
+potential, for every `ε>0`. Constants and starting cutoffs may depend on
+the exponent. A right-half zero would instead force negative excursions
+of some positive power size. The required one-sided arithmetic bound
+remains open; this criterion gives no new unconditional zero bound.
+See the [precise scope and remaining target](docs/suzuki-subexponential-compensator.md).
 
 ## Notable Formalisations
 
@@ -54,7 +54,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Exact phase optimisation and arithmetic floors** | A unique maximiser for the specified shift and linear cost, among all feasible finite or infinite integer-frequency families. Exactly eight nonconstant frequencies occur. Its four contact cosines avoid their doubled images. Weighted prime-power returns give a uniform arithmetic floor `1/120` for `1 < sigma <= 5/4` and an explicit reserve in actual zero exclusion. | [existsUnique_phaseContactOptimizer](RiemannGaussian/ZetaPhaseExactOptimizer.lean), [phaseContactExact_doubled_contact_gap](RiemannGaussian/ZetaPhaseContactDoubling.lean), [phaseContactExact_arithmetic_floor](RiemannGaussian/ZetaPhaseWeightedRecurrence.lean), [phaseContactExact_weighted_exclusion](RiemannGaussian/ZetaPhaseWeightedRecurrence.lean) |
 | **Literal signed prime detection of hypothetical zeros** | An exact local-divisor polynomial isolates each right-half zero's negative multiplicity in a finite ordinary-prime band. Proper prime powers, both arithmetic tails, and the complete analytic remainder are negligible. The independent lower bound for the retained signed band remains open. | [tendsto_zetaRightHalfOrdinaryPrimeBandFilter_re](RiemannGaussian/ZetaPrimeMomentBand.lean), [tendsto_zetaRightHalfPrimeBandChebyshevIntegral_re](RiemannGaussian/ZetaPrimeBandChebyshev.lean) |
 | **Prime Gram rank and quadratic source separation** | Actual complex prime Gram matrices retain full finite rank after every finite prefix. A separate quadratic identity has independently negligible mixed and same-prime terms, leaving its nonzero zero-source on distinct-prime products. | [zetaPrimeGram_sub_prefix_rank](RiemannGaussian/ZetaPrimeGram.lean), [exists_zetaPrimeMixedProductMoment_decay_bound](RiemannGaussian/ZetaPrimeQuadraticMoments.lean), [tendsto_zetaDistinctPrimePair_source](RiemannGaussian/ZetaPrimePairDiagonal.lean) |
-| **Suzuki work floors, divisor certificates, and positive Laplace continuation** | The analytic chain from the literal Suzuki signal to Mathlib's RH, including genuine Laplace convergence and the zero-residue contradiction. The unrestricted finite divisor-certificate maximum equals the exact mass–moment potential; all optimizers have equality on prime powers. A comparison theorem tests whole weight spans. The uniform arithmetic floor remains open. | [riemannHypothesis_of_suzuki_psi_nonnegative_tail](RiemannGaussian/SuzukiPositivityRH.lean), [bounded-work reduction](RiemannGaussian/SuzukiBoundedWork.lean), [divisor-certificate theorem](RiemannGaussian/SuzukiLegendreDivisorDual.lean), [all-weight optimality](RiemannGaussian/SuzukiDivisorDualOptimality.lean), [logarithmic allowance](RiemannGaussian/SuzukiLogarithmicWork.lean) |
+| **Suzuki work floors, divisor certificates, and positive Laplace continuation** | The analytic chain from the literal Suzuki signal to Mathlib's RH, including genuine Laplace convergence and the zero-residue contradiction. The unrestricted finite divisor-certificate maximum equals the exact mass–moment potential; all optimizers have equality on prime powers. General subexponential compensators allow eventual one-sided bounds by every positive cutoff power. This arithmetic premise remains open. | [riemannHypothesis_of_suzuki_psi_nonnegative_tail](RiemannGaussian/SuzukiPositivityRH.lean), [divisor-certificate theorem](RiemannGaussian/SuzukiLegendreDivisorDual.lean), [all-weight optimality](RiemannGaussian/SuzukiDivisorDualOptimality.lean), [general compensator](RiemannGaussian/SuzukiLaplaceCompensator.lean), [subpolynomial allowance](RiemannGaussian/SuzukiSubexponentialWork.lean) |
 | **Gaussian/Weil explicit formula** | The arithmetic Gaussian expression, including prime-power and Archimedean terms, equals the canonical multiplicity-weighted symmetric zeta-zero sum for every positive width. | [gaussianArithmeticExplicitFormula_eq_canonical](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean#L1235) |
 | **Gaussian Möbius arithmetic and cancellation** | The full reciprocal integral equals the actual Möbius sum, with every contour correction controlled. Its unit-time cancellation transfers through an exact complex heat identity: for each fixed complex `s`, `exp((s−1)a) W_s,2(a) → 0` with full phase retained, hence `W_s,2(log X)=o(X^(1−Re(s)))`. Absolute convergence holds for every positive heat time. | [gaussianMoebiusSum_one_le_reciprocal_log_gain_eventually](RiemannGaussian/GaussianMoebiusCancellation.lean), [summable_complexGaussianMoebiusSummand](RiemannGaussian/ComplexGaussianMoebius.lean), [integral_normalizedGaussianMoebius_heat](RiemannGaussian/GaussianMoebiusPhaseHeat.lean), [complexGaussianMoebiusSum_two_normalized_tendsto_zero](RiemannGaussian/GaussianMoebiusComplexCancellation.lean) |
 | **Quantitative finite Möbius cancellation and completed quotient blocks** | The unsmoothed sum has exponential decay in the cubic logarithmic scale `A(h)=10^15 h^3`, with all contour and cutoff errors included. Complex prefixes and literal quotient blocks inherit a quantitative rate above a specified weight-dependent cutoff. A common scale threshold works for all weights, with explicit weight dependence in the constants. The original completed zeroth eta blocks retain their completion and odd endpoint decay. | [abs_moebiusLogPrefix_cubic_le_eventually](RiemannGaussian/MoebiusFiniteQuantitativeCancellation.lean), [exists_complexMoebiusFinitePrefix_cubic_rate](RiemannGaussian/MoebiusFiniteMellinRate.lean), [exists_pairedEtaCompletedMoebius_divided_block_cubic_rate](RiemannGaussian/EtaMoebiusDividedBlockRate.lean) |

@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="313.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 980 modules · 22768 declarations · 19763 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 982 modules · 22786 declarations · 19781 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · milestones standard-only</text>
   <text class="section" x="20" y="64">CHECKED RESULTS, IDENTITIES, AND ATTRIBUTED BASELINE</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -102,11 +102,11 @@
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
     <text x="765" y="133">Suzuki potential</text>
-    <text x="765" y="153">finite floor OPEN</text>
+    <text x="765" y="153">subpower bound OPEN</text>
   </g>
   <g class="goal">
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="300">Balanced cells suffice; their nonlinear correction is at most N^(-3/2). The signed arithmetic floor on those cells remains unproved.</text>
+  <text class="frontier" x="20" y="300">Across all cutoffs, C(epsilon)N^epsilon allowances suffice for every epsilon&gt;0. The one-sided arithmetic bound remains unproved.</text>
 </svg>

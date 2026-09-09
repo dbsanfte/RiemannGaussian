@@ -231,14 +231,14 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "  <g class=\"open\">\n" ++
     "    <rect x=\"690\" y=\"108\" width=\"150\" height=\"62\" rx=\"10\"/>\n" ++
     "    <text x=\"765\" y=\"133\">Suzuki potential</text>\n" ++
-    "    <text x=\"765\" y=\"153\">finite floor OPEN</text>\n" ++
+    "    <text x=\"765\" y=\"153\">subpower bound OPEN</text>\n" ++
     "  </g>\n" ++
     "  <g class=\"goal\">\n" ++
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">Balanced cells suffice; their nonlinear correction is at most N^(-3/2). " ++
-      "The signed arithmetic floor on those cells remains unproved.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">Across all cutoffs, C(epsilon)N^epsilon allowances suffice for every epsilon&gt;0. " ++
+      "The one-sided arithmetic bound remains unproved.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -336,8 +336,16 @@ run_cmd do
       "right-half zero now forces arbitrarily low potentials on mass-balanced cells, " ++
       "using both signal orientations and actual local minima. Their full entropy " ++
       "correction is independently bounded by 1/(N*sqrt(N)), with uniform decay proved. " ++
-      "A signed endpoint floor on only those cells would imply RH. That arithmetic " ++
-      "floor and an explicit asymptotic class obstruction remain open. These are separate results and reductions, not a completed " ++
+      "A signed endpoint floor on only those cells would imply RH. The general Landau " ++
+      "compensator now permits any nonnegative locally integrable subexponential " ++
+      "allowance. Its genuine Laplace response is analytic at every positive damping " ++
+      "and is subtracted without losing the zero residue. Over all sufficiently large " ++
+      "cutoffs, a one-sided bound by C(epsilon)*N^epsilon for every epsilon>0 suffices " ++
+      "for the exact potential or literal logarithmic average, including finite heads " ++
+      "and the full gap error. Every right-half zero would force negative excursions " ++
+      "of some positive power size. The arithmetic subpolynomial bound remains open; " ++
+      "the existing o(sqrt(N)) bound does not imply it. This growing allowance has not " ++
+      "been restricted to balanced cells. These are separate results and reductions, not a completed " ++
       "proof chain or a new zero-proportion certificate. No RH proof or mathematical-priority " ++
       "claim is made. Detailed scope and proof histories are in " ++
       "docs/eta-current-reconstruction-plan.md.")),
@@ -385,22 +393,26 @@ run_cmd do
     ]),
     ("milestones", .arr (milestones.map milestoneToJson)),
     ("frontier", Json.mkObj [
-      ("label", .str "Independent Suzuki potential floor"),
+      ("label", .str "One-sided subpolynomial Suzuki bound"),
       ("status", .str "open"),
       ("target", .str
         ("For every hypothetical zero right of one half, prove an independent signed inequality " ++
         "beating its source after the proved error allowances. The active arithmetic route is " ++
-        "a uniform finite lower floor for the exact Suzuki mass-moment potential. The divisor " ++
+        "a one-sided subpolynomial lower allowance for the exact Suzuki mass-moment " ++
+        "potential: for every epsilon>0, B_N >= -C(epsilon)*N^epsilon eventually over " ++
+        "all cutoffs. The general subexponential compensator proves this implies RH. " ++
+        "Finite heads and the full gap error are discharged. The divisor " ++
         "identity, exact mass-center evaluation, and full cost of another center are checked. " ++
         "The unrestricted finite certificate maximum equals the potential, with equality " ++
         "characterized on all prime powers. A class comparison theorem now tests every " ++
         "coefficient choice from finite basis observations. Explicit finite Mobius " ++
         "coefficients attain the optimum on at most 2*floor(sqrt(N)) complete quotient " ++
-        "cells with zero approximation loss. The target may now be restricted to " ++
-        "mass-balanced cells: every right-half zero forces arbitrarily low potentials " ++
+        "cells with zero approximation loss. Alternatively, a constant floor can be " ++
+        "restricted to mass-balanced cells: every right-half zero forces arbitrarily low potentials " ++
         "there. Their nonlinear entropy correction is at most 1/(N*sqrt(N)) and " ++
-        "uniformly tends to zero. Prove an independent uniform floor for the remaining " ++
-        "signed prime logarithmic average on those cells. The balance condition and " ++
+        "uniformly tends to zero. The growing subpolynomial allowance has not been " ++
+        "restricted to those cells. Prove the full-cutoff subpolynomial bound or an " ++
+        "independent constant floor on balanced cells. The balance condition and " ++
         "finite inversion do not provide that estimate. The finite " ++
         "prime-band criterion, phase floor 1/120, and complete eta identities remain available; " ++
         "none supplies the missing global estimate."))

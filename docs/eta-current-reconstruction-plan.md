@@ -6,6 +6,22 @@ estimate**. The objective remains active until both parts are proved and
 verified. The completed [signed endpoint package](eta-signed-endpoint-theorem-plan.md)
 provides the actual support, gap, phase, Gaussian, and mixed-matrix inputs.
 
+The [general subexponential compensator](suzuki-subexponential-compensator.md)
+now relaxes the full-cutoff arithmetic target. The compiled theorem
+`riemannHypothesis_of_suzukiMassLegendrePotential_eventually_subpolynomial_lower_bound`
+requires only `B_N >= -C_epsilon N^epsilon` eventually for every positive
+`epsilon`, with exponent-dependent constants and starting cutoffs.
+The general Laplace proof discharges convergence and analytic subtraction
+for arbitrary nonnegative locally integrable subexponential compensators.
+Its arithmetic transfer includes the finite head and the exact gap error.
+`suzukiMassLegendrePotential_power_excursions_of_right_half_zero` shows that
+a hypothetical right-half zero must force negative excursions of some
+positive power size. The direct logarithmic-average version is also checked.
+These criteria concern all sufficiently large cutoffs; a growing allowance
+on only balanced cells has not been established as sufficient. The one-sided
+subpolynomial arithmetic bound remains open, and the existing `o(sqrt(N))`
+estimate does not supply it. No new unconditional zero bound follows.
+
 The [mass-balanced-cell restriction](suzuki-balanced-cells.md) now proves
 that every hypothetical right-half zero forces arbitrarily low potentials
 on cells with `2*sqrt(N) <= M_N-c <= 2*sqrt(N+1)`. The terminal source

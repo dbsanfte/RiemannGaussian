@@ -943,3 +943,5 @@ import RiemannGaussian.SuzukiLegendreDivisorDual
 import RiemannGaussian.SuzukiDivisorDualOptimality
 import RiemannGaussian.SuzukiDivisorQuotientOptimizer
 import RiemannGaussian.SuzukiBalancedCells
+import RiemannGaussian.SuzukiLaplaceCompensator
+import RiemannGaussian.SuzukiSubexponentialWork

@@ -4,6 +4,7 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: David Sanftenberg
 -/
 import RiemannGaussian.SuzukiProperPrimePowerWork
+import RiemannGaussian.SuzukiLaplaceCompensator
 import RiemannGaussian.RiemannXiSuzukiPositiveCriticalStripEtaLeadingLogMomentGapBound
 
 /-!
@@ -24,51 +25,6 @@ noncomputable section
 open MeasureTheory ProbabilityTheory Filter Set Complex
 open scoped Topology ENNReal
 
-private def timeDensity (f : ℝ → ℝ) : Measure ℝ :=
-  (volume.restrict (Ioi 0)).withDensity (fun t => ENNReal.ofReal (f t))
-
-private theorem timeDensity_nonneg_time (f : ℝ → ℝ)
-    (hf : AEMeasurable f (volume.restrict (Ioi 0))) :
-    ∀ᵐ t ∂timeDensity f, 0 ≤ t := by
-  rw [timeDensity, ae_withDensity_iff' hf.ennreal_ofReal]
-  filter_upwards [ae_restrict_mem measurableSet_Ioi] with t ht
-  exact fun _ => ht.le
-
-private theorem timeDensity_integrable_exp (f : ℝ → ℝ)
-    (hf : AEMeasurable f (volume.restrict (Ioi 0)))
-    (hpos : ∀ t : ℝ, 0 < t → 0 ≤ f t) (x : ℝ)
-    (hi : IntegrableOn (fun t : ℝ => f t * Real.exp (x * t)) (Ioi 0)) :
-    x ∈ integrableExpSet id (timeDensity f) := by
-  change Integrable (fun t : ℝ => Real.exp (x * t)) _
-  rw [timeDensity, integrable_withDensity_iff_integrable_smul₀' hf.ennreal_ofReal
-    (Eventually.of_forall fun _ => ENNReal.ofReal_lt_top)]
-  apply hi.congr
-  filter_upwards [ae_restrict_mem measurableSet_Ioi] with t ht
-  rw [ENNReal.toReal_ofReal (hpos t ht), smul_eq_mul]
-
-private theorem timeDensity_complexMGF (f : ℝ → ℝ)
-    (hf : AEMeasurable f (volume.restrict (Ioi 0)))
-    (hpos : ∀ t : ℝ, 0 < t → 0 ≤ f t) (z : ℂ) :
-    complexMGF id (timeDensity f) z =
-      ∫ t in Ioi (0 : ℝ), (f t : ℂ) * Complex.exp (z * (t : ℂ)) := by
-  rw [complexMGF, timeDensity,
-    integral_withDensity_eq_integral_toReal_smul₀ hf.ennreal_ofReal
-      (Eventually.of_forall fun _ => ENNReal.ofReal_lt_top)]
-  apply integral_congr_ae
-  filter_upwards [ae_restrict_mem measurableSet_Ioi] with t ht
-  rw [ENNReal.toReal_ofReal (hpos t ht), Complex.real_smul]
-  rfl
-
-private theorem integrable_complex_weight (f : ℝ → ℝ)
-    (hf : AEMeasurable f (volume.restrict (Ioi 0)))
-    (hpos : ∀ t : ℝ, 0 < t → 0 ≤ f t) (z : ℂ)
-    (hi : IntegrableOn (fun t : ℝ => f t * Real.exp (z.re * t)) (Ioi 0)) :
-    IntegrableOn (fun t : ℝ => (f t : ℂ) * Complex.exp (z * (t : ℂ))) (Ioi 0) := by
-  apply (integrable_norm_iff (by fun_prop)).mp
-  apply hi.congr
-  filter_upwards [ae_restrict_mem measurableSet_Ioi] with t ht
-  simp [norm_real, Complex.norm_exp, abs_of_nonneg (hpos t ht)]
-
 private theorem affine_weight_integrable (C D : ℝ) {x : ℝ} (hx : x < 0) :
     IntegrableOn (fun t : ℝ => (C + D * t) * Real.exp (x * t)) (Ioi 0) := by
   have hc := (integrableOn_exp_mul_Ioi hx 0).const_mul C
@@ -87,85 +43,10 @@ theorem riemannHypothesis_of_suzuki_signal_scaled_affine_lower_bound
     {a C D : ℝ} (ha : a ≠ 0) (hC : 0 ≤ C) (hD : 0 ≤ D)
     (hb : ∀ t : ℝ, 0 < t → -(C + D * t) ≤ a * suzukiChebyshevLogAverageLaplaceSignal t) :
     RiemannHypothesis := by
-  let f : ℝ → ℝ := fun t => C + D * t
-  let g : ℝ → ℝ := fun t => a * suzukiChebyshevLogAverageLaplaceSignal t + f t
-  have hf : AEMeasurable f (volume.restrict (Ioi 0)) := by dsimp [f]; fun_prop
-  have hg : AEMeasurable g (volume.restrict (Ioi 0)) :=
-    (aemeasurable_suzukiChebyshevLogAverageLaplaceSignal.const_mul a).add hf
-  have hfpos : ∀ t : ℝ, 0 < t → 0 ≤ f t := by intro t ht; dsimp [f]; positivity
-  have hgpos : ∀ t : ℝ, 0 < t → 0 ≤ g t := by intro t ht; dsimp [g, f]; linarith [hb t ht]
-  have hfi : ∀ x : ℝ, x < 0 → x ∈ integrableExpSet id (timeDensity f) := by
-    intro x hx
-    exact timeDensity_integrable_exp f hf hfpos x (affine_weight_integrable C D hx)
-  have hfd : Iio (0 : ℝ) ⊆ interior (integrableExpSet id (timeDensity f)) :=
-    isOpen_Iio.subset_interior_iff.mpr hfi
-  have hgi : ∀ x : ℝ, x < -1 / 2 → x ∈ integrableExpSet id (timeDensity g) := by
-    intro x hx
-    apply timeDensity_integrable_exp g hg hgpos x
-    have hi := (integrableOn_suzukiChebyshevLogAverageLaplaceKernel
-      (lambda := -x) (by linarith)).const_mul a |>.add
-        (affine_weight_integrable C D (by linarith : x < 0))
-    apply hi.congr
-    filter_upwards [] with t
-    dsimp [g, f, suzukiChebyshevLogAverageLaplaceKernel]
-    ring_nf
-  have heq : ∀ z : ℂ, 1 / 2 < z.re →
-      complexMGF id (timeDensity g) (-z) =
-        (a : ℂ) * suzukiChebyshevLogAverageComplexLaplaceTransform z +
-          complexMGF id (timeDensity f) (-z) := by
-    intro z hz
-    have hsig : IntegrableOn
-        (fun t : ℝ => (suzukiChebyshevLogAverageLaplaceSignal t : ℂ) *
-          Complex.exp (-z * (t : ℂ))) (Ioi (0 : ℝ)) := by
-      have h := integrable_suzukiChebyshevLogAverageComplexLaplaceIntegrand hz
-      unfold suzukiChebyshevLogAverageComplexLaplaceIntegrand at h
-      exact (integrable_indicator_iff measurableSet_Ioi).mp h
-    have hfint := integrable_complex_weight f hf hfpos (-z)
-      (affine_weight_integrable C D (by simp only [neg_re]; linarith : (-z).re < 0))
-    rw [timeDensity_complexMGF g hg hgpos, timeDensity_complexMGF f hf hfpos]
-    have hfun : (fun t : ℝ => (g t : ℂ) * Complex.exp (-z * (t : ℂ))) =
-        fun t => (a : ℂ) * ((suzukiChebyshevLogAverageLaplaceSignal t : ℂ) *
-          Complex.exp (-z * (t : ℂ))) +
-          (f t : ℂ) * Complex.exp (-z * (t : ℂ)) := by
-      ext t
-      dsimp [g]
-      push_cast
-      ring
-    rw [hfun, integral_add (hsig.const_mul (a : ℂ)) hfint, integral_const_mul]
-    unfold suzukiChebyshevLogAverageComplexLaplaceTransform
-      suzukiChebyshevLogAverageComplexLaplaceIntegrand
-    rw [integral_indicator measurableSet_Ioi]
-  have hF : AnalyticOnNhd ℝ (fun x : ℝ =>
-      a * (suzukiChebyshevLogAverageLaplaceCompletedContinuation (-x : ℂ)).re +
-        mgf id (timeDensity f) x) (Iio 0) :=
-    fun x hx => (analyticAt_const.mul
-      (analyticOnNhd_suzukiCompletedResponse_neg_real x hx)).add (analyticAt_mgf (hfd hx))
-  have hgd : Iio (0 : ℝ) ⊆ interior (integrableExpSet id (timeDensity g)) := by
-    apply Iio_subset_interior_integrableExpSet_of_analytic_mgf
-      measurable_id.aemeasurable (timeDensity_nonneg_time g hg)
-      (a := -1 / 2) hgi hF
-    intro x hx
-    change x < -1 / 2 at hx
-    have hz : 1 / 2 < (-x : ℂ).re := by simp only [neg_re, ofReal_re]; linarith
-    have h := heq (-x) hz
-    rw [suzukiChebyshevLogAverageComplexLaplaceTransform_eq_completedContinuation hz] at h
-    have hr := congrArg Complex.re h
-    simpa [complexMGF_ofReal] using hr.symm
-  let H : ℂ → ℂ := fun z => (a : ℂ)⁻¹ * (complexMGF id (timeDensity g) (-z) -
-    complexMGF id (timeDensity f) (-z))
-  have hH : AnalyticOnNhd ℂ H {z : ℂ | 0 < z.re} := by
-    intro z hz
-    have hx : (-z).re ∈ Iio (0 : ℝ) := by change -z.re < 0; exact neg_neg_of_pos hz
-    exact analyticAt_const.mul
-      (((analyticAt_complexMGF (hgd hx)).comp analyticAt_id.neg).sub
-        ((analyticAt_complexMGF (hfd hx)).comp analyticAt_id.neg))
-  apply riemannHypothesis_of_suzukiLaplace_extension H hH
-  intro z hz
-  dsimp [H]
-  rw [heq z hz]
-  have ha' : (a : ℂ) ≠ 0 := by exact_mod_cast ha
-  field_simp
-  ring
+  apply riemannHypothesis_of_suzuki_signal_scaled_compensated_lower_bound
+    ha (fun t => C + D * t) (by fun_prop) _ (fun _ hx => affine_weight_integrable C D hx) hb
+  intro t ht
+  positivity
 
 /-- An affine time loss is harmless to the analytic RH implication. The
 compensator's Laplace transform genuinely converges throughout `Re z > 0`
@@ -215,14 +96,16 @@ private theorem firstTailGap_le_frozen (cutoff : ℕ) {t : ℝ} (ht : Real.log 2
   unfold firstTailGap curvatureTransportGap
   linarith
 
-/-- The active event prefix converts a logarithmic cutoff floor into the
-same affine time floor. No bound for inactive future prefixes is used. -/
-theorem suzukiPsi_lower_bound_of_canonical_gap_log_lower_bound
-    {C D : ℝ} (hC : 0 ≤ C) (hD : 0 ≤ D)
-    (hg : ∀ count : ℕ, -(C + D * Real.log ((count + 2 : ℕ) : ℝ)) ≤
+/-- The active event prefix transports any nonnegative increasing time
+allowance from all canonical gaps to the literal Suzuki function. Only the
+active prefix is used, retaining its exact physical cutoff. -/
+theorem suzukiPsi_lower_bound_of_canonical_gap_monotone_lower_bound
+    (f : ℝ → ℝ) (hf : MonotoneOn f (Ici (Real.log 2)))
+    (hfpos : ∀ t : ℝ, Real.log 2 ≤ t → 0 ≤ f t)
+    (hg : ∀ count : ℕ, -f (Real.log ((count + 2 : ℕ) : ℝ)) ≤
       suzukiFirstTailCanonicalGap count)
     {t : ℝ} (ht : Real.log 2 ≤ t) :
-    -(C + D * t) ≤ riemannXiSuzukiPsiNonnegative t := by
+    -f t ≤ riemannXiSuzukiPsiNonnegative t := by
   have ht0 : 0 ≤ t := (Real.log_pos (by norm_num : (1 : ℝ) < 2)).le.trans ht
   obtain ⟨cutoff, hcut⟩ := suzukiResetEventCutsCover (suzukiPrimeEventCut_logTwo_one.2 0) t
   have heq := suzukiFullModel_eq_resetModel_on_tail suzukiPrimeEventCut_logTwo_one
@@ -238,7 +121,7 @@ theorem suzukiPsi_lower_bound_of_canonical_gap_log_lower_bound
     simp only [firstTailGap, curvatureTransportGap, screwPrefixMoment,
       Finset.range_zero, Finset.sum_empty, add_zero, suzukiResetTransportMassPoint_zero,
       transportCurvatureMoment_self, sub_zero]
-    have hp : 0 ≤ C + D * t := by positivity
+    have hp := hfpos t ht
     linarith
   | succ count =>
     have hlog : Real.log ((count + 2 : ℕ) : ℝ) ≤ t := by
@@ -248,9 +131,28 @@ theorem suzukiPsi_lower_bound_of_canonical_gap_log_lower_bound
         have h := hcut.1 (n + 1) (by omega)
         simpa only [suzukiResetLocation_succ, suzukiPrimeLocation, Nat.add_assoc,
           Nat.reduceAdd] using h
-    have h := mul_le_mul_of_nonneg_left hlog hD
-    change -(C + D * t) ≤ suzukiFirstTailCanonicalGap count
+    have hbase : Real.log 2 ≤ Real.log ((count + 2 : ℕ) : ℝ) :=
+      Real.log_le_log (by norm_num) (by norm_cast; omega)
+    have h := hf hbase ht hlog
+    change -f t ≤ suzukiFirstTailCanonicalGap count
     linarith [hg count]
+
+/-- The active event prefix converts a logarithmic cutoff floor into the
+same affine time floor. No bound for inactive future prefixes is used. -/
+theorem suzukiPsi_lower_bound_of_canonical_gap_log_lower_bound
+    {C D : ℝ} (hC : 0 ≤ C) (hD : 0 ≤ D)
+    (hg : ∀ count : ℕ, -(C + D * Real.log ((count + 2 : ℕ) : ℝ)) ≤
+      suzukiFirstTailCanonicalGap count)
+    {t : ℝ} (ht : Real.log 2 ≤ t) :
+    -(C + D * t) ≤ riemannXiSuzukiPsiNonnegative t := by
+  apply suzukiPsi_lower_bound_of_canonical_gap_monotone_lower_bound
+    (fun s => C + D * s) _ _ hg ht
+  · intro x _ y _ hxy
+    dsimp only
+    linarith [mul_le_mul_of_nonneg_left hxy hD]
+  · intro s hs
+    have hs0 := (Real.log_pos (by norm_num : (1 : ℝ) < 2)).le.trans hs
+    positivity
 
 /-- A logarithmic lower loss on all canonical gaps suffices for RH. Its
 linear time compensation is genuinely integrable at every positive damping. -/
