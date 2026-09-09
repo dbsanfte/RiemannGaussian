@@ -27,21 +27,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Find an independent signed bound for the finite ordinary-prime band that detects every hypothetical zero right of 1/2. Its normalized value tends to the negative zero multiplicity, with all omitted terms controlled. A one-sided bound on arbitrarily large orders would suffice. The exact phase optimiser now supplies a uniform arithmetic floor of 1/120 and stronger local zero constraints; the global signed bound remains open.
+Search for a uniform finite lower floor for the exact Suzuki mass–moment potential. Lean verifies divisor-kernel minorants at its exact mass center, retains the full cost of other centers, and connects an eventual floor to RH. The certificate family remains open: coarse numerical weights lose too much, and smoother weights have growing sampled slack. The finite prime-band route and phase arithmetic floor remain supporting results.
 
 ## Latest Update
 
-Lean now proves a [stronger arithmetic floor](RiemannGaussian/ZetaPhaseWeightedRecurrence.lean)
-by retaining the multiplicities of linked phase returns. The general
-bound improves by a factor `N(N+1)/2` at a positive block source: tenfold
-for the same four powers. Five powers of 2 give the exact optimiser a
-proved floor of **`1/120`**, uniformly in height for `1 < sigma <= 5/4`.
+Lean now proves the [Suzuki divisor-certificate interface](RiemannGaussian/SuzukiLegendreDivisorDual.lean):
+an exact weighted divisor identity, its full nonnegative kernel slack,
+and a lower bound for the actual nonlinear potential at the exact mass center.
+The potential is a **minimum** over centers; another center must pay its
+complete exponential convexity cost. An eventual finite certificate floor
+would imply Mathlib's RH, with feasibility and the floor still unproved.
 
-The actual zero inequality now retains an explicit `d/120` reserve,
-where `d=1-Re(rho)`, and yields a stronger nonvanishing test. This is a
-bounded local improvement; the independent global signed prime-band
-bound remains open. See the
-[weighted-return proof and comparison](docs/zeta-phase-weighted-recurrence.md).
+Numerical screening finds smoother weights substantially better than coarse
+interval weights, but their sampled slack grows through `N=131072`.
+There is no new uniform floor or zero exclusion. See the
+[sign correction, checked theorems, and search results](docs/suzuki-legendre-divisor-dual.md).
 
 ## Notable Formalisations
 
@@ -53,7 +53,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Exact phase optimisation and arithmetic floors** | A unique maximiser for the specified shift and linear cost, among all feasible finite or infinite integer-frequency families. Exactly eight nonconstant frequencies occur. Its four contact cosines avoid their doubled images. Weighted prime-power returns give a uniform arithmetic floor `1/120` for `1 < sigma <= 5/4` and an explicit reserve in actual zero exclusion. | [existsUnique_phaseContactOptimizer](RiemannGaussian/ZetaPhaseExactOptimizer.lean), [phaseContactExact_doubled_contact_gap](RiemannGaussian/ZetaPhaseContactDoubling.lean), [phaseContactExact_arithmetic_floor](RiemannGaussian/ZetaPhaseWeightedRecurrence.lean), [phaseContactExact_weighted_exclusion](RiemannGaussian/ZetaPhaseWeightedRecurrence.lean) |
 | **Literal signed prime detection of hypothetical zeros** | An exact local-divisor polynomial isolates each right-half zero's negative multiplicity in a finite ordinary-prime band. Proper prime powers, both arithmetic tails, and the complete analytic remainder are negligible. The independent lower bound for the retained signed band remains open. | [tendsto_zetaRightHalfOrdinaryPrimeBandFilter_re](RiemannGaussian/ZetaPrimeMomentBand.lean), [tendsto_zetaRightHalfPrimeBandChebyshevIntegral_re](RiemannGaussian/ZetaPrimeBandChebyshev.lean) |
 | **Prime Gram rank and quadratic source separation** | Actual complex prime Gram matrices retain full finite rank after every finite prefix. A separate quadratic identity has independently negligible mixed and same-prime terms, leaving its nonzero zero-source on distinct-prime products. | [zetaPrimeGram_sub_prefix_rank](RiemannGaussian/ZetaPrimeGram.lean), [exists_zetaPrimeMixedProductMoment_decay_bound](RiemannGaussian/ZetaPrimeQuadraticMoments.lean), [tendsto_zetaDistinctPrimePair_source](RiemannGaussian/ZetaPrimePairDiagonal.lean) |
-| **Suzuki work floors and positive Laplace continuation** | The analytic chain from the literal Suzuki signal to Mathlib's RH, including genuine Laplace convergence and the zero-residue contradiction. The sufficient signed-work bounds remain unproved arithmetic premises. | [riemannHypothesis_of_suzuki_psi_nonnegative_tail](RiemannGaussian/SuzukiPositivityRH.lean), [bounded-work reduction](RiemannGaussian/SuzukiBoundedWork.lean), [logarithmic allowance](RiemannGaussian/SuzukiLogarithmicWork.lean) |
+| **Suzuki work floors, divisor certificates, and positive Laplace continuation** | The analytic chain from the literal Suzuki signal to Mathlib's RH, including genuine Laplace convergence and the zero-residue contradiction. Exact finite divisor minorants now certify lower bounds for the mass–moment potential at its true minimizing center. The uniform arithmetic floor remains open. | [riemannHypothesis_of_suzuki_psi_nonnegative_tail](RiemannGaussian/SuzukiPositivityRH.lean), [bounded-work reduction](RiemannGaussian/SuzukiBoundedWork.lean), [divisor-certificate theorem](RiemannGaussian/SuzukiLegendreDivisorDual.lean), [logarithmic allowance](RiemannGaussian/SuzukiLogarithmicWork.lean) |
 | **Gaussian/Weil explicit formula** | The arithmetic Gaussian expression, including prime-power and Archimedean terms, equals the canonical multiplicity-weighted symmetric zeta-zero sum for every positive width. | [gaussianArithmeticExplicitFormula_eq_canonical](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean#L1235) |
 | **Gaussian Möbius arithmetic and cancellation** | The full reciprocal integral equals the actual Möbius sum, with every contour correction controlled. Its unit-time cancellation transfers through an exact complex heat identity: for each fixed complex `s`, `exp((s−1)a) W_s,2(a) → 0` with full phase retained, hence `W_s,2(log X)=o(X^(1−Re(s)))`. Absolute convergence holds for every positive heat time. | [gaussianMoebiusSum_one_le_reciprocal_log_gain_eventually](RiemannGaussian/GaussianMoebiusCancellation.lean), [summable_complexGaussianMoebiusSummand](RiemannGaussian/ComplexGaussianMoebius.lean), [integral_normalizedGaussianMoebius_heat](RiemannGaussian/GaussianMoebiusPhaseHeat.lean), [complexGaussianMoebiusSum_two_normalized_tendsto_zero](RiemannGaussian/GaussianMoebiusComplexCancellation.lean) |
 | **Quantitative finite Möbius cancellation and completed quotient blocks** | The unsmoothed sum has exponential decay in the cubic logarithmic scale `A(h)=10^15 h^3`, with all contour and cutoff errors included. Complex prefixes and literal quotient blocks inherit a quantitative rate above a specified weight-dependent cutoff. A common scale threshold works for all weights, with explicit weight dependence in the constants. The original completed zeroth eta blocks retain their completion and odd endpoint decay. | [abs_moebiusLogPrefix_cubic_le_eventually](RiemannGaussian/MoebiusFiniteQuantitativeCancellation.lean), [exists_complexMoebiusFinitePrefix_cubic_rate](RiemannGaussian/MoebiusFiniteMellinRate.lean), [exists_pairedEtaCompletedMoebius_divided_block_cubic_rate](RiemannGaussian/EtaMoebiusDividedBlockRate.lean) |

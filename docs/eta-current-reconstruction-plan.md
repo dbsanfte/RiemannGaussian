@@ -6,6 +6,19 @@ estimate**. The objective remains active until both parts are proved and
 verified. The completed [signed endpoint package](eta-signed-endpoint-theorem-plan.md)
 provides the actual support, gap, phase, Gaussian, and mixed-matrix inputs.
 
+The September 9 reorientation steer now makes the
+[Suzuki divisor-certificate search](suzuki-legendre-divisor-dual.md) the
+active arithmetic route. Lean proves the exact divisor transport and
+weighted slack identity, corrects the steer's reversed Legendre inequality,
+and certifies a lower bound at the exact finite mass center. Other centers
+retain their full exponential convexity cost. The compiled capstone
+`riemannHypothesis_of_suzukiDivisorDual_eventual_floor` connects an eventual
+feasible family with a common finite floor to Mathlib's RH; both arithmetic
+hypotheses remain open. Numerical interval and smooth-weight searches
+through `N=131072` find improved finite certificates but growing slack.
+No uniform floor or new zero exclusion follows. Further coarse-bin searches
+and the unfinished global-xi residual exploration are paused.
+
 The latest [weighted phase-return bound](zeta-phase-weighted-recurrence.md)
 retains every triangular difference multiplicity in the full Gram block.
 For a positive block source it improves the preceding arithmetic floor
