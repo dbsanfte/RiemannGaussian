@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="313.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 890 modules · 18940 declarations · 16291 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 975 modules · 22634 declarations · 19640 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · milestones standard-only</text>
   <text class="section" x="20" y="64">CHECKED RESULTS, IDENTITIES, AND ATTRIBUTED BASELINE</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -65,7 +65,7 @@
   </g>
   <g class="proved unconditional">
     <rect x="180" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.nontrivialZetaZero_mem_signedQuadratic_strip</title>
+    <title>RiemannGaussian.nontrivialZetaZero_mem_phaseContact_reciprocal_log_strip</title>
     <text x="252" y="173">zero-free strip</text>
     <text x="252" y="191">explicit 1/log  ✓</text>
   </g>
@@ -89,18 +89,18 @@
   </g>
   <g class="proved bridge">
     <rect x="180" y="229" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.pairedEtaNormalizedReflectedEnergyPartialSum_power_lower_eventually</title>
-    <text x="252" y="252">normalized energy</text>
-    <text x="252" y="270">8 side S ≥ c K^e  ✓</text>
+    <title>RiemannGaussian.tendsto_zetaRightHalfOrdinaryPrimeBandFilter_re</title>
+    <text x="252" y="252">finite prime band</text>
+    <text x="252" y="270">zero source = -m  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>
-    <text x="765" y="133">signed eta flux</text>
-    <text x="765" y="153">summability OPEN</text>
+    <text x="765" y="133">signed prime band</text>
+    <text x="765" y="153">one-sided bound OPEN</text>
   </g>
   <g class="goal">
     <rect x="855" y="114" width="125" height="50" rx="9"/>
     <text x="917" y="144">RH</text>
   </g>
-  <text class="frontier" x="20" y="300">The complete arithmetic tail beyond M² tends to zero. Decay through the growing quadratic cutoff and the original current bound remain open.</text>
+  <text class="frontier" x="20" y="300">The finite prime band retains the exact zero source. Its independent signed bound remains open; the local phase reserve does not prove RH.</text>
 </svg>

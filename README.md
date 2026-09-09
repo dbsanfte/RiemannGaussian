@@ -27,24 +27,23 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Bound the full reflected eta-energy channel at each hypothetical zero right of 1/2. Lean now bounds the original colour's entire tail by A_rho*K^(1-2*Re(rho)) and retains its finite total in the signed identity. The surviving reflected energy still carries the known positive cutoff power. The required independent upper saving and RH remain open.
+Find an independent signed bound for the finite ordinary-prime band that detects every hypothetical zero right of 1/2. Its normalized value tends to the negative zero multiplicity, with all omitted terms controlled. A one-sided bound on arbitrarily large orders would suffice. The exact phase optimiser supplies separate local zero constraints; its bounded arithmetic reserves do not close the global RH gap.
 
 ## Latest Update
 
-Lean now proves a [decaying bound for the entire recessive energy channel](RiemannGaussian/EtaCurrentRecessiveEnergy.lean).
-For every actual zero with `sigma=Re(rho)>1/2`, its original colour's
-energy tail from `K>=1` is at most
-`C_rho.re * Q_rho^2 / (2*sigma-1) * K^(1-2*sigma)`, uniformly over any
-finite band or the complete infinite tail. The actual multiplicity,
-completion factor, and physical prefixes are retained.
+The exact optimiser's [four contacts cannot persist under angle doubling](RiemannGaussian/ZetaPhaseContactDoubling.lean).
+Lean proves a uniform positive floor for `P(theta)+P(2*theta)`, then
+transfers it to the linked prime and prime-square terms in zeta's actual
+arithmetic sum. The resulting positive reserve strengthens the local
+zero inequality that previously discarded that work and gives a literal
+nonvanishing test.
 
-The exact signed comparison is now `S(K)=P_reflected(K)-T_original+tail(K)`.
-The finite total `T_original` is also explicitly bounded, and both
-upstream transport budgets carry the comparison back to the original
-weighted current. This limits the cancellation available from the
-original colour. The independent bound for the surviving reflected
-energy remains open; no new zero exclusion follows. The
-[ledger](docs/eta-current-recessive-energy.md) records the checked bounds.
+This explains an arithmetic constraint on the contact geometry. It is
+not claimed to outperform the existing four-return floor, and no new
+numerical strip constant is asserted. The independent global signed
+prime-band bound remains open. See the
+[contact analysis](docs/zeta-phase-contact-doubling.md) and
+[research ledger](docs/eta-current-reconstruction-plan.md).
 
 ## Notable Formalisations
 
@@ -53,6 +52,10 @@ a compiled theorem; its source records the precise domains and hypotheses.
 
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
+| **Exact phase optimisation and contact geometry** | A unique maximiser for the specified shift and linear cost, among all feasible finite or infinite integer-frequency families. Exactly eight nonconstant frequencies occur. Its four contact cosines avoid their doubled images, forcing positive work from a prime and its square. | [existsUnique_phaseContactOptimizer](RiemannGaussian/ZetaPhaseExactOptimizer.lean), [phaseContactExact_doubled_contact_gap](RiemannGaussian/ZetaPhaseContactDoubling.lean), [exists_phaseContactExact_prime_square_exclusion](RiemannGaussian/ZetaPhaseContactDoubling.lean) |
+| **Literal signed prime detection of hypothetical zeros** | An exact local-divisor polynomial isolates each right-half zero's negative multiplicity in a finite ordinary-prime band. Proper prime powers, both arithmetic tails, and the complete analytic remainder are negligible. The independent lower bound for the retained signed band remains open. | [tendsto_zetaRightHalfOrdinaryPrimeBandFilter_re](RiemannGaussian/ZetaPrimeMomentBand.lean), [tendsto_zetaRightHalfPrimeBandChebyshevIntegral_re](RiemannGaussian/ZetaPrimeBandChebyshev.lean) |
+| **Prime Gram rank and quadratic source separation** | Actual complex prime Gram matrices retain full finite rank after every finite prefix. A separate quadratic identity has independently negligible mixed and same-prime terms, leaving its nonzero zero-source on distinct-prime products. | [zetaPrimeGram_sub_prefix_rank](RiemannGaussian/ZetaPrimeGram.lean), [exists_zetaPrimeMixedProductMoment_decay_bound](RiemannGaussian/ZetaPrimeQuadraticMoments.lean), [tendsto_zetaDistinctPrimePair_source](RiemannGaussian/ZetaPrimePairDiagonal.lean) |
+| **Suzuki work floors and positive Laplace continuation** | The analytic chain from the literal Suzuki signal to Mathlib's RH, including genuine Laplace convergence and the zero-residue contradiction. The sufficient signed-work bounds remain unproved arithmetic premises. | [riemannHypothesis_of_suzuki_psi_nonnegative_tail](RiemannGaussian/SuzukiPositivityRH.lean), [bounded-work reduction](RiemannGaussian/SuzukiBoundedWork.lean), [logarithmic allowance](RiemannGaussian/SuzukiLogarithmicWork.lean) |
 | **Gaussian/Weil explicit formula** | The arithmetic Gaussian expression, including prime-power and Archimedean terms, equals the canonical multiplicity-weighted symmetric zeta-zero sum for every positive width. | [gaussianArithmeticExplicitFormula_eq_canonical](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean#L1235) |
 | **Gaussian Möbius arithmetic and cancellation** | The full reciprocal integral equals the actual Möbius sum, with every contour correction controlled. Its unit-time cancellation transfers through an exact complex heat identity: for each fixed complex `s`, `exp((s−1)a) W_s,2(a) → 0` with full phase retained, hence `W_s,2(log X)=o(X^(1−Re(s)))`. Absolute convergence holds for every positive heat time. | [gaussianMoebiusSum_one_le_reciprocal_log_gain_eventually](RiemannGaussian/GaussianMoebiusCancellation.lean), [summable_complexGaussianMoebiusSummand](RiemannGaussian/ComplexGaussianMoebius.lean), [integral_normalizedGaussianMoebius_heat](RiemannGaussian/GaussianMoebiusPhaseHeat.lean), [complexGaussianMoebiusSum_two_normalized_tendsto_zero](RiemannGaussian/GaussianMoebiusComplexCancellation.lean) |
 | **Quantitative finite Möbius cancellation and completed quotient blocks** | The unsmoothed sum has exponential decay in the cubic logarithmic scale `A(h)=10^15 h^3`, with all contour and cutoff errors included. Complex prefixes and literal quotient blocks inherit a quantitative rate above a specified weight-dependent cutoff. A common scale threshold works for all weights, with explicit weight dependence in the constants. The original completed zeroth eta blocks retain their completion and odd endpoint decay. | [abs_moebiusLogPrefix_cubic_le_eventually](RiemannGaussian/MoebiusFiniteQuantitativeCancellation.lean), [exists_complexMoebiusFinitePrefix_cubic_rate](RiemannGaussian/MoebiusFiniteMellinRate.lean), [exists_pairedEtaCompletedMoebius_divided_block_cubic_rate](RiemannGaussian/EtaMoebiusDividedBlockRate.lean) |
@@ -132,6 +135,14 @@ positivity or vanishing direction remains unproved.
 
 ## Accomplishments
 
+- **Proved an exact phase optimiser over all admissible integer frequencies.**
+  [existsUnique_phaseContactOptimizer](RiemannGaussian/ZetaPhaseExactOptimizer.lean)
+  proves existence and uniqueness for the specified cost and shift, including
+  infinite competitors. The tiny high-frequency coefficients are necessary
+  for that optimum. Its actual zeta application proves the
+  [reciprocal-logarithm edge strip with denominator `23000`](RiemannGaussian/ZetaPhaseExactZeroBound.lean).
+  This is a project improvement within a classical type of zero-free region,
+  not a claim of a best known bound, an intrinsic zeta frequency count, or RH.
 - **Reproduced Anthropic's `2/3` certificate in Lean.**
   [externalZeta23_twoThirds_distinctCritical](RiemannGaussian/External/Zeta23Baseline.lean#L30)
   rechecks the unconditional statement that, for every `ε > 0` and all

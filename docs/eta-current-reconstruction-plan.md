@@ -6,6 +6,237 @@ estimate**. The objective remains active until both parts are proved and
 verified. The completed [signed endpoint package](eta-signed-endpoint-theorem-plan.md)
 provides the actual support, gap, phase, Gaussian, and mixed-matrix inputs.
 
+The user's subsequent focus on the exact phase optimiser led to
+[contact doubling and a prime-square reserve](zeta-phase-contact-doubling.md).
+Every doubled contact stays at least `1/20` from every contact, so
+`P(theta)+P(2*theta)` has a uniform positive floor. The actual linked
+prime and prime-square terms then give a positive arithmetic reserve in
+the existing local zero budget, with a literal zeta nonvanishing test.
+This strengthens that local inequality without an unproved arithmetic
+premise. No numerical value for the new reserve is asserted. Its bounded
+scale does not close the independent global signed prime-moment bound.
+
+Following the user's request to step back, the
+[contradiction-route audit](zeta-contradiction-route-audit.md) pauses further
+quadratic decomposition and returns to the existing linear finite prime
+band as the reference target. An independent one-sided bound above its
+negative multiplicity limit at arbitrarily large orders would suffice;
+neither a norm bound nor a uniform prime-pair estimate is necessary.
+No such bound was proved in the audit. The exact two-prime coefficient and
+its logarithmic separation identity are retained as elementary arithmetic
+lemmas, with no new zero exclusion or claim of mathematical novelty.
+
+The latest [prime quadratic separation](zeta-prime-quadratic-separation.md)
+independently bounds the whole mixed product at the normalized zero-source
+scale by `C/(N+1)`, retaining every moment cross term and clearing both
+actual divisors on the selected closed disc. Its literal arithmetic sum
+is the convolution of von Mangoldt with the complete prime-divisor weight.
+The pure prime quadratic retains the nonzero source
+`W(rho)*(rho-1)^4*m^2`. The prime-power restriction of this pair sum is
+also independently negligible, now with geometric decay. A checked
+support theorem confines the surviving source to products `p^a*q^b`
+with distinct prime bases and positive exponents. The independent
+signed estimate for that complete cross-prime sum remains open;
+neither the mixed-product bound nor coefficient positivity supplies
+it. There is no new zero exclusion.
+
+The preceding [prime-colour coupling](zeta-prime-colour-cancellation.md)
+proves that the positive prime-power and mixed-prime divisor weights have
+disjoint support. Their common response, with its complete pole at one
+removed, has a `C*q^N` moment bound at every right-half-zero scale, with
+`q<1`. The full quadratic identity retains the nonzero `-m^2` zero source
+and every interaction between moment orders. The bounded linear sum
+cancels its own source; the surviving prime quadratic form still needs
+an independent signed estimate.
+
+The preceding structural advance is the
+[positive composite zeta response](zeta-positive-composite-response.md):
+one complete logarithmic convolution turns the signed composite Möbius
+coefficients nonnegative, and its fixed zeta function has coefficient
+`-m^2` at the double pole of every right-half zero. All logarithmic moments
+and arbitrary finite complex probe energies retain this arithmetic
+positivity. The preceding [global Wronskian estimate](zeta-wronskian-global-moments.md)
+also gives the actual prime arm a `C/(N+1)` normalized bound and the
+composite source a matching error allowance. The independent signed
+bound for the whole filtered response remains open. Neither result is a
+new zero exclusion; the pole at one and the complex cofactor remain
+explicit obligations.
+
+The latest [dominant-energy diagnostic](eta-current-dominant-energy-asymptotic.md)
+now proves the exact positive asymptotic
+`P_reflected(K)/K^e -> A_rho>0`, `S(K)/K^e -> A_rho`, and
+`W(K)/K^e -> 4*A_rho` for every hypothetical right-half actual zero.
+The coefficient is the literal completed Euler endpoint, with actual
+multiplicity retained. Its subtraction leaves an absolutely summable
+energy error throughout the open strip. Lean also proves that every
+smaller leading coefficient is eventually exceeded by `W`.
+Following the user's quick dominant-energy steer, further inverse/gcd/fibre
+decompositions are suspended unless an independent arithmetic or spectral
+identity can contradict this exact positive main term. The next task is
+to identify such independent input or select a different family with a
+specific, justified estimate. This diagnosis supplies no zero exclusion.
+The new results are locally validated and remain uncommitted at the user's
+request.
+
+The first independent-input screen then revisited the literal Suzuki
+prime-sum criterion. Its [quadratic-condition audit](suzuki-quadratic-mass-obstruction.md)
+proves an actual counterexample at the prefix ending at `5`: the quadratic
+cost exceeds the exact allowance by at least `1/4000`. Thus the existing
+all-cutoff quadratic antecedent is false. This finite obstruction does not
+rule out an eventual quadratic bound or the exact entropy criterion.
+Any continuation through this separate family must keep that distinction;
+its needed independent arithmetic inequality remains open.
+
+The subsequent [canonical-cell estimate](suzuki-transport-cell-cost.md)
+retains the exact Suzuki recurrence as signed prime work minus a
+nonnegative nonlinear cost. Lean bounds every actual cell cost by
+`2*log(j+3)^2/(j+1)^(3/2)` and proves the complete cost series summable.
+It follows that the error in replacing any sufficiently late finite-band
+gap change by its signed work is uniformly small, independently of band
+length. This controls the local optimization cost without a zero
+hypothesis. A lower bound for the retained signed arithmetic work is still
+needed; the original endpoint entropy condition and the RH goal remain open.
+
+The user's request to repair chain omissions led to the
+[positive-Laplace connection](suzuki-positivity-rh.md). Lean now proves the
+full implication from literal Suzuki tail positivity to Mathlib's RH,
+including genuine integral convergence on every positive damping,
+real-axis zero exclusion from eta mass, analytic continuation through a
+cleared xi denominator, and the contradiction with each positive zero
+multiplicity. The current canonical-gap, exact entropy and signed-work
+criteria now have compiled terminal theorems concluding `RiemannHypothesis`.
+Their arithmetic premises remain open. No unconditional zero bound follows
+from completing these analytic connections.
+
+The next [finite-floor reduction](suzuki-bounded-work.md) proves that exact
+positivity is unnecessary for the same RH conclusion. Any eventual uniform
+lower bound on the unchanged cumulative signed prime work suffices. The
+actual summable cost and any finite initial prefix are absorbed into a
+finite constant; a constant shift of the signal contributes exactly `C/z`
+to its Laplace transform and cannot change a right-half-zero residue. Lean
+therefore proves that every hypothetical right-half zero forces the work
+below every finite floor at arbitrarily large cutoffs. The next independent
+arithmetic target is such a finite floor, retaining cancellation between
+negative and positive events and blocks. That floor has not been proved.
+
+The [bilinear-work estimate](suzuki-bilinear-work.md) now gives an
+unconditional cellwise lower bound for that unchanged signed work as an
+explicit triangular von-Mangoldt sum. The exact difference is retained as
+a nonnegative exponential convexity reserve plus a positive Lerch tail;
+summability of this new reserve is not asserted. The coefficient is proved
+to equal `-Re (zeta'/zeta)(1/2)`. Any fixed downward change of that coefficient
+incurs an unbounded cumulative negative discrepancy, so the exact constant
+must be preserved. The complete finite-band gap identity includes the
+bilinear sum, the retained reserve and the already summable transport cost.
+A finite floor for the bilinear sum would suffice for RH, but that estimate
+has not been proved. The original work remains available if this lower
+bound loses too much of the positive reserve.
+
+The [mass-log work estimate](suzuki-mass-log-work.md) now retains that
+nonlinear reserve while eliminating the implicit canonical centers.
+The resulting work is `-2*a_j*log(q_j)`, with `q_j` the positive ratio of
+the exactly corrected finite prime mass to `2*sqrt(j+3)`. Lean proves that
+the unchanged work exceeds this expression by a nonnegative Lerch error
+bounded by `2*exp(6)/(j+1)^2`. Every finite band starting at `s` has error
+at most `4*exp(6)/(s+1)`, regardless of its length. The new cumulative
+finite-floor target is proved equivalent to the original signed-work floor;
+there is no uncontrolled approximation reserve in this replacement.
+The independent arithmetic bound itself remains open.
+
+The [proper-prime-power estimate](suzuki-proper-prime-power-work.md) now
+bounds the complete absolute work on proper prime powers by
+`90+45*log(N)`, using finite Abel summation and the unconditional
+`psi-theta<=18*sqrt(N)` estimate. Its signed and absolute contributions
+are therefore `o(N^epsilon)` for every positive `epsilon`. The exact split
+retains the full old mass and original center in every ordinary-prime cell.
+Ordinary-prime signed work remains unbounded by this argument. A finite
+floor for that part yields only a logarithmic floor for the full work;
+the earlier constant-floor RH criterion does not itself absorb this loss.
+The new [logarithmic-allowance connection](suzuki-logarithmic-work.md) repairs
+that interface: the active event cell transfers a logarithmic gap floor to
+an affine time floor, whose compensator has a proved convergent Laplace
+transform at every positive damping. Subtracting it after positive Landau
+continuation yields the original zero-residue contradiction. Thus an eventual
+logarithmic lower bound for ordinary-prime work, including its finite
+mass-log version, is sufficient for RH. Every hypothetical right-half zero
+would force that ordinary-prime work below each prescribed logarithmic floor
+at arbitrarily late cutoffs. The required independent bound is still open;
+no power source from the separate eta carrier is silently transferred.
+
+The [mass-shift budget](suzuki-mass-shift-budget.md) now removes the fixed
+Archimedean correction from that arithmetic target with a proved error
+allowance. Its exact cost is `2*a_j*log(1+delta/M_j)`. The original old-mass
+increments control this cost through their own logarithmic ratios; the
+complete discrepancy is logarithmically bounded, including after selection
+of ordinary-prime new atoms. More sharply, subtracting the explicit full
+logarithmic mass drift leaves an absolutely summable error with band bound
+`2*C_delta/sqrt(s+2)` from any start `s>=3`, independently of band length.
+The resulting sufficient ordinary-prime target contains only the unshifted
+finite von-Mangoldt mass, square roots and logarithms. Its independent
+cumulative lower bound remains open; the source is not contradicted by
+controlling the mass-shift error alone.
+
+The [arithmetic cancellation transfer](suzuki-arithmetic-cancellation.md)
+now connects the proved Gaussian Möbius cancellation to the actual
+Chebyshev function and the full Suzuki work. The exact factorial convolution,
+its floor remainder and both sides of a divided cutoff prove
+`psi(x)/x -> 1`. The genuine weighted Abel mass consequently satisfies
+`M(x)/sqrt(x) -> 2`, and the corrected old-mass ratio tends to one at the
+next event endpoint. Lean then proves
+`sum_{j<count}|I_j|/sqrt(count+2) -> 0`; the signed sum and the original
+canonical gap have the same vanishing normalization after all summable
+corrections are included. This improves the complete arithmetic estimate
+from `O(sqrt(N))` to `o(sqrt(N))`. It supplies neither a fixed power saving
+nor the required logarithmic signed floor. No new zero exclusion follows.
+
+The [product-cutoff audit](suzuki-product-cutoff-obstruction.md) closes a
+potential omission in a Selberg-convolution comparison. The actual Suzuki
+interaction has triangular support `2<=d<n<=N`, not just `dn<=N`. Lean now
+partitions it exactly at that product cutoff and retains the full complement
+with its negative sign in the work, alongside the positive convexity reserve.
+At `N=2*K+2`, the complement is eventually at least `sqrt(K)/32`, and exceeds
+every fixed logarithmic allowance. Thus it cannot be silently dropped or
+charged to the existing logarithmic error budget. A signed comparison that
+retains this region remains possible; no bound for the full signed work or
+new zero exclusion is obtained from this diagnostic.
+
+The [quantitative-rate audit](moebius-cubic-rate-audit.md) then checks whether
+the existing Gaussian–Möbius exponential gain can close the remaining power
+gap by optimizing its heat parameter. Lean proves that its literal Mellin
+upper-bound expression, including the full cubic-scale additive remainder,
+eventually exceeds every fixed multiple of every strictly smaller cutoff
+power, uniformly over all parameter choices. An explicit coefficient and
+exponent test also obstructs this comparison at every admissible finite
+scale. These are limitations of the envelope, not lower bounds for the
+signed arithmetic sums; same-power relative savings and stronger signed
+cancellation remain possible. No work bound or zero exclusion improves.
+
+The user's information-loss steer then led to a concrete
+[quotient-scale repair](chebyshev-moebius-quotient-coupling.md). The exact
+factorial tail is now retained as a sum of signed differences
+`M_mu(floor(N/k))-M_mu(D)`. Keeping each prefix at its own scale replaces
+the factorial allowance `2*eF*F(Q)` by `eF*log(Q)*(2+log(Q))`.
+Lean transfers this to the full correction, including the low-divisor and
+harmonic terms, and discharges both prefix assumptions from the existing
+Gaussian Möbius estimates. This is an actual quantitative improvement in
+that correction; cancellation between signed quotient blocks and the
+independent Suzuki-work floor remain unproved. No new zero bound follows.
+
+The [signed Legendre remainder](suzuki-signed-legendre-remainder.md) then
+repairs a cancellation loss among the actual Suzuki correction costs.
+The original gap differs from the explicit finite potential
+`P_N-2*(M_N-c)*(log((M_N-c)/2)-1)+C` by a positive decreasing error bounded
+by `(16/75)*exp(5)/N^(5/2)`. The complete signed combination of positive
+mass-log quadrature cost, positive Lerch work error and negative canonical
+transport cost telescopes into the decrease of that same error. Every
+band has a nonnegative net correction bounded by the inverse-five-halves
+allowance at its start, independently of length. Thus these leading
+correction costs cancel before an absolute bound is taken. The independent
+lower bound for the retained finite mass--moment expression is still open;
+this sharper comparison supplies no zero exclusion.
+
+## Earlier routes and their retained obligations
+
 The immediate arithmetic goal is one independent signed inequality that
 contradicts the proved finite-band source comparison for every hypothetical
 actual zero strictly right of `1/2`. It suffices to beat the source by
