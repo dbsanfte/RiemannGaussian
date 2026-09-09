@@ -6,6 +6,23 @@ estimate**. The objective remains active until both parts are proved and
 verified. The completed [signed endpoint package](eta-signed-endpoint-theorem-plan.md)
 provides the actual support, gap, phase, Gaussian, and mixed-matrix inputs.
 
+The user's request to test all weight families now has a checked
+[finite optimizer characterization](suzuki-divisor-dual-optimality.md).
+`suzukiMassLegendrePotential_isGreatest_dual` proves that the maximum over
+all feasible divisor weights is exactly the original potential; every
+optimizer has zero slack on prime powers. Finite descending elimination
+proves attainment without numerical coefficients. The separate
+`suzukiDivisorDual_span_upper_bound` bounds every coefficient choice in a
+given span from a nonnegative comparison mass matching its finite divisor
+observations. No explicit asymptotically obstructing comparison family or
+uniform arithmetic floor is proved. The next useful comparison must expose
+which retained observations admit a bad mass and which additional arithmetic
+information excludes it.
+The stronger `suzukiMassLegendrePotential_ge_of_primePower_divisorDual`
+also removes every non-prime-power minorant constraint. The preceding
+numerical screens used the more restrictive all-integer constraint set.
+Comparison masses for the relaxed class must retain this prime-power support.
+
 The September 9 reorientation steer now makes the
 [Suzuki divisor-certificate search](suzuki-legendre-divisor-dual.md) the
 active arithmetic route. Lean proves the exact divisor transport and

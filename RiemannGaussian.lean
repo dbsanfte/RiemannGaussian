@@ -940,3 +940,4 @@ import RiemannGaussian.ZetaPrimePairSeparation
 import RiemannGaussian.ZetaPhaseContactDoubling
 import RiemannGaussian.ZetaPhaseWeightedRecurrence
 import RiemannGaussian.SuzukiLegendreDivisorDual
+import RiemannGaussian.SuzukiDivisorDualOptimality

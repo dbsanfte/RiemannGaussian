@@ -237,8 +237,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">Divisor certificates retain the exact Suzuki minimum and slack. " ++
-      "A feasible family with a uniform finite floor is still unproved.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">The unrestricted divisor-certificate maximum equals the Suzuki potential. " ++
+      "A uniform finite lower floor for that value is still unproved.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -324,8 +324,12 @@ run_cmd do
       "work-floor criteria now have complete analytic implications to RH. Exact divisor " ++
       "minorants now certify the finite mass potential at its actual minimizing center; other " ++
       "centers pay the full exponential convexity cost. An eventual finite certificate floor " ++
-      "would imply RH, but feasibility and that floor remain open. Numerical smooth-weight " ++
-      "searches still have growing sampled slack. These are separate results and reductions, not a completed " ++
+      "would imply RH. The unrestricted finite maximum is now proved equal to that same " ++
+      "potential, and every optimizer is characterized by zero prime-power slack. A " ++
+      "stronger lower-certificate theorem needs constraints only on prime powers. A " ++
+      "nonnegative comparison mass matching finitely many basis observations bounds all " ++
+      "coefficient choices in that weight span at once. The uniform floor and an explicit " ++
+      "asymptotic class obstruction remain open. These are separate results and reductions, not a completed " ++
       "proof chain or a new zero-proportion certificate. No RH proof or mathematical-priority " ++
       "claim is made. Detailed scope and proof histories are in " ++
       "docs/eta-current-reconstruction-plan.md.")),
@@ -379,10 +383,12 @@ run_cmd do
         ("For every hypothetical zero right of one half, prove an independent signed inequality " ++
         "beating its source after the proved error allowances. The active arithmetic route is " ++
         "a uniform finite lower floor for the exact Suzuki mass-moment potential. The divisor " ++
-        "identity and the lower-certificate implication at the actual mass center are checked, " ++
-        "including the full cost of another center. An explicit feasible weight family with a " ++
-        "proved eventual finite floor remains missing. Coarse searches are paused after " ++
-        "negative drift, and smoother sampled weights still lose increasing slack. The finite " ++
+        "identity, exact mass-center evaluation, and full cost of another center are checked. " ++
+        "The unrestricted finite certificate maximum equals the potential, with equality " ++
+        "characterized on all prime powers. A class comparison theorem now tests every " ++
+        "coefficient choice from finite basis observations. Construct an informative " ++
+        "comparison family, retaining prime-power support for the relaxed constraint set, " ++
+        "or prove a uniform floor; neither is yet established. The finite " ++
         "prime-band criterion, phase floor 1/120, and complete eta identities remain available; " ++
         "none supplies the missing global estimate."))
     ]),
