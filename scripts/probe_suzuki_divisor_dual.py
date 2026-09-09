@@ -3,8 +3,10 @@
 
 Copyright (c) 2026 David Sanftenberg. Released under Apache 2.0.
 
-Requires numpy, scipy, and mpmath. Every divisor constraint is checked at
-each sampled cutoff. This is not an all-cutoff proof or an exact certificate.
+Requires numpy, scipy, and mpmath. Required divisor constraints are checked at
+each sampled cutoff: all integers by default, or only prime powers when
+--support prime_powers is selected. This is not an all-cutoff proof or an
+exact certificate.
 The Lean interface is SuzukiLegendreDivisorDual.lean. Crucially, the trial
 form MINIMIZES to the potential. We evaluate the actual mass center, or
 subtract the exact convexity cost when using log(N).
@@ -12,7 +14,9 @@ subtract the exact convexity cost when using log(N).
 Unrestricted finite weights can make every constraint an equality by
 descending substitution. That diagnostic recovers the original arithmetic
 value; it does not prove a lower bound. The search targets much smaller
-piecewise-constant families, including dyadic interval refinements.
+interval families, including log-affine weights. A second diagnostic uses
+the explicit complete-quotient coefficients proved in
+SuzukiDivisorQuotientOptimizer.lean; it needs no coefficient optimization.
 """
 
 import argparse
@@ -62,7 +66,7 @@ def interval_edges(n, family, size):
     return np.array(sorted(edges), dtype=np.int64)
 
 
-def probe(n, family, size, center, lam, slope, intercept, shape="constant"):
+def probe(n, family, size, center, lam, slope, intercept, shape="constant", support="all"):
     d = np.arange(1, n + 1)
     root_n = math.sqrt(n)
     log_d = np.log(d)
@@ -100,13 +104,14 @@ def probe(n, family, size, center, lam, slope, intercept, shape="constant"):
         repair_columns = slice(0, len(edges) - 1)
     else:
         raise ValueError(shape)
-    result = linprog(-objective, A_ub=matrix, b_ub=target,
+    selected = np.ones(n, dtype=bool) if support == "all" else lam > 0
+    result = linprog(-objective, A_ub=matrix[selected], b_ub=target[selected],
                      bounds=(None, None), method="highs")
     if not result.success:
         return {"N": n, "family": family, "size": size, "error": result.message}
     coefficients = result.x.copy()
     violation = matrix @ coefficients - target
-    repair = max(0.0, float(np.max(violation / repair_kernel))) + 1e-12
+    repair = max(0.0, float(np.max(violation[selected] / repair_kernel[selected]))) + 1e-12
     coefficients[repair_columns] -= repair
     kernel = matrix @ coefficients
     slack = target - kernel
@@ -114,14 +119,24 @@ def probe(n, family, size, center, lam, slope, intercept, shape="constant"):
     certificate = (intercept + 4 * math.exp(r / 2) + slope * r
                    + linear_value - convex_cost)
     arithmetic_loss = float(lam @ slack)
+    comparison = np.zeros(n)
+    comparison[selected] = -result.ineqlin.marginals
+    comparison_value = float(comparison @ target)
+    comparison_residual = float(np.max(np.abs(matrix.T @ comparison - objective)))
     return {
         "N": n, "family": family, "size": size, "shape": shape, "center": center,
+        "support": support, "constraints": int(np.sum(selected)),
         "variables": len(coefficients), "r_minus_log_N": r - math.log(n),
         "actual_potential": potential, "certificate": certificate,
         "certificate_div_sqrt_N": certificate / root_n,
         "weighted_slack": arithmetic_loss, "convex_cost": convex_cost,
         "minimum_kernel_slack": float(np.min(slack)),
+        "minimum_required_kernel_slack": float(np.min(slack[selected])),
         "finite_identity_residual": potential - certificate - arithmetic_loss,
+        "comparison_observation_residual": comparison_residual,
+        "comparison_linear_upper_bound": comparison_value,
+        "finite_duality_gap": comparison_value - linear_value,
+        "comparison_support_size": int(np.sum(comparison > 1e-9)),
         "positive_basis_repair": repair,
         "interval_edges": edges.tolist(),
         "scaled_coefficients": coefficients.tolist(),
@@ -146,10 +161,51 @@ def equality_diagnostic(n, lam, slope, intercept):
             "purpose": "finite equality diagnostic, not an independent arithmetic bound"}
 
 
+def quotient_equality_diagnostic(n, lam, slope, intercept):
+    """Check the explicit all-cutoff formula numerically, without an LP.
+
+    The number of distinct quotient cells measures representation size;
+    the Mobius sieve still visits integers through N.
+    """
+    mu = np.ones(n + 1, dtype=np.int64)
+    mu[0] = 0
+    composite = np.zeros(n + 1, dtype=bool)
+    for p in range(2, n + 1):
+        if composite[p]:
+            continue
+        composite[p * 2 :: p] = True
+        mu[p::p] *= -1
+        mu[p * p :: p * p] = 0
+    d = np.arange(1, n + 1)
+    log_d = np.log(d)
+    root_d = np.sqrt(d)
+    slope_prefix = np.r_[0, np.cumsum(mu[1:] / root_d)]
+    intercept_prefix = np.r_[0, np.cumsum(mu[1:] * log_d / root_d)]
+    mass = math.fsum(lam / root_d) - slope
+    r = 2 * math.log(mass / 2)
+    q = n // d
+    weights = (slope_prefix[q] * (log_d - r) + intercept_prefix[q]) / root_d
+    kernel = np.array([math.fsum(weights[k - 1 :: k]) for k in d])
+    potential = (math.fsum(lam * log_d / root_d)
+                 - 2 * mass * (math.log(mass / 2) - 1) + intercept)
+    certificate = (intercept + 4 * math.exp(r / 2) + slope * r
+                   + math.fsum(weights * log_d))
+    return {
+        "N": n, "quotient_cells": len(np.unique(q)),
+        "twice_floor_sqrt_N": 2 * math.isqrt(n),
+        "max_kernel_error": float(np.max(np.abs(kernel - (log_d - r) / root_d))),
+        "potential_minus_certificate": potential - certificate,
+        "potential": potential, "certificate": certificate,
+        "purpose": "explicit quotient equality diagnostic, not an independent floor",
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--cutoffs", type=int, nargs="+", default=[128, 512, 2048, 8192])
     parser.add_argument("--center", choices=["mass", "endpoint"], default="mass")
+    parser.add_argument("--support", choices=["all", "prime_powers"], default="all",
+                        help="prime_powers uses the proved relaxation of the minorant constraints")
     parser.add_argument("--models", nargs="+", default=[
         "uniform:8:constant", "uniform:32:constant", "dyadic:1:constant",
         "dyadic:4:constant", "dyadic:16:constant", "dyadic:4:log_affine",
@@ -178,7 +234,7 @@ def main():
     rows = []
     for n in args.cutoffs:
         for family, size, shape in models:
-            row = probe(n, family, size, args.center, all_lam[:n], slope, intercept, shape)
+            row = probe(n, family, size, args.center, all_lam[:n], slope, intercept, shape, args.support)
             rows.append(row)
             print(json.dumps({k: v for k, v in row.items()
                               if k not in ["interval_edges", "scaled_coefficients"]}), flush=True)
@@ -187,6 +243,9 @@ def main():
         "slope": slope, "intercept": intercept,
         "equality_diagnostic": equality_diagnostic(min(512, max(args.cutoffs)),
             all_lam[:min(512, max(args.cutoffs))], slope, intercept),
+        "quotient_equality_diagnostics": [
+            quotient_equality_diagnostic(n, all_lam[:n], slope, intercept)
+            for n in args.cutoffs],
         "rows": rows,
     }
     if args.output:

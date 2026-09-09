@@ -27,21 +27,21 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek a uniform finite lower floor for the exact Suzuki potential. Lean now identifies the maximum over all admissible divisor weights with that same potential and characterizes every optimizer by its prime-power contacts. To test whole weight classes, use nonnegative comparison masses matching their divisor observations. The independent uniform floor remains open; optimizing finite weights alone does not prove it.
+Seek an independent lower floor for the exact Suzuki potential. Explicit finite Möbius coefficients now attain its divisor-certificate optimum on complete quotient cells, with zero approximation loss and at most twice the integer square root of the endpoint many cells. The remaining task is a uniform lower bound after the exact Archimedean terms are included. Exact coefficients and class comparisons do not supply that arithmetic bound.
 
 ## Latest Update
 
-Lean now [characterizes all finite divisor optimizers](RiemannGaussian/SuzukiDivisorDualOptimality.lean).
-The unrestricted certificate maximum is exactly the original Suzuki
-potential. A feasible weight is optimal precisely when its kernel has zero
-slack at every prime power; slack elsewhere has no arithmetic cost.
-The lower-bound interface now needs constraints only at prime powers.
+Lean now verifies [explicit quotient-cell optimizers](RiemannGaussian/SuzukiDivisorQuotientOptimizer.lean)
+for every endpoint and center. On each cell where `floor(N/m)` is constant,
+`sqrt(m)*w(m)` is affine in `log(m)`, with two exact finite Möbius
+coefficients. At most `2*floor(sqrt(N))` cells suffice, and the resulting
+certificate equals the original potential exactly at its mass center.
 
-A second theorem bounds every real coefficient choice in a given weight
-span from finitely many comparison-mass identities. This can test an entire
-class at once. A uniform lower floor for the optimum, and a concrete
-comparison proving an asymptotic class obstruction, remain open. See the
-[analytic characterization and class test](docs/suzuki-divisor-dual-optimality.md).
+A boundary theorem keeps the slope and intercept jumps coupled: their
+value jumps cancel at the endpoint center `log(N)`. This explains the
+quotient structure that coarse interval families approximate. It removes
+approximation loss, but provides no independent uniform floor or new zero
+bound. See the [formula, numerical check, and remaining obligation](docs/suzuki-divisor-quotient-optimizer.md).
 
 ## Notable Formalisations
 

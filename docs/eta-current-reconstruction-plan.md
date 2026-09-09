@@ -6,6 +6,20 @@ estimate**. The objective remains active until both parts are proved and
 verified. The completed [signed endpoint package](eta-signed-endpoint-theorem-plan.md)
 provides the actual support, gap, phase, Gaussian, and mixed-matrix inputs.
 
+The [complete quotient optimizer](suzuki-divisor-quotient-optimizer.md) now
+removes approximation loss for every endpoint and center.
+`suzukiDivisorDualKernel_quotientWeight` proves exact kernel equality for
+weights whose two coefficients on each complete quotient cell are finite
+Möbius sums. `suzukiQuotientCell_card_le` bounds the cell count by
+`2*floor(sqrt(N))`. The coupled coefficient boundary formula explains why
+the endpoint-centered formulas join in value, while a displaced center
+retains its exact signed jump. The terminal
+`suzukiMassLegendrePotential_eq_quotient_certificate` evaluates this
+explicit family as the original potential. This is a verified exact
+construction, not an independent floor. Further coefficient tuning is
+unnecessary for attaining the finite optimum. The global arithmetic
+estimate remains the barrier; finite Möbius inversion does not prove it.
+
 The user's request to test all weight families now has a checked
 [finite optimizer characterization](suzuki-divisor-dual-optimality.md).
 `suzukiMassLegendrePotential_isGreatest_dual` proves that the maximum over

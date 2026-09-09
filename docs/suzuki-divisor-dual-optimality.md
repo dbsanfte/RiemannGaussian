@@ -6,6 +6,11 @@ It identifies the exact optimum over all finite weights, characterizes every
 optimizer, and provides a simultaneous upper bound for any specified weight
 class. It does not establish a uniform arithmetic floor or a new zero bound.
 
+The subsequent [complete quotient construction](suzuki-divisor-quotient-optimizer.md)
+gives explicit finite Möbius coefficients attaining the optimum for every
+endpoint and center. It removes approximation loss without proving the
+remaining uniform arithmetic floor.
+
 ## The unrestricted optimum is known exactly
 
 Use the notation of the

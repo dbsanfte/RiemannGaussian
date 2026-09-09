@@ -237,8 +237,8 @@ private def renderSvg (moduleCount declarationCount theoremCount : Nat) : String
     "    <rect x=\"855\" y=\"114\" width=\"125\" height=\"50\" rx=\"9\"/>\n" ++
     "    <text x=\"917\" y=\"144\">RH</text>\n" ++
     "  </g>\n" ++
-    "  <text class=\"frontier\" x=\"20\" y=\"300\">The unrestricted divisor-certificate maximum equals the Suzuki potential. " ++
-      "A uniform finite lower floor for that value is still unproved.</text>\n" ++
+    "  <text class=\"frontier\" x=\"20\" y=\"300\">Explicit quotient weights attain the Suzuki potential with zero approximation loss. " ++
+      "Its uniform finite lower floor is still unproved.</text>\n" ++
     "</svg>\n"
 
 run_cmd do
@@ -328,7 +328,11 @@ run_cmd do
       "potential, and every optimizer is characterized by zero prime-power slack. A " ++
       "stronger lower-certificate theorem needs constraints only on prime powers. A " ++
       "nonnegative comparison mass matching finitely many basis observations bounds all " ++
-      "coefficient choices in that weight span at once. The uniform floor and an explicit " ++
+      "coefficient choices in that weight span at once. Explicit finite Mobius coefficients " ++
+      "now attain the optimum on complete quotient cells for every endpoint and center. " ++
+      "At most twice the integer square root of the endpoint many cells suffice. Their " ++
+      "coupled slope and intercept jumps cancel in value at the endpoint center. This " ++
+      "removes approximation loss without supplying an independent lower bound. The uniform floor and an explicit " ++
       "asymptotic class obstruction remain open. These are separate results and reductions, not a completed " ++
       "proof chain or a new zero-proportion certificate. No RH proof or mathematical-priority " ++
       "claim is made. Detailed scope and proof histories are in " ++
@@ -386,9 +390,11 @@ run_cmd do
         "identity, exact mass-center evaluation, and full cost of another center are checked. " ++
         "The unrestricted finite certificate maximum equals the potential, with equality " ++
         "characterized on all prime powers. A class comparison theorem now tests every " ++
-        "coefficient choice from finite basis observations. Construct an informative " ++
-        "comparison family, retaining prime-power support for the relaxed constraint set, " ++
-        "or prove a uniform floor; neither is yet established. The finite " ++
+        "coefficient choice from finite basis observations. Explicit finite Mobius " ++
+        "coefficients attain the optimum on at most 2*floor(sqrt(N)) complete quotient " ++
+        "cells with zero approximation loss. Prove an independent uniform lower floor " ++
+        "for their signed logarithmic sum after the exact Archimedean terms. Finite " ++
+        "inversion alone does not provide this estimate. The finite " ++
         "prime-band criterion, phase floor 1/120, and complete eta identities remain available; " ++
         "none supplies the missing global estimate."))
     ]),
