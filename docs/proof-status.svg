@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="313.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 990 modules · 22967 declarations · 19932 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 1035 modules · 23772 declarations · 20662 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · milestones standard-only</text>
   <text class="section" x="20" y="64">CHECKED RESULTS, IDENTITIES, AND ATTRIBUTED BASELINE</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -95,9 +95,9 @@
   </g>
   <g class="proved unconditional">
     <rect x="340" y="229" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.phaseContactExact_arithmetic_floor</title>
+    <title>RiemannGaussian.phaseContactExact_binomial_scaled_arithmetic_floor</title>
     <text x="412" y="252">phase arithmetic floor</text>
-    <text x="412" y="270">uniform &gt;= 1/120  ✓</text>
+    <text x="412" y="270">scale + full energy  ✓</text>
   </g>
   <g class="open">
     <rect x="690" y="108" width="150" height="62" rx="10"/>

@@ -103,7 +103,8 @@ open problem is still an independent bound for the complete signed
 arithmetic response, strong enough to yield the unsmoothed potential's
 subpolynomial lower allowance. The subsequent
 [positive-delay recovery theorem](suzuki-controlled-recovery.md) now
-controls recovery times independently. Passing from those endpoints to a
-subpolynomial allowance on balanced minima remains a separate step, as
-does the independent arithmetic depth bound. The existing `o(sqrt(N))`
-estimate does not close this gap.
+controls recovery times independently. The
+[balanced-cell subpolynomial criterion](suzuki-balanced-subpolynomial.md)
+now completes the transfer from those endpoints to balanced minima. The
+independent arithmetic depth bound remains open; the existing `o(sqrt(N))`
+estimate does not close it.

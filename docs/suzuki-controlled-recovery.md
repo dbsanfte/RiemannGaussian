@@ -126,10 +126,11 @@ Archimedean intercept `C`. The companion terminal theorem
 
 at every sufficiently large start time. Thus the recovery level is only
 linear in logarithmic time, and its time is controlled independently.
-This is the missing recovery-time input for trapping deep excursions
-between endpoints and passing to actual balanced-cell minima. Combining
-it with a growing subpolynomial allowance on balanced cells remains a
-separate proof obligation.
+This supplies the recovery-time input for trapping deep excursions
+between endpoints and passing to actual balanced-cell minima. The
+[subsequent localized criterion](suzuki-balanced-subpolynomial.md) now
+completes that transfer for a growing subpolynomial allowance, with the
+finite head, affine correction, and entropy error included.
 
 The independent arithmetic depth bound is still open. The delay filter
 deliberately removes selected zero modes to establish recovery, so its

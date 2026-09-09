@@ -109,12 +109,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.tendsto_zetaRightHalfOrdinaryPrimeBandFilter_re
   },
   {
-    label := "Five powers of two give the exact phase optimiser a uniform arithmetic floor 1/120 for 1 < sigma <= 5/4"
+    label := "Complete binomial energies retain all phases; the exact optimiser has arithmetic floor exp(-4*(sigma-1)*log(2))/40 for 1 < sigma <= 5/4"
     lineOne := "phase arithmetic floor"
-    lineTwo := "uniform >= 1/120"
+    lineTwo := "scale + full energy"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.phaseContactExact_arithmetic_floor
+      ``RiemannGaussian.phaseContactExact_binomial_scaled_arithmetic_floor
   }
 ]
 
@@ -308,11 +308,85 @@ run_cmd do
       "constants HD(1) < C0 < C1 remain checked. The exact nonnegative phase optimiser is unique " ++
       "for its fixed shift and linear cost, including infinite integer-frequency competitors. Its " ++
       "actual zeta height budget proves a reciprocal-logarithm edge margin with denominator " ++
-      "23000*log(abs(gamma)+22). Retaining the triangular phase-return multiplicities improves " ++
-      "the general arithmetic floor by N*(N+1)/2 at a positive block source. Five powers of two " ++
-      "give the exact optimiser a uniform floor 1/120 for 1 < sigma <= 5/4, and an explicit d/120 " ++
-      "reserve in its actual local zero inequality. This bounded gain leaves the global signed " ++
-      "bound open. The preceding contact-doubling theorem explains why an angle and its double " ++
+      "23000*log(abs(gamma)+22). A general real test retains its full return autocorrelation " ++
+      "and compares each lag with the actual prime-power amplitude. Binomial trigonometric " ++
+      "tests retain the complete frequency energy, and a frequency and its double force an extra " ++
+      "source. Keeping the prime scale gives the exact optimiser a floor exp(-4*(sigma-1)*log(2))/40 " ++
+      "for 1 < sigma <= 5/4. Its actual zero tests retain d*exp(-13*d*log(2))/40 and the stronger " ++
+      "phase-sensitive energy reserve. This bounded gain leaves the global signed " ++
+      "bound open. The actual Suzuki carrier now satisfies norm-square = imaginary part almost " ++
+      "everywhere, with its exceptional real denominator zeros proved countable. Its full " ++
+      "two-time arithmetic Gram and every finite complex time test have exact integrable signed " ++
+      "phase representations. Both separated channels now have exact local reflected-pair " ++
+      "residues at every xi node, including multiple and nonreal nodes. Their signed mixed Gram " ++
+      "has removable xi-node singularities and exactly zero sufficiently small circle integrals. " ++
+      "The full mixed boundary Gram now splits into two absolutely integrable channels after " ++
+      "one common real-node subtraction. Both genuine symmetric principal values exist, " ++
+      "including at multiple real nodes, and the subtraction's auxiliary complex poles have " ++
+      "an exact partial fraction identity. The global xi logarithmic-derivative difference is " ++
+      "now an absolutely convergent genuine multiplicity-weighted Cauchy series: analytic and " ++
+      "mirror remainders both vanish. Reflection gives its signed Poisson representation. " ++
+      "For Im z >= 1/2 the upper carrier denominator is nonzero for every nonnegative " ++
+      "homotopy parameter; the actual carrier obeys norm-square <= imaginary part and norm <= 1. " ++
+      "The reflected lower carrier has the corresponding estimates. Every mixed outer " ++
+      "horizontal integral is bounded by 8/T for T >= 1 and tends to zero. The actual full " ++
+      "spectral Cauchy windows converge to A'/A, and their existing raw remainder tends to zero. " ++
+      "Subtracting the complete signed Blaschke contribution leaves the reflected critical " ++
+      "and lower divisor with nonpositive imaginary part. Its positive Poisson reserves " ++
+      "increase to the complete contribution; every upper carrier pole must pay for one unit " ++
+      "plus every retained reserve. Arbitrary-order carrier poles have exact mixed circle " ++
+      "residues. At a simple pole every finite complex test retains the reflected bilinear " ++
+      "product divided by the full logarithmic-derivative slope. Complete finite Laurent " ++
+      "subtraction now constructs the analytic remainder at every pole order. The actual " ++
+      "rectangular mixed channel equals its explicit reflected xi source plus all genuine " ++
+      "carrier-pole residues, with side integrability proved. Admissible upper rectangles " ++
+      "exist at arbitrary heights and arbitrarily small positive bottom height. Their signed " ++
+      "matrix comparison retains the full conjugate-transposed pole correction and all " ++
+      "oriented side terms; variable outer top integrals obey 16/R bounds. For every pair " ++
+      "without a repeated real node, the actual displaced bottom converges to the truncated " ++
+      "real Gram, which exhausts to the full Gram. Complete zero principal parts permit " ++
+      "real xi nodes on the bottom of the actual finite contour. Its real Gram identity " ++
+      "retains every pole and conjugate-transposed entry. Each safe outer vertical piece " ++
+      "obeys an 8/R bound once its coordinate passes both nodes; the combined signed safe " ++
+      "sides cost at most 32/R, leaving two fixed-height strip segments. Keeping the canonical " ++
+      "reflection difference inside the mixed channel gives an exact quartic denominator " ++
+      "and safe outer error 512*Im(alpha)^2/R^3. Its reflected source is exactly minus the " ++
+      "inverse multiplicity. The actual reflection Gram energy is strictly positive for " ++
+      "each off-axis zero. Along every constructed admissible outer family, the full joint " ++
+      "pole/strip correction converges to 2*pi/m plus that positive energy; separate pole " ++
+      "and strip limits are not assumed. An independent source ceiling with any vanishing " ++
+      "allowance would suffice, without a prescribed strict source deficit. This ceiling, " ++
+      "the independent Blaschke upper budget and the global signed arithmetic bound remain " ++
+      "open; no new zeta zeros have been excluded. Pairing the complete xi divisor now " ++
+      "confines every positive imaginary contribution to an actual reflected-zero Jensen " ++
+      "disk. Past the observation ordinate plus one half, finite symmetric Cauchy heads " ++
+      "decrease in imaginary part to the full logarithmic derivative. A finite local " ++
+      "ordinate band of radius at least one half also bounds that imaginary part from " ++
+      "above while retaining its negative terms. Every genuine upper carrier pole must " ++
+      "reach the unit threshold in every such local band and lie inside an actual Jensen " ++
+      "disk. The literal carrier is bounded by one outside the disk union, including " ++
+      "inside the zero strip and at totalized xi-node values. No local budget below one " ++
+      "is presumed globally. The fixed-window analytic tail now has nonpositive imaginary " ++
+      "part through the removed xi divisor, giving a full complex derivative bound by " ++
+      "four times its central signed mass divided by observation height. At genuine upper " ++
+      "carrier poles the finite slope error is at most 4*(Im(q_T)-1)/Im(c) and tends to zero. " ++
+      "A positive finite margin proves simplicity and an inverted complex disk encloses " ++
+      "the full weighted residue with its reflected phase retained. For every fixed finite " ++
+      "simple pole set one window eventually works for all finite weight families; the " ++
+      "total radius tends to zero for each fixed family. The signed matrix upper bound " ++
+      "retains the combined complex centers; these slope disks require simple poles. " ++
+      "The actual carrier now also has a full paired-eta quotient whose denominator " ++
+      "is eta' + (1+L)*eta, with the explicit completion correction L. Its finite " ++
+      "denominator retains odd/even coefficients and the exact weights 1+L-log(n). " ++
+      "The finite arithmetic quotient converges uniformly on compact sets avoiding " ++
+      "the actual carrier denominator, with eventual nonvanishing and continuity " ++
+      "proved. On admissible rectangles strictly inside the open spectral strip, " ++
+      "finite arithmetic contours recover the full complex weighted xi source and " ++
+      "carrier-pole sum, including all higher orders. Subtracting the exact xi source " ++
+      "gives signed upper bounds for complete fixed pole groups with arbitrarily " ++
+      "small positive errors. No bound at the source threshold, uniform estimate for " ++
+      "expanding contours, or joint pole/strip ceiling is claimed. " ++
+      "The preceding contact-doubling theorem explains why an angle and its double " ++
       "cannot both be contacts. Actual prime Gram " ++
       "matrices have full finite rank after every finite prime prefix. Every hypothetical " ++
       "right-half zero has an exact finite ordinary-prime band whose normalized signed value tends " ++
@@ -343,9 +417,32 @@ run_cmd do
       "cutoffs, a one-sided bound by C(epsilon)*N^epsilon for every epsilon>0 suffices " ++
       "for the exact potential or literal logarithmic average, including finite heads " ++
       "and the full gap error. Every right-half zero would force negative excursions " ++
-      "of some positive power size. The arithmetic subpolynomial bound remains open; " ++
-      "the existing o(sqrt(N)) bound does not imply it. This growing allowance has not " ++
-      "been restricted to balanced cells. These are separate results and reductions, not a completed " ++
+      "of some positive power size. Exact positive delay averages now prove that the actual " ++
+      "Suzuki signal recovers within [a,4096*a] for every sufficiently large a. Every deep " ++
+      "excursion has a genuine local minimum within fixed multiples of its own time. " ++
+      "The growing subpolynomial allowance now needs only mass-balanced cells, including " ++
+      "the finite head, affine correction, and full entropy error. A one-sided subpolynomial " ++
+      "upper bound on the literal logarithmic average at those cells also suffices. Every " ++
+      "right-half zero would force positive-power negative excursions on balanced cells " ++
+      "themselves. Complete blocks between balanced physical cutoffs N and N+L now " ++
+      "satisfy the independent bound abs(B_(N+L)-B_N) <= (L+1)^2/(N*sqrt(N)). The exact " ++
+      "centered prime moment retains the full block entropy and all cross interactions. " ++
+      "Uniform variation tends to zero on every fixed power length scale below N^(3/4). " ++
+      "The global floor remains open: neither a sufficiently dense covering by balanced " ++
+      "endpoints nor control of long blocks and accumulated decreases is proved. " ++
+      "An exact logarithmic Dirichlet-convolution identity now couples the centered " ++
+      "prime moment to the complete signed Mobius logarithmic convolution and the " ++
+      "full prime-pair coefficient at its original product cutoff. Arbitrary finite " ++
+      "real and complex tests preserve the identity, as do the actual work blocks " ++
+      "and evaluation at the exact mass center. This is an arithmetic identity, not " ++
+      "a new estimate for the global signed remainder. " ++
+      "A local source audit identifies its genuine Dirichlet response as zeta''/zeta " ++
+      "plus the centered logarithmic derivative. At multiplicity m its quadratic " ++
+      "source is m*(m-1), while the full pair subtraction retains -m for fixed " ++
+      "centers. The local error is uniform in all centers, and every convergent " ++
+      "complex weight retains the explicit moving-center contribution. The separate " ++
+      "convolution can be small at a simple zero; this is not a global bound. " ++
+      "The earlier o(sqrt(N)) bound does not imply it. These are separate results and reductions, not a completed " ++
       "proof chain or a new zero-proportion certificate. No RH proof or mathematical-priority " ++
       "claim is made. Detailed scope and proof histories are in " ++
       "docs/eta-current-reconstruction-plan.md.")),
@@ -399,22 +496,32 @@ run_cmd do
         ("For every hypothetical zero right of one half, prove an independent signed inequality " ++
         "beating its source after the proved error allowances. The active arithmetic route is " ++
         "a one-sided subpolynomial lower allowance for the exact Suzuki mass-moment " ++
-        "potential: for every epsilon>0, B_N >= -C(epsilon)*N^epsilon eventually over " ++
-        "all cutoffs. The general subexponential compensator proves this implies RH. " ++
+        "potential: for every epsilon>0, B_N >= -C(epsilon)*N^epsilon eventually on " ++
+        "mass-balanced cutoffs. Controlled recovery and the general subexponential " ++
+        "compensator prove this implies RH. " ++
         "Finite heads and the full gap error are discharged. The divisor " ++
         "identity, exact mass-center evaluation, and full cost of another center are checked. " ++
         "The unrestricted finite certificate maximum equals the potential, with equality " ++
         "characterized on all prime powers. A class comparison theorem now tests every " ++
         "coefficient choice from finite basis observations. Explicit finite Mobius " ++
         "coefficients attain the optimum on at most 2*floor(sqrt(N)) complete quotient " ++
-        "cells with zero approximation loss. Alternatively, a constant floor can be " ++
-        "restricted to mass-balanced cells: every right-half zero forces arbitrarily low potentials " ++
-        "there. Their nonlinear entropy correction is at most 1/(N*sqrt(N)) and " ++
-        "uniformly tends to zero. The growing subpolynomial allowance has not been " ++
-        "restricted to those cells. Prove the full-cutoff subpolynomial bound or an " ++
-        "independent constant floor on balanced cells. The balance condition and " ++
-        "finite inversion do not provide that estimate. The finite " ++
-        "prime-band criterion, phase floor 1/120, and complete eta identities remain available; " ++
+        "cells with zero approximation loss. Unconditional positive-delay moment bounds " ++
+        "control actual recovery times; every deep excursion has a balanced minimum at a " ++
+        "comparable logarithmic time. Their nonlinear entropy correction is at most " ++
+        "1/(N*sqrt(N)) and uniformly tends to zero. Every right-half zero would force " ++
+        "positive-power negative excursions on those cells. Complete balanced blocks " ++
+        "now have an independent quadratic variation bound (L+1)^2/(N*sqrt(N)), " ++
+        "uniformly vanishing on power length scales below N^(3/4). This local control " ++
+        "does not bound long blocks or accumulated decreases. Prove the independent " ++
+        "balanced-cell subpolynomial potential floor or a subpolynomial upper bound on " ++
+        "the literal signed logarithmic average at those cells. The balance condition and " ++
+        "finite inversion do not provide that estimate. The exact logarithmic convolution " ++
+        "now retains the Mobius sum and full prime-pair subtraction in the same actual " ++
+        "moment, for arbitrary finite tests, but its signed quantitative bound is open. " ++
+        "The separate convolution's quadratic local source vanishes at a simple zero; " ++
+        "the full pair subtraction retains the nonzero linear multiplicity source. " ++
+        "A uniform local center estimate does not close the cutoff bound. The finite " ++
+        "prime-band criterion, phase energy and scale-dependent floor, and complete eta identities remain available; " ++
         "none supplies the missing global estimate."))
     ]),
     ("goal", .str "A complete Lean-verified proof of the Riemann hypothesis")
