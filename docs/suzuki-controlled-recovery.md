@@ -19,6 +19,11 @@ logarithmic in the physical prime cutoff.
 This controls how long recovery can take. It does not bound the depths of
 the intervening negative excursions or exclude any additional zeta zero.
 
+The [variable-damping extension](suzuki-relative-recovery.md) now replaces
+4096 by every fixed `K > 1`, with a threshold that may depend on `K`.
+It also removes the fixed factor from the balanced-cell exponent transfer.
+The original unit-damping proof below remains available at its stated scope.
+
 ## Exact positive delay cancellation
 
 For any nonreal complex node `p = delta + i*gamma`, put

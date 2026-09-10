@@ -9,6 +9,14 @@ the evolving Lean 4 proof development and supporting analytic and finite-model
 theory. The proof is not complete; in the meantime, the extensive Lean theorems and formalizations that we've compiled along the way are provided to the wider community. Only declarations accepted by Lean and the
 repository's verification gates count as established results.
 
+> **Proved accomplishment: a zero-free region at every height.**
+> Every nontrivial zeta zero `rho = beta + i*t` satisfies
+> **`m(t) < beta < 1 - m(t)`**, where **`m(t) = 1/(10 log(|t|+2))`**.
+> This excludes a positive-width region adjoining each edge of the critical
+> strip, at every ordinate, with all hypotheses discharged in Lean.
+> [Kernel-checked theorem](RiemannGaussian/ZetaCompletionReserveZeroFree.lean#L231)
+> · [Proof and scope](docs/zeta-completion-reserve-zero-free.md).
+
 > **Research agents:** GPT-5.6 Sol and GPT-6 Astra with **Max** reasoning effort, running in the
 > **Codex CLI harness**.
 
@@ -27,25 +35,33 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Prove an independent signed arithmetic upper bound below the positive Gaussian reflection source. Use the exact coupled variation of the bounded complex carrier and normalized eta mass, retaining completion and heat terms. At genuine carrier poles, normalization cancels the apparent negative quadratic margin. The next obstruction is a signed global estimate for that coupled variation with the actual reflection and heat weights. The RH inequality remains open.
+Seek one independent signed inequality excluding every right-half zero. Prime support now strengthens all admissible positive phase families and preserves their full energy in the completion budget. The uniform edge margin remains 1/(10 log(|t|+2)). Next, control the surviving signed arithmetic beyond the logarithmic height cost, retaining the sieved odd-reflection source. RH remains open.
 
 ## Latest Update
 
-Lean now carries the signed curvature identity through the actual varying
-normalization and full complex reflection weight. At every genuine upper
-carrier pole, differentiation of that normalization cancels the whole
-apparent negative quadratic margin. All eta side conditions follow from
-the original xi pole; arbitrary pole orders are included.
+Lean now proves **a stronger independent arithmetic floor**. Retaining the
+actual prime support improves the Stechkin transfer factor from `1-c` to
+`1-c*exp(-(tau-sigma)*log(2))`. For `1<sigma<=5/4`, the new factor is at least
+`2/3` and at least six fifths of the previous factor. The comparison applies
+to every admissible nonnegative phase kernel, with finite or countable real
+frequencies.
 
-The full complex eta source is also exactly `2*i*r^2*(S*U' - U*S')`,
-where `S` is the bounded smooth carrier and `U` is the normalized eta mass.
-Lean proves `0 <= U <= 1/r^2` and `normSq(S) = U - r^2*U^2`.
-The derivative identity applies on the completion domain away from common
-zeros, including genuine carrier poles, and retains the companion heat term
-in the complete reflection density. An estimate for its global signed
-variation remains open. No new zero is excluded. The full local build,
-declaration lint, and transitive axiom audit pass.
-See [the signed normalization and coupled current](docs/suzuki-eta-signed-current.md).
+The existing exact family consequently has actual Stechkin prime work at
+least `exp(-4*(sigma-1)*log(2))/60`, with unchanged coefficients. Its complete
+finite phase energy reaches the zero budget alongside the retained negative
+completion constant. A strict violation of this explicit budget proves
+literal zeta nonvanishing.
+
+Lean also bounds the energy per unit mass for every binomial degree and
+every such family. At fixed degree, adding phases cannot make this reserve
+grow without bound.
+
+The uniform zero-free width remains `1/(10 log(|t|+2))`; this slice does not
+claim a wider uniform region. The logarithmic height cost and the independent
+signed bound for the remaining right-half zeros are still open. The full
+local build, declaration lints, and transitive axiom checks pass.
+
+See [prime support, full phase energy, and the zero budget](docs/zeta-stechkin-support-floor.md).
 
 ## Notable Formalisations
 
@@ -54,6 +70,26 @@ a compiled theorem; its source records the precise domains and hypotheses.
 
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
+| **Joint arithmetic sieve and smaller Fourier region** | The lower logarithmic-band endpoint gives uniform geometric mass decay for all dominated complex coefficient families. An analytic continuum of symbol rates has independently vanishing complementary interaction; `(14/15)^N` has an explicit rational error budget. The actual cofinal sieve retains its full source. Exact opposite-frequency and physical-reflection identities then cancel the imaginary physical component and each row's even real component, leaving a signed sine-product correlation with the odd real profile. Its required upper bound remains open. | [general band control](RiemannGaussian/ZetaDominatedMomentBand.lean), [decaying arithmetic mass and exact Fourier identities](RiemannGaussian/ZetaDominatedWeightedFourier.lean), [analytic rate criterion and complete error](RiemannGaussian/ZetaDominatedResonanceDecay.lean), [actual sieved source](RiemannGaussian/ZetaSievedFourierCarrier.lean), [signed trigonometric work](RiemannGaussian/ZetaSievedFourierTrig.lean), [exact cancellations and scalar comparison](RiemannGaussian/ZetaSievedFourierReflection.lean) |
+| **Cofinal arithmetic sieve with exact overlaps** | Grouped inclusion-exclusion controls simultaneous deletion of all mixed-prime divisors below `log₂ D_N`. The total overlap budget is discharged, and the original finite head, prime powers, and sieve corrections have one geometric error bound. The full source remains on distinct-prime products whose every prime-pair product is at least the threshold; their signed bound is open. | [exact signed overlap coefficients](RiemannGaussian/FiniteDivisibilitySieve.lean), [actual union bound](RiemannGaussian/ZetaMoebiusFiniteSieve.lean), [explicit cofinal sieve](RiemannGaussian/ZetaMoebiusGrowingSieve.lean), [total error and surviving prime support](RiemannGaussian/ZetaMoebiusSievedPrimeTail.lean) |
+| **Uniform mixed-prime arithmetic decay** | The actual sum over every multiple of a positive mixed-prime factor is a finite least-common-multiple response. Preserving its Dirichlet weight gives a factor-independent bound and geometric decay at the hypothetical-zero source scale. Arbitrary moving finite complex families with total absolute weight at most the divisor cutoff also decay. The literal complement retains the full source; its signed bound remains open. | [exact arithmetic response](RiemannGaussian/ZetaMoebiusMultipleResponse.lean), [uniform factor-independent bound](RiemannGaussian/ZetaMoebiusMultipleBound.lean), [actual sums, all-family decay, and complementary source](RiemannGaussian/ZetaMoebiusMultipleDecay.lean) |
+| **Möbius Fourier localisation and signed divisor cancellation** | Exact weighting gives independent complementary decay, removes the constant Fourier component, and retains the full zero source. Complete coprime mixed-prime divisor fibres now cancel inside the full Fourier products. The two-prime boundary has an exact signed profile, including a middle term of magnitude `log p`. The global signed bound remains open; the earlier fractional absolute-kernel allowance is formally ruled out. | [arithmetic modulus and centered source](RiemannGaussian/ZetaMoebiusCenteredResonance.lean), [complete divisor cancellation and boundary bound](RiemannGaussian/ZetaMoebiusDivisorBoundary.lean), [signed prime-fibre profile](RiemannGaussian/ZetaMoebiusPrimeFibre.lean), [full Fourier transport](RiemannGaussian/ZetaMoebiusDivisorFourier.lean), [source-scale norm obstruction](RiemannGaussian/ZetaMoebiusFractionalBudgetAudit.lean) |
+| **All-family completion reserve and stronger zero exclusion** | Keeping the negative completion constant preserves `log(2)/2` per unit phase mass in every admissible family. The existing exact optimizer then proves `1/(10 log(|t|+2)) < Re(rho) < 1-1/(10 log(|t|+2))` for every genuine nontrivial zero. The new edge width exceeds six fifths of the previous width everywhere, with a proved positive source gap after all errors. Full multiplicity and signed prime work remain available; the interior RH bound is open. | [general signed reserve and complete source](RiemannGaussian/ZetaCompletionReserve.lean), [independent allowance and actual zero-free strip](RiemannGaussian/ZetaCompletionReserveZeroFree.lean), [preceding exact-family estimate](RiemannGaussian/ZetaPhaseHalfLogZeroFree.lean) |
+| **Prime support and full phase energy in the zero budget** | The exact two-line weight ratio gives every admissible positive phase kernel a larger arithmetic transfer factor. On `1<sigma<=5/4` it improves the preceding transfer by at least `6/5`; the unchanged exact family's actual Stechkin work is at least `exp(-4*(sigma-1)*log(2))/60`. Its complete finite energy and the favorable completion constant enter one literal zero constraint. The global source-beating bound is open. | [exact support factor and all-family arithmetic comparison](RiemannGaussian/ZetaStechkinSupportFloor.lean), [full source, finite energy, and explicit nonvanishing test](RiemannGaussian/ZetaCompletionSupportBudget.lean) |
+| **Reflected eta phases at every cutoff** | Exact adjacent summation and its absolutely convergent signed remainder hold at every cutoff in `Re(s)>0`. In `0<sigma<1`, the mixed reflected inverse satisfies `2 sqrt(sigma*(1-sigma)) |P|<=Re(P)`, uniformly in height and cutoff, for all nonnegative finite or summable families. Actual completed zeroth moments and signed pairs retain the full boundary and variation. The independent current bound remains open. | [exact reflection and sector bound](RiemannGaussian/EtaReflectedAdjacent.lean), [all cutoffs, all nonnegative families, and completed moments](RiemannGaussian/EtaReflectedAdjacentSums.lean) |
+| **Eta tails uniform at unbounded heights** | Exact complex adjacent ratios and their telescoping inverse variation give `|eta-eta_N|<=2X^(-Re(s))` and normalized error `<=3|s|/(2X)` for `X=2N+1>=|s|`. The full boundary phase and signed remainder remain available. Arbitrary moving arguments and cutoffs converge to the Euler half endpoint when `|s|/X -> 0`; the independent finite-prefix arithmetic bound remains open. | [complex ratio and variation](RiemannGaussian/EtaAdjacentRatio.lean), [actual tail, zero constraint, and moving-argument limit](RiemannGaussian/EtaUniformTailBound.lean) |
+| **Absolute arithmetic decay through strip zeros and poles** | The actual source factors through the full logarithmic derivative difference, whose simple poles are locally integrable in the plane. Compact arithmetic L1 mass is at most `C_K/r`, with one bound for all measurable complex weight families. The original reflected exterior costs `C/(r*epsilon^2)` uniformly over selected right-half zeros, leaving the full source in moving reflected neighborhoods. The independent bound through that node is open. | [planar logarithmic integrability](RiemannGaussian/ComplexLogDerivativeIntegrability.lean), [exact factorization, compact bounds, and moving-node source](RiemannGaussian/SuzukiCompactSourceDecay.lean) |
+| **Closed Euler-half-plane arithmetic decay** | The actual xi logarithmic curvature has polynomial growth on `Re(s)>=1`, including every low-height zero in the proof. The full normalized reflection-weighted arithmetic source has global L1 bound `C/r^2` there. Arbitrary moving cutoffs inherit decay, leaving the selected source inside the right half of the critical strip; its independent ceiling remains open. | [genuine divisor and curvature bound](RiemannGaussian/RiemannXiEulerCurvature.lean), [exact source identity, global bound, and remaining strip](RiemannGaussian/SuzukiEulerSourceDecay.lean) |
+| **Centered Euler eta expansion and zero exclusion at every height** | The exact complex eta center `1/2+s/4` has error at most `|s| |s+1|/(4(Re(s)+1))`, with a signed integral identity and quantitative remainder at every cutoff. This excludes all nontrivial zeros with `Im(rho)^2<=3`, removing the height restriction from the edge strip `1/(24 log(|t|+22)) < Re(rho) < 1-1/(24 log(|t|+22))`. The global RH goal remains open. | [full expansion and every-cutoff bound](RiemannGaussian/EtaCenteredEulerExpansion.lean), [polynomial exclusion and unrestricted edge strip](RiemannGaussian/ZetaCenteredEulerZeroFree.lean), [all-family half-log budget](RiemannGaussian/ZetaCompletionHalfLogBound.lean) |
+| **Exact Euler-boundary phase limit** | The complete Stechkin prime work minus its whole pole family has an Abel limit for every nonnegative summable family with a logarithmic real-frequency moment, including frequencies accumulating at zero. Uniform domination uses the existing zero-free strip. The boundary identity keeps the exact signed completion and full right-half source `m/(1-Re(rho))`; the independent regularized arithmetic floor is open. | [uniform boundary control](RiemannGaussian/ZetaEulerBoundaryControl.lean), [complex response](RiemannGaussian/ZetaStechkinBoundary.lean), [all-family Abel limit and source](RiemannGaussian/ZetaStechkinBoundaryPhase.lean) |
+| **Reflected Stechkin comparison for arbitrary phase families** | Partial horizontal subtraction preserves nonnegative actual reflection pairs and the full selected right-half multiplicity source. The Gamma allowance is multiplied by `1 - sigma/sqrt(1+4*sigma^2)`. Exact infinite-family identities, finite prime-power windows, and every positive shift are proved. This is a classical method; the source-beating arithmetic floor remains open. | [reflection comparison](RiemannGaussian/ZetaStechkinComparison.lean), [actual zero budget](RiemannGaussian/ZetaStechkinBudget.lean), [all-family shifted source](RiemannGaussian/ZetaStechkinPhaseBudget.lean) |
+| **Horizontal phase comparisons without a frequency moment** | The actual completion increases horizontally and its complex differences are uniformly bounded. The full paired prime work, signed zero blocks and nonnegative Gamma reserve obey an exact identity for all summable nonnegative coefficient families and arbitrary real frequencies. Finite arithmetic windows inherit the bound. The selected source and negative distant zero terms are both proved explicitly; their required joint control remains open. | [completion variation](RiemannGaussian/ZetaRegularCorrectionVariation.lean), [signed zero geometry](RiemannGaussian/ZetaHorizontalBudget.lean), [all-family identity and finite windows](RiemannGaussian/ZetaPhaseHorizontalBudget.lean) |
+| **Global phase budget with full multiplicity** | The actual signed prime work and all genuine zero contributions satisfy an exact identity for every admissible finite or infinite phase family. A proved Gamma bound replaces the local analytic allowance by `1 + log(sigma + |t|)`. Every nontrivial zero and every positive shift are covered; finite arithmetic windows inherit the bound for nonnegative kernels. The source-beating arithmetic lower bound is open. | [global Poisson identity](RiemannGaussian/ZetaGlobalPoisson.lean), [logarithmic completion bound](RiemannGaussian/ZetaGlobalSignedBudget.lean), [all-family budget and finite windows](RiemannGaussian/ZetaGlobalPhaseBudget.lean) |
+| **Relative Suzuki recovery and exponent transfer** | For every fixed `K > 1`, the actual signal recovers to a positive value in every sufficiently late interval `[a,K*a]`. Variable damping retains the complete signed moment with bounded error. Deep values have nearby balanced minima; a hypothetical balanced floor `N^delta` transfers with any exponent `epsilon > delta`. The arithmetic floor remains open. | [variable-damping moments](RiemannGaussian/SuzukiDampedDelayMoments.lean), [actual relative recovery](RiemannGaussian/SuzukiRelativeRecovery.lean), [balanced exponent transfer](RiemannGaussian/SuzukiBalancedExponentTransfer.lean) |
+| **Full arithmetic core and arbitrary finite angular mixtures** | The actual reflection-weighted arithmetic source has a positive radial profile at each hypothetical upper reflected zero, uniformly in angle at fixed nonzero rescaled radius. One threshold preserves a positive core for all normalized finite complex mixtures with bounded total absolute weight, including growing and changing families. This diagnoses a limitation of angular averaging; the global arithmetic ceiling is open. | [uniform node chart and phase-mixture theorem](RiemannGaussian/SuzukiArithmeticNodeProfile.lean) |
+| **Normalized Gaussian drift decay through zeros** | The actual mass and carrier share an exact rescaling law. Their quadratic relation supplies a continuous derivative-energy majorant, proving full drift-allowance decay with the squared smoothing factor on every fixed compact upper-line interval. Exact current endpoints also vanish, giving a finite-interval arithmetic ceiling below every positive tolerance. The singular reflection-weighted estimate remains open. | [normalized current](RiemannGaussian/SuzukiGammaNormalizedCurrent.lean), [exact Gaussian square](RiemannGaussian/SuzukiGammaNormalizedGaussian.lean), [mass rescaling](RiemannGaussian/SuzukiMassRescaling.lean), [derivative energy](RiemannGaussian/SuzukiMassDerivativeEnergy.lean), [actual allowance decay](RiemannGaussian/SuzukiGammaNormalizedGaussianDecay.lean) |
+| **Normalized arithmetic band reduction** | Both complete source errors vanish in global L1. The weighted arithmetic contribution now has bound `C/r^2` on the whole closed Euler half-plane. Arbitrary eligible moving rectangles retain the full source in `0<=Im(z)<1/2`, with no extra buffer. Its independent ceiling is open. | [companion heat decay](RiemannGaussian/SuzukiCompanionHeatDecay.lean), [exact arithmetic reduction](RiemannGaussian/SuzukiGammaArithmeticReduction.lean), [uniform cutoffs](RiemannGaussian/SuzukiGammaArithmeticCutoff.lean), [closed Euler-half-plane decay](RiemannGaussian/SuzukiEulerSourceDecay.lean) |
+| **Signed Gamma curvature and full reflected error decay** | An exact shifted completion represents the actual xi carrier through all zeros. Its normalized curvature error vanishes in L1 on the whole upper half-plane, retaining both reflection poles, for fixed positive Gaussian time and growing smoothing. The remaining arithmetic source bound is open. | [signed trigamma estimate](RiemannGaussian/TrigammaHalfPlane.lean), [actual source transport](RiemannGaussian/SuzukiGammaShiftSource.lean), [full reflected L1 decay](RiemannGaussian/SuzukiGammaReflectionDecay.lean) |
 | **Controlled arithmetic recovery from positive delays** | Every sufficiently late interval `[a,4096*a]` contains a positive value of the actual Suzuki signal. Finite positive delay averages cancel prescribed nonreal modes exactly; the genuine filtered arithmetic moments retain a universal linear coefficient with bounded error. Recovery times are controlled, while negative excursion depths remain open. | [controlled recovery](RiemannGaussian/SuzukiControlledRecovery.lean), [exact delay transform](RiemannGaussian/PositiveDelayAveraging.lean), [signed moment bound](RiemannGaussian/SuzukiPositiveDelayMoments.lean), [independent tail estimate](RiemannGaussian/GammaMomentRecovery.lean) |
 | **Exact phase optimisation and arithmetic floors** | A unique maximiser for the specified shift and linear cost, among all feasible finite or infinite integer-frequency families. Exactly eight nonconstant frequencies occur. Its four contact cosines avoid their doubled images. Complete binomial energies and actual prime scales give an arithmetic floor `exp(-4*(sigma-1)*log(2))/40` for `1 < sigma <= 5/4`, plus a phase-sensitive threshold in actual zero exclusion. | [existsUnique_phaseContactOptimizer](RiemannGaussian/ZetaPhaseExactOptimizer.lean), [phaseContactExact_doubled_contact_gap](RiemannGaussian/ZetaPhaseContactDoubling.lean), [phaseContactExact_binomial_scaled_arithmetic_floor](RiemannGaussian/ZetaPhaseBinomialScale.lean), [phaseContactExact_binomial_energy_exclusion](RiemannGaussian/ZetaPhaseBinomialScale.lean) |
 | **Literal signed prime detection of hypothetical zeros** | An exact local-divisor polynomial isolates each right-half zero's negative multiplicity in a finite ordinary-prime band. Proper prime powers, both arithmetic tails, and the complete analytic remainder are negligible. The independent lower bound for the retained signed band remains open. | [tendsto_zetaRightHalfOrdinaryPrimeBandFilter_re](RiemannGaussian/ZetaPrimeMomentBand.lean), [tendsto_zetaRightHalfPrimeBandChebyshevIntegral_re](RiemannGaussian/ZetaPrimeBandChebyshev.lean) |
@@ -142,11 +178,23 @@ positivity or vanishing direction remains unproved.
 
 ## Accomplishments
 
+- **Proved explicit zero-free edge regions at every height.**
+  [nontrivialZetaZero_mem_completionReserve_strip](RiemannGaussian/ZetaCompletionReserveZeroFree.lean#L231)
+  proves `1/(10 log(|t|+2)) < Re(rho) < 1-1/(10 log(|t|+2))`
+  for **every genuine nontrivial zeta zero**, without a lower height cutoff
+  or an unproved arithmetic premise. The
+  [literal nonvanishing theorem](RiemannGaussian/ZetaCompletionReserveZeroFree.lean#L250)
+  also covers the closed right-edge region, away from the pole at one.
+  Retaining the negative completion constant increases the preceding
+  project edge width by more than `6/5` everywhere, with a proved
+  `59/90000` source gap after all explicit errors. This is a rigorously
+  formalised bound within the classical zero-free-region framework;
+  the remaining interior bound needed for RH is open.
 - **Proved an exact phase optimiser over all admissible integer frequencies.**
   [existsUnique_phaseContactOptimizer](RiemannGaussian/ZetaPhaseExactOptimizer.lean)
   proves existence and uniqueness for the specified cost and shift, including
   infinite competitors. The tiny high-frequency coefficients are necessary
-  for that optimum. Its actual zeta application proves the
+  for that optimum. Its earlier local zeta application proves the
   [reciprocal-logarithm edge strip with denominator `23000`](RiemannGaussian/ZetaPhaseExactZeroBound.lean).
   Preserving weighted phase returns also gives a proved
   [arithmetic floor `1/120` and an explicit local zero reserve](RiemannGaussian/ZetaPhaseWeightedRecurrence.lean).

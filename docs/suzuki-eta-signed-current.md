@@ -31,6 +31,15 @@ global smoothness of `U` at common zeros or transfer its derivative
 identity through an area integral there. The previously proved global
 smoothness and source formula for the original xi carrier remain intact.
 
+The subsequent [finite integral theorem](suzuki-reflection-mass-integral.md)
+now proves global smoothness of the original normalized xi mass, including
+common zeros, and a global horizontal source identity. It supplies the
+actual finite integration-by-parts formula and an explicit inverse-radius
+allowance. The [ordinary area theorem](suzuki-reflection-mass-area.md)
+then proves integrability through both reflection nodes and removes the
+puncture parameter. An independent source ceiling for the signed mass
+variation remains open.
+
 ## What happens to the negative square
 
 In [ComplexSignedCurvature.lean](../RiemannGaussian/ComplexSignedCurvature.lean),
@@ -123,17 +132,95 @@ determine the area integral.
 
 ## Remaining obligation
 
+The subsequent [angular cancellation theorem](suzuki-reflection-angular-decay.md)
+removes the complete reflection remainder and current edges in the
+smoothing limit on each fixed eligible upper rectangle, including its
+reflected node. The signed normalized mass variation still needs an
+independent source bound; no expanding-area limit interchange is proved.
+
+The [rescaled mass profile](suzuki-reflection-mass-profile.md) now shows
+that this retained term tends to the entire positive source on fixed
+eligible rectangles. Its constant angular component also survives
+perpendicular phase coupling. Smoothing alone does not supply a deficit.
+
 The [bare-curvature Gaussian decay](eta-curvature-gaussian.md) controls
 an integral before multiplication by the variable normalization and
-reflection factors. The new identities do not transfer that decay to
-the full source. Bounded fields alone do not bound their coupled
-variation.
+reflection factors. The subsequent [quartic Gaussian estimate](eta-quartic-gaussian.md)
+now includes the two additional eta factors: the positive part of the
+signed quartic integral tends to zero on every line to the right of
+three quarters. It retains an exact negative phase square and uses the
+literal eta height bound to control its positive allowance. Completion,
+the variable denominator and the reflection weight remain outside that
+estimate. Bounded fields alone do not bound their coupled variation.
 
-The active goal still needs an independent signed estimate for the
-complete weighted area that is strictly below the proved positive
-reflected-zero source. A prospective integration by parts must establish
-regularity, integrability, boundary contributions and puncture limits
-for the actual fields. Neither a new area-limit exchange nor a new zero
-exclusion is claimed here. The dashboard's quantitative milestone remains
-the proved bare-curvature Gaussian bound; the new identities are recorded
-as structure and an obstruction audit.
+The subsequent [shifted Gamma theorem](suzuki-gamma-reflection-decay.md)
+now isolates the completion-curvature contribution in another exact
+representation of the same actual carrier. This full complex error,
+including the original reflection weight and variable normalization,
+tends to zero in L1 on the entire upper half-plane as smoothing grows
+at fixed positive Gaussian time. No reflection node is removed; the
+actual mass's quadratic vanishing supplies the global dominator. The
+same error vanishes on arbitrary moving spatial cutoffs. The completion's
+first derivative is still inside the arithmetic denominator.
+
+The [arithmetic band reduction](suzuki-arithmetic-band-reduction.md) now
+also removes the complete companion heat contribution in global L1.
+The full source is one normalized weighted arithmetic quartic plus two
+proved negligible errors. A rectangle-independent boundary estimate
+allows simultaneous spatial and smoothing growth. The actual zero-free
+edge estimate now bounds logarithmic curvature on the entire closed
+Euler half-plane. Its exact source identity gives the full weighted
+arithmetic density an L1 bound `C/r^2` on `Im(z) >= 1/2`, including the
+boundary. Removing that half-plane leaves the entire original positive
+source in `0 <= Im(z) < 1/2`; the horizontal cutoff may grow. The
+independent signed ceiling inside that strip remains open.
+
+The [compact strip estimate](suzuki-compact-source-decay.md) now gives
+the unweighted arithmetic density absolute integral at most `C_K/r`
+on every fixed compact upper region, through all zeros and carrier
+poles. The original reflection-weighted exterior of a radius-`epsilon`
+disk costs at most `C/(r*epsilon^2)`, uniformly over selected right-half
+zeros. Eligible moving disks retain the full selected source; the
+independent inequality through the reflected node remains open.
+
+The [normalized Gaussian decay theorem](suzuki-normalized-gaussian-decay.md)
+now proves a finite-interval bound with the actual denominator retained.
+The exact mass–carrier quadratic relation and a common rescaling law
+give a continuous derivative-energy majorant through all zeros. The
+complete scaled drift allowance has integral tending to zero on every
+fixed compact upper horizontal set; both scaled current endpoints also
+vanish. The normalized arithmetic Gaussian integral is therefore
+eventually below every positive tolerance on a fixed finite interval.
+The full complex weighted current identity remains available upstream.
+The singular reflection weight and growing intervals are outside this
+new decay estimate.
+
+The [full arithmetic node profile](suzuki-arithmetic-node-profile.md)
+now retains the singular weight and identifies a positive radial core.
+Convergence is uniform over every angle at fixed nonzero rescaled radius.
+One threshold preserves this core for all finite complex angular mixtures
+whose coefficients sum to one and whose total absolute weight has a fixed
+bound, including growing and changing families. This is a proved method
+obstruction; it does not supply the missing arithmetic upper bound.
+
+On the complementary Suzuki floor route, [variable-damping recovery](suzuki-relative-recovery.md)
+now proves positive values in every sufficiently late logarithmic-time
+interval `[a,K*a]`, for every fixed `K > 1`. The complete signed moments
+and both tail bounds are retained. Deep excursions have balanced minima
+between `t/K` and `K*t`, so a balanced-cell floor `N^delta` transfers to
+the literal signal with every exponent `epsilon > delta`. This sharpens
+recovery and removes the old factor 4096 from that transfer; the independent
+arithmetic depth estimate remains open.
+
+The active goal still needs an independent signed estimate below the
+proved positive reflected-zero source. Regularity, finite-area
+integration by parts, node integrability and current-edge bounds are now
+available for the actual fields. The latest angular cancellation removes
+the complete earlier analytic remainder as smoothing grows on each
+fixed eligible rectangle. Gamma curvature, companion heat, and the
+arithmetic contribution a fixed distance beyond the known zero strip
+now have global L1 decay. The source's simultaneous cutoff limit is
+proved. The latest finite-interval ceiling now includes the variable
+normalization and its complete drift, but the independent arithmetic
+ceiling with the singular reflection weight inside the surviving band
+remains open; no new zero exclusion is proved.
