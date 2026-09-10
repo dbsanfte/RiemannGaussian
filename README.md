@@ -35,33 +35,30 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek one independent signed inequality excluding every right-half zero. Prime support now strengthens all admissible positive phase families and preserves their full energy in the completion budget. The uniform edge margin remains 1/(10 log(|t|+2)). Next, control the surviving signed arithmetic beyond the logarithmic height cost, retaining the sieved odd-reflection source. RH remains open.
+Seek one independent signed inequality excluding every right-half zero. The entire nonsquarefree contribution now has a proved geometric bound, including every prime square and all overlaps with the quadratic prime sieve. The full signed source survives on squarefree integers in the physical window and (6/7)^N Fourier region, with every error tending to zero. Next, bound this surviving signed correlation strictly below its source. The all-height edge strip is unchanged; RH is open.
 
 ## Latest Update
 
-Lean now proves **a stronger independent arithmetic floor**. Retaining the
-actual prime support improves the Stechkin transfer factor from `1-c` to
-`1-c*exp(-(tau-sigma)*log(2))`. For `1<sigma<=5/4`, the new factor is at least
-`2/3` and at least six fifths of the previous factor. The comparison applies
-to every admissible nonnegative phase kernel, with finite or countable real
-frequencies.
+Lean now proves **independent geometric decay of the entire nonsquarefree
+contribution**, including every prime square. An exact expansion retains
+all overlaps with the quadratic prime sieve. Its bound is uniform in the
+selected square family, and proved dominated convergence includes all
+prime squares in the full infinite arithmetic series.
 
-The existing exact family consequently has actual Stechkin prime work at
-least `exp(-4*(sigma-1)*log(2))/60`, with unchanged coefficients. Its complete
-finite phase energy reaches the zero budget alongside the retained negative
-completion constant. A strict violation of this explicit budget proves
-literal zeta nonvanishing.
+At each hypothetical right-half zero, put `u=3/2-Re(rho)` and
+`lambda=2*sqrt(u)/(1+sqrt(u))<1`. The full normalized repeated-prime
+contribution is bounded by `C(rho)*lambda^N -> 0`.
 
-Lean also bounds the energy per unit mass for every binomial degree and
-every such family. At fixed degree, adding phases cannot make this reserve
-grow without bound.
+The complete signed source remains on **squarefree integers**, with at
+least two distinct prime divisors and at most one prime through the
+existing quadratic cutoff. The physical window, `(6/7)^N` Fourier region,
+exact reflection identity, and every vanishing error allowance are retained.
 
-The uniform zero-free width remains `1/(10 log(|t|+2))`; this slice does not
-claim a wider uniform region. The logarithmic height cost and the independent
-signed bound for the remaining right-half zeros are still open. The full
-local build, declaration lints, and transitive axiom checks pass.
+The remaining task is an independent strict upper bound on this squarefree
+signed correlation. No additional zeros are excluded, and the all-height
+edge width remains `1/(10 log(|t|+2))`.
 
-See [prime support, full phase energy, and the zero budget](docs/zeta-stechkin-support-floor.md).
+See [the all-square bound and complete surviving source](docs/zeta-squarefree-signed-source.md).
 
 ## Notable Formalisations
 
@@ -70,7 +67,13 @@ a compiled theorem; its source records the precise domains and hypotheses.
 
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
+| **All prime squares controlled; full squarefree signed source** | Exact intersection factors keep every shared prime through the square and quadratic prime sieves. The complete overlap cost is uniform over all selected squares; dominated convergence includes every prime square in the full arithmetic series. At every hypothetical right-half zero the entire normalized nonsquarefree contribution is bounded by `C(rho)*lambda^N`, with `lambda=2*sqrt(u)/(1+sqrt(u))<1`. The full signed source and finite vanishing error survive on squarefree coefficients; their strict upper bound remains open. | [exact intersections and uniform cost](RiemannGaussian/FinitePrimeSquareOverlap.lean), [full infinite-square limit](RiemannGaussian/ZetaSquarefreeSieve.lean), [actual geometric bound](RiemannGaussian/ZetaSquarefreeSource.lean), [complete signed source and finite error](RiemannGaussian/ZetaSquarefreeWindowSource.lean) |
+| **Complete prime-pattern sieve with a quadratic cutoff** | Exact selected-prime patterns retain all signs and intersections. The full overlap cost is at most `(1+R^2)*exp(8*sqrt(R))` for every finite prime family through `R`. Selecting all primes through `floor(N*log(q)/8)^2` gives actual union decay `C*(1+N^4)*(sqrt(u))^N`. The full signed source survives on integers with at most one selected prime divisor, with all errors proved to vanish. Its independent upper bound remains open. | [exact patterns and complete cost](RiemannGaussian/FinitePrimePatternSieve.lean), [genuine arithmetic union](RiemannGaussian/ZetaPrimePatternResponse.lean), [quadratic cutoff and decay](RiemannGaussian/ZetaQuadraticPrimeSieve.lean), [full signed source and finite error](RiemannGaussian/ZetaQuadraticWindowSource.lean) |
+| **Joint divisor-factor scale in the arithmetic response** | The exact complex gcd/lcm identity retains both physical scales. Pairing divisors gives a uniform fourth-root factor saving for all positive integers, removing the former `sqrt(D)` cost when `P>=D^2`. All mixed-prime factors in the actual window satisfy this condition. Every moving complex family with mass at most `D^3*sqrt(D)` has normalized bound `C*(1+8N)*(u^(1/8))^N -> 0`. The full collection's signed bound and overlap budget remain open. | [complete divisor mass and factor pairing](RiemannGaussian/NatLcmSqrtMass.lean), [exact phase and actual arithmetic bound](RiemannGaussian/ZetaMoebiusLcmBound.lean), [all window-factor families and enlarged budget](RiemannGaussian/ZetaMoebiusWindowFactorDecay.lean) |
+| **Actual Fourier density and a smaller source region** | The normalized inverse-square symbol sum is at most `2/gap`, uniformly over every cyclic modulus and gapped frequency set. Including both centering terms and the window's arithmetic mass gives decay for every rate `r>160/189`. The full cubic-sieved source survives on `(6/7)^N`, with explicit rates `(80/81)^N` and `(5/9)^N` and a complete vanishing error allowance. Its independent signed upper bound remains open. | [general inverse-symbol mass and centered bound](RiemannGaussian/FiniteFourierSymbolMass.lean), [all-family localization and rates](RiemannGaussian/ZetaAveragedResonance.lean), [complete signed source and finite error](RiemannGaussian/ZetaAveragedWindowSource.lean) |
+| **Divisor scale and cubic sieve budget** | Retaining each divisor's inverse-square-root weight improves the complete multiple-sector cost to `sqrt(D)`, uniformly over all factors and complex families. The actual cubic overlap budget decays at rate `u^(N/8)` and removes every mixed-prime divisor below `floor(log2(D^3))`. The full signed source and all vanishing errors coexist in the smaller physical window; its strict upper bound is open. | [exact scale identity and arithmetic bound](RiemannGaussian/ZetaMoebiusScaleBound.lean), [all-family cubic budget and actual sieve](RiemannGaussian/ZetaMoebiusCubicSieve.lean), [complete signed window source and errors](RiemannGaussian/ZetaCubicWindowSource.lean) |
 | **Joint arithmetic sieve and smaller Fourier region** | The lower logarithmic-band endpoint gives uniform geometric mass decay for all dominated complex coefficient families. An analytic continuum of symbol rates has independently vanishing complementary interaction; `(14/15)^N` has an explicit rational error budget. The actual cofinal sieve retains its full source. Exact opposite-frequency and physical-reflection identities then cancel the imaginary physical component and each row's even real component, leaving a signed sine-product correlation with the odd real profile. Its required upper bound remains open. | [general band control](RiemannGaussian/ZetaDominatedMomentBand.lean), [decaying arithmetic mass and exact Fourier identities](RiemannGaussian/ZetaDominatedWeightedFourier.lean), [analytic rate criterion and complete error](RiemannGaussian/ZetaDominatedResonanceDecay.lean), [actual sieved source](RiemannGaussian/ZetaSievedFourierCarrier.lean), [signed trigonometric work](RiemannGaussian/ZetaSievedFourierTrig.lean), [exact cancellations and scalar comparison](RiemannGaussian/ZetaSievedFourierReflection.lean) |
+| **Smaller logarithmic window for the full signed source** | General exponential tilts control every dominated complex family outside `2N/5 <= log n <= 8N`, with two explicit geometric errors. The actual sieve, complete centered Fourier products, and odd-reflection identity coexist on this smaller finite support. The whole multiplicity source survives and every omitted term has a vanishing allowance; the independent bound inside the window remains open. | [general Chernoff rates and actual shell bounds](RiemannGaussian/ZetaLogMomentTilt.lean), [all-family localization and full error](RiemannGaussian/ZetaLogWindowLocalization.lean), [actual finite source and signed comparison](RiemannGaussian/ZetaSievedLogWindow.lean) |
 | **Cofinal arithmetic sieve with exact overlaps** | Grouped inclusion-exclusion controls simultaneous deletion of all mixed-prime divisors below `log₂ D_N`. The total overlap budget is discharged, and the original finite head, prime powers, and sieve corrections have one geometric error bound. The full source remains on distinct-prime products whose every prime-pair product is at least the threshold; their signed bound is open. | [exact signed overlap coefficients](RiemannGaussian/FiniteDivisibilitySieve.lean), [actual union bound](RiemannGaussian/ZetaMoebiusFiniteSieve.lean), [explicit cofinal sieve](RiemannGaussian/ZetaMoebiusGrowingSieve.lean), [total error and surviving prime support](RiemannGaussian/ZetaMoebiusSievedPrimeTail.lean) |
 | **Uniform mixed-prime arithmetic decay** | The actual sum over every multiple of a positive mixed-prime factor is a finite least-common-multiple response. Preserving its Dirichlet weight gives a factor-independent bound and geometric decay at the hypothetical-zero source scale. Arbitrary moving finite complex families with total absolute weight at most the divisor cutoff also decay. The literal complement retains the full source; its signed bound remains open. | [exact arithmetic response](RiemannGaussian/ZetaMoebiusMultipleResponse.lean), [uniform factor-independent bound](RiemannGaussian/ZetaMoebiusMultipleBound.lean), [actual sums, all-family decay, and complementary source](RiemannGaussian/ZetaMoebiusMultipleDecay.lean) |
 | **Möbius Fourier localisation and signed divisor cancellation** | Exact weighting gives independent complementary decay, removes the constant Fourier component, and retains the full zero source. Complete coprime mixed-prime divisor fibres now cancel inside the full Fourier products. The two-prime boundary has an exact signed profile, including a middle term of magnitude `log p`. The global signed bound remains open; the earlier fractional absolute-kernel allowance is formally ruled out. | [arithmetic modulus and centered source](RiemannGaussian/ZetaMoebiusCenteredResonance.lean), [complete divisor cancellation and boundary bound](RiemannGaussian/ZetaMoebiusDivisorBoundary.lean), [signed prime-fibre profile](RiemannGaussian/ZetaMoebiusPrimeFibre.lean), [full Fourier transport](RiemannGaussian/ZetaMoebiusDivisorFourier.lean), [source-scale norm obstruction](RiemannGaussian/ZetaMoebiusFractionalBudgetAudit.lean) |

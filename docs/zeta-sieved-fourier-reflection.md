@@ -171,4 +171,8 @@ These reflection identities alone exclude no additional zeros. The later
 [completion-reserve argument](zeta-completion-reserve-zero-free.md) proves
 the stronger edge margin `1/(10*log(|gamma|+2))`. The remaining interior
 zeros still require an independent signed bound; RH remains open.
-Validation is local with commits and remote CI held at the user's request.
+The subsequent [logarithmic-window localization](zeta-sieved-log-window.md)
+independently controls both outer arithmetic shells and retains this same
+source on `2N/5 <= log n <= 8N`. Its finite comparison and complete vanishing
+error keep the strict signed bound on the surviving correlation as the
+remaining obligation.

@@ -134,7 +134,9 @@ theorem abs_moebiusFactorialRemainder_le {N d : ℕ} (hd : 0 < d) (hdN : d ≤ N
       apply (eq_div_iff hs.ne').mpr
       nlinarith [Real.sq_sqrt hy.le]
 
-private theorem sum_inv_sqrt_le (D : ℕ) :
+/-- Telescoping consecutive square roots bounds the full reciprocal
+square-root prefix, including the empty prefix at cutoff zero. -/
+theorem sum_inv_sqrt_Icc_le (D : ℕ) :
     (∑ d ∈ Finset.Icc 1 D, 1 / Real.sqrt d) ≤ 2 * Real.sqrt D := by
   induction D with
   | zero => simp
@@ -181,7 +183,7 @@ theorem abs_sum_moebiusFactorialRemainder_low_le {N D : ℕ}
     _ = 2 / Real.sqrt N * ∑ d ∈ Finset.Icc 1 D, 1 / Real.sqrt d := by
       rw [Finset.mul_sum]
     _ ≤ 2 / Real.sqrt N * (2 * Real.sqrt D) :=
-      mul_le_mul_of_nonneg_left (sum_inv_sqrt_le D) (by positivity)
+      mul_le_mul_of_nonneg_left (sum_inv_sqrt_Icc_le D) (by positivity)
     _ = _ := by ring
 
 /-- Möbius inversion identifies the literal Chebyshev sum with full factorial prefixes at the exact divided cutoffs. -/
