@@ -35,26 +35,27 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek an independent strict signed bound for the rough squarefree source above D_N^3. The reflected head has geometric decay, while the remaining cutoff depends on each summation integer. Exact cutoff and phase identities show why fixed-cutoff decay and bounds uniform over arbitrary complex coefficients do not automatically control that tail. Preserve the actual Möbius correlations and moving cutoff. RH and the global bound remain open.
+Seek a cofinal strict signed bound for the large-prime tail. Its squared Möbius weight retains the logarithms of primes above D_N; the complete small-prime correction has independent decay. Keeping u exactly also bounds the full head through D_N^3. Every remaining nonzero coefficient has a prime and cofactor both above D_N, and the tail retains the full positive multiplicity source. Its upper bound and RH remain open.
 
 ## Latest Update
 
-Lean now proves two exact checks on possible estimates for the surviving
-arithmetic source. **The mixed coefficient at cutoff `floor(n/2)` equals
-the entire rough squarefree composite logarithmic weight.** Thus the
-dependence of a cutoff on the summation integer can retain the full source.
+Lean now bounds the **entire small-prime logarithmic contribution of the
+squared Möbius mask**, including every divisor intersection. Its actual
+allowance is `C(rho)*(1+N)*eta(rho)^N`, with `eta(rho)<1`.
 
-The multiplicative height phase also factors exactly into row and column
-phases, retaining the complex polynomial amplitude and arbitrary arithmetic
-restrictions. **A bound uniform over all complex coefficient families with
-fixed magnitude budgets is equivalent to the same bound at zero height.**
-This leaves estimates exploiting the actual fixed Möbius coefficients open.
+Subtracting that complete correction leaves the exact weight
+`M_D(n)^2 * sum_(p|n, p>D) log(p)` on rough squarefree composites.
+It vanishes whenever every prime factor is at most `D`; every nonzero
+coefficient has a prime and cofactor both above `D`.
 
-The existing reflected-head bound `C(p)*(9/10)^N` through `n<=D_N^3`
-remains valid. These checks do not bound the surviving tail or exclude any
-additional zero. Its strict signed upper bound and RH remain open; the
-all-height edge width remains `1/(10 log(|t|+2))`.
-See [the exact cutoff and phase checks](docs/zeta-cutoff-phase-audit.md).
+Keeping the source parameter `u=3/2-Re(rho)` also pays a full `D_N^2`
+coefficient cost through `n<=D_N^3`, with bound `C(p)*(1/(2u))^N`.
+Since `u>1/2`, this tends to zero. The literal remaining tail retains
+source `m_rho`, and its complete comparison error is independently proved
+to vanish. **The strict signed upper bound for that tail remains open.**
+No additional zero is excluded; the all-height edge width remains
+`1/(10 log(|t|+2))`.
+See [small-prime logarithmic decay and the remaining tail](docs/zeta-rough-prime-log-source.md).
 
 ## Notable Formalisations
 
@@ -63,6 +64,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
+| **Small-prime logarithmic decay and a large-prime source** | The squared mask's complete small-prime logarithmic contribution has an independent geometric allowance. The remaining weight vanishes on all integers whose prime factors are at most `D_N`; each nonzero coefficient has a prime and cofactor beyond `D_N`. Retaining the exact source parameter pays a full quadratic coefficient cost through `D_N^3`. The convergent tail retains the full source, with complete decaying errors; its strict signed bound remains open. | [full logarithmic bound, prime fibres and source](RiemannGaussian/ZetaRoughPrimeLogSource.lean), [general quadratic-cost head estimate](RiemannGaussian/ZetaArithmeticQuadraticSmallProduct.lean), [exact prime insertion recurrences](RiemannGaussian/ZetaRoughMoebiusPrimeRecurrence.lean), [proof and scope](docs/zeta-rough-prime-log-source.md) |
 | **Exact divisor reflection and a bounded head** | Full Möbius compensation equals minus the mixed coefficient at the exact adaptive cutoff `floor(n/(D+1))`. Every selected subset through `D_N^3` has an independent `C(p)*(9/10)^N` bound. The complete multiplicity source remains in the convergent high-product series; its signed upper bound remains open. Exact cutoff and phase identities clarify the scope of possible estimates. | [reflection, head bound and exact source partition](RiemannGaussian/ZetaRoughMoebiusHyperbola.lean), [proof and cutoff distinction](docs/zeta-rough-moebius-hyperbola.md), [multiplicative phase transport](RiemannGaussian/ZetaMultiplicativePhase.lean), [scope of the mechanism checks](docs/zeta-cutoff-phase-audit.md) |
 | **All complex divisor correlations and their unit source** | Every pair of complex divisor-weight families with product of coefficient masses at most `D_N^2` has an independently bounded full nonunit remainder. The original phase and every lcm cross term are retained. Uniformly over the families, only `w(1)*conj(v(1))` times the original composite logarithmic source survives. The exact Möbius square is included. This does not supply the independent signed upper bound. | [exact correlations, uniform error and all-family source](RiemannGaussian/ZetaRoughDivisorCorrelation.lean), [proof and scope](docs/zeta-rough-divisor-correlation.md) |
 | **Mixed Möbius decay and the exact square source** | An exact logarithm-removal identity preserves every polynomial phase and bounds all marked bare squarefree responses uniformly. The full mixed logarithmic term has independent geometric decay, including every lcm intersection, and vanishes on ordinary primes. Both source-transfer errors decay, leaving the full multiplicity source in the nonnegative squared Möbius coefficient with its original oscillatory kernel. Its strict signed upper bound remains open. | [exact kernel and uniform marked bound](RiemannGaussian/ZetaRoughSquarefreeBareFilter.lean), [mixed decay, complete errors and square source](RiemannGaussian/ZetaRoughMoebiusMixedDecay.lean), [proof and scope](docs/zeta-rough-moebius-mixed-decay.md) |

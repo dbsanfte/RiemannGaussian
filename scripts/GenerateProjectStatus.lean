@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "Exact divisor reflection identifies full Mobius compensation with minus the mixed coefficient at E=floor(n/(D+1)), retaining parity, the integer endpoint and the original complex kernel. Every selected subset through D_N^3 has independent bound C(p)*(9/10)^N, including the full extra Mobius mask. The complete source remains in the genuinely convergent series above D_N^3, where D_N^2<E+D_N. The earlier fixed-cutoff mixed estimate does not bound this adaptive tail. Its strict signed upper bound and RH remain open; no additional zero is excluded"
-    lineOne := "exact divisor reflection"
-    lineTwo := "small-product decay"
+    label := "The squared Mobius mask's entire small-prime logarithmic contribution has an independent cubic-cost bound and actual allowance C(rho)*(1+N)*eta^N. Subtracting it leaves the exact logarithmic weight of primes above D_N on rough squarefree composites. Every nonzero coefficient has a prime and cofactor both above D_N. Retaining u=3/2-Re(rho) pays a full D_N^2 coefficient cost through D_N^3 at rate 1/(2u)<1. The convergent high-product tail retains the full multiplicity source and both errors independently vanish. Its strict signed upper bound and RH remain open; no additional zero is excluded"
+    lineOne := "small-prime log decay"
+    lineTwo := "prime/cofactor source"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.RoughMoebiusHyperbola.norm_actualHead_le
+      ``RiemannGaussian.RoughPrimeLog.exists_actualTail_error_bound
   },
   {
     label := "Prime support strengthens every admissible positive phase family's Stechkin transfer to 1-c*exp(-(tau-sigma)*log(2)), at least 6/5 of the preceding factor for 1<sigma<=5/4. The unchanged exact family has actual Stechkin work at least exp(-4*(sigma-1)*log(2))/60. Its complete finite phase energy and the negative completion reserve reach the literal zero budget together. The logarithmic height cost and the global signed bound remain open; the uniform zero-free strip is unchanged"
@@ -868,6 +868,28 @@ run_cmd do
       ("mechanism", .str "Exact reflection bounds the adaptive coefficient by D_N times the original divisor-log majorant. Divide by D_N, apply the cubic small-product estimate, and pay D_N*(3/4)^N<=(9/10)^N"),
       ("remainingSupport", .str "The literal convergent tail n>D_N^3 retains source m_rho. Its reflected cutoff satisfies D_N^2<E+D_N, including every integer endpoint"),
       ("remainingObligation", .str "An independent strict signed upper bound for the retained tail below its unit source cofinally. Fixed-cutoff mixed decay does not control a cutoff that changes with each summation integer. No new zero bound, RH proof or mathematical-priority claim")
+    ]),
+    ("roughPrimeLogSource", Json.mkObj [
+      ("completeIntersectionTheorem", .str "RiemannGaussian.RoughPrimeLog.smallCoefficient_eq_lcm_sum"),
+      ("independentFullBoundTheorem", .str "RiemannGaussian.RoughPrimeLog.exists_smallResponse_bound"),
+      ("actualDecayTheorem", .str "RiemannGaussian.RoughPrimeLog.exists_actualSmall_bound"),
+      ("exactSourceSplitTheorem", .str "RiemannGaussian.RoughPrimeLog.coefficient_eq_square_sub_small"),
+      ("smoothSupportCancellationTheorem", .str "RiemannGaussian.RoughPrimeLog.coefficient_eq_zero_of_smooth"),
+      ("primeCofactorSupportTheorem", .str "RiemannGaussian.RoughPrimeLog.exists_prime_cofactor_of_coefficient_ne_zero"),
+      ("exactPrimeFibresTheorem", .str "RiemannGaussian.RoughPrimeLog.coefficient_eq_large_prime_fibres"),
+      ("generalQuadraticHeadTheorem", .str "RiemannGaussian.norm_normalized_sum_zetaArithmetic_quadratic_cubic_le"),
+      ("actualHeadTheorem", .str "RiemannGaussian.RoughPrimeLog.norm_actualHead_le"),
+      ("convergentTailTheorem", .str "RiemannGaussian.RoughPrimeLog.summable_tailResponse"),
+      ("completeErrorTheorem", .str "RiemannGaussian.RoughPrimeLog.exists_actualTail_error_bound"),
+      ("independentErrorDecayTheorem", .str "RiemannGaussian.RoughPrimeLog.tendsto_actualTail_sub_square"),
+      ("retainedSourceTheorem", .str "RiemannGaussian.RoughPrimeLog.tendsto_actualTail"),
+      ("conditionalContradictionTheorem", .str "RiemannGaussian.RoughPrimeLog.false_of_cofinal_tail_bound"),
+      ("weightedPrimeInsertionTheorem", .str "RiemannGaussian.RoughMoebiusPrimeRecurrence.weighted_prefix_prime"),
+      ("adaptiveLogRecurrenceTheorem", .str "RiemannGaussian.RoughMoebiusPrimeRecurrence.reflected_logMask_prime"),
+      ("carrier", .str "M_D(n)^2*sum_(p|n,p>D) log(p) on the original rough squarefree composites. The literal retained series is further restricted to n>D_N^3, with the original complex kernel and normalization"),
+      ("independentBounds", .str "The complete small-prime logarithmic response costs C(y,r)*D^3*log(D)*exp(4*sqrt(R))*r^(-N)*B_p(r) at order N+1. At the actual schedule its allowance is C(rho)*(1+N)*eta^N. Every selected cubic-head subset with full D_N^2 majorant cost has bound C(p)*(1/(2u))^N, retaining u>1/2"),
+      ("scope", .str "Both complete errors independently vanish. The new weight is zero when all prime factors are <=D_N, and every nonzero coefficient has a prime and cofactor both >D_N. This does not estimate a separately restricted part of the old correction or assert an independent bound on the surviving prime-cofactor sum"),
+      ("remainingObligation", .str "For every hypothetical right-half zero, a cofinal real-part upper bound strictly below one for the retained normalized tail. That premise remains open. No new zero exclusion or proof of RH")
     ]),
     ("multiplicativePhase", Json.mkObj [
       ("kernelTransportTheorem", .str "RiemannGaussian.MultiplicativePhase.kernel_shift"),
