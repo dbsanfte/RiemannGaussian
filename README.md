@@ -35,30 +35,26 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek one independent signed inequality excluding every right-half zero. The entire nonsquarefree contribution now has a proved geometric bound, including every prime square and all overlaps with the quadratic prime sieve. The full signed source survives on squarefree integers in the physical window and (6/7)^N Fourier region, with every error tending to zero. Next, bound this surviving signed correlation strictly below its source. The all-height edge strip is unchanged; RH is open.
+Seek an independent strict signed bound for the rough squarefree source above D_N^3. The reflected head has geometric decay, while the remaining cutoff depends on each summation integer. Exact cutoff and phase identities show why fixed-cutoff decay and bounds uniform over arbitrary complex coefficients do not automatically control that tail. Preserve the actual Möbius correlations and moving cutoff. RH and the global bound remain open.
 
 ## Latest Update
 
-Lean now proves **independent geometric decay of the entire nonsquarefree
-contribution**, including every prime square. An exact expansion retains
-all overlaps with the quadratic prime sieve. Its bound is uniform in the
-selected square family, and proved dominated convergence includes all
-prime squares in the full infinite arithmetic series.
+Lean now proves two exact checks on possible estimates for the surviving
+arithmetic source. **The mixed coefficient at cutoff `floor(n/2)` equals
+the entire rough squarefree composite logarithmic weight.** Thus the
+dependence of a cutoff on the summation integer can retain the full source.
 
-At each hypothetical right-half zero, put `u=3/2-Re(rho)` and
-`lambda=2*sqrt(u)/(1+sqrt(u))<1`. The full normalized repeated-prime
-contribution is bounded by `C(rho)*lambda^N -> 0`.
+The multiplicative height phase also factors exactly into row and column
+phases, retaining the complex polynomial amplitude and arbitrary arithmetic
+restrictions. **A bound uniform over all complex coefficient families with
+fixed magnitude budgets is equivalent to the same bound at zero height.**
+This leaves estimates exploiting the actual fixed Möbius coefficients open.
 
-The complete signed source remains on **squarefree integers**, with at
-least two distinct prime divisors and at most one prime through the
-existing quadratic cutoff. The physical window, `(6/7)^N` Fourier region,
-exact reflection identity, and every vanishing error allowance are retained.
-
-The remaining task is an independent strict upper bound on this squarefree
-signed correlation. No additional zeros are excluded, and the all-height
-edge width remains `1/(10 log(|t|+2))`.
-
-See [the all-square bound and complete surviving source](docs/zeta-squarefree-signed-source.md).
+The existing reflected-head bound `C(p)*(9/10)^N` through `n<=D_N^3`
+remains valid. These checks do not bound the surviving tail or exclude any
+additional zero. Its strict signed upper bound and RH remain open; the
+all-height edge width remains `1/(10 log(|t|+2))`.
+See [the exact cutoff and phase checks](docs/zeta-cutoff-phase-audit.md).
 
 ## Notable Formalisations
 
@@ -67,6 +63,15 @@ a compiled theorem; its source records the precise domains and hypotheses.
 
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
+| **Exact divisor reflection and a bounded head** | Full Möbius compensation equals minus the mixed coefficient at the exact adaptive cutoff `floor(n/(D+1))`. Every selected subset through `D_N^3` has an independent `C(p)*(9/10)^N` bound. The complete multiplicity source remains in the convergent high-product series; its signed upper bound remains open. Exact cutoff and phase identities clarify the scope of possible estimates. | [reflection, head bound and exact source partition](RiemannGaussian/ZetaRoughMoebiusHyperbola.lean), [proof and cutoff distinction](docs/zeta-rough-moebius-hyperbola.md), [multiplicative phase transport](RiemannGaussian/ZetaMultiplicativePhase.lean), [scope of the mechanism checks](docs/zeta-cutoff-phase-audit.md) |
+| **All complex divisor correlations and their unit source** | Every pair of complex divisor-weight families with product of coefficient masses at most `D_N^2` has an independently bounded full nonunit remainder. The original phase and every lcm cross term are retained. Uniformly over the families, only `w(1)*conj(v(1))` times the original composite logarithmic source survives. The exact Möbius square is included. This does not supply the independent signed upper bound. | [exact correlations, uniform error and all-family source](RiemannGaussian/ZetaRoughDivisorCorrelation.lean), [proof and scope](docs/zeta-rough-divisor-correlation.md) |
+| **Mixed Möbius decay and the exact square source** | An exact logarithm-removal identity preserves every polynomial phase and bounds all marked bare squarefree responses uniformly. The full mixed logarithmic term has independent geometric decay, including every lcm intersection, and vanishes on ordinary primes. Both source-transfer errors decay, leaving the full multiplicity source in the nonnegative squared Möbius coefficient with its original oscillatory kernel. Its strict signed upper bound remains open. | [exact kernel and uniform marked bound](RiemannGaussian/ZetaRoughSquarefreeBareFilter.lean), [mixed decay, complete errors and square source](RiemannGaussian/ZetaRoughMoebiusMixedDecay.lean), [proof and scope](docs/zeta-rough-moebius-mixed-decay.md) |
+| **All divisor incidences and exact Möbius compensation** | Every bounded complex family of nontrivial squarefree divisor marks through `D_N^4` has independently vanishing total variation, with full roughness, squarefree restriction and higher prime intersections. The complete truncated Möbius mask retains the original source for every admissible moving cutoff. At `Y=D_N`, its coefficient exposes a real square and the exact mixed logarithmic companion. The signed bound remains open. | [full divisor mass and all-family bound](RiemannGaussian/ZetaRoughDivisorIncidence.lean), [exact masks, source and square identity](RiemannGaussian/ZetaRoughMoebiusIncidenceSource.lean), [proof and scope](docs/zeta-rough-divisor-incidence.md) |
+| **Prime-incidence decay and a balanced source** | The sum of the magnitudes of all marked-prime responses through `D_N^4` has an independent geometric bound, controlling every bounded complex prime-weight family. Subtracting the incidences through `D_N` cancels unbalanced semiprimes exactly; small products have a separate `(9/10)^N` allowance. The full source remains on two-factor products with the exact weight `1-k_N(n)`. Their strict signed bound remains open. | [all-family arithmetic decay](RiemannGaussian/ZetaRoughPrimeIncidence.lean), [exact cancellation, errors and balanced source](RiemannGaussian/ZetaRoughPrimeIncidenceSource.lean), [proof and scope](docs/zeta-rough-prime-incidence.md) |
+| **Full coprime-factor families from rough prime structure** | The actual factor complexity is uniformly subexponential in moment order. Every eligible finite complex family with coefficient mass through `D_N^2` has independently vanishing complete arithmetic response, including its finite prefixes. An exact coverage identity keeps overlaps and extra multiples; representing the full rough squarefree survivor within the bound remains open. | [uniform complexity and genuine family decay](RiemannGaussian/ZetaRoughCoprimeFactorDecay.lean), [proof and coverage limits](docs/zeta-rough-coprime-factor-decay.md) |
+| **Prime phases and both coprime Euler channels** | Exact finite Euler products retain a positive phase gain forced by distinct prime logarithms. On the actual rough physical support, the value multiplier tends uniformly to `1` and its logarithmic companion to `0` throughout each fixed analytic disc of radius below one. An all-family estimate includes the complete coefficient mass; the remaining signed response bound is open. | [exact phases and uniform two-channel control](RiemannGaussian/ZetaCoprimeEulerPhase.lean), [proof and scope](docs/zeta-coprime-euler-phase.md) |
+| **Small-product decay and exact cofactor cancellation** | Every dominated coefficient family has normalized bound `C(P)*(3/4)^N` through `D_N^3`. Above that cube, nonzero original rough squarefree coefficients admit two factors beyond `D_N` or are unbalanced semiprimes with exact coefficient `-log(q)`. Small composite cofactors vanish pointwise. The full source and finite signed comparison survive on the remaining sectors together; their independent one-sided bound is open. | [general geometric bound](RiemannGaussian/ZetaArithmeticSmallProduct.lean), [exact cancellation and factorization](RiemannGaussian/ZetaRoughSquarefreeFactorGeometry.lean), [actual coupled source and errors](RiemannGaussian/ZetaRoughSquarefreeFactorSource.lean) |
+| **Every selected prime removed from the squarefree source** | The whole pattern with exactly one selected prime has an independent bound, retaining all shared-prime corrections, intersections, and finite ordinary-prime leakage. At the actual quadratic cutoff the normalized bound is `C(rho)*(1+N^4)*lambda^N -> 0`. The full signed source and all finite errors survive on squarefree integers whose every prime divisor exceeds that cutoff; their independent strict upper bound remains open. | [all squarefree intersection responses](RiemannGaussian/ZetaSquarefreeDivisibilityPrefix.lean), [exact one-prime transform](RiemannGaussian/FinitePrimeCountOne.lean), [entire arithmetic bound](RiemannGaussian/ZetaOnePrimeSquarefreeBound.lean), [actual decay and source](RiemannGaussian/ZetaRoughSquarefreeSource.lean), [complete signed window and errors](RiemannGaussian/ZetaRoughSquarefreeWindowSource.lean) |
 | **All prime squares controlled; full squarefree signed source** | Exact intersection factors keep every shared prime through the square and quadratic prime sieves. The complete overlap cost is uniform over all selected squares; dominated convergence includes every prime square in the full arithmetic series. At every hypothetical right-half zero the entire normalized nonsquarefree contribution is bounded by `C(rho)*lambda^N`, with `lambda=2*sqrt(u)/(1+sqrt(u))<1`. The full signed source and finite vanishing error survive on squarefree coefficients; their strict upper bound remains open. | [exact intersections and uniform cost](RiemannGaussian/FinitePrimeSquareOverlap.lean), [full infinite-square limit](RiemannGaussian/ZetaSquarefreeSieve.lean), [actual geometric bound](RiemannGaussian/ZetaSquarefreeSource.lean), [complete signed source and finite error](RiemannGaussian/ZetaSquarefreeWindowSource.lean) |
 | **Complete prime-pattern sieve with a quadratic cutoff** | Exact selected-prime patterns retain all signs and intersections. The full overlap cost is at most `(1+R^2)*exp(8*sqrt(R))` for every finite prime family through `R`. Selecting all primes through `floor(N*log(q)/8)^2` gives actual union decay `C*(1+N^4)*(sqrt(u))^N`. The full signed source survives on integers with at most one selected prime divisor, with all errors proved to vanish. Its independent upper bound remains open. | [exact patterns and complete cost](RiemannGaussian/FinitePrimePatternSieve.lean), [genuine arithmetic union](RiemannGaussian/ZetaPrimePatternResponse.lean), [quadratic cutoff and decay](RiemannGaussian/ZetaQuadraticPrimeSieve.lean), [full signed source and finite error](RiemannGaussian/ZetaQuadraticWindowSource.lean) |
 | **Joint divisor-factor scale in the arithmetic response** | The exact complex gcd/lcm identity retains both physical scales. Pairing divisors gives a uniform fourth-root factor saving for all positive integers, removing the former `sqrt(D)` cost when `P>=D^2`. All mixed-prime factors in the actual window satisfy this condition. Every moving complex family with mass at most `D^3*sqrt(D)` has normalized bound `C*(1+8N)*(u^(1/8))^N -> 0`. The full collection's signed bound and overlap budget remain open. | [complete divisor mass and factor pairing](RiemannGaussian/NatLcmSqrtMass.lean), [exact phase and actual arithmetic bound](RiemannGaussian/ZetaMoebiusLcmBound.lean), [all window-factor families and enlarged budget](RiemannGaussian/ZetaMoebiusWindowFactorDecay.lean) |

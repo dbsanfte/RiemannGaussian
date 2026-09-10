@@ -237,3 +237,9 @@ repeated primes does not establish that bound: squarefree products
 still retain the full source. No additional zeros are excluded by
 this slice; the [all-height edge strip](zeta-completion-reserve-zero-free.md)
 remains unchanged and RH is open.
+
+The subsequent [complete last-prime bound](zeta-rough-squarefree-signed-source.md)
+also controls the entire squarefree contribution with exactly one selected
+prime. The full source then survives on squarefree integers whose every
+prime divisor exceeds the same quadratic cutoff. Its independent strict
+signed upper bound remains open.
