@@ -11,11 +11,12 @@ repository's verification gates count as established results.
 
 > **Proved accomplishment: a zero-free region at every height.**
 > Every nontrivial zeta zero `rho = beta + i*t` satisfies
-> **`m(t) < beta < 1 - m(t)`**, where **`m(t) = 1/(10 log(|t|+2))`**.
+> **`m(t) < beta < 1 - m(t)`**, where
+> **`m(t) = 792/(7625 log(|t|+2) - 2000)`**.
 > This excludes a positive-width region adjoining each edge of the critical
 > strip, at every ordinate, with all hypotheses discharged in Lean.
-> [Kernel-checked theorem](RiemannGaussian/ZetaCompletionReserveZeroFree.lean#L231)
-> · [Proof and scope](docs/zeta-completion-reserve-zero-free.md).
+> [Kernel-checked theorem](RiemannGaussian/ZetaSignedPoleZeroFree.lean)
+> · [Proof and scope](docs/zeta-signed-pole-zero-free.md).
 
 > **Research agents:** GPT-5.6 Sol and GPT-6 Astra with **Max** reasoning effort, running in the
 > **Codex CLI harness**.
@@ -35,24 +36,22 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek an independent cofinal signed bound below the unit source. A complete lcm estimate now gives linear divisor-cutoff cost and controls all bounded complex weight families through D_N^3, with a geometric error. This enlarges the admissible correlation cutoffs. The large-prime tail's signed upper bound remains open, and the wider correlation range alone does not establish it.
+Seek an independent cofinal signed bound below the unit source. Complete lcm estimates control all bounded complex divisor families through D_N^3; the small-prime logarithmic correction now decays through D_N^2. The source survives beyond D_N^4. Retaining the signed pole subtraction separately widens the proved edge exclusion. The surviving arithmetic sum's strict signed bound remains open.
 
 ## Latest Update
 
-Lean now bounds the **full ordered lcm mass by a constant times D**, keeping
-all pair multiplicities and the entire divisor correction. The prime
-correction has exactly three entries per prime and is included in the bound.
+Lean now proves a wider all-height zero-free
+region: **`m(t) = 792/(7625 log(|t|+2) - 2000)`**. The full signed pole
+term is negative for `1 <= sigma <= 4/3` and `t^2 >= 3`. Transporting this
+sign through every admissible integer-frequency family removes the positive
+quadratic pole allowance and retains the constant-mode subtraction.
 
-For every pair of pointwise bounded complex divisor-weight families, the
-complete nonunit arithmetic remainder now has **linear cutoff cost**,
-replacing the preceding `D^3*(1+log(D^2))` bound for this class.
-
-At the actual source normalization, every moving divisor cutoff through
-**D_N^3** has uniform error `C(rho)*eta(rho)^N`, with `eta(rho)<1`.
-The exact unit interaction still carries the multiplicity source. The
-independent signed upper bound for that source remains open; **no additional
-zero is excluded**. The all-height edge width remains `1/(10 log(|t|+2))`.
-See [linear divisor-correlation cost and its scope](docs/zeta-rough-divisor-linear-bound.md).
+With the existing phase coefficients unchanged, the new width exceeds
+`1584/1525` times the preceding width at every height. The remaining signed
+arithmetic bound in the interior strip is still open. The complete
+small-prime logarithmic correction also has a stronger bound, extending its
+decay through D_N^2 and retaining the source beyond D_N^4.
+See [the signed pole proof and its scope](docs/zeta-signed-pole-zero-free.md).
 
 ## Notable Formalisations
 
@@ -61,7 +60,8 @@ a compiled theorem; its source records the precise domains and hypotheses.
 
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
-| **Small-prime logarithmic decay and a large-prime source** | The squared mask's complete small-prime logarithmic contribution has an independent geometric allowance. The remaining weight vanishes on all integers whose prime factors are at most `D_N`; each nonzero coefficient has a prime and cofactor beyond `D_N`. Retaining the exact source parameter pays a full quadratic coefficient cost through `D_N^3`. The convergent tail retains the full source, with complete decaying errors; its strict signed bound remains open. | [full logarithmic bound, prime fibres and source](RiemannGaussian/ZetaRoughPrimeLogSource.lean), [general quadratic-cost head estimate](RiemannGaussian/ZetaArithmeticQuadraticSmallProduct.lean), [exact prime insertion recurrences](RiemannGaussian/ZetaRoughMoebiusPrimeRecurrence.lean), [proof and scope](docs/zeta-rough-prime-log-source.md) |
+| **Signed pole cancellation and a wider zero-free region** | The complete pole subtraction is negative on the relevant separated frequencies. Every admissible integer-frequency family consequently has no positive quadratic pole cost; the constant-mode reserve remains explicit. The unchanged exact family proves the all-height edge width `792/(7625 log(|t|+2)-2000)`, with all arithmetic hypotheses discharged. The global RH bound remains open. | [all-family bound and literal zero exclusion](RiemannGaussian/ZetaSignedPoleZeroFree.lean), [proof and scope](docs/zeta-signed-pole-zero-free.md) |
+| **Small-prime logarithmic decay and a larger prime-tail cutoff** | The complete small-prime logarithmic response has cutoff cost `D*sqrt(D)*log(D)`, keeping all ordered lcm interactions. Its normalized allowance decays for every moving cutoff through D_N^2. At that larger cutoff, every surviving nonzero coefficient has a prime and cofactor beyond D_N^2, so the full convergent source lies beyond D_N^4. The independent signed upper bound remains open. | [full lcm bound, enlarged cutoff and source](RiemannGaussian/ZetaRoughPrimeLogLcmBound.lean), [original exact prime fibres](RiemannGaussian/ZetaRoughPrimeLogSource.lean), [proof and scope](docs/zeta-rough-prime-log-lcm-bound.md) |
 | **Exact divisor reflection and a bounded head** | Full Möbius compensation equals minus the mixed coefficient at the exact adaptive cutoff `floor(n/(D+1))`. Every selected subset through `D_N^3` has an independent `C(p)*(9/10)^N` bound. The complete multiplicity source remains in the convergent high-product series; its signed upper bound remains open. Exact cutoff and phase identities clarify the scope of possible estimates. | [reflection, head bound and exact source partition](RiemannGaussian/ZetaRoughMoebiusHyperbola.lean), [proof and cutoff distinction](docs/zeta-rough-moebius-hyperbola.md), [multiplicative phase transport](RiemannGaussian/ZetaMultiplicativePhase.lean), [scope of the mechanism checks](docs/zeta-cutoff-phase-audit.md) |
 | **All complex divisor correlations and their unit source** | The complete ordered lcm mass has linear cutoff cost, including every divisor correction and the exact three-entry prime correction. All bounded complex families through D_N^3 have an independent geometric error; their limiting unit interaction still carries the source. The earlier coefficient-mass theorem also covers some larger sparse weights. The strict signed upper bound remains open. | [linear arithmetic bound and enlarged cutoff](RiemannGaussian/ZetaRoughDivisorLinearBound.lean), [exact correlations and coefficient-mass bound](RiemannGaussian/ZetaRoughDivisorCorrelation.lean), [proof and scope](docs/zeta-rough-divisor-linear-bound.md) |
 | **Mixed Möbius decay and the exact square source** | An exact logarithm-removal identity preserves every polynomial phase and bounds all marked bare squarefree responses uniformly. The full mixed logarithmic term has independent geometric decay, including every lcm intersection, and vanishes on ordinary primes. Both source-transfer errors decay, leaving the full multiplicity source in the nonnegative squared Möbius coefficient with its original oscillatory kernel. Its strict signed upper bound remains open. | [exact kernel and uniform marked bound](RiemannGaussian/ZetaRoughSquarefreeBareFilter.lean), [mixed decay, complete errors and square source](RiemannGaussian/ZetaRoughMoebiusMixedDecay.lean), [proof and scope](docs/zeta-rough-moebius-mixed-decay.md) |
@@ -186,15 +186,16 @@ positivity or vanishing direction remains unproved.
 ## Accomplishments
 
 - **Proved explicit zero-free edge regions at every height.**
-  [nontrivialZetaZero_mem_completionReserve_strip](RiemannGaussian/ZetaCompletionReserveZeroFree.lean#L231)
-  proves `1/(10 log(|t|+2)) < Re(rho) < 1-1/(10 log(|t|+2))`
+  [nontrivialZetaZero_mem_signedPole_strip](RiemannGaussian/ZetaSignedPoleZeroFree.lean)
+  proves `m(t) < Re(rho) < 1-m(t)`, with
+  `m(t)=792/(7625 log(|t|+2)-2000)`,
   for **every genuine nontrivial zeta zero**, without a lower height cutoff
   or an unproved arithmetic premise. The
-  [literal nonvanishing theorem](RiemannGaussian/ZetaCompletionReserveZeroFree.lean#L250)
+  [literal nonvanishing theorem](RiemannGaussian/ZetaSignedPoleZeroFree.lean)
   also covers the closed right-edge region, away from the pole at one.
-  Retaining the negative completion constant increases the preceding
-  project edge width by more than `6/5` everywhere, with a proved
-  `59/90000` source gap after all explicit errors. This is a rigorously
+  Retaining the full pole sign increases the preceding
+  project edge width by more than `1584/1525` everywhere, with a proved
+  positive source gap after all explicit errors. This is a rigorously
   formalised bound within the classical zero-free-region framework;
   the remaining interior bound needed for RH is open.
 - **Proved an exact phase optimiser over all admissible integer frequencies.**

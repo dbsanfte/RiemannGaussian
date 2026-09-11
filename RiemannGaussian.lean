@@ -1148,6 +1148,7 @@ import RiemannGaussian.ZetaCompletionReserve
 import RiemannGaussian.ZetaCompletionReserveZeroFree
 import RiemannGaussian.ZetaStechkinSupportFloor
 import RiemannGaussian.ZetaCompletionSupportBudget
+import RiemannGaussian.ZetaSignedPoleZeroFree
 import RiemannGaussian.ZetaLogMomentTilt
 import RiemannGaussian.ZetaLogWindowLocalization
 import RiemannGaussian.ZetaSievedLogWindow
@@ -1194,6 +1195,7 @@ import RiemannGaussian.ZetaMultiplicativePhase
 import RiemannGaussian.ZetaRoughMoebiusPrimeRecurrence
 import RiemannGaussian.ZetaArithmeticQuadraticSmallProduct
 import RiemannGaussian.ZetaRoughPrimeLogSource
+import RiemannGaussian.ZetaRoughPrimeLogLcmBound
 import RiemannGaussian.ZetaRoughSquarefreeUnitDivisor
 import RiemannGaussian.ZetaArithmeticLocalEnergy
 import RiemannGaussian.ZetaRoughSquarefreeLocalCorrelation

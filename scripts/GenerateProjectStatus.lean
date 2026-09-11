@@ -69,12 +69,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh
   },
   {
-    label := "Every actual nontrivial zeta zero lies strictly between 1/(10*log(abs(t)+2)) and its complement at every height. Retaining the negative completion constant gives all admissible phase families a log(2)/2 reserve per unit mass. The existing exact family then excludes more than six fifths of the previous edge width, with a proved 59/90000 source gap after all errors. Interior right-half zeros remain unexcluded and RH remains open"
+    label := "Every actual nontrivial zeta zero lies strictly between 792/(7625*log(abs(t)+2)-2000) and its complement at every height. Retaining the signed pole subtraction removes the positive quadratic pole cost for every admissible integer-frequency family in the relevant range. The unchanged exact family excludes more than 1584/1525 times the preceding width. The constant-pole reserve remains explicit; the independent interior signed bound and RH remain open"
     lineOne := "zero-free strip"
     lineTwo := "all heights"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.nontrivialZetaZero_mem_completionReserve_strip
+      ``RiemannGaussian.nontrivialZetaZero_mem_signedPole_strip
   },
   {
     label := "Explicit edge windows contain at most one actual zero counting multiplicity"
@@ -775,6 +775,27 @@ run_cmd do
       ("strictSourceGap", .str "59/90000 after all completion and quadratic pole costs"),
       ("status", .str "Unconditional wider exclusion for literal zeta zeros, with every arithmetic and analytic premise discharged in the new edge region. The independent signed bound for the remaining right-half zeros and the full RH objective remain open; no best published region is claimed")
     ]),
+    ("signedPoleZeroFree", Json.mkObj [
+      ("pointwiseSignTheorem", .str "RiemannGaussian.zetaStechkinPoleBudget_neg"),
+      ("realFrequencyTheorem", .str "RiemannGaussian.zetaPhase_stechkinPole_le_constant"),
+      ("integerFrequencyTheorem", .str "RiemannGaussian.phase_stechkinPole_le_constant"),
+      ("allFamilySourceTheorem", .str "RiemannGaussian.phase_shifted_source_add_primeWork_add_signedPoleReserve_le"),
+      ("budgetTheorem", .str "RiemannGaussian.phaseContactExact_signedPole_zero_budget"),
+      ("allowanceTheorem", .str "RiemannGaussian.zetaSignedPole_allowance_le"),
+      ("stripTheorem", .str "RiemannGaussian.nontrivialZetaZero_mem_signedPole_strip"),
+      ("nonvanishingTheorem", .str "RiemannGaussian.riemannZeta_ne_zero_of_signedPole_margin"),
+      ("comparisonTheorem", .str "RiemannGaussian.completionReserve_margin_scaled_lt_signedPole"),
+      ("margin", .str "792/(7625*log(abs(t)+2)-2000)"),
+      ("previousMargin", .str "1/(10*log(abs(t)+2))"),
+      ("widthRatio", .str "Strictly greater than 1584/1525 at every real ordinate"),
+      ("heightDomain", .str "Every ordinate. The eta constraint t^2>3 implies log(abs(t)+2)>13/10 for each actual nontrivial zero"),
+      ("poleSign", .str "For 1<=sigma<=4/3 and t^2>=3, the complete signed pole term is strictly negative. This controls the full nonconstant countable phase sum, not merely an individual selected term"),
+      ("familyScope", .str "All nonnegative summable real-frequency families with one designated zero mode and every other sampled ordinate having square at least three. All admissible integer-frequency families satisfy this at actual zero ordinates"),
+      ("retainedInformation", .str "Full selected analytic multiplicity, complete signed prime work, negative completion constant and exact constant-pole subtraction; the richer full signed identity remains upstream"),
+      ("source", .str "11/625, using the existing exact optimizer and shift 13/4 without coefficient changes"),
+      ("allowance", .str "At most 11/625-(221/28080)*d when d*(7625*L-2000)<=792, L>=13/10 and c>=4/9. Both the arithmetic work and retained constant-pole reserve have proved nonnegative sign"),
+      ("status", .str "Unconditional wider literal zero exclusion with all analytic and arithmetic hypotheses discharged. The independent signed bound in the remaining interior strip and RH remain open. No mathematical-priority or best-published-region claim")
+    ]),
     ("roughDivisorIncidence", Json.mkObj [
       ("massTheorem", .str "RiemannGaussian.RoughDivisorIncidence.sum_lcmSqrtFactorMass_le"),
       ("intersectionTheorem", .str "RiemannGaussian.RoughDivisorIncidence.prod_correctedWeight_le_lcmSqrtFactorMass"),
@@ -837,7 +858,7 @@ run_cmd do
       ("enlargedCutoffSourceTheorem", .str "RiemannGaussian.RoughDivisorLinear.tendsto_cubic_cutoff_source"),
       ("linearBound", .str "For every pair of pointwise bounded complex families through D, the complete nonunit remainder is bounded by C(y,r)*D*exp(4*sqrt(R))*r^(-N)*B_p(r). This improves the preceding D^3*(1+log(D^2)) bound for this class and includes the complete prime correction"),
       ("linearMechanism", .str "Group the full lcm divisor mass by gcd(d,e), retain both exact divided cutoffs, and sum the remaining weight F(g)/g using a convergent g^(-5/4) majorant. Each prime lcm occurs only in (1,p), (p,1), (p,p); its full kernel contribution also has linear total cost"),
-      ("enlargedCutoffScope", .str "All moving divisor cutoffs 1<=Y_N<=D_N^3 and all pointwise bounded complex families satisfy norm(C_N(Y_N,w_N,v_N)-w_N(1)*conj(v_N(1))*U_N)<=C(rho)*eta^N. The actual sieve, polynomial and ordinate are unchanged. The unit source remains. This does not extend physical localization, n-dependent cutoffs, or small-prime-log decay to the enlarged range"),
+      ("enlargedCutoffScope", .str "All moving divisor cutoffs 1<=Y_N<=D_N^3 and all pointwise bounded complex families satisfy norm(C_N(Y_N,w_N,v_N)-w_N(1)*conj(v_N(1))*U_N)<=C(rho)*eta^N. The actual sieve, polynomial and ordinate are unchanged. The unit source remains. Physical localization and n-dependent cutoffs are not free; the separate prime-log lcm theorem proves small-prime-log decay through D_N^2"),
       ("exactMatrixTheorem", .str "RiemannGaussian.RoughDivisorCorrelation.coefficient_eq_pairs"),
       ("convergentSeriesTheorem", .str "RiemannGaussian.RoughDivisorCorrelation.hasSum_response"),
       ("exactUnitSplitTheorem", .str "RiemannGaussian.RoughDivisorCorrelation.response_eq_unit_add_remainder"),
@@ -879,6 +900,18 @@ run_cmd do
       ("remainingObligation", .str "An independent strict signed upper bound for the retained tail below its unit source cofinally. Fixed-cutoff mixed decay does not control a cutoff that changes with each summation integer. No new zero bound, RH proof or mathematical-priority claim")
     ]),
     ("roughPrimeLogSource", Json.mkObj [
+      ("lcmBareBoundTheorem", .str "RiemannGaussian.RoughSquarefreeBare.exists_response_lcm_bound"),
+      ("primeInsertionMassTheorem", .str "RiemannGaussian.RoughPrimeLogLcm.sum_prime_log_lcm_mass_le"),
+      ("completeTripleMassTheorem", .str "RiemannGaussian.RoughPrimeLogLcm.exists_triple_mass_bound"),
+      ("improvedFullBoundTheorem", .str "RiemannGaussian.RoughPrimeLogLcm.exists_smallResponse_bound"),
+      ("enlargedCutoffBoundTheorem", .str "RiemannGaussian.RoughPrimeLogLcm.exists_square_cutoff_bound"),
+      ("enlargedCutoffDecayTheorem", .str "RiemannGaussian.RoughPrimeLogLcm.tendsto_square_cutoff"),
+      ("enlargedCutoffSourceTheorem", .str "RiemannGaussian.RoughPrimeLogLcm.tendsto_large_square_cutoff"),
+      ("exactFourthTailTheorem", .str "RiemannGaussian.RoughPrimeLogLcm.normalizedLargeResponse_eq_fourth_tail"),
+      ("fourthTailSourceTheorem", .str "RiemannGaussian.RoughPrimeLogLcm.tendsto_doubled_log_cutoff_source"),
+      ("improvedFullBound", .str "The complete small-prime logarithmic response costs C(y,r)*D*sqrt(D)*log(D)*exp(4*sqrt(R))*r^(-N)*B_p(r), retaining the full bare lcm mass, shared-prime cases and every ordered pair"),
+      ("enlargedCutoff", .str "Every moving 1<=Y_N<=D_N^2 has independently vanishing normalized complete small-prime response, bounded by C(rho)*(1+N)*eta^N. The actual large-prime response at that same cutoff tends to m_rho"),
+      ("fourthTailSupport", .str "At Y_N=D_N^2, every nonzero coefficient has a prime and cofactor both greater than D_N^2, so the entire convergent source is exactly the tail n>D_N^4. The original sieve, polynomial, complex phase and normalization are unchanged"),
       ("completeIntersectionTheorem", .str "RiemannGaussian.RoughPrimeLog.smallCoefficient_eq_lcm_sum"),
       ("independentFullBoundTheorem", .str "RiemannGaussian.RoughPrimeLog.exists_smallResponse_bound"),
       ("actualDecayTheorem", .str "RiemannGaussian.RoughPrimeLog.exists_actualSmall_bound"),
@@ -896,7 +929,7 @@ run_cmd do
       ("weightedPrimeInsertionTheorem", .str "RiemannGaussian.RoughMoebiusPrimeRecurrence.weighted_prefix_prime"),
       ("adaptiveLogRecurrenceTheorem", .str "RiemannGaussian.RoughMoebiusPrimeRecurrence.reflected_logMask_prime"),
       ("carrier", .str "M_D(n)^2*sum_(p|n,p>D) log(p) on the original rough squarefree composites. The literal retained series is further restricted to n>D_N^3, with the original complex kernel and normalization"),
-      ("independentBounds", .str "The complete small-prime logarithmic response costs C(y,r)*D^3*log(D)*exp(4*sqrt(R))*r^(-N)*B_p(r) at order N+1. At the actual schedule its allowance is C(rho)*(1+N)*eta^N. Every selected cubic-head subset with full D_N^2 majorant cost has bound C(p)*(1/(2u))^N, retaining u>1/2"),
+      ("independentBounds", .str "The preceding bound cost C(y,r)*D^3*log(D)*exp(4*sqrt(R))*r^(-N)*B_p(r) at order N+1; the separate lcm bound improves this to D*sqrt(D)*log(D). Every selected cubic-head subset with full D_N^2 majorant cost also has bound C(p)*(1/(2u))^N, retaining u>1/2"),
       ("scope", .str "Both complete errors independently vanish. The new weight is zero when all prime factors are <=D_N, and every nonzero coefficient has a prime and cofactor both >D_N. This does not estimate a separately restricted part of the old correction or assert an independent bound on the surviving prime-cofactor sum"),
       ("remainingObligation", .str "For every hypothetical right-half zero, a cofinal real-part upper bound strictly below one for the retained normalized tail. That premise remains open. No new zero exclusion or proof of RH")
     ]),
@@ -1227,7 +1260,7 @@ run_cmd do
       ("familyScope", .str "All nonnegative summable coefficient families with arbitrary real frequencies and nonnegative phase kernels; source budget also requires the genuine logarithmic height moment"),
       ("retainedInformation", .str "Exact support-dependent weight ratio before monotonicity; full mixed binomial energy before its uniform lower bound; selected analytic multiplicity, negative completion reserve, and signed auxiliary pole subtraction in the all-family source theorem"),
       ("instantiation", .str "The existing exact phase optimizer, with unchanged coefficients; its finite energy is an explicit function of the sampling line and all linked phases"),
-      ("status", .str "Stronger unconditional arithmetic floor and necessary zero inequality. Strict violation of the explicit finite energy budget proves literal zeta nonvanishing, but that test is not proved throughout the right half-strip. The fixed-degree reserve has a uniform mass-normalized ceiling; this is not an upper bound on the complete prime work. The uniform margin remains 1/(10*log(abs(t)+2)); RH remains open")
+      ("status", .str "Stronger unconditional arithmetic floor and necessary zero inequality. Strict violation of the explicit finite energy budget proves literal zeta nonvanishing, but that test is not proved throughout the right half-strip. The fixed-degree reserve has a uniform mass-normalized ceiling; this is not an upper bound on the complete prime work. A separate signed-pole argument now widens the uniform edge region; RH remains open")
     ]),
     ("centeredEulerZeroFree", Json.mkObj [
       ("identityTheorem", .str "RiemannGaussian.pairedEtaCore_eq_centered_euler"),
