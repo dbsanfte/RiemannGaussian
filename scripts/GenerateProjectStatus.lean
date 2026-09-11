@@ -101,12 +101,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.Zeta23InverseSampling.externalZeta23_montgomeryTaylor_uncapped_strictly_stronger
   },
   {
-    label := "The squared Mobius mask's entire small-prime logarithmic contribution has an independent cubic-cost bound and actual allowance C(rho)*(1+N)*eta^N. Subtracting it leaves the exact logarithmic weight of primes above D_N on rough squarefree composites. Every nonzero coefficient has a prime and cofactor both above D_N. Retaining u=3/2-Re(rho) pays a full D_N^2 coefficient cost through D_N^3 at rate 1/(2u)<1. The convergent high-product tail retains the full multiplicity source and both errors independently vanish. Its strict signed upper bound and RH remain open; no additional zero is excluded"
-    lineOne := "small-prime log decay"
-    lineTwo := "prime/cofactor source"
+    label := "The complete ordered lcm mass has linear cutoff cost with every divisor correction and pair multiplicity retained. The full ordinary-prime correction has exactly three entries per prime and also has linear cost. All pointwise bounded complex divisor-weight families through D_N^3 now have independent error C(rho)*eta^N with eta<1. Their exact unit interaction retains the multiplicity source. This enlarges the complete correlation's divisor range; the independent signed upper bound for the live large-prime tail remains open, and no additional zero is excluded"
+    lineOne := "linear lcm cost"
+    lineTwo := "families through D_N^3"
     role := "bridge"
     theoremName :=
-      ``RiemannGaussian.RoughPrimeLog.exists_actualTail_error_bound
+      ``RiemannGaussian.RoughDivisorLinear.exists_cubic_cutoff_error_bound
   },
   {
     label := "Prime support strengthens every admissible positive phase family's Stechkin transfer to 1-c*exp(-(tau-sigma)*log(2)), at least 6/5 of the preceding factor for 1<sigma<=5/4. The unchanged exact family has actual Stechkin work at least exp(-4*(sigma-1)*log(2))/60. Its complete finite phase energy and the negative completion reserve reach the literal zero budget together. The logarithmic height cost and the global signed bound remain open; the uniform zero-free strip is unchanged"
@@ -829,6 +829,15 @@ run_cmd do
       ("limitations", .str "Complete arithmetic series, with no free physical localization or transfer of the earlier 1-k_N support restrictions. No new zero exclusion or mathematical-priority claim")
     ]),
     ("roughDivisorCorrelation", Json.mkObj [
+      ("linearLcmMassTheorem", .str "RiemannGaussian.sum_pair_lcmSqrtFactorMass_le_linear"),
+      ("exactPrimeMultiplicityTheorem", .str "RiemannGaussian.sum_pair_prime_lcm_eq"),
+      ("linearArithmeticBoundTheorem", .str "RiemannGaussian.RoughDivisorLinear.exists_bounded_remainder_bound"),
+      ("enlargedCutoffErrorTheorem", .str "RiemannGaussian.RoughDivisorLinear.exists_cubic_cutoff_error_bound"),
+      ("enlargedCutoffDecayTheorem", .str "RiemannGaussian.RoughDivisorLinear.tendsto_cubic_cutoff_error"),
+      ("enlargedCutoffSourceTheorem", .str "RiemannGaussian.RoughDivisorLinear.tendsto_cubic_cutoff_source"),
+      ("linearBound", .str "For every pair of pointwise bounded complex families through D, the complete nonunit remainder is bounded by C(y,r)*D*exp(4*sqrt(R))*r^(-N)*B_p(r). This improves the preceding D^3*(1+log(D^2)) bound for this class and includes the complete prime correction"),
+      ("linearMechanism", .str "Group the full lcm divisor mass by gcd(d,e), retain both exact divided cutoffs, and sum the remaining weight F(g)/g using a convergent g^(-5/4) majorant. Each prime lcm occurs only in (1,p), (p,1), (p,p); its full kernel contribution also has linear total cost"),
+      ("enlargedCutoffScope", .str "All moving divisor cutoffs 1<=Y_N<=D_N^3 and all pointwise bounded complex families satisfy norm(C_N(Y_N,w_N,v_N)-w_N(1)*conj(v_N(1))*U_N)<=C(rho)*eta^N. The actual sieve, polynomial and ordinate are unchanged. The unit source remains. This does not extend physical localization, n-dependent cutoffs, or small-prime-log decay to the enlarged range"),
       ("exactMatrixTheorem", .str "RiemannGaussian.RoughDivisorCorrelation.coefficient_eq_pairs"),
       ("convergentSeriesTheorem", .str "RiemannGaussian.RoughDivisorCorrelation.hasSum_response"),
       ("exactUnitSplitTheorem", .str "RiemannGaussian.RoughDivisorCorrelation.response_eq_unit_add_remainder"),

@@ -35,27 +35,24 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek a cofinal strict signed bound for the large-prime tail. Its squared Möbius weight retains the logarithms of primes above D_N; the complete small-prime correction has independent decay. Keeping u exactly also bounds the full head through D_N^3. Every remaining nonzero coefficient has a prime and cofactor both above D_N, and the tail retains the full positive multiplicity source. Its upper bound and RH remain open.
+Seek an independent cofinal signed bound below the unit source. A complete lcm estimate now gives linear divisor-cutoff cost and controls all bounded complex weight families through D_N^3, with a geometric error. This enlarges the admissible correlation cutoffs. The large-prime tail's signed upper bound remains open, and the wider correlation range alone does not establish it.
 
 ## Latest Update
 
-Lean now bounds the **entire small-prime logarithmic contribution of the
-squared Möbius mask**, including every divisor intersection. Its actual
-allowance is `C(rho)*(1+N)*eta(rho)^N`, with `eta(rho)<1`.
+Lean now bounds the **full ordered lcm mass by a constant times D**, keeping
+all pair multiplicities and the entire divisor correction. The prime
+correction has exactly three entries per prime and is included in the bound.
 
-Subtracting that complete correction leaves the exact weight
-`M_D(n)^2 * sum_(p|n, p>D) log(p)` on rough squarefree composites.
-It vanishes whenever every prime factor is at most `D`; every nonzero
-coefficient has a prime and cofactor both above `D`.
+For every pair of pointwise bounded complex divisor-weight families, the
+complete nonunit arithmetic remainder now has **linear cutoff cost**,
+replacing the preceding `D^3*(1+log(D^2))` bound for this class.
 
-Keeping the source parameter `u=3/2-Re(rho)` also pays a full `D_N^2`
-coefficient cost through `n<=D_N^3`, with bound `C(p)*(1/(2u))^N`.
-Since `u>1/2`, this tends to zero. The literal remaining tail retains
-source `m_rho`, and its complete comparison error is independently proved
-to vanish. **The strict signed upper bound for that tail remains open.**
-No additional zero is excluded; the all-height edge width remains
-`1/(10 log(|t|+2))`.
-See [small-prime logarithmic decay and the remaining tail](docs/zeta-rough-prime-log-source.md).
+At the actual source normalization, every moving divisor cutoff through
+**D_N^3** has uniform error `C(rho)*eta(rho)^N`, with `eta(rho)<1`.
+The exact unit interaction still carries the multiplicity source. The
+independent signed upper bound for that source remains open; **no additional
+zero is excluded**. The all-height edge width remains `1/(10 log(|t|+2))`.
+See [linear divisor-correlation cost and its scope](docs/zeta-rough-divisor-linear-bound.md).
 
 ## Notable Formalisations
 
@@ -66,7 +63,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | --- | --- | --- |
 | **Small-prime logarithmic decay and a large-prime source** | The squared mask's complete small-prime logarithmic contribution has an independent geometric allowance. The remaining weight vanishes on all integers whose prime factors are at most `D_N`; each nonzero coefficient has a prime and cofactor beyond `D_N`. Retaining the exact source parameter pays a full quadratic coefficient cost through `D_N^3`. The convergent tail retains the full source, with complete decaying errors; its strict signed bound remains open. | [full logarithmic bound, prime fibres and source](RiemannGaussian/ZetaRoughPrimeLogSource.lean), [general quadratic-cost head estimate](RiemannGaussian/ZetaArithmeticQuadraticSmallProduct.lean), [exact prime insertion recurrences](RiemannGaussian/ZetaRoughMoebiusPrimeRecurrence.lean), [proof and scope](docs/zeta-rough-prime-log-source.md) |
 | **Exact divisor reflection and a bounded head** | Full Möbius compensation equals minus the mixed coefficient at the exact adaptive cutoff `floor(n/(D+1))`. Every selected subset through `D_N^3` has an independent `C(p)*(9/10)^N` bound. The complete multiplicity source remains in the convergent high-product series; its signed upper bound remains open. Exact cutoff and phase identities clarify the scope of possible estimates. | [reflection, head bound and exact source partition](RiemannGaussian/ZetaRoughMoebiusHyperbola.lean), [proof and cutoff distinction](docs/zeta-rough-moebius-hyperbola.md), [multiplicative phase transport](RiemannGaussian/ZetaMultiplicativePhase.lean), [scope of the mechanism checks](docs/zeta-cutoff-phase-audit.md) |
-| **All complex divisor correlations and their unit source** | Every pair of complex divisor-weight families with product of coefficient masses at most `D_N^2` has an independently bounded full nonunit remainder. The original phase and every lcm cross term are retained. Uniformly over the families, only `w(1)*conj(v(1))` times the original composite logarithmic source survives. The exact Möbius square is included. This does not supply the independent signed upper bound. | [exact correlations, uniform error and all-family source](RiemannGaussian/ZetaRoughDivisorCorrelation.lean), [proof and scope](docs/zeta-rough-divisor-correlation.md) |
+| **All complex divisor correlations and their unit source** | The complete ordered lcm mass has linear cutoff cost, including every divisor correction and the exact three-entry prime correction. All bounded complex families through D_N^3 have an independent geometric error; their limiting unit interaction still carries the source. The earlier coefficient-mass theorem also covers some larger sparse weights. The strict signed upper bound remains open. | [linear arithmetic bound and enlarged cutoff](RiemannGaussian/ZetaRoughDivisorLinearBound.lean), [exact correlations and coefficient-mass bound](RiemannGaussian/ZetaRoughDivisorCorrelation.lean), [proof and scope](docs/zeta-rough-divisor-linear-bound.md) |
 | **Mixed Möbius decay and the exact square source** | An exact logarithm-removal identity preserves every polynomial phase and bounds all marked bare squarefree responses uniformly. The full mixed logarithmic term has independent geometric decay, including every lcm intersection, and vanishes on ordinary primes. Both source-transfer errors decay, leaving the full multiplicity source in the nonnegative squared Möbius coefficient with its original oscillatory kernel. Its strict signed upper bound remains open. | [exact kernel and uniform marked bound](RiemannGaussian/ZetaRoughSquarefreeBareFilter.lean), [mixed decay, complete errors and square source](RiemannGaussian/ZetaRoughMoebiusMixedDecay.lean), [proof and scope](docs/zeta-rough-moebius-mixed-decay.md) |
 | **All divisor incidences and exact Möbius compensation** | Every bounded complex family of nontrivial squarefree divisor marks through `D_N^4` has independently vanishing total variation, with full roughness, squarefree restriction and higher prime intersections. The complete truncated Möbius mask retains the original source for every admissible moving cutoff. At `Y=D_N`, its coefficient exposes a real square and the exact mixed logarithmic companion. The signed bound remains open. | [full divisor mass and all-family bound](RiemannGaussian/ZetaRoughDivisorIncidence.lean), [exact masks, source and square identity](RiemannGaussian/ZetaRoughMoebiusIncidenceSource.lean), [proof and scope](docs/zeta-rough-divisor-incidence.md) |
 | **Prime-incidence decay and a balanced source** | The sum of the magnitudes of all marked-prime responses through `D_N^4` has an independent geometric bound, controlling every bounded complex prime-weight family. Subtracting the incidences through `D_N` cancels unbalanced semiprimes exactly; small products have a separate `(9/10)^N` allowance. The full source remains on two-factor products with the exact weight `1-k_N(n)`. Their strict signed bound remains open. | [all-family arithmetic decay](RiemannGaussian/ZetaRoughPrimeIncidence.lean), [exact cancellation, errors and balanced source](RiemannGaussian/ZetaRoughPrimeIncidenceSource.lean), [proof and scope](docs/zeta-rough-prime-incidence.md) |
