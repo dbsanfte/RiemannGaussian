@@ -6,7 +6,7 @@
 RiemannGaussian is an open research project building toward a complete,
 kernel-checked Lean proof of the Riemann hypothesis. The repository contains
 the evolving Lean 4 proof development and supporting analytic and finite-model
-theory. The proof is not complete; in the meantime, the extensive Lean theorems and formalizations that we've compiled along the way are provided to the wider community. Only declarations accepted by Lean and the
+theory. The proof is not complete; in the meantime, the extensive Lean theorems and formalizations are provided to the wider community. Only declarations accepted by Lean and the
 repository's verification gates count as established results.
 
 > **Proved accomplishment: a zero-free region at every height.**
