@@ -69,12 +69,12 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh
   },
   {
-    label := "The actual zeta function is nonzero on Re(s)>=1-4/(25*log(abs(Im(s)))) at sufficiently large height. Feeding the proved global Fermi margin back into the general phase budget gives a strict improvement over that preceding margin. Increasing the interior shift decreases the explicit derivative cost, so the original whole-divisor allowance still suffices. A second exact Gaussian surplus pays every pole, gamma and tail cost. Both actual zero-strip edges are covered. The threshold is existential, not numerically evaluated. No convergence of repeated feedback to the critical line is asserted. The original signed prime-tail bound, external 4.896 region and RH remain open"
+    label := "The actual zeta function is nonzero on Re(s)>=1-9/(50*log(abs(Im(s)))) at sufficiently large height. Retaining the exact shifted Gaussian interval sharpens the pole bound and gives a uniform surplus over the established coefficient class. The unchanged phase row, first global Fermi margin and original whole-divisor allowance discharge every remaining cost. Both actual zero-strip edges are covered. The threshold is existential, not numerically evaluated. The independent signed prime-tail bound, external 4.896 region and RH remain open"
     lineOne := "zero-free edge"
-    lineTwo := "4/(25 log t), large t"
+    lineTwo := "9/(50 log t), large t"
     role := "unconditional"
     theoremName :=
-      ``RiemannGaussian.GaussianFermiBootstrapZeroFree.exists_eventual_improved_region
+      ``RiemannGaussian.GaussianFermiSharpZeroFree.exists_eventual_improved_region
   },
   {
     label := "Explicit edge windows contain at most one actual zero counting multiplicity"
@@ -980,7 +980,7 @@ run_cmd do
       ("literalRegion", .str "For all sufficiently large abs(Im(s)), Re(s)>=1-3/(20*log(abs(Im(s)))) implies riemannZeta(s)!=0. At the same sufficiently large ordinates the new width is proved strictly larger than m_old(Im(s))"),
       ("thresholdScope", .str "The finite threshold is existential and is not numerically evaluated. The condition log(t)>=4000 alone is not a certified full threshold: the existing complete divisor-tail allowance must also be below one. The explicit all-height reserve margin remains available"),
       ("retainedInformation", .str "Exact Gaussian reflection and dilation, all real damping integrability, general coefficient bounds before the existing exact-family instance, every small higher-frequency coefficient, both genuine horizontal partners, analytic multiplicity, original signed Fermi reserves upstream, full outside divisor and its uniform scale allowance"),
-      ("status", .str "The first unconditional Fermi region has exact coefficient 3/20, both actual zero-strip edges, literal nonvanishing and proved strict improvement over the preceding reserve width. Its global monotone margin supplies larger analytic discs and stronger fixed-mark squarefree decay. The subsequent margin bootstrap now proves the stronger eventual coefficient 4/25. The numerical thresholds, external 4.896 region, independent original signed ordinary-prime-tail bound and RH remain open. No historical novelty or best-published-region claim")
+      ("status", .str "The first unconditional Fermi region has exact coefficient 3/20, both actual zero-strip edges, literal nonvanishing and proved strict improvement over the preceding reserve width. Its global monotone margin supplies larger analytic discs and stronger fixed-mark squarefree decay. The subsequent margin bootstrap proves coefficient 4/25, and the sharper shifted-Gaussian bound now proves 9/50. The numerical thresholds, external 4.896 region, independent original signed ordinary-prime-tail bound and RH remain open. No historical novelty or best-published-region claim")
     ]),
     ("gaussianFermiArithmeticTransport", Json.mkObj [
       ("provedThresholdTheorem", .str "RiemannGaussian.zetaFermiHeightThreshold_spec"),
@@ -1005,7 +1005,7 @@ run_cmd do
       ("uniformArithmeticBound", .str "One C_y>0 works for every 0<r<=r_F(y), finite prime set S, squarefree mark P with no prime factor in S, complex polynomial p and order N: norm(response)<=C_y*squarefreeEulerBudget(3/2-r,S,P)*r^(-N)*sum_(k in support(p)) norm(p_k)*r^(-k). This is the original complete squarefree series including ordinary primes"),
       ("strongerFixedMarkDecay", .str "For every fixed valid S,P,p and 0<=a<r_F(y), a^N*response(p,S,P,N,3/2+i*y) tends to zero as a complex number. Consequently, for all sufficiently large abs(y), the response multiplied by r_old(y)^N still tends to zero. The proof pays the entire fixed Euler and polynomial factors and uses the strict ratio (r_old(y)/r_F(y))^N"),
       ("retainedInformation", .str "Both actual zero-strip edges, full-height monotonicity, exact old margin below the threshold, exact eventual coefficient 3/20, literal poles and denominator zeros, original arithmetic marks, every polynomial coefficient and phase, and the radius-dependent Euler budget"),
-      ("limitations", .str "Both finite height thresholds are existential and not numerically evaluated. Growing sieves and moving marks still carry their Euler budget, so a larger radius alone does not prove an improvement for their entire bound. The subsequent margin bootstrap proves the stronger eventual coefficient 4/25; the radius and arithmetic statements in this object still use the first Fermi width 3/20. The independent signed ordinary-prime-tail estimate, external 4.896 theorem and RH remain open")
+      ("limitations", .str "Both finite height thresholds are existential and not numerically evaluated. Growing sieves and moving marks still carry their Euler budget, so a larger radius alone does not prove an improvement for their entire bound. The sharper shifted-Gaussian bound now proves the stronger eventual coefficient 9/50; the radius and arithmetic statements in this object still use the first Fermi width 3/20. The independent signed ordinary-prime-tail estimate, external 4.896 theorem and RH remain open")
     ]),
     ("gaussianFermiMarginBootstrap", Json.mkObj [
       ("decreasingDerivativeCostTheorem", .str "RiemannGaussian.GaussianFermiMarginBudget.integralCost_antitone_margin"),
@@ -1039,6 +1039,29 @@ run_cmd do
       ("thresholdScope", .str "The finite threshold is existential, not numerically evaluated. exp(100000) alone is insufficient: the earlier margin transition and original complete divisor-tail allowance must also have reached their proved eventual regimes"),
       ("status", .str "One unconditional feedback step improves the eventual coefficient from 3/20 to 4/25 with no larger outside error. The explicit all-height reserve region remains available, and the existing squarefree radius transport still uses the first Fermi coefficient 3/20. No convergence of repeated feedback to the critical line is proved. The original independent signed ordinary-prime-tail bound, external 4.896 theorem and RH remain open; no historical novelty or best-published-region claim")
     ]),
+    ("fermiSharpZeroFree", Json.mkObj [
+      ("role", .str "Unconditional wider actual zero exclusion from a retained Gaussian endpoint identity"),
+      ("exactShiftTheorem", .str "RiemannGaussian.GaussianHalfLaplaceShift.halfGaussian_neg_shift"),
+      ("sharpPoleBoundTheorem", .str "RiemannGaussian.GaussianHalfLaplaceShift.halfGaussian_neg_shift_upper"),
+      ("positiveEnclosureTheorem", .str "RiemannGaussian.GaussianFermiSharpProfile.halfGaussian_unit_thirtyone_fourhundredths_lower"),
+      ("negativeEnclosureTheorem", .str "RiemannGaussian.GaussianFermiSharpProfile.halfGaussian_unit_neg_three_eighths_upper"),
+      ("generalSurplusTheorem", .str "RiemannGaussian.GaussianFermiSharpProfile.profile_surplus"),
+      ("generalScaleTheorem", .str "RiemannGaussian.GaussianFermiSharpProfile.scaled_profile_surplus"),
+      ("actualSurplusTheorem", .str "RiemannGaussian.GaussianFermiSharpProfile.exact_scaled_profile_surplus"),
+      ("scaleAdmissibilityTheorem", .str "RiemannGaussian.GaussianFermiSharpProfile.scale_admissible"),
+      ("finiteHeightContradictionTheorem", .str "RiemannGaussian.GaussianFermiSharpZeroFree.margin_lt_one_sub_re_of_allowance_lt_one"),
+      ("unconditionalRightEdgeTheorem", .str "RiemannGaussian.GaussianFermiSharpZeroFree.exists_eventual_right_margin"),
+      ("unconditionalBothEdgesTheorem", .str "RiemannGaussian.GaussianFermiSharpZeroFree.exists_eventual_strip"),
+      ("literalNonvanishingTheorem", .str "RiemannGaussian.GaussianFermiSharpZeroFree.exists_eventual_nonvanishing"),
+      ("strictImprovementTheorem", .str "RiemannGaussian.GaussianFermiSharpZeroFree.exists_eventual_improved_region"),
+      ("retainedIdentity", .str "For every b>0 and real x, G_b(-x)=exp(x^2/(4*b))*(sqrt(pi/b)/2+integral_(-x/(2*b))^0 exp(-b*u^2) du). The finite interval retains its exact value and orientation. For x>=0 it is at most x/(2*b)"),
+      ("rationalEnclosures", .str "G_1(31/400)>=3389/4000 and G_1(-3/8)<=557/500, proved using the integrated tangent, exact shifted identity, rational pi bounds and exp(9/256)<=256/247"),
+      ("allCoefficientSurplus", .str "For every 0<=a0<=37/200,a1>=79/250,M<=61/100 and 149/1000<=mu<=3/20, a0*G_1(-(5/2)*mu)+M/10+1/2000<=a1*G_1((5/2)*(9/50-mu)). The original exact phase row satisfies these same bounds"),
+      ("actualParameters", .str "L=log(abs(t)),H=48*abs(t),m=m_F(H),B=4/(25*L^2),b=c=B/2. The first global Fermi margin still supplies its proved 3/20 formula and normalized interval. The scale is admissible whenever L*m<=2/5"),
+      ("completeContradiction", .str "For d<=9/(50*L), the source is at least a0*G_B(-m)+M*L/4+L/800. The full pole and gamma cost is at most a0*G_B(-m)+M*L/4+8; the original uniform allowance eventually makes the weighted whole-divisor tail cost at most one. With actual multiplicity at least one, a zero would require L/800<=9, contradicting L>=100000"),
+      ("unconditionalRegion", .str "There exists T>=1 such that every actual nontrivial zero at abs(Im(rho))>=T satisfies 9/(50*log(abs(Im(rho))))<Re(rho)<1-9/(50*log(abs(Im(rho)))). Literal zeta is nonzero on the corresponding closed right edge. The eventual width is 9/8 times the preceding 4/25 width"),
+      ("limitations", .str "The finite threshold is existential and unevaluated; exp(100000) alone does not discharge the margin-transition and whole-divisor allowance conditions. Both edge widths tend to zero with height. The global margin and squarefree-radius transport still use their first 3/20 eventual formula. No bound for the original signed prime tail or the complex moment-filtered costs follows. The external 4.896 region and RH remain open; no historical novelty or best-published-region claim")
+    ]),
     ("gaussianPhaseProfileAudit", Json.mkObj [
       ("role", .str "All-family method constraint; not a zero-exclusion milestone"),
       ("fullSignedHeatIdentityTheorem", .str "RiemannGaussian.GaussianPhaseHeatConstraint.heat_deficit_eq_integral"),
@@ -1057,7 +1080,57 @@ run_cmd do
       ("specifiedProfile", .str "G(x) is the actual half-line Gaussian Laplace integral at unit scale. With a0=A(0),a1=A(1)+A(-1),ell>0 and nu>=mu, the tested strict surplus is a0*G(-ell*mu)+M/(4*ell)<a1*G(ell*(nu-mu)). This is the coarse unit-multiplicity source, constant pole envelope and leading gamma cost; it is not an equality with the full explicit formula"),
       ("ceiling", .str "Every such strict surplus forces mu<pi/4 and nu<mu+4<pi/4+4, uniformly over the family and positive scale. The constants are a proved coarse ceiling, not an exact optimizer"),
       ("actualScaleTransport", .str "For arbitrary L>0,ell>0,B=1/(ell^2*L^2),d>=m, the strict unnormalized comparison a0*G_B(-m)+M*L/4<a1*G_B(d-m) forces L*m<pi/4 and L*d<L*m+4<pi/4+4. At L=log(t), this particular sufficient comparison cannot reach a fixed positive edge distance at all large heights"),
-      ("limitations", .str "No new zero exclusion, RH consequence or historical novelty claim. The full signed prime combination, Fermi reserves, additional zeros with their actual multiplicities and frequency-dependent gamma cost remain available upstream. Stronger estimates using them, including for frequencies moving with height, are not ruled out. The actual eventual region remains 4/(25*log(abs(t))) with an existential threshold; the original independent signed ordinary-prime-tail lower bound and RH remain open")
+      ("limitations", .str "No new zero exclusion, RH consequence or historical novelty claim. The full signed prime combination, Fermi reserves, additional zeros with their actual multiplicities and frequency-dependent gamma cost remain available upstream. Stronger estimates using them, including for frequencies moving with height, are not ruled out. The actual eventual region is now 9/(50*log(abs(t))) with an existential threshold; the original independent signed ordinary-prime-tail lower bound and RH remain open")
+    ]),
+    ("fermiPrimeMomentComparison", Json.mkObj [
+      ("role", .str "Exact complex prime-moment spectral transport, fixed-order regulator limits and independent bounds for weighting corrections; no new zero exclusion"),
+      ("gaussianSummandIdentityTheorem", .str "RiemannGaussian.GaussianFermiPrimeComparison.ordinarySummand_eq_prime_add_correction"),
+      ("uniformGaussianCorrectionTheorem", .str "RiemannGaussian.GaussianFermiPrimeComparison.norm_correctionSum_le"),
+      ("fullGaussianPrimeIdentityTheorem", .str "RiemannGaussian.GaussianFermiPrimeComparison.ordinarySum_eq_primeSum_add_correction"),
+      ("actualZeroFormulaTheorem", .str "RiemannGaussian.GaussianFermiPrimeComparison.zero_side_eq_poles_digamma_sub_ordinary_add_correction"),
+      ("exactMomentDifferenceTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.primeLogResponse_sub_fermi_eq"),
+      ("completeMomentBoundTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.norm_primeLogResponse_sub_fermi_le"),
+      ("uniformGeometricBoundTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.exists_normalized_primeFermi_bound"),
+      ("movingFamilyDecayTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.tendsto_normalized_prime_sub_fermi"),
+      ("actualTailComparisonTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.tendsto_actual_prime_sub_fermi"),
+      ("actualMarginParameterTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.tendsto_actual_prime_sub_margin_fermi"),
+      ("retainedSourceTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.tendsto_normalizedFermiPrimeLogResponse"),
+      ("integralNormIdentityTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.integral_norm_density_primeLogTerm"),
+      ("wholeMomentIntegrabilityTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.integrable_density_primeLogResponse"),
+      ("exactSpectralTransportTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.integral_density_primeLogResponse"),
+      ("actualMarginSpectralTransportTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.integral_margin_density_primeLogResponse"),
+      ("fixedOrderRegulatorLimitTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.tendsto_gaussianFermiPrimeLogResponse"),
+      ("fixedOrderIntegralLimitTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.tendsto_integral_density_primeLogResponse"),
+      ("gaussianComparison", .str "For sigma>=sigma0>2/3 and B>0, the ordinary sum G=sum_n Lambda(n)*exp(-sigma*log(n)-B*log(n)^2)*cos(t*log(n)) equals primeSum(2*sigma-1,B,t)+R. The exact correction has damping 3*sigma-1 and the same Gaussian, Fermi factor and cosine. Its norm is at most Re(-zeta'/zeta(3*sigma0-1)), uniformly for B>=0 and every real t. The correction also converges at B=0; no convergence of the main unsmoothed strip series is asserted"),
+      ("zeroFormula", .str "The full actual multiplicity-aware zero side equals polePair-log(pi)/4+digammaAverage-G+R. All signs and multiplicities remain. The existing evaluation line sigma=1-m_F(H)>3/4 allows the fixed correction bound Re(-zeta'/zeta(5/4))"),
+      ("momentComparison", .str "For D>=1 and a finite prime sieve S, the original primeLogResponse retains precisely ordinary primes r>D outside S. Its Fermi version multiplies each original log(r)*zetaPrimeFilterKernel(p,N,s,r) by fermi(-a*log(r)). Their exact difference multiplies that same summand by fermi(a*log(r)); no prime-power terms are added to either response"),
+      ("momentBound", .str "For Re(s)>1,q>0,Re(s)+a-q>1, the norm of the complete difference is at most q^(-N)*sum_k norm(p_k)*q^(-k)*Re(-zeta'/zeta(Re(s)+a-q)). This follows from the positive exponential envelope on the correction, not a cancellation assumption on the main prime tail"),
+      ("exactHeatTransport", .str "For a>0,B>0,Re(s)>1, integral_y density(a,B,y)*P(p,D,S,N,s-i*y)=2*F_B(a,p,D,S,N,s+a/2), where F_B retains the original Fermi moment with multiplier exp(-B*log(n)^2). The full complex polynomial, factorial orders and original prime exclusions stay inside the average. Every integrated term norm equals its original norm, paying the complete sum-integral interchange and whole-average integrability"),
+      ("actualHeatLine", .str "At a=1-2*m_F(H), the exact input line is 1+m_F(H)+i*t and the output is the original 3/2+i*t. The positive margin discharges Euler convergence. The density is nonnegative with unit mass; the complex moment being averaged is not asserted nonnegative"),
+      ("regulatorLimit", .str "For every fixed moment order, polynomial, cutoff and sieve, nonnegative Gaussian width tending to zero recovers the original Fermi moment by summable domination. The corresponding full spectral averages tend to twice that moment. No interchange with the separate growing-order source limit or uniform growing-order signed bound is asserted"),
+      ("uniformRate", .str "For any 0<u<1 and fixed complex p, set q=(1+u)/2 and C=u*sum_k norm(p_k)*q^(-k)*Re(-zeta'/zeta(2-q)). For every N,D>=1,finite prime S and a>=1/2, the norm of u^(N+1)*(P-F) at 3/2+i*y is at most C*(2*u/(1+u))^N. The ratio is strictly below one. The constant is independent of a,D,S and y"),
+      ("actualSourceTransport", .str "Use the unchanged u=3/2-Re(rho), zero-isolating polynomial, actual quadratic prime sieve and sampling ordinate. The comparison tends to zero for every moving cutoff eventually at least one, with no upper cutoff restriction, and every moving Fermi parameter eventually at least 1/2. In particular a_N=1-2*m_F(H_N) works for every height schedule. On the original squared cutoff schedule, the Fermi-weighted normalized tail therefore has the same hypothetical limit -multiplicity(rho) as the original prime tail"),
+      ("limitations", .str "Only the weighting corrections are bounded. The Gaussian sum includes prime powers; the original moment remains an ordinary-prime sum. Gaussian positivity is not transported through the complex polynomial, factorial orders or moving prime support by these estimates. The surviving moment still needs an independent cofinal fixed-gap lower bound above -1. The unweighted original carrier is retained. No new zero exclusion, RH theorem or historical novelty claim; the eventual zero-free width is now 9/(50*log(abs(t))) with an existential threshold")
+    ]),
+    ("primeAdmissibleHeatSource", Json.mkObj [
+      ("role", .str "Independent comparison with admissible moving Gaussian families and transport of the original hypothetical source; no new zero exclusion"),
+      ("marginLimitTheorem", .str "RiemannGaussian.tendsto_zetaFermiZeroMargin"),
+      ("widthAdmissibilityTheorem", .str "RiemannGaussian.fermi_margin_square_admissible"),
+      ("wholeZeroAllowanceLimitTheorem", .str "RiemannGaussian.tendsto_allowance_fermi_margin_square"),
+      ("jointParameterLimitTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.tendsto_gaussianFermiPrimeLogResponse_joint"),
+      ("heightFloorExistenceTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.exists_primeMomentHeatHeight"),
+      ("allLaterHeightsTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.primeMomentHeatHeight_tail_spec"),
+      ("movingFamilyComparisonTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.tendsto_actual_prime_sub_marginHeat"),
+      ("explicitNormalizedErrorTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.exists_actual_prime_marginHeat_bound"),
+      ("movingFamilySourceTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.tendsto_marginHeatPrimeResponse_of_height"),
+      ("canonicalSourceTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.tendsto_admissibleHeatPrimeResponse"),
+      ("exactSpectralAverageTheorem", .str "RiemannGaussian.SquarefreeEulerQuadratic.admissibleHeatPrimeResponse_eq_integral"),
+      ("heightFloor", .str "For every original order N and cutoff D, a proved floor T(N,D)>=max(N,1,2*abs(Im(rho))) makes norm(G_N(H)-F_N(1))<1/(N+1) and the existing scalar whole-zero allowance(m_F(H)^2,H)<1/(N+1) for every H>=T(N,D). The floor is chosen from proved fixed-order joint limits; its growth is not estimated"),
+      ("retainedArithmetic", .str "G_N(H) is the unchanged original source-normalized ordinary-prime sum at 3/2+i*Im(rho), with its original complex polynomial, factorial orders and quadratic prime sieve, multiplied by exp(-m_F(H)^2*log(n)^2)*fermi(-(1-2*m_F(H))*log(n)). No limiting value is used in its definition"),
+      ("uniformComparison", .str "For u=3/2-Re(rho) in (1/2,1), one C>=0 gives norm(P_N-G_N(H_N))<=C*(2*u/(1+u))^N+1/(N+1), for every cutoff family D and height family H whenever D_N>=1 and H_N>=T(N,D_N). This error is independently proved, with no upper cutoff bound or use of the hypothetical source limit"),
+      ("source", .str "Every moving height family eventually above the proved floors has P_N-G_N(H_N)->0 and vanishing standard whole-zero allowance. On the original squared cutoff schedule, the existing hypothetical source P_N->-multiplicity(rho) therefore implies G_N(H_N)->-multiplicity(rho)"),
+      ("spectralAverage", .str "The canonical response equals u^(N+1)/2 times the full integral of the actual positive unit-mass density at (1-2*m,m^2) against the original complex prime moment at 1+m+i*Im(rho)-i*y. The full sum-integral interchange remains proved"),
+      ("limitations", .str "No independent signed lower bound for the surviving prime response, no upper growth estimate on the height floors, and no estimate for pole, gamma or whole-zero costs after applying the complex moment filter. Positivity of the averaging density does not make the averaged complex moment nonnegative. The actual eventual zero-free width is now 9/(50*log(abs(t))) with an existential threshold; the published 4.896 region is not formalized here, and RH remains open")
     ]),
     ("roughDivisorIncidence", Json.mkObj [
       ("massTheorem", .str "RiemannGaussian.RoughDivisorIncidence.sum_lcmSqrtFactorMass_le"),

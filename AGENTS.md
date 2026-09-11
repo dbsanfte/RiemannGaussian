@@ -1461,6 +1461,17 @@ abstractions.
    draw a causal edge between milestones unless a checked theorem proves that
    implication, and label RH equivalences as reformulations rather than
    progress on their open direction.
+   In the README, display only the latest proved zero-free region in its own
+   `Zero-free region` section immediately after the introduction. Display the
+   bound prominently and link directly to the compiled Lean proof. Include
+   a brief linked entry in `Accomplishments` too. State its exact bound and
+   height-threshold scope, including whether the threshold is existential or
+   numerically evaluated.
+   When a stronger region is proved, replace the previous README presentation
+   and remove references to superseded smaller regions, including historical
+   comparison constants, duplicate table rows, and old accomplishment entries.
+   Retain proof history and older bounds in the Lean sources and detailed
+   documentation; the README is not a history of zero-free-region improvements.
 9. Apply the current theorem-push commit gate. Commit and push the complete
    slice only after its actual mathematical target and all verification
    gates pass. Wait for GitHub Actions on that exact commit SHA to finish
