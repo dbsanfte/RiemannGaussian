@@ -158,6 +158,12 @@ the growing divisor sum without paying for it, nor does it survive
 ordinary-prime deletion automatically. The preceding exact matrix and
 prime-insertion identities retain these operations and their phases.
 
+The subsequent [complete-family theorem](zeta-squarefree-euler-family-decay.md)
+now pays both coefficient masses and proves normalized full logarithmic
+decay through the squared divisor cutoff. Its exact connection to the
+original source leaves the ordinary-prime tail as the remaining signed
+arithmetic obligation.
+
 The cofinal strict signed upper bound below the surviving unit source is
 still unproved. No stronger zero-free region, historical novelty claim,
 or completed RH contradiction follows from this slice.

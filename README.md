@@ -9,14 +9,30 @@ the evolving Lean 4 proof development and supporting analytic and finite-model
 theory. The proof is not complete; in the meantime, the extensive Lean theorems and formalizations are provided to the wider community. Only declarations accepted by Lean and the
 repository's verification gates count as established results.
 
-> **Proved accomplishment: a zero-free region at every height.**
+> **Proved accomplishment: a second eventual zero-free improvement.**
+> There is a finite height threshold beyond which every nontrivial zeta
+> zero `rho = beta + i*t` satisfies
+> **`4/(25 log(abs(t))) < beta < 1 - 4/(25 log(abs(t)))`**.
+> Lean also proves literal nonvanishing on the corresponding closed right
+> edge and that this width eventually exceeds the preceding region.
+> **The threshold is proved to exist; it is not numerically evaluated.**
+> [Kernel-checked theorem](RiemannGaussian/GaussianFermiBootstrapZeroFree.lean)
+> · [Feedback proof, threshold and scope](docs/gaussian-fermi-bootstrap-zero-free.md).
+> The preceding `3/20` region already supplies [larger analytic discs and
+> stronger fixed-mark squarefree decay](docs/zeta-fermi-arithmetic-transport.md).
+
+> **The explicit all-height region remains available.**
 > Every nontrivial zeta zero `rho = beta + i*t` satisfies
 > **`m(t) < beta < 1 - m(t)`**, where
-> **`m(t) = 792/(7625 log(|t|+2) - 2000)`**.
+> `L(t) = max(13/10, log(|t|+2))`,
+> `B(t) = min(4/39, 4752/(45750 L(t)-35725))`, and
+> **`m(t) = max(792/(7625 log(|t|+2)-2000), B(t))`**.
 > This excludes a positive-width region adjoining each edge of the critical
-> strip, at every ordinate, with all hypotheses discharged in Lean.
-> [Kernel-checked theorem](RiemannGaussian/ZetaSignedPoleZeroFree.lean)
-> · [Proof and scope](docs/zeta-signed-pole-zero-free.md).
+> strip, with all hypotheses discharged in Lean. Retaining the positive
+> pole reserve strictly improves the preceding width at every possible zero
+> ordinate. Its feedback iteration has a proved limit and does not reach RH.
+> [Kernel-checked theorem](RiemannGaussian/ZetaPoleReserveBootstrap.lean)
+> · [Proof, iteration and scope](docs/zeta-pole-reserve-bootstrap.md).
 
 > **Research agents:** GPT-5.6 Sol and GPT-6 Astra with **Max** reasoning effort, running in the
 > **Codex CLI harness**.
@@ -36,24 +52,31 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Seek an independent cofinal signed bound below the surviving unit source. Exact complex Euler matrices retain divisor and prime-incidence phases. Complete squarefree responses, including a physical logarithm, now decay under the actual quadratic prime sieve uniformly over moving divisibility marks. The remaining task is to control the growing Möbius-weighted sum after ordinary-prime deletion.
+Use the full signed Fermi prime and zero budget to improve the leading Gaussian comparison. An all-family heat theorem now proves that the current coarse profile has a finite ceiling, even with infinitely many phases and arbitrary scale. The best proved eventual width remains 4/(25 log(abs(t))); its threshold is existential. The independent ordinary-prime-tail lower bound and RH remain open.
 
 ## Latest Update
 
-Lean now proves **unscaled squarefree decay under the full quadratic prime
-sieve**, uniformly over every moving divisibility mark. Chebyshev prime
-density and a moving Cauchy radius give the explicit allowance
-`C exp(-N/(20 log(R_N+2)))`. A physical logarithm costs an additional
-`N+1` factor, and Lean proves that this allowance still tends to zero.
-See [the exact bounds and their scope](docs/zeta-squarefree-quadratic-sieve-decay.md).
+The local continuation proves **a constraint across all summable
+nonnegative phase families**. The exact Fermi Gaussian heat identity
+retains both translated frequency channels. Its infinite-time limit
+proves `A(xi)+A(-xi)<=2*A(0)`, where `A` includes every occurrence of a
+frequency. Infinitely many, repeated and accumulating real frequencies
+are covered.
 
-The same checkpoint formalises the complete complex Selberg divisor matrix
-and an exact prime-insertion cancellation: the explicit first derivative
-of the divisor matrix cancels in the original large-prime response.
-[The identities](docs/zeta-squarefree-euler-quadratic.md) preserve all complex
-weights and ordered divisor pairs. The independent strict signed bound on
-the growing, prime-deleted Möbius sum remains open. This slice does not
-improve the zero-free region or complete RH.
+[scaled_family_profile_ceiling](RiemannGaussian/GaussianPhaseProfileCeiling.lean)
+then audits the coarse Gaussian comparison used in the zero-free chain.
+At every positive scale, strict surplus improving the normalized input
+`mu` requires `mu<pi/4` and output `nu<mu+4<pi/4+4`. Thus varying the
+family and scale within this particular comparison cannot reach a fixed
+distance into the strip at all large heights. The full signed prime
+term, Fermi reserves, additional zeros and exact gamma costs remain
+available upstream for a stronger comparison.
+
+**This is a method constraint, not a new zero exclusion.** The proved
+eventual width remains `4/(25 log(abs(t)))`, with an existential threshold.
+The independent signed ordinary-prime-tail bound, the external `4.896`
+region and RH remain open. [Proof and scope](docs/gaussian-phase-profile-ceiling.md).
+The full local build, declaration lint and transitive-axiom audits pass.
 
 ## Notable Formalisations
 
@@ -62,9 +85,21 @@ a compiled theorem; its source records the precise domains and hypotheses.
 
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
+| **All-family heat constraints and a Gaussian profile ceiling** | The full signed heat test is evaluated exactly for every summable nonnegative real-frequency family. Both translated channels survive at every scale; the infinite-time limit combines repeated frequencies exactly and proves `A(xi)+A(-xi)<=2*A(0)`, including accumulating support. This gives a finite ceiling for the specific coarse Gaussian source/pole/gamma profile at all scales, with exact transport to the unnormalized source. This is a method audit, not a new zero exclusion or a ceiling for the full signed explicit formula. | [exact heat identity and frequency masses](RiemannGaussian/GaussianPhaseHeatConstraint.lean), [all-family profile bound and scaling](RiemannGaussian/GaussianPhaseProfileCeiling.lean), [scope](docs/gaussian-phase-profile-ceiling.md) |
+| **A second zero-free improvement by Fermi feedback** | Any proved larger common band margin reaches the general phase and resonant-pair budgets, with a no-larger outside allowance. Feeding in the preceding global Fermi region and proving another exact Gaussian surplus gives the unconditional eventual width `4/(25 log(abs(t)))`, both actual strip edges and literal nonvanishing. Strict improvement over the preceding global Fermi margin is proved. The threshold is existential; convergence of repeated feedback to RH is not asserted. | [general margin transport](RiemannGaussian/GaussianFermiMarginBudget.lean), [general and actual Gaussian surplus](RiemannGaussian/GaussianFermiBootstrapProfile.lean), [actual stronger region](RiemannGaussian/GaussianFermiBootstrapZeroFree.lean), [scope](docs/gaussian-fermi-bootstrap-zero-free.md) |
+| **Stronger Fermi region in the squarefree arithmetic chain** | A global antitone margin preserves the old region and eventually equals the exact Fermi width. It gives a never-smaller analytic radius, eventually strictly larger and equal to `1+3/(40 log(2*abs(y)+3))`. All valid marked responses and complex polynomials have the corresponding bound with their Euler budget retained. Every fixed marked response still decays when multiplied by the old radius to the moment order. Height thresholds are existential. | [global margin and literal nonvanishing](RiemannGaussian/ZetaFermiGlobalMargin.lean), [larger disc and actual arithmetic decay](RiemannGaussian/ZetaSquarefreeEulerFermiRadius.lean), [scope](docs/zeta-fermi-arithmetic-transport.md) |
+| **Stronger eventual zero-free region from the Fermi budget** | Every actual nontrivial zero at sufficiently large height lies strictly between `3/(20 log(abs(t)))` and `1-3/(20 log(abs(t)))`. Exact Gaussian bounds give a strict source surplus, and all pole, gamma and full-divisor-tail costs are discharged. Literal zeta nonvanishing and strict improvement over the preceding region are proved. The height threshold is existential. | [Gaussian integral bounds](RiemannGaussian/GaussianHalfLaplaceBounds.lean), [general and exact-family surplus](RiemannGaussian/GaussianFermiProfileSurplus.lean), [complete height costs](RiemannGaussian/GaussianFermiHeightBounds.lean), [actual stronger region](RiemannGaussian/GaussianFermiZeroFree.lean), [scope](docs/gaussian-fermi-zero-free-region.md) |
+| **Gaussian source comparison for genuine right-half zeros** | The exact Fermi partition gives a nonnegative target-pair remainder and a subtractive constant-pole remainder. Selecting both distinct horizontal partners retains one full analytic multiplicity in the Gaussian lower bound. Every admissible finite phase family bounds that source by a proved Gaussian pole envelope, explicit gamma costs and the complete outside allowance. The subsequent Gaussian comparison proves a stronger eventual exclusion. | [signed Laplace comparisons and pole bounds](RiemannGaussian/GaussianFermiLaplaceOrder.lean), [actual zero pair and general phase bound](RiemannGaussian/GaussianFermiResonantBudget.lean), [scope](docs/gaussian-fermi-resonant-budget.md) |
+| **Exact spectral moment and explicit Fermi gamma budget** | Spectral positivity and the exact characteristic function give second moment `2*c+a^2/4` without assuming its finiteness. Exact Gaussian mass and absolute moment then give a quarter-logarithm upper bound for the actual gamma average, uniform over all positive splits with total scale at most one. The bound feeds the general selected-zero phase budget. | [spectral moment](RiemannGaussian/GaussianFermiSpectralMoment.lean), [actual digamma tangent](RiemannGaussian/GaussianDigammaLogEnvelope.lean), [explicit gamma bound and zero budget](RiemannGaussian/GaussianFermiGammaBound.lean), [scope](docs/gaussian-fermi-gamma-bound.md) |
+| **Literal Fermi prime formula and general phase budget** | Exact character evaluation and absolute convergence identify the original prime-power series. The full zero formula has exact pole and constant terms and an integrable gamma average independent of the positive scale split. Every admissible finite cosine test gives the complete prime series the favorable sign, retaining any finite set of actual zeros with all multiplicities and paying for the outside divisor. Subsequent pole and gamma bounds and an independent Gaussian comparison prove a stronger eventual exclusion; its threshold is not numerically evaluated. | [exact phase evaluation](RiemannGaussian/GaussianFermiCosineAverage.lean), [literal prime series](RiemannGaussian/GaussianFermiPrimeFormula.lean), [full pole/gamma formula](RiemannGaussian/GaussianFermiPoleFormula.lean), [general selected-zero budget](RiemannGaussian/GaussianFermiPhaseBudget.lean), [scope](docs/gaussian-fermi-prime-phase-budget.md) |
+| **Exact arithmetic identity for Gaussian Fermi pairs** | A nonnegative spectral density with exact unit mass reconstructs the full complex pair for every positive Gaussian scale split. Preserving localization proves the infinite zero/integral interchange with all analytic multiplicities. The original zero side equals a concrete Gaussian arithmetic average, and its vanishing lower allowance transfers to that average. | [density and Fourier inversion](RiemannGaussian/GaussianFermiSpectralWeight.lean), [exact complex mixture](RiemannGaussian/GaussianFermiGaussianMixture.lean), [whole-divisor interchange](RiemannGaussian/GaussianFermiZeroInterchange.lean), [actual arithmetic identity](RiemannGaussian/GaussianFermiZeroMixture.lean), [scope](docs/gaussian-fermi-explicit-mixture.md) |
+| **Vanishing allowance for the complete Gaussian Fermi zero side** | Exact integrations by parts and a multiplicity-aware dyadic count bound the actual divisor tail by `C/sqrt(H)`. The full allowance is at most `K log(H+2)/sqrt(H)`, uniformly over every Gaussian scale `m(H)^2 <= b <= 1`. The actual signed zero sum consequently has an asymptotically nonnegative lower bound on the interior line supplied by the known zero-free region, uniformly for `2*abs(t) <= H`. | [derivative bounds](RiemannGaussian/GaussianFermiDerivativeBounds.lean), [exact frequency identity](RiemannGaussian/GaussianFermiPairDecay.lean), [actual whole zero side](RiemannGaussian/GaussianFermiZeroTail.lean), [quantitative divisor tail](RiemannGaussian/GaussianFermiZeroTailRate.lean), [uniform moving-scale bound](RiemannGaussian/GaussianFermiMovingAllowance.lean), [scope](docs/gaussian-fermi-zero-tail.md) |
+| **Exact ideal Fermi smoothing and Gaussian zero pairs** | Every continuous real window with all exponential moments and nonnegative boundary cosine transform gives a nonnegative reflected pair on the closed strip `0 <= Re(z) <= a`. Exact partition, conjugation and bilateral identities retain phase information. Every positive Gaussian scale satisfies the hypotheses; the known zero-free width supplies a common interior evaluation line for each finite height band of genuine zeros. | [all-window reflection theorem](RiemannGaussian/FermiLaplaceReflection.lean), [Gaussian and actual-zero connection](RiemannGaussian/GaussianFermiZeroPair.lean), [scope and next steps](docs/fermi-reflection-zero-free-plan.md) |
 | **Uniform squarefree decay under the full quadratic prime sieve** | The genuine squarefree Euler quotient and its marked arithmetic filters have unscaled decay for every moving divisibility mark. Chebyshev prime density pays for all excluded primes up to the actual quadratic cutoff. The saving also absorbs one physical logarithm. Ordinary primes remain included; the growing prime-deleted Möbius sum still needs its independent bound. | [exact Euler response](RiemannGaussian/ZetaSquarefreeEulerResponse.lean), [uniform quadratic-sieve bound](RiemannGaussian/ZetaSquarefreeEulerQuadraticSieveDecay.lean), [logarithmic extension](RiemannGaussian/ZetaSquarefreeEulerLogDecay.lean), [proof and scope](docs/zeta-squarefree-quadratic-sieve-decay.md) |
 | **Complex Selberg diagonalisation and prime-insertion cancellation** | Every finite complex divisor family admits an exact bilinear diagonalisation retaining complex squares and all ordered correlations. Prime insertion cancels the explicit first derivative of the divisor matrix in the original large-prime response, while keeping the ordinary-prime correction explicit. | [full complex matrix](RiemannGaussian/ZetaSquarefreeEulerQuadratic.lean), [prime insertion and the actual source](RiemannGaussian/ZetaSquarefreeEulerPrimeInsertion.lean), [identities and domains](docs/zeta-squarefree-euler-quadratic.md) |
-| **Signed pole cancellation and a wider zero-free region** | The complete pole subtraction is negative on the relevant separated frequencies. Every admissible integer-frequency family consequently has no positive quadratic pole cost; the constant-mode reserve remains explicit. The unchanged exact family proves the all-height edge width `792/(7625 log(\|t\|+2)-2000)`, with all arithmetic hypotheses discharged. The global RH bound remains open. | [all-family bound and literal zero exclusion](RiemannGaussian/ZetaSignedPoleZeroFree.lean), [proof and scope](docs/zeta-signed-pole-zero-free.md) |
+| **Positive pole reserve, wider exclusion and exact bootstrap limit** | The constant-pole reserve exceeds `2/25`. Retaining it quantitatively widens the literal zero-free strip. The actual feedback step improves every input below its unique fixed point, and its iterates converge to that point, capped at `4/39`. The larger region supplies a strictly larger squarefree analytic radius at every possible zero ordinate and uniform bounds for all marked filters and complex polynomials. The independent signed prime-tail estimate remains open. | [actual exclusion and iteration](RiemannGaussian/ZetaPoleReserveBootstrap.lean), [analytic and arithmetic transport](RiemannGaussian/ZetaSquarefreeEulerReserveRadius.lean), [proof and scope](docs/zeta-pole-reserve-bootstrap.md) |
+| **Centered squarefree counts for all divisor families** | Exact signed floor expansions pass to the full square sieve and every roughness intersection. After subtracting the actual density, every integer interval has an explicit power bound uniform over both bounded complex divisor-weight families, with linear total divisor cost. The full signed density matrix remains available. | [complete squarefree counting](RiemannGaussian/ZetaSquarefreeCounting.lean), [rough marked and whole-family estimates](RiemannGaussian/ZetaRoughSquarefreeCounting.lean), [scope](docs/zeta-squarefree-centered-counting.md) |
+| **Signed pole cancellation and the preceding zero-free region** | The complete pole subtraction is negative on the relevant separated frequencies. Every admissible integer-frequency family consequently has no positive quadratic pole cost; the constant-mode reserve remains explicit. The unchanged exact family proves the all-height edge width `792/(7625 log(\|t\|+2)-2000)`, with all arithmetic hypotheses discharged. The global RH bound remains open. | [all-family bound and literal zero exclusion](RiemannGaussian/ZetaSignedPoleZeroFree.lean), [proof and scope](docs/zeta-signed-pole-zero-free.md) |
 | **Small-prime logarithmic decay and a larger prime-tail cutoff** | The complete small-prime logarithmic response has cutoff cost `D*sqrt(D)*log(D)`, keeping all ordered lcm interactions. Its normalized allowance decays for every moving cutoff through D_N^2. At that larger cutoff, every surviving nonzero coefficient has a prime and cofactor beyond D_N^2, so the full convergent source lies beyond D_N^4. The independent signed upper bound remains open. | [full lcm bound, enlarged cutoff and source](RiemannGaussian/ZetaRoughPrimeLogLcmBound.lean), [original exact prime fibres](RiemannGaussian/ZetaRoughPrimeLogSource.lean), [proof and scope](docs/zeta-rough-prime-log-lcm-bound.md) |
 | **Exact divisor reflection and a bounded head** | Full Möbius compensation equals minus the mixed coefficient at the exact adaptive cutoff `floor(n/(D+1))`. Every selected subset through `D_N^3` has an independent `C(p)*(9/10)^N` bound. The complete multiplicity source remains in the convergent high-product series; its signed upper bound remains open. Exact cutoff and phase identities clarify the scope of possible estimates. | [reflection, head bound and exact source partition](RiemannGaussian/ZetaRoughMoebiusHyperbola.lean), [proof and cutoff distinction](docs/zeta-rough-moebius-hyperbola.md), [multiplicative phase transport](RiemannGaussian/ZetaMultiplicativePhase.lean), [scope of the mechanism checks](docs/zeta-cutoff-phase-audit.md) |
 | **All complex divisor correlations and their unit source** | The complete ordered lcm mass has linear cutoff cost, including every divisor correction and the exact three-entry prime correction. All bounded complex families through D_N^3 have an independent geometric error; their limiting unit interaction still carries the source. The earlier coefficient-mass theorem also covers some larger sparse weights. The strict signed upper bound remains open. | [linear arithmetic bound and enlarged cutoff](RiemannGaussian/ZetaRoughDivisorLinearBound.lean), [exact correlations and coefficient-mass bound](RiemannGaussian/ZetaRoughDivisorCorrelation.lean), [proof and scope](docs/zeta-rough-divisor-linear-bound.md) |
@@ -189,19 +224,114 @@ positivity or vanishing direction remains unproved.
 
 ## Accomplishments
 
-- **Proved explicit zero-free edge regions at every height.**
-  [nontrivialZetaZero_mem_signedPole_strip](RiemannGaussian/ZetaSignedPoleZeroFree.lean)
-  proves `m(t) < Re(rho) < 1-m(t)`, with
-  `m(t)=792/(7625 log(|t|+2)-2000)`,
-  for **every genuine nontrivial zeta zero**, without a lower height cutoff
-  or an unproved arithmetic premise. The
-  [literal nonvanishing theorem](RiemannGaussian/ZetaSignedPoleZeroFree.lean)
-  also covers the closed right-edge region, away from the pole at one.
-  Retaining the full pole sign increases the preceding
-  project edge width by more than `1584/1525` everywhere, with a proved
-  positive source gap after all explicit errors. This is a rigorously
-  formalised bound within the classical zero-free-region framework;
-  the remaining interior bound needed for RH is open.
+- **Proved another zero-free improvement by feeding back the known region.**
+  [exists_eventual_strip](RiemannGaussian/GaussianFermiBootstrapZeroFree.lean)
+  proves `4/(25 log(abs(t))) < beta < 1-4/(25 log(abs(t)))` for every
+  actual nontrivial zero beyond a finite threshold. The same module proves
+  literal nonvanishing and strict improvement over the preceding global
+  Fermi margin. The larger interior shift decreases the tail cost, and
+  the unchanged phase family has a second proved Gaussian surplus. The
+  threshold is existential; this does not establish convergence toward
+  the critical line or the independent signed prime-tail bound.
+- **Connected the stronger zero-free region to stronger squarefree decay.**
+  [exists_eventual_squarefreeEuler_reserve_scaled_decay](RiemannGaussian/ZetaSquarefreeEulerFermiRadius.lean)
+  proves that every fixed valid marked response and complex polynomial
+  still has a vanishing response after multiplication by the old analytic
+  radius to the moment order, at sufficiently large height. The proof
+  establishes a larger safe disc for the literal quotient and transports
+  it to the original arithmetic series. Growing sieves retain their
+  explicit Euler cost; the independent signed prime-tail bound stays open.
+- **Proved a stronger eventual zero-free region with exact coefficient `3/20`.**
+  [exists_eventual_strip](RiemannGaussian/GaussianFermiZeroFree.lean)
+  proves `3/(20 log(abs(t))) < beta < 1-3/(20 log(abs(t)))` for every
+  genuine nontrivial zero beyond a finite threshold. The same module proves
+  literal nonvanishing on the closed right edge and strict improvement over
+  the preceding width. The independent Gaussian surplus and every remaining
+  pole, gamma and divisor-tail cost are proved. The threshold is not
+  numerically evaluated, and no historical novelty or best-published-region
+  claim is made. RH and the original signed prime-tail bound remain open.
+- **Proved a Gaussian comparison for every genuine right-half zero.**
+  [resonant_pair_phase_bound](RiemannGaussian/GaussianFermiResonantBudget.lean)
+  retains both distinct horizontal partners and their full analytic
+  multiplicity. The [exact signed partition](RiemannGaussian/GaussianFermiLaplaceOrder.lean)
+  gives a Gaussian lower bound for the target pair and a Gaussian upper
+  bound for the constant pole, with their opposite remainder signs proved.
+  Nonzero poles, gamma terms and the complete outside allowance are also
+  bounded. The resulting inequality holds for every admissible finite
+  phase family. The subsequent Gaussian surplus and complete height-cost
+  bounds turn this comparison into the stronger eventual region above.
+- **Removed the unevaluated gamma term from the general Fermi zero budget.**
+  [selected_zero_phase_log_budget](RiemannGaussian/GaussianFermiGammaBound.lean)
+  uses the proved bound `D(t) <= log(5/4+abs(t))/4 + 7/(8*(5/4+abs(t)))`,
+  uniformly over the admissible positive Gaussian splits. The
+  [exact second spectral moment](RiemannGaussian/GaussianFermiSpectralMoment.lean)
+  controls the first absolute moment without an inverse-scale loss.
+  The [actual digamma tangent](RiemannGaussian/GaussianDigammaLogEnvelope.lean)
+  retains the evaluation center until the Gaussian and spectral
+  displacements are averaged. The subsequent pole and target-pair bounds
+  give the Gaussian comparison above and the stronger eventual region.
+- **Proved a Fermi zero budget for every admissible finite phase test.**
+  [selected_zero_phase_budget](RiemannGaussian/GaussianFermiPhaseBudget.lean)
+  retains any selected finite set of actual zeros and their multiplicities.
+  The complete literal prime series has the favorable sign after phase
+  recombination. The [full formula](RiemannGaussian/GaussianFermiPoleFormula.lean)
+  evaluates poles and constants exactly and proves the remaining gamma
+  average integrable and independent of the auxiliary scale split. The
+  outside divisor is paid for by the proved allowance times total phase
+  weight. Subsequent gamma, pole and target-pair bounds give an explicit
+  Gaussian comparison and a stronger eventual exclusion. Evaluating its
+  height threshold and the original RH prime-tail bound remain open.
+- **Connected the complete Fermi zero side to a proved arithmetic formula.**
+  [hasSum_contribution_arithmetic_average](RiemannGaussian/GaussianFermiZeroMixture.lean)
+  identifies the original paired zero sum with an absolutely convergent
+  spectral average of the unconditional Gaussian arithmetic explicit
+  formula. The [averaging density](RiemannGaussian/GaussianFermiSpectralWeight.lean)
+  is nonnegative with exact unit mass at every positive reflection parameter.
+  Preserving localization pays for the whole analytic divisor and every
+  multiplicity. The previous vanishing allowance now bounds this arithmetic
+  average. The subsequent literal-prime and pole evaluations feed the general
+  phase budget and the subsequent stronger eventual exclusion.
+- **Proved that the full Gaussian Fermi zero-side allowance vanishes.**
+  [exists_uniform_zero_side_bound](RiemannGaussian/GaussianFermiMovingAllowance.lean)
+  bounds the complete signed zero sum below by `-K log(H+2)/sqrt(H)`, which
+  tends to zero. It includes every actual analytic multiplicity and is
+  uniform over all scales `m(H)^2 <= b <= 1` and ordinates `2*abs(t) <= H`.
+  The evaluation line remains `Re(s)=1-m(H)`, supplied by the proved
+  zero-free region. The [actual divisor-tail rate](RiemannGaussian/GaussianFermiZeroTailRate.lean)
+  comes from the existing unconditional xi-growth estimate. A wider
+  eventual region now follows from the quantitative Gaussian exclusion
+  inequality. Its numerical height threshold and the independent
+  ordinary-prime-tail bound remain open.
+- **Connected ideal Fermi smoothing to genuine reflected zeta zeros.**
+  [nontrivial_zero_pair_re_nonneg_on_band](RiemannGaussian/GaussianFermiZeroPair.lean)
+  uses the proved zero-free width to establish nonnegative Gaussian Fermi
+  pairs on one evaluation line inside `Re(s)=1`, uniformly over every zero
+  in a specified height band and every evaluation ordinate. The
+  [general theorem](RiemannGaussian/FermiLaplaceReflection.lean) covers all
+  eligible windows, without fitting coefficients. This formalizes an ideal
+  smoothing mechanism inspired by external zero-free-region work; it does
+  not by itself establish that work's numerical constant. The subsequent
+  Gaussian comparison proves the stronger eventual region above.
+- **Widened the literal zero-free strip and proved its feedback limit.**
+  [nontrivialZetaZero_mem_poleReserve_strip](RiemannGaussian/ZetaPoleReserveBootstrap.lean)
+  proves the all-height margin displayed above, with every arithmetic
+  premise discharged. The positive constant-pole reserve is strictly greater
+  than `2/25`; using it quantitatively improves the preceding margin at every
+  possible zero ordinate. The same module proves monotone iteration to its
+  unique fixed point, capped at `4/39`, and literal nonvanishing on the closed
+  right-edge region away from the pole. The [larger analytic disc](RiemannGaussian/ZetaSquarefreeEulerReserveRadius.lean)
+  reaches all marked squarefree filters and all complex polynomials with
+  the finite Euler cost explicit. This refines a classical zero-free-region
+  argument; it does not prove RH or claim a best-published bound.
+- **Proved centered interval bounds for all bounded divisor families.**
+  [familyInterval_centered_bound](RiemannGaussian/ZetaRoughSquarefreeCounting.lean)
+  bounds the complete rough squarefree matrix after subtracting its exact
+  density, on every integer interval. For `1/2 < sigma <= 1`, the bound is
+  `C_sigma D exp(4 sqrt(R)) (B^sigma+A^sigma)`, uniformly over both complex
+  coefficient families. Shared-prime intersections give linear divisor
+  cost. The [counting proof](RiemannGaussian/ZetaSquarefreeCounting.lean)
+  retains the signed finite sieve identities and passes to all prime squares.
+  This does not yet bound the independent ordinary-prime error.
 - **Proved uniform squarefree decay for the actual quadratic prime sieve.**
   [tendsto_squarefreeEuler_actual_quadratic_sieve](RiemannGaussian/ZetaSquarefreeEulerQuadraticSieveDecay.lean)
   proves that every moving divisibility mark has an unscaled complete
@@ -212,8 +342,10 @@ positivity or vanishing direction remains unproved.
   [SquarefreeEulerLog.tendsto_actual_quadratic_sieve](RiemannGaussian/ZetaSquarefreeEulerLogDecay.lean)
   extends decay to a physical logarithmic weight by proving that the saving
   absorbs its full linear moment cost. Ordinary primes are included in
-  these theorems; their deletion and the growing Möbius divisor sum remain
-  part of the [open RH bound](docs/zeta-squarefree-quadratic-sieve-decay.md).
+  these theorems. The [complete growing divisor-family theorem](RiemannGaussian/ZetaSquarefreeEulerFamilyDecay.lean)
+  now transports their decay through both bounded complex families; the
+  [independent ordinary-prime-tail bound](docs/zeta-squarefree-euler-family-decay.md)
+  remains open.
 - **Retained the complete complex divisor matrix through prime insertion.**
   [SquarefreeEulerQuadratic.form_eq_divisor_coordinates](RiemannGaussian/ZetaSquarefreeEulerQuadratic.lean)
   formalises the classical Selberg diagonalisation for arbitrary complex

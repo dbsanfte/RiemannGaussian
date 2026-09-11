@@ -20,11 +20,14 @@ noncomputable section
 open Complex Filter Topology
 open scoped Classical
 
-/-- One Cauchy constant works for every smaller positive radius and
-all valid marks. The original arithmetic series and polynomial phases
-are unchanged; the finite Euler allowance remains explicit. -/
-theorem exists_squarefreeEuler_variable_radius_bound (y : ℝ) (hy : 1 < |y|) :
-    ∃ C : ℝ, 0 < C ∧ ∀ (r : ℝ), 0 < r → r ≤ squarefreeEulerRadius y →
+/-- Any proved analytic disc transports to every smaller positive
+radius and all valid arithmetic marks. The finite Euler allowance and
+full complex polynomial envelope remain explicit. -/
+theorem exists_squarefreeEuler_variable_radius_bound_of_analytic
+    (y outer : ℝ) (hout : 0 < outer) (houtu : outer < 3 / 2)
+    (hQ : AnalyticOnNhd ℂ squarefreeEulerResponse
+      (Metric.closedBall (3 / 2 + I * y) outer)) :
+    ∃ C : ℝ, 0 < C ∧ ∀ (r : ℝ), 0 < r → r ≤ outer →
       ∀ S : Finset ℕ, (∀ a ∈ S, a.Prime) → ∀ P : ℕ,
         Squarefree P → (∀ a ∈ P.primeFactors, a ∉ S) →
         ∀ (p : Polynomial ℂ) (N : ℕ),
@@ -32,16 +35,13 @@ theorem exists_squarefreeEuler_variable_radius_bound (y : ℝ) (hy : 1 < |y|) :
             C * squarefreeEulerBudget (3 / 2 - r) S P * r⁻¹ ^ N *
               ∑ k ∈ p.support, ‖p.coeff k‖ * r⁻¹ ^ k := by
   let c : ℂ := 3 / 2 + I * y
-  let outer := squarefreeEulerRadius y
-  have hout : 0 < outer := zero_lt_one.trans (squarefreeEulerRadius_bounds hy).1
-  have hQ := analyticOnNhd_squarefreeEulerResponse hy
   obtain ⟨M, hM⟩ := ((isCompact_closedBall c outer).image_of_continuousOn
     hQ.continuousOn.norm).isBounded.exists_norm_le
   have hM0 : 0 ≤ M := (norm_nonneg _).trans (hM _ ⟨c, Metric.mem_closedBall_self hout.le, rfl⟩)
   refine ⟨M + 1, by linarith, ?_⟩
   intro r hr hro S hS P hP hPS p N
   let A := squarefreeEulerBudget (3 / 2 - r) S P
-  have hσ : 0 < 3 / 2 - r := by linarith [(squarefreeEulerRadius_bounds hy).2.2.1]
+  have hσ : 0 < 3 / 2 - r := by linarith
   have hedge (s : ℂ) (hs : s ∈ Metric.closedBall c r) : 3 / 2 - r ≤ s.re := by
     have h := (Complex.abs_re_le_norm (s - c)).trans (mem_closedBall_iff_norm.mp hs)
     dsimp [c] at h
@@ -85,6 +85,21 @@ theorem exists_squarefreeEuler_variable_radius_bound (y : ℝ) (hy : 1 < |y|) :
     _ = _ := by
       simp_rw [pow_add, Finset.mul_sum]
       exact Finset.sum_congr rfl (fun _ _ ↦ by ring)
+
+/-- The preceding signed-pole region supplies the original common
+Cauchy constant, with every arithmetic mark and polynomial unchanged. -/
+theorem exists_squarefreeEuler_variable_radius_bound (y : ℝ) (hy : 1 < |y|) :
+    ∃ C : ℝ, 0 < C ∧ ∀ (r : ℝ), 0 < r → r ≤ squarefreeEulerRadius y →
+      ∀ S : Finset ℕ, (∀ a ∈ S, a.Prime) → ∀ P : ℕ,
+        Squarefree P → (∀ a ∈ P.primeFactors, a ∉ S) →
+        ∀ (p : Polynomial ℂ) (N : ℕ),
+          ‖RoughSquarefreeBare.response p S P N (3 / 2 + I * y)‖ ≤
+            C * squarefreeEulerBudget (3 / 2 - r) S P * r⁻¹ ^ N *
+              ∑ k ∈ p.support, ‖p.coeff k‖ * r⁻¹ ^ k :=
+  exists_squarefreeEuler_variable_radius_bound_of_analytic y (squarefreeEulerRadius y)
+    (by linarith [(squarefreeEulerRadius_bounds hy).1])
+    (by linarith [(squarefreeEulerRadius_bounds hy).2.2.1])
+    (analyticOnNhd_squarefreeEulerResponse hy)
 
 private theorem moving_radius_budget (N R : ℕ) (hR : 4 ≤ Real.log (R + 2 : ℝ))
     (hcut : Real.sqrt R ≤ (N : ℝ) / 40) :
