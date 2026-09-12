@@ -55,7 +55,9 @@ def run(output, published):
         try:
             for width in (1280, 390):
                 page = browser.new_page(viewport={"width": width, "height": 1000})
-                response = page.goto(url, wait_until="networkidle", timeout=60000)
+                # GitHub can keep background requests open after the README is
+                # ready. Wait for the actual DOM and math below, not network idle.
+                response = page.goto(url, wait_until="domcontentloaded", timeout=60000)
                 assert response.status == 200, f"GitHub returned HTTP {response.status}"
                 article = page.locator("article.markdown-body").first
                 article.wait_for()
@@ -97,8 +99,10 @@ def run(output, published):
                     width: e.clientWidth, scroll: e.scrollWidth
                 }))""")
                 assert all(s["scroll"] <= s["width"] + 1 for s in sizes), sizes
-                cta = article.get_by_role("link", name=re.compile("Open the interactive theorem explorer"))
-                assert cta.count() == 1 and cta.get_attribute("href") == SITE
+                # Published headings also have an accessible permalink link.
+                cta = article.locator(f"h3 a[href='{SITE}']")
+                assert cta.count() == 1
+                assert "Open the interactive theorem explorer" in cta.inner_text()
                 preview = article.locator("a img[alt^='Click to explore']")
                 assert preview.count() == 1
                 assert preview.locator("..").get_attribute("href") == SITE
