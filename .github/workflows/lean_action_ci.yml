@@ -42,3 +42,51 @@ jobs:
         run: |
           lake env lean -DwarningAsError=true scripts/GenerateProjectStatus.lean
           git diff --exit-code -- docs/proof-status.json docs/proof-status.svg
+      - name: Export and verify the actual theorem dependency graph
+        shell: bash
+        run: |
+          lake env lean -DwarningAsError=true scripts/ExportTheoremGraph.lean
+          python3 scripts/build_theorem_explorer.py --check
+          node scripts/check_theorem_graph.cjs
+      - name: Install the pinned explorer test browser
+        shell: bash
+        run: |
+          python3 -m venv .lake/browser-venv
+          .lake/browser-venv/bin/pip install -r scripts/requirements-browser.txt
+          .lake/browser-venv/bin/python -m playwright install --with-deps chromium
+      - name: Check theorem explorer interactions and source links
+        shell: bash
+        run: .lake/browser-venv/bin/python scripts/test_theorem_explorer.py
+      - name: Assemble the verified Pages snapshot
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        shell: bash
+        env:
+          THEOREM_SOURCE_SHA: ${{ github.sha }}
+          THEOREM_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python3 scripts/build_theorem_explorer.py --check \
+            --site .lake/theorem-explorer/site \
+            --revision "$THEOREM_SOURCE_SHA" --run-url "$THEOREM_RUN_URL"
+      - name: Upload the verified theorem explorer
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .lake/theorem-explorer/site
+
+  deploy-theorem-explorer:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: theorem-explorer-pages
+      cancel-in-progress: false
+    steps:
+      - name: Deploy the verified zero-free theorem explorer
+        id: deployment
+        uses: actions/deploy-pages@v4

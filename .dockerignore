@@ -1,0 +1,7 @@
+# The dev image installs tools; the repository is mounted by the devcontainer.
+**
+!.devcontainer/
+!.devcontainer/Dockerfile
+!scripts/
+!scripts/requirements-browser.txt
+!lean-toolchain

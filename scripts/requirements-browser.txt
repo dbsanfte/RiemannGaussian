@@ -1,0 +1,2 @@
+# Keep the Dockerfile and CI browser installation on this exact version.
+playwright==1.62.0

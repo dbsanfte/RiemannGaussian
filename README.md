@@ -11,8 +11,31 @@ repository's verification gates count as established results.
 
 ## Zero-free region
 
-**Proved in Lean:** for every fixed coefficient
-**`0 < A < pi/(140*log(2))`**, there is a finite threshold `T(A) >= 2`
+**Proved in Lean, with explicit heights:** every nontrivial zero
+`rho = beta + i*t` satisfying
+
+$$
+10^6 \le |t|,\qquad \log(|t|+2)\le 320000
+$$
+
+lies in the strictly smaller strip
+
+$$
+\frac{1}{450000}<\beta<1-\frac{1}{450000}.
+$$
+
+Lean also proves literal zeta nonvanishing on the closed right edge.
+[Band proof](RiemannGaussian/ZetaGaussianBandExclusion.lean)
+· [Complete cost and comparison](docs/zeta-gaussian-phase-band.md).
+
+For **`300000 <= log(abs(t)) <= 310000`**, Lean proves that this width
+exceeds the classical, Littlewood and Vinogradov–Korobov comparison functions
+with respective denominators **`4.8594`, `19.62` and `51.34`**.
+[Exact comparisons](RiemannGaussian/ZetaGaussianBandComparison.lean).
+These comparisons do not establish an exhaustive world-record claim.
+
+The proved region also includes the following eventual component: for every fixed coefficient
+**`0 < A < 22*pi/(1525*log(2))`**, there is a finite threshold `T(A) >= 2`
 such that every nontrivial zeta zero
 `rho = beta + i*t` with `abs(t) >= T(A)` satisfies
 
@@ -25,8 +48,9 @@ This excludes a region adjoining each edge of the critical strip. Lean also
 proves literal zeta nonvanishing on the corresponding closed right edge,
 with every arithmetic and analytic premise discharged.
 **The threshold depends on `A` and has not been numerically evaluated.**
-This is a Littlewood-type width with the stated proved coefficient range.
-The remaining interior strip is unresolved, and RH remains open.
+On overlaps the two components combine by their larger width, with both
+height conditions preserved. The remaining interior strip is unresolved,
+and RH remains open.
 
 [Lean proof: exists_eventual_strip](RiemannGaussian/ZetaLogLogZeroFree.lean#L62)
 · [Joint order-height proof and arithmetic consequences](docs/zeta-log-log-zero-free.md).
@@ -34,44 +58,37 @@ The remaining interior strip is unresolved, and RH remains open.
 > **Research agents:** GPT-5.6 Sol and GPT-6 Astra with **Max** reasoning effort, running in the
 > **Codex CLI harness**.
 
-![Lean-verified RiemannGaussian theorem inventory](docs/proof-status.svg)
+[![Explore the zero-free theorem chain, grouped by mathematical family](docs/theorem-explorer/preview.svg)](https://dbsanfte.github.io/RiemannGaussian/)
 
-This panel is generated from Lean's compiled environment. A checkmark means
-that the named theorem is kernel-checked; it is not a measure of proximity to
-RH. Its boxes are deliberately not connected as a proof chain: green denotes
-unconditional analytic infrastructure, purple an RH-equivalent reformulation,
-and blue/cyan verified identities or reductions. In particular, proving that
-a detector is equivalent to RH does not establish either side. Orange is the
-conjecture-strength open mathematics, and its dashed arrow is explicitly
-unproved. No current theorem derives an RH-equivalent vanishing condition from
-unconditional arithmetic estimates. CI rejects a stale generated panel. The
-machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
+[**Interactive proof explorer**](https://dbsanfte.github.io/RiemannGaussian/)
+— zoom, expand branches, inspect theorem metadata and open exact Lean source lines.
+[Family metadata](docs/theorem-explorer/metadata.json)
+· [Proof audit](docs/theorem-explorer/audit.json)
+· [Reproduce locally](docs/theorem-explorer.md).
 
 ## Current Direction
 
-Extend signed angular control to general nonnegative phase families, preserving every boundary channel and growing-set cost. Compare proved regions with published results at matching heights, then target stronger near-one growth and explicit thresholds. The semicircle estimate feeds the complete log-log region and squarefree transport; the independent signed ordinary-prime lower bound and RH remain open.
+Extend the explicit Gaussian zero-free band using the full family inequality, preserving signed boundaries, prime phases and multiplicities. Next audit the complete literature comparison and widen the interval, then apply the local doubled-ordinate window to the squarefree arithmetic chain. The independent ordinary-prime floor and RH remain open.
 
 ## Latest Update
 
-**Retaining the angular sign enlarges the proved zero-free region.**
-The full complex logarithmic derivative is recovered from its first
-boundary moment and complete local divisor. Its signed projection uses
-upper growth on the left semicircle and the actual Euler reciprocal bound
-on the right. The analytic allowance is `2*allowance/(pi*delta)`;
-the complete moving-order contradiction cost tends to `140*C*b/pi`.
-The selected multiplicity, exact radial correction and possible zeros on
-the outer circle are retained throughout the proof.
+**A complete Gaussian source surplus now proves the explicit band above.**
+For every eligible countable phase family in the stated coarse coefficient
+class, Lean bounds the complete cost by `47500`; a zero within the proposed
+width would contribute at least `48000`. The existing exact family discharges
+every hypothesis. All three original prime responses survive in the richer
+identity, and their common nonnegative phase kernel closes the arithmetic step.
+The center stays strictly right of one, avoiding any boundary-limit assumption.
 
-[Exact complex boundary identity](RiemannGaussian/AnalyticDiscBoundaryMoment.lean),
-[general signed estimate](RiemannGaussian/AnalyticDiscSignedBoundary.lean),
-[actual zeta bound](RiemannGaussian/ZetaNearOneAngularBound.lean),
-[actual prime budget](RiemannGaussian/ZetaAngularPrimeBudget.lean),
-[global exclusion](RiemannGaussian/ZetaLogLogZeroFree.lean),
-[proof and scope](docs/zeta-signed-angular-zero-free.md).
-The larger region also supplies complete divisor bands and
-[all marked squarefree response bounds](RiemannGaussian/ZetaSquarefreeLogLogRadius.lean),
-with the signed prime envelope retained. Thresholds remain unevaluated.
-The separate ordinary-prime lower bound and RH remain open.
+[All-family bound](RiemannGaussian/ZetaGaussianStripPhaseFamily.lean),
+[uniform cost](RiemannGaussian/ZetaGaussianBandBudget.lean),
+[actual exclusion](RiemannGaussian/ZetaGaussianBandExclusion.lean),
+[height comparisons and union](RiemannGaussian/ZetaGaussianBandComparison.lean),
+[scope](docs/zeta-gaussian-phase-band.md).
+
+The three displayed benchmark comparisons are checked inequalities, not an
+exhaustive literature or novelty audit. Widening the band and transporting
+it into the remaining arithmetic problem are next. RH remains open.
 
 ## Notable Formalisations
 
@@ -80,7 +97,20 @@ a compiled theorem; its source records the precise domains and hypotheses.
 
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
-| **Exact complex boundary moment and opposite semicircle bounds** | The first angular log-norm moment and complete canonical divisor recover the whole complex logarithmic derivative. Upper growth on the left and a lower logarithmic bound on the right give the signed allowance `2*(B+C)/(pi*R)`. Actual Euler and Gaussian estimates discharge both bounds and give the region displayed above. | [complex identity](RiemannGaussian/AnalyticDiscBoundaryMoment.lean), [exact semicircle masses](RiemannGaussian/SignedCircleProjection.lean), [general bound](RiemannGaussian/AnalyticDiscSignedBoundary.lean), [actual zeta bound](RiemannGaussian/ZetaNearOneAngularBound.lean), [prime budget](RiemannGaussian/ZetaAngularPrimeBudget.lean) |
+| **Explicit Gaussian zero-free band from the complete phase-family cost** | Every eligible countable family in a coarse coefficient class has full cost at most `47500`, below the selected source `48000`. The existing exact family proves the explicit band above. All three prime responses remain coupled before positivity; the Euler charge falls only on the constant channel. Exact comparison inequalities and union with the eventual region are proved. | [complex family arithmetic](RiemannGaussian/ZetaGaussianPhaseArithmetic.lean), [coupled right response](RiemannGaussian/ZetaGaussianPhaseAllowance.lean), [full signed family](RiemannGaussian/ZetaGaussianStripPhaseFamily.lean), [actual band](RiemannGaussian/ZetaGaussianBandExclusion.lean), [scope](docs/zeta-gaussian-phase-band.md) |
+| **Original Gaussian prime identity and complete strip bridge** | One complex Gaussian average connects the actual prime series, full xi response, pole and completion. Arbitrary finite zero groups retain their ordinates and multiplicities in the signed strip bound; the entire nearby divisor reaches Gaussian compensation. Exact pole recombination and explicit completion and distant-zero allowances retain the selected source at Euler centers. | [complex averages](RiemannGaussian/GaussianComplexPoleAverage.lean), [actual identity](RiemannGaussian/ZetaGaussianSmoothedIdentity.lean), [finite divisor groups](RiemannGaussian/ZetaStripFiniteSource.lean), [terminal bound](RiemannGaussian/ZetaGaussianStripBound.lean), [scope](docs/zeta-gaussian-strip-bridge.md) |
+| **Complete nearby Gaussian-cotangent compensation** | A general analytic half-disc theorem controls the full blended source through its removed pole. Every nearby actual zero is compensated by its own retained Poisson mass; any finite selection keeps its exact source and multiplicities in the full signed bound. The selected cotangent loss is explicitly linear in its distance from one. | [regular correction](RiemannGaussian/CotangentRegularization.lean), [general minimum principle](RiemannGaussian/AnalyticHalfDiscMinimum.lean), [source bound](RiemannGaussian/SmoothedCotangentSource.lean), [actual cancellation](RiemannGaussian/ZetaGaussianNearCancellation.lean), [scope](docs/zeta-gaussian-near-cancellation.md) |
+| **Complete Gaussian zero mass and explicit smoothing remainder** | Exact complex endpoints give cubic pole-remainder decay. An all-window cosine theorem proves the sign of every actual Gaussian zero contribution. Complete multiplicity-weighted summability, finite-window limits and near/far identities retain the complex correction; a shifted Poisson comparison gives an elementary half-logarithmic outside allowance. | [complex endpoints](RiemannGaussian/GaussianComplexHalfMoments.lean), [all-window sign](RiemannGaussian/PositiveCosineLaplace.lean), [actual mass](RiemannGaussian/ZetaGaussianLaplaceMass.lean), [complete remainder bound](RiemannGaussian/ZetaGaussianDistanceRemainder.lean), [scope](docs/zeta-gaussian-pole-remainder.md) |
+| **Complete phase-family strip budget and explicit zero exclusion** | The exact cotangent source reaches a proved elementary upper bound for every eligible countable family. The right prime phases cost only the constant channel; rational corrections decay and the center has favorable sign. The full signed budget improves with retained negative depth. A strict explicit surplus proves actual closed-edge nonvanishing. | [signed and elementary budgets](RiemannGaussian/ZetaStripPhaseFamily.lean), [zero exclusion](RiemannGaussian/ZetaStripPhaseExclusion.lean), [all-family left means](RiemannGaussian/ZetaClippedEulerFamily.lean), [right correction](RiemannGaussian/ZetaRegularizedSechMean.lean), [scope](docs/zeta-strip-phase-budget.md) |
+| **Actual strip zero constraint with complete vertical integrals** | The exact boundary map, Jacobian and dominated radial limits connect the full-multiplicity cotangent source to the two vertical integrals. The right sign is unchanged; arbitrary left negative depth is retained, with a proved monotone improvement as more depth is included. All analytic limits and integral side conditions are discharged. | [boundary geometry](RiemannGaussian/AnalyticStripBoundary.lean), [integral substitution](RiemannGaussian/AnalyticStripBoundaryIntegral.lean), [actual limits](RiemannGaussian/ZetaStripBoundaryLimit.lean), [zero constraint](RiemannGaussian/ZetaStripBoundaryConstraint.lean), [scope](docs/zeta-strip-boundary-constraint.md) |
+| **Complete strip divisor and exact cotangent source** | The full disc-to-strip map preserves analytic order. Every finite actual zeta identity retains its complete divisor, complex boundary moment and rational pole correction. All zero terms have favorable sign; the selected term has an exact positive cotangent limit with its full multiplicity. A uniform signed envelope controls the infinite ends. | [map](RiemannGaussian/AnalyticStripMap.lean), [finite actual divisor](RiemannGaussian/ZetaStripDisc.lean), [selected limit](RiemannGaussian/ZetaStripCotangentSource.lean), [signed envelope](RiemannGaussian/ZetaStripBoundaryEnvelope.lean), [scope](docs/zeta-strip-cotangent-source.md) |
+| **Coupled right boundary for every summable phase family** | The original vertical kernel has a strictly positive gamma norm-square Fourier transform. Exact logarithmic Euler expansion and justified infinite exchanges preserve the full phase kernel. The entire negative nonconstant boundary costs only the constant channel's averaged mass, bounded by its real-axis logarithm. | [complex transform](RiemannGaussian/SechVerticalFourier.lean), [actual prime series](RiemannGaussian/ZetaLogPrimeSeries.lean), [averaged boundary](RiemannGaussian/ZetaSechPrimeBoundary.lean), [all-family integral theorem](RiemannGaussian/ZetaSechPhaseFamily.lean), [scope](docs/zeta-sech-phase-boundary.md) |
+| **Direct Euler growth through the full phase-family detector** | The actual all-order line bound has constant `8192` and no eta denominator. Exact pole cancellation controls low heights; the improvement reaches the Gaussian disc and every eligible countable family, preserving the zero source and radial correction. | [line bound](RiemannGaussian/ZetaEulerLineBound.lean), [pole-cleared profile](RiemannGaussian/ZetaEulerLogProfile.lean), [actual disc](RiemannGaussian/ZetaEulerGaussianDisc.lean), [complete family budget](RiemannGaussian/ZetaEulerAngularPhaseFamily.lean) |
+| **Exact vertical detector moments and signed zeta windows** | The actual density has mass one, first absolute moment `log(2)` and an exact logistic tail. The Euler profile bounds every finite signed zeta window with a quadratic plus exponential pole allowance; all negative logarithmic mass is retained. | [moments and tails](RiemannGaussian/SechVerticalMoments.lean), [normalized original bound](RiemannGaussian/ZetaSechExactMass.lean), [actual signed Euler bound](RiemannGaussian/ZetaSechEulerBound.lean), [scope](docs/zeta-sech-euler-bound.md) |
+| **Uniform direct zeta truncation with its full complex remainder** | On `0<Re(s)<=1`, a cutoff `N+1>=abs(Im(s))` gives `norm(R_N(s))<=(N+1)^(-Re(s))`. Exact Euler endpoints, absolute Fourier convergence, both frequency signs and cross-cell cancellation are proved for actual zeta. This classical analytic input removes the eta division loss from the reconstruction step. | [actual uniform theorem](RiemannGaussian/ZetaEulerUniformRemainder.lean), [complete oscillatory tail](RiemannGaussian/ZetaEulerOscillation.lean), [Fourier exchange](RiemannGaussian/ZetaEulerFourier.lean), [coupled phase primitive](RiemannGaussian/OscillatoryPowerPrimitive.lean) |
+| **Exact Gaussian correction in the full phase-family bound** | Retaining the real quadratic and actual rational inverse gives a correction at most two, saving at least twelve logarithmic units per nonconstant channel. The improvement reaches the actual finite-height zero inequality for every eligible family. | [actual full-disc bound](RiemannGaussian/ZetaGaussianSharpDisc.lean), [complete phase budget](RiemannGaussian/ZetaSharpAngularPhaseFamily.lean) |
+| **General phase families and the exact center shift** | Every nonnegative summable phase family with a nonnegative kernel, nonzero frequencies at least one and finite logarithmic frequency cost has a complete actual source bound. The leading cost depends on total nonconstant mass. An exact square proves the unique optimal center shift; the existing contact family supplies the region displayed above. | [source and radial correction](RiemannGaussian/ZetaAngularPhaseFamily.lean), [shift optimizer](RiemannGaussian/PhasePoleMargin.lean), [whole-family limit](RiemannGaussian/ZetaAngularPhaseLimit.lean), [actual exclusion](RiemannGaussian/ZetaAngularPhaseExclusion.lean), [exact-family application](RiemannGaussian/ZetaExactPhaseAngularExclusion.lean) |
+| **Exact complex boundary moment and opposite semicircle bounds** | The first angular log-norm moment and complete canonical divisor recover the whole complex logarithmic derivative. Upper growth on the left and a lower logarithmic bound on the right give the signed allowance `2*(B+C)/(pi*R)`. Actual Euler and Gaussian estimates discharge both bounds and supply the general phase-family theorem. | [complex identity](RiemannGaussian/AnalyticDiscBoundaryMoment.lean), [exact semicircle masses](RiemannGaussian/SignedCircleProjection.lean), [general bound](RiemannGaussian/AnalyticDiscSignedBoundary.lean), [actual zeta bound](RiemannGaussian/ZetaNearOneAngularBound.lean), [prime budget](RiemannGaussian/ZetaAngularPrimeBudget.lean) |
 | **Complete signed control at the strip-width radius** | Zero-free circles approach the full analytic radius despite possible outer-boundary zeros. Sharp canonical control retains the complex divisor identity on each circle; the scalar limit preserves multiplicity and the exact radial correction. This supplies the radius geometry used by the angular bound. | [general circles and limit](RiemannGaussian/AnalyticDiscBoundarySequence.lean), [canonical control](RiemannGaussian/AnalyticDiscCanonicalControl.lean), [actual full disc](RiemannGaussian/ZetaNearOneFullDisc.lean) |
 | **Sharp one-sided analytic derivative control** | An arbitrary positive-radius disc and a bound on the real part suffice to control the full complex center derivative with the classical constant two. The normalized logarithm pays its actual center cost; the estimate strengthens the complete zeta exclusion chain. | [general derivative theorem](RiemannGaussian/AnalyticDiscCaratheodory.lean), [nonvanishing analytic functions](RiemannGaussian/AnalyticDiscLogarithm.lean), [actual canonical residual](RiemannGaussian/ZetaNearOneCanonical.lean), [scope](docs/zeta-caratheodory-zero-free.md) |
 | **Joint order-height control and log-log zero exclusion** | Every fixed logarithmic power is absorbed by the complete moving reciprocal-radius cost. The full center and evaluation-height corrections vanish; the actual prime budget then proves the region displayed above with its entire open coefficient range. | [all-order schedule](RiemannGaussian/LogLogDerivativeSchedule.lean), [full correction decay](RiemannGaussian/ZetaLogLogCorrection.lean), [complete prime budget](RiemannGaussian/ZetaLogLogBudget.lean), [ordinary width and complete bands](RiemannGaussian/ZetaLogLogZeroFree.lean), [scope](docs/zeta-log-log-zero-free.md) |
@@ -230,17 +260,92 @@ positivity or vanishing direction remains unproved.
 
 ## Accomplishments
 
+- **Proved an explicit Gaussian zero-free band and exact benchmark comparisons.**
+  [exact_strip](RiemannGaussian/ZetaGaussianBandExclusion.lean) proves the
+  explicit component in [Zero-free region](#zero-free-region), and
+  `nonvanishing` includes its closed right edge. The all-family source is
+  at least `48000` against complete cost at most `47500`; the existing exact
+  family supplies every arithmetic condition. Lean also proves the three
+  [comparison inequalities](RiemannGaussian/ZetaGaussianBandComparison.lean)
+  at matching heights and combines overlaps with the eventual component
+  by maximum. An exhaustive record and historical novelty audit remains.
 - **Proved a zero-free region of Littlewood shape.**
   [exists_eventual_strip](RiemannGaussian/ZetaLogLogZeroFree.lean)
   proves width `A*log(log(abs(t)))/log(abs(t))` for the coefficient range
   displayed in [Zero-free region](#zero-free-region). The complete moving
   order, center, radius and prime budget are discharged, using the
-  [signed angular bound](RiemannGaussian/ZetaNearOneAngularBound.lean).
-  Opposite semicircles retain upper growth and the actual Euler lower bound.
+  [general signed angular family theorem](RiemannGaussian/ZetaAngularPhaseExclusion.lean)
+  and the [existing exact phase family](RiemannGaussian/ZetaExactPhaseAngularExclusion.lean).
+  The optimal center shift is proved by an exact square identity.
   The region supplies
   [larger arithmetic discs and stronger fixed-mark decay](RiemannGaussian/ZetaSquarefreeLogLogRadius.lean).
   Each coefficient has an existential, unevaluated threshold; the independent
   signed prime bound and RH remain open.
+- **Connected the original Gaussian prime sum to the complete signed strip bound.**
+  [complex_identity](RiemannGaussian/ZetaGaussianSmoothedIdentity.lean)
+  retains the actual Euler series, full xi response, smoothed pole and
+  completion. The [finite-group strip theorem](RiemannGaussian/ZetaStripFiniteSource.lean)
+  includes all nearby zeros with their distinct ordinates and multiplicities.
+  [prime_add_source_le](RiemannGaussian/ZetaGaussianStripBound.lean)
+  retains the selected Gaussian source with explicit zero-side and completion
+  allowances. The bridge is proved for `Re(s)>1`; a quantitative surplus
+  improving the region remains open.
+- **Closed the nearby-sign gap in the Gaussian-cotangent comparison.**
+  [compensated_nonneg](RiemannGaussian/ZetaGaussianNearCancellation.lean)
+  proves that every nearby actual zero's own Poisson reserve pays its full
+  blended-source loss. The terminal theorem retains any selected finite
+  set with full multiplicities and controls the complete distant tail.
+  A selected zero's cotangent correction has an explicit loss tending to
+  zero linearly in `1-beta`. The subsequent
+  [Gaussian prime/strip bridge](docs/zeta-gaussian-strip-bridge.md) now uses
+  this compensation; the displayed region is unchanged.
+- **Closed the complete strip arithmetic budget for general phase families.**
+  [source_le_elementaryBudget](RiemannGaussian/ZetaStripPhaseFamily.lean)
+  bounds every actual cotangent zero source with its full multiplicity.
+  The complete right prime family costs only the constant channel, and the
+  original signed left sum remains available. The
+  [finite-height criterion](RiemannGaussian/ZetaStripPhaseExclusion.lean)
+  proves closed-edge nonvanishing from one explicit elementary inequality.
+  Discharging that inequality for a larger region on explicit height
+  intervals remains the next quantitative step.
+- **Proved a uniform direct zeta truncation remainder.**
+  [norm_remainder_le_power](RiemannGaussian/ZetaEulerUniformRemainder.lean)
+  bounds the actual Euler remainder by `(N+1)^(-Re(s))` when
+  `0<Re(s)<=1` and `N+1>=abs(Im(s))`. The proof preserves the Fourier
+  phases across every cell and removes the growing height factor and eta
+  denominator from this classical reconstruction step. The
+  [actual line bound](RiemannGaussian/ZetaEulerLineBound.lean) and
+  [whole-family zero budget](RiemannGaussian/ZetaEulerAngularPhaseFamily.lean)
+  now inherit that improvement.
+- **Sharpened the actual signed vertical zeta detector.**
+  [Exact moments](RiemannGaussian/SechVerticalMoments.lean) remove its
+  artificial mass-two allowance. The
+  [signed-window theorem](RiemannGaussian/ZetaSechEulerBound.lean)
+  retains the full negative logarithmic mass and bounds the entire pole
+  correction by a quadratic height term plus an exponential tail.
+  The [complete finite strip divisor](RiemannGaussian/ZetaStripDisc.lean)
+  and [boundary-limit inequality](RiemannGaussian/ZetaStripBoundaryConstraint.lean)
+  now feed the [complete arithmetic budget](RiemannGaussian/ZetaStripPhaseFamily.lean).
+- **Preserved the full prime-phase kernel across vertical averaging.**
+  The [exact complex transform](RiemannGaussian/SechVerticalFourier.lean)
+  is a strictly positive gamma norm square. The
+  [complete right-boundary integral](RiemannGaussian/ZetaSechPhaseFamily.lean)
+  therefore costs only the constant channel for every eligible summable
+  family, including infinite support. This proves the classical coupled
+  boundary mechanism with all exchanges justified for actual zeta;
+  the [complete strip phase budget](RiemannGaussian/ZetaStripPhaseFamily.lean)
+  now applies this cancellation to the actual cotangent zero source.
+- **Preserved every actual zero through the strip coordinate map.**
+  The [complete complex identity](RiemannGaussian/ZetaStripDisc.lean)
+  retains the original multiplicities and rational pole correction, with
+  all unselected zero terms nonnegative. The
+  [selected source](RiemannGaussian/ZetaStripCotangentSource.lean)
+  has its exact positive cotangent limit. A
+  [uniform signed envelope](RiemannGaussian/ZetaStripBoundaryEnvelope.lean)
+  controls both infinite ends. The
+  [complete vertical constraint](RiemannGaussian/ZetaStripBoundaryConstraint.lean)
+  now discharges the needed boundary limit, retaining arbitrary left negative
+  depth and the full right sign. A resulting larger region remains open.
 - **Bounded the higher Euler harmonics uniformly over all finite prime sets.**
   [exists_uniform_remainder_bound](RiemannGaussian/ZetaSquarefreeEulerPhase.lean)
   bounds the complete remainder after the first and doubled prime phases

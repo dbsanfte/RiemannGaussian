@@ -1,5 +1,9 @@
 # Signed angular control in the actual zero-free theorem
 
+This records the historical signed-angular slice. The current larger range
+and general countable-family proof are in [the current region](zeta-log-log-zero-free.md)
+and [the general family theorem](zeta-angular-phase-family.md).
+
 For every fixed `0<A<pi/(140*log(2))`, Lean proves a finite threshold
 `T(A)>=2` such that every actual nontrivial zero `rho=beta+i*t` with
 `abs(t)>=T(A)` satisfies
@@ -164,10 +168,10 @@ above a coefficient-dependent threshold. The same result supplies
 The signed prime envelope remains explicit; it has not been replaced
 by an assumed uniform estimate for growing prime sets.
 
-The next phase target is a theorem for general nonnegative trigonometric
-families, so that the selected source, real pole and all oscillatory
-allowances can be compared symbolically. No such extension of this
-angular prime budget is claimed in this slice.
+The subsequent [general phase-family theorem](zeta-angular-phase-family.md)
+now retains the selected source, real pole and complete countable
+frequency allowance and proves the exact optimal center shift.
+The formulas and validation counts here describe the earlier slice.
 
 The [published-region survey](zero-free-region-transport.md) records
 the distinction between classical logarithmic, Littlewood and

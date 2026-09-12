@@ -1483,6 +1483,20 @@ parallel full-library build.
 
 ## Commit and check-in invariant
 
+The zero-free section's interactive theorem explorer is derived from the
+compiled Lean dependency graph and the existing proof-status metadata.
+Maintain logical families and optional theorem reading labels in
+`docs/theorem-explorer/metadata.json`; theorem statements, docstrings, source
+locations, dependency edges and transitive axiom audits come from Lean.
+After changing an endpoint or its dependencies, run
+`scripts/ExportTheoremGraph.lean` and `scripts/build_theorem_explorer.py`, then
+check the generated assets and run `scripts/check_theorem_graph.cjs` and the
+browser interaction checks. Every compressed edge must have an exported
+dependency-path witness. Keep the README presentation to the linked preview
+and its compact explorer/metadata/audit links. Publish only a verified source
+snapshot, with GitHub links pinned to its commit; respect the user's current
+commit and push instructions.
+
 The repository history is the durable record of verified progress. Enforce
 this regime yourself; do not rely on the user to request individual commits,
 pushes, or CI checks.

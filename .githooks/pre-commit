@@ -32,5 +32,11 @@ echo 'pre-commit: compiled-environment integrity and dashboard freshness'
   scripts/GenerateProjectStatus.lean
 git diff --exit-code -- docs/proof-status.json docs/proof-status.svg
 
+echo 'pre-commit: Lean-derived theorem explorer and witnessed graph paths'
+"${lake_command[@]}" env lean -DwarningAsError=true scripts/ExportTheoremGraph.lean
+theorem_node="${THEOREM_NODE:-node}"
+python3 scripts/build_theorem_explorer.py --check --node "$theorem_node"
+"$theorem_node" scripts/check_theorem_graph.cjs
+
 echo 'pre-commit: staged whitespace check'
 git diff --cached --check

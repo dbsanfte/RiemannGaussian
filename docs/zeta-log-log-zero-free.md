@@ -1,233 +1,131 @@
-# A proved log-log zero-free region
+# The current proved log-log zero-free region
 
-For every fixed coefficient
-
-```text
-0 < A < pi/(140*log(2)),
-```
-
-Lean now proves the following statement for actual nontrivial zeta zeros:
+For every fixed `0<A<22*pi/(1525*log(2))`, Lean proves a finite threshold
+`T(A)>=2` such that every actual nontrivial zeta zero `rho=beta+i*t` with
+`abs(t)>=T(A)` satisfies
 
 ```text
-there exists a finite T(A) >= 2 such that
-  abs(t) >= T(A), rho = beta+i*t
-    => A*log(log(abs(t)))/log(abs(t)) < beta
-       < 1-A*log(log(abs(t)))/log(abs(t)).
+A*log(log(abs(t)))/log(abs(t)) < beta
+  < 1-A*log(log(abs(t)))/log(abs(t)).
 ```
 
-[exists_eventual_strip](../RiemannGaussian/ZetaLogLogZeroFree.lean#L62)
-proves both edges. The same module proves literal zeta nonvanishing on
+[ZetaLogLogZeroFree.exists_eventual_strip](../RiemannGaussian/ZetaLogLogZeroFree.lean#L62)
+proves both edges. The module also proves literal zeta nonvanishing on
 the closed right edge and a common margin for the complete divisor below
 every sufficiently large height. All analytic and arithmetic premises
-are discharged. The threshold depends on the coefficient and has not
-been numerically evaluated.
+are discharged. **The threshold depends on the coefficient and has not
+been numerically evaluated.** The coefficient is a proved sufficient
+range, with no claim of optimality or a world-best region.
 
-The coefficient range is supplied by the proved budget; no optimality
-claim is made. The width has Littlewood shape, with coarse constants and
-an existential threshold. It does not reproduce the optimized constant
-or finite starting height in [Yang's published theorem](https://arxiv.org/html/2301.03165v2).
+## The complete general phase-family contradiction
 
-## The same order and height in every estimate
-
-Write
+The [general countable-family theorem](zeta-angular-phase-family.md)
+retains the actual selected source, multiplicity, full radius, radial
+correction and every frequency. Write
 
 ```text
-H(t) = abs(t)+2,       L(t) = log(H(t)),       ell(t) = log(L(t)),
-k(t) = floor(ell(t)/b),                      b > log(2),
-alpha_k = 1/(2^(k+2)-2),                     delta_k = (k+2)*alpha_k,
-u(t) = C*ell(t)/L(t),                        x(t) = 6*u(t).
+H(t)=abs(t)+2, L(t)=log(H(t)), ell(t)=log(L(t)),
+k(t)=floor(ell(t)/b), b>log(2),
+alpha_k=1/(2^(k+2)-2), delta_k=(k+2)*alpha_k,
+u(t)=C*ell(t)/L(t), x(t)=r*u(t).
 ```
 
-The exact exponent ratio `alpha_k/delta_k=1/(k+2)` is preserved in the
-leading term. For the other terms, the natural floor and the complete
-inverse width have the uniform bounds
+For every eligible family, with `W=sum_(n!=0) a_n`, the complete cost tends
+to `2*W*C*b/pi`. A zero within margin `u` forces that cost to be at least
+`Gamma(r)=a_1/(r+1)-a_0/r`. The logarithmic frequency moment and exact
+radial correction vanish on the same moving-order schedule. The exact
+optimal center shift at fixed weights is also proved symbolically.
+
+The [existing exact contact family](../RiemannGaussian/ZetaExactPhaseAngularExclusion.lean)
+has `W<=61/100` and `Gamma(13/4)>=11/625`. Thus
+`1525*C*log(2)<22*pi` supplies a fixed `b>log(2)` for which the complete
+cost is eventually below its source. All geometry holds eventually on
+the same schedule, giving a contradiction. No new coefficient search or
+assumed prime bound enters this zero-free theorem.
+
+The moving-order argument uses the proved bounds
 
 ```text
-1/delta_(k(t)) <= 4*L(t)^p,       p=log(2)/b < 1,
+p=log(2)/b<1,
+1/delta_(k(t)) <= 4*L(t)^p,
 ell(t)/(k(t)+2) -> b,
-ell(t)^n/(L(t)*delta_(k(t))) -> 0    for every fixed natural n.
+ell(t)^n/(L(t)*delta_(k(t))) -> 0  for every fixed natural n.
 ```
 
-The positive power saving `1-p` absorbs every fixed logarithmic power.
-These are moving-order theorems: no fixed-order limit is substituted
-at a height-dependent index. See
-[pow_log_div_width_tendsto](../RiemannGaussian/LogLogDerivativeSchedule.lean#L123)
-and the [actual zeta schedule](../RiemannGaussian/ZetaLogLogScale.lean).
+See [LogLogDerivativeSchedule](../RiemannGaussian/LogLogDerivativeSchedule.lean),
+[the complete family limit](../RiemannGaussian/ZetaAngularPhaseLimit.lean)
+and [actual general exclusion](../RiemannGaussian/ZetaAngularPhaseExclusion.lean).
+Historical three-channel formulas and their earlier coefficient range
+remain in [the signed-angular slice](zeta-signed-angular-zero-free.md).
 
-## The whole center and width correction vanishes
+## Ordinary heights and complete bands
 
-The [earlier full signed local source](zeta-arbitrary-log-zero-free.md)
-uses the actual allowance
+For any `A<C`, the ordinary width is eventually bounded by the smoothed
+width for `C`. Choose `A<C<22*pi/(1525*log(2))` to retain the full open
+coefficient range. Reflection gives the other strip edge.
+
+The ordinary width is positive and antitone for `H>=exp(exp(1))`, and
+tends to zero. That elementary monotonicity height is not the zero-exclusion
+threshold. The [complete-band theorem](zero-free-region-transport.md)
+combines the eventual result with the actual finite lower divisor to
+cover every zero below each sufficiently large height. For fixed `A>0`,
+the width eventually exceeds every fixed `B/log(H)`; this does not assert
+one common threshold for all `B`.
+
+## Arithmetic consequence and the remaining prime bound
+
+For `H=2*abs(y)+3`, every eligible coefficient gives the actual quotient
+`zeta(s)/zeta(2*s)` the closed analytic disc centered at `3/2+i*y` of radius
 
 ```text
-E_k(x,v) = alpha_k*L(v) + R_k(x,v),
-R_k(x,v) = log(32768/delta_k)+14+log(L(v))+log(1+1/x).
+R_A(y)=1+A*log(log(H))/(2*log(H)).
 ```
 
-This is retained as an exact identity before taking a bound or limit.
-At `x(t)=6*u(t)`, the full moving Euler center cost satisfies
+Both poles and all doubled-denominator zeros are excluded first.
+[ZetaSquarefreeLogLogRadius](../RiemannGaussian/ZetaSquarefreeLogLogRadius.lean)
+proves actual Cauchy bounds for every fixed valid squarefree mark, finite
+excluded prime set, complex polynomial and moment order, keeping the
+signed first and doubled prime harmonics in the phase envelope. For fixed
+`0<=A<B<22*pi/(1525*log(2))`, sufficiently large `abs(y)` gives
+`R_A(y)<R_B(y)` and decay of the full marked response multiplied by
+`R_A(y)^N` as the moment order grows.
 
-```text
-log(1+1/x(t)) <= log(1+1/(6*C))+ell(t)
-```
+Constants and the phase envelope may grow with radius. No uniform estimate
+for growing prime sets is asserted. The separate ordinary-prime source
+still needs an independent cofinal lower bound above `-1` by a fixed
+positive gap. Stronger fixed-mark squarefree decay does not prove that
+bound, and the remaining interior strip is unresolved. RH remains open.
 
-once `L(t)>=1` and `ell(t)>=1`. The complete width logarithm satisfies
+## Current analytic improvement
 
-```text
-log(32768/delta_(k(t))) <= log(131072)+p*ell(t).
-```
+The [exact Gaussian correction](zeta-angular-phase-family.md) now saves
+at least twelve logarithmic units per nonconstant channel in the actual
+finite-height family budget. The [direct Euler truncation](zeta-direct-euler-truncation.md)
+has a proved height-uniform remainder without the eta denominator. It now
+propagates through the existing ordinary Dirichlet block bound, the actual
+Gaussian disc and every eligible phase family. The exact additional budget
+saving is `2*W*log(4/delta_k)/(pi*delta_k)`.
 
-More generally, let `v(t)` be any evaluation-height function such that,
-eventually, `log(L(v(t)))>=0` and `L(v(t))<=D*L(t)` for a fixed `D>0`.
-The entire correction is then bounded by
+The [signed vertical detector](zeta-sech-euler-bound.md) now also uses its
+exact mass and first moment, with a controlled pole correction. The
+[coupled right boundary](zeta-sech-phase-boundary.md) now preserves the
+complete prime kernel for every eligible summable phase family and charges
+only the constant channel. The [complete finite strip divisor](zeta-strip-cotangent-source.md)
+now preserves every actual multiplicity and pole correction; its selected
+cotangent source has a proved limit. A uniform signed envelope controls
+the infinite ends. The [actual boundary-limit inequality](zeta-strip-boundary-constraint.md)
+is now proved, retaining arbitrary left negative depth and the full right
+sign. The [complete strip phase-family budget](zeta-strip-phase-budget.md)
+now applies the sharp arithmetic profiles and rational correction, and
+proves an elementary finite-height zero-exclusion criterion. A strict
+cost surplus on explicit height ranges remains to be established.
+These improvements have not yet changed the region stated here.
 
-```text
-0 <= R_(k(t))(x(t),v(t))
-  <= log(131072)+14+log(D)+log(1+1/(6*C))+(p+2)*ell(t).
-```
-
-Consequently
-
-```text
-u(t)*R_(k(t))(x(t),v(t))/delta_(k(t)) -> 0.
-```
-
-The [correction theorem](../RiemannGaussian/ZetaLogLogCorrection.lean)
-includes the whole moving center, radius and evaluation-height cost.
-If the additional logarithmic ratio `L(v(t))/L(t)->q` is proved, the full
-allowance has limit
-
-```text
-u(t)*E_(k(t))(x(t),v(t))/delta_(k(t)) -> C*b*q.
-```
-
-The actual prime phase inequality uses `v(t)=t` and `v(t)=2*t`; both have
-ratio one. Their height comparisons and corrections are discharged in
-[ZetaLogLogBudget](../RiemannGaussian/ZetaLogLogBudget.lean).
-
-## The actual prime contradiction
-
-The signed angular prime budget is now provided by
-[ZetaAngularPrimeBudget](../RiemannGaussian/ZetaAngularPrimeBudget.lean).
-Its analytic input uses the entire radius `delta_k` and retains the exact
-selected correction `d/delta_k^2`, including its multiplicity.
-
-```text
-B_k(x,t) = 1344*log(22)+(8*E_k(x,t)+2*E_k(x,2*t))/(pi*delta_k).
-```
-
-The full moving-order limit is
-
-```text
-u(t)*B_(k(t))(x(t),t) -> 10*C*b/pi,
-
-cost(t) = 14*u(t)*B_(k(t))(x(t),t)
-            +392*(u(t)/delta_(k(t)))^2 -> 140*C*b/pi.
-```
-
-The second term is the canonical radial correction; its decay is proved
-on the same schedule. The exact local pole and canonical correction
-remain coupled. Every other local zero contributes nonnegatively,
-while the selected zero retains its complete multiplicity and
-reciprocal-distance source.
-
-An actual zero with `1-beta<=u(t)` forces `cost(t)>=1`, once the
-geometric conditions hold. Those conditions now hold eventually:
-`k(t)>=2`, `u(t)>0`, and `28*u(t)<delta_(k(t))`. For every
-`140*C*log(2)<pi`, choose one fixed
-
-```text
-log(2) < b < pi/(140*C).
-```
-
-The actual cost is eventually below one. This proves the contradiction
-for the specified smoothed log-log width, with no missing prime-bound
-hypothesis. See the [complete budget limit](../RiemannGaussian/ZetaLogLogBudget.lean#L103)
-and [actual growing-order exclusion](../RiemannGaussian/ZetaLogLogExclusion.lean).
-
-## Ordinary height, reflection and the full lower divisor
-
-The smoothed logarithm satisfies `L(t)/log(t)->1`. For any `A<C`, the
-ordinary width `A*log(log(t))/log(t)` is eventually at most the smoothed
-width `C*ell(t)/L(t)`. Given `A` in the open coefficient range, choose
-`A<C<pi/(140*log(2))`. This retains the whole stated range rather than
-imposing a fixed fractional loss. Reflection gives the other strip edge.
-
-The ordinary width is positive and antitone for
-`H>=exp(exp(1))`, and tends to zero. This elementary height marks where
-the width has those properties; it is not the zero-exclusion threshold.
-The [general complete-band theorem](zero-free-region-transport.md) uses
-these properties and the existing unconditional low-height margin to
-cover every zero below `H`, including the divisor below the initial
-asymptotic threshold.
-
-For every fixed `A>0`, this width eventually exceeds `B/log(H)` for
-every fixed `B`. That comparison is itself a
-[proved theorem](../RiemannGaussian/ZetaLogLogWidth.lean).
-It does not assert a single threshold covering all `B`.
-
-## Consequence for the actual squarefree response
-
-At `c=3/2+i*y`, put `H=2*abs(y)+3`. Each eligible coefficient gives
-the actual quotient `zeta(s)/zeta(2*s)` the complete analytic disc radius
-
-```text
-R_A(y) = 1+A*log(log(H))/(2*log(H))
-```
-
-at sufficiently large `abs(y)`. Both poles and every doubled-denominator
-zero are excluded before Cauchy's estimate is applied. For every finite
-excluded prime set, valid squarefree mark, complex polynomial and order,
-
-```text
-norm(response(p,S,P,N,c))
-  <= K(A,y)*envelope_2(S,c,r)*r^(-N)*sum_k norm(p_k)*r^(-k),
-0 < r <= R_A(y).
-```
-
-The signed first and doubled prime harmonics remain in the actual
-envelope on the selected disc. No uniform growing-prime-set bound is
-asserted. For fixed `0<=A<B<pi/(140*log(2))`, sufficiently large `abs(y)`,
-and every fixed valid `S,P,p`,
-
-```text
-R_A(y) < R_B(y),
-R_A(y)^N * response(p,S,P,N,c) -> 0.
-```
-
-These are [actual arithmetic theorems](../RiemannGaussian/ZetaSquarefreeLogLogRadius.lean),
-with every zero-free and analytic premise discharged. Constants and the
-phase envelope can increase with radius; a stronger asymptotic rate is
-not a claim that every finite-order estimate improves.
-
-## Entry points and remaining frontier
-
-The current coefficient range uses the
-[signed angular boundary estimate](zeta-signed-angular-zero-free.md).
-It uses the full strip-width radius, retaining upper growth on the left
-semicircle and the actual Euler reciprocal bound on the right.
-
-| Module | Principal results |
-| --- | --- |
-| [LogLogDerivativeSchedule](../RiemannGaussian/LogLogDerivativeSchedule.lean) | `log_div_index`, `inverse_delta_le`, `log_width_le`, `pow_log_div_width_tendsto`. |
-| [ZetaLogLogScale](../RiemannGaussian/ZetaLogLogScale.lean) | `order_atTop`, `width_div_delta_tendsto`, `width_mul_level_div_delta_tendsto`. |
-| [ZetaLogLogCorrection](../RiemannGaussian/ZetaLogLogCorrection.lean) | `allowance_eq`, `center_log_le`, `normalized_correction_tendsto`. |
-| [ZetaLogLogBudget](../RiemannGaussian/ZetaLogLogBudget.lean) | `leading_identity`, `normalized_allowance_tendsto`, `cost_tendsto`. |
-| [ZetaLogLogExclusion](../RiemannGaussian/ZetaLogLogExclusion.lean) | `exists_schedule`, `exists_eventual_margin`. |
-| [ZetaLogLogWidth](../RiemannGaussian/ZetaLogLogWidth.lean) | `width_antitone`, `eventually_le_smoothed`, `eventually_dominates_logarithmic`. |
-| [ZetaLogLogZeroFree](../RiemannGaussian/ZetaLogLogZeroFree.lean) | `exists_eventual_strip`, `exists_eventual_common_margin`, `exists_eventual_nonvanishing`. |
-| [ZetaSquarefreeLogLogRadius](../RiemannGaussian/ZetaSquarefreeLogLogRadius.lean) | `exists_eventual_radius_spec`, `exists_eventual_response_bound`, `exists_eventual_coefficient_scaled_decay`. |
-
-The higher-derivative and Littlewood strategy is classical. No historical
-novelty, optimized published coefficient or numerical threshold is
-claimed. Stronger explicit published regions remain in the
-[literature survey](zero-free-region-transport.md).
-
-The enlarged discs apply to the complete squarefree quotient. The
-separate signed ordinary-prime source at a hypothetical fixed right-half
-zero still needs its independent cofinal lower bound. The larger region
-does not establish that bound or exclude every point of the remaining
-interior strip. RH remains open.
+The higher-derivative and Littlewood strategy is classical. The
+[published-region survey](zero-free-region-transport.md) records external
+benchmarks. Reproducing a published analytic argument in Lean is a way
+to strengthen the inputs, not permission to assume its final region.
+All world-best comparisons must use explicit matching height ranges.
 
 ## Original schedule-slice validation
 

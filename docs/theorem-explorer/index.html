@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore the actual Lean dependency chain behind RiemannGaussian's zero-free region, grouped by mathematical family, with statements, source lines and proof audits.">
+  <meta name="color-scheme" content="dark">
+  <title>The zero-free region · RiemannGaussian proof explorer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23101923'/%3E%3Ctext x='10' y='29' fill='%2377dac3' font-size='30'%3Eζ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="release.js" defer></script>
+  <script src="data.js" defer></script>
+  <script src="graph-core.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <div><a class="eyebrow" href="https://github.com/dbsanfte/RiemannGaussian">RIEMANNGAUSSIAN <span>/ PROOF EXPLORER</span></a>
+      <h1>The mathematics behind the zero-free region</h1></div>
+    <div class="verification"><span id="lean-badge" class="badge">Loading Lean export…</span><a id="revision-link" href="audit.json">Local proof snapshot</a></div>
+  </header>
+  <section class="scope-bar" aria-label="Scope of the selected theorem"><p id="scope-text">Loading the exact theorem scope…</p><button id="scope-more" class="quiet">Scope &amp; audits ↗</button></section>
+  <nav class="toolbar" aria-label="Proof navigation">
+    <label class="endpoint-label">Endpoint <select id="endpoint" aria-label="Terminal theorem"></select></label>
+    <div class="search-box"><label class="sr-only" for="search">Search declarations in this proof</label><input id="search" type="search" autocomplete="off" placeholder="Search a theorem, family or module…" aria-controls="search-results" aria-expanded="false"><kbd>/</kbd><div id="search-results" hidden></div></div>
+    <button id="overview" title="Reset to the annotated overview">Overview</button>
+    <button id="all-steps" title="Show every authored project theorem in this proof">All theorem steps</button>
+    <button id="terminal" title="Center the terminal theorem">Find endpoint</button>
+    <button id="help-button" aria-label="How to use the explorer">?</button>
+  </nav>
+  <nav id="families" class="families" aria-label="Logical theorem families"></nav>
+  <main id="canvas" aria-label="Interactive theorem chain">
+    <svg id="graph" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Theorem dependency graph. Drag to pan, scroll or pinch to zoom. Select a theorem for details." tabindex="0">
+      <defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".65" fill="#304050"/></pattern><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10" fill="#7f93aa"/></marker></defs>
+      <rect width="100%" height="100%" fill="url(#dots)"/><g id="world"></g>
+    </svg>
+    <div class="canvas-hint">Earlier ingredients <span>→</span> terminal theorem <i>·</i> dashed arrows contain collapsed steps</div>
+    <div class="zoom-controls" aria-label="Zoom controls"><button id="zoom-out" aria-label="Zoom out">−</button><output id="zoom-value">100%</output><button id="zoom-in" aria-label="Zoom in">+</button><button id="fit">Fit all</button></div>
+    <svg id="minimap" viewBox="0 0 260 112" role="img" aria-label="Overview map; click to move around the proof"></svg>
+    <aside id="details" class="details" hidden aria-label="Theorem details"><button id="close-details" class="close" aria-label="Close theorem details">×</button><div id="detail-content"></div></aside>
+    <div id="tooltip" role="tooltip" hidden></div>
+    <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+  </main>
+  <footer><span id="counts">Loading proof dependencies…</span><span><a href="audit.json" target="_blank" rel="noopener">Axiom audit</a> · <a href="lean-graph.json.gz" download>Raw Lean graph</a> · <a href="metadata.json" target="_blank" rel="noopener">Family metadata</a></span></footer>
+  <dialog id="help"><button id="close-help" class="close" aria-label="Close help">×</button><p class="eyebrow">READING THE PROOF</p><h2>A chain you can inspect</h2>
+    <p>Drag the background to pan. Scroll, pinch or use + / − to zoom. <strong>Fit all</strong> shows the whole current view; the small map moves you around it.</p>
+    <p>Hover or focus a box for metadata. Select it for the complete Lean statement, exact source line, dependencies and audits. The ↗ on each box opens its source directly. Double-click a box, or use <strong>Expand dependencies</strong>, to reveal earlier steps.</p>
+    <p>Coloured zones group mathematical families. Select a family chip to reveal its authored theorem steps. Search also finds definitions and generated helpers in the full selected proof.</p>
+    <p>An arrow means the later declaration references the earlier one. A dashed arrow follows an actual path through collapsed declarations; select it to inspect or expand that path. This is a dependency graph, not a claim that a single theorem implies the next without its other hypotheses.</p>
+    <p>Project dependencies are followed to external Lean/mathlib declarations, which are boundary leaves. Their complete transitive axiom dependencies are still audited. The overview hides detail; the raw export preserves it.</p>
+    <p>Keyboard: <kbd>/</kbd> search, <kbd>F</kbd> fit, <kbd>+</kbd> / <kbd>−</kbd> zoom, arrow keys pan on the canvas, <kbd>Enter</kbd> inspect a focused box, <kbd>Esc</kbd> close panels.</p>
+    <p id="scope-note"></p><p><a id="metadata-guide" href="https://github.com/dbsanfte/RiemannGaussian/blob/main/docs/theorem-explorer.md">Metadata and reproduction guide ↗</a></p>
+  </dialog>
+  <noscript><div class="noscript">JavaScript is needed for interactive navigation. <a href="preview.svg">View the static preview</a> or <a href="audit.json">read the proof audit</a>.</div></noscript>
+</body>
+</html>

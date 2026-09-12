@@ -1,0 +1,9 @@
+{
+  "name": "RiemannGaussian · Lean and browser validation",
+  "build": {"dockerfile": "Dockerfile", "context": ".."},
+  "remoteUser": "vscode",
+  "init": true,
+  "runArgs": ["--shm-size=1g"],
+  "forwardPorts": [8000],
+  "customizations": {"vscode": {"extensions": ["leanprover.lean4"]}}
+}
