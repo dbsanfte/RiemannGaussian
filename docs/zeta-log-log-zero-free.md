@@ -3,7 +3,7 @@
 For every fixed coefficient
 
 ```text
-0 < A < 1/(140*log(2)),
+0 < A < pi/(140*log(2)),
 ```
 
 Lean now proves the following statement for actual nontrivial zeta zeros:
@@ -107,23 +107,22 @@ ratio one. Their height comparisons and corrections are discharged in
 
 ## The actual prime contradiction
 
-The full-radius prime budget is now
-
-provided by [ZetaFullRadiusPrimeBudget](../RiemannGaussian/ZetaFullRadiusPrimeBudget.lean).
+The signed angular prime budget is now provided by
+[ZetaAngularPrimeBudget](../RiemannGaussian/ZetaAngularPrimeBudget.lean).
 Its analytic input uses the entire radius `delta_k` and retains the exact
 selected correction `d/delta_k^2`, including its multiplicity.
 
 ```text
-B_k(x,t) = 1344*log(22)+(8*E_k(x,t)+2*E_k(x,2*t))/delta_k.
+B_k(x,t) = 1344*log(22)+(8*E_k(x,t)+2*E_k(x,2*t))/(pi*delta_k).
 ```
 
 The full moving-order limit is
 
 ```text
-u(t)*B_(k(t))(x(t),t) -> 10*C*b,
+u(t)*B_(k(t))(x(t),t) -> 10*C*b/pi,
 
 cost(t) = 14*u(t)*B_(k(t))(x(t),t)
-            +392*(u(t)/delta_(k(t)))^2 -> 140*C*b.
+            +392*(u(t)/delta_(k(t)))^2 -> 140*C*b/pi.
 ```
 
 The second term is the canonical radial correction; its decay is proved
@@ -135,10 +134,10 @@ reciprocal-distance source.
 An actual zero with `1-beta<=u(t)` forces `cost(t)>=1`, once the
 geometric conditions hold. Those conditions now hold eventually:
 `k(t)>=2`, `u(t)>0`, and `28*u(t)<delta_(k(t))`. For every
-`140*C*log(2)<1`, choose one fixed
+`140*C*log(2)<pi`, choose one fixed
 
 ```text
-log(2) < b < 1/(140*C).
+log(2) < b < pi/(140*C).
 ```
 
 The actual cost is eventually below one. This proves the contradiction
@@ -151,7 +150,7 @@ and [actual growing-order exclusion](../RiemannGaussian/ZetaLogLogExclusion.lean
 The smoothed logarithm satisfies `L(t)/log(t)->1`. For any `A<C`, the
 ordinary width `A*log(log(t))/log(t)` is eventually at most the smoothed
 width `C*ell(t)/L(t)`. Given `A` in the open coefficient range, choose
-`A<C<1/(140*log(2))`. This retains the whole stated range rather than
+`A<C<pi/(140*log(2))`. This retains the whole stated range rather than
 imposing a fixed fractional loss. Reflection gives the other strip edge.
 
 The ordinary width is positive and antitone for
@@ -188,7 +187,7 @@ norm(response(p,S,P,N,c))
 
 The signed first and doubled prime harmonics remain in the actual
 envelope on the selected disc. No uniform growing-prime-set bound is
-asserted. For fixed `0<=A<B<1/(140*log(2))`, sufficiently large `abs(y)`,
+asserted. For fixed `0<=A<B<pi/(140*log(2))`, sufficiently large `abs(y)`,
 and every fixed valid `S,P,p`,
 
 ```text
@@ -204,8 +203,9 @@ not a claim that every finite-order estimate improves.
 ## Entry points and remaining frontier
 
 The current coefficient range uses the
-[full strip-width radius and its complete signed endpoint limit](zeta-full-radius-zero-free.md).
-The sharp Carathéodory estimate remains part of that proof.
+[signed angular boundary estimate](zeta-signed-angular-zero-free.md).
+It uses the full strip-width radius, retaining upper growth on the left
+semicircle and the actual Euler reciprocal bound on the right.
 
 | Module | Principal results |
 | --- | --- |
@@ -246,4 +246,5 @@ paragraph at that checkpoint.
 
 Those counts record the original eight-module schedule slice. The
 subsequent sharp derivative improvement and revalidation of the complete
-chain are recorded in the [current full-radius slice](zeta-full-radius-zero-free.md).
+chain are recorded in the [full-radius slice](zeta-full-radius-zero-free.md) and the subsequent
+[signed angular slice](zeta-signed-angular-zero-free.md).

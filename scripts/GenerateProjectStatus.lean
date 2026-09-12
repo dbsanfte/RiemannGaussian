@@ -69,9 +69,9 @@ private def milestones : Array Milestone := #[
       ``RiemannGaussian.riemannXiUpperHyperbolicBoundaryHeatAction_eq_zero_iff_rh
   },
   {
-    label := "For every fixed 0<A<1/(140*log(2)), there is a finite coefficient-dependent T(A)>=2 such that actual zeta is nonzero on Re(s)>=1-A*log(log(abs(Im(s))))/log(abs(Im(s))) above T(A). Full-radius signed control bounds the actual residual by 2*E_k/delta_k, retaining possible zeros on the outer sphere and the exact selected radial correction. The derivative order grows as floor(log(log(abs(t)+2))/b), with b>log(2). All moving radius, Euler center and doubled-height costs are controlled on the same schedule; the full normalized budget tends to 140*C*b<1. Both zero-strip edges, complete height bands, and larger marked squarefree arithmetic discs are proved. Thresholds are unevaluated. The independent signed ordinary-prime bound and RH remain open; no optimized published constant or numerical threshold is claimed"
+    label := "For every fixed 0<A<pi/(140*log(2)), there is a finite coefficient-dependent T(A)>=2 such that actual zeta is nonzero on Re(s)>=1-A*log(log(abs(Im(s))))/log(abs(Im(s))) above T(A). The exact complex boundary moment retains upper growth on the left semicircle and the actual Euler reciprocal lower bound on the right. Signed angular control gives 2*E_k/(pi*delta_k), retaining possible zeros on the outer sphere and the exact selected radial correction. The derivative order grows as floor(log(log(abs(t)+2))/b), with b>log(2). All moving radius, Euler center and doubled-height costs are controlled on the same schedule; the full normalized budget tends to 140*C*b/pi<1. Both zero-strip edges, complete height bands, and larger marked squarefree arithmetic discs are proved. Thresholds are unevaluated. The independent signed ordinary-prime bound and RH remain open; no optimized published constant or numerical threshold is claimed"
     lineOne := "zero-free: log-log"
-    lineTwo := "0<A<1/(140log2)"
+    lineTwo := "0<A<pi/(140log2)"
     role := "unconditional"
     theoremName :=
       ``RiemannGaussian.ZetaLogLogZeroFree.exists_eventual_nonvanishing
@@ -545,9 +545,61 @@ private def zetaSechLogarithmicToolkit : Json :=
     ])
   ]
 
+private def signedAngularZeroFreeToolkit : Json :=
+  Json.mkObj [
+    ("role", .str "Exact complex boundary moment and opposite semicircle estimates improve the actual zero-free region to every fixed 0<A<pi/(140*log(2))"),
+    ("fullComplexIdentityTheorem", .str "RiemannGaussian.AnalyticDiscBoundaryMoment.logDeriv_eq_moment_add_divisor"),
+    ("signedProjectionTheorem", .str "RiemannGaussian.AnalyticDiscBoundaryMoment.neg_moment_re"),
+    ("generalSignedIntegralTheorem", .str "RiemannGaussian.SignedCircleProjection.signed_average_le"),
+    ("generalBoundTheorem", .str "RiemannGaussian.AnalyticDiscSignedBoundary.neg_moment_re_le"),
+    ("actualEulerArcTheorem", .str "RiemannGaussian.ZetaNearOneAngularBound.right_arc_lower"),
+    ("actualComplexIdentityTheorem", .str "RiemannGaussian.ZetaNearOneAngularBound.logDeriv_eq_boundary_moment_add_sum"),
+    ("actualSourceTheorem", .str "RiemannGaussian.ZetaNearOneAngularBound.neg_logDeriv_re_le_sub_zero"),
+    ("actualPrimeTheorem", .str "RiemannGaussian.ZetaAngularPrimeBudget.source_le_budget"),
+    ("pointwiseContradictionTheorem", .str "RiemannGaussian.ZetaAngularPrimeBudget.one_le_cost_of_zero_near"),
+    ("actualZeroFreeTheorem", .str "RiemannGaussian.ZetaLogLogZeroFree.exists_eventual_strip"),
+    ("arithmeticTransportTheorem", .str "RiemannGaussian.SquarefreeLogLog.exists_eventual_response_bound"),
+    ("complexIdentity", .str "M_R(f)=avg_R(2*z/z^2*log(norm(f(z)))); logDeriv(f,0)=M_R(f)+sum_a divisor(f,ball(0,R),a)*(-1/a+conj(a)/R^2). The whole complex identity is proved before taking a signed real projection"),
+    ("signedBoundary", .str "Re(-M_R(f))=(2/R^2)*avg_R(-Re(z)*log(norm(f(z)))). Exact positive and negative projection masses are R/pi. Upper log norm B on the left and negative log norm C on the right imply Re(-M_R(f))<=2*(B+C)/(pi*R). This is a signed projection bound, not a norm bound"),
+    ("actualBounds", .str "For k>=2, abs(t)>=2 and 0<x<=delta_k/4, the Gaussian bound controls the left arc by profile_k(t)+14. Every right-pointing displacement is on the Euler side; the complete Mobius L-series proves -log(norm(zeta(c+z)))<=log(1+1/x). Both inputs are unconditional actual-zeta theorems"),
+    ("signedSource", .str "With d=x+1-beta<delta_k, Re(-logDeriv(zeta,c))<=2*E_k/(pi*delta_k)-m_rho*(1/d-d/delta_k^2). The approaching zero-free circles allow outer-sphere zeros. Every actual multiplicity and radial correction is retained"),
+    ("primeBudget", .str "B_k(x,t)=1344*log(22)+(8*E_k(x,t)+2*E_k(x,2*t))/(pi*delta_k). The complete source inequality is 4*m_rho*(1/d-d/delta_k^2)<=3/x+B_k. At x=6*u, an actual zero in margin u with 28*u<delta_k forces 14*u*B_k+392*(u/delta_k)^2>=1"),
+    ("jointLimit", .str "On the actual joint order-height schedule k=floor(log(log(abs(t)+2))/b), u=C*log(log(abs(t)+2))/log(abs(t)+2), b>log(2), u*B_k->10*C*b/pi and the complete cost tends to 140*C*b/pi. For 140*C*log(2)<pi choose log(2)<b<pi/(140*C), giving the genuine contradiction"),
+    ("region", .str "For every fixed 0<A<pi/(140*log(2)), above a finite coefficient-dependent T(A)>=2, actual nontrivial zeros satisfy A*log(log(abs(t)))/log(abs(t))<beta<1-A*log(log(abs(t)))/log(abs(t)). Both edges, literal closed-right-edge nonvanishing, complete height bands and all existing marked squarefree transports are proved"),
+    ("nextProofTarget", .str "Extend the signed angular prime budget to general nonnegative trigonometric families, retaining the selected source and all height costs. For stronger asymptotic shapes, prove additional near-one growth estimates; for a world-best comparison, establish matching proved height ranges"),
+    ("limitations", .str "The threshold remains existential and unevaluated. No optimal coefficient, world-best region or historical novelty for the Herglotz--Poisson mechanism is claimed. A general phase-family extension of this angular budget is not yet proved. The independent cofinal fixed-gap ordinary-prime bound, growing-set phase envelope and RH remain open"),
+    ("documentation", .str "docs/zeta-signed-angular-zero-free.md"),
+    ("newPublicTheorems", .arr #[
+      .str "RiemannGaussian.AnalyticDiscBoundaryMoment.circleIntegrable_log_norm",
+      .str "RiemannGaussian.AnalyticDiscBoundaryMoment.extension_re",
+      .str "RiemannGaussian.AnalyticDiscBoundaryMoment.logDeriv_eq_moment",
+      .str "RiemannGaussian.AnalyticDiscBoundaryMoment.moment_re",
+      .str "RiemannGaussian.AnalyticDiscBoundaryMoment.neg_moment_re",
+      .str "RiemannGaussian.AnalyticDiscBoundaryMoment.logDeriv_eq_moment_add_divisor",
+      .str "RiemannGaussian.SignedCircleProjection.integral_positive_sine",
+      .str "RiemannGaussian.SignedCircleProjection.average_positive_re",
+      .str "RiemannGaussian.SignedCircleProjection.average_re",
+      .str "RiemannGaussian.SignedCircleProjection.average_negative_re",
+      .str "RiemannGaussian.SignedCircleProjection.signed_average_le",
+      .str "RiemannGaussian.AnalyticDiscSignedBoundary.neg_moment_re_le",
+      .str "RiemannGaussian.AnalyticDiscSignedBoundary.neg_logDeriv_re_add_divisor_le",
+      .str "RiemannGaussian.ZetaNearOneAngularBound.right_arc_lower",
+      .str "RiemannGaussian.ZetaNearOneAngularBound.logDeriv_eq_boundary_moment_add_sum",
+      .str "RiemannGaussian.ZetaNearOneAngularBound.boundary_moment_le",
+      .str "RiemannGaussian.ZetaNearOneAngularBound.neg_logDeriv_re_le_at_radius",
+      .str "RiemannGaussian.ZetaNearOneAngularBound.neg_logDeriv_re_le_sub_zero_at_radius",
+      .str "RiemannGaussian.ZetaNearOneAngularBound.neg_logDeriv_re_le",
+      .str "RiemannGaussian.ZetaNearOneAngularBound.neg_logDeriv_re_le_sub_zero",
+      .str "RiemannGaussian.ZetaAngularPrimeBudget.source_le_budget",
+      .str "RiemannGaussian.ZetaAngularPrimeBudget.one_le_cost_of_zero_near",
+      .str "RiemannGaussian.ZetaAngularPrimeBudget.budget_abs",
+      .str "RiemannGaussian.ZetaAngularPrimeBudget.cost_abs"
+    ])
+  ]
+
 private def fullRadiusZeroFreeToolkit : Json :=
   Json.mkObj [
-    ("role", .str "The actual zeta detector uses the entire strip-width radius without assuming its outer boundary is zero-free"),
+    ("role", .str "Historical full-radius slice at 326a5baf99df3934aff007c92ab0acbd003c6545; the detector uses the entire strip-width radius without assuming its outer boundary is zero-free"),
     ("boundarySequenceTheorem", .str "RiemannGaussian.AnalyticDiscBoundarySequence.exists_sphere_tendsto"),
     ("generalCanonicalTheorem", .str "RiemannGaussian.AnalyticDiscCanonicalControl.exists_controlled_decomp"),
     ("actualFullDiscTheorem", .str "RiemannGaussian.ZetaNearOneFullDisc.analyticOnNhd_translated"),
@@ -559,9 +611,9 @@ private def fullRadiusZeroFreeToolkit : Json :=
     ("geometry", .str "For k>=2, delta_k<=2/7. Every center x with 0<x<=delta_k/4 has its entire radius-delta_k disc in the proved Gaussian strip. A complete finite divisor gives positive zero-free radii r_n<delta_k tending to delta_k, whether or not the outer sphere contains zeros"),
     ("signedEndpoint", .str "For every selected actual zero with d=x+1-beta<delta_k, Re(-logDeriv(zeta,c))<=2*E_k/delta_k-m_rho*(1/d-d/delta_k^2). The complete complex canonical identity is retained on each approximating circle; the source multiplicity and radial correction pass together to the endpoint"),
     ("primeBudget", .str "B_k(x,t)=1344*log(22)+(8*E_k(x,t)+2*E_k(x,2*t))/delta_k. Actual three-height prime positivity gives 4*m_rho*(1/d-d/delta_k^2)<=3/x+B_k. At x=6*u, an actual zero in margin u with 28*u<delta_k forces 14*u*B_k+392*(u/delta_k)^2>=1"),
-    ("jointLimit", .str "Along k=floor(log(log(abs(t)+2))/b), u=C*log(log(abs(t)+2))/log(abs(t)+2), b>log(2), the whole budget satisfies u*B_k->10*C*b and its normalized contradiction cost tends to 140*C*b. The condition k>=2 holds eventually on the same schedule"),
-    ("region", .str "For every fixed 0<A<1/(140*log(2)), actual nontrivial zeros eventually satisfy A*log(log(abs(t)))/log(abs(t))<beta<1-A*log(log(abs(t)))/log(abs(t)). Each coefficient has a finite existential unevaluated threshold. Complete bands and marked squarefree arithmetic transport use the same larger range"),
-    ("nextProofTarget", .str "Retain the angular boundary growth profile beyond the uniform maximum, or prove stronger near-one growth using additional exponential-sum machinery. Neither a wider squarefree disc nor known subexponential prime-number-theorem errors alone gives the independent signed ordinary-prime lower bound"),
+    ("historicalJointLimit", .str "Along k=floor(log(log(abs(t)+2))/b), u=C*log(log(abs(t)+2))/log(abs(t)+2), b>log(2), the whole budget satisfies u*B_k->10*C*b and its normalized contradiction cost tends to 140*C*b. The condition k>=2 holds eventually on the same schedule"),
+    ("historicalRegion", .str "For every fixed 0<A<1/(140*log(2)), actual nontrivial zeros eventually satisfy A*log(log(abs(t)))/log(abs(t))<beta<1-A*log(log(abs(t)))/log(abs(t)). Each coefficient has a finite existential unevaluated threshold. Complete bands and marked squarefree arithmetic transport use the same larger range"),
+    ("subsequentImprovement", .str "The signedAngularZeroFreeToolkit recovers the exact complex boundary moment and uses opposite semicircle bounds, improving the analytic allowance to 2*E_k/(pi*delta_k). The complete current cost tends to 140*C*b/pi. The independent signed ordinary-prime lower bound remains open"),
     ("limitations", .str "No optimum coefficient, numerical starting height, historically novel zero-free region or RH proof is claimed. The full chosen radius is delta_k; the result does not assert it is the largest possible analytic disc. The independent signed ordinary-prime lower bound and growing-set phase envelope remain open"),
     ("documentation", .str "docs/zeta-full-radius-zero-free.md"),
     ("newPublicTheorems", .arr #[
@@ -594,7 +646,7 @@ private def caratheodoryZeroFreeToolkit : Json :=
     ("arithmeticTransportTheorem", .str "RiemannGaussian.SquarefreeLogLog.exists_eventual_response_bound"),
     ("retainedInformation", .str "Schwarz is applied directly to f/(2*M-f) at the center. The entire complex derivative survives; complete signed zero poles remain coupled to their canonical corrections and actual multiplicities"),
     ("generalBound", .str "For M,R>0, holomorphic f on the open radius-R disc, f(0)=0 and Re(f)<=M, norm(f'(0))<=2*M/R. A nonvanishing analytic g with norm(g)<=exp(B) and -log(norm(g(0)))<=C therefore satisfies norm(logDeriv(g,0))<=2*(B+C)/R when B+C>0"),
-    ("actualCost", .str "The sharp center estimate is used by the subsequent full-radius toolkit, which bounds the actual residual by 2*E_k/delta_k and gives limiting cost 140*C*b. The earlier intermediate-radius canonical estimate remains available as its own weaker theorem"),
+    ("actualCost", .str "The sharp center estimate is used by the historical full-radius toolkit. The later signed angular toolkit retains the exact boundary moment, giving 2*E_k/(pi*delta_k) and limiting cost 140*C*b/pi. Both earlier norm estimates remain available as separate theorems"),
     ("nextAnalyticTarget", .str "Bellotti's published Vinogradov--Korobov proof uses a near-one zeta growth exponent proportional to (1-sigma)^(3/2). Its uniform exponential-sum and Vinogradov mean-value input is not proved by the repository's present derivative recursion. The external region is a research restriction pending its own complete Lean proof"),
     ("limitations", .str "This is a classical analytic estimate and a concrete improvement to this repository's theorem, not a novel zero-free region in the literature. Neither an optimized published constant nor a numerical threshold is reproduced. The independent signed ordinary-prime bound and RH remain open"),
     ("documentation", .str "docs/zeta-caratheodory-zero-free.md"),
@@ -606,7 +658,7 @@ private def caratheodoryZeroFreeToolkit : Json :=
 
 private def zetaLogLogZeroFreeToolkit : Json :=
   Json.mkObj [
-    ("role", .str "Unconditional actual zero-free width A*log(log(abs(t)))/log(abs(t)) for every fixed 0<A<1/(140*log(2)), with the entire moving-order, center, radius and actual prime budget discharged"),
+    ("role", .str "Unconditional actual zero-free width A*log(log(abs(t)))/log(abs(t)) for every fixed 0<A<pi/(140*log(2)), with the entire moving-order, center, radius and actual prime budget discharged"),
     ("unconditionalBothEdgesTheorem", .str "RiemannGaussian.ZetaLogLogZeroFree.exists_eventual_strip"),
     ("literalNonvanishingTheorem", .str "RiemannGaussian.ZetaLogLogZeroFree.exists_eventual_nonvanishing"),
     ("completeBandTheorem", .str "RiemannGaussian.ZetaLogLogZeroFree.exists_eventual_common_margin"),
@@ -627,12 +679,12 @@ private def zetaLogLogZeroFreeToolkit : Json :=
     ("fullWidthPowerSaving", .str "For every b>log(2), p=log(2)/b<1 and 1/delta_(k(t))<=4*L(t)^p. Every fixed natural n has ell(t)^n/(L(t)*delta_(k(t)))->0. The original leading ratio ell(t)/(k(t)+2)->b includes the natural floor and order offset"),
     ("exactCorrection", .str "E_k(x,v)=alpha_k*L(v)+R_k(x,v), where R_k=log(32768/delta_k)+14+log(L(v))+log(1+1/x). The full actual Euler center logarithm satisfies log(1+1/x(t))<=log(1+1/(6*C))+ell(t), and log(32768/delta_(k(t)))<=log(131072)+p*ell(t)"),
     ("generalEvaluationDecay", .str "For every fixed D>0 and evaluation v(t) with eventually log(L(v(t)))>=0 and L(v(t))<=D*L(t), the complete normalized correction u(t)*R_(k(t))(x(t),v(t))/delta_(k(t))->0. If L(v(t))/L(t)->q, then u(t)*E_(k(t))(x(t),v(t))/delta_(k(t))->C*b*q. The actual first and doubled ordinates both have q=1"),
-    ("actualPrimeLimit", .str "B_k(x,t)=1344*log(22)+(8*E_k(x,t)+2*E_k(x,2*t))/delta_k. The whole actual budget satisfies u(t)*B_(k(t))(x(t),t)->10*C*b. The full-radius contradiction cost 14*u(t)*B_(k(t))(x(t),t)+392*(u(t)/delta_(k(t)))^2 tends to 140*C*b"),
-    ("actualContradiction", .str "An actual zero with 1-Re(rho)<=u(Im(rho)) forces the full-radius cost to be at least one. Along the joint schedule k>=2, u>0 and 28*u<delta all hold eventually. For every 140*C*log(2)<1 choose log(2)<b<1/(140*C), making the complete cost eventually below one. All analytic multiplicity, prime and geometric conditions are discharged"),
-    ("ordinaryCoefficientRange", .str "For every fixed 0<A<1/(140*log(2)), choose A<C<1/(140*log(2)). The smoothed logarithmic ratio tends to one, so the ordinary width for A is eventually bounded by the smoothed width for C. This preserves the full open coefficient range, without a fixed fractional loss. The coefficient limit is not claimed optimal"),
+    ("actualPrimeLimit", .str "B_k(x,t)=1344*log(22)+(8*E_k(x,t)+2*E_k(x,2*t))/(pi*delta_k). The whole actual budget satisfies u(t)*B_(k(t))(x(t),t)->10*C*b/pi. The signed angular contradiction cost 14*u(t)*B_(k(t))(x(t),t)+392*(u(t)/delta_(k(t)))^2 tends to 140*C*b/pi"),
+    ("actualContradiction", .str "An actual zero with 1-Re(rho)<=u(Im(rho)) forces the signed angular cost to be at least one. Along the joint schedule k>=2, u>0 and 28*u<delta all hold eventually. For every 140*C*log(2)<pi choose log(2)<b<pi/(140*C), making the complete cost eventually below one. All analytic multiplicity, prime and geometric conditions are discharged"),
+    ("ordinaryCoefficientRange", .str "For every fixed 0<A<pi/(140*log(2)), choose A<C<pi/(140*log(2)). The smoothed logarithmic ratio tends to one, so the ordinary width for A is eventually bounded by the smoothed width for C. This preserves the full open coefficient range, without a fixed fractional loss. The coefficient limit is not claimed optimal"),
     ("completeBand", .str "The width w_A(H)=A*log(log(H))/log(H) is positive and antitone for H>=exp(exp(1)) and tends to zero. Its actual eventual zero theorem therefore gives the same width for every zero below H at sufficiently large H, including the complete low divisor. The elementary monotonicity height is not the zero-exclusion threshold"),
     ("actualRadius", .str "For every eligible coefficient and sufficiently large abs(y), the actual quotient zeta(s)/zeta(2*s) is analytic on a neighborhood of the full closed disc of radius R_A(y)=1+A*log(log(2*abs(y)+3))/(2*log(2*abs(y)+3)) about 3/2+i*y. Both poles and all doubled-denominator zeros are excluded first"),
-    ("arithmeticGain", .str "Every finite excluded prime set, valid squarefree mark, complex polynomial and moment order receives the genuine Cauchy bound with its signed two-harmonic envelope retained. For every fixed 0<=A<B<1/(140*log(2)) and fixed valid marks, at sufficiently large abs(y), R_A(y)<R_B(y) and the full marked response times R_A(y)^N tends to zero"),
+    ("arithmeticGain", .str "Every finite excluded prime set, valid squarefree mark, complex polynomial and moment order receives the genuine Cauchy bound with its signed two-harmonic envelope retained. For every fixed 0<=A<B<pi/(140*log(2)) and fixed valid marks, at sufficiently large abs(y), R_A(y)<R_B(y) and the full marked response times R_A(y)^N tends to zero"),
     ("nextProofTarget", .str "Use the larger proved bands and arithmetic discs while retaining the growing-set prime-phase envelope and the separate ordinary-prime source. Seek an independent signed estimate or a richer identity for that source. Stronger published Vinogradov--Korobov bounds remain a possible source of tools and narrower edge domains"),
     ("literature", .str "The higher-derivative and Littlewood strategy is classical; see Yang, JMAA 2024, https://arxiv.org/html/2301.03165v2. The repository uses its own complete eta, Gaussian and canonical-factor chain with coarse constants. No optimized published coefficient, finite starting height or external zero-free axiom is claimed"),
     ("limitations", .str "Each coefficient has an existential unevaluated threshold. The displayed coefficient range is a proved sufficient range, not an optimum. The full squarefree quotient differs from the separate ordinary-prime source; stronger fixed-mark decay does not give a uniform growing-prime-set envelope or the independent cofinal signed lower bound. RH remains open; no historical novelty claim"),
@@ -1805,6 +1857,7 @@ run_cmd do
         .str "RiemannGaussian.GaussianFermiModulatedZeroFree.exists_eventual_nonvanishing"
       ])
     ]),
+    ("signedAngularZeroFreeToolkit", signedAngularZeroFreeToolkit),
     ("fullRadiusZeroFreeToolkit", fullRadiusZeroFreeToolkit),
     ("caratheodoryZeroFreeToolkit", caratheodoryZeroFreeToolkit),
     ("zetaLogLogZeroFreeToolkit", zetaLogLogZeroFreeToolkit),
@@ -2078,9 +2131,9 @@ run_cmd do
       ("actualStrongerDecayTheorem", .str "RiemannGaussian.SquarefreeLogLog.exists_eventual_coefficient_scaled_decay"),
       ("generalWidth", .str "Every w positive and antitone beyond T, tending to zero, with a proved eventual zero-location theorem, gives the same width w(H) for every zero below H at sufficiently large H. The old positive global margin pays for every zero below T. No a/log(t) shape restriction. Two proved common margins combine by max"),
       ("boundaryConvention", .str "Strict zero-location bounds yield analyticity on the full closed Cauchy disc. Non-strict zero-location bounds from an open zero-free region yield every strictly smaller closed disc. The endpoint is not silently included, and there is no fixed fractional loss in width"),
-      ("actualRadius", .str "For H=2*abs(y)+3 and complete margin 0<m<1/4, R(y,m)=1+min((abs(y)-1)/2,m/2). The actual quotient zeta(s)/zeta(2*s) is analytic on the entire closed disc about 3/2+i*y, with both poles and every doubled-denominator zero excluded. Every fixed 0<A<1/(140*log(2)) now gives R_A=1+A*log(log(H))/(2*log(H)) at sufficiently large abs(y), with a threshold depending on A"),
+      ("actualRadius", .str "For H=2*abs(y)+3 and complete margin 0<m<1/4, R(y,m)=1+min((abs(y)-1)/2,m/2). The actual quotient zeta(s)/zeta(2*s) is analytic on the entire closed disc about 3/2+i*y, with both poles and every doubled-denominator zero excluded. Every fixed 0<A<pi/(140*log(2)) now gives R_A=1+A*log(log(H))/(2*log(H)) at sufficiently large abs(y), with a threshold depending on A"),
       ("retainedArithmeticCost", .str "A single C(y)>0 bounds every valid response by C(y)*A(S,c,r)*r^(-N)*sum norm(p_k)*r^(-k), all 0<r<=R_new, all finite excluded prime sets S, squarefree marks P, complex polynomials p and orders N. A is the actual maximum of exp(-Re(Phi_2)) on that radius, retaining the first and doubled prime harmonics. No uniform bound on A for growing S is asserted"),
-      ("concreteDecayGain", .str "For every fixed 0<=A<B<1/(140*log(2)) and every fixed valid S,P,p, sufficiently large abs(y) gives the genuine log-log radii R_A(y)<R_B(y), and the actual complex response times R_A(y)^N tends to zero. Thresholds depend on the coefficients. Constants and the full phase maximum may increase with radius, so not every finite-order upper bound is claimed improved"),
+      ("concreteDecayGain", .str "For every fixed 0<=A<B<pi/(140*log(2)) and every fixed valid S,P,p, sufficiently large abs(y) gives the genuine log-log radii R_A(y)<R_B(y), and the actual complex response times R_A(y)^N tends to zero. Thresholds depend on the coefficients. Constants and the full phase maximum may increase with radius, so not every finite-order upper bound is claimed improved"),
       ("externalTargets", .str "A specified Littlewood log-log shape is now proved in zetaLogLogZeroFreeToolkit, with coarse coefficient range and existential thresholds. Published optimized Littlewood constants, finite starting heights, stronger Vinogradov--Korobov shapes and finite-height interval-arithmetic verification await their own checked formal counterparts. None is imported as an axiom. The growing-order estimates and complete actual prime budget are proved; the separate signed ordinary-prime bound remains open. See docs/zero-free-region-transport.md for literature scopes"),
       ("limitations", .str "Every eligible coefficient has an existential unevaluated height threshold. Old global margins and radii keep their definitions and theorems. The complete squarefree response is not the separate ordinary-prime source; its stronger decay does not supply the independent signed lower bound. No optimized published coefficient, numerical threshold, RH proof or historical novelty claim"),
       ("documentation", .str "docs/zero-free-region-transport.md"),
@@ -2309,7 +2362,7 @@ run_cmd do
       ("enlargedStripCost", .str "For a,B>0,delta>=0,delta^2<=B and -delta<=x<=a+delta: integral(abs(f''))<=exp(1/2)*(4*B*sqrt(pi/(B/2))+2*a). For a,B<=1 this is at most C_F=exp(1/2)*(8*sqrt(pi)+2), with no inverse-width factor"),
       ("actualDivisorBound", .str "For H>=1,0<B<=1,1/2<sigma<=1,(1-sigma)^2<=B and 2*abs(t)<=H, abs(sum_(abs(Im(rho))>H) contribution(B,sigma,t,rho))<=E_F(H)=4*C_F*divisorTail(H)<=K/sqrt(H). Every actual zero and analytic multiplicity is included. K>0 is existential and independent of B,sigma,t,H; no outside-zero location assumption is made"),
       ("generalBudget", .str "For any 0<=m<=1/4 enclosing every actual zero through H, positive split B=b+c<=1 with m^2<=B, every finite family w_j>=0 and 2*abs(omega_j*t)<=H, and every selected finite actual zero set S in the band: selectedZeroSource+sum_j w_j*primeSum(1-2*m,B,omega_j*t)<=exactPoleGammaCost+(sum_j w_j)*E_F(H). No nonnegative-cosine-test assumption or comparison to an older margin is required. The proved global Fermi margin discharges the actual band conditions"),
-      ("limitations", .str "This removes the logarithmic loss from the previous uniform K_old*log(H+2)/sqrt(H) outside allowance. It does not prove a favorable lower bound for the retained signed prime expression or the complex moment-filtered costs. The latest eventual zero-free family has width A*log(log(abs(t)))/log(abs(t)) for 0<A<1/(140*log(2)), with coefficient-dependent unevaluated thresholds; RH remains open. No historical novelty claim for the Fisher-information identity")
+      ("limitations", .str "This removes the logarithmic loss from the previous uniform K_old*log(H+2)/sqrt(H) outside allowance. It does not prove a favorable lower bound for the retained signed prime expression or the complex moment-filtered costs. The latest eventual zero-free family has width A*log(log(abs(t)))/log(abs(t)) for 0<A<pi/(140*log(2)), with coefficient-dependent unevaluated thresholds; RH remains open. No historical novelty claim for the Fisher-information identity")
     ]),
     ("fermiConstantModeCancellation", Json.mkObj [
       ("role", .str "Uniform control of the actual constant-frequency prime/pole residual while retaining the remaining signed arithmetic combination; no new zero exclusion"),
@@ -2372,7 +2425,7 @@ run_cmd do
       ("regulatorLimit", .str "For every fixed moment order, polynomial, cutoff and sieve, nonnegative Gaussian width tending to zero recovers the original Fermi moment by summable domination. The corresponding full spectral averages tend to twice that moment. No interchange with the separate growing-order source limit or uniform growing-order signed bound is asserted"),
       ("uniformRate", .str "For any 0<u<1 and fixed complex p, set q=(1+u)/2 and C=u*sum_k norm(p_k)*q^(-k)*Re(-zeta'/zeta(2-q)). For every N,D>=1,finite prime S and a>=1/2, the norm of u^(N+1)*(P-F) at 3/2+i*y is at most C*(2*u/(1+u))^N. The ratio is strictly below one. The constant is independent of a,D,S and y"),
       ("actualSourceTransport", .str "Use the unchanged u=3/2-Re(rho), zero-isolating polynomial, actual quadratic prime sieve and sampling ordinate. The comparison tends to zero for every moving cutoff eventually at least one, with no upper cutoff restriction, and every moving Fermi parameter eventually at least 1/2. In particular a_N=1-2*m_F(H_N) works for every height schedule. On the original squared cutoff schedule, the Fermi-weighted normalized tail therefore has the same hypothetical limit -multiplicity(rho) as the original prime tail"),
-      ("limitations", .str "Only the weighting corrections are bounded. The Gaussian sum includes prime powers; the original moment remains an ordinary-prime sum. Gaussian positivity is not transported through the complex polynomial, factorial orders or moving prime support by these estimates. The surviving moment still needs an independent cofinal fixed-gap lower bound above -1. The unweighted original carrier is retained. No new zero exclusion, RH theorem or historical novelty claim; the eventual zero-free family now has width A*log(log(abs(t)))/log(abs(t)) for 0<A<1/(140*log(2)), with coefficient-dependent unevaluated thresholds")
+      ("limitations", .str "Only the weighting corrections are bounded. The Gaussian sum includes prime powers; the original moment remains an ordinary-prime sum. Gaussian positivity is not transported through the complex polynomial, factorial orders or moving prime support by these estimates. The surviving moment still needs an independent cofinal fixed-gap lower bound above -1. The unweighted original carrier is retained. No new zero exclusion, RH theorem or historical novelty claim; the eventual zero-free family now has width A*log(log(abs(t)))/log(abs(t)) for 0<A<pi/(140*log(2)), with coefficient-dependent unevaluated thresholds")
     ]),
     ("primeAdmissibleHeatSource", Json.mkObj [
       ("role", .str "Independent comparison with admissible moving Gaussian families and transport of the original hypothetical source; no new zero exclusion"),
@@ -2392,7 +2445,7 @@ run_cmd do
       ("uniformComparison", .str "For u=3/2-Re(rho) in (1/2,1), one C>=0 gives norm(P_N-G_N(H_N))<=C*(2*u/(1+u))^N+1/(N+1), for every cutoff family D and height family H whenever D_N>=1 and H_N>=T(N,D_N). This error is independently proved, with no upper cutoff bound or use of the hypothetical source limit"),
       ("source", .str "Every moving height family eventually above the proved floors has P_N-G_N(H_N)->0 and vanishing standard whole-zero allowance. On the original squared cutoff schedule, the existing hypothetical source P_N->-multiplicity(rho) therefore implies G_N(H_N)->-multiplicity(rho)"),
       ("spectralAverage", .str "The canonical response equals u^(N+1)/2 times the full integral of the actual positive unit-mass density at (1-2*m,m^2) against the original complex prime moment at 1+m+i*Im(rho)-i*y. The full sum-integral interchange remains proved"),
-      ("limitations", .str "No independent signed lower bound for the surviving prime response, no upper growth estimate on the height floors, and no estimate for pole, gamma or whole-zero costs after applying the complex moment filter. Positivity of the averaging density does not make the averaged complex moment nonnegative. The actual eventual zero-free family now has width A*log(log(abs(t)))/log(abs(t)) for 0<A<1/(140*log(2)), with coefficient-dependent unevaluated thresholds; the published 4.896 region is not formalized here, and RH remains open")
+      ("limitations", .str "No independent signed lower bound for the surviving prime response, no upper growth estimate on the height floors, and no estimate for pole, gamma or whole-zero costs after applying the complex moment filter. Positivity of the averaging density does not make the averaged complex moment nonnegative. The actual eventual zero-free family now has width A*log(log(abs(t)))/log(abs(t)) for 0<A<pi/(140*log(2)), with coefficient-dependent unevaluated thresholds; the published 4.896 region is not formalized here, and RH remains open")
     ]),
     ("roughDivisorIncidence", Json.mkObj [
       ("massTheorem", .str "RiemannGaussian.RoughDivisorIncidence.sum_lcmSqrtFactorMass_le"),

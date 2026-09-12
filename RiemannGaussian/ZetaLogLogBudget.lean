@@ -4,7 +4,7 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: David Sanftenberg
 -/
 import RiemannGaussian.ZetaLogLogCorrection
-import RiemannGaussian.ZetaFullRadiusPrimeBudget
+import RiemannGaussian.ZetaAngularPrimeBudget
 
 /-!
 # The complete prime budget at a growing derivative order
@@ -12,13 +12,13 @@ import RiemannGaussian.ZetaFullRadiusPrimeBudget
 The exact leading/correction split is evaluated along one joint height,
 order and center schedule. Both oscillatory heights and the real-axis
 cost are included. The entire normalized contradiction allowance tends
-to `140*C*b`; no fixed-order asymptotic is used at a moving order.
+to `140*C*b/pi`; no fixed-order asymptotic is used at a moving order.
 -/
 
 namespace RiemannGaussian.ZetaLogLogBudget
 noncomputable section
 open Filter ZetaLogLogScale ZetaLogLogCorrection ZetaNearOneBudgetLimit
-open ZetaFullRadiusPrimeBudget ZetaNearOneJensen ZetaNearOneLogProfile
+open ZetaAngularPrimeBudget ZetaNearOneJensen ZetaNearOneLogProfile
 open DerivativeOrderComparison DerivativePowerExponents
 open scoped Topology
 
@@ -72,7 +72,7 @@ theorem normalized_allowance_tendsto {b C D q : ℝ}
 allowance and doubled oscillatory height, has its joint-order limit. -/
 theorem width_mul_budget_tendsto {b C : ℝ} (hb : Real.log 2 < b) (hC : 0 < C) :
     Tendsto (fun t : ℝ ↦ width C t * budget (order b t) (6 * width C t) t)
-      atTop (𝓝 (10 * C * b)) := by
+      atTop (𝓝 (10 * C * b / Real.pi)) := by
   have hsame : ∀ᶠ t : ℝ in atTop, 0 ≤ level t ∧ scale t ≤ 1 * scale t := by
     filter_upwards [level_atTop.eventually (eventually_ge_atTop (0 : ℝ))] with t ht
     exact ⟨ht, by simp⟩
@@ -90,7 +90,7 @@ theorem width_mul_budget_tendsto {b C : ℝ} (hb : Real.log 2 < b) (hC : 0 < C) 
     (fun t ↦ 2 * t) hdouble scale_double_div
   simp only [mul_one] at h1 h2
   have h := ((width_tendsto_zero C).const_mul (1344 * localZetaLogHeight 0)).add
-    ((h1.const_mul 8).add (h2.const_mul 2))
+    (((h1.const_mul 8).add (h2.const_mul 2)).div_const Real.pi)
   simp only [mul_zero, zero_add] at h
   have he : 8 * (C * b) + 2 * (C * b) = 10 * C * b := by ring
   rw [he] at h
@@ -99,19 +99,19 @@ theorem width_mul_budget_tendsto {b C : ℝ} (hb : Real.log 2 < b) (hC : 0 < C) 
   unfold budget
   ring
 
-/-- The full-radius contradiction cost has an actual moving-order
+/-- The signed-angular contradiction cost has an actual moving-order
 limit. The canonical radial loss vanishes along the same schedule. -/
 theorem cost_tendsto {b C : ℝ} (hb : Real.log 2 < b) (hC : 0 < C) :
-    Tendsto (fun t : ℝ ↦ ZetaFullRadiusPrimeBudget.cost (order b t) (C * level t) t)
-      atTop (𝓝 (140 * C * b)) := by
+    Tendsto (fun t : ℝ ↦ ZetaAngularPrimeBudget.cost (order b t) (C * level t) t)
+      atTop (𝓝 (140 * C * b / Real.pi)) := by
   have h := ((width_mul_budget_tendsto hb hC).const_mul 14).add
     (((width_div_delta_tendsto hb C).pow 2).const_mul 392)
   simp only [zero_pow (by norm_num : (2 : ℕ) ≠ 0), mul_zero, add_zero] at h
-  have he : 14 * (10 * C * b) = 140 * C * b := by ring
+  have he : 14 * (10 * C * b / Real.pi) = 140 * C * b / Real.pi := by ring
   rw [he] at h
   convert h using 1
   funext t
-  unfold ZetaFullRadiusPrimeBudget.cost
+  unfold ZetaAngularPrimeBudget.cost
   rw [← width_eq_margin, shift_eq_six_width]
   ring
 

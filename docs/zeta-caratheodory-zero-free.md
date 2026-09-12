@@ -1,6 +1,6 @@
 # Sharp derivative control in the actual zero-free chain
 
-The subsequent [full-radius slice](zeta-full-radius-zero-free.md) gives the
+The subsequent [signed angular slice](zeta-signed-angular-zero-free.md) gives the
 current stronger region. This page records the sharp-center improvement
 and its original validation. The theorem at that stage was
 [`ZetaLogLogZeroFree.exists_eventual_strip`](../RiemannGaussian/ZetaLogLogZeroFree.lean#L62):

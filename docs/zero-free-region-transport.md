@@ -2,7 +2,7 @@
 
 The current proved zero-free family reaches the original marked
 squarefree arithmetic response. For every fixed
-`0<A<1/(140*log(2))`, an eventual width
+`0<A<pi/(140*log(2))`, an eventual width
 `A*log(log(abs(t)))/log(abs(t))` is now proved, with a coefficient-dependent,
 unevaluated height threshold. These modules provide the connection:
 
@@ -53,6 +53,10 @@ center derivative constant and the resulting proved coefficient range.
 The [full-radius slice](zeta-full-radius-zero-free.md) then passes the
 signed bound through zero-free circles approaching the whole strip width,
 retaining possible zeros on the outer boundary and the selected correction.
+The current [signed angular slice](zeta-signed-angular-zero-free.md)
+uses the exact complex boundary moment to retain upper growth on the left
+and the actual Euler lower bound on the right. This supplies the stated
+coefficient range without changing the selected source or radial correction.
 The next change of width shape needs stronger near-one zeta growth;
 the uniform exponential-sum and Vinogradov mean-value input in Bellotti's
 proof remains a substantive formalization target. We cannot obtain that
@@ -110,9 +114,11 @@ other actual local zero then contributes nonnegatively. The full prime
 budget divided by logarithmic height tends to `40/(k+2)` at fixed order.
 Choosing the order after a target coefficient gives the larger proved
 family. The downstream [joint-order proof](zeta-log-log-zero-free.md)
-now also controls every moving center and radius cost. Its full budget
-tends to `140*C*b` for order `floor(log(log(H))/b)`, giving the stated
-log-log region whenever `log(2)<b<1/(140*C)`.
+now also controls every moving center and radius cost. The
+[signed angular estimate](zeta-signed-angular-zero-free.md) retains the
+Euler lower bound on the right semicircle. Its full budget
+tends to `140*C*b/pi` for order `floor(log(log(H))/b)`, giving the stated
+log-log region whenever `log(2)<b<pi/(140*C)`.
 
 ## General width functions, complete bands, and boundaries
 
@@ -154,7 +160,7 @@ comes from the actual doubled argument of the denominator in
 including both pole exclusions and denominator nonvanishing, before
 applying Cauchy's estimate.
 
-For every fixed `0<A<1/(140*log(2))`, the current region supplies,
+For every fixed `0<A<pi/(140*log(2))`, the current region supplies,
 above its finite unevaluated threshold,
 
 ```text
@@ -187,7 +193,7 @@ inside the critical strip.
 
 `SquarefreeLogLog.exists_eventual_coefficient_scaled_decay` proves
 the strict gain in a directly measurable form: for every two fixed
-coefficients `0<=A<B<1/(140*log(2))`, at sufficiently large `abs(y)`, and every fixed
+coefficients `0<=A<B<pi/(140*log(2))`, at sufficiently large `abs(y)`, and every fixed
 valid `S,P,p`,
 
 ```text
@@ -268,7 +274,7 @@ The implemented chain and remaining next step are:
    logarithmic correction, the moving Euler center and both oscillatory
    heights are controlled on the same schedule. The actual complete
    budget gives width `A*log(log(abs(t)))/log(abs(t))` for
-   `0<A<1/(140*log(2))`, with coefficient-dependent existential thresholds.
+   `0<A<pi/(140*log(2))`, with coefficient-dependent existential thresholds.
    This now reaches the actual marked arithmetic discs. See the
    [proof and coefficient range](zeta-log-log-zero-free.md).
 6. **Remaining:** retain and control the growing-set signed prime
@@ -289,5 +295,5 @@ declaration lint and verbose lint of the new modules pass. All 20 new
 public theorems use only `propext`, `Classical.choice` and `Quot.sound`.
 The generated inventory contains 1,387 project modules, no project axioms
 and no placeholder-dependent declarations. These counts describe the
-original transport slice; the [full-radius proof](zeta-full-radius-zero-free.md)
+original transport slice; the [signed angular proof](zeta-signed-angular-zero-free.md)
 records the current chain and its validation.

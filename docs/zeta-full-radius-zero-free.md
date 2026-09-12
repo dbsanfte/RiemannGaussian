@@ -1,4 +1,9 @@
-# Full-radius signed control and the larger proved region
+# Full-radius signed control and its original zero-free region
+
+This records the full-radius slice at commit `326a5baf99df3934aff007c92ab0acbd003c6545`.
+The subsequent [signed angular theorem](zeta-signed-angular-zero-free.md)
+strengthens the coefficient range using opposite semicircle bounds.
+The constants below describe the earlier slice.
 
 For every fixed `0<A<1/(140*log(2))`, Lean proves an eventual exclusion
 width `A*log(log(abs(t)))/log(abs(t))` for actual nontrivial zeta zeros:
@@ -9,7 +14,7 @@ exists T(A)>=2, for every rho=beta+i*t with abs(t)>=T(A),
     < 1-A*log(log(abs(t)))/log(abs(t)).
 ```
 
-The terminal theorem is
+At that checkpoint the terminal theorem was
 [`ZetaLogLogZeroFree.exists_eventual_strip`](../RiemannGaussian/ZetaLogLogZeroFree.lean#L62).
 The corresponding literal closed-right-edge nonvanishing and complete
 bounded-height margins are proved in the same module. Each coefficient's
@@ -153,13 +158,13 @@ explains why a subexponential PNT-error estimate alone is insufficient at
 its factorial source normalization. The [published-region survey](zero-free-region-transport.md)
 records stronger growth tools worth formalizing.
 
-One remaining loss in the present local detector is replacing the angular
-boundary growth profile by its uniform maximum. Its exact complex
-canonical identity and signed boundary norm data remain available for
-examining that loss. This is a next proof target, not an additional
-estimate already established here.
+The angular boundary loss identified at this checkpoint is addressed by
+the subsequent [signed angular slice](zeta-signed-angular-zero-free.md).
+It recovers the whole complex boundary moment and combines left-side
+upper growth with the actual Euler lower bound on the right. The
+full-radius construction above remains the geometric input.
 
-## Validation
+## Validation at the full-radius checkpoint
 
 The warning-as-error full build passes all 10,268 jobs; the focused
 arithmetic build passes all 4,899 jobs. Nine affected modules pass strict

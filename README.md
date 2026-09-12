@@ -12,7 +12,7 @@ repository's verification gates count as established results.
 ## Zero-free region
 
 **Proved in Lean:** for every fixed coefficient
-**`0 < A < 1/(140*log(2))`**, there is a finite threshold `T(A) >= 2`
+**`0 < A < pi/(140*log(2))`**, there is a finite threshold `T(A) >= 2`
 such that every nontrivial zeta zero
 `rho = beta + i*t` with `abs(t) >= T(A)` satisfies
 
@@ -49,23 +49,25 @@ machine-readable companion is [docs/proof-status.json](docs/proof-status.json).
 
 ## Current Direction
 
-Apply the larger log-log margins to the surviving signed prime problem, preserving the phase envelope and all growing-set costs. The local detector now uses the full strip-width radius. Next examine the angular boundary growth information lost in its uniform maximum, alongside the stronger near-one estimates in published proofs. The complete arithmetic transport is proved; the independent signed ordinary-prime lower bound and RH remain open.
+Extend signed angular control to general nonnegative phase families, preserving every boundary channel and growing-set cost. Compare proved regions with published results at matching heights, then target stronger near-one growth and explicit thresholds. The semicircle estimate feeds the complete log-log region and squarefree transport; the independent signed ordinary-prime lower bound and RH remain open.
 
 ## Latest Update
 
-**Using the full strip-width radius enlarges the proved region again.**
-Zero-free circles now approach the entire analytic radius, even when the
-outer circle contains zeros. Passing the complete signed bound to this
-radius keeps the selected multiplicity and exact radial correction.
-The actual residual is bounded by `2*allowance/delta`; the full moving-order
-contradiction cost tends to `140*C*b`. This gives the coefficient range
-displayed above, with every geometric and arithmetic premise discharged.
+**Retaining the angular sign enlarges the proved zero-free region.**
+The full complex logarithmic derivative is recovered from its first
+boundary moment and complete local divisor. Its signed projection uses
+upper growth on the left semicircle and the actual Euler reciprocal bound
+on the right. The analytic allowance is `2*allowance/(pi*delta)`;
+the complete moving-order contradiction cost tends to `140*C*b/pi`.
+The selected multiplicity, exact radial correction and possible zeros on
+the outer circle are retained throughout the proof.
 
-[General boundary sequence](RiemannGaussian/AnalyticDiscBoundarySequence.lean),
-[signed full-radius bound](RiemannGaussian/ZetaNearOneFullRadius.lean),
-[actual prime budget](RiemannGaussian/ZetaFullRadiusPrimeBudget.lean),
+[Exact complex boundary identity](RiemannGaussian/AnalyticDiscBoundaryMoment.lean),
+[general signed estimate](RiemannGaussian/AnalyticDiscSignedBoundary.lean),
+[actual zeta bound](RiemannGaussian/ZetaNearOneAngularBound.lean),
+[actual prime budget](RiemannGaussian/ZetaAngularPrimeBudget.lean),
 [global exclusion](RiemannGaussian/ZetaLogLogZeroFree.lean),
-[proof and scope](docs/zeta-full-radius-zero-free.md).
+[proof and scope](docs/zeta-signed-angular-zero-free.md).
 The larger region also supplies complete divisor bands and
 [all marked squarefree response bounds](RiemannGaussian/ZetaSquarefreeLogLogRadius.lean),
 with the signed prime envelope retained. Thresholds remain unevaluated.
@@ -78,7 +80,8 @@ a compiled theorem; its source records the precise domains and hypotheses.
 
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
-| **Complete signed control at the strip-width radius** | Zero-free circles approach the full analytic radius despite possible outer-boundary zeros. Sharp canonical control retains the complex divisor identity on each circle; the scalar limit preserves multiplicity and the exact radial correction. The actual prime budget gives the region displayed above. | [general circles and limit](RiemannGaussian/AnalyticDiscBoundarySequence.lean), [canonical control](RiemannGaussian/AnalyticDiscCanonicalControl.lean), [actual full disc](RiemannGaussian/ZetaNearOneFullDisc.lean), [signed zeta bound](RiemannGaussian/ZetaNearOneFullRadius.lean), [prime budget](RiemannGaussian/ZetaFullRadiusPrimeBudget.lean) |
+| **Exact complex boundary moment and opposite semicircle bounds** | The first angular log-norm moment and complete canonical divisor recover the whole complex logarithmic derivative. Upper growth on the left and a lower logarithmic bound on the right give the signed allowance `2*(B+C)/(pi*R)`. Actual Euler and Gaussian estimates discharge both bounds and give the region displayed above. | [complex identity](RiemannGaussian/AnalyticDiscBoundaryMoment.lean), [exact semicircle masses](RiemannGaussian/SignedCircleProjection.lean), [general bound](RiemannGaussian/AnalyticDiscSignedBoundary.lean), [actual zeta bound](RiemannGaussian/ZetaNearOneAngularBound.lean), [prime budget](RiemannGaussian/ZetaAngularPrimeBudget.lean) |
+| **Complete signed control at the strip-width radius** | Zero-free circles approach the full analytic radius despite possible outer-boundary zeros. Sharp canonical control retains the complex divisor identity on each circle; the scalar limit preserves multiplicity and the exact radial correction. This supplies the radius geometry used by the angular bound. | [general circles and limit](RiemannGaussian/AnalyticDiscBoundarySequence.lean), [canonical control](RiemannGaussian/AnalyticDiscCanonicalControl.lean), [actual full disc](RiemannGaussian/ZetaNearOneFullDisc.lean) |
 | **Sharp one-sided analytic derivative control** | An arbitrary positive-radius disc and a bound on the real part suffice to control the full complex center derivative with the classical constant two. The normalized logarithm pays its actual center cost; the estimate strengthens the complete zeta exclusion chain. | [general derivative theorem](RiemannGaussian/AnalyticDiscCaratheodory.lean), [nonvanishing analytic functions](RiemannGaussian/AnalyticDiscLogarithm.lean), [actual canonical residual](RiemannGaussian/ZetaNearOneCanonical.lean), [scope](docs/zeta-caratheodory-zero-free.md) |
 | **Joint order-height control and log-log zero exclusion** | Every fixed logarithmic power is absorbed by the complete moving reciprocal-radius cost. The full center and evaluation-height corrections vanish; the actual prime budget then proves the region displayed above with its entire open coefficient range. | [all-order schedule](RiemannGaussian/LogLogDerivativeSchedule.lean), [full correction decay](RiemannGaussian/ZetaLogLogCorrection.lean), [complete prime budget](RiemannGaussian/ZetaLogLogBudget.lean), [ordinary width and complete bands](RiemannGaussian/ZetaLogLogZeroFree.lean), [scope](docs/zeta-log-log-zero-free.md) |
 | **Complete signed local factorization** | Complete canonical factorization retains each pole and correction together with its multiplicity. Actual Gaussian growth and the Euler center bound control the analytic residual. Every other coupled zero term has nonnegative real contribution, preserving the selected reciprocal-distance source. | [general complex identity](RiemannGaussian/AnalyticDiscSignedDerivative.lean), [actual signed bound](RiemannGaussian/ZetaNearOneSignedBound.lean), [complete prime budget](RiemannGaussian/ZetaNearOnePhaseConstraint.lean), [use in zero exclusion](docs/zeta-log-log-zero-free.md) |
@@ -232,7 +235,8 @@ positivity or vanishing direction remains unproved.
   proves width `A*log(log(abs(t)))/log(abs(t))` for the coefficient range
   displayed in [Zero-free region](#zero-free-region). The complete moving
   order, center, radius and prime budget are discharged, using the
-  [full-radius signed bound](RiemannGaussian/ZetaNearOneFullRadius.lean).
+  [signed angular bound](RiemannGaussian/ZetaNearOneAngularBound.lean).
+  Opposite semicircles retain upper growth and the actual Euler lower bound.
   The region supplies
   [larger arithmetic discs and stronger fixed-mark decay](RiemannGaussian/ZetaSquarefreeLogLogRadius.lean).
   Each coefficient has an existential, unevaluated threshold; the independent

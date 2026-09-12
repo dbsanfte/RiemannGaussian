@@ -8,7 +8,7 @@ import RiemannGaussian.ZetaLogLogBudget
 /-!
 # Actual log-log exclusion with a growing derivative order
 
-Every positive coefficient satisfying `140*C*log(2)<1` admits a fixed
+Every positive coefficient satisfying `140*C*log(2)<pi` admits a fixed
 schedule parameter `b>log(2)` with complete limiting cost below one.
 The actual order then grows as `floor(log(log(abs(t)+2))/b)`. All radius,
 center, multiplicity and height conditions are proved on this same
@@ -17,19 +17,20 @@ schedule before the actual prime contradiction is applied.
 
 namespace RiemannGaussian.ZetaLogLogExclusion
 noncomputable section
-open Filter ZetaLogLogScale ZetaLogLogBudget ZetaFullRadiusPrimeBudget
+open Filter ZetaLogLogScale ZetaLogLogBudget ZetaAngularPrimeBudget
 open DerivativeOrderComparison
 open scoped Topology
 
 /-- Every coefficient strictly below the available limiting budget
 admits a schedule with both positive power saving and a strict surplus. -/
-theorem exists_schedule {C : ℝ} (hC : 0 < C) (hlim : 140 * C * Real.log 2 < 1) :
-    ∃ b : ℝ, Real.log 2 < b ∧ 140 * C * b < 1 := by
+theorem exists_schedule {C : ℝ} (hC : 0 < C) (hlim : 140 * C * Real.log 2 < Real.pi) :
+    ∃ b : ℝ, Real.log 2 < b ∧ 140 * C * b / Real.pi < 1 := by
   have hp : 0 < 140 * C := by positivity
-  have hgap : Real.log 2 < 1 / (140 * C) := (lt_div_iff₀ hp).mpr (by nlinarith)
+  have hgap : Real.log 2 < Real.pi / (140 * C) := (lt_div_iff₀ hp).mpr (by nlinarith)
   obtain ⟨b, hb, hb'⟩ := exists_between hgap
   refine ⟨b, hb, ?_⟩
   have h := (lt_div_iff₀ hp).mp hb'
+  apply (div_lt_one Real.pi_pos).mpr
   nlinarith
 
 /-- The full local contradiction cost is unchanged when the actual
@@ -37,12 +38,12 @@ ordinate is replaced by its absolute value, including the moving order. -/
 theorem cost_abs (b C t : ℝ) :
     cost (order b |t|) (C * level |t|) |t| = cost (order b t) (C * level t) t := by
   obtain ⟨hl, ho, _⟩ := abs_invariance b C t
-  rw [hl, ho, ZetaFullRadiusPrimeBudget.cost_abs]
+  rw [hl, ho, ZetaAngularPrimeBudget.cost_abs]
 
 /-- Each schedule with complete limiting cost below one excludes
 actual right-edge zeros with the specified log-log margin eventually. -/
 theorem exists_eventual_margin_of_schedule {b C : ℝ}
-    (hb : Real.log 2 < b) (hC : 0 < C) (hcost : 140 * C * b < 1) :
+    (hb : Real.log 2 < b) (hC : 0 < C) (hcost : 140 * C * b / Real.pi < 1) :
     ∃ T : ℝ, 2 ≤ T ∧ ∀ ρ : NontrivialZetaZero, T ≤ |ρ.1.im| →
       width C ρ.1.im < 1 - ρ.1.re := by
   have hbpos : 0 < b := lt_trans (Real.log_pos (by norm_num : (1 : ℝ) < 2)) hb
@@ -75,10 +76,10 @@ theorem exists_eventual_margin_of_schedule {b C : ℝ}
     (mul_pos hC hl) ρ ht hg hnear
   exact (not_le_of_gt hct) hforced
 
-/-- Every coefficient with `140*C*log(2)<1` gives an actual eventual
+/-- Every coefficient with `140*C*log(2)<pi` gives an actual eventual
 right-edge exclusion of log-log shape, with all growing-order costs
 discharged. The threshold is existential and coefficient-dependent. -/
-theorem exists_eventual_margin {C : ℝ} (hC : 0 < C) (hlim : 140 * C * Real.log 2 < 1) :
+theorem exists_eventual_margin {C : ℝ} (hC : 0 < C) (hlim : 140 * C * Real.log 2 < Real.pi) :
     ∃ T : ℝ, 2 ≤ T ∧ ∀ ρ : NontrivialZetaZero, T ≤ |ρ.1.im| →
       width C ρ.1.im < 1 - ρ.1.re := by
   obtain ⟨b, hb, hc⟩ := exists_schedule hC hlim

@@ -1384,3 +1384,8 @@ import RiemannGaussian.AnalyticDiscCanonicalControl
 import RiemannGaussian.ZetaNearOneFullDisc
 import RiemannGaussian.ZetaNearOneFullRadius
 import RiemannGaussian.ZetaFullRadiusPrimeBudget
+import RiemannGaussian.AnalyticDiscBoundaryMoment
+import RiemannGaussian.SignedCircleProjection
+import RiemannGaussian.AnalyticDiscSignedBoundary
+import RiemannGaussian.ZetaNearOneAngularBound
+import RiemannGaussian.ZetaAngularPrimeBudget

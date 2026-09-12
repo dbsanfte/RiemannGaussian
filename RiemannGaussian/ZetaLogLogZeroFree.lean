@@ -10,7 +10,7 @@ import RiemannGaussian.ZetaZeroFreeRegionBand
 /-!
 # Actual zero-free regions of log-log shape
 
-For every `0<A<1/(140*log(2))`, the genuine zeta zeros eventually lie
+For every `0<A<pi/(140*log(2))`, the genuine zeta zeros eventually lie
 strictly between `A*log(log(abs(t)))/log(abs(t))` and the reflected right
 edge. The complete growing-order budget is proved before taking the
 height limit. The open coefficient range is retained under smoothing.
@@ -28,12 +28,12 @@ open scoped Topology
 
 /-- The open coefficient range supplied by the complete proved budget.
 This is not claimed to be an optimal zero-free coefficient. -/
-def coefficientLimit : ℝ := 1 / (140 * Real.log 2)
+def coefficientLimit : ℝ := Real.pi / (140 * Real.log 2)
 
 /-- The proved coefficient range is nonempty. -/
 theorem coefficientLimit_pos : 0 < coefficientLimit := by
   unfold coefficientLimit
-  exact div_pos (by norm_num) (mul_pos (by norm_num) (Real.log_pos (by norm_num)))
+  exact div_pos Real.pi_pos (mul_pos (by norm_num) (Real.log_pos (by norm_num)))
 
 /-- Every positive coefficient below the full limiting budget gives
 the ordinary-logarithm right-edge exclusion, with no fixed fractional
@@ -43,7 +43,7 @@ theorem exists_eventual_right_margin {A : ℝ} (hA : 0 < A) (hAlim : A < coeffic
       width A |ρ.1.im| < 1 - ρ.1.re := by
   obtain ⟨C, hAC, hClim⟩ := exists_between hAlim
   have hC := hA.trans hAC
-  have hcost : 140 * C * Real.log 2 < 1 := by
+  have hcost : 140 * C * Real.log 2 < Real.pi := by
     have hp : 0 < 140 * Real.log 2 :=
       mul_pos (by norm_num) (Real.log_pos (by norm_num))
     have h := (lt_div_iff₀ hp).mp hClim
