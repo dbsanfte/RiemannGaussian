@@ -62,26 +62,41 @@ def run(output, published):
                 article = page.locator("article.markdown-body").first
                 article.wait_for()
                 page.wait_for_function("Boolean(customElements.get('math-renderer'))")
-                # Replace only this browser's DOM with GitHub's rendering of
-                # the working file. The live custom element performs its real
-                # HTML decode, TeX conversion, sanitization and error handling.
+                selector = "article.markdown-body"
+                # Keep the working preview outside GitHub's React-managed root,
+                # so hydration cannot replace it with the published README.
+                # The real custom element and GitHub styles still render it.
                 if rendered is not None:
-                    article.evaluate("(e, html) => { e.innerHTML = html; }", rendered)
+                    article.evaluate("""(e, html) => {
+                        const preview = document.createElement('article');
+                        preview.id = 'github-readme-working-preview';
+                        preview.className = e.className;
+                        preview.style.width = `${e.clientWidth}px`;
+                        preview.style.maxWidth = '100%';
+                        preview.style.margin = '24px auto';
+                        preview.innerHTML = html;
+                        document.body.prepend(preview);
+                    }""", rendered)
+                    selector = "#github-readme-working-preview"
+                    article = page.locator(selector)
                 math = article.locator("math-renderer")
                 expected = len(re.findall(r"^```math$", readme, re.M))
                 assert expected > 0
                 assert math.count() >= expected, "README math blocks were lost"
-                page.wait_for_function("""() => {
-                    const nodes = document.querySelectorAll('article.markdown-body math-renderer');
+                page.wait_for_function("""selector => {
+                    const nodes = document.querySelector(selector).querySelectorAll('math-renderer');
                     return nodes.length && [...nodes].every(e =>
                         e.querySelector('math, mjx-container, .flash-error'));
-                }""")
+                }""", arg=selector)
                 errors = math.locator(".flash-error, merror, [data-mml-node='merror']").all_text_contents()
                 for i in range(math.count()):
                     frame = math.nth(i).locator("xpath=ancestor::table[1]")
-                    (frame if frame.count() else math.nth(i)).screenshot(
-                        path=str(output / f"math-{width}-{i + 1}.png"),
+                    (frame if frame.count() else math.nth(i)).evaluate(
+                        "e => e.scrollIntoView({block: 'center'})",
                     )
+                    # A viewport capture survives GitHub replacing a rendered
+                    # element while its page hydrates; assertions use locators.
+                    page.screenshot(path=str(output / f"math-{width}-{i + 1}.png"))
                 assert not errors, f"GitHub math renderer errors: {errors}"
                 boxes = math.locator("menclose[notation='box'], [data-mml-node='menclose']").count()
                 assert boxes == readme.count(r"\boxed{"), "A mathematical box was lost"
