@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="313.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 1303 modules · 28678 declarations · 25093 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 1421 modules · 30301 declarations · 26563 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · milestones standard-only</text>
   <text class="section" x="20" y="64">CHECKED RESULTS, IDENTITIES, AND ATTRIBUTED BASELINE</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -65,9 +65,9 @@
   </g>
   <g class="proved unconditional">
     <rect x="180" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.GaussianFermiSharpZeroFree.exists_eventual_improved_region</title>
-    <text x="252" y="173">zero-free edge</text>
-    <text x="252" y="191">9/(50 log t), large t  ✓</text>
+    <title>RiemannGaussian.ZetaLogLogZeroFree.exists_eventual_nonvanishing</title>
+    <text x="252" y="173">zero-free: log-log</text>
+    <text x="252" y="191">0&lt;A&lt;1/(140log2)  ✓</text>
   </g>
   <g class="proved unconditional">
     <rect x="340" y="150" width="145" height="54" rx="9"/>
