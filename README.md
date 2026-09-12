@@ -13,15 +13,21 @@ repository's verification gates count as established results.
 
 **Proved in Lean, with explicit heights:** every nontrivial zeta zero obeys
 
+<table>
+<tr><td>
+
 ```math
 \boxed{\begin{gathered}
 \rho=\beta+it,\qquad 10^6\le |t|,
 \\[2pt]
 \log(|t|+2)\le 320000
 \\[4pt]
-\Longrightarrow\qquad \frac{1}{450000}<\beta<1-\frac{1}{450000}.
+\Longrightarrow\qquad \frac{1}{450000}\lt \beta\lt 1-\frac{1}{450000}.
 \end{gathered}}
 ```
+
+</td></tr>
+</table>
 
 Lean also proves literal zeta nonvanishing on the closed right edge.
 [Band proof](RiemannGaussian/ZetaGaussianBandExclusion.lean)
@@ -31,17 +37,23 @@ Lean also proves literal zeta nonvanishing on the closed right edge.
 listed classical, Littlewood, Vinogradov–Korobov and intermediate width
 functions throughout
 
+<table>
+<tr><td>
+
 ```math
 \boxed{\begin{gathered}
-L=\log|t|,\qquad L_*<L\le L_{\max},
+L=\log|t|,\qquad L_*\lt L\le L_{\max},
 \\[4pt]
 \frac{981}{50}L_*=450000\log L_*,
 \\[2pt]
-288000<L_*<289000,
+288000\lt L_*\lt 289000,
 \\[4pt]
 L_{\max}=\log\!\left(e^{320000}-2\right).
 \end{gathered}}
 ```
+
+</td></tr>
+</table>
 
 At the unique crossover the strongest headline comparison ties; the upper
 endpoint is included exactly.
@@ -52,16 +64,22 @@ an exhaustive world-record claim remains unestablished.
 
 **Eventual component:** for each fixed admissible coefficient, Lean also proves
 
+<table>
+<tr><td>
+
 ```math
 \boxed{\begin{gathered}
-0<A<\frac{22\pi}{1525\log 2},\qquad \exists\,T(A)\ge 2,
+0\lt A\lt \frac{22\pi}{1525\log 2},\qquad \exists\,T(A)\ge 2,
 \\[4pt]
 |t|\ge T(A)\quad\Longrightarrow
 \\[4pt]
-A\frac{\log\log |t|}{\log |t|}<\beta
-<1-A\frac{\log\log |t|}{\log |t|}.
+A\frac{\log\log |t|}{\log |t|}\lt \beta
+\lt 1-A\frac{\log\log |t|}{\log |t|}.
 \end{gathered}}
 ```
+
+</td></tr>
+</table>
 
 This excludes a region adjoining each edge of the critical strip. Lean also
 proves literal zeta nonvanishing on the corresponding closed right edge,
@@ -348,6 +366,21 @@ All entries have checked Lean proofs. Attribution is explicit for external
 results; wider priority of the project-developed auxiliary mathematics has
 not been established. RH remains open.
 
+## Repository Structure
+
+**[Browse the complete theorem-family index](docs/theorem-families/README.md)**
+for Gaussian heat, Suzuki, eta, phase positivity, hybrid matrices, arithmetic
+and the other families. It is generated from the explorer's shared metadata.
+
+| Location | Contents |
+| --- | --- |
+| [RiemannGaussian/](RiemannGaussian/) · [root imports](RiemannGaussian.lean) | Lean sources, including the `Hybrid`, `HermitianRankTrace`, `MontgomeryVaughan` and `External` subdirectories |
+| [docs/](docs/) · [theorem explorer](docs/theorem-explorer/) | Proof notes, literature audits, family indexes and generated proof metadata |
+| [vendor/zeta23/](vendor/zeta23/) | Pinned external proofs, licenses and provenance |
+| [scripts/](scripts/) | Lean audits, metadata generation and browser checks |
+| [.github/workflows/](.github/workflows/) · [.githooks/](.githooks/) | Remote and local verification gates |
+| [.devcontainer/](.devcontainer/) · [AGENTS.md](AGENTS.md) | Development environment and proof-maintenance rules |
+
 ## Mathematical Program
 
 The current program combines four connected lines:
@@ -373,33 +406,6 @@ The older finite Hardy, Blaschke, Pick-matrix, zero-counting, and
 finite-to-entire developments remain checked supporting infrastructure and
 alternative interfaces to the missing rigidity theorem. None of these
 reformulations establishes the open arithmetic direction by itself.
-
-## Repository Structure
-
-- [RiemannGaussian.lean](RiemannGaussian.lean) is the root library module and
-  fixes the complete import graph built by CI.
-- [RiemannGaussian/](RiemannGaussian/) contains the Lean proof modules.
-  Module families named `Gaussian*`, `Finite*`, `RiemannXi*`, and
-  `Suzuki*` correspond to the principal parts of the program.
-- [RiemannGaussian/HermitianRankTrace/](RiemannGaussian/HermitianRankTrace/)
-  contains the attributed Apache-2.0 adaptation of the finite-dimensional
-  rank--trace stack used by the eta specialization.
-- [RiemannGaussian/MontgomeryVaughan/](RiemannGaussian/MontgomeryVaughan/)
-  contains the attributed Apache-2.0 proof of the weighted Hilbert inequality
-  and its explicit constants.
-- [vendor/zeta23/](vendor/zeta23/) contains the pinned, warning-clean
-  transitive source closure for the attributed external zero-proportion
-  baselines, with upstream commit and compatibility changes recorded there.
-- [scripts/GenerateProjectStatus.lean](scripts/GenerateProjectStatus.lean)
-  audits the compiled environment and generates the status artifacts in
-  [docs/](docs/).
-- [scripts/LintProject.lean](scripts/LintProject.lean) runs all registered
-  declaration linters over the complete project namespace.
-- [AGENTS.md](AGENTS.md) records the proof discipline, workflow, and mandatory
-  gates for research agents.
-- [.github/workflows/lean_action_ci.yml](.github/workflows/lean_action_ci.yml)
-  and [.githooks/pre-commit](.githooks/pre-commit) implement the remote and
-  local verification gates.
 
 ## Rigor and Verification
 

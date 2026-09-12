@@ -7,29 +7,61 @@
     {
       "id": "explicit-band",
       "label": "Explicit band · both edges",
-      "statusPaths": [["gaussianPhaseBandToolkit", "actualTheorem"]],
-      "scopePath": ["gaussianPhaseBandToolkit", "actualRegion"],
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "actualTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "actualRegion"
+      ],
       "documentation": "docs/zeta-gaussian-phase-band.md"
     },
     {
       "id": "nonvanishing",
       "label": "Literal zeta nonvanishing",
-      "statusPaths": [["gaussianPhaseBandToolkit", "nonvanishingTheorem"]],
-      "scopePath": ["gaussianPhaseBandToolkit", "actualRegion"],
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "nonvanishingTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "actualRegion"
+      ],
       "documentation": "docs/zeta-gaussian-phase-band.md"
     },
     {
       "id": "union",
       "label": "Union with the eventual region",
-      "statusPaths": [["gaussianPhaseBandToolkit", "unionTheorem"]],
-      "scopePath": ["gaussianPhaseBandToolkit", "regionUnion"],
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "unionTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "regionUnion"
+      ],
       "documentation": "docs/zeta-gaussian-phase-band.md"
     },
     {
       "id": "eventual",
       "label": "Eventual region · both edges",
-      "statusPaths": [["zetaLogLogZeroFreeToolkit", "unconditionalBothEdgesTheorem"]],
-      "scopePath": ["zetaLogLogZeroFreeToolkit", "role"],
+      "statusPaths": [
+        [
+          "zetaLogLogZeroFreeToolkit",
+          "unconditionalBothEdgesTheorem"
+        ]
+      ],
+      "scopePath": [
+        "zetaLogLogZeroFreeToolkit",
+        "role"
+      ],
       "documentation": "docs/zeta-log-log-zero-free.md"
     },
     {
@@ -69,68 +101,482 @@
     }
   ],
   "families": [
-    {"id":"foundations","label":"Zeta & xi geometry","color":"#9faccc","description":"Actual zeros, canonical products, reflection and analytic multiplicity.","modulePrefixes":["GaussianZeta","GaussianXi","RiemannXiCanonical","RiemannXiGlobal","ZetaLocal","ZetaCanonical","ZetaGlobal","ZetaSigned","ZetaNearOne"]},
-    {"id":"suzuki","label":"Suzuki machinery","color":"#69cbbd","description":"Suzuki-derived eta, contour and completed-logarithm ingredients actually used by these proofs.","modulePrefixes":["RiemannXiSuzuki"]},
-    {"id":"eta","label":"Eta & reflection","color":"#ba9bf4","description":"Paired eta identities, continuation and exact reflected tails.","modulePrefixes":["Eta","ZetaMoebius"]},
-    {"id":"heat","label":"Gaussian heat","color":"#f0bd72","description":"Gaussian transforms, smoothed zero sources, exact prime identities and retained remainders.","modulePrefixes":["Gaussian","ZetaGaussian","PositiveCosineLaplace","SignedLaplace"]},
-    {"id":"phase","label":"Phase positivity","color":"#e79aca","description":"Coupled phase kernels, contact factorization and the mathematically defined admissible family.","modulePrefixes":["ZetaPhase","ZetaPrime","PhasePole","FermiLaplace","ZetaAngular","ZetaExactPhase"]},
-    {"id":"oscillation","label":"Oscillatory sums","color":"#79bce8","description":"Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.","modulePrefixes":["Derivative","Dirichlet","Discrete","Finite","HigherDerivative","HigherLogarithmic","LogarithmicDerivative","LogarithmicShift","MonotonePhase","NatPhase","PhaseConjugation","PhaseIncrement","SecondDerivative","ShiftedDerivative","Uniform","ZetaDyadic","ZetaFinite"]},
-    {"id":"euler","label":"Euler & prime structure","color":"#eea18d","description":"Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prime expansions.","modulePrefixes":["ZetaEuler","ZetaLogPrime","OscillatoryPower"]},
-    {"id":"strip","label":"Signed strip geometry","color":"#b4d18b","description":"Disc-to-strip maps, full zero divisors, signed boundary integrals and cotangent sources.","modulePrefixes":["Analytic","Clipped","Cotangent","Sech","SignedCircle","SmoothedCotangent","ZetaStrip","ZetaSech","ZetaClipped","ZetaRegularized"]},
-    {"id":"completion","label":"Gamma & completion","color":"#d8c69b","description":"Archimedean corrections, digamma/trigamma estimates and exact pole cancellation.","modulePrefixes":["Digamma","Trigamma","RationalVertical","ZetaCompletion","ZetaRegularCorrection","ZetaLogarithmicShift"]},
-    {"id":"asymptotic","label":"Order & height limits","color":"#94a9f5","description":"Joint derivative-order schedules and the eventual logarithmic zero-free component.","modulePrefixes":["LogLog","ZetaLogLog"]},
-    {"id":"region","label":"Zero-free conclusion","color":"#77dac3","description":"The complete budget, actual zero contradiction and its exact height scope.","modulePrefixes":["ZetaGaussianBand"]},
-    {"id":"library","label":"Lean & mathlib","color":"#a2a9b7","description":"External library declarations. Displayed as boundary leaves, with their full transitive axioms still audited.","modulePrefixes":[]}
+    {
+      "id": "foundations",
+      "label": "Zeta & xi geometry",
+      "color": "#9faccc",
+      "description": "Actual zeros, canonical products, reflection and analytic multiplicity.",
+      "modulePrefixes": [
+        "Basic",
+        "GaussianXi",
+        "GaussianZeta",
+        "RiemannXi",
+        "RiemannXiCanonical",
+        "RiemannXiGlobal",
+        "ZetaAdaptiveCanonical",
+        "ZetaAdaptiveSigned",
+        "ZetaCanonical",
+        "ZetaGlobal",
+        "ZetaLocal",
+        "ZetaNearOne",
+        "ZetaReciprocal",
+        "ZetaSigned"
+      ]
+    },
+    {
+      "id": "suzuki",
+      "label": "Suzuki machinery",
+      "color": "#69cbbd",
+      "description": "Suzuki screw functions, Landau compensation, transport, signed currents and contour identities.",
+      "modulePrefixes": [
+        "PositiveDelayAveraging",
+        "PositiveLaplaceLandau",
+        "RiemannXiSuzuki",
+        "ScrewTransport",
+        "Suzuki"
+      ]
+    },
+    {
+      "id": "eta",
+      "label": "Eta & reflection",
+      "color": "#ba9bf4",
+      "description": "Paired eta identities, continuation and exact reflected tails.",
+      "modulePrefixes": [
+        "Eta",
+        "PairedEta",
+        "ZetaMoebius"
+      ]
+    },
+    {
+      "id": "heat",
+      "label": "Gaussian heat",
+      "color": "#f0bd72",
+      "description": "Gaussian transforms, smoothed zero sources, exact prime identities and retained remainders.",
+      "modulePrefixes": [
+        "ComplexGaussian",
+        "FiniteLaplaceCurvature",
+        "Gaussian",
+        "HyperbolicHeat",
+        "PositiveCosineLaplace",
+        "RiemannXiBoundaryFixedTimeHeat",
+        "RiemannXiBoundaryGaussianGram",
+        "RiemannXiBoundaryHeat",
+        "RiemannXiBoundarySpatialHeat",
+        "RiemannXiHyperbolicHeat",
+        "SignedLaplace",
+        "ZetaGaussian"
+      ]
+    },
+    {
+      "id": "phase",
+      "label": "Phase positivity",
+      "color": "#e79aca",
+      "description": "Coupled phase kernels, contact factorization and the mathematically defined admissible family.",
+      "modulePrefixes": [
+        "CosineTaylor",
+        "FermiCosine",
+        "FermiLaplace",
+        "Phase",
+        "PhasePole",
+        "ZetaAngular",
+        "ZetaExactPhase",
+        "ZetaFermiGlobalMargin",
+        "ZetaHalfStripPhase",
+        "ZetaMultiplicativePhase",
+        "ZetaPhase",
+        "ZetaPrime",
+        "ZetaSharpAngular",
+        "ZetaStechkin"
+      ]
+    },
+    {
+      "id": "oscillation",
+      "label": "Oscillatory sums",
+      "color": "#79bce8",
+      "description": "Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.",
+      "modulePrefixes": [
+        "Derivative",
+        "Dirichlet",
+        "Discrete",
+        "FiniteAbel",
+        "FiniteCircle",
+        "FiniteDiscrete",
+        "FiniteFourier",
+        "FiniteInverseSquare",
+        "FiniteKuzmin",
+        "FiniteLagPower",
+        "FinitePeriodic",
+        "FiniteResonance",
+        "FiniteSeparated",
+        "FiniteShift",
+        "FiniteVanDer",
+        "FirstDerivative",
+        "HigherDerivative",
+        "HigherLogarithmic",
+        "LogarithmicDerivative",
+        "LogarithmicSecondDerivative",
+        "LogarithmicShift",
+        "MonotonePhase",
+        "NatPhase",
+        "PhaseConjugation",
+        "PhaseIncrement",
+        "SecondDerivative",
+        "ShiftedDerivative",
+        "Uniform",
+        "ZetaDyadic",
+        "ZetaFinite"
+      ]
+    },
+    {
+      "id": "euler",
+      "label": "Euler & prime structure",
+      "color": "#eea18d",
+      "description": "Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prime expansions.",
+      "modulePrefixes": [
+        "OscillatoryPower",
+        "ZetaEuler",
+        "ZetaLogPrime",
+        "ZetaReciprocalDirichlet"
+      ]
+    },
+    {
+      "id": "strip",
+      "label": "Signed strip geometry",
+      "color": "#b4d18b",
+      "description": "Complex analytic estimates, disc-to-strip maps, complete divisors and signed boundary identities.",
+      "modulePrefixes": [
+        "Analytic",
+        "Clipped",
+        "Complex",
+        "Cotangent",
+        "Meromorphic",
+        "PolynomialLogDerivativeCircle",
+        "Rectangular",
+        "Sech",
+        "SignedCircle",
+        "SmoothedCotangent",
+        "UpperHalfPlaneIntegral",
+        "ZetaClipped",
+        "ZetaEntireMultiplier",
+        "ZetaFullRadius",
+        "ZetaHalfStripSource",
+        "ZetaHorizontalBudget",
+        "ZetaMultiplierRadius",
+        "ZetaPoleReserve",
+        "ZetaRegularized",
+        "ZetaSech",
+        "ZetaStrip",
+        "ZetaZeroModeFilter"
+      ]
+    },
+    {
+      "id": "completion",
+      "label": "Gamma & completion",
+      "color": "#d8c69b",
+      "description": "Archimedean corrections, digamma/trigamma estimates and exact pole cancellation.",
+      "modulePrefixes": [
+        "Digamma",
+        "Gamma",
+        "RationalVertical",
+        "Trigamma",
+        "ZetaCompletion",
+        "ZetaLogarithmicShift",
+        "ZetaRegularCorrection"
+      ]
+    },
+    {
+      "id": "asymptotic",
+      "label": "Order & height limits",
+      "color": "#94a9f5",
+      "description": "Joint derivative-order schedules and the eventual logarithmic zero-free component.",
+      "modulePrefixes": [
+        "FactorialPolynomialTransport",
+        "LogLog",
+        "ZetaLogLog"
+      ]
+    },
+    {
+      "id": "region",
+      "label": "Zero-free conclusion",
+      "color": "#77dac3",
+      "description": "The complete budget, actual zero contradiction and its exact height scope.",
+      "modulePrefixes": [
+        "ZetaArbitraryLogZeroFree",
+        "ZetaCenteredEulerZeroFree",
+        "ZetaGaussianBand",
+        "ZetaHalfLogZeroFree",
+        "ZetaLogRegionBand",
+        "ZetaStechkinZeroFree",
+        "ZetaZeroFreeRegionBand"
+      ]
+    },
+    {
+      "id": "finite",
+      "label": "Finite kernels & Hardy models",
+      "color": "#86c8bd",
+      "description": "Finite root geometry, Hardy and Pick kernels, spectral energy and passage to entire functions.",
+      "modulePrefixes": [
+        "Finite",
+        "GramWeil",
+        "HyperbolicEnergy",
+        "PairHyperbolic",
+        "Symmetric",
+        "TwoNodePick",
+        "WeightedHyperbolic"
+      ]
+    },
+    {
+      "id": "hybrid",
+      "label": "Hybrid matrices & phase colour",
+      "color": "#ce99db",
+      "description": "Continuous and finite eta representations, signed Gram matrices, heat operators and rank–trace tools. Source files retain attribution for adapted results.",
+      "modulePrefixes": [
+        "Hybrid.",
+        "HermitianRankTrace."
+      ]
+    },
+    {
+      "id": "arithmetic",
+      "label": "Squarefree & Möbius arithmetic",
+      "color": "#d6ae80",
+      "description": "Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.",
+      "modulePrefixes": [
+        "ChebyshevMoebius",
+        "Moebius",
+        "NatDivisor",
+        "NatLcm",
+        "NatProduct",
+        "NatRectangle",
+        "FiniteDivisibility",
+        "FinitePrime",
+        "ZetaArithmetic",
+        "ZetaAveraged",
+        "ZetaCoprime",
+        "ZetaCubicWindow",
+        "ZetaDivisibility",
+        "ZetaDominated",
+        "ZetaLogMoment",
+        "ZetaLogWindow",
+        "ZetaMomentPole",
+        "ZetaOnePrime",
+        "ZetaPositiveComposite",
+        "ZetaQuadratic",
+        "ZetaQuarterKernel",
+        "ZetaRough",
+        "ZetaSieved",
+        "ZetaSquarefree"
+      ]
+    },
+    {
+      "id": "hilbert",
+      "label": "Hilbert inequalities & sampling",
+      "color": "#a6b7db",
+      "description": "The attributed Montgomery–Vaughan Hilbert inequality and finite algebraic and inverse-sampling tools.",
+      "modulePrefixes": [
+        "MontgomeryVaughan",
+        "MontgomeryTaylor",
+        "FiniteAlgebraicHilbert"
+      ]
+    },
+    {
+      "id": "certificates",
+      "label": "Zero-proportion interfaces",
+      "color": "#c5c68a",
+      "description": "Attributed Zeta23 baselines and project extensions. Individual sources distinguish external results from new deductions.",
+      "modulePrefixes": [
+        "External."
+      ]
+    },
+    {
+      "id": "library",
+      "label": "Lean & mathlib",
+      "color": "#a2a9b7",
+      "description": "External library declarations. Displayed as boundary leaves, with their full transitive axioms still audited.",
+      "modulePrefixes": []
+    }
   ],
   "moduleFamilies": {
-    "GaussianZetaBridge":"foundations", "GaussianZetaGeometry":"foundations", "GaussianZetaCounting":"foundations",
-    "GaussianXiGrowth":"foundations", "GaussianXiInverseSquareSummability":"foundations", "GaussianXiLogDerivativeGrowth":"foundations",
-    "GaussianXiMellinSubquadratic":"foundations", "GaussianXiSubquadraticCounting":"foundations", "GaussianXiSubquadraticGrowth":"foundations",
-    "GaussianXiDivisorContour":"foundations", "GaussianDigammaGauss":"completion", "GaussianDigammaLogEnvelope":"completion",
-    "GaussianArchimedeanContour":"completion", "GaussianCompletedLogDerivative":"completion",
-    "GaussianFermiProfileSurplus":"phase", "GaussianFermiCosineAverage":"phase",
-    "AnalyticDerivativeCutoff":"oscillation", "ZetaNearOneBudgetLimit":"asymptotic",
-    "ZetaGaussianCompletionAverage":"completion", "ZetaGaussianNearCancellation":"completion",
-    "ZetaGaussianLiteratureComparison":"region"
+    "GaussianZetaBridge": "foundations",
+    "GaussianZetaGeometry": "foundations",
+    "GaussianZetaCounting": "foundations",
+    "GaussianXiGrowth": "foundations",
+    "GaussianXiInverseSquareSummability": "foundations",
+    "GaussianXiLogDerivativeGrowth": "foundations",
+    "GaussianXiMellinSubquadratic": "foundations",
+    "GaussianXiSubquadraticCounting": "foundations",
+    "GaussianXiSubquadraticGrowth": "foundations",
+    "GaussianXiDivisorContour": "foundations",
+    "GaussianDigammaGauss": "completion",
+    "GaussianDigammaLogEnvelope": "completion",
+    "GaussianArchimedeanContour": "completion",
+    "GaussianCompletedLogDerivative": "completion",
+    "GaussianFermiProfileSurplus": "phase",
+    "GaussianFermiCosineAverage": "phase",
+    "AnalyticDerivativeCutoff": "oscillation",
+    "ZetaNearOneBudgetLimit": "asymptotic",
+    "ZetaGaussianCompletionAverage": "completion",
+    "ZetaGaussianNearCancellation": "completion",
+    "ZetaGaussianLiteratureComparison": "region"
   },
   "theorems": {
-    "RiemannGaussian.ZetaGaussianBandExclusion.exact_strip":{"label":"Both strip edges excluded","overview":true},
-    "RiemannGaussian.ZetaGaussianBandExclusion.nonvanishing":{"label":"Literal ζ(s) ≠ 0","overview":true},
-    "RiemannGaussian.ZetaGaussianBandExclusion.exact_margin":{"label":"Exact family closes the gap","overview":true},
-    "RiemannGaussian.ZetaGaussianBandExclusion.family_margin":{"label":"Contradiction for every eligible family","overview":true},
-    "RiemannGaussian.ZetaGaussianBandExclusion.selected_source_lower":{"label":"A nearby zero costs ≥ 48000","overview":true},
-    "RiemannGaussian.ZetaGaussianBandBudget.budget_le":{"label":"Complete cost ≤ 47500","overview":true},
-    "RiemannGaussian.GaussianStripProfile.source_lower":{"label":"Gaussian source ≥ 152000","overview":true},
-    "RiemannGaussian.ZetaGaussianStripExplicit.gaussian_source_le_budget":{"label":"Actual source ≤ full budget","overview":true},
-    "RiemannGaussian.ZetaGaussianStripPhaseFamily.source_add_mixedWork_le_exactBudget":{"label":"Three prime responses kept together","overview":true},
-    "RiemannGaussian.ZetaGaussianStripPhaseFamily.mixedWork_nonneg":{"label":"Shared kernel gives prime positivity","overview":true},
-    "RiemannGaussian.ZetaGaussianSmoothedIdentity.complex_identity":{"label":"Exact complex Gaussian–Euler identity","overview":true},
-    "RiemannGaussian.ZetaGaussianSmoothedIdentity.prime_add_selected_le":{"label":"Smoothed selected-zero source"},
-    "RiemannGaussian.ZetaGaussianPhaseArithmetic.hasSum_complex_arithmetic":{"label":"Full prime / phase double series"},
-    "RiemannGaussian.ZetaStripFiniteSource.near_zero_constraint":{"label":"Complete nearby-zero constraint","overview":true},
-    "RiemannGaussian.ZetaStripBoundaryConstraint.finite_boundary_tendsto":{"label":"Signed boundaries reach both full lines","overview":true},
-    "RiemannGaussian.ZetaSechPhaseFamily.hasSum_arithmetic":{"label":"Right boundary keeps the prime phases","overview":true},
-    "RiemannGaussian.ZetaEulerLineBound.bound":{"label":"Uniform zeta line estimate","overview":true},
-    "RiemannGaussian.ZetaEulerUniformRemainder.norm_remainder_le_power":{"label":"Complete Euler remainder controlled","overview":true},
-    "RiemannGaussian.UniformDirichletPowerBound.uniform_bound":{"label":"All-order Dirichlet bound","overview":true},
-    "RiemannGaussian.phaseContactExactFamily_kernel_nonneg":{"label":"Exact phase kernel is nonnegative","overview":true},
-    "RiemannGaussian.phaseContactExactQuotient_pos":{"label":"Canonical contact quotient is positive"},
-    "RiemannGaussian.pairedEtaCore_eq_factor_riemannZeta_of_re_pos_of_ne_one":{"label":"Suzuki / eta factorization","overview":true},
-    "RiemannGaussian.analyticZetaZeroMultiplicity_positive":{"label":"True zero multiplicity is positive","overview":true},
-    "RiemannGaussian.ZetaGaussianBandComparison.union_with_eventual":{"label":"Maximum width on overlaps","overview":true},
-    "RiemannGaussian.ZetaLogLogZeroFree.exists_eventual_strip":{"label":"Eventual region at both edges","overview":true},
-    "RiemannGaussian.ZetaExactPhaseAngularExclusion.exists_eventual_margin":{"label":"Exact family in the height limit","overview":true},
-    "RiemannGaussian.ZetaAngularPhaseLimit.cost_tendsto":{"label":"Entire normalized phase cost converges","overview":true},
-    "RiemannGaussian.LogLogDerivativeSchedule.pow_log_div_width_tendsto":{"label":"Joint order / height power saving","overview":true},
-    "RiemannGaussian.ZetaGaussianBandFrontier.nonvanishing_and_comparison":{"label":"Actual exclusion and strict comparison","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
-    "RiemannGaussian.ZetaGaussianBandFrontier.strict_comparison_interval_iff":{"label":"Exact open-to-closed improvement interval","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
-    "RiemannGaussian.ZetaGaussianBandFrontier.existsUnique_crossover":{"label":"Unique exact crossover","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
-    "RiemannGaussian.ZetaGaussianBandFrontier.crossover_refined_bounds":{"label":"Crossover lies between 288000 and 289000","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
-    "RiemannGaussian.ZetaGaussianBandFrontier.scale_exp_le_iff":{"label":"Exact ceiling preserves the +2","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
-    "RiemannGaussian.ZetaGaussianBandFrontier.littlewoodWidth_crossover":{"label":"Equality at the crossover","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
-    "RiemannGaussian.ZetaGaussianBandFrontier.benchmarkWidth_lt_iff":{"label":"Strict comparison iff past crossover","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
-    "RiemannGaussian.ZetaGaussianLiteratureComparison.intermediateWidth_lt":{"label":"Intermediate published width compared","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
-    "RiemannGaussian.ZetaGaussianLiteratureComparison.fordWidth_lt":{"label":"Full Ford expression, uniform leading constant","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
-    "RiemannGaussian.ZetaGaussianLiteratureComparison.eventual_vkWidth_lt":{"label":"Eventual VK functions compared","overview":true,"documentation":"docs/zero-free-literature-frontier.md"}
+    "RiemannGaussian.ZetaGaussianBandExclusion.exact_strip": {
+      "label": "Both strip edges excluded",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianBandExclusion.nonvanishing": {
+      "label": "Literal ζ(s) ≠ 0",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianBandExclusion.exact_margin": {
+      "label": "Exact family closes the gap",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianBandExclusion.family_margin": {
+      "label": "Contradiction for every eligible family",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianBandExclusion.selected_source_lower": {
+      "label": "A nearby zero costs ≥ 48000",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianBandBudget.budget_le": {
+      "label": "Complete cost ≤ 47500",
+      "overview": true
+    },
+    "RiemannGaussian.GaussianStripProfile.source_lower": {
+      "label": "Gaussian source ≥ 152000",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianStripExplicit.gaussian_source_le_budget": {
+      "label": "Actual source ≤ full budget",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianStripPhaseFamily.source_add_mixedWork_le_exactBudget": {
+      "label": "Three prime responses kept together",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianStripPhaseFamily.mixedWork_nonneg": {
+      "label": "Shared kernel gives prime positivity",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSmoothedIdentity.complex_identity": {
+      "label": "Exact complex Gaussian–Euler identity",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSmoothedIdentity.prime_add_selected_le": {
+      "label": "Smoothed selected-zero source"
+    },
+    "RiemannGaussian.ZetaGaussianPhaseArithmetic.hasSum_complex_arithmetic": {
+      "label": "Full prime / phase double series"
+    },
+    "RiemannGaussian.ZetaStripFiniteSource.near_zero_constraint": {
+      "label": "Complete nearby-zero constraint",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaStripBoundaryConstraint.finite_boundary_tendsto": {
+      "label": "Signed boundaries reach both full lines",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaSechPhaseFamily.hasSum_arithmetic": {
+      "label": "Right boundary keeps the prime phases",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaEulerLineBound.bound": {
+      "label": "Uniform zeta line estimate",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaEulerUniformRemainder.norm_remainder_le_power": {
+      "label": "Complete Euler remainder controlled",
+      "overview": true
+    },
+    "RiemannGaussian.UniformDirichletPowerBound.uniform_bound": {
+      "label": "All-order Dirichlet bound",
+      "overview": true
+    },
+    "RiemannGaussian.phaseContactExactFamily_kernel_nonneg": {
+      "label": "Exact phase kernel is nonnegative",
+      "overview": true
+    },
+    "RiemannGaussian.phaseContactExactQuotient_pos": {
+      "label": "Canonical contact quotient is positive"
+    },
+    "RiemannGaussian.pairedEtaCore_eq_factor_riemannZeta_of_re_pos_of_ne_one": {
+      "label": "Suzuki / eta factorization",
+      "overview": true
+    },
+    "RiemannGaussian.analyticZetaZeroMultiplicity_positive": {
+      "label": "True zero multiplicity is positive",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianBandComparison.union_with_eventual": {
+      "label": "Maximum width on overlaps",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaLogLogZeroFree.exists_eventual_strip": {
+      "label": "Eventual region at both edges",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaExactPhaseAngularExclusion.exists_eventual_margin": {
+      "label": "Exact family in the height limit",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaAngularPhaseLimit.cost_tendsto": {
+      "label": "Entire normalized phase cost converges",
+      "overview": true
+    },
+    "RiemannGaussian.LogLogDerivativeSchedule.pow_log_div_width_tendsto": {
+      "label": "Joint order / height power saving",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianBandFrontier.nonvanishing_and_comparison": {
+      "label": "Actual exclusion and strict comparison",
+      "overview": true,
+      "documentation": "docs/zero-free-literature-frontier.md"
+    },
+    "RiemannGaussian.ZetaGaussianBandFrontier.strict_comparison_interval_iff": {
+      "label": "Exact open-to-closed improvement interval",
+      "overview": true,
+      "documentation": "docs/zero-free-literature-frontier.md"
+    },
+    "RiemannGaussian.ZetaGaussianBandFrontier.existsUnique_crossover": {
+      "label": "Unique exact crossover",
+      "overview": true,
+      "documentation": "docs/zero-free-literature-frontier.md"
+    },
+    "RiemannGaussian.ZetaGaussianBandFrontier.crossover_refined_bounds": {
+      "label": "Crossover lies between 288000 and 289000",
+      "overview": true,
+      "documentation": "docs/zero-free-literature-frontier.md"
+    },
+    "RiemannGaussian.ZetaGaussianBandFrontier.scale_exp_le_iff": {
+      "label": "Exact ceiling preserves the +2",
+      "overview": true,
+      "documentation": "docs/zero-free-literature-frontier.md"
+    },
+    "RiemannGaussian.ZetaGaussianBandFrontier.littlewoodWidth_crossover": {
+      "label": "Equality at the crossover",
+      "overview": true,
+      "documentation": "docs/zero-free-literature-frontier.md"
+    },
+    "RiemannGaussian.ZetaGaussianBandFrontier.benchmarkWidth_lt_iff": {
+      "label": "Strict comparison iff past crossover",
+      "overview": true,
+      "documentation": "docs/zero-free-literature-frontier.md"
+    },
+    "RiemannGaussian.ZetaGaussianLiteratureComparison.intermediateWidth_lt": {
+      "label": "Intermediate published width compared",
+      "overview": true,
+      "documentation": "docs/zero-free-literature-frontier.md"
+    },
+    "RiemannGaussian.ZetaGaussianLiteratureComparison.fordWidth_lt": {
+      "label": "Full Ford expression, uniform leading constant",
+      "overview": true,
+      "documentation": "docs/zero-free-literature-frontier.md"
+    },
+    "RiemannGaussian.ZetaGaussianLiteratureComparison.eventual_vkWidth_lt": {
+      "label": "Eventual VK functions compared",
+      "overview": true,
+      "documentation": "docs/zero-free-literature-frontier.md"
+    }
   }
 }

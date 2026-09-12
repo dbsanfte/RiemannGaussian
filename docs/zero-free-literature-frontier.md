@@ -21,7 +21,7 @@ solution on (L\ge250000) of
 proves existence, uniqueness and the rational enclosures
 
 ```math
-288000<L_*<289000,\qquad 310000<L_{\max}<320000.
+288000\lt L_*\lt 289000,\qquad 310000\lt L_{\max}\lt 320000.
 ```
 
 The crossover is approximately (288346.768139), for orientation only;
@@ -45,7 +45,7 @@ Lean proves, for **every** (L\ge250000),
 \begin{aligned}
 \log(e^L+2)\le320000\ \text{and}\ W(L)\le u
 &\iff L\in[L_*,L_{\max}],\\
-\log(e^L+2)\le320000\ \text{and}\ W(L)<u
+\log(e^L+2)\le320000\ \text{and}\ W(L)\lt u
 &\iff L\in(L_*,L_{\max}].
 \end{aligned}
 ```

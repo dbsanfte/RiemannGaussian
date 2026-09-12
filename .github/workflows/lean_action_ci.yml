@@ -57,6 +57,11 @@ jobs:
       - name: Check theorem explorer interactions and source links
         shell: bash
         run: .lake/browser-venv/bin/python scripts/test_theorem_explorer.py
+      - name: Check README with the live GitHub math renderer
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: .lake/browser-venv/bin/python scripts/test_github_readme.py
       - name: Assemble the verified Pages snapshot
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         shell: bash

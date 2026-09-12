@@ -102,8 +102,8 @@ the left edge with the same height conditions.
 proves the full comparison interval in ordinary logarithmic height:
 
 ```math
-L_*<L\le\log(e^{320000}-2),\qquad
-\frac{981}{50}L_*=450000\log L_*,\qquad 288000<L_*<289000.
+L_*\lt L\le\log(e^{320000}-2),\qquad
+\frac{981}{50}L_*=450000\log L_*,\qquad 288000\lt L_*\lt 289000.
 ```
 
 The root is unique on the large branch. At it, the Littlewood benchmark

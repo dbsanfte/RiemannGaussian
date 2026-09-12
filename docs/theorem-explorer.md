@@ -11,6 +11,11 @@ literature-width comparisons. Its theorem inspectors link to the
 [source-version and height-domain audit](zero-free-literature-frontier.md).
 The actual zero-free band remains the default view.
 
+The [complete theorem-family index](theorem-families/README.md) also covers
+modules outside those endpoint chains. It uses the same family metadata and
+is regenerated with the explorer; every source module must have a family
+and be reachable from the root library imports.
+
 ## Sources of evergreen metadata
 
 | Information | Authoritative source |

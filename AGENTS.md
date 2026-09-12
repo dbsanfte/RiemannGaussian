@@ -1480,6 +1480,10 @@ abstractions.
    generated inventory. Consolidate related theorem steps into one result
    rather than spending multiple slots on the same advance. Preserve source
    attribution, scope and any unevaluated thresholds when shortening text.
+   Place `Repository Structure` immediately after `Accomplishments`. Keep it
+   compact: link the complete generated theorem-family index and give a short
+   directory map; do not copy module inventories into the README. Preserve
+   existing Lean source paths and imports, as requested by the user.
 9. Apply the current theorem-push commit gate. Commit and push the complete
    slice only after its actual mathematical target and all verification
    gates pass. Wait for GitHub Actions on that exact commit SHA to finish
@@ -1496,13 +1500,27 @@ compiled Lean dependency graph and the existing proof-status metadata.
 Maintain logical families and optional theorem reading labels in
 `docs/theorem-explorer/metadata.json`; theorem statements, docstrings, source
 locations, dependency edges and transitive axiom audits come from Lean.
+The same family metadata drives `docs/theorem-families/` and the Lean source
+directory's landing page. Every project source module must have an
+unambiguous family and be reachable from the root imports. Assign new modules
+by an appropriate prefix or explicit override, then run
+`scripts/build_theorem_explorer.py` to regenerate both indexes and explorer
+assets. Its `--check` mode rejects missing, ambiguous or stale assignments and
+stale generated pages. Keep one shared family taxonomy; do not hand-edit the
+generated indexes or duplicate their full contents in the README.
 The README's `Zero-free region` is the first section after the introduction.
 Keep its mathematics in compact, readable display-math boxes using
 `\boxed{\begin{gathered} ... \end{gathered}}` inside GitHub-supported math
 blocks. Prefer fenced `math` blocks: they preserve TeX line breaks and
-subscripts without Markdown escape processing. Include assumptions and
+subscripts without Markdown escape processing. Write strict inequalities
+with `\lt` instead of a bare `<`: GitHub's math renderer reparses formula
+text as HTML, so `<L` or `<A` can swallow part of a formula and produce a
+misleading "Missing close brace" error. Include assumptions and
 endpoint conventions in the presentation;
 do not leave formulas or coefficient ranges scattered in inline code.
+Wrap each display box in a single-cell HTML table, with blank lines around
+the fenced math block, so the frame remains visible when a browser's native
+MathML renderer omits the `\boxed` border.
 Show only the current proved union, with a direct Lean proof link. An
 eventual component must state that its coefficient-dependent threshold is
 unevaluated unless an actual numerical threshold has been proved.
@@ -1539,6 +1557,16 @@ commit and push instructions.
 Check the rendered README math and the explorer at desktop and narrow
 viewport widths after presentation changes. Confirm navigation, source-line
 links and audit links in the published artifact after exact-commit CI passes.
+For every README presentation change, run `scripts/test_github_readme.py`
+with the pinned Playwright browser before committing. It sends the working
+README through GitHub's Markdown API and its live `math-renderer` component;
+a standalone MathJax render is not a substitute. Require every math block to
+render without an error, retain its box and fit its available width at
+desktop and mobile sizes. This check is also a mandatory CI step before
+Pages publication. After pushing, run it again with `--published` to check
+the actual README page at the exact current commit. A network or renderer
+failure is a failed check, not a reason to claim rendering success. The
+script writes screenshots and a JSON report under `.lake/github-readme/`.
 
 The repository history is the durable record of verified progress. Enforce
 this regime yourself; do not rely on the user to request individual commits,
