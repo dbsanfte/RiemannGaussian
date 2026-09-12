@@ -1464,3 +1464,7 @@ import RiemannGaussian.ZetaGaussianBandBudget
 import RiemannGaussian.ZetaGaussianBandExclusion
 import RiemannGaussian.ZetaGaussianBandComparison
 import RiemannGaussian.ZetaSquarefreeLocalWindow
+import RiemannGaussian.ZetaSquarefreeGaussianBand
+import RiemannGaussian.ZetaSquarefreeGaussianSieve
+import RiemannGaussian.ZetaGaussianBandFrontier
+import RiemannGaussian.ZetaGaussianLiteratureComparison

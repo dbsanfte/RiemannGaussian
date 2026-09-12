@@ -98,30 +98,26 @@ the left edge with the same height conditions.
 
 ## Matching heights and the union of regions
 
-[ZetaGaussianBandComparison](../RiemannGaussian/ZetaGaussianBandComparison.lean)
-proves that every `abs(t)=exp(L)`, `300000<=L<=310000`, is inside the band.
-On this entire interval Lean proves the strict inequalities
+[ZetaGaussianBandFrontier](../RiemannGaussian/ZetaGaussianBandFrontier.lean)
+proves the full comparison interval in ordinary logarithmic height:
 
-```text
-1/(4.8594*L)                           < 1/450000,
-log(L)/(19.62*L)                       < 1/450000,
-1/(51.34*L^(2/3)*log(L)^(1/3))         < 1/450000.
+```math
+L_*<L\le\log(e^{320000}-2),\qquad
+\frac{981}{50}L_*=450000\log L_*,\qquad 288000<L_*<289000.
 ```
 
-The decimal denominators here mean the exact rationals `24297/5000`,
-`981/50` and `2567/50`. The comparisons use elementary inequalities and
-exact power identities, including the enlarged height's `+2` correction.
+The root is unique on the large branch. At it, the Littlewood benchmark
+width equals `1/450000`; above it all three headline widths are strictly
+smaller. The ceiling includes the actual enlarged height's plus two.
+Literal zeta nonvanishing holds on the entire closed crossover-to-ceiling
+interval and includes the closed right edge.
 
-These three shapes and constants are reported in the introduction of
-[Bellotti–Trudgian–Yang, March 2026](https://arxiv.org/html/2603.21490v1),
-including the stronger Littlewood and Vinogradov–Korobov constants credited
-to Yang's 2025 thesis. The thesis's official landing page was retrieved;
-its PDF download returned a server error. Its full parameter-dependent
-results have not yet been independently inspected. The comparison theorems
-prove inequalities between the displayed functions; they neither import
-published zero-free results as assumptions nor establish that every stronger
-published consequence has been checked. **No exhaustive world-record or
-historical novelty claim is made at this stage.**
+The [literature-frontier table](zero-free-literature-frontier.md) records
+primary source versions, applicable heights, boundary conventions and
+unresolved retrieval or proof-status checks. It also includes the
+[Lean comparisons of intermediate published expressions](../RiemannGaussian/ZetaGaussianLiteratureComparison.lean).
+These are comparisons of explicit functions, not imported external proofs
+or an exhaustive world-record determination.
 
 `union_with_eventual` combines this band with the repository's proved
 eventual Littlewood component using their maximum wherever both height
@@ -132,27 +128,24 @@ arithmetic estimates are retained alongside the width envelope.
 
 ## Remaining work
 
-Audit the complete literature comparison, improve or widen the explicit
+Resolve the remaining literature-source coverage, improve or widen the explicit
 height band using the general cost theorem, and transport the resulting
-region into the arithmetic argument with the relevant height windows intact.
-The [local-window transport](zeta-squarefree-local-window.md) now supplies the
-exact geometric interface; instantiating it on this explicit band remains.
+region into the remaining prime-tail argument with the relevant height windows intact.
+The [uniform squarefree transport](zeta-squarefree-gaussian-band.md) now
+discharges the local window and bounds the complete logarithmic matrix
+throughout the explicit center domain, including moving selected zeros.
 The independent fixed-ordinate ordinary-prime floor and RH remain open.
 
-## Local validation
+## Validation
 
-All eight modules pass direct elaboration with warnings treated as errors
-and are imported by the root library. The focused build passes 4,848 jobs;
-the publication build, including the downstream local-window transport,
-passes 10,348. Root verbose lint reports zero errors across 19,873 declarations
-and 11,645 generated declarations with all 14 linters.
-Whole-project declaration lint passes. Explicit transitive axiom audits of
-all 66 public theorems contain only `propext`, `Classical.choice` and
-`Quot.sound`; the final audit repeats that check for all 656 public theorems
-in the accumulated development and local-window transport.
+The Gaussian band and exact comparison modules are imported by the root
+library. The extended comparison passes its focused warning-as-error build,
+and the complete slice passes the full package build. Public theorem audits
+and whole-project lint enforce the standard-only axiom invariant; generated
+status and explorer artifacts record the current compiled inventory.
 
-The generated inventory contains 1,501 project modules, 31,556 declarations
-and 27,692 theorems, with zero project axioms and zero placeholder-dependent
-declarations. Generation is reproducible; `rhImplied` remains false.
-CI repeats the strict build, whole-project audit and artifact checks before
-publishing the theorem explorer.
+The [uniform arithmetic transport](zeta-squarefree-gaussian-band.md) shares
+this verification slice. See the [proof status](proof-status.json) and
+[exported chain audit](theorem-explorer/audit.json) for the generated counts
+and source coverage. `rhImplied` remains false. CI repeats the strict build,
+whole-project audit and artifact checks before publishing the explorer.

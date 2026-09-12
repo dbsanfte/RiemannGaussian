@@ -22,10 +22,11 @@ only for zeros in that local window supplies:
   The signed first and doubled prime phases remain in the original envelope.
 
 The window margin is an explicit premise of these transport theorems.
-The new Gaussian band's instantiation at concrete center ordinates is the
-next arithmetic step; this module alone does not assert a new zero-free
-region, a uniform growing-prime-set bound, or the independent ordinary-prime
-floor needed by the RH contradiction.
+The [Gaussian-band application](zeta-squarefree-gaussian-band.md) now
+discharges it at explicit center ordinates and proves uniform complete
+matrix decay for the growing quadratic sieve. This generic module retains
+its window premise. The separate independent ordinary-prime floor needed
+by the RH contradiction remains open.
 
 The module is imported by the root library. Its four public theorems pass
 strict Lean elaboration and standard-only transitive axiom audits; the

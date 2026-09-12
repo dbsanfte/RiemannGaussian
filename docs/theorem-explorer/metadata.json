@@ -31,6 +31,41 @@
       "statusPaths": [["zetaLogLogZeroFreeToolkit", "unconditionalBothEdgesTheorem"]],
       "scopePath": ["zetaLogLogZeroFreeToolkit", "role"],
       "documentation": "docs/zeta-log-log-zero-free.md"
+    },
+    {
+      "id": "comparison",
+      "label": "Exact benchmark comparison",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "comparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "comparisonIntervalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "intermediateComparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "fordComparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "eventualVkComparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "comparisonEqualityTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "comparisonInterval"
+      ],
+      "documentation": "docs/zero-free-literature-frontier.md"
     }
   ],
   "families": [
@@ -55,7 +90,8 @@
     "GaussianArchimedeanContour":"completion", "GaussianCompletedLogDerivative":"completion",
     "GaussianFermiProfileSurplus":"phase", "GaussianFermiCosineAverage":"phase",
     "AnalyticDerivativeCutoff":"oscillation", "ZetaNearOneBudgetLimit":"asymptotic",
-    "ZetaGaussianCompletionAverage":"completion", "ZetaGaussianNearCancellation":"completion"
+    "ZetaGaussianCompletionAverage":"completion", "ZetaGaussianNearCancellation":"completion",
+    "ZetaGaussianLiteratureComparison":"region"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianBandExclusion.exact_strip":{"label":"Both strip edges excluded","overview":true},
@@ -85,6 +121,16 @@
     "RiemannGaussian.ZetaLogLogZeroFree.exists_eventual_strip":{"label":"Eventual region at both edges","overview":true},
     "RiemannGaussian.ZetaExactPhaseAngularExclusion.exists_eventual_margin":{"label":"Exact family in the height limit","overview":true},
     "RiemannGaussian.ZetaAngularPhaseLimit.cost_tendsto":{"label":"Entire normalized phase cost converges","overview":true},
-    "RiemannGaussian.LogLogDerivativeSchedule.pow_log_div_width_tendsto":{"label":"Joint order / height power saving","overview":true}
+    "RiemannGaussian.LogLogDerivativeSchedule.pow_log_div_width_tendsto":{"label":"Joint order / height power saving","overview":true},
+    "RiemannGaussian.ZetaGaussianBandFrontier.nonvanishing_and_comparison":{"label":"Actual exclusion and strict comparison","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
+    "RiemannGaussian.ZetaGaussianBandFrontier.strict_comparison_interval_iff":{"label":"Exact open-to-closed improvement interval","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
+    "RiemannGaussian.ZetaGaussianBandFrontier.existsUnique_crossover":{"label":"Unique exact crossover","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
+    "RiemannGaussian.ZetaGaussianBandFrontier.crossover_refined_bounds":{"label":"Crossover lies between 288000 and 289000","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
+    "RiemannGaussian.ZetaGaussianBandFrontier.scale_exp_le_iff":{"label":"Exact ceiling preserves the +2","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
+    "RiemannGaussian.ZetaGaussianBandFrontier.littlewoodWidth_crossover":{"label":"Equality at the crossover","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
+    "RiemannGaussian.ZetaGaussianBandFrontier.benchmarkWidth_lt_iff":{"label":"Strict comparison iff past crossover","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
+    "RiemannGaussian.ZetaGaussianLiteratureComparison.intermediateWidth_lt":{"label":"Intermediate published width compared","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
+    "RiemannGaussian.ZetaGaussianLiteratureComparison.fordWidth_lt":{"label":"Full Ford expression, uniform leading constant","overview":true,"documentation":"docs/zero-free-literature-frontier.md"},
+    "RiemannGaussian.ZetaGaussianLiteratureComparison.eventual_vkWidth_lt":{"label":"Eventual VK functions compared","overview":true,"documentation":"docs/zero-free-literature-frontier.md"}
   }
 }

@@ -20,26 +20,25 @@ noncomputable section
 open Complex Filter Topology
 open scoped Classical
 
-/-- Any proved analytic disc transports to every smaller positive
-radius and all valid arithmetic marks. The finite Euler allowance and
-full complex polynomial envelope remain explicit. -/
-theorem exists_squarefreeEuler_variable_radius_bound_of_analytic
-    (y outer : ℝ) (hout : 0 < outer) (houtu : outer < 3 / 2)
-    (hQ : AnalyticOnNhd ℂ squarefreeEulerResponse
-      (Metric.closedBall (3 / 2 + I * y) outer)) :
-    ∃ C : ℝ, 0 < C ∧ ∀ (r : ℝ), 0 < r → r ≤ outer →
+/-- A uniformly bounded family of actual quotient discs supplies one
+constant for every center, radius and marked arithmetic filter. The full
+finite Euler allowance and complex polynomial envelope remain explicit. -/
+theorem exists_squarefreeEuler_uniform_variable_radius_bound_of_analytic
+    (Y : Set ℝ) (outer M : ℝ) (houtu : outer < 3 / 2) (hM0 : 0 ≤ M)
+    (hQ : ∀ y ∈ Y, AnalyticOnNhd ℂ squarefreeEulerResponse
+      (Metric.closedBall (3 / 2 + I * y) outer))
+    (hM : ∀ y ∈ Y, ∀ s ∈ Metric.closedBall (3 / 2 + I * y) outer,
+      ‖squarefreeEulerResponse s‖ ≤ M) :
+    ∃ C : ℝ, 0 < C ∧ ∀ y ∈ Y, ∀ (r : ℝ), 0 < r → r ≤ outer →
       ∀ S : Finset ℕ, (∀ a ∈ S, a.Prime) → ∀ P : ℕ,
         Squarefree P → (∀ a ∈ P.primeFactors, a ∉ S) →
         ∀ (p : Polynomial ℂ) (N : ℕ),
           ‖RoughSquarefreeBare.response p S P N (3 / 2 + I * y)‖ ≤
             C * squarefreeEulerBudget (3 / 2 - r) S P * r⁻¹ ^ N *
               ∑ k ∈ p.support, ‖p.coeff k‖ * r⁻¹ ^ k := by
-  let c : ℂ := 3 / 2 + I * y
-  obtain ⟨M, hM⟩ := ((isCompact_closedBall c outer).image_of_continuousOn
-    hQ.continuousOn.norm).isBounded.exists_norm_le
-  have hM0 : 0 ≤ M := (norm_nonneg _).trans (hM _ ⟨c, Metric.mem_closedBall_self hout.le, rfl⟩)
   refine ⟨M + 1, by linarith, ?_⟩
-  intro r hr hro S hS P hP hPS p N
+  intro y hy r hr hro S hS P hP hPS p N
+  let c : ℂ := 3 / 2 + I * y
   let A := squarefreeEulerBudget (3 / 2 - r) S P
   have hσ : 0 < 3 / 2 - r := by linarith
   have hedge (s : ℂ) (hs : s ∈ Metric.closedBall c r) : 3 / 2 - r ≤ s.re := by
@@ -54,7 +53,7 @@ theorem exists_squarefreeEuler_variable_radius_bound_of_analytic
     norm_squarefreeEulerMultiplier_le S hS P hσ (hedge s hs)
   have hA : 0 ≤ A := (norm_nonneg _).trans (hfA c (Metric.mem_closedBall_self hr.le))
   have ha : AnalyticOnNhd ℂ (fun s ↦ squarefreeEulerMultiplier S P s * squarefreeEulerResponse s)
-      (Metric.closedBall c r) := fun s hs ↦ (hf s hs).mul (hQ s (hsub hs))
+      (Metric.closedBall c r) := fun s hs ↦ (hf s hs).mul (hQ y hy s (hsub hs))
   have hd : DiffContOnCl ℂ (fun s ↦ squarefreeEulerMultiplier S P s * squarefreeEulerResponse s)
       (Metric.ball c r) := by
     apply DifferentiableOn.diffContOnCl
@@ -63,8 +62,7 @@ theorem exists_squarefreeEuler_variable_radius_bound_of_analytic
   have hb (s : ℂ) (hs : s ∈ Metric.sphere c r) :
       ‖squarefreeEulerMultiplier S P s * squarefreeEulerResponse s‖ ≤ (M + 1) * A := by
     have hsB := Metric.sphere_subset_closedBall hs
-    have hbound := hM _ ⟨s, hsub hsB, rfl⟩
-    rw [Real.norm_of_nonneg (norm_nonneg _)] at hbound
+    have hbound := hM y hy s (hsub hsB)
     rw [norm_mul]
     exact (mul_le_mul (hfA s hsB) (show ‖squarefreeEulerResponse s‖ ≤ M + 1 by linarith)
       (norm_nonneg _) hA).trans_eq (by ring)
@@ -85,6 +83,34 @@ theorem exists_squarefreeEuler_variable_radius_bound_of_analytic
     _ = _ := by
       simp_rw [pow_add, Finset.mul_sum]
       exact Finset.sum_congr rfl (fun _ _ ↦ by ring)
+
+/-- Any proved analytic disc transports to every smaller positive
+radius and all valid arithmetic marks. The finite Euler allowance and
+full complex polynomial envelope remain explicit. -/
+theorem exists_squarefreeEuler_variable_radius_bound_of_analytic
+    (y outer : ℝ) (hout : 0 < outer) (houtu : outer < 3 / 2)
+    (hQ : AnalyticOnNhd ℂ squarefreeEulerResponse
+      (Metric.closedBall (3 / 2 + I * y) outer)) :
+    ∃ C : ℝ, 0 < C ∧ ∀ (r : ℝ), 0 < r → r ≤ outer →
+      ∀ S : Finset ℕ, (∀ a ∈ S, a.Prime) → ∀ P : ℕ,
+        Squarefree P → (∀ a ∈ P.primeFactors, a ∉ S) →
+        ∀ (p : Polynomial ℂ) (N : ℕ),
+          ‖RoughSquarefreeBare.response p S P N (3 / 2 + I * y)‖ ≤
+            C * squarefreeEulerBudget (3 / 2 - r) S P * r⁻¹ ^ N *
+              ∑ k ∈ p.support, ‖p.coeff k‖ * r⁻¹ ^ k := by
+  let c : ℂ := 3 / 2 + I * y
+  obtain ⟨M, hM⟩ := ((isCompact_closedBall c outer).image_of_continuousOn
+    hQ.continuousOn.norm).isBounded.exists_norm_le
+  have hM0 : 0 ≤ M := (norm_nonneg _).trans (hM _ ⟨c, Metric.mem_closedBall_self hout.le, rfl⟩)
+  obtain ⟨C, hC, hb⟩ := exists_squarefreeEuler_uniform_variable_radius_bound_of_analytic
+    {y} outer M houtu hM0
+    (by intro z hz; simpa only [Set.mem_singleton_iff.mp hz] using hQ)
+    (by
+      intro z hz s hs
+      subst z
+      have h := hM _ ⟨s, hs, rfl⟩
+      simpa only [Real.norm_of_nonneg (norm_nonneg _)] using h)
+  exact ⟨C, hC, hb y rfl⟩
 
 /-- The preceding signed-pole region supplies the original common
 Cauchy constant, with every arithmetic mark and polynomial unchanged. -/
@@ -140,27 +166,33 @@ private theorem moving_radius_budget (N R : ℕ) (hR : 4 ≤ Real.log (R + 2 : �
   simp only [div_eq_mul_inv, mul_inv_rev] at hmul hcut' ⊢
   nlinarith
 
-/-- The complete unscaled squarefree arithmetic response decays for
-every prime subset of a growing cutoff with sqrt(R_N) at most N/40.
-The same estimate holds simultaneously for all marks and polynomials. -/
-theorem exists_squarefreeEuler_quadratic_sieve_bound (y : ℝ) (hy : 1 < |y|)
+/-- A common analytic quotient bound gives quadratic-sieve decay with
+one constant and one starting order for all centers simultaneously.
+All prime subsets, marks and complex polynomial filters are covered. -/
+theorem exists_squarefreeEuler_uniform_quadratic_sieve_bound_of_analytic
+    (Y : Set ℝ) (outer M : ℝ) (hout : 1 < outer) (houtu : outer < 3 / 2) (hM0 : 0 ≤ M)
+    (hQ : ∀ y ∈ Y, AnalyticOnNhd ℂ squarefreeEulerResponse
+      (Metric.closedBall (3 / 2 + I * y) outer))
+    (hM : ∀ y ∈ Y, ∀ s ∈ Metric.closedBall (3 / 2 + I * y) outer,
+      ‖squarefreeEulerResponse s‖ ≤ M)
     (R : ℕ → ℕ) (hR : Tendsto R atTop atTop)
     (hcut : ∀ᶠ N in atTop, Real.sqrt (R N) ≤ (N : ℝ) / 40) :
     ∃ C : ℝ, 0 < C ∧ ∀ᶠ N : ℕ in atTop,
-      ∀ S : Finset ℕ, (∀ a ∈ S, a.Prime ∧ a ≤ R N) → ∀ (P : ℕ) (p : Polynomial ℂ),
+      ∀ y ∈ Y, ∀ S : Finset ℕ, (∀ a ∈ S, a.Prime ∧ a ≤ R N) → ∀ (P : ℕ) (p : Polynomial ℂ),
         ‖RoughSquarefreeBare.response p S P N (3 / 2 + I * y)‖ ≤
           C * Real.exp (-(N : ℝ) / (20 * Real.log (R N + 2 : ℝ))) *
             ∑ k ∈ p.support, ‖p.coeff k‖ := by
-  obtain ⟨C, hC, hb⟩ := exists_squarefreeEuler_variable_radius_bound y hy
+  obtain ⟨C, hC, hb⟩ := exists_squarefreeEuler_uniform_variable_radius_bound_of_analytic
+    Y outer M houtu hM0 hQ hM
   obtain ⟨A, hA, hbudget⟩ := exists_squarefreeEulerBudget_moving_radius_bound
   have hrad := ((tendsto_squarefreeEulerMovingRadius.comp hR).eventually
-    (gt_mem_nhds (squarefreeEulerRadius_bounds hy).1))
+    (gt_mem_nhds hout))
   have hx : Tendsto (fun N : ℕ ↦ (R N : ℝ) + 2) atTop atTop :=
     ((tendsto_natCast_atTop_atTop (R := ℝ)).comp hR).atTop_add tendsto_const_nhds
   have hlog := (Real.tendsto_log_atTop.comp hx).eventually_ge_atTop 4
   refine ⟨C * A, mul_pos hC hA, ?_⟩
-  filter_upwards [hR.eventually hbudget, hcut, hrad, hlog] with N hbudget hcut hrad hlog S hS P p
-  change squarefreeEulerMovingRadius (R N) < squarefreeEulerRadius y at hrad
+  filter_upwards [hR.eventually hbudget, hcut, hrad, hlog] with N hbudget hcut hrad hlog y hy S hS P p
+  change squarefreeEulerMovingRadius (R N) < outer at hrad
   change 4 ≤ Real.log (R N + 2 : ℝ) at hlog
   let r := squarefreeEulerMovingRadius (R N)
   have hr1 : 1 ≤ r := by
@@ -174,7 +206,7 @@ theorem exists_squarefreeEuler_quadratic_sieve_bound (y : ℝ) (hy : 1 < |y|)
       (inv_le_one_of_one_le₀ hr1))
   by_cases hgood : Squarefree P ∧ ∀ a ∈ P.primeFactors, a ∉ S
   · obtain ⟨hP, hPS⟩ := hgood
-    have h := hb r hr hrad.le S (fun a ha ↦ (hS a ha).1) P hP hPS p N
+    have h := hb y hy r hr hrad.le S (fun a ha ↦ (hS a ha).1) P hP hPS p N
     have ha := hbudget S hS P hP hPS
     have hrate := moving_radius_budget N (R N) hlog hcut
     calc
@@ -196,6 +228,38 @@ theorem exists_squarefreeEuler_quadratic_sieve_bound (y : ℝ) (hy : 1 < |y|)
       simp only [RoughSquarefreeBare.coefficient, if_neg hn]
     simp only [RoughSquarefreeBare.response, hz, zero_mul, tsum_zero, norm_zero]
     positivity
+
+/-- The complete unscaled squarefree arithmetic response decays for
+every prime subset of a growing cutoff with sqrt(R_N) at most N/40.
+The same estimate holds simultaneously for all marks and polynomials. -/
+theorem exists_squarefreeEuler_quadratic_sieve_bound (y : ℝ) (hy : 1 < |y|)
+    (R : ℕ → ℕ) (hR : Tendsto R atTop atTop)
+    (hcut : ∀ᶠ N in atTop, Real.sqrt (R N) ≤ (N : ℝ) / 40) :
+    ∃ C : ℝ, 0 < C ∧ ∀ᶠ N : ℕ in atTop,
+      ∀ S : Finset ℕ, (∀ a ∈ S, a.Prime ∧ a ≤ R N) → ∀ (P : ℕ) (p : Polynomial ℂ),
+        ‖RoughSquarefreeBare.response p S P N (3 / 2 + I * y)‖ ≤
+          C * Real.exp (-(N : ℝ) / (20 * Real.log (R N + 2 : ℝ))) *
+            ∑ k ∈ p.support, ‖p.coeff k‖ := by
+  let outer := squarefreeEulerRadius y
+  have hout : 1 < outer := (squarefreeEulerRadius_bounds hy).1
+  have houtu : outer < 3 / 2 := by
+    dsimp [outer]
+    linarith [(squarefreeEulerRadius_bounds hy).2.2.1]
+  have hQ := analyticOnNhd_squarefreeEulerResponse hy
+  let c : ℂ := 3 / 2 + I * y
+  obtain ⟨M, hM⟩ := ((isCompact_closedBall c outer).image_of_continuousOn
+    hQ.continuousOn.norm).isBounded.exists_norm_le
+  have hM0 : 0 ≤ M := (norm_nonneg _).trans
+    (hM _ ⟨c, Metric.mem_closedBall_self (by linarith), rfl⟩)
+  obtain ⟨C, hC, hb⟩ := exists_squarefreeEuler_uniform_quadratic_sieve_bound_of_analytic
+    {y} outer M hout houtu hM0
+    (by intro z hz; simpa only [Set.mem_singleton_iff.mp hz] using hQ)
+    (by
+      intro z hz s hs
+      subst z
+      have h := hM _ ⟨s, hs, rfl⟩
+      simpa only [Real.norm_of_nonneg (norm_nonneg _)] using h) R hR hcut
+  exact ⟨C, hC, hb.mono (fun _ h ↦ h y rfl)⟩
 
 /-- The explicit quadratic-sieve allowance tends to zero. No lower
 growth condition on the cutoff is needed for this numerical limit. -/

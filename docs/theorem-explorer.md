@@ -5,6 +5,12 @@ current zero-free endpoints. Its coloured zones describe mathematical
 families; they do not assert new implications. The README contains only a
 linked preview in its zero-free section.
 
+Select **Exact benchmark comparison** to inspect the crossover equation,
+endpoint equality, full crossover-to-ceiling interval and supplementary
+literature-width comparisons. Its theorem inspectors link to the
+[source-version and height-domain audit](zero-free-literature-frontier.md).
+The actual zero-free band remains the default view.
+
 ## Sources of evergreen metadata
 
 | Information | Authoritative source |
@@ -96,6 +102,7 @@ Enable GitHub Pages with **GitHub Actions** as its source before the first
 deployment. Publish the Lean sources together with their generated explorer,
 so every source link resolves to the same checked commit.
 
-The graph reports the proved finite band and the eventual component with
-their exact hypotheses. Comparison of three named benchmark functions is
-not an exhaustive world-record audit. RH remains open.
+The graph reports the proved finite band, eventual component and exact
+comparison interval with their hypotheses. The comparison endpoint contains
+inequalities between explicit functions; it does not import external
+zero-free proofs or establish an exhaustive world-record claim. RH remains open.

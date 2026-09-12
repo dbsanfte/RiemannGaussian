@@ -1472,6 +1472,14 @@ abstractions.
    comparison constants, duplicate table rows, and old accomplishment entries.
    Retain proof history and older bounds in the Lean sources and detailed
    documentation; the README is not a history of zero-free-region improvements.
+   Keep `Accomplishments` to exactly ten major accomplishments. Select by
+   mathematical significance, breadth and relevance to the project's goals,
+   rather than recency or the number of new lemmas. A new entry may replace
+   an existing one only if it is materially more significant; otherwise keep
+   the result in `Notable Formalisations`, its detailed documentation and the
+   generated inventory. Consolidate related theorem steps into one result
+   rather than spending multiple slots on the same advance. Preserve source
+   attribution, scope and any unevaluated thresholds when shortening text.
 9. Apply the current theorem-push commit gate. Commit and push the complete
    slice only after its actual mathematical target and all verification
    gates pass. Wait for GitHub Actions on that exact commit SHA to finish
@@ -1488,6 +1496,38 @@ compiled Lean dependency graph and the existing proof-status metadata.
 Maintain logical families and optional theorem reading labels in
 `docs/theorem-explorer/metadata.json`; theorem statements, docstrings, source
 locations, dependency edges and transitive axiom audits come from Lean.
+The README's `Zero-free region` is the first section after the introduction.
+Keep its mathematics in compact, readable display-math boxes using
+`\boxed{\begin{gathered} ... \end{gathered}}` inside GitHub-supported math
+blocks. Prefer fenced `math` blocks: they preserve TeX line breaks and
+subscripts without Markdown escape processing. Include assumptions and
+endpoint conventions in the presentation;
+do not leave formulas or coefficient ranges scattered in inline code.
+Show only the current proved union, with a direct Lean proof link. An
+eventual component must state that its coefficient-dependent threshold is
+unevaluated unless an actual numerical threshold has been proved.
+
+Keep benchmark details in `docs/zero-free-literature-frontier.md`, linked
+from the compact zero-free section. Record source version, theorem/equation,
+height range, open/closed edge, proof or retrieval status, and the relevant
+compiled comparison theorem. Distinguish inequalities between explicit
+width functions from importing external zero-free proofs. Preserve the
+exact crossover and ceiling, including the enlarged height's `+2`; strict
+improvement excludes the crossover where widths tie. No exhaustive record
+claim follows from checking only headline constants or from an eventual
+bound with an unevaluated threshold.
+
+The interactive explorer belongs inside that same README section as a
+linked preview and compact links, with the full interface on GitHub Pages.
+Place a prominent, descriptive link immediately above or alongside the
+clickable preview so readers know to open the interactive explorer.
+It must support zooming, theorem selection and hover metadata, coloured
+logical-family zones, and links to the exact Lean file and declaration line.
+Expose the evergreen repository metadata and proof audits alongside it.
+Do not hand-maintain theorem statements, source lines, dependency edges or
+audit verdicts in the README or generated site. For a new comparison or
+terminal endpoint, update its status references and reading labels in the
+metadata; retain the actual zero-free conclusion as the default endpoint.
 After changing an endpoint or its dependencies, run
 `scripts/ExportTheoremGraph.lean` and `scripts/build_theorem_explorer.py`, then
 check the generated assets and run `scripts/check_theorem_graph.cjs` and the
@@ -1496,6 +1536,9 @@ dependency-path witness. Keep the README presentation to the linked preview
 and its compact explorer/metadata/audit links. Publish only a verified source
 snapshot, with GitHub links pinned to its commit; respect the user's current
 commit and push instructions.
+Check the rendered README math and the explorer at desktop and narrow
+viewport widths after presentation changes. Confirm navigation, source-line
+links and audit links in the published artifact after exact-commit CI passes.
 
 The repository history is the durable record of verified progress. Enforce
 this regime yourself; do not rely on the user to request individual commits,

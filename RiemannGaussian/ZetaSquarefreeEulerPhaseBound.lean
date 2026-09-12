@@ -69,30 +69,27 @@ theorem envelope_pos (J : ℕ) (S : Finset ℕ) (c : ℂ) {r : ℝ} (hr : 0 ≤ 
     0 < envelope J S c r :=
   (Real.exp_pos _).trans_le (le_envelope J S c r (Metric.mem_closedBall_self hr))
 
-/-- Any proved squarefree analytic disc of radius at most `9/8`
-transports to all smaller radii and all valid marked arithmetic filters.
-The only prime-set cost is the signed two-harmonic maximum; the constant
-controls every higher harmonic and every squarefree mark independently. -/
-theorem exists_response_bound_of_analytic (y outer : ℝ)
-    (hout : 0 < outer) (houtu : outer ≤ 9 / 8)
-    (hQ : AnalyticOnNhd ℂ squarefreeEulerResponse
-      (Metric.closedBall (3 / 2 + I * y) outer)) :
-    ∃ C : ℝ, 0 < C ∧ ∀ (r : ℝ), 0 < r → r ≤ outer →
+/-- A uniformly bounded family of actual analytic quotient discs has
+one common arithmetic constant. Every center, radius, mark and polynomial
+retains its own signed two-harmonic envelope. -/
+theorem exists_uniform_response_bound_of_analytic (Y : Set ℝ) (outer M : ℝ)
+    (houtu : outer ≤ 9 / 8) (hM0 : 0 ≤ M)
+    (hQ : ∀ y ∈ Y, AnalyticOnNhd ℂ squarefreeEulerResponse
+      (Metric.closedBall (3 / 2 + I * y) outer))
+    (hM : ∀ y ∈ Y, ∀ s ∈ Metric.closedBall (3 / 2 + I * y) outer,
+      ‖squarefreeEulerResponse s‖ ≤ M) :
+    ∃ C : ℝ, 0 < C ∧ ∀ y ∈ Y, ∀ (r : ℝ), 0 < r → r ≤ outer →
       ∀ S : Finset ℕ, (∀ a ∈ S, a.Prime) → ∀ P : ℕ,
         Squarefree P → (∀ a ∈ P.primeFactors, a ∉ S) →
         ∀ (p : Polynomial ℂ) (N : ℕ),
           ‖RoughSquarefreeBare.response p S P N (3 / 2 + I * y)‖ ≤
             C * envelope 2 S (3 / 2 + I * y) r * r⁻¹ ^ N *
               ∑ k ∈ p.support, ‖p.coeff k‖ * r⁻¹ ^ k := by
-  let c : ℂ := 3 / 2 + I * y
-  obtain ⟨M, hM⟩ := ((isCompact_closedBall c outer).image_of_continuousOn
-    hQ.continuousOn.norm).isBounded.exists_norm_le
-  have hM0 : 0 ≤ M := (norm_nonneg _).trans
-    (hM _ ⟨c, Metric.mem_closedBall_self hout.le, rfl⟩)
   obtain ⟨K, hK, hb⟩ := exists_uniform_mark_bound 2
     (by norm_num : (0 : ℝ) < 3 / 8) (by norm_num)
   refine ⟨(M + 1) * K, mul_pos (by linarith) hK, ?_⟩
-  intro r hr hro S hS P hP hPS p N
+  intro y hy r hr hro S hS P hP hPS p N
+  let c : ℂ := 3 / 2 + I * y
   let A := envelope 2 S c r
   have hA : 0 < A := envelope_pos 2 S c hr.le
   have hedge (s : ℂ) (hs : s ∈ Metric.closedBall c r) : 3 / 8 ≤ s.re := by
@@ -109,7 +106,7 @@ theorem exists_response_bound_of_analytic (y outer : ℝ)
     (hb S hS P hP hPS s (hedge s hs)).trans
       (mul_le_mul_of_nonneg_left (le_envelope 2 S c r hs) hK.le)
   have ha : AnalyticOnNhd ℂ (fun s ↦ squarefreeEulerMultiplier S P s * squarefreeEulerResponse s)
-      (Metric.closedBall c r) := fun s hs ↦ (hf s hs).mul (hQ s (hsub hs))
+      (Metric.closedBall c r) := fun s hs ↦ (hf s hs).mul (hQ y hy s (hsub hs))
   have hd : DiffContOnCl ℂ (fun s ↦ squarefreeEulerMultiplier S P s * squarefreeEulerResponse s)
       (Metric.ball c r) := by
     apply DifferentiableOn.diffContOnCl
@@ -119,8 +116,7 @@ theorem exists_response_bound_of_analytic (y outer : ℝ)
       ‖squarefreeEulerMultiplier S P s * squarefreeEulerResponse s‖ ≤
         ((M + 1) * K) * A := by
     have hsB := Metric.sphere_subset_closedBall hs
-    have hbound := hM _ ⟨s, hsub hsB, rfl⟩
-    rw [Real.norm_of_nonneg (norm_nonneg _)] at hbound
+    have hbound := hM y hy s (hsub hsB)
     rw [norm_mul]
     exact (mul_le_mul (hfA s hsB) (show ‖squarefreeEulerResponse s‖ ≤ M + 1 by linarith)
       (norm_nonneg _) (mul_nonneg hK.le hA.le)).trans_eq (by ring)
@@ -141,6 +137,35 @@ theorem exists_response_bound_of_analytic (y outer : ℝ)
     _ = _ := by
       simp_rw [pow_add, Finset.mul_sum]
       exact Finset.sum_congr rfl (fun _ _ ↦ by ring)
+
+/-- Any proved squarefree analytic disc of radius at most `9/8`
+transports to all smaller radii and all valid marked arithmetic filters.
+The only prime-set cost is the signed two-harmonic maximum; the constant
+controls every higher harmonic and every squarefree mark independently. -/
+theorem exists_response_bound_of_analytic (y outer : ℝ)
+    (hout : 0 < outer) (houtu : outer ≤ 9 / 8)
+    (hQ : AnalyticOnNhd ℂ squarefreeEulerResponse
+      (Metric.closedBall (3 / 2 + I * y) outer)) :
+    ∃ C : ℝ, 0 < C ∧ ∀ (r : ℝ), 0 < r → r ≤ outer →
+      ∀ S : Finset ℕ, (∀ a ∈ S, a.Prime) → ∀ P : ℕ,
+        Squarefree P → (∀ a ∈ P.primeFactors, a ∉ S) →
+        ∀ (p : Polynomial ℂ) (N : ℕ),
+          ‖RoughSquarefreeBare.response p S P N (3 / 2 + I * y)‖ ≤
+            C * envelope 2 S (3 / 2 + I * y) r * r⁻¹ ^ N *
+              ∑ k ∈ p.support, ‖p.coeff k‖ * r⁻¹ ^ k := by
+  let c : ℂ := 3 / 2 + I * y
+  obtain ⟨M, hM⟩ := ((isCompact_closedBall c outer).image_of_continuousOn
+    hQ.continuousOn.norm).isBounded.exists_norm_le
+  have hM0 : 0 ≤ M := (norm_nonneg _).trans
+    (hM _ ⟨c, Metric.mem_closedBall_self hout.le, rfl⟩)
+  obtain ⟨C, hC, hb⟩ := exists_uniform_response_bound_of_analytic {y} outer M houtu hM0
+    (by intro z hz; simpa only [Set.mem_singleton_iff.mp hz] using hQ)
+    (by
+      intro z hz s hs
+      subst z
+      have h := hM _ ⟨s, hs, rfl⟩
+      simpa only [Real.norm_of_nonneg (norm_nonneg _)] using h)
+  exact ⟨C, hC, hb y rfl⟩
 
 /-- The existing unconditional Fermi disc discharges the analytic
 premise for the original arithmetic response at every `abs(y)>1`. -/
