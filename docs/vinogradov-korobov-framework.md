@@ -1,4 +1,4 @@
-# Vinogradov–Korobov formalization: prime-power rigidity and Gaussian resonance
+# Vinogradov–Korobov formalization: signed congruencing and Gaussian resonance
 
 **Status:** the exact finite logarithmic expansion, product-shift averaging
 of actual Dirichlet blocks, transport through their full damping, shifted
@@ -9,6 +9,9 @@ finite sets of distinct integers. Both moment factors in the actual
 Gaussian product-sum bound have explicit costs. Complete nonsingular
 power-sum fibres are now controlled at every prime-power precision,
 including the unequal degree-by-degree moduli used in congruencing.
+The signed version retains both sign classes and an arbitrary common
+translation, and now bounds the nonsingular block projection of the
+original moment equations when both tails lie in one coarse residue class.
 The Vinogradov–Korobov zeta growth estimate
 and zero-free region remain unproved in this repository. No external
 analytic estimate is installed as an axiom or as a claimed discharged premise.
@@ -73,15 +76,15 @@ height `t`, integer block length `L`, and finite integer shift sets `A,B`.
 Write `m=|A||B|`, `f(n)=(z+n)^(-it)` and
 
 ```math
-C_p=\sum_{j<p}f(j)-\sum_{j<p}f(L+j),\qquad
+C_p=\sum_{j\lt p}f(j)-\sum_{j\lt p}f(L+j),\qquad
 C=\sum_{a\in A,b\in B}C_{ab}.
 ```
 
 The theorem `averaged_dirichlet_identity` keeps the original signed boundary:
 
 ```math
-m\sum_{n<L}f(n)=
-\sum_{n<L}e^{-it\log(z+n)}
+m\sum_{n\lt L}f(n)=
+\sum_{n\lt L}e^{-it\log(z+n)}
   \sum_{a\in A,b\in B}e^{-it\log(1+ab/(z+n))}+C.
 ```
 
@@ -118,7 +121,7 @@ then applies exact Abel summation. For any nonnegative decreasing weights
 
 ```math
 \left|\sum_{n=0}^{N}w_n f(n)-
-\left(w_N F_{N+1}+\sum_{n<N}(w_n-w_{n+1})F_{n+1}\right)\right|
+\left(w_N F_{N+1}+\sum_{n\lt N}(w_n-w_{n+1})F_{n+1}\right)\right|
 \le E\sum_{n=0}^{N}w_n.
 ```
 
@@ -180,7 +183,7 @@ retains the full Jacobian of the first `k` power sums. Its determinant is
 
 ```math
 \det\left(jx_i^{j-1}\right)_{1\le j,i\le k}
-=k!\prod_{i<l}(x_l-x_i).
+=k!\prod_{i\lt l}(x_l-x_i).
 ```
 
 For a prime `p>k` and entries distinct modulo `p`, every factor is nonzero.
@@ -215,13 +218,81 @@ including all reductions between moduli. Specializing to `n=kb` and
 \boxed{k!\,p^{\,b k(k-1)/2}}.
 ```
 
-This formalizes classical nonsingular congruence counting, relevant to the
-unweighted, unshifted base of
-[Wooley (2012), Section 4, Lemma 4.1](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
-It is not a formalization of that lemma's full signed and conditioned form.
-The singular classes, their conditioning, and the ensuing high-moment
-iteration remain open. No new zeta-growth estimate or zero-free width is
-inferred from this count alone.
+These are classical nonsingular congruencing ingredients. Their signed and
+translated form is proved next. The more general coarse conditioning in
+[Wooley (2012), Section 4, Lemma 4.1](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf)
+and the ensuing high-moment iteration remain open.
+
+## Keeping the signs through reconstruction and conditioning
+
+For a fixed sign pattern `epsilon_i` in `{+1,-1}`, let `r_+` and `r_-`
+be its two class sizes. In every domain where `1,...,k` are nonzero,
+[VinogradovSignedRigidity.signed_fibre_card](../RiemannGaussian/VinogradovSignedRigidity.lean)
+proves that a tuple of distinct entries has exactly
+
+```math
+r_+!\,r_-!
+```
+
+ordered realizations of its complete first-`k` signed moment vector.
+Each realization permutes entries within the original sign classes.
+Crossing the positive and negative entries converts the signed equations
+into ordinary Newton identities. Distinctness prevents an entry from
+cancelling against an opposite sign from the same original tuple. The
+proof preserves the colour partition before counting its permutations.
+This is a structural refinement of the factorial allowance, not a claim
+of historical novelty.
+
+[VinogradovWeightedLifting.weighted_prime_power_rigidity](../RiemannGaussian/VinogradovWeightedLifting.lean)
+keeps arbitrary integer coefficients nonzero modulo `p` throughout the
+exact nonlinear lifting argument. Both signs satisfy that condition.
+[VinogradovSignedCongruence.degree_moduli_card_le](../RiemannGaussian/VinogradovSignedCongruence.lean)
+therefore proves, for every prime `p>k`, integer `eta`, and target vector `a`,
+
+```math
+\#\left\{x\in\{0,\ldots,p^{kb}-1\}^k:
+\begin{array}{l}
+x_i\not\equiv x_l\pmod p\quad(i\ne l),\\
+\sum_i\epsilon_i(x_i-\eta)^j\equiv a_j\pmod{p^{jb}}
+\quad(1\le j\le k)
+\end{array}\right\}
+\le r_+!\,r_-!\,p^{\,b k(k-1)/2}.
+```
+
+Before taking this product of coordinate refinement costs,
+`nonsingular_preimage_le` retains an arbitrary correlated family of
+complete targets with cost `r_+!*r_-!` per target. The exact algebraic
+fibre description remains available upstream of either inequality.
+
+[VinogradovConditionedMoment.conditioned_power_difference](../RiemannGaussian/VinogradovConditionedMoment.lean)
+connects these congruences to the original equations. If
+
+```math
+\sum_i\epsilon_i x_i^d+\sum_l v_l^d
+=\sum_i\epsilon_i y_i^d+\sum_l w_l^d\qquad(1\le d\le k),
+\qquad v_l\equiv w_l\equiv\eta\pmod{p^b},
+```
+
+then the full binomial translation, including its degree-zero identity,
+gives
+
+```math
+p^{jb}\mid\sum_i\epsilon_i(x_i-\eta)^j
+           -\sum_i\epsilon_i(y_i-\eta)^j\qquad(1\le j\le k).
+```
+
+The terminal theorem `conditioned_block_card_le` applies the preceding
+count to the actual nonsingular residue blocks that admit such tail
+completions, for every fixed `y`. The tails may be arbitrary integer tuples;
+their existence implies the congruences. This counts the projected blocks,
+**not the number of their tail completions or the whole moment**.
+
+All these counts require distinct residues modulo `p`. They cover the
+signed, translated nonsingular base, not the full coarse-conditioned
+`a>0` statement of Wooley's lemma. Singular block conditioning, tail
+completion bounds, the high-moment iteration and quantitative joint
+resonance control remain open. No exponential-sum saving, new zeta-growth
+estimate, VK zero-free region or RH proof is inferred from this slice.
 
 ## Shifted correlations and bounded complex weights
 
@@ -341,7 +412,7 @@ For ordered tuples `b=(b_1,...,b_s)`, write
 
 ```math
 T_{r,s}\le e^{Q_a(\mathcal C_r)}
- \operatorname{Re}\sum_{b,c}W_b\overline{W_c}\,K_a(X_b-X_c).
+ \mathrm{Re}\sum_{b,c}W_b\overline{W_c}\,K_a(X_b-X_c).
 ```
 
 The Gaussian factor pays for the full support majorization. There is no
@@ -387,7 +458,7 @@ For every bounded complex weight family, the already proved shifted-count
 majorant gives `|C_w(h)|≤J_s(v)`. The downstream theorem therefore proves
 
 ```math
-\operatorname{Re}G_s\le J_s(v)\,\mathcal R_s(a,\gamma,v),\qquad
+\mathrm{Re}G_s\le J_s(v)\,\mathcal R_s(a,\gamma,v),\qquad
 \mathcal R_s=\sum_{h\in\mathcal D_s(v)}K_a(\gamma h).
 ```
 

@@ -95,7 +95,7 @@
     },
     {
       "id": "vk-phase",
-      "label": "Vinogradov–Korobov · prime-power rigidity and resonance",
+      "label": "Vinogradov–Korobov · signed congruencing and resonance",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -308,6 +308,38 @@
         [
           "gaussianPhaseBandToolkit",
           "vkDegreeModuliTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSignedReconstructionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExactSignedFibreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkWeightedPrimeLiftTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSignedPrimePermutationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSignedCorrelatedTargetsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSignedDegreeModuliTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkConditionedDivisibilityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkConditionedBlockTheorem"
         ]
       ],
       "scopePath": [
@@ -2602,6 +2634,46 @@
     },
     "RiemannGaussian.VinogradovAnisotropicCongruence.degree_moduli_card_le": {
       "label": "Degree-by-degree moduli give the triangular exponent bound",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovSignedRigidity.signed_power_permutation": {
+      "label": "Signed moments determine entries and their original colours",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovSignedRigidity.signed_fibre_card": {
+      "label": "A signed fibre has exactly the two sign factorials",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovWeightedLifting.weighted_prime_power_rigidity": {
+      "label": "Nonzero modular weights survive every nonlinear prime-power lift",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovSignedCongruence.prime_power_permutation": {
+      "label": "Every prime-power precision retains the colour-preserving permutation",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovSignedCongruence.nonsingular_preimage_le": {
+      "label": "Signed translated target families retain their correlations",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovSignedCongruence.degree_moduli_card_le": {
+      "label": "Signed translated congruences pay the smaller factorial allowance",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditionedMoment.conditioned_power_difference": {
+      "label": "Conditioned tails force every actual degree congruence",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditionedMoment.conditioned_block_card_le": {
+      "label": "The original moment equations receive a nonsingular block count",
       "documentation": "docs/vinogradov-korobov-framework.md",
       "overview": true
     }

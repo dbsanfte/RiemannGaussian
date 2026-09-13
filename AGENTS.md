@@ -1808,12 +1808,24 @@ with the existing integer theorem. Arbitrary correlated target families
 retain their actual cardinality before taking coordinate products.
 `VinogradovAnisotropicCongruence` pays separate precisions e_i<=n with
 p^(sum(n-e_i))*k!, and instantiates the actual degree moduli p^b,...,p^(kb)
-with p^(b*k*(k-1)/2)*k!. The count is for canonical residue tuples with
-distinct residues modulo p; it is not a bound for all tuples or for the
-singular part. These are classical congruencing ingredients, not a claimed
-novel theorem or a formalization of Wooley's full signed, translated,
-conditioned lemma. Singular-class conditioning and the high-moment
-iteration remain open. Stronger high-order moment bounds
+with p^(b*k*(k-1)/2)*k!. The unsigned count is for canonical residue tuples with
+distinct residues modulo p. `VinogradovSignedRigidity` now reconstructs
+any complete signed moment fibre over a domain as exactly the permutations
+within its two sign classes, with cardinality r+!*r-! for distinct reference
+entries. `VinogradovWeightedLifting` pays all nonlinear remainders with
+arbitrary integer weights nonzero modulo p. `VinogradovSignedCongruence`
+retains the signs and any common integer translation at all precisions,
+with correlated-target cost T.card*r+!*r-! and degree-modulus cost
+p^(b*k*(k-1)/2)*r+!*r-!. `VinogradovConditionedMoment` retains the complete
+binomial translation and derives the actual degree congruences when both
+tail tuples lie in eta modulo p^b. Its `conditioned_block_card_le` bounds
+the nonsingular residue-block projection of those original moment equations.
+It does not count tail completions or the whole moment. Keep the exact
+sign partition and correlated targets upstream of their product bounds.
+These are classical congruencing ingredients, not a historical novelty
+claim or a proof of Wooley's full coarse-conditioned a>0 lemma. Singular
+block conditioning, tail completion bounds and the high-moment iteration
+remain open. Stronger high-order moment bounds
 and quantitative joint resonance control,
 the required exponential-sum saving, zeta growth and the VK zero-free region
 remain unproved here. Do not add a VK curve to the proved union or promote a
