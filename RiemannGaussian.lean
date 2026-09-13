@@ -1495,6 +1495,7 @@ import RiemannGaussian.VinogradovKorobovBlock
 import RiemannGaussian.VinogradovKorobovDamping
 import RiemannGaussian.VinogradovMeanValue
 import RiemannGaussian.VinogradovShiftedMoment
+import RiemannGaussian.VinogradovPowerSumRigidity
 import RiemannGaussian.VinogradovMomentReduction
 import RiemannGaussian.VinogradovGaussianKernel
 import RiemannGaussian.VinogradovGaussianResonance

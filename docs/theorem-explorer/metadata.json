@@ -95,7 +95,7 @@
     },
     {
       "id": "vk-phase",
-      "label": "Vinogradov–Korobov · centered Gaussian resonance",
+      "label": "Vinogradov–Korobov · rigidity and Gaussian resonance",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -260,6 +260,26 @@
         [
           "gaussianPhaseBandToolkit",
           "vkActualQuarterTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRigidityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPermutationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDiagonalMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAllMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExplicitMomentTheorem"
         ]
       ],
       "scopePath": [
@@ -2495,6 +2515,31 @@
     "RiemannGaussian.ZetaGaussianExpandedComparison.ford_lt_floor": {
       "label": "The full Ford family is below the extended comparison floor",
       "documentation": "docs/zero-free-literature-frontier.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovPowerSumRigidity.multiset_eq_of_power_sums": {
+      "label": "The first r powers determine the entire tuple multiset",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovPowerSumRigidity.collision_iff_perm": {
+      "label": "Diagonal-range collisions are exactly permutations",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovPowerSumRigidity.integer_moment_le": {
+      "label": "Every distinct integer set has the diagonal moment bound",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovPowerSumRigidity.integer_moment_le_all": {
+      "label": "The diagonal base gives an explicit bound at every order",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovMoment.interval_explicit_moment_bound": {
+      "label": "Both homogeneous costs are paid in the actual product-sum bound",
+      "documentation": "docs/vinogradov-korobov-framework.md",
       "overview": true
     }
   }

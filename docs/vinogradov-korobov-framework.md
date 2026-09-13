@@ -1,9 +1,12 @@
-# Vinogradov–Korobov formalization: centered Gaussian resonance
+# Vinogradov–Korobov formalization: power-sum rigidity and Gaussian resonance
 
 **Status:** the exact finite logarithmic expansion, product-shift averaging
 of actual Dirichlet blocks, transport through their full damping, shifted
 moment domination and the two-Hölder reduction of the actual polynomial
-sum are proved.
+sum are proved. Newton's identities now give the complete diagonal-range
+moment bound and an elementary estimate at every order, for arbitrary
+finite sets of distinct integers. Both moment factors in the actual
+Gaussian product-sum bound have explicit costs.
 The Vinogradov–Korobov zeta growth estimate
 and zero-free region remain unproved in this repository. No external
 analytic estimate is installed as an axiom or as a claimed discharged premise.
@@ -12,7 +15,8 @@ The research lead is [Bellotti (2023), Section 8](https://arxiv.org/html/2306.10
 That argument connects shifted logarithmic sums to polynomial phases and
 then uses high mean-value estimates. The current implementation closes the
 averaging, phase approximation, damping transport and moment reduction;
-the quantitative high-moment estimates remain open.
+the stronger high-moment and resonance estimates needed for the VK saving
+remain open.
 
 ## Exact signed expansion
 
@@ -142,6 +146,30 @@ The upstream weighted identity keeps all matching-frequency cross terms,
 `w_i*conj(w_j)`. Thus later bounds can use the actual frequency collisions
 rather than assume independent phases. This is the classical moment/count
 identity, not a new quantitative saving or a historical novelty claim.
+
+## Power-sum rigidity and quantitative base estimates
+
+[VinogradovPowerSumRigidity](../RiemannGaussian/VinogradovPowerSumRigidity.lean)
+evaluates Mathlib's proved Newton identities at the actual integer tuples.
+Equal power sums through degree `r` force equal elementary symmetric
+coefficients, hence the same root polynomial and the same multiset,
+including repeated entries. For any injective integer-valued family on
+`N` indices and `r≤k`, `collision_iff_perm` therefore proves that every
+collision is a permutation of the original tuple. There are at most `r!`
+such ordered tuples. The resulting bound is
+
+```math
+J_{r,k}\le r!N^r\quad(r\le k),\qquad
+J_{r,k}\le m!N^{2r-m}\quad(m=\min(r,k)).
+```
+
+The second estimate uses the first at order `m` and pays the pointwise
+cardinality bound only for the extra powers. Both are unconditional,
+uniform in the chosen finite integer set, and include empty sets and
+zero orders. The proof keeps multiplicity before bounding permutation
+counts. This is a formalization of the classical diagonal argument;
+no historical novelty is claimed. It supplies quantitative base estimates,
+not the stronger high-order saving needed for the full VK argument.
 
 ## Shifted correlations and bounded complex weights
 
@@ -378,14 +406,24 @@ literal product sum. This quarters the **Gaussian exponent cost**; it
 does not quarter the whole estimate, establish the needed arithmetic
 power saving, or enlarge the current zero-free region.
 
+`interval_explicit_moment_bound` now inserts these elementary estimates
+for **both** homogeneous moments in the actual product sum. For any
+nonempty first interval of length `M` and any finite second shift set `B`,
+it retains the exact phase coefficients, quartered Gaussian exponent and
+whole joint resonance envelope. The signed Gram identities and original
+moment expressions remain available upstream. No phase-spacing condition
+is assumed or silently discharged by this substitution.
+
 ## Remaining analytic proof obligations
 
 The averaging, boundary, Taylor and damping steps, shifted-moment majorants
 and two-Hölder reduction are now proved for the actual terms, followed by
 the complete Gaussian smoothing, centered exponent improvement and explicit
-weighted-fibre and tail bounds. The next missing
-step bounds the joint resonance sum through coefficient spacing, together
-with quantitative homogeneous mean-value estimates for both factors. The
+weighted-fibre and tail bounds. Elementary homogeneous moment costs are
+now proved and inserted into the actual product-sum theorem. The next
+step bounds the joint resonance sum through coefficient spacing and
+establishes the stronger high-order mean-value estimates required by the
+VK argument. The
 stronger signed fibre identity also remains available. Preserve
 the exact alignment weights and coordinate correlations while developing
 that estimate. The identities and smoothing bound alone give no

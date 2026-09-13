@@ -9,6 +9,7 @@ import RiemannGaussian.VinogradovGaussianKernel
 import RiemannGaussian.VinogradovGaussianResonance
 import RiemannGaussian.VinogradovGaussianBounds
 import RiemannGaussian.VinogradovGaussianCentering
+import RiemannGaussian.VinogradovPowerSumRigidity
 
 /-!
 # The actual coupled product phase enters the moment reduction
@@ -424,6 +425,33 @@ theorem interval_quarter_envelope_bound (k : ℕ) {M : ℕ} (hM : 0 < M)
   apply (interval_centered_envelope_bound k M t z B hr hs a ha (intervalCenter r k M)).trans
   exact mul_le_mul_of_nonneg_right
     (mul_le_mul_of_nonneg_right (mul_le_mul_of_nonneg_left hQ hp) hK) hE
+
+/-- The original interval product sum has an entirely explicit moment
+cost at every order. Newton rigidity pays both homogeneous factors;
+the complete joint resonance envelope and quartered Gaussian cost remain.
+Stronger high-moment or resonance savings are not assumed here. -/
+theorem interval_explicit_moment_bound (k : ℕ) {M : ℕ} (hM : 0 < M)
+    (t z : ℝ) (B : Finset ℕ) {r s : ℕ} (hr : 1 ≤ r) (hs : 1 ≤ s)
+    (a : Fin k → ℝ) (ha : ∀ j, 0 < a j) :
+    let v := fun b : Fin M => monomialFrequency k (b.val + 1)
+    let u := fun b : B => monomialFrequency k b.val
+    ‖∑ b : Fin M, ∑ c ∈ B,
+        polynomialPhase k t z ((b.val + 1 : ℕ) : ℝ) c‖ ^ (2 * r * s) ≤
+      (B.card : ℝ) ^ ((r - 1) * (2 * s)) * (M : ℝ) ^ (r * (2 * s - 2)) *
+        ((M : ℝ) ^ (2 * r - min r k) * (min r k).factorial) *
+        Real.exp (VinogradovGaussianKernel.supportCost a
+          (frequencySupport (VinogradovShiftedMoment.tupleFrequency r v)) / 4) *
+        ((B.card : ℝ) ^ (2 * s - min s k) * (min s k).factorial) *
+        VinogradovGaussianBounds.resonanceEnvelope s a (phaseCoefficients k t z) u := by
+  dsimp only
+  have hK : 0 ≤ moment s (fun b : B => monomialFrequency k b.val) :=
+    MeasureTheory.integral_nonneg (fun _ => pow_nonneg (norm_nonneg _) _)
+  have hE := VinogradovGaussianBounds.resonanceEnvelope_nonneg s ha
+    (phaseCoefficients k t z) (fun b : B => monomialFrequency k b.val)
+  apply (interval_quarter_envelope_bound k hM t z B hr hs a ha).trans
+  gcongr
+  · exact VinogradovPowerSumRigidity.meanValue_le_all r k M
+  · exact VinogradovPowerSumRigidity.finite_monomial_moment_le s k B
 
 end
 end RiemannGaussian.VinogradovKorobovMoment

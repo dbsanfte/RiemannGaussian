@@ -1790,9 +1790,17 @@ Gaussian exponent cost, proved in `interval_centered_cost_le_quarter` for
 positive tuple order and a nonempty interval. The actual product sum uses
 this in `interval_quarter_envelope_bound`. This is a quartering of the
 exponent cost, not of the whole product bound or a new zero-free width.
-The finite joint resonance envelope and both high moments still need
-arithmetic estimates. Keep the exact signed centred Gram identity upstream.
-Quantitative Vinogradov high-moment savings,
+`VinogradovPowerSumRigidity` now evaluates Newton identities for arbitrary
+integer tuples and retains repeated entries in the resulting multiset
+equality. For every finite set of distinct integers, collisions at `r<=k`
+are exactly permutations, giving `J_(r,k)<=r!*N^r`. At every order the
+elementary bound is `min(r,k)!*N^(2*r-min(r,k))`. Both moment factors are
+paid explicitly in `interval_explicit_moment_bound`, with the same quartered
+Gaussian cost and complete joint resonance envelope. These are classical
+base estimates, not historical novelty or the full VK saving. Do not keep
+listing every homogeneous moment estimate as unproved. Keep the exact
+signed centred Gram identity upstream. Stronger high-order moment bounds
+and quantitative joint resonance control,
 the required exponential-sum saving, zeta growth and the VK zero-free region
 remain unproved here. Do not add a VK curve to the proved union or promote a
 conditional transfer as that analytic proof. The independent cofinal signed

@@ -111,11 +111,12 @@ Make the proved region cover every applicable benchmark, preserving each height 
 
 ## Latest Update
 
-**Lean now proves the 67.31% simple-critical-zero certificate.**
-The cumulative and dyadic bounds have no remaining premise; their starting
-height is unevaluated. Verification is optional and cached.
-Benchmark comparison also reaches log-height 480,000; global coverage and
-the VK arithmetic savings remain open.
+**Newton's identities now bound both moments in the actual VK product sum.**
+The bounds hold for every finite set of distinct integers and retain the
+complete joint Gaussian resonance term. Stronger arithmetic savings and
+global benchmark coverage remain open. The proved 67.31% simple-zero
+certificate has an unevaluated starting height and separate optional,
+cached verification.
 [Certificate and audit](docs/numerical-certificate.md)
 · [Current region](docs/zeta-unified-zero-free.md)
 · [VK proof status](docs/vinogradov-korobov-framework.md).
