@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**102 modules.** Source links open the definitions, hypotheses and proofs.
+**109 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -50,6 +50,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaDominatedMomentBand](../../RiemannGaussian/ZetaDominatedMomentBand.lean)
 - [ZetaDominatedResonanceDecay](../../RiemannGaussian/ZetaDominatedResonanceDecay.lean)
 - [ZetaDominatedWeightedFourier](../../RiemannGaussian/ZetaDominatedWeightedFourier.lean)
+- [ZetaFactorialFilterLocalization](../../RiemannGaussian/ZetaFactorialFilterLocalization.lean)
 - [ZetaLogMomentTilt](../../RiemannGaussian/ZetaLogMomentTilt.lean)
 - [ZetaLogWindowLocalization](../../RiemannGaussian/ZetaLogWindowLocalization.lean)
 - [ZetaMomentPoleJet](../../RiemannGaussian/ZetaMomentPoleJet.lean)
@@ -57,6 +58,10 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaOnePrimeSquarefreeBound](../../RiemannGaussian/ZetaOnePrimeSquarefreeBound.lean)
 - [ZetaPositiveCompositeMoments](../../RiemannGaussian/ZetaPositiveCompositeMoments.lean)
 - [ZetaPositiveCompositeResponse](../../RiemannGaussian/ZetaPositiveCompositeResponse.lean)
+- [ZetaPrimeEnvelopeRate](../../RiemannGaussian/ZetaPrimeEnvelopeRate.lean)
+- [ZetaPrimeTailWindowObstruction](../../RiemannGaussian/ZetaPrimeTailWindowObstruction.lean)
+- [ZetaPrimeWindow](../../RiemannGaussian/ZetaPrimeWindow.lean)
+- [ZetaPrimeWindowLocalization](../../RiemannGaussian/ZetaPrimeWindowLocalization.lean)
 - [ZetaQuadraticPrimeSieve](../../RiemannGaussian/ZetaQuadraticPrimeSieve.lean)
 - [ZetaQuadraticWindowSource](../../RiemannGaussian/ZetaQuadraticWindowSource.lean)
 - [ZetaQuarterKernelFourierBudget](../../RiemannGaussian/ZetaQuarterKernelFourierBudget.lean)
@@ -103,7 +108,9 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaSquarefreeEulerQuadraticSieveDecay](../../RiemannGaussian/ZetaSquarefreeEulerQuadraticSieveDecay.lean)
 - [ZetaSquarefreeEulerReserveRadius](../../RiemannGaussian/ZetaSquarefreeEulerReserveRadius.lean)
 - [ZetaSquarefreeEulerResponse](../../RiemannGaussian/ZetaSquarefreeEulerResponse.lean)
+- [ZetaSquarefreeGaussianAllHeight](../../RiemannGaussian/ZetaSquarefreeGaussianAllHeight.lean)
 - [ZetaSquarefreeGaussianBand](../../RiemannGaussian/ZetaSquarefreeGaussianBand.lean)
+- [ZetaSquarefreeGaussianRetainedRegion](../../RiemannGaussian/ZetaSquarefreeGaussianRetainedRegion.lean)
 - [ZetaSquarefreeGaussianSieve](../../RiemannGaussian/ZetaSquarefreeGaussianSieve.lean)
 - [ZetaSquarefreeLocalWindow](../../RiemannGaussian/ZetaSquarefreeLocalWindow.lean)
 - [ZetaSquarefreeLogLogRadius](../../RiemannGaussian/ZetaSquarefreeLogLogRadius.lean)

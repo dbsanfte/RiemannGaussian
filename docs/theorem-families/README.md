@@ -2,7 +2,7 @@
 
 # Theorem-family index
 
-Browse all **1,504 Lean source modules** by mathematical family. Every listed module is reachable from the root library imports.
+Browse all **1,532 Lean source modules** by mathematical family. Every listed module is reachable from the root library imports.
 
 The family names, colours and assignments share the explorer's [evergreen metadata](../theorem-explorer/metadata.json). [Open the interactive proof chain](https://dbsanfte.github.io/RiemannGaussian/) for theorem statements, dependency paths and axiom audits.
 
@@ -11,17 +11,17 @@ The family names, colours and assignments share the explorer's [evergreen metada
 | [Zeta & xi geometry](foundations.md) | 87 | Actual zeros, canonical products, reflection and analytic multiplicity. |
 | [Suzuki machinery](suzuki.md) | 359 | Suzuki screw functions, Landau compensation, transport, signed currents and contour identities. |
 | [Eta & reflection](eta.md) | 388 | Paired eta identities, continuation and exact reflected tails. |
-| [Gaussian heat](heat.md) | 114 | Gaussian transforms, smoothed zero sources, exact prime identities and retained remainders. |
-| [Phase positivity](phase.md) | 88 | Coupled phase kernels, contact factorization and the mathematically defined admissible family. |
+| [Gaussian heat](heat.md) | 115 | Gaussian transforms, smoothed zero sources, exact prime identities and retained remainders. |
+| [Phase positivity](phase.md) | 89 | Coupled phase kernels, contact factorization and the mathematically defined admissible family. |
 | [Oscillatory sums](oscillation.md) | 59 | Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates. |
-| [Euler & prime structure](euler.md) | 18 | Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prime expansions. |
-| [Signed strip geometry](strip.md) | 63 | Complex analytic estimates, disc-to-strip maps, complete divisors and signed boundary identities. |
+| [Euler & prime structure](euler.md) | 28 | Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prime expansions. |
+| [Signed strip geometry](strip.md) | 66 | Complex analytic estimates, disc-to-strip maps, complete divisors and signed boundary identities. |
 | [Gamma & completion](completion.md) | 18 | Archimedean corrections, digamma/trigamma estimates and exact pole cancellation. |
 | [Order & height limits](asymptotic.md) | 9 | Joint derivative-order schedules and the eventual logarithmic zero-free component. |
-| [Zero-free conclusion](region.md) | 11 | The complete budget, actual zero contradiction and its exact height scope. |
+| [Zero-free conclusion](region.md) | 17 | The complete budget, actual zero contradiction and its exact height scope. |
 | [Finite kernels & Hardy models](finite.md) | 97 | Finite root geometry, Hardy and Pick kernels, spectral energy and passage to entire functions. |
 | [Hybrid matrices & phase colour](hybrid.md) | 65 | Continuous and finite eta representations, signed Gram matrices, heat operators and rank–trace tools. Source files retain attribution for adapted results. |
-| [Squarefree & Möbius arithmetic](arithmetic.md) | 102 | Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem. |
+| [Squarefree & Möbius arithmetic](arithmetic.md) | 109 | Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem. |
 | [Hilbert inequalities & sampling](hilbert.md) | 10 | The attributed Montgomery–Vaughan Hilbert inequality and finite algebraic and inverse-sampling tools. |
 | [Zero-proportion interfaces](certificates.md) | 16 | Attributed Zeta23 baselines and project extensions. Individual sources distinguish external results from new deductions. |
 

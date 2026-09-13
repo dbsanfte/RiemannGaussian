@@ -6,7 +6,7 @@
 
 Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prime expansions.
 
-**18 modules.** Source links open the definitions, hypotheses and proofs.
+**28 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [OscillatoryPowerPrimitive](../../RiemannGaussian/OscillatoryPowerPrimitive.lean)
 - [ZetaEulerAngularBound](../../RiemannGaussian/ZetaEulerAngularBound.lean)
@@ -21,8 +21,18 @@ Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prim
 - [ZetaEulerLogProfile](../../RiemannGaussian/ZetaEulerLogProfile.lean)
 - [ZetaEulerOscillation](../../RiemannGaussian/ZetaEulerOscillation.lean)
 - [ZetaEulerPoissonBound](../../RiemannGaussian/ZetaEulerPoissonBound.lean)
+- [ZetaEulerPoissonDifference](../../RiemannGaussian/ZetaEulerPoissonDifference.lean)
 - [ZetaEulerReciprocalAllowance](../../RiemannGaussian/ZetaEulerReciprocalAllowance.lean)
 - [ZetaEulerTruncation](../../RiemannGaussian/ZetaEulerTruncation.lean)
 - [ZetaEulerUniformRemainder](../../RiemannGaussian/ZetaEulerUniformRemainder.lean)
+- [ZetaGaussianPrimeBlocks](../../RiemannGaussian/ZetaGaussianPrimeBlocks.lean)
+- [ZetaGaussianPrimeEnergyBound](../../RiemannGaussian/ZetaGaussianPrimeEnergyBound.lean)
+- [ZetaGaussianPrimeEnergyDecay](../../RiemannGaussian/ZetaGaussianPrimeEnergyDecay.lean)
+- [ZetaGaussianPrimeReduction](../../RiemannGaussian/ZetaGaussianPrimeReduction.lean)
 - [ZetaLogPrimeSeries](../../RiemannGaussian/ZetaLogPrimeSeries.lean)
+- [ZetaPrimeDiscrepancyWork](../../RiemannGaussian/ZetaPrimeDiscrepancyWork.lean)
+- [ZetaPrimeLatticeCarrier](../../RiemannGaussian/ZetaPrimeLatticeCarrier.lean)
 - [ZetaReciprocalDirichlet](../../RiemannGaussian/ZetaReciprocalDirichlet.lean)
+- [ZetaSquarefreeVaughanProjection](../../RiemannGaussian/ZetaSquarefreeVaughanProjection.lean)
+- [ZetaVaughanCutoffBudget](../../RiemannGaussian/ZetaVaughanCutoffBudget.lean)
+- [ZetaVaughanReduction](../../RiemannGaussian/ZetaVaughanReduction.lean)

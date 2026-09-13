@@ -1,5 +1,9 @@
 # A full phase-family Gaussian bound and explicit zero-free band
 
+The [adaptive scaling theorem](zeta-gaussian-all-height.md) now extends this
+explicit component to every height above one million. This page preserves
+the original plateau proof and its exact benchmark-comparison interval.
+
 [exact_strip](../RiemannGaussian/ZetaGaussianBandExclusion.lean) proves that
 every actual nontrivial zeta zero `rho=beta+i*t` satisfies
 
@@ -128,9 +132,9 @@ arithmetic estimates are retained alongside the width envelope.
 
 ## Remaining work
 
-Resolve the remaining literature-source coverage, improve or widen the explicit
-height band using the general cost theorem, and transport the resulting
-region into the remaining prime-tail argument with the relevant height windows intact.
+Resolve the remaining literature-source coverage and use the
+[adaptive curve and its arithmetic transport](zeta-gaussian-all-height.md)
+in the remaining prime-tail argument with the relevant height windows intact.
 The [uniform squarefree transport](zeta-squarefree-gaussian-band.md) now
 discharges the local window and bounds the complete logarithmic matrix
 throughout the explicit center domain, including moving selected zeros.

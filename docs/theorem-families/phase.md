@@ -6,7 +6,7 @@
 
 Coupled phase kernels, contact factorization and the mathematically defined admissible family.
 
-**88 modules.** Source links open the definitions, hypotheses and proofs.
+**89 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [CosineTaylorEnclosure](../../RiemannGaussian/CosineTaylorEnclosure.lean)
 - [FermiCosineModulation](../../RiemannGaussian/FermiCosineModulation.lean)
@@ -21,6 +21,7 @@ Coupled phase kernels, contact factorization and the mathematically defined admi
 - [ZetaAngularPrimeBudget](../../RiemannGaussian/ZetaAngularPrimeBudget.lean)
 - [ZetaExactPhaseAngularExclusion](../../RiemannGaussian/ZetaExactPhaseAngularExclusion.lean)
 - [ZetaFermiGlobalMargin](../../RiemannGaussian/ZetaFermiGlobalMargin.lean)
+- [ZetaGaussianPrimeCorrelation](../../RiemannGaussian/ZetaGaussianPrimeCorrelation.lean)
 - [ZetaHalfStripPhase](../../RiemannGaussian/ZetaHalfStripPhase.lean)
 - [ZetaMultiplicativePhase](../../RiemannGaussian/ZetaMultiplicativePhase.lean)
 - [ZetaPhaseArithmetic](../../RiemannGaussian/ZetaPhaseArithmetic.lean)

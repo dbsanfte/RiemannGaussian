@@ -128,20 +128,19 @@ theorem right_mean_identity {a ω : ℕ → ℝ} (ha : ∀ n, 0 ≤ a n) (hs : S
   simp only [tail, ite_mul, zero_mul]
   ring
 
-/-- The selected actual zero and all three original prime responses obey
-one complete signed inequality for every eligible countable family. The
-kernel's nonnegativity is not needed until the downstream scalar estimate. -/
-theorem source_add_mixedWork_le_exactBudget {a ω : ℕ → ℝ}
+/-- Every selected finite zero group and all three original prime responses
+obey one signed inequality for every eligible countable family. The exact
+source retains every ordinate and multiplicity before any scalar estimate. -/
+theorem finite_source_add_mixedWork_le_exactBudget {a ω : ℕ → ℝ}
     (ha : ∀ n, 0 ≤ a n) (hs : Summable a) (hω0 : ω 0 = 0) (hω1 : ω 1 = 1)
     (hω : ∀ n, n ≠ 0 → 1 ≤ ω n)
     (hlog : Summable (fun n => tail a n * Real.log (ω n)))
     (k : ℕ) (hk : 2 ≤ k) {B x M : ℝ} (hB : 0 < B) (hx : 0 < x)
     (hx' : x ≤ DerivativeOrderComparison.delta k / 4) (hM : 0 ≤ M)
-    (ρ : NontrivialZetaZero) (hscale : 1 ≤ scale ρ.1.im) :
-    a 1 * compensated B (halfWidth k x) (center x ρ.1.im) ρ + mixedWork k B x ρ.1.im a ω ≤
-      exactBudget k B M x ρ.1.im a ω := by
-  let t := ρ.1.im
-  let Q := compensated B (halfWidth k x) (center x t) ρ
+    (t : ℝ) (S : Finset NontrivialZetaZero) (hscale : 1 ≤ scale t) :
+    a 1 * (∑ ρ ∈ S, compensated B (halfWidth k x) (center x t) ρ) + mixedWork k B x t a ω ≤
+      exactBudget k B M x t a ω := by
+  let Q := ∑ ρ ∈ S, compensated B (halfWidth k x) (center x t) ρ
   let P (n : ℕ) := GaussianFermiPrimeComparison.ordinarySum (1 + x) B (ω n * t)
   let L (n : ℕ) := ZetaClippedEulerMean.mean k M (ω n * t) (verticalScale k x)
   let R (n : ℕ) := ZetaRegularizedSechMean.mean (rightLine k x) (ω n * t) (verticalScale k x)
@@ -172,8 +171,7 @@ theorem source_add_mixedWork_le_exactBudget {a ω : ℕ → ℝ}
     · by_cases hn1 : n = 1
       · subst n
         have h := mul_le_mul_of_nonneg_left
-          (prime_add_selected_le_means k hk hB hx hx' hM t {ρ}) (ha 1)
-        simp only [Finset.sum_singleton] at h
+          (prime_add_selected_le_means k hk hB hx hx' hM t S) (ha 1)
         simp only [P, U, L, R, E, X, hω1, one_mul, tail,
           show (1 : ℕ) ≠ 0 by norm_num, if_false, if_true, zero_add, Q, Complex.ofReal_one]
         simp only [div_eq_mul_inv] at h ⊢
@@ -203,6 +201,22 @@ theorem source_add_mixedWork_le_exactBudget {a ω : ℕ → ℝ}
   dsimp only [P, L, R, E, X] at hb
   simp only [div_eq_mul_inv] at hb hr hxid ⊢
   nlinarith only [hb, hr, hxid]
+
+/-- The selected actual zero and all three original prime responses obey
+one complete signed inequality for every eligible countable family. The
+kernel's nonnegativity is not needed until the downstream scalar estimate. -/
+theorem source_add_mixedWork_le_exactBudget {a ω : ℕ → ℝ}
+    (ha : ∀ n, 0 ≤ a n) (hs : Summable a) (hω0 : ω 0 = 0) (hω1 : ω 1 = 1)
+    (hω : ∀ n, n ≠ 0 → 1 ≤ ω n)
+    (hlog : Summable (fun n => tail a n * Real.log (ω n)))
+    (k : ℕ) (hk : 2 ≤ k) {B x M : ℝ} (hB : 0 < B) (hx : 0 < x)
+    (hx' : x ≤ DerivativeOrderComparison.delta k / 4) (hM : 0 ≤ M)
+    (ρ : NontrivialZetaZero) (hscale : 1 ≤ scale ρ.1.im) :
+    a 1 * compensated B (halfWidth k x) (center x ρ.1.im) ρ + mixedWork k B x ρ.1.im a ω ≤
+      exactBudget k B M x ρ.1.im a ω := by
+  simpa only [Finset.sum_singleton] using
+    finite_source_add_mixedWork_le_exactBudget ha hs hω0 hω1 hω hlog k hk hB hx hx' hM
+      ρ.1.im {ρ} hscale
 
 /-- All three original arithmetic responses have favorable sign only after
 their shared full phase kernel has been used. -/

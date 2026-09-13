@@ -6,12 +6,13 @@
 
 Gaussian transforms, smoothed zero sources, exact prime identities and retained remainders.
 
-**114 modules.** Source links open the definitions, hypotheses and proofs.
+**115 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ComplexGaussianCurvature](../../RiemannGaussian/ComplexGaussianCurvature.lean)
 - [ComplexGaussianMoebius](../../RiemannGaussian/ComplexGaussianMoebius.lean)
 - [FiniteLaplaceCurvature](../../RiemannGaussian/FiniteLaplaceCurvature.lean)
 - [GaussianCentralTailBound](../../RiemannGaussian/GaussianCentralTailBound.lean)
+- [GaussianComplexDisplacement](../../RiemannGaussian/GaussianComplexDisplacement.lean)
 - [GaussianComplexHalfMoments](../../RiemannGaussian/GaussianComplexHalfMoments.lean)
 - [GaussianComplexHeat](../../RiemannGaussian/GaussianComplexHeat.lean)
 - [GaussianComplexPoleAverage](../../RiemannGaussian/GaussianComplexPoleAverage.lean)

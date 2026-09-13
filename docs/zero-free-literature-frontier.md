@@ -6,6 +6,14 @@ comparison of its width function. External analytic proofs and numerical
 RH verifications are **not assumptions or imported certificates** in the
 Gaussian theorem chain.
 
+The [current explicit Gaussian curve](zeta-gaussian-retained-region.md) has
+no upper height ceiling. It contains the preceding curve and is strictly
+wider when the enlarged logarithmic height exceeds 320000. The exact
+comparisons below retain their compiled interval on the constant-width
+plateau. Extending those comparisons to the new curve outside that interval
+is separate work; the interval below is not a height ceiling for the
+current zero-free theorem.
+
 ## The exact comparison interval
 
 Put (H=|t|), (L=\log H), and (u=1/450000). Define (L_*) as the unique
@@ -127,9 +135,9 @@ or historical-novelty determination.** An unevaluated threshold cannot be
 assumed below the ceiling, and headline constants do not exhaust every
 possible optimization of a source's underlying methods.
 
-The repository's own eventual component combines with its explicit band
+The repository's own eventual component combines with its adaptive curve
 by maximum wherever both height conditions hold; see
-[the proved union](../RiemannGaussian/ZetaGaussianBandComparison.lean).
+[the proved union](../RiemannGaussian/ZetaGaussianRetainedRegion.lean).
 The external regions above are not silently added to that Lean union.
 The independent ordinary-prime tail bound and RH remain open.
 

@@ -6,7 +6,7 @@
   "endpoints": [
     {
       "id": "explicit-band",
-      "label": "Explicit band · both edges",
+      "label": "Improved explicit curve · no upper height ceiling",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -17,7 +17,402 @@
         "gaussianPhaseBandToolkit",
         "actualRegion"
       ],
-      "documentation": "docs/zeta-gaussian-phase-band.md"
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    {
+      "id": "retained-cost",
+      "label": "Improved curve · complete cost and comparison",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "retainedCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "retainedContainmentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "retainedStrictTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "retainedAnalyticTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "arithmeticTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "retainedRadiusTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "retainedCostScope"
+      ],
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    {
+      "id": "vaughan-factors",
+      "label": "Vaughan factors · squarefree band, full zero source",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanCoprimeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanBandErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanProductTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanDensityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanScheduleTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanCutoffComparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanSquarefreeAverageTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanSquarefreeCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanSquarefreeCrossTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanSquarefreeDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanSquarefreeSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "vaughanScope"
+      ],
+      "documentation": "docs/zeta-squarefree-vaughan-projection.md"
+    },
+    {
+      "id": "lattice-carrier",
+      "label": "Integer lattice · retain the linear zero source",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "primeLatticeIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeLatticeSamplingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeLatticeIncrementsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeLatticeComparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeLatticeSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "primeLatticeScope"
+      ],
+      "documentation": "docs/zeta-prime-lattice-carrier.md"
+    },
+    {
+      "id": "prime-discrepancy",
+      "label": "Prime discrepancy · signed jump work",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "primeWorkBlockTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeWorkPairsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeWorkMonotoneTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeWorkDiagonalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeWorkDecayTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "primeWorkScope"
+      ],
+      "documentation": "docs/zeta-prime-discrepancy-work.md"
+    },
+    {
+      "id": "source-support",
+      "label": "Source visibility · retain a fixed zero",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "sourceSupportGeometryTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "sourceSupportCurrentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "sourceSupportOrdersTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "sourceSupportFarTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "sourceSupportHeightTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "sourceSupportAdaptiveTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "sourceSupportScope"
+      ],
+      "documentation": "docs/zeta-gaussian-source-support.md"
+    },
+    {
+      "id": "signed-budget",
+      "label": "Signed budget · left mean remains",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "signedBudgetIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "signedBudgetCorrectionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "signedBudgetSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "signedBudgetScope"
+      ],
+      "documentation": "docs/zeta-gaussian-signed-budget-reduction.md"
+    },
+    {
+      "id": "prime-energy",
+      "label": "Prime energy · decay at the current dilation",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "primeEnergySourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeEnergyBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeEnergyDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeEnergyEulerTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "primeEnergyScope"
+      ],
+      "documentation": "docs/zeta-gaussian-prime-energy-decay.md"
+    },
+    {
+      "id": "prime-reduction",
+      "label": "Ordinary primes · complete remainder paid",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "primeReductionSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeReductionDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeReductionMassTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "primeReductionScope"
+      ],
+      "documentation": "docs/zeta-gaussian-prime-reduction.md"
+    },
+    {
+      "id": "prime-correlation",
+      "label": "Prime correlations · ratios, products and signed work",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "primeCorrelationSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeCorrelationFloorCriterion"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeCorrelationImprovementTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeCorrelationCoordinatesTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeCorrelationHeatCoordinatesTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "primeCorrelationScope"
+      ],
+      "documentation": "docs/zeta-gaussian-prime-correlation.md"
+    },
+    {
+      "id": "prime-work",
+      "label": "Prime work · disjoint blocks and their ceiling",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "primeBlocksSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeBlocksPositiveTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "primeBlocksCeilingTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "primeBlocksScope"
+      ],
+      "documentation": "docs/zeta-gaussian-prime-blocks.md"
+    },
+    {
+      "id": "filter-cost",
+      "label": "Filter cost · complete coefficients and signed carrier",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "filterCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "filterCostDiscrepancyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "filterCostSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "filterCostScope"
+      ],
+      "documentation": "docs/zeta-zero-filter-cost.md"
+    },
+    {
+      "id": "separation",
+      "label": "Separation · finite Gaussian zero groups",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "separationRightTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "separationLeftTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "separationInverseTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "separationRegion"
+      ],
+      "documentation": "docs/zeta-gaussian-zero-separation.md"
+    },
+    {
+      "id": "multiplicity",
+      "label": "Multiplicity · boundary simplicity and eta current",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "multiplicityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "multiplicityComparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "multiplicityEtaCurrentTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "multiplicityRegion"
+      ],
+      "documentation": "docs/zeta-gaussian-multiplicity-depth.md"
     },
     {
       "id": "nonvanishing",
@@ -32,7 +427,7 @@
         "gaussianPhaseBandToolkit",
         "actualRegion"
       ],
-      "documentation": "docs/zeta-gaussian-phase-band.md"
+      "documentation": "docs/zeta-gaussian-retained-region.md"
     },
     {
       "id": "union",
@@ -47,7 +442,7 @@
         "gaussianPhaseBandToolkit",
         "regionUnion"
       ],
-      "documentation": "docs/zeta-gaussian-phase-band.md"
+      "documentation": "docs/zeta-gaussian-retained-region.md"
     },
     {
       "id": "eventual",
@@ -266,7 +661,8 @@
         "ZetaRegularized",
         "ZetaSech",
         "ZetaStrip",
-        "ZetaZeroModeFilter"
+        "ZetaZeroModeFilter",
+        "ZetaZeroFilterCost"
       ]
     },
     {
@@ -307,7 +703,11 @@
         "ZetaHalfLogZeroFree",
         "ZetaLogRegionBand",
         "ZetaStechkinZeroFree",
-        "ZetaZeroFreeRegionBand"
+        "ZetaZeroFreeRegionBand",
+        "ZetaGaussianAllHeight",
+        "ZetaGaussianMultiplicity",
+        "ZetaGaussianZeroSeparation",
+        "ZetaGaussianScaledBand"
       ]
     },
     {
@@ -355,11 +755,15 @@
         "ZetaCubicWindow",
         "ZetaDivisibility",
         "ZetaDominated",
+        "ZetaFactorialFilter",
         "ZetaLogMoment",
         "ZetaLogWindow",
         "ZetaMomentPole",
         "ZetaOnePrime",
         "ZetaPositiveComposite",
+        "ZetaPrimeEnvelope",
+        "ZetaPrimeTailWindow",
+        "ZetaPrimeWindow",
         "ZetaQuadratic",
         "ZetaQuarterKernel",
         "ZetaRough",
@@ -416,12 +820,544 @@
     "ZetaNearOneBudgetLimit": "asymptotic",
     "ZetaGaussianCompletionAverage": "completion",
     "ZetaGaussianNearCancellation": "completion",
-    "ZetaGaussianLiteratureComparison": "region"
+    "ZetaGaussianLiteratureComparison": "region",
+    "ZetaGaussianPrimeBlocks": "euler",
+    "ZetaGaussianPrimeCorrelation": "phase",
+    "ZetaGaussianPrimeReduction": "euler",
+    "ZetaGaussianPrimeEnergyBound": "euler",
+    "ZetaEulerPoissonDifference": "euler",
+    "ZetaGaussianPrimeEnergyDecay": "euler",
+    "ZetaGaussianSignedBudgetReduction": "strip",
+    "ZetaGaussianSourceSupport": "strip",
+    "ZetaPrimeDiscrepancyWork": "euler",
+    "ZetaPrimeLatticeCarrier": "euler",
+    "ZetaGaussianRetainedCost": "region",
+    "ZetaGaussianRetainedRegion": "region",
+    "ZetaSquarefreeGaussianRetainedRegion": "arithmetic",
+    "ZetaVaughanReduction": "euler",
+    "ZetaVaughanCutoffBudget": "euler",
+    "ZetaSquarefreeVaughanProjection": "euler"
   },
   "theorems": {
-    "RiemannGaussian.ZetaGaussianBandExclusion.exact_strip": {
-      "label": "Both strip edges excluded",
+    "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
+      "label": "An aligned nearby zero has strictly positive compensated source",
+      "documentation": "docs/zeta-gaussian-source-support.md",
       "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSourceSupport.fixed_zero_geometry": {
+      "label": "Adapt the strip while keeping its right edge at 3/2",
+      "documentation": "docs/zeta-gaussian-source-support.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSourceSupport.exists_fixed_zero_source_constraint": {
+      "label": "Retain a fixed right-half zero in the full signed inequality",
+      "documentation": "docs/zeta-gaussian-source-support.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSourceSupport.not_near_of_re_le_line": {
+      "label": "The real coordinate puts the zero outside the source ball",
+      "documentation": "docs/zeta-gaussian-source-support.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSourceSupport.compensated_eq_zero_of_re_le_line": {
+      "label": "The cutoff removes both source and its Poisson reserve",
+      "documentation": "docs/zeta-gaussian-source-support.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSourceSupport.bounded_window_source_eq_zero": {
+      "label": "Vertical separation removes the complete bounded window",
+      "documentation": "docs/zeta-gaussian-source-support.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSourceSupport.eventually_fixed_window_source_eq_zero": {
+      "label": "Diverging height eventually leaves every fixed window",
+      "documentation": "docs/zeta-gaussian-source-support.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSourceSupport.near_iff": {
+      "label": "Keep horizontal depth and vertical displacement coupled",
+      "documentation": "docs/zeta-gaussian-source-support.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSourceSupport.current_compensated_eq_zero": {
+      "label": "Order nine has a fixed source cutoff at 2035/2046",
+      "documentation": "docs/zeta-gaussian-source-support.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSourceSupport.admissible_order_compensated_eq_zero": {
+      "label": "All admitted orders leave beta at most 5/7 outside the source",
+      "documentation": "docs/zeta-gaussian-source-support.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSourceSupport.farTerm_eq_of_re_le_line": {
+      "label": "The original complex contribution remains in the far term",
+      "documentation": "docs/zeta-gaussian-source-support.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSourceSupport.eventually_weighted_fixed_window_source_eq_zero": {
+      "label": "A diverging detector leaves every fixed zero window",
+      "documentation": "docs/zeta-gaussian-source-support.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSignedBudgetReduction.signedBudget_eq_left_add": {
+      "label": "Retain the original signed left mean and every correction",
+      "documentation": "docs/zeta-gaussian-signed-budget-reduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSignedBudgetReduction.factor_mul_sq_eq": {
+      "label": "Keep the exact inverse-square dilation factor",
+      "documentation": "docs/zeta-gaussian-signed-budget-reduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSignedBudgetReduction.factor_le_inverse_square": {
+      "label": "The full right multiplier decays quadratically",
+      "documentation": "docs/zeta-gaussian-signed-budget-reduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSignedBudgetReduction.norm_extra_le": {
+      "label": "Bound the full complex Gaussian correction",
+      "documentation": "docs/zeta-gaussian-signed-budget-reduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSignedBudgetReduction.abs_rightTotal_le": {
+      "label": "The right completion still carries logarithmic height",
+      "documentation": "docs/zeta-gaussian-signed-budget-reduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSignedBudgetReduction.abs_signedBudget_sub_left_le": {
+      "label": "Bound both signs of the complete non-left correction",
+      "documentation": "docs/zeta-gaussian-signed-budget-reduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSignedBudgetReduction.tendsto_current_signedBudget_sub_left": {
+      "label": "Only the signed left mean survives at source scale",
+      "documentation": "docs/zeta-gaussian-signed-budget-reduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianSignedBudgetReduction.tendsto_current_source_surplus_over_left_sq": {
+      "label": "Actual finite-zero source reaches the retained left mean",
+      "documentation": "docs/zeta-gaussian-signed-budget-reduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaEulerPoissonDifference.atom_difference": {
+      "label": "Keep the exact signed Poisson difference",
+      "documentation": "docs/zeta-gaussian-prime-energy-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaEulerPoissonDifference.abs_mass_difference_le": {
+      "label": "Control both signs of the complete zero-mass change",
+      "documentation": "docs/zeta-gaussian-prime-energy-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaEulerPoissonDifference.exists_eventual_local_gap": {
+      "label": "The existing log-log region supplies every fixed local gap",
+      "documentation": "docs/zeta-gaussian-prime-energy-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaEulerPoissonDifference.poleRemoved_le_tuned_gap": {
+      "label": "Tune the leading Euler height coefficient",
+      "documentation": "docs/zeta-gaussian-prime-energy-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaEulerPoissonDifference.exists_eventual_small_log_bound": {
+      "label": "Every positive logarithmic coefficient eventually suffices",
+      "documentation": "docs/zeta-gaussian-prime-energy-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaEulerPoissonDifference.exists_affine_small_log_bound": {
+      "label": "Pay bounded heights with one additive constant",
+      "documentation": "docs/zeta-gaussian-prime-energy-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeEnergyDecay.abs_regularMean_re_le_affine": {
+      "label": "Average the small coefficient without losing it",
+      "documentation": "docs/zeta-gaussian-prime-energy-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeEnergyDecay.exists_uniform_prime_small_log_bound": {
+      "label": "Complete ordinary primes have a uniform small height cost",
+      "documentation": "docs/zeta-gaussian-prime-energy-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeEnergyDecay.exists_uniform_energy_small_log_bound": {
+      "label": "All-family energy costs only the first logarithmic moment",
+      "documentation": "docs/zeta-gaussian-prime-energy-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeEnergyDecay.tendsto_normalized_fullEnergy_of_bounded_height_ratio": {
+      "label": "A bounded height-to-dilation ratio now suffices",
+      "documentation": "docs/zeta-gaussian-prime-energy-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeEnergyDecay.current_dilation_height_ratio_upper": {
+      "label": "The actual dilation satisfies the improved regime",
+      "documentation": "docs/zeta-gaussian-prime-energy-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeEnergyDecay.tendsto_current_dilation_fullEnergy": {
+      "label": "Complete energy decays at the current dilation",
+      "documentation": "docs/zeta-gaussian-prime-energy-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeEnergyDecay.tendsto_current_source_cost": {
+      "label": "The entire normalized arithmetic cost vanishes",
+      "documentation": "docs/zeta-gaussian-prime-energy-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeEnergyDecay.tendsto_current_source_surplus_sq": {
+      "label": "Actual squared source surplus vanishes; signed budget remains",
+      "documentation": "docs/zeta-gaussian-prime-energy-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeEnergyBound.primeSum_eq_transform_sub_regularMean": {
+      "label": "Keep the full pole-removed complex Euler identity",
+      "documentation": "docs/zeta-gaussian-prime-energy-bound.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeEnergyBound.abs_regularMean_re_le": {
+      "label": "Average the signed Euler logarithmic bound",
+      "documentation": "docs/zeta-gaussian-prime-energy-bound.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeEnergyBound.exists_gaussian_log_bound": {
+      "label": "Gaussian response has logarithmic height cost",
+      "documentation": "docs/zeta-gaussian-prime-energy-bound.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeEnergyBound.abs_primeCosine_sub_gaussian_le": {
+      "label": "Pay proper powers in the complete signed response",
+      "documentation": "docs/zeta-gaussian-prime-energy-bound.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeEnergyBound.exists_prime_bounds": {
+      "label": "Actual ordinary primes obey two uniform caps",
+      "documentation": "docs/zeta-gaussian-prime-energy-bound.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeEnergyBound.tendsto_range_energy": {
+      "label": "Complete prime prefixes retain the exact real pair energy",
+      "documentation": "docs/zeta-gaussian-prime-energy-bound.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeEnergyBound.finite_source_le_fullEnergy": {
+      "label": "Cancel the constant channel in the actual source",
+      "documentation": "docs/zeta-gaussian-prime-energy-bound.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianPrimeReduction.amplitude_eq": {
+      "label": "Exact ordinary-prime and remainder splitting",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-reduction.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeReduction.remainder_le_majorant": {
+      "label": "All proper powers and auxiliary weights share one majorant",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-reduction.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeReduction.hasSum_majorant": {
+      "label": "The fixed error allowance is a genuine convergent mass",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-reduction.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeReduction.remainder_mass_le": {
+      "label": "Full remainder mass is uniformly bounded",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-reduction.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeReduction.finite_remainder_cosine_le": {
+      "label": "Complete finite cosine error has the same fixed bound",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-reduction.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeReduction.real_energy_le_prime_energy": {
+      "label": "Pay all mixed energy terms with a tunable Young allowance",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-reduction.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeReduction.real_energy_tail": {
+      "label": "Remove the constant frequency exactly before bounding energy",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-reduction.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeReduction.nonconstant_energy_le_prime": {
+      "label": "Nonconstant energy reduces to ordinary Gaussian primes",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-reduction.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeReduction.finite_source_le_prime_energy": {
+      "label": "Actual squared zero source reaches the ordinary-prime energy",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-reduction.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeReduction.finite_source_le_prime_energy_scaled": {
+      "label": "Reciprocal tuning retains the same actual zero-source constraint",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-reduction.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeReduction.normalized_energyAllowance_le": {
+      "label": "Complete normalized error has a reciprocal-dilation bound",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-reduction.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeReduction.tendsto_normalized_energyAllowance": {
+      "label": "Error allowance vanishes for every moving bounded-mass family",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-reduction.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeCorrelation.gaussian_pair_coordinates": {
+      "label": "Exact Gaussian prime-pair heat in product and ratio coordinates",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-correlation.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeCorrelation.anchored_energy": {
+      "label": "Retain the signed response as the anchor cross term",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-correlation.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeCorrelation.anchored_schur": {
+      "label": "Zero-frequency mass gives an anchored Schur inequality",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-correlation.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeCorrelation.mirrored_energy": {
+      "label": "Pair each phase with its negative before forming the bound",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-correlation.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeCorrelation.cosine_schur": {
+      "label": "Sharper Schur bound uses exact cosine energy",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-correlation.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeCorrelation.hasSum_cosineEnergy": {
+      "label": "Ratio and product phases isolate the cosine squares",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-correlation.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeCorrelation.realPrimeEnergy_eq_log_products": {
+      "label": "Keep the actual logarithms of prime ratios and products",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-correlation.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeCorrelation.hasSum_realPrimeEnergy": {
+      "label": "Convergent arithmetic expansion of the real pair energy",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-correlation.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeCorrelation.hasSum_sineDefect": {
+      "label": "Exact nonnegative sine cost in the ratio-only test",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-correlation.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeCorrelation.realPrimeEnergy_le_ratioEnergy": {
+      "label": "The real pair test pays a smaller energy allowance",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-correlation.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeCorrelation.gaussian_forced_correlation": {
+      "label": "Small actual prime work forces collective real correlation",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-correlation.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeCorrelation.gaussian_work_of_energy_gap": {
+      "label": "Conditional arithmetic floor from an independent energy gap",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-correlation.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeCorrelation.finite_source_correlation_constraint": {
+      "label": "Full squared zero-source surplus constrains real prime pairs",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-correlation.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeBlocks.hasSum_mixedWork": {
+      "label": "One common prime measure for all three responses",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-blocks.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeBlocks.block_lower": {
+      "label": "Retain all triangular phase returns in their own block",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-blocks.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeBlocks.blocks_disjoint": {
+      "label": "Prime factorization prevents double-counting blocks",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-blocks.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeBlocks.gaussianCoefficient_triangle_le": {
+      "label": "Actual Gaussian amplitudes pay the triangular weights",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-blocks.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeBlocks.gaussian_blocks_lower": {
+      "label": "All disjoint prime blocks give a common arithmetic floor",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-blocks.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeBlocks.scaled_amplitude_prime_power_le": {
+      "label": "Complete proper-prime-power amplitude has a uniform ceiling",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-blocks.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeBlocks.weighted_damping_le": {
+      "label": "Prime-power damping dominates every triangular block length",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-blocks.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeBlocks.eligible_blocks_ceiling": {
+      "label": "All block minorants share one fixed Euler ceiling",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-blocks.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeBlocks.mixedWork_pos": {
+      "label": "The actual coupled prime work is strictly positive",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-blocks.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeBlocks.finite_source_add_blocks_le_budget": {
+      "label": "Retained block floor reaches the actual finite zero group",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-blocks.md"
+    },
+    "RiemannGaussian.ZetaGaussianPrimeBlocks.tendsto_normalized_block_reserves": {
+      "label": "Even moving block families lose their reserve at leading scale",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-prime-blocks.md"
+    },
+    "RiemannGaussian.ZetaZeroFilterCost.coefficientCost_le": {
+      "label": "Mignotte bound for all coefficient weights",
+      "overview": true,
+      "documentation": "docs/zeta-zero-filter-cost.md"
+    },
+    "RiemannGaussian.ZetaZeroFilterCost.inverse_factor_measure": {
+      "label": "Exact inverse-coordinate factor cost",
+      "overview": true,
+      "documentation": "docs/zeta-zero-filter-cost.md"
+    },
+    "RiemannGaussian.ZetaZeroFilterCost.zero_factor_bound": {
+      "label": "Actual zero distances control each normalized factor",
+      "overview": true,
+      "documentation": "docs/zeta-zero-filter-cost.md"
+    },
+    "RiemannGaussian.ZetaZeroFilterCost.pole_factor_bound": {
+      "label": "Retained ordinate keeps the pole factor bounded",
+      "overview": true,
+      "documentation": "docs/zeta-zero-filter-cost.md"
+    },
+    "RiemannGaussian.ZetaZeroFilterCost.zero_filter_measure_bound": {
+      "label": "The complete local zero-filter product",
+      "overview": true,
+      "documentation": "docs/zeta-zero-filter-cost.md"
+    },
+    "RiemannGaussian.ZetaZeroFilterCost.support_card_bound": {
+      "label": "Global Poisson mass bounds the whole local zero count",
+      "overview": true,
+      "documentation": "docs/zeta-zero-filter-cost.md"
+    },
+    "RiemannGaussian.ZetaZeroFilterCost.actual_coefficient_bound": {
+      "label": "All coefficients of the actual pole-jet filter",
+      "overview": true,
+      "documentation": "docs/zeta-zero-filter-cost.md"
+    },
+    "RiemannGaussian.ZetaZeroFilterCost.primitive_measure_le": {
+      "label": "Exact density primitive preserves the measure bound",
+      "overview": true,
+      "documentation": "docs/zeta-zero-filter-cost.md"
+    },
+    "RiemannGaussian.ZetaZeroFilterCost.actual_primitive_coefficient_bound": {
+      "label": "The shifted primitive obeys the same full cost",
+      "overview": true,
+      "documentation": "docs/zeta-zero-filter-cost.md"
+    },
+    "RiemannGaussian.ZetaZeroFilterCost.actual_band_discrepancy_bound": {
+      "label": "Explicit error in the actual finite-band reduction",
+      "overview": true,
+      "documentation": "docs/zeta-zero-filter-cost.md"
+    },
+    "RiemannGaussian.ZetaZeroFilterCost.actual_centered_source_limit": {
+      "label": "The same centered carrier retains its negative source",
+      "overview": true,
+      "documentation": "docs/zeta-zero-filter-cost.md"
+    },
+    "RiemannGaussian.GaussianComplexDisplacement.transform_re_lower": {
+      "label": "Quadratic ordinate loss",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-zero-separation.md"
+    },
+    "RiemannGaussian.GaussianComplexDisplacement.correction_re_lower": {
+      "label": "Analytic correction on the half-disc",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-zero-separation.md"
+    },
+    "RiemannGaussian.ZetaGaussianStripPhaseFamily.finite_source_add_mixedWork_le_exactBudget": {
+      "label": "Finite zero group and full prime work",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-zero-separation.md"
+    },
+    "RiemannGaussian.ZetaGaussianZeroSeparation.compensated_lower": {
+      "label": "Mass per zero in the rectangle",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-zero-separation.md"
+    },
+    "RiemannGaussian.ZetaGaussianZeroSeparation.family_sum_le_one": {
+      "label": "All-family cluster exclusion",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-zero-separation.md"
+    },
+    "RiemannGaussian.ZetaGaussianZeroSeparation.right_sum_le_one": {
+      "label": "Right rectangle: at most one zero",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-zero-separation.md"
+    },
+    "RiemannGaussian.ZetaGaussianZeroSeparation.left_sum_le_one": {
+      "label": "Left rectangle: reflected count",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-zero-separation.md"
+    },
+    "RiemannGaussian.ZetaGaussianZeroSeparation.distance_separation": {
+      "label": "Explicit isolation from every other zero",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-zero-separation.md"
+    },
+    "RiemannGaussian.ZetaGaussianZeroSeparation.inverse_distance_bound": {
+      "label": "Reciprocal zero-distance bound",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-zero-separation.md"
+    },
+    "RiemannGaussian.ZetaGaussianMultiplicityDepth.exact_strip_min": {
+      "label": "Both edges retain actual multiplicity",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-multiplicity-depth.md"
+    },
+    "RiemannGaussian.ZetaGaussianMultiplicityDepth.selected_source_lower": {
+      "label": "Multiplicity pays for a larger depth",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-multiplicity-depth.md"
+    },
+    "RiemannGaussian.ZetaGaussianMultiplicityDepth.scaled_tangent_lower": {
+      "label": "Scaled Gaussian tangent, all damping",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-multiplicity-depth.md"
+    },
+    "RiemannGaussian.ZetaGaussianMultiplicityDepth.family_margin": {
+      "label": "Same complete cost, stronger source",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-multiplicity-depth.md"
+    },
+    "RiemannGaussian.ZetaGaussianMultiplicityDepth.simple_of_near_edge": {
+      "label": "Simplicity in the larger boundary layer",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-multiplicity-depth.md"
+    },
+    "RiemannGaussian.ZetaGaussianMultiplicityDepth.old_simplicity_width_lt": {
+      "label": "Strict improvement beyond explicit log height",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-multiplicity-depth.md"
+    },
+    "RiemannGaussian.ZetaGaussianMultiplicityDepth.eta_current_eq_head": {
+      "label": "Simplicity discharges the signed eta head",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-multiplicity-depth.md"
     },
     "RiemannGaussian.ZetaGaussianBandExclusion.nonvanishing": {
       "label": "Literal ζ(s) ≠ 0",
@@ -508,10 +1444,6 @@
       "label": "True zero multiplicity is positive",
       "overview": true
     },
-    "RiemannGaussian.ZetaGaussianBandComparison.union_with_eventual": {
-      "label": "Maximum width on overlaps",
-      "overview": true
-    },
     "RiemannGaussian.ZetaLogLogZeroFree.exists_eventual_strip": {
       "label": "Eventual region at both edges",
       "overview": true
@@ -577,6 +1509,345 @@
       "label": "Eventual VK functions compared",
       "overview": true,
       "documentation": "docs/zero-free-literature-frontier.md"
+    },
+    "RiemannGaussian.ZetaGaussianAllHeight.exact_margin": {
+      "label": "Choose the dilation from height",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-all-height.md"
+    },
+    "RiemannGaussian.ZetaGaussianAllHeight.scaled_margin": {
+      "label": "Exact contact family at every dilation",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-all-height.md"
+    },
+    "RiemannGaussian.ZetaGaussianAllHeight.family_margin": {
+      "label": "Contradiction for every eligible family",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-all-height.md"
+    },
+    "RiemannGaussian.ZetaGaussianAllHeight.selected_source_lower": {
+      "label": "A nearby zero costs ≥ 48000q",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-all-height.md"
+    },
+    "RiemannGaussian.ZetaGaussianAllHeight.explicitWidth_eq_min": {
+      "label": "Exact plateau and moving width",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-all-height.md"
+    },
+    "RiemannGaussian.ZetaGaussianScaledBandBudget.budget_le": {
+      "label": "Complete scaled cost ≤ 47500q",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-all-height.md"
+    },
+    "RiemannGaussian.ZetaGaussianScaledBandBudget.source_lower": {
+      "label": "Gaussian homogeneity retains the source",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-all-height.md"
+    },
+    "RiemannGaussian.ZetaGaussianScaledBandBudget.left_allowance_le": {
+      "label": "Full left boundary at the moving height",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-all-height.md"
+    },
+    "RiemannGaussian.PrimeDiscrepancyWork.error_block": {
+      "label": "Complete block keeps its initial error and every prime jump",
+      "documentation": "docs/zeta-prime-discrepancy-work.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeDiscrepancyWork.prime_work_eq_ordered_pairs": {
+      "label": "Pre-jump error retains every earlier prime pair",
+      "documentation": "docs/zeta-prime-discrepancy-work.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeDiscrepancyWork.monotone_work_le": {
+      "label": "One-sided work bound for decreasing real tests",
+      "documentation": "docs/zeta-prime-discrepancy-work.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeDiscrepancyWork.norm_diagonal_le": {
+      "label": "All finite forcing diagonals are at most C(p) (4/5)^N",
+      "documentation": "docs/zeta-prime-discrepancy-work.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeDiscrepancyWork.tendsto_scaled_work_add_flux": {
+      "label": "Quadratic work plus signed flux vanishes at source scale",
+      "documentation": "docs/zeta-prime-discrepancy-work.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeDiscrepancyWork.error_succ": {
+      "label": "Unit drift minus the actual ordinary-prime jump",
+      "documentation": "docs/zeta-prime-discrepancy-work.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeDiscrepancyWork.square_increment": {
+      "label": "Signed forcing work equals diagonal minus energy increment",
+      "documentation": "docs/zeta-prime-discrepancy-work.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeDiscrepancyWork.weighted_work": {
+      "label": "Complex weights retain both boundaries and all increments",
+      "documentation": "docs/zeta-prime-discrepancy-work.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeDiscrepancyWork.forcing_square_le": {
+      "label": "Squared local forcing has a logarithmic envelope",
+      "documentation": "docs/zeta-prime-discrepancy-work.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeDiscrepancyWork.summable_diagonal_mass": {
+      "label": "The complete local-forcing mass genuinely converges",
+      "documentation": "docs/zeta-prime-discrepancy-work.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeDiscrepancyWork.norm_test_le": {
+      "label": "Exact coordinate divisor allows a summable exponential tilt",
+      "documentation": "docs/zeta-prime-discrepancy-work.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeDiscrepancyWork.work_add_flux_eq_diagonal": {
+      "label": "Full arithmetic block: twice work plus flux equals diagonal",
+      "documentation": "docs/zeta-prime-discrepancy-work.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeDiscrepancyWork.tendsto_scaled_diagonal": {
+      "label": "Diagonal decay is uniform over moving sets and heights",
+      "documentation": "docs/zeta-prime-discrepancy-work.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeLatticeCarrier.lattice_sub_integral": {
+      "label": "Exact signed sampling with both sawtooth endpoints",
+      "documentation": "docs/zeta-prime-lattice-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeLatticeCarrier.norm_lattice_sub_integral_le": {
+      "label": "All interval sampling errors decay geometrically",
+      "documentation": "docs/zeta-prime-lattice-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeLatticeCarrier.centered_eq_error_increments": {
+      "label": "The linear carrier uses first error increments",
+      "documentation": "docs/zeta-prime-lattice-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeLatticeCarrier.norm_centered_sub_carrier_le": {
+      "label": "Complete lattice transport has two geometric error bounds",
+      "documentation": "docs/zeta-prime-lattice-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeLatticeCarrier.tendsto_actual_source_re": {
+      "label": "The real lattice sum keeps the original negative multiplicity",
+      "documentation": "docs/zeta-prime-lattice-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeLatticeCarrier.integrableOn_deriv_mul_saw": {
+      "label": "The discontinuous sawtooth pairing is genuinely integrable",
+      "documentation": "docs/zeta-prime-lattice-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeLatticeCarrier.deriv_kernel_eq_shift": {
+      "label": "Full complex lowering is an exact shifted kernel pair",
+      "documentation": "docs/zeta-prime-lattice-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeLatticeCarrier.norm_deriv_kernel_le": {
+      "label": "The whole derivative has an integrable spatial envelope",
+      "documentation": "docs/zeta-prime-lattice-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeLatticeCarrier.norm_saw_integral_le": {
+      "label": "The complete sawtooth integral has a fixed geometric allowance",
+      "documentation": "docs/zeta-prime-lattice-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeLatticeCarrier.centered_eq_prime_sub_lattice": {
+      "label": "Ordinary-prime band minus the complete integer background",
+      "documentation": "docs/zeta-prime-lattice-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeLatticeCarrier.centered_sub_carrier": {
+      "label": "Exact comparison keeps the old boundary and sampling error",
+      "documentation": "docs/zeta-prime-lattice-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeLatticeCarrier.tendsto_centered_sub_carrier": {
+      "label": "The full unnormalized linear comparison error vanishes",
+      "documentation": "docs/zeta-prime-lattice-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeLatticeCarrier.tendsto_scaled_comparison": {
+      "label": "Every fixed-zero normalization preserves vanishing error",
+      "documentation": "docs/zeta-prime-lattice-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.PrimeLatticeCarrier.tendsto_actual_source": {
+      "label": "The full complex lattice source stays minus its multiplicity",
+      "documentation": "docs/zeta-prime-lattice-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianRetainedCost.inverse_halfWidth_le": {
+      "label": "Exact inverse half-width ceiling: 93",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaGaussianRetainedCost.constant_terms_le": {
+      "label": "Only the Gaussian channel scales with dilation",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaGaussianRetainedCost.left_allowance_le": {
+      "label": "Retain the full linear and log-log height costs",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaGaussianRetainedCost.budget_le": {
+      "label": "Complete cost: 36922q + L/36 + 57 log L + 840",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaGaussianRetainedRegion.family_margin": {
+      "label": "The original source beats the complete retained cost",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaGaussianRetainedRegion.scaled_margin": {
+      "label": "Existing exact family discharges every phase premise",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaGaussianRetainedRegion.cost_le_dilation": {
+      "label": "The explicit dilation pays the entire height cost",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaGaussianRetainedRegion.exact_margin": {
+      "label": "Actual zeros avoid the improved right band",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaGaussianRetainedRegion.exact_strip": {
+      "label": "Reflection retains both improved edges",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaGaussianRetainedRegion.exact_strip_min": {
+      "label": "Improved explicit zero-free curve",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaGaussianRetainedRegion.nonvanishing": {
+      "label": "Literal zeta nonvanishing on the improved closed edge",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaGaussianRetainedRegion.explicitWidth_eq_min": {
+      "label": "Elementary formula with the full denominator",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaGaussianRetainedRegion.explicitWidth_eq_plateau": {
+      "label": "Full-width plateau includes L = 340000",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaGaussianRetainedRegion.previous_width_le": {
+      "label": "The complete previous explicit curve is contained",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaGaussianRetainedRegion.previous_width_lt": {
+      "label": "Strictly wider for L > 320000",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaGaussianRetainedRegion.union_with_eventual": {
+      "label": "Maximum with the existing eventual component",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.SquarefreeGaussianRetainedRegion.window_margin": {
+      "label": "The complete doubled window has the improved margin",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.SquarefreeGaussianRetainedRegion.analyticOnNhd_response": {
+      "label": "Actual squarefree quotient on the larger closed disc",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.SquarefreeGaussianRetainedRegion.exists_response_bound": {
+      "label": "All marked responses keep the signed prime envelope",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.SquarefreeGaussianRetainedRegion.previous_radius_lt": {
+      "label": "Strictly larger arithmetic radius beyond the old transition",
+      "overview": true,
+      "documentation": "docs/zeta-gaussian-retained-region.md"
+    },
+    "RiemannGaussian.ZetaVaughanReduction.vaughan": {
+      "label": "Exact Vaughan decomposition of the literal prime weights",
+      "documentation": "docs/zeta-vaughan-reduction.md"
+    },
+    "RiemannGaussian.ZetaVaughanReduction.cofactor_mul_of_coprime": {
+      "label": "The retained prime-divisor cofactor is additive on coprime products",
+      "documentation": "docs/zeta-vaughan-reduction.md"
+    },
+    "RiemannGaussian.ZetaVaughanReduction.responseFilter_sub_band_le": {
+      "label": "The original band error is uniform in both cutoffs",
+      "documentation": "docs/zeta-vaughan-reduction.md"
+    },
+    "RiemannGaussian.ZetaVaughanReduction.band_eq_product_sum": {
+      "label": "The full signed product sum retains both large-factor cutoffs",
+      "documentation": "docs/zeta-vaughan-reduction.md"
+    },
+    "RiemannGaussian.ZetaVaughanCutoffBudget.sum_vonMangoldt_inv_sqrt_le": {
+      "label": "Chebyshev density pays every prime-power prefix",
+      "documentation": "docs/zeta-vaughan-cutoff-budget.md"
+    },
+    "RiemannGaussian.ZetaVaughanCutoffBudget.exists_smallFilter_budget_bound": {
+      "label": "Complete square-root product budget for both factors",
+      "documentation": "docs/zeta-vaughan-cutoff-budget.md"
+    },
+    "RiemannGaussian.ZetaVaughanCutoffBudget.normalized_budget_dampedCutoff_le": {
+      "label": "Exact damping allowance, including the integer floor",
+      "documentation": "docs/zeta-vaughan-cutoff-budget.md"
+    },
+    "RiemannGaussian.ZetaVaughanCutoffBudget.exists_smallFilter_damped_bound": {
+      "label": "Independent error at every positive damped cutoff",
+      "documentation": "docs/zeta-vaughan-cutoff-budget.md"
+    },
+    "RiemannGaussian.ZetaVaughanCutoffBudget.tendsto_smallFilter_dampedCutoff": {
+      "label": "Every positive divergent damping schedule has decay",
+      "documentation": "docs/zeta-vaughan-cutoff-budget.md"
+    },
+    "RiemannGaussian.ZetaVaughanCutoffBudget.tendsto_actual_band_linearDampedCutoff": {
+      "label": "Original zero source at the larger factor cutoff",
+      "documentation": "docs/zeta-vaughan-cutoff-budget.md"
+    },
+    "RiemannGaussian.ZetaVaughanCutoffBudget.eventually_previous_cutoff_lt": {
+      "label": "Strict eventual improvement over the preceding cutoff",
+      "documentation": "docs/zeta-vaughan-cutoff-budget.md"
+    },
+    "RiemannGaussian.SquarefreeVaughanProjection.sum_squarefree_norm_atom_le": {
+      "label": "Average all reciprocal Euler corrections at square-root cost",
+      "documentation": "docs/zeta-squarefree-vaughan-projection.md"
+    },
+    "RiemannGaussian.SquarefreeVaughanProjection.coprimeCoefficient_eq_projected_convolution": {
+      "label": "Exact squarefree projection of the full coprime cross term",
+      "documentation": "docs/zeta-squarefree-vaughan-projection.md"
+    },
+    "RiemannGaussian.SquarefreeVaughanProjection.tendsto_projected_cross_linearDampedCutoff": {
+      "label": "Independent projected cross-term decay at the larger cutoffs",
+      "documentation": "docs/zeta-squarefree-vaughan-projection.md"
+    },
+    "RiemannGaussian.SquarefreeVaughanProjection.tendsto_nonsquarefree_band": {
+      "label": "Remove the entire nonsquarefree band with independent decay",
+      "documentation": "docs/zeta-squarefree-vaughan-projection.md"
+    },
+    "RiemannGaussian.SquarefreeVaughanProjection.tendsto_actual_squarefree_band": {
+      "label": "The surviving squarefree band retains the full zero source",
+      "documentation": "docs/zeta-squarefree-vaughan-projection.md"
     }
   }
 }

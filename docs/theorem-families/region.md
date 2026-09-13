@@ -6,15 +6,21 @@
 
 The complete budget, actual zero contradiction and its exact height scope.
 
-**11 modules.** Source links open the definitions, hypotheses and proofs.
+**17 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ZetaArbitraryLogZeroFree](../../RiemannGaussian/ZetaArbitraryLogZeroFree.lean)
 - [ZetaCenteredEulerZeroFree](../../RiemannGaussian/ZetaCenteredEulerZeroFree.lean)
+- [ZetaGaussianAllHeight](../../RiemannGaussian/ZetaGaussianAllHeight.lean)
 - [ZetaGaussianBandBudget](../../RiemannGaussian/ZetaGaussianBandBudget.lean)
 - [ZetaGaussianBandComparison](../../RiemannGaussian/ZetaGaussianBandComparison.lean)
 - [ZetaGaussianBandExclusion](../../RiemannGaussian/ZetaGaussianBandExclusion.lean)
 - [ZetaGaussianBandFrontier](../../RiemannGaussian/ZetaGaussianBandFrontier.lean)
 - [ZetaGaussianLiteratureComparison](../../RiemannGaussian/ZetaGaussianLiteratureComparison.lean)
+- [ZetaGaussianMultiplicityDepth](../../RiemannGaussian/ZetaGaussianMultiplicityDepth.lean)
+- [ZetaGaussianRetainedCost](../../RiemannGaussian/ZetaGaussianRetainedCost.lean)
+- [ZetaGaussianRetainedRegion](../../RiemannGaussian/ZetaGaussianRetainedRegion.lean)
+- [ZetaGaussianScaledBandBudget](../../RiemannGaussian/ZetaGaussianScaledBandBudget.lean)
+- [ZetaGaussianZeroSeparation](../../RiemannGaussian/ZetaGaussianZeroSeparation.lean)
 - [ZetaHalfLogZeroFree](../../RiemannGaussian/ZetaHalfLogZeroFree.lean)
 - [ZetaLogRegionBand](../../RiemannGaussian/ZetaLogRegionBand.lean)
 - [ZetaStechkinZeroFree](../../RiemannGaussian/ZetaStechkinZeroFree.lean)

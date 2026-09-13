@@ -11,56 +11,38 @@ repository's verification gates count as established results.
 
 ## Zero-free region
 
-**Proved in Lean, with explicit heights:** every nontrivial zeta zero obeys
+**Proved in Lean, with no upper height ceiling:** every nontrivial zeta zero obeys
 
 <table>
 <tr><td>
 
 ```math
 \boxed{\begin{gathered}
-\rho=\beta+it,\qquad 10^6\le |t|,
+\rho=\beta+it,\qquad |t|\ge 10^6,
 \\[2pt]
-\log(|t|+2)\le 320000
+L(t)=\log(|t|+2),
+\\[2pt]
+C(L)=L+2052\log L+30240,
 \\[4pt]
-\Longrightarrow\qquad \frac{1}{450000}\lt \beta\lt 1-\frac{1}{450000}.
+d(t)=\min\!\left\{\frac{1}{450000},\frac{221}{250C(L(t))}\right\},
+\\[4pt]
+d(t)\lt\beta\lt 1-d(t).
 \end{gathered}}
 ```
 
 </td></tr>
 </table>
 
-Lean also proves literal zeta nonvanishing on the closed right edge.
-[Band proof](RiemannGaussian/ZetaGaussianBandExclusion.lean)
-· [Complete cost and comparison](docs/zeta-gaussian-phase-band.md).
+The starting height is explicit, and literal zeta nonvanishing includes
+the closed right edge. The full phase-family bound keeps Gaussian,
+logarithmic and fixed costs separate at every height.
+[Lean proof: exact_strip_min](RiemannGaussian/ZetaGaussianRetainedRegion.lean)
+· [Complete cost and arithmetic consequences](docs/zeta-gaussian-retained-region.md).
 
-**Exact benchmark crossover:** Lean proves strict improvement over the
-listed classical, Littlewood, Vinogradov–Korobov and intermediate width
-functions throughout
-
-<table>
-<tr><td>
-
-```math
-\boxed{\begin{gathered}
-L=\log|t|,\qquad L_*\lt L\le L_{\max},
-\\[4pt]
-\frac{981}{50}L_*=450000\log L_*,
-\\[2pt]
-288000\lt L_*\lt 289000,
-\\[4pt]
-L_{\max}=\log\!\left(e^{320000}-2\right).
-\end{gathered}}
-```
-
-</td></tr>
-</table>
-
-At the unique crossover the strongest headline comparison ties; the upper
-endpoint is included exactly.
-[Lean comparison](RiemannGaussian/ZetaGaussianBandFrontier.lean)
-· [Literature-frontier table and source audit](docs/zero-free-literature-frontier.md).
-The table records the comparison's coverage and unresolved source checks;
-an exhaustive world-record claim remains unestablished.
+The [literature-frontier table](docs/zero-free-literature-frontier.md) records
+the exact interval where Lean proves improvement over the listed benchmark
+functions. Comparisons beyond that interval have not been extended to this
+new curve; an exhaustive world-record claim remains unestablished.
 
 **Eventual component:** for each fixed admissible coefficient, Lean also proves
 
@@ -85,7 +67,7 @@ This excludes a region adjoining each edge of the critical strip. Lean also
 proves literal zeta nonvanishing on the corresponding closed right edge,
 with every arithmetic and analytic premise discharged.
 **This coefficient-dependent threshold has not been numerically evaluated.**
-On overlaps the two components combine by their larger width, with both
+On overlaps the two components [combine by their larger width](RiemannGaussian/ZetaGaussianRetainedRegion.lean), with both
 height conditions preserved. The remaining interior strip is unresolved,
 and RH remains open.
 
@@ -106,27 +88,18 @@ Zoom, expand branches, inspect theorem metadata and open exact Lean source lines
 
 ## Current Direction
 
-Use the explicit Gaussian zero-free region and uniform moving-height arithmetic bounds to attack the independent ordinary-prime floor, preserving prime phases and the complete divisor correlation. The full matrix has a common decay allowance across the explicit center band. Exact benchmark comparisons now cover the crossover through the true ceiling; the isolated prime tail and RH remain open.
+Attack the surviving squarefree Vaughan band at the larger growing cutoffs. Independent estimates now remove all nonsquarefree terms while retaining the original zero source, Möbius signs and product phases. The next target is a cofinal real lower bound for the remaining signed sum, using its coprime factor and divisor-parity structure. RH remains open.
 
 ## Latest Update
 
-**The comparison now covers its exact crossover-to-ceiling interval.**
-Lean proves existence and uniqueness of the crossover, its endpoint equality,
-strict improvement above it, and the exact upper height correction. The
-[literature table](docs/zero-free-literature-frontier.md) records primary
-sources, height ranges, boundary conventions and the limits of the audit.
-
-The same slice transports the proved region into a uniform bound for the
-actual squarefree quotient and a common vanishing allowance for the complete
-logarithmic divisor matrix, including moving selected zeros, cutoffs and
-complex weights. The signed prime envelope and polynomial cost remain explicit.
-[Band transport](RiemannGaussian/ZetaSquarefreeGaussianBand.lean)
-· [Moving Möbius matrix families](RiemannGaussian/ZetaSquarefreeGaussianSieve.lean)
-· [Exact arithmetic scope](docs/zeta-squarefree-gaussian-band.md).
-
-This strengthens the already controlled matrix response. The independent
-one-sided bound for the isolated ordinary-prime tail remains open. The
-zero-free region above is unchanged, and RH remains open.
+**The entire nonsquarefree band now has proved independent decay.**
+Lean removes every nonsquarefree integer from the original Vaughan band at
+`D_N=floor(u^(-N)/(N+1))`, for every fixed filter, `0<u<1` and `abs(y)>1`.
+At a hypothetical right-half zero, the squarefree band retains the full
+negative-multiplicity source. Its independent signed lower bound remains
+open; the zero-free region is unchanged.
+[Lean proof](RiemannGaussian/ZetaSquarefreeVaughanProjection.lean)
+· [Exact identities, bounds and scope](docs/zeta-squarefree-vaughan-projection.md).
 
 ## Notable Formalisations
 
@@ -135,7 +108,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
-| **Explicit Gaussian zero-free band from the complete phase-family cost** | Every eligible countable family in a coarse coefficient class has full cost at most `47500`, below the selected source `48000`. The existing exact family proves the explicit band above. All three prime responses remain coupled before positivity; the Euler charge falls only on the constant channel. Exact comparison inequalities and union with the eventual region are proved. | [complex family arithmetic](RiemannGaussian/ZetaGaussianPhaseArithmetic.lean), [coupled right response](RiemannGaussian/ZetaGaussianPhaseAllowance.lean), [full signed family](RiemannGaussian/ZetaGaussianStripPhaseFamily.lean), [actual band](RiemannGaussian/ZetaGaussianBandExclusion.lean), [scope](docs/zeta-gaussian-phase-band.md) |
+| **Explicit Gaussian zero-free curve from the complete phase-family cost** | Every eligible countable family has full cost at most `36922*q + L/36 + 57*log(L) + 840`. The explicit dilation puts this below the selected source `48000*q`. All three prime responses remain coupled before positivity. The union with the eventual region and the enlarged squarefree Cauchy radius are proved. | [full signed family](RiemannGaussian/ZetaGaussianStripPhaseFamily.lean), [complete cost](RiemannGaussian/ZetaGaussianRetainedCost.lean), [actual region](RiemannGaussian/ZetaGaussianRetainedRegion.lean), [arithmetic transport](RiemannGaussian/ZetaSquarefreeGaussianRetainedRegion.lean), [scope](docs/zeta-gaussian-retained-region.md) |
 | **Original Gaussian prime identity and complete strip bridge** | One complex Gaussian average connects the actual prime series, full xi response, pole and completion. Arbitrary finite zero groups retain their ordinates and multiplicities in the signed strip bound; the entire nearby divisor reaches Gaussian compensation. Exact pole recombination and explicit completion and distant-zero allowances retain the selected source at Euler centers. | [complex averages](RiemannGaussian/GaussianComplexPoleAverage.lean), [actual identity](RiemannGaussian/ZetaGaussianSmoothedIdentity.lean), [finite divisor groups](RiemannGaussian/ZetaStripFiniteSource.lean), [terminal bound](RiemannGaussian/ZetaGaussianStripBound.lean), [scope](docs/zeta-gaussian-strip-bridge.md) |
 | **Complete nearby Gaussian-cotangent compensation** | A general analytic half-disc theorem controls the full blended source through its removed pole. Every nearby actual zero is compensated by its own retained Poisson mass; any finite selection keeps its exact source and multiplicities in the full signed bound. The selected cotangent loss is explicitly linear in its distance from one. | [regular correction](RiemannGaussian/CotangentRegularization.lean), [general minimum principle](RiemannGaussian/AnalyticHalfDiscMinimum.lean), [source bound](RiemannGaussian/SmoothedCotangentSource.lean), [actual cancellation](RiemannGaussian/ZetaGaussianNearCancellation.lean), [scope](docs/zeta-gaussian-near-cancellation.md) |
 | **Complete Gaussian zero mass and explicit smoothing remainder** | Exact complex endpoints give cubic pole-remainder decay. An all-window cosine theorem proves the sign of every actual Gaussian zero contribution. Complete multiplicity-weighted summability, finite-window limits and near/far identities retain the complex correction; a shifted Poisson comparison gives an elementary half-logarithmic outside allowance. | [complex endpoints](RiemannGaussian/GaussianComplexHalfMoments.lean), [all-window sign](RiemannGaussian/PositiveCosineLaplace.lean), [actual mass](RiemannGaussian/ZetaGaussianLaplaceMass.lean), [complete remainder bound](RiemannGaussian/ZetaGaussianDistanceRemainder.lean), [scope](docs/zeta-gaussian-pole-remainder.md) |
@@ -214,7 +187,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 | **Signed Gamma curvature and full reflected error decay** | An exact shifted completion represents the actual xi carrier through all zeros. Its normalized curvature error vanishes in L1 on the whole upper half-plane, retaining both reflection poles, for fixed positive Gaussian time and growing smoothing. The remaining arithmetic source bound is open. | [signed trigamma estimate](RiemannGaussian/TrigammaHalfPlane.lean), [actual source transport](RiemannGaussian/SuzukiGammaShiftSource.lean), [full reflected L1 decay](RiemannGaussian/SuzukiGammaReflectionDecay.lean) |
 | **Controlled arithmetic recovery from positive delays** | Every sufficiently late interval `[a,4096*a]` contains a positive value of the actual Suzuki signal. Finite positive delay averages cancel prescribed nonreal modes exactly; the genuine filtered arithmetic moments retain a universal linear coefficient with bounded error. Recovery times are controlled, while negative excursion depths remain open. | [controlled recovery](RiemannGaussian/SuzukiControlledRecovery.lean), [exact delay transform](RiemannGaussian/PositiveDelayAveraging.lean), [signed moment bound](RiemannGaussian/SuzukiPositiveDelayMoments.lean), [independent tail estimate](RiemannGaussian/GammaMomentRecovery.lean) |
 | **Exact phase optimisation and arithmetic floors** | A unique maximiser for the specified shift and linear cost, among all feasible finite or infinite integer-frequency families. Exactly eight nonconstant frequencies occur. Its four contact cosines avoid their doubled images. Complete binomial energies and actual prime scales give an arithmetic floor `exp(-4*(sigma-1)*log(2))/40` for `1 < sigma <= 5/4`, plus a phase-sensitive threshold in actual zero exclusion. | [existsUnique_phaseContactOptimizer](RiemannGaussian/ZetaPhaseExactOptimizer.lean), [phaseContactExact_doubled_contact_gap](RiemannGaussian/ZetaPhaseContactDoubling.lean), [phaseContactExact_binomial_scaled_arithmetic_floor](RiemannGaussian/ZetaPhaseBinomialScale.lean), [phaseContactExact_binomial_energy_exclusion](RiemannGaussian/ZetaPhaseBinomialScale.lean) |
-| **Literal signed prime detection of hypothetical zeros** | An exact local-divisor polynomial isolates each right-half zero's negative multiplicity in a finite ordinary-prime band. Proper prime powers, both arithmetic tails, and the complete analytic remainder are negligible. The independent lower bound for the retained signed band remains open. | [tendsto_zetaRightHalfOrdinaryPrimeBandFilter_re](RiemannGaussian/ZetaPrimeMomentBand.lean), [tendsto_zetaRightHalfPrimeBandChebyshevIntegral_re](RiemannGaussian/ZetaPrimeBandChebyshev.lean) |
+| **Literal signed prime detection and limits of absolute estimates** | The exact filter isolates each right-half zero's negative multiplicity. Every fixed normalized filter has growing raw prime windows requiring complementary cancellation. Every continuous sublinear exponent also leaves a divergent absolute error allowance, even with the full complex derivative retained. The independent signed bound remains open. | [finite prime source](RiemannGaussian/ZetaPrimeMomentBand.lean), [centered Abel identity](RiemannGaussian/ZetaPrimeBandChebyshev.lean), [actual window cancellation](RiemannGaussian/ZetaPrimeTailWindowObstruction.lean), [general envelope obstruction](RiemannGaussian/ZetaPrimeEnvelopeRate.lean), [scope](docs/zeta-prime-envelope-rate.md) |
 | **Prime Gram rank and quadratic source separation** | Actual complex prime Gram matrices retain full finite rank after every finite prefix. A separate quadratic identity has independently negligible mixed and same-prime terms, leaving its nonzero zero-source on distinct-prime products. | [zetaPrimeGram_sub_prefix_rank](RiemannGaussian/ZetaPrimeGram.lean), [exists_zetaPrimeMixedProductMoment_decay_bound](RiemannGaussian/ZetaPrimeQuadraticMoments.lean), [tendsto_zetaDistinctPrimePair_source](RiemannGaussian/ZetaPrimePairDiagonal.lean) |
 | **Suzuki work floors, divisor certificates, and positive Laplace continuation** | The analytic chain from the literal Suzuki signal to Mathlib's RH, including genuine Laplace convergence and the zero-residue contradiction. The unrestricted finite divisor-certificate maximum equals the exact mass–moment potential; all optimizers have equality on prime powers. General subexponential compensators allow eventual one-sided bounds by every positive cutoff power. This arithmetic premise remains open. | [riemannHypothesis_of_suzuki_psi_nonnegative_tail](RiemannGaussian/SuzukiPositivityRH.lean), [divisor-certificate theorem](RiemannGaussian/SuzukiLegendreDivisorDual.lean), [all-weight optimality](RiemannGaussian/SuzukiDivisorDualOptimality.lean), [general compensator](RiemannGaussian/SuzukiLaplaceCompensator.lean), [subpolynomial allowance](RiemannGaussian/SuzukiSubexponentialWork.lean) |
 | **Global xi expansion and signed carrier bounds** | The full multiplicity-weighted paired logarithmic derivative is absolutely convergent, with both canonical difference remainders proved to vanish. Finite local signed bands bound its imaginary part from above. Every genuine upper carrier pole lies in an actual reflected-zero Jensen disk; the literal carrier is bounded by one outside their union. Collective pole-residue control and the global arithmetic bound remain open. | [global paired expansion](RiemannGaussian/RiemannXiGlobalLogDerivative.lean), [finite signed upper bounds](RiemannGaussian/RiemannXiJensenDiskBound.lean), [local carrier-pole bounds](RiemannGaussian/SuzukiCarrierLocalPoleBudget.lean), [outer contour decay](RiemannGaussian/SuzukiCarrierSafeContour.lean) |
@@ -302,8 +275,8 @@ Ten major results, selected for mathematical significance. Detailed auxiliary
 results and their exact scope remain in [Notable Formalisations](#notable-formalisations)
 and the [proof inventory](docs/proof-status.json).
 
-- **A proved zero-free region with exact benchmark comparisons.** The
-  [explicit Gaussian band](RiemannGaussian/ZetaGaussianBandExclusion.lean)
+- **A proved zero-free region with explicit heights and no upper ceiling.** The
+  [adaptive Gaussian curve](RiemannGaussian/ZetaGaussianRetainedRegion.lean)
   and [eventual Littlewood component](RiemannGaussian/ZetaLogLogZeroFree.lean)
   form the region displayed above. The [exact crossover comparison](RiemannGaussian/ZetaGaussianBandFrontier.lean)
   and [literature audit](docs/zero-free-literature-frontier.md) state precisely

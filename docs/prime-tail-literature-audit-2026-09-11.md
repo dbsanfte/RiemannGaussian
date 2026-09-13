@@ -2,9 +2,17 @@
 
 The next useful arithmetic input must distinguish ordinary primes from a positive oscillating comparison density. Positivity, retention of conjugate phases, and a fixed polynomial that isolates the selected frequency do not suffice: a locally verified Lean comparison theorem exhibits the same negative unit limit for every such polynomial. The literature offers several ways to use additional arithmetic information, but none of the estimates reviewed here supplies the independent bound required by the current RH argument.
 
-The first feasibility audit of **joint factorization and additive correlations** has now ruled out a blanket upgrade from complete signed moments to source-scale norm estimates on every raw interval. A locally verified actual-prime example retains a growing narrow-window contribution even after exact pole annihilation and selected-mode normalization. The Type I/II framework of Ford and Maynard remains useful for specifying what additional estimates would be necessary, but its centered arithmetic error must be identified before those hypotheses can be tested. Additive congruences, shifted correlations, and simultaneous prime-factor information remain candidates; no reviewed estimate yet supplies the required signed bound.
+The feasibility audit of **joint factorization and additive correlations** now rules out raw interval norm control for every fixed normalized polynomial, including the actual pole-jet filter. The [imported all-family theorem](zeta-prime-window-obstruction.md) extends the earlier local linear example and proves that cancellation with the complementary tail must be preserved. The Type I/II framework of Ford and Maynard remains useful for specifying additional estimates, but its centered arithmetic error must be identified before those hypotheses can be tested. Additive congruences, shifted correlations, and simultaneous prime-factor information remain candidates; no reviewed estimate yet supplies the required signed bound.
 
 ## 1. The exact target
+
+The subsequent [general envelope theorem](zeta-prime-envelope-rate.md)
+rules out direct absolute integration of every continuous error profile
+`x*exp(-r(log x))` with `r(t)/t -> 0`, for every fixed normalized filter.
+The obstruction holds on the original finite prime band and survives
+keeping the full complex derivative inside one norm. This is a limitation
+of the allowance, not a lower bound for the actual signed error. It does
+not reject approaches that preserve cancellation between logarithmic times.
 
 Let a hypothetical nontrivial zero be
 
@@ -133,15 +141,26 @@ Ford and Maynard study prime sums for nonnegative sequences satisfying Type I an
 
 The hypothesis audit is essential. Their Type I estimate controls interval-restricted sums along multiples, aggregated over divisors. Their Type II estimate allows arbitrary bounded, or specified divisor-bounded, coefficients in both factor variables. The current marked Euler moment bounds do not automatically supply either statement: they concern specific complex filtered sums, without all of these interval and coefficient quantifiers.
 
-**Local interval test, now verified.** The [actual-prime Lean audit](../../research-audits/prime-phase-window-evidence-2026-09-11/README.md) constructs, for every \(u>1/2\) and \(|\gamma|>1\), the fixed polynomial
+**All fixed filters, now verified in the imported library.** For every
+\(u>1/2\), every fixed complex polynomial \(P\) with \(P(1/u)=1\), and
+\(h=1/(|\gamma|+1)\),
+[`every_normalized_filter_has_large_windows`](../RiemannGaussian/ZetaPrimeWindowLocalization.lean)
+proves divergence of the source-normalized actual-prime window norm on
+\(e^{N/u}<a\le e^{N/u+h}\). Uniform factorial-filter localization forces
+the local polynomial amplitude to approach one. Actual PNT and Stirling
+then give an eventual lower scale proportional to
+\(\exp((1-1/(2u))N)/N\). This extends the earlier locally validated linear
+witness; it does not assume a density heuristic or a special value at the
+absolute saddle.
 
-\[
-P(z)=\frac{1-(1/2+i\gamma)z}{1-(1/2+i\gamma)/u}.
-\]
-
-It has exactly zero pole-mode response and unit selected response. Nevertheless, on the narrow interval \(e^{2N}<a\le e^{2N+h}\), where \(h=1/(|\gamma|+1)\), the normalized norm of its actual prime sum tends to infinity. The theorem `exists_normalized_filter_with_large_prime_windows` proves this using the existing prime number theorem, Stirling's formula, and both trigonometric channels. The proof's lower scale is a positive constant times \((2u)^N/N\). It does not take an asymptotic density heuristic as a hypothesis.
-
-The tested window is beyond both moving arithmetic cutoffs. `filteredWindowMoment_eq_prime_tail_window` identifies it with the restriction of the original tail coefficient, for every fixed polynomial. The explicit linear witness is not claimed to be the full zero-isolating polynomial, nor does this prove divergence for every filter. It suffices to refute a uniform source-scale norm bound on all raw intervals under the two mode constraints alone.
+[`norm_normalizedTailWindow_tendsto`](../RiemannGaussian/ZetaPrimeTailWindowObstruction.lean)
+applies this result to the full zero-isolating pole-jet filter. The window
+is proved to survive both original arithmetic cutoffs, with its literal
+tail coefficient retained. The complete signed tail's finite source limit
+then forces the complementary sum, divided by this window, to approach
+\(-1\) in the complex plane. The [proof and scope](zeta-prime-window-obstruction.md)
+distinguish the independent window estimate from this source-dependent
+cancellation consequence. No assertion is made for order-dependent filters.
 
 This does not refute the literature's centered Type I/II hypotheses. Pole annihilation in a complete moment is not the same operation as subtracting the smooth prime density separately on each interval. The remaining test must use the exact centered error and account for the reconstruction of the complete signed tail. The repository's Abel–Chebyshev identity already exposes that error; this audit does not supply its missing estimate.
 
@@ -149,9 +168,32 @@ This does not refute the literature's centered Type I/II hypotheses. Pole annihi
 
 **Application assessment.** Use the framework first as a test of sufficiency. Record the actual factor ranges and the precise class of allowed coefficients in the surviving matrix. Retain the vector of prime-factor sizes and the subset products available for splitting; a scalar divisor count or a norm of the whole matrix can obscure this information. No Type I/II parameter triple is certified here for the current signed sequence.
 
+**Vaughan source continuation.** The [actual two-cutoff reduction](zeta-vaughan-reduction.md)
+proves independent decay of the complete small-factor responses for the
+original fixed factorial filter. The [square-root budget refinement](zeta-vaughan-cutoff-budget.md)
+pays both factor cutoffs `floor(u^(-N)/(N+1))` with allowance
+`C*(u/(N+1)+u^(N+1))`; the full selected-zero source survives in the
+original finite band of `mu_(>U)*kappa_V`, where
+`kappa_V(n)=sum_(d|n,d>V) Lambda(d)` is nonnegative, bounded by `log n`,
+and additive on coprime products. This pays the complete-moment Type I
+terms and both band tails. It does not provide arbitrary interval or
+coefficient quantifiers, comparable factor sizes, the surviving Type II
+bound, or the independent signed floor. The kernel retains its full
+product phase; its separation into Mellin phases is not a new cancellation
+estimate. The note attributes the classical identity to Vaughan.
+
 Friedlander–Iwaniec's asymptotic sieve makes the missing parity information particularly explicit. Its extra bilinear assumption contains the signed factor \(\mu(mn)\), together with a truncated Möbius divisor sum. The theorem obtains prime asymptotics only after this estimate and the other sieve hypotheses have been verified. Section 10 allows a roughness restriction, which is close in form to the present carrier.[^2]
 
 **Application assessment.** This is a useful specification of the missing estimate, not a theorem that discharges it. Replacing the signed sequence by its absolute value to fit a nonnegative sieve hypothesis would lose the quantity needed for the contradiction. Applying a sieve separately to positive and negative parts can also reintroduce errors at full density.
+
+The [squarefree projection refinement](zeta-squarefree-vaughan-projection.md)
+now removes the full nonsquarefree Vaughan band at that same larger cutoff,
+with independent decay for every fixed filter. Its averaged reciprocal
+Euler correction is paid by a convergent divisor-square Dirichlet mass.
+The exact projected convolution and the remaining squarefree signed source
+are compiled Lean results. This applies classical divisor expansion,
+Chebyshev density and Cauchy estimates; no new literature estimate or
+historical novelty is claimed. The independent signed floor remains open.
 
 ## 6. Additive structure and higher correlations
 

@@ -207,7 +207,11 @@ def build():
         source_module = (location or {}).get("module") or n["module"]
         source_path = source_module.replace(".", "/") + ".lean" if source_module else None
         source = None
-        if n["project"] and source_path:
+        # Lean can emit an equation helper in a project module for an
+        # external abbrev. Its dependencies belong to the project closure,
+        # but its enclosing source still belongs to the pinned library.
+        project_source = source_module == "RiemannGaussian" or (source_module or "").startswith("RiemannGaussian.")
+        if n["project"] and source_path and project_source:
             path = ROOT / source_path
             assert path.is_file(), f"Missing project source: {source_path}"
             if source_path not in project_sources:
@@ -226,6 +230,8 @@ def build():
                       "exact": (location or {}).get("exact", False), "project": True,
                       "declaration": (location or {}).get("declaration")}
         elif source_path and location:
+            if n["project"]:
+                assert not location["exact"], f"Project declaration has external exact source: {n['id']}"
             for directory, repo, revision in packages:
                 if (directory / source_path).is_file():
                     source = {"url": f"{repo.removesuffix('.git')}/blob/{revision}/{source_path}#L{location['line']}",

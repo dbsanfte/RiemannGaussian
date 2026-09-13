@@ -153,6 +153,14 @@ the additional factorization and additive-correlation hypotheses that a
 new estimate would need. This is a diagnostic and research assessment;
 the independent prime-tail bound remains open.
 
+The [all-filter window theorem](zeta-prime-window-obstruction.md) now proves
+that every fixed normalized polynomial has raw ordinary-prime windows whose
+source-normalized norms diverge. This includes the actual pole-jet filter
+beyond both current cutoffs. The complementary tail has the opposite limiting
+relative complex amplitude. An independent estimate must therefore preserve
+this cancellation or act on a correctly centered error; separate raw window
+norms cannot supply the required source-scale bound.
+
 ## Local verification
 
 Both modules are imported by the root library. Warning-as-error direct

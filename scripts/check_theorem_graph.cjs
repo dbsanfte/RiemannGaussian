@@ -19,7 +19,14 @@ for (const n of data.nodes) {
     assert.deepEqual(n[field].map(i => data.nodes[i].id), original[rawField]);
   }
   assert(data.families.some(f => f.id === n.family));
-  if (n.project) assert(n.source?.path && n.source.line > 0, n.id);
+  if (n.project) {
+    assert(n.source?.path && n.source.line > 0, n.id);
+    if (!n.source.project) {
+      assert(n.generated && !original.location.exact, "Only generated helpers can have enclosing external source");
+      assert.equal(n.source.path, original.location.module.replaceAll(".", "/") + ".lean");
+      assert(n.source.url?.endsWith(`#L${original.location.line}`), "External source line must follow Lean's range");
+    }
+  }
 }
 function checkView(visible, scope) {
   visible.forEach(i => assert(scope.has(i), "View contains an unrelated theorem"));

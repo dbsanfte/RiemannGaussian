@@ -6,7 +6,7 @@
 
 Complex analytic estimates, disc-to-strip maps, complete divisors and signed boundary identities.
 
-**63 modules.** Source links open the definitions, hypotheses and proofs.
+**66 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDiscBoundaryMoment](../../RiemannGaussian/AnalyticDiscBoundaryMoment.lean)
 - [AnalyticDiscBoundarySequence](../../RiemannGaussian/AnalyticDiscBoundarySequence.lean)
@@ -50,6 +50,8 @@ Complex analytic estimates, disc-to-strip maps, complete divisors and signed bou
 - [ZetaClippedEulerMean](../../RiemannGaussian/ZetaClippedEulerMean.lean)
 - [ZetaEntireMultiplierBound](../../RiemannGaussian/ZetaEntireMultiplierBound.lean)
 - [ZetaFullRadiusPrimeBudget](../../RiemannGaussian/ZetaFullRadiusPrimeBudget.lean)
+- [ZetaGaussianSignedBudgetReduction](../../RiemannGaussian/ZetaGaussianSignedBudgetReduction.lean)
+- [ZetaGaussianSourceSupport](../../RiemannGaussian/ZetaGaussianSourceSupport.lean)
 - [ZetaHalfStripSource](../../RiemannGaussian/ZetaHalfStripSource.lean)
 - [ZetaHorizontalBudget](../../RiemannGaussian/ZetaHorizontalBudget.lean)
 - [ZetaMultiplierRadiusBound](../../RiemannGaussian/ZetaMultiplierRadiusBound.lean)
@@ -70,4 +72,5 @@ Complex analytic estimates, disc-to-strip maps, complete divisors and signed bou
 - [ZetaStripFiniteSource](../../RiemannGaussian/ZetaStripFiniteSource.lean)
 - [ZetaStripPhaseExclusion](../../RiemannGaussian/ZetaStripPhaseExclusion.lean)
 - [ZetaStripPhaseFamily](../../RiemannGaussian/ZetaStripPhaseFamily.lean)
+- [ZetaZeroFilterCost](../../RiemannGaussian/ZetaZeroFilterCost.lean)
 - [ZetaZeroModeFilter](../../RiemannGaussian/ZetaZeroModeFilter.lean)

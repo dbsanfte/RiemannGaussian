@@ -5,6 +5,19 @@ current zero-free endpoints. Its coloured zones describe mathematical
 families; they do not assert new implications. The README contains only a
 linked preview in its zero-free section.
 
+The default view now ends at the improved explicit curve proved by
+`ZetaGaussianRetainedRegion`. **Improved curve · complete cost and comparison**
+shows the full retained-cost inequality, containment and strict improvement
+over the preceding curve, and the larger radius in the original marked
+squarefree response. The [scope note](zeta-gaussian-retained-region.md)
+keeps the independent interior prime floor explicit. Earlier multiplicity,
+separation and energy endpoints retain their own stated width or dilation.
+
+The **Multiplicity** endpoint follows the stronger location constraint for
+multiple zeros, its comparison with the earlier simplicity width, and the
+exact signed eta-current consequence. Its larger simplicity layer is not
+a larger region free of all zeros; the universal curve remains the default.
+
 Select **Exact benchmark comparison** to inspect the crossover equation,
 endpoint equality, full crossover-to-ceiling interval and supplementary
 literature-width comparisons. Its theorem inspectors link to the
@@ -47,10 +60,103 @@ target's other hypotheses.
 The full project dependency closure is exported, including definitions,
 private lemmas and generated helpers. External Lean and mathlib references
 are boundary leaves; their complete transitive axioms are still collected.
+An equation helper emitted in a project module remains in the dependency
+closure even when Lean locates its enclosing definition in a library.
+Its source button then links to that pinned library definition and labels
+the location as an enclosing declaration.
 Every node must depend only on `propext`, `Classical.choice`, and `Quot.sound`.
 Generated helpers link to their enclosing Lean declaration with that fact
 explicitly labelled. Source locations come from Lean's declaration ranges,
 including original private definitions for inlined pattern-match equations.
+
+The **Separation** endpoint keeps finite Gaussian zero groups and displays
+the right and left rectangle counts and the reciprocal-distance bound.
+Its scope distinguishes the rectangle depth `2*d(t)`, isolation depth
+`3*d(t)/2` and vertical radius `d(t)/2`. One simple zero is still permitted;
+this does not enlarge the universal zero-free curve. See the
+[proof and scope](zeta-gaussian-zero-separation.md).
+
+The **Filter cost** endpoint follows the whole original zero-isolating
+filter through the exact inverse-coordinate Mahler product, the complete
+local zero count and its weighted coefficient estimate. Separate roots
+display the finite-band reduction error and the surviving negative signed
+source. These estimates apply in the right isolation layer and do not
+prove an independent signed prime floor. See the
+[exact bounds and scope](zeta-zero-filter-cost.md).
+
+The **Prime work** endpoint retains the common Gaussian/Euler/boundary
+prime measure and transports disjoint weighted blocks into the finite
+zero-group inequality. Separate roots show strict positivity of the
+actual work and the vanishing normalized reserve of arbitrary moving
+triangular block minorants. The latter is a method ceiling, not an upper
+bound on the actual work or a new zero-free region. See the
+[floor, ceiling and scope](zeta-gaussian-prime-blocks.md).
+
+The **Prime correlations** endpoint shows the actual finite-zero
+constraint, the conditional arithmetic floor, the exact ratio/product
+phase and Gaussian coordinates, and the improvement from retaining the
+real projection.
+Its scope retains the finite-set floor criterion's explicit energy-gap premise;
+the later complete-prime decay has its own endpoint.
+The [correlation note](zeta-gaussian-prime-correlation.md) gives the
+sufficient threshold and explains why matrix positivity alone does not
+supply it.
+
+The **Ordinary primes** endpoint follows the next reduction: all proper
+prime powers and auxiliary responses have one fixed summable majorant,
+and their complete quadratic allowance vanishes after normalization.
+The source constraint targets ordinary Gaussian-prime energy. The
+[reduction note](zeta-gaussian-prime-reduction.md) records the fixed
+geometry, bounded-mass condition and unchanged signed source budget.
+
+The **Prime energy** endpoint now shows decay at the actual current
+dilation. Its four roots show the two-sided small Euler response, the
+uniform all-family energy estimate, normalized energy decay and the
+actual squared zero-source surplus limit. The
+[decay note](zeta-gaussian-prime-energy-decay.md) records the unevaluated
+thresholds and the remaining signed boundary budget. The preceding
+[independent bound](zeta-gaussian-prime-energy-bound.md) remains upstream.
+
+The **Signed budget** endpoint carries that source limit to the original
+clipped left mean. Its three roots retain the exact decomposition, full
+two-sided correction bound and actual finite-zero source limit. The
+[signed-budget note](zeta-gaussian-signed-budget-reduction.md) distinguishes
+the proved disappearance of normalized non-left terms from the open
+source-beating estimate for the left mean.
+
+The **Source visibility** endpoint audits the source itself. Its six roots
+show the coupled coordinate condition, exact order-nine and all-admissible-
+order cutoffs, the retained complex far term and eventual disappearance of
+every fixed window as detector height diverges. Its constructive root gives
+an adaptive strip with a strictly positive source for every hypothetical
+right-half zero, retaining the full original signed inequality. The
+[support note](zeta-gaussian-source-support.md) distinguishes a detector's
+cutoff from a proved zero-free region and explains the fixed-zero obligation.
+
+The **Prime discrepancy** endpoint keeps the actual drift/jump recurrence,
+complete earlier-prime pairs, the monotone real-weight estimate and the
+full factorial diagonal bound. Its fifth root proves that twice the
+quadratic work plus the signed energy flux tends to zero at the source
+normalization. The [work note](zeta-prime-discrepancy-work.md) records the
+remaining gap: this quadratic correlation does not yet bound the original
+linear carrier. Its boundaries and complex weight increments remain explicit.
+
+The **Integer lattice** endpoint carries the original linear zero signal
+into the complete prime-versus-integer sum. Its five roots retain the
+exact sawtooth identity, uniform sampling error, first Chebyshev error
+increments, full comparison bound and the original conditional negative
+multiplicity source. The [lattice note](zeta-prime-lattice-carrier.md)
+distinguishes this proved transport from the still-open independent
+cofinal signed floor.
+
+The **Vaughan factors** endpoint records the classical arithmetic identity,
+cofactor additivity, prime-density budget, larger cutoff schedule and full
+conditional source. Five additional roots expose the averaged reciprocal
+Euler correction, exact projected convolution, projected cross-term decay,
+independent deletion of the entire nonsquarefree band and the surviving
+squarefree source. The [projection note](zeta-squarefree-vaughan-projection.md)
+keeps the open cofinal signed floor explicit. The default zero-free endpoint
+is unchanged.
 
 ## Regenerate and check
 

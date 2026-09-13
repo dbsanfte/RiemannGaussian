@@ -1424,7 +1424,253 @@ orientation, multiplicity, scale, correlation, and cutoff data it forgets.
 - Collapse information at the latest theorem where it produces a concrete
   estimate. Never replace an exact signed identity by only its triangle bound.
 
+For the current ordinary-prime tail, the compiled all-filter obstruction in
+`docs/zeta-prime-window-obstruction.md` rules out source-scale norm bounds on
+every raw interval for any fixed normalized polynomial, including the actual
+pole-jet filter. Its windows lie beyond both current arithmetic cutoffs.
+Retain cancellation between windows or identify a centered error before
+invoking interval estimates. The complementary-tail relative limit uses the
+hypothetical zero's source theorem and is not an independent arithmetic bound.
+
+The adaptive Gaussian region in `docs/zeta-gaussian-all-height.md` now has
+an explicit starting height and no upper height ceiling. Its arithmetic
+transport supplies a radius greater than one at every eligible center,
+but its response constant may depend on that center. Do not extend the
+older compact-band uniform constant to the unbounded center domain without
+a new proof. The exact literature comparisons retain their plateau scope.
+
+The refinement in `docs/zeta-gaussian-multiplicity-depth.md` keeps the
+actual multiplicity in the Gaussian source. Its larger layer excludes
+multiple zeros and discharges simplicity and the full eta head-current
+identity there. It does not exclude simple zeros in that added layer,
+enlarge the universal zero-free curve, or give separation throughout that
+whole simplicity layer.
+The comparison with the older simplicity width requires enlarged
+logarithmic height at least 100. Keep these distinctions in status and
+explorer descriptions.
+
+The finite-group refinement in `docs/zeta-gaussian-zero-separation.md`
+counts at most one zero with multiplicity in each boundary rectangle of
+horizontal depth `2*d(t)` and vertical radius `d(t)/2`, at central heights
+at least one million. It also isolates zeros within `(3/2)*d(t)` of either
+edge from every other zero by distance greater than `d(t)/2`. Keep these
+horizontal scopes separate from the larger simplicity-only layer.
+The inverse-distance estimate alone controls individual factors. The
+subsequent `docs/zeta-zero-filter-cost.md` controls the whole original
+pole-jet filter in the right isolation layer: exact Mahler identities remove
+the inverse-coordinate denominators, and a global Poisson count pays for
+every factor. Its height-dependent weighted coefficient bound also controls
+the exact density primitive and the finite-band reduction error. This is
+not a bound for arbitrary order-dependent augmented filters or the signed
+bulk. A rectangle may contain one simple zero; the same centered source
+tends to minus one under that hypothesis. The independent signed prime
+floor and an enlarged universal zero-free curve remain open.
+
+The source-level audit in
+`docs/signed-prime-carrier-information-audit-2026-09-12.md` records the
+current carrier's correlations and exact loss points. Distinguish its
+compiled identities from diagnostic mode calculations and proposed
+interfaces. Keep the three Gaussian prime responses on their common
+prime measure; separate finite block floors may not be added when they
+each bound the same full sum. Test any growing-block improvement at the
+actual dilation and source scale before treating strict positivity as
+a quantitative advance.
+
+`docs/zeta-gaussian-prime-blocks.md` now proves the complete common prime
+measure, disjoint triangular-block floors and a ceiling for that whole
+minorant class. It includes the stronger weighted recurrence, arbitrary
+distinct prime sets and lengths, and moving coefficient families. Their
+guaranteed reserve divided by unbounded dilation tends to zero. This is
+not an upper bound on actual mixed prime work or a classification of every
+possible recurrence. Do not extend the same triangular-minorant route in
+the hope of a leading-scale gain; retain cross-prime and signed-boundary
+correlations or establish a new arithmetic property instead.
+
+`docs/zeta-gaussian-prime-correlation.md` gives the anchored Schur test on
+the complete Gaussian prime measure. Retain both logarithmic ratios and
+products: their average is the exact cosine energy, while the excess in
+the ratio-only test is a nonnegative sine energy. The actual finite-zero
+constraint retains the full squared source surplus and removes the
+constant phase from the energy exactly. It is proved, but the independent
+energy gap in the arithmetic floor criterion remains a premise. Do not
+describe this classical matrix
+transport as a proved cancellation estimate, a new region or historical
+novelty. Test its complete real pair energy with all product phases and
+the signed boundary mean before claiming a gain at the source scale.
+
+`docs/zeta-gaussian-prime-reduction.md` now proves the complete remainder
+reduction at the current fixed-strip dilation. Proper prime powers and
+both auxiliary responses share one fixed summable majorant; an explicit
+Young allowance pays every mixed term in the real energy. At reciprocal
+dilation tuning, that allowance divided by the squared dilation tends to
+zero for moving families of bounded nonconstant mass. The actual squared
+source constraint now targets ordinary Gaussian-prime energy. Preserve
+its product and ratio phases, diagonal and signed boundary mean. Do not
+claim that decay of the remainder proves the ordinary-prime bound or a
+new exclusion; the actual source surplus must still be positive and beat
+the complete remaining energy cost.
+
+`docs/zeta-gaussian-prime-energy-bound.md` supplies the first independent
+complete-energy bound and the exact complete-prime-prefix source transport.
+Its sufficient decay condition `log(abs(t)+26)/q -> 0` was not supplied
+by the current dilation. The stronger argument in
+`docs/zeta-gaussian-prime-energy-decay.md` now proves actual decay at that
+dilation: signed Poisson differences use the already proved log-log gap
+to give every positive logarithmic coefficient for the real pole-removed
+Euler response, uniformly on `1 <= sigma <= 3`. The full Gaussian
+response inherits the small coefficient uniformly in all `q >= 1`.
+For moving nonnegative summable families of bounded mass and first
+logarithmic frequency cost, normalized ordinary-prime energy tends to
+zero when absolute height diverges and `log(abs(t)+26)/q` is bounded.
+The current schedule has ratio at most `320000+log(13)`, so it qualifies.
+The complete auxiliary cost and actual positive squared source surplus
+over the original signed budget have the same normalized zero limit.
+Do not continue describing that energy decay as open. The signed
+boundary budget and a source-beating inequality remain open; this is
+not an RH proof or a larger zero-free region. Keep the `+26` and `+2`
+height smoothings distinct, the unevaluated coefficient-dependent
+thresholds explicit, and the arbitrary moving finite-zero windows,
+multiplicities and clipping depths in the source theorem. The complete
+prime-sum bounds do not apply to sign-selected prime subsets or supply
+the independent floor for the separate centered prime carrier.
+
+`docs/zeta-gaussian-signed-budget-reduction.md` now isolates the original
+signed clipped left mean. The actual right-response multiplier is bounded
+by `1/(50000*q^2)`, rather than only the earlier uniform cap. The complete
+budget difference has absolute value at most
+`109*m+3*(m*log(abs(t)+26)+F)/(50000*q^2)` for `q>=1`, `abs(t)>=10^6`.
+It vanishes after division by the current dilation, and the actual
+positive squared source surplus over the left mean has a vanishing
+normalized limit. Do not keep listing the non-left terms as an unresolved
+source-scale cost in this regime. The original left mean, all finite
+negative-depth clipping and all coefficient/frequency dependence remain.
+No unclipped integral limit, source-beating left-mean bound, new region
+or RH proof follows yet. The right response contains the logarithmic
+completion; it must not be treated as a bounded Euler prime sum before
+its inverse-square multiplier is applied.
+
+`docs/zeta-gaussian-source-support.md` audits the source side before further
+normalization. The exact nearby condition is
+`(t-gamma)^2 < (beta-line(k))*(2*(1+x)-beta-line(k))` for positive shift.
+The order-nine source is identically zero for `beta<=2035/2046`, at every
+dilation and frequency. All currently admissible orders `k>=2` leave
+`beta<=5/7` outside this source. Those are visibility cutoffs, not zero-free
+boundaries. The original complex contribution is retained in the far term;
+its norm estimate is the later information loss. Every fixed finite zero
+window also has exactly zero source once diverging detector height leaves
+its bounded ordinate range, even with arbitrary scalar reweighting. Do not
+present the source-surplus limit for such a window as a contradiction: it
+then controls only the negative part of the left mean. Before another decay
+push, exhibit a nonzero source for the fixed hypothetical zero at the chosen
+scale, or state precisely the new region being targeted. The centered
+prime carrier retains such a source; its independent cofinal floor is open.
+The same source-support module now supplies a constructive alternative in
+the existing general strip identity. For a hypothetical zero with
+`h=beta-1/2>0`, choose `sigma=1+h/4` and `eta=1/2-h/4`; the right edge is
+exactly `3/2`, the left edge is `1/2+h/2`, and the zero lies strictly inside
+the source ball at its own ordinate. The aligned compensated source is
+strictly positive for every `B>0`. The original full signed strip inequality
+is instantiated with all geometric premises discharged and every finite
+`M>=0` retained. This repairs coverage, not the independent arithmetic
+estimate. Do not claim the fixed-order-nine height-decay theorems apply to
+this adaptive geometry without a new proof. A larger growth domain is not
+needed for this construction.
+
+The general envelope audit in `docs/zeta-prime-envelope-rate.md` also rules
+out direct absolute integration of subexponential full-density errors for
+every fixed normalized filter, even with the entire complex derivative
+kept together. Do not report such an allowance as tending to zero at the
+selected source scale. This does not bound the actual signed error or rule
+out order-dependent filters with separately proved source/error control.
+
+`docs/zeta-prime-discrepancy-work.md` now supplies exact integer Chebyshev
+drift/jump and complex-weighted square identities, with all preceding prime
+pairs, block boundaries and test increments. For the full factorial kernel
+divided by its positive integer coordinate, the complete local forcing
+diagonal is bounded by `C(p)*(4/5)^N`, uniformly over all finite index sets
+and heights. Thus normalized `2*work+flux` tends to zero for every fixed
+filter and `0<=u<=1`, even on moving blocks. This is a quadratic correlation
+tool, not a bound for the original linear carrier. The signed squared-error
+flux and its connection to a source-beating linear estimate remain open.
+Do not discard its boundary or weight-variation terms, apply the monotone
+real-weight bound to an oscillatory test without its hypotheses, or use the
+zero-source theorem as an independent estimate. No new zero-free region or
+historical novelty is claimed by this slice.
+
+`docs/zeta-prime-lattice-carrier.md` now transports the original linear
+carrier to the complete finite sum of `(lambda(n)-1)*K(s,n)`, where lambda
+is the ordinary-prime logarithm. Exact first error increments connect it
+to the actual integer Chebyshev recurrence without inserting an extra
+discrepancy. The signed sawtooth identity keeps both unrounded endpoints;
+its full sampling error is at most `C(p,y)*(4/5)^N` at positive orders.
+The comparison with the original carrier adds only the old geometric
+boundary cost and requires no pole-cancellation condition on the fixed
+polynomial. The actual right-half-zero source remains `-m_rho`. The
+independent cofinal floor for this full signed lattice sum remains open;
+this does not make the separate quadratic work a bound for it. The
+sampling constant may depend on the fixed ordinate and coefficient budget.
+
 ## Proof-slice workflow
+
+`docs/zeta-squarefree-vaughan-projection.md` now removes the entire
+nonsquarefree part of the original finite Vaughan band at
+`D_N=floor(u^(-N)/(N+1))`, for every fixed polynomial, `0<u<1` and
+`abs(y)>1`, without a zero hypothesis. The literal squarefree projection
+retains the conditional source `-m_rho`. The proof averages the full
+reciprocal Euler correction at `Re(s)>=1/2` against the summable
+`sum tau(d)^2*d^(-3/2)`, pays the exact coprime Mobius--prime cross term,
+and separately pays the logged and finite-prime prefixes. This is decay
+of the complete signed nonsquarefree sum, not its total variation. Keep
+the remaining squarefree support, factor coprimality, Mobius signs and
+product phases. The cofinal signed lower bound and RH remain open.
+The logged projected prefix alone permits the undamped inverse-source
+ceiling; do not extend that statement to the full cross term or entire
+Vaughan band. No larger zero-free region or historical novelty is claimed.
+
+`docs/zeta-vaughan-cutoff-budget.md` improves the complete classical
+Vaughan reduction from a cutoff-product cost to
+`C_y*sqrt(U+1)*sqrt(V+1)*sum_k norm(p_k)`. Actual Chebyshev prime-power
+density pays for the entire von Mangoldt prefix without a cutoff logarithm.
+For every fixed polynomial, `0<u<1` and `abs(y)>1`, both cutoffs may reach
+`floor(u^(-N)/(N+1))` with normalized allowance
+`C(p,y)*(u/(N+1)+u^(N+1))`, which tends to zero independently.
+Every positive denominator tending to infinity is also allowed, with its
+explicit reciprocal cost. General asymmetric cutoff pairs retain the
+complete product budget; do not assign both factors the full asymmetric
+budget separately. The new concrete cutoff eventually exceeds every
+geometric cutoff with base `r>=1` and `u*r<1`, including the preceding
+`floor(u^(-N/4))` cutoff. This is not an optimal-cutoff theorem and does
+not justify the undamped ceiling `floor(u^(-N))`. The cofactor
+`kappa_V(n)=sum_(d|n,d>V) Lambda(d)` is nonnegative, at most `log n`, and
+additive on coprime products. The literal bilinear coefficient has the
+original divisor-log majorant, so the existing finite-band error applies
+uniformly in both cutoffs. At every hypothetical right-half zero, the
+complete finite two-large-factor sum retains source `-m_rho`.
+The independent cofinal signed lower bound is still open. Do not treat
+the conditional negative limit as an independent estimate, call these
+factors comparable in size, infer arbitrary-coefficient Type II estimates,
+or discard their product phases and shared-prime terms. This is an
+application of a classical identity, not a claimed novel identity or a
+larger zero-free region. Constants may depend on the fixed filter and
+ordinate; no moving-filter or height-uniform estimate is supplied.
+
+The improved explicit curve in `docs/zeta-gaussian-retained-region.md` now
+keeps the complete Gaussian cost as
+`36922*q + L/36 + 57*log(L) + 840`, with `L=log(abs(t)+2)`.
+Choosing `q=max(1,(L+2052*log(L)+30240)/397800)` proves literal nonvanishing
+at width `min(1/450000,221/(250*(L+2052*log(L)+30240)))` for every
+`abs(t)>=1000000`. It contains the preceding explicit curve and is strictly
+wider for `L>320000`; its full-width plateau includes `L<=340000`.
+The complete doubled-window squarefree transport has the corresponding
+larger Cauchy radius, with constants still allowed to depend on the center.
+Use this curve in the README and default explorer endpoint. Preserve the
+existing eventual union and its unevaluated threshold. The old multiplicity,
+separation, filter-cost and energy-decay theorems still use their stated
+earlier width or dilation; do not silently substitute the new one. Existing
+literature comparisons retain their compiled interval, and no exhaustive
+record claim follows. The independent cofinal signed prime floor and RH
+remain open. Keeping fixed costs separate improves this explicit budget;
+it does not bound the remaining signed carrier.
 
 Work in one coherent slice at a time. A slice should close a real lemma or
 interface needed by the current RH frontier, not merely add parallel
