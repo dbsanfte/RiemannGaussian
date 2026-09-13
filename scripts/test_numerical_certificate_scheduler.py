@@ -3,8 +3,12 @@
 from contextlib import ExitStack, redirect_stdout, redirect_stderr
 import io
 import json
+import signal
+import subprocess
+import sys
 from pathlib import Path
 import tempfile
+import time
 import unittest
 from unittest.mock import patch
 
@@ -33,6 +37,7 @@ class SchedulerTests(unittest.TestCase):
         }
         self.optional = dict.fromkeys([*self.imports, COVER, *(g["module"] for g in self.groups)])
         self.calls = []
+        self.stopped = []
 
     def context(self, codes=None, fingerprints=None, emit_report=True):
         stack = ExitStack()
@@ -42,6 +47,7 @@ class SchedulerTests(unittest.TestCase):
         stack.enter_context(patch.object(driver, "partition", return_value=({}, self.optional)))
         stack.enter_context(patch.object(driver, "closure", side_effect=lambda n: self.imports[n]))
         stack.enter_context(patch.object(driver, "lake_command", return_value=(["fixture-lake"], {})))
+        stack.enter_context(patch.object(driver, "stop_process", side_effect=lambda p: self.stopped.append(p.pid)))
         if fingerprints is None:
             stack.enter_context(patch.object(driver, "fingerprint", return_value="fixture-input-digest"))
         else:
@@ -58,6 +64,8 @@ class SchedulerTests(unittest.TestCase):
 
             def wait(self, timeout):
                 code = next(pending_codes) if pending_codes is not None else 0
+                if isinstance(code, BaseException):
+                    raise code
                 if code == 0 and emit_report and self.command[-1].endswith("AuditNumericalCertificate.lean"):
                     raw_audit.parent.mkdir(parents=True, exist_ok=True)
                     raw_audit.write_text(json.dumps({"fixtureReport": True}))
@@ -192,6 +200,55 @@ class SchedulerTests(unittest.TestCase):
         self.run_driver(["--groups-only"])
         self.assertEqual(raw_audit.read_text(), "separate existing fixture report")
         self.assertFalse((self.output / "audit.json").exists())
+
+    def test_termination_stops_child_and_cannot_leave_success(self):
+        self.output.mkdir()
+        for name in ["input-sha256.txt", "audit.json"]:
+            (self.output / name).write_text("stale fixture success")
+        previous = signal.getsignal(signal.SIGTERM)
+        with self.assertRaises(SystemExit) as error:
+            self.run_driver(codes=[SystemExit(143)])
+        self.assertEqual(error.exception.code, 143)
+        state = json.loads((self.output / "progress.json").read_text())
+        self.assertEqual(state["state"], "interrupted-or-failed")
+        self.assertNotIn("processPid", state)
+        self.assertEqual(self.stopped, [1001])
+        self.assertFalse((self.output / "input-sha256.txt").exists())
+        self.assertFalse((self.output / "audit.json").exists())
+        self.assertEqual(signal.getsignal(signal.SIGTERM), previous)
+
+    def test_sigterm_uses_the_interrupted_exit_code(self):
+        with self.assertRaises(SystemExit) as error:
+            driver.terminate_signal(signal.SIGTERM, None)
+        self.assertEqual(error.exception.code, 143)
+
+    def test_interruption_reaches_a_real_spawned_descendant(self):
+        ready, stopped = self.root / "child-ready", self.root / "child-stopped"
+        child_code = (
+            "import pathlib, signal, sys, time\n"
+            f"def stop(*_):\n    pathlib.Path({str(stopped)!r}).touch()\n    sys.exit(0)\n"
+            "signal.signal(signal.SIGTERM, stop)\n"
+            f"pathlib.Path({str(ready)!r}).touch()\n"
+            "time.sleep(20)\n"
+        )
+        parent_code = ("import subprocess, time\n"
+                       f"subprocess.Popen([{sys.executable!r}, '-c', {child_code!r}])\n"
+                       "time.sleep(20)\n")
+        parent = subprocess.Popen([sys.executable, "-c", parent_code], start_new_session=True)
+        try:
+            deadline = time.monotonic() + 5
+            while not ready.exists() and time.monotonic() < deadline:
+                time.sleep(.01)
+            self.assertTrue(ready.exists(), "Owned child did not start")
+            driver.stop_process(parent)
+            deadline = time.monotonic() + 5
+            while not stopped.exists() and time.monotonic() < deadline:
+                time.sleep(.01)
+            self.assertTrue(stopped.exists(), "Termination did not reach the owned descendant")
+            self.assertIsNotNone(parent.poll())
+        finally:
+            if parent.poll() is None:
+                driver.stop_process(parent)
 
 
 if __name__ == "__main__":

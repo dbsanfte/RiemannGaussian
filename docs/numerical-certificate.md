@@ -100,6 +100,22 @@ toolchain, dependency pins, proposal, generator and verification inputs.
 Lake still validates restored traces. The `cold` input skips restoration
 of project certificate artifacts while retaining the standard mathlib cache.
 
+Hosted runners compile one prerequisite or two cover modules concurrently,
+with eight GiB of additional swap in every job. The library uses
+`weakLeanArgs = ["-DElab.async=false"]` to elaborate each module serially;
+this changes scheduling without invalidating already checked proof traces.
+A strict cold check of `MontgomeryTaylorAnchors00` passed in 8 minutes
+13 seconds with a 7.5 GiB peak resident set. The same check with asynchronous
+elaboration exceeded a 12 GiB memory limit. Independent modules can still
+compile concurrently within the driver's process cap.
+Heartbeats report available
+memory, swap and disk space. A terminated verifier stops its owned compiler
+process group, records an interrupted verdict and removes success markers.
+The interruption regression also checks an actual spawned descendant.
+The first hosted attempt terminated during four concurrent anchor builds;
+the reduced concurrency is being validated. The complete local certificate
+audit remains a separate result.
+
 Cold checks are split across jobs because of the
 [six-hour GitHub-hosted job limit](https://docs.github.com/en/actions/reference/limits).
 Checked prerequisites and all eight shards are transported as artifacts

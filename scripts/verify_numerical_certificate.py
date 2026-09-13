@@ -12,12 +12,46 @@ import json
 import os
 from pathlib import Path
 import shutil
+import signal
 import subprocess
 import time
 
 from numerical_certificate import ROOT, closure, config, fingerprint, partition
 
 MANIFEST = ROOT / "RiemannGaussian/CertificateData/MontgomeryTaylorCover/manifest.json"
+
+
+def resource_snapshot():
+    """Record runner headroom alongside progress, without changing proof inputs."""
+    result = {"diskFreeBytes": shutil.disk_usage(ROOT).free}
+    try:
+        values = dict(line.split(":", 1) for line in Path("/proc/meminfo").read_text().splitlines())
+        for key in ("MemAvailable", "SwapFree"):
+            result[key + "KiB"] = int(values[key].split()[0])
+    except (OSError, KeyError, ValueError):
+        pass
+    return result
+
+
+def stop_process(process):
+    """Stop the isolated Lake process group before recording an interruption."""
+    try:
+        os.killpg(process.pid, signal.SIGTERM)
+    except ProcessLookupError:
+        return
+    try:
+        process.wait(timeout=10)
+    except subprocess.TimeoutExpired:
+        try:
+            os.killpg(process.pid, signal.SIGKILL)
+        except ProcessLookupError:
+            pass
+        process.wait(timeout=10)
+
+
+def terminate_signal(number, _frame):
+    """Let the ordinary failed-run cleanup handle a runner termination."""
+    raise SystemExit(128 + number)
 
 
 def select_groups(groups, shard_index, shard_count):
@@ -115,6 +149,7 @@ def main():
 
     def save():
         state["elapsedSeconds"] = round(time.monotonic() - start, 1)
+        state["resources"] = resource_snapshot()
         tmp = args.output / "progress.json.tmp"
         tmp.write_text(json.dumps(state, indent=2) + "\n")
         tmp.replace(args.output / "progress.json")
@@ -123,22 +158,29 @@ def main():
         log = args.output / name
         with log.open("w") as stream:
             process = subprocess.Popen(commands + args_, cwd=ROOT, env=env,
-                                       stdout=stream, stderr=subprocess.STDOUT)
+                                       stdout=stream, stderr=subprocess.STDOUT,
+                                       start_new_session=True)
             state["processPid"] = process.pid
             save()
-            while True:
-                try:
-                    code = process.wait(timeout=30)
-                    break
-                except subprocess.TimeoutExpired:
-                    save()
-                    print(json.dumps(state), flush=True)
+            try:
+                while True:
+                    try:
+                        code = process.wait(timeout=30)
+                        break
+                    except subprocess.TimeoutExpired:
+                        save()
+                        print(json.dumps(state), flush=True)
+            except BaseException:
+                stop_process(process)
+                state.pop("processPid", None)
+                raise
             state.pop("processPid", None)
         if code:
             state.update(state="failed", exitCode=code, failureLog=str(log))
             save()
             raise RuntimeError(f"Lean verification failed; see {log}")
 
+    previous_handler = signal.signal(signal.SIGTERM, terminate_signal)
     try:
         for index, batch in enumerate(data_batches):
             state.update(activeModules=batch, batch=index)
@@ -194,7 +236,10 @@ def main():
         if state["state"] == "running":
             state["state"] = "interrupted-or-failed"
             save()
+        print(json.dumps(state), flush=True)
         raise
+    finally:
+        signal.signal(signal.SIGTERM, previous_handler)
 
 
 if __name__ == "__main__":

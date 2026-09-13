@@ -418,8 +418,8 @@ The enforced checks are:
 - displayed frontier theorems may depend only on Lean's standard
   `propext`, `Classical.choice`, and `Quot.sound` axioms;
 - the generated SVG and JSON must exactly match the compiled environment; and
-- GitHub Actions must pass on the exact pushed commit before another proof
-  slice begins.
+- GitHub Actions must pass on the exact pushed commit before it is reported
+  as remotely verified; local proof work can continue while CI runs.
 
 Numerical experiments, symbolic calculations, research notes, and literature
 dispatches are used only to discover candidate mathematics. Nothing from them

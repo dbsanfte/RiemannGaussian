@@ -1898,8 +1898,21 @@ them from `NumericalCertificate.lean` instead. Normal CI and pre-commit builds
 must not trigger those computations. The manual
 `.github/workflows/numerical_certificate.yml` workflow checks prerequisite
 data, eight disjoint cover shards, then the complete assembly and
-`scripts/AuditNumericalCertificate.lean`. Caches accelerate unchanged inputs;
-artifacts from that same run transport checked prerequisites and all shards,
+`scripts/AuditNumericalCertificate.lean`. Caches accelerate unchanged inputs.
+Hosted runners compile one prerequisite or two cover modules at a time and
+have eight GiB of additional swap. The library's performance-only
+`weakLeanArgs` disables asynchronous elaboration within each module while
+preserving Lake's proof traces and independent module scheduling. A strict
+cold anchor check passed at about 7.5 GiB peak resident memory with that
+setting; the asynchronous check exceeded its 12 GiB limit. Retain this
+setting unless a replacement has a measured resource budget.
+Progress reports include memory and disk
+headroom. SIGTERM must stop the owned compiler process group and leave an
+interrupted verdict, with no success marker; the regression includes an
+actual spawned descendant. The first hosted run terminated while compiling
+four anchor modules concurrently, so do not restore that concurrency without
+a measured memory budget.
+Artifacts from that same run transport checked prerequisites and all shards,
 so cache eviction cannot remove a required inter-job dependency. The cold
 option skips restored project certificate caches. Run the applicable
 optional target and axiom audit locally when its proofs change; a default
