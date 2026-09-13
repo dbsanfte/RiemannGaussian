@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**72 modules.** Source links open the definitions, hypotheses and proofs.
+**74 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [DerivativeOrderComparison](../../RiemannGaussian/DerivativeOrderComparison.lean)
@@ -63,6 +63,7 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [ShiftedDerivativeFamily](../../RiemannGaussian/ShiftedDerivativeFamily.lean)
 - [UniformDerivativePowerBound](../../RiemannGaussian/UniformDerivativePowerBound.lean)
 - [UniformDirichletPowerBound](../../RiemannGaussian/UniformDirichletPowerBound.lean)
+- [VinogradovAnisotropicCongruence](../../RiemannGaussian/VinogradovAnisotropicCongruence.lean)
 - [VinogradovGaussianBounds](../../RiemannGaussian/VinogradovGaussianBounds.lean)
 - [VinogradovGaussianCentering](../../RiemannGaussian/VinogradovGaussianCentering.lean)
 - [VinogradovGaussianKernel](../../RiemannGaussian/VinogradovGaussianKernel.lean)
@@ -75,6 +76,7 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovMeanValue](../../RiemannGaussian/VinogradovMeanValue.lean)
 - [VinogradovMomentReduction](../../RiemannGaussian/VinogradovMomentReduction.lean)
 - [VinogradovPowerSumRigidity](../../RiemannGaussian/VinogradovPowerSumRigidity.lean)
+- [VinogradovPrimePowerRigidity](../../RiemannGaussian/VinogradovPrimePowerRigidity.lean)
 - [VinogradovShiftedMoment](../../RiemannGaussian/VinogradovShiftedMoment.lean)
 - [ZetaDyadicPowerBound](../../RiemannGaussian/ZetaDyadicPowerBound.lean)
 - [ZetaDyadicTruncation](../../RiemannGaussian/ZetaDyadicTruncation.lean)

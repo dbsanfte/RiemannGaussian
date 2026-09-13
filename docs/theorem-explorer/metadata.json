@@ -95,7 +95,7 @@
     },
     {
       "id": "vk-phase",
-      "label": "Vinogradov–Korobov · rigidity and Gaussian resonance",
+      "label": "Vinogradov–Korobov · prime-power rigidity and resonance",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -280,6 +280,34 @@
         [
           "gaussianPhaseBandToolkit",
           "vkExplicitMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPrimeJacobianTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPrimeLiftTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPrimePermutationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPrimeFibreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCorrelatedTargetsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAnisotropicTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDegreeModuliTheorem"
         ]
       ],
       "scopePath": [
@@ -2539,6 +2567,41 @@
     },
     "RiemannGaussian.VinogradovKorobovMoment.interval_explicit_moment_bound": {
       "label": "Both homogeneous costs are paid in the actual product-sum bound",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovPrimePowerRigidity.prime_determinant_ne_zero": {
+      "label": "Distinct prime residues make the full Jacobian nonsingular",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovPrimePowerRigidity.prime_power_rigidity": {
+      "label": "Every prime-power precision retains coordinate rigidity",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovPrimePowerRigidity.prime_power_permutation": {
+      "label": "The full modular system determines a permutation",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovPrimePowerRigidity.nonsingular_fibre_le_factorial": {
+      "label": "Every nonsingular complete modular fibre has at most k! tuples",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovPrimePowerRigidity.nonsingular_preimage_le": {
+      "label": "Correlated target families retain their actual cardinality",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovAnisotropicCongruence.actual_anisotropic_card_le": {
+      "label": "Each power-sum modulus pays its own refinement cost",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovAnisotropicCongruence.degree_moduli_card_le": {
+      "label": "Degree-by-degree moduli give the triangular exponent bound",
       "documentation": "docs/vinogradov-korobov-framework.md",
       "overview": true
     }

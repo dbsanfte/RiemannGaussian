@@ -29,6 +29,7 @@ class CertificateBuildTests(unittest.TestCase):
                      "RiemannGaussian/CertificateData/MontgomeryTaylorCover/manifest.json",
                      "certificates/seven-window/cover-proposal.json.gz",
                      "scripts/test_numerical_certificate_build.py",
+                     "scripts/test_numerical_certificate_build_config.py",
                      "scripts/test_numerical_certificate_scheduler.py",
                      "scripts/test_numerical_certificate_audit.py",
                      "scripts/AuditNumericalCertificate.lean",
@@ -55,6 +56,7 @@ class CertificateBuildTests(unittest.TestCase):
         for name in ("RiemannGaussian/CertificateData/Bounds.lean", "lean-toolchain",
                      "lake-manifest.json", "scripts/AuditNumericalCertificate.lean",
                      "scripts/test_numerical_certificate_build.py",
+                     "scripts/test_numerical_certificate_build_config.py",
                      "scripts/test_numerical_certificate_scheduler.py",
                      "scripts/test_numerical_certificate_audit.py"):
             with self.subTest(name=name):

@@ -77,6 +77,7 @@ def fingerprint():
         "RiemannGaussian/CertificateData/MontgomeryTaylorCover/manifest.json",
         "certificates/seven-window/cover-proposal.json.gz",
         "scripts/test_numerical_certificate_build.py",
+        "scripts/test_numerical_certificate_build_config.py",
         "scripts/test_numerical_certificate_scheduler.py", "scripts/test_numerical_certificate_audit.py",
         "scripts/AuditNumericalCertificate.lean", ".github/workflows/numerical_certificate.yml"))
     h = hashlib.sha256()

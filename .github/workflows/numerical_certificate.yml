@@ -53,6 +53,8 @@ jobs:
           lint: false
           use-github-cache: false
           use-mathlib-cache: true
+      - name: Check optional data ownership with tiny Lean probes
+        run: python3 scripts/test_numerical_certificate_build_config.py
       - name: Restore compiled prerequisite data
         if: ${{ !inputs.cold }}
         id: cache

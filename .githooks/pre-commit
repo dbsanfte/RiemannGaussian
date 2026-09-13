@@ -23,6 +23,9 @@ else
   exit 1
 fi
 
+echo 'pre-commit: ordinary and optional Lake configuration'
+python3 scripts/test_numerical_certificate_build_config.py
+
 echo 'pre-commit: warning-as-error Lean build'
 "${lake_command[@]}" build --wfail
 

@@ -23,11 +23,16 @@ rev = "v4.33.1"
 
 [[lean_lib]]
 name = "RiemannGaussian"
-# Bound peak memory within each generated anchor module. This performance-only
-# argument preserves existing proof traces; Lake can still build modules in parallel.
-weakLeanArgs = ["-DElab.async=false"]
 
 # Expensive numerical data and the cover checker are explicitly opt-in.
 # Keep this target out of defaultTargets and out of RiemannGaussian imports.
 [[lean_lib]]
 name = "NumericalCertificate"
+
+# Keep the memory setting local to generated data. Ordinary proofs retain
+# their established elaboration mode and compiler-generated helper inventory.
+[[lean_lib]]
+name = "NumericalCertificateData"
+roots = ["RiemannGaussian.CertificateData"]
+globs = ["RiemannGaussian.CertificateData.+"]
+weakLeanArgs = ["-DElab.async=false"]

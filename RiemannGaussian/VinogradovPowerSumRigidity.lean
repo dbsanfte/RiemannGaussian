@@ -37,19 +37,21 @@ private theorem interval_frequency_eq (k N : ℕ) :
   funext n j
   simp only [integerFrequency, monomialFrequency, Nat.cast_add, Nat.cast_one]
 
-private theorem evaluated_newton {r : ℕ} (f : Fin r → ℤ) (n : ℕ) :
-    (n : ℤ) * (Finset.univ.val.map f).esymm n = (-1) ^ (n + 1) *
+private theorem evaluated_newton {R : Type*} [CommRing R] {r : ℕ} (f : Fin r → R) (n : ℕ) :
+    (n : R) * (Finset.univ.val.map f).esymm n = (-1) ^ (n + 1) *
       ∑ a ∈ Finset.antidiagonal n with a.1 < n,
         (-1) ^ a.1 * (Finset.univ.val.map f).esymm a.1 * ∑ i, f i ^ a.2 := by
   have h := congrArg (MvPolynomial.aeval f)
-    (MvPolynomial.mul_esymm_eq_sum (Fin r) ℤ n)
+    (MvPolynomial.mul_esymm_eq_sum (Fin r) R n)
   simpa only [map_mul, map_natCast, map_pow, map_neg, map_one, map_sum,
     MvPolynomial.aeval_esymm_eq_multiset_esymm, MvPolynomial.psum,
     MvPolynomial.aeval_X] using h
 
 /-- Equality of the first power sums forces equality of all elementary
 symmetric coefficients up to the same degree. Multiplicity is retained. -/
-theorem esymm_eq_of_power_sums {r d : ℕ} (f g : Fin r → ℤ)
+theorem esymm_eq_of_power_sums_of_natCast_ne_zero {R : Type*} [CommRing R] [IsDomain R]
+    {r d : ℕ} (f g : Fin r → R)
+    (hchar : ∀ n, 1 ≤ n → n ≤ d → (n : R) ≠ 0)
     (h : ∀ n, 1 ≤ n → n ≤ d → (∑ i, f i ^ n) = ∑ i, g i ^ n) :
     ∀ n, n ≤ d → (Finset.univ.val.map f).esymm n =
       (Finset.univ.val.map g).esymm n := by
@@ -60,7 +62,7 @@ theorem esymm_eq_of_power_sums {r d : ℕ} (f g : Fin r → ℤ)
     by_cases hn0 : n = 0
     · subst n
       simp [Multiset.esymm]
-    apply mul_left_cancel₀ (show (n : ℤ) ≠ 0 by exact_mod_cast hn0)
+    apply mul_left_cancel₀ (hchar n (by omega) hn)
     rw [evaluated_newton, evaluated_newton]
     congr 1
     apply Finset.sum_congr rfl
@@ -69,12 +71,15 @@ theorem esymm_eq_of_power_sums {r d : ℕ} (f g : Fin r → ℤ)
     have has := Finset.mem_antidiagonal.mp ha
     rw [ih a.1 hal (by omega), h a.2 (by omega) (by omega)]
 
-/-- The first `r` power sums determine an entire integer `r`-tuple as a
-multiset. Repeated values are counted, not reduced to distinct support. -/
-theorem multiset_eq_of_power_sums {r : ℕ} (f g : Fin r → ℤ)
+/-- The first `r` power sums determine an entire `r`-tuple in a domain as a
+multiset when the first `r` natural coefficients are nonzero in that domain.
+Repeated values are counted, not reduced to distinct support. -/
+theorem multiset_eq_of_power_sums_of_natCast_ne_zero {R : Type*} [CommRing R] [IsDomain R]
+    {r : ℕ} (f g : Fin r → R)
+    (hchar : ∀ n, 1 ≤ n → n ≤ r → (n : R) ≠ 0)
     (h : ∀ n, 1 ≤ n → n ≤ r → (∑ i, f i ^ n) = ∑ i, g i ^ n) :
     Finset.univ.val.map f = Finset.univ.val.map g := by
-  have he := esymm_eq_of_power_sums f g h
+  have he := esymm_eq_of_power_sums_of_natCast_ne_zero f g hchar h
   have hp : ((Finset.univ.val.map f).map (fun t => Polynomial.X - Polynomial.C t)).prod =
       ((Finset.univ.val.map g).map (fun t => Polynomial.X - Polynomial.C t)).prod := by
     rw [Multiset.prod_X_sub_X_eq_sum_esymm, Multiset.prod_X_sub_X_eq_sum_esymm]
@@ -84,6 +89,25 @@ theorem multiset_eq_of_power_sums {r : ℕ} (f g : Fin r → ℤ)
     rw [he n (by simpa using Finset.mem_range.mp hn)]
   have hr := congrArg Polynomial.roots hp
   simpa only [Polynomial.roots_multiset_prod_X_sub_C] using hr
+
+/-- Integer Newton rigidity for every degree with its nonzero natural
+coefficient discharged. -/
+theorem esymm_eq_of_power_sums {r d : ℕ} (f g : Fin r → ℤ)
+    (h : ∀ n, 1 ≤ n → n ≤ d → (∑ i, f i ^ n) = ∑ i, g i ^ n) :
+    ∀ n, n ≤ d → (Finset.univ.val.map f).esymm n =
+      (Finset.univ.val.map g).esymm n := by
+  apply esymm_eq_of_power_sums_of_natCast_ne_zero f g _ h
+  intro n hn _
+  exact_mod_cast (show n ≠ 0 by omega)
+
+/-- The first r powers determine an integer r-tuple as a complete
+multiset, retaining repeated entries. -/
+theorem multiset_eq_of_power_sums {r : ℕ} (f g : Fin r → ℤ)
+    (h : ∀ n, 1 ≤ n → n ≤ r → (∑ i, f i ^ n) = ∑ i, g i ^ n) :
+    Finset.univ.val.map f = Finset.univ.val.map g := by
+  apply multiset_eq_of_power_sums_of_natCast_ne_zero f g _ h
+  intro n hn _
+  exact_mod_cast (show n ≠ 0 by omega)
 
 /-- In the diagonal range, equality of the complete monomial tuple
 frequencies forces equality of the original tuple multisets. -/

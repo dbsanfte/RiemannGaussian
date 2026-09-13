@@ -1799,7 +1799,21 @@ paid explicitly in `interval_explicit_moment_bound`, with the same quartered
 Gaussian cost and complete joint resonance envelope. These are classical
 base estimates, not historical novelty or the full VK saving. Do not keep
 listing every homogeneous moment estimate as unproved. Keep the exact
-signed centred Gram identity upstream. Stronger high-order moment bounds
+signed centred Gram identity upstream.
+`VinogradovPrimePowerRigidity` now proves the full power-sum Jacobian,
+its nonsingularity for distinct residues modulo p>k, exact nonlinear
+prime-power lifting, permutation rigidity and the at-most-k! complete
+nonsingular fibre bound. Newton identities share one general domain proof
+with the existing integer theorem. Arbitrary correlated target families
+retain their actual cardinality before taking coordinate products.
+`VinogradovAnisotropicCongruence` pays separate precisions e_i<=n with
+p^(sum(n-e_i))*k!, and instantiates the actual degree moduli p^b,...,p^(kb)
+with p^(b*k*(k-1)/2)*k!. The count is for canonical residue tuples with
+distinct residues modulo p; it is not a bound for all tuples or for the
+singular part. These are classical congruencing ingredients, not a claimed
+novel theorem or a formalization of Wooley's full signed, translated,
+conditioned lemma. Singular-class conditioning and the high-moment
+iteration remain open. Stronger high-order moment bounds
 and quantitative joint resonance control,
 the required exponential-sum saving, zeta growth and the VK zero-free region
 remain unproved here. Do not add a VK curve to the proved union or promote a
@@ -1900,9 +1914,17 @@ must not trigger those computations. The manual
 data, eight disjoint cover shards, then the complete assembly and
 `scripts/AuditNumericalCertificate.lean`. Caches accelerate unchanged inputs.
 Hosted runners compile one prerequisite or two cover modules at a time and
-have eight GiB of additional swap. The library's performance-only
-`weakLeanArgs` disables asynchronous elaboration within each module while
-preserving Lake's proof traces and independent module scheduling. A strict
+have eight GiB of additional swap. The dedicated `NumericalCertificateData`
+library owns only `RiemannGaussian.CertificateData` submodules. Its
+performance-only `weakLeanArgs` disables asynchronous elaboration there,
+preserving Lake's proof traces and independent module scheduling. Ordinary
+proofs keep their established elaboration mode: changing it globally produced
+a different generated-helper inventory between cached local and cold CI
+builds. Do not weaken dashboard freshness or the complete axiom audit to
+accommodate that difference. The hook and both CI workflows run
+`test_numerical_certificate_build_config.py` after installing Lean; tiny
+compiled probes check actual library ownership, elaboration modes and the
+default import boundary without compiling certificate proofs. A strict
 cold anchor check passed at about 7.5 GiB peak resident memory with that
 setting; the asynchronous check exceeded its 12 GiB limit. Retain this
 setting unless a replacement has a measured resource budget.

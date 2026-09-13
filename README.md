@@ -111,12 +111,13 @@ Make the proved region cover every applicable benchmark, preserving each height 
 
 ## Latest Update
 
-**Newton's identities now bound both moments in the actual VK product sum.**
-The bounds hold for every finite set of distinct integers and retain the
-complete joint Gaussian resonance term. Stronger arithmetic savings and
-global benchmark coverage remain open. The proved 67.31% simple-zero
-certificate has an unevaluated starting height and separate optional,
-cached verification.
+**The complete prime-power constraints now bound nonsingular tuple families.**
+Lean proves rigidity at every prime-power precision and a uniform count for
+the degree-by-degree power-sum moduli. These classical congruencing ingredients
+retain correlated target sets. Singular classes, stronger high-moment savings
+and global benchmark coverage remain open. The proved 67.31% simple-zero
+certificate keeps its separate optional, cached verification and unevaluated
+starting height.
 [Certificate and audit](docs/numerical-certificate.md)
 · [Current region](docs/zeta-unified-zero-free.md)
 · [VK proof status](docs/vinogradov-korobov-framework.md).

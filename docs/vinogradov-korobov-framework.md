@@ -1,4 +1,4 @@
-# Vinogradov–Korobov formalization: power-sum rigidity and Gaussian resonance
+# Vinogradov–Korobov formalization: prime-power rigidity and Gaussian resonance
 
 **Status:** the exact finite logarithmic expansion, product-shift averaging
 of actual Dirichlet blocks, transport through their full damping, shifted
@@ -6,7 +6,9 @@ moment domination and the two-Hölder reduction of the actual polynomial
 sum are proved. Newton's identities now give the complete diagonal-range
 moment bound and an elementary estimate at every order, for arbitrary
 finite sets of distinct integers. Both moment factors in the actual
-Gaussian product-sum bound have explicit costs.
+Gaussian product-sum bound have explicit costs. Complete nonsingular
+power-sum fibres are now controlled at every prime-power precision,
+including the unequal degree-by-degree moduli used in congruencing.
 The Vinogradov–Korobov zeta growth estimate
 and zero-free region remain unproved in this repository. No external
 analytic estimate is installed as an axiom or as a claimed discharged premise.
@@ -170,6 +172,56 @@ zero orders. The proof keeps multiplicity before bounding permutation
 counts. This is a formalization of the classical diagonal argument;
 no historical novelty is claimed. It supplies quantitative base estimates,
 not the stronger high-order saving needed for the full VK argument.
+
+## Prime-power rigidity and unequal congruence moduli
+
+[VinogradovPrimePowerRigidity](../RiemannGaussian/VinogradovPrimePowerRigidity.lean)
+retains the full Jacobian of the first `k` power sums. Its determinant is
+
+```math
+\det\left(jx_i^{j-1}\right)_{1\le j,i\le k}
+=k!\prod_{i<l}(x_l-x_i).
+```
+
+For a prime `p>k` and entries distinct modulo `p`, every factor is nonzero.
+The proof pays the exact integer nonlinear remainder when lifting from one
+precision to the next; it does not assume a linearized congruence. Newton
+identities first identify the possible residue orderings. The resulting
+`prime_power_permutation` and `nonsingular_fibre_le_factorial` show that
+any complete power-sum vector modulo `p^n` has at most `k!` nonsingular
+ordered tuples among the canonical representatives `0,...,p^n-1`.
+This includes empty target fibres. `nonsingular_preimage_le` keeps arbitrary
+correlated target sets, with cost at most `k!` times their actual cardinality.
+
+[VinogradovAnisotropicCongruence](../RiemannGaussian/VinogradovAnisotropicCongruence.lean)
+then allows each equation to have its own precision `e_j≤n`. For every
+prescribed vector `a`, Lean proves
+
+```math
+\#\left\{x\in\{0,\ldots,p^n-1\}^k:
+\begin{array}{l}
+x_i\not\equiv x_l\pmod p\quad(i\ne l),\\
+\sum_i x_i^j\equiv a_j\pmod{p^{e_j}}\quad(1\le j\le k)
+\end{array}\right\}
+\le k!\,p^{\sum_{j=1}^k(n-e_j)}.
+```
+
+Here targets are taken as canonical residues at their respective moduli.
+The code connects these congruences to the literal natural power sums,
+including all reductions between moduli. Specializing to `n=kb` and
+`e_j=jb`, `degree_moduli_card_le` gives the uniform bound
+
+```math
+\boxed{k!\,p^{\,b k(k-1)/2}}.
+```
+
+This formalizes classical nonsingular congruence counting, relevant to the
+unweighted, unshifted base of
+[Wooley (2012), Section 4, Lemma 4.1](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
+It is not a formalization of that lemma's full signed and conditioned form.
+The singular classes, their conditioning, and the ensuing high-moment
+iteration remain open. No new zeta-growth estimate or zero-free width is
+inferred from this count alone.
 
 ## Shifted correlations and bounded complex weights
 

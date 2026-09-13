@@ -42,6 +42,8 @@ jobs:
       - name: Run whole-project declaration linters
         shell: bash
         run: lake env lean -DwarningAsError=true scripts/LintProject.lean
+      - name: Check optional data ownership with tiny Lean probes
+        run: python3 scripts/test_numerical_certificate_build_config.py
       - name: Verify Lean-derived project dashboard
         shell: bash
         run: |
