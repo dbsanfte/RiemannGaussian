@@ -12,9 +12,19 @@ name = "Zeta23"
 path = "vendor/zeta23"
 
 [[require]]
+name = "LeanCert"
+git = "https://github.com/alerad/leancert.git"
+rev = "4ea18bb66dfcd7f18f260bc25302400f5a3cafd7"
+
+[[require]]
 name = "mathlib"
 scope = "leanprover-community"
 rev = "v4.33.1"
 
 [[lean_lib]]
 name = "RiemannGaussian"
+
+# Expensive numerical data and the cover checker are explicitly opt-in.
+# Keep this target out of defaultTargets and out of RiemannGaussian imports.
+[[lean_lib]]
+name = "NumericalCertificate"

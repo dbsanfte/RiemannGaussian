@@ -1,0 +1,12 @@
+{
+  "target": "NumericalCertificate",
+  "scope": "eventual dyadic and cumulative counts; height threshold not numerically evaluated",
+  "schemaVersion": 2,
+  "projectTheorems": 167673,
+  "projectDeclarations": 433034,
+  "leanVersion": "4.33.1",
+  "compiledProjectModules": 304,
+  "certificateStatus": "proved: 6731/10000 for literal simple critical-line zeros",
+  "axiomAudit": "passed: only propext, Classical.choice, Quot.sound",
+  "inputSha256": "0e2887bd4081995fc1ce46693c951c7a4930df1eade08b1d973d5c2415165b3c"
+}

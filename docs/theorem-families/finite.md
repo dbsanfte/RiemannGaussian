@@ -6,8 +6,9 @@
 
 Finite root geometry, Hardy and Pick kernels, spectral energy and passage to entire functions.
 
-**97 modules.** Source links open the definitions, hypotheses and proofs.
+**98 modules.** Source links open the definitions, hypotheses and proofs.
 
+- [ConsecutiveBlockPacking](../../RiemannGaussian/ConsecutiveBlockPacking.lean)
 - [FiniteBlaschkePick](../../RiemannGaussian/FiniteBlaschkePick.lean)
 - [FiniteEAux](../../RiemannGaussian/FiniteEAux.lean)
 - [FiniteERootContinuity](../../RiemannGaussian/FiniteERootContinuity.lean)

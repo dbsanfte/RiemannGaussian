@@ -26,7 +26,7 @@
   </defs>
   <rect class="bg" x="0.75" y="0.75" width="998.5" height="313.5" rx="12"/>
   <text class="heading" x="20" y="30">Lean-checked theorem inventory — RH remains open</text>
-  <text class="metrics" x="980" y="28">Lean 4.33.1 · 1536 modules · 32613 declarations · 28637 theorems</text>
+  <text class="metrics" x="980" y="28">Lean 4.33.1 · 1589 modules · 33743 declarations · 29480 theorems</text>
   <text class="metrics" x="980" y="47">0 placeholder dependencies · 0 project axioms · milestones standard-only</text>
   <text class="section" x="20" y="64">CHECKED RESULTS, IDENTITIES, AND ATTRIBUTED BASELINE</text>
   <text class="section" x="20" y="143">FURTHER CHECKED MILESTONES — NOT A PROOF CHAIN</text>
@@ -65,7 +65,7 @@
   </g>
   <g class="proved unconditional">
     <rect x="180" y="150" width="145" height="54" rx="9"/>
-    <title>RiemannGaussian.ZetaGaussianRetainedRegion.nonvanishing</title>
+    <title>RiemannGaussian.ZetaUnifiedZeroFree.nonvanishing</title>
     <text x="252" y="173">zero-free: explicit curve</text>
     <text x="252" y="191">no upper height ceiling  ✓</text>
   </g>

@@ -1,0 +1,12 @@
+# SVG geometry and embedded font outlines are deterministic with these versions.
+matplotlib==3.10.6
+numpy==2.2.6
+contourpy==1.3.2
+cycler==0.12.1
+fonttools==4.59.2
+kiwisolver==1.4.9
+packaging==25.0
+pillow==11.3.0
+pyparsing==3.2.3
+python-dateutil==2.9.0.post0
+six==1.17.0

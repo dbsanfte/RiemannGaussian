@@ -1,0 +1,219 @@
+name: Optional numerical certificate verification
+
+on:
+  workflow_dispatch:
+    inputs:
+      cold:
+        description: Recheck every project certificate component without restoring its cache
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: numerical-certificate-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    outputs:
+      digest: ${{ steps.inputs.outputs.digest }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: Make room for the compiled proof data on this disposable runner
+        run: sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL
+      - name: Check the opt-in boundary and identify the exact inputs
+        id: inputs
+        shell: bash
+        run: |
+          python3 scripts/numerical_certificate.py
+          python3 scripts/test_numerical_certificate_build.py
+          python3 scripts/test_numerical_certificate_scheduler.py
+          digest=$(python3 scripts/numerical_certificate.py --fingerprint)
+          echo "digest=$digest" >> "$GITHUB_OUTPUT"
+          mkdir -p .lake/numerical-certificate
+          echo "$digest" > .lake/numerical-certificate/input-sha256.txt
+          git rev-parse HEAD > .lake/numerical-certificate/source-revision.txt
+      - name: Install the pinned toolchain and mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          build: false
+          test: false
+          lint: false
+          use-github-cache: false
+          use-mathlib-cache: true
+      - name: Restore compiled prerequisite data
+        if: ${{ !inputs.cold }}
+        id: cache
+        uses: actions/cache/restore@v5
+        with:
+          path: |
+            .lake/build
+            .lake/packages/LeanCert/.lake/build
+            vendor/zeta23/.lake/build
+          key: numerical-data-v2-${{ runner.os }}-${{ runner.arch }}-${{ steps.inputs.outputs.digest }}
+      - name: Verify the prerequisite data with bounded parallelism
+        shell: bash
+        run: |
+          set -o pipefail
+          python3 scripts/verify_numerical_certificate.py --data-only --jobs 4 2>&1 | tee .lake/numerical-certificate/verification.log
+      # Component caches preserve successful kernel checks. Only the final job
+      # assembles the complete cover and audits its literal-count endpoint.
+      - name: Cache the compiled prerequisite data
+        if: ${{ steps.cache.outputs.cache-hit != 'true' }}
+        uses: actions/cache/save@v5
+        with:
+          path: |
+            .lake/build
+            .lake/packages/LeanCert/.lake/build
+            vendor/zeta23/.lake/build
+          key: numerical-data-v2-${{ runner.os }}-${{ runner.arch }}-${{ steps.inputs.outputs.digest }}
+      # Run artifacts, unlike caches, are the required transport between jobs.
+      # Cache eviction must not remove the prerequisites during cover sharding.
+      - name: Pass this run's checked prerequisites to all dependent jobs
+        uses: actions/upload-artifact@v4
+        with:
+          name: numerical-checked-prerequisites
+          path: |
+            .lake/build
+            .lake/packages/LeanCert/.lake/build
+            vendor/zeta23/.lake/build
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 6
+      - name: Publish prerequisite verification logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: numerical-data-verification
+          path: .lake/numerical-certificate
+          include-hidden-files: true
+          if-no-files-found: ignore
+
+  cover:
+    needs: data
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v5
+      - name: Make room for the compiled proof data on this disposable runner
+        run: sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL
+      - name: Install the pinned toolchain and mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          build: false
+          test: false
+          lint: false
+          use-github-cache: false
+          use-mathlib-cache: true
+      # These data were validated in this run even when cold checking is selected.
+      - name: Download the prerequisites checked in this workflow run
+        uses: actions/download-artifact@v4
+        with:
+          name: numerical-checked-prerequisites
+          path: .
+      - name: Restore this shard's previously compiled groups
+        if: ${{ !inputs.cold }}
+        id: cache
+        uses: actions/cache/restore@v5
+        with:
+          path: |
+            .lake/build/lib/lean/RiemannGaussian/CertificateData/MontgomeryTaylorCover
+            .lake/build/ir/RiemannGaussian/CertificateData/MontgomeryTaylorCover
+          key: numerical-cover-v2-${{ runner.os }}-${{ runner.arch }}-${{ needs.data.outputs.digest }}-${{ matrix.shard }}
+      - name: Verify this disjoint portion of the cover
+        shell: bash
+        run: |
+          mkdir -p .lake/numerical-certificate
+          git rev-parse HEAD > .lake/numerical-certificate/source-revision.txt
+          set -o pipefail
+          python3 scripts/verify_numerical_certificate.py --jobs 4 --groups-only --shard-count 8 --shard-index ${{ matrix.shard }} 2>&1 | tee .lake/numerical-certificate/verification.log
+      - name: Cache the compiled groups in this shard
+        if: ${{ steps.cache.outputs.cache-hit != 'true' }}
+        uses: actions/cache/save@v5
+        with:
+          path: |
+            .lake/build/lib/lean/RiemannGaussian/CertificateData/MontgomeryTaylorCover
+            .lake/build/ir/RiemannGaussian/CertificateData/MontgomeryTaylorCover
+          key: numerical-cover-v2-${{ runner.os }}-${{ runner.arch }}-${{ needs.data.outputs.digest }}-${{ matrix.shard }}
+      - name: Pass this run's compiled groups to the complete assembly
+        uses: actions/upload-artifact@v4
+        with:
+          name: numerical-cover-shard-${{ matrix.shard }}
+          path: |
+            .lake/build/lib/lean/RiemannGaussian/CertificateData/MontgomeryTaylorCover
+            .lake/build/ir/RiemannGaussian/CertificateData/MontgomeryTaylorCover
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 6
+      - name: Publish this shard's verification logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: numerical-shard-verification-${{ matrix.shard }}
+          path: .lake/numerical-certificate
+          include-hidden-files: true
+          if-no-files-found: ignore
+
+  verify:
+    needs: [data, cover]
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v5
+      - name: Make room for all compiled groups on this disposable runner
+        run: sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL
+      - name: Add swap headroom for the complete imported proof environment
+        run: |
+          sudo fallocate -l 4G /mnt/numerical-certificate.swap
+          sudo chmod 600 /mnt/numerical-certificate.swap
+          sudo mkswap /mnt/numerical-certificate.swap
+          sudo swapon /mnt/numerical-certificate.swap
+      - name: Install the pinned toolchain and mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          build: false
+          test: false
+          lint: false
+          use-github-cache: false
+          use-mathlib-cache: true
+      - name: Download the prerequisites checked in this workflow run
+        uses: actions/download-artifact@v4
+        with:
+          name: numerical-checked-prerequisites
+          path: .
+      - name: Gather every disjoint shard from this workflow run
+        uses: actions/download-artifact@v4
+        with:
+          pattern: numerical-cover-shard-*
+          merge-multiple: true
+          path: .lake/build
+      # Lake validates every restored trace again. A missing or changed group
+      # is rebuilt with the same process cap before the complete assembly.
+      - name: Verify the complete target and its transitive axiom audit
+        shell: bash
+        run: |
+          mkdir -p .lake/numerical-certificate
+          git rev-parse HEAD > .lake/numerical-certificate/source-revision.txt
+          set -o pipefail
+          python3 scripts/verify_numerical_certificate.py --jobs 4 2>&1 | tee .lake/numerical-certificate/verification.log
+      - name: Reject a conditional theorem without writing a success report
+        run: python3 scripts/test_numerical_certificate_audit.py
+      - name: Publish the complete verification and axiom audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: numerical-certificate-verification
+          path: .lake/numerical-certificate
+          include-hidden-files: true
+          if-no-files-found: ignore

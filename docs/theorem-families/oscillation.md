@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**59 modules.** Source links open the definitions, hypotheses and proofs.
+**71 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [DerivativeOrderComparison](../../RiemannGaussian/DerivativeOrderComparison.lean)
@@ -63,6 +63,18 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [ShiftedDerivativeFamily](../../RiemannGaussian/ShiftedDerivativeFamily.lean)
 - [UniformDerivativePowerBound](../../RiemannGaussian/UniformDerivativePowerBound.lean)
 - [UniformDirichletPowerBound](../../RiemannGaussian/UniformDirichletPowerBound.lean)
+- [VinogradovGaussianBounds](../../RiemannGaussian/VinogradovGaussianBounds.lean)
+- [VinogradovGaussianCentering](../../RiemannGaussian/VinogradovGaussianCentering.lean)
+- [VinogradovGaussianKernel](../../RiemannGaussian/VinogradovGaussianKernel.lean)
+- [VinogradovGaussianResonance](../../RiemannGaussian/VinogradovGaussianResonance.lean)
+- [VinogradovKorobovBilinearPhase](../../RiemannGaussian/VinogradovKorobovBilinearPhase.lean)
+- [VinogradovKorobovBlock](../../RiemannGaussian/VinogradovKorobovBlock.lean)
+- [VinogradovKorobovDamping](../../RiemannGaussian/VinogradovKorobovDamping.lean)
+- [VinogradovKorobovLogPhase](../../RiemannGaussian/VinogradovKorobovLogPhase.lean)
+- [VinogradovKorobovMoment](../../RiemannGaussian/VinogradovKorobovMoment.lean)
+- [VinogradovMeanValue](../../RiemannGaussian/VinogradovMeanValue.lean)
+- [VinogradovMomentReduction](../../RiemannGaussian/VinogradovMomentReduction.lean)
+- [VinogradovShiftedMoment](../../RiemannGaussian/VinogradovShiftedMoment.lean)
 - [ZetaDyadicPowerBound](../../RiemannGaussian/ZetaDyadicPowerBound.lean)
 - [ZetaDyadicTruncation](../../RiemannGaussian/ZetaDyadicTruncation.lean)
 - [ZetaFiniteDifferencing](../../RiemannGaussian/ZetaFiniteDifferencing.lean)

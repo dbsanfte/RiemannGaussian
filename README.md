@@ -9,22 +9,40 @@ the evolving Lean 4 proof development and supporting analytic and finite-model
 theory. The proof is not complete; in the meantime, the extensive Lean theorems and formalizations are provided to the wider community. Only declarations accepted by Lean and the
 repository's verification gates count as established results.
 
-## Zero-free region
+## Proved Zero-Free Region
 
-**Proved in Lean, with no upper height ceiling:** every nontrivial zeta zero obeys
+[![Zero-free region comparison: coloured benchmark boundaries with our independently proved region overlaid, including a magnified right-edge view](docs/zero-free-regions/comparison.svg)](docs/zero-free-regions/comparison.svg)
+
+**Coral shows our independently proved region.** Within the grey
+Lean-checked interval, it extends beyond the combined benchmark regions
+(blue, purple and green). Click the graph to enlarge it.
+[Graph data, sources and scope](docs/zero-free-regions/README.md)
+· [Graph proof audit](docs/zero-free-regions/audit.json).
+
+**Proved in Lean at every height:** every nontrivial zeta zero obeys
 
 <table>
 <tr><td>
 
 ```math
 \boxed{\begin{gathered}
-\rho=\beta+it,\qquad |t|\ge 10^6,
+\rho=\beta+it,\qquad L(t)=\log(|t|+2),
 \\[2pt]
-L(t)=\log(|t|+2),
+C_1(L)=L+2052\log L+30240,
 \\[2pt]
-C(L)=L+2052\log L+30240,
+C_2(L)=L+1995\log L+29400,
 \\[4pt]
-d(t)=\min\!\left\{\frac{1}{450000},\frac{221}{250C(L(t))}\right\},
+d_1(t)=\min\!\left\{\frac{1}{450000},\frac{221}{250C_1(L(t))}\right\},
+\\[2pt]
+d_2(t)=\min\!\left\{\frac{1}{40500},\frac{1547}{1800C_2(L(t))}\right\},
+\\[2pt]
+P(L)=45750\max\{13/10,L\}-35725,
+\\[2pt]
+r_1(t)=\frac{792}{7625L(t)-2000},
+\\[2pt]
+r_2(t)=\min\!\left\{\frac{4}{39},\frac{4752}{P(L(t))}\right\},
+\\[2pt]
+d(t)=\max\{r_1(t),r_2(t),d_1(t),d_2(t)\},
 \\[4pt]
 d(t)\lt\beta\lt 1-d(t).
 \end{gathered}}
@@ -33,16 +51,17 @@ d(t)\lt\beta\lt 1-d(t).
 </td></tr>
 </table>
 
-The starting height is explicit, and literal zeta nonvanishing includes
-the closed right edge. The full phase-family bound keeps Gaussian,
-logarithmic and fixed costs separate at every height.
-[Lean proof: exact_strip_min](RiemannGaussian/ZetaGaussianRetainedRegion.lean)
-· [Complete cost and arithmetic consequences](docs/zeta-gaussian-retained-region.md).
+The complete endpoint preserves the stronger signed-pole/reserve proof at
+modest heights and both Gaussian proofs at larger heights. Literal zeta
+nonvanishing includes the closed right edge, with the pole `s = 1` excluded.
+[Lean proof: exact_strip](RiemannGaussian/ZetaUnifiedZeroFree.lean)
+· [Complete coverage and arithmetic consequences](docs/zeta-unified-zero-free.md).
 
+The [Lean comparison](RiemannGaussian/ZetaGaussianExpandedComparison.lean)
+now extends through **log-height 480,000**, from the earlier exact crossover.
 The [literature-frontier table](docs/zero-free-literature-frontier.md) records
-the exact interval where Lean proves improvement over the listed benchmark
-functions. Comparisons beyond that interval have not been extended to this
-new curve; an exhaustive world-record claim remains unestablished.
+the full interval and source scope. This is a certified interval;
+coverage of every benchmark at every height remains open.
 
 **Eventual component:** for each fixed admissible coefficient, Lean also proves
 
@@ -67,8 +86,8 @@ This excludes a region adjoining each edge of the critical strip. Lean also
 proves literal zeta nonvanishing on the corresponding closed right edge,
 with every arithmetic and analytic premise discharged.
 **This coefficient-dependent threshold has not been numerically evaluated.**
-On overlaps the two components [combine by their larger width](RiemannGaussian/ZetaGaussianRetainedRegion.lean), with both
-height conditions preserved. The remaining interior strip is unresolved,
+On overlaps the two components [combine by their larger width](RiemannGaussian/ZetaUnifiedZeroFree.lean), with the eventual
+height condition preserved. The remaining interior strip is unresolved,
 and RH remains open.
 
 [Lean proof: exists_eventual_strip](RiemannGaussian/ZetaLogLogZeroFree.lean#L62)
@@ -88,19 +107,18 @@ Zoom, expand branches, inspect theorem metadata and open exact Lean source lines
 
 ## Current Direction
 
-Attack the full signed squarefree Riesz band obtained from the exact Vaughan cutoff average. Preserve its Möbius reflection parity, ordinary-prime correction and complex kernel phases. The averaging error is paid; the remaining target is an independent cofinal lower bound above the negative zero source. RH remains open.
+Make the proved region cover every applicable benchmark, preserving each height range and boundary convention. Retain all existing analytic coverage while closing the lower-height classical/Littlewood and eventual Vinogradov–Korobov gaps. The signed arithmetic floor and RH remain open; numerical certificate verification runs separately.
 
 ## Latest Update
 
-**The logarithmic cutoff average and its parity structure are proved.**
-Lean evaluates the actual floor-cutoff integral as one signed Möbius divisor
-sum, with its prime correction and normalization intact. Its full original
-finite band retains the zero source with independently vanishing reduction
-error. Divisor reflection proves exact midpoint cancellation and opposite
-profile edges for odd Möbius parity. The independent signed bound remains
-open; the zero-free region is unchanged.
-[Lean proof](RiemannGaussian/ZetaSquarefreeVaughanLogSource.lean)
-· [Exact average, parity and remaining obstruction](docs/zeta-vaughan-log-average.md).
+**Lean now proves the 67.31% simple-critical-zero certificate.**
+The cumulative and dyadic bounds have no remaining premise; their starting
+height is unevaluated. Verification is optional and cached.
+Benchmark comparison also reaches log-height 480,000; global coverage and
+the VK arithmetic savings remain open.
+[Certificate and audit](docs/numerical-certificate.md)
+· [Current region](docs/zeta-unified-zero-free.md)
+· [VK proof status](docs/vinogradov-korobov-framework.md).
 
 ## Notable Formalisations
 
@@ -109,7 +127,7 @@ a compiled theorem; its source records the precise domains and hypotheses.
 
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
-| **Explicit Gaussian zero-free curve from the complete phase-family cost** | Every eligible countable family has full cost at most `36922*q + L/36 + 57*log(L) + 840`. The explicit dilation puts this below the selected source `48000*q`. All three prime responses remain coupled before positivity. The union with the eventual region and the enlarged squarefree Cauchy radius are proved. | [full signed family](RiemannGaussian/ZetaGaussianStripPhaseFamily.lean), [complete cost](RiemannGaussian/ZetaGaussianRetainedCost.lean), [actual region](RiemannGaussian/ZetaGaussianRetainedRegion.lean), [arithmetic transport](RiemannGaussian/ZetaSquarefreeGaussianRetainedRegion.lean), [scope](docs/zeta-gaussian-retained-region.md) |
+| **Complete explicit zero-free region and full arithmetic radius** | Both Gaussian budgets and the earlier signed-pole/reserve proof contribute their largest width at every ordinate. The Gaussian starting-height restriction is discharged by reserve containment below it. Both reflected edges, the eventual component and the original squarefree response radius from center height `3` are proved. | [full signed family](RiemannGaussian/ZetaGaussianStripPhaseFamily.lean), [enlarged cost](RiemannGaussian/ZetaGaussianExpandedCost.lean), [complete region](RiemannGaussian/ZetaUnifiedZeroFree.lean), [arithmetic transport](RiemannGaussian/ZetaSquarefreeUnifiedRegion.lean), [scope](docs/zeta-unified-zero-free.md) |
 | **Original Gaussian prime identity and complete strip bridge** | One complex Gaussian average connects the actual prime series, full xi response, pole and completion. Arbitrary finite zero groups retain their ordinates and multiplicities in the signed strip bound; the entire nearby divisor reaches Gaussian compensation. Exact pole recombination and explicit completion and distant-zero allowances retain the selected source at Euler centers. | [complex averages](RiemannGaussian/GaussianComplexPoleAverage.lean), [actual identity](RiemannGaussian/ZetaGaussianSmoothedIdentity.lean), [finite divisor groups](RiemannGaussian/ZetaStripFiniteSource.lean), [terminal bound](RiemannGaussian/ZetaGaussianStripBound.lean), [scope](docs/zeta-gaussian-strip-bridge.md) |
 | **Complete nearby Gaussian-cotangent compensation** | A general analytic half-disc theorem controls the full blended source through its removed pole. Every nearby actual zero is compensated by its own retained Poisson mass; any finite selection keeps its exact source and multiplicities in the full signed bound. The selected cotangent loss is explicitly linear in its distance from one. | [regular correction](RiemannGaussian/CotangentRegularization.lean), [general minimum principle](RiemannGaussian/AnalyticHalfDiscMinimum.lean), [source bound](RiemannGaussian/SmoothedCotangentSource.lean), [actual cancellation](RiemannGaussian/ZetaGaussianNearCancellation.lean), [scope](docs/zeta-gaussian-near-cancellation.md) |
 | **Complete Gaussian zero mass and explicit smoothing remainder** | Exact complex endpoints give cubic pole-remainder decay. An all-window cosine theorem proves the sign of every actual Gaussian zero contribution. Complete multiplicity-weighted summability, finite-window limits and near/far identities retain the complex correction; a shifted Poisson comparison gives an elementary half-logarithmic outside allowance. | [complex endpoints](RiemannGaussian/GaussianComplexHalfMoments.lean), [all-window sign](RiemannGaussian/PositiveCosineLaplace.lean), [actual mass](RiemannGaussian/ZetaGaussianLaplaceMass.lean), [complete remainder bound](RiemannGaussian/ZetaGaussianDistanceRemainder.lean), [scope](docs/zeta-gaussian-pole-remainder.md) |
@@ -276,10 +294,10 @@ Ten major results, selected for mathematical significance. Detailed auxiliary
 results and their exact scope remain in [Notable Formalisations](#notable-formalisations)
 and the [proof inventory](docs/proof-status.json).
 
-- **A proved zero-free region with explicit heights and no upper ceiling.** The
-  [adaptive Gaussian curve](RiemannGaussian/ZetaGaussianRetainedRegion.lean)
+- **A proved explicit zero-free region at every height.** The
+  [complete explicit region](RiemannGaussian/ZetaUnifiedZeroFree.lean)
   and [eventual Littlewood component](RiemannGaussian/ZetaLogLogZeroFree.lean)
-  form the region displayed above. The [exact crossover comparison](RiemannGaussian/ZetaGaussianBandFrontier.lean)
+  form the region displayed above. The [extended comparison](RiemannGaussian/ZetaGaussianExpandedComparison.lean)
   and [literature audit](docs/zero-free-literature-frontier.md) state precisely
   which benchmark functions it improves and where.
 - **Reproduced Anthropic's two-thirds certificate and stronger simple-zero benchmark.**
@@ -288,12 +306,13 @@ and the [proof inventory](docs/proof-status.json).
   Montgomery–Taylor constant for simple critical-line zeros, using the literal
   multiplicity-aware counts. This is external prior work from the
   [pinned Apache-2.0 source](vendor/zeta23/UPSTREAM.md).
-- **Two strict improvements over that external simple-zero benchmark.**
-  [The uncapped inverse-sampling theorem](RiemannGaussian/External/Zeta23InverseSamplingEndgame.lean#L1779)
-  constructs two ordered constants strictly above the external benchmark and
-  proves their eventual literal zero-count bounds. These constants are
-  existential; no numerical bound above `17/25` or `13/18` is established.
-  The three-point mechanism has [related prior work](https://github.com/ainta/zeta-simple-zeros/blob/main/docs/proof.md#3-the-3-point-certificate).
+- **At least 67.31% of nontrivial zeros are simple and on the critical line.**
+  [The literal-count theorem](RiemannGaussian/External/Zeta23SevenWindowIntegerCertificate.lean)
+  proves this for every sufficiently large cumulative or dyadic window.
+  The starting height is unevaluated. Unequal seven-point weights improve
+  the external baseline; Lean checks the complete continuous cover.
+  [Exact coefficient, provenance and optional cached verification](docs/numerical-certificate.md).
+  No `13/18` certificate is claimed.
 - **An exact phase optimiser over all admissible integer frequencies.**
   [existsUnique_phaseContactOptimizer](RiemannGaussian/ZetaPhaseExactOptimizer.lean)
   proves existence and uniqueness, including infinite competitors, for the

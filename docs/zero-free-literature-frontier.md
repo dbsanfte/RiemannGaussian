@@ -6,15 +6,37 @@ comparison of its width function. External analytic proofs and numerical
 RH verifications are **not assumptions or imported certificates** in the
 Gaussian theorem chain.
 
-The [current explicit Gaussian curve](zeta-gaussian-retained-region.md) has
-no upper height ceiling. It contains the preceding curve and is strictly
-wider when the enlarged logarithmic height exceeds 320000. The exact
-comparisons below retain their compiled interval on the constant-width
-plateau. Extending those comparisons to the new curve outside that interval
-is separate work; the interval below is not a height ceiling for the
-current zero-free theorem.
+The [generated comparison graph](zero-free-regions/README.md) displays the
+three headline families, with inspected sources and reported refinements
+distinguished, and overlays our independently proved complete region. Its formulas
+are checked against Lean and its artifacts are checked for freshness in CI.
 
-## The exact comparison interval
+The [current complete explicit region](zeta-unified-zero-free.md) has
+no height restriction. It retains both Gaussian components and the older
+signed-pole/reserve coverage, which is stronger at modest heights.
+The strict headline comparison now extends through **log-height 480000**.
+The interval below is not a height ceiling for the actual zero-free theorem,
+and coverage of every benchmark at every height remains open.
+
+## Extended comparison for the complete region
+
+[ZetaGaussianExpandedComparison](../RiemannGaussian/ZetaGaussianExpandedComparison.lean)
+proves actual nonvanishing and strict headline comparison throughout
+`L_* < log|t| ≤ 480000`, using the full displayed width. This is a certified
+interval, without asserting maximality of either endpoint for the new curve.
+
+On `300000 ≤ L ≤ 480000`, the proof keeps `S=log(exp(L)+2)` and establishes
+`L≤S≤L+1`, `log(S)≤14`, and the actual Gaussian cost bound
+`C₂(S)≤L+57331`. These give `d(t)≥18/(25L)`. The generic classical
+denominators at least two, Littlewood denominators at least `981/50`,
+VK denominators at least `48`, and the full intermediate and Ford formulas
+are strictly below that floor. For VK the proof cubes the complete
+denominator, retaining both fractional powers and using `log(L)≥12`.
+The old exact comparison covers the interval from `L_*` to this extension.
+External height restrictions and unevaluated eventual thresholds still apply
+to the source statements; comparing a width does not import their proofs.
+
+## The earlier exact constant-plateau interval
 
 Put (H=|t|), (L=\log H), and (u=1/450000). Define (L_*) as the unique
 solution on (L\ge250000) of
@@ -74,9 +96,10 @@ In the table, a width (w) describes the right region
 \sigma\ge1-w\quad\text{(closed edge)}.
 ```
 
-Decimals in Lean expressions are exact rationals. **Compared** means the
-displayed width is proved smaller than (u) throughout ((L_*,L_{\max}]).
-It does not assert an external proof has been formalized. A source marked
+Decimals in Lean expressions are exact rationals. **Compared** in the table
+names the earlier proof below (u) throughout ((L_*,L_{\max}]); the new
+floor theorems above extend these comparisons to the complete region through
+log-height 480000. It does not assert an external proof has been formalized. A source marked
 **reported** has not had its full proof independently inspected here.
 
 | Source and statement | Width or conclusion | Height domain | Edge / audit status | Lean comparison |
@@ -129,7 +152,7 @@ later constant to an earlier version.
 
 **Supported claim:** the repository proves actual zero exclusion and strict
 pointwise improvement over every explicitly displayed comparison function
-in this table throughout the exact interval. The comparisons cover the
+in this table throughout the extended certified interval. The comparisons cover the
 newer classical lead as well. **This is not yet an exhaustive world-record
 or historical-novelty determination.** An unevaluated threshold cannot be
 assumed below the ceiling, and headline constants do not exhaust every
@@ -137,7 +160,7 @@ possible optimization of a source's underlying methods.
 
 The repository's own eventual component combines with its adaptive curve
 by maximum wherever both height conditions hold; see
-[the proved union](../RiemannGaussian/ZetaGaussianRetainedRegion.lean).
+[the proved union](../RiemannGaussian/ZetaUnifiedZeroFree.lean).
 The external regions above are not silently added to that Lean union.
 The independent ordinary-prime tail bound and RH remain open.
 

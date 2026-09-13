@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "defaultTarget": "RiemannGaussian",
+  "optionalTarget": "NumericalCertificate",
+  "heavyModulePrefix": "RiemannGaussian.CertificateData.",
+  "targetProportion": {
+    "numerator": 6731,
+    "denominator": 10000
+  },
+  "status": "proved locally: unconditional literal-count theorem",
+  "documentation": "docs/numerical-certificate.md",
+  "scope": "eventual dyadic (T, 2T] and cumulative (0, T] counts; height threshold unevaluated",
+  "terminalTheorems": [
+    "RiemannGaussian.Zeta23InverseSampling.simpleCritical_6731_eventually",
+    "RiemannGaussian.Zeta23InverseSampling.simpleCritical_6731_cumulative_eventually"
+  ],
+  "axiomAudit": "docs/numerical-certificate-audit.json"
+}

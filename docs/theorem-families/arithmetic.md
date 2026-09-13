@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**109 modules.** Source links open the definitions, hypotheses and proofs.
+**111 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -110,10 +110,12 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaSquarefreeEulerResponse](../../RiemannGaussian/ZetaSquarefreeEulerResponse.lean)
 - [ZetaSquarefreeGaussianAllHeight](../../RiemannGaussian/ZetaSquarefreeGaussianAllHeight.lean)
 - [ZetaSquarefreeGaussianBand](../../RiemannGaussian/ZetaSquarefreeGaussianBand.lean)
+- [ZetaSquarefreeGaussianRegionUnion](../../RiemannGaussian/ZetaSquarefreeGaussianRegionUnion.lean)
 - [ZetaSquarefreeGaussianRetainedRegion](../../RiemannGaussian/ZetaSquarefreeGaussianRetainedRegion.lean)
 - [ZetaSquarefreeGaussianSieve](../../RiemannGaussian/ZetaSquarefreeGaussianSieve.lean)
 - [ZetaSquarefreeLocalWindow](../../RiemannGaussian/ZetaSquarefreeLocalWindow.lean)
 - [ZetaSquarefreeLogLogRadius](../../RiemannGaussian/ZetaSquarefreeLogLogRadius.lean)
 - [ZetaSquarefreeSieve](../../RiemannGaussian/ZetaSquarefreeSieve.lean)
 - [ZetaSquarefreeSource](../../RiemannGaussian/ZetaSquarefreeSource.lean)
+- [ZetaSquarefreeUnifiedRegion](../../RiemannGaussian/ZetaSquarefreeUnifiedRegion.lean)
 - [ZetaSquarefreeWindowSource](../../RiemannGaussian/ZetaSquarefreeWindowSource.lean)

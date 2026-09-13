@@ -11,6 +11,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+      - name: Keep exhaustive numerical verification out of ordinary builds
+        run: |
+          python3 scripts/numerical_certificate.py
+          python3 scripts/test_numerical_certificate_build.py
+          python3 scripts/test_numerical_certificate_scheduler.py
       - name: Reject unfinished Lean proofs
         shell: bash
         run: |
@@ -48,6 +53,13 @@ jobs:
           lake env lean -DwarningAsError=true scripts/ExportTheoremGraph.lean
           python3 scripts/build_theorem_explorer.py --check
           node scripts/check_theorem_graph.cjs
+      - name: Check the evergreen zero-free comparison graph
+        shell: bash
+        run: |
+          python3 -m venv .lake/plot-venv
+          .lake/plot-venv/bin/pip install -r scripts/requirements-plots.txt
+          lake env lean -DwarningAsError=true scripts/ExportZeroFreePlot.lean
+          .lake/plot-venv/bin/python scripts/build_zero_free_plot.py --check
       - name: Install the pinned explorer test browser
         shell: bash
         run: |

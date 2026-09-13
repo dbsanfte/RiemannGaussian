@@ -6,10 +6,13 @@
 
 Attributed Zeta23 baselines and project extensions. Individual sources distinguish external results from new deductions.
 
-**16 modules.** Source links open the definitions, hypotheses and proofs.
+**22 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [External.Zeta23Baseline](../../RiemannGaussian/External/Zeta23Baseline.lean)
 - [External.Zeta23Benchmark](../../RiemannGaussian/External/Zeta23Benchmark.lean)
+- [External.Zeta23BlockEndgame](../../RiemannGaussian/External/Zeta23BlockEndgame.lean)
+- [External.Zeta23BlockSpectrum](../../RiemannGaussian/External/Zeta23BlockSpectrum.lean)
+- [External.Zeta23ConsecutiveBlocks](../../RiemannGaussian/External/Zeta23ConsecutiveBlocks.lean)
 - [External.Zeta23EtaDyadicBlock](../../RiemannGaussian/External/Zeta23EtaDyadicBlock.lean)
 - [External.Zeta23EtaWindowBridge](../../RiemannGaussian/External/Zeta23EtaWindowBridge.lean)
 - [External.Zeta23FermionicAudit](../../RiemannGaussian/External/Zeta23FermionicAudit.lean)
@@ -24,3 +27,6 @@ Attributed Zeta23 baselines and project extensions. Individual sources distingui
 - [External.Zeta23InverseSamplingPacking](../../RiemannGaussian/External/Zeta23InverseSamplingPacking.lean)
 - [External.Zeta23InverseSamplingZeroSide](../../RiemannGaussian/External/Zeta23InverseSamplingZeroSide.lean)
 - [External.Zeta23PhaseTwistZeroSide](../../RiemannGaussian/External/Zeta23PhaseTwistZeroSide.lean)
+- [External.Zeta23SevenWindowCertificate](../../RiemannGaussian/External/Zeta23SevenWindowCertificate.lean) — optional certificate build
+- [External.Zeta23SevenWindowIntegerCertificate](../../RiemannGaussian/External/Zeta23SevenWindowIntegerCertificate.lean) — optional certificate build
+- [External.Zeta23SevenWindowTarget](../../RiemannGaussian/External/Zeta23SevenWindowTarget.lean)

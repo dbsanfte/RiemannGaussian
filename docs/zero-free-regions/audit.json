@@ -1,0 +1,202 @@
+{
+  "drawing": {
+    "ceilingDrawingApproximation": 480000.0,
+    "crossoverDrawingApproximation": 288346.76813904336,
+    "exactCeiling": [
+      "natural",
+      480000
+    ]
+  },
+  "drawingIsProof": false,
+  "formulaExportSha256": "c176f9ccaa02f0bb06ab9f1094b837e50f01b530d596fddedbfed5a4176c69c0",
+  "formulaProofs": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "ZeroFreePlot.gaussian_correct",
+      "statement": "∀ (L : ℝ),\n  1 ≤ ZetaNearOneBudgetLimit.scale (Real.exp L) →\n    Formula.real L gaussian = ZetaGaussianRegionUnion.width (Real.exp L)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "ZeroFreePlot.reserve_correct",
+      "statement": "∀ (L : ℝ), Formula.real L reserve = zetaPoleReserveZeroMargin (Real.exp L)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "ZeroFreePlot.unified_correct",
+      "statement": "∀ (L : ℝ), Formula.real L unified = ZetaUnifiedZeroFree.width (Real.exp L)"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "ZeroFreePlot.classical_correct",
+      "statement": "∀ (n d : ℕ) (L : ℝ), Formula.real L (classical n d) = ZetaGaussianBandFrontier.classicalWidth (↑n / ↑d) L"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "ZeroFreePlot.littlewood_correct",
+      "statement": "∀ (n d : ℕ) (L : ℝ), Formula.real L (littlewood n d) = ZetaGaussianBandFrontier.littlewoodWidth (↑n / ↑d) L"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "ZeroFreePlot.vk_correct",
+      "statement": "∀ (n d : ℕ) (L : ℝ), Formula.real L (vk n d) = ZetaGaussianBandFrontier.vkWidth (↑n / ↑d) L"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "ZeroFreePlot.allHeight_nonvanishing",
+      "statement": "∀ (s : ℂ), s ≠ 1 → 1 - ZetaUnifiedZeroFree.width s.im ≤ s.re → riemannZeta s ≠ 0"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "ZeroFreePlot.crossoverGap_correct",
+      "statement": "∀ (L : ℝ), Formula.real L crossoverGap = ZetaGaussianBandFrontier.crossoverGap L"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "ZeroFreePlot.crossoverBracket_correct",
+      "statement": "↑crossoverLower < ZetaGaussianBandFrontier.crossover ∧ ZetaGaussianBandFrontier.crossover < ↑crossoverUpper"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "ZeroFreePlot.ceiling_correct",
+      "statement": "∀ (L : ℝ), Formula.real L ceiling = 480000"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "ZeroFreePlot.plotted_comparison",
+      "statement": "∀ (s : ℂ) {L : ℝ},\n  ZetaGaussianBandFrontier.crossover < L →\n    L ≤ Formula.real L ceiling →\n      |s.im| = Real.exp L →\n        1 - ZetaUnifiedZeroFree.width s.im ≤ s.re →\n          riemannZeta s ≠ 0 ∧ ZetaGaussianBandFrontier.benchmarkWidth L < ZetaUnifiedZeroFree.width s.im"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "ZeroFreePlot.headlineEnvelope_correct",
+      "statement": "∀ (L : ℝ),\n  max (Formula.real L (classical 24297 5000))\n      (max (Formula.real L (littlewood 981 50)) (Formula.real L (vk 2567 50))) =\n    ZetaGaussianBandFrontier.benchmarkWidth L"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "RiemannGaussian.ZetaUnifiedZeroFree.exact_strip",
+      "statement": "∀ (ρ : NontrivialZetaZero),\n  ZetaUnifiedZeroFree.width (↑ρ).im < (↑ρ).re ∧ (↑ρ).re < 1 - ZetaUnifiedZeroFree.width (↑ρ).im"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "RiemannGaussian.ZetaUnifiedZeroFree.gaussian_width_le",
+      "statement": "∀ (t : ℝ), ZetaGaussianRegionUnion.width t ≤ ZetaUnifiedZeroFree.width t"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "RiemannGaussian.ZetaUnifiedZeroFree.reserve_width_le",
+      "statement": "∀ (t : ℝ), zetaPoleReserveZeroMargin t ≤ ZetaUnifiedZeroFree.width t"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "RiemannGaussian.ZetaGaussianExpandedComparison.nonvanishing_and_comparison",
+      "statement": "∀ (s : ℂ) {L : ℝ},\n  ZetaGaussianBandFrontier.crossover < L →\n    L ≤ 480000 →\n      |s.im| = Real.exp L →\n        1 - ZetaUnifiedZeroFree.width s.im ≤ s.re →\n          riemannZeta s ≠ 0 ∧ ZetaGaussianBandFrontier.benchmarkWidth L < ZetaUnifiedZeroFree.width s.im"
+    }
+  ],
+  "generator": "scripts/build_zero_free_plot.py",
+  "inputs": {
+    "docs/proof-status.json": "50623917f738c19dd6dffb052de26a811c7a7c78ef35582bad5789b827e393c8",
+    "docs/zero-free-literature-frontier.md": "298b57fa00dc3c671fd6f5270c8d6c3b81dcc66d7e79080ae901ceda13314085",
+    "docs/zero-free-regions/metadata.json": "4d2332c61060c8e85b0d58213001b98448bc08b8bb2532d589a1d81198325f0d",
+    "scripts/ExportZeroFreePlot.lean": "bf4c47386c829827ad223399e313c7dfeb733137d48025ea3658d67c4e7c8163",
+    "scripts/build_zero_free_plot.py": "c8918cf142c0c7a63bd420bd8dfb44d7af837b0ab16bc3c63d2b9ba3945dade6",
+    "scripts/requirements-plots.txt": "aac8d3d47be837d322ee3686a0e79b3f62ea6dc9d58ca818dc4087bfdeeb2b45"
+  },
+  "leanVersion": "4.33.1",
+  "matplotlibVersion": "3.10.6",
+  "minimumHeight": 3,
+  "numpyVersion": "2.2.6",
+  "proofGraphNodes": 10140,
+  "schemaVersion": 1,
+  "scope": "Selected explicit benchmark families, not an exhaustive world-record comparison. External analytic proofs are not imported into the Lean union.",
+  "sourceAuditDate": "2026-09-13",
+  "svgSha256": "7290d4604cdc2a543065ea073b961d02b44559a868f448c84be18ba2c513b94d",
+  "theoremExplorerAudit": "docs/theorem-explorer/audit.json",
+  "theoremExplorerAuditSha256": "3a9f78d91f70e7af8f7539c91d5e2e029a5e934a6f782935fbafbaf0db747ab1",
+  "theorems": {
+    "comparisonTheorem": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "line": 181,
+      "name": "RiemannGaussian.ZetaGaussianExpandedComparison.nonvanishing_and_comparison",
+      "path": "RiemannGaussian/ZetaGaussianExpandedComparison.lean",
+      "statement": "∀ (s : ℂ) {L : ℝ},\n  RiemannGaussian.ZetaGaussianBandFrontier.crossover < L →\n    L ≤ 480000 →\n      |s.im| = Real.exp L →\n        1 - RiemannGaussian.ZetaUnifiedZeroFree.width s.im ≤ s.re →\n          riemannZeta s ≠ 0 ∧\n            RiemannGaussian.ZetaGaussianBandFrontier.benchmarkWidth L <\n              RiemannGaussian.ZetaUnifiedZeroFree.width s.im"
+    },
+    "provedTheorem": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "line": 95,
+      "name": "RiemannGaussian.ZetaUnifiedZeroFree.exact_strip",
+      "path": "RiemannGaussian/ZetaUnifiedZeroFree.lean",
+      "statement": "∀ (ρ : RiemannGaussian.NontrivialZetaZero),\n  RiemannGaussian.ZetaUnifiedZeroFree.width (↑ρ).im < (↑ρ).re ∧\n    (↑ρ).re < 1 - RiemannGaussian.ZetaUnifiedZeroFree.width (↑ρ).im"
+    }
+  }
+}

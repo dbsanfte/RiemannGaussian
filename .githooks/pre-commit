@@ -5,6 +5,8 @@ set -euo pipefail
 project_root=$(git rev-parse --show-toplevel)
 cd "$project_root"
 
+python3 scripts/numerical_certificate.py
+
 if git grep --cached -nE '\<(sorry|admit|sorryAx)\>' -- '*.lean'; then
   echo 'Staged Lean sources contain a forbidden proof placeholder.' >&2
   exit 1
@@ -37,6 +39,16 @@ echo 'pre-commit: Lean-derived theorem explorer and witnessed graph paths'
 theorem_node="${THEOREM_NODE:-node}"
 python3 scripts/build_theorem_explorer.py --check --node "$theorem_node"
 "$theorem_node" scripts/check_theorem_graph.cjs
+
+echo 'pre-commit: checked zero-free formulas and evergreen comparison graph'
+"${lake_command[@]}" env lean -DwarningAsError=true scripts/ExportZeroFreePlot.lean
+plot_python="${ZERO_FREE_PLOT_PYTHON:-.lake/plot-venv/bin/python}"
+if [[ ! -x "$plot_python" ]]; then
+  echo 'Install plotting tools: python3 -m venv .lake/plot-venv' >&2
+  echo 'Then: .lake/plot-venv/bin/pip install -r scripts/requirements-plots.txt' >&2
+  exit 1
+fi
+"$plot_python" scripts/build_zero_free_plot.py --check
 
 echo 'pre-commit: staged whitespace check'
 git diff --cached --check

@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "title": "Proved Zero-Free Region",
+  "sourceAuditDate": "2026-09-13",
+  "literatureTable": "docs/zero-free-literature-frontier.md",
+  "scope": "Selected explicit benchmark families, not an exhaustive world-record comparison. External analytic proofs are not imported into the Lean union.",
+  "provedTheorem": "RiemannGaussian.ZetaUnifiedZeroFree.exact_strip",
+  "comparisonTheorem": "RiemannGaussian.ZetaGaussianExpandedComparison.nonvanishing_and_comparison",
+  "overviewMaximumLogHeight": 100000000,
+  "zoomLogHeights": [
+    250000,
+    550000
+  ],
+  "zoomMaximumWidth": 3.5e-06,
+  "curves": [
+    {
+      "id": "classical-bty",
+      "label": "Classical · BTY 4.896",
+      "color": "#2563b8",
+      "style": "solid",
+      "status": "external-inspected",
+      "minimumHeight": 3,
+      "edge": "open",
+      "source": "Bellotti–Trudgian–Yang (2026), arXiv v1, Theorem 1",
+      "url": "https://arxiv.org/html/2603.21490v1#S1"
+    },
+    {
+      "id": "classical-candidate",
+      "label": "Classical · 4.8594 candidate",
+      "color": "#2563b8",
+      "style": "dashed",
+      "status": "external-proof-unresolved",
+      "minimumHeight": 3,
+      "edge": "open",
+      "source": "BTY (2026), arXiv v1, Theorem 2; its supporting Lemma 2 remains unresolved in the inspected text",
+      "url": "https://arxiv.org/html/2603.21490v1#S1"
+    },
+    {
+      "id": "littlewood-yang",
+      "label": "Littlewood · Yang 21.233",
+      "color": "#7851b8",
+      "style": "solid",
+      "status": "external-inspected",
+      "minimumHeight": 3,
+      "edge": "open",
+      "source": "Yang (2024), arXiv 2301.03165v2, Corollary 1.2",
+      "url": "https://arxiv.org/pdf/2301.03165v2"
+    },
+    {
+      "id": "littlewood-reported",
+      "label": "Littlewood · 19.62 reported",
+      "color": "#7851b8",
+      "style": "dashed",
+      "status": "external-reported",
+      "minimumHeight": 3,
+      "edge": "open",
+      "source": "Yang thesis (2025), as reported in BTY (2026) introduction; thesis full text not retrieved",
+      "url": "https://arxiv.org/html/2603.21490v1#S1"
+    },
+    {
+      "id": "vk-bellotti-v1",
+      "label": "Vinogradov–Korobov · Bellotti 54.004",
+      "color": "#00836e",
+      "style": "solid",
+      "status": "external-inspected",
+      "minimumHeight": 3,
+      "edge": "closed",
+      "source": "Bellotti (2023), arXiv 2306.10680v1, Theorem 1.2; the later reported 53.989 refinement is covered by the stronger dashed 51.34 curve",
+      "url": "https://arxiv.org/html/2306.10680v1"
+    },
+    {
+      "id": "vk-reported",
+      "label": "Vinogradov–Korobov · 51.34 reported",
+      "color": "#00836e",
+      "style": "dashed",
+      "status": "external-reported",
+      "minimumHeight": 3,
+      "edge": "open",
+      "source": "Yang thesis (2025), as reported in BTY (2026) introduction; thesis full text not retrieved",
+      "url": "https://arxiv.org/html/2603.21490v1#S1"
+    },
+    {
+      "id": "gaussian",
+      "label": "RiemannGaussian · independent proof",
+      "color": "#d64a35",
+      "style": "solid",
+      "status": "lean-proved",
+      "edge": "closed",
+      "source": "Complete independent Gaussian and signed-pole/reserve proof, ZetaUnifiedZeroFree.exact_strip",
+      "documentation": "docs/zeta-unified-zero-free.md"
+    }
+  ],
+  "omitted": [
+    "Eventual regions with unevaluated starting heights, including our own log-log component, have no certified finite plotting start and are not drawn.",
+    "The external finite RH verification to height 3e12 is not imported; this plot compares explicit analytic edge-width families, not every known zero-location result.",
+    "Older or supplementary benchmark formulas and all edge conventions remain in the linked literature-frontier table."
+  ]
+}

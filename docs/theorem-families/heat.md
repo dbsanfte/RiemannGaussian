@@ -6,7 +6,7 @@
 
 Gaussian transforms, smoothed zero sources, exact prime identities and retained remainders.
 
-**115 modules.** Source links open the definitions, hypotheses and proofs.
+**119 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ComplexGaussianCurvature](../../RiemannGaussian/ComplexGaussianCurvature.lean)
 - [ComplexGaussianMoebius](../../RiemannGaussian/ComplexGaussianMoebius.lean)
@@ -109,6 +109,10 @@ Gaussian transforms, smoothed zero sources, exact prime identities and retained 
 - [RiemannXiHyperbolicHeatWindow](../../RiemannGaussian/RiemannXiHyperbolicHeatWindow.lean)
 - [SignedLaplaceMoments](../../RiemannGaussian/SignedLaplaceMoments.lean)
 - [ZetaGaussianDistanceRemainder](../../RiemannGaussian/ZetaGaussianDistanceRemainder.lean)
+- [ZetaGaussianExpandedComparison](../../RiemannGaussian/ZetaGaussianExpandedComparison.lean)
+- [ZetaGaussianExpandedCost](../../RiemannGaussian/ZetaGaussianExpandedCost.lean)
+- [ZetaGaussianExpandedScale](../../RiemannGaussian/ZetaGaussianExpandedScale.lean)
+- [ZetaGaussianExpandedSource](../../RiemannGaussian/ZetaGaussianExpandedSource.lean)
 - [ZetaGaussianLaplaceMass](../../RiemannGaussian/ZetaGaussianLaplaceMass.lean)
 - [ZetaGaussianLocalizer](../../RiemannGaussian/ZetaGaussianLocalizer.lean)
 - [ZetaGaussianPhaseAllowance](../../RiemannGaussian/ZetaGaussianPhaseAllowance.lean)

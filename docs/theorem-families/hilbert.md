@@ -6,10 +6,12 @@
 
 The attributed Montgomery–Vaughan Hilbert inequality and finite algebraic and inverse-sampling tools.
 
-**10 modules.** Source links open the definitions, hypotheses and proofs.
+**12 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [FiniteAlgebraicHilbert](../../RiemannGaussian/FiniteAlgebraicHilbert.lean)
 - [MontgomeryTaylorInverseSampling](../../RiemannGaussian/MontgomeryTaylorInverseSampling.lean)
+- [MontgomeryTaylorKernelFormula](../../RiemannGaussian/MontgomeryTaylorKernelFormula.lean)
+- [MontgomeryTaylorWindowEnergy](../../RiemannGaussian/MontgomeryTaylorWindowEnergy.lean)
 - [MontgomeryVaughan.Duality](../../RiemannGaussian/MontgomeryVaughan/Duality.lean)
 - [MontgomeryVaughan.Eigen](../../RiemannGaussian/MontgomeryVaughan/Eigen.lean)
 - [MontgomeryVaughan.EigenIdentity](../../RiemannGaussian/MontgomeryVaughan/EigenIdentity.lean)

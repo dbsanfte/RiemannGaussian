@@ -5,12 +5,21 @@ current zero-free endpoints. Its coloured zones describe mathematical
 families; they do not assert new implications. The README contains only a
 linked preview in its zero-free section.
 
-The default view now ends at the improved explicit curve proved by
-`ZetaGaussianRetainedRegion`. **Improved curve · complete cost and comparison**
-shows the full retained-cost inequality, containment and strict improvement
-over the preceding curve, and the larger radius in the original marked
-squarefree response. The [scope note](zeta-gaussian-retained-region.md)
-keeps the independent interior prime floor explicit. Earlier multiplicity,
+The default view ends at the complete all-height region proved by
+`ZetaUnifiedZeroFree`. **Coverage audit · Gaussian and older reserve retained**
+shows both containment guards, the exact elementary formula and the restored
+arithmetic disc from center height three. The
+[complete scope note](zeta-unified-zero-free.md) distinguishes that restoration
+from the remaining literature coverage gaps.
+**Smaller dilations · tenfold width and radius gain**
+shows the enlarged-domain cost and selected source, actual nonvanishing,
+containment and the tenfold moderate-height gain. The original marked
+squarefree response inherits the larger radius. The
+[scope note](zeta-gaussian-region-union.md) keeps the independent interior
+prime floor explicit. **Vinogradov–Korobov · exact phases and moment counts**
+shows the proved signed phase expansion and exact mean-value interpretation;
+it does not assert a quantitative high-moment saving or a VK region.
+Earlier multiplicity,
 separation and energy endpoints retain their own stated width or dilation.
 
 The **Multiplicity** endpoint follows the stronger location constraint for

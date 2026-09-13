@@ -1694,23 +1694,110 @@ application of a classical identity, not a claimed novel identity or a
 larger zero-free region. Constants may depend on the fixed filter and
 ordinate; no moving-filter or height-uniform estimate is supplied.
 
-The improved explicit curve in `docs/zeta-gaussian-retained-region.md` now
-keeps the complete Gaussian cost as
-`36922*q + L/36 + 57*log(L) + 840`, with `L=log(abs(t)+2)`.
-Choosing `q=max(1,(L+2052*log(L)+30240)/397800)` proves literal nonvanishing
-at width `min(1/450000,221/(250*(L+2052*log(L)+30240)))` for every
-`abs(t)>=1000000`. It contains the preceding explicit curve and is strictly
-wider for `L>320000`; its full-width plateau includes `L<=340000`.
-The complete doubled-window squarefree transport has the corresponding
-larger Cauchy radius, with constants still allowed to depend on the center.
-Use this curve in the README and default explorer endpoint. Preserve the
-existing eventual union and its unevaluated threshold. The old multiplicity,
-separation, filter-cost and energy-decay theorems still use their stated
-earlier width or dilation; do not silently substitute the new one. Existing
-literature comparisons retain their compiled interval, and no exhaustive
-record claim follows. The independent cofinal signed prime floor and RH
-remain open. Keeping fixed costs separate improves this explicit budget;
-it does not bound the remaining signed carrier.
+The current explicit endpoint is `ZetaUnifiedZeroFree.exact_strip`, described
+in `docs/zeta-unified-zero-free.md`. It retains the maximum of the earlier
+signed-pole/reserve width and the two Gaussian widths at every ordinate.
+The Gaussian analytic estimates still start at absolute height 1000000;
+below that height their physical cap is proved strictly smaller than the
+older reserve, so the combined elementary maximum needs no height premise.
+Preserve both containment theorems when changing the displayed region. A
+better large-height coefficient must never silently remove older coverage
+at modest heights. Literal nonvanishing includes the closed right edge and
+explicitly excludes the pole at one.
+
+With L=log(abs(t)+2), the four elementary widths are
+792/(7625*L-2000), min(4/39,4752/(45750*max(13/10,L)-35725)),
+min(1/450000,221/(250*(L+2052*log(L)+30240))), and
+min(1/40500,1547/(1800*(L+1995*log(L)+29400))). The two Gaussian
+branches pay their full q>=1 and q>=9/100 costs, respectively.
+`SquarefreeUnifiedRegion` transports the combined width through the full
+doubled window and gives the original response radius for abs(y)>=3,
+preserving every Gaussian radius and the complete signed prime envelope.
+Constants may depend on the center. Keep older multiplicity, separation,
+filter-cost and energy theorems at their stated widths; a new radius cannot
+be silently substituted into them. The eventual log-log component retains
+its original unevaluated threshold.
+
+The active benchmark target is pointwise coverage of every applicable
+region in the audited literature table, with height ranges and edge
+conventions preserved. This has not been achieved: lower-height
+classical/Littlewood and eventual VK gaps remain. Do not describe the
+restored endpoint as unbeaten at every height, or the external proofs as
+imported. `ZetaGaussianExpandedComparison.nonvanishing_and_comparison`
+now extends the strict headline comparison to `(L_*,480000]`, where
+`L=log(abs(t))` and `L_*` is the earlier exact crossover. The new interval
+is certified, not asserted maximal. The proof pays the plus-two scale
+correction and bounds the actual complete width below by `18/(25*L)`
+on `[300000,480000]`. It covers the generic classical, Littlewood and VK
+denominators and the full intermediate/Ford expressions there; the older
+proof covers the remaining overlap down to `L_*`. The earlier exact
+constant-plateau ceiling remains a separate historical theorem. The graph
+must use the new checked endpoint while showing all remaining global gaps;
+its default theorem stays the complete all-height proved region.
+
+`docs/vinogradov-korobov-framework.md` records the proved signed finite
+logarithmic expansion, its transport to the full weighted product sum,
+actual product-shift averaging and damping transport, and the exact
+all-order torus-moment/equal-frequency tuple-count identity. The
+monomial instance is the literal unit-cube Vinogradov integral, and its
+first moment is exactly N. Preserve the full weighted complex Gram form.
+The exact remainder identity holds for every nonnegative ratio. The unit
+base phase, parity sign, both factor monomials and all complex weights
+survive before the perturbation estimate. `VinogradovKorobovBlock` keeps
+the signed boundary and the outer base phases in the complex approximation.
+Its boundary majorant uses the actual mean shifts; do not silently replace
+this by the largest product or round integer endpoints. The error bound
+controls the difference between actual complex prefixes and their
+approximation, which transports through Abel summation.
+`VinogradovKorobovDamping.feature_approximation_error_le` pays the actual
+damping mass for the original `zetaPrimeFeature` at positive integer starts
+and nonnegative real parts. `VinogradovShiftedMoment` now bounds every
+shifted frequency-difference count by its homogeneous count and proves the
+even-moment majorant for bounded complex weights. `VinogradovMomentReduction`
+proves the two-Hölder reduction with exact frequency multiplicity mass and
+energy. `VinogradovKorobovMoment` applies it to the actual product polynomial
+at its exact real sampling coordinates. Keep the joint attainable tuple-
+frequency support and the explicitly defined phase-dependent alignment
+weights in `two_holder_bound` until an explicit estimate uses them; a rectangular support enlargement is a separate loss.
+`VinogradovGaussianKernel` now proves genuine lattice summability,
+multivariate Gaussian Poisson summation and the complete signed Gram
+identity. Its dual-moment majorant pays the exact maximum exponent cost on
+the attainable joint support. Gaussian majorization adds frequencies
+outside that support, so retain the exact restricted `dualMoment` upstream;
+the maximum cost alone does not preserve its holes or multiplicities.
+`VinogradovKorobovMoment.interval_gaussian_bound` applies it to the actual
+interval sum with the canonical alignment weights. A positive spatial
+kernel does not make the individual complex cross terms positive. Keep
+all integer translates, coordinate differences and tuple-weight products
+until an explicit estimate uses them. A quantitative saving for this Gaussian
+Gram form and the homogeneous mean value remains open.
+`VinogradovGaussianResonance` now groups the exact signed Gram form by the
+full integer power-sum difference vector. Its bounded-weight majorant uses
+the homogeneous moment on each complete fibre and retains the entire joint
+resonance support and every Gaussian translate. The actual interval product
+sum reaches both homogeneous moments and this resonance sum in
+`VinogradovKorobovMoment.interval_resonance_bound`. Keep the signed fibre
+identity upstream of the norm bound; removing its weights is a documented
+loss, not a proof that the actual phase correlations are irrelevant.
+`VinogradovGaussianBounds` pays every translated Gaussian tail with a
+uniform fractional-phase envelope and an explicit geometric denominator.
+Its distance estimate works for moving phases; do not substitute a
+fixed-phase asymptotic. `VinogradovGaussianCentering` preserves the complete
+complex sample under an integer frequency translation by retaining the
+exact unit phase twists of every original weight. The canonical interval
+midpoint pays all rounding and gives at most one quarter of the origin's
+Gaussian exponent cost, proved in `interval_centered_cost_le_quarter` for
+positive tuple order and a nonempty interval. The actual product sum uses
+this in `interval_quarter_envelope_bound`. This is a quartering of the
+exponent cost, not of the whole product bound or a new zero-free width.
+The finite joint resonance envelope and both high moments still need
+arithmetic estimates. Keep the exact signed centred Gram identity upstream.
+Quantitative Vinogradov high-moment savings,
+the required exponential-sum saving, zeta growth and the VK zero-free region
+remain unproved here. Do not add a VK curve to the proved union or promote a
+conditional transfer as that analytic proof. The independent cofinal signed
+arithmetic floor and RH remain open. Numerical verification stays in its
+optional target; do not edit its fingerprinted inputs during a live run.
 
 Work in one coherent slice at a time. A slice should close a real lemma or
 interface needed by the current RH frontier, not merely add parallel
@@ -1748,7 +1835,7 @@ abstractions.
    implication, and label RH equivalences as reformulations rather than
    progress on their open direction.
    In the README, display only the latest proved zero-free region in its own
-   `Zero-free region` section immediately after the introduction. Display the
+   `Proved Zero-Free Region` section immediately after the introduction. Display the
    bound prominently and link directly to the compiled Lean proof. Include
    a brief linked entry in `Accomplishments` too. State its exact bound and
    height-threshold scope, including whether the threshold is existential or
@@ -1772,8 +1859,8 @@ abstractions.
    existing Lean source paths and imports, as requested by the user.
 9. Apply the current theorem-push commit gate. Commit and push the complete
    slice only after its actual mathematical target and all verification
-   gates pass. Wait for GitHub Actions on that exact commit SHA to finish
-   successfully before beginning another slice.
+   gates pass. Track GitHub Actions on that exact commit SHA. Per the user's
+   2026-09-13 instruction, continue local theorem work while CI runs.
 
 Lake builds independent modules in parallel. Direct elaboration of one Lean
 module is normally one process; do not mistake that focused check for the
@@ -1788,13 +1875,49 @@ Maintain logical families and optional theorem reading labels in
 locations, dependency edges and transitive axiom audits come from Lean.
 The same family metadata drives `docs/theorem-families/` and the Lean source
 directory's landing page. Every project source module must have an
-unambiguous family and be reachable from the root imports. Assign new modules
+unambiguous family and be reachable from the ordinary root or the explicitly
+optional `NumericalCertificate` root. Assign new modules
 by an appropriate prefix or explicit override, then run
 `scripts/build_theorem_explorer.py` to regenerate both indexes and explorer
 assets. Its `--check` mode rejects missing, ambiguous or stale assignments and
 stale generated pages. Keep one shared family taxonomy; do not hand-edit the
 generated indexes or duplicate their full contents in the README.
-The README's `Zero-free region` is the first section after the introduction.
+
+Per the user's explicit numerical-certificate build instructions, exhaustive
+certificate verification is opt-in. Keep generated `CertificateData` and every
+module importing it out of `RiemannGaussian.lean` and `defaultTargets`; import
+them from `NumericalCertificate.lean` instead. Normal CI and pre-commit builds
+must not trigger those computations. The manual
+`.github/workflows/numerical_certificate.yml` workflow checks prerequisite
+data, eight disjoint cover shards, then the complete assembly and
+`scripts/AuditNumericalCertificate.lean`. Caches accelerate unchanged inputs;
+artifacts from that same run transport checked prerequisites and all shards,
+so cache eviction cannot remove a required inter-job dependency. The cold
+option skips restored project certificate caches. Run the applicable
+optional target and axiom audit locally when its proofs change; a default
+build alone does not validate them. Preserve labels separating checked
+components, the full cover, and an unconditional literal-count endpoint.
+The final audit must type-check the actual unconditional dyadic and
+cumulative statements and inspect their proof axioms before writing its
+report. Run `scripts/test_numerical_certificate_audit.py` after the optional
+target is built; it requires the genuine audit to pass before rejecting a
+conditional replacement without a success report. Normal CI runs only the
+fast build-boundary and scheduler regressions. Failed or changed-input runs
+must remove stale success markers; partial jobs cannot claim a full result.
+The current certificate work stays in this repository; an upstream PR is no
+longer requested. See `docs/numerical-certificate.md` and its JSON metadata.
+
+Use `python3 scripts/verify_numerical_certificate.py --jobs 4` for a cold
+complete-cover build. It bounds concurrent heavy compiler processes and
+retains each finished group's Lake artifacts. Small kernel reductions and
+proved child-box equalities keep peak memory bounded; do not replace these
+with one giant reduction of the entire tree. The driver records its live
+process and progress and rejects an input digest change during the run.
+Inspect that process before restarting; preserve completed artifacts. Keep
+proof inputs stable while a verification run is active. Documentation outside
+the input digest may be updated without interrupting it.
+
+The README's `Proved Zero-Free Region` is the first section after the introduction.
 Keep its mathematics in compact, readable display-math boxes using
 `\boxed{\begin{gathered} ... \end{gathered}}` inside GitHub-supported math
 blocks. Prefer fenced `math` blocks: they preserve TeX line breaks and
@@ -1810,6 +1933,28 @@ MathML renderer omits the `\boxed` border.
 Show only the current proved union, with a direct Lean proof link. An
 eventual component must state that its coefficient-dependent threshold is
 unevaluated unless an actual numerical threshold has been proved.
+
+Keep the colour comparison graph prominent at the start of `Proved Zero-Free
+Region`. Its source annotations, colours and plotting ranges live in
+`docs/zero-free-regions/metadata.json`. `scripts/ExportZeroFreePlot.lean`
+checks the numerical expression trees against the actual imported width
+definitions, the starting height and exact comparison endpoints. Run it after
+the ordinary Lean build, then use the pinned environment in
+`scripts/requirements-plots.txt` with `scripts/build_zero_free_plot.py`.
+Commit the generated SVG, formula export and audit together. Do not edit
+generated curves or copy their constants into a second plotting formula.
+Update the checked formula interface when the proved region changes; its
+endpoint must match the default proof-status theorem. Preserve `log(abs(t)+2)`
+in the Gaussian curve, the exact crossover and ceiling, open/closed edges,
+and the distinction between inspected and merely reported external results.
+Never draw an eventual region from an invented finite starting height. The
+overview must show heights where the external benchmark is stronger as well
+as the magnified comparison interval; the graph does not establish a world
+record or import an external analytic proof. Ordinary CI and pre-commit run
+the exporter and `--check` to reject stale artifacts, without invoking the
+optional numerical certificate. The GitHub README renderer check must also
+verify the section title, graph placement, image load, enlargement link and
+desktop/mobile fit. See `docs/zero-free-regions/README.md` for reproduction.
 
 Keep benchmark details in `docs/zero-free-literature-frontier.md`, linked
 from the compact zero-free section. Record source version, theorem/equation,
@@ -1858,8 +2003,14 @@ The repository history is the durable record of verified progress. Enforce
 this regime yourself; do not rely on the user to request individual commits,
 pushes, or CI checks.
 
-- Begin a new slice only from a clean worktree whose current `HEAD` has a
-  successful GitHub Actions run with exactly the same full commit SHA.
+- The user authorized parallel theorem development and CI on 2026-09-13,
+  until further notice. Continue local work while CI checks a committed
+  snapshot; keep verification and publication claims attached to that exact
+  SHA. This supersedes earlier instructions to wait before starting a slice.
+- The user also authorized committing and pushing all accumulated work once
+  the complete numerical certificate and its optional cached CI workflow are
+  ready. Preserve the running verifier's frozen inputs until it finishes;
+  partial cover verification is not readiness of the literal-count endpoint.
 - Keep one coherent mathematical slice per commit. Include infrastructure or
   documentation changes needed by that theorem advance. Do not mix unrelated
   cleanup into the slice.
@@ -1872,9 +2023,9 @@ pushes, or CI checks.
   that fact in the handoff.
 - Push each passing commit promptly, record its full SHA, locate the workflow
   run whose `headSha` is exactly that SHA, and require a `success` conclusion.
-- While exact-SHA CI is pending, do not start or commit the next slice. If CI
-  fails, work only on repairing that same slice, rerun every affected local
-  gate, push the repair as a new commit, and verify the replacement SHA.
+- While exact-SHA CI is pending, continue local proof work. If CI fails,
+  prioritize its repair, preserve later local work, rerun affected gates and
+  verify the repair commit. Do not report a pending or failed SHA as green.
 - Progress reports and handoffs must distinguish local success from remote
   verification and should cite both the exact commit SHA and CI run number.
 
@@ -1938,11 +2089,12 @@ another commit. After pushing:
 1. Record `git rev-parse HEAD`.
 2. Locate the GitHub Actions run whose `headSha` is exactly that value.
 3. Wait for it to finish and require conclusion `success`.
-4. Confirm the worktree is clean before starting the next proof slice.
+4. Record that the checked snapshot is green. Later local changes still
+   require their own gates before being committed.
 
 If CI fails, repair the same slice, rerun every affected local gate, push the
-repair, and verify the new exact commit. Never stack a new mathematical slice
-on an unverified commit.
+repair, and verify the new exact commit. The user permits continued local
+mathematical work during CI; preserve exact-SHA status throughout.
 
 ## Research discipline
 

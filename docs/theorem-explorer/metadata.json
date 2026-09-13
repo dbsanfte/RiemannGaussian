@@ -6,7 +6,7 @@
   "endpoints": [
     {
       "id": "explicit-band",
-      "label": "Improved explicit curve · no upper height ceiling",
+      "label": "Complete explicit region · all heights",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -17,7 +17,256 @@
         "gaussianPhaseBandToolkit",
         "actualRegion"
       ],
-      "documentation": "docs/zeta-gaussian-retained-region.md"
+      "documentation": "docs/zeta-unified-zero-free.md"
+    },
+    {
+      "id": "coverage",
+      "label": "Coverage audit · Gaussian and older reserve retained",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "unifiedGaussianTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "unifiedReserveTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "unifiedLowHeightTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "unifiedFormulaTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "unifiedRadiusTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "unifiedAnalyticTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "actualRegion"
+      ],
+      "documentation": "docs/zeta-unified-zero-free.md"
+    },
+    {
+      "id": "expanded-cost",
+      "label": "Smaller dilations · tenfold width and radius gain",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "expandedCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "expandedSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "expandedComponentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "expandedContainmentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "expandedTenfoldTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "expandedAnalyticTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "expandedRadiusTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "expandedCostScope"
+      ],
+      "documentation": "docs/zeta-gaussian-region-union.md"
+    },
+    {
+      "id": "vk-phase",
+      "label": "Vinogradov–Korobov · centered Gaussian resonance",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSignedExpansionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkLiteralPowerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkWeightedPhaseErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkBoxPhaseErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkWeightedGramTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkMomentCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkMeanValueCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkMeanValueCubeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFirstMeanValueTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkShiftIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkBlockIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkBoundaryMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkComplexApproximationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCoupledApproximationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDampingMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDampedFeatureTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkShiftedGramTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkShiftedCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkWeightedMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkTwoHolderTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPolynomialPairingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPolynomialMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkIntervalMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGaussianPoissonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGaussianGramTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGaussianDualTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGaussianActualTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGaussianSpatialSeriesTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGaussianFibreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGaussianResonanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGaussianDualResonanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExactCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkActualResonanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGaussianTailTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGaussianDistanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFiniteResonanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkActualEnvelopeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCenteredIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCenteredGramTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCenterCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkActualQuarterTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "vkScope"
+      ],
+      "documentation": "docs/vinogradov-korobov-framework.md"
     },
     {
       "id": "retained-cost",
@@ -505,7 +754,7 @@
     },
     {
       "id": "comparison",
-      "label": "Exact benchmark comparison",
+      "label": "Extended benchmark comparison",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -530,6 +779,22 @@
         [
           "gaussianPhaseBandToolkit",
           "comparisonEqualityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "expandedComparisonFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "expandedComparisonVkTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "expandedComparisonIntermediateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "expandedComparisonFordTheorem"
         ]
       ],
       "scopePath": [
@@ -663,7 +928,8 @@
         "ShiftedDerivative",
         "Uniform",
         "ZetaDyadic",
-        "ZetaFinite"
+        "ZetaFinite",
+        "Vinogradov"
       ]
     },
     {
@@ -836,6 +1102,23 @@
       ]
     },
     {
+      "id": "numerics",
+      "label": "Certified numerical bounds",
+      "color": "#8ec8bb",
+      "description": "Exact interval bounds, phase tables, coupled affine supports and finite-cover verifiers. Candidate certificate obligations remain explicit.",
+      "modulePrefixes": [
+        "Certified",
+        "CertificateData.",
+        "CorrelationAffineBox",
+        "CorrelationConvexEnclosure",
+        "CorrelationLinearEnclosure",
+        "CorrelationQuadraticEnclosure",
+        "ComplexApproximateOrbit",
+        "TrigonometricLinearEnclosure",
+        "UniformBlockIndex"
+      ]
+    },
+    {
       "id": "library",
       "label": "Lean & mathlib",
       "color": "#a2a9b7",
@@ -883,7 +1166,37 @@
     "ZetaSquarefreeVaughanProjection": "euler",
     "ZetaSquarefreeVaughanBudget": "euler",
     "ZetaVaughanLogAverage": "euler",
-    "ZetaSquarefreeVaughanLogSource": "euler"
+    "ZetaSquarefreeVaughanLogSource": "euler",
+    "MontgomeryTaylorAdaptiveCell": "numerics",
+    "MontgomeryTaylorAdaptivePhase": "numerics",
+    "MontgomeryTaylorAnchorBounds": "numerics",
+    "MontgomeryTaylorBoxCertificate": "numerics",
+    "MontgomeryTaylorCurvatureCertificate": "numerics",
+    "MontgomeryTaylorKernelDerivatives": "numerics",
+    "MontgomeryTaylorKernelEnclosure": "numerics",
+    "MontgomeryTaylorNumericalCell": "numerics",
+    "MontgomeryTaylorNumericalKernel": "numerics",
+    "MontgomeryTaylorPhaseEnclosure": "numerics",
+    "MontgomeryTaylorPhaseGrid": "numerics",
+    "MontgomeryTaylorPhaseTable": "numerics",
+    "MontgomeryTaylorPointBounds": "numerics",
+    "MontgomeryTaylorRangeTable": "numerics",
+    "MontgomeryTaylorSevenWindowForms": "numerics",
+    "MontgomeryTaylorSevenWindowModel": "numerics",
+    "MontgomeryTaylorSevenWindowParameters": "numerics",
+    "ConsecutiveBlockPacking": "finite",
+    "MontgomeryTaylorFastCurvature": "numerics",
+    "MontgomeryTaylorIntegerCoordinates": "numerics",
+    "MontgomeryTaylorIntegerBoxCertificate": "numerics",
+    "MontgomeryTaylorIntegerCover": "numerics",
+    "ZetaGaussianExpandedScale": "heat",
+    "ZetaGaussianExpandedCost": "heat",
+    "ZetaGaussianExpandedSource": "heat",
+    "ZetaGaussianExpandedRegion": "region",
+    "ZetaGaussianRegionUnion": "region",
+    "ZetaSquarefreeGaussianRegionUnion": "arithmetic",
+    "ZetaUnifiedZeroFree": "region",
+    "ZetaSquarefreeUnifiedRegion": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
@@ -1406,26 +1719,6 @@
       "overview": true,
       "documentation": "docs/zeta-gaussian-multiplicity-depth.md"
     },
-    "RiemannGaussian.ZetaGaussianBandExclusion.nonvanishing": {
-      "label": "Literal ζ(s) ≠ 0",
-      "overview": true
-    },
-    "RiemannGaussian.ZetaGaussianBandExclusion.exact_margin": {
-      "label": "Exact family closes the gap",
-      "overview": true
-    },
-    "RiemannGaussian.ZetaGaussianBandExclusion.family_margin": {
-      "label": "Contradiction for every eligible family",
-      "overview": true
-    },
-    "RiemannGaussian.ZetaGaussianBandExclusion.selected_source_lower": {
-      "label": "A nearby zero costs ≥ 48000",
-      "overview": true
-    },
-    "RiemannGaussian.ZetaGaussianBandBudget.budget_le": {
-      "label": "Complete cost ≤ 47500",
-      "overview": true
-    },
     "RiemannGaussian.GaussianStripProfile.source_lower": {
       "label": "Gaussian source ≥ 152000",
       "overview": true
@@ -1506,11 +1799,6 @@
     "RiemannGaussian.LogLogDerivativeSchedule.pow_log_div_width_tendsto": {
       "label": "Joint order / height power saving",
       "overview": true
-    },
-    "RiemannGaussian.ZetaGaussianBandFrontier.nonvanishing_and_comparison": {
-      "label": "Actual exclusion and strict comparison",
-      "overview": true,
-      "documentation": "docs/zero-free-literature-frontier.md"
     },
     "RiemannGaussian.ZetaGaussianBandFrontier.strict_comparison_interval_iff": {
       "label": "Exact open-to-closed improvement interval",
@@ -1777,16 +2065,6 @@
       "overview": true,
       "documentation": "docs/zeta-gaussian-retained-region.md"
     },
-    "RiemannGaussian.ZetaGaussianRetainedRegion.exact_strip_min": {
-      "label": "Improved explicit zero-free curve",
-      "overview": true,
-      "documentation": "docs/zeta-gaussian-retained-region.md"
-    },
-    "RiemannGaussian.ZetaGaussianRetainedRegion.nonvanishing": {
-      "label": "Literal zeta nonvanishing on the improved closed edge",
-      "overview": true,
-      "documentation": "docs/zeta-gaussian-retained-region.md"
-    },
     "RiemannGaussian.ZetaGaussianRetainedRegion.explicitWidth_eq_min": {
       "label": "Elementary formula with the full denominator",
       "overview": true,
@@ -1807,11 +2085,6 @@
       "overview": true,
       "documentation": "docs/zeta-gaussian-retained-region.md"
     },
-    "RiemannGaussian.ZetaGaussianRetainedRegion.union_with_eventual": {
-      "label": "Maximum with the existing eventual component",
-      "overview": true,
-      "documentation": "docs/zeta-gaussian-retained-region.md"
-    },
     "RiemannGaussian.SquarefreeGaussianRetainedRegion.window_margin": {
       "label": "The complete doubled window has the improved margin",
       "overview": true,
@@ -1819,11 +2092,6 @@
     },
     "RiemannGaussian.SquarefreeGaussianRetainedRegion.analyticOnNhd_response": {
       "label": "Actual squarefree quotient on the larger closed disc",
-      "overview": true,
-      "documentation": "docs/zeta-gaussian-retained-region.md"
-    },
-    "RiemannGaussian.SquarefreeGaussianRetainedRegion.exists_response_bound": {
-      "label": "All marked responses keep the signed prime envelope",
       "overview": true,
       "documentation": "docs/zeta-gaussian-retained-region.md"
     },
@@ -1939,6 +2207,295 @@
     "RiemannGaussian.SquarefreeVaughanLogSource.tendsto_actual_riesz_band": {
       "label": "The actual composite Riesz band retains the full source",
       "documentation": "docs/zeta-vaughan-log-average.md"
+    },
+    "RiemannGaussian.ZetaGaussianExpandedCost.budget_le": {
+      "label": "Complete paid cost for q ≥ 9/100",
+      "overview": true,
+      "family": "heat",
+      "documentation": "docs/zeta-gaussian-region-union.md"
+    },
+    "RiemannGaussian.ZetaGaussianExpandedSource.selected_source_lower": {
+      "label": "The selected source survives smaller dilation",
+      "overview": true,
+      "family": "heat",
+      "documentation": "docs/zeta-gaussian-region-union.md"
+    },
+    "RiemannGaussian.ZetaGaussianExpandedRegion.exact_strip_min": {
+      "label": "New literal zero-free component",
+      "overview": true,
+      "family": "region",
+      "documentation": "docs/zeta-gaussian-region-union.md"
+    },
+    "RiemannGaussian.ZetaGaussianRegionUnion.exact_strip": {
+      "label": "Both Gaussian curves form one proved union",
+      "overview": true,
+      "family": "region",
+      "documentation": "docs/zeta-gaussian-region-union.md"
+    },
+    "RiemannGaussian.ZetaGaussianRegionUnion.tenfold_previous_le": {
+      "label": "At least tenfold width for 1 ≤ L ≤ 64",
+      "overview": true,
+      "family": "region",
+      "documentation": "docs/zeta-gaussian-region-union.md"
+    },
+    "RiemannGaussian.SquarefreeGaussianRegionUnion.tenfold_radius_gain": {
+      "label": "Tenfold excess Cauchy radius at moderate height",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-gaussian-region-union.md"
+    },
+    "RiemannGaussian.VinogradovKorobovLogPhase.logarithm_eq_polynomial_add_remainder": {
+      "label": "Exact signed logarithmic expansion",
+      "overview": true,
+      "family": "oscillation",
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovKorobovBilinearPhase.weighted_sum_error_le": {
+      "label": "Only the coupled phase perturbation is bounded",
+      "overview": true,
+      "family": "oscillation",
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovMeanValue.weighted_gram": {
+      "label": "Full weighted complex frequency-collision form",
+      "overview": true,
+      "family": "oscillation",
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovMeanValue.moment_eq_collisionCount": {
+      "label": "Every even moment equals its exact tuple count",
+      "overview": true,
+      "family": "oscillation",
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovMeanValue.meanValue_eq_cube": {
+      "label": "The literal Vinogradov integral on the unit cube",
+      "overview": true,
+      "family": "oscillation",
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovMeanValue.meanValue_one": {
+      "label": "The first Vinogradov moment is exactly N",
+      "overview": true,
+      "family": "oscillation",
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.ZetaUnifiedZeroFree.exact_strip": {
+      "label": "Complete explicit strip at every height",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaUnifiedZeroFree.nonvanishing_and_comparison": {
+      "label": "Full region and strict benchmark comparison",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaUnifiedZeroFree.gaussian_width_le": {
+      "label": "All Gaussian coverage retained",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaUnifiedZeroFree.reserve_width_le": {
+      "label": "All signed-pole/reserve coverage retained",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaUnifiedZeroFree.width_eq_reserve_of_low_height": {
+      "label": "No low-height coverage loss",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaUnifiedZeroFree.width_eq_max": {
+      "label": "Complete elementary width formula",
+      "overview": true
+    },
+    "RiemannGaussian.SquarefreeUnifiedRegion.gaussian_radius_le": {
+      "label": "Every Gaussian radius retained",
+      "overview": true
+    },
+    "RiemannGaussian.SquarefreeUnifiedRegion.analyticOnNhd_response": {
+      "label": "Full arithmetic disc from center height three",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovBlock.weighted_shift_identity": {
+      "label": "Complex shift weights retain the exact boundary",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovBlock.averaged_dirichlet_identity": {
+      "label": "The actual Dirichlet block equals its coupled shift average",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovBlock.boundaryBlock_norm_le": {
+      "label": "Boundary cost uses the actual mean shifts",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovBlock.block_sub_approximation_le": {
+      "label": "The complex polynomial approximation has an explicit error",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovBlock.dirichlet_norm_le_coupled": {
+      "label": "Keep outer phases and signed boundary under one norm",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovDamping.abel_length_mass": {
+      "label": "Abel error pays the exact damping mass",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovDamping.feature_approximation_error_le": {
+      "label": "Approximation reaches the literal damped zeta terms",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovShiftedMoment.weightedShift_eq_integral": {
+      "label": "The entire shifted complex Gram coefficient",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovShiftedMoment.monomial_shift_le_meanValue": {
+      "label": "Every shifted monomial count is bounded by the homogeneous moment",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovShiftedMoment.weighted_moment_le": {
+      "label": "Bounded complex weights obey the even-moment majorant",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovMomentReduction.two_holder_bound": {
+      "label": "Two Hölder steps retain joint support and explicit phase weights",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovMoment.polynomial_eq_pairing": {
+      "label": "The exact product polynomial is its Fourier pairing",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovMoment.polynomial_bound": {
+      "label": "The actual product sum enters the moment reduction",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovMoment.interval_bound": {
+      "label": "The interval reduction uses the literal Vinogradov integral",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovGaussianKernel.lattice_poisson": {
+      "label": "The complete multivariate Gaussian Poisson identity",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovGaussianKernel.energy_eq_gram": {
+      "label": "Gaussian smoothing retains every signed phase-difference cross term",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovGaussianKernel.dualMoment_le_gaussian_gram": {
+      "label": "The dual moment keeps its exact joint-support Gaussian cost",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovMoment.interval_gaussian_bound": {
+      "label": "The actual interval product sum reaches the signed Gaussian Gram bound",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovGaussianKernel.summable_kernel_translates": {
+      "label": "Every spatial Gaussian translate is genuinely summable",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovGaussianResonance.momentGram_eq_fibres": {
+      "label": "Every signed power-sum difference fibre survives exactly",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovGaussianResonance.momentGram_re_le": {
+      "label": "The homogeneous moment controls each complete resonance fibre",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovGaussianResonance.dualMoment_le_moment_resonance": {
+      "label": "The dual moment reaches the full joint resonance sum",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovMoment.coordinates_eq_linearSample": {
+      "label": "Actual coefficients multiply the full integer monomial vector",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovMoment.interval_resonance_bound": {
+      "label": "The actual product sum reaches two moments and joint Gaussian resonance",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovGaussianBounds.kernel_le_tailEnvelope": {
+      "label": "Every translated Gaussian tail has an explicit uniform envelope",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovGaussianBounds.kernel_le_distance": {
+      "label": "Integer phase distance gives explicit Gaussian suppression",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovGaussianBounds.resonanceSum_le_envelope": {
+      "label": "The complete resonance sum has a finite exponential envelope",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovMoment.interval_envelope_bound": {
+      "label": "The actual product sum reaches a finite joint phase envelope",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovGaussianCentering.sample_eq_centered": {
+      "label": "Frequency centering preserves the whole complex sum by exact phase twists",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovGaussianCentering.dualMoment_le_centered_gram": {
+      "label": "The Gaussian may be centered while retaining its signed twisted Gram form",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovMoment.interval_centered_cost_le_quarter": {
+      "label": "The canonical integer center cuts the Gaussian exponent cost to at most one quarter",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovKorobovMoment.interval_quarter_envelope_bound": {
+      "label": "The actual product sum receives the quartered exponent cost",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianExpandedComparison.nonvanishing_and_comparison": {
+      "label": "Complete region and strict benchmark comparison through log-height 480000",
+      "documentation": "docs/zero-free-literature-frontier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianExpandedComparison.width_lower": {
+      "label": "The complete width exceeds 18/(25 L) throughout the extended band",
+      "documentation": "docs/zero-free-literature-frontier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianExpandedComparison.vk_lt_floor": {
+      "label": "Cube the full VK denominator; cover every constant at least 48",
+      "documentation": "docs/zero-free-literature-frontier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianExpandedComparison.intermediate_lt_floor": {
+      "label": "The full intermediate expression is below the extended comparison floor",
+      "documentation": "docs/zero-free-literature-frontier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaGaussianExpandedComparison.ford_lt_floor": {
+      "label": "The full Ford family is below the extended comparison floor",
+      "documentation": "docs/zero-free-literature-frontier.md",
+      "overview": true
     }
   }
 }

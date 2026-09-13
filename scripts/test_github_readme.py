@@ -55,6 +55,13 @@ def run(output, published):
         try:
             for width in (1280, 390):
                 page = browser.new_page(viewport={"width": width, "height": 1000})
+                # The working graph need not have been published yet. Serve
+                # precisely this local image in the otherwise live GitHub DOM.
+                # Published mode loads the image from the actual commit.
+                if not published:
+                    page.route("**/docs/zero-free-regions/comparison.svg*", lambda route:
+                               route.fulfill(path=str(ROOT / "docs/zero-free-regions/comparison.svg"),
+                                             content_type="image/svg+xml"))
                 # GitHub can keep background requests open after the README is
                 # ready. Wait for the actual DOM and math below, not network idle.
                 response = page.goto(url, wait_until="domcontentloaded", timeout=60000)
@@ -79,6 +86,28 @@ def run(output, published):
                     }""", rendered)
                     selector = "#github-readme-working-preview"
                     article = page.locator(selector)
+                assert article.locator("h2").first.inner_text().strip() == "Proved Zero-Free Region"
+                plot = article.locator("img[alt^='Zero-free region comparison:']")
+                assert plot.count() == 1
+                assert "docs/zero-free-regions/comparison.svg" in plot.locator("..").get_attribute("href")
+                plot.evaluate("e => e.scrollIntoView({block: 'center'})")
+                page.wait_for_function("""selector => {
+                    const e = document.querySelector(selector).querySelector(
+                        "img[alt^='Zero-free region comparison:']");
+                    return e && e.complete && e.naturalWidth > 0;
+                }""", arg=selector)
+                placement = plot.evaluate("""e => {
+                    const article = e.closest('article');
+                    const headings = article.querySelectorAll('h2');
+                    const after = n => Boolean(e.compareDocumentPosition(n) & Node.DOCUMENT_POSITION_FOLLOWING);
+                    return {width: e.clientWidth, available: article.clientWidth,
+                        naturalWidth: e.naturalWidth, afterHeading: !after(headings[0]),
+                        beforeNextHeading: after(headings[1]),
+                        beforeFormula: after(article.querySelector('math-renderer'))};
+                }""")
+                assert 0 < placement["width"] <= placement["available"] + 1, placement
+                assert placement["afterHeading"] and placement["beforeNextHeading"] and placement["beforeFormula"], placement
+                page.screenshot(path=str(output / f"zero-free-graph-{width}.png"))
                 math = article.locator("math-renderer")
                 expected = len(re.findall(r"^```math$", readme, re.M))
                 assert expected > 0
@@ -124,6 +153,7 @@ def run(output, published):
                 checks.append({"width": width, "mathBlocks": math.count(), "boxes": boxes,
                                "errors": errors, "sizes": sizes, "frameBorders": frames,
                                "frameSizes": tables,
+                               "zeroFreeGraph": placement,
                                "explorerLinks": "valid"})
                 page.close()
         finally:
