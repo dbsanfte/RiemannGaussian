@@ -88,18 +88,19 @@ Zoom, expand branches, inspect theorem metadata and open exact Lean source lines
 
 ## Current Direction
 
-Attack the surviving squarefree Vaughan band at the larger growing cutoffs. Independent estimates now remove all nonsquarefree terms while retaining the original zero source, Möbius signs and product phases. The next target is a cofinal real lower bound for the remaining signed sum, using its coprime factor and divisor-parity structure. RH remains open.
+Attack the full signed squarefree Riesz band obtained from the exact Vaughan cutoff average. Preserve its Möbius reflection parity, ordinary-prime correction and complex kernel phases. The averaging error is paid; the remaining target is an independent cofinal lower bound above the negative zero source. RH remains open.
 
 ## Latest Update
 
-**The entire nonsquarefree band now has proved independent decay.**
-Lean removes every nonsquarefree integer from the original Vaughan band at
-`D_N=floor(u^(-N)/(N+1))`, for every fixed filter, `0<u<1` and `abs(y)>1`.
-At a hypothetical right-half zero, the squarefree band retains the full
-negative-multiplicity source. Its independent signed lower bound remains
+**The logarithmic cutoff average and its parity structure are proved.**
+Lean evaluates the actual floor-cutoff integral as one signed Möbius divisor
+sum, with its prime correction and normalization intact. Its full original
+finite band retains the zero source with independently vanishing reduction
+error. Divisor reflection proves exact midpoint cancellation and opposite
+profile edges for odd Möbius parity. The independent signed bound remains
 open; the zero-free region is unchanged.
-[Lean proof](RiemannGaussian/ZetaSquarefreeVaughanProjection.lean)
-· [Exact identities, bounds and scope](docs/zeta-squarefree-vaughan-projection.md).
+[Lean proof](RiemannGaussian/ZetaSquarefreeVaughanLogSource.lean)
+· [Exact average, parity and remaining obstruction](docs/zeta-vaughan-log-average.md).
 
 ## Notable Formalisations
 

@@ -220,10 +220,15 @@ def run(output):
             assert "entire nonsquarefree contribution" in page.locator("#scope-text").inner_text()
             assert "signed lower bound remains open" in page.locator("#scope-text").inner_text()
             vaughan_roots = page.evaluate("PROOF_VIEW.endpoint.roots")
-            assert len(vaughan_roots) == 14
+            assert len(vaughan_roots) == 25
+            assert "physical and divisor logarithms cancel" in page.locator("#scope-text").inner_text()
+            assert "every moving finite probability mixture" in page.locator("#scope-text").inner_text()
+            assert "complete measurable finite cell partition" in page.locator("#scope-text").inner_text()
+            assert "explicit ordinary-prime endpoint" in page.locator("#scope-text").inner_text()
+            assert "This reflection depends on n" in page.locator("#scope-text").inner_text()
             for theorem in vaughan_roots:
                 assert page.locator(f'[data-node="{theorem}"]').count()
-            checks.append("Vaughan endpoint retains the larger cutoff budget, complete squarefree projection, independent nonsquarefree decay and conditional source")
+            checks.append("Vaughan endpoint retains the full budget, exact floor average, prime correction, Möbius reflection and conditional Riesz source")
             page.locator("#endpoint").select_option("prime-energy")
             assert "normalized energy decay at the current dilation is proved" in page.locator("#scope-text").inner_text()
             assert "source-beating bound on the signed boundary budget remains open" in page.locator("#scope-text").inner_text()

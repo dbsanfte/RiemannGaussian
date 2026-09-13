@@ -1612,6 +1612,46 @@ sampling constant may depend on the fixed ordinate and coefficient budget.
 
 ## Proof-slice workflow
 
+`docs/zeta-vaughan-log-average.md` now evaluates the genuine logarithmic
+Vaughan floor-cutoff integral, with its measurable finite cell partition,
+unit probability mass and full von Mangoldt endpoint. The same convolution
+identity holds for every arithmetic profile. At
+`L_N=log((floor(u^(-N)/(N+1))+2)^2)`, every actual cell has square-root
+product budget at most `2*(D_N+2)`, and the complete normalized average
+budget independently tends to zero. The exact composite squarefree Riesz
+band retains the original conditional source `-m_rho`. Completing its
+prime deletion restores `log(p)*min(L,log(p))/L`; keep this correction.
+
+For nonunit squarefree composites the full Riesz profile obeys
+`R_(log(n)-L)(n)=mu(n)*R_L(n)`. Odd parity gives exact midpoint cancellation
+and opposite endpoint values. This is a structural sign identity, not an
+independent bound for the full signed band. The reflected cutoff depends
+on `n`; replacing the common length by `log(n)/2` inside the source sum
+requires a new source-error estimate. The current mixture theorem keeps
+its weights independent of the tested integer. The cofinal signed floor,
+RH and any further zero-free improvement remain open. No historical
+novelty claim is made for these convolution identities.
+
+`docs/zeta-squarefree-vaughan-budget.md` now keeps the physical and divisor
+logarithms together before estimating the projected head. Their leading
+local derivatives cancel exactly; the remaining prime incidence contains
+two local Euler atoms and has a summable prime cost after averaging.
+For every bounded complex divisor-weight family, the complete filtered
+head has bound `C_y*sqrt(U)*sum norm(p_k)`, with no moment-order or cutoff
+logarithm factor. The entire projected small part has the original
+`C_y*sqrt(U+1)*sqrt(V+1)*sum norm(p_k)` budget for every cutoff pair.
+Independent nonsquarefree deletion now holds for all schedules whose
+normalized product budget vanishes. Every moving finite probability
+mixture in `(U+1)*(V+1)<=(D_N+1)^2`, with
+`D_N=floor(u^(-N)/(N+1))`, preserves the original conditional source in
+the full squarefree finite band. Keep the exact weights, product phases,
+unit total mass, squarefree support and budget. This does not cover
+arbitrary signed mixtures, moving filters without a coefficient budget,
+height-uniform constants, or the simultaneous undamped symmetric cutoff.
+The exact logarithmic hyperbola average is now compiled in the subsequent
+modules above; its independent signed floor remains open.
+No larger zero-free region or historical novelty is claimed.
+
 `docs/zeta-squarefree-vaughan-projection.md` now removes the entire
 nonsquarefree part of the original finite Vaughan band at
 `D_N=floor(u^(-N)/(N+1))`, for every fixed polynomial, `0<u<1` and

@@ -150,13 +150,14 @@ distinguishes this proved transport from the still-open independent
 cofinal signed floor.
 
 The **Vaughan factors** endpoint records the classical arithmetic identity,
-cofactor additivity, prime-density budget, larger cutoff schedule and full
-conditional source. Five additional roots expose the averaged reciprocal
-Euler correction, exact projected convolution, projected cross-term decay,
-independent deletion of the entire nonsquarefree band and the surviving
-squarefree source. The [projection note](zeta-squarefree-vaughan-projection.md)
-keeps the open cofinal signed floor explicit. The default zero-free endpoint
-is unchanged.
+independent cutoff budget, squarefree projection and full conditional source.
+Its exact logarithmic average now includes the actual measurable floor cells,
+unit mass, retained prime correction and independently paid average budget.
+The [averaging note](zeta-vaughan-log-average.md) also records the complete
+Möbius reflection and opposite profile edges. These structural identities
+retain the open cofinal signed floor as a separate obligation; the source
+theorem does not authorize an integer-dependent midpoint cutoff. The default
+zero-free endpoint is unchanged.
 
 ## Regenerate and check
 

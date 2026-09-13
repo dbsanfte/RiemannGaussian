@@ -56,7 +56,7 @@
     },
     {
       "id": "vaughan-factors",
-      "label": "Vaughan factors · squarefree band, full zero source",
+      "label": "Vaughan factors · exact Riesz average and parity",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -113,13 +113,57 @@
         [
           "gaussianPhaseBandToolkit",
           "vaughanSquarefreeSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanLogCancellationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanLogBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanProjectedBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanGeneralDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanMixtureSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanProfileTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanAverageTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanReflectionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanOppositeEdgesTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanPrimeEndpointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vaughanRieszSourceTheorem"
         ]
       ],
       "scopePath": [
         "gaussianPhaseBandToolkit",
         "vaughanScope"
       ],
-      "documentation": "docs/zeta-squarefree-vaughan-projection.md"
+      "documentation": "docs/zeta-vaughan-log-average.md"
     },
     {
       "id": "lattice-carrier",
@@ -836,7 +880,10 @@
     "ZetaSquarefreeGaussianRetainedRegion": "arithmetic",
     "ZetaVaughanReduction": "euler",
     "ZetaVaughanCutoffBudget": "euler",
-    "ZetaSquarefreeVaughanProjection": "euler"
+    "ZetaSquarefreeVaughanProjection": "euler",
+    "ZetaSquarefreeVaughanBudget": "euler",
+    "ZetaVaughanLogAverage": "euler",
+    "ZetaSquarefreeVaughanLogSource": "euler"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
@@ -1848,6 +1895,50 @@
     "RiemannGaussian.SquarefreeVaughanProjection.tendsto_actual_squarefree_band": {
       "label": "The surviving squarefree band retains the full zero source",
       "documentation": "docs/zeta-squarefree-vaughan-projection.md"
+    },
+    "RiemannGaussian.SquarefreeVaughanBudget.markedLogResponse_eq": {
+      "label": "Keep the physical and divisor logarithms together",
+      "documentation": "docs/zeta-squarefree-vaughan-budget.md"
+    },
+    "RiemannGaussian.SquarefreeVaughanBudget.exists_head_filter_bound": {
+      "label": "All bounded divisor weights have square-root logarithmic cost",
+      "documentation": "docs/zeta-squarefree-vaughan-budget.md"
+    },
+    "RiemannGaussian.SquarefreeVaughanBudget.exists_projected_small_budget_bound": {
+      "label": "Pay the whole squarefree small part for every cutoff pair",
+      "documentation": "docs/zeta-squarefree-vaughan-budget.md"
+    },
+    "RiemannGaussian.SquarefreeVaughanBudget.tendsto_nonsquarefree_band_of_budget": {
+      "label": "Independent nonsquarefree deletion for every paid schedule",
+      "documentation": "docs/zeta-squarefree-vaughan-budget.md"
+    },
+    "RiemannGaussian.SquarefreeVaughanBudget.tendsto_actual_hyperbolic_mixture_band": {
+      "label": "Every admissible finite probability mixture retains the source",
+      "documentation": "docs/zeta-squarefree-vaughan-budget.md"
+    },
+    "RiemannGaussian.VaughanLogAverage.sum_profile_eq": {
+      "label": "Every arithmetic profile retains the complete signed product",
+      "documentation": "docs/zeta-vaughan-log-average.md"
+    },
+    "RiemannGaussian.VaughanLogAverage.logarithmicAverage_eq_riesz": {
+      "label": "Exact floor average with its prime-power endpoint",
+      "documentation": "docs/zeta-vaughan-log-average.md"
+    },
+    "RiemannGaussian.VaughanLogAverage.riesz_reflection": {
+      "label": "Divisor reflection retains full Möbius parity",
+      "documentation": "docs/zeta-vaughan-log-average.md"
+    },
+    "RiemannGaussian.VaughanLogAverage.riesz_opposite_edges": {
+      "label": "Odd parity gives two opposite exact profile edges",
+      "documentation": "docs/zeta-vaughan-log-average.md"
+    },
+    "RiemannGaussian.SquarefreeVaughanLogSource.coefficient_eq_completed_with_prime": {
+      "label": "Completing the divisor sum restores ordinary primes",
+      "documentation": "docs/zeta-vaughan-log-average.md"
+    },
+    "RiemannGaussian.SquarefreeVaughanLogSource.tendsto_actual_riesz_band": {
+      "label": "The actual composite Riesz band retains the full source",
+      "documentation": "docs/zeta-vaughan-log-average.md"
     }
   }
 }
