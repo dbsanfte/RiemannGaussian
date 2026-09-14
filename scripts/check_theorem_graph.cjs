@@ -3,7 +3,7 @@ const fs = require("node:fs"), vm = require("node:vm"), zlib = require("node:zli
 const assert = require("node:assert/strict");
 const crypto = require("node:crypto");
 const core = require("../docs/theorem-explorer/graph-core.js");
-const base = "docs/theorem-explorer/", context = {window: {}};
+const base = (process.argv[2] || "docs/theorem-explorer").replace(/\/$/, "") + "/", context = {window: {}};
 vm.runInNewContext(fs.readFileSync(base + "data.js", "utf8"), context);
 const data = JSON.parse(JSON.stringify(context.window.PROOF_DATA));
 const rawBytes = zlib.gunzipSync(fs.readFileSync(base + "lean-graph.json.gz"));

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "workflow": "https://github.com/dbsanfte/RiemannGaussian/actions/workflows/numerical_certificate.yml",
+  "runUrl": "https://github.com/dbsanfte/RiemannGaussian/actions/runs/34802730942",
+  "runId": 34802730942,
+  "revision": "d3476d4d6b97e954927b94e6b43846876586ccb2",
+  "conclusion": "success",
+  "inputSha256": "7049e4abb818982305ff0747a870b964f6d2d11589604dc3de8c82840954c53d",
+  "auditPath": "docs/numerical-certificate/hosted-audit.json",
+  "auditSha256": "10f99e892c979e1f9feff1961cdc5ec996ac0de2b5f8da237b3fa4de424c3c0c",
+  "artifactId": 10337910348,
+  "scope": "Complete optional target: all 21 data modules, 231 cover groups, unconditional literal dyadic and cumulative endpoints, complete transitive axiom audit and rejection of a conditional endpoint. Presentation CI is separate."
+}

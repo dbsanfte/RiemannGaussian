@@ -12,11 +12,22 @@ The closed theorems are
 `simpleCritical_6731_eventually`](../RiemannGaussian/External/Zeta23SevenWindowIntegerCertificate.lean).
 They have no remaining numerical, arithmetic or analytic premise.
 The complete optional verification also passed on hosted runners in
-[run 34786948164](https://github.com/dbsanfte/RiemannGaussian/actions/runs/34786948164),
-at source revision `fdd9c82b87c298302ac5f37560550c1eca11135b`. That run
+[run 34802730942](https://github.com/dbsanfte/RiemannGaussian/actions/runs/34802730942),
+at source revision `d3476d4d6b97e954927b94e6b43846876586ccb2`. That run
 checked all 21 data modules and 231 cover groups, assembled both literal
 endpoints, passed the transitive axiom audit, and rejected a conditional
 replacement without writing a success report.
+
+[![Numerical certificate verification](https://github.com/dbsanfte/RiemannGaussian/actions/workflows/numerical_certificate.yml/badge.svg)](https://github.com/dbsanfte/RiemannGaussian/actions/workflows/numerical_certificate.yml)
+
+### [Open the dedicated certificate theorem explorer](https://dbsanfte.github.io/RiemannGaussian/numerical-certificate/)
+
+[![Comparison of the proved certificate with two thirds and the pinned external coefficient](numerical-certificate/comparison.svg)](https://dbsanfte.github.io/RiemannGaussian/numerical-certificate/)
+
+The badge links to the live optional workflow. The successful run above and
+its [verification provenance](numerical-certificate/verification.json) identify
+the exact fully checked source and input fingerprint. Ordinary presentation
+CI is recorded separately by the explorer's deployment link.
 
 The exact coefficient before rounding is
 
@@ -27,7 +38,12 @@ C_* = \frac{5{,}180{,}000h-10{,}320}{5{,}160{,}013},
 
 Lean proves the strict enclosure
 `0.6731055996 < C_* < 0.6731055998` and a gain `C_* - h > 3/5000`
-over the pinned external Montgomery–Taylor baseline.
+over the pinned external Montgomery–Taylor baseline, approximately 67.25007%.
+This is the stronger coefficient in the
+[attributed Anthropic/Zeta23 source snapshot](../vendor/zeta23/UPSTREAM.md),
+beyond its headline two-thirds result. The gain of more than 0.06 percentage
+points compares the exact coefficient with that baseline; the rounded
+67.31% headline has a slightly smaller gain.
 [Exact comparison proofs](../RiemannGaussian/External/Zeta23SevenWindowTarget.lean).
 The exact-coefficient statement permits every positive epsilon; its strict
 margin above `6731/10000` pays that error and gives the eventual rational
@@ -121,12 +137,10 @@ memory, swap and disk space. A terminated verifier stops its owned compiler
 process group, records an interrupted verdict and removes success markers.
 The interruption regression also checks an actual spawned descendant.
 The first hosted attempt terminated during four concurrent anchor builds.
-The later complete hosted run passed with reduced concurrency. Its snapshot
-used serial elaboration throughout the project; the subsequent library
-configuration confines that setting to optional data. The certificate's
-Lean proof sources were unchanged by that scheduling correction. The hosted
-verdict remains attached to the exact revision above, with its own generated
-helper inventory and verification-input digest.
+The current complete hosted run passed with reduced concurrency and serial
+elaboration confined to optional data. Its source, declaration inventory
+and verification-input digest are recorded in the
+[hosted complete audit](numerical-certificate/hosted-audit.json).
 
 Cold checks are split across jobs because of the
 [six-hour GitHub-hosted job limit](https://docs.github.com/en/actions/reference/limits).
@@ -136,11 +150,12 @@ cache retention. The final job gathers those artifacts and checks
 the complete selected target again. Successful data or shard jobs are labelled
 partial; they do not certify the full result. Logs, input digest and source
 revision are uploaded by each job. The complete hosted run passed with input digest
-`06c5604c1fbb0199a7453e223109b4ed51c6bfb2493fa3a41af9e8d578b8c06d`.
-Its audit covered 432,874 declarations and 167,513 theorems in 304 compiled
-project modules, using only the three permitted standard axioms. Digests
-include build and verification configuration, so the later scheduling
-correction has a different digest even with identical proof declarations.
+`7049e4abb818982305ff0747a870b964f6d2d11589604dc3de8c82840954c53d`.
+Its audit covered 432,974 declarations and 167,613 theorems in 304 compiled
+project modules, using only the three permitted standard axioms. The digest
+includes build and verification configuration as well as proof inputs.
+The local explorer snapshot has a separately recorded generated-helper
+inventory; its full audit has the same proof-input fingerprint and axiom policy.
 
 The audit explicitly type-checks the unconditional literal dyadic and
 cumulative statements and inspects their proof axioms before writing a
@@ -170,3 +185,48 @@ signed-curvature box proof. No broader priority or record claim is made.
 This numerical certificate neither proves RH nor enlarges the repository's
 zero-free region. The independent signed arithmetic bound in the RH
 argument remains open.
+
+## Evergreen chart and theorem explorer
+
+The [dedicated explorer](https://dbsanfte.github.io/RiemannGaussian/numerical-certificate/)
+starts at the unconditional cumulative 67.31% theorem. Select dyadic counts
+or the exact coefficient for the companion chains. Hover, zoom and expand
+actual dependency paths; each theorem links to its Lean declaration and
+complete transitive axiom set. The family taxonomy is shared with the
+zero-free explorer, with [certificate reading labels](numerical-certificate-explorer/metadata.json).
+
+To keep the graph usable, generated range tables, anchors and the accepted
+cover appear as **explicit generated-data proof boundaries**. Their full
+transitive axioms are checked, and the separately linked optional audit
+checks all underlying components. The compact graph is not the exhaustive
+expanded cover. External Lean, mathlib and pinned Zeta23 declarations are
+also boundary leaves; Zeta23 source links preserve its vendored snapshot
+and [upstream attribution](../vendor/zeta23/UPSTREAM.md).
+
+The [frozen graph manifest](numerical-certificate-explorer/snapshot.json)
+records the optional input fingerprint, every local imported source hash,
+exporter hash and complete local audit hash. Refresh it explicitly after a
+changed optional proof has passed its full target and audit:
+
+```bash
+python3 scripts/build_numerical_certificate_explorer.py --refresh
+lake env lean -DwarningAsError=true scripts/ExportNumericalCertificatePlot.lean
+.lake/plot-venv/bin/python scripts/build_numerical_certificate_plot.py
+```
+
+The chart reads only exact rational enclosures exported by the lightweight
+Lean script, alongside the checked endpoint snapshot. Its
+[plot metadata](numerical-certificate/metadata.json),
+[coefficient export](numerical-certificate/coefficients.json) and
+[drawing audit](numerical-certificate/audit.json) are committed together.
+The full 0–100% context and labelled magnification distinguish the limiting
+coefficients from the closed rational endpoint; the picture supplies no new
+numerical theorem.
+
+Ordinary CI and the hook run the lightweight exporter and both builders'
+`--check` modes. These reject stale plots, proof fingerprints, source links
+and graph paths **without compiling the optional certificate**. Browser
+checks exercise both explorers and the README through GitHub's actual
+renderer. The dedicated Pages site pins presentation source links to its
+ordinary CI commit; its exhaustive verification link remains attached to
+the separately recorded successful certificate run and identical inputs.

@@ -42,6 +42,7 @@ echo 'pre-commit: Lean-derived theorem explorer and witnessed graph paths'
 theorem_node="${THEOREM_NODE:-node}"
 python3 scripts/build_theorem_explorer.py --check --node "$theorem_node"
 "$theorem_node" scripts/check_theorem_graph.cjs
+python3 scripts/build_numerical_certificate_explorer.py --check --node "$theorem_node"
 
 echo 'pre-commit: checked zero-free formulas and evergreen comparison graph'
 "${lake_command[@]}" env lean -DwarningAsError=true scripts/ExportZeroFreePlot.lean
@@ -52,6 +53,8 @@ if [[ ! -x "$plot_python" ]]; then
   exit 1
 fi
 "$plot_python" scripts/build_zero_free_plot.py --check
+"${lake_command[@]}" env lean -DwarningAsError=true scripts/ExportNumericalCertificatePlot.lean
+"$plot_python" scripts/build_numerical_certificate_plot.py --check
 
 echo 'pre-commit: staged whitespace check'
 git diff --cached --check

@@ -17,6 +17,8 @@ from playwright.sync_api import sync_playwright
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = "dbsanfte/RiemannGaussian"
 SITE = "https://dbsanfte.github.io/RiemannGaussian/"
+CERTIFICATE_SITE = SITE + "numerical-certificate/"
+CERTIFICATE_WORKFLOW = f"https://github.com/{REPOSITORY}/actions/workflows/numerical_certificate.yml"
 
 
 def gh(*args, payload=None):
@@ -61,6 +63,12 @@ def run(output, published):
                 if not published:
                     page.route("**/docs/zero-free-regions/comparison.svg*", lambda route:
                                route.fulfill(path=str(ROOT / "docs/zero-free-regions/comparison.svg"),
+                                             content_type="image/svg+xml"))
+                    page.route("**/docs/numerical-certificate/comparison.svg*", lambda route:
+                               route.fulfill(path=str(ROOT / "docs/numerical-certificate/comparison.svg"),
+                                             content_type="image/svg+xml"))
+                    page.route("**/docs/theorem-explorer/preview.svg*", lambda route:
+                               route.fulfill(path=str(ROOT / "docs/theorem-explorer/preview.svg"),
                                              content_type="image/svg+xml"))
                 # GitHub can keep background requests open after the README is
                 # ready. Wait for the actual DOM and math below, not network idle.
@@ -152,10 +160,47 @@ def run(output, published):
                 preview = article.locator("a img[alt^='Click to explore']")
                 assert preview.count() == 1
                 assert preview.locator("..").get_attribute("href") == SITE
+                assert article.locator("h2").nth(1).inner_text().strip() == "Proved Numerical Certificate: 67.31%"
+                certificate_cta = article.locator(f"h3 a[href='{CERTIFICATE_SITE}']")
+                assert certificate_cta.count() == 1
+                assert "Explore the 67.31% certificate proof" in certificate_cta.inner_text()
+                certificate_plot = article.locator("img[alt^='Numerical certificate comparison:']")
+                assert certificate_plot.count() == 1
+                assert certificate_plot.locator("..").get_attribute("href") == CERTIFICATE_SITE
+                certificate_plot.evaluate("e => e.scrollIntoView({block: 'center'})")
+                certificate_placement = page.wait_for_function("""selector => {
+                    const a = document.querySelector(selector);
+                    const e = a?.querySelector("img[alt^='Numerical certificate comparison:']");
+                    if (!e || !e.complete || e.naturalWidth <= 0 || e.clientWidth <= 0 || a.clientWidth <= 0) return false;
+                    const h = a.querySelectorAll('h2');
+                    const after = n => Boolean(e.compareDocumentPosition(n) & Node.DOCUMENT_POSITION_FOLLOWING);
+                    return {width: e.clientWidth, available: a.clientWidth,
+                        afterHeading: !after(h[1]), beforeNextHeading: after(h[2])};
+                }""", arg=selector).json_value()
+                assert 0 < certificate_placement["width"] <= certificate_placement["available"] + 1
+                assert certificate_placement["afterHeading"] and certificate_placement["beforeNextHeading"]
+                badge = article.locator("img[alt='Numerical certificate verification']")
+                assert badge.count() == 1
+                assert badge.locator("..").get_attribute("href") == CERTIFICATE_WORKFLOW
+                badge_url = badge.get_attribute("data-canonical-src") or badge.get_attribute("src")
+                assert badge_url == CERTIFICATE_WORKFLOW + "/badge.svg", badge_url
+                assert badge.evaluate("e => Boolean(e.compareDocumentPosition(e.closest('article').querySelectorAll('h2')[1]) & Node.DOCUMENT_POSITION_PRECEDING)")
+                assert badge.evaluate("e => Boolean(e.compareDocumentPosition(e.closest('article').querySelectorAll('h2')[2]) & Node.DOCUMENT_POSITION_FOLLOWING)")
+                page.wait_for_function("""selector => {
+                    const e = document.querySelector(selector)?.querySelector("img[alt='Numerical certificate verification']");
+                    return e && e.complete && e.naturalWidth > 0 && e.clientWidth > 0;
+                }""", arg=selector)
+                assert badge.evaluate("e => e.clientWidth <= e.closest('article').clientWidth + 1")
+                # Loading a lazy image can change the scroll position; frame
+                # the now-loaded graph again for useful visual evidence.
+                certificate_plot.evaluate("e => e.scrollIntoView({block: 'center'})")
+                page.screenshot(path=str(output / f"numerical-certificate-{width}.png"))
                 checks.append({"width": width, "mathBlocks": math.count(), "boxes": boxes,
                                "errors": errors, "sizes": sizes, "frameBorders": frames,
                                "frameSizes": tables,
                                "zeroFreeGraph": placement,
+                               "numericalCertificateGraph": certificate_placement,
+                               "certificationBadge": CERTIFICATE_WORKFLOW,
                                "explorerLinks": "valid"})
                 page.close()
         finally:

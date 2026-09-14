@@ -105,6 +105,28 @@ Zoom, expand branches, inspect theorem metadata and open exact Lean source lines
 · [Proof audit](docs/theorem-explorer/audit.json)
 · [Reproduce locally](docs/theorem-explorer.md).
 
+## Proved Numerical Certificate: 67.31%
+
+[![Numerical certificate verification](https://github.com/dbsanfte/RiemannGaussian/actions/workflows/numerical_certificate.yml/badge.svg)](https://github.com/dbsanfte/RiemannGaussian/actions/workflows/numerical_certificate.yml)
+
+**Lean proves that at least 67.31% of zeta zeros are simple and on the critical
+line**, in every sufficiently large cumulative `(0, T]` and dyadic `(T, 2T]`
+window. The denominator counts analytic multiplicity; **the starting height
+is unevaluated**. This improves Anthropic/Zeta23's two-thirds certificate,
+including its stronger underlying coefficient of approximately **67.25007%**.
+
+### [▶ Explore the 67.31% certificate proof](https://dbsanfte.github.io/RiemannGaussian/numerical-certificate/)
+
+[![Numerical certificate comparison: two thirds, the Anthropic/Zeta23 coefficient and our improved coefficient, with the proved 67.31% bound marked](docs/numerical-certificate/comparison.svg)](https://dbsanfte.github.io/RiemannGaussian/numerical-certificate/)
+
+Click the chart to inspect the continuous cover, analytic transfer, exact
+Lean source lines and proof audits.
+[Enlarge chart](docs/numerical-certificate/comparison.svg)
+· [Lean proof](RiemannGaussian/External/Zeta23SevenWindowIntegerCertificate.lean)
+· [Successful complete verification](https://github.com/dbsanfte/RiemannGaussian/actions/runs/34802730942)
+· [Full axiom audit](docs/numerical-certificate-audit.json)
+· [Sources, metadata and reproduction](docs/numerical-certificate.md).
+
 ## Current Direction
 
 Make the proved region cover every applicable benchmark, preserving each height range and boundary convention. Retain all existing analytic coverage while closing the lower-height classical/Littlewood and eventual Vinogradov–Korobov gaps. The signed arithmetic floor and RH remain open; numerical certificate verification runs separately.

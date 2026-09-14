@@ -4,11 +4,19 @@ const vm = require("node:vm");
 const fs = require("node:fs");
 const core = require("../docs/theorem-explorer/graph-core.js");
 const context = {window: {}};
-vm.runInNewContext(fs.readFileSync(path.join(__dirname, "../docs/theorem-explorer/data.js"), "utf8"), context);
+const certificate = process.argv[2] === "--certificate";
+const directory = certificate ? "numerical-certificate-explorer" : "theorem-explorer";
+vm.runInNewContext(fs.readFileSync(path.join(__dirname, `../docs/${directory}/data.js`), "utf8"), context);
 const data = context.window.PROOF_DATA, graph = core.create(data), esc = core.escape;
 const root = data.endpoints.find(e => e.id === data.defaultEndpoint);
 const scope = graph.closure(root.roots);
-const highlights = [
+const highlights = certificate ? [
+  "RiemannGaussian.MontgomeryTaylorIntegerBoxCertificate.CertificateData.Cover.checked",
+  "RiemannGaussian.Zeta23InverseSampling.sevenWindow_compact_floor",
+  "RiemannGaussian.Zeta23InverseSampling.sevenWindow_floor",
+  "RiemannGaussian.Zeta23InverseSampling.simpleCritical_of_sevenWindowFloor",
+  "RiemannGaussian.Zeta23InverseSampling.simpleCritical_6731_eventually"
+] : [
   "RiemannGaussian.pairedEtaCore_eq_factor_riemannZeta_of_re_pos_of_ne_one",
   "RiemannGaussian.ZetaEulerLineBound.bound",
   "RiemannGaussian.ZetaGaussianStripPhaseFamily.source_add_mixedWork_le_exactBudget",
@@ -25,12 +33,12 @@ const canvasWidth = 1280, canvasHeight = 430;
 const scale = Math.min(1210 / layout.width, 305 / layout.height);
 const x = (canvasWidth - layout.width * scale) / 2, y = 91;
 let svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${canvasWidth} ${canvasHeight}" role="img" aria-labelledby="title desc">
-<title id="title">Explore the Lean proof of the explicit zero-free band</title>
+<title id="title">${certificate ? "Explore the Lean proof of the 67.31% certificate" : "Explore the Lean proof of the explicit zero-free band"}</title>
 <desc id="desc">A compact selection of actual proof dependencies, grouped by mathematical family. Open the interactive explorer to zoom, expand every branch, inspect theorem statements and follow source and audit links. RH remains open.</desc>
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10" fill="#8395ad"/></marker></defs>
 <rect width="1280" height="430" rx="16" fill="#101923"/>
 <text x="30" y="32" fill="#9caec3" font-family="system-ui,sans-serif" font-size="11" letter-spacing="2">RIEMANNGAUSSIAN / PROOF EXPLORER</text>
-<text x="30" y="64" fill="#f2f4f5" font-family="system-ui,sans-serif" font-size="23" font-weight="600">Follow the mathematics to the zero-free region</text>
+<text x="30" y="64" fill="#f2f4f5" font-family="system-ui,sans-serif" font-size="23" font-weight="600">${certificate ? "Follow the proof to 67.31% of literal zeta zeros" : "Follow the mathematics to the zero-free region"}</text>
 <rect x="1004" y="29" width="246" height="39" rx="20" fill="#25443f" stroke="#77dac3"/>
 <text x="1127" y="54" text-anchor="middle" fill="#bdf2e4" font-family="system-ui,sans-serif" font-size="14">Open interactive explorer ↗</text>
 <g transform="translate(${x} ${y}) scale(${scale})" font-family="system-ui,sans-serif">`;

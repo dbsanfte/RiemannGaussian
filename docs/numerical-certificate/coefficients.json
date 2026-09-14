@@ -1,0 +1,26 @@
+{"twoThirds": [2, 3],
+ "schemaVersion": 1,
+ "proofs":
+ [{"theorem":
+   "_private.scripts.ExportNumericalCertificatePlot.0.NumericalCertificatePlot.baseline_bounds",
+   "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+  {"theorem":
+   "_private.scripts.ExportNumericalCertificatePlot.0.NumericalCertificatePlot.improved_bounds",
+   "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+  {"theorem":
+   "_private.scripts.ExportNumericalCertificatePlot.0.NumericalCertificatePlot.floor_below_coefficient",
+   "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+  {"theorem":
+   "_private.scripts.ExportNumericalCertificatePlot.0.NumericalCertificatePlot.floor_above_two_thirds",
+   "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+  {"theorem":
+   "RiemannGaussian.Zeta23InverseSampling.sevenWindowTargetCoefficient_gain",
+   "axioms": ["propext", "Classical.choice", "Quot.sound"]}],
+ "leanVersion": "4.33.1",
+ "intervalConvention": "strict lower and upper enclosures",
+ "improved": [[1682763999, 2500000000], [3365527999, 5000000000]],
+ "generator": "scripts/ExportNumericalCertificatePlot.lean",
+ "exactCoefficientTheorem":
+ "RiemannGaussian.Zeta23InverseSampling.sevenWindowTargetCoefficient_bounds",
+ "certifiedFloor": [6731, 10000],
+ "baseline": [[1681251759, 2500000000], [6725007037, 10000000000]]}

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/dbsanfte/RiemannGaussian",
+  "pagesUrl": "https://dbsanfte.github.io/RiemannGaussian/numerical-certificate/",
+  "defaultEndpoint": "cumulative",
+  "title": "The 67.31% numerical certificate",
+  "vendoredSourceRoots": {"Zeta23": "vendor/zeta23"},
+  "limitNote": "Eventual literal zero counts; height threshold unevaluated. RH and the global arithmetic saving remain open.",
+  "verificationScope": "Exported from the compiled optional NumericalCertificate environment. Every displayed node and data boundary has its full transitive axiom set checked. The frozen input fingerprint must match the complete certificate audit. Ordinary CI validates this snapshot; the separately linked optional workflow checks the exhaustive certificate.",
+  "certificate": {
+    "cumulativeTheorem": "RiemannGaussian.Zeta23InverseSampling.simpleCritical_6731_cumulative_eventually",
+    "dyadicTheorem": "RiemannGaussian.Zeta23InverseSampling.simpleCritical_6731_eventually",
+    "exactTheorem": "RiemannGaussian.Zeta23InverseSampling.simpleCritical_sevenWindow_cumulative",
+    "gainTheorem": "RiemannGaussian.Zeta23InverseSampling.sevenWindowTargetCoefficient_gain",
+    "scope": "Lean proves at least 6731/10000 of literal zeros in every sufficiently large cumulative (0,T] window are simple and on the critical line; dyadic (T,2T] windows are also covered. The denominator counts analytic multiplicity. The starting height is unevaluated. The exact coefficient strictly improves the pinned Anthropic/Zeta23 Montgomery–Taylor baseline. Generated certificate data are displayed as explicitly marked, transitively audited proof boundaries; the complete optional workflow checks all 21 data modules and 231 cover groups. Ordinary CI checks this frozen proof snapshot and its input fingerprint without rerunning the exhaustive verification. This certificate does not prove RH or enlarge the zero-free region.",
+    "documentation": "docs/numerical-certificate.md"
+  },
+  "endpoints": [
+    {
+      "id": "cumulative",
+      "label": "67.31% · cumulative literal zero counts",
+      "statusPaths": [
+        [
+          "certificate",
+          "cumulativeTheorem"
+        ],
+        [
+          "certificate",
+          "gainTheorem"
+        ]
+      ],
+      "scopePath": [
+        "certificate",
+        "scope"
+      ],
+      "documentation": "docs/numerical-certificate.md"
+    },
+    {
+      "id": "dyadic",
+      "label": "67.31% · dyadic literal zero counts",
+      "statusPaths": [
+        [
+          "certificate",
+          "dyadicTheorem"
+        ]
+      ],
+      "scopePath": [
+        "certificate",
+        "scope"
+      ],
+      "documentation": "docs/numerical-certificate.md"
+    },
+    {
+      "id": "exact",
+      "label": "Exact improved coefficient · cumulative counts",
+      "statusPaths": [
+        [
+          "certificate",
+          "exactTheorem"
+        ],
+        [
+          "certificate",
+          "gainTheorem"
+        ]
+      ],
+      "scopePath": [
+        "certificate",
+        "scope"
+      ],
+      "documentation": "docs/numerical-certificate.md"
+    }
+  ],
+  "theorems": {
+    "RiemannGaussian.Zeta23InverseSampling.simpleCritical_6731_cumulative_eventually": {
+      "label": "67.31% of cumulative zeros: simple and on the critical line",
+      "documentation": "docs/numerical-certificate.md",
+      "overview": true
+    },
+    "RiemannGaussian.Zeta23InverseSampling.simpleCritical_6731_eventually": {
+      "label": "67.31% of dyadic zeros: simple and on the critical line",
+      "documentation": "docs/numerical-certificate.md",
+      "overview": true
+    },
+    "RiemannGaussian.Zeta23InverseSampling.simpleCritical_sevenWindow_cumulative": {
+      "label": "Exact improved coefficient for cumulative counts",
+      "documentation": "docs/numerical-certificate.md",
+      "overview": true
+    },
+    "RiemannGaussian.Zeta23InverseSampling.simpleCritical_sevenWindow": {
+      "label": "Exact improved coefficient for dyadic counts",
+      "documentation": "docs/numerical-certificate.md",
+      "overview": true
+    },
+    "RiemannGaussian.Zeta23InverseSampling.sevenWindowTargetCoefficient_gain": {
+      "label": "Strict improvement over the Anthropic/Zeta23 baseline",
+      "documentation": "docs/numerical-certificate.md",
+      "overview": true
+    },
+    "RiemannGaussian.Zeta23InverseSampling.sevenWindowTargetCoefficient_gt_6731": {
+      "label": "The exact coefficient exceeds 67.31%",
+      "documentation": "docs/numerical-certificate.md",
+      "overview": true
+    },
+    "RiemannGaussian.Zeta23InverseSampling.sevenWindow_floor": {
+      "label": "Every ordered seven-point configuration",
+      "documentation": "docs/numerical-certificate.md",
+      "overview": true
+    },
+    "RiemannGaussian.Zeta23InverseSampling.sevenWindow_compact_floor": {
+      "label": "Continuous floor on the full six-gap box",
+      "documentation": "docs/numerical-certificate.md",
+      "overview": true
+    },
+    "RiemannGaussian.Zeta23InverseSampling.blockFloor_of_sevenWindowFloor": {
+      "label": "Seven-point floors supply the 259-point block",
+      "documentation": "docs/numerical-certificate.md",
+      "overview": true
+    },
+    "RiemannGaussian.Zeta23InverseSampling.simpleCritical_of_sevenWindowFloor": {
+      "label": "Analytic transfer from the full floor to actual zeros",
+      "documentation": "docs/numerical-certificate.md",
+      "overview": true
+    },
+    "RiemannGaussian.MontgomeryTaylorIntegerBoxCertificate.CertificateData.Cover.checked": {
+      "label": "Complete cover accepted by Lean",
+      "documentation": "docs/numerical-certificate.md",
+      "overview": true
+    },
+    "RiemannGaussian.MontgomeryTaylorIntegerBoxCertificate.CertificateData.table_valid": {
+      "label": "All 9,306 continuous range bounds checked",
+      "documentation": "docs/numerical-certificate.md",
+      "overview": true
+    },
+    "RiemannGaussian.MontgomeryTaylorIntegerBoxCertificate.CertificateData.lookup_valid": {
+      "label": "All anchor enclosures checked",
+      "documentation": "docs/numerical-certificate.md",
+      "overview": true
+    }
+  }
+}

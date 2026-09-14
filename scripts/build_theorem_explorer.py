@@ -136,12 +136,12 @@ def build_family_index():
     return outputs
 
 
-def build():
-    raw_bytes = (ROOT / ".lake/theorem-explorer/lean-graph.json").read_bytes()
+def build(*, raw_path=None, metadata=None, status_data=None):
+    raw_bytes = (raw_path or ROOT / ".lake/theorem-explorer/lean-graph.json").read_bytes()
     raw = json.loads(raw_bytes)
-    meta_bytes = (SITE / "metadata.json").read_bytes()
+    meta_bytes = json_bytes(metadata) if metadata is not None else (SITE / "metadata.json").read_bytes()
     meta = json.loads(meta_bytes)
-    status_bytes = (ROOT / "docs/proof-status.json").read_bytes()
+    status_bytes = json_bytes(status_data) if status_data is not None else (ROOT / "docs/proof-status.json").read_bytes()
     status = json.loads(status_bytes)
     manifest = json.loads((ROOT / "lake-manifest.json").read_bytes())
     assert raw["leanVersion"] == status["leanVersion"], "Lean versions differ"
@@ -211,7 +211,12 @@ def build():
         # external abbrev. Its dependencies belong to the project closure,
         # but its enclosing source still belongs to the pinned library.
         project_source = source_module == "RiemannGaussian" or (source_module or "").startswith("RiemannGaussian.")
-        if n["project"] and source_path and project_source:
+        vendored_source = next((directory for prefix, directory in meta.get("vendoredSourceRoots", {}).items()
+                                if source_module == prefix or (source_module or "").startswith(prefix + ".")), None)
+        if vendored_source and source_path:
+            source_path = (Path(vendored_source) / source_path).as_posix()
+            assert (ROOT / source_path).resolve().is_relative_to(ROOT), "Source root leaves repository"
+        if source_path and ((n["project"] and project_source) or vendored_source):
             path = ROOT / source_path
             assert path.is_file(), f"Missing project source: {source_path}"
             if source_path not in project_sources:
@@ -259,6 +264,8 @@ def build():
         if "documentation" in override:
             assert (ROOT / override["documentation"]).is_file()
             info["documentation"].insert(0, override["documentation"])
+        if n.get("verifiedDataBoundary"):
+            info["verifiedDataBoundary"] = True
         nodes.append(info)
         modules.setdefault(n["module"], []).append(index[n["id"]])
 
@@ -281,7 +288,7 @@ def build():
         "edgeMeaning": raw["edgeMeaning"], "externalBoundary": raw["externalBoundary"],
         "endpointAxioms": {nodes[i]["id"]: nodes[i]["axioms"] for e in endpoints for i in e["roots"]},
         "familyCounts": family_counts,
-        "verificationScope": "The exporter runs in the compiled Lean root and collects transitive axioms for every node. This file does not itself certify a GitHub Actions run; published deployment provenance links to the exact run separately.",
+        "verificationScope": meta.get("verificationScope", "The exporter runs in the compiled Lean root and collects transitive axioms for every node. This file does not itself certify a GitHub Actions run; published deployment provenance links to the exact run separately."),
         "rhImplied": status["rhImplied"]
     }
     data = {
@@ -289,10 +296,13 @@ def build():
         "families": meta["families"], "endpoints": endpoints, "nodes": nodes,
         "leanVersion": raw["leanVersion"], "audit": {k: v for k, v in audit.items() if k != "sourceSha256"},
         "benchmarkScope": status["gaussianPhaseBandToolkit"]["comparisonScope"],
-        "limitNote": "RH remains open. The three checked benchmark functions are not an exhaustive world-record audit.",
+        "limitNote": meta.get("limitNote", "RH remains open. The three checked benchmark functions are not an exhaustive world-record audit."),
         "toolkits": {k: v for k, v in status.items() if isinstance(v, dict)}
     }
     document_paths = {p for n in nodes for p in n["documentation"]}
+    for key in ("certificateVerification", "guideDocument", "metadataOrigin"):
+        if key in meta:
+            data[key] = meta[key]
     document_paths.update(e["documentation"] for e in endpoints)
     document_paths.add("docs/theorem-explorer.md")
     documents = {p: (ROOT / p).read_text() for p in sorted(document_paths)}
@@ -346,6 +356,15 @@ def main():
         shutil.copy2(ROOT / "docs/proof-status.json", args.site / "proof-status.json")
         release = {"revision": args.revision, "runUrl": args.run_url}
         (args.site / "release.js").write_bytes(b"window.PROOF_RELEASE=" + json_bytes(release) + b";\n")
+        # Its exhaustive proof snapshot is verified separately. This release
+        # pins the presentation and source links to this ordinary CI checkout.
+        certificate_site = ROOT / "docs/numerical-certificate-explorer"
+        subprocess.run(["python3", str(ROOT / "scripts/build_numerical_certificate_explorer.py"),
+                        "--check", "--node", args.node], cwd=ROOT, check=True)
+        shutil.copytree(certificate_site, args.site / "numerical-certificate")
+        (args.site / "numerical-certificate/release.js").write_bytes(
+            b"window.PROOF_RELEASE=" + json_bytes(release) + b";\n")
+        shutil.copy2(ROOT / "docs/proof-status.json", args.site / "numerical-certificate/proof-status.json")
     print("Theorem explorer assets and source/audit links are consistent.")
 
 

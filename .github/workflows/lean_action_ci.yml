@@ -55,6 +55,8 @@ jobs:
           lake env lean -DwarningAsError=true scripts/ExportTheoremGraph.lean
           python3 scripts/build_theorem_explorer.py --check
           node scripts/check_theorem_graph.cjs
+      - name: Check the cached optional certificate explorer without exhaustive verification
+        run: python3 scripts/build_numerical_certificate_explorer.py --check
       - name: Check the evergreen zero-free comparison graph
         shell: bash
         run: |
@@ -62,6 +64,8 @@ jobs:
           .lake/plot-venv/bin/pip install -r scripts/requirements-plots.txt
           lake env lean -DwarningAsError=true scripts/ExportZeroFreePlot.lean
           .lake/plot-venv/bin/python scripts/build_zero_free_plot.py --check
+          lake env lean -DwarningAsError=true scripts/ExportNumericalCertificatePlot.lean
+          .lake/plot-venv/bin/python scripts/build_numerical_certificate_plot.py --check
       - name: Install the pinned explorer test browser
         shell: bash
         run: |
@@ -70,7 +74,9 @@ jobs:
           .lake/browser-venv/bin/python -m playwright install --with-deps chromium
       - name: Check theorem explorer interactions and source links
         shell: bash
-        run: .lake/browser-venv/bin/python scripts/test_theorem_explorer.py
+        run: |
+          .lake/browser-venv/bin/python scripts/test_theorem_explorer.py
+          .lake/browser-venv/bin/python scripts/test_numerical_certificate_explorer.py
       - name: Check README with the live GitHub math renderer
         shell: bash
         env:

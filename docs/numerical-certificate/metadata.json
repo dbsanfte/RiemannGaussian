@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "title": "67.31% of zeta zeros",
+  "scope": "An eventual lower bound for literal simple critical-line zero counts in both cumulative and dyadic windows; the height threshold is unevaluated. The chart compares limiting coefficients, with the separate closed rational endpoint marked explicitly. It is an illustration, not a numerical proof or an RH claim.",
+  "baselineLabel": "Anthropic / Zeta23",
+  "baselineSource": "vendor/zeta23/UPSTREAM.md",
+  "baselineUpstream": "https://github.com/anthropics/zeta-23-lean/tree/2bafb8c88f177284a2123b5fefa2ff84e2365eb6",
+  "endpoint": "RiemannGaussian.Zeta23InverseSampling.simpleCritical_6731_cumulative_eventually",
+  "gainTheorem": "RiemannGaussian.Zeta23InverseSampling.sevenWindowTargetCoefficient_gain",
+  "coefficientTheorem": "RiemannGaussian.Zeta23InverseSampling.sevenWindowTargetCoefficient_bounds",
+  "explorer": "https://dbsanfte.github.io/RiemannGaussian/numerical-certificate/",
+  "workflow": "https://github.com/dbsanfte/RiemannGaussian/actions/workflows/numerical_certificate.yml",
+  "colours": {"twoThirds": "#7d8797", "baseline": "#3977c3", "improved": "#dd6249"},
+  "zoomPercent": [66.6, 67.4]
+}

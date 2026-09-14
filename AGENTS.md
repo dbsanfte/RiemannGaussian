@@ -2193,6 +2193,42 @@ Inspect that process before restarting; preserve completed artifacts. Keep
 proof inputs stable while a verification run is active. Documentation outside
 the input digest may be updated without interrupting it.
 
+The README's `Proved Numerical Certificate: 67.31%` section belongs directly
+after the zero-free section. Keep it compact: a live GitHub status badge for
+`numerical_certificate.yml`, the literal eventual bound and unevaluated
+height threshold, a comparison chart linked to its dedicated theorem explorer,
+and exact-source, full-audit and successful-run links. The badge must link to
+the actual optional workflow. Record a successful exhaustive run separately
+from ordinary presentation CI; never substitute the latter as evidence of a
+complete certificate. Compare with the attributed Anthropic/Zeta23 coefficient,
+as well as its two-thirds headline. Distinguish the limiting coefficient
+from the smaller closed rational endpoint and preserve epsilon conventions.
+
+The certificate explorer is exported explicitly with
+`scripts/build_numerical_certificate_explorer.py --refresh` after the optional
+target is verified. It shares the ordinary explorer's family taxonomy and
+interaction code. Its compact graph follows authored dependencies and marks
+generated data as proof boundaries with full transitive axiom audits; link
+the complete optional audit for all underlying data. Freeze the export with
+the full optional input fingerprint, source hashes and exporter hash. Ordinary
+CI and the hook run only `--check`, never `--refresh`, and reject stale
+snapshots. Keep `docs/numerical-certificate/verification.json` attached to the
+exact successful exhaustive run and matching input digest. Publish the
+dedicated site under `/numerical-certificate/`, with presentation source links
+pinned to the current ordinary CI commit.
+
+Run lightweight `scripts/ExportNumericalCertificatePlot.lean` and
+`scripts/build_numerical_certificate_plot.py` to regenerate the chart, rational
+enclosures and drawing audit together. Display both full-scale context and
+a labelled magnification; do not infer new bounds from plotted pixels. The
+chart and explorer metadata live in their respective documentation directories.
+Ordinary CI checks their freshness without importing `NumericalCertificate`.
+The live GitHub README renderer check must verify this section's placement,
+badge workflow link, chart load and desktop/mobile fit, and prominent explorer
+link. Run the dedicated explorer browser check for metadata, source lines,
+family zones, navigation and audit links before publishing, then check the
+actual published site after exact-commit CI succeeds.
+
 The README's `Proved Zero-Free Region` is the first section after the introduction.
 Keep its mathematics in compact, readable display-math boxes using
 `\boxed{\begin{gathered} ... \end{gathered}}` inside GitHub-supported math
