@@ -1878,8 +1878,39 @@ arbitrary complex weights and their correlations. Unlike the earlier
 canonical block count, this whole-moment theorem includes original entries
 up to X. Do not keep listing the exact target partition or this whole-moment
 transfer as open. These are the ingredients underlying Wooley (6.4)--(6.6);
-product factorization, subsequent Holder estimates, arbitrary singular
-conditioning and the stronger high-moment iteration remain open. Stronger high-order moment bounds and
+`VinogradovProductEnergy` now proves the actual product factorization.
+Its finer-fibre bijection retains every original block entry, and
+`window_fine_polynomial_eq_product` keeps arbitrary complex tail weights,
+including correlations and joint restrictions between tail entries.
+`conditioned_product_norm_energy_le` applies the whole-moment theorem to
+those literal product factors, after the exact complex identities.
+The actual finer-residue cardinality and weighted finite mean inequality
+then give `conditioned_product_max_le`: the original energy is at most
+r+!*r-!*p^((a+b)*k*(k-1)/2)*(p^(k*b-a))^k times the actual maximum over
+canonical finer residues of integral(|f_(p^(kb))|^(2k)*|Tail|^2). No unproved
+moment-budget premise remains. The full correlated tail polynomial survives,
+and the exact fibre energies remain upstream of the maximum. Do not keep
+listing this factorization or first finite Holder bound as open. Subsequent
+interpolation, arbitrary singular conditioning and the stronger high-moment
+iteration remain open.
+`VinogradovFourierEvaluation` now keeps complete complex frequency fibres
+and proves point evaluation is at most attained-frequency count times the
+actual energy. `ZetaRieszConditionedEnergy` applies signed congruencing
+directly to the original Riesz carrier. Its full Fourier lift at zero and
+exact residue partition retain the entire band, coefficient, logarithmic
+phase, damping and filter. `actual_band_le_mixed_moments` bounds that literal
+carrier by actual finer mixed moments with all sampling, congruence and
+residue-summation costs explicit. The normalized theorem uses coarse class
+zero; p^(a+1)<=2^(32*N) supplies an explicit nonsingular block and proves
+the literal block count positive. The multiplied bound also covers empty
+windows. Keep `amplified_moment_eq_gram` and the exact residue Gram identity
+upstream of all majorants. `tendsto_actual_residue_source` retains the
+original negative-multiplicity source and common length. Do not replace
+the common length by log(n)/2, silently delete prime corrections, identify
+the logarithmic phase with a polynomial, or treat torus energy as a free
+pointwise estimate. The actual weighted mixed-moment saving after all costs
+remains open. No new zero-free width follows from this bridge.
+ Stronger high-order moment bounds and
 quantitative joint resonance control,
 the required exponential-sum saving, zeta growth and the VK zero-free region
 remain unproved here. Do not add a VK curve to the proved union or promote a

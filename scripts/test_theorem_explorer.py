@@ -237,6 +237,24 @@ def run(output):
             for theorem in energy_roots:
                 assert page.locator(f'[data-node="{theorem}"]').count()
             checks.append("prime-energy endpoint exposes current-dilation decay, its actual source limit and the retained signed budget")
+            page.locator("#endpoint").select_option("riesz-vk")
+            page.wait_for_function("PROOF_VIEW.endpoint.id === 'riesz-vk'")
+            assert "No independent saving" in page.locator("#scope-text").inner_text()
+            riesz_name = "RiemannGaussian.ZetaRieszConditionedEnergy.actual_band_le_mixed_moments"
+            riesz_roots = page.evaluate("PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i].name)")
+            assert riesz_name in riesz_roots
+            assert "RiemannGaussian.ZetaRieszConditionedEnergy.tendsto_actual_residue_source" in riesz_roots
+            page.locator("#search").fill(riesz_name)
+            page.locator(".search-result").first.click()
+            assert "rieszMomentMaximum" in page.locator("#details pre").inner_text()
+            with page.expect_popup() as riesz_opened:
+                page.locator("#details .source-button").click()
+            riesz_source = riesz_opened.value
+            riesz_source.wait_for_selector(".source-line:target")
+            assert "theorem actual_band_le_mixed_moments" in riesz_source.locator(".source-line:target").inner_text()
+            riesz_source.close()
+            page.locator("#close-details").click()
+            checks.append("Riesz bridge exposes the literal mixed-moment bound, retained source, open scope and exact Lean source line")
             page.locator("#endpoint").select_option("union")
             page.locator("#overview").click()
             page.locator("#help-button").click()

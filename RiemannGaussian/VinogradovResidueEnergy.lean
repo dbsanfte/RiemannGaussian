@@ -18,8 +18,9 @@ windows and the signed congruence theorem.
 The terminal finite-window statement includes every admissible positive block
 and tail tuple, retaining arbitrary complex configuration weights and all
 correlations within them. This is the whole-moment transfer underlying Wooley
-(2012), equation (6.6). Product factorization, subsequent Hölder estimates,
-singular conditioning and the high-moment iteration require separate proofs.
+(2012), equation (6.6). `VinogradovProductEnergy` subsequently proves the
+actual product factorization and finite mixed-moment maximum bound. Singular
+conditioning and the high-moment iteration still require separate proofs.
 -/
 
 namespace RiemannGaussian.VinogradovResidueEnergy
@@ -217,6 +218,38 @@ abbrev ConditionedWindow (p k a xi X : ℕ) :=
   {x : Fin k → Fin X //
     (∀ j, ((x j).val + 1) % p ^ a = xi) ∧
     Function.Injective (fun j => ((((x j).val + 1) / p ^ a : ℕ) : ZMod p))}
+
+/-- Explicit positive multiples of p^a give a genuine nonsingular block
+in coarse class zero as soon as the full next-digit window is present. -/
+theorem conditionedWindow_nonempty {p k a X : ℕ} [NeZero p]
+    (hkp : k < p) (hX : p ^ (a + 1) ≤ X) :
+    Nonempty (ConditionedWindow p k a 0 X) := by
+  have hp : 0 < p := Nat.pos_of_ne_zero (NeZero.ne p)
+  have hpa : 0 < p ^ a := pow_pos hp a
+  let x : Fin k → Fin X := fun j => ⟨(j.val + 1) * p ^ a - 1, by
+    have hj : 0 < (j.val + 1) * p ^ a := Nat.mul_pos (by omega) hpa
+    have hu : (j.val + 1) * p ^ a ≤ X := by
+      calc
+        _ ≤ p * p ^ a := Nat.mul_le_mul_right _ (by omega)
+        _ = p ^ (a + 1) := by rw [pow_succ, Nat.mul_comm]
+        _ ≤ X := hX
+    omega⟩
+  have hx (j : Fin k) : (x j).val + 1 = (j.val + 1) * p ^ a := by
+    have hj : 0 < (j.val + 1) * p ^ a := Nat.mul_pos (by omega) hpa
+    dsimp [x]
+    omega
+  refine ⟨⟨x, ?_, ?_⟩⟩
+  · intro j
+    rw [hx]
+    exact Nat.mul_mod_left _ _
+  · intro i j hij
+    simp only [hx, Nat.mul_div_cancel _ hpa] at hij
+    have hi : i.val + 1 < p := by omega
+    have hj : j.val + 1 < p := by omega
+    have he := congrArg ZMod.val hij
+    rw [ZMod.val_natCast_of_lt hi, ZMod.val_natCast_of_lt hj] at he
+    exact Fin.ext (by omega)
+
 
 /-- The full original family of admissible positive blocks and literal
 finite positive residue tails. -/

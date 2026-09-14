@@ -95,7 +95,7 @@
     },
     {
       "id": "vk-phase",
-      "label": "Vinogradov–Korobov · full signed conditioned-moment energy",
+      "label": "Vinogradov–Korobov · mixed moments and direct Riesz bridge",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -468,6 +468,78 @@
         [
           "gaussianPhaseBandToolkit",
           "vkActualWindowMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkActualBlockProductTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCorrelatedTailProductTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFullProductEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkActualProductNormTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFineResidueCardTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFiniteHolderTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkActualMixedMaximumTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAttainedSamplingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExactFrequencyEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNonemptyWindowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszLiftTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszPartitionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszSampleTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszWholeBandTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszNormalizedBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszGramTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszSourceTheorem"
         ]
       ],
       "scopePath": [
@@ -1010,6 +1082,49 @@
         "comparisonInterval"
       ],
       "documentation": "docs/zero-free-literature-frontier.md"
+    },
+    {
+      "id": "riesz-vk",
+      "label": "Riesz carrier · signed conditioned-energy bound",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszLiftTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszPartitionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszSampleTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszWholeBandTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszNormalizedBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszGramTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "vkRieszScope"
+      ],
+      "documentation": "docs/zeta-riesz-conditioned-energy.md"
     }
   ],
   "families": [
@@ -1404,7 +1519,8 @@
     "ZetaGaussianRegionUnion": "region",
     "ZetaSquarefreeGaussianRegionUnion": "arithmetic",
     "ZetaUnifiedZeroFree": "region",
-    "ZetaSquarefreeUnifiedRegion": "arithmetic"
+    "ZetaSquarefreeUnifiedRegion": "arithmetic",
+    "ZetaRieszConditionedEnergy": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
@@ -2918,6 +3034,61 @@
     "RiemannGaussian.VinogradovCongruenceEnergy.coarse_product_energy_le": {
       "label": "Actual signed residue-window products receive the congruence energy bound",
       "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovFourierEvaluation.active_sample_energy_le": {
+      "label": "Point sampling pays only attained full frequencies",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovFourierEvaluation.integral_energy_eq_frequency_weights": {
+      "label": "Orthogonality retains all complex same-frequency cross terms",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovResidueEnergy.conditionedWindow_nonempty": {
+      "label": "Explicit multiples give a nonsingular original block",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszConditionedEnergy.fullLift_zero": {
+      "label": "Phase zero recovers the original signed Riesz carrier",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszConditionedEnergy.fullLift_partition": {
+      "label": "Every original residue lift survives the exact partition",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszConditionedEnergy.conditioned_riesz_energy_le": {
+      "label": "Signed congruencing controls actual Riesz-weighted energy",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszConditionedEnergy.residue_sample_bound": {
+      "label": "Point evaluation pays the attained joint-frequency cost",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszConditionedEnergy.actual_band_conditioned_bound": {
+      "label": "The full original band receives the conditioned bound",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszConditionedEnergy.actual_band_le_mixed_moments": {
+      "label": "A proved positive block count normalizes the literal carrier",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszConditionedEnergy.amplified_moment_eq_gram": {
+      "label": "The exact Gram keeps block colours and Riesz cross terms",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszConditionedEnergy.tendsto_actual_residue_source": {
+      "label": "The original negative-multiplicity source survives at phase zero",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
       "overview": true
     }
   }

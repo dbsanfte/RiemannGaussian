@@ -16,7 +16,9 @@ The complete coarse-conditioned count also covers original blocks sharing
 a residue modulo p^a, with distinct normalized next digits. Exact target
 partition and the actual signed count now control the full original
 weighted moment by its finer block-residue energies, for all admissible
-positive blocks and tails up to the finite endpoint.
+positive blocks and tails up to the finite endpoint. Exact product
+factorization and the first finite Hölder estimate now reduce that energy
+to an actual mixed-moment maximum, retaining arbitrary complex tail weights.
 The Vinogradov–Korobov zeta growth estimate
 and zero-free region remain unproved in this repository. No external
 analytic estimate is installed as an axiom or as a claimed discharged premise.
@@ -483,9 +485,10 @@ This is the pointwise Cauchy ingredient in
 The source uses the uniform `k!` allowance; the Lean statement retains the
 actual sign factorial. The full target fibre, all residue coordinates and
 original complex products remain available upstream. The exact target
-partition and its whole-moment energy transfer are now proved next. Product
-factorization, the later Hölder steps, singular conditioning and high-moment
-iteration still need proofs. No new zero-free width follows yet, and no
+partition, its whole-moment energy transfer, exact product factorization
+and first finite Hölder estimate are now proved below. Subsequent
+interpolation, singular conditioning and high-moment iteration still need
+proofs. No new zero-free width follows yet, and no
 historical novelty is claimed for these classical ingredients.
 
 ## Exact whole-moment partition and finer-residue energy
@@ -550,10 +553,85 @@ retains arbitrary finite correlated configuration families.
 
 This is the whole-moment transfer underlying
 [Wooley (2012), equations (6.4)–(6.6), pp. 1600–1601](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
-It forces matching finer block residues in the surviving energies. It does
-not yet identify every independent product with the source's `F` and `f`
-notation, prove the subsequent Hölder/conditioning iteration, or establish
-the required high-moment saving. No zero-free width is added by this slice.
+It forces matching finer block residues in the surviving energies. The
+actual product identification and first finite Hölder bound follow next;
+the subsequent interpolation and conditioning iteration and the required
+high-moment saving remain open. No zero-free width follows yet.
+
+## Literal products and the actual mixed-moment maximum
+
+[VinogradovProductEnergy](../RiemannGaussian/VinogradovProductEnergy.lean)
+constructs an exact bijection between each original conditioned block fibre
+and its coordinate product of literal positive residue windows. It then
+identifies the finer-fibre polynomial with the actual signed residue
+product. Let `W(alpha)` be the complete tail polynomial with **arbitrary
+complex configuration weights**. Its weights may retain joint restrictions
+and correlations between tail entries; no coordinate independence is
+assumed inside `W`.
+
+Write `F_epsilon` for the original conditioned block sum, `P=p^(kb)` and
+`D=r_+!*r_-!*p^((a+b)*k*(k-1)/2)`. Exact complex product identities precede
+the norm estimate:
+
+```math
+\int |F_\epsilon(\alpha)W(\alpha)|^2\,d\alpha
+\le D\sum_{c\in\mathcal C}\int
+ \left(\prod_{i=1}^k |f_{P,1}(\alpha;c_i)|^2\right)
+ |W(\alpha)|^2\,d\alpha.
+```
+
+The signed block phases are retained before their exact conjugation identity
+simplifies the norms. The whole tail polynomial survives on both sides.
+The original class `xi` modulo `p^a` still restricts the finer tuples.
+An exact quotient injection proves
+
+```math
+|\mathcal C|\le \bigl(p^{kb-a}\bigr)^k.
+```
+
+For nonnegative continuous `f_i,g` on the actual torus, Lean also proves
+that if every integral `int f_i^k*g` is at most `B`, then `int prod_i f_i*g`
+is at most `B`. The proof uses the pointwise finite mean inequality
+`prod_i f_i <= (sum_i f_i^k)/k`, with all integral exchanges and
+integrability proved. Applying this to the literal residue factors gives
+[conditioned_product_max_le](../RiemannGaussian/VinogradovProductEnergy.lean):
+
+```math
+\boxed{\displaystyle
+\int |F_\epsilon(\alpha)|^2|W(\alpha)|^2\,d\alpha
+\le D\,\bigl(p^{kb-a}\bigr)^k\,M,}
+\qquad
+M=\max_{0\le\zeta\lt p^{kb}}\int
+ |f_{P,1}(\alpha;\zeta)|^{2k}|W(\alpha)|^2\,d\alpha.
+```
+
+This maximum is defined from the actual finite mixed torus integrals;
+there is **no unproved moment-budget premise** in the endpoint. The earlier
+fibre identities remain available before taking this maximum, including
+their complete residue restrictions and complex weights.
+
+This proves the product and first finite Hölder ingredients following
+[Wooley (2012), equation (6.6), pp. 1601–1602](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
+The next interpolation must combine the remaining mixed moment with the
+normalized homogeneous moment and the next conditioned scale. Arbitrary
+singular conditioning and the full high-moment iteration also remain open.
+This is a classical finite congruencing ingredient, not a new VK growth
+estimate or a larger proved zero-free region.
+
+## Direct application to the original Riesz carrier
+
+The [compiled Riesz bridge](../RiemannGaussian/ZetaRieszConditionedEnergy.lean)
+now applies the actual mixed-moment theorem directly to the original
+squarefree composite Riesz carrier. An exact polynomial Fourier lift keeps
+the full complex zeta kernel and Riesz coefficient as weights; its phase-zero
+value and the complete residue partition recover the original band exactly.
+Pointwise evaluation pays its attained joint-frequency count, and an
+explicit admissible block proves the normalization is nonzero when the
+next-digit window fits. The unchanged source limit and exact signed Gram
+identities remain available. See the [full bound and its costs](zeta-riesz-conditioned-energy.md).
+Quantitative control of the resulting original weighted mixed moments,
+including all those costs, remains open. This interface does not enlarge
+the proved zero-free region or complete the VK iteration.
 
 ## Shifted correlations and bounded complex weights
 

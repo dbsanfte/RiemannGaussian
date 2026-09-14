@@ -111,18 +111,18 @@ Make the proved region cover every applicable benchmark, preserving each height 
 
 ## Latest Update
 
-**Signed residue counts now control the full conditioned moment.**
-Lean partitions the original complex energy by its complete congruence
-targets, then proves the finer-residue energy bound for the full positive
-block-and-tail window. Arbitrary complex weights and their correlations
-survive; the count and orthogonality conditions are discharged. The next
-steps are product factorization, Hölder estimates, singular conditioning
-and the stronger high-moment saving. The zero-free region is unchanged.
+**The original Riesz carrier now has a direct conditioned-energy bound.**
+Lean preserves its signs, logarithmic phase, filter and cutoff in an exact
+Fourier lift, then applies signed Vinogradov congruencing to actual mixed
+moments. The pointwise sampling and normalization costs are explicit;
+the original source limit is retained. Bounding those moments strongly
+enough remains open, and the zero-free region is unchanged.
 The proved 67.31% simple-zero certificate retains separate optional
 verification and an unevaluated starting height.
-[Certificate and audit](docs/numerical-certificate.md)
-· [Current region](docs/zeta-unified-zero-free.md)
-· [VK proof status](docs/vinogradov-korobov-framework.md).
+[Direct Lean bridge](RiemannGaussian/ZetaRieszConditionedEnergy.lean)
+· [Bound and remaining work](docs/zeta-riesz-conditioned-energy.md)
+· [VK framework](docs/vinogradov-korobov-framework.md)
+· [Certificate](docs/numerical-certificate.md).
 
 ## Notable Formalisations
 
