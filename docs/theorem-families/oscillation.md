@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**93 modules.** Source links open the definitions, hypotheses and proofs.
+**96 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [DerivativeOrderComparison](../../RiemannGaussian/DerivativeOrderComparison.lean)
@@ -70,6 +70,7 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovConditionedCompletion](../../RiemannGaussian/VinogradovConditionedCompletion.lean)
 - [VinogradovConditionedHigherMoment](../../RiemannGaussian/VinogradovConditionedHigherMoment.lean)
 - [VinogradovConditionedMoment](../../RiemannGaussian/VinogradovConditionedMoment.lean)
+- [VinogradovConditioningSupport](../../RiemannGaussian/VinogradovConditioningSupport.lean)
 - [VinogradovCongruenceEnergy](../../RiemannGaussian/VinogradovCongruenceEnergy.lean)
 - [VinogradovCongruencingStep](../../RiemannGaussian/VinogradovCongruencingStep.lean)
 - [VinogradovFourierEvaluation](../../RiemannGaussian/VinogradovFourierEvaluation.lean)
@@ -90,12 +91,14 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovPowerSumRigidity](../../RiemannGaussian/VinogradovPowerSumRigidity.lean)
 - [VinogradovPrimePowerRigidity](../../RiemannGaussian/VinogradovPrimePowerRigidity.lean)
 - [VinogradovProductEnergy](../../RiemannGaussian/VinogradovProductEnergy.lean)
+- [VinogradovResidueDigits](../../RiemannGaussian/VinogradovResidueDigits.lean)
 - [VinogradovResidueEnergy](../../RiemannGaussian/VinogradovResidueEnergy.lean)
 - [VinogradovResidueMoment](../../RiemannGaussian/VinogradovResidueMoment.lean)
 - [VinogradovShiftedMoment](../../RiemannGaussian/VinogradovShiftedMoment.lean)
 - [VinogradovSignedCongruence](../../RiemannGaussian/VinogradovSignedCongruence.lean)
 - [VinogradovSignedRigidity](../../RiemannGaussian/VinogradovSignedRigidity.lean)
 - [VinogradovSignedTailMoment](../../RiemannGaussian/VinogradovSignedTailMoment.lean)
+- [VinogradovSingularConditioning](../../RiemannGaussian/VinogradovSingularConditioning.lean)
 - [VinogradovWeightedLifting](../../RiemannGaussian/VinogradovWeightedLifting.lean)
 - [ZetaDyadicPowerBound](../../RiemannGaussian/ZetaDyadicPowerBound.lean)
 - [ZetaDyadicTruncation](../../RiemannGaussian/ZetaDyadicTruncation.lean)

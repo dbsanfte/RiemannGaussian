@@ -1892,7 +1892,7 @@ moment-budget premise remains. The full correlated tail polynomial survives,
 and the exact fibre energies remain upstream of the maximum. Do not keep
 listing this factorization or first finite Holder bound as open. The analytic
 interpolation and higher homogeneous comparison are now proved as described
-below; arbitrary singular conditioning and stronger high-moment iteration
+below; complete conditioning of arbitrary tuples and stronger high-moment iteration
 remain open.
 `VinogradovFourierEvaluation` now keeps complete complex frequency fibres
 and proves point evaluation is at most attained-frequency count times the
@@ -1924,7 +1924,7 @@ H_eta is the actual (2r+2)-moment and V_eta is the actual maximum of
 integral |R_eta|^2*|f_fine|^(2kr). `actual_band_le_interpolated_moments`
 retains all source weights/cutoffs and the explicit block denominator.
 Do not keep listing this analytic interpolation or the block normalization
-as open. The quantitative weighted-moment saving, singular conditioning
+as open. The quantitative weighted-moment saving, the complete conditioning recurrence
 and full iteration remain open. The reverse mixed moment has a squared
 Riesz factor; it is not assumed controlled. No new universal zero-free width
 is claimed.
@@ -1942,10 +1942,27 @@ I_(b,k*b)^(1/u), paying the explicit signed congruence and residue-count cost.
 The statement keeps independent block colours, every finite endpoint and all
 rounding. This is the finite inequality underlying Wooley (2012), Lemma 6.1;
 it assumes no moment budget. Do not list the higher homogeneous comparison
-or this finite transfer as open. Arbitrary singular conditioning and the
-complete high-moment iteration remain open, as does the quantitative saving
+or this finite transfer as open. The complete conditioning recurrence and
+high-moment iteration remain open, as does the quantitative saving
 for the original weighted Riesz moments after all sampling costs. No new
 zero-free width follows from this finite step.
+
+`VinogradovConditioningSupport` now uses the joint class support of both
+sides of each original collision. It selects an actual nonsingular block,
+retaining its induced signs and exact complement, or covers the singular
+support by literal sets of k-1 classes. Their count is choose(p,k-1).
+`VinogradovResidueDigits` gives exact finer-window equivalences and full
+complex polynomial refinement at p^(b+1), with the original cutoff retained.
+`VinogradovSingularConditioning` identifies the actual mixed moment with its
+complete original collision count and splits it exactly into singular and
+nonsingular contributions. The terminal `singular_count_le_next_mixed_max`
+bounds the singular contribution by choose(p,k-1)*(k-1)^(2s) times the actual
+next-level mixed maximum. All finite Holder and integral hypotheses are paid;
+no supplied moment budget is assumed. This closes the singular contribution
+underlying Wooley (2012), equation (5.2). Do not list that contribution or its
+class refinement as open. The nonsingular counting/Holder estimate, full
+conditioning recurrence and high-moment iteration remain open. Neither the
+original weighted Riesz saving nor any larger zero-free width follows yet.
 
 Stronger high-order moment bounds and
 quantitative joint resonance control,

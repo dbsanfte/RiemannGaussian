@@ -345,7 +345,7 @@ distinct. The finite-window completion bounds below now provide the
 normalized mean-value budget for each fixed pair of blocks. The following
 combined count also pays all finite tail completions for canonical block
 representatives. The full conditioned-moment transfer is proved below;
-partitioning arbitrary singular configurations, the high-moment iteration
+the complete conditioning recurrence, the high-moment iteration
 and quantitative joint resonance control remain open. No required
 exponential-sum saving, new zeta-growth estimate, VK zero-free region or RH
 proof follows yet.
@@ -487,8 +487,8 @@ actual sign factorial. The full target fibre, all residue coordinates and
 original complex products remain available upstream. The exact target
 partition, its whole-moment energy transfer, exact product factorization
 and both Hölder steps are now proved below, along with the higher
-homogeneous comparison and finite congruencing transfer. Singular
-conditioning and the full high-moment iteration still need proofs. No new zero-free width follows yet, and no
+homogeneous comparison and finite congruencing transfer. The full conditioning recurrence and high-moment iteration still need
+proofs; the singular contribution has the explicit upper bound given below. No new zero-free width follows yet, and no
 historical novelty is claimed for these classical ingredients.
 
 ## Exact whole-moment partition and finer-residue energy
@@ -556,7 +556,7 @@ This is the whole-moment transfer underlying
 It forces matching finer block residues in the surviving energies. The
 actual product identification and first finite Hölder bound follow next;
 the higher homogeneous comparison and finite congruencing step are proved
-below. Singular conditioning and the required high-moment saving remain open. No zero-free width follows yet.
+below. The full conditioning recurrence and required high-moment saving remain open. No zero-free width follows yet.
 
 ## Literal products and the actual mixed-moment maximum
 
@@ -620,8 +620,8 @@ carrier now receives that interpolation together with a constructive
 falling-factorial and floor lower bound on its original block mass;
 see the [explicit interpolated carrier bound](zeta-riesz-conditioned-energy.md).
 The higher homogeneous comparison and finite congruencing step are now
-proved below. Arbitrary singular conditioning and the full high-moment
-iteration remain open.
+proved below. The complete conditioning recurrence and full high-moment iteration remain
+open; the singular contribution has the explicit upper bound given below.
 This is a classical finite congruencing ingredient, not a new VK growth
 estimate or a larger proved zero-free region.
 
@@ -680,11 +680,65 @@ as a hypothesis.
 This is the finite inequality underlying
 [Wooley (2012), Lemma 6.1 and equations (6.7)–(6.8), pp. 1600–1602](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf),
 with explicit finite-window conventions and the retained sign factorial.
-It completes a congruencing transfer, not its iteration: arbitrary singular
-conditioning, a quantitative high-moment saving and the required zeta growth
+The congruencing transfer is proved. The singular contribution to
+conditioning has the explicit upper bound given below; the nonsingular estimate, complete
+recurrence, quantitative high-moment saving and required zeta growth
 estimate remain open. The Riesz bridge preserves its original weighted
 moments; these are not identified with the unweighted conditioned moments
 in this theorem. No larger zero-free region is claimed from this step.
+
+## Explicit singular conditioning bound
+
+[VinogradovSingularConditioning](../RiemannGaussian/VinogradovSingularConditioning.lean)
+defines the literal mixed moment and proves its exact collision decomposition:
+
+```math
+I_{a,b}^{\epsilon}(\xi,\eta)
+=\int |F_a^{\epsilon}(\alpha;\xi)|^2|f_{p^b,1}(\alpha;\eta)|^{2s}\,d\alpha
+=T_1+T_2.
+```
+
+Every original entry lies in `1,...,X`. The two tail tuples together use
+fewer than `k` next-digit classes in `T_1`, and at least `k` in `T_2`.
+The full signed power equation is retained in both counts.
+[Block selection](../RiemannGaussian/VinogradovConditioningSupport.lean)
+keeps the induced signs and the exact frequency of the remaining variables;
+selection may draw from either side of the original equation.
+
+For the singular contribution, the support is covered by actual sets `S`
+of `k-1` classes in `ZMod p`. Lean proves there are exactly `choose(p,k-1)`
+such sets. [Exact next-digit refinement](../RiemannGaussian/VinogradovResidueDigits.lean)
+retains the complete complex polynomial:
+
+```math
+P_S(\alpha)=\sum_{d\in S}
+ f_{p^{b+1},1}(\alpha;\eta+p^b d),\qquad
+\mathcal P_S(\alpha)=F_a^{\epsilon}(\alpha;\xi)P_S(\alpha)^s.
+```
+
+The equality uses canonical digit representatives. Its explicit finite-window
+bijection includes the original endpoint. Only after these identities does
+the finite Hölder inequality give the class-count cost. The terminal theorem
+`singular_count_le_next_mixed_max` proves
+
+```math
+\boxed{\displaystyle
+T_1\le {p\choose k-1}(k-1)^{2s}
+\max_{0\le\zeta\lt p^{b+1}} I_{a,b+1}^{\epsilon}(\xi,\zeta).}
+```
+
+The displayed formula applies for nonzero base `p`, `1<=k<=p`, `s>=1` and
+`0<=eta<p^b`; the theorem does not require primality or an assumed moment
+budget. Continuity, integrability and every finite integral exchange are
+proved for the actual functions. The original signed block, both tail
+supports and the unchanged cutoff survive the reduction.
+
+This supplies an explicit finite version of the singular estimate in
+[Wooley (2012), equation (5.2), pp. 1597–1598](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
+The required bound for `T_2` still needs its selection/counting argument and
+Hölder step. The full conditioning recurrence, high-moment iteration and VK
+zero-free proof therefore remain open. No quantitative saving for the
+original weighted Riesz moments or larger zero-free width is claimed here.
 
 ## Direct application to the original Riesz carrier
 

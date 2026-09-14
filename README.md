@@ -111,15 +111,15 @@ Make the proved region cover every applicable benchmark, preserving each height 
 
 ## Latest Update
 
-**The finite signed congruencing step is now proved in Lean.**
-The original conditioned energy transfers to a finer residue scale and a
-homogeneous mean value, with every counting and rounding cost explicit.
-Exact tail weights preserve the original signs and block restrictions.
-It extends the machinery used by the [Riesz carrier bridge](docs/zeta-riesz-conditioned-energy.md).
-Singular conditioning, the full high-moment iteration and the Riesz weighted
-saving remain open; the proved zero-free region is unchanged.
-[Latest Lean theorem](RiemannGaussian/VinogradovCongruencingStep.lean)
-· [Formula and remaining work](docs/vinogradov-korobov-framework.md#finite-signed-congruencing-step).
+**The singular part of conditioning now has an explicit Lean bound.**
+The actual mixed moment splits according to the residue classes occupied by
+both tails together. Exact signed identities retain every original entry;
+a proved binomial and Hölder cost controls the singular contribution by the
+next-level mixed-moment maximum. The nonsingular estimate, full VK iteration
+and quantitative Riesz weighted saving remain open. The proved zero-free
+region is unchanged.
+[Latest Lean theorem](RiemannGaussian/VinogradovSingularConditioning.lean)
+· [Exact bound and scope](docs/vinogradov-korobov-framework.md#explicit-singular-conditioning-bound).
 
 ## Notable Formalisations
 

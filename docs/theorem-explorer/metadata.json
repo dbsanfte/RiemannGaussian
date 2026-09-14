@@ -600,6 +600,42 @@
         [
           "gaussianPhaseBandToolkit",
           "vkFiniteCongruencingStepTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkConditionedSelectionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSelectedComplementTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSmallPaletteCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSingularPaletteEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNextResidueClassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPaletteRefinementTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSingularProductTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkActualConditioningSplitTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSingularNextMomentTheorem"
         ]
       ],
       "scopePath": [
@@ -3257,6 +3293,51 @@
     },
     "RiemannGaussian.VinogradovCongruencingStep.conditioned_congruencing_step": {
       "label": "The finite signed energy transfers from a,b to b,kb",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditioningSupport.select_conditioned_block": {
+      "label": "Select an original nonsingular block from complete class support",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditioningSupport.selected_frequency_eq_add_complement": {
+      "label": "Selected signs and the exact original complement remain coupled",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditioningSupport.smallPalettes_card": {
+      "label": "The full small-class family has an exact binomial count",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditioningSupport.singular_count_le_palette_energy": {
+      "label": "Both sides of a singular collision reach actual restricted energies",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovResidueDigits.residue_next_iff": {
+      "label": "Original coarse class and next digit determine exactly the finer window",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovResidueDigits.palettePolynomial_eq_sum": {
+      "label": "Refine the complete complex class-set polynomial exactly",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovSingularConditioning.palette_configuration_eq_product": {
+      "label": "Original singular restrictions retain the full complex product",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovSingularConditioning.mixedMoment_eq_singular_add_nonsingular": {
+      "label": "The actual mixed moment splits by the joint support of both tails",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovSingularConditioning.singular_count_le_next_mixed_max": {
+      "label": "The actual singular count has an explicit finer-moment bound",
       "documentation": "docs/vinogradov-korobov-framework.md",
       "overview": true
     }
