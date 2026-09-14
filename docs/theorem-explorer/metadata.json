@@ -95,7 +95,7 @@
     },
     {
       "id": "vk-phase",
-      "label": "Vinogradov–Korobov · coarse congruencing and resonance",
+      "label": "Vinogradov–Korobov · signed tails, congruencing and resonance",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -364,6 +364,42 @@
         [
           "gaussianPhaseBandToolkit",
           "vkCoarseMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAffineMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAffineGramTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkResidueReconstructionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkResidueMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkResidueTailTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSignedTailCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSignedTailGramTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSignedTailWeightedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSignedTailCompletionTheorem"
         ]
       ],
       "scopePath": [
@@ -2728,6 +2764,51 @@
     },
     "RiemannGaussian.VinogradovCoarseCongruence.conditioned_moment_card_le": {
       "label": "Original moment blocks receive the coarse-conditioned count",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovAffineMoment.moment_affine": {
+      "label": "Complete moments retain exact affine invariance",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovAffineMoment.weighted_gram_affine": {
+      "label": "Affine transport keeps every complex homogeneous weight",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovResidueMoment.residue_reconstruction": {
+      "label": "The actual positive window retains its exact integer quotient",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovResidueMoment.residue_moment_eq_quotient": {
+      "label": "The exact quotient support survives before interval padding",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovResidueMoment.tail_completions_le_meanValue": {
+      "label": "Actual tail completions have a normalized mean-value budget",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovSignedTailMoment.signed_differenceCount_eq": {
+      "label": "Every tail sign pattern preserves the complete target count",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovSignedTailMoment.signed_weightedShift_eq_crossed": {
+      "label": "Crossing signed tails retains every complex pair weight",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovSignedTailMoment.signed_residue_weighted_shift_le_meanValue": {
+      "label": "Bounded signed tail weights receive the normalized mean value",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovSignedTailMoment.signed_tail_completions_le_meanValue": {
+      "label": "All fixed signed tails receive the actual completion bound",
       "documentation": "docs/vinogradov-korobov-framework.md",
       "overview": true
     }

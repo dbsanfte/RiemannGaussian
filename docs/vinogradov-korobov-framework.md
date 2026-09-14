@@ -336,10 +336,87 @@ fixed opposite block; it does not count their tail completions.
 
 The common-class configurations above can be singular modulo `p` before
 division. The count still requires their normalized next digits to be
-distinct. Partitioning arbitrary singular configurations, counting tail
-completions, the high-moment iteration and quantitative joint resonance
-control remain open. No exponential-sum saving, new zeta-growth estimate,
-VK zero-free region or RH proof follows yet.
+distinct. The finite-window completion bounds below now provide the
+normalized mean-value budget for each fixed pair of blocks. Combining
+those budgets with the block counts, partitioning arbitrary singular
+configurations, the high-moment iteration and quantitative joint resonance
+control remain open. No required exponential-sum saving, new zeta-growth
+estimate, VK zero-free region or RH proof follows yet.
+
+## Actual residue-window tails and every fixed sign pattern
+
+[VinogradovAffineMoment](../RiemannGaussian/VinogradovAffineMoment.lean)
+proves that common integer dilation by a nonzero `q` and translation by
+`xi` preserve the complete homogeneous moment equations, including
+arbitrary integer weights and repeated entries. The exact torus moment
+and full complex weighted homogeneous Gram coefficient are unchanged.
+Every shifted progression count is consequently bounded by the literal
+Vinogradov mean value at its normalized length.
+
+[VinogradovResidueMoment](../RiemannGaussian/VinogradovResidueMoment.lean)
+applies this to the actual finite positive window
+
+```math
+A_{q,\xi}(X)=\{n\in\mathbb Z:1\le n\le X,\ n\equiv\xi\pmod q\},
+\qquad q\ge1,\quad 0\le\xi\lt q,\quad M=\lfloor X/q\rfloor+1.
+```
+
+The quotient map is injective and reconstructs each original integer
+exactly. Its exact supported moment and complex Gram identity remain
+available before embedding into `1,...,M`; the extra endpoint is explicit.
+`residue_window_shift_le_meanValue` proves, for every full integer target
+vector `h`,
+
+```math
+\#\left\{(v,w)\in A_{q,\xi}(X)^r\times A_{q,\xi}(X)^r:
+\sum_l v_l^j-\sum_l w_l^j=h_j\quad(1\le j\le k)\right\}
+\le J_{r,k}(M).
+```
+
+[VinogradovSignedTailMoment](../RiemannGaussian/VinogradovSignedTailMoment.lean)
+retains any fixed signs `tau_l` in `{+1,-1}`. Swapping `v_l` and `w_l`
+exactly at the negative positions is an involution of the complete tuple
+product and preserves the entire difference vector. Thus every signed
+shifted count equals the corresponding ordinary shifted count, with no
+restriction on the number of signs of either colour.
+
+The weighted statement is an exact complex identity, before norms. With
+`P_tau(x)=sum_l tau_l nu(x_l)`, `P(x)=sum_l nu(x_l)` for the ordinary tuple,
+and `W(x)=prod_l w(x_l)`, define
+
+```math
+\widetilde W_\tau(x)=\prod_l
+\begin{cases}w(x_l),&\tau_l=+1,\\
+\overline{w(x_l)},&\tau_l=-1.\end{cases}
+\qquad
+G_{P_\tau,W}(h)=G_{P,\widetilde W_\tau}(h).
+```
+
+Here the ordinary tuple frequency in the last formula is the sum of the
+single-entry power vectors. `signed_weightedShift_eq_crossed` proves the
+identity for every finite integer-vector family and every `h`. No complex
+weight is replaced by its modulus in that identity. For bounded original
+weights, `signed_residue_weighted_shift_le_meanValue` gives the downstream
+norm budget `J_(r,k)(M)`.
+
+Finally, `signed_tail_completions_le_meanValue` proves that for every fixed
+pair of blocks `x,y`, arbitrary integer block weights `c_i`, and every
+fixed tail sign pattern, the number of pairs `v,w` in the actual window
+satisfying
+
+```math
+\sum_i c_i x_i^j+\sum_l\tau_l v_l^j
+=\sum_i c_i y_i^j+\sum_l\tau_l w_l^j
+\qquad(1\le j\le k)
+```
+
+is at most `J_(r,k)(M)`. The existing elementary all-order theorem supplies
+`J_(r,k)(M)≤min(r,k)!*M^(2r-min(r,k))`; the stronger saving needed for VK
+remains open. The crossing uses the complete tuple product. Additional
+conditions coupling entries within one tuple, such as nonsingularity,
+need their own transport proof and are not asserted to survive the swap.
+These affine and counting identities are classical ingredients; no
+historical novelty or new zero-free region is claimed.
 
 ## Shifted correlations and bounded complex weights
 

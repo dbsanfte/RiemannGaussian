@@ -1835,10 +1835,24 @@ colour-factorial comparison supplies the classical k! allowance, and
 projection. This is the coarse-conditioned congruence counting ingredient,
 including a>0; do not continue listing that whole count as open. The
 canonical representatives are 0,...,p^(k*b)-1 and a=b is also permitted.
-These are classical ingredients, not a historical novelty claim. Arbitrary
-singular configurations still need partitioning; tail completion bounds
-and the high-moment iteration remain open. Stronger high-order moment bounds
-and quantitative joint resonance control,
+These are classical ingredients, not a historical novelty claim.
+`VinogradovAffineMoment` now proves exact affine invariance of complete
+integer moments and the full complex homogeneous Gram coefficient.
+`VinogradovResidueMoment` reconstructs the actual positive residue window,
+retaining its exact quotient support before the explicit enlargement to
+floor(X/q)+1. Every fixed tail target is bounded by the literal normalized
+mean value J_(r,k)(floor(X/q)+1); `tail_completions_le_meanValue` applies
+this to actual completions of each fixed pair of integer-weighted blocks.
+`VinogradovSignedTailMoment` crosses the two variables at negative positions,
+preserving the entire frequency target. `signed_weightedShift_eq_crossed`
+retains every original complex pair weight through explicit conjugation.
+Every fixed tail sign pattern has the same normalized completion bound.
+The crossing acts on complete tuple products; additional joint constraints
+within a tuple, including nonsingularity, require separate transport proofs.
+Do not list all tail bounds as open. Combining these completion budgets
+with coarse block counts, arbitrary singular conditioning and the stronger
+high-moment iteration remain open. Stronger high-order moment bounds and
+quantitative joint resonance control,
 the required exponential-sum saving, zeta growth and the VK zero-free region
 remain unproved here. Do not add a VK curve to the proved union or promote a
 conditional transfer as that analytic proof. The independent cofinal signed

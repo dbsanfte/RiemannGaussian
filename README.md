@@ -111,15 +111,15 @@ Make the proved region cover every applicable benchmark, preserving each height 
 
 ## Latest Update
 
-**The signed congruence count now covers common coarse residue classes.**
-Lean proves the count for original tuples sharing a residue modulo a prime
-power, provided their normalized next digits are distinct. Exact translation
-and integer quotient reconstruction retain both sign classes and apply the
-bound to blocks of the original moment equations. Arbitrary singular
-configurations, tail completion counts and the high-moment iteration remain
-open; the zero-free region is unchanged. The proved 67.31% simple-zero
-certificate retains separate optional verification and an unevaluated
-starting height.
+**Actual residue-window tails now have a normalized moment bound.**
+Lean bounds the compatible tail pairs for every fixed pair of weighted
+blocks, including every fixed tail sign pattern. Exact affine transport
+retains the original window, and a coordinate-swap identity keeps each
+complex weight before taking a norm. The next step is to combine these
+completion budgets with the coarse block counts and prove the stronger
+high-moment saving. The zero-free region is unchanged. The proved 67.31%
+simple-zero certificate keeps separate optional verification and an
+unevaluated starting height.
 [Certificate and audit](docs/numerical-certificate.md)
 · [Current region](docs/zeta-unified-zero-free.md)
 · [VK proof status](docs/vinogradov-korobov-framework.md).
