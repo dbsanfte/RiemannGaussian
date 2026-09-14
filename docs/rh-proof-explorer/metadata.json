@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 1,
-      "id": "dedicated-rh-campaign-explorer",
-      "kind": "presentation",
-      "title": "The RH campaign now has its own proof explorer.",
-      "body": "Follow the checked chain to the original Riesz carrier’s finite conditioned-energy bound, or inspect its preserved source limit. This presentation update adds no mathematical bound.",
-      "next": "Next: complete the initial global mean-value conditioning step, then seek the arithmetic saving needed to beat the source.",
+      "sequence": 2,
+      "id": "first-global-vinogradov-exponent-saving",
+      "kind": "theorem",
+      "title": "An independent global Vinogradov exponent improvement is proved.",
+      "body": "Lean closes initial global conditioning and saves 1/(3k) over the elementary high-moment exponent for every k≥2 and u≥k, at every sufficiently large cutoff. The critical moment exponent, VK zeta growth and a larger zero-free region remain open. The README overview now keeps ten major formalisation highlights.",
+      "next": "Next: strengthen the global moment exponent and feed the improved estimate into the existing weighted and zeta-growth machinery.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "vkRieszConditioningIterationTheorem"
+        "vkFirstGlobalExponentTheorem"
       ],
-      "documentation": "docs/zeta-riesz-conditioned-energy.md#direct-transfer-to-the-finite-conditioning-recurrence"
+      "documentation": "docs/vinogradov-korobov-framework.md#first-global-high-moment-exponent-improvement"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -67,11 +67,31 @@
         "sourceScope"
       ],
       "documentation": "docs/rh-proof-direction.md"
+    },
+    {
+      "id": "initial-conditioning",
+      "label": "Auxiliary advance · first global moment saving",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFirstGlobalExponentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkInitialGlobalIterationTheorem"
+        ]
+      ],
+      "scopePath": [
+        "rhCampaign",
+        "initialConditioningScope"
+      ],
+      "documentation": "docs/vinogradov-korobov-framework.md"
     }
   ],
   "scopes": {
     "boundScope": "Furthest checked carrier bound: the original Riesz band reaches the finite conditioned-energy recurrence, with its sampling costs and complex fibre correlations retained. The independent saving needed for an RH contradiction remains open.",
-    "sourceScope": "Under the displayed hypothetical right-half-zero assumptions, the normalized original carrier has the prescribed negative-multiplicity source limit. This conditional source identity supplies one side of the proposed contradiction; its independent arithmetic counterpart remains open."
+    "sourceScope": "Under the displayed hypothetical right-half-zero assumptions, the normalized original carrier has the prescribed negative-multiplicity source limit. This conditional source identity supplies one side of the proposed contradiction; its independent arithmetic counterpart remains open.",
+    "initialConditioningScope": "The full unweighted Vinogradov mean value now has an independent saving of 1/(3k) in its elementary exponent, for every k>=2 and u>=k and every sufficiently large cutoff. The prime packet, initial conditioning, finite allowance and extension to all large endpoints are proved without a supplied moment bound. The critical moment exponent, original weighted Riesz saving and VK zeta growth remain open; this auxiliary endpoint does not prove an RH contradiction or a larger zero-free region."
   },
   "theorems": {
     "RiemannGaussian.VinogradovMeanValue.weighted_gram": {
@@ -113,6 +133,71 @@
       "label": "Source limit under a hypothetical zero",
       "overview": true,
       "documentation": "docs/rh-proof-direction.md"
+    },
+    "RiemannGaussian.VinogradovInitialExceptional.moment_le_twice_distinctCount": {
+      "label": "Absorb the actual repeated-coordinate exception",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialPrimeTransfer.exists_prime_carrying_moment": {
+      "label": "One actual prime carries the global moment",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialEnergy.exists_prime_restricted_energy": {
+      "label": "Original separated self energy",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialFactor.separated_energy_eq_mixedMoment": {
+      "label": "Exact initial mixed-moment identity",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialConditioning.exists_initial_conditioning": {
+      "label": "Full global mean value enters conditioning",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialIteration.exists_initial_finite_iteration": {
+      "label": "Global mean value reaches the finite allowance",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialSaving.conditioned_initial_elementary_saving": {
+      "label": "Congruencing beats the elementary quotient cost",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialSaving.initial_allowance_saving": {
+      "label": "Independent saving in the actual finite allowance",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialSaving.global_meanValue_first_saving": {
+      "label": "Full global mean value gains a prime-scale saving",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovFirstExponent.global_meanValue_first_exponent_at_power_cutoff": {
+      "label": "Improved exponent on growing power cutoffs",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovFirstExponent.meanValue_mono": {
+      "label": "Preserve original solutions when the interval grows",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovFirstExponent.exists_global_first_exponent": {
+      "label": "First improved exponent at every sufficiently large cutoff",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovPrimePacket.exists_uniform_separating_packet": {
+      "label": "One prime packet covers all distinct blocks",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
     }
   }
 }

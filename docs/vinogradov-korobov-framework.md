@@ -23,8 +23,10 @@ Both original collision contributions now have explicit bounds, giving the
 actual finite conditioning recurrence. Its deeper remainder now has an
 explicit power saving at the elementary exponent, with rounded cutoffs and
 all constants paid. The normalized signed recurrence now couples these
-steps, retaining the full intermediate energy sum. High-moment exponent
-improvement through a full iteration remains open.
+steps, retaining the full intermediate energy sum. Initial global conditioning
+and a first independent exponent improvement of 1/(3k) are now proved for
+every k>=2,u>=k and all sufficiently large endpoints. Reaching the critical
+high-moment exponent through a full iteration remains open.
 The Vinogradov–Korobov zeta growth estimate
 and zero-free region remain unproved in this repository. No external
 analytic estimate is installed as an axiom or as a claimed discharged premise.
@@ -352,7 +354,7 @@ normalized mean-value budget for each fixed pair of blocks. The following
 combined count also pays all finite tail completions for canonical block
 representatives. The full conditioned-moment transfer is proved below;
 the one-step recurrence and elementary deep-remainder saving are proved below.
-Improving the high-moment exponent and controlling joint arithmetic resonance
+Reaching the critical high-moment exponent and controlling joint arithmetic resonance
 remain open. No required
 exponential-sum saving, new zeta-growth estimate, VK zero-free region or RH
 proof follows yet.
@@ -495,7 +497,7 @@ original complex products remain available upstream. The exact target
 partition, its whole-moment energy transfer, exact product factorization
 and both Hölder steps are now proved below, along with the higher
 homogeneous comparison, finite congruencing transfer and explicit one-step
-conditioning recurrence. Improving the high-moment exponent through further iteration
+conditioning recurrence. Reaching the critical high-moment exponent through further iteration
 still needs a proof. No new zero-free width follows yet, and no
 historical novelty is claimed for these classical ingredients.
 
@@ -565,7 +567,7 @@ It forces matching finer block residues in the surviving energies. The
 actual product identification and first finite Hölder bound follow next;
 the higher homogeneous comparison and finite congruencing step are proved
 below, together with the actual one-step conditioning recurrence. The
-high-moment exponent improvement and required high-moment saving remain open. No zero-free width follows yet.
+critical high-moment exponent and required high-moment saving remain open. No zero-free width follows yet.
 
 ## Literal products and the actual mixed-moment maximum
 
@@ -630,7 +632,7 @@ falling-factorial and floor lower bound on its original block mass;
 see the [explicit interpolated carrier bound](zeta-riesz-conditioned-energy.md).
 The higher homogeneous comparison and finite congruencing step are now
 proved below, together with both collision bounds and the actual one-step
-conditioning recurrence. The high-moment exponent improvement and full high-moment
+conditioning recurrence. The critical high-moment exponent and full high-moment
 iteration remain open.
 This is a classical finite congruencing ingredient, not a new VK growth
 estimate or a larger proved zero-free region.
@@ -692,7 +694,7 @@ This is the finite inequality underlying
 with explicit finite-window conventions and the retained sign factorial.
 The congruencing transfer and one-step conditioning recurrence are proved.
 Both collision contributions have the explicit upper bounds below. The
-high-moment exponent improvement, quantitative high-moment saving and required zeta
+critical high-moment exponent, quantitative high-moment saving and required zeta
 growth estimate remain open. The Riesz bridge preserves its original weighted
 moments; these are not identified with the unweighted conditioned moments
 in this theorem. No larger zero-free region is claimed from this step.
@@ -810,7 +812,7 @@ finite conditioning step in
 [Wooley (2012), Lemma 5.1](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf)
 with explicit constants; no historical novelty is claimed.
 
-The next classical obligations are the high-moment exponent improvement and
+The next classical obligations are the critical high-moment exponent and
 iteration with the proved congruencing transfer. The original Riesz
 moments retain their own complex weights and sampling costs; this
 unweighted conditioning theorem does not establish their quantitative
@@ -911,7 +913,7 @@ remainder step in
 [Wooley (2012), equations (5.4)–(5.5) and Lemma 5.2](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf)
 quantitative at the elementary starting exponent, while preserving the
 interface needed for subsequent improvements. The next section couples this remainder to signed congruencing.
-Improving the high-moment exponent through a full iteration remains open. The original Riesz moments still carry their own complex weights and
+Reaching the critical high-moment exponent through a full iteration remains open. The original Riesz moments still carry their own complex weights and
 sampling costs. No VK growth estimate or new zero-free width follows yet.
 
 ## Normalized signed congruencing recurrence
@@ -1006,12 +1008,130 @@ S^hp^{-2kuh}\le D^hp^{-(2ku-k+1)h},\qquad
 It uses that complete geometric allowance in the same actual recurrence.
 These are finite, quantitative ingredients of
 [Wooley (2012), Lemma 6.3](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
-The full iteration, its initial global mean-value conditioning and a
-sharper high-moment exponent still need proofs. The displayed defect factor
+The full iteration and the critical high-moment exponent still need proofs.
+The initial global mean-value conditioning is proved below. The displayed defect factor
 alone does not prove the next energies small. The original Riesz moments
 retain their own weights and sampling costs; they are not identified with
 these unweighted conditioned moments. No VK zeta-growth estimate, larger
 zero-free width or historical novelty is claimed here.
+
+## Initial global mean-value conditioning
+
+[`exists_initial_conditioning`](../RiemannGaussian/VinogradovInitialConditioning.lean)
+now starts from the full original mean value, without an assumed upper
+moment budget. For integers `k>=2`, `s>0`, `M>0`, `R>0`, suppose
+
+```math
+X\ge 4k^4,\qquad X^{k(k-1)}<M^R.
+```
+
+There are a prime and a canonical residue satisfying
+
+```math
+\boxed{M<p\le 2^R M,\quad 0\le\eta<p,\quad
+J_{k+s,k}(X)\le (2R)^2p^{2s}I_{0,1}(X;0,\eta).}
+```
+
+Every interval endpoint and complete frequency constraint is original.
+The proof proceeds through the following checked interfaces:
+
+1. [Full complex cross moments](../RiemannGaussian/VinogradovCrossMoment.lean)
+   retain every matching-frequency correlation. Nonzero integer dilation
+   preserves arbitrary weighted even moments exactly.
+2. [Repeated-coordinate moments](../RiemannGaussian/VinogradovRepeatedMoment.lean)
+   and [original repeated solutions](../RiemannGaussian/VinogradovRepeatedSolutions.lean)
+   bound the exceptional count by `k² J_r^(1-1/(2r))`. The actual diagonal
+   lower bound `J_r>=X^r` then [absorbs it](../RiemannGaussian/VinogradovInitialExceptional.lean),
+   giving `J_r<=2D` for the distinct-block count.
+3. One [uniform prime packet](../RiemannGaussian/VinogradovPrimePacket.lean)
+   covers every original distinct block. The ordered product of pairwise
+   distances is positive and at most `X^(k(k-1))`; the product of all packet
+   primes cannot divide it. A [finite cover and pigeonhole argument](../RiemannGaussian/VinogradovInitialPrimeTransfer.lean)
+   gives `J_r<=2R D_p` at one common prime.
+4. The [exact restricted complex correlation](../RiemannGaussian/VinogradovInitialEnergy.lean)
+   precedes Cauchy, producing `(2R)²` times the original restricted self
+   energy. [Exact block/tail factorization](../RiemannGaussian/VinogradovInitialFactor.lean)
+   identifies it with `I_(0,0)` before residue refinement reaches `I_(0,1)`.
+
+For `s=ku`, [the global finite-iteration theorem](../RiemannGaussian/VinogradovInitialIteration.lean)
+then proves
+
+```math
+\boxed{J_{(u+1)k,k}(X)
+ \le (2R)^2X^{k(2u+1)}\mathcal A_{0,1,H}(\lambda_0),
+ \qquad \lambda_0=k(2u+1).}
+```
+
+Here the allowance is the complete actual finite allowance defined above,
+including its `p^(-H/2)` remainder and every weighted intermediate
+conditioned energy. The additional conditions are `u>=k`, `H>=1`,
+`(2^R M)^(1+H)<=X`, and `(C D)^2<=M`. The initial factor `p^(2ku)` cancels
+the fine-scale denominator exactly.
+
+The hypotheses have explicit growing solutions: the companion theorem
+`initial_finite_iteration_at_power_cutoff` takes `X=(2^R M)^(1+H)`, with
+`R>2(1+H)k(k-1)` and sufficiently large `M` satisfying the displayed fixed
+thresholds. It discharges the packet budget and finite-cutoff condition.
+
+This closes the initial global entry and its connection to the actual finite
+recurrence. The first independent bound on its remaining levels is proved
+below. The original Riesz carrier has additional complex weights and
+sampling costs; this entry theorem does not supply its missing saving,
+VK zeta growth, or a larger zero-free region.
+
+## First global high-moment exponent improvement
+
+[`exists_global_first_exponent`](../RiemannGaussian/VinogradovFirstExponent.lean)
+now proves an independent improvement over the elementary moment exponent.
+For **every integer `k>=2` and `u>=k`**, there are `C>0` and a finite `X0`
+such that, for every integer `X>=X0`,
+
+```math
+\boxed{J_{(u+1)k,k}(X)
+ \le C X^{\,k(2u+1)-1/(3k)}.}
+```
+
+The baseline exponent was `k(2u+1)`. This theorem saves `1/(3k)` at every
+sufficiently large endpoint. Its prime, packet and moment conditions are
+discharged. **The terminal threshold has not been numerically evaluated.**
+The companion `global_meanValue_first_exponent` exposes the constant and
+threshold in terms of fixed admissible packet parameters.
+
+The [initial saving](../RiemannGaussian/VinogradovInitialSaving.lean)
+comes from paying the reverse elementary moment cost exactly. At coarse
+level zero, the net exponent is
+
+```math
+\frac{k(k-1)}2-\frac{k(k-1)}{u+1}
+ =\frac{k(k-1)(u-1)}{2(u+1)}\ge\frac13.
+```
+
+This bounds the **entire actual residue and colour maximum**. Consequently
+the complete depth-one allowance, including its deep remainder, satisfies
+
+```math
+\mathcal A_{0,1,1}(\lambda_0)
+ \le (1+E\,c_+C_{\rm elem})p^{-1/3}.
+```
+
+Here `E=selectionCost(k,u)`, `c_+` is the original all-positive block
+factorial, and `C_elem=elementaryConstant(k,u)`. Initial global conditioning
+transfers this to the original full mean value, with the fixed packet cost
+retained. On the explicit cutoffs `X=(2^R M)^k`, exact scaling converts
+`M^(-1/3)` into a fixed constant times `X^(-1/(3k))`.
+
+The extension to all large endpoints preserves original solutions:
+`meanValue_mono` injects every complete equal-frequency pair into the larger
+interval. `exists_nearby_power_cutoff` places each eligible `X` below a
+cutoff `Y<=2^k X`, so the exponent survives with a fixed additional constant.
+Finally, the theorem constructs all packet and base parameters.
+
+This is a first global exponent improvement in this formalization. It
+does not claim a literature record or the critical mean-value exponent.
+The stronger VK moment estimate, exponential-sum saving, near-one zeta
+growth and zero detector remain to be proved. The proved zero-free region
+and the independent saving needed for the original weighted Riesz carrier
+are unchanged.
 
 ## Direct application to the original Riesz carrier
 

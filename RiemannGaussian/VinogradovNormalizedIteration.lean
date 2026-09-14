@@ -19,9 +19,11 @@ Both block colours and the actual conditioned energies survive. The full
 sum remains upstream of its explicit geometric upper bound; no arbitrary
 moment budget occurs in the specialized terminal theorems. This is the
 finite normalized mechanism underlying Wooley (2012), Lemma 6.3, with
-explicit constants and the elementary starting exponent. A sharper moment
-exponent, the initial global mean-value conditioning, full iteration and
-VK zeta growth are not proved here. The original weighted Riesz moments
+explicit constants and the elementary starting exponent. The critical moment
+exponent, full iteration and VK zeta growth are not proved here. A first
+global exponent improvement is proved in `VinogradovFirstExponent`. The initial
+global entry is proved in `VinogradovInitialConditioning` and connected to
+this finite recurrence in `VinogradovInitialIteration`. The original weighted Riesz moments
 remain distinct from these unweighted conditioned moments.
 https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf
 -/

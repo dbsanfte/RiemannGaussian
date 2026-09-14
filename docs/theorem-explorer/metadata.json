@@ -95,7 +95,7 @@
     },
     {
       "id": "vk-phase",
-      "label": "Vinogradov–Korobov · mixed moments and direct Riesz bridge",
+      "label": "Vinogradov–Korobov · first global exponent saving",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -788,6 +788,102 @@
         [
           "gaussianPhaseBandToolkit",
           "vkRieszGeometricConditioningTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCrossMomentIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkWeightedDilationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRepeatedCoordinateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRepeatedPairTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkInitialExceptionalAbsorptionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUniformPrimePacketTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkInitialPrimeTransferTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkInitialRestrictedEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkInitialComplexFactorizationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkInitialMixedIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkInitialConditioningTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkInitialScaleCancellationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkInitialGlobalIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkInitialPacketFeasibilityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkInitialGrowingCutoffTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkInitialElementaryDefectTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkInitialConditionedSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkInitialAllowanceSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkInitialGlobalSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFirstPowerCutoffExponentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkMeanValueMonotonicityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNearbyPowerCutoffTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFirstGlobalExponentExplicitTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFirstGlobalExponentTheorem"
         ]
       ],
       "scopePath": [
@@ -3729,6 +3825,76 @@
       "label": "Original Riesz carrier receives the full geometric conditioned sum",
       "documentation": "docs/zeta-riesz-conditioned-energy.md",
       "overview": true
+    },
+    "RiemannGaussian.VinogradovInitialExceptional.moment_le_twice_distinctCount": {
+      "label": "Absorb the actual repeated-coordinate exception",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovPrimePacket.exists_uniform_conditioned_packet": {
+      "label": "One prime packet covers all distinct blocks",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialPrimeTransfer.exists_prime_carrying_moment": {
+      "label": "One actual prime carries the global moment",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialEnergy.exists_prime_restricted_energy": {
+      "label": "Original separated self energy",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialFactor.separated_energy_eq_mixedMoment": {
+      "label": "Exact initial mixed-moment identity",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialConditioning.exists_initial_conditioning": {
+      "label": "Full global mean value enters conditioning",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialIteration.exists_initial_finite_iteration": {
+      "label": "Global mean value reaches the finite allowance",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialIteration.initial_finite_iteration_at_power_cutoff": {
+      "label": "Explicit growing cutoffs satisfy the conditions",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialSaving.conditioned_initial_elementary_saving": {
+      "label": "Congruencing beats the elementary quotient cost",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialSaving.initial_allowance_saving": {
+      "label": "Independent saving in the actual finite allowance",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovInitialSaving.global_meanValue_first_saving": {
+      "label": "Full global mean value gains a prime-scale saving",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovFirstExponent.global_meanValue_first_exponent_at_power_cutoff": {
+      "label": "Improved exponent on growing power cutoffs",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovFirstExponent.meanValue_mono": {
+      "label": "Preserve original solutions when the interval grows",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovFirstExponent.exists_global_first_exponent": {
+      "label": "First improved exponent at every sufficiently large cutoff",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
     }
   }
 }

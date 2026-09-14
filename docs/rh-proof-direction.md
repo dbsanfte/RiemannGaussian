@@ -32,6 +32,15 @@ of simple critical-line zeros. Neither result supplies the missing signed
 arithmetic estimate. This explorer does not draw a proved arrow across that
 gap or estimate a percentage of RH completed.
 
+The **Auxiliary advance · first global moment saving** view now follows the
+full unweighted mean value into the actual finite conditioned-energy
+allowance and an independent global exponent improvement of `1/(3k)` for
+every `k>=2,u>=k`, at every sufficiently large cutoff. Prime selection,
+exceptional-coordinate absorption and all endpoint transfers are proved.
+[The precise theorem and remaining moment obstruction](vinogradov-korobov-framework.md#first-global-high-moment-exponent-improvement)
+remain separate from the original weighted-carrier endpoint. No arrow from
+this auxiliary result to an RH contradiction is asserted.
+
 ## Evergreen presentation
 
 [Campaign metadata](rh-proof-explorer/metadata.json) is the single source for

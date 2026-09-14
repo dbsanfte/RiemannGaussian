@@ -1924,7 +1924,7 @@ H_eta is the actual (2r+2)-moment and V_eta is the actual maximum of
 integral |R_eta|^2*|f_fine|^(2kr). `actual_band_le_interpolated_moments`
 retains all source weights/cutoffs and the explicit block denominator.
 Do not keep listing this analytic interpolation or the block normalization
-as open. The quantitative weighted-moment saving, the high-moment exponent improvement and full iteration remain open. The reverse mixed moment has a squared
+as open. The quantitative weighted-moment saving, the critical high-moment exponent and full iteration remain open. The reverse mixed moment has a squared
 Riesz factor; it is not assumed controlled. No new universal zero-free width
 is claimed.
 
@@ -1941,7 +1941,7 @@ I_(b,k*b)^(1/u), paying the explicit signed congruence and residue-count cost.
 The statement keeps independent block colours, every finite endpoint and all
 rounding. This is the finite inequality underlying Wooley (2012), Lemma 6.1;
 it assumes no moment budget. Do not list the higher homogeneous comparison
-or this finite transfer as open. The high-moment exponent improvement and
+or this finite transfer as open. The critical high-moment exponent and
 high-moment iteration remain open, as does the quantitative saving
 for the original weighted Riesz moments after all sampling costs. No new
 zero-free width follows from this finite step.
@@ -1960,7 +1960,7 @@ next-level mixed maximum. All finite Holder and integral hypotheses are paid;
 no supplied moment budget is assumed. This closes the singular contribution
 underlying Wooley (2012), equation (5.2). Do not list that contribution or its
 class refinement as open. The nonsingular estimate and one-step conditioning recurrence are now
-proved by the following modules; their high-moment exponent improvement and
+proved by the following modules; the critical high-moment exponent and
 high-moment iteration remain open. Neither the
 original weighted Riesz saving nor any larger zero-free width follows yet.
 
@@ -1978,7 +1978,7 @@ p,1<=k<=p,u>=1,eta<p^b and the original finite X. All moments and maxima
 are actual; no budget is assumed. These explicit constants are not optimized.
 This closes the finite step underlying Wooley (2012), Lemma 5.1. Do not list
 either collision bound, this Holder step or this one-step recurrence as
-open. Improving the high-moment exponent through further iteration remains open.
+open. Reaching the critical high-moment exponent through further iteration remains open.
 The weighted Riesz moments are not identified with these unweighted moments;
 their required saving and every new VK zero-free width remain unproved.
 
@@ -1998,7 +1998,7 @@ list this elementary remainder saving, its constant absorption, or its
 finite iteration as open. Keep the finite cutoff condition; this is not
 a decay limit in H at fixed X. The general exponent transfer explicitly
 requires its two homogeneous-moment bounds, which are discharged by the
-final theorem only at the elementary exponent. Improving the high-moment
+final theorem only at the elementary exponent. Reaching the critical high-moment
 exponent and the full congruencing iteration remain open. No original
 Riesz weighted saving, VK zeta growth or new zero-free width is claimed.
 
@@ -2020,9 +2020,51 @@ prime p,canonical eta<p^b and (C*D)^2<=p are its explicit conditions.
 The full intermediate sum remains before `conditioned_le_geometric_iteration`,
 which bounds each S^h*p^(-2kuh) by D^h*p^(-(2ku-k+1)h), including D.
 Do not list this finite normalization or coupling as open. The initial global
-mean-value conditioning, full iteration and improved high-moment exponent
-remain open; the defect factor alone does not bound the next energies.
+mean-value conditioning is proved below. Full iteration and the critical
+high-moment exponent remain open; the defect factor alone does not bound
+the next energies.
 No original weighted Riesz saving or larger zero-free region follows yet.
+
+`VinogradovCrossMoment` preserves complete complex correlations and proves
+weighted even-moment invariance under nonzero integer frequency dilation.
+`VinogradovRepeatedMoment`, `VinogradovRepeatedSolutions` and
+`VinogradovInitialExceptional` absorb the actual repeated-coordinate count
+using J_r>=X^r: for X>=4*k^4, the retained distinct-block count D satisfies
+J_r<=2D. `VinogradovPrimePacket` supplies one common packet of R primes in
+(M,2^R*M] when X^(k*(k-1))<M^R. `VinogradovInitialPrimeTransfer`,
+`VinogradovInitialEnergy` and `VinogradovInitialFactor` retain the original
+solutions and full complex polynomial identities before Cauchy and Holder.
+`VinogradovInitialConditioning.exists_initial_conditioning` proves, for
+k>=2,s>0,M>0,R>0 and those explicit size conditions, one actual prime and
+residue with J_(k+s,k)(X)<=(2R)^2*p^(2s)*I_(0,1)(X;0,eta).
+`VinogradovInitialIteration.exists_initial_finite_iteration` cancels the
+initial residue factor exactly and gives J_((u+1)k,k)(X)<=
+(2R)^2*X^(k(2u+1))*A_(0,1,H)(lambda0), retaining the full actual allowance.
+Its additional conditions are u>=k,H>=1,(2^R*M)^(1+H)<=X and (C*D)^2<=M.
+The packet conditions are also discharged on explicit growing power cutoffs;
+no upper moment budget is assumed. Do not list the initial global entry or
+its connection to the finite recurrence as open. The first independent bound on its remaining
+energies is proved below. This is an unweighted mean-value result,
+not a new zero-free width or a saving for the original weighted Riesz carrier.
+The RH explorer includes this as a separate auxiliary endpoint while its
+default frontier remains the actual carrier bound.
+
+`VinogradovInitialSaving` now bounds the actual initial conditioned level
+by the net exponent k(k-1)(u-1)/(2(u+1))>=1/3 for k,u>=2, after paying the
+actual elementary quotient cost. The full depth-one allowance has an
+independent p^(-1/3) saving, and global conditioning transfers it to J.
+`VinogradovFirstExponent` converts that saving exactly on power cutoffs,
+proves collision-preserving monotonicity, and covers every sufficiently
+large endpoint by a nearby cutoff. `exists_global_first_exponent` proves,
+for every k>=2,u>=k, positive C and finite X0 with
+J_((u+1)k,k)(X)<=C*X^(k(2u+1)-1/(3k)) for every X>=X0. The packet/base
+parameters are constructed; no homogeneous-moment estimate is assumed.
+Do not list the first global exponent improvement as open. The critical
+exponent, full VK growth/detector chain, quantitative original weighted
+Riesz saving and additional zero-free benchmark coverage remain open.
+The terminal threshold is existential; no evaluated threshold or historical
+novelty is claimed. Keep this unweighted exponent in the auxiliary RH view;
+its default endpoint remains the actual original-carrier bound.
 
 `VinogradovFibreCorrelation` now retains the exact complex average of the
 original configuration weights on each full frequency fibre. Its exact
@@ -2042,7 +2084,7 @@ nonzero p and (C*D)^2<=p; the same budget proves k<p and block positivity.
 No missing weighted-moment estimate is assumed. Do not list this direct
 finite Riesz-to-conditioning transfer as open. A net saving in its actual
 correlations and conditioned levels after all costs remains unproved,
-as do the improved high-moment exponent, VK growth and a larger region.
+as do the critical high-moment exponent, VK growth and a larger region.
 Do not infer a pointwise comparison of oscillating polynomials from the
 integrated fibre comparison, or send H to infinity at a fixed cutoff.
 
@@ -2107,8 +2149,15 @@ abstractions.
    mathematical significance, breadth and relevance to the project's goals,
    rather than recency or the number of new lemmas. A new entry may replace
    an existing one only if it is materially more significant; otherwise keep
-   the result in `Notable Formalisations`, its detailed documentation and the
-   generated inventory. Consolidate related theorem steps into one result
+   the result in its detailed documentation and the generated inventory.
+   Limit `Notable Formalisations` to exactly ten significant results or
+   frameworks as well, consolidating related theorem steps and selecting by
+   mathematical significance rather than recency. New entries must displace
+   less significant ones; the complete catalogue belongs in the family index.
+   Keep `Mathematical Program` out of the README: the active program is already
+   described by `Current RH Proof Direction`. The live GitHub renderer check
+   must verify the ten-entry Notable table and the absence of that section.
+   Consolidate related theorem steps into one result
    rather than spending multiple slots on the same advance. Preserve source
    attribution, scope and any unevaluated thresholds when shortening text.
    Place `Repository Structure` immediately after `Accomplishments`. Keep it

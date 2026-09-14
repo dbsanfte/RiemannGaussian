@@ -229,6 +229,20 @@ def run(output, published):
                 assert 0 < rh_placement['width'] <= rh_placement['available'] + 1
                 assert all(rh_placement[k] for k in ('afterHeading', 'beforeNextHeading', 'beforeUpdate', 'updateNested'))
                 page.screenshot(path=str(output / f"rh-proof-direction-{width}.png"))
+                catalogue = article.evaluate("""a => {
+                    const headings = [...a.querySelectorAll('h2')];
+                    const names = headings.map(h => h.textContent.trim());
+                    const start = headings[names.indexOf('Notable Formalisations')];
+                    const end = headings[names.indexOf('Accomplishments')];
+                    const between = e => start && end &&
+                        Boolean(start.compareDocumentPosition(e) & Node.DOCUMENT_POSITION_FOLLOWING) &&
+                        Boolean(e.compareDocumentPosition(end) & Node.DOCUMENT_POSITION_FOLLOWING);
+                    const tables = [...a.querySelectorAll('table')].filter(between);
+                    return {mathematicalProgramAbsent: !names.includes('Mathematical Program'),
+                        notableTables: tables.length,
+                        notableEntries: tables.reduce((n, t) => n + t.querySelectorAll('tbody tr').length, 0)};
+                }""")
+                assert catalogue == {'mathematicalProgramAbsent': True, 'notableTables': 1, 'notableEntries': 10}, catalogue
                 checks.append({"width": width, "mathBlocks": math.count(), "boxes": boxes,
                                "errors": errors, "sizes": sizes, "frameBorders": frames,
                                "frameSizes": tables,
@@ -236,6 +250,7 @@ def run(output, published):
                                "numericalCertificateGraph": certificate_placement,
                                "certificationBadge": CERTIFICATE_WORKFLOW,
                                "rhProofDirection": rh_placement,
+                               "notableFormalisations": catalogue,
                                "researchAgentsInIntroduction": True,
                                "explorerLinks": "valid"})
                 page.close()

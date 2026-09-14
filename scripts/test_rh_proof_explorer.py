@@ -106,7 +106,27 @@ def run(output, url=None, refresh_preview=False):
                     assert fetched.status == 200, asset
                 audit = page.request.get(url + 'audit.json').json()
                 assert audit['standardAxiomsOnly'] and not audit['rhImplied']
-                assert set(audit['endpointAxioms']) == {expected, source_root}
+                endpoint_roots = {
+                    campaign.explorer.at_path(status, path)
+                    for endpoint in meta['endpoints'] for path in endpoint['statusPaths']
+                }
+                assert set(audit['endpointAxioms']) == endpoint_roots
+                for endpoint in meta['endpoints']:
+                    page.locator('#endpoint').select_option(endpoint['id'])
+                    actual = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i].id)')
+                    assert set(actual) == {
+                        campaign.explorer.at_path(status, path) for path in endpoint['statusPaths']
+                    }
+                    if endpoint['id'] == 'initial-conditioning':
+                        assert 'unweighted' in page.locator('#scope-text').inner_text()
+                        assert 'remain open' in page.locator('#scope-text').inner_text()
+                        statement = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]].statement')
+                        assert 'meanValue' in statement and '∃' in statement
+                        assert '1 / (3 *' in statement
+                    page.locator('#all-steps').click()
+                    assert page.evaluate('PROOF_VIEW.visible.size > 5')
+                    page.locator('#overview').click()
+                    page.locator('#fit').click()
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth + 1')
                 checks.append({'width': width, 'terminal': expected, 'source': source_url,
                                'conditionalSource': source_root, 'hoverStatementAndAxioms': True,
