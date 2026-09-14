@@ -146,6 +146,13 @@ def run(output, url=None, refresh_preview=False):
                         cost_statement = ' '.join(cost['statement'].split())
                         assert cost_statement.endswith('≤ 2') and '12 ≤ k' in cost_statement
                         assert '1 / ↑(2 * r * r)' in cost_statement
+                        finite = page.evaluate("PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i]).find(n => n.id.endsWith('.exists_finite_critical_iteration'))")
+                        assert finite is not None
+                        assert all(term in finite['statement'] for term in ('meanValue', 'A ^ n', 'factorial', '1 ≤ X', 'defect'))
+                        assert finite['source']['path'].endswith('VinogradovFiniteCritical.lean')
+                        profile = page.evaluate("PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i]).find(n => n.id.endsWith('.uniform_profile_degree_cost_iteration'))")
+                        assert profile is not None
+                        assert all(term in profile['statement'] for term in ('conditionedMoment', '7 * k', 'C * B', 'iterationConstant'))
                     if endpoint['id'] == 'full-recurrence':
                         statement = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]].statement')
                         assert 'conditioningAllowance' in statement and 'a ≤ b' in statement

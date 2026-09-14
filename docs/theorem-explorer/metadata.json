@@ -1140,6 +1140,38 @@
         [
           "gaussianPhaseBandToolkit",
           "vkDampedFeatureSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDefectRemainderTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkConstantPreservingIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkProfileConstantHomogeneityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUniformProfileCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkProfileDegreeCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkLinearGlobalSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkLinearAllEndpointImprovementTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFiniteCriticalIterationTheorem"
         ]
       ],
       "scopePath": [
@@ -4594,6 +4626,46 @@
       "label": "The literal damped zeta coefficients inherit cancellation",
       "overview": true,
       "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovDefectRemainder.deep_remainder_preserving_defect": {
+      "label": "The actual remainder retains the full exponent defect",
+      "overview": true,
+      "documentation": "docs/vinogradov-linear-constants.md"
+    },
+    "RiemannGaussian.VinogradovConstantPreservation.normalized_iteration_preserving_constant": {
+      "label": "Keep the source constant linear through conditioning",
+      "overview": true,
+      "documentation": "docs/vinogradov-linear-constants.md"
+    },
+    "RiemannGaussian.VinogradovConstantPreservation.profile_constant_homogeneity": {
+      "label": "The two Holder factors preserve one exact source constant",
+      "overview": true,
+      "documentation": "docs/vinogradov-linear-constants.md"
+    },
+    "RiemannGaussian.VinogradovLinearProfile.uniform_profile_constant_iteration": {
+      "label": "One explicit profile ceiling works at every finite depth",
+      "overview": true,
+      "documentation": "docs/vinogradov-linear-constants.md"
+    },
+    "RiemannGaussian.VinogradovLinearProfile.uniform_profile_degree_cost_iteration": {
+      "label": "The actual profile multiplier is at most (2ku)^(7k)",
+      "overview": true,
+      "documentation": "docs/vinogradov-linear-constants.md"
+    },
+    "RiemannGaussian.VinogradovLinearSaving.exists_linear_global_profile_saving": {
+      "label": "Original global moments retain a linear source constant",
+      "overview": true,
+      "documentation": "docs/vinogradov-linear-constants.md"
+    },
+    "RiemannGaussian.VinogradovLinearExponent.exists_linear_all_endpoint_improvement": {
+      "label": "A fixed multiplier improves every positive integer endpoint",
+      "overview": true,
+      "documentation": "docs/vinogradov-linear-constants.md"
+    },
+    "RiemannGaussian.VinogradovFiniteCritical.exists_finite_critical_iteration": {
+      "label": "Finite critical-moment descent keeps the exact cost A^n k!",
+      "overview": true,
+      "documentation": "docs/vinogradov-linear-constants.md"
     }
   }
 }

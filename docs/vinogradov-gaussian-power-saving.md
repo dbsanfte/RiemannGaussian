@@ -215,3 +215,8 @@ The compiled endpoints appear in the **Critical moments** view of the
 Vinogradov–Korobov view of the [main explorer](https://dbsanfte.github.io/RiemannGaussian/).
 Their metadata, exact source locations and transitive axiom audits come from
 the ordinary Lean root.
+
+The [finite constant-preserving moment descent](vinogradov-linear-constants.md)
+now keeps A^n*k! at every positive integer endpoint and proves an explicit
+profile multiplier bound independent of conditioning iteration count. The
+complete degree dependence of the global moment coefficient remains open.

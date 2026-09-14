@@ -55,6 +55,12 @@ averaging, phase approximation, damping transport and moment reduction;
 critical high-order moments and the actual rectangle saving are now proved.
 The uniform quantitative moment costs needed for a VK zeta bound remain open.
 
+The [finite critical-moment iteration](vinogradov-linear-constants.md) now
+retains the homogeneous constant linearly and reaches all positive integer
+endpoints with coefficient A^n*k!. The actual profile multiplier is at most
+(2ku)^(7k), independent of iteration count. The complete global degree costs
+and uniform zeta transport remain open.
+
 ## Exact signed expansion
 
 For every natural degree `k` and **every `x ≥ 0`**, define

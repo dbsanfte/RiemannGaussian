@@ -2,7 +2,7 @@
 
 # Theorem-family index
 
-Browse all **1,935 Lean source modules** by mathematical family. Every listed module is reachable from a declared build target. Modules marked **optional certificate build** require `lake build NumericalCertificate --wfail`; ordinary builds exclude them.
+Browse all **1,941 Lean source modules** by mathematical family. Every listed module is reachable from a declared build target. Modules marked **optional certificate build** require `lake build NumericalCertificate --wfail`; ordinary builds exclude them.
 
 The family names, colours and assignments share the explorer's [evergreen metadata](../theorem-explorer/metadata.json). [Open the interactive proof chain](https://dbsanfte.github.io/RiemannGaussian/) for theorem statements, dependency paths and axiom audits.
 
@@ -13,7 +13,7 @@ The family names, colours and assignments share the explorer's [evergreen metada
 | [Eta & reflection](eta.md) | 388 | Paired eta identities, continuation and exact reflected tails. |
 | [Gaussian heat](heat.md) | 119 | Gaussian transforms, smoothed zero sources, exact prime identities and retained remainders. |
 | [Phase positivity](phase.md) | 89 | Coupled phase kernels, contact factorization and the mathematically defined admissible family. |
-| [Oscillatory sums](oscillation.md) | 147 | Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates. |
+| [Oscillatory sums](oscillation.md) | 153 | Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates. |
 | [Euler & prime structure](euler.md) | 31 | Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prime expansions. |
 | [Signed strip geometry](strip.md) | 66 | Complex analytic estimates, disc-to-strip maps, complete divisors and signed boundary identities. |
 | [Gamma & completion](completion.md) | 18 | Archimedean corrections, digamma/trigamma estimates and exact pole cancellation. |

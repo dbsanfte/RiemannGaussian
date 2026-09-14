@@ -195,6 +195,10 @@ def run(output, published):
                 assert badge_url == CERTIFICATE_WORKFLOW + "/badge.svg", badge_url
                 assert badge.evaluate("e => Boolean(e.compareDocumentPosition(e.closest('article').querySelectorAll('h2')[1]) & Node.DOCUMENT_POSITION_PRECEDING)")
                 assert badge.evaluate("e => Boolean(e.compareDocumentPosition(e.closest('article').querySelectorAll('h2')[2]) & Node.DOCUMENT_POSITION_FOLLOWING)")
+                # The published page can leave this off-screen workflow image
+                # pending. Bring the actual badge into view before requiring
+                # a loaded image and measuring its visible layout.
+                badge.scroll_into_view_if_needed()
                 page.wait_for_function("""selector => {
                     const e = document.querySelector(selector)?.querySelector("img[alt='Numerical certificate verification']");
                     return e && e.complete && e.naturalWidth > 0 && e.clientWidth > 0;

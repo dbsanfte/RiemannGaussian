@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Literal damped zeta blocks inherit the saving; Gaussian costs are uniform.** For each fixed k≥12, the proved rectangle saving now reaches every nonnegative decreasing weight family and the actual damped zeta coefficients. The main term pays total weight and the endpoint error only the initial weight. All Gaussian constants together cost at most 2 after the actual moment root. Moment constants and starting thresholds remain unevaluated; the zero-free region is unchanged.
-Next: bound the degree dependence of the homogeneous moments and complete the all-scale zeta transport.
-[Current checked endpoint](RiemannGaussian/VinogradovDampedSaving.lean#L80)
-· [Proof details](docs/vinogradov-gaussian-power-saving.md).
+**Critical moments now have a finite cost-preserving proof at every cutoff.** For k≥2,u≥k and every positive critical allowance, Lean reaches the actual moment bound by finite descent from the elementary estimate, retaining the cost A^n·k! at every positive integer cutoff. The conditioning profile multiplier is explicitly at most (2ku)^(7k), independently of iteration count. The sharper remainder also retains the full exponent-defect saving. The final degree dependence of A and n remains unevaluated; the zero-free region is unchanged.
+Next: quantify the remaining cutoff and prime-packet costs, and carry the stronger defect saving through the global iteration.
+[Current checked endpoint](RiemannGaussian/VinogradovFiniteCritical.lean#L90)
+· [Proof details](docs/vinogradov-linear-constants.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
@@ -160,7 +160,7 @@ hypotheses; the [family index](docs/theorem-families/README.md) covers the full 
 | **Gaussian/Weil explicit formula** | The arithmetic Gaussian expression, including prime-power and Archimedean terms, equals the complete multiplicity-weighted symmetric zero sum for every positive width. | [canonical explicit formula](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean#L1235) |
 | **Gaussian heat and reflected-zero Grams** | The complete Gaussian correlation equals the boundary heat-residue sum. Its vanishing at positive heat time is equivalent to RH; that vanishing remains unproved. | [correlation identity and RH equivalence](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L187) |
 | **Suzuki arithmetic and spectral formulas** | Suzuki's arithmetic function equals its spectral expansion in the safe half-plane. The literal arithmetic Psi is strictly positive on a nonzero punctured neighbourhood of the origin. | [spectral identity](RiemannGaussian/RiemannXiSuzukiWeilVerticalLimit.lean#L462), [local positivity](RiemannGaussian/RiemannXiSuzukiPointwiseLocalPositivity.lean#L298) |
-| **Vinogradov moments and Dirichlet sums** | Critical high-order moments with every positive ε, and a power saving for literal damped Dirichlet blocks across continuous parameter intervals. Gaussian costs are uniform; moment constants and thresholds are unevaluated. | [critical moments](RiemannGaussian/VinogradovCriticalExponent.lean), [actual power saving and scope](docs/vinogradov-gaussian-power-saving.md) |
+| **Vinogradov moments and Dirichlet sums** | Critical high-order moments by finite descent with retained constants, and power savings for literal damped Dirichlet blocks. Profile and Gaussian costs have explicit bounds; the complete degree dependence remains open. | [finite critical moments](docs/vinogradov-linear-constants.md), [actual power saving and scope](docs/vinogradov-gaussian-power-saving.md) |
 | **Exact phase optimiser and arithmetic floor** | The specified phase cost has a unique eight-frequency optimiser across all feasible finite or infinite integer-frequency families, with a proved arithmetic floor. | [exact optimiser](RiemannGaussian/ZetaPhaseExactOptimizer.lean), [arithmetic floor and exclusion criterion](RiemannGaussian/ZetaPhaseBinomialScale.lean) |
 | **Eta heat and continuous phase matrices** | Exact eta heat/spectral correspondence and small-width matrix coercivity for distinct integer probes retain the full complex Gram correlations. | [heat/spectral identity](RiemannGaussian/EtaSupportGapGaussianSpectral.lean), [continuous matrix coercivity](RiemannGaussian/Hybrid/EtaSupportGapPhaseCoercivity.lean#L276) |
 | **Original signed Riesz carrier bound** | Critical moments plus positive ε and a proved negative initial-energy profile bound the actual carrier. Signed correlation and sampling costs still need a combined saving. | [actual carrier bound](RiemannGaussian/ZetaRieszCriticalProfile.lean), [preserved source](RiemannGaussian/ZetaRieszConditionedEnergy.lean) |
@@ -181,7 +181,9 @@ and the [proof inventory](docs/proof-status.json).
 - **The critical high-order Vinogradov moment exponent, with every positive ε.**
   [The global theorem](RiemannGaussian/VinogradovCriticalExponent.lean)
   covers every k≥2, u≥k at all sufficiently large endpoints without an
-  assumed moment estimate. Its constants and thresholds are unevaluated.
+  assumed moment estimate. A [finite descent](docs/vinogradov-linear-constants.md)
+  now retains the cost A^n·k! at every positive integer cutoff, with an
+  explicit profile multiplier. The complete degree dependence remains open.
   The full Gaussian degree window now also gives a [power saving for original
   Dirichlet blocks](docs/vinogradov-gaussian-power-saving.md) throughout the
   stated continuous intervals, including the actual zeta damping. Gaussian

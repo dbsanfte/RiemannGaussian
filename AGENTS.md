@@ -2220,6 +2220,32 @@ critical-moments view and Latest Update. See
 entries in both ten-entry README lists; do not add entries or trigger
 exhaustive certificate verification.
 
+`VinogradovDefectRemainder.deep_remainder_preserving_defect` retains the
+actual exponent-defect contribution -delta*u/(u+1)*(b-a+H) alongside
+-H/2 and the original constant C, under D^2<=p. The named coarse theorem
+in `VinogradovConstantPreservation` is now a downstream relaxation of this
+stronger result. Its complete actual allowance and Holder identities keep
+C linear; no C-dependent prime threshold is needed in the new chain.
+`VinogradovLinearProfile` proves the actual profile multiplier is at most
+(k!)^2*(1+2*selectionCost)^(2/u) <= (2ku)^(7k), independently of the
+finite iteration count. Descendant depth T remains unevaluated.
+`VinogradovLinearSaving` transports C linearly through the actual initial
+allowance and prime packet. `VinogradovLinearExponent` chooses one positive
+decrement and multiplier before the source exponent and C, covering every
+positive integer endpoint. `VinogradovFiniteCritical.exists_finite_critical_iteration`
+starts from the proved elementary bound and reaches critical+defect for
+every positive defect, with exact accumulated cost A^n*k! and no analytic
+moment premise. Do not list this finite, all-endpoint descent as open.
+The numerical degree dependence of the global A, decrement and stopping
+count remains open. The stronger defect saving is retained upstream, but
+the present profile/global allowance still uses its named half-depth
+relaxation and clips the initial exponent at -1/2. Do not claim those
+losses have been removed downstream. Quantify cutoff/prime-packet costs
+before inferring uniform zeta growth, a VK region or a new universal width.
+The Riesz critical profile remains the default RH explorer endpoint; expose
+the finite descent and explicit profile costs in its critical-moments view
+and Latest Update. See `docs/vinogradov-linear-constants.md`.
+
 Work in one coherent slice at a time. A slice should close a real lemma or
 interface needed by the current RH frontier, not merely add parallel
 abstractions.

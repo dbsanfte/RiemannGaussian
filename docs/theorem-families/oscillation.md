@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**147 modules.** Source links open the definitions, hypotheses and proofs.
+**153 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [DerivativeOrderComparison](../../RiemannGaussian/DerivativeOrderComparison.lean)
@@ -78,16 +78,19 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovCongruenceEnergy](../../RiemannGaussian/VinogradovCongruenceEnergy.lean)
 - [VinogradovCongruencingScaling](../../RiemannGaussian/VinogradovCongruencingScaling.lean)
 - [VinogradovCongruencingStep](../../RiemannGaussian/VinogradovCongruencingStep.lean)
+- [VinogradovConstantPreservation](../../RiemannGaussian/VinogradovConstantPreservation.lean)
 - [VinogradovCriticalExponent](../../RiemannGaussian/VinogradovCriticalExponent.lean)
 - [VinogradovCriticalKorobov](../../RiemannGaussian/VinogradovCriticalKorobov.lean)
 - [VinogradovCriticalNormalization](../../RiemannGaussian/VinogradovCriticalNormalization.lean)
 - [VinogradovCrossMoment](../../RiemannGaussian/VinogradovCrossMoment.lean)
 - [VinogradovDampedSaving](../../RiemannGaussian/VinogradovDampedSaving.lean)
+- [VinogradovDefectRemainder](../../RiemannGaussian/VinogradovDefectRemainder.lean)
 - [VinogradovDegreeWindow](../../RiemannGaussian/VinogradovDegreeWindow.lean)
 - [VinogradovDirichletSaving](../../RiemannGaussian/VinogradovDirichletSaving.lean)
 - [VinogradovExplicitKorobov](../../RiemannGaussian/VinogradovExplicitKorobov.lean)
 - [VinogradovExponentBootstrap](../../RiemannGaussian/VinogradovExponentBootstrap.lean)
 - [VinogradovFibreCorrelation](../../RiemannGaussian/VinogradovFibreCorrelation.lean)
+- [VinogradovFiniteCritical](../../RiemannGaussian/VinogradovFiniteCritical.lean)
 - [VinogradovFirstExponent](../../RiemannGaussian/VinogradovFirstExponent.lean)
 - [VinogradovFourierEvaluation](../../RiemannGaussian/VinogradovFourierEvaluation.lean)
 - [VinogradovFullPowerSaving](../../RiemannGaussian/VinogradovFullPowerSaving.lean)
@@ -115,6 +118,9 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovKorobovLogPhase](../../RiemannGaussian/VinogradovKorobovLogPhase.lean)
 - [VinogradovKorobovMoment](../../RiemannGaussian/VinogradovKorobovMoment.lean)
 - [VinogradovKorobovPowerSaving](../../RiemannGaussian/VinogradovKorobovPowerSaving.lean)
+- [VinogradovLinearExponent](../../RiemannGaussian/VinogradovLinearExponent.lean)
+- [VinogradovLinearProfile](../../RiemannGaussian/VinogradovLinearProfile.lean)
+- [VinogradovLinearSaving](../../RiemannGaussian/VinogradovLinearSaving.lean)
 - [VinogradovMeanValue](../../RiemannGaussian/VinogradovMeanValue.lean)
 - [VinogradovMomentPartition](../../RiemannGaussian/VinogradovMomentPartition.lean)
 - [VinogradovMomentReduction](../../RiemannGaussian/VinogradovMomentReduction.lean)
