@@ -111,15 +111,14 @@ Make the proved region cover every applicable benchmark, preserving each height 
 
 ## Latest Update
 
-**The singular part of conditioning now has an explicit Lean bound.**
-The actual mixed moment splits according to the residue classes occupied by
-both tails together. Exact signed identities retain every original entry;
-a proved binomial and Hölder cost controls the singular contribution by the
-next-level mixed-moment maximum. The nonsingular estimate, full VK iteration
-and quantitative Riesz weighted saving remain open. The proved zero-free
-region is unchanged.
-[Latest Lean theorem](RiemannGaussian/VinogradovSingularConditioning.lean)
-· [Exact bound and scope](docs/vinogradov-korobov-framework.md#explicit-singular-conditioning-bound).
+**The actual finite conditioning recurrence now has a Lean proof.**
+Both singular and nonsingular collision contributions have explicit bounds.
+Selected blocks retain signs from both tails and their exact complements;
+Hölder and absorption then give a recurrence between actual moments with
+proved constants. High-moment iteration and the quantitative Riesz weighted
+saving remain open. The proved zero-free region is unchanged.
+[Latest Lean theorem](RiemannGaussian/VinogradovNonsingularConditioning.lean)
+· [Exact recurrence and scope](docs/vinogradov-korobov-framework.md#explicit-finite-conditioning-recurrence).
 
 ## Notable Formalisations
 

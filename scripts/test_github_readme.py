@@ -91,20 +91,22 @@ def run(output, published):
                 assert plot.count() == 1
                 assert "docs/zero-free-regions/comparison.svg" in plot.locator("..").get_attribute("href")
                 plot.evaluate("e => e.scrollIntoView({block: 'center'})")
-                page.wait_for_function("""selector => {
-                    const e = document.querySelector(selector).querySelector(
+                # Hydration can briefly replace the article with an image
+                # whose intrinsic size is known before layout is visible.
+                # Capture loaded-image and positive-layout evidence together.
+                placement = page.wait_for_function("""selector => {
+                    const e = document.querySelector(selector)?.querySelector(
                         "img[alt^='Zero-free region comparison:']");
-                    return e && e.complete && e.naturalWidth > 0;
-                }""", arg=selector)
-                placement = plot.evaluate("""e => {
+                    if (!e || !e.complete || e.naturalWidth <= 0) return false;
                     const article = e.closest('article');
+                    if (e.clientWidth <= 0 || article.clientWidth <= 0) return false;
                     const headings = article.querySelectorAll('h2');
                     const after = n => Boolean(e.compareDocumentPosition(n) & Node.DOCUMENT_POSITION_FOLLOWING);
                     return {width: e.clientWidth, available: article.clientWidth,
                         naturalWidth: e.naturalWidth, afterHeading: !after(headings[0]),
                         beforeNextHeading: after(headings[1]),
                         beforeFormula: after(article.querySelector('math-renderer'))};
-                }""")
+                }""", arg=selector).json_value()
                 assert 0 < placement["width"] <= placement["available"] + 1, placement
                 assert placement["afterHeading"] and placement["beforeNextHeading"] and placement["beforeFormula"], placement
                 page.screenshot(path=str(output / f"zero-free-graph-{width}.png"))

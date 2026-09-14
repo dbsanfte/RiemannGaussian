@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**96 modules.** Source links open the definitions, hypotheses and proofs.
+**100 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [DerivativeOrderComparison](../../RiemannGaussian/DerivativeOrderComparison.lean)
@@ -70,6 +70,7 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovConditionedCompletion](../../RiemannGaussian/VinogradovConditionedCompletion.lean)
 - [VinogradovConditionedHigherMoment](../../RiemannGaussian/VinogradovConditionedHigherMoment.lean)
 - [VinogradovConditionedMoment](../../RiemannGaussian/VinogradovConditionedMoment.lean)
+- [VinogradovConditioningHolder](../../RiemannGaussian/VinogradovConditioningHolder.lean)
 - [VinogradovConditioningSupport](../../RiemannGaussian/VinogradovConditioningSupport.lean)
 - [VinogradovCongruenceEnergy](../../RiemannGaussian/VinogradovCongruenceEnergy.lean)
 - [VinogradovCongruencingStep](../../RiemannGaussian/VinogradovCongruencingStep.lean)
@@ -87,6 +88,8 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovMeanValue](../../RiemannGaussian/VinogradovMeanValue.lean)
 - [VinogradovMomentPartition](../../RiemannGaussian/VinogradovMomentPartition.lean)
 - [VinogradovMomentReduction](../../RiemannGaussian/VinogradovMomentReduction.lean)
+- [VinogradovNonsingularConditioning](../../RiemannGaussian/VinogradovNonsingularConditioning.lean)
+- [VinogradovNonsingularSelection](../../RiemannGaussian/VinogradovNonsingularSelection.lean)
 - [VinogradovPartitionEnergy](../../RiemannGaussian/VinogradovPartitionEnergy.lean)
 - [VinogradovPowerSumRigidity](../../RiemannGaussian/VinogradovPowerSumRigidity.lean)
 - [VinogradovPrimePowerRigidity](../../RiemannGaussian/VinogradovPrimePowerRigidity.lean)
@@ -95,6 +98,7 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovResidueEnergy](../../RiemannGaussian/VinogradovResidueEnergy.lean)
 - [VinogradovResidueMoment](../../RiemannGaussian/VinogradovResidueMoment.lean)
 - [VinogradovShiftedMoment](../../RiemannGaussian/VinogradovShiftedMoment.lean)
+- [VinogradovSignedComplement](../../RiemannGaussian/VinogradovSignedComplement.lean)
 - [VinogradovSignedCongruence](../../RiemannGaussian/VinogradovSignedCongruence.lean)
 - [VinogradovSignedRigidity](../../RiemannGaussian/VinogradovSignedRigidity.lean)
 - [VinogradovSignedTailMoment](../../RiemannGaussian/VinogradovSignedTailMoment.lean)

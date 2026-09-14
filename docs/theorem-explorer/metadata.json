@@ -636,6 +636,42 @@
         [
           "gaussianPhaseBandToolkit",
           "vkSingularNextMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFullComplementProductTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkOriginalNonsingularEquationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSelectedInjectionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSelectedComplexProductTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkConditioningHolderTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkConditioningAbsorptionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNonsingularSignedSumTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNonsingularMaxTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFiniteConditioningStepTheorem"
         ]
       ],
       "scopePath": [
@@ -3338,6 +3374,51 @@
     },
     "RiemannGaussian.VinogradovSingularConditioning.singular_count_le_next_mixed_max": {
       "label": "The actual singular count has an explicit finer-moment bound",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovSignedComplement.complement_polynomial_eq_product": {
+      "label": "Every original signed complement retains its exact complex product",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovNonsingularSelection.nonsingular_collision_selected_equation": {
+      "label": "The original collision keeps both blocks and the full signed complement",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovNonsingularSelection.selectedToTarget_injective": {
+      "label": "Actual selected solutions inject without losing original entries",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovNonsingularSelection.target_polynomial_eq_product": {
+      "label": "The selected target factors exactly with all original signs",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditioningHolder.conditioning_holder": {
+      "label": "The actual nonsingular Holder step has every integral condition proved",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditioningHolder.holder_absorption": {
+      "label": "Absorb the original moment with explicit constants",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovNonsingularConditioning.nonsingular_count_le_signed_moments": {
+      "label": "Retain all actual induced-sign moments before the maximum",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovNonsingularConditioning.nonsingular_count_le_conditioned_max": {
+      "label": "Bound the actual nonsingular contribution with its full selection cost",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovNonsingularConditioning.conditioning_step": {
+      "label": "Both original contributions give the explicit finite conditioning recurrence",
       "documentation": "docs/vinogradov-korobov-framework.md",
       "overview": true
     }

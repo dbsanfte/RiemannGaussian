@@ -1924,8 +1924,8 @@ H_eta is the actual (2r+2)-moment and V_eta is the actual maximum of
 integral |R_eta|^2*|f_fine|^(2kr). `actual_band_le_interpolated_moments`
 retains all source weights/cutoffs and the explicit block denominator.
 Do not keep listing this analytic interpolation or the block normalization
-as open. The quantitative weighted-moment saving, the complete conditioning recurrence
-and full iteration remain open. The reverse mixed moment has a squared
+as open. The quantitative weighted-moment saving, the deeper-residue conditioning
+remainder and full iteration remain open. The reverse mixed moment has a squared
 Riesz factor; it is not assumed controlled. No new universal zero-free width
 is claimed.
 
@@ -1942,7 +1942,7 @@ I_(b,k*b)^(1/u), paying the explicit signed congruence and residue-count cost.
 The statement keeps independent block colours, every finite endpoint and all
 rounding. This is the finite inequality underlying Wooley (2012), Lemma 6.1;
 it assumes no moment budget. Do not list the higher homogeneous comparison
-or this finite transfer as open. The complete conditioning recurrence and
+or this finite transfer as open. The deeper-residue conditioning remainder and
 high-moment iteration remain open, as does the quantitative saving
 for the original weighted Riesz moments after all sampling costs. No new
 zero-free width follows from this finite step.
@@ -1960,9 +1960,28 @@ bounds the singular contribution by choose(p,k-1)*(k-1)^(2s) times the actual
 next-level mixed maximum. All finite Holder and integral hypotheses are paid;
 no supplied moment budget is assumed. This closes the singular contribution
 underlying Wooley (2012), equation (5.2). Do not list that contribution or its
-class refinement as open. The nonsingular counting/Holder estimate, full
-conditioning recurrence and high-moment iteration remain open. Neither the
+class refinement as open. The nonsingular estimate and one-step conditioning recurrence are now
+proved by the following modules; their deeper-residue remainder and
+high-moment iteration remain open. Neither the
 original weighted Riesz saving nor any larger zero-free width follows yet.
+
+`VinogradovSignedComplement` retains every selected position, induced sign
+and exact complementary frequency; its full complex factorization precedes
+the norm bound. `VinogradovNonsingularSelection` injects each qualifying
+original pair into both original blocks, the actual selected block and its
+full complement, and covers T2 by the actual selected-position families.
+`VinogradovConditioningHolder` proves continuous Holder with zeros included
+and explicit AM-GM absorption. `VinogradovNonsingularConditioning` proves
+T2<=D*K_*^(1/(2u))*I^(1-1/(2u)), s=k*u, D=(2s).descFactorial(k), retaining
+the sum of induced-sign moments before the maximum. Its `conditioning_step`
+proves I<=2u*A*I_+ + D^(2u)*K_*, A=choose(p,k-1)*(k-1)^(2s), for nonzero
+p,1<=k<=p,u>=1,eta<p^b and the original finite X. All moments and maxima
+are actual; no budget is assumed. These explicit constants are not optimized.
+This closes the finite step underlying Wooley (2012), Lemma 5.1. Do not list
+either collision bound, this Holder step or this one-step recurrence as
+open. The deeper-residue remainder and high-moment iteration remain open.
+The weighted Riesz moments are not identified with these unweighted moments;
+their required saving and every new VK zero-free width remain unproved.
 
 Stronger high-order moment bounds and
 quantitative joint resonance control,
@@ -2187,7 +2206,10 @@ with the pinned Playwright browser before committing. It sends the working
 README through GitHub's Markdown API and its live `math-renderer` component;
 a standalone MathJax render is not a substitute. Require every math block to
 render without an error, retain its box and fit its available width at
-desktop and mobile sizes. This check is also a mandatory CI step before
+desktop and mobile sizes. Wait for a loaded graph and positive visible
+layout together before measuring it; GitHub hydration can temporarily
+replace an article. Keep all fit, placement and math assertions enforced.
+This check is also a mandatory CI step before
 Pages publication. After pushing, run it again with `--published` to check
 the actual README page at the exact current commit. A network or renderer
 failure is a failed check, not a reason to claim rendering success. The

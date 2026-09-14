@@ -19,6 +19,8 @@ weighted moment by its finer block-residue energies, for all admissible
 positive blocks and tails up to the finite endpoint. Exact product
 factorization and the first finite Hölder estimate now reduce that energy
 to an actual mixed-moment maximum, retaining arbitrary complex tail weights.
+Both original collision contributions now have explicit bounds, giving the
+actual finite conditioning recurrence. High-moment iteration remains open.
 The Vinogradov–Korobov zeta growth estimate
 and zero-free region remain unproved in this repository. No external
 analytic estimate is installed as an axiom or as a claimed discharged premise.
@@ -345,8 +347,8 @@ distinct. The finite-window completion bounds below now provide the
 normalized mean-value budget for each fixed pair of blocks. The following
 combined count also pays all finite tail completions for canonical block
 representatives. The full conditioned-moment transfer is proved below;
-the complete conditioning recurrence, the high-moment iteration
-and quantitative joint resonance control remain open. No required
+the one-step conditioning recurrence is also proved below. Its deeper-residue
+remainder, high-moment iteration and quantitative joint resonance control remain open. No required
 exponential-sum saving, new zeta-growth estimate, VK zero-free region or RH
 proof follows yet.
 
@@ -487,8 +489,9 @@ actual sign factorial. The full target fibre, all residue coordinates and
 original complex products remain available upstream. The exact target
 partition, its whole-moment energy transfer, exact product factorization
 and both Hölder steps are now proved below, along with the higher
-homogeneous comparison and finite congruencing transfer. The full conditioning recurrence and high-moment iteration still need
-proofs; the singular contribution has the explicit upper bound given below. No new zero-free width follows yet, and no
+homogeneous comparison, finite congruencing transfer and explicit one-step
+conditioning recurrence. The deeper-residue remainder and high-moment iteration
+still need proofs. No new zero-free width follows yet, and no
 historical novelty is claimed for these classical ingredients.
 
 ## Exact whole-moment partition and finer-residue energy
@@ -556,7 +559,8 @@ This is the whole-moment transfer underlying
 It forces matching finer block residues in the surviving energies. The
 actual product identification and first finite Hölder bound follow next;
 the higher homogeneous comparison and finite congruencing step are proved
-below. The full conditioning recurrence and required high-moment saving remain open. No zero-free width follows yet.
+below, together with the actual one-step conditioning recurrence. The
+deeper-residue remainder and required high-moment saving remain open. No zero-free width follows yet.
 
 ## Literal products and the actual mixed-moment maximum
 
@@ -620,8 +624,9 @@ carrier now receives that interpolation together with a constructive
 falling-factorial and floor lower bound on its original block mass;
 see the [explicit interpolated carrier bound](zeta-riesz-conditioned-energy.md).
 The higher homogeneous comparison and finite congruencing step are now
-proved below. The complete conditioning recurrence and full high-moment iteration remain
-open; the singular contribution has the explicit upper bound given below.
+proved below, together with both collision bounds and the actual one-step
+conditioning recurrence. The deeper-residue remainder and full high-moment
+iteration remain open.
 This is a classical finite congruencing ingredient, not a new VK growth
 estimate or a larger proved zero-free region.
 
@@ -680,10 +685,10 @@ as a hypothesis.
 This is the finite inequality underlying
 [Wooley (2012), Lemma 6.1 and equations (6.7)–(6.8), pp. 1600–1602](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf),
 with explicit finite-window conventions and the retained sign factorial.
-The congruencing transfer is proved. The singular contribution to
-conditioning has the explicit upper bound given below; the nonsingular estimate, complete
-recurrence, quantitative high-moment saving and required zeta growth
-estimate remain open. The Riesz bridge preserves its original weighted
+The congruencing transfer and one-step conditioning recurrence are proved.
+Both collision contributions have the explicit upper bounds below. The
+deeper-residue remainder, quantitative high-moment saving and required zeta
+growth estimate remain open. The Riesz bridge preserves its original weighted
 moments; these are not identified with the unweighted conditioned moments
 in this theorem. No larger zero-free region is claimed from this step.
 
@@ -735,10 +740,76 @@ supports and the unchanged cutoff survive the reduction.
 
 This supplies an explicit finite version of the singular estimate in
 [Wooley (2012), equation (5.2), pp. 1597–1598](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
-The required bound for `T_2` still needs its selection/counting argument and
-Hölder step. The full conditioning recurrence, high-moment iteration and VK
-zero-free proof therefore remain open. No quantitative saving for the
-original weighted Riesz moments or larger zero-free width is claimed here.
+The nonsingular contribution and actual one-step conditioning recurrence
+are proved next. High-moment iteration and the VK zero-free proof remain
+open. No quantitative saving for the original weighted Riesz moments or
+larger zero-free width is claimed here.
+
+## Explicit finite conditioning recurrence
+
+[VinogradovNonsingularSelection](../RiemannGaussian/VinogradovNonsingularSelection.lean)
+selects an ordered block from the **joint support of both tails**. For each
+position embedding `e`, an injection retains both original conditioned
+blocks, the selected block with its induced signs, and every complementary
+entry. Its target equation and complex polynomial remain exact:
+
+```math
+\mathcal P_e(\alpha)=
+|F_a^\epsilon(\alpha;\xi)|^2 F_b^{\tau_e}(\alpha;\eta)
+\prod_{j\notin e} f_{p^b,\sigma_j}(\alpha;\eta).
+```
+
+The [signed complement](../RiemannGaussian/VinogradovSignedComplement.lean)
+keeps the original position and sign of each remaining variable. For
+`s=k*u`, `u>=1`, write the actual conditioned mixed moment and colour maximum as
+
+```math
+K_{a,b}^{\epsilon,\tau}
+=\int |F_a^\epsilon(\alpha;\xi)|^2
+       |F_b^\tau(\alpha;\eta)|^{2u}\,d\alpha,
+\qquad K_* = \max_\tau K_{a,b}^{\epsilon,\tau}.
+```
+
+[VinogradovNonsingularConditioning](../RiemannGaussian/VinogradovNonsingularConditioning.lean)
+first retains the sum over all induced sign patterns in
+`nonsingular_count_le_signed_moments`. Only its downstream maximum bound
+pays the full ordered-selection cost:
+
+```math
+T_2\le D\,K_*^{1/(2u)}
+          \bigl(I_{a,b}^\epsilon(\xi,\eta)\bigr)^{1-1/(2u)},
+\qquad D=(2s)^{\underline{k}}=\frac{(2s)!}{(2s-k)!}.
+```
+
+All integrability and Hölder hypotheses hold for the actual polynomials.
+The cost counts ordered embeddings and is not optimized. With
+
+```math
+A={p\choose k-1}(k-1)^{2s},\qquad
+I_+=\max_{0\le\zeta\lt p^{b+1}}
+       I_{a,b+1}^\epsilon(\xi,\zeta),
+```
+
+`conditioning_step` combines the proved singular bound, the nonsingular
+bound and [explicit AM-GM absorption](../RiemannGaussian/VinogradovConditioningHolder.lean):
+
+```math
+\boxed{I_{a,b}^\epsilon(\xi,\eta)
+       \le 2u\,A\,I_+ + D^{2u}K_*.}
+```
+
+This holds for every nonzero base `p`, `1<=k<=p`, `u>=1`, canonical
+`0<=eta<p^b`, and every original endpoint `X`. The original colour and
+coarse class remain fixed. No moment estimate is assumed. It supplies the
+finite conditioning step in
+[Wooley (2012), Lemma 5.1](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf)
+with explicit constants; no historical novelty is claimed.
+
+The next classical obligations are the deeper-residue remainder and
+iteration with the proved congruencing transfer. The original Riesz
+moments retain their own complex weights and sampling costs; this
+unweighted conditioning theorem does not establish their quantitative
+saving or enlarge the proved zero-free region.
 
 ## Direct application to the original Riesz carrier
 
