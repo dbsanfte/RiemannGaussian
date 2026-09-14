@@ -3,7 +3,7 @@ import Lean.Util.CollectAxioms
 import Lean.Util.FoldConsts
 
 /-!
-# Export the actual zero-free theorem dependencies
+# Export the actual theorem dependencies for an ordinary-root explorer
 
 The endpoint names come from the existing generated proof-status metadata.
 Edges are constants in elaborated declaration bodies and types, not imports
@@ -13,6 +13,8 @@ library references as explicit leaves, and audits the complete axiom closure.
 
 Run after `lake build --wfail`, from the repository root:
 `lake env lean -DwarningAsError=true scripts/ExportTheoremGraph.lean`.
+Set `THEOREM_GRAPH_METADATA` and `THEOREM_GRAPH_OUTPUT` for the dedicated
+RH campaign view; both use this same compiled-root exporter.
 -/
 
 open Lean Elab Command
@@ -44,7 +46,9 @@ private def standardAxiom (n : Name) : Bool :=
 run_cmd do
   let status ← IO.FS.readFile "docs/proof-status.json"
   let status ← ofExcept (Json.parse status)
-  let metadata ← IO.FS.readFile "docs/theorem-explorer/metadata.json"
+  let metadataPath := (← IO.getEnv "THEOREM_GRAPH_METADATA").getD
+    "docs/theorem-explorer/metadata.json"
+  let metadata ← IO.FS.readFile metadataPath
   let metadata ← ofExcept (Json.parse metadata)
   let endpoints ← ofExcept (metadata.getObjValAs? (Array Json) "endpoints")
   let env ← getEnv
@@ -146,6 +150,8 @@ run_cmd do
     ("externalBoundary", toJson "Project dependencies are followed transitively. External library references are recorded as leaves; their transitive axioms are audited."),
     ("endpoints", toJson rootJson),
     ("nodes", toJson ((entries.qsort (fun a b => Name.lt a.1 b.1)).map Prod.snd))]
-  IO.FS.createDirAll ".lake/theorem-explorer"
-  IO.FS.writeFile ".lake/theorem-explorer/lean-graph.json" (output.compress ++ "\n")
+  let outputPath : System.FilePath := (← IO.getEnv "THEOREM_GRAPH_OUTPUT").getD
+    ".lake/theorem-explorer/lean-graph.json"
+  IO.FS.createDirAll (outputPath.parent.getD ".")
+  IO.FS.writeFile outputPath (output.compress ++ "\n")
   logInfo m!"Exported {entries.size} declarations from {roots.size} endpoints."

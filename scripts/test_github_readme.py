@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = "dbsanfte/RiemannGaussian"
 SITE = "https://dbsanfte.github.io/RiemannGaussian/"
 CERTIFICATE_SITE = SITE + "numerical-certificate/"
+RH_SITE = SITE + "rh-proof/"
 CERTIFICATE_WORKFLOW = f"https://github.com/{REPOSITORY}/actions/workflows/numerical_certificate.yml"
 
 
@@ -70,6 +71,9 @@ def run(output, published):
                     page.route("**/docs/theorem-explorer/preview.svg*", lambda route:
                                route.fulfill(path=str(ROOT / "docs/theorem-explorer/preview.svg"),
                                              content_type="image/svg+xml"))
+                    page.route("**/docs/rh-proof-explorer/preview.png*", lambda route:
+                               route.fulfill(path=str(ROOT / "docs/rh-proof-explorer/preview.png"),
+                                             content_type="image/png"))
                 # GitHub can keep background requests open after the README is
                 # ready. Wait for the actual DOM and math below, not network idle.
                 response = page.goto(url, wait_until="domcontentloaded", timeout=60000)
@@ -95,6 +99,11 @@ def run(output, published):
                     selector = "#github-readme-working-preview"
                     article = page.locator(selector)
                 assert article.locator("h2").first.inner_text().strip() == "Proved Zero-Free Region"
+                research = article.locator("blockquote", has_text="Research agents:")
+                assert research.count() == 1
+                assert "GPT-5.6 Sol and GPT-6 Astra" in research.inner_text()
+                assert research.evaluate("e => Boolean(e.compareDocumentPosition(e.closest('article').querySelector('h2')) & Node.DOCUMENT_POSITION_FOLLOWING)")
+                assert research.evaluate("e => e.previousElementSibling?.tagName === 'P' && e.previousElementSibling.textContent.includes('repository’s verification gates') || e.previousElementSibling?.textContent.includes(\"repository's verification gates\")")
                 plot = article.locator("img[alt^='Zero-free region comparison:']")
                 assert plot.count() == 1
                 assert "docs/zero-free-regions/comparison.svg" in plot.locator("..").get_attribute("href")
@@ -195,12 +204,39 @@ def run(output, published):
                 # the now-loaded graph again for useful visual evidence.
                 certificate_plot.evaluate("e => e.scrollIntoView({block: 'center'})")
                 page.screenshot(path=str(output / f"numerical-certificate-{width}.png"))
+                assert article.locator("h2").nth(2).inner_text().strip() == "Current RH Proof Direction"
+                assert "Current Direction" not in article.locator("h2").all_text_contents()
+                assert "Latest Update" not in article.locator("h2").all_text_contents()
+                rh_cta = article.locator(f"h3 a[href='{RH_SITE}']")
+                assert rh_cta.count() == 1 and "Explore the current RH proof chain" in rh_cta.inner_text()
+                rh_preview = article.locator("img[alt^='Current RH proof explorer:']")
+                assert rh_preview.count() == 1
+                assert rh_preview.locator("..").get_attribute("href") == RH_SITE
+                rh_preview.evaluate("e => e.scrollIntoView({block: 'center'})")
+                rh_placement = page.wait_for_function("""selector => {
+                    const a = document.querySelector(selector);
+                    const e = a?.querySelector("img[alt^='Current RH proof explorer:']");
+                    if (!e || !e.complete || e.naturalWidth <= 0 || e.clientWidth <= 0) return false;
+                    const h = a.querySelectorAll('h2');
+                    const updates = [...a.querySelectorAll('h3')].filter(n => n.textContent.trim() === 'Latest Update');
+                    if (updates.length !== 1) return false;
+                    const after = n => Boolean(e.compareDocumentPosition(n) & Node.DOCUMENT_POSITION_FOLLOWING);
+                    return {width: e.clientWidth, available: a.clientWidth,
+                        afterHeading: !after(h[2]), beforeNextHeading: after(h[3]),
+                        beforeUpdate: after(updates[0]),
+                        updateNested: Boolean(updates[0].compareDocumentPosition(h[3]) & Node.DOCUMENT_POSITION_FOLLOWING)};
+                }""", arg=selector).json_value()
+                assert 0 < rh_placement['width'] <= rh_placement['available'] + 1
+                assert all(rh_placement[k] for k in ('afterHeading', 'beforeNextHeading', 'beforeUpdate', 'updateNested'))
+                page.screenshot(path=str(output / f"rh-proof-direction-{width}.png"))
                 checks.append({"width": width, "mathBlocks": math.count(), "boxes": boxes,
                                "errors": errors, "sizes": sizes, "frameBorders": frames,
                                "frameSizes": tables,
                                "zeroFreeGraph": placement,
                                "numericalCertificateGraph": certificate_placement,
                                "certificationBadge": CERTIFICATE_WORKFLOW,
+                               "rhProofDirection": rh_placement,
+                               "researchAgentsInIntroduction": True,
                                "explorerLinks": "valid"})
                 page.close()
         finally:

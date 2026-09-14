@@ -227,3 +227,14 @@ The graph reports the proved finite band, eventual component and exact
 comparison interval with their hypotheses. The comparison endpoint contains
 inequalities between explicit functions; it does not import external
 zero-free proofs or establish an exhaustive world-record claim. RH remains open.
+
+## Current RH campaign explorer
+
+The [third explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
+opens at the furthest checked bound in the active signed Riesz campaign.
+Its source-limit view preserves the hypothetical-zero assumption, while
+the missing independent arithmetic estimate is explicitly left open.
+It uses the same compiled dependency exporter, family taxonomy and viewer.
+[Campaign metadata, screenshot capture and per-commit workflow](rh-proof-direction.md)
+keep its compact README section current without changing the stable strategy
+for routine updates. The numerical certificate remains separately verified.

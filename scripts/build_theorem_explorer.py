@@ -295,12 +295,12 @@ def build(*, raw_path=None, metadata=None, status_data=None):
         "schemaVersion": 1, "repository": meta["repository"], "defaultEndpoint": meta["defaultEndpoint"],
         "families": meta["families"], "endpoints": endpoints, "nodes": nodes,
         "leanVersion": raw["leanVersion"], "audit": {k: v for k, v in audit.items() if k != "sourceSha256"},
-        "benchmarkScope": status["gaussianPhaseBandToolkit"]["comparisonScope"],
+        "benchmarkScope": meta.get("contextScope", status["gaussianPhaseBandToolkit"]["comparisonScope"]),
         "limitNote": meta.get("limitNote", "RH remains open. The three checked benchmark functions are not an exhaustive world-record audit."),
         "toolkits": {k: v for k, v in status.items() if isinstance(v, dict)}
     }
     document_paths = {p for n in nodes for p in n["documentation"]}
-    for key in ("certificateVerification", "guideDocument", "metadataOrigin"):
+    for key in ("certificateVerification", "guideDocument", "metadataOrigin", "scopeHeading", "campaign"):
         if key in meta:
             data[key] = meta[key]
     document_paths.update(e["documentation"] for e in endpoints)
@@ -365,6 +365,12 @@ def main():
         (args.site / "numerical-certificate/release.js").write_bytes(
             b"window.PROOF_RELEASE=" + json_bytes(release) + b";\n")
         shutil.copy2(ROOT / "docs/proof-status.json", args.site / "numerical-certificate/proof-status.json")
+        subprocess.run(["python3", str(ROOT / "scripts/build_rh_proof_explorer.py"),
+                        "--check", "--node", args.node], cwd=ROOT, check=True)
+        shutil.copytree(ROOT / "docs/rh-proof-explorer", args.site / "rh-proof")
+        (args.site / "rh-proof/release.js").write_bytes(
+            b"window.PROOF_RELEASE=" + json_bytes(release) + b";\n")
+        shutil.copy2(ROOT / "docs/proof-status.json", args.site / "rh-proof/proof-status.json")
     print("Theorem explorer assets and source/audit links are consistent.")
 
 

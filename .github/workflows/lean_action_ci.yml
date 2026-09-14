@@ -11,6 +11,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 2
       - name: Keep exhaustive numerical verification out of ordinary builds
         run: |
           python3 scripts/numerical_certificate.py
@@ -57,6 +59,12 @@ jobs:
           node scripts/check_theorem_graph.cjs
       - name: Check the cached optional certificate explorer without exhaustive verification
         run: python3 scripts/build_numerical_certificate_explorer.py --check
+      - name: Verify the current RH campaign and this commit's latest update
+        run: |
+          THEOREM_GRAPH_METADATA=docs/rh-proof-explorer/metadata.json \
+          THEOREM_GRAPH_OUTPUT=.lake/rh-proof-explorer/lean-graph.json \
+            lake env lean -DwarningAsError=true scripts/ExportTheoremGraph.lean
+          python3 scripts/build_rh_proof_explorer.py --check --check-commit-update HEAD^
       - name: Check the evergreen zero-free comparison graph
         shell: bash
         run: |
@@ -77,6 +85,7 @@ jobs:
         run: |
           .lake/browser-venv/bin/python scripts/test_theorem_explorer.py
           .lake/browser-venv/bin/python scripts/test_numerical_certificate_explorer.py
+          .lake/browser-venv/bin/python scripts/test_rh_proof_explorer.py
       - name: Check README with the live GitHub math renderer
         shell: bash
         env:
@@ -112,6 +121,6 @@ jobs:
       group: theorem-explorer-pages
       cancel-in-progress: false
     steps:
-      - name: Deploy the verified zero-free theorem explorer
+      - name: Deploy the three verified theorem explorers
         id: deployment
         uses: actions/deploy-pages@v4

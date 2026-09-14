@@ -2075,13 +2075,16 @@ abstractions.
 7. Run the source placeholder scan, whole-project declaration lint, focused
    build, full build, generated-status check, and whitespace check described
    below.
-8. Keep exactly two live research-status sections near the top of the README:
-   `Current Direction` states the active strategy and immediate frontier, and
-   `Latest Update` states only the newest verified slice and its next
-   obstruction. Review both on every committed slice, replacing stale text
-   rather than appending history. The README is never an audit log. Update the
-   `Current Direction` body must be exactly one paragraph and no more than 500
-   characters; replace it instead of extending it. Update the
+8. Keep one `Current RH Proof Direction` section immediately below the proved
+   zero-free and numerical-certificate sections. It replaces the separate
+   `Current Direction` and top-level `Latest Update` sections. Its prominent
+   explorer link and actual browser screenshot precede one direction paragraph
+   of at most 500 characters. Keep `Latest Update` as a nested subsection.
+   The stable direction changes only when the active branch or strategy has a
+   material update; record why. Latest Update changes with every commit and
+   describes that commit, including documentation or maintenance work without
+   inventing mathematical progress. Replace entries rather than append history.
+   Both are generated from `docs/rh-proof-explorer/metadata.json`; update the
    milestone list in `scripts/GenerateProjectStatus.lean` when and only when a
    new theorem genuinely advances the displayed frontier, then regenerate the
    artifacts.
@@ -2122,6 +2125,46 @@ module is normally one process; do not mistake that focused check for the
 parallel full-library build.
 
 ## Commit and check-in invariant
+
+The introductory research-agent/model statement belongs directly below the
+repository summary and before `Proved Zero-Free Region`.
+
+The third README section, `Current RH Proof Direction`, and its dedicated
+`/rh-proof/` Pages explorer track the active RH campaign, independently of the
+zero-free and numerical-certificate views. Its default endpoint is exactly
+`campaign.frontierStatusPath` from `docs/rh-proof-explorer/metadata.json`,
+resolved through compiled project status. End at the furthest **checked**
+active theorem; show the remaining obstruction in prose, never as a proved
+edge to RH. Keep the conditional source limit and all theorem hypotheses
+visible. Reuse the shared family taxonomy, viewer, exact Lean source links,
+compiled dependency exporter and full transitive axiom checks.
+
+For every commit, increment `campaign.latestUpdate.sequence`, give it a new
+`id`, and replace its title/body/next step with this commit's actual work.
+Presentation and maintenance updates must be labelled as such and must not
+claim new bounds. Change `campaign.direction` only for a branch change or
+material strategy update, with a new `changeReason`. The tracked hook checks
+the staged update against HEAD; CI checks the commit against its parent.
+Keep the README's generated marker block intact and regenerate it with
+`scripts/build_rh_proof_explorer.py`; never maintain duplicate status prose.
+
+After ordinary Lean/status validation, export the dedicated graph using
+`THEOREM_GRAPH_METADATA=docs/rh-proof-explorer/metadata.json` and
+`THEOREM_GRAPH_OUTPUT=.lake/rh-proof-explorer/lean-graph.json` with
+`scripts/ExportTheoremGraph.lean`. Run the dedicated builder, then the pinned
+browser's `scripts/test_rh_proof_explorer.py --refresh-preview`, then the
+builder's `--check`. Commit the real `preview.png` and its `preview.json`
+input/capture audit. The screenshot must show the actual current default
+explorer, not a hand-drawn graph. CI verifies its input and image hashes and
+exercises desktop/mobile interaction, exact terminal/source lines, zoom,
+conditional-source selection and the visible open obstruction. Do not demand
+byte-identical rasterization across platforms. Run the live GitHub README
+renderer check for the section placement, nested Latest Update, loaded linked
+preview, mobile fit and introductory model statement. Stage all metadata,
+README, viewer, source/audit and screenshot outputs together. After exact-SHA
+CI and Pages deployment pass, verify the published third explorer and README.
+See `docs/rh-proof-direction.md` for reproduction. These steps use the ordinary
+root and must never trigger exhaustive numerical certificate verification.
 
 The zero-free section's interactive theorem explorer is derived from the
 compiled Lean dependency graph and the existing proof-status metadata.

@@ -9,6 +9,9 @@ the evolving Lean 4 proof development and supporting analytic and finite-model
 theory. The proof is not complete; in the meantime, the extensive Lean theorems and formalizations are provided to the wider community. Only declarations accepted by Lean and the
 repository's verification gates count as established results.
 
+> **Research agents:** GPT-5.6 Sol and GPT-6 Astra with **Max** reasoning effort, running in the
+> **Codex CLI harness**.
+
 ## Proved Zero-Free Region
 
 [![Zero-free region comparison: coloured benchmark boundaries with our independently proved region overlaid, including a magnified right-edge view](docs/zero-free-regions/comparison.svg)](docs/zero-free-regions/comparison.svg)
@@ -93,9 +96,6 @@ and RH remains open.
 [Lean proof: exists_eventual_strip](RiemannGaussian/ZetaLogLogZeroFree.lean#L62)
 · [Joint order-height proof and arithmetic consequences](docs/zeta-log-log-zero-free.md).
 
-> **Research agents:** GPT-5.6 Sol and GPT-6 Astra with **Max** reasoning effort, running in the
-> **Codex CLI harness**.
-
 ### [▶ Open the interactive theorem explorer](https://dbsanfte.github.io/RiemannGaussian/)
 
 [![Click to explore the zero-free theorem chain, grouped by mathematical family](docs/theorem-explorer/preview.svg)](https://dbsanfte.github.io/RiemannGaussian/)
@@ -127,20 +127,26 @@ Lean source lines and proof audits.
 · [Full axiom audit](docs/numerical-certificate-audit.json)
 · [Sources, metadata and reproduction](docs/numerical-certificate.md).
 
-## Current Direction
+<!-- RH_DIRECTION:START -->
+## Current RH Proof Direction
 
-Make the proved region cover every applicable benchmark, preserving each height range and boundary convention. Retain all existing analytic coverage while closing the lower-height classical/Littlewood and eventual Vinogradov–Korobov gaps. The signed arithmetic floor and RH remain open; numerical certificate verification runs separately.
+### [▶ Explore the current RH proof chain](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-## Latest Update
+[![Current RH proof explorer: the checked chain to the original Riesz carrier bound, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-**The original Riesz carrier now reaches the finite conditioned-energy recurrence.**
-The Lean proof retains complex weight averages on complete frequency fibres,
-then pays sampling and block normalization. Its bound includes the proved
-deep remainder and every intermediate conditioned energy. A net arithmetic
-saving, the improved VK moment exponent and a wider zero-free region remain
-open; the proved region is unchanged.
-[Latest Lean theorem](RiemannGaussian/ZetaRieszConditioningTransfer.lean)
-· [Exact transfer and scope](docs/zeta-riesz-conditioned-energy.md#direct-transfer-to-the-finite-conditioning-recurrence).
+Seek a contradiction at any hypothetical right-half zeta zero by proving an independent estimate incompatible with the original Riesz carrier’s forced source limit. Preserve Möbius signs, logarithmic phases and full frequency correlations through conditioned-energy estimates. Stronger zero-free regions narrow the remaining strip; the arithmetic saving is still open.
+
+[Direction and remaining obstruction](docs/rh-proof-direction.md)
+· [Campaign metadata](docs/rh-proof-explorer/metadata.json)
+· [Proof audit](docs/rh-proof-explorer/audit.json).
+
+### Latest Update
+
+**The RH campaign now has its own proof explorer.** Follow the checked chain to the original Riesz carrier’s finite conditioned-energy bound, or inspect its preserved source limit. This presentation update adds no mathematical bound.
+Next: complete the initial global mean-value conditioning step, then seek the arithmetic saving needed to beat the source.
+[Current checked endpoint](RiemannGaussian/ZetaRieszConditioningTransfer.lean#L189)
+· [Proof details](docs/zeta-riesz-conditioned-energy.md#direct-transfer-to-the-finite-conditioning-recurrence).
+<!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
 

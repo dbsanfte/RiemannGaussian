@@ -43,6 +43,11 @@ theorem_node="${THEOREM_NODE:-node}"
 python3 scripts/build_theorem_explorer.py --check --node "$theorem_node"
 "$theorem_node" scripts/check_theorem_graph.cjs
 python3 scripts/build_numerical_certificate_explorer.py --check --node "$theorem_node"
+THEOREM_GRAPH_METADATA=docs/rh-proof-explorer/metadata.json \
+THEOREM_GRAPH_OUTPUT=.lake/rh-proof-explorer/lean-graph.json \
+  "${lake_command[@]}" env lean -DwarningAsError=true scripts/ExportTheoremGraph.lean
+python3 scripts/build_rh_proof_explorer.py --check --node "$theorem_node" \
+  --check-commit-update HEAD --staged
 
 echo 'pre-commit: checked zero-free formulas and evergreen comparison graph'
 "${lake_command[@]}" env lean -DwarningAsError=true scripts/ExportZeroFreePlot.lean

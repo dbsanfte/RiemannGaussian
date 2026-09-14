@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/dbsanfte/RiemannGaussian",
+  "pagesUrl": "https://dbsanfte.github.io/RiemannGaussian/rh-proof/",
+  "title": "Current RH Proof Direction",
+  "defaultEndpoint": "carrier-bound",
+  "limitNote": "RH remains open. The independent arithmetic saving needed for the source contradiction has not been proved.",
+  "contextScope": "The original Riesz carrier preserves its squarefree support, Möbius signs, logarithmic phases and complex fibre correlations. The finite conditioned-energy bound is proved under its displayed parameter conditions. Its remaining energies are not yet bounded strongly enough to contradict the source limit. No percentage or distance to an RH proof is asserted.",
+  "scopeHeading": "What remains to prove",
+  "guideDocument": "docs/rh-proof-direction.md",
+  "metadataOrigin": "Current RH campaign metadata; theorem names and scopes resolve through the compiled project status.",
+  "campaign": {
+    "direction": {
+      "branch": "riesz-conditioned-energy",
+      "statement": "Seek a contradiction at any hypothetical right-half zeta zero by proving an independent estimate incompatible with the original Riesz carrier’s forced source limit. Preserve Möbius signs, logarithmic phases and full frequency correlations through conditioned-energy estimates. Stronger zero-free regions narrow the remaining strip; the arithmetic saving is still open.",
+      "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
+    },
+    "latestUpdate": {
+      "sequence": 1,
+      "id": "dedicated-rh-campaign-explorer",
+      "kind": "presentation",
+      "title": "The RH campaign now has its own proof explorer.",
+      "body": "Follow the checked chain to the original Riesz carrier’s finite conditioned-energy bound, or inspect its preserved source limit. This presentation update adds no mathematical bound.",
+      "next": "Next: complete the initial global mean-value conditioning step, then seek the arithmetic saving needed to beat the source.",
+      "theoremStatusPath": [
+        "gaussianPhaseBandToolkit",
+        "vkRieszConditioningIterationTheorem"
+      ],
+      "documentation": "docs/zeta-riesz-conditioned-energy.md#direct-transfer-to-the-finite-conditioning-recurrence"
+    },
+    "frontierStatusPath": [
+      "gaussianPhaseBandToolkit",
+      "vkRieszConditioningIterationTheorem"
+    ],
+    "sourceStatusPath": [
+      "gaussianPhaseBandToolkit",
+      "vkRieszSourceTheorem"
+    ]
+  },
+  "endpoints": [
+    {
+      "id": "carrier-bound",
+      "label": "Current frontier · conditioned Riesz bound",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszConditioningIterationTheorem"
+        ]
+      ],
+      "scopePath": [
+        "rhCampaign",
+        "boundScope"
+      ],
+      "documentation": "docs/rh-proof-direction.md"
+    },
+    {
+      "id": "source-limit",
+      "label": "Source limit · under a hypothetical zero",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "rhCampaign",
+        "sourceScope"
+      ],
+      "documentation": "docs/rh-proof-direction.md"
+    }
+  ],
+  "scopes": {
+    "boundScope": "Furthest checked carrier bound: the original Riesz band reaches the finite conditioned-energy recurrence, with its sampling costs and complex fibre correlations retained. The independent saving needed for an RH contradiction remains open.",
+    "sourceScope": "Under the displayed hypothetical right-half-zero assumptions, the normalized original carrier has the prescribed negative-multiplicity source limit. This conditional source identity supplies one side of the proposed contradiction; its independent arithmetic counterpart remains open."
+  },
+  "theorems": {
+    "RiemannGaussian.VinogradovMeanValue.weighted_gram": {
+      "label": "Exact Fourier Gram identity",
+      "overview": true,
+      "documentation": "docs/rh-proof-direction.md"
+    },
+    "RiemannGaussian.VinogradovFibreCorrelation.energy_eq_fibre_averages": {
+      "label": "Full complex fibre correlations",
+      "overview": true,
+      "documentation": "docs/rh-proof-direction.md"
+    },
+    "RiemannGaussian.ZetaRieszConditionedEnergy.fullLift_zero": {
+      "label": "Original Riesz carrier at phase zero",
+      "overview": true,
+      "documentation": "docs/rh-proof-direction.md"
+    },
+    "RiemannGaussian.ZetaRieszConditioningTransfer.actual_band_le_correlated_level": {
+      "label": "Original carrier enters mixed energy",
+      "overview": true,
+      "documentation": "docs/rh-proof-direction.md"
+    },
+    "RiemannGaussian.VinogradovConditioningPowerSaving.deep_remainder_power_saving": {
+      "label": "Proved decay of the deep remainder",
+      "overview": true,
+      "documentation": "docs/rh-proof-direction.md"
+    },
+    "RiemannGaussian.ZetaRieszConditioningTransfer.actual_band_le_conditioned_iteration": {
+      "label": "Current frontier: conditioned carrier bound",
+      "overview": true,
+      "documentation": "docs/rh-proof-direction.md"
+    },
+    "RiemannGaussian.SquarefreeVaughanLogSource.tendsto_actual_riesz_band": {
+      "label": "Preserved signed arithmetic source",
+      "overview": true,
+      "documentation": "docs/rh-proof-direction.md"
+    },
+    "RiemannGaussian.ZetaRieszConditionedEnergy.tendsto_actual_residue_source": {
+      "label": "Source limit under a hypothetical zero",
+      "overview": true,
+      "documentation": "docs/rh-proof-direction.md"
+    }
+  }
+}
