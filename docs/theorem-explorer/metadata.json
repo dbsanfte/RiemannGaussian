@@ -95,7 +95,7 @@
     },
     {
       "id": "vk-phase",
-      "label": "Vinogradov–Korobov · improved exponent and Riesz transport",
+      "label": "Vinogradov–Korobov · negative profiles and exponent bootstrap",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -916,6 +916,62 @@
         [
           "gaussianPhaseBandToolkit",
           "vkRieszImprovedIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkConditionedHigherBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkConditionedScaleIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkProfileWeightIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkProfileAllowanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkProfileStepTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUniformProfileIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNegativeProfileTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNegativeInitialLevelTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNegativeInitialAllowanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGeneralInitialScaleTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGlobalProfileSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGeneralExponentBootstrapTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkBeyondFirstExponentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszNegativeProfileTheorem"
         ]
       ],
       "scopePath": [
@@ -1461,7 +1517,7 @@
     },
     {
       "id": "riesz-vk",
-      "label": "Riesz carrier · correlations and finite conditioning",
+      "label": "Riesz carrier · proved negative conditioned profile",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1578,6 +1634,62 @@
         [
           "gaussianPhaseBandToolkit",
           "vkRieszImprovedIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkConditionedHigherBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkConditionedScaleIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkProfileWeightIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkProfileAllowanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkProfileStepTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUniformProfileIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNegativeProfileTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNegativeInitialLevelTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNegativeInitialAllowanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGeneralInitialScaleTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGlobalProfileSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGeneralExponentBootstrapTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkBeyondFirstExponentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszNegativeProfileTheorem"
         ]
       ],
       "scopePath": [
@@ -1984,7 +2096,8 @@
     "ZetaRieszBlockMass": "arithmetic",
     "ZetaRieszInterpolation": "arithmetic",
     "ZetaRieszConditioningTransfer": "arithmetic",
-    "ZetaRieszImprovedMoment": "arithmetic"
+    "ZetaRieszImprovedMoment": "arithmetic",
+    "ZetaRieszNegativeProfile": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
@@ -3981,7 +4094,77 @@
       "documentation": "docs/zeta-riesz-conditioned-energy.md"
     },
     "RiemannGaussian.ZetaRieszImprovedMoment.exists_original_band_improved_iteration": {
-      "label": "Current frontier: improved-exponent Riesz recurrence",
+      "label": "General Riesz recurrence at every finite scale pair",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-energy.md"
+    },
+    "RiemannGaussian.VinogradovConditionedUpper.conditioned_le_higher_moments": {
+      "label": "Both actual signed blocks reach higher moments",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovConditionedUpper.conditioned_scale_identity": {
+      "label": "Exact two-scale conditioned normalization",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovProfileIteration.profile_weight_identity": {
+      "label": "Exact full-sum geometric weight",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovProfileIteration.allowance_le_profile": {
+      "label": "Complete allowance without a depth-count loss",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovProfileIteration.conditioned_profile_step": {
+      "label": "One actual uniform profile improvement",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovProfileIteration.uniform_profile_iteration": {
+      "label": "Finite induction pays every descendant energy and cutoff",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovNegativeProfile.exists_improved_negative_profile": {
+      "label": "Independent negative profile for all residues and colours",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovNegativeProfile.exists_improved_initial_level_decay": {
+      "label": "The whole initial level has a negative profile",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovProfileSaving.exists_initial_allowance_saving": {
+      "label": "Complete initial allowance with its remainder paid",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovProfileSaving.initial_scale_identity": {
+      "label": "Exact initial cancellation at every exponent",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovProfileSaving.exists_global_profile_saving": {
+      "label": "Original global moment receives the profile saving",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovExponentBootstrap.exists_smaller_admissible_exponent": {
+      "label": "Every admissible exponent above critical improves",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovExponentBootstrap.exists_beyond_first_exponent": {
+      "label": "Unconditional exponent beyond the first improvement",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.ZetaRieszNegativeProfile.exists_original_band_negative_profile": {
+      "label": "Current frontier: proved negative profile in the Riesz bound",
       "overview": true,
       "documentation": "docs/zeta-riesz-conditioned-energy.md"
     }

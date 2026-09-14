@@ -64,8 +64,10 @@ def run(output, url=None, refresh_preview=False):
                     (campaign.SITE / 'preview.json').write_bytes(campaign.explorer.json_bytes(capture))
                 root = page.evaluate('PROOF_VIEW.endpoint.roots[0]')
                 data = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
-                assert data['id'].endswith('.exists_original_band_improved_iteration')
-                assert 'conditioningAllowance' in data['statement']
+                assert data['id'].endswith('.exists_original_band_negative_profile')
+                assert 'correlatedSamplingCost' in data['statement']
+                assert 'beta < 0' in data['statement'] and 'p ^ S' in data['statement']
+                assert 'conditioningAllowance' not in data['statement']
                 assert '1 / (3 *' in data['statement'] and '∃' in data['statement']
                 node = page.locator(f'[data-node="{root}"]')
                 node.hover()
@@ -93,7 +95,8 @@ def run(output, url=None, refresh_preview=False):
                 page.locator('#fit').click()
                 page.locator('#scope-more').click()
                 assert 'what remains to prove' in page.locator('#details').inner_text().lower()
-                assert 'not yet bounded strongly enough' in page.locator('#details').inner_text()
+                assert 'combined correlation, sampling and normalization cost' in page.locator('#details').inner_text()
+                assert 'still needs a source-scale saving' in page.locator('#details').inner_text()
                 page.locator('#close-details').click()
                 page.locator('#endpoint').select_option('source-limit')
                 assert page.evaluate('PROOF_VIEW.endpoint.id') == 'source-limit'
@@ -126,6 +129,9 @@ def run(output, url=None, refresh_preview=False):
                         statement = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]].statement')
                         assert 'meanValue' in statement and '∃' in statement
                         assert '1 / (3 *' in statement
+                    if endpoint['id'] == 'full-recurrence':
+                        statement = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]].statement')
+                        assert 'conditioningAllowance' in statement and 'a ≤ b' in statement
                     if endpoint['id'] == 'exponent-audit':
                         scope = page.locator('#scope-text').inner_text()
                         assert 'only the deep remainder' in scope

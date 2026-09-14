@@ -29,8 +29,12 @@ every k>=2,u>=k and all sufficiently large endpoints. That exponent now
 pays both actual quotient moments in the full signed recurrence and the
 original Riesz carrier bound. An exact audit shows that lowering the
 exponent improves the deep remainder while retaining identical intermediate
-energies after restoring the source scale. Reaching the critical
-high-moment exponent through a full iteration remains open.
+energies after restoring the source scale. A uniform finite profile
+induction now independently bounds every later energy under constructed
+descendant cutoffs, producing a negative initial profile. It improves every
+proved eventual exponent strictly above critical and replaces the complete
+initial allowance in the original Riesz bound. A uniform improvement near
+the infimum is still needed to reach the critical high-moment exponent.
 The Vinogradov–Korobov zeta growth estimate
 and zero-free region remain unproved in this repository. No external
 analytic estimate is installed as an axiom or as a claimed discharged premise.
@@ -1012,7 +1016,7 @@ S^hp^{-2kuh}\le D^hp^{-(2ku-k+1)h},\qquad
 It uses that complete geometric allowance in the same actual recurrence.
 These are finite, quantitative ingredients of
 [Wooley (2012), Lemma 6.3](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
-The full iteration and the critical high-moment exponent still need proofs.
+The uniform finite profile iteration is proved below; the critical high-moment exponent remains open.
 The initial global mean-value conditioning is proved below. The displayed defect factor
 alone does not prove the next energies small. The original Riesz moments
 retain their own weights and sampling costs; they are not identified with
@@ -1189,6 +1193,84 @@ the complete scaled allowance is no larger when `X>=p^a,epsilon>=0`.
 The [full original-band formulas and conditions](zeta-riesz-conditioned-energy.md#the-improved-global-exponent-in-the-original-band)
 make this distinction explicit. No saving for the retained energy sum,
 VK growth estimate, or wider zero-free region follows from rescaling it.
+
+## Uniform negative profiles and global exponent bootstrap
+
+[`VinogradovConditionedUpper`](../RiemannGaussian/VinogradovConditionedUpper.lean)
+bounds both actual signed blocks through their higher moments and retains
+the exact two-scale normalization. Write
+
+```math
+\lambda_c=2k(u+1)-\frac{k(k+1)}2,\quad
+\delta=\lambda-\lambda_c,\quad q_{a,b}=K_{a,b}/M_{a,b}(\lambda).
+```
+
+For `k>=2,u>=k` and any proved rounded homogeneous budget at
+`lambda>=lambda_c`,
+[`uniform_profile_iteration`](../RiemannGaussian/VinogradovProfileIteration.lean)
+proves, for every finite `n`,
+
+```math
+q_{a,b}\le B_n p^{\delta a+\beta_n b},\qquad
+\beta_0=ku,\qquad
+\beta_{n+1}=\frac{k}{u}\beta_n-\left(1-\frac1u\right)\delta.
+```
+
+The estimate holds for every original residue and both colours, with
+`a<b`, `p^(T_n*b)<=X`, the actual deepest padded quotient at least `N0`,
+and the existing prime budget `(CD)^2<=p`. The induction constructs
+`T_n>=1,B_n>=1`; it assumes no later-energy bounds. At a step with
+`H=d_n*b`, its depth becomes `T_(n+1)=T_n*(k+d_n)`, covering every
+descendant and both actual moment premises.
+
+Before estimating the intermediate energies, their full singular weights
+factor exactly into a geometric ratio
+`singularCost(p,k,u)*p^(beta_n-2ku)`. The existing prime budget bounds it
+by `1/2`, so the whole finite sum costs at most two, independently of its
+depth. The original colour factorial survives until the final uniform
+constant. No factor counting the levels is introduced.
+
+If `delta>0`, `exists_negative_affineProfile` proves that some finite
+`beta_n<0`, including the endpoint `u=k`. The
+[negative-profile terminals](../RiemannGaussian/VinogradovNegativeProfile.lean)
+use the independently proved `lambda1=k(2u+1)-1/(3k)` to discharge every
+homogeneous budget. The complete initial level therefore receives an
+independent negative prime-power bound.
+
+[`VinogradovProfileSaving`](../RiemannGaussian/VinogradovProfileSaving.lean)
+caps that exponent at `-1/2` and bounds the entire initial depth-one
+allowance, including its deep remainder. The exact identity
+`p^(2ku)*M_01(lambda)=X^lambda` transfers it through the actual prime
+packet to
+
+```math
+J_{(u+1)k,k}(X)\le(2R)^2 B X^\lambda M^\beta,\qquad \beta<0.
+```
+
+[`exists_smaller_admissible_exponent`](../RiemannGaussian/VinogradovExponentBootstrap.lean)
+constructs power cutoffs that pay every packet, prime-size and quotient
+condition. Collision-preserving monotonicity extends the saving to every
+sufficiently large original endpoint. Its general conclusion is
+
+```math
+\left[J_{(u+1)k,k}(X)\ll X^\lambda,\ \lambda>\lambda_c\right]
+\quad\Longrightarrow\quad
+\exists\mu\in(\lambda_c,\lambda),\quad J_{(u+1)k,k}(X)\ll X^\mu.
+```
+
+Here each bound means an actual positive constant and finite threshold
+valid at every larger natural endpoint. `exists_beyond_first_exponent`
+specializes this to a proved exponent strictly below `lambda1`, with no
+supplied analytic premise. Constants, exponents and terminal thresholds
+are existential and not numerically evaluated.
+
+Separate strict improvements do **not** establish convergence to
+`lambda_c`: an improvement uniform near the infimum is the next moment
+obligation. The [original Riesz application](zeta-riesz-conditioned-energy.md#negative-profile-in-the-original-initial-band)
+also retains its signed correlation, sampling and normalization costs;
+their required combined saving remains open. No historical novelty,
+critical mean-value theorem, VK growth estimate or wider zero-free region
+is claimed by this slice.
 
 ## Shifted correlations and bounded complex weights
 

@@ -1999,7 +1999,7 @@ finite iteration as open. Keep the finite cutoff condition; this is not
 a decay limit in H at fixed X. The general exponent transfer explicitly
 requires its two homogeneous-moment bounds, which are discharged by the
 final theorem only at the elementary exponent. Reaching the critical high-moment
-exponent and the full congruencing iteration remain open. No original
+exponent remains open; the uniform finite profile iteration is proved below. No original
 Riesz weighted saving, VK zeta growth or new zero-free width is claimed.
 
 `VinogradovIteratedCongruencing` now identifies the reverse maximum with
@@ -2020,8 +2020,8 @@ prime p,canonical eta<p^b and (C*D)^2<=p are its explicit conditions.
 The full intermediate sum remains before `conditioned_le_geometric_iteration`,
 which bounds each S^h*p^(-2kuh) by D^h*p^(-(2ku-k+1)h), including D.
 Do not list this finite normalization or coupling as open. The initial global
-mean-value conditioning is proved below. Full iteration and the critical
-high-moment exponent remain open; the defect factor alone does not bound
+mean-value conditioning is proved below. The uniform finite profile iteration is proved below. The critical
+high-moment exponent remains open; the defect factor alone does not bound
 the next energies.
 No original weighted Riesz saving or larger zero-free region follows yet.
 
@@ -2072,17 +2072,51 @@ Both homogeneous premises in the full mixed and signed normalized
 recurrences are discharged. `ZetaRieszImprovedMoment` gives the original
 Riesz band both the explicit improved two-scale bound and the complete
 finite conditioning bound. Its `exists_original_band_improved_iteration`
-is the current RH explorer endpoint. Preserve all actual fibre correlations,
+remains the general finite-scale explorer view. Preserve all actual fibre correlations,
 sampling costs, positive lower block mass and finite-depth/quotient conditions.
 The exact `allowance_exponent_shift_identity` proves that after restoring
 the source scale, only the deep remainder changes by (X/p^a)^(-epsilon);
 every original intermediate energy is identical. The companion comparison
 proves the full scaled allowance cannot increase for X>=p^a,epsilon>=0.
-Do not assign that factor to the intermediate sum or claim its independent
-saving. The common constants and thresholds are unevaluated. Combined
+Do not assign that normalization factor to the intermediate sum. Its new
+independent negative-profile saving comes from the finite induction below. The common constants and thresholds are unevaluated. Combined
 weighted saving, the critical moment exponent, VK growth/detector chain and
 additional zero-free coverage remain open. Keep the exact comparison in
 the explorer's information-audit view and document these limitations.
+
+`VinogradovConditionedUpper` retains the exact two-scale upper bound for
+both actual signed blocks. `VinogradovProfileIteration` factors the whole
+intermediate sum before bounding its ratio by 1/2 with the original prime
+budget; the finite sum costs at most two, with no depth-count loss.
+`uniform_profile_iteration` proves q_ab<=B_n*p^(delta*a+beta_n*b) for
+all original residues and both colours, with beta_0=ku and
+beta_(n+1)=(k/u)*beta_n-(1-1/u)*delta. One constructed T_n pays every
+actual descendant cutoff and padded quotient. No later-energy premise
+remains. `VinogradovNegativeProfile` supplies the independently proved
+lambda1 budget and obtains a negative profile after finitely many steps.
+`VinogradovProfileSaving` caps beta at -1/2, controls the complete initial
+H=1 allowance including its remainder, and cancels the initial normalization
+at every real exponent. `VinogradovExponentBootstrap` pays every prime,
+packet and actual quotient condition on growing cutoffs and extends to all
+large original endpoints. Every proved eventual exponent lambda>critical
+admits critical<mu<lambda; `exists_beyond_first_exponent` is unconditional.
+Do not claim the critical theorem from separate strict improvements:
+a uniform improvement near the infimum is still required.
+
+`ZetaRieszNegativeProfile.exists_original_band_negative_profile` is now
+the default RH explorer endpoint. At a=0,b=1 it replaces the complete
+initial energy allowance by B*p^beta, -1/2<=beta<0, with every homogeneous
+and descendant-energy premise discharged. Its actual conditions retain
+prime p, p^S<=X, the deepest padded quotient >=N0 and the prime budget.
+The original signed complex fibre correlations, sampling costs, source
+normalization and positive block mass remain. Their combined source-scale
+saving is still open. Constants, depth, negative exponent and terminal
+thresholds are unevaluated; no historical novelty, critical mean-value
+estimate, VK growth, wider zero-free region or RH proof is claimed.
+Keep the general recurrence as its own explorer view and preserve the exact
+exponent audit: normalization alone still changes only the deep remainder.
+Continue local theorem work during exact-SHA CI and report both statuses
+separately; keep published source checks pinned to the committed snapshot.
 
 `VinogradovFibreCorrelation` now retains the exact complex average of the
 original configuration weights on each full frequency fibre. Its exact

@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**The improved global exponent now reaches the original Riesz bound.** Lean discharges both quotient-moment estimates at k(2u+1)−1/(3k) in the full signed Riesz recurrence. An exact comparison proves that the deep remainder improves while every intermediate energy is unchanged. Their combined arithmetic saving, RH and a wider zero-free region remain open.
-Next: control the retained intermediate energies and advance the global moment iteration toward the critical exponent.
-[Current checked endpoint](RiemannGaussian/ZetaRieszImprovedMoment.lean#L84)
-· [Proof details](docs/zeta-riesz-conditioned-energy.md#the-improved-global-exponent-in-the-original-band).
+**A negative conditioned profile now bounds the original Riesz carrier.** Lean discharges the complete initial energy allowance, including its deep remainder, by B·p^β with β<0. The same finite induction improves every proved global moment exponent above critical. Correlation and sampling costs still need a net saving; RH and a wider zero-free region remain open.
+Next: make the exponent improvement uniform near the critical limit and control the retained Riesz correlation costs.
+[Current checked endpoint](RiemannGaussian/ZetaRieszNegativeProfile.lean#L34)
+· [Proof details](docs/zeta-riesz-conditioned-energy.md#negative-profile-in-the-original-initial-band).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
@@ -160,10 +160,10 @@ hypotheses; the [family index](docs/theorem-families/README.md) covers the full 
 | **Gaussian/Weil explicit formula** | The arithmetic Gaussian expression, including prime-power and Archimedean terms, equals the complete multiplicity-weighted symmetric zero sum for every positive width. | [canonical explicit formula](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean#L1235) |
 | **Gaussian heat and reflected-zero Grams** | The complete Gaussian correlation equals the boundary heat-residue sum. Its vanishing at positive heat time is equivalent to RH; that vanishing remains unproved. | [correlation identity and RH equivalence](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L187) |
 | **Suzuki arithmetic and spectral formulas** | Suzuki's arithmetic function equals its spectral expansion in the safe half-plane. The literal arithmetic Psi is strictly positive on a nonzero punctured neighbourhood of the origin. | [spectral identity](RiemannGaussian/RiemannXiSuzukiWeilVerticalLimit.lean#L462), [local positivity](RiemannGaussian/RiemannXiSuzukiPointwiseLocalPositivity.lean#L298) |
-| **Global Vinogradov moment saving** | For every degree k≥2 and u≥k, the global moment exponent improves from k(2u+1) by 1/(3k) at every sufficiently large cutoff, without an assumed moment bound. | [global exponent theorem](RiemannGaussian/VinogradovFirstExponent.lean), [independent initial saving](RiemannGaussian/VinogradovInitialSaving.lean) |
+| **Global Vinogradov exponent improvement** | Every proved exponent above critical admits a smaller admissible exponent. An unconditional bound improves on k(2u+1)−1/(3k) for every k≥2, u≥k; reaching the critical limit remains open. | [global bootstrap](RiemannGaussian/VinogradovExponentBootstrap.lean), [uniform profile induction](RiemannGaussian/VinogradovProfileIteration.lean) |
 | **Exact phase optimiser and arithmetic floor** | The specified phase cost has a unique eight-frequency optimiser across all feasible finite or infinite integer-frequency families, with a proved arithmetic floor. | [exact optimiser](RiemannGaussian/ZetaPhaseExactOptimizer.lean), [arithmetic floor and exclusion criterion](RiemannGaussian/ZetaPhaseBinomialScale.lean) |
 | **Eta heat and continuous phase matrices** | Exact eta heat/spectral correspondence and small-width matrix coercivity for distinct integer probes retain the full complex Gram correlations. | [heat/spectral identity](RiemannGaussian/EtaSupportGapGaussianSpectral.lean), [continuous matrix coercivity](RiemannGaussian/Hybrid/EtaSupportGapPhaseCoercivity.lean#L276) |
-| **Original signed Riesz carrier bound** | The improved global moment exponent reaches the original squarefree carrier's finite conditioned-energy bound, retaining Möbius signs, phases and fibre correlations. The combined arithmetic saving and RH contradiction remain open. | [actual carrier bound](RiemannGaussian/ZetaRieszImprovedMoment.lean), [preserved source](RiemannGaussian/ZetaRieszConditionedEnergy.lean) |
+| **Original signed Riesz carrier bound** | The complete initial conditioned-energy allowance has a proved negative prime-power bound. Original signed correlations and sampling costs remain; their combined saving and RH contradiction are open. | [actual carrier bound](RiemannGaussian/ZetaRieszNegativeProfile.lean), [preserved source](RiemannGaussian/ZetaRieszConditionedEnergy.lean) |
 | **Montgomery–Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant 13 and bilinear constant 26. | [both inequalities](RiemannGaussian/MontgomeryVaughan/Final.lean#L28) |
 
 ## Accomplishments

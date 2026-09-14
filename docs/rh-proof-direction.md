@@ -2,7 +2,7 @@
 
 [Open the current proof explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/).
 The default view ends at
-[`exists_original_band_improved_iteration`](../RiemannGaussian/ZetaRieszImprovedMoment.lean),
+[`exists_original_band_negative_profile`](../RiemannGaussian/ZetaRieszNegativeProfile.lean),
 the furthest checked bound in the active signed Riesz carrier campaign.
 **RH remains open.** This is a finite bound with the parameter conditions
 shown in its Lean statement, not a proof that its right-hand side is small
@@ -18,14 +18,15 @@ independent arithmetic estimate incompatible with that source.
 
 The current bound carries the actual squarefree support, Möbius signs,
 logarithmic phases, filter coefficients and full complex frequency-fibre
-averages into a finite conditioned-energy recurrence. Sampling costs,
-positive block normalization, the deep remainder and every intermediate
-conditioned energy are retained. Their combined budget has **not** been
-proved small enough for the contradiction. Initial global mean-value
-conditioning and the first global exponent saving are proved. The
-improved exponent now pays both quotient moments in this carrier bound.
-The critical high-moment exponent and required combined weighted
-arithmetic saving remain open. The [proof notes](zeta-riesz-conditioned-energy.md#direct-transfer-to-the-finite-conditioning-recurrence)
+averages into a finite conditioned-energy recurrence. At the initial scale
+pair `a=0,b=1`, a uniform finite induction now bounds every descendant
+energy and replaces the complete initial allowance, including its deep
+remainder, by `B*p^beta` with `beta<0`. Its coupled cutoff `p^S<=X` and
+actual padded quotient threshold stay explicit. The remaining correlation,
+sampling and positive block-normalization costs have **not** been proved
+small enough for the contradiction. The critical high-moment exponent and
+required combined weighted arithmetic saving remain open. The
+[proof notes](zeta-riesz-conditioned-energy.md#negative-profile-in-the-original-initial-band)
 give the exact identities and bounds.
 
 Stronger zero-free regions reduce the remaining strip and supply analytic
@@ -34,18 +35,21 @@ of simple critical-line zeros. Neither result supplies the missing signed
 arithmetic estimate. This explorer does not draw a proved arrow across that
 gap or estimate a percentage of RH completed.
 
-The **Auxiliary advance · first global moment saving** view now follows the
-full unweighted mean value into the actual finite conditioned-energy
-allowance and an independent global exponent improvement of `1/(3k)` for
-every `k>=2,u>=k`, at every sufficiently large cutoff. Prime selection,
-exceptional-coordinate absorption and all endpoint transfers are proved.
-[The precise theorem and remaining moment obstruction](vinogradov-korobov-framework.md#first-global-high-moment-exponent-improvement)
-now feed the original weighted-carrier endpoint. The **Information audit**
-view proves exactly how lowering the exponent changes that bound: the deep
-remainder gains `(X/p^a)^(-1/(3k))`, while the full intermediate energy sum
-is identical after restoring its source scale. The quotient threshold is
-not numerically evaluated. No arrow from this result to an RH contradiction
-is asserted.
+The **Auxiliary advance · general exponent bootstrap** view proves that
+every proved eventual homogeneous exponent strictly above critical can be
+replaced by a strictly smaller admissible exponent. It gives an unconditional
+bound beyond `k(2u+1)-1/(3k)` for every `k>=2,u>=k`. Every descendant
+cutoff, prime packet and original-interval endpoint is paid. The
+[precise result](vinogradov-korobov-framework.md#uniform-negative-profiles-and-global-exponent-bootstrap)
+does not yet establish convergence to the critical exponent: that requires
+a uniform improvement near the infimum, not just separate strict improvements.
+
+The **General recurrence** view retains the full result at every finite
+scale pair. The **Information audit** still proves that changing normalization
+alone improves only the deep remainder; intermediate energies are unchanged
+after restoring their source scale. Their new independent bound comes from
+the profile induction. Constants, improvements and terminal thresholds are
+not numerically evaluated. No arrow to an RH contradiction is asserted.
 
 ## Evergreen presentation
 

@@ -347,6 +347,43 @@ A net bound for those energies together with the original correlations and
 sampling costs remains necessary for the source contradiction. The proved
 zero-free region is unchanged.
 
+## Negative profile in the original initial band
+
+[`exists_original_band_negative_profile`](../RiemannGaussian/ZetaRieszNegativeProfile.lean)
+now bounds the complete conditioned-energy allowance at `a=0,b=1`
+independently. For every `k>=2,u>=k`, Lean constructs `C>=1`, `B>=1`,
+a finite quotient threshold `N0`, depth `S>=2`, and `-1/2<=beta<0`.
+For prime `p` with
+
+```math
+p^S\le X,\qquad N_0\le\lfloor X/p^S\rfloor+1,\qquad
+(CD)^2\le p,\qquad X=2^{32N},
+```
+
+the actual original band satisfies
+
+```math
+\boxed{|\operatorname{Band}_N|^{2ku}
+ \le \frac{\mathcal S_{\rm corr}}{\operatorname{lowerMass}^2}
+ M_{0,1}(\lambda_1)\,B p^\beta.}
+```
+
+Every homogeneous moment and later conditioned-energy premise is
+discharged. The [uniform profile induction](vinogradov-korobov-framework.md#uniform-negative-profiles-and-global-exponent-bootstrap)
+pays all descendant cutoffs and preserves the full finite sum through
+its geometric factorization. The initial depth-one allowance then includes
+both its whole intermediate level and its `p^(-1/2)` remainder; capping
+the negative exponent at `-1/2` absorbs both.
+
+The exact original complex fibre averages remain in `S_corr`, together
+with attained-frequency and residue-summation costs. The positive lower
+block mass and the full source normalization remain in the displayed bound.
+The negative factor is therefore a proved saving in this conditioned-energy
+component; a net saving after these other costs is still unproved. The
+coupled cutoff prevents increasing `p` arbitrarily at fixed `X`. Constants,
+depth and the negative exponent are not numerically evaluated. No new
+zero-free region or RH contradiction follows from this theorem alone.
+
 ## Source and remaining arithmetic work
 
 For a hypothetical right-half zero `rho`, the original theorem chooses
@@ -372,8 +409,10 @@ VK congruencing step are now proved, along with an explicit bound for the
 singular and nonsingular conditioning contributions. Their explicit one-step
 conditioning recurrence is proved, and the direct correlation transfer above
 now applies its finite iteration and deep remainder to the original carrier.
-Improving the high-moment exponent through further iteration and proving a
-net saving in the actual correlations and conditioned levels remain open in the
+The uniform profile iteration now gives an independent initial-energy
+saving and improves every admissible global exponent above critical.
+Making that improvement uniform near the infimum and proving a net saving
+in the remaining actual correlation and sampling costs remain open in the
 [VK framework](vinogradov-korobov-framework.md).
 
 The finite Fourier and congruencing tools are classical ingredients. This
