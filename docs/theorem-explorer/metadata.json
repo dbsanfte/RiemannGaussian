@@ -712,6 +712,46 @@
         [
           "gaussianPhaseBandToolkit",
           "vkFiniteConditioningSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkReverseLevelIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCombinedFiniteIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkIntegerStepCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCongruencingScaleTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkIntermediateScaleTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFullAllowanceIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNextMomentAllowanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNormalizedFiniteIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGeometricIterationWeightTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGeometricIterationTheorem"
         ]
       ],
       "scopePath": [
@@ -3514,6 +3554,61 @@
     },
     "RiemannGaussian.VinogradovConditioningPowerSaving.deep_remainder_of_scaled_bounds": {
       "label": "General exponent transfer, retaining both required actual moment estimates",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovIteratedCongruencing.reverse_maximum_eq_level": {
+      "label": "The reverse moment maximum is exactly the next conditioning maximum",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovIteratedCongruencing.conditioned_le_finite_iteration": {
+      "label": "Actual signed congruencing receives the full finite conditioning sum",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovIteratedCongruencing.stepCost_eq_power": {
+      "label": "Every integer congruence cost becomes an exact real power",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovCongruencingScaling.congruencing_scale_identity": {
+      "label": "Exact scale cancellation exposes the moment-exponent defect",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovCongruencingScaling.intermediate_scale_identity": {
+      "label": "Each intermediate level retains its exact finer-scale factor",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovNormalizedIteration.allowance_scale_identity": {
+      "label": "The full original intermediate sum is normalized by an exact identity",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovNormalizedIteration.mixed_le_scale_allowance": {
+      "label": "Proved moments supply the complete next-level allowance",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovNormalizedIteration.normalized_finite_iteration": {
+      "label": "The actual normalized recurrence has no supplied moment estimate at the elementary exponent",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovNormalizedIteration.intermediate_weight_le": {
+      "label": "Each intermediate weight pays its full iteration constant",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovNormalizedIteration.conditioned_le_geometric_iteration": {
+      "label": "Actual signed conditioned moments reach the complete geometric recurrence",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovNormalizedIteration.normalized_iteration_of_scaled_bounds": {
+      "label": "General normalized transfer, requiring two explicit actual moment estimates",
       "documentation": "docs/vinogradov-korobov-framework.md",
       "overview": true
     }

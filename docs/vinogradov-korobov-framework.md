@@ -22,7 +22,9 @@ to an actual mixed-moment maximum, retaining arbitrary complex tail weights.
 Both original collision contributions now have explicit bounds, giving the
 actual finite conditioning recurrence. Its deeper remainder now has an
 explicit power saving at the elementary exponent, with rounded cutoffs and
-all constants paid. High-moment exponent improvement remains open.
+all constants paid. The normalized signed recurrence now couples these
+steps, retaining the full intermediate energy sum. High-moment exponent
+improvement through a full iteration remains open.
 The Vinogradov–Korobov zeta growth estimate
 and zero-free region remain unproved in this repository. No external
 analytic estimate is installed as an axiom or as a claimed discharged premise.
@@ -908,10 +910,108 @@ The final unconditional specialization discharges those two bounds at
 remainder step in
 [Wooley (2012), equations (5.4)–(5.5) and Lemma 5.2](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf)
 quantitative at the elementary starting exponent, while preserving the
-interface needed for subsequent improvements. Full high-moment exponent
-improvement and its iteration with the signed congruencing transfer remain
-open. The original Riesz moments still carry their own complex weights and
+interface needed for subsequent improvements. The next section couples this remainder to signed congruencing.
+Improving the high-moment exponent through a full iteration remains open. The original Riesz moments still carry their own complex weights and
 sampling costs. No VK growth estimate or new zero-free width follows yet.
+
+## Normalized signed congruencing recurrence
+
+[VinogradovIteratedCongruencing](../RiemannGaussian/VinogradovIteratedCongruencing.lean)
+identifies the reverse maximum with the actual next conditioning maximum
+at scales `b,k*b`, with the canonical original residue and both block
+colours retained. The full finite conditioning sum and its deep remainder
+therefore feed directly into the original signed congruencing inequality.
+No supplied moment estimate occurs in `conditioned_le_finite_iteration`.
+
+For a real exponent `lambda`, put
+
+```math
+\mathcal N_{a,b}(\lambda)=
+\left(\frac X{p^a}\right)^{\lambda-2ku}
+\left(\frac X{p^b}\right)^{2ku},\qquad
+\delta_\lambda=\lambda-2k(u+1)+\frac{k(k+1)}2.
+```
+
+[VinogradovCongruencingScaling](../RiemannGaussian/VinogradovCongruencingScaling.lean)
+proves the exact scale identity underlying the iteration:
+
+```math
+\begin{aligned}
+&p^{(a+b)k(k-1)/2+k(kb-a)}
+\left(\frac X{p^b}\right)^{\lambda(1-1/u)}
+\mathcal N_{b,kb}(\lambda)^{1/u}\\
+&\qquad=\mathcal N_{a,b}(\lambda)p^{-\delta_\lambda(b-a)}.
+\end{aligned}
+```
+
+The actual integer congruence cost is transported into that identity with
+its triangular division and truncated-subtraction conditions proved.
+Every intermediate level also has the exact factor
+`N_(a,b+h)=N_(a,b)*p^(-2kuh)`.
+
+Write `Q_(a,c)` for the actual maximum of the conditioned moments over
+canonical tail residues and induced tail-block colours, retaining the fixed
+original coarse class and colour. Let `Qhat=Q/N`. The exact finite allowance
+in [VinogradovNormalizedIteration](../RiemannGaussian/VinogradovNormalizedIteration.lean)
+is
+
+```math
+\mathcal A_{a,b,H}(\lambda)=p^{-H/2}
+ +E\sum_{h=0}^{H-1}S^hp^{-2kuh}\widehat Q_{a,b+h}(\lambda).
+```
+
+`allowance_scale_identity` proves that multiplying this by `N_(a,b)`
+recovers exactly the proved remainder scale and the full intermediate sum.
+No largest-level selection or omitted energy is hidden in this identity.
+The general theorem `normalized_iteration_of_scaled_bounds` requires
+`lambda` at or above the critical exponent and **two explicitly stated
+actual homogeneous estimates**, at `floor(X/p^b)+1` and
+`floor(X/p^(kb+H))+1`, with common `C>=1`. It does not assert those sharper
+estimates.
+
+The terminal `normalized_finite_iteration` supplies both estimates at
+`lambda_0=k(2u+1)` using the proved rounded elementary bound. Under the
+explicit conditions
+
+```math
+\begin{gathered}
+k\ge2,\quad u\ge k,\quad a\lt b,\quad H\ge1,\\
+(k-1)b\le2H,\quad p^{kb+H}\le X,\quad (CD)^2\le p,\\
+C=2^{k(2u+1)}k!,\qquad D=2u(k-1)^{2ku},
+\end{gathered}
+```
+
+with prime `p`, original canonical residue and both original block colours,
+it proves
+
+```math
+\boxed{\displaystyle
+K_{a,b}^{\epsilon,\tau}\le
+c_\epsilon C^{1-1/u}\mathcal N_{a,b}(\lambda_0)
+p^{-k(k-1)(b-a)/2}\mathcal A_{b,kb,H}(\lambda_0)^{1/u}.}
+```
+
+Here `c_epsilon=r+!*r-!` is the original sign factorial. There is **no
+supplied moment-budget premise** in this specialization. Every `Qhat` is
+still an actual conditioned energy at the original endpoint.
+
+The companion terminal `conditioned_le_geometric_iteration` pays each
+intermediate weight explicitly, before any largest-level selection:
+
+```math
+S^hp^{-2kuh}\le D^hp^{-(2ku-k+1)h},\qquad
+2ku-k+1\ge\frac74ku.
+```
+
+It uses that complete geometric allowance in the same actual recurrence.
+These are finite, quantitative ingredients of
+[Wooley (2012), Lemma 6.3](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
+The full iteration, its initial global mean-value conditioning and a
+sharper high-moment exponent still need proofs. The displayed defect factor
+alone does not prove the next energies small. The original Riesz moments
+retain their own weights and sampling costs; they are not identified with
+these unweighted conditioned moments. No VK zeta-growth estimate, larger
+zero-free width or historical novelty is claimed here.
 
 ## Direct application to the original Riesz carrier
 

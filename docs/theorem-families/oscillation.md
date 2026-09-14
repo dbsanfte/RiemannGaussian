@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**103 modules.** Source links open the definitions, hypotheses and proofs.
+**106 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [DerivativeOrderComparison](../../RiemannGaussian/DerivativeOrderComparison.lean)
@@ -75,6 +75,7 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovConditioningRemainder](../../RiemannGaussian/VinogradovConditioningRemainder.lean)
 - [VinogradovConditioningSupport](../../RiemannGaussian/VinogradovConditioningSupport.lean)
 - [VinogradovCongruenceEnergy](../../RiemannGaussian/VinogradovCongruenceEnergy.lean)
+- [VinogradovCongruencingScaling](../../RiemannGaussian/VinogradovCongruencingScaling.lean)
 - [VinogradovCongruencingStep](../../RiemannGaussian/VinogradovCongruencingStep.lean)
 - [VinogradovFourierEvaluation](../../RiemannGaussian/VinogradovFourierEvaluation.lean)
 - [VinogradovGaussianBounds](../../RiemannGaussian/VinogradovGaussianBounds.lean)
@@ -82,6 +83,7 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovGaussianKernel](../../RiemannGaussian/VinogradovGaussianKernel.lean)
 - [VinogradovGaussianResonance](../../RiemannGaussian/VinogradovGaussianResonance.lean)
 - [VinogradovInterpolation](../../RiemannGaussian/VinogradovInterpolation.lean)
+- [VinogradovIteratedCongruencing](../../RiemannGaussian/VinogradovIteratedCongruencing.lean)
 - [VinogradovKorobovBilinearPhase](../../RiemannGaussian/VinogradovKorobovBilinearPhase.lean)
 - [VinogradovKorobovBlock](../../RiemannGaussian/VinogradovKorobovBlock.lean)
 - [VinogradovKorobovDamping](../../RiemannGaussian/VinogradovKorobovDamping.lean)
@@ -92,6 +94,7 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovMomentReduction](../../RiemannGaussian/VinogradovMomentReduction.lean)
 - [VinogradovNonsingularConditioning](../../RiemannGaussian/VinogradovNonsingularConditioning.lean)
 - [VinogradovNonsingularSelection](../../RiemannGaussian/VinogradovNonsingularSelection.lean)
+- [VinogradovNormalizedIteration](../../RiemannGaussian/VinogradovNormalizedIteration.lean)
 - [VinogradovPartitionEnergy](../../RiemannGaussian/VinogradovPartitionEnergy.lean)
 - [VinogradovPowerSumRigidity](../../RiemannGaussian/VinogradovPowerSumRigidity.lean)
 - [VinogradovPrimePowerRigidity](../../RiemannGaussian/VinogradovPrimePowerRigidity.lean)

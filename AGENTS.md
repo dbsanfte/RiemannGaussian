@@ -2002,6 +2002,28 @@ final theorem only at the elementary exponent. Improving the high-moment
 exponent and the full congruencing iteration remain open. No original
 Riesz weighted saving, VK zeta growth or new zero-free width is claimed.
 
+`VinogradovIteratedCongruencing` now identifies the reverse maximum with
+its actual next-level conditioning maximum and feeds the full finite
+remainder back into signed congruencing. `VinogradovCongruencingScaling`
+retains N_(a,b)(lambda)=(X/p^a)^(lambda-2ku)*(X/p^b)^(2ku) and proves the
+exact scale factor p^(-delta*(b-a)), delta=lambda-2k(u+1)+k(k+1)/2.
+The original integer cost pays triangular division and truncated subtraction.
+`VinogradovNormalizedIteration.allowance_scale_identity` retains the exact
+finite allowance p^(-H/2)+E*sum S^h*p^(-2kuh)*Qhat_(a,b+h), with each
+Qhat an actual conditioned maximum divided by its positive source scale.
+The general recurrence keeps its two required actual homogeneous estimates.
+`normalized_finite_iteration` supplies both at lambda0=k(2u+1), so its
+actual signed K_(a,b) is at most c_colour*C^(1-1/u)*N_(a,b)(lambda0)*
+p^(-k(k-1)(b-a)/2)*A_(b,kb,H)(lambda0)^(1/u). This specialized endpoint
+assumes no moment budget: k>=2,u>=k,a<b,H>=1,k*b-b<=2H,p^(k*b+H)<=X,
+prime p,canonical eta<p^b and (C*D)^2<=p are its explicit conditions.
+The full intermediate sum remains before `conditioned_le_geometric_iteration`,
+which bounds each S^h*p^(-2kuh) by D^h*p^(-(2ku-k+1)h), including D.
+Do not list this finite normalization or coupling as open. The initial global
+mean-value conditioning, full iteration and improved high-moment exponent
+remain open; the defect factor alone does not bound the next energies.
+No original weighted Riesz saving or larger zero-free region follows yet.
+
 Stronger high-order moment bounds and
 quantitative joint resonance control,
 the required exponential-sum saving, zeta growth and the VK zero-free region

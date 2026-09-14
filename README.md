@@ -111,15 +111,14 @@ Make the proved region cover every applicable benchmark, preserving each height 
 
 ## Latest Update
 
-**The deep conditioning remainder now has a proved power saving.**
-Lean pays the rounded quotient endpoints and every iteration constant,
-giving a half-depth base saving under explicit base and cutoff conditions.
-The final theorem uses the already proved elementary moments; a general
-transfer retains the estimates needed for sharper exponents. Improving
-those exponents, VK zeta growth and the actual Riesz weighted saving remain
-open. The proved zero-free region is unchanged.
-[Latest Lean theorem](RiemannGaussian/VinogradovConditioningPowerSaving.lean)
-· [Exact saving and scope](docs/vinogradov-korobov-framework.md#deep-remainder-with-explicit-power-saving).
+**The signed normalized congruencing recurrence now has a Lean proof.**
+It retains both block colours, the full intermediate energy sum and every
+finite scale cost. Exact normalization exposes the moment-exponent defect;
+the final theorem supplies its required estimates at the proved elementary
+exponent. Improving that exponent through the full iteration, VK zeta growth
+and the Riesz weighted saving remain open. The proved region is unchanged.
+[Latest Lean theorem](RiemannGaussian/VinogradovNormalizedIteration.lean)
+· [Exact recurrence and scope](docs/vinogradov-korobov-framework.md#normalized-signed-congruencing-recurrence).
 
 ## Notable Formalisations
 
