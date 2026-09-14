@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 11,
-      "id": "vanishing-nonlinear-prime-tail",
+      "sequence": 12,
+      "id": "fixed-composite-cofactor-decay",
       "kind": "theorem",
-      "title": "A nonlinear arithmetic tail allowance now decreases to zero.",
-      "body": "Lean proves a vanishing, monotone integrated allowance for the nonlinear multiplicative correction, uniformly over finite larger-prime selections and all heights at each fixed Re(s)>1/2. Exact prime-factor formulas retain the actual carrier, ordinary-prime subtraction and completion boundary. The first-order coupling, bounds after the original factorial filter and independent signed floor remain open.",
-      "next": "Next: control the coupled first-order response and its signed completion boundary at the original source scale.",
+      "title": "A whole arithmetic cofactor class now has proved decay.",
+      "body": "Lean proves that every fixed squarefree composite cofactor has a vanishing full prime-insertion contribution in the original band, with its full factorial filter. The clipped part has an explicit inverse-order plus geometric allowance. Exact factorization identifies the six small prime cofactors that can leave semiprime tails; those tails and the multiple-large-prime class still need a joint bound.",
+      "next": "Next: assemble the finite cofactor deletion into the source theorem and attack the surviving signed prime correlations.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszNonlinearTailDecayTheorem"
+        "rieszFixedCofactorDecayTheorem"
       ],
-      "documentation": "docs/zeta-riesz-signed-fourier-tail.md"
+      "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -250,6 +250,53 @@
         "rieszPrimeFactorScope"
       ],
       "documentation": "docs/zeta-riesz-signed-fourier-tail.md"
+    },
+    {
+      "id": "fixed-cofactor-decay",
+      "label": "Arithmetic components · fixed composite cofactors now decay",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFixedCofactorDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszClippedPrimeDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszClippedAllowanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeClassPartitionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOneLargeFactorizationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmallPrimeHeadTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSemiprimeTailTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHalfplaneAllowanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFilteredCompletionTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFixedCofactorScope"
+      ],
+      "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md"
     }
   ],
   "scopes": {
@@ -778,6 +825,69 @@
       "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
       "overview": true,
       "summary": "The canonical primorial contains every original squarefree band label. Its complete composite response minus the explicit omitted signed sum recovers that band exactly; no smallness of the boundary is asserted."
+    },
+    "RiemannGaussian.ZetaRieszFixedCofactor.tendsto_actual_composite_cofactor_band": {
+      "label": "Fixed composite cofactor · full original-band decay",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
+      "overview": true,
+      "summary": "Every fixed squarefree nonunit composite cofactor has an independently vanishing full prime-insertion band at the original source scale, with its full polynomial filter and moving cutoff."
+    },
+    "RiemannGaussian.ZetaRieszFixedCofactor.tendsto_actual_clipped_prime_band": {
+      "label": "Clipped prime insertion · actual filtered decay",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
+      "overview": true,
+      "summary": "Every fixed nonunit cofactor has a vanishing original-band contribution below its fixed multiple of the damped squared cutoff."
+    },
+    "RiemannGaussian.ZetaRieszFixedCofactor.norm_sum_filter_square_cutoff_le": {
+      "label": "Explicit inverse-order and geometric arithmetic allowance",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
+      "overview": true,
+      "summary": "A bounded coefficient on any subset below K*(D_N+2)^2 costs at most 2*C*sum(norm(P_k))*sqrt(K)*(u/(N+1)+2*u^(N+1)). All polynomial factorial shifts are included."
+    },
+    "RiemannGaussian.ZetaRieszPrimeClasses.actual_band_eq_two_prime_classes": {
+      "label": "Actual carrier · one or at least two large primes",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
+      "overview": true,
+      "summary": "At N>=60 every surviving squarefree composite has one or at least two prime factors >=16. The full signed original-band sum is preserved."
+    },
+    "RiemannGaussian.ZetaRieszPrimeClasses.one_large_prime_factorization": {
+      "label": "One large prime · a nonunit divisor of 30030",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
+      "overview": true,
+      "summary": "Every actual squarefree composite with one large prime is p*a, where p>=16 is prime, a>1 divides 30030 and p does not divide a."
+    },
+    "RiemannGaussian.ZetaRieszPrimeClasses.prime_divisor_small_product": {
+      "label": "The six possible prime cofactors",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
+      "overview": true,
+      "summary": "The prime divisors of the fixed small-prime product lie in {2,3,5,7,11,13}."
+    },
+    "RiemannGaussian.ZetaRieszFixedCofactor.coefficient_prime_pair_above_cutoff": {
+      "label": "Surviving semiprime coefficient · exact formula",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
+      "overview": true,
+      "summary": "For a prime cofactor a and log(a)<=L<=log(p), the actual coefficient is -log(p*a)*log(a)/L. Its signed filtered tail is not bounded by the composite-cofactor theorem."
+    },
+    "RiemannGaussian.ZetaPrimeNonlinearHalfplane.exists_uniform_halfplane_nonlinear_tail_lt": {
+      "label": "Nonlinear correction · uniform closed-half-plane decay",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
+      "overview": true,
+      "summary": "For every fixed sigma>1/2 the integrated nonlinear multiplier allowance tends to zero uniformly on Re(s)>=sigma and all finite larger-label selections. The exp(A) coupling remains unpaid."
+    },
+    "RiemannGaussian.ZetaRieszFilteredCompletion.actual_band_eq_filtered_completion": {
+      "label": "Completed response and boundary · full factorial filter",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
+      "overview": true,
+      "summary": "Every original factorial moment passes through the exact completed-minus-boundary response inside the paired Fourier integral. The whole quotient is integrable; no separate channel bound is asserted."
     }
   }
 }

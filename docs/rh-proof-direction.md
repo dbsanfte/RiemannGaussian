@@ -48,6 +48,14 @@ the remaining correlations and states the weakest current sufficient target:
 a fixed lower floor strictly above minus one on a cofinal sequence of the
 original normalized carrier. That independent floor remains open.
 
+The [fixed cofactor component view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=fixed-cofactor-decay)
+now proves independent source-scale decay for every fixed squarefree
+composite-cofactor prime band. Its [component ledger](zeta-riesz-fixed-cofactor-decay.md)
+distinguishes that paid class from the explicit six small-prime semiprime
+tails and the class with at least two large primes. Assembling the finite
+cofactor deletion into the source theorem remains a separate step; the
+combined signed estimate remains open.
+
 The **Critical moments** view proves the actual global exponent
 `2k(u+1)-k(k+1)/2+eps` for every `k>=2,u>=k,eps>0` at all sufficiently
 large original endpoints. One uniform improvement above each fixed positive

@@ -17,6 +17,12 @@ The default RH view remains the original
 The new identities complement that bound; no dependency arrow to an
 unproved arithmetic estimate is asserted.
 
+The subsequent [fixed-cofactor decay audit](zeta-riesz-fixed-cofactor-decay.md)
+now pays a full original-band contribution for every fixed squarefree
+composite cofactor, and gives an explicit bound after its full factorial
+filter. It also identifies the remaining semiprime coefficients and strengthens
+the isolated nonlinear allowance to a uniform closed-half-plane estimate.
+
 ## The exact target
 
 For a hypothetical nontrivial zero \(\rho\) with \(\Re\rho>1/2\), set

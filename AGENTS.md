@@ -2271,6 +2271,30 @@ as supporting arithmetic results. The handoff's model diagnostics are not
 actual-zero estimates. No historical novelty or new zero-free width is
 claimed. Continue independent local theorem work during exact-SHA CI.
 
+`ZetaRieszFixedCofactor` now proves source-scale decay of the complete
+original prime-insertion band for every fixed squarefree nonunit composite
+cofactor. The coefficient vanishes above the common cutoff once it contains
+the cofactor. Below its fixed multiple of `(D_N+2)^2`, the complete factorial
+filter has an explicit allowance proportional to
+`u/(N+1)+2*u^(N+1)`. This is a genuine arithmetic component bound with no
+zero assumption. Prime cofactors leave the exact semiprime coefficient
+`-log(p*a)*log(a)/L`; do not infer filtered decay just from its `1/L`.
+`ZetaRieszPrimeClasses` deletes all-small support at `N>=60` and proves that
+one-large-prime labels have nonunit cofactor dividing 30030. The prime
+cofactors are exactly among 2,3,5,7,11,13. Each fixed composite-cofactor
+insertion band is paid; the finite deletion still needs to be assembled
+with the exact restrictions into a reduced source theorem. The signed
+semiprime and multiple-large-prime terms remain unpaid jointly.
+`ZetaRieszFilteredCompletion` carries the complete original factorial filter
+through the completed-minus-boundary response, retaining both frequencies
+inside a genuinely integrable quotient. Do not claim its separate channels
+are integrable or bounded. `ZetaPrimeNonlinearHalfplane` makes the isolated
+nonlinear allowance uniform on every fixed closed half-plane strictly
+right of one half; the first-order exponential coupling is still unpaid.
+See `docs/zeta-riesz-fixed-cofactor-decay.md` and the supporting RH explorer
+endpoint `fixed-cofactor-decay`. The default whole-carrier endpoint remains
+`ZetaRieszCriticalProfile.exists_original_band_critical_profile`.
+
 `ZetaRieszPrimeFourier` now proves that each complete squarefree nonunit
 composite divisor measure has zero mass and log moment, and identifies
 the actual band with its integrable full prime-factor response. Its exact

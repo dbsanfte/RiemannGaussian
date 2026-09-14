@@ -2359,7 +2359,11 @@
     "ZetaRieszPrimeFourier": "arithmetic",
     "ZetaPrimeNonlinearFactor": "arithmetic",
     "ZetaPrimeNonlinearTail": "arithmetic",
-    "ZetaRieszCompositeProduct": "arithmetic"
+    "ZetaRieszCompositeProduct": "arithmetic",
+    "ZetaRieszFixedCofactor": "arithmetic",
+    "ZetaRieszPrimeClasses": "arithmetic",
+    "ZetaRieszFilteredCompletion": "arithmetic",
+    "ZetaPrimeNonlinearHalfplane": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
