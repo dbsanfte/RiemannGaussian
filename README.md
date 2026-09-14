@@ -111,14 +111,14 @@ Make the proved region cover every applicable benchmark, preserving each height 
 
 ## Latest Update
 
-**The signed normalized congruencing recurrence now has a Lean proof.**
-It retains both block colours, the full intermediate energy sum and every
-finite scale cost. Exact normalization exposes the moment-exponent defect;
-the final theorem supplies its required estimates at the proved elementary
-exponent. Improving that exponent through the full iteration, VK zeta growth
-and the Riesz weighted saving remain open. The proved region is unchanged.
-[Latest Lean theorem](RiemannGaussian/VinogradovNormalizedIteration.lean)
-· [Exact recurrence and scope](docs/vinogradov-korobov-framework.md#normalized-signed-congruencing-recurrence).
+**The original Riesz carrier now reaches the finite conditioned-energy recurrence.**
+The Lean proof retains complex weight averages on complete frequency fibres,
+then pays sampling and block normalization. Its bound includes the proved
+deep remainder and every intermediate conditioned energy. A net arithmetic
+saving, the improved VK moment exponent and a wider zero-free region remain
+open; the proved region is unchanged.
+[Latest Lean theorem](RiemannGaussian/ZetaRieszConditioningTransfer.lean)
+· [Exact transfer and scope](docs/zeta-riesz-conditioned-energy.md#direct-transfer-to-the-finite-conditioning-recurrence).
 
 ## Notable Formalisations
 

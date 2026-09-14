@@ -2024,6 +2024,28 @@ mean-value conditioning, full iteration and improved high-moment exponent
 remain open; the defect factor alone does not bound the next energies.
 No original weighted Riesz saving or larger zero-free region follows yet.
 
+`VinogradovFibreCorrelation` now retains the exact complex average of the
+original configuration weights on each full frequency fibre. Its exact
+polynomial and energy identities precede the bound E_w<=chi^2*E_1 on the
+identical configuration family; chi is the actual largest fibre-average
+norm, not a supplied budget. It is at most any coefficient envelope, but
+keep the complex averages upstream to preserve cancellation. Empty fibres
+and empty families are covered. `ZetaRieszConditioningTransfer` identifies
+E_1 with the literal signed-block/full-residue mixed moment, then applies
+the proved finite conditioning bound to the original Riesz band. Its
+`actual_band_le_conditioned_iteration` pays the actual attained-frequency
+cost, residue Holder factor and positive floor block mass, retaining
+p^(-H/2) and the full sum of normalized conditioned levels at lambda0.
+The geometric endpoint retains every intermediate level and its per-step
+constant. Both require k>=2,u>=k,a<=b,H>=1,b-a<=2H,p^(b+H)<=2^(32*N),
+nonzero p and (C*D)^2<=p; the same budget proves k<p and block positivity.
+No missing weighted-moment estimate is assumed. Do not list this direct
+finite Riesz-to-conditioning transfer as open. A net saving in its actual
+correlations and conditioned levels after all costs remains unproved,
+as do the improved high-moment exponent, VK growth and a larger region.
+Do not infer a pointwise comparison of oscillating polynomials from the
+integrated fibre comparison, or send H to infinity at a fixed cutoff.
+
 Stronger high-order moment bounds and
 quantitative joint resonance control,
 the required exponential-sum saving, zeta growth and the VK zero-free region

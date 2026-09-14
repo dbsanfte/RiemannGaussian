@@ -1023,7 +1023,14 @@ value and the complete residue partition recover the original band exactly.
 Pointwise evaluation pays its attained joint-frequency count, and an
 explicit admissible block proves the normalization is nonzero when the
 next-digit window fits. The unchanged source limit and exact signed Gram
-identities remain available. See the [full bound and its costs](zeta-riesz-conditioned-energy.md).
+identities remain available. The newer
+[finite conditioning transfer](../RiemannGaussian/ZetaRieszConditioningTransfer.lean)
+now averages the original complex weights on complete configuration-frequency
+fibres. Its proved energy comparison reaches the actual unweighted mixed
+moment, and then the explicit deep remainder and full normalized conditioned
+sum. It pays the actual fibre-correlation maximum as well as sampling and
+positive block mass; it assumes no missing weighted-moment estimate.
+See the [full bound and its costs](zeta-riesz-conditioned-energy.md#direct-transfer-to-the-finite-conditioning-recurrence).
 Quantitative control of the resulting original weighted mixed moments,
 including all those costs, remains open. This interface does not enlarge
 the proved zero-free region or complete the VK iteration.

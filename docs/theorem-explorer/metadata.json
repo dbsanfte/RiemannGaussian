@@ -752,6 +752,42 @@
         [
           "gaussianPhaseBandToolkit",
           "vkGeometricIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFibreAveragePolynomialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFibreAverageEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFibreCorrelationTransferTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFibreCorrelationEnvelopeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszFibreAverageEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszCorrelatedMixedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszCorrelatedLevelTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszConditioningIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszGeometricConditioningTheorem"
         ]
       ],
       "scopePath": [
@@ -1297,7 +1333,7 @@
     },
     {
       "id": "riesz-vk",
-      "label": "Riesz carrier · explicit mass and interpolation",
+      "label": "Riesz carrier · correlations and finite conditioning",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1362,6 +1398,42 @@
         [
           "gaussianPhaseBandToolkit",
           "vkRieszInterpolatedBandTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFibreAveragePolynomialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFibreAverageEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFibreCorrelationTransferTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFibreCorrelationEnvelopeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszFibreAverageEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszCorrelatedMixedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszCorrelatedLevelTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszConditioningIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszGeometricConditioningTheorem"
         ]
       ],
       "scopePath": [
@@ -1766,7 +1838,8 @@
     "ZetaSquarefreeUnifiedRegion": "arithmetic",
     "ZetaRieszConditionedEnergy": "arithmetic",
     "ZetaRieszBlockMass": "arithmetic",
-    "ZetaRieszInterpolation": "arithmetic"
+    "ZetaRieszInterpolation": "arithmetic",
+    "ZetaRieszConditioningTransfer": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
@@ -3610,6 +3683,51 @@
     "RiemannGaussian.VinogradovNormalizedIteration.normalized_iteration_of_scaled_bounds": {
       "label": "General normalized transfer, requiring two explicit actual moment estimates",
       "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovFibreCorrelation.polynomial_eq_fibre_averages": {
+      "label": "Exact complex polynomial in full fibre averages",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovFibreCorrelation.energy_eq_fibre_averages": {
+      "label": "Exact energy retains full fibre correlations",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovFibreCorrelation.energy_le_correlation_maximum": {
+      "label": "Actual fibre averages transfer to identical unit-weight energy",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovFibreCorrelation.correlationMaximum_le_of_weight_bound": {
+      "label": "Fibre correlations never exceed a coefficient envelope",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszConditioningTransfer.amplified_energy_eq_fibre_averages": {
+      "label": "Original Riesz energy retains full complex fibre averages",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszConditioningTransfer.amplified_energy_le_correlated_mixed": {
+      "label": "Original Riesz energy reaches the identical mixed moment",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszConditioningTransfer.actual_band_le_correlated_level": {
+      "label": "Original carrier reaches the actual mixed level with all sampling costs",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszConditioningTransfer.actual_band_le_conditioned_iteration": {
+      "label": "Original Riesz carrier reaches finite conditioned-energy iteration",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszConditioningTransfer.actual_band_le_geometric_conditioned_iteration": {
+      "label": "Original Riesz carrier receives the full geometric conditioned sum",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
       "overview": true
     }
   }

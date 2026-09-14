@@ -182,6 +182,109 @@ weights and logarithmic phases remain in both moments. The estimate
 organizes the remaining problem; it does not yet prove a saving for either
 factor or a new zero-free region.
 
+## Direct transfer to the finite conditioning recurrence
+
+[ZetaRieszConditioningTransfer](../RiemannGaussian/ZetaRieszConditioningTransfer.lean)
+now connects the original carrier to the proved finite conditioning
+recurrence. The transfer uses the same configurations as the existing
+amplified Riesz lift. For each residue `eta`, a configuration consists of
+one original signed conditioned block and `r` original residue-tail entries.
+Write `v(z)` for its complete signed power-sum vector and `w(z)` for the
+product of the original complex Riesz weights. Define
+
+```math
+\begin{gathered}
+n_{\eta,c}=\#\{z:v(z)=c\},\qquad
+\mu_{\eta,c}=\frac{1}{n_{\eta,c}}\sum_{v(z)=c}w(z),\\
+\chi_\eta=\max_{c\in v(\Omega_\eta)}|\mu_{\eta,c}|.
+\end{gathered}
+```
+
+An empty fibre has average zero, and an empty configuration family has
+maximum zero. These conventions are covered by the proof. The averages
+retain the actual squarefree coefficients, their signs, logarithmic phases,
+filter, damping, and the unchanged common length and finite endpoint.
+They use equality of the **whole** frequency vector, with the original
+block colour retained.
+
+[VinogradovFibreCorrelation](../RiemannGaussian/VinogradovFibreCorrelation.lean)
+proves exact identities before taking a maximum:
+
+```math
+\begin{aligned}
+F_a(\theta)R_\eta(\theta)^r
+ &=\sum_c n_{\eta,c}\mu_{\eta,c}e(c\cdot\theta),\\
+\int |F_aR_\eta^r|^2
+ &=\sum_c n_{\eta,c}^2|\mu_{\eta,c}|^2,\\
+I_{a,b}^{\eta}&=\sum_c n_{\eta,c}^2.
+\end{aligned}
+```
+
+Here `I` is the literal unweighted mixed moment on the **identical**
+configuration family. Thus the compiled integrated comparison is
+
+```math
+\int |F_aR_\eta^r|^2\le\chi_\eta^2 I_{a,b}^{\eta}.
+```
+
+This does not compare the oscillating polynomials pointwise. In general
+such a pointwise domination would be false. The theorem
+`correlationMaximum_le_of_weight_bound` also proves that `chi_eta` is at
+most any bound for the configuration coefficients `|w(z)|`; cancellations
+inside the exact complex fibre averages can make it smaller. No smallness
+of these averages is assumed by the terminal carrier theorem.
+
+Set `X=2^(32*N)`, `r=k*u`, and retain the actual sampling cost
+
+```math
+\mathcal T=(p^b)^{2ku-1}
+ \sum_{\eta\bmod p^b} S_\eta\chi_\eta^2,
+\qquad S_\eta=\#\{v(z):w(z)\ne0\}.
+```
+
+At the proved elementary exponent `lambda0=k*(2*u+1)`, use the actual
+normalized levels and complete conditioning allowance from
+[VinogradovNormalizedIteration](../RiemannGaussian/VinogradovNormalizedIteration.lean):
+
+```math
+\begin{gathered}
+\mathcal N_{a,b}=(X/p^a)^k(X/p^b)^{2ku},\qquad
+\widehat Q_{a,j}=Q_{a,j}/\mathcal N_{a,j},\\
+\mathcal A_{a,b,H}=p^{-H/2}
+ +E\sum_{h=0}^{H-1}S^h p^{-2kuh}\widehat Q_{a,b+h},\\
+S=2u\binom{p}{k-1}(k-1)^{2ku},\qquad
+E=\big((2ku)_k\big)^{2u}.
+\end{gathered}
+```
+
+`Q` is the actual maximum over canonical tail residues and induced block
+colours, with coarse residue zero and the original coarse block colour
+fixed. It is not an assumed energy budget. The terminal theorem
+[actual_band_le_conditioned_iteration](../RiemannGaussian/ZetaRieszConditioningTransfer.lean)
+proves for the **original arithmetic band**:
+
+```math
+\boxed{|B|^{2ku}\le
+ \frac{\mathcal T\,\mathcal N_{a,b}\,\mathcal A_{a,b,H}}{C_0^2}.}
+```
+
+Its explicit hypotheses are nonzero integer `p`, `k≥2`, `u≥k`, `a≤b`,
+`H≥1`, `b-a≤2*H`, `p^(b+H)≤X`, and `(C*D)^2≤p`, where
+`C=2^(k*(2*u+1))*k!` and `D=2*u*(k-1)^(2*k*u)`.
+The same budget proves `k<p`, and the finite cutoff condition proves
+`C0>0`. Primality is not required for this conditioning transfer.
+The companion `actual_band_le_geometric_conditioned_iteration` replaces
+each retained weight `S^h*p^(-2*k*u*h)` by its proved upper bound
+`D^h*p^(-(2*k*u-k+1)*h)`, retaining every actual level.
+
+The new interface lets an improvement to these actual conditioned levels
+feed into the literal Riesz bound while the arithmetic correlations remain
+explicit. A useful source-scale saving still has to overcome **all** the
+sampling, correlation and normalization costs. The small deep remainder
+alone does not control the remaining intermediate sum. This is a finite
+statement: its cutoff condition prevents sending `H` to infinity at fixed
+`X`. It proves no new zero-free width or independent signed arithmetic floor.
+
 ## Source and remaining arithmetic work
 
 For a hypothetical right-half zero `rho`, the original theorem chooses
@@ -205,8 +308,10 @@ correlations retained by its Gram identities. No saving beyond those costs
 has yet been proved. The higher conditioned homogeneous comparison and finite
 VK congruencing step are now proved, along with an explicit bound for the
 singular and nonsingular conditioning contributions. Their explicit one-step
-conditioning recurrence is proved. Improving the high-moment exponent through further
-iteration remains open as documented in the
+conditioning recurrence is proved, and the direct correlation transfer above
+now applies its finite iteration and deep remainder to the original carrier.
+Improving the high-moment exponent through further iteration and proving a
+net saving in the actual correlations and conditioned levels remain open in the
 [VK framework](vinogradov-korobov-framework.md).
 
 The finite Fourier and congruencing tools are classical ingredients. This
