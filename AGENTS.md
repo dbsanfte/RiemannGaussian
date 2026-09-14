@@ -2138,9 +2138,9 @@ critical moments into the actual Korobov product sum. Its frequency
 embedding preserves original collisions; a finite positive subset B uses
 its CONTAINING INTERVAL length Y, never an assumed cardinality-only critical
 bound. Preserve original B, exact coefficients, attainable support,
-quartered Gaussian cost and whole joint resonance envelope. Quantitative
-parameter costs, joint resonance, zeta growth, new zero-free coverage and
-the combined signed Riesz saving remain open. No historical novelty is
+quartered Gaussian cost and whole joint resonance envelope. The fixed-degree joint resonance and Dirichlet saving described below are
+proved. Uniform quantitative moment costs, all-scale zeta growth, new
+zero-free coverage and the combined signed Riesz saving remain open. No historical novelty is
 claimed for this formalization. Keep these scope limits in the explorer.
 
 The ten Accomplishments consolidate the reproduced Anthropic baseline with
@@ -2170,10 +2170,10 @@ as do quantitative parameter bounds, VK growth and a larger region.
 Do not infer a pointwise comparison of oscillating polynomials from the
 integrated fibre comparison, or send H to infinity at a fixed cutoff.
 
-Moment bounds at smaller orders, evaluated parameter costs and
-quantitative joint resonance control,
-the required exponential-sum saving, zeta growth and the VK zero-free region
-remain unproved here. Do not add a VK curve to the proved union or promote a
+Moment bounds at smaller orders, evaluated degree-dependent moment costs,
+uniform all-scale zeta growth and the VK zero-free region remain unproved
+here. The fixed-degree exponential-sum saving and Gaussian constants are
+proved below; do not list those as open. Do not add a VK curve to the proved union or promote a
 conditional transfer as that analytic proof. The independent cofinal signed
 arithmetic floor and RH remain open. Numerical verification stays in its
 optional target; do not edit its fingerprinted inputs during a live run.
@@ -2196,12 +2196,25 @@ bound C*L*M^(-1/(128*k^2))+2*M^2 throughout that same height interval.
 Its `exists_dirichlet_block_saving` gives C*M^(4-1/(128*k^2)) at L=M^4.
 The signed averaging identity survives upstream; the endpoint norm bound
 is an explicitly named downstream relaxation, with its full mass paid.
+`VinogradovDampedSaving` now transports the partial-block saving through
+all nonnegative decreasing weights. The linear term pays the actual total
+weight and the constant endpoint term only the initial weight. Its
+`exists_feature_block_saving` applies to the literal zeta coefficients at
+every nonnegative real part, integer start M^4<=a<=2*M^4, and N+1<=2*M^4.
+The original complex Abel identity remains upstream. Do not infer a bound
+for additional prime/sieve or oscillating weights from this damping theorem.
+`VinogradovRectangleResonance.actual_resonance_le_explicit` exposes the
+previously constructed constant; retain its existing existential wrapper.
+`VinogradovGaussianCost` bounds the full actual joint resonance plus
+support exponential by 2^(9*k^2)*M^(dimension-S'). Its actual moment-root
+constant is at most two uniformly for k>=12. These are genuine all-tail
+bounds; homogeneous moment constants and thresholds remain separate.
 Constants and starting thresholds are unevaluated for each fixed degree.
 Do not promote these fixed-degree bounds to uniform all-scale zeta growth
 or a VK zero-free region. Quantitative degree costs and the all-scale
 analytic transport remain open. No new zero-free region or combined
 Riesz signed saving follows yet. Keep the Riesz critical profile as the
-RH explorer default; show the actual Dirichlet-block theorem in its
+RH explorer default; show the actual damped-zeta-block theorem and uniform Gaussian costs in its
 critical-moments view and Latest Update. See
 `docs/vinogradov-gaussian-power-saving.md`. Enrich the existing Vinogradov
 entries in both ten-entry README lists; do not add entries or trigger

@@ -36,8 +36,14 @@ proved eventual exponent strictly above critical and replaces the complete
 initial allowance in the original Riesz bound. A uniform improvement above
 each fixed positive defect now closes the infimum argument and proves
 the critical high-order exponent plus every positive epsilon. Both actual
-Korobov product moments and the original Riesz profile receive it. Uniform
-parameter costs and the complete joint resonance estimate remain open.
+Korobov product moments and the original Riesz profile receive it. The full
+Gaussian degree window now gives a genuine saving in original Dirichlet
+blocks across continuous parameter rectangles, and finite Abel transport
+carries it to their actual zeta damping. The complete Gaussian constant costs
+at most two after the actual moment root, uniformly for degree at least twelve.
+See [the precise bounds and scope](vinogradov-gaussian-power-saving.md).
+The homogeneous moment constants and thresholds still need uniform degree
+bounds, and the all-scale analytic transport remains open.
 The Vinogradov–Korobov zeta growth estimate
 and zero-free region remain unproved in this repository. No external
 analytic estimate is installed as an axiom or as a claimed discharged premise.
@@ -46,8 +52,8 @@ The research lead is [Bellotti (2023), Section 8](https://arxiv.org/html/2306.10
 That argument connects shifted logarithmic sums to polynomial phases and
 then uses high mean-value estimates. The current implementation closes the
 averaging, phase approximation, damping transport and moment reduction;
-the stronger high-moment and resonance estimates needed for the VK saving
-remain open.
+critical high-order moments and the actual rectangle saving are now proved.
+The uniform quantitative moment costs needed for a VK zeta bound remain open.
 
 ## Exact signed expansion
 

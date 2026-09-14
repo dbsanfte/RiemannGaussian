@@ -105,15 +105,17 @@ theorem square_le_thirtytwo_net_rectangleSaving (k : ℕ) (hk : 12 ≤ k) :
   omega
 
 /-- The complete actual resonance product receives the quadratic gain of every eligible degree simultaneously. -/
-theorem exists_rectangle_resonance_power_saving (k r s : ℕ) (hr : 0 < r) :
-    ∃ C : ℝ, 0 < C ∧ ∀ M : ℕ, 1 ≤ M → s ≤ M → ∀ t z : ℝ,
+theorem actual_resonance_le_explicit (k r s : ℕ) (hr : 0 < r) :
+    ∀ M : ℕ, 1 ≤ M → s ≤ M → ∀ t z : ℝ,
       (M : ℝ) ^ (2 * k - 2) ≤ t → t ≤ (M : ℝ) ^ (2 * k) →
       (M : ℝ) ^ 4 ≤ z → z ≤ 4 * (M : ℝ) ^ 4 → ∀ B : Finset ℕ,
       (∀ b ∈ B, b ≤ M) →
       resonanceEnvelope s (fun j => reciprocalScale r M (j.val + 1))
         (VinogradovKorobovMoment.phaseCoefficients k t z)
         (fun b : B => VinogradovMeanValue.monomialFrequency k b.val) ≤
-      C * (M : ℝ) ^ (k * (k + 1) - rectangleSaving k) := by
+      ((4 : ℝ) ^ k * ((2 * (r : ℝ) / (1 - Real.exp (-Real.pi))) *
+        (2 * (s : ℝ) + 2 + 2 * Real.pi * (k : ℝ) / (r : ℝ)))) ^ k *
+        (M : ℝ) ^ (k * (k + 1) - rectangleSaving k) := by
   classical
   let G := 2 * (r : ℝ) / (1 - Real.exp (-Real.pi))
   let F := 2 * (s : ℝ) + 2 + 2 * Real.pi * (k : ℝ) / (r : ℝ)
@@ -122,8 +124,6 @@ theorem exists_rectangle_resonance_power_saving (k r s : ℕ) (hr : 0 < r) :
     simpa using tail_denominator_pos (a := 1) zero_lt_one
   have hG : 0 < G := by dsimp only [G]; positivity
   have hF : 0 < F := by dsimp only [F]; positivity
-  have hW : 0 < W := by dsimp only [W]; positivity
-  refine ⟨W ^ k, pow_pos hW _, ?_⟩
   intro M hM hsM t z htlo hthi hzlo hzhi B hB
   have hMr : (1 : ℝ) ≤ M := by exact_mod_cast hM
   have hMpos : (0 : ℝ) < M := zero_lt_one.trans_le hMr
@@ -199,8 +199,28 @@ theorem exists_rectangle_resonance_power_saving (k r s : ℕ) (hr : 0 < r) :
             _ ≤ G * F := mul_le_mul_of_nonneg_left hfull hG.le
             _ ≤ (4 : ℝ) ^ k * (G * F) := le_mul_of_one_le_left
               (mul_pos hG hF).le (one_le_pow₀ (by norm_num))
-    _ = _ := by rw [Finset.prod_mul_distrib]; simp only [Finset.prod_const, Finset.card_univ,
-      Fintype.card_fin, Finset.prod_pow_eq_pow_sum, hE]
+    _ = _ := by
+      rw [Finset.prod_mul_distrib]
+      simp only [Finset.prod_const, Finset.card_univ,
+        Fintype.card_fin, Finset.prod_pow_eq_pow_sum, hE]
+      rfl
+
+/-- The complete actual resonance product receives the quadratic gain of every eligible degree simultaneously. -/
+theorem exists_rectangle_resonance_power_saving (k r s : ℕ) (hr : 0 < r) :
+    ∃ C : ℝ, 0 < C ∧ ∀ M : ℕ, 1 ≤ M → s ≤ M → ∀ t z : ℝ,
+      (M : ℝ) ^ (2 * k - 2) ≤ t → t ≤ (M : ℝ) ^ (2 * k) →
+      (M : ℝ) ^ 4 ≤ z → z ≤ 4 * (M : ℝ) ^ 4 → ∀ B : Finset ℕ,
+      (∀ b ∈ B, b ≤ M) →
+      resonanceEnvelope s (fun j => reciprocalScale r M (j.val + 1))
+        (VinogradovKorobovMoment.phaseCoefficients k t z)
+        (fun b : B => VinogradovMeanValue.monomialFrequency k b.val) ≤
+      C * (M : ℝ) ^ (k * (k + 1) - rectangleSaving k) := by
+  let W : ℝ := (4 : ℝ) ^ k * ((2 * (r : ℝ) / (1 - Real.exp (-Real.pi))) *
+    (2 * (s : ℝ) + 2 + 2 * Real.pi * (k : ℝ) / (r : ℝ)))
+  have hden : 0 < 1 - Real.exp (-Real.pi) := by
+    simpa using tail_denominator_pos (a := 1) zero_lt_one
+  refine ⟨W ^ k, by dsimp only [W]; positivity, ?_⟩
+  exact actual_resonance_le_explicit k r s hr
 
 end
 end RiemannGaussian.VinogradovRectangleResonance

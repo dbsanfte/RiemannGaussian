@@ -46,6 +46,37 @@ complete endpoint correction, then divides by the positive averaging mass
 absorbed below the displayed power-saving bound. No independence of shifts,
 vanishing boundary, or cancellation in the Taylor remainder is assumed.
 
+## Every decreasing amplitude, including the literal zeta coefficients
+
+[`VinogradovDampedSaving`](../RiemannGaussian/VinogradovDampedSaving.lean)
+proves an exact affine-cost Abel bound. For every nonnegative decreasing
+real weight family, under the same fixed-degree rectangle conditions,
+
+```math
+\left|\sum_{n=0}^{N}w_n(z+n)^{-it}\right|
+\le C M^{-\delta}\sum_{n=0}^{N}w_n+2M^2w_0,
+\qquad N+1\le2M^4.
+```
+
+The linear cancellation term pays the **actual total amplitude**. The
+constant endpoint error pays only the initial amplitude. The exact complex
+Abel identity remains upstream from this named norm estimate.
+
+The theorem `exists_feature_block_saving` instantiates the weights for every
+`Re(s)=sigma >= 0`, positive integer starting point `a` in `[M^4,2M^4]`,
+`Im(s)` in the displayed height interval, and `N+1 <= 2M^4`:
+
+```math
+\left|\sum_{n=0}^{N}(a+n)^{-s}\right|
+\le C M^{-\delta}\sum_{n=0}^{N}(a+n)^{-\sigma}
++2M^2a^{-\sigma}.
+```
+
+Its Lean statement uses the existing literal `zetaPrimeFeature` and
+`zetaPrimeExpWeight`; these are the ordinary coefficients at **every**
+integer in this block. No estimate for extra prime, sieve or arbitrary
+oscillating weights is inferred.
+
 ## The actual product sum on a continuous rectangle
 
 [`VinogradovRectanglePowerSaving`](../RiemannGaussian/VinogradovRectanglePowerSaving.lean)
@@ -146,12 +177,35 @@ bounds below by `1/(128k²)`. Paying the full bounded Taylor error gives the
 literal imaginary-power theorem, then the signed shift identity gives the
 original Dirichlet-block result.
 
+## Uniform Gaussian constants
+
+[`actual_resonance_le_explicit`](../RiemannGaussian/VinogradovRectangleResonance.lean)
+now exposes the exact parameter constant previously constructed inside the
+existence proof. Its original existence theorem remains available as a wrapper.
+[`VinogradovGaussianCost`](../RiemannGaussian/VinogradovGaussianCost.lean)
+then bounds the actual complete joint resonance times the quartered support
+exponential by `2^(9*k^2) * M^(k(k+1)-S')`, uniformly for `k>=12`.
+In particular, at the actual order `r=k(k+1)`,
+
+```math
+\left[
+ e^{k\pi/4}
+ \left(4^k\frac{2r}{1-e^{-\pi}}
+ \left(2r+2+\frac{2\pi k}{r}\right)\right)^k
+\right]^{1/(2r^2)}\le2.
+```
+
+Every translated tail and reciprocal-scale prefactor is included. This
+bounds the complete Gaussian constant after the actual moment root;
+the homogeneous moment constants remain separate.
+
 ## Remaining analytic work
 
 The degree-window saving is now quadratic and the actual block transfer is
 proved. The next major requirement is quantitative control of moment
 constants and starting thresholds **as the degree varies**, together with
-all-scale block decomposition, damping and zeta-growth transport. Existential
+all-scale block decomposition and zeta-growth transport. The literal damping
+transfer and uniform Gaussian constants are already proved. Existential
 constants at each fixed degree do not supply that uniform theorem.
 The original Riesz carrier separately needs its combined signed correlation
 saving. No new zero-free width follows from the present block theorem alone.

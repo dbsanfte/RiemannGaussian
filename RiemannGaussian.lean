@@ -1565,6 +1565,8 @@ import RiemannGaussian.VinogradovPhaseRectangle
 import RiemannGaussian.VinogradovRectangleResonance
 import RiemannGaussian.VinogradovRectanglePowerSaving
 import RiemannGaussian.VinogradovDirichletSaving
+import RiemannGaussian.VinogradovGaussianCost
+import RiemannGaussian.VinogradovDampedSaving
 import RiemannGaussian.ZetaRieszBlockMass
 import RiemannGaussian.ZetaRieszInterpolation
 import RiemannGaussian.VinogradovFibreCorrelation

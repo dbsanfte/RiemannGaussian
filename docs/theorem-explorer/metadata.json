@@ -1112,6 +1112,34 @@
         [
           "gaussianPhaseBandToolkit",
           "vkDirichletBlockSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExplicitRectangleConstantTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGaussianCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGaussianRootCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkActualGaussianResonanceCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAffineAbelSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDecreasingWeightSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDampedFeatureSavingTheorem"
         ]
       ],
       "scopePath": [
@@ -4529,6 +4557,41 @@
     },
     "RiemannGaussian.VinogradovDirichletSaving.exists_dirichlet_block_saving": {
       "label": "A genuine power saving for the original Dirichlet block",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovRectangleResonance.actual_resonance_le_explicit": {
+      "label": "The full actual resonance has an explicit parameter constant",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovGaussianCost.complete_gaussian_constant_le": {
+      "label": "All Gaussian constants have a quadratic degree exponent",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovGaussianCost.gaussian_moment_root_le_two": {
+      "label": "The actual Gaussian moment-root cost is at most two",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovGaussianCost.actual_gaussian_resonance_le": {
+      "label": "The actual joint resonance pays its uniform degree cost",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovDampedSaving.abelTransform_norm_affine_le": {
+      "label": "Separate amplitude mass from the endpoint weight",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovDampedSaving.exists_decreasing_weight_saving": {
+      "label": "Every decreasing weight family retains the saving",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovDampedSaving.exists_feature_block_saving": {
+      "label": "The literal damped zeta coefficients inherit cancellation",
       "overview": true,
       "documentation": "docs/vinogradov-gaussian-power-saving.md"
     }

@@ -136,6 +136,16 @@ def run(output, url=None, refresh_preview=False):
                         assert saving['source']['path'].endswith('VinogradovDirichletSaving.lean')
                         assert 'block' in saving['statement'] and '2 * k - 2' in saving['statement']
                         assert 'z ≤ 2 *' in saving['statement'] and '128' in saving['statement']
+                        damped = page.evaluate("PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i]).find(n => n.id.endsWith('.exists_feature_block_saving'))")
+                        assert damped is not None
+                        assert 'zetaPrimeFeature' in damped['statement'] and 'zetaPrimeExpWeight' in damped['statement']
+                        assert '0 ≤ s.re' in damped['statement'] and '12 ≤ k' in damped['statement']
+                        assert damped['source']['path'].endswith('VinogradovDampedSaving.lean')
+                        cost = page.evaluate("PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i]).find(n => n.id.endsWith('.gaussian_moment_root_le_two'))")
+                        assert cost is not None
+                        cost_statement = ' '.join(cost['statement'].split())
+                        assert cost_statement.endswith('≤ 2') and '12 ≤ k' in cost_statement
+                        assert '1 / ↑(2 * r * r)' in cost_statement
                     if endpoint['id'] == 'full-recurrence':
                         statement = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]].statement')
                         assert 'conditioningAllowance' in statement and 'a ≤ b' in statement
