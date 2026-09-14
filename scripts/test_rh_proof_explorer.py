@@ -64,11 +64,11 @@ def run(output, url=None, refresh_preview=False):
                     (campaign.SITE / 'preview.json').write_bytes(campaign.explorer.json_bytes(capture))
                 root = page.evaluate('PROOF_VIEW.endpoint.roots[0]')
                 data = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
-                assert data['id'].endswith('.exists_original_band_negative_profile')
+                assert data['id'].endswith('.exists_original_band_critical_profile')
                 assert 'correlatedSamplingCost' in data['statement']
                 assert 'beta < 0' in data['statement'] and 'p ^ S' in data['statement']
                 assert 'conditioningAllowance' not in data['statement']
-                assert '1 / (3 *' in data['statement'] and '∃' in data['statement']
+                assert '0 < eps' in data['statement'] and '∃' in data['statement']
                 node = page.locator(f'[data-node="{root}"]')
                 node.hover()
                 assert page.locator('#tooltip').is_visible()
@@ -128,7 +128,7 @@ def run(output, url=None, refresh_preview=False):
                         assert 'remain open' in page.locator('#scope-text').inner_text()
                         statement = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]].statement')
                         assert 'meanValue' in statement and '∃' in statement
-                        assert '1 / (3 *' in statement
+                        assert '0 < eps' in statement and 'eps' in statement
                     if endpoint['id'] == 'full-recurrence':
                         statement = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]].statement')
                         assert 'conditioningAllowance' in statement and 'a ≤ b' in statement

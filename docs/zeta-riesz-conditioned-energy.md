@@ -384,6 +384,38 @@ coupled cutoff prevents increasing `p` arbitrarily at fixed `X`. Constants,
 depth and the negative exponent are not numerically evaluated. No new
 zero-free region or RH contradiction follows from this theorem alone.
 
+## Critical exponent in the original initial profile
+
+[`exists_original_band_critical_profile`](../RiemannGaussian/ZetaRieszCriticalProfile.lean)
+now supplies the same original-carrier bound with
+
+```math
+\lambda=2k(u+1)-\frac{k(k+1)}2+\varepsilon,
+\qquad k,u\in\mathbb N,\quad k\ge2,\quad u\ge k,\quad\varepsilon>0.
+```
+
+The [global critical moment theorem](../RiemannGaussian/VinogradovCriticalExponent.lean)
+is unconditional in this range. Its uniform-defect induction and infimum
+argument discharge the analytic moment budget; the
+[rounded-quotient theorem](../RiemannGaussian/VinogradovCriticalNormalization.lean)
+pays both actual quotients with one common constant and threshold.
+The complete initial profile is still independently bounded, so
+
+```math
+\boxed{|\operatorname{Band}_N|^{2ku}
+ \le \frac{\mathcal S_{\rm corr}}{\operatorname{lowerMass}^2}
+ M_{0,1}(\lambda)\,B p^\beta,\qquad -\tfrac12\le\beta<0.}
+```
+
+For each fixed `k,u,epsilon`, the theorem constructs `C,N0,S,B,beta`.
+The actual prime, `p^S<=X`, deepest padded quotient and `(CD)^2<=p`
+conditions remain explicit. The original complex correlations, sampling
+costs and positive mass remain intact. Constants and thresholds, including
+their dependence on the parameters, are not numerically evaluated. The
+critical exponent with positive epsilon is proved; the net source-scale
+saving after the remaining signed correlation costs is still open.
+No `epsilon=0` endpoint, RH proof or new zero-free width is asserted.
+
 ## Source and remaining arithmetic work
 
 For a hypothetical right-half zero `rho`, the original theorem chooses
@@ -409,10 +441,11 @@ VK congruencing step are now proved, along with an explicit bound for the
 singular and nonsingular conditioning contributions. Their explicit one-step
 conditioning recurrence is proved, and the direct correlation transfer above
 now applies its finite iteration and deep remainder to the original carrier.
-The uniform profile iteration now gives an independent initial-energy
-saving and improves every admissible global exponent above critical.
-Making that improvement uniform near the infimum and proving a net saving
-in the remaining actual correlation and sampling costs remain open in the
+The uniform profile iteration gives an independent initial-energy saving;
+its uniform improvement and infimum argument now prove the critical
+high-order exponent plus every positive epsilon. Evaluating the parameter
+costs and proving a net saving in the remaining actual correlation and
+sampling costs remain open in the
 [VK framework](vinogradov-korobov-framework.md).
 
 The finite Fourier and congruencing tools are classical ingredients. This

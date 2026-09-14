@@ -95,7 +95,7 @@
     },
     {
       "id": "vk-phase",
-      "label": "Vinogradov–Korobov · negative profiles and exponent bootstrap",
+      "label": "Vinogradov–Korobov · critical moments and actual product sum",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -972,6 +972,54 @@
         [
           "gaussianPhaseBandToolkit",
           "vkRieszNegativeProfileTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUniformDefectIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUniformNegativeProfileTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUniformInitialAllowanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUniformGlobalSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUniformExponentImprovementTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAdmissibleInfimumTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCriticalGlobalExponentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCriticalRoundedBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszCriticalProfileTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkMomentFrequencyEmbeddingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFiniteMomentIntervalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCriticalProductBoundTheorem"
         ]
       ],
       "scopePath": [
@@ -1517,7 +1565,7 @@
     },
     {
       "id": "riesz-vk",
-      "label": "Riesz carrier · proved negative conditioned profile",
+      "label": "Riesz carrier · critical moments and negative profile",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1690,6 +1738,54 @@
         [
           "gaussianPhaseBandToolkit",
           "vkRieszNegativeProfileTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUniformDefectIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUniformNegativeProfileTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUniformInitialAllowanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUniformGlobalSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUniformExponentImprovementTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAdmissibleInfimumTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCriticalGlobalExponentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCriticalRoundedBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszCriticalProfileTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkMomentFrequencyEmbeddingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFiniteMomentIntervalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCriticalProductBoundTheorem"
         ]
       ],
       "scopePath": [
@@ -2097,7 +2193,8 @@
     "ZetaRieszInterpolation": "arithmetic",
     "ZetaRieszConditioningTransfer": "arithmetic",
     "ZetaRieszImprovedMoment": "arithmetic",
-    "ZetaRieszNegativeProfile": "arithmetic"
+    "ZetaRieszNegativeProfile": "arithmetic",
+    "ZetaRieszCriticalProfile": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
@@ -4164,9 +4261,69 @@
       "documentation": "docs/vinogradov-korobov-framework.md"
     },
     "RiemannGaussian.ZetaRieszNegativeProfile.exists_original_band_negative_profile": {
-      "label": "Current frontier: proved negative profile in the Riesz bound",
+      "label": "Independent negative profile at the first improved exponent",
       "overview": true,
       "documentation": "docs/zeta-riesz-conditioned-energy.md"
+    },
+    "RiemannGaussian.VinogradovUniformProfile.uniform_defect_profile_iteration": {
+      "label": "One depth for every source exponent above a fixed defect",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovUniformSaving.exists_uniform_negative_profile": {
+      "label": "A negative profile uniform in the source exponent",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovUniformSaving.exists_uniform_initial_allowance": {
+      "label": "Uniform complete initial allowance, remainder included",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovUniformSaving.exists_uniform_global_profile_saving": {
+      "label": "Uniform prime-power saving in the original global moment",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovUniformExponent.exists_uniform_exponent_improvement": {
+      "label": "One exponent improvement for every fixed positive gap",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovCriticalExponent.exists_admissible_near_endpoint": {
+      "label": "The infimum cannot stop above the critical endpoint",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovCriticalExponent.exists_global_critical_exponent": {
+      "label": "Critical high-moment exponent plus every positive epsilon",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovCriticalNormalization.exists_critical_rounded_budget": {
+      "label": "Critical exponent pays both actual padded quotients",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.ZetaRieszCriticalProfile.exists_original_band_critical_profile": {
+      "label": "Current frontier: critical moments in the original Riesz bound",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-energy.md"
+    },
+    "RiemannGaussian.VinogradovCriticalKorobov.moment_le_of_frequency_embedding": {
+      "label": "Retain every collision under a frequency-preserving embedding",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovCriticalKorobov.finite_moment_le_interval": {
+      "label": "A finite subset uses its containing interval length",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovCriticalKorobov.exists_critical_product_bound": {
+      "label": "Both critical moments in the actual Korobov product sum",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
     }
   }
 }

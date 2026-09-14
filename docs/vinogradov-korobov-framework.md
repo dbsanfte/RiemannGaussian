@@ -33,8 +33,11 @@ energies after restoring the source scale. A uniform finite profile
 induction now independently bounds every later energy under constructed
 descendant cutoffs, producing a negative initial profile. It improves every
 proved eventual exponent strictly above critical and replaces the complete
-initial allowance in the original Riesz bound. A uniform improvement near
-the infimum is still needed to reach the critical high-moment exponent.
+initial allowance in the original Riesz bound. A uniform improvement above
+each fixed positive defect now closes the infimum argument and proves
+the critical high-order exponent plus every positive epsilon. Both actual
+Korobov product moments and the original Riesz profile receive it. Uniform
+parameter costs and the complete joint resonance estimate remain open.
 The Vinogradov–Korobov zeta growth estimate
 and zero-free region remain unproved in this repository. No external
 analytic estimate is installed as an axiom or as a claimed discharged premise.
@@ -362,8 +365,7 @@ normalized mean-value budget for each fixed pair of blocks. The following
 combined count also pays all finite tail completions for canonical block
 representatives. The full conditioned-moment transfer is proved below;
 the one-step recurrence and elementary deep-remainder saving are proved below.
-Reaching the critical high-moment exponent and controlling joint arithmetic resonance
-remain open. No required
+The critical high-order exponent plus positive epsilon is proved below; quantitative joint arithmetic resonance remains open. No required
 exponential-sum saving, new zeta-growth estimate, VK zero-free region or RH
 proof follows yet.
 
@@ -505,8 +507,7 @@ original complex products remain available upstream. The exact target
 partition, its whole-moment energy transfer, exact product factorization
 and both Hölder steps are now proved below, along with the higher
 homogeneous comparison, finite congruencing transfer and explicit one-step
-conditioning recurrence. Reaching the critical high-moment exponent through further iteration
-still needs a proof. No new zero-free width follows yet, and no
+conditioning recurrence. The uniform iteration and critical high-order exponent plus positive epsilon are proved below. No new zero-free width follows yet, and no
 historical novelty is claimed for these classical ingredients.
 
 ## Exact whole-moment partition and finer-residue energy
@@ -574,8 +575,7 @@ This is the whole-moment transfer underlying
 It forces matching finer block residues in the surviving energies. The
 actual product identification and first finite Hölder bound follow next;
 the higher homogeneous comparison and finite congruencing step are proved
-below, together with the actual one-step conditioning recurrence. The
-critical high-moment exponent and required high-moment saving remain open. No zero-free width follows yet.
+below, together with the actual one-step conditioning recurrence. The critical high-order exponent plus positive epsilon is proved below; uniform quantitative parameter costs remain open. No zero-free width follows yet.
 
 ## Literal products and the actual mixed-moment maximum
 
@@ -640,8 +640,7 @@ falling-factorial and floor lower bound on its original block mass;
 see the [explicit interpolated carrier bound](zeta-riesz-conditioned-energy.md).
 The higher homogeneous comparison and finite congruencing step are now
 proved below, together with both collision bounds and the actual one-step
-conditioning recurrence. The critical high-moment exponent and full high-moment
-iteration remain open.
+conditioning recurrence. The uniform iteration and critical high-order exponent plus positive epsilon are proved below; parameter costs still need quantitative bounds.
 This is a classical finite congruencing ingredient, not a new VK growth
 estimate or a larger proved zero-free region.
 
@@ -701,9 +700,7 @@ This is the finite inequality underlying
 [Wooley (2012), Lemma 6.1 and equations (6.7)–(6.8), pp. 1600–1602](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf),
 with explicit finite-window conventions and the retained sign factorial.
 The congruencing transfer and one-step conditioning recurrence are proved.
-Both collision contributions have the explicit upper bounds below. The
-critical high-moment exponent, quantitative high-moment saving and required zeta
-growth estimate remain open. The Riesz bridge preserves its original weighted
+Both collision contributions have the explicit upper bounds below. The critical high-order exponent plus positive epsilon is proved below. Quantitative parameter costs and the required zeta growth estimate remain open. The Riesz bridge preserves its original weighted
 moments; these are not identified with the unweighted conditioned moments
 in this theorem. No larger zero-free region is claimed from this step.
 
@@ -820,8 +817,7 @@ finite conditioning step in
 [Wooley (2012), Lemma 5.1](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf)
 with explicit constants; no historical novelty is claimed.
 
-The next classical obligations are the critical high-moment exponent and
-iteration with the proved congruencing transfer. The original Riesz
+The uniform iteration and critical high-order exponent plus positive epsilon are proved below; quantitative parameter and resonance estimates remain. The original Riesz
 moments retain their own complex weights and sampling costs; this
 unweighted conditioning theorem does not establish their quantitative
 saving or enlarge the proved zero-free region.
@@ -921,7 +917,7 @@ remainder step in
 [Wooley (2012), equations (5.4)–(5.5) and Lemma 5.2](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf)
 quantitative at the elementary starting exponent, while preserving the
 interface needed for subsequent improvements. The next section couples this remainder to signed congruencing.
-Reaching the critical high-moment exponent through a full iteration remains open. The original Riesz moments still carry their own complex weights and
+The uniform iteration now proves the critical high-order exponent plus positive epsilon below. The original Riesz moments still carry their own complex weights and
 sampling costs. No VK growth estimate or new zero-free width follows yet.
 
 ## Normalized signed congruencing recurrence
@@ -1016,7 +1012,7 @@ S^hp^{-2kuh}\le D^hp^{-(2ku-k+1)h},\qquad
 It uses that complete geometric allowance in the same actual recurrence.
 These are finite, quantitative ingredients of
 [Wooley (2012), Lemma 6.3](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
-The uniform finite profile iteration is proved below; the critical high-moment exponent remains open.
+The uniform finite profile iteration and critical high-order exponent plus positive epsilon are proved below.
 The initial global mean-value conditioning is proved below. The displayed defect factor
 alone does not prove the next energies small. The original Riesz moments
 retain their own weights and sampling costs; they are not identified with
@@ -1264,13 +1260,68 @@ specializes this to a proved exponent strictly below `lambda1`, with no
 supplied analytic premise. Constants, exponents and terminal thresholds
 are existential and not numerically evaluated.
 
-Separate strict improvements do **not** establish convergence to
-`lambda_c`: an improvement uniform near the infimum is the next moment
-obligation. The [original Riesz application](zeta-riesz-conditioned-energy.md#negative-profile-in-the-original-initial-band)
-also retains its signed correlation, sampling and normalization costs;
-their required combined saving remains open. No historical novelty,
-critical mean-value theorem, VK growth estimate or wider zero-free region
-is claimed by this slice.
+Separate strict improvements would not establish convergence to
+`lambda_c`. The uniform improvement and infimum argument below now close
+that gap for every positive epsilon in the displayed high-order range.
+The [original Riesz application](zeta-riesz-conditioned-energy.md#critical-exponent-in-the-original-initial-profile)
+retains its signed correlation, sampling and normalization costs; their
+required combined saving remains open. No historical novelty, VK growth
+estimate or wider zero-free region is claimed.
+
+## Critical high-moment exponent and actual product sum
+
+[`VinogradovUniformProfile`](../RiemannGaussian/VinogradovUniformProfile.lean)
+fixes a positive lower defect before choosing the actual source exponent,
+homogeneous constant or quotient threshold. One finite depth works for
+all of them, preserving the original residues, colours and whole finite
+sum. [`VinogradovUniformSaving`](../RiemannGaussian/VinogradovUniformSaving.lean)
+then supplies one negative profile and complete initial allowance before
+those source parameters are chosen.
+
+[`exists_uniform_exponent_improvement`](../RiemannGaussian/VinogradovUniformExponent.lean)
+proves that for each `d>0`, one `0<epsilon<=d/2` improves **every**
+proved eventual exponent with `lambda-lambda_c>=d`. All prime-packet,
+actual quotient and original-interval endpoint conditions are paid.
+The [infimum argument](../RiemannGaussian/VinogradovCriticalExponent.lean)
+therefore proves
+
+```math
+\boxed{\forall k\ge2,\ u\ge k,\ \varepsilon>0,\quad
+ \exists C>0,\ X_0,\quad
+ J_{(u+1)k,k}(X)\le
+ C X^{2k(u+1)-k(k+1)/2+\varepsilon}\quad(X\ge X_0).}
+```
+
+Here `k,u,X` are natural numbers. No homogeneous moment budget remains as
+a premise. The nonempty set of permissible exponents is bounded below by
+`lambda_c`; a positive gap above it would contradict the uniform
+improvement. This is the critical exponent **with every positive epsilon**
+at orders `(u+1)k>=k(k+1)`. It does not assert `epsilon=0` or the same
+result at all smaller moment orders.
+
+[`VinogradovCriticalNormalization`](../RiemannGaussian/VinogradovCriticalNormalization.lean)
+pays every eligible padded quotient at that exponent, and the
+[actual Riesz profile](zeta-riesz-conditioned-energy.md#critical-exponent-in-the-original-initial-profile)
+uses it with its independent negative initial allowance.
+
+[`VinogradovCriticalKorobov`](../RiemannGaussian/VinogradovCriticalKorobov.lean)
+also replaces **both** homogeneous factors in the actual product-sum bound.
+For orders `r=(u+1)k`, `s=(v+1)k` with `u,v>=k`, a positive interval of
+length `M`, and the original finite set `B` contained in `{1,...,Y}`,
+it uses `C*M^(2r-k(k+1)/2+epsilon)` and
+`D*Y^(2s-k(k+1)/2+epsilon)`. A frequency-preserving injection retains
+every original collision. The containing interval length `Y` is kept;
+no unproved cardinality-only critical estimate for an arbitrary sparse set
+is substituted. The original `B`, exact phase coefficients, attainable
+support, quartered Gaussian exponent and whole joint resonance envelope
+remain in the product-sum theorem.
+
+The constants and thresholds are **not numerically evaluated**, including
+their dependence on degree, order and epsilon. A uniform quantitative
+parameter analysis and independent bound for the joint resonance envelope
+are still needed to deduce the logarithmic exponential-sum saving and zeta
+growth estimate. This formalizes the displayed high-order moment result;
+it is not a claim of historical novelty, RH or a new zero-free region.
 
 ## Shifted correlations and bounded complex weights
 
@@ -1523,8 +1574,7 @@ the complete Gaussian smoothing, centered exponent improvement and explicit
 weighted-fibre and tail bounds. Elementary homogeneous moment costs are
 now proved and inserted into the actual product-sum theorem. The next
 step bounds the joint resonance sum through coefficient spacing and
-establishes the stronger high-order mean-value estimates required by the
-VK argument. The
+makes the proved critical high-order mean-value bounds quantitative in the parameters required by the VK argument. The
 stronger signed fibre identity also remains available. Preserve
 the exact alignment weights and coordinate correlations while developing
 that estimate. The identities and smoothing bound alone give no

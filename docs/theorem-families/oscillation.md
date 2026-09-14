@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**125 modules.** Source links open the definitions, hypotheses and proofs.
+**131 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [DerivativeOrderComparison](../../RiemannGaussian/DerivativeOrderComparison.lean)
@@ -78,6 +78,9 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovCongruenceEnergy](../../RiemannGaussian/VinogradovCongruenceEnergy.lean)
 - [VinogradovCongruencingScaling](../../RiemannGaussian/VinogradovCongruencingScaling.lean)
 - [VinogradovCongruencingStep](../../RiemannGaussian/VinogradovCongruencingStep.lean)
+- [VinogradovCriticalExponent](../../RiemannGaussian/VinogradovCriticalExponent.lean)
+- [VinogradovCriticalKorobov](../../RiemannGaussian/VinogradovCriticalKorobov.lean)
+- [VinogradovCriticalNormalization](../../RiemannGaussian/VinogradovCriticalNormalization.lean)
 - [VinogradovCrossMoment](../../RiemannGaussian/VinogradovCrossMoment.lean)
 - [VinogradovExponentBootstrap](../../RiemannGaussian/VinogradovExponentBootstrap.lean)
 - [VinogradovFibreCorrelation](../../RiemannGaussian/VinogradovFibreCorrelation.lean)
@@ -128,6 +131,9 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovSignedRigidity](../../RiemannGaussian/VinogradovSignedRigidity.lean)
 - [VinogradovSignedTailMoment](../../RiemannGaussian/VinogradovSignedTailMoment.lean)
 - [VinogradovSingularConditioning](../../RiemannGaussian/VinogradovSingularConditioning.lean)
+- [VinogradovUniformExponent](../../RiemannGaussian/VinogradovUniformExponent.lean)
+- [VinogradovUniformProfile](../../RiemannGaussian/VinogradovUniformProfile.lean)
+- [VinogradovUniformSaving](../../RiemannGaussian/VinogradovUniformSaving.lean)
 - [VinogradovWeightedLifting](../../RiemannGaussian/VinogradovWeightedLifting.lean)
 - [ZetaDyadicPowerBound](../../RiemannGaussian/ZetaDyadicPowerBound.lean)
 - [ZetaDyadicTruncation](../../RiemannGaussian/ZetaDyadicTruncation.lean)

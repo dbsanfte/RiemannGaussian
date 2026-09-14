@@ -5,7 +5,7 @@
   "title": "Current RH Proof Direction",
   "defaultEndpoint": "carrier-bound",
   "limitNote": "RH remains open. The independent arithmetic saving needed for the source contradiction has not been proved.",
-  "contextScope": "The original Riesz carrier preserves squarefree support, Möbius signs, logarithmic phases and complex fibre correlations. At its initial scale pair, the complete conditioned-energy allowance now has a proved negative prime-power bound under explicit coupled cutoff conditions. The combined correlation, sampling and normalization cost still needs a source-scale saving. No distance to an RH proof is asserted.",
+  "contextScope": "The original Riesz carrier preserves squarefree support, Möbius signs, logarithmic phases and complex fibre correlations. Its initial bound now uses the proved critical homogeneous exponent plus any positive epsilon and a negative prime-power allowance. The combined correlation, sampling and normalization cost still needs a source-scale saving. No distance to an RH proof is asserted.",
   "scopeHeading": "What remains to prove",
   "guideDocument": "docs/rh-proof-direction.md",
   "metadataOrigin": "Current RH campaign metadata; theorem names and scopes resolve through the compiled project status.",
@@ -16,21 +16,21 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 4,
-      "id": "negative-profile-global-exponent-bootstrap",
+      "sequence": 5,
+      "id": "critical-moments-riesz-and-korobov",
       "kind": "theorem",
-      "title": "A negative conditioned profile now bounds the original Riesz carrier.",
-      "body": "Lean discharges the complete initial energy allowance, including its deep remainder, by B·p^β with β<0. The same finite induction improves every proved global moment exponent above critical. Correlation and sampling costs still need a net saving; RH and a wider zero-free region remain open.",
-      "next": "Next: make the exponent improvement uniform near the critical limit and control the retained Riesz correlation costs.",
+      "title": "Critical high-moment exponents now reach the Riesz carrier and Korobov product sum.",
+      "body": "Lean proves the critical exponent plus every positive ε for k≥2, u≥k, with no assumed moment budget. Both actual product-sum moments and the original Riesz initial profile receive it. Joint resonance, quantitative constants and the combined signed saving remain open; the zero-free region is unchanged.",
+      "next": "Next: control the retained joint resonance and track parameter costs toward the zeta-growth estimate.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "vkRieszNegativeProfileTheorem"
+        "vkRieszCriticalProfileTheorem"
       ],
-      "documentation": "docs/zeta-riesz-conditioned-energy.md#negative-profile-in-the-original-initial-band"
+      "documentation": "docs/zeta-riesz-conditioned-energy.md#critical-exponent-in-the-original-initial-profile"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
-      "vkRieszNegativeProfileTheorem"
+      "vkRieszCriticalProfileTheorem"
     ],
     "sourceStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -40,11 +40,11 @@
   "endpoints": [
     {
       "id": "carrier-bound",
-      "label": "Current frontier · negative profile in the Riesz bound",
+      "label": "Current frontier · critical moments in the Riesz bound",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
-          "vkRieszNegativeProfileTheorem"
+          "vkRieszCriticalProfileTheorem"
         ]
       ],
       "scopePath": [
@@ -70,19 +70,19 @@
     },
     {
       "id": "initial-conditioning",
-      "label": "Auxiliary advance · general exponent bootstrap",
+      "label": "Critical moments · global theorem and actual product sum",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
-          "vkBeyondFirstExponentTheorem"
+          "vkCriticalGlobalExponentTheorem"
         ],
         [
           "gaussianPhaseBandToolkit",
-          "vkGeneralExponentBootstrapTheorem"
+          "vkCriticalProductBoundTheorem"
         ],
         [
           "gaussianPhaseBandToolkit",
-          "vkNegativeInitialLevelTheorem"
+          "vkUniformExponentImprovementTheorem"
         ]
       ],
       "scopePath": [
@@ -127,11 +127,11 @@
     }
   ],
   "scopes": {
-    "boundScope": "Furthest checked carrier bound: at a=0,b=1 the complete initial conditioned-energy allowance is at most B*p^beta, -1/2<=beta<0. Every homogeneous and later-energy premise is discharged. The prime, actual padded quotient and p^S<=X cutoff conditions are explicit; constants and exponent are unevaluated. Full complex Riesz correlations, sampling costs and positive block normalization remain. Their combined source-scale saving is unproved. RH remains open.",
+    "boundScope": "Furthest checked carrier bound: at a=0,b=1, use the proved critical homogeneous exponent 2k(u+1)-k(k+1)/2+eps for every eps>0, with k>=2,u>=k. The complete initial allowance is at most B*p^beta, -1/2<=beta<0, with every homogeneous and descendant-energy premise discharged. Prime, padded-quotient and p^S<=X conditions are explicit. Constants and thresholds are unevaluated. Full signed correlations, sampling and block normalization remain; their combined saving is unproved. RH remains open.",
     "sourceScope": "Under the displayed hypothetical right-half-zero assumptions, the normalized original carrier has the prescribed negative-multiplicity source limit. This conditional source identity supplies one side of the proposed contradiction; its independent arithmetic counterpart remains open.",
-    "initialConditioningScope": "The actual unweighted global Vinogradov moment has an unconditional exponent strictly below k(2u+1)-1/(3k), for every k>=2,u>=k and every sufficiently large endpoint. More generally, every proved admissible exponent above critical can be improved. All descendant energies, prime selection and actual quotient cutoffs are paid. Pointwise strict improvement does not prove convergence to critical; uniform improvement near the infimum, VK growth and the combined weighted saving remain open.",
+    "initialConditioningScope": "The actual unweighted J_((u+1)k,k)(X) has the critical exponent 2k(u+1)-k(k+1)/2+eps for every k>=2,u>=k,eps>0 and every sufficiently large endpoint. Uniform improvement above each fixed defect closes the infimum argument, without an assumed moment budget. Both actual Korobov product moments receive this bound, retaining the whole joint resonance envelope. Eps=0 and all smaller orders are not asserted. Evaluated parameter costs, resonance, zeta growth and the combined weighted saving remain open.",
     "exponentAuditScope": "Exact normalization audit: after restoring the source scale, lowering the exponent changes only the deep remainder by the coarse-quotient power. Every original intermediate conditioned energy is identical. The complete scaled allowance is no larger when a full coarse window fits. This comparison bounds no intermediate energy and does not prove RH.",
-    "fullRecurrenceScope": "The general original-carrier recurrence applies to every displayed finite scale pair a<=b and depth H. Both actual quotient moments use the proved exponent k(2u+1)-1/(3k); every intermediate energy remains in the full allowance. The default view additionally bounds the complete initial allowance by a negative profile under its deeper cutoff conditions. No net signed correlation saving or RH contradiction is asserted."
+    "fullRecurrenceScope": "The general original-carrier recurrence applies to every displayed finite scale pair a<=b and depth H. Both actual quotient moments use the proved first improved exponent; all intermediate energies remain in the full allowance. The default view uses the critical exponent plus positive epsilon and a proved negative initial profile under its deeper cutoff conditions. No net signed correlation saving or RH contradiction is asserted."
   },
   "theorems": {
     "RiemannGaussian.VinogradovMeanValue.weighted_gram": {
@@ -294,16 +294,6 @@
       "overview": true,
       "documentation": "docs/vinogradov-korobov-framework.md"
     },
-    "RiemannGaussian.VinogradovNegativeProfile.exists_improved_negative_profile": {
-      "label": "Independent negative profile for all residues and colours",
-      "overview": true,
-      "documentation": "docs/vinogradov-korobov-framework.md"
-    },
-    "RiemannGaussian.VinogradovNegativeProfile.exists_improved_initial_level_decay": {
-      "label": "The whole initial level has a negative profile",
-      "overview": true,
-      "documentation": "docs/vinogradov-korobov-framework.md"
-    },
     "RiemannGaussian.VinogradovProfileSaving.exists_initial_allowance_saving": {
       "label": "Complete initial allowance with its remainder paid",
       "overview": true,
@@ -314,25 +304,65 @@
       "overview": true,
       "documentation": "docs/vinogradov-korobov-framework.md"
     },
-    "RiemannGaussian.VinogradovProfileSaving.exists_global_profile_saving": {
-      "label": "Original global moment receives the profile saving",
+    "RiemannGaussian.VinogradovUniformProfile.uniform_defect_profile_iteration": {
+      "label": "One depth for every source exponent above a fixed defect",
       "overview": true,
       "documentation": "docs/vinogradov-korobov-framework.md"
     },
-    "RiemannGaussian.VinogradovExponentBootstrap.exists_smaller_admissible_exponent": {
-      "label": "Every admissible exponent above critical improves",
+    "RiemannGaussian.VinogradovUniformSaving.exists_uniform_negative_profile": {
+      "label": "A negative profile uniform in the source exponent",
       "overview": true,
       "documentation": "docs/vinogradov-korobov-framework.md"
     },
-    "RiemannGaussian.VinogradovExponentBootstrap.exists_beyond_first_exponent": {
-      "label": "Unconditional exponent beyond the first improvement",
+    "RiemannGaussian.VinogradovUniformSaving.exists_uniform_initial_allowance": {
+      "label": "Uniform complete initial allowance, remainder included",
       "overview": true,
       "documentation": "docs/vinogradov-korobov-framework.md"
     },
-    "RiemannGaussian.ZetaRieszNegativeProfile.exists_original_band_negative_profile": {
-      "label": "Current frontier: proved negative profile in the Riesz bound",
+    "RiemannGaussian.VinogradovUniformSaving.exists_uniform_global_profile_saving": {
+      "label": "Uniform prime-power saving in the original global moment",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovUniformExponent.exists_uniform_exponent_improvement": {
+      "label": "One exponent improvement for every fixed positive gap",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovCriticalExponent.exists_admissible_near_endpoint": {
+      "label": "The infimum cannot stop above the critical endpoint",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovCriticalExponent.exists_global_critical_exponent": {
+      "label": "Critical high-moment exponent plus every positive epsilon",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovCriticalNormalization.exists_critical_rounded_budget": {
+      "label": "Critical exponent pays both actual padded quotients",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.ZetaRieszCriticalProfile.exists_original_band_critical_profile": {
+      "label": "Current frontier: critical moments in the original Riesz bound",
       "overview": true,
       "documentation": "docs/zeta-riesz-conditioned-energy.md"
+    },
+    "RiemannGaussian.VinogradovCriticalKorobov.moment_le_of_frequency_embedding": {
+      "label": "Retain every collision under a frequency-preserving embedding",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovCriticalKorobov.finite_moment_le_interval": {
+      "label": "A finite subset uses its containing interval length",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovCriticalKorobov.exists_critical_product_bound": {
+      "label": "Both critical moments in the actual Korobov product sum",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
     }
   }
 }

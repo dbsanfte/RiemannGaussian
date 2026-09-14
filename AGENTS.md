@@ -1924,7 +1924,7 @@ H_eta is the actual (2r+2)-moment and V_eta is the actual maximum of
 integral |R_eta|^2*|f_fine|^(2kr). `actual_band_le_interpolated_moments`
 retains all source weights/cutoffs and the explicit block denominator.
 Do not keep listing this analytic interpolation or the block normalization
-as open. The quantitative weighted-moment saving, the critical high-moment exponent and full iteration remain open. The reverse mixed moment has a squared
+as open. The critical high-order exponent plus positive epsilon is proved below; the quantitative combined weighted-moment saving remains open. The reverse mixed moment has a squared
 Riesz factor; it is not assumed controlled. No new universal zero-free width
 is claimed.
 
@@ -1941,8 +1941,7 @@ I_(b,k*b)^(1/u), paying the explicit signed congruence and residue-count cost.
 The statement keeps independent block colours, every finite endpoint and all
 rounding. This is the finite inequality underlying Wooley (2012), Lemma 6.1;
 it assumes no moment budget. Do not list the higher homogeneous comparison
-or this finite transfer as open. The critical high-moment exponent and
-high-moment iteration remain open, as does the quantitative saving
+or this finite transfer as open. The critical high-order exponent plus positive epsilon is proved below; quantitative saving remains open
 for the original weighted Riesz moments after all sampling costs. No new
 zero-free width follows from this finite step.
 
@@ -1960,8 +1959,7 @@ next-level mixed maximum. All finite Holder and integral hypotheses are paid;
 no supplied moment budget is assumed. This closes the singular contribution
 underlying Wooley (2012), equation (5.2). Do not list that contribution or its
 class refinement as open. The nonsingular estimate and one-step conditioning recurrence are now
-proved by the following modules; the critical high-moment exponent and
-high-moment iteration remain open. Neither the
+proved by the following modules; the uniform iteration and critical high-order exponent plus positive epsilon are now proved below. Neither the
 original weighted Riesz saving nor any larger zero-free width follows yet.
 
 `VinogradovSignedComplement` retains every selected position, induced sign
@@ -1978,7 +1976,7 @@ p,1<=k<=p,u>=1,eta<p^b and the original finite X. All moments and maxima
 are actual; no budget is assumed. These explicit constants are not optimized.
 This closes the finite step underlying Wooley (2012), Lemma 5.1. Do not list
 either collision bound, this Holder step or this one-step recurrence as
-open. Reaching the critical high-moment exponent through further iteration remains open.
+open. The uniform iteration now proves the critical high-order exponent plus positive epsilon below.
 The weighted Riesz moments are not identified with these unweighted moments;
 their required saving and every new VK zero-free width remain unproved.
 
@@ -1998,8 +1996,7 @@ list this elementary remainder saving, its constant absorption, or its
 finite iteration as open. Keep the finite cutoff condition; this is not
 a decay limit in H at fixed X. The general exponent transfer explicitly
 requires its two homogeneous-moment bounds, which are discharged by the
-final theorem only at the elementary exponent. Reaching the critical high-moment
-exponent remains open; the uniform finite profile iteration is proved below. No original
+final theorem only at the elementary exponent. The uniform finite profile iteration and critical high-order exponent plus positive epsilon are proved below; evaluated parameter costs remain open. No original
 Riesz weighted saving, VK zeta growth or new zero-free width is claimed.
 
 `VinogradovIteratedCongruencing` now identifies the reverse maximum with
@@ -2080,7 +2077,7 @@ every original intermediate energy is identical. The companion comparison
 proves the full scaled allowance cannot increase for X>=p^a,epsilon>=0.
 Do not assign that normalization factor to the intermediate sum. Its new
 independent negative-profile saving comes from the finite induction below. The common constants and thresholds are unevaluated. Combined
-weighted saving, the critical moment exponent, VK growth/detector chain and
+weighted saving, evaluated parameter costs, VK growth/detector chain and
 additional zero-free coverage remain open. Keep the exact comparison in
 the explorer's information-audit view and document these limitations.
 
@@ -2100,11 +2097,10 @@ at every real exponent. `VinogradovExponentBootstrap` pays every prime,
 packet and actual quotient condition on growing cutoffs and extends to all
 large original endpoints. Every proved eventual exponent lambda>critical
 admits critical<mu<lambda; `exists_beyond_first_exponent` is unconditional.
-Do not claim the critical theorem from separate strict improvements:
-a uniform improvement near the infimum is still required.
+Separate strict improvements do not prove the critical theorem; the uniform improvement and infimum argument below now close that gap for positive epsilon.
 
-`ZetaRieszNegativeProfile.exists_original_band_negative_profile` is now
-the default RH explorer endpoint. At a=0,b=1 it replaces the complete
+`ZetaRieszNegativeProfile.exists_original_band_negative_profile` retains
+the initial negative profile at the first improved homogeneous exponent. At a=0,b=1 it replaces the complete
 initial energy allowance by B*p^beta, -1/2<=beta<0, with every homogeneous
 and descendant-energy premise discharged. Its actual conditions retain
 prime p, p^S<=X, the deepest padded quotient >=N0 and the prime budget.
@@ -2117,6 +2113,40 @@ Keep the general recurrence as its own explorer view and preserve the exact
 exponent audit: normalization alone still changes only the deep remainder.
 Continue local theorem work during exact-SHA CI and report both statuses
 separately; keep published source checks pinned to the committed snapshot.
+
+`VinogradovUniformProfile` now chooses the same finite depth before the
+actual source exponent, homogeneous constant or quotient threshold, for
+every fixed lower defect. `VinogradovUniformSaving` pays the full initial
+allowance and original prime packet uniformly. `VinogradovUniformExponent`
+proves one epsilon>0 improves EVERY proved exponent above a fixed positive
+defect. `VinogradovCriticalExponent.exists_global_critical_exponent` closes
+the infimum argument and proves, for every k>=2,u>=k,eps>0, actual
+J_((u+1)k,k)(X)<=C*X^(2k(u+1)-k(k+1)/2+eps) for all X>=X0, with
+positive C and finite X0. No analytic moment budget remains as a premise.
+Do not list this critical high-order exponent with positive epsilon or its
+uniform iteration/infimum argument as open. It does not assert eps=0 or
+all smaller moment orders. Degree/order/epsilon dependence of constants
+and thresholds is unevaluated and still needs quantitative control.
+
+`VinogradovCriticalNormalization` supplies all eligible actual padded
+quotients. `ZetaRieszCriticalProfile.exists_original_band_critical_profile`
+is now the default RH explorer endpoint: the original a=0,b=1 carrier
+uses critical+eps and its independently bounded negative initial profile,
+retaining every original complex correlation, sampling and mass cost.
+`VinogradovCriticalKorobov.exists_critical_product_bound` inserts both
+critical moments into the actual Korobov product sum. Its frequency
+embedding preserves original collisions; a finite positive subset B uses
+its CONTAINING INTERVAL length Y, never an assumed cardinality-only critical
+bound. Preserve original B, exact coefficients, attainable support,
+quartered Gaussian cost and whole joint resonance envelope. Quantitative
+parameter costs, joint resonance, zeta growth, new zero-free coverage and
+the combined signed Riesz saving remain open. No historical novelty is
+claimed for this formalization. Keep these scope limits in the explorer.
+
+The ten Accomplishments consolidate the reproduced Anthropic baseline with
+its improved 67.31% entry, making room for the broadly applicable critical
+high-moment theorem. Preserve the baseline attribution and verification
+links; keep both Accomplishments and Notable Formalisations at ten entries.
 
 `VinogradovFibreCorrelation` now retains the exact complex average of the
 original configuration weights on each full frequency fibre. Its exact
@@ -2136,11 +2166,11 @@ nonzero p and (C*D)^2<=p; the same budget proves k<p and block positivity.
 No missing weighted-moment estimate is assumed. Do not list this direct
 finite Riesz-to-conditioning transfer as open. A net saving in its actual
 correlations and conditioned levels after all costs remains unproved,
-as do the critical high-moment exponent, VK growth and a larger region.
+as do quantitative parameter bounds, VK growth and a larger region.
 Do not infer a pointwise comparison of oscillating polynomials from the
 integrated fibre comparison, or send H to infinity at a fixed cutoff.
 
-Stronger high-order moment bounds and
+Moment bounds at smaller orders, evaluated parameter costs and
 quantitative joint resonance control,
 the required exponential-sum saving, zeta growth and the VK zero-free region
 remain unproved here. Do not add a VK curve to the proved union or promote a

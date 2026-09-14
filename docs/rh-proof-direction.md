@@ -2,7 +2,7 @@
 
 [Open the current proof explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/).
 The default view ends at
-[`exists_original_band_negative_profile`](../RiemannGaussian/ZetaRieszNegativeProfile.lean),
+[`exists_original_band_critical_profile`](../RiemannGaussian/ZetaRieszCriticalProfile.lean),
 the furthest checked bound in the active signed Riesz carrier campaign.
 **RH remains open.** This is a finite bound with the parameter conditions
 shown in its Lean statement, not a proof that its right-hand side is small
@@ -19,14 +19,15 @@ independent arithmetic estimate incompatible with that source.
 The current bound carries the actual squarefree support, Möbius signs,
 logarithmic phases, filter coefficients and full complex frequency-fibre
 averages into a finite conditioned-energy recurrence. At the initial scale
-pair `a=0,b=1`, a uniform finite induction now bounds every descendant
-energy and replaces the complete initial allowance, including its deep
-remainder, by `B*p^beta` with `beta<0`. Its coupled cutoff `p^S<=X` and
+pair `a=0,b=1`, the proved critical homogeneous exponent plus every positive
+epsilon now supplies both actual quotient moments. A finite induction bounds
+every descendant energy and replaces the complete initial allowance,
+including its deep remainder, by `B*p^beta` with `beta<0`. Its coupled cutoff `p^S<=X` and
 actual padded quotient threshold stay explicit. The remaining correlation,
 sampling and positive block-normalization costs have **not** been proved
-small enough for the contradiction. The critical high-moment exponent and
-required combined weighted arithmetic saving remain open. The
-[proof notes](zeta-riesz-conditioned-energy.md#negative-profile-in-the-original-initial-band)
+small enough for the contradiction. Quantitative parameter costs, resonance
+and the required combined weighted arithmetic saving remain open. The
+[proof notes](zeta-riesz-conditioned-energy.md#critical-exponent-in-the-original-initial-profile)
 give the exact identities and bounds.
 
 Stronger zero-free regions reduce the remaining strip and supply analytic
@@ -35,14 +36,16 @@ of simple critical-line zeros. Neither result supplies the missing signed
 arithmetic estimate. This explorer does not draw a proved arrow across that
 gap or estimate a percentage of RH completed.
 
-The **Auxiliary advance · general exponent bootstrap** view proves that
-every proved eventual homogeneous exponent strictly above critical can be
-replaced by a strictly smaller admissible exponent. It gives an unconditional
-bound beyond `k(2u+1)-1/(3k)` for every `k>=2,u>=k`. Every descendant
-cutoff, prime packet and original-interval endpoint is paid. The
-[precise result](vinogradov-korobov-framework.md#uniform-negative-profiles-and-global-exponent-bootstrap)
-does not yet establish convergence to the critical exponent: that requires
-a uniform improvement near the infimum, not just separate strict improvements.
+The **Critical moments** view proves the actual global exponent
+`2k(u+1)-k(k+1)/2+eps` for every `k>=2,u>=k,eps>0` at all sufficiently
+large original endpoints. One uniform improvement above each fixed positive
+defect closes the infimum argument; no analytic moment budget is assumed.
+Both moments in the actual Korobov product sum now receive that exponent,
+retaining the full joint resonance envelope and quartered Gaussian cost.
+The [precise theorem and limits](vinogradov-korobov-framework.md#critical-high-moment-exponent-and-actual-product-sum)
+do not assert `eps=0`, all smaller moment orders, or evaluated constants
+and thresholds. Uniform parameter costs and joint resonance still need
+estimates before this yields the required zeta growth bound.
 
 The **General recurrence** view retains the full result at every finite
 scale pair. The **Information audit** still proves that changing normalization

@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**A negative conditioned profile now bounds the original Riesz carrier.** Lean discharges the complete initial energy allowance, including its deep remainder, by B·p^β with β<0. The same finite induction improves every proved global moment exponent above critical. Correlation and sampling costs still need a net saving; RH and a wider zero-free region remain open.
-Next: make the exponent improvement uniform near the critical limit and control the retained Riesz correlation costs.
-[Current checked endpoint](RiemannGaussian/ZetaRieszNegativeProfile.lean#L34)
-· [Proof details](docs/zeta-riesz-conditioned-energy.md#negative-profile-in-the-original-initial-band).
+**Critical high-moment exponents now reach the Riesz carrier and Korobov product sum.** Lean proves the critical exponent plus every positive ε for k≥2, u≥k, with no assumed moment budget. Both actual product-sum moments and the original Riesz initial profile receive it. Joint resonance, quantitative constants and the combined signed saving remain open; the zero-free region is unchanged.
+Next: control the retained joint resonance and track parameter costs toward the zeta-growth estimate.
+[Current checked endpoint](RiemannGaussian/ZetaRieszCriticalProfile.lean#L35)
+· [Proof details](docs/zeta-riesz-conditioned-energy.md#critical-exponent-in-the-original-initial-profile).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
@@ -160,10 +160,10 @@ hypotheses; the [family index](docs/theorem-families/README.md) covers the full 
 | **Gaussian/Weil explicit formula** | The arithmetic Gaussian expression, including prime-power and Archimedean terms, equals the complete multiplicity-weighted symmetric zero sum for every positive width. | [canonical explicit formula](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean#L1235) |
 | **Gaussian heat and reflected-zero Grams** | The complete Gaussian correlation equals the boundary heat-residue sum. Its vanishing at positive heat time is equivalent to RH; that vanishing remains unproved. | [correlation identity and RH equivalence](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L187) |
 | **Suzuki arithmetic and spectral formulas** | Suzuki's arithmetic function equals its spectral expansion in the safe half-plane. The literal arithmetic Psi is strictly positive on a nonzero punctured neighbourhood of the origin. | [spectral identity](RiemannGaussian/RiemannXiSuzukiWeilVerticalLimit.lean#L462), [local positivity](RiemannGaussian/RiemannXiSuzukiPointwiseLocalPositivity.lean#L298) |
-| **Global Vinogradov exponent improvement** | Every proved exponent above critical admits a smaller admissible exponent. An unconditional bound improves on k(2u+1)−1/(3k) for every k≥2, u≥k; reaching the critical limit remains open. | [global bootstrap](RiemannGaussian/VinogradovExponentBootstrap.lean), [uniform profile induction](RiemannGaussian/VinogradovProfileIteration.lean) |
+| **Critical Vinogradov high moments** | The critical exponent plus every positive ε holds for every k≥2, u≥k and all sufficiently large endpoints, without an assumed moment budget. Constants and thresholds are unevaluated. | [critical moment theorem](RiemannGaussian/VinogradovCriticalExponent.lean), [actual product sum](RiemannGaussian/VinogradovCriticalKorobov.lean) |
 | **Exact phase optimiser and arithmetic floor** | The specified phase cost has a unique eight-frequency optimiser across all feasible finite or infinite integer-frequency families, with a proved arithmetic floor. | [exact optimiser](RiemannGaussian/ZetaPhaseExactOptimizer.lean), [arithmetic floor and exclusion criterion](RiemannGaussian/ZetaPhaseBinomialScale.lean) |
 | **Eta heat and continuous phase matrices** | Exact eta heat/spectral correspondence and small-width matrix coercivity for distinct integer probes retain the full complex Gram correlations. | [heat/spectral identity](RiemannGaussian/EtaSupportGapGaussianSpectral.lean), [continuous matrix coercivity](RiemannGaussian/Hybrid/EtaSupportGapPhaseCoercivity.lean#L276) |
-| **Original signed Riesz carrier bound** | The complete initial conditioned-energy allowance has a proved negative prime-power bound. Original signed correlations and sampling costs remain; their combined saving and RH contradiction are open. | [actual carrier bound](RiemannGaussian/ZetaRieszNegativeProfile.lean), [preserved source](RiemannGaussian/ZetaRieszConditionedEnergy.lean) |
+| **Original signed Riesz carrier bound** | Critical moments plus positive ε and a proved negative initial-energy profile bound the actual carrier. Signed correlation and sampling costs still need a combined saving. | [actual carrier bound](RiemannGaussian/ZetaRieszCriticalProfile.lean), [preserved source](RiemannGaussian/ZetaRieszConditionedEnergy.lean) |
 | **Montgomery–Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant 13 and bilinear constant 26. | [both inequalities](RiemannGaussian/MontgomeryVaughan/Final.lean#L28) |
 
 ## Accomplishments
@@ -178,17 +178,18 @@ and the [proof inventory](docs/proof-status.json).
   form the region displayed above. The [extended comparison](RiemannGaussian/ZetaGaussianExpandedComparison.lean)
   and [literature audit](docs/zero-free-literature-frontier.md) state precisely
   which benchmark functions it improves and where.
-- **Reproduced Anthropic's two-thirds certificate and stronger simple-zero benchmark.**
-  [Zeta23Baseline](RiemannGaussian/External/Zeta23Baseline.lean) rechecks the
-  unconditional distinct critical-line proportion and the stronger
-  Montgomery–Taylor constant for simple critical-line zeros, using the literal
-  multiplicity-aware counts. This is external prior work from the
-  [pinned Apache-2.0 source](vendor/zeta23/UPSTREAM.md).
+- **The critical high-order Vinogradov moment exponent, with every positive ε.**
+  [The global theorem](RiemannGaussian/VinogradovCriticalExponent.lean)
+  covers every k≥2, u≥k at all sufficiently large endpoints without an
+  assumed moment estimate. Its constants and thresholds are unevaluated.
+  [Both moments in the actual Korobov product sum](RiemannGaussian/VinogradovCriticalKorobov.lean)
+  receive the bound; the joint resonance estimate remains open.
 - **At least 67.31% of nontrivial zeros are simple and on the critical line.**
   [The literal-count theorem](RiemannGaussian/External/Zeta23SevenWindowIntegerCertificate.lean)
   proves this for every sufficiently large cumulative or dyadic window.
-  The starting height is unevaluated. Unequal seven-point weights improve
-  the external baseline; Lean checks the complete continuous cover.
+  The starting height is unevaluated. We reproduce the
+  [Anthropic/Zeta23 baseline](RiemannGaussian/External/Zeta23Baseline.lean)
+  and improve it with unequal seven-point weights and a complete checked cover.
   [Exact coefficient, provenance and optional cached verification](docs/numerical-certificate.md).
   No `13/18` certificate is claimed.
 - **An exact phase optimiser over all admissible integer frequencies.**
