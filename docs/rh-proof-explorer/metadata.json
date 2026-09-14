@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 13,
-      "id": "growing-composite-cofactor-decay",
+      "sequence": 14,
+      "id": "exponential-composite-cofactor-decay",
       "kind": "theorem",
-      "title": "An unbounded cofactor class now has proved arithmetic decay.",
-      "body": "Lean now removes every squarefree composite cofactor up to an explicit growing eighth-root cutoff, with a vanishing allowance after the full original factorial filter. The reduced band retains the negative-multiplicity source. The finite small-prime head deletion is also assembled. Semiprimes and composites with larger cofactors still require a joint signed bound.",
-      "next": "Next: use the retained prime phases and signs to bound the joint surviving semiprime and larger-cofactor contribution.",
+      "title": "A cofactor range beyond every fixed polynomial now has geometric decay.",
+      "body": "For hypothetical zeros with real part between one half and five sixths, Lean proves geometric decay of the full composite-cofactor class in an explicit range eventually exceeding every fixed power of the order. An adaptive deletion preserves the original source throughout the right half-strip. Semiprimes and larger composite cofactors still need a joint signed bound.",
+      "next": "Next: connect the exact optimal tilt to a general spatial estimate, and use the retained prime correlations against the joint surviving contribution.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszGrowingCofactorDecayTheorem"
+        "rieszExponentialCofactorBoundTheorem"
       ],
-      "documentation": "docs/zeta-riesz-growing-cofactor-decay.md"
+      "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -348,6 +348,53 @@
         "rieszGrowingCofactorScope"
       ],
       "documentation": "docs/zeta-riesz-growing-cofactor-decay.md"
+    },
+    {
+      "id": "exponential-cofactor-decay",
+      "label": "Arithmetic components · geometric decay beyond polynomial cofactor ranges",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExponentialCofactorBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExponentialCofactorDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExponentialCofactorGrowthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAdaptiveCofactorDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAdaptiveReducedSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExponentialCofactorSurvivorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorTiltOptimizerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorTiltCriterionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorTiltDomainTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszExponentialCofactorScope"
+      ],
+      "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md"
     }
   ],
   "scopes": {
@@ -1009,6 +1056,69 @@
       "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
       "overview": true,
       "summary": "Every eligible composite cofactor of a surviving prime insertion exceeds A_N. Prime cofactors and their semiprime tails remain outside this decay theorem."
+    },
+    "RiemannGaussian.ZetaRieszExponentialCofactor.norm_exponential_composite_band_le": {
+      "label": "Exponential cofactor class · explicit geometric bound",
+      "summary": "At every order and 2/3<u<=1, the whole original composite-cofactor class obeys the displayed geometric allowance with its full fixed polynomial filter.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszExponentialCofactor.tendsto_exponential_composite_band": {
+      "label": "Exponential cofactor class · whole-band decay",
+      "summary": "All squarefree nonunit composite cofactors in the explicit exponential budget decay together at the source scale for 2/3<u<1.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszExponentialCofactor.eventually_pow_le_exponentialSchedule": {
+      "label": "The paid range exceeds every fixed polynomial",
+      "summary": "For each fixed k, N^k is eventually below the concrete cofactor schedule, including its floor, three integer square roots and original-cutoff minimum.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszExponentialCofactor.tendsto_adaptive_composite_band": {
+      "label": "Adaptive deletion · every source scale covered",
+      "summary": "The stronger geometric class for u>2/3 combines with the universal polynomial class elsewhere. The whole selected class decays independently for every 0<u<1.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszExponentialCofactor.tendsto_adaptive_reduced_source": {
+      "label": "Adaptive complement · full right-half-zero source",
+      "summary": "Every hypothetical right-half zero retains the original negative-multiplicity source in the actual complementary band. The joint independent floor is unproved.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszExponentialCofactor.surviving_exponential_cofactor_gt": {
+      "label": "Surviving composite cofactors exceed the stronger cutoff",
+      "summary": "Every eligible composite cofactor in the surviving exponential-budget complement exceeds its threshold. Semiprimes remain outside this deletion.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCofactorTiltRate.minimumRate_eq_tiltRate_iff": {
+      "label": "Scalar rate audit · unique analytic optimizer",
+      "summary": "For 0<u<1 the unique minimizing positive tilt is 1/(-2*log u). This scalar optimization does not supply a general-tilt arithmetic estimate.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCofactorTiltRate.exists_improving_tilt_iff": {
+      "label": "All positive tilts · exact scalar saving criterion",
+      "summary": "A scalar rate below one exists exactly when u differs from exp(-1/2). The exceptional scalar contact is not a zero-location conclusion.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCofactorTiltRate.optimalTilt_gt_half": {
+      "label": "The exact optimizer has an admissible spatial exponent",
+      "summary": "For actual 1/2<u<1 the unique optimum is above 1/2. The needed general power-prefix estimate has not yet been connected to the carrier.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
+      "overview": true
     }
   }
 }

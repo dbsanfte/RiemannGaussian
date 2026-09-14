@@ -1660,5 +1660,7 @@ import RiemannGaussian.ZetaRieszFixedCofactor
 import RiemannGaussian.ZetaRieszPrimeClasses
 import RiemannGaussian.ZetaRieszReducedCofactorSource
 import RiemannGaussian.ZetaRieszGrowingCofactor
+import RiemannGaussian.ZetaRieszExponentialCofactor
+import RiemannGaussian.ZetaRieszCofactorTiltRate
 import RiemannGaussian.ZetaRieszFilteredCompletion
 import RiemannGaussian.ZetaPrimeNonlinearHalfplane

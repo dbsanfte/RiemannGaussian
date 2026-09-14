@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**An unbounded cofactor class now has proved arithmetic decay.** Lean now removes every squarefree composite cofactor up to an explicit growing eighth-root cutoff, with a vanishing allowance after the full original factorial filter. The reduced band retains the negative-multiplicity source. The finite small-prime head deletion is also assembled. Semiprimes and composites with larger cofactors still require a joint signed bound.
-Next: use the retained prime phases and signs to bound the joint surviving semiprime and larger-cofactor contribution.
-[Current checked endpoint](RiemannGaussian/ZetaRieszGrowingCofactor.lean#L344)
-· [Proof details](docs/zeta-riesz-growing-cofactor-decay.md).
+**A cofactor range beyond every fixed polynomial now has geometric decay.** For hypothetical zeros with real part between one half and five sixths, Lean proves geometric decay of the full composite-cofactor class in an explicit range eventually exceeding every fixed power of the order. An adaptive deletion preserves the original source throughout the right half-strip. Semiprimes and larger composite cofactors still need a joint signed bound.
+Next: connect the exact optimal tilt to a general spatial estimate, and use the retained prime correlations against the joint surviving contribution.
+[Current checked endpoint](RiemannGaussian/ZetaRieszExponentialCofactor.lean#L426)
+· [Proof details](docs/zeta-riesz-exponential-cofactor-decay.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

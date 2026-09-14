@@ -2365,7 +2365,9 @@
     "ZetaRieszFilteredCompletion": "arithmetic",
     "ZetaPrimeNonlinearHalfplane": "arithmetic",
     "ZetaRieszReducedCofactorSource": "arithmetic",
-    "ZetaRieszGrowingCofactor": "arithmetic"
+    "ZetaRieszGrowingCofactor": "arithmetic",
+    "ZetaRieszExponentialCofactor": "arithmetic",
+    "ZetaRieszCofactorTiltRate": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

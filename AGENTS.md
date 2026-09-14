@@ -2327,6 +2327,21 @@ premise. Do not report that conditional theorem as proving RH. See
 `docs/zeta-riesz-growing-cofactor-decay.md` and the supporting endpoint
 `growing-cofactor-decay`; the default whole-carrier endpoint is unchanged.
 
+`ZetaRieszExponentialCofactor` now gives a geometric bound on the entire
+composite-cofactor class in an explicit range E_N eventually exceeding
+N^k for every fixed k, at 2/3<u<1. Its three-halves tilt retains the full
+polynomial factorial filter and all rounding; log E_N<=L_N at every order.
+Its adaptive deletion preserves the source for every hypothetical
+right-half zero, using this stronger class at Re(rho)<5/6 and the earlier
+polynomial class elsewhere. Semiprimes and larger composite cofactors
+remain unpaid jointly. `ZetaRieszCofactorTiltRate` proves the unique exact
+scalar optimizer and tests every positive tilt analytically. The
+exception u=exp(-1/2) is a contact of that scalar envelope, not a zero
+exclusion. A general-tilt spatial estimate remains unproved in this slice;
+do not conflate scalar optimization with an arithmetic tail bound. See
+`docs/zeta-riesz-exponential-cofactor-decay.md` and the supporting endpoint
+`exponential-cofactor-decay`. The default whole-carrier endpoint is unchanged.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

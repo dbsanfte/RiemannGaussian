@@ -7,6 +7,11 @@ vanishing contribution at the original source scale. Deleting that class
 preserves the hypothetical-zero source. This is an arithmetic component
 bound; the joint signed lower bound for its complement remains open.
 
+The [exponential-cofactor continuation](zeta-riesz-exponential-cofactor-decay.md)
+now gives a stronger range beyond every fixed polynomial for `2/3<u<1`.
+An adaptive theorem retains this universal range elsewhere and preserves
+the full hypothetical-zero source throughout the right half-strip.
+
 ## The bound
 
 Use the original quantities and full fixed factorial filter from the

@@ -62,6 +62,14 @@ semiprimes and larger composite cofactors; their combined signed floor
 remains open. The conditional closure to Mathlib RH keeps that floor
 explicitly as an unproved premise.
 
+The [exponential cofactor view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=exponential-cofactor-decay)
+now pays a range beyond every fixed polynomial when `1/2<Re(rho)<5/6`,
+with an explicit geometric allowance. Its adaptive source theorem covers
+the entire right half-strip by retaining the polynomial deletion elsewhere.
+The [proof details](zeta-riesz-exponential-cofactor-decay.md) distinguish
+these arithmetic estimates from the separate exact scalar tilt optimizer.
+Neither pays the joint remaining semiprime and larger-cofactor contribution.
+
 The **Critical moments** view proves the actual global exponent
 `2k(u+1)-k(k+1)/2+eps` for every `k>=2,u>=k,eps>0` at all sufficiently
 large original endpoints. One uniform improvement above each fixed positive

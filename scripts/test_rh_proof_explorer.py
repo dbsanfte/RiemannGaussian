@@ -291,6 +291,39 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem tendsto_growing_composite_band' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'exponential-cofactor-decay':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'eventually exceeds N^k for every fixed k' in scope
+                        assert 'for every hypothetical right-half zero' in scope
+                        assert 'Semiprimes and larger composite cofactors remain unpaid jointly' in scope
+                        assert 'general spatial estimate is not yet proved' in scope
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        bound = next(n for n in roots if n['id'].endswith('.norm_exponential_composite_band_le'))
+                        assert all(t in ' '.join(bound['statement'].split()) for t in (
+                            '2 / 3 < u', 'u ≤ 1', 'exponentialCompositeBand u N',
+                            'zetaPrimeFilterKernel P N', '√'))
+                        assert bound['source']['path'].endswith('ZetaRieszExponentialCofactor.lean')
+                        source = next(n for n in roots if n['id'].endswith('.tendsto_adaptive_reduced_source'))
+                        assert all(t in source['statement'] for t in (
+                            'NontrivialZetaZero', 'adaptiveReducedBand', 'analyticZetaZeroMultiplicity'))
+                        assert '5 / 6' not in source['statement']
+                        optimizer = next(n for n in roots if n['id'].endswith('.minimumRate_eq_tiltRate_iff'))
+                        assert all(t in optimizer['statement'] for t in ('tiltRate', 'optimalTilt', '↔'))
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', bound['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == bound['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{bound['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{bound['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem norm_exponential_composite_band_le' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -303,7 +336,9 @@ def run(output, url=None, refresh_preview=False):
                                'vanishingNonlinearTailAndRetainedBoundary': True,
                                'fixedCofactorDecayAndExplicitUnpaidClasses': True,
                                'growingCofactorDecayAndRetainedSource': True,
-                               'conditionalRHClosurePremiseVisible': True})
+                               'conditionalRHClosurePremiseVisible': True,
+                               'exponentialCofactorBoundAndAdaptiveSource': True,
+                               'scalarTiltAuditDistinguishedFromArithmeticBound': True})
                 page.close()
             browser.close()
     finally:
