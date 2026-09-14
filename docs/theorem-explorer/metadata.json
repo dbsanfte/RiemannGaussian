@@ -2355,7 +2355,11 @@
     "ZetaPrimeCharacterRemainder": "arithmetic",
     "ZetaRieszFourierCarrier": "arithmetic",
     "CosineHinge": "oscillation",
-    "FiniteSignedFourierHinge": "oscillation"
+    "FiniteSignedFourierHinge": "oscillation",
+    "ZetaRieszPrimeFourier": "arithmetic",
+    "ZetaPrimeNonlinearFactor": "arithmetic",
+    "ZetaPrimeNonlinearTail": "arithmetic",
+    "ZetaRieszCompositeProduct": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

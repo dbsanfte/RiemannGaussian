@@ -2,12 +2,16 @@
 
 The original finite Riesz band now has a checked two-frequency integral
 representation with its actual factorial filter and physical cutoff.
-Separately, the nonlinear prime-character logarithmic remainder has a
-cutoff-independent integrated bound at every fixed real part greater than
+Its complete composite divisor measure now factors exactly over the
+observed integer's primes. Separately, the nonlinear multiplicative
+correction has a decreasing integrated arithmetic allowance that tends to
+zero as the lower prime threshold grows, uniformly in finite prime
+selections and imaginary height at every fixed real part greater than
 one half. **The independent signed arithmetic floor remains open.**
-Neither result proves RH or enlarges the proved zero-free region.
+These component bounds do not prove RH or enlarge the proved zero-free region.
 
 [Open the supporting Fourier view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=signed-fourier-tail).
+[Open the prime-factor and vanishing-allowance view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=prime-factor-tail).
 The default RH view remains the original
 [`ZetaRieszCriticalProfile.exists_original_band_critical_profile`](../RiemannGaussian/ZetaRieszCriticalProfile.lean).
 The new identities complement that bound; no dependency arrow to an
@@ -130,6 +134,48 @@ The finite prime-subset tail has its own exact paired integral and product
 character in `signedSubsetTail_eq_paired_integral` and
 `subset_finiteCharacter_eq_product`.
 
+## Complete divisor cancellation and the literal prime factors
+
+For every squarefree nonunit composite, Lean now proves both cancellations
+before applying the hinge identity:
+
+\[
+\sum_{d\mid n}\mu(d)=0,\qquad
+\sum_{d\mid n}\mu(d)\log d=-\Lambda(n)=0.
+\]
+
+These are complete per-integer divisor measures. The previously truncated
+common-divisor marks still retain their first moment and ordinary-prime
+correction. The two representations agree; their measures are different.
+
+Define the full prime product and its paired response by
+
+\[
+P_n(\xi)=\prod_{p\mid n}(1-p^{-i\xi}),\qquad
+H_{n,L}(\xi)=e^{i\xi L}P_n(\xi)+e^{-i\xi L}P_n(-\xi).
+\]
+
+[`ZetaRieszPrimeFourier.riesz_eq_primePair_integral`](../RiemannGaussian/ZetaRieszPrimeFourier.lean)
+proves the genuinely integrable identity
+
+\[
+R_L(n)=-\frac1{2\pi}\int_0^\infty
+ \frac{H_{n,L}(\xi)}{\xi^2}\,d\xi.
+\]
+
+`actual_band_eq_primePair_integral` applies this formula to the original
+coefficient and factorial kernel, with exactly the original band and common
+physical length. `tendsto_actual_primePair_integral` preserves its
+hypothetical-zero source. The exact phase factorization is
+
+\[
+P_n(\xi)=(2i)^{\omega(n)}e^{-i\xi\log(n)/2}
+ \prod_{p\mid n}\sin\!\left(\frac{\xi\log p}{2}\right).
+\]
+
+Thus prime count, central phase and every signed sine factor remain
+available. This identity alone is not an upper or lower bound on the band.
+
 ## A controlled nonlinear contribution
 
 For finite prime labels \(Q\), write
@@ -178,9 +224,91 @@ integer majorant independent of finite \(Q\), when every label is at least
 
 The harmless totalized \(n=0\) term is included in this Lean majorant.
 The bound is at fixed \(\sigma\), not uniform as \(\sigma\downarrow1/2\).
-Small primes remain explicit. Crucially, this controls the logarithmic
-remainder itself. It does not bound \(e^{A_Q+E_Q}\), its high derivatives,
-or its original factorial-filtered contribution.
+Small primes remain explicit.
+
+[`ZetaPrimeNonlinearFactor`](../RiemannGaussian/ZetaPrimeNonlinearFactor.lean)
+now also pays the multiplicative correction. Put
+
+\[
+M_\sigma=4\sum_{n\ge0}\operatorname{zetaPrimeExpWeight}(2\sigma,n),
+\qquad C_\sigma=\pi(2+e^{M_\sigma}).
+\]
+
+The pointwise bound \(|E_Q|\le M_\sigma\) and genuine integrability give
+
+\[
+\int_0^\infty\frac{|e^{E_Q(\xi;s)}-1|}{\xi^2}\,d\xi
+ \le C_\sigma\sum_{p\in Q}p^{-2\sigma}\log p.
+\]
+
+## Bounding milestone: the nonlinear arithmetic allowance tends to zero
+
+[`ZetaPrimeNonlinearTail`](../RiemannGaussian/ZetaPrimeNonlinearTail.lean)
+proves summability of the literal square-log weights and defines
+
+\[
+J_\sigma(K)=\sum_{n\ge K}n^{-2\sigma}\log n.
+\]
+
+Here the Lean weight at zero is zero; for positive integers it has the
+displayed ordinary value. The definition is the convergent total minus
+its finite prefix. Lean proves
+
+\[
+J_\sigma(K)\ge0,\quad
+J_\sigma(K+1)=J_\sigma(K)-K^{-2\sigma}\log K,\quad
+J_\sigma(K)\downarrow0
+\]
+
+with the same zero convention. For every finite selection \(Q\) of labels
+at least \(\max(16,K)\), `integral_norm_nonlinearFactor_le_tail` gives
+
+\[
+\boxed{\int_0^\infty\frac{|e^{E_Q(\xi;s)}-1|}{\xi^2}\,d\xi
+ \le C_\sigma J_\sigma(K)\longrightarrow0.}
+\]
+
+`exists_uniform_nonlinearFactor_tail_lt` proves the quantifiers explicitly:
+for every fixed \(\sigma>1/2\) and \(\varepsilon>0\), one threshold
+\(K\ge16\) works for **every** finite \(Q\) above it and **every**
+\(s\) with \(\Re s=\sigma\). No threshold is numerically evaluated.
+This strengthens the earlier constant bound to a vanishing allowance for
+the nonlinear correction. It does not bound that correction after
+multiplication by \(e^{A_Q}\), or after the original high-order filter.
+The remaining finite small-prime factors must also stay in the full carrier.
+
+## Recompletion retains the prime subtraction and the band boundary
+
+For squarefree \(m\), the complete divisor sum satisfies
+
+\[
+\sum_{n\mid m}n^{-s}P_n(\xi)
+ =\prod_{p\mid m}[1+p^{-s}(1-p^{-i\xi})].
+\]
+
+[`ZetaRieszCompositeProduct`](../RiemannGaussian/ZetaRieszCompositeProduct.lean)
+then deletes the unit and ordinary primes exactly. If all participating
+primes are at least 16 and \(\Re s\ge1/2\), the composite sum is
+
+\[
+\sum_{\substack{n\mid m\\n\ne1,\ n\text{ not prime}}}n^{-s}P_n(\xi)
+ =e^{A+E}-1-A
+ =(e^A-1-A)+e^A(e^E-1),
+\]
+
+where \(A=A_{\{p:p\mid m\}}(-\xi;s)\) and likewise for \(E\).
+The negative frequency matches the original imaginary-power feature.
+The finite Euler-product identity itself also includes the small primes
+without a small-weight hypothesis. The explicit singleton subtraction
+must survive any further manipulation.
+
+`actual_band_symbol_eq_completed_sub_boundary` chooses the primorial of
+the original band endpoint \(2^{32N}\). Every original squarefree label
+divides this canonical integer. Its complete composite response minus the
+entire omitted signed divisor sum equals the original band symbol.
+Completion therefore introduces an explicit boundary, whose smallness is
+**not** proved. This is a generating-function identity; it does not yet
+estimate that boundary after the factorial filter.
 
 ## Classification of what remains
 
@@ -191,15 +319,18 @@ or its original factorial-filtered contribution.
 | Bare Riesz coefficient | An exact example is below \(-1\) | A generic unit floor is false; the actual normalized filtered floor is still undecided. |
 | All prime-subset sizes | Exact insertion recurrence and Fourier product | The full coupled sum needs a signed estimate. |
 | Shared primes in pairs | The shared phase becomes a squared norm | Shared factors still move both cutoff ramps. |
-| Frequency zero and first moment | Exact paired hinge identity and genuine integrability | Retain the moment and correction when estimating the complete response. |
-| Nonlinear local-log remainder | Uniform finite-cutoff integrated bound at fixed \(\sigma>1/2\) | Control its effect inside the exponential and through the actual filter. |
+| Frequency zero and first moment | Both moments vanish for each complete squarefree composite divisor measure; the actual band has an integrable prime product | Truncated common-divisor marks still retain their moment and prime correction. |
+| Prime-factor phase | Exact centered sine product and original filtered integral | Exploit cross-integer correlations before taking norms. |
+| Nonlinear local-log remainder | Uniform finite-cutoff integrated bound at fixed \(\sigma>1/2\) | The complete first-order coupling still needs control. |
+| Nonlinear multiplicative correction | Decreasing integrated allowance tending to zero above a growing prime threshold, uniformly in height at fixed \(\sigma>1/2\) | Pay multiplication by \(e^A\), the finite small primes and the original factorial filter. |
+| Composite Euler completion | Exact \(e^{A+E}-1-A\) and explicit actual-band boundary | Bound the coupled compensated response and boundary without discarding their signs. |
 | First-order prime phase | Exact \(A_Q=P_Q(s)-P_Q(s-i\xi)\) algebra | A usable signed bound coupled to the cutoff integral is open. |
 | Source normalization | Original Fourier response still tends to \(-\operatorname{mult}(\rho)\) under the zero hypothesis | Prove the independent fixed cofinal floor above \(-1\). |
 
-The next structural test is whether complete divisor-mass and log-moment
-cancellation on squarefree composites exposes the original prime-factor
-Fourier response more directly. This is a proposed continuation, not a
-bound supplied by this slice. Generic absolute completion already has a
+The next target is an estimate for the coupled compensated response and
+its signed boundary that survives the original filter and source scale.
+The vanishing nonlinear allowance supplies one controlled ingredient;
+it is not the independent signed floor. Generic absolute completion has a
 checked exponential cost at least \(2u>1\); retrying that estimate without
 new signed information cannot close the current argument.
 
@@ -209,8 +340,10 @@ The 14 September arithmetic handoff was independently checked, then its
 129 declarations were promoted into five focused ordinary-library modules:
 `ZetaArithmeticAffine`, `ZetaArithmeticBandCorrelation`,
 `ZetaSquarefreeRieszWindows`, `ZetaSquarefreeRieszCompletion`, and
-`ZetaSquarefreeSignedTail`. The new Fourier and integrated-remainder work
-adds four modules. The original source hash and declaration mapping are
+`ZetaSquarefreeSignedTail`. The first Fourier and integrated-remainder
+slice added four modules. The next slice adds `ZetaRieszPrimeFourier`,
+`ZetaPrimeNonlinearFactor`, `ZetaPrimeNonlinearTail`, and
+`ZetaRieszCompositeProduct`. The original source hash and declaration mapping are
 recorded in [handoff provenance](arithmetic-tail/handoff-provenance.json).
 
 The integrated sources participate in the ordinary root, full build,

@@ -16,15 +16,15 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 10,
-      "id": "original-riesz-signed-fourier-tail",
+      "sequence": 11,
+      "id": "vanishing-nonlinear-prime-tail",
       "kind": "theorem",
-      "title": "The original signed Riesz carrier now has an exact Fourier representation.",
-      "body": "Lean retains the actual factorial filter, physical cutoff, both frequencies, signed first moment and ordinary-prime correction. Separately, the nonlinear prime-character log remainder has a cutoff-independent integrated bound at each fixed Re(s)>1/2. The first-order prime-phase exponential and its filtered contribution remain uncontrolled; the independent cofinal floor and zero-free region are unchanged.",
-      "next": "Next: use the exact prime-factor correlations to control the complete signed frequency response at the original source scale.",
+      "title": "A nonlinear arithmetic tail allowance now decreases to zero.",
+      "body": "Lean proves a vanishing, monotone integrated allowance for the nonlinear multiplicative correction, uniformly over finite larger-prime selections and all heights at each fixed Re(s)>1/2. Exact prime-factor formulas retain the actual carrier, ordinary-prime subtraction and completion boundary. The first-order coupling, bounds after the original factorial filter and independent signed floor remain open.",
+      "next": "Next: control the coupled first-order response and its signed completion boundary at the original source scale.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszActualFourierTheorem"
+        "rieszNonlinearTailDecayTheorem"
       ],
       "documentation": "docs/zeta-riesz-signed-fourier-tail.md"
     },
@@ -201,6 +201,53 @@
       "scopePath": [
         "gaussianPhaseBandToolkit",
         "rieszSignedFourierScope"
+      ],
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md"
+    },
+    {
+      "id": "prime-factor-tail",
+      "label": "Prime-factor tail · vanishing nonlinear allowance and retained boundary",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeProductCarrierTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeProductSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCenteredSineTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNonlinearFactorBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNonlinearTailAllowanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNonlinearTailDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompensatedProductTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszBandCompletionBoundaryTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofinalFloorCriterion"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszPrimeFactorScope"
       ],
       "documentation": "docs/zeta-riesz-signed-fourier-tail.md"
     }
@@ -675,6 +722,62 @@
       "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
       "overview": true,
       "summary": "A fixed c<1 and Re(B_N)≥−c at arbitrarily large N contradict the original negative multiplicity limit. The independent floor is an unproved premise."
+    },
+    "RiemannGaussian.ZetaRieszPrimeFourier.actual_band_eq_primePair_integral": {
+      "label": "Original filtered band as a full prime-factor integral",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "The complete divisor mass and first logarithmic moment of each squarefree nonunit composite are proved zero. Both frequencies, the original band, factorial filter and common physical length remain."
+    },
+    "RiemannGaussian.ZetaRieszPrimeFourier.tendsto_actual_primePair_integral": {
+      "label": "Prime-factor source · conditional on a right-half zero",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "The exact prime-factor integral retains the original negative multiplicity limit under the hypothetical-zero assumption. This source identity supplies no independent lower bound."
+    },
+    "RiemannGaussian.ZetaRieszPrimeFourier.primeProduct_eq_centered_sine": {
+      "label": "Every prime sine, central phase and prime count retained",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "The full squarefree prime product equals (2i)^ω times its central logarithmic phase and all real sine factors. This is an exact identity, not a source-scale estimate."
+    },
+    "RiemannGaussian.ZetaPrimeNonlinearFactor.integral_norm_actual_nonlinearFactor_sub_one_div_le": {
+      "label": "Integrated multiplicative correction · bounded at fixed real part",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "For labels at least 16 and fixed Re(s)>1/2, exp(E)−1 divided by frequency squared has a finite cutoff-independent integral norm. The factor exp(A) remains outside this bound."
+    },
+    "RiemannGaussian.ZetaPrimeNonlinearTail.integral_norm_nonlinearFactor_le_tail": {
+      "label": "Integrated correction paid by a decreasing arithmetic tail",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "Every finite selection above K costs at most an explicit constant times the remaining summable square-log mass. This bounds the multiplicative correction before multiplication by exp(A) or the factorial filter."
+    },
+    "RiemannGaussian.ZetaPrimeNonlinearTail.exists_uniform_nonlinearFactor_tail_lt": {
+      "label": "Nonlinear prime-tail allowance tends uniformly to zero",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "For each fixed σ>1/2 and every ε>0, one threshold K≥16 makes the integrated multiplicative correction smaller than ε for every finite Q above K and every s with Re(s)=σ. No uniform limit as σ approaches 1/2 is claimed."
+    },
+    "RiemannGaussian.ZetaRieszCompositeProduct.sum_composites_eq_compensated_exp": {
+      "label": "Composite completion retains exp(A+E)−1−A",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "The full composite divisor sum is a compensated exponential after proving exact unit and singleton deletion. The local-log identification assumes all participating primes are at least 16."
+    },
+    "RiemannGaussian.ZetaRieszCompositeProduct.actual_band_symbol_eq_completed_sub_boundary": {
+      "label": "The actual finite band retains its entire completion boundary",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "The canonical primorial contains every original squarefree band label. Its complete composite response minus the explicit omitted signed sum recovers that band exactly; no smallness of the boundary is asserted."
     }
   }
 }

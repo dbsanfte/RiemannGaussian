@@ -157,7 +157,7 @@
   ],
   "generator": "scripts/build_zero_free_plot.py",
   "inputs": {
-    "docs/proof-status.json": "da15a685b72fc8718f6b5bf013a19d72e0bfdf0d09f122cfc4dc1c39f342f383",
+    "docs/proof-status.json": "6e77f6a5ff0b5f43eebf17a27bab774a83d1a8abb978b424455789a5b112e5d9",
     "docs/zero-free-literature-frontier.md": "298b57fa00dc3c671fd6f5270c8d6c3b81dcc66d7e79080ae901ceda13314085",
     "docs/zero-free-regions/metadata.json": "4d2332c61060c8e85b0d58213001b98448bc08b8bb2532d589a1d81198325f0d",
     "scripts/ExportZeroFreePlot.lean": "bf4c47386c829827ad223399e313c7dfeb733137d48025ea3658d67c4e7c8163",
@@ -174,7 +174,7 @@
   "sourceAuditDate": "2026-09-13",
   "svgSha256": "7290d4604cdc2a543065ea073b961d02b44559a868f448c84be18ba2c513b94d",
   "theoremExplorerAudit": "docs/theorem-explorer/audit.json",
-  "theoremExplorerAuditSha256": "53a85152bf6f5c20365ffd07fb32f75d3a2d929d934d563cd4900c9e05b2c33a",
+  "theoremExplorerAuditSha256": "d7f3b5ae01f1a67afd8fd25825a1e221812ec6168757be5e7b23016d61bc197d",
   "theorems": {
     "comparisonTheorem": {
       "axioms": [

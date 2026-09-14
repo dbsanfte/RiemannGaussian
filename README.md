@@ -142,9 +142,9 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**The original signed Riesz carrier now has an exact Fourier representation.** Lean retains the actual factorial filter, physical cutoff, both frequencies, signed first moment and ordinary-prime correction. Separately, the nonlinear prime-character log remainder has a cutoff-independent integrated bound at each fixed Re(s)>1/2. The first-order prime-phase exponential and its filtered contribution remain uncontrolled; the independent cofinal floor and zero-free region are unchanged.
-Next: use the exact prime-factor correlations to control the complete signed frequency response at the original source scale.
-[Current checked endpoint](RiemannGaussian/ZetaRieszFourierCarrier.lean#L103)
+**A nonlinear arithmetic tail allowance now decreases to zero.** Lean proves a vanishing, monotone integrated allowance for the nonlinear multiplicative correction, uniformly over finite larger-prime selections and all heights at each fixed Re(s)>1/2. Exact prime-factor formulas retain the actual carrier, ordinary-prime subtraction and completion boundary. The first-order coupling, bounds after the original factorial filter and independent signed floor remain open.
+Next: control the coupled first-order response and its signed completion boundary at the original source scale.
+[Current checked endpoint](RiemannGaussian/ZetaPrimeNonlinearTail.lean#L142)
 · [Proof details](docs/zeta-riesz-signed-fourier-tail.md).
 <!-- RH_DIRECTION:END -->
 

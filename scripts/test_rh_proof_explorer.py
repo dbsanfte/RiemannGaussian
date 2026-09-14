@@ -191,6 +191,41 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem actual_physical_band_eq_fourierResponse' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'prime-factor-tail':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'decreasing integrated allowance tending to zero' in scope
+                        assert 'independent fixed cofinal floor remain open' in scope
+                        assert 'explicit signed boundary' in scope
+                        root_data = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        prime_carrier = next(n for n in root_data if n['id'].endswith('.actual_band_eq_primePair_integral'))
+                        assert all(term in prime_carrier['statement'] for term in (
+                            'zetaArithmeticBand', 'zetaPrimeFilterKernel P N', 'zetaPrimeLogBand N', 'bandPrimePair', 'L'))
+                        tail = next(n for n in root_data if n['id'].endswith('.exists_uniform_nonlinearFactor_tail_lt'))
+                        tail_statement = ' '.join(tail['statement'].split())
+                        assert all(term in tail_statement for term in (
+                            '1 / 2 < sigma', '0 < eps', '16 ≤ K', 's.re = sigma', 'K ≤ p', '∫', 'Complex.exp', '< eps'))
+                        assert tail['source']['path'].endswith('ZetaPrimeNonlinearTail.lean')
+                        boundary = next(n for n in root_data if n['id'].endswith('.actual_band_symbol_eq_completed_sub_boundary'))
+                        assert all(term in boundary['statement'] for term in (
+                            'primorial', '2 ^ (32 * N)', 'n ∉ RiemannGaussian.zetaPrimeLogBand N', 'compositeResponse', 'primeProduct'))
+                        compensated = next(n for n in root_data if n['id'].endswith('.sum_composites_eq_compensated_exp'))
+                        assert all(term in ' '.join(compensated['statement'].split())
+                                   for term in ('16 ≤ p', 'firstOrder', 'logRemainder', '- 1 -'))
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', tail['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == tail['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{tail['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{tail['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem exists_uniform_nonlinearFactor_tail_lt' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -199,7 +234,8 @@ def run(output, url=None, refresh_preview=False):
                 checks.append({'width': width, 'terminal': expected, 'source': source_url,
                                'conditionalSource': source_root, 'hoverStatementAndAxioms': True,
                                'endpointSwitchAndZoom': True, 'openObstructionVisible': True,
-                               'signedFourierCarrierAndOpenFloor': True})
+                               'signedFourierCarrierAndOpenFloor': True,
+                               'vanishingNonlinearTailAndRetainedBoundary': True})
                 page.close()
             browser.close()
     finally:

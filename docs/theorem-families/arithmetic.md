@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**125 modules.** Source links open the definitions, hypotheses and proofs.
+**129 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -62,6 +62,8 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaPositiveCompositeResponse](../../RiemannGaussian/ZetaPositiveCompositeResponse.lean)
 - [ZetaPrimeCharacterRemainder](../../RiemannGaussian/ZetaPrimeCharacterRemainder.lean)
 - [ZetaPrimeEnvelopeRate](../../RiemannGaussian/ZetaPrimeEnvelopeRate.lean)
+- [ZetaPrimeNonlinearFactor](../../RiemannGaussian/ZetaPrimeNonlinearFactor.lean)
+- [ZetaPrimeNonlinearTail](../../RiemannGaussian/ZetaPrimeNonlinearTail.lean)
 - [ZetaPrimeTailWindowObstruction](../../RiemannGaussian/ZetaPrimeTailWindowObstruction.lean)
 - [ZetaPrimeWindow](../../RiemannGaussian/ZetaPrimeWindow.lean)
 - [ZetaPrimeWindowLocalization](../../RiemannGaussian/ZetaPrimeWindowLocalization.lean)
@@ -69,6 +71,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaQuadraticWindowSource](../../RiemannGaussian/ZetaQuadraticWindowSource.lean)
 - [ZetaQuarterKernelFourierBudget](../../RiemannGaussian/ZetaQuarterKernelFourierBudget.lean)
 - [ZetaRieszBlockMass](../../RiemannGaussian/ZetaRieszBlockMass.lean)
+- [ZetaRieszCompositeProduct](../../RiemannGaussian/ZetaRieszCompositeProduct.lean)
 - [ZetaRieszConditionedEnergy](../../RiemannGaussian/ZetaRieszConditionedEnergy.lean)
 - [ZetaRieszConditioningTransfer](../../RiemannGaussian/ZetaRieszConditioningTransfer.lean)
 - [ZetaRieszCriticalProfile](../../RiemannGaussian/ZetaRieszCriticalProfile.lean)
@@ -76,6 +79,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszImprovedMoment](../../RiemannGaussian/ZetaRieszImprovedMoment.lean)
 - [ZetaRieszInterpolation](../../RiemannGaussian/ZetaRieszInterpolation.lean)
 - [ZetaRieszNegativeProfile](../../RiemannGaussian/ZetaRieszNegativeProfile.lean)
+- [ZetaRieszPrimeFourier](../../RiemannGaussian/ZetaRieszPrimeFourier.lean)
 - [ZetaRoughCoprimeFactorDecay](../../RiemannGaussian/ZetaRoughCoprimeFactorDecay.lean)
 - [ZetaRoughDivisorCorrelation](../../RiemannGaussian/ZetaRoughDivisorCorrelation.lean)
 - [ZetaRoughDivisorIncidence](../../RiemannGaussian/ZetaRoughDivisorIncidence.lean)

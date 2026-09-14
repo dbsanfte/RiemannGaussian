@@ -2271,6 +2271,30 @@ as supporting arithmetic results. The handoff's model diagnostics are not
 actual-zero estimates. No historical novelty or new zero-free width is
 claimed. Continue independent local theorem work during exact-SHA CI.
 
+`ZetaRieszPrimeFourier` now proves that each complete squarefree nonunit
+composite divisor measure has zero mass and log moment, and identifies
+the actual band with its integrable full prime-factor response. Its exact
+centered sine factors preserve prime count and phase. This cancellation
+does not remove the first moment of the older truncated common-divisor
+marks. `ZetaPrimeNonlinearTail` bounds the integrated multiplicative
+correction exp(E)-1 by a nonnegative, decreasing square-log allowance
+that tends to zero above a growing prime threshold, uniformly in finite
+prime selections and imaginary height at each fixed Re(s)>1/2. The exp(A)
+coupling, finite small primes, original factorial filter and independent
+signed floor still require estimates. `ZetaRieszCompositeProduct` proves
+the complete composite symbol is exp(A+E)-1-A under the local small-factor
+conditions; never drop the unit or singleton subtraction. Its actual-band
+completion also retains an explicit signed boundary, with no claimed
+smallness. Keep these component bounds in the supporting prime-factor
+explorer view; the default Riesz critical-profile bound is unchanged.
+
+Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
+milestones in chat as they pass Lean. Name the controlled quantity, state
+the bound's range and uniformity, and say what remains outside the bound.
+Distinguish identities from estimates, component control from a bound for
+the full signed tail, and local Lean success from exact-SHA CI success.
+Do not describe an unevaluated tail allowance as a numerical zero bound.
+
 1. Inspect `git status`, the imported theorem chain, the current dashboard
    data, and any newly supplied research dispatch before editing.
 2. State the exact mathematical obstruction and the theorem that removes a
