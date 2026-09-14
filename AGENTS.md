@@ -2337,10 +2337,25 @@ polynomial class elsewhere. Semiprimes and larger composite cofactors
 remain unpaid jointly. `ZetaRieszCofactorTiltRate` proves the unique exact
 scalar optimizer and tests every positive tilt analytically. The
 exception u=exp(-1/2) is a contact of that scalar envelope, not a zero
-exclusion. A general-tilt spatial estimate remains unproved in this slice;
-do not conflate scalar optimization with an arithmetic tail bound. See
+exclusion. The downstream general-tilt module now supplies the spatial
+estimate and arithmetic component bound; the scalar theorem alone is
+not that bound. See
 `docs/zeta-riesz-exponential-cofactor-decay.md` and the supporting endpoint
 `exponential-cofactor-decay`. The default whole-carrier endpoint is unchanged.
+
+`ZetaRieszGeneralCofactorTilt` now pays the full spatial and coefficient
+cost for every q>1/2 with geometric rate r(u,q)<1. Its exact scalar optimizer
+provides a geometric bound on the complete original-band composite-cofactor
+class at every 1/2<u<1 except u=exp(-1/2). The explicit integer schedule
+retains the physical-cutoff minimum and eventually exceeds each fixed N^k.
+The earlier polynomial class covers the exceptional contact, so the exact
+optimized complementary source applies to every hypothetical right-half
+zero. Constants may depend on fixed u and P; the component bound is uniform
+in height. Do not assert that the cofactor growth schedule is optimal, that
+the contact is zero-free, or that semiprimes and larger composite cofactors
+have a joint signed floor. That floor remains open. See
+`docs/zeta-riesz-general-tilt-decay.md` and supporting endpoint
+`general-tilt-decay`; keep the default whole-carrier endpoint unchanged.
 
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state

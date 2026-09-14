@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 14,
-      "id": "exponential-composite-cofactor-decay",
+      "sequence": 15,
+      "id": "general-tilt-arithmetic-cofactor-decay",
       "kind": "theorem",
-      "title": "A cofactor range beyond every fixed polynomial now has geometric decay.",
-      "body": "For hypothetical zeros with real part between one half and five sixths, Lean proves geometric decay of the full composite-cofactor class in an explicit range eventually exceeding every fixed power of the order. An adaptive deletion preserves the original source throughout the right half-strip. Semiprimes and larger composite cofactors still need a joint signed bound.",
-      "next": "Next: connect the exact optimal tilt to a general spatial estimate, and use the retained prime correlations against the joint surviving contribution.",
+      "title": "The exact analytic tilt now gives an arithmetic decay bound.",
+      "body": "Lean now pays the spatial and cofactor costs for every admissible tilt. The exact scalar optimizer gives geometric decay of a range exceeding every fixed polynomial throughout the source-scale interval, except at one contact covered by the earlier polynomial bound. The full complementary source is retained; semiprimes and larger cofactors still need a joint signed floor.",
+      "next": "Next: attack the coupled semiprime and larger-cofactor contribution, retaining the original prime phases and common cutoff.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszExponentialCofactorBoundTheorem"
+        "rieszOptimalCofactorBoundTheorem"
       ],
-      "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md"
+      "documentation": "docs/zeta-riesz-general-tilt-decay.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -395,6 +395,45 @@
         "rieszExponentialCofactorScope"
       ],
       "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md"
+    },
+    {
+      "id": "general-tilt-decay",
+      "label": "General tilt · exact optimizer becomes an arithmetic bound",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGeneralTiltPrefixTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGeneralTiltBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOptimalCofactorBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOptimalCofactorGrowthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOptimizedCofactorDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOptimizedReducedSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGeneralTiltSurvivorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszGeneralTiltScope"
+      ],
+      "documentation": "docs/zeta-riesz-general-tilt-decay.md"
     }
   ],
   "scopes": {
@@ -1101,7 +1140,7 @@
     },
     "RiemannGaussian.ZetaRieszCofactorTiltRate.minimumRate_eq_tiltRate_iff": {
       "label": "Scalar rate audit · unique analytic optimizer",
-      "summary": "For 0<u<1 the unique minimizing positive tilt is 1/(-2*log u). This scalar optimization does not supply a general-tilt arithmetic estimate.",
+      "summary": "For 0<u<1 the unique minimizing positive scalar tilt is 1/(-2*log u). The separate general-tilt module now proves an arithmetic component bound using it.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
       "overview": true
@@ -1115,9 +1154,58 @@
     },
     "RiemannGaussian.ZetaRieszCofactorTiltRate.optimalTilt_gt_half": {
       "label": "The exact optimizer has an admissible spatial exponent",
-      "summary": "For actual 1/2<u<1 the unique optimum is above 1/2. The needed general power-prefix estimate has not yet been connected to the carrier.",
+      "summary": "For actual 1/2<u<1 the unique scalar optimum is above 1/2. The general-tilt module now supplies its spatial prefix estimate and arithmetic connection.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszGeneralCofactorTilt.sum_rpow_prefix_le": {
+      "label": "Every real-power prefix · explicit spatial cost",
+      "summary": "Discrete concavity and telescoping bound the complete positive prefix for every real exponent above zero.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-general-tilt-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszGeneralCofactorTilt.norm_tilted_composite_band_le": {
+      "label": "All admissible tilts · actual geometric component bound",
+      "summary": "For every q>1/2 with r(u,q)<1, the full original composite-cofactor class obeys an explicit geometric allowance; all spatial and coefficient costs are paid.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-general-tilt-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszGeneralCofactorTilt.norm_optimal_composite_band_le": {
+      "label": "Exact scalar optimizer · arithmetic bound attained",
+      "summary": "The unique scalar optimum now supplies a geometric bound for an explicitly growing composite-cofactor class at every 1/2<u<1 except u=exp(-1/2).",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-general-tilt-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszGeneralCofactorTilt.eventually_pow_le_optimalSchedule": {
+      "label": "Exact-tilt range · exceeds every fixed polynomial",
+      "summary": "For each fixed k the cofactor range eventually contains N^k, retaining integer floors and the original damped cutoff.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-general-tilt-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszGeneralCofactorTilt.tendsto_optimized_composite_band": {
+      "label": "Optimized deletion · all actual source scales",
+      "summary": "Geometric decay away from the scalar contact combines with the earlier polynomial decay at contact; no zero assumption is used.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-general-tilt-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszGeneralCofactorTilt.tendsto_optimized_reduced_source": {
+      "label": "Optimized complement · complete source retained",
+      "summary": "Every hypothetical right-half zero retains its exact negative-multiplicity source in the literal complementary band, including the exceptional scalar contact.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-general-tilt-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszGeneralCofactorTilt.surviving_tilted_cofactor_gt": {
+      "label": "Remaining composite cofactors · above the exact-tilt threshold",
+      "summary": "Every eligible composite cofactor of a surviving insertion exceeds the selected threshold. Semiprimes and larger cofactors still require a joint signed floor.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-general-tilt-decay.md",
       "overview": true
     }
   }

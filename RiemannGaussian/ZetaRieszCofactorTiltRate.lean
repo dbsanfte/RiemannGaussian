@@ -10,8 +10,9 @@ import RiemannGaussian.ZetaRieszGrowingCofactor
 
 The geometric rate suggested by a general positive factorial tilt has a
 unique explicit minimizer. This scalar audit matches the two already proved
-unit and three-halves arithmetic estimates. A general-tilt spatial estimate
-is still needed before the other scalar rates yield arithmetic bounds.
+unit and three-halves arithmetic estimates. The downstream module
+`ZetaRieszGeneralCofactorTilt` supplies the general spatial estimate and
+its actual arithmetic component bound.
 The exceptional scalar contact is not a zero-location conclusion.
 -/
 

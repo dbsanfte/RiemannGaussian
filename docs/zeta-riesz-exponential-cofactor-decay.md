@@ -84,8 +84,9 @@ convexity. It is not a claim of historical novelty.
 
 The unit tilt gives rate one, and the three-halves tilt gives precisely
 the proved arithmetic base `2/(3*u)`. For actual `1/2<u<1`, the optimum
-is above one half. **A general-tilt spatial estimate is still required**
-before the other scalar rates become arithmetic bounds. The exceptional
+is above one half. The [general-tilt continuation](zeta-riesz-general-tilt-decay.md)
+now proves the spatial estimate and turns the optimum into an actual
+arithmetic component bound, with all cofactor costs paid. The exceptional
 scalar contact does not assert the presence or absence of zeta zeros.
 Optimizing this envelope also does not pay the joint remaining signed sum.
 

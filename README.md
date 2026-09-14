@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**A cofactor range beyond every fixed polynomial now has geometric decay.** For hypothetical zeros with real part between one half and five sixths, Lean proves geometric decay of the full composite-cofactor class in an explicit range eventually exceeding every fixed power of the order. An adaptive deletion preserves the original source throughout the right half-strip. Semiprimes and larger composite cofactors still need a joint signed bound.
-Next: connect the exact optimal tilt to a general spatial estimate, and use the retained prime correlations against the joint surviving contribution.
-[Current checked endpoint](RiemannGaussian/ZetaRieszExponentialCofactor.lean#L426)
-· [Proof details](docs/zeta-riesz-exponential-cofactor-decay.md).
+**The exact analytic tilt now gives an arithmetic decay bound.** Lean now pays the spatial and cofactor costs for every admissible tilt. The exact scalar optimizer gives geometric decay of a range exceeding every fixed polynomial throughout the source-scale interval, except at one contact covered by the earlier polynomial bound. The full complementary source is retained; semiprimes and larger cofactors still need a joint signed floor.
+Next: attack the coupled semiprime and larger-cofactor contribution, retaining the original prime phases and common cutoff.
+[Current checked endpoint](RiemannGaussian/ZetaRieszGeneralCofactorTilt.lean#L539)
+· [Proof details](docs/zeta-riesz-general-tilt-decay.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

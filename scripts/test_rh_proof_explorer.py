@@ -296,7 +296,7 @@ def run(output, url=None, refresh_preview=False):
                         assert 'eventually exceeds N^k for every fixed k' in scope
                         assert 'for every hypothetical right-half zero' in scope
                         assert 'Semiprimes and larger composite cofactors remain unpaid jointly' in scope
-                        assert 'general spatial estimate is not yet proved' in scope
+                        assert 'general spatial estimate is now proved' in scope
                         roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
                         bound = next(n for n in roots if n['id'].endswith('.norm_exponential_composite_band_le'))
                         assert all(t in ' '.join(bound['statement'].split()) for t in (
@@ -324,6 +324,43 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem norm_exponential_composite_band_le' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'general-tilt-decay':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'Every q>1/2 with r(u,q)<1' in scope
+                        assert 'except u=exp(-1/2)' in scope
+                        assert 'for every hypothetical right-half zero' in scope
+                        assert 'Semiprimes and larger composite cofactors remain unpaid jointly' in scope
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        general = next(n for n in roots if n['id'].endswith('.norm_tilted_composite_band_le'))
+                        assert all(t in ' '.join(general['statement'].split()) for t in (
+                            '1 / 2 < q', 'tiltRate u q < 1', 'tiltedCompositeBand u q N',
+                            'zetaPrimeFilterKernel P N', '√'))
+                        bound = next(n for n in roots if n['id'].endswith('.norm_optimal_composite_band_le'))
+                        assert all(t in ' '.join(bound['statement'].split()) for t in (
+                            '1 / 2 < u', 'u < 1', 'u ≠', 'Real.exp',
+                            'optimalTilt u', 'minimumRate u', 'zetaPrimeFilterKernel P N'))
+                        assert bound['source']['path'].endswith('ZetaRieszGeneralCofactorTilt.lean')
+                        source = next(n for n in roots if n['id'].endswith('.tendsto_optimized_reduced_source'))
+                        assert all(t in source['statement'] for t in (
+                            'NontrivialZetaZero', 'optimizedReducedBand', 'analyticZetaZeroMultiplicity'))
+                        assert 'Real.exp' not in source['statement']
+                        growth = next(n for n in roots if n['id'].endswith('.eventually_pow_le_optimalSchedule'))
+                        assert all(t in growth['statement'] for t in ('∀ᶠ', 'N ^ k', 'tiltedSchedule'))
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', bound['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == bound['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{bound['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{bound['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem norm_optimal_composite_band_le' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -338,6 +375,7 @@ def run(output, url=None, refresh_preview=False):
                                'growingCofactorDecayAndRetainedSource': True,
                                'conditionalRHClosurePremiseVisible': True,
                                'exponentialCofactorBoundAndAdaptiveSource': True,
+                               'generalTiltArithmeticBoundAndWholeSource': True,
                                'scalarTiltAuditDistinguishedFromArithmeticBound': True})
                 page.close()
             browser.close()

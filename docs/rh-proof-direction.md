@@ -68,7 +68,12 @@ with an explicit geometric allowance. Its adaptive source theorem covers
 the entire right half-strip by retaining the polynomial deletion elsewhere.
 The [proof details](zeta-riesz-exponential-cofactor-decay.md) distinguish
 these arithmetic estimates from the separate exact scalar tilt optimizer.
-Neither pays the joint remaining semiprime and larger-cofactor contribution.
+The [general-tilt continuation](zeta-riesz-general-tilt-decay.md) now connects
+the exact scalar optimum to an actual arithmetic bound. It pays a range
+beyond every fixed polynomial at every actual source scale except the
+single scalar contact, where the earlier polynomial deletion still applies.
+Its exact complementary source covers every hypothetical right-half zero.
+The joint remaining semiprime and larger-cofactor contribution is still unpaid.
 
 The **Critical moments** view proves the actual global exponent
 `2k(u+1)-k(k+1)/2+eps` for every `k>=2,u>=k,eps>0` at all sufficiently
