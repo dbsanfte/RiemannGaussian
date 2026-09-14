@@ -2282,8 +2282,8 @@ zero assumption. Prime cofactors leave the exact semiprime coefficient
 `ZetaRieszPrimeClasses` deletes all-small support at `N>=60` and proves that
 one-large-prime labels have nonunit cofactor dividing 30030. The prime
 cofactors are exactly among 2,3,5,7,11,13. Each fixed composite-cofactor
-insertion band is paid; the finite deletion still needs to be assembled
-with the exact restrictions into a reduced source theorem. The signed
+insertion band is paid; `ZetaRieszReducedCofactorSource` now assembles the
+entire finite deletion with exact restrictions into a reduced source theorem. The signed
 semiprime and multiple-large-prime terms remain unpaid jointly.
 `ZetaRieszFilteredCompletion` carries the complete original factorial filter
 through the completed-minus-boundary response, retaining both frequencies
@@ -2311,6 +2311,21 @@ conditions; never drop the unit or singleton subtraction. Its actual-band
 completion also retains an explicit signed boundary, with no claimed
 smallness. Keep these component bounds in the supporting prime-factor
 explorer view; the default Riesz critical-profile bound is unchanged.
+
+`ZetaRieszGrowingCofactor` now pays the entire original-band class n=p*a
+with squarefree nonunit composite cofactor a<=A_N, where A_N is the threefold
+natural square root of N+1. Its eighth-power budget gives a vanishing
+inverse-square-root plus polynomial-geometric allowance with the full
+fixed factorial filter. All terms outside the common compact range are
+eventually exactly zero; every cutoff inclusion is proved. Deleting this
+unbounded class retains the negative-multiplicity source. The exponent is
+a conservative admissible range, not an optimum. The joint signed floor
+for surviving semiprimes and larger composite cofactors remains open.
+`ZetaRieszReducedCofactorSource.rh_of_reduced_cofinal_floors` audits logical
+closure to Mathlib RH with the arithmetic floor explicitly an unproved
+premise. Do not report that conditional theorem as proving RH. See
+`docs/zeta-riesz-growing-cofactor-decay.md` and the supporting endpoint
+`growing-cofactor-decay`; the default whole-carrier endpoint is unchanged.
 
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state

@@ -52,9 +52,15 @@ The [fixed cofactor component view](https://dbsanfte.github.io/RiemannGaussian/r
 now proves independent source-scale decay for every fixed squarefree
 composite-cofactor prime band. Its [component ledger](zeta-riesz-fixed-cofactor-decay.md)
 distinguishes that paid class from the explicit six small-prime semiprime
-tails and the class with at least two large primes. Assembling the finite
-cofactor deletion into the source theorem remains a separate step; the
-combined signed estimate remains open.
+tails and the class with at least two large primes. The finite deletion
+is now assembled into the source theorem. The
+[growing cofactor view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=growing-cofactor-decay)
+pays every squarefree composite cofactor up to an explicit unbounded
+eighth-root schedule, and its exact complement retains the same source.
+The [new ledger](zeta-riesz-growing-cofactor-decay.md) isolates the surviving
+semiprimes and larger composite cofactors; their combined signed floor
+remains open. The conditional closure to Mathlib RH keeps that floor
+explicitly as an unproved premise.
 
 The **Critical moments** view proves the actual global exponent
 `2k(u+1)-k(k+1)/2+eps` for every `k>=2,u>=k,eps>0` at all sufficiently

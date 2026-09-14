@@ -230,7 +230,7 @@ def run(output, url=None, refresh_preview=False):
                         scope = page.locator('#scope-text').inner_text()
                         assert 'vanishing full prime-insertion band' in scope
                         assert 'joint signed semiprime and multiple-large-prime estimate remains open' in scope
-                        assert 'assembly of the finite cofactor deletion' in scope
+                        assert 'finite cofactor deletion is now assembled' in scope
                         root_data = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
                         decay = next(n for n in root_data if n['id'].endswith('.tendsto_actual_composite_cofactor_band'))
                         statement = ' '.join(decay['statement'].split())
@@ -256,6 +256,41 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem tendsto_actual_composite_cofactor_band' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'growing-cofactor-decay':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'tends to infinity' in scope
+                        assert 'retains the original negative-multiplicity source' in scope
+                        assert 'Semiprimes and composite cofactors larger than A_N remain unpaid jointly' in scope
+                        assert 'explicitly assumes the unproved cofinal arithmetic floor' in scope
+                        root_data = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        decay = next(n for n in root_data if n['id'].endswith('.tendsto_growing_composite_band'))
+                        statement = ' '.join(decay['statement'].split())
+                        assert all(term in statement for term in (
+                            '0 < u', 'u < 1', 'growingCompositeBand N', 'coefficient',
+                            'length u N', 'zetaPrimeFilterKernel P N', 'Tendsto'))
+                        assert decay['source']['path'].endswith('ZetaRieszGrowingCofactor.lean')
+                        source = next(n for n in root_data if n['id'].endswith('.tendsto_growing_reduced_source'))
+                        assert all(term in ' '.join(source['statement'].split()) for term in (
+                            'NontrivialZetaZero', 'growingReducedBand N', 'analyticZetaZeroMultiplicity',
+                            'zetaRightHalfPoleJetFilter'))
+                        closure = next(n for n in root_data if n['id'].endswith('.rh_of_reduced_cofinal_floors'))
+                        assert all(term in closure['statement'] for term in (
+                            '∃ c < 1', '∃ᶠ', '→', 'RiemannHypothesis', 'reducedHeadBand'))
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', decay['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == decay['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{decay['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{decay['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem tendsto_growing_composite_band' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -266,7 +301,9 @@ def run(output, url=None, refresh_preview=False):
                                'endpointSwitchAndZoom': True, 'openObstructionVisible': True,
                                'signedFourierCarrierAndOpenFloor': True,
                                'vanishingNonlinearTailAndRetainedBoundary': True,
-                               'fixedCofactorDecayAndExplicitUnpaidClasses': True})
+                               'fixedCofactorDecayAndExplicitUnpaidClasses': True,
+                               'growingCofactorDecayAndRetainedSource': True,
+                               'conditionalRHClosurePremiseVisible': True})
                 page.close()
             browser.close()
     finally:

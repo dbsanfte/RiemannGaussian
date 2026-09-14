@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 12,
-      "id": "fixed-composite-cofactor-decay",
+      "sequence": 13,
+      "id": "growing-composite-cofactor-decay",
       "kind": "theorem",
-      "title": "A whole arithmetic cofactor class now has proved decay.",
-      "body": "Lean proves that every fixed squarefree composite cofactor has a vanishing full prime-insertion contribution in the original band, with its full factorial filter. The clipped part has an explicit inverse-order plus geometric allowance. Exact factorization identifies the six small prime cofactors that can leave semiprime tails; those tails and the multiple-large-prime class still need a joint bound.",
-      "next": "Next: assemble the finite cofactor deletion into the source theorem and attack the surviving signed prime correlations.",
+      "title": "An unbounded cofactor class now has proved arithmetic decay.",
+      "body": "Lean now removes every squarefree composite cofactor up to an explicit growing eighth-root cutoff, with a vanishing allowance after the full original factorial filter. The reduced band retains the negative-multiplicity source. The finite small-prime head deletion is also assembled. Semiprimes and composites with larger cofactors still require a joint signed bound.",
+      "next": "Next: use the retained prime phases and signs to bound the joint surviving semiprime and larger-cofactor contribution.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszFixedCofactorDecayTheorem"
+        "rieszGrowingCofactorDecayTheorem"
       ],
-      "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md"
+      "documentation": "docs/zeta-riesz-growing-cofactor-decay.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -297,6 +297,57 @@
         "rieszFixedCofactorScope"
       ],
       "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md"
+    },
+    {
+      "id": "growing-cofactor-decay",
+      "label": "Arithmetic components · growing cofactors decay; reduced source retained",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiniteHeadDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszReducedHeadSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszReducedHeadSupportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszReducedRHClosureTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGrowingCofactorAllowanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGrowingCofactorBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGrowingCofactorCofinalityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGrowingCofactorDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGrowingReducedSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSurvivingCofactorSizeTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszGrowingCofactorScope"
+      ],
+      "documentation": "docs/zeta-riesz-growing-cofactor-decay.md"
     }
   ],
   "scopes": {
@@ -888,6 +939,76 @@
       "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
       "overview": true,
       "summary": "Every original factorial moment passes through the exact completed-minus-boundary response inside the paired Fourier integral. The whole quotient is integrable; no separate channel bound is asserted."
+    },
+    "RiemannGaussian.ZetaRieszReducedCofactorSource.tendsto_composite_head_band": {
+      "label": "Finite composite head · whole union decays",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
+      "overview": true,
+      "summary": "The full finite union of composite cofactors dividing 30030 is paid inside one original-band sum, without counting overlaps twice."
+    },
+    "RiemannGaussian.ZetaRieszReducedCofactorSource.tendsto_reduced_source": {
+      "label": "Finite deletion · original source retained",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
+      "overview": true,
+      "summary": "Subtracting the independently negligible finite composite-head class preserves the exact negative-multiplicity source under a hypothetical right-half zero."
+    },
+    "RiemannGaussian.ZetaRieszReducedCofactorSource.reduced_support": {
+      "label": "Reduced support · six prime cofactors or multiple large primes",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
+      "overview": true,
+      "summary": "Every surviving squarefree composite at N>=60 has at least two primes >=16, or is p*a for one of the six small prime cofactors."
+    },
+    "RiemannGaussian.ZetaRieszReducedCofactorSource.rh_of_reduced_cofinal_floors": {
+      "label": "Conditional closure to RH · arithmetic floor remains a premise",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
+      "overview": true,
+      "summary": "For each hypothetical right-half zero, the displayed strict cofinal lower floor would contradict its source. Reflection then gives Mathlib RH. This theorem does not prove the floor."
+    },
+    "RiemannGaussian.ZetaRieszGrowingCofactor.norm_clipped_range_band_le": {
+      "label": "Growing cofactor range · explicit full-filter allowance",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
+      "overview": true,
+      "summary": "The whole clipped original subband costs at most 2*C(A)*S(P)*sqrt(A)*(u/(N+1)+2*u^(N+1)), with C(A)=2*A*log(A)*(1+log(A)/log(4))."
+    },
+    "RiemannGaussian.ZetaRieszGrowingCofactor.tendsto_eighth_power_clipped_band": {
+      "label": "Eighth-power budget · source-scale decay",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
+      "overview": true,
+      "summary": "Every positive integer schedule with A_N^8<=N+1 has a vanishing allowance at every fixed 0<u<1, retaining the full polynomial factorial filter."
+    },
+    "RiemannGaussian.ZetaRieszGrowingCofactor.eighthRootSchedule_tendsto": {
+      "label": "Explicit cofactor schedule · grows without bound",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
+      "overview": true,
+      "summary": "The threefold natural square root of N+1 tends to infinity, with integer rounding preserved."
+    },
+    "RiemannGaussian.ZetaRieszGrowingCofactor.tendsto_growing_composite_band": {
+      "label": "Growing composite cofactors · entire band decays",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
+      "overview": true,
+      "summary": "All squarefree nonunit composite cofactors up to the growing schedule are paid together. The omitted compact-range complement is eventually exactly zero."
+    },
+    "RiemannGaussian.ZetaRieszGrowingCofactor.tendsto_growing_reduced_source": {
+      "label": "Growing deletion · original source retained",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
+      "overview": true,
+      "summary": "The actual original-band complement of the growing cofactor class retains the same negative-multiplicity limit under the hypothetical-zero assumptions."
+    },
+    "RiemannGaussian.ZetaRieszGrowingCofactor.surviving_composite_cofactor_gt": {
+      "label": "Surviving composite cofactors · forced above the growing cutoff",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
+      "overview": true,
+      "summary": "Every eligible composite cofactor of a surviving prime insertion exceeds A_N. Prime cofactors and their semiprime tails remain outside this decay theorem."
     }
   }
 }

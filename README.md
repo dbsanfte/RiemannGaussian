@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**A whole arithmetic cofactor class now has proved decay.** Lean proves that every fixed squarefree composite cofactor has a vanishing full prime-insertion contribution in the original band, with its full factorial filter. The clipped part has an explicit inverse-order plus geometric allowance. Exact factorization identifies the six small prime cofactors that can leave semiprime tails; those tails and the multiple-large-prime class still need a joint bound.
-Next: assemble the finite cofactor deletion into the source theorem and attack the surviving signed prime correlations.
-[Current checked endpoint](RiemannGaussian/ZetaRieszFixedCofactor.lean#L389)
-· [Proof details](docs/zeta-riesz-fixed-cofactor-decay.md).
+**An unbounded cofactor class now has proved arithmetic decay.** Lean now removes every squarefree composite cofactor up to an explicit growing eighth-root cutoff, with a vanishing allowance after the full original factorial filter. The reduced band retains the negative-multiplicity source. The finite small-prime head deletion is also assembled. Semiprimes and composites with larger cofactors still require a joint signed bound.
+Next: use the retained prime phases and signs to bound the joint surviving semiprime and larger-cofactor contribution.
+[Current checked endpoint](RiemannGaussian/ZetaRieszGrowingCofactor.lean#L344)
+· [Proof details](docs/zeta-riesz-growing-cofactor-decay.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

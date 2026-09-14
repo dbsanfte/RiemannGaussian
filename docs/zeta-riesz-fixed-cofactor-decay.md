@@ -107,14 +107,15 @@ the six smaller primes are `{2,3,5,7,11,13}`, whose product is 30030.
 | Original arithmetic component | What is proved | What is still unpaid |
 | --- | --- | --- |
 | All prime factors below 16 | Absent from the original band for `N>=60` | Nothing in this class |
-| Exactly one prime factor at least 16, with composite small cofactor | Exact factorization `n=p*a`, `a>1` dividing 30030; the full insertion band for each fixed composite cofactor tends to zero | Assemble these finite deletions with their exact original restrictions into the reduced source theorem |
+| Exactly one prime factor at least 16, with composite small cofactor | Exact factorization `n=p*a`, `a>1` dividing 30030; the full insertion band for each fixed composite cofactor tends to zero | Nothing in this class: the complete finite deletion and reduced source are now proved in `ZetaRieszReducedCofactorSource` |
 | Exactly one large prime, with prime small cofactor | The only small cofactors are the six listed primes; their coefficient above the cutoff is exactly the displayed semiprime formula | Their signed filtered tail and its correlations with the multiple-large-prime class |
 | At least two prime factors at least 16 | Exact support and original signed coefficients retained | A joint source-scale estimate strong enough for the fixed cofinal floor |
 
 The classification has a finite cofactor space, not a claim of a percentage
 of RH proved. The source limit is still the original negative multiplicity.
-No reduced-source limit with all finite cofactor deletions assembled is
-claimed in this slice. The sufficient target remains a fixed real floor
+The [growing-cofactor continuation](zeta-riesz-growing-cofactor-decay.md)
+now assembles that finite deletion and proves a stronger unbounded-range
+deletion with the source retained. The sufficient target remains a fixed real floor
 strictly above minus one along a cofinal sequence of the combined carrier.
 
 ## Auxiliary analytic operations

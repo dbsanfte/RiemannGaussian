@@ -1658,5 +1658,7 @@ import RiemannGaussian.UniformBlockIndex
 import RiemannGaussian.CertifiedIntegerRangeTree
 import RiemannGaussian.ZetaRieszFixedCofactor
 import RiemannGaussian.ZetaRieszPrimeClasses
+import RiemannGaussian.ZetaRieszReducedCofactorSource
+import RiemannGaussian.ZetaRieszGrowingCofactor
 import RiemannGaussian.ZetaRieszFilteredCompletion
 import RiemannGaussian.ZetaPrimeNonlinearHalfplane
