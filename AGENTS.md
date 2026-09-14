@@ -2372,6 +2372,23 @@ identification is asserted. The original joint signed floor remains open.
 See `docs/zeta-riesz-euler-correction-energy.md` and supporting endpoint
 `euler-correction-decay`; keep the default whole-carrier endpoint unchanged.
 
+`ZetaRieszEulerCutoff`, `ZetaRieszEulerMoments` and
+`ZetaRieszEulerCorrectionDeletion` now remove the complete standalone Euler
+correction from the literal original normalized arithmetic band with error
+tending to zero. The physical phase costs linearly in the cutoff length;
+the original inverse-length normalization absorbs that cost. Exact Cauchy
+radii preserve every factorial moment and the full logarithm-marked fixed
+polynomial filter, with genuine frequency integrability. Its bound is
+proportional to `(N+1)*(u/R)^(N+1)`, and the original prime universe and actual
+growing cutoff are retained for all fixed P,y and 0<u<1. No hypothetical-zero
+premise is used for this deletion. The explicit residual keeps the leading
+Euler quotient and small-prime head, ordinary-prime compensation, mixed
+leading-correction interaction and entire signed completion boundary.
+Do not infer control of the mixed term from standalone correction decay.
+The joint independent floor remains open. See
+`docs/zeta-riesz-euler-correction-deletion.md` and endpoint
+`euler-correction-deletion`; keep the default whole-carrier endpoint unchanged.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Both Euler correction channels now have vanishing allowances.** Lean now bounds the complete Euler correction product, retaining every prime interaction. Its even paired integral and odd-channel energy tend uniformly to zero above a growing prime threshold on each fixed half-plane right of one half. The leading quotient, original filter and signed boundary remain unpaid; the full arithmetic floor is still open.
-Next: restore the physical cutoff phase and estimate the leading Euler response while retaining its odd coupling.
-[Current checked endpoint](RiemannGaussian/ZetaRieszEulerCorrectionEnergy.lean#L432)
-· [Proof details](docs/zeta-riesz-euler-correction-energy.md).
+**The standalone Euler correction now decays in the original arithmetic band.** Lean now carries the full correction through the growing physical cutoff, both Fourier phases and every fixed factorial filter. Its normalized allowance decays geometrically up to a linear order factor. Removing it changes the actual arithmetic band by a quantity tending to zero. The leading response, prime compensation, mixed term and signed boundary remain coupled in an explicit residual; its joint floor is open.
+Next: bound the explicit residual using correlations between its leading response, mixed correction and signed completion boundary.
+[Current checked endpoint](RiemannGaussian/ZetaRieszEulerCorrectionDeletion.lean#L322)
+· [Proof details](docs/zeta-riesz-euler-correction-deletion.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

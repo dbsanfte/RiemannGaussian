@@ -397,6 +397,46 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem integral_norm_actual_paired_correctionProduct_le_tail' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'euler-correction-deletion':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'literal original normalized arithmetic band' in scope
+                        assert 'actual growing Riesz length' in scope
+                        assert 'no hypothetical-zero premise' in scope
+                        assert 'mixed leading-correction term' in scope
+                        assert 'entire signed off-band completion boundary' in scope
+                        assert 'joint independent cofinal real floor above minus one and RH remain open' in scope
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        deletion = next(n for n in roots if n['id'].endswith('.tendsto_actual_band_sub_residual'))
+                        statement = ' '.join(deletion['statement'].split())
+                        assert all(t in statement for t in (
+                            '0 < u', 'u < 1', 'zetaArithmeticBand',
+                            'SquarefreeVaughanLogSource.length u N', 'residualResponse P N y', 'Tendsto'))
+                        assert 'NontrivialZetaZero' not in statement
+                        bound = next(n for n in roots if n['id'].endswith('.norm_scaled_filteredResponse_le'))
+                        assert all(t in ' '.join(bound['statement'].split()) for t in (
+                            '0 < R', '0 < a', 'a ≤ L', 'filterRadiusCost P R', '(u / R) ^ (N + 1)'))
+                        integrable = next(n for n in roots if n['id'].endswith('.integrable_residualKernel'))
+                        assert all(t in ' '.join(integrable['statement'].split()) for t in (
+                            '1 / 2 < s.re', 'IntegrableOn', 'residualKernel P N s L'))
+                        identity = next(n for n in roots if n['id'].endswith('.actual_band_eq_residual_response'))
+                        assert all(t in identity['statement'] for t in (
+                            'zetaArithmeticBand', 'residualResponse', 'filteredResponse', 'originalCorrectionPrimes'))
+                        assert deletion['source']['path'].endswith('ZetaRieszEulerCorrectionDeletion.lean')
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', deletion['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == deletion['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{deletion['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{deletion['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem tendsto_actual_band_sub_residual' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -413,6 +453,7 @@ def run(output, url=None, refresh_preview=False):
                                'exponentialCofactorBoundAndAdaptiveSource': True,
                                'generalTiltArithmeticBoundAndWholeSource': True,
                                'fullEulerCorrectionEvenAndOddBounds': True,
+                               'originalBandCorrectionDeletionAndExplicitResidual': True,
                                'scalarTiltAuditDistinguishedFromArithmeticBound': True})
                 page.close()
             browser.close()

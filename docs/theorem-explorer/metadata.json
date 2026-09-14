@@ -2370,7 +2370,10 @@
     "ZetaRieszCofactorTiltRate": "arithmetic",
     "ZetaRieszGeneralCofactorTilt": "arithmetic",
     "ZetaRieszEulerQuotient": "arithmetic",
-    "ZetaRieszEulerCorrectionEnergy": "arithmetic"
+    "ZetaRieszEulerCorrectionEnergy": "arithmetic",
+    "ZetaRieszEulerCutoff": "arithmetic",
+    "ZetaRieszEulerMoments": "arithmetic",
+    "ZetaRieszEulerCorrectionDeletion": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

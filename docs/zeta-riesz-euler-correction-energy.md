@@ -119,6 +119,15 @@ No RH proof, new zero-free region, numerical certificate or historical
 novelty is claimed. The correction estimates are supporting components of
 the [original signed-tail campaign](zeta-riesz-signed-fourier-tail.md).
 
+## Subsequent transport to the original band
+
+The [cutoff and factorial-filter continuation](zeta-riesz-euler-correction-deletion.md)
+now proves independent decay of the standalone correction in the literal
+original normalized arithmetic band. It retains the actual growing length and
+both phases. The leading response, its mixed interaction, ordinary-prime
+compensation and signed completion boundary remain together in an explicit
+residual; the component estimate does not establish their joint floor.
+
 ## Checked sources and audits
 
 [ZetaRieszEulerQuotient](../RiemannGaussian/ZetaRieszEulerQuotient.lean)

@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**140 modules.** Source links open the definitions, hypotheses and proofs.
+**143 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -77,7 +77,10 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszConditionedEnergy](../../RiemannGaussian/ZetaRieszConditionedEnergy.lean)
 - [ZetaRieszConditioningTransfer](../../RiemannGaussian/ZetaRieszConditioningTransfer.lean)
 - [ZetaRieszCriticalProfile](../../RiemannGaussian/ZetaRieszCriticalProfile.lean)
+- [ZetaRieszEulerCorrectionDeletion](../../RiemannGaussian/ZetaRieszEulerCorrectionDeletion.lean)
 - [ZetaRieszEulerCorrectionEnergy](../../RiemannGaussian/ZetaRieszEulerCorrectionEnergy.lean)
+- [ZetaRieszEulerCutoff](../../RiemannGaussian/ZetaRieszEulerCutoff.lean)
+- [ZetaRieszEulerMoments](../../RiemannGaussian/ZetaRieszEulerMoments.lean)
 - [ZetaRieszEulerQuotient](../../RiemannGaussian/ZetaRieszEulerQuotient.lean)
 - [ZetaRieszExponentialCofactor](../../RiemannGaussian/ZetaRieszExponentialCofactor.lean)
 - [ZetaRieszFilteredCompletion](../../RiemannGaussian/ZetaRieszFilteredCompletion.lean)

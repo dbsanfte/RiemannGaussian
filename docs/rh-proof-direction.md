@@ -83,6 +83,13 @@ allowances on each fixed closed half-plane right of one half. The
 coupling when the leading response is restored. That response, original
 factorial filter and signed completion boundary remain unpaid.
 
+The [original-band correction deletion](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=euler-correction-deletion)
+now transports that correction through the actual growing cutoff and full
+factorial filter. Its removal changes the original normalized arithmetic band
+by a quantity tending to zero. The [explicit residual](zeta-riesz-euler-correction-deletion.md)
+keeps the leading response, ordinary-prime compensation, mixed term and signed
+completion boundary; their joint floor remains open.
+
 The **Critical moments** view proves the actual global exponent
 `2k(u+1)-k(k+1)/2+eps` for every `k>=2,u>=k,eps>0` at all sufficiently
 large original endpoints. One uniform improvement above each fixed positive

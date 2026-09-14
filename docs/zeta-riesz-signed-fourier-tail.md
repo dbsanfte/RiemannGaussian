@@ -29,6 +29,13 @@ order of its correction has a vanishing even paired-integral allowance and
 odd-energy allowance. The leading quotient and both weighted couplings are
 retained; this does not bound the complete original carrier.
 
+The [original-band correction deletion](zeta-riesz-euler-correction-deletion.md)
+now carries this standalone correction through both physical phases, the actual
+growing length and all fixed factorial-filter orders. Its normalized error
+tends to zero independently of any zero hypothesis. The explicit residual
+retains the leading response, prime compensation, mixed interaction and signed
+completion boundary. Their joint signed floor remains the open target.
+
 ## The exact target
 
 For a hypothetical nontrivial zero \(\rho\) with \(\Re\rho>1/2\), set

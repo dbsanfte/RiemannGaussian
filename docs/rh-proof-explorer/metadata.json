@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 16,
-      "id": "paired-euler-correction-decay",
+      "sequence": 17,
+      "id": "original-euler-correction-deletion",
       "kind": "theorem",
-      "title": "Both Euler correction channels now have vanishing allowances.",
-      "body": "Lean now bounds the complete Euler correction product, retaining every prime interaction. Its even paired integral and odd-channel energy tend uniformly to zero above a growing prime threshold on each fixed half-plane right of one half. The leading quotient, original filter and signed boundary remain unpaid; the full arithmetic floor is still open.",
-      "next": "Next: restore the physical cutoff phase and estimate the leading Euler response while retaining its odd coupling.",
+      "title": "The standalone Euler correction now decays in the original arithmetic band.",
+      "body": "Lean now carries the full correction through the growing physical cutoff, both Fourier phases and every fixed factorial filter. Its normalized allowance decays geometrically up to a linear order factor. Removing it changes the actual arithmetic band by a quantity tending to zero. The leading response, prime compensation, mixed term and signed boundary remain coupled in an explicit residual; its joint floor is open.",
+      "next": "Next: bound the explicit residual using correlations between its leading response, mixed correction and signed completion boundary.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszEulerCorrectionEvenDecayTheorem"
+        "rieszEulerCorrectionBandDeletionTheorem"
       ],
-      "documentation": "docs/zeta-riesz-euler-correction-energy.md"
+      "documentation": "docs/zeta-riesz-euler-correction-deletion.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -477,6 +477,53 @@
         "rieszEulerCorrectionScope"
       ],
       "documentation": "docs/zeta-riesz-euler-correction-energy.md"
+    },
+    {
+      "id": "euler-correction-deletion",
+      "label": "Original band · full Euler correction deletion",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCutoffIntegralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCutoffTailTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCutoffNormalizedMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCutoffFilteredBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCutoffOriginalDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCorrectionBandIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCorrectionBandDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCorrectionResidualSplitTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCorrectionResidualIntegrableTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszEulerCorrectionDeletionScope"
+      ],
+      "documentation": "docs/zeta-riesz-euler-correction-deletion.md"
     }
   ],
   "scopes": {
@@ -1305,6 +1352,69 @@
       "summary": "Weighted Cauchy-Schwarz bounds the complete logarithm square with the finite prime-square mass and all actual logarithmic phases retained.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerCutoff.integral_norm_shiftedCorrection_div_le": {
+      "label": "Physical phase · full correction with linear length cost",
+      "summary": "Both reciprocal phases remain coupled. The complete correction is integrable with its prime-square log mass and an explicit cost linear in the physical length.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerCutoff.integral_norm_actual_shiftedCorrection_le_tail": {
+      "label": "Literal arithmetic labels · cutoff-phase tail bound",
+      "summary": "All finite labels above the fixed head and chosen threshold share one square-log tail allowance, uniform in height on each fixed closed half-plane.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerMoments.integral_norm_normalized_actual_moment_le": {
+      "label": "Every factorial order · cutoff-uniform integral bound",
+      "summary": "The original inverse-length normalization absorbs the phase cost. Exact Cauchy radii control every factorial moment with measurability and ordinary frequency integrability proved.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerMoments.norm_scaled_filteredResponse_le": {
+      "label": "Full fixed filter · polynomial times geometric allowance",
+      "summary": "The original logarithmic mark and all polynomial factorial offsets yield a bound proportional to (N+1)(u/R)^(N+1), uniform in the physical length above a positive base.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerMoments.tendsto_original_correction_response": {
+      "label": "Original prime universe · physical cutoff correction decays",
+      "summary": "For every fixed polynomial and height and every 0<u<1, the correction response on the actual primorial prime universe decays at the original growing Riesz length.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerCorrectionDeletion.actual_band_eq_residual_response": {
+      "label": "Literal original band · exact integral decomposition",
+      "summary": "The complete arithmetic band is exactly the explicit residual plus its independently bounded correction response. Both ordinary integrals and the finite filter exchange are justified.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerCorrectionDeletion.tendsto_actual_band_sub_residual": {
+      "label": "Actual arithmetic deletion · normalized error tends to zero",
+      "summary": "Removing the full standalone correction changes the original normalized arithmetic band by a quantity tending to zero, without any hypothetical-zero premise. The joint residual floor is open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerCorrectionDeletion.completedBand_eq_residual_add_correction": {
+      "label": "Explicit residual · leading, mixed and signed boundary retained",
+      "summary": "The remaining expression retains the small-prime head, finite Euler quotient, ordinary-prime compensation, mixed leading-correction interaction and entire signed completion boundary.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerCorrectionDeletion.integrable_residualKernel": {
+      "label": "Residual kernel · genuine frequency integrability",
+      "summary": "The residual is the original integrable band kernel minus the proved-integrable correction. No totalized divergent integral is used in the source decomposition.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
       "overview": true
     }
   }
