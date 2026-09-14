@@ -12,6 +12,8 @@ including the unequal degree-by-degree moduli used in congruencing.
 The signed version retains both sign classes and an arbitrary common
 translation, and now bounds the nonsingular block projection of the
 original moment equations when both tails lie in one coarse residue class.
+The complete coarse-conditioned count also covers original blocks sharing
+a residue modulo p^a, with distinct normalized next digits.
 The Vinogradov–Korobov zeta growth estimate
 and zero-free region remain unproved in this repository. No external
 analytic estimate is installed as an axiom or as a claimed discharged premise.
@@ -219,9 +221,10 @@ including all reductions between moduli. Specializing to `n=kb` and
 ```
 
 These are classical nonsingular congruencing ingredients. Their signed and
-translated form is proved next. The more general coarse conditioning in
+translated form is proved next. The more general coarse-conditioned count in
 [Wooley (2012), Section 4, Lemma 4.1](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf)
-and the ensuing high-moment iteration remain open.
+is now proved below for canonical residue representatives. The ensuing
+high-moment iteration remains open.
 
 ## Keeping the signs through reconstruction and conditioning
 
@@ -287,12 +290,56 @@ completions, for every fixed `y`. The tails may be arbitrary integer tuples;
 their existence implies the congruences. This counts the projected blocks,
 **not the number of their tail completions or the whole moment**.
 
-All these counts require distinct residues modulo `p`. They cover the
-signed, translated nonsingular base, not the full coarse-conditioned
-`a>0` statement of Wooley's lemma. Singular block conditioning, tail
-completion bounds, the high-moment iteration and quantitative joint
-resonance control remain open. No exponential-sum saving, new zeta-growth
-estimate, VK zero-free region or RH proof is inferred from this slice.
+These base counts require distinct residues modulo `p`. The next theorem
+also covers a common coarse residue class, including `a>0`.
+
+## Original tuples in a common coarse residue class
+
+[VinogradovCoarseCongruence.conditioned_residue_card_le](../RiemannGaussian/VinogradovCoarseCongruence.lean)
+proves, for `1≤k<p`, `0≤a≤b`, every fixed sign pattern, integer `eta`,
+natural residue `xi` and integer target vector `m`,
+
+```math
+\#\left\{x\in\{0,\ldots,p^{kb}-1\}^k:
+\begin{array}{l}
+x_i\equiv\xi\pmod{p^a}\quad(1\le i\le k),\\
+\lfloor x_i/p^a\rfloor\not\equiv\lfloor x_l/p^a\rfloor
+  \pmod p\quad(i\ne l),\\
+\sum_i\epsilon_i(x_i-\eta)^j\equiv m_j\pmod{p^{jb}}
+  \quad(1\le j\le k)
+\end{array}\right\}
+\le r_+!\,r_-!\,p^{(a+b)k(k-1)/2}.
+```
+
+The two costs are explicit. Refining the original degree moduli to the
+complete modulus spends `b*k*(k-1)/2` digits. The full weighted translation
+then permits division by the common scale `p^a`, spending another
+`a*k*(k-1)/2` digits. No lower-degree term is discarded. The quotient map
+is injective within the retained residue class and reconstructs every
+original integer exactly, so this is a count of the original tuples.
+Division in the theorem is **natural-number division before reduction
+modulo `p`**, not field division.
+
+`coarse_preimage_le` keeps correlated complete targets before either
+coordinate product bound. `colourFactorial_le_factorial` proves
+`r_+!*r_-!≤k!`, and `conditioned_residue_card_le_factorial` recovers the
+classical uniform factorial allowance from
+[Wooley's Lemma 4.1](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
+Our statement uses canonical representatives `0,...,p^(kb)-1`, arbitrary
+translation and residue parameters, and also permits `a=b`. No historical
+novelty is claimed.
+
+The terminal theorem `conditioned_moment_card_le` applies this count to the
+original complete signed moment equations when both tails lie in `eta`
+modulo `p^b`. It counts the admissible original residue blocks for each
+fixed opposite block; it does not count their tail completions.
+
+The common-class configurations above can be singular modulo `p` before
+division. The count still requires their normalized next digits to be
+distinct. Partitioning arbitrary singular configurations, counting tail
+completions, the high-moment iteration and quantitative joint resonance
+control remain open. No exponential-sum saving, new zeta-growth estimate,
+VK zero-free region or RH proof follows yet.
 
 ## Shifted correlations and bounded complex weights
 

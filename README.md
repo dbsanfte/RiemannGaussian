@@ -111,14 +111,15 @@ Make the proved region cover every applicable benchmark, preserving each height 
 
 ## Latest Update
 
-**The moment-to-congruence count now preserves signs and translation.**
-Lean proves that the full signed moment vector determines a nonsingular
-tuple up to permutations within each sign class. The resulting smaller
-factorial allowance survives every prime-power precision and applies to
-blocks of the original moment equations with conditioned tails. Singular
-blocks, tail completion counts and the high-moment iteration remain open;
-the zero-free region is unchanged. The proved 67.31% simple-zero certificate
-retains separate optional verification and an unevaluated starting height.
+**The signed congruence count now covers common coarse residue classes.**
+Lean proves the count for original tuples sharing a residue modulo a prime
+power, provided their normalized next digits are distinct. Exact translation
+and integer quotient reconstruction retain both sign classes and apply the
+bound to blocks of the original moment equations. Arbitrary singular
+configurations, tail completion counts and the high-moment iteration remain
+open; the zero-free region is unchanged. The proved 67.31% simple-zero
+certificate retains separate optional verification and an unevaluated
+starting height.
 [Certificate and audit](docs/numerical-certificate.md)
 · [Current region](docs/zeta-unified-zero-free.md)
 · [VK proof status](docs/vinogradov-korobov-framework.md).

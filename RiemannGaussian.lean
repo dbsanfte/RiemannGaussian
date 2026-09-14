@@ -1497,6 +1497,7 @@ import RiemannGaussian.VinogradovMeanValue
 import RiemannGaussian.VinogradovShiftedMoment
 import RiemannGaussian.VinogradovPowerSumRigidity
 import RiemannGaussian.VinogradovWeightedLifting
+import RiemannGaussian.VinogradovCoarseCongruence
 import RiemannGaussian.VinogradovConditionedMoment
 import RiemannGaussian.VinogradovSignedCongruence
 import RiemannGaussian.VinogradovSignedRigidity

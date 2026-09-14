@@ -95,7 +95,7 @@
     },
     {
       "id": "vk-phase",
-      "label": "Vinogradov–Korobov · signed congruencing and resonance",
+      "label": "Vinogradov–Korobov · coarse congruencing and resonance",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -340,6 +340,30 @@
         [
           "gaussianPhaseBandToolkit",
           "vkConditionedBlockTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCoarseTranslationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCoarseTargetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCoarseReconstructionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCoarseResidueTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCoarseFactorialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCoarseMomentTheorem"
         ]
       ],
       "scopePath": [
@@ -2674,6 +2698,36 @@
     },
     "RiemannGaussian.VinogradovConditionedMoment.conditioned_block_card_le": {
       "label": "The original moment equations receive a nonsingular block count",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovCoarseCongruence.coarse_power_difference_dvd": {
+      "label": "Dividing the common residue scale retains exact degree precision",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovCoarseCongruence.coarse_preimage_le": {
+      "label": "Coarse classes retain correlated complete targets",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovCoarseCongruence.coarse_quotient_reconstruction": {
+      "label": "The normalized quotient reconstructs every original integer",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovCoarseCongruence.conditioned_residue_card_le": {
+      "label": "Original coarse residue tuples receive the signed triangular bound",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovCoarseCongruence.conditioned_residue_card_le_factorial": {
+      "label": "The classical factorial bound follows from the retained sign count",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovCoarseCongruence.conditioned_moment_card_le": {
+      "label": "Original moment blocks receive the coarse-conditioned count",
       "documentation": "docs/vinogradov-korobov-framework.md",
       "overview": true
     }

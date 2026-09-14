@@ -1822,10 +1822,22 @@ tail tuples lie in eta modulo p^b. Its `conditioned_block_card_le` bounds
 the nonsingular residue-block projection of those original moment equations.
 It does not count tail completions or the whole moment. Keep the exact
 sign partition and correlated targets upstream of their product bounds.
-These are classical congruencing ingredients, not a historical novelty
-claim or a proof of Wooley's full coarse-conditioned a>0 lemma. Singular
-block conditioning, tail completion bounds and the high-moment iteration
-remain open. Stronger high-order moment bounds
+`VinogradovCoarseCongruence` now pays the full coarse precision cost.
+For 1<=k<p, a<=b, a common residue xi modulo p^a, and distinct normalized
+next digits, `conditioned_residue_card_le` bounds the original canonical
+tuples by p^((a+b)*k*(k-1)/2)*r+!*r-!. Full weighted translation retains
+all lower degrees; integer quotient reconstruction and its injectivity
+connect the normalized count back to the actual tuples. Quotient division
+must occur in Nat before casting to ZMod; field division by p is not this
+condition. Correlated complete targets remain upstream. The proved
+colour-factorial comparison supplies the classical k! allowance, and
+`conditioned_moment_card_le` gives the corresponding actual moment-block
+projection. This is the coarse-conditioned congruence counting ingredient,
+including a>0; do not continue listing that whole count as open. The
+canonical representatives are 0,...,p^(k*b)-1 and a=b is also permitted.
+These are classical ingredients, not a historical novelty claim. Arbitrary
+singular configurations still need partitioning; tail completion bounds
+and the high-moment iteration remain open. Stronger high-order moment bounds
 and quantitative joint resonance control,
 the required exponential-sum saving, zeta growth and the VK zero-free region
 remain unproved here. Do not add a VK curve to the proved union or promote a
