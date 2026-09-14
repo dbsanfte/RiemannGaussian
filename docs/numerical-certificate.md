@@ -11,8 +11,12 @@ The closed theorems are
 [`simpleCritical_6731_cumulative_eventually` and
 `simpleCritical_6731_eventually`](../RiemannGaussian/External/Zeta23SevenWindowIntegerCertificate.lean).
 They have no remaining numerical, arithmetic or analytic premise.
-This is a local Lean result; no remote CI verdict is claimed for the
-uncommitted worktree.
+The complete optional verification also passed on hosted runners in
+[run 34786948164](https://github.com/dbsanfte/RiemannGaussian/actions/runs/34786948164),
+at source revision `fdd9c82b87c298302ac5f37560550c1eca11135b`. That run
+checked all 21 data modules and 231 cover groups, assembled both literal
+endpoints, passed the transitive axiom audit, and rejected a conditional
+replacement without writing a success report.
 
 The exact coefficient before rounding is
 
@@ -116,9 +120,13 @@ Heartbeats report available
 memory, swap and disk space. A terminated verifier stops its owned compiler
 process group, records an interrupted verdict and removes success markers.
 The interruption regression also checks an actual spawned descendant.
-The first hosted attempt terminated during four concurrent anchor builds;
-the reduced concurrency is being validated. The complete local certificate
-audit remains a separate result.
+The first hosted attempt terminated during four concurrent anchor builds.
+The later complete hosted run passed with reduced concurrency. Its snapshot
+used serial elaboration throughout the project; the subsequent library
+configuration confines that setting to optional data. The certificate's
+Lean proof sources were unchanged by that scheduling correction. The hosted
+verdict remains attached to the exact revision above, with its own generated
+helper inventory and verification-input digest.
 
 Cold checks are split across jobs because of the
 [six-hour GitHub-hosted job limit](https://docs.github.com/en/actions/reference/limits).
@@ -127,8 +135,12 @@ from the same workflow run, so inter-job correctness does not depend on
 cache retention. The final job gathers those artifacts and checks
 the complete selected target again. Successful data or shard jobs are labelled
 partial; they do not certify the full result. Logs, input digest and source
-revision are uploaded by each job. The full workflow has not yet been
-validated on hosted runners.
+revision are uploaded by each job. The complete hosted run passed with input digest
+`06c5604c1fbb0199a7453e223109b4ed51c6bfb2493fa3a41af9e8d578b8c06d`.
+Its audit covered 432,874 declarations and 167,513 theorems in 304 compiled
+project modules, using only the three permitted standard axioms. Digests
+include build and verification configuration, so the later scheduling
+correction has a different digest even with identical proof declarations.
 
 The audit explicitly type-checks the unconditional literal dyadic and
 cumulative statements and inspects their proof axioms before writing a

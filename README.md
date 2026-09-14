@@ -111,18 +111,18 @@ Make the proved region cover every applicable benchmark, preserving each height 
 
 ## Latest Update
 
-**The original Riesz carrier now has a direct conditioned-energy bound.**
-Lean preserves its signs, logarithmic phase, filter and cutoff in an exact
-Fourier lift, then applies signed Vinogradov congruencing to actual mixed
-moments. The pointwise sampling and normalization costs are explicit;
-the original source limit is retained. Bounding those moments strongly
-enough remains open, and the zero-free region is unchanged.
-The proved 67.31% simple-zero certificate retains separate optional
-verification and an unevaluated starting height.
-[Direct Lean bridge](RiemannGaussian/ZetaRieszConditionedEnergy.lean)
+**The Riesz bound now has explicit normalization and mixed-moment interpolation.**
+Lean counts the actual nonsingular blocks and uses their proved mass in the
+original carrier bound. A general Hölder theorem then separates its actual
+weighted mixed moments into higher Riesz moments and reverse mixed moments,
+retaining the original signs, phases and cutoff. Their quantitative saving
+and the full VK conditioning iteration remain open; the zero-free region
+is unchanged. The complete 67.31% certificate has also
+[passed hosted optional verification](https://github.com/dbsanfte/RiemannGaussian/actions/runs/34786948164).
+[Latest Lean bound](RiemannGaussian/ZetaRieszInterpolation.lean)
 · [Bound and remaining work](docs/zeta-riesz-conditioned-energy.md)
 · [VK framework](docs/vinogradov-korobov-framework.md)
-· [Certificate](docs/numerical-certificate.md).
+· [Certificate scope and audit](docs/numerical-certificate.md).
 
 ## Notable Formalisations
 

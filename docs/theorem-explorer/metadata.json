@@ -540,6 +540,38 @@
         [
           "gaussianPhaseBandToolkit",
           "vkRieszSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkBlockMassInjectionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkBlockMassCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkBlockRealMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkMixedInterpolationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkReverseMixedMaximumTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszExplicitBlockTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszInterpolationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszInterpolatedBandTheorem"
         ]
       ],
       "scopePath": [
@@ -1085,7 +1117,7 @@
     },
     {
       "id": "riesz-vk",
-      "label": "Riesz carrier · signed conditioned-energy bound",
+      "label": "Riesz carrier · explicit mass and interpolation",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1118,6 +1150,38 @@
         [
           "gaussianPhaseBandToolkit",
           "vkRieszSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkBlockMassInjectionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkBlockMassCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkBlockRealMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkMixedInterpolationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkReverseMixedMaximumTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszExplicitBlockTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszInterpolationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszInterpolatedBandTheorem"
         ]
       ],
       "scopePath": [
@@ -1520,7 +1584,9 @@
     "ZetaSquarefreeGaussianRegionUnion": "arithmetic",
     "ZetaUnifiedZeroFree": "region",
     "ZetaSquarefreeUnifiedRegion": "arithmetic",
-    "ZetaRieszConditionedEnergy": "arithmetic"
+    "ZetaRieszConditionedEnergy": "arithmetic",
+    "ZetaRieszBlockMass": "arithmetic",
+    "ZetaRieszInterpolation": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
@@ -3088,6 +3154,46 @@
     },
     "RiemannGaussian.ZetaRieszConditionedEnergy.tendsto_actual_residue_source": {
       "label": "The original negative-multiplicity source survives at phase zero",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovBlockMass.blockFromDigits_injective": {
+      "label": "Original blocks reconstruct every digit and quotient choice",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovBlockMass.conditionedWindow_floor_card_ge": {
+      "label": "The actual block count has an explicit falling-factorial floor bound",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovBlockMass.conditionedWindow_real_mass_ge": {
+      "label": "Actual block mass grows at least as an explicit multiple of X to the k",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovInterpolation.mixed_interpolation": {
+      "label": "Actual mixed moments interpolate with every analytic hypothesis discharged",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovInterpolation.mixed_le_higher_reverse_max": {
+      "label": "The complete reverse-moment maximum retains the original functions",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszBlockMass.actual_band_le_explicit_block_mass": {
+      "label": "The original carrier uses a constructive explicit block denominator",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszInterpolation.rieszMomentMaximum_le_interpolated": {
+      "label": "The actual Riesz mixed maximum reaches higher and reverse moments",
+      "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszInterpolation.actual_band_le_interpolated_moments": {
+      "label": "The literal Riesz band receives the full interpolated bound",
       "documentation": "docs/zeta-riesz-conditioned-energy.md",
       "overview": true
     }

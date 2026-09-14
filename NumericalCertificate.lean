@@ -37,5 +37,6 @@ import RiemannGaussian.MontgomeryTaylorRangeTable
 
 Build explicitly with `lake build NumericalCertificate --wfail`. The expensive
 tables and eventual exhaustive cover are excluded from the default library.
-The 6731/10000 endpoint remains a candidate until its complete cover is proved.
+The complete cover proves the 6731/10000 endpoint for literal eventual dyadic
+and cumulative simple critical-line zero counts.
 -/

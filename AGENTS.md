@@ -1890,8 +1890,9 @@ r+!*r-!*p^((a+b)*k*(k-1)/2)*(p^(k*b-a))^k times the actual maximum over
 canonical finer residues of integral(|f_(p^(kb))|^(2k)*|Tail|^2). No unproved
 moment-budget premise remains. The full correlated tail polynomial survives,
 and the exact fibre energies remain upstream of the maximum. Do not keep
-listing this factorization or first finite Holder bound as open. Subsequent
-interpolation, arbitrary singular conditioning and the stronger high-moment
+listing this factorization or first finite Holder bound as open. The analytic
+interpolation is now proved as described below; the higher homogeneous
+comparison, arbitrary singular conditioning and stronger high-moment
 iteration remain open.
 `VinogradovFourierEvaluation` now keeps complete complex frequency fibres
 and proves point evaluation is at most attained-frequency count times the
@@ -1910,6 +1911,24 @@ the common length by log(n)/2, silently delete prime corrections, identify
 the logarithmic phase with a polynomial, or treat torus energy as a free
 pointwise estimate. The actual weighted mixed-moment saving after all costs
 remains open. No new zero-free width follows from this bridge.
+`VinogradovBlockMass` now injects every next-digit embedding and complete
+higher quotient choice into the actual original block family. It gives
+C>=p.descFactorial(k)*floor(X/p^(a+1))^k and the explicit real lower bound
+p.descFactorial(k)*(X/(2*p^(a+1)))^k when a complete window fits.
+`ZetaRieszBlockMass.actual_band_le_explicit_block_mass` uses this proved
+positive mass in the original carrier bound. `VinogradovInterpolation`
+proves the actual continuous Holder step (Wooley6.8), including u=1,
+zero values and all Lp conditions. `ZetaRieszInterpolation` applies it to
+the original weighted Riesz tail: M_eta<=H_eta^(1-1/r)*V_eta^(1/r), where
+H_eta is the actual (2r+2)-moment and V_eta is the actual maximum of
+integral |R_eta|^2*|f_fine|^(2kr). `actual_band_le_interpolated_moments`
+retains all source weights/cutoffs and the explicit block denominator.
+Do not keep listing this analytic interpolation or the block normalization
+as open. The quantitative weighted-moment saving, homogeneous comparison
+for higher conditioned moments, singular conditioning and full iteration
+remain open. The reverse mixed moment has a squared Riesz factor; it is
+not assumed controlled. No new universal zero-free width is claimed.
+
  Stronger high-order moment bounds and
 quantitative joint resonance control,
 the required exponential-sum saving, zeta growth and the VK zero-free region

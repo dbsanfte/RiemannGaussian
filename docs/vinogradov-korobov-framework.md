@@ -555,8 +555,8 @@ This is the whole-moment transfer underlying
 [Wooley (2012), equations (6.4)–(6.6), pp. 1600–1601](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
 It forces matching finer block residues in the surviving energies. The
 actual product identification and first finite Hölder bound follow next;
-the subsequent interpolation and conditioning iteration and the required
-high-moment saving remain open. No zero-free width follows yet.
+the subsequent homogeneous-moment comparison, conditioning iteration and
+required high-moment saving remain open. No zero-free width follows yet.
 
 ## Literal products and the actual mixed-moment maximum
 
@@ -612,9 +612,15 @@ their complete residue restrictions and complex weights.
 
 This proves the product and first finite Hölder ingredients following
 [Wooley (2012), equation (6.6), pp. 1601–1602](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
-The next interpolation must combine the remaining mixed moment with the
-normalized homogeneous moment and the next conditioned scale. Arbitrary
-singular conditioning and the full high-moment iteration also remain open.
+The analytic mixed-moment interpolation is now proved in
+[VinogradovInterpolation](../RiemannGaussian/VinogradovInterpolation.lean),
+including zero values, the first-moment endpoint and all Lp requirements.
+It applies to arbitrary continuous complex functions. The actual Riesz
+carrier now receives that interpolation together with a constructive
+falling-factorial and floor lower bound on its original block mass;
+see the [explicit interpolated carrier bound](zeta-riesz-conditioned-energy.md).
+The higher conditioned moment still needs its homogeneous comparison, and
+arbitrary singular conditioning and the full high-moment iteration remain open.
 This is a classical finite congruencing ingredient, not a new VK growth
 estimate or a larger proved zero-free region.
 
