@@ -572,6 +572,34 @@
         [
           "gaussianPhaseBandToolkit",
           "vkRieszInterpolatedBandTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkConditionedFlattenTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkConditionedShiftTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkConditionedWeightedShiftTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkHigherConditionedMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExactConditionedTailTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkConditionedMaximumTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFiniteCongruencingStepTheorem"
         ]
       ],
       "scopePath": [
@@ -3195,6 +3223,41 @@
     "RiemannGaussian.ZetaRieszInterpolation.actual_band_le_interpolated_moments": {
       "label": "The literal Riesz band receives the full interpolated bound",
       "documentation": "docs/zeta-riesz-conditioned-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditionedHigherMoment.flatten_frequency": {
+      "label": "Every original signed block frequency survives flattening",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditionedHigherMoment.conditioned_shift_count_le": {
+      "label": "Conditioned collisions inject before signs cross",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditionedHigherMoment.conditioned_weighted_shift_le": {
+      "label": "Joint complex weights retain the full shifted count",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditionedHigherMoment.conditioned_moment_le": {
+      "label": "The higher conditioned moment reaches the actual quotient mean value",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovCongruencingStep.conditioned_power_tail_eq": {
+      "label": "Exact tail weights preserve every nonsingular block",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovCongruencingStep.fine_conditioned_max_le": {
+      "label": "The actual finer maximum receives the homogeneous comparison",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovCongruencingStep.conditioned_congruencing_step": {
+      "label": "The finite signed energy transfers from a,b to b,kb",
+      "documentation": "docs/vinogradov-korobov-framework.md",
       "overview": true
     }
   }

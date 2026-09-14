@@ -111,18 +111,15 @@ Make the proved region cover every applicable benchmark, preserving each height 
 
 ## Latest Update
 
-**The Riesz bound now has explicit normalization and mixed-moment interpolation.**
-Lean counts the actual nonsingular blocks and uses their proved mass in the
-original carrier bound. A general Hölder theorem then separates its actual
-weighted mixed moments into higher Riesz moments and reverse mixed moments,
-retaining the original signs, phases and cutoff. Their quantitative saving
-and the full VK conditioning iteration remain open; the zero-free region
-is unchanged. The complete 67.31% certificate has also
-[passed hosted optional verification](https://github.com/dbsanfte/RiemannGaussian/actions/runs/34786948164).
-[Latest Lean bound](RiemannGaussian/ZetaRieszInterpolation.lean)
-· [Bound and remaining work](docs/zeta-riesz-conditioned-energy.md)
-· [VK framework](docs/vinogradov-korobov-framework.md)
-· [Certificate scope and audit](docs/numerical-certificate.md).
+**The finite signed congruencing step is now proved in Lean.**
+The original conditioned energy transfers to a finer residue scale and a
+homogeneous mean value, with every counting and rounding cost explicit.
+Exact tail weights preserve the original signs and block restrictions.
+It extends the machinery used by the [Riesz carrier bridge](docs/zeta-riesz-conditioned-energy.md).
+Singular conditioning, the full high-moment iteration and the Riesz weighted
+saving remain open; the proved zero-free region is unchanged.
+[Latest Lean theorem](RiemannGaussian/VinogradovCongruencingStep.lean)
+· [Formula and remaining work](docs/vinogradov-korobov-framework.md#finite-signed-congruencing-step).
 
 ## Notable Formalisations
 

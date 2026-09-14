@@ -1509,6 +1509,8 @@ import RiemannGaussian.VinogradovFourierEvaluation
 import RiemannGaussian.ZetaRieszConditionedEnergy
 import RiemannGaussian.VinogradovBlockMass
 import RiemannGaussian.VinogradovInterpolation
+import RiemannGaussian.VinogradovConditionedHigherMoment
+import RiemannGaussian.VinogradovCongruencingStep
 import RiemannGaussian.ZetaRieszBlockMass
 import RiemannGaussian.ZetaRieszInterpolation
 import RiemannGaussian.VinogradovAffineMoment

@@ -202,8 +202,9 @@ moments**, together with the explicit sampling, congruence and block-count
 costs. Generic mean-value bounds can be applied through this interface,
 but taking coefficient absolute values would lose the signed arithmetic
 correlations retained by its Gram identities. No saving beyond those costs
-has yet been proved. The remaining VK homogeneous-moment comparison, singular conditioning
-and high-moment iteration remain open as documented in the
+has yet been proved. The higher conditioned homogeneous comparison and finite
+VK congruencing step are now proved. Singular conditioning and the full
+high-moment iteration remain open as documented in the
 [VK framework](vinogradov-korobov-framework.md).
 
 The finite Fourier and congruencing tools are classical ingredients. This

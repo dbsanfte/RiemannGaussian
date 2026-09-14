@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**91 modules.** Source links open the definitions, hypotheses and proofs.
+**93 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [DerivativeOrderComparison](../../RiemannGaussian/DerivativeOrderComparison.lean)
@@ -68,8 +68,10 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovBlockMass](../../RiemannGaussian/VinogradovBlockMass.lean)
 - [VinogradovCoarseCongruence](../../RiemannGaussian/VinogradovCoarseCongruence.lean)
 - [VinogradovConditionedCompletion](../../RiemannGaussian/VinogradovConditionedCompletion.lean)
+- [VinogradovConditionedHigherMoment](../../RiemannGaussian/VinogradovConditionedHigherMoment.lean)
 - [VinogradovConditionedMoment](../../RiemannGaussian/VinogradovConditionedMoment.lean)
 - [VinogradovCongruenceEnergy](../../RiemannGaussian/VinogradovCongruenceEnergy.lean)
+- [VinogradovCongruencingStep](../../RiemannGaussian/VinogradovCongruencingStep.lean)
 - [VinogradovFourierEvaluation](../../RiemannGaussian/VinogradovFourierEvaluation.lean)
 - [VinogradovGaussianBounds](../../RiemannGaussian/VinogradovGaussianBounds.lean)
 - [VinogradovGaussianCentering](../../RiemannGaussian/VinogradovGaussianCentering.lean)

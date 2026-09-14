@@ -1891,9 +1891,9 @@ canonical finer residues of integral(|f_(p^(kb))|^(2k)*|Tail|^2). No unproved
 moment-budget premise remains. The full correlated tail polynomial survives,
 and the exact fibre energies remain upstream of the maximum. Do not keep
 listing this factorization or first finite Holder bound as open. The analytic
-interpolation is now proved as described below; the higher homogeneous
-comparison, arbitrary singular conditioning and stronger high-moment
-iteration remain open.
+interpolation and higher homogeneous comparison are now proved as described
+below; arbitrary singular conditioning and stronger high-moment iteration
+remain open.
 `VinogradovFourierEvaluation` now keeps complete complex frequency fibres
 and proves point evaluation is at most attained-frequency count times the
 actual energy. `ZetaRieszConditionedEnergy` applies signed congruencing
@@ -1924,12 +1924,30 @@ H_eta is the actual (2r+2)-moment and V_eta is the actual maximum of
 integral |R_eta|^2*|f_fine|^(2kr). `actual_band_le_interpolated_moments`
 retains all source weights/cutoffs and the explicit block denominator.
 Do not keep listing this analytic interpolation or the block normalization
-as open. The quantitative weighted-moment saving, homogeneous comparison
-for higher conditioned moments, singular conditioning and full iteration
-remain open. The reverse mixed moment has a squared Riesz factor; it is
-not assumed controlled. No new universal zero-free width is claimed.
+as open. The quantitative weighted-moment saving, singular conditioning
+and full iteration remain open. The reverse mixed moment has a squared
+Riesz factor; it is not assumed controlled. No new universal zero-free width
+is claimed.
 
- Stronger high-order moment bounds and
+`VinogradovConditionedHigherMoment` now injects the original conditioned
+blocks into full signed residue tuples, preserving every power coordinate.
+The count comparison precedes sign crossing; no within-block nonsingularity
+invariance under crossing is assumed. Every shifted count and bounded joint
+complex weight receives J_(u*k,k)(floor(X/p^b)+1), and so does the actual
+higher conditioned moment. `VinogradovCongruencingStep` retains all original
+block restrictions in an exact image tail weight. Its
+`conditioned_congruencing_step` transfers the actual energy K_(a,b) to
+J_((u+1)*k,k)(floor(X/p^b)+1)^(1-1/u) times the actual reverse mixed maximum
+I_(b,k*b)^(1/u), paying the explicit signed congruence and residue-count cost.
+The statement keeps independent block colours, every finite endpoint and all
+rounding. This is the finite inequality underlying Wooley (2012), Lemma 6.1;
+it assumes no moment budget. Do not list the higher homogeneous comparison
+or this finite transfer as open. Arbitrary singular conditioning and the
+complete high-moment iteration remain open, as does the quantitative saving
+for the original weighted Riesz moments after all sampling costs. No new
+zero-free width follows from this finite step.
+
+Stronger high-order moment bounds and
 quantitative joint resonance control,
 the required exponential-sum saving, zeta growth and the VK zero-free region
 remain unproved here. Do not add a VK curve to the proved union or promote a

@@ -486,9 +486,9 @@ The source uses the uniform `k!` allowance; the Lean statement retains the
 actual sign factorial. The full target fibre, all residue coordinates and
 original complex products remain available upstream. The exact target
 partition, its whole-moment energy transfer, exact product factorization
-and first finite Hölder estimate are now proved below. Subsequent
-interpolation, singular conditioning and high-moment iteration still need
-proofs. No new zero-free width follows yet, and no
+and both Hölder steps are now proved below, along with the higher
+homogeneous comparison and finite congruencing transfer. Singular
+conditioning and the full high-moment iteration still need proofs. No new zero-free width follows yet, and no
 historical novelty is claimed for these classical ingredients.
 
 ## Exact whole-moment partition and finer-residue energy
@@ -555,8 +555,8 @@ This is the whole-moment transfer underlying
 [Wooley (2012), equations (6.4)–(6.6), pp. 1600–1601](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
 It forces matching finer block residues in the surviving energies. The
 actual product identification and first finite Hölder bound follow next;
-the subsequent homogeneous-moment comparison, conditioning iteration and
-required high-moment saving remain open. No zero-free width follows yet.
+the higher homogeneous comparison and finite congruencing step are proved
+below. Singular conditioning and the required high-moment saving remain open. No zero-free width follows yet.
 
 ## Literal products and the actual mixed-moment maximum
 
@@ -619,10 +619,72 @@ It applies to arbitrary continuous complex functions. The actual Riesz
 carrier now receives that interpolation together with a constructive
 falling-factorial and floor lower bound on its original block mass;
 see the [explicit interpolated carrier bound](zeta-riesz-conditioned-energy.md).
-The higher conditioned moment still needs its homogeneous comparison, and
-arbitrary singular conditioning and the full high-moment iteration remain open.
+The higher homogeneous comparison and finite congruencing step are now
+proved below. Arbitrary singular conditioning and the full high-moment
+iteration remain open.
 This is a classical finite congruencing ingredient, not a new VK growth
 estimate or a larger proved zero-free region.
+
+## Finite signed congruencing step
+
+[VinogradovConditionedHigherMoment](../RiemannGaussian/VinogradovConditionedHigherMoment.lean)
+injects `u` original conditioned blocks into one tuple of `u*k` actual
+residue-window entries. Flattening preserves every signed power coordinate.
+The original family is bounded by the full signed family **before** crossing
+negative coordinates, so the proof does not assume that crossing preserves
+within-block nonsingularity. For every full shifted target, this gives the
+literal homogeneous majorant at the quotient length. In particular,
+
+```math
+\int |F_b^\tau(\alpha;\eta)|^{2u}\,d\alpha
+\le J_{uk,k}\!\left(\left\lfloor X/p^b\right\rfloor+1\right).
+```
+
+Joint complex tuple weights bounded in norm by one receive the same shifted
+majorant. The exact frequency identity remains available upstream.
+
+[VinogradovCongruencingStep](../RiemannGaussian/VinogradovCongruencingStep.lean)
+then constructs a zero-or-one image weight on full tail tuples. Its
+polynomial equals `(F_b^tau)^u` exactly, retaining every original block
+restriction and sign. Define the **actual** reverse mixed maximum by
+
+```math
+I_{b,kb}^{\tau}(\eta)=
+\max_{0\le\zeta\lt p^{kb}}\int
+ |F_b^\tau(\alpha;\eta)|^2
+ |f_{p^{kb},1}(\alpha;\zeta)|^{2ku}\,d\alpha.
+```
+
+For prime `p`, `1<=k<p`, `a<b` and `u>=1`, the terminal theorem
+`conditioned_congruencing_step` proves
+
+```math
+\boxed{\begin{aligned}
+K_{a,b}^{\epsilon,\tau}(\xi,\eta)
+&:=\int|F_a^\epsilon(\alpha;\xi)|^2
+          |F_b^\tau(\alpha;\eta)|^{2u}\,d\alpha\\
+&\le\Gamma_\epsilon\,
+ J_{(u+1)k,k}\!\left(\left\lfloor X/p^b\right\rfloor+1\right)^{1-1/u}
+ I_{b,kb}^{\tau}(\eta)^{1/u},\\
+\Gamma_\epsilon
+&=r_+!\,r_-!\,p^{(a+b)k(k-1)/2}\bigl(p^{kb-a}\bigr)^k.
+\end{aligned}}
+```
+
+Here `r_+` and `r_-` count the signs in the first block. The two blocks
+may have different sign patterns. Every original entry lies in `1,...,X`;
+`eta` is reduced to its canonical class modulo `p^b`. Empty windows, quotient
+rounding and the endpoint `u=1` are included. No moment bound is supplied
+as a hypothesis.
+
+This is the finite inequality underlying
+[Wooley (2012), Lemma 6.1 and equations (6.7)–(6.8), pp. 1600–1602](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf),
+with explicit finite-window conventions and the retained sign factorial.
+It completes a congruencing transfer, not its iteration: arbitrary singular
+conditioning, a quantitative high-moment saving and the required zeta growth
+estimate remain open. The Riesz bridge preserves its original weighted
+moments; these are not identified with the unweighted conditioned moments
+in this theorem. No larger zero-free region is claimed from this step.
 
 ## Direct application to the original Riesz carrier
 
