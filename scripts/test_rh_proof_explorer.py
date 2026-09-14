@@ -162,6 +162,35 @@ def run(output, url=None, refresh_preview=False):
                         assert 'intermediate conditioned energy is identical' in scope
                         statement = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]].statement')
                         assert 'conditioningAllowance' in statement and 'eps' in statement
+                    if endpoint['id'] == 'signed-fourier-tail':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'first-order prime-phase exponential' in scope and 'remain open' in scope
+                        assert 'ordinary-prime correction' in scope and 'signed first moment' in scope
+                        root_data = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        carrier = next(n for n in root_data if n['id'].endswith('.actual_physical_band_eq_fourierResponse'))
+                        assert all(term in carrier['statement'] for term in (
+                            'zetaArithmeticBand', 'zetaPrimeFilterKernel P N', 'zetaPrimeLogBand N', 'physicalCutoff u N'))
+                        remainder = next(n for n in root_data if n['id'].endswith('.integral_norm_actual_logRemainder_div_le'))
+                        assert all(term in remainder['statement'] for term in ('16 ≤ p', '1 / 2 < s.re', '∫', 'logRemainder', '∑\''))
+                        criterion = next(n for n in root_data if n['id'].endswith('.false_of_cofinal_original_riesz_floor'))
+                        assert all(term in criterion['statement'] for term in ('c < 1 →', '∃ᶠ', 'zetaRightHalfPoleJetFilter', '→\n      False'))
+                        source = next(n for n in root_data if n['id'].endswith('.tendsto_actual_fourierResponse'))
+                        assert 'NontrivialZetaZero' in source['statement'] and 'analyticZetaZeroMultiplicity' in source['statement']
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', carrier['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == carrier['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{carrier['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{carrier['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem actual_physical_band_eq_fourierResponse' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -169,7 +198,8 @@ def run(output, url=None, refresh_preview=False):
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth + 1')
                 checks.append({'width': width, 'terminal': expected, 'source': source_url,
                                'conditionalSource': source_root, 'hoverStatementAndAxioms': True,
-                               'endpointSwitchAndZoom': True, 'openObstructionVisible': True})
+                               'endpointSwitchAndZoom': True, 'openObstructionVisible': True,
+                               'signedFourierCarrierAndOpenFloor': True})
                 page.close()
             browser.close()
     finally:

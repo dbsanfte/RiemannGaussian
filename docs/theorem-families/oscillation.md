@@ -6,9 +6,10 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**153 modules.** Source links open the definitions, hypotheses and proofs.
+**155 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
+- [CosineHinge](../../RiemannGaussian/CosineHinge.lean)
 - [DerivativeOrderComparison](../../RiemannGaussian/DerivativeOrderComparison.lean)
 - [DerivativePowerEnvelope](../../RiemannGaussian/DerivativePowerEnvelope.lean)
 - [DerivativePowerExponents](../../RiemannGaussian/DerivativePowerExponents.lean)
@@ -45,6 +46,7 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [FiniteResonancePartition](../../RiemannGaussian/FiniteResonancePartition.lean)
 - [FiniteSeparatedSampling](../../RiemannGaussian/FiniteSeparatedSampling.lean)
 - [FiniteShiftCorrelation](../../RiemannGaussian/FiniteShiftCorrelation.lean)
+- [FiniteSignedFourierHinge](../../RiemannGaussian/FiniteSignedFourierHinge.lean)
 - [FiniteVanDerCorput](../../RiemannGaussian/FiniteVanDerCorput.lean)
 - [FiniteVanDerCorputPhase](../../RiemannGaussian/FiniteVanDerCorputPhase.lean)
 - [FirstDerivativeTest](../../RiemannGaussian/FirstDerivativeTest.lean)

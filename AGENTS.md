@@ -2250,6 +2250,27 @@ Work in one coherent slice at a time. A slice should close a real lemma or
 interface needed by the current RH frontier, not merely add parallel
 abstractions.
 
+The 2026-09-14 arithmetic handoff is now promoted into the ordinary root;
+its provenance and exact open target are recorded in
+`docs/zeta-riesz-signed-fourier-tail.md`. `ZetaRieszFourierCarrier`
+identifies the original factorial-filtered band with a genuinely integrable
+two-frequency response at the unchanged physical cutoff, retaining its
+signed first moment and ordinary-prime correction. The hypothetical-zero
+source limit is unchanged. `ZetaPrimeCharacterRemainder` separately proves
+a cutoff-independent integrated nonlinear local-log bound at every fixed
+Re(s)>1/2 for labels at least 16. Small primes remain explicit; no uniform
+limit as Re(s) approaches 1/2, bound on the first-order exponential, or
+filtered source-scale saving follows. Do not treat generic cofactor marks
+as an unweighted prime product without proving that bridge. The exact
+cofinal criterion needs only one fixed c<1 with Re(B_N)>=-c at arbitrarily
+large N, but that premise remains open. Bare unfiltered unit floors and
+the immediate absolute-completion estimate have checked obstructions;
+they do not refute the original filtered floor. Keep the Riesz critical
+profile as the default explorer endpoint and expose the Fourier identities
+as supporting arithmetic results. The handoff's model diagnostics are not
+actual-zero estimates. No historical novelty or new zero-free width is
+claimed. Continue independent local theorem work during exact-SHA CI.
+
 1. Inspect `git status`, the imported theorem chain, the current dashboard
    data, and any newly supplied research dispatch before editing.
 2. State the exact mathematical obstruction and the theorem that removes a

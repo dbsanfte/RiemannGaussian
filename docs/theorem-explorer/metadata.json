@@ -2346,7 +2346,16 @@
     "ZetaRieszConditioningTransfer": "arithmetic",
     "ZetaRieszImprovedMoment": "arithmetic",
     "ZetaRieszNegativeProfile": "arithmetic",
-    "ZetaRieszCriticalProfile": "arithmetic"
+    "ZetaRieszCriticalProfile": "arithmetic",
+    "ZetaArithmeticAffine": "arithmetic",
+    "ZetaArithmeticBandCorrelation": "arithmetic",
+    "ZetaSquarefreeRieszWindows": "arithmetic",
+    "ZetaSquarefreeRieszCompletion": "arithmetic",
+    "ZetaSquarefreeSignedTail": "arithmetic",
+    "ZetaPrimeCharacterRemainder": "arithmetic",
+    "ZetaRieszFourierCarrier": "arithmetic",
+    "CosineHinge": "oscillation",
+    "FiniteSignedFourierHinge": "oscillation"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

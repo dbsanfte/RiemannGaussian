@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 9,
-      "id": "finite-critical-iteration-linear-constants",
+      "sequence": 10,
+      "id": "original-riesz-signed-fourier-tail",
       "kind": "theorem",
-      "title": "Critical moments now have a finite cost-preserving proof at every cutoff.",
-      "body": "For k≥2,u≥k and every positive critical allowance, Lean reaches the actual moment bound by finite descent from the elementary estimate, retaining the cost A^n·k! at every positive integer cutoff. The conditioning profile multiplier is explicitly at most (2ku)^(7k), independently of iteration count. The sharper remainder also retains the full exponent-defect saving. The final degree dependence of A and n remains unevaluated; the zero-free region is unchanged.",
-      "next": "Next: quantify the remaining cutoff and prime-packet costs, and carry the stronger defect saving through the global iteration.",
+      "title": "The original signed Riesz carrier now has an exact Fourier representation.",
+      "body": "Lean retains the actual factorial filter, physical cutoff, both frequencies, signed first moment and ordinary-prime correction. Separately, the nonlinear prime-character log remainder has a cutoff-independent integrated bound at each fixed Re(s)>1/2. The first-order prime-phase exponential and its filtered contribution remain uncontrolled; the independent cofinal floor and zero-free region are unchanged.",
+      "next": "Next: use the exact prime-factor correlations to control the complete signed frequency response at the original source scale.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "vkFiniteCriticalIterationTheorem"
+        "rieszActualFourierTheorem"
       ],
-      "documentation": "docs/vinogradov-linear-constants.md"
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -164,6 +164,45 @@
         "fullRecurrenceScope"
       ],
       "documentation": "docs/zeta-riesz-conditioned-energy.md"
+    },
+    {
+      "id": "signed-fourier-tail",
+      "label": "Signed Fourier tail · exact carrier, error bound and open criterion",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszActualFourierTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSubsetFourierTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSubsetCharacterTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCharacterExponentialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszIntegratedLogRemainderTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourierSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofinalFloorCriterion"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedFourierScope"
+      ],
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md"
     }
   ],
   "scopes": {
@@ -573,6 +612,69 @@
       "label": "Finite critical-moment descent keeps the exact cost A^n k!",
       "overview": true,
       "documentation": "docs/vinogradov-linear-constants.md"
+    },
+    "RiemannGaussian.CosineHinge.integral_one_sub_cos_div_sq": {
+      "label": "Exact cosine hinge kernel",
+      "family": "oscillation",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "The positive-frequency integral equals π|b|/2. Its genuine integrability and the Laplace/Fubini exchanges are proved."
+    },
+    "RiemannGaussian.FiniteSignedFourierHinge.finite_hinge_eq_paired_integral": {
+      "label": "Every finite signed hinge as a paired integral",
+      "family": "oscillation",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "Arbitrary complex weights retain both frequencies and the signed first moment. No conjugate-symmetry assumption is introduced."
+    },
+    "RiemannGaussian.ZetaRieszFourierCarrier.actual_physical_band_eq_fourierResponse": {
+      "label": "Original filtered Riesz band · exact Fourier response",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "The actual band and factorial polynomial filter keep the same physical length and divisor cutoff, signed first moment and ordinary-prime correction. This identity does not supply a lower bound."
+    },
+    "RiemannGaussian.ZetaRieszFourierCarrier.tendsto_actual_fourierResponse": {
+      "label": "Fourier source · conditional on a right-half zero",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "The full original Fourier response retains the negative multiplicity limit under the hypothetical zero. This is source transport, not an independent estimate."
+    },
+    "RiemannGaussian.ZetaRieszFourierCarrier.signedSubsetTail_eq_paired_integral": {
+      "label": "All prime-subset counts in the tail integral",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "The finite signed cutoff tail retains every subset size, paired frequencies and signed first moment."
+    },
+    "RiemannGaussian.ZetaRieszFourierCarrier.subset_finiteCharacter_eq_product": {
+      "label": "Exact subset character as a prime product",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "The entire finite subset Fourier character factors over the prime labels without a norm relaxation."
+    },
+    "RiemannGaussian.ZetaPrimeCharacterRemainder.normalized_character_eq_exp": {
+      "label": "First-order prime core plus exact logarithmic remainder",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "A product of small local factors equals the exponential of the first-order core plus the sum of local log errors. The principal logarithm of the whole product is not assumed."
+    },
+    "RiemannGaussian.ZetaPrimeCharacterRemainder.integral_norm_actual_logRemainder_div_le": {
+      "label": "Integrated nonlinear remainder · uniform finite cutoff",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "At each fixed Re(s)>1/2 and labels at least 16, the nonlinear log remainder divided by ξ² has a proved cutoff-independent L1 bound. This does not bound the exponential of the first-order core or its factorial filter."
+    },
+    "RiemannGaussian.ZetaSquarefreeRieszCompletion.false_of_cofinal_original_riesz_floor": {
+      "label": "Sufficient cofinal floor · premise still open",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
+      "overview": true,
+      "summary": "A fixed c<1 and Re(B_N)≥−c at arbitrarily large N contradict the original negative multiplicity limit. The independent floor is an unproved premise."
     }
   }
 }

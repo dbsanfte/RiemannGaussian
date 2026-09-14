@@ -36,6 +36,18 @@ of simple critical-line zeros. Neither result supplies the missing signed
 arithmetic estimate. This explorer does not draw a proved arrow across that
 gap or estimate a percentage of RH completed.
 
+The [Signed Fourier tail view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=signed-fourier-tail)
+now gives an exact integral representation of the original filtered band.
+It retains both frequencies, the signed first moment and the ordinary-prime
+correction at the physical cutoff. A separate bound pays the integrated
+nonlinear prime-character logarithmic remainder uniformly over finite
+prime cutoffs at each fixed real part greater than one half. It does not
+control the first-order prime-phase exponential or its filtered contribution.
+The [arithmetic-tail audit](zeta-riesz-signed-fourier-tail.md) classifies
+the remaining correlations and states the weakest current sufficient target:
+a fixed lower floor strictly above minus one on a cofinal sequence of the
+original normalized carrier. That independent floor remains open.
+
 The **Critical moments** view proves the actual global exponent
 `2k(u+1)-k(k+1)/2+eps` for every `k>=2,u>=k,eps>0` at all sufficiently
 large original endpoints. One uniform improvement above each fixed positive

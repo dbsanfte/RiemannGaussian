@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Critical moments now have a finite cost-preserving proof at every cutoff.** For k≥2,u≥k and every positive critical allowance, Lean reaches the actual moment bound by finite descent from the elementary estimate, retaining the cost A^n·k! at every positive integer cutoff. The conditioning profile multiplier is explicitly at most (2ku)^(7k), independently of iteration count. The sharper remainder also retains the full exponent-defect saving. The final degree dependence of A and n remains unevaluated; the zero-free region is unchanged.
-Next: quantify the remaining cutoff and prime-packet costs, and carry the stronger defect saving through the global iteration.
-[Current checked endpoint](RiemannGaussian/VinogradovFiniteCritical.lean#L90)
-· [Proof details](docs/vinogradov-linear-constants.md).
+**The original signed Riesz carrier now has an exact Fourier representation.** Lean retains the actual factorial filter, physical cutoff, both frequencies, signed first moment and ordinary-prime correction. Separately, the nonlinear prime-character log remainder has a cutoff-independent integrated bound at each fixed Re(s)>1/2. The first-order prime-phase exponential and its filtered contribution remain uncontrolled; the independent cofinal floor and zero-free region are unchanged.
+Next: use the exact prime-factor correlations to control the complete signed frequency response at the original source scale.
+[Current checked endpoint](RiemannGaussian/ZetaRieszFourierCarrier.lean#L103)
+· [Proof details](docs/zeta-riesz-signed-fourier-tail.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
