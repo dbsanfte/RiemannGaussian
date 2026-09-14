@@ -337,10 +337,11 @@ fixed opposite block; it does not count their tail completions.
 The common-class configurations above can be singular modulo `p` before
 division. The count still requires their normalized next digits to be
 distinct. The finite-window completion bounds below now provide the
-normalized mean-value budget for each fixed pair of blocks. Combining
-those budgets with the block counts, partitioning arbitrary singular
-configurations, the high-moment iteration and quantitative joint resonance
-control remain open. No required exponential-sum saving, new zeta-growth
+normalized mean-value budget for each fixed pair of blocks. The following
+combined count also pays all finite tail completions for canonical block
+representatives. Reassembling full conditioned moments, partitioning
+arbitrary singular configurations, the high-moment iteration and
+quantitative joint resonance control remain open. No required exponential-sum saving, new zeta-growth
 estimate, VK zero-free region or RH proof follows yet.
 
 ## Actual residue-window tails and every fixed sign pattern
@@ -417,6 +418,71 @@ conditions coupling entries within one tuple, such as nonsingularity,
 need their own transport proof and are not asserted to survive the swap.
 These affine and counting identities are classical ingredients; no
 historical novelty or new zero-free region is claimed.
+
+## Combined completions and actual congruence-fibre energy
+
+[VinogradovConditionedCompletion.conditioned_complete_count_le](../RiemannGaussian/VinogradovConditionedCompletion.lean)
+now combines the coarse count with the finite signed tail budget. For every
+fixed opposite block `y`, count pairs consisting of a canonical block
+`x` in `0,...,p^(kb)-1` and a tail pair `v,w` in the actual positive window
+of the residue `eta` modulo `p^b`. Require the original complete signed
+moment equations, a common class `xi` modulo `p^a`, and distinct normalized
+next digits for `x`, as above. For `1≤k<p` and `a≤b`, the count is at most
+
+```math
+r_+!\,r_-!\,p^{(a+b)k(k-1)/2}
+ J_{r,k}(\lfloor X/p^b\rfloor+1).
+```
+
+The proof retains arbitrary integer coefficients on both blocks and tails
+through the complete binomial translation. It first expresses the count
+as the exact sum of its supported row counts. Each row keeps its full
+block-dependent target before applying the uniform tail budget. This
+statement concerns canonical block representatives; it does not on its
+own count arbitrary block entries up to `X`.
+
+[VinogradovCongruenceEnergy](../RiemannGaussian/VinogradovCongruenceEnergy.lean)
+then pays the pointwise energy step. Let `B_epsilon(m;xi,eta)` be the complete
+coarse fibre defined above, and `D=r_+!*r_-!*p^((a+b)*k*(k-1)/2)`. For
+**every complex weight on that fibre**, Lean retains
+
+```math
+\left|\sum_{z\in B_\epsilon}w_z\right|^2
+=\mathrm{Re}\sum_{z,z'\in B_\epsilon}w_z\overline{w_{z'}}
+\le D\sum_{z\in B_\epsilon}|w_z|^2.
+```
+
+The first equality is the exact full Gram identity. The inequality spends
+the actual proved fibre count at Cauchy; no unproved energy premise is
+introduced. The literal finite residue sums are
+
+```math
+f_{q,c}(\alpha;\zeta)=
+\sum_{\substack{1\le n\le X\\n\equiv\zeta\pmod q}}
+ e^{2\pi i c\sum_{j=1}^k\alpha_j n^j},\qquad
+f_{q,-c}(\alpha;\zeta)=\overline{f_{q,c}(\alpha;\zeta)}.
+```
+
+The equality for reversed phase is proved before taking its norm.
+`coarse_product_energy_le` specializes the estimate to the actual product
+of these sums, for every finite endpoint `X` and every torus point:
+
+```math
+\left|\sum_{z\in B_\epsilon}
+ \prod_{i=1}^k f_{p^{kb},\epsilon_i}(\alpha;z_i)\right|^2
+\le D\sum_{z\in B_\epsilon}
+ \prod_{i=1}^k|f_{p^{kb},1}(\alpha;z_i)|^2.
+```
+
+This is the pointwise Cauchy ingredient in
+[Wooley (2012), equation (6.5), p. 1601](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
+The source uses the uniform `k!` allowance; the Lean statement retains the
+actual sign factorial. The full target fibre, all residue coordinates and
+original complex products remain available upstream. The exact sum over
+all congruence targets and its equality with the full conditioned moment
+(equation (6.4)), the later Hölder steps, singular conditioning and
+high-moment iteration still need proofs. No new zero-free width follows
+yet, and no historical novelty is claimed for these classical ingredients.
 
 ## Shifted correlations and bounded complex weights
 

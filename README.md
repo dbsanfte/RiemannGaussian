@@ -111,15 +111,15 @@ Make the proved region cover every applicable benchmark, preserving each height 
 
 ## Latest Update
 
-**Actual residue-window tails now have a normalized moment bound.**
-Lean bounds the compatible tail pairs for every fixed pair of weighted
-blocks, including every fixed tail sign pattern. Exact affine transport
-retains the original window, and a coordinate-swap identity keeps each
-complex weight before taking a norm. The next step is to combine these
-completion budgets with the coarse block counts and prove the stronger
-high-moment saving. The zero-free region is unchanged. The proved 67.31%
-simple-zero certificate keeps separate optional verification and an
-unevaluated starting height.
+**Signed block counts now pay an actual Fourier-energy estimate.**
+Lean combines coarse residue-block counts with their finite signed tail
+completions, and proves the pointwise Cauchy bound for products of actual
+residue-window Fourier sums. Exact complex cross terms and phase
+conjugations remain available before that estimate. The next step is to
+reassemble the congruence fibres into the full conditioned moment and
+prove the stronger high-moment saving. The zero-free region is unchanged.
+The proved 67.31% simple-zero certificate retains separate optional
+verification and an unevaluated starting height.
 [Certificate and audit](docs/numerical-certificate.md)
 · [Current region](docs/zeta-unified-zero-free.md)
 · [VK proof status](docs/vinogradov-korobov-framework.md).

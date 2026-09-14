@@ -1849,8 +1849,20 @@ retains every original complex pair weight through explicit conjugation.
 Every fixed tail sign pattern has the same normalized completion bound.
 The crossing acts on complete tuple products; additional joint constraints
 within a tuple, including nonsingularity, require separate transport proofs.
-Do not list all tail bounds as open. Combining these completion budgets
-with coarse block counts, arbitrary singular conditioning and the stronger
+Do not list all tail bounds as open. `VinogradovConditionedCompletion`
+now combines the coarse count with every signed finite tail completion for
+each fixed opposite block. It retains arbitrary integer coefficients on
+both blocks and tails through translation, and an exact supported row sum
+before its product bound. `conditioned_complete_count_le` counts canonical
+block representatives in Fin(p^(k*b)), not arbitrary block integers <=X.
+`VinogradovCongruenceEnergy` now retains the full complex fibre Gram form
+and pays the pointwise Cauchy estimate with the actual signed fibre count.
+`coarse_product_energy_le` applies it to products of actual positive
+residue-window Fourier sums for every finite endpoint X. Each reversed
+power-vector phase is exactly conjugated before its norm is simplified.
+This is the pointwise ingredient in Wooley equation (6.5), not the complete
+efficient-congruencing step. Reassembling all congruence fibres into the
+full conditioned moment, arbitrary singular conditioning and the stronger
 high-moment iteration remain open. Stronger high-order moment bounds and
 quantitative joint resonance control,
 the required exponential-sum saving, zeta growth and the VK zero-free region

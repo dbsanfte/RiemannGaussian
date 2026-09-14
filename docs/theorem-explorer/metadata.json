@@ -95,7 +95,7 @@
     },
     {
       "id": "vk-phase",
-      "label": "Vinogradov–Korobov · signed tails, congruencing and resonance",
+      "label": "Vinogradov–Korobov · signed completions and congruence energy",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -400,6 +400,38 @@
         [
           "gaussianPhaseBandToolkit",
           "vkSignedTailCompletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCompleteTranslationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSignedTailCongruenceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExactCompletionRowsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCompleteCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCongruenceGramTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCongruenceCauchyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkResidueConjugationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkActualCongruenceEnergyTheorem"
         ]
       ],
       "scopePath": [
@@ -2809,6 +2841,46 @@
     },
     "RiemannGaussian.VinogradovSignedTailMoment.signed_tail_completions_le_meanValue": {
       "label": "All fixed signed tails receive the actual completion bound",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditionedCompletion.translated_weighted_moment_equation": {
+      "label": "Translation retains integer coefficients on both blocks and tails",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditionedCompletion.blockTailEquation_congruence": {
+      "label": "Actual signed tail completions force the full block congruences",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditionedCompletion.card_pairs_eq_sum_supported_fibres": {
+      "label": "The complete count keeps each supported row before its budget",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditionedCompletion.conditioned_complete_count_le": {
+      "label": "Coarse block counts pay all their actual signed tail completions",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovCongruenceEnergy.coarse_fibre_energy_eq_gram": {
+      "label": "All original complex fibre cross terms remain in the exact Gram identity",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovCongruenceEnergy.coarse_fibre_energy_le": {
+      "label": "The signed coarse count pays the pointwise Cauchy energy cost",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovCongruenceEnergy.residuePolynomial_neg": {
+      "label": "Reversing the actual residue phase exactly conjugates its sum",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovCongruenceEnergy.coarse_product_energy_le": {
+      "label": "Actual signed residue-window products receive the congruence energy bound",
       "documentation": "docs/vinogradov-korobov-framework.md",
       "overview": true
     }
