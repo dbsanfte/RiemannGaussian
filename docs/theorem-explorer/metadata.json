@@ -2368,7 +2368,9 @@
     "ZetaRieszGrowingCofactor": "arithmetic",
     "ZetaRieszExponentialCofactor": "arithmetic",
     "ZetaRieszCofactorTiltRate": "arithmetic",
-    "ZetaRieszGeneralCofactorTilt": "arithmetic"
+    "ZetaRieszGeneralCofactorTilt": "arithmetic",
+    "ZetaRieszEulerQuotient": "arithmetic",
+    "ZetaRieszEulerCorrectionEnergy": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

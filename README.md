@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**The exact analytic tilt now gives an arithmetic decay bound.** Lean now pays the spatial and cofactor costs for every admissible tilt. The exact scalar optimizer gives geometric decay of a range exceeding every fixed polynomial throughout the source-scale interval, except at one contact covered by the earlier polynomial bound. The full complementary source is retained; semiprimes and larger cofactors still need a joint signed floor.
-Next: attack the coupled semiprime and larger-cofactor contribution, retaining the original prime phases and common cutoff.
-[Current checked endpoint](RiemannGaussian/ZetaRieszGeneralCofactorTilt.lean#L539)
-· [Proof details](docs/zeta-riesz-general-tilt-decay.md).
+**Both Euler correction channels now have vanishing allowances.** Lean now bounds the complete Euler correction product, retaining every prime interaction. Its even paired integral and odd-channel energy tend uniformly to zero above a growing prime threshold on each fixed half-plane right of one half. The leading quotient, original filter and signed boundary remain unpaid; the full arithmetic floor is still open.
+Next: restore the physical cutoff phase and estimate the leading Euler response while retaining its odd coupling.
+[Current checked endpoint](RiemannGaussian/ZetaRieszEulerCorrectionEnergy.lean#L432)
+· [Proof details](docs/zeta-riesz-euler-correction-energy.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

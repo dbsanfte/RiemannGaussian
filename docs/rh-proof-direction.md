@@ -75,6 +75,14 @@ single scalar contact, where the earlier polynomial deletion still applies.
 Its exact complementary source covers every hypothetical right-half zero.
 The joint remaining semiprime and larger-cofactor contribution is still unpaid.
 
+The [Euler correction view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=euler-correction-decay)
+now keeps the complete finite Euler quotient and every correction interaction.
+The full correction has uniformly vanishing even paired-integral and odd-energy
+allowances on each fixed closed half-plane right of one half. The
+[exact weighted identity](zeta-riesz-euler-correction-energy.md) retains the odd
+coupling when the leading response is restored. That response, original
+factorial filter and signed completion boundary remain unpaid.
+
 The **Critical moments** view proves the actual global exponent
 `2k(u+1)-k(k+1)/2+eps` for every `k>=2,u>=k,eps>0` at all sufficiently
 large original endpoints. One uniform improvement above each fixed positive

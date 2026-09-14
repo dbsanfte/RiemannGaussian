@@ -2357,6 +2357,21 @@ have a joint signed floor. That floor remains open. See
 `docs/zeta-riesz-general-tilt-decay.md` and supporting endpoint
 `general-tilt-decay`; keep the default whole-carrier endpoint unchanged.
 
+`ZetaRieszEulerQuotient` now factors the full finite character into its
+leading Euler quotient and quadratic local corrections. `ZetaRieszEulerCorrectionEnergy`
+pays the complete correction product with every interaction order retained:
+the even paired quotient has an integrated square-log allowance, and the odd
+channel has a separate energy allowance. Both tend uniformly to zero above a
+growing prime threshold on each fixed closed half-plane Re(s)>=sigma>1/2.
+These are genuine integrability and finite-selection-uniform component bounds.
+The exact weighted identity retains both even and odd leading-response
+couplings. Do not discard the odd channel or assert that the leading Euler
+quotient, finite small primes, physical cutoff phase, original factorial
+filter or signed completion boundary is paid. No infinite Euler-product-to-zeta
+identification is asserted. The original joint signed floor remains open.
+See `docs/zeta-riesz-euler-correction-energy.md` and supporting endpoint
+`euler-correction-decay`; keep the default whole-carrier endpoint unchanged.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

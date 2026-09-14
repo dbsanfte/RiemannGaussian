@@ -23,6 +23,12 @@ composite cofactor, and gives an explicit bound after its full factorial
 filter. It also identifies the remaining semiprime coefficients and strengthens
 the isolated nonlinear allowance to a uniform closed-half-plane estimate.
 
+The [full Euler correction continuation](zeta-riesz-euler-correction-energy.md)
+now supplies a separate finite Euler-quotient factorization. Every interaction
+order of its correction has a vanishing even paired-integral allowance and
+odd-energy allowance. The leading quotient and both weighted couplings are
+retained; this does not bound the complete original carrier.
+
 ## The exact target
 
 For a hypothetical nontrivial zero \(\rho\) with \(\Re\rho>1/2\), set

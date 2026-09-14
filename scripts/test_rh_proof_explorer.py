@@ -361,6 +361,42 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem norm_optimal_composite_band_le' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'euler-correction-decay':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'Every prime interaction order is retained' in scope
+                        assert 'odd correction has integrable energy' in scope
+                        assert 'all Re(s)>=sigma at each fixed sigma>1/2' in scope
+                        assert 'original factorial filter and signed completion boundary remain unpaid' in scope
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        even = next(n for n in roots if n['id'].endswith('.integral_norm_actual_paired_correctionProduct_le_tail'))
+                        assert all(t in ' '.join(even['statement'].split()) for t in (
+                            '1 / 2 < sigma', 'sigma ≤ s.re', 'correctionProduct Q', 'squareLogTail sigma K'))
+                        odd = next(n for n in roots if n['id'].endswith('.integral_actual_odd_correctionProduct_energy_le_tail'))
+                        assert all(t in ' '.join(odd['statement'].split()) for t in (
+                            '1 / 2 < sigma', 'sigma ≤ s.re', 'correctionProduct Q', '^ 2 / xi ^ 2'))
+                        for suffix in ('.exists_uniform_actual_paired_correctionProduct_lt',
+                                       '.exists_uniform_actual_odd_correctionProduct_energy_lt'):
+                            decay = next(n for n in roots if n['id'].endswith(suffix))
+                            assert all(t in ' '.join(decay['statement'].split()) for t in (
+                                '0 < eps', '∃ K', '16 ≤ K', 'sigma ≤ s.re', '< eps'))
+                        weighted = next(n for n in roots if n['id'].endswith('.weighted_correction_pair_split'))
+                        assert all(t in weighted['statement'] for t in ('Vp', 'Vm', 'Hp', 'Hm', '/ 2'))
+                        assert even['source']['path'].endswith('ZetaRieszEulerCorrectionEnergy.lean')
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', even['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == even['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{even['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{even['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem integral_norm_actual_paired_correctionProduct_le_tail' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -376,6 +412,7 @@ def run(output, url=None, refresh_preview=False):
                                'conditionalRHClosurePremiseVisible': True,
                                'exponentialCofactorBoundAndAdaptiveSource': True,
                                'generalTiltArithmeticBoundAndWholeSource': True,
+                               'fullEulerCorrectionEvenAndOddBounds': True,
                                'scalarTiltAuditDistinguishedFromArithmeticBound': True})
                 page.close()
             browser.close()

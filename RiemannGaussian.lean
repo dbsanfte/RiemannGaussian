@@ -1665,3 +1665,5 @@ import RiemannGaussian.ZetaRieszCofactorTiltRate
 import RiemannGaussian.ZetaRieszFilteredCompletion
 import RiemannGaussian.ZetaPrimeNonlinearHalfplane
 import RiemannGaussian.ZetaRieszGeneralCofactorTilt
+import RiemannGaussian.ZetaRieszEulerQuotient
+import RiemannGaussian.ZetaRieszEulerCorrectionEnergy

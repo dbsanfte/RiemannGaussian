@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 15,
-      "id": "general-tilt-arithmetic-cofactor-decay",
+      "sequence": 16,
+      "id": "paired-euler-correction-decay",
       "kind": "theorem",
-      "title": "The exact analytic tilt now gives an arithmetic decay bound.",
-      "body": "Lean now pays the spatial and cofactor costs for every admissible tilt. The exact scalar optimizer gives geometric decay of a range exceeding every fixed polynomial throughout the source-scale interval, except at one contact covered by the earlier polynomial bound. The full complementary source is retained; semiprimes and larger cofactors still need a joint signed floor.",
-      "next": "Next: attack the coupled semiprime and larger-cofactor contribution, retaining the original prime phases and common cutoff.",
+      "title": "Both Euler correction channels now have vanishing allowances.",
+      "body": "Lean now bounds the complete Euler correction product, retaining every prime interaction. Its even paired integral and odd-channel energy tend uniformly to zero above a growing prime threshold on each fixed half-plane right of one half. The leading quotient, original filter and signed boundary remain unpaid; the full arithmetic floor is still open.",
+      "next": "Next: restore the physical cutoff phase and estimate the leading Euler response while retaining its odd coupling.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszOptimalCofactorBoundTheorem"
+        "rieszEulerCorrectionEvenDecayTheorem"
       ],
-      "documentation": "docs/zeta-riesz-general-tilt-decay.md"
+      "documentation": "docs/zeta-riesz-euler-correction-energy.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -434,6 +434,49 @@
         "rieszGeneralTiltScope"
       ],
       "documentation": "docs/zeta-riesz-general-tilt-decay.md"
+    },
+    {
+      "id": "euler-correction-decay",
+      "label": "Euler correction · full even and odd arithmetic decay",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerQuotientIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCorrectionProductTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCorrectionEvenBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCorrectionEvenDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCorrectionOddBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCorrectionOddDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCorrectionWeightedPairTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerCorrectionLogEnergyTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszEulerCorrectionScope"
+      ],
+      "documentation": "docs/zeta-riesz-euler-correction-energy.md"
     }
   ],
   "scopes": {
@@ -1206,6 +1249,62 @@
       "summary": "Every eligible composite cofactor of a surviving insertion exceeds the selected threshold. Semiprimes and larger cofactors still require a joint signed floor.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-general-tilt-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerQuotient.finite_character_eq_quotient_product": {
+      "label": "Finite Euler quotient · exact complete factorization",
+      "summary": "The full finite character is its explicit Euler quotient times every quadratic correction factor. No infinite zeta identification is assumed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerCorrectionEnergy.actual_character_eq_euler_quotient_correction": {
+      "label": "Literal prime features · full quotient and correction retained",
+      "summary": "For the actual prime amplitudes at labels at least 16 and Re(s)>=1/2, the complete finite character retains its leading Euler quotient and every correction interaction.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerCorrectionEnergy.integral_norm_actual_paired_correctionProduct_le_tail": {
+      "label": "Full even correction · explicit arithmetic tail bound",
+      "summary": "The full paired correction divided by frequency squared has an integrated square-log tail allowance, uniform on each fixed closed half-plane right of one half.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerCorrectionEnergy.exists_uniform_actual_paired_correctionProduct_lt": {
+      "label": "Full even correction · uniform decay above a growing prime threshold",
+      "summary": "A single prime threshold makes the whole paired correction allowance arbitrarily small for every finite larger-prime selection and every point in the fixed closed half-plane.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerCorrectionEnergy.integral_actual_odd_correctionProduct_energy_le_tail": {
+      "label": "Full odd correction · retained and bounded in energy",
+      "summary": "The actual odd correction has a square-log energy allowance including all interaction orders. It remains available for the weighted leading-response pairing.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerCorrectionEnergy.exists_uniform_actual_odd_correctionProduct_energy_lt": {
+      "label": "Full odd correction · uniform energy decay",
+      "summary": "The odd-channel energy tends uniformly to zero above a growing prime threshold on each fixed closed half-plane strictly right of one half.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerCorrectionEnergy.weighted_correction_pair_split": {
+      "label": "Weighted response · both even and odd couplings stay explicit",
+      "summary": "Restoring two distinct leading responses couples their even part to the even correction and their odd part to the odd correction. Neither leading-response bound is assumed or proved.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerCorrectionEnergy.norm_correctionLogSum_sq_le": {
+      "label": "Weighted logarithmic energy · square mass instead of prime count",
+      "summary": "Weighted Cauchy-Schwarz bounds the complete logarithm square with the finite prime-square mass and all actual logarithmic phases retained.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-correction-energy.md",
       "overview": true
     }
   }
