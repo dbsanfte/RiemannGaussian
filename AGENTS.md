@@ -1924,8 +1924,7 @@ H_eta is the actual (2r+2)-moment and V_eta is the actual maximum of
 integral |R_eta|^2*|f_fine|^(2kr). `actual_band_le_interpolated_moments`
 retains all source weights/cutoffs and the explicit block denominator.
 Do not keep listing this analytic interpolation or the block normalization
-as open. The quantitative weighted-moment saving, the deeper-residue conditioning
-remainder and full iteration remain open. The reverse mixed moment has a squared
+as open. The quantitative weighted-moment saving, the high-moment exponent improvement and full iteration remain open. The reverse mixed moment has a squared
 Riesz factor; it is not assumed controlled. No new universal zero-free width
 is claimed.
 
@@ -1942,7 +1941,7 @@ I_(b,k*b)^(1/u), paying the explicit signed congruence and residue-count cost.
 The statement keeps independent block colours, every finite endpoint and all
 rounding. This is the finite inequality underlying Wooley (2012), Lemma 6.1;
 it assumes no moment budget. Do not list the higher homogeneous comparison
-or this finite transfer as open. The deeper-residue conditioning remainder and
+or this finite transfer as open. The high-moment exponent improvement and
 high-moment iteration remain open, as does the quantitative saving
 for the original weighted Riesz moments after all sampling costs. No new
 zero-free width follows from this finite step.
@@ -1961,7 +1960,7 @@ next-level mixed maximum. All finite Holder and integral hypotheses are paid;
 no supplied moment budget is assumed. This closes the singular contribution
 underlying Wooley (2012), equation (5.2). Do not list that contribution or its
 class refinement as open. The nonsingular estimate and one-step conditioning recurrence are now
-proved by the following modules; their deeper-residue remainder and
+proved by the following modules; their high-moment exponent improvement and
 high-moment iteration remain open. Neither the
 original weighted Riesz saving nor any larger zero-free width follows yet.
 
@@ -1979,9 +1978,29 @@ p,1<=k<=p,u>=1,eta<p^b and the original finite X. All moments and maxima
 are actual; no budget is assumed. These explicit constants are not optimized.
 This closes the finite step underlying Wooley (2012), Lemma 5.1. Do not list
 either collision bound, this Holder step or this one-step recurrence as
-open. The deeper-residue remainder and high-moment iteration remain open.
+open. Improving the high-moment exponent through further iteration remains open.
 The weighted Riesz moments are not identified with these unweighted moments;
 their required saving and every new VK zero-free width remain unproved.
+
+`VinogradovConditioningRemainder` now iterates the actual level maxima:
+L_b<=S^H*L_(b+H)+E*sum_(h<H)S^h*Q_(b+h), preserving every finite cost.
+Its remaining factor receives the two literal higher moments at
+floor(X/p^a)+1 and floor(X/p^(b+H))+1. `VinogradovRemainderScaling`
+retains the exact scale identity and proves the exponent inequality for
+all lambda>=2k(u+1)-k(k+1)/2. `VinogradovConditioningPowerSaving` pays
+the actual rounding with C=2^(k(2u+1))*k! and the iterated constant
+D=2u*(k-1)^(2ku). For k>=2,u>=k,a<=b,H>=1,b-a<=2H,p^(b+H)<=X,
+and (C*D)^2<=p, the actual remainder S^H*L_(b+H) is at most
+(X/p^a)^k*(X/p^b)^(2ku)*p^(-H/2). The same threshold proves k<p.
+`finite_conditioning_power_saving` inserts that bound into the actual
+finite recurrence without any supplied moment-budget premise. Do not
+list this elementary remainder saving, its constant absorption, or its
+finite iteration as open. Keep the finite cutoff condition; this is not
+a decay limit in H at fixed X. The general exponent transfer explicitly
+requires its two homogeneous-moment bounds, which are discharged by the
+final theorem only at the elementary exponent. Improving the high-moment
+exponent and the full congruencing iteration remain open. No original
+Riesz weighted saving, VK zeta growth or new zero-free width is claimed.
 
 Stronger high-order moment bounds and
 quantitative joint resonance control,

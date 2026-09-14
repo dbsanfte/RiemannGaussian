@@ -205,8 +205,8 @@ correlations retained by its Gram identities. No saving beyond those costs
 has yet been proved. The higher conditioned homogeneous comparison and finite
 VK congruencing step are now proved, along with an explicit bound for the
 singular and nonsingular conditioning contributions. Their explicit one-step
-conditioning recurrence is proved. The deeper-residue remainder and high-moment
-iteration remain open as documented in the
+conditioning recurrence is proved. Improving the high-moment exponent through further
+iteration remains open as documented in the
 [VK framework](vinogradov-korobov-framework.md).
 
 The finite Fourier and congruencing tools are classical ingredients. This

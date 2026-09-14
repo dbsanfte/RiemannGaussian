@@ -111,14 +111,15 @@ Make the proved region cover every applicable benchmark, preserving each height 
 
 ## Latest Update
 
-**The actual finite conditioning recurrence now has a Lean proof.**
-Both singular and nonsingular collision contributions have explicit bounds.
-Selected blocks retain signs from both tails and their exact complements;
-Hölder and absorption then give a recurrence between actual moments with
-proved constants. High-moment iteration and the quantitative Riesz weighted
-saving remain open. The proved zero-free region is unchanged.
-[Latest Lean theorem](RiemannGaussian/VinogradovNonsingularConditioning.lean)
-· [Exact recurrence and scope](docs/vinogradov-korobov-framework.md#explicit-finite-conditioning-recurrence).
+**The deep conditioning remainder now has a proved power saving.**
+Lean pays the rounded quotient endpoints and every iteration constant,
+giving a half-depth base saving under explicit base and cutoff conditions.
+The final theorem uses the already proved elementary moments; a general
+transfer retains the estimates needed for sharper exponents. Improving
+those exponents, VK zeta growth and the actual Riesz weighted saving remain
+open. The proved zero-free region is unchanged.
+[Latest Lean theorem](RiemannGaussian/VinogradovConditioningPowerSaving.lean)
+· [Exact saving and scope](docs/vinogradov-korobov-framework.md#deep-remainder-with-explicit-power-saving).
 
 ## Notable Formalisations
 

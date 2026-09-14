@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**100 modules.** Source links open the definitions, hypotheses and proofs.
+**103 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [DerivativeOrderComparison](../../RiemannGaussian/DerivativeOrderComparison.lean)
@@ -71,6 +71,8 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovConditionedHigherMoment](../../RiemannGaussian/VinogradovConditionedHigherMoment.lean)
 - [VinogradovConditionedMoment](../../RiemannGaussian/VinogradovConditionedMoment.lean)
 - [VinogradovConditioningHolder](../../RiemannGaussian/VinogradovConditioningHolder.lean)
+- [VinogradovConditioningPowerSaving](../../RiemannGaussian/VinogradovConditioningPowerSaving.lean)
+- [VinogradovConditioningRemainder](../../RiemannGaussian/VinogradovConditioningRemainder.lean)
 - [VinogradovConditioningSupport](../../RiemannGaussian/VinogradovConditioningSupport.lean)
 - [VinogradovCongruenceEnergy](../../RiemannGaussian/VinogradovCongruenceEnergy.lean)
 - [VinogradovCongruencingStep](../../RiemannGaussian/VinogradovCongruencingStep.lean)
@@ -94,6 +96,7 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovPowerSumRigidity](../../RiemannGaussian/VinogradovPowerSumRigidity.lean)
 - [VinogradovPrimePowerRigidity](../../RiemannGaussian/VinogradovPrimePowerRigidity.lean)
 - [VinogradovProductEnergy](../../RiemannGaussian/VinogradovProductEnergy.lean)
+- [VinogradovRemainderScaling](../../RiemannGaussian/VinogradovRemainderScaling.lean)
 - [VinogradovResidueDigits](../../RiemannGaussian/VinogradovResidueDigits.lean)
 - [VinogradovResidueEnergy](../../RiemannGaussian/VinogradovResidueEnergy.lean)
 - [VinogradovResidueMoment](../../RiemannGaussian/VinogradovResidueMoment.lean)

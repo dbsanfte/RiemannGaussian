@@ -20,7 +20,9 @@ positive blocks and tails up to the finite endpoint. Exact product
 factorization and the first finite Hölder estimate now reduce that energy
 to an actual mixed-moment maximum, retaining arbitrary complex tail weights.
 Both original collision contributions now have explicit bounds, giving the
-actual finite conditioning recurrence. High-moment iteration remains open.
+actual finite conditioning recurrence. Its deeper remainder now has an
+explicit power saving at the elementary exponent, with rounded cutoffs and
+all constants paid. High-moment exponent improvement remains open.
 The Vinogradov–Korobov zeta growth estimate
 and zero-free region remain unproved in this repository. No external
 analytic estimate is installed as an axiom or as a claimed discharged premise.
@@ -347,8 +349,9 @@ distinct. The finite-window completion bounds below now provide the
 normalized mean-value budget for each fixed pair of blocks. The following
 combined count also pays all finite tail completions for canonical block
 representatives. The full conditioned-moment transfer is proved below;
-the one-step conditioning recurrence is also proved below. Its deeper-residue
-remainder, high-moment iteration and quantitative joint resonance control remain open. No required
+the one-step recurrence and elementary deep-remainder saving are proved below.
+Improving the high-moment exponent and controlling joint arithmetic resonance
+remain open. No required
 exponential-sum saving, new zeta-growth estimate, VK zero-free region or RH
 proof follows yet.
 
@@ -490,8 +493,8 @@ original complex products remain available upstream. The exact target
 partition, its whole-moment energy transfer, exact product factorization
 and both Hölder steps are now proved below, along with the higher
 homogeneous comparison, finite congruencing transfer and explicit one-step
-conditioning recurrence. The deeper-residue remainder and high-moment iteration
-still need proofs. No new zero-free width follows yet, and no
+conditioning recurrence. Improving the high-moment exponent through further iteration
+still needs a proof. No new zero-free width follows yet, and no
 historical novelty is claimed for these classical ingredients.
 
 ## Exact whole-moment partition and finer-residue energy
@@ -560,7 +563,7 @@ It forces matching finer block residues in the surviving energies. The
 actual product identification and first finite Hölder bound follow next;
 the higher homogeneous comparison and finite congruencing step are proved
 below, together with the actual one-step conditioning recurrence. The
-deeper-residue remainder and required high-moment saving remain open. No zero-free width follows yet.
+high-moment exponent improvement and required high-moment saving remain open. No zero-free width follows yet.
 
 ## Literal products and the actual mixed-moment maximum
 
@@ -625,7 +628,7 @@ falling-factorial and floor lower bound on its original block mass;
 see the [explicit interpolated carrier bound](zeta-riesz-conditioned-energy.md).
 The higher homogeneous comparison and finite congruencing step are now
 proved below, together with both collision bounds and the actual one-step
-conditioning recurrence. The deeper-residue remainder and full high-moment
+conditioning recurrence. The high-moment exponent improvement and full high-moment
 iteration remain open.
 This is a classical finite congruencing ingredient, not a new VK growth
 estimate or a larger proved zero-free region.
@@ -687,7 +690,7 @@ This is the finite inequality underlying
 with explicit finite-window conventions and the retained sign factorial.
 The congruencing transfer and one-step conditioning recurrence are proved.
 Both collision contributions have the explicit upper bounds below. The
-deeper-residue remainder, quantitative high-moment saving and required zeta
+high-moment exponent improvement, quantitative high-moment saving and required zeta
 growth estimate remain open. The Riesz bridge preserves its original weighted
 moments; these are not identified with the unweighted conditioned moments
 in this theorem. No larger zero-free region is claimed from this step.
@@ -805,11 +808,110 @@ finite conditioning step in
 [Wooley (2012), Lemma 5.1](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf)
 with explicit constants; no historical novelty is claimed.
 
-The next classical obligations are the deeper-residue remainder and
+The next classical obligations are the high-moment exponent improvement and
 iteration with the proved congruencing transfer. The original Riesz
 moments retain their own complex weights and sampling costs; this
 unweighted conditioning theorem does not establish their quantitative
 saving or enlarge the proved zero-free region.
+
+## Deep remainder with explicit power saving
+
+[VinogradovConditioningRemainder](../RiemannGaussian/VinogradovConditioningRemainder.lean)
+iterates the actual conditioning step. Set `s=k*u`, `q=k*(u+1)`, and let
+`L_b` be the actual maximum of the original mixed moment over canonical
+residues at level `b`; `Q_b` also maximizes over the conditioned block colour.
+The fixed original colour, coarse class and endpoint `X` are retained.
+With the exact costs
+
+```math
+S=2u{p\choose k-1}(k-1)^{2ku},\qquad
+E=\bigl((2ku)^{\underline{k}}\bigr)^{2u},
+```
+
+`finite_conditioning_iteration` proves at every finite depth
+
+```math
+L_b\le S^H L_{b+H}+E\sum_{h=0}^{H-1}S^hQ_{b+h}.
+```
+
+The remainder receives the actual two-scale higher moments:
+
+```math
+L_{b+H}\le
+J_{q,k}\bigl(\lfloor X/p^a\rfloor+1\bigr)^{1/(u+1)}
+J_{q,k}\bigl(\lfloor X/p^{b+H}\rfloor+1\bigr)^{u/(u+1)}.
+```
+
+This uses the proved higher conditioned-moment comparison before any
+sign crossing; no pointwise domination of a conditioned polynomial is
+assumed. Every extra quotient endpoint is present.
+
+[VinogradovConditioningPowerSaving](../RiemannGaussian/VinogradovConditioningPowerSaving.lean)
+then inserts the proved elementary exponent and pays the rounding with
+explicit constants:
+
+```math
+\lambda_0=k(2u+1),\qquad
+C=2^{\lambda_0}k!,\qquad D=2u(k-1)^{2ku}.
+```
+
+For `k>=2`, `u>=k`, `a<=b`, `H>=1`, the exact conditions are
+
+```math
+b-a\le2H,\qquad p^{b+H}\le X,\qquad (CD)^2\le p.
+```
+
+The last condition also proves `k<p`. The base need not be prime for this
+remainder theorem; later congruencing still uses its primality hypothesis.
+Only when the full window fits does Lean use
+`floor(X/p^j)+1 <= 2X/p^j`. The exact unabsorbed bound is
+
+```math
+S^H L_{b+H}\le
+CD^H\left(\frac{X}{p^a}\right)^k
+     \left(\frac{X}{p^b}\right)^{2ku}p^{-H}.
+```
+
+[Exact scaling and constant absorption](../RiemannGaussian/VinogradovRemainderScaling.lean)
+then prove the terminal remainder estimate and its insertion into the
+complete finite recurrence:
+
+```math
+\boxed{\displaystyle
+S^H L_{b+H}\le
+\left(\frac{X}{p^a}\right)^k
+\left(\frac{X}{p^b}\right)^{2ku}p^{-H/2}.}
+```
+
+There is **no supplied moment-budget premise** in
+`deep_remainder_power_saving` or `finite_conditioning_power_saving`.
+The saving is relative to the displayed elementary normalization, within
+the stated finite cutoff range. It is not a limit at fixed `X` as `H` grows.
+
+The general theorem `deep_remainder_of_scaled_bounds` also retains any real
+exponent at or above the critical value:
+
+```math
+\lambda\ge2k(u+1)-\frac{k(k+1)}2.
+```
+
+It explicitly requires the two actual homogeneous-moment bounds with a
+common scaled constant `B>=1`. Under `(BD)^2<=p`, its normalization is
+
+```math
+\left(\frac{X}{p^a}\right)^{\lambda-2ku}
+\left(\frac{X}{p^b}\right)^{2ku}p^{-H/2}.
+```
+
+The final unconditional specialization discharges those two bounds at
+`lambda_0`; it does not establish a sharper moment exponent. This makes the
+remainder step in
+[Wooley (2012), equations (5.4)–(5.5) and Lemma 5.2](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf)
+quantitative at the elementary starting exponent, while preserving the
+interface needed for subsequent improvements. Full high-moment exponent
+improvement and its iteration with the signed congruencing transfer remain
+open. The original Riesz moments still carry their own complex weights and
+sampling costs. No VK growth estimate or new zero-free width follows yet.
 
 ## Direct application to the original Riesz carrier
 

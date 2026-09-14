@@ -19,8 +19,9 @@ Combining this bound with the actual singular contribution and weighted
 AM-GM proves the one-step conditioning recurrence underlying Wooley (2012),
 Lemma 5.1, with explicit (not optimized) constants:
 https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf
-The deeper-residue remainder, high-moment iteration, quantitative saving for
-the original weighted Riesz carrier and VK zero-free region remain open.
+The explicit remainder saving at the elementary exponent is proved in
+`VinogradovConditioningPowerSaving`. Improving the high-moment exponent,
+the original weighted Riesz saving and the VK zero-free region remain open.
 -/
 
 namespace RiemannGaussian.VinogradovNonsingularConditioning

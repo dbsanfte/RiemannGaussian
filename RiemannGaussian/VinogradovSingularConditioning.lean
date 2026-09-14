@@ -22,8 +22,10 @@ mixed-moment maximum. Every block sign, original cutoff and residue class
 survives; no moment budget is a hypothesis. This makes the singular
 contribution in Wooley (2012), equation (5.2), explicit:
 https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf
-The nonsingular counting/Holder estimate, complete conditioning recurrence,
-high-moment iteration and Vinogradov--Korobov zero-free proof remain open.
+The nonsingular estimate and finite conditioning recurrence are proved in
+`VinogradovNonsingularConditioning`; their explicit initial remainder saving
+is in `VinogradovConditioningPowerSaving`. High-moment exponent improvement
+and the Vinogradov--Korobov zero-free proof remain open.
 -/
 
 namespace RiemannGaussian.VinogradovSingularConditioning

@@ -672,6 +672,46 @@
         [
           "gaussianPhaseBandToolkit",
           "vkFiniteConditioningStepTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkMixedHigherRemainderTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFiniteConditioningIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFiniteHigherRemainderTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRemainderScaleIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRemainderExponentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRoundedHigherMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExplicitDeepRemainderTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDeepRemainderSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkConditioningBaseThresholdTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFiniteConditioningSavingTheorem"
         ]
       ],
       "scopePath": [
@@ -3419,6 +3459,61 @@
     },
     "RiemannGaussian.VinogradovNonsingularConditioning.conditioning_step": {
       "label": "Both original contributions give the explicit finite conditioning recurrence",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditioningRemainder.mixed_le_higher_moments": {
+      "label": "The original mixed moment reaches both actual quotient-scale higher moments",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditioningRemainder.finite_conditioning_iteration": {
+      "label": "Iterate the actual conditioning step with all intermediate costs",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditioningRemainder.finite_conditioning_remainder": {
+      "label": "The deeper remainder retains both actual higher moments and all rounding",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovRemainderScaling.scaled_remainder_identity": {
+      "label": "The complete remainder scale identity keeps its full exponent",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovRemainderScaling.scaled_remainder_le": {
+      "label": "Half-gap depth controls the scale exponent throughout the admissible range",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditioningPowerSaving.higher_meanValue_rounded": {
+      "label": "The elementary higher moment pays its exact quotient endpoint",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditioningPowerSaving.deep_remainder_explicit": {
+      "label": "The actual deep remainder has explicit fixed and iterated constants",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditioningPowerSaving.deep_remainder_power_saving": {
+      "label": "The actual remainder saves a half-depth base power with every constant paid",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditioningPowerSaving.degree_lt_of_budget": {
+      "label": "The same explicit threshold makes the base larger than the degree",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditioningPowerSaving.finite_conditioning_power_saving": {
+      "label": "The full finite conditioning recurrence now has a proved power-saving remainder",
+      "documentation": "docs/vinogradov-korobov-framework.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovConditioningPowerSaving.deep_remainder_of_scaled_bounds": {
+      "label": "General exponent transfer, retaining both required actual moment estimates",
       "documentation": "docs/vinogradov-korobov-framework.md",
       "overview": true
     }
