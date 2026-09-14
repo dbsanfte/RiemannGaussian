@@ -44,8 +44,14 @@ Both moments in the actual Korobov product sum now receive that exponent,
 retaining the full joint resonance envelope and quartered Gaussian cost.
 The [precise theorem and limits](vinogradov-korobov-framework.md#critical-high-moment-exponent-and-actual-product-sum)
 do not assert `eps=0`, all smaller moment orders, or evaluated constants
-and thresholds. Uniform parameter costs and joint resonance still need
-estimates before this yields the required zeta growth bound.
+and thresholds. A [Gaussian resonance continuation](vinogradov-gaussian-power-saving.md)
+now pays both moments, every translated tail, smoothing and the logarithmic
+remainder to bound the literal imaginary-power product sum by
+`C*M^(2-1/(2r^2))`, `r=k(k+1)`, for every `k>=4` at
+`t=M^(2k),z=M^4` and all sufficiently large `M`, uniformly over every
+shift subset of `[1,M]`. Its constants and thresholds are unevaluated.
+Broader parameter bands and uniform degree costs remain open before this
+yields the required zeta growth bound.
 
 The **General recurrence** view retains the full result at every finite
 scale pair. The **Information audit** still proves that changing normalization

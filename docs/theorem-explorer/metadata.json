@@ -95,7 +95,7 @@
     },
     {
       "id": "vk-phase",
-      "label": "Vinogradov–Korobov · critical moments and actual product sum",
+      "label": "Vinogradov–Korobov · critical moments and actual power saving",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1020,6 +1020,54 @@
         [
           "gaussianPhaseBandToolkit",
           "vkCriticalProductBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGaussianIntegerSumTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSelectedGaussianWidthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkActualIntervalResonanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExplicitProductTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkReciprocalPrefactorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPowerPhaseWindowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSelectedCoordinatePowerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkActualResonancePowerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPowerProductMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPowerPolynomialSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPowerLogarithmicErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkShiftedImaginarySavingTheorem"
         ]
       ],
       "scopePath": [
@@ -4324,6 +4372,66 @@
       "label": "Both critical moments in the actual Korobov product sum",
       "overview": true,
       "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovGaussianSpacing.int_gaussian_sum_le": {
+      "label": "The full integer Gaussian pays its square-root scale",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovGaussianSpacing.resonanceEnvelope_le_selected_widths": {
+      "label": "Every selected degree pays the better Gaussian width",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovIntervalResonance.actual_resonance_le_allowance": {
+      "label": "An explicit resonance allowance for every actual shift set",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovExplicitKorobov.exists_critical_explicit_product_bound": {
+      "label": "Both critical moments and resonance have proved bounds",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovResonanceScaling.reciprocal_prefactor_le": {
+      "label": "Pay all translated tails at reciprocal frequency scales",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovResonanceWindow.power_phase_unwrapped": {
+      "label": "Degrees above the two-thirds transition stay unwrapped",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovResonanceWindow.selected_coordinate_power_le": {
+      "label": "An eligible degree saves an explicit frequency power",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovResonancePower.exists_actual_resonance_power_saving": {
+      "label": "The complete actual resonance product saves two powers",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovKorobovPowerSaving.exists_power_product_moment_saving": {
+      "label": "A net power saving after moments and smoothing",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovKorobovPowerSaving.exists_power_polynomial_saving": {
+      "label": "Take the positive moment root without losing the saving",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovKorobovPowerSaving.power_logarithmic_error_le": {
+      "label": "The full logarithmic remainder has bounded total cost",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovKorobovPowerSaving.exists_shifted_imaginary_power_saving": {
+      "label": "A genuine saving in the literal imaginary-power product sum",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
     }
   }
 }

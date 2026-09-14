@@ -1317,10 +1317,12 @@ support, quartered Gaussian exponent and whole joint resonance envelope
 remain in the product-sum theorem.
 
 The constants and thresholds are **not numerically evaluated**, including
-their dependence on degree, order and epsilon. A uniform quantitative
-parameter analysis and independent bound for the joint resonance envelope
-are still needed to deduce the logarithmic exponential-sum saving and zeta
-growth estimate. This formalizes the displayed high-order moment result;
+their dependence on degree, order and epsilon. The [Gaussian resonance
+continuation](vinogradov-gaussian-power-saving.md) now proves an explicit
+all-eligible-degree allowance and a net saving for the literal imaginary-power
+product sum at `t=M^(2k),z=M^4`, for every `k>=4` and all sufficiently large
+`M`. Every shift subset of `[1,M]` is covered. Wider parameter ranges and
+uniform quantitative degree costs are still needed for the zeta growth estimate. This formalizes the displayed high-order moment result;
 it is not a claim of historical novelty, RH or a new zero-free region.
 
 ## Shifted correlations and bounded complex weights

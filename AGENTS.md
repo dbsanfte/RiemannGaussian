@@ -2178,6 +2178,29 @@ conditional transfer as that analytic proof. The independent cofinal signed
 arithmetic floor and RH remain open. Numerical verification stays in its
 optional target; do not edit its fingerprinted inputs during a live run.
 
+The Gaussian resonance continuation is now proved in
+`VinogradovGaussianSpacing`, `VinogradovIntervalResonance`,
+`VinogradovExplicitKorobov`, `VinogradovResonanceScaling`,
+`VinogradovResonanceWindow`, `VinogradovResonancePower` and
+`VinogradovKorobovPowerSaving`. The general allowance uses every eligible
+actual degree and retains the full signed joint support upstream from its
+named box estimate. For every k>=4, r=k(k+1), the literal shifted
+imaginary-power product sum at t=M^(2k),z=M^4 is at most
+C*M^(2-1/(2r^2)) for every sufficiently large M and every B subset[1,M].
+Both critical+1/2 moments, full Gaussian tails, smoothing and the entire
+Taylor error are paid. This concrete saving uses degree k-1; the whole
+eligible window q>2k/3 remains available for improvement. Constants and
+thresholds, including their degree dependence, are unevaluated. Do not
+promote these rigid parameter relations to a uniform all-height zeta bound.
+The next tasks are the full-window power saving, wider continuous parameter
+bands and quantitative degree costs. No new zero-free region or combined
+Riesz signed saving follows yet. Keep the Riesz critical profile as the
+RH explorer default; display the actual imaginary-power theorem in its
+critical-moments view and Latest Update. See
+`docs/vinogradov-gaussian-power-saving.md`. These additions enrich the
+existing Vinogradov entries in both ten-entry README lists; they do not
+add extra accomplishments or trigger exhaustive certificate verification.
+
 Work in one coherent slice at a time. A slice should close a real lemma or
 interface needed by the current RH frontier, not merely add parallel
 abstractions.

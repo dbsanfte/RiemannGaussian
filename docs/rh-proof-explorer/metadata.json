@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 5,
-      "id": "critical-moments-riesz-and-korobov",
+      "sequence": 6,
+      "id": "gaussian-resonance-imaginary-power-saving",
       "kind": "theorem",
-      "title": "Critical high-moment exponents now reach the Riesz carrier and Korobov product sum.",
-      "body": "Lean proves the critical exponent plus every positive ε for k≥2, u≥k, with no assumed moment budget. Both actual product-sum moments and the original Riesz initial profile receive it. Joint resonance, quantitative constants and the combined signed saving remain open; the zero-free region is unchanged.",
-      "next": "Next: control the retained joint resonance and track parameter costs toward the zeta-growth estimate.",
+      "title": "Gaussian resonance now gives a fully costed imaginary-power saving.",
+      "body": "For every k≥4, Lean bounds the actual product sum at t=M^(2k), z=M^4 by C·M^(2−1/(2r²)), r=k(k+1), uniformly over every shift subset of [1,M] at sufficiently large M. Both moments, all Gaussian tails and the logarithmic remainder are paid. Constants and thresholds are unevaluated; the zero-free region is unchanged.",
+      "next": "Next: use the full eligible degree window and extend the parameter range toward the zeta-growth estimate.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "vkRieszCriticalProfileTheorem"
+        "vkShiftedImaginarySavingTheorem"
       ],
-      "documentation": "docs/zeta-riesz-conditioned-energy.md#critical-exponent-in-the-original-initial-profile"
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -70,7 +70,7 @@
     },
     {
       "id": "initial-conditioning",
-      "label": "Critical moments · global theorem and actual product sum",
+      "label": "Critical moments · actual imaginary-power saving",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -78,18 +78,18 @@
         ],
         [
           "gaussianPhaseBandToolkit",
-          "vkCriticalProductBoundTheorem"
+          "vkShiftedImaginarySavingTheorem"
         ],
         [
           "gaussianPhaseBandToolkit",
-          "vkUniformExponentImprovementTheorem"
+          "vkExplicitProductTheorem"
         ]
       ],
       "scopePath": [
         "rhCampaign",
         "initialConditioningScope"
       ],
-      "documentation": "docs/vinogradov-korobov-framework.md"
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
     },
     {
       "id": "exponent-audit",
@@ -129,7 +129,7 @@
   "scopes": {
     "boundScope": "Furthest checked carrier bound: at a=0,b=1, use the proved critical homogeneous exponent 2k(u+1)-k(k+1)/2+eps for every eps>0, with k>=2,u>=k. The complete initial allowance is at most B*p^beta, -1/2<=beta<0, with every homogeneous and descendant-energy premise discharged. Prime, padded-quotient and p^S<=X conditions are explicit. Constants and thresholds are unevaluated. Full signed correlations, sampling and block normalization remain; their combined saving is unproved. RH remains open.",
     "sourceScope": "Under the displayed hypothetical right-half-zero assumptions, the normalized original carrier has the prescribed negative-multiplicity source limit. This conditional source identity supplies one side of the proposed contradiction; its independent arithmetic counterpart remains open.",
-    "initialConditioningScope": "The actual unweighted J_((u+1)k,k)(X) has the critical exponent 2k(u+1)-k(k+1)/2+eps for every k>=2,u>=k,eps>0 and every sufficiently large endpoint. Uniform improvement above each fixed defect closes the infimum argument, without an assumed moment budget. Both actual Korobov product moments receive this bound, retaining the whole joint resonance envelope. Eps=0 and all smaller orders are not asserted. Evaluated parameter costs, resonance, zeta growth and the combined weighted saving remain open.",
+    "initialConditioningScope": "The unweighted critical moment exponent plus every eps>0 holds for k>=2,u>=k at all sufficiently large endpoints, without an assumed moment budget. The actual shifted imaginary-power product sum now has a net bound C*M^(2-1/(2r^2)), r=k(k+1), for each k>=4 at t=M^(2k),z=M^4, uniformly over all B subset[1,M]. Both moments, Gaussian smoothing, all translated tails and the complete logarithmic remainder are paid. Constants and thresholds are unevaluated. The general all-eligible-degree resonance allowance is retained. Wider parameter ranges, uniform degree costs, zeta growth and the combined Riesz weighted saving remain open.",
     "exponentAuditScope": "Exact normalization audit: after restoring the source scale, lowering the exponent changes only the deep remainder by the coarse-quotient power. Every original intermediate conditioned energy is identical. The complete scaled allowance is no larger when a full coarse window fits. This comparison bounds no intermediate energy and does not prove RH.",
     "fullRecurrenceScope": "The general original-carrier recurrence applies to every displayed finite scale pair a<=b and depth H. Both actual quotient moments use the proved first improved exponent; all intermediate energies remain in the full allowance. The default view uses the critical exponent plus positive epsilon and a proved negative initial profile under its deeper cutoff conditions. No net signed correlation saving or RH contradiction is asserted."
   },
@@ -363,6 +363,66 @@
       "label": "Both critical moments in the actual Korobov product sum",
       "overview": true,
       "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovGaussianSpacing.int_gaussian_sum_le": {
+      "label": "The full integer Gaussian pays its square-root scale",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovGaussianSpacing.resonanceEnvelope_le_selected_widths": {
+      "label": "Every selected degree pays the better Gaussian width",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovIntervalResonance.actual_resonance_le_allowance": {
+      "label": "An explicit resonance allowance for every actual shift set",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovExplicitKorobov.exists_critical_explicit_product_bound": {
+      "label": "Both critical moments and resonance have proved bounds",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovResonanceScaling.reciprocal_prefactor_le": {
+      "label": "Pay all translated tails at reciprocal frequency scales",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovResonanceWindow.power_phase_unwrapped": {
+      "label": "Degrees above the two-thirds transition stay unwrapped",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovResonanceWindow.selected_coordinate_power_le": {
+      "label": "An eligible degree saves an explicit frequency power",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovResonancePower.exists_actual_resonance_power_saving": {
+      "label": "The complete actual resonance product saves two powers",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovKorobovPowerSaving.exists_power_product_moment_saving": {
+      "label": "A net power saving after moments and smoothing",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovKorobovPowerSaving.exists_power_polynomial_saving": {
+      "label": "Take the positive moment root without losing the saving",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovKorobovPowerSaving.power_logarithmic_error_le": {
+      "label": "The full logarithmic remainder has bounded total cost",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovKorobovPowerSaving.exists_shifted_imaginary_power_saving": {
+      "label": "A genuine saving in the literal imaginary-power product sum",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
     }
   }
 }
