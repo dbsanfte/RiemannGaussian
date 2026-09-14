@@ -2178,28 +2178,34 @@ conditional transfer as that analytic proof. The independent cofinal signed
 arithmetic floor and RH remain open. Numerical verification stays in its
 optional target; do not edit its fingerprinted inputs during a live run.
 
-The Gaussian resonance continuation is now proved in
-`VinogradovGaussianSpacing`, `VinogradovIntervalResonance`,
-`VinogradovExplicitKorobov`, `VinogradovResonanceScaling`,
-`VinogradovResonanceWindow`, `VinogradovResonancePower` and
-`VinogradovKorobovPowerSaving`. The general allowance uses every eligible
-actual degree and retains the full signed joint support upstream from its
-named box estimate. For every k>=4, r=k(k+1), the literal shifted
-imaginary-power product sum at t=M^(2k),z=M^4 is at most
-C*M^(2-1/(2r^2)) for every sufficiently large M and every B subset[1,M].
-Both critical+1/2 moments, full Gaussian tails, smoothing and the entire
-Taylor error are paid. This concrete saving uses degree k-1; the whole
-eligible window q>2k/3 remains available for improvement. Constants and
-thresholds, including their degree dependence, are unevaluated. Do not
-promote these rigid parameter relations to a uniform all-height zeta bound.
-The next tasks are the full-window power saving, wider continuous parameter
-bands and quantitative degree costs. No new zero-free region or combined
+The Gaussian resonance continuation is now proved through the full degree
+window and original Dirichlet blocks. `VinogradovDegreeWindow` and
+`VinogradovFullResonance` give the exact full-window gain m*(m-1),
+m=k-floor(2k/3). `VinogradovFullPowerSaving` gives the literal product sum
+saving 1/(64*k^2) for k>=12 at t=M^(2k),z=M^4. The original k>=4 theorem
+with saving 1/(2r^2), r=k(k+1), remains available.
+`VinogradovPhaseRectangle`, `VinogradovRectangleResonance` and
+`VinogradovRectanglePowerSaving` extend the actual product saving to
+1/(128*k^2), uniformly for M^(2k-2)<=t<=M^(2k),M^4<=z<=4*M^4,
+all B subset[1,M] and every sufficiently large M at each fixed k>=12.
+The exact rectangle degree gain is (m-1)*(m-2). Both critical+1/2 moments,
+full Gaussian tails, smoothing and the entire Taylor error are paid.
+`VinogradovDirichletSaving.exists_partial_dirichlet_saving` gives the
+literal original Dirichlet block, for L<=2*M^4 and M^4<=z<=2*M^4, the
+bound C*L*M^(-1/(128*k^2))+2*M^2 throughout that same height interval.
+Its `exists_dirichlet_block_saving` gives C*M^(4-1/(128*k^2)) at L=M^4.
+The signed averaging identity survives upstream; the endpoint norm bound
+is an explicitly named downstream relaxation, with its full mass paid.
+Constants and starting thresholds are unevaluated for each fixed degree.
+Do not promote these fixed-degree bounds to uniform all-scale zeta growth
+or a VK zero-free region. Quantitative degree costs and the all-scale
+analytic transport remain open. No new zero-free region or combined
 Riesz signed saving follows yet. Keep the Riesz critical profile as the
-RH explorer default; display the actual imaginary-power theorem in its
+RH explorer default; show the actual Dirichlet-block theorem in its
 critical-moments view and Latest Update. See
-`docs/vinogradov-gaussian-power-saving.md`. These additions enrich the
-existing Vinogradov entries in both ten-entry README lists; they do not
-add extra accomplishments or trigger exhaustive certificate verification.
+`docs/vinogradov-gaussian-power-saving.md`. Enrich the existing Vinogradov
+entries in both ten-entry README lists; do not add entries or trigger
+exhaustive certificate verification.
 
 Work in one coherent slice at a time. A slice should close a real lemma or
 interface needed by the current RH frontier, not merely add parallel

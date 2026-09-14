@@ -142,9 +142,9 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Gaussian resonance now gives a fully costed imaginary-power saving.** For every k≥4, Lean bounds the actual product sum at t=M^(2k), z=M^4 by C·M^(2−1/(2r²)), r=k(k+1), uniformly over every shift subset of [1,M] at sufficiently large M. Both moments, all Gaussian tails and the logarithmic remainder are paid. Constants and thresholds are unevaluated; the zero-free region is unchanged.
-Next: use the full eligible degree window and extend the parameter range toward the zeta-growth estimate.
-[Current checked endpoint](RiemannGaussian/VinogradovKorobovPowerSaving.lean#L183)
+**The full degree window now saves in original Dirichlet blocks.** For each k≥12, Lean bounds a literal Dirichlet block of length M⁴ by C·M^(4−1/(128k²)) throughout M^(2k−2)≤t≤M^(2k), M⁴≤z≤2M⁴, at sufficiently large M. The full degree window, both critical moments, all Gaussian tails, Taylor error and averaging endpoints are paid. Constants and thresholds are unevaluated; the zero-free region is unchanged.
+Next: control the degree-dependent constants and transport the block bounds to all-scale zeta growth.
+[Current checked endpoint](RiemannGaussian/VinogradovDirichletSaving.lean#L119)
 · [Proof details](docs/vinogradov-gaussian-power-saving.md).
 <!-- RH_DIRECTION:END -->
 
@@ -160,7 +160,7 @@ hypotheses; the [family index](docs/theorem-families/README.md) covers the full 
 | **Gaussian/Weil explicit formula** | The arithmetic Gaussian expression, including prime-power and Archimedean terms, equals the complete multiplicity-weighted symmetric zero sum for every positive width. | [canonical explicit formula](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean#L1235) |
 | **Gaussian heat and reflected-zero Grams** | The complete Gaussian correlation equals the boundary heat-residue sum. Its vanishing at positive heat time is equivalent to RH; that vanishing remains unproved. | [correlation identity and RH equivalence](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L187) |
 | **Suzuki arithmetic and spectral formulas** | Suzuki's arithmetic function equals its spectral expansion in the safe half-plane. The literal arithmetic Psi is strictly positive on a nonzero punctured neighbourhood of the origin. | [spectral identity](RiemannGaussian/RiemannXiSuzukiWeilVerticalLimit.lean#L462), [local positivity](RiemannGaussian/RiemannXiSuzukiPointwiseLocalPositivity.lean#L298) |
-| **Vinogradov moments and product sums** | Critical high-order moments with every positive ε, and a fully costed saving for actual imaginary-power product sums at explicit power-related scales. Constants and thresholds are unevaluated. | [critical moments](RiemannGaussian/VinogradovCriticalExponent.lean), [actual power saving and scope](docs/vinogradov-gaussian-power-saving.md) |
+| **Vinogradov moments and Dirichlet sums** | Critical high-order moments with every positive ε, and a fully costed power saving for original Dirichlet blocks across continuous parameter intervals. Constants and thresholds are unevaluated. | [critical moments](RiemannGaussian/VinogradovCriticalExponent.lean), [actual power saving and scope](docs/vinogradov-gaussian-power-saving.md) |
 | **Exact phase optimiser and arithmetic floor** | The specified phase cost has a unique eight-frequency optimiser across all feasible finite or infinite integer-frequency families, with a proved arithmetic floor. | [exact optimiser](RiemannGaussian/ZetaPhaseExactOptimizer.lean), [arithmetic floor and exclusion criterion](RiemannGaussian/ZetaPhaseBinomialScale.lean) |
 | **Eta heat and continuous phase matrices** | Exact eta heat/spectral correspondence and small-width matrix coercivity for distinct integer probes retain the full complex Gram correlations. | [heat/spectral identity](RiemannGaussian/EtaSupportGapGaussianSpectral.lean), [continuous matrix coercivity](RiemannGaussian/Hybrid/EtaSupportGapPhaseCoercivity.lean#L276) |
 | **Original signed Riesz carrier bound** | Critical moments plus positive ε and a proved negative initial-energy profile bound the actual carrier. Signed correlation and sampling costs still need a combined saving. | [actual carrier bound](RiemannGaussian/ZetaRieszCriticalProfile.lean), [preserved source](RiemannGaussian/ZetaRieszConditionedEnergy.lean) |
@@ -182,9 +182,9 @@ and the [proof inventory](docs/proof-status.json).
   [The global theorem](RiemannGaussian/VinogradovCriticalExponent.lean)
   covers every k≥2, u≥k at all sufficiently large endpoints without an
   assumed moment estimate. Its constants and thresholds are unevaluated.
-  Gaussian resonance now also gives a [fully costed saving in actual
-  imaginary-power product sums](docs/vinogradov-gaussian-power-saving.md),
-  uniformly over all shift subsets in the stated power-related regime.
+  The full Gaussian degree window now also gives a [power saving for original
+  Dirichlet blocks](docs/vinogradov-gaussian-power-saving.md) throughout the
+  stated continuous height and starting-point intervals, with all costs paid.
 - **At least 67.31% of nontrivial zeros are simple and on the critical line.**
   [The literal-count theorem](RiemannGaussian/External/Zeta23SevenWindowIntegerCertificate.lean)
   proves this for every sufficiently large cumulative or dyadic window.

@@ -1068,6 +1068,50 @@
         [
           "gaussianPhaseBandToolkit",
           "vkShiftedImaginarySavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFullDegreeGainTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFullResonancePowerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFullImaginarySavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPhaseRectangleTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRectangleGainTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRectangleResonanceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRectangleProductMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRectangleLogErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRectangleImaginarySavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPartialDirichletSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDirichletBlockSavingTheorem"
         ]
       ],
       "scopePath": [
@@ -4430,6 +4474,61 @@
     },
     "RiemannGaussian.VinogradovKorobovPowerSaving.exists_shifted_imaginary_power_saving": {
       "label": "A genuine saving in the literal imaginary-power product sum",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovDegreeWindow.windowSaving_eq": {
+      "label": "The whole eligible window has exact quadratic gain",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovFullResonance.exists_full_resonance_power_saving": {
+      "label": "Every eligible degree saves in the full actual resonance",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovFullPowerSaving.exists_full_shifted_imaginary_power_saving": {
+      "label": "The literal product saving improves to inverse-square degree",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovPhaseRectangle.power_rectangle_coefficient_bounds": {
+      "label": "Actual coefficients on a continuous height rectangle",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovRectangleResonance.rectangleSaving_eq": {
+      "label": "Exact gain after paying continuous parameter variation",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovRectangleResonance.exists_rectangle_resonance_power_saving": {
+      "label": "Full resonance saving throughout the actual rectangle",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovRectanglePowerSaving.exists_rectangle_product_moment_saving": {
+      "label": "Both critical moments and continuous resonance costs paid",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovRectanglePowerSaving.rectangle_logarithmic_error_le": {
+      "label": "The full logarithmic error stays bounded on the rectangle",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovRectanglePowerSaving.exists_rectangle_shifted_imaginary_power_saving": {
+      "label": "Actual imaginary-power saving at every rectangle point",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovDirichletSaving.exists_partial_dirichlet_saving": {
+      "label": "Every partial original Dirichlet block receives the saving",
+      "overview": true,
+      "documentation": "docs/vinogradov-gaussian-power-saving.md"
+    },
+    "RiemannGaussian.VinogradovDirichletSaving.exists_dirichlet_block_saving": {
+      "label": "A genuine power saving for the original Dirichlet block",
       "overview": true,
       "documentation": "docs/vinogradov-gaussian-power-saving.md"
     }

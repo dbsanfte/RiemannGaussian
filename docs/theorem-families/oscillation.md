@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**138 modules.** Source links open the definitions, hypotheses and proofs.
+**145 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [DerivativeOrderComparison](../../RiemannGaussian/DerivativeOrderComparison.lean)
@@ -82,11 +82,15 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovCriticalKorobov](../../RiemannGaussian/VinogradovCriticalKorobov.lean)
 - [VinogradovCriticalNormalization](../../RiemannGaussian/VinogradovCriticalNormalization.lean)
 - [VinogradovCrossMoment](../../RiemannGaussian/VinogradovCrossMoment.lean)
+- [VinogradovDegreeWindow](../../RiemannGaussian/VinogradovDegreeWindow.lean)
+- [VinogradovDirichletSaving](../../RiemannGaussian/VinogradovDirichletSaving.lean)
 - [VinogradovExplicitKorobov](../../RiemannGaussian/VinogradovExplicitKorobov.lean)
 - [VinogradovExponentBootstrap](../../RiemannGaussian/VinogradovExponentBootstrap.lean)
 - [VinogradovFibreCorrelation](../../RiemannGaussian/VinogradovFibreCorrelation.lean)
 - [VinogradovFirstExponent](../../RiemannGaussian/VinogradovFirstExponent.lean)
 - [VinogradovFourierEvaluation](../../RiemannGaussian/VinogradovFourierEvaluation.lean)
+- [VinogradovFullPowerSaving](../../RiemannGaussian/VinogradovFullPowerSaving.lean)
+- [VinogradovFullResonance](../../RiemannGaussian/VinogradovFullResonance.lean)
 - [VinogradovGaussianBounds](../../RiemannGaussian/VinogradovGaussianBounds.lean)
 - [VinogradovGaussianCentering](../../RiemannGaussian/VinogradovGaussianCentering.lean)
 - [VinogradovGaussianKernel](../../RiemannGaussian/VinogradovGaussianKernel.lean)
@@ -117,12 +121,15 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovNonsingularSelection](../../RiemannGaussian/VinogradovNonsingularSelection.lean)
 - [VinogradovNormalizedIteration](../../RiemannGaussian/VinogradovNormalizedIteration.lean)
 - [VinogradovPartitionEnergy](../../RiemannGaussian/VinogradovPartitionEnergy.lean)
+- [VinogradovPhaseRectangle](../../RiemannGaussian/VinogradovPhaseRectangle.lean)
 - [VinogradovPowerSumRigidity](../../RiemannGaussian/VinogradovPowerSumRigidity.lean)
 - [VinogradovPrimePacket](../../RiemannGaussian/VinogradovPrimePacket.lean)
 - [VinogradovPrimePowerRigidity](../../RiemannGaussian/VinogradovPrimePowerRigidity.lean)
 - [VinogradovProductEnergy](../../RiemannGaussian/VinogradovProductEnergy.lean)
 - [VinogradovProfileIteration](../../RiemannGaussian/VinogradovProfileIteration.lean)
 - [VinogradovProfileSaving](../../RiemannGaussian/VinogradovProfileSaving.lean)
+- [VinogradovRectanglePowerSaving](../../RiemannGaussian/VinogradovRectanglePowerSaving.lean)
+- [VinogradovRectangleResonance](../../RiemannGaussian/VinogradovRectangleResonance.lean)
 - [VinogradovRemainderScaling](../../RiemannGaussian/VinogradovRemainderScaling.lean)
 - [VinogradovRepeatedMoment](../../RiemannGaussian/VinogradovRepeatedMoment.lean)
 - [VinogradovRepeatedSolutions](../../RiemannGaussian/VinogradovRepeatedSolutions.lean)

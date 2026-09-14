@@ -1,117 +1,163 @@
-# Gaussian resonance and an actual imaginary-power saving
+# Gaussian degree windows and actual Dirichlet-sum cancellation
 
-Lean proves a genuine saving for the literal shifted imaginary-power product
-sum at an explicit set of related scales. For every integer `k >= 4`, put
-`r = k(k+1)`. There are `C > 0` and an integer `M₀` such that every integer
-`M >= M₀` and every finite `B ⊆ {1,...,M}` satisfy
+Lean now proves a power saving for the **original Dirichlet block**, uniformly
+on continuous height and starting-point intervals. For every integer `k >= 12`,
+there are `C > 0` and an integer `M₀` such that all integers `M >= M₀` and
+all real parameters
 
 ```math
-\left|\sum_{a=1}^{M}\sum_{b\in B}(M^4+ab)^{-iM^{2k}}\right|
-\le C M^{\,2-1/(2r^2)}.
+M^{2k-2}\le t\le M^{2k},\qquad M^4\le z\le 2M^4
+```
+
+satisfy
+
+```math
+\left|\sum_{n=0}^{M^4-1}(z+n)^{-it}\right|
+\le C M^{\,4-1/(128k^2)}.
 ```
 
 The endpoint is
-[`exists_shifted_imaginary_power_saving`](../RiemannGaussian/VinogradovKorobovPowerSaving.lean).
-The Lean statement uses the existing literal `dirichletTerm`, whose definition
-is the displayed complex power. The bound is uniform over all such subsets
-`B`; the full support bound would be `M²`. Constants and starting thresholds,
-including their dependence on `k`, are **not numerically evaluated**.
-This is the displayed regime `t=M^(2k), z=M^4`. It does not yet establish
-uniform zeta growth, a new zero-free region, or the signed Riesz contradiction.
+[`VinogradovDirichletSaving.exists_dirichlet_block_saving`](../RiemannGaussian/VinogradovDirichletSaving.lean).
+Its `block` and `dirichletTerm` are the existing literal sum and complex
+power. Every moment, resonance, smoothing, Taylor and averaging cost is paid.
+Constants and starting thresholds are **unevaluated for each fixed degree**.
+This is a finite Dirichlet-sum theorem. Uniform control as the degree varies,
+all-scale zeta growth and a new Vinogradov–Korobov zero-free region remain open.
+The proved zero-free union and the independent signed Riesz obstruction are
+unchanged. No historical novelty or benchmark record is claimed here.
 
-## The general resonance bound
+## Partial blocks and the original signed identity
 
-The upstream [exact weighted fibre identity](../RiemannGaussian/VinogradovGaussianResonance.lean)
-retains every complex coefficient and the complete attainable difference
-vector. Its positive resonance sum has the form
+The stronger interface
+[`exists_partial_dirichlet_saving`](../RiemannGaussian/VinogradovDirichletSaving.lean)
+retains every integer partial length `0 <= L <= 2M^4`:
 
 ```math
-\mathcal R_s(a,\gamma;B)
-=\sum_{h\in\mathcal D_s(B)}\prod_{j=1}^{k} K_{a_j}(\gamma_jh_j),
-\qquad
-K_a(x)=a^{-1/2}\sum_{m\in\mathbb Z}e^{-\pi(m-x)^2/a}.
+\left|\sum_{n=0}^{L-1}(z+n)^{-it}\right|
+\le C L M^{-\delta}+2M^2,\qquad \delta=\frac1{128k^2}.
 ```
 
-[`VinogradovGaussianSpacing`](../RiemannGaussian/VinogradovGaussianSpacing.lean)
-proves the full integer Gaussian sum is at most `1+sqrt(pi/c)`. It identifies
-the integer distance with `|x|` when `|x| <= 1/2`. Including all translated
-tails, every finite unwrapped sample set `S` at nonzero spacing `gamma` has
+This comes from the existing
+[exact product-shift identity](../RiemannGaussian/VinogradovKorobovBlock.lean).
+Its complex boundary correction and every outer base phase survive upstream.
+The named downstream bound first pays the actual product-sum norm and the
+complete endpoint correction, then divides by the positive averaging mass
+`M²`. The boundary costs at most `2M²` after division. At `L=M⁴` this is
+absorbed below the displayed power-saving bound. No independence of shifts,
+vanishing boundary, or cancellation in the Taylor remainder is assumed.
+
+## The actual product sum on a continuous rectangle
+
+[`VinogradovRectanglePowerSaving`](../RiemannGaussian/VinogradovRectanglePowerSaving.lean)
+proves, for each `k >= 12`, all sufficiently large integers `M`, every finite
+`B ⊆ {1,...,M}`, and every point of the larger rectangle
 
 ```math
-\sum_{n\in S}\operatorname{tailEnvelope}(a,\gamma n)
-\le \frac{2}{\sqrt a(1-e^{-\pi/a})}
+M^{2k-2}\le t\le M^{2k},\qquad M^4\le z\le 4M^4,
+```
+
+that
+
+```math
+\left|\sum_{a=1}^{M}\sum_{b\in B}(z+ab)^{-it}\right|
+\le C M^{\,2-1/(128k^2)}.
+```
+
+The fourfold starting-point interval contains every `z+n` used by the
+partial-block averaging theorem. Its constants are uniform over this entire
+rectangle and all such subsets `B`, for the fixed degree. The full logarithmic
+approximation error for each product sum is at most `1/(k+1)`, and its base
+phase has unit modulus.
+
+## Exact structure of the full degree window
+
+Write `q=1,...,k`, `r=k(k+1)`, and use reciprocal scales
+`a_q=(r M^q)^(-2)`. The actual logarithmic Fourier coefficients are
+
+```math
+\gamma_q=\frac{-t(-1)^{q-1}}{2\pi qz^q}.
+```
+
+The actual difference support obeys `|h_q| <= r M^q`. At the corner
+`t=M^(2k), z=M^4`, every degree `q>2k/3` is unwrapped once `M>=r`.
+Its complete Gaussian coordinate costs a constant times `M^(4q-2k)`;
+a full coordinate count would cost `M^(2q)`. Using every eligible degree
+gives the exact gain
+
+```math
+S=m(m-1),\qquad m=k-\left\lfloor\frac{2k}{3}\right\rfloor.
+```
+
+[`VinogradovDegreeWindow`](../RiemannGaussian/VinogradovDegreeWindow.lean)
+proves this identity and the bound `k² <= 16(S-1)` for `k>=12`.
+[`VinogradovFullResonance`](../RiemannGaussian/VinogradovFullResonance.lean)
+transfers it to the **complete actual** resonance product.
+After paying both critical moments plus `epsilon=1/2`,
+[`VinogradovFullPowerSaving`](../RiemannGaussian/VinogradovFullPowerSaving.lean)
+obtains the sharper corner product saving `1/(64k²)`. The earlier
+[one-degree theorem](../RiemannGaussian/VinogradovKorobovPowerSaving.lean),
+valid already for `k>=4`, remains available with saving `1/(2r²)`.
+
+For the continuous rectangle, the upper coefficient bound preserves the
+same no-wrap condition. The lower bound costs at most `4^q M²` in the
+Gaussian width. Thus the selected coordinate exponent becomes
+`4q-2k+2`. Using every degree with `2k<3q` and `q<k` gives exactly
+
+```math
+S'=(m-1)(m-2),\qquad k^2\le32(S'-1)\quad(k\ge12).
+```
+
+These corner comparisons are proved in
+[`VinogradovPhaseRectangle`](../RiemannGaussian/VinogradovPhaseRectangle.lean);
+the exact gain and complete resonance bound are in
+[`VinogradovRectangleResonance`](../RiemannGaussian/VinogradovRectangleResonance.lean).
+The gain remains quadratic after paying the continuous parameter variation.
+
+## Every Gaussian and moment cost
+
+The [upstream weighted fibre identity](../RiemannGaussian/VinogradovGaussianResonance.lean)
+retains complex coefficients and full attainable difference vectors. Only a
+named downstream estimate enlarges this support to its proved coordinate box.
+For each nonzero, unwrapped coordinate, the
+[full translated Gaussian bound](../RiemannGaussian/VinogradovGaussianSpacing.lean)
+pays
+
+```math
+\frac{2}{\sqrt a(1-e^{-\pi/a})}
 \min\left\{|S|,1+\frac{\sqrt a}{|\gamma|}\right\}.
 ```
 
-The two individual bounds and their selected-coordinate combination are
-proved in that module. No omitted Gaussian translate is hidden in an error.
+Every other coordinate pays its full support count. The general allowance in
 [`VinogradovIntervalResonance`](../RiemannGaussian/VinogradovIntervalResonance.lean)
-proves the actual difference support satisfies `|h_j| <= sY^j` for every
-`B ⊆ {0,...,Y}`. Its named downstream box estimate is a finite product:
-each coordinate with nonzero `gamma_j` and
-`|gamma_j| sY^j <= 1/2` uses the better of `2sY^j+1` and
-`1+sqrt(a_j)/|gamma_j|`; every other coordinate pays its full count.
-The canonical selection includes **all** eligible degrees.
-The original joint support and signed identity remain available upstream.
+uses all eligible actual degrees. No translated tail is omitted.
+The original reciprocal-scale support cost is exactly `k*pi`; the existing
+centering theorem quarters it in the product bound.
 
-[`VinogradovExplicitKorobov`](../RiemannGaussian/VinogradovExplicitKorobov.lean)
-combines that allowance with both proved critical moments in the actual
-product sum. This general inequality has no supplied spacing or moment
-estimate as a premise. It can still be too large in a particular regime;
-the cost calculation below is what establishes a net saving.
-
-## Paying the complete cost
-
-Use reciprocal scales `a_j=(r M^j)^(-2)`. Lean proves their actual first-family
-support cost is exactly `k*pi`; the existing centering theorem quarters this
-in the product-sum bound. The translated-tail prefactor is bounded by a
-constant times `r M^j`, uniformly for `M >= 1`.
-
-The actual logarithmic coefficients retain their Fourier normalization:
-
-```math
-\gamma_j=\frac{-t(-1)^{j-1}}{2\pi jz^j}.
-```
-
-At `t=M^(2k), z=M^4`, their difference range is
-`s M^(2k-3j)/(2*pi*j)`. Consequently every `j>2k/3` is unwrapped once
-`M>=s`. Its complete Gaussian coordinate cost is at most a fixed constant
-times `M^(4j-2k)`, whereas the full count costs `M^(2j)`.
-These identities and inequalities are proved in
-[`VinogradovResonanceScaling`](../RiemannGaussian/VinogradovResonanceScaling.lean)
-and [`VinogradovResonanceWindow`](../RiemannGaussian/VinogradovResonanceWindow.lean).
-
-For every `k>=4`, degree `j=k-1` belongs to that window and saves two powers.
-[`VinogradovResonancePower`](../RiemannGaussian/VinogradovResonancePower.lean)
-pays all other degrees and proves the **complete** resonance product is at
-most `C M^(k(k+1)-2)`. This concrete result uses one eligible degree; the
-general bound retaining all eligible degrees is stronger and remains available.
-
-Both moment orders are `r=k(k+1)`. Each uses the proved critical exponent
-plus `epsilon=1/2`. After every Holder prefactor and the Gaussian cost is
-restored, Lean obtains
+Both moment orders are `r=k(k+1)` and use the proved critical exponent plus
+`1/2`. On the rectangle, the complete polynomial product therefore satisfies
 
 ```math
 |\text{actual polynomial product sum}|^{2r^2}
-\le C M^{4r^2-1}.
+\le C M^{\,4r^2-(S'-1)}.
 ```
 
-Taking the positive moment root gives the asserted strict saving. The entire
-logarithmic-to-polynomial error is at most `1/(k+1)`; its exact base phase has
-unit modulus. Paying this bounded error transfers the saving to the literal
-imaginary-power sum without assuming cancellation in the remainder.
+Taking the positive moment root yields saving `(S'-1)/(2r²)`, which Lean
+bounds below by `1/(128k²)`. Paying the full bounded Taylor error gives the
+literal imaginary-power theorem, then the signed shift identity gives the
+original Dirichlet-block result.
 
-## What remains
+## Remaining analytic work
 
-A useful next step is to retain the savings of the whole eligible degree
-window and extend the rigid scale relation to continuous parameter bands
-usable in the existing product-shift averaging identity. Uniform quantitative
-control of the degree-dependent moment constants and thresholds is also
-needed for a Vinogradov–Korobov zero-free theorem. The original Riesz carrier
-still needs its combined signed correlation saving. These are open tasks;
-this product-sum theorem supplies no new zero-free width by itself.
+The degree-window saving is now quadratic and the actual block transfer is
+proved. The next major requirement is quantitative control of moment
+constants and starting thresholds **as the degree varies**, together with
+all-scale block decomposition, damping and zeta-growth transport. Existential
+constants at each fixed degree do not supply that uniform theorem.
+The original Riesz carrier separately needs its combined signed correlation
+saving. No new zero-free width follows from the present block theorem alone.
 
-The compiled endpoint appears in the **Critical moments** view of the
+The compiled endpoints appear in the **Critical moments** view of the
 [RH explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/) and the
 Vinogradov–Korobov view of the [main explorer](https://dbsanfte.github.io/RiemannGaussian/).
-Their metadata and axiom audits are generated from the ordinary Lean root.
+Their metadata, exact source locations and transitive axiom audits come from
+the ordinary Lean root.

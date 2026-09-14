@@ -129,11 +129,13 @@ def run(output, url=None, refresh_preview=False):
                         statement = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]].statement')
                         assert 'meanValue' in statement and '∃' in statement
                         assert '0 < eps' in statement and 'eps' in statement
-                        saving = page.evaluate("PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i]).find(n => n.id.endsWith('.exists_shifted_imaginary_power_saving'))")
+                        saving = page.evaluate("PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i]).find(n => n.id.endsWith('.exists_dirichlet_block_saving'))")
                         assert saving is not None
-                        assert 'dirichletTerm' in saving['statement'] and '4 ≤ k' in saving['statement']
+                        assert 'dirichletTerm' in saving['statement'] and '12 ≤ k' in saving['statement']
                         assert '1 /' in saving['statement'] and 'M₀ ≤ M' in saving['statement']
-                        assert saving['source']['path'].endswith('VinogradovKorobovPowerSaving.lean')
+                        assert saving['source']['path'].endswith('VinogradovDirichletSaving.lean')
+                        assert 'block' in saving['statement'] and '2 * k - 2' in saving['statement']
+                        assert 'z ≤ 2 *' in saving['statement'] and '128' in saving['statement']
                     if endpoint['id'] == 'full-recurrence':
                         statement = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]].statement')
                         assert 'conditioningAllowance' in statement and 'a ≤ b' in statement
