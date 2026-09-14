@@ -95,7 +95,7 @@
     },
     {
       "id": "vk-phase",
-      "label": "Vinogradov–Korobov · signed completions and congruence energy",
+      "label": "Vinogradov–Korobov · full signed conditioned-moment energy",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -432,6 +432,42 @@
         [
           "gaussianPhaseBandToolkit",
           "vkActualCongruenceEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExactTargetGramTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExactTargetIntegralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExactTargetRefinementTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFullFibreIntegralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkOriginalDigitTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkOriginalSignatureTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkActualSignatureCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkWholeMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkActualWindowMomentTheorem"
         ]
       ],
       "scopePath": [

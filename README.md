@@ -111,13 +111,13 @@ Make the proved region cover every applicable benchmark, preserving each height 
 
 ## Latest Update
 
-**Signed block counts now pay an actual Fourier-energy estimate.**
-Lean combines coarse residue-block counts with their finite signed tail
-completions, and proves the pointwise Cauchy bound for products of actual
-residue-window Fourier sums. Exact complex cross terms and phase
-conjugations remain available before that estimate. The next step is to
-reassemble the congruence fibres into the full conditioned moment and
-prove the stronger high-moment saving. The zero-free region is unchanged.
+**Signed residue counts now control the full conditioned moment.**
+Lean partitions the original complex energy by its complete congruence
+targets, then proves the finer-residue energy bound for the full positive
+block-and-tail window. Arbitrary complex weights and their correlations
+survive; the count and orthogonality conditions are discharged. The next
+steps are product factorization, Hölder estimates, singular conditioning
+and the stronger high-moment saving. The zero-free region is unchanged.
 The proved 67.31% simple-zero certificate retains separate optional
 verification and an unevaluated starting height.
 [Certificate and audit](docs/numerical-certificate.md)

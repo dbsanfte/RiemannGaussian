@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**84 modules.** Source links open the definitions, hypotheses and proofs.
+**87 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [DerivativeOrderComparison](../../RiemannGaussian/DerivativeOrderComparison.lean)
@@ -79,9 +79,12 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovKorobovLogPhase](../../RiemannGaussian/VinogradovKorobovLogPhase.lean)
 - [VinogradovKorobovMoment](../../RiemannGaussian/VinogradovKorobovMoment.lean)
 - [VinogradovMeanValue](../../RiemannGaussian/VinogradovMeanValue.lean)
+- [VinogradovMomentPartition](../../RiemannGaussian/VinogradovMomentPartition.lean)
 - [VinogradovMomentReduction](../../RiemannGaussian/VinogradovMomentReduction.lean)
+- [VinogradovPartitionEnergy](../../RiemannGaussian/VinogradovPartitionEnergy.lean)
 - [VinogradovPowerSumRigidity](../../RiemannGaussian/VinogradovPowerSumRigidity.lean)
 - [VinogradovPrimePowerRigidity](../../RiemannGaussian/VinogradovPrimePowerRigidity.lean)
+- [VinogradovResidueEnergy](../../RiemannGaussian/VinogradovResidueEnergy.lean)
 - [VinogradovResidueMoment](../../RiemannGaussian/VinogradovResidueMoment.lean)
 - [VinogradovShiftedMoment](../../RiemannGaussian/VinogradovShiftedMoment.lean)
 - [VinogradovSignedCongruence](../../RiemannGaussian/VinogradovSignedCongruence.lean)

@@ -1860,10 +1860,26 @@ and pays the pointwise Cauchy estimate with the actual signed fibre count.
 `coarse_product_energy_le` applies it to products of actual positive
 residue-window Fourier sums for every finite endpoint X. Each reversed
 power-vector phase is exactly conjugated before its norm is simplified.
-This is the pointwise ingredient in Wooley equation (6.5), not the complete
-efficient-congruencing step. Reassembling all congruence fibres into the
-full conditioned moment, arbitrary singular conditioning and the stronger
-high-moment iteration remain open. Stronger high-order moment bounds and
+This is the pointwise ingredient in Wooley equation (6.5).
+`VinogradovMomentPartition` now partitions the full original complex Gram
+form and actual torus energy by all translated degree targets. Actual
+positive tail windows discharge the complete collision condition, and
+arbitrary integer coefficients and complex configuration weights survive.
+`VinogradovPartitionEnergy` retains the exact coarse/fine polynomial
+refinement and proves its full integral estimate with all integrability
+and finite sum exchanges paid. `VinogradovResidueEnergy` then discharges
+both arithmetic conditions for the original block entries: reduction modulo
+p^(k*b) preserves their coarse class, normalized next digits and every signed
+degree target. For 1<=k<p and a<b, `conditioned_whole_integral_le` pays the
+whole original energy by the sum of its finer block-residue energies, with
+cost p^((a+b)*k*(k-1)/2)*r+!*r-!. `window_whole_integral_le` applies it to all
+admissible positive blocks and literal tail windows up to X, retaining
+arbitrary complex weights and their correlations. Unlike the earlier
+canonical block count, this whole-moment theorem includes original entries
+up to X. Do not keep listing the exact target partition or this whole-moment
+transfer as open. These are the ingredients underlying Wooley (6.4)--(6.6);
+product factorization, subsequent Holder estimates, arbitrary singular
+conditioning and the stronger high-moment iteration remain open. Stronger high-order moment bounds and
 quantitative joint resonance control,
 the required exponential-sum saving, zeta growth and the VK zero-free region
 remain unproved here. Do not add a VK curve to the proved union or promote a

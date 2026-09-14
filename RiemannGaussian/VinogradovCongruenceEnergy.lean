@@ -16,9 +16,10 @@ sign factorial for every complex weight family on the fibre.
 The literal positive residue-window Fourier sums keep their full signed
 power vectors. Reversing a phase is exactly conjugation; their conditioned
 products receive the pointwise Cauchy estimate used in efficient congruencing
-(Wooley 2012, equation (6.5)). Summing all target fibres, transferring the
-result to the complete conditioned moment, and the high-moment iteration
-still require their own proofs.
+(Wooley 2012, equation (6.5)). `VinogradovMomentPartition` and
+`VinogradovResidueEnergy` subsequently prove the exact target partition
+and whole conditioned-moment transfer. The high-moment iteration still
+requires its own proof.
 -/
 
 namespace RiemannGaussian.VinogradovCongruenceEnergy

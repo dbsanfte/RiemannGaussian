@@ -13,7 +13,10 @@ The signed version retains both sign classes and an arbitrary common
 translation, and now bounds the nonsingular block projection of the
 original moment equations when both tails lie in one coarse residue class.
 The complete coarse-conditioned count also covers original blocks sharing
-a residue modulo p^a, with distinct normalized next digits.
+a residue modulo p^a, with distinct normalized next digits. Exact target
+partition and the actual signed count now control the full original
+weighted moment by its finer block-residue energies, for all admissible
+positive blocks and tails up to the finite endpoint.
 The Vinogradov–Korobov zeta growth estimate
 and zero-free region remain unproved in this repository. No external
 analytic estimate is installed as an axiom or as a claimed discharged premise.
@@ -339,10 +342,11 @@ division. The count still requires their normalized next digits to be
 distinct. The finite-window completion bounds below now provide the
 normalized mean-value budget for each fixed pair of blocks. The following
 combined count also pays all finite tail completions for canonical block
-representatives. Reassembling full conditioned moments, partitioning
-arbitrary singular configurations, the high-moment iteration and
-quantitative joint resonance control remain open. No required exponential-sum saving, new zeta-growth
-estimate, VK zero-free region or RH proof follows yet.
+representatives. The full conditioned-moment transfer is proved below;
+partitioning arbitrary singular configurations, the high-moment iteration
+and quantitative joint resonance control remain open. No required
+exponential-sum saving, new zeta-growth estimate, VK zero-free region or RH
+proof follows yet.
 
 ## Actual residue-window tails and every fixed sign pattern
 
@@ -478,11 +482,78 @@ This is the pointwise Cauchy ingredient in
 [Wooley (2012), equation (6.5), p. 1601](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
 The source uses the uniform `k!` allowance; the Lean statement retains the
 actual sign factorial. The full target fibre, all residue coordinates and
-original complex products remain available upstream. The exact sum over
-all congruence targets and its equality with the full conditioned moment
-(equation (6.4)), the later Hölder steps, singular conditioning and
-high-moment iteration still need proofs. No new zero-free width follows
-yet, and no historical novelty is claimed for these classical ingredients.
+original complex products remain available upstream. The exact target
+partition and its whole-moment energy transfer are now proved next. Product
+factorization, the later Hölder steps, singular conditioning and high-moment
+iteration still need proofs. No new zero-free width follows yet, and no
+historical novelty is claimed for these classical ingredients.
+
+## Exact whole-moment partition and finer-residue energy
+
+[VinogradovMomentPartition](../RiemannGaussian/VinogradovMomentPartition.lean)
+keeps any finite configuration family `z`, its original integer blocks
+`x(z)`, literal positive tails `u(z)` in `eta` modulo `q^b`, and arbitrary
+complex weights `w_z`. Both block coefficients `c_i` and tail coefficients
+`tau_i` may be arbitrary integers. Define the full frequency and target by
+
+```math
+v_j(z)=\sum_i c_i x_i(z)^j+\sum_i\tau_i u_i(z)^j,
+\qquad
+M_j(z)=\sum_i c_i(x_i(z)-\eta)^j\pmod{q^{jb}}.
+```
+
+Complete frequency equality implies equality of **every** target degree.
+This follows from the proved weighted binomial translation and the literal
+tail divisibilities. It is valid for every nonzero base `q`; primality is
+not needed for the partition. If `P` is the original weighted Fourier sum
+and `P_m` restricts its original weights to `M(z)=m`, Lean proves
+
+```math
+\int_{(\mathbb R/\mathbb Z)^k}|P(\alpha)|^2\,d\alpha
+=\sum_m\int_{(\mathbb R/\mathbb Z)^k}|P_m(\alpha)|^2\,d\alpha.
+```
+
+The full complex Gram identity is proved before this real energy identity.
+It retains all same-target cross terms; only proved cross-target
+orthogonality removes terms. Arbitrary correlations and restrictions
+represented by the original finite configuration family remain intact.
+
+[VinogradovPartitionEnergy](../RiemannGaussian/VinogradovPartitionEnergy.lean)
+then retains the exact polynomial refinement `P_m=sum_{c:coarse(c)=m}P_c`.
+Pointwise Cauchy with the proved number of fine labels, continuity, and the
+actual Haar integral give its whole-energy inequality. No integrability or
+finite sum exchange is left as an assumption.
+
+[VinogradovResidueEnergy.window_whole_integral_le](../RiemannGaussian/VinogradovResidueEnergy.lean)
+discharges the arithmetic conditions for the **full original window**, not
+just canonical block representatives. For `1≤k<p`, `a<b`, include every
+positive block `x_i≤X` in the specified class `xi` modulo `p^a` with distinct
+normalized next digits, and every positive tail entry `u_i≤X` in `eta`
+modulo `p^b`. Retain the original block signs and arbitrary integer tail
+coefficients and complex configuration weights. Let `P_c` now restrict
+only the full block residue tuple modulo `p^(kb)`. The result is
+
+```math
+\boxed{\displaystyle
+\int|P(\alpha)|^2\,d\alpha
+\le r_+!\,r_-!\,p^{(a+b)k(k-1)/2}
+\sum_{c\in\mathcal C}\int|P_c(\alpha)|^2\,d\alpha.}
+```
+
+Here `C` is the complete set of canonical residue tuples retaining the
+coarse class and distinct normalized next digits. Reduction of each
+original entry modulo `p^(kb)` is proved to preserve both properties and
+every translated degree target. Thus the earlier signed prime-power count
+bounds each target fibre and pays the displayed cost. The result holds at
+every finite endpoint, including empty windows. A general version also
+retains arbitrary finite correlated configuration families.
+
+This is the whole-moment transfer underlying
+[Wooley (2012), equations (6.4)–(6.6), pp. 1600–1601](https://annals.math.princeton.edu/wp-content/uploads/annals-v175-n3-p12-p.pdf).
+It forces matching finer block residues in the surviving energies. It does
+not yet identify every independent product with the source's `F` and `f`
+notation, prove the subsequent Hölder/conditioning iteration, or establish
+the required high-moment saving. No zero-free width is added by this slice.
 
 ## Shifted correlations and bounded complex weights
 
