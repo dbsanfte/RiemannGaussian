@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**119 modules.** Source links open the definitions, hypotheses and proofs.
+**120 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [DerivativeOrderComparison](../../RiemannGaussian/DerivativeOrderComparison.lean)
@@ -85,6 +85,7 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovGaussianCentering](../../RiemannGaussian/VinogradovGaussianCentering.lean)
 - [VinogradovGaussianKernel](../../RiemannGaussian/VinogradovGaussianKernel.lean)
 - [VinogradovGaussianResonance](../../RiemannGaussian/VinogradovGaussianResonance.lean)
+- [VinogradovImprovedNormalization](../../RiemannGaussian/VinogradovImprovedNormalization.lean)
 - [VinogradovInitialConditioning](../../RiemannGaussian/VinogradovInitialConditioning.lean)
 - [VinogradovInitialEnergy](../../RiemannGaussian/VinogradovInitialEnergy.lean)
 - [VinogradovInitialExceptional](../../RiemannGaussian/VinogradovInitialExceptional.lean)

@@ -2,7 +2,7 @@
 
 [Open the current proof explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/).
 The default view ends at
-[`actual_band_le_conditioned_iteration`](../RiemannGaussian/ZetaRieszConditioningTransfer.lean#L189),
+[`exists_original_band_improved_iteration`](../RiemannGaussian/ZetaRieszImprovedMoment.lean),
 the furthest checked bound in the active signed Riesz carrier campaign.
 **RH remains open.** This is a finite bound with the parameter conditions
 shown in its Lean statement, not a proof that its right-hand side is small
@@ -22,7 +22,9 @@ averages into a finite conditioned-energy recurrence. Sampling costs,
 positive block normalization, the deep remainder and every intermediate
 conditioned energy are retained. Their combined budget has **not** been
 proved small enough for the contradiction. Initial global mean-value
-conditioning, improved high-moment exponents and the required weighted
+conditioning and the first global exponent saving are proved. The
+improved exponent now pays both quotient moments in this carrier bound.
+The critical high-moment exponent and required combined weighted
 arithmetic saving remain open. The [proof notes](zeta-riesz-conditioned-energy.md#direct-transfer-to-the-finite-conditioning-recurrence)
 give the exact identities and bounds.
 
@@ -38,8 +40,12 @@ allowance and an independent global exponent improvement of `1/(3k)` for
 every `k>=2,u>=k`, at every sufficiently large cutoff. Prime selection,
 exceptional-coordinate absorption and all endpoint transfers are proved.
 [The precise theorem and remaining moment obstruction](vinogradov-korobov-framework.md#first-global-high-moment-exponent-improvement)
-remain separate from the original weighted-carrier endpoint. No arrow from
-this auxiliary result to an RH contradiction is asserted.
+now feed the original weighted-carrier endpoint. The **Information audit**
+view proves exactly how lowering the exponent changes that bound: the deep
+remainder gains `(X/p^a)^(-1/(3k))`, while the full intermediate energy sum
+is identical after restoring its source scale. The quotient threshold is
+not numerically evaluated. No arrow from this result to an RH contradiction
+is asserted.
 
 ## Evergreen presentation
 

@@ -64,6 +64,9 @@ def run(output, url=None, refresh_preview=False):
                     (campaign.SITE / 'preview.json').write_bytes(campaign.explorer.json_bytes(capture))
                 root = page.evaluate('PROOF_VIEW.endpoint.roots[0]')
                 data = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
+                assert data['id'].endswith('.exists_original_band_improved_iteration')
+                assert 'conditioningAllowance' in data['statement']
+                assert '1 / (3 *' in data['statement'] and '∃' in data['statement']
                 node = page.locator(f'[data-node="{root}"]')
                 node.hover()
                 assert page.locator('#tooltip').is_visible()
@@ -123,6 +126,12 @@ def run(output, url=None, refresh_preview=False):
                         statement = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]].statement')
                         assert 'meanValue' in statement and '∃' in statement
                         assert '1 / (3 *' in statement
+                    if endpoint['id'] == 'exponent-audit':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'only the deep remainder' in scope
+                        assert 'intermediate conditioned energy is identical' in scope
+                        statement = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]].statement')
+                        assert 'conditioningAllowance' in statement and 'eps' in statement
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()

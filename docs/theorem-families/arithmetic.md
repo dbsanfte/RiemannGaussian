@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**115 modules.** Source links open the definitions, hypotheses and proofs.
+**116 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -68,6 +68,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszBlockMass](../../RiemannGaussian/ZetaRieszBlockMass.lean)
 - [ZetaRieszConditionedEnergy](../../RiemannGaussian/ZetaRieszConditionedEnergy.lean)
 - [ZetaRieszConditioningTransfer](../../RiemannGaussian/ZetaRieszConditioningTransfer.lean)
+- [ZetaRieszImprovedMoment](../../RiemannGaussian/ZetaRieszImprovedMoment.lean)
 - [ZetaRieszInterpolation](../../RiemannGaussian/ZetaRieszInterpolation.lean)
 - [ZetaRoughCoprimeFactorDecay](../../RiemannGaussian/ZetaRoughCoprimeFactorDecay.lean)
 - [ZetaRoughDivisorCorrelation](../../RiemannGaussian/ZetaRoughDivisorCorrelation.lean)

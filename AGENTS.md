@@ -2063,8 +2063,26 @@ Do not list the first global exponent improvement as open. The critical
 exponent, full VK growth/detector chain, quantitative original weighted
 Riesz saving and additional zero-free benchmark coverage remain open.
 The terminal threshold is existential; no evaluated threshold or historical
-novelty is claimed. Keep this unweighted exponent in the auxiliary RH view;
-its default endpoint remains the actual original-carrier bound.
+novelty is claimed. The auxiliary view retains the unweighted exponent;
+the default view now applies it to the actual original carrier below.
+
+`VinogradovImprovedNormalization` now pays all eligible padded quotient
+moments at lambda1=k(2u+1)-1/(3k), with a common C>=1 and threshold N0.
+Both homogeneous premises in the full mixed and signed normalized
+recurrences are discharged. `ZetaRieszImprovedMoment` gives the original
+Riesz band both the explicit improved two-scale bound and the complete
+finite conditioning bound. Its `exists_original_band_improved_iteration`
+is the current RH explorer endpoint. Preserve all actual fibre correlations,
+sampling costs, positive lower block mass and finite-depth/quotient conditions.
+The exact `allowance_exponent_shift_identity` proves that after restoring
+the source scale, only the deep remainder changes by (X/p^a)^(-epsilon);
+every original intermediate energy is identical. The companion comparison
+proves the full scaled allowance cannot increase for X>=p^a,epsilon>=0.
+Do not assign that factor to the intermediate sum or claim its independent
+saving. The common constants and thresholds are unevaluated. Combined
+weighted saving, the critical moment exponent, VK growth/detector chain and
+additional zero-free coverage remain open. Keep the exact comparison in
+the explorer's information-audit view and document these limitations.
 
 `VinogradovFibreCorrelation` now retains the exact complex average of the
 original configuration weights on each full frequency fibre. Its exact
@@ -2411,7 +2429,7 @@ this regime yourself; do not rely on the user to request individual commits,
 pushes, or CI checks.
 
 - The user authorized parallel theorem development and CI on 2026-09-13,
-  until further notice. Continue local work while CI checks a committed
+  and reaffirmed this on 2026-09-14, until further notice. Continue local work while CI checks a committed
   snapshot; keep verification and publication claims attached to that exact
   SHA. This supersedes earlier instructions to wait before starting a slice.
 - The user also authorized committing and pushing all accumulated work once

@@ -285,6 +285,68 @@ alone does not control the remaining intermediate sum. This is a finite
 statement: its cutoff condition prevents sending `H` to infinity at fixed
 `X`. It proves no new zero-free width or independent signed arithmetic floor.
 
+## The improved global exponent in the original band
+
+[`exists_original_band_improved_iteration`](../RiemannGaussian/ZetaRieszImprovedMoment.lean)
+now inserts the independently proved exponent
+`lambda1=k(2u+1)-1/(3k)` into the **complete original-carrier bound**.
+For every `k>=2,u>=k`, it constructs one `C>=1` and a finite quotient
+threshold `N0`. For nonzero `p`, the displayed conditions are
+
+```math
+a\le b,\quad H\ge1,\quad b-a\le2H,\quad
+p^{b+H}\le X,\quad N_0\le\lfloor X/p^{b+H}\rfloor+1,\quad
+(CD)^2\le p,\qquad X=2^{32N}.
+```
+
+They imply positive block mass and discharge **both actual homogeneous
+moment estimates**, including all quotient rounding. With the original
+correlated sampling cost `S`, lower block mass `B`, and unchanged actual
+allowance `A`, the result is
+
+```math
+\boxed{|\operatorname{Band}_N|^{2ku}
+ \le \frac{S}{B^2}\,
+ M_{a,b}(\lambda_1)\mathcal A_{a,b,H}(\lambda_1).}
+```
+
+The companion `exists_original_band_improved_moment_bound` supplies the
+explicit two-quotient bound
+
+```math
+|\operatorname{Band}_N|^{2ku}
+ \le \frac{SC}{B^2}
+ (X/p^a)^{\lambda_1/(u+1)}
+ (X/p^b)^{\lambda_1u/(u+1)}.
+```
+
+It requires `k<p`, `a<=b`, `p^(a+1)<=X`, `p^b<=X` and the deep quotient
+`floor(X/p^b)+1>=N0`. The constants and thresholds depend on `k,u` and
+**are not numerically evaluated**. No missing moment budget is supplied as
+an assumption; `S` still contains the actual complex Riesz correlations.
+
+The [exact exponent audit](../RiemannGaussian/VinogradovImprovedNormalization.lean)
+identifies the effect without losing the remaining energies. Put
+`Q=X/p^a>0` and let `epsilon` be any real exponent change. Then
+`allowance_exponent_shift_identity` proves
+
+```math
+\begin{aligned}
+&M_{a,b}(\lambda-\epsilon)\mathcal A_{a,b,H}(\lambda-\epsilon)\\
+&\quad+M_{a,b}(\lambda)(1-Q^{-\epsilon})p^{-H/2}
+ =M_{a,b}(\lambda)\mathcal A_{a,b,H}(\lambda).
+\end{aligned}
+```
+
+For `Q>=1` and `epsilon>=0`, `scaled_allowance_exponent_mono` proves that
+the complete right-hand-side allowance cannot increase. **Only the deep
+remainder changes; every intermediate energy is identical after restoring
+its source scale.** With `epsilon=1/(3k)`, the remainder gains exactly
+`Q^(-1/(3k))`. This factor cannot be assigned to the entire retained sum.
+A net bound for those energies together with the original correlations and
+sampling costs remains necessary for the source contradiction. The proved
+zero-free region is unchanged.
+
 ## Source and remaining arithmetic work
 
 For a hypothetical right-half zero `rho`, the original theorem chooses

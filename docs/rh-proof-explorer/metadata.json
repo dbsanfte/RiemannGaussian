@@ -16,21 +16,21 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 2,
-      "id": "first-global-vinogradov-exponent-saving",
+      "sequence": 3,
+      "id": "improved-exponent-original-riesz-transport",
       "kind": "theorem",
-      "title": "An independent global Vinogradov exponent improvement is proved.",
-      "body": "Lean closes initial global conditioning and saves 1/(3k) over the elementary high-moment exponent for every k≥2 and u≥k, at every sufficiently large cutoff. The critical moment exponent, VK zeta growth and a larger zero-free region remain open. The README overview now keeps ten major formalisation highlights.",
-      "next": "Next: strengthen the global moment exponent and feed the improved estimate into the existing weighted and zeta-growth machinery.",
+      "title": "The improved global exponent now reaches the original Riesz bound.",
+      "body": "Lean discharges both quotient-moment estimates at k(2u+1)−1/(3k) in the full signed Riesz recurrence. An exact comparison proves that the deep remainder improves while every intermediate energy is unchanged. Their combined arithmetic saving, RH and a wider zero-free region remain open.",
+      "next": "Next: control the retained intermediate energies and advance the global moment iteration toward the critical exponent.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "vkFirstGlobalExponentTheorem"
+        "vkRieszImprovedIterationTheorem"
       ],
-      "documentation": "docs/vinogradov-korobov-framework.md#first-global-high-moment-exponent-improvement"
+      "documentation": "docs/zeta-riesz-conditioned-energy.md#the-improved-global-exponent-in-the-original-band"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
-      "vkRieszConditioningIterationTheorem"
+      "vkRieszImprovedIterationTheorem"
     ],
     "sourceStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -40,11 +40,11 @@
   "endpoints": [
     {
       "id": "carrier-bound",
-      "label": "Current frontier · conditioned Riesz bound",
+      "label": "Current frontier · improved-exponent Riesz bound",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
-          "vkRieszConditioningIterationTheorem"
+          "vkRieszImprovedIterationTheorem"
         ]
       ],
       "scopePath": [
@@ -86,12 +86,32 @@
         "initialConditioningScope"
       ],
       "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    {
+      "id": "exponent-audit",
+      "label": "Information audit · exact effect of the exponent gain",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAllowanceExponentIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAllowanceExponentComparisonTheorem"
+        ]
+      ],
+      "scopePath": [
+        "rhCampaign",
+        "exponentAuditScope"
+      ],
+      "documentation": "docs/zeta-riesz-conditioned-energy.md"
     }
   ],
   "scopes": {
-    "boundScope": "Furthest checked carrier bound: the original Riesz band reaches the finite conditioned-energy recurrence, with its sampling costs and complex fibre correlations retained. The independent saving needed for an RH contradiction remains open.",
+    "boundScope": "Furthest checked carrier bound: both actual quotient moments now use the independently proved exponent k(2u+1)-1/(3k). The complete finite Riesz recurrence retains all complex correlations, sampling costs and intermediate energies, with explicit scale conditions and an unevaluated quotient threshold. Only the deep remainder gains from this exponent change; the independent saving needed for an RH contradiction remains open.",
     "sourceScope": "Under the displayed hypothetical right-half-zero assumptions, the normalized original carrier has the prescribed negative-multiplicity source limit. This conditional source identity supplies one side of the proposed contradiction; its independent arithmetic counterpart remains open.",
-    "initialConditioningScope": "The full unweighted Vinogradov mean value now has an independent saving of 1/(3k) in its elementary exponent, for every k>=2 and u>=k and every sufficiently large cutoff. The prime packet, initial conditioning, finite allowance and extension to all large endpoints are proved without a supplied moment bound. The critical moment exponent, original weighted Riesz saving and VK zeta growth remain open; this auxiliary endpoint does not prove an RH contradiction or a larger zero-free region."
+    "initialConditioningScope": "The full unweighted Vinogradov mean value has an independent saving of 1/(3k) in its elementary exponent, for every k>=2,u>=k and all sufficiently large cutoffs. Prime selection, initial conditioning and endpoint transfers are proved without a supplied moment bound. This estimate now feeds the original Riesz endpoint; the critical moment exponent, combined weighted saving and VK zeta growth remain open.",
+    "exponentAuditScope": "Exact normalization audit: after restoring the source scale, lowering the exponent changes only the deep remainder by the coarse-quotient power. Every original intermediate conditioned energy is identical. The complete scaled allowance is no larger when a full coarse window fits. This comparison bounds no intermediate energy and does not prove RH."
   },
   "theorems": {
     "RiemannGaussian.VinogradovMeanValue.weighted_gram": {
@@ -116,11 +136,6 @@
     },
     "RiemannGaussian.VinogradovConditioningPowerSaving.deep_remainder_power_saving": {
       "label": "Proved decay of the deep remainder",
-      "overview": true,
-      "documentation": "docs/rh-proof-direction.md"
-    },
-    "RiemannGaussian.ZetaRieszConditioningTransfer.actual_band_le_conditioned_iteration": {
-      "label": "Current frontier: conditioned carrier bound",
       "overview": true,
       "documentation": "docs/rh-proof-direction.md"
     },
@@ -198,6 +213,36 @@
       "label": "One prime packet covers all distinct blocks",
       "overview": true,
       "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovImprovedNormalization.exists_improved_rounded_budget": {
+      "label": "Improved exponent pays both actual quotient moments",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-energy.md"
+    },
+    "RiemannGaussian.VinogradovImprovedNormalization.exists_improved_mixed_iteration": {
+      "label": "Full mixed recurrence with both moment estimates proved",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-energy.md"
+    },
+    "RiemannGaussian.VinogradovImprovedNormalization.moment_scale_exponent_shift": {
+      "label": "Exact effect of lowering the source exponent",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-energy.md"
+    },
+    "RiemannGaussian.VinogradovImprovedNormalization.allowance_exponent_shift_identity": {
+      "label": "Exact audit: only the deep remainder changes",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-energy.md"
+    },
+    "RiemannGaussian.VinogradovImprovedNormalization.scaled_allowance_exponent_mono": {
+      "label": "The full scaled allowance can only decrease",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszImprovedMoment.exists_original_band_improved_iteration": {
+      "label": "Current frontier: improved-exponent Riesz recurrence",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-energy.md"
     }
   }
 }

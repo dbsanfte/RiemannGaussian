@@ -95,7 +95,7 @@
     },
     {
       "id": "vk-phase",
-      "label": "Vinogradov–Korobov · first global exponent saving",
+      "label": "Vinogradov–Korobov · improved exponent and Riesz transport",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -884,6 +884,38 @@
         [
           "gaussianPhaseBandToolkit",
           "vkFirstGlobalExponentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkImprovedRoundedMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkImprovedNormalizedIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkImprovedMixedIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExponentScaleShiftTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAllowanceExponentIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAllowanceExponentComparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszImprovedMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszImprovedIterationTheorem"
         ]
       ],
       "scopePath": [
@@ -1530,6 +1562,22 @@
         [
           "gaussianPhaseBandToolkit",
           "vkRieszGeometricConditioningTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAllowanceExponentIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAllowanceExponentComparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszImprovedMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRieszImprovedIterationTheorem"
         ]
       ],
       "scopePath": [
@@ -1935,7 +1983,8 @@
     "ZetaRieszConditionedEnergy": "arithmetic",
     "ZetaRieszBlockMass": "arithmetic",
     "ZetaRieszInterpolation": "arithmetic",
-    "ZetaRieszConditioningTransfer": "arithmetic"
+    "ZetaRieszConditioningTransfer": "arithmetic",
+    "ZetaRieszImprovedMoment": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
@@ -3895,6 +3944,46 @@
       "label": "First improved exponent at every sufficiently large cutoff",
       "overview": true,
       "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovImprovedNormalization.exists_improved_rounded_budget": {
+      "label": "Improved exponent pays both actual quotient moments",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovImprovedNormalization.exists_improved_normalized_iteration": {
+      "label": "Signed recurrence at the independently improved exponent",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovImprovedNormalization.exists_improved_mixed_iteration": {
+      "label": "Full mixed recurrence with both moment estimates proved",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovImprovedNormalization.moment_scale_exponent_shift": {
+      "label": "Exact effect of lowering the source exponent",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovImprovedNormalization.allowance_exponent_shift_identity": {
+      "label": "Exact audit: only the deep remainder changes",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.VinogradovImprovedNormalization.scaled_allowance_exponent_mono": {
+      "label": "The full scaled allowance can only decrease",
+      "overview": true,
+      "documentation": "docs/vinogradov-korobov-framework.md"
+    },
+    "RiemannGaussian.ZetaRieszImprovedMoment.exists_original_band_improved_moment_bound": {
+      "label": "Original Riesz band with improved two-scale moments",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszImprovedMoment.exists_original_band_improved_iteration": {
+      "label": "Current frontier: improved-exponent Riesz recurrence",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-energy.md"
     }
   }
 }

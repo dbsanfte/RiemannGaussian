@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**An independent global Vinogradov exponent improvement is proved.** Lean closes initial global conditioning and saves 1/(3k) over the elementary high-moment exponent for every k≥2 and u≥k, at every sufficiently large cutoff. The critical moment exponent, VK zeta growth and a larger zero-free region remain open. The README overview now keeps ten major formalisation highlights.
-Next: strengthen the global moment exponent and feed the improved estimate into the existing weighted and zeta-growth machinery.
-[Current checked endpoint](RiemannGaussian/VinogradovFirstExponent.lean#L160)
-· [Proof details](docs/vinogradov-korobov-framework.md#first-global-high-moment-exponent-improvement).
+**The improved global exponent now reaches the original Riesz bound.** Lean discharges both quotient-moment estimates at k(2u+1)−1/(3k) in the full signed Riesz recurrence. An exact comparison proves that the deep remainder improves while every intermediate energy is unchanged. Their combined arithmetic saving, RH and a wider zero-free region remain open.
+Next: control the retained intermediate energies and advance the global moment iteration toward the critical exponent.
+[Current checked endpoint](RiemannGaussian/ZetaRieszImprovedMoment.lean#L84)
+· [Proof details](docs/zeta-riesz-conditioned-energy.md#the-improved-global-exponent-in-the-original-band).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
@@ -163,7 +163,7 @@ hypotheses; the [family index](docs/theorem-families/README.md) covers the full 
 | **Global Vinogradov moment saving** | For every degree k≥2 and u≥k, the global moment exponent improves from k(2u+1) by 1/(3k) at every sufficiently large cutoff, without an assumed moment bound. | [global exponent theorem](RiemannGaussian/VinogradovFirstExponent.lean), [independent initial saving](RiemannGaussian/VinogradovInitialSaving.lean) |
 | **Exact phase optimiser and arithmetic floor** | The specified phase cost has a unique eight-frequency optimiser across all feasible finite or infinite integer-frequency families, with a proved arithmetic floor. | [exact optimiser](RiemannGaussian/ZetaPhaseExactOptimizer.lean), [arithmetic floor and exclusion criterion](RiemannGaussian/ZetaPhaseBinomialScale.lean) |
 | **Eta heat and continuous phase matrices** | Exact eta heat/spectral correspondence and small-width matrix coercivity for distinct integer probes retain the full complex Gram correlations. | [heat/spectral identity](RiemannGaussian/EtaSupportGapGaussianSpectral.lean), [continuous matrix coercivity](RiemannGaussian/Hybrid/EtaSupportGapPhaseCoercivity.lean#L276) |
-| **Original signed Riesz carrier bound** | Under the displayed scale conditions, the original squarefree carrier reaches a finite conditioned-energy bound with Möbius signs, phases and fibre correlations retained. The RH contradiction remains open. | [actual carrier bound](RiemannGaussian/ZetaRieszConditioningTransfer.lean), [preserved source](RiemannGaussian/ZetaRieszConditionedEnergy.lean) |
+| **Original signed Riesz carrier bound** | The improved global moment exponent reaches the original squarefree carrier's finite conditioned-energy bound, retaining Möbius signs, phases and fibre correlations. The combined arithmetic saving and RH contradiction remain open. | [actual carrier bound](RiemannGaussian/ZetaRieszImprovedMoment.lean), [preserved source](RiemannGaussian/ZetaRieszConditionedEnergy.lean) |
 | **Montgomery–Vaughan weighted Hilbert inequality** | An attributed Apache-2.0 formalisation with exact diagonal constant 13 and bilinear constant 26. | [both inequalities](RiemannGaussian/MontgomeryVaughan/Final.lean#L28) |
 
 ## Accomplishments

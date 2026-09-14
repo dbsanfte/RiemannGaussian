@@ -1536,6 +1536,8 @@ import RiemannGaussian.VinogradovInitialConditioning
 import RiemannGaussian.VinogradovInitialIteration
 import RiemannGaussian.VinogradovInitialSaving
 import RiemannGaussian.VinogradovFirstExponent
+import RiemannGaussian.VinogradovImprovedNormalization
+import RiemannGaussian.ZetaRieszImprovedMoment
 import RiemannGaussian.ZetaRieszBlockMass
 import RiemannGaussian.ZetaRieszInterpolation
 import RiemannGaussian.VinogradovFibreCorrelation

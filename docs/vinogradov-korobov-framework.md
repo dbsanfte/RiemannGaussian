@@ -25,7 +25,11 @@ explicit power saving at the elementary exponent, with rounded cutoffs and
 all constants paid. The normalized signed recurrence now couples these
 steps, retaining the full intermediate energy sum. Initial global conditioning
 and a first independent exponent improvement of 1/(3k) are now proved for
-every k>=2,u>=k and all sufficiently large endpoints. Reaching the critical
+every k>=2,u>=k and all sufficiently large endpoints. That exponent now
+pays both actual quotient moments in the full signed recurrence and the
+original Riesz carrier bound. An exact audit shows that lowering the
+exponent improves the deep remainder while retaining identical intermediate
+energies after restoring the source scale. Reaching the critical
 high-moment exponent through a full iteration remains open.
 The Vinogradov–Korobov zeta growth estimate
 and zero-free region remain unproved in this repository. No external
@@ -1129,9 +1133,9 @@ Finally, the theorem constructs all packet and base parameters.
 This is a first global exponent improvement in this formalization. It
 does not claim a literature record or the critical mean-value exponent.
 The stronger VK moment estimate, exponential-sum saving, near-one zeta
-growth and zero detector remain to be proved. The proved zero-free region
-and the independent saving needed for the original weighted Riesz carrier
-are unchanged.
+growth and zero detector remain to be proved. The improved exponent is now connected to the original weighted Riesz
+carrier below. Its required combined arithmetic saving and the proved
+zero-free region remain unchanged.
 
 ## Direct application to the original Riesz carrier
 
@@ -1154,6 +1158,37 @@ See the [full bound and its costs](zeta-riesz-conditioned-energy.md#direct-trans
 Quantitative control of the resulting original weighted mixed moments,
 including all those costs, remains open. This interface does not enlarge
 the proved zero-free region or complete the VK iteration.
+
+## Improved exponent in the complete signed recurrence
+
+[`VinogradovImprovedNormalization`](../RiemannGaussian/VinogradovImprovedNormalization.lean)
+transports the global bound at `lambda1=k(2u+1)-1/(3k)` through every eligible
+padded quotient. `rounded_actual_meanValue` pays the rounding by `2^lambda`
+for any proved eventual homogeneous bound. `exists_improved_rounded_budget`
+constructs one constant and threshold for all these scales.
+
+`exists_improved_mixed_iteration` discharges both homogeneous estimates
+in the complete finite conditioning inequality. The deeper quotient
+threshold also covers the coarse quotient by monotonicity.
+`exists_improved_normalized_iteration` then supplies the full signed
+congruencing recurrence at `lambda1`, with defect
+`k(k-1)/2-1/(3k)`. Both block colours and the full intermediate sum survive.
+Finite depth, prime size and actual quotient conditions remain explicit.
+
+[`ZetaRieszImprovedMoment`](../RiemannGaussian/ZetaRieszImprovedMoment.lean)
+puts this result directly into the original signed Riesz carrier. Its
+terminal theorem retains the actual complex fibre correlations, sampling
+cost and proved positive lower block mass. A companion theorem gives the
+explicit improved two-quotient moment bound.
+
+The exact `allowance_exponent_shift_identity` audits the improvement:
+after restoring the source scale, lowering the exponent by `epsilon`
+multiplies the deep remainder by `(X/p^a)^(-epsilon)` and leaves **every
+intermediate energy identical**. `scaled_allowance_exponent_mono` proves
+the complete scaled allowance is no larger when `X>=p^a,epsilon>=0`.
+The [full original-band formulas and conditions](zeta-riesz-conditioned-energy.md#the-improved-global-exponent-in-the-original-band)
+make this distinction explicit. No saving for the retained energy sum,
+VK growth estimate, or wider zero-free region follows from rescaling it.
 
 ## Shifted correlations and bounded complex weights
 
