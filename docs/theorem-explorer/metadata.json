@@ -2480,7 +2480,14 @@
     "ZetaRieszWindowGram": "arithmetic",
     "ZetaRieszWholeWindow": "arithmetic",
     "ZetaRieszWindowUnitDeletion": "arithmetic",
-    "ZetaRieszSpernerRate": "arithmetic"
+    "ZetaRieszSpernerRate": "arithmetic",
+    "ZetaRieszWindowGcd": "arithmetic",
+    "ZetaRieszWindowOverlap": "arithmetic",
+    "ZetaRieszWindowInteraction": "arithmetic",
+    "ZetaRieszCrossFamilyWindow": "arithmetic",
+    "ZetaRieszPrimeReplacement": "arithmetic",
+    "ZetaRieszReplacementPhase": "arithmetic",
+    "ZetaRieszReplacementFamily": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

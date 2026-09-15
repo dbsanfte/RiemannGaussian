@@ -3088,6 +3088,28 @@ is claimed for the finite-interval or Cauchy--Schwarz identities. See
 `docs/zeta-riesz-window-gram.md` and supporting endpoint `signed-window-gram`.
 Keep the default endpoints and both top-ten lists unchanged.
 
+`ZetaRieszWindowGcd` keeps the original amplitude at L while its shared
+prime factor shifts only the window cutoff. Fixed-prime-pair comparable
+divisors have zero overlap; negative Mobius overlap requires at least three
+nonshared primes. This is not the sign of the full complex Gram entry.
+`ZetaRieszCrossFamilyWindow` restricts comparable interactions with the SAME
+first prime; do not generalize it to every changing first-prime scale.
+`ZetaRieszPrimeReplacement`, `ZetaRieszReplacementPhase` and
+`ZetaRieszReplacementFamily` prove an explicit whole-original-carrier bound
+by absolute mass minus nonnegative savings from disjoint prime-to-product
+pairs. Preserve the four-integer identity and both smaller terms unless
+their actual profiles are proved saturated. Both full complex amplitude
+costs are paid; the exact sine phase remains available alongside the
+integer-gap bound. Prime support and injectivity prove no double counting.
+Keep the exact unmatched remainder and original complex partition upstream.
+Do not infer uniform positive saving, sufficient source-scale saving, a new
+zero-free region, or RH from the nonnegative budget alone. No coverage
+theorem across all prime triples or varying-first-prime correlations is
+proved. Exploratory floating-point savings are not numeric certificates and
+must not be rerun in ordinary CI. See `docs/zeta-riesz-prime-replacement.md`
+and supporting endpoint `prime-replacement`; default endpoints and the two
+top-ten lists remain unchanged.
+
 ## Commit and check-in invariant
 
 The introductory research-agent/model statement belongs directly below the

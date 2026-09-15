@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**The whole carrier retains cross-family signed window energy.** Lean now bounds the entire original Riesz carrier by one explicit signed Gram form, retaining every prime-pair family, divisor sign, physical cutoff and complex filter phase. The actual central coefficient gains an additional square-root factor, and its cofactor unit window vanishes for every term with at least four prime factors. No new zero-free region follows.
-Next: bound the remaining prime and composite divisor correlations at source scale, using the signed cross-family energy rather than a sum of separate family norms.
-[Current checked endpoint](RiemannGaussian/ZetaRieszWholeWindow.lean#L310)
-· [Proof details](docs/zeta-riesz-window-gram.md).
+**The whole carrier retains explicit prime-replacement savings.** Lean bounds the full original signed carrier by its absolute mass minus a nonnegative saving from disjoint arithmetic pairs. Each pair keeps the better of a proved relative integer-gap estimate and an estimate retaining its exact sine phase. All filter, amplitude, support and cutoff costs are paid. A source-scale saving and a new zero-free region remain open.
+Next: quantify how much of the surviving arithmetic mass can be matched, retaining cross-triple phases and the exact unmatched remainder.
+[Current checked endpoint](RiemannGaussian/ZetaRieszReplacementFamily.lean#L172)
+· [Proof details](docs/zeta-riesz-prime-replacement.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

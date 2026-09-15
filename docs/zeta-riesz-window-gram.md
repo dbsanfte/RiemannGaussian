@@ -104,3 +104,7 @@ provide research leads. Their mean-square argument uses zero-free
 information; it has not been imported here and does not independently
 supply the new source-scale estimate. These finite interval identities,
 Cauchy--Schwarz and binomial bounds carry no historical novelty claim.
+
+The [prime-replacement bounds](zeta-riesz-prime-replacement.md) now retain
+shared-prime cutoff shifts, restrict surviving interactions and bound actual
+disjoint integer pairs with their exact relative phases.

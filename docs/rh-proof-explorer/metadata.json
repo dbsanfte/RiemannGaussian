@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 43,
-      "id": "signed-window-gram",
+      "sequence": 44,
+      "id": "prime-replacement",
       "kind": "theorem",
-      "title": "The whole carrier retains cross-family signed window energy.",
-      "body": "Lean now bounds the entire original Riesz carrier by one explicit signed Gram form, retaining every prime-pair family, divisor sign, physical cutoff and complex filter phase. The actual central coefficient gains an additional square-root factor, and its cofactor unit window vanishes for every term with at least four prime factors. No new zero-free region follows.",
-      "next": "Next: bound the remaining prime and composite divisor correlations at source scale, using the signed cross-family energy rather than a sum of separate family norms.",
+      "title": "The whole carrier retains explicit prime-replacement savings.",
+      "body": "Lean bounds the full original signed carrier by its absolute mass minus a nonnegative saving from disjoint arithmetic pairs. Each pair keeps the better of a proved relative integer-gap estimate and an estimate retaining its exact sine phase. All filter, amplitude, support and cutoff costs are paid. A source-scale saving and a new zero-free region remain open.",
+      "next": "Next: quantify how much of the surviving arithmetic mass can be matched, retaining cross-triple phases and the exact unmatched remainder.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszWindowWholeCarrierTheorem"
+        "rieszReplacementSavingTheorem"
       ],
-      "documentation": "docs/zeta-riesz-window-gram.md"
+      "documentation": "docs/zeta-riesz-prime-replacement.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1966,6 +1966,49 @@
         "rieszWindowGramScope"
       ],
       "documentation": "docs/zeta-riesz-window-gram.md"
+    },
+    {
+      "id": "prime-replacement",
+      "label": "Prime replacements · gaps and exact phases",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGcdGramTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNegativeOverlapTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossFamilyPrimeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeReplacementIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeReplacementGapTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszReplacementPhaseTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszReplacementPartitionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszReplacementSavingTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszPrimeReplacementScope"
+      ],
+      "documentation": "docs/zeta-riesz-prime-replacement.md"
     }
   ],
   "scopes": {
@@ -4859,6 +4902,62 @@
       "summary": "The entire lift agrees pointwise on its integration domain after deleting only the geometrically absent unit columns.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-window-gram.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWindowGcd.primeWindowGram_entry_reduce_gcd": {
+      "label": "Shared primes retain their cutoff displacement",
+      "summary": "The reduced Mobius sign is coprime; original filter amplitudes stay at L while only the window shifts by log gcd.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-replacement.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWindowInteraction.negative_overlap_reduced_structure": {
+      "label": "Negative overlapping ratios need at least three nonshared primes",
+      "summary": "Within one fixed prime-pair family the reduced pair is coprime, squarefree, nonunit and logarithmically close.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-replacement.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCrossFamilyWindow.actual_chain_overlap_requires_new_small_prime": {
+      "label": "Comparable cross-family interactions require a new smaller prime",
+      "summary": "Actual smallest-prime factorizations discharge support and roughness, when the first prime agrees.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-replacement.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeReplacement.riesz_prime_replacement_identity": {
+      "label": "An exact cancellation across four original integers",
+      "summary": "Prime-to-product replacement keeps the common cofactor and both smaller cutoff profiles.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-replacement.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeReplacement.norm_bandWeight_replacement_pair_le_integer_gap": {
+      "label": "Original pair error pays the relative integer gap",
+      "summary": "The complete filter and complex amplitude derivative are explicitly bounded before multiplying by the gap.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-replacement.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszReplacementPhase.norm_bandWeight_replacement_pair_le_phase": {
+      "label": "Retain the exact sine phase of each replacement",
+      "summary": "The common cofactor cancels from the relative angle and the smooth allowance stays on the real line.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-replacement.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszReplacementFamily.actual_band_eq_replacement_add_remainder": {
+      "label": "The whole signed carrier retains its unmatched remainder",
+      "summary": "The selected integer class and its exact complement form the original finite band.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-replacement.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszReplacementFamily.norm_actual_band_le_mass_sub_saving": {
+      "label": "The whole original carrier pays explicit pair savings",
+      "summary": "All selected matches are disjoint. Each uses the better complete gap or exact-phase cost; source-scale saving remains open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-replacement.md",
       "overview": true
     }
   }
