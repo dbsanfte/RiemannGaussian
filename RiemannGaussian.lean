@@ -1765,3 +1765,6 @@ import RiemannGaussian.LogarithmicDeviation
 import RiemannGaussian.ZetaArithmeticDeviationBounds
 import RiemannGaussian.ZetaRieszDeviationCarrier
 import RiemannGaussian.ZetaRieszSignedFrequency
+import RiemannGaussian.TripleRieszProfile
+import RiemannGaussian.ZetaRieszPrimeEndpoint
+import RiemannGaussian.ZetaRieszFrequencyDecay

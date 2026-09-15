@@ -2978,6 +2978,31 @@ Lake builds independent modules in parallel. Direct elaboration of one Lean
 module is normally one process; do not mistake that focused check for the
 parallel full-library build.
 
+`ZetaRieszFrequencyDecay` now pays the complete growing low-frequency
+allowance of both actual nonlinear prime classes. For every fixed P,
+all heights and0<=u<=1, deleting0<=xi<=3(3/4)^N/(8(N+1)) has normalized
+error at most C(P)(N+1)^2(27/28)^N->0. More generally every positive U,r
+with r<=1 and2Ur^3<1 admits a summable tilt and one common bound for
+arbitrary moving radii in[0,U] and moving heights. The window shrinks
+exponentially; do not claim decay on the larger natural1/N sector.
+The complementary coupled integral plus tapered wing retains exactly
+-m+m^2c(u), with unrestricted multiplicity, exposure and the original
+source range1/2<=u<exp(-2/3). Their independent joint bound is still open;
+the deletion range does not enlarge the source range or prove nonvanishing.
+`ZetaRieszPrimeEndpoint` separately bounds the complete actual three-prime
+coefficient by log(n) times the minimum of1/2 and the largest-prime endpoint
+taper, on the original upper-reflection support. Its finite negative-phase
+cost is unpaid. Do not apply a full-coefficient amplitude bound to a
+frequency sector. `TripleRieszProfile` retains the exact four margins for
+ordered distinct primes; all margins are nonnegative on the actual annulus.
+The one-small-pair chamber has the wing's exact endpoint weight, but no
+cross-component cancellation has been proved. Replacing the actual largest
+prime by its average loses the new improvement. Preserve all integer masks,
+the floor-defined length, filter shifts, default whole-carrier endpoint and
+both top-ten lists. See `docs/zeta-riesz-frequency-decay.md` and supporting
+endpoint `frequency-sector-decay`. A zero-free theorem from this arithmetic
+path remains the user's next major milestone; component progress is not it.
+
 ## Commit and check-in invariant
 
 The introductory research-agent/model statement belongs directly below the

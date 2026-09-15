@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Prime-count cancellation controls a frequency sector.** Lean keeps opposite frequencies coupled and proves a cubic low-frequency allowance for the actual three-prime and higher-prime sums. The original masks and growing arithmetic cost remain explicit. A separately checked window deletion now covers all right-half source radii. Neither result supplies a new zero-free bound.
-Next: control the retained coupled high-frequency response and the finite low-frequency cost alongside the tapered wing. The whole signed bound remains open; the cubic cutoff factor alone is not source-scale decay.
-[Current checked endpoint](RiemannGaussian/ZetaRieszSignedFrequency.lean#L557)
-· [Proof details](docs/zeta-riesz-signed-frequency.md).
+**A complete frequency sector now has a vanishing arithmetic bound.** Lean pays the full growing cost of the three-prime and higher-prime sums on an explicit shrinking frequency interval. The normalized error is at most C(P)(N+1)^2(27/28)^N, uniformly in height and across 0<=u<=1. Exact prime-dependent endpoint bounds retain the largest-prime information. This is component progress; no new zero-free region is proved.
+Next: bound the retained coupled complementary integral together with the tapered wing. The broader natural frequency sector and the full largest-prime negative-phase cost remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszFrequencyDecay.lean#L298)
+· [Proof details](docs/zeta-riesz-frequency-decay.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

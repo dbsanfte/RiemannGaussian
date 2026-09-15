@@ -2468,7 +2468,10 @@
     "LogarithmicDeviation": "arithmetic",
     "ZetaArithmeticDeviationBounds": "arithmetic",
     "ZetaRieszDeviationCarrier": "arithmetic",
-    "ZetaRieszSignedFrequency": "arithmetic"
+    "ZetaRieszSignedFrequency": "arithmetic",
+    "TripleRieszProfile": "arithmetic",
+    "ZetaRieszPrimeEndpoint": "arithmetic",
+    "ZetaRieszFrequencyDecay": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

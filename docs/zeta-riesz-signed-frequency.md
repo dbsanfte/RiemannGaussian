@@ -13,6 +13,11 @@ classes. **The finite arithmetic cost, the complementary frequencies and
 the tapered wing are not controlled at source scale.** No new zero-free
 region, RH proof, or historical novelty is claimed.
 
+A [subsequent decay theorem](zeta-riesz-frequency-decay.md) now pays the
+whole arithmetic allowance on a smaller, geometrically shrinking frequency
+interval. The broader natural frequency sector considered below and the
+complete joint signed bound remain open.
+
 ## Exact signed structure
 
 For a squarefree integer `n`, write `k = card(n.primeFactors)` and retain

@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**235 modules.** Source links open the definitions, hypotheses and proofs.
+**238 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -44,6 +44,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [NatProductCollision](../../RiemannGaussian/NatProductCollision.lean)
 - [NatRectangleEnergy](../../RiemannGaussian/NatRectangleEnergy.lean)
 - [RieszHarmonicCostBounds](../../RiemannGaussian/RieszHarmonicCostBounds.lean)
+- [TripleRieszProfile](../../RiemannGaussian/TripleRieszProfile.lean)
 - [ZetaArithmeticAffine](../../RiemannGaussian/ZetaArithmeticAffine.lean)
 - [ZetaArithmeticBandCorrelation](../../RiemannGaussian/ZetaArithmeticBandCorrelation.lean)
 - [ZetaArithmeticDeviationBounds](../../RiemannGaussian/ZetaArithmeticDeviationBounds.lean)
@@ -127,6 +128,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszFourExtremeBound](../../RiemannGaussian/ZetaRieszFourExtremeBound.lean)
 - [ZetaRieszFourExtremeDeletion](../../RiemannGaussian/ZetaRieszFourExtremeDeletion.lean)
 - [ZetaRieszFourierCarrier](../../RiemannGaussian/ZetaRieszFourierCarrier.lean)
+- [ZetaRieszFrequencyDecay](../../RiemannGaussian/ZetaRieszFrequencyDecay.lean)
 - [ZetaRieszGeneralCofactorTilt](../../RiemannGaussian/ZetaRieszGeneralCofactorTilt.lean)
 - [ZetaRieszGrowingCofactor](../../RiemannGaussian/ZetaRieszGrowingCofactor.lean)
 - [ZetaRieszHeadAdaptive](../../RiemannGaussian/ZetaRieszHeadAdaptive.lean)
@@ -161,6 +163,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszPrimeCompletion](../../RiemannGaussian/ZetaRieszPrimeCompletion.lean)
 - [ZetaRieszPrimeCompletionPhase](../../RiemannGaussian/ZetaRieszPrimeCompletionPhase.lean)
 - [ZetaRieszPrimeCompletionRate](../../RiemannGaussian/ZetaRieszPrimeCompletionRate.lean)
+- [ZetaRieszPrimeEndpoint](../../RiemannGaussian/ZetaRieszPrimeEndpoint.lean)
 - [ZetaRieszPrimeFourier](../../RiemannGaussian/ZetaRieszPrimeFourier.lean)
 - [ZetaRieszPrimePairConvolution](../../RiemannGaussian/ZetaRieszPrimePairConvolution.lean)
 - [ZetaRieszProductCeiling](../../RiemannGaussian/ZetaRieszProductCeiling.lean)

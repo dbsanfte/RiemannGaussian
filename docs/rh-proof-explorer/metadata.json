@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 38,
-      "id": "signed-frequency-cancellation",
+      "sequence": 39,
+      "id": "frequency-sector-decay",
       "kind": "theorem",
-      "title": "Prime-count cancellation controls a frequency sector.",
-      "body": "Lean keeps opposite frequencies coupled and proves a cubic low-frequency allowance for the actual three-prime and higher-prime sums. The original masks and growing arithmetic cost remain explicit. A separately checked window deletion now covers all right-half source radii. Neither result supplies a new zero-free bound.",
-      "next": "Next: control the retained coupled high-frequency response and the finite low-frequency cost alongside the tapered wing. The whole signed bound remains open; the cubic cutoff factor alone is not source-scale decay.",
+      "title": "A complete frequency sector now has a vanishing arithmetic bound.",
+      "body": "Lean pays the full growing cost of the three-prime and higher-prime sums on an explicit shrinking frequency interval. The normalized error is at most C(P)(N+1)^2(27/28)^N, uniformly in height and across 0<=u<=1. Exact prime-dependent endpoint bounds retain the largest-prime information. This is component progress; no new zero-free region is proved.",
+      "next": "Next: bound the retained coupled complementary integral together with the tapered wing. The broader natural frequency sector and the full largest-prime negative-phase cost remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszNonlinearHighRemainderTheorem"
+        "rieszFrequencySectorUniformTheorem"
       ],
-      "documentation": "docs/zeta-riesz-signed-frequency.md"
+      "documentation": "docs/zeta-riesz-frequency-decay.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1711,6 +1711,61 @@
         "rieszSignedFrequencyScope"
       ],
       "documentation": "docs/zeta-riesz-signed-frequency.md"
+    },
+    {
+      "id": "frequency-sector-decay",
+      "label": "Frequency-sector decay · complete cost and retained source",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFrequencyCostGrowthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFrequencyBandwidthFamilyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFrequencyAllowanceDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFrequencySectorUniformTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFrequencyMovingDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHighFrequencyWingSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszThreeExactMarginsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszThreePrimeEndpointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszThreeCanonicalEndpointFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeAverageLossTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTripleEndpointChamberTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFrequencyDecayScope"
+      ],
+      "documentation": "docs/zeta-riesz-frequency-decay.md"
     }
   ],
   "scopes": {
@@ -4254,6 +4309,83 @@
       "summary": "The actual additional window deletion independently vanishes for arbitrary moving radii in [0,1] and moving heights; every earlier mask remains.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-deviation-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFrequencyDecay.nonlinearFrequencyCost_le": {
+      "label": "The complete arithmetic cost is bounded",
+      "summary": "Both original frequency costs are bounded by 2048(N+1)^5 q^(-N) times one genuinely summable fixed-filter mass, uniformly in height and physical radius.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-frequency-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFrequencyDecay.exists_frequency_tilt": {
+      "label": "Every admissible cubic bandwidth",
+      "summary": "Every positive U,r with 2Ur^3<1 admits a summable tilt q between Ur^3 and one half; this is a sufficient family-wide bandwidth criterion.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-frequency-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFrequencyDecay.tendsto_frequency_allowance_moving": {
+      "label": "The whole finite allowance tends to zero",
+      "summary": "The growing arithmetic cost is paid at the original source normalization for arbitrary moving radii and heights under one common rate.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-frequency-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFrequencyDecay.norm_nonlinear_sub_high_frequency_universal": {
+      "label": "An explicit uniform vanishing sector",
+      "summary": "At d_N=3(3/4)^N/(8(N+1)), the entire deletion error is at most C(P)(N+1)^2(27/28)^N, for every height and 0<=u<=1. The complement and wing remain unpaid.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-frequency-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFrequencyDecay.tendsto_nonlinear_sub_high_frequency_moving": {
+      "label": "All moving-radius deletion errors",
+      "summary": "Every admissible geometric bandwidth removes the full low-frequency sector with independently vanishing error. No zero or exposure hypothesis is used.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-frequency-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFrequencyDecay.tendsto_high_frequency_add_wing_source": {
+      "label": "The exact source survives in complement plus wing",
+      "summary": "The retained coupled integral plus tapered wing still has source -m+m^2c(u), with unrestricted multiplicity, exposure and the original local annulus.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-frequency-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.TripleRieszProfile.neg_riesz_ordered_three_primes_eq_min_margins": {
+      "label": "Four exact prime-dependent margins",
+      "summary": "The signed Riesz divisor sum of every ordered distinct prime triple is the exact minimum of the smallest-prime logarithm, largest-prime endpoint gap and two total-product gaps.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-frequency-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeEndpoint.actual_three_coefficient_le_prime_taper": {
+      "label": "Every actual prime gives an endpoint saving",
+      "summary": "The complete three-prime coefficient has a bound proportional to 1-log(p)/L for every prime factor, on the original upper-reflection support.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-frequency-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeEndpoint.re_normalized_three_ge_largest_prime_taper": {
+      "label": "Canonical largest-prime signed floor",
+      "summary": "The actual full normalized three-prime sum pays only the negative observation phase, using the strongest one-prime taper. This finite negative-phase cost is still unpaid.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-frequency-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeEndpoint.average_prime_taper_no_improvement": {
+      "label": "Averaging loses the new saving",
+      "summary": "Replacing the largest prime by its average logarithm cannot improve the old half-length and midpoint bounds. Actual prime imbalance must be retained.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-frequency-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeEndpoint.riesz_three_primes_eq_neg_prime_gap": {
+      "label": "The exact shared endpoint weight",
+      "summary": "When one pair is below the physical cutoff and the other two above, the entire triple profile is exactly minus the largest-prime endpoint gap. No cancellation with the wing is assumed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-frequency-decay.md",
       "overview": true
     }
   }
