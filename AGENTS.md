@@ -2497,6 +2497,21 @@ or historical novelty is claimed. See
 `docs/zeta-riesz-large-smooth-factor-deletion.md` and endpoint
 `large-smooth-factor-deletion`; retain the default whole-carrier endpoint.
 
+`ZetaRieszSurvivingPrimeLayers.surviving_layers_with_boundary_witness`
+constructs every nonzero survivor's complete smooth, intermediate and extreme
+factors. Composite smooth cores contribute only through actual divisors in
+the strict physical window X_N/a<d<X_N, including a nonzero shifted-profile
+witness. Keep every Moebius sign and both strict boundary edges.
+`norm_coefficient_physical_extreme_le_log` bounds a saturated extreme core's
+coefficient by log(n), independently of its extreme-prime count. Extreme
+primes disappear only from the divisor profile; the original logarithm,
+integer, phase and factorial kernel retain them. Coefficient sign or amplitude
+is not a signed-floor bound for the filtered sum. These exact identities do
+not enlarge the earlier deletion intervals or replace the adaptive fallback.
+The full joint signed floor and RH remain open. See
+`docs/zeta-riesz-extreme-prime-window.md` and endpoint `extreme-prime-window`;
+retain the default whole-carrier endpoint and the existing source/axiom audit.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

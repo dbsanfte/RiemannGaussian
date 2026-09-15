@@ -714,6 +714,52 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem tendsto_actual_band_sub_largeSmoothResidual' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'extreme-prime-window':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in (
+                            'Factorization existence is proved', 'disappear only from the Riesz profile',
+                            'norm at most log(n)', 'independently of the number of extreme primes',
+                            'X_N<d*a and d<X_N', 'Both equality boundaries vanish',
+                            'Every Moebius sign', '1/2<u and 2*u^2<1', 'RH remain open'))
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        bound = next(n for n in roots if n['id'].endswith('.norm_coefficient_physical_extreme_le_log'))
+                        statement = ' '.join(bound['statement'].split())
+                        assert all(t in statement for t in (
+                            'Squarefree (b * a)', 'a ≤', 'b.primeFactors',
+                            'linearDampedCutoff u N + 2) ^ 2 ≤ p', 'coefficient', 'Real.log'))
+                        assert 'NontrivialZetaZero' not in statement
+                        window = next(n for n in roots if n['id'].endswith('.coefficient_extreme_composite_eq_physical_window'))
+                        assert all(t in ' '.join(window['statement'].split()) for t in (
+                            'Squarefree (b * (q * a))', 'a ≠ 1', '¬Nat.Prime a',
+                            'q.divisors with', '< d * a', 'd <', 'moebius', 'VaughanLogAverage.riesz'))
+                        assert 'NontrivialZetaZero' not in window['statement']
+                        support = next(n for n in roots if n['id'].endswith('.surviving_layers_with_boundary_witness'))
+                        assert all(t in ' '.join(support['statement'].split()) for t in (
+                            'largeSmoothResidualBand', 'coefficient', '≠ 0', '∃ a q b',
+                            'a.primeFactors', 'q.primeFactors', 'b.primeFactors',
+                            'n = b * (q * a)', '∃ d ∈ q.divisors', 'VaughanLogAverage.riesz'))
+                        deletion = next(n for n in roots if n['id'].endswith('.tendsto_actual_band_sub_largeSmoothResidual'))
+                        assert all(t in ' '.join(deletion['statement'].split()) for t in (
+                            '1 / 2 < u', '2 * u ^ 2 < 1', 'Tendsto'))
+                        closure = next(n for n in roots if n['id'].endswith('.rh_of_adaptiveSmooth_cofinal_floors'))
+                        assert all(t in closure['statement'] for t in (
+                            '∀ (rho', '∃ c < 1', '∃ᶠ', 'normalizedAdaptiveSmooth', '→', 'RiemannHypothesis'))
+                        assert support['source']['path'].endswith('ZetaRieszSurvivingPrimeLayers.lean')
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', support['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == support['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{support['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{support['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem surviving_layers_with_boundary_witness' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -735,7 +781,8 @@ def run(output, url=None, refresh_preview=False):
                                'quadraticPrimeDensityDeletionAtEveryOrder': True,
                                'actualSmoothRateAndJointPrimeCofactorDeletion': True,
                                'scalarTiltAuditDistinguishedFromArithmeticBound': True,
-                               'arbitraryRoughPrimeCountAndCompleteSmoothFactorDeletion': True})
+                               'arbitraryRoughPrimeCountAndCompleteSmoothFactorDeletion': True,
+                               'exactThreePrimeLayersAndSignedBoundaryWindow': True})
                 page.close()
             browser.close()
     finally:

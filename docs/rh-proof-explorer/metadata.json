@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 23,
-      "id": "large-smooth-factor-deletion",
+      "sequence": 24,
+      "id": "extreme-prime-window",
       "kind": "theorem",
-      "title": "Large smooth factors are now paid with any number of rough primes.",
-      "body": "For 1/2<u and 2*u²<1, Lean removes every term whose complete N²-smooth factor reaches the physical cutoff, allowing any number of rough primes. Their full divisor cost adds only a logarithm, absorbed by the geometric saving. Every nonzero survivor has a proved factorization with smaller smooth part. Earlier deletions, the exact source and signed Euler bridge remain. The full joint signed floor is still open.",
-      "next": "Next: use the exact Riesz recurrence beyond the physical prime cutoff to isolate which remaining smooth cores and intermediate primes can carry a nonzero coefficient.",
+      "title": "Composite cores reduce to an exact signed divisor window.",
+      "body": "Lean constructs every nonzero survivor’s smooth, intermediate and extreme prime factors. Composite smooth cores contribute only through the strict window X_N/a<d<X_N, with all Möbius signs retained. Saturated extreme-core coefficients have norm at most log(n), regardless of extreme-prime count. The total phases remain, and the full joint signed floor is still open.",
+      "next": "Next: bound the coupled divisor window while preserving all three prime layers, the physical cutoff and the original phases.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszLargeSmoothDeletionTheorem"
+        "rieszBoundarySurvivorTheorem"
       ],
-      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md"
+      "documentation": "docs/zeta-riesz-extreme-prime-window.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -862,6 +862,73 @@
         "rieszLargeSmoothDeletionScope"
       ],
       "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md"
+    },
+    {
+      "id": "extreme-prime-window",
+      "label": "Exact prime layers · signed boundary window",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExtremeProfileTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExtremeCompositeZeroTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExtremeSignedCoreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExtremeNormTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszIntermediateWindowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompositeDivisorWindowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompositePhysicalWindowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszThresholdFactorizationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSurvivingPrimeLayersTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompositeBoundaryDivisorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszBoundarySurvivorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeSmoothDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeSmoothSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeSmoothFloorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszExtremeWindowScope"
+      ],
+      "documentation": "docs/zeta-riesz-extreme-prime-window.md"
     }
   ],
   "scopes": {
@@ -2229,6 +2296,83 @@
       "summary": "A cofinal real floor above minus one for each full adaptive remainder would imply Mathlib RH. The independent arithmetic floor remains an unproved premise.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszExtremePrimeProfile.riesz_mul_eq_of_extreme_rough": {
+      "label": "Extreme primes disappear from the profile exactly",
+      "summary": "Every extreme prime factor is removed from the Riesz profile at the common length, with no restriction on their count. The total integer remains in the original coefficient and kernel.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-prime-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszExtremePrimeProfile.coefficient_eq_zero_of_physical_extreme": {
+      "label": "Saturated extreme composite cores contribute exactly zero",
+      "summary": "For the actual physical cutoff, every saturated composite nonunit core has zero coefficient after arbitrary extreme-prime insertion, including equality at both edges.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-prime-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszExtremePrimeProfile.coefficient_extreme_eq_core_cases": {
+      "label": "Exact signed unit, prime and composite core cases",
+      "summary": "The original coefficient keeps prime-label deletion explicit. Saturated unit and prime cores have exact nonpositive weights, while composite cores vanish.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-prime-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSurvivingPrimeLayers.norm_coefficient_physical_extreme_le_log": {
+      "label": "Extreme-core amplitude is at most log n",
+      "summary": "At every physical order, a saturated extreme core has coefficient norm at most the total logarithm, independently of its extreme-prime count. This is not a floor for the oscillatory sum.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-prime-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompositeBoundaryWindow.nonzero_one_intermediate_in_window": {
+      "label": "A single intermediate prime must lie in the strict boundary window",
+      "summary": "A nonzero saturated composite core with one intermediate prime requires X_N<p*a and p<X_N. Both equalities vanish, and every extreme factor remains in the original integer.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-prime-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompositeBoundaryWindow.riesz_composite_eq_divisor_window": {
+      "label": "Complete signed divisor-window identity",
+      "summary": "The full Riesz profile of a squarefree product with composite core equals its signed divisor sum in one strict logarithmic window, without restricting the other factor.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-prime-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompositeBoundaryWindow.coefficient_extreme_composite_eq_physical_window": {
+      "label": "The actual coefficient retains only X_N/a<d<X_N",
+      "summary": "The complete physical coefficient is exactly the signed boundary-divisor sum. Every Moebius sign, floor, total logarithm and common length remains.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-prime-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSurvivingPrimeLayers.exists_threshold_factorization": {
+      "label": "Complete squarefree factorization at every prime threshold",
+      "summary": "A gcd with the primorial constructs both full factors and proves all prime-support conditions at any integer threshold.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-prime-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSurvivingPrimeLayers.surviving_complete_prime_layers": {
+      "label": "Every actual survivor has three complete prime layers",
+      "summary": "The theorem constructs the smooth, intermediate and extreme factors of every nonzero surviving integer, with all strict cutoff edges and the original product retained.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-prime-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSurvivingPrimeLayers.nonzero_composite_has_boundary_divisor": {
+      "label": "A nonzero composite core forces an actual boundary divisor",
+      "summary": "Nonzero coefficient forces a divisor of the intermediate factor in the strict physical window with nonzero shifted core profile. It does not prove a signed floor.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-prime-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSurvivingPrimeLayers.surviving_layers_with_boundary_witness": {
+      "label": "Complete surviving factors and their required signed-profile witness",
+      "summary": "Every nonzero actual survivor has all three complete prime layers; if its smooth core is composite, an actual boundary divisor has nonzero shifted profile. All existence obligations are proved.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-prime-window.md",
       "overview": true
     }
   }

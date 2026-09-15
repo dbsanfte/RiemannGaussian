@@ -2394,7 +2394,10 @@
     "ZetaRieszDivisorPrefix": "arithmetic",
     "ZetaRieszSmoothRoughProduct": "arithmetic",
     "ZetaRieszLargeSmoothClass": "arithmetic",
-    "ZetaRieszLargeSmoothDeletion": "arithmetic"
+    "ZetaRieszLargeSmoothDeletion": "arithmetic",
+    "ZetaRieszExtremePrimeProfile": "arithmetic",
+    "ZetaRieszCompositeBoundaryWindow": "arithmetic",
+    "ZetaRieszSurvivingPrimeLayers": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

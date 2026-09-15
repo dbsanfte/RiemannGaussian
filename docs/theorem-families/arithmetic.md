@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**164 modules.** Source links open the definitions, hypotheses and proofs.
+**167 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -74,6 +74,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszBeyondPhysical](../../RiemannGaussian/ZetaRieszBeyondPhysical.lean)
 - [ZetaRieszBlockMass](../../RiemannGaussian/ZetaRieszBlockMass.lean)
 - [ZetaRieszCofactorTiltRate](../../RiemannGaussian/ZetaRieszCofactorTiltRate.lean)
+- [ZetaRieszCompositeBoundaryWindow](../../RiemannGaussian/ZetaRieszCompositeBoundaryWindow.lean)
 - [ZetaRieszCompositeDeletion](../../RiemannGaussian/ZetaRieszCompositeDeletion.lean)
 - [ZetaRieszCompositeProduct](../../RiemannGaussian/ZetaRieszCompositeProduct.lean)
 - [ZetaRieszCompositeSmooth](../../RiemannGaussian/ZetaRieszCompositeSmooth.lean)
@@ -94,6 +95,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszEulerQuotient](../../RiemannGaussian/ZetaRieszEulerQuotient.lean)
 - [ZetaRieszEulerWindowDeletion](../../RiemannGaussian/ZetaRieszEulerWindowDeletion.lean)
 - [ZetaRieszExponentialCofactor](../../RiemannGaussian/ZetaRieszExponentialCofactor.lean)
+- [ZetaRieszExtremePrimeProfile](../../RiemannGaussian/ZetaRieszExtremePrimeProfile.lean)
 - [ZetaRieszFilteredCompletion](../../RiemannGaussian/ZetaRieszFilteredCompletion.lean)
 - [ZetaRieszFixedCofactor](../../RiemannGaussian/ZetaRieszFixedCofactor.lean)
 - [ZetaRieszFourierCarrier](../../RiemannGaussian/ZetaRieszFourierCarrier.lean)
@@ -115,6 +117,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszSmoothPrimePrefix](../../RiemannGaussian/ZetaRieszSmoothPrimePrefix.lean)
 - [ZetaRieszSmoothPrimeProduct](../../RiemannGaussian/ZetaRieszSmoothPrimeProduct.lean)
 - [ZetaRieszSmoothRoughProduct](../../RiemannGaussian/ZetaRieszSmoothRoughProduct.lean)
+- [ZetaRieszSurvivingPrimeLayers](../../RiemannGaussian/ZetaRieszSurvivingPrimeLayers.lean)
 - [ZetaRoughCoprimeFactorDecay](../../RiemannGaussian/ZetaRoughCoprimeFactorDecay.lean)
 - [ZetaRoughDivisorCorrelation](../../RiemannGaussian/ZetaRoughDivisorCorrelation.lean)
 - [ZetaRoughDivisorIncidence](../../RiemannGaussian/ZetaRoughDivisorIncidence.lean)

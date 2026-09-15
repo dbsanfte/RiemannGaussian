@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Large smooth factors are now paid with any number of rough primes.** For 1/2<u and 2*u²<1, Lean removes every term whose complete N²-smooth factor reaches the physical cutoff, allowing any number of rough primes. Their full divisor cost adds only a logarithm, absorbed by the geometric saving. Every nonzero survivor has a proved factorization with smaller smooth part. Earlier deletions, the exact source and signed Euler bridge remain. The full joint signed floor is still open.
-Next: use the exact Riesz recurrence beyond the physical prime cutoff to isolate which remaining smooth cores and intermediate primes can carry a nonzero coefficient.
-[Current checked endpoint](RiemannGaussian/ZetaRieszLargeSmoothDeletion.lean#L100)
-· [Proof details](docs/zeta-riesz-large-smooth-factor-deletion.md).
+**Composite cores reduce to an exact signed divisor window.** Lean constructs every nonzero survivor’s smooth, intermediate and extreme prime factors. Composite smooth cores contribute only through the strict window X_N/a<d<X_N, with all Möbius signs retained. Saturated extreme-core coefficients have norm at most log(n), regardless of extreme-prime count. The total phases remain, and the full joint signed floor is still open.
+Next: bound the coupled divisor window while preserving all three prime layers, the physical cutoff and the original phases.
+[Current checked endpoint](RiemannGaussian/ZetaRieszSurvivingPrimeLayers.lean#L152)
+· [Proof details](docs/zeta-riesz-extreme-prime-window.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
