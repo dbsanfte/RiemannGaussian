@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 25,
-      "id": "semiprime-class-deletion",
+      "sequence": 26,
+      "id": "unfiltered-narrow-carrier",
       "kind": "theorem",
-      "title": "A whole semiprime class is removed from the signed tail.",
-      "body": "Lean selects exposed hypothetical zeros and proves decay of the original, uniquely counted semiprime band with a prime factor at most N². All prior arithmetic cuts and the exact negative multiplicity source survive. On the complete-composite interval, every nonzero survivor now has at least two primes above N²; other scales retain composite-cofactor cases. The full joint signed floor remains open.",
-      "next": "Next: bound the remaining coupled large-prime products and composite-cofactor fallback classes; any whole-residual cofinal floor strictly above -1 suffices.",
+      "title": "Two more arithmetic tails are bounded; the signed target is simpler.",
+      "body": "Lean removes the actual outer pieces below log(n)=2N/5 and above log(n)=8N log(2), with independent geometric bounds for every fixed filter. At exposed zeros, the constant filter P=1 preserves the full negative multiplicity source and every earlier arithmetic cut. The remaining target is an exact signed cosine sum in the smaller window; its joint lower floor remains open.",
+      "next": "Next: control the coupled large-prime products and composite-cofactor fallback cases inside that window. Any whole-sum cofinal floor strictly above -1 suffices.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszSemiprimeDeletionTheorem"
+        "rieszNarrowDeletionTheorem"
       ],
-      "documentation": "docs/zeta-riesz-semiprime-deletion.md"
+      "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -988,6 +988,61 @@
         "rieszSemiprimeDeletionScope"
       ],
       "documentation": "docs/zeta-riesz-semiprime-deletion.md"
+    },
+    {
+      "id": "unfiltered-narrow-carrier",
+      "label": "Narrowed cosine carrier · outer tails bounded",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUnfilteredPrimeSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUnfilteredArithmeticSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUnfilteredCosineTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszArithmeticTiltTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNarrowUpperRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNarrowWindowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNarrowArithmeticBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNarrowDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNarrowSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNarrowCosineTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNarrowFloorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszUnfilteredNarrowScope"
+      ],
+      "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md"
     }
   ],
   "scopes": {
@@ -2516,6 +2571,83 @@
       "summary": "At exposed zeros the complete signed quadratic Euler-window residual differs from the new arithmetic residual by a vanishing normalized error. Leading, mixed and boundary information remains available upstream.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-semiprime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaExposedPrimeFilter.tendsto_primeFilter_one_exposed": {
+      "label": "The constant filter retains the exposed prime source",
+      "summary": "At an exposed right-half zero the constant filter one has the full negative multiplicity limit. Every other actual zero mode, the pole and reflected/analytic remainder are controlled without a zero-isolating polynomial.",
+      "family": "euler",
+      "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszUnfilteredSource.tendsto_actual_riesz_band_one_exposed": {
+      "label": "The original arithmetic band keeps the source with P=1",
+      "summary": "Independent arithmetic/prime transport preserves the original physical floor and full source for the constant filter one at exposed zeros.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCosineCarrier.re_unfiltered_residual_eq_cosine_sum": {
+      "label": "The full real residual is an exact signed cosine sum",
+      "summary": "The original real Riesz coefficient multiplies a nonnegative factorial envelope and cos(gamma*log(n)). Every earlier arithmetic cut, the physical length and product phase remain. This identity is not an independent floor.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaArithmeticLogWindow.tendsto_normalized_tilted_sum": {
+      "label": "A general source-adapted tilt pays arbitrary outer selections",
+      "summary": "Every changing finite support and divisor-majorized coefficient family is controlled when the complete normalized tilt rate is below one. Fixed polynomial shifts retain their exact cost; the generic rate premise must be verified.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaArithmeticLogWindow.upperRate_cube": {
+      "label": "The upper-tail rate has exact cube 125/128",
+      "summary": "The explicit upper rate 5*exp(-(7/3)*log(2)) has cube 125/128 and is strictly below one. This is a tail-rate identity, not a numerical zero bound.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszNarrowCarrier.mem_residualBand": {
+      "label": "The actual support lies in the narrower window",
+      "summary": "The new support is exactly the previous semiprime-free residual intersected with 2*N/5<log(n)<=8*N*log(2). All earlier restrictions keep their proved parameter ranges.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszNarrowCarrier.norm_normalized_residual_sub_narrow": {
+      "label": "Both actual outer pieces have an explicit geometric allowance",
+      "summary": "The actual coefficient, common physical length and every fixed filter are retained. The normalized error is at most u^(N+1) times two geometric rates with convergent divisor-mass constants, uniformly in the ordinate.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszNarrowCarrier.tendsto_actual_residual_sub_narrow": {
+      "label": "The actual outer residual pieces vanish independently",
+      "summary": "For every fixed polynomial filter and every 0<u<1, both newly discarded pieces of the actual residual have vanishing normalized response. No hypothetical zero or prime-cancellation premise is used.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszNarrowCarrier.tendsto_normalizedResidual": {
+      "label": "The whole narrowed cosine carrier retains negative multiplicity",
+      "summary": "At exposed right-half zeros the constant-filter residual in the smaller window still tends to the full negative analytic multiplicity. No source margin is spent by deleting the outer pieces.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszNarrowCarrier.re_normalizedResidual_eq_cosine_sum": {
+      "label": "The narrowed sum retains the exact coefficient and cosine phase",
+      "summary": "The complete real response remains one actual signed coefficient times a nonnegative factorial envelope times the cosine of the full logarithmic product phase, summed over the exact narrowed support.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszNarrowCarrier.rh_of_exposed_narrow_floors": {
+      "label": "Conditional RH closure from the whole narrowed floor",
+      "summary": "A cofinal real floor at least -c with c<1 for each whole narrowed exposed carrier implies Mathlib RH. This independent arithmetic bound remains an explicit open premise; source transport and exposed-zero selection are proved.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md",
       "overview": true
     }
   }

@@ -10,6 +10,15 @@ enough to close the contradiction.
 
 ## Direction and obstruction
 
+The latest [narrowed cosine carrier](zeta-riesz-unfiltered-narrow-carrier.md)
+independently bounds both actual outer pieces, leaving
+`2*N/5<log(n)<=8*N*log(2)` and retaining every earlier arithmetic cut.
+At exposed hypothetical zeros, the constant filter `P=1` preserves the
+full negative multiplicity source. Its real response is exactly the signed
+Riesz coefficient times a nonnegative factorial envelope times
+`cos(gamma*log(n))`. The full coupled interior floor remains open; the
+multiple-large-prime and composite-cofactor cases retain their prior ranges.
+
 A hypothetical zero to the right of the critical line forces a nonzero
 normalized source in the original signed arithmetic carrier. The
 [separate source view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=source-limit)

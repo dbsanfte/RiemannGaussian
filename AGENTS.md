@@ -2540,6 +2540,25 @@ See `docs/zeta-riesz-semiprime-deletion.md` and supporting endpoint
 `semiprime-class-deletion`; retain the default whole-carrier endpoint
 and both ten-entry README lists.
 
+The continuation in `docs/zeta-riesz-unfiltered-narrow-carrier.md` proves
+independent decay of both actual outer pieces outside
+`2*N/5<log(n)<=8*N*log(2)`, for every fixed filter and `0<u<1`, with no zero
+premise. The exact allowance retains `u^(N+1)`, convergent divisor masses,
+and the rates `(1/2)*exp(5/8)<1` and `5*exp(-(7/3)*log(2))`, whose cube is
+`125/128`. `ZetaRieszNarrowCarrier.tendsto_actual_residual_sub_narrow`
+intersects every earlier support cut with this window; it does not extend
+their parameter ranges. At exposed zeros, the constant filter `P=1`
+retains the full negative multiplicity source, and the real carrier is
+exactly its signed coefficient times a nonnegative factorial envelope
+times `cos(gamma*log(n))`. `tendsto_normalizedResidual` preserves that
+source in the narrowed window. The joint interior floor is still open:
+multiple-large-prime products and composite-cofactor fallback cases remain
+on their previously stated ranges. The conditional
+`rh_of_exposed_narrow_floors` keeps this arithmetic floor as a premise.
+Do not report an RH proof, new zero-free region or numerical zero bound.
+Use supporting endpoint `unfiltered-narrow-carrier` while retaining the
+default whole-carrier endpoint and both ten-entry README lists.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.
@@ -2793,6 +2812,10 @@ definitions, the starting height and exact comparison endpoints. Run it after
 the ordinary Lean build, then use the pinned environment in
 `scripts/requirements-plots.txt` with `scripts/build_zero_free_plot.py`.
 Commit the generated SVG, formula export and audit together. Do not edit
+either plot audit before its corresponding theorem explorer is generated:
+the zero-free plot hashes the main explorer audit, and the numerical plot
+hashes the certificate explorer audit. Generate the explorers first, then
+the plot artifacts, to avoid stale audit hashes at the commit gate. Do not edit
 generated curves or copy their constants into a second plotting formula.
 Update the checked formula interface when the proved region changes; its
 endpoint must match the default proof-status theorem. Preserve `log(abs(t)+2)`

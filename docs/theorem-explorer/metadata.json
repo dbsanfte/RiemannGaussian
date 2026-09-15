@@ -2407,7 +2407,12 @@
     "ZetaRieszSemiprimeCompletion": "arithmetic",
     "ZetaRieszSemiprimeBand": "arithmetic",
     "ZetaRieszSemiprimeSupport": "arithmetic",
-    "ZetaRieszSemiprimeDeletion": "arithmetic"
+    "ZetaRieszSemiprimeDeletion": "arithmetic",
+    "ZetaExposedPrimeFilter": "euler",
+    "ZetaRieszUnfilteredSource": "arithmetic",
+    "ZetaRieszCosineCarrier": "arithmetic",
+    "ZetaArithmeticLogWindow": "arithmetic",
+    "ZetaRieszNarrowCarrier": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

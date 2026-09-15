@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**175 modules.** Source links open the definitions, hypotheses and proofs.
+**179 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -42,6 +42,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaArithmeticAffine](../../RiemannGaussian/ZetaArithmeticAffine.lean)
 - [ZetaArithmeticBandCorrelation](../../RiemannGaussian/ZetaArithmeticBandCorrelation.lean)
 - [ZetaArithmeticLocalEnergy](../../RiemannGaussian/ZetaArithmeticLocalEnergy.lean)
+- [ZetaArithmeticLogWindow](../../RiemannGaussian/ZetaArithmeticLogWindow.lean)
 - [ZetaArithmeticQuadraticSmallProduct](../../RiemannGaussian/ZetaArithmeticQuadraticSmallProduct.lean)
 - [ZetaArithmeticSmallProduct](../../RiemannGaussian/ZetaArithmeticSmallProduct.lean)
 - [ZetaAveragedResonance](../../RiemannGaussian/ZetaAveragedResonance.lean)
@@ -82,6 +83,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszCompositeSmooth](../../RiemannGaussian/ZetaRieszCompositeSmooth.lean)
 - [ZetaRieszConditionedEnergy](../../RiemannGaussian/ZetaRieszConditionedEnergy.lean)
 - [ZetaRieszConditioningTransfer](../../RiemannGaussian/ZetaRieszConditioningTransfer.lean)
+- [ZetaRieszCosineCarrier](../../RiemannGaussian/ZetaRieszCosineCarrier.lean)
 - [ZetaRieszCriticalProfile](../../RiemannGaussian/ZetaRieszCriticalProfile.lean)
 - [ZetaRieszDivisorPrefix](../../RiemannGaussian/ZetaRieszDivisorPrefix.lean)
 - [ZetaRieszEulerCorrectionDeletion](../../RiemannGaussian/ZetaRieszEulerCorrectionDeletion.lean)
@@ -107,6 +109,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszInterpolation](../../RiemannGaussian/ZetaRieszInterpolation.lean)
 - [ZetaRieszLargeSmoothClass](../../RiemannGaussian/ZetaRieszLargeSmoothClass.lean)
 - [ZetaRieszLargeSmoothDeletion](../../RiemannGaussian/ZetaRieszLargeSmoothDeletion.lean)
+- [ZetaRieszNarrowCarrier](../../RiemannGaussian/ZetaRieszNarrowCarrier.lean)
 - [ZetaRieszNegativeProfile](../../RiemannGaussian/ZetaRieszNegativeProfile.lean)
 - [ZetaRieszPhysicalPrefixDeletion](../../RiemannGaussian/ZetaRieszPhysicalPrefixDeletion.lean)
 - [ZetaRieszPrimeClasses](../../RiemannGaussian/ZetaRieszPrimeClasses.lean)
@@ -126,6 +129,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszSmoothPrimeProduct](../../RiemannGaussian/ZetaRieszSmoothPrimeProduct.lean)
 - [ZetaRieszSmoothRoughProduct](../../RiemannGaussian/ZetaRieszSmoothRoughProduct.lean)
 - [ZetaRieszSurvivingPrimeLayers](../../RiemannGaussian/ZetaRieszSurvivingPrimeLayers.lean)
+- [ZetaRieszUnfilteredSource](../../RiemannGaussian/ZetaRieszUnfilteredSource.lean)
 - [ZetaRoughCoprimeFactorDecay](../../RiemannGaussian/ZetaRoughCoprimeFactorDecay.lean)
 - [ZetaRoughDivisorCorrelation](../../RiemannGaussian/ZetaRoughDivisorCorrelation.lean)
 - [ZetaRoughDivisorIncidence](../../RiemannGaussian/ZetaRoughDivisorIncidence.lean)

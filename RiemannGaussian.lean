@@ -1704,3 +1704,8 @@ import RiemannGaussian.ZetaRieszSemiprimeCompletion
 import RiemannGaussian.ZetaRieszSemiprimeBand
 import RiemannGaussian.ZetaRieszSemiprimeSupport
 import RiemannGaussian.ZetaRieszSemiprimeDeletion
+import RiemannGaussian.ZetaExposedPrimeFilter
+import RiemannGaussian.ZetaRieszUnfilteredSource
+import RiemannGaussian.ZetaRieszCosineCarrier
+import RiemannGaussian.ZetaArithmeticLogWindow
+import RiemannGaussian.ZetaRieszNarrowCarrier

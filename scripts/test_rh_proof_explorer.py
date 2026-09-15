@@ -760,6 +760,38 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem surviving_layers_with_boundary_witness' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'unfiltered-narrow-carrier':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'independent cofinal floor' in scope and 'open' in scope
+                        assert 'Composite-cofactor fallback' in scope and '2*u^2<1' in scope
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        deletion = next(n for n in roots if n['id'].endswith('.tendsto_actual_residual_sub_narrow'))
+                        statement = ' '.join(deletion['statement'].split())
+                        assert all(t in statement for t in ('0 < u', 'u < 1', 'Tendsto', 'residualResponse'))
+                        assert 'NontrivialZetaZero' not in statement
+                        source = next(n for n in roots if n['id'].endswith('ZetaRieszNarrowCarrier.tendsto_normalizedResidual'))
+                        assert all(t in source['statement'] for t in ('NontrivialZetaZero', 'analyticZetaZeroMultiplicity', 'normalizedResidual'))
+                        cosine = next(n for n in roots if n['id'].endswith('.re_normalizedResidual_eq_cosine_sum'))
+                        assert all(t in cosine['statement'] for t in ('Real.cos', 'factorial', 'coefficient'))
+                        rate = next(n for n in roots if n['id'].endswith('.upperRate_cube'))
+                        assert all(t in rate['statement'] for t in ('upperRate', '125', '128'))
+                        closure = next(n for n in roots if n['id'].endswith('.rh_of_exposed_narrow_floors'))
+                        assert all(t in closure['statement'] for t in ('∃ c < 1', '∃ᶠ', 'RiemannHypothesis'))
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', deletion['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == deletion['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{deletion['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{deletion['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem tendsto_actual_residual_sub_narrow' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -782,7 +814,8 @@ def run(output, url=None, refresh_preview=False):
                                'actualSmoothRateAndJointPrimeCofactorDeletion': True,
                                'scalarTiltAuditDistinguishedFromArithmeticBound': True,
                                'arbitraryRoughPrimeCountAndCompleteSmoothFactorDeletion': True,
-                               'exactThreePrimeLayersAndSignedBoundaryWindow': True})
+                               'exactThreePrimeLayersAndSignedBoundaryWindow': True,
+                               'independentNarrowedTailAndConditionalCosineSource': True})
                 page.close()
             browser.close()
     finally:

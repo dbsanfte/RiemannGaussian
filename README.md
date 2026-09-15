@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**A whole semiprime class is removed from the signed tail.** Lean selects exposed hypothetical zeros and proves decay of the original, uniquely counted semiprime band with a prime factor at most N². All prior arithmetic cuts and the exact negative multiplicity source survive. On the complete-composite interval, every nonzero survivor now has at least two primes above N²; other scales retain composite-cofactor cases. The full joint signed floor remains open.
-Next: bound the remaining coupled large-prime products and composite-cofactor fallback classes; any whole-residual cofinal floor strictly above -1 suffices.
-[Current checked endpoint](RiemannGaussian/ZetaRieszSemiprimeDeletion.lean#L94)
-· [Proof details](docs/zeta-riesz-semiprime-deletion.md).
+**Two more arithmetic tails are bounded; the signed target is simpler.** Lean removes the actual outer pieces below log(n)=2N/5 and above log(n)=8N log(2), with independent geometric bounds for every fixed filter. At exposed zeros, the constant filter P=1 preserves the full negative multiplicity source and every earlier arithmetic cut. The remaining target is an exact signed cosine sum in the smaller window; its joint lower floor remains open.
+Next: control the coupled large-prime products and composite-cofactor fallback cases inside that window. Any whole-sum cofinal floor strictly above -1 suffices.
+[Current checked endpoint](RiemannGaussian/ZetaRieszNarrowCarrier.lean#L78)
+· [Proof details](docs/zeta-riesz-unfiltered-narrow-carrier.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
