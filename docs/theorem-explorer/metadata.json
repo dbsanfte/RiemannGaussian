@@ -2386,7 +2386,11 @@
     "ZetaRieszSmoothCofactor": "arithmetic",
     "ZetaRieszSmoothPrimeProduct": "arithmetic",
     "ZetaRieszSmoothPrimePrefix": "arithmetic",
-    "ZetaRieszPhysicalPrefixDeletion": "arithmetic"
+    "ZetaRieszPhysicalPrefixDeletion": "arithmetic",
+    "ZetaRieszProductCeiling": "arithmetic",
+    "ZetaRieszBeyondPhysical": "arithmetic",
+    "ZetaRieszCompositeSmooth": "arithmetic",
+    "ZetaRieszCompositeDeletion": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

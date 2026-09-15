@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 21,
-      "id": "physical-prime-prefix-deletion",
+      "sequence": 22,
+      "id": "composite-smooth-deletion",
       "kind": "theorem",
-      "title": "The physical prime prefix is now paid inside the arithmetic remainder.",
-      "body": "For 1/2<u<exp(-1/2), Lean bounds every term n=p*a with N²<p<=(D_N+2)² and an N²-smooth squarefree cofactor, with no separate cofactor size cap. The deletion preserves earlier cofactor restrictions: any surviving single large prime now exceeds the physical cutoff. An adaptive fallback retains the exact negative source at all scales. The remaining joint signed floor is still open.",
-      "next": "Next: attack primes beyond the physical cutoff using the exact composite-cofactor vanishing identity and the retained prime/cofactor product bound.",
+      "title": "All one-large-prime composite-smooth terms are now paid on the proved scale interval.",
+      "body": "For 1/2<u<exp(-1/2), Lean pays every one-large-prime term with a squarefree composite cofactor supported through N², with no cofactor size cap or physical prime cutoff. Nonzero survivors are either a small-prime/large-prime semiprime beyond the physical cutoff, or have at least two large primes. Earlier restrictions, the exact source and signed Euler bridge survive. Their full joint signed floor remains open.",
+      "next": "Next: control the coupled surviving semiprimes and multiple-large-prime terms, retaining their prime structure, Riesz signs and product phases.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszPhysicalPrefixBandTheorem"
+        "rieszCompositeDeletionTheorem"
       ],
-      "documentation": "docs/zeta-riesz-physical-prime-prefix.md"
+      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -736,6 +736,69 @@
         "rieszPhysicalPrefixScope"
       ],
       "documentation": "docs/zeta-riesz-physical-prime-prefix.md"
+    },
+    {
+      "id": "composite-smooth-deletion",
+      "label": "Complete composite-smooth deletion · two surviving prime classes",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszProductHarmonicTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeSmoothMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeSmoothRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeSmoothActualTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszBeyondPhysicalExactTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompositeSmoothClassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompositeSmoothDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompositeDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompositeSurvivorsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompositeAdaptiveTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompositeSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompositeEulerBridgeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompositeFloorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCompositeDeletionScope"
+      ],
+      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md"
     }
   ],
   "scopes": {
@@ -1921,6 +1984,97 @@
       "summary": "A cofinal real floor above minus one for each full adaptive remainder would imply Mathlib RH. This arithmetic floor remains an explicit unproved premise.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszProductCeiling.norm_pairResponse_le_harmonic": {
+      "label": "Exact product ceiling · harmonic cofactor mass",
+      "summary": "Retaining p*a<=2^(32*N) cancels the cofactor tilt power against the prime-prefix cost, leaving the full divisor-choice weight 2^omega(a)/a with every mask and filter offset retained.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszProductCeiling.harmonic_head_tail_le": {
+      "label": "Large smooth cofactors · inverse-square-root cutoff saving",
+      "summary": "Every large squarefree cofactor class has its full harmonic mass bounded by an inverse-square-root cutoff factor times the complete quadratic prime-head Euler product.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszProductCeiling.norm_scaled_large_cofactor_le": {
+      "label": "Original large-cofactor sum · complete geometric allowance",
+      "summary": "The literal normalized pair response retains its product ceiling, physical cutoff and full filter cost in an explicit N*(N+1)*EulerHead*r_2(u,q)^N bound.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszBeyondPhysical.tendsto_actual_largeCofactorBand": {
+      "label": "Actual large-cofactor class · decay whenever twice u-squared is below one",
+      "summary": "All scalar conditions are discharged for 0<u and 2*u^2<1. Unique prime insertion turns the bound into independent decay of the actual integer class, for every mask.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszBeyondPhysical.pairResponse_eq_large_of_beyond": {
+      "label": "Beyond the prime cutoff · smaller composite cofactors vanish exactly",
+      "summary": "The original coefficient is exactly zero when a composite smooth cofactor is below the physical cutoff and the inserted prime is above it. The exact signed response retains only larger cofactors.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompositeSmooth.mem_compositeSmoothBand_iff": {
+      "label": "Complete actual class · all composite smooth cofactors and all large primes",
+      "summary": "Membership retains the original band and mask, every squarefree composite cofactor supported through N^2, and every inserted prime above N^2, without a separate cofactor or physical-prime cutoff.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompositeSmooth.tendsto_actual_compositeSmoothBand": {
+      "label": "Every composite-smooth class · independently paid at all orders",
+      "summary": "For 1/2<u<exp(-1/2), the prefix estimate, exact saturated-cofactor identity and large-cofactor estimate pay the entire actual class, with all scalar conditions discharged.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompositeDeletion.tendsto_actual_band_sub_compositeResidual": {
+      "label": "Original band · complete composite-smooth deletion",
+      "summary": "The full normalized deletion error tends to zero independently inside the previous residual on the stated source interval. Every earlier arithmetic restriction remains.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompositeDeletion.surviving_support_dichotomy": {
+      "label": "Nonzero survivors · two precise prime-structure classes",
+      "summary": "Every nonzero surviving label is either a small-prime/large-prime semiprime beyond the physical cutoff, or has at least two distinct prime factors above N^2.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompositeDeletion.tendsto_actual_band_sub_adaptiveComposite": {
+      "label": "All source scales · independent deletion with proved fallback",
+      "summary": "The adaptive carrier uses the new complete deletion below exp(-1/2) and the prior remainder elsewhere, with independent vanishing total error for every 1/2<u<1.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompositeDeletion.tendsto_normalizedAdaptiveComposite": {
+      "label": "Exact negative source · all original orders retained",
+      "summary": "Under a hypothetical right-half zero, the adaptive remaining carrier keeps its exact negative multiplicity limit, original pole-jet filter, phase and physical cutoff.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompositeDeletion.tendsto_quadraticResidual_sub_adaptiveComposite": {
+      "label": "Signed Euler residual · independent bridge retained",
+      "summary": "The signed quadratic Euler-window residual and the more tightly supported adaptive arithmetic sum differ by an independently vanishing normalized error at every source scale.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompositeDeletion.rh_of_adaptiveComposite_cofinal_floors": {
+      "label": "Conditional RH closure · full independent floor still required",
+      "summary": "A cofinal real floor above minus one for each complete adaptive remainder would imply Mathlib RH. That arithmetic floor remains an explicit unproved premise.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
       "overview": true
     }
   }

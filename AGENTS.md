@@ -2460,6 +2460,25 @@ closure is conditional. No new zero-free width or historical novelty is
 claimed. See `docs/zeta-riesz-physical-prime-prefix.md` and endpoint
 `physical-prime-prefix-deletion`; retain the default whole-carrier endpoint.
 
+`ZetaRieszCompositeDeletion.tendsto_actual_band_sub_compositeResidual`
+now pays the entire one-large-prime composite-smooth class on
+1/2<u<exp(-1/2), including every prime beyond the physical cutoff.
+The exact product ceiling leaves harmonic cofactor mass 2^omega(a)/a.
+Large smooth cofactors a>=(D_N+2)^2 decay independently whenever 0<u and
+2*u^2<1; smaller composite cofactors vanish exactly above the prime cutoff.
+Combined with the prefix estimate this removes every composite smooth
+cofactor size. Preserve all masks and unique actual integer counting.
+`surviving_support_dichotomy` leaves only small-prime/large-prime semiprimes
+beyond the physical cutoff or integers with at least two distinct primes
+above N^2. All earlier cofactor restrictions remain. These two classes still
+need their joint independent signed floor; do not report them as bounded.
+Keep the all-scale fallback, exact negative source and independent Euler
+bridge, and do not extend the complete deletion outside its proved interval.
+No numerical starting order, zero-free improvement or historical novelty is
+claimed; the displayed RH closure is conditional. See
+`docs/zeta-riesz-composite-smooth-deletion.md` and endpoint
+`composite-smooth-deletion`; retain the default whole-carrier endpoint.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**The physical prime prefix is now paid inside the arithmetic remainder.** For 1/2<u<exp(-1/2), Lean bounds every term n=p*a with N²<p<=(D_N+2)² and an N²-smooth squarefree cofactor, with no separate cofactor size cap. The deletion preserves earlier cofactor restrictions: any surviving single large prime now exceeds the physical cutoff. An adaptive fallback retains the exact negative source at all scales. The remaining joint signed floor is still open.
-Next: attack primes beyond the physical cutoff using the exact composite-cofactor vanishing identity and the retained prime/cofactor product bound.
-[Current checked endpoint](RiemannGaussian/ZetaRieszPhysicalPrefixDeletion.lean#L72)
-· [Proof details](docs/zeta-riesz-physical-prime-prefix.md).
+**All one-large-prime composite-smooth terms are now paid on the proved scale interval.** For 1/2<u<exp(-1/2), Lean pays every one-large-prime term with a squarefree composite cofactor supported through N², with no cofactor size cap or physical prime cutoff. Nonzero survivors are either a small-prime/large-prime semiprime beyond the physical cutoff, or have at least two large primes. Earlier restrictions, the exact source and signed Euler bridge survive. Their full joint signed floor remains open.
+Next: control the coupled surviving semiprimes and multiple-large-prime terms, retaining their prime structure, Riesz signs and product phases.
+[Current checked endpoint](RiemannGaussian/ZetaRieszCompositeDeletion.lean#L72)
+· [Proof details](docs/zeta-riesz-composite-smooth-deletion.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
