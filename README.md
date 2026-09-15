@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**The whole carrier retains explicit prime-replacement savings.** Lean bounds the full original signed carrier by its absolute mass minus a nonnegative saving from disjoint arithmetic pairs. Each pair keeps the better of a proved relative integer-gap estimate and an estimate retaining its exact sine phase. All filter, amplitude, support and cutoff costs are paid. A source-scale saving and a new zero-free region remain open.
-Next: quantify how much of the surviving arithmetic mass can be matched, retaining cross-triple phases and the exact unmatched remainder.
-[Current checked endpoint](RiemannGaussian/ZetaRieszReplacementFamily.lean#L172)
-· [Proof details](docs/zeta-riesz-prime-replacement.md).
+**Centering halves the complete prime-pair error allowance.** Lean uses the cofactor’s zero signed Mobius mass to halve the complete opposite-phase cost for every eligible nonunit cofactor. The whole original carrier now takes the best disjoint saving across all eligible prime-insertion families, retaining every unmatched term. Pair coverage, a source-scale saving and a new zero-free region remain open.
+Next: bound the unmatched mass and aggregate pair costs as the moment order grows, retaining cancellation between pair sums and the remainder.
+[Current checked endpoint](RiemannGaussian/ZetaRieszPrimeMatching.lean#L74)
+· [Proof details](docs/zeta-riesz-centered-cancellation.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

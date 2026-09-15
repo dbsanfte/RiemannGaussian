@@ -38,17 +38,14 @@ For the original Riesz profile `R_L`, Lean proves the exact identity
 
 ```math
 R_L(qn)+R_L(abn)-R_L(an)-R_L(bn)
- =R_{L-log a-log b}(n)-R_{L-log q}(n).
+ =R_{L-\log a-\log b}(n)-R_{L-\log q}(n).
 ```
 
 Its absolute value is at most
 
 ```math
-left|log q-log(ab)
-ight|
- sum_{dmid n}|mu(d)|,qquad
-left|log q-log(ab)
-ight|lerac{|q-ab|}{min(q,ab)}.
+\left|\log q-\log(ab)\right|\sum_{d\mid n}|\mu(d)|,\qquad
+\left|\log q-\log(ab)\right|\le\frac{|q-ab|}{\min(q,ab)}.
 ```
 
 The two smaller profiles vanish when `log(an)<=L` and `log(bn)<=L`:
@@ -70,9 +67,7 @@ At height `t`, the common cofactor cancels from the relative angle. The
 bound retains the exact chord
 
 ```math
-2left|sin!left(rac{t}{2}(log(ab)-log q)
-ight)
-ight|.
+2\left|\sin\!\left(\frac{t}{2}(\log(ab)-\log q)\right)\right|.
 ```
 
 The smooth derivative allowance is evaluated on the real spectral line.
@@ -94,16 +89,15 @@ For each pair let `C_n` be the smaller of the two complete proved costs,
 and set
 
 ```math
-S_n=max{|B(qn)|+|B(abn)|-C_n,0}.
+S_n=\max\{|B(qn)|+|B(abn)|-C_n,0\}.
 ```
 
 [`norm_actual_band_le_mass_sub_saving`](../RiemannGaussian/ZetaRieszReplacementFamily.lean)
 proves for the **whole original carrier**
 
 ```math
-left|sum_{kinmathcal B_N}B(k)
-ight|
- lesum_{kinmathcal B_N}|B(k)|-sum_n S_n.
+\left|\sum_{k\in\mathcal B_N}B(k)\right|
+ \le\sum_{k\in\mathcal B_N}|B(k)|-\sum_n S_n.
 ```
 
 `actual_band_eq_replacement_add_remainder` retains the exact complex
@@ -117,3 +111,7 @@ Finite floating-point exploration suggested useful pair cancellation but
 left substantial unmatched mass. It is not a certificate, an asymptotic
 estimate, or evidence of a zero-free region. No numerical exploration is
 run in ordinary CI. These identities carry no historical novelty claim.
+
+The [centered-cofactor refinement](zeta-riesz-centered-cancellation.md)
+halves the complete profile costs and combines all eligible prime-insertion
+families through a disjoint matching, with the unmatched remainder retained.

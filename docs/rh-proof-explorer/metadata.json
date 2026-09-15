@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 44,
-      "id": "prime-replacement",
+      "sequence": 45,
+      "id": "centered-cancellation",
       "kind": "theorem",
-      "title": "The whole carrier retains explicit prime-replacement savings.",
-      "body": "Lean bounds the full original signed carrier by its absolute mass minus a nonnegative saving from disjoint arithmetic pairs. Each pair keeps the better of a proved relative integer-gap estimate and an estimate retaining its exact sine phase. All filter, amplitude, support and cutoff costs are paid. A source-scale saving and a new zero-free region remain open.",
-      "next": "Next: quantify how much of the surviving arithmetic mass can be matched, retaining cross-triple phases and the exact unmatched remainder.",
+      "title": "Centering halves the complete prime-pair error allowance.",
+      "body": "Lean uses the cofactor’s zero signed Mobius mass to halve the complete opposite-phase cost for every eligible nonunit cofactor. The whole original carrier now takes the best disjoint saving across all eligible prime-insertion families, retaining every unmatched term. Pair coverage, a source-scale saving and a new zero-free region remain open.",
+      "next": "Next: bound the unmatched mass and aggregate pair costs as the moment order grows, retaining cancellation between pair sums and the remainder.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszReplacementSavingTheorem"
+        "rieszOptimalPrimeMatchingTheorem"
       ],
-      "documentation": "docs/zeta-riesz-prime-replacement.md"
+      "documentation": "docs/zeta-riesz-centered-cancellation.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -2009,6 +2009,49 @@
         "rieszPrimeReplacementScope"
       ],
       "documentation": "docs/zeta-riesz-prime-replacement.md"
+    },
+    {
+      "id": "centered-cancellation",
+      "label": "Centered cancellation · all prime-pair families",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCenteredCutoffTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCenteredTentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCenteredReplacementTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOppositeCosineTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCenteredPhaseTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPairMatchingPartitionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeMatchingCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOptimalPrimeMatchingTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCenteredCancellationScope"
+      ],
+      "documentation": "docs/zeta-riesz-centered-cancellation.md"
     }
   ],
   "scopes": {
@@ -4958,6 +5001,62 @@
       "summary": "All selected matches are disjoint. Each uses the better complete gap or exact-phase cost; source-scale saving remains open.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-prime-replacement.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCenteredCofactor.riesz_cutoff_lipschitz_centered": {
+      "label": "Half the cutoff allowance for every nonunit cofactor",
+      "summary": "Center the hinge increment using the actual vanishing signed Mobius mass, uniformly over both cutoff edges.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-centered-cancellation.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCenteredCofactor.abs_riesz_two_primes_centered": {
+      "label": "The complete two-prime tent also gains a factor of two",
+      "summary": "The compact nonnegative tent and the complete cofactor measure retain their exact cancellation.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-centered-cancellation.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCenteredCofactor.norm_bandWeight_replacement_pair_centered": {
+      "label": "Halve the actual prime-to-product profile cost",
+      "summary": "The full complex amplitude difference and both smaller-profile saturation conditions remain explicit.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-centered-cancellation.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszOppositePrimes.norm_unitPhase_add_eq": {
+      "label": "Opposite phases retain their exact cosine chord",
+      "summary": "The sum of unit phases exposes the half-angle cosine before any monotone height allowance.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-centered-cancellation.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCenteredPhase.norm_bandWeight_prime_pair_le_half_phaseCost": {
+      "label": "Halve the complete opposite-phase prime-pair cost",
+      "summary": "All nonunit squarefree cofactors, full polynomial filters and actual band membership are included.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-centered-cancellation.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPairMatching.sum_eq_pairs_add_remainder": {
+      "label": "Every pair and unmatched term retains its complex amplitude",
+      "summary": "The disjoint matching gives an exact partition before its norm estimate.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-centered-cancellation.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeMatching.primePairCost_bound": {
+      "label": "The literal gcd test discharges every pair-cost premise",
+      "summary": "Original integer indices determine the shared cofactor and prime quotients; no cancellation assumption remains.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-centered-cancellation.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeMatching.exists_actual_band_optimal_prime_pairs": {
+      "label": "The whole original carrier uses all eligible prime-pair families",
+      "summary": "The best disjoint saving is attained. Its positivity, coverage and source-scale sufficiency remain open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-centered-cancellation.md",
       "overview": true
     }
   }

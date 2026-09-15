@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**254 modules.** Source links open the definitions, hypotheses and proofs.
+**259 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -84,6 +84,8 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszAnnulusJoint](../../RiemannGaussian/ZetaRieszAnnulusJoint.lean)
 - [ZetaRieszBeyondPhysical](../../RiemannGaussian/ZetaRieszBeyondPhysical.lean)
 - [ZetaRieszBlockMass](../../RiemannGaussian/ZetaRieszBlockMass.lean)
+- [ZetaRieszCenteredCofactor](../../RiemannGaussian/ZetaRieszCenteredCofactor.lean)
+- [ZetaRieszCenteredPhase](../../RiemannGaussian/ZetaRieszCenteredPhase.lean)
 - [ZetaRieszCentralHarmonicCost](../../RiemannGaussian/ZetaRieszCentralHarmonicCost.lean)
 - [ZetaRieszCentralPair](../../RiemannGaussian/ZetaRieszCentralPair.lean)
 - [ZetaRieszCentralPrimeLayers](../../RiemannGaussian/ZetaRieszCentralPrimeLayers.lean)
@@ -153,6 +155,8 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszNarrowCarrier](../../RiemannGaussian/ZetaRieszNarrowCarrier.lean)
 - [ZetaRieszNegativeProfile](../../RiemannGaussian/ZetaRieszNegativeProfile.lean)
 - [ZetaRieszOffDiagonalJoint](../../RiemannGaussian/ZetaRieszOffDiagonalJoint.lean)
+- [ZetaRieszOppositePrimes](../../RiemannGaussian/ZetaRieszOppositePrimes.lean)
+- [ZetaRieszPairMatching](../../RiemannGaussian/ZetaRieszPairMatching.lean)
 - [ZetaRieszPairOrders](../../RiemannGaussian/ZetaRieszPairOrders.lean)
 - [ZetaRieszPairedCorrection](../../RiemannGaussian/ZetaRieszPairedCorrection.lean)
 - [ZetaRieszPhysicalAnnulus](../../RiemannGaussian/ZetaRieszPhysicalAnnulus.lean)
@@ -170,6 +174,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszPrimeCountWindow](../../RiemannGaussian/ZetaRieszPrimeCountWindow.lean)
 - [ZetaRieszPrimeEndpoint](../../RiemannGaussian/ZetaRieszPrimeEndpoint.lean)
 - [ZetaRieszPrimeFourier](../../RiemannGaussian/ZetaRieszPrimeFourier.lean)
+- [ZetaRieszPrimeMatching](../../RiemannGaussian/ZetaRieszPrimeMatching.lean)
 - [ZetaRieszPrimePairConvolution](../../RiemannGaussian/ZetaRieszPrimePairConvolution.lean)
 - [ZetaRieszPrimeReplacement](../../RiemannGaussian/ZetaRieszPrimeReplacement.lean)
 - [ZetaRieszProductCeiling](../../RiemannGaussian/ZetaRieszProductCeiling.lean)

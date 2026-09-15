@@ -2487,7 +2487,12 @@
     "ZetaRieszCrossFamilyWindow": "arithmetic",
     "ZetaRieszPrimeReplacement": "arithmetic",
     "ZetaRieszReplacementPhase": "arithmetic",
-    "ZetaRieszReplacementFamily": "arithmetic"
+    "ZetaRieszReplacementFamily": "arithmetic",
+    "ZetaRieszOppositePrimes": "arithmetic",
+    "ZetaRieszCenteredCofactor": "arithmetic",
+    "ZetaRieszCenteredPhase": "arithmetic",
+    "ZetaRieszPairMatching": "arithmetic",
+    "ZetaRieszPrimeMatching": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

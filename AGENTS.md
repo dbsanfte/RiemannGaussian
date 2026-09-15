@@ -3110,6 +3110,22 @@ must not be rerun in ordinary CI. See `docs/zeta-riesz-prime-replacement.md`
 and supporting endpoint `prime-replacement`; default endpoints and the two
 top-ten lists remain unchanged.
 
+`ZetaRieszCenteredCofactor` centers the complete zero-mass Mobius divisor
+measure before estimating cutoff increments and the compact two-prime tent.
+`ZetaRieszCenteredPhase` halves the complete opposite-prime allowance for
+EVERY eligible nonunit squarefree cofactor, not only prime cofactors.
+`ZetaRieszPrimeMatching` constructs all eligible pairs from the original
+integer indices and their actual gcd; the fully proved costs feed a maximum
+over every disjoint subfamily. Do not call this a proof of coverage or a
+positive aggregate saving. `ZetaRieszPairMatching` retains the exact complex
+pair/remainder partition before its norm bound. Keep that remainder and
+cross-pair phases available. The separately improved prime-to-product
+profile cost is not included in this prime-insertion candidate graph.
+A fixed fractional gain need not beat the exponential source-scale cost.
+No new zero-free theorem follows from this slice. Keep the default endpoint
+and both top-ten lists unchanged; supporting endpoint `centered-cancellation`
+and `docs/zeta-riesz-centered-cancellation.md` record its precise scope.
+
 ## Commit and check-in invariant
 
 The introductory research-agent/model statement belongs directly below the
