@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**A growing prime head now has vanishing correction error in the original band.** Lean now pays the full correction multiplied by every actual head prime up to n+16, at original factorial orders d*n. An explicit bound covers all head families and a positive cofinal stride pays their growth. The literal band, cutoff, phases and negative multiplicity source are preserved. The compensated leading quotient, its mixed correction and signed boundary remain coupled; their joint floor is open.
-Next: bound the explicit moving-window residual while retaining correlations between its compensated leading quotient, mixed correction and signed completion boundary.
-[Current checked endpoint](RiemannGaussian/ZetaRieszEulerWindowDeletion.lean#L194)
-· [Proof details](docs/zeta-riesz-euler-growing-head.md).
+**Prime density pays the correction coupled to all head primes through N².** Lean now uses actual prime density to bound the complete correction multiplied by the prime head through N² at every original factorial order. Its subexponential allowance is absorbed by the original geometric saving. The literal band, phases, cutoff and negative multiplicity source are retained. The compensated leading quotient, mixed correction and signed boundary still require their joint independent floor.
+Next: bound a further actual arithmetic class or the complete signed residual while preserving its leading, mixed and boundary correlations.
+[Current checked endpoint](RiemannGaussian/ZetaRieszEulerQuadraticHead.lean#L50)
+· [Proof details](docs/zeta-riesz-euler-quadratic-head.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

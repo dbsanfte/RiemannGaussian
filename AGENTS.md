@@ -2406,6 +2406,24 @@ conditional; its arithmetic premise is not proved. See
 `docs/zeta-riesz-euler-growing-head.md` and supporting endpoint
 `euler-growing-head-deletion`; keep the default whole-carrier endpoint unchanged.
 
+`ZetaRieszEulerPrimeHeadDensity` and `ZetaRieszEulerQuadraticHead` strengthen
+that correction deletion to all actual head primes through N^2 at every
+original factorial order. The existing Chebyshev theorem bounds the complete
+head coefficient product by exp(16*sqrt(b)/log(b+2)), uniformly over prime
+subsets through b and sigma>=1/2. At b=N^2 this is at most exp(eps*N)
+eventually for every eps>0. The full polynomial frequency/factorial cost is
+absorbed by the original geometric saving, so no stride is required. The
+literal band deletion is independent of a hypothetical zero and retains the
+original physical cutoff and all integrability conditions. Its exact
+negative multiplicity source is preserved under the original hypothetical
+zero. Compensated leading SG-1-A, mixed S(G-1)(H-1), and the entire signed B
+still require their joint independent floor. Small primes remain in S in
+these terms; this does not delete every smooth integer from the residual.
+The displayed RH implication assumes the open floor and supplies no new
+zero-free width. See `docs/zeta-riesz-euler-quadratic-head.md` and supporting
+endpoint `euler-quadratic-head-deletion`; retain the default whole-carrier
+endpoint.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

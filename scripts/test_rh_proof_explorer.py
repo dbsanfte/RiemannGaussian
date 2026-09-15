@@ -481,6 +481,45 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem exists_stride_actual_band_sub_windowResidual' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'euler-quadratic-head-deletion':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'through N^2, at every original factorial order' in scope
+                        assert 'uniformly for sigma>=1/2' in scope
+                        assert 'Small primes still occur in S' in scope
+                        assert 'independent joint cofinal real floor above minus one and RH remain open' in scope
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        deletion = next(n for n in roots if n['id'].endswith('.tendsto_actual_band_sub_quadraticResidual'))
+                        statement = ' '.join(deletion['statement'].split())
+                        assert all(t in statement for t in (
+                            '0 < u', 'u < 1', 'zetaArithmeticBand', 'n ^ 2',
+                            'windowResidualResponse', 'SquarefreeVaughanLogSource.length', 'Tendsto'))
+                        assert 'NontrivialZetaZero' not in statement
+                        assert '∃ d' not in statement
+                        bound = next(n for n in roots if n['id'].endswith('.eventually_quadratic_head_product_le'))
+                        assert all(t in ' '.join(bound['statement'].split()) for t in (
+                            '0 < eps', 'Nat.Prime p', 'p ≤ n ^ 2', '1 / 2 ≤ sigma', 'Real.exp'))
+                        source = next(n for n in roots if n['id'].endswith('.tendsto_normalizedQuadraticResidual'))
+                        assert all(t in source['statement'] for t in (
+                            'NontrivialZetaZero', 'normalizedQuadraticResidual', 'analyticZetaZeroMultiplicity'))
+                        closure = next(n for n in roots if n['id'].endswith('.rh_of_quadraticResidual_cofinal_floors'))
+                        assert all(t in closure['statement'] for t in (
+                            '∀ (rho', '∃ c < 1', '∃ᶠ', 'normalizedQuadraticResidual', '→', 'RiemannHypothesis'))
+                        assert deletion['source']['path'].endswith('ZetaRieszEulerQuadraticHead.lean')
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', deletion['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == deletion['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{deletion['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{deletion['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem tendsto_actual_band_sub_quadraticResidual' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -499,6 +538,7 @@ def run(output, url=None, refresh_preview=False):
                                'fullEulerCorrectionEvenAndOddBounds': True,
                                'originalBandCorrectionDeletionAndExplicitResidual': True,
                                'growingPrimeHeadDeletionAndCofinalSource': True,
+                               'quadraticPrimeDensityDeletionAtEveryOrder': True,
                                'scalarTiltAuditDistinguishedFromArithmeticBound': True})
                 page.close()
             browser.close()

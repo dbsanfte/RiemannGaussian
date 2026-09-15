@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 18,
-      "id": "growing-euler-head-deletion",
+      "sequence": 19,
+      "id": "quadratic-euler-head-deletion",
       "kind": "theorem",
-      "title": "A growing prime head now has vanishing correction error in the original band.",
-      "body": "Lean now pays the full correction multiplied by every actual head prime up to n+16, at original factorial orders d*n. An explicit bound covers all head families and a positive cofinal stride pays their growth. The literal band, cutoff, phases and negative multiplicity source are preserved. The compensated leading quotient, its mixed correction and signed boundary remain coupled; their joint floor is open.",
-      "next": "Next: bound the explicit moving-window residual while retaining correlations between its compensated leading quotient, mixed correction and signed completion boundary.",
+      "title": "Prime density pays the correction coupled to all head primes through N².",
+      "body": "Lean now uses actual prime density to bound the complete correction multiplied by the prime head through N² at every original factorial order. Its subexponential allowance is absorbed by the original geometric saving. The literal band, phases, cutoff and negative multiplicity source are retained. The compensated leading quotient, mixed correction and signed boundary still require their joint independent floor.",
+      "next": "Next: bound a further actual arithmetic class or the complete signed residual while preserving its leading, mixed and boundary correlations.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszEulerWindowDeletionTheorem"
+        "rieszEulerQuadraticBandDeletionTheorem"
       ],
-      "documentation": "docs/zeta-riesz-euler-growing-head.md"
+      "documentation": "docs/zeta-riesz-euler-quadratic-head.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -575,6 +575,49 @@
         "rieszEulerGrowingHeadScope"
       ],
       "documentation": "docs/zeta-riesz-euler-growing-head.md"
+    },
+    {
+      "id": "euler-quadratic-head-deletion",
+      "label": "Quadratic prime heads · correction decay at every order",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerHeadPrimeDensityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerQuadraticHeadProductTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerQuadraticHeadBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerQuadraticHeadFilterTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerQuadraticActualCorrectionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerQuadraticBandDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerQuadraticSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerQuadraticFloorClosureTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszEulerQuadraticHeadScope"
+      ],
+      "documentation": "docs/zeta-riesz-euler-quadratic-head.md"
     }
   ],
   "scopes": {
@@ -1536,6 +1579,62 @@
       "summary": "Under a hypothetical right-half zero, the growing-head residual retains the exact negative multiplicity limit on a proved cofinal stride. Its independent joint lower floor remains open.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-growing-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerPrimeHeadDensity.eventually_head_product_le_prime_density": {
+      "label": "Actual prime density · uniform Euler-product allowance",
+      "summary": "Chebyshev prime density bounds every head coefficient family by exp(16*sqrt(b)/log(b+2)), uniformly over all prime subsets through b and the full half-plane sigma>=1/2.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerPrimeHeadDensity.eventually_quadratic_head_product_le": {
+      "label": "Quadratic prime heads · arbitrarily small exponential cost",
+      "summary": "For every eps>0, all prime heads through N^2 have coefficient product at most exp(eps*N) eventually, uniformly for sigma>=1/2. No prime-density premise or coefficient search remains.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerPrimeHeadDensity.eventually_quadratic_head_budget_le": {
+      "label": "All head frequencies · complete quadratic-window budget",
+      "summary": "The subexponential head allowance includes every exact log frequency, the original physical normalization and a literal prime-square tail budget.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerPrimeHeadDensity.tendsto_quadratic_headFilteredResponse": {
+      "label": "Every original order · full head correction decays",
+      "summary": "The full fixed factorial filter decays for every family of quadratic prime heads, eventual tail primes at least sixteen and arbitrary physical lengths above a positive base.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerQuadraticHead.tendsto_actual_quadratic_head_correction": {
+      "label": "Literal N-squared prime head · original correction vanishes",
+      "summary": "The actual prime head through N^2 and its complementary correction retain the original center, physical length and every factorial/log mark. The normalized response tends to zero at every order.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerQuadraticHead.tendsto_actual_band_sub_quadraticResidual": {
+      "label": "Actual arithmetic band · every-order quadratic-head deletion",
+      "summary": "The normalized difference between the literal band and the explicit quadratic-window residual tends to zero without a hypothetical-zero premise.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerQuadraticHead.tendsto_normalizedQuadraticResidual": {
+      "label": "Exact source preserved · negative multiplicity at every order",
+      "summary": "Under a hypothetical right-half zero, the quadratic residual retains the exact negative multiplicity source with every original order, cutoff, prime and boundary retained.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerQuadraticHead.rh_of_quadraticResidual_cofinal_floors": {
+      "label": "Conditional RH closure · independent full floor still required",
+      "summary": "A cofinal real floor above minus one for every full normalized quadratic residual would imply Mathlib RH. The arithmetic floor is an explicit unproved premise, not a proved bound.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
       "overview": true
     }
   }
