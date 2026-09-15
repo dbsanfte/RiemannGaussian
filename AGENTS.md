@@ -2833,6 +2833,40 @@ enlargement or historical novelty follows. See
 `docs/zeta-riesz-complete-head-harmonic.md` and supporting endpoint
 `complete-head-harmonic`; preserve the default whole-carrier endpoint.
 
+`ZetaRieszLengthAsymptotic` and `HarmonicIntervalLimit` now evaluate the
+actual floor-defined length and harmonic endpoint ratios. The generic
+harmonic and finite-weight continuity modules import only Mathlib.
+`ZetaRieszHeadHarmonicAsymptotic` gives the exact complete-head limit
+-m^2log(32/17)/(-2u logu), with its source-conditioned component range
+u<=3/5. Do not extend the WHOLE source range using that component theorem.
+`ZetaRieszCentralProductPhase` pays both actual central prime-product
+errors uniformly at arbitrary precision under the exposed-zero premises.
+`ZetaRieszCentralHarmonicCost` identifies the exact central interval
+[floor((15N+64)/32)+1,N-floor((15N+64)/32)] forN>=256 and preserves reflection.
+Its reciprocal mass tends to log(17/15); the actual central block tends to
+m^2log(17/15)(1-1/(-2u logu)). The head plus central block therefore tends to
+-m^2c(u), where c(u)=log(32/15)/(-2u logu)-log(17/15)<1 on the original
+annulus. `RieszHarmonicCostBounds` proves the scalar inequality independently
+of hypothetical zeros. The actual real components are eventually greater
+than -m^2, but the original source is -m. Never absorb unrestricted
+multiplicity into c(u), assume simplicity, or call this a sub-source bound
+for every zero. The exact remaining source is
+u^(N+1)(T3+T>=4+taperedWing)->-m+m^2c(u). These three actual arithmetic
+components still need an independent joint signed bound. All older masks,
+complex product phases, floor/damping factors, exposure hypotheses and
+other global source-range obligations remain. The threshold256 concerns
+only the integer partition; phase thresholds remain unevaluated. A
+nonnegative asymptotic floor would suffice in the simple-zero case, but is
+not proved. Preserve the default whole-carrier endpoint and both top-ten
+lists; see `docs/zeta-riesz-exact-harmonic-costs.md` and the supporting
+`exact-harmonic-costs` endpoint. No RH, zero-free enlargement, numerical
+zero bound or historical novelty follows from this slice.
+
+The user also prioritizes expanding u-coverage and obtaining an actual
+zero-free theorem from this arithmetic path. Distinguish a wider component
+range or retained support from a proved zero-free region; the latter must
+discharge the independent arithmetic estimate and required source premises.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**224 modules.** Source links open the definitions, hypotheses and proofs.
+**231 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -16,6 +16,8 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [FinitePrimeSquareOverlap](../../RiemannGaussian/FinitePrimeSquareOverlap.lean)
 - [FinitePrimeSquareSieve](../../RiemannGaussian/FinitePrimeSquareSieve.lean)
 - [FinitePrimeSquareTransform](../../RiemannGaussian/FinitePrimeSquareTransform.lean)
+- [FiniteWeightedUniformConvergence](../../RiemannGaussian/FiniteWeightedUniformConvergence.lean)
+- [HarmonicIntervalLimit](../../RiemannGaussian/HarmonicIntervalLimit.lean)
 - [HarmonicProductContinuity](../../RiemannGaussian/HarmonicProductContinuity.lean)
 - [MoebiusCubicRateAudit](../../RiemannGaussian/MoebiusCubicRateAudit.lean)
 - [MoebiusDividedCutoffBlocks](../../RiemannGaussian/MoebiusDividedCutoffBlocks.lean)
@@ -40,6 +42,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [NatLcmSqrtMass](../../RiemannGaussian/NatLcmSqrtMass.lean)
 - [NatProductCollision](../../RiemannGaussian/NatProductCollision.lean)
 - [NatRectangleEnergy](../../RiemannGaussian/NatRectangleEnergy.lean)
+- [RieszHarmonicCostBounds](../../RiemannGaussian/RieszHarmonicCostBounds.lean)
 - [ZetaArithmeticAffine](../../RiemannGaussian/ZetaArithmeticAffine.lean)
 - [ZetaArithmeticBandCorrelation](../../RiemannGaussian/ZetaArithmeticBandCorrelation.lean)
 - [ZetaArithmeticLocalEnergy](../../RiemannGaussian/ZetaArithmeticLocalEnergy.lean)
@@ -78,8 +81,10 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszAnnulusJoint](../../RiemannGaussian/ZetaRieszAnnulusJoint.lean)
 - [ZetaRieszBeyondPhysical](../../RiemannGaussian/ZetaRieszBeyondPhysical.lean)
 - [ZetaRieszBlockMass](../../RiemannGaussian/ZetaRieszBlockMass.lean)
+- [ZetaRieszCentralHarmonicCost](../../RiemannGaussian/ZetaRieszCentralHarmonicCost.lean)
 - [ZetaRieszCentralPair](../../RiemannGaussian/ZetaRieszCentralPair.lean)
 - [ZetaRieszCentralPrimeLayers](../../RiemannGaussian/ZetaRieszCentralPrimeLayers.lean)
+- [ZetaRieszCentralProductPhase](../../RiemannGaussian/ZetaRieszCentralProductPhase.lean)
 - [ZetaRieszCentralWindow](../../RiemannGaussian/ZetaRieszCentralWindow.lean)
 - [ZetaRieszCofactorTiltRate](../../RiemannGaussian/ZetaRieszCofactorTiltRate.lean)
 - [ZetaRieszCompleteHeadHarmonic](../../RiemannGaussian/ZetaRieszCompleteHeadHarmonic.lean)
@@ -123,6 +128,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszGrowingCofactor](../../RiemannGaussian/ZetaRieszGrowingCofactor.lean)
 - [ZetaRieszHeadAdaptive](../../RiemannGaussian/ZetaRieszHeadAdaptive.lean)
 - [ZetaRieszHeadAdaptiveTransport](../../RiemannGaussian/ZetaRieszHeadAdaptiveTransport.lean)
+- [ZetaRieszHeadHarmonicAsymptotic](../../RiemannGaussian/ZetaRieszHeadHarmonicAsymptotic.lean)
 - [ZetaRieszHeadOrders](../../RiemannGaussian/ZetaRieszHeadOrders.lean)
 - [ZetaRieszImprovedMoment](../../RiemannGaussian/ZetaRieszImprovedMoment.lean)
 - [ZetaRieszInfinitePhysical](../../RiemannGaussian/ZetaRieszInfinitePhysical.lean)
@@ -130,6 +136,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszInterpolation](../../RiemannGaussian/ZetaRieszInterpolation.lean)
 - [ZetaRieszLargeSmoothClass](../../RiemannGaussian/ZetaRieszLargeSmoothClass.lean)
 - [ZetaRieszLargeSmoothDeletion](../../RiemannGaussian/ZetaRieszLargeSmoothDeletion.lean)
+- [ZetaRieszLengthAsymptotic](../../RiemannGaussian/ZetaRieszLengthAsymptotic.lean)
 - [ZetaRieszLowHeadCorrection](../../RiemannGaussian/ZetaRieszLowHeadCorrection.lean)
 - [ZetaRieszLowHeadPrefix](../../RiemannGaussian/ZetaRieszLowHeadPrefix.lean)
 - [ZetaRieszLowerDegreeBounds](../../RiemannGaussian/ZetaRieszLowerDegreeBounds.lean)

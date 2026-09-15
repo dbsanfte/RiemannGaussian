@@ -1193,6 +1193,49 @@ def run(output, url=None, refresh_preview=False):
                                 assert 'theorem ' + theorem['id'].rsplit('.', 1)[-1] in source_page.locator('.source-line:target').inner_text()
                                 source_page.close()
                             page.locator('#close-details').click()
+                    if endpoint['id'] == 'exact-harmonic-costs':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in (
+                            '1/2<=u<exp(-2/3)', 'unrestricted multiplicity',
+                            'structural threshold only', 'source range is unchanged',
+                            'source is linear in m', 'simplicity is not assumed',
+                            'Exactly three unpaid components remain',
+                            'other global source ranges remain open'))
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        continuity = next(n for n in roots if n['id'].endswith('.tendsto_nonneg_weighted_sum'))
+                        assert all(t in continuity['statement'] for t in ('Finset α', 'ℕ → α → ℝ', 'ℕ → α → ℂ', '0 ≤ w N k', 'Tendsto'))
+                        assert 'NontrivialZetaZero' not in continuity['statement']
+                        scalar = next(n for n in roots if n['id'].endswith('.paidHarmonicCost_lt_one'))
+                        assert 'NontrivialZetaZero' not in scalar['statement']
+                        assert 'paidHarmonicCost u < 1' in scalar['statement']
+                        head = next(n for n in roots if n['id'].endswith('.tendsto_completeHead_exact_cost'))
+                        assert all(t in head['statement'] for t in ('tau ≠ rho →', '≤ 3 / 5', 'Real.log', 'analyticZetaZeroMultiplicity'))
+                        bound = next(n for n in roots if n['id'].endswith('.eventually_head_central_gt_neg_multiplicity_square'))
+                        assert all(t in bound['statement'] for t in ('tau ≠ rho →', 'Real.exp (-(2 / 3))', '^ 2 <', 'completeHead', 'centralBlock'))
+                        source = next(n for n in roots if n['id'].endswith('.tendsto_three_unpaid_exact_source'))
+                        assert all(t in source['statement'] for t in (
+                            'centralThreePrimeResponse', 'centralHigherPrimeResponse', 'taperedWing',
+                            'analyticZetaZeroMultiplicity', 'paidHarmonicCost', '^ 2'))
+                        assert 'centralBlock' not in source['statement'] and 'completeHead' not in source['statement']
+                        for theorem in (continuity, bound, source):
+                            selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', theorem['id'])
+                            node = page.locator(f'[data-node="{selected}"]')
+                            node.hover()
+                            assert page.locator('#tooltip').is_visible()
+                            node.click()
+                            assert page.locator('#details pre').inner_text().strip() == theorem['statement'].strip()
+                            link = page.locator('#details .source-button').get_attribute('href')
+                            assert link.endswith(f"#L{theorem['source']['line']}")
+                            if published:
+                                assert f"/blob/{revision}/{theorem['source']['path']}" in link
+                            else:
+                                with page.expect_popup() as opened:
+                                    page.locator('#details .source-button').click()
+                                source_page = opened.value
+                                source_page.wait_for_selector('.source-line:target')
+                                assert 'theorem ' + theorem['id'].rsplit('.', 1)[-1] in source_page.locator('.source-line:target').inner_text()
+                                source_page.close()
+                            page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()

@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 36,
-      "id": "complete-head-harmonic",
+      "sequence": 37,
+      "id": "exact-harmonic-costs",
       "kind": "theorem",
-      "title": "Completion errors vanish; the complete prime head has an explicit harmonic cost.",
-      "body": "Lean pays both reflected completion products, their full order sums and both low-head completion corrections. The entire negative complete head is an explicit harmonic weight times minus the full multiplicity square, with vanishing error. The exact central complement keeps its signed budget. The exposed-zero and annular hypotheses remain explicit throughout the source chain.",
-      "next": "Next: bound the joint signed contribution of the tapered wing, the actual three-prime sum and the four-or-more-prime sum against the harmonic head cost and central-block budget. The whole contradiction and other global source ranges remain open.",
+      "title": "Exact head and central costs leave three arithmetic sums.",
+      "body": "Lean evaluates the entire complete head and central block, retaining all original integer endpoints and prime-product errors. Their combined cost is minus the full multiplicity square times an explicit c(u)<1 on the existing annulus. Multiplicity and exposed-zero hypotheses remain explicit; this is a component bound.",
+      "next": "Next: widen the carrier’s u-coverage and bound the joint signed contribution of the tapered wing, actual three-prime sum and four-or-more-prime sum. An independent arithmetic contradiction and a zero-free theorem from this path remain targets.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszCompleteHeadBoundTheorem"
+        "rieszPaidComponentsStrictBudgetTheorem"
       ],
-      "documentation": "docs/zeta-riesz-complete-head-harmonic.md"
+      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1589,6 +1589,69 @@
         "rieszCompleteHeadHarmonicScope"
       ],
       "documentation": "docs/zeta-riesz-complete-head-harmonic.md"
+    },
+    {
+      "id": "exact-harmonic-costs",
+      "label": "Exact harmonic costs · head, central block and three unpaid sums",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExactLengthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "harmonicIntervalLimitTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExactHeadCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExactHeadBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "finiteWeightedUniformLimitTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralIntervalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralHarmonicMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralUniformProductTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralExactCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHarmonicCostStrictTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPaidComponentsLimitTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPaidComponentsStrictBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszThreeUnpaidExactSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszExactHarmonicCostsScope"
+      ],
+      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md"
     }
   ],
   "scopes": {
@@ -3957,6 +4020,97 @@
       "summary": "The exact terminal source retains actual T3, T>=4, taperedWing, the bounded central block and explicit negative harmonic cost. Their sufficient joint signed floor is still open.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-complete-head-harmonic.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLengthAsymptotic.tendsto_length_div_succ": {
+      "label": "Exact physical-length limit",
+      "summary": "The original floor and logarithmic damping remain in the limit L_N/(N+1)->-2logu; no zero premise is used.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md",
+      "overview": true
+    },
+    "RiemannGaussian.HarmonicIntervalLimit.tendsto_harmonic_difference": {
+      "label": "Any moving harmonic interval",
+      "summary": "Every pair of diverging integer endpoints with a nonzero limiting ratio has the corresponding logarithmic harmonic difference.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHeadHarmonicAsymptotic.tendsto_completeHead_exact_cost": {
+      "label": "Exact complete-head cost",
+      "summary": "The entire negative complete head tends to -m^2 log(32/17)/(-2u logu), under exposed-zero hypotheses on the component range u<=3/5.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHeadHarmonicAsymptotic.eventually_completeHead_exact_bounds": {
+      "label": "Two-sided complete-head bound",
+      "summary": "The prime-dependent error is arbitrarily small around the exact complete-head constant; thresholds remain unevaluated.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md",
+      "overview": true
+    },
+    "RiemannGaussian.FiniteWeightedUniformConvergence.tendsto_nonneg_weighted_sum": {
+      "label": "All convergent positive weight families",
+      "summary": "Arbitrary moving finite nonnegative weights with convergent mass preserve the uniform complex reference phase. The generic framework imports only Mathlib.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralHarmonicCost.centralOrders_eq_Icc": {
+      "label": "Exact symmetric central interval",
+      "summary": "The actual central complement is [floor((15N+64)/32)+1, N-floor((15N+64)/32)], with both boundaries retained.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralHarmonicCost.tendsto_central_reciprocal": {
+      "label": "Exact central reciprocal mass",
+      "summary": "Reflection and the actual harmonic endpoints give the limit log(17/15), independently of hypothetical zeros.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralProductPhase.eventually_central_product_errors": {
+      "label": "Both central phases at arbitrary precision",
+      "summary": "One eventual threshold controls both actual finite/finite and successor/complete prime-product errors under the original exposed-zero hypotheses.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralHarmonicCost.tendsto_centralBlock_exact_cost": {
+      "label": "Exact central prime-block cost",
+      "summary": "Both prime-product errors are paid before the harmonic mass is evaluated; the complete central block has its exact multiplicity-square constant.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md",
+      "overview": true
+    },
+    "RiemannGaussian.RieszHarmonicCostBounds.paidHarmonicCost_lt_one": {
+      "label": "Combined scalar cost below one",
+      "summary": "The explicit c(u)=log(32/15)/(-2u logu)-log(17/15) is strictly below one throughout the original annulus. No multiplicity or unpaid arithmetic term is absorbed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralHarmonicCost.tendsto_head_add_central_exact_cost": {
+      "label": "Head and central block evaluated together",
+      "summary": "The two disjoint paid components have exact joint limit -m^2c(u). Every original order, source factor and exposure hypothesis remains.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralHarmonicCost.eventually_head_central_gt_neg_multiplicity_square": {
+      "label": "Strict multiplicity-square component budget",
+      "summary": "The actual normalized real head plus central block is eventually greater than -m^2. The source is -m; simplicity is not assumed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralHarmonicCost.tendsto_three_unpaid_exact_source": {
+      "label": "Exactly three unpaid arithmetic sums",
+      "summary": "The actual three-prime sum, four-or-more-prime sum and tapered wing have joint source -m+m^2c(u). Their independent signed bound remains open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md",
       "overview": true
     }
   }

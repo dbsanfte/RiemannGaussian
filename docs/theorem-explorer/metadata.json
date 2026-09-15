@@ -2457,7 +2457,14 @@
     "ZetaRieszLowHeadCorrection": "arithmetic",
     "ZetaRieszCompletedCarrier": "arithmetic",
     "HarmonicProductContinuity": "arithmetic",
-    "ZetaRieszCompleteHeadHarmonic": "arithmetic"
+    "ZetaRieszCompleteHeadHarmonic": "arithmetic",
+    "ZetaRieszLengthAsymptotic": "arithmetic",
+    "HarmonicIntervalLimit": "arithmetic",
+    "ZetaRieszHeadHarmonicAsymptotic": "arithmetic",
+    "FiniteWeightedUniformConvergence": "arithmetic",
+    "ZetaRieszCentralProductPhase": "arithmetic",
+    "RieszHarmonicCostBounds": "arithmetic",
+    "ZetaRieszCentralHarmonicCost": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

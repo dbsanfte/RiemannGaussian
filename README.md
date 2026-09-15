@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Completion errors vanish; the complete prime head has an explicit harmonic cost.** Lean pays both reflected completion products, their full order sums and both low-head completion corrections. The entire negative complete head is an explicit harmonic weight times minus the full multiplicity square, with vanishing error. The exact central complement keeps its signed budget. The exposed-zero and annular hypotheses remain explicit throughout the source chain.
-Next: bound the joint signed contribution of the tapered wing, the actual three-prime sum and the four-or-more-prime sum against the harmonic head cost and central-block budget. The whole contradiction and other global source ranges remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszCompleteHeadHarmonic.lean#L129)
-· [Proof details](docs/zeta-riesz-complete-head-harmonic.md).
+**Exact head and central costs leave three arithmetic sums.** Lean evaluates the entire complete head and central block, retaining all original integer endpoints and prime-product errors. Their combined cost is minus the full multiplicity square times an explicit c(u)<1 on the existing annulus. Multiplicity and exposed-zero hypotheses remain explicit; this is a component bound.
+Next: widen the carrier’s u-coverage and bound the joint signed contribution of the tapered wing, actual three-prime sum and four-or-more-prime sum. An independent arithmetic contradiction and a zero-free theorem from this path remain targets.
+[Current checked endpoint](RiemannGaussian/ZetaRieszCentralHarmonicCost.lean#L370)
+· [Proof details](docs/zeta-riesz-exact-harmonic-costs.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
