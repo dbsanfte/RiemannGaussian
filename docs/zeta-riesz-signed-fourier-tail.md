@@ -374,3 +374,8 @@ and source links. These gates do not run the optional exhaustive numerical
 certificate. Handoff floating-point model-filter diagnostics are not
 actual-zero estimates and are not promoted as theorem evidence.
 No historical novelty claim is made for these identities.
+
+The [growing-head correction deletion](zeta-riesz-euler-growing-head.md) now pays
+the full correction multiplied by actual primes up to n+16 along a cofinal
+stride of original factorial orders. Its explicit compensated-leading, mixed
+and signed-boundary residual retains the source; the joint floor remains open.

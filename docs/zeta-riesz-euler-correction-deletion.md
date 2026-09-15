@@ -136,3 +136,8 @@ The [explorer audit](rh-proof-explorer/audit.json) links compiled statements,
 dependency paths, source lines and transitive axiom checks. The default
 whole-carrier endpoint remains
 `ZetaRieszCriticalProfile.exists_original_band_critical_profile`.
+
+The [growing-head correction deletion](zeta-riesz-euler-growing-head.md) now pays
+the full correction multiplied by actual primes up to n+16 along a cofinal
+stride of original factorial orders. Its explicit compensated-leading, mixed
+and signed-boundary residual retains the source; the joint floor remains open.

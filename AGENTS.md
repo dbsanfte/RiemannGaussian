@@ -2389,6 +2389,23 @@ The joint independent floor remains open. See
 `docs/zeta-riesz-euler-correction-deletion.md` and endpoint
 `euler-correction-deletion`; keep the default whole-carrier endpoint unchanged.
 
+`ZetaRieszEulerMultiplier`, `ZetaRieszEulerHead`, `ZetaRieszEulerHeadDeletion`,
+`ZetaRieszEulerGrowingHead` and `ZetaRieszEulerWindowDeletion` now pay the complete
+Euler correction multiplied by a growing head of actual primes. Every finite
+head has an exact signed Fourier expansion and explicit Euler-product cost.
+At original orders d*n, a positive stride satisfying 3*(u/R)^d<1 pays every
+head prime at most n+16 for all fixed P,y and 0<u<1. The literal band deletion
+preserves its actual physical cutoff, both phases, every factorial/log mark,
+ordinary frequency integrability and the exact negative multiplicity source
+on a proved cofinal sequence. The explicit residual keeps compensated leading
+quotient SG-1-A, mixed S(G-1)(H-1), and the entire signed boundary B. The growing
+leading quotient is not independently bounded, and the joint floor remains
+open. Do not infer mixed-term control or a zero-free improvement from the
+growing-head correction estimate. The fixed-head RH-floor implication is
+conditional; its arithmetic premise is not proved. See
+`docs/zeta-riesz-euler-growing-head.md` and supporting endpoint
+`euler-growing-head-deletion`; keep the default whole-carrier endpoint unchanged.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

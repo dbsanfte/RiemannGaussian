@@ -155,3 +155,8 @@ committed update against its parent. The Pages artifact publishes this view
 at `/rh-proof/` beside the zero-free and numerical-certificate explorers,
 with source links pinned to the exact verified presentation commit. Ordinary
 builds never rerun the exhaustive numerical certificate for this view.
+
+The [growing-head correction deletion](zeta-riesz-euler-growing-head.md) now pays
+the full correction multiplied by actual primes up to n+16 along a cofinal
+stride of original factorial orders. Its explicit compensated-leading, mixed
+and signed-boundary residual retains the source; the joint floor remains open.

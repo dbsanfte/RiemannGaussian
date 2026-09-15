@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**The standalone Euler correction now decays in the original arithmetic band.** Lean now carries the full correction through the growing physical cutoff, both Fourier phases and every fixed factorial filter. Its normalized allowance decays geometrically up to a linear order factor. Removing it changes the actual arithmetic band by a quantity tending to zero. The leading response, prime compensation, mixed term and signed boundary remain coupled in an explicit residual; its joint floor is open.
-Next: bound the explicit residual using correlations between its leading response, mixed correction and signed completion boundary.
-[Current checked endpoint](RiemannGaussian/ZetaRieszEulerCorrectionDeletion.lean#L322)
-· [Proof details](docs/zeta-riesz-euler-correction-deletion.md).
+**A growing prime head now has vanishing correction error in the original band.** Lean now pays the full correction multiplied by every actual head prime up to n+16, at original factorial orders d*n. An explicit bound covers all head families and a positive cofinal stride pays their growth. The literal band, cutoff, phases and negative multiplicity source are preserved. The compensated leading quotient, its mixed correction and signed boundary remain coupled; their joint floor is open.
+Next: bound the explicit moving-window residual while retaining correlations between its compensated leading quotient, mixed correction and signed completion boundary.
+[Current checked endpoint](RiemannGaussian/ZetaRieszEulerWindowDeletion.lean#L194)
+· [Proof details](docs/zeta-riesz-euler-growing-head.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

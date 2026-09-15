@@ -437,6 +437,50 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem tendsto_actual_band_sub_residual' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'euler-growing-head-deletion':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'literal original normalized arithmetic band' in scope
+                        assert 'positive integer stride d' in scope
+                        assert 'head primes at most n+16' in scope
+                        assert 'growing leading quotient is not independently bounded' in scope
+                        assert 'joint cofinal real floor above minus one and RH remain open' in scope
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        deletion = next(n for n in roots if n['id'].endswith('.exists_stride_actual_band_sub_windowResidual'))
+                        statement = ' '.join(deletion['statement'].split())
+                        assert all(t in statement for t in (
+                            '0 < u', 'u < 1', '∃ d', '0 < d', 'zetaArithmeticBand',
+                            'd * n', 'n + 16', 'windowResidualResponse', 'SquarefreeVaughanLogSource.length', 'Tendsto'))
+                        assert 'NontrivialZetaZero' not in statement
+                        bound = next(n for n in roots if n['id'].endswith('.norm_scaled_headFilteredResponse_le_product'))
+                        assert all(t in ' '.join(bound['statement'].split()) for t in (
+                            '0 < R', '0 < a', 'a ≤ L', 'Real.exp', 'headFilteredResponse',
+                            'filterRadiusCost P R', '(u / R) ^ (N + 1)'))
+                        source = next(n for n in roots if n['id'].endswith('.exists_stride_normalizedWindowResidual_source'))
+                        assert all(t in source['statement'] for t in (
+                            'NontrivialZetaZero', 'normalizedWindowResidual', 'analyticZetaZeroMultiplicity'))
+                        integrable = next(n for n in roots if n['id'].endswith('.integrable_windowResidualKernel'))
+                        assert all(t in ' '.join(integrable['statement'].split()) for t in (
+                            '16 ≤ b + 1', '1 / 2 < s.re', 'IntegrableOn', 'windowResidualKernel P N b'))
+                        identity = next(n for n in roots if n['id'].endswith('.actual_band_eq_windowResidual_response'))
+                        assert all(t in identity['statement'] for t in (
+                            'zetaArithmeticBand', 'windowResidualResponse', 'headFilteredResponse',
+                            'actualWindowHead', 'actualWindowTail'))
+                        assert deletion['source']['path'].endswith('ZetaRieszEulerWindowDeletion.lean')
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', deletion['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == deletion['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{deletion['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{deletion['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem exists_stride_actual_band_sub_windowResidual' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -454,6 +498,7 @@ def run(output, url=None, refresh_preview=False):
                                'generalTiltArithmeticBoundAndWholeSource': True,
                                'fullEulerCorrectionEvenAndOddBounds': True,
                                'originalBandCorrectionDeletionAndExplicitResidual': True,
+                               'growingPrimeHeadDeletionAndCofinalSource': True,
                                'scalarTiltAuditDistinguishedFromArithmeticBound': True})
                 page.close()
             browser.close()

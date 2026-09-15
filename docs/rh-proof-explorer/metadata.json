@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 17,
-      "id": "original-euler-correction-deletion",
+      "sequence": 18,
+      "id": "growing-euler-head-deletion",
       "kind": "theorem",
-      "title": "The standalone Euler correction now decays in the original arithmetic band.",
-      "body": "Lean now carries the full correction through the growing physical cutoff, both Fourier phases and every fixed factorial filter. Its normalized allowance decays geometrically up to a linear order factor. Removing it changes the actual arithmetic band by a quantity tending to zero. The leading response, prime compensation, mixed term and signed boundary remain coupled in an explicit residual; its joint floor is open.",
-      "next": "Next: bound the explicit residual using correlations between its leading response, mixed correction and signed completion boundary.",
+      "title": "A growing prime head now has vanishing correction error in the original band.",
+      "body": "Lean now pays the full correction multiplied by every actual head prime up to n+16, at original factorial orders d*n. An explicit bound covers all head families and a positive cofinal stride pays their growth. The literal band, cutoff, phases and negative multiplicity source are preserved. The compensated leading quotient, its mixed correction and signed boundary remain coupled; their joint floor is open.",
+      "next": "Next: bound the explicit moving-window residual while retaining correlations between its compensated leading quotient, mixed correction and signed completion boundary.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszEulerCorrectionBandDeletionTheorem"
+        "rieszEulerWindowDeletionTheorem"
       ],
-      "documentation": "docs/zeta-riesz-euler-correction-deletion.md"
+      "documentation": "docs/zeta-riesz-euler-growing-head.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -524,6 +524,57 @@
         "rieszEulerCorrectionDeletionScope"
       ],
       "documentation": "docs/zeta-riesz-euler-correction-deletion.md"
+    },
+    {
+      "id": "euler-growing-head-deletion",
+      "label": "Growing prime heads · original-band correction deletion",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerMultiplierFilterBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerHeadFourierTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerHeadProductBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerHeadWindowBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerGrowingHeadDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerWindowBandIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerWindowDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerWindowResidualSplitTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerWindowResidualIntegrableTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerWindowResidualSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszEulerGrowingHeadScope"
+      ],
+      "documentation": "docs/zeta-riesz-euler-growing-head.md"
     }
   ],
   "scopes": {
@@ -1415,6 +1466,76 @@
       "summary": "The residual is the original integrable band kernel minus the proved-integrable correction. No totalized divergent integral is used in the source decomposition.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerMultiplier.norm_scaled_weightedFilteredResponse_le": {
+      "label": "Entire arithmetic multipliers · original-filter bound",
+      "summary": "Every fixed entire coefficient and real frequency shift preserves the complete correction bound, with genuine integrability and the original physical denominator.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-growing-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerHead.headCharacter_eq_expansion": {
+      "label": "Every finite head · exact signed Fourier expansion",
+      "summary": "All head subsets retain their exact entire coefficients, signs and logarithmic frequencies before the factorial filter and ordinary integral.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-growing-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerGrowingHead.norm_scaled_headFilteredResponse_le_product": {
+      "label": "All head families · explicit Euler-product cost",
+      "summary": "A positive finite Euler product and the full head logarithmic extent bound every head family together. The original geometric source saving and every factorial offset remain explicit.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-growing-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerGrowingHead.headResponseBudget_le_window": {
+      "label": "Growing head windows · uniform arithmetic allowance",
+      "summary": "Every subset of a natural-number window shares an explicit bound by three to the window size times a quadratic frequency allowance. No prime-density estimate or coefficient search is assumed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-growing-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerGrowingHead.exists_stride_actual_window_correction_decay": {
+      "label": "Actual growing prime head · correction decays on a cofinal stride",
+      "summary": "At original order d*n the complete head of actual primes at most n+16 can multiply the complementary correction with vanishing normalized error, for every fixed P,y and 0<u<1.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-growing-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerWindowDeletion.actual_band_eq_windowResidual_response": {
+      "label": "Original arithmetic band · exact moving-threshold integral identity",
+      "summary": "The literal band equals its explicit residual plus the full head-weighted correction at every admissible threshold. The actual support, both phases, original filter and integrals are retained.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-growing-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerWindowDeletion.exists_stride_actual_band_sub_windowResidual": {
+      "label": "Growing-head deletion · actual normalized error tends to zero",
+      "summary": "A positive stride makes the difference between the literal original band and the explicit moving-window residual tend to zero. No hypothetical-zero premise or arithmetic floor is assumed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-growing-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerWindowDeletion.completedBand_eq_windowResidual_add_head": {
+      "label": "Explicit residual · compensated leading, mixed and signed boundary",
+      "summary": "The residual keeps SG-1-A, S(G-1)(H-1), and the entire signed off-band boundary, with the moving head and its complementary prime universe exact.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-growing-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerWindowDeletion.integrable_windowResidualKernel": {
+      "label": "Moving residual · genuine frequency integrability",
+      "summary": "The explicit residual is the actual integrable band minus the independently integrable head correction. No divergent totalized integral substitutes for an analytic estimate.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-growing-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEulerWindowDeletion.exists_stride_normalizedWindowResidual_source": {
+      "label": "Cofinal residual · exact negative multiplicity source survives",
+      "summary": "Under a hypothetical right-half zero, the growing-head residual retains the exact negative multiplicity limit on a proved cofinal stride. Its independent joint lower floor remains open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-euler-growing-head.md",
       "overview": true
     }
   }
