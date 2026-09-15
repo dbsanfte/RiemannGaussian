@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 41,
-      "id": "whole-prime-count-decay",
+      "sequence": 42,
+      "id": "prime-count-sperner",
       "kind": "theorem",
-      "title": "An entire many-prime class now vanishes.",
-      "body": "Lean now controls the complete signed integer contribution above the growing prime-count threshold, including all its frequencies. A finite Euler-product count bound absorbs every divisor choice and factorial-filter cost, uniformly over moving heights and radii in each fixed interval 0<=u<=U<17/32. The remaining source is exactly the lower-count signed sum plus the tapered wing. No new zero-free region is proved.",
-      "next": "Next: obtain a joint signed bound for the surviving 3<=k<K_j terms and the tapered wing, using their arithmetic and phase correlations.",
+      "title": "Antichains sharpen the remaining arithmetic coefficients.",
+      "body": "Lean now bounds every squarefree composite coefficient using exact prime-fibre cancellation and Sperner’s theorem. On the surviving central band this saves at least a factor 2k over the coarse divisor-count allowance, with the full factorial filter retained. Separately, a new prime-count schedule pays a complete integer class throughout every fixed right-half source range u<=U<1. No new zero-free region follows.",
+      "next": "Next: use these smaller coefficient allowances and the retained phases to bound the lower-count signed sum, whose original source remains minus the full zero multiplicity.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszManyActualDecayTheorem"
+        "rieszSpernerFullCarrierTheorem"
       ],
-      "documentation": "docs/zeta-riesz-whole-prime-count-decay.md"
+      "documentation": "docs/zeta-riesz-prime-count-sperner.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1872,6 +1872,57 @@
         "rieszWholePrimeCountScope"
       ],
       "documentation": "docs/zeta-riesz-whole-prime-count-decay.md"
+    },
+    {
+      "id": "prime-count-sperner",
+      "label": "Prime-count and Sperner savings · the original carrier",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRightCountRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRightCountDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRightCountActualDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRightCountSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSpernerWindowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSpernerFactorizationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSpernerCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSpernerFullCarrierTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSpernerCentralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSpernerGainTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszPrimeCountSpernerScope"
+      ],
+      "documentation": "docs/zeta-riesz-prime-count-sperner.md"
     }
   ],
   "scopes": {
@@ -4639,6 +4690,76 @@
       "summary": "An exact signed partition combines the old all-count shrinking prefix and the enlarged many-prime prefix. Their shared contribution is subtracted before passing to the original source limit.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-whole-prime-count-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountRightHalf.eventually_count_power_saving": {
+      "label": "Count-power rates below two",
+      "summary": "Every fixed geometric rate below two is eventually paid on the shorter cofinal moment schedule.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountRightHalf.tendsto_many_sum_right_half": {
+      "label": "Complete count decay for all radii below one",
+      "summary": "All frequencies, moving heights, positive lengths and squarefree subbands are included. No zero is assumed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountRightHalf.tendsto_manyCountBand": {
+      "label": "Actual high-count selection vanishes",
+      "summary": "All arithmetic membership and count conditions are discharged for the actual filtered subband.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountRightHalf.tendsto_few_optimized_source": {
+      "label": "The exact remaining source throughout the right half-strip",
+      "summary": "The earlier cofactor complement and smaller prime counts retain source minus full multiplicity. No exposure or simplicity assumption is added; the independent signed bound remains open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSperner.divisorWindow_card_le": {
+      "label": "The surviving divisor window is an antichain",
+      "summary": "Its prime-subset encoding is injective, so Sperner bounds the window by the middle binomial layer.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSperner.exists_two_smallest_factorization": {
+      "label": "The two smallest primes discharge all support conditions",
+      "summary": "Every squarefree integer with at least two prime factors has the exact required factorization.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSperner.norm_coefficient_le_allowance": {
+      "label": "The literal coefficient receives the antichain saving",
+      "summary": "No prime-selection or support premise remains. All cutoffs are allowed with positive normalization length.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSperner.norm_original_band_le_middle_layers": {
+      "label": "The full original carrier retains its factorial filter",
+      "summary": "A finite bound for the whole signed sum uses the improved coefficient allowance. Its decay is not asserted.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSperner.norm_actual_central_coefficient_le": {
+      "label": "The actual central band receives the middle-layer bound",
+      "summary": "The original support proves the required reflection-side inequality; nonzero atoms are handled arithmetically.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSperner.norm_actual_central_coefficient_le_divisor_saving": {
+      "label": "At least twice the prime count is saved",
+      "summary": "Compared with the coarse Boolean divisor allowance, the central coefficient saves a factor at least 2k. The sharper binomial estimate remains available.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-sperner.md",
       "overview": true
     }
   }

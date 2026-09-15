@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**241 modules.** Source links open the definitions, hypotheses and proofs.
+**243 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -165,6 +165,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszPrimeCompletionRate](../../RiemannGaussian/ZetaRieszPrimeCompletionRate.lean)
 - [ZetaRieszPrimeCountFrequency](../../RiemannGaussian/ZetaRieszPrimeCountFrequency.lean)
 - [ZetaRieszPrimeCountMass](../../RiemannGaussian/ZetaRieszPrimeCountMass.lean)
+- [ZetaRieszPrimeCountRightHalf](../../RiemannGaussian/ZetaRieszPrimeCountRightHalf.lean)
 - [ZetaRieszPrimeCountWindow](../../RiemannGaussian/ZetaRieszPrimeCountWindow.lean)
 - [ZetaRieszPrimeEndpoint](../../RiemannGaussian/ZetaRieszPrimeEndpoint.lean)
 - [ZetaRieszPrimeFourier](../../RiemannGaussian/ZetaRieszPrimeFourier.lean)
@@ -188,6 +189,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszSmoothPrimePrefix](../../RiemannGaussian/ZetaRieszSmoothPrimePrefix.lean)
 - [ZetaRieszSmoothPrimeProduct](../../RiemannGaussian/ZetaRieszSmoothPrimeProduct.lean)
 - [ZetaRieszSmoothRoughProduct](../../RiemannGaussian/ZetaRieszSmoothRoughProduct.lean)
+- [ZetaRieszSperner](../../RiemannGaussian/ZetaRieszSperner.lean)
 - [ZetaRieszSurvivingPrimeLayers](../../RiemannGaussian/ZetaRieszSurvivingPrimeLayers.lean)
 - [ZetaRieszTriplePrime](../../RiemannGaussian/ZetaRieszTriplePrime.lean)
 - [ZetaRieszUnfilteredSource](../../RiemannGaussian/ZetaRieszUnfilteredSource.lean)

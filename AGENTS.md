@@ -3043,6 +3043,29 @@ Retain these independent prefix bounds alongside whole-integer decay. See
 this arithmetic path, and RH are still open. Standard exponential-moment and
 AM-GM arguments are used without a historical novelty claim.
 
+`ZetaRieszPrimeCountRightHalf` uses K_j=2^(j+3), M_j=(j+4)K_j to pay the
+complete high-count integer class for every fixed 0<U<1, with arbitrary
+moving radii in [0,U], heights, lengths and subbands. This trades the size
+of the deleted class for a wider radius range; it does not extend the old
+larger class unchanged. The exact intersection with the previous optimized
+cofactor complement decays, leaving source -m for every right-half zero,
+with full multiplicity and no exposure assumption. No wing decay or broader
+range for the separate central-plus-wing identity is asserted.
+`ZetaRieszSperner` cancels two smallest-prime fibres before bounding the
+remaining divisor windows. They are antichains in the actual cofactor's
+prime-subset lattice. The full coefficient has allowance
+(log n)^2/(kL) times choose(k-2,floor((k-2)/2)), with all support conditions
+discharged. The original finite-band theorem retains the complete factorial
+filter; it does not prove decay of its full allowance. On the actual central
+band this saves at least 2k over the coarse Boolean bound 2^k log n. Retain
+the sharper middle-layer estimate and existing three-prime bounds together.
+This controls cancellation within each integer, not across different
+integers. The lower-count signed sum, a zero-free conclusion from this
+arithmetic path, and RH remain open. Standard Sperner and exponential-moment
+arguments carry no historical novelty claim. See
+`docs/zeta-riesz-prime-count-sperner.md` and supporting explorer endpoint
+`prime-count-sperner`; keep the default endpoints and both top-ten lists.
+
 ## Commit and check-in invariant
 
 The introductory research-agent/model statement belongs directly below the

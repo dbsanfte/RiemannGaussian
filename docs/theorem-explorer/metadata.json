@@ -2474,7 +2474,9 @@
     "ZetaRieszFrequencyDecay": "arithmetic",
     "ZetaRieszPrimeCountFrequency": "arithmetic",
     "ZetaRieszPrimeCountWindow": "arithmetic",
-    "ZetaRieszPrimeCountMass": "arithmetic"
+    "ZetaRieszPrimeCountMass": "arithmetic",
+    "ZetaRieszPrimeCountRightHalf": "arithmetic",
+    "ZetaRieszSperner": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

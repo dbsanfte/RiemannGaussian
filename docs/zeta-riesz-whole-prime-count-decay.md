@@ -127,3 +127,7 @@ proved zero-free region and numerical certificate remain unchanged.
 The [supporting explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/?endpoint=whole-prime-count-decay)
 provides compiled statements, exact source lines and proof audits after
 publication.
+
+The [right-half count and antichain bounds](zeta-riesz-prime-count-sperner.md)
+use a different count/order schedule to cover every fixed radius below one
+and improve the coefficients of the remaining lower-count terms.

@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**An entire many-prime class now vanishes.** Lean now controls the complete signed integer contribution above the growing prime-count threshold, including all its frequencies. A finite Euler-product count bound absorbs every divisor choice and factorial-filter cost, uniformly over moving heights and radii in each fixed interval 0<=u<=U<17/32. The remaining source is exactly the lower-count signed sum plus the tapered wing. No new zero-free region is proved.
-Next: obtain a joint signed bound for the surviving 3<=k<K_j terms and the tapered wing, using their arithmetic and phase correlations.
-[Current checked endpoint](RiemannGaussian/ZetaRieszPrimeCountMass.lean#L301)
-· [Proof details](docs/zeta-riesz-whole-prime-count-decay.md).
+**Antichains sharpen the remaining arithmetic coefficients.** Lean now bounds every squarefree composite coefficient using exact prime-fibre cancellation and Sperner’s theorem. On the surviving central band this saves at least a factor 2k over the coarse divisor-count allowance, with the full factorial filter retained. Separately, a new prime-count schedule pays a complete integer class throughout every fixed right-half source range u<=U<1. No new zero-free region follows.
+Next: use these smaller coefficient allowances and the retained phases to bound the lower-count signed sum, whose original source remains minus the full zero multiplicity.
+[Current checked endpoint](RiemannGaussian/ZetaRieszSperner.lean#L315)
+· [Proof details](docs/zeta-riesz-prime-count-sperner.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
