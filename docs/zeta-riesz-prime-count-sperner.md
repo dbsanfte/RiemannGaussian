@@ -140,3 +140,7 @@ The [supporting theorem explorer](https://dbsanfte.github.io/RiemannGaussian/rh-
 links compiled statements, exact source lines and audits after publication.
 The default RH, proved zero-free and numerical-certificate endpoints remain
 unchanged.
+
+The [signed window energy](zeta-riesz-window-gram.md) now quantifies the
+additional square-root middle-layer gain and couples every prime-pair
+family before taking a norm.

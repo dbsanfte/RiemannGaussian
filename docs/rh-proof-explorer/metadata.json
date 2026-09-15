@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 42,
-      "id": "prime-count-sperner",
+      "sequence": 43,
+      "id": "signed-window-gram",
       "kind": "theorem",
-      "title": "Antichains sharpen the remaining arithmetic coefficients.",
-      "body": "Lean now bounds every squarefree composite coefficient using exact prime-fibre cancellation and Sperner’s theorem. On the surviving central band this saves at least a factor 2k over the coarse divisor-count allowance, with the full factorial filter retained. Separately, a new prime-count schedule pays a complete integer class throughout every fixed right-half source range u<=U<1. No new zero-free region follows.",
-      "next": "Next: use these smaller coefficient allowances and the retained phases to bound the lower-count signed sum, whose original source remains minus the full zero multiplicity.",
+      "title": "The whole carrier retains cross-family signed window energy.",
+      "body": "Lean now bounds the entire original Riesz carrier by one explicit signed Gram form, retaining every prime-pair family, divisor sign, physical cutoff and complex filter phase. The actual central coefficient gains an additional square-root factor, and its cofactor unit window vanishes for every term with at least four prime factors. No new zero-free region follows.",
+      "next": "Next: bound the remaining prime and composite divisor correlations at source scale, using the signed cross-family energy rather than a sum of separate family norms.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszSpernerFullCarrierTheorem"
+        "rieszWindowWholeCarrierTheorem"
       ],
-      "documentation": "docs/zeta-riesz-prime-count-sperner.md"
+      "documentation": "docs/zeta-riesz-window-gram.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1923,6 +1923,49 @@
         "rieszPrimeCountSpernerScope"
       ],
       "documentation": "docs/zeta-riesz-prime-count-sperner.md"
+    },
+    {
+      "id": "signed-window-gram",
+      "label": "Coupled signed windows · the full original carrier",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSpernerRootGainTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWindowTriangleTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWindowCutoffTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWindowAllFamiliesTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWindowFullEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWindowWholeCarrierTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWindowUnitZeroTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWindowUnitDeletionTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszWindowGramScope"
+      ],
+      "documentation": "docs/zeta-riesz-window-gram.md"
     }
   ],
   "scopes": {
@@ -4760,6 +4803,62 @@
       "summary": "Compared with the coarse Boolean divisor allowance, the central coefficient saves a factor at least 2k. The sharper binomial estimate remains available.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-prime-count-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSpernerRate.norm_actual_central_coefficient_le_root_saving": {
+      "label": "An explicit square-root improvement",
+      "summary": "The actual central coefficient saves 2k sqrt(k-1) over the coarse Boolean allowance, with both count parities checked.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-window-gram.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWindowGram.integral_norm_sq_signed_divisor_windows": {
+      "label": "Exact signed logarithmic-ratio correlations",
+      "summary": "The full complex cofactor aggregate has an exact triangular Gram kernel on the real line.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-window-gram.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWindowGram.norm_sum_bandWeight_two_primes_sq_le_gram": {
+      "label": "The actual fixed-prime carrier retains its cutoff",
+      "summary": "The signed energy keeps the physical displacement interval and the complete factorial-filter amplitudes.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-window-gram.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWholeWindow.sum_bandWeight_eq_integral_primeWindowLift": {
+      "label": "Every prime-pair family stays in one integral",
+      "summary": "Each pair uses its own exact rescaling to the same unit interval. All cross-family phases remain available.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-window-gram.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWholeWindow.integral_primeWindowLift_norm_sq": {
+      "label": "The complete energy is one signed finite Gram form",
+      "summary": "Integrability and square integrability are discharged for all actual finite interval features.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-window-gram.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWholeWindow.exists_original_band_primeWindowGram": {
+      "label": "The whole original carrier has the signed Gram bound",
+      "summary": "All prime-selection and support conditions are discharged; the full source-normalized energy bound remains open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-window-gram.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWindowUnitDeletion.exists_central_higher_unit_window_zero": {
+      "label": "The unit divisor vanishes on every central higher-prime window",
+      "summary": "Four or more prime factors and actual annular support prove the unit feature absent, with no zero assumption.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-window-gram.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWindowUnitDeletion.primeWindowLift_eq_withoutUnit": {
+      "label": "Delete absent unit columns without losing correlations",
+      "summary": "The entire lift agrees pointwise on its integration domain after deleting only the geometrically absent unit columns.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-window-gram.md",
       "overview": true
     }
   }

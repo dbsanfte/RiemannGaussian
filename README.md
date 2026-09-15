@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Antichains sharpen the remaining arithmetic coefficients.** Lean now bounds every squarefree composite coefficient using exact prime-fibre cancellation and Sperner’s theorem. On the surviving central band this saves at least a factor 2k over the coarse divisor-count allowance, with the full factorial filter retained. Separately, a new prime-count schedule pays a complete integer class throughout every fixed right-half source range u<=U<1. No new zero-free region follows.
-Next: use these smaller coefficient allowances and the retained phases to bound the lower-count signed sum, whose original source remains minus the full zero multiplicity.
-[Current checked endpoint](RiemannGaussian/ZetaRieszSperner.lean#L315)
-· [Proof details](docs/zeta-riesz-prime-count-sperner.md).
+**The whole carrier retains cross-family signed window energy.** Lean now bounds the entire original Riesz carrier by one explicit signed Gram form, retaining every prime-pair family, divisor sign, physical cutoff and complex filter phase. The actual central coefficient gains an additional square-root factor, and its cofactor unit window vanishes for every term with at least four prime factors. No new zero-free region follows.
+Next: bound the remaining prime and composite divisor correlations at source scale, using the signed cross-family energy rather than a sum of separate family norms.
+[Current checked endpoint](RiemannGaussian/ZetaRieszWholeWindow.lean#L310)
+· [Proof details](docs/zeta-riesz-window-gram.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

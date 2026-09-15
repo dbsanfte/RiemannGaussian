@@ -3066,6 +3066,28 @@ arguments carry no historical novelty claim. See
 `docs/zeta-riesz-prime-count-sperner.md` and supporting explorer endpoint
 `prime-count-sperner`; keep the default endpoints and both top-ten lists.
 
+`ZetaRieszWindowGram` and `ZetaRieszWholeWindow` retain every original
+prime-pair family in one exact complex interval lift. Its explicit Gram
+bound keeps both Mobius factors, all complex filter amplitudes, prime
+logarithms and physical window endpoints, with genuine integrability.
+`exists_original_band_primeWindowGram` discharges all prime-selection and
+support conditions and keeps the complete factorization certificate.
+Do not replace its cross-family Gram form by separate family norms without
+retaining the original identity and paying the resulting cost. The full
+source-normalized signed energy bound remains open; energy positivity is
+not smallness and no zero-free result follows from this slice.
+`ZetaRieszSpernerRate` gives the actual central coefficient bound
+2^k log(n)/(2k sqrt(k-1)), relative to the coarse Boolean allowance. Retain
+the sharper binomial and earlier atom-specific bounds. `ZetaRieszWindowUnitDeletion`
+proves the unit cofactor-divisor window absent for every actual central
+atom with at least four prime factors; this does not remove the separate
+Euler prime-head term. The central conclusions keep u<exp(-2/3); the
+whole original carrier bound has no exposure or simplicity premise.
+No external divisor-moment estimate is imported and no historical novelty
+is claimed for the finite-interval or Cauchy--Schwarz identities. See
+`docs/zeta-riesz-window-gram.md` and supporting endpoint `signed-window-gram`.
+Keep the default endpoints and both top-ten lists unchanged.
+
 ## Commit and check-in invariant
 
 The introductory research-agent/model statement belongs directly below the

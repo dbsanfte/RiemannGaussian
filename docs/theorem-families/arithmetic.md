@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**243 modules.** Source links open the definitions, hypotheses and proofs.
+**247 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -190,10 +190,14 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszSmoothPrimeProduct](../../RiemannGaussian/ZetaRieszSmoothPrimeProduct.lean)
 - [ZetaRieszSmoothRoughProduct](../../RiemannGaussian/ZetaRieszSmoothRoughProduct.lean)
 - [ZetaRieszSperner](../../RiemannGaussian/ZetaRieszSperner.lean)
+- [ZetaRieszSpernerRate](../../RiemannGaussian/ZetaRieszSpernerRate.lean)
 - [ZetaRieszSurvivingPrimeLayers](../../RiemannGaussian/ZetaRieszSurvivingPrimeLayers.lean)
 - [ZetaRieszTriplePrime](../../RiemannGaussian/ZetaRieszTriplePrime.lean)
 - [ZetaRieszUnfilteredSource](../../RiemannGaussian/ZetaRieszUnfilteredSource.lean)
+- [ZetaRieszWholeWindow](../../RiemannGaussian/ZetaRieszWholeWindow.lean)
 - [ZetaRieszWiderMatched](../../RiemannGaussian/ZetaRieszWiderMatched.lean)
+- [ZetaRieszWindowGram](../../RiemannGaussian/ZetaRieszWindowGram.lean)
+- [ZetaRieszWindowUnitDeletion](../../RiemannGaussian/ZetaRieszWindowUnitDeletion.lean)
 - [ZetaRoughCoprimeFactorDecay](../../RiemannGaussian/ZetaRoughCoprimeFactorDecay.lean)
 - [ZetaRoughDivisorCorrelation](../../RiemannGaussian/ZetaRoughDivisorCorrelation.lean)
 - [ZetaRoughDivisorIncidence](../../RiemannGaussian/ZetaRoughDivisorIncidence.lean)

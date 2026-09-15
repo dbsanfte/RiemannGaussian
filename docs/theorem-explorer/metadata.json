@@ -2476,7 +2476,11 @@
     "ZetaRieszPrimeCountWindow": "arithmetic",
     "ZetaRieszPrimeCountMass": "arithmetic",
     "ZetaRieszPrimeCountRightHalf": "arithmetic",
-    "ZetaRieszSperner": "arithmetic"
+    "ZetaRieszSperner": "arithmetic",
+    "ZetaRieszWindowGram": "arithmetic",
+    "ZetaRieszWholeWindow": "arithmetic",
+    "ZetaRieszWindowUnitDeletion": "arithmetic",
+    "ZetaRieszSpernerRate": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
