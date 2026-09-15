@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**A whole physical upper tail is bounded; two explicit classes remain.** For 1/2<u<exp(-2/3), Lean pays every actual term n>=X_N^2, while all coefficients below X_N are exactly zero. The full source survives in X_N<n<X_N^2. Any survivor with an extreme prime is now an intermediate/extreme semiprime; the other class has all primes below X_N. Sharper two- and three-prime bounds retain their proved intervals. The two classes still need their joint signed floor.
-Next: control the joint subcutoff and semiprime responses with their original phases and physical boundary. Any whole-sum cofinal floor strictly above -1 suffices.
-[Current checked endpoint](RiemannGaussian/ZetaRieszPhysicalAnnulus.lean#L75)
-· [Proof details](docs/zeta-riesz-physical-annulus.md).
+**A complete prime range with independently bounded error.** For 1/2<=u<exp(-2/3), Lean completes the actual cross-prime class with geometric error at rate (8/3)*exp(-95/96)<1. Every earlier support cut and unique integer label is checked. The completed head retains its exact physical prefix beside the all-subcutoff class; their whole signed response preserves the negative multiplicity source. The joint floor remains open.
+Next: exploit the shared arithmetic phases between the finite physical prefix and the all-subcutoff class, retaining the completed prime head. A cofinal floor for their whole signed sum remains the target.
+[Current checked endpoint](RiemannGaussian/ZetaRieszAnnulusJoint.lean#L111)
+· [Proof details](docs/zeta-riesz-annulus-prime-completion.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

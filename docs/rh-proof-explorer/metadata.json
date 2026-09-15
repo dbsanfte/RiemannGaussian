@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 28,
-      "id": "physical-annulus",
+      "sequence": 29,
+      "id": "annulus-prime-completion",
       "kind": "theorem",
-      "title": "A whole physical upper tail is bounded; two explicit classes remain.",
-      "body": "For 1/2<u<exp(-2/3), Lean pays every actual term n>=X_N^2, while all coefficients below X_N are exactly zero. The full source survives in X_N<n<X_N^2. Any survivor with an extreme prime is now an intermediate/extreme semiprime; the other class has all primes below X_N. Sharper two- and three-prime bounds retain their proved intervals. The two classes still need their joint signed floor.",
-      "next": "Next: control the joint subcutoff and semiprime responses with their original phases and physical boundary. Any whole-sum cofinal floor strictly above -1 suffices.",
+      "title": "A complete prime range with independently bounded error.",
+      "body": "For 1/2<=u<exp(-2/3), Lean completes the actual cross-prime class with geometric error at rate (8/3)*exp(-95/96)<1. Every earlier support cut and unique integer label is checked. The completed head retains its exact physical prefix beside the all-subcutoff class; their whole signed response preserves the negative multiplicity source. The joint floor remains open.",
+      "next": "Next: exploit the shared arithmetic phases between the finite physical prefix and the all-subcutoff class, retaining the completed prime head. A cofinal floor for their whole signed sum remains the target.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszPhysicalAnnulusDeletionTheorem"
+        "rieszJointCompletionBoundTheorem"
       ],
-      "documentation": "docs/zeta-riesz-physical-annulus.md"
+      "documentation": "docs/zeta-riesz-annulus-prime-completion.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1173,6 +1173,57 @@
         "rieszPhysicalAnnulusScope"
       ],
       "documentation": "docs/zeta-riesz-physical-annulus.md"
+    },
+    {
+      "id": "annulus-prime-completion",
+      "label": "Annular prime completion · error bounded",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszInfinitePhysicalBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossIntegerUniqueTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossCoefficientSplitTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossHasSumTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossPhysicalWindowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossAllCutsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAnnulusCompletionBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointAnnulusSplitTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointCompletionBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointCompletionSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszAnnulusCompletionScope"
+      ],
+      "documentation": "docs/zeta-riesz-annulus-prime-completion.md"
     }
   ],
   "scopes": {
@@ -2967,6 +3018,76 @@
       "summary": "A cofinal real floor at least -c with c<1 for every whole exposed residual implies Mathlib RH. The independent joint arithmetic floor remains an explicit open premise.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszInfinitePhysical.eventually_norm_infinite_upper_le": {
+      "label": "The genuine infinite product tail has a geometric bound",
+      "summary": "Every changing infinite mask of the original coefficient with n>=X_N^2 has the same source-normalized subunit rate on 0<u<exp(-2/3), with genuine summability and every fixed filter.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-annulus-prime-completion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCrossCompletion.crossIncidences_card_le_one": {
+      "label": "Separated prime ranges count each actual integer once",
+      "summary": "A prime below X_N paired with a prime at least X_N gives at most one selected cofactor incidence at each integer label. No unordered-pair factor is silently dropped.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-annulus-prime-completion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCrossCompletion.integerCoefficient_eq_cross_add_prefix": {
+      "label": "Prime completion retains its exact physical prefix",
+      "summary": "The completed coefficient equals the original cross-cutoff coefficient plus the physical prime prefix, retaining diagonal and repeated prefix incidences.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-annulus-prime-completion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCrossCompletion.hasSum_crossCoefficient": {
+      "label": "A convergent prime head minus its genuine finite prefix",
+      "summary": "The cross-cutoff integer series has a proved sum equal to the completed cofactor head minus its actual prefix below X_N squared. The finite correction has no assumed cancellation.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-annulus-prime-completion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCrossSupport.eventually_physical_window": {
+      "label": "The physical annulus fits all logarithmic windows",
+      "summary": "On 1/2<=u<exp(-2/3), every label X_N<n<X_N^2 eventually lies in both the original band and the narrowed log window, keeping the original damped floor.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-annulus-prime-completion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCrossSupport.eventually_cross_semiprime_mem_annulus": {
+      "label": "Every earlier arithmetic cut is discharged for the cross class",
+      "summary": "Every semiprime with N^2<a<X_N<=p and p*a<X_N^2 eventually belongs to the actual annular carrier. No inherited arbitrary mask is imposed on the completed prime sum.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-annulus-prime-completion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszAnnulusCompletion.eventually_norm_annulus_completion_error_le": {
+      "label": "The actual prime-completion error is independently bounded",
+      "summary": "On 1/2<=u<exp(-2/3), the error between the actual annular cross class and the completed prime head minus its exact prefix is at most ((8/3)*exp(-95/96))^N times the original fixed-filter allowance. All selected intermediate primes are allowed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-annulus-prime-completion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszAnnulusJoint.annulusResponse_eq_split": {
+      "label": "The actual annulus splits without losing the shared phases",
+      "summary": "The original coefficient and factorial filter give an exact sum of the all-subcutoff and uniquely counted cross-prime classes, once N^2<X_N.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-annulus-prime-completion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszAnnulusJoint.eventually_norm_joint_sub_annulus_le": {
+      "label": "The whole completed representation has a geometric error",
+      "summary": "The all-subcutoff response plus the completed prime head minus its physical prefix differs from the original whole annulus by the same independent geometric allowance, on 1/2<=u<exp(-2/3).",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-annulus-prime-completion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszAnnulusJoint.tendsto_jointResponse_exposed": {
+      "label": "The joint completed response retains the full negative source",
+      "summary": "At exposed right-half zeros in the proved source interval, the whole completed response tends to minus the analytic multiplicity. The independent joint floor remains open; no separate part is asserted to decay.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-annulus-prime-completion.md",
       "overview": true
     }
   }

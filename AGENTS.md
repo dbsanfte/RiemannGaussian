@@ -2602,6 +2602,28 @@ bound follows. See `docs/zeta-riesz-physical-annulus.md` and supporting
 endpoint `physical-annulus`; retain the default whole-carrier endpoint and
 both ten-entry README lists.
 
+`ZetaRieszInfinitePhysical.eventually_norm_infinite_upper_le` extends the
+physical product bound to every changing infinite mask of the actual
+coefficient above X_N squared, with genuine summability proved first.
+`ZetaRieszAnnulusCompletion.eventually_norm_annulus_completion_error_le`
+now completes the entire actual cross-prime class N^2<a<X_N<=p on
+1/2<=u<exp(-2/3). Its geometric error has rate (8/3)*exp(-95/96)<1.
+All earlier support cuts, both logarithmic windows and unique actual
+integer counting are discharged, retaining every fixed filter and phase.
+The completed prime head MUST retain its exact finite physical prefix:
+diagonal and repeated incidences inside that prefix are real corrections.
+`ZetaRieszAnnulusJoint.eventually_norm_joint_sub_annulus_le` bounds the
+error of the whole representation: all-subcutoff response plus completed
+prime head minus physical prefix. Its full negative multiplicity source
+survives at exposed zeros in the stated interval. The independent JOINT
+signed floor remains open. Do not assert that the prefix, the completed
+head or the subcutoff class separately decays. Larger source scales keep
+their previous fallback regimes. No RH proof, zero-free enlargement,
+numerical zero bound or historical novelty follows from this completion.
+See `docs/zeta-riesz-annulus-prime-completion.md` and supporting endpoint
+`annulus-prime-completion`; preserve the default whole-carrier endpoint
+and both ten-entry README lists.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

@@ -853,6 +853,35 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem tendsto_above_physical_square' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'annulus-prime-completion':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'independent JOINT signed floor remains open' in scope
+                        assert 'MINUS its exact finite physical prefix' in scope
+                        assert 'Diagonal and repeated prefix incidences' in scope
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        bound = next(n for n in roots if n['id'].endswith('.eventually_norm_joint_sub_annulus_le'))
+                        statement = ' '.join(bound['statement'].split())
+                        assert all(t in statement for t in ('1 / 2 ≤ u', 'Real.exp', 'jointResponse', 'annulusResponse', 'degreeRate', 'tiltConstant'))
+                        assert 'NontrivialZetaZero' not in statement
+                        complete = next(n for n in roots if n['id'].endswith('.hasSum_crossCoefficient'))
+                        assert all(t in complete['statement'] for t in ('HasSum', 'completedCofactorHead', 'prefixCoefficient'))
+                        source = next(n for n in roots if n['id'].endswith('.tendsto_jointResponse_exposed'))
+                        assert all(t in source['statement'] for t in ('NontrivialZetaZero', 'Real.exp', 'analyticZetaZeroMultiplicity'))
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', bound['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == bound['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{bound['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{bound['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem eventually_norm_joint_sub_annulus_le' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -878,7 +907,8 @@ def run(output, url=None, refresh_preview=False):
                                'exactThreePrimeLayersAndSignedBoundaryWindow': True,
                                'independentNarrowedTailAndConditionalCosineSource': True,
                                'fourExtremePrimeBoundAndOpenWholeResidualFloor': True,
-                               'physicalAnnulusBoundAndJointTwoClassObstruction': True})
+                               'physicalAnnulusBoundAndJointTwoClassObstruction': True,
+                               'completePrimeRangeBoundAndRetainedSignedPrefix': True})
                 page.close()
             browser.close()
     finally:
