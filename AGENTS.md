@@ -2559,6 +2559,26 @@ Do not report an RH proof, new zero-free region or numerical zero bound.
 Use supporting endpoint `unfiltered-narrow-carrier` while retaining the
 default whole-carrier endpoint and both ten-entry README lists.
 
+`ZetaRieszFourExtremeBound.eventually_norm_four_extreme_sum_le` now bounds
+every actual finite selection with at least four distinct prime factors at
+or above X_N, for 0<u<exp(-1/2). The source-normalized allowance is
+`(4*exp(-23/16))^N*u*A(P,1/4,65/64)`, with its rate strictly below one,
+the actual damped floor, all fixed filter shifts and uniformity in the
+ordinate and selection. No zero premise is used. For every fixed 0<u<1,
+some higher degree also has independent unnormalized geometric decay.
+`ZetaRieszFourExtremeDeletion.tendsto_narrow_sub_fourResidual` removes the
+entire paid four-prime class and keeps the previous residual unchanged
+outside its proved interval. The negative multiplicity source and exact
+cosine identity survive. On 1/2<u<exp(-1/2), nonzero survivors eventually
+have at least two primes above N^2 but at most three at or above X_N.
+Do not conflate these thresholds: intermediate primes and their cofactor
+coupling remain. All earlier cuts retain their own scale ranges. The
+whole independent cofinal floor remains open; the terminal RH theorem is
+conditional. No new zero-free region or numerical zero bound is claimed.
+See `docs/zeta-riesz-extreme-degree-deletion.md` and supporting endpoint
+`extreme-degree-deletion`; retain the default whole-carrier endpoint and
+both ten-entry README lists.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

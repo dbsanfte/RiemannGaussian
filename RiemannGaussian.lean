@@ -1709,3 +1709,7 @@ import RiemannGaussian.ZetaRieszUnfilteredSource
 import RiemannGaussian.ZetaRieszCosineCarrier
 import RiemannGaussian.ZetaArithmeticLogWindow
 import RiemannGaussian.ZetaRieszNarrowCarrier
+import RiemannGaussian.ZetaRieszExtremePrimeCount
+import RiemannGaussian.ZetaRieszExtremeDegreeBounds
+import RiemannGaussian.ZetaRieszFourExtremeBound
+import RiemannGaussian.ZetaRieszFourExtremeDeletion

@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 26,
-      "id": "unfiltered-narrow-carrier",
+      "sequence": 27,
+      "id": "extreme-degree-deletion",
       "kind": "theorem",
-      "title": "Two more arithmetic tails are bounded; the signed target is simpler.",
-      "body": "Lean removes the actual outer pieces below log(n)=2N/5 and above log(n)=8N log(2), with independent geometric bounds for every fixed filter. At exposed zeros, the constant filter P=1 preserves the full negative multiplicity source and every earlier arithmetic cut. The remaining target is an exact signed cosine sum in the smaller window; its joint lower floor remains open.",
-      "next": "Next: control the coupled large-prime products and composite-cofactor fallback cases inside that window. Any whole-sum cofinal floor strictly above -1 suffices.",
+      "title": "A further arithmetic class now has a geometric bound.",
+      "body": "For 1/2<u<exp(-1/2), Lean bounds and removes the entire actual class with at least four primes at or above the physical cutoff, at rate 4*exp(-23/16)<1. The whole reduced carrier keeps its negative multiplicity source and signed cosine phase. At most three such primes remain on this interval; intermediate primes and their cofactor coupling still require the joint lower bound.",
+      "next": "Next: retain both prime phases through complete moment convolutions, then test whether the actual cutoff and finite-prefix errors permit a bound on the surviving classes. The whole-sum cofinal floor remains open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszNarrowDeletionTheorem"
+        "rieszFourExtremeBoundTheorem"
       ],
-      "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md"
+      "documentation": "docs/zeta-riesz-extreme-degree-deletion.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1043,6 +1043,61 @@
         "rieszUnfilteredNarrowScope"
       ],
       "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md"
+    },
+    {
+      "id": "extreme-degree-deletion",
+      "label": "Extreme prime degrees · four-prime class bounded",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExtremePrimeBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExtremeFiniteDegreeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExtremeGlobalDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourExtremeRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourExtremeBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourExtremeDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourExtremeDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourExtremeSurvivorsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourExtremeSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourExtremeCosineTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourExtremeFloorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszExtremeDegreeScope"
+      ],
+      "documentation": "docs/zeta-riesz-extreme-degree-deletion.md"
     }
   ],
   "scopes": {
@@ -2648,6 +2703,83 @@
       "summary": "A cofinal real floor at least -c with c<1 for each whole narrowed exposed carrier implies Mathlib RH. This independent arithmetic bound remains an explicit open premise; source transport and exposed-zero selection are proved.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-unfiltered-narrow-carrier.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszExtremePrimeCount.extreme_prime_log_budget": {
+      "label": "Physical-cutoff primes consume the exact logarithmic budget",
+      "summary": "For every squarefree label, its number of distinct primes at or above the physical cutoff times the actual length is at most log(n).",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-degree-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszExtremePrimeCount.exists_eventually_bounded_extreme_count": {
+      "label": "Every fixed source scale has finitely many surviving extreme degrees",
+      "summary": "For each fixed 0<u<1, some fixed degree cap eventually bounds all nonzero labels in the actual narrowed band. The cap and threshold depend on u.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-degree-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszExtremeDegreeBounds.exists_global_extreme_class_decay": {
+      "label": "Sufficiently many extreme primes give independent unnormalized decay",
+      "summary": "For every fixed 0<u<1, some degree K(u) makes every changing finite selection with at least K(u) physical-cutoff prime factors decay, with the original coefficient and every fixed filter. No zero premise is used.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-degree-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFourExtremeBound.fourRate_mem": {
+      "label": "The four-prime geometric rate is strictly below one",
+      "summary": "The exact rate 4*exp(-23/16) is positive and below one. It is an arithmetic component rate, not a numerical zero bound.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-degree-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFourExtremeBound.eventually_norm_four_extreme_sum_le": {
+      "label": "The entire four-or-more-extreme-prime class is bounded",
+      "summary": "For 0<u<exp(-1/2), the actual source-normalized response is bounded by (4*exp(-23/16))^N times u*A(P,1/4,65/64), uniformly in the ordinate and finite selection. All fixed factorial shifts and the physical floor remain.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-degree-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFourExtremeBound.tendsto_four_extreme_sum": {
+      "label": "The actual normalized four-prime class vanishes independently",
+      "summary": "Every changing finite selection with at least four prime factors at or above the physical cutoff has vanishing normalized response on 0<u<exp(-1/2), without a zero premise.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-degree-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFourExtremeDeletion.tendsto_narrow_sub_fourResidual": {
+      "label": "Delete the paid class from the whole actual carrier",
+      "summary": "The normalized difference between the narrowed carrier and the new residual tends to zero. The support is unchanged outside the proved interval, retaining all earlier cuts and their ranges.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-degree-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFourExtremeDeletion.surviving_extreme_count_le_three": {
+      "label": "At most three physical-cutoff primes remain on the deletion interval",
+      "summary": "For u<exp(-1/2), every surviving label has at most three prime factors at or above X_N. This does not bound the number of intermediate primes N^2<p<X_N.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-degree-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFourExtremeDeletion.tendsto_normalizedFourResidual": {
+      "label": "The reduced whole carrier retains the negative multiplicity source",
+      "summary": "At every exposed right-half zero, the constant-filter carrier after the adaptive deletion still tends to minus the full analytic multiplicity. The exact coefficient, phase and all-scale fallback remain.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-degree-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFourExtremeDeletion.re_normalizedFourResidual_eq_cosine_sum": {
+      "label": "The reduced real carrier keeps its exact signed cosine sum",
+      "summary": "The original signed Riesz coefficient multiplies the nonnegative factorial envelope and cos(gamma*log(n)) over the new actual support. This identity supplies no independent lower floor.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-degree-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFourExtremeDeletion.rh_of_exposed_fourResidual_floors": {
+      "label": "Conditional RH closure from the whole remaining floor",
+      "summary": "A cofinal floor at least -c with c<1 for each whole exposed residual implies Mathlib RH. That independent arithmetic floor remains an explicit open premise.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-extreme-degree-deletion.md",
       "overview": true
     }
   }

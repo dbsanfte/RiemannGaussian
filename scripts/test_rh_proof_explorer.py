@@ -792,6 +792,34 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem tendsto_actual_residual_sub_narrow' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'extreme-degree-deletion':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'floor for the whole residual remains open' in scope
+                        assert 'intermediate primes' in scope and 'N^2<p<X_N' in scope
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        bound = next(n for n in roots if n['id'].endswith('.eventually_norm_four_extreme_sum_le'))
+                        statement = ' '.join(bound['statement'].split())
+                        assert all(t in statement for t in ('0 < u', 'Real.exp', '4 ≤', 'fourRate', 'tiltConstant'))
+                        assert 'NontrivialZetaZero' not in statement
+                        source = next(n for n in roots if n['id'].endswith('.tendsto_normalizedFourResidual'))
+                        assert all(t in source['statement'] for t in ('NontrivialZetaZero', 'analyticZetaZeroMultiplicity'))
+                        closure = next(n for n in roots if n['id'].endswith('.rh_of_exposed_fourResidual_floors'))
+                        assert all(t in closure['statement'] for t in ('∃ c < 1', '∃ᶠ', 'RiemannHypothesis'))
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', bound['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == bound['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{bound['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{bound['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem eventually_norm_four_extreme_sum_le' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -815,7 +843,8 @@ def run(output, url=None, refresh_preview=False):
                                'scalarTiltAuditDistinguishedFromArithmeticBound': True,
                                'arbitraryRoughPrimeCountAndCompleteSmoothFactorDeletion': True,
                                'exactThreePrimeLayersAndSignedBoundaryWindow': True,
-                               'independentNarrowedTailAndConditionalCosineSource': True})
+                               'independentNarrowedTailAndConditionalCosineSource': True,
+                               'fourExtremePrimeBoundAndOpenWholeResidualFloor': True})
                 page.close()
             browser.close()
     finally:

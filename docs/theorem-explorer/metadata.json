@@ -2412,7 +2412,11 @@
     "ZetaRieszUnfilteredSource": "arithmetic",
     "ZetaRieszCosineCarrier": "arithmetic",
     "ZetaArithmeticLogWindow": "arithmetic",
-    "ZetaRieszNarrowCarrier": "arithmetic"
+    "ZetaRieszNarrowCarrier": "arithmetic",
+    "ZetaRieszExtremePrimeCount": "arithmetic",
+    "ZetaRieszExtremeDegreeBounds": "arithmetic",
+    "ZetaRieszFourExtremeBound": "arithmetic",
+    "ZetaRieszFourExtremeDeletion": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Two more arithmetic tails are bounded; the signed target is simpler.** Lean removes the actual outer pieces below log(n)=2N/5 and above log(n)=8N log(2), with independent geometric bounds for every fixed filter. At exposed zeros, the constant filter P=1 preserves the full negative multiplicity source and every earlier arithmetic cut. The remaining target is an exact signed cosine sum in the smaller window; its joint lower floor remains open.
-Next: control the coupled large-prime products and composite-cofactor fallback cases inside that window. Any whole-sum cofinal floor strictly above -1 suffices.
-[Current checked endpoint](RiemannGaussian/ZetaRieszNarrowCarrier.lean#L78)
-· [Proof details](docs/zeta-riesz-unfiltered-narrow-carrier.md).
+**A further arithmetic class now has a geometric bound.** For 1/2<u<exp(-1/2), Lean bounds and removes the entire actual class with at least four primes at or above the physical cutoff, at rate 4*exp(-23/16)<1. The whole reduced carrier keeps its negative multiplicity source and signed cosine phase. At most three such primes remain on this interval; intermediate primes and their cofactor coupling still require the joint lower bound.
+Next: retain both prime phases through complete moment convolutions, then test whether the actual cutoff and finite-prefix errors permit a bound on the surviving classes. The whole-sum cofinal floor remains open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszFourExtremeBound.lean#L47)
+· [Proof details](docs/zeta-riesz-extreme-degree-deletion.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
