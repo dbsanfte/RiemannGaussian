@@ -1768,3 +1768,4 @@ import RiemannGaussian.ZetaRieszSignedFrequency
 import RiemannGaussian.TripleRieszProfile
 import RiemannGaussian.ZetaRieszPrimeEndpoint
 import RiemannGaussian.ZetaRieszFrequencyDecay
+import RiemannGaussian.ZetaRieszPrimeCountFrequency

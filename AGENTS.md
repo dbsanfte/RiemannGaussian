@@ -3003,6 +3003,24 @@ both top-ten lists. See `docs/zeta-riesz-frequency-decay.md` and supporting
 endpoint `frequency-sector-decay`. A zero-free theorem from this arithmetic
 path remains the user's next major milestone; component progress is not it.
 
+`ZetaRieszPrimeCountFrequency` retains the actual prime count through AM-GM.
+For squarefree n with k>=4, the paired quotient on |xi| log(n)<=1 is bounded
+by 2 |xi|^2 log(n)^4 / k^k. The full selected arithmetic integral on the
+natural window d_N=3/(8(N+1)) has bound C(P,U,q)(N+1)^2(U/q)^N/K^K.
+For K_j=2^(j+3), N_j=8(j+4)K_j, Lean proves K_j^K_j >= (17/16)^N_j and
+N_j tends to infinity. Every fixed 0<U<17/32 admits a summable tilt giving
+uniform decay for arbitrary moving heights and radii in [0,U]. This pays
+only the k>=K_j low-frequency component, not all counts on that window.
+The exact remainder is all frequencies with 3<=k<K_j, k>=K_j frequencies
+above d_N, and the tapered wing. Their original exposed-zero source remains
+-m+m^2c(u), with unrestricted multiplicity and u<exp(-2/3). The component's
+radius ceiling is not a zero-free region or an enlargement of the source
+range. Do not add this deletion to the earlier overlapping shrinking-sector
+deletion without a new exact partition and error bound. The independent
+joint signed bound, a zero-free theorem from this arithmetic path, and RH
+remain open. Preserve the exact cutoff, count, filter and frequency data;
+see `docs/zeta-riesz-prime-count-frequency.md` and its supporting explorer.
+
 ## Commit and check-in invariant
 
 The introductory research-agent/model statement belongs directly below the

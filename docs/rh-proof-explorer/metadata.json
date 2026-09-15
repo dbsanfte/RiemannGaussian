@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 39,
-      "id": "frequency-sector-decay",
+      "sequence": 40,
+      "id": "prime-count-frequency-decay",
       "kind": "theorem",
-      "title": "A complete frequency sector now has a vanishing arithmetic bound.",
-      "body": "Lean pays the full growing cost of the three-prime and higher-prime sums on an explicit shrinking frequency interval. The normalized error is at most C(P)(N+1)^2(27/28)^N, uniformly in height and across 0<=u<=1. Exact prime-dependent endpoint bounds retain the largest-prime information. This is component progress; no new zero-free region is proved.",
-      "next": "Next: bound the retained coupled complementary integral together with the tapered wing. The broader natural frequency sector and the full largest-prime negative-phase cost remain open.",
+      "title": "Prime-count savings pay a larger frequency sector.",
+      "body": "Lean proves source-normalized decay on the natural 1/N frequency window for the complete class above an explicit growing prime-count threshold, along moment orders tending to infinity. The k^k saving pays the whole arithmetic cost, uniformly over moving heights and radii in every fixed interval 0<=u<=U<17/32. This controls one more component; no new zero-free region follows.",
+      "next": "Next: control the retained 3<=k<K prime counts, complementary many-prime frequencies and tapered wing jointly, while preserving their signed correlations.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszFrequencySectorUniformTheorem"
+        "rieszPrimeCountDecayTheorem"
       ],
-      "documentation": "docs/zeta-riesz-frequency-decay.md"
+      "documentation": "docs/zeta-riesz-prime-count-frequency.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1766,6 +1766,57 @@
         "rieszFrequencyDecayScope"
       ],
       "documentation": "docs/zeta-riesz-frequency-decay.md"
+    },
+    {
+      "id": "prime-count-frequency-decay",
+      "label": "Prime-count decay · natural window and exact remainder",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeCountMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeCountWindowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeCountPowerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeCountArithmeticTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeCountSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeCountUniformTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeCountFamilyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeCountDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeCountPartitionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeCountReducedSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszPrimeCountFrequencyScope"
+      ],
+      "documentation": "docs/zeta-riesz-prime-count-frequency.md"
     }
   ],
   "scopes": {
@@ -4386,6 +4437,76 @@
       "summary": "When one pair is below the physical cutoff and the other two above, the entire triple profile is exactly minus the largest-prime endpoint gap. No cancellation with the wing is assumed.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-frequency-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountFrequency.prime_log_product_le_mean": {
+      "label": "Prime logs share a fixed total",
+      "summary": "The product of the actual prime logarithms is at most (log(n)/k)^k; squarefree support and the full count are retained.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountFrequency.norm_actual_higher_low_frequency_le_count": {
+      "label": "A wider count-sensitive window",
+      "summary": "The actual higher-prime low integral has a cubic allowance with coefficient smaller by 256 and a permitted window four times wider. The whole cost is still explicit in this estimate.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountFrequency.norm_higher_quotient_le_count_power": {
+      "label": "Every prime contributes its denominator",
+      "summary": "On |xi|log(n)<=1 the paired quotient has bound 2|xi|^2 log(n)^4/k^k, keeping the complete prime-count power.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountFrequency.norm_manyPrimeLowResponse_le": {
+      "label": "The full many-prime arithmetic cost",
+      "summary": "For every K>=4 and summable tilt q<1/2, the actual source-normalized natural-window integral is bounded by C(P,U,q)(N+1)^2(U/q)^N/K^K.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountFrequency.dyadic_count_power_saving": {
+      "label": "An exponential gain at cofinal orders",
+      "summary": "For K_j=2^(j+3) and N_j=8(j+4)K_j, Lean proves K_j^K_j >= (17/16)^N_j by exact arithmetic.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountFrequency.norm_manyPrimeLowResponse_dyadic_le": {
+      "label": "Natural-window geometric bound",
+      "summary": "The complete selected contribution has height-uniform bound C(P,U,q)(N_j+1)^2(16U/(17q))^N_j for every radius in [0,U].",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountFrequency.exists_many_prime_tilt": {
+      "label": "A common tilt for every eligible radius",
+      "summary": "Every 0<U<17/32 admits 0<q<1/2 with 16U<17q. This sufficient family criterion is not an optimality or zero-location claim.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountFrequency.tendsto_manyPrimeLowResponse_dyadic_moving": {
+      "label": "The selected natural-window sector vanishes",
+      "summary": "For every fixed P and 0<U<17/32, arbitrary moving heights and radii in [0,U] have source-normalized many-prime low-frequency contribution tending to zero along cofinal N_j.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountFrequency.nonlinearResponse_sub_many_low_eq": {
+      "label": "Every remaining count and frequency is explicit",
+      "summary": "Exact deletion leaves the full 3<=k<K frequency integral plus k>=K frequencies above 3/(8(N+1)). All original masks and genuine integrability remain.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountFrequency.tendsto_count_reduced_source": {
+      "label": "Few primes, high frequencies and wing retain the source",
+      "summary": "The explicit three-piece remainder tends to -m+m^2c(u), with unrestricted multiplicity and the original exposed-zero source range. Its independent joint floor is open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-count-frequency.md",
       "overview": true
     }
   }

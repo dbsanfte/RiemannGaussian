@@ -12,6 +12,11 @@ The independent endpoint is
 The [previous exact frequency representation](zeta-riesz-signed-frequency.md)
 and every original arithmetic mask remain in use.
 
+A [prime-count continuation](zeta-riesz-prime-count-frequency.md) now pays
+the natural `1/N` window for the selected class above a growing prime-count
+threshold, along cofinal moment orders. Smaller counts and complementary
+frequencies still require a joint signed bound.
+
 ## The bound, including the arithmetic cost
 
 Write `F_N = nonlinearFrequency P u y N` for the coupled frequency response

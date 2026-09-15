@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**A complete frequency sector now has a vanishing arithmetic bound.** Lean pays the full growing cost of the three-prime and higher-prime sums on an explicit shrinking frequency interval. The normalized error is at most C(P)(N+1)^2(27/28)^N, uniformly in height and across 0<=u<=1. Exact prime-dependent endpoint bounds retain the largest-prime information. This is component progress; no new zero-free region is proved.
-Next: bound the retained coupled complementary integral together with the tapered wing. The broader natural frequency sector and the full largest-prime negative-phase cost remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszFrequencyDecay.lean#L298)
-· [Proof details](docs/zeta-riesz-frequency-decay.md).
+**Prime-count savings pay a larger frequency sector.** Lean proves source-normalized decay on the natural 1/N frequency window for the complete class above an explicit growing prime-count threshold, along moment orders tending to infinity. The k^k saving pays the whole arithmetic cost, uniformly over moving heights and radii in every fixed interval 0<=u<=U<17/32. This controls one more component; no new zero-free region follows.
+Next: control the retained 3<=k<K prime counts, complementary many-prime frequencies and tapered wing jointly, while preserving their signed correlations.
+[Current checked endpoint](RiemannGaussian/ZetaRieszPrimeCountFrequency.lean#L463)
+· [Proof details](docs/zeta-riesz-prime-count-frequency.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
