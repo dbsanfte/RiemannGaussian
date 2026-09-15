@@ -2390,7 +2390,11 @@
     "ZetaRieszProductCeiling": "arithmetic",
     "ZetaRieszBeyondPhysical": "arithmetic",
     "ZetaRieszCompositeSmooth": "arithmetic",
-    "ZetaRieszCompositeDeletion": "arithmetic"
+    "ZetaRieszCompositeDeletion": "arithmetic",
+    "ZetaRieszDivisorPrefix": "arithmetic",
+    "ZetaRieszSmoothRoughProduct": "arithmetic",
+    "ZetaRieszLargeSmoothClass": "arithmetic",
+    "ZetaRieszLargeSmoothDeletion": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

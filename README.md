@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**All one-large-prime composite-smooth terms are now paid on the proved scale interval.** For 1/2<u<exp(-1/2), Lean pays every one-large-prime term with a squarefree composite cofactor supported through N², with no cofactor size cap or physical prime cutoff. Nonzero survivors are either a small-prime/large-prime semiprime beyond the physical cutoff, or have at least two large primes. Earlier restrictions, the exact source and signed Euler bridge survive. Their full joint signed floor remains open.
-Next: control the coupled surviving semiprimes and multiple-large-prime terms, retaining their prime structure, Riesz signs and product phases.
-[Current checked endpoint](RiemannGaussian/ZetaRieszCompositeDeletion.lean#L72)
-· [Proof details](docs/zeta-riesz-composite-smooth-deletion.md).
+**Large smooth factors are now paid with any number of rough primes.** For 1/2<u and 2*u²<1, Lean removes every term whose complete N²-smooth factor reaches the physical cutoff, allowing any number of rough primes. Their full divisor cost adds only a logarithm, absorbed by the geometric saving. Every nonzero survivor has a proved factorization with smaller smooth part. Earlier deletions, the exact source and signed Euler bridge remain. The full joint signed floor is still open.
+Next: use the exact Riesz recurrence beyond the physical prime cutoff to isolate which remaining smooth cores and intermediate primes can carry a nonzero coefficient.
+[Current checked endpoint](RiemannGaussian/ZetaRieszLargeSmoothDeletion.lean#L100)
+· [Proof details](docs/zeta-riesz-large-smooth-factor-deletion.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

@@ -2479,6 +2479,24 @@ claimed; the displayed RH closure is conditional. See
 `docs/zeta-riesz-composite-smooth-deletion.md` and endpoint
 `composite-smooth-deletion`; retain the default whole-carrier endpoint.
 
+`ZetaRieszLargeSmoothDeletion.tendsto_actual_band_sub_largeSmoothResidual`
+now pays every actual term whose complete N^2-smooth factor reaches the
+physical cutoff, on 1/2<u and 2*u^2<1, with any number of rough primes.
+The exact divisor hyperbola costs only one extra logarithm; its cubic
+order allowance is absorbed by the same geometric rate. Keep all divisor
+choices, masks, factorial shifts and disjoint prime supports. Unique counting
+and existence of the complete factorization are both proved.
+`surviving_support_with_small_smooth_factor` supplies every nonzero survivor's
+full factorization with smooth part below the physical cutoff. Every earlier
+deletion remains, including the complete one-large-prime composite deletion
+on its own smaller interval. Do not conflate those source-scale intervals.
+The all-scale fallback, exact negative source and independent signed Euler
+bridge remain. The full joint signed floor and RH are still open; the RH
+closure is conditional. No numerical starting order, zero-free improvement
+or historical novelty is claimed. See
+`docs/zeta-riesz-large-smooth-factor-deletion.md` and endpoint
+`large-smooth-factor-deletion`; retain the default whole-carrier endpoint.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

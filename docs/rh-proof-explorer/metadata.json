@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 22,
-      "id": "composite-smooth-deletion",
+      "sequence": 23,
+      "id": "large-smooth-factor-deletion",
       "kind": "theorem",
-      "title": "All one-large-prime composite-smooth terms are now paid on the proved scale interval.",
-      "body": "For 1/2<u<exp(-1/2), Lean pays every one-large-prime term with a squarefree composite cofactor supported through N², with no cofactor size cap or physical prime cutoff. Nonzero survivors are either a small-prime/large-prime semiprime beyond the physical cutoff, or have at least two large primes. Earlier restrictions, the exact source and signed Euler bridge survive. Their full joint signed floor remains open.",
-      "next": "Next: control the coupled surviving semiprimes and multiple-large-prime terms, retaining their prime structure, Riesz signs and product phases.",
+      "title": "Large smooth factors are now paid with any number of rough primes.",
+      "body": "For 1/2<u and 2*u²<1, Lean removes every term whose complete N²-smooth factor reaches the physical cutoff, allowing any number of rough primes. Their full divisor cost adds only a logarithm, absorbed by the geometric saving. Every nonzero survivor has a proved factorization with smaller smooth part. Earlier deletions, the exact source and signed Euler bridge remain. The full joint signed floor is still open.",
+      "next": "Next: use the exact Riesz recurrence beyond the physical prime cutoff to isolate which remaining smooth cores and intermediate primes can carry a nonzero coefficient.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszCompositeDeletionTheorem"
+        "rieszLargeSmoothDeletionTheorem"
       ],
-      "documentation": "docs/zeta-riesz-composite-smooth-deletion.md"
+      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -799,6 +799,69 @@
         "rieszCompositeDeletionScope"
       ],
       "documentation": "docs/zeta-riesz-composite-smooth-deletion.md"
+    },
+    {
+      "id": "large-smooth-factor-deletion",
+      "label": "Large smooth factors · any number of rough primes",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszDivisorHyperbolaTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSquarefreePrefixTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothRoughHarmonicTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeSmoothProductRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothRoughUniqueTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeSmoothClassDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeSmoothClassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeSmoothDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeSmoothSurvivorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeSmoothAdaptiveTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeSmoothSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeSmoothEulerBridgeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeSmoothFloorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszLargeSmoothDeletionScope"
+      ],
+      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md"
     }
   ],
   "scopes": {
@@ -2075,6 +2138,97 @@
       "summary": "A cofinal real floor above minus one for each complete adaptive remainder would imply Mathlib RH. That arithmetic floor remains an explicit unproved premise.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszDivisorPrefix.divisor_prefix_eq_hyperbola": {
+      "label": "Every arithmetic weight · exact divisor hyperbola",
+      "summary": "The complete divisor-weighted prefix equals the ordered finite product sum, for every real weight and every integer endpoint, before any positivity estimate.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszDivisorPrefix.squarefree_rpow_prefix_le": {
+      "label": "All rough prime counts · one logarithmic divisor allowance",
+      "summary": "Every squarefree prefix has its full 2^omega divisor-choice mass bounded by the real-power prefix times one logarithm, without fixing the number of prime factors.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothRoughProduct.norm_pairResponse_le_harmonic_squarefree": {
+      "label": "Retained product ceiling · harmonic smooth-factor mass",
+      "summary": "An arbitrary squarefree rough factor adds only one logarithm. The exact product ceiling still cancels its cofactor tilt power, retaining all masks and filter shifts.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothRoughProduct.norm_scaled_large_smooth_product_le": {
+      "label": "Actual multi-prime response · complete cubic allowance",
+      "summary": "The literal normalized pair response has an explicit cubic order allowance times the complete quadratic head and the same strict large-smooth-factor geometric rate.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLargeSmoothClass.productBand_sum_eq_pairResponse_squarefree": {
+      "label": "Disjoint prime supports · each integer counted once",
+      "summary": "The entire smooth and rough factors are uniquely recoverable from their product, so the actual signed integer class equals its full finite pair response.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLargeSmoothClass.tendsto_actual_largeSmoothFactorBand": {
+      "label": "Every large smooth factor · arbitrary rough prime count paid",
+      "summary": "All actual original-band terms whose complete N^2-smooth factor reaches the physical cutoff decay independently whenever 0<u and 2*u^2<1, with every order-dependent mask.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLargeSmoothClass.mem_largeSmoothFactorBand_iff": {
+      "label": "Exact class · complete smooth factor and full rough support",
+      "summary": "Membership retains the original band, arbitrary mask, physical smooth-factor cutoff, squarefree factors and disjoint prime supports, without a rough-prime-count restriction.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLargeSmoothDeletion.tendsto_actual_band_sub_largeSmoothResidual": {
+      "label": "Original band · new complete component independently removed",
+      "summary": "The normalized difference between the original band and the more tightly supported residual tends to zero on 1/2<u and 2*u^2<1, preserving every earlier deletion.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLargeSmoothDeletion.surviving_support_with_small_smooth_factor": {
+      "label": "Every nonzero survivor · complete smooth factor below cutoff",
+      "summary": "Each nonzero survivor has a full smooth/rough factorization with smooth factor below the physical cutoff. Factorization existence is proved, not assumed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLargeSmoothDeletion.tendsto_actual_band_sub_adaptiveSmooth": {
+      "label": "Every source scale · independent deletion with fallback",
+      "summary": "The new residual is used when 2*u^2<1; the previous adaptive remainder is retained elsewhere. Their complete deletion error vanishes for every 1/2<u<1.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLargeSmoothDeletion.tendsto_normalizedAdaptiveSmooth": {
+      "label": "Original pole-jet source · exact negative multiplicity retained",
+      "summary": "Under a hypothetical right-half zero, every original order retains the exact negative multiplicity source, physical length, pole-jet filter and logarithmic phase.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLargeSmoothDeletion.tendsto_quadraticResidual_sub_adaptiveSmooth": {
+      "label": "Signed Euler residual · independent bridge retained",
+      "summary": "The signed quadratic Euler-window residual and the new adaptive arithmetic sum differ by a proved vanishing normalized error, at every source scale.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLargeSmoothDeletion.rh_of_adaptiveSmooth_cofinal_floors": {
+      "label": "Conditional RH closure · full signed floor still required",
+      "summary": "A cofinal real floor above minus one for each full adaptive remainder would imply Mathlib RH. The independent arithmetic floor remains an unproved premise.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
       "overview": true
     }
   }

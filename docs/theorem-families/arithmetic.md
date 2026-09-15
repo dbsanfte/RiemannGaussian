@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**160 modules.** Source links open the definitions, hypotheses and proofs.
+**164 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -80,6 +80,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszConditionedEnergy](../../RiemannGaussian/ZetaRieszConditionedEnergy.lean)
 - [ZetaRieszConditioningTransfer](../../RiemannGaussian/ZetaRieszConditioningTransfer.lean)
 - [ZetaRieszCriticalProfile](../../RiemannGaussian/ZetaRieszCriticalProfile.lean)
+- [ZetaRieszDivisorPrefix](../../RiemannGaussian/ZetaRieszDivisorPrefix.lean)
 - [ZetaRieszEulerCorrectionDeletion](../../RiemannGaussian/ZetaRieszEulerCorrectionDeletion.lean)
 - [ZetaRieszEulerCorrectionEnergy](../../RiemannGaussian/ZetaRieszEulerCorrectionEnergy.lean)
 - [ZetaRieszEulerCutoff](../../RiemannGaussian/ZetaRieszEulerCutoff.lean)
@@ -100,6 +101,8 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszGrowingCofactor](../../RiemannGaussian/ZetaRieszGrowingCofactor.lean)
 - [ZetaRieszImprovedMoment](../../RiemannGaussian/ZetaRieszImprovedMoment.lean)
 - [ZetaRieszInterpolation](../../RiemannGaussian/ZetaRieszInterpolation.lean)
+- [ZetaRieszLargeSmoothClass](../../RiemannGaussian/ZetaRieszLargeSmoothClass.lean)
+- [ZetaRieszLargeSmoothDeletion](../../RiemannGaussian/ZetaRieszLargeSmoothDeletion.lean)
 - [ZetaRieszNegativeProfile](../../RiemannGaussian/ZetaRieszNegativeProfile.lean)
 - [ZetaRieszPhysicalPrefixDeletion](../../RiemannGaussian/ZetaRieszPhysicalPrefixDeletion.lean)
 - [ZetaRieszPrimeClasses](../../RiemannGaussian/ZetaRieszPrimeClasses.lean)
@@ -111,6 +114,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszSmoothHead](../../RiemannGaussian/ZetaRieszSmoothHead.lean)
 - [ZetaRieszSmoothPrimePrefix](../../RiemannGaussian/ZetaRieszSmoothPrimePrefix.lean)
 - [ZetaRieszSmoothPrimeProduct](../../RiemannGaussian/ZetaRieszSmoothPrimeProduct.lean)
+- [ZetaRieszSmoothRoughProduct](../../RiemannGaussian/ZetaRieszSmoothRoughProduct.lean)
 - [ZetaRoughCoprimeFactorDecay](../../RiemannGaussian/ZetaRoughCoprimeFactorDecay.lean)
 - [ZetaRoughDivisorCorrelation](../../RiemannGaussian/ZetaRoughDivisorCorrelation.lean)
 - [ZetaRoughDivisorIncidence](../../RiemannGaussian/ZetaRoughDivisorIncidence.lean)

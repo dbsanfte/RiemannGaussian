@@ -665,6 +665,55 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem tendsto_actual_band_sub_compositeResidual' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'large-smooth-factor-deletion':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in (
+                            '2*u^2<1', 'any number of rough primes',
+                            'every order-dependent subband mask', '2^omega(a)/a',
+                            'factorization existence is proved',
+                            'fallback preserves the previous remainder', 'RH remain open'))
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        deletion = next(n for n in roots if n['id'].endswith('.tendsto_actual_band_sub_largeSmoothResidual'))
+                        statement = ' '.join(deletion['statement'].split())
+                        assert all(t in statement for t in (
+                            '1 / 2 < u', '2 * u ^ 2 < 1', 'zetaArithmeticBand',
+                            'largeSmoothResidualResponse', 'SquarefreeVaughanLogSource.length', 'Tendsto'))
+                        assert 'NontrivialZetaZero' not in statement
+                        actual = next(n for n in roots if n['id'].endswith('.tendsto_actual_largeSmoothFactorBand'))
+                        assert all(t in ' '.join(actual['statement'].split()) for t in (
+                            '(keep : ℕ → ℕ → Prop)', '0 < u', '2 * u ^ 2 < 1',
+                            'largeSmoothFactorBand (keep N)', 'coefficient', 'Tendsto'))
+                        support = next(n for n in roots if n['id'].endswith('.surviving_support_with_small_smooth_factor'))
+                        assert all(t in ' '.join(support['statement'].split()) for t in (
+                            'coefficient L n ≠ 0', '∃ a b', 'Squarefree a', 'Squarefree b',
+                            'a.primeFactors', 'b.primeFactors', 'p ≤ N ^ 2', 'N ^ 2 < p',
+                            'n = b * a', 'a <', 'linearDampedCutoff u N + 2) ^ 2'))
+                        adaptive = next(n for n in roots if n['id'].endswith('.tendsto_actual_band_sub_adaptiveSmooth'))
+                        assert all(t in ' '.join(adaptive['statement'].split()) for t in (
+                            '1 / 2 < u', 'u < 1', 'adaptiveSmoothResponse', 'Tendsto'))
+                        bridge = next(n for n in roots if n['id'].endswith('.tendsto_quadraticResidual_sub_adaptiveSmooth'))
+                        assert all(t in bridge['statement'] for t in (
+                            'windowResidualResponse', 'adaptiveSmoothResponse', 'Tendsto'))
+                        assert 'NontrivialZetaZero' not in bridge['statement']
+                        closure = next(n for n in roots if n['id'].endswith('.rh_of_adaptiveSmooth_cofinal_floors'))
+                        assert all(t in closure['statement'] for t in (
+                            '∀ (rho', '∃ c < 1', '∃ᶠ', 'normalizedAdaptiveSmooth', '→', 'RiemannHypothesis'))
+                        assert deletion['source']['path'].endswith('ZetaRieszLargeSmoothDeletion.lean')
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', deletion['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == deletion['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{deletion['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{deletion['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem tendsto_actual_band_sub_largeSmoothResidual' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -685,7 +734,8 @@ def run(output, url=None, refresh_preview=False):
                                'growingPrimeHeadDeletionAndCofinalSource': True,
                                'quadraticPrimeDensityDeletionAtEveryOrder': True,
                                'actualSmoothRateAndJointPrimeCofactorDeletion': True,
-                               'scalarTiltAuditDistinguishedFromArithmeticBound': True})
+                               'scalarTiltAuditDistinguishedFromArithmeticBound': True,
+                               'arbitraryRoughPrimeCountAndCompleteSmoothFactorDeletion': True})
                 page.close()
             browser.close()
     finally:
