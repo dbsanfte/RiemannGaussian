@@ -2796,6 +2796,43 @@ floor and other global source ranges remain open; no RH or zero-free
 enlargement follows. See `docs/zeta-riesz-wider-matched.md` and endpoint
 `wider-matched`; keep the default whole-carrier endpoint and top-ten lists.
 
+`ZetaRieszCompletionProduct` and `ZetaRieszReflectedCompletion` now pay
+BOTH reflected completion corrections at their full product scale.
+The entire selected wing error, including source prefactor and order
+count, is at most8exp(2)Z1025^2(N+1)^4exp(-5N/4096) and tends to zero,
+uniformly in every moving height on0<u<exp(-2/3), independently of zeros.
+Keep the actual disjoint lower/reflected selections and every derivative
+successor. The central complement is a subset of WiderMatched.S; its
+source-conditioned budget remains[-m^2/8,0]. Do not double-count overlapping
+wider and wing blocks. `ZetaRieszLowHeadPrefix` independently bounds ANY
+derivative-weighted selected small-prime order sum by600sqrt(N+1)Z1025.
+`ZetaRieszLowHeadCorrection` includes the complete complementary leg and
+pays both actual low-head corrections. Its final decay theorem uses the
+explicit exposed-zero phase bound; do not describe that whole product
+statement as independent of hypothetical zeros.
+`ZetaRieszCompletedCarrier` combines the complete low and reflected heads
+without overlap. Their exact order set forN>=256 is
+range(floor((15N+64)/32)+1), with2k<=N+1. The threshold is structural only.
+`HarmonicProductContinuity` imports only Mathlib and proves centered
+harmonic-product decay for every convergent complex array and EVERY moving
+lower-half order selection. It preserves the reference complex square and
+pays both injective marginals by one Cesaro average. This is a theorem for
+that harmonic kernel, not a classification of all coefficient families.
+`ZetaRieszCompleteHeadHarmonic` then proves
+u^(N+1)H_N+m^2h_N->0, where
+h_N=(N+1)/(uL_N)*sum_completeHeadOrders(1/(N+1-k)) is explicit and
+nonnegative. Its two-sided real estimate retains the negative leading cost
+and unrestricted multiplicity; the head itself is NOT asserted to vanish.
+The terminal source is exactly
+u^(N+1)(T3+T>=4+taperedWing+centralBlock)-m^2h_N -> -m.
+Every completion error is paid in this chain. The actual joint signed
+bound for T3+T>=4+taperedWing remains open, together with the other global
+source ranges. Keep all old masks, the floor-defined length, source and
+exposure hypotheses, and the central and harmonic costs. No RH, zero-free
+enlargement or historical novelty follows. See
+`docs/zeta-riesz-complete-head-harmonic.md` and supporting endpoint
+`complete-head-harmonic`; preserve the default whole-carrier endpoint.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

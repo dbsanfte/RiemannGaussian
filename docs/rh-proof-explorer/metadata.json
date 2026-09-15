@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 35,
-      "id": "wider-matched",
+      "sequence": 36,
+      "id": "complete-head-harmonic",
       "kind": "theorem",
-      "title": "A larger signed block keeps its budget; the endpoint cancellation stays explicit.",
-      "body": "Lean bounds a strictly larger actual head/pair block between -m_rho^2/8 and -m_rho^2/1536 under the exposed-zero hypotheses on the existing annular interval. Independent prime completion reaches 17N/32, with a proved analytic tilt optimum. Retaining the reflected head subtraction also gives a vanishing endpoint weight and an inverse-length improvement in its norm envelope.",
-      "next": "Next: pay both reflected completion errors at product scale, then control the tapered term with the negative complete head product and actual three-prime and higher-prime sums. The whole signed floor and other global source ranges remain open.",
+      "title": "Completion errors vanish; the complete prime head has an explicit harmonic cost.",
+      "body": "Lean pays both reflected completion products, their full order sums and both low-head completion corrections. The entire negative complete head is an explicit harmonic weight times minus the full multiplicity square, with vanishing error. The exact central complement keeps its signed budget. The exposed-zero and annular hypotheses remain explicit throughout the source chain.",
+      "next": "Next: bound the joint signed contribution of the tapered wing, the actual three-prime sum and the four-or-more-prime sum against the harmonic head cost and central-block budget. The whole contradiction and other global source ranges remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszWiderPersistentBoundTheorem"
+        "rieszCompleteHeadBoundTheorem"
       ],
-      "documentation": "docs/zeta-riesz-wider-matched.md"
+      "documentation": "docs/zeta-riesz-complete-head-harmonic.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1530,6 +1530,65 @@
         "rieszWiderMatchedScope"
       ],
       "documentation": "docs/zeta-riesz-wider-matched.md"
+    },
+    {
+      "id": "complete-head-harmonic",
+      "label": "Complete head · explicit harmonic cost and three unpaid components",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompletionProductTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszReflectedErrorBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszReflectedErrorDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralSubsetBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLowPrefixSumTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLowHeadCompletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompleteHeadOrderTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompletedCarrierSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "harmonicProductContinuityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompleteHeadCenteredTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompleteHeadBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszThreeHigherTaperSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCompleteHeadHarmonicScope"
+      ],
+      "documentation": "docs/zeta-riesz-complete-head-harmonic.md"
     }
   ],
   "scopes": {
@@ -3814,6 +3873,90 @@
       "summary": "For q>0, sigma>1 and a=q+sigma-3/2>0, the actual tapered moment has norm at most q^-k*exp(aL)/(aL)*Zsigma, uniformly in height. The exponential factor and completion-error products remain unpaid; no zero hypothesis is used.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-wider-matched.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompletionProduct.eventually_norm_complete_completion_product": {
+      "label": "Pay the complete product error",
+      "summary": "Both literal omitted prime ranges are paid after multiplication by the genuinely complete complementary moment, uniformly in height and without a zero premise.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-complete-head-harmonic.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszReflectedCompletion.eventually_norm_wingError": {
+      "label": "Sum the entire reflected error",
+      "summary": "The entire original wing correction is bounded by 8exp(2)Z1025^2(N+1)^4exp(-5N/4096), including the order count and source prefactor.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-complete-head-harmonic.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszReflectedCompletion.tendsto_wingError": {
+      "label": "Independent reflected error decay",
+      "summary": "The complete reflected error tends to zero for every moving height on 0<u<exp(-2/3), independently of any hypothetical zero.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-complete-head-harmonic.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszReflectedCarrier.eventually_centralBlock_re_bounds": {
+      "label": "Bound the disjoint central complement",
+      "summary": "The exact disjoint central complement is a subset of the wider matched block and has source-conditioned real budget[-m^2/8,0].",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-complete-head-harmonic.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLowHeadPrefix.sum_norm_weighted_smallPrimeMoment": {
+      "label": "Pay all derivative-weighted small-prime orders",
+      "summary": "Every finite selection of derivative-weighted actual small-prime orders costs at most600sqrt(N+1)Z1025, uniformly in height.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-complete-head-harmonic.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLowHeadCorrection.tendsto_finite_headArray_sub_complete_exposed": {
+      "label": "Complete every moving low head",
+      "summary": "Both low-head completion corrections vanish for every eligible moving order set, with the full complementary leg paid using explicit exposed-zero premises.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-complete-head-harmonic.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompletedCarrier.completeHeadOrders_eq_range": {
+      "label": "Identify the exact complete-head interval",
+      "summary": "For N>=256, the low and reflected complete-head selections form exactly range(floor((15N+64)/32)+1). This threshold is structural, not a phase threshold.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-complete-head-harmonic.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompletedCarrier.tendsto_completedCarrier_exposed": {
+      "label": "Preserve the full completed carrier source",
+      "summary": "The whole carrier keeps the full -m source after all selected completion errors are paid; the tapered, complete-head, central and composite-prime components remain present.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-complete-head-harmonic.md",
+      "overview": true
+    },
+    "RiemannGaussian.HarmonicProductContinuity.tendsto_harmonic_product_error": {
+      "label": "Center all reflected harmonic selections",
+      "summary": "A Mathlib-only theorem centers the reference complex square and uses a shared Cesaro average for every moving lower-half order selection of this harmonic kernel.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-complete-head-harmonic.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompleteHeadHarmonic.tendsto_completeHead_centered": {
+      "label": "Remove the complete head’s arithmetic error",
+      "summary": "The actual entire negative complete head equals -m^2 h_N with vanishing complex error. Its explicit harmonic cost remains and multiplicity is unrestricted.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-complete-head-harmonic.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompleteHeadHarmonic.eventually_completeHead_re_bounds": {
+      "label": "Bound the full head by its harmonic cost",
+      "summary": "For every positive epsilon, the real normalized head lies between -m^2 h_N-epsilon and -m^2 h_N+epsilon, under the original exposed-zero and annular hypotheses.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-complete-head-harmonic.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompleteHeadHarmonic.tendsto_three_higher_taper_budget": {
+      "label": "Retain the exact three-component source budget",
+      "summary": "The exact terminal source retains actual T3, T>=4, taperedWing, the bounded central block and explicit negative harmonic cost. Their sufficient joint signed floor is still open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-complete-head-harmonic.md",
       "overview": true
     }
   }

@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**A larger signed block keeps its budget; the endpoint cancellation stays explicit.** Lean bounds a strictly larger actual head/pair block between -m_rho^2/8 and -m_rho^2/1536 under the exposed-zero hypotheses on the existing annular interval. Independent prime completion reaches 17N/32, with a proved analytic tilt optimum. Retaining the reflected head subtraction also gives a vanishing endpoint weight and an inverse-length improvement in its norm envelope.
-Next: pay both reflected completion errors at product scale, then control the tapered term with the negative complete head product and actual three-prime and higher-prime sums. The whole signed floor and other global source ranges remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszWiderMatched.lean#L484)
-· [Proof details](docs/zeta-riesz-wider-matched.md).
+**Completion errors vanish; the complete prime head has an explicit harmonic cost.** Lean pays both reflected completion products, their full order sums and both low-head completion corrections. The entire negative complete head is an explicit harmonic weight times minus the full multiplicity square, with vanishing error. The exact central complement keeps its signed budget. The exposed-zero and annular hypotheses remain explicit throughout the source chain.
+Next: bound the joint signed contribution of the tapered wing, the actual three-prime sum and the four-or-more-prime sum against the harmonic head cost and central-block budget. The whole contradiction and other global source ranges remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszCompleteHeadHarmonic.lean#L129)
+· [Proof details](docs/zeta-riesz-complete-head-harmonic.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

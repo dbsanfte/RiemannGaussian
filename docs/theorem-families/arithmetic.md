@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**216 modules.** Source links open the definitions, hypotheses and proofs.
+**224 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -16,6 +16,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [FinitePrimeSquareOverlap](../../RiemannGaussian/FinitePrimeSquareOverlap.lean)
 - [FinitePrimeSquareSieve](../../RiemannGaussian/FinitePrimeSquareSieve.lean)
 - [FinitePrimeSquareTransform](../../RiemannGaussian/FinitePrimeSquareTransform.lean)
+- [HarmonicProductContinuity](../../RiemannGaussian/HarmonicProductContinuity.lean)
 - [MoebiusCubicRateAudit](../../RiemannGaussian/MoebiusCubicRateAudit.lean)
 - [MoebiusDividedCutoffBlocks](../../RiemannGaussian/MoebiusDividedCutoffBlocks.lean)
 - [MoebiusExponentialContourBound](../../RiemannGaussian/MoebiusExponentialContourBound.lean)
@@ -81,7 +82,10 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszCentralPrimeLayers](../../RiemannGaussian/ZetaRieszCentralPrimeLayers.lean)
 - [ZetaRieszCentralWindow](../../RiemannGaussian/ZetaRieszCentralWindow.lean)
 - [ZetaRieszCofactorTiltRate](../../RiemannGaussian/ZetaRieszCofactorTiltRate.lean)
+- [ZetaRieszCompleteHeadHarmonic](../../RiemannGaussian/ZetaRieszCompleteHeadHarmonic.lean)
+- [ZetaRieszCompletedCarrier](../../RiemannGaussian/ZetaRieszCompletedCarrier.lean)
 - [ZetaRieszCompletedCofactor](../../RiemannGaussian/ZetaRieszCompletedCofactor.lean)
+- [ZetaRieszCompletionProduct](../../RiemannGaussian/ZetaRieszCompletionProduct.lean)
 - [ZetaRieszCompositeBoundaryWindow](../../RiemannGaussian/ZetaRieszCompositeBoundaryWindow.lean)
 - [ZetaRieszCompositeDeletion](../../RiemannGaussian/ZetaRieszCompositeDeletion.lean)
 - [ZetaRieszCompositeProduct](../../RiemannGaussian/ZetaRieszCompositeProduct.lean)
@@ -126,6 +130,8 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszInterpolation](../../RiemannGaussian/ZetaRieszInterpolation.lean)
 - [ZetaRieszLargeSmoothClass](../../RiemannGaussian/ZetaRieszLargeSmoothClass.lean)
 - [ZetaRieszLargeSmoothDeletion](../../RiemannGaussian/ZetaRieszLargeSmoothDeletion.lean)
+- [ZetaRieszLowHeadCorrection](../../RiemannGaussian/ZetaRieszLowHeadCorrection.lean)
+- [ZetaRieszLowHeadPrefix](../../RiemannGaussian/ZetaRieszLowHeadPrefix.lean)
 - [ZetaRieszLowerDegreeBounds](../../RiemannGaussian/ZetaRieszLowerDegreeBounds.lean)
 - [ZetaRieszLowerDegreeDeletion](../../RiemannGaussian/ZetaRieszLowerDegreeDeletion.lean)
 - [ZetaRieszMatchedMiddle](../../RiemannGaussian/ZetaRieszMatchedMiddle.lean)
@@ -149,6 +155,8 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszPrimePairConvolution](../../RiemannGaussian/ZetaRieszPrimePairConvolution.lean)
 - [ZetaRieszProductCeiling](../../RiemannGaussian/ZetaRieszProductCeiling.lean)
 - [ZetaRieszReducedCofactorSource](../../RiemannGaussian/ZetaRieszReducedCofactorSource.lean)
+- [ZetaRieszReflectedCarrier](../../RiemannGaussian/ZetaRieszReflectedCarrier.lean)
+- [ZetaRieszReflectedCompletion](../../RiemannGaussian/ZetaRieszReflectedCompletion.lean)
 - [ZetaRieszRemainingPrefix](../../RiemannGaussian/ZetaRieszRemainingPrefix.lean)
 - [ZetaRieszSemiprimeBand](../../RiemannGaussian/ZetaRieszSemiprimeBand.lean)
 - [ZetaRieszSemiprimeCompletion](../../RiemannGaussian/ZetaRieszSemiprimeCompletion.lean)

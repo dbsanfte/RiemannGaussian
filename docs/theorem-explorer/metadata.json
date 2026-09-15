@@ -2449,7 +2449,15 @@
     "ZetaRieszMatchedMiddle": "arithmetic",
     "ZetaRieszPrimeCompletionRate": "arithmetic",
     "ZetaRieszWiderMatched": "arithmetic",
-    "ZetaRieszEndpointTaper": "arithmetic"
+    "ZetaRieszEndpointTaper": "arithmetic",
+    "ZetaRieszCompletionProduct": "arithmetic",
+    "ZetaRieszReflectedCompletion": "arithmetic",
+    "ZetaRieszReflectedCarrier": "arithmetic",
+    "ZetaRieszLowHeadPrefix": "arithmetic",
+    "ZetaRieszLowHeadCorrection": "arithmetic",
+    "ZetaRieszCompletedCarrier": "arithmetic",
+    "HarmonicProductContinuity": "arithmetic",
+    "ZetaRieszCompleteHeadHarmonic": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
