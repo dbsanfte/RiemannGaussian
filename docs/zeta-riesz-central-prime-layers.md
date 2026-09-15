@@ -6,6 +6,10 @@ Every surviving three-prime coefficient has a proved nonnegative sign
 and two explicit amplitude bounds. The joint source-scale lower floor
 remains open; these results do not enlarge the proved zero-free region.
 
+The subsequent [head-order bound](zeta-riesz-head-orders.md) independently
+pays the high factorial orders of this complete head, while retaining its
+remaining complex cofactor moments and all finite components together.
+
 Keep the physical quantities and original filter from the
 [prefix and central-window bounds](zeta-riesz-prefix-central-window.md):
 

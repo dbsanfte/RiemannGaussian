@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 31,
-      "id": "central-prime-layers",
+      "sequence": 32,
+      "id": "head-orders",
       "kind": "theorem",
-      "title": "The surviving three-prime coefficients now have a proved sign and bound.",
-      "body": "Lean proves that every actual three-prime coefficient in the remaining annulus is nonnegative and at most half log(n), with a sharper bound vanishing at its reflection midpoint. The central transport keeps the complete prime head and exposes four exact components. The three-prime lower bound pays only negative phases; the whole source-scale floor remains open.",
-      "next": "Next: control the coupled complete head, log-weighted pair correction, negative phases of the three-prime response and the actual four-or-more-prime coefficients. Keep their correlations until a cofinal floor strictly above -1 is proved.",
+      "title": "A definite part of the completed prime head now decays independently.",
+      "body": "Lean bounds all high cofactor orders 16k>=15(N+j+1) by an explicit polynomial-times-geometric allowance, for every fixed filter and uniformly in height on 1/2<=u<exp(-2/3). The exact convolution keeps the remaining cofactor phases coupled. The whole signed floor remains open.",
+      "next": "Next: use correlations between the remaining head orders, central prime pairs, three-prime phases and higher-prime response to prove a joint cofinal real floor above -1. The paid high orders and the untouched global fallback ranges remain distinct.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszCentralThreeBoundsTheorem"
+        "rieszHeadHighBoundTheorem"
       ],
-      "documentation": "docs/zeta-riesz-central-prime-layers.md"
+      "documentation": "docs/zeta-riesz-head-orders.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1322,6 +1322,49 @@
         "rieszCentralPrimeLayersScope"
       ],
       "documentation": "docs/zeta-riesz-central-prime-layers.md"
+    },
+    {
+      "id": "head-orders",
+      "label": "Complete prime head · independent high-order decay",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorConvolutionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHeadPhysicalLengthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHeadHighConvolutionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHeadHighBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHeadHighDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHeadRemainingIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHeadOrderTransportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHeadOrderSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszHeadOrdersScope"
+      ],
+      "documentation": "docs/zeta-riesz-head-orders.md"
     }
   ],
   "scopes": {
@@ -3319,6 +3362,62 @@
       "summary": "A source-normalized independent lower bound uses only max(0,-Re K), with coefficient half log(n), uniformly in height and the fixed filter. The explicit negative-phase cost is still unbounded at the source scale.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-central-prime-layers.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHeadOrders.completedHead_eq_convolution": {
+      "label": "The exact head keeps all cofactor phases coupled",
+      "summary": "The finite complex cofactor moment remains inside each convolution order. The product logarithm shifts M=N+j+1 exactly, with every fixed filter coefficient and genuine complete prime summability.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-head-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHeadOrders.length_le_two_log_two": {
+      "label": "The actual damped floor gives a sharper physical length",
+      "summary": "For u>=1/2 and N>=2, the original cutoff satisfies D_N+2<=2^N and L_N<=2N*log(2). This is the high-order estimate threshold, not a threshold for every prior transport.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-head-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHeadOrders.norm_highConvolution_le": {
+      "label": "The complete high-order convolution has an independent geometric bound",
+      "summary": "For all finite cofactor masks below log(a)<=45M/32, orders 16k>=15M have source-normalized bound (M+1)*exp(-7M/3200)*u*T*Z. The finite cofactor moment and complete prime factor retain their phases until their independent envelopes pay this component.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-head-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHeadOrders.norm_highHead_le": {
+      "label": "A definite part of the actual completed head is now arithmetically bounded",
+      "summary": "For every fixed P, uniformly in y, 1/2<=u<exp(-2/3) and N>=2, the exact high head is bounded by highHeadCost(P,u)*(N+1)^2*exp(-7N/3200). No zero, exposure or cancellation hypothesis is used.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-head-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHeadOrders.tendsto_highHead": {
+      "label": "The paid high head tends to zero independently",
+      "summary": "The explicit polynomial-times-geometric allowance tends to zero on the annular source interval. All original filter shifts, physical floors and complete prime orders survive.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-head-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHeadOrders.completedHead_eq_remaining_add_high": {
+      "label": "Every head order is retained in an exact signed partition",
+      "summary": "The remaining 16k<15(N+j+1) orders and the independently paid high orders add to the literal completed head. Neither prime variable is truncated and the finite cofactor set is not completed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-head-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHeadOrders.norm_centralJoint_sub_orderReduced_le": {
+      "label": "The whole signed carrier has the same independent transport allowance",
+      "summary": "The difference between the actual central joint carrier and its order-reduced representation is precisely the high head, bounded independently from N=2. Every original finite arithmetic component and support mask remains.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-head-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHeadOrders.tendsto_orderReducedJoint_exposed": {
+      "label": "The remaining joint carrier retains the whole negative multiplicity source",
+      "summary": "At an exposed zero in the annular parameter interval, the lower and middle head orders and all finite terms retain the complete negative multiplicity source. Their independent joint floor remains open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-head-orders.md",
       "overview": true
     }
   }

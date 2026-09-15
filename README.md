@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**The surviving three-prime coefficients now have a proved sign and bound.** Lean proves that every actual three-prime coefficient in the remaining annulus is nonnegative and at most half log(n), with a sharper bound vanishing at its reflection midpoint. The central transport keeps the complete prime head and exposes four exact components. The three-prime lower bound pays only negative phases; the whole source-scale floor remains open.
-Next: control the coupled complete head, log-weighted pair correction, negative phases of the three-prime response and the actual four-or-more-prime coefficients. Keep their correlations until a cofinal floor strictly above -1 is proved.
-[Current checked endpoint](RiemannGaussian/ZetaRieszCentralPrimeLayers.lean#L58)
-· [Proof details](docs/zeta-riesz-central-prime-layers.md).
+**A definite part of the completed prime head now decays independently.** Lean bounds all high cofactor orders 16k>=15(N+j+1) by an explicit polynomial-times-geometric allowance, for every fixed filter and uniformly in height on 1/2<=u<exp(-2/3). The exact convolution keeps the remaining cofactor phases coupled. The whole signed floor remains open.
+Next: use correlations between the remaining head orders, central prime pairs, three-prime phases and higher-prime response to prove a joint cofinal real floor above -1. The paid high orders and the untouched global fallback ranges remain distinct.
+[Current checked endpoint](RiemannGaussian/ZetaRieszHeadOrders.lean#L430)
+· [Proof details](docs/zeta-riesz-head-orders.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

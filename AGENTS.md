@@ -2678,6 +2678,31 @@ or historical novelty is claimed. See `docs/zeta-riesz-central-prime-layers.md`
 and supporting endpoint `central-prime-layers`; preserve the default
 whole-carrier endpoint and both ten-entry README lists.
 
+`ZetaRieszHeadOrders.completedHead_eq_convolution` now retains the finite
+complex cofactor moments G_A,k inside the complete head convolution.
+For M=N+j+1, it is exactly -sum_j P_j*M/L_N*sum_k G_A,k*B_(M-k),
+with genuine prime summability including order zero and every filter shift.
+The actual damping denominator gives L_N<=2N*log(2)<=45N/32 for
+u>=1/2 and N>=2. `norm_highHead_le` independently bounds ALL orders
+16k>=15M by highHeadCost(P,u)*(N+1)^2*exp(-7N/3200), for every fixed P,
+uniformly y, on 1/2<=u<exp(-2/3). No zero or cancellation premise is used.
+The Euler tilt 127/256 pays every complementary complete prime order;
+the finite tilted mass includes the harmless totalized zero index.
+`tendsto_highHead` proves that this exact component decays. Order two
+is ONLY this estimate's threshold, not an earlier transport threshold.
+`completedHead_eq_remaining_add_high` keeps the remaining 16k<15M orders
+exactly; it does not truncate either prime variable or complete the
+finite cofactor set. `norm_centralJoint_sub_orderReduced_le` gives the
+whole-carrier transport allowance, and `tendsto_orderReducedJoint_exposed`
+retains the entire negative multiplicity source on the annular interval.
+The remaining head orders, central pair correction, three-prime phases,
+and >=4-prime response still need a JOINT cofinal real floor above -1.
+The independently paid high head is not a bound for those components.
+Do not extend this range to all right-half zeros or claim new zero-free
+regions, RH, or historical novelty. See `docs/zeta-riesz-head-orders.md`
+and supporting endpoint `head-orders`; preserve the default whole-carrier
+endpoint and both ten-entry README lists.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

@@ -966,6 +966,47 @@ def run(output, url=None, refresh_preview=False):
                                 assert 'theorem ' + theorem['id'].rsplit('.', 1)[-1] in source_page.locator('.source-line:target').inner_text()
                                 source_page.close()
                             page.locator('#close-details').click()
+                    if endpoint['id'] == 'head-orders':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in (
+                            '16k>=15(N+j+1)', 'exp(-7N/3200)',
+                            'No zero, exposure or cancellation premise',
+                            'Neither prime variable is truncated',
+                            'whole signed floor remains open'))
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        bound = next(n for n in roots if n['id'].endswith('.norm_highHead_le'))
+                        statement = ' '.join(bound['statement'].split())
+                        assert all(t in statement for t in (
+                            '1 / 2 ≤ u', 'u < Real.exp (-(2 / 3))', '2 ≤ N',
+                            'highHead', 'highHeadCost', 'highRate'))
+                        assert 'NontrivialZetaZero' not in statement
+                        assert 'hexposed' not in statement
+                        transport = next(n for n in roots if n['id'].endswith('.norm_centralJoint_sub_orderReduced_le'))
+                        assert all(t in transport['statement'] for t in (
+                            'centralJoint', 'orderReducedJoint', 'highHeadCost'))
+                        assert 'NontrivialZetaZero' not in transport['statement']
+                        source = next(n for n in roots if n['id'].endswith('.tendsto_orderReducedJoint_exposed'))
+                        assert all(t in source['statement'] for t in (
+                            'NontrivialZetaZero', 'orderReducedJoint', 'analyticZetaZeroMultiplicity'))
+                        for theorem in (bound, source):
+                            selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', theorem['id'])
+                            node = page.locator(f'[data-node="{selected}"]')
+                            node.hover()
+                            assert page.locator('#tooltip').is_visible()
+                            node.click()
+                            assert page.locator('#details pre').inner_text().strip() == theorem['statement'].strip()
+                            link = page.locator('#details .source-button').get_attribute('href')
+                            assert link.endswith(f"#L{theorem['source']['line']}")
+                            if published:
+                                assert f"/blob/{revision}/{theorem['source']['path']}" in link
+                            else:
+                                with page.expect_popup() as opened:
+                                    page.locator('#details .source-button').click()
+                                source_page = opened.value
+                                source_page.wait_for_selector('.source-line:target')
+                                assert 'theorem ' + theorem['id'].rsplit('.', 1)[-1] in source_page.locator('.source-line:target').inner_text()
+                                source_page.close()
+                            page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
