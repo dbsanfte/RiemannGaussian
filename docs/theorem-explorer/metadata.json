@@ -2446,7 +2446,10 @@
     "ZetaRieszPairOrders": "arithmetic",
     "ZetaRieszPrimeCompletion": "arithmetic",
     "ZetaRieszPrimeCompletionPhase": "arithmetic",
-    "ZetaRieszMatchedMiddle": "arithmetic"
+    "ZetaRieszMatchedMiddle": "arithmetic",
+    "ZetaRieszPrimeCompletionRate": "arithmetic",
+    "ZetaRieszWiderMatched": "arithmetic",
+    "ZetaRieszEndpointTaper": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

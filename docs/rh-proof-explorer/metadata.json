@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 34,
-      "id": "matched-middle",
+      "sequence": 35,
+      "id": "wider-matched",
       "kind": "theorem",
-      "title": "An actual middle head/pair block now has a concrete signed budget.",
-      "body": "Lean bounds the normalized real part of a nonempty matched block between -m_rho^2/8 and zero, under the exposed-zero hypotheses on the annular interval. Independent geometric prime-completion errors make its shared phases accessible. The exact complementary head orders, pair orders and higher-prime terms remain explicit.",
-      "next": "Next: bound the complementary signed carrier while retaining the matched block and its full multiplicity cost. The new bound uses the exposed-zero hypotheses and does not supply a subunit whole-carrier floor; other global source ranges remain open.",
+      "title": "A larger signed block keeps its budget; the endpoint cancellation stays explicit.",
+      "body": "Lean bounds a strictly larger actual head/pair block between -m_rho^2/8 and -m_rho^2/1536 under the exposed-zero hypotheses on the existing annular interval. Independent prime completion reaches 17N/32, with a proved analytic tilt optimum. Retaining the reflected head subtraction also gives a vanishing endpoint weight and an inverse-length improvement in its norm envelope.",
+      "next": "Next: pay both reflected completion errors at product scale, then control the tapered term with the negative complete head product and actual three-prime and higher-prime sums. The whole signed floor and other global source ranges remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszMatchedBlockBoundTheorem"
+        "rieszWiderPersistentBoundTheorem"
       ],
-      "documentation": "docs/zeta-riesz-matched-middle.md"
+      "documentation": "docs/zeta-riesz-wider-matched.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1467,6 +1467,69 @@
         "rieszMatchedMiddleScope"
       ],
       "documentation": "docs/zeta-riesz-matched-middle.md"
+    },
+    {
+      "id": "wider-matched",
+      "label": "Wider matched block · same cost and endpoint cancellation",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompletionOptimalTiltTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompletionUniqueTiltTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWiderPrimeCompletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWiderFinitePhaseTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWiderInclusionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWiderStrictInclusionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWiderPersistentBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWiderNondecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWiderSourceGuardTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWiderComplementTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWiderSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEndpointTaperIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEndpointTaperBoundTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszWiderMatchedScope"
+      ],
+      "documentation": "docs/zeta-riesz-wider-matched.md"
     }
   ],
   "scopes": {
@@ -3660,6 +3723,97 @@
       "summary": "Only their complete sum is asserted to retain the full negative multiplicity limit. The matched block is not silently discarded, and no separate source limit for the unmatched part is assumed.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-matched-middle.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCompletionRate.completionExponent_ideal_le": {
+      "label": "Analytic minimizing tilt for the completion exponent",
+      "summary": "For positive u, theta and ell, q=theta/ell minimizes the exponent over every positive exponential tilt. The actual completion theorem retains separate admissibility conditions.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-wider-matched.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCompletionRate.completionExponent_ideal_lt": {
+      "label": "Every different positive tilt has larger exponent",
+      "summary": "The exact excess is theta*(q*ell/theta-1-log(q*ell/theta)). This optimizes this estimate, not all arithmetic weight families.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-wider-matched.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCompletionRate.eventually_norm_wider_completion": {
+      "label": "Independent completion reaches seventeen thirty-seconds",
+      "summary": "For 1/2<=u<exp(-2/3), N<=3k and32k<=17N, the actual finite-complete error is at most exp(-11N/30720)*(Z1025+Z8193), uniformly in height. Both omitted prime ranges and genuine sums are paid.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-wider-matched.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCompletionRate.tendsto_wider_weighted_finite": {
+      "label": "The wider finite array inherits the exposed phase",
+      "summary": "Every eligible moving derivative-weighted finite moment tends to minus the full multiplicity after independent completion. Zero and exposure premises remain explicit.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-wider-matched.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWiderMatched.old_matchedOrders_subset": {
+      "label": "Every old matched order remains in the larger block",
+      "summary": "Exact inclusion retains both endpoints and the successor condition. No previously controlled order is removed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-wider-matched.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWiderMatched.wider_order_not_old": {
+      "label": "A concrete new order proves strict enlargement",
+      "summary": "For N>=256, floor(17N/32)-1 lies in the new block and is excluded by the old successor cut. This is an order-set enlargement, not a percentage of arithmetic mass.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-wider-matched.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWiderMatched.eventually_matchedBlock_persistent_bounds": {
+      "label": "The larger block keeps the same cost and stays negative",
+      "summary": "Under the exposed-zero and annular hypotheses, eventually -m^2/8<=Re(u^(N+1)*matchedBlock)<=-m^2/1536. Multiplicity is unrestricted; the cost need not be subunit.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-wider-matched.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWiderMatched.not_tendsto_matchedBlock_zero": {
+      "label": "The matched block cannot be a vanishing error",
+      "summary": "The persistence bound, under the same hypothetical-zero premises, rules out convergence of the normalized block to zero.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-wider-matched.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWiderMatched.not_tendsto_unmatched_full_source": {
+      "label": "The complement alone cannot retain the whole source",
+      "summary": "Discarding the persistent block changes the source. The unmatched part alone cannot have the full negative-multiplicity limit.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-wider-matched.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWiderMatched.middleJoint_one_eq_unmatched_add_matched": {
+      "label": "Exact complements keep all remaining arithmetic labels",
+      "summary": "Literal set differences retain the other head and pair orders, together with every unpaired three-prime and higher-prime term.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-wider-matched.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWiderMatched.tendsto_unmatched_add_matched_exposed": {
+      "label": "Both retained pieces carry the full exposed source",
+      "summary": "Only unmatchedJoint+matchedBlock is asserted to have the entire -m_rho limit. No persistent contribution is dropped.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-wider-matched.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEndpointTaper.reflected_sharedAtom_eq": {
+      "label": "Reflected orders expose a vanishing endpoint weight",
+      "summary": "The exact identity retains a tapered prime leg, negative complete head product and both low-leg completion errors with their multiplying factors.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-wider-matched.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszEndpointTaper.norm_actual_taperedMoment_le": {
+      "label": "Endpoint cancellation saves one physical length",
+      "summary": "For q>0, sigma>1 and a=q+sigma-3/2>0, the actual tapered moment has norm at most q^-k*exp(aL)/(aL)*Zsigma, uniformly in height. The exponential factor and completion-error products remain unpaid; no zero hypothesis is used.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-wider-matched.md",
       "overview": true
     }
   }

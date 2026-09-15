@@ -1743,3 +1743,6 @@ import RiemannGaussian.ZetaRieszPairOrders
 import RiemannGaussian.ZetaRieszPrimeCompletion
 import RiemannGaussian.ZetaRieszPrimeCompletionPhase
 import RiemannGaussian.ZetaRieszMatchedMiddle
+import RiemannGaussian.ZetaRieszPrimeCompletionRate
+import RiemannGaussian.ZetaRieszWiderMatched
+import RiemannGaussian.ZetaRieszEndpointTaper

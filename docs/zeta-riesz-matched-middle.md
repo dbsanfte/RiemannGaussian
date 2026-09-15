@@ -1,5 +1,9 @@
 # A signed budget for a matched middle prime block
 
+The [larger matched block](zeta-riesz-wider-matched.md) now retains this
+negative budget, with strict enlargement and a proved persistence bound.
+The original block and its complete proof remain available below.
+
 Lean now bounds a nonempty middle part of the **actual prime head and
 pair response together**. At an exposed hypothetical zero
 $\rho=\beta+i\gamma$, with multiplicity $m_\rho$ and

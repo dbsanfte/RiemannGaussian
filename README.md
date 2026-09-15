@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**An actual middle head/pair block now has a concrete signed budget.** Lean bounds the normalized real part of a nonempty matched block between -m_rho^2/8 and zero, under the exposed-zero hypotheses on the annular interval. Independent geometric prime-completion errors make its shared phases accessible. The exact complementary head orders, pair orders and higher-prime terms remain explicit.
-Next: bound the complementary signed carrier while retaining the matched block and its full multiplicity cost. The new bound uses the exposed-zero hypotheses and does not supply a subunit whole-carrier floor; other global source ranges remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszMatchedMiddle.lean#L370)
-· [Proof details](docs/zeta-riesz-matched-middle.md).
+**A larger signed block keeps its budget; the endpoint cancellation stays explicit.** Lean bounds a strictly larger actual head/pair block between -m_rho^2/8 and -m_rho^2/1536 under the exposed-zero hypotheses on the existing annular interval. Independent prime completion reaches 17N/32, with a proved analytic tilt optimum. Retaining the reflected head subtraction also gives a vanishing endpoint weight and an inverse-length improvement in its norm envelope.
+Next: pay both reflected completion errors at product scale, then control the tapered term with the negative complete head product and actual three-prime and higher-prime sums. The whole signed floor and other global source ranges remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszWiderMatched.lean#L484)
+· [Proof details](docs/zeta-riesz-wider-matched.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

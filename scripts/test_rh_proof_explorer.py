@@ -1102,6 +1102,52 @@ def run(output, url=None, refresh_preview=False):
                                 assert 'theorem ' + theorem['id'].rsplit('.', 1)[-1] in source_page.locator('.source-line:target').inner_text()
                                 source_page.close()
                             page.locator('#close-details').click()
+                    if endpoint['id'] == 'wider-matched':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in (
+                            '-m_rho^2/1536', 'explicit zero and exposure premises',
+                            'unrestricted multiplicity', 'ONLY the structural threshold',
+                            'remaining JOINT floor and other global source ranges remain open'))
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        bound = next(n for n in roots if n['id'].endswith('.eventually_matchedBlock_persistent_bounds'))
+                        statement = ' '.join(bound['statement'].split())
+                        assert all(t in statement for t in (
+                            'NontrivialZetaZero', 'tau ≠ rho →',
+                            '‖3 / 2 + Complex.I * ↑(↑rho).im - ↑tau‖',
+                            'Real.exp (-(2 / 3))', '^ 2 / 8', '^ 2 / 1536', 'matchedBlock'))
+                        completion = next(n for n in roots if n['id'].endswith('.eventually_norm_wider_completion'))
+                        statement = ' '.join(completion['statement'].split())
+                        assert all(t in statement for t in ('1 / 2 ≤ u', '32 * k ≤ 17 * N', 'finiteMoment', 'ordinaryPrimeMoment'))
+                        assert 'NontrivialZetaZero' not in statement
+                        identity = next(n for n in roots if n['id'].endswith('.reflected_sharedAtom_eq'))
+                        assert all(t in identity['statement'] for t in ('sharedAtom', 'taperedMoment', 'finiteMoment', 'ordinaryPrimeMoment'))
+                        taper = next(n for n in roots if n['id'].endswith('.norm_actual_taperedMoment_le'))
+                        statement = ' '.join(taper['statement'].split())
+                        assert all(t in statement for t in ('0 < q', '1 < sigma', '0 < q + sigma - 3 / 2', 'taperedMoment'))
+                        assert 'NontrivialZetaZero' not in statement
+                        source = next(n for n in roots if n['id'].endswith('.tendsto_unmatched_add_matched_exposed'))
+                        assert all(t in source['statement'] for t in ('unmatchedJoint', 'matchedBlock', 'analyticZetaZeroMultiplicity'))
+                        assert any(n['id'].endswith('.wider_order_not_old') for n in roots)
+                        assert any(n['id'].endswith('.not_tendsto_unmatched_full_source') for n in roots)
+                        for theorem in (bound, completion, taper):
+                            selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', theorem['id'])
+                            node = page.locator(f'[data-node="{selected}"]')
+                            node.hover()
+                            assert page.locator('#tooltip').is_visible()
+                            node.click()
+                            assert page.locator('#details pre').inner_text().strip() == theorem['statement'].strip()
+                            link = page.locator('#details .source-button').get_attribute('href')
+                            assert link.endswith(f"#L{theorem['source']['line']}")
+                            if published:
+                                assert f"/blob/{revision}/{theorem['source']['path']}" in link
+                            else:
+                                with page.expect_popup() as opened:
+                                    page.locator('#details .source-button').click()
+                                source_page = opened.value
+                                source_page.wait_for_selector('.source-line:target')
+                                assert 'theorem ' + theorem['id'].rsplit('.', 1)[-1] in source_page.locator('.source-line:target').inner_text()
+                                source_page.close()
+                            page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()

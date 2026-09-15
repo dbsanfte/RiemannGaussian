@@ -2767,6 +2767,35 @@ open. See `docs/zeta-riesz-matched-middle.md` and supporting endpoint
 `matched-middle`; preserve the default whole-carrier endpoint and both
 ten-entry README lists. No RH or zero-free enlargement follows.
 
+`ZetaRieszPrimeCompletionRate` now keeps the full completion exponent
+theta*log(u/q)-(3/2-q-sigma)*ell and proves its unique positive-tilt
+minimum at q=theta/ell. This is an optimum for this estimate, not all
+arithmetic weight families; retain every separate admissibility condition.
+Its independent completion range reaches N<=3k and32k<=17N, with error
+exp(-11N/30720)*(Z1025+Z8193), uniformly in height on1/2<=u<exp(-2/3).
+Derivative-weighted errors also vanish for every eligible moving order.
+`ZetaRieszWiderMatched` uses that actual wider range, contains every old
+matched order, and proves strict enlargement by an explicit new order.
+Under the exposed-zero hypotheses, the larger block has the SAME budget
+-m_rho^2/8 and persistent upper bound-m_rho^2/1536. Multiplicity remains
+unrestricted; this cost need not be subunit. Nondecay and source-change
+guards explicitly prohibit dropping the block from the full-m source.
+The actual counts N/32<=card<=N/16 and reciprocal costs in[1/16,5/16]
+hold forN>=256. The head-cost interval[5/9,4/5] also uses the proved
+eventual physical-length lower bound; never label256 as a phase threshold.
+Keep the complete complementary head/pair orders and every T3/T>=4 label.
+`ZetaRieszEndpointTaper.reflected_sharedAtom_eq` retains the reflected
+pair as B_k*T_l-(k+1)/L*B_(k+1)*B_l plus BOTH low-leg completion errors
+with their multiplying factors. The literal T_l has weight1-log(p)/L
+and independent envelope q^-l*exp(aL)/(aL)*Zsigma for a=q+sigma-3/2>0,
+q>0,sigma>1. This inverse-length gain does not itself pay a positive
+exponential rate or either completion-error product. Preserve the
+negative complete head, original factorial shifts and complex prime phases.
+Only unmatchedJoint+matchedBlock retains the source. The remaining JOINT
+floor and other global source ranges remain open; no RH or zero-free
+enlargement follows. See `docs/zeta-riesz-wider-matched.md` and endpoint
+`wider-matched`; keep the default whole-carrier endpoint and top-ten lists.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.
