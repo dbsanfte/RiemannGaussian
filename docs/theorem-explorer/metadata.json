@@ -2472,7 +2472,9 @@
     "TripleRieszProfile": "arithmetic",
     "ZetaRieszPrimeEndpoint": "arithmetic",
     "ZetaRieszFrequencyDecay": "arithmetic",
-    "ZetaRieszPrimeCountFrequency": "arithmetic"
+    "ZetaRieszPrimeCountFrequency": "arithmetic",
+    "ZetaRieszPrimeCountWindow": "arithmetic",
+    "ZetaRieszPrimeCountMass": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

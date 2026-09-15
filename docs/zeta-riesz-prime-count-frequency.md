@@ -13,6 +13,11 @@ The independent endpoint is
 The [supporting explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/?endpoint=prime-count-frequency-decay)
 links its compiled dependencies and axiom audit after publication.
 
+A [stronger continuation](zeta-riesz-whole-prime-count-decay.md) now pays
+the complete many-prime integer class, including its other frequencies,
+and retains separate bounds for enlarged frequency prefixes. The joint
+lower-count contribution and tapered wing remain open.
+
 ## What prime-count information saves
 
 Use the original signed products `Q_n` and `P_n` from the

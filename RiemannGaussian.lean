@@ -1769,3 +1769,5 @@ import RiemannGaussian.TripleRieszProfile
 import RiemannGaussian.ZetaRieszPrimeEndpoint
 import RiemannGaussian.ZetaRieszFrequencyDecay
 import RiemannGaussian.ZetaRieszPrimeCountFrequency
+import RiemannGaussian.ZetaRieszPrimeCountWindow
+import RiemannGaussian.ZetaRieszPrimeCountMass

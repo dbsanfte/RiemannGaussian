@@ -3021,6 +3021,28 @@ joint signed bound, a zero-free theorem from this arithmetic path, and RH
 remain open. Preserve the exact cutoff, count, filter and frequency data;
 see `docs/zeta-riesz-prime-count-frequency.md` and its supporting explorer.
 
+`ZetaRieszPrimeCountMass` now removes the complete k>=K_j integer class,
+including all its frequencies, with K_j=2^(j+3), N_j=8(j+4)K_j. The full
+squarefree mass with all 2^k divisor choices is at most exp(2rM(sigma))/r^K.
+The genuinely summable count mass and factorial tilt give a uniform complete
+arithmetic allowance. Its exp(C K_j) cost is subexponential in N_j and can
+be absorbed for every fixed 0<U<17/32. Actual central-band support conditions
+are discharged; radii, heights and positive lengths may move, and every fixed
+polynomial filter is retained. The exact surviving source is now only the
+full 3<=k<K_j signed integral plus the tapered wing. Their independent joint
+bound remains open; unrestricted multiplicity, exposure and the original
+u<exp(-2/3) source range remain. Do not label either component radius ceiling
+a zero-free region, infer a percentage paid, or claim any fixed-count class
+has vanished. `ZetaRieszPrimeCountWindow` also pays every moving prefix up to
+the square root of the count threshold times the natural frequency window,
+on its exact cofinal subsequence and below33/64. Its two-cutoff source theorem
+combines the earlier overlapping frequency deletions by exact subtraction.
+Retain these independent prefix bounds alongside whole-integer decay. See
+`docs/zeta-riesz-whole-prime-count-decay.md` and supporting explorer endpoint
+`whole-prime-count-decay`. The full signed floor, a new zero-free theorem from
+this arithmetic path, and RH are still open. Standard exponential-moment and
+AM-GM arguments are used without a historical novelty claim.
+
 ## Commit and check-in invariant
 
 The introductory research-agent/model statement belongs directly below the

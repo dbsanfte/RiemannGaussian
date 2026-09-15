@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Prime-count savings pay a larger frequency sector.** Lean proves source-normalized decay on the natural 1/N frequency window for the complete class above an explicit growing prime-count threshold, along moment orders tending to infinity. The k^k saving pays the whole arithmetic cost, uniformly over moving heights and radii in every fixed interval 0<=u<=U<17/32. This controls one more component; no new zero-free region follows.
-Next: control the retained 3<=k<K prime counts, complementary many-prime frequencies and tapered wing jointly, while preserving their signed correlations.
-[Current checked endpoint](RiemannGaussian/ZetaRieszPrimeCountFrequency.lean#L463)
-· [Proof details](docs/zeta-riesz-prime-count-frequency.md).
+**An entire many-prime class now vanishes.** Lean now controls the complete signed integer contribution above the growing prime-count threshold, including all its frequencies. A finite Euler-product count bound absorbs every divisor choice and factorial-filter cost, uniformly over moving heights and radii in each fixed interval 0<=u<=U<17/32. The remaining source is exactly the lower-count signed sum plus the tapered wing. No new zero-free region is proved.
+Next: obtain a joint signed bound for the surviving 3<=k<K_j terms and the tapered wing, using their arithmetic and phase correlations.
+[Current checked endpoint](RiemannGaussian/ZetaRieszPrimeCountMass.lean#L301)
+· [Proof details](docs/zeta-riesz-whole-prime-count-decay.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

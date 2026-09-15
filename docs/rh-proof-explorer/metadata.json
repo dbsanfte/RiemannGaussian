@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 40,
-      "id": "prime-count-frequency-decay",
+      "sequence": 41,
+      "id": "whole-prime-count-decay",
       "kind": "theorem",
-      "title": "Prime-count savings pay a larger frequency sector.",
-      "body": "Lean proves source-normalized decay on the natural 1/N frequency window for the complete class above an explicit growing prime-count threshold, along moment orders tending to infinity. The k^k saving pays the whole arithmetic cost, uniformly over moving heights and radii in every fixed interval 0<=u<=U<17/32. This controls one more component; no new zero-free region follows.",
-      "next": "Next: control the retained 3<=k<K prime counts, complementary many-prime frequencies and tapered wing jointly, while preserving their signed correlations.",
+      "title": "An entire many-prime class now vanishes.",
+      "body": "Lean now controls the complete signed integer contribution above the growing prime-count threshold, including all its frequencies. A finite Euler-product count bound absorbs every divisor choice and factorial-filter cost, uniformly over moving heights and radii in each fixed interval 0<=u<=U<17/32. The remaining source is exactly the lower-count signed sum plus the tapered wing. No new zero-free region is proved.",
+      "next": "Next: obtain a joint signed bound for the surviving 3<=k<K_j terms and the tapered wing, using their arithmetic and phase correlations.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszPrimeCountDecayTheorem"
+        "rieszManyActualDecayTheorem"
       ],
-      "documentation": "docs/zeta-riesz-prime-count-frequency.md"
+      "documentation": "docs/zeta-riesz-whole-prime-count-decay.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1817,6 +1817,61 @@
         "rieszPrimeCountFrequencyScope"
       ],
       "documentation": "docs/zeta-riesz-prime-count-frequency.md"
+    },
+    {
+      "id": "whole-prime-count-decay",
+      "label": "Whole prime-count decay · complete integers and remaining source",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCountEulerMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCountMassTailTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszManyIntegerBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCountCompensatorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszManyIntegerDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszManyActualDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszManyIntegralIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFewWingSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCountWidePrefixBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCountWidePrefixDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCountFrequencyUnionTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszWholePrimeCountScope"
+      ],
+      "documentation": "docs/zeta-riesz-whole-prime-count-decay.md"
     }
   ],
   "scopes": {
@@ -4507,6 +4562,83 @@
       "summary": "The explicit three-piece remainder tends to -m+m^2c(u), with unrestricted multiplicity and the original exposed-zero source range. Its independent joint floor is open.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-prime-count-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountMass.squarefree_count_mass_le_exp": {
+      "label": "A full Euler count moment",
+      "summary": "Every actual finite squarefree selection has generating mass bounded by exp(z M(sigma)), with the full prime-set injection and genuine summability at sigma>1.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-whole-prime-count-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountMass.many_prime_mass_le": {
+      "label": "All divisor choices remain in the count tail",
+      "summary": "For k>=K and r>=1 the complete mass sum of 2^k n^(-sigma) is at most exp(2rM(sigma))/r^K; all selected integers are counted once.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-whole-prime-count-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountMass.norm_normalized_many_sum_le": {
+      "label": "The complete arithmetic response is bounded",
+      "summary": "The full signed integer sum has a uniform exponential-moment allowance retaining the fixed polynomial filter, every divisor choice, positive length and source normalization.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-whole-prime-count-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountMass.eventually_exp_count_le_geometric": {
+      "label": "The Euler cost is subexponential in the order",
+      "summary": "For K_j=2^(j+3), N_j=8(j+4)K_j, every fixed exp(C K_j) cost is eventually absorbed by any s^N_j with s>1.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-whole-prime-count-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountMass.tendsto_normalized_many_sum": {
+      "label": "Every changing many-prime subband decays",
+      "summary": "The full original signed sum over any changing squarefree subband with k>=K_j tends to zero, uniformly in moving heights, positive physical lengths and radii in a fixed interval below17/32.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-whole-prime-count-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountMass.tendsto_manyPrimeResponse_moving": {
+      "label": "The whole actual many-prime class vanishes",
+      "summary": "The original central-band corollary discharges every arithmetic support condition. All frequencies are covered, including the former high-frequency remainder.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-whole-prime-count-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountMass.manyPrimeResponse_eq_integral": {
+      "label": "The same signed integral is retained",
+      "summary": "The complete integer response equals its genuinely integrable many-prime frequency representation with exactly the same squarefree and original masks.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-whole-prime-count-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountMass.tendsto_few_add_wing_source": {
+      "label": "Only lower prime counts and wing carry the source",
+      "summary": "The remaining 3<=k<K_j full signed integral plus tapered wing retains -m+m^2c(u), with unrestricted multiplicity, exposure and the original annular source range. Its joint arithmetic bound remains open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-whole-prime-count-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountWindow.norm_manyPrimePrefix_le_square_count": {
+      "label": "The enlarged prefix has a complete cost bound",
+      "summary": "For k>=B^2, every prefix up to B times the natural frequency window has the full arithmetic allowance divided by B^(B^2+1).",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-whole-prime-count-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountWindow.tendsto_wide_prefix_moving": {
+      "label": "Every moving enlarged prefix decays",
+      "summary": "Along the exact square-count subsequence, the enlarged many-prime frequency interval has independently vanishing error for arbitrary moving prefixes, heights and radii below33/64.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-whole-prime-count-decay.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCountWindow.tendsto_two_cutoff_source": {
+      "label": "Both frequency deletions without overlap",
+      "summary": "An exact signed partition combines the old all-count shrinking prefix and the enlarged many-prime prefix. Their shared contribution is subtracted before passing to the original source limit.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-whole-prime-count-decay.md",
       "overview": true
     }
   }
