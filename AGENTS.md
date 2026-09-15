@@ -2579,6 +2579,29 @@ See `docs/zeta-riesz-extreme-degree-deletion.md` and supporting endpoint
 `extreme-degree-deletion`; retain the default whole-carrier endpoint and
 both ten-entry README lists.
 
+`ZetaRieszLowerDegreeBounds` now pays the actual two-or-more-extreme-prime
+class on 0<u<exp(-2/3) and the three-or-more class on 0<u<exp(-9/16).
+Their exact rates are `(8/3)*exp(-95/96)<1` and
+`(27/8)*exp(-2533/2048)<1`; every fixed filter and physical floor remain.
+`ZetaRieszPhysicalProductBounds.tendsto_above_physical_square` pays the
+broader entire actual class n>=X_N^2 on the first interval, irrespective
+of prime count. Every coefficient with n<=X_N is exactly zero.
+`ZetaRieszPhysicalAnnulus.tendsto_degree_sub_annulus` therefore restricts
+the actual carrier to X_N<n<X_N^2 with independent vanishing error;
+other scales retain their prior residual. The entire negative multiplicity
+source and exact signed cosine identity survive. Once N^2<X_N, a nonzero
+annular label either has all primes below X_N or is an intermediate/extreme
+semiprime n=p*a with N^2<a<X_N<=p. The latter retains exact coefficient
+`-log(n)*log(a)/L_N`; composite cofactors vanish by saturation. Do not
+replace the uniquely counted integer carrier by an ordered prime-pair sum
+without proving diagonal, multiplicity and cutoff corrections. The JOINT
+floor for these two classes remains open. At larger u retain all earlier
+degree and composite-cofactor fallback regimes, with their original ranges.
+The RH closure is conditional; no zero-free enlargement or numerical zero
+bound follows. See `docs/zeta-riesz-physical-annulus.md` and supporting
+endpoint `physical-annulus`; retain the default whole-carrier endpoint and
+both ten-entry README lists.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

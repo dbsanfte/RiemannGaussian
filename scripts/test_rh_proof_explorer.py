@@ -820,6 +820,39 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem eventually_norm_four_extreme_sum_le' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'physical-annulus':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'JOINT sum of the two classes remains open' in scope
+                        assert 'X_N<n<X_N^2' in scope and 'fallback' in scope
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        upper = next(n for n in roots if n['id'].endswith('.tendsto_above_physical_square'))
+                        statement = ' '.join(upper['statement'].split())
+                        assert all(t in statement for t in ('0 < u', 'Real.exp', 'linearDampedCutoff', 'Tendsto'))
+                        assert 'NontrivialZetaZero' not in statement
+                        lower = next(n for n in roots if n['id'].endswith('.coefficient_eq_zero_below_physical'))
+                        lower_statement = ' '.join(lower['statement'].split())
+                        assert all(t in lower_statement for t in ('coefficient', '≤', '= 0'))
+                        cases = next(n for n in roots if n['id'].endswith('.annulus_support_dichotomy'))
+                        assert all(t in cases['statement'] for t in ('primeFactors', '∨', 'coefficient', 'Real.log'))
+                        source = next(n for n in roots if n['id'].endswith('.tendsto_normalizedAnnulus'))
+                        assert all(t in source['statement'] for t in ('NontrivialZetaZero', 'analyticZetaZeroMultiplicity'))
+                        closure = next(n for n in roots if n['id'].endswith('.rh_of_exposed_annulus_floors'))
+                        assert all(t in closure['statement'] for t in ('∃ c < 1', '∃ᶠ', 'RiemannHypothesis'))
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', upper['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == upper['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{upper['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{upper['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem tendsto_above_physical_square' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -844,7 +877,8 @@ def run(output, url=None, refresh_preview=False):
                                'arbitraryRoughPrimeCountAndCompleteSmoothFactorDeletion': True,
                                'exactThreePrimeLayersAndSignedBoundaryWindow': True,
                                'independentNarrowedTailAndConditionalCosineSource': True,
-                               'fourExtremePrimeBoundAndOpenWholeResidualFloor': True})
+                               'fourExtremePrimeBoundAndOpenWholeResidualFloor': True,
+                               'physicalAnnulusBoundAndJointTwoClassObstruction': True})
                 page.close()
             browser.close()
     finally:

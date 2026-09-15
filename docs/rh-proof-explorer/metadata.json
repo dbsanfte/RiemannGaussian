@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 27,
-      "id": "extreme-degree-deletion",
+      "sequence": 28,
+      "id": "physical-annulus",
       "kind": "theorem",
-      "title": "A further arithmetic class now has a geometric bound.",
-      "body": "For 1/2<u<exp(-1/2), Lean bounds and removes the entire actual class with at least four primes at or above the physical cutoff, at rate 4*exp(-23/16)<1. The whole reduced carrier keeps its negative multiplicity source and signed cosine phase. At most three such primes remain on this interval; intermediate primes and their cofactor coupling still require the joint lower bound.",
-      "next": "Next: retain both prime phases through complete moment convolutions, then test whether the actual cutoff and finite-prefix errors permit a bound on the surviving classes. The whole-sum cofinal floor remains open.",
+      "title": "A whole physical upper tail is bounded; two explicit classes remain.",
+      "body": "For 1/2<u<exp(-2/3), Lean pays every actual term n>=X_N^2, while all coefficients below X_N are exactly zero. The full source survives in X_N<n<X_N^2. Any survivor with an extreme prime is now an intermediate/extreme semiprime; the other class has all primes below X_N. Sharper two- and three-prime bounds retain their proved intervals. The two classes still need their joint signed floor.",
+      "next": "Next: control the joint subcutoff and semiprime responses with their original phases and physical boundary. Any whole-sum cofinal floor strictly above -1 suffices.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszFourExtremeBoundTheorem"
+        "rieszPhysicalAnnulusDeletionTheorem"
       ],
-      "documentation": "docs/zeta-riesz-extreme-degree-deletion.md"
+      "documentation": "docs/zeta-riesz-physical-annulus.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1098,6 +1098,81 @@
         "rieszExtremeDegreeScope"
       ],
       "documentation": "docs/zeta-riesz-extreme-degree-deletion.md"
+    },
+    {
+      "id": "physical-annulus",
+      "label": "Physical annulus · upper tail bounded",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszDegreeTiltBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTwoDegreeRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTwoDegreeDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszThreeDegreeDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLowerDegreeSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszIntermediatePrimeSupportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalProductBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalSquareDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalLowerZeroTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExtremeSemiprimeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalAnnulusWindowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalAnnulusDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalAnnulusSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalAnnulusClassesTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalAnnulusCosineTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalAnnulusFloorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszPhysicalAnnulusScope"
+      ],
+      "documentation": "docs/zeta-riesz-physical-annulus.md"
     }
   ],
   "scopes": {
@@ -2780,6 +2855,118 @@
       "summary": "A cofinal floor at least -c with c<1 for each whole exposed residual implies Mathlib RH. That independent arithmetic floor remains an explicit open premise.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-extreme-degree-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLowerDegreeBounds.eventually_norm_degree_sum_le": {
+      "label": "A general actual degree bound retains the complete source factor",
+      "summary": "An arbitrary admissible tilt gives a norm allowance for the actual finite class with at least k physical-cutoff primes. Its explicit degree rate must be below one to give decay.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLowerDegreeBounds.degree_two_rate_eq": {
+      "label": "The two-prime rate has an exact closed expression",
+      "summary": "The rate is (8/3)*exp(-95/96); its separate checked comparison is strictly below one. This is an arithmetic decay rate, not a numerical zero bound.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLowerDegreeBounds.tendsto_two_degree_sum": {
+      "label": "The actual two-prime class vanishes on the smaller interval",
+      "summary": "For 0<u<exp(-2/3), every changing finite class with at least two primes at or above X_N has independently vanishing normalized response for every fixed filter and ordinate.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLowerDegreeBounds.tendsto_three_degree_sum": {
+      "label": "The actual three-prime class vanishes on a larger interval",
+      "summary": "For 0<u<exp(-9/16), the entire actual class with at least three physical-cutoff primes has independently vanishing normalized response. Its exact rate is (27/8)*exp(-2533/2048)<1.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLowerDegreeDeletion.tendsto_normalizedDegreeResidual": {
+      "label": "Both lower-degree deletions retain the whole source",
+      "summary": "Each deletion is applied only on its proved interval, retaining all earlier support restrictions, the exact source and the unchanged fallback elsewhere.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszIntermediatePrimeSupport.eventually_surviving_intermediate_prime": {
+      "label": "Every nonzero survivor must contain an intermediate prime",
+      "summary": "For 0<u<exp(-2/3), the actual support eventually forces a prime factor N^2<p<X_N. This identifies a remaining arithmetic interaction, without bounding its signed sum.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalProductBounds.eventually_norm_physical_product_sum_le": {
+      "label": "The same geometric bound pays the whole large-product class",
+      "summary": "The explicit tilt allowance applies to all labels satisfying k*L_N<=log(n), irrespective of prime count. It retains the actual coefficient, fixed filter, physical floor and uniformity in ordinate and finite selection.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalProductBounds.tendsto_above_physical_square": {
+      "label": "All actual terms at or above X_N squared vanish independently",
+      "summary": "For 0<u<exp(-2/3), the complete actual upper class n>=X_N^2 has vanishing normalized response, with no zero premise and no restriction on its prime counts.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalProductBounds.coefficient_eq_zero_below_physical": {
+      "label": "The entire lower physical prefix has coefficient exactly zero",
+      "summary": "For every source parameter and order, all original coefficients with n<=X_N vanish exactly. The unit, primes and nonsquarefree labels keep their original conventions.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalProductBounds.nonzero_extreme_below_square_is_semiprime": {
+      "label": "An extreme prime below X_N squared forces a prime cofactor",
+      "summary": "A nonzero actual coefficient below X_N^2 with a prime factor at least X_N has a prime cofactor below X_N and the exact negative two-logarithm coefficient. Composite cofactors vanish by the saturated profile identity.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalAnnulus.mem_annulusBand": {
+      "label": "The actual carrier lies in X_N<n<X_N squared",
+      "summary": "On u<exp(-2/3), the whole remaining support is the intersection of the previous residual and the strict physical interval X_N<n<X_N^2. Other scales retain the earlier residual.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalAnnulus.tendsto_degree_sub_annulus": {
+      "label": "The physical annulus deletion loses no source-scale contribution",
+      "summary": "The lower deletion is exact and the upper deletion has independently vanishing normalized error. The full fixed filter and the all-scale fallback remain.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalAnnulus.tendsto_normalizedAnnulus": {
+      "label": "The whole annular carrier retains negative multiplicity",
+      "summary": "At every exposed right-half zero, the complete actual annular carrier tends to minus the full analytic multiplicity. No source margin is lost by the physical-product pruning.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalAnnulus.annulus_support_dichotomy": {
+      "label": "Only the subcutoff class and intermediate/extreme semiprimes survive",
+      "summary": "Once N^2<X_N, a nonzero annular label either has every prime below X_N, or is p*a with N^2<a<X_N<=p and both factors prime. The latter keeps its exact signed coefficient. Their joint floor is still open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalAnnulus.re_normalizedAnnulus_eq_cosine_sum": {
+      "label": "The annulus keeps the original coefficient and full cosine phase",
+      "summary": "The whole real response remains the original signed coefficient times the nonnegative factorial envelope times cos(gamma*log(n)) over actual uniquely counted integer labels.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalAnnulus.rh_of_exposed_annulus_floors": {
+      "label": "Conditional RH closure from the whole annular floor",
+      "summary": "A cofinal real floor at least -c with c<1 for every whole exposed residual implies Mathlib RH. The independent joint arithmetic floor remains an explicit open premise.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-annulus.md",
       "overview": true
     }
   }

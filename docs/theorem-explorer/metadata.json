@@ -2416,7 +2416,12 @@
     "ZetaRieszExtremePrimeCount": "arithmetic",
     "ZetaRieszExtremeDegreeBounds": "arithmetic",
     "ZetaRieszFourExtremeBound": "arithmetic",
-    "ZetaRieszFourExtremeDeletion": "arithmetic"
+    "ZetaRieszFourExtremeDeletion": "arithmetic",
+    "ZetaRieszLowerDegreeBounds": "arithmetic",
+    "ZetaRieszLowerDegreeDeletion": "arithmetic",
+    "ZetaRieszIntermediatePrimeSupport": "arithmetic",
+    "ZetaRieszPhysicalProductBounds": "arithmetic",
+    "ZetaRieszPhysicalAnnulus": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

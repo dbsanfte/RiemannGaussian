@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**183 modules.** Source links open the definitions, hypotheses and proofs.
+**188 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -110,12 +110,17 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszGeneralCofactorTilt](../../RiemannGaussian/ZetaRieszGeneralCofactorTilt.lean)
 - [ZetaRieszGrowingCofactor](../../RiemannGaussian/ZetaRieszGrowingCofactor.lean)
 - [ZetaRieszImprovedMoment](../../RiemannGaussian/ZetaRieszImprovedMoment.lean)
+- [ZetaRieszIntermediatePrimeSupport](../../RiemannGaussian/ZetaRieszIntermediatePrimeSupport.lean)
 - [ZetaRieszInterpolation](../../RiemannGaussian/ZetaRieszInterpolation.lean)
 - [ZetaRieszLargeSmoothClass](../../RiemannGaussian/ZetaRieszLargeSmoothClass.lean)
 - [ZetaRieszLargeSmoothDeletion](../../RiemannGaussian/ZetaRieszLargeSmoothDeletion.lean)
+- [ZetaRieszLowerDegreeBounds](../../RiemannGaussian/ZetaRieszLowerDegreeBounds.lean)
+- [ZetaRieszLowerDegreeDeletion](../../RiemannGaussian/ZetaRieszLowerDegreeDeletion.lean)
 - [ZetaRieszNarrowCarrier](../../RiemannGaussian/ZetaRieszNarrowCarrier.lean)
 - [ZetaRieszNegativeProfile](../../RiemannGaussian/ZetaRieszNegativeProfile.lean)
+- [ZetaRieszPhysicalAnnulus](../../RiemannGaussian/ZetaRieszPhysicalAnnulus.lean)
 - [ZetaRieszPhysicalPrefixDeletion](../../RiemannGaussian/ZetaRieszPhysicalPrefixDeletion.lean)
+- [ZetaRieszPhysicalProductBounds](../../RiemannGaussian/ZetaRieszPhysicalProductBounds.lean)
 - [ZetaRieszPrimeClasses](../../RiemannGaussian/ZetaRieszPrimeClasses.lean)
 - [ZetaRieszPrimeFourier](../../RiemannGaussian/ZetaRieszPrimeFourier.lean)
 - [ZetaRieszProductCeiling](../../RiemannGaussian/ZetaRieszProductCeiling.lean)

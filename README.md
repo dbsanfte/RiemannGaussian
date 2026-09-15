@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**A further arithmetic class now has a geometric bound.** For 1/2<u<exp(-1/2), Lean bounds and removes the entire actual class with at least four primes at or above the physical cutoff, at rate 4*exp(-23/16)<1. The whole reduced carrier keeps its negative multiplicity source and signed cosine phase. At most three such primes remain on this interval; intermediate primes and their cofactor coupling still require the joint lower bound.
-Next: retain both prime phases through complete moment convolutions, then test whether the actual cutoff and finite-prefix errors permit a bound on the surviving classes. The whole-sum cofinal floor remains open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszFourExtremeBound.lean#L47)
-· [Proof details](docs/zeta-riesz-extreme-degree-deletion.md).
+**A whole physical upper tail is bounded; two explicit classes remain.** For 1/2<u<exp(-2/3), Lean pays every actual term n>=X_N^2, while all coefficients below X_N are exactly zero. The full source survives in X_N<n<X_N^2. Any survivor with an extreme prime is now an intermediate/extreme semiprime; the other class has all primes below X_N. Sharper two- and three-prime bounds retain their proved intervals. The two classes still need their joint signed floor.
+Next: control the joint subcutoff and semiprime responses with their original phases and physical boundary. Any whole-sum cofinal floor strictly above -1 suffices.
+[Current checked endpoint](RiemannGaussian/ZetaRieszPhysicalAnnulus.lean#L75)
+· [Proof details](docs/zeta-riesz-physical-annulus.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
