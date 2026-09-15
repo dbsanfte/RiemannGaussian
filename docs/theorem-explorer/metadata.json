@@ -2383,7 +2383,10 @@
     "ZetaRieszEulerQuadraticHead": "arithmetic",
     "ZetaRieszSmoothHead": "arithmetic",
     "ZetaRieszSmoothDeletion": "arithmetic",
-    "ZetaRieszSmoothCofactor": "arithmetic"
+    "ZetaRieszSmoothCofactor": "arithmetic",
+    "ZetaRieszSmoothPrimeProduct": "arithmetic",
+    "ZetaRieszSmoothPrimePrefix": "arithmetic",
+    "ZetaRieszPhysicalPrefixDeletion": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

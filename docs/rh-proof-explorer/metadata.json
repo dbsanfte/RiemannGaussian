@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 20,
-      "id": "smooth-prime-deletion",
+      "sequence": 21,
+      "id": "physical-prime-prefix-deletion",
       "kind": "theorem",
-      "title": "The arithmetic tail now excludes every N²-smooth squarefree term.",
-      "body": "Lean gives all N²-smooth squarefree terms a vanishing allowance proportional to N*(sqrt(u))^N, with the complete original filter and cutoff. This combines with the paid composite-cofactor range: remaining labels have a prime above N² and every eligible composite cofactor above its threshold. The exact negative source and connection to the signed Euler residual survive. A joint independent floor for the remaining sum is still open.",
-      "next": "Next: bound the combined remaining semiprime and large-composite-cofactor sum, retaining the Riesz signs, cutoff and cross-prime correlations.",
+      "title": "The physical prime prefix is now paid inside the arithmetic remainder.",
+      "body": "For 1/2<u<exp(-1/2), Lean bounds every term n=p*a with N²<p<=(D_N+2)² and an N²-smooth squarefree cofactor, with no separate cofactor size cap. The deletion preserves earlier cofactor restrictions: any surviving single large prime now exceeds the physical cutoff. An adaptive fallback retains the exact negative source at all scales. The remaining joint signed floor is still open.",
+      "next": "Next: attack primes beyond the physical cutoff using the exact composite-cofactor vanishing identity and the retained prime/cofactor product bound.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszSmoothJointDeletionTheorem"
+        "rieszPhysicalPrefixBandTheorem"
       ],
-      "documentation": "docs/zeta-riesz-smooth-prime-deletion.md"
+      "documentation": "docs/zeta-riesz-physical-prime-prefix.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -677,6 +677,65 @@
         "rieszSmoothHeadScope"
       ],
       "documentation": "docs/zeta-riesz-smooth-prime-deletion.md"
+    },
+    {
+      "id": "physical-prime-prefix-deletion",
+      "label": "Physical prime prefix · actual one-large-prime deletion",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothPrimePairRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothPrimeAllMasksTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothPrimeInjectionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothPrimePhysicalDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothPrimePhysicalClassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalPrefixDeleteTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalPrefixBandTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalPrefixSupportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalPrefixAdaptiveTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalPrefixSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalPrefixSplitTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalPrefixFloorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszPhysicalPrefixScope"
+      ],
+      "documentation": "docs/zeta-riesz-physical-prime-prefix.md"
     }
   ],
   "scopes": {
@@ -1778,6 +1837,90 @@
       "summary": "A cofinal real floor above minus one for every complete remaining sum would imply Mathlib RH. The independent arithmetic floor remains an explicit unproved premise.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothPrimeProduct.norm_scaled_pairResponse_le_rate": {
+      "label": "Actual prime prefix · complete cofactor Euler allowance",
+      "summary": "The original finite pair sum has its explicit full-filter geometric rate, physical prime cutoff and complete smooth cofactor Euler mass, with every subband mask retained.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothPrimeProduct.tendsto_quadratic_pairResponse": {
+      "label": "Every subband mask · quadratic-head decay",
+      "summary": "Every order-dependent subband and smooth cofactor family decays at every original order when the displayed scalar saving holds; no maximum-cofactor-size cost is introduced.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothPrimePrefix.productBand_sum_eq_pairResponse": {
+      "label": "Unique large prime · each actual integer counted once",
+      "summary": "A prime above every cofactor prime is uniquely recoverable from the product. The actual signed integer class equals the finite pair sum.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothPrimePrefix.tendsto_actualProductBand_of_small_source": {
+      "label": "Physical prime prefix · all scalar conditions discharged",
+      "summary": "For every 1/2<u<exp(-1/2), all actual terms with one prime N^2<p<=(D_N+2)^2 and an N^2-smooth squarefree cofactor decay independently, for every order-dependent subband mask.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothPrimePrefix.mem_actualProductBand_iff": {
+      "label": "Exact arithmetic class · physical cutoff and full smooth support",
+      "summary": "Membership retains the original band, arbitrary mask, actual prime range, squarefree cofactor and every prime-factor restriction, with no separate cofactor size cap.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.tendsto_prefixDeletionBand": {
+      "label": "Previous residual · physical-prefix intersection is paid",
+      "summary": "The new component decays inside the previously reduced carrier on 1/2<u<exp(-1/2), preserving all previously proved cofactor restrictions.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.tendsto_actual_band_sub_prefixResidual": {
+      "label": "Original band · combined deletion error vanishes",
+      "summary": "The normalized difference between the original band and its more tightly restricted residual tends to zero independently on the proved source-scale interval.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.surviving_single_prime_above_physical_cutoff": {
+      "label": "Remaining single large prime · beyond the physical cutoff",
+      "summary": "Any remaining factorization with one prime above N^2 and a squarefree N^2-smooth cofactor forces that prime above (D_N+2)^2.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.tendsto_actual_band_sub_adaptivePrefix": {
+      "label": "All source scales · proved fallback retained",
+      "summary": "The adaptive remainder uses the new deletion below exp(-1/2) and the previous remainder elsewhere. Its complete error tends to zero for every 1/2<u<1.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.tendsto_normalizedAdaptivePrefix": {
+      "label": "Exact negative source · adaptive remainder at every order",
+      "summary": "Under a hypothetical right-half zero, the adaptive remaining carrier retains the exact negative multiplicity source with its original filter, phase and cutoff.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.optimizedRoughResponse_eq_prefix_split": {
+      "label": "Exact signed partition · earlier restrictions preserved",
+      "summary": "The previous actual residual splits exactly into the newly paid intersection and its complement, retaining every original signed coefficient and factorial shift.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.rh_of_adaptivePrefix_cofinal_floors": {
+      "label": "Conditional RH closure · independent full floor still required",
+      "summary": "A cofinal real floor above minus one for each full adaptive remainder would imply Mathlib RH. This arithmetic floor remains an explicit unproved premise.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
       "overview": true
     }
   }

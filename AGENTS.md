@@ -2443,6 +2443,23 @@ floor and RH remain open; the displayed RH closure is conditional. See
 `docs/zeta-riesz-smooth-prime-deletion.md` and endpoint `smooth-prime-deletion`;
 retain the default whole-carrier endpoint and both ten-entry README lists.
 
+`ZetaRieszPhysicalPrefixDeletion.tendsto_actual_band_sub_prefixResidual`
+now removes the actual physical prime prefix inside the earlier joint residual
+for 1/2<u<exp(-1/2). The paid class is n=p*a with N^2<p<=(D_N+2)^2
+and squarefree a supported on primes through N^2, with no separate size cap
+on a. Preserve every order-dependent subband mask and unique prime insertion;
+the pair sum must count each actual integer once. The full-filter geometric
+allowance retains the complete cofactor Euler mass and physical cutoff.
+Every surviving single-large-prime factorization with a smooth cofactor now
+has p>(D_N+2)^2. This does not bound that remaining class or terms with
+multiple large primes. The adaptive remainder retains the previous residual
+for exp(-1/2)<=u<1 and preserves its exact negative source at every scale.
+Do not extend the new component estimate outside its proved u interval.
+The independent full signed floor and RH remain open; the displayed RH
+closure is conditional. No new zero-free width or historical novelty is
+claimed. See `docs/zeta-riesz-physical-prime-prefix.md` and endpoint
+`physical-prime-prefix-deletion`; retain the default whole-carrier endpoint.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

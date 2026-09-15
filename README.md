@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**The arithmetic tail now excludes every N²-smooth squarefree term.** Lean gives all N²-smooth squarefree terms a vanishing allowance proportional to N*(sqrt(u))^N, with the complete original filter and cutoff. This combines with the paid composite-cofactor range: remaining labels have a prime above N² and every eligible composite cofactor above its threshold. The exact negative source and connection to the signed Euler residual survive. A joint independent floor for the remaining sum is still open.
-Next: bound the combined remaining semiprime and large-composite-cofactor sum, retaining the Riesz signs, cutoff and cross-prime correlations.
-[Current checked endpoint](RiemannGaussian/ZetaRieszSmoothCofactor.lean#L107)
-· [Proof details](docs/zeta-riesz-smooth-prime-deletion.md).
+**The physical prime prefix is now paid inside the arithmetic remainder.** For 1/2<u<exp(-1/2), Lean bounds every term n=p*a with N²<p<=(D_N+2)² and an N²-smooth squarefree cofactor, with no separate cofactor size cap. The deletion preserves earlier cofactor restrictions: any surviving single large prime now exceeds the physical cutoff. An adaptive fallback retains the exact negative source at all scales. The remaining joint signed floor is still open.
+Next: attack primes beyond the physical cutoff using the exact composite-cofactor vanishing identity and the retained prime/cofactor product bound.
+[Current checked endpoint](RiemannGaussian/ZetaRieszPhysicalPrefixDeletion.lean#L72)
+· [Proof details](docs/zeta-riesz-physical-prime-prefix.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

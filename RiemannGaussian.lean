@@ -1680,3 +1680,6 @@ import RiemannGaussian.ZetaRieszEulerQuadraticHead
 import RiemannGaussian.ZetaRieszSmoothHead
 import RiemannGaussian.ZetaRieszSmoothDeletion
 import RiemannGaussian.ZetaRieszSmoothCofactor
+import RiemannGaussian.ZetaRieszSmoothPrimeProduct
+import RiemannGaussian.ZetaRieszSmoothPrimePrefix
+import RiemannGaussian.ZetaRieszPhysicalPrefixDeletion
