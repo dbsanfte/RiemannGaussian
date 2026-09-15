@@ -882,6 +882,45 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem eventually_norm_joint_sub_annulus_le' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'prefix-central-window':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in (
+                            'intermediate-prime logarithmic mark', 'unique integer labels',
+                            '3N/2<log(n)<=8N/3', 'central signed floor is open',
+                            'Do not apply the central cut to the completed head'))
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        bound = next(n for n in roots if n['id'].endswith('.norm_sub_centralBand_le'))
+                        statement = ' '.join(bound['statement'].split())
+                        assert all(t in statement for t in (
+                            '0 < u', 'u < Real.exp (-(2 / 3))', 'centralBand S N',
+                            'centralLowerRate', 'centralUpperRate', 'zetaMoebiusLogMajorant'))
+                        assert 'NontrivialZetaZero' not in statement
+                        mixed = next(n for n in roots if n['id'].endswith('.tendsto_mixedResponse'))
+                        assert all(t in ' '.join(mixed['statement'].split()) for t in (
+                            '1 / 2 < u', 'u < Real.exp (-(1 / 2))', 'N ^ 2 < a',
+                            'mixedResponse (A N)', 'Tendsto'))
+                        source = next(n for n in roots if n['id'].endswith('.tendsto_centralAnnulus_exposed'))
+                        assert all(t in source['statement'] for t in (
+                            'NontrivialZetaZero', 'centralAnnulusResponse', 'analyticZetaZeroMultiplicity'))
+                        for theorem in (bound, mixed):
+                            selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', theorem['id'])
+                            node = page.locator(f'[data-node="{selected}"]')
+                            node.hover()
+                            assert page.locator('#tooltip').is_visible()
+                            node.click()
+                            assert page.locator('#details pre').inner_text().strip() == theorem['statement'].strip()
+                            link = page.locator('#details .source-button').get_attribute('href')
+                            assert link.endswith(f"#L{theorem['source']['line']}")
+                            if published:
+                                assert f"/blob/{revision}/{theorem['source']['path']}" in link
+                            else:
+                                with page.expect_popup() as opened:
+                                    page.locator('#details .source-button').click()
+                                source_page = opened.value
+                                source_page.wait_for_selector('.source-line:target')
+                                assert 'theorem ' + theorem['id'].rsplit('.', 1)[-1] in source_page.locator('.source-line:target').inner_text()
+                                source_page.close()
+                            page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -908,7 +947,8 @@ def run(output, url=None, refresh_preview=False):
                                'independentNarrowedTailAndConditionalCosineSource': True,
                                'fourExtremePrimeBoundAndOpenWholeResidualFloor': True,
                                'physicalAnnulusBoundAndJointTwoClassObstruction': True,
-                               'completePrimeRangeBoundAndRetainedSignedPrefix': True})
+                               'completePrimeRangeBoundAndRetainedSignedPrefix': True,
+                               'boundedPrefixComponentsAndActualCentralWindow': True})
                 page.close()
             browser.close()
     finally:

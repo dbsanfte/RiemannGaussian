@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 29,
-      "id": "annulus-prime-completion",
+      "sequence": 30,
+      "id": "prefix-central-window",
       "kind": "theorem",
-      "title": "A complete prime range with independently bounded error.",
-      "body": "For 1/2<=u<exp(-2/3), Lean completes the actual cross-prime class with geometric error at rate (8/3)*exp(-95/96)<1. Every earlier support cut and unique integer label is checked. The completed head retains its exact physical prefix beside the all-subcutoff class; their whole signed response preserves the negative multiplicity source. The joint floor remains open.",
-      "next": "Next: exploit the shared arithmetic phases between the finite physical prefix and the all-subcutoff class, retaining the completed prime head. A cofinal floor for their whole signed sum remains the target.",
+      "title": "More of the signed arithmetic tail is independently bounded.",
+      "body": "Lean bounds both outer portions of the actual signed carrier, leaving 3N/2<log(n)<=8N/3 for 0<u<exp(-2/3), with the whole negative multiplicity source retained. It also removes the prime-square and mixed small/intermediate-prime prefix classes and proves the exact clipped two-prime correction. The central signed sum and the joint completed-prime floor remain open.",
+      "next": "Next: transport the central window through the completed representation, keeping the completed head coupled to the prime-pair correction and the unpaired subcutoff terms. Their independent whole-sum floor is still the target.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszJointCompletionBoundTheorem"
+        "rieszCentralWindowBoundTheorem"
       ],
-      "documentation": "docs/zeta-riesz-annulus-prime-completion.md"
+      "documentation": "docs/zeta-riesz-prefix-central-window.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1224,6 +1224,57 @@
         "rieszAnnulusCompletionScope"
       ],
       "documentation": "docs/zeta-riesz-annulus-prime-completion.md"
+    },
+    {
+      "id": "prefix-central-window",
+      "label": "Prefix components bounded · smaller central carrier",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrefixDiagonalBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrefixDiagonalDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMixedPrefixBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMixedPrefixDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRefinedJointSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRemainingPrefixSupportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRemainingPrefixCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszClippedPairWholeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralWindowBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralWindowSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszPrefixCentralScope"
+      ],
+      "documentation": "docs/zeta-riesz-prefix-central-window.md"
     }
   ],
   "scopes": {
@@ -3088,6 +3139,76 @@
       "summary": "At exposed right-half zeros in the proved source interval, the whole completed response tends to minus the analytic multiplicity. The independent joint floor remains open; no separate part is asserted to decay.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-annulus-prime-completion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrefixDiagonal.norm_normalized_diagonalResponse_le": {
+      "label": "The genuine prime-square prefix has a geometric allowance",
+      "summary": "Every selected prime-square prefix has bound C(P,u,q)*(u/q)^N for 0<q<1, uniformly in the selected primes and height. The physical mark and single diagonal incidence are retained.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prefix-central-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrefixDiagonal.tendsto_diagonalResponse": {
+      "label": "All diagonal prefix terms vanish independently",
+      "summary": "For every 0<u<1, q=(u+1)/2 gives rate 2u/(u+1)<1 for every changing selected prime family and fixed filter. This does not extend the annular-completion source range.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prefix-central-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszMixedPrefix.norm_mixedResponse_le": {
+      "label": "The actual mixed prefix has a polynomial times geometric bound",
+      "summary": "For a selected intermediate prime a and a prime p<=N^2, the actual mark -log(ap)*log(a)/L_N is bounded without substituting the small-prime logarithm. Its normalized whole response is at most C(P,u,q)*(N+1)^3*tiltRate(u,q)^N.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prefix-central-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszMixedPrefix.tendsto_mixedResponse": {
+      "label": "Every mixed small/intermediate-prime prefix vanishes",
+      "summary": "The exact mathematically defined tilt pays the full actual mixed class on 1/2<u<exp(-1/2), for all changing selected intermediate-prime families and every fixed filter and height. No zero premise is used.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prefix-central-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszMixedPrefixTransport.tendsto_refinedJoint_exposed": {
+      "label": "Both prefix deletions preserve the complete source",
+      "summary": "The exact diagonal and mixed integer classes are removed with independent vanishing error. The whole refined response retains minus the full multiplicity at exposed zeros in the annular interval.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prefix-central-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszRemainingPrefix.remaining_nonzero_mem_paired": {
+      "label": "Every surviving prefix label has two distinct intermediate primes",
+      "summary": "The actual nonzero support after both paid deletions is a distinct-prime product with both factors in the full intermediate set. No extra completion mask is assumed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prefix-central-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszRemainingPrefix.remainingPrefix_eq_log_square_sum": {
+      "label": "Both surviving prime incidences give the complete logarithm square",
+      "summary": "Unique integer labels retain both cofactor incidences. Their exact coefficient is -log(n)^2/L_N; diagonal and unordered-pair corrections are not lost.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prefix-central-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPairedCorrection.eventually_refinedJoint_eq_clipped_split": {
+      "label": "The whole carrier retains one explicit clipped prime-pair correction",
+      "summary": "On the annular interval, all earlier masks are discharged before the whole response becomes completed head plus unchanged unpaired subcutoff terms plus log(n)*min(1,log(n)/L_N) on distinct intermediate-prime products. Its joint signed floor is open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prefix-central-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralWindow.norm_sub_centralBand_le": {
+      "label": "Both outer parts of the actual carrier have strict geometric bounds",
+      "summary": "For 0<u<exp(-2/3), every changing divisor-majorized finite coefficient family outside 3N/2<log(n)<=8N/3 is bounded by the sum of two geometric allowances, at rates (3/2)*exp(-631/1536)<1 and (8/3)*exp(-95/96)<1. All fixed filters and phases remain.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prefix-central-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralWindow.tendsto_centralAnnulus_exposed": {
+      "label": "The actual central annulus retains the full negative source",
+      "summary": "Intersecting the whole actual annulus with the new central window preserves every earlier arithmetic mask and the full exposed-zero multiplicity source. Its independent central signed floor remains open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prefix-central-window.md",
       "overview": true
     }
   }

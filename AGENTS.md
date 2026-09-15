@@ -2624,6 +2624,34 @@ See `docs/zeta-riesz-annulus-prime-completion.md` and supporting endpoint
 `annulus-prime-completion`; preserve the default whole-carrier endpoint
 and both ten-entry README lists.
 
+`ZetaRieszPrefixDiagonal.tendsto_diagonalResponse` independently removes
+the genuine selected prime-square prefix for every 0<u<1, at rate
+2u/(u+1). `ZetaRieszMixedPrefix.tendsto_mixedResponse` pays the entire
+small/intermediate-prime prefix on 1/2<u<exp(-1/2), retaining the
+INTERMEDIATE-prime logarithmic mark, unique integer labels and every
+fixed filter. Its explicit allowance is C(P,u,q)*(N+1)^3*tiltRate(u,q)^N
+with the proved mathematical tilt. Exact partitions preserve the entire
+negative multiplicity source on the existing annular interval. The wider
+component estimate does not extend that interval. The remaining prefix
+is exactly the distinct-intermediate-prime product sum with coefficient
+-log(n)^2/L_N. All earlier support masks are discharged before combining
+it with the actual Riesz coefficient into log(n)*min(1,log(n)/L_N).
+`ZetaRieszPairedCorrection.eventually_refinedJoint_eq_clipped_split`
+retains the completed head, unpaired subcutoff response and full clipped
+pair response together. Positive coefficients do not supply a cosine floor.
+`ZetaRieszCentralWindow.norm_sub_centralBand_le` independently pays ALL
+divisor-majorized labels outside 3N/2<log(n)<=8N/3 on 0<u<exp(-2/3),
+with rates (3/2)*exp(-631/1536)<1 and (8/3)*exp(-95/96)<1. The actual
+central annulus retains every older support cut and its whole exposed-zero
+source. The central signed floor remains open. Do not silently apply this
+central restriction to the completed head or assume any separate surviving
+component decays. The completed representation needs its own exact transport.
+Other source scales retain all previous fallback regimes. No RH proof,
+new zero-free region, numerical zero bound or historical novelty follows.
+See `docs/zeta-riesz-prefix-central-window.md` and supporting endpoint
+`prefix-central-window`; preserve the default whole-carrier endpoint and
+both ten-entry README lists.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

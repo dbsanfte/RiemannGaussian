@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**A complete prime range with independently bounded error.** For 1/2<=u<exp(-2/3), Lean completes the actual cross-prime class with geometric error at rate (8/3)*exp(-95/96)<1. Every earlier support cut and unique integer label is checked. The completed head retains its exact physical prefix beside the all-subcutoff class; their whole signed response preserves the negative multiplicity source. The joint floor remains open.
-Next: exploit the shared arithmetic phases between the finite physical prefix and the all-subcutoff class, retaining the completed prime head. A cofinal floor for their whole signed sum remains the target.
-[Current checked endpoint](RiemannGaussian/ZetaRieszAnnulusJoint.lean#L111)
-· [Proof details](docs/zeta-riesz-annulus-prime-completion.md).
+**More of the signed arithmetic tail is independently bounded.** Lean bounds both outer portions of the actual signed carrier, leaving 3N/2<log(n)<=8N/3 for 0<u<exp(-2/3), with the whole negative multiplicity source retained. It also removes the prime-square and mixed small/intermediate-prime prefix classes and proves the exact clipped two-prime correction. The central signed sum and the joint completed-prime floor remain open.
+Next: transport the central window through the completed representation, keeping the completed head coupled to the prime-pair correction and the unpaired subcutoff terms. Their independent whole-sum floor is still the target.
+[Current checked endpoint](RiemannGaussian/ZetaRieszCentralWindow.lean#L159)
+· [Proof details](docs/zeta-riesz-prefix-central-window.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

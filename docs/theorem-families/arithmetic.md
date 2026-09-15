@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**193 modules.** Source links open the definitions, hypotheses and proofs.
+**201 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -77,6 +77,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszAnnulusJoint](../../RiemannGaussian/ZetaRieszAnnulusJoint.lean)
 - [ZetaRieszBeyondPhysical](../../RiemannGaussian/ZetaRieszBeyondPhysical.lean)
 - [ZetaRieszBlockMass](../../RiemannGaussian/ZetaRieszBlockMass.lean)
+- [ZetaRieszCentralWindow](../../RiemannGaussian/ZetaRieszCentralWindow.lean)
 - [ZetaRieszCofactorTiltRate](../../RiemannGaussian/ZetaRieszCofactorTiltRate.lean)
 - [ZetaRieszCompletedCofactor](../../RiemannGaussian/ZetaRieszCompletedCofactor.lean)
 - [ZetaRieszCompositeBoundaryWindow](../../RiemannGaussian/ZetaRieszCompositeBoundaryWindow.lean)
@@ -121,15 +122,22 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszLargeSmoothDeletion](../../RiemannGaussian/ZetaRieszLargeSmoothDeletion.lean)
 - [ZetaRieszLowerDegreeBounds](../../RiemannGaussian/ZetaRieszLowerDegreeBounds.lean)
 - [ZetaRieszLowerDegreeDeletion](../../RiemannGaussian/ZetaRieszLowerDegreeDeletion.lean)
+- [ZetaRieszMixedPrefix](../../RiemannGaussian/ZetaRieszMixedPrefix.lean)
+- [ZetaRieszMixedPrefixTransport](../../RiemannGaussian/ZetaRieszMixedPrefixTransport.lean)
 - [ZetaRieszNarrowCarrier](../../RiemannGaussian/ZetaRieszNarrowCarrier.lean)
 - [ZetaRieszNegativeProfile](../../RiemannGaussian/ZetaRieszNegativeProfile.lean)
+- [ZetaRieszOffDiagonalJoint](../../RiemannGaussian/ZetaRieszOffDiagonalJoint.lean)
+- [ZetaRieszPairedCorrection](../../RiemannGaussian/ZetaRieszPairedCorrection.lean)
 - [ZetaRieszPhysicalAnnulus](../../RiemannGaussian/ZetaRieszPhysicalAnnulus.lean)
 - [ZetaRieszPhysicalPrefixDeletion](../../RiemannGaussian/ZetaRieszPhysicalPrefixDeletion.lean)
 - [ZetaRieszPhysicalProductBounds](../../RiemannGaussian/ZetaRieszPhysicalProductBounds.lean)
+- [ZetaRieszPrefixCorrelation](../../RiemannGaussian/ZetaRieszPrefixCorrelation.lean)
+- [ZetaRieszPrefixDiagonal](../../RiemannGaussian/ZetaRieszPrefixDiagonal.lean)
 - [ZetaRieszPrimeClasses](../../RiemannGaussian/ZetaRieszPrimeClasses.lean)
 - [ZetaRieszPrimeFourier](../../RiemannGaussian/ZetaRieszPrimeFourier.lean)
 - [ZetaRieszProductCeiling](../../RiemannGaussian/ZetaRieszProductCeiling.lean)
 - [ZetaRieszReducedCofactorSource](../../RiemannGaussian/ZetaRieszReducedCofactorSource.lean)
+- [ZetaRieszRemainingPrefix](../../RiemannGaussian/ZetaRieszRemainingPrefix.lean)
 - [ZetaRieszSemiprimeBand](../../RiemannGaussian/ZetaRieszSemiprimeBand.lean)
 - [ZetaRieszSemiprimeCompletion](../../RiemannGaussian/ZetaRieszSemiprimeCompletion.lean)
 - [ZetaRieszSemiprimeDeletion](../../RiemannGaussian/ZetaRieszSemiprimeDeletion.lean)
