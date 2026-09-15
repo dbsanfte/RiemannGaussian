@@ -1740,3 +1740,6 @@ import RiemannGaussian.ZetaRieszShiftedHeadBudget
 import RiemannGaussian.ZetaRieszHeadAdaptiveTransport
 import RiemannGaussian.ZetaRieszPrimePairConvolution
 import RiemannGaussian.ZetaRieszPairOrders
+import RiemannGaussian.ZetaRieszPrimeCompletion
+import RiemannGaussian.ZetaRieszPrimeCompletionPhase
+import RiemannGaussian.ZetaRieszMatchedMiddle

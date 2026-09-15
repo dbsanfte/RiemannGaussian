@@ -2735,6 +2735,38 @@ retain prior obligations; no RH proof or new zero-free region follows.
 See `docs/zeta-riesz-pair-orders.md` and supporting endpoint `pair-orders`;
 preserve the default whole-carrier endpoint and both ten-entry README lists.
 
+`ZetaRieszPrimeCompletion.eventually_norm_finite_sub_complete_le` now
+independently completes the actual finite prime array on N<=3k and
+128k<=65N: norm(u^k*(F_A,k-B_k))<=2Z*exp(-17N/12288), eventually
+uniformly in all eligible orders and all heights, on0<u<exp(-2/3).
+Both omitted prime ranges and their genuine sums are paid; the actual
+floor and both endpoints stay unchanged. `tendsto_weighted_finite`
+then transports the complete phase k*u^k*B_k->-m_rho to the actual
+moving finite array, retaining its EXPLICIT zero and exposure premises.
+`ZetaRieszMatchedMiddle.eventually_matchedBlock_re_bounds` proves an
+eventual signed budget for a nonempty actual middle HEAD/PAIR block:
+-m_rho^2/8<=Re(u^(N+1)*matchedBlock)<0, on the annular source interval.
+This is SOURCE-CONDITIONED, not an unconditional arithmetic floor, a
+decay theorem, or a subunit whole-carrier bound. Multiplicity is never
+assumed one. Strict negativity alone does not prove a nonzero limit.
+Keep the exact atom normalization k*l*u^(k+l)*sharedAtom =
+half*weightedF_k*weightedF_l - [k/(uL_N)]*weightedF_(k+1)*weightedB_l.
+The actual relative head cost is in[7/12,1]; positive pair phases alone
+would omit a larger negative head contribution. The selected k,l,k+1
+all meet the proved completion inequalities; l=N+1-k. The actual order
+count32card<=N and reciprocal weight sum<=5/32 hold forN>=256, and
+floor(N/2) proves nonemptiness there. Order256 is ONLY this structural
+threshold; the phase threshold remains eventual and zero-dependent.
+`middleJoint_one_eq_unmatched_add_matched` retains every complementary
+head and pair order as literal set differences and the whole unpaired
+three-prime and higher-prime response. Only unmatchedJoint+matchedBlock
+is asserted to retain the complete -m_rho source. The original unfiltered
+P=1 source is used, with its product-logarithm prefactor unchanged.
+The complementary JOINT floor and all other global source ranges remain
+open. See `docs/zeta-riesz-matched-middle.md` and supporting endpoint
+`matched-middle`; preserve the default whole-carrier endpoint and both
+ten-entry README lists. No RH or zero-free enlargement follows.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

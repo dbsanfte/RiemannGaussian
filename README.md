@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Both outer prime-pair ranges now decay; the surviving prime phases stay coupled.** Lean independently bounds both outer pair orders and a larger high-head range by C(P,u)*(N+1)^2*exp(-7N/9216), for every fixed filter and uniformly in height on 0<u<exp(-2/3). The repeated-prime diagonal also decays. Exact identities retain the middle pairs, shifted head moments and full negative source on the existing annular interval.
-Next: bound the real part of the shared prime quadratic together with the actual three-prime and higher-prime response. The middle pair orders M<8k<7M and remaining head 8k<7M are still uncontrolled jointly; other global source ranges retain their prior obligations.
-[Current checked endpoint](RiemannGaussian/ZetaRieszPairOrders.lean#L217)
-· [Proof details](docs/zeta-riesz-pair-orders.md).
+**An actual middle head/pair block now has a concrete signed budget.** Lean bounds the normalized real part of a nonempty matched block between -m_rho^2/8 and zero, under the exposed-zero hypotheses on the annular interval. Independent geometric prime-completion errors make its shared phases accessible. The exact complementary head orders, pair orders and higher-prime terms remain explicit.
+Next: bound the complementary signed carrier while retaining the matched block and its full multiplicity cost. The new bound uses the exposed-zero hypotheses and does not supply a subunit whole-carrier floor; other global source ranges remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszMatchedMiddle.lean#L370)
+· [Proof details](docs/zeta-riesz-matched-middle.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

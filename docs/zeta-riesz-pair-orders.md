@@ -1,5 +1,9 @@
 # Paid outer prime orders and the remaining shared phases
 
+The [subsequent matched middle block](zeta-riesz-matched-middle.md) uses
+independent prime completion to obtain a signed budget for part of the
+remaining head and pair response together, with explicit exposed-zero premises.
+
 Lean now independently bounds both outer order ranges of the finite
 prime-pair response, removes its repeated-prime diagonal, and enlarges
 the controlled high-order part of the completed head. The remaining

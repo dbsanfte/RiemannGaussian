@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**210 modules.** Source links open the definitions, hypotheses and proofs.
+**213 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -127,6 +127,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszLargeSmoothDeletion](../../RiemannGaussian/ZetaRieszLargeSmoothDeletion.lean)
 - [ZetaRieszLowerDegreeBounds](../../RiemannGaussian/ZetaRieszLowerDegreeBounds.lean)
 - [ZetaRieszLowerDegreeDeletion](../../RiemannGaussian/ZetaRieszLowerDegreeDeletion.lean)
+- [ZetaRieszMatchedMiddle](../../RiemannGaussian/ZetaRieszMatchedMiddle.lean)
 - [ZetaRieszMixedPrefix](../../RiemannGaussian/ZetaRieszMixedPrefix.lean)
 - [ZetaRieszMixedPrefixTransport](../../RiemannGaussian/ZetaRieszMixedPrefixTransport.lean)
 - [ZetaRieszNarrowCarrier](../../RiemannGaussian/ZetaRieszNarrowCarrier.lean)
@@ -140,6 +141,8 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszPrefixCorrelation](../../RiemannGaussian/ZetaRieszPrefixCorrelation.lean)
 - [ZetaRieszPrefixDiagonal](../../RiemannGaussian/ZetaRieszPrefixDiagonal.lean)
 - [ZetaRieszPrimeClasses](../../RiemannGaussian/ZetaRieszPrimeClasses.lean)
+- [ZetaRieszPrimeCompletion](../../RiemannGaussian/ZetaRieszPrimeCompletion.lean)
+- [ZetaRieszPrimeCompletionPhase](../../RiemannGaussian/ZetaRieszPrimeCompletionPhase.lean)
 - [ZetaRieszPrimeFourier](../../RiemannGaussian/ZetaRieszPrimeFourier.lean)
 - [ZetaRieszPrimePairConvolution](../../RiemannGaussian/ZetaRieszPrimePairConvolution.lean)
 - [ZetaRieszProductCeiling](../../RiemannGaussian/ZetaRieszProductCeiling.lean)

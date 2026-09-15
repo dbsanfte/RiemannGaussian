@@ -2,7 +2,7 @@
 
 # Theorem-family index
 
-Browse all **2,038 Lean source modules** by mathematical family. Every listed module is reachable from a declared build target. Modules marked **optional certificate build** require `lake build NumericalCertificate --wfail`; ordinary builds exclude them.
+Browse all **2,041 Lean source modules** by mathematical family. Every listed module is reachable from a declared build target. Modules marked **optional certificate build** require `lake build NumericalCertificate --wfail`; ordinary builds exclude them.
 
 The family names, colours and assignments share the explorer's [evergreen metadata](../theorem-explorer/metadata.json). [Open the interactive proof chain](https://dbsanfte.github.io/RiemannGaussian/) for theorem statements, dependency paths and axiom audits.
 
@@ -21,7 +21,7 @@ The family names, colours and assignments share the explorer's [evergreen metada
 | [Zero-free conclusion](region.md) | 20 | The complete budget, actual zero contradiction and its exact height scope. |
 | [Finite kernels & Hardy models](finite.md) | 98 | Finite root geometry, Hardy and Pick kernels, spectral energy and passage to entire functions. |
 | [Hybrid matrices & phase colour](hybrid.md) | 65 | Continuous and finite eta representations, signed Gram matrices, heat operators and rank–trace tools. Source files retain attribution for adapted results. |
-| [Squarefree & Möbius arithmetic](arithmetic.md) | 210 | Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem. |
+| [Squarefree & Möbius arithmetic](arithmetic.md) | 213 | Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem. |
 | [Hilbert inequalities & sampling](hilbert.md) | 12 | The attributed Montgomery–Vaughan Hilbert inequality and finite algebraic and inverse-sampling tools. |
 | [Zero-proportion interfaces](certificates.md) | 22 | Attributed Zeta23 baselines and project extensions. Individual sources distinguish external results from new deductions. |
 | [Certified numerical bounds](numerics.md) | 287 | Exact interval bounds, phase tables, coupled affine supports and finite-cover verifiers. Candidate certificate obligations remain explicit. |

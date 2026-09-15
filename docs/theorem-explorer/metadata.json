@@ -2443,7 +2443,10 @@
     "ZetaRieszShiftedHeadBudget": "arithmetic",
     "ZetaRieszHeadAdaptiveTransport": "arithmetic",
     "ZetaRieszPrimePairConvolution": "arithmetic",
-    "ZetaRieszPairOrders": "arithmetic"
+    "ZetaRieszPairOrders": "arithmetic",
+    "ZetaRieszPrimeCompletion": "arithmetic",
+    "ZetaRieszPrimeCompletionPhase": "arithmetic",
+    "ZetaRieszMatchedMiddle": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

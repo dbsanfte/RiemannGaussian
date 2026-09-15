@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 33,
-      "id": "pair-orders",
+      "sequence": 34,
+      "id": "matched-middle",
       "kind": "theorem",
-      "title": "Both outer prime-pair ranges now decay; the surviving prime phases stay coupled.",
-      "body": "Lean independently bounds both outer pair orders and a larger high-head range by C(P,u)*(N+1)^2*exp(-7N/9216), for every fixed filter and uniformly in height on 0<u<exp(-2/3). The repeated-prime diagonal also decays. Exact identities retain the middle pairs, shifted head moments and full negative source on the existing annular interval.",
-      "next": "Next: bound the real part of the shared prime quadratic together with the actual three-prime and higher-prime response. The middle pair orders M<8k<7M and remaining head 8k<7M are still uncontrolled jointly; other global source ranges retain their prior obligations.",
+      "title": "An actual middle head/pair block now has a concrete signed budget.",
+      "body": "Lean bounds the normalized real part of a nonempty matched block between -m_rho^2/8 and zero, under the exposed-zero hypotheses on the annular interval. Independent geometric prime-completion errors make its shared phases accessible. The exact complementary head orders, pair orders and higher-prime terms remain explicit.",
+      "next": "Next: bound the complementary signed carrier while retaining the matched block and its full multiplicity cost. The new bound uses the exposed-zero hypotheses and does not supply a subunit whole-carrier floor; other global source ranges remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszPairOuterBoundTheorem"
+        "rieszMatchedBlockBoundTheorem"
       ],
-      "documentation": "docs/zeta-riesz-pair-orders.md"
+      "documentation": "docs/zeta-riesz-matched-middle.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1416,6 +1416,57 @@
         "rieszPairOrdersScope"
       ],
       "documentation": "docs/zeta-riesz-pair-orders.md"
+    },
+    {
+      "id": "matched-middle",
+      "label": "Matched middle · signed head/pair budget",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeMiddleCompletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWeightedFinitePhaseTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUniformMatchedProductsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRelativeHeadCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMatchedAtomIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMatchedOrderBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMatchedBlockNonemptyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMatchedBlockBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMatchedComplementTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMatchedSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszMatchedMiddleScope"
+      ],
+      "documentation": "docs/zeta-riesz-matched-middle.md"
     }
   ],
   "scopes": {
@@ -3539,6 +3590,76 @@
       "summary": "At an exposed zero with u=3/2-Re(rho)<exp(-2/3), the remaining joint carrier has limit minus the full analytic zero multiplicity. Its independent cofinal real floor remains open.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-pair-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCompletion.eventually_norm_finite_sub_complete_le": {
+      "label": "Both omitted prime ranges have independent geometric error",
+      "summary": "Uniformly over moving orders N<=3k and 128k<=65N and all heights, the actual finite-complete prime error has bound 2Z*exp(-17N/12288) at normalization u^k, for 0<u<exp(-2/3). Both physical endpoints and genuine convergence are discharged.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-matched-middle.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCompletionPhase.tendsto_weighted_finite": {
+      "label": "The actual moving finite prime array inherits the exposed phase",
+      "summary": "At an exposed zero in the annular interval, k_N*u^k_N*F_(A_N),k_N tends to minus the full multiplicity for every eligible moving order. The exact derivative weight and zero/exposure premises remain explicit.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-matched-middle.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszMatchedMiddle.eventually_uniform_product_phases": {
+      "label": "Both matched product phases have one common threshold",
+      "summary": "The finite-finite pair and shifted finite-complete head product are both uniformly within m^2/24 of the positive multiplicity square after their exact source and derivative weights. This uses explicit exposed-zero hypotheses.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-matched-middle.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszMatchedMiddle.relative_head_cost_bounds": {
+      "label": "The literal relative head cost exceeds the pair half",
+      "summary": "The unchanged floor and order constraints imply 7/12<=k/(u*L_N)<=1, with no zero premise. The source-radius and physical-length bounds stay coupled.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-matched-middle.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszMatchedMiddle.normalized_sharedAtom_eq": {
+      "label": "One exact identity keeps the matched head and pair together",
+      "summary": "The common k*l*u^(k+l) normalization retains the pair half, the adjacent head derivative order and the ratio k/(u*L_N). No prime phase or source power is dropped.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-matched-middle.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszMatchedMiddle.matched_order_sum_le": {
+      "label": "The actual reciprocal-order cost is at most five thirty-seconds",
+      "summary": "For N>=256, the literal selected integer orders have cardinality at most N/32 and sum M/(k*(M-k))<=5/32, M=N+1. These are order counts and weights, not percentages of arithmetic mass.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-matched-middle.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszMatchedMiddle.half_mem_matchedOrders": {
+      "label": "The matched block is nonempty at the structural threshold",
+      "summary": "The balanced integer order floor(N/2) belongs to the actual block for N>=256, with every successor and complementary order constraint proved. This is not the eventual phase threshold.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-matched-middle.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszMatchedMiddle.eventually_matchedBlock_re_bounds": {
+      "label": "A whole actual middle head/pair block has a signed budget",
+      "summary": "Under explicit exposed-zero and annular hypotheses, eventually -m_rho^2/8<=Re(u^(N+1)*matchedBlock)<0. This is a bounded negative contribution, not a decay theorem or an independent whole-carrier floor. Multiplicity is unrestricted.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-matched-middle.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszMatchedMiddle.middleJoint_one_eq_unmatched_add_matched": {
+      "label": "Every complementary order and unpaired label remains explicit",
+      "summary": "The original unfiltered middle carrier equals unmatchedJoint+matchedBlock at every order. The unmatched head and pair use literal set differences; the original three-and-higher-prime arithmetic response stays present.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-matched-middle.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszMatchedMiddle.tendsto_unmatched_add_matched_exposed": {
+      "label": "The bounded block and its complement retain the complete source",
+      "summary": "Only their complete sum is asserted to retain the full negative multiplicity limit. The matched block is not silently discarded, and no separate source limit for the unmatched part is assumed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-matched-middle.md",
       "overview": true
     }
   }
