@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 32,
-      "id": "head-orders",
+      "sequence": 33,
+      "id": "pair-orders",
       "kind": "theorem",
-      "title": "A definite part of the completed prime head now decays independently.",
-      "body": "Lean bounds all high cofactor orders 16k>=15(N+j+1) by an explicit polynomial-times-geometric allowance, for every fixed filter and uniformly in height on 1/2<=u<exp(-2/3). The exact convolution keeps the remaining cofactor phases coupled. The whole signed floor remains open.",
-      "next": "Next: use correlations between the remaining head orders, central prime pairs, three-prime phases and higher-prime response to prove a joint cofinal real floor above -1. The paid high orders and the untouched global fallback ranges remain distinct.",
+      "title": "Both outer prime-pair ranges now decay; the surviving prime phases stay coupled.",
+      "body": "Lean independently bounds both outer pair orders and a larger high-head range by C(P,u)*(N+1)^2*exp(-7N/9216), for every fixed filter and uniformly in height on 0<u<exp(-2/3). The repeated-prime diagonal also decays. Exact identities retain the middle pairs, shifted head moments and full negative source on the existing annular interval.",
+      "next": "Next: bound the real part of the shared prime quadratic together with the actual three-prime and higher-prime response. The middle pair orders M<8k<7M and remaining head 8k<7M are still uncontrolled jointly; other global source ranges retain their prior obligations.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszHeadHighBoundTheorem"
+        "rieszPairOuterBoundTheorem"
       ],
-      "documentation": "docs/zeta-riesz-head-orders.md"
+      "documentation": "docs/zeta-riesz-pair-orders.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1365,6 +1365,57 @@
         "rieszHeadOrdersScope"
       ],
       "documentation": "docs/zeta-riesz-head-orders.md"
+    },
+    {
+      "id": "pair-orders",
+      "label": "Prime pairs · paid outer orders and shared phases",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAdaptiveLengthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAdaptiveHeadBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPairConvolutionIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPairConvolutionDiagonalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPairOrderReflectionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPairOuterBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPairMiddleTransportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPairJointTransportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharedPrimeFormTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPairMiddleSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszPairOrdersScope"
+      ],
+      "documentation": "docs/zeta-riesz-pair-orders.md"
     }
   ],
   "scopes": {
@@ -3418,6 +3469,76 @@
       "summary": "At an exposed zero in the annular parameter interval, the lower and middle head orders and all finite terms retain the complete negative multiplicity source. Their independent joint floor remains open.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-head-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHeadAdaptive.length_le_source_log": {
+      "label": "The cutoff retains its correlation with the source radius",
+      "summary": "The literal damped floor gives L_N<=-2N log(u) for 0<u<=3/5 and N>=3. Keeping u until the exponential estimate enlarges the independently controlled head order range.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-pair-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHeadAdaptiveTransport.norm_adaptiveHead_le": {
+      "label": "A larger part of the completed head decays independently",
+      "summary": "All orders 8k>=7(N+j+1) have allowance adaptiveHeadCost(P,u)*(N+1)^2*exp(-7N/9216), for every fixed P, uniformly in y, on 0<u<exp(-2/3) and N>=3. There is no zero or cancellation premise.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-pair-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimePairConvolution.pairLogResponse_eq_convolution_sub_diagonal": {
+      "label": "The finite pair correction is an exact quadratic minus its diagonal",
+      "summary": "Each distinct prime product has precisely two ordered incidences. The factor one half and one repeated-prime diagonal are proved exactly; every original polynomial shift and complex phase is retained.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-pair-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimePairConvolution.tendsto_pairDiagonal": {
+      "label": "The repeated-prime diagonal decays independently",
+      "summary": "For every moving finite prime mask and fixed P, the source-normalized diagonal tends to zero for 0<u<1. Its explicit bound uses rate 2u/(u+1), uniformly in height.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-pair-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPairOrders.full_sub_middle_eq_twice_high": {
+      "label": "Exact reflection keeps both complementary order phases",
+      "summary": "For every positive M, the complete quadratic minus M<8k<7M is exactly twice its 8k>=7M part. This is an identity of complex products, not a positivity assertion.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-pair-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPairOrders.norm_outerPairResponse_le": {
+      "label": "Both outer finite-pair ranges now decay independently",
+      "summary": "Orders 8k<=M and 8k>=7M together have bound outerPairCost(P,u)*(N+1)^2*exp(-7N/9216), uniformly in height for every fixed P, 0<u<exp(-2/3), N>=3. The symmetry factor cancels the original pair half.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-pair-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPairOrders.tendsto_centralPair_sub_middle": {
+      "label": "The actual central pair is transported to its middle orders",
+      "summary": "On 1/2<=u<exp(-2/3), the actual central pair differs from the middle convolution by an independently vanishing source error. The diagonal and every earlier central support correction have been paid.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-pair-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPairOrders.tendsto_centralJoint_sub_middleJoint": {
+      "label": "Every deleted whole-carrier component has independent vanishing error",
+      "summary": "The wider high head, pair diagonal, outer pair orders and central corrections have been discharged at the original normalization. This transport uses the existing annular interval and preserves the original unpaired response.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-pair-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPairOrders.middleJoint_eq_unpaired_add_form": {
+      "label": "The remaining head and pairs share one exact signed prime quadratic",
+      "summary": "The same finite moment array occurs in both terms; the head retains (k+1)F_(k+1) and the complete prime moment, while the pair retains its one half. All cross phases remain complex. The unpaired three-and-higher-prime response stays separate and present.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-pair-orders.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPairOrders.tendsto_middleJoint_exposed": {
+      "label": "The smaller remaining carrier retains the whole negative source",
+      "summary": "At an exposed zero with u=3/2-Re(rho)<exp(-2/3), the remaining joint carrier has limit minus the full analytic zero multiplicity. Its independent cofinal real floor remains open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-pair-orders.md",
       "overview": true
     }
   }

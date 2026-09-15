@@ -1,5 +1,9 @@
 # An independently paid part of the complete prime head
 
+The [subsequent adaptive head and pair-order slice](zeta-riesz-pair-orders.md)
+enlarges the controlled head range and bounds both outer prime-pair ranges.
+This page records the preceding estimate and its exact proof scope.
+
 [`ZetaRieszHeadOrders`](../RiemannGaussian/ZetaRieszHeadOrders.lean)
 proves an explicit geometric bound for the high factorial orders of the
 actual completed prime head. The remaining cofactor phases stay coupled.

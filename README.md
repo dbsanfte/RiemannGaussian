@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**A definite part of the completed prime head now decays independently.** Lean bounds all high cofactor orders 16k>=15(N+j+1) by an explicit polynomial-times-geometric allowance, for every fixed filter and uniformly in height on 1/2<=u<exp(-2/3). The exact convolution keeps the remaining cofactor phases coupled. The whole signed floor remains open.
-Next: use correlations between the remaining head orders, central prime pairs, three-prime phases and higher-prime response to prove a joint cofinal real floor above -1. The paid high orders and the untouched global fallback ranges remain distinct.
-[Current checked endpoint](RiemannGaussian/ZetaRieszHeadOrders.lean#L430)
-· [Proof details](docs/zeta-riesz-head-orders.md).
+**Both outer prime-pair ranges now decay; the surviving prime phases stay coupled.** Lean independently bounds both outer pair orders and a larger high-head range by C(P,u)*(N+1)^2*exp(-7N/9216), for every fixed filter and uniformly in height on 0<u<exp(-2/3). The repeated-prime diagonal also decays. Exact identities retain the middle pairs, shifted head moments and full negative source on the existing annular interval.
+Next: bound the real part of the shared prime quadratic together with the actual three-prime and higher-prime response. The middle pair orders M<8k<7M and remaining head 8k<7M are still uncontrolled jointly; other global source ranges retain their prior obligations.
+[Current checked endpoint](RiemannGaussian/ZetaRieszPairOrders.lean#L217)
+· [Proof details](docs/zeta-riesz-pair-orders.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

@@ -1007,6 +1007,53 @@ def run(output, url=None, refresh_preview=False):
                                 assert 'theorem ' + theorem['id'].rsplit('.', 1)[-1] in source_page.locator('.source-line:target').inner_text()
                                 source_page.close()
                             page.locator('#close-details').click()
+                    if endpoint['id'] == 'pair-orders':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in (
+                            '8k>=7(N+j+1)', '8k<=M or 8k>=7M',
+                            'exp(-7N/9216)', 'No zero, exposure or cancellation premise',
+                            '1/2<=u<exp(-2/3)', 'not fractions of arithmetic mass',
+                            'joint cofinal real floor above -1 remains open'))
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        bound = next(n for n in roots if n['id'].endswith('.norm_outerPairResponse_le'))
+                        statement = ' '.join(bound['statement'].split())
+                        assert all(t in statement for t in (
+                            '0 < u', 'u < Real.exp (-(2 / 3))', '3 ≤ N',
+                            'outerPairResponse', 'outerPairCost', 'adaptiveRate'))
+                        assert 'NontrivialZetaZero' not in statement
+                        assert 'hexposed' not in statement
+                        diagonal = next(n for n in roots if n['id'].endswith('.tendsto_pairDiagonal'))
+                        assert all(t in diagonal['statement'] for t in ('0 < u', 'u < 1', 'pairDiagonal'))
+                        assert 'NontrivialZetaZero' not in diagonal['statement']
+                        transport = next(n for n in roots if n['id'].endswith('.tendsto_centralJoint_sub_middleJoint'))
+                        assert all(t in transport['statement'] for t in (
+                            'centralJoint', 'middleJoint', '1 / 2 ≤ u'))
+                        assert 'NontrivialZetaZero' not in transport['statement']
+                        form = next(n for n in roots if n['id'].endswith('.middleJoint_eq_unpaired_add_form'))
+                        assert all(t in form['statement'] for t in (
+                            'centralUnpairedResponse', 'jointPrimeForm'))
+                        source = next(n for n in roots if n['id'].endswith('.tendsto_middleJoint_exposed'))
+                        assert all(t in source['statement'] for t in (
+                            'NontrivialZetaZero', 'middleJoint', 'analyticZetaZeroMultiplicity'))
+                        for theorem in (bound, form, source):
+                            selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', theorem['id'])
+                            node = page.locator(f'[data-node="{selected}"]')
+                            node.hover()
+                            assert page.locator('#tooltip').is_visible()
+                            node.click()
+                            assert page.locator('#details pre').inner_text().strip() == theorem['statement'].strip()
+                            link = page.locator('#details .source-button').get_attribute('href')
+                            assert link.endswith(f"#L{theorem['source']['line']}")
+                            if published:
+                                assert f"/blob/{revision}/{theorem['source']['path']}" in link
+                            else:
+                                with page.expect_popup() as opened:
+                                    page.locator('#details .source-button').click()
+                                source_page = opened.value
+                                source_page.wait_for_selector('.source-line:target')
+                                assert 'theorem ' + theorem['id'].rsplit('.', 1)[-1] in source_page.locator('.source-line:target').inner_text()
+                                source_page.close()
+                            page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()

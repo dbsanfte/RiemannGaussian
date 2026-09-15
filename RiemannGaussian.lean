@@ -1735,3 +1735,8 @@ import RiemannGaussian.ZetaRieszCentralPair
 import RiemannGaussian.ZetaRieszTriplePrime
 import RiemannGaussian.ZetaRieszCentralPrimeLayers
 import RiemannGaussian.ZetaRieszHeadOrders
+import RiemannGaussian.ZetaRieszHeadAdaptive
+import RiemannGaussian.ZetaRieszShiftedHeadBudget
+import RiemannGaussian.ZetaRieszHeadAdaptiveTransport
+import RiemannGaussian.ZetaRieszPrimePairConvolution
+import RiemannGaussian.ZetaRieszPairOrders

@@ -2703,6 +2703,38 @@ regions, RH, or historical novelty. See `docs/zeta-riesz-head-orders.md`
 and supporting endpoint `head-orders`; preserve the default whole-carrier
 endpoint and both ten-entry README lists.
 
+`ZetaRieszHeadAdaptiveTransport.norm_adaptiveHead_le` now independently
+pays the larger head range 8k>=7M, M=N+j+1, with allowance
+adaptiveHeadCost(P,u)*(N+1)^2*exp(-7N/9216), for every fixed P,
+uniformly y, 0<u<exp(-2/3), N>=3. Keep the actual correlation
+L_N<=-2N*log(u); the damped physical floor is unchanged.
+`ZetaRieszPrimePairConvolution.pairLogResponse_eq_convolution_sub_diagonal`
+retains the exact unordered pair half and repeated-prime diagonal.
+Distinct products have two ordered incidences, not one or an arbitrary
+multiplicity. The diagonal independently decays for 0<u<1 at rate
+2u/(u+1), including arbitrary moving finite prime masks.
+`ZetaRieszPairOrders.norm_outerPairResponse_le` pays BOTH pair ranges
+8k<=M and 8k>=7M with outerPairCost(P,u)*(N+1)^2*exp(-7N/9216),
+on the same independent component interval and threshold as the head.
+Exact complex order reflection cancels the original pair half; do not
+replace the product by a Hermitian square or assert positivity.
+The whole central transport still uses ONLY 1/2<=u<exp(-2/3), with
+every earlier central error and clip correction discharged. Order three
+is this estimate's threshold; order twenty remains the clip threshold.
+`middleJoint_eq_unpaired_add_form` retains one shared prime quadratic:
+the head has 8k<7M and (k+1)*F_(k+1)*B_(M-k)/L_N with its negative
+sign, while the pair has M<8k<7M and F_k*F_(M-k)/2. Keep the finite
+prime array, adjacent derivative order, complete prime moment and all
+fixed filter coefficients together. Neither prime series is silently
+completed or truncated. The actual unpaired three-prime and >=4-prime
+terms remain with every prior mask. `tendsto_middleJoint_exposed`
+preserves the full negative multiplicity source. Its independent JOINT
+cofinal real floor above -1 remains open. These controlled order ranges
+are not percentages of arithmetic mass. All other global source ranges
+retain prior obligations; no RH proof or new zero-free region follows.
+See `docs/zeta-riesz-pair-orders.md` and supporting endpoint `pair-orders`;
+preserve the default whole-carrier endpoint and both ten-entry README lists.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

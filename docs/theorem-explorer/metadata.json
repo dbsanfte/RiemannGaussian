@@ -2438,7 +2438,12 @@
     "ZetaRieszCentralPair": "arithmetic",
     "ZetaRieszTriplePrime": "arithmetic",
     "ZetaRieszCentralPrimeLayers": "arithmetic",
-    "ZetaRieszHeadOrders": "arithmetic"
+    "ZetaRieszHeadOrders": "arithmetic",
+    "ZetaRieszHeadAdaptive": "arithmetic",
+    "ZetaRieszShiftedHeadBudget": "arithmetic",
+    "ZetaRieszHeadAdaptiveTransport": "arithmetic",
+    "ZetaRieszPrimePairConvolution": "arithmetic",
+    "ZetaRieszPairOrders": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
