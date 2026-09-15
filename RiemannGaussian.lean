@@ -1677,3 +1677,6 @@ import RiemannGaussian.ZetaRieszEulerGrowingHead
 import RiemannGaussian.ZetaRieszEulerWindowDeletion
 import RiemannGaussian.ZetaRieszEulerPrimeHeadDensity
 import RiemannGaussian.ZetaRieszEulerQuadraticHead
+import RiemannGaussian.ZetaRieszSmoothHead
+import RiemannGaussian.ZetaRieszSmoothDeletion
+import RiemannGaussian.ZetaRieszSmoothCofactor

@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 19,
-      "id": "quadratic-euler-head-deletion",
+      "sequence": 20,
+      "id": "smooth-prime-deletion",
       "kind": "theorem",
-      "title": "Prime density pays the correction coupled to all head primes through N².",
-      "body": "Lean now uses actual prime density to bound the complete correction multiplied by the prime head through N² at every original factorial order. Its subexponential allowance is absorbed by the original geometric saving. The literal band, phases, cutoff and negative multiplicity source are retained. The compensated leading quotient, mixed correction and signed boundary still require their joint independent floor.",
-      "next": "Next: bound a further actual arithmetic class or the complete signed residual while preserving its leading, mixed and boundary correlations.",
+      "title": "The arithmetic tail now excludes every N²-smooth squarefree term.",
+      "body": "Lean gives all N²-smooth squarefree terms a vanishing allowance proportional to N*(sqrt(u))^N, with the complete original filter and cutoff. This combines with the paid composite-cofactor range: remaining labels have a prime above N² and every eligible composite cofactor above its threshold. The exact negative source and connection to the signed Euler residual survive. A joint independent floor for the remaining sum is still open.",
+      "next": "Next: bound the combined remaining semiprime and large-composite-cofactor sum, retaining the Riesz signs, cutoff and cross-prime correlations.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszEulerQuadraticBandDeletionTheorem"
+        "rieszSmoothJointDeletionTheorem"
       ],
-      "documentation": "docs/zeta-riesz-euler-quadratic-head.md"
+      "documentation": "docs/zeta-riesz-smooth-prime-deletion.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -618,6 +618,65 @@
         "rieszEulerQuadraticHeadScope"
       ],
       "documentation": "docs/zeta-riesz-euler-quadratic-head.md"
+    },
+    {
+      "id": "smooth-prime-deletion",
+      "label": "Actual smooth terms · joint prime and cofactor deletion",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothPrimeMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothAllFamiliesTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothExactPartitionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothBandDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothJointPartitionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothJointDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothPrimeSupportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothCofactorSupportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothJointSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothEulerBridgeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothFloorClosureTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSmoothHeadScope"
+      ],
+      "documentation": "docs/zeta-riesz-smooth-prime-deletion.md"
     }
   ],
   "scopes": {
@@ -1635,6 +1694,90 @@
       "summary": "A cofinal real floor above minus one for every full normalized quadratic residual would imply Mathlib RH. The arithmetic floor is an explicit unproved premise, not a proved bound.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothHead.squarefree_head_mass_le": {
+      "label": "All squarefree head classes · exact prime-subset allowance",
+      "summary": "The actual divisor-count mass of any finite squarefree class supported on a prime head is bounded by one Euler product, with arbitrary band restrictions retained.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothHead.eventually_norm_quadratic_head_sum_le_sqrt": {
+      "label": "Actual smooth terms · explicit N times square-root geometric rate",
+      "summary": "Every prime head through N^2 has eventual normalized allowance 32*log(2)*u*sum(norm(P_k))*N*(sqrt(u))^N. The threshold is uniform over classes, polynomial filters, ordinates and positive physical lengths; the full filter cost is displayed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothHead.tendsto_actual_quadratic_head_sum": {
+      "label": "Every smooth family · independent full-filter decay",
+      "summary": "All original squarefree band classes supported through N^2 decay at every order, for every fixed filter and every positive physical-length schedule.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothDeletion.actual_band_eq_smooth_add_rough": {
+      "label": "Literal signed band · exact smooth and rough partition",
+      "summary": "The original coefficient, log phases, factorial offsets and physical length are unchanged in the exact split into smooth labels and labels with a prime above the chosen head.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothDeletion.tendsto_actual_band_sub_quadraticRoughResponse": {
+      "label": "Original band · all N-squared smooth terms independently removed",
+      "summary": "The literal normalized band differs negligibly from its actual rough-prime sum, with no hypothetical-zero premise.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothCofactor.optimized_sum_eq_smooth_add_rough": {
+      "label": "Previous cofactor residual · smooth intersection removed exactly",
+      "summary": "The new split keeps the previously paid cofactor deletion and counts each surviving original label once.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothCofactor.tendsto_actual_band_sub_optimizedRoughResponse": {
+      "label": "Two arithmetic deletions · complete error tends to zero",
+      "summary": "The actual band retains both the optimized cofactor restriction and a prime above N^2. Their combined deletion error vanishes independently at every original order, including scalar contact.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothCofactor.optimizedRoughBand_support": {
+      "label": "Every remaining label · actual prime above N-squared",
+      "summary": "Each surviving label is squarefree, belongs to the earlier cofactor residual and has a genuine prime divisor greater than N^2.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothCofactor.optimizedRoughBand_cofactor_gt": {
+      "label": "Every composite cofactor · previous threshold retained",
+      "summary": "Each eligible composite cofactor of every remaining prime insertion exceeds the explicit optimized threshold, including the polynomial fallback at the scalar contact. Semiprimes remain explicit.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothCofactor.tendsto_normalizedOptimizedRoughResponse": {
+      "label": "Exact negative source · both support restrictions preserved",
+      "summary": "Under a hypothetical right-half zero, the remaining actual arithmetic sum retains its exact negative multiplicity source at every original order.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothCofactor.tendsto_quadraticResidual_sub_optimizedRoughResponse": {
+      "label": "Signed Euler residual · independent bridge to the arithmetic sum",
+      "summary": "The signed quadratic Euler-window residual and the more tightly supported actual sum differ by a proved vanishing normalized error, without a hypothetical-zero premise.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmoothCofactor.rh_of_optimizedRoughResponse_cofinal_floors": {
+      "label": "Conditional RH closure · remaining full floor still required",
+      "summary": "A cofinal real floor above minus one for every complete remaining sum would imply Mathlib RH. The independent arithmetic floor remains an explicit unproved premise.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
       "overview": true
     }
   }

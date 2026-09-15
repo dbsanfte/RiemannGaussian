@@ -520,6 +520,53 @@ def run(output, url=None, refresh_preview=False):
                             assert 'theorem tendsto_actual_band_sub_quadraticResidual' in source_page.locator('.source-line:target').inner_text()
                             source_page.close()
                         page.locator('#close-details').click()
+                    if endpoint['id'] == 'smooth-prime-deletion':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert '32*log(2)*u*sum(norm(P_k))*N*(sqrt(u))^N' in scope
+                        assert 'actual prime above N^2' in scope
+                        assert 'scalar contact with its polynomial fallback' in scope
+                        assert 'Semiprimes and larger surviving composite cofactors remain coupled' in scope
+                        assert 'RH remains open' in scope
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        deletion = next(n for n in roots if n['id'].endswith('.tendsto_actual_band_sub_optimizedRoughResponse'))
+                        statement = ' '.join(deletion['statement'].split())
+                        assert all(t in statement for t in (
+                            '1 / 2 < u', 'u < 1', 'zetaArithmeticBand', 'optimizedRoughResponse',
+                            'SquarefreeVaughanLogSource.length', 'Tendsto'))
+                        assert 'NontrivialZetaZero' not in statement
+                        rate = next(n for n in roots if n['id'].endswith('.eventually_norm_quadratic_head_sum_le_sqrt'))
+                        assert all(t in ' '.join(rate['statement'].split()) for t in (
+                            '0 < u', 'u < 1', '∀ᶠ', 'Nat.Prime p', 'p ≤ N ^ 2',
+                            '0 < L', '32', '√u ^ N', 'coefficient L'))
+                        support = next(n for n in roots if n['id'].endswith('.optimizedRoughBand_support'))
+                        assert all(t in support['statement'] for t in (
+                            'optimizedReducedBand', 'Squarefree n', 'Nat.Prime p', 'p ∣ n', 'N ^ 2 < p'))
+                        cofactor = next(n for n in roots if n['id'].endswith('.optimizedRoughBand_cofactor_gt'))
+                        assert all(t in cofactor['statement'] for t in (
+                            'optimizedRoughBand', 'optimizedCofactorThreshold', 'n = p * a'))
+                        bridge = next(n for n in roots if n['id'].endswith('.tendsto_quadraticResidual_sub_optimizedRoughResponse'))
+                        assert all(t in bridge['statement'] for t in (
+                            'windowResidualResponse', 'optimizedRoughResponse', 'N ^ 2', 'Tendsto'))
+                        assert 'NontrivialZetaZero' not in bridge['statement']
+                        closure = next(n for n in roots if n['id'].endswith('.rh_of_optimizedRoughResponse_cofinal_floors'))
+                        assert all(t in closure['statement'] for t in (
+                            '∀ (rho', '∃ c < 1', '∃ᶠ', 'normalizedOptimizedRoughResponse', '→', 'RiemannHypothesis'))
+                        assert deletion['source']['path'].endswith('ZetaRieszSmoothCofactor.lean')
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', deletion['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        assert page.locator('#details pre').inner_text().strip() == deletion['statement'].strip()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{deletion['source']['line']}")
+                        if published:
+                            assert f"/blob/{revision}/{deletion['source']['path']}" in link
+                        else:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem tendsto_actual_band_sub_optimizedRoughResponse' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -539,6 +586,7 @@ def run(output, url=None, refresh_preview=False):
                                'originalBandCorrectionDeletionAndExplicitResidual': True,
                                'growingPrimeHeadDeletionAndCofinalSource': True,
                                'quadraticPrimeDensityDeletionAtEveryOrder': True,
+                               'actualSmoothRateAndJointPrimeCofactorDeletion': True,
                                'scalarTiltAuditDistinguishedFromArithmeticBound': True})
                 page.close()
             browser.close()

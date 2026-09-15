@@ -2424,6 +2424,25 @@ zero-free width. See `docs/zeta-riesz-euler-quadratic-head.md` and supporting
 endpoint `euler-quadratic-head-deletion`; retain the default whole-carrier
 endpoint.
 
+`ZetaRieszSmoothHead`, `ZetaRieszSmoothDeletion` and `ZetaRieszSmoothCofactor`
+now pay the actual N^2-smooth squarefree band terms, including their original
+signed Riesz coefficient and complete factorial filter. For 0<u<1 the
+explicit eventual allowance is 32*log(2)*u*sum(norm(P_k))*N*(sqrt(u))^N.
+The threshold is uniform over the selected classes, filters, ordinates and
+positive physical lengths; the displayed filter cost remains, and no
+numerical starting order is claimed. This deletion combines with the
+previous optimized cofactor class: every remaining label has a prime above
+N^2 and every eligible composite cofactor exceeds its paid threshold.
+Keep the scalar-contact polynomial fallback. Semiprimes and larger
+composite cofactors remain coupled. Both deletion errors vanish independently,
+the exact negative source survives, and an independent vanishing-error bridge
+connects the new actual sum with the signed quadratic Euler-window residual.
+Do not infer that the individual Euler factors now have only large-prime
+support or that the whole remaining sum is bounded. Its independent joint
+floor and RH remain open; the displayed RH closure is conditional. See
+`docs/zeta-riesz-smooth-prime-deletion.md` and endpoint `smooth-prime-deletion`;
+retain the default whole-carrier endpoint and both ten-entry README lists.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

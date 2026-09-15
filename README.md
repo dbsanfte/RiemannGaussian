@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Prime density pays the correction coupled to all head primes through N².** Lean now uses actual prime density to bound the complete correction multiplied by the prime head through N² at every original factorial order. Its subexponential allowance is absorbed by the original geometric saving. The literal band, phases, cutoff and negative multiplicity source are retained. The compensated leading quotient, mixed correction and signed boundary still require their joint independent floor.
-Next: bound a further actual arithmetic class or the complete signed residual while preserving its leading, mixed and boundary correlations.
-[Current checked endpoint](RiemannGaussian/ZetaRieszEulerQuadraticHead.lean#L50)
-· [Proof details](docs/zeta-riesz-euler-quadratic-head.md).
+**The arithmetic tail now excludes every N²-smooth squarefree term.** Lean gives all N²-smooth squarefree terms a vanishing allowance proportional to N*(sqrt(u))^N, with the complete original filter and cutoff. This combines with the paid composite-cofactor range: remaining labels have a prime above N² and every eligible composite cofactor above its threshold. The exact negative source and connection to the signed Euler residual survive. A joint independent floor for the remaining sum is still open.
+Next: bound the combined remaining semiprime and large-composite-cofactor sum, retaining the Riesz signs, cutoff and cross-prime correlations.
+[Current checked endpoint](RiemannGaussian/ZetaRieszSmoothCofactor.lean#L107)
+· [Proof details](docs/zeta-riesz-smooth-prime-deletion.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
