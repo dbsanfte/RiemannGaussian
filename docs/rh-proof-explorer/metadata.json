@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 30,
-      "id": "prefix-central-window",
+      "sequence": 31,
+      "id": "central-prime-layers",
       "kind": "theorem",
-      "title": "More of the signed arithmetic tail is independently bounded.",
-      "body": "Lean bounds both outer portions of the actual signed carrier, leaving 3N/2<log(n)<=8N/3 for 0<u<exp(-2/3), with the whole negative multiplicity source retained. It also removes the prime-square and mixed small/intermediate-prime prefix classes and proves the exact clipped two-prime correction. The central signed sum and the joint completed-prime floor remain open.",
-      "next": "Next: transport the central window through the completed representation, keeping the completed head coupled to the prime-pair correction and the unpaired subcutoff terms. Their independent whole-sum floor is still the target.",
+      "title": "The surviving three-prime coefficients now have a proved sign and bound.",
+      "body": "Lean proves that every actual three-prime coefficient in the remaining annulus is nonnegative and at most half log(n), with a sharper bound vanishing at its reflection midpoint. The central transport keeps the complete prime head and exposes four exact components. The three-prime lower bound pays only negative phases; the whole source-scale floor remains open.",
+      "next": "Next: control the coupled complete head, log-weighted pair correction, negative phases of the three-prime response and the actual four-or-more-prime coefficients. Keep their correlations until a cofinal floor strictly above -1 is proved.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszCentralWindowBoundTheorem"
+        "rieszCentralThreeBoundsTheorem"
       ],
-      "documentation": "docs/zeta-riesz-prefix-central-window.md"
+      "documentation": "docs/zeta-riesz-central-prime-layers.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1275,6 +1275,53 @@
         "rieszPrefixCentralScope"
       ],
       "documentation": "docs/zeta-riesz-prefix-central-window.md"
+    },
+    {
+      "id": "central-prime-layers",
+      "label": "Central carrier · three-prime sign and amplitude bounds",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralJointTransportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralJointSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralPairLogTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralUnpairedDegreeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszThreePrimeCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszThreePrimeMidpointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralThreeBoundsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralPrimeLayersTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralThreePhaseBoundTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCentralPrimeLayersScope"
+      ],
+      "documentation": "docs/zeta-riesz-central-prime-layers.md"
     }
   ],
   "scopes": {
@@ -3209,6 +3256,69 @@
       "summary": "Intersecting the whole actual annulus with the new central window preserves every earlier arithmetic mask and the full exposed-zero multiplicity source. Its independent central signed floor remains open.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-prefix-central-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralPair.eventually_norm_refined_sub_centralJoint_le": {
+      "label": "The central transport pays two finite errors and keeps the whole head",
+      "summary": "On 1/2<=u<exp(-2/3), the normalized transport error is at most 2E_N with both explicit geometric rates. The completed prime head is neither truncated nor separately normed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-central-prime-layers.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralPair.tendsto_centralJoint_exposed": {
+      "label": "The complete central representation retains the whole exposed source",
+      "summary": "The three coupled components retain minus the full zero multiplicity on the annular source interval. Their independent joint lower floor remains open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-central-prime-layers.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralPair.centralPairResponse_eq_log_sum": {
+      "label": "The actual central pair clip is one from order twenty",
+      "summary": "For u>=1/2 and N>=20, the literal floor implies L_N<=3N/2. Every central paired integer has coefficient exactly log(n), with its full phase and unique integer counting. Twenty is only this clip threshold.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-central-prime-layers.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralPair.eventually_centralUnpaired_three_primes": {
+      "label": "Every nonzero unpaired survivor has at least three distinct primes",
+      "summary": "The actual central unpaired support retains every old arithmetic cut. The previous two-large-prime theorem and exact prime-pair classification exclude every lower prime degree eventually.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-central-prime-layers.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszTriplePrime.actual_three_prime_coefficient_bounds": {
+      "label": "Actual three-prime coefficients have a known sign and half-logarithm bound",
+      "summary": "For L>0 and log(n)<=2L, every actual coefficient with exactly three distinct prime factors is nonnegative and has norm at most log(n)/2. The proof retains the third-prime difference of two full tents.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-central-prime-layers.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszTriplePrime.norm_actual_three_prime_le_midpoint_gap": {
+      "label": "The three-prime allowance vanishes at the reflection midpoint",
+      "summary": "The same literal coefficient is bounded by (log(n)/L)*(2L-log(n)) in the upper-cutoff half of its logarithmic support. This is an independent amplitude bound, not cancellation of its oscillating sum.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-central-prime-layers.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralPrimeLayers.central_three_coefficient_bounds": {
+      "label": "The actual remaining support discharges every three-prime bound premise",
+      "summary": "The physical annulus X_N<n<X_N^2 supplies log(n)<2L_N with the integer floor kept. Every surviving three-prime coefficient therefore has the sign, half-logarithm and reflection-gap bounds without a zero premise.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-central-prime-layers.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralPrimeLayers.eventually_centralJoint_eq_prime_layers": {
+      "label": "The whole carrier keeps four explicit prime-degree components coupled",
+      "summary": "The exact identity retains the complete prime head, central log-weighted pair correction, actual three-prime response and actual four-or-more-prime response. No term is asserted to decay separately.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-central-prime-layers.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralPrimeLayers.re_normalized_three_ge_negative_phase": {
+      "label": "The entire three-prime response pays only negative phase observations",
+      "summary": "A source-normalized independent lower bound uses only max(0,-Re K), with coefficient half log(n), uniformly in height and the fixed filter. The explicit negative-phase cost is still unbounded at the source scale.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-central-prime-layers.md",
       "overview": true
     }
   }

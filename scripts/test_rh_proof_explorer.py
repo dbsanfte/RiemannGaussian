@@ -921,6 +921,51 @@ def run(output, url=None, refresh_preview=False):
                                 assert 'theorem ' + theorem['id'].rsplit('.', 1)[-1] in source_page.locator('.source-line:target').inner_text()
                                 source_page.close()
                             page.locator('#close-details').click()
+                    if endpoint['id'] == 'central-prime-layers':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in (
+                            'whole completed prime head retained', 'Twenty is only the clip threshold',
+                            'log(n)/2', 'four-or-more-prime response',
+                            'unevaluated phase cost is not a subunit source-scale floor',
+                            'whole joint floor remains open'))
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        bound = next(n for n in roots if n['id'].endswith('.actual_three_prime_coefficient_bounds'))
+                        statement = ' '.join(bound['statement'].split())
+                        assert all(t in statement for t in (
+                            'n.primeFactors.card = 3', '0 < L', '2 * L',
+                            'SquarefreeVaughanLogSource.coefficient', 'Real.log'))
+                        assert 'NontrivialZetaZero' not in statement
+                        clip = next(n for n in roots if n['id'].endswith('.centralPairResponse_eq_log_sum'))
+                        assert all(t in ' '.join(clip['statement'].split()) for t in (
+                            '1 / 2 ≤ u', '20 ≤ N', 'centralPairResponse', 'centralBand'))
+                        layers = next(n for n in roots if n['id'].endswith('.eventually_centralJoint_eq_prime_layers'))
+                        assert all(t in layers['statement'] for t in (
+                            'completedCofactorHead', 'centralPairResponse',
+                            'centralThreePrimeResponse', 'centralHigherPrimeResponse'))
+                        phase = next(n for n in roots if n['id'].endswith('.re_normalized_three_ge_negative_phase'))
+                        assert all(t in ' '.join(phase['statement'].split()) for t in (
+                            '0 ≤ u', 'u < Real.exp (-(2 / 3))', 'max 0',
+                            'zetaPrimeFilterKernel', 'centralThreePrimeResponse'))
+                        assert 'NontrivialZetaZero' not in phase['statement']
+                        for theorem in (bound, phase):
+                            selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', theorem['id'])
+                            node = page.locator(f'[data-node="{selected}"]')
+                            node.hover()
+                            assert page.locator('#tooltip').is_visible()
+                            node.click()
+                            assert page.locator('#details pre').inner_text().strip() == theorem['statement'].strip()
+                            link = page.locator('#details .source-button').get_attribute('href')
+                            assert link.endswith(f"#L{theorem['source']['line']}")
+                            if published:
+                                assert f"/blob/{revision}/{theorem['source']['path']}" in link
+                            else:
+                                with page.expect_popup() as opened:
+                                    page.locator('#details .source-button').click()
+                                source_page = opened.value
+                                source_page.wait_for_selector('.source-line:target')
+                                assert 'theorem ' + theorem['id'].rsplit('.', 1)[-1] in source_page.locator('.source-line:target').inner_text()
+                                source_page.close()
+                            page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()
@@ -948,7 +993,8 @@ def run(output, url=None, refresh_preview=False):
                                'fourExtremePrimeBoundAndOpenWholeResidualFloor': True,
                                'physicalAnnulusBoundAndJointTwoClassObstruction': True,
                                'completePrimeRangeBoundAndRetainedSignedPrefix': True,
-                               'boundedPrefixComponentsAndActualCentralWindow': True})
+                               'boundedPrefixComponentsAndActualCentralWindow': True,
+                               'centralThreePrimeSignBoundsAndNegativePhaseCost': True})
                 page.close()
             browser.close()
     finally:

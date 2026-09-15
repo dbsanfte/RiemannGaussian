@@ -2645,12 +2645,38 @@ with rates (3/2)*exp(-631/1536)<1 and (8/3)*exp(-95/96)<1. The actual
 central annulus retains every older support cut and its whole exposed-zero
 source. The central signed floor remains open. Do not silently apply this
 central restriction to the completed head or assume any separate surviving
-component decays. The completed representation needs its own exact transport.
+component decays. The completed representation has its own exact transport
+in `ZetaRieszCentralPair`, described below.
 Other source scales retain all previous fallback regimes. No RH proof,
 new zero-free region, numerical zero bound or historical novelty follows.
 See `docs/zeta-riesz-prefix-central-window.md` and supporting endpoint
 `prefix-central-window`; preserve the default whole-carrier endpoint and
 both ten-entry README lists.
+
+`ZetaRieszCentralPair.eventually_norm_refined_sub_centralJoint_le` now
+transports the two finite components to the central window with allowance
+2E_N on 1/2<=u<exp(-2/3), while retaining the entire completed prime head.
+For u>=1/2 and N>=20, the actual floor gives L_N<=3N/2, so the central
+pair clip is identically one. Order twenty is ONLY this clip threshold,
+not the starting order for all earlier asymptotic transports. Every
+nonzero central unpaired coefficient eventually has >=3 distinct primes.
+`ZetaRieszTriplePrime.actual_three_prime_coefficient_bounds` proves
+0<=C_L(n)<=log(n)/2 for the actual three-prime coefficients when L>0 and
+log(n)<=2L. `norm_actual_three_prime_le_midpoint_gap` also bounds their
+norm by (log(n)/L)*(2L-log(n)). The exact third-prime insertion is a
+difference of two complete tents; keep that signed identity. The actual
+annular support discharges log(n)<2L_N without a zero assumption.
+`ZetaRieszCentralPrimeLayers.eventually_centralJoint_eq_prime_layers`
+retains four terms: whole completed head, central log-weighted prime pairs,
+actual three-prime response, and actual >=4-prime response. Known signs
+apply only to the pair and three-prime coefficients; cosine phases can
+still be negative. `re_normalized_three_ge_negative_phase` pays only
+negative observations with the half-logarithm budget. Its unevaluated
+phase cost is NOT a subunit source-scale floor. The joint floor, RH and
+all remaining global source ranges stay open. No new zero-free region
+or historical novelty is claimed. See `docs/zeta-riesz-central-prime-layers.md`
+and supporting endpoint `central-prime-layers`; preserve the default
+whole-carrier endpoint and both ten-entry README lists.
 
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state

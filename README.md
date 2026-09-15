@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**More of the signed arithmetic tail is independently bounded.** Lean bounds both outer portions of the actual signed carrier, leaving 3N/2<log(n)<=8N/3 for 0<u<exp(-2/3), with the whole negative multiplicity source retained. It also removes the prime-square and mixed small/intermediate-prime prefix classes and proves the exact clipped two-prime correction. The central signed sum and the joint completed-prime floor remain open.
-Next: transport the central window through the completed representation, keeping the completed head coupled to the prime-pair correction and the unpaired subcutoff terms. Their independent whole-sum floor is still the target.
-[Current checked endpoint](RiemannGaussian/ZetaRieszCentralWindow.lean#L159)
-· [Proof details](docs/zeta-riesz-prefix-central-window.md).
+**The surviving three-prime coefficients now have a proved sign and bound.** Lean proves that every actual three-prime coefficient in the remaining annulus is nonnegative and at most half log(n), with a sharper bound vanishing at its reflection midpoint. The central transport keeps the complete prime head and exposes four exact components. The three-prime lower bound pays only negative phases; the whole source-scale floor remains open.
+Next: control the coupled complete head, log-weighted pair correction, negative phases of the three-prime response and the actual four-or-more-prime coefficients. Keep their correlations until a cofinal floor strictly above -1 is proved.
+[Current checked endpoint](RiemannGaussian/ZetaRieszCentralPrimeLayers.lean#L58)
+· [Proof details](docs/zeta-riesz-central-prime-layers.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

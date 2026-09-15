@@ -2434,7 +2434,10 @@
     "ZetaRieszMixedPrefixTransport": "arithmetic",
     "ZetaRieszRemainingPrefix": "arithmetic",
     "ZetaRieszPairedCorrection": "arithmetic",
-    "ZetaRieszCentralWindow": "arithmetic"
+    "ZetaRieszCentralWindow": "arithmetic",
+    "ZetaRieszCentralPair": "arithmetic",
+    "ZetaRieszTriplePrime": "arithmetic",
+    "ZetaRieszCentralPrimeLayers": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

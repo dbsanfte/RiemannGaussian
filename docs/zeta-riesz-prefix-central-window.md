@@ -135,8 +135,11 @@ The central signed Riesz sum still needs an independent cofinal lower
 floor at least $-c$ for some $c<1$. In the completed representation,
 the completed head $H_N$, the unpaired subcutoff response $U_N$, and the
 explicit prime-pair correction require their **joint** phase control.
-Combining the central deletion with that completed representation is a
-further transport step; no separate decay of those three sums is asserted.
+The [central prime-layer refinement](zeta-riesz-central-prime-layers.md)
+now proves that transport with error at most twice the displayed allowance,
+while keeping the head whole. It also identifies the exact central pair
+weight and bounds the actual three-prime coefficients. No separate decay
+of the three surviving sums is asserted.
 
 The component decay rates do not give a numerical starting order, a
 new zero-free region, or RH. All eight modules belong to the arithmetic
