@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Exact head and central costs leave three arithmetic sums.** Lean evaluates the entire complete head and central block, retaining all original integer endpoints and prime-product errors. Their combined cost is minus the full multiplicity square times an explicit c(u)<1 on the existing annulus. Multiplicity and exposed-zero hypotheses remain explicit; this is a component bound.
-Next: widen the carrier’s u-coverage and bound the joint signed contribution of the tapered wing, actual three-prime sum and four-or-more-prime sum. An independent arithmetic contradiction and a zero-free theorem from this path remain targets.
-[Current checked endpoint](RiemannGaussian/ZetaRieszCentralHarmonicCost.lean#L370)
-· [Proof details](docs/zeta-riesz-exact-harmonic-costs.md).
+**Prime-count cancellation controls a frequency sector.** Lean keeps opposite frequencies coupled and proves a cubic low-frequency allowance for the actual three-prime and higher-prime sums. The original masks and growing arithmetic cost remain explicit. A separately checked window deletion now covers all right-half source radii. Neither result supplies a new zero-free bound.
+Next: control the retained coupled high-frequency response and the finite low-frequency cost alongside the tapered wing. The whole signed bound remains open; the cubic cutoff factor alone is not source-scale decay.
+[Current checked endpoint](RiemannGaussian/ZetaRieszSignedFrequency.lean#L557)
+· [Proof details](docs/zeta-riesz-signed-frequency.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

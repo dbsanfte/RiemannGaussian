@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 37,
-      "id": "exact-harmonic-costs",
+      "sequence": 38,
+      "id": "signed-frequency-cancellation",
       "kind": "theorem",
-      "title": "Exact head and central costs leave three arithmetic sums.",
-      "body": "Lean evaluates the entire complete head and central block, retaining all original integer endpoints and prime-product errors. Their combined cost is minus the full multiplicity square times an explicit c(u)<1 on the existing annulus. Multiplicity and exposed-zero hypotheses remain explicit; this is a component bound.",
-      "next": "Next: widen the carrier’s u-coverage and bound the joint signed contribution of the tapered wing, actual three-prime sum and four-or-more-prime sum. An independent arithmetic contradiction and a zero-free theorem from this path remain targets.",
+      "title": "Prime-count cancellation controls a frequency sector.",
+      "body": "Lean keeps opposite frequencies coupled and proves a cubic low-frequency allowance for the actual three-prime and higher-prime sums. The original masks and growing arithmetic cost remain explicit. A separately checked window deletion now covers all right-half source radii. Neither result supplies a new zero-free bound.",
+      "next": "Next: control the retained coupled high-frequency response and the finite low-frequency cost alongside the tapered wing. The whole signed bound remains open; the cubic cutoff factor alone is not source-scale decay.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszPaidComponentsStrictBudgetTheorem"
+        "rieszNonlinearHighRemainderTheorem"
       ],
-      "documentation": "docs/zeta-riesz-exact-harmonic-costs.md"
+      "documentation": "docs/zeta-riesz-signed-frequency.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -1652,6 +1652,65 @@
         "rieszExactHarmonicCostsScope"
       ],
       "documentation": "docs/zeta-riesz-exact-harmonic-costs.md"
+    },
+    {
+      "id": "signed-frequency-cancellation",
+      "label": "Signed frequency cancellation · actual low sector and full remainder",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOddPrimeFrequencyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszThreeSineProductTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHigherPrimeFrequencyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNonlinearFrequencyIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNonlinearLowFrequencyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNonlinearHighRemainderTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNaturalFrequencyWindowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUpperTiltClassificationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLowerTiltClassificationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUniformDeviationBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGlobalDeviationSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMovingDeviationErrorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedFrequencyScope"
+      ],
+      "documentation": "docs/zeta-riesz-signed-frequency.md"
     }
   ],
   "scopes": {
@@ -4111,6 +4170,90 @@
       "summary": "The actual three-prime sum, four-or-more-prime sum and tapered wing have joint source -m+m^2c(u). Their independent signed bound remains open.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-exact-harmonic-costs.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSignedFrequency.norm_primePair_le_of_odd": {
+      "label": "Odd prime-count cancellation",
+      "summary": "The paired opposite frequencies gain an extra vanishing factor, retaining the exact reflection gap and every prime logarithm.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSignedFrequency.primePair_three_eq_sine_product": {
+      "label": "Exact four-sine response",
+      "summary": "The genuine three-prime paired character is a signed product of four sine factors; no absolute value is used.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSignedFrequency.norm_higher_prime_quotient_le": {
+      "label": "All higher prime counts",
+      "summary": "Every count at least four gives a quadratic quotient bound on the natural frequency window, with no maximum degree.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSignedFrequency.nonlinearResponse_eq_integral": {
+      "label": "Both nonlinear classes stay coupled",
+      "summary": "The entire actual three-prime and higher-prime responses equal their genuinely integrable coupled frequency carrier.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSignedFrequency.norm_nonlinear_low_frequency_le": {
+      "label": "Cubic low-frequency allowance",
+      "summary": "Within-divisor and opposite-frequency cancellation survive both actual nonlinear classes and all factorial weights. The finite arithmetic cost remains explicit.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSignedFrequency.norm_nonlinear_sub_high_frequency_le": {
+      "label": "Actual complementary signed integral",
+      "summary": "The difference from the actual high-frequency remainder has the cubic allowance; neither the cost nor the high-frequency response is asserted to vanish at source scale.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSignedFrequency.natural_frequency_window": {
+      "label": "Concrete frequency interval",
+      "summary": "The positive cutoff 3/(8(N+1)) satisfies the actual central support condition at every moment order, including zero.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-signed-frequency.md",
+      "overview": true
+    },
+    "RiemannGaussian.LogarithmicDeviation.exists_upper_tilt_iff": {
+      "label": "Every positive upper-cutoff tilt",
+      "summary": "The exact deviation cost is necessary and sufficient for a summable positive upper-tail tilt; signed methods are not classified.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-deviation-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.LogarithmicDeviation.exists_lower_tilt_iff": {
+      "label": "Every positive lower-cutoff tilt",
+      "summary": "The matching necessity and sufficiency retain all positive tilts and summability exponents for a lower cutoff.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-deviation-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaArithmeticDeviationBounds.exists_uniform_deviation_bound": {
+      "label": "One bound across a radius interval",
+      "summary": "Common constants control all additional removed tails over a whole bounded radius interval, arbitrary heights and dominated coefficient families.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-deviation-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszDeviationCarrier.tendsto_universal_physicalDeviation_exposed": {
+      "label": "Full right-half source range retained",
+      "summary": "The narrowed physical carrier preserves the exposed-zero multiplicity source throughout the right-half range, without an extra local-u restriction.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-deviation-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszDeviationCarrier.tendsto_universal_annulus_error_moving_radius": {
+      "label": "Moving radii and heights",
+      "summary": "The actual additional window deletion independently vanishes for arbitrary moving radii in [0,1] and moving heights; every earlier mask remains.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-deviation-window.md",
       "overview": true
     }
   }

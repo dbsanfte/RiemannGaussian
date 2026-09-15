@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**231 modules.** Source links open the definitions, hypotheses and proofs.
+**235 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -19,6 +19,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [FiniteWeightedUniformConvergence](../../RiemannGaussian/FiniteWeightedUniformConvergence.lean)
 - [HarmonicIntervalLimit](../../RiemannGaussian/HarmonicIntervalLimit.lean)
 - [HarmonicProductContinuity](../../RiemannGaussian/HarmonicProductContinuity.lean)
+- [LogarithmicDeviation](../../RiemannGaussian/LogarithmicDeviation.lean)
 - [MoebiusCubicRateAudit](../../RiemannGaussian/MoebiusCubicRateAudit.lean)
 - [MoebiusDividedCutoffBlocks](../../RiemannGaussian/MoebiusDividedCutoffBlocks.lean)
 - [MoebiusExponentialContourBound](../../RiemannGaussian/MoebiusExponentialContourBound.lean)
@@ -45,6 +46,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [RieszHarmonicCostBounds](../../RiemannGaussian/RieszHarmonicCostBounds.lean)
 - [ZetaArithmeticAffine](../../RiemannGaussian/ZetaArithmeticAffine.lean)
 - [ZetaArithmeticBandCorrelation](../../RiemannGaussian/ZetaArithmeticBandCorrelation.lean)
+- [ZetaArithmeticDeviationBounds](../../RiemannGaussian/ZetaArithmeticDeviationBounds.lean)
 - [ZetaArithmeticLocalEnergy](../../RiemannGaussian/ZetaArithmeticLocalEnergy.lean)
 - [ZetaArithmeticLogWindow](../../RiemannGaussian/ZetaArithmeticLogWindow.lean)
 - [ZetaArithmeticQuadraticSmallProduct](../../RiemannGaussian/ZetaArithmeticQuadraticSmallProduct.lean)
@@ -101,6 +103,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszCriticalProfile](../../RiemannGaussian/ZetaRieszCriticalProfile.lean)
 - [ZetaRieszCrossCompletion](../../RiemannGaussian/ZetaRieszCrossCompletion.lean)
 - [ZetaRieszCrossSupport](../../RiemannGaussian/ZetaRieszCrossSupport.lean)
+- [ZetaRieszDeviationCarrier](../../RiemannGaussian/ZetaRieszDeviationCarrier.lean)
 - [ZetaRieszDivisorPrefix](../../RiemannGaussian/ZetaRieszDivisorPrefix.lean)
 - [ZetaRieszEndpointTaper](../../RiemannGaussian/ZetaRieszEndpointTaper.lean)
 - [ZetaRieszEulerCorrectionDeletion](../../RiemannGaussian/ZetaRieszEulerCorrectionDeletion.lean)
@@ -172,6 +175,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszSemiprimePrefixDecay](../../RiemannGaussian/ZetaRieszSemiprimePrefixDecay.lean)
 - [ZetaRieszSemiprimeSupport](../../RiemannGaussian/ZetaRieszSemiprimeSupport.lean)
 - [ZetaRieszShiftedHeadBudget](../../RiemannGaussian/ZetaRieszShiftedHeadBudget.lean)
+- [ZetaRieszSignedFrequency](../../RiemannGaussian/ZetaRieszSignedFrequency.lean)
 - [ZetaRieszSmoothCofactor](../../RiemannGaussian/ZetaRieszSmoothCofactor.lean)
 - [ZetaRieszSmoothDeletion](../../RiemannGaussian/ZetaRieszSmoothDeletion.lean)
 - [ZetaRieszSmoothHead](../../RiemannGaussian/ZetaRieszSmoothHead.lean)

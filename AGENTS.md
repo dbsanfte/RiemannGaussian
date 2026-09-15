@@ -2867,6 +2867,37 @@ zero-free theorem from this arithmetic path. Distinguish a wider component
 range or retained support from a proved zero-free region; the latter must
 discharge the independent arithmetic estimate and required source premises.
 
+`LogarithmicDeviation` now classifies every successful positive exponential
+cutoff tilt by log(2u)<I(x), I(x)=x/2-1-log(x/2). It imports only Mathlib;
+do not describe this as a classification of signed methods. The universal
+window9N/20<logn<=11N/2 improves the older global logarithmic window and
+preserves every previous mask and X_N<n. The additional deletion has one
+common geometric allowance across0<=u<=1, even for moving radii and heights.
+`ZetaRieszDeviationCarrier` retains the full source for every exposed
+right-half zero without an extra local-u restriction. This does not widen
+the separate three-unpaid source decomposition or prove a zero-free region.
+
+`ZetaRieszSignedFrequency` keeps the complete prime product and paired
+opposite frequencies. Each prime supplies one vanishing factor, and odd
+prime count supplies one extra factor with exact gap L-logn/2. Three-prime
+pairing is exactly16sin(xi*(L-logn/2))*prod sin(xi logp/2). Four-or-more
+prime counts also give a quadratic quotient bound on abs(xi)*logn<=1.
+Both actual nonlinear classes have the cubic low-frequency allowance
+u^(N+1)*d^3/(3pi)*(C3+C4), with positive d=3/(8(N+1)) valid at everyN.
+C3 retains(logn/L)*normK*abs(L-logn/2)*prod logp; C4 retains
+(logn/L)*normK*(logn)^4. All original masks, filter shifts and phases remain;
+the complementary Ioi d integral is explicit and genuinely integrable.
+The finite costs are NOT proved bounded or vanishing at source scale.
+Do not count the cubic frequency factor without its growing prime-log
+costs, describe within-divisor cancellation as cancellation between integers,
+or discard cross-degree or complementary-frequency interactions. Both the
+high-frequency signed response and the tapered wing remain unpaid.
+The full signed floor, unrestricted multiplicity/source obligations and
+RH remain open. See `docs/zeta-riesz-signed-frequency.md` and
+`docs/zeta-riesz-deviation-window.md`; keep the default whole-carrier
+endpoint and both top-ten lists. No new zero-free theorem, numerical zero
+bound or historical novelty is claimed by this slice.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.
