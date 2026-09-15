@@ -2397,7 +2397,17 @@
     "ZetaRieszLargeSmoothDeletion": "arithmetic",
     "ZetaRieszExtremePrimeProfile": "arithmetic",
     "ZetaRieszCompositeBoundaryWindow": "arithmetic",
-    "ZetaRieszSurvivingPrimeLayers": "arithmetic"
+    "ZetaRieszSurvivingPrimeLayers": "arithmetic",
+    "ZetaExposedZero": "foundations",
+    "ZetaExposedPrimeMoments": "euler",
+    "ZetaPrimeCofactorCompletion": "arithmetic",
+    "ZetaRieszCompletedCofactor": "arithmetic",
+    "ZetaRieszSemiprimePrefix": "arithmetic",
+    "ZetaRieszSemiprimePrefixDecay": "arithmetic",
+    "ZetaRieszSemiprimeCompletion": "arithmetic",
+    "ZetaRieszSemiprimeBand": "arithmetic",
+    "ZetaRieszSemiprimeSupport": "arithmetic",
+    "ZetaRieszSemiprimeDeletion": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

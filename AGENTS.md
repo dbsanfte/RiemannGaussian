@@ -2512,6 +2512,34 @@ The full joint signed floor and RH remain open. See
 `docs/zeta-riesz-extreme-prime-window.md` and endpoint `extreme-prime-window`;
 retain the default whole-carrier endpoint and the existing source/axiom audit.
 
+`ZetaExposedZero.exists_exposed_right_half_zero` now selects an exposed
+zero from any hypothetical right-half zero using actual inverse-square
+divisor summability; no globally rightmost-zero premise is introduced.
+`ZetaRieszSemiprimeBand.tendsto_actual_semiprime_integer_band` pays the
+entire actual, uniquely counted semiprime band with a prime factor at most
+N^2 at exposed zeros, for every fixed filter and varying selected small
+primes. Complete prime moments, factorial convolution, the damped physical
+prefix, both original-band tails and integer uniqueness are all proved.
+The completed head has an eventual C*N^(-(beta-1/2)) bound; this is not a
+numerically evaluated starting order for the actual band. The prefix bound
+retains both prime logarithms and 1/L_N and vanishes for every 0<u<1.
+Arbitrary prefix masks are allowed, but arbitrary masks on a completed
+infinite prime sum do not inherit its cancellation.
+`ZetaRieszSemiprimeSupport` independently pays the overlap with every
+earlier deletion: above-cutoff semiprimes survive all earlier adaptive cuts.
+`ZetaRieszSemiprimeDeletion.tendsto_actual_band_sub_residual` therefore
+removes this whole class while retaining the exact negative multiplicity
+source, all earlier support restrictions and the signed Euler bridge.
+On 1/2<u<exp(-1/2), every nonzero survivor eventually has at least two
+distinct primes above N^2. Composite-cofactor fallback classes remain at
+other scales, and the complete smooth-factor bound a<X_N still requires
+2*u^2<1. The independent whole-residual cofinal floor remains open;
+`rh_of_exposed_residual_floors` assumes it explicitly. Do not report a
+new zero-free region, numerical certificate or historical novelty.
+See `docs/zeta-riesz-semiprime-deletion.md` and supporting endpoint
+`semiprime-class-deletion`; retain the default whole-carrier endpoint
+and both ten-entry README lists.
+
 Per the user's 2026-09-14 instruction, announce genuine arithmetic bounding
 milestones in chat as they pass Lean. Name the controlled quantity, state
 the bound's range and uniformity, and say what remains outside the bound.

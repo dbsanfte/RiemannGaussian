@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 24,
-      "id": "extreme-prime-window",
+      "sequence": 25,
+      "id": "semiprime-class-deletion",
       "kind": "theorem",
-      "title": "Composite cores reduce to an exact signed divisor window.",
-      "body": "Lean constructs every nonzero survivor’s smooth, intermediate and extreme prime factors. Composite smooth cores contribute only through the strict window X_N/a<d<X_N, with all Möbius signs retained. Saturated extreme-core coefficients have norm at most log(n), regardless of extreme-prime count. The total phases remain, and the full joint signed floor is still open.",
-      "next": "Next: bound the coupled divisor window while preserving all three prime layers, the physical cutoff and the original phases.",
+      "title": "A whole semiprime class is removed from the signed tail.",
+      "body": "Lean selects exposed hypothetical zeros and proves decay of the original, uniquely counted semiprime band with a prime factor at most N². All prior arithmetic cuts and the exact negative multiplicity source survive. On the complete-composite interval, every nonzero survivor now has at least two primes above N²; other scales retain composite-cofactor cases. The full joint signed floor remains open.",
+      "next": "Next: bound the remaining coupled large-prime products and composite-cofactor fallback classes; any whole-residual cofinal floor strictly above -1 suffices.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszBoundarySurvivorTheorem"
+        "rieszSemiprimeDeletionTheorem"
       ],
-      "documentation": "docs/zeta-riesz-extreme-prime-window.md"
+      "documentation": "docs/zeta-riesz-semiprime-deletion.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -929,6 +929,65 @@
         "rieszExtremeWindowScope"
       ],
       "documentation": "docs/zeta-riesz-extreme-prime-window.md"
+    },
+    {
+      "id": "semiprime-class-deletion",
+      "label": "Actual semiprime class · source preserved",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExposedZeroSelectionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExposedPrimeMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompletedCofactorPowerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSemiprimePrefixBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSemiprimePrefixDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSemiprimeBandTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSemiprimeOverlapTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSemiprimeDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSemiprimeSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSemiprimeSupportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSemiprimeFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSemiprimeEulerBridgeTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSemiprimeDeletionScope"
+      ],
+      "documentation": "docs/zeta-riesz-semiprime-deletion.md"
     }
   ],
   "scopes": {
@@ -2373,6 +2432,90 @@
       "summary": "Every nonzero actual survivor has all three complete prime layers; if its smooth core is composite, an actual boundary divisor has nonzero shifted profile. All existence obligations are proved.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-extreme-prime-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaExposedZero.exists_exposed_right_half_zero": {
+      "label": "Exposed zeros can always be selected",
+      "summary": "Any hypothetical right-half zero leads to one at least as far right with no competing zero in its horizontal source disk. Actual inverse-square zero summability rules out infinite competing chains; no rightmost-zero premise is used.",
+      "family": "foundations",
+      "documentation": "docs/zeta-riesz-semiprime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaExposedPrimeMoments.exists_normalized_ordinary_prime_moment_bound": {
+      "label": "Complete prime moments are bounded at source scale",
+      "summary": "At exposed zeros the complete ordinary-prime moments have a uniform normalized bound, retaining the full canonical divisor, pole, reflected modes, remainder and independent prime-power deletion. Arbitrary prime masks are not licensed.",
+      "family": "euler",
+      "documentation": "docs/zeta-riesz-semiprime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCompletedCofactor.exists_completed_quadratic_head_power_bound": {
+      "label": "Completed quadratic cofactor heads have power decay",
+      "summary": "At an exposed zero beta+i*gamma, every completed cofactor selection in [1,N^2] has eventual normalized bound C*N^(-(beta-1/2)), with the actual physical length and every fixed polynomial filter. This theorem alone is about completion.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-semiprime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSemiprimePrefix.norm_physical_prime_prefix_le": {
+      "label": "Both prime logarithms pay the physical prefix",
+      "summary": "The exact damped floor and physical inverse length remain in an explicit Chebyshev prime-pair budget. It allows arbitrary dominated pair masks and assumes no hypothetical zero.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-semiprime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSemiprimePrefixDecay.tendsto_actual_semiprime_prefix": {
+      "label": "The actual semiprime prefix decays at every source scale",
+      "summary": "The original semiprime coefficient satisfies the prefix budget for every 0<u<1, including the older scalar contact. Both prime logarithms, diagonal deletion and arbitrary pair masks are retained.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-semiprime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSemiprimeBand.tendsto_actual_semiprime_integer_band": {
+      "label": "The actual semiprime integer class vanishes",
+      "summary": "At exposed right-half zeros the entire original uniquely counted semiprime class with a prime factor at most N^2 decays after source normalization. Both band tails, the physical cutoff and every fixed polynomial filter are paid. Small-prime selections may vary with N.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-semiprime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSemiprimeSupport.tendsto_semiprime_outside_adaptive": {
+      "label": "Overlap with earlier deletions is independently bounded",
+      "summary": "Above-cutoff semiprimes survive every earlier adaptive support cut. The overlap is therefore a physical-prefix subband and decays for every 0<u<1, without assuming cancellation for masked infinite prime sums.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-semiprime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSemiprimeDeletion.tendsto_actual_band_sub_residual": {
+      "label": "The full carrier loses its semiprime class with vanishing error",
+      "summary": "The actual semiprime intersection is removed while preserving all earlier cuts and their interval fallbacks, at every exposed right-half zero. This bounds a complete arithmetic component, not the full residual.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-semiprime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSemiprimeDeletion.tendsto_normalizedResidual": {
+      "label": "The smaller residual retains the exact negative source",
+      "summary": "The whole new residual still tends to the negative analytic multiplicity at the exposed zero, using the original pole-jet filter and damped physical floor. An independent arithmetic floor is still needed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-semiprime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSemiprimeDeletion.surviving_two_large_primes": {
+      "label": "Only multiple-large-prime labels survive on the complete-composite interval",
+      "summary": "On 1/2<u<exp(-1/2), once N^2<X_N, every nonzero new survivor has at least two distinct primes above N^2. The head comparison is eventually automatic. Composite-cofactor fallbacks remain at other source scales.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-semiprime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSemiprimeDeletion.rh_of_exposed_residual_floors": {
+      "label": "Conditional RH closure from exposed residual floors",
+      "summary": "A cofinal real floor at least -c with c<1 for each whole exposed residual implies Mathlib RH. The required joint arithmetic floors remain explicit open premises; selection and source transport are proved.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-semiprime-deletion.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSemiprimeDeletion.tendsto_quadraticResidual_sub_residual": {
+      "label": "The full signed Euler representation stays connected",
+      "summary": "At exposed zeros the complete signed quadratic Euler-window residual differs from the new arithmetic residual by a vanishing normalized error. Leading, mixed and boundary information remains available upstream.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-semiprime-deletion.md",
       "overview": true
     }
   }

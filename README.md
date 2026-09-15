@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Composite cores reduce to an exact signed divisor window.** Lean constructs every nonzero survivor’s smooth, intermediate and extreme prime factors. Composite smooth cores contribute only through the strict window X_N/a<d<X_N, with all Möbius signs retained. Saturated extreme-core coefficients have norm at most log(n), regardless of extreme-prime count. The total phases remain, and the full joint signed floor is still open.
-Next: bound the coupled divisor window while preserving all three prime layers, the physical cutoff and the original phases.
-[Current checked endpoint](RiemannGaussian/ZetaRieszSurvivingPrimeLayers.lean#L152)
-· [Proof details](docs/zeta-riesz-extreme-prime-window.md).
+**A whole semiprime class is removed from the signed tail.** Lean selects exposed hypothetical zeros and proves decay of the original, uniquely counted semiprime band with a prime factor at most N². All prior arithmetic cuts and the exact negative multiplicity source survive. On the complete-composite interval, every nonzero survivor now has at least two primes above N²; other scales retain composite-cofactor cases. The full joint signed floor remains open.
+Next: bound the remaining coupled large-prime products and composite-cofactor fallback classes; any whole-residual cofinal floor strictly above -1 suffices.
+[Current checked endpoint](RiemannGaussian/ZetaRieszSemiprimeDeletion.lean#L94)
+· [Proof details](docs/zeta-riesz-semiprime-deletion.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

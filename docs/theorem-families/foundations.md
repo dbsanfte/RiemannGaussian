@@ -6,7 +6,7 @@
 
 Actual zeros, canonical products, reflection and analytic multiplicity.
 
-**87 modules.** Source links open the definitions, hypotheses and proofs.
+**88 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [Basic](../../RiemannGaussian/Basic.lean)
 - [GaussianXiCompleteMassFiniteness](../../RiemannGaussian/GaussianXiCompleteMassFiniteness.lean)
@@ -53,6 +53,7 @@ Actual zeros, canonical products, reflection and analytic multiplicity.
 - [ZetaAdaptiveSigned](../../RiemannGaussian/ZetaAdaptiveSigned.lean)
 - [ZetaCanonicalMoments](../../RiemannGaussian/ZetaCanonicalMoments.lean)
 - [ZetaCanonicalSign](../../RiemannGaussian/ZetaCanonicalSign.lean)
+- [ZetaExposedZero](../../RiemannGaussian/ZetaExposedZero.lean)
 - [ZetaGlobalPhaseBudget](../../RiemannGaussian/ZetaGlobalPhaseBudget.lean)
 - [ZetaGlobalPoisson](../../RiemannGaussian/ZetaGlobalPoisson.lean)
 - [ZetaGlobalSignedBudget](../../RiemannGaussian/ZetaGlobalSignedBudget.lean)
