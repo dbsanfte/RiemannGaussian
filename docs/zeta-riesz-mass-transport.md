@@ -126,3 +126,7 @@ only the permitted standard axioms. Default RH, zero-free and certificate
 endpoints and both top-ten lists remain unchanged. Small floating-point
 transport probes are neither certificates nor asymptotic evidence and do
 not run in ordinary CI. No historical novelty claim is made here.
+
+[Exact three-direction cancellations](zeta-riesz-zero-cycles.md) now
+remove supported portions at zero chord cost before later paid transport.
+Their sufficient aggregate arithmetic capacity remains open.

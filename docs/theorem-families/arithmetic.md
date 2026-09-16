@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**268 modules.** Source links open the definitions, hypotheses and proofs.
+**275 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -107,6 +107,11 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszCrossCompletion](../../RiemannGaussian/ZetaRieszCrossCompletion.lean)
 - [ZetaRieszCrossFamilyWindow](../../RiemannGaussian/ZetaRieszCrossFamilyWindow.lean)
 - [ZetaRieszCrossSupport](../../RiemannGaussian/ZetaRieszCrossSupport.lean)
+- [ZetaRieszCycleCore](../../RiemannGaussian/ZetaRieszCycleCore.lean)
+- [ZetaRieszCycleCorrelation](../../RiemannGaussian/ZetaRieszCycleCorrelation.lean)
+- [ZetaRieszCycleIteration](../../RiemannGaussian/ZetaRieszCycleIteration.lean)
+- [ZetaRieszCycleSaving](../../RiemannGaussian/ZetaRieszCycleSaving.lean)
+- [ZetaRieszCycleSource](../../RiemannGaussian/ZetaRieszCycleSource.lean)
 - [ZetaRieszDescendingAmplitude](../../RiemannGaussian/ZetaRieszDescendingAmplitude.lean)
 - [ZetaRieszDeviationCarrier](../../RiemannGaussian/ZetaRieszDeviationCarrier.lean)
 - [ZetaRieszDivisorPrefix](../../RiemannGaussian/ZetaRieszDivisorPrefix.lean)
@@ -159,8 +164,10 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszOffDiagonalJoint](../../RiemannGaussian/ZetaRieszOffDiagonalJoint.lean)
 - [ZetaRieszOppositePrimes](../../RiemannGaussian/ZetaRieszOppositePrimes.lean)
 - [ZetaRieszPairMatching](../../RiemannGaussian/ZetaRieszPairMatching.lean)
+- [ZetaRieszPairMidpoint](../../RiemannGaussian/ZetaRieszPairMidpoint.lean)
 - [ZetaRieszPairOrders](../../RiemannGaussian/ZetaRieszPairOrders.lean)
 - [ZetaRieszPairedCorrection](../../RiemannGaussian/ZetaRieszPairedCorrection.lean)
+- [ZetaRieszPhaseBracket](../../RiemannGaussian/ZetaRieszPhaseBracket.lean)
 - [ZetaRieszPhysicalAnnulus](../../RiemannGaussian/ZetaRieszPhysicalAnnulus.lean)
 - [ZetaRieszPhysicalPrefixDeletion](../../RiemannGaussian/ZetaRieszPhysicalPrefixDeletion.lean)
 - [ZetaRieszPhysicalProductBounds](../../RiemannGaussian/ZetaRieszPhysicalProductBounds.lean)

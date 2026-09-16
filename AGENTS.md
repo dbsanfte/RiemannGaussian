@@ -3157,6 +3157,21 @@ cross-pair signs before summing chord norms. Supporting `mass-transport`
 and `docs/zeta-riesz-mass-transport.md` record the scope; default endpoints
 and both top-ten lists stay unchanged.
 
+`ZetaRieszCycleCore` and `ZetaRieszCycleIteration` remove exact positive
+three-direction zero cycles from the full original carrier, keeping every
+remainder and preventing reused capacity. `ZetaRieszCycleSaving` proves
+at least twice the smallest available amplitude is removed on each
+successful branch. `ZetaRieszPairMidpoint` and `ZetaRieszCycleCorrelation`
+retain common phases and full polynomial sine/cosine cross-correlations.
+`ZetaRieszPhaseBracket` proves quadratic extra partner-mass overhead;
+actual shortages remain in its minimum-capacity bound. Do not confuse
+nearby-prime availability with sufficient weighted mass or aggregate
+source-scale cancellation. `ZetaRieszCycleSource` preserves the full
+source without exposure or simplicity; all later transport charges remain.
+A sufficient independent whole remainder bound and a new zero-free region
+remain open. Supporting `zero-cycles` and `docs/zeta-riesz-zero-cycles.md`
+record the scope. Keep default endpoints and both top-ten lists unchanged.
+
 ## Commit and check-in invariant
 
 The introductory research-agent/model statement belongs directly below the

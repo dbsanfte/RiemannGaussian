@@ -2501,7 +2501,14 @@
     "ZetaRieszMassTransport": "arithmetic",
     "ZetaRieszTransportPhase": "arithmetic",
     "ZetaRieszTransportCoverage": "arithmetic",
-    "ZetaRieszTransportSource": "arithmetic"
+    "ZetaRieszTransportSource": "arithmetic",
+    "ZetaRieszCycleCore": "arithmetic",
+    "ZetaRieszCycleIteration": "arithmetic",
+    "ZetaRieszPairMidpoint": "arithmetic",
+    "ZetaRieszCycleCorrelation": "arithmetic",
+    "ZetaRieszPhaseBracket": "arithmetic",
+    "ZetaRieszCycleSaving": "arithmetic",
+    "ZetaRieszCycleSource": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

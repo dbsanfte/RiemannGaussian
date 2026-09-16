@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Signed mass transport controls its final unmatched remainder.** Lean splits amplitudes across successive pairs while retaining their phases and arithmetic signs. After complete fallback, the final unsent mass decays for every fixed 0 < u < 1, even with varying heights. All fallback chord costs remain explicit; the combined sent sum retains the full source and still needs an independent bound. No new zero-free region follows.
-Next: use common phases and signs across the sent pairs to bound their combined response, including the fully charged fallback.
-[Current checked endpoint](RiemannGaussian/ZetaRieszTransportSource.lean#L124)
-· [Proof details](docs/zeta-riesz-mass-transport.md).
+**Exact three-term cancellations reduce the whole carrier’s mass.** Lean removes positive portions of three original amplitudes whose complex sum is exactly zero. Every successful cycle saves at least twice the smallest available amplitude; nearby opposite brackets need only quadratic extra partner mass. The full polynomial source survives in the remainder, with all later transport costs charged. Sufficient aggregate capacity and a new zero-free region remain open.
+Next: prove sufficient arithmetic supply at the flanking prime phases, then bound the complete remainder at source scale.
+[Current checked endpoint](RiemannGaussian/ZetaRieszCycleSource.lean#L50)
+· [Proof details](docs/zeta-riesz-zero-cycles.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

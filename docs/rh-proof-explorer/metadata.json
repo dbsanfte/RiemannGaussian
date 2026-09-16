@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 47,
-      "id": "mass-transport",
+      "sequence": 48,
+      "id": "zero-cycles",
       "kind": "theorem",
-      "title": "Signed mass transport controls its final unmatched remainder.",
-      "body": "Lean splits amplitudes across successive pairs while retaining their phases and arithmetic signs. After complete fallback, the final unsent mass decays for every fixed 0 < u < 1, even with varying heights. All fallback chord costs remain explicit; the combined sent sum retains the full source and still needs an independent bound. No new zero-free region follows.",
-      "next": "Next: use common phases and signs across the sent pairs to bound their combined response, including the fully charged fallback.",
+      "title": "Exact three-term cancellations reduce the whole carrier’s mass.",
+      "body": "Lean removes positive portions of three original amplitudes whose complex sum is exactly zero. Every successful cycle saves at least twice the smallest available amplitude; nearby opposite brackets need only quadratic extra partner mass. The full polynomial source survives in the remainder, with all later transport costs charged. Sufficient aggregate capacity and a new zero-free region remain open.",
+      "next": "Next: prove sufficient arithmetic supply at the flanking prime phases, then bound the complete remainder at source scale.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszMassTransportSourceTheorem"
+        "rieszCycleSourceTheorem"
       ],
-      "documentation": "docs/zeta-riesz-mass-transport.md"
+      "documentation": "docs/zeta-riesz-zero-cycles.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -2138,6 +2138,49 @@
         "rieszMassTransportScope"
       ],
       "documentation": "docs/zeta-riesz-mass-transport.md"
+    },
+    {
+      "id": "zero-cycles",
+      "label": "Exact zero cycles · quadratic partner overhead",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCycleMidpointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCycleCorrelationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCycleSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCycleOverheadTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCycleCapacityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCycleWholeBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCycleTransportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCycleSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszZeroCycleScope"
+      ],
+      "documentation": "docs/zeta-riesz-zero-cycles.md"
     }
   ],
   "scopes": {
@@ -5255,6 +5298,62 @@
       "summary": "The multiplicity source is transported without exposure or simplicity; the independent bound for the sent sum remains open.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-mass-transport.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPairMidpoint.sent_pair_bandWeight_eq_midpoint": {
+      "label": "Keep the common midpoint phase",
+      "summary": "Both full-polynomial coefficient channels remain coupled to the exact common phase.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-zero-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCycleCorrelation.area_actual_full": {
+      "label": "Keep the full arithmetic cross-correlation",
+      "summary": "The cycle orientation uses both sine and cosine channels of the actual complex polynomial amplitudes.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-zero-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCycleSaving.twice_min_norm_le_cycleSaving": {
+      "label": "Every successful cycle has a quantitative saving",
+      "summary": "At least twice the smallest available amplitude is removed, with exact zero sum.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-zero-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhaseBracket.bracketOverhead_sub_one_le_sq": {
+      "label": "Opposite flanks need quadratic extra partner mass",
+      "summary": "For both positive phase gaps at most delta <= 1, the excess mass ratio is at most delta squared.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-zero-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhaseBracket.norm_bracket_le_capacity": {
+      "label": "All partner shortages stay in the triple bound",
+      "summary": "The actual minimum capacity fixes the exact saving; unused portions remain explicit.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-zero-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCycleIteration.norm_actual_band_le_exact_cycles": {
+      "label": "Exact cycles reduce the whole original mass allowance",
+      "summary": "Every full-polynomial original atom remains accounted for; aggregate source-scale capacity is unproved.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-zero-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCycleSource.norm_actual_band_le_cycles_then_transport": {
+      "label": "Apply paid transport to the exact-cycle remainder",
+      "summary": "Every later sent chord and unmatched amplitude is still charged.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-zero-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCycleSource.tendsto_actual_cycle_source": {
+      "label": "The full source survives exact cycle removal",
+      "summary": "The negative multiplicity limit holds for the full pole-jet polynomial without exposure or simplicity.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-zero-cycles.md",
       "overview": true
     }
   }
