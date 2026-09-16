@@ -3192,6 +3192,48 @@ contradiction. No new zero-free region follows yet. Supporting
 Keep default endpoints and both top-ten lists unchanged. Finite unfiltered
 physical-annulus probes are not whole-band or asymptotic certificates.
 
+`ZetaRieszPrimeCells` and `ZetaRieszCellBoundary` retain exact affine
+cofactor profiles and signed corrections only at crossed divisor hinges.
+`ZetaRieszCellOrders` keeps both adjacent factorial orders on the original
+band; `ZetaRieszCellEnergy` retains their signed covariance. Unique
+largest-prime ownership in `ZetaRieszOwnedCells` covers the full carrier.
+`ZetaRieszRetainedCells` proves the cell norm allowance after actual
+arithmetic cycles never exceeds the earlier allowance. Those individual
+prime residual weights still need their own analytic control.
+`ZetaRieszPrimeIntervals` and `ZetaRieszArithmeticCells` instead expose
+fixed complete prime intervals independent of filter and height, including
+zero-filter points. `ZetaRieszCellCycles` cancels whole interval responses,
+leaving one constant scalar per cell. Ordinary prime interval estimates
+may then be applied without an internal phase-selection mask, but such
+sufficient estimates have not been proved. All full-pole-jet source
+claims cover arbitrary multiplicity, no exposure assumption and the full
+right-half source range. Sufficient cofinal aggregate saving, a new
+zero-free region from this path and RH remain open. Supporting
+`prime-cells` and `docs/zeta-riesz-prime-cells.md` give the exact scope.
+Keep both adjacent moments and inter-cell signs available. Do not treat
+an arbitrary residual prime mask as an unweighted interval or infer
+unbounded-order control from small floating-point physical-annulus tests.
+Keep default endpoints and both top-ten lists unchanged.
+
+`ZetaRieszSmallCompositeCells` now independently pays the entire absolute
+mass of composite owner cofactors with log a <= N/10. Its geometric bound
+holds eventually for 1/2 <= u < exp(-2/3), every fixed full complex filter,
+and all heights uniformly, including moving heights. Saturation forces
+all surviving products into log m <= 3N/2, where the existing original
+majorant gives geometric decay without a growing cofactor-count cost.
+The whole corresponding cell norm mass also vanishes. The remaining
+cells are semiprimes or composite cofactors larger than exp(N/10); their
+joint signed bound is still open. The full pole-jet source remains after
+this paid deletion, without exposure or simplicity, in the stated narrower
+quantitative u-range. Do not promote this component estimate to a zero-free
+region or claim an evaluated starting order. Supporting endpoint
+`small-composite-cells` shares `docs/zeta-riesz-prime-cells.md`.
+
+Per the user's 2026-09-16 instruction, pursue independent mathematical
+tracks locally without subagents. Run focused Lean validation as changes
+are made, and amortize full build, root audits, publication checks and CI
+across a coherent batch of compatible slices. Do not omit required gates.
+
 ## Commit and check-in invariant
 
 The introductory research-agent/model statement belongs directly below the

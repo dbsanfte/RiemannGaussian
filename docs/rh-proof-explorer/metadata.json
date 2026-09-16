@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 49,
-      "id": "arithmetic-cycles",
+      "sequence": 50,
+      "id": "prime-cells",
       "kind": "theorem",
-      "title": "Arithmetic supply bounds reach the whole carrier.",
-      "body": "Lean retains exact target profiles, each oriented capacity and each remaining fraction. Prime and composite cofactors supply proved local savings for every complex polynomial filter, including cycles across prime-count classes. A guarded finite list gives a whole-carrier upper allowance and preserves the full source. Sufficient aggregate savings and a new zero-free region remain open.",
-      "next": "Next: prove sufficient aggregate weighted capacity; a cofinal whole allowance strictly below the source would suffice.",
+      "title": "Growing composite-cofactor cells now decay.",
+      "body": "Lean bounds the entire absolute mass of composite cofactors up to exp(N/10), with geometric decay for 1/2 <= u < exp(-2/3), uniformly in height and with the full filter. Complete prime cells retain the source and allow further signed cancellation. Semiprimes and larger composite cofactors still need a joint bound; no new zero-free region follows yet.",
+      "next": "Next: attack cancellation in the remaining complete prime cells, coupling semiprimes with the larger composite cofactors.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszArithmeticCycleSourceTheorem"
+        "rieszRemainingOwnerSourceTheorem"
       ],
-      "documentation": "docs/zeta-riesz-arithmetic-cycles.md"
+      "documentation": "docs/zeta-riesz-prime-cells.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -2224,6 +2224,84 @@
         "rieszArithmeticCycleScope"
       ],
       "documentation": "docs/zeta-riesz-arithmetic-cycles.md"
+    },
+    {
+      "id": "prime-cells",
+      "label": "Complete prime cells · signed cancellation",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPacketSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExactCellAffineTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCellAdjacentOrdersTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCellCovarianceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRetainedCellBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompletePrimeIntervalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszArithmeticCellsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszArithmeticPrimeMomentsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWholeCellSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWholeCellSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszPrimeCellScope"
+      ],
+      "documentation": "docs/zeta-riesz-prime-cells.md"
+    },
+    {
+      "id": "small-composite-cells",
+      "label": "Growing composite cells · absolute decay",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmallOwnerMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmallOwnerCellDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRemainingOwnerSupportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRemainingOwnerSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSmallOwnerScope"
+      ],
+      "documentation": "docs/zeta-riesz-prime-cells.md"
     }
   ],
   "scopes": {
@@ -5453,6 +5531,104 @@
       "summary": "The negative multiplicity source requires neither exposure nor simplicity.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-arithmetic-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPacketIteration.norm_actual_band_le_packet_total": {
+      "label": "Cancel complete signed packets",
+      "summary": "Supported packet cycles retain all original rays and earlier capacities.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-cells.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeCells.targetProfile_eq_affine": {
+      "label": "Exact affine divisor cells",
+      "summary": "Keep the signed Mobius slope, with no profile error inside a cell.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-cells.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCellOrders.prime_cell_eq_adjacent_orders": {
+      "label": "Coupled adjacent factorial prime moments",
+      "summary": "The original support mask and complete complex filter stay unchanged.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-cells.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCellEnergy.covariance_eq_midpoint": {
+      "label": "Retain signed prime-moment covariance",
+      "summary": "The whole double-prime correlation remains before any norm relaxation.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-cells.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszRetainedCells.available_cell_mass_le_arithmetic_allowance": {
+      "label": "A stronger bound after arithmetic cycles",
+      "summary": "Exact cell regrouping never increases the previous whole-carrier allowance.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-cells.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeIntervals.intervalPrime_between": {
+      "label": "Complete ordinary-prime intervals",
+      "summary": "No phase or polynomial filter selects internal members of a fixed cell.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-cells.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszArithmeticCells.actual_band_eq_arithmetic_cells": {
+      "label": "The entire carrier in fixed arithmetic cells",
+      "summary": "Unique largest-prime ownership retains all original signed terms.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-cells.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszArithmeticCells.arithmeticCellResponse_eq_prime_moments": {
+      "label": "The exact complete prime moments",
+      "summary": "Both adjacent orders share one complete prime-interval support.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-cells.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCellCycles.norm_actual_band_le_cell_saving": {
+      "label": "Cancel between whole prime intervals",
+      "summary": "The finite bound pays actual cell savings without internal prime masks.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-cells.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCellCycles.tendsto_retained_cell_source": {
+      "label": "Keep the full source after whole-cell cancellation",
+      "summary": "All right-half zeros and multiplicities remain covered; sufficient aggregate saving is open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-cells.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmallCompositeCells.eventually_smallOwner_mass_le": {
+      "label": "An exponentially growing composite-cofactor class is paid",
+      "summary": "Its entire source-normalized absolute mass has a geometric bound, uniformly in height, for 1/2 <= u < exp(-2/3).",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-cells.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmallCompositeCells.tendsto_smallOwner_cell_mass": {
+      "label": "Whole small-composite cells vanish in norm",
+      "summary": "All composite owner cofactors with log a <= N/10 can be deleted together; semiprimes are excluded from this paid class.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-cells.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmallCompositeCells.remainingCells_support": {
+      "label": "The remaining owner classes are explicit",
+      "summary": "Only prime cofactors or composite cofactors larger than exp(N/10) remain.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-cells.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSmallCompositeCells.tendsto_remaining_cell_source": {
+      "label": "The reduced cells retain the full pole source",
+      "summary": "The negative multiplicity source survives this independent deletion in the stated source-radius range, without exposure or simplicity.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-prime-cells.md",
       "overview": true
     }
   }

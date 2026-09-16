@@ -1236,6 +1236,46 @@ def run(output, url=None, refresh_preview=False):
                                 assert 'theorem ' + theorem['id'].rsplit('.', 1)[-1] in source_page.locator('.source-line:target').inner_text()
                                 source_page.close()
                             page.locator('#close-details').click()
+                    if endpoint['id'] in ('prime-cells', 'small-composite-cells'):
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'remain open' in scope or 'remains open' in scope
+                        if endpoint['id'] == 'prime-cells':
+                            assert len(roots) == 10
+                            assert 'independent of height and filter' in scope
+                            assert 'No internal phase-dependent prime selection' in scope
+                            bound = next(n for n in roots if n['id'].endswith('.norm_actual_band_le_cell_saving'))
+                            assert all(t in bound['statement'] for t in ('validCellCycle', 'arithmeticCellResponse', 'totalSaving'))
+                            source = next(n for n in roots if n['id'].endswith('.tendsto_retained_cell_source'))
+                            assert all(t in source['statement'] for t in ('cellRetention', 'zetaRightHalfPoleJetFilter', 'analyticZetaZeroMultiplicity'))
+                        else:
+                            assert len(roots) == 4
+                            assert 'log a <= N/10' in scope and 'component decay theorem' in scope
+                            assert 'no numerical starting order' in scope
+                            bound = next(n for n in roots if n['id'].endswith('.eventually_smallOwner_mass_le'))
+                            assert all(t in bound['statement'] for t in ('smallOwnerBand', 'centralLowerRate', 'bandWeight', '1 / 2 ≤ u', 'Real.exp (-(2 / 3))'))
+                            assert 'NontrivialZetaZero' not in bound['statement']
+                            source = next(n for n in roots if n['id'].endswith('.tendsto_remaining_cell_source'))
+                            assert all(t in source['statement'] for t in ('remainingCells', 'Real.exp (-(2 / 3))', 'analyticZetaZeroMultiplicity'))
+                        for theorem in (bound, source):
+                            selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', theorem['id'])
+                            node = page.locator(f'[data-node="{selected}"]')
+                            node.hover()
+                            assert page.locator('#tooltip').is_visible()
+                            node.click()
+                            assert page.locator('#details pre').inner_text().strip() == theorem['statement'].strip()
+                            link = page.locator('#details .source-button').get_attribute('href')
+                            assert link.endswith(f"#L{theorem['source']['line']}")
+                            if published:
+                                assert f"/blob/{revision}/{theorem['source']['path']}" in link
+                            else:
+                                with page.expect_popup() as opened:
+                                    page.locator('#details .source-button').click()
+                                source_page = opened.value
+                                source_page.wait_for_selector('.source-line:target')
+                                assert 'theorem ' + theorem['id'].rsplit('.', 1)[-1] in source_page.locator('.source-line:target').inner_text()
+                                source_page.close()
+                            page.locator('#close-details').click()
                     page.locator('#all-steps').click()
                     assert page.evaluate('PROOF_VIEW.visible.size > 5')
                     page.locator('#overview').click()

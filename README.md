@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Arithmetic supply bounds reach the whole carrier.** Lean retains exact target profiles, each oriented capacity and each remaining fraction. Prime and composite cofactors supply proved local savings for every complex polynomial filter, including cycles across prime-count classes. A guarded finite list gives a whole-carrier upper allowance and preserves the full source. Sufficient aggregate savings and a new zero-free region remain open.
-Next: prove sufficient aggregate weighted capacity; a cofinal whole allowance strictly below the source would suffice.
-[Current checked endpoint](RiemannGaussian/ZetaRieszArithmeticCycles.lean#L212)
-· [Proof details](docs/zeta-riesz-arithmetic-cycles.md).
+**Growing composite-cofactor cells now decay.** Lean bounds the entire absolute mass of composite cofactors up to exp(N/10), with geometric decay for 1/2 <= u < exp(-2/3), uniformly in height and with the full filter. Complete prime cells retain the source and allow further signed cancellation. Semiprimes and larger composite cofactors still need a joint bound; no new zero-free region follows yet.
+Next: attack cancellation in the remaining complete prime cells, coupling semiprimes with the larger composite cofactors.
+[Current checked endpoint](RiemannGaussian/ZetaRieszSmallCompositeCells.lean#L290)
+· [Proof details](docs/zeta-riesz-prime-cells.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

@@ -2516,7 +2516,20 @@
     "ZetaRieszTargetProfile": "arithmetic",
     "ZetaRieszTargetCycle": "arithmetic",
     "ZetaRieszFullCycleSupply": "arithmetic",
-    "ZetaRieszArithmeticCycles": "arithmetic"
+    "ZetaRieszArithmeticCycles": "arithmetic",
+    "ZetaRieszPacketCycle": "arithmetic",
+    "ZetaRieszPacketSupply": "arithmetic",
+    "ZetaRieszPacketIteration": "arithmetic",
+    "ZetaRieszPrimeCells": "arithmetic",
+    "ZetaRieszCellBoundary": "arithmetic",
+    "ZetaRieszCellOrders": "arithmetic",
+    "ZetaRieszCellEnergy": "arithmetic",
+    "ZetaRieszOwnedCells": "arithmetic",
+    "ZetaRieszRetainedCells": "arithmetic",
+    "ZetaRieszPrimeIntervals": "arithmetic",
+    "ZetaRieszArithmeticCells": "arithmetic",
+    "ZetaRieszCellCycles": "arithmetic",
+    "ZetaRieszSmallCompositeCells": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

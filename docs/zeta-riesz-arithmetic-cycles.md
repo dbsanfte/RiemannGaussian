@@ -141,3 +141,8 @@ rate. Orders below an unevaluated source-error threshold cannot establish
 a zero contradiction merely because an allowance is below one. The tests
 do not run in ordinary CI. No historical novelty claim is made for the
 underlying geometric or trigonometric identities.
+
+[Exact prime-cell bounds](zeta-riesz-prime-cells.md) now retain additional
+within-cell cancellation and offer whole-cell cycles that preserve
+complete ordinary-prime interval support. The sufficient independent
+source-scale estimate remains open.
