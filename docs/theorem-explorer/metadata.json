@@ -2497,7 +2497,11 @@
     "ZetaRieszRefinedMatching": "arithmetic",
     "ZetaRieszDescendingAmplitude": "arithmetic",
     "ZetaRieszSharpPair": "arithmetic",
-    "ZetaRieszSharpMatching": "arithmetic"
+    "ZetaRieszSharpMatching": "arithmetic",
+    "ZetaRieszMassTransport": "arithmetic",
+    "ZetaRieszTransportPhase": "arithmetic",
+    "ZetaRieszTransportCoverage": "arithmetic",
+    "ZetaRieszTransportSource": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

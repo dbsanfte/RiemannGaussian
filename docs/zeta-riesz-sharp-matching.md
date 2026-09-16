@@ -113,3 +113,7 @@ Small floating-point probes motivate the sharper estimates but are neither
 certificates nor asymptotic results. They are not part of ordinary CI.
 Default RH, zero-free and numerical-certificate endpoints remain unchanged.
 No historical novelty claim is made for these identities or estimates.
+
+The [signed mass-transport refinement](zeta-riesz-mass-transport.md) reuses
+only unsent amplitudes, retains sign-sensitive chords, and pays the final
+remainder after a fully charged fallback. Its sent sum remains open.

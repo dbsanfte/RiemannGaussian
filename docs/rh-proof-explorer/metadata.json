@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 46,
-      "id": "sharp-matching",
+      "sequence": 47,
+      "id": "mass-transport",
       "kind": "theorem",
-      "title": "Sharper arithmetic and factorial bounds reach the whole carrier.",
-      "body": "Lean quarters the profile allowance for composite squarefree cofactors and bounds full polynomial amplitudes by their exact factorial endpoint sums. Every original pair receives a proved cost, with fallback below the stationary range. The best disjoint saving reaches the whole carrier; coverage, source-scale sufficiency and a new zero-free region remain open.",
-      "next": "Next: control how aggregate savings and unmatched mass scale with the moment order, keeping cancellation between pair sums available.",
+      "title": "Signed mass transport controls its final unmatched remainder.",
+      "body": "Lean splits amplitudes across successive pairs while retaining their phases and arithmetic signs. After complete fallback, the final unsent mass decays for every fixed 0 < u < 1, even with varying heights. All fallback chord costs remain explicit; the combined sent sum retains the full source and still needs an independent bound. No new zero-free region follows.",
+      "next": "Next: use common phases and signs across the sent pairs to bound their combined response, including the fully charged fallback.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszSharpPrimeMatchingTheorem"
+        "rieszMassTransportSourceTheorem"
       ],
-      "documentation": "docs/zeta-riesz-sharp-matching.md"
+      "documentation": "docs/zeta-riesz-mass-transport.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -2095,6 +2095,49 @@
         "rieszSharpMatchingScope"
       ],
       "documentation": "docs/zeta-riesz-sharp-matching.md"
+    },
+    {
+      "id": "mass-transport",
+      "label": "Signed mass transport · final remainder decay",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMassTransportPartitionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMassTransportRayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMassTransportSignTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMassTransportDiagonalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMassTransportDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMassTransportBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMassTransportErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMassTransportSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszMassTransportScope"
+      ],
+      "documentation": "docs/zeta-riesz-mass-transport.md"
     }
   ],
   "scopes": {
@@ -5156,6 +5199,62 @@
       "summary": "The finite optimum is attained. Coverage and source-scale sufficiency remain open.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-sharp-matching.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszMassTransport.sum_eq_sent_add_remaining": {
+      "label": "Every sent pair and residual keeps its complex amplitude",
+      "summary": "The exact partition allows repeated vertices while never reusing mass.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-mass-transport.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszTransportPhase.ray_remainder": {
+      "label": "Unused amplitudes keep their original phase",
+      "summary": "Every nonempty remainder stays on the same complex ray.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-mass-transport.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszTransportPhase.pairCost_bandWeight_one": {
+      "label": "Arithmetic signs select the cosine or sine chord",
+      "summary": "The full actual unfiltered pair cost uses equal sent mass and its sign-sensitive relative phase.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-mass-transport.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszTransportCoverage.remaining_mass_sq_le_diagonal": {
+      "label": "Complete fallback leaves at most one nonzero amplitude",
+      "summary": "Its squared unsent mass is bounded by the original diagonal energy; all fallback chords must still be charged.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-mass-transport.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszTransportCoverage.tendsto_actual_remaining_mass": {
+      "label": "Final unsent mass decays on the full source interval",
+      "summary": "For each fixed 0 < u < 1 and full polynomial, arbitrary height sequences and earlier pair lists are allowed.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-mass-transport.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszTransportSource.actual_band_le_completed_prime_transport": {
+      "label": "The whole carrier pays every sent chord and final remainder",
+      "summary": "The actual prime-pair stage and complete fallback define one proved upper bound with no omitted costs.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-mass-transport.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszTransportSource.tendsto_actual_band_sub_sent": {
+      "label": "The original carrier and sent sum differ by a vanishing error",
+      "summary": "The estimate retains the actual moving cutoff, full polynomial and original finite support.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-mass-transport.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszTransportSource.tendsto_actual_sent_source": {
+      "label": "Every right-half zero retains its full source in the signed pair sum",
+      "summary": "The multiplicity source is transported without exposure or simplicity; the independent bound for the sent sum remains open.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-mass-transport.md",
       "overview": true
     }
   }

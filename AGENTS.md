@@ -3141,6 +3141,22 @@ cross-pair cancellation and a new zero-free region remain open. Supporting
 endpoint `sharp-matching` and `docs/zeta-riesz-sharp-matching.md` record the
 scope; default endpoints and both top-ten lists remain unchanged.
 
+`ZetaRieszMassTransport` splits equal mass across successive pairs, keeping
+unused amplitudes on their original complex rays and retaining the full
+sent vector sum. `ZetaRieszTransportPhase` preserves the full polynomial
+directions; P=1 gives cosine chords for equal arithmetic signs and sine
+chords for opposite signs. `ZetaRieszTransportCoverage` proves that a
+complete pair fallback leaves at most one nonzero amplitude, and pays its
+source-normalized unsent mass by diagonal energy for every fixed 0 < u < 1,
+fixed full polynomial, and arbitrary height sequences. ALL fallback chord costs remain
+in the whole bound: do not call this free coverage or sufficient aggregate
+cancellation. `ZetaRieszTransportSource` retains the full actual source in
+one signed sent sum, without exposure or simplicity. Its independent bound
+and a new zero-free region remain open. Preserve midpoint phases and
+cross-pair signs before summing chord norms. Supporting `mass-transport`
+and `docs/zeta-riesz-mass-transport.md` record the scope; default endpoints
+and both top-ten lists stay unchanged.
+
 ## Commit and check-in invariant
 
 The introductory research-agent/model statement belongs directly below the
