@@ -2492,7 +2492,12 @@
     "ZetaRieszCenteredCofactor": "arithmetic",
     "ZetaRieszCenteredPhase": "arithmetic",
     "ZetaRieszPairMatching": "arithmetic",
-    "ZetaRieszPrimeMatching": "arithmetic"
+    "ZetaRieszPrimeMatching": "arithmetic",
+    "ZetaRieszTentSlope": "arithmetic",
+    "ZetaRieszRefinedMatching": "arithmetic",
+    "ZetaRieszDescendingAmplitude": "arithmetic",
+    "ZetaRieszSharpPair": "arithmetic",
+    "ZetaRieszSharpMatching": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

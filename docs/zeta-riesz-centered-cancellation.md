@@ -109,3 +109,7 @@ The default RH endpoint, the proved zero-free region and the numerical
 certificate remain unchanged. Floating-point matching experiments are
 exploration only and do not run in ordinary CI. No historical novelty
 claim is made for these centering or finite matching identities.
+
+The [sharper matching refinement](zeta-riesz-sharp-matching.md) quarters
+the composite-cofactor allowance and retains exact factorial amplitudes at
+each local pair endpoint, with a verified fallback outside that range.

@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Centering halves the complete prime-pair error allowance.** Lean uses the cofactor’s zero signed Mobius mass to halve the complete opposite-phase cost for every eligible nonunit cofactor. The whole original carrier now takes the best disjoint saving across all eligible prime-insertion families, retaining every unmatched term. Pair coverage, a source-scale saving and a new zero-free region remain open.
-Next: bound the unmatched mass and aggregate pair costs as the moment order grows, retaining cancellation between pair sums and the remainder.
-[Current checked endpoint](RiemannGaussian/ZetaRieszPrimeMatching.lean#L74)
-· [Proof details](docs/zeta-riesz-centered-cancellation.md).
+**Sharper arithmetic and factorial bounds reach the whole carrier.** Lean quarters the profile allowance for composite squarefree cofactors and bounds full polynomial amplitudes by their exact factorial endpoint sums. Every original pair receives a proved cost, with fallback below the stationary range. The best disjoint saving reaches the whole carrier; coverage, source-scale sufficiency and a new zero-free region remain open.
+Next: control how aggregate savings and unmatched mass scale with the moment order, keeping cancellation between pair sums available.
+[Current checked endpoint](RiemannGaussian/ZetaRieszSharpMatching.lean#L76)
+· [Proof details](docs/zeta-riesz-sharp-matching.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

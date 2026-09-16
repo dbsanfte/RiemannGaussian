@@ -3126,6 +3126,21 @@ No new zero-free theorem follows from this slice. Keep the default endpoint
 and both top-ten lists unchanged; supporting endpoint `centered-cancellation`
 and `docs/zeta-riesz-centered-cancellation.md` record its precise scope.
 
+`ZetaRieszTentSlope` keeps the full two-prime tent one-Lipschitz and
+quarters cutoff and complete phase costs for every composite squarefree
+cofactor. `ZetaRieszDescendingAmplitude` retains exact factorial-coefficient
+endpoint sums beyond all stationary points, including the derivative's
+growth-minus-decay factor. Its eventual moving-cutoff theorem holds for each
+fixed P and 0 < u < exp(-1/2), uniformly in height; the order threshold is not
+numerically evaluated. `ZetaRieszSharpMatching` uses the smaller proved cost
+where eligible and the prior refined cost elsewhere. The whole original
+carrier needs no extra stationary hypothesis and retains the unmatched
+remainder. Do not extrapolate finite percentage savings or constant-factor
+cofactor improvements to a source-scale bound. Aggregate savings, coverage,
+cross-pair cancellation and a new zero-free region remain open. Supporting
+endpoint `sharp-matching` and `docs/zeta-riesz-sharp-matching.md` record the
+scope; default endpoints and both top-ten lists remain unchanged.
+
 ## Commit and check-in invariant
 
 The introductory research-agent/model statement belongs directly below the

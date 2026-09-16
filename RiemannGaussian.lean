@@ -1789,3 +1789,8 @@ import RiemannGaussian.ZetaRieszCenteredCofactor
 import RiemannGaussian.ZetaRieszCenteredPhase
 import RiemannGaussian.ZetaRieszPairMatching
 import RiemannGaussian.ZetaRieszPrimeMatching
+import RiemannGaussian.ZetaRieszTentSlope
+import RiemannGaussian.ZetaRieszRefinedMatching
+import RiemannGaussian.ZetaRieszDescendingAmplitude
+import RiemannGaussian.ZetaRieszSharpPair
+import RiemannGaussian.ZetaRieszSharpMatching
