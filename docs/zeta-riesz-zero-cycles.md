@@ -150,3 +150,8 @@ These seven arithmetic modules are imported by the ordinary root.
 Default RH, zero-free and numerical-certificate endpoints and both
 top-ten lists remain unchanged. No historical novelty claim is made for
 the determinant or trigonometric identities.
+
+[Arithmetic supply bounds](zeta-riesz-arithmetic-cycles.md) now retain the
+exact cofactor target and separate capacities in a proved whole-carrier
+budget, with all complex filters and nonunit squarefree cofactors covered.
+Sufficient aggregate source-scale control remains open.

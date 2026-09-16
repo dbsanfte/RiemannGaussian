@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Exact three-term cancellations reduce the whole carrier’s mass.** Lean removes positive portions of three original amplitudes whose complex sum is exactly zero. Every successful cycle saves at least twice the smallest available amplitude; nearby opposite brackets need only quadratic extra partner mass. The full polynomial source survives in the remainder, with all later transport costs charged. Sufficient aggregate capacity and a new zero-free region remain open.
-Next: prove sufficient arithmetic supply at the flanking prime phases, then bound the complete remainder at source scale.
-[Current checked endpoint](RiemannGaussian/ZetaRieszCycleSource.lean#L50)
-· [Proof details](docs/zeta-riesz-zero-cycles.md).
+**Arithmetic supply bounds reach the whole carrier.** Lean retains exact target profiles, each oriented capacity and each remaining fraction. Prime and composite cofactors supply proved local savings for every complex polynomial filter, including cycles across prime-count classes. A guarded finite list gives a whole-carrier upper allowance and preserves the full source. Sufficient aggregate savings and a new zero-free region remain open.
+Next: prove sufficient aggregate weighted capacity; a cofinal whole allowance strictly below the source would suffice.
+[Current checked endpoint](RiemannGaussian/ZetaRieszArithmeticCycles.lean#L212)
+· [Proof details](docs/zeta-riesz-arithmetic-cycles.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

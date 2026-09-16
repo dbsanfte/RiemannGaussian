@@ -3172,6 +3172,26 @@ A sufficient independent whole remainder bound and a new zero-free region
 remain open. Supporting `zero-cycles` and `docs/zeta-riesz-zero-cycles.md`
 record the scope. Keep default endpoints and both top-ten lists unchanged.
 
+`ZetaRieszTargetProfile` retains the exact signed cofactor profile at the
+phase target, charging only small flank gaps. `ZetaRieszFullCycleSupply`
+includes every complex polynomial and all nonunit squarefree cofactors,
+using the half slope for prime cofactors and quarter slope for composites.
+`ZetaRieszRetainedFraction` and `ZetaRieszCycleCapacity` preserve each
+original remaining fraction and each oriented capacity. The central atom
+is unrestricted, so cross-prime-count cycles are allowed. Earlier P=1
+margin and sign identities remain useful but do not restrict the general
+full-filter bound. `ZetaRieszArithmeticCycles` discharges every local
+budget from literal tests, accumulates the actual arithmetic saving, and
+bounds the whole original carrier. Its available-initial-budget filter
+prevents uncredited steps from consuming later supply. All failed and
+unselected terms stay included. The full source survives without exposure
+or simplicity. Sufficient aggregate capacity or a cofinal strictly
+sub-source allowance remains open; decay to zero is not required for the
+contradiction. No new zero-free region follows yet. Supporting
+`arithmetic-cycles` and `docs/zeta-riesz-arithmetic-cycles.md` record scope.
+Keep default endpoints and both top-ten lists unchanged. Finite unfiltered
+physical-annulus probes are not whole-band or asymptotic certificates.
+
 ## Commit and check-in invariant
 
 The introductory research-agent/model statement belongs directly below the

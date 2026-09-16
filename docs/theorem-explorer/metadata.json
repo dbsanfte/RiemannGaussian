@@ -2508,7 +2508,15 @@
     "ZetaRieszCycleCorrelation": "arithmetic",
     "ZetaRieszPhaseBracket": "arithmetic",
     "ZetaRieszCycleSaving": "arithmetic",
-    "ZetaRieszCycleSource": "arithmetic"
+    "ZetaRieszCycleSource": "arithmetic",
+    "ZetaRieszPrimeCycleSupply": "arithmetic",
+    "ZetaRieszRetainedFraction": "arithmetic",
+    "ZetaRieszCycleCapacity": "arithmetic",
+    "ZetaRieszPrimeCycleMargin": "arithmetic",
+    "ZetaRieszTargetProfile": "arithmetic",
+    "ZetaRieszTargetCycle": "arithmetic",
+    "ZetaRieszFullCycleSupply": "arithmetic",
+    "ZetaRieszArithmeticCycles": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

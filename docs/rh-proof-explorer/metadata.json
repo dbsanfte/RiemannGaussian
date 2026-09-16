@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 48,
-      "id": "zero-cycles",
+      "sequence": 49,
+      "id": "arithmetic-cycles",
       "kind": "theorem",
-      "title": "Exact three-term cancellations reduce the whole carrier’s mass.",
-      "body": "Lean removes positive portions of three original amplitudes whose complex sum is exactly zero. Every successful cycle saves at least twice the smallest available amplitude; nearby opposite brackets need only quadratic extra partner mass. The full polynomial source survives in the remainder, with all later transport costs charged. Sufficient aggregate capacity and a new zero-free region remain open.",
-      "next": "Next: prove sufficient arithmetic supply at the flanking prime phases, then bound the complete remainder at source scale.",
+      "title": "Arithmetic supply bounds reach the whole carrier.",
+      "body": "Lean retains exact target profiles, each oriented capacity and each remaining fraction. Prime and composite cofactors supply proved local savings for every complex polynomial filter, including cycles across prime-count classes. A guarded finite list gives a whole-carrier upper allowance and preserves the full source. Sufficient aggregate savings and a new zero-free region remain open.",
+      "next": "Next: prove sufficient aggregate weighted capacity; a cofinal whole allowance strictly below the source would suffice.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszCycleSourceTheorem"
+        "rieszArithmeticCycleSourceTheorem"
       ],
-      "documentation": "docs/zeta-riesz-zero-cycles.md"
+      "documentation": "docs/zeta-riesz-arithmetic-cycles.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -2181,6 +2181,49 @@
         "rieszZeroCycleScope"
       ],
       "documentation": "docs/zeta-riesz-zero-cycles.md"
+    },
+    {
+      "id": "arithmetic-cycles",
+      "label": "Arithmetic cycle supply · whole-carrier budget",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCycleTargetProfileTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCycleAllCofactorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCycleSeparateCapacityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCycleFullSupplyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszArithmeticCycleLocalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszArithmeticCycleTotalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszArithmeticCycleWholeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszArithmeticCycleSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszArithmeticCycleScope"
+      ],
+      "documentation": "docs/zeta-riesz-arithmetic-cycles.md"
     }
   ],
   "scopes": {
@@ -5354,6 +5397,62 @@
       "summary": "The negative multiplicity limit holds for the full pole-jet polynomial without exposure or simplicity.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-zero-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszTargetProfile.abs_prime_profile_sub_target_le": {
+      "label": "Keep the exact cofactor profile at the phase target",
+      "summary": "Only the flank gap is charged; the signed profile change across the half-turn remains exact.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-arithmetic-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFullCycleSupply.abs_prime_profile_sub_cofactor_target_le": {
+      "label": "Prime and composite cofactors both receive proved errors",
+      "summary": "The half-divisor and quarter-divisor slope bounds cover every nonunit squarefree shared cofactor.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-arithmetic-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCycleCapacity.cycleSaving_retained_rayCapacity": {
+      "label": "Keep each remaining fraction and each oriented capacity",
+      "summary": "Three separate lower masses and angular areas bound the saving after all earlier cycles.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-arithmetic-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFullCycleSupply.full_cycle_after_previous_ge_cofactor_target": {
+      "label": "Actual arithmetic supply reaches every complex filter",
+      "summary": "Full phases and support stay explicit; the central atom may cross prime-count classes.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-arithmetic-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszArithmeticCycles.arithmeticCycleBudget_le_saving": {
+      "label": "Every finite local budget is independently proved",
+      "summary": "Actual gcd, prime, cofactor and complex-area tests discharge all local premises.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-arithmetic-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszArithmeticCycles.arithmeticSavings_le_totalSaving": {
+      "label": "Local budgets accumulate without reused mass",
+      "summary": "Every later budget uses the actual previously retained fractions.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-arithmetic-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszArithmeticCycles.norm_actual_band_le_available_arithmetic_cycles": {
+      "label": "A specified arithmetic budget bounds the whole carrier",
+      "summary": "All original terms and the full polynomial remain; sufficient aggregate saving is unproved.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-arithmetic-cycles.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszArithmeticCycles.tendsto_available_arithmetic_cycle_source": {
+      "label": "The full source survives the available arithmetic cycles",
+      "summary": "The negative multiplicity source requires neither exposure nor simplicity.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-arithmetic-cycles.md",
       "overview": true
     }
   }
