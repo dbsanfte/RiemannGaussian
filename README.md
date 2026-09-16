@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Growing composite-cofactor cells now decay.** Lean bounds the entire absolute mass of composite cofactors up to exp(N/10), with geometric decay for 1/2 <= u < exp(-2/3), uniformly in height and with the full filter. Complete prime cells retain the source and allow further signed cancellation. Semiprimes and larger composite cofactors still need a joint bound; no new zero-free region follows yet.
-Next: attack cancellation in the remaining complete prime cells, coupling semiprimes with the larger composite cofactors.
-[Current checked endpoint](RiemannGaussian/ZetaRieszSmallCompositeCells.lean#L290)
-· [Proof details](docs/zeta-riesz-prime-cells.md).
+**Larger composite-cofactor ranges now decay.** Lean controls the entire composite-owner mass up to exp(N/5) for u<exp(-2/3), and up to exp(N/10) for the wider u<exp(-16/25). Every bound keeps the full filter and all heights. A source-dependent positive exponent also works throughout 1/2<u<1 except exp(-1/2). The full source survives; the remaining semiprime and larger-owner signed bound is open, so no new zero-free region follows.
+Next: bound the joint signed response of semiprimes and composite owners above the enlarged cutoff.
+[Current checked endpoint](RiemannGaussian/ZetaRieszOwnerBounds.lean#L81)
+· [Proof details](docs/zeta-riesz-owner-windows.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

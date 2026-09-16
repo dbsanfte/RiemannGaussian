@@ -2529,7 +2529,11 @@
     "ZetaRieszPrimeIntervals": "arithmetic",
     "ZetaRieszArithmeticCells": "arithmetic",
     "ZetaRieszCellCycles": "arithmetic",
-    "ZetaRieszSmallCompositeCells": "arithmetic"
+    "ZetaRieszSmallCompositeCells": "arithmetic",
+    "ZetaRieszOwnerWindow": "arithmetic",
+    "ZetaRieszOwnerMass": "arithmetic",
+    "ZetaRieszOwnerCells": "arithmetic",
+    "ZetaRieszOwnerBounds": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

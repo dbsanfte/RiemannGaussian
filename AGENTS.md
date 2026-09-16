@@ -3234,6 +3234,25 @@ tracks locally without subagents. Run focused Lean validation as changes
 are made, and amortize full build, root audits, publication checks and CI
 across a coherent batch of compatible slices. Do not omit required gates.
 
+`ZetaRieszOwnerWindow`, `ZetaRieszOwnerMass`, `ZetaRieszOwnerCells` and
+`ZetaRieszOwnerBounds` extend the independent composite-owner deletion.
+The complete absolute mass up to exp(N/5) now decays geometrically for
+0<u<exp(-2/3); the exp(N/10) class decays for 0<u<exp(-16/25).
+Every fixed full complex filter and all heights, including moving ones,
+are covered. The exact floor-defined length stays coupled to the source
+radius; the original divisor majorant pays the whole support without a
+separate cofactor-count factor. Across 1/2<u<1 except exp(-1/2), a positive
+u-dependent exponential owner range is also proved, but do not claim one
+fixed exponent there. The single scalar contact is a limitation of this
+estimate, not a zero-location statement or a general impossibility result.
+All selected complete cell norms vanish and the full pole-jet source
+survives with the stated radius hypotheses, no exposure and no simplicity.
+The starting order is unevaluated. Remaining semiprimes and larger
+composite owner cofactors still need a joint signed bound. No new zero-free
+region follows from these component estimates. Supporting endpoint
+`owner-windows` and `docs/zeta-riesz-owner-windows.md` record this scope.
+Keep earlier estimates, default endpoints and both top-ten lists.
+
 ## Commit and check-in invariant
 
 The introductory research-agent/model statement belongs directly below the

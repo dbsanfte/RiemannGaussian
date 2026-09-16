@@ -16,17 +16,17 @@
       "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
     },
     "latestUpdate": {
-      "sequence": 50,
-      "id": "prime-cells",
+      "sequence": 51,
+      "id": "owner-windows",
       "kind": "theorem",
-      "title": "Growing composite-cofactor cells now decay.",
-      "body": "Lean bounds the entire absolute mass of composite cofactors up to exp(N/10), with geometric decay for 1/2 <= u < exp(-2/3), uniformly in height and with the full filter. Complete prime cells retain the source and allow further signed cancellation. Semiprimes and larger composite cofactors still need a joint bound; no new zero-free region follows yet.",
-      "next": "Next: attack cancellation in the remaining complete prime cells, coupling semiprimes with the larger composite cofactors.",
+      "title": "Larger composite-cofactor ranges now decay.",
+      "body": "Lean controls the entire composite-owner mass up to exp(N/5) for u<exp(-2/3), and up to exp(N/10) for the wider u<exp(-16/25). Every bound keeps the full filter and all heights. A source-dependent positive exponent also works throughout 1/2<u<1 except exp(-1/2). The full source survives; the remaining semiprime and larger-owner signed bound is open, so no new zero-free region follows.",
+      "next": "Next: bound the joint signed response of semiprimes and composite owners above the enlarged cutoff.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszRemainingOwnerSourceTheorem"
+        "rieszOwnerFifthSourceTheorem"
       ],
-      "documentation": "docs/zeta-riesz-prime-cells.md"
+      "documentation": "docs/zeta-riesz-owner-windows.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -2302,6 +2302,49 @@
         "rieszSmallOwnerScope"
       ],
       "documentation": "docs/zeta-riesz-prime-cells.md"
+    },
+    {
+      "id": "owner-windows",
+      "label": "Larger owner windows · independent decay",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerLengthCeilingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerGeneralMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerGeneralSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerFifthMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerFifthSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerTenthMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerTenthSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerWindowSupportTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszOwnerWindowScope"
+      ],
+      "documentation": "docs/zeta-riesz-owner-windows.md"
     }
   ],
   "scopes": {
@@ -5629,6 +5672,62 @@
       "summary": "The negative multiplicity source survives this independent deletion in the stated source-radius range, without exposure or simplicity.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-prime-cells.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszOwnerWindow.eventually_length_le_source_log": {
+      "label": "Keep the physical cutoff linked to the source radius",
+      "summary": "The exact floor-defined length has its eventual ceiling for every 0<u<1.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-owner-windows.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszOwnerMass.exists_growing_owner_mass_decay": {
+      "label": "Growing owner decay across the source-radius interval",
+      "summary": "Some positive growth exponent works for every 1/2<u<1 except exp(-1/2), with independent absolute-mass decay.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-owner-windows.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszOwnerCells.exists_remaining_source": {
+      "label": "The full source survives the general deletion",
+      "summary": "The entire pole-jet source remains, without exposure or simplicity; the exponent depends on u.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-owner-windows.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszOwnerBounds.eventually_fifth_owner_mass_le": {
+      "label": "Control every composite owner up to exp(N/5)",
+      "summary": "A common subunit geometric rate pays the entire absolute mass for 0<u<exp(-2/3), uniformly in height.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-owner-windows.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszOwnerBounds.tendsto_fifth_remaining_source": {
+      "label": "Preserve the full source after the larger cutoff",
+      "summary": "Semiprime owners and composite owners above exp(N/5) retain the full negative multiplicity source in this range.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-owner-windows.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszOwnerBounds.eventually_tenth_owner_mass_le": {
+      "label": "Extend the exp(N/10) decay range",
+      "summary": "The same complete owner class now has a geometric allowance for 0<u<exp(-16/25).",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-owner-windows.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszOwnerBounds.tendsto_tenth_remaining_source": {
+      "label": "Preserve the source throughout the wider range",
+      "summary": "The full pole-jet source survives this independently paid component deletion in the expanded quantitative interval.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-owner-windows.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszOwnerCells.remainingCells_support": {
+      "label": "Name every remaining owner class",
+      "summary": "The remaining complete cells have a prime cofactor or logarithmic cofactor size greater than delta*N.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-owner-windows.md",
       "overview": true
     }
   }

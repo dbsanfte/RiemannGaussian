@@ -1,5 +1,9 @@
 # Complete prime intervals and signed cell cancellation
 
+[Larger owner windows](zeta-riesz-owner-windows.md) strengthen the
+independent composite-cofactor deletion below, with a larger cutoff and
+a wider source-radius range. The remaining joint signed bound stays open.
+
 The entire original Riesz carrier now has an exact decomposition into
 complete intervals of ordinary primes. Every squarefree composite has
 one owner: its largest prime, with its remaining nonunit cofactor. A cell

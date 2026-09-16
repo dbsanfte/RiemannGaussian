@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**296 modules.** Source links open the definitions, hypotheses and proofs.
+**300 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -172,6 +172,10 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszOffDiagonalJoint](../../RiemannGaussian/ZetaRieszOffDiagonalJoint.lean)
 - [ZetaRieszOppositePrimes](../../RiemannGaussian/ZetaRieszOppositePrimes.lean)
 - [ZetaRieszOwnedCells](../../RiemannGaussian/ZetaRieszOwnedCells.lean)
+- [ZetaRieszOwnerBounds](../../RiemannGaussian/ZetaRieszOwnerBounds.lean)
+- [ZetaRieszOwnerCells](../../RiemannGaussian/ZetaRieszOwnerCells.lean)
+- [ZetaRieszOwnerMass](../../RiemannGaussian/ZetaRieszOwnerMass.lean)
+- [ZetaRieszOwnerWindow](../../RiemannGaussian/ZetaRieszOwnerWindow.lean)
 - [ZetaRieszPacketCycle](../../RiemannGaussian/ZetaRieszPacketCycle.lean)
 - [ZetaRieszPacketIteration](../../RiemannGaussian/ZetaRieszPacketIteration.lean)
 - [ZetaRieszPacketSupply](../../RiemannGaussian/ZetaRieszPacketSupply.lean)
