@@ -59,6 +59,12 @@ eventually below `-3/40`.
 
 An **independent** cofinal real floor at `-3/40` for this smaller carrier
 would close the contradiction. This joint arithmetic floor remains open.
+The [positive-allowance audit](zeta-riesz-allowance-obstruction.md) now
+rules out the specific candidate `B_j-(3/4)B_4,j`: balanced three-prime
+products give exponential growth for every fixed height throughout the
+requested radius interval. No cofinal `3/40` ceiling is possible for that
+quantity. The finite one-sided inequality remains true, but a successful
+estimate must preserve cancellation beyond this allowance.
 Balanced products remain in the sum; bounding their assigned companion
 does not bound their unassigned original response. The
 [earlier conditional criterion](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=harmonic-floor-criterion)

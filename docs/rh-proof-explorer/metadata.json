@@ -5,7 +5,7 @@
   "title": "Current RH Proof Direction",
   "defaultEndpoint": "harmonic-remainder",
   "limitNote": "RH remains open. The independent arithmetic saving needed for the source contradiction has not been proved.",
-  "contextScope": "The complete companion is now compared with every original mask, and all off-mask corrections are paid. The full reserve is evaluated. The remaining allocated contribution with a prime carrying at least 13/20 of log n has a height-uniform geometric bound. The smaller signed carrier retains the exact source on 1/2<u<exp(-11/16). For simple exposed zeros its real part is eventually below -3/40; an independent cofinal real floor remains open. Balanced products and their joint signed correlations remain unpaid. No zero exclusion or RH proof is claimed.",
+  "contextScope": "The complete companion is now compared with every original mask, and all off-mask corrections are paid. The full reserve is evaluated. The remaining allocated contribution with a prime carrying at least 13/20 of log n has a height-uniform geometric bound. The smaller signed carrier retains the exact source on 1/2<u<exp(-11/16). For simple exposed zeros its real part is eventually below -3/40; an independent cofinal real floor remains open. Balanced products and their joint signed correlations remain unpaid. No zero exclusion or RH proof is claimed. The specific positive allowance B_j-(3/4)*B_4,j is now proved to diverge on that interval for every fixed height; it cannot close the contradiction.",
   "scopeHeading": "What remains to prove",
   "guideDocument": "docs/rh-proof-direction.md",
   "metadataOrigin": "Current RH campaign metadata; theorem names and scopes resolve through the compiled project status.",
@@ -16,17 +16,17 @@
       "changeReason": "The 2026-09-20 allocation, mask, exact-reserve and dominant-prime batch reduces the active target to one smaller signed carrier; the wing and off-mask corrections are no longer unpaid obligations."
     },
     "latestUpdate": {
-      "sequence": 54,
-      "id": "allocated-dominant-sector",
+      "sequence": 55,
+      "id": "positive-allowance-obstruction",
       "kind": "theorem",
-      "title": "The full dominant-prime sector is paid; the exact reserve strengthens the deficit.",
-      "body": "Lean now compares the complete companion with every original mask, evaluates the whole reserve, and gives geometric decay for the unassigned contribution whenever a prime carries at least 13/20 of log n. All nonzero surviving terms have every prime below that cap. Their exact source remains, forcing the real part below -3/40 for simple exposed zeros in 1/2<u<exp(-11/16). The independent signed floor is still open; no new zero-free region follows.",
-      "next": "Next: prove a cofinal real floor at -3/40 for the remaining joint signed sum, including balanced products and all surviving prime counts.",
+      "title": "The proposed positive allowance is proved too large.",
+      "body": "Lean proves the independent finite one-sided estimate and its four-prime credit, then rules out the proposed endgame bound: for every fixed height and `1/2 < u <= exp(-11/16)`, the unchanged complement `B_j-B_4,j` has a positive lower bound `c(u,y)(2u)^N_j/(N_j+1)^4` and diverges. Balanced three-prime products survive every mask. Thus `B_j-(3/4)B_4,j` cannot meet `3/40` on any cofinal subsequence. This is a negative result for that allowance; the signed source and open arithmetic floor remain.",
+      "next": "Next: retain cancellation between the surviving signed contributions to obtain the independent cofinal floor at `-3/40`; do not pursue an upper bound on this refuted allowance.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszDominantBoundTheorem"
+        "rieszAllowanceNoCofinalCeilingTheorem"
       ],
-      "documentation": "docs/zeta-riesz-dominant-sector.md"
+      "documentation": "docs/zeta-riesz-allowance-obstruction.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -52,6 +52,60 @@
         "rieszDominantScope"
       ],
       "documentation": "docs/zeta-riesz-dominant-sector.md"
+    },
+    {
+      "id": "allowance-obstruction",
+      "label": "Obstruction · fixed allowance diverges at every fixed height",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszComplementGrowthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszComplementDivergenceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAllowanceDivergenceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAllowanceNoCofinalCeilingTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszAllowanceObstructionScope"
+      ],
+      "documentation": "docs/zeta-riesz-allowance-obstruction.md"
+    },
+    {
+      "id": "one-sided-arithmetic",
+      "label": "One-sided arithmetic · exact divisor signs and finite four-prime credit",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszReflectedLinearTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszReflectedCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOneSidedBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourCreditTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszOneSidedScope"
+      ],
+      "documentation": "docs/zeta-riesz-one-sided-arithmetic.md"
     },
     {
       "id": "dominant-prime-sector",
@@ -6165,6 +6219,102 @@
       "overview": true,
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-dominant-sector.md"
+    },
+    "RiemannGaussian.ZetaRieszReflectedLinear.riesz_eq_linear": {
+      "label": "Reflected divisor sum evaluated exactly",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-one-sided-arithmetic.md"
+    },
+    "RiemannGaussian.ZetaRieszReflectedLinear.coefficient_eq_linear": {
+      "label": "Exact coefficient retains prime-count parity",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-one-sided-arithmetic.md"
+    },
+    "RiemannGaussian.ZetaRieszReflectedLinear.linearClass_count_le_nine": {
+      "label": "Evaluated reflected class has at most nine primes",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-one-sided-arithmetic.md"
+    },
+    "RiemannGaussian.ZetaRieszOneSidedArithmetic.four_phaseCost_le_quarter": {
+      "label": "Four-prime charge reduced by at least three quarters",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-one-sided-arithmetic.md"
+    },
+    "RiemannGaussian.ZetaRieszOneSidedArithmetic.nondominantRemainder_lower": {
+      "label": "Independent finite one-sided bound on the actual carrier",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-one-sided-arithmetic.md"
+    },
+    "RiemannGaussian.ZetaRieszOneSidedArithmetic.nondominantRemainder_lower_with_four_credit": {
+      "label": "Full finite lower bound with four-prime credit",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-one-sided-arithmetic.md"
+    },
+    "RiemannGaussian.ZetaRieszAllowanceComplement.balanced_mem_nondominant": {
+      "label": "Balanced products survive every existing mask",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-allowance-obstruction.md"
+    },
+    "RiemannGaussian.ZetaRieszAllowanceComplement.balanced_weight_lower": {
+      "label": "Balanced products retain almost all unassigned weight",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-allowance-obstruction.md"
+    },
+    "RiemannGaussian.ZetaRieszAllowanceComplement.subfamily_le_complement": {
+      "label": "Non-four-prime charge survives in full",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-allowance-obstruction.md"
+    },
+    "RiemannGaussian.ZetaRieszAllowancePrimeBoxes.tripleProducts_card": {
+      "label": "Ordered prime products count each integer once",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-allowance-obstruction.md"
+    },
+    "RiemannGaussian.ZetaRieszAllowancePrimeBoxes.eventually_logPrimes_card_lower": {
+      "label": "Proved PNT supplies actual primes in every shifted box",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-allowance-obstruction.md"
+    },
+    "RiemannGaussian.ZetaRieszAllowancePrimeBoxes.exists_positive_phase_boxes": {
+      "label": "Bounded shifts retain the exact positive product phase",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-allowance-obstruction.md"
+    },
+    "RiemannGaussian.ZetaRieszAllowanceGrowth.eventually_complement_growth": {
+      "label": "Complement grows at least as c(2u)^N/(N+1)^4",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-allowance-obstruction.md"
+    },
+    "RiemannGaussian.ZetaRieszAllowanceGrowth.complement_tendsto_atTop": {
+      "label": "Exact complement diverges to positive infinity",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-allowance-obstruction.md"
+    },
+    "RiemannGaussian.ZetaRieszAllowanceGrowth.improved_allowance_tendsto_atTop": {
+      "label": "Fixed improved allowance diverges",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-allowance-obstruction.md"
+    },
+    "RiemannGaussian.ZetaRieszAllowanceGrowth.not_frequently_improved_allowance_le_three_fortieths": {
+      "label": "No cofinal 3/40 ceiling for this allowance",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-allowance-obstruction.md"
     }
   }
 }

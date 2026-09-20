@@ -1458,6 +1458,49 @@ their cross-count correlations remain unpaid. Do not claim decay of the
 dominant integers with their original unallocated coefficients. See
 `docs/zeta-riesz-dominant-sector.md`. No restricted contradiction is proved.
 
+The local continuation `ZetaRieszReflectedLinear` evaluates the complete
+Riesz coefficient whenever every prime logarithm is between D/2 and D,
+where D=log(n)-L>=0. Composite divisors then lie beyond the reflected
+cutoff. The exact coefficient is
+`-(log(n)/L)*(-1)^omega(n)*((omega(n)-1)*L-(omega(n)-2)*log(n))`.
+On the actual nondominant support this class has 3<=omega(n)<=9.
+`ZetaRieszOneSidedArithmetic.nondominantRemainder_lower` gives an independent
+one-sided real bound for the actual remaining carrier at every order and
+height. Only adverse phases of the evaluated class are charged; the other
+labels retain their antichain allowance. The whole new budget is no larger
+than the old one. For four primes in 24L/17<=log(n)<=8L/5, the charge is at
+most one quarter of its previous antichain allowance, uniformly in phase.
+`nondominantRemainder_lower_with_four_credit` lifts this to
+`Re R_j >= -B_j + (3/4)*B_4,j` on the full original support. This is a
+75-percent saving on that specified subfamily's charge, not on the whole
+carrier. The new complete budget has NOT been bounded by 3/40, cofinally or
+otherwise. Do not describe this finite arithmetic inequality as the needed
+uniform floor or a restricted contradiction. See
+`docs/zeta-riesz-one-sided-arithmetic.md` and the supporting
+`one-sided-arithmetic` explorer endpoint.
+
+The quantitative audit now rules out that exact improved allowance as an
+endgame target. `ZetaRieszAllowanceGrowth.complement_tendsto_atTop` and
+`improved_allowance_tendsto_atTop` prove that, for every fixed real height
+and every 1/2<u<=exp(-11/16), both B_j-B_4,j and B_j-(3/4)*B_4,j tend to
+positive infinity on the original dyadic schedule.
+`eventually_complement_growth` supplies c(u,y)*(2u)^N/(N+1)^4 with c>0.
+Balanced three-prime products near log(n)=2N survive every original mask,
+count cutoff and paid sector. Their unassigned fraction is eventually at
+least 1/2. Actual prime-window asymptotics provide enough such products
+with cosine at least 1/2; their four-prime credit is zero.
+`not_frequently_improved_allowance_le_three_fortieths` rules out even a
+cofinal subsequence satisfying the requested ceiling. Do not keep listing
+an upper bound on this fixed allowance as open or attainable by extending
+the divisor-sign evaluation: that does not change its definition. This
+is an obstruction theorem, not a signed floor, restricted contradiction or
+zero exclusion. The signed carrier and evaluated source remain valid;
+any sufficient estimate must retain cancellation between labels beyond
+this positive allowance. See `docs/zeta-riesz-allowance-obstruction.md`.
+The supporting `allowance-obstruction` explorer endpoint exposes the
+negative result. Keep the main default at the unchanged signed source and
+its open floor; do not present the obstruction as a zero exclusion.
+
 The active RH explorer default is `harmonic-remainder`, now ending at
 `tendsto_nondominant_exact_source`. Supporting views `joint-allocation`,
 `exact-wing-reserve` and `dominant-prime-sector` expose the paid comparison,

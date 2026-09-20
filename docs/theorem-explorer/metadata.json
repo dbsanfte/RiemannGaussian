@@ -2557,7 +2557,12 @@
     "ZetaRieszRetainedSource": "arithmetic",
     "ZetaRieszDominantAllocation": "arithmetic",
     "ZetaRieszDominantSector": "arithmetic",
-    "ZetaRieszNondominantCarrier": "arithmetic"
+    "ZetaRieszNondominantCarrier": "arithmetic",
+    "ZetaRieszReflectedLinear": "arithmetic",
+    "ZetaRieszOneSidedArithmetic": "arithmetic",
+    "ZetaRieszAllowanceComplement": "arithmetic",
+    "ZetaRieszAllowancePrimeBoxes": "arithmetic",
+    "ZetaRieszAllowanceGrowth": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

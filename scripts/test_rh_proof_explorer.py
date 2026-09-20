@@ -130,6 +130,45 @@ def run(output, url=None, refresh_preview=False):
                         assert all(term in old_bound['statement'] for term in (
                             'correlatedSamplingCost', 'beta < 0', 'p ^ S', '0 < eps', '∃'))
                         assert 'conditioningAllowance' not in old_bound['statement']
+                    if endpoint['id'] in ('allowance-obstruction', 'one-sided-arithmetic'):
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 4
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'fixed' in scope and 'cofinal' in scope
+                        assert all('NontrivialZetaZero' not in theorem['statement'] for theorem in roots)
+                        if endpoint['id'] == 'allowance-obstruction':
+                            assert all(t in scope for t in ('positive infinity', 'exactly three',
+                                'every fixed real height', '1/2<u<=exp(-11/16)',
+                                'cofinal 3/40 ceiling is impossible', 'starting index are unevaluated'))
+                            growth = next(n for n in roots if n['id'].endswith('.eventually_complement_growth'))
+                            assert all(t in growth['statement'] for t in ('∃ c', '0 < c', 'dyadicMomentOrder', 'fourCharge'))
+                            divergence = next(n for n in roots if n['id'].endswith('.improved_allowance_tendsto_atTop'))
+                            assert 'Tendsto' in divergence['statement'] and divergence['statement'].count('atTop') == 2
+                            ceiling = next(n for n in roots if n['id'].endswith('.not_frequently_improved_allowance_le_three_fortieths'))
+                            assert '¬' in ceiling['statement'] and '3 / 40' in ceiling['statement']
+                        else:
+                            assert '75-percent' in scope and 'not a saving on the whole carrier' in scope
+                            bound = next(n for n in roots if n['id'].endswith('.nondominantRemainder_lower_with_four_credit'))
+                            assert all(t in bound['statement'] for t in ('antichainBudget', 'fourCharge', 'nondominantRemainder'))
+                        for theorem in roots:
+                            selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', theorem['id'])
+                            node = page.locator(f'[data-node="{selected}"]')
+                            node.hover()
+                            assert page.locator('#tooltip').is_visible()
+                            node.click()
+                            assert page.locator('#details pre').inner_text().strip() == theorem['statement'].strip()
+                            link = page.locator('#details .source-button').get_attribute('href')
+                            assert link.endswith(f"#L{theorem['source']['line']}")
+                            if published:
+                                assert f"/blob/{revision}/{theorem['source']['path']}" in link
+                            else:
+                                with page.expect_popup() as opened:
+                                    page.locator('#details .source-button').click()
+                                source_page = opened.value
+                                source_page.wait_for_selector('.source-line:target')
+                                assert 'theorem ' + theorem['id'].rsplit('.', 1)[-1] in source_page.locator('.source-line:target').inner_text()
+                                source_page.close()
+                            page.locator('#close-details').click()
                     if endpoint['id'] in ('harmonic-remainder', 'dominant-prime-sector'):
                         scope = page.locator('#scope-text').inner_text()
                         assert all(term in scope for term in (

@@ -142,10 +142,10 @@ Prove a first restricted contradiction along the harmonic-cost route. Preserve t
 
 ### Latest Update
 
-**The full dominant-prime sector is paid; the exact reserve strengthens the deficit.** Lean now compares the complete companion with every original mask, evaluates the whole reserve, and gives geometric decay for the unassigned contribution whenever a prime carries at least 13/20 of log n. All nonzero surviving terms have every prime below that cap. Their exact source remains, forcing the real part below -3/40 for simple exposed zeros in 1/2<u<exp(-11/16). The independent signed floor is still open; no new zero-free region follows.
-Next: prove a cofinal real floor at -3/40 for the remaining joint signed sum, including balanced products and all surviving prime counts.
-[Current checked endpoint](RiemannGaussian/ZetaRieszDominantSector.lean#L146)
-· [Proof details](docs/zeta-riesz-dominant-sector.md).
+**The proposed positive allowance is proved too large.** Lean proves the independent finite one-sided estimate and its four-prime credit, then rules out the proposed endgame bound: for every fixed height and `1/2 < u <= exp(-11/16)`, the unchanged complement `B_j-B_4,j` has a positive lower bound `c(u,y)(2u)^N_j/(N_j+1)^4` and diverges. Balanced three-prime products survive every mask. Thus `B_j-(3/4)B_4,j` cannot meet `3/40` on any cofinal subsequence. This is a negative result for that allowance; the signed source and open arithmetic floor remain.
+Next: retain cancellation between the surviving signed contributions to obtain the independent cofinal floor at `-3/40`; do not pursue an upper bound on this refuted allowance.
+[Current checked endpoint](RiemannGaussian/ZetaRieszAllowanceGrowth.lean#L260)
+· [Proof details](docs/zeta-riesz-allowance-obstruction.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
