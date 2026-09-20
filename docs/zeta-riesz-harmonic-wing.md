@@ -15,6 +15,14 @@ their explicit exposed-zero hypothesis. The initial contradiction target
 concerns simple exposed zeros; no theorem here establishes that every
 hypothetical off-line zero is simple or satisfies these restrictions.
 
+The [joint cofactor estimate](zeta-riesz-joint-cofactor.md) now independently
+bounds the original unpaid wing plus an explicit complete signed composite
+companion by \(C_\gamma(N+1)^2e^{-N/64}\). All saturation, prime-prefix,
+repeated-prime and unit corrections are accounted for. The remaining target
+is the same finite count sum minus that companion; its independent lower
+bound remains open. This is a bound for a coupled sum, not separate decay
+of the wing or a new zero-free region.
+
 ## The parts now paid
 
 The prior [complete high-prime-count deletion](zeta-riesz-whole-prime-count-decay.md)

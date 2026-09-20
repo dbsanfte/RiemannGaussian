@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**303 modules.** Source links open the definitions, hypotheses and proofs.
+**307 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -97,6 +97,9 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszCentralPrimeLayers](../../RiemannGaussian/ZetaRieszCentralPrimeLayers.lean)
 - [ZetaRieszCentralProductPhase](../../RiemannGaussian/ZetaRieszCentralProductPhase.lean)
 - [ZetaRieszCentralWindow](../../RiemannGaussian/ZetaRieszCentralWindow.lean)
+- [ZetaRieszCofactorBoundary](../../RiemannGaussian/ZetaRieszCofactorBoundary.lean)
+- [ZetaRieszCofactorCompletionBound](../../RiemannGaussian/ZetaRieszCofactorCompletionBound.lean)
+- [ZetaRieszCofactorPrimeRepairs](../../RiemannGaussian/ZetaRieszCofactorPrimeRepairs.lean)
 - [ZetaRieszCofactorTiltRate](../../RiemannGaussian/ZetaRieszCofactorTiltRate.lean)
 - [ZetaRieszCompleteHeadHarmonic](../../RiemannGaussian/ZetaRieszCompleteHeadHarmonic.lean)
 - [ZetaRieszCompletedCarrier](../../RiemannGaussian/ZetaRieszCompletedCarrier.lean)
@@ -157,6 +160,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszInfinitePhysical](../../RiemannGaussian/ZetaRieszInfinitePhysical.lean)
 - [ZetaRieszIntermediatePrimeSupport](../../RiemannGaussian/ZetaRieszIntermediatePrimeSupport.lean)
 - [ZetaRieszInterpolation](../../RiemannGaussian/ZetaRieszInterpolation.lean)
+- [ZetaRieszJointCofactor](../../RiemannGaussian/ZetaRieszJointCofactor.lean)
 - [ZetaRieszLargeSmoothClass](../../RiemannGaussian/ZetaRieszLargeSmoothClass.lean)
 - [ZetaRieszLargeSmoothDeletion](../../RiemannGaussian/ZetaRieszLargeSmoothDeletion.lean)
 - [ZetaRieszLengthAsymptotic](../../RiemannGaussian/ZetaRieszLengthAsymptotic.lean)

@@ -142,10 +142,10 @@ Prove a first restricted contradiction along the harmonic-cost route. Retain the
 
 ### Latest Update
 
-**A positive wing reserve and two geometric tail deletions.** Lean pays the lower-count terms outside 25N/16<log n<=5N/2 throughout the original harmonic range. On 1/2<u<exp(-11/16), the window narrows to 7N/4<log n<=9N/4; a wing block contributes at least 15m²/544 and its high-leg tail vanishes. The source now lies in the narrower count sum, middle wing and positive reserve. The required joint arithmetic floor remains open; no new zero-free region follows.
-Next: bound the coupled lower-count response in the surviving logarithmic window and the unpaid middle wing.
-[Current checked endpoint](RiemannGaussian/ZetaRieszHarmonicWindow.lean#L219)
-· [Proof details](docs/zeta-riesz-harmonic-wing.md).
+**The unpaid wing cancels a complete signed composite companion.** Lean proves an independent bound C_gamma(N+1)^2 exp(-N/64) for the original unpaid wing plus an explicit signed composite companion, for 1/2<=u<exp(-2/3) at each fixed abs(gamma)>1. All completion corrections are paid. The source survives in the finite count sum minus this complete companion, plus the existing positive reserve on its smaller interval. The joint arithmetic floor remains open; no new zero-free region follows.
+Next: compare the complete companion with the actual finite support, retain every prime incidence and complementary order, and bound the surviving signed difference.
+[Current checked endpoint](RiemannGaussian/ZetaRieszJointCofactor.lean#L168)
+· [Proof details](docs/zeta-riesz-joint-cofactor.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

@@ -5,7 +5,7 @@
   "title": "Current RH Proof Direction",
   "defaultEndpoint": "harmonic-remainder",
   "limitNote": "RH remains open. The independent arithmetic saving needed for the source contradiction has not been proved.",
-  "contextScope": "The exact harmonic cost, complete high-prime-count deletion, positive wing reserve and geometric outer-tail bounds leave a narrower lower-prime-count sum coupled to the middle wing. Its independent cofinal real floor remains open. The new wing bounds cover 1/2<u<exp(-11/16); the goal retains the full original 1/2<u<exp(-2/3) interval. No zero exclusion or RH proof is claimed.",
+  "contextScope": "The original unpaid wing and its explicit signed composite companion cancel with geometric source-scale error. The remaining target is the finite count sum minus the complete composite companion; its independent cofinal real floor remains open. Every finite mask and prime incidence must be retained in their comparison. The joint cancellation covers 1/2<=u<exp(-2/3); the positive reserve and narrowed source window use 1/2<u<exp(-11/16). No zero exclusion or RH proof is claimed.",
   "scopeHeading": "What remains to prove",
   "guideDocument": "docs/rh-proof-direction.md",
   "metadataOrigin": "Current RH campaign metadata; theorem names and scopes resolve through the compiled project status.",
@@ -16,21 +16,21 @@
       "changeReason": "On 2026-09-20 the user explicitly refocused the campaign on finishing the evaluated harmonic-cost route. Every new lemma must reduce its unpaid budget or discharge a necessary contradiction hypothesis."
     },
     "latestUpdate": {
-      "sequence": 52,
-      "id": "harmonic-wing-window",
+      "sequence": 53,
+      "id": "joint-wing-cofactor",
       "kind": "theorem",
-      "title": "A positive wing reserve and two geometric tail deletions.",
-      "body": "Lean pays the lower-count terms outside 25N/16<log n<=5N/2 throughout the original harmonic range. On 1/2<u<exp(-11/16), the window narrows to 7N/4<log n<=9N/4; a wing block contributes at least 15m²/544 and its high-leg tail vanishes. The source now lies in the narrower count sum, middle wing and positive reserve. The required joint arithmetic floor remains open; no new zero-free region follows.",
-      "next": "Next: bound the coupled lower-count response in the surviving logarithmic window and the unpaid middle wing.",
+      "title": "The unpaid wing cancels a complete signed composite companion.",
+      "body": "Lean proves an independent bound C_gamma(N+1)^2 exp(-N/64) for the original unpaid wing plus an explicit signed composite companion, for 1/2<=u<exp(-2/3) at each fixed abs(gamma)>1. All completion corrections are paid. The source survives in the finite count sum minus this complete companion, plus the existing positive reserve on its smaller interval. The joint arithmetic floor remains open; no new zero-free region follows.",
+      "next": "Next: compare the complete companion with the actual finite support, retain every prime incidence and complementary order, and bound the surviving signed difference.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszHarmonicWindowSourceTheorem"
+        "rieszJointCofactorBoundTheorem"
       ],
-      "documentation": "docs/zeta-riesz-harmonic-wing.md"
+      "documentation": "docs/zeta-riesz-joint-cofactor.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
-      "rieszHarmonicWindowSourceTheorem"
+      "rieszJointCofactorSourceTheorem"
     ],
     "sourceStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -40,18 +40,57 @@
   "endpoints": [
     {
       "id": "harmonic-remainder",
-      "label": "Current frontier · narrowed harmonic remainder",
+      "label": "Current frontier · arithmetic difference after joint cancellation",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
-          "rieszHarmonicWindowSourceTheorem"
+          "rieszJointCofactorSourceTheorem"
         ]
       ],
       "scopePath": [
         "gaussianPhaseBandToolkit",
-        "rieszHarmonicWingScope"
+        "rieszJointCofactorScope"
       ],
-      "documentation": "docs/zeta-riesz-harmonic-wing.md"
+      "documentation": "docs/zeta-riesz-joint-cofactor.md"
+    },
+    {
+      "id": "joint-wing-cancellation",
+      "label": "Joint cancellation · original wing and signed composite companion",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointCofactorBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointCofactorIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointCofactorCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointCofactorCompletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointCofactorBoundaryTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointCofactorPrefixTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointCofactorDiagonalTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszJointCofactorScope"
+      ],
+      "documentation": "docs/zeta-riesz-joint-cofactor.md"
     },
     {
       "id": "carrier-bound",
@@ -5888,6 +5927,51 @@
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-harmonic-wing.md",
       "overview": true
+    },
+    "RiemannGaussian.ZetaRieszJointCofactor.exists_unpaidWing_add_compositeWing_bound": {
+      "label": "Independent geometric bound for the joint sum",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-cofactor.md"
+    },
+    "RiemannGaussian.ZetaRieszJointCofactor.unpaidWing_add_compositeWing": {
+      "label": "Original wing plus complete signed companion",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-cofactor.md"
+    },
+    "RiemannGaussian.ZetaRieszJointCofactor.coupledCoefficient_eq_original": {
+      "label": "Exact original composite coefficient",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-cofactor.md"
+    },
+    "RiemannGaussian.ZetaRieszJointCofactor.exists_completedWing_bound": {
+      "label": "Complete marked cofactor response is paid",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-cofactor.md"
+    },
+    "RiemannGaussian.ZetaRieszJointCofactor.exists_boundaryWing_bound": {
+      "label": "Composite saturation correction is paid",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-cofactor.md"
+    },
+    "RiemannGaussian.ZetaRieszJointCofactor.norm_prefixWing_le": {
+      "label": "Complete clipped prime prefix is paid",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-cofactor.md"
+    },
+    "RiemannGaussian.ZetaRieszJointCofactor.norm_diagonalWing_le": {
+      "label": "Repeated-prime diagonal is paid",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-cofactor.md"
+    },
+    "RiemannGaussian.ZetaRieszJointCofactor.tendsto_remainder_sub_arithmetic": {
+      "label": "Transfer to the finite arithmetic difference",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-cofactor.md"
+    },
+    "RiemannGaussian.ZetaRieszJointCofactor.tendsto_arithmeticRemainder_add_reserve": {
+      "label": "Exact source after joint cancellation",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-cofactor.md"
     }
   }
 }

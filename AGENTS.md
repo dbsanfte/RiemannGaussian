@@ -1366,6 +1366,24 @@ Do not extend the wing estimates to the full original interval, assume
 simplicity or exposure for all zeros, double-count overlapping frequency
 savings, or claim a zero-free region from these component results.
 
+`ZetaRieszJointCofactor` now independently bounds the original unpaid wing
+plus its complete signed composite companion by C_gamma(N+1)^2 exp(-N/64),
+for 1/2<=u<exp(-2/3), at each fixed abs(gamma)>1. One constant works across
+the radius interval; the starting order may depend on u. The constant is
+not evaluated or uniform in height. The actual prime set, unpaid orders,
+factorial weights and signs remain. Complete squarefree cofactor decay
+retains the mark size; the full saturation correction, clipped prime
+prefix, repeated-prime diagonal and unit term are all paid. No zero or
+cancellation premise enters this joint estimate. Do not claim separate
+decay of either summand. The source now survives in the original masked
+finite lower-count response MINUS the complete composite companion, plus
+the existing positive reserve on its smaller interval. The independent
+floor for that arithmetic difference remains open. In particular, do not
+identify the complete companion with a masked finite subfamily or count
+each integer once without proving the prime-incidence and derivative
+allocation identities. Those support comparisons and the surviving signed
+bound are the next obligations. See `docs/zeta-riesz-joint-cofactor.md`.
+
 The active RH explorer default is now `harmonic-remainder`; the former
 conditioned-energy and owner/cycle routes remain supporting views. This
 explicit branch change supersedes older per-slice instructions to keep

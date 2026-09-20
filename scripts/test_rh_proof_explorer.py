@@ -64,9 +64,9 @@ def run(output, url=None, refresh_preview=False):
                     (campaign.SITE / 'preview.json').write_bytes(campaign.explorer.json_bytes(capture))
                 root = page.evaluate('PROOF_VIEW.endpoint.roots[0]')
                 data = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
-                assert data['id'] == 'RiemannGaussian.ZetaRieszHarmonicWindow.tendsto_remainder_add_reserve'
+                assert data['id'] == 'RiemannGaussian.ZetaRieszJointCofactor.tendsto_arithmeticRemainder_add_reserve'
                 assert all(term in data['statement'] for term in (
-                    'remainder', 'reserve', 'paidHarmonicCost', 'analyticZetaZeroMultiplicity',
+                    'arithmeticRemainder', 'reserve', 'paidHarmonicCost', 'analyticZetaZeroMultiplicity',
                     'tau ≠ rho →', 'Real.exp (-(11 / 16))', 'Tendsto'))
                 assert '-eta ≤' not in data['statement']
                 node = page.locator(f'[data-node="{root}"]')
@@ -95,7 +95,7 @@ def run(output, url=None, refresh_preview=False):
                 page.locator('#fit').click()
                 page.locator('#scope-more').click()
                 assert 'what remains to prove' in page.locator('#details').inner_text().lower()
-                assert 'lower-prime-count sum coupled to the middle wing' in page.locator('#details').inner_text()
+                assert 'finite count sum minus the complete composite companion' in page.locator('#details').inner_text()
                 assert 'independent cofinal real floor remains open' in page.locator('#details').inner_text()
                 page.locator('#close-details').click()
                 page.locator('#endpoint').select_option('source-limit')
@@ -129,7 +129,22 @@ def run(output, url=None, refresh_preview=False):
                         assert all(term in old_bound['statement'] for term in (
                             'correlatedSamplingCost', 'beta < 0', 'p ^ S', '0 < eps', '∃'))
                         assert 'conditioningAllowance' not in old_bound['statement']
-                    if endpoint['id'] in ('harmonic-remainder', 'harmonic-paid-components', 'harmonic-floor-criterion'):
+                    if endpoint['id'] in ('harmonic-remainder', 'joint-wing-cancellation'):
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(term in scope for term in (
+                            'C_gamma(N+1)^2 exp(-N/64)', '1/2<=u<exp(-2/3)',
+                            '1/2<u<exp(-11/16)', '15/544', '7N/4<log n<=9N/4',
+                            'joint arithmetic floor remains open', 'simple exposed zeros',
+                            'not uniform in height', 'MINUS the complete composite companion'))
+                        if endpoint['id'] == 'joint-wing-cancellation':
+                            joint_roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                            joint_bound = next(n for n in joint_roots if n['id'].endswith('.exists_unpaidWing_add_compositeWing_bound'))
+                            assert all(t in joint_bound['statement'] for t in (
+                                'unpaidWing', 'compositeWing', '∃ C', '∀ (u', '∀ᶠ',
+                                'Real.exp', '/ 64', '1 < |y|'))
+                            assert 'NontrivialZetaZero' not in joint_bound['statement']
+                            assert 'arithmeticRemainder' not in joint_bound['statement']
+                    if endpoint['id'] in ('harmonic-paid-components', 'harmonic-floor-criterion'):
                         scope = page.locator('#scope-text').inner_text()
                         assert all(term in scope for term in (
                             '1/2<u<exp(-2/3)', '1/2<u<exp(-11/16)', '15/544',

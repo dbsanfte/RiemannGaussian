@@ -2536,7 +2536,11 @@
     "ZetaRieszOwnerBounds": "arithmetic",
     "ZetaRieszWingReserve": "arithmetic",
     "ZetaRieszWingHighOrders": "arithmetic",
-    "ZetaRieszHarmonicWindow": "arithmetic"
+    "ZetaRieszHarmonicWindow": "arithmetic",
+    "ZetaRieszCofactorCompletionBound": "arithmetic",
+    "ZetaRieszCofactorBoundary": "arithmetic",
+    "ZetaRieszCofactorPrimeRepairs": "arithmetic",
+    "ZetaRieszJointCofactor": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

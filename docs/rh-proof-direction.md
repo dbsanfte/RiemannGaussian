@@ -1,11 +1,13 @@
 # Current RH proof direction
 
 [Open the current proof explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/).
-Its default now follows the **harmonic-cost route** and ends at
-[`tendsto_remainder_add_reserve`](../RiemannGaussian/ZetaRieszHarmonicWindow.lean):
-the exact source retained by the narrowed lower-prime-count sum, unpaid
-middle wing and positive reserve. The independent joint arithmetic floor
-remains open. No first restricted zero exclusion or RH proof is claimed.
+Its default follows the **harmonic-cost route** and ends at
+[`tendsto_arithmeticRemainder_add_reserve`](../RiemannGaussian/ZetaRieszJointCofactor.lean).
+An independent geometric estimate now pays the original unpaid wing
+**together with** an explicit complete signed composite companion. The
+remaining arithmetic difference retains the exact source and positive
+reserve. Its independent floor remains open; no first restricted zero
+exclusion or RH proof is claimed.
 
 ## Direction and obstruction
 
@@ -17,33 +19,48 @@ wing together, preserving signs, phases and endpoint weights. Initially
 target simple exposed zeros in `1/2<u<exp(-2/3)`, where
 `u=3/2-Re(rho)` and the original remainder tends to `-(1-c(u))<0`.
 
-The [current arithmetic ledger](zeta-riesz-harmonic-wing.md) distinguishes
-three new estimates. Both lower-count outer logarithmic tails decay
-geometrically, uniformly in height, leaving `25N/16<log n<=5N/2` across the
-original harmonic range. On `1/2<u<exp(-11/16)`, this narrows further to
-`7N/4<log n<=9N/4`. On that smaller interval, an actual wing block has real
-normalized contribution at least `15m²/544`; the opposite high-leg wing
-decays. Only the intervening wing orders and narrowed lower-count sum
-remain unpaid. Their exact sum plus the positive reserve retains the
-original `-m+m²c(u)` source.
+The [joint cancellation ledger](zeta-riesz-joint-cofactor.md) gives the
+literal companion `T_N` and proves
+`|u^(N+1)(V_N+T_N)| <= C_gamma(N+1)^2 exp(-N/64)` for the original unpaid
+wing `V_N`. For each fixed `abs(gamma)>1`, one constant works across
+`1/2<=u<exp(-2/3)`; the starting order may depend on `u`. No hypothetical
+zero or cancellation premise is used. The complete marked cofactor
+response, saturation boundary, clipped prime prefix, repeated-prime
+diagonal and unit term are all accounted for. Neither summand is
+separately proved to vanish.
+
+On the [positive-reserve range](zeta-riesz-harmonic-wing.md)
+`1/2<u<exp(-11/16)`, let `F_j` be the actual lower-count response in
+`7N_j/4<log n<=9N_j/4`, retaining every original finite mask. The new target
+is the arithmetic difference `Q_j=u^(N_j+1)(F_j-T_(N_j))`. Under the
+original exposed-zero hypotheses, Lean proves that `Q_j` plus the positive
+reserve tends to `-m+m²c(u)`. The reserve is eventually at least `15m²/544`
+in real part. The companion includes **all** admissible cofactors; its
+identification with a finite masked subfamily is not assumed. Comparing
+the supports, paying the off-support terms, and preserving the prime
+incidences and complementary derivative allocations are the next steps
+toward a signed bound for this difference.
 
 For simple exposed zeros, a cofinal real floor `-eta` with
-`eta<1-c(u)+15/544` for this smaller joint remainder would close the
-contradiction. The
-[conditional criterion](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=harmonic-floor-criterion)
-shows that floor as an explicit **unproved hypothesis**. Simplicity and
-exposure are also explicit; no zero-free region for arbitrary zeros follows
-from these component bounds. Extending the new wing estimates across the
-full original interval remains part of the goal.
+`eta<1-c(u)+15/544` for `Q_j` would close the contradiction. This joint
+arithmetic floor remains open. The
+[earlier conditional criterion](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=harmonic-floor-criterion)
+shows the corresponding floor for the preceding remainder as an explicit
+**unproved hypothesis**. The two remainders differ by a quantity tending
+to zero, with the strict margin allowing that transfer. Simplicity and
+exposure remain explicit. The new joint bound covers the full original
+harmonic interval; extending the positive reserve and narrowed source
+window across that interval is a separate obligation.
 
 The
 [source view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=source-limit)
-shows the existing full harmonic source after the complete high-prime-count
-deletion. The
+shows the original full harmonic source after high-prime-count deletion.
+The
+[joint cancellation view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=joint-wing-cancellation)
+shows the new independent estimate and its exact coefficient identity.
+The
 [paid-component view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=harmonic-paid-components)
-shows the positive reserve, geometric tails and exact remaining support.
-All earlier masks, original floor-defined length and unrestricted
-multiplicity remain visible in their Lean statements.
+retains the positive reserve, geometric outer tails and earlier support.
 
 Every new lemma should evaluate an actual contribution, quantitatively
 reduce this unpaid budget, or discharge a necessary contradiction
@@ -52,8 +69,8 @@ hypothesis. The prior
 [arithmetic-cycle](zeta-riesz-arithmetic-cycles.md) and
 [owner-window](zeta-riesz-owner-windows.md) results remain supporting tools;
 they are not additional obligations on the active route. Stronger proved
-zero-free regions can provide analytic inputs. The numerical certificate is
-separate and does not supply the missing signed floor.
+zero-free regions can provide analytic inputs. The numerical certificate
+is separate and does not supply the missing signed floor.
 
 ## Evergreen presentation
 
