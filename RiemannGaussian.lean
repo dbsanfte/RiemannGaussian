@@ -1834,3 +1834,6 @@ import RiemannGaussian.ZetaRieszWingReserve
 import RiemannGaussian.ZetaRieszWingHighOrders
 import RiemannGaussian.ZetaRieszHarmonicWindow
 import RiemannGaussian.ZetaRieszJointCofactor
+import RiemannGaussian.ZetaRieszRetainedCarrier
+import RiemannGaussian.ZetaRieszRetainedSource
+import RiemannGaussian.ZetaRieszNondominantCarrier

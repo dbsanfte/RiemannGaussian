@@ -5,32 +5,32 @@
   "title": "Current RH Proof Direction",
   "defaultEndpoint": "harmonic-remainder",
   "limitNote": "RH remains open. The independent arithmetic saving needed for the source contradiction has not been proved.",
-  "contextScope": "The original unpaid wing and its explicit signed composite companion cancel with geometric source-scale error. The remaining target is the finite count sum minus the complete composite companion; its independent cofinal real floor remains open. Every finite mask and prime incidence must be retained in their comparison. The joint cancellation covers 1/2<=u<exp(-2/3); the positive reserve and narrowed source window use 1/2<u<exp(-11/16). No zero exclusion or RH proof is claimed.",
+  "contextScope": "The complete companion is now compared with every original mask, and all off-mask corrections are paid. The full reserve is evaluated. The remaining allocated contribution with a prime carrying at least 13/20 of log n has a height-uniform geometric bound. The smaller signed carrier retains the exact source on 1/2<u<exp(-11/16). For simple exposed zeros its real part is eventually below -3/40; an independent cofinal real floor remains open. Balanced products and their joint signed correlations remain unpaid. No zero exclusion or RH proof is claimed.",
   "scopeHeading": "What remains to prove",
   "guideDocument": "docs/rh-proof-direction.md",
   "metadataOrigin": "Current RH campaign metadata; theorem names and scopes resolve through the compiled project status.",
   "campaign": {
     "direction": {
       "branch": "riesz-harmonic-cost",
-      "statement": "Prove a first restricted contradiction along the harmonic-cost route. Retain the exact head and central evaluation and the proved frequency and high-prime-count savings. Bound the remaining coupled lower-prime-count response and tapered wing, preserving their signs, phases and endpoint weights. Begin with simple exposed zeros in 1/2<u<exp(-2/3); the independent arithmetic floor remains open.",
-      "changeReason": "On 2026-09-20 the user explicitly refocused the campaign on finishing the evaluated harmonic-cost route. Every new lemma must reduce its unpaid budget or discharge a necessary contradiction hypothesis."
+      "statement": "Prove a first restricted contradiction along the harmonic-cost route. Preserve the evaluated source, signs, phases and masks. The wing coupling, full reserve and dominant-prime sector are now paid. Bound the remaining joint signed carrier independently: a cofinal real floor at -3/40 would contradict its source for simple exposed zeros in 1/2<u<exp(-11/16). Extending to the original interval 1/2<u<exp(-2/3) remains a later step.",
+      "changeReason": "The 2026-09-20 allocation, mask, exact-reserve and dominant-prime batch reduces the active target to one smaller signed carrier; the wing and off-mask corrections are no longer unpaid obligations."
     },
     "latestUpdate": {
-      "sequence": 53,
-      "id": "joint-wing-cofactor",
+      "sequence": 54,
+      "id": "allocated-dominant-sector",
       "kind": "theorem",
-      "title": "The unpaid wing cancels a complete signed composite companion.",
-      "body": "Lean proves an independent bound C_gamma(N+1)^2 exp(-N/64) for the original unpaid wing plus an explicit signed composite companion, for 1/2<=u<exp(-2/3) at each fixed abs(gamma)>1. All completion corrections are paid. The source survives in the finite count sum minus this complete companion, plus the existing positive reserve on its smaller interval. The joint arithmetic floor remains open; no new zero-free region follows.",
-      "next": "Next: compare the complete companion with the actual finite support, retain every prime incidence and complementary order, and bound the surviving signed difference.",
+      "title": "The full dominant-prime sector is paid; the exact reserve strengthens the deficit.",
+      "body": "Lean now compares the complete companion with every original mask, evaluates the whole reserve, and gives geometric decay for the unassigned contribution whenever a prime carries at least 13/20 of log n. All nonzero surviving terms have every prime below that cap. Their exact source remains, forcing the real part below -3/40 for simple exposed zeros in 1/2<u<exp(-11/16). The independent signed floor is still open; no new zero-free region follows.",
+      "next": "Next: prove a cofinal real floor at -3/40 for the remaining joint signed sum, including balanced products and all surviving prime counts.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszJointCofactorBoundTheorem"
+        "rieszDominantBoundTheorem"
       ],
-      "documentation": "docs/zeta-riesz-joint-cofactor.md"
+      "documentation": "docs/zeta-riesz-dominant-sector.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
-      "rieszJointCofactorSourceTheorem"
+      "rieszNondominantSourceTheorem"
     ],
     "sourceStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -40,18 +40,103 @@
   "endpoints": [
     {
       "id": "harmonic-remainder",
-      "label": "Current frontier · arithmetic difference after joint cancellation",
+      "label": "Current frontier · source after dominant-prime cancellation",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
-          "rieszJointCofactorSourceTheorem"
+          "rieszNondominantSourceTheorem"
         ]
       ],
       "scopePath": [
         "gaussianPhaseBandToolkit",
-        "rieszJointCofactorScope"
+        "rieszDominantScope"
       ],
-      "documentation": "docs/zeta-riesz-joint-cofactor.md"
+      "documentation": "docs/zeta-riesz-dominant-sector.md"
+    },
+    {
+      "id": "dominant-prime-sector",
+      "label": "Dominant primes · independent decay and exact surviving support",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszDominantBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszDominantRatesTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNondominantSupportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNondominantMovingErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNondominantDeficitTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszDominantScope"
+      ],
+      "documentation": "docs/zeta-riesz-dominant-sector.md"
+    },
+    {
+      "id": "exact-wing-reserve",
+      "label": "Exact reserve · evaluated source cost and 3/40 deficit",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszReserveExactTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRetainedExactSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRetainedCostBoundTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszReserveExactScope"
+      ],
+      "documentation": "docs/zeta-riesz-joint-allocation.md"
+    },
+    {
+      "id": "joint-allocation",
+      "label": "Complete allocation · masks and every off-mask correction paid",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAllocationShareTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAssignedCompanionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRetainedMaskTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRetainedMovingErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRetainedUniformErrorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszAllocationScope"
+      ],
+      "documentation": "docs/zeta-riesz-joint-allocation.md"
     },
     {
       "id": "joint-wing-cancellation",
@@ -5972,6 +6057,114 @@
       "label": "Exact source after joint cancellation",
       "overview": true,
       "documentation": "docs/zeta-riesz-joint-cofactor.md"
+    },
+    "RiemannGaussian.ZetaRieszJointAllocation.boundedShare_bounds": {
+      "label": "Exact allocation lies between zero and one",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-joint-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszJointAllocation.hasSum_assignedAtom": {
+      "label": "Complete companion counts every prime incidence exactly",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-joint-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszJointAllocation.actual_sector_geometric": {
+      "label": "First allocated prime sector decays geometrically",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-joint-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszMaskSupport.residualMask_eq_retained": {
+      "label": "All off-mask corrections are discharged",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-joint-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszMaskSupport.tendsto_arithmetic_sub_retained_moving": {
+      "label": "Allocation reductions vanish at moving heights",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-joint-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszMaskSupport.eventually_all_heights_arithmetic_error": {
+      "label": "One error threshold works for every height",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-joint-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszWingReserve.tendsto_reserve_exact": {
+      "label": "Complete positive reserve evaluated exactly",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-joint-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszMaskSupport.tendsto_retained_exact_source": {
+      "label": "Exact remaining cost after the full reserve",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-joint-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszMaskSupport.retainedCost_lt_thirtyseven_fortieths": {
+      "label": "Remaining source cost is strictly below 37/40",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-joint-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszDominantAllocation.rates_bounds": {
+      "label": "Both independent geometric rates are below one",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-dominant-sector.md"
+    },
+    "RiemannGaussian.ZetaRieszDominantAllocation.missing_allocation_cutoff_bound": {
+      "label": "Both missing allocation tails retained",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-dominant-sector.md"
+    },
+    "RiemannGaussian.ZetaRieszDominantAllocation.normalized_missing_kernel_bound": {
+      "label": "Prime cutoff and factorial weight pay the endpoint",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-dominant-sector.md"
+    },
+    "RiemannGaussian.ZetaRieszDominantAllocation.dominantSector_bound": {
+      "label": "Entire allocated dominant-prime contribution is paid",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-dominant-sector.md"
+    },
+    "RiemannGaussian.ZetaRieszDominantAllocation.tendsto_retained_sub_nondominant_moving": {
+      "label": "Dominant-prime deletion vanishes at moving heights",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-dominant-sector.md"
+    },
+    "RiemannGaussian.ZetaRieszDominantAllocation.tendsto_arithmetic_sub_nondominant_moving": {
+      "label": "All reductions give one vanishing error",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-dominant-sector.md"
+    },
+    "RiemannGaussian.ZetaRieszDominantAllocation.nondominant_prime_log_lt": {
+      "label": "Every surviving prime has log p < 13/20 log n",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-dominant-sector.md"
+    },
+    "RiemannGaussian.ZetaRieszDominantAllocation.tendsto_nondominant_exact_source": {
+      "label": "Exact source on the smaller signed support",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-dominant-sector.md"
+    },
+    "RiemannGaussian.ZetaRieszDominantAllocation.eventually_nondominant_re_lt_neg_three_fortieths": {
+      "label": "Simple exposed source forces a deficit greater than 3/40",
+      "overview": true,
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-dominant-sector.md"
     }
   }
 }

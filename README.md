@@ -134,7 +134,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-Prove a first restricted contradiction along the harmonic-cost route. Retain the exact head and central evaluation and the proved frequency and high-prime-count savings. Bound the remaining coupled lower-prime-count response and tapered wing, preserving their signs, phases and endpoint weights. Begin with simple exposed zeros in 1/2<u<exp(-2/3); the independent arithmetic floor remains open.
+Prove a first restricted contradiction along the harmonic-cost route. Preserve the evaluated source, signs, phases and masks. The wing coupling, full reserve and dominant-prime sector are now paid. Bound the remaining joint signed carrier independently: a cofinal real floor at -3/40 would contradict its source for simple exposed zeros in 1/2<u<exp(-11/16). Extending to the original interval 1/2<u<exp(-2/3) remains a later step.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -142,10 +142,10 @@ Prove a first restricted contradiction along the harmonic-cost route. Retain the
 
 ### Latest Update
 
-**The unpaid wing cancels a complete signed composite companion.** Lean proves an independent bound C_gamma(N+1)^2 exp(-N/64) for the original unpaid wing plus an explicit signed composite companion, for 1/2<=u<exp(-2/3) at each fixed abs(gamma)>1. All completion corrections are paid. The source survives in the finite count sum minus this complete companion, plus the existing positive reserve on its smaller interval. The joint arithmetic floor remains open; no new zero-free region follows.
-Next: compare the complete companion with the actual finite support, retain every prime incidence and complementary order, and bound the surviving signed difference.
-[Current checked endpoint](RiemannGaussian/ZetaRieszJointCofactor.lean#L168)
-· [Proof details](docs/zeta-riesz-joint-cofactor.md).
+**The full dominant-prime sector is paid; the exact reserve strengthens the deficit.** Lean now compares the complete companion with every original mask, evaluates the whole reserve, and gives geometric decay for the unassigned contribution whenever a prime carries at least 13/20 of log n. All nonzero surviving terms have every prime below that cap. Their exact source remains, forcing the real part below -3/40 for simple exposed zeros in 1/2<u<exp(-11/16). The independent signed floor is still open; no new zero-free region follows.
+Next: prove a cofinal real floor at -3/40 for the remaining joint signed sum, including balanced products and all surviving prime counts.
+[Current checked endpoint](RiemannGaussian/ZetaRieszDominantSector.lean#L146)
+· [Proof details](docs/zeta-riesz-dominant-sector.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

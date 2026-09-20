@@ -2,12 +2,12 @@
 
 [Open the current proof explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/).
 Its default follows the **harmonic-cost route** and ends at
-[`tendsto_arithmeticRemainder_add_reserve`](../RiemannGaussian/ZetaRieszJointCofactor.lean).
-An independent geometric estimate now pays the original unpaid wing
-**together with** an explicit complete signed composite companion. The
-remaining arithmetic difference retains the exact source and positive
-reserve. Its independent floor remains open; no first restricted zero
-exclusion or RH proof is claimed.
+[`tendsto_nondominant_exact_source`](../RiemannGaussian/ZetaRieszNondominantCarrier.lean).
+The complete wing/companion comparison, all off-mask corrections, the full
+positive reserve and the allocated dominant-prime sector are now paid or
+evaluated. The smaller signed carrier retains the exact source. Its
+independent floor remains open; no first restricted zero exclusion or RH
+proof is claimed.
 
 ## Direction and obstruction
 
@@ -29,35 +29,55 @@ response, saturation boundary, clipped prime prefix, repeated-prime
 diagonal and unit term are all accounted for. Neither summand is
 separately proved to vanish.
 
-On the [positive-reserve range](zeta-riesz-harmonic-wing.md)
-`1/2<u<exp(-11/16)`, let `F_j` be the actual lower-count response in
-`7N_j/4<log n<=9N_j/4`, retaining every original finite mask. The new target
-is the arithmetic difference `Q_j=u^(N_j+1)(F_j-T_(N_j))`. Under the
-original exposed-zero hypotheses, Lean proves that `Q_j` plus the positive
-reserve tends to `-m+m²c(u)`. The reserve is eventually at least `15m²/544`
-in real part. The companion includes **all** admissible cofactors; its
-identification with a finite masked subfamily is not assumed. Comparing
-the supports, paying the off-support terms, and preserving the prime
-incidences and complementary derivative allocations are the next steps
-toward a signed bound for this difference.
+On `1/2<u<exp(-11/16)`, the
+[allocation and reserve ledger](zeta-riesz-joint-allocation.md) compares that
+complete companion with every original finite mask. Its exact allocation
+fraction satisfies `0<=theta<=1`; no prime incidence is counted twice.
+All off-mask corrections vanish, including the weighted high-count terms
+and complete outer tails. The full reserve is evaluated, giving the exact
+remaining cost
 
-For simple exposed zeros, a cofinal real floor `-eta` with
-`eta<1-c(u)+15/544` for `Q_j` would close the contradiction. This joint
-arithmetic floor remains open. The
+$$
+c_{\rm ret}(u)=\frac{\log(32/13)}{-2u\log u}-\log(19/13)<\frac{37}{40}.
+$$
+
+The [dominant-prime bound](zeta-riesz-dominant-sector.md) then pays the whole
+unassigned contribution whenever an eligible selected prime carries at
+least `13/20` of `log n`. Both geometric rates are strictly below one;
+the estimate is independent of zeros and uniform in height and count
+cutoff. The original prime cutoff and factorial kernel together pay the
+missing allocation endpoint. On every nonzero surviving label, every prime
+factor now has `log p<13/20 log n`.
+
+The actual target `nondominantRemainder` keeps the original signed Riesz
+coefficient, complex phase, all masks, unassigned fraction `1-theta`, and
+all surviving counts together. Its window is `7N/4<log n<=9N/4`.
+All reductions from the original arithmetic difference vanish for arbitrary
+moving heights. Under the exposed-zero hypotheses its exact limit is
+`-m+m²c_ret(u)`. For simple exposed zeros its real part is therefore
+eventually below `-3/40`.
+
+An **independent** cofinal real floor at `-3/40` for this smaller carrier
+would close the contradiction. This joint arithmetic floor remains open.
+Balanced products remain in the sum; bounding their assigned companion
+does not bound their unassigned original response. The
 [earlier conditional criterion](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=harmonic-floor-criterion)
 shows the corresponding floor for the preceding remainder as an explicit
-**unproved hypothesis**. The two remainders differ by a quantity tending
-to zero, with the strict margin allowing that transfer. Simplicity and
-exposure remain explicit. The new joint bound covers the full original
-harmonic interval; extending the positive reserve and narrowed source
-window across that interval is a separate obligation.
+**unproved hypothesis**. Simplicity and exposure remain explicit. The
+earlier wing/companion bound covers the full original harmonic interval;
+extending the reserve evaluation and new deletion across that interval
+is a separate obligation.
 
 The
 [source view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=source-limit)
 shows the original full harmonic source after high-prime-count deletion.
 The
 [joint cancellation view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=joint-wing-cancellation)
-shows the new independent estimate and its exact coefficient identity.
+shows the earlier independent estimate and its exact coefficient identity.
+The [allocation](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=joint-allocation),
+[exact reserve](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=exact-wing-reserve)
+and [dominant sector](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=dominant-prime-sector)
+views expose the new reductions and their complete hypotheses.
 The
 [paid-component view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=harmonic-paid-components)
 retains the positive reserve, geometric outer tails and earlier support.

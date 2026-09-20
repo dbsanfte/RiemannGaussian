@@ -64,9 +64,9 @@ def run(output, url=None, refresh_preview=False):
                     (campaign.SITE / 'preview.json').write_bytes(campaign.explorer.json_bytes(capture))
                 root = page.evaluate('PROOF_VIEW.endpoint.roots[0]')
                 data = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
-                assert data['id'] == 'RiemannGaussian.ZetaRieszJointCofactor.tendsto_arithmeticRemainder_add_reserve'
+                assert data['id'] == 'RiemannGaussian.ZetaRieszDominantAllocation.tendsto_nondominant_exact_source'
                 assert all(term in data['statement'] for term in (
-                    'arithmeticRemainder', 'reserve', 'paidHarmonicCost', 'analyticZetaZeroMultiplicity',
+                    'nondominantRemainder', 'retainedCost', 'analyticZetaZeroMultiplicity',
                     'tau ≠ rho →', 'Real.exp (-(11 / 16))', 'Tendsto'))
                 assert '-eta ≤' not in data['statement']
                 node = page.locator(f'[data-node="{root}"]')
@@ -95,7 +95,8 @@ def run(output, url=None, refresh_preview=False):
                 page.locator('#fit').click()
                 page.locator('#scope-more').click()
                 assert 'what remains to prove' in page.locator('#details').inner_text().lower()
-                assert 'finite count sum minus the complete composite companion' in page.locator('#details').inner_text()
+                assert 'every original mask' in page.locator('#details').inner_text()
+                assert '13/20' in page.locator('#details').inner_text()
                 assert 'independent cofinal real floor remains open' in page.locator('#details').inner_text()
                 page.locator('#close-details').click()
                 page.locator('#endpoint').select_option('source-limit')
@@ -129,7 +130,43 @@ def run(output, url=None, refresh_preview=False):
                         assert all(term in old_bound['statement'] for term in (
                             'correlatedSamplingCost', 'beta < 0', 'p ^ S', '0 < eps', '∃'))
                         assert 'conditioningAllowance' not in old_bound['statement']
-                    if endpoint['id'] in ('harmonic-remainder', 'joint-wing-cancellation'):
+                    if endpoint['id'] in ('harmonic-remainder', 'dominant-prime-sector'):
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(term in scope for term in (
+                            '13/20', '12001/12000', 'N>=320', 'every real height',
+                            '1/2<=u<=exp(-11/16)', '1/2<u<exp(-11/16)',
+                            'arbitrary moving heights', 'simple exposed zeros',
+                            'independent cofinal real floor at -3/40 remains open',
+                            'Balanced products remain unpaid'))
+                        if endpoint['id'] == 'dominant-prime-sector':
+                            dominant_roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                            bound = next(n for n in dominant_roots if n['id'].endswith('.dominantSector_bound'))
+                            assert all(t in bound['statement'] for t in (
+                                'dominantSector', 'residualCoefficient', 'upperRate', 'lowerRate',
+                                'zetaMoebiusLogMajorantMass', '320 ≤ N', '11 / 16'))
+                            assert 'NontrivialZetaZero' not in bound['statement']
+                            support = next(n for n in dominant_roots if n['id'].endswith('.nondominant_prime_log_lt'))
+                            support_statement = ' '.join(support['statement'].split())
+                            assert all(t in support_statement for t in (
+                                'nondominantBand', '≠ 0', 'primeFactors', '13 / 20'))
+                            deficit = next(n for n in dominant_roots if n['id'].endswith('.eventually_nondominant_re_lt_neg_three_fortieths'))
+                            assert all(t in deficit['statement'] for t in (
+                                'analyticZetaZeroMultiplicity rho = 1', 'tau ≠ rho →',
+                                'nondominantRemainder', '3 / 40', '∀ᶠ'))
+                    if endpoint['id'] == 'exact-wing-reserve':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in (
+                            'log(19/17)', 'log(15/13)', 'c_ret(u)<37/40',
+                            'source-forced negativity', 'independent cofinal real floor remains open'))
+                        reserve_roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        reserve = next(n for n in reserve_roots if n['id'].endswith('.tendsto_reserve_exact'))
+                        assert all(t in reserve['statement'] for t in ('reserve', 'Tendsto', 'tau ≠ rho →'))
+                    if endpoint['id'] == 'joint-allocation':
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in (
+                            '1_S-theta', 'every off-mask correction is paid',
+                            'arbitrary moving heights', 'independent signed floor remains open'))
+                    if endpoint['id'] == 'joint-wing-cancellation':
                         scope = page.locator('#scope-text').inner_text()
                         assert all(term in scope for term in (
                             'C_gamma(N+1)^2 exp(-N/64)', '1/2<=u<exp(-2/3)',

@@ -23,6 +23,45 @@ is the same finite count sum minus that companion; its independent lower
 bound remains open. This is a bound for a coupled sum, not separate decay
 of the wing or a new zero-free region.
 
+The [allocation follow-up](zeta-riesz-joint-allocation.md) pays the complete
+companion outside the logarithmic window and a retained prime-factor sector
+inside it. The latter has coefficient saving 3 exp(-N/140), and its entire
+source-normalized sum has a height-uniform geometric bound. The subsequent
+support comparison also pays or exactly eliminates every off-mask correction.
+The combined reduction error vanishes uniformly at all real heights for each
+fixed eligible radius. The exact source
+survives in `ZetaRieszMaskSupport.retainedRemainder`; the joint floor for
+that smaller finite sum remains open.
+
+The exact evaluation also gives the **entire positive reserve**:
+
+$$
+u^{N+1}V_N^+\longrightarrow m^2v(u),\qquad
+v(u)=\log(19/17)+\left(1-\frac1{-2u\log u}\right)\log(15/13).
+$$
+
+The retained carrier itself consequently tends to
+
+$$
+-m+m^2c_{\rm ret}(u),\qquad
+c_{\rm ret}(u)=\frac{\log(32/13)}{-2u\log u}-\log(19/13)<\frac{37}{40}.
+$$
+
+The limit keeps the original exposed-zero premises and
+`1/2<u<exp(-11/16)`. The rational cost bound holds throughout the closed
+radius interval. For simple exposed zeros an independent cofinal lower
+bound of `-3/40` on the retained real sum would suffice. It remains unproved.
+See [the exact retained source](../RiemannGaussian/ZetaRieszRetainedSource.lean)
+and [the current arithmetic ledger](zeta-riesz-joint-allocation.md).
+
+The [dominant-prime continuation](zeta-riesz-dominant-sector.md) now pays
+every remaining term with an eligible prime carrying at least `13/20` of
+the total logarithm. Its whole unassigned arithmetic sum has an explicit
+two-rate geometric bound, uniform in height. The nonzero surviving support
+has `log(p)<13/20*log(n)` for **every** prime factor. The exact source and
+`3/40` deficit remain in `nondominantRemainder`; the independent floor for
+that smaller signed carrier is the current target.
+
 ## The parts now paid
 
 The prior [complete high-prime-count deletion](zeta-riesz-whole-prime-count-decay.md)
@@ -102,11 +141,12 @@ R_j^{\mathrm{win}}+Q_j\longrightarrow-m+m^2c(u),\qquad
 $$
 
 The second assertion is `eventually_re_reserve_ge` composed with the same
-cofinal schedule. There is no assertion that the reserve has an evaluated
-limit or that the joint remainder vanishes.
+cofinal schedule. This was the earlier coarse reserve estimate; the exact
+limit at the top of this ledger now strengthens it. No assertion that the
+joint remainder vanishes follows.
 
-For a **simple exposed zero**, an independent floor on arbitrarily large
-orders would suffice:
+For a **simple exposed zero**, the earlier sufficient floor on arbitrarily
+large orders was:
 
 $$
 \Re R_j^{\mathrm{win}}\ge-\eta(u),\qquad

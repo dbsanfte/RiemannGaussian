@@ -107,13 +107,19 @@ Q_j+u^{N_j+1}V_{N_j}^{+}\longrightarrow-m+m^2c(u),
 $$
 
 The source theorem is `tendsto_arithmeticRemainder_add_reserve`. The
-independent cofinal floor for \(Q_j\) remains open. For a simple exposed
-zero the required margin is still \(\eta<1-c(u)+15/544\).
+independent cofinal floor for \(Q_j\) remains open. At this earlier stage,
+the sufficient margin for a simple exposed zero is \(\eta<1-c(u)+15/544\).
 
-The next arithmetic obligation is to compare the complete companion with
-the **actual masked finite sum**, keeping the prime incidences and
-complementary factorial allocations. Terms outside that finite support
-must be paid, and the surviving signed difference must be bounded. The
-companion is not assumed to equal a subfamily of \(F_j\); neither \(V_N\)
-nor \(T_N\) is separately proved to vanish. This slice establishes no new
-zero-free region or completed RH contradiction.
+The [exact allocation follow-up](zeta-riesz-joint-allocation.md) now proves
+the prime-incidence comparison, pays the complete companion outside the
+finite logarithmic window, removes one more actual signed sector, and pays
+the entire correction outside the old arithmetic mask. One retained sum
+with multiplier `1-theta` remains, and its total reduction error vanishes
+uniformly over the real height axis at each fixed eligible radius. This
+smaller finite remainder still needs an independent cofinal floor. The full
+reserve is now evaluated, strengthening the usable deficit to more than
+`3/40`. The [dominant-prime continuation](zeta-riesz-dominant-sector.md)
+then pays the unassigned contribution with a prime carrying at least
+`13/20` of `log n`, retaining that same exact source on a smaller support.
+Neither the old wing nor the companion is separately asserted to vanish.
+No new zero-free region or completed RH contradiction follows from this batch.

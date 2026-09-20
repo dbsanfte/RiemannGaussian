@@ -1378,13 +1378,90 @@ cancellation premise enters this joint estimate. Do not claim separate
 decay of either summand. The source now survives in the original masked
 finite lower-count response MINUS the complete composite companion, plus
 the existing positive reserve on its smaller interval. The independent
-floor for that arithmetic difference remains open. In particular, do not
-identify the complete companion with a masked finite subfamily or count
-each integer once without proving the prime-incidence and derivative
-allocation identities. Those support comparisons and the surviving signed
-bound are the next obligations. See `docs/zeta-riesz-joint-cofactor.md`.
+floor for that arithmetic difference remains open.
 
-The active RH explorer default is now `harmonic-remainder`; the former
+`ZetaRieszJointAllocation` now proves the exact multinomial prime-incidence
+identity: the complete companion is a bounded fraction theta_N(n) of each
+original signed atom, with 0<=theta<=1. The complete infinite companion
+outside 7N/4<log n<=9N/4 has a height-uniform geometric bound on
+0<=u<=exp(-11/16). The remaining finite multiplier is exactly 1_S-theta;
+all old masks and the negative off-mask correction remain. Never silently
+replace it by 1-theta everywhere.
+
+Module `ZetaRieszCancellingSector` proves `actual_sector_geometric` in
+namespace `ZetaRieszJointAllocation`; it pays the retained eligible-prime sector
+17/64<=log(n/p)/log n<=11/32. Both exact unpaid binomial tails give
+0<=1-theta<=3 exp(-N/140), and a summable arithmetic tilt turns this into
+a source-normalized geometric bound uniform in height, count threshold
+and radius up to exp(-11/16), for N>=320. `remainingRemainder` removes only
+that proved sector and retains the same source plus positive reserve.
+The independent cofinal floor is still open. No restricted contradiction
+or new zero-free region is claimed. See `docs/zeta-riesz-joint-allocation.md`.
+
+The complete off-mask correction is now discharged by the subsequent
+batch. `ZetaRieszWeightedCount` pays all high-count labels with arbitrary
+dominated coefficients. `ZetaRieszBalancedCompanion` bounds the assigned
+fraction by omega(n)*exp(-N/64) when all eligible selected primes have at
+most half the total logarithm; its whole companion contribution decays.
+`ZetaRieszMaskSupport.window_mem_originalMask` proves every old mask on the
+actual lower-count subcutoff window. Any remaining nonzero off-mask label
+would force an unselected large prime and hence the already paid balanced
+case. Counts below three and nonsquarefree labels are exactly zero.
+
+`ZetaRieszMaskSupport.residualMask_eq_retained` leaves precisely the original
+mask minus the paid sector, with multiplier 1-theta between zero and one.
+`tendsto_arithmetic_sub_retained_moving` pays all intervening errors jointly
+for arbitrary moving heights, independently of zeros; the uniform interface
+`eventually_all_heights_arithmetic_error` gives one starting index for every
+height at each positive tolerance and fixed eligible radius. The endpoint
+`tendsto_retained_add_reserve` retains the exact source and reserve. The
+signed floor for `retainedRemainder` is open. Do not keep listing an off-mask
+correction as unpaid, infer decay of the original balanced carrier from
+decay of its companion, or count recovery of the same Euler/source identity
+as an independent bound. All eleven allocation/mask modules belong to the
+same checked chain as the exact reserve and dominant-prime continuation.
+
+`ZetaRieszReserveWeights` evaluates both actual reciprocal marginals,
+including the integer endpoints.
+`ZetaRieszWingReserve.tendsto_reserve_exact` evaluates the complete reserved
+wing as m^2 v(u), where
+v(u)=log(19/17)+(1-1/(-2u log u))*log(15/13). Consequently
+`ZetaRieszMaskSupport.tendsto_retained_exact_source` gives the retained
+carrier itself the limit -m+m^2 c_ret(u), with
+c_ret(u)=log(32/13)/(-2u log u)-log(19/13).
+`retainedCost_lt_thirtyseven_fortieths` proves c_ret(u)<37/40 throughout
+1/2<=u<=exp(-11/16). The source theorem still requires the strict upper
+endpoint and exposed-zero hypotheses. For a simple exposed zero the
+retained real part is eventually below -3/40. An independently proved
+cofinal floor at -3/40 would now suffice. This replaces the weaker coarse
+reserve allowance in the active budget, but does not prove that floor,
+a restricted contradiction, or a new zero-free region. Work on the signed
+retained carrier; do not report its source-forced negativity as an
+independent arithmetic estimate.
+
+The latest batch independently pays the entire dominant-prime sector
+of that unassigned carrier. `ZetaRieszDominantAllocation.dominantSector_bound`
+gives `(r_H^N+r_L^N)*zetaMoebiusLogMajorantMass(12001/12000)` at N>=320,
+uniformly in height, count cutoff and 1/2<=u<=exp(-11/16), where
+r_H=(503/1000)*(12000/5999)*exp(-1/160)<1 and r_L=exp(-1/2000)<1.
+The missing low-cofactor allocation tail keeps its factorial weight and
+the actual prime cutoff together; dropping that correlation loses the
+saving. `nondominant_prime_log_lt` proves that every prime factor of every
+nonzero surviving label has log(p)<13/20*log(n), from dyadic index 32.
+This replaces the previous sector's upper prime-log endpoint restriction.
+The new `nondominantRemainder` retains the original masks, signed coefficient,
+phase and fraction 1-theta. `tendsto_arithmetic_sub_nondominant_moving`
+pays all aggregate reduction errors for arbitrary moving heights, and
+`tendsto_nondominant_exact_source` keeps the same exact cost and 3/40 deficit.
+The current open floor is for this smaller carrier; balanced products and
+their cross-count correlations remain unpaid. Do not claim decay of the
+dominant integers with their original unallocated coefficients. See
+`docs/zeta-riesz-dominant-sector.md`. No restricted contradiction is proved.
+
+The active RH explorer default is `harmonic-remainder`, now ending at
+`tendsto_nondominant_exact_source`. Supporting views `joint-allocation`,
+`exact-wing-reserve` and `dominant-prime-sector` expose the paid comparison,
+full reserve and independent dominant-sector bound. The former
 conditioned-energy and owner/cycle routes remain supporting views. This
 explicit branch change supersedes older per-slice instructions to keep
 the conditioned-energy default. Keep the zero-free and certificate defaults

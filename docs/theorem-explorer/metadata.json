@@ -2540,7 +2540,24 @@
     "ZetaRieszCofactorCompletionBound": "arithmetic",
     "ZetaRieszCofactorBoundary": "arithmetic",
     "ZetaRieszCofactorPrimeRepairs": "arithmetic",
-    "ZetaRieszJointCofactor": "arithmetic"
+    "ZetaRieszJointCofactor": "arithmetic",
+    "ZetaRieszAllocationWeights": "arithmetic",
+    "ZetaRieszAssignedCompanion": "arithmetic",
+    "ZetaRieszCompanionWindow": "arithmetic",
+    "ZetaRieszAllocationConcentration": "arithmetic",
+    "ZetaRieszCancellingSector": "arithmetic",
+    "ZetaRieszWeightedCount": "arithmetic",
+    "ZetaRieszBalancedCompanion": "arithmetic",
+    "ZetaRieszCompanionMask": "arithmetic",
+    "ZetaRieszMaskSizeBounds": "arithmetic",
+    "ZetaRieszMaskSupport": "arithmetic",
+    "ZetaRieszRetainedCarrier": "arithmetic",
+    "ZetaRieszReserveWeights": "arithmetic",
+    "ZetaRieszReserveExact": "arithmetic",
+    "ZetaRieszRetainedSource": "arithmetic",
+    "ZetaRieszDominantAllocation": "arithmetic",
+    "ZetaRieszDominantSector": "arithmetic",
+    "ZetaRieszNondominantCarrier": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
