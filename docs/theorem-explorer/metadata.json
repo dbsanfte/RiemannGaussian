@@ -2533,7 +2533,10 @@
     "ZetaRieszOwnerWindow": "arithmetic",
     "ZetaRieszOwnerMass": "arithmetic",
     "ZetaRieszOwnerCells": "arithmetic",
-    "ZetaRieszOwnerBounds": "arithmetic"
+    "ZetaRieszOwnerBounds": "arithmetic",
+    "ZetaRieszWingReserve": "arithmetic",
+    "ZetaRieszWingHighOrders": "arithmetic",
+    "ZetaRieszHarmonicWindow": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

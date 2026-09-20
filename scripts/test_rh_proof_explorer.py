@@ -64,11 +64,11 @@ def run(output, url=None, refresh_preview=False):
                     (campaign.SITE / 'preview.json').write_bytes(campaign.explorer.json_bytes(capture))
                 root = page.evaluate('PROOF_VIEW.endpoint.roots[0]')
                 data = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
-                assert data['id'].endswith('.exists_original_band_critical_profile')
-                assert 'correlatedSamplingCost' in data['statement']
-                assert 'beta < 0' in data['statement'] and 'p ^ S' in data['statement']
-                assert 'conditioningAllowance' not in data['statement']
-                assert '0 < eps' in data['statement'] and '∃' in data['statement']
+                assert data['id'] == 'RiemannGaussian.ZetaRieszHarmonicWindow.tendsto_remainder_add_reserve'
+                assert all(term in data['statement'] for term in (
+                    'remainder', 'reserve', 'paidHarmonicCost', 'analyticZetaZeroMultiplicity',
+                    'tau ≠ rho →', 'Real.exp (-(11 / 16))', 'Tendsto'))
+                assert '-eta ≤' not in data['statement']
                 node = page.locator(f'[data-node="{root}"]')
                 node.hover()
                 assert page.locator('#tooltip').is_visible()
@@ -95,8 +95,8 @@ def run(output, url=None, refresh_preview=False):
                 page.locator('#fit').click()
                 page.locator('#scope-more').click()
                 assert 'what remains to prove' in page.locator('#details').inner_text().lower()
-                assert 'combined correlation, sampling and normalization cost' in page.locator('#details').inner_text()
-                assert 'still needs a source-scale saving' in page.locator('#details').inner_text()
+                assert 'lower-prime-count sum coupled to the middle wing' in page.locator('#details').inner_text()
+                assert 'independent cofinal real floor remains open' in page.locator('#details').inner_text()
                 page.locator('#close-details').click()
                 page.locator('#endpoint').select_option('source-limit')
                 assert page.evaluate('PROOF_VIEW.endpoint.id') == 'source-limit'
@@ -123,6 +123,35 @@ def run(output, url=None, refresh_preview=False):
                     assert set(actual) == {
                         campaign.explorer.at_path(status, path) for path in endpoint['statusPaths']
                     }
+                    if endpoint['id'] == 'carrier-bound':
+                        old_bound = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
+                        assert old_bound['id'].endswith('.exists_original_band_critical_profile')
+                        assert all(term in old_bound['statement'] for term in (
+                            'correlatedSamplingCost', 'beta < 0', 'p ^ S', '0 < eps', '∃'))
+                        assert 'conditioningAllowance' not in old_bound['statement']
+                    if endpoint['id'] in ('harmonic-remainder', 'harmonic-paid-components', 'harmonic-floor-criterion'):
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(term in scope for term in (
+                            '1/2<u<exp(-2/3)', '1/2<u<exp(-11/16)', '15/544',
+                            '25N/16<log n<=5N/2', '7N/4<log n<=9N/4',
+                            'joint arithmetic floor remains open', 'simple exposed zeros'))
+                        harmonic_roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        if endpoint['id'] == 'harmonic-paid-components':
+                            reserve = next(n for n in harmonic_roots if n['id'].endswith('.eventually_re_reserve_ge'))
+                            assert all(t in reserve['statement'] for t in (
+                                '15 / 544', 'analyticZetaZeroMultiplicity', 'tau ≠ rho →', 'Real.exp (-(11 / 16))'))
+                            decay = next(n for n in harmonic_roots if n['id'].endswith('.eventually_norm_highWing'))
+                            assert all(t in decay['statement'] for t in ('highWing', '^ 2', 'Real.exp', '1 / 1024'))
+                            for suffix, ceiling in (('exists_annular_window_error', '2 / 3'), ('exists_reserve_window_error', '11 / 16')):
+                                window = next(n for n in harmonic_roots if n['id'].endswith('.' + suffix))
+                                assert all(t in window['statement'] for t in ('r < 1', 'r ^ N * C', 'fewResponse', 'windowResponse', ceiling))
+                                assert 'NontrivialZetaZero' not in window['statement']
+                        if endpoint['id'] == 'harmonic-floor-criterion':
+                            criterion = harmonic_roots[0]
+                            assert all(t in criterion['statement'] for t in (
+                                'analyticZetaZeroMultiplicity rho = 1', 'eta <', '15 / 544', '∃ᶠ', 'False'))
+                            assert '-eta ≤' in criterion['statement']
+                            assert ' '.join(criterion['statement'].split()).endswith(').re) → False')
                     if endpoint['id'] == 'initial-conditioning':
                         assert 'unweighted' in page.locator('#scope-text').inner_text()
                         assert 'remain open' in page.locator('#scope-text').inner_text()

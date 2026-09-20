@@ -1,127 +1,59 @@
 # Current RH proof direction
 
 [Open the current proof explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/).
-The default view ends at
-[`exists_original_band_critical_profile`](../RiemannGaussian/ZetaRieszCriticalProfile.lean),
-the furthest checked bound in the active signed Riesz carrier campaign.
-**RH remains open.** This is a finite bound with the parameter conditions
-shown in its Lean statement, not a proof that its right-hand side is small
-enough to close the contradiction.
+Its default now follows the **harmonic-cost route** and ends at
+[`tendsto_remainder_add_reserve`](../RiemannGaussian/ZetaRieszHarmonicWindow.lean):
+the exact source retained by the narrowed lower-prime-count sum, unpaid
+middle wing and positive reserve. The independent joint arithmetic floor
+remains open. No first restricted zero exclusion or RH proof is claimed.
 
 ## Direction and obstruction
 
-The latest [narrowed cosine carrier](zeta-riesz-unfiltered-narrow-carrier.md)
-independently bounds both actual outer pieces, leaving
-`2*N/5<log(n)<=8*N*log(2)` and retaining every earlier arithmetic cut.
-At exposed hypothetical zeros, the constant filter `P=1` preserves the
-full negative multiplicity source. Its real response is exactly the signed
-Riesz coefficient times a nonnegative factorial envelope times
-`cos(gamma*log(n))`. The full coupled interior floor remains open; the
-multiple-large-prime and composite-cofactor cases retain their prior ranges.
+Prove a first restricted contradiction by completing the evaluated
+harmonic-cost argument. Retain the exact head-plus-central limit
+`-m²c(u)`, the proved frequency-sector savings and the deletion of complete
+high-prime-count classes. Bound the surviving lower-count response and
+wing together, preserving signs, phases and endpoint weights. Initially
+target simple exposed zeros in `1/2<u<exp(-2/3)`, where
+`u=3/2-Re(rho)` and the original remainder tends to `-(1-c(u))<0`.
 
-A hypothetical zero to the right of the critical line forces a nonzero
-normalized source in the original signed arithmetic carrier. The
-[separate source view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=source-limit)
-shows the compiled theorem and its zero hypothesis. The campaign seeks an
-independent arithmetic estimate incompatible with that source.
+The [current arithmetic ledger](zeta-riesz-harmonic-wing.md) distinguishes
+three new estimates. Both lower-count outer logarithmic tails decay
+geometrically, uniformly in height, leaving `25N/16<log n<=5N/2` across the
+original harmonic range. On `1/2<u<exp(-11/16)`, this narrows further to
+`7N/4<log n<=9N/4`. On that smaller interval, an actual wing block has real
+normalized contribution at least `15m²/544`; the opposite high-leg wing
+decays. Only the intervening wing orders and narrowed lower-count sum
+remain unpaid. Their exact sum plus the positive reserve retains the
+original `-m+m²c(u)` source.
 
-The current bound carries the actual squarefree support, Möbius signs,
-logarithmic phases, filter coefficients and full complex frequency-fibre
-averages into a finite conditioned-energy recurrence. At the initial scale
-pair `a=0,b=1`, the proved critical homogeneous exponent plus every positive
-epsilon now supplies both actual quotient moments. A finite induction bounds
-every descendant energy and replaces the complete initial allowance,
-including its deep remainder, by `B*p^beta` with `beta<0`. Its coupled cutoff `p^S<=X` and
-actual padded quotient threshold stay explicit. The remaining correlation,
-sampling and positive block-normalization costs have **not** been proved
-small enough for the contradiction. Quantitative parameter costs, resonance
-and the required combined weighted arithmetic saving remain open. The
-[proof notes](zeta-riesz-conditioned-energy.md#critical-exponent-in-the-original-initial-profile)
-give the exact identities and bounds.
+For simple exposed zeros, a cofinal real floor `-eta` with
+`eta<1-c(u)+15/544` for this smaller joint remainder would close the
+contradiction. The
+[conditional criterion](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=harmonic-floor-criterion)
+shows that floor as an explicit **unproved hypothesis**. Simplicity and
+exposure are also explicit; no zero-free region for arbitrary zeros follows
+from these component bounds. Extending the new wing estimates across the
+full original interval remains part of the goal.
 
-Stronger zero-free regions reduce the remaining strip and supply analytic
-inputs. The numerical certificate is a separate result about the proportion
-of simple critical-line zeros. Neither result supplies the missing signed
-arithmetic estimate. This explorer does not draw a proved arrow across that
-gap or estimate a percentage of RH completed.
+The
+[source view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=source-limit)
+shows the existing full harmonic source after the complete high-prime-count
+deletion. The
+[paid-component view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=harmonic-paid-components)
+shows the positive reserve, geometric tails and exact remaining support.
+All earlier masks, original floor-defined length and unrestricted
+multiplicity remain visible in their Lean statements.
 
-The [Signed Fourier tail view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=signed-fourier-tail)
-now gives an exact integral representation of the original filtered band.
-It retains both frequencies, the signed first moment and the ordinary-prime
-correction at the physical cutoff. A separate bound pays the integrated
-nonlinear prime-character logarithmic remainder uniformly over finite
-prime cutoffs at each fixed real part greater than one half. It does not
-control the first-order prime-phase exponential or its filtered contribution.
-The [arithmetic-tail audit](zeta-riesz-signed-fourier-tail.md) classifies
-the remaining correlations and states the weakest current sufficient target:
-a fixed lower floor strictly above minus one on a cofinal sequence of the
-original normalized carrier. That independent floor remains open.
-
-The [fixed cofactor component view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=fixed-cofactor-decay)
-now proves independent source-scale decay for every fixed squarefree
-composite-cofactor prime band. Its [component ledger](zeta-riesz-fixed-cofactor-decay.md)
-distinguishes that paid class from the explicit six small-prime semiprime
-tails and the class with at least two large primes. The finite deletion
-is now assembled into the source theorem. The
-[growing cofactor view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=growing-cofactor-decay)
-pays every squarefree composite cofactor up to an explicit unbounded
-eighth-root schedule, and its exact complement retains the same source.
-The [new ledger](zeta-riesz-growing-cofactor-decay.md) isolates the surviving
-semiprimes and larger composite cofactors; their combined signed floor
-remains open. The conditional closure to Mathlib RH keeps that floor
-explicitly as an unproved premise.
-
-The [exponential cofactor view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=exponential-cofactor-decay)
-now pays a range beyond every fixed polynomial when `1/2<Re(rho)<5/6`,
-with an explicit geometric allowance. Its adaptive source theorem covers
-the entire right half-strip by retaining the polynomial deletion elsewhere.
-The [proof details](zeta-riesz-exponential-cofactor-decay.md) distinguish
-these arithmetic estimates from the separate exact scalar tilt optimizer.
-The [general-tilt continuation](zeta-riesz-general-tilt-decay.md) now connects
-the exact scalar optimum to an actual arithmetic bound. It pays a range
-beyond every fixed polynomial at every actual source scale except the
-single scalar contact, where the earlier polynomial deletion still applies.
-Its exact complementary source covers every hypothetical right-half zero.
-The joint remaining semiprime and larger-cofactor contribution is still unpaid.
-
-The [Euler correction view](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=euler-correction-decay)
-now keeps the complete finite Euler quotient and every correction interaction.
-The full correction has uniformly vanishing even paired-integral and odd-energy
-allowances on each fixed closed half-plane right of one half. The
-[exact weighted identity](zeta-riesz-euler-correction-energy.md) retains the odd
-coupling when the leading response is restored. That response, original
-factorial filter and signed completion boundary remain unpaid.
-
-The [original-band correction deletion](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=euler-correction-deletion)
-now transports that correction through the actual growing cutoff and full
-factorial filter. Its removal changes the original normalized arithmetic band
-by a quantity tending to zero. The [explicit residual](zeta-riesz-euler-correction-deletion.md)
-keeps the leading response, ordinary-prime compensation, mixed term and signed
-completion boundary; their joint floor remains open.
-
-The **Critical moments** view proves the actual global exponent
-`2k(u+1)-k(k+1)/2+eps` for every `k>=2,u>=k,eps>0` at all sufficiently
-large original endpoints. One uniform improvement above each fixed positive
-defect closes the infimum argument; no analytic moment budget is assumed.
-Both moments in the actual Korobov product sum now receive that exponent,
-retaining the full joint resonance envelope and quartered Gaussian cost.
-The [precise theorem and limits](vinogradov-korobov-framework.md#critical-high-moment-exponent-and-actual-product-sum)
-do not assert `eps=0`, all smaller moment orders, or evaluated constants
-and thresholds. A [Gaussian resonance continuation](vinogradov-gaussian-power-saving.md)
-now pays both moments, every translated tail, smoothing and the logarithmic
-remainder to bound the literal imaginary-power product sum by
-`C*M^(2-1/(2r^2))`, `r=k(k+1)`, for every `k>=4` at
-`t=M^(2k),z=M^4` and all sufficiently large `M`, uniformly over every
-shift subset of `[1,M]`. Its constants and thresholds are unevaluated.
-Broader parameter bands and uniform degree costs remain open before this
-yields the required zeta growth bound.
-
-The **General recurrence** view retains the full result at every finite
-scale pair. The **Information audit** still proves that changing normalization
-alone improves only the deep remainder; intermediate energies are unchanged
-after restoring their source scale. Their new independent bound comes from
-the profile induction. Constants, improvements and terminal thresholds are
-not numerically evaluated. No arrow to an RH contradiction is asserted.
+Every new lemma should evaluate an actual contribution, quantitatively
+reduce this unpaid budget, or discharge a necessary contradiction
+hypothesis. The prior
+[conditioned-energy](zeta-riesz-conditioned-energy.md),
+[arithmetic-cycle](zeta-riesz-arithmetic-cycles.md) and
+[owner-window](zeta-riesz-owner-windows.md) results remain supporting tools;
+they are not additional obligations on the active route. Stronger proved
+zero-free regions can provide analytic inputs. The numerical certificate is
+separate and does not supply the missing signed floor.
 
 ## Evergreen presentation
 
@@ -164,8 +96,3 @@ committed update against its parent. The Pages artifact publishes this view
 at `/rh-proof/` beside the zero-free and numerical-certificate explorers,
 with source links pinned to the exact verified presentation commit. Ordinary
 builds never rerun the exhaustive numerical certificate for this view.
-
-The [growing-head correction deletion](zeta-riesz-euler-growing-head.md) now pays
-the full correction multiplied by actual primes up to n+16 along a cofinal
-stride of original factorial orders. Its explicit compensated-leading, mixed
-and signed-boundary residual retains the source; the joint floor remains open.

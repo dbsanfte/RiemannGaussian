@@ -3,44 +3,59 @@
   "repository": "https://github.com/dbsanfte/RiemannGaussian",
   "pagesUrl": "https://dbsanfte.github.io/RiemannGaussian/rh-proof/",
   "title": "Current RH Proof Direction",
-  "defaultEndpoint": "carrier-bound",
+  "defaultEndpoint": "harmonic-remainder",
   "limitNote": "RH remains open. The independent arithmetic saving needed for the source contradiction has not been proved.",
-  "contextScope": "The original Riesz carrier preserves squarefree support, Möbius signs, logarithmic phases and complex fibre correlations. Its initial bound now uses the proved critical homogeneous exponent plus any positive epsilon and a negative prime-power allowance. The combined correlation, sampling and normalization cost still needs a source-scale saving. No distance to an RH proof is asserted.",
+  "contextScope": "The exact harmonic cost, complete high-prime-count deletion, positive wing reserve and geometric outer-tail bounds leave a narrower lower-prime-count sum coupled to the middle wing. Its independent cofinal real floor remains open. The new wing bounds cover 1/2<u<exp(-11/16); the goal retains the full original 1/2<u<exp(-2/3) interval. No zero exclusion or RH proof is claimed.",
   "scopeHeading": "What remains to prove",
   "guideDocument": "docs/rh-proof-direction.md",
   "metadataOrigin": "Current RH campaign metadata; theorem names and scopes resolve through the compiled project status.",
   "campaign": {
     "direction": {
-      "branch": "riesz-conditioned-energy",
-      "statement": "Seek a contradiction at any hypothetical right-half zeta zero by proving an independent estimate incompatible with the original Riesz carrier’s forced source limit. Preserve Möbius signs, logarithmic phases and full frequency correlations through conditioned-energy estimates. Stronger zero-free regions narrow the remaining strip; the arithmetic saving is still open.",
-      "changeReason": "Establish the dedicated RH campaign view, distinguishing the long-term signed-carrier strategy from its zero-free-region and numerical-certificate work."
+      "branch": "riesz-harmonic-cost",
+      "statement": "Prove a first restricted contradiction along the harmonic-cost route. Retain the exact head and central evaluation and the proved frequency and high-prime-count savings. Bound the remaining coupled lower-prime-count response and tapered wing, preserving their signs, phases and endpoint weights. Begin with simple exposed zeros in 1/2<u<exp(-2/3); the independent arithmetic floor remains open.",
+      "changeReason": "On 2026-09-20 the user explicitly refocused the campaign on finishing the evaluated harmonic-cost route. Every new lemma must reduce its unpaid budget or discharge a necessary contradiction hypothesis."
     },
     "latestUpdate": {
-      "sequence": 51,
-      "id": "owner-windows",
+      "sequence": 52,
+      "id": "harmonic-wing-window",
       "kind": "theorem",
-      "title": "Larger composite-cofactor ranges now decay.",
-      "body": "Lean controls the entire composite-owner mass up to exp(N/5) for u<exp(-2/3), and up to exp(N/10) for the wider u<exp(-16/25). Every bound keeps the full filter and all heights. A source-dependent positive exponent also works throughout 1/2<u<1 except exp(-1/2). The full source survives; the remaining semiprime and larger-owner signed bound is open, so no new zero-free region follows.",
-      "next": "Next: bound the joint signed response of semiprimes and composite owners above the enlarged cutoff.",
+      "title": "A positive wing reserve and two geometric tail deletions.",
+      "body": "Lean pays the lower-count terms outside 25N/16<log n<=5N/2 throughout the original harmonic range. On 1/2<u<exp(-11/16), the window narrows to 7N/4<log n<=9N/4; a wing block contributes at least 15m²/544 and its high-leg tail vanishes. The source now lies in the narrower count sum, middle wing and positive reserve. The required joint arithmetic floor remains open; no new zero-free region follows.",
+      "next": "Next: bound the coupled lower-count response in the surviving logarithmic window and the unpaid middle wing.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszOwnerFifthSourceTheorem"
+        "rieszHarmonicWindowSourceTheorem"
       ],
-      "documentation": "docs/zeta-riesz-owner-windows.md"
+      "documentation": "docs/zeta-riesz-harmonic-wing.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
-      "vkRieszCriticalProfileTheorem"
+      "rieszHarmonicWindowSourceTheorem"
     ],
     "sourceStatusPath": [
       "gaussianPhaseBandToolkit",
-      "vkRieszSourceTheorem"
+      "rieszHarmonicOriginalSourceTheorem"
     ]
   },
   "endpoints": [
     {
+      "id": "harmonic-remainder",
+      "label": "Current frontier · narrowed harmonic remainder",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHarmonicWindowSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszHarmonicWingScope"
+      ],
+      "documentation": "docs/zeta-riesz-harmonic-wing.md"
+    },
+    {
       "id": "carrier-bound",
-      "label": "Current frontier · critical moments in the Riesz bound",
+      "label": "Supporting route · critical conditioned-energy bound",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -54,12 +69,27 @@
       "documentation": "docs/rh-proof-direction.md"
     },
     {
-      "id": "source-limit",
-      "label": "Source limit · under a hypothetical zero",
+      "id": "original-source-limit",
+      "label": "Supporting route · original full-carrier source",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
           "vkRieszSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "rhCampaign",
+        "originalSourceScope"
+      ],
+      "documentation": "docs/zeta-riesz-conditioned-energy.md"
+    },
+    {
+      "id": "source-limit",
+      "label": "Harmonic source · under an exposed hypothetical zero",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHarmonicOriginalSourceTheorem"
         ]
       ],
       "scopePath": [
@@ -2345,14 +2375,73 @@
         "rieszOwnerWindowScope"
       ],
       "documentation": "docs/zeta-riesz-owner-windows.md"
+    },
+    {
+      "id": "harmonic-paid-components",
+      "label": "Harmonic route · signed reserve and paid tails",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWingCompletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWingReserveTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWingHighBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWingHighDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWingUnpaidSupportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHarmonicAnnularWindowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHarmonicReserveWindowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHarmonicAnnularSourceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszHarmonicWingScope"
+      ],
+      "documentation": "docs/zeta-riesz-harmonic-wing.md"
+    },
+    {
+      "id": "harmonic-floor-criterion",
+      "label": "Conditional contradiction · arithmetic floor still open",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHarmonicWindowCriterionTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszHarmonicWingScope"
+      ],
+      "documentation": "docs/zeta-riesz-harmonic-wing.md"
     }
   ],
   "scopes": {
     "boundScope": "Furthest checked carrier bound: at a=0,b=1, use the proved critical homogeneous exponent 2k(u+1)-k(k+1)/2+eps for every eps>0, with k>=2,u>=k. The complete initial allowance is at most B*p^beta, -1/2<=beta<0, with every homogeneous and descendant-energy premise discharged. Prime, padded-quotient and p^S<=X conditions are explicit. Constants and thresholds are unevaluated. Full signed correlations, sampling and block normalization remain; their combined saving is unproved. RH remains open.",
-    "sourceScope": "Under the displayed hypothetical right-half-zero assumptions, the normalized original carrier has the prescribed negative-multiplicity source limit. This conditional source identity supplies one side of the proposed contradiction; its independent arithmetic counterpart remains open.",
+    "sourceScope": "Under the displayed exposed hypothetical right-half-zero assumptions and u<exp(-2/3), the original lower-count response plus tapered wing tends to -m+m^2c(u). The complete high-prime-count class is independently paid. Simplicity is not assumed in this source theorem. The independent joint arithmetic floor remains open.",
     "initialConditioningScope": "The unweighted critical moment exponent plus every eps>0 holds for k>=2,u>=k at sufficiently large endpoints. For each k>=12 the full eligible degree window gives the actual imaginary-power product sum a saving 1/(128*k^2) throughout M^(2k-2)<=t<=M^(2k), M^4<=z<=4*M^4. Original Dirichlet blocks of length M^4 starting at M^4<=z<=2*M^4 have bound C*M^(4-1/(128*k^2)); every partial block has its explicit endpoint allowance. Both moments, all Gaussian tails, smoothing, Taylor errors and averaging masses are paid. Constants and thresholds are unevaluated for each fixed degree. Uniform degree costs, all-scale zeta growth and the combined Riesz weighted saving remain open. Finite Abel transport also preserves every nonnegative decreasing weight family, including literal zeta coefficients at nonnegative real part. The main term pays actual total weight and the endpoint only its initial weight. All Gaussian constants cost at most two after the actual moment root, uniformly for k>=12; moment constants and thresholds remain unevaluated. Finite descent now proves actual critical+defect moments at every X>=1 with cost A^n*k!, starting from the proved elementary factorial bound. One exponent decrement and one multiplier are chosen before the source exponent and constant. The profile multiplier is at most (2ku)^(7k) independently of iteration count; original C stays linear and outside the prime threshold. The sharper actual deep remainder also retains -defect*u/(u+1)*(b-a+H), upstream of the present half-depth relaxation. The global multiplier, decrement and cutoff depth still need degree bounds; uniform zeta growth and the zero-free union are unchanged.",
     "exponentAuditScope": "Exact normalization audit: after restoring the source scale, lowering the exponent changes only the deep remainder by the coarse-quotient power. Every original intermediate conditioned energy is identical. The complete scaled allowance is no larger when a full coarse window fits. This comparison bounds no intermediate energy and does not prove RH.",
-    "fullRecurrenceScope": "The general original-carrier recurrence applies to every displayed finite scale pair a<=b and depth H. Both actual quotient moments use the proved first improved exponent; all intermediate energies remain in the full allowance. The default view uses the critical exponent plus positive epsilon and a proved negative initial profile under its deeper cutoff conditions. No net signed correlation saving or RH contradiction is asserted."
+    "fullRecurrenceScope": "The general original-carrier recurrence applies to every displayed finite scale pair a<=b and depth H. Both actual quotient moments use the proved first improved exponent; all intermediate energies remain in the full allowance. The conditioned-energy supporting view uses the critical exponent plus positive epsilon and a proved negative initial profile under its deeper cutoff conditions. No net signed correlation saving or RH contradiction is asserted.",
+    "originalSourceScope": "Under the displayed hypothetical right-half-zero assumptions, the normalized original full carrier has its negative-multiplicity source limit. This supporting route retains its own filter, schedule and source hypotheses. Its independent arithmetic counterpart remains open."
   },
   "theorems": {
     "RiemannGaussian.VinogradovMeanValue.weighted_gram": {
@@ -5728,6 +5817,76 @@
       "summary": "The remaining complete cells have a prime cofactor or logarithmic cofactor size greater than delta*N.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-owner-windows.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWingReserve.eventually_norm_reserve_completion": {
+      "label": "Longer independent prime completion",
+      "summary": "Both omitted prime ranges are paid through three fifths of the moment order, with a uniform geometric allowance on the smaller radius interval.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-harmonic-wing.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWingReserve.eventually_re_reserve_ge": {
+      "label": "Positive original wing reserve",
+      "summary": "The actual normalized wing block has real part at least 15m²/544 eventually, under the displayed exposed-zero hypotheses and smaller radius range.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-harmonic-wing.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWingHighOrders.eventually_norm_highWing": {
+      "label": "Geometric bound for the high-leg wing",
+      "summary": "The whole selected wing, including its complete low leg and order count, is bounded by C(N+1)² exp(-N/1024) at the original source scale.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-harmonic-wing.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWingHighOrders.tendsto_highWing": {
+      "label": "High-leg wing vanishes",
+      "summary": "The complete selected wing tends to zero at source scale under the exposed-zero hypotheses.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-harmonic-wing.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszWingHighOrders.unpaidOrders_support": {
+      "label": "Only the middle wing remains",
+      "summary": "The exact remaining orders satisfy k<=floor(13N/32) and 5(N+1-k)<4N, preserving the original support.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-harmonic-wing.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHarmonicWindow.exists_annular_window_error": {
+      "label": "Pay both outer arithmetic tails",
+      "summary": "Uniform geometric decay removes all lower-count terms outside 25N/16<log n<=5N/2 over the original harmonic radius range.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-harmonic-wing.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHarmonicWindow.exists_reserve_window_error": {
+      "label": "Narrower surviving logarithmic window",
+      "summary": "Uniform geometric decay leaves only 7N/4<log n<=9N/4 on the smaller wing-reserve range; all heights and count thresholds are covered.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-harmonic-wing.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHarmonicWindow.tendsto_annularRemainder": {
+      "label": "Full-range harmonic source retained",
+      "summary": "The narrowed lower-count sum remains coupled to the whole original wing and retains -m+m²c(u) throughout u<exp(-2/3).",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-harmonic-wing.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHarmonicWindow.tendsto_remainder_add_reserve": {
+      "label": "Current coupled harmonic remainder",
+      "summary": "The narrower count sum, unpaid middle wing and positive reserve retain -m+m²c(u). The sufficient independent floor is not proved.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-harmonic-wing.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHarmonicWindow.false_of_remainder_floor": {
+      "label": "Open arithmetic floor would contradict the source",
+      "summary": "For a simple exposed zero in the smaller range, the explicit cofinal floor premise with eta<1-c(u)+15/544 would yield a contradiction. Its premise remains unproved.",
+      "family": "arithmetic",
+      "documentation": "docs/zeta-riesz-harmonic-wing.md",
       "overview": true
     }
   }

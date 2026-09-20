@@ -1830,3 +1830,6 @@ import RiemannGaussian.ZetaRieszOwnerWindow
 import RiemannGaussian.ZetaRieszOwnerMass
 import RiemannGaussian.ZetaRieszOwnerCells
 import RiemannGaussian.ZetaRieszOwnerBounds
+import RiemannGaussian.ZetaRieszWingReserve
+import RiemannGaussian.ZetaRieszWingHighOrders
+import RiemannGaussian.ZetaRieszHarmonicWindow

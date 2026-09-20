@@ -132,9 +132,9 @@ Lean source lines and proof audits.
 
 ### [▶ Explore the current RH proof chain](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-[![Current RH proof explorer: the checked chain to the original Riesz carrier bound, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
+[![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-Seek a contradiction at any hypothetical right-half zeta zero by proving an independent estimate incompatible with the original Riesz carrier’s forced source limit. Preserve Möbius signs, logarithmic phases and full frequency correlations through conditioned-energy estimates. Stronger zero-free regions narrow the remaining strip; the arithmetic saving is still open.
+Prove a first restricted contradiction along the harmonic-cost route. Retain the exact head and central evaluation and the proved frequency and high-prime-count savings. Bound the remaining coupled lower-prime-count response and tapered wing, preserving their signs, phases and endpoint weights. Begin with simple exposed zeros in 1/2<u<exp(-2/3); the independent arithmetic floor remains open.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -142,10 +142,10 @@ Seek a contradiction at any hypothetical right-half zeta zero by proving an inde
 
 ### Latest Update
 
-**Larger composite-cofactor ranges now decay.** Lean controls the entire composite-owner mass up to exp(N/5) for u<exp(-2/3), and up to exp(N/10) for the wider u<exp(-16/25). Every bound keeps the full filter and all heights. A source-dependent positive exponent also works throughout 1/2<u<1 except exp(-1/2). The full source survives; the remaining semiprime and larger-owner signed bound is open, so no new zero-free region follows.
-Next: bound the joint signed response of semiprimes and composite owners above the enlarged cutoff.
-[Current checked endpoint](RiemannGaussian/ZetaRieszOwnerBounds.lean#L81)
-· [Proof details](docs/zeta-riesz-owner-windows.md).
+**A positive wing reserve and two geometric tail deletions.** Lean pays the lower-count terms outside 25N/16<log n<=5N/2 throughout the original harmonic range. On 1/2<u<exp(-11/16), the window narrows to 7N/4<log n<=9N/4; a wing block contributes at least 15m²/544 and its high-leg tail vanishes. The source now lies in the narrower count sum, middle wing and positive reserve. The required joint arithmetic floor remains open; no new zero-free region follows.
+Next: bound the coupled lower-count response in the surviving logarithmic window and the unpaid middle wing.
+[Current checked endpoint](RiemannGaussian/ZetaRieszHarmonicWindow.lean#L219)
+· [Proof details](docs/zeta-riesz-harmonic-wing.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

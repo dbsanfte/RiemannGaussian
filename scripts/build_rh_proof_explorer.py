@@ -86,7 +86,7 @@ def readme_section(meta, status, raw):
 
 ### [▶ Explore the current RH proof chain]({meta['pagesUrl']})
 
-[![Current RH proof explorer: the checked chain to the original Riesz carrier bound, grouped by mathematical family](docs/rh-proof-explorer/preview.png)]({meta['pagesUrl']})
+[![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)]({meta['pagesUrl']})
 
 {direction['statement']}
 

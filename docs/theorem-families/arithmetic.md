@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**300 modules.** Source links open the definitions, hypotheses and proofs.
+**303 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -148,6 +148,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszFullCycleSupply](../../RiemannGaussian/ZetaRieszFullCycleSupply.lean)
 - [ZetaRieszGeneralCofactorTilt](../../RiemannGaussian/ZetaRieszGeneralCofactorTilt.lean)
 - [ZetaRieszGrowingCofactor](../../RiemannGaussian/ZetaRieszGrowingCofactor.lean)
+- [ZetaRieszHarmonicWindow](../../RiemannGaussian/ZetaRieszHarmonicWindow.lean)
 - [ZetaRieszHeadAdaptive](../../RiemannGaussian/ZetaRieszHeadAdaptive.lean)
 - [ZetaRieszHeadAdaptiveTransport](../../RiemannGaussian/ZetaRieszHeadAdaptiveTransport.lean)
 - [ZetaRieszHeadHarmonicAsymptotic](../../RiemannGaussian/ZetaRieszHeadHarmonicAsymptotic.lean)
@@ -251,6 +252,8 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszWindowInteraction](../../RiemannGaussian/ZetaRieszWindowInteraction.lean)
 - [ZetaRieszWindowOverlap](../../RiemannGaussian/ZetaRieszWindowOverlap.lean)
 - [ZetaRieszWindowUnitDeletion](../../RiemannGaussian/ZetaRieszWindowUnitDeletion.lean)
+- [ZetaRieszWingHighOrders](../../RiemannGaussian/ZetaRieszWingHighOrders.lean)
+- [ZetaRieszWingReserve](../../RiemannGaussian/ZetaRieszWingReserve.lean)
 - [ZetaRoughCoprimeFactorDecay](../../RiemannGaussian/ZetaRoughCoprimeFactorDecay.lean)
 - [ZetaRoughDivisorCorrelation](../../RiemannGaussian/ZetaRoughDivisorCorrelation.lean)
 - [ZetaRoughDivisorIncidence](../../RiemannGaussian/ZetaRoughDivisorIncidence.lean)

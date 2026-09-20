@@ -1335,6 +1335,45 @@ project now proves two ordered unconditional literal constants
 strictly improves the preceding project certificate. No `13/18` theorem is
 claimed.
 
+## Active harmonic-cost goal (2026-09-20)
+
+The user explicitly refocused the active goal on finishing the existing
+harmonic-cost route. Retain u^(N+1)(H_N+C_N)->-m^2 c(u), the proved
+frequency-sector and complete high-prime-count savings, and the coupled
+lower-count response plus tapered wing. Initially target simple exposed
+zeros with 1/2<u<exp(-2/3). Every new lemma must reduce this specific unpaid
+arithmetic budget or discharge a necessary contradiction hypothesis.
+Preserve signs, phases, exact support and endpoint weights. The independent
+cofinal floor and the first restricted zero exclusion remain open.
+
+`ZetaRieszWingReserve` gives an actual positive normalized wing block of
+at least 15m^2/544, using exposed-zero phases and independent prime completion,
+on the smaller interval 1/2<u<exp(-11/16). `ZetaRieszWingHighOrders` pays the
+opposite high-leg wing by C(N+1)^2 exp(-N/1024). Its finite high-leg bound is
+height-uniform and independent of zeros; the whole product uses the exposed
+complete low-moment bound. Remaining wing orders obey k<=floor(13N/32) and
+5(N+1-k)<4N. The partition is exact at every sufficiently large order.
+
+`ZetaRieszHarmonicWindow` independently pays both complete lower-count outer
+tails by one geometric bound, uniform in all heights, count thresholds and
+radii up to the stated ceiling, for every fixed full complex filter. The
+window is 25N/16<log n<=5N/2 over the original harmonic range; it narrows to
+7N/4<log n<=9N/4 on the wing-reserve range. The smaller count sum stays
+coupled to the unpaid middle wing. Their sum plus the positive reserve
+tends to -m+m^2c(u). For simple exposed zeros the sufficient cofinal floor
+has eta<1-c(u)+15/544; that floor remains an explicit unproved premise.
+Do not extend the wing estimates to the full original interval, assume
+simplicity or exposure for all zeros, double-count overlapping frequency
+savings, or claim a zero-free region from these component results.
+
+The active RH explorer default is now `harmonic-remainder`; the former
+conditioned-energy and owner/cycle routes remain supporting views. This
+explicit branch change supersedes older per-slice instructions to keep
+the conditioned-energy default. Keep the zero-free and certificate defaults
+and both top-ten lists unchanged. The exact ledger is
+`docs/zeta-riesz-harmonic-wing.md`. Work locally without subagents and
+amortize required gates over coherent compatible mathematical batches.
+
 ## Current theorem-push commit gate
 
 On 2026-09-05 the user explicitly changed the objective to an overnight Lean
