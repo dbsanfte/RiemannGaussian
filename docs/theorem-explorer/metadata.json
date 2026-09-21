@@ -2562,7 +2562,21 @@
     "ZetaRieszOneSidedArithmetic": "arithmetic",
     "ZetaRieszAllowanceComplement": "arithmetic",
     "ZetaRieszAllowancePrimeBoxes": "arithmetic",
-    "ZetaRieszAllowanceGrowth": "arithmetic"
+    "ZetaRieszAllowanceGrowth": "arithmetic",
+    "DirichletFamilyMoments": "arithmetic",
+    "PrimeNewtonThree": "arithmetic",
+    "PrimeNewtonMoments": "arithmetic",
+    "PrimeCountEuler": "arithmetic",
+    "PrimeCountEulerMoments": "arithmetic",
+    "PrimeCountEulerExponential": "arithmetic",
+    "ZetaRieszSymmetricOperators": "arithmetic",
+    "ZetaRieszCompleteOperators": "arithmetic",
+    "ZetaRieszBalancedTripleAudit": "arithmetic",
+    "ZetaRieszTruncatedSymmetry": "arithmetic",
+    "ZetaRieszTypeIILocalization": "arithmetic",
+    "ZetaRieszPairDiscrepancy": "arithmetic",
+    "ZetaRieszTypeIIReduction": "arithmetic",
+    "ZetaRieszTypeIIRateAudit": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

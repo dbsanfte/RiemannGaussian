@@ -134,7 +134,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-Prove a first restricted contradiction along the harmonic-cost route. Preserve the evaluated source, signs, phases and masks. The wing coupling, full reserve and dominant-prime sector are now paid. Bound the remaining joint signed carrier independently: a cofinal real floor at -3/40 would contradict its source for simple exposed zeros in 1/2<u<exp(-11/16). Extending to the original interval 1/2<u<exp(-2/3) remains a later step.
+The harmonic-cost route has an evaluated source and paid wing, reserve and dominant-prime components. An independent cofinal floor at -3/40 for the remaining signed carrier would exclude simple exposed zeros in the stated range. Positive allowances fail; the Type-II test is quantified but its arithmetic premise is unproved. Further expansion is on hold pending a new signed estimate.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -142,10 +142,10 @@ Prove a first restricted contradiction along the harmonic-cost route. Preserve t
 
 ### Latest Update
 
-**The proposed positive allowance is proved too large.** Lean proves the independent finite one-sided estimate and its four-prime credit, then rules out the proposed endgame bound: for every fixed height and `1/2 < u <= exp(-11/16)`, the unchanged complement `B_j-B_4,j` has a positive lower bound `c(u,y)(2u)^N_j/(N_j+1)^4` and diverges. Balanced three-prime products survive every mask. Thus `B_j-(3/4)B_4,j` cannot meet `3/40` on any cofinal subsequence. This is a negative result for that allowance; the signed source and open arithmetic floor remain.
-Next: retain cancellation between the surviving signed contributions to obtain the independent cofinal floor at `-3/40`; do not pursue an upper bound on this refuted allowance.
-[Current checked endpoint](RiemannGaussian/ZetaRieszAllowanceGrowth.lean#L260)
-· [Proof details](docs/zeta-riesz-allowance-obstruction.md).
+**Type-II endgame quantified; current inputs do not close it.** Lean now checks Newton/Euler identities, the exact cutoff correction, and a conditional endgame on `1/2<u<=0.5001`. The tails outside `1.95N<log n<=2.05N` are independently paid. A `1/1000` power saving for the literal signed prime-pair form would give the `-3/40` floor with geometric ratio `1667/1670`. That estimate remains unproved; the literature and repo audit finds no applicable input.
+This route is on hold pending an independent signed estimate; no new zero exclusion is claimed.
+[Current checked endpoint](RiemannGaussian/ZetaRieszTypeIIReduction.lean#L224)
+· [Proof details](docs/zeta-riesz-typeii-go-no-go.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

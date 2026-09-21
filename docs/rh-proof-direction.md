@@ -59,6 +59,13 @@ eventually below `-3/40`.
 
 An **independent** cofinal real floor at `-3/40` for this smaller carrier
 would close the contradiction. This joint arithmetic floor remains open.
+The [strict Type-II test](zeta-riesz-typeii-go-no-go.md) now proves the
+quantitative reduction on `1/2<u<=0.5001`: a fixed `1/1000` power saving for
+the literal corrected prime-pair form implies that floor, with normalized
+rate `1667/1670`. The narrower-window error is independently paid. The
+required arithmetic estimate is unproved; current sieve error rates and
+the fixed-degree VMVT height range do not supply it. This route is on hold
+until a new independent signed estimate is available.
 The [positive-allowance audit](zeta-riesz-allowance-obstruction.md) now
 rules out the specific candidate `B_j-(3/4)B_4,j`: balanced three-prime
 products give exponential growth for every fixed height throughout the

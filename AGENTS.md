@@ -3766,6 +3766,41 @@ mathematical work during CI; preserve exact-SHA status throughout.
 
 ## Research discipline
 
+The harmonic Type-II go/no-go test is recorded in
+`docs/zeta-riesz-typeii-go-no-go.md`. Decision: no-go with current inputs;
+stop expanding this route without a new independent arithmetic estimate.
+`ZetaRieszTypeIILocalization` proves `exists_narrow_window_error` in namespace
+`ZetaRieszTypeII`: it pays the tails outside 1.95N<log(n)<=2.05N, uniformly
+for 0<=u<=5001/10000. `ZetaRieszTypeIIReduction` defines the literal
+`LocalizedTypeIIBound` and proves its implication to the eventual -3/40
+floor and the simple-exposed-zero contradiction. The 1/1000 power saving
+is an explicit UNPROVED hypothesis, with fixed C,A and original cofinal
+orders. The checked normalized rate is 1667/1670. Do not report this
+conditional transport as an independent floor or zero-free region.
+`ZetaRieszPairDiscrepancy` retains the unsaturated three-cutoff correction
+and averages ordered prime pairs by omega(n)(omega(n)-1). The shorter
+Lambda-minus-hinge formula requires saturation; its error is not paid
+on the entire carrier. `ZetaRieszTypeIIRateAudit` checks the log/power rate
+mismatch and eventual failure of the growing-height VMVT rectangle at
+fixed height. These are applicability obstructions, not a proof that the
+actual cancellation estimate is false or equivalent to full RH.
+Keep the existing whole-carrier source as the public frontier. Reopen
+this route only with an actual signed estimate or a weaker direct
+one-sided floor with independently paid source-scale errors.
+
+The signed symmetric completion audit is in
+`docs/zeta-riesz-symmetric-completion-audit.md`. The obstruction's surviving
+balanced three-prime boxes fail `LinearClass`: their pair-saturated
+coefficient is `t*(t-L)/L`, not `t*(2*L-t)/L`. The complete Newton and D,K
+operator identities do not remove this cutoff correction. The explicit
+`balancedTripleBand` now has a proved allocation-removal error bounded by
+`C*(N+1)*sectorRate^N`, with `sectorRate<1`, using the existing balanced
+companion estimate. This pays only that error on the stated subband. The
+complete signed generating function specializes to `1/zeta(s)` at `z=1`;
+do not apply the unsigned squarefree response's analyticity to it. The
+signed floor, complete-series mask transfer and restricted zero exclusion
+remain open; do not report these identities as an arithmetic floor.
+
 - Prefer exact identities, coercion lemmas, summable dominators, and explicit
   quantitative estimates that can be reused downstream.
 - Distinguish finite-window, infinite-sum, boundary-limit, and large-height

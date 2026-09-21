@@ -75,3 +75,9 @@ zero-free region; it corrects the proposed endgame target.
 The [allowance obstruction explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/#endpoint=allowance-obstruction)
 exposes the checked lower bound, divergence and no-cofinal-ceiling theorem.
 The main explorer continues to end at the signed source with its open floor.
+
+The subsequent [signed symmetric completion audit](zeta-riesz-symmetric-completion-audit.md)
+checks the Newton/Euler differential operators and the truncated
+Selberg–Vaughan identity. It identifies an additional pair-cutoff correction
+on these very same surviving triples; no independent signed floor is yet
+proved by that completion.

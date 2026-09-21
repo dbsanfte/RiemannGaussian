@@ -5,28 +5,28 @@
   "title": "Current RH Proof Direction",
   "defaultEndpoint": "harmonic-remainder",
   "limitNote": "RH remains open. The independent arithmetic saving needed for the source contradiction has not been proved.",
-  "contextScope": "The complete companion is now compared with every original mask, and all off-mask corrections are paid. The full reserve is evaluated. The remaining allocated contribution with a prime carrying at least 13/20 of log n has a height-uniform geometric bound. The smaller signed carrier retains the exact source on 1/2<u<exp(-11/16). For simple exposed zeros its real part is eventually below -3/40; an independent cofinal real floor remains open. Balanced products and their joint signed correlations remain unpaid. No zero exclusion or RH proof is claimed. The specific positive allowance B_j-(3/4)*B_4,j is now proved to diverge on that interval for every fixed height; it cannot close the contradiction.",
+  "contextScope": "The complete companion is now compared with every original mask, and all off-mask corrections are paid. The full reserve is evaluated. The remaining allocated contribution with a prime carrying at least 13/20 of log n has a height-uniform geometric bound. The smaller signed carrier retains the exact source on 1/2<u<exp(-11/16). For simple exposed zeros its real part is eventually below -3/40; an independent cofinal real floor remains open. Balanced products and their joint signed correlations remain unpaid. No zero exclusion or RH proof is claimed. The specific positive allowance B_j-(3/4)*B_4,j is now proved to diverge on that interval for every fixed height; it cannot close the contradiction. The strict Type-II test now isolates a sufficient fixed 1/1000 power saving on the actual corrected prime-pair form, after independently narrowing the window to 1.95N<log n<=2.05N for u<=0.5001. The reduction is conditional and current inputs do not discharge it.",
   "scopeHeading": "What remains to prove",
   "guideDocument": "docs/rh-proof-direction.md",
   "metadataOrigin": "Current RH campaign metadata; theorem names and scopes resolve through the compiled project status.",
   "campaign": {
     "direction": {
       "branch": "riesz-harmonic-cost",
-      "statement": "Prove a first restricted contradiction along the harmonic-cost route. Preserve the evaluated source, signs, phases and masks. The wing coupling, full reserve and dominant-prime sector are now paid. Bound the remaining joint signed carrier independently: a cofinal real floor at -3/40 would contradict its source for simple exposed zeros in 1/2<u<exp(-11/16). Extending to the original interval 1/2<u<exp(-2/3) remains a later step.",
-      "changeReason": "The 2026-09-20 allocation, mask, exact-reserve and dominant-prime batch reduces the active target to one smaller signed carrier; the wing and off-mask corrections are no longer unpaid obligations."
+      "statement": "The harmonic-cost route has an evaluated source and paid wing, reserve and dominant-prime components. An independent cofinal floor at -3/40 for the remaining signed carrier would exclude simple exposed zeros in the stated range. Positive allowances fail; the Type-II test is quantified but its arithmetic premise is unproved. Further expansion is on hold pending a new signed estimate.",
+      "changeReason": "The strict Type-II go/no-go test proves the numerical reduction but identifies an unproved parity-sensitive estimate; current sieve rates and the fixed-height VMVT mismatch do not discharge it. Stop expanding this route until new arithmetic input is found."
     },
     "latestUpdate": {
-      "sequence": 55,
-      "id": "positive-allowance-obstruction",
+      "sequence": 56,
+      "id": "harmonic-typeii-go-no-go",
       "kind": "theorem",
-      "title": "The proposed positive allowance is proved too large.",
-      "body": "Lean proves the independent finite one-sided estimate and its four-prime credit, then rules out the proposed endgame bound: for every fixed height and `1/2 < u <= exp(-11/16)`, the unchanged complement `B_j-B_4,j` has a positive lower bound `c(u,y)(2u)^N_j/(N_j+1)^4` and diverges. Balanced three-prime products survive every mask. Thus `B_j-(3/4)B_4,j` cannot meet `3/40` on any cofinal subsequence. This is a negative result for that allowance; the signed source and open arithmetic floor remain.",
-      "next": "Next: retain cancellation between the surviving signed contributions to obtain the independent cofinal floor at `-3/40`; do not pursue an upper bound on this refuted allowance.",
+      "title": "Type-II endgame quantified; current inputs do not close it.",
+      "body": "Lean now checks Newton/Euler identities, the exact cutoff correction, and a conditional endgame on `1/2<u<=0.5001`. The tails outside `1.95N<log n<=2.05N` are independently paid. A `1/1000` power saving for the literal signed prime-pair form would give the `-3/40` floor with geometric ratio `1667/1670`. That estimate remains unproved; the literature and repo audit finds no applicable input.",
+      "next": "This route is on hold pending an independent signed estimate; no new zero exclusion is claimed.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszAllowanceNoCofinalCeilingTheorem"
+        "rieszTypeIIFloorTheorem"
       ],
-      "documentation": "docs/zeta-riesz-allowance-obstruction.md"
+      "documentation": "docs/zeta-riesz-typeii-go-no-go.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -2611,6 +2611,45 @@
         "rieszHarmonicWingScope"
       ],
       "documentation": "docs/zeta-riesz-harmonic-wing.md"
+    },
+    {
+      "id": "harmonic-typeii-test",
+      "label": "Conditional Type-II test · arithmetic input unproved",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTypeIIWindowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTypeIIPairTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTypeIIFiniteBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTypeIIFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTypeIIContradictionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTypeIILogRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTypeIIHeightTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszTypeIIScope"
+      ],
+      "documentation": "docs/zeta-riesz-typeii-go-no-go.md"
     }
   ],
   "scopes": {
@@ -6315,6 +6354,41 @@
       "overview": true,
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-allowance-obstruction.md"
+    },
+    "RiemannGaussian.ZetaRieszTypeII.exists_narrow_window_error": {
+      "label": "Narrow window: independently paid tails",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-typeii-go-no-go.md"
+    },
+    "RiemannGaussian.ZetaRieszTypeII.pairForm_eq_sum": {
+      "label": "Actual corrected prime-pair discrepancy",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-typeii-go-no-go.md"
+    },
+    "RiemannGaussian.ZetaRieszTypeII.norm_narrow_of_typeII": {
+      "label": "Conditional numerical transport: ratio 1667/1670",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-typeii-go-no-go.md"
+    },
+    "RiemannGaussian.ZetaRieszTypeII.eventually_signed_floor_of_typeII": {
+      "label": "Signed floor IF the Type-II bound holds",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-typeii-go-no-go.md"
+    },
+    "RiemannGaussian.ZetaRieszTypeII.not_typeII_of_simple_exposed_zero": {
+      "label": "Conditional simple-exposed-zero contradiction",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-typeii-go-no-go.md"
+    },
+    "RiemannGaussian.ZetaRieszTypeII.logarithmic_envelope_eventually_exceeds": {
+      "label": "Logarithmic errors do not supply a fixed power",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-typeii-go-no-go.md"
+    },
+    "RiemannGaussian.ZetaRieszTypeII.fixed_height_outside_repo_vmvt": {
+      "label": "Fixed height leaves the VMVT rectangle",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-typeii-go-no-go.md"
     }
   }
 }
