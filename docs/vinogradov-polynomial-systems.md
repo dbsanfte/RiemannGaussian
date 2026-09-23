@@ -7,8 +7,11 @@ and congruence-counting ingredients, the quantitative differencing bound,
 and nonsingular conditioning for the literal prime-dilated integer count.
 The original undilated tail now reaches an attained next polynomial type
 at the required quotient endpoint, with low-degree conditioning, endpoint
-deletion and exact row transport all proved. **The full conditioning
-inequality, improved terminal costs and a new zero-free region remain open.**
+deletion and exact row transport all proved. Full conditioning, the diagonal
+moment iteration and a weaker-constant VK region have since been completed;
+see [the current endpoint](vinogradov-cubic-summation.md). The full mixed
+iteration with the published constants remains open. The active priority is
+[direct literature reproduction](vinogradov-literature-reproduction.md).
 
 The source is [Ford, Section 3](https://arxiv.org/pdf/1910.08209).
 The relevant moment-order step also appears in
@@ -423,10 +426,39 @@ five and saving `1/(8192*k^2)` on the displayed rectangle. The generic
 cardinality, upper endpoint and full product budget.
 
 The general mixed-type iteration and the literature's denser packet are
-separate possible refinements. The
-[all-scale continuation](vinogradov-near-one-growth.md) now proves
-near-one zeta growth with a three-halves displacement exponent and
-explicit band-dependent height thresholds. Adaptive height coverage
-and the zero detector remain required before a new VK region is claimed.
-The proved zero-free union and independent RH signed-floor obstruction
-have not changed.
+now the reproduction priorities. `VinogradovLiteratureStep` proves the
+next-type count equality and the full two-branch differencing inequality,
+and composes them with unrestricted conditioning. `VinogradovResidueMonotone`
+now proves tail monotonicity at cost one, and `VinogradovLiteratureIteration`
+proves the finite backward induction from the diagonal base through to
+the original homogeneous moment. It retains the exact conditioning cost
+and all finite packet and endpoint hypotheses.
+`VinogradovPowerConditioning` now couples the selected prime to its literal
+quotient moment, paying the reduced exponent `e-lambda` before using the
+packet upper endpoint. `VinogradovFordScales` proves a nonpositive
+remainder for Ford's original scale recurrence under its depth restriction.
+`VinogradovFordIteration.moment_power_bound` then proves the actual original
+moment bound with the published updated defect and an explicit coefficient
+independent of the physical endpoint. `VinogradovFordCoefficient` now
+proves that full coefficient at most `k^(3k)*eta^(4s+k^2)`, deriving
+`lambda>=s` from the actual diagonal lower bound. `VinogradovFordMoment`
+transports it to the literal homogeneous moment.
+`VinogradovFordTailThreshold.published_height_bound` pays every recursive
+quotient-size condition at the original `P>=V^(k+1)` starting height.
+`VinogradovFordSchedule` constructs the backward scales using Ford's
+stationary lower bound. `VinogradovFordParameters` constructs the integer
+cutoffs and pays every remaining scale/type condition, including rounding
+at exact roots. `VinogradovFordGlobalStep.all_endpoint_bound` pays small
+endpoints with the original maximum coefficient.
+`VinogradovFordMomentSequence.iterated_moment_bound` starts at the proved
+diagonal moment and iterates at every positive integer endpoint, with no
+source moment premise. Actual dense prime supply and scalar-admissible
+rank/depth schedules remain explicit inputs; the published optimized
+schedule and closed numerical estimates still require proof. The sharper
+Bellotti 2.3 scale recurrence remains a distinct audit; see the
+[reproduction ledger](vinogradov-literature-reproduction.md).
+The
+[summed all-scale continuation](vinogradov-cubic-summation.md) already
+pays adaptive coverage and the zero detector for the weaker-constant
+region. That proved region and the independent RH signed-floor obstruction
+are unchanged by the new mixed-system interface.

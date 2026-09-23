@@ -1512,6 +1512,33 @@ and both top-ten lists unchanged. The exact ledger is
 `docs/zeta-riesz-harmonic-wing.md`. Work locally without subagents and
 amortize required gates over coherent compatible mathematical batches.
 
+### Concrete wide-owner test (2026-09-23)
+
+The requested `10001/20000` radius and `27/40`, `11/8`, `27/55`,
+`1+1/262144` completion parameters now have a checked go/no-go audit in
+`docs/zeta-riesz-wide-owner-audit.md`. `ZetaRieszWideOwnerAudit` proves the
+original completion exponent at most `-1/25000`, preserves the old
+allocation factor while assigning triples to their unique largest-prime
+owner, and proves the entire newly unallocated triple mass geometrically
+small at source scale, including every original mask and arbitrary moving
+height. `ZetaRieszWideCompanion` pays the full complementary moment and all
+saturation/prefix/diagonal corrections at rate `exp(1-N/200000)`.
+
+The terminal result is a completion obstruction, not a zero exclusion.
+`ZetaRieszWideOwnerObstruction.eventually_re_wideComplete_le` proves the
+normalized complete companion has real part at most `-m^2/40` under the
+original exposed-zero hypotheses. Adding back the old reserve still
+leaves real part at most `-m^2/5000`; nondecay is proved on the actual
+dyadic schedule. The exact difference from the owned finite carrier is
+retained in `ownerCompletionCorrection`, with no independent vanishing
+claim. Stop expanding this direct completion route after this no-go
+result. Do not discard that correction, count the old reserve twice,
+claim the owned masked companion itself has been evaluated, or weaken
+`LocalizedTypeIIBound`. This is not an impossibility theorem for future
+signed cancellation inside the correction. The public zero-free region,
+RH frontier, README and top-ten lists remain unchanged. Work locally
+without commits, pushes or subagents.
+
 ## Current theorem-push commit gate
 
 On 2026-09-05 the user explicitly changed the objective to an overnight Lean
@@ -2745,6 +2772,156 @@ premise. No world-record claim is justified. See
 `docs/vinogradov-cubic-summation.md`. Continue locally without commits,
 pushes or subagents.
 
+On 2026-09-23 the user reaffirmed the priority: directly formalize the
+published zero-free arguments and reproduce their constants and height
+domains before optimizing our variant. Follow
+`docs/vinogradov-literature-reproduction.md`; a weaker constant or a width
+comparison is not reproduction. `VinogradovLiteratureStep` proves the
+literal next-type count transport, Ford 3.3'/Bellotti 2.2 for integer
+endpoints including the diagonal case, the paper's conditioning coefficient,
+and their composition for an explicit prime packet. The `k^3` packet's
+discriminant product budget is proved from P<=M^(k+1) for natural and real
+M, but existence in the required short interval remains open.
+`VinogradovResidueMonotone` proves tail-endpoint monotonicity at cost one
+by injecting actual counts. `VinogradovLiteratureIteration` now proves
+the finite backward induction from the exact diagonal case all the way
+to the literal J_(s+k),k(P), retaining the exact conditioning exponent
+2s-d+(r-d)(r-d-1)/2. Its explicit allowance is conditional on actual
+packets, size conditions and ordinary source-moment bounds; it assumes
+no intermediate mixed estimate. The checked
+`published_scale_balance` exposes a positive residual
+d(d-1)*phi_(d+1)/(4(k-d)) for d>=2 under the current normalization.
+Do not silently cancel it or claim that it disproves the published final
+bound. The original Ford 3.4 / Bellotti 2.4 recurrence now gives a verified
+continuation: `VinogradovFordScales.scale_balance_nonpos` pays the whole
+shrinking-tuple exponent under the published depth restriction.
+`VinogradovPowerConditioning` retains p^e*floor(Q/p)^lambda before using
+the packet width, reducing its exponent to e-lambda.
+`VinogradovFordStep.backward_power_step` applies this to the actual mixed
+count, and `VinogradovFordIteration.moment_power_bound` carries the finite
+diagonal-based induction through to the literal homogeneous moment. The
+updated defect is exactly Ford's original formula; the full explicit
+coefficient recursion is independent of P,Q. Actual short packets, source
+moment bounds and the explicit minimum-tail conditions remain premises.
+`VinogradovFordCoefficient.full_coefficient_bound` now proves the complete
+coefficient at most k^(3k)*eta^(4s+k^2). It derives lambda>=s from the
+literal diagonal moment count; that reserve is not an extra arithmetic
+premise. `VinogradovFordMoment.published_moment_bound` inserts the exact
+coefficient into the homogeneous moment. `VinogradovFordTailThreshold`
+proves the recursive minimum costs only one factor 16*s^2 times all
+packet endpoints. V>=64*k^3 and eta^10<=64 pay this complete product at
+the stated P>=V^(k+1), using the original j<=9*r/10 depth restriction.
+`published_height_bound` therefore removes the separate tail-size and
+repeated-tuple threshold premises. `VinogradovFordSchedule` now constructs
+the backward scales and pays both bounds using Ford 3.5's stationary
+phi-star criterion. `VinogradovFordParameters.moment_bound_of_packets`
+constructs floor cutoffs and proves all remaining degree, product-budget,
+root and strict terminal diagonal conditions, retaining exact-root cases.
+`VinogradovFordGlobalStep.all_endpoint_bound` also covers small endpoints
+with the published maximum coefficient; defect decrease is proved.
+`VinogradovFordMomentSequence.iterated_moment_bound` repeats the original
+recurrence from the proved diagonal moment at all positive endpoints,
+with no source or intermediate moment estimate left as a premise.
+`ShortPrimeSupply` is an explicit UNPROVED arithmetic hypothesis: exactly
+k^3 primes in every (M,(1+omega)M] for real M>=V. Scalar restrictions on
+rank/depth schedules are also still explicit. Next prove dense prime
+supply, construct the optimized rank/maximal-depth schedule and bound its
+actual coefficient and defect. Do not list scale/cutoff admissibility,
+numerical one-step coefficient, recursive quotient sizes or all-endpoint
+moment induction as still open. Do not claim Ford's closed quantitative
+bound or a zeta region from the conditional sequence alone.
+The sharper Bellotti 2.3 recurrence remains under audit. Then finish the
+numerical complete/incomplete moments and block bound.
+Do not replace these by the diagonal iteration or silently use (M,8M]
+with the paper's constants. Retain the wrapped Gaussian estimates as
+auxiliary work; defer further optimization and zero-detector transport
+until the literature chain is reproduced. No published zeta-region benchmark,
+new zero-free endpoint, or RH arithmetic floor follows from this slice.
+
+The user's "no shortcuts" instruction applies to this reproduction: keep
+the full published omega range, constants and height domains. Do not
+substitute omega=1/2, a wider packet, a qualitative PNT threshold, or an
+assumed prime-count bound. `RosserSchoenfeldAnchor` checks the complete
+230-prime list through 1451, 1360<theta(1451)<1410 and the needed logarithm
+anchors. `RosserSchoenfeldBounds` proves the three actual J-comparisons
+from section 7, including the negative-0.47 lower comparison from 1451.
+`RosserSchoenfeldZeroFree.published_zero_edge` proves the paper's exact
+Theorem 26 constant and height from our stronger signed-pole theorem.
+This is a discharged dependency, not a new region. `RosserSchoenfeldError`
+checks the final numerical epsilon comparison for x>=exp(5000); its
+actual theta-error premise is NOT proved. `VinogradovRosserPrimeSupply`
+transports the explicit prime-count bounds to the unchanged
+`ShortPrimeSupply` throughout 1/(3 log k)<=omega<=1/2 for k>=26.
+That theorem is CONDITIONAL on the two actual prime-count estimates.
+The detailed analytic and finite-verification dependencies are in
+`docs/rosser-schoenfeld-reproduction.md`. The first 25000 low zeros have
+not been verified in Lean here; the 67.31% proportion certificate supplies
+no such premise. The zero-sum/Chebyshev estimates and finite prime-table
+ranges remain open as stated there.
+
+`ZetaEulerMaclaurin.zeta_eq` now gives the arbitrary-order actual zeta
+expansion with the literal signed Bernoulli tail. `norm_error_le` pays
+that full tail by an explicit finite coefficient allowance.
+`ZetaEulerMaclaurinBudget.uniform_error` proves error <10^(-12) for
+the evaluator `approximation 22020 s 18` on 1/2<=Re(s)<=1 and
+abs(Im(s))<=22000, with s!=1. `rosser_height_lt` proves exp(9.99)<22000.
+All Bernoulli arithmetic is checked in the kernel. The generalized
+`uniform_error_of_norm` allows shorter prefixes when norm(s)+20<=N+1,
+with N<=22020. `CertifiedComplexInterval` provides checked complex
+rectangle arithmetic and phase reduction using proved twenty-decimal pi
+bounds. `ZetaEulerMaclaurinEnclosure.mem_evaluate` encloses the complete
+finite expression, scaling each rising factor before multiplication.
+The exact Bernoulli coefficient cache is proved from the recurrence;
+neither floating point nor native evaluation supplies a proof.
+`ZetaEulerMaclaurinCertificate.nonzero_of_check` combines the numerical
+check with the proved analytic error and checks all geometry and pole
+conditions. `ZetaEulerMaclaurinValidation.height_fourteen_rectangle`
+actually discharges the computation for
+1/2<=Re(s)<=50001/100000 and 14<=Im(s)<=1400001/100000.
+This is one small validation rectangle, NOT a complete low-zero
+verification or a new published zero-free benchmark.
+`ZetaLowZeroIsolation.isolated_critical_zero` now proves an actual unique
+simple zero in the closed radius-10^(-5) disc centered at
+1/2+(14134725141735/10^12)*I. Its real part is exactly 1/2, by the
+proved reflection symmetry and uniqueness. `zero_distance_lt` places
+every zero in this disc strictly within 1/50000000 of the center;
+`nonzero_on_sphere` excludes zeros on the entire outer circle.
+The two literal complex value inequalities in `ZetaLowZeroSamples` are
+discharged by kernel computation, not assumed decimal data. They pay the
+analytic and rounding errors. The independent Cauchy bounds are |zeta|<=32
+and |zeta''|<=4096; the two-value derivative bound and Banach contraction
+are proved in `AnalyticNewtonIsolation`. The resulting derivative is nonzero
+and the analytic order is one. This disc theorem isolates ONE zero;
+`ZetaFirstZeroCompleteness`, described below, now identifies it as the
+first positive zero by a complete count through height 15. The complete
+list through the published height remains open. Existence of many isolated
+zeros alone does not prove completeness. The Rosser--Schoenfeld prime-count estimates remain
+open. Do not replace the full height requirement by this local certificate.
+
+`DigammaMidpointApproximation.norm_digamma_sub_log_midpoint_le` now
+proves |psi(z)-log(z-1/2)|<=1/(2*(Re(z)-1/2)^2) for Re(z)>=3/2,
+uniformly in height, directly from the actual Euler digamma limit.
+`GammaPhaseApproximation` integrates this signed midpoint error and
+retains every arctangent in the exact finite Gamma shift. With shift 200,
+`theta_error_lt_one_seventh` proves a strict 1/7-radian error for the
+actual unwrapped theta phase at every abs(T)<=22000. Its finite formula
+uses only real logs and arctangents; no Stirling-error premise is assumed.
+`GammaContinuousPhase.Gamma_eq_amplitude_mul_phase` proves the exact
+positive-amplitude factorization of actual Gamma with this phase.
+`ZetaHardyPhase` then proves actual Hardy Z real and continuous. The
+finite-phase rotation is exactly Hardy Z times the cosine of the phase
+error; `cosine_error_gt` proves that cosine exceeds 97/98 across the
+whole required range. Checked opposite signs therefore imply actual
+critical-line zeros without a numerical derivative premise. The signs
+themselves have NOT been checked for the complete low-zero list.
+Do not treat this phase-error bound or the sign-change theorem as a total
+zero count. The existing `GaussianXiDivisorContour` already has the exact
+complete finite-divisor rectangle formula, including multiplicities.
+Use it to establish and certify the total count; do not rebuild the same
+contour identity. No full 25000-zero verification, prime-count bounds or
+published VK region follows yet. Keep these as supporting completion
+and foundational theorems, with the existing proved region as default.
+
 The current fixed-width packet is not a proof of a packet in (M,2M]. The
 general mixed-type iteration remains a separate possible refinement;
 choose a fresh eligible prime for each new type parameter, as the previous
@@ -2752,6 +2929,175 @@ prime generally divides T'. Keep the exact diagonal branch when P<p^r.
 The growing-height rectangle does not discharge the fixed-height harmonic
 Type-II premise. The independent signed floor and RH remain open. Continue locally
 without commits, pushes or subagents.
+
+`ZetaFiniteZeroCount` and `ZetaZeroCountFormula` now specialize the existing
+complete divisor contour, retaining the factor two for both signs of the
+ordinate and every analytic multiplicity. The actual pole contribution is
+pi, and the Gamma path equals theta exactly. The finite shift-200 count
+approximation has error strictly below 1/10 for 0<T<=22000, with the entire
+actual zeta phase retained. `ZetaRightPhase.zeta_re_pos` proves positivity
+on Re(s)=3/2 at every height from the complete logarithmic Euler series.
+`ZetaCountingEndpoint` proves that positive real part on the horizontal
+segment gives both complete boundary regularity and the actual endpoint
+argument, with no untracked winding. Its general numerical premises are
+NOT discharged at every height.
+
+They ARE discharged at T=15. `CertifiedArctan` checks rational brackets by
+sine/cosine signs with tangent branch conditions. `GammaThetaFifteen`
+proves -3/2<theta(15)<0 after paying the actual Gamma error.
+`ZetaHeightFifteen` checks fourteen adjacent closed rectangles covering
+1/2<=Re(s)<=3/2 at height 15, plus the endpoint's positive imaginary part.
+Every check uses `decide +kernel` and the full Euler--Maclaurin error.
+`ZetaFirstZeroCompleteness.count_fifteen` proves the complete symmetric
+multiplicity count is 2. `complete_first_pair` identifies the entire
+window with the independently isolated simple critical-line zero and its
+conjugate. `critical_line_through_fifteen` proves every nontrivial zero
+with abs(Im(rho))<=15 has Re(rho)=1/2; `no_zero_through_fourteen` proves
+14<abs(Im(rho)) for every nontrivial zero. The general finite-set matching
+criterion is in `ZetaZeroCountCompleteness`. This is the first COMPLETE
+validation window, not the required full 25000-zero verification or a
+world-record region. Preserve the current default region and RH frontier.
+Next extend the verified list and complete count to the published height;
+address the direct evaluator's kernel cost before launching thousands of
+samples. Rosser--Schoenfeld prime-count bounds, Ford's actual prime supply,
+optimized schedules and the published VK region remain open. Continue
+locally without commits, pushes or subagents.
+
+`ZetaThreeZeroCompleteness` extends the complete finite verification to
+height 26: `count_twentySix` proves the full symmetric multiplicity count
+is six, and `critical_line_through_twentySix` proves every nontrivial zero
+with abs(Im(rho))<=26 has Re(rho)=1/2. `nonzero_through_twentySix` gives
+actual off-line zeta nonvanishing for Re(s)>0, with the pole excluded.
+`ZetaHardySamples` checks actual signs -, +, -, + at 14,15,22,26 using
+`decide +kernel`; `ZetaHardyWindowCompleteness` proves the general ordered
+window/conjugate matching theorem. Eight closed horizontal cells, a checked
+endpoint sign, and the unwrapped theta bound in `GammaThetaTwentySix`
+independently discharge the count. No assumed numerical zero table is used.
+`ZetaHardyProduct` replaces the 200 phase angles by one phase and an exact
+rational product. Its positive coordinate normalization has norm at most
+one and preserves actual Hardy signs for abs(T)<=22000.
+`ZetaHardyProductCertificate` checks all analytic and numerical conditions.
+Use the product rotation for signs; keep the unwrapped phase for counting.
+The native high-height probes in the Rosser ledger are performance tests,
+NOT certificates. The direct prefix is still too expensive for a naive
+25000-zero run. The next scaling candidate is a fully proved Riemann--Siegel
+formula with an explicit remainder, feeding the existing sign/count chain;
+Hiary's elementary block accelerator (Theorem 1.1, Lemma 3.3 of
+arXiv:1403.0317) is a second candidate that could retain the existing
+Euler--Maclaurin correction and budget. Compare cost and conditioning before
+choosing. The block accelerator is now formalized as detailed below;
+Riemann--Siegel is not. An asymptotic big-O statement
+is not an evaluated error bound. Full low-zero
+verification, Rosser--Schoenfeld prime estimates, Ford's actual supply and
+the published VK region remain open. Preserve the public default region
+and RH frontier. Continue locally without commits, pushes or subagents.
+
+`ZetaBlockTaylor` now proves the shared degree-eighteen block polynomial's
+actual error at most 1/25000000000000, for Re(s)>=0, norm(s)<=22500 and
+normalized x in [0,1]. Its finite differential residual leaves only two
+coefficients; their positive rational majorant is kernel-checked. No
+unproved Taylor or Cauchy remainder is assumed. `ZetaBlockApproximation`
+transfers this to every original Dirichlet term and consecutive valid
+partition. Keeping the entire Euler--Maclaurin correction gives
+`zeta_error_lt`: total error <1/1000000000 on 1/2<=Re(s)<=3/2,
+abs(Im(s))<=22000, s!=1, at the unchanged cutoff 22020.
+`ZetaBlockMoments` proves the exact finite geometric-moment recurrence,
+including its denominator-free resonant form. `ZetaBlockEnclosure` uses
+materialized coefficient/moment arrays, repeated squaring, and a direct
+Horner fallback for short or poorly conditioned blocks. Do not replace the
+moment array by a function-valued recurrence: compiler eta expansion
+recomputes lower moments exponentially. `ZetaBlockCertificate` checks the
+actual partition, analytic domain and full error; `nonzero_of_check` gives
+actual zeta nonvanishing from a successful kernel check.
+`ZetaBlockHardyCertificate.hardy_sign_of_check` feeds the same sound evaluator
+into the existing bounded Gamma rotation and complete sign-window chain.
+`ZetaBlockValidation` kernel-checks two original high-height finite block
+sums, including the polynomial error. These do NOT verify new zeros or
+extend the complete height-26 window. The optional
+`scripts/ProbeZetaBlocks.lean` took about 23 seconds natively at height 22000
+(1167 blocks, degree 18), versus about 87 seconds for direct summation.
+Its native output is exploratory data, not a kernel certificate. This
+modest speedup alone does not establish feasibility of the complete
+25000-zero calculation. Full low-zero verification and all pending
+published prime estimates remain open. Keep the public default zero-free
+and RH endpoints; continue locally without commits, pushes or subagents.
+
+`ZetaBlockShift` proves a degree-twelve correction for purely imaginary
+height shifts of norm at most 64: error <=1/80000000000000000 on the
+normalized block. Its finite ODE residual leaves one coefficient, paid
+by a checked rational majorant. `ZetaBlockBatch` combines this with the
+center polynomial, with error <=801/20000000000000000 per term and
+total zeta error <1e-9 after the unchanged analytic correction. Its exact
+amplitude formula uses 31 center moments and 13 shift amplitudes.
+`ZetaBlockBatchEnclosure`, `ZetaBlockBatchPacket` and
+`ZetaBlockBatchPrefix` certify the materialized cache and exact early
+terms. `phaseAt` resets each eighth phase using repeated squaring;
+naively threading rectangular phase products across hundreds of samples
+causes catastrophic interval wrapping. Preserve the proved phase law and
+every rounding error. `ZetaBlockBatchCertificate` checks actual sample
+geometry and radius, and `ZetaBlockBatchHardy.hardy_sign_of_check`
+feeds the sound cache into actual Hardy signs. Preparation soundness must
+be discharged and reused, never replaced by unverified cached data.
+The optional `scripts/ProbeZetaBatch.lean` is a native timing probe, not
+a kernel certificate; do not run the full intended zero list in ordinary
+CI. The phase-reset prototype's 257 samples took about 426 seconds
+including preparation; the proved pure implementation took about 641
+seconds (58 preparation, 584 sample evaluation). The difference includes
+recomputing short phase chains instead of threading their state.
+These are not measured kernel costs. `ZetaBlockCacheCheck` independently
+checks supplied early-term rectangles and proves actual prefix soundness.
+Never use unverified numerical data as a replacement for that check.
+Its `prefixCheck_cons` assembles independently checked entries into the
+unchanged full-length checker. A 40-entry kernel probe took 385 seconds
+as one reduction versus 43 seconds with separate entry proofs. Use this
+proof-sharing pattern when scaling; executable timings alone do not
+predict kernel replay. Changing the recursion to `Nat.rec` alone did not
+resolve the measured cost and its probe was interrupted.
+`ZetaBlockBatchValidation` now kernel-checks the direct 20-term block at
+21836 and compressed 32-term blocks at 21836,21840,21964, with original
+finite-sum conclusions and paid polynomial errors. Its full cached sample
+proves zeta(1/2+18i)!=0, including the analytic tail and phase reset.
+All 40 cache entries are checked independently. Small-height precision
+-32/depth 12 and high-block precision -48/depth 24 are distinct settings.
+The module build fell from 512 to 84 seconds after splitting entry proofs;
+the 85-second direct check used about 7 GiB peak RSS. Asynchronous profiler
+spans include waiting behind other kernel checks. The apparent 80-second
+final-sample span was not an isolated cost: separate linear and balanced
+sample checks both took about 7.8 seconds. The balanced variant was not
+adopted. This is not yet a measured scalable complete-list verifier.
+Height 18 lies inside the existing complete window. The complete finite
+verification now reaches height 54, as described below; actual prime-count
+estimates and the published VK region remain open. Further scaling work must measure
+certificate costs, retain completeness and pay all analytic errors.
+Keep the public default region and RH frontier, and work locally without
+commits, pushes or subagents.
+
+`ZetaElevenZeroCompleteness.count_fiftyFour` now proves the complete symmetric
+multiplicity count is 22. `critical_line_through_fiftyFour` proves all
+nontrivial zeros with abs(Im(rho))<=54 have real part one half;
+`nonzero_through_fiftyFour` gives actual off-line nonvanishing on Re(s)>0,
+excluding the pole. `ZetaHardyBatchData` independently kernel-checks eighty
+cached terms and increments, with center 34 and a unit lattice starting at
+14. `ZetaHardySamplesFiftyFour` checks eight further signs; the twelve
+heights 14,15,22,26,31,34,38,42,44,49,51,54 alternate negative/positive.
+`GammaThetaFiftyFour` proves 30<theta(54)<31. Four complete closed horizontal
+cells and the endpoint imaginary sign independently discharge the count.
+No numerical zero list or simplicity premise is assumed.
+The contour's 400 one-term checkpoints are literal equalities to the
+original evaluator, not approximate substitutes or unchecked data. The
+first cell took 74 seconds versus 152 with ten-term checkpoints; all five
+checks passed in 344 seconds. The combined module used about 17 GiB, so
+keep its cells in separate `ZetaHeightFiftyFour.Cell0` through `Cell4`
+modules: each checked in 77–79 seconds with peak RSS below 6.7 GiB.
+Do not restore a single large
+certificate file without a measured memory budget. The optional
+`scripts/GenerateZetaHeightFiftyFour.lean` regenerates the candidate numeric
+blocks; every emitted equality and final check still requires kernel replay.
+This is a complete finite-height result through 54, not the full published
+low-zero input near 22000, a published VK reproduction or a world record.
+The actual prime estimates, full optimized moments and original published
+region constants/heights remain open. Preserve the public default region
+and RH frontier; continue locally without commits, pushes or subagents.
 
 Work in one coherent slice at a time. A slice should close a real lemma or
 interface needed by the current RH frontier, not merely add parallel

@@ -2,28 +2,28 @@
 
 # Theorem-family index
 
-Browse all **2,263 Lean source modules** by mathematical family. Every listed module is reachable from a declared build target. Modules marked **optional certificate build** require `lake build NumericalCertificate --wfail`; ordinary builds exclude them.
+Browse all **2,350 Lean source modules** by mathematical family. Every listed module is reachable from a declared build target. Modules marked **optional certificate build** require `lake build NumericalCertificate --wfail`; ordinary builds exclude them.
 
 The family names, colours and assignments share the explorer's [evergreen metadata](../theorem-explorer/metadata.json). [Open the interactive proof chain](https://dbsanfte.github.io/RiemannGaussian/) for theorem statements, dependency paths and axiom audits.
 
 | Theorem family | Modules | Contents |
 | --- | ---: | --- |
-| [Zeta & xi geometry](foundations.md) | 88 | Actual zeros, canonical products, reflection and analytic multiplicity. |
+| [Zeta & xi geometry](foundations.md) | 105 | Actual zeros, canonical products, reflection and analytic multiplicity. |
 | [Suzuki machinery](suzuki.md) | 359 | Suzuki screw functions, Landau compensation, transport, signed currents and contour identities. |
 | [Eta & reflection](eta.md) | 388 | Paired eta identities, continuation and exact reflected tails. |
 | [Gaussian heat](heat.md) | 119 | Gaussian transforms, smoothed zero sources, exact prime identities and retained remainders. |
 | [Phase positivity](phase.md) | 93 | Coupled phase kernels, contact factorization and the mathematically defined admissible family. |
-| [Oscillatory sums](oscillation.md) | 215 | Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates. |
-| [Euler & prime structure](euler.md) | 34 | Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prime expansions. |
-| [Signed strip geometry](strip.md) | 72 | Complex analytic estimates, disc-to-strip maps, complete divisors and signed boundary identities. |
-| [Gamma & completion](completion.md) | 18 | Archimedean corrections, digamma/trigamma estimates and exact pole cancellation. |
+| [Oscillatory sums](oscillation.md) | 232 | Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates. |
+| [Euler & prime structure](euler.md) | 42 | Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prime expansions. |
+| [Signed strip geometry](strip.md) | 73 | Complex analytic estimates, disc-to-strip maps, complete divisors and signed boundary identities. |
+| [Gamma & completion](completion.md) | 23 | Archimedean corrections, digamma/trigamma estimates and exact pole cancellation. |
 | [Order & height limits](asymptotic.md) | 21 | Joint derivative-order schedules and the eventual logarithmic zero-free component. |
-| [Zero-free conclusion](region.md) | 26 | The complete budget, actual zero contradiction and its exact height scope. |
+| [Zero-free conclusion](region.md) | 27 | The complete budget, actual zero contradiction and its exact height scope. |
 | [Finite kernels & Hardy models](finite.md) | 98 | Finite root geometry, Hardy and Pick kernels, spectral energy and passage to entire functions. |
 | [Hybrid matrices & phase colour](hybrid.md) | 65 | Continuous and finite eta representations, signed Gram matrices, heat operators and rank–trace tools. Source files retain attribution for adapted results. |
-| [Squarefree & Möbius arithmetic](arithmetic.md) | 346 | Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem. |
+| [Squarefree & Möbius arithmetic](arithmetic.md) | 354 | Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem. |
 | [Hilbert inequalities & sampling](hilbert.md) | 12 | The attributed Montgomery–Vaughan Hilbert inequality and finite algebraic and inverse-sampling tools. |
 | [Zero-proportion interfaces](certificates.md) | 22 | Attributed Zeta23 baselines and project extensions. Individual sources distinguish external results from new deductions. |
-| [Certified numerical bounds](numerics.md) | 287 | Exact interval bounds, phase tables, coupled affine supports and finite-cover verifiers. Candidate certificate obligations remain explicit. |
+| [Certified numerical bounds](numerics.md) | 317 | Exact interval bounds, phase tables, coupled affine supports and finite-cover verifiers. Candidate certificate obligations remain explicit. |
 
 The ordinary root is [RiemannGaussian.lean](../../RiemannGaussian.lean); the opt-in root is [NumericalCertificate.lean](../../NumericalCertificate.lean). See [certificate status and verification](../numerical-certificate.md). External dependency sources, licenses and provenance are kept under [vendor/zeta23](../../vendor/zeta23/); Lean and mathlib are external boundary nodes in the explorer, rather than project source modules.

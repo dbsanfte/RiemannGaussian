@@ -16,17 +16,17 @@
       "changeReason": "The strict Type-II go/no-go test proves the numerical reduction but identifies an unproved parity-sensitive estimate; current sieve rates and the fixed-height VMVT mismatch do not discharge it. Stop expanding this route until new arithmetic input is found."
     },
     "latestUpdate": {
-      "sequence": 57,
-      "id": "summed-vk-region-and-renewal-audit",
+      "sequence": 58,
+      "id": "height54-and-wide-owner-obstruction",
       "kind": "theorem",
-      "title": "Complete VK region proved; boundary renewal does not yet improve the signed floor.",
-      "body": "The accumulated Vinogradov moment, block and zero-detector proofs now yield an unconditional eventual VK family with C<3*pi/10640, including 1/1150. Its finite starting height is unevaluated. Separately, the exact reflected-large boundary split and least-prime renewal preserve the literal pair weights, but give no new power saving or independent -3/40 floor.",
-      "next": "The harmonic route still needs a signed arithmetic estimate. Its Type-II target and source frontier are unchanged; published zero-free benchmark constants also remain open.",
+      "title": "Zeros through height 54 certified; wide-owner completion restores a source.",
+      "body": "All nontrivial zeros through height 54 are proved to lie on the critical line, with a complete multiplicity count of 22. Literature groundwork now includes finite prime anchors, interval evaluators and Ford iteration. The wider unique-owner allocation gives geometric decay of the unallocated triple mass, but its unmasked complete companion remains nondecaying under the exposed-zero hypotheses, even after adding the existing reserve.",
+      "next": "The owner/mask correction still needs an independent signed estimate. No new exclusion follows from this detour; published benchmark constants and the original Type-II target remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "vkZeroFreeTheorem"
+        "rieszWideOwnerReserveTheorem"
       ],
-      "documentation": "docs/zeta-riesz-boundary-renewal-audit.md"
+      "documentation": "docs/zeta-riesz-wide-owner-audit.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -3237,6 +3237,49 @@
         "rieszRenewalScope"
       ],
       "documentation": "docs/zeta-riesz-boundary-renewal-audit.md"
+    },
+    {
+      "id": "harmonic-wide-owner",
+      "label": "Wide-owner allocation · completion obstruction",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideOwnerCompletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideOwnerAllocationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideOwnerTailTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideOwnerProductTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideOwnerJointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideOwnerCarrierTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideOwnerSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideOwnerReserveTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszWideOwnerScope"
+      ],
+      "documentation": "docs/zeta-riesz-wide-owner-audit.md"
     }
   ],
   "scopes": {
@@ -7706,6 +7749,72 @@
       "label": "Kernel alone gives no strict contraction below the saddle",
       "overview": true,
       "documentation": "docs/zeta-riesz-boundary-renewal-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszWideOwnerAudit.completion_rate": {
+      "label": "Concrete completion exponent at most -1/25000",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-owner-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszWideOwnerAudit.ownerAtom_eq_share": {
+      "label": "Exact unique-owner allocation with old multiplier",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-owner-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszWideOwnerAudit.owner_mem_intermediate": {
+      "label": "Canonical owner lies in the actual prime family",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-owner-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszWideOwnerAudit.ownerCompanion_eq_fibres": {
+      "label": "Literal owned companion grouped by prime fibres",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-owner-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszWideOwnerAudit.unallocatedTriples_bound": {
+      "label": "Geometric bound for the actual unallocated triples",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-owner-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszWideOwnerAudit.wide_product_scalar": {
+      "label": "Full complementary product retains geometric decay",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-owner-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszWideOwnerAudit.exists_wide_completion_bound": {
+      "label": "All completion repairs paid at exp(1-N/200000)",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-owner-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszWideOwnerAudit.eventually_re_wide_atom": {
+      "label": "Wider tapered products restore a positive source",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-owner-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszWideOwnerAudit.narrow_completed_decomposition": {
+      "label": "Actual carrier retains the owner completion correction",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-owner-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszWideOwnerAudit.eventually_re_wideComplete_le": {
+      "label": "Complete companion has normalized real part at most -m²/40",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-owner-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszWideOwnerAudit.eventually_re_wideComplete_add_reserve_le": {
+      "label": "Returning the old reserve still leaves a negative source",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-owner-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszWideOwnerAudit.not_tendsto_wideComplete_add_reserve": {
+      "label": "No-go: complete companion plus reserve does not decay",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-owner-audit.md"
     }
+  },
+  "moduleFamilies": {
+    "ZetaRieszWideOwnerAudit": "arithmetic",
+    "ZetaRieszWideCompanion": "arithmetic",
+    "ZetaRieszWidePhase": "arithmetic",
+    "ZetaRieszWideOwnerObstruction": "arithmetic"
   }
 }

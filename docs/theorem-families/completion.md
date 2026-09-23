@@ -6,11 +6,15 @@
 
 Archimedean corrections, digamma/trigamma estimates and exact pole cancellation.
 
-**18 modules.** Source links open the definitions, hypotheses and proofs.
+**23 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [DigammaHalfPlaneBound](../../RiemannGaussian/DigammaHalfPlaneBound.lean)
 - [DigammaLogarithmicBound](../../RiemannGaussian/DigammaLogarithmicBound.lean)
+- [DigammaMidpointApproximation](../../RiemannGaussian/DigammaMidpointApproximation.lean)
+- [GammaContinuousPhase](../../RiemannGaussian/GammaContinuousPhase.lean)
+- [GammaCountingPhase](../../RiemannGaussian/GammaCountingPhase.lean)
 - [GammaMomentRecovery](../../RiemannGaussian/GammaMomentRecovery.lean)
+- [GammaPhaseApproximation](../../RiemannGaussian/GammaPhaseApproximation.lean)
 - [GammaWindowRecovery](../../RiemannGaussian/GammaWindowRecovery.lean)
 - [GaussianArchimedeanContour](../../RiemannGaussian/GaussianArchimedeanContour.lean)
 - [GaussianCompletedLogDerivative](../../RiemannGaussian/GaussianCompletedLogDerivative.lean)
@@ -22,6 +26,7 @@ Archimedean corrections, digamma/trigamma estimates and exact pole cancellation.
 - [ZetaCompletionReserve](../../RiemannGaussian/ZetaCompletionReserve.lean)
 - [ZetaCompletionReserveZeroFree](../../RiemannGaussian/ZetaCompletionReserveZeroFree.lean)
 - [ZetaCompletionSupportBudget](../../RiemannGaussian/ZetaCompletionSupportBudget.lean)
+- [ZetaCountingPoles](../../RiemannGaussian/ZetaCountingPoles.lean)
 - [ZetaGaussianCompletionAverage](../../RiemannGaussian/ZetaGaussianCompletionAverage.lean)
 - [ZetaGaussianNearCancellation](../../RiemannGaussian/ZetaGaussianNearCancellation.lean)
 - [ZetaLogarithmicShiftAllowance](../../RiemannGaussian/ZetaLogarithmicShiftAllowance.lean)

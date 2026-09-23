@@ -6,7 +6,7 @@
 
 Exact interval bounds, phase tables, coupled affine supports and finite-cover verifiers. Candidate certificate obligations remain explicit.
 
-**287 modules.** Source links open the definitions, hypotheses and proofs.
+**317 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [CertificateData.MontgomeryTaylorAnchors](../../RiemannGaussian/CertificateData/MontgomeryTaylorAnchors.lean) — optional certificate build
 - [CertificateData.MontgomeryTaylorAnchors00](../../RiemannGaussian/CertificateData/MontgomeryTaylorAnchors00.lean) — optional certificate build
@@ -261,7 +261,9 @@ Exact interval bounds, phase tables, coupled affine supports and finite-cover ve
 - [CertificateData.MontgomeryTaylorRangeCells05](../../RiemannGaussian/CertificateData/MontgomeryTaylorRangeCells05.lean) — optional certificate build
 - [CertificateData.MontgomeryTaylorRangeCells06](../../RiemannGaussian/CertificateData/MontgomeryTaylorRangeCells06.lean) — optional certificate build
 - [CertificateData.MontgomeryTaylorRangeCells07](../../RiemannGaussian/CertificateData/MontgomeryTaylorRangeCells07.lean) — optional certificate build
+- [CertifiedArctan](../../RiemannGaussian/CertifiedArctan.lean)
 - [CertifiedBoxCover](../../RiemannGaussian/CertifiedBoxCover.lean)
+- [CertifiedComplexInterval](../../RiemannGaussian/CertifiedComplexInterval.lean)
 - [CertifiedIntegerQuadraticForm](../../RiemannGaussian/CertifiedIntegerQuadraticForm.lean)
 - [CertifiedIntegerRangeTree](../../RiemannGaussian/CertifiedIntegerRangeTree.lean)
 - [CertifiedIntervalProgram](../../RiemannGaussian/CertifiedIntervalProgram.lean)
@@ -272,6 +274,9 @@ Exact interval bounds, phase tables, coupled affine supports and finite-cover ve
 - [CorrelationConvexEnclosure](../../RiemannGaussian/CorrelationConvexEnclosure.lean)
 - [CorrelationLinearEnclosure](../../RiemannGaussian/CorrelationLinearEnclosure.lean)
 - [CorrelationQuadraticEnclosure](../../RiemannGaussian/CorrelationQuadraticEnclosure.lean)
+- [GammaThetaFifteen](../../RiemannGaussian/GammaThetaFifteen.lean)
+- [GammaThetaFiftyFour](../../RiemannGaussian/GammaThetaFiftyFour.lean)
+- [GammaThetaTwentySix](../../RiemannGaussian/GammaThetaTwentySix.lean)
 - [MontgomeryTaylorAdaptiveCell](../../RiemannGaussian/MontgomeryTaylorAdaptiveCell.lean)
 - [MontgomeryTaylorAdaptivePhase](../../RiemannGaussian/MontgomeryTaylorAdaptivePhase.lean)
 - [MontgomeryTaylorAnchorBounds](../../RiemannGaussian/MontgomeryTaylorAnchorBounds.lean) — optional certificate build
@@ -295,3 +300,28 @@ Exact interval bounds, phase tables, coupled affine supports and finite-cover ve
 - [MontgomeryTaylorSevenWindowParameters](../../RiemannGaussian/MontgomeryTaylorSevenWindowParameters.lean)
 - [TrigonometricLinearEnclosure](../../RiemannGaussian/TrigonometricLinearEnclosure.lean)
 - [UniformBlockIndex](../../RiemannGaussian/UniformBlockIndex.lean)
+- [ZetaBlockBatchCertificate](../../RiemannGaussian/ZetaBlockBatchCertificate.lean)
+- [ZetaBlockBatchEnclosure](../../RiemannGaussian/ZetaBlockBatchEnclosure.lean)
+- [ZetaBlockBatchHardy](../../RiemannGaussian/ZetaBlockBatchHardy.lean)
+- [ZetaBlockBatchPacket](../../RiemannGaussian/ZetaBlockBatchPacket.lean)
+- [ZetaBlockBatchPrefix](../../RiemannGaussian/ZetaBlockBatchPrefix.lean)
+- [ZetaBlockBatchValidation](../../RiemannGaussian/ZetaBlockBatchValidation.lean)
+- [ZetaBlockCacheCheck](../../RiemannGaussian/ZetaBlockCacheCheck.lean)
+- [ZetaBlockCertificate](../../RiemannGaussian/ZetaBlockCertificate.lean)
+- [ZetaBlockEnclosure](../../RiemannGaussian/ZetaBlockEnclosure.lean)
+- [ZetaBlockHardyCertificate](../../RiemannGaussian/ZetaBlockHardyCertificate.lean)
+- [ZetaBlockValidation](../../RiemannGaussian/ZetaBlockValidation.lean)
+- [ZetaHardyBatchData](../../RiemannGaussian/ZetaHardyBatchData.lean)
+- [ZetaHardyProductCertificate](../../RiemannGaussian/ZetaHardyProductCertificate.lean)
+- [ZetaHardySamples](../../RiemannGaussian/ZetaHardySamples.lean)
+- [ZetaHardySamplesFiftyFour](../../RiemannGaussian/ZetaHardySamplesFiftyFour.lean)
+- [ZetaHeightFifteen](../../RiemannGaussian/ZetaHeightFifteen.lean)
+- [ZetaHeightFiftyFour.Cell0](../../RiemannGaussian/ZetaHeightFiftyFour/Cell0.lean)
+- [ZetaHeightFiftyFour.Cell1](../../RiemannGaussian/ZetaHeightFiftyFour/Cell1.lean)
+- [ZetaHeightFiftyFour.Cell2](../../RiemannGaussian/ZetaHeightFiftyFour/Cell2.lean)
+- [ZetaHeightFiftyFour.Cell3](../../RiemannGaussian/ZetaHeightFiftyFour/Cell3.lean)
+- [ZetaHeightFiftyFour.Cell4](../../RiemannGaussian/ZetaHeightFiftyFour/Cell4.lean)
+- [ZetaHeightFiftyFour](../../RiemannGaussian/ZetaHeightFiftyFour.lean)
+- [ZetaHeightTwentySix](../../RiemannGaussian/ZetaHeightTwentySix.lean)
+- [ZetaHorizontalCertificate](../../RiemannGaussian/ZetaHorizontalCertificate.lean)
+- [ZetaLowZeroSamples](../../RiemannGaussian/ZetaLowZeroSamples.lean)

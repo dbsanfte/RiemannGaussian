@@ -6,7 +6,7 @@
 
 Complex analytic estimates, disc-to-strip maps, complete divisors and signed boundary identities.
 
-**72 modules.** Source links open the definitions, hypotheses and proofs.
+**73 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDiscBoundaryMoment](../../RiemannGaussian/AnalyticDiscBoundaryMoment.lean)
 - [AnalyticDiscBoundarySequence](../../RiemannGaussian/AnalyticDiscBoundarySequence.lean)
@@ -20,6 +20,7 @@ Complex analytic estimates, disc-to-strip maps, complete divisors and signed bou
 - [AnalyticHalfDiscMinimum](../../RiemannGaussian/AnalyticHalfDiscMinimum.lean)
 - [AnalyticHalfPlaneDerivative](../../RiemannGaussian/AnalyticHalfPlaneDerivative.lean)
 - [AnalyticHorizontalBoundary](../../RiemannGaussian/AnalyticHorizontalBoundary.lean)
+- [AnalyticNewtonIsolation](../../RiemannGaussian/AnalyticNewtonIsolation.lean)
 - [AnalyticStripBoundary](../../RiemannGaussian/AnalyticStripBoundary.lean)
 - [AnalyticStripBoundaryIntegral](../../RiemannGaussian/AnalyticStripBoundaryIntegral.lean)
 - [AnalyticStripDisc](../../RiemannGaussian/AnalyticStripDisc.lean)

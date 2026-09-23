@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**346 modules.** Source links open the definitions, hypotheses and proofs.
+**354 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -50,6 +50,10 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [PrimeNewtonMoments](../../RiemannGaussian/PrimeNewtonMoments.lean)
 - [PrimeNewtonThree](../../RiemannGaussian/PrimeNewtonThree.lean)
 - [RieszHarmonicCostBounds](../../RiemannGaussian/RieszHarmonicCostBounds.lean)
+- [RosserSchoenfeldAnchor](../../RiemannGaussian/RosserSchoenfeldAnchor.lean)
+- [RosserSchoenfeldBounds](../../RiemannGaussian/RosserSchoenfeldBounds.lean)
+- [RosserSchoenfeldComparison](../../RiemannGaussian/RosserSchoenfeldComparison.lean)
+- [RosserSchoenfeldError](../../RiemannGaussian/RosserSchoenfeldError.lean)
 - [TripleRieszProfile](../../RiemannGaussian/TripleRieszProfile.lean)
 - [ZetaArithmeticAffine](../../RiemannGaussian/ZetaArithmeticAffine.lean)
 - [ZetaArithmeticBandCorrelation](../../RiemannGaussian/ZetaArithmeticBandCorrelation.lean)
@@ -289,6 +293,10 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszUnfilteredSource](../../RiemannGaussian/ZetaRieszUnfilteredSource.lean)
 - [ZetaRieszWeightedCount](../../RiemannGaussian/ZetaRieszWeightedCount.lean)
 - [ZetaRieszWholeWindow](../../RiemannGaussian/ZetaRieszWholeWindow.lean)
+- [ZetaRieszWideCompanion](../../RiemannGaussian/ZetaRieszWideCompanion.lean)
+- [ZetaRieszWideOwnerAudit](../../RiemannGaussian/ZetaRieszWideOwnerAudit.lean)
+- [ZetaRieszWideOwnerObstruction](../../RiemannGaussian/ZetaRieszWideOwnerObstruction.lean)
+- [ZetaRieszWidePhase](../../RiemannGaussian/ZetaRieszWidePhase.lean)
 - [ZetaRieszWiderMatched](../../RiemannGaussian/ZetaRieszWiderMatched.lean)
 - [ZetaRieszWindowGcd](../../RiemannGaussian/ZetaRieszWindowGcd.lean)
 - [ZetaRieszWindowGram](../../RiemannGaussian/ZetaRieszWindowGram.lean)

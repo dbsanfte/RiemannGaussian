@@ -149,10 +149,10 @@ The harmonic-cost route has an evaluated source and paid wing, reserve and domin
 
 ### Latest Update
 
-**Complete VK region proved; boundary renewal does not yet improve the signed floor.** The accumulated Vinogradov moment, block and zero-detector proofs now yield an unconditional eventual VK family with C<3*pi/10640, including 1/1150. Its finite starting height is unevaluated. Separately, the exact reflected-large boundary split and least-prime renewal preserve the literal pair weights, but give no new power saving or independent -3/40 floor.
-The harmonic route still needs a signed arithmetic estimate. Its Type-II target and source frontier are unchanged; published zero-free benchmark constants also remain open.
-[Current checked endpoint](RiemannGaussian/ZetaVinogradovSummedZeroFree.lean#L80)
-· [Proof details](docs/zeta-riesz-boundary-renewal-audit.md).
+**Zeros through height 54 certified; wide-owner completion restores a source.** All nontrivial zeros through height 54 are proved to lie on the critical line, with a complete multiplicity count of 22. Literature groundwork now includes finite prime anchors, interval evaluators and Ford iteration. The wider unique-owner allocation gives geometric decay of the unallocated triple mass, but its unmasked complete companion remains nondecaying under the exposed-zero hypotheses, even after adding the existing reserve.
+The owner/mask correction still needs an independent signed estimate. No new exclusion follows from this detour; published benchmark constants and the original Type-II target remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszWideOwnerObstruction.lean#L244)
+· [Proof details](docs/zeta-riesz-wide-owner-audit.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

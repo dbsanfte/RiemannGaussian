@@ -6,7 +6,7 @@
 
 Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prime expansions.
 
-**34 modules.** Source links open the definitions, hypotheses and proofs.
+**42 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [OscillatoryPowerPrimitive](../../RiemannGaussian/OscillatoryPowerPrimitive.lean)
 - [ZetaEulerAngularBound](../../RiemannGaussian/ZetaEulerAngularBound.lean)
@@ -19,6 +19,13 @@ Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prim
 - [ZetaEulerGaussianDisc](../../RiemannGaussian/ZetaEulerGaussianDisc.lean)
 - [ZetaEulerLineBound](../../RiemannGaussian/ZetaEulerLineBound.lean)
 - [ZetaEulerLogProfile](../../RiemannGaussian/ZetaEulerLogProfile.lean)
+- [ZetaEulerMaclaurin](../../RiemannGaussian/ZetaEulerMaclaurin.lean)
+- [ZetaEulerMaclaurinBudget](../../RiemannGaussian/ZetaEulerMaclaurinBudget.lean)
+- [ZetaEulerMaclaurinCertificate](../../RiemannGaussian/ZetaEulerMaclaurinCertificate.lean)
+- [ZetaEulerMaclaurinEnclosure](../../RiemannGaussian/ZetaEulerMaclaurinEnclosure.lean)
+- [ZetaEulerMaclaurinKernel](../../RiemannGaussian/ZetaEulerMaclaurinKernel.lean)
+- [ZetaEulerMaclaurinValidation](../../RiemannGaussian/ZetaEulerMaclaurinValidation.lean)
+- [ZetaEulerMaclaurinValue](../../RiemannGaussian/ZetaEulerMaclaurinValue.lean)
 - [ZetaEulerOscillation](../../RiemannGaussian/ZetaEulerOscillation.lean)
 - [ZetaEulerPoissonBound](../../RiemannGaussian/ZetaEulerPoissonBound.lean)
 - [ZetaEulerPoissonDifference](../../RiemannGaussian/ZetaEulerPoissonDifference.lean)
@@ -36,6 +43,7 @@ Exact ordinary Dirichlet truncation, Bernoulli/Fourier remainders and Euler prim
 - [ZetaPrimeDiscrepancyWork](../../RiemannGaussian/ZetaPrimeDiscrepancyWork.lean)
 - [ZetaPrimeLatticeCarrier](../../RiemannGaussian/ZetaPrimeLatticeCarrier.lean)
 - [ZetaReciprocalDirichlet](../../RiemannGaussian/ZetaReciprocalDirichlet.lean)
+- [ZetaRightPhase](../../RiemannGaussian/ZetaRightPhase.lean)
 - [ZetaSquarefreeVaughanBudget](../../RiemannGaussian/ZetaSquarefreeVaughanBudget.lean)
 - [ZetaSquarefreeVaughanLogSource](../../RiemannGaussian/ZetaSquarefreeVaughanLogSource.lean)
 - [ZetaSquarefreeVaughanProjection](../../RiemannGaussian/ZetaSquarefreeVaughanProjection.lean)

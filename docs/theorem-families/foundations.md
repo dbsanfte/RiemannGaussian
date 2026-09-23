@@ -6,7 +6,7 @@
 
 Actual zeros, canonical products, reflection and analytic multiplicity.
 
-**88 modules.** Source links open the definitions, hypotheses and proofs.
+**105 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [Basic](../../RiemannGaussian/Basic.lean)
 - [GaussianXiCompleteMassFiniteness](../../RiemannGaussian/GaussianXiCompleteMassFiniteness.lean)
@@ -51,12 +51,24 @@ Actual zeros, canonical products, reflection and analytic multiplicity.
 - [RiemannXiUpperHeightTrace](../../RiemannGaussian/RiemannXiUpperHeightTrace.lean)
 - [ZetaAdaptiveCanonical](../../RiemannGaussian/ZetaAdaptiveCanonical.lean)
 - [ZetaAdaptiveSigned](../../RiemannGaussian/ZetaAdaptiveSigned.lean)
+- [ZetaBlockApproximation](../../RiemannGaussian/ZetaBlockApproximation.lean)
+- [ZetaBlockBatch](../../RiemannGaussian/ZetaBlockBatch.lean)
+- [ZetaBlockMoments](../../RiemannGaussian/ZetaBlockMoments.lean)
+- [ZetaBlockShift](../../RiemannGaussian/ZetaBlockShift.lean)
+- [ZetaBlockTaylor](../../RiemannGaussian/ZetaBlockTaylor.lean)
 - [ZetaCanonicalMoments](../../RiemannGaussian/ZetaCanonicalMoments.lean)
 - [ZetaCanonicalSign](../../RiemannGaussian/ZetaCanonicalSign.lean)
+- [ZetaCountingEndpoint](../../RiemannGaussian/ZetaCountingEndpoint.lean)
+- [ZetaElevenZeroCompleteness](../../RiemannGaussian/ZetaElevenZeroCompleteness.lean)
 - [ZetaExposedZero](../../RiemannGaussian/ZetaExposedZero.lean)
+- [ZetaFiniteZeroCount](../../RiemannGaussian/ZetaFiniteZeroCount.lean)
+- [ZetaFirstZeroCompleteness](../../RiemannGaussian/ZetaFirstZeroCompleteness.lean)
 - [ZetaGlobalPhaseBudget](../../RiemannGaussian/ZetaGlobalPhaseBudget.lean)
 - [ZetaGlobalPoisson](../../RiemannGaussian/ZetaGlobalPoisson.lean)
 - [ZetaGlobalSignedBudget](../../RiemannGaussian/ZetaGlobalSignedBudget.lean)
+- [ZetaHardyPhase](../../RiemannGaussian/ZetaHardyPhase.lean)
+- [ZetaHardyProduct](../../RiemannGaussian/ZetaHardyProduct.lean)
+- [ZetaHardyWindowCompleteness](../../RiemannGaussian/ZetaHardyWindowCompleteness.lean)
 - [ZetaLocalCanonical](../../RiemannGaussian/ZetaLocalCanonical.lean)
 - [ZetaLocalDiscBounds](../../RiemannGaussian/ZetaLocalDiscBounds.lean)
 - [ZetaLocalJensen](../../RiemannGaussian/ZetaLocalJensen.lean)
@@ -64,6 +76,8 @@ Actual zeros, canonical products, reflection and analytic multiplicity.
 - [ZetaLocalReciprocal](../../RiemannGaussian/ZetaLocalReciprocal.lean)
 - [ZetaLocalResidualBounds](../../RiemannGaussian/ZetaLocalResidualBounds.lean)
 - [ZetaLocalResidualLog](../../RiemannGaussian/ZetaLocalResidualLog.lean)
+- [ZetaLowZeroDisc](../../RiemannGaussian/ZetaLowZeroDisc.lean)
+- [ZetaLowZeroIsolation](../../RiemannGaussian/ZetaLowZeroIsolation.lean)
 - [ZetaNearOneAngularBound](../../RiemannGaussian/ZetaNearOneAngularBound.lean)
 - [ZetaNearOneCanonical](../../RiemannGaussian/ZetaNearOneCanonical.lean)
 - [ZetaNearOneExclusion](../../RiemannGaussian/ZetaNearOneExclusion.lean)
@@ -96,3 +110,6 @@ Actual zeros, canonical products, reflection and analytic multiplicity.
 - [ZetaSignedWindowPole](../../RiemannGaussian/ZetaSignedWindowPole.lean)
 - [ZetaSignedZeroMargin](../../RiemannGaussian/ZetaSignedZeroMargin.lean)
 - [ZetaSignedZeroSeparation](../../RiemannGaussian/ZetaSignedZeroSeparation.lean)
+- [ZetaThreeZeroCompleteness](../../RiemannGaussian/ZetaThreeZeroCompleteness.lean)
+- [ZetaZeroCountCompleteness](../../RiemannGaussian/ZetaZeroCountCompleteness.lean)
+- [ZetaZeroCountFormula](../../RiemannGaussian/ZetaZeroCountFormula.lean)
