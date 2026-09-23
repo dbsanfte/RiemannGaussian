@@ -1,5 +1,20 @@
 # Vinogradov–Korobov formalization: signed congruencing and Gaussian resonance
 
+The [all-scale continuation](vinogradov-near-one-growth.md) proves an
+unconditional bound for the actual zeta function, with explicit constants
+and height thresholds. [Summing the retained cubic profile](vinogradov-cubic-summation.md)
+now gives `1048576*|t|^(40*Delta_n^(3/2))*log(|t|)^(2/3)` throughout
+`1-Delta_n<=sigma<=3/2`, where `Delta_n=1/(4096*(2*n+1)^2)` and `n>=48`.
+The starting height remains the explicit `T_(8n)`, with
+`T_m=(16*(2*m+1)^2)^(2*m)`. Every degree range and block boundary is paid.
+The [complete zero detector and joint schedule](vinogradov-zero-free.md)
+prove the actual VK width `C/(L^(2/3)*(log L)^(1/3))` for every
+`0<C<3*pi/10640`, including `C=1/1150`, with `L=log(|t|+2)`.
+Its finite starting height is unevaluated; all earlier explicit and eventual
+shapes remain in the proved family and union. Published leading constants
+remain open. The stage-specific limitations below describe their individual
+inputs; this paragraph and the linked endpoint give the current result.
+
 **Status:** the exact finite logarithmic expansion, product-shift averaging
 of actual Dirichlet blocks, transport through their full damping, shifted
 moment domination and the two-Hölder reduction of the actual polynomial
@@ -42,24 +57,28 @@ blocks across continuous parameter rectangles, and finite Abel transport
 carries it to their actual zeta damping. The complete Gaussian constant costs
 at most two after the actual moment root, uniformly for degree at least twelve.
 See [the precise bounds and scope](vinogradov-gaussian-power-saving.md).
-The homogeneous moment constants and thresholds still need uniform degree
-bounds, and the all-scale analytic transport remains open.
-The Vinogradov–Korobov zeta growth estimate
-and zero-free region remain unproved in this repository. No external
-analytic estimate is installed as an axiom or as a claimed discharged premise.
+The later fixed-width-packet continuation supplies uniform degree costs
+and all-scale transport, giving the growth estimate stated above.
+It retains its band-dependent height threshold, while direct Euler
+reconstruction removes the eta division cost;
+the full VK zero-free region remains unproved in this repository.
+No external analytic estimate is installed as an axiom or as a claimed
+discharged premise.
 
 The research lead is [Bellotti (2023), Section 8](https://arxiv.org/html/2306.10680v1#S8).
 That argument connects shifted logarithmic sums to polynomial phases and
 then uses high mean-value estimates. The current implementation closes the
 averaging, phase approximation, damping transport and moment reduction;
 critical high-order moments and the actual rectangle saving are now proved.
-The uniform quantitative moment costs needed for a VK zeta bound remain open.
+The later [fixed-width packet](vinogradov-narrow-packet.md) supplies
+quantitative moment costs sufficient for the explicit growth bound above.
 
 The [finite critical-moment iteration](vinogradov-linear-constants.md) now
 retains the homogeneous constant linearly and reaches all positive integer
 endpoints with coefficient A^n*k!. The actual profile multiplier is at most
 (2ku)^(7k), independent of iteration count. The complete global degree costs
-and uniform zeta transport remain open.
+were the obstruction in that iteration; the later fixed-width-packet
+branch pays them and supplies the explicit zeta transport above.
 
 ## Exact signed expansion
 
@@ -1582,25 +1601,31 @@ is assumed or silently discharged by this substitution.
 
 ## Remaining analytic proof obligations
 
-The averaging, boundary, Taylor and damping steps, shifted-moment majorants
-and two-Hölder reduction are now proved for the actual terms, followed by
-the complete Gaussian smoothing, centered exponent improvement and explicit
-weighted-fibre and tail bounds. Elementary homogeneous moment costs are
-now proved and inserted into the actual product-sum theorem. The next
-step bounds the joint resonance sum through coefficient spacing and
-makes the proved critical high-order mean-value bounds quantitative in the parameters required by the VK argument. The
-stronger signed fibre identity also remains available. Preserve
-the exact alignment weights and coordinate correlations while developing
-that estimate. The identities and smoothing bound alone give no
-power saving. Quantitative
-mean-value estimates must imply the required logarithmic exponential-sum
-saving, then a proved near-one zeta growth estimate, then the zero detector
-with all constants and height ranges paid. These are substantial analytic
-obligations, not just numerical constant checks.
+The [fixed-width packet continuation](vinogradov-narrow-packet.md) now
+proves the original Dirichlet block estimate
+`5*M^(4-1/(8192*k^2))` for `k>=12`, `M>=(7k+1)k`,
+`M^(2k-2)<=t<=M^(2k)` and `M^4<=z<=2M^4`. Both actual homogeneous moments,
+complete Gaussian resonance, Taylor remainder, averaging boundary and
+literal damping are paid, with fixed numerical coefficients. There is
+no unproved moment or resonance premise in this block theorem.
 
-Only after that chain is discharged can a VK width join the
-[complete proved region](zeta-unified-zero-free.md). Comparisons between
-benchmark width functions do not supply their analytic proofs. Consult the
+The [all-scale continuation](vinogradov-near-one-growth.md) now constructs
+every middle-block degree and integer root, pays the shorter and longer
+scales, and proves the complete near-one zeta-growth estimates stated
+at the top of this document. The eta reconstruction is fully paid first;
+the stronger direct Euler transport removes its division factor and
+pays the actual pole endpoint and infinite remainder independently.
+
+The [complete zero-free continuation](vinogradov-zero-free.md) now pays
+the analytic disc, canonical factor, signed prime budget, moving index
+and every original starting condition. The resulting classical-power
+region is included in the proved union, above a finite unevaluated height.
+The next quantitative obligations are sharper constants and evaluated
+starting heights sufficient for published benchmark comparisons. These
+are separate from the fixed-height signed arithmetic floor in the RH campaign.
+
+Comparisons between benchmark width functions do not supply their
+analytic proofs. Consult the
 [literature-frontier audit](zero-free-literature-frontier.md) for source
 versions and reported constants; no world-best claim follows from the
-present approximation and exact-moment theorems.
+present growth theorem.

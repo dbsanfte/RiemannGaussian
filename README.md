@@ -18,7 +18,8 @@ repository's verification gates count as established results.
 
 **Coral shows our independently proved region.** Within the grey
 Lean-checked interval, it extends beyond the combined benchmark regions
-(blue, purple and green). Click the graph to enlarge it.
+(blue, purple and green). Click the graph to enlarge it. Eventual components
+with unevaluated starting heights are stated below and are not plotted.
 [Graph data, sources and scope](docs/zero-free-regions/README.md)
 · [Graph proof audit](docs/zero-free-regions/audit.json).
 
@@ -66,35 +67,41 @@ The [literature-frontier table](docs/zero-free-literature-frontier.md) records
 the full interval and source scope. This is a certified interval;
 coverage of every benchmark at every height remains open.
 
-**Eventual component:** for each fixed admissible coefficient, Lean also proves
+**Proved eventual union, now including Vinogradov–Korobov:**
 
 <table>
 <tr><td>
 
 ```math
 \boxed{\begin{gathered}
-0\lt A\lt \frac{22\pi}{1525\log 2},\qquad \exists\,T(A)\ge 2,
+0\lt A\lt \frac{22\pi}{1525\log 2},
+\\[2pt]
+\frac1{1150}\le C\lt\frac{3\pi}{10640},\qquad \exists\,T(A,C)\ge 4,
 \\[4pt]
-|t|\ge T(A)\quad\Longrightarrow
+w_C(t)=\frac{C}{L(t)^{2/3}(\log L(t))^{1/3}},
 \\[4pt]
-A\frac{\log\log |t|}{\log |t|}\lt \beta
-\lt 1-A\frac{\log\log |t|}{\log |t|}.
+D_{A,C}(t)=\max\!\left\{d(t),\ A\frac{\log\log|t|}{\log|t|},\ w_C(t)\right\},
+\\[4pt]
+|t|\ge T(A,C)\quad\Longrightarrow
+\\[4pt]
+D_{A,C}(t)\lt \beta\lt 1-D_{A,C}(t).
 \end{gathered}}
 ```
 
 </td></tr>
 </table>
 
-This excludes a region adjoining each edge of the critical strip. Lean also
-proves literal zeta nonvanishing on the corresponding closed right edge,
-with every arithmetic and analytic premise discharged.
-**This coefficient-dependent threshold has not been numerically evaluated.**
-On overlaps the two components [combine by their larger width](RiemannGaussian/ZetaUnifiedZeroFree.lean), with the eventual
-height condition preserved. The remaining interior strip is unresolved,
-and RH remains open.
+Every arithmetic and analytic premise is discharged, and literal zeta
+nonvanishing includes the closed right edge. **The eventual starting height
+has not been numerically evaluated.** Summing the scale-dependent Dirichlet savings gives the classical
+two-thirds logarithmic growth factor; signed angular control and a joint
+degree and height schedule give the displayed VK family.
+It eventually exceeds every fixed earlier log-log coefficient, but its constant
+does not match published VK benchmarks. The interior strip and RH remain open.
 
-[Lean proof: exists_eventual_strip](RiemannGaussian/ZetaLogLogZeroFree.lean#L62)
-· [Joint order-height proof and arithmetic consequences](docs/zeta-log-log-zero-free.md).
+[Lean proof: complete eventual union](RiemannGaussian/ZetaVinogradovSummedZeroFree.lean)
+· [Constants, joint height schedule and scope](docs/vinogradov-zero-free.md)
+· [Explore the new VK proof](https://dbsanfte.github.io/RiemannGaussian/#endpoint=vk-region).
 
 ### [▶ Open the interactive theorem explorer](https://dbsanfte.github.io/RiemannGaussian/)
 
@@ -142,10 +149,10 @@ The harmonic-cost route has an evaluated source and paid wing, reserve and domin
 
 ### Latest Update
 
-**Type-II endgame quantified; current inputs do not close it.** Lean now checks Newton/Euler identities, the exact cutoff correction, and a conditional endgame on `1/2<u<=0.5001`. The tails outside `1.95N<log n<=2.05N` are independently paid. A `1/1000` power saving for the literal signed prime-pair form would give the `-3/40` floor with geometric ratio `1667/1670`. That estimate remains unproved; the literature and repo audit finds no applicable input.
-This route is on hold pending an independent signed estimate; no new zero exclusion is claimed.
-[Current checked endpoint](RiemannGaussian/ZetaRieszTypeIIReduction.lean#L224)
-· [Proof details](docs/zeta-riesz-typeii-go-no-go.md).
+**Complete VK region proved; boundary renewal does not yet improve the signed floor.** The accumulated Vinogradov moment, block and zero-detector proofs now yield an unconditional eventual VK family with C<3*pi/10640, including 1/1150. Its finite starting height is unevaluated. Separately, the exact reflected-large boundary split and least-prime renewal preserve the literal pair weights, but give no new power saving or independent -3/40 floor.
+The harmonic route still needs a signed arithmetic estimate. Its Type-II target and source frontier are unchanged; published zero-free benchmark constants also remain open.
+[Current checked endpoint](RiemannGaussian/ZetaVinogradovSummedZeroFree.lean#L80)
+· [Proof details](docs/zeta-riesz-boundary-renewal-audit.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
@@ -155,12 +162,12 @@ hypotheses; the [family index](docs/theorem-families/README.md) covers the full 
 
 | Area | What is formalised | Lean entry points |
 | --- | --- | --- |
-| **Complete zero-free region** | The proved all-height region, its eventual log-log component, both reflected edges, and the resulting arithmetic radius. Threshold scope is stated above. | [explicit region](RiemannGaussian/ZetaUnifiedZeroFree.lean), [eventual component](RiemannGaussian/ZetaLogLogZeroFree.lean), [arithmetic transport](RiemannGaussian/ZetaSquarefreeUnifiedRegion.lean) |
+| **Complete zero-free region** | The all-height region, the eventual Littlewood/VK union, both reflected edges, and the existing explicit-region arithmetic radius. Threshold scope is stated above. | [explicit region](RiemannGaussian/ZetaUnifiedZeroFree.lean), [eventual union](RiemannGaussian/ZetaVinogradovSummedZeroFree.lean), [arithmetic transport](RiemannGaussian/ZetaSquarefreeUnifiedRegion.lean) |
 | **67.31% numerical certificate** | At least 67.31% of zeros are simple and on the critical line in sufficiently large cumulative and dyadic windows. The threshold is unevaluated; exhaustive verification is optional. | [literal-count certificate](RiemannGaussian/External/Zeta23SevenWindowIntegerCertificate.lean) |
 | **Gaussian/Weil explicit formula** | The arithmetic Gaussian expression, including prime-power and Archimedean terms, equals the complete multiplicity-weighted symmetric zero sum for every positive width. | [canonical explicit formula](RiemannGaussian/GaussianXiLogDerivativeGrowth.lean#L1235) |
 | **Gaussian heat and reflected-zero Grams** | The complete Gaussian correlation equals the boundary heat-residue sum. Its vanishing at positive heat time is equivalent to RH; that vanishing remains unproved. | [correlation identity and RH equivalence](RiemannGaussian/RiemannXiBoundaryGaussianGram.lean#L187) |
 | **Suzuki arithmetic and spectral formulas** | Suzuki's arithmetic function equals its spectral expansion in the safe half-plane. The literal arithmetic Psi is strictly positive on a nonzero punctured neighbourhood of the origin. | [spectral identity](RiemannGaussian/RiemannXiSuzukiWeilVerticalLimit.lean#L462), [local positivity](RiemannGaussian/RiemannXiSuzukiPointwiseLocalPositivity.lean#L298) |
-| **Vinogradov moments and Dirichlet sums** | Critical high-order moments by finite descent with retained constants, and power savings for literal damped Dirichlet blocks. Profile and Gaussian costs have explicit bounds; the complete degree dependence remains open. | [finite critical moments](docs/vinogradov-linear-constants.md), [actual power saving and scope](docs/vinogradov-gaussian-power-saving.md) |
+| **Vinogradov moments and Dirichlet sums** | Explicit degree-dependent moments and actual damped Dirichlet savings feed a proved VK zero-free region. Its coefficient is conservative and its starting height unevaluated. | [moment and block bounds](docs/vinogradov-narrow-packet.md), [complete zero-free proof](docs/vinogradov-zero-free.md) |
 | **Exact phase optimiser and arithmetic floor** | The specified phase cost has a unique eight-frequency optimiser across all feasible finite or infinite integer-frequency families, with a proved arithmetic floor. | [exact optimiser](RiemannGaussian/ZetaPhaseExactOptimizer.lean), [arithmetic floor and exclusion criterion](RiemannGaussian/ZetaPhaseBinomialScale.lean) |
 | **Eta heat and continuous phase matrices** | Exact eta heat/spectral correspondence and small-width matrix coercivity for distinct integer probes retain the full complex Gram correlations. | [heat/spectral identity](RiemannGaussian/EtaSupportGapGaussianSpectral.lean), [continuous matrix coercivity](RiemannGaussian/Hybrid/EtaSupportGapPhaseCoercivity.lean#L276) |
 | **Original signed Riesz carrier bound** | Critical moments plus positive ε and a proved negative initial-energy profile bound the actual carrier. Signed correlation and sampling costs still need a combined saving. | [actual carrier bound](RiemannGaussian/ZetaRieszCriticalProfile.lean), [preserved source](RiemannGaussian/ZetaRieszConditionedEnergy.lean) |
@@ -174,8 +181,9 @@ and the [proof inventory](docs/proof-status.json).
 
 - **A proved explicit zero-free region at every height.** The
   [complete explicit region](RiemannGaussian/ZetaUnifiedZeroFree.lean)
-  and [eventual Littlewood component](RiemannGaussian/ZetaLogLogZeroFree.lean)
-  form the region displayed above. The [extended comparison](RiemannGaussian/ZetaGaussianExpandedComparison.lean)
+  and [proved eventual Littlewood/Vinogradov–Korobov union](RiemannGaussian/ZetaVinogradovSummedZeroFree.lean)
+  form the region displayed above. Eventual thresholds are unevaluated.
+  The [extended comparison](RiemannGaussian/ZetaGaussianExpandedComparison.lean)
   and [literature audit](docs/zero-free-literature-frontier.md) state precisely
   which benchmark functions it improves and where.
 - **The critical high-order Vinogradov moment exponent, with every positive ε.**
@@ -183,11 +191,12 @@ and the [proof inventory](docs/proof-status.json).
   covers every k≥2, u≥k at all sufficiently large endpoints without an
   assumed moment estimate. A [finite descent](docs/vinogradov-linear-constants.md)
   now retains the cost A^n·k! at every positive integer cutoff, with an
-  explicit profile multiplier. The complete degree dependence remains open.
+  explicit profile multiplier. A [quantitative continuation](docs/vinogradov-narrow-packet.md)
+  now pays all degree-dependent moment coefficients at the stated order.
   The full Gaussian degree window now also gives a [power saving for original
   Dirichlet blocks](docs/vinogradov-gaussian-power-saving.md) throughout the
   stated continuous intervals, including the actual zeta damping. Gaussian
-  costs are uniformly bounded; moment constants remain unevaluated.
+  costs and the complete original block estimate have explicit constants.
 - **At least 67.31% of nontrivial zeros are simple and on the critical line.**
   [The literal-count theorem](RiemannGaussian/External/Zeta23SevenWindowIntegerCertificate.lean)
   proves this for every sufficiently large cumulative or dyadic window.

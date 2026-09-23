@@ -6,7 +6,7 @@
 
 Complex analytic estimates, disc-to-strip maps, complete divisors and signed boundary identities.
 
-**66 modules.** Source links open the definitions, hypotheses and proofs.
+**72 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDiscBoundaryMoment](../../RiemannGaussian/AnalyticDiscBoundaryMoment.lean)
 - [AnalyticDiscBoundarySequence](../../RiemannGaussian/AnalyticDiscBoundarySequence.lean)
@@ -72,5 +72,11 @@ Complex analytic estimates, disc-to-strip maps, complete divisors and signed bou
 - [ZetaStripFiniteSource](../../RiemannGaussian/ZetaStripFiniteSource.lean)
 - [ZetaStripPhaseExclusion](../../RiemannGaussian/ZetaStripPhaseExclusion.lean)
 - [ZetaStripPhaseFamily](../../RiemannGaussian/ZetaStripPhaseFamily.lean)
+- [ZetaVinogradovCanonical](../../RiemannGaussian/ZetaVinogradovCanonical.lean)
+- [ZetaVinogradovCubicDisc](../../RiemannGaussian/ZetaVinogradovCubicDisc.lean)
+- [ZetaVinogradovFullDisc](../../RiemannGaussian/ZetaVinogradovFullDisc.lean)
+- [ZetaVinogradovLocalDisc](../../RiemannGaussian/ZetaVinogradovLocalDisc.lean)
+- [ZetaVinogradovSharperDisc](../../RiemannGaussian/ZetaVinogradovSharperDisc.lean)
+- [ZetaVinogradovSummedDisc](../../RiemannGaussian/ZetaVinogradovSummedDisc.lean)
 - [ZetaZeroFilterCost](../../RiemannGaussian/ZetaZeroFilterCost.lean)
 - [ZetaZeroModeFilter](../../RiemannGaussian/ZetaZeroModeFilter.lean)

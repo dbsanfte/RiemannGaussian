@@ -86,7 +86,13 @@ def run(output, published):
                 # so hydration cannot replace it with the published README.
                 # The real custom element and GitHub styles still render it.
                 if rendered is not None:
-                    article.evaluate("""(e, html) => {
+                    # Select and measure a visible source atomically: mobile
+                    # hydration can otherwise leave the detached preview
+                    # permanently fixed at a transient zero-pixel width.
+                    page.wait_for_function("""html => {
+                        const e = [...document.querySelectorAll('article.markdown-body')]
+                            .find(node => node.clientWidth > 0 && node.getClientRects().length);
+                        if (!e) return false;
                         const preview = document.createElement('article');
                         preview.id = 'github-readme-working-preview';
                         preview.className = e.className;
@@ -95,7 +101,8 @@ def run(output, published):
                         preview.style.margin = '24px auto';
                         preview.innerHTML = html;
                         document.body.prepend(preview);
-                    }""", rendered)
+                        return true;
+                    }""", arg=rendered)
                     selector = "#github-readme-working-preview"
                     article = page.locator(selector)
                 assert article.locator("h2").first.inner_text().strip() == "Proved Zero-Free Region"

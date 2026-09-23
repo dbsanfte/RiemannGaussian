@@ -20,6 +20,33 @@
       "documentation": "docs/zeta-unified-zero-free.md"
     },
     {
+      "id": "vk-region",
+      "label": "Stronger Vinogradov–Korobov family · eventual",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "vkZeroFreeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNonvanishingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkLogLogImprovementTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUnionNonvanishingTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "regionUnion"
+      ],
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    {
       "id": "coverage",
       "label": "Coverage audit · Gaussian and older reserve retained",
       "statusPaths": [
@@ -255,7 +282,7 @@
         ],
         [
           "gaussianPhaseBandToolkit",
-          "vkCenterCostTheorem"
+          "vkGaussianCenterCostTheorem"
         ],
         [
           "gaussianPhaseBandToolkit",
@@ -1172,6 +1199,554 @@
         [
           "gaussianPhaseBandToolkit",
           "vkFiniteCriticalIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExplicitProfileDepthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRelativeProfileDepthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkQuantitativeRelativeMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkQuantitativeMomentCostAuditTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRelativePolynomialSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkQuantitativeDirichletBlockTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkQuantitativeDampedFeatureTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPolynomialCollisionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPolynomialSystemTypeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPolynomialSystemCongruenceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkMixedBoundaryMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkResidueDifferenceEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkMixedDifferencingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkTypedDifferencingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPolynomialConditioningEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNonsingularCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDilatedTailMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNonsingularDescentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkLowDegreeTailFibreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkLowDegreeTailConditioningTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkTailEndpointDeletionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkResidueFloorEndpointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkBinomialRowTypeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkBinomialRowCollisionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkOriginalNonsingularConditioningTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkOriginalNonsingularDescentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkTypeMaximumTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkMixedRepeatedBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkMixedRepeatedAbsorptionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDistinctTypeReductionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkTwoBlockPacketTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUnrestrictedPrimeTransferTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUnrestrictedConditioningTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDiagonalMomentStepTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDiagonalAllEndpointStepTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDiagonalIterationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDiagonalDefectTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDiagonalCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDiagonalExplicitMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkShortPrimePacketTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkPacketConditioningTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNarrowAllEndpointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNarrowMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNarrowCoefficientRootTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNarrowActualGaussianTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNarrowPolynomialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNarrowDirichletBlockTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNarrowWeightedBlockTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNarrowDampedFeatureTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDyadicBlockTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkScaleSelectionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkLongSixthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkLongFourthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAllScaleBlockTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkDisplacementPowerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNearOneZetaTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNearOneStripTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNearOneBandTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkEulerVinogradovLineTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkEulerVinogradovStripTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkEulerVinogradovBandTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkRightStripTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkLocalDiscTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCanonicalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSignedBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkMarginPaidTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFixedMarginTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFixedNonvanishingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkHeightScheduleTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkScheduledReserveTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkScheduledWidthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkScheduledParametersTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkLogLogImprovementTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkZeroFreeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkNonvanishingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUnionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkUnionNonvanishingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFullDiscTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAngularMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAngularSourceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkAngularBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkScaledHeightTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkScaledRadiusTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkScaledParametersTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCenterCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExactCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkMillionfoldTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCompactUnionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkExponentialDefectTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkThreeMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkFourMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkShortMomentCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkVariableGaussianTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkShortPolynomialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkShortDirichletTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkShortDampedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkShortDyadicTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSharperCoverageTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSharperStripTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSharperBandTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSharperDiscTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkGenericAngularBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSharperActualBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSharperHeightTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSharperRadiusTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSharperParametersTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSharperCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSharperGainTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkEarlierCeilingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCubicScaleCouplingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCubicProfileTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCubicMaximumTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCubicCoverageTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCubicGrowthGainTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCubicStripTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCubicBandTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCubicDiscTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCubicScheduleTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCubicParametersTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCubicActualBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCubicCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCubicGainTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkCubicPreviousCeilingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSummedReserveTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSummedSmallTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSummedLowDegreeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSummedShiftTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSummedCoverageTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSummedGaussianTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSummedPrefixTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSummedStripTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSummedDiscTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSummedActualBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSummedCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSummedGainTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "vkSummedPreviousCeilingTheorem"
         ]
       ],
       "scopePath": [
@@ -1636,7 +2211,7 @@
     },
     {
       "id": "union",
-      "label": "Union with the eventual region",
+      "label": "Complete union · explicit, log-log and Vinogradov–Korobov",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1647,7 +2222,7 @@
         "gaussianPhaseBandToolkit",
         "regionUnion"
       ],
-      "documentation": "docs/zeta-gaussian-retained-region.md"
+      "documentation": "docs/vinogradov-zero-free.md"
     },
     {
       "id": "eventual",
@@ -2576,7 +3151,55 @@
     "ZetaRieszTypeIILocalization": "arithmetic",
     "ZetaRieszPairDiscrepancy": "arithmetic",
     "ZetaRieszTypeIIReduction": "arithmetic",
-    "ZetaRieszTypeIIRateAudit": "arithmetic"
+    "ZetaRieszTypeIIRateAudit": "arithmetic",
+    "ZetaVinogradovBound": "oscillation",
+    "ZetaVinogradovEulerBound": "oscillation",
+    "ZetaEulerRightStrip": "euler",
+    "ZetaVinogradovLocalDisc": "strip",
+    "ZetaVinogradovCanonical": "strip",
+    "ZetaVinogradovSignedBudget": "phase",
+    "ZetaVinogradovMargin": "region",
+    "VinogradovHeightSchedule": "asymptotic",
+    "ZetaVinogradovScheduledMargin": "asymptotic",
+    "ZetaVinogradovZeroFree": "region",
+    "ZetaVinogradovFullDisc": "strip",
+    "ZetaVinogradovAngularBound": "phase",
+    "ZetaVinogradovAngularBudget": "phase",
+    "VinogradovScaledSchedule": "asymptotic",
+    "ZetaVinogradovBalancedScale": "asymptotic",
+    "ZetaVinogradovBalancedBudget": "asymptotic",
+    "ZetaVinogradovAngularZeroFree": "region",
+    "VinogradovExponentialDefect": "oscillation",
+    "VinogradovShortMoment": "oscillation",
+    "VinogradovVariableGaussian": "oscillation",
+    "VinogradovShortResonance": "oscillation",
+    "VinogradovShortDirichlet": "oscillation",
+    "VinogradovShortDyadic": "oscillation",
+    "VinogradovSharperBudget": "oscillation",
+    "ZetaVinogradovSharperBound": "oscillation",
+    "ZetaVinogradovSharperDisc": "strip",
+    "ZetaAngularDiscBudget": "phase",
+    "VinogradovSharperSchedule": "asymptotic",
+    "ZetaVinogradovSharperScale": "asymptotic",
+    "ZetaVinogradovSharperCost": "asymptotic",
+    "ZetaVinogradovSharperZeroFree": "region",
+    "VinogradovCubicSaving": "oscillation",
+    "VinogradovCubicBudget": "oscillation",
+    "ZetaVinogradovCubicBound": "oscillation",
+    "ZetaVinogradovCubicDisc": "strip",
+    "VinogradovCubicSchedule": "asymptotic",
+    "ZetaVinogradovCubicScale": "asymptotic",
+    "ZetaVinogradovCubicCost": "asymptotic",
+    "ZetaVinogradovCubicZeroFree": "region",
+    "VinogradovCubicDecay": "oscillation",
+    "VinogradovCubicSummation": "oscillation",
+    "ZetaVinogradovSummedBound": "oscillation",
+    "ZetaVinogradovSummedDisc": "strip",
+    "ZetaVinogradovSummedCost": "asymptotic",
+    "ZetaVinogradovSummedZeroFree": "region",
+    "ZetaRieszPairBoundary": "arithmetic",
+    "ZetaRieszLeastPrimeRenewal": "arithmetic",
+    "ZetaRieszRenewalWeightAudit": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
@@ -4896,6 +5519,701 @@
       "label": "Finite critical-moment descent keeps the exact cost A^n k!",
       "overview": true,
       "documentation": "docs/vinogradov-linear-constants.md"
+    },
+    "RiemannGaussian.VinogradovLinearProfile.bounded_depth_profile_iteration": {
+      "label": "Evaluated depth for the original conditioning profile",
+      "overview": true,
+      "documentation": "docs/vinogradov-quantitative-descent.md"
+    },
+    "RiemannGaussian.VinogradovRelativeProfile.relative_defect_conditioned_bound": {
+      "label": "Relative allowance gives polynomial conditioning depth",
+      "overview": true,
+      "documentation": "docs/vinogradov-quantitative-descent.md"
+    },
+    "RiemannGaussian.VinogradovQuantitativeDescent.relative_moment_bound": {
+      "label": "Unconditional high moments with every coefficient specified",
+      "overview": true,
+      "documentation": "docs/vinogradov-quantitative-descent.md"
+    },
+    "RiemannGaussian.VinogradovQuantitativeDescent.packet_square_power_le_momentMultiplier": {
+      "label": "Chosen coefficient grows at least as 2^(packetDepth^2)",
+      "overview": true,
+      "documentation": "docs/vinogradov-quantitative-descent.md"
+    },
+    "RiemannGaussian.VinogradovRelativeResonance.polynomial_bound": {
+      "label": "Explicit moments pay the original polynomial product",
+      "overview": true,
+      "documentation": "docs/vinogradov-quantitative-descent.md"
+    },
+    "RiemannGaussian.VinogradovQuantitativeDirichlet.block_bound": {
+      "label": "Actual Dirichlet blocks with explicit degree costs",
+      "overview": true,
+      "documentation": "docs/vinogradov-quantitative-descent.md"
+    },
+    "RiemannGaussian.VinogradovQuantitativeDirichlet.feature_block_bound": {
+      "label": "Explicit costs reach the literal damped zeta coefficients",
+      "overview": true,
+      "documentation": "docs/vinogradov-quantitative-descent.md"
+    },
+    "RiemannGaussian.VinogradovPolynomialRigidity.weighted_equations_iff": {
+      "label": "Polynomial equations preserve the full weighted power sums",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovPolynomialSystems.hasType_difference": {
+      "label": "Finite differences preserve the exact next polynomial type",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovPolynomialSystems.type_integer_congruence_card_le": {
+      "label": "Actual polynomial congruences pay the factorial and triangular prime power",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovMixedMoments.intermediate_power_le": {
+      "label": "Boundary masks pay the complete correlated mixed moment",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovDifferenceEnergy.residueEnergy_eq_differences": {
+      "label": "Exact signed residue energy with every truncated overlap",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovMixedDifferencing.exists_difference_bound": {
+      "label": "Quantitative mixed differencing selects one fixed displacement",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovPolynomialDifferencing.exists_typed_difference_bound": {
+      "label": "Next polynomial type with explicit mixed-moment constants",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovPolynomialConditioning.configuration_integral_le": {
+      "label": "Nonsingular signatures bound actual configuration energy",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovPolynomialNonsingular.prime_dilated_count_le": {
+      "label": "Actual prime-dilated nonsingular count bound",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovNonsingularDescent.monomialTail_moment": {
+      "label": "Full dilated tail has the ordinary Vinogradov moment",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovNonsingularDescent.exists_nonsingular_descent": {
+      "label": "Nonsingular count reaches the next polynomial type",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovLowDegreeTail.lowSignature_fibre_le": {
+      "label": "Low-degree tail residues pay the Newton fibre bound",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovLowDegreeTail.exists_tail_class_bound": {
+      "label": "Original tail reaches one fixed residue class with explicit cost",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovEndpointDeletion.mixedMoment_succ_le": {
+      "label": "One tail endpoint costs at most two using the diagonal reserve",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovResidueEndpoint.exists_floor_tail_bound": {
+      "label": "Original residue tail reaches the exact quotient endpoint",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovBinomialRows.hasType_rowSystem": {
+      "label": "Binomial rows preserve the exact polynomial type",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovRowTransport.shifted_count_eq": {
+      "label": "Full shifted solution count equals the prime-dilated count",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovPolynomialConditionedDescent.exists_conditioning": {
+      "label": "Original nonsingular count reaches the conditioned mixed moment",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovPolynomialConditionedDescent.exists_descent": {
+      "label": "Original nonsingular count reaches an attained next polynomial type",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovTypeMaximum.exists_maximizer": {
+      "label": "Actual maximum over all systems of a fixed type",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovMixedRepeated.repeated_integral_le": {
+      "label": "Repeated-coordinate Holder retains the fixed tail",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovMixedExceptional.mixedMoment_le_twice_distinct": {
+      "label": "Both distinct blocks retain half the maximal mixed count",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovPolynomialExceptional.exists_count_reduction": {
+      "label": "Every original type count reduces to two distinct blocks",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovTwoBlockPacket.exists_uniform_two_block_packet": {
+      "label": "One prime packet avoids the type and separates both blocks",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovPolynomialPrimeTransfer.exists_prime_carrying_count": {
+      "label": "One eligible prime carries the complete unrestricted count",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovUnrestrictedConditioning.exists_conditioning": {
+      "label": "Full unrestricted count reaches the conditioned residue moment",
+      "overview": true,
+      "documentation": "docs/vinogradov-polynomial-systems.md"
+    },
+    "RiemannGaussian.VinogradovDiagonalMoment.exists_diagonal_moment_step": {
+      "label": "Root-scale conditioning gives the actual diagonal moment step",
+      "overview": true,
+      "documentation": "docs/vinogradov-diagonal-descent.md"
+    },
+    "RiemannGaussian.VinogradovDiagonalThreshold.all_endpoint_defect_step": {
+      "label": "Every endpoint pays its independent small-scale reserve",
+      "overview": true,
+      "documentation": "docs/vinogradov-diagonal-descent.md"
+    },
+    "RiemannGaussian.VinogradovDiagonalIteration.iterated_moment_bound": {
+      "label": "Actual homogeneous moments follow the exact defect recurrence",
+      "overview": true,
+      "documentation": "docs/vinogradov-diagonal-descent.md"
+    },
+    "RiemannGaussian.VinogradovDiagonalIteration.defect_seven_degree_le": {
+      "label": "Seven degree-length blocks give defect at most k squared over 256",
+      "overview": true,
+      "documentation": "docs/vinogradov-diagonal-descent.md"
+    },
+    "RiemannGaussian.VinogradovDiagonalCost.coefficient_seven_degree_le": {
+      "label": "The full iteration coefficient is at most 2 to the 18 k sixth",
+      "overview": true,
+      "documentation": "docs/vinogradov-diagonal-descent.md"
+    },
+    "RiemannGaussian.VinogradovDiagonalCost.explicit_relative_moment_bound": {
+      "label": "Unconditional all-endpoint moment with a closed degree cost",
+      "overview": true,
+      "documentation": "docs/vinogradov-diagonal-descent.md"
+    },
+    "RiemannGaussian.VinogradovShortPacket.exists_short_packet": {
+      "label": "Enough actual primes in an eightfold interval",
+      "overview": true,
+      "documentation": "docs/vinogradov-narrow-packet.md"
+    },
+    "RiemannGaussian.VinogradovUnrestrictedConditioning.exists_conditioning_of_packet": {
+      "label": "Conditioning retains the actual prime packet and its costs",
+      "overview": true,
+      "documentation": "docs/vinogradov-narrow-packet.md"
+    },
+    "RiemannGaussian.VinogradovNarrowThreshold.all_endpoint_defect_step": {
+      "label": "Polynomial starting scale pays every original endpoint",
+      "overview": true,
+      "documentation": "docs/vinogradov-narrow-packet.md"
+    },
+    "RiemannGaussian.VinogradovNarrowCost.explicit_relative_moment_bound": {
+      "label": "Actual moment with cubic-logarithmic degree cost",
+      "overview": true,
+      "documentation": "docs/vinogradov-narrow-packet.md"
+    },
+    "RiemannGaussian.VinogradovNarrowCost.two_moments_gaussian_le": {
+      "label": "Both moment coefficients and Gaussian cost fit the exact root",
+      "overview": true,
+      "documentation": "docs/vinogradov-narrow-packet.md"
+    },
+    "RiemannGaussian.VinogradovNarrowGaussian.actual_gaussian_resonance_le": {
+      "label": "Complete Gaussian cost at the actual larger tuple order",
+      "overview": true,
+      "documentation": "docs/vinogradov-narrow-packet.md"
+    },
+    "RiemannGaussian.VinogradovNarrowResonance.polynomial_bound": {
+      "label": "Original polynomial product has coefficient two",
+      "overview": true,
+      "documentation": "docs/vinogradov-narrow-packet.md"
+    },
+    "RiemannGaussian.VinogradovNarrowDirichlet.block_bound": {
+      "label": "Original Dirichlet block has coefficient five",
+      "overview": true,
+      "documentation": "docs/vinogradov-narrow-packet.md"
+    },
+    "RiemannGaussian.VinogradovNarrowDirichlet.weighted_block_bound": {
+      "label": "Uniform weighted saving retains actual mass and endpoint",
+      "overview": true,
+      "documentation": "docs/vinogradov-narrow-packet.md"
+    },
+    "RiemannGaussian.VinogradovNarrowDirichlet.feature_block_bound": {
+      "label": "Literal damped zeta terms inherit the uniform coefficient",
+      "overview": true,
+      "documentation": "docs/vinogradov-narrow-packet.md"
+    },
+    "RiemannGaussian.VinogradovDyadic.original_block_bound": {
+      "label": "Original dyadic blocks retain damping and root rounding",
+      "overview": true,
+      "documentation": "docs/vinogradov-near-one-growth.md"
+    },
+    "RiemannGaussian.VinogradovScaleSelection.exists_window_parameters": {
+      "label": "Constructed degree and root cover every middle block",
+      "overview": true,
+      "documentation": "docs/vinogradov-near-one-growth.md"
+    },
+    "RiemannGaussian.VinogradovLongBlocks.sixth_profile_le": {
+      "label": "Sixth derivatives pay both long-block profile terms",
+      "overview": true,
+      "documentation": "docs/vinogradov-near-one-growth.md"
+    },
+    "RiemannGaussian.VinogradovLongBlocks.fourth_profile_le": {
+      "label": "Fourth derivatives reach the full canonical cutoff",
+      "overview": true,
+      "documentation": "docs/vinogradov-near-one-growth.md"
+    },
+    "RiemannGaussian.VinogradovNearOneBudget.canonical_block_bound": {
+      "label": "Every original canonical block has a paid uniform bound",
+      "overview": true,
+      "documentation": "docs/vinogradov-near-one-growth.md"
+    },
+    "RiemannGaussian.VinogradovNearOneBudget.growth_le_displacement_power": {
+      "label": "Height exponent has displacement power three halves",
+      "overview": true,
+      "documentation": "docs/vinogradov-near-one-growth.md"
+    },
+    "RiemannGaussian.ZetaVinogradovBound.bound_abs": {
+      "label": "Complete zeta bound with explicit height and degree costs",
+      "overview": true,
+      "documentation": "docs/vinogradov-near-one-growth.md"
+    },
+    "RiemannGaussian.ZetaVinogradovBound.bound_strip_abs": {
+      "label": "Actual zeta bound throughout each near-one strip",
+      "overview": true,
+      "documentation": "docs/vinogradov-near-one-growth.md"
+    },
+    "RiemannGaussian.ZetaVinogradovBound.bound_band_abs": {
+      "label": "Continuous bands have the explicit three-halves zeta exponent",
+      "overview": true,
+      "documentation": "docs/vinogradov-near-one-growth.md"
+    },
+    "RiemannGaussian.ZetaVinogradovEulerBound.bound_abs": {
+      "label": "Direct Euler reconstruction removes the reciprocal displacement",
+      "overview": true,
+      "documentation": "docs/vinogradov-near-one-growth.md"
+    },
+    "RiemannGaussian.ZetaVinogradovEulerBound.bound_strip_abs": {
+      "label": "Uniform actual zeta bound includes the closed one-line",
+      "overview": true,
+      "documentation": "docs/vinogradov-near-one-growth.md"
+    },
+    "RiemannGaussian.ZetaVinogradovEulerBound.bound_band_abs": {
+      "label": "Three-halves growth with no eta denominator",
+      "overview": true,
+      "documentation": "docs/vinogradov-near-one-growth.md"
+    },
+    "RiemannGaussian.ZetaEulerRightStrip.bound_abs": {
+      "label": "Actual Euler bound to the right of one",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovLocalDisc.disc_norm_bound": {
+      "label": "Complete analytic-disc growth bound",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovCanonical.exists_controlled_decomp": {
+      "label": "Actual canonical factor with paid residual",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSignedBudget.margin_of_budget": {
+      "label": "Signed prime source and radial correction",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovMargin.budget_paid": {
+      "label": "Full contradiction budget paid numerically",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovMargin.exact_margin": {
+      "label": "Explicit degree-indexed zero exclusion",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovMargin.nonvanishing": {
+      "label": "Actual closed-edge nonvanishing",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovHeightSchedule.eventually_threshold": {
+      "label": "Moving degree pays the original starting threshold",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovScheduledMargin.reserve_le": {
+      "label": "Complete two-height reserve bounded by logarithms",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovScheduledMargin.width_le_margin": {
+      "label": "Classical logarithmic powers fit the actual margin",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovScheduledMargin.eventually_parameters": {
+      "label": "One schedule pays every analytic parameter",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovZeroFree.exists_eventual_strip": {
+      "label": "Proved Vinogradov–Korobov region at both edges",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovZeroFree.exists_eventual_union": {
+      "label": "Complete explicit, log-log and Vinogradov–Korobov union",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovFullDisc.norm_translated_le": {
+      "label": "Original growth bound on the full analytic radius",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovAngularBound.boundary_moment_le": {
+      "label": "Signed angular moment retains the factor 1/pi",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovAngularBound.neg_logDeriv_re_le_sub_zero": {
+      "label": "Full-radius source with actual multiplicity and radial correction",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovAngularBudget.margin_of_budget": {
+      "label": "Actual prime inequality gives the complete signed cost test",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovScaledSchedule.eventually_threshold": {
+      "label": "Scaled natural degree pays the original height threshold",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovScaledSchedule.radius_scaled": {
+      "label": "Exact radius limit on the coefficient-aware degree schedule",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovBalancedScale.eventually_parameters": {
+      "label": "Actual height and unit disc buffer paid together",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovBalancedBudget.center_log_normalized": {
+      "label": "Full Euler-center logarithm costs two thirds",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovBalancedBudget.cost_tendsto": {
+      "label": "Complete signed cost tends to 98560*C/(3*pi)",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovAngularZeroFree.millionfold_improvement": {
+      "label": "New VK component exceeds a million times the earlier one",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovAngularZeroFree.eventually_dominates_previous_loglog": {
+      "label": "Every positive VK member eventually exceeds each log-log coefficient",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovExponentialDefect.defect_le_exp": {
+      "label": "Exact homogeneous defect has exponential decay",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovShortMoment.moment_three_bound": {
+      "label": "Three-degree moment with full explicit coefficient",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovShortMoment.moment_four_bound": {
+      "label": "Four-degree moment pays the lower-degree range",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovShortMoment.two_moments_gaussian_le": {
+      "label": "Both actual moments and Gaussian cost fit the true root",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovVariableGaussian.actual_gaussian_resonance_le": {
+      "label": "Actual Gaussian resonance at the chosen moment order",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovShortResonance.polynomial_bound": {
+      "label": "Stronger actual product saving in both degree ranges",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovShortDirichlet.block_bound": {
+      "label": "Full Dirichlet block with coefficient five and stronger saving",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovShortDirichlet.feature_block_bound": {
+      "label": "Literal zeta damping retains the stronger saving",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovShortDyadic.original_block_bound": {
+      "label": "Rounded original dyadic block with full boundary",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovSharperBudget.canonical_block_bound": {
+      "label": "Every original dyadic scale paid on the wider strip",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSharperBound.bound_strip_abs": {
+      "label": "Actual zeta bound on the sixteen-times-wider strip",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSharperBound.bound_band_abs": {
+      "label": "Continuous displacement exponent at most 3072",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSharperDisc.norm_translated_le": {
+      "label": "Actual stronger growth covers the complete analytic disc",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaAngularDiscBudget.margin_of_budget": {
+      "label": "Signed detector for explicit analytic-disc bounds",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSharperCost.margin_of_budget": {
+      "label": "Both actual zeta disc bounds discharge the detector premises",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovSharperSchedule.eventually_threshold": {
+      "label": "Degree divided by 32 pays the original height threshold",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovSharperSchedule.radius_scaled": {
+      "label": "Normalized actual radius tends to one sixteenth",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSharperScale.eventually_parameters": {
+      "label": "One actual degree pays both height and unit buffer",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSharperCost.cost_tendsto": {
+      "label": "Complete signed cost tends to 38080*C/(3*pi)",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSharperZeroFree.coefficient_gain": {
+      "label": "Zero-free coefficient ceiling increases by exactly 44/17",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSharperZeroFree.previous_limit_lt_rational": {
+      "label": "The new rational member exceeds the earlier coefficient ceiling",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovCubicSaving.degree_log_bound": {
+      "label": "The actual selected degree retains its physical logarithm",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-profile.md"
+    },
+    "RiemannGaussian.VinogradovCubicSaving.power_le_cubic_profile": {
+      "label": "Actual block retains delta*v-v^3/10368 before maximization",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-profile.md"
+    },
+    "RiemannGaussian.VinogradovCubicSaving.cubic_le": {
+      "label": "The full cubic profile is at most forty times delta to three halves",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-profile.md"
+    },
+    "RiemannGaussian.VinogradovCubicBudget.canonical_block_bound": {
+      "label": "Every original block pays the retained cubic exponent",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-profile.md"
+    },
+    "RiemannGaussian.VinogradovCubicBudget.growth_lt_previous": {
+      "label": "Growth exponent is less than five thirty-seconds of its predecessor",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-profile.md"
+    },
+    "RiemannGaussian.ZetaVinogradovCubicBound.bound_strip_abs": {
+      "label": "Actual zeta growth with coefficient forty in the strip displacement",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-profile.md"
+    },
+    "RiemannGaussian.ZetaVinogradovCubicBound.bound_band_abs": {
+      "label": "Continuous adjacent bands have displacement coefficient 320",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-profile.md"
+    },
+    "RiemannGaussian.ZetaVinogradovCubicDisc.norm_translated_le": {
+      "label": "The entire actual analytic disc retains the cubic growth",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-profile.md"
+    },
+    "RiemannGaussian.VinogradovCubicSchedule.eventually_threshold": {
+      "label": "The enlarged T_(8n) threshold is paid at the moving degree",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-profile.md"
+    },
+    "RiemannGaussian.ZetaVinogradovCubicScale.eventually_parameters": {
+      "label": "Actual height and the expanded block window are paid together",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-profile.md"
+    },
+    "RiemannGaussian.ZetaVinogradovCubicCost.margin_of_budget": {
+      "label": "Actual cubic zeta growth pays both signed disc estimates",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-profile.md"
+    },
+    "RiemannGaussian.ZetaVinogradovCubicCost.cost_tendsto": {
+      "label": "The complete signed cost tends to 11200*C/(3*pi)",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-profile.md"
+    },
+    "RiemannGaussian.ZetaVinogradovCubicZeroFree.coefficient_gain": {
+      "label": "Zero-free coefficient ceiling increases by exactly 17/5",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-profile.md"
+    },
+    "RiemannGaussian.ZetaVinogradovCubicZeroFree.previous_limit_lt_rational": {
+      "label": "The new rational member exceeds the previous VK coefficient range",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-profile.md"
+    },
+    "RiemannGaussian.VinogradovCubicDecay.cubic_reserve": {
+      "label": "The coefficient forty retains a cubic decay reserve",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-summation.md"
+    },
+    "RiemannGaussian.VinogradovCubicDecay.small_reserve": {
+      "label": "Every small block pays the same cubic reserve",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-summation.md"
+    },
+    "RiemannGaussian.VinogradovCubicDecay.low_degree_reserve": {
+      "label": "The finite low-degree range has a fixed spare power",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-summation.md"
+    },
+    "RiemannGaussian.VinogradovCubicDecay.profile_shift": {
+      "label": "Exact real-part shift retains both derivative terms",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-summation.md"
+    },
+    "RiemannGaussian.VinogradovCubicDecay.block_bound": {
+      "label": "Every original block retains summable cubic decay",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-summation.md"
+    },
+    "RiemannGaussian.VinogradovCubicSummation.sum_le": {
+      "label": "Gaussian summation pays all scales by 1024 times log to two thirds",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-summation.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSummedBound.prefix_bound": {
+      "label": "The complete original Euler prefix has a two-thirds logarithmic factor",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-summation.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSummedBound.bound_strip_abs": {
+      "label": "Actual zeta has log to two-thirds growth through real part three halves",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-summation.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSummedDisc.norm_translated_le": {
+      "label": "Both sides of the analytic disc keep the sharper logarithmic power",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-summation.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSummedCost.margin_of_budget": {
+      "label": "Actual summed zeta growth pays both signed discs",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-summation.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSummedCost.cost_tendsto": {
+      "label": "The complete signed cost tends to 10640*C/(3*pi)",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-summation.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSummedZeroFree.coefficient_gain": {
+      "label": "The admissible coefficient ceiling increases by exactly 20/19",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-summation.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSummedZeroFree.previous_limit_lt_rational": {
+      "label": "The new rational member exceeds the preceding cubic coefficient range",
+      "overview": true,
+      "documentation": "docs/vinogradov-cubic-summation.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSummedZeroFree.rational_coefficient_lt": {
+      "label": "The rational coefficient 1/1150 is admissible",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSummedZeroFree.exists_eventual_union_compact": {
+      "label": "Compact summed-profile union retains previous coverage",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSummedZeroFree.exists_eventual_strip": {
+      "label": "Summed-profile VK family excludes both zero-strip edges",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSummedZeroFree.exists_eventual_nonvanishing": {
+      "label": "Actual closed-edge nonvanishing from summed cubic growth",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSummedZeroFree.exists_eventual_union": {
+      "label": "Complete union retains explicit and eventual regions",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.ZetaVinogradovSummedZeroFree.exists_eventual_union_nonvanishing": {
+      "label": "Literal zeta nonvanishing on the complete summed-profile union",
+      "overview": true,
+      "documentation": "docs/vinogradov-zero-free.md"
     }
   }
 }

@@ -6,10 +6,14 @@
 
 Joint derivative-order schedules and the eventual logarithmic zero-free component.
 
-**9 modules.** Source links open the definitions, hypotheses and proofs.
+**21 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [FactorialPolynomialTransport](../../RiemannGaussian/FactorialPolynomialTransport.lean)
 - [LogLogDerivativeSchedule](../../RiemannGaussian/LogLogDerivativeSchedule.lean)
+- [VinogradovCubicSchedule](../../RiemannGaussian/VinogradovCubicSchedule.lean)
+- [VinogradovHeightSchedule](../../RiemannGaussian/VinogradovHeightSchedule.lean)
+- [VinogradovScaledSchedule](../../RiemannGaussian/VinogradovScaledSchedule.lean)
+- [VinogradovSharperSchedule](../../RiemannGaussian/VinogradovSharperSchedule.lean)
 - [ZetaLogLogBudget](../../RiemannGaussian/ZetaLogLogBudget.lean)
 - [ZetaLogLogCorrection](../../RiemannGaussian/ZetaLogLogCorrection.lean)
 - [ZetaLogLogExclusion](../../RiemannGaussian/ZetaLogLogExclusion.lean)
@@ -17,3 +21,11 @@ Joint derivative-order schedules and the eventual logarithmic zero-free componen
 - [ZetaLogLogWidth](../../RiemannGaussian/ZetaLogLogWidth.lean)
 - [ZetaLogLogZeroFree](../../RiemannGaussian/ZetaLogLogZeroFree.lean)
 - [ZetaNearOneBudgetLimit](../../RiemannGaussian/ZetaNearOneBudgetLimit.lean)
+- [ZetaVinogradovBalancedBudget](../../RiemannGaussian/ZetaVinogradovBalancedBudget.lean)
+- [ZetaVinogradovBalancedScale](../../RiemannGaussian/ZetaVinogradovBalancedScale.lean)
+- [ZetaVinogradovCubicCost](../../RiemannGaussian/ZetaVinogradovCubicCost.lean)
+- [ZetaVinogradovCubicScale](../../RiemannGaussian/ZetaVinogradovCubicScale.lean)
+- [ZetaVinogradovScheduledMargin](../../RiemannGaussian/ZetaVinogradovScheduledMargin.lean)
+- [ZetaVinogradovSharperCost](../../RiemannGaussian/ZetaVinogradovSharperCost.lean)
+- [ZetaVinogradovSharperScale](../../RiemannGaussian/ZetaVinogradovSharperScale.lean)
+- [ZetaVinogradovSummedCost](../../RiemannGaussian/ZetaVinogradovSummedCost.lean)

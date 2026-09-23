@@ -101,26 +101,24 @@ theorem exists_linear_initial_allowance (k u : ℕ) (hk : 2 ≤ k) (hu : k ≤ u
         (mul_le_mul_of_nonneg_left hn' hE0)
     _ = _ := by ring
 
-/-- One fixed lower exponent defect gives a uniform negative prime-power saving for the original global mean value. -/
-theorem exists_linear_global_profile_saving (k u : ℕ) (hk : 2 ≤ k) (hu : k ≤ u)
-    (defect : ℝ) (hdefect0 : 0 < defect) :
-    ∃ beta : ℝ, -(1 / 2 : ℝ) ≤ beta ∧ -defect / 2 ≤ beta ∧ beta < 0 ∧
-      ∃ S : ℕ, 2 ≤ S ∧ ∃ B : ℝ, 1 ≤ B ∧ ∀ C : ℝ, 1 ≤ C →
-      ∀ (lam : ℝ) (N₀ : ℕ),
-      defect ≤ lam - 2 * (k : ℝ) * ((u : ℝ) + 1) + (k : ℝ) * ((k : ℝ) + 1) / 2 →
-      (∀ p e X : ℕ, 0 < p → p ^ e ≤ X → N₀ ≤ X / p ^ e + 1 →
-        meanValue ((u + 1) * k) k (X / p ^ e + 1) ≤ C * ((X : ℝ) / (p : ℝ) ^ e) ^ lam) →
-      ∀ M R X : ℕ,
-      0 < M → 0 < R → X ^ (k * (k - 1)) < M ^ R → 4 * k ^ 4 ≤ X →
-      (2 ^ R * M) ^ S ≤ X → N₀ ≤ X / (2 ^ R * M) ^ S + 1 →
-      iterationConstant k u ^ 2 ≤ (M : ℝ) →
-      meanValue ((u + 1) * k) k X ≤
-        (2 * (R : ℝ)) ^ 2 * (C * B) * (X : ℝ) ^ lam * (M : ℝ) ^ beta := by
-  obtain ⟨beta, hbetalow, hbetadefect, hbeta, S, hS, B, hB, hallow⟩ :=
-    exists_linear_initial_allowance k u hk hu defect hdefect0
-  refine ⟨beta, hbetalow, hbetadefect, hbeta, S, hS, B, hB, ?_⟩
-  intro C hC lam N₀ hdefect hbudget M R X hM hR hpacket hsize hcutoff hN hprime
-  have hlam : 2 * (k : ℝ) * ((u : ℝ) + 1) - (k : ℝ) * ((k : ℝ) + 1) / 2 < lam := by linarith
+/-- The original prime packet transports any proved initial-allowance bound
+with its literal depth, multiplier and negative prime exponent unchanged. -/
+theorem global_meanValue_of_initial_allowance (k u : ℕ) (hk : 2 ≤ k) (hu : k ≤ u)
+    (C : ℝ) (hC : 1 ≤ C) (lam : ℝ) (N₀ : ℕ)
+    (hlam : 2 * (k : ℝ) * ((u : ℝ) + 1) - (k : ℝ) * ((k : ℝ) + 1) / 2 < lam)
+    (hbudget : ∀ p e X : ℕ, 0 < p → p ^ e ≤ X → N₀ ≤ X / p ^ e + 1 →
+      meanValue ((u + 1) * k) k (X / p ^ e + 1) ≤ C * ((X : ℝ) / (p : ℝ) ^ e) ^ lam)
+    (beta : ℝ) (hbeta : beta < 0) (S : ℕ) (hS : 2 ≤ S) (B : ℝ) (hB : 1 ≤ B)
+    (hallow : ∀ (p xi X : ℕ) [Fact p.Prime],
+      p ^ S ≤ X → N₀ ≤ X / p ^ S + 1 → iterationConstant k u ^ 2 ≤ (p : ℝ) →
+      ∀ colour : Fin k → Bool,
+      constantAllowance C p k 0 1 xi X u 1 colour lam ≤ (C * B) * (p : ℝ) ^ beta)
+    (M R X : ℕ) (hM : 0 < M) (hR : 0 < R)
+    (hpacket : X ^ (k * (k - 1)) < M ^ R) (hsize : 4 * k ^ 4 ≤ X)
+    (hcutoff : (2 ^ R * M) ^ S ≤ X) (hN : N₀ ≤ X / (2 ^ R * M) ^ S + 1)
+    (hprime : iterationConstant k u ^ 2 ≤ (M : ℝ)) :
+    meanValue ((u + 1) * k) k X ≤
+      (2 * (R : ℝ)) ^ 2 * (C * B) * (X : ℝ) ^ lam * (M : ℝ) ^ beta := by
   obtain ⟨p, hp, hMp, hpM, eta, hentry⟩ :=
     VinogradovInitialConditioning.exists_initial_conditioning M R k (k * u) X
       hk (Nat.mul_pos (by omega) (by omega)) hM hR hpacket hsize
@@ -149,7 +147,7 @@ theorem exists_linear_global_profile_saving (k u : ℕ) (hk : 2 ≤ k) (hu : k �
   have hscale := momentScale_pos (show (0 : ℝ) < X by exact_mod_cast hXpos)
     (show (0 : ℝ) < p by exact_mod_cast hp.pos) (k : ℝ) (u : ℝ) 0 1 lam
   have hI := hlevel.trans (hiteration.trans (mul_le_mul_of_nonneg_left
-    (hallow C hC lam N₀ hdefect hbudget p 0 X hXp hNp hprimep (fun _ => true))
+    (hallow p 0 X hXp hNp hprimep (fun _ => true))
       (by simpa only [Nat.cast_zero, Nat.cast_one] using hscale.le)))
   have he := hentry.trans (mul_le_mul_of_nonneg_left hI (by positivity))
   have horder : k + k * u = (u + 1) * k := by ring
@@ -168,6 +166,30 @@ theorem exists_linear_global_profile_saving (k u : ℕ) (hk : 2 ≤ k) (hu : k �
       ring
     _ = (2 * (R : ℝ)) ^ 2 * (C * B) * (X : ℝ) ^ lam * (p : ℝ) ^ beta := by rw [hid]
     _ ≤ _ := mul_le_mul_of_nonneg_left hP (by positivity)
+
+
+/-- One fixed lower exponent defect gives a uniform negative prime-power saving for the original global mean value. -/
+theorem exists_linear_global_profile_saving (k u : ℕ) (hk : 2 ≤ k) (hu : k ≤ u)
+    (defect : ℝ) (hdefect0 : 0 < defect) :
+    ∃ beta : ℝ, -(1 / 2 : ℝ) ≤ beta ∧ -defect / 2 ≤ beta ∧ beta < 0 ∧
+      ∃ S : ℕ, 2 ≤ S ∧ ∃ B : ℝ, 1 ≤ B ∧ ∀ C : ℝ, 1 ≤ C →
+      ∀ (lam : ℝ) (N₀ : ℕ),
+      defect ≤ lam - 2 * (k : ℝ) * ((u : ℝ) + 1) + (k : ℝ) * ((k : ℝ) + 1) / 2 →
+      (∀ p e X : ℕ, 0 < p → p ^ e ≤ X → N₀ ≤ X / p ^ e + 1 →
+        meanValue ((u + 1) * k) k (X / p ^ e + 1) ≤ C * ((X : ℝ) / (p : ℝ) ^ e) ^ lam) →
+      ∀ M R X : ℕ,
+      0 < M → 0 < R → X ^ (k * (k - 1)) < M ^ R → 4 * k ^ 4 ≤ X →
+      (2 ^ R * M) ^ S ≤ X → N₀ ≤ X / (2 ^ R * M) ^ S + 1 →
+      iterationConstant k u ^ 2 ≤ (M : ℝ) →
+      meanValue ((u + 1) * k) k X ≤
+        (2 * (R : ℝ)) ^ 2 * (C * B) * (X : ℝ) ^ lam * (M : ℝ) ^ beta := by
+  obtain ⟨beta, hbetalow, hbetadefect, hbeta, S, hS, B, hB, hallow⟩ :=
+    exists_linear_initial_allowance k u hk hu defect hdefect0
+  refine ⟨beta, hbetalow, hbetadefect, hbeta, S, hS, B, hB, ?_⟩
+  intro C hC lam N₀ hdefect hbudget M R X hM hR hpacket hsize hcutoff hN hprime
+  apply global_meanValue_of_initial_allowance k u hk hu C hC lam N₀
+    (by linarith) hbudget beta hbeta S hS B hB
+    (hallow C hC lam N₀ hdefect hbudget) M R X hM hR hpacket hsize hcutoff hN hprime
 
 end
 end RiemannGaussian.VinogradovLinearSaving

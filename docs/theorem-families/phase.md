@@ -6,7 +6,7 @@
 
 Coupled phase kernels, contact factorization and the mathematically defined admissible family.
 
-**89 modules.** Source links open the definitions, hypotheses and proofs.
+**93 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [CosineTaylorEnclosure](../../RiemannGaussian/CosineTaylorEnclosure.lean)
 - [FermiCosineModulation](../../RiemannGaussian/FermiCosineModulation.lean)
@@ -14,6 +14,7 @@ Coupled phase kernels, contact factorization and the mathematically defined admi
 - [GaussianFermiCosineAverage](../../RiemannGaussian/GaussianFermiCosineAverage.lean)
 - [GaussianFermiProfileSurplus](../../RiemannGaussian/GaussianFermiProfileSurplus.lean)
 - [PhasePoleMargin](../../RiemannGaussian/PhasePoleMargin.lean)
+- [ZetaAngularDiscBudget](../../RiemannGaussian/ZetaAngularDiscBudget.lean)
 - [ZetaAngularPhaseAllowance](../../RiemannGaussian/ZetaAngularPhaseAllowance.lean)
 - [ZetaAngularPhaseExclusion](../../RiemannGaussian/ZetaAngularPhaseExclusion.lean)
 - [ZetaAngularPhaseFamily](../../RiemannGaussian/ZetaAngularPhaseFamily.lean)
@@ -97,3 +98,6 @@ Coupled phase kernels, contact factorization and the mathematically defined admi
 - [ZetaStechkinComparison](../../RiemannGaussian/ZetaStechkinComparison.lean)
 - [ZetaStechkinPhaseBudget](../../RiemannGaussian/ZetaStechkinPhaseBudget.lean)
 - [ZetaStechkinSupportFloor](../../RiemannGaussian/ZetaStechkinSupportFloor.lean)
+- [ZetaVinogradovAngularBound](../../RiemannGaussian/ZetaVinogradovAngularBound.lean)
+- [ZetaVinogradovAngularBudget](../../RiemannGaussian/ZetaVinogradovAngularBudget.lean)
+- [ZetaVinogradovSignedBudget](../../RiemannGaussian/ZetaVinogradovSignedBudget.lean)

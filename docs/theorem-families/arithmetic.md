@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**343 modules.** Source links open the definitions, hypotheses and proofs.
+**346 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -183,6 +183,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszJointCofactor](../../RiemannGaussian/ZetaRieszJointCofactor.lean)
 - [ZetaRieszLargeSmoothClass](../../RiemannGaussian/ZetaRieszLargeSmoothClass.lean)
 - [ZetaRieszLargeSmoothDeletion](../../RiemannGaussian/ZetaRieszLargeSmoothDeletion.lean)
+- [ZetaRieszLeastPrimeRenewal](../../RiemannGaussian/ZetaRieszLeastPrimeRenewal.lean)
 - [ZetaRieszLengthAsymptotic](../../RiemannGaussian/ZetaRieszLengthAsymptotic.lean)
 - [ZetaRieszLowHeadCorrection](../../RiemannGaussian/ZetaRieszLowHeadCorrection.lean)
 - [ZetaRieszLowHeadPrefix](../../RiemannGaussian/ZetaRieszLowHeadPrefix.lean)
@@ -208,6 +209,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszPacketCycle](../../RiemannGaussian/ZetaRieszPacketCycle.lean)
 - [ZetaRieszPacketIteration](../../RiemannGaussian/ZetaRieszPacketIteration.lean)
 - [ZetaRieszPacketSupply](../../RiemannGaussian/ZetaRieszPacketSupply.lean)
+- [ZetaRieszPairBoundary](../../RiemannGaussian/ZetaRieszPairBoundary.lean)
 - [ZetaRieszPairDiscrepancy](../../RiemannGaussian/ZetaRieszPairDiscrepancy.lean)
 - [ZetaRieszPairMatching](../../RiemannGaussian/ZetaRieszPairMatching.lean)
 - [ZetaRieszPairMidpoint](../../RiemannGaussian/ZetaRieszPairMidpoint.lean)
@@ -243,6 +245,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszReflectedCompletion](../../RiemannGaussian/ZetaRieszReflectedCompletion.lean)
 - [ZetaRieszReflectedLinear](../../RiemannGaussian/ZetaRieszReflectedLinear.lean)
 - [ZetaRieszRemainingPrefix](../../RiemannGaussian/ZetaRieszRemainingPrefix.lean)
+- [ZetaRieszRenewalWeightAudit](../../RiemannGaussian/ZetaRieszRenewalWeightAudit.lean)
 - [ZetaRieszReplacementFamily](../../RiemannGaussian/ZetaRieszReplacementFamily.lean)
 - [ZetaRieszReplacementPhase](../../RiemannGaussian/ZetaRieszReplacementPhase.lean)
 - [ZetaRieszReserveExact](../../RiemannGaussian/ZetaRieszReserveExact.lean)

@@ -6,7 +6,7 @@
 
 The complete budget, actual zero contradiction and its exact height scope.
 
-**20 modules.** Source links open the definitions, hypotheses and proofs.
+**26 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ZetaArbitraryLogZeroFree](../../RiemannGaussian/ZetaArbitraryLogZeroFree.lean)
 - [ZetaCenteredEulerZeroFree](../../RiemannGaussian/ZetaCenteredEulerZeroFree.lean)
@@ -27,4 +27,10 @@ The complete budget, actual zero contradiction and its exact height scope.
 - [ZetaLogRegionBand](../../RiemannGaussian/ZetaLogRegionBand.lean)
 - [ZetaStechkinZeroFree](../../RiemannGaussian/ZetaStechkinZeroFree.lean)
 - [ZetaUnifiedZeroFree](../../RiemannGaussian/ZetaUnifiedZeroFree.lean)
+- [ZetaVinogradovAngularZeroFree](../../RiemannGaussian/ZetaVinogradovAngularZeroFree.lean)
+- [ZetaVinogradovCubicZeroFree](../../RiemannGaussian/ZetaVinogradovCubicZeroFree.lean)
+- [ZetaVinogradovMargin](../../RiemannGaussian/ZetaVinogradovMargin.lean)
+- [ZetaVinogradovSharperZeroFree](../../RiemannGaussian/ZetaVinogradovSharperZeroFree.lean)
+- [ZetaVinogradovSummedZeroFree](../../RiemannGaussian/ZetaVinogradovSummedZeroFree.lean)
+- [ZetaVinogradovZeroFree](../../RiemannGaussian/ZetaVinogradovZeroFree.lean)
 - [ZetaZeroFreeRegionBand](../../RiemannGaussian/ZetaZeroFreeRegionBand.lean)

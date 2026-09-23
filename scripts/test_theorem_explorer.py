@@ -128,6 +128,21 @@ def run(output):
             page.locator("#all-steps").click()
             assert page.evaluate("PROOF_VIEW.visible.size") > 1000
             checks.append("search, permalink restoration, endpoint switch and full theorem view")
+            page.locator("#endpoint").select_option("vk-region")
+            vk_scope = page.locator("#scope-text").inner_text()
+            assert "3*pi/10640" in vk_scope and "unevaluated" in vk_scope
+            assert "world record" in vk_scope
+            vk_roots = page.evaluate("PROOF_VIEW.endpoint.roots")
+            vk_names = page.evaluate("PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i].name)")
+            assert set(vk_names) == {
+                "RiemannGaussian.ZetaVinogradovSummedZeroFree.exists_eventual_strip",
+                "RiemannGaussian.ZetaVinogradovSummedZeroFree.exists_eventual_nonvanishing",
+                "RiemannGaussian.ZetaVinogradovAngularZeroFree.eventually_dominates_previous_loglog",
+                "RiemannGaussian.ZetaVinogradovSummedZeroFree.exists_eventual_union_nonvanishing",
+            }
+            for theorem in vk_roots:
+                assert page.locator(f'[data-node="{theorem}"]').count()
+            checks.append("proved VK endpoint retains both edges, actual nonvanishing, union and unevaluated scope")
             page.locator("#endpoint").select_option("multiplicity")
             assert "restricts multiple zeros" in page.locator("#scope-text").inner_text()
             multiplicity_roots = page.evaluate("PROOF_VIEW.endpoint.roots")

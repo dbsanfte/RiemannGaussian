@@ -10,9 +10,9 @@ import RiemannGaussian.VinogradovConstantPreservation
 
 The Holder root gives an invariant profile multiplier ceiling
 (k!)^2*(1+2*selectionCost)^(2/u), bounded by (2ku)^(7k). This ceiling is
-independent of the iteration count. The actual descendant cutoff depth is
-still existential; retaining a bounded multiplier does not yet bound all
-parameter costs in a global moment or zeta estimate.
+independent of the iteration count. An explicit depth budget now gives
+cutoff (k+d)^n for the actual conditioned moments. The original existential
+interface is retained. Prime-packet and global moment costs are separate.
 -/
 
 namespace RiemannGaussian.VinogradovLinearProfile
@@ -98,11 +98,26 @@ theorem profile_constant_step_sharp {F E B u : ℝ} (hF : 1 ≤ F) (hE : 0 ≤ E
       (Real.rpow_le_rpow_of_exponent_le hQ heQ) (by positivity) (by positivity)
     _ = _ := by dsimp only [Q, theta]; rw [Real.rpow_two]; congr 2; ring
 
-/-- The actual profile iteration has one explicit constant ceiling at every
-finite depth, without any dependence of that ceiling on the iteration count. -/
-theorem uniform_profile_constant_iteration (k u : ℕ) (hk : 2 ≤ k) (hu : k ≤ u)
-    (defect : ℝ) (hdefect0 : 0 ≤ defect) (n : ℕ) :
-    ∃ T : ℕ, 1 ≤ T ∧ ∃ B : ℝ, 1 ≤ B ∧
+/-- Before any stopping rule, the affine profile cannot decrease faster
+than one full defect payment at each conditioning step. -/
+theorem affineProfile_lower_bound {r c B : ℝ} (hr0 : 0 ≤ r) (hr1 : r ≤ 1)
+    (hc : 0 ≤ c) (hB : 0 ≤ B) (n : ℕ) :
+    -(n : ℝ) * c ≤ affineProfile r c B n := by
+  induction n with
+  | zero => simpa only [affineProfile, Nat.cast_zero, neg_zero, zero_mul] using hB
+  | succ n ih =>
+    have h := mul_le_mul_of_nonneg_left ih hr0
+    have hrc := mul_le_mul_of_nonneg_right hr1 (mul_nonneg (Nat.cast_nonneg n) hc)
+    simp only [affineProfile, Nat.cast_add, Nat.cast_one]
+    nlinarith only [h, hrc]
+
+/-- An explicit descendant-depth budget controls the original conditioned
+energies, with the same depth-independent multiplier ceiling. -/
+theorem bounded_depth_profile_iteration (k u : ℕ) (hk : 2 ≤ k) (hu : k ≤ u)
+    (defect : ℝ) (hdefect0 : 0 ≤ defect) (n d : ℕ) (hdk : k ≤ d)
+    (hdepth : ∀ j < n, -(d : ℝ) / 2 ≤ defect + (k : ℝ) *
+      affineProfile ((k : ℝ) / u) ((1 - 1 / (u : ℝ)) * defect) ((k : ℝ) * u) j) :
+    ∃ B : ℝ, 1 ≤ B ∧
       B ≤ (k.factorial : ℝ) ^ 2 * (1 + 2 * selectionCost k u) ^ (2 / (u : ℝ)) ∧
       ∀ C : ℝ, 1 ≤ C →
       ∀ (lam : ℝ) (N₀ : ℕ),
@@ -111,7 +126,7 @@ theorem uniform_profile_constant_iteration (k u : ℕ) (hk : 2 ≤ k) (hu : k �
         meanValue ((u + 1) * k) k (X / p ^ e + 1) ≤ C * ((X : ℝ) / (p : ℝ) ^ e) ^ lam) →
       let delta := lam - 2 * (k : ℝ) * ((u : ℝ) + 1) + (k : ℝ) * ((k : ℝ) + 1) / 2
       ∀ (p a b xi eta X : ℕ) [Fact p.Prime],
-      a < b → p ^ (T * b) ≤ X → N₀ ≤ X / p ^ (T * b) + 1 →
+      a < b → p ^ ((k + d) ^ n * b) ≤ X → N₀ ≤ X / p ^ ((k + d) ^ n * b) + 1 →
       iterationConstant k u ^ 2 ≤ (p : ℝ) → eta < p ^ b →
       ∀ colourA colourB : Fin k → Bool,
       conditionedMoment p k a b xi eta X u colourA colourB / momentScale X p k u a b lam ≤
@@ -133,40 +148,39 @@ theorem uniform_profile_constant_iteration (k u : ℕ) (hk : 2 ≤ k) (hu : k �
         (Real.one_le_rpow (by linarith) (by positivity))
   induction n with
   | zero =>
-    refine ⟨1, by omega, 1, le_rfl, hceiling, ?_⟩
+    refine ⟨1, le_rfl, hceiling, ?_⟩
     intro C hC lam N₀ hdefect hbudget
     dsimp only
     intro p a b xi eta X inst hab hX hN hp heta colourA colourB
     have hp0 := Nat.Prime.pos (Fact.out : p.Prime)
     have hlam : 2 * (k : ℝ) * ((u : ℝ) + 1) - (k : ℝ) * ((k : ℝ) + 1) / 2 ≤ lam := by linarith
-    simp only [one_mul] at hX hN
+    simp only [pow_zero, one_mul] at hX hN
     obtain ⟨hXa, hNa⟩ := quotient_budget_mono hp0 hab.le hX hN
     have he := initial_profile (xi := xi) (eta := eta) hk hu hab.le
       ((Nat.pow_pos hp0).trans_le hX) hC hlam
       (hbudget p a X hp0 hXa hNa) (hbudget p b X hp0 hX hN) colourA colourB
     simpa only [affineProfile, mul_one] using he
   | succ n ih =>
-    obtain ⟨T, hT, B, hB, hBcap, hprev⟩ := ih
+    obtain ⟨B, hB, hBcap, hprev⟩ := ih (fun j hj => hdepth j (by omega))
+    let T := (k + d) ^ n
+    have hT : 1 ≤ T := Nat.one_le_pow n (k + d) (by omega)
     let beta := affineProfile ((k : ℝ) / u) ((1 - 1 / (u : ℝ)) * defect) ((k : ℝ) * u) n
     have hbeta : beta ≤ (k : ℝ) * u := affineProfile_le hr0 hr1 hc (by positivity) n
-    obtain ⟨d, hdsize⟩ := exists_nat_ge (max (k : ℝ) (-2 * (defect + (k : ℝ) * beta)))
-    have hdk : k ≤ d := by exact_mod_cast (le_max_left _ _).trans hdsize
-    have hddepth : -(d : ℝ) / 2 ≤ defect + (k : ℝ) * beta := by
-      have he := (le_max_right (k : ℝ) (-2 * (defect + (k : ℝ) * beta))).trans hdsize
-      linarith only [he]
+    have hddepth : -(d : ℝ) / 2 ≤ defect + (k : ℝ) * beta := hdepth n (by omega)
     let Bnext : ℝ := max 1 ((k.factorial : ℝ) *
       (1 + 2 * selectionCost k u * B) ^ (1 / (u : ℝ)))
     have hBnext : Bnext ≤ (k.factorial : ℝ) ^ 2 * (1 + 2 * selectionCost k u) ^ (2 / (u : ℝ)) := by
       apply max_le hceiling
       exact profile_constant_step_sharp (by exact_mod_cast Nat.factorial_pos k)
         (by unfold selectionCost; positivity) hB (by exact_mod_cast (show 2 ≤ u by omega)) hBcap
-    refine ⟨T * (k + d), by nlinarith only [hT, hk, hdk], Bnext, le_max_left _ _, hBnext, ?_⟩
+    refine ⟨Bnext, le_max_left _ _, hBnext, ?_⟩
     clear hBcap hceiling hBnext
     intro C hC lam N₀ hdefect hbudget
     let delta := lam - 2 * (k : ℝ) * ((u : ℝ) + 1) + (k : ℝ) * ((k : ℝ) + 1) / 2
     have hlam : 2 * (k : ℝ) * ((u : ℝ) + 1) - (k : ℝ) * ((k : ℝ) + 1) / 2 ≤ lam := by linarith
     dsimp only
     intro p a b xi eta X inst hab hX hN hp heta colourA colourB
+    rw [pow_succ] at hX hN
     have hp0 := Nat.Prime.pos (Fact.out : p.Prime)
     have hp1 : (1 : ℝ) ≤ p := by exact_mod_cast (Nat.Prime.one_lt (Fact.out : p.Prime)).le
     have hXpos : 0 < X := (Nat.pow_pos hp0).trans_le hX
@@ -232,6 +246,46 @@ theorem uniform_profile_constant_iteration (k u : ℕ) (hk : 2 ≤ k) (hu : k �
     rw [hbeta_next]
     exact he'.trans (mul_le_mul_of_nonneg_left (Real.rpow_le_rpow_of_exponent_le hp1 hexp)
       (mul_nonneg (zero_le_one.trans hC) (zero_le_one.trans (le_max_left _ _))))
+
+/-- The actual profile iteration has one explicit constant ceiling at every
+finite depth, without any dependence of that ceiling on the iteration count. -/
+theorem uniform_profile_constant_iteration (k u : ℕ) (hk : 2 ≤ k) (hu : k ≤ u)
+    (defect : ℝ) (hdefect0 : 0 ≤ defect) (n : ℕ) :
+    ∃ T : ℕ, 1 ≤ T ∧ ∃ B : ℝ, 1 ≤ B ∧
+      B ≤ (k.factorial : ℝ) ^ 2 * (1 + 2 * selectionCost k u) ^ (2 / (u : ℝ)) ∧
+      ∀ C : ℝ, 1 ≤ C →
+      ∀ (lam : ℝ) (N₀ : ℕ),
+      defect ≤ lam - 2 * (k : ℝ) * ((u : ℝ) + 1) + (k : ℝ) * ((k : ℝ) + 1) / 2 →
+      (∀ p e X : ℕ, 0 < p → p ^ e ≤ X → N₀ ≤ X / p ^ e + 1 →
+        meanValue ((u + 1) * k) k (X / p ^ e + 1) ≤ C * ((X : ℝ) / (p : ℝ) ^ e) ^ lam) →
+      let delta := lam - 2 * (k : ℝ) * ((u : ℝ) + 1) + (k : ℝ) * ((k : ℝ) + 1) / 2
+      ∀ (p a b xi eta X : ℕ) [Fact p.Prime],
+      a < b → p ^ (T * b) ≤ X → N₀ ≤ X / p ^ (T * b) + 1 →
+      iterationConstant k u ^ 2 ≤ (p : ℝ) → eta < p ^ b →
+      ∀ colourA colourB : Fin k → Bool,
+      conditionedMoment p k a b xi eta X u colourA colourB / momentScale X p k u a b lam ≤
+        (C * B) * (p : ℝ) ^ (delta * a +
+          affineProfile ((k : ℝ) / u) ((1 - 1 / (u : ℝ)) * defect) ((k : ℝ) * u) n * b) := by
+  have hu0 : (0 : ℝ) < u := by exact_mod_cast (by omega : 0 < u)
+  have hr0 : (0 : ℝ) ≤ (k : ℝ) / u := by positivity
+  have hr1 : (k : ℝ) / u ≤ 1 := (div_le_one hu0).mpr (by exact_mod_cast hu)
+  have hc : 0 ≤ (1 - 1 / (u : ℝ)) * defect := by
+    have hf : 1 / (u : ℝ) ≤ 1 := (div_le_one hu0).mpr (by exact_mod_cast (by omega : 1 ≤ u))
+    exact mul_nonneg (by linarith) hdefect0
+  let c := (1 - 1 / (u : ℝ)) * defect
+  obtain ⟨d, hd⟩ := exists_nat_ge (max (k : ℝ) (2 * k * n * c))
+  have hdk : k ≤ d := by exact_mod_cast (le_max_left _ _).trans hd
+  have hdsize : 2 * k * n * c ≤ (d : ℝ) := (le_max_right _ _).trans hd
+  have hdepth (j : ℕ) (hj : j < n) : -(d : ℝ) / 2 ≤ defect + (k : ℝ) *
+      affineProfile ((k : ℝ) / u) c ((k : ℝ) * u) j := by
+    have hlow := affineProfile_lower_bound hr0 hr1 hc (by positivity : 0 ≤ (k : ℝ) * u) j
+    have hjR : (j : ℝ) ≤ n := by exact_mod_cast hj.le
+    have hprod := mul_le_mul_of_nonneg_right hjR hc
+    have hscaled := mul_le_mul_of_nonneg_left hlow (Nat.cast_nonneg k)
+    nlinarith only [hscaled, hdsize, hdefect0,
+      mul_le_mul_of_nonneg_left hprod (Nat.cast_nonneg k)]
+  obtain ⟨B, hB, hcap, h⟩ := bounded_depth_profile_iteration k u hk hu defect hdefect0 n d hdk hdepth
+  exact ⟨(k + d) ^ n, Nat.one_le_pow n (k + d) (by omega), B, hB, hcap, h⟩
 
 /-- The entire profile constant ceiling is bounded by an explicit
 power with exponent linear in degree, independent of the profile depth. -/

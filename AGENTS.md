@@ -2423,6 +2423,336 @@ The Riesz critical profile remains the default RH explorer endpoint; expose
 the finite descent and explicit profile costs in its critical-moments view
 and Latest Update. See `docs/vinogradov-linear-constants.md`.
 
+The local quantitative continuation now exposes actual descendant depth.
+`VinogradovLinearProfile.bounded_depth_profile_iteration` gives `(k+d)^n`
+when `d>=k` and every earlier profile satisfies `-d/2<=defect+k*beta_j`.
+`VinogradovQuantitativeProfile` specializes to u=k,k>=4,defect=1/2:
+`n=2*k*(k+1)+4`, `T=(3*k)^n`, profile multiplier at most `(2*k*k)^(7*k)`.
+The complete initial allowance is at most
+`C*(1+selectionCost*(2*k*k)^(7*k))*p^(-1/2)`; its
+`half_defect_global_bound` transfers this through the original prime packet.
+The actual quotient moment budgets, packet inequality, size/depth and prime
+thresholds remain explicit hypotheses. Do not claim a new unconditional
+quantitative critical moment, degree-uniform zeta estimate or zero-free
+region. The old unconditional finite descent remains available but its
+all-endpoint constant is unevaluated. This explicit depth is an admissible
+proof cost, not an optimality or impossibility theorem. The relative-defect
+continuation below uses the quadratic resonance margin and pays its global
+costs. Work locally without commits or pushes until the user changes that
+instruction; the previously published harmonic Type-II no-go remains intact.
+
+The relative-defect continuation is now unconditional at its terminal bounds.
+`VinogradovRelativeProfile` uses defect k^2/q and 2*q steps with polynomial
+depth `(k+2*k^3)^(2*q)` for fixed q. `VinogradovQuantitativeDescent` specifies
+the packet, rounding, small-endpoint and accumulated iteration costs.
+Its `relative_moment_bound` proves the actual J_{k(k+1),k} bound at every
+X>=1 for k>=4 and 1<=q<=k^2, with the defined `momentMultiplier` and no
+supplied moment estimate. `VinogradovRelativeResonance` pays both q=128
+allowances and retains inverse-square saving 1/(256*k^2).
+`VinogradovQuantitativeDirichlet.feature_block_bound` reaches the literal
+damped zeta coefficients; all coefficients are defined, and M>=k*(k+1)
+is the starting scale. Do not keep listing these particular coefficients or
+cutoffs as existential. The stronger 1/(128*k^2) chain remains separately
+available with existential costs.
+The compiled `packet_square_power_le_momentMultiplier` audits our chosen
+allowance as at least 2^(packetDepth^2). This is not a lower bound on J or an
+impossibility theorem for sharper proofs. These oversized costs do not close
+uniform VK growth, all-scale analytic transport or a new zero-free region.
+The next literature target is the actual polynomial-system conditioning and
+differencing inequalities behind the s->s+k step in Bellotti Section 2 /
+Ford Section 3, including endpoint costs; a scalar recurrence alone is not
+that proof. See `docs/vinogradov-quantitative-descent.md`. Keep the default RH
+carrier, proved union and both ten-entry README lists unchanged. Continue
+local validation and amortize publication gates; no commits or pushes.
+
+The polynomial-system continuation is now in `VinogradovPolynomialRigidity`
+and `VinogradovPolynomialSystems`. Weighted triangular equations preserve
+all power-sum collisions, even over prime-power residue rings when the
+leading coefficients are regular. `HasType` indexes only the active m=k-d
+polynomials; retain the first d monomial-tail constraints in any future
+mixed-count definition. Literal finite differences give type (d+1,hT),
+and the first linear difference is proved constant. For p>max(k,2), p not
+dividing T, `type_integer_congruence_card_le` proves the actual distinct-
+residue polynomial count at degree moduli with factor
+m!*p^((r-d)*(r-d-1)/2), using natural truncated subtraction. All leading-unit
+and missing-precision costs are proved. This is the modular ingredient
+inside K-to-L conditioning; the next paragraph records the integral
+differencing step now proved separately.
+The polynomial-row transformation differs from common input translation;
+its checked transport is recorded below. See `docs/vinogradov-polynomial-systems.md`.
+
+The quantitative L-to-next-K integral step is now proved in
+`VinogradovMixedMoments`, `VinogradovDifferenceEnergy`,
+`VinogradovMixedDifferencing` and `VinogradovPolynomialDifferencing`.
+The complete mixed moment is its full-frequency tuple count; bounded
+boundary masks are paid at the even moment before interpolation. The
+literal residue energy is P plus twice the signed positive-shift overlaps.
+For M>=2 and q<=P, `exists_difference_bound` selects one fixed h in
+1..floor(P/q) and proves L<=max((2*M*P)^M*J,
+2*(2*floor(P/q))^M*K_h^(M/(2*(M-1)))*J^((M-2)/(2*(M-1)))).
+Finite Holder precedes integration and maximum selection. The diagonal
+case P<q is exact. `exists_typed_difference_bound` identifies the selected
+next type (d+1,T'), T'=(h*q)*T, T<=T'<=P*T. Constant-phase removal keeps
+every original tail coordinate in the same ambient torus. No boundary
+completion or mixed-moment estimate is assumed. The following nonsingular
+conditioning stage now supplies an actual count-to-integral bound.
+Do not claim a smaller final moment coefficient or new region from this
+step. Continue locally without commits, pushes or subagents.
+
+`VinogradovColourProducts`, `VinogradovPolynomialConditioning` and
+`VinogradovPolynomialNonsingular` now prove the actual nonsingular count
+bound S_ns<=m!*p^((r-d)*(r-d-1)/2)*L for a prime-dilated monomial tail.
+Full tuple colours, original endpoints and all d+m tail equations are
+retained; every required tail divisibility is proved. This is the last
+nonsingular stage after tail dilation, not the full original K count.
+`VinogradovNonsingularDescent.exists_nonsingular_descent` composes it with
+the quantitative difference bound and identifies the full tail moment
+with ordinary J_{s,d+m}(Q). Its next type, fixed displacement and every
+numerical cost are explicit. The separate existing
+`VinogradovNonsingularConditioning` module must remain intact.
+`VinogradovLowDegreeTail.exists_tail_class_bound` also proves the original
+nonsingular count is <=d!*p^(2s-d) times one fixed tail residue-class count
+at unchanged endpoints. The first d integer equations cancel the original
+nonzero dilation before prime reduction, with no p/q coprimality premise.
+Newton rigidity includes repeated residues, and finite Holder is applied
+before selecting the largest class integral. The possible extra endpoint
+is paid by the following continuation.
+
+`VinogradovEndpointDeletion.mixedMoment_succ_le` proves K(N+1)<=2*K(N)
+for the literal mixed count when N>=16*s^2 and s>=1, using its actual
+diagonal tail reserve and two-term weighted Holder.
+`VinogradovResidueEndpoint.exists_floor_tail_bound` applies the original
+quotient injection and pays its extra endpoint, reaching floor(Q/p) with
+factor 2*d!*p^(2s-d). The usual p<=2*M,32*s^2*M<=Q packet conditions
+discharge the floor threshold. `VinogradovBinomialRows.hasType_rowSystem`
+proves exact type preservation for the full binomial row operator.
+`VinogradovRowTransport.shifted_count_eq` preserves the literal solution
+count, including every low-degree and constant equation. For the actual
+tail q*(p*x+xi-p), its row shift is q*(p-xi), retaining the original q.
+
+`VinogradovPolynomialConditionedDescent.exists_conditioning` now proves
+S_3(p)<=2*d!*m!*p^(2s-d+(r-d)*(r-d-1)/2)*L(P,floor(Q/p);Phi;p,q,r).
+Its `exists_descent` takes this original nonsingular count all the way to
+an attained next polynomial type, with the same explicit differencing
+alternative and T<=T'<=P*T. There is no supplied analytic estimate or
+unpaid tail endpoint in this chain. The left side of that theorem still
+requires blocks distinct modulo the given eligible prime. The following
+continuation now supplies the unrestricted entry point.
+
+`VinogradovTypeMaximum.exists_maximizer` constructs an attained maximum
+of the actual natural-number mixed counts over every coefficient system
+and binary exponent of the fixed type. Doubling only the polynomial block
+stays in this family while retaining the identical original tail.
+`VinogradovMixedRepeated.repeated_integral_le` proves the three-factor
+Holder bound K(F)^(1-1/m)*K(2F)^(1/(2m))*J^(1/(2m)); no mixed-moment
+partial-dilation invariance is assumed. `VinogradovMixedExceptional`
+compresses literal repetitions, counts unordered position pairs on both
+blocks and proves K<=2*S_1 at the maximizing system for m>=2,P>=4*m^4.
+Its exact diagonal reserve also covers zero moments and equality at the
+threshold. `VinogradovPolynomialExceptional.exists_count_reduction`
+therefore bounds every original type count by twice a distinct-block
+count of an attained system of the same type, tail and endpoints.
+
+`VinogradovTwoBlockPacket` retains T times the unordered separation
+products of both blocks, with budget P^(d+2*choose(m,2)). The constructed
+R-prime Bertrand packet lies in (M,2^R*M], not (M,2M].
+`VinogradovPolynomialPrimeTransfer.exists_prime_carrying_count` selects
+one fixed prime avoiding T and separating both blocks, and proves
+K(F)<=2*R*S_3(p,G). `VinogradovUnrestrictedConditioning.exists_conditioning`
+joins all preceding steps into the full unrestricted K-to-L bound with
+coefficient 4*R*d!*m!*p^(2s-d+(r-d)*(r-d-1)/2). The explicit hypotheses
+include P>=4*m^4,0<T<=P^d,d+m<=M, the strict packet budget
+P^(d+2*choose(m,2))<M^R and 16*s^2*(2^R*M)<=Q. The exact fixed tail,
+its original q, and floor(Q/p) are retained. No moment estimate is supplied.
+
+The direct diagonal continuation now closes a controlled s->s+k
+iteration. `VinogradovDiagonalMoment.exists_diagonal_moment_step` uses
+the literal integer k-th root to force P<p^k, so the exact diagonal
+L=P^k*J identity removes the maximizing polynomial system. The actual
+moment defect contracts by 1-1/k. `VinogradovDiagonalThreshold` pays
+every small endpoint with the independent maximum max(H^S,D*C), not a
+new factor H^S at every iteration. `VinogradovDiagonalIteration` starts
+from the proved diagonal k-th moment and reaches defect <=k^2/256 after
+7k steps. `VinogradovDiagonalCost.explicit_relative_moment_bound` proves
+J_{(7k+1)k,k}(P)<=2^(18*k^6)*P^(2*(7k+1)*k-k*(k+1)/2+k^2/256)
+for every k>=2 and positive integer P, with no moment premise. Keep its
+actual tuple order (7k+1)k; the old Gaussian/Dirichlet transport fixes
+k(k+1) and cannot silently inherit this coefficient. See
+`docs/vinogradov-diagonal-descent.md`.
+
+The fixed-width continuation is now proved. `VinogradovShortPacket`
+uses the existing Suzuki bound psi-theta<=18*sqrt and actual Chebyshev
+estimates to construct exactly R primes in (M,8M] when M>=4096 and
+M>=9*R^2. The generic `exists_conditioning_of_packet` retains actual
+cardinality, upper endpoint and the complete two-block prime-product
+budget. With R=2*k^3, `VinogradovNarrowThreshold` pays every root-scale
+condition polynomially. `VinogradovNarrowCost.explicit_relative_moment_bound`
+proves the same actual moment and defect with coefficient
+(2^62*k^6)^(k^3), including all positive endpoints. Both moment coefficients
+and the whole Gaussian factor fit below 2^(2*r^2) for r=(7k+1)k.
+`VinogradovNarrowResonance.polynomial_bound` therefore has coefficient two
+and saving 1/(8192*k^2), at that actual tuple order. The original
+`VinogradovNarrowDirichlet.block_bound` has coefficient five:
+|sum_(n<M^4)(z+n)^(-it)|<=5*M^(4-1/(8192*k^2)), for k>=12,
+M>=(7k+1)k, M^(2k-2)<=t<=M^(2k) and M^4<=z<=2*M^4.
+Its partial-block bound is 3*ell*M^(-1/(8192*k^2))+2*M^2; the weighted
+bound retains actual mass and charges the boundary to the initial weight.
+`feature_block_bound` applies to literal damped zeta terms at every
+nonnegative real part. No moment premise or unevaluated degree coefficient
+remains in those theorems. See `docs/vinogradov-narrow-packet.md`.
+
+The all-scale continuation is now proved. `VinogradovDyadic` bounds the
+actual block on [X,2X) by
+6*X^(1-sigma-1/(32768*k^2))+2*X^(1/2-sigma), paying integer fourth-root
+rounding and the complete damping boundary. `VinogradovScaleSelection`
+constructs k and M in every middle block for n>=12 and
+t>=T_n=(16*(2*n+1)^2)^(2*n), with 12<=k<=2*n+1 and every original
+moment-order, root and time-rectangle condition discharged. The actual
+small blocks pay their damped mass; sixth- and fourth-derivative profiles
+pay both terms on every remaining scale through 4*t.
+`VinogradovNearOneBudget.canonical_block_bound` therefore pays every
+block in the literal eta reconstruction. With
+Delta_n=1/(65536*(2*n+1)^2) and a_n=2*Delta_n/n,
+`ZetaVinogradovBound.bound_abs` proves
+|zeta(1-Delta_n+i*t)|<=32768*|t|^a_n*log|t|/Delta_n for |t|>=T_n.
+`bound_strip_abs` covers 1-Delta_n<=sigma<1 with denominator 1-sigma.
+`bound_band_abs` proves exponent <=12288*(1-sigma)^(3/2) on each
+adjacent band 1-Delta_n<=sigma<=1-Delta_(n+1). Both signs of height,
+both eta prefixes, the endpoint, the infinite tail and the division
+cost are proved. `ZetaVinogradovEulerBound` then uses the existing direct
+Euler reconstruction on the same actual prefix to remove that entire
+1/(1-sigma) cost. Its coefficient is 8192, and `bound_strip_abs` covers
+the closed strip through sigma=1. `bound_band_abs` retains the same
+three-halves displacement exponent with no eta denominator. Keep the
+explicit band-dependent height threshold. See
+`docs/vinogradov-near-one-growth.md`.
+
+The complete VK zero detector and its joint height schedule are now proved.
+`ZetaEulerRightStrip` supplies the actual right-of-one bound;
+`ZetaVinogradovLocalDisc` covers the whole analytic disc above T_n+1.
+`ZetaVinogradovCanonical` retains the full divisor and its controlled
+analytic residual. `ZetaVinogradovSignedBudget` pays the three-height
+prime inequality with multiplicity and radial correction. The explicit
+reserve in `ZetaVinogradovMargin` gives actual nonvanishing at width
+Delta_n/(4096*Q_n), without an analytic or arithmetic premise.
+`VinogradovHeightSchedule` chooses floor((L/log L)^(1/3)) and pays the
+original degree-dependent threshold on that same moving schedule.
+`ZetaVinogradovScheduledMargin` gives Q_n<=8*log L eventually and pays
+the complete radius cost. `ZetaVinogradovZeroFree` therefore proves
+both zero-strip edges and literal closed-edge nonvanishing at width
+1/(19327352832*L^(2/3)*(log L)^(1/3)), L=log(abs(t)+2), above a finite
+unevaluated height. Its union keeps all existing explicit and eventual
+components. Every fixed earlier log-log coefficient is eventually
+strictly narrower, with no evaluated crossover. Do not call adaptive
+coverage or the classical-power zero detector open. The coefficient is
+conservative; benchmark constants and finite threshold evaluation remain
+open. See `docs/vinogradov-zero-free.md`. Keep the plotted finite-height
+region unchanged until a starting height for the new curve is proved;
+never draw an eventual component from an invented finite threshold.
+The signed angular improvement is now proved in
+`ZetaVinogradovAngularZeroFree`. The full radius Delta_n is available;
+`ZetaVinogradovAngularBound` uses the exact signed boundary moment and
+costs 2*A/(pi*Delta_n), retaining the full selected multiplicity and radial
+correction. `VinogradovScaledSchedule` chooses
+floor((L/log L)^(1/3)/64), paying the original threshold. On that same
+natural degree, `ZetaVinogradovBalancedBudget.cost_tendsto` proves the
+entire contradiction cost tends to 98560*C/(3*pi), including the
+leading Euler-center allowance 2/3. Actual zero exclusion and closed-edge
+nonvanishing follow for every 0<C<3*pi/98560; C=1/11000 is checked.
+`millionfold_improvement` compares that member with the earlier fixed VK
+component, not with the full union at every height. The union keeps every
+previous component, including the older VK width for arbitrarily small C.
+For C>=1/11000, `exists_eventual_union_compact` proves the README formula.
+The threshold remains finite and unevaluated. Keep the explicit plot
+unchanged. Do not call the degree schedule or signed angular payment open;
+the next major quantitative target is the actual moment-to-growth saving,
+followed by benchmark constants and finite starting-height evaluation.
+No world record, fixed-height arithmetic floor or RH conclusion follows.
+
+The shorter-moment continuation now gives the stronger actual endpoint
+`ZetaVinogradovSharperZeroFree`. `VinogradovExponentialDefect` retains the
+literal defect and proves its exponential decay. `VinogradovShortMoment`
+pays orders (3k+1)k and (4k+1)k with defects k^2/40 and k^2/100,
+coefficient (2^41*k^6)^(k^3), and every positive endpoint. Both moment
+coefficients and the variable-order Gaussian cost fit the true root with
+multiplier two. `VinogradovShortDirichlet.block_bound` has coefficient five
+and saving 1/(512*k^2) for k>=48, or 1/(1600*k^2) for 12<=k<48,
+with M>=(4k+1)k and the original time rectangle. All dyadic scales,
+including the low-degree range, are paid. `ZetaVinogradovSharperBound`
+proves coefficient 8192, Delta_n=1/(4096*(2*n+1)^2), a_n=2*Delta_n/n
+on the full closed strip for n>=48 above the original explicit T_n.
+At a fixed index the strip is sixteen times wider; its growth exponent
+also increases. Do not describe the width improvement as preserving that
+exponent. Adjacent bands have exponent at most 3072*(1-sigma)^(3/2).
+The generic `ZetaAngularDiscBudget` retains its explicit disc hypotheses;
+`ZetaVinogradovSharperCost.margin_of_budget` discharges both for actual zeta.
+The natural degree floor((L/log L)^(1/3)/32) pays the original height,
+gives normalized radius 1/16, profile cost five and Euler-center cost 2/3.
+The complete signed cost tends to 38080*C/(3*pi). Actual zero exclusion
+and closed-edge nonvanishing hold for 0<C<3*pi/38080, including 1/4500.
+`coefficient_gain` proves a ceiling increase of exactly 44/17, and
+`previous_limit_lt_rational` places the earlier signed ceiling below 1/4500.
+The complete union retains previous coverage; its compact formula holds
+for C>=1/4500. Update the README and VK explorer to this endpoint, while
+keeping the all-height explicit plot and default endpoint unchanged until
+a finite starting height is proved. The threshold is still unevaluated.
+The next quantitative target is stronger incomplete-system moment and
+block estimates toward published benchmark constants; the fixed-height
+Riesz floor, harmonic Type-II estimate, RH and world-record goal remain open.
+
+The retained scale-profile continuation now proves the stronger endpoint
+`ZetaVinogradovCubicZeroFree`. `VinogradovCubicSaving.degree_log_bound`
+keeps k*log(X)<=9*log(t)/4 at every actual high-degree block.
+`power_le_cubic_profile` retains the unmaximized exponent
+Delta*v-v^3/10368, v=log(X)/log(t); `cubic_le` bounds its full maximum by
+40*Delta*sqrt(Delta). The original lower-degree range, damping boundary,
+long-block profiles and expanded small-block range are all paid in
+`VinogradovCubicBudget`. `growth_lt_previous` proves the new exponent
+is less than 5/32 of its predecessor at a fixed strip displacement.
+The actual closed-strip zeta bound has coefficient 8192 and exponent
+40*Delta_n^(3/2) for n>=48, but now requires T_(8n), not T_n.
+Keep this larger starting threshold with every growth claim. The older
+bound remains proved at its earlier height. Adjacent bands have coefficient
+320. The natural degree floor((L/log L)^(1/3)/64) pays T_(8n)+1,
+with normalized radius 1/4, profile cost six and Euler-center cost 2/3.
+`ZetaVinogradovCubicCost.cost_tendsto` proves the complete signed cost
+limit 11200*C/(3*pi). Every 0<C<3*pi/11200 gives actual nonvanishing
+and both zero-strip edges; 1/1250 is checked. `coefficient_gain` proves
+an exact 17/5 ceiling increase over the preceding shorter-moment family.
+The compact union holds for C>=1/1250, retains previous coverage, and
+keeps its finite unevaluated threshold. This is the predecessor of the
+summed endpoint below. See `docs/vinogradov-cubic-profile.md`.
+
+The complete scale summation now proves `ZetaVinogradovSummedZeroFree`.
+`VinogradovCubicDecay.block_bound` retains -v^3/2097152 on every actual
+dyadic block, including small and lower-degree blocks and both terms of
+each long derivative profile. `VinogradovCubicSummation.sum_le` proves
+the full cubic tail is at most 1024*L^(2/3), by Gaussian comparison.
+Actual zeta is bounded by 1048576*|t|^(40*Delta_n^(3/2))*log(|t|)^(2/3)
+on 1-Delta_n<=Re(s)<=3/2 above the unchanged T_(8n), for n>=48.
+The larger absolute constant and sharper logarithmic exponent must both
+be stated. Both complete analytic profiles have normalized limit 17/3;
+the unchanged Euler-center allowance raises this to 19/3. The actual
+signed cost tends to 10640*C/(3*pi). The proved family is now
+0<C<3*pi/10640, including 1/1150, with an exact 20/19 coefficient-ceiling
+gain. The compact union holds for C>=1/1150. Use this endpoint in the
+README and VK explorer; retain the explicit all-height plot and default
+endpoint because the eventual starting height remains unevaluated.
+Stronger incomplete-system moments, asymmetric block estimates, published
+leading constants and finite starting heights remain open. This does not
+discharge the independent fixed-height Riesz floor or harmonic Type-II
+premise. No world-record claim is justified. See
+`docs/vinogradov-cubic-summation.md`. Continue locally without commits,
+pushes or subagents.
+
+The current fixed-width packet is not a proof of a packet in (M,2M]. The
+general mixed-type iteration remains a separate possible refinement;
+choose a fresh eligible prime for each new type parameter, as the previous
+prime generally divides T'. Keep the exact diagonal branch when P<p^r.
+The growing-height rectangle does not discharge the fixed-height harmonic
+Type-II premise. The independent signed floor and RH remain open. Continue locally
+without commits, pushes or subagents.
+
 Work in one coherent slice at a time. A slice should close a real lemma or
 interface needed by the current RH frontier, not merely add parallel
 abstractions.
@@ -3765,6 +4095,24 @@ repair, and verify the new exact commit. The user permits continued local
 mathematical work during CI; preserve exact-SHA status throughout.
 
 ## Research discipline
+
+The user-requested boundary-renewal test is recorded in
+`docs/zeta-riesz-boundary-renewal-audit.md`. The exact two-large threshold
+is log(p)>=log(n)-L, not p>N^2. `ZetaRieszPairBoundary` derives saturation
+from that literal support, proves the positive/negative boundary split,
+and evaluates the innermost layer. `ZetaRieszLeastPrimeRenewal` proves
+a terminating least-prime tree and its exact application to `pairForm`,
+retaining every original mask, allocation weight, incidence denominator,
+phase and unsaturated correction. `ZetaRieszRenewalWeightAudit` proves
+that prime deletion leaves the original unit log cell and gives no strict
+density-kernel contraction below the saddle. These are infrastructure and
+specific transfer obstructions, not a quantitative gain for the actual
+signed sum or a general impossibility theorem for renewal. The independent
+power saving, signed floor and restricted exclusion remain open. Do not
+weaken or rename `LocalizedTypeIIBound`, advance the public source frontier,
+or report this investigation as a successful arithmetic endgame. Further
+work needs a bound for the weighted signed error of a model, not another
+completion or unweighted renewal identity.
 
 The harmonic Type-II go/no-go test is recorded in
 `docs/zeta-riesz-typeii-go-no-go.md`. Decision: no-go with current inputs;

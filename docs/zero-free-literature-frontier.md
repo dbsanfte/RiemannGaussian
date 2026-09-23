@@ -18,6 +18,15 @@ The strict headline comparison now extends through **log-height 480000**.
 The interval below is not a height ceiling for the actual zero-free theorem,
 and coverage of every benchmark at every height remains open.
 
+The repository now also proves an unconditional
+[Vinogradov–Korobov family](vinogradov-zero-free.md), with width
+`C/(L^(2/3)*(log L)^(1/3))`, `L=log(|t|+2)`, for every
+`0<C<3*pi/10640`, including `C=1/1150`. Its starting height is
+unevaluated. It is formally unioned with every existing
+component and eventually strictly improves each earlier log-log coefficient.
+Its coefficient does not match the published VK constants below. This
+advance completes the classical-power mechanism, not the benchmark audit.
+
 ## Extended comparison for the complete region
 
 [ZetaGaussianExpandedComparison](../RiemannGaussian/ZetaGaussianExpandedComparison.lean)

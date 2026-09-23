@@ -38,7 +38,11 @@ below the Gaussian threshold. On the comparison interval now extended to
 [`ZetaGaussianExpandedComparison.nonvanishing_and_comparison`](../RiemannGaussian/ZetaGaussianExpandedComparison.lean)
 proves both literal nonvanishing on the
 **entire combined edge** and strict domination of the headline envelope.
-The eventual log-log component joins with its original unevaluated threshold.
+The eventual log-log component and the new
+[proved Vinogradov–Korobov component](vinogradov-zero-free.md) join by
+their maximum in `ZetaVinogradovSummedZeroFree.exists_eventual_union`.
+Both eventual starting thresholds remain unevaluated. The explicit
+region in this document retains its validity at every height.
 
 ## Original arithmetic consequence
 
@@ -63,17 +67,14 @@ Full coverage has **not** been achieved.
 
 The restored reserve substantially improves the low-height part of the
 picture. The inspected classical and Littlewood regions can still be wider
-there. At sufficiently large heights, the VK shape outgrows every fixed
-reciprocal-logarithm coefficient and every fixed log-log/log coefficient
-currently proved here. A constant adjustment to the Gaussian curve cannot
-remove that asymptotic gap.
-
-The required new analytic chain is quantitative high-moment control,
-logarithmic exponential-sum saving, near-one zeta growth, and an explicit
-zero detector with all starting heights and constants paid. See the
-[VK formalization status](vinogradov-korobov-framework.md). The existing
-signed phase expansion and exact moment/count identity are proved inputs;
-they do not yet supply the high-moment saving.
+there. The [complete VK chain](vinogradov-zero-free.md) now includes
+quantitative high-moment control, logarithmic exponential-sum saving,
+near-one zeta growth, a paid zero detector and a joint height schedule.
+Its classical-power width eventually strictly exceeds every fixed
+earlier log-log coefficient, as a compiled comparison proves.
+Its coefficient is still far weaker than the published VK benchmarks,
+and its starting height is unevaluated. Sharpening those constants and
+evaluating the coverage thresholds are the remaining quantitative tasks.
 
 Externally verified RH up to height `3e12` is a separate substantial
 certification target if the scope includes that finite-height result.

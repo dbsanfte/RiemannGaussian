@@ -21,10 +21,19 @@ The endpoint is
 Its `block` and `dirichletTerm` are the existing literal sum and complex
 power. Every moment, resonance, smoothing, Taylor and averaging cost is paid.
 Constants and starting thresholds are **unevaluated for each fixed degree**.
-This is a finite Dirichlet-sum theorem. Uniform control as the degree varies,
-all-scale zeta growth and a new Vinogradov–Korobov zero-free region remain open.
+This is a finite Dirichlet-sum theorem. Its later
+[all-scale continuation](vinogradov-near-one-growth.md) pays the degree
+costs and proves complete near-one zeta growth with explicit thresholds.
+A new Vinogradov–Korobov zero-free region remains open.
 The proved zero-free union and the independent signed Riesz obstruction are
 unchanged. No historical novelty or benchmark record is claimed here.
+
+A [quantitative continuation](vinogradov-quantitative-descent.md) now gives
+saving `1/(256k²)` with every coefficient specified and starting scale
+`M>=k(k+1)`, including the actual damped zeta coefficients. It pays a larger
+moment allowance `k²/128` using polynomial conditioning depth. Its complete
+cost audit shows why the size of the coefficient still needs improvement
+before it can support the benchmark VK transfer.
 
 ## Partial blocks and the original signed identity
 
@@ -199,24 +208,27 @@ Every translated tail and reciprocal-scale prefactor is included. This
 bounds the complete Gaussian constant after the actual moment root;
 the homogeneous moment constants remain separate.
 
-## Remaining analytic work
+## Quantitative continuation and remaining analytic work
 
-The degree-window saving is now quadratic and the actual block transfer is
-proved. The next major requirement is quantitative control of moment
-constants and starting thresholds **as the degree varies**, together with
-all-scale block decomposition and zeta-growth transport. The literal damping
-transfer and uniform Gaussian constants are already proved. Existential
-constants at each fixed degree do not supply that uniform theorem.
-The original Riesz carrier separately needs its combined signed correlation
-saving. No new zero-free width follows from the present block theorem alone.
+The [fixed-width packet continuation](vinogradov-narrow-packet.md) now
+pays both actual moment coefficients and the complete Gaussian cost
+uniformly at order `(7k+1)k`. The literal Dirichlet block has bound
+`5*M^(4-1/(8192*k^2))` for `k>=12`, `M>=(7k+1)k` and the stated height
+rectangle. Its weighted version retains actual amplitude mass and the
+original endpoint. No moment premise or unevaluated degree coefficient
+remains in that theorem. The older stronger fixed-degree saving retains
+its own, larger coefficient.
+
+The [all-scale continuation](vinogradov-near-one-growth.md) now proves
+complete near-one zeta growth with explicit thresholds, including
+continuous bands with a three-halves displacement exponent. The
+[joint schedule and zero detector](vinogradov-zero-free.md) now prove
+an actual classical-power region with a conservative coefficient and
+unevaluated starting height. Benchmark constants remain open. The original
+Riesz carrier separately needs its combined signed correlation saving.
 
 The compiled endpoints appear in the **Critical moments** view of the
 [RH explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/) and the
 Vinogradov–Korobov view of the [main explorer](https://dbsanfte.github.io/RiemannGaussian/).
 Their metadata, exact source locations and transitive axiom audits come from
 the ordinary Lean root.
-
-The [finite constant-preserving moment descent](vinogradov-linear-constants.md)
-now keeps A^n*k! at every positive integer endpoint and proves an explicit
-profile multiplier bound independent of conditioning iteration count. The
-complete degree dependence of the global moment coefficient remains open.

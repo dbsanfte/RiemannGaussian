@@ -5,7 +5,11 @@ exponent by a finite iteration, starting with the proved elementary estimate.
 The terminal bound applies at **every positive integer endpoint** and keeps
 its accumulated coefficient in the form `A^n * k!`. The profile coefficient
 also has an explicit bound independent of the number of conditioning steps.
-The complete degree dependence of the global coefficient is still open.
+For this arbitrary-defect theorem the coefficient remains unevaluated.
+A [quantitative relative-defect continuation](vinogradov-quantitative-descent.md)
+now specifies every degree cost at `u=k`, `defect=k²/q`, discharges the source
+moment hypotheses, and reaches the actual damped zeta blocks. Its coefficients
+are large; their improvement remains essential for uniform VK growth.
 
 This changes neither the proved zero-free region nor the default signed
 Riesz endpoint. These are refinements of the Vinogradov mean-value proof;
@@ -92,10 +96,66 @@ keeps the actual Hölder root and proves an invariant ceiling:
 
 The terminal `uniform_profile_degree_cost_iteration` applies this explicit
 ceiling to the **original conditioned energies**, at every finite iteration
-count. It keeps the source factor `C` linear. The descendant depth `T` is
-still chosen existentially and must satisfy the displayed cutoff and padded
-quotient conditions. This bound for `B_j` is not a bound for the complete
-final coefficient `A^n k!`.
+count. It keeps the source factor `C` linear. The existential depth interface
+is now a corollary of `bounded_depth_profile_iteration`: if every preceding
+profile satisfies `-d/2 <= defect + k*beta_j`, with `d >= k`, the actual
+descendant depth is `(k+d)^n`. This pays the displayed cutoff and padded
+quotient conditions. It does not yet bound the complete final coefficient
+`A^n k!`.
+
+## Evaluated depth for the actual critical high moment
+
+[`VinogradovQuantitativeProfile`](../RiemannGaussian/VinogradovQuantitativeProfile.lean)
+specializes the actual conditioning chain to `u=k`, `k>=4`, and a source
+exponent at least one half above critical. Set
+
+\[
+ n_k=2k(k+1)+4,\qquad T_k=(3k)^{n_k},\qquad
+ Q_k=(2k^2)^{7k},\qquad B_k=1+E Q_k.
+\]
+
+The exact profile is `beta_j=k^2-j(1-1/k)/2`. Its final value is
+`-1+2/k <= -1/2`, and every preceding profile is at least `-1`.
+Thus the single choice `d=2k` pays all intermediate descendant cutoffs.
+`half_defect_conditioned_bound` proves, with the original homogeneous
+quotient-moment budgets retained explicitly,
+
+\[
+ \frac{\text{conditionedMoment}}{\text{momentScale}}
+ \le C B\,p^{\delta a-b/2},\qquad 1\le B\le Q_k,
+ \qquad p^{T_k b}\le X.
+\]
+
+The theorem retains both colours, every residue and the quotient threshold
+`N_0 <= floor(X/p^(T_k*b))+1`. The prime-size condition is exactly
+`iterationConstant(k,k)^2 <= p`, with no dependence on `C`.
+`half_defect_initial_allowance` then bounds the **complete original initial
+allowance** by `C B_k p^(-1/2)`.
+
+`half_defect_global_bound` transports this through the original prime packet:
+
+\[
+ J_{k(k+1),k}(X)\le (2R)^2 C B_k X^\lambda M^{-1/2}.
+\]
+
+This requires the displayed quotient-moment budgets, `M,R>0`,
+`X^(k(k-1)) < M^R`, `4k^4 <= X`, `(2^R M)^T_k <= X`, the padded quotient
+threshold at that depth, and `iterationConstant(k,k)^2 <= M`.
+**These hypotheses have not been removed from this quantitative theorem.**
+The older unconditional finite critical-moment theorem is still available;
+its accumulated all-endpoint constant remains unevaluated.
+
+The depth grows as `exp(O(k^2 log k))`. This is an explicit admissible cost
+of this proof, not a lower bound on the best possible conditioning depth.
+It reveals a serious cost to resolve before seeking degree-uniform zeta
+bounds. For comparison, [Bellotti's Theorems 1.4 and 1.5](https://arxiv.org/html/2306.10680v1#S1)
+use quantitative mean-value bounds to obtain an exponential-sum estimate
+uniform in the height-to-length logarithmic ratio. Our new depth calculation
+does not reproduce that estimate or its zero-free region. The Gaussian
+resonance gain is quadratic in degree. The relative-defect continuation
+below uses that margin to replace this depth by a polynomial in `k` for
+fixed `q`; its resulting coefficient is still too large for the benchmark
+argument.
 
 ## The extra exponent-defect saving survives upstream
 
@@ -122,15 +182,21 @@ not yet been done.
 
 ## Remaining quantitative work
 
+The [relative-defect continuation](vinogradov-quantitative-descent.md) now
+completes the all-endpoint coefficient and decrement for `1<=q<=k²` and
+`u=k`. It proves that the Gaussian step tolerates `q=128` and carries the
+specified constants to the actual Dirichlet blocks. This does not evaluate
+the sharper arbitrary fixed-defect theorem stated above.
+
 The finite descent removes the qualitative infimum from this proof route,
 and the explicit profile ceiling removes growth in that coefficient with
-the profile iteration count. A uniform zeta estimate still needs evaluated
-bounds on descendant depth, prime-packet and rounding costs, and the final
-multiplier/decrement. Those bounds must then enter the existing
+the profile iteration count. Descendant depth is now evaluated at `u=k`
+and the half-unit defect used by the actual block-saving chain. A uniform
+zeta estimate still needs substantially smaller degree costs than the
+now-explicit relative-defect multiplier. Sharper bounds must then enter the existing
 [actual damped Dirichlet-block saving](vinogradov-gaussian-power-saving.md)
 and its all-scale analytic transport. Neither a larger universal zero-free
 region nor the independent signed Riesz cancellation follows yet.
 
-All six modules are imported by the ordinary root. The status generator and
-explorers export their actual statements, source lines, dependency paths and
-transitive axiom audits. The exhaustive numerical certificate stays optional.
+The modules are imported by the ordinary root. The exhaustive numerical
+certificate stays optional; this local iteration does not rerun it.

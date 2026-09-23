@@ -65,7 +65,8 @@ upper endpoint is certified, not asserted maximal. The shaded interval is
 
 Numerical crossings visible outside the grey band are illustrations, not
 additional Lean comparison theorems. Eventual bounds, including our own
-log-log component, are omitted because their coefficient-dependent starting
+log-log component and [new proved VK component](../vinogradov-zero-free.md),
+are omitted because their starting
 heights have not been numerically evaluated. External finite RH verification
 is also outside this analytic edge-width comparison and has not been imported.
 
