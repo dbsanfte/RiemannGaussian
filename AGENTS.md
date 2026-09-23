@@ -2850,10 +2850,33 @@ with the published maximum coefficient; defect decrease is proved.
 recurrence from the proved diagonal moment at all positive endpoints,
 with no source or intermediate moment estimate left as a premise.
 `ShortPrimeSupply` is an explicit UNPROVED arithmetic hypothesis: exactly
-k^3 primes in every (M,(1+omega)M] for real M>=V. Scalar restrictions on
-rank/depth schedules are also still explicit. Next prove dense prime
-supply, construct the optimized rank/maximal-depth schedule and bound its
-actual coefficient and defect. Do not list scale/cutoff admissibility,
+k^3 primes in every (M,(1+omega)M] for real M>=V. The general sequence
+retains scalar restrictions on arbitrary schedules.
+`VinogradovFordRank` now constructs Ford's rounded rank
+floor(k-Delta/k+1) and maximal depth, proving every scalar restriction
+throughout k-1<=Delta<=k(k-1)/2, including the final rank-k boundary
+step. `VinogradovFordSelectedIteration` uses
+these choices in the actual all-endpoint moment sequence, stopping the
+defect update once Delta<=k-1 and then raising the moment trivially without
+coefficient loss. Its moment theorem has no schedule-admissibility premise.
+`VinogradovFordScaleError` proves (3.12) and the full finite triangular
+error sum. `VinogradovFordQuantitativeScale` proves the original
+0.071/k^4 terminal error, 0.16/k^3 stationary reserve and
+16/(7*k^2*r) first-scale error for every k>=1000.
+`VinogradovFordDefectRate.selectedDefect_rate` proves Ford's exact
+normalized recurrence (3.14), including 32/21 and 16/7, for the selected
+sequence. `VinogradovFordLowerDefect` proves strict positivity and the
+geometric lower envelope through the boundary and stopped steps.
+`VinogradovFordPotentialIteration.potential_cumulative` now proves
+H(d_J)<=H(d_0)-2J/k+67/(50k), with H(d)=d+log(d)+log(2-d), for
+k>=1000 whenever every preceding defect exceeds k. The endpoint condition
+Delta_J>k-1 implies that active-prefix condition. The signed quadratic
+potential gain and full reciprocal-defect sum pay the uniform 1.34/k
+allowance. Short-prime supply remains unproved; these scalar estimates
+do not assume it. Next evaluate the potential endpoints, prove dense
+prime supply and the closed coefficient/defect estimates with Ford's
+published constants and order range. Do not list rank/maximal-depth
+selection, scale/cutoff admissibility,
 numerical one-step coefficient, recursive quotient sizes or all-endpoint
 moment induction as still open. Do not claim Ford's closed quantitative
 bound or a zeta region from the conditional sequence alone.
@@ -2864,6 +2887,9 @@ with the paper's constants. Retain the wrapped Gaussian estimates as
 auxiliary work; defer further optimization and zero-detector transport
 until the literature chain is reproduced. No published zeta-region benchmark,
 new zero-free endpoint, or RH arithmetic floor follows from this slice.
+On 2026-09-24 the user authorized committing and pushing the accumulated
+local work. This supersedes the earlier local-only publication hold;
+the prohibition on subagents remains in force.
 
 The user's "no shortcuts" instruction applies to this reproduction: keep
 the full published omega range, constants and height domains. Do not

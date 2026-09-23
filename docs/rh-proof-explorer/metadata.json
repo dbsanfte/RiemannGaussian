@@ -16,17 +16,17 @@
       "changeReason": "The strict Type-II go/no-go test proves the numerical reduction but identifies an unproved parity-sensitive estimate; current sieve rates and the fixed-height VMVT mismatch do not discharge it. Stop expanding this route until new arithmetic input is found."
     },
     "latestUpdate": {
-      "sequence": 59,
-      "id": "literal-quarter-gap-skew-decay",
+      "sequence": 60,
+      "id": "ford-selected-potential-iteration",
       "kind": "theorem",
-      "title": "The literal quarter-gap skew box decays after allocation.",
-      "body": "Exact three-prime factorial identities retain the second-largest-prime incidence, full phase and original masks. A joint binomial-tail estimate proves that the unassigned N/4 skew box decays geometrically at source scale, uniformly in height for 0<=u<=10001/20000. It cannot supply a fixed positive reserve; any nonzero limiting source before allocation stays in the old allocated piece.",
-      "next": "The full ownership correction and the wider N/5 box remain unestimated. No new zero exclusion or sufficient signed floor is claimed.",
+      "title": "Ford's selected iteration has a cumulative potential bound.",
+      "body": "The rounded rank and maximal depth now feed the actual moment iteration, including its final boundary step. Lean proves strict positivity and, for k>=1000 along an active prefix, cumulative logarithmic-potential decrease with the full 1.34/k error allowance. These scalar estimates need no prime-supply premise; the moment bound still requires dense short-prime supply.",
+      "next": "Potential endpoint evaluation, the closed coefficient bound and short-prime supply remain open. This slice proves no larger zero-free region or independent RH arithmetic floor.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszSkewBoundTheorem"
+        "fordPotentialIterationTheorem"
       ],
-      "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
+      "documentation": "docs/vinogradov-literature-reproduction.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -3323,6 +3323,25 @@
         "rieszSkewScope"
       ],
       "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
+    },
+    {
+      "id": "ford-selected-iteration",
+      "label": "Ford literature iteration · prime supply open",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "fordSelectedMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "fordPotentialIterationTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "fordSelectedIterationScope"
+      ],
+      "documentation": "docs/vinogradov-literature-reproduction.md"
     }
   ],
   "scopes": {
@@ -7892,6 +7911,18 @@
     "RiemannGaussian.ZetaRieszSkewAllocation.second_composite_convolution": {
       "label": "The original second-prime cofactor row splits into three literal prime legs",
       "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
+    },
+    "RiemannGaussian.VinogradovFordSelectedIteration.selected_moment_bound": {
+      "label": "Selected all-endpoint moment bound",
+      "summary": "The actual homogeneous moment uses the constructed rounded rank and maximal depth, including the final rank-k boundary step. Dense short-prime supply remains an explicit unproved arithmetic premise.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.VinogradovFordPotentialIteration.potential_cumulative": {
+      "label": "Cumulative Ford potential bound",
+      "summary": "For k>=1000 and an active prefix of the actual selected sequence, H(d_J)<=H(d_0)-2J/k+67/(50k). The signed quadratic gain and reciprocal-defect budget are proved without a prime-supply premise. Endpoint evaluation and the closed moment coefficient remain open.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
     }
   },
   "moduleFamilies": {

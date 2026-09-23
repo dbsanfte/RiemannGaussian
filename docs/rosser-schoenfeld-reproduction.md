@@ -633,7 +633,7 @@ all 400 numerical checkpoints. Its output proposes data, while
 This extends the **complete finite verification from height 26 to 54**.
 It does not reproduce the required low-zero verification through the
 published height near 22000. The full list and count, actual prime-count
-bounds, short-prime supply, optimized schedules and published VK region
+bounds, short-prime supply, closed numerical moment bounds and published VK region
 remain open. The public default region and RH arithmetic frontier are
 unchanged.
 

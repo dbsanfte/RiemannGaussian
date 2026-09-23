@@ -452,9 +452,18 @@ at exact roots. `VinogradovFordGlobalStep.all_endpoint_bound` pays small
 endpoints with the original maximum coefficient.
 `VinogradovFordMomentSequence.iterated_moment_bound` starts at the proved
 diagonal moment and iterates at every positive integer endpoint, with no
-source moment premise. Actual dense prime supply and scalar-admissible
-rank/depth schedules remain explicit inputs; the published optimized
-schedule and closed numerical estimates still require proof. The sharper
+source moment premise. `VinogradovFordRank` now constructs the published
+rounded rank and maximal depth and proves their scalar admissibility.
+`VinogradovFordSelectedIteration.selected_moment_bound` removes that
+schedule premise from the actual moment estimate, retaining dense prime
+supply. `VinogradovFordScaleError`, `VinogradovFordQuantitativeScale` and
+`VinogradovFordDefectRate` prove Ford's original numerical first-scale
+budget and normalized defect recurrence (3.14), with constants unchanged.
+The selected sequence includes the final rank-k step down to Delta<=k-1.
+`VinogradovFordLowerDefect` proves positivity through every step, and
+`VinogradovFordPotentialIteration.potential_cumulative` sums the signed
+potential gain with the exact 1.34/k reciprocal-error allowance. Potential
+endpoint evaluation and the closed coefficient bound still require proof. The sharper
 Bellotti 2.3 scale recurrence remains a distinct audit; see the
 [reproduction ledger](vinogradov-literature-reproduction.md).
 The

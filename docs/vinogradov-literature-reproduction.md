@@ -18,7 +18,8 @@ reported constants in the [literature audit](zero-free-literature-frontier.md).
 | Bellotti 2.1 / Ford 3.2' | Conditioning with an actual short prime packet | General packet bound proved; required packet existence remains open |
 | Bellotti 2.2 / Ford 3.3' | Differencing into the next literal mixed count | Proved for integer endpoints, including the diagonal case |
 | Bellotti 2.4 / Ford 3.4 | Original mixed iteration with its stated coefficients and thresholds | Original coefficient, defect and starting height proved with constructed scales and integer cutoffs under Ford's stationary-scale criterion; only the dense prime supply remains an arithmetic input at this step |
-| Ford 3.5 | Repeated original iteration from the diagonal moment at every positive endpoint | Proved with the published coefficient recurrence for supplied short-prime supply and scalar-admissible rank/depth schedules; optimized schedule selection and numerical bounds remain open |
+| Ford 3.5 | Repeated original iteration from the diagonal moment at every positive endpoint | Proved with the published coefficient recurrence; the concrete rank and maximal depth are now constructed, leaving short-prime supply as the arithmetic premise |
+| Ford 3.6 | Quantitative original iteration for `k>=1000` | Published one-step normalized defect estimate (3.14) and cumulative logarithmic-potential bound proved, including the full `1.34/k` error budget; endpoint evaluation and the closed coefficient bound remain open |
 | Bellotti 2.3 and 2.5 | Sharper scales and repeated moment-order iteration | Sharper scale normalization under audit; full quantitative iteration open |
 | Bellotti 1.4 and 2.8 | Complete and smooth incomplete moment estimates | Published numerical bounds open |
 | Bellotti 1.5 | Block coefficient `8.7979`, exponent denominator `132.94357` | Open |
@@ -285,10 +286,100 @@ this formula. After `J` steps, for `J+1<=k^2`, it bounds the actual moment
 of order `(J+1)k` at **every** positive integer endpoint. Its coefficient
 and defect are explicit finite recurrences. The initial defect range is
 preserved by proof, and no source or intermediate moment bound remains a
-premise. The short-prime supply and the displayed scalar restrictions on
-the rank/depth schedules remain hypotheses. This does not yet construct
-the paper's maximal depths or optimized rank schedule, nor prove the later
-closed numerical coefficient/defect estimates.
+premise. This general theorem retains the short-prime supply and the
+displayed scalar restrictions on arbitrary rank/depth schedules. The
+published selection below now discharges those scalar restrictions.
+
+## Published rank selection and quantitative defect decrease
+
+[`VinogradovFordRank`](../RiemannGaussian/VinogradovFordRank.lean)
+constructs the paper's rank and largest permitted depth:
+
+```math
+r=\left\lfloor k-\frac{\Delta}{k}+1\right\rfloor,\qquad
+n=\max\left\{d:\ 10(d+1)\le9r,\ d(d-1)\le y\right\}.
+```
+
+Here the local depth `n` is the paper's `j-1`. For
+`k<=Delta<=k(k-1)/2`, `admissible` proves every scalar condition of the
+actual moment step, including `4<=r<=k`, a nonempty depth set and
+`phi^*>=1/(k+1)`. The reserve satisfies `y>=2k-2`; no depth or stationary
+condition is supplied as an extra hypothesis. `admissible_to_boundary`
+also covers `k-1<=Delta<=k`, where the rounded rank is exactly `k`.
+
+[`VinogradovFordSelectedIteration.selected_moment_bound`](../RiemannGaussian/VinogradovFordSelectedIteration.lean)
+uses these choices in the actual all-endpoint moment sequence, starting
+from the diagonal count. It uses the original recurrence while `Delta>k-1`.
+The final rank-`k` step from `k-1<Delta<=k` lands at `Delta'<=k-1`.
+It then keeps that defect and raises the moment order by the proved trivial
+comparison, with no further coefficient loss. Stopping at `Delta<=k`
+would be premature for the top of the paper's stated order range, where
+the requested closed bound can be below `k`. Short-prime supply remains
+explicit; no scalar admissibility
+hypothesis remains in this selected moment theorem.
+
+[`VinogradovFordScaleError`](../RiemannGaussian/VinogradovFordScaleError.lean)
+proves the half-contraction in (3.12) and sums every triangular forcing
+term with a finite quadratic supersolution. The actual first scale obeys
+
+```math
+\phi_0-\phi^*\le \frac{2^{-n}}r+\frac{2\phi^*}{kr}.
+```
+
+[`VinogradovFordQuantitativeScale`](../RiemannGaussian/VinogradovFordQuantitativeScale.lean)
+then proves the paper's numerical error budget for **every** `k>=1000`,
+through an integer square-root depth candidate and exact polynomial
+induction:
+
+```math
+2^{-n}\le\frac{0.071}{k^4},\qquad
+\phi^*\le\frac8{7k}-\frac{0.16}{k^3},\qquad
+\phi_0-\phi^*\le\frac{16}{7k^2r}.
+```
+
+[`VinogradovFordDefectRate.selectedDefect_rate`](../RiemannGaussian/VinogradovFordDefectRate.lean)
+applies this to the literal selected sequence. With
+`d=Delta/k^2` and `d'=Delta'/k^2`, it proves Ford's exact (3.14):
+
+```math
+d'\le d\left[1-\frac{2-d}{2-d^2}
+ \left(\frac2k-\frac{32}{21k^2}-\frac{16}{7dk^3}\right)\right].
+```
+
+The proof retains the rank-rounding information in (3.16). A quadratic
+denominator interpolation proves the upper bound in (3.17) from its two
+endpoints; their exact margins have numerators
+`d^2*((2-d^2)*k-1)` and `d*(2+d)`. No calculus or unexplained numerical
+optimization is assumed.
+
+[`VinogradovFordLowerDefect`](../RiemannGaussian/VinogradovFordLowerDefect.lean)
+proves strict positivity and the lower recurrence
+`Delta_(j+1)>=Delta_j*(1-2/k)`, including boundary and stopped steps.
+Thus the logarithms used below are well-defined on the actual selected
+sequence, rather than on an assumed positive comparison sequence.
+
+[`VinogradovFordPotential`](../RiemannGaussian/VinogradovFordPotential.lean)
+retains the signed cubic logarithm remainder. For the actual comparison
+step it proves the potential decrease `-b-(2/5)b^2`; the quadratic gain
+recovers the full `2/k` rate. Then
+[`VinogradovFordPotentialIteration.potential_cumulative`](../RiemannGaussian/VinogradovFordPotentialIteration.lean)
+pays the complete reciprocal-defect sum and gives
+
+```math
+H(d_J)\le H(d_0)-\frac{2J}{k}+\frac{67}{50k},\qquad
+H(d)=d+\log d+\log(2-d),\qquad d_j=\frac{\Delta_j}{k^2}.
+```
+
+This holds for `k>=1000` while every preceding `Delta_i>k`.
+`active_prefix` derives that condition whenever the endpoint satisfies
+`Delta_J>k-1`. The error allowance is the paper's exact `1.34/k`;
+none of these scalar estimates assumes short-prime supply.
+
+The closed bounds in Lemma 3.6 still require evaluation of the potential
+endpoints and coefficient-product estimates, with the original
+`1.69`, `2.055`, `5.91` and `9.7278` constants and order range intact.
+Those bounds, the short-prime supply and the subsequent zeta/VK transport
+are not claimed by the selected recurrence.
 
 The required dense prime-packet estimate must also be proved. The existing
 `(M,8M]` packet cannot silently replace the paper's narrower interval while
@@ -319,8 +410,8 @@ The new arbitrary-order Euler–Maclaurin evaluator has a checked uniform
 error below 10^(-12) through height 22000 on the right half-strip, excluding
 the pole. This is an evaluation bound, not a low-zero certificate.
 This is now the principal external arithmetic input left at the original
-mixed-iteration stage. The sharper Bellotti 2.3 scale audit, optimized
-schedule and numerical complete/incomplete moments, and block/zero-detector
+mixed-iteration stage. The sharper Bellotti 2.3 scale audit, closed
+numerical complete/incomplete moments, and block/zero-detector
 transport remain open. No published zeta-region benchmark is reproduced by
 the conditional moment sequence alone.
 

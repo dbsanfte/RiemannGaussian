@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**232 modules.** Source links open the definitions, hypotheses and proofs.
+**240 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [CosineHinge](../../RiemannGaussian/CosineHinge.lean)
@@ -110,13 +110,21 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovFiniteCritical](../../RiemannGaussian/VinogradovFiniteCritical.lean)
 - [VinogradovFirstExponent](../../RiemannGaussian/VinogradovFirstExponent.lean)
 - [VinogradovFordCoefficient](../../RiemannGaussian/VinogradovFordCoefficient.lean)
+- [VinogradovFordDefectRate](../../RiemannGaussian/VinogradovFordDefectRate.lean)
 - [VinogradovFordGlobalStep](../../RiemannGaussian/VinogradovFordGlobalStep.lean)
 - [VinogradovFordIteration](../../RiemannGaussian/VinogradovFordIteration.lean)
+- [VinogradovFordLowerDefect](../../RiemannGaussian/VinogradovFordLowerDefect.lean)
 - [VinogradovFordMoment](../../RiemannGaussian/VinogradovFordMoment.lean)
 - [VinogradovFordMomentSequence](../../RiemannGaussian/VinogradovFordMomentSequence.lean)
 - [VinogradovFordParameters](../../RiemannGaussian/VinogradovFordParameters.lean)
+- [VinogradovFordPotential](../../RiemannGaussian/VinogradovFordPotential.lean)
+- [VinogradovFordPotentialIteration](../../RiemannGaussian/VinogradovFordPotentialIteration.lean)
+- [VinogradovFordQuantitativeScale](../../RiemannGaussian/VinogradovFordQuantitativeScale.lean)
+- [VinogradovFordRank](../../RiemannGaussian/VinogradovFordRank.lean)
+- [VinogradovFordScaleError](../../RiemannGaussian/VinogradovFordScaleError.lean)
 - [VinogradovFordScales](../../RiemannGaussian/VinogradovFordScales.lean)
 - [VinogradovFordSchedule](../../RiemannGaussian/VinogradovFordSchedule.lean)
+- [VinogradovFordSelectedIteration](../../RiemannGaussian/VinogradovFordSelectedIteration.lean)
 - [VinogradovFordStep](../../RiemannGaussian/VinogradovFordStep.lean)
 - [VinogradovFordTailThreshold](../../RiemannGaussian/VinogradovFordTailThreshold.lean)
 - [VinogradovFourierEvaluation](../../RiemannGaussian/VinogradovFourierEvaluation.lean)

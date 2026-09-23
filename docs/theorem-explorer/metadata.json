@@ -2520,6 +2520,25 @@
         "vkRieszScope"
       ],
       "documentation": "docs/zeta-riesz-conditioned-energy.md"
+    },
+    {
+      "id": "ford-selected-iteration",
+      "label": "Ford literature iteration · prime supply open",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "fordSelectedMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "fordPotentialIterationTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "fordSelectedIterationScope"
+      ],
+      "documentation": "docs/vinogradov-literature-reproduction.md"
     }
   ],
   "families": [
@@ -6271,6 +6290,18 @@
       "label": "Literal zeta nonvanishing on the complete summed-profile union",
       "overview": true,
       "documentation": "docs/vinogradov-zero-free.md"
+    },
+    "RiemannGaussian.VinogradovFordSelectedIteration.selected_moment_bound": {
+      "label": "Selected all-endpoint moment bound",
+      "summary": "The actual homogeneous moment uses the constructed rounded rank and maximal depth, including the final rank-k boundary step. Dense short-prime supply remains an explicit unproved arithmetic premise.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.VinogradovFordPotentialIteration.potential_cumulative": {
+      "label": "Cumulative Ford potential bound",
+      "summary": "For k>=1000 and an active prefix of the actual selected sequence, H(d_J)<=H(d_0)-2J/k+67/(50k). The signed quadratic gain and reciprocal-defect budget are proved without a prime-supply premise. Endpoint evaluation and the closed moment coefficient remain open.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
     }
   }
 }

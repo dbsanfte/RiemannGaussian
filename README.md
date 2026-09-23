@@ -149,10 +149,10 @@ The harmonic-cost route has an evaluated source and paid wing, reserve and domin
 
 ### Latest Update
 
-**The literal quarter-gap skew box decays after allocation.** Exact three-prime factorial identities retain the second-largest-prime incidence, full phase and original masks. A joint binomial-tail estimate proves that the unassigned N/4 skew box decays geometrically at source scale, uniformly in height for 0<=u<=10001/20000. It cannot supply a fixed positive reserve; any nonzero limiting source before allocation stays in the old allocated piece.
-The full ownership correction and the wider N/5 box remain unestimated. No new zero exclusion or sufficient signed floor is claimed.
-[Current checked endpoint](RiemannGaussian/ZetaRieszSkewCarrier.lean#L125)
-· [Proof details](docs/zeta-riesz-skew-allocation-audit.md).
+**Ford's selected iteration has a cumulative potential bound.** The rounded rank and maximal depth now feed the actual moment iteration, including its final boundary step. Lean proves strict positivity and, for k>=1000 along an active prefix, cumulative logarithmic-potential decrease with the full 1.34/k error allowance. These scalar estimates need no prime-supply premise; the moment bound still requires dense short-prime supply.
+Potential endpoint evaluation, the closed coefficient bound and short-prime supply remain open. This slice proves no larger zero-free region or independent RH arithmetic floor.
+[Current checked endpoint](RiemannGaussian/VinogradovFordPotentialIteration.lean#L263)
+· [Proof details](docs/vinogradov-literature-reproduction.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
