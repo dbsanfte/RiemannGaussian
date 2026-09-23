@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**354 modules.** Source links open the definitions, hypotheses and proofs.
+**358 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -268,6 +268,10 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszSharpPair](../../RiemannGaussian/ZetaRieszSharpPair.lean)
 - [ZetaRieszShiftedHeadBudget](../../RiemannGaussian/ZetaRieszShiftedHeadBudget.lean)
 - [ZetaRieszSignedFrequency](../../RiemannGaussian/ZetaRieszSignedFrequency.lean)
+- [ZetaRieszSkewAllocation](../../RiemannGaussian/ZetaRieszSkewAllocation.lean)
+- [ZetaRieszSkewCarrier](../../RiemannGaussian/ZetaRieszSkewCarrier.lean)
+- [ZetaRieszSkewFactorial](../../RiemannGaussian/ZetaRieszSkewFactorial.lean)
+- [ZetaRieszSkewIncidence](../../RiemannGaussian/ZetaRieszSkewIncidence.lean)
 - [ZetaRieszSmallCompositeCells](../../RiemannGaussian/ZetaRieszSmallCompositeCells.lean)
 - [ZetaRieszSmoothCofactor](../../RiemannGaussian/ZetaRieszSmoothCofactor.lean)
 - [ZetaRieszSmoothDeletion](../../RiemannGaussian/ZetaRieszSmoothDeletion.lean)

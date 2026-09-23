@@ -3252,7 +3252,11 @@
     "ZetaRieszWideOwnerAudit": "arithmetic",
     "ZetaRieszWideCompanion": "arithmetic",
     "ZetaRieszWidePhase": "arithmetic",
-    "ZetaRieszWideOwnerObstruction": "arithmetic"
+    "ZetaRieszWideOwnerObstruction": "arithmetic",
+    "ZetaRieszSkewAllocation": "arithmetic",
+    "ZetaRieszSkewIncidence": "arithmetic",
+    "ZetaRieszSkewFactorial": "arithmetic",
+    "ZetaRieszSkewCarrier": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

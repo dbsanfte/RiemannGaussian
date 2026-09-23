@@ -1539,6 +1539,33 @@ signed cancellation inside the correction. The public zero-free region,
 RH frontier, README and top-ten lists remain unchanged. Work locally
 without commits, pushes or subagents.
 
+### Literal quarter-gap skew test (2026-09-23)
+
+`docs/zeta-riesz-skew-allocation-audit.md` records the concrete rank-two
+test from `7a659cb`. `ZetaRieszSkewFactorial` proves the exact three-leg
+factorial identity and finite nonowner partition of
+`ownerCompletionCorrection`; no composite cofactor is completed and no
+pair incidences are averaged. For the box `25*(h+1)<=N`, `j-l>=N/4`, the
+old unassigned factor and the skew order mass have joint bound
+`3*exp(-N/8100)`. `ZetaRieszSkewCarrier.skewResponse_bound` turns this into
+a source-normalized geometric bound with a checked rate below one for
+`0<=u<=10001/20000`, uniformly in arbitrary moving heights on the original
+dyadic schedule. Its norm cannot supply any fixed positive reserve.
+
+Keep the allocation distinction exact: weight-one nonowner correction
+rows split into the old allocated fraction and the unassigned fraction.
+`tendsto_raw_sub_allocated` proves their difference vanishes; it does NOT
+prove either weight-one or allocated response vanishes separately. The
+full correction remains unestimated. Do not claim the numerical 0.0084
+reserve survives the original allocation, or that a source was bounded
+by moving it into that correction. Stop the quarter-gap reserve attempt.
+The wider N/5 box is not ruled out by this theorem. Neither a restricted
+zero exclusion nor a general obstruction to all rank-two estimates has
+been proved. Keep `LocalizedTypeIIBound`, all public frontiers and the
+top-ten lists unchanged. The user authorized committing and pushing this
+checked slice on 2026-09-23; apply the publication gates below. Continue
+to work without subagents.
+
 ## Current theorem-push commit gate
 
 On 2026-09-05 the user explicitly changed the objective to an overnight Lean

@@ -16,17 +16,17 @@
       "changeReason": "The strict Type-II go/no-go test proves the numerical reduction but identifies an unproved parity-sensitive estimate; current sieve rates and the fixed-height VMVT mismatch do not discharge it. Stop expanding this route until new arithmetic input is found."
     },
     "latestUpdate": {
-      "sequence": 58,
-      "id": "height54-and-wide-owner-obstruction",
+      "sequence": 59,
+      "id": "literal-quarter-gap-skew-decay",
       "kind": "theorem",
-      "title": "Zeros through height 54 certified; wide-owner completion restores a source.",
-      "body": "All nontrivial zeros through height 54 are proved to lie on the critical line, with a complete multiplicity count of 22. Literature groundwork now includes finite prime anchors, interval evaluators and Ford iteration. The wider unique-owner allocation gives geometric decay of the unallocated triple mass, but its unmasked complete companion remains nondecaying under the exposed-zero hypotheses, even after adding the existing reserve.",
-      "next": "The owner/mask correction still needs an independent signed estimate. No new exclusion follows from this detour; published benchmark constants and the original Type-II target remain open.",
+      "title": "The literal quarter-gap skew box decays after allocation.",
+      "body": "Exact three-prime factorial identities retain the second-largest-prime incidence, full phase and original masks. A joint binomial-tail estimate proves that the unassigned N/4 skew box decays geometrically at source scale, uniformly in height for 0<=u<=10001/20000. It cannot supply a fixed positive reserve; any nonzero limiting source before allocation stays in the old allocated piece.",
+      "next": "The full ownership correction and the wider N/5 box remain unestimated. No new zero exclusion or sufficient signed floor is claimed.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszWideOwnerReserveTheorem"
+        "rieszSkewBoundTheorem"
       ],
-      "documentation": "docs/zeta-riesz-wide-owner-audit.md"
+      "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -3280,6 +3280,49 @@
         "rieszWideOwnerScope"
       ],
       "documentation": "docs/zeta-riesz-wide-owner-audit.md"
+    },
+    {
+      "id": "harmonic-skew-allocation",
+      "label": "Obstruction · literal quarter-gap skew reserve vanishes",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSkewRowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSkewFactorialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSkewPartitionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSkewJointTailTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSkewBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSkewDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSkewNoReserveTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSkewAllocationTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSkewScope"
+      ],
+      "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
     }
   ],
   "scopes": {
@@ -7809,12 +7852,56 @@
       "label": "No-go: complete companion plus reserve does not decay",
       "overview": true,
       "documentation": "docs/zeta-riesz-wide-owner-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.log_kernel_convolution": {
+      "label": "Keep the small-prime logarithm in its exact factorial convolution",
+      "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.second_neg_riesz": {
+      "label": "Exactly two reflected-large primes give minus Riesz equals log r",
+      "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.skewAtom_eq_factorials": {
+      "label": "Literal three-leg identity, with the old allocation retained",
+      "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.correction_eq_nonowner_rows": {
+      "label": "Exact finite nonowner partition of the existing correction",
+      "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.literal_missing_skew_bound": {
+      "label": "Joint allocation/order tails are at most 3 exp(-N/8100)",
+      "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.skewResponse_bound": {
+      "label": "Uniform source-scale geometric bound on the literal quarter-gap box",
+      "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.tendsto_skewResponse": {
+      "label": "The literal skew contribution vanishes at arbitrary moving heights",
+      "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.not_eventually_norm_skewResponse_ge": {
+      "label": "No fixed positive reserve of either sign from this box",
+      "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.tendsto_raw_sub_allocated": {
+      "label": "Any weight-one source stays in the old allocated piece",
+      "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.second_composite_convolution": {
+      "label": "The original second-prime cofactor row splits into three literal prime legs",
+      "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
     }
   },
   "moduleFamilies": {
     "ZetaRieszWideOwnerAudit": "arithmetic",
     "ZetaRieszWideCompanion": "arithmetic",
     "ZetaRieszWidePhase": "arithmetic",
-    "ZetaRieszWideOwnerObstruction": "arithmetic"
+    "ZetaRieszWideOwnerObstruction": "arithmetic",
+    "ZetaRieszSkewAllocation": "arithmetic",
+    "ZetaRieszSkewIncidence": "arithmetic",
+    "ZetaRieszSkewFactorial": "arithmetic",
+    "ZetaRieszSkewCarrier": "arithmetic"
   }
 }

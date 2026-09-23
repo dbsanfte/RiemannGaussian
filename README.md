@@ -149,10 +149,10 @@ The harmonic-cost route has an evaluated source and paid wing, reserve and domin
 
 ### Latest Update
 
-**Zeros through height 54 certified; wide-owner completion restores a source.** All nontrivial zeros through height 54 are proved to lie on the critical line, with a complete multiplicity count of 22. Literature groundwork now includes finite prime anchors, interval evaluators and Ford iteration. The wider unique-owner allocation gives geometric decay of the unallocated triple mass, but its unmasked complete companion remains nondecaying under the exposed-zero hypotheses, even after adding the existing reserve.
-The owner/mask correction still needs an independent signed estimate. No new exclusion follows from this detour; published benchmark constants and the original Type-II target remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszWideOwnerObstruction.lean#L244)
-· [Proof details](docs/zeta-riesz-wide-owner-audit.md).
+**The literal quarter-gap skew box decays after allocation.** Exact three-prime factorial identities retain the second-largest-prime incidence, full phase and original masks. A joint binomial-tail estimate proves that the unassigned N/4 skew box decays geometrically at source scale, uniformly in height for 0<=u<=10001/20000. It cannot supply a fixed positive reserve; any nonzero limiting source before allocation stays in the old allocated piece.
+The full ownership correction and the wider N/5 box remain unestimated. No new zero exclusion or sufficient signed floor is claimed.
+[Current checked endpoint](RiemannGaussian/ZetaRieszSkewCarrier.lean#L125)
+· [Proof details](docs/zeta-riesz-skew-allocation-audit.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
