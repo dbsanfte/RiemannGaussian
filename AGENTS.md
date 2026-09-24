@@ -2975,6 +2975,32 @@ statements reproduce classical constants, not a new zero-free region or
 prime-count theorem. The analytic and finite-verification gaps in the
 Rosser ledger, and the unchanged short-prime supply target, remain open.
 
+`RosserSchoenfeldExplicitFormula.finite_prime_explicitFormula` now proves
+the actual smoothed von-Mangoldt formula at every real x>=1, with all
+nontrivial-zero multiplicities, both signs and the full trivial-zero
+correction. The complex Laplace transforms, absolute integrability,
+sum-integral exchanges and Fourier uniqueness are proved, not assumed.
+`RosserSchoenfeldZeroTail.value_le` pays the complete inverse-square tail
+above T by (8+2*log T)/T for every T>=2, using the actual positive xi
+Poisson mass, actual prime-power positivity and the digamma bound.
+The existing signed-pole edge and cutoff exp(3*sqrt(t)/8) give
+`RosserSchoenfeldLargeSmoothed.abs_prime_sub_main_lt`: the literal smoothed
+error is below exp(t)/(64*t^2) for every t>=4900. Exact rational Taylor
+anchors and the complete zero tail pay the bound.
+`RosserSchoenfeldLargeChebyshev` now proves actual psi error <=0.40*x/log x
+and actual theta error <=0.41*x/log x for every x>=exp(5000), by monotone
+desmoothing at step 1/(4*log x) and the proved proper-prime-power allowance.
+`abs_theta_sub_self_lt_published` discharges the strict 0.47 allowance
+throughout the source's final range. This is a proved alternative using
+our stronger existing zero-free region; it does NOT claim the paper's
+sharper exponential Theorem 11 error, the smaller source ranges or the
+full actual prime-count estimates. No larger low-zero table is assumed.
+Keep ShortPrimeSupply unchanged and explicitly unproved until all its
+arithmetic requirements are paid. The public zero-free frontier, top-ten
+lists, RH signed-floor status and 67.31% certificate are unchanged.
+Expose this as the separate `rosser-prime-error` endpoint in both explorers;
+do not draw a proved edge to prime supply or a published VK benchmark.
+
 `ZetaEulerMaclaurin.zeta_eq` now gives the arbitrary-order actual zeta
 expansion with the literal signed Bernoulli tail. `norm_error_le` pays
 that full tail by an explicit finite coefficient allowance.

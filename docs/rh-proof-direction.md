@@ -9,6 +9,15 @@ evaluated. The smaller signed carrier retains the exact source. Its
 independent floor remains open; no first restricted zero exclusion or RH
 proof is claimed.
 
+The optional **Rosser prime error · final large range proved** endpoint
+tracks a separate supporting step in the literature-reproduction campaign:
+the actual smoothed prime formula and complete high-zero tail now give
+psi error <=0.40*x/log(x) and theta error <=0.41*x/log(x) for every
+x>=exp(5000). This discharges the source's final 0.47 theta allowance.
+It does not prove the smaller ranges, full prime-count estimates,
+ShortPrimeSupply, a published VK benchmark or the RH signed floor.
+See the [exact proof and remaining ranges](rosser-schoenfeld-reproduction.md).
+
 ## Direction and obstruction
 
 Prove a first restricted contradiction by completing the evaluated

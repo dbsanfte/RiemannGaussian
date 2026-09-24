@@ -13,6 +13,8 @@ strictly less than `0.47 / log x`, as required in the proof of Theorem 31.
 The exponential is bounded by a proved Taylor term, with exact factorial
 arithmetic. This proves the numerical implication only: the actual
 prime-error bound in Theorem 11 remains a separate analytic obligation.
+`RosserSchoenfeldLargeChebyshev` now proves the required large-range
+theta allowance independently from the stronger proved zero-free edge.
 -/
 
 namespace RiemannGaussian.RosserSchoenfeldError

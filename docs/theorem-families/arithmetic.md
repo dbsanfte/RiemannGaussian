@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**366 modules.** Source links open the definitions, hypotheses and proofs.
+**379 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -52,13 +52,26 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [RieszHarmonicCostBounds](../../RiemannGaussian/RieszHarmonicCostBounds.lean)
 - [RosserSchoenfeldAnchor](../../RiemannGaussian/RosserSchoenfeldAnchor.lean)
 - [RosserSchoenfeldBounds](../../RiemannGaussian/RosserSchoenfeldBounds.lean)
+- [RosserSchoenfeldChebyshevBudget](../../RiemannGaussian/RosserSchoenfeldChebyshevBudget.lean)
 - [RosserSchoenfeldComparison](../../RiemannGaussian/RosserSchoenfeldComparison.lean)
 - [RosserSchoenfeldCubeMass](../../RiemannGaussian/RosserSchoenfeldCubeMass.lean)
+- [RosserSchoenfeldDesmoothing](../../RiemannGaussian/RosserSchoenfeldDesmoothing.lean)
 - [RosserSchoenfeldError](../../RiemannGaussian/RosserSchoenfeldError.lean)
 - [RosserSchoenfeldEulerConstant](../../RiemannGaussian/RosserSchoenfeldEulerConstant.lean)
+- [RosserSchoenfeldExplicitFormula](../../RiemannGaussian/RosserSchoenfeldExplicitFormula.lean)
 - [RosserSchoenfeldFourthMass](../../RiemannGaussian/RosserSchoenfeldFourthMass.lean)
+- [RosserSchoenfeldLaplace](../../RiemannGaussian/RosserSchoenfeldLaplace.lean)
+- [RosserSchoenfeldLargeChebyshev](../../RiemannGaussian/RosserSchoenfeldLargeChebyshev.lean)
+- [RosserSchoenfeldLargeSmoothed](../../RiemannGaussian/RosserSchoenfeldLargeSmoothed.lean)
+- [RosserSchoenfeldPrimeKernel](../../RiemannGaussian/RosserSchoenfeldPrimeKernel.lean)
+- [RosserSchoenfeldPrimePrimitive](../../RiemannGaussian/RosserSchoenfeldPrimePrimitive.lean)
 - [RosserSchoenfeldSharpConstants](../../RiemannGaussian/RosserSchoenfeldSharpConstants.lean)
+- [RosserSchoenfeldSmoothedError](../../RiemannGaussian/RosserSchoenfeldSmoothedError.lean)
+- [RosserSchoenfeldSmoothingBudget](../../RiemannGaussian/RosserSchoenfeldSmoothingBudget.lean)
+- [RosserSchoenfeldTrivialPrimitive](../../RiemannGaussian/RosserSchoenfeldTrivialPrimitive.lean)
 - [RosserSchoenfeldZeroMass](../../RiemannGaussian/RosserSchoenfeldZeroMass.lean)
+- [RosserSchoenfeldZeroPrimitive](../../RiemannGaussian/RosserSchoenfeldZeroPrimitive.lean)
+- [RosserSchoenfeldZeroTail](../../RiemannGaussian/RosserSchoenfeldZeroTail.lean)
 - [RosserSchoenfeldZetaTwo](../../RiemannGaussian/RosserSchoenfeldZetaTwo.lean)
 - [RosserSchoenfeldZetaTwoBudget](../../RiemannGaussian/RosserSchoenfeldZetaTwoBudget.lean)
 - [RosserSchoenfeldZetaTwoSample](../../RiemannGaussian/RosserSchoenfeldZetaTwoSample.lean)

@@ -32,6 +32,9 @@ Here every Lean occurrence of π is `Nat.primeCounting ⌊x⌋₊`.
 | Actual logarithmic derivative at two | −Re(ζ′(2)/ζ(2))<569960994/10⁹, with every numerical and analytic error paid | [RosserSchoenfeldZetaTwo](../RiemannGaussian/RosserSchoenfeldZetaTwo.lean) |
 | Sharper Archimedean constants | Euler's constant is below 577215666/10⁹ and log π is above 1144729883/10⁹ | [RosserSchoenfeldSharpConstants](../RiemannGaussian/RosserSchoenfeldSharpConstants.lean) |
 | Last numerical error comparison | The paper's ε(x)<0.47/log(x) for every x≥exp(5000) | [RosserSchoenfeldError](../RiemannGaussian/RosserSchoenfeldError.lean) |
+| Actual smoothed prime formula | The literal finite von-Mangoldt sum equals its elementary term minus the complete nontrivial-zero primitive plus the complete trivial-zero correction | [RosserSchoenfeldExplicitFormula](../RiemannGaussian/RosserSchoenfeldExplicitFormula.lean) |
+| Complete high-zero tail | For every T≥2, the full inverse-square norm mass above T is at most (8+2 log T)/T | [RosserSchoenfeldZeroTail](../RiemannGaussian/RosserSchoenfeldZeroTail.lean) |
+| Actual large-range prime error | For x≥exp(5000), abs(ψ(x)−x)≤0.40x/log(x) and abs(θ(x)−x)≤0.41x/log(x), paying the required strict 0.47 theta allowance | [RosserSchoenfeldLargeChebyshev](../RiemannGaussian/RosserSchoenfeldLargeChebyshev.lean) |
 | Ford short packet transport | Exact finite prime packet from the two displayed actual prime-count bounds, with every numerical side condition derived | [VinogradovRosserPrimeSupply](../RiemannGaussian/VinogradovRosserPrimeSupply.lean) |
 
 The anchor uses a complete kernel-checked list of the 230 primes and an
@@ -55,7 +58,9 @@ The scalar error comparison uses the same $R$ in
 \epsilon(x)=\sqrt{\log x}\exp\!\left(-\sqrt{\frac{\log x}{R}}\right).
 ```
 
-It does **not** prove θ(x) or ψ(x) lies within this error of x.
+That scalar comparison does **not** prove θ(x) or ψ(x) lies within this
+particular exponential error of x. The actual logarithmic allowance
+needed above exp(5000) is now proved independently below.
 
 `shortPrimeSupply_of_primeCounting` gives the existing, unchanged
 `ShortPrimeSupply k omega` for every $k\ge26$ and
@@ -117,8 +122,9 @@ The two higher constants are now proved as well:
 These are the remaining classical constants recorded in Helfgott's
 Appendix A, equation (A.4), with attribution there to Rosser (1941),
 Lemma 17. The Lean proofs establish summability and retain the complete
-zero divisor; they assume no external zero table or RH. The smoothed
-explicit-formula bounds, larger finite verification and actual prime-count
+zero divisor; they assume no external zero table or RH. The explicit
+formula and large-range prime error below are now proved. The larger
+finite verification, remaining source ranges and full actual prime-count
 estimates remain open. No larger zero-free region or independent RH
 arithmetic floor follows from these auxiliary estimates.
 
@@ -174,7 +180,82 @@ at least one. Subtracting this proved total saving from the square/fourth
 comparison gives `norm_cube_mass_lt`. No additional zero verification is
 needed for either higher-power constant.
 
-## The analytic and finite-verification gap
+## Actual explicit formula and the large-range prime error
+
+For every real $t\ge0$, put
+
+```math
+Q(t)=\sum_{1\le n\le e^t}\Lambda(n)(t-\log n),\qquad
+Z(t)=\sum_\rho m_\rho\frac{e^{\rho t}-1}{\rho^2},\qquad
+H(t)=\sum_{n\ge1}\frac{1-e^{-2nt}}{4n^2}.
+```
+
+[prime_eq_spectral](../RiemannGaussian/RosserSchoenfeldExplicitFormula.lean)
+proves the unconditional identity
+
+```math
+Q(t)=e^t-1-\log(2\pi)t-Z(t)+H(t).
+```
+
+The finite prime-power window is literal. Both zero series converge
+absolutely, including all nontrivial-zero multiplicities and both signs.
+The proof evaluates each complete Laplace transform on Re(s)>1 and uses
+proved Fourier inversion on one vertical line. Every sum–integral exchange,
+continuity statement and constant at the origin is justified.
+`finite_prime_explicitFormula` gives the same formula at every real x≥1
+for the actual sum of Λ(n) log(x/n). The exact signed series is retained
+alongside its bounds.
+
+[ZeroTail.value_le](../RiemannGaussian/RosserSchoenfeldZeroTail.lean)
+proves, without a larger finite zero verification,
+
+```math
+\sum_{|\Im\rho|\ge T}\frac{m_\rho}{|\rho|^2}
+\le\frac{8+2\log T}{T}\qquad(T\ge2).
+```
+
+Each tail atom is bounded by 4/T times its positive Poisson atom at the
+real point T. The exact complete xi mass, actual prime-power positivity
+and proved digamma bound then pay the full tail. This is a usable
+explicit tail estimate; it does not assert the sharper published
+zero-count constants or the missing larger finite verification.
+
+Writing d(T)=792/(7625 log(T+2)−2000), the existing signed-pole region
+and the full tail give
+
+```math
+|Q(t)-(e^t-1-\log(2\pi)t)|
+<\frac{463}{10000}\bigl(e^{(1-d(T))t}+1\bigr)
++e^t\frac{8+2\log T}{T}+\frac{\pi^2}{24}.
+```
+
+The concrete cutoff T=exp(3√t/8), with exact rational Taylor bounds,
+proves [LargeSmoothed.abs_prime_sub_main_lt](../RiemannGaussian/RosserSchoenfeldLargeSmoothed.lean):
+
+```math
+|Q(t)-(e^t-1-\log(2\pi)t)|<\frac{e^t}{64t^2}\qquad(t\ge4900).
+```
+
+Monotonicity of the original prime events, using the step 1/(4t),
+then gives the actual unsmoothed bounds in
+[RosserSchoenfeldLargeChebyshev](../RiemannGaussian/RosserSchoenfeldLargeChebyshev.lean):
+
+```math
+|\psi(x)-x|\le\frac{2x}{5\log x},\qquad
+|\theta(x)-x|\le\frac{41x}{100\log x}
+<\frac{47x}{100\log x}\qquad(x\ge e^{5000}).
+```
+
+All proper prime powers and the exact linear correction are paid.
+`abs_theta_sub_self_lt_published` therefore discharges the **whole final
+range** of the required source theta comparison, with a stronger constant
+and its original starting point. This proof uses the repository's stronger
+already-proved zero-free edge. It does not reproduce Theorem 11's sharper
+exponential error expression or remove the outstanding lower ranges.
+The full prime-count estimates, unchanged ShortPrimeSupply premise,
+published VK benchmarks and an enlarged zero-free region remain open.
+
+## The remaining analytic and finite-verification gap
 
 Rosser–Schoenfeld's section 6 uses the verification of the first 25000
 nontrivial zeros, a sharp zero-count estimate, explicit zero sums and
@@ -190,7 +271,7 @@ Theorem 31's theta bound is assembled across these ranges:
 | 16000 to 10⁸ | Theorems 18 and 19 |
 | 10⁸ to 10¹⁶ | Theorem 24 and the justified Table I |
 | 10¹⁶ to exp(5000) | Corollary of Theorem 14 and the justified Table I |
-| Above exp(5000) | Actual Theorem 11 prime-error estimate; its final scalar comparison is now proved |
+| Above exp(5000) | **Complete:** actual theta error ≤0.41x/log(x), hence strictly below the required 0.47 allowance, by `abs_theta_sub_self_lt_published` |
 
 The narrower 0.31 range and the remaining section 7 comparisons also need
 their stated inputs. The existing qualitative PNT gives no numerical

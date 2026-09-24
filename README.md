@@ -149,9 +149,9 @@ The harmonic-cost route has an evaluated source and paid wing, reserve and domin
 
 ### Latest Update
 
-**All three classical reciprocal zero-sum constants are proved.** Lean now proves the complete inverse-cube zero sum is below 0.00167 and the inverse-fourth sum is below 0.0000744, alongside the earlier 0.0463 inverse-square bound. Summability, analytic multiplicities and both ordinate signs are retained. The proofs combine exact xi Poisson masses, a kernel-checked zeta derivative estimate and a strict saving from the verified first conjugate pair.
-Complete the smoothed explicit-formula and quantitative prime-error estimates needed for the unchanged short-prime supply target. The published VK benchmarks and an enlarged zero-free region remain open.
-[Current checked endpoint](RiemannGaussian/RosserSchoenfeldCubeMass.lean#L100)
+**The actual large-range prime error is proved.** Lean now proves the exact smoothed prime formula and pays the complete high-zero tail. For every x>=exp(5000), the actual psi error is at most 0.40*x/log x and the actual theta error at most 0.41*x/log x, strictly below the required 0.47 allowance. The proof retains the complete signed zero expansion, uses the existing proved zero-free edge and discharges every smoothing, boundary and proper-prime-power cost.
+Complete the smaller source ranges and finite verification needed for the full prime-count estimates and unchanged short-prime supply. The published VK benchmarks and an enlarged zero-free region remain open.
+[Current checked endpoint](RiemannGaussian/RosserSchoenfeldLargeChebyshev.lean#L128)
 · [Proof details](docs/rosser-schoenfeld-reproduction.md).
 <!-- RH_DIRECTION:END -->
 

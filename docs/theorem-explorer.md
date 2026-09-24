@@ -78,6 +78,16 @@ Generated helpers link to their enclosing Lean declaration with that fact
 explicitly labelled. Source locations come from Lean's declaration ranges,
 including original private definitions for inlined pattern-match equations.
 
+The **Rosser prime error · final large range proved** endpoint follows
+the actual smoothed prime explicit formula, complete high-zero tail and
+monotone desmoothing. It proves psi error at most 0.40*x/log(x) and theta
+error at most 0.41*x/log(x) for every x>=exp(5000), discharging the required
+strict 0.47 theta allowance on that whole range. The smaller source ranges
+and full prime-count estimates remain open. This supporting endpoint
+does not enlarge the default zero-free region or prove ShortPrimeSupply.
+The [reproduction ledger](rosser-schoenfeld-reproduction.md) records the
+exact identities, constants and remaining dependencies.
+
 The **Separation** endpoint keeps finite Gaussian zero groups and displays
 the right and left rectangle counts and the reciprocal-distance bound.
 Its scope distinguishes the rectangle depth `2*d(t)`, isolation depth

@@ -2586,6 +2586,41 @@
         "rosserZeroMassScope"
       ],
       "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    {
+      "id": "rosser-prime-error",
+      "label": "Rosser prime error · final large range proved",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserSmoothedPrimeFormulaTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserHighZeroTailTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserLargeSmoothedErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserLargePsiErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserLargeThetaErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserPublishedLargeThetaTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rosserPrimeErrorScope"
+      ],
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
     }
   ],
   "families": [
@@ -6515,6 +6550,42 @@
     "RiemannGaussian.RosserSchoenfeldCubeMass.norm_cube_mass_lt": {
       "label": "Complete inverse-cube mass below 0.00167",
       "summary": "A positive square/fourth-power comparison retains a strict excess from the rigorously isolated first conjugate pair. The complete multiplicity-weighted inverse-cube sum is below 167/100000.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldExplicitFormula.finite_prime_explicitFormula": {
+      "label": "Actual smoothed prime explicit formula",
+      "summary": "The literal finite sum of Lambda(n)*log(x/n), for every real x>=1, equals its elementary term and the two complete zero corrections. All convergence and Laplace inversion hypotheses are discharged.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldZeroTail.value_le": {
+      "label": "Complete high-zero tail paid",
+      "summary": "At every T>=2, the complete inverse-square mass above height T is at most (8+2*log T)/T. The exact positive xi Poisson mass pays every omitted zero and multiplicity.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldLargeSmoothed.abs_prime_sub_main_lt": {
+      "label": "Actual smoothed error below exp(t)/(64*t^2)",
+      "summary": "The existing zero-free edge, the fully paid tail and exact rational anchors prove the bound for every t>=4900. There is no assumed prime-error estimate or additional finite zero table.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldLargeChebyshev.abs_psi_sub_exp_le": {
+      "label": "Actual psi error at most 0.40*x/log x",
+      "summary": "Monotone desmoothing of the original prime-power events at step 1/(4*t) gives the two-sided bound for every x=exp(t), t>=5000.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldLargeChebyshev.abs_theta_sub_exp_le": {
+      "label": "Actual theta error at most 0.41*x/log x",
+      "summary": "The proved allowance for all proper prime powers transfers the complete psi bound to actual theta, throughout t>=5000.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldLargeChebyshev.abs_theta_sub_self_lt_published": {
+      "label": "Published final-range theta allowance discharged",
+      "summary": "For every real x>=exp(5000), the actual theta error is strictly below 0.47*x/log x. The stronger 0.41 constant is proved. Smaller source ranges and full prime-count estimates remain open.",
       "overview": true,
       "documentation": "docs/rosser-schoenfeld-reproduction.md"
     }
