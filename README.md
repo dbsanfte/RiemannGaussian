@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-The harmonic-cost route retains its evaluated source and an open independent -3/40 floor. We now keep all prime counts in an interior largest/least-prime share box, with exact factorial weights, masks and phase. The continuum cascade is evaluated, but the standard one-prime Abel allowance grows at source scale. Fully coupled signed prime-discrepancy transport and the rest of the carrier remain open.
+The harmonic-cost route retains its evaluated source and an open independent -3/40 floor. We test the all-count packet using simple exposed-zero phases. Exceptional orders, the factorial rectangle and old allocation now have independent geometric error bounds. The signed cutoff tail and literal masked phase transfer remain open; the rest still needs joint arithmetic cancellation.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ The harmonic-cost route retains its evaluated source and an open independent -3/
 
 ### Latest Update
 
-**All-count continuum identity proved; standard Abel allowance still grows.** Lean proves the exact nonempty cascade transform 1/(w*z), cutoff renewal with its boundary source, and a literal packet/rest ledger retaining the finite factorial weights. The interior packet has at most 39 prime factors. The current one-prime absolute-variation Abel allowance diverges at source scale; this is an audit of that bound, not a lower bound on the actual signed error.
-Prove a joint signed weighted prime-discrepancy estimate or cancel its surviving first variation with paid higher errors. No packet norm bound, -3/40 floor or restricted zero exclusion is proved.
-[Current checked endpoint](RiemannGaussian/ZetaRieszCascadeAbelAudit.lean#L233)
-· [Proof details](docs/zeta-riesz-continuum-cascade-audit.md).
+**Three factorial losses paid at source scale; the rest still needs signed cancellation.** Lean bounds low-order mass by 39 exp(-N/400), omitted rectangle mass by 6 exp(-N/6000), and old allocation by 39 exp(-N/1000). Each gives geometric decay for its literal arithmetic error. Good prime orders now meet the simple-zero phase range. The first supported cutoff insertion is below 1/1000000.
+The full cutoff tail and phase transfer through the remaining coupled masks are open. A numerical delay model suggests a tiny cutoff defect, but is not a certificate. Lean proves the existing independent allowance for fullParityRest still diverges; no packet floor or zero exclusion is claimed.
+[Current checked endpoint](RiemannGaussian/ZetaRieszParityShareError.lean#L127)
+· [Proof details](docs/zeta-riesz-zero-parity-audit.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

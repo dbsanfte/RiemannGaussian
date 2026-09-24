@@ -3468,7 +3468,21 @@
     "ZetaRieszParityAllocation": "arithmetic",
     "ZetaRieszContinuumCascade": "arithmetic",
     "ZetaRieszCascadeAbelAudit": "arithmetic",
-    "ZetaRieszFullParityPacket": "arithmetic"
+    "ZetaRieszFullParityPacket": "arithmetic",
+    "ZetaRieszZeroParityCascade": "arithmetic",
+    "ZetaRieszZeroParityOrders": "arithmetic",
+    "ZetaRieszParityOrderTail": "arithmetic",
+    "ZetaRieszParityOrderPacket": "arithmetic",
+    "ZetaRieszParityOrderPhase": "arithmetic",
+    "ZetaRieszParityOrderError": "arithmetic",
+    "ZetaRieszParityGoodPhase": "arithmetic",
+    "ZetaRieszParityFirstInsertion": "arithmetic",
+    "ZetaRieszParityRestAudit": "arithmetic",
+    "ZetaRieszParityMaskTails": "arithmetic",
+    "ZetaRieszParityRectangleTail": "arithmetic",
+    "ZetaRieszParityMaskError": "arithmetic",
+    "ZetaRieszParityShareTail": "arithmetic",
+    "ZetaRieszParityShareError": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

@@ -28,7 +28,7 @@ including the common cosine and unmatched excess, remains open. This is
 an arithmetic error saving and counting audit, not a signed floor; see the
 [parity-cell audit](zeta-riesz-parity-cell-audit.md).
 
-The current **All-count cascade · exact transform and global Abel rate audit**
+The supporting **All-count cascade · exact transform and global Abel rate audit**
 endpoint keeps every prime count in an interior largest/least-prime share
 box, with the original finite factorial selection. Its exact packet/rest
 ledger has no labels above count 39. The continuum cascade has transform
@@ -40,6 +40,20 @@ These are transform and error-budget results, not an actual packet floor
 or a general obstruction to signed global methods. The pointwise cutoff
 sensitivity and discrete signed transfer remain open; see the
 [continuum/Abel audit](zeta-riesz-continuum-cascade-audit.md).
+
+The current **Simple-zero parity · paid factorial errors and rest audit**
+endpoint keeps the exact signed transform and supported inverse. The core
+gap exceeds 289/1000; at least eleven omitted small-prime insertions are
+needed, and the first supported insertion integral is below 1/1000000.
+Summed exceptional orders, the original factorial rectangle, and the old
+allocation now have independent geometric bounds on the literal packet.
+Good orders all meet the extended simple-zero prime-phase range. The
+coupled-mask phase transfer and full cutoff tail remain open. Numerical
+delay probes guide that next estimate but are not arithmetic certificates.
+The existing independent phase-cost allowance for fullParityRest still
+diverges: balanced triple boxes lie wholly outside the selected packet.
+No whole-packet floor or new zero exclusion follows. See the
+[simple-zero parity audit](zeta-riesz-zero-parity-audit.md).
 
 The optional **Rosser prime error · final large range proved** endpoint
 tracks a separate supporting step in the literature-reproduction campaign:

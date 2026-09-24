@@ -12,21 +12,21 @@
   "campaign": {
     "direction": {
       "branch": "riesz-harmonic-cost",
-      "statement": "The harmonic-cost route retains its evaluated source and an open independent -3/40 floor. We now keep all prime counts in an interior largest/least-prime share box, with exact factorial weights, masks and phase. The continuum cascade is evaluated, but the standard one-prime Abel allowance grows at source scale. Fully coupled signed prime-discrepancy transport and the rest of the carrier remain open.",
-      "changeReason": "The user directed a full parity cascade and global Abel test, preserving previous paid errors and stopping thin-cell counting. The checked audit distinguishes the continuum cancellation from the unpaid discrete prime discrepancy."
+      "statement": "The harmonic-cost route retains its evaluated source and an open independent -3/40 floor. We test the all-count packet using simple exposed-zero phases. Exceptional orders, the factorial rectangle and old allocation now have independent geometric error bounds. The signed cutoff tail and literal masked phase transfer remain open; the rest still needs joint arithmetic cancellation.",
+      "changeReason": "Summing the exact factorial weights pays the pointwise order-zero obstruction. Numerical rate searches guided three independently proved losses; the old rest allowance is still divergent."
     },
     "latestUpdate": {
-      "sequence": 71,
-      "id": "all-count-cascade-abel-audit",
+      "sequence": 72,
+      "id": "parity-factorial-errors-and-rest-audit",
       "kind": "theorem",
-      "title": "All-count continuum identity proved; standard Abel allowance still grows.",
-      "body": "Lean proves the exact nonempty cascade transform 1/(w*z), cutoff renewal with its boundary source, and a literal packet/rest ledger retaining the finite factorial weights. The interior packet has at most 39 prime factors. The current one-prime absolute-variation Abel allowance diverges at source scale; this is an audit of that bound, not a lower bound on the actual signed error.",
-      "next": "Prove a joint signed weighted prime-discrepancy estimate or cancel its surviving first variation with paid higher errors. No packet norm bound, -3/40 floor or restricted zero exclusion is proved.",
+      "title": "Three factorial losses paid at source scale; the rest still needs signed cancellation.",
+      "body": "Lean bounds low-order mass by 39 exp(-N/400), omitted rectangle mass by 6 exp(-N/6000), and old allocation by 39 exp(-N/1000). Each gives geometric decay for its literal arithmetic error. Good prime orders now meet the simple-zero phase range. The first supported cutoff insertion is below 1/1000000.",
+      "next": "The full cutoff tail and phase transfer through the remaining coupled masks are open. A numerical delay model suggests a tiny cutoff defect, but is not a certificate. Lean proves the existing independent allowance for fullParityRest still diverges; no packet floor or zero exclusion is claimed.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszCascadeAbelAuditTheorem"
+        "rieszParityFactorialErrorsTheorem"
       ],
-      "documentation": "docs/zeta-riesz-continuum-cascade-audit.md"
+      "documentation": "docs/zeta-riesz-zero-parity-audit.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -3603,6 +3603,69 @@
         "rieszParityScope"
       ],
       "documentation": "docs/zeta-riesz-parity-cell-audit.md"
+    },
+    {
+      "id": "harmonic-zero-parity-audit",
+      "label": "Simple-zero parity · paid factorial errors and rest audit",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszZeroParityTransformTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszZeroParitySupportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszZeroParityInsertionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszZeroParityPhaseTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszZeroParityOrderWitnessTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszZeroParityOrderAuditTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszParityBadOrderDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszParityGoodPhaseTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszParityFirstInsertionBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszParityRectangleTailTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszParityAllocationTailTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszParityFactorialErrorsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszParityRestAllowanceTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszZeroParityScope"
+      ],
+      "documentation": "docs/zeta-riesz-zero-parity-audit.md"
     },
     {
       "id": "harmonic-cascade-audit",

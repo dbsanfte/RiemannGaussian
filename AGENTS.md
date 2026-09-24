@@ -1602,6 +1602,63 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+### Simple-zero parity and independently paid factorial errors (2026-09-24)
+
+The continuation from `6a30bfb` is recorded in
+`docs/zeta-riesz-zero-parity-audit.md`. Preserve the literal packet/rest
+ledger, every finite mask, the count ceiling 39, and all previous paid
+errors. The user forbids generic PNT/Abel transport, thin cells, ownership
+completion and subagents. Numerical investigation should guide actual
+analytic estimates; do not promote probe output to a certificate.
+
+`ZetaRieszZeroParityCascade` proves the signed transform
+`(1-exp(-J_r))/z^2`, with zero-cutoff value `1/(z*(w+z))`, and directly
+verifies the inverse representative `1_(d>=s)`. It vanishes on the literal
+core. Do not claim general inverse uniqueness or an unevaluated pointwise
+count-sum interchange. The cutoff renewal keeps its empty-cofactor term.
+The sharpened core gap exceeds `289/1000`; ten omitted shares <=7/250
+cannot reach support. `ZetaRieszParityFirstInsertion` identifies the first
+possible insertion with a positive simplex indicator and bounds its
+reciprocal-density integral, including 1/11!, below 1/1000000. This pays
+only order eleven, not the entire cutoff defect or its boundary term.
+
+The pointwise order-zero obstruction remains true, but the user explicitly
+reopened it by asking to sum factorial weights first. It is now paid:
+`fullParityBox_bad_mass <= 39 exp(-N/400)` for allocations with any base
+order below N/200. The actual `badPacket` has an independent geometric
+source-scale bound, uniform in moving heights/counts. The exact rectangle
+splits into good plus bad; no order-zero atom is silently removed.
+`ZetaRieszParityOrderPhase` extends finite-prime completion to
+N/200<=k<=27N/40. Under the original simple exposed-zero hypotheses,
+`eventually_good_product_phase` supplies a uniform parity limit on every
+good prime-product array, using the finite count ceiling.
+
+Two further original factorial masks are now independently paid throughout
+the whole FullParityBox, for every prime count:
+- `rectangleOmittedMass <= 6 exp(-N/6000)`;
+- `boundedShare <= 39 exp(-N/1000)`.
+Their literal arithmetic errors have strict geometric source-normalized
+rates for 0<=u<=10001/20000. `tendsto_coefficientBox_sub_fullParity` keeps
+exactly the original finite support and phase and pays these two errors.
+The remaining Riesz and prime-log masks are coupled; the coefficient box
+is not a product of complete prime sums. Do not apply the product-phase
+array theorem to that box without proving the masked transfer.
+
+The optional `scripts/probe_riesz_zero_parity.py` evaluates a candidate
+Dickman/Buchstab inverse and checks finite-count quadratures and grid
+refinements. Its tiny continuum values are exploratory. The inverse's
+identification, the full cutoff tail, and the literal conditional packet
+bound remain open. Keep the probe out of ordinary builds and CI.
+
+`ZetaRieszParityRestAudit` proves that balanced triple boxes survive
+untouched in fullParityRest, even inside the narrower core. The existing
+independent phase-cost allowance for that rest still grows at least as
+c(2u)^N/(N+1)^4 at each fixed height, and tends to positive infinity.
+This does not prove divergence of the signed rest or exclude joint
+cancellation. No rest source has been recomputed by assuming the packet
+small. Keep LocalizedTypeIIBound and public frontiers unchanged; no whole
+packet floor, zero exclusion or RH contradiction is established here.
+
 ### All-count continuum and global Abel audit (2026-09-24)
 
 The latest steer from `a8fd375` is recorded in
