@@ -16,17 +16,17 @@
       "changeReason": "The strict Type-II go/no-go test proves the numerical reduction but identifies an unproved parity-sensitive estimate; current sieve rates and the fixed-height VMVT mismatch do not discharge it. Stop expanding this route until new arithmetic input is found."
     },
     "latestUpdate": {
-      "sequence": 62,
-      "id": "ford-closed-coefficient-all-orders",
+      "sequence": 63,
+      "id": "rosser-complete-reciprocal-square-mass",
       "kind": "theorem",
-      "title": "Ford's high-degree coefficient and order interpolation are proved.",
-      "body": "Lean proves the complete recursive coefficient bound with the original 2.055, 5.91 and 9.7278 constants. Actual moment interpolation then covers every integer order in Ford's published k>=1000 interval and every real endpoint P>=1, retaining the 1.7/k defect allowance. Dense short-prime supply remains the explicit unproved arithmetic premise; no intermediate moment or coefficient estimate is assumed.",
-      "next": "Discharge dense short-prime supply and reproduce the lower-degree numerical estimates and incomplete-system bounds. This slice proves no larger zero-free region or independent RH arithmetic floor.",
+      "title": "The complete reciprocal-square zero sum is below 0.0463.",
+      "body": "Lean proves the classical Rosser bound over all nontrivial zeros, retaining analytic multiplicities and both ordinate signs. The stronger ordinate-square bound follows from the exact xi Poisson mass, checked Euler/logarithm constants and the complete finite verification through height 54. Summability is proved; no RH, external zero table or prime-count estimate is assumed.",
+      "next": "Prove the remaining explicit zero-sum and prime-error estimates needed for dense short-prime supply. This slice does not enlarge the zero-free region or close the RH arithmetic floor.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "fordAllOrdersTheorem"
+        "rosserNormSquareMassTheorem"
       ],
-      "documentation": "docs/vinogradov-literature-reproduction.md"
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -3342,6 +3342,29 @@
         "fordSelectedIterationScope"
       ],
       "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    {
+      "id": "rosser-zero-mass",
+      "label": "Rosser zero mass · unconditional 0.0463 bound",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserOrdinateSquareMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserNormSquareMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserZeroPoissonMassTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rosserZeroMassScope"
+      ],
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
     }
   ],
   "scopes": {

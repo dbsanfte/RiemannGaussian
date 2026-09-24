@@ -2539,6 +2539,29 @@
         "fordSelectedIterationScope"
       ],
       "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    {
+      "id": "rosser-zero-mass",
+      "label": "Rosser zero mass · unconditional 0.0463 bound",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserOrdinateSquareMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserNormSquareMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserZeroPoissonMassTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rosserZeroMassScope"
+      ],
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
     }
   ],
   "families": [
@@ -6374,6 +6397,42 @@
       "summary": "For k>=1000 and every integer order in 2*k^2<=s<=(k^2/2)*(1/2+log(3*k/8)), actual J_s,k(P) satisfies the original coefficient and 1.7/k defect bound for every real P>=1, using the literal floor cutoff. The exponent is proved nonnegative. ShortPrimeSupply k (3/50) remains explicit and unproved.",
       "overview": true,
       "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldEulerConstant.mass_constant_upper": {
+      "label": "Checked xi mass constant",
+      "summary": "The exact constant 2+gamma-2*log(2)-log(pi) is strictly below 2311/50000, using a corrected harmonic sequence and rational logarithm bounds.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldZeroMass.xi_log_one": {
+      "label": "Exact xi logarithmic derivative at one",
+      "summary": "The pole-removed factorization evaluates the actual xi logarithmic derivative at one, with the Euler constant and both Archimedean logarithms.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldZeroMass.hasSum_poisson": {
+      "label": "Complete reflected Poisson mass",
+      "summary": "The full series over all nontrivial zeros, retaining every analytic multiplicity and both ordinate signs, sums to 2+gamma-2*log(2)-log(pi).",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldZeroMass.ordinate_point_le": {
+      "label": "Every zero pays its inverse-square weight",
+      "summary": "The absence of zeros through 14 and complete critical-line verification through 54 bound each reciprocal squared ordinate by 785/784 times the reflected Poisson weight.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldZeroMass.ordinate_mass_lt": {
+      "label": "Complete ordinate-square mass below 0.0463",
+      "summary": "Unconditionally, the full multiplicity-weighted reciprocal ordinate-square sum is strictly below 463/10000. Summability is proved; no RH, external zero table or prime-density estimate is assumed.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldZeroMass.norm_square_mass_lt": {
+      "label": "Classical Rosser reciprocal-square bound",
+      "summary": "The full multiplicity-weighted sum of reciprocal squared zero norms is strictly below 463/10000, recovering the classical Rosser constant. This does not supply prime-count bounds or enlarge the zero-free region.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
     }
   }
 }

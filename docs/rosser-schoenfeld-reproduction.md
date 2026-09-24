@@ -26,6 +26,7 @@ Here every Lean occurrence of π is `Nat.primeCounting ⌊x⌋₊`.
 | Section 7, Lemmas 2 and 3 | J(x;0.31)<upper(x) for x≥10⁸; J(x;0.47)<upper(x) for x≥exp(100) | [RosserSchoenfeldBounds](../RiemannGaussian/RosserSchoenfeldBounds.lean) |
 | Section 7, Lemma 5 | lower(x)<J(x;−0.47) for every x≥1451, strengthening its stated starting range | [RosserSchoenfeldBounds](../RiemannGaussian/RosserSchoenfeldBounds.lean) |
 | Theorem 26 zero-free input | The exact radical constant and height, from the existing stronger signed-pole bound | [RosserSchoenfeldZeroFree](../RiemannGaussian/RosserSchoenfeldZeroFree.lean) |
+| Complete reciprocal-square zero mass | Both multiplicity-weighted sums, using squared ordinates or squared norms, are strictly below 0.0463 | [RosserSchoenfeldZeroMass](../RiemannGaussian/RosserSchoenfeldZeroMass.lean) |
 | Last numerical error comparison | The paper's ε(x)<0.47/log(x) for every x≥exp(5000) | [RosserSchoenfeldError](../RiemannGaussian/RosserSchoenfeldError.lean) |
 | Ford short packet transport | Exact finite prime packet from the two displayed actual prime-count bounds, with every numerical side condition derived | [VinogradovRosserPrimeSupply](../RiemannGaussian/VinogradovRosserPrimeSupply.lean) |
 
@@ -65,6 +66,47 @@ $M<p\le(1+\omega)M$. This remains **conditional** on the two actual
 prime-count inequalities. The conditional packet theorem is not a proof of
 prime density, of Ford's complete numerical moment theorem, or of a VK
 zero-free benchmark.
+
+## Complete reciprocal-square zero mass
+
+[RosserSchoenfeldZeroMass.ordinate_mass_lt](../RiemannGaussian/RosserSchoenfeldZeroMass.lean)
+and `norm_square_mass_lt` prove unconditionally
+
+```math
+\sum_\rho\frac{m_\rho}{|\rho|^2}
+\le\sum_\rho\frac{m_\rho}{(\Im\rho)^2}
+\lt\frac{463}{10000}=0.0463.
+```
+
+The sums include all nontrivial zeros, both ordinate signs and every
+analytic multiplicity. Their summability is proved. The norm-square
+constant is the classical Rosser (1941), Lemma 17 value also recorded in
+[Helfgott, Appendix A, equation (A.4)](https://arxiv.org/pdf/1312.7748).
+Here it follows from an independent proof using the repository's complete
+xi expansion and finite verification; no numerical zero table is assumed.
+
+For a zero `rho=beta+i*t`, `hasSum_poisson` evaluates the exact positive mass:
+
+```math
+\sum_\rho m_\rho\left(
+\frac{1-\beta}{(1-\beta)^2+t^2}+
+\frac{\beta}{\beta^2+t^2}\right)
+=2+\gamma-2\log2-\log\pi\lt\frac{2311}{50000}.
+```
+
+[RosserSchoenfeldEulerConstant](../RiemannGaussian/RosserSchoenfeldEulerConstant.lean)
+proves the numerical constants using a corrected harmonic sequence and
+rational logarithm bounds. For `|t|<=54`, the complete finite verification
+gives `beta=1/2`; above 54 the ordinate alone controls the discrepancy.
+Together with `|t|>14`, this proves that the reciprocal ordinate-square
+weight is at most `785/784` times its Poisson weight. The exact full-series
+identity therefore pays every zero, including those beyond the finite
+verification.
+
+This discharges the first reciprocal-power constant. The higher-power
+constants `0.00167` and `0.0000744`, the smoothed explicit-formula bounds,
+the larger finite verification and the actual prime-count estimates remain
+open. No larger zero-free region or independent RH arithmetic floor follows.
 
 ## The analytic and finite-verification gap
 
@@ -633,8 +675,9 @@ all 400 numerical checkpoints. Its output proposes data, while
 This extends the **complete finite verification from height 26 to 54**.
 It does not reproduce the required low-zero verification through the
 published height near 22000. The full list and count, actual prime-count
-bounds, short-prime supply, closed numerical moment bounds and published VK region
-remain open. The public default region and RH arithmetic frontier are
-unchanged.
+bounds, short-prime supply and published VK region remain open. The
+high-degree Ford moment formula is proved conditional on short-prime
+supply; its lower-degree numerical tables remain open. The public default
+region and RH arithmetic frontier are unchanged.
 
 Return to the [literature reproduction ledger](vinogradov-literature-reproduction.md).

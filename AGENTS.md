@@ -2933,8 +2933,23 @@ That theorem is CONDITIONAL on the two actual prime-count estimates.
 The detailed analytic and finite-verification dependencies are in
 `docs/rosser-schoenfeld-reproduction.md`. The first 25000 low zeros have
 not been verified in Lean here; the 67.31% proportion certificate supplies
-no such premise. The zero-sum/Chebyshev estimates and finite prime-table
-ranges remain open as stated there.
+no such premise. The Chebyshev estimates and finite prime-table ranges
+remain open as stated there.
+
+`RosserSchoenfeldZeroMass` now discharges the complete reciprocal-square
+zero sum: `ordinate_mass_lt` and `norm_square_mass_lt` are unconditional
+strict bounds by 463/10000, including analytic multiplicity and both
+ordinate signs. `hasSum_poisson` evaluates the entire reflected mass at
+one as 2+gamma-2*log(2)-log(pi). The proved critical-line verification
+through height 54 and absence of zeros through 14 pay its discrepancy
+from inverse squares. `RosserSchoenfeldEulerConstant` proves the numerical
+constant with a corrected harmonic sequence and rational log bounds.
+This is the classical Rosser reciprocal-square dependency, not a new
+zero-free region or prime-count theorem. Higher inverse-power constants,
+the larger finite verification, smoothed explicit-formula estimates and
+the unchanged `ShortPrimeSupply` premise remain open. Keep both public
+frontiers and top-ten lists unchanged. Expose this as a separate supporting
+endpoint; do not draw a proved implication to dense prime supply.
 
 `ZetaEulerMaclaurin.zeta_eq` now gives the arbitrary-order actual zeta
 expansion with the literal signed Bernoulli tail. `norm_error_le` pays

@@ -122,6 +122,18 @@ run_cmd do
             sourceName := sourceAlias
             break
         candidate := candidate.getPrefix
+    -- Lean assigns the enclosing inductive's range to generated helpers
+    -- such as a structure's constructor and casesOn/rec. These are not
+    -- separately written declarations. Preserve the compiler range but
+    -- link to its actual owner; explicit constructors have their own range.
+    if let some childRange := ranges then
+      let parent := sourceName.getPrefix
+      if let some (.inductInfo _) := env.find? parent then
+        if let some parentRange ← findDeclarationRanges? parent then
+          if childRange.selectionRange.pos.line == parentRange.selectionRange.pos.line &&
+              childRange.selectionRange.pos.column == parentRange.selectionRange.pos.column then
+            sourceName := parent
+            ranges := some parentRange
     let location := match ranges with
       | some r => Json.mkObj [("line", toJson r.selectionRange.pos.line),
           ("column", toJson r.selectionRange.pos.column),

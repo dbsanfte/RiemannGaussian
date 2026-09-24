@@ -149,10 +149,10 @@ The harmonic-cost route has an evaluated source and paid wing, reserve and domin
 
 ### Latest Update
 
-**Ford's high-degree coefficient and order interpolation are proved.** Lean proves the complete recursive coefficient bound with the original 2.055, 5.91 and 9.7278 constants. Actual moment interpolation then covers every integer order in Ford's published k>=1000 interval and every real endpoint P>=1, retaining the 1.7/k defect allowance. Dense short-prime supply remains the explicit unproved arithmetic premise; no intermediate moment or coefficient estimate is assumed.
-Discharge dense short-prime supply and reproduce the lower-degree numerical estimates and incomplete-system bounds. This slice proves no larger zero-free region or independent RH arithmetic floor.
-[Current checked endpoint](RiemannGaussian/VinogradovFordAllOrders.lean#L132)
-· [Proof details](docs/vinogradov-literature-reproduction.md).
+**The complete reciprocal-square zero sum is below 0.0463.** Lean proves the classical Rosser bound over all nontrivial zeros, retaining analytic multiplicities and both ordinate signs. The stronger ordinate-square bound follows from the exact xi Poisson mass, checked Euler/logarithm constants and the complete finite verification through height 54. Summability is proved; no RH, external zero table or prime-count estimate is assumed.
+Prove the remaining explicit zero-sum and prime-error estimates needed for dense short-prime supply. This slice does not enlarge the zero-free region or close the RH arithmetic floor.
+[Current checked endpoint](RiemannGaussian/RosserSchoenfeldZeroMass.lean#L160)
+· [Proof details](docs/rosser-schoenfeld-reproduction.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
