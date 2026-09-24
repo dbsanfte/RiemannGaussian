@@ -18,7 +18,7 @@ owned copy remains negative; the remaining correction and other prime
 counts still need a joint bound. This does not close the whole-carrier
 floor. See the [exact reserve and ledger](zeta-riesz-rectangle-reserve.md).
 
-The new **Direct parity packet · paid errors, open floor** endpoint tests the
+The supporting **Direct parity packet · paid errors, open floor** endpoint tests the
 surviving triple against literal five-prime terms in H. All three hinge
 signs are proved, and the full carrier tail above 2.03N, the five-prime
 old allocation, and exponentially thin phase-cell errors all decay
@@ -27,6 +27,19 @@ resolve those cells by subtraction. The signed weighted cell comparison,
 including the common cosine and unmatched excess, remains open. This is
 an arithmetic error saving and counting audit, not a signed floor; see the
 [parity-cell audit](zeta-riesz-parity-cell-audit.md).
+
+The current **All-count cascade · exact transform and global Abel rate audit**
+endpoint keeps every prime count in an interior largest/least-prime share
+box, with the original finite factorial selection. Its exact packet/rest
+ledger has no labels above count 39. The continuum cascade has transform
+`1/(w*z)` and a checked cutoff renewal with its boundary source. However,
+the standard Abel allowance from the current pointwise Chebyshev envelope
+grows at source scale, even with the phase retained and the reduced core
+window. The cutoff contrast retains a nonzero prime-error first variation.
+These are transform and error-budget results, not an actual packet floor
+or a general obstruction to signed global methods. The pointwise cutoff
+sensitivity and discrete signed transfer remain open; see the
+[continuum/Abel audit](zeta-riesz-continuum-cascade-audit.md).
 
 The optional **Rosser prime error · final large range proved** endpoint
 tracks a separate supporting step in the literature-reproduction campaign:

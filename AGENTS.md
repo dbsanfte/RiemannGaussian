@@ -1602,6 +1602,54 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+### All-count continuum and global Abel audit (2026-09-24)
+
+The latest steer from `a8fd375` is recorded in
+`docs/zeta-riesz-continuum-cascade-audit.md`. Preserve the earlier direct
+packet, paid core window, five-prime allocation and phase audit. Do not
+resume exponentially thin cells, cofactor completion or the scalar
+Buchstab contraction route. Work without subagents.
+
+`ZetaRieszContinuumCascade` proves the exact prime-product Riesz kernel
+and its arithmetic coefficient orientation, the all-count iterated
+Laplace transform `1/(w*z)` at zero cutoff, and positive-cutoff renewal
+with its empty-cofactor boundary source. Inner and outer integrability
+and absolute summability of the evaluated count transforms are checked.
+Do not assert a pointwise inverse-Laplace or cutoff-sensitivity bound
+from this transform theorem alone. The full cutoff contrast retains a
+nonzero first variation under a shared prime-density perturbation.
+The explicit interior `interior_variation_fibre` has normalized kernel
+response one; its remaining cofactor share fits exactly one prime above
+the lower cutoff, so higher counts cannot cancel that same fibre. This
+is a support identity, not a bound on its actual prime discrepancy.
+
+`ZetaRieszFullParityPacket` selects the interior largest/least-prime box
+directly in `coreResponse`, retaining the original residual coefficient,
+all masks and phase, and exact finite `rectangleMass` across every count.
+The packet/rest ledger is a suballocation, not a floor. At most 39 prime
+factors can occur; counts 12 through 39 are not discarded or estimated.
+No quintuple-only allocation estimate has been extended to all counts.
+
+`ZetaRieszCascadeAbelAudit.normalized_coreAbelAllowance_tendsto` proves
+that the standard one-prime absolute-variation allowance obtained from
+the current inverse-log Chebyshev envelope diverges at source scale
+for every fixed u>1/2 and nonzero fixed height, inside the retained core
+window. This is an obstruction to that error estimate, not a lower bound
+for the true discrepancy or the complete packet's multivariable variation.
+The full signed arithmetic error could still cancel. Do not claim a
+general impossibility theorem for global Abel or parity methods.
+
+The strict packet-norm/floor test has NOT passed. The fully coupled
+multivariable variation has not been evaluated, so do not report the
+one-prime allowance audit as a completed go/no-go test for the whole route.
+The next arithmetic task is a signed weighted prime-discrepancy estimate
+or an identity that cancels its first variation with paid higher errors.
+A tiny fixed continuum residual,
+O(1/N) relative prime error, or numerical count subtotal is not source-scale
+o(1). Keep the public RH frontier, zero-free/certificate results and
+`LocalizedTypeIIBound` unchanged; expose these results only as a supporting
+continuum/transport audit. Do not add stronger short-interval machinery.
+
 ### Direct triple/quintuple cell audit (2026-09-24)
 
 `docs/zeta-riesz-parity-cell-audit.md` records the continuation from

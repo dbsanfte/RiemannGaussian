@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**419 modules.** Source links open the definitions, hypotheses and proofs.
+**422 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -147,6 +147,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszBeyondPhysical](../../RiemannGaussian/ZetaRieszBeyondPhysical.lean)
 - [ZetaRieszBlockMass](../../RiemannGaussian/ZetaRieszBlockMass.lean)
 - [ZetaRieszCancellingSector](../../RiemannGaussian/ZetaRieszCancellingSector.lean)
+- [ZetaRieszCascadeAbelAudit](../../RiemannGaussian/ZetaRieszCascadeAbelAudit.lean)
 - [ZetaRieszCellBoundary](../../RiemannGaussian/ZetaRieszCellBoundary.lean)
 - [ZetaRieszCellCycles](../../RiemannGaussian/ZetaRieszCellCycles.lean)
 - [ZetaRieszCellEnergy](../../RiemannGaussian/ZetaRieszCellEnergy.lean)
@@ -175,6 +176,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszCompositeSmooth](../../RiemannGaussian/ZetaRieszCompositeSmooth.lean)
 - [ZetaRieszConditionedEnergy](../../RiemannGaussian/ZetaRieszConditionedEnergy.lean)
 - [ZetaRieszConditioningTransfer](../../RiemannGaussian/ZetaRieszConditioningTransfer.lean)
+- [ZetaRieszContinuumCascade](../../RiemannGaussian/ZetaRieszContinuumCascade.lean)
 - [ZetaRieszCosineCarrier](../../RiemannGaussian/ZetaRieszCosineCarrier.lean)
 - [ZetaRieszCriticalProfile](../../RiemannGaussian/ZetaRieszCriticalProfile.lean)
 - [ZetaRieszCrossCompletion](../../RiemannGaussian/ZetaRieszCrossCompletion.lean)
@@ -215,6 +217,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszFourierCarrier](../../RiemannGaussian/ZetaRieszFourierCarrier.lean)
 - [ZetaRieszFrequencyDecay](../../RiemannGaussian/ZetaRieszFrequencyDecay.lean)
 - [ZetaRieszFullCycleSupply](../../RiemannGaussian/ZetaRieszFullCycleSupply.lean)
+- [ZetaRieszFullParityPacket](../../RiemannGaussian/ZetaRieszFullParityPacket.lean)
 - [ZetaRieszGeneralCofactorTilt](../../RiemannGaussian/ZetaRieszGeneralCofactorTilt.lean)
 - [ZetaRieszGrowingCofactor](../../RiemannGaussian/ZetaRieszGrowingCofactor.lean)
 - [ZetaRieszHarmonicWindow](../../RiemannGaussian/ZetaRieszHarmonicWindow.lean)

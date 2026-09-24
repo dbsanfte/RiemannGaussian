@@ -12,21 +12,21 @@
   "campaign": {
     "direction": {
       "branch": "riesz-harmonic-cost",
-      "statement": "The harmonic-cost route retains an evaluated source and an open independent -3/40 floor. The direct arithmetic test pairs a surviving triple rectangle with five-prime hinge terms, keeping all masks and phases. Window, old-allocation and phase-transport errors now decay independently for u<=0.50005; the signed cell main term and the rest of the carrier remain open.",
-      "changeReason": "The literal rectangle reserve has a matching negative owned copy and cannot be counted twice. The user directed a phase-preserving triple/five-prime test inside the direct carrier, supported by numerical probing."
+      "statement": "The harmonic-cost route retains its evaluated source and an open independent -3/40 floor. We now keep all prime counts in an interior largest/least-prime share box, with exact factorial weights, masks and phase. The continuum cascade is evaluated, but the standard one-prime Abel allowance grows at source scale. Fully coupled signed prime-discrepancy transport and the rest of the carrier remain open.",
+      "changeReason": "The user directed a full parity cascade and global Abel test, preserving previous paid errors and stopping thin-cell counting. The checked audit distinguishes the continuum cancellation from the unpaid discrete prime discrepancy."
     },
     "latestUpdate": {
-      "sequence": 70,
-      "id": "literal-parity-window-allocation-savings",
+      "sequence": 71,
+      "id": "all-count-cascade-abel-audit",
       "kind": "theorem",
-      "title": "Direct parity packet: window and allocation errors now decay.",
-      "body": "Lean independently pays the full carrier tail above log(n)=2.03N, the five-prime old allocation, and exponentially thin phase-cell errors for u<=0.50005. Exact opposite coefficient signs and the complete direct-carrier ledger are retained. Numerical density probes motivate the cuts but do not certify the arithmetic main term.",
-      "next": "Control the signed weighted cell imbalance and unmatched excess. The existing endpoint prime counts do not resolve these cells, and a density surplus alone is not a signed floor.",
+      "title": "All-count continuum identity proved; standard Abel allowance still grows.",
+      "body": "Lean proves the exact nonempty cascade transform 1/(w*z), cutoff renewal with its boundary source, and a literal packet/rest ledger retaining the finite factorial weights. The interior packet has at most 39 prime factors. The current one-prime absolute-variation Abel allowance diverges at source scale; this is an audit of that bound, not a lower bound on the actual signed error.",
+      "next": "Prove a joint signed weighted prime-discrepancy estimate or cancel its surviving first variation with paid higher errors. No packet norm bound, -3/40 floor or restricted zero exclusion is proved.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszParityAllocationTheorem"
+        "rieszCascadeAbelAuditTheorem"
       ],
-      "documentation": "docs/zeta-riesz-parity-cell-audit.md"
+      "documentation": "docs/zeta-riesz-continuum-cascade-audit.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -3603,6 +3603,45 @@
         "rieszParityScope"
       ],
       "documentation": "docs/zeta-riesz-parity-cell-audit.md"
+    },
+    {
+      "id": "harmonic-cascade-audit",
+      "label": "All-count cascade · exact transform and global Abel rate audit",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCascadeTransformTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCascadeRenewalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCascadePrimeVariationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCascadeFibreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFullParityLedgerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFullParityCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCascadeAbelAuditTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCascadeScope"
+      ],
+      "documentation": "docs/zeta-riesz-continuum-cascade-audit.md"
     }
   ],
   "scopes": {

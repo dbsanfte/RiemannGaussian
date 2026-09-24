@@ -3465,7 +3465,10 @@
     "ZetaRieszParityCells": "arithmetic",
     "ZetaRieszParityCountAudit": "arithmetic",
     "ZetaRieszParityWindow": "arithmetic",
-    "ZetaRieszParityAllocation": "arithmetic"
+    "ZetaRieszParityAllocation": "arithmetic",
+    "ZetaRieszContinuumCascade": "arithmetic",
+    "ZetaRieszCascadeAbelAudit": "arithmetic",
+    "ZetaRieszFullParityPacket": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

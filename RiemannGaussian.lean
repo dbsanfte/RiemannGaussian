@@ -2089,3 +2089,6 @@ import RiemannGaussian.ZetaRieszSkewCarrier
 import RiemannGaussian.ZetaRieszRectangleCorrection
 import RiemannGaussian.ZetaRieszParityCountAudit
 import RiemannGaussian.ZetaRieszParityAllocation
+import RiemannGaussian.ZetaRieszContinuumCascade
+import RiemannGaussian.ZetaRieszCascadeAbelAudit
+import RiemannGaussian.ZetaRieszFullParityPacket

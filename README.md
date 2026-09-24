@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-The harmonic-cost route retains an evaluated source and an open independent -3/40 floor. The direct arithmetic test pairs a surviving triple rectangle with five-prime hinge terms, keeping all masks and phases. Window, old-allocation and phase-transport errors now decay independently for u<=0.50005; the signed cell main term and the rest of the carrier remain open.
+The harmonic-cost route retains its evaluated source and an open independent -3/40 floor. We now keep all prime counts in an interior largest/least-prime share box, with exact factorial weights, masks and phase. The continuum cascade is evaluated, but the standard one-prime Abel allowance grows at source scale. Fully coupled signed prime-discrepancy transport and the rest of the carrier remain open.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ The harmonic-cost route retains an evaluated source and an open independent -3/4
 
 ### Latest Update
 
-**Direct parity packet: window and allocation errors now decay.** Lean independently pays the full carrier tail above log(n)=2.03N, the five-prime old allocation, and exponentially thin phase-cell errors for u<=0.50005. Exact opposite coefficient signs and the complete direct-carrier ledger are retained. Numerical density probes motivate the cuts but do not certify the arithmetic main term.
-Control the signed weighted cell imbalance and unmatched excess. The existing endpoint prime counts do not resolve these cells, and a density surplus alone is not a signed floor.
-[Current checked endpoint](RiemannGaussian/ZetaRieszParityAllocation.lean#L220)
-· [Proof details](docs/zeta-riesz-parity-cell-audit.md).
+**All-count continuum identity proved; standard Abel allowance still grows.** Lean proves the exact nonempty cascade transform 1/(w*z), cutoff renewal with its boundary source, and a literal packet/rest ledger retaining the finite factorial weights. The interior packet has at most 39 prime factors. The current one-prime absolute-variation Abel allowance diverges at source scale; this is an audit of that bound, not a lower bound on the actual signed error.
+Prove a joint signed weighted prime-discrepancy estimate or cancel its surviving first variation with paid higher errors. No packet norm bound, -3/40 floor or restricted zero exclusion is proved.
+[Current checked endpoint](RiemannGaussian/ZetaRieszCascadeAbelAudit.lean#L233)
+· [Proof details](docs/zeta-riesz-continuum-cascade-audit.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
