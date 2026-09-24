@@ -2882,14 +2882,28 @@ V^(k+1)<=W=k^(4.11*k) at omega=0.06 and k>=1000.
 0.01916*k whenever j+1<=1.97*k; `VinogradovFordCoefficientStep.early_step_le`
 pays the complete early maximum by W^(Delta_j-Delta_(j+1)). The later
 step retains the product of both factors. These scalar bounds do not
-assume prime supply. Next telescope the coefficient costs with the original
-2.055, 5.91 and 9.7278 constants, and prove dense short-prime supply.
+assume prime supply. `VinogradovFordCoefficientBudget` now telescopes the
+actual early coefficient and multiplies the later packet costs exactly.
+`VinogradovFordClosedCoefficient.selected_coefficient_bound` proves the
+full original coefficient with constants 2.055, 5.91 and 9.7278 for
+k>=1000 and J+1>=2*k. `selected_moment_closed` combines this with the closed
+defect across the entire published order interval, retaining only short-prime
+supply as an unproved arithmetic input.
+`VinogradovMomentInterpolation` proves Holder interpolation for the actual
+torus moments, including zero values and both interpolation endpoints.
+`VinogradovFordOrderBudget` pays the complete interpolation error with
+the original 1.7/k allowance. `VinogradovFordAllOrders.published_moment_bound_real`
+now proves the k>=1000 part of Ford Theorem 3 for every integer order in
+2*k^2<=s<=(k^2/2)*(1/2+log(3*k/8)) and every real P>=1 via the literal floor cutoff,
+conditional on `ShortPrimeSupply k (3/50)`. No source-moment, coefficient,
+schedule, divisibility or interpolation hypothesis remains.
+Next prove dense short-prime supply and the published lower-degree estimates.
 Do not list potential endpoint evaluation, the closed defect bound,
 rank/maximal-depth selection, scale/cutoff admissibility,
 numerical one-step coefficient, recursive quotient sizes or all-endpoint
-moment induction as still open. The full closed coefficient bound remains
-open; do not claim all of Ford 3.6 or a zeta region from the conditional
-moment sequence alone.
+moment induction, the closed coefficient product or high-degree order
+interpolation as still open. Do not claim unconditional Ford 3.6/Theorem 3
+or a zeta region before the explicit arithmetic premise is discharged.
 The sharper Bellotti 2.3 recurrence remains under audit. Then finish the
 numerical complete/incomplete moments and block bound.
 Do not replace these by the diagonal iteration or silently use (M,8M]

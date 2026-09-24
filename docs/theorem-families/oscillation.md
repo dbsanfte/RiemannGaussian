@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**244 modules.** Source links open the definitions, hypotheses and proofs.
+**249 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [CosineHinge](../../RiemannGaussian/CosineHinge.lean)
@@ -109,8 +109,11 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovFibreCorrelation](../../RiemannGaussian/VinogradovFibreCorrelation.lean)
 - [VinogradovFiniteCritical](../../RiemannGaussian/VinogradovFiniteCritical.lean)
 - [VinogradovFirstExponent](../../RiemannGaussian/VinogradovFirstExponent.lean)
+- [VinogradovFordAllOrders](../../RiemannGaussian/VinogradovFordAllOrders.lean)
+- [VinogradovFordClosedCoefficient](../../RiemannGaussian/VinogradovFordClosedCoefficient.lean)
 - [VinogradovFordClosedDefect](../../RiemannGaussian/VinogradovFordClosedDefect.lean)
 - [VinogradovFordCoefficient](../../RiemannGaussian/VinogradovFordCoefficient.lean)
+- [VinogradovFordCoefficientBudget](../../RiemannGaussian/VinogradovFordCoefficientBudget.lean)
 - [VinogradovFordCoefficientScale](../../RiemannGaussian/VinogradovFordCoefficientScale.lean)
 - [VinogradovFordCoefficientStep](../../RiemannGaussian/VinogradovFordCoefficientStep.lean)
 - [VinogradovFordDefectRate](../../RiemannGaussian/VinogradovFordDefectRate.lean)
@@ -120,6 +123,7 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovFordLowerDefect](../../RiemannGaussian/VinogradovFordLowerDefect.lean)
 - [VinogradovFordMoment](../../RiemannGaussian/VinogradovFordMoment.lean)
 - [VinogradovFordMomentSequence](../../RiemannGaussian/VinogradovFordMomentSequence.lean)
+- [VinogradovFordOrderBudget](../../RiemannGaussian/VinogradovFordOrderBudget.lean)
 - [VinogradovFordParameters](../../RiemannGaussian/VinogradovFordParameters.lean)
 - [VinogradovFordPotential](../../RiemannGaussian/VinogradovFordPotential.lean)
 - [VinogradovFordPotentialIteration](../../RiemannGaussian/VinogradovFordPotentialIteration.lean)
@@ -169,6 +173,7 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovMixedExceptional](../../RiemannGaussian/VinogradovMixedExceptional.lean)
 - [VinogradovMixedMoments](../../RiemannGaussian/VinogradovMixedMoments.lean)
 - [VinogradovMixedRepeated](../../RiemannGaussian/VinogradovMixedRepeated.lean)
+- [VinogradovMomentInterpolation](../../RiemannGaussian/VinogradovMomentInterpolation.lean)
 - [VinogradovMomentPartition](../../RiemannGaussian/VinogradovMomentPartition.lean)
 - [VinogradovMomentReduction](../../RiemannGaussian/VinogradovMomentReduction.lean)
 - [VinogradovNarrowCost](../../RiemannGaussian/VinogradovNarrowCost.lean)

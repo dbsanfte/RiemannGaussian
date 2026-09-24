@@ -2523,15 +2523,15 @@
     },
     {
       "id": "ford-selected-iteration",
-      "label": "Ford closed defect · coefficient product and prime supply open",
+      "label": "Ford high-degree moments · prime supply open",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
-          "fordClosedDefectMomentTheorem"
+          "fordAllOrdersTheorem"
         ],
         [
           "gaussianPhaseBandToolkit",
-          "fordEarlyCoefficientStepTheorem"
+          "fordClosedCoefficientTheorem"
         ]
       ],
       "scopePath": [
@@ -6329,7 +6329,49 @@
     },
     "RiemannGaussian.VinogradovFordCoefficientStep.early_step_le": {
       "label": "Complete early coefficient step paid",
-      "summary": "For j+1<=1.97*k at k>=1000 and omega=0.06, the original maximum coefficient is at most W^(Delta_j-Delta_(j+1)). The closed product over all steps remains open.",
+      "summary": "For j+1<=1.97*k at k>=1000 and omega=0.06, the original maximum coefficient is at most W^(Delta_j-Delta_(j+1)). This estimate now feeds the complete telescoping coefficient bound.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.VinogradovFordCoefficientBudget.coefficient_after_early": {
+      "label": "Exact telescoping coefficient budget",
+      "summary": "The initial factorial and early costs fit the actual defect budget. Later packet costs are multiplied exactly, including stopped steps, with no prime-supply or moment premise.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.VinogradovFordClosedCoefficient.selected_coefficient_bound": {
+      "label": "Closed Ford coefficient bound",
+      "summary": "For k>=1000 and J+1>=2*k, the actual recursive coefficient satisfies the published expression with constants 2.055, 5.91 and 9.7278. The exact floor cutoff pays the entire coefficient product without prime supply.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.VinogradovFordClosedCoefficient.selected_moment_closed": {
+      "label": "Actual moment with both closed bounds",
+      "summary": "The actual moment at orders (J+1)*k has both closed coefficient and defect bounds throughout the complete published interval. Dense short-prime supply remains explicit and unproved.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.VinogradovMomentInterpolation.meanValue_bound": {
+      "label": "Actual moment-order interpolation",
+      "summary": "Holder interpolation on the original torus transports two actual moment estimates, retaining their exact coefficients and affine exponent. Zero values and both interpolation endpoints are included.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.VinogradovFordOrderBudget.defect_interpolation": {
+      "label": "Original 1.7/k interpolation budget",
+      "summary": "The exact adjacent geometric defects interpolate into Ford's all-order defect with the original 1.7/k allowance, for k>=1000. No moment or prime estimate is assumed.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.VinogradovFordAllOrders.published_moment_bound": {
+      "label": "Ford high-degree moment at every order",
+      "summary": "For k>=1000 and every integer order in 2*k^2<=s<=(k^2/2)*(1/2+log(3*k/8)), actual J_s,k(P) satisfies the original coefficient and 1.7/k defect bound at every positive integer endpoint. ShortPrimeSupply k (3/50) remains the only unproved arithmetic premise.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.VinogradovFordAllOrders.published_moment_bound_real": {
+      "label": "Ford high-degree moment at every real endpoint",
+      "summary": "For k>=1000 and every integer order in 2*k^2<=s<=(k^2/2)*(1/2+log(3*k/8)), actual J_s,k(P) satisfies the original coefficient and 1.7/k defect bound for every real P>=1, using the literal floor cutoff. The exponent is proved nonnegative. ShortPrimeSupply k (3/50) remains explicit and unproved.",
       "overview": true,
       "documentation": "docs/vinogradov-literature-reproduction.md"
     }

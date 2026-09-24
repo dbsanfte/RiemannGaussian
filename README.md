@@ -149,9 +149,9 @@ The harmonic-cost route has an evaluated source and paid wing, reserve and domin
 
 ### Latest Update
 
-**Ford's closed defect and early coefficient costs are proved.** Lean proves the original 1.69/k defect bound for k>=1000 through the full published upper order range. At omega=0.06, the starting height fits W=k^(4.11*k), and the 0.01916*k early defect decrease pays the original step coefficient through j+1<=1.97*k. These scalar estimates need no prime-supply hypothesis; the actual moment transport retains it.
-The full coefficient product and dense short-prime supply remain open. This slice proves no larger zero-free region or independent RH arithmetic floor.
-[Current checked endpoint](RiemannGaussian/VinogradovFordClosedDefect.lean#L185)
+**Ford's high-degree coefficient and order interpolation are proved.** Lean proves the complete recursive coefficient bound with the original 2.055, 5.91 and 9.7278 constants. Actual moment interpolation then covers every integer order in Ford's published k>=1000 interval and every real endpoint P>=1, retaining the 1.7/k defect allowance. Dense short-prime supply remains the explicit unproved arithmetic premise; no intermediate moment or coefficient estimate is assumed.
+Discharge dense short-prime supply and reproduce the lower-degree numerical estimates and incomplete-system bounds. This slice proves no larger zero-free region or independent RH arithmetic floor.
+[Current checked endpoint](RiemannGaussian/VinogradovFordAllOrders.lean#L132)
 · [Proof details](docs/vinogradov-literature-reproduction.md).
 <!-- RH_DIRECTION:END -->
 

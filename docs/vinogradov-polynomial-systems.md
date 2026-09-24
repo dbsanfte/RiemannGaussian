@@ -469,8 +469,14 @@ Its actual moment theorem retains the recursive coefficient and short-prime
 supply. `VinogradovFordCoefficientScale`, `VinogradovFordEarlyDefect` and
 `VinogradovFordCoefficientStep` prove the original W=k^(4.11*k) height
 bound and pay the early packet costs from the 0.01916*k defect decrease.
-The closed coefficient product and dense short-prime supply remain open. The sharper
-Bellotti 2.3 scale recurrence remains a distinct audit; see the
+`VinogradovFordCoefficientBudget` now telescopes the full coefficient,
+and `VinogradovFordClosedCoefficient` proves the original closed bound
+with all numerical constants intact. `VinogradovFordAllOrders` then
+interpolates the actual moments on the complete high-degree order interval,
+paying the original 1.7/k defect allowance. Dense short-prime supply remains
+the explicit unproved arithmetic premise. The lower-degree numerical
+estimates remain open, and the sharper Bellotti 2.3 scale recurrence
+remains a distinct audit; see the
 [reproduction ledger](vinogradov-literature-reproduction.md).
 The
 [summed all-scale continuation](vinogradov-cubic-summation.md) already

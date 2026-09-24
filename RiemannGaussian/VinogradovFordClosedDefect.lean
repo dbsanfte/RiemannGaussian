@@ -16,7 +16,7 @@ Here the paper's moment index is `n = J + 1`.
 The scalar defect bound has no prime-supply premise. Its transport to the
 actual homogeneous moment retains the unproved `ShortPrimeSupply` and
 the original recursively defined coefficient. The paper's closed
-coefficient estimate is a separate remaining obligation.
+coefficient estimate is supplied separately in `VinogradovFordClosedCoefficient`.
 
 Source: Kevin Ford, *Vinogradov's integral and bounds for the Riemann
 zeta function*, Lemma 3.6, arXiv:1910.08209v1.

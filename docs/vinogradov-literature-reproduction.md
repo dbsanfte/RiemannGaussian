@@ -19,7 +19,9 @@ reported constants in the [literature audit](zero-free-literature-frontier.md).
 | Bellotti 2.2 / Ford 3.3' | Differencing into the next literal mixed count | Proved for integer endpoints, including the diagonal case |
 | Bellotti 2.4 / Ford 3.4 | Original mixed iteration with its stated coefficients and thresholds | Original coefficient, defect and starting height proved with constructed scales and integer cutoffs under Ford's stationary-scale criterion; only the dense prime supply remains an arithmetic input at this step |
 | Ford 3.5 | Repeated original iteration from the diagonal moment at every positive endpoint | Proved with the published coefficient recurrence; the concrete rank and maximal depth are now constructed, leaving short-prime supply as the arithmetic premise |
-| Ford 3.6 | Quantitative original iteration for `k>=1000` | Closed defect bound proved with the original `1.69/k` constant and full upper order range; the `W=k^(4.11*k)` height bound and early coefficient-step estimates are proved; the closed coefficient product remains open |
+| Ford 3.6 | Quantitative original iteration for `k>=1000` | Full closed coefficient and defect bounds proved with all original constants and the complete order interval; actual moments retain the unproved dense short-prime supply |
+| Ford Theorem 3, `k>=1000` | Interpolation to every integer order in the published interval | Actual moment interpolation proved with the original `1.7/k` defect and coefficient constants; dense short-prime supply remains explicit |
+| Ford Theorem 3, lower-degree tables | Original numerical bounds through the finite degree range | Open |
 | Bellotti 2.3 and 2.5 | Sharper scales and repeated moment-order iteration | Sharper scale normalization under audit; full quantitative iteration open |
 | Bellotti 1.4 and 2.8 | Complete and smooth incomplete moment estimates | Published numerical bounds open |
 | Bellotti 1.5 | Block coefficient `8.7979`, exponent denominator `132.94357` | Open |
@@ -411,10 +413,60 @@ original maximum in this range, while `step_le_product` retains both
 factors at all later steps. None of these coefficient estimates assumes
 prime supply or an independent moment bound.
 
-The coefficient product still needs to be telescoped and bounded with
-the original `2.055`, `5.91` and `9.7278` constants. The full coefficient
-bound, short-prime supply and subsequent zeta/VK transport remain open;
-this is not yet all of Lemma 3.6 or a new zero-free region.
+[`VinogradovFordCoefficientBudget`](../RiemannGaussian/VinogradovFordCoefficientBudget.lean)
+now pays the initial factorial, telescopes every early defect decrease,
+and multiplies the remaining packet costs exactly, including stopped steps.
+At `T=floor(1.97*k)` it proves
+
+```math
+C_J\le W^{k^2/2-\Delta_J}
+k^{3k(J-T)}\,1.06^{(J-T)k^2+2k(J^2+J-T^2-T)}\qquad(J\ge T).
+```
+
+[`VinogradovFordClosedCoefficient.selected_coefficient_bound`](../RiemannGaussian/VinogradovFordClosedCoefficient.lean)
+uses both exact floor inequalities and the nonnegative defect to prove,
+for `n=J+1>=2*k`,
+
+```math
+C_J\le k^{2.055k^3-5.91k^2+3nk}\,
+1.06^{nk^2+2k(n^2-n)-9.7278k^3}.
+```
+
+This is an unconditional bound on the actual recursive coefficient.
+`selected_moment_closed` combines it with the closed defect throughout the
+paper's complete order interval. **Dense short-prime supply is still an
+unproved premise of the actual moment theorem.**
+
+## Interpolation to every high-degree order
+
+[`VinogradovMomentInterpolation`](../RiemannGaussian/VinogradovMomentInterpolation.lean)
+proves Holder interpolation on the original compact torus, including zero
+values of the exponential sum and both interpolation endpoints. The exact
+negative linear term in the adjacent packet exponents pays the quadratic
+coefficient interpolation cost.
+[`VinogradovFordOrderBudget`](../RiemannGaussian/VinogradovFordOrderBudget.lean)
+bounds the interpolated geometric defect with the original `1.7/k` allowance.
+
+[`VinogradovFordAllOrders.published_moment_bound_real`](../RiemannGaussian/VinogradovFordAllOrders.lean)
+constructs the quotient and remainder of the actual integer order and proves
+the `k>=1000` part of Ford's Theorem 3:
+
+```math
+J_{s,k}(P)\le
+k^{2.055k^3-5.91k^2+3s}\,1.06^{sk+2s^2/k-9.7278k^3}
+P^{2s-k(k+1)/2+\Delta_s},
+\qquad
+\Delta_s=\frac38 k^2\exp\!\left(\frac12-\frac{2s}{k^2}+\frac{1.7}{k}\right),
+```
+
+for every real `P>=1`, using the literal cutoff `floor(P)`, throughout
+`2*k^2<=s<=(k^2/2)*(1/2+log(3*k/8))`. The exponent is proved
+nonnegative before passing from the integer cutoff to the real endpoint. The theorem retains
+`ShortPrimeSupply k (3/50)` explicitly. It assumes no intermediate moment,
+coefficient, schedule or divisibility estimate. The dense prime supply,
+lower-degree numerical tables and subsequent incomplete-moment/zeta
+transport remain open. No new zero-free region follows from this
+conditional high-degree moment bound alone.
 
 The required dense prime-packet estimate must also be proved. The existing
 `(M,8M]` packet cannot silently replace the paper's narrower interval while
