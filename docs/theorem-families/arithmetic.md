@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**440 modules.** Source links open the definitions, hypotheses and proofs.
+**443 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -211,6 +211,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszExtremePrimeCount](../../RiemannGaussian/ZetaRieszExtremePrimeCount.lean)
 - [ZetaRieszExtremePrimeProfile](../../RiemannGaussian/ZetaRieszExtremePrimeProfile.lean)
 - [ZetaRieszFilteredCompletion](../../RiemannGaussian/ZetaRieszFilteredCompletion.lean)
+- [ZetaRieszFilteredMaskAudit](../../RiemannGaussian/ZetaRieszFilteredMaskAudit.lean)
 - [ZetaRieszFixedCofactor](../../RiemannGaussian/ZetaRieszFixedCofactor.lean)
 - [ZetaRieszFourExtremeBound](../../RiemannGaussian/ZetaRieszFourExtremeBound.lean)
 - [ZetaRieszFourExtremeDeletion](../../RiemannGaussian/ZetaRieszFourExtremeDeletion.lean)
@@ -220,6 +221,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszFullParityPacket](../../RiemannGaussian/ZetaRieszFullParityPacket.lean)
 - [ZetaRieszGeneralCofactorTilt](../../RiemannGaussian/ZetaRieszGeneralCofactorTilt.lean)
 - [ZetaRieszGrowingCofactor](../../RiemannGaussian/ZetaRieszGrowingCofactor.lean)
+- [ZetaRieszHalfPlaneModes](../../RiemannGaussian/ZetaRieszHalfPlaneModes.lean)
 - [ZetaRieszHarmonicWindow](../../RiemannGaussian/ZetaRieszHarmonicWindow.lean)
 - [ZetaRieszHeadAdaptive](../../RiemannGaussian/ZetaRieszHeadAdaptive.lean)
 - [ZetaRieszHeadAdaptiveTransport](../../RiemannGaussian/ZetaRieszHeadAdaptiveTransport.lean)
@@ -338,6 +340,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszRetainedCells](../../RiemannGaussian/ZetaRieszRetainedCells.lean)
 - [ZetaRieszRetainedFraction](../../RiemannGaussian/ZetaRieszRetainedFraction.lean)
 - [ZetaRieszRetainedSource](../../RiemannGaussian/ZetaRieszRetainedSource.lean)
+- [ZetaRieszRightwardModeAudit](../../RiemannGaussian/ZetaRieszRightwardModeAudit.lean)
 - [ZetaRieszSemiprimeBand](../../RiemannGaussian/ZetaRieszSemiprimeBand.lean)
 - [ZetaRieszSemiprimeCompletion](../../RiemannGaussian/ZetaRieszSemiprimeCompletion.lean)
 - [ZetaRieszSemiprimeDeletion](../../RiemannGaussian/ZetaRieszSemiprimeDeletion.lean)

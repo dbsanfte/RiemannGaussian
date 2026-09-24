@@ -12,21 +12,21 @@
   "campaign": {
     "direction": {
       "branch": "riesz-harmonic-cost",
-      "statement": "The harmonic-cost route retains its evaluated source and an open independent -3/40 floor. We test the all-count packet using simple exposed-zero phases. Exceptional orders, the factorial rectangle and old allocation now have independent geometric error bounds. The signed cutoff tail and literal masked phase transfer remain open; the rest still needs joint arithmetic cancellation.",
-      "changeReason": "Summing the exact factorial weights pays the pointwise order-zero obstruction. Numerical rate searches guided three independently proved losses; the old rest allowance is still divergent."
+      "statement": "The harmonic-cost route retains its evaluated source and an open independent -3/40 floor. The all-count parity packet has proved support-tail and factorial-error bounds, but its coupled masked phase estimate remains open. Radial and filter audits rule out the proposed transfers from complete prime-leg limits; any continuation must control the literal joint response and the signed rest.",
+      "changeReason": "The radial rate audit and exact total-filter/per-leg mismatch close the proposed masked-transfer shortcuts. Half-plane geometry works, but several rightward modes defeat the existing displacement-based chain argument."
     },
     "latestUpdate": {
-      "sequence": 73,
-      "id": "parity-supported-tail-and-masked-phase-audit",
+      "sequence": 74,
+      "id": "radial-pole-jet-and-rightward-mode-audits",
       "kind": "theorem",
-      "title": "Signed 12+ support tail bounded; the literal masked transfer remains open.",
-      "body": "Lean resums every supported insertion with its sign retained and bounds the entire 12+ tail below 1/1000000, uniformly in a positive auxiliary cutoff. A separate analytic-mode theorem shows that uniform complete-leg limits alone do not bound the hard share projection, even with arbitrarily small fixed nonzero residuals.",
-      "next": "Pay the one-sided support/empty-cofactor boundary and zero auxiliary cutoff limit, then prove a joint phase estimate through the literal masks. The model audit is not a counterexample to the arithmetic packet. Its bound, the rest floor, and a new zero exclusion remain open.",
+      "title": "Masked two-mode bound proved; radial and filter transfers audited.",
+      "body": "Lean proves a positive radial model exponent, a masked two-mode bound, and the exact distinction between total-order and per-leg filtering. A synthetic multi-rightward family defeats every uniform squared-displacement/gain bound. Optional numerical probes quantify these obstructions.",
+      "next": "The actual filtered packet is neither bounded nor disproved here. Pole-containing mixtures, the projected residual and the one-sided cutoff boundary remain unpaid. No signed floor or new zero exclusion is claimed.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszParitySupportedTailTheorem"
+        "rieszPoleJetFilterMaskAuditTheorem"
       ],
-      "documentation": "docs/zeta-riesz-parity-tail-transfer-audit.md"
+      "documentation": "docs/zeta-riesz-pole-jet-half-plane-audit.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -3674,6 +3674,45 @@
         "rieszZeroParityScope"
       ],
       "documentation": "docs/zeta-riesz-parity-tail-transfer-audit.md"
+    },
+    {
+      "id": "harmonic-pole-jet-mask-audit",
+      "label": "Masked modes · radial, pole-jet and rightward audits",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRadialMaskedRateAuditTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszHalfPlaneMaskedBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFilteredPacketBridgeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPoleJetFilterMaskAuditTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPoleJetInnerFilterTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRightwardResonanceDepthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRightwardModeObstructionTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszPoleJetMaskScope"
+      ],
+      "documentation": "docs/zeta-riesz-pole-jet-half-plane-audit.md"
     },
     {
       "id": "harmonic-cascade-audit",

@@ -1,3 +1,4 @@
 # Optional research probes only; no ordinary build or CI installs this file.
 numpy==2.2.6
 scipy==1.15.3
+gmpy2==2.3.1

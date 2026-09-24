@@ -3486,7 +3486,10 @@
     "ZetaRieszParityInsertionPoisson": "arithmetic",
     "ZetaRieszParityInsertionIdentity": "arithmetic",
     "ZetaRieszParityInsertionTail": "arithmetic",
-    "ZetaRieszParityMaskedPhaseAudit": "arithmetic"
+    "ZetaRieszParityMaskedPhaseAudit": "arithmetic",
+    "ZetaRieszHalfPlaneModes": "arithmetic",
+    "ZetaRieszFilteredMaskAudit": "arithmetic",
+    "ZetaRieszRightwardModeAudit": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

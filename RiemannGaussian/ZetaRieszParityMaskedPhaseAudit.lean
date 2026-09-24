@@ -210,5 +210,94 @@ theorem scaled_defect_not_eventually_bounded {c : ℂ} (hc : c ≠ 0) (B : ℝ) 
   rw [norm_mul] at hN
   exact (le_div_iff₀ (norm_pos_iff.mpr hc)).mpr (by simpa only [mul_comm] using hN)
 
+/-! ## The actual radial saddle of the same analytic modes
+
+The old `band` is already a complete Gamma-moment response, rather than a
+fixed-total-log slice. Inserting its denominator into a second radial
+integral would count that integration twice. For the literal radial kernel
+the mode density instead contributes `exp ((1/2-pole q)*T)`.
+
+These theorems check the joint exponent and spectral geometry. They are
+not an identification or asymptotic theorem for the masked all-count
+arithmetic packet, or even for its numerical continuum model.
+-/
+
+/-- Exponential rate at `T=t*N`, including the source normalization,
+the factorial saddle, and the real part of the correlated mode. -/
+def radialExponent (t q : ℝ) : ℝ :=
+  1+Real.log (radius*t)-(pole q).re*t
+
+theorem radial_saddle_in_core :
+    (39/20 : ℝ) < axis⁻¹ ∧ axis⁻¹ < 203/100 := by
+  norm_num [axis]
+
+theorem radial_saddle_exponent :
+    radialExponent axis⁻¹ (43/80) = Real.log (radius/axis) := by
+  rw [radialExponent, mode_geometry.2.2.2.1]
+  have ha : axis ≠ 0 := by norm_num [axis]
+  simp only [Complex.ofReal_re, mul_inv_cancel₀ ha, div_eq_mul_inv]
+  ring
+
+/-- A strictly positive exponential rate, certified without decimal
+evaluation. In particular the radial window contains the dangerous saddle. -/
+theorem radial_growth_bounds :
+    (1/21000 : ℝ) < Real.log (radius/axis) ∧
+      Real.log (radius/axis) < 1/20000 := by
+  have hp : 0 < radius/axis := by norm_num [radius, axis]
+  have hl := Real.one_sub_inv_le_log_of_pos hp
+  have hu := Real.log_le_sub_one_of_pos hp
+  norm_num [radius, axis] at hl hu ⊢
+  constructor <;> linarith
+
+/-- The requested uniformly negative joint real exponent is impossible
+for these modes on the original radial/share rectangle. This is a
+pointwise rate obstruction, not a bound on an oscillatory integral. -/
+theorem no_uniform_negative_radial_exponent {c : ℝ} (hc : 0 < c) :
+    ¬∀ t ∈ Icc (39/20 : ℝ) (203/100),
+      ∀ q ∈ Icc (43/80 : ℝ) (9/16), radialExponent t q ≤ -c := by
+  intro h
+  have hs := h axis⁻¹ ⟨radial_saddle_in_core.1.le, radial_saddle_in_core.2.le⟩
+    (43/80) ⟨le_rfl, by norm_num⟩
+  rw [radial_saddle_exponent] at hs
+  linarith [radial_growth_bounds.1]
+
+/-- Both optimal Gamma window-tail rates strictly exceed the resonant
+growth rate. This checks the constants only; it does not assume or assert
+a Gamma-tail estimate for the literal carrier. -/
+theorem radial_window_rate_margin :
+    Real.log (radius/axis) < axis*(39/20)-1-Real.log (axis*(39/20)) ∧
+    Real.log (radius/axis) < axis*(203/100)-1-Real.log (axis*(203/100)) := by
+  have hlog {x c : ℝ} (hx : 0 < x) (hc : 0 < c) :
+      Real.log x ≤ x/c+c-2 := by
+    have h := add_le_add (Real.log_le_sub_one_of_pos (div_pos hx hc))
+      (Real.log_le_sub_one_of_pos hc)
+    rw [Real.log_div hx.ne' hc.ne'] at h
+    linarith
+  have hl := hlog (x := axis*(39/20)) (c := 79/80)
+    (by norm_num [axis]) (by norm_num)
+  have hh := hlog (x := axis*(203/100)) (c := 403/400)
+    (by norm_num [axis]) (by norm_num)
+  have hg := radial_growth_bounds.2
+  norm_num [axis] at hl hh hg ⊢
+  constructor <;> linarith
+
+/-- Assigning at least one cofactor share to the largest prime's mode
+moves its total modal share strictly past the resonant endpoint. -/
+theorem left_owner_extra_mode_separated {q x : ℝ}
+    (hq : 43/80 ≤ q) (hx : 3/250 ≤ x) :
+    (43/80+3/250 : ℝ) ≤ q+x ∧ (12/4625 : ℝ) ≤ (pole (q+x)).im := by
+  rw [pole_affine]
+  norm_num [slope, Complex.mul_im, Complex.mul_re]
+  constructor <;> linarith
+
+/-- If the largest prime has the right mode, all left-mode cofactor
+shares together lie strictly below the resonant modal share. -/
+theorem right_owner_mode_separated {q x : ℝ}
+    (hq : 43/80 ≤ q) (hx : x ≤ 1-q) :
+    x ≤ (37/80 : ℝ) ∧ (pole x).im ≤ -(3/185 : ℝ) := by
+  rw [pole_affine]
+  norm_num [slope, Complex.mul_im, Complex.mul_re]
+  constructor <;> linarith
+
 end
 end RiemannGaussian.ZetaRieszParityMaskedPhaseAudit

@@ -59,6 +59,23 @@ diverges: balanced triple boxes lie wholly outside the selected packet.
 No whole-packet floor or new zero exclusion follows. See the
 [signed-tail and masked-transfer audit](zeta-riesz-parity-tail-transfer-audit.md).
 
+The supporting **Masked modes · radial, pole-jet and rightward audits**
+endpoint records the next transfer test. The analytic radial model retains
+a proved positive saddle exponent. Actual zero denominators satisfy the
+required convex half-plane geometry under an explicit rightmost hypothesis,
+and the masked two-mode integral has a proved `1/N` bound. However, the
+existing polynomial kernel filters total order, not each prime leg; its
+pole root does not justify deleting mixed pole assignments. The actual
+pole keeps its imaginary coordinate, and the non-annihilation theorem
+retains the compensating second zero as a hypothesis. Several synthetic
+rightward modes can cancel their ordinate offsets with arbitrarily small
+horizontal gains, defeating the proposed displacement-based chain bound.
+Neither a rightmost zero nor these model zeros are asserted to exist.
+The literal filtered packet, projected residual and signed rest remain
+unbounded by this argument; no new zero exclusion follows. See the
+[pole-jet and rightward-mode audit](zeta-riesz-pole-jet-half-plane-audit.md)
+and the [radial audit](zeta-riesz-radial-mode-audit.md).
+
 The optional **Rosser prime error · final large range proved** endpoint
 tracks a separate supporting step in the literature-reproduction campaign:
 the actual smoothed prime formula and complete high-zero tail now give

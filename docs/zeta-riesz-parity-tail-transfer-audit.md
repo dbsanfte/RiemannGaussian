@@ -185,6 +185,12 @@ steps per unit: its largest sampled continuum packet norm is respectively
 `8.0374947653e-14` and `8.0374898614e-14`. This remains exploratory evidence
 for the candidate delay inverse, not a certified arithmetic bound.
 
+The subsequent [coupled radial audit](zeta-riesz-radial-mode-audit.md)
+integrates the original radial window and moving length. Its ordered
+all-count modal sector retains delayed growth; its checked Lean additions
+certify the positive saddle exponent and modal-share separation. It does
+not establish growth of the full mixed-mode measure or the literal packet.
+
 The decisive missing theorem is still a **joint masked phase estimate**
 using the actual prime measure and the full Riesz/count structure, including
 any mixed-mode boundary response. The independent arithmetic floor for

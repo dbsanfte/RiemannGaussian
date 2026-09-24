@@ -1602,6 +1602,78 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+### Pole-jet half-plane and rightward-mode audit (2026-09-24)
+
+The local continuation is recorded in
+`docs/zeta-riesz-pole-jet-half-plane-audit.md`. Preserve the prior radial
+no-go and every literal unfiltered mask, error estimate and ledger.
+
+`ZetaRieszHalfPlaneModes` proves actual direct/reflected zero half-plane
+geometry under an explicit temporary Rightmost hypothesis, arbitrary
+finite convex stability, and the exact hard-share two-node bound
+2u/(norm(z1-z2)*(N+1)), with distinct and confluent decay statements.
+Do not infer existence of a rightmost zero from RH failure.
+
+The decisive bridge audit is in `ZetaRieszFilteredMaskAudit`: the actual
+polynomial Riesz kernel filters total moments with all masks frozen at N.
+It does not filter each prime leg independently. A mixed denominator w
+gets P(1/w), not a product of individual evaluations. The actual pole-jet
+filter is nonzero for real 1/2<w<u under Rightmost, and for every exposed
+inner denominator with Re(w)>1/2. Hence the zero-isolating polynomial also
+does not automatically annihilate masked mixed modes.
+
+The actual pole is 1/2+i*Im(rho). The real pole/zero mixture 0.500023125
+requires an explicit compensating ordinate on a same-real-part zero.
+The actual-zero non-annihilation theorem retains existence and that
+ordinate relation as hypotheses; do not claim such a zero exists.
+
+`ZetaRieszRightwardModeAudit` proves the one-successor displacement bound,
+but also an exact synthetic two-rightward-mode family that defeats every
+uniform squared-displacement/gain bound while retaining exposure and a
+local radius. Three/four-mode numerical checks corroborate this geometry;
+they are not actual zero data. Resonance depth still forces a horizontal
+gain, but supplies no usable ordinate control for the existing chain.
+Stop that chain extension without new actual correlations.
+
+No conditional literal filtered-packet bound is proved or refuted here.
+Its joint residual estimate, pole-containing mixed assignments, and the
+old one-sided positive-cutoff inverse boundary remain unpaid. Do not
+advance the rest ledger or claim a floor, contradiction or zero exclusion.
+No higher-dimensional divided-difference framework was built after the
+filter bridge failed. Continue locally without subagents.
+
+### Coupled radial masked-mode audit (2026-09-24)
+
+The continuation from `6214417` is recorded in
+`docs/zeta-riesz-radial-mode-audit.md`. The old analytic `band` already
+contains a complete Gamma radial integral; do not insert its denominator
+power into a second factorial radial integral. The corrected model uses
+the mode density exp((1/2-pole(q))*T) against exp(-T/2).
+
+`ZetaRieszParityMaskedPhaseAudit.radial_saddle_in_core`,
+`radial_growth_bounds`, `radial_window_rate_margin`, and
+`no_uniform_negative_radial_exponent` check that the resonant saddle is
+inside the literal window and its exponential rate is positive, while
+the Gamma tail rates are larger. These certify rate geometry, not a new
+integral theorem or an arithmetic packet bound.
+
+The optional radial all-count ordered-sector model retains the exact
+moving length and shows delayed growth beyond N=700000. It assigns the
+left mode to the largest prime and the right mode to every cofactor.
+It is not the full sum over all mode assignments, actual primes, or the
+literal finite masked packet. Other assignments have a proved modal-share
+separation, but that alone does not prove their integrals cannot cancel.
+The full-mixture FFT residuals are below their numerical diagnostics and
+do not settle growth or decay. Do not promote them to a no-go theorem for
+FullParityPacket. The positive-cutoff boundary identification remains open.
+
+Stop the proposed generic radial rescue of separate complete-leg phase
+limits; any reopened packet argument needs genuinely joint arithmetic
+control of the endpoint modes. Preserve every paid error and the exact
+packet/rest ledger. No rest limit, independent floor, zero exclusion,
+public frontier change, or completed masked transfer is claimed. Continue
+locally without subagents; do not resume the divergent rest allowance.
+
 ### Signed support tail and joint masked phase audit (2026-09-24)
 
 The local continuation from `6e42991` is recorded in

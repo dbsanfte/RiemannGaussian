@@ -1,0 +1,1160 @@
+{
+  "status": "Exploratory synthetic mode audit, not arithmetic or zeta-zero data.",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "input_sha256": "e97aeb68d63350ac4039ff61597bcc33d6269ee902ba841df529ff8fed23c1c0",
+  "radius": 0.50005,
+  "canonical_radius": 0.75,
+  "witnesses": [
+    {
+      "mode_count": 2,
+      "gain_each": 1e-05,
+      "shares": [
+        0.5375,
+        0.4625
+      ],
+      "prime_shares": [
+        0.5375,
+        0.2,
+        0.15,
+        0.1,
+        0.0125
+      ],
+      "ordinate_offsets": [
+        0.1,
+        -0.11621621621621622
+      ],
+      "weighted_ordinate": -6.938893903907228e-18,
+      "direct_norms": [
+        0.509941174646645,
+        0.5133675199227298
+      ],
+      "reflected_real_parts": [
+        1.0816508932062703,
+        1.0672606502441226
+      ],
+      "mixed_real": 0.50004,
+      "mixed_imag": -6.938893903907228e-18,
+      "mixed_norm": 0.50004,
+      "global_norm_lower_bound": 0.50004,
+      "weighted_ordinate_variance": 0.011621621621621624,
+      "variance_div_gain": 1162.1621621621623,
+      "min_individual_squared_offset_div_gain": 1000.0000000000001,
+      "isolator_at_selected": [
+        1.0,
+        0.0
+      ],
+      "maximum_isolator_at_individual_modes": 0.0,
+      "isolator_at_mixed": [
+        1.000039988400489,
+        -1.3954046229667036e-05
+      ],
+      "warning": "Synthetic denominator geometry, not actual zeta-zero data. The common real-part lower bound applies to every reflected/direct choice; the balanced direct witness attains it."
+    },
+    {
+      "mode_count": 2,
+      "gain_each": 1e-07,
+      "shares": [
+        0.5375,
+        0.4625
+      ],
+      "prime_shares": [
+        0.5375,
+        0.2,
+        0.15,
+        0.1,
+        0.0125
+      ],
+      "ordinate_offsets": [
+        0.1,
+        -0.11621621621621622
+      ],
+      "weighted_ordinate": -6.938893903907228e-18,
+      "direct_norms": [
+        0.5099508824288963,
+        0.5133771629139967
+      ],
+      "reflected_real_parts": [
+        1.081631125629072,
+        1.0672416862357244
+      ],
+      "mixed_real": 0.5000499,
+      "mixed_imag": -6.938893903907228e-18,
+      "mixed_norm": 0.5000499,
+      "global_norm_lower_bound": 0.5000499,
+      "weighted_ordinate_variance": 0.011621621621621624,
+      "variance_div_gain": 116216.21621621624,
+      "min_individual_squared_offset_div_gain": 100000.00000000003,
+      "isolator_at_selected": [
+        0.9999999999999998,
+        0.0
+      ],
+      "maximum_isolator_at_individual_modes": 0.0,
+      "isolator_at_mixed": [
+        1.0000003999592435,
+        -1.3953493943657582e-07
+      ],
+      "warning": "Synthetic denominator geometry, not actual zeta-zero data. The common real-part lower bound applies to every reflected/direct choice; the balanced direct witness attains it."
+    },
+    {
+      "mode_count": 2,
+      "gain_each": 1e-09,
+      "shares": [
+        0.5375,
+        0.4625
+      ],
+      "prime_shares": [
+        0.5375,
+        0.2,
+        0.15,
+        0.1,
+        0.0125
+      ],
+      "ordinate_offsets": [
+        0.1,
+        -0.11621621621621622
+      ],
+      "weighted_ordinate": -6.938893903907228e-18,
+      "direct_norms": [
+        0.5099509795067562,
+        0.5133772593439587
+      ],
+      "reflected_real_parts": [
+        1.0816309279567844,
+        1.0672414965988273
+      ],
+      "mixed_real": 0.500049999,
+      "mixed_imag": -6.938893903907228e-18,
+      "mixed_norm": 0.500049999,
+      "global_norm_lower_bound": 0.500049999,
+      "weighted_ordinate_variance": 0.011621621621621624,
+      "variance_div_gain": 11621621.621621624,
+      "min_individual_squared_offset_div_gain": 10000000.000000002,
+      "isolator_at_selected": [
+        1.0,
+        0.0
+      ],
+      "maximum_isolator_at_individual_modes": 0.0,
+      "isolator_at_mixed": [
+        1.0000000039996,
+        -1.3953488268184798e-09
+      ],
+      "warning": "Synthetic denominator geometry, not actual zeta-zero data. The common real-part lower bound applies to every reflected/direct choice; the balanced direct witness attains it."
+    },
+    {
+      "mode_count": 2,
+      "gain_each": 1e-11,
+      "shares": [
+        0.5375,
+        0.4625
+      ],
+      "prime_shares": [
+        0.5375,
+        0.2,
+        0.15,
+        0.1,
+        0.0125
+      ],
+      "ordinate_offsets": [
+        0.1,
+        -0.11621621621621622
+      ],
+      "weighted_ordinate": -6.938893903907228e-18,
+      "direct_norms": [
+        0.5099509804775347,
+        0.5133772603082584
+      ],
+      "reflected_real_parts": [
+        1.0816309259800618,
+        1.0672414947024587
+      ],
+      "mixed_real": 0.50004999999,
+      "mixed_imag": -6.938893903907228e-18,
+      "mixed_norm": 0.50004999999,
+      "global_norm_lower_bound": 0.50004999999,
+      "weighted_ordinate_variance": 0.011621621621621624,
+      "variance_div_gain": 1162162162.1621625,
+      "min_individual_squared_offset_div_gain": 1000000000.0000002,
+      "isolator_at_selected": [
+        1.0,
+        0.0
+      ],
+      "maximum_isolator_at_individual_modes": 0.0,
+      "isolator_at_mixed": [
+        1.000000000039996,
+        -1.395349133947617e-11
+      ],
+      "warning": "Synthetic denominator geometry, not actual zeta-zero data. The common real-part lower bound applies to every reflected/direct choice; the balanced direct witness attains it."
+    },
+    {
+      "mode_count": 3,
+      "gain_each": 1e-05,
+      "shares": [
+        0.5375,
+        0.3,
+        0.1625
+      ],
+      "prime_shares": [
+        0.5375,
+        0.15,
+        0.15,
+        0.15,
+        0.0125
+      ],
+      "ordinate_offsets": [
+        0.1,
+        -0.08,
+        -0.18307692307692308
+      ],
+      "weighted_ordinate": -3.469446951953614e-18,
+      "direct_norms": [
+        0.509941174646645,
+        0.5063990537115961,
+        0.532500855739513
+      ],
+      "reflected_real_parts": [
+        1.0816508932062703,
+        1.0968355102365588,
+        0.9919428543002434
+      ],
+      "mixed_real": 0.50004,
+      "mixed_imag": -3.469446951953614e-18,
+      "mixed_norm": 0.50004,
+      "global_norm_lower_bound": 0.50004,
+      "weighted_ordinate_variance": 0.012741538461538462,
+      "variance_div_gain": 1274.1538461538462,
+      "min_individual_squared_offset_div_gain": 640.0,
+      "isolator_at_selected": [
+        1.0,
+        0.0
+      ],
+      "maximum_isolator_at_individual_modes": 0.0,
+      "isolator_at_mixed": [
+        1.0000599789250593,
+        7.962662416839545e-05
+      ],
+      "warning": "Synthetic denominator geometry, not actual zeta-zero data. The common real-part lower bound applies to every reflected/direct choice; the balanced direct witness attains it."
+    },
+    {
+      "mode_count": 3,
+      "gain_each": 1e-07,
+      "shares": [
+        0.5375,
+        0.3,
+        0.1625
+      ],
+      "prime_shares": [
+        0.5375,
+        0.15,
+        0.15,
+        0.15,
+        0.0125
+      ],
+      "ordinate_offsets": [
+        0.1,
+        -0.08,
+        -0.18307692307692308
+      ],
+      "weighted_ordinate": -3.469446951953614e-18,
+      "direct_norms": [
+        0.5099508824288963,
+        0.5064088293957858,
+        0.5325101522537609
+      ],
+      "reflected_real_parts": [
+        1.081631125629072,
+        1.0968148789253571,
+        0.9919278583163555
+      ],
+      "mixed_real": 0.5000499,
+      "mixed_imag": -3.469446951953614e-18,
+      "mixed_norm": 0.5000499,
+      "global_norm_lower_bound": 0.5000499,
+      "weighted_ordinate_variance": 0.012741538461538462,
+      "variance_div_gain": 127415.38461538462,
+      "min_individual_squared_offset_div_gain": 64000.00000000001,
+      "isolator_at_selected": [
+        0.9999999999999998,
+        0.0
+      ],
+      "maximum_isolator_at_individual_modes": 0.0,
+      "isolator_at_mixed": [
+        1.0000005999384978,
+        7.96218964549046e-07
+      ],
+      "warning": "Synthetic denominator geometry, not actual zeta-zero data. The common real-part lower bound applies to every reflected/direct choice; the balanced direct witness attains it."
+    },
+    {
+      "mode_count": 3,
+      "gain_each": 1e-09,
+      "shares": [
+        0.5375,
+        0.3,
+        0.1625
+      ],
+      "prime_shares": [
+        0.5375,
+        0.15,
+        0.15,
+        0.15,
+        0.0125
+      ],
+      "ordinate_offsets": [
+        0.1,
+        -0.08,
+        -0.18307692307692308
+      ],
+      "weighted_ordinate": -3.469446951953614e-18,
+      "direct_norms": [
+        0.5099509795067562,
+        0.506408927152652,
+        0.5325102452190132
+      ],
+      "reflected_real_parts": [
+        1.0816309279567844,
+        1.0968146726160564,
+        0.9919277083583424
+      ],
+      "mixed_real": 0.500049999,
+      "mixed_imag": -3.469446951953614e-18,
+      "mixed_norm": 0.500049999,
+      "global_norm_lower_bound": 0.500049999,
+      "weighted_ordinate_variance": 0.012741538461538462,
+      "variance_div_gain": 12741538.461538462,
+      "min_individual_squared_offset_div_gain": 6400000.0,
+      "isolator_at_selected": [
+        0.9999999999999999,
+        3.7909102007143e-17
+      ],
+      "maximum_isolator_at_individual_modes": 0.0,
+      "isolator_at_mixed": [
+        1.0000000059994,
+        7.962184868489013e-09
+      ],
+      "warning": "Synthetic denominator geometry, not actual zeta-zero data. The common real-part lower bound applies to every reflected/direct choice; the balanced direct witness attains it."
+    },
+    {
+      "mode_count": 3,
+      "gain_each": 1e-11,
+      "shares": [
+        0.5375,
+        0.3,
+        0.1625
+      ],
+      "prime_shares": [
+        0.5375,
+        0.15,
+        0.15,
+        0.15,
+        0.0125
+      ],
+      "ordinate_offsets": [
+        0.1,
+        -0.08,
+        -0.18307692307692308
+      ],
+      "weighted_ordinate": -3.469446951953614e-18,
+      "direct_norms": [
+        0.5099509804775347,
+        0.5064089281302206,
+        0.5325102461486658
+      ],
+      "reflected_real_parts": [
+        1.0816309259800618,
+        1.096814670552964,
+        0.9919277068587624
+      ],
+      "mixed_real": 0.50004999999,
+      "mixed_imag": -3.469446951953614e-18,
+      "mixed_norm": 0.50004999999,
+      "global_norm_lower_bound": 0.50004999999,
+      "weighted_ordinate_variance": 0.012741538461538462,
+      "variance_div_gain": 1274153846.1538463,
+      "min_individual_squared_offset_div_gain": 640000000.0000001,
+      "isolator_at_selected": [
+        1.0,
+        2.168838047524047e-17
+      ],
+      "maximum_isolator_at_individual_modes": 0.0,
+      "isolator_at_mixed": [
+        1.0000000000599942,
+        7.962188736204664e-11
+      ],
+      "warning": "Synthetic denominator geometry, not actual zeta-zero data. The common real-part lower bound applies to every reflected/direct choice; the balanced direct witness attains it."
+    },
+    {
+      "mode_count": 4,
+      "gain_each": 1e-05,
+      "shares": [
+        0.5375,
+        0.23,
+        0.18,
+        0.0525
+      ],
+      "prime_shares": [
+        0.5375,
+        0.23,
+        0.18,
+        0.04,
+        0.0125
+      ],
+      "ordinate_offsets": [
+        0.1,
+        -0.1,
+        -0.1,
+        -0.24285714285714285
+      ],
+      "weighted_ordinate": -1.734723475976807e-18,
+      "direct_norms": [
+        0.509941174646645,
+        0.509941174646645,
+        0.509941174646645,
+        0.5558953079822988
+      ],
+      "reflected_real_parts": [
+        1.0816508932062703,
+        1.0816508932062703,
+        1.0816508932062703,
+        0.9102092746671893
+      ],
+      "mixed_real": 0.50004,
+      "mixed_imag": -1.734723475976807e-18,
+      "mixed_norm": 0.50004,
+      "global_norm_lower_bound": 0.50004,
+      "weighted_ordinate_variance": 0.012571428571428572,
+      "variance_div_gain": 1257.142857142857,
+      "min_individual_squared_offset_div_gain": 1000.0000000000001,
+      "isolator_at_selected": [
+        1.0,
+        0.0
+      ],
+      "maximum_isolator_at_individual_modes": 0.0,
+      "isolator_at_mixed": [
+        1.0000799701849468,
+        0.0001411877610776801
+      ],
+      "warning": "Synthetic denominator geometry, not actual zeta-zero data. The common real-part lower bound applies to every reflected/direct choice; the balanced direct witness attains it."
+    },
+    {
+      "mode_count": 4,
+      "gain_each": 1e-07,
+      "shares": [
+        0.5375,
+        0.23,
+        0.18,
+        0.0525
+      ],
+      "prime_shares": [
+        0.5375,
+        0.23,
+        0.18,
+        0.04,
+        0.0125
+      ],
+      "ordinate_offsets": [
+        0.1,
+        -0.1,
+        -0.1,
+        -0.24285714285714285
+      ],
+      "weighted_ordinate": -1.734723475976807e-18,
+      "direct_norms": [
+        0.5099508824288963,
+        0.5099508824288963,
+        0.5099508824288963,
+        0.555904213265869
+      ],
+      "reflected_real_parts": [
+        1.081631125629072,
+        1.081631125629072,
+        1.081631125629072,
+        0.91019813290895
+      ],
+      "mixed_real": 0.5000499,
+      "mixed_imag": -1.734723475976807e-18,
+      "mixed_norm": 0.5000499,
+      "global_norm_lower_bound": 0.5000499,
+      "weighted_ordinate_variance": 0.012571428571428572,
+      "variance_div_gain": 125714.28571428572,
+      "min_individual_squared_offset_div_gain": 100000.00000000003,
+      "isolator_at_selected": [
+        0.9999999999999997,
+        0.0
+      ],
+      "maximum_isolator_at_individual_modes": 0.0,
+      "isolator_at_mixed": [
+        1.0000007999178258,
+        1.4117658342427968e-06
+      ],
+      "warning": "Synthetic denominator geometry, not actual zeta-zero data. The common real-part lower bound applies to every reflected/direct choice; the balanced direct witness attains it."
+    },
+    {
+      "mode_count": 4,
+      "gain_each": 1e-09,
+      "shares": [
+        0.5375,
+        0.23,
+        0.18,
+        0.0525
+      ],
+      "prime_shares": [
+        0.5375,
+        0.23,
+        0.18,
+        0.04,
+        0.0125
+      ],
+      "ordinate_offsets": [
+        0.1,
+        -0.1,
+        -0.1,
+        -0.24285714285714285
+      ],
+      "weighted_ordinate": -1.734723475976807e-18,
+      "direct_norms": [
+        0.5099509795067562,
+        0.5099509795067562,
+        0.5099509795067562,
+        0.5559043023188746
+      ],
+      "reflected_real_parts": [
+        1.0816309279567844,
+        1.0816309279567844,
+        1.0816309279567844,
+        0.9101980214920574
+      ],
+      "mixed_real": 0.500049999,
+      "mixed_imag": -1.734723475976807e-18,
+      "mixed_norm": 0.500049999,
+      "global_norm_lower_bound": 0.500049999,
+      "weighted_ordinate_variance": 0.012571428571428572,
+      "variance_div_gain": 12571428.57142857,
+      "min_individual_squared_offset_div_gain": 10000000.000000002,
+      "isolator_at_selected": [
+        0.9999999999999999,
+        0.0
+      ],
+      "maximum_isolator_at_individual_modes": 0.0,
+      "isolator_at_mixed": [
+        1.0000000079992002,
+        1.41176470101578e-08
+      ],
+      "warning": "Synthetic denominator geometry, not actual zeta-zero data. The common real-part lower bound applies to every reflected/direct choice; the balanced direct witness attains it."
+    },
+    {
+      "mode_count": 4,
+      "gain_each": 1e-11,
+      "shares": [
+        0.5375,
+        0.23,
+        0.18,
+        0.0525
+      ],
+      "prime_shares": [
+        0.5375,
+        0.23,
+        0.18,
+        0.04,
+        0.0125
+      ],
+      "ordinate_offsets": [
+        0.1,
+        -0.1,
+        -0.1,
+        -0.24285714285714285
+      ],
+      "weighted_ordinate": -1.734723475976807e-18,
+      "direct_norms": [
+        0.5099509804775347,
+        0.5099509804775347,
+        0.5099509804775347,
+        0.5559043032094046
+      ],
+      "reflected_real_parts": [
+        1.0816309259800618,
+        1.0816309259800618,
+        1.0816309259800618,
+        0.9101980203778886
+      ],
+      "mixed_real": 0.50004999999,
+      "mixed_imag": -1.734723475976807e-18,
+      "mixed_norm": 0.50004999999,
+      "global_norm_lower_bound": 0.50004999999,
+      "weighted_ordinate_variance": 0.012571428571428572,
+      "variance_div_gain": 1257142857.1428573,
+      "min_individual_squared_offset_div_gain": 1000000000.0000002,
+      "isolator_at_selected": [
+        1.0,
+        0.0
+      ],
+      "maximum_isolator_at_individual_modes": 0.0,
+      "isolator_at_mixed": [
+        1.000000000079992,
+        1.4117650061681705e-10
+      ],
+      "warning": "Synthetic denominator geometry, not actual zeta-zero data. The common real-part lower bound applies to every reflected/direct choice; the balanced direct witness attains it."
+    }
+  ],
+  "optimizations": [
+    {
+      "mode_count": 2,
+      "gain_each": 1e-05,
+      "runs": [
+        {
+          "reflected": [
+            false,
+            false
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.50004,
+          "ordinate_offsets": [
+            0.1,
+            -0.11621621621621622
+          ]
+        },
+        {
+          "reflected": [
+            false,
+            true
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5000400045964356,
+          "ordinate_offsets": [
+            0.4809838544520536,
+            -0.5589812047111922
+          ]
+        },
+        {
+          "reflected": [
+            true,
+            false
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5017943750890751,
+          "ordinate_offsets": [
+            0.5589812047111922,
+            -0.558981204711192
+          ]
+        },
+        {
+          "reflected": [
+            true,
+            true
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.501794379240155,
+          "ordinate_offsets": [
+            0.5589812047111921,
+            -0.5589812047111922
+          ]
+        }
+      ],
+      "global_lower_bound": 0.50004,
+      "balanced_direct_norm": 0.50004,
+      "note": "The explicit direct witness attains the real-part lower bound. Other optimizer runs are local diagnostics, not certified optima."
+    },
+    {
+      "mode_count": 3,
+      "gain_each": 1e-05,
+      "runs": [
+        {
+          "reflected": [
+            false,
+            false,
+            false
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.50004,
+          "ordinate_offsets": [
+            0.1,
+            -0.08,
+            -0.18307692307692308
+          ]
+        },
+        {
+          "reflected": [
+            false,
+            false,
+            true
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5000400016149639,
+          "ordinate_offsets": [
+            0.1883045385439242,
+            -0.03459747934370709,
+            -0.5589812047111921
+          ]
+        },
+        {
+          "reflected": [
+            false,
+            true,
+            false
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5000400029814718,
+          "ordinate_offsets": [
+            0.3449497555550601,
+            -0.5589812047111921,
+            -0.10902235239360497
+          ]
+        },
+        {
+          "reflected": [
+            false,
+            true,
+            true
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5000400045964356,
+          "ordinate_offsets": [
+            0.48098383344650586,
+            -0.5589812047111922,
+            -0.5589812047111921
+          ]
+        },
+        {
+          "reflected": [
+            true,
+            false,
+            false
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5017943750890751,
+          "ordinate_offsets": [
+            0.5589812047111922,
+            -0.5589812047111922,
+            -0.5589812047111922
+          ]
+        },
+        {
+          "reflected": [
+            true,
+            false,
+            true
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5017943765475626,
+          "ordinate_offsets": [
+            0.558981204711192,
+            -0.5589812047111922,
+            -0.5589812047111922
+          ]
+        },
+        {
+          "reflected": [
+            true,
+            true,
+            false
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5017943777816675,
+          "ordinate_offsets": [
+            0.5589812047111922,
+            -0.5589812047111921,
+            -0.5589812047111922
+          ]
+        },
+        {
+          "reflected": [
+            true,
+            true,
+            true
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5017943792401554,
+          "ordinate_offsets": [
+            0.5589812047111917,
+            -0.558981204711192,
+            -0.5589812047111921
+          ]
+        }
+      ],
+      "global_lower_bound": 0.50004,
+      "balanced_direct_norm": 0.50004,
+      "note": "The explicit direct witness attains the real-part lower bound. Other optimizer runs are local diagnostics, not certified optima."
+    },
+    {
+      "mode_count": 4,
+      "gain_each": 1e-05,
+      "runs": [
+        {
+          "reflected": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.50004,
+          "ordinate_offsets": [
+            0.1,
+            -0.1,
+            -0.1,
+            -0.24285714285714285
+          ]
+        },
+        {
+          "reflected": [
+            false,
+            false,
+            false,
+            true
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5000400005217576,
+          "ordinate_offsets": [
+            0.12383879698580656,
+            -0.08979920589451575,
+            -0.09201675821825718,
+            -0.5589812047111922
+          ]
+        },
+        {
+          "reflected": [
+            false,
+            false,
+            true,
+            false
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5000400017888831,
+          "ordinate_offsets": [
+            0.2288777196447409,
+            -0.044852309407811375,
+            -0.5589812047111921,
+            -0.23026908617076355
+          ]
+        },
+        {
+          "reflected": [
+            false,
+            false,
+            true,
+            true
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5000400023106406,
+          "ordinate_offsets": [
+            0.2603419774883662,
+            -0.0433507925766408,
+            -0.5589812047111922,
+            -0.5589812047111922
+          ]
+        },
+        {
+          "reflected": [
+            false,
+            true,
+            false,
+            false
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5000400022857949,
+          "ordinate_offsets": [
+            0.2750944666460468,
+            -0.5589812047111921,
+            -0.041363707232435966,
+            -0.22575490109924953
+          ]
+        },
+        {
+          "reflected": [
+            false,
+            true,
+            false,
+            true
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5000400028075526,
+          "ordinate_offsets": [
+            0.3068600910495987,
+            -0.5589812047111922,
+            -0.03902840070415183,
+            -0.558981204711192
+          ]
+        },
+        {
+          "reflected": [
+            false,
+            true,
+            true,
+            false
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.500040004074678,
+          "ordinate_offsets": [
+            0.4467980498156511,
+            -0.5589812047111922,
+            -0.5589812047111921,
+            -0.2089838298433183
+          ]
+        },
+        {
+          "reflected": [
+            false,
+            true,
+            true,
+            true
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5000400045964356,
+          "ordinate_offsets": [
+            0.4809838305727641,
+            -0.5589812047111922,
+            -0.558981204711192,
+            -0.5589812047111922
+          ]
+        },
+        {
+          "reflected": [
+            true,
+            false,
+            false,
+            false
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5017943750890755,
+          "ordinate_offsets": [
+            0.5589812047111913,
+            -0.5589812047111922,
+            -0.558981204711192,
+            -0.5589812047111922
+          ]
+        },
+        {
+          "reflected": [
+            true,
+            false,
+            false,
+            true
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5017943755602787,
+          "ordinate_offsets": [
+            0.5589812047111922,
+            -0.5589812047111922,
+            -0.5589812047111922,
+            -0.5589812047111922
+          ]
+        },
+        {
+          "reflected": [
+            true,
+            false,
+            true,
+            false
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5017943767046306,
+          "ordinate_offsets": [
+            0.558981204711192,
+            -0.5589812047111921,
+            -0.5589812047111922,
+            -0.558981204711192
+          ]
+        },
+        {
+          "reflected": [
+            true,
+            false,
+            true,
+            true
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5017943771758343,
+          "ordinate_offsets": [
+            0.558981204711192,
+            -0.5589812047111922,
+            -0.5589812047111922,
+            -0.5589812047111922
+          ]
+        },
+        {
+          "reflected": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5017943771533961,
+          "ordinate_offsets": [
+            0.5589812047111917,
+            -0.5589812047111921,
+            -0.5589812047111922,
+            -0.5589812047111915
+          ]
+        },
+        {
+          "reflected": [
+            true,
+            true,
+            false,
+            true
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5017943776245996,
+          "ordinate_offsets": [
+            0.5589812047111922,
+            -0.5589812047111921,
+            -0.5589812047111922,
+            -0.5589812047111921
+          ]
+        },
+        {
+          "reflected": [
+            true,
+            true,
+            true,
+            false
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5017943787689515,
+          "ordinate_offsets": [
+            0.5589812047111918,
+            -0.5589812047111922,
+            -0.5589812047111922,
+            -0.5589812047111922
+          ]
+        },
+        {
+          "reflected": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "success": true,
+          "feasible_to_1e-10": true,
+          "norm": 0.5017943792401549,
+          "ordinate_offsets": [
+            0.5589812047111922,
+            -0.5589812047111922,
+            -0.5589812047111922,
+            -0.5589812047111922
+          ]
+        }
+      ],
+      "global_lower_bound": 0.50004,
+      "balanced_direct_norm": 0.50004,
+      "note": "The explicit direct witness attains the real-part lower bound. Other optimizer runs are local diagnostics, not certified optima."
+    }
+  ],
+  "pole_zero": [
+    {
+      "evaluation_height": 0.0,
+      "actual_pole_denominator": [
+        0.5,
+        0.0
+      ],
+      "required_zero_denominator": [
+        0.50005,
+        0.0
+      ],
+      "required_zero_height": 0.0,
+      "mixed_denominator": [
+        0.500023125,
+        0.0
+      ],
+      "growth_exponent": 5.3746069831639735e-05,
+      "pole_jet_at_pole": [
+        -0.0,
+        0.0
+      ],
+      "pole_jet_at_mixture": [
+        0.21392924447660744,
+        0.0
+      ],
+      "zero_and_pole_isolator_at_mixture": null,
+      "warning": "No existence of the required same-real-part zero or exact ordinate relation is asserted. y=0 is only the zero-height algebraic illustration, not a nontrivial zeta zero."
+    },
+    {
+      "evaluation_height": 20.0,
+      "actual_pole_denominator": [
+        0.5,
+        20.0
+      ],
+      "required_zero_denominator": [
+        0.50005,
+        -23.243243243243242
+      ],
+      "required_zero_height": 43.24324324324324,
+      "mixed_denominator": [
+        0.500023125,
+        0.0
+      ],
+      "growth_exponent": 5.3746069831639735e-05,
+      "pole_jet_at_pole": [
+        0.0,
+        0.0
+      ],
+      "pole_jet_at_mixture": [
+        1.0001074979086246,
+        -2.687788900622933e-06
+      ],
+      "zero_and_pole_isolator_at_mixture": [
+        1.0001612512036555,
+        -1.5314969158962045e-06
+      ],
+      "warning": "No existence of the required same-real-part zero or exact ordinate relation is asserted. y=0 is only the zero-height algebraic illustration, not a nontrivial zeta zero."
+    },
+    {
+      "evaluation_height": 100.0,
+      "actual_pole_denominator": [
+        0.5,
+        100.0
+      ],
+      "required_zero_denominator": [
+        0.50005,
+        -116.21621621621621
+      ],
+      "required_zero_height": 216.2162162162162,
+      "mixed_denominator": [
+        0.500023125,
+        0.0
+      ],
+      "growth_exponent": 5.3746069831639735e-05,
+      "pole_jet_at_pole": [
+        0.0,
+        0.0
+      ],
+      "pole_jet_at_mixture": [
+        1.000107497916809,
+        -5.375577801295468e-07
+      ],
+      "zero_and_pole_isolator_at_mixture": [
+        1.0001612512088567,
+        -3.062993831817881e-07
+      ],
+      "warning": "No existence of the required same-real-part zero or exact ordinate relation is asserted. y=0 is only the zero-height algebraic illustration, not a nontrivial zeta zero."
+    }
+  ]
+}

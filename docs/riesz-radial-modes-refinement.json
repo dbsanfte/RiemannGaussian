@@ -1,0 +1,207 @@
+{
+  "status": "Exploratory radial all-count ordered-mode model, not an arithmetic certificate.",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "gmpy2": "2.3.1",
+  "steps_per_unit": 6400,
+  "input_sha256": {
+    "probe_riesz_radial_modes.py": "c3a680a785f8446a233e224a7aadb8d01abb5a7018145bbbd68f7441f8e4ccf8",
+    "probe_riesz_zero_parity.py": "1ce4ae1367bf0e58b795bc34ea3c6ed07c181f0ed05641fa907cb8c2f6e440ff",
+    "probe_riesz_multiphase_cascade.py": "11dd05939446c387b674ecba86a88496420e30c1c19bf9a08376176fe225794f"
+  },
+  "modes": {
+    "left": "20001/40000+i/10",
+    "right": "20001/40000-43i/370"
+  },
+  "normalization": "u^(N+1) integral T^N/N! exp(-T/2) exp((1/2-pole(q))*T) A(L_N/T,q) dq dT",
+  "growth_exponent": 4.999625029155926e-05,
+  "saddle_T_over_N": 1.9999000049997497,
+  "radial_tail_rates": {
+    "1.95": 0.0003165592342482086,
+    "2.03": 0.00011213875620768102
+  },
+  "endpoint_diagnostics": {
+    "limiting_lambda_at_resonant_saddle": 0.69308183791889,
+    "rows": [
+      {
+        "r": 0.012,
+        "ordered_endpoint_amplitude": 3.195016918499678e-41,
+        "first_mixed_boundary_amplitude": 3.305112750755245e-37,
+        "first_mixed_boundary_imaginary_pole": 0.002594594594594595,
+        "complete_radial_rate_at_first_mixed_boundary": 3.653393558969408e-05
+      },
+      {
+        "r": 0.028,
+        "ordered_endpoint_amplitude": 3.038844627731228e-13,
+        "first_mixed_boundary_amplitude": 4.538390482667259e-10,
+        "first_mixed_boundary_imaginary_pole": 0.006054054054054054,
+        "complete_radial_rate_at_first_mixed_boundary": -2.3294189171893357e-05
+      }
+    ],
+    "warning": "Spectral endpoint diagnostics only. A separated endpoint does not by itself bound the full remaining assignments with moving Riesz masks."
+  },
+  "rows": [
+    {
+      "N": 524288,
+      "radial_degree": 32,
+      "share_degree": 48,
+      "radial_evaluations": 480,
+      "length_192bit": "726686.30604867974209704460475292964410831882621511682565153",
+      "cutoff_bit_length": 524194,
+      "lambda_at_resonant_saddle": 0.6930567172660659,
+      "gamma_window_mass": 1.0,
+      "gamma_mass_quadrature_error": -8.824473374247077e-10,
+      "bare_window": {
+        "norm": 1067752.8167541672,
+        "real": 7.413036849070388e-05,
+        "imag": -1067752.8167541672,
+        "log10_norm": 6.02847072577826,
+        "raw_log10_norm": 157809.97542383976,
+        "phase": -1.57079632672547
+      },
+      "bare_complete": {
+        "norm": 1067752.8177138322,
+        "real": 2.1991797766264023e-09,
+        "imag": -1067752.8177138322,
+        "log10_norm": 6.0284707261685915,
+        "raw_log10_norm": 157809.97542384014,
+        "phase": -1.5707963267948946
+      },
+      "all_count_ordered_sector": {
+        "norm": 3.261170942175445e-07,
+        "real": -2.676471422672865e-12,
+        "imag": 3.2611709420656143e-07,
+        "log10_norm": -6.486626436,
+        "raw_log10_norm": 157797.46032667797,
+        "phase": 1.5708045338820753
+      },
+      "share_endpoint_approximation": {
+        "norm": 3.2611709424629866e-07,
+        "real": -3.851418322464255e-17,
+        "imag": 3.2611709424629866e-07,
+        "log10_norm": -6.486626435961708,
+        "raw_log10_norm": 157797.460326678,
+        "phase": 1.5707963269129959
+      },
+      "single_phase_all_count": {
+        "norm": 7.496987788342265e-15,
+        "real": -7.496987788342265e-15,
+        "imag": 9.18116209824015e-31,
+        "log10_norm": -14.125113196564836,
+        "raw_log10_norm": 157789.8218399174,
+        "phase": 3.141592653589793
+      },
+      "endpoint_amplitude_at_saddle": -3.028571226826823e-13,
+      "unscaled_inner_quadrature_error_bound": 2.7331249165022723e-28,
+      "warning": "Ordered modal sector only; full mixed-colour assignments and literal primes are not evaluated. Original factorial and allocation weights are not simulated; their already-proved arithmetic error estimates do not automatically transfer to this model. QAWO reports only its inner quadrature error, not a total error bound."
+    },
+    {
+      "N": 700000,
+      "radial_degree": 32,
+      "share_degree": 48,
+      "radial_evaluations": 544,
+      "length_192bit": "970239.14210937160961487967182332275129427977609061470215934",
+      "cutoff_bit_length": 699880,
+      "lambda_at_resonant_saddle": 0.6930626100474837,
+      "gamma_window_mass": 1.0,
+      "gamma_mass_quadrature_error": 6.195830515309808e-10,
+      "bare_window": {
+        "norm": 5226296698.956373,
+        "real": -0.041286916712308684,
+        "imag": -5226296698.956373,
+        "log10_norm": 9.718194061162814,
+        "raw_log10_norm": 210700.6170516125,
+        "phase": -1.5707963268027965
+      },
+      "bare_complete": {
+        "norm": 5226296695.893528,
+        "real": 3.2001837600101984e-07,
+        "imag": -5226296695.893528,
+        "log10_norm": 9.718194060908298,
+        "raw_log10_norm": 210700.61705161224,
+        "phase": -1.5707963267948966
+      },
+      "all_count_ordered_sector": {
+        "norm": 0.0015941230839633463,
+        "real": -9.798357669303633e-09,
+        "imag": 0.0015941230839332332,
+        "log10_norm": -2.797478149299761,
+        "raw_log10_norm": 210688.10137940204,
+        "phase": 1.5708024733451649
+      },
+      "share_endpoint_approximation": {
+        "norm": 0.0015941230840500426,
+        "real": 7.181917840713798e-14,
+        "imag": 0.0015941230840500426,
+        "log10_norm": -2.7974781492761416,
+        "raw_log10_norm": 210688.10137940207,
+        "phase": 1.5707963267498442
+      },
+      "single_phase_all_count": {
+        "norm": 7.487402436695475e-15,
+        "real": -7.487402436695475e-15,
+        "imag": 9.169423428027206e-31,
+        "log10_norm": -14.125668823565015,
+        "raw_log10_norm": 210676.7731887278,
+        "phase": 3.141592653589793
+      },
+      "endpoint_amplitude_at_saddle": -3.0309780543409324e-13,
+      "unscaled_inner_quadrature_error_bound": 1.5007405111506334e-28,
+      "warning": "Ordered modal sector only; full mixed-colour assignments and literal primes are not evaluated. Original factorial and allocation weights are not simulated; their already-proved arithmetic error estimates do not automatically transfer to this model. QAWO reports only its inner quadrature error, not a total error bound."
+    },
+    {
+      "N": 1048576,
+      "radial_degree": 32,
+      "share_degree": 48,
+      "radial_evaluations": 672,
+      "length_192bit": "1453397.5654015816817572114910562927215879780271584623121841",
+      "cutoff_bit_length": 1048405,
+      "lambda_at_resonant_saddle": 0.693068616523672,
+      "gamma_window_mass": 1.0,
+      "gamma_mass_quadrature_error": -2.1170909469958588e-10,
+      "bare_window": {
+        "norm": 1.2922787576886619e+17,
+        "real": -3647589.497827269,
+        "imag": -1.2922787576886619e+17,
+        "log10_norm": 17.111356205507192,
+        "raw_log10_norm": 315624.70427586505,
+        "phase": -1.5707963268231226
+      },
+      "bare_complete": {
+        "norm": 1.2922787579676536e+17,
+        "real": 7.912925222756021,
+        "imag": -1.2922787579676536e+17,
+        "log10_norm": 17.111356205600952,
+        "raw_log10_norm": 315624.70427586517,
+        "phase": -1.5707963267948966
+      },
+      "all_count_ordered_sector": {
+        "norm": 39366.16389021827,
+        "real": -0.16152214311455446,
+        "imag": 39366.1638898869,
+        "log10_norm": 4.595123096210578,
+        "raw_log10_norm": 315612.18804275576,
+        "phase": 1.5708004298653295
+      },
+      "share_endpoint_approximation": {
+        "norm": 39366.163891146076,
+        "real": 1.4010606974900582e-06,
+        "imag": 39366.163891146076,
+        "log10_norm": 4.595123096220814,
+        "raw_log10_norm": 315612.18804275576,
+        "phase": 1.5707963267593061
+      },
+      "single_phase_all_count": {
+        "norm": 7.478070234351995e-15,
+        "real": -7.478070234351995e-15,
+        "imag": 9.157994776298267e-31,
+        "log10_norm": -14.126210460250496,
+        "raw_log10_norm": 315593.46670919925,
+        "phase": 3.141592653589793
+      },
+      "endpoint_amplitude_at_saddle": -3.033433272173142e-13,
+      "unscaled_inner_quadrature_error_bound": 6.856973618252848e-29,
+      "warning": "Ordered modal sector only; full mixed-colour assignments and literal primes are not evaluated. Original factorial and allocation weights are not simulated; their already-proved arithmetic error estimates do not automatically transfer to this model. QAWO reports only its inner quadrature error, not a total error bound."
+    }
+  ]
+}

@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-The harmonic-cost route retains its evaluated source and an open independent -3/40 floor. We test the all-count packet using simple exposed-zero phases. Exceptional orders, the factorial rectangle and old allocation now have independent geometric error bounds. The signed cutoff tail and literal masked phase transfer remain open; the rest still needs joint arithmetic cancellation.
+The harmonic-cost route retains its evaluated source and an open independent -3/40 floor. The all-count parity packet has proved support-tail and factorial-error bounds, but its coupled masked phase estimate remains open. Radial and filter audits rule out the proposed transfers from complete prime-leg limits; any continuation must control the literal joint response and the signed rest.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ The harmonic-cost route retains its evaluated source and an open independent -3/
 
 ### Latest Update
 
-**Signed 12+ support tail bounded; the literal masked transfer remains open.** Lean resums every supported insertion with its sign retained and bounds the entire 12+ tail below 1/1000000, uniformly in a positive auxiliary cutoff. A separate analytic-mode theorem shows that uniform complete-leg limits alone do not bound the hard share projection, even with arbitrarily small fixed nonzero residuals.
-Pay the one-sided support/empty-cofactor boundary and zero auxiliary cutoff limit, then prove a joint phase estimate through the literal masks. The model audit is not a counterexample to the arithmetic packet. Its bound, the rest floor, and a new zero exclusion remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszParityInsertionTail.lean#L122)
-· [Proof details](docs/zeta-riesz-parity-tail-transfer-audit.md).
+**Masked two-mode bound proved; radial and filter transfers audited.** Lean proves a positive radial model exponent, a masked two-mode bound, and the exact distinction between total-order and per-leg filtering. A synthetic multi-rightward family defeats every uniform squared-displacement/gain bound. Optional numerical probes quantify these obstructions.
+The actual filtered packet is neither bounded nor disproved here. Pole-containing mixtures, the projected residual and the one-sided cutoff boundary remain unpaid. No signed floor or new zero exclusion is claimed.
+[Current checked endpoint](RiemannGaussian/ZetaRieszFilteredMaskAudit.lean#L213)
+· [Proof details](docs/zeta-riesz-pole-jet-half-plane-audit.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
