@@ -149,9 +149,9 @@ The harmonic-cost route has an evaluated source and paid wing, reserve and domin
 
 ### Latest Update
 
-**Sharper Euler and logarithm constants are proved.** Lean proves Euler's constant is below 577215666/10^9 and log(pi) is above 1144729883/10^9. A general cubic logarithm lower bound makes the twice-corrected harmonic sequence decrease to the actual Euler constant; exact arithmetic at order 200 supplies the numerical bound.
-Use these inputs to finish the higher reciprocal-power zero sums. Their 0.00167 and 0.0000744 bounds, the prime-count estimates and a larger zero-free region remain open.
-[Current checked endpoint](RiemannGaussian/RosserSchoenfeldSharpConstants.lean#L98)
+**All three classical reciprocal zero-sum constants are proved.** Lean now proves the complete inverse-cube zero sum is below 0.00167 and the inverse-fourth sum is below 0.0000744, alongside the earlier 0.0463 inverse-square bound. Summability, analytic multiplicities and both ordinate signs are retained. The proofs combine exact xi Poisson masses, a kernel-checked zeta derivative estimate and a strict saving from the verified first conjugate pair.
+Complete the smoothed explicit-formula and quantitative prime-error estimates needed for the unchanged short-prime supply target. The published VK benchmarks and an enlarged zero-free region remain open.
+[Current checked endpoint](RiemannGaussian/RosserSchoenfeldCubeMass.lean#L100)
 · [Proof details](docs/rosser-schoenfeld-reproduction.md).
 <!-- RH_DIRECTION:END -->
 

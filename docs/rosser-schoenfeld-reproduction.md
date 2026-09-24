@@ -27,6 +27,9 @@ Here every Lean occurrence of π is `Nat.primeCounting ⌊x⌋₊`.
 | Section 7, Lemma 5 | lower(x)<J(x;−0.47) for every x≥1451, strengthening its stated starting range | [RosserSchoenfeldBounds](../RiemannGaussian/RosserSchoenfeldBounds.lean) |
 | Theorem 26 zero-free input | The exact radical constant and height, from the existing stronger signed-pole bound | [RosserSchoenfeldZeroFree](../RiemannGaussian/RosserSchoenfeldZeroFree.lean) |
 | Complete reciprocal-square zero mass | Both multiplicity-weighted sums, using squared ordinates or squared norms, are strictly below 0.0463 | [RosserSchoenfeldZeroMass](../RiemannGaussian/RosserSchoenfeldZeroMass.lean) |
+| Complete reciprocal-cube zero mass | The full multiplicity-weighted inverse-cube norm sum is strictly below 0.00167 | [RosserSchoenfeldCubeMass](../RiemannGaussian/RosserSchoenfeldCubeMass.lean) |
+| Complete reciprocal-fourth zero mass | The full multiplicity-weighted inverse-fourth norm sum is strictly below 0.0000744 | [RosserSchoenfeldFourthMass](../RiemannGaussian/RosserSchoenfeldFourthMass.lean) |
+| Actual logarithmic derivative at two | −Re(ζ′(2)/ζ(2))<569960994/10⁹, with every numerical and analytic error paid | [RosserSchoenfeldZetaTwo](../RiemannGaussian/RosserSchoenfeldZetaTwo.lean) |
 | Sharper Archimedean constants | Euler's constant is below 577215666/10⁹ and log π is above 1144729883/10⁹ | [RosserSchoenfeldSharpConstants](../RiemannGaussian/RosserSchoenfeldSharpConstants.lean) |
 | Last numerical error comparison | The paper's ε(x)<0.47/log(x) for every x≥exp(5000) | [RosserSchoenfeldError](../RiemannGaussian/RosserSchoenfeldError.lean) |
 | Ford short packet transport | Exact finite prime packet from the two displayed actual prime-count bounds, with every numerical side condition derived | [VinogradovRosserPrimeSupply](../RiemannGaussian/VinogradovRosserPrimeSupply.lean) |
@@ -68,7 +71,7 @@ prime-count inequalities. The conditional packet theorem is not a proof of
 prime density, of Ford's complete numerical moment theorem, or of a VK
 zero-free benchmark.
 
-## Complete reciprocal-square zero mass
+## Complete reciprocal-power zero masses
 
 [RosserSchoenfeldZeroMass.ordinate_mass_lt](../RiemannGaussian/RosserSchoenfeldZeroMass.lean)
 and `norm_square_mass_lt` prove unconditionally
@@ -104,10 +107,20 @@ weight is at most `785/784` times its Poisson weight. The exact full-series
 identity therefore pays every zero, including those beyond the finite
 verification.
 
-This discharges the first reciprocal-power constant. The higher-power
-constants `0.00167` and `0.0000744`, the smoothed explicit-formula bounds,
-the larger finite verification and the actual prime-count estimates remain
-open. No larger zero-free region or independent RH arithmetic floor follows.
+The two higher constants are now proved as well:
+
+```math
+\sum_\rho\frac{m_\rho}{|\rho|^3}\lt\frac{167}{100000}=0.00167,\qquad
+\sum_\rho\frac{m_\rho}{|\rho|^4}\lt\frac{744}{10000000}=0.0000744.
+```
+
+These are the remaining classical constants recorded in Helfgott's
+Appendix A, equation (A.4), with attribution there to Rosser (1941),
+Lemma 17. The Lean proofs establish summability and retain the complete
+zero divisor; they assume no external zero table or RH. The smoothed
+explicit-formula bounds, larger finite verification and actual prime-count
+estimates remain open. No larger zero-free region or independent RH
+arithmetic floor follows from these auxiliary estimates.
 
 The supporting module
 [RosserSchoenfeldSharpConstants](../RiemannGaussian/RosserSchoenfeldSharpConstants.lean)
@@ -123,8 +136,43 @@ Its general logarithm bound is
 This proves that `H_n−log(n)−1/(2n)+1/(12n²)` decreases to the actual
 Euler constant. Exact finite arithmetic at `n=200` supplies the first
 bound; the same logarithm inequality and the proved rational enclosure
-of π supply the second. These are inputs for the remaining higher-power
-zero sums, whose numerical bounds are not yet established.
+of π supply the second. They feed the fourth-power bound above.
+
+For each zero, write `P_a(rho)` for its reflected Poisson weight at the
+real point `a`. The theorem `hasSum_difference` evaluates the complete
+series with weight `P_1(rho)−P_2(rho)/3`. `fourth_point` proves
+
+```math
+\frac{1}{|\rho|^4}\le\frac{793}{1570}
+\left(P_1(\rho)-\frac{1}{3}P_2(\rho)\right).
+```
+
+The proof uses the checked critical-line verification through height 54
+and a uniform algebraic inequality above that height. The summed right
+side is evaluated using the actual logarithmic derivative at two.
+[RosserSchoenfeldZetaTwoSample](../RiemannGaussian/RosserSchoenfeldZetaTwoSample.lean)
+checks the finite Euler–Maclaurin expression at `2+i/10^12`.
+[RosserSchoenfeldZetaTwoBudget](../RiemannGaussian/RosserSchoenfeldZetaTwoBudget.lean)
+pays its entire tail by `10^(-25)` and independently bounds the second
+zeta derivative by 160 on a disc around two. The finite displacement and
+`zeta(2)=pi²/6` then give the proved logarithmic-derivative bound.
+The interval calculation checks exact intermediate values and blocks of
+eight Dirichlet terms; these are kernel-verified arithmetic equalities,
+not trusted native computations. The exhaustive proportion certificate
+is separate and is not rebuilt by this calculation.
+
+For the inverse cube, the comparison excess is the nonnegative square
+
+```math
+\frac{13/1000}{r^2}+\frac{250/13}{r^4}-\frac{1}{r^3}
+=\frac{((13/1000)r-1/2)^2}{(13/1000)r^4}.
+```
+
+The rigorously isolated first conjugate pair has norms between 14.14 and
+14.15. Each contributes excess greater than `3/16000`, with multiplicity
+at least one. Subtracting this proved total saving from the square/fourth
+comparison gives `norm_cube_mass_lt`. No additional zero verification is
+needed for either higher-power constant.
 
 ## The analytic and finite-verification gap
 

@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**361 modules.** Source links open the definitions, hypotheses and proofs.
+**366 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -53,10 +53,15 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [RosserSchoenfeldAnchor](../../RiemannGaussian/RosserSchoenfeldAnchor.lean)
 - [RosserSchoenfeldBounds](../../RiemannGaussian/RosserSchoenfeldBounds.lean)
 - [RosserSchoenfeldComparison](../../RiemannGaussian/RosserSchoenfeldComparison.lean)
+- [RosserSchoenfeldCubeMass](../../RiemannGaussian/RosserSchoenfeldCubeMass.lean)
 - [RosserSchoenfeldError](../../RiemannGaussian/RosserSchoenfeldError.lean)
 - [RosserSchoenfeldEulerConstant](../../RiemannGaussian/RosserSchoenfeldEulerConstant.lean)
+- [RosserSchoenfeldFourthMass](../../RiemannGaussian/RosserSchoenfeldFourthMass.lean)
 - [RosserSchoenfeldSharpConstants](../../RiemannGaussian/RosserSchoenfeldSharpConstants.lean)
 - [RosserSchoenfeldZeroMass](../../RiemannGaussian/RosserSchoenfeldZeroMass.lean)
+- [RosserSchoenfeldZetaTwo](../../RiemannGaussian/RosserSchoenfeldZetaTwo.lean)
+- [RosserSchoenfeldZetaTwoBudget](../../RiemannGaussian/RosserSchoenfeldZetaTwoBudget.lean)
+- [RosserSchoenfeldZetaTwoSample](../../RiemannGaussian/RosserSchoenfeldZetaTwoSample.lean)
 - [TripleRieszProfile](../../RiemannGaussian/TripleRieszProfile.lean)
 - [ZetaArithmeticAffine](../../RiemannGaussian/ZetaArithmeticAffine.lean)
 - [ZetaArithmeticBandCorrelation](../../RiemannGaussian/ZetaArithmeticBandCorrelation.lean)

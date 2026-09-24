@@ -2542,7 +2542,7 @@
     },
     {
       "id": "rosser-zero-mass",
-      "label": "Rosser zero mass · 0.0463 and sharper constants",
+      "label": "Rosser zero masses · complete powers 2, 3 and 4",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2567,6 +2567,18 @@
         [
           "gaussianPhaseBandToolkit",
           "rosserSharpLogPiLowerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserNormCubeMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserNormFourthMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserZetaTwoLogDerivativeTheorem"
         ]
       ],
       "scopePath": [
@@ -6461,6 +6473,48 @@
     "RiemannGaussian.RosserSchoenfeldSharpConstants.log_pi_lower": {
       "label": "Log pi above 1.144729883",
       "summary": "The proved rational enclosure of pi and the cubic logarithm lower bound give log(pi)>1144729883/10^9. This auxiliary constant does not establish the higher-power zero sums.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldZetaTwoSample.approximation_im_lower": {
+      "label": "Checked finite zeta sample near two",
+      "summary": "Every signed term of the finite Euler--Maclaurin expression is enclosed. Exact intermediate dyadic values and eight-term prefix blocks keep the kernel checks bounded.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldZetaTwoBudget.step_bound": {
+      "label": "Actual derivative sample error",
+      "summary": "A Cauchy bound of 160 for the actual second derivative pays the imaginary displacement error. The complete analytic Euler--Maclaurin tail is separately below 10^(-25).",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldZetaTwo.log_derivative_upper": {
+      "label": "Actual logarithmic derivative at two",
+      "summary": "Unconditionally, -Re(zeta′(2)/zeta(2)) < 569960994/10^9. The finite sample, analytic tail, derivative error and exact zeta(2) value are all proved.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldFourthMass.hasSum_difference": {
+      "label": "Exact difference of two complete Poisson masses",
+      "summary": "The full reflected mass at one minus one third of the reflected mass at two cancels the leading inverse-square term. Its complete multiplicity-weighted series is summable and exactly evaluated.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldFourthMass.fourth_point": {
+      "label": "Every inverse-fourth weight is paid",
+      "summary": "For every nontrivial zero, the inverse fourth power of its norm is at most 793/1570 times the exact Poisson difference. The bound includes zeros above the verified height window.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldFourthMass.norm_fourth_mass_lt": {
+      "label": "Complete fourth-power mass below 0.0000744",
+      "summary": "The actual complete zero divisor, including both signs and analytic multiplicities, satisfies the classical strict bound 744/10000000. No RH or supplied zero table is assumed.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldCubeMass.norm_cube_mass_lt": {
+      "label": "Complete inverse-cube mass below 0.00167",
+      "summary": "A positive square/fourth-power comparison retains a strict excess from the rigorously isolated first conjugate pair. The complete multiplicity-weighted inverse-cube sum is below 167/100000.",
       "overview": true,
       "documentation": "docs/rosser-schoenfeld-reproduction.md"
     }

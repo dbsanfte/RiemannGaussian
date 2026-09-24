@@ -2940,8 +2940,8 @@ remain open as stated there.
 gamma < 577215666/10^9 and log(pi) > 1144729883/10^9. Its cubic atanh
 lower bound proves monotonicity of the twice-corrected harmonic sequence;
 exact arithmetic at order 200 bounds the actual Euler constant. These
-supporting constants do not yet prove the higher inverse-power zero sums,
-prime-count estimates or a larger zero-free region.
+supporting constants feed the now-proved higher inverse-power zero sums
+below; prime-count estimates and a larger zero-free region remain open.
 
 `RosserSchoenfeldZeroMass` now discharges the complete reciprocal-square
 zero sum: `ordinate_mass_lt` and `norm_square_mass_lt` are unconditional
@@ -2952,11 +2952,28 @@ through height 54 and absence of zeros through 14 pay its discrepancy
 from inverse squares. `RosserSchoenfeldEulerConstant` proves the numerical
 constant with a corrected harmonic sequence and rational log bounds.
 This is the classical Rosser reciprocal-square dependency, not a new
-zero-free region or prime-count theorem. Higher inverse-power constants,
-the larger finite verification, smoothed explicit-formula estimates and
-the unchanged `ShortPrimeSupply` premise remain open. Keep both public
+zero-free region or prime-count theorem. The larger finite verification,
+smoothed explicit-formula estimates and the unchanged `ShortPrimeSupply`
+premise remain open. Keep both public
 frontiers and top-ten lists unchanged. Expose this as a separate supporting
 endpoint; do not draw a proved implication to dense prime supply.
+
+`RosserSchoenfeldFourthMass.norm_fourth_mass_lt` and
+`RosserSchoenfeldCubeMass.norm_cube_mass_lt` now close the remaining classical
+Rosser constants: the complete sums are below 744/10^7 and 167/10^5,
+respectively, with summability, both signs and every analytic multiplicity.
+The fourth-power comparison uses a positive difference of the exact xi
+Poisson masses at one and two. `RosserSchoenfeldZetaTwo` proves the actual
+logarithmic-derivative bound at two from a kernel-checked finite sample,
+its complete Euler--Maclaurin tail and an independent Cauchy derivative
+budget. `RosserSchoenfeldZetaTwoSample` checks intermediate dyadic values
+and prefix blocks of eight; retain those proof boundaries to bound kernel
+memory, and never replace them by a compiler-trusting numerical check.
+The inverse-cube proof extracts a strict excess from the verified first
+conjugate pair. No additional low-zero verification is assumed. These
+statements reproduce classical constants, not a new zero-free region or
+prime-count theorem. The analytic and finite-verification gaps in the
+Rosser ledger, and the unchanged short-prime supply target, remain open.
 
 `ZetaEulerMaclaurin.zeta_eq` now gives the arbitrary-order actual zeta
 expansion with the literal signed Bernoulli tail. `norm_error_le` pays
