@@ -5,28 +5,28 @@
   "title": "Current RH Proof Direction",
   "defaultEndpoint": "harmonic-remainder",
   "limitNote": "RH remains open. The independent arithmetic saving needed for the source contradiction has not been proved.",
-  "contextScope": "The complete companion is now compared with every original mask, and all off-mask corrections are paid. The full reserve is evaluated. The remaining allocated contribution with a prime carrying at least 13/20 of log n has a height-uniform geometric bound. The smaller signed carrier retains the exact source on 1/2<u<exp(-11/16). For simple exposed zeros its real part is eventually below -3/40; an independent cofinal real floor remains open. Balanced products and their joint signed correlations remain unpaid. No zero exclusion or RH proof is claimed. The specific positive allowance B_j-(3/4)*B_4,j is now proved to diverge on that interval for every fixed height; it cannot close the contradiction. The strict Type-II test now isolates a sufficient fixed 1/1000 power saving on the actual corrected prime-pair form, after independently narrowing the window to 1.95N<log n<=2.05N for u<=0.5001. The reduction is conditional and current inputs do not discharge it.",
+  "contextScope": "The complete companion is now compared with every original mask, and all off-mask corrections are paid. The full reserve is evaluated. The remaining allocated contribution with a prime carrying at least 13/20 of log n has a height-uniform geometric bound. The smaller signed carrier retains the exact source on 1/2<u<exp(-11/16). For simple exposed zeros its real part is eventually below -3/40; an independent cofinal real floor remains open. Balanced products and their joint signed correlations remain unpaid. No zero exclusion or RH proof is claimed. The specific positive allowance B_j-(3/4)*B_4,j is now proved to diverge on that interval for every fixed height; it cannot close the contradiction. The strict Type-II test now isolates a sufficient fixed 1/1000 power saving on the actual corrected prime-pair form, after independently narrowing the window to 1.95N<log n<=2.05N for u<=0.5001. The reduction is conditional and current inputs do not discharge it. The allocation-safe rectangle now has an eventual literal correction reserve >=1/160 on 1/2<u<=0.50005 under simple exposed-zero hypotheses, after independent mask and allocation decay. Its matching negative owned copy and the rest of the correction remain explicit; the whole-carrier floor is still open.",
   "scopeHeading": "What remains to prove",
   "guideDocument": "docs/rh-proof-direction.md",
   "metadataOrigin": "Current RH campaign metadata; theorem names and scopes resolve through the compiled project status.",
   "campaign": {
     "direction": {
       "branch": "riesz-harmonic-cost",
-      "statement": "The harmonic-cost route has an evaluated source and paid wing, reserve and dominant-prime components. An independent cofinal floor at -3/40 for the remaining signed carrier would exclude simple exposed zeros in the stated range. Positive allowances fail; the Type-II test is quantified but its arithmetic premise is unproved. Further expansion is on hold pending a new signed estimate.",
-      "changeReason": "The strict Type-II go/no-go test proves the numerical reduction but identifies an unproved parity-sensitive estimate; current sieve rates and the fixed-height VMVT mismatch do not discharge it. Stop expanding this route until new arithmetic input is found."
+      "statement": "The harmonic-cost route retains an evaluated source and an open independent -3/40 floor. The allocation-safe rectangle now supplies a literal 1/160 correction reserve for simple exposed zeros with 1/2<u<=0.50005. All its mask errors are paid, but its negative owned copy survives. The remaining correction and other prime counts still need a joint signed bound.",
+      "changeReason": "The user returned to the Riesz route with a concrete allocation-safe rectangle. Its signed reserve is proved; the exact ownership ledger prevents counting it twice. The whole-carrier contradiction remains open."
     },
     "latestUpdate": {
-      "sequence": 68,
-      "id": "rosser-prime-ranges-and-large-degree-moments",
+      "sequence": 69,
+      "id": "literal-rectangle-reserve-and-owned-overlap",
       "kind": "theorem",
-      "title": "Actual prime supply closes the large-degree Ford moment bound.",
-      "body": "Lean now proves original ShortPrimeSupply and the complete Ford moment bound when log(k)>=1700, without an arithmetic supply premise. Every original allowed order, real endpoint and coefficient is retained. The supporting prime estimates now include finite theta bounds on [1451,16000] and both original strict count bounds for x>=exp(5100).",
-      "next": "Prove the remaining count bounds on 16000<x<exp(5100) and cover smaller degrees, then finish the sharp incomplete-system and zeta estimates. The full published VK benchmark and a larger zero-free region remain open.",
+      "title": "Literal rectangle reserve reaches 1/160; whole-carrier floor remains open.",
+      "body": "Lean proves the requested rectangle has eventual source-normalized reserve at least 1/160 for simple exposed zeros with 1/2<u<=0.50005. The old allocated part and every literal mask error decay independently. Exact correction and ownership ledgers retain the matching negative owned copy and the unestimated remainder.",
+      "next": "A joint signed bound for the remaining correction and other prime-count classes is still needed. The reserve alone does not prove the -3/40 floor or a restricted zero exclusion.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "fordUnconditionalLargeMomentTheorem"
+        "rieszRectangleReserveTheorem"
       ],
-      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+      "documentation": "docs/zeta-riesz-rectangle-reserve.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -3323,6 +3323,57 @@
         "rieszSkewScope"
       ],
       "documentation": "docs/zeta-riesz-skew-allocation-audit.md"
+    },
+    {
+      "id": "harmonic-rectangle-reserve",
+      "label": "Literal rectangle · reserve at least 1/160",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRectangleAllocationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRectangleMaskTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRectangleComparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRectanglePhaseTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRectangleWeightTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRectangleReserveTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRectangleCorrectionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRectangleLedgerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRectangleOverlapTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRectangleNondecayTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszRectangleScope"
+      ],
+      "documentation": "docs/zeta-riesz-rectangle-reserve.md"
     },
     {
       "id": "ford-selected-iteration",
@@ -8166,6 +8217,61 @@
       "summary": "For k>=1000 and every integer order in 2*k^2<=s<=(k^2/2)*(1/2+log(3*k/8)), actual J_s,k(P) satisfies the original coefficient and 1.7/k defect bound for every real P>=1, using the literal floor cutoff. The exponent is proved nonnegative. ShortPrimeSupply k (3/50) remains explicit and unproved.",
       "overview": true,
       "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.boundedShare_mul_rectangleMass": {
+      "label": "Old allocated fraction: joint exponential decay",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-rectangle-reserve.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.tendsto_rectangleMaskError": {
+      "label": "Every literal mask failure paid independently",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-rectangle-reserve.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.tendsto_separate_sub_rectangle": {
+      "label": "Separate prime legs match the literal rectangle",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-rectangle-reserve.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.eventually_rectangle_triple_phase": {
+      "label": "Three negative prime phases with correlated orders",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-rectangle-reserve.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.sum_rectangleSourceWeight_lower": {
+      "label": "Exact finite density at least 1/147",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-rectangle-reserve.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.eventually_rectangleReserve_ge": {
+      "label": "Literal correction reserve at least 1/160",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-rectangle-reserve.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.rectangleResponse_eq_nonowner_rows": {
+      "label": "Actual second-incidence correction rows",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-rectangle-reserve.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.correction_eq_rectangle_rest": {
+      "label": "Exact original correction partition",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-rectangle-reserve.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.narrow_rectangle_completion_ledger": {
+      "label": "Whole-carrier ledger: remainder still open",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-rectangle-reserve.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.completion_rest_rectangle_ledger": {
+      "label": "Matching negative owned incidence retained",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-rectangle-reserve.md"
+    },
+    "RiemannGaussian.ZetaRieszSkewAllocation.not_tendsto_owned_rectangle_zero": {
+      "label": "The matching owned copy is not negligible",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-rectangle-reserve.md"
     }
   },
   "moduleFamilies": {
@@ -8176,6 +8282,19 @@
     "ZetaRieszSkewAllocation": "arithmetic",
     "ZetaRieszSkewIncidence": "arithmetic",
     "ZetaRieszSkewFactorial": "arithmetic",
-    "ZetaRieszSkewCarrier": "arithmetic"
+    "ZetaRieszSkewCarrier": "arithmetic",
+    "ZetaRieszRectangleWeights": "arithmetic",
+    "ZetaRieszRectangleGeometry": "arithmetic",
+    "ZetaRieszRectangleLedger": "arithmetic",
+    "ZetaRieszRectangleReserve": "arithmetic",
+    "ZetaRieszRectangleTails": "arithmetic",
+    "ZetaRieszRectangle": "arithmetic",
+    "ZetaRieszRectangleCube": "arithmetic",
+    "ZetaRieszRectangleTailRates": "arithmetic",
+    "ZetaRieszRectangleCorrection": "arithmetic",
+    "ZetaRieszRectanglePhase": "arithmetic",
+    "ZetaRieszRectangleError": "arithmetic",
+    "ZetaRieszRectangleMaskError": "arithmetic",
+    "ZetaRieszRectangleAllocation": "arithmetic"
   }
 }

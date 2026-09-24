@@ -124,6 +124,25 @@ def run(output, url=None, refresh_preview=False):
                     assert set(actual) == {
                         campaign.explorer.at_path(status, path) for path in endpoint['statusPaths']
                     }
+                    if endpoint['id'] == 'harmonic-rectangle-reserve':
+                        nodes = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        reserve = next(n for n in nodes if n['id'].endswith('.eventually_rectangleReserve_ge'))
+                        assert all(t in reserve['statement'] for t in (
+                            'rectangleReserve', '1 / 160', 'analyticZetaZeroMultiplicity rho = 1',
+                            'tau ≠ rho →', 'radiusCeiling', 'dyadicMomentOrder'))
+                        for suffix in ('tendsto_rectangleMaskError', 'tendsto_separate_sub_rectangle'):
+                            error = next(n for n in nodes if n['id'].endswith('.' + suffix))
+                            assert 'Tendsto' in error['statement'] and 'ℕ → ℝ' in error['statement']
+                            assert 'NontrivialZetaZero' not in error['statement']
+                        overlap = next(n for n in nodes if n['id'].endswith('.completion_rest_rectangle_ledger'))
+                        overlap_statement = ' '.join(overlap['statement'].split()).replace(
+                            'RiemannGaussian.ZetaRieszSkewAllocation.', '')
+                        assert all(t in overlap_statement for t in (
+                            'rectangleCorrectionRest', 'ownerRectangleComplement', '2 * rectangleReserve'))
+                        scope = page.locator('#scope-text').inner_text()
+                        assert 'whole-carrier pass criterion is unmet' in scope
+                        assert 'simple exposed-zero hypotheses' in scope
+                        assert 'not a -3/40 whole-carrier floor' in scope
                     if endpoint['id'] == 'carrier-bound':
                         old_bound = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
                         assert old_bound['id'].endswith('.exists_original_band_critical_profile')

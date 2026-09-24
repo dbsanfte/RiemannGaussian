@@ -9,6 +9,15 @@ evaluated. The smaller signed carrier retains the exact source. Its
 independent floor remains open; no first restricted zero exclusion or RH
 proof is claimed.
 
+The supporting **Literal rectangle · reserve at least 1/160** endpoint
+proves a signed estimate for the concrete second-prime incidence on
+`1/2<u<=10001/20000`, under the original simple exposed-zero hypotheses.
+Its old allocated part and every literal-mask error decay independently.
+The reserve is minus the selected correction contribution. Its matching
+owned copy remains negative; the remaining correction and other prime
+counts still need a joint bound. This does not close the whole-carrier
+floor. See the [exact reserve and ledger](zeta-riesz-rectangle-reserve.md).
+
 The optional **Rosser prime error · final large range proved** endpoint
 tracks a separate supporting step in the literature-reproduction campaign:
 the actual smoothed prime formula and complete high-zero tail now give

@@ -1566,6 +1566,40 @@ top-ten lists unchanged. The user authorized committing and pushing this
 checked slice on 2026-09-23; apply the publication gates below. Continue
 to work without subagents.
 
+### Literal allocation-safe rectangle (2026-09-24)
+
+The Riesz continuation from `ae056b0` is developed in the current tree;
+do not reset or discard the intervening literature work. The user confirmed
+that the numerical positive reserve means minus the selected contribution
+to `ownerCompletionCorrection`. Keep the quarter-gap no-go unchanged.
+
+`docs/zeta-riesz-rectangle-reserve.md` records the concrete rectangle
+`21N<=40j<=23N`, `N<=100(h+1)<=4N`, with every requested original mask.
+`ZetaRieszSkewAllocation.eventually_rectangleReserve_ge` now proves the
+literal reserve is eventually at least `1/160` at source scale on the
+original dyadic schedule, for `1/2<u<=10001/20000` under the original simple
+exposed-zero hypotheses. The old allocated fraction and every literal mask
+error have independent geometric decay, uniform in arbitrary moving
+heights. Three separate prime legs and exact finite lattice counting pay
+the comparison; no composite cofactor or global all-order product is used.
+
+Do not turn this into a whole-carrier floor. The rectangle is also a genuine
+suballocation of the largest-prime owner and that negative owned copy is
+proved nondecaying. The exact correction partition and narrow-carrier
+ledger keep `rectangleCorrectionRest` explicit: it contains the remaining
+original completion differences, other nonowner incidences and unselected
+factorial orders. The reserve removes a duplicate incidence; it is not an
+extra positive term in the direct finite carrier. The `~0.00487` source gap
+is not an independently proved budget for those remaining terms.
+
+The component and geometric tests pass, but the strict contradiction test
+does not: the joint lower bound for the rest remains open. This is not a
+general rank-two impossibility theorem. Stop any shortcut that discards
+the matching owned copy or assumes the remaining correction is small.
+Keep `LocalizedTypeIIBound`, the main RH/default zero-free/certificate
+frontiers and both top-ten lists unchanged. Expose the new estimate as a
+supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
+
 ## Current theorem-push commit gate
 
 On 2026-09-05 the user explicitly changed the objective to an overnight Lean

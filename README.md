@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-The harmonic-cost route has an evaluated source and paid wing, reserve and dominant-prime components. An independent cofinal floor at -3/40 for the remaining signed carrier would exclude simple exposed zeros in the stated range. Positive allowances fail; the Type-II test is quantified but its arithmetic premise is unproved. Further expansion is on hold pending a new signed estimate.
+The harmonic-cost route retains an evaluated source and an open independent -3/40 floor. The allocation-safe rectangle now supplies a literal 1/160 correction reserve for simple exposed zeros with 1/2<u<=0.50005. All its mask errors are paid, but its negative owned copy survives. The remaining correction and other prime counts still need a joint signed bound.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ The harmonic-cost route has an evaluated source and paid wing, reserve and domin
 
 ### Latest Update
 
-**Actual prime supply closes the large-degree Ford moment bound.** Lean now proves original ShortPrimeSupply and the complete Ford moment bound when log(k)>=1700, without an arithmetic supply premise. Every original allowed order, real endpoint and coefficient is retained. The supporting prime estimates now include finite theta bounds on [1451,16000] and both original strict count bounds for x>=exp(5100).
-Prove the remaining count bounds on 16000<x<exp(5100) and cover smaller degrees, then finish the sharp incomplete-system and zeta estimates. The full published VK benchmark and a larger zero-free region remain open.
-[Current checked endpoint](RiemannGaussian/VinogradovFordLargeDegree.lean#L24)
-· [Proof details](docs/rosser-schoenfeld-reproduction.md).
+**Literal rectangle reserve reaches 1/160; whole-carrier floor remains open.** Lean proves the requested rectangle has eventual source-normalized reserve at least 1/160 for simple exposed zeros with 1/2<u<=0.50005. The old allocated part and every literal mask error decay independently. Exact correction and ownership ledgers retain the matching negative owned copy and the unestimated remainder.
+A joint signed bound for the remaining correction and other prime-count classes is still needed. The reserve alone does not prove the -3/40 floor or a restricted zero exclusion.
+[Current checked endpoint](RiemannGaussian/ZetaRieszRectangleReserve.lean#L126)
+· [Proof details](docs/zeta-riesz-rectangle-reserve.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**400 modules.** Source links open the definitions, hypotheses and proofs.
+**413 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -285,6 +285,19 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszPrimePairConvolution](../../RiemannGaussian/ZetaRieszPrimePairConvolution.lean)
 - [ZetaRieszPrimeReplacement](../../RiemannGaussian/ZetaRieszPrimeReplacement.lean)
 - [ZetaRieszProductCeiling](../../RiemannGaussian/ZetaRieszProductCeiling.lean)
+- [ZetaRieszRectangle](../../RiemannGaussian/ZetaRieszRectangle.lean)
+- [ZetaRieszRectangleAllocation](../../RiemannGaussian/ZetaRieszRectangleAllocation.lean)
+- [ZetaRieszRectangleCorrection](../../RiemannGaussian/ZetaRieszRectangleCorrection.lean)
+- [ZetaRieszRectangleCube](../../RiemannGaussian/ZetaRieszRectangleCube.lean)
+- [ZetaRieszRectangleError](../../RiemannGaussian/ZetaRieszRectangleError.lean)
+- [ZetaRieszRectangleGeometry](../../RiemannGaussian/ZetaRieszRectangleGeometry.lean)
+- [ZetaRieszRectangleLedger](../../RiemannGaussian/ZetaRieszRectangleLedger.lean)
+- [ZetaRieszRectangleMaskError](../../RiemannGaussian/ZetaRieszRectangleMaskError.lean)
+- [ZetaRieszRectanglePhase](../../RiemannGaussian/ZetaRieszRectanglePhase.lean)
+- [ZetaRieszRectangleReserve](../../RiemannGaussian/ZetaRieszRectangleReserve.lean)
+- [ZetaRieszRectangleTailRates](../../RiemannGaussian/ZetaRieszRectangleTailRates.lean)
+- [ZetaRieszRectangleTails](../../RiemannGaussian/ZetaRieszRectangleTails.lean)
+- [ZetaRieszRectangleWeights](../../RiemannGaussian/ZetaRieszRectangleWeights.lean)
 - [ZetaRieszReducedCofactorSource](../../RiemannGaussian/ZetaRieszReducedCofactorSource.lean)
 - [ZetaRieszRefinedMatching](../../RiemannGaussian/ZetaRieszRefinedMatching.lean)
 - [ZetaRieszReflectedCarrier](../../RiemannGaussian/ZetaRieszReflectedCarrier.lean)

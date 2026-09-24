@@ -3446,7 +3446,20 @@
     "ZetaRieszSkewAllocation": "arithmetic",
     "ZetaRieszSkewIncidence": "arithmetic",
     "ZetaRieszSkewFactorial": "arithmetic",
-    "ZetaRieszSkewCarrier": "arithmetic"
+    "ZetaRieszSkewCarrier": "arithmetic",
+    "ZetaRieszRectangleWeights": "arithmetic",
+    "ZetaRieszRectangleGeometry": "arithmetic",
+    "ZetaRieszRectangleLedger": "arithmetic",
+    "ZetaRieszRectangleReserve": "arithmetic",
+    "ZetaRieszRectangleTails": "arithmetic",
+    "ZetaRieszRectangle": "arithmetic",
+    "ZetaRieszRectangleCube": "arithmetic",
+    "ZetaRieszRectangleTailRates": "arithmetic",
+    "ZetaRieszRectangleCorrection": "arithmetic",
+    "ZetaRieszRectanglePhase": "arithmetic",
+    "ZetaRieszRectangleError": "arithmetic",
+    "ZetaRieszRectangleMaskError": "arithmetic",
+    "ZetaRieszRectangleAllocation": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
