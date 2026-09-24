@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**390 modules.** Source links open the definitions, hypotheses and proofs.
+**400 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -70,9 +70,19 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [RosserSchoenfeldFiniteData05](../../RiemannGaussian/RosserSchoenfeldFiniteData05.lean)
 - [RosserSchoenfeldFiniteData06](../../RiemannGaussian/RosserSchoenfeldFiniteData06.lean)
 - [RosserSchoenfeldFiniteData07](../../RiemannGaussian/RosserSchoenfeldFiniteData07.lean)
+- [RosserSchoenfeldFiniteThetaBounds](../../RiemannGaussian/RosserSchoenfeldFiniteThetaBounds.lean)
+- [RosserSchoenfeldFiniteThetaCheck](../../RiemannGaussian/RosserSchoenfeldFiniteThetaCheck.lean)
+- [RosserSchoenfeldFiniteThetaData00](../../RiemannGaussian/RosserSchoenfeldFiniteThetaData00.lean)
+- [RosserSchoenfeldFiniteThetaData01](../../RiemannGaussian/RosserSchoenfeldFiniteThetaData01.lean)
+- [RosserSchoenfeldFiniteThetaData02](../../RiemannGaussian/RosserSchoenfeldFiniteThetaData02.lean)
+- [RosserSchoenfeldFiniteThetaData03](../../RiemannGaussian/RosserSchoenfeldFiniteThetaData03.lean)
+- [RosserSchoenfeldFiniteThetaData04](../../RiemannGaussian/RosserSchoenfeldFiniteThetaData04.lean)
+- [RosserSchoenfeldFiniteThetaData05](../../RiemannGaussian/RosserSchoenfeldFiniteThetaData05.lean)
+- [RosserSchoenfeldFiniteThetaData06](../../RiemannGaussian/RosserSchoenfeldFiniteThetaData06.lean)
 - [RosserSchoenfeldFourthMass](../../RiemannGaussian/RosserSchoenfeldFourthMass.lean)
 - [RosserSchoenfeldLaplace](../../RiemannGaussian/RosserSchoenfeldLaplace.lean)
 - [RosserSchoenfeldLargeChebyshev](../../RiemannGaussian/RosserSchoenfeldLargeChebyshev.lean)
+- [RosserSchoenfeldLargePrimeCounting](../../RiemannGaussian/RosserSchoenfeldLargePrimeCounting.lean)
 - [RosserSchoenfeldLargeSmoothed](../../RiemannGaussian/RosserSchoenfeldLargeSmoothed.lean)
 - [RosserSchoenfeldPrimeKernel](../../RiemannGaussian/RosserSchoenfeldPrimeKernel.lean)
 - [RosserSchoenfeldPrimePrimitive](../../RiemannGaussian/RosserSchoenfeldPrimePrimitive.lean)

@@ -2995,8 +2995,8 @@ throughout the source's final range. This is a proved alternative using
 our stronger existing zero-free region; it does NOT claim the paper's
 sharper exponential Theorem 11 error, the smaller source ranges or the
 full actual prime-count estimates. No larger low-zero table is assumed.
-Keep ShortPrimeSupply unchanged and explicitly unproved until all its
-arithmetic requirements are paid. The public zero-free frontier, top-ten
+Keep ShortPrimeSupply unchanged and distinguish its full all-degree target
+from the now-proved explicit large-degree part below. The public zero-free frontier, top-ten
 lists, RH signed-floor status and 67.31% certificate are unchanged.
 Expose this as the separate `rosser-prime-error` endpoint in both explorers;
 do not draw a proved edge to prime supply or a published VK benchmark.
@@ -3015,11 +3015,43 @@ expensive repeated kernel enumeration. Keep `Elab.async false` confined to
 these new data files; do not change global elaboration settings.
 The new prime-supply corollary pays the finite count premise and retains
 explicit hypotheses above 16000, with the original packet target unchanged.
-This does NOT pay the small theta range in the anchored J comparison,
-the remaining prime estimates, ShortPrimeSupply or a published VK benchmark.
+That finite count theorem alone does NOT pay the small theta range in the
+anchored J comparison, the remaining prime estimates, ShortPrimeSupply or
+a published VK benchmark; the separate continuation below discharges more.
 Expose `rosser-finite-prime-counts` as an optional supporting endpoint in
 both explorers. Keep all public zero-free/RH frontiers, the top-ten lists
 and the 67.31% certificate unchanged.
+
+`RosserSchoenfeldFiniteTheta.bounds_through_sixteen_thousand` now proves the
+original -47/100 and +31/100 theta allowances throughout [1451,16000].
+The complete prime catalog, literal primorials, checked exponential enclosure
+and 69 closed cells pay every real endpoint. Do not claim the source's
+range below 1451. Keep the seven theta data modules sequential and their
+`Elab.async false` local; their proof boundaries bound kernel memory.
+`RosserSchoenfeldLargePrimeCounting.bounds_above_exp_5100` proves both
+original strict count bounds for every x>=exp(5100), using the proved
+41/100 theta error, exact Abel summation and a full earlier-prefix allowance.
+`VinogradovRosserLargeSupply.shortPrimeSupply_of_intermediate_counts`
+confines the conditional all-degree count premise to 16000<x<exp(5100).
+That middle interval is still open; no numerical estimate there is assumed
+as a theorem.
+
+`shortPrimeSupply_of_log_ge` in the same module independently proves the
+unchanged ShortPrimeSupply when log(k)>=1700, for the full original width
+range. The original published base lies above exp(5100), so both packet
+endpoints have actual proved count estimates. The cardinality k^3, physical
+endpoint and all width constants are unchanged. `fixedWidth_shortPrimeSupply`
+discharges the exact 3/50 width.
+`VinogradovFordLargeDegree.moment_bound_real` then proves the actual complete
+Ford moment theorem with no arithmetic supply premise on this explicit
+large-degree range, every original allowed order and every real P>=1.
+Its coefficient and 1.7/k defect allowance are unchanged. This is NOT the
+full published k>=1000 theorem, the lower-degree table, a sharp incomplete
+moment, a VK benchmark or a new zero-free region. Continue proving the
+remaining degrees and literature estimates; do not substitute this large
+cutoff for the full original target. Expose `rosser-proved-prime-ranges`
+and `ford-unconditional-large-degree` as optional endpoints in both explorers.
+Keep default zero-free/RH frontiers and top-ten lists unchanged.
 
 `ZetaEulerMaclaurin.zeta_eq` now gives the arbitrary-order actual zeta
 expansion with the literal signed Bernoulli tail. `norm_error_le` pays

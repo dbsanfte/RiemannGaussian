@@ -2652,6 +2652,64 @@
         "rosserFinitePrimeCountScope"
       ],
       "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    {
+      "id": "rosser-proved-prime-ranges",
+      "label": "Rosser prime bounds · finite and infinite ranges",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserFiniteThetaTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserFinitePrimeCountBoundsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserLargePrimeCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserIntermediatePrimeSupplyTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rosserProvedPrimeRangesScope"
+      ],
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    {
+      "id": "ford-unconditional-large-degree",
+      "label": "Ford moments · actual large-degree supply",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserLargePrimeCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "fordLargeBaseTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "fordLargePrimeSupplyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "fordLargeFixedWidthSupplyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "fordUnconditionalLargeMomentTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "fordUnconditionalLargeMomentScope"
+      ],
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
     }
   ],
   "families": [
@@ -6647,6 +6705,48 @@
     "RiemannGaussian.VinogradovRosserPrimeSupply.shortPrimeSupply_of_primeCounting_above_sixteen_thousand": {
       "label": "The unchanged prime supply with the finite prefix paid",
       "summary": "The finite inequalities are inserted into the original full-width packet theorem. Bounds above 16000 remain explicit unproved hypotheses; no prime-supply conclusion is unconditional.",
+      "documentation": "docs/rosser-schoenfeld-reproduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.RosserSchoenfeldFiniteTheta.bounds_through_sixteen_thousand": {
+      "label": "Actual finite theta bounds",
+      "summary": "The complete primorial checks and 69 closed cells prove the original -0.47 and +0.31 allowances for every real 1451<=x<=16000.",
+      "documentation": "docs/rosser-schoenfeld-reproduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.RosserSchoenfeldLargePrimeCounting.bounds_above_exp_5100": {
+      "label": "Actual prime counts above exp(5100)",
+      "summary": "The proved large-range theta error and exact Abel summation pay both original strict count bounds, including the whole earlier prefix, without an arithmetic premise.",
+      "documentation": "docs/rosser-schoenfeld-reproduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovRosserLargeSupply.shortPrimeSupply_of_intermediate_counts": {
+      "label": "Only the intermediate count range remains",
+      "summary": "The original full-width packet target follows conditionally from actual count estimates on 16000<x<exp(5100). Both outside ranges are proved; the middle range remains an explicit hypothesis.",
+      "documentation": "docs/rosser-schoenfeld-reproduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovRosserLargeSupply.publishedBase_large_of_log_ge": {
+      "label": "Original packet base enters the proved range",
+      "summary": "For log(k)>=1700, every original admissible width has publishedBase>=exp(5100). No endpoint or packet size is changed.",
+      "documentation": "docs/rosser-schoenfeld-reproduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovRosserLargeSupply.shortPrimeSupply_of_log_ge": {
+      "label": "Actual prime supply at large degree",
+      "summary": "For log(k)>=1700 and the full original width range, every original interval contains a packet of exactly k^3 primes. No prime-count estimate is assumed.",
+      "documentation": "docs/rosser-schoenfeld-reproduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovRosserLargeSupply.fixedWidth_shortPrimeSupply": {
+      "label": "The selected width is supplied",
+      "summary": "The exact width 3/50 used in Ford iteration has actual prime supply whenever log(k)>=1700.",
+      "documentation": "docs/rosser-schoenfeld-reproduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovFordLargeDegree.moment_bound_real": {
+      "label": "Complete Ford moments without a supply premise",
+      "summary": "For log(k)>=1700, the actual torus moment satisfies the original coefficient and defect bound across every allowed integer order and every real endpoint P>=1. Smaller degrees and incomplete moments remain open.",
       "documentation": "docs/rosser-schoenfeld-reproduction.md",
       "overview": true
     }

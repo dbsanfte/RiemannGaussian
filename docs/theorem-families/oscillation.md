@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**249 modules.** Source links open the definitions, hypotheses and proofs.
+**251 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [CosineHinge](../../RiemannGaussian/CosineHinge.lean)
@@ -120,6 +120,7 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovFordEarlyDefect](../../RiemannGaussian/VinogradovFordEarlyDefect.lean)
 - [VinogradovFordGlobalStep](../../RiemannGaussian/VinogradovFordGlobalStep.lean)
 - [VinogradovFordIteration](../../RiemannGaussian/VinogradovFordIteration.lean)
+- [VinogradovFordLargeDegree](../../RiemannGaussian/VinogradovFordLargeDegree.lean)
 - [VinogradovFordLowerDefect](../../RiemannGaussian/VinogradovFordLowerDefect.lean)
 - [VinogradovFordMoment](../../RiemannGaussian/VinogradovFordMoment.lean)
 - [VinogradovFordMomentSequence](../../RiemannGaussian/VinogradovFordMomentSequence.lean)
@@ -223,6 +224,7 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovResonancePower](../../RiemannGaussian/VinogradovResonancePower.lean)
 - [VinogradovResonanceScaling](../../RiemannGaussian/VinogradovResonanceScaling.lean)
 - [VinogradovResonanceWindow](../../RiemannGaussian/VinogradovResonanceWindow.lean)
+- [VinogradovRosserLargeSupply](../../RiemannGaussian/VinogradovRosserLargeSupply.lean)
 - [VinogradovRosserPrimeSupply](../../RiemannGaussian/VinogradovRosserPrimeSupply.lean)
 - [VinogradovRowTransport](../../RiemannGaussian/VinogradovRowTransport.lean)
 - [VinogradovScaleSelection](../../RiemannGaussian/VinogradovScaleSelection.lean)

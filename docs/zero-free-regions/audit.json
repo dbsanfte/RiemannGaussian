@@ -157,7 +157,7 @@
   ],
   "generator": "scripts/build_zero_free_plot.py",
   "inputs": {
-    "docs/proof-status.json": "583f456f82f165d62e8b397d9da3560f5b5e7ab99ccb0509b240368e73b461ad",
+    "docs/proof-status.json": "9aff187ca1e9ca6da957e3c55dcb70c263789196ce3d8e2e6273f5ec31954f1c",
     "docs/zero-free-literature-frontier.md": "6b9eb1ab9ba2cca67850ac8f541020fecc98640bcc08e0a9a38c55438ca9acd0",
     "docs/zero-free-regions/metadata.json": "4d2332c61060c8e85b0d58213001b98448bc08b8bb2532d589a1d81198325f0d",
     "scripts/ExportZeroFreePlot.lean": "bf4c47386c829827ad223399e313c7dfeb733137d48025ea3658d67c4e7c8163",
@@ -168,13 +168,13 @@
   "matplotlibVersion": "3.10.6",
   "minimumHeight": 3,
   "numpyVersion": "2.2.6",
-  "proofGraphNodes": 19127,
+  "proofGraphNodes": 19606,
   "schemaVersion": 1,
   "scope": "Selected explicit benchmark families, not an exhaustive world-record comparison. External analytic proofs are not imported into the Lean union.",
   "sourceAuditDate": "2026-09-13",
   "svgSha256": "7290d4604cdc2a543065ea073b961d02b44559a868f448c84be18ba2c513b94d",
   "theoremExplorerAudit": "docs/theorem-explorer/audit.json",
-  "theoremExplorerAuditSha256": "6279165bc3810eef182d7c4b65ca1a11a7ebec89fe0659d22abe90c60696b9f6",
+  "theoremExplorerAuditSha256": "7a79563222e6a024e2c0b5f11a573774d60de52898d3b64402c032ad7ee65e4b",
   "theorems": {
     "comparisonTheorem": {
       "axioms": [

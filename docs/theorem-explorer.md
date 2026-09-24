@@ -92,8 +92,21 @@ The **Rosser prime counts · complete through 16000** endpoint proves both
 original strict counting inequalities on the full real interval [67,16000].
 It also exposes the complete prime catalog, exact smaller lookups and the
 original prime-supply conclusion conditional on the still-open estimates
-above 16000. The finite theta obligations remain separate; this endpoint
-does not enlarge the default zero-free region.
+above 16000. Its original conditional root remains intact; the next two
+endpoints show the newly discharged ranges and arithmetic consequences.
+
+The **Rosser prime bounds · finite and infinite ranges** endpoint proves
+the original theta allowances on [1451,16000] and both strict prime-count
+bounds on [67,16000] and [exp(5100), infinity). The conditional all-degree
+packet bridge now retains only counts on 16000<x<exp(5100).
+
+The **Ford moments · actual large-degree supply** endpoint proves the
+unchanged ShortPrimeSupply statement when log(k)>=1700, with the original
+packet size, endpoint and full width range. It then proves the complete
+Ford moment bound across every original allowed order and real P>=1,
+without a supply premise. This is a restricted degree range, not the full
+published theorem for k>=1000. Smaller degrees, sharp incomplete moments
+and the VK benchmark remain open; the default zero-free region is unchanged.
 
 The **Separation** endpoint keeps finite Gaussian zero groups and displays
 the right and left rectangle counts and the reciprocal-distance bound.

@@ -1,10 +1,11 @@
 # Rosser–Schoenfeld input to Ford's prime packets
 
-The actual prime-counting inequalities needed by Ford are **not yet proved
-in this repository**. The compiled results below discharge particular
-dependencies; none assumes an external numerical prime or zero table.
-The published constants, finite starting points and full packet-width range
-remain the target.
+The actual prime-counting inequalities needed by Ford are now proved on
+**[67,16000] and [exp(5100), infinity)**. The interval between these ranges
+remains open. The large range already proves the original prime packets and
+complete Ford moment bound when **log(k)>=1700**, without an arithmetic
+supply premise. The full published degree range remains the target; none
+of these results assumes an external numerical prime or zero table.
 
 The sources are [Rosser–Schoenfeld (1962), sections 5–7](https://denisevellachemla.eu/Rosser-Schoenfeld-1962.pdf)
 and [Ford, Lemma 2.1](https://arxiv.org/pdf/1910.08209). The exact required
@@ -37,6 +38,10 @@ Here every Lean occurrence of π is `Nat.primeCounting ⌊x⌋₊`.
 | Actual large-range prime error | For x≥exp(5000), abs(ψ(x)−x)≤0.40x/log(x) and abs(θ(x)−x)≤0.41x/log(x), paying the required strict 0.47 theta allowance | [RosserSchoenfeldLargeChebyshev](../RiemannGaussian/RosserSchoenfeldLargeChebyshev.lean) |
 | Complete finite prime-count bounds | Both original strict inequalities hold at every real x in [67,16000]; π(16000)=1862 | [RosserSchoenfeldFiniteBounds](../RiemannGaussian/RosserSchoenfeldFiniteBounds.lean) |
 | Reusable complete prime catalog | Membership is exactly primality through 16000, and every smaller filtered count equals the actual counting function | [RosserSchoenfeldFiniteCatalog](../RiemannGaussian/RosserSchoenfeldFiniteCatalog.lean) |
+| Complete finite theta bounds | The original −0.47 and +0.31 allowances hold at every real x in [1451,16000] | [RosserSchoenfeldFiniteThetaBounds](../RiemannGaussian/RosserSchoenfeldFiniteThetaBounds.lean) |
+| Infinite prime-count range | Both original strict count bounds hold at every real x≥exp(5100), without an intermediate-count premise | [RosserSchoenfeldLargePrimeCounting](../RiemannGaussian/RosserSchoenfeldLargePrimeCounting.lean) |
+| Actual large-degree prime supply | The unchanged packet statement holds throughout the original width range when log(k)≥1700; the all-degree bridge assumes only intermediate counts | [VinogradovRosserLargeSupply](../RiemannGaussian/VinogradovRosserLargeSupply.lean) |
+| Actual complete Ford moments | The original bound holds at every allowed order and real P≥1 when log(k)≥1700, with no supply premise | [VinogradovFordLargeDegree](../RiemannGaussian/VinogradovFordLargeDegree.lean) |
 | Ford short packet transport | Exact finite prime packet from the two displayed actual prime-count bounds, with every numerical side condition derived | [VinogradovRosserPrimeSupply](../RiemannGaussian/VinogradovRosserPrimeSupply.lean) |
 
 The anchor uses a complete kernel-checked list of the 230 primes and an
@@ -74,9 +79,9 @@ V=\max\left(e^{3/2+3/(2\omega)},\frac{18}{\omega}k^3\log k\right).
 
 For every real $M\ge V$, its packet contains exactly $k^3$ primes in
 $M<p\le(1+\omega)M$. This remains **conditional** on the two actual
-prime-count inequalities. The conditional packet theorem is not a proof of
-prime density, of Ford's complete numerical moment theorem, or of a VK
-zero-free benchmark.
+prime-count inequalities on the full degree range. The large-degree
+theorem below separately discharges this premise. Neither theorem yet
+reproduces the full published moment or VK zero-free benchmark.
 
 ## Complete finite prime-count bounds
 
@@ -112,6 +117,64 @@ The output keeps the original constants, starting points and width range.
 This finite count theorem does not itself pay the finite **theta** bounds
 needed by the existing anchored J comparison. Those bounds and the
 intermediate analytic ranges remain separate obligations below.
+
+## Finite theta and the infinite count range
+
+[bounds_through_sixteen_thousand](../RiemannGaussian/RosserSchoenfeldFiniteThetaBounds.lean)
+proves, at every real point of the anchored finite interval,
+
+```math
+x-\frac{47x}{100\log x}<\theta(x)<x+\frac{31x}{100\log x}
+\qquad(1451\le x\le16000).
+```
+
+The complete prime catalog defines literal primorials. The checked rational
+enclosure `11134/4096 < exp(1) < 11135/4096` reduces logarithmic endpoint
+bounds to exact integer power comparisons. Seventy endpoints and 69 closed
+cells cover the whole real interval. The seven sequential data modules
+keep kernel replay bounded; their candidate numbers are not trusted inputs.
+This does not claim the part of the source's theta statement below 1451.
+
+[bounds_above_exp_5100](../RiemannGaussian/RosserSchoenfeldLargePrimeCounting.lean)
+proves both original strict prime-count inequalities for every
+`x>=exp(5100)`. Exact Abel summation uses the proved theta error above
+`exp(5000)`. Comparison primitives `x/log(x)^2` and
+`x/log(x)^2+(5/2)*x/log(x)^3` bound the remaining integrals. A rational
+Taylor estimate proves `exp(5000)<x/(50*log(x)^2)` and pays the entire
+earlier prefix. No prime estimate in the intermediate interval is assumed.
+
+Consequently `shortPrimeSupply_of_intermediate_counts` leaves only the two
+count inequalities on **16000<x<exp(5100)** as explicit hypotheses for the
+original all-degree packet statement. That interval is still an obligation,
+not a completed numerical table.
+
+## Unconditional complete Ford moments at large degree
+
+[shortPrimeSupply_of_log_ge](../RiemannGaussian/VinogradovRosserLargeSupply.lean)
+constructs the actual original packets whenever `log(k)>=1700`, for every
+original admissible width. Indeed `k^3>=exp(5100)` and the original
+`publishedBase` is at least `64*k^3`, so every required interval lies inside
+the proved count range. Its endpoint, cardinality and width are unchanged.
+`fixedWidth_shortPrimeSupply` supplies the exact width `3/50` used by Ford.
+
+[moment_bound_real](../RiemannGaussian/VinogradovFordLargeDegree.lean)
+then removes the supply premise from the complete Ford moment theorem:
+
+```math
+J_{s,k}(P)\le
+k^{2.055k^3-5.91k^2+3s}
+1.06^{sk+2s^2/k-9.7278k^3}
+P^{2s-k(k+1)/2+\Delta_s},\qquad
+\Delta_s=\frac38 k^2\exp\left(\frac12-\frac{2s}{k^2}+\frac{1.7}{k}\right).
+```
+
+The domain is `log(k)>=1700`, every integer
+`2*k^2<=s<=(k^2/2)*(1/2+log(3*k/8))`, and every real `P>=1`, with the
+literal floor cutoff. The coefficient and defect are the original ones in
+[Ford, Theorem 3](https://arxiv.org/pdf/1910.08209). This is a proved part of
+its degree range, not the full theorem for `k>=1000`. Smaller degrees,
+the lower-degree numerical tables and sharp incomplete-system moments
+remain open. This step does not itself improve the zeta zero-free region.
 
 ## Complete reciprocal-power zero masses
 
@@ -289,8 +352,9 @@ range** of the required source theta comparison, with a stronger constant
 and its original starting point. This proof uses the repository's stronger
 already-proved zero-free edge. It does not reproduce Theorem 11's sharper
 exponential error expression or remove the outstanding lower ranges.
-The full prime-count estimates, unchanged ShortPrimeSupply premise,
+The full prime-count estimates and all-degree ShortPrimeSupply target,
 published VK benchmarks and an enlarged zero-free region remain open.
+The actual large-degree supply theorem above pays its own complete range.
 
 ## The remaining analytic and finite-verification gap
 
@@ -304,7 +368,7 @@ Theorem 31's theta bound is assembled across these ranges:
 
 | Range | Source dependency still to formalize |
 | --- | --- |
-| Up to 16000 | Finite prime tables and monotonic interpolation |
+| 1451 to 16000 | **Complete:** both original allowances, from the complete primorial catalog and 69 closed cells; no claim below 1451 |
 | 16000 to 10⁸ | Theorems 18 and 19 |
 | 10⁸ to 10¹⁶ | Theorem 24 and the justified Table I |
 | 10¹⁶ to exp(5000) | Corollary of Theorem 14 and the justified Table I |
@@ -858,10 +922,10 @@ all 400 numerical checkpoints. Its output proposes data, while
 
 This extends the **complete finite verification from height 26 to 54**.
 It does not reproduce the required low-zero verification through the
-published height near 22000. The full list and count, actual prime-count
-bounds, short-prime supply and published VK region remain open. The
-high-degree Ford moment formula is proved conditional on short-prime
-supply; its lower-degree numerical tables remain open. The public default
+published height near 22000. The full list and count, intermediate prime-count
+bounds, all-degree short-prime supply and published VK region remain open.
+The Ford moment formula is now unconditional when log(k)>=1700; the rest
+of its degree range and lower-degree numerical tables remain open. The public default
 region and RH arithmetic frontier are unchanged.
 
 Return to the [literature reproduction ledger](vinogradov-literature-reproduction.md).

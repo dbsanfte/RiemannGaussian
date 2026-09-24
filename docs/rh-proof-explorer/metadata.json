@@ -16,15 +16,15 @@
       "changeReason": "The strict Type-II go/no-go test proves the numerical reduction but identifies an unproved parity-sensitive estimate; current sieve rates and the fixed-height VMVT mismatch do not discharge it. Stop expanding this route until new arithmetic input is found."
     },
     "latestUpdate": {
-      "sequence": 67,
-      "id": "rosser-complete-finite-prime-counts",
+      "sequence": 68,
+      "id": "rosser-prime-ranges-and-large-degree-moments",
       "kind": "theorem",
-      "title": "The small-range prime-count bounds are proved.",
-      "body": "Lean now proves both original strict prime-count inequalities for every real x from 67 through 16000. Complete prime checks and 136 closed logarithmic cells pay the finite range, and the endpoint count is exactly 1862. The same checked blocks provide a complete reusable prime catalog and exact lookups below the cutoff. The original prime-supply theorem retains its full width range and constants; count bounds above 16000 remain explicit hypotheses.",
-      "next": "Pay the remaining finite and intermediate prime estimates. The small theta bounds for the anchored comparison, full prime supply, published VK benchmarks and an enlarged zero-free region remain open.",
+      "title": "Actual prime supply closes the large-degree Ford moment bound.",
+      "body": "Lean now proves original ShortPrimeSupply and the complete Ford moment bound when log(k)>=1700, without an arithmetic supply premise. Every original allowed order, real endpoint and coefficient is retained. The supporting prime estimates now include finite theta bounds on [1451,16000] and both original strict count bounds for x>=exp(5100).",
+      "next": "Prove the remaining count bounds on 16000<x<exp(5100) and cover smaller degrees, then finish the sharp incomplete-system and zeta estimates. The full published VK benchmark and a larger zero-free region remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rosserFinitePrimeCountBoundsTheorem"
+        "fordUnconditionalLargeMomentTheorem"
       ],
       "documentation": "docs/rosser-schoenfeld-reproduction.md"
     },
@@ -3453,6 +3453,64 @@
       "scopePath": [
         "gaussianPhaseBandToolkit",
         "rosserFinitePrimeCountScope"
+      ],
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    {
+      "id": "rosser-proved-prime-ranges",
+      "label": "Rosser prime bounds · finite and infinite ranges",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserFiniteThetaTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserFinitePrimeCountBoundsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserLargePrimeCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserIntermediatePrimeSupplyTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rosserProvedPrimeRangesScope"
+      ],
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    {
+      "id": "ford-unconditional-large-degree",
+      "label": "Ford moments · actual large-degree supply",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserLargePrimeCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "fordLargeBaseTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "fordLargePrimeSupplyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "fordLargeFixedWidthSupplyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "fordUnconditionalLargeMomentTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "fordUnconditionalLargeMomentScope"
       ],
       "documentation": "docs/rosser-schoenfeld-reproduction.md"
     }

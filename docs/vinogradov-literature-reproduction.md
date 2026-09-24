@@ -20,7 +20,7 @@ reported constants in the [literature audit](zero-free-literature-frontier.md).
 | Bellotti 2.4 / Ford 3.4 | Original mixed iteration with its stated coefficients and thresholds | Original coefficient, defect and starting height proved with constructed scales and integer cutoffs under Ford's stationary-scale criterion; only the dense prime supply remains an arithmetic input at this step |
 | Ford 3.5 | Repeated original iteration from the diagonal moment at every positive endpoint | Proved with the published coefficient recurrence; the concrete rank and maximal depth are now constructed, leaving short-prime supply as the arithmetic premise |
 | Ford 3.6 | Quantitative original iteration for `k>=1000` | Full closed coefficient and defect bounds proved with all original constants and the complete order interval; actual moments retain the unproved dense short-prime supply |
-| Ford Theorem 3, `k>=1000` | Interpolation to every integer order in the published interval | Actual moment interpolation proved with the original `1.7/k` defect and coefficient constants; dense short-prime supply remains explicit |
+| Ford Theorem 3, `k>=1000` | Interpolation to every integer order in the published interval | Original formula proved conditional on short-prime supply; actual supply now discharges it when `log(k)>=1700`, with every allowed order and real endpoint retained |
 | Ford Theorem 3, lower-degree tables | Original numerical bounds through the finite degree range | Open |
 | Bellotti 2.3 and 2.5 | Sharper scales and repeated moment-order iteration | Sharper scale normalization under audit; full quantitative iteration open |
 | Bellotti 1.4 and 2.8 | Complete and smooth incomplete moment estimates | Published numerical bounds open |
@@ -263,8 +263,9 @@ this theorem.
 [`VinogradovFordGlobalStep.ShortPrimeSupply`](../RiemannGaussian/VinogradovFordGlobalStep.lean)
 states the remaining arithmetic input literally: every real `M>=V`
 admits a finite set of exactly `k^3` primes in `(M,eta*M]`. It is an
-**unproved proposition supplied as a hypothesis**, not an axiom or a
-replacement moment estimate.
+**proposition supplied as a hypothesis** on the full degree range, not an
+axiom or a replacement moment estimate. The separate large-degree result
+below now proves this proposition when `log(k)>=1700`.
 
 `all_endpoint_bound` covers every positive integer endpoint. The small
 endpoint uses the proved comparison `J_(s+k),k(P)<=P^(2k)*J_s,k(P)`.
@@ -434,8 +435,9 @@ C_J\le k^{2.055k^3-5.91k^2+3nk}\,
 
 This is an unconditional bound on the actual recursive coefficient.
 `selected_moment_closed` combines it with the closed defect throughout the
-paper's complete order interval. **Dense short-prime supply is still an
-unproved premise of the actual moment theorem.**
+paper's complete order interval. **Dense short-prime supply remains an
+unproved premise on the full original degree range.** The large-degree
+continuation below discharges that premise on its stated range.
 
 ## Interpolation to every high-degree order
 
@@ -463,10 +465,19 @@ for every real `P>=1`, using the literal cutoff `floor(P)`, throughout
 `2*k^2<=s<=(k^2/2)*(1/2+log(3*k/8))`. The exponent is proved
 nonnegative before passing from the integer cutoff to the real endpoint. The theorem retains
 `ShortPrimeSupply k (3/50)` explicitly. It assumes no intermediate moment,
-coefficient, schedule or divisibility estimate. The dense prime supply,
+coefficient, schedule or divisibility estimate. Dense prime supply for all degrees,
 lower-degree numerical tables and subsequent incomplete-moment/zeta
 transport remain open. No new zero-free region follows from this
 conditional high-degree moment bound alone.
+
+[`VinogradovFordLargeDegree.moment_bound_real`](../RiemannGaussian/VinogradovFordLargeDegree.lean)
+now proves this same formula **without a supply premise when log(k)>=1700**.
+The original packet base lies above `exp(5100)`, where both actual strict
+prime-count inequalities are independently proved. The unchanged packet
+size, physical endpoint and full original width range are retained, as are
+every allowed integer order and real `P>=1`. This is a proved part of the
+degree range, not completion of Theorem 3 for every `k>=1000` or a new zeta
+region. The remaining count interval is `16000<x<exp(5100)`.
 
 The required dense prime-packet estimate must also be proved. The existing
 `(M,8M]` packet cannot silently replace the paper's narrower interval while
@@ -484,9 +495,10 @@ Its short-interval consequence gives `N` primes when
 `N/log(N)>=6/omega`, `x>=exp(3/2+3/(2*omega))` and
 `x>=(6/omega)*N*log(N)`. Substituting `N=k^3` yields precisely the two
 terms in `V`; the paper also restricts `omega>=1/(3*log(k))`.
-The quantitative prime-count bounds themselves are not present in the
-current imported chain. Proving only a conditional implication from them
-must not be reported as proving `ShortPrimeSupply`.
+The quantitative prime-count bounds are now proved on `[67,16000]` and
+`[exp(5100), infinity)`. The intervening range remains open. A conditional
+implication does not discharge the corresponding count premise; the actual
+large-degree supply theorem uses only the independently proved range.
 The full-width conditional transport is now compiled in
 [`VinogradovRosserPrimeSupply`](../RiemannGaussian/VinogradovRosserPrimeSupply.lean).
 The actual anchor, three J-comparisons, exact source zero-free input and

@@ -149,9 +149,9 @@ The harmonic-cost route has an evaluated source and paid wing, reserve and domin
 
 ### Latest Update
 
-**The small-range prime-count bounds are proved.** Lean now proves both original strict prime-count inequalities for every real x from 67 through 16000. Complete prime checks and 136 closed logarithmic cells pay the finite range, and the endpoint count is exactly 1862. The same checked blocks provide a complete reusable prime catalog and exact lookups below the cutoff. The original prime-supply theorem retains its full width range and constants; count bounds above 16000 remain explicit hypotheses.
-Pay the remaining finite and intermediate prime estimates. The small theta bounds for the anchored comparison, full prime supply, published VK benchmarks and an enlarged zero-free region remain open.
-[Current checked endpoint](RiemannGaussian/RosserSchoenfeldFiniteBounds.lean#L19)
+**Actual prime supply closes the large-degree Ford moment bound.** Lean now proves original ShortPrimeSupply and the complete Ford moment bound when log(k)>=1700, without an arithmetic supply premise. Every original allowed order, real endpoint and coefficient is retained. The supporting prime estimates now include finite theta bounds on [1451,16000] and both original strict count bounds for x>=exp(5100).
+Prove the remaining count bounds on 16000<x<exp(5100) and cover smaller degrees, then finish the sharp incomplete-system and zeta estimates. The full published VK benchmark and a larger zero-free region remain open.
+[Current checked endpoint](RiemannGaussian/VinogradovFordLargeDegree.lean#L24)
 · [Proof details](docs/rosser-schoenfeld-reproduction.md).
 <!-- RH_DIRECTION:END -->
 

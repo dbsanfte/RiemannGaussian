@@ -24,6 +24,15 @@ now discharges both original count inequalities at every real point of
 corollary still assumes the count bounds above 16000. This literature
 dependency does not prove the independent RH signed floor.
 
+Two further supporting endpoints separate the new arithmetic ranges from
+their application. **Rosser prime bounds · finite and infinite ranges**
+proves theta bounds on [1451,16000] and both original count inequalities
+for x>=exp(5100). **Ford moments · actual large-degree supply** constructs
+the original full-width prime packets and proves the complete Ford moment
+bound when log(k)>=1700, without a supply premise. The intermediate counts,
+smaller degrees and full published VK benchmark remain open. These results
+do not change this page's default RH frontier or supply its signed floor.
+
 ## Direction and obstruction
 
 Prove a first restricted contradiction by completing the evaluated
