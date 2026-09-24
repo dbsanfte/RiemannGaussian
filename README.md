@@ -149,10 +149,10 @@ The harmonic-cost route retains its evaluated source and an open independent -3/
 
 ### Latest Update
 
-**Three factorial losses paid at source scale; the rest still needs signed cancellation.** Lean bounds low-order mass by 39 exp(-N/400), omitted rectangle mass by 6 exp(-N/6000), and old allocation by 39 exp(-N/1000). Each gives geometric decay for its literal arithmetic error. Good prime orders now meet the simple-zero phase range. The first supported cutoff insertion is below 1/1000000.
-The full cutoff tail and phase transfer through the remaining coupled masks are open. A numerical delay model suggests a tiny cutoff defect, but is not a certificate. Lean proves the existing independent allowance for fullParityRest still diverges; no packet floor or zero exclusion is claimed.
-[Current checked endpoint](RiemannGaussian/ZetaRieszParityShareError.lean#L127)
-· [Proof details](docs/zeta-riesz-zero-parity-audit.md).
+**Signed 12+ support tail bounded; the literal masked transfer remains open.** Lean resums every supported insertion with its sign retained and bounds the entire 12+ tail below 1/1000000, uniformly in a positive auxiliary cutoff. A separate analytic-mode theorem shows that uniform complete-leg limits alone do not bound the hard share projection, even with arbitrarily small fixed nonzero residuals.
+Pay the one-sided support/empty-cofactor boundary and zero auxiliary cutoff limit, then prove a joint phase estimate through the literal masks. The model audit is not a counterexample to the arithmetic packet. Its bound, the rest floor, and a new zero exclusion remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszParityInsertionTail.lean#L122)
+· [Proof details](docs/zeta-riesz-parity-tail-transfer-audit.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

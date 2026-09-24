@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**436 modules.** Source links open the definitions, hypotheses and proofs.
+**440 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -269,8 +269,12 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszParityCountAudit](../../RiemannGaussian/ZetaRieszParityCountAudit.lean)
 - [ZetaRieszParityFirstInsertion](../../RiemannGaussian/ZetaRieszParityFirstInsertion.lean)
 - [ZetaRieszParityGoodPhase](../../RiemannGaussian/ZetaRieszParityGoodPhase.lean)
+- [ZetaRieszParityInsertionIdentity](../../RiemannGaussian/ZetaRieszParityInsertionIdentity.lean)
+- [ZetaRieszParityInsertionPoisson](../../RiemannGaussian/ZetaRieszParityInsertionPoisson.lean)
+- [ZetaRieszParityInsertionTail](../../RiemannGaussian/ZetaRieszParityInsertionTail.lean)
 - [ZetaRieszParityMaskError](../../RiemannGaussian/ZetaRieszParityMaskError.lean)
 - [ZetaRieszParityMaskTails](../../RiemannGaussian/ZetaRieszParityMaskTails.lean)
+- [ZetaRieszParityMaskedPhaseAudit](../../RiemannGaussian/ZetaRieszParityMaskedPhaseAudit.lean)
 - [ZetaRieszParityOrderError](../../RiemannGaussian/ZetaRieszParityOrderError.lean)
 - [ZetaRieszParityOrderPacket](../../RiemannGaussian/ZetaRieszParityOrderPacket.lean)
 - [ZetaRieszParityOrderPhase](../../RiemannGaussian/ZetaRieszParityOrderPhase.lean)

@@ -41,19 +41,23 @@ or a general obstruction to signed global methods. The pointwise cutoff
 sensitivity and discrete signed transfer remain open; see the
 [continuum/Abel audit](zeta-riesz-continuum-cascade-audit.md).
 
-The current **Simple-zero parity · paid factorial errors and rest audit**
+The current **Simple-zero parity · signed support tail and masked transfer audit**
 endpoint keeps the exact signed transform and supported inverse. The core
 gap exceeds 289/1000; at least eleven omitted small-prime insertions are
 needed, and the first supported insertion integral is below 1/1000000.
 Summed exceptional orders, the original factorial rectangle, and the old
 allocation now have independent geometric bounds on the literal packet.
-Good orders all meet the extended simple-zero prime-phase range. The
-coupled-mask phase transfer and full cutoff tail remain open. Numerical
-delay probes guide that next estimate but are not arithmetic certificates.
+Good orders all meet the extended simple-zero prime-phase range. The entire
+signed 12+ support-insertion series is now below 1/1000000, uniformly in a
+positive auxiliary lower cutoff. The one-sided boundary, zero auxiliary
+cutoff limit and coupled-mask phase transfer remain open. A checked analytic
+mode example proves that uniformly small complete-leg errors alone cannot
+control a hard share projection. This is not a counterexample to the literal
+packet; its full Riesz/count structure may cancel the offending modes.
 The existing independent phase-cost allowance for fullParityRest still
 diverges: balanced triple boxes lie wholly outside the selected packet.
 No whole-packet floor or new zero exclusion follows. See the
-[simple-zero parity audit](zeta-riesz-zero-parity-audit.md).
+[signed-tail and masked-transfer audit](zeta-riesz-parity-tail-transfer-audit.md).
 
 The optional **Rosser prime error · final large range proved** endpoint
 tracks a separate supporting step in the literature-reproduction campaign:

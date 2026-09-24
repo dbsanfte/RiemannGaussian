@@ -3482,7 +3482,11 @@
     "ZetaRieszParityRectangleTail": "arithmetic",
     "ZetaRieszParityMaskError": "arithmetic",
     "ZetaRieszParityShareTail": "arithmetic",
-    "ZetaRieszParityShareError": "arithmetic"
+    "ZetaRieszParityShareError": "arithmetic",
+    "ZetaRieszParityInsertionPoisson": "arithmetic",
+    "ZetaRieszParityInsertionIdentity": "arithmetic",
+    "ZetaRieszParityInsertionTail": "arithmetic",
+    "ZetaRieszParityMaskedPhaseAudit": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

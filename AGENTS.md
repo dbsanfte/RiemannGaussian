@@ -1602,6 +1602,40 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+### Signed support tail and joint masked phase audit (2026-09-24)
+
+The local continuation from `6e42991` is recorded in
+`docs/zeta-riesz-parity-tail-transfer-audit.md`. The requested full packet
+estimate has NOT passed. Preserve every mask, the paid factorial errors,
+the exact packet/rest ledger, and the existing public frontiers.
+
+`ZetaRieszParityInsertionPoisson` resums the actual signed insertion series
+at positive auxiliary cutoff as an exponentially compensated positive
+jump-count sum. `ZetaRieszParityInsertionIdentity` identifies that series
+with iterated two-coordinate differences of the supported inverse.
+`ZetaRieszParityInsertionTail.nested_tail_core_bound` (in the
+`ZetaRieszParityInsertionPoisson` namespace) bounds all supported orders
+12 and above together by 1/1000000, uniformly for 0<a<=7/250 and on the
+literal core. Signs and infinitely many orders are retained. This is not
+yet the whole positive-cutoff inverse: the one-sided support boundary,
+empty-cofactor source and passage a->0 remain explicit obligations.
+
+`ZetaRieszParityMaskedPhaseAudit` proves an analytic-mode counterexample
+to inferring a hard share-mask bound from uniform complete-leg limits.
+Both individual modes decay uniformly for k>=N/200, yet their correlated
+integral over [43/80,9/16] has no fixed eventual norm bound. Multiplication
+by any fixed nonzero defect does not fix it. This is NOT actual prime data,
+zeta zeros, or a no-go theorem for FullParityPacket: the full Riesz/count
+structure may remove the modes. Do not apply the existing product-phase
+theorem through the remaining coupled masks without a new joint estimate.
+The optional numerical probes are diagnostic, not certificates. Their
+fixed total-log slices do not include the radial factorial cancellation.
+
+No conditional whole-packet bound, revised rest source, independent rest
+floor or zero exclusion is proved. The existing rest allowance still
+diverges. The strict mathematical task remains incomplete; do not call
+this slice a completed masked transfer. Work without subagents.
+
 ### Simple-zero parity and independently paid factorial errors (2026-09-24)
 
 The continuation from `6a30bfb` is recorded in
@@ -1647,8 +1681,9 @@ array theorem to that box without proving the masked transfer.
 The optional `scripts/probe_riesz_zero_parity.py` evaluates a candidate
 Dickman/Buchstab inverse and checks finite-count quadratures and grid
 refinements. Its tiny continuum values are exploratory. The inverse's
-identification, the full cutoff tail, and the literal conditional packet
-bound remain open. Keep the probe out of ordinary builds and CI.
+identification and the literal conditional packet bound remain open.
+The subsequent support-tail theorem above does not pay the full one-sided
+cutoff defect. Keep the probe out of ordinary builds and CI.
 
 `ZetaRieszParityRestAudit` proves that balanced triple boxes survive
 untouched in fullParityRest, even inside the narrower core. The existing

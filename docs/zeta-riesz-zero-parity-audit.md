@@ -11,8 +11,11 @@ order-zero objection is now paid after summing its exact factorial mass.
 The same source-scale argument also pays the original factorial rectangle
 and old allocation throughout the full selected box. The original packet
 and every support mask remain in exact error identities. The first
-nonzero cutoff insertion is bounded; the full insertion tail and the
-phase transfer through the remaining coupled masks are not yet proved.
+nonzero cutoff insertion is bounded. The subsequent
+[signed-tail audit](zeta-riesz-parity-tail-transfer-audit.md) bounds the
+entire 12+ series for the supported inverse, uniformly in a positive
+auxiliary cutoff. The full one-sided cutoff defect and the phase transfer
+through the remaining coupled masks are still open.
 
 The literal rest has a checked negative audit: its existing independent
 phase-cost allowance still tends to positive infinity. This is a failure
@@ -125,8 +128,11 @@ I_{11}\le\frac{\log(28/9)^{11}}{11!}
 
 `firstIntegrand_eq_insertedSupport` identifies this integrand with the
 signed insertion. This bounds **only order eleven**, not the entire
-positive-cutoff defect. The renewal boundary term and all orders twelve
-and above remain explicit and unpaid.
+positive-cutoff defect. The subsequent
+[signed-tail audit](zeta-riesz-parity-tail-transfer-audit.md) bounds all
+supported orders twelve and above together, retaining their signs.
+The empty-cofactor/support boundary and zero auxiliary cutoff passage
+remain unpaid; that support estimate is not the full inverse defect.
 
 ## Exact failure of the proposed uniform phase replacement
 
