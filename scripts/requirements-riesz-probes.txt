@@ -1,0 +1,3 @@
+# Optional research probes only; no ordinary build or CI installs this file.
+numpy==2.2.6
+scipy==1.15.3

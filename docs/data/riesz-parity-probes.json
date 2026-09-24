@@ -1,0 +1,946 @@
+{
+  "status": "Exploratory continuous prime-density model; not a Lean certificate or actual prime counts.",
+  "date": "2026-09-24",
+  "packet_command": "python scripts/probe_riesz_parity_packet.py --power 20 --seeds 4 --output /tmp/packet.json",
+  "cascade_command": "python scripts/probe_riesz_parity_cascade.py --power 20 --seeds 3 --max-primes 9 --output /tmp/cascade.json",
+  "packet": {
+    "status": "exploratory continuous prime-density model; not certified and not actual prime counts",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "sample_power": 20,
+    "seeds": 4,
+    "radius": 0.50005,
+    "asymptotic": [
+      {
+        "lambda": 0.6931164902781679,
+        "triple": 0.00487227317457449,
+        "quintuple_mean": 0.0054383389221539504,
+        "seed_spread": 1.7692766098118679e-07,
+        "ratio": 1.1161810365094926,
+        "trials": [
+          {
+            "quintuple": 0.00543840314784381,
+            "regions": [
+              0.001187307863259664,
+              0.003362154385339902,
+              0.0008889408992442437
+            ],
+            "quintuple_raw": 0.005438403147843805,
+            "allocated_loss": 0.0,
+            "hinge_max_absolute_error": 4.440892098500626e-16,
+            "full_box_subset_error": 4.440892098500626e-16,
+            "full_five_box_signed": -0.005422674618628062,
+            "full_five_box_positive": 5.431146659111812e-05,
+            "full_five_box_negative_magnitude": 0.005476986085219183,
+            "outside_packet_signed": 1.5728529215742933e-05
+          },
+          {
+            "quintuple": 0.005438340400815308,
+            "regions": [
+              0.0011895958095793436,
+              0.0033593952454899745,
+              0.0008893493457459899
+            ],
+            "quintuple_raw": 0.00543834040081531,
+            "allocated_loss": 0.0,
+            "hinge_max_absolute_error": 3.5561831257524545e-16,
+            "full_box_subset_error": 3.885780586188048e-16,
+            "full_five_box_signed": -0.005422768651083677,
+            "full_five_box_positive": 5.4315255336439645e-05,
+            "full_five_box_negative_magnitude": 0.0054770839064201115,
+            "outside_packet_signed": 1.557174973163278e-05
+          },
+          {
+            "quintuple": 0.0054382262201828286,
+            "regions": [
+              0.001187518384949587,
+              0.00336081272918086,
+              0.0008898951060523812
+            ],
+            "quintuple_raw": 0.0054382262201828286,
+            "allocated_loss": 0.0,
+            "hinge_max_absolute_error": 3.5561831257524545e-16,
+            "full_box_subset_error": 4.440892098500626e-16,
+            "full_five_box_signed": -0.005422594793180042,
+            "full_five_box_positive": 5.4304792485248655e-05,
+            "full_five_box_negative_magnitude": 0.00547689958566529,
+            "outside_packet_signed": 1.56314270027839e-05
+          },
+          {
+            "quintuple": 0.005438385919773855,
+            "regions": [
+              0.0011880852736216227,
+              0.003360659615814715,
+              0.0008896410303375176
+            ],
+            "quintuple_raw": 0.005438385919773856,
+            "allocated_loss": 0.0,
+            "hinge_max_absolute_error": 4.440892098500626e-16,
+            "full_box_subset_error": 4.440892098500626e-16,
+            "full_five_box_signed": -0.005422748061000767,
+            "full_five_box_positive": 5.431626707568278e-05,
+            "full_five_box_negative_magnitude": 0.005477064328076448,
+            "outside_packet_signed": 1.5637858773090454e-05
+          }
+        ],
+        "local_boxes": [
+          {
+            "p": [
+              0.525,
+              0.535
+            ],
+            "r": [
+              0.01,
+              0.015
+            ],
+            "triple": 0.0002975201458436138,
+            "quintuple": 0.0003854994390183595,
+            "ratio": 1.295708692012374
+          },
+          {
+            "p": [
+              0.525,
+              0.535
+            ],
+            "r": [
+              0.015,
+              0.019999999999999997
+            ],
+            "triple": 0.0003008078797393325,
+            "quintuple": 0.0003710047263014971,
+            "ratio": 1.2333610629581722
+          },
+          {
+            "p": [
+              0.525,
+              0.535
+            ],
+            "r": [
+              0.019999999999999997,
+              0.024999999999999998
+            ],
+            "triple": 0.00030416909130863196,
+            "quintuple": 0.00035489177113843926,
+            "ratio": 1.166758166030553
+          },
+          {
+            "p": [
+              0.525,
+              0.535
+            ],
+            "r": [
+              0.024999999999999998,
+              0.03
+            ],
+            "triple": 0.00030760627175299547,
+            "quintuple": 0.0003369679906459331,
+            "ratio": 1.0954522764624084
+          },
+          {
+            "p": [
+              0.535,
+              0.5449999999999999
+            ],
+            "r": [
+              0.01,
+              0.015
+            ],
+            "triple": 0.000298536199617585,
+            "quintuple": 0.00037454220294382587,
+            "ratio": 1.2545956015505055
+          },
+          {
+            "p": [
+              0.535,
+              0.5449999999999999
+            ],
+            "r": [
+              0.015,
+              0.019999999999999997
+            ],
+            "triple": 0.00030190972931494004,
+            "quintuple": 0.00035862355992044234,
+            "ratio": 1.1878502913244664
+          },
+          {
+            "p": [
+              0.535,
+              0.5449999999999999
+            ],
+            "r": [
+              0.019999999999999997,
+              0.024999999999999998
+            ],
+            "triple": 0.0003053603779930472,
+            "quintuple": 0.0003408451960887572,
+            "ratio": 1.1162063602649783
+          },
+          {
+            "p": [
+              0.535,
+              0.5449999999999999
+            ],
+            "r": [
+              0.024999999999999998,
+              0.03
+            ],
+            "triple": 0.00030889082078906094,
+            "quintuple": 0.0003210052664985566,
+            "ratio": 1.0392191832653017
+          },
+          {
+            "p": [
+              0.5449999999999999,
+              0.5549999999999999
+            ],
+            "r": [
+              0.01,
+              0.015
+            ],
+            "triple": 0.00029980825466697765,
+            "quintuple": 0.00036058469234286343,
+            "ratio": 1.2027176928246865
+          },
+          {
+            "p": [
+              0.5449999999999999,
+              0.5549999999999999
+            ],
+            "r": [
+              0.015,
+              0.019999999999999997
+            ],
+            "triple": 0.00030327450849658964,
+            "quintuple": 0.00034339158475695495,
+            "ratio": 1.1322797503134572
+          },
+          {
+            "p": [
+              0.5449999999999999,
+              0.5549999999999999
+            ],
+            "r": [
+              0.019999999999999997,
+              0.024999999999999998
+            ],
+            "triple": 0.0003068218551215222,
+            "quintuple": 0.0003240940742398051,
+            "ratio": 1.0562939661238993
+          },
+          {
+            "p": [
+              0.5449999999999999,
+              0.5549999999999999
+            ],
+            "r": [
+              0.024999999999999998,
+              0.03
+            ],
+            "triple": 0.0003104531741332614,
+            "quintuple": 0.0003022742270698247,
+            "ratio": 0.9736548125614399
+          },
+          {
+            "p": [
+              0.5549999999999999,
+              0.565
+            ],
+            "r": [
+              0.01,
+              0.015
+            ],
+            "triple": 0.0003013427903069988,
+            "quintuple": 0.0003468270546134817,
+            "ratio": 1.1509386179777024
+          },
+          {
+            "p": [
+              0.5549999999999999,
+              0.565
+            ],
+            "r": [
+              0.015,
+              0.019999999999999997
+            ],
+            "triple": 0.00030490926540017906,
+            "quintuple": 0.00032794578653694886,
+            "ratio": 1.0755520535151184
+          },
+          {
+            "p": [
+              0.5549999999999999,
+              0.565
+            ],
+            "r": [
+              0.019999999999999997,
+              0.024999999999999998
+            ],
+            "triple": 0.0003085611771401742,
+            "quintuple": 0.0003068923492568142,
+            "ratio": 0.994591581809393
+          },
+          {
+            "p": [
+              0.5549999999999999,
+              0.565
+            ],
+            "r": [
+              0.024999999999999998,
+              0.03
+            ],
+            "triple": 0.00031230163294958095,
+            "quintuple": 0.00028301322647130377,
+            "ratio": 0.9062175685677392
+          }
+        ],
+        "phase_diagnostic": {
+          "signed_density_triple_minus_quintuple": -0.0005660657475794603,
+          "common_phase_real": {
+            "-1": 0.0005660657475794603,
+            "-0.5": 0.00028303287378973014,
+            "0": -0.0,
+            "0.5": -0.00028303287378973014,
+            "1": -0.0005660657475794603
+          },
+          "unmatched_quintuple_after_capped_transport": 0.0005660657475794603,
+          "symmetric_relative_count_error_to_lose_surplus": 0.054901274751580756
+        }
+      }
+    ],
+    "moving_window": [
+      {
+        "total_log_over_N": 1.95,
+        "lambda": 0.7108176262149867,
+        "triple": 0.004750941391844649,
+        "ratio": 1.188001520523225,
+        "phase_diagnostic": {
+          "signed_density_triple_minus_quintuple": -0.0008931842055835216,
+          "common_phase_real": {
+            "-1": 0.0008931842055835216,
+            "-0.5": 0.0004465921027917608,
+            "0": -0.0,
+            "0.5": -0.0004465921027917608,
+            "1": -0.0008931842055835216
+          },
+          "unmatched_quintuple_after_capped_transport": 0.0008931842055835216,
+          "symmetric_relative_count_error_to_lose_surplus": 0.08592385277605641
+        },
+        "quintuple": 0.00564412559742817,
+        "regions": [
+          0.0010451095103653418,
+          0.003711917686317002,
+          0.0008870984007458263
+        ],
+        "quintuple_raw": 0.005644125597428171,
+        "allocated_loss": 0.0,
+        "hinge_max_absolute_error": 4.440892098500626e-16,
+        "full_box_subset_error": 4.440892098500626e-16,
+        "full_five_box_signed": -0.005952818552124326,
+        "full_five_box_positive": 3.175282488715361e-18,
+        "full_five_box_negative_magnitude": 0.005952818552124329,
+        "outside_packet_signed": -0.00030869295469615726
+      },
+      {
+        "total_log_over_N": 1.96,
+        "lambda": 0.7071910056730735,
+        "triple": 0.004775305193854109,
+        "ratio": 1.1841782912875851,
+        "phase_diagnostic": {
+          "signed_density_triple_minus_quintuple": -0.00087950755098078,
+          "common_phase_real": {
+            "-1": 0.00087950755098078,
+            "-0.5": 0.00043975377549039,
+            "0": -0.0,
+            "0.5": -0.00043975377549039,
+            "1": -0.00087950755098078
+          },
+          "unmatched_quintuple_after_capped_transport": 0.00087950755098078,
+          "symmetric_relative_count_error_to_lose_surplus": 0.08432383566041715
+        },
+        "quintuple": 0.005654812744834889,
+        "regions": [
+          0.0010923389916266838,
+          0.003673652322263653,
+          0.0008888214309445517
+        ],
+        "quintuple_raw": 0.00565481274483489,
+        "allocated_loss": 0.0,
+        "hinge_max_absolute_error": 4.440892098500626e-16,
+        "full_box_subset_error": 4.440892098500626e-16,
+        "full_five_box_signed": -0.005864360744496538,
+        "full_five_box_positive": 7.223672203625918e-07,
+        "full_five_box_negative_magnitude": 0.005865083111716901,
+        "outside_packet_signed": -0.0002095479996616503
+      },
+      {
+        "total_log_over_N": 1.97,
+        "lambda": 0.7036012036138193,
+        "triple": 0.004799668995863569,
+        "ratio": 1.1737160204130355,
+        "phase_diagnostic": {
+          "signed_density_triple_minus_quintuple": -0.0008337793972612488,
+          "common_phase_real": {
+            "-1": 0.0008337793972612488,
+            "-0.5": 0.0004168896986306244,
+            "0": -0.0,
+            "0.5": -0.0004168896986306244,
+            "1": -0.0008337793972612488
+          },
+          "unmatched_quintuple_after_capped_transport": 0.0008337793972612488,
+          "symmetric_relative_count_error_to_lose_surplus": 0.07991661228131677
+        },
+        "quintuple": 0.0056334483931248175,
+        "regions": [
+          0.0011327328605745682,
+          0.0036126790215665716,
+          0.0008880365109836783
+        ],
+        "quintuple_raw": 0.005633448393124818,
+        "allocated_loss": 0.0,
+        "hinge_max_absolute_error": 3.885780586188048e-16,
+        "full_box_subset_error": 4.440892098500626e-16,
+        "full_five_box_signed": -0.005766898644869034,
+        "full_five_box_positive": 4.775808892050887e-06,
+        "full_five_box_negative_magnitude": 0.0057716744537610895,
+        "outside_packet_signed": -0.0001334502517442178
+      },
+      {
+        "total_log_over_N": 1.98,
+        "lambda": 0.7000476621814262,
+        "triple": 0.004824032797873027,
+        "ratio": 1.1579812415002382,
+        "phase_diagnostic": {
+          "signed_density_triple_minus_quintuple": -0.0007621066904458483,
+          "common_phase_real": {
+            "-1": 0.0007621066904458483,
+            "-0.5": 0.00038105334522292415,
+            "0": -0.0,
+            "0.5": -0.00038105334522292415,
+            "1": -0.0007621066904458483
+          },
+          "unmatched_quintuple_after_capped_transport": 0.0007621066904458483,
+          "symmetric_relative_count_error_to_lose_surplus": 0.0732078845089538
+        },
+        "quintuple": 0.005586139488318875,
+        "regions": [
+          0.0011564707786263365,
+          0.003541048741940418,
+          0.0008886199677521211
+        ],
+        "quintuple_raw": 0.005586139488318878,
+        "allocated_loss": 0.0,
+        "hinge_max_absolute_error": 3.885780586188048e-16,
+        "full_box_subset_error": 4.440892098500626e-16,
+        "full_five_box_signed": -0.005660718277346102,
+        "full_five_box_positive": 1.4009027554503183e-05,
+        "full_five_box_negative_magnitude": 0.005674727304900604,
+        "outside_packet_signed": -7.45787890272256e-05
+      },
+      {
+        "total_log_over_N": 1.99,
+        "lambda": 0.6965298347332783,
+        "triple": 0.004848396599882489,
+        "ratio": 1.138237279839096,
+        "phase_diagnostic": {
+          "signed_density_triple_minus_quintuple": -0.0006702291575488772,
+          "common_phase_real": {
+            "-1": 0.0006702291575488772,
+            "-0.5": 0.0003351145787744386,
+            "0": -0.0,
+            "0.5": -0.0003351145787744386,
+            "1": -0.0006702291575488772
+          },
+          "unmatched_quintuple_after_capped_transport": 0.0006702291575488772,
+          "symmetric_relative_count_error_to_lose_surplus": 0.06465011210051415
+        },
+        "quintuple": 0.005518625757431366,
+        "regions": [
+          0.0011781952007211764,
+          0.0034509522881824416,
+          0.0008894782685277481
+        ],
+        "quintuple_raw": 0.005518625757431365,
+        "allocated_loss": 0.0,
+        "hinge_max_absolute_error": 3.885780586188048e-16,
+        "full_box_subset_error": 4.440892098500626e-16,
+        "full_five_box_signed": -0.005545049163784698,
+        "full_five_box_positive": 3.017634550459649e-05,
+        "full_five_box_negative_magnitude": 0.0055752255092892935,
+        "outside_packet_signed": -2.642340635333343e-05
+      },
+      {
+        "total_log_over_N": 2.0,
+        "lambda": 0.693047185559612,
+        "triple": 0.004872760401891949,
+        "ratio": 1.1157428703417338,
+        "phase_diagnostic": {
+          "signed_density_triple_minus_quintuple": -0.0005639872754025143,
+          "common_phase_real": {
+            "-1": 0.0005639872754025143,
+            "-0.5": 0.00028199363770125717,
+            "0": -0.0,
+            "0.5": -0.00028199363770125717,
+            "1": -0.0005639872754025143
+          },
+          "unmatched_quintuple_after_capped_transport": 0.0005639872754025143,
+          "symmetric_relative_count_error_to_lose_surplus": 0.054705546673088405
+        },
+        "quintuple": 0.005436747677294463,
+        "regions": [
+          0.0011875545958235523,
+          0.0033598834467499926,
+          0.0008893096347209184
+        ],
+        "quintuple_raw": 0.005436747677294467,
+        "allocated_loss": 0.0,
+        "hinge_max_absolute_error": 3.885780586188048e-16,
+        "full_box_subset_error": 4.440892098500626e-16,
+        "full_five_box_signed": -0.005420085608910969,
+        "full_five_box_positive": 5.489941960421303e-05,
+        "full_five_box_negative_magnitude": 0.005474985028515181,
+        "outside_packet_signed": 1.6662068383496366e-05
+      },
+      {
+        "total_log_over_N": 2.01,
+        "lambda": 0.6895991896115543,
+        "triple": 0.004897124203901406,
+        "ratio": 1.0913358779164295,
+        "phase_diagnostic": {
+          "signed_density_triple_minus_quintuple": -0.0004472831384291307,
+          "common_phase_real": {
+            "-1": 0.0004472831384291307,
+            "-0.5": 0.00022364156921456536,
+            "0": -0.0,
+            "0.5": -0.00022364156921456536,
+            "1": -0.0004472831384291307
+          },
+          "unmatched_quintuple_after_capped_transport": 0.0004472831384291307,
+          "symmetric_relative_count_error_to_lose_surplus": 0.04367346196318604
+        },
+        "quintuple": 0.005344407342330537,
+        "regions": [
+          0.0011909958005980495,
+          0.0032628840665665485,
+          0.0008905274751659392
+        ],
+        "quintuple_raw": 0.0053444073423305335,
+        "allocated_loss": 0.0,
+        "hinge_max_absolute_error": 4.440892098500626e-16,
+        "full_box_subset_error": 4.440892098500626e-16,
+        "full_five_box_signed": -0.0052849674513328095,
+        "full_five_box_positive": 8.977464601570497e-05,
+        "full_five_box_negative_magnitude": 0.005374742097348512,
+        "outside_packet_signed": 5.9439890997727535e-05
+      },
+      {
+        "total_log_over_N": 2.02,
+        "lambda": 0.6861853322372395,
+        "triple": 0.0049214880059108655,
+        "ratio": 1.0662633932540648,
+        "phase_diagnostic": {
+          "signed_density_triple_minus_quintuple": -0.0003261144951308345,
+          "common_phase_real": {
+            "-1": 0.0003261144951308345,
+            "-0.5": 0.00016305724756541726,
+            "0": -0.0,
+            "0.5": -0.00016305724756541726,
+            "1": -0.0003261144951308345
+          },
+          "unmatched_quintuple_after_capped_transport": 0.0003261144951308345,
+          "symmetric_relative_count_error_to_lose_surplus": 0.03206918995438888
+        },
+        "quintuple": 0.0052476025010417,
+        "regions": [
+          0.001187171615632935,
+          0.00316946570776774,
+          0.000890965177641025
+        ],
+        "quintuple_raw": 0.005247602501041696,
+        "allocated_loss": 0.0,
+        "hinge_max_absolute_error": 4.440892098500626e-16,
+        "full_box_subset_error": 4.440892098500626e-16,
+        "full_five_box_signed": -0.005139635204937457,
+        "full_five_box_positive": 0.0001363056157820527,
+        "full_five_box_negative_magnitude": 0.005275940820719511,
+        "outside_packet_signed": 0.00010796729610423979
+      },
+      {
+        "total_log_over_N": 2.03,
+        "lambda": 0.6828051089257261,
+        "triple": 0.004945851807920327,
+        "ratio": 1.0414198556105454,
+        "phase_diagnostic": {
+          "signed_density_triple_minus_quintuple": -0.00020485646775521456,
+          "common_phase_real": {
+            "-1": 0.00020485646775521456,
+            "-0.5": 0.00010242823387760728,
+            "0": -0.0,
+            "0.5": -0.00010242823387760728,
+            "1": -0.00020485646775521456
+          },
+          "unmatched_quintuple_after_capped_transport": 0.00020485646775521456,
+          "symmetric_relative_count_error_to_lose_surplus": 0.02028972898284931
+        },
+        "quintuple": 0.005150708275675542,
+        "regions": [
+          0.0011823281135883172,
+          0.0030773360453613175,
+          0.0008910441167259073
+        ],
+        "quintuple_raw": 0.005150708275675538,
+        "allocated_loss": 0.0,
+        "hinge_max_absolute_error": 4.440892098500626e-16,
+        "full_box_subset_error": 4.440892098500626e-16,
+        "full_five_box_signed": -0.004983176776455504,
+        "full_five_box_positive": 0.00019601115908528304,
+        "full_five_box_negative_magnitude": 0.005179187935540785,
+        "outside_packet_signed": 0.00016753149922003953
+      },
+      {
+        "total_log_over_N": 2.04,
+        "lambda": 0.6794580250584431,
+        "triple": 0.004970215609929787,
+        "ratio": 1.0171240846481584,
+        "phase_diagnostic": {
+          "signed_density_triple_minus_quintuple": -8.511039282403567e-05,
+          "common_phase_real": {
+            "-1": 8.511039282403567e-05,
+            "-0.5": 4.2555196412017837e-05,
+            "0": -0.0,
+            "0.5": -4.2555196412017837e-05,
+            "1": -8.511039282403567e-05
+          },
+          "unmatched_quintuple_after_capped_transport": 8.511039282403567e-05,
+          "symmetric_relative_count_error_to_lose_surplus": 0.008489356097865075
+        },
+        "quintuple": 0.005055326002753823,
+        "regions": [
+          0.0011795892447233447,
+          0.002985457844234636,
+          0.000890278913795842
+        ],
+        "quintuple_raw": 0.005055326002753821,
+        "allocated_loss": 0.0,
+        "hinge_max_absolute_error": 3.3306690738754696e-16,
+        "full_box_subset_error": 4.440892098500626e-16,
+        "full_five_box_signed": -0.004815736995587649,
+        "full_five_box_positive": 0.00026913380428959815,
+        "full_five_box_negative_magnitude": 0.005084870799877245,
+        "outside_packet_signed": 0.00023958900716617682
+      },
+      {
+        "total_log_over_N": 2.05,
+        "lambda": 0.6761435956679142,
+        "triple": 0.004994579411939246,
+        "ratio": 0.9933896863327656,
+        "phase_diagnostic": {
+          "signed_density_triple_minus_quintuple": 3.3015736548829694e-05,
+          "common_phase_real": {
+            "-1": -3.3015736548829694e-05,
+            "-0.5": -1.6507868274414847e-05,
+            "0": 0.0,
+            "0.5": 1.6507868274414847e-05,
+            "1": 3.3015736548829694e-05
+          },
+          "unmatched_quintuple_after_capped_transport": 0.0,
+          "symmetric_relative_count_error_to_lose_surplus": -0.0033161171207800356
+        },
+        "quintuple": 0.004961563675390416,
+        "regions": [
+          0.0011755165913487707,
+          0.002895287953821609,
+          0.0008907591302200366
+        ],
+        "quintuple_raw": 0.004961563675390416,
+        "allocated_loss": 0.0,
+        "hinge_max_absolute_error": 3.608224830031759e-16,
+        "full_box_subset_error": 4.440892098500626e-16,
+        "full_five_box_signed": -0.004636561926187109,
+        "full_five_box_positive": 0.0003554634854449492,
+        "full_five_box_negative_magnitude": 0.004992025411632056,
+        "outside_packet_signed": 0.00032500174920330676
+      }
+    ],
+    "finite_order": [
+      {
+        "N": 256,
+        "total_log": 511.94880511948804,
+        "lambda": 0.6714382442137002,
+        "length_error_bound": 9.108180058800678e-75,
+        "triple": 0.0009230433775412547,
+        "triple_raw": 0.00502958077163492,
+        "ratio": 1.848805728347439,
+        "quintuple": 0.0017065278839114395,
+        "regions": [
+          0.0005151707369464617,
+          0.0008182415152160527,
+          0.0003731156317489252
+        ],
+        "quintuple_raw": 0.0048289318196019,
+        "allocated_loss": 0.00033216997816589913,
+        "hinge_max_absolute_error": 3.608224830031759e-16,
+        "full_box_subset_error": 4.440892098500626e-16,
+        "full_five_box_signed": -0.0015178536994190771,
+        "full_five_box_positive": 0.00020823896962506445,
+        "full_five_box_negative_magnitude": 0.0017260926690441413,
+        "outside_packet_signed": 0.00018867418449236212
+      },
+      {
+        "N": 640,
+        "total_log": 1279.87201279872,
+        "lambda": 0.6830169969033768,
+        "length_error_bound": 5.991206008005575e-190,
+        "triple": 0.0032711715665562266,
+        "triple_raw": 0.004944317488068711,
+        "ratio": 1.5449923666784775,
+        "quintuple": 0.0050539351004250475,
+        "regions": [
+          0.001160544830581666,
+          0.003019161954675669,
+          0.0008742283151677129
+        ],
+        "quintuple_raw": 0.005156953648009265,
+        "allocated_loss": 7.559698419739613e-05,
+        "hinge_max_absolute_error": 4.440892098500626e-16,
+        "full_box_subset_error": 4.440892098500626e-16,
+        "full_five_box_signed": -0.00489643076778632,
+        "full_five_box_positive": 0.00018518344162604745,
+        "full_five_box_negative_magnitude": 0.005081614209412365,
+        "outside_packet_signed": 0.00015750433263872965
+      },
+      {
+        "N": 1536,
+        "total_log": 3071.6928307169283,
+        "lambda": 0.6883389372167663,
+        "length_error_bound": 0.0,
+        "triple": 0.0039175065752056195,
+        "triple_raw": 0.0049060901539179705,
+        "ratio": 1.3536309098499788,
+        "quintuple": 0.005302857989738857,
+        "regions": [
+          0.00118767563927537,
+          0.0032251383652053827,
+          0.0008900439852581044
+        ],
+        "quintuple_raw": 0.005308990500637283,
+        "allocated_loss": 6.132510898428516e-06,
+        "hinge_max_absolute_error": 4.440892098500626e-16,
+        "full_box_subset_error": 4.440892098500626e-16,
+        "full_five_box_signed": -0.0052268412724076965,
+        "full_five_box_positive": 0.00010511708391714,
+        "full_five_box_negative_magnitude": 0.005331958356324841,
+        "outside_packet_signed": 7.601671733115666e-05
+      },
+      {
+        "N": 4096,
+        "total_log": 8191.180881911809,
+        "lambda": 0.6910855229738284,
+        "length_error_bound": 0.0,
+        "triple": 0.004358712340878011,
+        "triple_raw": 0.004886591847425266,
+        "ratio": 1.235543072088114,
+        "quintuple": 0.005385376835996793,
+        "regions": [
+          0.0011904210816990122,
+          0.003304446163334089,
+          0.0008905095909636921
+        ],
+        "quintuple_raw": 0.005385399714104618,
+        "allocated_loss": 2.2878107825083004e-08,
+        "hinge_max_absolute_error": 4.440892098500626e-16,
+        "full_box_subset_error": 4.440892098500626e-16,
+        "full_five_box_signed": -0.005344670922464084,
+        "full_five_box_positive": 7.335530844679105e-05,
+        "full_five_box_negative_magnitude": 0.005418026230910872,
+        "outside_packet_signed": 4.0705913532710555e-05
+      }
+    ]
+  },
+  "cascade": {
+    "status": "continuous prime-density model; not certified or actual prime counts",
+    "radius": 0.50005,
+    "lambda": 0.6931164902781679,
+    "sample_power": 20,
+    "odd_only": false,
+    "triple_quadrature_crosscheck": 0.00487227317457449,
+    "classes": [
+      {
+        "prime_count": 3,
+        "signed_mean": 0.004872273174427749,
+        "seed_spread": 8.673617379884035e-19,
+        "trials": [
+          {
+            "prime_count": 3,
+            "signed": 0.004872273174427748,
+            "positive": 0.004872273174427748,
+            "negative_magnitude": 0.0
+          },
+          {
+            "prime_count": 3,
+            "signed": 0.004872273174427748,
+            "positive": 0.004872273174427748,
+            "negative_magnitude": 0.0
+          },
+          {
+            "prime_count": 3,
+            "signed": 0.004872273174427749,
+            "positive": 0.004872273174427749,
+            "negative_magnitude": 0.0
+          }
+        ]
+      },
+      {
+        "prime_count": 4,
+        "signed_mean": 0.003753271835688571,
+        "seed_spread": 1.1255025641511429e-08,
+        "trials": [
+          {
+            "prime_count": 4,
+            "signed": 0.0037532700999717383,
+            "positive": 0.0037532700999717396,
+            "negative_magnitude": 1.6456194963955977e-18
+          },
+          {
+            "prime_count": 4,
+            "signed": 0.0037532670760341666,
+            "positive": 0.003753267076034167,
+            "negative_magnitude": 1.6472610031377527e-18
+          },
+          {
+            "prime_count": 4,
+            "signed": 0.003753278331059808,
+            "positive": 0.0037532783310598086,
+            "negative_magnitude": 1.6486270159073023e-18
+          }
+        ]
+      },
+      {
+        "prime_count": 5,
+        "signed_mean": -0.005422624337271206,
+        "seed_spread": 4.4007065213170354e-07,
+        "trials": [
+          {
+            "prime_count": 5,
+            "signed": -0.005422902814339669,
+            "positive": 5.4318745112520814e-05,
+            "negative_magnitude": 0.005477221559452189
+          },
+          {
+            "prime_count": 5,
+            "signed": -0.00542250745378641,
+            "positive": 5.431063266841022e-05,
+            "negative_magnitude": 0.005476818086454821
+          },
+          {
+            "prime_count": 5,
+            "signed": -0.005422462743687537,
+            "positive": 5.431688041423421e-05,
+            "negative_magnitude": 0.005476779624101769
+          }
+        ]
+      },
+      {
+        "prime_count": 6,
+        "signed_mean": -0.00481708972979775,
+        "seed_spread": 1.4170524686970068e-06,
+        "trials": [
+          {
+            "prime_count": 6,
+            "signed": -0.004817418779909633,
+            "positive": 0.0017148964652398038,
+            "negative_magnitude": 0.006532315245149437
+          },
+          {
+            "prime_count": 6,
+            "signed": -0.00481621667850746,
+            "positive": 0.0017141231727430583,
+            "negative_magnitude": 0.0065303398512505184
+          },
+          {
+            "prime_count": 6,
+            "signed": -0.004817633730976157,
+            "positive": 0.0017150891518774448,
+            "negative_magnitude": 0.006532722882853601
+          }
+        ]
+      },
+      {
+        "prime_count": 7,
+        "signed_mean": 0.00036845557866089915,
+        "seed_spread": 2.6749407522301126e-06,
+        "trials": [
+          {
+            "prime_count": 7,
+            "signed": 0.0003699313748806735,
+            "positive": 0.002923582709812575,
+            "negative_magnitude": 0.002553651334931902
+          },
+          {
+            "prime_count": 7,
+            "signed": 0.00036817892697358067,
+            "positive": 0.002924062987441912,
+            "negative_magnitude": 0.002555884060468331
+          },
+          {
+            "prime_count": 7,
+            "signed": 0.00036725643412844337,
+            "positive": 0.0029197837517788467,
+            "negative_magnitude": 0.002552527317650403
+          }
+        ]
+      },
+      {
+        "prime_count": 8,
+        "signed_mean": 0.001129541666749891,
+        "seed_spread": 7.414271905213914e-06,
+        "trials": [
+          {
+            "prime_count": 8,
+            "signed": 0.0011262283549372627,
+            "positive": 0.002124851132572161,
+            "negative_magnitude": 0.0009986227776348988
+          },
+          {
+            "prime_count": 8,
+            "signed": 0.0011287540184699335,
+            "positive": 0.002127144611983227,
+            "negative_magnitude": 0.0009983905935132926
+          },
+          {
+            "prime_count": 8,
+            "signed": 0.0011336426268424766,
+            "positive": 0.0021283730635856092,
+            "negative_magnitude": 0.0009947304367431318
+          }
+        ]
+      },
+      {
+        "prime_count": 9,
+        "signed_mean": 0.0002127212774464918,
+        "seed_spread": 2.2814688749713474e-06,
+        "trials": [
+          {
+            "prime_count": 9,
+            "signed": 0.00021160218789034794,
+            "positive": 0.0007868873794063439,
+            "negative_magnitude": 0.0005752851915159965
+          },
+          {
+            "prime_count": 9,
+            "signed": 0.00021267798768380815,
+            "positive": 0.0007903445887142111,
+            "negative_magnitude": 0.0005776666010304031
+          },
+          {
+            "prime_count": 9,
+            "signed": 0.0002138836567653193,
+            "positive": 0.0007893701471870469,
+            "negative_magnitude": 0.0005754864904217275
+          }
+        ]
+      }
+    ],
+    "partial_signed_sum": 9.65494659046453e-05,
+    "warning": "No bound for omitted prime counts, other log-share boxes, or actual arithmetic error."
+  }
+}

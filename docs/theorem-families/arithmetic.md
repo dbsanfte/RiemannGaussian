@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**413 modules.** Source links open the definitions, hypotheses and proofs.
+**419 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -261,6 +261,11 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszPairMidpoint](../../RiemannGaussian/ZetaRieszPairMidpoint.lean)
 - [ZetaRieszPairOrders](../../RiemannGaussian/ZetaRieszPairOrders.lean)
 - [ZetaRieszPairedCorrection](../../RiemannGaussian/ZetaRieszPairedCorrection.lean)
+- [ZetaRieszParityAllocation](../../RiemannGaussian/ZetaRieszParityAllocation.lean)
+- [ZetaRieszParityCells](../../RiemannGaussian/ZetaRieszParityCells.lean)
+- [ZetaRieszParityCountAudit](../../RiemannGaussian/ZetaRieszParityCountAudit.lean)
+- [ZetaRieszParityPacket](../../RiemannGaussian/ZetaRieszParityPacket.lean)
+- [ZetaRieszParityWindow](../../RiemannGaussian/ZetaRieszParityWindow.lean)
 - [ZetaRieszPhaseBracket](../../RiemannGaussian/ZetaRieszPhaseBracket.lean)
 - [ZetaRieszPhysicalAnnulus](../../RiemannGaussian/ZetaRieszPhysicalAnnulus.lean)
 - [ZetaRieszPhysicalPrefixDeletion](../../RiemannGaussian/ZetaRieszPhysicalPrefixDeletion.lean)
@@ -285,6 +290,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszPrimePairConvolution](../../RiemannGaussian/ZetaRieszPrimePairConvolution.lean)
 - [ZetaRieszPrimeReplacement](../../RiemannGaussian/ZetaRieszPrimeReplacement.lean)
 - [ZetaRieszProductCeiling](../../RiemannGaussian/ZetaRieszProductCeiling.lean)
+- [ZetaRieszQuintupleHinge](../../RiemannGaussian/ZetaRieszQuintupleHinge.lean)
 - [ZetaRieszRectangle](../../RiemannGaussian/ZetaRieszRectangle.lean)
 - [ZetaRieszRectangleAllocation](../../RiemannGaussian/ZetaRieszRectangleAllocation.lean)
 - [ZetaRieszRectangleCorrection](../../RiemannGaussian/ZetaRieszRectangleCorrection.lean)

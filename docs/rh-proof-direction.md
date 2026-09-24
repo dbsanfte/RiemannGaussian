@@ -18,6 +18,16 @@ owned copy remains negative; the remaining correction and other prime
 counts still need a joint bound. This does not close the whole-carrier
 floor. See the [exact reserve and ledger](zeta-riesz-rectangle-reserve.md).
 
+The new **Direct parity packet · paid errors, open floor** endpoint tests the
+surviving triple against literal five-prime terms in H. All three hinge
+signs are proved, and the full carrier tail above 2.03N, the five-prime
+old allocation, and exponentially thin phase-cell errors all decay
+independently at source scale. The existing Rosser endpoint bounds cannot
+resolve those cells by subtraction. The signed weighted cell comparison,
+including the common cosine and unmatched excess, remains open. This is
+an arithmetic error saving and counting audit, not a signed floor; see the
+[parity-cell audit](zeta-riesz-parity-cell-audit.md).
+
 The optional **Rosser prime error · final large range proved** endpoint
 tracks a separate supporting step in the literature-reproduction campaign:
 the actual smoothed prime formula and complete high-zero tail now give

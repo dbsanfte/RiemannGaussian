@@ -12,21 +12,21 @@
   "campaign": {
     "direction": {
       "branch": "riesz-harmonic-cost",
-      "statement": "The harmonic-cost route retains an evaluated source and an open independent -3/40 floor. The allocation-safe rectangle now supplies a literal 1/160 correction reserve for simple exposed zeros with 1/2<u<=0.50005. All its mask errors are paid, but its negative owned copy survives. The remaining correction and other prime counts still need a joint signed bound.",
-      "changeReason": "The user returned to the Riesz route with a concrete allocation-safe rectangle. Its signed reserve is proved; the exact ownership ledger prevents counting it twice. The whole-carrier contradiction remains open."
+      "statement": "The harmonic-cost route retains an evaluated source and an open independent -3/40 floor. The direct arithmetic test pairs a surviving triple rectangle with five-prime hinge terms, keeping all masks and phases. Window, old-allocation and phase-transport errors now decay independently for u<=0.50005; the signed cell main term and the rest of the carrier remain open.",
+      "changeReason": "The literal rectangle reserve has a matching negative owned copy and cannot be counted twice. The user directed a phase-preserving triple/five-prime test inside the direct carrier, supported by numerical probing."
     },
     "latestUpdate": {
-      "sequence": 69,
-      "id": "literal-rectangle-reserve-and-owned-overlap",
+      "sequence": 70,
+      "id": "literal-parity-window-allocation-savings",
       "kind": "theorem",
-      "title": "Literal rectangle reserve reaches 1/160; whole-carrier floor remains open.",
-      "body": "Lean proves the requested rectangle has eventual source-normalized reserve at least 1/160 for simple exposed zeros with 1/2<u<=0.50005. The old allocated part and every literal mask error decay independently. Exact correction and ownership ledgers retain the matching negative owned copy and the unestimated remainder.",
-      "next": "A joint signed bound for the remaining correction and other prime-count classes is still needed. The reserve alone does not prove the -3/40 floor or a restricted zero exclusion.",
+      "title": "Direct parity packet: window and allocation errors now decay.",
+      "body": "Lean independently pays the full carrier tail above log(n)=2.03N, the five-prime old allocation, and exponentially thin phase-cell errors for u<=0.50005. Exact opposite coefficient signs and the complete direct-carrier ledger are retained. Numerical density probes motivate the cuts but do not certify the arithmetic main term.",
+      "next": "Control the signed weighted cell imbalance and unmatched excess. The existing endpoint prime counts do not resolve these cells, and a density surplus alone is not a signed floor.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszRectangleReserveTheorem"
+        "rieszParityAllocationTheorem"
       ],
-      "documentation": "docs/zeta-riesz-rectangle-reserve.md"
+      "documentation": "docs/zeta-riesz-parity-cell-audit.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -3564,6 +3564,45 @@
         "fordUnconditionalLargeMomentScope"
       ],
       "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    {
+      "id": "harmonic-parity-audit",
+      "label": "Direct parity packet · paid errors, open floor",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszParityHingeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszParityLedgerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszParityCellTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszParityPhaseErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszParityWindowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszParityAllocationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszParityCountingAuditTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszParityScope"
+      ],
+      "documentation": "docs/zeta-riesz-parity-cell-audit.md"
     }
   ],
   "scopes": {

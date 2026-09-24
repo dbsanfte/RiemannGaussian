@@ -3459,7 +3459,13 @@
     "ZetaRieszRectanglePhase": "arithmetic",
     "ZetaRieszRectangleError": "arithmetic",
     "ZetaRieszRectangleMaskError": "arithmetic",
-    "ZetaRieszRectangleAllocation": "arithmetic"
+    "ZetaRieszRectangleAllocation": "arithmetic",
+    "ZetaRieszQuintupleHinge": "arithmetic",
+    "ZetaRieszParityPacket": "arithmetic",
+    "ZetaRieszParityCells": "arithmetic",
+    "ZetaRieszParityCountAudit": "arithmetic",
+    "ZetaRieszParityWindow": "arithmetic",
+    "ZetaRieszParityAllocation": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

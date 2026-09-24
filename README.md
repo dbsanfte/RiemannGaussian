@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-The harmonic-cost route retains an evaluated source and an open independent -3/40 floor. The allocation-safe rectangle now supplies a literal 1/160 correction reserve for simple exposed zeros with 1/2<u<=0.50005. All its mask errors are paid, but its negative owned copy survives. The remaining correction and other prime counts still need a joint signed bound.
+The harmonic-cost route retains an evaluated source and an open independent -3/40 floor. The direct arithmetic test pairs a surviving triple rectangle with five-prime hinge terms, keeping all masks and phases. Window, old-allocation and phase-transport errors now decay independently for u<=0.50005; the signed cell main term and the rest of the carrier remain open.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ The harmonic-cost route retains an evaluated source and an open independent -3/4
 
 ### Latest Update
 
-**Literal rectangle reserve reaches 1/160; whole-carrier floor remains open.** Lean proves the requested rectangle has eventual source-normalized reserve at least 1/160 for simple exposed zeros with 1/2<u<=0.50005. The old allocated part and every literal mask error decay independently. Exact correction and ownership ledgers retain the matching negative owned copy and the unestimated remainder.
-A joint signed bound for the remaining correction and other prime-count classes is still needed. The reserve alone does not prove the -3/40 floor or a restricted zero exclusion.
-[Current checked endpoint](RiemannGaussian/ZetaRieszRectangleReserve.lean#L126)
-· [Proof details](docs/zeta-riesz-rectangle-reserve.md).
+**Direct parity packet: window and allocation errors now decay.** Lean independently pays the full carrier tail above log(n)=2.03N, the five-prime old allocation, and exponentially thin phase-cell errors for u<=0.50005. Exact opposite coefficient signs and the complete direct-carrier ledger are retained. Numerical density probes motivate the cuts but do not certify the arithmetic main term.
+Control the signed weighted cell imbalance and unmatched excess. The existing endpoint prime counts do not resolve these cells, and a density surplus alone is not a signed floor.
+[Current checked endpoint](RiemannGaussian/ZetaRieszParityAllocation.lean#L220)
+· [Proof details](docs/zeta-riesz-parity-cell-audit.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

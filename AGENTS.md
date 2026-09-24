@@ -1602,6 +1602,55 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+### Direct triple/quintuple cell audit (2026-09-24)
+
+`docs/zeta-riesz-parity-cell-audit.md` records the continuation from
+`3f19e314`. Preserve the literal rectangle reserve and its matching owned
+copy. `ZetaRieszQuintupleHinge` evaluates the proposed five-prime hinges
+on the actual moving cutoff; the third region has zero response at its
+closed upper boundary. `ZetaRieszParityPacket` selects a genuine
+suballocation of the direct finite carrier with all original masks,
+factorial rectangle, allocation weights and full phase. Its quintuple
+packet belongs to H. No cofactor is completed and no hypothetical-zero
+phase is used for the cancellation test.
+
+`ZetaRieszParityCells.tendsto_packet_sub_frozen` independently pays the
+source-scale phase error for deterministic half-width exp(-N/4000), on
+0<=u<=10001/20000. The signed cell main term remains the difference of
+literal triple/quintuple densities times the common cosine. The current
+Rosser endpoint count bounds overlap strictly on those thin cells;
+`actual_prime_count_thin_cell` and
+`eventually_packet_cells_below_count_resolution` prove the limitation of
+endpoint subtraction. Polynomial-width failure is an audit of the
+available error envelope, not a lower bound for the actual error.
+
+The strict arithmetic test has NOT passed: no -1/1000 or -1/500 floor for
+the paired packet is proved. Do not claim that a quintuple density
+surplus is automatically favorable at every phase, discard unmatched
+mass after capped transport, or call this a general parity impossibility
+theorem. Literature short-interval counts can reach this raw resolution
+but are not formalized here; the masked weighted signed comparison is
+also open. The user subsequently instructed continued work toward the
+floor and requested numerical probing; pursue concrete counting, mask
+savings or signed estimates and record exploratory models separately
+from actual prime counts and Lean proofs. Keep the main RH endpoint, LocalizedTypeIIBound, public
+zero-free/certificate frontiers and top-ten lists unchanged. Expose this
+only as a supporting arithmetic audit. Work without subagents.
+
+The numerical probe now has two concrete consequences. `ZetaRieszParityWindow`
+pays the full original narrow-carrier tail above 2.03N by a geometric
+source-scale bound. `ZetaRieszParityAllocation` proves
+`boundedShare<=5*exp(-N/2200)` on the literal five-prime packet and proves
+its summed allocation error tends to zero. Both estimates are independent
+of zeros and uniform in arbitrary heights. The actual packet main term
+is still open; never report those error estimates as its floor.
+Optional scripts `probe_riesz_parity_packet.py` and
+`probe_riesz_parity_cascade.py` use continuous prime density, not actual
+prime enumeration. Their recorded results distinguish selected packets,
+full log-share boxes and finite-order masks. Seed spread is not certified
+error, and an odd-class subtotal must not silently discard even classes.
+Keep these probes out of ordinary builds and CI.
+
 On 2026-09-05 the user explicitly changed the objective to an overnight Lean
 theorem push using phase colour, Gaussian heat, the literal eta support, and
 finite/continuous representations. This supersedes the former requirement
