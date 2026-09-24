@@ -88,6 +88,13 @@ does not enlarge the default zero-free region or prove ShortPrimeSupply.
 The [reproduction ledger](rosser-schoenfeld-reproduction.md) records the
 exact identities, constants and remaining dependencies.
 
+The **Rosser prime counts · complete through 16000** endpoint proves both
+original strict counting inequalities on the full real interval [67,16000].
+It also exposes the complete prime catalog, exact smaller lookups and the
+original prime-supply conclusion conditional on the still-open estimates
+above 16000. The finite theta obligations remain separate; this endpoint
+does not enlarge the default zero-free region.
+
 The **Separation** endpoint keeps finite Gaussian zero groups and displays
 the right and left rectangle counts and the reciprocal-distance bound.
 Its scope distinguishes the rectangle depth `2*d(t)`, isolation depth

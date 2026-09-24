@@ -2621,6 +2621,37 @@
         "rosserPrimeErrorScope"
       ],
       "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    {
+      "id": "rosser-finite-prime-counts",
+      "label": "Rosser prime counts · complete through 16000",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserFinitePrimeCountBoundsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserFinitePrimeCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserCompletePrimeCatalogTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserPrimeCatalogLookupTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserRemainingPrimeSupplyTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rosserFinitePrimeCountScope"
+      ],
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
     }
   ],
   "families": [
@@ -6588,6 +6619,36 @@
       "summary": "For every real x>=exp(5000), the actual theta error is strictly below 0.47*x/log x. The stronger 0.41 constant is proved. Smaller source ranges and full prime-count estimates remain open.",
       "overview": true,
       "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldFiniteBounds.bounds_through_sixteen_thousand": {
+      "label": "Actual prime-count bounds on the full finite interval",
+      "summary": "Every real endpoint from 67 through 16000 satisfies both original strict inequalities. Complete prime checks and closed logarithmic cells discharge the entire finite statement.",
+      "documentation": "docs/rosser-schoenfeld-reproduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.RosserSchoenfeldFiniteBounds.primeCounting_sixteen_thousand": {
+      "label": "Exactly 1862 primes through 16000",
+      "summary": "The literal counting function is evaluated by complete consecutive prime blocks, including every composite check.",
+      "documentation": "docs/rosser-schoenfeld-reproduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.RosserSchoenfeldFiniteBounds.catalog_mem_iff": {
+      "label": "A proved complete prime catalog",
+      "summary": "Membership is equivalent to primality and the upper cutoff. This is a completeness theorem, not merely a list of certified prime examples.",
+      "documentation": "docs/rosser-schoenfeld-reproduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.RosserSchoenfeldFiniteBounds.smallPrimeCount_eq": {
+      "label": "Exact counts from the retained catalog",
+      "summary": "Filtering the complete catalog gives the actual count at every natural endpoint through 16000.",
+      "documentation": "docs/rosser-schoenfeld-reproduction.md",
+      "overview": true
+    },
+    "RiemannGaussian.VinogradovRosserPrimeSupply.shortPrimeSupply_of_primeCounting_above_sixteen_thousand": {
+      "label": "The unchanged prime supply with the finite prefix paid",
+      "summary": "The finite inequalities are inserted into the original full-width packet theorem. Bounds above 16000 remain explicit unproved hypotheses; no prime-supply conclusion is unconditional.",
+      "documentation": "docs/rosser-schoenfeld-reproduction.md",
+      "overview": true
     }
   }
 }

@@ -18,6 +18,12 @@ It does not prove the smaller ranges, full prime-count estimates,
 ShortPrimeSupply, a published VK benchmark or the RH signed floor.
 See the [exact proof and remaining ranges](rosser-schoenfeld-reproduction.md).
 
+The separate **Rosser prime counts · complete through 16000** endpoint
+now discharges both original count inequalities at every real point of
+[67,16000], with a complete reusable prime catalog. Its prime-supply
+corollary still assumes the count bounds above 16000. This literature
+dependency does not prove the independent RH signed floor.
+
 ## Direction and obstruction
 
 Prove a first restricted contradiction by completing the evaluated

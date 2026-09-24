@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**379 modules.** Source links open the definitions, hypotheses and proofs.
+**390 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -59,6 +59,17 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [RosserSchoenfeldError](../../RiemannGaussian/RosserSchoenfeldError.lean)
 - [RosserSchoenfeldEulerConstant](../../RiemannGaussian/RosserSchoenfeldEulerConstant.lean)
 - [RosserSchoenfeldExplicitFormula](../../RiemannGaussian/RosserSchoenfeldExplicitFormula.lean)
+- [RosserSchoenfeldFiniteBounds](../../RiemannGaussian/RosserSchoenfeldFiniteBounds.lean)
+- [RosserSchoenfeldFiniteCatalog](../../RiemannGaussian/RosserSchoenfeldFiniteCatalog.lean)
+- [RosserSchoenfeldFiniteCheck](../../RiemannGaussian/RosserSchoenfeldFiniteCheck.lean)
+- [RosserSchoenfeldFiniteData00](../../RiemannGaussian/RosserSchoenfeldFiniteData00.lean)
+- [RosserSchoenfeldFiniteData01](../../RiemannGaussian/RosserSchoenfeldFiniteData01.lean)
+- [RosserSchoenfeldFiniteData02](../../RiemannGaussian/RosserSchoenfeldFiniteData02.lean)
+- [RosserSchoenfeldFiniteData03](../../RiemannGaussian/RosserSchoenfeldFiniteData03.lean)
+- [RosserSchoenfeldFiniteData04](../../RiemannGaussian/RosserSchoenfeldFiniteData04.lean)
+- [RosserSchoenfeldFiniteData05](../../RiemannGaussian/RosserSchoenfeldFiniteData05.lean)
+- [RosserSchoenfeldFiniteData06](../../RiemannGaussian/RosserSchoenfeldFiniteData06.lean)
+- [RosserSchoenfeldFiniteData07](../../RiemannGaussian/RosserSchoenfeldFiniteData07.lean)
 - [RosserSchoenfeldFourthMass](../../RiemannGaussian/RosserSchoenfeldFourthMass.lean)
 - [RosserSchoenfeldLaplace](../../RiemannGaussian/RosserSchoenfeldLaplace.lean)
 - [RosserSchoenfeldLargeChebyshev](../../RiemannGaussian/RosserSchoenfeldLargeChebyshev.lean)

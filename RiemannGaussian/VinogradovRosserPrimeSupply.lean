@@ -5,6 +5,7 @@ Authors: David Sanftenberg
 -/
 import RiemannGaussian.VinogradovFordGlobalStep
 import RiemannGaussian.RosserSchoenfeldBounds
+import RiemannGaussian.RosserSchoenfeldFiniteBounds
 
 /-!
 # Ford's exact short-prime packet from the published prime-count bounds
@@ -205,6 +206,25 @@ theorem shortPrimeSupply_of_primeCounting (k : ℕ) {w : ℝ} (hk : 26 ≤ k)
   norm_num only [Nat.cast_ofNat]
   convert! hh using 1
   ring
+
+/- The finite interval is now discharged by actual kernel-checked prime counts.
+The larger range remains an explicit premise; the packet target is unchanged. -/
+/-- The original full-width prime supply follows once the remaining count
+inequalities above 16000 are proved. The finite prefix is checked here. -/
+theorem shortPrimeSupply_of_primeCounting_above_sixteen_thousand (k : ℕ) {w : ℝ}
+    (hk : 26 ≤ k) (hw : 0 < w) (hw' : w ≤ 1 / 2) (hwLower : 1 / (3 * log k) ≤ w)
+    (hupper : ∀ x : ℝ, 16000 < x → (Nat.primeCounting ⌊x⌋₊ : ℝ) < upper x)
+    (hlower : ∀ x : ℝ, 16000 < x → lower x < (Nat.primeCounting ⌊x⌋₊ : ℝ)) :
+    ShortPrimeSupply k w := by
+  apply shortPrimeSupply_of_primeCounting k hk hw hw' hwLower
+  · intro x hx
+    by_cases h : x ≤ 16000
+    · exact (RosserSchoenfeldFiniteBounds.bounds_through_sixteen_thousand ⟨hx.le, h⟩).2
+    · exact hupper x (lt_of_not_ge h)
+  · intro x hx
+    by_cases h : x ≤ 16000
+    · exact (RosserSchoenfeldFiniteBounds.bounds_through_sixteen_thousand ⟨hx.le, h⟩).1
+    · exact hlower x (lt_of_not_ge h)
 
 end
 end RiemannGaussian.VinogradovRosserPrimeSupply

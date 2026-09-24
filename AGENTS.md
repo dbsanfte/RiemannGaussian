@@ -3001,6 +3001,26 @@ lists, RH signed-floor status and 67.31% certificate are unchanged.
 Expose this as the separate `rosser-prime-error` endpoint in both explorers;
 do not draw a proved edge to prime supply or a published VK benchmark.
 
+`RosserSchoenfeldFiniteBounds.bounds_through_sixteen_thousand` now proves
+both original strict prime-count inequalities at every real x in [67,16000].
+The 136 closed cells and exact count 1862 at 16000 are kernel checked.
+`RosserSchoenfeldFiniteBounds.catalog_mem_iff`, in the finite catalog module,
+proves the retained prime catalog complete. `catalog_nodup`, `catalog_sorted`
+and `smallPrimeCount_eq` provide sorted, exact smaller lookups. Preserve those
+lists for larger finite certificates. Every integer
+is checked in the eight data modules, not merely the proposed primes.
+Use `primeCounting_step_of_block` and `primeBlock_append_of_eq` to assemble
+checked data: direct concrete rewriting of the counting definition caused
+expensive repeated kernel enumeration. Keep `Elab.async false` confined to
+these new data files; do not change global elaboration settings.
+The new prime-supply corollary pays the finite count premise and retains
+explicit hypotheses above 16000, with the original packet target unchanged.
+This does NOT pay the small theta range in the anchored J comparison,
+the remaining prime estimates, ShortPrimeSupply or a published VK benchmark.
+Expose `rosser-finite-prime-counts` as an optional supporting endpoint in
+both explorers. Keep all public zero-free/RH frontiers, the top-ten lists
+and the 67.31% certificate unchanged.
+
 `ZetaEulerMaclaurin.zeta_eq` now gives the arbitrary-order actual zeta
 expansion with the literal signed Bernoulli tail. `norm_error_le` pays
 that full tail by an explicit finite coefficient allowance.

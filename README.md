@@ -149,9 +149,9 @@ The harmonic-cost route has an evaluated source and paid wing, reserve and domin
 
 ### Latest Update
 
-**The actual large-range prime error is proved.** Lean now proves the exact smoothed prime formula and pays the complete high-zero tail. For every x>=exp(5000), the actual psi error is at most 0.40*x/log x and the actual theta error at most 0.41*x/log x, strictly below the required 0.47 allowance. The proof retains the complete signed zero expansion, uses the existing proved zero-free edge and discharges every smoothing, boundary and proper-prime-power cost.
-Complete the smaller source ranges and finite verification needed for the full prime-count estimates and unchanged short-prime supply. The published VK benchmarks and an enlarged zero-free region remain open.
-[Current checked endpoint](RiemannGaussian/RosserSchoenfeldLargeChebyshev.lean#L128)
+**The small-range prime-count bounds are proved.** Lean now proves both original strict prime-count inequalities for every real x from 67 through 16000. Complete prime checks and 136 closed logarithmic cells pay the finite range, and the endpoint count is exactly 1862. The same checked blocks provide a complete reusable prime catalog and exact lookups below the cutoff. The original prime-supply theorem retains its full width range and constants; count bounds above 16000 remain explicit hypotheses.
+Pay the remaining finite and intermediate prime estimates. The small theta bounds for the anchored comparison, full prime supply, published VK benchmarks and an enlarged zero-free region remain open.
+[Current checked endpoint](RiemannGaussian/RosserSchoenfeldFiniteBounds.lean#L19)
 · [Proof details](docs/rosser-schoenfeld-reproduction.md).
 <!-- RH_DIRECTION:END -->
 

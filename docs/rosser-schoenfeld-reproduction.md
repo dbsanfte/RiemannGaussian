@@ -35,6 +35,8 @@ Here every Lean occurrence of π is `Nat.primeCounting ⌊x⌋₊`.
 | Actual smoothed prime formula | The literal finite von-Mangoldt sum equals its elementary term minus the complete nontrivial-zero primitive plus the complete trivial-zero correction | [RosserSchoenfeldExplicitFormula](../RiemannGaussian/RosserSchoenfeldExplicitFormula.lean) |
 | Complete high-zero tail | For every T≥2, the full inverse-square norm mass above T is at most (8+2 log T)/T | [RosserSchoenfeldZeroTail](../RiemannGaussian/RosserSchoenfeldZeroTail.lean) |
 | Actual large-range prime error | For x≥exp(5000), abs(ψ(x)−x)≤0.40x/log(x) and abs(θ(x)−x)≤0.41x/log(x), paying the required strict 0.47 theta allowance | [RosserSchoenfeldLargeChebyshev](../RiemannGaussian/RosserSchoenfeldLargeChebyshev.lean) |
+| Complete finite prime-count bounds | Both original strict inequalities hold at every real x in [67,16000]; π(16000)=1862 | [RosserSchoenfeldFiniteBounds](../RiemannGaussian/RosserSchoenfeldFiniteBounds.lean) |
+| Reusable complete prime catalog | Membership is exactly primality through 16000, and every smaller filtered count equals the actual counting function | [RosserSchoenfeldFiniteCatalog](../RiemannGaussian/RosserSchoenfeldFiniteCatalog.lean) |
 | Ford short packet transport | Exact finite prime packet from the two displayed actual prime-count bounds, with every numerical side condition derived | [VinogradovRosserPrimeSupply](../RiemannGaussian/VinogradovRosserPrimeSupply.lean) |
 
 The anchor uses a complete kernel-checked list of the 230 primes and an
@@ -75,6 +77,41 @@ $M<p\le(1+\omega)M$. This remains **conditional** on the two actual
 prime-count inequalities. The conditional packet theorem is not a proof of
 prime density, of Ford's complete numerical moment theorem, or of a VK
 zero-free benchmark.
+
+## Complete finite prime-count bounds
+
+[bounds_through_sixteen_thousand](../RiemannGaussian/RosserSchoenfeldFiniteBounds.lean)
+now proves both original strict inequalities at every real endpoint:
+
+```math
+\frac{x}{\log x-1/2}\lt\pi(x)\lt
+\frac{x}{\log x}\left(1+\frac{3}{2\log x}\right)
+\qquad(67\le x\le16000).
+```
+
+The 136 closed cells cover the entire interval, including their shared
+endpoints. Each cell has exact counts at both ends and rigorous rational
+logarithm enclosures. The remaining rational inequalities are reduced in
+Lean's kernel. Monotonicity of the actual counting function transfers the
+checks to every real point, rather than only the sampled integers.
+
+The eight `RosserSchoenfeldFiniteData` modules prove complete consecutive
+prime blocks, checking primality or compositeness for every integer in
+their ranges. They give exactly 1862 primes through 16000. Their retained
+catalog is also proved complete, strictly increasing and duplicate-free.
+[smallPrimeCount_eq](../RiemannGaussian/RosserSchoenfeldFiniteCatalog.lean)
+identifies every filtered lookup through 16000 with the actual prime count.
+Candidate data generation supplies no trusted mathematical premise.
+These ordinary modules use small cached proof boundaries; they do not invoke
+the separate exhaustive numerical zero certificate.
+
+`shortPrimeSupply_of_primeCounting_above_sixteen_thousand` inserts this
+checked interval into the original full-width packet theorem. The actual
+count inequalities above 16000 remain explicit, unproved hypotheses.
+The output keeps the original constants, starting points and width range.
+This finite count theorem does not itself pay the finite **theta** bounds
+needed by the existing anchored J comparison. Those bounds and the
+intermediate analytic ranges remain separate obligations below.
 
 ## Complete reciprocal-power zero masses
 
