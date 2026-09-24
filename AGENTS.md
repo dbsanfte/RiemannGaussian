@@ -2872,14 +2872,24 @@ H(d_J)<=H(d_0)-2J/k+67/(50k), with H(d)=d+log(d)+log(2-d), for
 k>=1000 whenever every preceding defect exceeds k. The endpoint condition
 Delta_J>k-1 implies that active-prefix condition. The signed quadratic
 potential gain and full reciprocal-defect sum pay the uniform 1.34/k
-allowance. Short-prime supply remains unproved; these scalar estimates
-do not assume it. Next evaluate the potential endpoints, prove dense
-prime supply and the closed coefficient/defect estimates with Ford's
-published constants and order range. Do not list rank/maximal-depth
-selection, scale/cutoff admissibility,
+allowance. `VinogradovFordClosedDefect.selected_defect_bound` now evaluates
+both endpoints and proves Delta_J <= (3/8)*k^2*exp(1/2-2*(J+1)/k+1.69/k)
+through the full published upper order range. Its actual moment transport
+retains the recursive coefficient and the unproved `ShortPrimeSupply`.
+`VinogradovFordCoefficientScale.published_height_le` proves
+V^(k+1)<=W=k^(4.11*k) at omega=0.06 and k>=1000.
+`VinogradovFordEarlyDefect.early_defect_drop` proves decrease at least
+0.01916*k whenever j+1<=1.97*k; `VinogradovFordCoefficientStep.early_step_le`
+pays the complete early maximum by W^(Delta_j-Delta_(j+1)). The later
+step retains the product of both factors. These scalar bounds do not
+assume prime supply. Next telescope the coefficient costs with the original
+2.055, 5.91 and 9.7278 constants, and prove dense short-prime supply.
+Do not list potential endpoint evaluation, the closed defect bound,
+rank/maximal-depth selection, scale/cutoff admissibility,
 numerical one-step coefficient, recursive quotient sizes or all-endpoint
-moment induction as still open. Do not claim Ford's closed quantitative
-bound or a zeta region from the conditional sequence alone.
+moment induction as still open. The full closed coefficient bound remains
+open; do not claim all of Ford 3.6 or a zeta region from the conditional
+moment sequence alone.
 The sharper Bellotti 2.3 recurrence remains under audit. Then finish the
 numerical complete/incomplete moments and block bound.
 Do not replace these by the diagonal iteration or silently use (M,8M]

@@ -149,9 +149,9 @@ The harmonic-cost route has an evaluated source and paid wing, reserve and domin
 
 ### Latest Update
 
-**Ford's selected iteration has a cumulative potential bound.** The rounded rank and maximal depth now feed the actual moment iteration, including its final boundary step. Lean proves strict positivity and, for k>=1000 along an active prefix, cumulative logarithmic-potential decrease with the full 1.34/k error allowance. These scalar estimates need no prime-supply premise; the moment bound still requires dense short-prime supply.
-Potential endpoint evaluation, the closed coefficient bound and short-prime supply remain open. This slice proves no larger zero-free region or independent RH arithmetic floor.
-[Current checked endpoint](RiemannGaussian/VinogradovFordPotentialIteration.lean#L263)
+**Ford's closed defect and early coefficient costs are proved.** Lean proves the original 1.69/k defect bound for k>=1000 through the full published upper order range. At omega=0.06, the starting height fits W=k^(4.11*k), and the 0.01916*k early defect decrease pays the original step coefficient through j+1<=1.97*k. These scalar estimates need no prime-supply hypothesis; the actual moment transport retains it.
+The full coefficient product and dense short-prime supply remain open. This slice proves no larger zero-free region or independent RH arithmetic floor.
+[Current checked endpoint](RiemannGaussian/VinogradovFordClosedDefect.lean#L185)
 · [Proof details](docs/vinogradov-literature-reproduction.md).
 <!-- RH_DIRECTION:END -->
 

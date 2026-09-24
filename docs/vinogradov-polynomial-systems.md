@@ -462,8 +462,14 @@ budget and normalized defect recurrence (3.14), with constants unchanged.
 The selected sequence includes the final rank-k step down to Delta<=k-1.
 `VinogradovFordLowerDefect` proves positivity through every step, and
 `VinogradovFordPotentialIteration.potential_cumulative` sums the signed
-potential gain with the exact 1.34/k reciprocal-error allowance. Potential
-endpoint evaluation and the closed coefficient bound still require proof. The sharper
+potential gain with the exact 1.34/k reciprocal-error allowance.
+`VinogradovFordClosedDefect` evaluates both endpoints and proves the closed
+defect bound with the original 1.69/k constant and full upper order range.
+Its actual moment theorem retains the recursive coefficient and short-prime
+supply. `VinogradovFordCoefficientScale`, `VinogradovFordEarlyDefect` and
+`VinogradovFordCoefficientStep` prove the original W=k^(4.11*k) height
+bound and pay the early packet costs from the 0.01916*k defect decrease.
+The closed coefficient product and dense short-prime supply remain open. The sharper
 Bellotti 2.3 scale recurrence remains a distinct audit; see the
 [reproduction ledger](vinogradov-literature-reproduction.md).
 The

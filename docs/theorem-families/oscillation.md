@@ -6,7 +6,7 @@
 
 Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estimates.
 
-**240 modules.** Source links open the definitions, hypotheses and proofs.
+**244 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [AnalyticDerivativeCutoff](../../RiemannGaussian/AnalyticDerivativeCutoff.lean)
 - [CosineHinge](../../RiemannGaussian/CosineHinge.lean)
@@ -109,8 +109,12 @@ Finite differencing, derivative tests, dyadic blocks and uniform Dirichlet estim
 - [VinogradovFibreCorrelation](../../RiemannGaussian/VinogradovFibreCorrelation.lean)
 - [VinogradovFiniteCritical](../../RiemannGaussian/VinogradovFiniteCritical.lean)
 - [VinogradovFirstExponent](../../RiemannGaussian/VinogradovFirstExponent.lean)
+- [VinogradovFordClosedDefect](../../RiemannGaussian/VinogradovFordClosedDefect.lean)
 - [VinogradovFordCoefficient](../../RiemannGaussian/VinogradovFordCoefficient.lean)
+- [VinogradovFordCoefficientScale](../../RiemannGaussian/VinogradovFordCoefficientScale.lean)
+- [VinogradovFordCoefficientStep](../../RiemannGaussian/VinogradovFordCoefficientStep.lean)
 - [VinogradovFordDefectRate](../../RiemannGaussian/VinogradovFordDefectRate.lean)
+- [VinogradovFordEarlyDefect](../../RiemannGaussian/VinogradovFordEarlyDefect.lean)
 - [VinogradovFordGlobalStep](../../RiemannGaussian/VinogradovFordGlobalStep.lean)
 - [VinogradovFordIteration](../../RiemannGaussian/VinogradovFordIteration.lean)
 - [VinogradovFordLowerDefect](../../RiemannGaussian/VinogradovFordLowerDefect.lean)

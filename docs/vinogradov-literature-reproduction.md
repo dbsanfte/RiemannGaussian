@@ -19,7 +19,7 @@ reported constants in the [literature audit](zero-free-literature-frontier.md).
 | Bellotti 2.2 / Ford 3.3' | Differencing into the next literal mixed count | Proved for integer endpoints, including the diagonal case |
 | Bellotti 2.4 / Ford 3.4 | Original mixed iteration with its stated coefficients and thresholds | Original coefficient, defect and starting height proved with constructed scales and integer cutoffs under Ford's stationary-scale criterion; only the dense prime supply remains an arithmetic input at this step |
 | Ford 3.5 | Repeated original iteration from the diagonal moment at every positive endpoint | Proved with the published coefficient recurrence; the concrete rank and maximal depth are now constructed, leaving short-prime supply as the arithmetic premise |
-| Ford 3.6 | Quantitative original iteration for `k>=1000` | Published one-step normalized defect estimate (3.14) and cumulative logarithmic-potential bound proved, including the full `1.34/k` error budget; endpoint evaluation and the closed coefficient bound remain open |
+| Ford 3.6 | Quantitative original iteration for `k>=1000` | Closed defect bound proved with the original `1.69/k` constant and full upper order range; the `W=k^(4.11*k)` height bound and early coefficient-step estimates are proved; the closed coefficient product remains open |
 | Bellotti 2.3 and 2.5 | Sharper scales and repeated moment-order iteration | Sharper scale normalization under audit; full quantitative iteration open |
 | Bellotti 1.4 and 2.8 | Complete and smooth incomplete moment estimates | Published numerical bounds open |
 | Bellotti 1.5 | Block coefficient `8.7979`, exponent denominator `132.94357` | Open |
@@ -375,11 +375,46 @@ This holds for `k>=1000` while every preceding `Delta_i>k`.
 `Delta_J>k-1`. The error allowance is the paper's exact `1.34/k`;
 none of these scalar estimates assumes short-prime supply.
 
-The closed bounds in Lemma 3.6 still require evaluation of the potential
-endpoints and coefficient-product estimates, with the original
-`1.69`, `2.055`, `5.91` and `9.7278` constants and order range intact.
-Those bounds, the short-prime supply and the subsequent zeta/VK transport
-are not claimed by the selected recurrence.
+## Closed defect and early coefficient costs
+
+[`VinogradovFordClosedDefect.selected_defect_bound`](../RiemannGaussian/VinogradovFordClosedDefect.lean)
+now proves the closed defect estimate, writing the paper's index as `n=J+1`:
+
+```math
+\Delta_J\le\frac38 k^2\exp\!\left(\frac12-\frac{2(J+1)}k+\frac{169}{100k}\right),
+\qquad k\ge1000,\quad
+J+1\le\frac{k}{2}\left(\frac12+\log\frac{3k}{8}\right)+1.
+```
+
+The initial potential retains `7/(6k)` of reserve; the terminal potential
+retains `49/(100k)`. The final rank-`k` step pays the stopped case at the
+full upper order ceiling. `paper_order_le` derives the natural iteration
+cap from that ceiling, so no extra cap is assumed.
+`selected_moment_closed_defect` inserts this allowance into the actual
+homogeneous moment at every positive integer endpoint. It still requires
+`ShortPrimeSupply` and retains the recursive coefficient. The scalar defect
+estimate itself has no prime-supply premise.
+
+For the paper's `omega=3/50`,
+[`VinogradovFordCoefficientScale.published_height_le`](../RiemannGaussian/VinogradovFordCoefficientScale.lean)
+proves `V^(k+1)<=W=k^(4.11*k)` for every `k>=1000`, including both branches
+of the original base `V`. Its logarithmic and exponential constants are
+proved from exact rational Taylor estimates. On `j+1<=1.97*k`,
+[`VinogradovFordEarlyDefect.early_defect_drop`](../RiemannGaussian/VinogradovFordEarlyDefect.lean)
+proves `Delta_j-Delta_(j+1)>=0.01916*k`. It retains the defect-dependent
+rate ratio instead of discarding it for a uniform contraction factor.
+
+[`VinogradovFordCoefficientStep.early_packet_lt_scale`](../RiemannGaussian/VinogradovFordCoefficientStep.lean)
+then proves the paper's strict early comparison (3.20): the literal packet
+cost is less than `W^(Delta_j-Delta_(j+1))`. `early_step_le` pays the entire
+original maximum in this range, while `step_le_product` retains both
+factors at all later steps. None of these coefficient estimates assumes
+prime supply or an independent moment bound.
+
+The coefficient product still needs to be telescoped and bounded with
+the original `2.055`, `5.91` and `9.7278` constants. The full coefficient
+bound, short-prime supply and subsequent zeta/VK transport remain open;
+this is not yet all of Lemma 3.6 or a new zero-free region.
 
 The required dense prime-packet estimate must also be proved. The existing
 `(M,8M]` packet cannot silently replace the paper's narrower interval while

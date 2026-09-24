@@ -16,15 +16,15 @@
       "changeReason": "The strict Type-II go/no-go test proves the numerical reduction but identifies an unproved parity-sensitive estimate; current sieve rates and the fixed-height VMVT mismatch do not discharge it. Stop expanding this route until new arithmetic input is found."
     },
     "latestUpdate": {
-      "sequence": 60,
-      "id": "ford-selected-potential-iteration",
+      "sequence": 61,
+      "id": "ford-closed-defect-early-coefficient",
       "kind": "theorem",
-      "title": "Ford's selected iteration has a cumulative potential bound.",
-      "body": "The rounded rank and maximal depth now feed the actual moment iteration, including its final boundary step. Lean proves strict positivity and, for k>=1000 along an active prefix, cumulative logarithmic-potential decrease with the full 1.34/k error allowance. These scalar estimates need no prime-supply premise; the moment bound still requires dense short-prime supply.",
-      "next": "Potential endpoint evaluation, the closed coefficient bound and short-prime supply remain open. This slice proves no larger zero-free region or independent RH arithmetic floor.",
+      "title": "Ford's closed defect and early coefficient costs are proved.",
+      "body": "Lean proves the original 1.69/k defect bound for k>=1000 through the full published upper order range. At omega=0.06, the starting height fits W=k^(4.11*k), and the 0.01916*k early defect decrease pays the original step coefficient through j+1<=1.97*k. These scalar estimates need no prime-supply hypothesis; the actual moment transport retains it.",
+      "next": "The full coefficient product and dense short-prime supply remain open. This slice proves no larger zero-free region or independent RH arithmetic floor.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "fordPotentialIterationTheorem"
+        "fordClosedDefectTheorem"
       ],
       "documentation": "docs/vinogradov-literature-reproduction.md"
     },
@@ -3326,15 +3326,15 @@
     },
     {
       "id": "ford-selected-iteration",
-      "label": "Ford literature iteration · prime supply open",
+      "label": "Ford closed defect · coefficient product and prime supply open",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
-          "fordSelectedMomentTheorem"
+          "fordClosedDefectMomentTheorem"
         ],
         [
           "gaussianPhaseBandToolkit",
-          "fordPotentialIterationTheorem"
+          "fordEarlyCoefficientStepTheorem"
         ]
       ],
       "scopePath": [
@@ -7920,7 +7920,37 @@
     },
     "RiemannGaussian.VinogradovFordPotentialIteration.potential_cumulative": {
       "label": "Cumulative Ford potential bound",
-      "summary": "For k>=1000 and an active prefix of the actual selected sequence, H(d_J)<=H(d_0)-2J/k+67/(50k). The signed quadratic gain and reciprocal-defect budget are proved without a prime-supply premise. Endpoint evaluation and the closed moment coefficient remain open.",
+      "summary": "For k>=1000 and an active prefix of the actual selected sequence, H(d_J)<=H(d_0)-2J/k+67/(50k). The signed quadratic gain and reciprocal-defect budget are proved without a prime-supply premise; the endpoint evaluation now gives the closed defect bound.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.VinogradovFordClosedDefect.selected_defect_bound": {
+      "label": "Closed Ford defect bound",
+      "summary": "For k>=1000, the actual selected defect has the original 1.69/k exponential allowance throughout the full published upper order range. Both potential endpoints and the stopped case are paid without prime supply.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.VinogradovFordClosedDefect.selected_moment_closed_defect": {
+      "label": "Actual moment with the closed defect",
+      "summary": "The literal homogeneous moment inherits the closed defect bound at every positive integer endpoint. The coefficient remains recursive and dense short-prime supply remains an explicit unproved hypothesis.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.VinogradovFordCoefficientScale.published_height_le": {
+      "label": "Original coefficient scale pays the height",
+      "summary": "At omega=0.06 and k>=1000, both branches of the published starting height satisfy V^(k+1)<=W=k^(4.11*k). All numerical anchors are proved from exact estimates.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.VinogradovFordEarlyDefect.early_defect_drop": {
+      "label": "Early defect decrease pays packet costs",
+      "summary": "Whenever j+1<=1.97*k and k>=1000, Delta_j-Delta_(j+1)>=0.01916*k. The proof retains the defect-dependent rate ratio and needs no prime-supply premise.",
+      "overview": true,
+      "documentation": "docs/vinogradov-literature-reproduction.md"
+    },
+    "RiemannGaussian.VinogradovFordCoefficientStep.early_step_le": {
+      "label": "Complete early coefficient step paid",
+      "summary": "For j+1<=1.97*k at k>=1000 and omega=0.06, the original maximum coefficient is at most W^(Delta_j-Delta_(j+1)). The closed product over all steps remains open.",
       "overview": true,
       "documentation": "docs/vinogradov-literature-reproduction.md"
     }
