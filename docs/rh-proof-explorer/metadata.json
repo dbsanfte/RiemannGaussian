@@ -16,15 +16,15 @@
       "changeReason": "The strict Type-II go/no-go test proves the numerical reduction but identifies an unproved parity-sensitive estimate; current sieve rates and the fixed-height VMVT mismatch do not discharge it. Stop expanding this route until new arithmetic input is found."
     },
     "latestUpdate": {
-      "sequence": 63,
-      "id": "rosser-complete-reciprocal-square-mass",
+      "sequence": 64,
+      "id": "rosser-sharp-archimedean-constants",
       "kind": "theorem",
-      "title": "The complete reciprocal-square zero sum is below 0.0463.",
-      "body": "Lean proves the classical Rosser bound over all nontrivial zeros, retaining analytic multiplicities and both ordinate signs. The stronger ordinate-square bound follows from the exact xi Poisson mass, checked Euler/logarithm constants and the complete finite verification through height 54. Summability is proved; no RH, external zero table or prime-count estimate is assumed.",
-      "next": "Prove the remaining explicit zero-sum and prime-error estimates needed for dense short-prime supply. This slice does not enlarge the zero-free region or close the RH arithmetic floor.",
+      "title": "Sharper Euler and logarithm constants are proved.",
+      "body": "Lean proves Euler's constant is below 577215666/10^9 and log(pi) is above 1144729883/10^9. A general cubic logarithm lower bound makes the twice-corrected harmonic sequence decrease to the actual Euler constant; exact arithmetic at order 200 supplies the numerical bound.",
+      "next": "Use these inputs to finish the higher reciprocal-power zero sums. Their 0.00167 and 0.0000744 bounds, the prime-count estimates and a larger zero-free region remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rosserNormSquareMassTheorem"
+        "rosserSharpEulerUpperTheorem"
       ],
       "documentation": "docs/rosser-schoenfeld-reproduction.md"
     },
@@ -3345,7 +3345,7 @@
     },
     {
       "id": "rosser-zero-mass",
-      "label": "Rosser zero mass · unconditional 0.0463 bound",
+      "label": "Rosser zero mass · 0.0463 and sharper constants",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3358,6 +3358,18 @@
         [
           "gaussianPhaseBandToolkit",
           "rosserZeroPoissonMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserCubicLogLowerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserSharpEulerUpperTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserSharpLogPiLowerTheorem"
         ]
       ],
       "scopePath": [

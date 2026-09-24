@@ -1707,6 +1707,7 @@ import RiemannGaussian.RosserSchoenfeldBounds
 import RiemannGaussian.RosserSchoenfeldZeroFree
 import RiemannGaussian.RosserSchoenfeldError
 import RiemannGaussian.RosserSchoenfeldEulerConstant
+import RiemannGaussian.RosserSchoenfeldSharpConstants
 import RiemannGaussian.RosserSchoenfeldZeroMass
 import RiemannGaussian.VinogradovRosserPrimeSupply
 import RiemannGaussian.VinogradovDiagonalMoment

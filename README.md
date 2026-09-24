@@ -149,9 +149,9 @@ The harmonic-cost route has an evaluated source and paid wing, reserve and domin
 
 ### Latest Update
 
-**The complete reciprocal-square zero sum is below 0.0463.** Lean proves the classical Rosser bound over all nontrivial zeros, retaining analytic multiplicities and both ordinate signs. The stronger ordinate-square bound follows from the exact xi Poisson mass, checked Euler/logarithm constants and the complete finite verification through height 54. Summability is proved; no RH, external zero table or prime-count estimate is assumed.
-Prove the remaining explicit zero-sum and prime-error estimates needed for dense short-prime supply. This slice does not enlarge the zero-free region or close the RH arithmetic floor.
-[Current checked endpoint](RiemannGaussian/RosserSchoenfeldZeroMass.lean#L160)
+**Sharper Euler and logarithm constants are proved.** Lean proves Euler's constant is below 577215666/10^9 and log(pi) is above 1144729883/10^9. A general cubic logarithm lower bound makes the twice-corrected harmonic sequence decrease to the actual Euler constant; exact arithmetic at order 200 supplies the numerical bound.
+Use these inputs to finish the higher reciprocal-power zero sums. Their 0.00167 and 0.0000744 bounds, the prime-count estimates and a larger zero-free region remain open.
+[Current checked endpoint](RiemannGaussian/RosserSchoenfeldSharpConstants.lean#L98)
 · [Proof details](docs/rosser-schoenfeld-reproduction.md).
 <!-- RH_DIRECTION:END -->
 

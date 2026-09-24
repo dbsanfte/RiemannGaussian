@@ -27,6 +27,7 @@ Here every Lean occurrence of π is `Nat.primeCounting ⌊x⌋₊`.
 | Section 7, Lemma 5 | lower(x)<J(x;−0.47) for every x≥1451, strengthening its stated starting range | [RosserSchoenfeldBounds](../RiemannGaussian/RosserSchoenfeldBounds.lean) |
 | Theorem 26 zero-free input | The exact radical constant and height, from the existing stronger signed-pole bound | [RosserSchoenfeldZeroFree](../RiemannGaussian/RosserSchoenfeldZeroFree.lean) |
 | Complete reciprocal-square zero mass | Both multiplicity-weighted sums, using squared ordinates or squared norms, are strictly below 0.0463 | [RosserSchoenfeldZeroMass](../RiemannGaussian/RosserSchoenfeldZeroMass.lean) |
+| Sharper Archimedean constants | Euler's constant is below 577215666/10⁹ and log π is above 1144729883/10⁹ | [RosserSchoenfeldSharpConstants](../RiemannGaussian/RosserSchoenfeldSharpConstants.lean) |
 | Last numerical error comparison | The paper's ε(x)<0.47/log(x) for every x≥exp(5000) | [RosserSchoenfeldError](../RiemannGaussian/RosserSchoenfeldError.lean) |
 | Ford short packet transport | Exact finite prime packet from the two displayed actual prime-count bounds, with every numerical side condition derived | [VinogradovRosserPrimeSupply](../RiemannGaussian/VinogradovRosserPrimeSupply.lean) |
 
@@ -107,6 +108,23 @@ This discharges the first reciprocal-power constant. The higher-power
 constants `0.00167` and `0.0000744`, the smoothed explicit-formula bounds,
 the larger finite verification and the actual prime-count estimates remain
 open. No larger zero-free region or independent RH arithmetic floor follows.
+
+The supporting module
+[RosserSchoenfeldSharpConstants](../RiemannGaussian/RosserSchoenfeldSharpConstants.lean)
+now proves the sharper exact inputs
+
+```math
+\gamma<\frac{577215666}{10^9},\qquad
+\log\pi>\frac{1144729883}{10^9}.
+```
+
+Its general logarithm bound is
+`2z+(2/3)z³≤log(1+x)` for `x≥0`, with `z=x/(x+2)`.
+This proves that `H_n−log(n)−1/(2n)+1/(12n²)` decreases to the actual
+Euler constant. Exact finite arithmetic at `n=200` supplies the first
+bound; the same logarithm inequality and the proved rational enclosure
+of π supply the second. These are inputs for the remaining higher-power
+zero sums, whose numerical bounds are not yet established.
 
 ## The analytic and finite-verification gap
 

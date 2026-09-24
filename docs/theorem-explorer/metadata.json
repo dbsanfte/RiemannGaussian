@@ -2542,7 +2542,7 @@
     },
     {
       "id": "rosser-zero-mass",
-      "label": "Rosser zero mass · unconditional 0.0463 bound",
+      "label": "Rosser zero mass · 0.0463 and sharper constants",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2555,6 +2555,18 @@
         [
           "gaussianPhaseBandToolkit",
           "rosserZeroPoissonMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserCubicLogLowerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserSharpEulerUpperTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rosserSharpLogPiLowerTheorem"
         ]
       ],
       "scopePath": [
@@ -6431,6 +6443,24 @@
     "RiemannGaussian.RosserSchoenfeldZeroMass.norm_square_mass_lt": {
       "label": "Classical Rosser reciprocal-square bound",
       "summary": "The full multiplicity-weighted sum of reciprocal squared zero norms is strictly below 463/10000, recovering the classical Rosser constant. This does not supply prime-count bounds or enlarge the zero-free region.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldSharpConstants.log_cubic_lower": {
+      "label": "Cubic logarithm lower bound",
+      "summary": "For every x>=0, the actual log(1+x) is at least 2*z+(2/3)*z^3, with z=x/(x+2); its gap has a proved nonnegative exact derivative.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldSharpConstants.euler_upper": {
+      "label": "Euler constant below 0.577215666",
+      "summary": "The twice-corrected harmonic sequence decreases to the actual Euler constant. Exact finite arithmetic at order 200 proves the strict rational bound 577215666/10^9.",
+      "overview": true,
+      "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    "RiemannGaussian.RosserSchoenfeldSharpConstants.log_pi_lower": {
+      "label": "Log pi above 1.144729883",
+      "summary": "The proved rational enclosure of pi and the cubic logarithm lower bound give log(pi)>1144729883/10^9. This auxiliary constant does not establish the higher-power zero sums.",
       "overview": true,
       "documentation": "docs/rosser-schoenfeld-reproduction.md"
     }

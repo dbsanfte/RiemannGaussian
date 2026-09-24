@@ -2936,6 +2936,13 @@ not been verified in Lean here; the 67.31% proportion certificate supplies
 no such premise. The Chebyshev estimates and finite prime-table ranges
 remain open as stated there.
 
+`RosserSchoenfeldSharpConstants` proves the unconditional rational bounds
+gamma < 577215666/10^9 and log(pi) > 1144729883/10^9. Its cubic atanh
+lower bound proves monotonicity of the twice-corrected harmonic sequence;
+exact arithmetic at order 200 bounds the actual Euler constant. These
+supporting constants do not yet prove the higher inverse-power zero sums,
+prime-count estimates or a larger zero-free region.
+
 `RosserSchoenfeldZeroMass` now discharges the complete reciprocal-square
 zero sum: `ordinate_mass_lt` and `norm_square_mass_lt` are unconditional
 strict bounds by 463/10000, including analytic multiplicity and both
