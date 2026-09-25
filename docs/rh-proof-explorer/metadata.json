@@ -16,17 +16,17 @@
       "changeReason": "The finite support theorem and local divisor decomposition do not survive arbitrary analytic factors or hard masks. The current step therefore bounds literal arithmetic errors before tackling the remaining coupled prime sum."
     },
     "latestUpdate": {
-      "sequence": 76,
-      "id": "literal-joint-prime-transfer-and-count56-tail",
+      "sequence": 78,
+      "id": "literal-overflow-bound-and-signed-cutoff-profiles",
       "kind": "theorem",
-      "title": "The selected packet's tail with at least 56 prime factors decays.",
-      "body": "Lean preserves the correlated factorial weights and full phase while paying share, ownership, allocation, radial and high-count errors. Exact ledgers leave counts 3..55 signed together. Finite-mode support and new analytic no-go audits are also recorded.",
-      "next": "Prove cancellation in the retained low-count sum and an independent floor for its complementary carrier. The numerical diagnostics are uncertified; no packet decay or new zero exclusion is claimed.",
+      "title": "Factorial overflow decays; four- and five-prime coefficient signs are proved.",
+      "body": "Lean pays the upper factorial overflow for counts 14\u201355 and the coincident marked/least slot. It also proves nonnegative four-prime coefficients on the retained support and nonpositive five-prime coefficients under a precise small-pair cutoff. Weighted-profile probes identify opposing count classes, with no prime-density transfer assumed.",
+      "next": "Bound the coupled signed boundary difference over counts 3\u201355 and the complementary carrier, retaining the full phase. Arithmetic coefficient signs and numerical model cancellation do not give a packet bound, -3/40 floor or zero exclusion.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszJointCountTailTheorem"
+        "rieszCutoffFiveSignTheorem"
       ],
-      "documentation": "docs/zeta-riesz-joint-prime-transfer.md"
+      "documentation": "docs/zeta-riesz-signed-cutoff-profile.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -38,6 +38,17 @@
     ]
   },
   "endpoints": [
+    {
+      "id": "weighted-cutoff-profile",
+      "label": "Signed cutoff profiles · four/five-prime coefficient signs",
+      "statusPaths": [
+        ["gaussianPhaseBandToolkit", "rieszCutoffFourSignTheorem"],
+        ["gaussianPhaseBandToolkit", "rieszCutoffFiveSignTheorem"],
+        ["gaussianPhaseBandToolkit", "rieszCutoffPlateauTheorem"]
+      ],
+      "scopePath": ["gaussianPhaseBandToolkit", "rieszCutoffProfileScope"],
+      "documentation": "docs/zeta-riesz-signed-cutoff-profile.md"
+    },
     {
       "id": "harmonic-remainder",
       "label": "Current frontier \u00b7 source after dominant-prime cancellation",
@@ -3857,6 +3868,41 @@
         "rieszCascadeScope"
       ],
       "documentation": "docs/zeta-riesz-continuum-cascade-audit.md"
+    },
+    {
+      "id": "harmonic-least-order-boundary",
+      "label": "Least-order boundary \u00b7 paid overflow for counts 14\u201355",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLeastVariationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoincidentSlotBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLeastOverflowBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLeastOverflowRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointBoundaryLedgerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointBoundaryComparisonTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszJointBoundaryScope"
+      ],
+      "documentation": "docs/zeta-riesz-least-order-boundary.md"
     }
   ],
   "scopes": {

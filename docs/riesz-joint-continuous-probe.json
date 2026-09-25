@@ -1,0 +1,467 @@
+{
+  "status": "UNRESOLVED: no literal retained signed prime-sum bound, independent floor, or zero exclusion.",
+  "model": {
+    "shifts": [
+      [
+        0,
+        0
+      ],
+      [
+        2.5e-05,
+        -0.006
+      ],
+      [
+        2.5e-05,
+        0.006
+      ]
+    ],
+    "multiplicities": [
+      1,
+      3,
+      3
+    ],
+    "actual_zeta_zeros": false,
+    "all_counts": true,
+    "radial_core": [
+      1.95,
+      2.03
+    ],
+    "owner_share": [
+      0.5,
+      0.6
+    ],
+    "least_share": [
+      0.005,
+      0.06
+    ],
+    "moving_length": "2 log(floor(20000^N/(10001^N (N+1)))+2)",
+    "retained_order_rectangle": "21N <= 40j <= 23N; N <= 100(h+1) <= 4N"
+  },
+  "reproducible_public_runs": {
+    "point": {
+      "status": "Exploration only; no literal prime-sum estimate or certified numerical bound.",
+      "script_sha256": "ede1de4e2d07ea3b912e0ed482b0066c674496c0d59777c1a83259ead284059f",
+      "dependency_sha256": {
+        "probe_riesz_joint_renewal.py": "098ea5e5a8b8e851e17646174eb4cf2964b3e75347f3605a1099d418ddf431b0",
+        "probe_riesz_joint_masked.py": "78495f94f2d8c4163c191ac548ec06d26b6e85aacedd9ea0a052d5143aef11df"
+      },
+      "factorial_derivative_audit": [
+        {
+          "N": 640,
+          "p": 0.55,
+          "r": 0.011,
+          "exact_beta_faces": 65.64473442357499,
+          "finite_difference": 65.64473442494112,
+          "absolute_difference": 1.3661320963365142e-09
+        },
+        {
+          "N": 640,
+          "p": 0.55,
+          "r": 0.039,
+          "exact_beta_faces": -42.66775161616244,
+          "finite_difference": -42.667751614100524,
+          "absolute_difference": 2.061916859474877e-09
+        },
+        {
+          "N": 1536,
+          "p": 0.55,
+          "r": 0.04,
+          "exact_beta_faces": -75.8313447355774,
+          "finite_difference": -75.83134472272101,
+          "absolute_difference": 1.285638973058667e-08
+        }
+      ],
+      "point_audit": {
+        "N": 262144,
+        "T": 524288,
+        "p": 0.55,
+        "r": 0.04,
+        "direct_quadrature": -11.067543934769516,
+        "quadrature_error_indicator": 6.135453113508511e-10,
+        "continuous_convolution": [
+          {
+            "inverse_step": 256,
+            "raw": -11.068754158786167,
+            "corrected": -11.067545236722541,
+            "corrected_difference": -1.3019530253899347e-06
+          },
+          {
+            "inverse_step": 512,
+            "raw": -11.067838739538754,
+            "corrected": -11.067543673817173,
+            "corrected_difference": 2.609523424013105e-07
+          },
+          {
+            "inverse_step": 1024,
+            "raw": -11.067619676469773,
+            "corrected": -11.067544293811425,
+            "corrected_difference": -3.590419090926389e-07
+          },
+          {
+            "inverse_step": 2048,
+            "raw": -11.06756236722746,
+            "corrected": -11.067543952473693,
+            "corrected_difference": -1.7704177679433997e-08
+          },
+          {
+            "inverse_step": 4096,
+            "raw": -11.067548688246816,
+            "corrected": -11.067543930916996,
+            "corrected_difference": 3.852520080727118e-09
+          }
+        ],
+        "old_lattice_discretization": [
+          {
+            "grid": 2048,
+            "response": -10.115779283473007,
+            "difference": 0.951764651296509
+          },
+          {
+            "grid": 4096,
+            "response": -10.838714480482562,
+            "difference": 0.228829454286954
+          },
+          {
+            "grid": 8192,
+            "response": -11.035685502478204,
+            "difference": 0.0318584322913118
+          },
+          {
+            "grid": 16384,
+            "response": -11.053552746702051,
+            "difference": 0.013991188067464577
+          },
+          {
+            "grid": 32768,
+            "response": -11.065718016716861,
+            "difference": 0.0018259180526545293
+          },
+          {
+            "grid": 65536,
+            "response": -11.066540579240165,
+            "difference": 0.0010033555293507135
+          }
+        ],
+        "warning": "Error indicators and refinement are not certified enclosures."
+      }
+    },
+    "joint_flux": [
+      {
+        "status": "Exploration only; no literal prime-sum estimate or certified numerical bound.",
+        "script_sha256": "ede1de4e2d07ea3b912e0ed482b0066c674496c0d59777c1a83259ead284059f",
+        "dependency_sha256": {
+          "probe_riesz_joint_renewal.py": "098ea5e5a8b8e851e17646174eb4cf2964b3e75347f3605a1099d418ddf431b0",
+          "probe_riesz_joint_masked.py": "78495f94f2d8c4163c191ac548ec06d26b6e85aacedd9ea0a052d5143aef11df"
+        },
+        "factorial_derivative_audit": [
+          {
+            "N": 640,
+            "p": 0.55,
+            "r": 0.011,
+            "exact_beta_faces": 65.64473442357499,
+            "finite_difference": 65.64473442494112,
+            "absolute_difference": 1.3661320963365142e-09
+          },
+          {
+            "N": 640,
+            "p": 0.55,
+            "r": 0.039,
+            "exact_beta_faces": -42.66775161616244,
+            "finite_difference": -42.667751614100524,
+            "absolute_difference": 2.061916859474877e-09
+          },
+          {
+            "N": 1536,
+            "p": 0.55,
+            "r": 0.04,
+            "exact_beta_faces": -75.8313447355774,
+            "finite_difference": -75.83134472272101,
+            "absolute_difference": 1.285638973058667e-08
+          }
+        ],
+        "joint_flux": {
+          "scope": "Uncertified synthetic continuum flux, all counts, exact moving length and factorial derivative. Not actual prime data.",
+          "N": 65536,
+          "rnodes": 16,
+          "tnodes": 48,
+          "pnodes": 512,
+          "step": 0.0009765625,
+          "tolerance": 1e-11,
+          "interpolation": "six-point polynomial",
+          "euler_maclaurin_second_order": true,
+          "radial_mass": 0.9999300969114989,
+          "fronts": [
+            {
+              "order": 654,
+              "flux": 3.194413439066346e-15,
+              "max_sampled_integrand": 7.548822835542532e-12,
+              "elapsed": 45.543176339007914
+            },
+            {
+              "order": 2620,
+              "flux": 0.005567354193715041,
+              "max_sampled_integrand": 7.045130186784887,
+              "elapsed": 58.001208500005305
+            }
+          ],
+          "signed_flux": -0.005567354193711846,
+          "log_raw_norm": 45415.04256467229,
+          "endpoint_note": "Exterior least-share endpoints are omitted in this diagnostic, not asserted small for the synthetic model.",
+          "elapsed": 58.00124481698731
+        }
+      },
+      {
+        "status": "Exploration only; no literal prime-sum estimate or certified numerical bound.",
+        "script_sha256": "ede1de4e2d07ea3b912e0ed482b0066c674496c0d59777c1a83259ead284059f",
+        "dependency_sha256": {
+          "probe_riesz_joint_renewal.py": "098ea5e5a8b8e851e17646174eb4cf2964b3e75347f3605a1099d418ddf431b0",
+          "probe_riesz_joint_masked.py": "78495f94f2d8c4163c191ac548ec06d26b6e85aacedd9ea0a052d5143aef11df"
+        },
+        "factorial_derivative_audit": [
+          {
+            "N": 640,
+            "p": 0.55,
+            "r": 0.011,
+            "exact_beta_faces": 65.64473442357499,
+            "finite_difference": 65.64473442494112,
+            "absolute_difference": 1.3661320963365142e-09
+          },
+          {
+            "N": 640,
+            "p": 0.55,
+            "r": 0.039,
+            "exact_beta_faces": -42.66775161616244,
+            "finite_difference": -42.667751614100524,
+            "absolute_difference": 2.061916859474877e-09
+          },
+          {
+            "N": 1536,
+            "p": 0.55,
+            "r": 0.04,
+            "exact_beta_faces": -75.8313447355774,
+            "finite_difference": -75.83134472272101,
+            "absolute_difference": 1.285638973058667e-08
+          }
+        ],
+        "joint_flux": {
+          "scope": "Uncertified synthetic continuum flux, all counts, exact moving length and factorial derivative. Not actual prime data.",
+          "N": 262144,
+          "rnodes": 20,
+          "tnodes": 64,
+          "pnodes": 768,
+          "step": 0.00048828125,
+          "tolerance": 1e-11,
+          "interpolation": "six-point polynomial",
+          "euler_maclaurin_second_order": true,
+          "radial_mass": 0.9999999999999938,
+          "fronts": [
+            {
+              "order": 2620,
+              "flux": 1.919450032618999e-12,
+              "max_sampled_integrand": 5.344058613216959e-08,
+              "elapsed": 144.40319977002218
+            },
+            {
+              "order": 10484,
+              "flux": -0.00011021419527423859,
+              "max_sampled_integrand": 51147.72659308626,
+              "elapsed": 199.75464385101805
+            }
+          ],
+          "signed_flux": 0.00011021419719368862,
+          "log_raw_norm": 181669.74137368612,
+          "endpoint_note": "Exterior least-share endpoints are omitted in this diagnostic, not asserted small for the synthetic model.",
+          "elapsed": 199.75468519702554
+        }
+      }
+    ]
+  },
+  "draft_refinements": {
+    "provenance": "Exploratory predecessor .lake/riesz-joint-target/joint_dde.py; same batch equations, convolution and factorial faces as public script. The public CLI accepts the recorded parameters. These draft runs predate its wrapper/hash and point audit.",
+    "runs": [
+      {
+        "scope": "Uncertified synthetic continuum flux, all counts, exact moving length and factorial derivative. Not actual prime data.",
+        "N": 131072,
+        "rnodes": 16,
+        "tnodes": 48,
+        "pnodes": 512,
+        "step": 0.0009765625,
+        "tolerance": 1e-11,
+        "interpolation": "six-point polynomial",
+        "euler_maclaurin_second_order": true,
+        "radial_mass": 0.9999999942454891,
+        "fronts": [
+          {
+            "order": 1309,
+            "flux": -1.269686365644635e-14,
+            "max_sampled_integrand": 8.718125795482047e-11,
+            "elapsed": 38.94048180102254
+          },
+          {
+            "order": 5241,
+            "flux": -0.0002696186782928933,
+            "max_sampled_integrand": 87.2776161450057,
+            "elapsed": 56.58231924200663
+          }
+        ],
+        "signed_flux": 0.00026961867828019645,
+        "endpoint_note": "Exterior least-share endpoints are omitted in this diagnostic, not asserted small for the synthetic model.",
+        "elapsed": 56.5823588410276
+      },
+      {
+        "scope": "Uncertified synthetic continuum flux, all counts, exact moving length and factorial derivative. Not actual prime data.",
+        "N": 262144,
+        "rnodes": 12,
+        "tnodes": 40,
+        "pnodes": 512,
+        "step": 0.0009765625,
+        "tolerance": 1e-10,
+        "interpolation": "six-point polynomial",
+        "euler_maclaurin_second_order": true,
+        "radial_mass": 0.9999999999999643,
+        "fronts": [
+          {
+            "order": 2620,
+            "flux": -3.7145932813069506e-12,
+            "max_sampled_integrand": 4.092906364232125e-07,
+            "elapsed": 27.187696125998627
+          },
+          {
+            "order": 10484,
+            "flux": -0.00011039979494853469,
+            "max_sampled_integrand": 41597.81079273388,
+            "elapsed": 41.50616582299699
+          }
+        ],
+        "signed_flux": 0.00011039979123394141,
+        "endpoint_note": "Exterior least-share endpoints are omitted in this diagnostic, not asserted small for the synthetic model.",
+        "elapsed": 41.5061968320224
+      },
+      {
+        "scope": "Uncertified synthetic continuum flux, all counts, exact moving length and factorial derivative. Not actual prime data.",
+        "N": 262144,
+        "rnodes": 12,
+        "tnodes": 40,
+        "pnodes": 512,
+        "step": 0.00048828125,
+        "tolerance": 1e-11,
+        "interpolation": "six-point polynomial",
+        "euler_maclaurin_second_order": true,
+        "radial_mass": 0.9999999999999643,
+        "fronts": [
+          {
+            "order": 2620,
+            "flux": 7.105168896153095e-12,
+            "max_sampled_integrand": 4.297910064670043e-08,
+            "elapsed": 48.05459561600583
+          },
+          {
+            "order": 10484,
+            "flux": -0.00010977679835377785,
+            "max_sampled_integrand": 41597.81091851029,
+            "elapsed": 69.89849968001363
+          }
+        ],
+        "signed_flux": 0.00010977680545894675,
+        "endpoint_note": "Exterior least-share endpoints are omitted in this diagnostic, not asserted small for the synthetic model.",
+        "elapsed": 69.89853299301467
+      },
+      {
+        "scope": "Uncertified synthetic continuum flux, all counts, exact moving length and factorial derivative. Not actual prime data.",
+        "N": 262144,
+        "rnodes": 20,
+        "tnodes": 64,
+        "pnodes": 768,
+        "step": 0.0009765625,
+        "tolerance": 1e-11,
+        "interpolation": "six-point polynomial",
+        "euler_maclaurin_second_order": true,
+        "radial_mass": 0.9999999999999938,
+        "fronts": [
+          {
+            "order": 2620,
+            "flux": 1.919450077877669e-12,
+            "max_sampled_integrand": 5.344058613002322e-08,
+            "elapsed": 87.63036554201972
+          },
+          {
+            "order": 10484,
+            "flux": -9.61538999035838e-05,
+            "max_sampled_integrand": 51147.72602928532,
+            "elapsed": 133.5116815850197
+          }
+        ],
+        "signed_flux": 9.615390182303388e-05,
+        "endpoint_note": "Exterior least-share endpoints are omitted in this diagnostic, not asserted small for the synthetic model.",
+        "elapsed": 133.51171769300709
+      }
+    ]
+  },
+  "higher_order_stress": {
+    "provenance": "Exploratory predecessor as above. The second run evaluates ONLY the upper factorial face; compare its fronts[0].flux with fronts[1].flux in the first run. It is not a recomputation of the whole signed difference.",
+    "runs": [
+      {
+        "scope": "Uncertified synthetic continuum flux, all counts, exact moving length and factorial derivative. Not actual prime data.",
+        "N": 524288,
+        "rnodes": 20,
+        "tnodes": 64,
+        "pnodes": 1280,
+        "step": 0.000244140625,
+        "tolerance": 1e-11,
+        "interpolation": "six-point polynomial",
+        "euler_maclaurin_second_order": true,
+        "radial_mass": 0.9999999999999936,
+        "fronts": [
+          {
+            "order": 5241,
+            "flux": -1.9788442921686017e-05,
+            "max_sampled_integrand": 0.025638724811078612,
+            "elapsed": 266.9224143459869
+          },
+          {
+            "order": 20970,
+            "flux": -0.6181882619857788,
+            "max_sampled_integrand": 14943988048.889097,
+            "elapsed": 385.3064029930101
+          }
+        ],
+        "signed_flux": 0.6181684735428571,
+        "endpoint_note": "Exterior least-share endpoints are omitted in this diagnostic, not asserted small for the synthetic model.",
+        "elapsed": 385.3064427319914
+      },
+      {
+        "scope": "Uncertified synthetic continuum flux, all counts, exact moving length and factorial derivative. Not actual prime data.",
+        "N": 524288,
+        "rnodes": 20,
+        "tnodes": 64,
+        "pnodes": 1280,
+        "step": 0.0001220703125,
+        "tolerance": 1e-12,
+        "interpolation": "six-point polynomial",
+        "euler_maclaurin_second_order": true,
+        "radial_mass": 0.9999999999999936,
+        "fronts": [
+          {
+            "order": 20970,
+            "flux": 0.029189467430114746,
+            "max_sampled_integrand": 14943988050.884525,
+            "elapsed": 184.46567116799997
+          }
+        ],
+        "signed_flux": -0.029189467430114746,
+        "endpoint_note": "Exterior least-share endpoints are omitted in this diagnostic, not asserted small for the synthetic model.",
+        "elapsed": 184.46572089398978
+      }
+    ],
+    "conclusion": "Upper-face sign changes under simultaneous convolution-step and ODE-tolerance refinement. Intermediate sampled values reach 1.5e10. Neither the full coarse value nor the refined upper-only value is usable as evidence of asymptotic growth/decay."
+  },
+  "conclusions": [
+    "Direct convolution quadrature detects material discretization error in the earlier lattice probe.",
+    "Corrected N=262144 joint diagnostics have scale about 1e-4; no digits or eventual rate certified.",
+    "The N=524288 stress test is unresolved under refinement.",
+    "Adaptive ODE/quadrature tolerances are not rigorous enclosures.",
+    "The synthetic least-share integration-by-parts endpoints are omitted and not paid by the arithmetic exterior theorem.",
+    "The actual prime measure, squarefreeness, count/mode and pole/analytic-remainder bridges remain unproved.",
+    "The exact arithmetic target lowerThresholdPacket-shortOverflowPacket remains unchanged and open."
+  ]
+}

@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**464 modules.** Source links open the definitions, hypotheses and proofs.
+**467 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -186,6 +186,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszCrossCompletion](../../RiemannGaussian/ZetaRieszCrossCompletion.lean)
 - [ZetaRieszCrossFamilyWindow](../../RiemannGaussian/ZetaRieszCrossFamilyWindow.lean)
 - [ZetaRieszCrossSupport](../../RiemannGaussian/ZetaRieszCrossSupport.lean)
+- [ZetaRieszCutoffProfile](../../RiemannGaussian/ZetaRieszCutoffProfile.lean)
 - [ZetaRieszCycleCapacity](../../RiemannGaussian/ZetaRieszCycleCapacity.lean)
 - [ZetaRieszCycleCore](../../RiemannGaussian/ZetaRieszCycleCore.lean)
 - [ZetaRieszCycleCorrelation](../../RiemannGaussian/ZetaRieszCycleCorrelation.lean)
@@ -247,7 +248,9 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszLargeSmoothClass](../../RiemannGaussian/ZetaRieszLargeSmoothClass.lean)
 - [ZetaRieszLargeSmoothDeletion](../../RiemannGaussian/ZetaRieszLargeSmoothDeletion.lean)
 - [ZetaRieszLeastBoundary](../../RiemannGaussian/ZetaRieszLeastBoundary.lean)
+- [ZetaRieszLeastOrderOverflow](../../RiemannGaussian/ZetaRieszLeastOrderOverflow.lean)
 - [ZetaRieszLeastPrimeRenewal](../../RiemannGaussian/ZetaRieszLeastPrimeRenewal.lean)
+- [ZetaRieszLeastVariation](../../RiemannGaussian/ZetaRieszLeastVariation.lean)
 - [ZetaRieszLengthAsymptotic](../../RiemannGaussian/ZetaRieszLengthAsymptotic.lean)
 - [ZetaRieszLocalXiDivisor](../../RiemannGaussian/ZetaRieszLocalXiDivisor.lean)
 - [ZetaRieszLowHeadCorrection](../../RiemannGaussian/ZetaRieszLowHeadCorrection.lean)

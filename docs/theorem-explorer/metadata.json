@@ -3510,7 +3510,10 @@
     "ZetaRieszJointPrimeTransfer": "arithmetic",
     "ZetaRieszJointOwnerTransfer": "arithmetic",
     "ZetaRieszJointAllocationError": "arithmetic",
-    "ZetaRieszLeastBoundary": "arithmetic"
+    "ZetaRieszLeastBoundary": "arithmetic",
+    "ZetaRieszLeastVariation": "arithmetic",
+    "ZetaRieszLeastOrderOverflow": "arithmetic",
+    "ZetaRieszCutoffProfile": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

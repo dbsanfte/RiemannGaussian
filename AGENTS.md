@@ -1701,6 +1701,67 @@ eventual growth theorems or numerical certificates. The independent
 65-digit recurrence audit is a rounding check, not a quadrature enclosure.
 Preserve these negative controls when exploring new cancellation identities.
 
+`ZetaRieszLeastVariation` now instantiates least-slot telescoping with the
+literal rectangle. The unit endpoint vanishes for N>=101; its coincident
+marked/least slot has an independent source-scale bound 2 U C_sigma r^N.
+The signed variation itself is not estimated. `ZetaRieszLeastOrderOverflow`
+keeps the full multinomial allocation and pays the upper least-order overflow
+on counts 14..55: x_p+13*x_min<=1 gives tilts 126/125 and 138/125, with
+overflow mass<=2 exp(-N/6000) per incidence. Its literal arithmetic packet
+costs 110 U C_sigma r_up^N, r_up=U*(262144/131071)*exp(-1/6000)<1
+(about .9999409595). The exact retained target is lowerThresholdPacket
+(counts 3..55) MINUS shortOverflowPacket (counts 3..13). Do not bound these
+two terms separately or claim that all contributions with >=14 factors
+are paid. `fullPacket_sub_joint_boundary_bound` pays the comparison to the
+original joined carrier. That signed difference and the complementary rest
+remain open. The optional sparse actual-prime probe is only an identity
+regression; see `docs/zeta-riesz-least-order-boundary.md`. Preserve every
+earlier no-go and the public whole-carrier frontier. Keep this continuation
+local until the next user-authorized publication.
+
+The continuous renewal audit in `scripts/probe_riesz_joint_continuous.py`
+checks the old lattice diagnostic by a method-of-steps solver and separate
+convolution quadrature. It retains the empty-factor atom and both exact
+factorial beta faces. At N=262144, grid/endpoint interpolation errors account
+for much of the old apparent growth; refined synthetic responses are about
+1e-4, still uncertified. Higher-order runs are strongly cancellation-sensitive.
+See `docs/riesz-joint-continuous-probe.json` and the least-order boundary note.
+No actual prime-sum bound was obtained. Do not infer decay, an eventual floor,
+or a generic counterexample from these finite runs. The synthetic exterior
+endpoint terms and arithmetic transport are not paid by this diagnostic.
+Keep it optional, preserve the prior theorems and keep the same signed target.
+
+The label-anatomy audit is `docs/zeta-riesz-label-anatomy.md`, with the optional
+`probe_riesz_label_anatomy.py`. Do not confuse dyadic moment indices with the
+enormous squarefree integers in their logarithmic windows. The sparse Mersenne
+regression has only five labels sharing five large factors and nearly lies on
+the log(2) lattice; it is not a phase-distribution sample. The new certified
+Proth examples hold largest/least factors and total log almost fixed while
+middle factorization changes the Riesz sign. They are also chosen examples,
+not density evidence, and no prime-count-parity sign rule or bound follows.
+The anatomy probe also records the signed middle-divisor staircase after
+largest/least deletion. Its integrated even-minus-odd count reproduces the
+literal Riesz coefficient. The quota-complex/Euler-characteristic connection
+in that note is classical, and least-vertex pairing is already represented by
+our recurrence. Do not count this interpretation, or deliberately constructed
+near-equal subproducts, as a new cancellation bound or as population evidence.
+`ZetaRieszCutoffProfile.four_coefficient_nonneg_lowSupport` now resolves the
+arithmetic coefficient sign for every four-prime label on the unchanged
+retained support (u>=1/2, N>=2). This is not a sign for its full complex atom.
+The weighted-cutoff probe retains all marked incidences and the exact
+lower-threshold-minus-short-overflow factorial weight. Its ordinary-density
+model currently sums only counts 3..14: no prime-density transport or bound
+for counts 15..55 follows. Randomized certified Proth products remain chosen
+regressions, not population evidence. See `docs/zeta-riesz-signed-cutoff-profile.md`.
+Keep the whole-carrier frontier, signed target, and prior no-gos unchanged.
+The same cutoff-profile module proves a nonpositive five-prime coefficient
+under its explicit core geometry when the largest prime times the two
+smallest primes lies below X_N. This follows from the exact decreasing
+middle-three-prime profile; no phase or density claim is part of the theorem.
+Its observed 98% coverage of negative five-prime mass is only a continuum
+model diagnostic. Do not revive the failed isolated triple/quintuple
+short-cell transport or replace the full signed count sum by these classes.
+
 ### Joint shifted configurations and share-seam cancellation (2026-09-25)
 
 The current local continuation is recorded in

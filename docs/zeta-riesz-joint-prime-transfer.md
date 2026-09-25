@@ -5,6 +5,11 @@ the modal cancellation estimate for the remaining literal sum, packet decay,
 an independent signed floor, or any new zero exclusion. All previous no-go
 audits remain in force.
 
+The subsequent [least-order boundary estimate](zeta-riesz-least-order-boundary.md)
+pays the coincident marked slot and the upper factorial overflow for counts
+14–55. It leaves a coupled lower-threshold sum over counts 3–55 minus the
+upper overflow from counts 3–13; that signed difference remains unbounded.
+
 ## What changed mathematically
 
 The prior constant-weight modal test required nonresonant exterior endpoints.

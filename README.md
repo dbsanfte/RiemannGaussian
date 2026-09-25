@@ -149,10 +149,10 @@ The harmonic-cost route retains its exact source and an open independent -3/40 f
 
 ### Latest Update
 
-**The selected packet's tail with at least 56 prime factors decays.** Lean preserves the correlated factorial weights and full phase while paying share, ownership, allocation, radial and high-count errors. Exact ledgers leave counts 3..55 signed together. Finite-mode support and new analytic no-go audits are also recorded.
-Prove cancellation in the retained low-count sum and an independent floor for its complementary carrier. The numerical diagnostics are uncertified; no packet decay or new zero exclusion is claimed.
-[Current checked endpoint](RiemannGaussian/ZetaRieszLeastBoundary.lean#L836)
-· [Proof details](docs/zeta-riesz-joint-prime-transfer.md).
+**Factorial overflow decays; four- and five-prime coefficient signs are proved.** Lean pays the upper factorial overflow for counts 14–55 and the coincident marked/least slot. It also proves nonnegative four-prime coefficients on the retained support and nonpositive five-prime coefficients under a precise small-pair cutoff. Weighted-profile probes identify opposing count classes, with no prime-density transfer assumed.
+Bound the coupled signed boundary difference over counts 3–55 and the complementary carrier, retaining the full phase. Arithmetic coefficient signs and numerical model cancellation do not give a packet bound, -3/40 floor or zero exclusion.
+[Current checked endpoint](RiemannGaussian/ZetaRieszCutoffProfile.lean#L138)
+· [Proof details](docs/zeta-riesz-signed-cutoff-profile.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

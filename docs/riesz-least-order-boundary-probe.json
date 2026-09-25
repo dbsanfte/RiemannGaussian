@@ -1,0 +1,120 @@
+{
+  "scope": "Uncertified optional diagnostic; Lean supplies the arithmetic estimate",
+  "rates": {
+    "scope": "Exploration of this one joint tilt, not an impossibility result",
+    "optimized": [
+      {
+        "count": 12,
+        "optimal_tilt": 0,
+        "factorial_exponent": 0.0,
+        "ideal_source_exponent": 9.999500033329732e-05
+      },
+      {
+        "count": 13,
+        "optimal_tilt": 0.0009578544061302691,
+        "factorial_exponent": -2.384753689419058e-06,
+        "ideal_source_exponent": 9.761024664387826e-05
+      },
+      {
+        "count": 14,
+        "optimal_tilt": 0.00795755968169762,
+        "factorial_exponent": -0.00017272190813027392,
+        "ideal_source_exponent": -7.27269077969766e-05
+      },
+      {
+        "count": 15,
+        "optimal_tilt": 0.013957307060755349,
+        "factorial_exponent": -0.0005554308431598206,
+        "ideal_source_exponent": -0.0004554358428265233
+      },
+      {
+        "count": 16,
+        "optimal_tilt": 0.019157088122605363,
+        "factorial_exponent": -0.0010900769125927415,
+        "ideal_source_exponent": -0.0009900819122594443
+      },
+      {
+        "count": 17,
+        "optimal_tilt": 0.023706896551724144,
+        "factorial_exponent": -0.0017339753561151673,
+        "ideal_source_exponent": -0.00163398035578187
+      },
+      {
+        "count": 18,
+        "optimal_tilt": 0.027721433400946596,
+        "factorial_exponent": -0.0024564140240782573,
+        "ideal_source_exponent": -0.0023564190237449598
+      },
+      {
+        "count": 19,
+        "optimal_tilt": 0.031289910600255426,
+        "factorial_exponent": -0.0032349501079046925,
+        "ideal_source_exponent": -0.003134955107571395
+      },
+      {
+        "count": 20,
+        "optimal_tilt": 0.034482758620689655,
+        "factorial_exponent": -0.004052970190908035,
+        "ideal_source_exponent": -0.003952975190574738
+      }
+    ],
+    "proved_rational_tilt_exponent": -0.00017271733083712784,
+    "lean_overflow_rate": 0.9999409595002607
+  },
+  "finite_primes": {
+    "scope": "Sparse finite actual-prime regression, NOT a full prime-sum bound",
+    "N": 328,
+    "height": 60,
+    "labels": 5,
+    "prime_exponents": [
+      17,
+      19,
+      31,
+      61,
+      89,
+      107,
+      127,
+      521
+    ],
+    "common_log_scale_removed": -645.0373558256449,
+    "retained_masks": [
+      "squarefree",
+      "physical",
+      "core window",
+      "nondominant",
+      "share interior",
+      "count",
+      "finite factorial rectangle",
+      "full product phase",
+      "distinct marked slots"
+    ],
+    "direct_scaled": [
+      -15.807956601822493,
+      1.879777974836748
+    ],
+    "lower_threshold_scaled": [
+      -16.18897532339916,
+      1.9259258472043188
+    ],
+    "overflow_3_to_13_scaled": [
+      -0.3810187215766226,
+      0.04614787236756563
+    ],
+    "overflow_14_to_55_scaled": [
+      0.0,
+      0.0
+    ],
+    "allocation_identity_error": 3.99853761212654e-15,
+    "signed_identity_error_scaled": 4.3769927283190765e-14,
+    "counts_present": {
+      "6": [
+        -15.808041463035607,
+        1.8798014273445183
+      ],
+      "7": [
+        8.486121311559403e-05,
+        -2.3452507770236924e-05
+      ]
+    }
+  }
+}
