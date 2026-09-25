@@ -1,0 +1,92 @@
+{
+  "status": "uncertified all-count continuum diagnostic; NOT a literal prime transfer",
+  "script_sha256": "098ea5e5a8b8e851e17646174eb4cf2964b3e75347f3605a1099d418ddf431b0",
+  "error": "grid and quadrature errors must be refined; no rigorous error enclosure",
+  "finite_subset_regression": {
+    "direct": [
+      0.049516748602381644,
+      0.33232722775375445
+    ],
+    "series": [
+      0.04951674860238171,
+      0.33232722775375456
+    ],
+    "absolute_difference": 1.3092278833360675e-16
+  },
+  "modal_recurrence_regression": {
+    "grid": 512,
+    "maximum_coefficient_difference": 7.131015156950616e-13
+  },
+  "rectangle_dependency_sha256": "78495f94f2d8c4163c191ac548ec06d26b6e85aacedd9ea0a052d5143aef11df",
+  "rectangle_grid_regression": {
+    "orders": [
+      25,
+      256,
+      640
+    ],
+    "maximum_absolute_difference": 2.220446049250313e-16,
+    "comparison": "same full finite sum, different evaluation order; no interpolation"
+  },
+  "rows": [],
+  "recurrence_precision": {
+    "grid": 1024,
+    "decimal_precision": 65,
+    "scope": "same finite grid and binary mode inputs; rounding audit only",
+    "rows": [
+      {
+        "T": 10000,
+        "least_share": 0.0123,
+        "series": "A",
+        "coefficient_scale": 1,
+        "quadratic_max_error": 8.049116928532385e-16,
+        "accelerated_max_error": 1.8830770276423436e-13,
+        "accelerated_scaled_error": 1.8830770276423436e-13
+      },
+      {
+        "T": 10000,
+        "least_share": 0.0123,
+        "series": "B",
+        "coefficient_scale": 3.647567648426394,
+        "quadratic_max_error": 2.2648549702353193e-14,
+        "accelerated_max_error": 3.4680658345109805e-10,
+        "accelerated_scaled_error": 9.507886264994008e-11
+      },
+      {
+        "T": 20000,
+        "least_share": 0.0278,
+        "series": "A",
+        "coefficient_scale": 1,
+        "quadratic_max_error": 4.579669976578771e-16,
+        "accelerated_max_error": 2.3744894939170536e-14,
+        "accelerated_scaled_error": 2.3744894939170536e-14
+      },
+      {
+        "T": 20000,
+        "least_share": 0.0278,
+        "series": "B",
+        "coefficient_scale": 1.549442342446031,
+        "quadratic_max_error": 1.1324274851176597e-14,
+        "accelerated_max_error": 4.761302463407446e-12,
+        "accelerated_scaled_error": 3.072913610900167e-12
+      },
+      {
+        "T": 30000,
+        "least_share": 0.0512,
+        "series": "A",
+        "coefficient_scale": 1,
+        "quadratic_max_error": 5.204170427930421e-17,
+        "accelerated_max_error": 5.409561687486075e-14,
+        "accelerated_scaled_error": 5.409561687486075e-14
+      },
+      {
+        "T": 30000,
+        "least_share": 0.0512,
+        "series": "B",
+        "coefficient_scale": 1,
+        "quadratic_max_error": 1.3877787807814457e-15,
+        "accelerated_max_error": 3.3131830612376234e-12,
+        "accelerated_scaled_error": 3.3131830612376234e-12
+      }
+    ]
+  }
+}

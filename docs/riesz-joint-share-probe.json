@@ -1,0 +1,312 @@
+{
+  "cofactor_below_cone": "exp(pole*s)*(-1+sum_i residue_i*exp((a_i-pole)*d))",
+  "cofactor_transform": "(1-(w+z-pole)/(w-pole)*prod((w-a)/(w+z-a)))/z^2",
+  "crosscheck_precision": 190,
+  "cutoff_partial_fraction_error": "1.1270726e-131",
+  "height": 55,
+  "intervals": {
+    "adjacent": [
+      "21/40",
+      "43/80"
+    ],
+    "joint": [
+      "21/40",
+      "9/16"
+    ],
+    "packet": [
+      "43/80",
+      "9/16"
+    ]
+  },
+  "joint_count_error": "2.2541452e-131",
+  "joint_count_identity": "R(P/H)+(P/H)*R(H)=R(P), retaining the original pole",
+  "marked_largest_density": "exp(pole*p*T)-sum_i exp(a_i*p*T)",
+  "moving_length": "exact floor through N=8192; thereafter approximation with stated error bound",
+  "mpmath": "1.4.1",
+  "other_height_ratio": "-37/43",
+  "precision": 130,
+  "radial_endpoint_rates": {
+    "1.95": "0.999782210735569251473036611266",
+    "2.03": "0.999988607558978312257557398567"
+  },
+  "radial_window": "39*N/20 < T <= 203*N/100",
+  "retuned_outer_edge_control": {
+    "other_height_ratio": "-19/21",
+    "rows": [
+      {
+        "N": 262144,
+        "discarded_absolute_envelope": "5.0218995e-27797",
+        "length_approximation_response_error": "4.472593e-78888",
+        "log10_source_normalized": "-1.444247207455855986590924",
+        "precision_relative_error": "1.7684331e-124"
+      },
+      {
+        "N": 1048576,
+        "discarded_absolute_envelope": "2.803559e-111207",
+        "length_approximation_response_error": "8.6250445e-315564",
+        "log10_source_normalized": "8.364714335412005590655204",
+        "precision_relative_error": "6.8205663e-124"
+      }
+    ],
+    "scope": "The exterior gap is an additional hypothesis, not automatic."
+  },
+  "rows": [
+    {
+      "N": 256,
+      "joint_identity_absolute_error": "2.2122928e-133",
+      "log10_length_error_bound": "-inf",
+      "pieces": {
+        "adjacent": {
+          "discarded_absolute_envelope": "0.0",
+          "length_approximation_response_error": "0.0",
+          "log10_raw_response": "74.58793503672732993489754",
+          "log10_source_normalized": "-2.765613038762131138243777",
+          "phase": "3.1248258513169459836",
+          "precision_relative_error": "9.1154504e-128"
+        },
+        "joint": {
+          "discarded_absolute_envelope": "0.0",
+          "length_approximation_response_error": "0.0",
+          "log10_raw_response": "74.56961038014330428661763",
+          "log10_source_normalized": "-2.783937695346156786523694",
+          "phase": "-2.4624853710529453771",
+          "precision_relative_error": "3.0982435e-127"
+        },
+        "packet": {
+          "discarded_absolute_envelope": "0.0",
+          "length_approximation_response_error": "0.0",
+          "log10_raw_response": "74.41333501076315440429749",
+          "log10_source_normalized": "-2.940213064726306668843828",
+          "phase": "-1.181532299288368754",
+          "precision_relative_error": "3.1203877e-127"
+        }
+      }
+    },
+    {
+      "N": 640,
+      "joint_identity_absolute_error": "8.9586975e-134",
+      "log10_length_error_bound": "-inf",
+      "pieces": {
+        "adjacent": {
+          "discarded_absolute_envelope": "5.3165857e-286",
+          "length_approximation_response_error": "0.0",
+          "log10_raw_response": "189.9911774565630444867598",
+          "log10_source_normalized": "-2.941212879579930407728854",
+          "phase": "0.79454101481940991278",
+          "precision_relative_error": "6.6001396e-128"
+        },
+        "joint": {
+          "discarded_absolute_envelope": "5.3165849e-286",
+          "length_approximation_response_error": "0.0",
+          "log10_raw_response": "190.2832483559696714372036",
+          "log10_source_normalized": "-2.649141980173303457285089",
+          "phase": "0.19269967086801994758",
+          "precision_relative_error": "1.1574057e-128"
+        },
+        "packet": {
+          "discarded_absolute_envelope": "8.939563e-293",
+          "length_approximation_response_error": "0.0",
+          "log10_raw_response": "190.0943837230813445757122",
+          "log10_source_normalized": "-2.838006613061630318776504",
+          "phase": "-0.27004964003466601298",
+          "precision_relative_error": "6.9257526e-128"
+        }
+      }
+    },
+    {
+      "N": 1536,
+      "joint_identity_absolute_error": "4.0276558e-134",
+      "log10_length_error_bound": "-inf",
+      "pieces": {
+        "adjacent": {
+          "discarded_absolute_envelope": "1.2418469e-684",
+          "length_approximation_response_error": "0.0",
+          "log10_raw_response": "458.8505444408076607111844",
+          "log10_source_normalized": "-3.765811170193513099781361",
+          "phase": "0.0021272476215470408341",
+          "precision_relative_error": "3.3103531e-127"
+        },
+        "joint": {
+          "discarded_absolute_envelope": "1.2418469e-684",
+          "length_approximation_response_error": "0.0",
+          "log10_raw_response": "457.9292332449311018658639",
+          "log10_source_normalized": "-4.687122366070071945101853",
+          "phase": "0.86142348571082622055",
+          "precision_relative_error": "2.6059531e-125"
+        },
+        "packet": {
+          "discarded_absolute_envelope": "6.8502837e-701",
+          "length_approximation_response_error": "0.0",
+          "log10_raw_response": "458.8172455673150311500281",
+          "log10_source_normalized": "-3.79911004368614266093773",
+          "phase": "3.0455448301150324351",
+          "precision_relative_error": "3.1185791e-126"
+        }
+      }
+    },
+    {
+      "N": 4096,
+      "joint_identity_absolute_error": "2.2690622e-134",
+      "log10_length_error_bound": "-inf",
+      "pieces": {
+        "adjacent": {
+          "discarded_absolute_envelope": "2.169757e-519",
+          "length_approximation_response_error": "0.0",
+          "log10_raw_response": "1229.754029999894909184646",
+          "log10_source_normalized": "-3.387940682129690101968657",
+          "phase": "-1.9313369975441202235",
+          "precision_relative_error": "2.4236773e-126"
+        },
+        "joint": {
+          "discarded_absolute_envelope": "4.028491e-429",
+          "length_approximation_response_error": "0.0",
+          "log10_raw_response": "1229.951831477264590077508",
+          "log10_source_normalized": "-3.190139204760009209106344",
+          "phase": "-1.7332225071816324842",
+          "precision_relative_error": "3.553472e-126"
+        },
+        "packet": {
+          "discarded_absolute_envelope": "4.028491e-429",
+          "length_approximation_response_error": "0.0",
+          "log10_raw_response": "1229.552049183095244315447",
+          "log10_source_normalized": "-3.589921498929354971167649",
+          "phase": "-1.4144866320756727019",
+          "precision_relative_error": "5.298115e-126"
+        }
+      }
+    },
+    {
+      "N": 8192,
+      "joint_identity_absolute_error": "2.7516421e-135",
+      "log10_length_error_bound": "-inf",
+      "pieces": {
+        "adjacent": {
+          "discarded_absolute_envelope": "9.7012995e-1044",
+          "length_approximation_response_error": "0.0",
+          "log10_raw_response": "2462.252314268113767108196",
+          "log10_source_normalized": "-3.730640527548312939457519",
+          "phase": "0.11754473319327785212",
+          "precision_relative_error": "2.7612183e-126"
+        },
+        "joint": {
+          "discarded_absolute_envelope": "3.344574e-863",
+          "length_approximation_response_error": "0.0",
+          "log10_raw_response": "2462.300233414023360965731",
+          "log10_source_normalized": "-3.682721381638719081922238",
+          "phase": "-1.2018241662420982046",
+          "precision_relative_error": "8.4463926e-126"
+        },
+        "packet": {
+          "discarded_absolute_envelope": "3.344574e-863",
+          "length_approximation_response_error": "0.0",
+          "log10_raw_response": "2462.366424723170834723282",
+          "log10_source_normalized": "-3.616530072491245324371172",
+          "phase": "-2.0419966254490367018",
+          "precision_relative_error": "5.4446989e-126"
+        }
+      }
+    },
+    {
+      "N": 65536,
+      "joint_identity_absolute_error": "3.4017244e-135",
+      "log10_length_error_bound": "-19720.0371992695",
+      "pieces": {
+        "adjacent": {
+          "discarded_absolute_envelope": "1.9640487e-8389",
+          "length_approximation_response_error": "1.0075291e-19716",
+          "log10_raw_response": "19721.84147330758935519382",
+          "log10_source_normalized": "-3.91525907899745550837094",
+          "phase": "-2.4499015512741459888",
+          "precision_relative_error": "4.3412301e-125"
+        },
+        "joint": {
+          "discarded_absolute_envelope": "4.1726225e-6945",
+          "length_approximation_response_error": "3.020703e-19716",
+          "log10_raw_response": "19719.45078292274825717478",
+          "log10_source_normalized": "-6.30594946383855352740739",
+          "phase": "-3.0965308946873224839",
+          "precision_relative_error": "1.0107158e-124"
+        },
+        "packet": {
+          "discarded_absolute_envelope": "4.1726225e-6945",
+          "length_approximation_response_error": "2.0141854e-19716",
+          "log10_raw_response": "19721.84006251340510850404",
+          "log10_source_normalized": "-3.916669873181702198144485",
+          "phase": "0.69414964438584826307",
+          "precision_relative_error": "4.3882003e-125"
+        }
+      }
+    },
+    {
+      "N": 262144,
+      "joint_identity_absolute_error": "5.8858477e-134",
+      "log10_length_error_bound": "-78895.8023817028",
+      "pieces": {
+        "adjacent": {
+          "discarded_absolute_envelope": "7.572813e-33575",
+          "length_approximation_response_error": "1.1356709e-78888",
+          "log10_raw_response": "78900.29292570100889093723",
+          "log10_source_normalized": "-1.831044140176996294794298",
+          "phase": "1.8258541552218200049",
+          "precision_relative_error": "5.5687918e-125"
+        },
+        "joint": {
+          "discarded_absolute_envelope": "2.294901e-27797",
+          "length_approximation_response_error": "1.9577512e-78888",
+          "log10_raw_response": "78894.2512746804452742934",
+          "log10_source_normalized": "-7.872695160740612938626835",
+          "phase": "-1.3904744648239434924",
+          "precision_relative_error": "2.2759609e-124"
+        },
+        "packet": {
+          "discarded_absolute_envelope": "2.294901e-27797",
+          "length_approximation_response_error": "1.9744498e-78888",
+          "log10_raw_response": "78900.29292609448565951965",
+          "log10_source_normalized": "-1.831043746700227712373846",
+          "phase": "-1.3157385662061045529",
+          "precision_relative_error": "5.5688077e-125"
+        }
+      }
+    },
+    {
+      "N": 1048576,
+      "joint_identity_absolute_error": "1.7249174e-123",
+      "log10_length_error_bound": "-315600.669272772",
+      "pieces": {
+        "adjacent": {
+          "discarded_absolute_envelope": "1.5189715e-134317",
+          "length_approximation_response_error": "3.4423456e-315565",
+          "log10_raw_response": "315615.4775044958259479256",
+          "log10_source_normalized": "7.884584836243754574190955",
+          "phase": "1.8908570891995891297",
+          "precision_relative_error": "1.0693337e-123"
+        },
+        "joint": {
+          "discarded_absolute_envelope": "1.2811687e-111207",
+          "length_approximation_response_error": "3.8032257e-315564",
+          "log10_raw_response": "315595.5281696914285184596",
+          "log10_source_normalized": "-12.06474996815367489181615",
+          "phase": "-0.84985757872061339493",
+          "precision_relative_error": "9.0759287e-124"
+        },
+        "packet": {
+          "discarded_absolute_envelope": "1.2811687e-111207",
+          "length_approximation_response_error": "4.0012605e-315564",
+          "log10_raw_response": "315615.4775044958259479256",
+          "log10_source_normalized": "7.884584836243754574195448",
+          "phase": "-1.2507355643902041087",
+          "precision_relative_error": "1.0693337e-123"
+        }
+      }
+    }
+  ],
+  "scope": "Synthetic finite all-count rational model, not actual zeros or a literal packet bound.",
+  "script_sha256": "7e324723b301a79f18440ba920c03409adf53f6041879d5d11389457f2883cfc",
+  "seam_resonant_exponent": "0.0000306902817773471352249767854734",
+  "selected_beta": "19999/20000",
+  "share_measure": "dp; no claim that this is the literal factorial/Riesz packet weight.",
+  "symmetry": "Conjugation and beta -> 1-beta retained for all eight synthetic zeros.",
+  "two_clock_pole_quotient": "C*(w-pole+z)/(C*(w-pole)+z), NOT 1",
+  "two_clock_regression_error": "2.256032e-131",
+  "u": "10001/20000"
+}

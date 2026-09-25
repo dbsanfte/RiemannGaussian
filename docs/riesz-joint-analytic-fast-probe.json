@@ -1,0 +1,120 @@
+{
+  "status": "uncertified all-count continuum diagnostic; NOT a literal prime transfer",
+  "script_sha256": "526cc28e1dc3ea16d731f350cd77edfdd7e7cffbf6adf6c7f964eec17220e754",
+  "error": "grid and quadrature errors must be refined; no rigorous error enclosure",
+  "finite_subset_regression": {
+    "direct": [
+      0.049516748602381644,
+      0.33232722775375445
+    ],
+    "series": [
+      0.04951674860238171,
+      0.33232722775375456
+    ],
+    "absolute_difference": 1.3092278833360675e-16
+  },
+  "modal_recurrence_regression": {
+    "grid": 512,
+    "maximum_coefficient_difference": 7.131015156950616e-13
+  },
+  "rows": [
+    {
+      "N": 1024,
+      "share_grid": 2048,
+      "quadrature_per_axis": 64,
+      "least_share_range": [
+        0.005,
+        0.06
+      ],
+      "rectangle_evaluation": "direct finite binomial formula at quadrature nodes",
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.4999999999941735e-05,
+          -0.2
+        ]
+      ],
+      "density_amplitudes": [
+        1,
+        1
+      ],
+      "physical_row_acceptance": 0.88916015625,
+      "joint_source_normalized": {
+        "real": -2.8154542988920415e-08,
+        "imag": -1.1375760577253722e-09,
+        "norm": 2.8177515330526887e-08
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -1.0867701819167483e-08,
+        "imag": -5.02249075325827e-10,
+        "norm": 1.0879301308631996e-08
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -1.7286841169752933e-08,
+        "imag": -6.353269823995452e-10,
+        "norm": 1.7298512017015507e-08
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 1.0580664953284786e-15,
+      "log_raw_norm": 692.9886236928596
+    },
+    {
+      "N": 1024,
+      "share_grid": 2048,
+      "quadrature_per_axis": 64,
+      "least_share_range": [
+        0.005,
+        0.06
+      ],
+      "rectangle_evaluation": "direct finite binomial formula at quadrature nodes",
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.4999999999941735e-05,
+          -0.2
+        ],
+        [
+          4.999999999999449e-05,
+          0.6
+        ]
+      ],
+      "density_amplitudes": [
+        1,
+        1,
+        -1
+      ],
+      "physical_row_acceptance": 0.88916015625,
+      "joint_source_normalized": {
+        "real": 6.803031696922988e-06,
+        "imag": 1.7236106184143552e-05,
+        "norm": 1.8530099747718857e-05
+      },
+      "old_share_coarse_diagnostic": {
+        "real": 1.8308457736011383e-06,
+        "imag": 8.135930256487102e-06,
+        "norm": 8.339385911752462e-06
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": 4.972185923321849e-06,
+        "imag": 9.10017592765645e-06,
+        "norm": 1.036994863875313e-05
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 2.595804821631177e-13,
+      "log_raw_norm": 699.4772510639601
+    }
+  ],
+  "rectangle_checks": [
+    {
+      "N": 1024,
+      "sampled_interpolation_error": 1.9226251146697848e-08
+    }
+  ],
+  "analytic_mode_scope": "synthetic positive-residue mode with complete-leg coefficient radius >4/3; NOT asserted to be the actual zeta remainder"
+}

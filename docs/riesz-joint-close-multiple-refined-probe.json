@@ -1,0 +1,88 @@
+{
+  "status": "uncertified all-count continuum diagnostic; NOT a literal prime transfer",
+  "script_sha256": "ee80c7df48cd890e51174160cfc296bd3ce1227d8d05d611a84566f6c1c4ab46",
+  "error": "grid and quadrature errors must be refined; no rigorous error enclosure",
+  "finite_subset_regression": {
+    "direct": [
+      0.049516748602381644,
+      0.33232722775375445
+    ],
+    "series": [
+      0.04951674860238171,
+      0.33232722775375456
+    ],
+    "absolute_difference": 1.3092278833360675e-16
+  },
+  "modal_recurrence_regression": {
+    "grid": 512,
+    "maximum_coefficient_difference": 7.131015156950616e-13
+  },
+  "rectangle_grid_regression": {
+    "orders": [
+      25,
+      256,
+      640
+    ],
+    "maximum_absolute_difference": 2.220446049250313e-16,
+    "comparison": "same full finite sum, different evaluation order; no interpolation"
+  },
+  "rows": [
+    {
+      "N": 65536,
+      "share_grid": 8192,
+      "quadrature_per_axis": 256,
+      "largest_share_quadrature": 640,
+      "radial_quadrature": 320,
+      "least_share_range": [
+        0.005,
+        0.06
+      ],
+      "radial_window": [
+        1.8,
+        2.2
+      ],
+      "rectangle_evaluation": "direct finite binomial formula at quadrature nodes",
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.5e-05,
+          -0.006
+        ],
+        [
+          2.5e-05,
+          0.006
+        ]
+      ],
+      "density_amplitudes": [
+        1,
+        3,
+        3
+      ],
+      "physical_row_acceptance": 1.0,
+      "radial_batch": 8,
+      "fft_response_sampled_difference": 1.9224932294643358e-14,
+      "joint_source_normalized": {
+        "real": -0.005588361789017579,
+        "imag": -3.7892651901280264e-12,
+        "norm": 0.005588361789017579
+      },
+      "old_share_coarse_diagnostic": {
+        "real": 0.01665961555521554,
+        "imag": -1.9193623113115504e-12,
+        "norm": 0.01665961555521554
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -0.022247977344233116,
+        "imag": -1.869902878816476e-12,
+        "norm": 0.022247977344233116
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 7.267929134373703e-10,
+      "log_raw_norm": 45415.046330924524
+    }
+  ],
+  "close_mode_scope": "synthetic actual-style negative residues; each competing complete mode is outside the selected radius; not an actual zeta-zero configuration"
+}

@@ -1602,6 +1602,309 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+### Literal joint prime transfer (2026-09-25)
+
+`docs/zeta-riesz-joint-prime-transfer.md` records independent arithmetic
+progress beyond the modal seam model. `ZetaRieszJointBoundary` joins the
+old packet with explicitly debited neighbors in its old rest. Keeping the
+exact original rectangle, its literal exterior at largest share <=1/2 or
+>=3/5 has source-normalized bound 2 U C_sigma r^N, where
+r=U*(262144/131071)*exp(-1/1600)<1. No exterior modal gap is assumed.
+`ZetaRieszJointPrimeTransfer` gives the exact prime-kernel expansion with
+scalar (N+1)/log(n), preserving every correlated allocation and low order.
+
+`ZetaRieszJointOwnerTransfer` pays removal of canonical-largest ownership:
+each wrong owner has share <=1/2; the widened box has count ceiling 83
+(NOT 39), and the complete wrong-incidence sum costs 166 U C_sigma r^N.
+For N>=21, the marked incidence weights still sum to at most one, by
+strict factorial majority. `markedPacket_riesz_expansion` is the exact
+remaining signed sum, retaining least-prime, physical, count, core and
+nondominant masks and the Riesz hinge. `ZetaRieszJointAllocationError` now
+pays the old allocation overlap on this enlarged carrier as well:
+`boundedShare * weight <= 83 exp(-N/3200)`, and the marked error costs
+`249 U C_sigma r_a^N`, with r_a=U*(262144/131071)*exp(-1/3200)<1.
+Its exact raw packet removes only that allocation factor. The combined
+source-normalized comparison with old packet plus neighbors is bounded by
+U C_sigma (249 r_a^N + 166 r^N). No completed prime
+phase or zero hypothesis is used for either error estimate.
+
+Do not report this as decay of the joint/marked packet, a signed floor or
+a new zero exclusion. In particular the remaining least-prime/Riesz masks
+still prevent separate complete-leg phase replacement. The optional probe
+`scripts/probe_riesz_joint_boundary.py` contains finite actual-prime label
+regressions and a distinct unmasked beta-integral modal diagnostic; neither
+is an exhaustive carrier estimate. Keep all probes outside ordinary CI.
+The truncated Sobol masked probe is inconclusive: high-count sampling error
+exceeds the target and its omitted count tail is unpaid. The all-count
+renewal probe instead computes A(X)B(XY) with A=exp(-sum a_i X^i) and
+B=exp(sum a_i X^i), retaining the ramp difference, finite rectangle,
+moving cutoff and full complex modes. It is an uncertified continuum
+diagnostic, not a transfer to distinct arithmetic primes or a decay proof.
+The old fixed-cutoff, masked-mode and diverging-rest-allowance no-gos remain.
+`ZetaRieszLeastBoundary` subsequently joins both least-share directions,
+with an exact debit to the prior rest. Its full packet has no hard log-share
+cut. The original rectangle mass outside least share 1/200..3/50 is
+<=3 exp(-N/1600); combined largest/least exterior error is 3 U C_sigma r^N.
+On the surviving interior the newly proved count ceiling is 200. Ownership
+plus old-allocation cleanup costs 600 U C_sigma r_a^N. The exact ledger is
+coreResponse = rawInteriorPacket + rest - cleanupError + exteriorPacket;
+both named errors are independently o(1) at source scale. This is still
+not a bound for rawInteriorPacket or rest. The canonical least prime,
+Riesz hinge, physical/core/count support and factorial correlations remain
+inside the explicit actual-prime sum. Do not transfer separate complete-leg
+limits through them. The widened all-count numerical probe is synthetic,
+has no certified continuum error and does not contain the complete actual
+zeta pole/analytic-remainder transfer.
+The same module now pays the two final radial localizations of the actual
+marked sum: `exists_raw_radial_error` gives C*r_rad^N, r_rad<1, uniformly
+in height, count and 0<=u<=10001/20000 for N>=21. `rawRadialBand` still has
+the original nondominant, physical, count and share restrictions; it is
+not an unrestricted completion. `tendsto_rawRadial_sub_full` proves the
+wider signed sum and the joined packet have the same source asymptotics.
+Its own cancellation estimate remains open. The synthetic analytic-mode
+probe needs separate oscillatory quadrature refinement: coarse apparent
+growth changed substantially on refinement. The wider radial diagnostic
+has joined norms about 2.21e-8 at N=2048 and 5.77e-9 at N=4096, but these
+have no certified continuum error and do not rule out delayed growth.
+The canonical least-prime ordering is still inside the literal sum; the
+unmarked finite-mode support theorem does not automatically handle it.
+`highCountPacket_bound` independently pays omega>=64 on the retained
+interior. Such labels have least share<=1/126; the exact factorial tilt
+gives mass<=2 exp(-N/5000) per marked incidence. The source-normalized
+tail costs 400 U C_sigma r_count^N, where
+r_count=U*(262144/131071)*exp(-1/5000)<1. The exact count ledger leaves
+counts 3..63 signed and coupled in `lowCountPacket`; their bound is open.
+The later joint owner/least tilt improves this cutoff to 56: squarefreeness
+gives x_p+55*x_min<=1, and the exact tilts 341/340 and 79/68 give
+`markedWeight_joint_count_tail <= 2 exp(-N/9700)`. With the finer majorant
+sigma=1+1/1048576, `jointHighCountPacket_bound` pays all omega>=56 by
+400 U C_sigma r_56^N, r_56=U*(1048576/524287)*exp(-1/9700)<1.
+The rate is close to one (about .999998809568); do not claim a small explicit
+finite-order bound from the asymptotic saving. `joint_count_ledger` keeps
+counts 3..55 together in `jointLowCountPacket`. The explicit
+`fullPacket_sub_jointLow_bound` and `tendsto_rawRadial_sub_jointLow` pay the
+whole comparison to the existing joined/radial packet. Their signed low-count
+target is still unbounded. The complementary carrier also still needs its
+independent floor. Preserve the earlier 64-factor result and its faster rate.
+The further least-share quadrature refinement changes the N=4096
+synthetic norm from 5.77e-9 to 8.52e-9. Do not certify either number or
+infer asymptotic decay from these finite diagnostics.
+On 2026-09-25 the user authorized committing and pushing the accumulated
+work after this slice passes its gates. Continue without subagents. The
+signed low-count target remains open; publishing this arithmetic tail bound
+does not mark the retained signed-sum objective complete.
+The close-mode stress family uses synthetic shifts 0 and 1/40000 +/- .006i,
+with selected multiplicity one. Competing multiplicities three give a
+refined response about -0.00559 at N=65536; the N=262144 value remains
+resolution-sensitive. These are not actual zeta zeros, prime-sum estimates,
+eventual growth theorems or numerical certificates. The independent
+65-digit recurrence audit is a rounding check, not a quadrature enclosure.
+Preserve these negative controls when exploring new cancellation identities.
+
+### Joint shifted configurations and share-seam cancellation (2026-09-25)
+
+The current local continuation is recorded in
+`docs/zeta-riesz-joint-cancellation.md`. `ZetaRieszJointShift` retains
+every nonempty shifted subset and every factorial order. The complete
+signed correction cancels the shifted count factor exactly and returns
+the original response WITH its positive pole. The exact two-variable
+pole quotient is C(a+z)/(Ca+z), not one: shifting factorial moments does
+not rescale the literal Riesz cutoff. Do not silently use a common-clock
+model as the literal filtered count transform. Previous negative audits
+remain valid within their stated model hypotheses.
+
+`ZetaRieszJointShiftError` pays a literal arithmetic error on the existing
+FIXED `FullParityBox`: every prime log is at least 117N/5000, every order
+at most N+2, and the product-multiplier error is at most
+2^39 exp(-N/50). `correctionPacket_bound` and
+`tendsto_shiftedPacket_sub_original` give an independent source-normalized
+geometric bound, keeping all original masks and orders zero/one.
+This is not a shrinking-share bound, a completed-mode transfer, or decay
+of the shifted/original packet itself. Keep those distinctions explicit.
+
+The optional synthetic finite-mode probe `scripts/probe_riesz_joint_share.py`
+finds opposite growing terms on adjacent share intervals, with a small
+signed union. It retains the radial window and moving length, but uses dp
+and does not identify the literal prime/least-share/factorial masks.
+`ZetaRieszJointShare.jointModal_bound` proves geometric decay of the
+coupled integral from its NONRESONANT EXTERIOR endpoints; the shared
+internal endpoint may be resonant. `model_joint_tendsto` instantiates
+the dominant seam regression, not the entire eight-zero numerical model.
+The retuned `-19/21` height-ratio control restores growth at the NEW outer
+edge. `retuned_edge_resonance` verifies this geometry at any nonzero edge.
+Do not infer universal endpoint separation from enlarging a share box.
+This is a new joint mechanism, not a reversal of the radial counterexample
+for an isolated hard-share packet. The adjacent arithmetic slice is part
+of the unpaid rest. Preserve its signed correlation and do not give it
+a separate positive allowance. The remaining task is a literal weighted
+joint transfer and then a signed bound on the remaining carrier. No RH,
+zero-free, or certificate frontier changes. Continue locally without
+subagents, unrequested commits, or exhaustive certificate verification.
+
+### Causal pole-surface regression bypass (2026-09-25)
+
+After the request to keep iterating, `ZetaRieszCausalSurface` proves a
+different mechanism for the latest toy analytic-factor counterexample.
+See `docs/zeta-riesz-causal-surface.md`. The cutoff-only factor 1/(1-z)
+matches the entire selected pole surface. Its positive-cutoff-ray inverse
+preserves the triangular cone. The exact response splits into that
+supported component and 1/[z(w+1)(z-1)], whose ordinary inverse is proved.
+Below the diagonal, the complete toy inverse is bounded by exp(-(s-d)).
+
+`sourceFactor_path` checks the original normalized counterexample exactly
+at the physical center w=1/2,z=-ut, including displacement delta=1/2-u.
+`sourceKernel_transform` proves its double inverse by genuine changes of
+variables. `sourceMaskedToy_radial_decay` retains the moving length,
+core window, largest-share mask, one-sided boundary and full phase; its
+normalized bound is (4/5)^(N+1), with <1/1000 for N>=32. Integrability is
+proved. The older (2/3)^(N+1) bound is for the unscaled comparison only.
+These are regression results, not literal finite-prime packet decay or an
+independent arithmetic floor. Keep public frontiers unchanged.
+
+`displacedKernel_core_bound` proves the joint model envelope
+2 exp(-7T/25000) when the analytic mode has Re b>=1/1000.
+`directional_radial_bound` turns any proved M exp(-7T/25000) joint envelope
+into M(9999/10000)^(N+1). The actual remainder has not been shown to meet
+this condition. The complex-mode probe retains the one-sided term and
+shows delayed radial growth with Re b<0 despite a pole radius >4/3.
+This numerical audit prevents treating the original real-mode regression
+or the local Cauchy radius as a universal remainder theorem.
+
+The actual shifted conjugate channel is now checked in Lean:
+`shiftedMode_conjugate_re_gt` gives physical Re xi>99/100, while
+`shiftedPole_conjugate_outside` places its Taylor pole outside radius two.
+`shiftedPole_original_re_gt` puts the original center there in Re>199/100.
+`shifted_conjugate_displacement_neg` rules out the proposed positive
+horizontal displacement for this actual channel. The finite four-mode
+probe retains both originals and both shifted copies and grows strongly.
+It uses synthetic coordinates; do not claim a full-divisor or arithmetic
+packet growth theorem. Any further transfer must retain joint cancellation
+of this channel; a favorable real-mode toy or separate Cauchy envelope
+cannot replace that estimate.
+
+A real-contraction follow-up was tested numerically before construction.
+C=1/2 removes the positive conjugate displacement, but two farther
+rightward pairs at height ratios 10 and 119/40 produce delayed growth,
+including their full functional-equation/conjugation quartets. The probe
+retains the selected largest-prime source. `contraction_model_phase_exact`,
+`contraction_model_rate` and `contraction_model_exponent_pos` check the
+resonant term's exact zero radial frequency, rate and exponent >1/40000.
+These are model facts, not literal-packet growth. Do not promote the
+selected-pair success or a minimum-height hypothesis into an all-mode
+bound. Keep `probe_riesz_contracted_modes.py` optional and its stated
+moving-length and numerical truncation errors visible.
+
+`surface_subtraction_removable` gives the parameterized normal-pole
+subtraction H(w,z)-H(-z,z). The next actual obligations are causality and
+growth control of the real zeta count trace, and a strict-core bound for
+its remaining joint response. Generic local analyticity does not supply
+those facts. Preserve all previous support, artificial-mode, radial and
+Gamma-growth no-gos; this toy model is distinct from the old divergent
+constant-filter masked-mode model. Keep the optional exact-floor radial
+probe outside CI. Continue locally without subagents or unrequested commits.
+
+### Finite artificial-mode renormalization (2026-09-25)
+
+The test is recorded in `docs/zeta-riesz-artificial-mode-audit.md`.
+`ZetaRieszArtificialModeAudit` proves arbitrary-small-parameter interpolation
+of any nonzero H(1), both normalized endpoint values, single-slice removable
+singularity and geometric Cauchy bounds. The support theorem already allows
+arbitrary fixed complex mode locations; `augmented_support` retains every
+boundary channel for the selected mode plus artificial modes. The supplied
+m=8 coefficient regression is reproduced.
+
+The exact two-variable gate fails for the existing toy remainder.
+`repeated_factor_path` identifies the correct fixed-mode lift. On the
+selected surface w+z=0 its trace is a polynomial in w, whereas the toy
+factor has trace 1/(w+1). `not_eventually_surface_match` rules out equality
+on any neighborhood of w=1 for every finite fixed complex family.
+`residual_normal_residue` and `frequently_residual_pole` prove genuine
+uncancelled poles arbitrarily near the interpolated slice. Matching the
+single value H(1) does not give joint pole removal. A w-dependent location
+does not satisfy the fixed-mode diagonal-convolution support theorem.
+
+Preserve the valid one-variable interpolation result and every earlier
+audit. This is not a no-go for every coupled estimate or a theorem about
+the actual zeta remainder's value. Stop before physical-cutoff or packet
+work; keep the optional numerical probe outside CI. No new independent
+floor or public mathematical frontier is claimed. Continue locally without
+subagents or unrequested commits.
+
+### Finite local divisor and analytic-factor audit (2026-09-25)
+
+The local continuation is recorded in `docs/zeta-riesz-local-analytic-audit.md`.
+`ZetaRieszLocalXiDivisor` uses only the adaptive radius: the finite divisor
+consists of genuine zeta zeros, retains actual analytic multiplicities and
+the selected zero, and has no reflected modes. `normalized_radius_bounds`
+proves 4/3<R/u<2. Removable singularities give one analytic H in the disk;
+`fullGenerating_local` splits the shifted-center full generator into the
+finite negative principal parts and one analytic A. Cauchy bounds A's
+coefficients by M(3/4)^n. `local_singular_core` retains every low-order
+boundary channel and vanishes on the strict core tests.
+
+The generic analytic-perturbation test fails. The count exponent is a
+logarithmic primitive of the leg generator, not its exponential directly.
+`ZetaRieszAnalyticFactorAudit` takes A(t)=1/(2-t), analytic on radius two,
+whose normalized count factor is 1-t/2. Multiplication by 1/(1-t) leaves
+the exact principal part 1/(2(t-1)); every positive-order coefficient is
+-1/2. `analytic_factor_principal` exposes the general residue
+-Q(1)(exp(B(1))-1), with B the integrated count exponent.
+
+Coefficient persistence alone does not prove support failure. The exact
+full response is 1/(z(w+z)(w+1)); `leakageKernel_transform` identifies its
+ordinary one-sided inverse. `leakageKernel_below_pos` proves it positive
+on 0<d<s, including gap 3/10>7/25 and largest share 11/20. All count and
+empty-cofactor terms are retained. This is a toy analytic-factor
+counterexample, not a theorem that the actual zeta remainder leaks.
+Its local analytic coefficient hypotheses alone cannot close the route.
+
+Stop before physical-cutoff or broad-packet work. Further progress needs
+special information about the actual joint analytic count factor, not
+another Cauchy envelope. Preserve both the finite support theorem and the
+global Gamma-growth no-go. No new arithmetic floor or public frontier is
+proved. Keep `scripts/probe_riesz_analytic_factor.py` optional; numerical
+truncations are not certificates. Continue locally without subagents or
+unrequested commits.
+
+### Finite negative-mode support and infinite-divisor audit (2026-09-25)
+
+The local continuation from `cb88975` is recorded in
+`docs/zeta-riesz-negative-mode-support.md`. Preserve all previous results
+and no-gos. `ZetaRieszNegativeModeSupport.inversePrimitive_laplace`
+identifies an explicit weak inverse with response/z^r. Its signed normal
+derivatives retain the empty-subset, diagonal delta and higher derivative
+channels. `inversePrimitive_support` proves vanishing on tests with
+closed support in d<s, including r=0. `inversePrimitive_core_patch`
+connects it to the literal core gap. No factorial orders are deleted.
+
+`ZetaRieszInfiniteModeAudit` retains actual analytic multiplicities in
+finite canonical windows. Their restricted core-test limits are zero;
+this alone does not identify the complete inverse. The exact xi count
+factor xi(s)/xi(s+z) solves the global-divisor ODE with its constant
+boundary channel retained. `xi_response_normal_growth` proves that,
+at z_n=v+2n+1 for every v>1, the norm of
+(1-xi(v-z_n)/xi(v))/z_n^(r+2) tends to infinity for every fixed r.
+Reflection and the actual factorial Gamma lower bound prove this without
+any off-line-zero hypothesis. Inverse-square leg summability is preserved.
+
+`no_dominated_cone_primitive` and
+`no_dominated_shifted_cone_primitive` rule out an ordinary inverse
+primitive with fixed exponential weights in both cone coordinates and
+agreement with the xi response on that eventual normal ray. This is a
+precise obstruction to the proposed fixed-primitive dominated passage,
+not a theorem excluding every generalized inverse or disproving packet
+decay. No below-diagonal actual-zero contribution has been identified.
+Do not call a restricted zero limit a complete-divisor inverse theorem.
+
+Stop this pass at the infinite-divisor gate. The supported insertion
+exp(-N/100) estimate is still not a literal cutoff estimate. No broad
+packet, multiplier-subset error bound, new rest ledger or independent
+floor is proved. A joint treatment of the regular completion term would
+need a new bound before it can repair this count-transform growth.
+The optional actual-xi probe is `scripts/probe_riesz_xi_support.py`; keep
+it out of routine CI. Continue locally without subagents or unrequested
+commits. The public RH, zero-free and certificate frontiers are unchanged.
+
 ### Per-leg shifted-center test (2026-09-25)
 
 The local pass from `316a00c` is recorded in
@@ -1620,9 +1923,10 @@ Do not transfer that complete-leg theorem through a hard share mask.
 `ZetaRieszShiftedAllocation` proves exact arithmetic product factorization
 and uniform relative multiplier closeness; this is not source-normalized
 packet closeness. `ZetaRieszNegativeModeCascade` proves finite count/product
-algebra including two/three modes and the adjoining-mode recurrence. Its
-complex-mode integral identification and boundary-aware inverse remain
-open; do not drop diagonal delta/derivative channels. The moving supported
+algebra including two/three modes and the adjoining-mode recurrence. The
+subsequent finite weak inverse/support theorem and complete-divisor
+domination obstruction are recorded above; do not drop diagonal
+delta/derivative channels. The moving supported
 insertion process has a checked exp(-N/100) bound for N>=100000 in rescaled
 coordinates. This is not an identification with the literal multimode
 positive-cutoff packet; auxiliary cutoff, boundary and infinite-mode

@@ -1,0 +1,428 @@
+{
+  "status": "uncertified all-count continuum diagnostic; NOT a literal prime transfer",
+  "script_sha256": "9a9ecdd7b46bcf8a02dd4f679d7d6de73f2ea570484cbebee6841733e3b1bfae",
+  "error": "grid and quadrature errors must be refined; no rigorous error enclosure",
+  "finite_subset_regression": {
+    "direct": [
+      0.049516748602381644,
+      0.33232722775375445
+    ],
+    "series": [
+      0.04951674860238171,
+      0.33232722775375456
+    ],
+    "absolute_difference": 1.3092278833360675e-16
+  },
+  "rows": [
+    {
+      "N": 640,
+      "share_grid": 1024,
+      "quadrature_per_axis": 40,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": -3.5418656559315517e-15,
+        "imag": 0.0,
+        "norm": 3.5418656559315517e-15
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -1.2966023770611817e-15,
+        "imag": 0.0,
+        "norm": 1.2966023770611817e-15
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -2.24526327887037e-15,
+        "imag": 0.0,
+        "norm": 2.24526327887037e-15
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 1.0299920638612292e-17,
+      "log_raw_norm": 410.96912315856883
+    },
+    {
+      "N": 640,
+      "share_grid": 1024,
+      "quadrature_per_axis": 40,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.4999999999941735e-05,
+          -0.1
+        ],
+        [
+          2.4999999999941735e-05,
+          0.11621621621621622
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": -6.151305489930178e-16,
+        "imag": 4.475627789886589e-16,
+        "norm": 7.607220474263268e-16
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -3.0218566111723996e-16,
+        "imag": 2.1583628284042797e-16,
+        "norm": 3.7135087824756335e-16
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -3.129448878757778e-16,
+        "imag": 2.31726496148231e-16,
+        "norm": 3.893991164149185e-16
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 2.8451580443804176e-17,
+      "log_raw_norm": 409.43098231447823
+    },
+    {
+      "N": 640,
+      "share_grid": 2048,
+      "quadrature_per_axis": 40,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": -3.5361534642320016e-15,
+        "imag": 0.0,
+        "norm": 3.5361534642320016e-15
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -1.2945314242496545e-15,
+        "imag": 0.0,
+        "norm": 1.2945314242496545e-15
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -2.241622039982347e-15,
+        "imag": 0.0,
+        "norm": 2.241622039982347e-15
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 2.7755575615628914e-17,
+      "log_raw_norm": 410.9675090931523
+    },
+    {
+      "N": 640,
+      "share_grid": 2048,
+      "quadrature_per_axis": 40,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.4999999999941735e-05,
+          -0.1
+        ],
+        [
+          2.4999999999941735e-05,
+          0.11621621621621622
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": -6.148233129548598e-16,
+        "imag": 4.49836858617176e-16,
+        "norm": 7.618142198222337e-16
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -3.0201268224463183e-16,
+        "imag": 2.170173960806049e-16,
+        "norm": 3.7189811835797595e-16
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -3.128106307102279e-16,
+        "imag": 2.3281946253657115e-16,
+        "norm": 3.8994280711554156e-16
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 3.402737038855564e-18,
+      "log_raw_norm": 409.432416989772
+    },
+    {
+      "N": 4096,
+      "share_grid": 1024,
+      "quadrature_per_axis": 40,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": -1.8149848579274244e-14,
+        "imag": 0.0,
+        "norm": 1.8149848579274244e-14
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -8.27176211368973e-15,
+        "imag": 0.0,
+        "norm": 8.27176211368973e-15
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -9.878086465584514e-15,
+        "imag": 0.0,
+        "norm": 9.878086465584514e-15
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 1.0299920638612292e-17,
+      "log_raw_norm": 2807.774205060756
+    },
+    {
+      "N": 4096,
+      "share_grid": 1024,
+      "quadrature_per_axis": 40,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.4999999999941735e-05,
+          -0.1
+        ],
+        [
+          2.4999999999941735e-05,
+          0.11621621621621622
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": -1.1407515197312646e-14,
+        "imag": 1.0152953849050946e-14,
+        "norm": 1.527134161879294e-14
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -1.1097553702926633e-14,
+        "imag": 1.079502572936258e-15,
+        "norm": 1.1149933811207878e-14
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -3.0996149438601273e-16,
+        "imag": 9.073451276114688e-15,
+        "norm": 9.078744086492871e-15
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 3.5381555418772973e-17,
+      "log_raw_norm": 2807.6015208179674
+    },
+    {
+      "N": 4096,
+      "share_grid": 2048,
+      "quadrature_per_axis": 40,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": -1.8120645278919642e-14,
+        "imag": 0.0,
+        "norm": 1.8120645278919642e-14
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -8.25837992417954e-15,
+        "imag": 0.0,
+        "norm": 8.25837992417954e-15
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -9.862265354740102e-15,
+        "imag": 0.0,
+        "norm": 9.862265354740102e-15
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 2.7755575615628914e-17,
+      "log_raw_norm": 2807.7725947542194
+    },
+    {
+      "N": 4096,
+      "share_grid": 2048,
+      "quadrature_per_axis": 40,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.4999999999941735e-05,
+          -0.1
+        ],
+        [
+          2.4999999999941735e-05,
+          0.11621621621621622
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": -1.0996465225365271e-14,
+        "imag": 1.0469673017902047e-14,
+        "norm": 1.518342189871749e-14
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -1.091407669235227e-14,
+        "imag": 1.1604157321784639e-15,
+        "norm": 1.0975592681857065e-14
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -8.238853301300099e-17,
+        "imag": 9.309257285723583e-15,
+        "norm": 9.309621854950374e-15
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 3.6522006376499444e-17,
+      "log_raw_norm": 2807.595747010906
+    },
+    {
+      "N": 8192,
+      "share_grid": 1024,
+      "quadrature_per_axis": 40,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": -1.9407086002967575e-14,
+        "imag": 0.0,
+        "norm": 1.9407086002967575e-14
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -8.930849818044238e-15,
+        "imag": 0.0,
+        "norm": 8.930849818044238e-15
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -1.0476236184923337e-14,
+        "imag": 0.0,
+        "norm": 1.0476236184923337e-14
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 1.0299920638612292e-17,
+      "log_raw_norm": 5646.5624531522535
+    },
+    {
+      "N": 8192,
+      "share_grid": 1024,
+      "quadrature_per_axis": 40,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.4999999999941735e-05,
+          -0.1
+        ],
+        [
+          2.4999999999941735e-05,
+          0.11621621621621622
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": -4.0310054355275736e-14,
+        "imag": -3.8457247640453075e-14,
+        "norm": 5.571230006205468e-14
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -2.3467105158932167e-14,
+        "imag": -1.4779263807538198e-14,
+        "norm": 2.773322309493055e-14
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -1.684294919634357e-14,
+        "imag": -2.3677983832914877e-14,
+        "norm": 2.9057389009035014e-14
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 9.94869963056663e-17,
+      "log_raw_norm": 5647.617015844511
+    },
+    {
+      "N": 8192,
+      "share_grid": 2048,
+      "quadrature_per_axis": 40,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": -1.9375711836175616e-14,
+        "imag": 0.0,
+        "norm": 1.9375711836175616e-14
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -8.916272057753418e-15,
+        "imag": 0.0,
+        "norm": 8.916272057753418e-15
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -1.0459439778422198e-14,
+        "imag": 0.0,
+        "norm": 1.0459439778422198e-14
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 2.7755575615628914e-17,
+      "log_raw_norm": 5646.560835209486
+    },
+    {
+      "N": 8192,
+      "share_grid": 2048,
+      "quadrature_per_axis": 40,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.4999999999941735e-05,
+          -0.1
+        ],
+        [
+          2.4999999999941735e-05,
+          0.11621621621621622
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": -4.064397256735611e-14,
+        "imag": -4.042102212749948e-14,
+        "norm": 5.732182425470947e-14
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -2.4066634742795977e-14,
+        "imag": -1.5560985475275185e-14,
+        "norm": 2.8659155200474416e-14
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -1.6577337824560134e-14,
+        "imag": -2.4860036652224293e-14,
+        "norm": 2.9880253541419744e-14
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 3.878050376725442e-17,
+      "log_raw_norm": 5647.645496323241
+    }
+  ],
+  "rectangle_checks": [
+    {
+      "N": 640,
+      "sampled_interpolation_error": 6.4243672603936375e-09
+    },
+    {
+      "N": 4096,
+      "sampled_interpolation_error": 3.109412005652956e-08
+    },
+    {
+      "N": 8192,
+      "sampled_interpolation_error": 4.907996002945225e-07
+    }
+  ]
+}

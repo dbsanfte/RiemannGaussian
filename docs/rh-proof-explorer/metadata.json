@@ -12,21 +12,21 @@
   "campaign": {
     "direction": {
       "branch": "riesz-harmonic-cost",
-      "statement": "The harmonic-cost route retains its evaluated source and an open independent -3/40 floor. A shifted-center operator now cancels the pole on each prime leg and yields an all-negative global zero expansion with geometric error. The masked parity packet remains open: adaptive low-order allocations and the arithmetic multiplier error need coupled signed estimates.",
-      "changeReason": "The per-leg shifted-center operator passes its spectral and relative arithmetic tests, unlike total-order filtering. A new full-marginal rate audit shows that generic absolute concentration cannot pay low-order allocations when prime shares shrink."
+      "statement": "The harmonic-cost route retains its exact source and an open independent -3/40 floor. We are bounding a selected packet of the literal signed prime sum with its factorial correlations intact. Exterior shares, ownership, old allocation, radial localization and prime counts >=56 have geometric bounds. Signed counts 3..55 and the complementary carrier remain open.",
+      "changeReason": "The finite support theorem and local divisor decomposition do not survive arbitrary analytic factors or hard masks. The current step therefore bounds literal arithmetic errors before tackling the remaining coupled prime sum."
     },
     "latestUpdate": {
-      "sequence": 75,
-      "id": "shifted-center-global-zero-expansion-and-adaptive-rate-audit",
+      "sequence": 76,
+      "id": "literal-joint-prime-transfer-and-count56-tail",
       "kind": "theorem",
-      "title": "Per-leg pole cancellation and global negative zero expansion proved.",
-      "body": "Lean bounds the complete ordinary-prime leg error geometrically, proves the exact arithmetic multiplier, and controls a moving supported-insertion model. The summed zero-order marginal also gives a source-scale obstruction to discarding adaptive bad allocations by an absolute bound.",
-      "next": "The literal packet still needs signed control of low-order allocations and multiplier errors, plus a boundary-aware multimode inverse. No packet decay, independent floor or new zero exclusion is claimed.",
+      "title": "The selected packet's tail with at least 56 prime factors decays.",
+      "body": "Lean preserves the correlated factorial weights and full phase while paying share, ownership, allocation, radial and high-count errors. Exact ledgers leave counts 3..55 signed together. Finite-mode support and new analytic no-go audits are also recorded.",
+      "next": "Prove cancellation in the retained low-count sum and an independent floor for its complementary carrier. The numerical diagnostics are uncertified; no packet decay or new zero exclusion is claimed.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszShiftedGlobalZeroTheorem"
+        "rieszJointCountTailTheorem"
       ],
-      "documentation": "docs/zeta-riesz-shifted-center-audit.md"
+      "documentation": "docs/zeta-riesz-joint-prime-transfer.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -40,7 +40,7 @@
   "endpoints": [
     {
       "id": "harmonic-remainder",
-      "label": "Current frontier · source after dominant-prime cancellation",
+      "label": "Current frontier \u00b7 source after dominant-prime cancellation",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -55,7 +55,7 @@
     },
     {
       "id": "allowance-obstruction",
-      "label": "Obstruction · fixed allowance diverges at every fixed height",
+      "label": "Obstruction \u00b7 fixed allowance diverges at every fixed height",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -82,7 +82,7 @@
     },
     {
       "id": "one-sided-arithmetic",
-      "label": "One-sided arithmetic · exact divisor signs and finite four-prime credit",
+      "label": "One-sided arithmetic \u00b7 exact divisor signs and finite four-prime credit",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -109,7 +109,7 @@
     },
     {
       "id": "dominant-prime-sector",
-      "label": "Dominant primes · independent decay and exact surviving support",
+      "label": "Dominant primes \u00b7 independent decay and exact surviving support",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -140,7 +140,7 @@
     },
     {
       "id": "exact-wing-reserve",
-      "label": "Exact reserve · evaluated source cost and 3/40 deficit",
+      "label": "Exact reserve \u00b7 evaluated source cost and 3/40 deficit",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -163,7 +163,7 @@
     },
     {
       "id": "joint-allocation",
-      "label": "Complete allocation · masks and every off-mask correction paid",
+      "label": "Complete allocation \u00b7 masks and every off-mask correction paid",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -194,7 +194,7 @@
     },
     {
       "id": "joint-wing-cancellation",
-      "label": "Joint cancellation · original wing and signed composite companion",
+      "label": "Joint cancellation \u00b7 original wing and signed composite companion",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -233,7 +233,7 @@
     },
     {
       "id": "carrier-bound",
-      "label": "Supporting route · critical conditioned-energy bound",
+      "label": "Supporting route \u00b7 critical conditioned-energy bound",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -248,7 +248,7 @@
     },
     {
       "id": "original-source-limit",
-      "label": "Supporting route · original full-carrier source",
+      "label": "Supporting route \u00b7 original full-carrier source",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -263,7 +263,7 @@
     },
     {
       "id": "source-limit",
-      "label": "Harmonic source · under an exposed hypothetical zero",
+      "label": "Harmonic source \u00b7 under an exposed hypothetical zero",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -278,7 +278,7 @@
     },
     {
       "id": "initial-conditioning",
-      "label": "Critical moments · explicit zeta-block costs and their audit",
+      "label": "Critical moments \u00b7 explicit zeta-block costs and their audit",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -889,7 +889,7 @@
     },
     {
       "id": "exponent-audit",
-      "label": "Information audit · exact effect of the exponent gain",
+      "label": "Information audit \u00b7 exact effect of the exponent gain",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -908,7 +908,7 @@
     },
     {
       "id": "full-recurrence",
-      "label": "General recurrence · every finite scale pair",
+      "label": "General recurrence \u00b7 every finite scale pair",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -923,7 +923,7 @@
     },
     {
       "id": "signed-fourier-tail",
-      "label": "Signed Fourier tail · exact carrier, error bound and open criterion",
+      "label": "Signed Fourier tail \u00b7 exact carrier, error bound and open criterion",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -962,7 +962,7 @@
     },
     {
       "id": "prime-factor-tail",
-      "label": "Prime-factor tail · vanishing nonlinear allowance and retained boundary",
+      "label": "Prime-factor tail \u00b7 vanishing nonlinear allowance and retained boundary",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": "fixed-cofactor-decay",
-      "label": "Arithmetic components · fixed composite cofactors now decay",
+      "label": "Arithmetic components \u00b7 fixed composite cofactors now decay",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1056,7 +1056,7 @@
     },
     {
       "id": "growing-cofactor-decay",
-      "label": "Arithmetic components · growing cofactors decay; reduced source retained",
+      "label": "Arithmetic components \u00b7 growing cofactors decay; reduced source retained",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1107,7 +1107,7 @@
     },
     {
       "id": "exponential-cofactor-decay",
-      "label": "Arithmetic components · geometric decay beyond polynomial cofactor ranges",
+      "label": "Arithmetic components \u00b7 geometric decay beyond polynomial cofactor ranges",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1154,7 +1154,7 @@
     },
     {
       "id": "general-tilt-decay",
-      "label": "General tilt · exact optimizer becomes an arithmetic bound",
+      "label": "General tilt \u00b7 exact optimizer becomes an arithmetic bound",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1193,7 +1193,7 @@
     },
     {
       "id": "euler-correction-decay",
-      "label": "Euler correction · full even and odd arithmetic decay",
+      "label": "Euler correction \u00b7 full even and odd arithmetic decay",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1236,7 +1236,7 @@
     },
     {
       "id": "euler-correction-deletion",
-      "label": "Original band · full Euler correction deletion",
+      "label": "Original band \u00b7 full Euler correction deletion",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1283,7 +1283,7 @@
     },
     {
       "id": "euler-growing-head-deletion",
-      "label": "Growing prime heads · original-band correction deletion",
+      "label": "Growing prime heads \u00b7 original-band correction deletion",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1334,7 +1334,7 @@
     },
     {
       "id": "euler-quadratic-head-deletion",
-      "label": "Quadratic prime heads · correction decay at every order",
+      "label": "Quadratic prime heads \u00b7 correction decay at every order",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1377,7 +1377,7 @@
     },
     {
       "id": "smooth-prime-deletion",
-      "label": "Actual smooth terms · joint prime and cofactor deletion",
+      "label": "Actual smooth terms \u00b7 joint prime and cofactor deletion",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1436,7 +1436,7 @@
     },
     {
       "id": "physical-prime-prefix-deletion",
-      "label": "Physical prime prefix · actual one-large-prime deletion",
+      "label": "Physical prime prefix \u00b7 actual one-large-prime deletion",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1495,7 +1495,7 @@
     },
     {
       "id": "composite-smooth-deletion",
-      "label": "Complete composite-smooth deletion · two surviving prime classes",
+      "label": "Complete composite-smooth deletion \u00b7 two surviving prime classes",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1558,7 +1558,7 @@
     },
     {
       "id": "large-smooth-factor-deletion",
-      "label": "Large smooth factors · any number of rough primes",
+      "label": "Large smooth factors \u00b7 any number of rough primes",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1621,7 +1621,7 @@
     },
     {
       "id": "extreme-prime-window",
-      "label": "Exact prime layers · signed boundary window",
+      "label": "Exact prime layers \u00b7 signed boundary window",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1688,7 +1688,7 @@
     },
     {
       "id": "semiprime-class-deletion",
-      "label": "Actual semiprime class · source preserved",
+      "label": "Actual semiprime class \u00b7 source preserved",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1747,7 +1747,7 @@
     },
     {
       "id": "unfiltered-narrow-carrier",
-      "label": "Narrowed cosine carrier · outer tails bounded",
+      "label": "Narrowed cosine carrier \u00b7 outer tails bounded",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1802,7 +1802,7 @@
     },
     {
       "id": "extreme-degree-deletion",
-      "label": "Extreme prime degrees · four-prime class bounded",
+      "label": "Extreme prime degrees \u00b7 four-prime class bounded",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1857,7 +1857,7 @@
     },
     {
       "id": "physical-annulus",
-      "label": "Physical annulus · upper tail bounded",
+      "label": "Physical annulus \u00b7 upper tail bounded",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1932,7 +1932,7 @@
     },
     {
       "id": "annulus-prime-completion",
-      "label": "Annular prime completion · error bounded",
+      "label": "Annular prime completion \u00b7 error bounded",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1983,7 +1983,7 @@
     },
     {
       "id": "prefix-central-window",
-      "label": "Prefix components bounded · smaller central carrier",
+      "label": "Prefix components bounded \u00b7 smaller central carrier",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2034,7 +2034,7 @@
     },
     {
       "id": "central-prime-layers",
-      "label": "Central carrier · three-prime sign and amplitude bounds",
+      "label": "Central carrier \u00b7 three-prime sign and amplitude bounds",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2081,7 +2081,7 @@
     },
     {
       "id": "head-orders",
-      "label": "Complete prime head · independent high-order decay",
+      "label": "Complete prime head \u00b7 independent high-order decay",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2124,7 +2124,7 @@
     },
     {
       "id": "pair-orders",
-      "label": "Prime pairs · paid outer orders and shared phases",
+      "label": "Prime pairs \u00b7 paid outer orders and shared phases",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2175,7 +2175,7 @@
     },
     {
       "id": "matched-middle",
-      "label": "Matched middle · signed head/pair budget",
+      "label": "Matched middle \u00b7 signed head/pair budget",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2226,7 +2226,7 @@
     },
     {
       "id": "wider-matched",
-      "label": "Wider matched block · same cost and endpoint cancellation",
+      "label": "Wider matched block \u00b7 same cost and endpoint cancellation",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2289,7 +2289,7 @@
     },
     {
       "id": "complete-head-harmonic",
-      "label": "Complete head · explicit harmonic cost and three unpaid components",
+      "label": "Complete head \u00b7 explicit harmonic cost and three unpaid components",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2348,7 +2348,7 @@
     },
     {
       "id": "exact-harmonic-costs",
-      "label": "Exact harmonic costs · head, central block and three unpaid sums",
+      "label": "Exact harmonic costs \u00b7 head, central block and three unpaid sums",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2411,7 +2411,7 @@
     },
     {
       "id": "signed-frequency-cancellation",
-      "label": "Signed frequency cancellation · actual low sector and full remainder",
+      "label": "Signed frequency cancellation \u00b7 actual low sector and full remainder",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2470,7 +2470,7 @@
     },
     {
       "id": "frequency-sector-decay",
-      "label": "Frequency-sector decay · complete cost and retained source",
+      "label": "Frequency-sector decay \u00b7 complete cost and retained source",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2525,7 +2525,7 @@
     },
     {
       "id": "prime-count-frequency-decay",
-      "label": "Prime-count decay · natural window and exact remainder",
+      "label": "Prime-count decay \u00b7 natural window and exact remainder",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2576,7 +2576,7 @@
     },
     {
       "id": "whole-prime-count-decay",
-      "label": "Whole prime-count decay · complete integers and remaining source",
+      "label": "Whole prime-count decay \u00b7 complete integers and remaining source",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2631,7 +2631,7 @@
     },
     {
       "id": "prime-count-sperner",
-      "label": "Prime-count and Sperner savings · the original carrier",
+      "label": "Prime-count and Sperner savings \u00b7 the original carrier",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2682,7 +2682,7 @@
     },
     {
       "id": "signed-window-gram",
-      "label": "Coupled signed windows · the full original carrier",
+      "label": "Coupled signed windows \u00b7 the full original carrier",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2725,7 +2725,7 @@
     },
     {
       "id": "prime-replacement",
-      "label": "Prime replacements · gaps and exact phases",
+      "label": "Prime replacements \u00b7 gaps and exact phases",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2768,7 +2768,7 @@
     },
     {
       "id": "centered-cancellation",
-      "label": "Centered cancellation · all prime-pair families",
+      "label": "Centered cancellation \u00b7 all prime-pair families",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2811,7 +2811,7 @@
     },
     {
       "id": "sharp-matching",
-      "label": "Sharper cancellation · exact factorial amplitudes",
+      "label": "Sharper cancellation \u00b7 exact factorial amplitudes",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2854,7 +2854,7 @@
     },
     {
       "id": "mass-transport",
-      "label": "Signed mass transport · final remainder decay",
+      "label": "Signed mass transport \u00b7 final remainder decay",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2897,7 +2897,7 @@
     },
     {
       "id": "zero-cycles",
-      "label": "Exact zero cycles · quadratic partner overhead",
+      "label": "Exact zero cycles \u00b7 quadratic partner overhead",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2940,7 +2940,7 @@
     },
     {
       "id": "arithmetic-cycles",
-      "label": "Arithmetic cycle supply · whole-carrier budget",
+      "label": "Arithmetic cycle supply \u00b7 whole-carrier budget",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2983,7 +2983,7 @@
     },
     {
       "id": "prime-cells",
-      "label": "Complete prime cells · signed cancellation",
+      "label": "Complete prime cells \u00b7 signed cancellation",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3034,7 +3034,7 @@
     },
     {
       "id": "small-composite-cells",
-      "label": "Growing composite cells · absolute decay",
+      "label": "Growing composite cells \u00b7 absolute decay",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3061,7 +3061,7 @@
     },
     {
       "id": "owner-windows",
-      "label": "Larger owner windows · independent decay",
+      "label": "Larger owner windows \u00b7 independent decay",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3104,7 +3104,7 @@
     },
     {
       "id": "harmonic-paid-components",
-      "label": "Harmonic route · signed reserve and paid tails",
+      "label": "Harmonic route \u00b7 signed reserve and paid tails",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3147,7 +3147,7 @@
     },
     {
       "id": "harmonic-floor-criterion",
-      "label": "Conditional contradiction · arithmetic floor still open",
+      "label": "Conditional contradiction \u00b7 arithmetic floor still open",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3162,7 +3162,7 @@
     },
     {
       "id": "harmonic-typeii-test",
-      "label": "Conditional Type-II test · arithmetic input unproved",
+      "label": "Conditional Type-II test \u00b7 arithmetic input unproved",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3201,7 +3201,7 @@
     },
     {
       "id": "harmonic-boundary-renewal",
-      "label": "Boundary renewal audit · no quantitative gain",
+      "label": "Boundary renewal audit \u00b7 no quantitative gain",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3240,7 +3240,7 @@
     },
     {
       "id": "harmonic-wide-owner",
-      "label": "Wide-owner allocation · completion obstruction",
+      "label": "Wide-owner allocation \u00b7 completion obstruction",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3283,7 +3283,7 @@
     },
     {
       "id": "harmonic-skew-allocation",
-      "label": "Obstruction · literal quarter-gap skew reserve vanishes",
+      "label": "Obstruction \u00b7 literal quarter-gap skew reserve vanishes",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3326,7 +3326,7 @@
     },
     {
       "id": "harmonic-rectangle-reserve",
-      "label": "Literal rectangle · reserve at least 1/160",
+      "label": "Literal rectangle \u00b7 reserve at least 1/160",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3377,7 +3377,7 @@
     },
     {
       "id": "ford-selected-iteration",
-      "label": "Ford high-degree moments · prime supply open",
+      "label": "Ford high-degree moments \u00b7 prime supply open",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3396,7 +3396,7 @@
     },
     {
       "id": "rosser-zero-mass",
-      "label": "Rosser zero masses · complete powers 2, 3 and 4",
+      "label": "Rosser zero masses \u00b7 complete powers 2, 3 and 4",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3443,7 +3443,7 @@
     },
     {
       "id": "rosser-prime-error",
-      "label": "Rosser prime error · final large range proved",
+      "label": "Rosser prime error \u00b7 final large range proved",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3478,7 +3478,7 @@
     },
     {
       "id": "rosser-finite-prime-counts",
-      "label": "Rosser prime counts · complete through 16000",
+      "label": "Rosser prime counts \u00b7 complete through 16000",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3509,7 +3509,7 @@
     },
     {
       "id": "rosser-proved-prime-ranges",
-      "label": "Rosser prime bounds · finite and infinite ranges",
+      "label": "Rosser prime bounds \u00b7 finite and infinite ranges",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3536,7 +3536,7 @@
     },
     {
       "id": "ford-unconditional-large-degree",
-      "label": "Ford moments · actual large-degree supply",
+      "label": "Ford moments \u00b7 actual large-degree supply",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3567,7 +3567,7 @@
     },
     {
       "id": "harmonic-parity-audit",
-      "label": "Direct parity packet · paid errors, open floor",
+      "label": "Direct parity packet \u00b7 paid errors, open floor",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3606,7 +3606,7 @@
     },
     {
       "id": "harmonic-zero-parity-audit",
-      "label": "Simple-zero parity · signed support tail and masked transfer audit",
+      "label": "Simple-zero parity \u00b7 signed support tail and masked transfer audit",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3676,8 +3676,70 @@
       "documentation": "docs/zeta-riesz-parity-tail-transfer-audit.md"
     },
     {
+      "id": "harmonic-joint-prime-tail",
+      "label": "Literal prime sum \u00b7 paid errors and the 56-factor tail",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralPrimeExpansionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointCountTailTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointCountRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointLowComparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointRadialComparisonTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszJointPrimeScope"
+      ],
+      "documentation": "docs/zeta-riesz-joint-prime-transfer.md"
+    },
+    {
+      "id": "harmonic-finite-mode-support",
+      "label": "Finite negative modes \u00b7 support and analytic transfer audits",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiniteModeSupportTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszInfiniteModeAuditTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLocalDivisorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAnalyticFactorAuditTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszArtificialModeAuditTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFiniteModeAuditScope"
+      ],
+      "documentation": "docs/zeta-riesz-local-analytic-audit.md"
+    },
+    {
       "id": "harmonic-shifted-center-audit",
-      "label": "Per-leg pole cancellation · global zeros and adaptive rate audit",
+      "label": "Per-leg pole cancellation \u00b7 global zeros and adaptive rate audit",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3720,7 +3782,7 @@
     },
     {
       "id": "harmonic-pole-jet-mask-audit",
-      "label": "Masked modes · radial, pole-jet and rightward audits",
+      "label": "Masked modes \u00b7 radial, pole-jet and rightward audits",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -3759,7 +3821,7 @@
     },
     {
       "id": "harmonic-cascade-audit",
-      "label": "All-count cascade · exact transform and global Abel rate audit",
+      "label": "All-count cascade \u00b7 exact transform and global Abel rate audit",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -4211,7 +4273,7 @@
       "family": "oscillation",
       "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
       "overview": true,
-      "summary": "The positive-frequency integral equals π|b|/2. Its genuine integrability and the Laplace/Fubini exchanges are proved."
+      "summary": "The positive-frequency integral equals \u03c0|b|/2. Its genuine integrability and the Laplace/Fubini exchanges are proved."
     },
     "RiemannGaussian.FiniteSignedFourierHinge.finite_hinge_eq_paired_integral": {
       "label": "Every finite signed hinge as a paired integral",
@@ -4221,14 +4283,14 @@
       "summary": "Arbitrary complex weights retain both frequencies and the signed first moment. No conjugate-symmetry assumption is introduced."
     },
     "RiemannGaussian.ZetaRieszFourierCarrier.actual_physical_band_eq_fourierResponse": {
-      "label": "Original filtered Riesz band · exact Fourier response",
+      "label": "Original filtered Riesz band \u00b7 exact Fourier response",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
       "overview": true,
       "summary": "The actual band and factorial polynomial filter keep the same physical length and divisor cutoff, signed first moment and ordinary-prime correction. This identity does not supply a lower bound."
     },
     "RiemannGaussian.ZetaRieszFourierCarrier.tendsto_actual_fourierResponse": {
-      "label": "Fourier source · conditional on a right-half zero",
+      "label": "Fourier source \u00b7 conditional on a right-half zero",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
       "overview": true,
@@ -4256,18 +4318,18 @@
       "summary": "A product of small local factors equals the exponential of the first-order core plus the sum of local log errors. The principal logarithm of the whole product is not assumed."
     },
     "RiemannGaussian.ZetaPrimeCharacterRemainder.integral_norm_actual_logRemainder_div_le": {
-      "label": "Integrated nonlinear remainder · uniform finite cutoff",
+      "label": "Integrated nonlinear remainder \u00b7 uniform finite cutoff",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
       "overview": true,
-      "summary": "At each fixed Re(s)>1/2 and labels at least 16, the nonlinear log remainder divided by ξ² has a proved cutoff-independent L1 bound. This does not bound the exponential of the first-order core or its factorial filter."
+      "summary": "At each fixed Re(s)>1/2 and labels at least 16, the nonlinear log remainder divided by \u03be\u00b2 has a proved cutoff-independent L1 bound. This does not bound the exponential of the first-order core or its factorial filter."
     },
     "RiemannGaussian.ZetaSquarefreeRieszCompletion.false_of_cofinal_original_riesz_floor": {
-      "label": "Sufficient cofinal floor · premise still open",
+      "label": "Sufficient cofinal floor \u00b7 premise still open",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
       "overview": true,
-      "summary": "A fixed c<1 and Re(B_N)≥−c at arbitrarily large N contradict the original negative multiplicity limit. The independent floor is an unproved premise."
+      "summary": "A fixed c<1 and Re(B_N)\u2265\u2212c at arbitrarily large N contradict the original negative multiplicity limit. The independent floor is an unproved premise."
     },
     "RiemannGaussian.ZetaRieszPrimeFourier.actual_band_eq_primePair_integral": {
       "label": "Original filtered band as a full prime-factor integral",
@@ -4277,7 +4339,7 @@
       "summary": "The complete divisor mass and first logarithmic moment of each squarefree nonunit composite are proved zero. Both frequencies, the original band, factorial filter and common physical length remain."
     },
     "RiemannGaussian.ZetaRieszPrimeFourier.tendsto_actual_primePair_integral": {
-      "label": "Prime-factor source · conditional on a right-half zero",
+      "label": "Prime-factor source \u00b7 conditional on a right-half zero",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
       "overview": true,
@@ -4288,14 +4350,14 @@
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
       "overview": true,
-      "summary": "The full squarefree prime product equals (2i)^ω times its central logarithmic phase and all real sine factors. This is an exact identity, not a source-scale estimate."
+      "summary": "The full squarefree prime product equals (2i)^\u03c9 times its central logarithmic phase and all real sine factors. This is an exact identity, not a source-scale estimate."
     },
     "RiemannGaussian.ZetaPrimeNonlinearFactor.integral_norm_actual_nonlinearFactor_sub_one_div_le": {
-      "label": "Integrated multiplicative correction · bounded at fixed real part",
+      "label": "Integrated multiplicative correction \u00b7 bounded at fixed real part",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
       "overview": true,
-      "summary": "For labels at least 16 and fixed Re(s)>1/2, exp(E)−1 divided by frequency squared has a finite cutoff-independent integral norm. The factor exp(A) remains outside this bound."
+      "summary": "For labels at least 16 and fixed Re(s)>1/2, exp(E)\u22121 divided by frequency squared has a finite cutoff-independent integral norm. The factor exp(A) remains outside this bound."
     },
     "RiemannGaussian.ZetaPrimeNonlinearTail.integral_norm_nonlinearFactor_le_tail": {
       "label": "Integrated correction paid by a decreasing arithmetic tail",
@@ -4309,10 +4371,10 @@
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
       "overview": true,
-      "summary": "For each fixed σ>1/2 and every ε>0, one threshold K≥16 makes the integrated multiplicative correction smaller than ε for every finite Q above K and every s with Re(s)=σ. No uniform limit as σ approaches 1/2 is claimed."
+      "summary": "For each fixed \u03c3>1/2 and every \u03b5>0, one threshold K\u226516 makes the integrated multiplicative correction smaller than \u03b5 for every finite Q above K and every s with Re(s)=\u03c3. No uniform limit as \u03c3 approaches 1/2 is claimed."
     },
     "RiemannGaussian.ZetaRieszCompositeProduct.sum_composites_eq_compensated_exp": {
-      "label": "Composite completion retains exp(A+E)−1−A",
+      "label": "Composite completion retains exp(A+E)\u22121\u2212A",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-signed-fourier-tail.md",
       "overview": true,
@@ -4326,14 +4388,14 @@
       "summary": "The canonical primorial contains every original squarefree band label. Its complete composite response minus the explicit omitted signed sum recovers that band exactly; no smallness of the boundary is asserted."
     },
     "RiemannGaussian.ZetaRieszFixedCofactor.tendsto_actual_composite_cofactor_band": {
-      "label": "Fixed composite cofactor · full original-band decay",
+      "label": "Fixed composite cofactor \u00b7 full original-band decay",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
       "overview": true,
       "summary": "Every fixed squarefree nonunit composite cofactor has an independently vanishing full prime-insertion band at the original source scale, with its full polynomial filter and moving cutoff."
     },
     "RiemannGaussian.ZetaRieszFixedCofactor.tendsto_actual_clipped_prime_band": {
-      "label": "Clipped prime insertion · actual filtered decay",
+      "label": "Clipped prime insertion \u00b7 actual filtered decay",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
       "overview": true,
@@ -4347,14 +4409,14 @@
       "summary": "A bounded coefficient on any subset below K*(D_N+2)^2 costs at most 2*C*sum(norm(P_k))*sqrt(K)*(u/(N+1)+2*u^(N+1)). All polynomial factorial shifts are included."
     },
     "RiemannGaussian.ZetaRieszPrimeClasses.actual_band_eq_two_prime_classes": {
-      "label": "Actual carrier · one or at least two large primes",
+      "label": "Actual carrier \u00b7 one or at least two large primes",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
       "overview": true,
       "summary": "At N>=60 every surviving squarefree composite has one or at least two prime factors >=16. The full signed original-band sum is preserved."
     },
     "RiemannGaussian.ZetaRieszPrimeClasses.one_large_prime_factorization": {
-      "label": "One large prime · a nonunit divisor of 30030",
+      "label": "One large prime \u00b7 a nonunit divisor of 30030",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
       "overview": true,
@@ -4368,105 +4430,105 @@
       "summary": "The prime divisors of the fixed small-prime product lie in {2,3,5,7,11,13}."
     },
     "RiemannGaussian.ZetaRieszFixedCofactor.coefficient_prime_pair_above_cutoff": {
-      "label": "Surviving semiprime coefficient · exact formula",
+      "label": "Surviving semiprime coefficient \u00b7 exact formula",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
       "overview": true,
       "summary": "For a prime cofactor a and log(a)<=L<=log(p), the actual coefficient is -log(p*a)*log(a)/L. Its signed filtered tail is not bounded by the composite-cofactor theorem."
     },
     "RiemannGaussian.ZetaPrimeNonlinearHalfplane.exists_uniform_halfplane_nonlinear_tail_lt": {
-      "label": "Nonlinear correction · uniform closed-half-plane decay",
+      "label": "Nonlinear correction \u00b7 uniform closed-half-plane decay",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
       "overview": true,
       "summary": "For every fixed sigma>1/2 the integrated nonlinear multiplier allowance tends to zero uniformly on Re(s)>=sigma and all finite larger-label selections. The exp(A) coupling remains unpaid."
     },
     "RiemannGaussian.ZetaRieszFilteredCompletion.actual_band_eq_filtered_completion": {
-      "label": "Completed response and boundary · full factorial filter",
+      "label": "Completed response and boundary \u00b7 full factorial filter",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-fixed-cofactor-decay.md",
       "overview": true,
       "summary": "Every original factorial moment passes through the exact completed-minus-boundary response inside the paired Fourier integral. The whole quotient is integrable; no separate channel bound is asserted."
     },
     "RiemannGaussian.ZetaRieszReducedCofactorSource.tendsto_composite_head_band": {
-      "label": "Finite composite head · whole union decays",
+      "label": "Finite composite head \u00b7 whole union decays",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
       "overview": true,
       "summary": "The full finite union of composite cofactors dividing 30030 is paid inside one original-band sum, without counting overlaps twice."
     },
     "RiemannGaussian.ZetaRieszReducedCofactorSource.tendsto_reduced_source": {
-      "label": "Finite deletion · original source retained",
+      "label": "Finite deletion \u00b7 original source retained",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
       "overview": true,
       "summary": "Subtracting the independently negligible finite composite-head class preserves the exact negative-multiplicity source under a hypothetical right-half zero."
     },
     "RiemannGaussian.ZetaRieszReducedCofactorSource.reduced_support": {
-      "label": "Reduced support · six prime cofactors or multiple large primes",
+      "label": "Reduced support \u00b7 six prime cofactors or multiple large primes",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
       "overview": true,
       "summary": "Every surviving squarefree composite at N>=60 has at least two primes >=16, or is p*a for one of the six small prime cofactors."
     },
     "RiemannGaussian.ZetaRieszReducedCofactorSource.rh_of_reduced_cofinal_floors": {
-      "label": "Conditional closure to RH · arithmetic floor remains a premise",
+      "label": "Conditional closure to RH \u00b7 arithmetic floor remains a premise",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
       "overview": true,
       "summary": "For each hypothetical right-half zero, the displayed strict cofinal lower floor would contradict its source. Reflection then gives Mathlib RH. This theorem does not prove the floor."
     },
     "RiemannGaussian.ZetaRieszGrowingCofactor.norm_clipped_range_band_le": {
-      "label": "Growing cofactor range · explicit full-filter allowance",
+      "label": "Growing cofactor range \u00b7 explicit full-filter allowance",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
       "overview": true,
       "summary": "The whole clipped original subband costs at most 2*C(A)*S(P)*sqrt(A)*(u/(N+1)+2*u^(N+1)), with C(A)=2*A*log(A)*(1+log(A)/log(4))."
     },
     "RiemannGaussian.ZetaRieszGrowingCofactor.tendsto_eighth_power_clipped_band": {
-      "label": "Eighth-power budget · source-scale decay",
+      "label": "Eighth-power budget \u00b7 source-scale decay",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
       "overview": true,
       "summary": "Every positive integer schedule with A_N^8<=N+1 has a vanishing allowance at every fixed 0<u<1, retaining the full polynomial factorial filter."
     },
     "RiemannGaussian.ZetaRieszGrowingCofactor.eighthRootSchedule_tendsto": {
-      "label": "Explicit cofactor schedule · grows without bound",
+      "label": "Explicit cofactor schedule \u00b7 grows without bound",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
       "overview": true,
       "summary": "The threefold natural square root of N+1 tends to infinity, with integer rounding preserved."
     },
     "RiemannGaussian.ZetaRieszGrowingCofactor.tendsto_growing_composite_band": {
-      "label": "Growing composite cofactors · entire band decays",
+      "label": "Growing composite cofactors \u00b7 entire band decays",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
       "overview": true,
       "summary": "All squarefree nonunit composite cofactors up to the growing schedule are paid together. The omitted compact-range complement is eventually exactly zero."
     },
     "RiemannGaussian.ZetaRieszGrowingCofactor.tendsto_growing_reduced_source": {
-      "label": "Growing deletion · original source retained",
+      "label": "Growing deletion \u00b7 original source retained",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
       "overview": true,
       "summary": "The actual original-band complement of the growing cofactor class retains the same negative-multiplicity limit under the hypothetical-zero assumptions."
     },
     "RiemannGaussian.ZetaRieszGrowingCofactor.surviving_composite_cofactor_gt": {
-      "label": "Surviving composite cofactors · forced above the growing cutoff",
+      "label": "Surviving composite cofactors \u00b7 forced above the growing cutoff",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-growing-cofactor-decay.md",
       "overview": true,
       "summary": "Every eligible composite cofactor of a surviving prime insertion exceeds A_N. Prime cofactors and their semiprime tails remain outside this decay theorem."
     },
     "RiemannGaussian.ZetaRieszExponentialCofactor.norm_exponential_composite_band_le": {
-      "label": "Exponential cofactor class · explicit geometric bound",
+      "label": "Exponential cofactor class \u00b7 explicit geometric bound",
       "summary": "At every order and 2/3<u<=1, the whole original composite-cofactor class obeys the displayed geometric allowance with its full fixed polynomial filter.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszExponentialCofactor.tendsto_exponential_composite_band": {
-      "label": "Exponential cofactor class · whole-band decay",
+      "label": "Exponential cofactor class \u00b7 whole-band decay",
       "summary": "All squarefree nonunit composite cofactors in the explicit exponential budget decay together at the source scale for 2/3<u<1.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
@@ -4480,14 +4542,14 @@
       "overview": true
     },
     "RiemannGaussian.ZetaRieszExponentialCofactor.tendsto_adaptive_composite_band": {
-      "label": "Adaptive deletion · every source scale covered",
+      "label": "Adaptive deletion \u00b7 every source scale covered",
       "summary": "The stronger geometric class for u>2/3 combines with the universal polynomial class elsewhere. The whole selected class decays independently for every 0<u<1.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszExponentialCofactor.tendsto_adaptive_reduced_source": {
-      "label": "Adaptive complement · full right-half-zero source",
+      "label": "Adaptive complement \u00b7 full right-half-zero source",
       "summary": "Every hypothetical right-half zero retains the original negative-multiplicity source in the actual complementary band. The joint independent floor is unproved.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
@@ -4501,14 +4563,14 @@
       "overview": true
     },
     "RiemannGaussian.ZetaRieszCofactorTiltRate.minimumRate_eq_tiltRate_iff": {
-      "label": "Scalar rate audit · unique analytic optimizer",
+      "label": "Scalar rate audit \u00b7 unique analytic optimizer",
       "summary": "For 0<u<1 the unique minimizing positive scalar tilt is 1/(-2*log u). The separate general-tilt module now proves an arithmetic component bound using it.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszCofactorTiltRate.exists_improving_tilt_iff": {
-      "label": "All positive tilts · exact scalar saving criterion",
+      "label": "All positive tilts \u00b7 exact scalar saving criterion",
       "summary": "A scalar rate below one exists exactly when u differs from exp(-1/2). The exceptional scalar contact is not a zero-location conclusion.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-exponential-cofactor-decay.md",
@@ -4522,644 +4584,644 @@
       "overview": true
     },
     "RiemannGaussian.ZetaRieszGeneralCofactorTilt.sum_rpow_prefix_le": {
-      "label": "Every real-power prefix · explicit spatial cost",
+      "label": "Every real-power prefix \u00b7 explicit spatial cost",
       "summary": "Discrete concavity and telescoping bound the complete positive prefix for every real exponent above zero.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-general-tilt-decay.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszGeneralCofactorTilt.norm_tilted_composite_band_le": {
-      "label": "All admissible tilts · actual geometric component bound",
+      "label": "All admissible tilts \u00b7 actual geometric component bound",
       "summary": "For every q>1/2 with r(u,q)<1, the full original composite-cofactor class obeys an explicit geometric allowance; all spatial and coefficient costs are paid.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-general-tilt-decay.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszGeneralCofactorTilt.norm_optimal_composite_band_le": {
-      "label": "Exact scalar optimizer · arithmetic bound attained",
+      "label": "Exact scalar optimizer \u00b7 arithmetic bound attained",
       "summary": "The unique scalar optimum now supplies a geometric bound for an explicitly growing composite-cofactor class at every 1/2<u<1 except u=exp(-1/2).",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-general-tilt-decay.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszGeneralCofactorTilt.eventually_pow_le_optimalSchedule": {
-      "label": "Exact-tilt range · exceeds every fixed polynomial",
+      "label": "Exact-tilt range \u00b7 exceeds every fixed polynomial",
       "summary": "For each fixed k the cofactor range eventually contains N^k, retaining integer floors and the original damped cutoff.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-general-tilt-decay.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszGeneralCofactorTilt.tendsto_optimized_composite_band": {
-      "label": "Optimized deletion · all actual source scales",
+      "label": "Optimized deletion \u00b7 all actual source scales",
       "summary": "Geometric decay away from the scalar contact combines with the earlier polynomial decay at contact; no zero assumption is used.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-general-tilt-decay.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszGeneralCofactorTilt.tendsto_optimized_reduced_source": {
-      "label": "Optimized complement · complete source retained",
+      "label": "Optimized complement \u00b7 complete source retained",
       "summary": "Every hypothetical right-half zero retains its exact negative-multiplicity source in the literal complementary band, including the exceptional scalar contact.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-general-tilt-decay.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszGeneralCofactorTilt.surviving_tilted_cofactor_gt": {
-      "label": "Remaining composite cofactors · above the exact-tilt threshold",
+      "label": "Remaining composite cofactors \u00b7 above the exact-tilt threshold",
       "summary": "Every eligible composite cofactor of a surviving insertion exceeds the selected threshold. Semiprimes and larger cofactors still require a joint signed floor.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-general-tilt-decay.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerQuotient.finite_character_eq_quotient_product": {
-      "label": "Finite Euler quotient · exact complete factorization",
+      "label": "Finite Euler quotient \u00b7 exact complete factorization",
       "summary": "The full finite character is its explicit Euler quotient times every quadratic correction factor. No infinite zeta identification is assumed.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-energy.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerCorrectionEnergy.actual_character_eq_euler_quotient_correction": {
-      "label": "Literal prime features · full quotient and correction retained",
+      "label": "Literal prime features \u00b7 full quotient and correction retained",
       "summary": "For the actual prime amplitudes at labels at least 16 and Re(s)>=1/2, the complete finite character retains its leading Euler quotient and every correction interaction.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-energy.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerCorrectionEnergy.integral_norm_actual_paired_correctionProduct_le_tail": {
-      "label": "Full even correction · explicit arithmetic tail bound",
+      "label": "Full even correction \u00b7 explicit arithmetic tail bound",
       "summary": "The full paired correction divided by frequency squared has an integrated square-log tail allowance, uniform on each fixed closed half-plane right of one half.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-energy.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerCorrectionEnergy.exists_uniform_actual_paired_correctionProduct_lt": {
-      "label": "Full even correction · uniform decay above a growing prime threshold",
+      "label": "Full even correction \u00b7 uniform decay above a growing prime threshold",
       "summary": "A single prime threshold makes the whole paired correction allowance arbitrarily small for every finite larger-prime selection and every point in the fixed closed half-plane.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-energy.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerCorrectionEnergy.integral_actual_odd_correctionProduct_energy_le_tail": {
-      "label": "Full odd correction · retained and bounded in energy",
+      "label": "Full odd correction \u00b7 retained and bounded in energy",
       "summary": "The actual odd correction has a square-log energy allowance including all interaction orders. It remains available for the weighted leading-response pairing.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-energy.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerCorrectionEnergy.exists_uniform_actual_odd_correctionProduct_energy_lt": {
-      "label": "Full odd correction · uniform energy decay",
+      "label": "Full odd correction \u00b7 uniform energy decay",
       "summary": "The odd-channel energy tends uniformly to zero above a growing prime threshold on each fixed closed half-plane strictly right of one half.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-energy.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerCorrectionEnergy.weighted_correction_pair_split": {
-      "label": "Weighted response · both even and odd couplings stay explicit",
+      "label": "Weighted response \u00b7 both even and odd couplings stay explicit",
       "summary": "Restoring two distinct leading responses couples their even part to the even correction and their odd part to the odd correction. Neither leading-response bound is assumed or proved.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-energy.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerCorrectionEnergy.norm_correctionLogSum_sq_le": {
-      "label": "Weighted logarithmic energy · square mass instead of prime count",
+      "label": "Weighted logarithmic energy \u00b7 square mass instead of prime count",
       "summary": "Weighted Cauchy-Schwarz bounds the complete logarithm square with the finite prime-square mass and all actual logarithmic phases retained.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-energy.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerCutoff.integral_norm_shiftedCorrection_div_le": {
-      "label": "Physical phase · full correction with linear length cost",
+      "label": "Physical phase \u00b7 full correction with linear length cost",
       "summary": "Both reciprocal phases remain coupled. The complete correction is integrable with its prime-square log mass and an explicit cost linear in the physical length.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerCutoff.integral_norm_actual_shiftedCorrection_le_tail": {
-      "label": "Literal arithmetic labels · cutoff-phase tail bound",
+      "label": "Literal arithmetic labels \u00b7 cutoff-phase tail bound",
       "summary": "All finite labels above the fixed head and chosen threshold share one square-log tail allowance, uniform in height on each fixed closed half-plane.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerMoments.integral_norm_normalized_actual_moment_le": {
-      "label": "Every factorial order · cutoff-uniform integral bound",
+      "label": "Every factorial order \u00b7 cutoff-uniform integral bound",
       "summary": "The original inverse-length normalization absorbs the phase cost. Exact Cauchy radii control every factorial moment with measurability and ordinary frequency integrability proved.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerMoments.norm_scaled_filteredResponse_le": {
-      "label": "Full fixed filter · polynomial times geometric allowance",
+      "label": "Full fixed filter \u00b7 polynomial times geometric allowance",
       "summary": "The original logarithmic mark and all polynomial factorial offsets yield a bound proportional to (N+1)(u/R)^(N+1), uniform in the physical length above a positive base.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerMoments.tendsto_original_correction_response": {
-      "label": "Original prime universe · physical cutoff correction decays",
+      "label": "Original prime universe \u00b7 physical cutoff correction decays",
       "summary": "For every fixed polynomial and height and every 0<u<1, the correction response on the actual primorial prime universe decays at the original growing Riesz length.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerCorrectionDeletion.actual_band_eq_residual_response": {
-      "label": "Literal original band · exact integral decomposition",
+      "label": "Literal original band \u00b7 exact integral decomposition",
       "summary": "The complete arithmetic band is exactly the explicit residual plus its independently bounded correction response. Both ordinary integrals and the finite filter exchange are justified.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerCorrectionDeletion.tendsto_actual_band_sub_residual": {
-      "label": "Actual arithmetic deletion · normalized error tends to zero",
+      "label": "Actual arithmetic deletion \u00b7 normalized error tends to zero",
       "summary": "Removing the full standalone correction changes the original normalized arithmetic band by a quantity tending to zero, without any hypothetical-zero premise. The joint residual floor is open.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerCorrectionDeletion.completedBand_eq_residual_add_correction": {
-      "label": "Explicit residual · leading, mixed and signed boundary retained",
+      "label": "Explicit residual \u00b7 leading, mixed and signed boundary retained",
       "summary": "The remaining expression retains the small-prime head, finite Euler quotient, ordinary-prime compensation, mixed leading-correction interaction and entire signed completion boundary.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerCorrectionDeletion.integrable_residualKernel": {
-      "label": "Residual kernel · genuine frequency integrability",
+      "label": "Residual kernel \u00b7 genuine frequency integrability",
       "summary": "The residual is the original integrable band kernel minus the proved-integrable correction. No totalized divergent integral is used in the source decomposition.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-correction-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerMultiplier.norm_scaled_weightedFilteredResponse_le": {
-      "label": "Entire arithmetic multipliers · original-filter bound",
+      "label": "Entire arithmetic multipliers \u00b7 original-filter bound",
       "summary": "Every fixed entire coefficient and real frequency shift preserves the complete correction bound, with genuine integrability and the original physical denominator.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-growing-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerHead.headCharacter_eq_expansion": {
-      "label": "Every finite head · exact signed Fourier expansion",
+      "label": "Every finite head \u00b7 exact signed Fourier expansion",
       "summary": "All head subsets retain their exact entire coefficients, signs and logarithmic frequencies before the factorial filter and ordinary integral.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-growing-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerGrowingHead.norm_scaled_headFilteredResponse_le_product": {
-      "label": "All head families · explicit Euler-product cost",
+      "label": "All head families \u00b7 explicit Euler-product cost",
       "summary": "A positive finite Euler product and the full head logarithmic extent bound every head family together. The original geometric source saving and every factorial offset remain explicit.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-growing-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerGrowingHead.headResponseBudget_le_window": {
-      "label": "Growing head windows · uniform arithmetic allowance",
+      "label": "Growing head windows \u00b7 uniform arithmetic allowance",
       "summary": "Every subset of a natural-number window shares an explicit bound by three to the window size times a quadratic frequency allowance. No prime-density estimate or coefficient search is assumed.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-growing-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerGrowingHead.exists_stride_actual_window_correction_decay": {
-      "label": "Actual growing prime head · correction decays on a cofinal stride",
+      "label": "Actual growing prime head \u00b7 correction decays on a cofinal stride",
       "summary": "At original order d*n the complete head of actual primes at most n+16 can multiply the complementary correction with vanishing normalized error, for every fixed P,y and 0<u<1.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-growing-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerWindowDeletion.actual_band_eq_windowResidual_response": {
-      "label": "Original arithmetic band · exact moving-threshold integral identity",
+      "label": "Original arithmetic band \u00b7 exact moving-threshold integral identity",
       "summary": "The literal band equals its explicit residual plus the full head-weighted correction at every admissible threshold. The actual support, both phases, original filter and integrals are retained.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-growing-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerWindowDeletion.exists_stride_actual_band_sub_windowResidual": {
-      "label": "Growing-head deletion · actual normalized error tends to zero",
+      "label": "Growing-head deletion \u00b7 actual normalized error tends to zero",
       "summary": "A positive stride makes the difference between the literal original band and the explicit moving-window residual tend to zero. No hypothetical-zero premise or arithmetic floor is assumed.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-growing-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerWindowDeletion.completedBand_eq_windowResidual_add_head": {
-      "label": "Explicit residual · compensated leading, mixed and signed boundary",
+      "label": "Explicit residual \u00b7 compensated leading, mixed and signed boundary",
       "summary": "The residual keeps SG-1-A, S(G-1)(H-1), and the entire signed off-band boundary, with the moving head and its complementary prime universe exact.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-growing-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerWindowDeletion.integrable_windowResidualKernel": {
-      "label": "Moving residual · genuine frequency integrability",
+      "label": "Moving residual \u00b7 genuine frequency integrability",
       "summary": "The explicit residual is the actual integrable band minus the independently integrable head correction. No divergent totalized integral substitutes for an analytic estimate.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-growing-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerWindowDeletion.exists_stride_normalizedWindowResidual_source": {
-      "label": "Cofinal residual · exact negative multiplicity source survives",
+      "label": "Cofinal residual \u00b7 exact negative multiplicity source survives",
       "summary": "Under a hypothetical right-half zero, the growing-head residual retains the exact negative multiplicity limit on a proved cofinal stride. Its independent joint lower floor remains open.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-growing-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerPrimeHeadDensity.eventually_head_product_le_prime_density": {
-      "label": "Actual prime density · uniform Euler-product allowance",
+      "label": "Actual prime density \u00b7 uniform Euler-product allowance",
       "summary": "Chebyshev prime density bounds every head coefficient family by exp(16*sqrt(b)/log(b+2)), uniformly over all prime subsets through b and the full half-plane sigma>=1/2.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerPrimeHeadDensity.eventually_quadratic_head_product_le": {
-      "label": "Quadratic prime heads · arbitrarily small exponential cost",
+      "label": "Quadratic prime heads \u00b7 arbitrarily small exponential cost",
       "summary": "For every eps>0, all prime heads through N^2 have coefficient product at most exp(eps*N) eventually, uniformly for sigma>=1/2. No prime-density premise or coefficient search remains.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerPrimeHeadDensity.eventually_quadratic_head_budget_le": {
-      "label": "All head frequencies · complete quadratic-window budget",
+      "label": "All head frequencies \u00b7 complete quadratic-window budget",
       "summary": "The subexponential head allowance includes every exact log frequency, the original physical normalization and a literal prime-square tail budget.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerPrimeHeadDensity.tendsto_quadratic_headFilteredResponse": {
-      "label": "Every original order · full head correction decays",
+      "label": "Every original order \u00b7 full head correction decays",
       "summary": "The full fixed factorial filter decays for every family of quadratic prime heads, eventual tail primes at least sixteen and arbitrary physical lengths above a positive base.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerQuadraticHead.tendsto_actual_quadratic_head_correction": {
-      "label": "Literal N-squared prime head · original correction vanishes",
+      "label": "Literal N-squared prime head \u00b7 original correction vanishes",
       "summary": "The actual prime head through N^2 and its complementary correction retain the original center, physical length and every factorial/log mark. The normalized response tends to zero at every order.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerQuadraticHead.tendsto_actual_band_sub_quadraticResidual": {
-      "label": "Actual arithmetic band · every-order quadratic-head deletion",
+      "label": "Actual arithmetic band \u00b7 every-order quadratic-head deletion",
       "summary": "The normalized difference between the literal band and the explicit quadratic-window residual tends to zero without a hypothetical-zero premise.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerQuadraticHead.tendsto_normalizedQuadraticResidual": {
-      "label": "Exact source preserved · negative multiplicity at every order",
+      "label": "Exact source preserved \u00b7 negative multiplicity at every order",
       "summary": "Under a hypothetical right-half zero, the quadratic residual retains the exact negative multiplicity source with every original order, cutoff, prime and boundary retained.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszEulerQuadraticHead.rh_of_quadraticResidual_cofinal_floors": {
-      "label": "Conditional RH closure · independent full floor still required",
+      "label": "Conditional RH closure \u00b7 independent full floor still required",
       "summary": "A cofinal real floor above minus one for every full normalized quadratic residual would imply Mathlib RH. The arithmetic floor is an explicit unproved premise, not a proved bound.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-euler-quadratic-head.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothHead.squarefree_head_mass_le": {
-      "label": "All squarefree head classes · exact prime-subset allowance",
+      "label": "All squarefree head classes \u00b7 exact prime-subset allowance",
       "summary": "The actual divisor-count mass of any finite squarefree class supported on a prime head is bounded by one Euler product, with arbitrary band restrictions retained.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothHead.eventually_norm_quadratic_head_sum_le_sqrt": {
-      "label": "Actual smooth terms · explicit N times square-root geometric rate",
+      "label": "Actual smooth terms \u00b7 explicit N times square-root geometric rate",
       "summary": "Every prime head through N^2 has eventual normalized allowance 32*log(2)*u*sum(norm(P_k))*N*(sqrt(u))^N. The threshold is uniform over classes, polynomial filters, ordinates and positive physical lengths; the full filter cost is displayed.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothHead.tendsto_actual_quadratic_head_sum": {
-      "label": "Every smooth family · independent full-filter decay",
+      "label": "Every smooth family \u00b7 independent full-filter decay",
       "summary": "All original squarefree band classes supported through N^2 decay at every order, for every fixed filter and every positive physical-length schedule.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothDeletion.actual_band_eq_smooth_add_rough": {
-      "label": "Literal signed band · exact smooth and rough partition",
+      "label": "Literal signed band \u00b7 exact smooth and rough partition",
       "summary": "The original coefficient, log phases, factorial offsets and physical length are unchanged in the exact split into smooth labels and labels with a prime above the chosen head.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothDeletion.tendsto_actual_band_sub_quadraticRoughResponse": {
-      "label": "Original band · all N-squared smooth terms independently removed",
+      "label": "Original band \u00b7 all N-squared smooth terms independently removed",
       "summary": "The literal normalized band differs negligibly from its actual rough-prime sum, with no hypothetical-zero premise.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothCofactor.optimized_sum_eq_smooth_add_rough": {
-      "label": "Previous cofactor residual · smooth intersection removed exactly",
+      "label": "Previous cofactor residual \u00b7 smooth intersection removed exactly",
       "summary": "The new split keeps the previously paid cofactor deletion and counts each surviving original label once.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothCofactor.tendsto_actual_band_sub_optimizedRoughResponse": {
-      "label": "Two arithmetic deletions · complete error tends to zero",
+      "label": "Two arithmetic deletions \u00b7 complete error tends to zero",
       "summary": "The actual band retains both the optimized cofactor restriction and a prime above N^2. Their combined deletion error vanishes independently at every original order, including scalar contact.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothCofactor.optimizedRoughBand_support": {
-      "label": "Every remaining label · actual prime above N-squared",
+      "label": "Every remaining label \u00b7 actual prime above N-squared",
       "summary": "Each surviving label is squarefree, belongs to the earlier cofactor residual and has a genuine prime divisor greater than N^2.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothCofactor.optimizedRoughBand_cofactor_gt": {
-      "label": "Every composite cofactor · previous threshold retained",
+      "label": "Every composite cofactor \u00b7 previous threshold retained",
       "summary": "Each eligible composite cofactor of every remaining prime insertion exceeds the explicit optimized threshold, including the polynomial fallback at the scalar contact. Semiprimes remain explicit.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothCofactor.tendsto_normalizedOptimizedRoughResponse": {
-      "label": "Exact negative source · both support restrictions preserved",
+      "label": "Exact negative source \u00b7 both support restrictions preserved",
       "summary": "Under a hypothetical right-half zero, the remaining actual arithmetic sum retains its exact negative multiplicity source at every original order.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothCofactor.tendsto_quadraticResidual_sub_optimizedRoughResponse": {
-      "label": "Signed Euler residual · independent bridge to the arithmetic sum",
+      "label": "Signed Euler residual \u00b7 independent bridge to the arithmetic sum",
       "summary": "The signed quadratic Euler-window residual and the more tightly supported actual sum differ by a proved vanishing normalized error, without a hypothetical-zero premise.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothCofactor.rh_of_optimizedRoughResponse_cofinal_floors": {
-      "label": "Conditional RH closure · remaining full floor still required",
+      "label": "Conditional RH closure \u00b7 remaining full floor still required",
       "summary": "A cofinal real floor above minus one for every complete remaining sum would imply Mathlib RH. The independent arithmetic floor remains an explicit unproved premise.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-smooth-prime-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothPrimeProduct.norm_scaled_pairResponse_le_rate": {
-      "label": "Actual prime prefix · complete cofactor Euler allowance",
+      "label": "Actual prime prefix \u00b7 complete cofactor Euler allowance",
       "summary": "The original finite pair sum has its explicit full-filter geometric rate, physical prime cutoff and complete smooth cofactor Euler mass, with every subband mask retained.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothPrimeProduct.tendsto_quadratic_pairResponse": {
-      "label": "Every subband mask · quadratic-head decay",
+      "label": "Every subband mask \u00b7 quadratic-head decay",
       "summary": "Every order-dependent subband and smooth cofactor family decays at every original order when the displayed scalar saving holds; no maximum-cofactor-size cost is introduced.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothPrimePrefix.productBand_sum_eq_pairResponse": {
-      "label": "Unique large prime · each actual integer counted once",
+      "label": "Unique large prime \u00b7 each actual integer counted once",
       "summary": "A prime above every cofactor prime is uniquely recoverable from the product. The actual signed integer class equals the finite pair sum.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothPrimePrefix.tendsto_actualProductBand_of_small_source": {
-      "label": "Physical prime prefix · all scalar conditions discharged",
+      "label": "Physical prime prefix \u00b7 all scalar conditions discharged",
       "summary": "For every 1/2<u<exp(-1/2), all actual terms with one prime N^2<p<=(D_N+2)^2 and an N^2-smooth squarefree cofactor decay independently, for every order-dependent subband mask.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothPrimePrefix.mem_actualProductBand_iff": {
-      "label": "Exact arithmetic class · physical cutoff and full smooth support",
+      "label": "Exact arithmetic class \u00b7 physical cutoff and full smooth support",
       "summary": "Membership retains the original band, arbitrary mask, actual prime range, squarefree cofactor and every prime-factor restriction, with no separate cofactor size cap.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.tendsto_prefixDeletionBand": {
-      "label": "Previous residual · physical-prefix intersection is paid",
+      "label": "Previous residual \u00b7 physical-prefix intersection is paid",
       "summary": "The new component decays inside the previously reduced carrier on 1/2<u<exp(-1/2), preserving all previously proved cofactor restrictions.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.tendsto_actual_band_sub_prefixResidual": {
-      "label": "Original band · combined deletion error vanishes",
+      "label": "Original band \u00b7 combined deletion error vanishes",
       "summary": "The normalized difference between the original band and its more tightly restricted residual tends to zero independently on the proved source-scale interval.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.surviving_single_prime_above_physical_cutoff": {
-      "label": "Remaining single large prime · beyond the physical cutoff",
+      "label": "Remaining single large prime \u00b7 beyond the physical cutoff",
       "summary": "Any remaining factorization with one prime above N^2 and a squarefree N^2-smooth cofactor forces that prime above (D_N+2)^2.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.tendsto_actual_band_sub_adaptivePrefix": {
-      "label": "All source scales · proved fallback retained",
+      "label": "All source scales \u00b7 proved fallback retained",
       "summary": "The adaptive remainder uses the new deletion below exp(-1/2) and the previous remainder elsewhere. Its complete error tends to zero for every 1/2<u<1.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.tendsto_normalizedAdaptivePrefix": {
-      "label": "Exact negative source · adaptive remainder at every order",
+      "label": "Exact negative source \u00b7 adaptive remainder at every order",
       "summary": "Under a hypothetical right-half zero, the adaptive remaining carrier retains the exact negative multiplicity source with its original filter, phase and cutoff.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.optimizedRoughResponse_eq_prefix_split": {
-      "label": "Exact signed partition · earlier restrictions preserved",
+      "label": "Exact signed partition \u00b7 earlier restrictions preserved",
       "summary": "The previous actual residual splits exactly into the newly paid intersection and its complement, retaining every original signed coefficient and factorial shift.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.rh_of_adaptivePrefix_cofinal_floors": {
-      "label": "Conditional RH closure · independent full floor still required",
+      "label": "Conditional RH closure \u00b7 independent full floor still required",
       "summary": "A cofinal real floor above minus one for each full adaptive remainder would imply Mathlib RH. This arithmetic floor remains an explicit unproved premise.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-physical-prime-prefix.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszProductCeiling.norm_pairResponse_le_harmonic": {
-      "label": "Exact product ceiling · harmonic cofactor mass",
+      "label": "Exact product ceiling \u00b7 harmonic cofactor mass",
       "summary": "Retaining p*a<=2^(32*N) cancels the cofactor tilt power against the prime-prefix cost, leaving the full divisor-choice weight 2^omega(a)/a with every mask and filter offset retained.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszProductCeiling.harmonic_head_tail_le": {
-      "label": "Large smooth cofactors · inverse-square-root cutoff saving",
+      "label": "Large smooth cofactors \u00b7 inverse-square-root cutoff saving",
       "summary": "Every large squarefree cofactor class has its full harmonic mass bounded by an inverse-square-root cutoff factor times the complete quadratic prime-head Euler product.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszProductCeiling.norm_scaled_large_cofactor_le": {
-      "label": "Original large-cofactor sum · complete geometric allowance",
+      "label": "Original large-cofactor sum \u00b7 complete geometric allowance",
       "summary": "The literal normalized pair response retains its product ceiling, physical cutoff and full filter cost in an explicit N*(N+1)*EulerHead*r_2(u,q)^N bound.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszBeyondPhysical.tendsto_actual_largeCofactorBand": {
-      "label": "Actual large-cofactor class · decay whenever twice u-squared is below one",
+      "label": "Actual large-cofactor class \u00b7 decay whenever twice u-squared is below one",
       "summary": "All scalar conditions are discharged for 0<u and 2*u^2<1. Unique prime insertion turns the bound into independent decay of the actual integer class, for every mask.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszBeyondPhysical.pairResponse_eq_large_of_beyond": {
-      "label": "Beyond the prime cutoff · smaller composite cofactors vanish exactly",
+      "label": "Beyond the prime cutoff \u00b7 smaller composite cofactors vanish exactly",
       "summary": "The original coefficient is exactly zero when a composite smooth cofactor is below the physical cutoff and the inserted prime is above it. The exact signed response retains only larger cofactors.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszCompositeSmooth.mem_compositeSmoothBand_iff": {
-      "label": "Complete actual class · all composite smooth cofactors and all large primes",
+      "label": "Complete actual class \u00b7 all composite smooth cofactors and all large primes",
       "summary": "Membership retains the original band and mask, every squarefree composite cofactor supported through N^2, and every inserted prime above N^2, without a separate cofactor or physical-prime cutoff.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszCompositeSmooth.tendsto_actual_compositeSmoothBand": {
-      "label": "Every composite-smooth class · independently paid at all orders",
+      "label": "Every composite-smooth class \u00b7 independently paid at all orders",
       "summary": "For 1/2<u<exp(-1/2), the prefix estimate, exact saturated-cofactor identity and large-cofactor estimate pay the entire actual class, with all scalar conditions discharged.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszCompositeDeletion.tendsto_actual_band_sub_compositeResidual": {
-      "label": "Original band · complete composite-smooth deletion",
+      "label": "Original band \u00b7 complete composite-smooth deletion",
       "summary": "The full normalized deletion error tends to zero independently inside the previous residual on the stated source interval. Every earlier arithmetic restriction remains.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszCompositeDeletion.surviving_support_dichotomy": {
-      "label": "Nonzero survivors · two precise prime-structure classes",
+      "label": "Nonzero survivors \u00b7 two precise prime-structure classes",
       "summary": "Every nonzero surviving label is either a small-prime/large-prime semiprime beyond the physical cutoff, or has at least two distinct prime factors above N^2.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszCompositeDeletion.tendsto_actual_band_sub_adaptiveComposite": {
-      "label": "All source scales · independent deletion with proved fallback",
+      "label": "All source scales \u00b7 independent deletion with proved fallback",
       "summary": "The adaptive carrier uses the new complete deletion below exp(-1/2) and the prior remainder elsewhere, with independent vanishing total error for every 1/2<u<1.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszCompositeDeletion.tendsto_normalizedAdaptiveComposite": {
-      "label": "Exact negative source · all original orders retained",
+      "label": "Exact negative source \u00b7 all original orders retained",
       "summary": "Under a hypothetical right-half zero, the adaptive remaining carrier keeps its exact negative multiplicity limit, original pole-jet filter, phase and physical cutoff.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszCompositeDeletion.tendsto_quadraticResidual_sub_adaptiveComposite": {
-      "label": "Signed Euler residual · independent bridge retained",
+      "label": "Signed Euler residual \u00b7 independent bridge retained",
       "summary": "The signed quadratic Euler-window residual and the more tightly supported adaptive arithmetic sum differ by an independently vanishing normalized error at every source scale.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszCompositeDeletion.rh_of_adaptiveComposite_cofinal_floors": {
-      "label": "Conditional RH closure · full independent floor still required",
+      "label": "Conditional RH closure \u00b7 full independent floor still required",
       "summary": "A cofinal real floor above minus one for each complete adaptive remainder would imply Mathlib RH. That arithmetic floor remains an explicit unproved premise.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-composite-smooth-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszDivisorPrefix.divisor_prefix_eq_hyperbola": {
-      "label": "Every arithmetic weight · exact divisor hyperbola",
+      "label": "Every arithmetic weight \u00b7 exact divisor hyperbola",
       "summary": "The complete divisor-weighted prefix equals the ordered finite product sum, for every real weight and every integer endpoint, before any positivity estimate.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszDivisorPrefix.squarefree_rpow_prefix_le": {
-      "label": "All rough prime counts · one logarithmic divisor allowance",
+      "label": "All rough prime counts \u00b7 one logarithmic divisor allowance",
       "summary": "Every squarefree prefix has its full 2^omega divisor-choice mass bounded by the real-power prefix times one logarithm, without fixing the number of prime factors.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothRoughProduct.norm_pairResponse_le_harmonic_squarefree": {
-      "label": "Retained product ceiling · harmonic smooth-factor mass",
+      "label": "Retained product ceiling \u00b7 harmonic smooth-factor mass",
       "summary": "An arbitrary squarefree rough factor adds only one logarithm. The exact product ceiling still cancels its cofactor tilt power, retaining all masks and filter shifts.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszSmoothRoughProduct.norm_scaled_large_smooth_product_le": {
-      "label": "Actual multi-prime response · complete cubic allowance",
+      "label": "Actual multi-prime response \u00b7 complete cubic allowance",
       "summary": "The literal normalized pair response has an explicit cubic order allowance times the complete quadratic head and the same strict large-smooth-factor geometric rate.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszLargeSmoothClass.productBand_sum_eq_pairResponse_squarefree": {
-      "label": "Disjoint prime supports · each integer counted once",
+      "label": "Disjoint prime supports \u00b7 each integer counted once",
       "summary": "The entire smooth and rough factors are uniquely recoverable from their product, so the actual signed integer class equals its full finite pair response.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszLargeSmoothClass.tendsto_actual_largeSmoothFactorBand": {
-      "label": "Every large smooth factor · arbitrary rough prime count paid",
+      "label": "Every large smooth factor \u00b7 arbitrary rough prime count paid",
       "summary": "All actual original-band terms whose complete N^2-smooth factor reaches the physical cutoff decay independently whenever 0<u and 2*u^2<1, with every order-dependent mask.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszLargeSmoothClass.mem_largeSmoothFactorBand_iff": {
-      "label": "Exact class · complete smooth factor and full rough support",
+      "label": "Exact class \u00b7 complete smooth factor and full rough support",
       "summary": "Membership retains the original band, arbitrary mask, physical smooth-factor cutoff, squarefree factors and disjoint prime supports, without a rough-prime-count restriction.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszLargeSmoothDeletion.tendsto_actual_band_sub_largeSmoothResidual": {
-      "label": "Original band · new complete component independently removed",
+      "label": "Original band \u00b7 new complete component independently removed",
       "summary": "The normalized difference between the original band and the more tightly supported residual tends to zero on 1/2<u and 2*u^2<1, preserving every earlier deletion.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszLargeSmoothDeletion.surviving_support_with_small_smooth_factor": {
-      "label": "Every nonzero survivor · complete smooth factor below cutoff",
+      "label": "Every nonzero survivor \u00b7 complete smooth factor below cutoff",
       "summary": "Each nonzero survivor has a full smooth/rough factorization with smooth factor below the physical cutoff. Factorization existence is proved, not assumed.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszLargeSmoothDeletion.tendsto_actual_band_sub_adaptiveSmooth": {
-      "label": "Every source scale · independent deletion with fallback",
+      "label": "Every source scale \u00b7 independent deletion with fallback",
       "summary": "The new residual is used when 2*u^2<1; the previous adaptive remainder is retained elsewhere. Their complete deletion error vanishes for every 1/2<u<1.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszLargeSmoothDeletion.tendsto_normalizedAdaptiveSmooth": {
-      "label": "Original pole-jet source · exact negative multiplicity retained",
+      "label": "Original pole-jet source \u00b7 exact negative multiplicity retained",
       "summary": "Under a hypothetical right-half zero, every original order retains the exact negative multiplicity source, physical length, pole-jet filter and logarithmic phase.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszLargeSmoothDeletion.tendsto_quadraticResidual_sub_adaptiveSmooth": {
-      "label": "Signed Euler residual · independent bridge retained",
+      "label": "Signed Euler residual \u00b7 independent bridge retained",
       "summary": "The signed quadratic Euler-window residual and the new adaptive arithmetic sum differ by a proved vanishing normalized error, at every source scale.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszLargeSmoothDeletion.rh_of_adaptiveSmooth_cofinal_floors": {
-      "label": "Conditional RH closure · full signed floor still required",
+      "label": "Conditional RH closure \u00b7 full signed floor still required",
       "summary": "A cofinal real floor above minus one for each full adaptive remainder would imply Mathlib RH. The independent arithmetic floor remains an unproved premise.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-large-smooth-factor-deletion.md",
@@ -6146,7 +6208,7 @@
       "overview": true
     },
     "RiemannGaussian.ZetaRieszCompleteHeadHarmonic.tendsto_completeHead_centered": {
-      "label": "Remove the complete head’s arithmetic error",
+      "label": "Remove the complete head\u2019s arithmetic error",
       "summary": "The actual entire negative complete head equals -m^2 h_N with vanishing complex error. Its explicit harmonic cost remains and multiplicity is unrestricted.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-complete-head-harmonic.md",
@@ -7190,14 +7252,14 @@
     },
     "RiemannGaussian.ZetaRieszWingReserve.eventually_re_reserve_ge": {
       "label": "Positive original wing reserve",
-      "summary": "The actual normalized wing block has real part at least 15m²/544 eventually, under the displayed exposed-zero hypotheses and smaller radius range.",
+      "summary": "The actual normalized wing block has real part at least 15m\u00b2/544 eventually, under the displayed exposed-zero hypotheses and smaller radius range.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-harmonic-wing.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszWingHighOrders.eventually_norm_highWing": {
       "label": "Geometric bound for the high-leg wing",
-      "summary": "The whole selected wing, including its complete low leg and order count, is bounded by C(N+1)² exp(-N/1024) at the original source scale.",
+      "summary": "The whole selected wing, including its complete low leg and order count, is bounded by C(N+1)\u00b2 exp(-N/1024) at the original source scale.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-harmonic-wing.md",
       "overview": true
@@ -7232,14 +7294,14 @@
     },
     "RiemannGaussian.ZetaRieszHarmonicWindow.tendsto_annularRemainder": {
       "label": "Full-range harmonic source retained",
-      "summary": "The narrowed lower-count sum remains coupled to the whole original wing and retains -m+m²c(u) throughout u<exp(-2/3).",
+      "summary": "The narrowed lower-count sum remains coupled to the whole original wing and retains -m+m\u00b2c(u) throughout u<exp(-2/3).",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-harmonic-wing.md",
       "overview": true
     },
     "RiemannGaussian.ZetaRieszHarmonicWindow.tendsto_remainder_add_reserve": {
       "label": "Current coupled harmonic remainder",
-      "summary": "The narrower count sum, unpaid middle wing and positive reserve retain -m+m²c(u). The sufficient independent floor is not proved.",
+      "summary": "The narrower count sum, unpaid middle wing and positive reserve retain -m+m\u00b2c(u). The sufficient independent floor is not proved.",
       "family": "arithmetic",
       "documentation": "docs/zeta-riesz-harmonic-wing.md",
       "overview": true
@@ -7896,12 +7958,12 @@
       "documentation": "docs/vinogradov-zero-free.md"
     },
     "RiemannGaussian.ZetaVinogradovZeroFree.exists_eventual_strip": {
-      "label": "Proved Vinogradov–Korobov region at both edges",
+      "label": "Proved Vinogradov\u2013Korobov region at both edges",
       "overview": true,
       "documentation": "docs/vinogradov-zero-free.md"
     },
     "RiemannGaussian.ZetaVinogradovZeroFree.exists_eventual_union": {
-      "label": "Complete explicit, log-log and Vinogradov–Korobov union",
+      "label": "Complete explicit, log-log and Vinogradov\u2013Korobov union",
       "overview": true,
       "documentation": "docs/vinogradov-zero-free.md"
     },
@@ -8311,7 +8373,7 @@
       "documentation": "docs/zeta-riesz-wide-owner-audit.md"
     },
     "RiemannGaussian.ZetaRieszWideOwnerAudit.eventually_re_wideComplete_le": {
-      "label": "Complete companion has normalized real part at most -m²/40",
+      "label": "Complete companion has normalized real part at most -m\u00b2/40",
       "overview": true,
       "documentation": "docs/zeta-riesz-wide-owner-audit.md"
     },

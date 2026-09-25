@@ -1,0 +1,63 @@
+{
+  "status": "uncertified synthetic diagnostic",
+  "rows": [
+    {
+      "N": 65536,
+      "share_grid": 8192,
+      "quadrature_per_axis": 256,
+      "largest_share_quadrature": 640,
+      "radial_quadrature": 320,
+      "least_share_range": [
+        0.005,
+        0.06
+      ],
+      "radial_window": [
+        1.8,
+        2.2
+      ],
+      "rectangle_evaluation": "direct finite binomial formula at quadrature nodes",
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.5e-05,
+          -0.006
+        ],
+        [
+          2.5e-05,
+          0.006
+        ]
+      ],
+      "density_amplitudes": [
+        1,
+        1,
+        1
+      ],
+      "physical_row_acceptance": 1.0,
+      "radial_batch": 8,
+      "fft_response_sampled_difference": 4.1861556987886545e-17,
+      "joint_source_normalized": {
+        "real": -5.530811802698377e-09,
+        "imag": -3.9669193496993133e-14,
+        "norm": 5.530811802840639e-09
+      },
+      "old_share_coarse_diagnostic": {
+        "real": 1.907180770805527e-10,
+        "imag": -1.931793174016468e-14,
+        "norm": 1.907180780589143e-10
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -5.7215298797789294e-09,
+        "imag": -2.0351261756828454e-14,
+        "norm": 5.7215298798151236e-09
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 3.48102018080578e-13,
+      "log_raw_norm": 45401.22046878789
+    }
+  ],
+  "scope": "Synthetic close competing modes. Full finite rectangle, all supported counts, radial and least masks retained; no certified arithmetic or quadrature transfer.",
+  "implementation": "Original unpruned rectangle_values, before equivalent grid evaluation optimization."
+}

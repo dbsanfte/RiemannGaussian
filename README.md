@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-The harmonic-cost route retains its evaluated source and an open independent -3/40 floor. A shifted-center operator now cancels the pole on each prime leg and yields an all-negative global zero expansion with geometric error. The masked parity packet remains open: adaptive low-order allocations and the arithmetic multiplier error need coupled signed estimates.
+The harmonic-cost route retains its exact source and an open independent -3/40 floor. We are bounding a selected packet of the literal signed prime sum with its factorial correlations intact. Exterior shares, ownership, old allocation, radial localization and prime counts >=56 have geometric bounds. Signed counts 3..55 and the complementary carrier remain open.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ The harmonic-cost route retains its evaluated source and an open independent -3/
 
 ### Latest Update
 
-**Per-leg pole cancellation and global negative zero expansion proved.** Lean bounds the complete ordinary-prime leg error geometrically, proves the exact arithmetic multiplier, and controls a moving supported-insertion model. The summed zero-order marginal also gives a source-scale obstruction to discarding adaptive bad allocations by an absolute bound.
-The literal packet still needs signed control of low-order allocations and multiplier errors, plus a boundary-aware multimode inverse. No packet decay, independent floor or new zero exclusion is claimed.
-[Current checked endpoint](RiemannGaussian/ZetaRieszShiftedPrimePowers.lean#L77)
-· [Proof details](docs/zeta-riesz-shifted-center-audit.md).
+**The selected packet's tail with at least 56 prime factors decays.** Lean preserves the correlated factorial weights and full phase while paying share, ownership, allocation, radial and high-count errors. Exact ledgers leave counts 3..55 signed together. Finite-mode support and new analytic no-go audits are also recorded.
+Prove cancellation in the retained low-count sum and an independent floor for its complementary carrier. The numerical diagnostics are uncertified; no packet decay or new zero exclusion is claimed.
+[Current checked endpoint](RiemannGaussian/ZetaRieszLeastBoundary.lean#L836)
+· [Proof details](docs/zeta-riesz-joint-prime-transfer.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

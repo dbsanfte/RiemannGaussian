@@ -1,0 +1,177 @@
+{
+  "status": "uncertified synthetic finite negative modes; not actual zeta or prime-sum bound",
+  "rows": [
+    {
+      "N": 8192,
+      "share_grid": 4096,
+      "quadrature_per_axis": 128,
+      "largest_share_quadrature": 320,
+      "radial_quadrature": 160,
+      "least_share_range": [
+        0.005,
+        0.06
+      ],
+      "radial_window": [
+        1.8,
+        2.2
+      ],
+      "rectangle_evaluation": "direct finite binomial formula at quadrature nodes",
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.5e-05,
+          -0.006
+        ],
+        [
+          2.5e-05,
+          0.006
+        ]
+      ],
+      "density_amplitudes": [
+        1,
+        1,
+        1
+      ],
+      "physical_row_acceptance": 1.0,
+      "radial_batch": 8,
+      "fft_response_sampled_difference": 4.130582372871541e-18,
+      "joint_source_normalized": {
+        "real": -1.1409335084285433e-10,
+        "imag": 2.4730909004467232e-15,
+        "norm": 1.1409335086965772e-10
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -1.730513487379822e-10,
+        "imag": 1.4192878399761457e-15,
+        "norm": 1.7305134874380237e-10
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": 5.895799789512787e-11,
+        "imag": 1.0538030604705775e-15,
+        "norm": 5.89579979045456e-11
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 7.286924679332868e-12,
+      "log_raw_norm": 5655.241587154555
+    },
+    {
+      "N": 32768,
+      "share_grid": 4096,
+      "quadrature_per_axis": 128,
+      "largest_share_quadrature": 320,
+      "radial_quadrature": 160,
+      "least_share_range": [
+        0.005,
+        0.06
+      ],
+      "radial_window": [
+        1.8,
+        2.2
+      ],
+      "rectangle_evaluation": "direct finite binomial formula at quadrature nodes",
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.5e-05,
+          -0.006
+        ],
+        [
+          2.5e-05,
+          0.006
+        ]
+      ],
+      "density_amplitudes": [
+        1,
+        1,
+        1
+      ],
+      "physical_row_acceptance": 1.0,
+      "radial_batch": 8,
+      "fft_response_sampled_difference": 4.8572278478440004e-17,
+      "joint_source_normalized": {
+        "real": -7.131545822628923e-10,
+        "imag": 4.911865412733253e-15,
+        "norm": 7.131545822798076e-10
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -3.1315710926277645e-10,
+        "imag": 2.9900830291630424e-15,
+        "norm": 3.1315710927705136e-10
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -3.999974730001158e-10,
+        "imag": 1.9217823835702107e-15,
+        "norm": 3.999974730047324e-10
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 3.791595696565401e-13,
+      "log_raw_norm": 22689.401900689354
+    },
+    {
+      "N": 65536,
+      "share_grid": 4096,
+      "quadrature_per_axis": 128,
+      "largest_share_quadrature": 320,
+      "radial_quadrature": 160,
+      "least_share_range": [
+        0.005,
+        0.06
+      ],
+      "radial_window": [
+        1.8,
+        2.2
+      ],
+      "rectangle_evaluation": "direct finite binomial formula at quadrature nodes",
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.5e-05,
+          -0.006
+        ],
+        [
+          2.5e-05,
+          0.006
+        ]
+      ],
+      "density_amplitudes": [
+        1,
+        1,
+        1
+      ],
+      "physical_row_acceptance": 1.0,
+      "radial_batch": 8,
+      "fft_response_sampled_difference": 4.865394419991331e-17,
+      "joint_source_normalized": {
+        "real": -5.5279065488273415e-09,
+        "imag": 1.2110906434101139e-14,
+        "norm": 5.527906548840608e-09
+      },
+      "old_share_coarse_diagnostic": {
+        "real": 2.179224423489304e-10,
+        "imag": 6.1665808912425616e-15,
+        "norm": 2.179224424361787e-10
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -5.7458289911762716e-09,
+        "imag": 5.944325542858577e-15,
+        "norm": 5.745828991179346e-09
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 1.4593843541670157e-13,
+      "log_raw_norm": 45401.21994336461
+    }
+  ],
+  "script_sha256": "f6d79790ebf2861793d280b40a4989404a70db886cde2f7850ef76ab60cb7bce",
+  "command": ".lake/plot-venv/bin/python scripts/probe_riesz_joint_renewal.py --close-modes --orders 8192 32768 65536 --grids 4096 --quadrature 128 --share-quadrature 320 --radial-quadrature 160 --radial-batch 8 --least-range .005 .06 --radial-window 1.8 2.2 --fft-response --output <artifact>",
+  "scope": "same run function as CLI; coarse growth is not a rigorous asymptotic conclusion",
+  "sha256_recording_note": "The recorded script hash was taken when this artifact was recorded; the invoked run function preceded the later equivalent rectangle-grid optimization."
+}

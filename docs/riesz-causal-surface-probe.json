@@ -1,0 +1,450 @@
+{
+  "directional_rows": [
+    {
+      "N": 64,
+      "b": "0.250025",
+      "log10_source_normalized": "-6.002343180423252631302135",
+      "log_source_normalized_over_N": "-0.2159516551605789233043848",
+      "model": "left_half_plane",
+      "normalized_leg_pole_radius": "1.5",
+      "precision_crosscheck_relative_error": "1.1598749e-89",
+      "upper_endpoint_second_term_exponent": "-0.2284549050059160368292571"
+    },
+    {
+      "N": 64,
+      "b": "(-0.01 + 0.6j)",
+      "log10_source_normalized": "-1.109360650197884068610495",
+      "log_source_normalized_over_N": "-0.03991245774843484176055361",
+      "model": "rotated_minus_1_over_100",
+      "normalized_leg_pole_radius": "1.549230764865673301128881",
+      "precision_crosscheck_relative_error": "9.4108138e-90",
+      "upper_endpoint_second_term_exponent": "0.009077932494083963170742912"
+    },
+    {
+      "N": 64,
+      "b": "(-0.05 + 0.6j)",
+      "log10_source_normalized": "0.08245424258138534616607679",
+      "log_source_normalized_over_N": "0.002966529840968949668066662",
+      "model": "rotated_minus_1_over_20",
+      "normalized_leg_pole_radius": "1.4999100111321347884175",
+      "precision_crosscheck_relative_error": "1.3675901e-89",
+      "upper_endpoint_second_term_exponent": "0.04561793249408396317074291"
+    },
+    {
+      "N": 256,
+      "b": "0.250025",
+      "log10_source_normalized": "-18.1989385932435927929501",
+      "log_source_normalized_over_N": "-0.1636898621606122072339367",
+      "model": "left_half_plane",
+      "normalized_leg_pole_radius": "1.5",
+      "precision_crosscheck_relative_error": "5.928907e-89",
+      "upper_endpoint_second_term_exponent": "-0.2284549050059160368292571"
+    },
+    {
+      "N": 256,
+      "b": "(-0.01 + 0.6j)",
+      "log10_source_normalized": "-0.3907909854255299568593496",
+      "log_source_normalized_over_N": "-0.003514958974676869715934091",
+      "model": "rotated_minus_1_over_100",
+      "normalized_leg_pole_radius": "1.549230764865673301128881",
+      "precision_crosscheck_relative_error": "1.4661938e-89",
+      "upper_endpoint_second_term_exponent": "0.009077932494083963170742912"
+    },
+    {
+      "N": 256,
+      "b": "(-0.05 + 0.6j)",
+      "log10_source_normalized": "3.621071271337896925703377",
+      "log_source_normalized_over_N": "0.03256962785176421337715705",
+      "model": "rotated_minus_1_over_20",
+      "normalized_leg_pole_radius": "1.4999100111321347884175",
+      "precision_crosscheck_relative_error": "2.0328856e-89",
+      "upper_endpoint_second_term_exponent": "0.04561793249408396317074291"
+    },
+    {
+      "N": 640,
+      "b": "0.250025",
+      "log10_source_normalized": "-42.14588366096525314919403",
+      "log_source_normalized_over_N": "-0.1516320053887498562244486",
+      "model": "left_half_plane",
+      "normalized_leg_pole_radius": "1.5",
+      "precision_crosscheck_relative_error": "1.7115904e-88",
+      "upper_endpoint_second_term_exponent": "-0.2284549050059160368292571"
+    },
+    {
+      "N": 640,
+      "b": "(-0.01 + 0.6j)",
+      "log10_source_normalized": "1.006715294139513751551597",
+      "log_source_normalized_over_N": "0.003621949420585563008790602",
+      "model": "rotated_minus_1_over_100",
+      "normalized_leg_pole_radius": "1.549230764865673301128881",
+      "precision_crosscheck_relative_error": "2.513799e-89",
+      "upper_endpoint_second_term_exponent": "0.009077932494083963170742912"
+    },
+    {
+      "N": 640,
+      "b": "(-0.05 + 0.6j)",
+      "log10_source_normalized": "11.11555634716611673919001",
+      "log_source_normalized_over_N": "0.03999142866456257447429662",
+      "model": "rotated_minus_1_over_20",
+      "normalized_leg_pole_radius": "1.4999100111321347884175",
+      "precision_crosscheck_relative_error": "4.0212581e-89",
+      "upper_endpoint_second_term_exponent": "0.04561793249408396317074291"
+    },
+    {
+      "N": 1536,
+      "b": "0.250025",
+      "log10_source_normalized": "-97.48925739669989591231014",
+      "log_source_normalized_over_N": "-0.1461440825577478423691052",
+      "model": "left_half_plane",
+      "normalized_leg_pole_radius": "1.5",
+      "precision_crosscheck_relative_error": "4.1616112e-88",
+      "upper_endpoint_second_term_exponent": "-0.2284549050059160368292571"
+    },
+    {
+      "N": 1536,
+      "b": "(-0.01 + 0.6j)",
+      "log10_source_normalized": "4.383936351976350506837196",
+      "log_source_normalized_over_N": "0.006571866206181928661003673",
+      "model": "rotated_minus_1_over_100",
+      "normalized_leg_pole_radius": "1.549230764865673301128881",
+      "precision_crosscheck_relative_error": "7.3493931e-89",
+      "upper_endpoint_second_term_exponent": "0.009077932494083963170742912"
+    },
+    {
+      "N": 1536,
+      "b": "(-0.05 + 0.6j)",
+      "log10_source_normalized": "28.70898329605307454811286",
+      "log_source_normalized_over_N": "0.04303702927897582866747102",
+      "model": "rotated_minus_1_over_20",
+      "normalized_leg_pole_radius": "1.4999100111321347884175",
+      "precision_crosscheck_relative_error": "1.0289068e-88",
+      "upper_endpoint_second_term_exponent": "0.04561793249408396317074291"
+    },
+    {
+      "N": 4096,
+      "b": "0.250025",
+      "log10_source_normalized": "-254.9576528059151533370833",
+      "log_source_normalized_over_N": "-0.1433256080799931044604344",
+      "model": "left_half_plane",
+      "normalized_leg_pole_radius": "1.5",
+      "precision_crosscheck_relative_error": "8.7496629e-88",
+      "upper_endpoint_second_term_exponent": "-0.2284549050059160368292571"
+    },
+    {
+      "N": 4096,
+      "b": "(-0.01 + 0.6j)",
+      "log10_source_normalized": "14.17082568584844034816546",
+      "log_source_normalized_over_N": "0.007966194330969663630157721",
+      "model": "rotated_minus_1_over_100",
+      "normalized_leg_pole_radius": "1.549230764865673301128881",
+      "precision_crosscheck_relative_error": "1.3358493e-88",
+      "upper_endpoint_second_term_exponent": "0.009077932494083963170742912"
+    },
+    {
+      "N": 4096,
+      "b": "(-0.05 + 0.6j)",
+      "log10_source_normalized": "79.21031857402706619586316",
+      "log_source_normalized_over_N": "0.04452844208004494539435874",
+      "model": "rotated_minus_1_over_20",
+      "normalized_leg_pole_radius": "1.4999100111321347884175",
+      "precision_crosscheck_relative_error": "3.1412565e-88",
+      "upper_endpoint_second_term_exponent": "0.04561793249408396317074291"
+    },
+    {
+      "N": 8192,
+      "b": "0.250025",
+      "log10_source_normalized": "-506.5277368659611968950075",
+      "log_source_normalized_over_N": "-0.1423734394647915972763587",
+      "model": "left_half_plane",
+      "normalized_leg_pole_radius": "1.5",
+      "precision_crosscheck_relative_error": "1.5456978e-87",
+      "upper_endpoint_second_term_exponent": "-0.2284549050059160368292571"
+    },
+    {
+      "N": 8192,
+      "b": "(-0.01 + 0.6j)",
+      "log10_source_normalized": "30.2064510584722666498668",
+      "log_source_normalized_over_N": "0.008490347158141168675245009",
+      "model": "rotated_minus_1_over_100",
+      "normalized_leg_pole_radius": "1.549230764865673301128881",
+      "precision_crosscheck_relative_error": "2.8223605e-88",
+      "upper_endpoint_second_term_exponent": "0.009077932494083963170742912"
+    },
+    {
+      "N": 8192,
+      "b": "(-0.05 + 0.6j)",
+      "log10_source_normalized": "160.2081194757088016746735",
+      "log_source_normalized_over_N": "0.04503086275407423493393004",
+      "model": "rotated_minus_1_over_20",
+      "normalized_leg_pole_radius": "1.4999100111321347884175",
+      "precision_crosscheck_relative_error": "6.2841381e-88",
+      "upper_endpoint_second_term_exponent": "0.04561793249408396317074291"
+    }
+  ],
+  "interpretation": [
+    "The persistent fixed-slice Taylor tail is not a source-scale lower bound for this radial inverse.",
+    "A cutoff-only causal multiplier matches the entire selected pole surface exactly.",
+    "The remaining kernel has a physical-gap exponential saving; the full radial integral decays.",
+    "The unscaled comparison has Lean bound (2/3)**(N+1); the source-matched regression has bound (4/5)**(N+1).",
+    "The rotated analytic poles show that the Cauchy radius alone does not predict radial suppression.",
+    "A joint kernel envelope M*exp(-7*T/25000) is sufficient for the compiled bound M*(9999/10000)**(N+1).",
+    "A corresponding causal factorization and strict-core estimate for the actual zeta remainder remain open."
+  ],
+  "kernel": "exp(L_N-T)-exp(-(1-p)*T)",
+  "largest_share": "11/20",
+  "moving_length": "2*log(floor(u**(-N)/(N+1))+2)",
+  "mpmath": "1.4.1",
+  "phase_height_in_lean_bound": "arbitrary real y",
+  "phase_height_in_probe": 0,
+  "phase_rows": [
+    {
+      "N": 256,
+      "b": "-1/20+3i/5",
+      "log10_source_normalized": "1.362655712696590514216968",
+      "phase_height": 55,
+      "precision_crosscheck_relative_error": "9.217157e-88"
+    },
+    {
+      "N": 256,
+      "b": "-1/20+3i/5",
+      "log10_source_normalized": "0.3575005846073214030928692",
+      "phase_height": 1000,
+      "precision_crosscheck_relative_error": "1.0404109e-86"
+    },
+    {
+      "N": 1536,
+      "b": "-1/20+3i/5",
+      "log10_source_normalized": "26.37757480651353455961213",
+      "phase_height": 55,
+      "precision_crosscheck_relative_error": "4.4157301e-87"
+    },
+    {
+      "N": 1536,
+      "b": "-1/20+3i/5",
+      "log10_source_normalized": "25.13640613713527500004424",
+      "phase_height": 1000,
+      "precision_crosscheck_relative_error": "2.0457666e-86"
+    },
+    {
+      "N": 8192,
+      "b": "-1/20+3i/5",
+      "log10_source_normalized": "157.8974958141075172562507",
+      "phase_height": 55,
+      "precision_crosscheck_relative_error": "1.3358748e-86"
+    },
+    {
+      "N": 8192,
+      "b": "-1/20+3i/5",
+      "log10_source_normalized": "156.6398680386979296879386",
+      "phase_height": 1000,
+      "precision_crosscheck_relative_error": "8.2714721e-85"
+    }
+  ],
+  "precision_decimal_digits": 90,
+  "radial_window": "39*N/20 < T <= 203*N/100",
+  "rotated_models": "Exact complex-mode inverse models; not actual zeta remainders. Growth is numerical here.",
+  "rows": [
+    {
+      "L_over_N": "1.255844758935651959319643",
+      "N": 64,
+      "log10_lean_upper_bound": "-11.44593183861928073528379",
+      "log10_raw_response": "-1.338371164739158837761428",
+      "log10_source_normalized_response": "-20.90532088289793652665446",
+      "minimum_gap_share": "0.3559770466996656618873628",
+      "source_matched_log10_lean_bound": "-6.299150845523666933320916",
+      "source_matched_log10_normalized": "-10.9903533406460374876215",
+      "source_matched_log10_raw": "8.576596377512740201271524",
+      "u": "1/2"
+    },
+    {
+      "L_over_N": "1.342942204206646714159841",
+      "N": 256,
+      "log10_lean_upper_bound": "-45.25545357731007921489128",
+      "log10_raw_response": "7.93782917080328159982",
+      "log10_source_normalized_response": "-69.4268797148398855701109",
+      "minimum_gap_share": "0.3113116901504375824821329",
+      "source_matched_log10_lean_bound": "-24.90587334307049849020731",
+      "source_matched_log10_normalized": "-35.37542171131877372787798",
+      "source_matched_log10_raw": "41.98928717432439344205292",
+      "u": "1/2"
+    },
+    {
+      "L_over_N": "1.366097394067013524959985",
+      "N": 640,
+      "log10_lean_upper_bound": "-112.8744970546916761741063",
+      "log10_raw_response": "28.47921273074095364686176",
+      "log10_source_normalized_response": "-164.4810144898709924851449",
+      "minimum_gap_share": "0.2994372338117879359179565",
+      "source_matched_log10_lean_bound": "-62.11931833816416160398011",
+      "source_matched_log10_normalized": "-83.02745345838616363042244",
+      "source_matched_log10_raw": "109.9327737622257825015842",
+      "u": "1/2"
+    },
+    {
+      "L_over_N": "1.376740210412158072140027",
+      "N": 1536,
+      "log10_lean_upper_bound": "-270.6522651685820690789412",
+      "log10_raw_response": "77.77525646326724229217283",
+      "log10_source_normalized_response": "-384.9078468722718547513439",
+      "minimum_gap_share": "0.2939793792758163732615246",
+      "source_matched_log10_lean_bound": "-148.95068999338270886945",
+      "source_matched_log10_normalized": "-193.3973592022678515668877",
+      "source_matched_log10_raw": "269.285744133271245476629",
+      "u": "1/2"
+    },
+    {
+      "L_over_N": "1.382232832664057185692025",
+      "N": 4096,
+      "log10_lean_upper_bound": "-721.4458883511260488070411",
+      "log10_raw_response": "220.2697263141475303288982",
+      "log10_source_normalized_response": "-1013.05016592118342646179",
+      "minimum_gap_share": "0.2911626499158681099015257",
+      "source_matched_log10_lean_bound": "-397.0403232940071296279352",
+      "source_matched_log10_normalized": "-507.7515008825462607408107",
+      "source_matched_log10_raw": "725.5683913527846960498776",
+      "u": "1/2"
+    },
+    {
+      "L_over_N": "1.384094401302961464855022",
+      "N": 8192,
+      "log10_lean_upper_bound": "-1442.715685443196416372001",
+      "log10_raw_response": "449.2116377593357927160168",
+      "log10_source_normalized_response": "-2017.127116715662139670146",
+      "minimum_gap_share": "0.2902079993318146334076811",
+      "source_matched_log10_lean_bound": "-793.9837365750062028415117",
+      "source_matched_log10_normalized": "-1010.147849657301532402806",
+      "source_matched_log10_raw": "1456.190904817696399983357",
+      "u": "1/2"
+    },
+    {
+      "L_over_N": "1.255644768934985342672262",
+      "N": 64,
+      "log10_lean_upper_bound": "-11.44593183861928073528379",
+      "log10_raw_response": "-1.343929946732060905413403",
+      "log10_source_normalized_response": "-20.90805689189476506788105",
+      "minimum_gap_share": "0.3560796056743664909373015",
+      "source_matched_log10_lean_bound": "-6.299150845523666933320916",
+      "source_matched_log10_normalized": "-10.99255600171265803561461",
+      "source_matched_log10_raw": "8.571570943450046126853038",
+      "u": "10001/20000"
+    },
+    {
+      "L_over_N": "1.342742214205980097489175",
+      "N": 256,
+      "log10_lean_upper_bound": "-45.25545357731007921489128",
+      "log10_raw_response": "7.915594405049594745515474",
+      "log10_source_normalized_response": "-69.43795367043986632762585",
+      "minimum_gap_share": "0.3114142491251384115440131",
+      "source_matched_log10_lean_bound": "-24.90587334307049849020731",
+      "source_matched_log10_normalized": "-35.38369606770599227570151",
+      "source_matched_log10_raw": "41.96985200778346879743981",
+      "u": "10001/20000"
+    },
+    {
+      "L_over_N": "1.365897404066346908289319",
+      "N": 640,
+      "log10_lean_upper_bound": "-112.8744970546916761741063",
+      "log10_raw_response": "28.42362581635673651110045",
+      "log10_source_normalized_response": "-164.5087645197862383833882",
+      "minimum_gap_share": "0.2995397927864887649798367",
+      "source_matched_log10_lean_bound": "-62.11931833816416160398011",
+      "source_matched_log10_normalized": "-83.04778694556922568342217",
+      "source_matched_log10_raw": "109.8846033905737492110665",
+      "u": "10001/20000"
+    },
+    {
+      "L_over_N": "1.376540220411491455469361",
+      "N": 1536,
+      "log10_lean_upper_bound": "-270.6522651685820690789412",
+      "log10_raw_response": "77.64184786874512116634567",
+      "log10_source_normalized_response": "-384.9745077422560526446201",
+      "minimum_gap_share": "0.2940819382505172023234047",
+      "source_matched_log10_lean_bound": "-148.95068999338270886945",
+      "source_matched_log10_normalized": "-193.4457753531748753807061",
+      "source_matched_log10_raw": "269.1705802578262984302597",
+      "u": "10001/20000"
+    },
+    {
+      "L_over_N": "1.382032842663390569021358",
+      "N": 4096,
+      "log10_lean_upper_bound": "-721.4458883511260488070411",
+      "log10_raw_response": "219.9139700620885406600257",
+      "log10_source_normalized_response": "-1013.228000619936058626589",
+      "minimum_gap_share": "0.2912652088905689389634059",
+      "source_matched_log10_lean_bound": "-397.0403232940071296279352",
+      "source_matched_log10_normalized": "-507.8800869678617814543703",
+      "source_matched_log10_raw": "725.2618837141628178322445",
+      "u": "10001/20000"
+    },
+    {
+      "L_over_N": "1.383894411302294848184356",
+      "N": 8192,
+      "log10_lean_upper_bound": "-1442.715685443196416372001",
+      "log10_raw_response": "448.500125255217813378272",
+      "log10_source_normalized_response": "-2017.482829540444266669381",
+      "minimum_gap_share": "0.2903105583065154624695612",
+      "source_matched_log10_lean_bound": "-793.9837365750062028415117",
+      "source_matched_log10_normalized": "-1010.404669533553499531942",
+      "source_matched_log10_raw": "1455.578285262108580515711",
+      "u": "10001/20000"
+    }
+  ],
+  "script_sha256": "e84304a8a025c1d4cab8ef09c9d0b897935985588fd1ca8c86540fe77dc962c9",
+  "shifted_conjugate_pair": {
+    "count_factor": "prod_a((w-a)/(w+z-a))*prod_xi((w+z-xi)/(w-xi))",
+    "negative_modes": [
+      "(-0.00005 + 0.0j)",
+      "(-0.00005 - 110.0j)"
+    ],
+    "normalized_shifted_pole_moduli": [
+      "2.998808923904212164001247",
+      "219.9257703976841881168501"
+    ],
+    "positive_shifted_modes": [
+      "(-0.9993067264018498637377157 - 0.02725336526550499628375588j)",
+      "(0.999206775951771409695268 - 109.9727484515649516888265j)"
+    ],
+    "rows": [
+      {
+        "N": 64,
+        "log10_source_normalized": "22.092664436912844351877",
+        "log_source_normalized_over_N": "0.7948474968274251193737401",
+        "precision_crosscheck_relative_error": "2.1270373e-88"
+      },
+      {
+        "N": 256,
+        "log10_source_normalized": "97.88170335905428143195873",
+        "log_source_normalized_over_N": "0.880394339966498423485929",
+        "precision_crosscheck_relative_error": "9.1825976e-88"
+      },
+      {
+        "N": 640,
+        "log10_source_normalized": "249.9036171785051865166905",
+        "log_source_normalized_over_N": "0.8991005368758074334293568",
+        "precision_crosscheck_relative_error": "1.5711176e-87"
+      },
+      {
+        "N": 1536,
+        "log10_source_normalized": "604.8954416227148690394916",
+        "log_source_normalized_over_N": "0.9067859548831466465132047",
+        "precision_crosscheck_relative_error": "6.1817915e-87"
+      },
+      {
+        "N": 4096,
+        "log10_source_normalized": "1619.487892301051489399298",
+        "log_source_normalized_over_N": "0.9104025095451044153018736",
+        "precision_crosscheck_relative_error": "1.4694775e-86"
+      },
+      {
+        "N": 8192,
+        "log10_source_normalized": "3243.026054253022271751645",
+        "log_source_normalized_over_N": "0.9115409483293833412191679",
+        "precision_crosscheck_relative_error": "2.9389702e-86"
+      }
+    ],
+    "scope": "Finite rational model with synthetic beta=19999/20000 and gamma=55; not a claimed actual zero or full zeta inverse."
+  },
+  "source_matched_kernel": "exp((1/2-u)*(1-p)*T)*(exp(u*(L_N-T))-exp(-u*(1-p)*T))",
+  "source_matched_normalized_count_factor": "(1-t/2)/(1-t), exactly at w=1/2,z=-u*t",
+  "status": "Exact-floor toy radial regression; not a literal zeta packet estimate."
+}

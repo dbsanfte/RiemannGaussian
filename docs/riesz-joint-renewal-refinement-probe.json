@@ -1,0 +1,160 @@
+{
+  "status": "uncertified all-count continuum diagnostic; NOT a literal prime transfer",
+  "script_sha256": "c4286aef8c772da53962393dcfe9284c8570bf5daa1d724a8302b3898efa9c26",
+  "error": "grid and quadrature errors must be refined; no rigorous error enclosure",
+  "finite_subset_regression": {
+    "direct": [
+      0.049516748602381644,
+      0.33232722775375445
+    ],
+    "series": [
+      0.04951674860238171,
+      0.33232722775375456
+    ],
+    "absolute_difference": 1.3092278833360675e-16
+  },
+  "rows": [
+    {
+      "N": 4096,
+      "share_grid": 2048,
+      "quadrature_per_axis": 64,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": -1.8122056017670565e-14,
+        "imag": 0.0,
+        "norm": 1.8122056017670565e-14
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -8.619467694211569e-15,
+        "imag": 0.0,
+        "norm": 8.619467694211569e-15
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -9.502588323458996e-15,
+        "imag": 0.0,
+        "norm": 9.502588323458996e-15
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 2.233456475320139e-17,
+      "log_raw_norm": 2807.7726726037563
+    },
+    {
+      "N": 4096,
+      "share_grid": 2048,
+      "quadrature_per_axis": 64,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.4999999999941735e-05,
+          -0.1
+        ],
+        [
+          2.4999999999941735e-05,
+          0.11621621621621622
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": 5.705736950139394e-16,
+        "imag": 2.232907898518238e-14,
+        "norm": 2.233636771428952e-14
+      },
+      "old_share_coarse_diagnostic": {
+        "real": 1.7668431668432155e-15,
+        "imag": 1.1726467244595812e-14,
+        "norm": 1.1858826620488178e-14
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -1.196269471829276e-15,
+        "imag": 1.0602611740586569e-14,
+        "norm": 1.0669884552836307e-14
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 2.321813319987421e-17,
+      "log_raw_norm": 2807.981759032117
+    },
+    {
+      "N": 8192,
+      "share_grid": 2048,
+      "quadrature_per_axis": 64,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": -1.937722280891279e-14,
+        "imag": 0.0,
+        "norm": 1.937722280891279e-14
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -9.31920992590062e-15,
+        "imag": 0.0,
+        "norm": 9.31920992590062e-15
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -1.005801288301217e-14,
+        "imag": 0.0,
+        "norm": 1.005801288301217e-14
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 2.233456475320139e-17,
+      "log_raw_norm": 5646.560913189271
+    },
+    {
+      "N": 8192,
+      "share_grid": 2048,
+      "quadrature_per_axis": 64,
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.4999999999941735e-05,
+          -0.1
+        ],
+        [
+          2.4999999999941735e-05,
+          0.11621621621621622
+        ]
+      ],
+      "joint_source_normalized": {
+        "real": -5.003356189854861e-14,
+        "imag": -3.3591343247544366e-14,
+        "norm": 6.02638835242987e-14
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -2.540536136361506e-14,
+        "imag": -1.561904142787294e-14,
+        "norm": 2.982258944393454e-14
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -2.462820053493355e-14,
+        "imag": -1.7972301819671427e-14,
+        "norm": 3.0488553496128116e-14
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 3.1372247449879723e-17,
+      "log_raw_norm": 5647.695547872754
+    }
+  ],
+  "rectangle_checks": [
+    {
+      "N": 4096,
+      "sampled_interpolation_error": 3.109412005652956e-08
+    },
+    {
+      "N": 8192,
+      "sampled_interpolation_error": 4.907996002945225e-07
+    }
+  ]
+}

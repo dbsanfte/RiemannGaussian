@@ -1,0 +1,85 @@
+{
+  "interpretation": [
+    "Finite negative-mode weak inverses retain triangular support.",
+    "The actual complete xi count factor has factorial normal growth.",
+    "Every fixed primitive eventually grows; initial small values are misleading.",
+    "Lean proves the fixed-primitive domination obstruction independently of this probe.",
+    "The result does not assert divergence of an arithmetic packet."
+  ],
+  "mpmath": "1.4.1",
+  "precision_decimal_digits": 80,
+  "primitive_orders": [
+    0,
+    10,
+    100
+  ],
+  "quantity": "abs((1-xi(2-z)/xi(2))/z**(r+2)), z=2n+3",
+  "rows": [
+    {
+      "log10_norm_after_primitive": {
+        "0": "4.81089990276985493164297",
+        "10": "-10.6297805407329014233418",
+        "100": "-149.595904532257708618205"
+      },
+      "n": 16,
+      "z": 35
+    },
+    {
+      "log10_norm_after_primitive": {
+        "0": "18.9745050169820810542775",
+        "10": "0.713756989973816712786166",
+        "100": "-163.632975253100562360636"
+      },
+      "n": 32,
+      "z": 67
+    },
+    {
+      "log10_norm_after_primitive": {
+        "0": "56.7586370255380642473018",
+        "10": "35.5859240689804216392013",
+        "100": "-154.968492540038361833704"
+      },
+      "n": 64,
+      "z": 131
+    },
+    {
+      "log10_norm_after_primitive": {
+        "0": "151.428751199156279812949",
+        "10": "127.295753558343761537742",
+        "100": "-89.9012252089689029391176"
+      },
+      "n": 128,
+      "z": 259
+    },
+    {
+      "log10_norm_after_primitive": {
+        "0": "379.143315166923596285943",
+        "10": "352.02524287651168618637",
+        "100": "107.96259226280449529021"
+      },
+      "n": 256,
+      "z": 515
+    },
+    {
+      "log10_norm_after_primitive": {
+        "0": "911.482057914677102603578",
+        "10": "881.366353478704320631565",
+        "100": "610.325013554949282883445"
+      },
+      "n": 512,
+      "z": 1027
+    },
+    {
+      "log10_norm_after_primitive": {
+        "0": "2130.13459775496936735483",
+        "10": "2097.01494115128570448527",
+        "100": "1798.93803171813273865923"
+      },
+      "n": 1024,
+      "z": 2051
+    }
+  ],
+  "script_sha256": "b44a980ad8f5c66496a6049509e38dc976e98eb2f717df15c9c1bbd7b890208c",
+  "status": "Actual-xi transform exploration; no literal packet or zero-free estimate.",
+  "v": 2
+}

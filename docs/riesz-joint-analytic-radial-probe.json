@@ -1,0 +1,231 @@
+{
+  "status": "uncertified all-count continuum diagnostic; NOT a literal prime transfer",
+  "script_sha256": "c160226ad14be1ca8c2b9069980b229a6fef4f65d4655d142d3300ddf08b749a",
+  "error": "grid and quadrature errors must be refined; no rigorous error enclosure",
+  "finite_subset_regression": {
+    "direct": [
+      0.049516748602381644,
+      0.33232722775375445
+    ],
+    "series": [
+      0.04951674860238171,
+      0.33232722775375456
+    ],
+    "absolute_difference": 1.3092278833360675e-16
+  },
+  "modal_recurrence_regression": {
+    "grid": 512,
+    "maximum_coefficient_difference": 7.131015156950616e-13
+  },
+  "rows": [
+    {
+      "N": 1024,
+      "share_grid": 2048,
+      "quadrature_per_axis": 128,
+      "least_share_range": [
+        0.005,
+        0.06
+      ],
+      "radial_window": [
+        1.8,
+        2.2
+      ],
+      "rectangle_evaluation": "direct finite binomial formula at quadrature nodes",
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.4999999999941735e-05,
+          -0.5
+        ]
+      ],
+      "density_amplitudes": [
+        1,
+        1
+      ],
+      "physical_row_acceptance": 0.88665771484375,
+      "fft_response_sampled_difference": 3.455230021364549e-20,
+      "joint_source_normalized": {
+        "real": -9.177197142531832e-08,
+        "imag": 4.484843870600196e-10,
+        "norm": 9.177306727757811e-08
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -3.672738113849613e-08,
+        "imag": 1.6226039612157263e-10,
+        "norm": 3.6727739567369385e-08
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -5.504459028682219e-08,
+        "imag": 2.86223990938447e-10,
+        "norm": 5.504533444368477e-08
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 9.474274489551517e-16,
+      "log_raw_norm": 694.1694182314608
+    },
+    {
+      "N": 1024,
+      "share_grid": 2048,
+      "quadrature_per_axis": 128,
+      "least_share_range": [
+        0.005,
+        0.06
+      ],
+      "radial_window": [
+        1.8,
+        2.2
+      ],
+      "rectangle_evaluation": "direct finite binomial formula at quadrature nodes",
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.4999999999941735e-05,
+          -0.5
+        ],
+        [
+          4.999999999999449e-05,
+          0.6
+        ]
+      ],
+      "density_amplitudes": [
+        1,
+        1,
+        -1
+      ],
+      "physical_row_acceptance": 0.88665771484375,
+      "fft_response_sampled_difference": 4.694819753729493e-16,
+      "joint_source_normalized": {
+        "real": 6.469299325349692e-07,
+        "imag": -1.839901300446531e-06,
+        "norm": 1.950321802419933e-06
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -3.2001881655901444e-06,
+        "imag": -5.124478155136438e-06,
+        "norm": 6.041645525653898e-06
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": 3.847118098125114e-06,
+        "imag": 3.2845768546899066e-06,
+        "norm": 5.0585336586096205e-06
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 8.735257927361061e-14,
+      "log_raw_norm": 697.2258490264802
+    },
+    {
+      "N": 1024,
+      "share_grid": 4096,
+      "quadrature_per_axis": 128,
+      "least_share_range": [
+        0.005,
+        0.06
+      ],
+      "radial_window": [
+        1.8,
+        2.2
+      ],
+      "rectangle_evaluation": "direct finite binomial formula at quadrature nodes",
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.4999999999941735e-05,
+          -0.5
+        ]
+      ],
+      "density_amplitudes": [
+        1,
+        1
+      ],
+      "physical_row_acceptance": 0.88665771484375,
+      "fft_response_sampled_difference": 4.996955991399984e-20,
+      "joint_source_normalized": {
+        "real": -9.176654460584991e-08,
+        "imag": 4.512949825880787e-10,
+        "norm": 9.176765430182222e-08
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -3.672527910437344e-08,
+        "imag": 1.63302681495632e-10,
+        "norm": 3.672564217355378e-08
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": -5.504126550147648e-08,
+        "imag": 2.8799230109244675e-10,
+        "norm": 5.504201892708436e-08
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 4.77337463557944e-16,
+      "log_raw_norm": 694.1693592475392
+    },
+    {
+      "N": 1024,
+      "share_grid": 4096,
+      "quadrature_per_axis": 128,
+      "least_share_range": [
+        0.005,
+        0.06
+      ],
+      "radial_window": [
+        1.8,
+        2.2
+      ],
+      "rectangle_evaluation": "direct finite binomial formula at quadrature nodes",
+      "modes": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.4999999999941735e-05,
+          -0.5
+        ],
+        [
+          4.999999999999449e-05,
+          0.6
+        ]
+      ],
+      "density_amplitudes": [
+        1,
+        1,
+        -1
+      ],
+      "physical_row_acceptance": 0.88665771484375,
+      "fft_response_sampled_difference": 3.5151165413765958e-16,
+      "joint_source_normalized": {
+        "real": 6.984673347771513e-07,
+        "imag": -1.8303495859636142e-06,
+        "norm": 1.9590906626769142e-06
+      },
+      "old_share_coarse_diagnostic": {
+        "real": -3.1794376257916514e-06,
+        "imag": -5.1361387180991925e-06,
+        "norm": 6.040591407127059e-06
+      },
+      "neighbors_coarse_diagnostic": {
+        "real": 3.877904960568803e-06,
+        "imag": 3.3057891321355784e-06,
+        "norm": 5.095722585595671e-06
+      },
+      "count_sum": "all counts supported by the discretized positive lower cutoff",
+      "inverse_series_product_regression": 2.0739290489133073e-13,
+      "log_raw_norm": 697.2303350586096
+    }
+  ],
+  "rectangle_checks": [
+    {
+      "N": 1024,
+      "sampled_interpolation_error": 1.9226251146697848e-08
+    }
+  ],
+  "analytic_mode_scope": "synthetic positive-residue mode with complete-leg coefficient radius >4/3; NOT asserted to be the actual zeta remainder"
+}

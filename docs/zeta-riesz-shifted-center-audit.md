@@ -114,9 +114,11 @@ The two-mode expansion includes a term without $1/z$; the three-mode
 expansion includes a term proportional to z. These represent diagonal
 delta/derivative channels in the usual distributional inversion. They
 must not be silently dropped when identifying a real-space inverse.
-The count algebra is proved; the general complex-mode integral
-identification and the full boundary-aware inverse support theorem remain
-separate obligations. No below-diagonal counterexample is claimed.
+The later [finite-support and infinite-divisor audit](zeta-riesz-negative-mode-support.md)
+constructs the finite weak inverse, checks its Laplace transform and proves
+its support, including all diagonal derivatives. It also isolates a
+fixed-primitive domination obstruction for the complete xi count response.
+No below-diagonal counterexample or complete arithmetic inverse is claimed.
 
 [ZetaRieszMovingInsertion](../RiemannGaussian/ZetaRieszMovingInsertion.lean)
 extends the compensated jump tilt to any nonnegative tilt. With

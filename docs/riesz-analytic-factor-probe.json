@@ -1,0 +1,319 @@
+{
+  "analytic_factor_series_degree": 512,
+  "coefficient_quantity": "[t^N] product_j(1-t/node_j)^(-1)*(exp(B(t))-1)",
+  "interpretation": [
+    "A radius greater than one for an analytic leg does not ensure decay after count multiplication.",
+    "The residue depends on B(1), the integrated leg remainder, and on the other-mode prefactor.",
+    "A constant count multiplier alone preserves support, despite a nondecaying coefficient sequence.",
+    "Consequently coefficient persistence alone is not the support no-go; the exact double inverse is.",
+    "Lean independently proves the rational inverse and its nonzero value below the core gap.",
+    "The series truncation and numerical samples are exploration, not rigorous error certificates.",
+    "No physical cutoff, generic Abel transport, or literal packet estimate is asserted."
+  ],
+  "mpmath": "1.4.1",
+  "normalization": "B'(t)=-A_leg(t), B(0)=0; constant_count_exponent is explicitly separate",
+  "ordinary_inverse_counterexample": {
+    "d": "3/20",
+    "factor": "(w+z+1)/(w+1)",
+    "full_response": "1/(z*(w+z)*(w+1))",
+    "gap": "3/10 > 7/25",
+    "inverse_for_positive_s_d": "exp(-s)*(exp(min(s,d))-1)",
+    "inverse_value": "0.103190069059944572923130341006",
+    "largest_share": "11/20 in [43/80,9/16]",
+    "leg": "1/(2-t)",
+    "s": "9/20"
+  },
+  "precision_decimal_digits": 70,
+  "rows": [
+    {
+      "coefficient_samples": {
+        "128": "-0.09516258196404042683575094",
+        "2048": "-0.09516258196404042683575094",
+        "32": "-0.09516258196404042683575094",
+        "512": "-0.09516258196404042683575094",
+        "8192": "-0.09516258196404042683575094"
+      },
+      "model": "constant_leg",
+      "negative_mode_nodes": [
+        "1.0"
+      ],
+      "predicted_coefficient_limit": "-0.09516258196404042683575094",
+      "principal_part_numerator_over_t_minus_one": "0.09516258196404042683575094"
+    },
+    {
+      "coefficient_samples": {
+        "128": "-0.04877057549928599090857468",
+        "2048": "-0.04877057549928599090857468",
+        "32": "-0.04877057549928599090857468",
+        "512": "-0.04877057549928599090857468",
+        "8192": "-0.04877057549928599090857468"
+      },
+      "model": "linear_leg",
+      "negative_mode_nodes": [
+        "1.0"
+      ],
+      "predicted_coefficient_limit": "-0.04877057549928599090857468",
+      "principal_part_numerator_over_t_minus_one": "0.04877057549928599090857468"
+    },
+    {
+      "coefficient_samples": {
+        "128": "-0.1687621038572122218104842",
+        "2048": "-0.1687621038572122219573597",
+        "32": "-0.1687614654872608865975163",
+        "512": "-0.1687621038572122219573597",
+        "8192": "-0.1687621038572122219573597"
+      },
+      "model": "geometric_leg",
+      "negative_mode_nodes": [
+        "1.0"
+      ],
+      "predicted_coefficient_limit": "-0.1687621038572122219573597",
+      "principal_part_numerator_over_t_minus_one": "0.1687621038572122219573597"
+    },
+    {
+      "coefficient_samples": {
+        "128": "-0.1685914405304210107328589",
+        "2048": "-0.1685914405304210107328589",
+        "32": "-0.1685914343640973022442794",
+        "512": "-0.1685914405304210107328589",
+        "8192": "-0.1685914405304210107328589"
+      },
+      "model": "finite_geometric_envelope_leg",
+      "negative_mode_nodes": [
+        "1.0"
+      ],
+      "predicted_coefficient_limit": "-0.1685914405304210107328589",
+      "principal_part_numerator_over_t_minus_one": "0.1685914405304210107328589"
+    },
+    {
+      "coefficient_samples": {
+        "128": "-0.5",
+        "2048": "-0.5",
+        "32": "-0.5",
+        "512": "-0.5",
+        "8192": "-0.5"
+      },
+      "model": "exact_counterexample_leg",
+      "negative_mode_nodes": [
+        "1.0"
+      ],
+      "predicted_coefficient_limit": "-0.5",
+      "principal_part_numerator_over_t_minus_one": "0.5"
+    },
+    {
+      "coefficient_samples": {
+        "128": "0.1051709180756476248117078",
+        "2048": "0.1051709180756476248117078",
+        "32": "0.1051709180756476248117078",
+        "512": "0.1051709180756476248117078",
+        "8192": "0.1051709180756476248117078"
+      },
+      "model": "constant_count_exponent",
+      "negative_mode_nodes": [
+        "1.0"
+      ],
+      "predicted_coefficient_limit": "0.1051709180756476248117078",
+      "principal_part_numerator_over_t_minus_one": "-0.1051709180756476248117078"
+    },
+    {
+      "coefficient_samples": {
+        "128": "-0.2537668852374411382286692",
+        "2048": "-0.2537668852374411382286692",
+        "32": "-0.2537668128190491364759417",
+        "512": "-0.2537668852374411382286692",
+        "8192": "-0.2537668852374411382286692"
+      },
+      "model": "constant_leg",
+      "negative_mode_nodes": [
+        "1.0",
+        "1.6"
+      ],
+      "predicted_coefficient_limit": "-0.2537668852374411382286692",
+      "principal_part_numerator_over_t_minus_one": "0.2537668852374411382286692"
+    },
+    {
+      "coefficient_samples": {
+        "128": "-0.1300548679980959757561991",
+        "2048": "-0.1300548679980959757561991",
+        "32": "-0.1300548091515651066485264",
+        "512": "-0.1300548679980959757561991",
+        "8192": "-0.1300548679980959757561991"
+      },
+      "model": "linear_leg",
+      "negative_mode_nodes": [
+        "1.0",
+        "1.6"
+      ],
+      "predicted_coefficient_limit": "-0.1300548679980959757561991",
+      "principal_part_numerator_over_t_minus_one": "0.1300548679980959757561991"
+    },
+    {
+      "coefficient_samples": {
+        "128": "-0.4500322769525659242965536",
+        "2048": "-0.4500322769525659252196258",
+        "32": "-0.4500272886675974072549082",
+        "512": "-0.4500322769525659252196258",
+        "8192": "-0.4500322769525659252196258"
+      },
+      "model": "geometric_leg",
+      "negative_mode_nodes": [
+        "1.0",
+        "1.6"
+      ],
+      "predicted_coefficient_limit": "-0.4500322769525659252196258",
+      "principal_part_numerator_over_t_minus_one": "0.4500322769525659252196258"
+    },
+    {
+      "coefficient_samples": {
+        "128": "-0.4495771747477893619542905",
+        "2048": "-0.4495771747477893619542905",
+        "32": "-0.4495768074849118185575722",
+        "512": "-0.4495771747477893619542905",
+        "8192": "-0.4495771747477893619542905"
+      },
+      "model": "finite_geometric_envelope_leg",
+      "negative_mode_nodes": [
+        "1.0",
+        "1.6"
+      ],
+      "predicted_coefficient_limit": "-0.4495771747477893619542905",
+      "principal_part_numerator_over_t_minus_one": "0.4495771747477893619542905"
+    },
+    {
+      "coefficient_samples": {
+        "128": "-1.333333333333333333333333",
+        "2048": "-1.333333333333333333333333",
+        "32": "-1.333332941501883059237497",
+        "512": "-1.333333333333333333333333",
+        "8192": "-1.333333333333333333333333"
+      },
+      "model": "exact_counterexample_leg",
+      "negative_mode_nodes": [
+        "1.0",
+        "1.6"
+      ],
+      "predicted_coefficient_limit": "-1.333333333333333333333333",
+      "principal_part_numerator_over_t_minus_one": "1.333333333333333333333333"
+    },
+    {
+      "coefficient_samples": {
+        "128": "0.2804557815350603328312209",
+        "2048": "0.2804557815350603328312209",
+        "32": "0.2804557300234686375323093",
+        "512": "0.2804557815350603328312209",
+        "8192": "0.2804557815350603328312209"
+      },
+      "model": "constant_count_exponent",
+      "negative_mode_nodes": [
+        "1.0",
+        "1.6"
+      ],
+      "predicted_coefficient_limit": "0.2804557815350603328312209",
+      "principal_part_numerator_over_t_minus_one": "-0.2804557815350603328312209"
+    },
+    {
+      "coefficient_samples": {
+        "128": "-0.5709754917842425610145056",
+        "2048": "-0.5709754917842425610145056",
+        "32": "-0.570974851188683800828566",
+        "512": "-0.5709754917842425610145056",
+        "8192": "-0.5709754917842425610145056"
+      },
+      "model": "constant_leg",
+      "negative_mode_nodes": [
+        "1.0",
+        "1.6",
+        "1.8"
+      ],
+      "predicted_coefficient_limit": "-0.5709754917842425610145056",
+      "principal_part_numerator_over_t_minus_one": "0.5709754917842425610145056"
+    },
+    {
+      "coefficient_samples": {
+        "128": "-0.2926234529957159454514481",
+        "2048": "-0.2926234529957159454514481",
+        "32": "-0.2926229335181952786122277",
+        "512": "-0.2926234529957159454514481",
+        "8192": "-0.2926234529957159454514481"
+      },
+      "model": "linear_leg",
+      "negative_mode_nodes": [
+        "1.0",
+        "1.6",
+        "1.8"
+      ],
+      "predicted_coefficient_limit": "-0.2926234529957159454514481",
+      "principal_part_numerator_over_t_minus_one": "0.2926234529957159454514481"
+    },
+    {
+      "coefficient_samples": {
+        "128": "-1.01257262314327332808665",
+        "2048": "-1.012572623143273331744158",
+        "32": "-1.012549819190699423324226",
+        "512": "-1.012572623143273331744158",
+        "8192": "-1.012572623143273331744158"
+      },
+      "model": "geometric_leg",
+      "negative_mode_nodes": [
+        "1.0",
+        "1.6",
+        "1.8"
+      ],
+      "predicted_coefficient_limit": "-1.012572623143273331744158",
+      "principal_part_numerator_over_t_minus_one": "1.012572623143273331744158"
+    },
+    {
+      "coefficient_samples": {
+        "128": "-1.011548643182526064397154",
+        "2048": "-1.011548643182526064397154",
+        "32": "-1.011545308570799989989239",
+        "512": "-1.011548643182526064397154",
+        "8192": "-1.011548643182526064397154"
+      },
+      "model": "finite_geometric_envelope_leg",
+      "negative_mode_nodes": [
+        "1.0",
+        "1.6",
+        "1.8"
+      ],
+      "predicted_coefficient_limit": "-1.011548643182526064397154",
+      "principal_part_numerator_over_t_minus_one": "1.011548643182526064397154"
+    },
+    {
+      "coefficient_samples": {
+        "128": "-3.0",
+        "2048": "-3.0",
+        "32": "-2.999996534543993194735839",
+        "512": "-3.0",
+        "8192": "-3.0"
+      },
+      "model": "exact_counterexample_leg",
+      "negative_mode_nodes": [
+        "1.0",
+        "1.6",
+        "1.8"
+      ],
+      "predicted_coefficient_limit": "-3.0",
+      "principal_part_numerator_over_t_minus_one": "3.0"
+    },
+    {
+      "coefficient_samples": {
+        "128": "0.6310255084538857488702469",
+        "2048": "0.631025508453885748870247",
+        "32": "0.6310250519809720685964522",
+        "512": "0.631025508453885748870247",
+        "8192": "0.631025508453885748870247"
+      },
+      "model": "constant_count_exponent",
+      "negative_mode_nodes": [
+        "1.0",
+        "1.6",
+        "1.8"
+      ],
+      "predicted_coefficient_limit": "0.631025508453885748870247",
+      "principal_part_numerator_over_t_minus_one": "-0.631025508453885748870247"
+    }
+  ],
+  "script_sha256": "839ff1002a5a2eaf0e87812b6cec8f55929d2e7e97ba61c4eade8c2edd136e81",
+  "status": "Toy analytic-factor no-go; not an actual zeta remainder or arithmetic estimate."
+}

@@ -1,0 +1,196 @@
+{
+  "script_sha256": "f62970ca066bf7824ec01e853aafc0a3c51789aec807c9c316c557983fbd4091",
+  "status": "exploratory; Lean supplies the arithmetic bounds; no signed floor or zero exclusion",
+  "rate": "0.99948275823963322661636645388642309",
+  "exact_rational_tilt_checks": [
+    {
+      "a": 21,
+      "m": 40,
+      "base": "21/20",
+      "tilt": "11/10",
+      "power_inequality": true
+    },
+    {
+      "a": 29,
+      "m": 50,
+      "base": "47/50",
+      "tilt": "9/10",
+      "power_inequality": true
+    }
+  ],
+  "marginals": [
+    {
+      "N": 256,
+      "lower_exterior_log10_mass": -0.6609451514323599,
+      "upper_exterior_log10_mass": -0.720971437773017,
+      "old_lower_edge_log10_mass": -0.25547718636426414,
+      "old_upper_edge_log10_mass": -0.2675495938536721,
+      "interior_log10_mass": -0.23334145280906804,
+      "normalized_exterior_bound_log10_excluding_majorant": "-0.05747807230508440874"
+    },
+    {
+      "N": 640,
+      "lower_exterior_log10_mass": -0.9283471931500997,
+      "upper_exterior_log10_mass": -1.0115112343170596,
+      "old_lower_edge_log10_mass": -0.1340067444706355,
+      "old_upper_edge_log10_mass": -0.1470712919889606,
+      "interior_log10_mass": -0.09184314211306636,
+      "normalized_exterior_bound_log10_excluding_majorant": "-0.14376032167800502631"
+    },
+    {
+      "N": 1536,
+      "lower_exterior_log10_mass": -1.580696998512891,
+      "upper_exterior_log10_mass": -1.6533834280862487,
+      "old_lower_edge_log10_mass": -0.07529548147725147,
+      "old_upper_edge_log10_mass": -0.07912591494105656,
+      "interior_log10_mass": -0.021538475939744093,
+      "normalized_exterior_bound_log10_excluding_majorant": "-0.34508557021481980062"
+    },
+    {
+      "N": 4096,
+      "lower_exterior_log10_mass": -3.14446059628272,
+      "upper_exterior_log10_mass": -3.262592517726355,
+      "old_lower_edge_log10_mass": -0.02360004948182733,
+      "old_upper_edge_log10_mass": -0.024208763924944636,
+      "interior_log10_mass": -0.0005582351017085981,
+      "normalized_exterior_bound_log10_excluding_majorant": "-0.92030056603429058439"
+    },
+    {
+      "N": 8192,
+      "lower_exterior_log10_mass": -5.486029807470762,
+      "upper_exterior_log10_mass": -5.707605081959314,
+      "old_lower_edge_log10_mass": -0.0048533824606647085,
+      "old_upper_edge_log10_mass": -0.005039416931760018,
+      "interior_log10_mass": -2.2943486356781466e-06,
+      "normalized_exterior_bound_log10_excluding_majorant": "-1.8406445593454438384"
+    },
+    {
+      "N": 65536,
+      "lower_exterior_log10_mass": -37.08311696225764,
+      "upper_exterior_log10_mass": -38.35144959176446,
+      "old_lower_edge_log10_mass": -7.748795497840945e-11,
+      "old_upper_edge_log10_mass": -6.883948052737294e-11,
+      "interior_log10_mass": -4.8035079763952334e-11,
+      "normalized_exterior_bound_log10_excluding_majorant": "-14.725460465701589395"
+    },
+    {
+      "N": 262144,
+      "lower_exterior_log10_mass": -144.15029840262298,
+      "upper_exterior_log10_mass": -149.1398321766144,
+      "old_lower_edge_log10_mass": 5.3465400593607204e-11,
+      "old_upper_edge_log10_mass": 5.739792800221151e-11,
+      "interior_log10_mass": 4.9506643477912646e-11,
+      "normalized_exterior_bound_log10_excluding_majorant": "-58.901972144636945588"
+    }
+  ],
+  "literal_labels": [
+    {
+      "N": 400,
+      "mersenne_exponents": [
+        607,
+        521,
+        31
+      ],
+      "log_n_over_N": "2.008393955671277380818",
+      "shares": [
+        "0.5237273511651008143409",
+        "0.4495254529769646198873",
+        "0.02674719585793456577176"
+      ],
+      "canonical_rectangle_mass": "0.4714942975026210538406",
+      "wrong_owner_rectangle_mass": "0.001663295565025252090387",
+      "old_allocated_fraction": "0.002130594493594965885731",
+      "riesz_coefficient": "31.75485876023208105329",
+      "log10_source_normalized_atom": "-349.7038301291557806486",
+      "complex_ledger_relative_error": "3.4238612e-102",
+      "prime_kernel_relative_error": "4.4813068e-98",
+      "scope": "individual actual-prime label; not an exhaustive carrier evaluation"
+    },
+    {
+      "N": 400,
+      "mersenne_exponents": [
+        607,
+        521,
+        19
+      ],
+      "log_n_over_N": "1.987599535487267045243",
+      "shares": [
+        "0.5292066272504194651349",
+        "0.4542284230600799692509",
+        "0.01656494968950056561417"
+      ],
+      "canonical_rectangle_mass": "0.5489955357560809310685",
+      "wrong_owner_rectangle_mass": "0.002870317697685110491096",
+      "old_allocated_fraction": "0.00415585761097643676921",
+      "riesz_coefficient": "19.22204883481786688082",
+      "log10_source_normalized_atom": "-346.2452147473104796476",
+      "complex_ledger_relative_error": "1.4866996e-101",
+      "prime_kernel_relative_error": "3.298034e-97",
+      "scope": "individual actual-prime label; not an exhaustive carrier evaluation"
+    },
+    {
+      "N": 1600,
+      "mersenne_exponents": [
+        2281,
+        2203,
+        127
+      ],
+      "log_n_over_N": "1.997563530976192388577",
+      "shares": [
+        "0.4946866189546736065929",
+        "0.477770548687920190848",
+        "0.0275428323574062025591"
+      ],
+      "canonical_rectangle_mass": "0.008773513497998832153447",
+      "wrong_owner_rectangle_mass": "0.00009583111317258779869002",
+      "old_allocated_fraction": "9.821511390744204896488e-16",
+      "riesz_coefficient": "127.7133821888062246813",
+      "log10_source_normalized_atom": "-1390.233091568819955232",
+      "complex_ledger_relative_error": "3.0746334e-102",
+      "prime_kernel_relative_error": "4.1228638e-97",
+      "scope": "individual actual-prime label; not an exhaustive carrier evaluation"
+    }
+  ],
+  "unmasked_beta_model_checks": [
+    {
+      "resonant_share": "0.5375",
+      "relative_error": "4.4216173e-93"
+    },
+    {
+      "resonant_share": "0.525",
+      "relative_error": "5.1719628e-93"
+    },
+    {
+      "resonant_share": "0.5",
+      "relative_error": "7.0198958e-93"
+    },
+    {
+      "resonant_share": "0.6",
+      "relative_error": "1.9159831e-93"
+    }
+  ],
+  "unmasked_modal_rates": [
+    {
+      "resonant_share": "0.5375",
+      "unmasked_product_rate_upper": "0.0105655774194976645878"
+    },
+    {
+      "resonant_share": "0.525",
+      "unmasked_product_rate_upper": "0.01004834445089823566782"
+    },
+    {
+      "resonant_share": "0.5",
+      "unmasked_product_rate_upper": "0.009091442510137265390388"
+    },
+    {
+      "resonant_share": "0.6",
+      "unmasked_product_rate_upper": "0.01363645947902371138606"
+    }
+  ],
+  "beta_reference": "https://dlmf.nist.gov/15.6.E1",
+  "limits": [
+    "No prime-density or completed-mode transport is inferred.",
+    "The beta model omits the least-share, Riesz, allocation and finite radial masks.",
+    "The actual-prime samples do not evaluate the signed sum over all labels."
+  ]
+}
