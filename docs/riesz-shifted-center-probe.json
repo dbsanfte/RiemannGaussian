@@ -1,0 +1,141 @@
+{
+  "count_tests": [
+    {
+      "boundary": "Two modes retain a diagonal delta channel; three retain a delta derivative. No below-diagonal inverse is inferred from this test alone.",
+      "count_error": 1.6883057536160649e-16,
+      "expanded_error": 5.721958498152797e-17,
+      "modes": [
+        [
+          0.1,
+          0.3
+        ],
+        [
+          0.2,
+          -0.4
+        ]
+      ]
+    },
+    {
+      "boundary": "Two modes retain a diagonal delta channel; three retain a delta derivative. No below-diagonal inverse is inferred from this test alone.",
+      "count_error": 1.6667795129466247e-16,
+      "expanded_error": 1.3877787807814457e-17,
+      "modes": [
+        [
+          0.1,
+          0.3
+        ],
+        [
+          0.2,
+          -0.4
+        ],
+        [
+          -0.1,
+          0.8
+        ]
+      ]
+    }
+  ],
+  "interpretation": [
+    "The supported compensated jump tail has an exponential margin; Lean proves a conservative exp(-N/100) bound in its rescaled coordinate.",
+    "The summed bad-order marginal and arithmetic multiplier envelope are only polynomially small. Source growth eventually wins over those absolute envelopes.",
+    "This does not prove divergence of a signed arithmetic packet. A coupled signed error estimate is still needed."
+  ],
+  "parameters": {
+    "B": 16,
+    "gap": 0.28,
+    "u": 0.50005
+  },
+  "rates": [
+    {
+      "N": 256,
+      "log_binomial_order_lt_two": -43.97710693707101,
+      "log_source_times_bad_marginal": -43.95150821698568,
+      "log_source_times_relative_product_envelope_leading_term": -76.56285417977965,
+      "log_source_times_tail_envelope": -0.24155423549108884,
+      "log_supported_tail_envelope": -0.26715295557641294,
+      "minimum_mean_order": 43.73656027503622,
+      "moving_share_bound": 0.17785500272100063,
+      "optimal_tilt_share": 0.8480618119601013
+    },
+    {
+      "N": 640,
+      "log_binomial_order_lt_two": -49.050330067924556,
+      "log_source_times_bad_marginal": -48.986333267711245,
+      "log_source_times_relative_product_envelope_leading_term": -89.31980330800795,
+      "log_source_times_tail_envelope": -3.0185283624487163,
+      "log_supported_tail_envelope": -3.0825251626620265,
+      "minimum_mean_order": 50.94013365060627,
+      "moving_share_bound": 0.08285935201180346,
+      "optimal_tilt_share": 2.0852317819076247
+    },
+    {
+      "N": 1536,
+      "log_binomial_order_lt_two": -54.837646586245604,
+      "log_source_times_bad_marginal": -54.68405426573366,
+      "log_source_times_relative_product_envelope_leading_term": -101.47402380036029,
+      "log_source_times_tail_envelope": -13.082814153011547,
+      "log_supported_tail_envelope": -13.236406473523491,
+      "minimum_mean_order": 57.83320388995938,
+      "moving_share_bound": 0.039196515724030954,
+      "optimal_tilt_share": 3.160172794656552
+    },
+    {
+      "N": 4096,
+      "log_binomial_order_lt_two": -61.87701287637262,
+      "log_source_times_bad_marginal": -61.46743335500743,
+      "log_source_times_relative_product_envelope_leading_term": -114.9439520756229,
+      "log_source_times_tail_envelope": -49.6565534634296,
+      "log_supported_tail_envelope": -50.06613298479479,
+      "minimum_mean_order": 65.56067213830048,
+      "moving_share_bound": 0.016662680844444853,
+      "optimal_tilt_share": 4.29218135648987
+    },
+    {
+      "N": 8192,
+      "log_binomial_order_lt_two": -67.04703552115453,
+      "log_source_times_bad_marginal": -66.22787647842415,
+      "log_source_times_relative_product_envelope_leading_term": -124.23672441058693,
+      "log_source_times_tail_envelope": -116.34769480302212,
+      "log_supported_tail_envelope": -117.1668538457525,
+      "minimum_mean_order": 71.02293919323598,
+      "moving_share_bound": 0.009025476172017042,
+      "optimal_tilt_share": 5.063055021687441
+    },
+    {
+      "N": 100000,
+      "log_binomial_order_lt_two": -86.2636622516005,
+      "log_source_times_bad_marginal": -76.26416221827077,
+      "log_source_times_relative_product_envelope_leading_term": -150.08298418688537,
+      "log_source_times_tail_envelope": -1933.0906814163209,
+      "log_supported_tail_envelope": -1943.0901814496506,
+      "minimum_mean_order": 90.74234849198211,
+      "moving_share_bound": 0.0009446511150703777,
+      "optimal_tilt_share": 7.738353831298534
+    },
+    {
+      "N": 1000000,
+      "log_binomial_order_lt_two": -104.19706608968252,
+      "log_source_times_bad_marginal": -4.2020657563851955,
+      "log_source_times_relative_product_envelope_leading_term": -92.3235491895274,
+      "log_source_times_tail_envelope": -22128.503612896573,
+      "log_supported_tail_envelope": -22228.49861322987,
+      "minimum_mean_order": 108.89073149134009,
+      "moving_share_bound": 0.00011335804355252325,
+      "optimal_tilt_share": 10.127265226340956
+    },
+    {
+      "N": 10000000,
+      "log_binomial_order_lt_two": -122.18763638456224,
+      "log_source_times_bad_marginal": 877.762366948411,
+      "log_source_times_relative_product_envelope_leading_term": 775.395275108225,
+      "log_source_times_tail_envelope": -240088.4477731919,
+      "log_supported_tail_envelope": -241088.3977765249,
+      "minimum_mean_order": 127.03917833267639,
+      "moving_share_bound": 1.3225104205914513e-05,
+      "optimal_tilt_share": 12.484956841927588
+    }
+  ],
+  "scipy": "1.15.3",
+  "script_sha256": "b8fe3c4d9e07400c8db00fc7e9548bbf1cd62c964a13848665622dbb6587f390",
+  "status": "Exploration and rate audit only; no literal packet, zero-free, or RH certificate."
+}

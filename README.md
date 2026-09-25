@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-The harmonic-cost route retains its evaluated source and an open independent -3/40 floor. The all-count parity packet has proved support-tail and factorial-error bounds, but its coupled masked phase estimate remains open. Radial and filter audits rule out the proposed transfers from complete prime-leg limits; any continuation must control the literal joint response and the signed rest.
+The harmonic-cost route retains its evaluated source and an open independent -3/40 floor. A shifted-center operator now cancels the pole on each prime leg and yields an all-negative global zero expansion with geometric error. The masked parity packet remains open: adaptive low-order allocations and the arithmetic multiplier error need coupled signed estimates.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ The harmonic-cost route retains its evaluated source and an open independent -3/
 
 ### Latest Update
 
-**Masked two-mode bound proved; radial and filter transfers audited.** Lean proves a positive radial model exponent, a masked two-mode bound, and the exact distinction between total-order and per-leg filtering. A synthetic multi-rightward family defeats every uniform squared-displacement/gain bound. Optional numerical probes quantify these obstructions.
-The actual filtered packet is neither bounded nor disproved here. Pole-containing mixtures, the projected residual and the one-sided cutoff boundary remain unpaid. No signed floor or new zero exclusion is claimed.
-[Current checked endpoint](RiemannGaussian/ZetaRieszFilteredMaskAudit.lean#L213)
-· [Proof details](docs/zeta-riesz-pole-jet-half-plane-audit.md).
+**Per-leg pole cancellation and global negative zero expansion proved.** Lean bounds the complete ordinary-prime leg error geometrically, proves the exact arithmetic multiplier, and controls a moving supported-insertion model. The summed zero-order marginal also gives a source-scale obstruction to discarding adaptive bad allocations by an absolute bound.
+The literal packet still needs signed control of low-order allocations and multiplier errors, plus a boundary-aware multimode inverse. No packet decay, independent floor or new zero exclusion is claimed.
+[Current checked endpoint](RiemannGaussian/ZetaRieszShiftedPrimePowers.lean#L77)
+· [Proof details](docs/zeta-riesz-shifted-center-audit.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

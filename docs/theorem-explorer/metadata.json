@@ -3489,7 +3489,14 @@
     "ZetaRieszParityMaskedPhaseAudit": "arithmetic",
     "ZetaRieszHalfPlaneModes": "arithmetic",
     "ZetaRieszFilteredMaskAudit": "arithmetic",
-    "ZetaRieszRightwardModeAudit": "arithmetic"
+    "ZetaRieszRightwardModeAudit": "arithmetic",
+    "ZetaRieszShiftedCenter": "arithmetic",
+    "ZetaRieszShiftedZeroModes": "arithmetic",
+    "ZetaRieszShiftedPrimePowers": "arithmetic",
+    "ZetaRieszShiftedAllocation": "arithmetic",
+    "ZetaRieszNegativeModeCascade": "arithmetic",
+    "ZetaRieszMovingInsertion": "arithmetic",
+    "ZetaRieszAdaptiveRateAudit": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

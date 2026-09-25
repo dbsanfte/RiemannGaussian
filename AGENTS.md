@@ -1602,6 +1602,46 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+### Per-leg shifted-center test (2026-09-25)
+
+The local pass from `316a00c` is recorded in
+`docs/zeta-riesz-shifted-center-audit.md`. Preserve every earlier no-go.
+`ZetaRieszShiftedCenter` proves the exact multiplier `1-C^k/p`, actual
+height >54, norm(C)<1001/1000, full generating series, exact pole
+cancellation, global xi decomposition and analytic radius-two correction.
+`ZetaRieszShiftedZeroModes` justifies infinite coefficient extraction by
+locally uniform convergence and the genuine inverse-square divisor sum.
+`ZetaRieszShiftedPrimePowers.completeLeg_global_error_bound` proves every
+complete ordinary-prime leg of order k>=2 equals the all-negative actual
+zero-power sum with error bounded by M*(3/4)^(k-1). Both proper-prime-power
+terms are paid. No exposure, simplicity or rightmost hypothesis is used.
+Do not transfer that complete-leg theorem through a hard share mask.
+
+`ZetaRieszShiftedAllocation` proves exact arithmetic product factorization
+and uniform relative multiplier closeness; this is not source-normalized
+packet closeness. `ZetaRieszNegativeModeCascade` proves finite count/product
+algebra including two/three modes and the adjoining-mode recurrence. Its
+complex-mode integral identification and boundary-aware inverse remain
+open; do not drop diagonal delta/derivative channels. The moving supported
+insertion process has a checked exp(-N/100) bound for N>=100000 in rescaled
+coordinates. This is not an identification with the literal multimode
+positive-cutoff packet; auxiliary cutoff, boundary and infinite-mode
+passages remain separate.
+
+`ZetaRieszAdaptiveRateAudit.zero_order_full_marginal` sums every allocation
+of the other legs, giving (1-x)^N exactly. The generic
+`shrinking_share_source_mass_tendsto` proves (2u)^N*(1-x_N)^N -> infinity
+for any x_N -> 0 and fixed u>1/2. This blocks discarding the adaptive bad
+mass by a generic source-envelope norm bound, not cancellation in the
+actual arithmetic packet. Keep low-order allocations in a coupled signed
+estimate, or prove a stronger actual weighted error bound. Do not count
+individual order-zero atoms as fatal, but do not call polynomial total
+exceptional-mass decay source-scale decay either. The relative multiplier
+error has the same unpaid rate issue. No broad packet, new floor, zero
+exclusion or public-frontier advance is claimed. The optional probe is
+`scripts/probe_riesz_shifted_center.py`; never add it to routine CI.
+Continue locally without subagents or unrequested commits.
+
 ### Pole-jet half-plane and rightward-mode audit (2026-09-24)
 
 The local continuation is recorded in
