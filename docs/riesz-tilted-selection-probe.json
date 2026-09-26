@@ -1,0 +1,77 @@
+{
+  "scope": "Synthetic symmetric points and the exact two-chamber minimum moment only. No joined Riesz/count cancellation, arithmetic transport, or actual zero claim.",
+  "beta": "999951/1000000",
+  "gamma": "100",
+  "slope": "1/1000000000",
+  "horizontal_gain": "1/1000000",
+  "remote_height": "1000000",
+  "evaluation_height": "99999999999499951/1000000000000000",
+  "u": "500049/1000000",
+  "upper_scores": [
+    {
+      "beta": "3/62500",
+      "gamma": "1000000",
+      "score_gap": "10009029/10000000"
+    },
+    {
+      "beta": "3/62500",
+      "gamma": "500099999999999499951/500000000000000",
+      "score_gap": "500451549999999999499951/500000000000000000000000"
+    },
+    {
+      "beta": "49/1000000",
+      "gamma": "100",
+      "score_gap": "499951/500000"
+    },
+    {
+      "beta": "999951/1000000",
+      "gamma": "100",
+      "score_gap": "0"
+    },
+    {
+      "beta": "62497/62500",
+      "gamma": "1000000",
+      "score_gap": "9989/10000000"
+    },
+    {
+      "beta": "62497/62500",
+      "gamma": "500099999999999499951/500000000000000",
+      "score_gap": "499549999999999499951/500000000000000000000000"
+    }
+  ],
+  "source_norm": "[0.500049000000000000250024499999999999937493875000000000031 +/- 6.23e-58]",
+  "remote_norm": "[1000100.00000012451145100199204936937225324171838200345904 +/- 3.55e-51]",
+  "minimum_growth_exponent": "[1.99980601881684130374568596813965800668449869017655e-6 +/- 5.73e-57]",
+  "moments": [
+    {
+      "order": 1000000,
+      "log_normalized_minimum": "[-25.63141508711262251914308156965697997914628677388058 +/- 2.93e-51]",
+      "normalized_minimum": "[7.38614559711473205845053517630640937621451201349605e-12 +/- 7.98e-63]"
+    },
+    {
+      "order": 10000000,
+      "log_normalized_minimum": "[-7.6331609177610507854319078564000579189857985622916 +/- 2.06e-50]",
+      "normalized_minimum": "[0.00048412814796929127020568204776791975014116906243637 +/- 7.38e-54]"
+    },
+    {
+      "order": 20000000,
+      "log_normalized_minimum": "[12.3648992704073622520249518249965221478591883394740 +/- 6.05e-50]",
+      "normalized_minimum": "[234426.94201276622663402270599652129144351260141782 +/- 7.47e-45]"
+    },
+    {
+      "order": 40000000,
+      "log_normalized_minimum": "[52.3610196467441883269386711877896822815491621430051 +/- 8.42e-50]",
+      "normalized_minimum": "[54966982889258748396832.25929906433147266788400896 +/- 4.68e-27]"
+    }
+  ],
+  "exact_formula": "(u/d)^h / (d^2 + eta^2)",
+  "lean_theorems": [
+    "ZetaTiltedZeroSelection.exists_unique_upper_max",
+    "ZetaTiltedZeroSelection.remote_pair_denominators",
+    "ZetaTiltedZeroSelection.remote_minimum_tendsto"
+  ],
+  "versions": {
+    "python-flint": "0.9.0"
+  },
+  "probe_sha256": "d5ed2562e4b9dd6c3fdc95d5ba17e4f108d2642844e13ec49534fea4a552140e"
+}

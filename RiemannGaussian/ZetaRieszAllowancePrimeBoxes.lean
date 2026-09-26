@@ -131,23 +131,25 @@ theorem tripleProducts_bounds {a h : ℝ} (_hh : 0 ≤ h) {n : ℕ}
     simp only [hpf, Finset.mem_insert, Finset.mem_singleton] at hs
     rcases hs with rfl | rfl | rfl <;> linarith [pB.2.2,qB.2.2,rB.2.2]
 
-/-- The PNT gives a uniform cardinality lower bound on every bounded translate of these boxes. -/
-theorem eventually_logPrimes_card_lower {h C : ℝ} (hh : 0 < h) (hC : 0 ≤ C) :
+/-- The PNT supplies actual primes at every positive logarithmic slope,
+uniformly over bounded translates. The width is fixed, not exponentially thin. -/
+theorem eventually_logPrimes_card_lower_slope {v h C : ℝ}
+    (hv : 0 < v) (hh : 0 < h) (hC : 0 ≤ C) :
     ∃ c : ℝ, 0 < c ∧ ∀ᶠ N : ℕ in atTop, ∀ a : ℝ,
-      (2/3:ℝ)*N ≤ a → a ≤ (2/3:ℝ)*N+C →
-      c * Real.exp ((2/3:ℝ)*N) / (N+1) ≤ ((logPrimes a h).card : ℝ) := by
+      v*N ≤ a → a ≤ v*N+C →
+      c * Real.exp (v*N) / (N+1) ≤ ((logPrimes a h).card : ℝ) := by
   let d := (Real.exp h - 1) / 2
-  let D := 1+C+h
+  let D := v+C+h
   have hd : 0 < d := by dsimp [d]; linarith [Real.one_lt_exp_iff.mpr hh]
   have hD : 0 < D := by dsimp [D]; linarith
   refine ⟨d/D, div_pos hd hD, ?_⟩
   have hm := (theta_interval_div_tendsto (Real.exp_pos h)).eventually_const_lt
     (show d < Real.exp h-1 by dsimp [d]; linarith [Real.one_lt_exp_iff.mpr hh])
   obtain ⟨X,hX⟩ := eventually_atTop.mp hm
-  have hx : Tendsto (fun N : ℕ => Real.exp ((2/3:ℝ)*N)) atTop atTop :=
-    Real.tendsto_exp_atTop.comp (tendsto_natCast_atTop_atTop.const_mul_atTop (by norm_num))
+  have hx : Tendsto (fun N : ℕ => Real.exp (v*N)) atTop atTop :=
+    Real.tendsto_exp_atTop.comp (tendsto_natCast_atTop_atTop.const_mul_atTop hv)
   filter_upwards [hx.eventually (eventually_ge_atTop X)] with N hN a ha hau
-  have he : Real.exp ((2/3:ℝ)*N) ≤ Real.exp a := Real.exp_le_exp.mpr ha
+  have he : Real.exp (v*N) ≤ Real.exp a := Real.exp_le_exp.mpr ha
   have hl := (lt_div_iff₀ (Real.exp_pos a)).mp (hX (Real.exp a) (hN.trans he))
   rw [← sum_log_primesInWindow (Real.exp_pos a).le (Real.one_le_exp_iff.mpr hh.le)] at hl
   have hs : (∑ p ∈ logPrimes a h, Real.log p) ≤ (logPrimes a h).card * (D*(N+1)) := by
@@ -165,6 +167,13 @@ theorem eventually_logPrimes_card_lower {h C : ℝ} (hh : 0 < h) (hC : 0 ≤ C) 
   have hc0 : (0:ℝ) ≤ (logPrimes a h).card := Nat.cast_nonneg _
   dsimp only [logPrimes] at hs ⊢
   nlinarith
+
+/-- The original balanced-box specialization is preserved. -/
+theorem eventually_logPrimes_card_lower {h C : ℝ} (hh : 0 < h) (hC : 0 ≤ C) :
+    ∃ c : ℝ, 0 < c ∧ ∀ᶠ N : ℕ in atTop, ∀ a : ℝ,
+      (2/3:ℝ)*N ≤ a → a ≤ (2/3:ℝ)*N+C →
+      c * Real.exp ((2/3:ℝ)*N) / (N+1) ≤ ((logPrimes a h).card : ℝ) :=
+  eventually_logPrimes_card_lower_slope (by norm_num) hh hC
 
 /-- Bounded shifts find a positive cosine box at every order, for each fixed real height. -/
 theorem exists_positive_phase_boxes (y : ℝ) :

@@ -1,0 +1,22 @@
+{
+  "scope": "Publication-only blank-line whitespace cleanup. Numerical runs were not repeated. Their original source hashes and results are preserved.",
+  "source": "scripts/probe_riesz_joined_balls.py",
+  "execution_sha256": "ed900e86a89d665bf7f6240597c46c6234e4ae0752bc780b69f4924397cf9cd9",
+  "published_sha256": "a7d4391014efe450e729879aeaef5a703973f161dd4748b0df29ae363f622d4c",
+  "changes": [
+    {
+      "line": 128,
+      "before": " \n",
+      "after": "\n"
+    }
+  ],
+  "python_ast_unchanged": true,
+  "reports": [
+    "riesz-beta-phase-65536-probe.json",
+    "riesz-beta-phase-probe.json",
+    "riesz-coupled-continuous-probe.json",
+    "riesz-joined-refinement-probe.json",
+    "riesz-radial-phase-probe.json"
+  ],
+  "reconstruction": "Replace line 128 of the published source by a single space followed by a newline to reconstruct the exact execution source and its recorded SHA256."
+}

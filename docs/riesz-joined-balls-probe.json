@@ -1,0 +1,61 @@
+{
+  "N": 65536,
+  "ell": 512,
+  "tn": 48,
+  "rn": 8,
+  "pn": 256,
+  "bits": 384,
+  "fronts": [
+    "[8.5668284106148468085085702221195266789497858327140855152007e-28 +/- 9.37e-87]",
+    "[0.0055733843394203033580922633042479717570446414617345365745783 +/- 7.90e-62]"
+  ],
+  "joined": "[-0.0055733843394203033580922624475651306955599606108775143626256 +/- 4.69e-62]",
+  "omitted_count_bound": [
+    "[5.510528703898613208655204742895288292433301831418587117128116e-77 +/- 5.41e-138]",
+    "[5.892987224477563448051703283726873954082460398971591345577084e-27 +/- 6.41e-88]"
+  ],
+  "max_integrand": [
+    4.342760337502268e-19,
+    176.79728153755806
+  ],
+  "radial_mass": "[0.999939501339915181616844000121505795689345486100530051311670993419970840238652964655850200566796820165413021 +/- 3.71e-109]",
+  "owner_marginal_error_before_calibration": [
+    "[5.0801793062867699375761521281669995067816348e-19 +/- 6.72e-63]",
+    "[4.966749170942475666555057401864010615710536611065e-14 +/- 4.00e-63]"
+  ],
+  "seconds": 259.2878536039789,
+  "scope": "Finite ball-arithmetic lattice/quadrature only, with exact moving length, owner-marginal calibration and analytic head replacement. No bound for grid/interpolation/quadrature errors or arithmetic transport.",
+  "proof_status": "No continuum enclosure, retained prime-sum bound, or eventual conclusion",
+  "probe_sha256": "ed900e86a89d665bf7f6240597c46c6234e4ae0752bc780b69f4924397cf9cd9",
+  "versions": {
+    "python-flint": "0.9.0",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  },
+  "parameters": {
+    "u": "10001/20000",
+    "modes": [
+      "0",
+      "1/40000+(3/500)i",
+      "1/40000-(3/500)i"
+    ],
+    "multiplicities": [
+      1,
+      3,
+      3
+    ],
+    "owner_interval": [
+      "1/2",
+      "3/5"
+    ],
+    "radial_interval": [
+      "39N/20",
+      "203N/100"
+    ],
+    "length": "2*log(floor(20000^N/(10001^N*(N+1)))+2)",
+    "literal_count_caps_in_model": [
+      55,
+      13
+    ]
+  }
+}

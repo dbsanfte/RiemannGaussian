@@ -1,0 +1,322 @@
+{
+  "scope": "Completed numerical finite-mode refinements only. Response evaluation and roundoff enclosed; outer quadrature and prime transport unresolved. No asymptotic, retained signed prime-sum or zero-exclusion claim.",
+  "sources_verified": true,
+  "runs": [
+    {
+      "N": 65536,
+      "tnodes": 12,
+      "rnodes": 32,
+      "pnodes": 128,
+      "subdivision": 4,
+      "degree": 128,
+      "bits": 768,
+      "compression": "1e-45",
+      "projection_bits": 256,
+      "benchmark_only": false,
+      "fronts": [
+        "[+/- 4.45e-23]",
+        "[0.015494680086914256666 +/- 3.83e-22]"
+      ],
+      "joined": "[-0.015494680086914256666 +/- 4.28e-22]",
+      "omitted_model_count_allowance": [
+        "[3.54704610712125449684016776778554396231036636406498293762182051922058e-23 +/- 5.14e-92]",
+        "[1.169146639538969616323245825595809989213218600325415221e-17 +/- 2.34e-72]"
+      ],
+      "response_evaluations": [
+        40292,
+        32047
+      ],
+      "skipped_owner_nodes": [
+        8860,
+        17105
+      ],
+      "norm_enclosed_points": [
+        40292,
+        1022
+      ],
+      "skip_budget": "1e-20",
+      "maximum_integrand": [
+        6.59108028572275e-10,
+        4611530.8125
+      ],
+      "setup": {
+        "rule_setup_seconds": 9.479854768025689,
+        "radial_mass": "[0.99993309963379894016666878212884377632690740612080996030920197625615841028471522930727491080758572405714835603462174356024253851418170664312315431454420278940926057827374447932318545165101534364492028226921767881165895813905 +/- 6.22e-225]",
+        "owner_marginal_error_before_calibration": [
+          "[+/- 8.66e-61]",
+          "[3.484537911e-51 +/- 8.09e-61]"
+        ]
+      },
+      "seconds": 507.6008854410029,
+      "source_sha256": {
+        "probe_riesz_joined_continuous_balls.py": "9829e87c712df1e464437e4174f711b90057577ea45972629265b254db8c59dc",
+        "probe_riesz_continuous_balls.py": "2c6a32f1069e547c5ec35ed36cb4b8cc62c6d4b363b4e89977bbbcb3373af700",
+        "riesz_continuous_projection.py": "26c38c54a7e6c29a077925720f5cd21195452426989d18415bf884a3e995eb6c",
+        "riesz_binomial_balls.py": "cb36bf3801ef5d8b518f5e6e863e485d81e719021e95bfc83140a0005ff56419",
+        "probe_riesz_joined_balls.py": "ed900e86a89d665bf7f6240597c46c6234e4ae0752bc780b69f4924397cf9cd9",
+        "requirements-riesz-balls.txt": "3cfbc977079b3115d465e68564bd1a3335ba69f9d06e5a0b90ab5b7906612b3d"
+      },
+      "audit_rows": [],
+      "versions": {
+        "python-flint": "0.9.0",
+        "numpy": "2.2.6",
+        "scipy": "1.15.3"
+      },
+      "scope": "Continuous all-count response evaluated before finite outer quadrature. Response, roundoff and numerical skipping errors enclosed; outer quadrature error and arithmetic transport are NOT enclosed. No prime-sum bound or asymptotic conclusion. A benchmark-only run is not the coupled sum.",
+      "row_checkpoint_sha256": "718980ad7e65c405d66d5f71f477c59051e8971304f61884580fa053a14f2b15",
+      "completed_row_count": 768,
+      "run_report_sha256": "665bb4da6e1eef65a88ed219543647877ae000d45eea6c3ef0712433a89e9eef",
+      "radial_rule": "ordinary-legendre",
+      "joint_omitted_count_allowance": "[1.169150186585076737577742665763577774757180910691779286e-17 +/- 2.52e-72]",
+      "finite_quadrature_with_count_allowance": "[-0.0154946800869143 +/- 5.51e-17]"
+    },
+    {
+      "N": 65536,
+      "tnodes": 24,
+      "rnodes": 32,
+      "pnodes": 128,
+      "subdivision": 4,
+      "degree": 96,
+      "bits": 512,
+      "compression": "1e-45",
+      "projection_bits": 256,
+      "benchmark_only": false,
+      "fronts": [
+        "[+/- 4.52e-23]",
+        "[0.005571311301413362533 +/- 5.36e-22]"
+      ],
+      "joined": "[-0.005571311301413362533 +/- 5.82e-22]",
+      "omitted_model_count_allowance": [
+        "[3.62315785853236816821897775346258926236642159114134764127878697724289e-23 +/- 4.75e-92]",
+        "[1.173344702130794522341411162657479150102273186275915560e-17 +/- 4.34e-72]"
+      ],
+      "response_evaluations": [
+        80456,
+        63961
+      ],
+      "skipped_owner_nodes": [
+        17848,
+        34343
+      ],
+      "norm_enclosed_points": [
+        80456,
+        2018
+      ],
+      "skip_budget": "1e-20",
+      "maximum_integrand": [
+        7.157114250214147e-10,
+        4742842.5078125
+      ],
+      "setup": {
+        "rule_setup_seconds": 11.780468314012978,
+        "radial_mass": "[0.999939501339894026716723892469497896395809880676210929946454227021820612660461789049957979419187701567629709372999005925331758812218910137660257291 +/- 3.18e-148]",
+        "owner_marginal_error_before_calibration": [
+          "[+/- 8.66e-61]",
+          "[3.484537911e-51 +/- 8.09e-61]"
+        ]
+      },
+      "seconds": 1135.7712817869615,
+      "source_sha256": {
+        "probe_riesz_joined_continuous_balls.py": "9829e87c712df1e464437e4174f711b90057577ea45972629265b254db8c59dc",
+        "probe_riesz_continuous_balls.py": "2c6a32f1069e547c5ec35ed36cb4b8cc62c6d4b363b4e89977bbbcb3373af700",
+        "riesz_continuous_projection.py": "26c38c54a7e6c29a077925720f5cd21195452426989d18415bf884a3e995eb6c",
+        "riesz_binomial_balls.py": "cb36bf3801ef5d8b518f5e6e863e485d81e719021e95bfc83140a0005ff56419",
+        "probe_riesz_joined_balls.py": "ed900e86a89d665bf7f6240597c46c6234e4ae0752bc780b69f4924397cf9cd9",
+        "requirements-riesz-balls.txt": "3cfbc977079b3115d465e68564bd1a3335ba69f9d06e5a0b90ab5b7906612b3d"
+      },
+      "audit_rows": [],
+      "versions": {
+        "python-flint": "0.9.0",
+        "numpy": "2.2.6",
+        "scipy": "1.15.3"
+      },
+      "scope": "Continuous all-count response evaluated before finite outer quadrature. Response, roundoff and numerical skipping errors enclosed; outer quadrature error and arithmetic transport are NOT enclosed. No prime-sum bound or asymptotic conclusion. A benchmark-only run is not the coupled sum.",
+      "row_checkpoint_sha256": "44a627b701f09f1a2d91bb00705030c40ee6f453966938b0f949eb6e518c0408",
+      "completed_row_count": 1536,
+      "run_report_sha256": "33698c5685fa37072055e3f25510af6254fdd9959e75a4f8c28e4917353c5d0b",
+      "radial_rule": "ordinary-legendre",
+      "joint_omitted_count_allowance": "[1.173348325288653054709579381635232612691535552697506701e-17 +/- 7.82e-72]",
+      "finite_quadrature_with_count_allowance": "[-0.0055713113014134 +/- 4.93e-17]"
+    },
+    {
+      "N": 65536,
+      "tnodes": 24,
+      "rnodes": 32,
+      "pnodes": 128,
+      "subdivision": 4,
+      "degree": 96,
+      "bits": 512,
+      "compression": "1e-45",
+      "projection_bits": 256,
+      "benchmark_only": false,
+      "fronts": [
+        "[+/- 4.55e-23]",
+        "[0.005571358603893662466 +/- 2.78e-22]"
+      ],
+      "joined": "[-0.005571358603893662466 +/- 3.23e-22]",
+      "omitted_model_count_allowance": [
+        "[3.64817557747006178409412743091622770653121537201031298712034511944238e-23 +/- 3.00e-92]",
+        "[1.177894635798889002135646885503305600050614071143685063e-17 +/- 5.10e-72]"
+      ],
+      "response_evaluations": [
+        81545,
+        64826
+      ],
+      "skipped_owner_nodes": [
+        16759,
+        33478
+      ],
+      "norm_enclosed_points": [
+        81545,
+        1957
+      ],
+      "skip_budget": "1e-20",
+      "maximum_integrand": [
+        6.797917654136065e-10,
+        4668254.609375
+      ],
+      "setup": {
+        "rule_setup_seconds": 11.649208267976064,
+        "radial_mass": "[0.99993950133991518161684400012150579568734411898932769903555008491913865270976925828554335568267765169567234150518864514417231726973044091695258631837102 +/- 2.07e-153]",
+        "owner_marginal_error_before_calibration": [
+          "[+/- 8.66e-61]",
+          "[3.484537911e-51 +/- 8.09e-61]"
+        ],
+        "radial_rule": "finite-window-gamma",
+        "radial_centered_moment_checks": 48
+      },
+      "seconds": 1147.4130075970315,
+      "source_sha256": {
+        "probe_riesz_joined_continuous_balls.py": "9829e87c712df1e464437e4174f711b90057577ea45972629265b254db8c59dc",
+        "probe_riesz_continuous_balls.py": "2c6a32f1069e547c5ec35ed36cb4b8cc62c6d4b363b4e89977bbbcb3373af700",
+        "riesz_continuous_projection.py": "26c38c54a7e6c29a077925720f5cd21195452426989d18415bf884a3e995eb6c",
+        "riesz_binomial_balls.py": "cb36bf3801ef5d8b518f5e6e863e485d81e719021e95bfc83140a0005ff56419",
+        "probe_riesz_joined_balls.py": "ed900e86a89d665bf7f6240597c46c6234e4ae0752bc780b69f4924397cf9cd9",
+        "requirements-riesz-balls.txt": "3cfbc977079b3115d465e68564bd1a3335ba69f9d06e5a0b90ab5b7906612b3d",
+        "probe_riesz_gamma_coupled.py": "c66413a32b1be76cd0fd01435ca5a356523c85999e2af06fa3f74048e52111c2",
+        "riesz_radial_gamma.py": "7d943ed8aba5638d44d340d8fefaf5f3f8137952ac4728e01e2840a84520bc8d"
+      },
+      "audit_rows": [],
+      "versions": {
+        "python-flint": "0.9.0",
+        "numpy": "2.2.6",
+        "scipy": "1.15.3"
+      },
+      "scope": "Continuous all-count response evaluated before finite outer quadrature. Response, roundoff and numerical skipping errors enclosed; outer quadrature error and arithmetic transport are NOT enclosed. No prime-sum bound or asymptotic conclusion. A benchmark-only run is not the coupled sum.",
+      "row_checkpoint_sha256": "a0aef35c2cfa6a0b46353bdcc062c31518b67cc925fe88a42eb04f4bae8ba180",
+      "completed_row_count": 1536,
+      "run_report_sha256": "022962c0dec15a1dfacac8559a8a334d9f4c0cb179cec35e3c1e681b31836159",
+      "radial_rule": "finite-window-gamma",
+      "joint_omitted_count_allowance": "[1.177898283974466472197430979630736516278320602359057073e-17 +/- 8.23e-72]",
+      "finite_quadrature_with_count_allowance": "[-0.0055713586038937 +/- 4.94e-17]"
+    },
+    {
+      "N": 65536,
+      "tnodes": 24,
+      "rnodes": 96,
+      "pnodes": 192,
+      "subdivision": 4,
+      "degree": 96,
+      "bits": 512,
+      "compression": "1e-45",
+      "projection_bits": 256,
+      "benchmark_only": false,
+      "fronts": [
+        "[+/- 5.56e-23]",
+        "[0.005571311331029098062 +/- 5.28e-22]"
+      ],
+      "joined": "[-0.005571311331029098062 +/- 5.83e-22]",
+      "omitted_model_count_allowance": [
+        "[4.65693917480354708967741156473620536384557228551707533335260203097634e-23 +/- 5.74e-92]",
+        "[1.170672082645503340285669638255023462097110230739597972e-17 +/- 2.23e-72]"
+      ],
+      "response_evaluations": [
+        265700,
+        192479
+      ],
+      "skipped_owner_nodes": [
+        176668,
+        249889
+      ],
+      "norm_enclosed_points": [
+        265700,
+        10678
+      ],
+      "skip_budget": "1e-20",
+      "maximum_integrand": [
+        1.37770385100211e-07,
+        5206141.9140625
+      ],
+      "setup": {
+        "rule_setup_seconds": 51.84703033301048,
+        "radial_mass": "[0.999939501339894026716723892469497896395809880676210929946454227021820612660461789049957979419187701567629709372999005925331758812218910137660257291 +/- 3.18e-148]",
+        "owner_marginal_error_before_calibration": [
+          "[+/- 8.30e-61]",
+          "[+/- 8.30e-61]"
+        ]
+      },
+      "seconds": 3326.099304742005,
+      "source_sha256": {
+        "probe_riesz_joined_continuous_balls.py": "9829e87c712df1e464437e4174f711b90057577ea45972629265b254db8c59dc",
+        "probe_riesz_continuous_balls.py": "2c6a32f1069e547c5ec35ed36cb4b8cc62c6d4b363b4e89977bbbcb3373af700",
+        "riesz_continuous_projection.py": "26c38c54a7e6c29a077925720f5cd21195452426989d18415bf884a3e995eb6c",
+        "riesz_binomial_balls.py": "cb36bf3801ef5d8b518f5e6e863e485d81e719021e95bfc83140a0005ff56419",
+        "probe_riesz_joined_balls.py": "ed900e86a89d665bf7f6240597c46c6234e4ae0752bc780b69f4924397cf9cd9",
+        "requirements-riesz-balls.txt": "3cfbc977079b3115d465e68564bd1a3335ba69f9d06e5a0b90ab5b7906612b3d"
+      },
+      "audit_rows": [],
+      "versions": {
+        "python-flint": "0.9.0",
+        "numpy": "2.2.6",
+        "scipy": "1.15.3"
+      },
+      "scope": "Continuous all-count response evaluated before finite outer quadrature. Response, roundoff and numerical skipping errors enclosed; outer quadrature error and arithmetic transport are NOT enclosed. No prime-sum bound or asymptotic conclusion. A benchmark-only run is not the coupled sum.",
+      "row_checkpoint_sha256": "d2654bd179872d26390f4e3726e169c718531303e0617b370e302be870f7884e",
+      "completed_row_count": 4608,
+      "run_report_sha256": "a2bde2519fc3155e34702cb04b4d1f33b83edae9368ebdb75fac5cdff140ec43",
+      "radial_rule": "ordinary-legendre",
+      "joint_omitted_count_allowance": "[1.170676739584678143832759315666588198302474076311883489e-17 +/- 2.99e-72]",
+      "finite_quadrature_with_count_allowance": "[-0.0055713113310291 +/- 1.37e-17]"
+    }
+  ],
+  "comparisons": [
+    {
+      "first": 0,
+      "second": 1,
+      "signed_difference": "[0.00992336878550089413 +/- 4.02e-21]",
+      "warning": "Difference of finite quadrature expressions, not a continuum error bound."
+    },
+    {
+      "first": 0,
+      "second": 2,
+      "signed_difference": "[0.009923321483020594200 +/- 7.52e-22]",
+      "warning": "Difference of finite quadrature expressions, not a continuum error bound."
+    },
+    {
+      "first": 0,
+      "second": 3,
+      "signed_difference": "[0.00992336875588515860 +/- 5.02e-21]",
+      "warning": "Difference of finite quadrature expressions, not a continuum error bound."
+    },
+    {
+      "first": 1,
+      "second": 2,
+      "signed_difference": "[-4.730248029993e-8 +/- 3.91e-21]",
+      "warning": "Difference of finite quadrature expressions, not a continuum error bound."
+    },
+    {
+      "first": 1,
+      "second": 3,
+      "signed_difference": "[-2.961573553e-11 +/- 2.17e-21]",
+      "warning": "Difference of finite quadrature expressions, not a continuum error bound."
+    },
+    {
+      "first": 2,
+      "second": 3,
+      "signed_difference": "[4.727286456440e-8 +/- 4.91e-21]",
+      "warning": "Difference of finite quadrature expressions, not a continuum error bound."
+    }
+  ],
+  "report_script_sha256": "616fbfa55c8633bb5f3412554cca856b71dd52d6daf93c5225268c575d0d1591",
+  "publication_source_audit": "riesz-source-publication-audit.json"
+}

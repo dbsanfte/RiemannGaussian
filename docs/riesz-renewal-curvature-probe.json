@@ -1,0 +1,219 @@
+{
+  "scope": "Selected-background pair coefficient, not the entire modal or arithmetic response",
+  "exact_lattice": {
+    "cutoff": 20,
+    "total_degree": 185,
+    "cutoff_d": "143/2",
+    "pair_step": 20,
+    "both_face_regression": {
+      "common_cofactor_degree_before_pair": 225,
+      "common_cutoff_d": "143/2",
+      "lower_minimum_grid": 5,
+      "upper_minimum_grid": 20,
+      "lower_background_degree": 215,
+      "upper_background_degree": 185,
+      "lower_value": "6.304362538775323735731047040800156115029e-56",
+      "lower_minus_upper_is_negative": true,
+      "scope": "Exact rational fixed-slice recurrence; finite factorial faces and radial integration are not included."
+    },
+    "background_count_cap": 9,
+    "total_with_owner_and_marked_pair": 12,
+    "count_convolution_identity": true,
+    "empty_atoms_retained": true,
+    "second_difference_identity": true,
+    "strictly_positive": true,
+    "exact_numerator_bits": 504,
+    "value": "0.000005713345100815008514203047242855235902449"
+  },
+  "continuum": {
+    "method": "unit-cell Taylor recurrence; positive triangle convolution",
+    "higher_even_differences": [
+      {
+        "marked_legs": 2,
+        "background_total": 9.25,
+        "background_count_cap": 9,
+        "difference": 8.806809621260191e-06,
+        "upper_face_sign": "negative"
+      },
+      {
+        "marked_legs": 4,
+        "background_total": 7.25,
+        "background_count_cap": 7,
+        "difference": 0.0017914975030235267,
+        "upper_face_sign": "negative"
+      },
+      {
+        "marked_legs": 6,
+        "background_total": 5.25,
+        "background_count_cap": 5,
+        "difference": 0.04595306197022236,
+        "upper_face_sign": "negative"
+      },
+      {
+        "marked_legs": 8,
+        "background_total": 3.25,
+        "background_count_cap": 3,
+        "difference": -1.4924011441543876,
+        "upper_face_sign": "positive"
+      },
+      {
+        "marked_legs": 10,
+        "background_total": 1.25,
+        "background_count_cap": 1,
+        "difference": -19.200000000000017,
+        "upper_face_sign": "positive"
+      }
+    ],
+    "higher_difference_scope": "Fixed-slice coefficient only. Higher terms have BOTH signs; the empty-background coalescence is separate.",
+    "precisions": [
+      140,
+      180
+    ],
+    "taylor_degrees": [
+      300,
+      400
+    ],
+    "gauss_orders": [
+      32,
+      64
+    ],
+    "density_reference": {
+      "rho(2)": "0.30685281944005469058276787854182343",
+      "omega(20)": "0.56145948356688516982414321479088017"
+    },
+    "rows": [
+      {
+        "owner_share": 0.525,
+        "least_share": 0.01,
+        "lambda_ratio": 0.6931164902781679,
+        "background_total": 45.5,
+        "cutoff_remainder": 16.811649027816788,
+        "maximum_total_count": 48,
+        "retained_count_ceiling": 55,
+        "coefficient": 2.597652141904292e-48,
+        "quadrature_change": -6.077163357286271e-64,
+        "independent_ramp_difference_error": -9.115745035929407e-64,
+        "pair_corner_candidate_log_rate": "0.000000999900509899348331593481195299",
+        "joined_face_sign": 1
+      },
+      {
+        "owner_share": 0.525,
+        "least_share": 0.04,
+        "lambda_ratio": 0.6931164902781679,
+        "background_total": 9.875,
+        "cutoff_remainder": 4.202912256954197,
+        "maximum_total_count": 12,
+        "retained_count_ceiling": 13,
+        "coefficient": 8.872215650336319e-06,
+        "quadrature_change": -1.6940658945086007e-21,
+        "independent_ramp_difference_error": 3.3881317890172014e-21,
+        "pair_corner_candidate_log_rate": "0.00000399960803841756736655173464868",
+        "joined_face_sign": -1
+      },
+      {
+        "owner_share": 0.55,
+        "least_share": 0.01,
+        "lambda_ratio": 0.6931164902781679,
+        "background_total": 42.99999999999999,
+        "cutoff_remainder": 14.311649027816786,
+        "maximum_total_count": 45,
+        "retained_count_ceiling": 55,
+        "coefficient": 2.5976521419043396e-48,
+        "quadrature_change": 9.115745035929407e-64,
+        "independent_ramp_difference_error": -2.127007175050195e-63,
+        "pair_corner_candidate_log_rate": "0.000000999900509899348331593481195299",
+        "joined_face_sign": 1
+      },
+      {
+        "owner_share": 0.55,
+        "least_share": 0.04,
+        "lambda_ratio": 0.6931164902781679,
+        "background_total": 9.249999999999998,
+        "cutoff_remainder": 3.5779122569541966,
+        "maximum_total_count": 12,
+        "retained_count_ceiling": 13,
+        "coefficient": 8.883826965262081e-06,
+        "quadrature_change": 1.6940658945086007e-21,
+        "independent_ramp_difference_error": -3.3881317890172014e-21,
+        "pair_corner_candidate_log_rate": "0.00000399960803841756736655173464868",
+        "joined_face_sign": -1
+      },
+      {
+        "owner_share": 0.575,
+        "least_share": 0.01,
+        "lambda_ratio": 0.6931164902781679,
+        "background_total": 40.50000000000001,
+        "cutoff_remainder": 11.811649027816795,
+        "maximum_total_count": 43,
+        "retained_count_ceiling": 55,
+        "coefficient": 2.5976521419042925e-48,
+        "quadrature_change": 0.0,
+        "independent_ramp_difference_error": -1.5192908393215678e-63,
+        "pair_corner_candidate_log_rate": "0.000000999900509899348331593481195299",
+        "joined_face_sign": 1
+      },
+      {
+        "owner_share": 0.575,
+        "least_share": 0.04,
+        "lambda_ratio": 0.6931164902781679,
+        "background_total": 8.625000000000002,
+        "cutoff_remainder": 2.952912256954199,
+        "maximum_total_count": 11,
+        "retained_count_ceiling": 13,
+        "coefficient": 8.783818287537799e-06,
+        "quadrature_change": -1.6940658945086007e-21,
+        "independent_ramp_difference_error": 0.0,
+        "pair_corner_candidate_log_rate": "0.00000399960803841756736655173464868",
+        "joined_face_sign": -1
+      }
+    ],
+    "rational_slice_continuum": 8.806809621260191e-06,
+    "lattice_refinement": [
+      {
+        "cutoff_grid": 20,
+        "value": "0.0000057133451008150085142030472428552359",
+        "difference_from_continuum": "-3.09346452045e-6"
+      },
+      {
+        "cutoff_grid": 40,
+        "value": "0.0000071179561379891266292210810076542345",
+        "difference_from_continuum": "-1.68885348327e-6"
+      },
+      {
+        "cutoff_grid": 80,
+        "value": "0.0000079268778061675360686821290722220206",
+        "difference_from_continuum": "-8.79931815093e-7"
+      },
+      {
+        "cutoff_grid": 160,
+        "value": "0.0000083577035872445747998847292131135789",
+        "difference_from_continuum": "-4.49106034016e-7"
+      },
+      {
+        "cutoff_grid": 320,
+        "value": "0.0000085799381922559629672903980344483129",
+        "difference_from_continuum": "-2.26871429004e-7"
+      },
+      {
+        "cutoff_grid": 640,
+        "value": "0.0000086927901066998837540817961852927441",
+        "difference_from_continuum": "-1.1401951456e-7"
+      },
+      {
+        "cutoff_grid": 1280,
+        "value": "0.000008749653387813030952059290893620922",
+        "difference_from_continuum": "-5.71562334472e-8"
+      }
+    ],
+    "warning": "Refinements are not certified error enclosures or prime-density transport."
+  },
+  "normalization": "Owner has negative selected phase; response is minus the cofactor count sum.",
+  "target_unchanged": "lowerThresholdPacket(3..55)-shortOverflowPacket(3..13)",
+  "unresolved": [
+    "Remaining mode assignments and corner terms",
+    "Full radial/factorial integration with both finite beta faces",
+    "Literal signed prime-sum bound and complementary arithmetic floor"
+  ],
+  "source": "https://arxiv.org/abs/1303.1856, Sections 3.5-3.6",
+  "source_sha256": "b6cb9392d0c435888356d121e77a7df84e4075d31bd01e9ddedb93a8b57e4c29"
+}

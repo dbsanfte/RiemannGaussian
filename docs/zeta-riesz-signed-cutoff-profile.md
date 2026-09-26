@@ -1,13 +1,19 @@
 # Weighted signed cutoff profiles
 
-The investigation adds checked arithmetic sign theorems and an optional
-quantitative probe. **The retained signed prime-sum bound and complementary
+The investigation adds checked coefficient estimates, an independent signed
+bound for an actual five-prime subfamily, and optional quantitative probes.
+**The retained signed prime-sum bound and complementary
 floor remain open.** The exact target stays
 
 \[
 u^{N+1}\bigl(\mathrm{lowerThresholdPacket}_{3..55}
              -\mathrm{shortOverflowPacket}_{3..13}\bigr).
 \]
+
+The [count-boundary continuation](zeta-riesz-cardinality-chamber.md) proves
+exact unequal-share coefficients and records a sign transition at the
+canonical source ratio. Its complete-count modal probe is diagnostic;
+the retained signed bound is still open.
 
 The [proved overflow ledger](zeta-riesz-least-order-boundary.md), earlier paid
 errors and every no-go remain valid. Neither displayed term receives a
@@ -70,6 +76,168 @@ then gives the sign of the original coefficient. The Lean theorem states
 every geometric premise explicitly and discharges the midpoint and saturation
 from those premises. This is a pointwise arithmetic sign, not a lower bound
 for the real phased carrier or a relative population estimate.
+
+## Quantitative two-small-prime compensation
+
+[`ZetaRieszPrimeCompensation`](../RiemannGaussian/ZetaRieszPrimeCompensation.lean)
+extends the sign investigation to a magnitude bound. Write
+`n=P*r*a*b`, with `n` squarefree, `P,r,a` prime, and `D=L-log P`.
+Let
+
+\[
+\mathcal T_{r,a}(t)
+ =t_+-(t-\log r)_+-(t-\log a)_++(t-\log r-\log a)_+.
+\]
+
+This nonnegative tent has height at most `min(log r,log a)`. Under the
+arithmetic test
+
+\[
+D\le\log p+\log q\quad(p\ne q,\ p,q\mid b\text{ prime}),
+\]
+
+every composite divisor of `b` is beyond the cutoff. Lean proves the exact
+identity, **before estimating any term**,
+
+\[
+R_D(rab)=\mathcal T_{r,a}(D)
+       -\sum_{p\mid b,\ p\text{ prime}}\mathcal T_{r,a}(D-\log p).
+\]
+
+It includes the three/four-prime cases `b=1` and `b` prime. If additionally
+`log r+log a<=D`, the unit tent vanishes. All remaining terms then have
+the same negative sign, regardless of prime-count parity. Define the
+**actual finite prime set**
+
+\[
+\mathcal P=\{p\mid b:\ p\text{ prime},\quad
+                   D-\log a\le\log p\le D-\log r\}.
+\]
+
+Every member supplies a full `log r` of negative response. With `L>0` and
+the saturated largest-prime deletion, the original coefficient satisfies
+
+\[
+\boxed{\quad
+-\frac{\log n}{L}\,\omega(b)\log r
+\ \le\ \operatorname{Re}c_L(n)
+\ \le\ -\frac{\log n}{L}\,|\mathcal P|\log r
+\ \le\ 0.\quad}
+\]
+
+`coefficient_le_neg_plateau_count_lowSupport` proves the upper bound on
+the **unchanged retained Finset**, using its canonical largest and least
+primes. Saturation follows from the existing owner/physical geometry;
+the small-pair and remaining-pair tests stay explicit. The bound from below
+follows from `norm_coefficient_le_prime_count`. Thus the magnitude costs
+one least-prime logarithm per remaining prime, rather than a separate
+allowance per middle divisor. This is a quantitative arithmetic coefficient
+estimate, not a bound for its real part after multiplication by
+`exp(-iy log n)`.
+
+The optional [compensation probe](../scripts/probe_riesz_prime_compensation.py)
+checks the exact tent identity and measures its coverage in the same
+ordinary-density model. At `u=10001/20000`, 4096 Sobol points and three
+scrambles per count give these fractions of the model's **negative
+coefficient mass**:
+
+| Order | Five primes: both tests | Six primes: both tests |
+| --- | ---: | ---: |
+| 256 | 97.16% | 95.85% |
+| 512 | 98.42% | 97.76% |
+| 1024 | 99.05% | 97.93% |
+
+The simpler integer plateau count accounts for only about half the negative
+mass at order 512. The fractional tent shoulders therefore matter to a sharp
+comparison; retaining the exact tents is preferable to replacing them by
+plateau counts alone. These percentages do not prove arithmetic coverage.
+
+## Proved actual opposing supply, including phase
+
+[`eventually_retained_positive_supply`](../RiemannGaussian/ZetaRieszCompensationSupply.lean)
+goes beyond the density model. Choose five **ordinary primes** in fixed-width
+logarithmic intervals with slopes
+
+\[
+(\log r,\log a,\log b,\log c,\log P)
+ \simeq N\left(\frac1{25},\frac1{10},\frac{11}{50},
+                    \frac{27}{50},\frac{11}{10}\right).
+\]
+
+Only the largest-prime interval receives a bounded translation. The actual
+integer is squarefree, its prime count is exactly five, and its total logarithm
+is `2N+O_y(1)`. At the original moving length the exact coefficient is
+
+\[
+c_{L_N}(n)=-\frac{\log n}{L_N}\log r,
+\qquad \operatorname{Re}c_{L_N}(n)\le-\frac{2N}{35}.
+\]
+
+The proved prime number theorem supplies at least `c exp(2N)/(N+1)^5`
+**distinct actual integers** in each box, uniformly over bounded translations.
+For each fixed `y!=0`, a bounded translation makes `cos(y log n)<=-1/2`
+throughout the box. The phase is evaluated at the actual product; no phase
+freezing or transport approximation is made. Existing factorial concentration
+shows that the **original correlated rectangle weight** is at least `1/2`
+eventually on every such label. Low orders are still present.
+
+Lean discharges squarefreeness, count, physical prime thresholds, nondominant
+and allocation-sector deletions, the core window, and the share interior:
+the whole box is a subset of the unchanged `lowSupport` on the original
+dyadic schedule. Therefore, for `1/2<u<=10001/20000` and each fixed `y!=0`,
+there are `k=k(u,y)>0` and boxes `B_j` with
+
+\[
+\boxed{
+\operatorname{Re}\!\left[
+ u^{N_j+1}\sum_{n\in B_j}W_{N_j}(n)c_{L_{N_j}}(n)
+       \frac{(\log n)^{N_j}}{N_j!}n^{-3/2-iy}
+\right]
+\ \ge\ k\,\frac{(2u)^{N_j}}{(N_j+1)^6}
+}
+\]
+
+eventually. Here `W` is the existing `ZetaRieszJointBoundary.weight`; it
+is not replaced by one. The constant and starting index are existential,
+not explicit finite-order numerical certificates. No hypothetical zero is
+assumed. This is an independent signed estimate for a genuine suballocation.
+
+**What this resolves:** opposing supply exists in the actual arithmetic
+population, with favorable phases and the retained factorial weight.
+**What it does not resolve:** this is not the whole five-prime class, and
+the remaining labels can contribute with either sign. No lower bound for
+their joint sum follows by dropping them. The target remains
+`lowerThresholdPacket(3..55)-shortOverflowPacket(3..13)`, followed by the
+complementary carrier's independent floor. The new subfamily cannot be
+counted a second time as a free reserve.
+
+The subsequent [minimum-collision audit](zeta-riesz-minimum-collision-audit.md)
+checks a specific remaining correlation. Its exact two-chamber model and
+positive rate budgets do not yet prove survival or cancellation of a term in
+the full joined response.
+
+The [joined head and precision audit](zeta-riesz-joined-head-audit.md) now
+proves exact cancellation of the one-cofactor head across both factorial
+boundaries, including its actual two-prime arithmetic counterpart. Direct
+100-digit convolution checks expose the limits of the high-order numerical
+probe. The full signed estimate remains open; apparent million-order growth
+from under-resolved quadrature is not accepted as a mathematical result.
+
+The subsequent [least-prime duality applicability audit](zeta-riesz-duality-transfer-audit.md)
+checks recent Alladi/Tenenbaum/Wang results and the hybrid Euler--Hadamard
+formula against this same target. Lean rules out paying the source with
+the stated duality allowance even with an adaptive auxiliary cutoff, and
+audits every order in the displayed fixed-height hybrid error envelope.
+These are limitations of those proposed inputs, not bounds or divergence
+theorems for the retained signed prime sum.
+
+The optional [actual-prime regression](../scripts/probe_riesz_compensation_supply.py)
+and its [report](riesz-compensation-supply-probe.json) construct chosen Proth
+prime examples at orders 1024 and 2048 and heights 54 and 100. Primality
+witnesses are checked with exact integer arithmetic; logarithms, phases and
+binomial weights are high-precision or floating-point regressions, not
+interval certificates. Population supply comes from the Lean theorem,
+not these selected examples. The probe stays outside ordinary CI.
 
 ## Weighted profile experiment
 
@@ -146,6 +314,51 @@ asymptotic rate. Values at heights 54, 60 and 100 retain their full phase
 but vary substantially between scrambles; no floor is inferred from them.
 The small `y=0` residual cannot be used at a hypothetical zero's ordinate.
 
+### Resolving the radial oscillation in the model
+
+The [new report](riesz-prime-compensation-probe.json) also removes radial
+Monte Carlo noise. For each sampled share configuration it first integrates
+the full phase over
+
+\[
+\max\{1.95N,2\log(N)/r\}<T<\min\{2.03N,L_N/P\},
+\]
+
+where `P,r` here denote the largest/least **log shares**. Each signed divisor
+term has physical-log profile `min(r*T,(L_N-alpha*T)_+)`; its two breakpoints
+are integrated using integer incomplete-gamma antiderivatives.
+At nonzero heights the finite endpoint expansion is truncated after 24 terms
+with an explicit geometric series-tail bound. Eighteen independent
+90-digit incomplete-gamma checks agree within `1.1e-14` absolute error.
+Floating-point rounding and the remaining share quadrature are **not**
+interval-certified.
+
+All distinct marked incidences, finite factorial probabilities, moving
+integer-floor length and original lower-minus-short-overflow weight remain
+inside this ordinary-density integral. It does not model exposed-zero
+prime phases and does not reopen the failed masked-mode radial rescue.
+For modeled counts 3--14 at height 54, the source-normalized complex norms
+range across three scrambles as follows:
+
+| Order | Model norm range |
+| --- | ---: |
+| 256 | `6.65e-7..7.30e-7` |
+| 512 | `3.77e-7..4.59e-7` |
+| 1024 | `1.63e-7..2.49e-7` |
+
+The oscillatory model is substantially smaller and better resolved than
+the previous direct radial sampling suggested. These finite observations
+give neither an asymptotic rate nor a bound for the actual prime measure.
+The arithmetic discrepancy and counts 15--55 are still unpaid.
+
+Reproduce the optional diagnostics with:
+
+```sh
+.lake/plot-venv/bin/python scripts/probe_riesz_prime_compensation.py \
+  --orders 256 512 1024 --power 12 --seeds 3 --max-count 14 \
+  --output docs/riesz-prime-compensation-probe.json
+```
+
 The second experiment constructs actual Proth primes at randomized log
 targets: 96 labels over counts 3--14 at orders 256 and 512, with exact modular
 primality certificates. Distinctness, products
@@ -166,7 +379,11 @@ A useful theorem must compare the **joint weighted cutoff imbalance** of
 the actual cofactor population. Keep the canonical least prime, marked
 factorial weights, original support and `exp(-iy log n)` while comparing
 positive three/four-prime mass with mixed-sign five/six-prime and higher-count
-mass. The new sign theorem and the model do not prove that comparison.
+mass. The two-small-prime result gives a concrete negative magnitude through
+actual prime windows, and identifies the fractional shoulders a comparison
+must retain. It does not estimate the supply of those labels or their phased
+balance against the positive unit response. Neither the new coefficient
+bound nor the improved density probe proves the joint signed estimate.
 
 Existing prime-replacement and mass-transport identities already retain the
 needed phases. Their missing quantitative supply/coverage estimates remain

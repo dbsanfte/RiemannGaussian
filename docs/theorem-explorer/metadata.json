@@ -3513,7 +3513,15 @@
     "ZetaRieszLeastBoundary": "arithmetic",
     "ZetaRieszLeastVariation": "arithmetic",
     "ZetaRieszLeastOrderOverflow": "arithmetic",
-    "ZetaRieszCutoffProfile": "arithmetic"
+    "ZetaRieszCutoffProfile": "arithmetic",
+    "ZetaRieszPrimeCompensation": "arithmetic",
+    "ZetaRieszCompensationSupply": "arithmetic",
+    "ZetaRieszMinimumCollisionAudit": "arithmetic",
+    "ZetaRieszCardinalityChamber": "arithmetic",
+    "ZetaRieszRenewalCurvature": "arithmetic",
+    "ZetaRieszJoinedHeadCancellation": "arithmetic",
+    "ZetaRieszDualityRateAudit": "arithmetic",
+    "ZetaTiltedZeroSelection": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

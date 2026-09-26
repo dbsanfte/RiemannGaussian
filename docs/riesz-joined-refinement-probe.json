@@ -1,0 +1,219 @@
+{
+  "scope": "Finite ball-arithmetic expressions only. Differences are not error bounds for a continuum integral. No actual prime-sum estimate or eventual growth/decay conclusion.",
+  "original_and_fast_evaluator_overlap": true,
+  "rows": [
+    {
+      "N": 65536,
+      "ell": 128,
+      "tn": 48,
+      "rn": 8,
+      "pn": 256,
+      "bits": 384,
+      "fronts": [
+        "[5.0699660698618770965387525825545354824277959328680608748862e-20 +/- 2.20e-79]",
+        "[0.0055896207740287079645882878542879601867691386266557655841377 +/- 7.39e-62]"
+      ],
+      "joined": "[-0.0055896207740287079138886271556691892213816128011104107598598 +/- 7.84e-62]",
+      "omitted_count_bound": [
+        "[3.995121429417814939029413627170774185898209404119690854076732e-75 +/- 5.55e-136]",
+        "[3.544709684415708604248392395607680365444516571843735634625371e-25 +/- 3.39e-86]"
+      ],
+      "max_integrand": [
+        1.1497909116607708e-15,
+        176.92295979324564
+      ],
+      "radial_mass": "[0.999939501339915181616844000121505795689345486100530051311670993419970840238652964655850200566796820165413021 +/- 3.71e-109]",
+      "owner_marginal_error_before_calibration": [
+        "[5.0801793062867699375761521281669995067816348e-19 +/- 6.72e-63]",
+        "[4.966749170942475666555057401864010615710536611065e-14 +/- 4.00e-63]"
+      ],
+      "seconds": 121.92413010899327,
+      "scope": "Finite ball-arithmetic lattice/quadrature only, with exact moving length, owner-marginal calibration and analytic head replacement. No bound for grid/interpolation/quadrature errors or arithmetic transport.",
+      "proof_status": "No continuum enclosure, retained prime-sum bound, or eventual conclusion",
+      "probe_sha256": "ed900e86a89d665bf7f6240597c46c6234e4ae0752bc780b69f4924397cf9cd9",
+      "versions": {
+        "python-flint": "0.9.0",
+        "numpy": "2.2.6",
+        "scipy": "1.15.3"
+      },
+      "parameters": {
+        "u": "10001/20000",
+        "modes": [
+          "0",
+          "1/40000+(3/500)i",
+          "1/40000-(3/500)i"
+        ],
+        "multiplicities": [
+          1,
+          3,
+          3
+        ],
+        "owner_interval": [
+          "1/2",
+          "3/5"
+        ],
+        "radial_interval": [
+          "39N/20",
+          "203N/100"
+        ],
+        "length": "2*log(floor(20000^N/(10001^N*(N+1)))+2)",
+        "literal_count_caps_in_model": [
+          55,
+          13
+        ]
+      }
+    },
+    {
+      "N": 65536,
+      "ell": 128,
+      "tn": 48,
+      "rn": 8,
+      "pn": 256,
+      "bits": 384,
+      "fronts": [
+        "[5.06996606986187709653875258255453548242779593286806087489e-20 +/- 4.52e-77]",
+        "[0.00558962077402870796458828785428796018676913862665576558414 +/- 6.45e-60]"
+      ],
+      "joined": "[-0.00558962077402870791388862715566918922138161280111041075986 +/- 4.41e-60]",
+      "omitted_count_bound": [
+        "[3.9951214294178149390294136271707741859e-75 +/- 1.60e-113]",
+        "[3.54470968441570860424839239560768036544451657e-25 +/- 2.25e-70]"
+      ],
+      "max_integrand": [
+        1.1497909116607708e-15,
+        176.92295979324564
+      ],
+      "radial_mass": "[0.999939501339915181616844000121505795689345486100530051311670993419970840238652964655850200566796820165413021 +/- 3.71e-109]",
+      "owner_marginal_error_before_calibration": [
+        "[5.08017930628676993757615212816699950678164e-19 +/- 9.33e-61]",
+        "[4.9667491709424756665550574018640106157105366111e-14 +/- 5.06e-61]"
+      ],
+      "seconds": 43.87694581298274,
+      "scope": "Finite ball-arithmetic lattice/quadrature only, with exact moving length, owner-marginal calibration and analytic head replacement. No bound for grid/interpolation/quadrature errors or arithmetic transport.",
+      "source_sha256": {
+        "probe_riesz_joined_refinement.py": "29942b0ba916c6078feeed78bf8fcec9b5d61536ea14762eb8d96a9e37077690",
+        "riesz_binomial_balls.py": "cb36bf3801ef5d8b518f5e6e863e485d81e719021e95bfc83140a0005ff56419",
+        "probe_riesz_joined_balls.py": "ed900e86a89d665bf7f6240597c46c6234e4ae0752bc780b69f4924397cf9cd9",
+        "requirements-riesz-balls.txt": "3cfbc977079b3115d465e68564bd1a3335ba69f9d06e5a0b90ab5b7906612b3d"
+      },
+      "binomial_evaluation": "positive finite tail plus explicit geometric remainder",
+      "versions": {
+        "python-flint": "0.9.0",
+        "numpy": "2.2.6",
+        "scipy": "1.15.3"
+      },
+      "proof_status": "Finite ball-arithmetic expression only. No continuum enclosure, actual prime-sum estimate, or eventual conclusion."
+    },
+    {
+      "N": 65536,
+      "ell": 128,
+      "tn": 48,
+      "rn": 128,
+      "pn": 256,
+      "bits": 384,
+      "fronts": [
+        "[3.3337899601931664479940239931691946643376453210176811e-20 +/- 5.41e-73]",
+        "[0.00558902293985005849256005984213684136820421424881947886893 +/- 7.63e-60]"
+      ],
+      "joined": "[-0.00558902293985005845922216024020517688826397431712753222556 +/- 6.63e-60]",
+      "omitted_count_bound": [
+        "[4.89144100668907307324501401471657819090851e-36 +/- 2.29e-78]",
+        "[6.1243141429279363369783928181927017618036523209632584e-17 +/- 6.34e-70]"
+      ],
+      "max_integrand": [
+        0.0016848902319794336,
+        648.5017524734616
+      ],
+      "radial_mass": "[0.999939501339915181616844000121505795689345486100530051311670993419970840238652964655850200566796820165413021 +/- 3.71e-109]",
+      "owner_marginal_error_before_calibration": [
+        "[+/- 8.18e-61]",
+        "[+/- 8.18e-61]"
+      ],
+      "seconds": 1007.4539649030194,
+      "scope": "Finite ball-arithmetic lattice/quadrature only, with exact moving length, owner-marginal calibration and analytic head replacement. No bound for grid/interpolation/quadrature errors or arithmetic transport.",
+      "source_sha256": {
+        "probe_riesz_joined_refinement.py": "29942b0ba916c6078feeed78bf8fcec9b5d61536ea14762eb8d96a9e37077690",
+        "riesz_binomial_balls.py": "cb36bf3801ef5d8b518f5e6e863e485d81e719021e95bfc83140a0005ff56419",
+        "probe_riesz_joined_balls.py": "ed900e86a89d665bf7f6240597c46c6234e4ae0752bc780b69f4924397cf9cd9",
+        "requirements-riesz-balls.txt": "3cfbc977079b3115d465e68564bd1a3335ba69f9d06e5a0b90ab5b7906612b3d"
+      },
+      "binomial_evaluation": "positive finite tail plus explicit geometric remainder",
+      "versions": {
+        "python-flint": "0.9.0",
+        "numpy": "2.2.6",
+        "scipy": "1.15.3"
+      },
+      "proof_status": "Finite ball-arithmetic expression only. No continuum enclosure, actual prime-sum estimate, or eventual conclusion."
+    },
+    {
+      "N": 65536,
+      "ell": 256,
+      "tn": 48,
+      "rn": 128,
+      "pn": 256,
+      "bits": 384,
+      "fronts": [
+        "[2.683431328467756350980971098912645815935296835744e-24 +/- 2.46e-73]",
+        "[0.00557573982899972696905322924890584396861498921315420820638 +/- 6.93e-60]"
+      ],
+      "joined": "[-0.00557573982899972696905054581757737621226400824205529556056 +/- 4.79e-60]",
+      "omitted_count_bound": [
+        "[3.436458426538625816323978532395530378907436e-36 +/- 7.55e-79]",
+        "[3.1619791157581535852359485753481416269388712760712445e-17 +/- 6.46e-70]"
+      ],
+      "max_integrand": [
+        0.0016815405263444804,
+        648.4149306856318
+      ],
+      "radial_mass": "[0.999939501339915181616844000121505795689345486100530051311670993419970840238652964655850200566796820165413021 +/- 3.71e-109]",
+      "owner_marginal_error_before_calibration": [
+        "[+/- 8.18e-61]",
+        "[+/- 8.18e-61]"
+      ],
+      "seconds": 1790.1648301500245,
+      "scope": "Finite ball-arithmetic lattice/quadrature only, with exact moving length, owner-marginal calibration and analytic head replacement. No bound for grid/interpolation/quadrature errors or arithmetic transport.",
+      "source_sha256": {
+        "probe_riesz_joined_refinement.py": "29942b0ba916c6078feeed78bf8fcec9b5d61536ea14762eb8d96a9e37077690",
+        "riesz_binomial_balls.py": "cb36bf3801ef5d8b518f5e6e863e485d81e719021e95bfc83140a0005ff56419",
+        "probe_riesz_joined_balls.py": "ed900e86a89d665bf7f6240597c46c6234e4ae0752bc780b69f4924397cf9cd9",
+        "requirements-riesz-balls.txt": "3cfbc977079b3115d465e68564bd1a3335ba69f9d06e5a0b90ab5b7906612b3d"
+      },
+      "binomial_evaluation": "positive finite tail plus explicit geometric remainder",
+      "versions": {
+        "python-flint": "0.9.0",
+        "numpy": "2.2.6",
+        "scipy": "1.15.3"
+      },
+      "proof_status": "Finite ball-arithmetic expression only. No continuum enclosure, actual prime-sum estimate, or eventual conclusion."
+    }
+  ],
+  "differences": {
+    "beta_8_to_128_same_grid_128": "[5.978341786494546664669154640123331176384839828785343e-7 +/- 1.11e-59]",
+    "grid_128_to_256_same_beta_128": "[1.32831108503314901716144226278006759999660750722366650e-5 +/- 1.15e-59]"
+  },
+  "input_files": [
+    {
+      "file": ".lake/riesz-joined-65536-g128-r8.json",
+      "sha256": "57f3adc48c78166b84bb91f200fb3d94b359160354b9c1218eb9ebe78c60c3df"
+    },
+    {
+      "file": ".lake/riesz-joined-65536-g128-r8-fast.json",
+      "sha256": "c5680b622635b277a3d2e4a3cbd7b339991ebb1bea7783b9e0464c5c93d14f4b"
+    },
+    {
+      "file": ".lake/riesz-joined-65536-g128-r128-fast.json",
+      "sha256": "48a7582d148192debafb824a6e9505c3b73cb1a4cafd14bfe1097ba4d76b072e"
+    },
+    {
+      "file": ".lake/riesz-joined-65536-g256-r128-fast.json",
+      "sha256": "f882b0e0c47df6b3f9b55855038056aa2058d854b636d326891eb27ef4cd1443"
+    }
+  ],
+  "remaining": [
+    "Cutoff lattice and interpolation error",
+    "Coupled quadrature error including varying amplitudes",
+    "Synthetic-to-arithmetic transfer",
+    "Complementary signed carrier floor"
+  ],
+  "publication_source_audit": "riesz-source-publication-audit.json"
+}

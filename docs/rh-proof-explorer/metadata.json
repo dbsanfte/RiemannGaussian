@@ -16,15 +16,15 @@
       "changeReason": "The finite support theorem and local divisor decomposition do not survive arbitrary analytic factors or hard masks. The current step therefore bounds literal arithmetic errors before tackling the remaining coupled prime sum."
     },
     "latestUpdate": {
-      "sequence": 78,
-      "id": "literal-overflow-bound-and-signed-cutoff-profiles",
+      "sequence": 79,
+      "id": "signed-prime-supply-and-coupled-cutoff-audits",
       "kind": "theorem",
-      "title": "Factorial overflow decays; four- and five-prime coefficient signs are proved.",
-      "body": "Lean pays the upper factorial overflow for counts 14\u201355 and the coincident marked/least slot. It also proves nonnegative four-prime coefficients on the retained support and nonpositive five-prime coefficients under a precise small-pair cutoff. Weighted-profile probes identify opposing count classes, with no prime-density transfer assumed.",
-      "next": "Bound the coupled signed boundary difference over counts 3\u201355 and the complementary carrier, retaining the full phase. Arithmetic coefficient signs and numerical model cancellation do not give a packet bound, -3/40 floor or zero exclusion.",
+      "title": "Proved signed five-prime supply; audited the remaining count cancellation.",
+      "body": "Lean proves an eventual positive real lower bound for an actual five-prime subfamily, retaining its phase and factorial masks. Exact subset identities also determine coefficients in selected 13- and 49-prime regions. Numerical renewal and coupled-mode audits test the remaining cancellation and expose unresolved integration errors; they do not certify the prime sum.",
+      "next": "Bound the joint signed difference over counts 3\u201355, including all labels outside the favorable subfamily, then bound the complementary carrier. The whole-packet estimate, independent -3/40 floor and zero exclusion remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszCutoffFiveSignTheorem"
+        "rieszPrimeCompensationSupplyTheorem"
       ],
       "documentation": "docs/zeta-riesz-signed-cutoff-profile.md"
     },
@@ -39,14 +39,49 @@
   },
   "endpoints": [
     {
-      "id": "weighted-cutoff-profile",
-      "label": "Signed cutoff profiles · four/five-prime coefficient signs",
+      "id": "prime-compensation",
+      "label": "Opposing coefficients \u00b7 exact prime tents and magnitude bounds",
       "statusPaths": [
-        ["gaussianPhaseBandToolkit", "rieszCutoffFourSignTheorem"],
-        ["gaussianPhaseBandToolkit", "rieszCutoffFiveSignTheorem"],
-        ["gaussianPhaseBandToolkit", "rieszCutoffPlateauTheorem"]
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeCompensationIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeCompensationMagnitudeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeCompensationNormTheorem"
+        ]
       ],
-      "scopePath": ["gaussianPhaseBandToolkit", "rieszCutoffProfileScope"],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszPrimeCompensationScope"
+      ],
+      "documentation": "docs/zeta-riesz-signed-cutoff-profile.md"
+    },
+    {
+      "id": "weighted-cutoff-profile",
+      "label": "Signed cutoff profiles \u00b7 four/five-prime coefficient signs",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCutoffFourSignTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCutoffFiveSignTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCutoffPlateauTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCutoffProfileScope"
+      ],
       "documentation": "docs/zeta-riesz-signed-cutoff-profile.md"
     },
     {
@@ -3903,6 +3938,21 @@
         "rieszJointBoundaryScope"
       ],
       "documentation": "docs/zeta-riesz-least-order-boundary.md"
+    },
+    {
+      "id": "compensation-supply",
+      "label": "Actual five-prime supply \u00b7 signed subfamily bound",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeCompensationSupplyTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszPrimeCompensationSupplyScope"
+      ],
+      "documentation": "docs/zeta-riesz-signed-cutoff-profile.md"
     }
   ],
   "scopes": {

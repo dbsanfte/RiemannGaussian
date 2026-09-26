@@ -1762,7 +1762,216 @@ Its observed 98% coverage of negative five-prime mass is only a continuum
 model diagnostic. Do not revive the failed isolated triple/quintuple
 short-cell transport or replace the full signed count sum by these classes.
 
+`ZetaRieszPrimeCompensation` retains two small primes in a squarefree label
+`n=P*r*a*b`. If every distinct prime pair in `b` has log sum at least
+`D=L-log P`, its response is exactly the unit pair tent minus the sum of
+prime tents. If `log r+log a<=D`, the unit tent vanishes. Each prime in
+`D-log a<=log p<=D-log r` supplies a full `log r` of opposing response,
+and its magnitude costs at most `card(b.primeFactors)*log r`. The original
+coefficient normalization is retained; the lowSupport theorem discharges
+saturation for its canonical largest/least factors. These are quantitative
+coefficient bounds, not phased carrier floors or population estimates.
+The optional compensation probe analytically integrates the radial phase
+before share quadrature. Its ordinary-density results still do not evaluate
+the prime sum, pay counts 15..55, or justify generic PNT transport. Keep the
+exact joined boundary target, all masks and previous no-go results.
+
+`ZetaRieszCompensationSupply.eventually_retained_positive_supply` now proves
+actual opposing supply, beyond coefficient signs: five disjoint prime-log
+boxes have slopes 1/25, 1/10, 11/50, 27/50, 11/10. Fixed positive widths and
+a bounded largest-prime translation give genuine prime populations by the
+proved PNT and favorable full product phase at each fixed nonzero height.
+The exact coefficient is -log(n)*log(minFac n)/L. The original correlated
+rectangle has weight at least 1/2 eventually; every current lowSupport mask
+is discharged on the unchanged dyadic schedule for 1/2<u<=10001/20000.
+The real source-normalized subfamily is >=c(u,y)*(2u)^N/(N+1)^6 eventually,
+with c>0 and an unevaluated starting index. This does NOT bound the complete
+five-prime class, the joined counts 3..55, or the complementary carrier.
+Do not count this supply twice, drop the remaining negative phases, infer
+matching from population alone, or revive short-cell/PNT absolute-error
+transport. The exact joint signed target is unchanged. The optional
+`probe_riesz_compensation_supply.py` verifies chosen Proth prime certificates
+and finite numerical identities; it is neither a population sample nor CI
+certification. Keep work local until new publication authorization.
+
+The minimum-coordinate audit in `docs/zeta-riesz-minimum-collision-audit.md`
+is a diagnostic, not a bound or counterexample for that entire target.
+`ZetaRieszMinimumCollisionAudit` evaluates both ordered Laplace chambers:
+the factorial minimum moment is `1/(a*b*(a+b)^h)`. The concrete conjugate
+nodes separately lie outside the source disk, yet their normalized minimum
+moment grows. It also certifies positive candidate radial-minus-entropy
+budgets at total counts 13 and 49 and nonzero equal-share Riesz kernels.
+At count 45, owner share 14/25 and 44 shares of 1/100 have exactly zero
+multinomial entropy cost; every positive horizontal gain therefore gives
+a positive candidate radial budget, even on a narrower radius interval.
+These budgets omit the integrated residue and cross-count cancellation;
+do not claim that a collision source survives the complete retained sum.
+The optional probe includes the literal factorial beta faces and moving
+length, but is neither actual prime data nor an interval certificate.
+The next modal test must compute the joint collision coefficient with both
+least-order faces and all count/Riesz signs retained. No new packet, floor,
+zero exclusion, rightmost-zero assumption or public frontier is introduced.
+
+The same module now proves `collisionChambers_eq`: summing all factored
+orthant chambers gives `(sum a_i)/(prod a_i)`. For balanced conjugate nodes,
+`diagonalCone_eq` includes the fixed-total determinant and gives the positive
+factor `a/(a^2+eta^2)^m`. The derivative of the correlated factorial profile
+gives normal slopes 1/1045 and 1/4465 at the 12- and 48-cofactor candidates.
+`paired_face_cones_window_neg` proves that their Riesz cone factors reinforce
+after the original boundary subtraction, uniformly for 693/1000<=lambda<=694/1000.
+This interval contains the canonical limiting source ratio. These are finite
+model integrals and signs, not a proved local asymptotic of the entire
+carrier or an assumed nonzero arithmetic residue. The remaining corners,
+all other counts/modes, the actual radial/factorial asymptotic and prime
+transport still need estimates. Do not report this as a full modal no-go,
+signed prime-sum bound or zero exclusion. See the audit's summed-cones section.
+
+`ZetaRieszCardinalityChamber` evaluates the full signed kernel whenever
+subset cardinality determines the hinge side. Its exact affine formula
+applies to unequal prime logs and gives explicit opposite coefficient
+bounds in the stated 13- and 49-prime chambers. These are not phased-sum
+bounds or population comparisons. The interior 45-prime kernel changes
+sign at lambda=149/215: its earlier positive 693/1000 regression is negative
+at every canonical source ratio in the restricted radius range. Do not
+infer an integrated sign from the old rational regression. The accompanying
+coherent-count probe sums every geometrically possible count at matched
+point profiles; it leaves a nonzero response even for multiplicity one.
+`coherent_normSq_gap` compares coupled modal denominators, not complete-leg
+limits or full masked integrals. All owner/radial/factorial integrations and
+the literal prime-sum transfer remain unestimated by these diagnostics.
+See `docs/zeta-riesz-cardinality-chamber.md`; retain the exact target and
+all prior no-gos. Probes remain outside ordinary CI; work remains local.
+
+`ZetaRieszRenewalCurvature` now audits a specific joined count coefficient.
+Its finite Euler recurrence retains both empty atoms and all orders. The
+signed coefficients are nonpositive after the empty atom, and the second
+cutoff difference is nonnegative on the strict core and strictly positive
+in the stated interior chamber. `upper_face_lattice_strict` is a rational
+lattice regression, not a theorem about the actual prime measure. The
+optional `probe_riesz_renewal_curvature.py` independently checks the full
+count convolution with exact rational arithmetic and the continuum
+Dickman/Buchstab formula by refinement. The sampled upper-face pair
+coefficient is about 8.8e-6 versus about 2.6e-48 at the lower face. Higher even differences can reverse sign (the
+ten-marked-leg rational model gives -96/5); they must still be summed. These
+are fixed-slice selected-background coefficients: they do not include every
+modal assignment, the integrated finite beta faces or a proved collision
+asymptotic. Do not infer failure or success of the literal signed bound.
+Keep counts 3..55/3..13 and all original masks unchanged. A fixed positive
+least cutoff is essential to this model; this is not a scalar-renewal
+rescue or a transfer of continuum density to primes. See
+`docs/zeta-riesz-renewal-curvature.md` for the exact scope and next test.
+
 ### Joint shifted configurations and share-seam cancellation (2026-09-25)
+
+`docs/zeta-riesz-duality-transfer-audit.md` audits the Alladi--Johnson,
+Tenenbaum and Wang least-prime identities and the displayed sharp-cutoff
+hybrid Euler--Hadamard estimate. `ZetaRieszDualityRateAudit` proves that
+the explicit duality allowance grows at source scale on the core for
+every adaptive auxiliary cutoff, even with zero prime-density error.
+The displayed hybrid envelope grows at fixed height for every choice of
+order. These are theorems about upper-bound allowances, not lower bounds
+for actual errors, a no-go for exact signed identities, or prime-sum
+divergence. The weighted divisor differences, product phase and original
+count masks are not covered by those published summands. Do not import
+them as a signed floor or replace the retained target. The optional rate
+probe is not prime data; no public frontier or accomplishment changes.
+
+`ZetaRieszJoinedHeadCancellation` proves both endpoint zeros of the exact
+rectangle and cancellation of any cutoff-independent complex head against
+its signed derivative. On literal squarefree two-prime labels,
+`markedWeight=0` and `lowerWeight=overflowWeight`; extending the joined
+boundary difference by such labels adds zero with its full carrier phase.
+This does not estimate counts 3..55. `coefficient_saturated_prime` still
+requires a composite cofactor. Do not silently apply it to the one-cofactor
+head of an exponential model. See `docs/zeta-riesz-joined-head-audit.md`.
+The optional direct precision probe retains 100 decimal digits through its
+Euler recurrence and convolution, but proves no grid or quadrature error.
+The large million-order integrated output remains inconclusive: unresolved
+oscillations and the FFT route's long-double conversion cannot certify
+growth, decay, or a retained prime-sum bound. Keep numerical probes outside
+CI, every old no-go, all literal masks, and the same signed arithmetic target.
+The subsequent `docs/zeta-riesz-joined-ball-audit.md` identifies a concrete
+phase-quadrature failure: at N=1048576, a 12-node beta rule gives a value of
+norm about .909 for a sixth-harmonic moment with independently enclosed norm
+below 3e-43. Node refinement can alias non-monotonically. The optional ball
+reference includes its exterior beta mass and verifies branch analyticity;
+it encloses only those individual numerical moments, not the full model or
+an actual prime sum. The coupled ball probe encloses finite arithmetic only;
+grid, interpolation, quadrature and arithmetic transport remain open. Its
+head/marginal calibration pays no other error. Do not report an unresolved
+large-order coupled output as growth, decay, a floor or a zero exclusion.
+
+The next `docs/zeta-riesz-phase-refinement.md` also audits N=65536: the
+old eight-node beta rule has enclosed phase error about .96277 at harmonic
+ten. Even a 64-node rule aliases harmonic 24 badly. Do not treat the old
+-.00557 coupled result as a resolved continuum value. The optional
+positive-term binomial helper includes its explicit geometric remainder,
+is checked against exact rational and separate incomplete-beta values,
+and reproduces the prior finite coupled expression. Its refinement wrapper
+freezes and rechecks input hashes. Both higher-resolution runs finished:
+at N=65536 and 128 beta nodes, grids 128/256 give about -.005589023 and
+-.005575740. The grid change is about 22 times the 8-to-128-node beta
+change. These differences are not error bounds or asymptotic conclusions;
+cutoff discretization and the full varying-amplitude quadrature remain
+uncontrolled. `docs/riesz-joined-refinement-probe.json` preserves their
+finite output balls and frozen sources. There are no pending runs from this
+pass. Retain both factorial faces, the literal count caps and every no-go.
+The optional `probe_riesz_phase_budget.py` evaluates the classical Gauss
+remainder for single beta Fourier moments. It checks normalization by exact
+rational arithmetic and against both earlier independent reference reports.
+At N=65536, using the full radial upper endpoint, the conservative 1e-30
+budget needs 291 nodes at lower-face harmonic 54 and 85 at upper-face
+harmonic 12. These are sufficient single-mode counts, not a certified node
+prescription for the full varying-amplitude coupled expression. Its Riesz
+hinges, interpolation cells and accumulated mode weights still need control.
+This optional external numerical audit adds no Lean theorem or arithmetic
+estimate and must stay outside ordinary CI and certificate verification.
+
+The next `docs/zeta-riesz-continuous-renewal-audit.md` evaluates the same
+synthetic continuous all-count response at fixed geometry by a cellwise
+delay equation with explicit polynomial, propagation and roundoff budgets.
+It retains both empty atoms and includes independent one-/two-count checks
+and step/degree refinements. It is external numerics, not a Lean certificate.
+At N=1048576, p=11/20, r=1/99, the continuous response is about 5.95e-19,
+whereas splitting the one-cofactor head before grid-128 interpolation gives
+about 8.48e5. The exact difference is H-I(H). Even grid 2048 leaves about
+4.73e-9 of this artificial head term. Preserve the count cancellation during
+evaluation; do not use those split-head outputs as modal growth evidence.
+This is a fixed-point artifact, not a bound on its integrated contribution.
+The outer weighted quadrature, prime transfer and complementary floor
+remain open. No previous Lean no-go, literal mask or signed target changes.
+
+The subsequent `docs/zeta-riesz-coupled-continuous-audit.md` retains the
+continuous count response through both factorial faces. Its optional
+interval projection pays numerical polynomial compression and skipped
+summands explicitly; neither operation deletes factorial orders. A separate
+finite incomplete-gamma sum audits the radial quadrature: at N=65536, a
+12-node rule has error about .164 on a moment of norm .00889. The optional
+gamma-weighted rule retains both core endpoints and checks centered moments.
+These single-moment checks do not bound the full varying-amplitude integral.
+All four coupled N=65536 runs are complete. The 24-node ordinary and
+gamma-weighted values differ by about 4.73e-8; refining the ordinary run's
+beta/owner counts from 32/128 to 96/192 changes it by about 2.96e-11.
+These are finite quadrature diagnostics, not error bars or asymptotic rates.
+At N=1048576 the continuous upper-boundary fixed-point response is about
+1.292e9, despite the tiny lower-boundary point. Do not claim joined growth
+or decay from either point. Outer quadrature, literal prime transfer and
+the complementary floor remain open. Keep probes outside ordinary CI.
+
+The tilted-selection audit is `docs/zeta-tilted-zero-selection.md`.
+`ZetaTiltedZeroSelection.exists_unique_upper_max` constructs a genuine upper
+zero uniquely maximizing Re(rho)-a*Im(rho) for a sufficiently small generic
+positive slope. Moving the evaluation height by -a*u gives an exact signed
+projection identity and coupled convex separation for all upper modes,
+without a globally rightmost-zero assumption. It does not prove simplicity,
+transfer the source ledger to the shifted height, remove the pole, or control
+lower modes. `remote_pair_denominators` and `remote_minimum_tendsto` show
+that a symmetric synthetic family of distant competitors can lose that
+upper score yet have an exponentially growing minimum-coordinate moment.
+This is not growth of the full Riesz/count sum or an actual zero assertion.
+The optional exact-geometry/ball probe is outside CI. Keep the same signed
+prime target, every prior no-go and the public frontier unchanged; upper
+selection and local analyticity alone do not pay the masked remainder.
 
 The current local continuation is recorded in
 `docs/zeta-riesz-joint-cancellation.md`. `ZetaRieszJointShift` retains

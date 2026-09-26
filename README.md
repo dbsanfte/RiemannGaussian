@@ -149,9 +149,9 @@ The harmonic-cost route retains its exact source and an open independent -3/40 f
 
 ### Latest Update
 
-**Factorial overflow decays; four- and five-prime coefficient signs are proved.** Lean pays the upper factorial overflow for counts 14–55 and the coincident marked/least slot. It also proves nonnegative four-prime coefficients on the retained support and nonpositive five-prime coefficients under a precise small-pair cutoff. Weighted-profile probes identify opposing count classes, with no prime-density transfer assumed.
-Bound the coupled signed boundary difference over counts 3–55 and the complementary carrier, retaining the full phase. Arithmetic coefficient signs and numerical model cancellation do not give a packet bound, -3/40 floor or zero exclusion.
-[Current checked endpoint](RiemannGaussian/ZetaRieszCutoffProfile.lean#L138)
+**Proved signed five-prime supply; audited the remaining count cancellation.** Lean proves an eventual positive real lower bound for an actual five-prime subfamily, retaining its phase and factorial masks. Exact subset identities also determine coefficients in selected 13- and 49-prime regions. Numerical renewal and coupled-mode audits test the remaining cancellation and expose unresolved integration errors; they do not certify the prime sum.
+Bound the joint signed difference over counts 3–55, including all labels outside the favorable subfamily, then bound the complementary carrier. The whole-packet estimate, independent -3/40 floor and zero exclusion remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszCompensationSupply.lean#L566)
 · [Proof details](docs/zeta-riesz-signed-cutoff-profile.md).
 <!-- RH_DIRECTION:END -->
 

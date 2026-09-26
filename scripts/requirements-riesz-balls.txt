@@ -1,0 +1,4 @@
+# Optional numerical diagnostics only; do not install or run in ordinary CI.
+python-flint==0.9.0
+numpy==2.2.6
+scipy==1.15.3
