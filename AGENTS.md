@@ -1604,6 +1604,56 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ### Literal joint prime transfer (2026-09-25)
 
+The subsequent ordered-completion slice is recorded in
+`docs/zeta-riesz-ordered-euler-completion.md`. `ZetaRieszMarkedEuler`
+combines the existing Riesz Fourier factor with the exact finite factorial
+rectangle, retaining orders zero/one and both marked coordinates.
+`ZetaRieszOrderedEulerCompletion.completePacket_eq_completion` identifies
+the all-count physical squarefree sum with an ordered least-prime Euler
+product; its middle subset sum is performed before coefficient extraction
+and norms. The empty-middle term vanishes exactly. All actual prime
+incidences, coprimality and both Fourier frequencies remain explicit.
+`ZetaRieszMarkedCompletion.exteriorPacket_bound` pays unrestricted-count
+share exteriors by C*(N+1)*r^N, r<1: incidence count costs only log(n),
+absorbed by one factorial shift. Radial tails are paid and every original
+whole-label mask follows on the retained core/share interior. The terminal
+`tendsto_completion_sub_current` proves source equivalence to the unchanged
+lowerThresholdPacket (3..55) minus shortOverflowPacket (3..13), on the
+original dyadic schedule for 1/2<u<=10001/20000 and arbitrary fixed height.
+No zero hypothesis or signed-bound premise is used. This completion is
+therefore paid, but its coupled main Euler response is NOT yet bounded.
+Do not report source equivalence as a floor, decay theorem or zero exclusion.
+At this intermediate step the physical prime endpoints remain; the follow-on
+below pays them. No generic PNT transfer, separate-leg phase replacement,
+dropped low orders or previous no-go is reversed. The complementary carrier
+still needs its independent floor. Work without subagents.
+
+The follow-on `ZetaRieszPhysicalCompletion` now removes BOTH physical
+prime endpoints with a proved source-scale error. `interior_physical`
+derives N^2<p<(linearDampedCutoff u N+2)^2 from the core/share interior:
+log(minFac n)>39N/4000 eventually exceeds 2log N, while
+log(maxPrime n)<609N/500<5N/4<=L_N. Outside that interior, the existing
+radial bound and the unrestricted-count share bound apply to every finite
+partial sum. `exists_eventual_physical_bound` passes this uniform bound
+to the absolutely convergent missing-label series, giving
+C*r_rad^N+shareBudget N, with r_rad<1 and
+shareBudget=C_share*(N+1)*r_share^N, r_share about .99948275824<1.
+`tendsto_packet_sub_current` identifies the same current signed packet
+with the unrestricted marked arithmetic series at source scale.
+`tendsto_prefixEuler` identifies that series, for each fixed N>=21, as the
+limit of genuine finite ordered Euler integrals over primesLE X. This is
+ordinary absolute convergence at Re s=3/2, NOT an infinite zero-divisor
+inversion or a continuation through the source circle. All low factorial
+orders, least-prime ordering, the rectangle and signed Riesz weights remain.
+Neither the common signed series nor the complementary carrier is bounded.
+
+The user explicitly requested committing and pushing this accumulated slice
+on 2026-09-26 before continuing. Publish the checked completion theorems,
+their supporting explorer endpoint and the optional numerical audit together.
+Keep the running coupled numerical job's inputs frozen; partial rows are not
+a completed integration result. The whole-carrier default, zero-free region,
+certificate and top-ten lists do not change.
+
 `docs/zeta-riesz-joint-prime-transfer.md` records independent arithmetic
 progress beyond the modal seam model. `ZetaRieszJointBoundary` joins the
 old packet with explicitly debited neighbors in its old rest. Keeping the
@@ -1957,6 +2007,26 @@ At N=1048576 the continuous upper-boundary fixed-point response is about
 1.292e9, despite the tiny lower-boundary point. Do not claim joined growth
 or decay from either point. Outer quadrature, literal prime transfer and
 the complementary floor remain open. Keep probes outside ordinary CI.
+
+The optional `docs/zeta-riesz-owner-integration-audit.md` now encloses the
+complete signed owner integral at fixed radial/least-share points on both
+faces.
+It convolves the renewal polynomials before taking norms and integrates
+against exact conditional-binomial moments, with density, Taylor and
+roundoff budgets. The physical owner interval remains explicit. At
+N=262144 its refined fixed-point integral is about -12783.43; this is NOT
+the radial/beta integral or evidence of its asymptotic growth. The enclosed
+lower-face owner integral at that order's mean geometry is about 2.53e-24,
+with explicit density/Taylor budget below 5.8e-69; this is not a uniform
+bound on the lower face. Pure-phase
+quadrature budgets do not control this varying amplitude. The joined
+cutoff-independent head is separately enclosed by 6.55e-43 at 48/160/256
+nodes, retaining the common beta/binomial marginal without calibration.
+The larger coupled response still needs outer-error control; no arithmetic
+prime transfer or signed floor follows. Preserve both faces, all count
+signs and every previous no-go. Numerical input hashes are frozen during
+long runs: inspect their checkpoints and live handles before changing any
+dependency or restarting a job. No new Lean or public frontier is claimed.
 
 The tilted-selection audit is `docs/zeta-tilted-zero-selection.md`.
 `ZetaTiltedZeroSelection.exists_unique_upper_max` constructs a genuine upper

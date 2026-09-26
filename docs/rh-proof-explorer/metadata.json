@@ -12,21 +12,21 @@
   "campaign": {
     "direction": {
       "branch": "riesz-harmonic-cost",
-      "statement": "The harmonic-cost route retains its exact source and an open independent -3/40 floor. We are bounding a selected packet of the literal signed prime sum with its factorial correlations intact. Exterior shares, ownership, old allocation, radial localization and prime counts >=56 have geometric bounds. Signed counts 3..55 and the complementary carrier remain open.",
-      "changeReason": "The finite support theorem and local divisor decomposition do not survive arbitrary analytic factors or hard masks. The current step therefore bounds literal arithmetic errors before tackling the remaining coupled prime sum."
+      "statement": "The harmonic-cost route retains its exact source and an open independent -3/40 floor. The selected signed packet is now source-equivalent to an ordered least-prime Euler completion with its factorial correlations intact. Radial and share exteriors and both physical prime endpoints are paid. The common signed Euler response and the complementary carrier remain open.",
+      "changeReason": "The exact Fourier/factorial reindexing now sums all middle-prime subsets before norms, and independent arithmetic bounds pay its completion, including both physical prime endpoints. The next target is the resulting coupled signed Euler response."
     },
     "latestUpdate": {
-      "sequence": 79,
-      "id": "signed-prime-supply-and-coupled-cutoff-audits",
+      "sequence": 80,
+      "id": "ordered-euler-completion-and-physical-boundaries",
       "kind": "theorem",
-      "title": "Proved signed five-prime supply; audited the remaining count cancellation.",
-      "body": "Lean proves an eventual positive real lower bound for an actual five-prime subfamily, retaining its phase and factorial masks. Exact subset identities also determine coefficients in selected 13- and 49-prime regions. Numerical renewal and coupled-mode audits test the remaining cancellation and expose unresolved integration errors; they do not certify the prime sum.",
-      "next": "Bound the joint signed difference over counts 3\u201355, including all labels outside the favorable subfamily, then bound the complementary carrier. The whole-packet estimate, independent -3/40 floor and zero exclusion remain open.",
+      "title": "Proved ordered Euler completion and decay of both physical boundary errors.",
+      "body": "Lean identifies the marked factorial packet with an ordered least-prime Euler product after independently bounding the completion errors. Both physical prime cutoffs can also be removed: the resulting convergent arithmetic series differs from the current signed packet by source-scale o(1). Its finite Euler integrals converge at each fixed order. Optional numerical integration audits remain separate from these proofs.",
+      "next": "Bound the common signed Euler response, retaining both Fourier frequencies and the exact factorial rectangle, then bound the complementary carrier. The independent -3/40 floor and zero exclusion remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszPrimeCompensationSupplyTheorem"
+        "rieszUnrestrictedPacketTheorem"
       ],
-      "documentation": "docs/zeta-riesz-signed-cutoff-profile.md"
+      "documentation": "docs/zeta-riesz-ordered-euler-completion.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -38,6 +38,41 @@
     ]
   },
   "endpoints": [
+    {
+      "id": "ordered-euler-completion",
+      "label": "Ordered Euler completion \u00b7 paid arithmetic boundaries",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMarkedEulerIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMarkedExteriorBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMarkedEulerComparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPhysicalCompletionBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUnrestrictedPacketTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimePrefixEulerLimitTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszOrderedCompletionScope"
+      ],
+      "documentation": "docs/zeta-riesz-ordered-euler-completion.md"
+    },
     {
       "id": "prime-compensation",
       "label": "Opposing coefficients \u00b7 exact prime tents and magnitude bounds",
@@ -8661,6 +8696,51 @@
       "label": "The matching owned copy is not negligible",
       "overview": true,
       "documentation": "docs/zeta-riesz-rectangle-reserve.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedEuler.marked_atom_eq_integral": {
+      "label": "Exact marked factorial/Riesz Fourier atom",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-ordered-euler-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedCompletion.exteriorPacket_bound": {
+      "label": "All-count share exterior decays at source scale",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-ordered-euler-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszOrderedEulerCompletion.orderedSymbol_eq_labels": {
+      "label": "Ordered prime subsets equal actual marked incidences",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-ordered-euler-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszOrderedEulerCompletion.completePacket_eq_completion": {
+      "label": "Exact ordered Euler integral of the completed packet",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-ordered-euler-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszOrderedEulerCompletion.tendsto_completion_sub_current": {
+      "label": "Paid completion of the current signed packet",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-ordered-euler-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszPhysicalCompletion.interior_physical": {
+      "label": "Core/share interior forces both physical endpoints",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-ordered-euler-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszPhysicalCompletion.exists_eventual_physical_bound": {
+      "label": "Both missing physical boundaries decay independently",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-ordered-euler-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszPhysicalCompletion.tendsto_packet_sub_current": {
+      "label": "Unrestricted arithmetic series retains the current source",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-ordered-euler-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszPhysicalCompletion.tendsto_prefixEuler": {
+      "label": "Finite prime-prefix Euler integrals converge to the series",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-ordered-euler-completion.md"
     }
   },
   "moduleFamilies": {

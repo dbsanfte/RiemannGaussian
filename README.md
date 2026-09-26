@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-The harmonic-cost route retains its exact source and an open independent -3/40 floor. We are bounding a selected packet of the literal signed prime sum with its factorial correlations intact. Exterior shares, ownership, old allocation, radial localization and prime counts >=56 have geometric bounds. Signed counts 3..55 and the complementary carrier remain open.
+The harmonic-cost route retains its exact source and an open independent -3/40 floor. The selected signed packet is now source-equivalent to an ordered least-prime Euler completion with its factorial correlations intact. Radial and share exteriors and both physical prime endpoints are paid. The common signed Euler response and the complementary carrier remain open.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ The harmonic-cost route retains its exact source and an open independent -3/40 f
 
 ### Latest Update
 
-**Proved signed five-prime supply; audited the remaining count cancellation.** Lean proves an eventual positive real lower bound for an actual five-prime subfamily, retaining its phase and factorial masks. Exact subset identities also determine coefficients in selected 13- and 49-prime regions. Numerical renewal and coupled-mode audits test the remaining cancellation and expose unresolved integration errors; they do not certify the prime sum.
-Bound the joint signed difference over counts 3–55, including all labels outside the favorable subfamily, then bound the complementary carrier. The whole-packet estimate, independent -3/40 floor and zero exclusion remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszCompensationSupply.lean#L566)
-· [Proof details](docs/zeta-riesz-signed-cutoff-profile.md).
+**Proved ordered Euler completion and decay of both physical boundary errors.** Lean identifies the marked factorial packet with an ordered least-prime Euler product after independently bounding the completion errors. Both physical prime cutoffs can also be removed: the resulting convergent arithmetic series differs from the current signed packet by source-scale o(1). Its finite Euler integrals converge at each fixed order. Optional numerical integration audits remain separate from these proofs.
+Bound the common signed Euler response, retaining both Fourier frequencies and the exact factorial rectangle, then bound the complementary carrier. The independent -3/40 floor and zero exclusion remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszPhysicalCompletion.lean#L356)
+· [Proof details](docs/zeta-riesz-ordered-euler-completion.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

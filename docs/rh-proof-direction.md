@@ -9,6 +9,17 @@ evaluated. The smaller signed carrier retains the exact source. Its
 independent floor remains open; no first restricted zero exclusion or RH
 proof is claimed.
 
+The supporting **Ordered Euler completion · paid arithmetic boundaries**
+endpoint sums all middle-prime subsets before taking norms, retaining the
+exact marked factorial rectangle and both Fourier frequencies. The radial
+and share exteriors and both physical prime endpoints have independent
+source-scale decay. The resulting unrestricted marked arithmetic series
+is source-equivalent to the unchanged signed counts `3..55` minus overflow
+counts `3..13`; for fixed order it is the limit of finite ordered Euler
+integrals. The common signed response and the complementary floor remain
+open. See the [completion proofs and exact scope](zeta-riesz-ordered-euler-completion.md)
+and the separate [optional numerical integration audit](zeta-riesz-owner-integration-audit.md).
+
 The supporting **Literal rectangle · reserve at least 1/160** endpoint
 proves a signed estimate for the concrete second-prime incidence on
 `1/2<u<=10001/20000`, under the original simple exposed-zero hypotheses.
