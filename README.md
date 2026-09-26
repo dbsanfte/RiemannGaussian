@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-The harmonic-cost route retains its exact source and an open independent -3/40 floor. The selected signed packet is now source-equivalent to an ordered least-prime Euler completion with its factorial correlations intact. Radial and share exteriors and both physical prime endpoints are paid. The common signed Euler response and the complementary carrier remain open.
+The harmonic-cost route retains its exact source and an open independent -3/40 floor. The selected signed packet is now source-equivalent to a complete marked-prime difference coupled to a finite ordered least-prime Euler tail, with the original factorial rectangle and both Fourier frequencies intact. The completion and separation errors decay independently. The joint signed integral and complementary carrier remain open.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ The harmonic-cost route retains its exact source and an open independent -3/40 f
 
 ### Latest Update
 
-**Proved ordered Euler completion and decay of both physical boundary errors.** Lean identifies the marked factorial packet with an ordered least-prime Euler product after independently bounding the completion errors. Both physical prime cutoffs can also be removed: the resulting convergent arithmetic series differs from the current signed packet by source-scale o(1). Its finite Euler integrals converge at each fixed order. Optional numerical integration audits remain separate from these proofs.
-Bound the common signed Euler response, retaining both Fourier frequencies and the exact factorial rectangle, then bound the complementary carrier. The independent -3/40 floor and zero exclusion remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszPhysicalCompletion.lean#L356)
-· [Proof details](docs/zeta-riesz-ordered-euler-completion.md).
+**Proved geometric bounds for the Euler correction and marked-prime completion.** Lean now pays the exponential prime head, nonlinear Euler correction, Fourier exteriors, and the high marked prime’s ordering and completion errors. The full integrated errors decay at source scale with a checked geometric rate below 249/250. The resulting complete prime difference stays coupled to the literal ordered cofactor and exact factorial rectangle.
+Bound that joint signed Fourier integral, then the complementary carrier. The independent -3/40 floor and zero exclusion remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszMarkedPrimeCompletion.lean#L601)
+· [Proof details](docs/zeta-riesz-marked-prime-completion.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

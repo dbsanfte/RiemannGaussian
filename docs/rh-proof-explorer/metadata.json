@@ -12,21 +12,21 @@
   "campaign": {
     "direction": {
       "branch": "riesz-harmonic-cost",
-      "statement": "The harmonic-cost route retains its exact source and an open independent -3/40 floor. The selected signed packet is now source-equivalent to an ordered least-prime Euler completion with its factorial correlations intact. Radial and share exteriors and both physical prime endpoints are paid. The common signed Euler response and the complementary carrier remain open.",
-      "changeReason": "The exact Fourier/factorial reindexing now sums all middle-prime subsets before norms, and independent arithmetic bounds pay its completion, including both physical prime endpoints. The next target is the resulting coupled signed Euler response."
+      "statement": "The harmonic-cost route retains its exact source and an open independent -3/40 floor. The selected signed packet is now source-equivalent to a complete marked-prime difference coupled to a finite ordered least-prime Euler tail, with the original factorial rectangle and both Fourier frequencies intact. The completion and separation errors decay independently. The joint signed integral and complementary carrier remain open.",
+      "changeReason": "Independent integrated bounds now pay the nonlinear Euler correction and the marked-prime separation and completion. This legally isolates one complete prime difference without completing the ordered cofactor or imposing a phase limit after a hard mask."
     },
     "latestUpdate": {
-      "sequence": 80,
-      "id": "ordered-euler-completion-and-physical-boundaries",
+      "sequence": 81,
+      "id": "paid-marked-prime-completion",
       "kind": "theorem",
-      "title": "Proved ordered Euler completion and decay of both physical boundary errors.",
-      "body": "Lean identifies the marked factorial packet with an ordered least-prime Euler product after independently bounding the completion errors. Both physical prime cutoffs can also be removed: the resulting convergent arithmetic series differs from the current signed packet by source-scale o(1). Its finite Euler integrals converge at each fixed order. Optional numerical integration audits remain separate from these proofs.",
-      "next": "Bound the common signed Euler response, retaining both Fourier frequencies and the exact factorial rectangle, then bound the complementary carrier. The independent -3/40 floor and zero exclusion remain open.",
+      "title": "Proved geometric bounds for the Euler correction and marked-prime completion.",
+      "body": "Lean now pays the exponential prime head, nonlinear Euler correction, Fourier exteriors, and the high marked prime\u2019s ordering and completion errors. The full integrated errors decay at source scale with a checked geometric rate below 249/250. The resulting complete prime difference stays coupled to the literal ordered cofactor and exact factorial rectangle.",
+      "next": "Bound that joint signed Fourier integral, then the complementary carrier. The independent -3/40 floor and zero exclusion remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszUnrestrictedPacketTheorem"
+        "rieszMarkedPrimeCompletionTheorem"
       ],
-      "documentation": "docs/zeta-riesz-ordered-euler-completion.md"
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -38,6 +38,53 @@
     ]
   },
   "endpoints": [
+    {
+      "id": "marked-prime-completion",
+      "label": "Marked-prime completion \u00b7 geometric integrated error bounds",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMarkedPrimeHeadTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerQuotientErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerQuotientComparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMainFrequencyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMarkedSeparationIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMarkedSeparationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMarkedPrimeCompletionIntegralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMarkedPrimeCompletionBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMarkedPrimeCompletionTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszMarkedPrimeCompletionScope"
+      ],
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
     {
       "id": "ordered-euler-completion",
       "label": "Ordered Euler completion \u00b7 paid arithmetic boundaries",
@@ -8741,6 +8788,86 @@
       "label": "Finite prime-prefix Euler integrals converge to the series",
       "overview": true,
       "documentation": "docs/zeta-riesz-ordered-euler-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeHead.tendsto_head": {
+      "label": "Exponential actual-prime head decays independently",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedEulerError.rectangle_split": {
+      "label": "Exact full character-minus-quotient ledger",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszOrderedEulerBound.norm_scaled_errorResponse_le": {
+      "label": "Integrated nonlinear correction has geometric decay",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszRoughEulerTransfer.tendsto_main_sub_current": {
+      "label": "Leading quotient retains the unchanged signed packet",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMainFrequency.norm_scaled_exterior_le": {
+      "label": "Both Fourier exteriors have geometric bounds",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedSeparation.rectangle_tilt": {
+      "label": "Actual rectangle pays reversed marked-prime ordering",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedSeparation.collision_rectangle_bound": {
+      "label": "Extra prime occurrence pays the collision correction",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedSeparation.separatedSymbol_factor": {
+      "label": "Exact independent high-prime difference and ordered cofactor",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedSeparation.norm_scaled_response_difference_le": {
+      "label": "Full marked-prime separation error decays geometrically",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeCompletion.omitted_kernel_bound": {
+      "label": "Both omitted prime ranges have exp(-N/160) saving",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeCompletion.difference_split": {
+      "label": "Exact signed completion of both prime frequencies",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeCompletion.completionPair_profile": {
+      "label": "Retained quadratic Fourier zero gives an integrable profile",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeCompletion.norm_integral_completionPair_le": {
+      "label": "The entire Fourier completion error is bounded",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeCompletion.completedResponse_split": {
+      "label": "Exact completion ledger with genuine integrability",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeCompletion.norm_scaled_errorResponse_le": {
+      "label": "Integrated completion error has geometric source decay",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeCompletion.tendsto_completed_sub_current": {
+      "label": "Complete marked prime retains the unchanged signed packet",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
     }
   },
   "moduleFamilies": {

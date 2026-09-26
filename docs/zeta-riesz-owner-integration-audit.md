@@ -142,13 +142,51 @@ about `0.0398814289353` and their difference is enclosed by `6.55e-43`.
 The known zero head is therefore not a significant quadrature contaminant
 at this resolution. This pays only that particular numerical artifact.
 
-## Remaining test and reproduction
+## Completed coupled run and remaining outer error
 
-The larger complete-response run retains both factorial faces and all
-count/Riesz signs. Its full outer quadrature error is still unproved;
-no partial row sum or fixed-point result replaces it. Even a resolved
-continuum model would still need the literal-prime transfer and an
-independent bound for the complementary carrier.
+The `48/160/256` run at `N=262144` completed all **15,360 rows** in about
+3 hours 34 minutes, with 1,586,576 response evaluations. Its source hashes
+remained unchanged. The [completed report](riesz-owner-coupled-probe.json)
+contains the original output and an independent reassembly from every row.
+The finite quadrature gives
+
+\[
+\text{lower face}=0\ \pm 5.49\times10^{-23},\qquad
+\text{upper face}=-0.0001080270744329000174\ \pm4.95\times10^{-23},
+\]
+
+and hence the joined value is approximately **`+0.0001080270744329`**.
+The displayed errors cover internal response evaluation, arithmetic
+roundoff and numerical skipping in this finite rule. The separately
+recorded omitted-count allowances are below `3.1e-23` and `3.6e-23` for
+the two finite quadratures. **None of these numbers bounds the outer
+quadrature error.** This is not a bound on the continuous model or on the
+literal prime sum, and no decay rate follows from comparison with earlier
+orders.
+
+The small integrated value, compared with the very large fixed-slice
+response above, is a reason to continue testing the joint cancellation.
+It does not validate any previously disproved separate-phase transfer.
+
+The optional [reweighting audit](../scripts/probe_riesz_outer_reweight.py)
+checks every row index and frozen source, reconstructs both original
+fronts, and explores deterministic subsets of the existing outer nodes.
+Each subset's weights have checked polynomial moments for the original
+finite measure. This shortcut does **not** establish numerical convergence:
+a `q`-node subset only has degree `q-1`, while the original Gaussian rule
+has checked degree `2*q-1`, and new weights can magnify pointwise
+enclosures previously paid by tiny original weights. Its coarse results
+are therefore not alternative estimates of the continuous response with
+known accuracy. A fresh `64/160/256` run has been started to refine the
+radial rule; its result is pending.
+
+## Reproduction
+
+The complete-response runs retain both factorial faces and all count/Riesz
+signs. Their full outer quadrature error is still unproved; no partial row
+sum or fixed-point result replaces it. Even a resolved continuum model
+would still need the literal-prime transfer and an independent bound for
+the complementary carrier.
 
 ```sh
 .lake/riesz-ball-venv/bin/python scripts/check_riesz_owner_integral.py
@@ -166,4 +204,11 @@ independent bound for the complementary carrier.
   --order 262144 --tnodes 48 --rnodes 160 --pnodes 256 \
   --subdivision 4 --degree 192 --bits 768 --projection-bits 384 \
   --workers 6 --output .lake/riesz-owner-coupled-262144-48-160-256.json
+.lake/riesz-ball-venv/bin/python scripts/probe_riesz_outer_reweight.py \
+  --run .lake/riesz-owner-coupled-262144-48-160-256.json \
+  --output docs/riesz-owner-coupled-probe.json
+.lake/riesz-ball-venv/bin/python scripts/probe_riesz_owner_coupled.py \
+  --order 262144 --tnodes 64 --rnodes 160 --pnodes 256 \
+  --subdivision 4 --degree 192 --bits 768 --projection-bits 384 \
+  --workers 6 --output .lake/riesz-owner-coupled-262144-64-160-256.json
 ```

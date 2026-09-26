@@ -20,6 +20,53 @@
       "documentation": "docs/zeta-unified-zero-free.md"
     },
     {
+      "id": "marked-prime-completion",
+      "label": "Marked-prime completion · geometric integrated error bounds",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMarkedPrimeHeadTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerQuotientErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszEulerQuotientComparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMainFrequencyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMarkedSeparationIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMarkedSeparationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMarkedPrimeCompletionIntegralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMarkedPrimeCompletionBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMarkedPrimeCompletionTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszMarkedPrimeCompletionScope"
+      ],
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    {
       "id": "vk-region",
       "label": "Stronger Vinogradov–Korobov family · eventual",
       "statusPaths": [
@@ -3517,6 +3564,13 @@
     "ZetaRieszMarkedCompletion": "arithmetic",
     "ZetaRieszOrderedEulerCompletion": "arithmetic",
     "ZetaRieszPhysicalCompletion": "arithmetic",
+    "ZetaRieszMarkedPrimeHead": "arithmetic",
+    "ZetaRieszMarkedEulerError": "arithmetic",
+    "ZetaRieszOrderedEulerBound": "arithmetic",
+    "ZetaRieszRoughEulerTransfer": "arithmetic",
+    "ZetaRieszMainFrequency": "arithmetic",
+    "ZetaRieszMarkedSeparation": "arithmetic",
+    "ZetaRieszMarkedPrimeCompletion": "arithmetic",
     "ZetaRieszCutoffProfile": "arithmetic",
     "ZetaRieszPrimeCompensation": "arithmetic",
     "ZetaRieszCompensationSupply": "arithmetic",
@@ -6828,6 +6882,86 @@
       "summary": "For log(k)>=1700, the actual torus moment satisfies the original coefficient and defect bound across every allowed integer order and every real endpoint P>=1. Smaller degrees and incomplete moments remain open.",
       "documentation": "docs/rosser-schoenfeld-reproduction.md",
       "overview": true
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeHead.tendsto_head": {
+      "label": "Exponential actual-prime head decays independently",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedEulerError.rectangle_split": {
+      "label": "Exact full character-minus-quotient ledger",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszOrderedEulerBound.norm_scaled_errorResponse_le": {
+      "label": "Integrated nonlinear correction has geometric decay",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszRoughEulerTransfer.tendsto_main_sub_current": {
+      "label": "Leading quotient retains the unchanged signed packet",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMainFrequency.norm_scaled_exterior_le": {
+      "label": "Both Fourier exteriors have geometric bounds",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedSeparation.rectangle_tilt": {
+      "label": "Actual rectangle pays reversed marked-prime ordering",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedSeparation.collision_rectangle_bound": {
+      "label": "Extra prime occurrence pays the collision correction",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedSeparation.separatedSymbol_factor": {
+      "label": "Exact independent high-prime difference and ordered cofactor",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedSeparation.norm_scaled_response_difference_le": {
+      "label": "Full marked-prime separation error decays geometrically",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeCompletion.omitted_kernel_bound": {
+      "label": "Both omitted prime ranges have exp(-N/160) saving",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeCompletion.difference_split": {
+      "label": "Exact signed completion of both prime frequencies",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeCompletion.completionPair_profile": {
+      "label": "Retained quadratic Fourier zero gives an integrable profile",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeCompletion.norm_integral_completionPair_le": {
+      "label": "The entire Fourier completion error is bounded",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeCompletion.completedResponse_split": {
+      "label": "Exact completion ledger with genuine integrability",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeCompletion.norm_scaled_errorResponse_le": {
+      "label": "Integrated completion error has geometric source decay",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszMarkedPrimeCompletion.tendsto_completed_sub_current": {
+      "label": "Complete marked prime retains the unchanged signed packet",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
     }
   }
 }

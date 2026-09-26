@@ -9,6 +9,17 @@ evaluated. The smaller signed carrier retains the exact source. Its
 independent floor remains open; no first restricted zero exclusion or RH
 proof is claimed.
 
+The supporting **Marked-prime completion · geometric integrated error bounds**
+endpoint now pays the exponential prime head, full nonlinear Euler
+correction, Fourier exteriors, and high-prime separation and completion.
+The last integrated errors have allowance `C*(N+2)^3*r^N`, with a checked
+`r<249/250`, uniformly in moving height. The remaining operator couples
+the complete difference `P_j(s)-P_j(s+i*xi)` to the finite ordered cofactor
+over `q>r`; both frequencies and the exact factorial rectangle remain.
+Its difference from the unchanged signed packet tends to zero at source
+scale. The joint signed main estimate and complementary floor are still
+open. See the [exact completion ledger](zeta-riesz-marked-prime-completion.md).
+
 The supporting **Ordered Euler completion · paid arithmetic boundaries**
 endpoint sums all middle-prime subsets before taking norms, retaining the
 exact marked factorial rectangle and both Fourier frequencies. The radial

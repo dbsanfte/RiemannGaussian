@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**479 modules.** Source links open the definitions, hypotheses and proofs.
+**486 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -261,8 +261,13 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszLowHeadPrefix](../../RiemannGaussian/ZetaRieszLowHeadPrefix.lean)
 - [ZetaRieszLowerDegreeBounds](../../RiemannGaussian/ZetaRieszLowerDegreeBounds.lean)
 - [ZetaRieszLowerDegreeDeletion](../../RiemannGaussian/ZetaRieszLowerDegreeDeletion.lean)
+- [ZetaRieszMainFrequency](../../RiemannGaussian/ZetaRieszMainFrequency.lean)
 - [ZetaRieszMarkedCompletion](../../RiemannGaussian/ZetaRieszMarkedCompletion.lean)
 - [ZetaRieszMarkedEuler](../../RiemannGaussian/ZetaRieszMarkedEuler.lean)
+- [ZetaRieszMarkedEulerError](../../RiemannGaussian/ZetaRieszMarkedEulerError.lean)
+- [ZetaRieszMarkedPrimeCompletion](../../RiemannGaussian/ZetaRieszMarkedPrimeCompletion.lean)
+- [ZetaRieszMarkedPrimeHead](../../RiemannGaussian/ZetaRieszMarkedPrimeHead.lean)
+- [ZetaRieszMarkedSeparation](../../RiemannGaussian/ZetaRieszMarkedSeparation.lean)
 - [ZetaRieszMaskSizeBounds](../../RiemannGaussian/ZetaRieszMaskSizeBounds.lean)
 - [ZetaRieszMaskSupport](../../RiemannGaussian/ZetaRieszMaskSupport.lean)
 - [ZetaRieszMassTransport](../../RiemannGaussian/ZetaRieszMassTransport.lean)
@@ -279,6 +284,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszOffDiagonalJoint](../../RiemannGaussian/ZetaRieszOffDiagonalJoint.lean)
 - [ZetaRieszOneSidedArithmetic](../../RiemannGaussian/ZetaRieszOneSidedArithmetic.lean)
 - [ZetaRieszOppositePrimes](../../RiemannGaussian/ZetaRieszOppositePrimes.lean)
+- [ZetaRieszOrderedEulerBound](../../RiemannGaussian/ZetaRieszOrderedEulerBound.lean)
 - [ZetaRieszOrderedEulerCompletion](../../RiemannGaussian/ZetaRieszOrderedEulerCompletion.lean)
 - [ZetaRieszOwnedCells](../../RiemannGaussian/ZetaRieszOwnedCells.lean)
 - [ZetaRieszOwnerBounds](../../RiemannGaussian/ZetaRieszOwnerBounds.lean)
@@ -372,6 +378,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszRetainedFraction](../../RiemannGaussian/ZetaRieszRetainedFraction.lean)
 - [ZetaRieszRetainedSource](../../RiemannGaussian/ZetaRieszRetainedSource.lean)
 - [ZetaRieszRightwardModeAudit](../../RiemannGaussian/ZetaRieszRightwardModeAudit.lean)
+- [ZetaRieszRoughEulerTransfer](../../RiemannGaussian/ZetaRieszRoughEulerTransfer.lean)
 - [ZetaRieszSemiprimeBand](../../RiemannGaussian/ZetaRieszSemiprimeBand.lean)
 - [ZetaRieszSemiprimeCompletion](../../RiemannGaussian/ZetaRieszSemiprimeCompletion.lean)
 - [ZetaRieszSemiprimeDeletion](../../RiemannGaussian/ZetaRieszSemiprimeDeletion.lean)

@@ -1,5 +1,9 @@
 # Ordered least-prime Euler completion of the marked packet
 
+The follow-on [ordered Euler correction bound](zeta-riesz-ordered-euler-bound.md)
+pays the exponential prime head and the full nonlinear correction, including
+its leading quotient multiplier, through this exact marked operator.
+
 The literal signed packet now has a **proved source-equivalent ordered
 Euler-product completion**, and both physical prime endpoints can be
 removed with a vanishing source-scale error. The unrestricted arithmetic

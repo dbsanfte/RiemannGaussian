@@ -1654,6 +1654,108 @@ Keep the running coupled numerical job's inputs frozen; partial rows are not
 a completed integration result. The whole-carrier default, zero-free region,
 certificate and top-ten lists do not change.
 
+The local continuation `ZetaRieszMarkedPrimeHead` pays every actual label
+containing a prime p<=exp(N/110), uniformly in height and for
+0<=u<=10001/20000. `exists_head_bound` gives the same radial geometric
+allowance plus `shareBudget`; `tendsto_head` proves its source-scale decay.
+The original marked factorial rectangle, signed coefficient and all orders
+remain. This extends the removable polynomial head to an exponential one.
+`ZetaRieszMarkedEulerError` now bounds the FULL character-minus-quotient,
+including its leading quotient multiplier, by C*exp(-N/220) on a safe
+half-plane. `rectangle_split` is an exact finite factorial identity.
+`integral_norm_rectanglePairError_div_le` retains both marked prime slots
+and every order, and proves genuine paired-frequency integrability.
+`ZetaRieszOrderedEulerBound` sums all ordered prime pairs before proving
+the source-scale allowance C*(N+2)^3*r^N, with checked r<249/250
+(diagnostically r is about .9955720). Its `tendsto_errorResponse` has no
+zero hypothesis and allows arbitrary moving heights and prime cutoffs.
+`ZetaRieszRoughEulerTransfer.tendsto_main_sub_current` connects the actual
+remaining leading quotient to the UNCHANGED dyadic counts 3..55 minus
+short overflow 3..13. The exponential prime head and full nonlinear
+correction are both independently paid. The correlated signed MAIN
+quotient is still unbounded; the complementary floor and zero exclusion
+remain open. The earlier sharper `quadratic_rate_lt` scalar test alone
+does not replace the proved full-operator allowance. Keep the exact
+rectangle, least-prime ordering, original length and both Fourier signs.
+See `docs/zeta-riesz-ordered-euler-bound.md`. Continue locally without
+subagents or unrequested commits, and do not edit the running numerical
+probe's frozen inputs or report its partial rows as a completed result.
+
+`ZetaRieszMainFrequency` pays the actual main quotient's two Fourier
+exteriors, retaining the exact ordered primes and factorial rectangle.
+The marked phases give a quadratic zero at frequency zero and a bounded
+numerator at infinity. `norm_scaled_exterior_le` controls frequencies
+below exp(-N/220) and above exp(N/220) by C*(N+2)^3*sourceRate^N, with the
+same proved sourceRate<249/250. `response_split_frequency` is exact, and
+`tendsto_central_sub_current` connects `centralMain` to the unchanged
+signed counts 3..55 minus short overflow 3..13. No zero hypothesis enters.
+The central interval grows with N and its coupled signed integral remains
+unbounded. This is a paid exterior estimate, not a floor or packet-decay
+theorem. Continue at that central arithmetic estimate; do not discard its
+least-prime ordering or factorial correlations. The complementary carrier
+still needs its independent signed floor.
+
+`ZetaRieszMarkedSeparation` now pays the high marked prime's incidence
+restrictions in the actual main quotient. Unequal radii 3R/2 and R/2,
+together with p<=r, cost no extra prime weight; the exact rectangle gives
+(2/3)^j*2^h<=exp(-N/10). Restoring p in the cofactor tail costs an extra
+actual prime factor and is bounded by exp(-N/220) after the common Cauchy
+estimate. `norm_scaled_response_difference_le` pays BOTH full integrated
+errors by C*(N+2)^3*sourceRate^N, sourceRate<249/250. The exact
+`separatedSymbol_factor` isolates the finite difference
+sum_p(K_j(s,p)-K_j(s+i*xi,p)) from the ordered tail over q>r, retaining
+rectangleOrders and total order N+1. `tendsto_separated_sub_current`
+connects this to the unchanged signed counts 3..55 minus short overflow
+3..13. No prime-phase approximation, zero hypothesis, composite-cofactor
+completion or dropped low order enters. See
+`docs/zeta-riesz-marked-separation.md`. The next open estimate is the joint
+Fourier pairing of this finite high-prime difference with the ordered
+cofactor response; neither its signed bound nor the complementary floor
+is proved. Keep the two frequencies and all factorial correlations.
+
+`ZetaRieszMarkedPrimeCompletion` now pays completion of ONLY the independent
+high marked prime to the full ordinary-prime difference P_j(s)-P_j(s+i*xi).
+`eventually_rough_support` proves every omitted prime lies below exp(N/110)
+or above exp(11N/8), including the polynomial head and actual physical
+upper cutoff. The exact rectangle and radii 2R / 5R/6 give
+`omitted_kernel_bound` with exp(-N/160), R=1/2-1/262144. Both marked
+Fourier zeros are retained; `completionPair_profile` and
+`norm_integral_completionPair_le` pay the ENTIRE frequency integral.
+`norm_scaled_errorResponse_le` bounds this error by C*(N+2)^3*sourceRate^N,
+sourceRate<249/250, uniformly in moving height. The exact
+`completedResponse_split` and terminal `tendsto_completed_sub_current`
+connect it to the UNCHANGED signed dyadic target. See
+`docs/zeta-riesz-marked-prime-completion.md`. The cofactor still retains
+q>r, its finite physical prime set, every middle order and the exact
+rectangle. No zero hypothesis, separate-leg phase transfer or composite
+completion enters. The joint signed completed-prime / ordered-cofactor
+integral and the complementary floor remain open. Do not drop the shifted
+frequency, mistake a completion-error bound for packet decay, or change
+the public frontier. Continue locally without subagents or unrequested
+commits; keep the running numerical refinement's inputs frozen.
+
+The user explicitly authorized committing and pushing this accumulated
+local batch on 2026-09-26. Publish all seven new arithmetic modules,
+their supporting `marked-prime-completion` explorer, Latest Update 81,
+and the completed-model diagnostic audit after the normal gates. Keep
+the whole-carrier default and zero-free/certificate claims unchanged.
+This authorization does not require restarting or waiting for the
+optional numerical refinement.
+
+The optional coupled `N=262144`, `48/160/256` model run completed with
+joined finite-quadrature value about +0.0001080270744329. All 15,360 rows
+and frozen sources were checked, and the full rule reassembled from its
+row archive. See `docs/riesz-owner-coupled-probe.json` and
+`docs/zeta-riesz-owner-integration-audit.md`. Its tiny internal evaluation
+enclosure is NOT an outer quadrature bound, prime-sum bound or asymptotic.
+The low-degree subset reweighting is an inconclusive sensitivity test,
+not a convergence certificate. A fresh `64/160/256` radial refinement is
+running at `.lake/riesz-owner-coupled-262144-64-160-256.json`, with log
+`/tmp/riesz-owner-coupled-262144-64-160-256.log`; keep all imported numerical
+sources frozen until it finishes. The completed `48/160/256` rows are
+durable evidence and must not be overwritten or reinterpreted as a prime
+calculation. These optional calculations stay out of ordinary CI.
+
 `docs/zeta-riesz-joint-prime-transfer.md` records independent arithmetic
 progress beyond the modal seam model. `ZetaRieszJointBoundary` joins the
 old packet with explicitly debited neighbors in its old rest. Keeping the
