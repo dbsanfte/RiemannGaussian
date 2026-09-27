@@ -1,0 +1,42 @@
+{
+  "scope": "uncertified prime-density model with equal base logarithms",
+  "rows": [
+    {
+      "N": 1024,
+      "moving_length": 1405.4957402429404,
+      "relative_density_mass": 0.04639015856678588,
+      "scaled_by_sqrt_N": 1.4844850741371483,
+      "quadrature_error_estimate_not_certified": 5.150342215685764e-16
+    },
+    {
+      "N": 4096,
+      "moving_length": 5660.806523549248,
+      "relative_density_mass": 0.042349988533158064,
+      "scaled_by_sqrt_N": 2.710399266122116,
+      "quadrature_error_estimate_not_certified": 4.701793236212344e-16
+    },
+    {
+      "N": 16384,
+      "moving_length": 22690.3619332951,
+      "relative_density_mass": 0.030331402513102398,
+      "scaled_by_sqrt_N": 3.882419521677107,
+      "quadrature_error_estimate_not_certified": 3.3674621439219617e-16
+    },
+    {
+      "N": 65536,
+      "moving_length": 90816.8999653742,
+      "relative_density_mass": 0.01602165246023139,
+      "scaled_by_sqrt_N": 4.1015430298192355,
+      "quadrature_error_estimate_not_certified": 1.424890789056488e-14
+    }
+  ],
+  "limitations": [
+    "The base is a log-share model, not three actual prime labels.",
+    "The inserted-prime density replacement is unproved.",
+    "Allocation and additional literal masks are omitted.",
+    "No roundoff enclosure or cofinal conclusion from samples.",
+    "A relative component bound is not an absolute source allowance.",
+    "The whole signed core complement remains unpaid."
+  ],
+  "source_sha256": "bb7513815f87f271abd1a6d9f8926e2c19e9336031fdadd172a7df6db8696a99"
+}

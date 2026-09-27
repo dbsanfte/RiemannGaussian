@@ -1,0 +1,389 @@
+{
+  "scope": "uncertified ordinary-prime-density diagnostic, not a signed prime-sum bound",
+  "proof_constant_diagnostics": [
+    {
+      "height": 54.0,
+      "h": 0.0018181818181818182,
+      "C": 0.11635528346628864,
+      "interval_constant": 0.0009082664629072665,
+      "supply_constant": 9.405994880950452e-15,
+      "triple_constant": 3801924.9172973055,
+      "eta_witness_approx": 3.5171071805932983e-11,
+      "note": "floating diagnostic, no certified eta or effective starting order"
+    },
+    {
+      "height": 1000.0,
+      "h": 9.99000999000999e-05,
+      "C": 0.006283185307179587,
+      "interval_constant": 4.994755527486415e-05,
+      "supply_constant": 6.180245565990474e-16,
+      "triple_constant": 3801924.9172973055,
+      "eta_witness_approx": 9.01542282574731e-12,
+      "note": "floating diagnostic, no certified eta or effective starting order"
+    },
+    {
+      "height": 1000000.0,
+      "h": 9.99999000001e-08,
+      "C": 6.283185307179587e-06,
+      "interval_constant": 4.999994750005534e-08,
+      "supply_constant": 6.249929845539744e-19,
+      "triple_constant": 3801924.9172973055,
+      "eta_witness_approx": 2.8669545325276096e-13,
+      "note": "floating diagnostic, no certified eta or effective starting order"
+    }
+  ],
+  "rows": [
+    {
+      "N": 65536,
+      "seed": 17,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 1e-05,
+      "moving_length_over_N": 1.3857559198818086,
+      "phase_translation": 0.07425203001752696,
+      "source_scaled_triple": [
+        1.2951735646877223e-12,
+        -1.5223599467032425e-12
+      ],
+      "source_scaled_supply": [
+        1.833056299703962e-09,
+        -3.6464440314759997e-10
+      ],
+      "model_triple_absolute_mass": 6.192453183714962e-11,
+      "absolute_mass_over_positive_supply": 0.03378212215694107,
+      "fraction_spent_on_negative_real": 0.0,
+      "half_supply_pays_model_mass": true
+    },
+    {
+      "N": 65536,
+      "seed": 17,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 3e-05,
+      "moving_length_over_N": 1.3857559198818086,
+      "phase_translation": 0.07425203001752696,
+      "source_scaled_triple": [
+        1.3998336007332078e-11,
+        -2.073241952728983e-11
+      ],
+      "source_scaled_supply": [
+        1.833056299703962e-09,
+        -3.6464440314759997e-10
+      ],
+      "model_triple_absolute_mass": 7.146624168686521e-10,
+      "absolute_mass_over_positive_supply": 0.3898747774326789,
+      "fraction_spent_on_negative_real": 0.0,
+      "half_supply_pays_model_mass": true
+    },
+    {
+      "N": 65536,
+      "seed": 17,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 0.0001,
+      "moving_length_over_N": 1.3857559198818086,
+      "phase_translation": 0.07425203001752696,
+      "source_scaled_triple": [
+        1.542818861264e-10,
+        -2.4177082599206463e-10
+      ],
+      "source_scaled_supply": [
+        1.833056299703962e-09,
+        -3.6464440314759997e-10
+      ],
+      "model_triple_absolute_mass": 8.156332658096195e-09,
+      "absolute_mass_over_positive_supply": 4.449581095470685,
+      "fraction_spent_on_negative_real": 0.0,
+      "half_supply_pays_model_mass": false
+    },
+    {
+      "N": 65536,
+      "seed": 17,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 0.001,
+      "moving_length_over_N": 1.3857559198818086,
+      "phase_translation": 0.07425203001752696,
+      "source_scaled_triple": [
+        1.551772711722941e-08,
+        -2.4399731644046812e-08
+      ],
+      "source_scaled_supply": [
+        1.833056299703962e-09,
+        -3.6464440314759997e-10
+      ],
+      "model_triple_absolute_mass": 8.175142118405413e-07,
+      "absolute_mass_over_positive_supply": 445.98423516646466,
+      "fraction_spent_on_negative_real": 0.0,
+      "half_supply_pays_model_mass": false
+    },
+    {
+      "N": 65536,
+      "seed": 29,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 1e-05,
+      "moving_length_over_N": 1.3857559198818086,
+      "phase_translation": 0.07425203001752696,
+      "source_scaled_triple": [
+        1.3447327445860159e-12,
+        -1.5032821804291455e-12
+      ],
+      "source_scaled_supply": [
+        1.8330562997492126e-09,
+        -3.6464440313895635e-10
+      ],
+      "model_triple_absolute_mass": 6.192286786811107e-11,
+      "absolute_mass_over_positive_supply": 0.03378121439946115,
+      "fraction_spent_on_negative_real": 0.0,
+      "half_supply_pays_model_mass": true
+    },
+    {
+      "N": 65536,
+      "seed": 29,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 3e-05,
+      "moving_length_over_N": 1.3857559198818086,
+      "phase_translation": 0.07425203001752696,
+      "source_scaled_triple": [
+        1.4026847166973612e-11,
+        -2.0691306857816458e-11
+      ],
+      "source_scaled_supply": [
+        1.8330562997492126e-09,
+        -3.6464440313895635e-10
+      ],
+      "model_triple_absolute_mass": 7.147223162975622e-10,
+      "absolute_mass_over_positive_supply": 0.38990745477667327,
+      "fraction_spent_on_negative_real": 0.0,
+      "half_supply_pays_model_mass": true
+    },
+    {
+      "N": 65536,
+      "seed": 29,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 0.0001,
+      "moving_length_over_N": 1.3857559198818086,
+      "phase_translation": 0.07425203001752696,
+      "source_scaled_triple": [
+        1.5265329618407018e-10,
+        -2.4522318959097537e-10
+      ],
+      "source_scaled_supply": [
+        1.8330562997492126e-09,
+        -3.6464440313895635e-10
+      ],
+      "model_triple_absolute_mass": 8.157663765520076e-09,
+      "absolute_mass_over_positive_supply": 4.450307263686422,
+      "fraction_spent_on_negative_real": 0.0,
+      "half_supply_pays_model_mass": false
+    },
+    {
+      "N": 65536,
+      "seed": 29,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 0.001,
+      "moving_length_over_N": 1.3857559198818086,
+      "phase_translation": 0.07425203001752696,
+      "source_scaled_triple": [
+        1.570338395970869e-08,
+        -2.4500227101465224e-08
+      ],
+      "source_scaled_supply": [
+        1.8330562997492126e-09,
+        -3.6464440313895635e-10
+      ],
+      "model_triple_absolute_mass": 8.178636259010412e-07,
+      "absolute_mass_over_positive_supply": 446.17485344718335,
+      "fraction_spent_on_negative_real": 0.0,
+      "half_supply_pays_model_mass": false
+    },
+    {
+      "N": 262144,
+      "seed": 17,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 1e-05,
+      "moving_length_over_N": 1.3859991818105633,
+      "phase_translation": 0.00611991144563204,
+      "source_scaled_triple": [
+        -2.3216762269926436e-05,
+        0.0004894426636100962
+      ],
+      "source_scaled_supply": [
+        0.3178621632661895,
+        -0.06323137240635197
+      ],
+      "model_triple_absolute_mass": 0.013887447409684608,
+      "absolute_mass_over_positive_supply": 0.04369015571713311,
+      "fraction_spent_on_negative_real": 7.304034563712404e-05,
+      "half_supply_pays_model_mass": true
+    },
+    {
+      "N": 262144,
+      "seed": 17,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 3e-05,
+      "moving_length_over_N": 1.3859991818105633,
+      "phase_translation": 0.00611991144563204,
+      "source_scaled_triple": [
+        -0.00018999746742046867,
+        0.004444165581488065
+      ],
+      "source_scaled_supply": [
+        0.3178621632661895,
+        -0.06323137240635197
+      ],
+      "model_triple_absolute_mass": 0.1267568332178737,
+      "absolute_mass_over_positive_supply": 0.3987792441710744,
+      "fraction_spent_on_negative_real": 0.0005977354003639552,
+      "half_supply_pays_model_mass": true
+    },
+    {
+      "N": 262144,
+      "seed": 17,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 0.0001,
+      "moving_length_over_N": 1.3859991818105633,
+      "phase_translation": 0.00611991144563204,
+      "source_scaled_triple": [
+        -0.001570799375852545,
+        0.05005207037732718
+      ],
+      "source_scaled_supply": [
+        0.3178621632661895,
+        -0.06323137240635197
+      ],
+      "model_triple_absolute_mass": 1.4103326611095879,
+      "absolute_mass_over_positive_supply": 4.4369315511406855,
+      "fraction_spent_on_negative_real": 0.004941762680124654,
+      "half_supply_pays_model_mass": false
+    },
+    {
+      "N": 262144,
+      "seed": 17,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 0.001,
+      "moving_length_over_N": 1.3859991818105633,
+      "phase_translation": 0.00611991144563204,
+      "source_scaled_triple": [
+        -0.15494105249366633,
+        5.002470015534512
+      ],
+      "source_scaled_supply": [
+        0.3178621632661895,
+        -0.06323137240635197
+      ],
+      "model_triple_absolute_mass": 141.09081171815697,
+      "absolute_mass_over_positive_supply": 443.87419461435655,
+      "fraction_spent_on_negative_real": 0.4874472976008566,
+      "half_supply_pays_model_mass": false
+    },
+    {
+      "N": 262144,
+      "seed": 29,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 1e-05,
+      "moving_length_over_N": 1.3859991818105633,
+      "phase_translation": 0.00611991144563204,
+      "source_scaled_triple": [
+        -2.212958005980901e-05,
+        0.000488705185784599
+      ],
+      "source_scaled_supply": [
+        0.3178621632675045,
+        -0.06323137240538122
+      ],
+      "model_triple_absolute_mass": 0.013886012044279483,
+      "absolute_mass_over_positive_supply": 0.04368564003194485,
+      "fraction_spent_on_negative_real": 6.962005113262045e-05,
+      "half_supply_pays_model_mass": true
+    },
+    {
+      "N": 262144,
+      "seed": 29,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 3e-05,
+      "moving_length_over_N": 1.3859991818105633,
+      "phase_translation": 0.00611991144563204,
+      "source_scaled_triple": [
+        -0.00011781124836089239,
+        0.004459884783591594
+      ],
+      "source_scaled_supply": [
+        0.3178621632675045,
+        -0.06323137240538122
+      ],
+      "model_triple_absolute_mass": 0.126767167838989,
+      "absolute_mass_over_positive_supply": 0.3988117570706428,
+      "fraction_spent_on_negative_real": 0.00037063627564173316,
+      "half_supply_pays_model_mass": true
+    },
+    {
+      "N": 262144,
+      "seed": 29,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 0.0001,
+      "moving_length_over_N": 1.3859991818105633,
+      "phase_translation": 0.00611991144563204,
+      "source_scaled_triple": [
+        -0.0015771106221776116,
+        0.05031325422928885
+      ],
+      "source_scaled_supply": [
+        0.3178621632675045,
+        -0.06323137240538122
+      ],
+      "model_triple_absolute_mass": 1.411136465551193,
+      "absolute_mass_over_positive_supply": 4.4394603341436945,
+      "fraction_spent_on_negative_real": 0.004961617972914746,
+      "half_supply_pays_model_mass": false
+    },
+    {
+      "N": 262144,
+      "seed": 29,
+      "samples_per_family": 65536,
+      "height": 54.0,
+      "eta": 0.001,
+      "moving_length_over_N": 1.3859991818105633,
+      "phase_translation": 0.00611991144563204,
+      "source_scaled_triple": [
+        -0.16907911115801733,
+        4.994297263594305
+      ],
+      "source_scaled_supply": [
+        0.3178621632675045,
+        -0.06323137240538122
+      ],
+      "model_triple_absolute_mass": 141.1252604737103,
+      "absolute_mass_over_positive_supply": 443.9825710081227,
+      "fraction_spent_on_negative_real": 0.5319258807652573,
+      "half_supply_pays_model_mass": false
+    }
+  ],
+  "source_sha256": {
+    "probe_riesz_band_compensation.py": "9e054d04dff6df2485ace415af32e3b26e52d9586a1eb2358235d3c6e3766369",
+    "probe_riesz_quadruple_compensation.py": "186afedc9c86032c19684f0438a8b72be2ed7ada8c877786d1913d8cacf9752d",
+    "probe_riesz_joint_core.py": "90ae1214f37cb083d729044bc41adf672dbcc55ff033fa8ee50704fc15ba95ae"
+  },
+  "limitations": [
+    "Prime measures are replaced by densities without a transport theorem.",
+    "Allocation and further arithmetic eligibility tests are omitted.",
+    "Only the total-log interval [2N,2N+1] of the triple band is covered.",
+    "The supply translation changes the phase but retains the factorial radial weight.",
+    "Height 54 is a sample height, not an asserted zero ordinate.",
+    "Sobol estimates have no certified integration error.",
+    "Floating proof constants do not give an evaluated Lean starting index.",
+    "Neither component is asserted small after source normalization.",
+    "The rest of the core, including its unused positive credit, stays open."
+  ]
+}

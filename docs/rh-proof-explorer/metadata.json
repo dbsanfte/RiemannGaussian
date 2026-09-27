@@ -12,21 +12,21 @@
   "campaign": {
     "direction": {
       "branch": "riesz-harmonic-cost",
-      "statement": "The harmonic-cost route retains its exact source and an open independent -3/40 floor. The selected signed packet is now source-equivalent to a complete marked-prime difference coupled to a finite ordered least-prime Euler tail, with the original factorial rectangle and both Fourier frequencies intact. The completion and separation errors decay independently. The joint signed integral and complementary carrier remain open.",
-      "changeReason": "Independent integrated bounds now pay the nonlinear Euler correction and the marked-prime separation and completion. This legally isolates one complete prime difference without completing the ordered cofactor or imposing a phase limit after a hard mask."
+      "statement": "Work directly on a cofinal signed floor for J+C, retaining the original arithmetic weights and all complementary counts. On 1/2<u<=0.50005, an independent -79/1000-o(1) floor would contradict the proved simple exposed-zero source. Actual positive four-prime supplies now pay selected triple populations. The remaining signed complement is open; separate decay of J and C is unnecessary.",
+      "changeReason": "The direct joint-floor theorem avoids unnecessary separate packet bounds. Actual disjoint four-prime supplies now pay balanced and small-prime triple populations while retaining positive credits, original weights and the complete signed complement."
     },
     "latestUpdate": {
-      "sequence": 81,
-      "id": "paid-marked-prime-completion",
+      "sequence": 82,
+      "id": "joint-floor-arithmetic-compensation",
       "kind": "theorem",
-      "title": "Proved geometric bounds for the Euler correction and marked-prime completion.",
-      "body": "Lean now pays the exponential prime head, nonlinear Euler correction, Fourier exteriors, and the high marked prime\u2019s ordering and completion errors. The full integrated errors decay at source scale with a checked geometric rate below 249/250. The resulting complete prime difference stays coupled to the literal ordered cofactor and exact factorial rectangle.",
-      "next": "Bound that joint signed Fourier integral, then the complementary carrier. The independent -3/40 floor and zero exclusion remain open.",
+      "title": "Joint signed compensation pays balanced and small-prime triples.",
+      "body": "Lean now pays a fixed balanced triple band and every original triple containing a prime <=N^2 from one actual four-prime supply, retaining both positive triple credits and at least a quarter of that supply. The accumulated slice also proves sharper four- and five-prime debit inequalities, independent count/allocation/radial reductions, and audits unsuccessful bounds. Only a geometric radial-edge error is charged.",
+      "next": "Control the remaining signed complement and unused credits at -79/1000-o(1). The independent whole-core floor, restricted zero exclusion and RH remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszMarkedPrimeCompletionTheorem"
+        "rieszSmallPrimeCompensationTheorem"
       ],
-      "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+      "documentation": "docs/zeta-riesz-small-prime-compensation.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -84,6 +84,36 @@
         "rieszMarkedPrimeCompletionScope"
       ],
       "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    {
+      "id": "joint-cofinal-floor",
+      "label": "Conditional joint endgame \u00b7 cofinal -79/1000 floor still open",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointCofinalFloorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszJointCofinalFloorScope"
+      ],
+      "documentation": "docs/zeta-riesz-joint-floor.md"
+    },
+    {
+      "id": "joint-triple-compensation",
+      "label": "Actual joint credit \u00b7 balanced and small-prime triples paid",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmallPrimeCompensationTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSmallPrimeCompensationScope"
+      ],
+      "documentation": "docs/zeta-riesz-small-prime-compensation.md"
     },
     {
       "id": "ordered-euler-completion",

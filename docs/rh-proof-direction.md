@@ -1,5 +1,17 @@
 # Current RH proof direction
 
+The current arithmetic objective is the [direct cofinal joint floor](zeta-riesz-joint-floor.md)
+for `J+C`, with sufficient threshold `-79/1000-o(1)` on
+`1/2<u<=10001/20000`. Separate packet and complement decay is unnecessary.
+The [latest component inequality](zeta-riesz-small-prime-compensation.md)
+pays a fixed balanced triple band and every original triple containing a
+prime at most `N^2`, using one actual four-prime supply with unused credit
+retained. The rest stays signed, with exact four- and five-prime debit
+refinements. The whole-core floor is still open. The older `-3/40` criterion
+and all unsuccessful transfer audits below remain valid; they are not the
+minimal current joint target.
+
+
 [Open the current proof explorer](https://dbsanfte.github.io/RiemannGaussian/rh-proof/).
 Its default follows the **harmonic-cost route** and ends at
 [`tendsto_nondominant_exact_source`](../RiemannGaussian/ZetaRieszNondominantCarrier.lean).

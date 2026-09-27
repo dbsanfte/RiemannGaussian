@@ -1602,6 +1602,499 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+The user's latest minimal-endgame instruction (2026-09-26) takes precedence
+over component-decay plans: directly target a cofinal floor for the JOINT
+sum and its signed complement. Separate smallness of either is unnecessary.
+`ZetaRieszJointFloor` now connects the existing expression
+`lowerThresholdPacket - shortOverflowPacket + ZetaRieszLeastBoundary.rest`
+to the retained source using only the already paid errors. No new carrier
+is defined. For `1/2<u<=10001/20000`, `retainedCost_lt_restricted` proves
+`retainedCost u<921/1000`. `false_of_joint_cofinal_floor` therefore needs
+only a cofinal source-normalized real floor `-79/1000-err_j`, where
+`err_j->0`, for the WHOLE displayed expression. Neither individual limit,
+individual norm estimate, nor separate rest allowance is a prerequisite.
+This is a checked sufficient criterion with an OPEN arithmetic premise,
+not an independent joint floor or new zero exclusion. See
+`docs/zeta-riesz-joint-floor.md`. Numerical packet-only values do not test
+this joint criterion unless the same signed complement is included.
+The packet selection cancels exactly against its complementary fraction
+in `fullPacket+rest=coreResponse`. Do not require solving those artificial
+rectangle/share projections as a prerequisite for a direct core floor.
+The original core masks and `1-boundedShare` remain, and the full joint sum
+is NOT restricted to the packet's count ceiling 55.
+
+`ZetaRieszJointAllocationFloor.re_core_ge_joint_unallocated` now gives a
+direct one-sided comparison for the WHOLE core, retaining its complement
+inside the same real observation. On any selected core subband where every
+eligible prime has log share at most `9/16`, it pays removal of the old
+allocated coefficient by
+`4*U*(N+1)*allocationBoxRate^N*majorantMass(1+1/262144)`.
+The existing rate is strictly below one (approximately `0.9991080225`).
+The whole original logarithmic window supplies the bound `omega(n)<=4N`;
+there is no fixed count ceiling, least-share mask or rectangle restriction.
+The bound is uniform in all real heights and has no zero hypothesis.
+`tendsto_allowance` proves this explicit error vanishes. The surviving raw
+Riesz sum and the unchanged complementary core still need a JOINT signed
+floor. Do not interpret the comparison inequality as that floor, delete its
+complement, or reopen an absolute rest allowance. See
+`docs/zeta-riesz-joint-allocation-floor.md`.
+
+`ZetaRieszJointDominantFloor` now lowers the independently paid dominant-prime
+threshold from `13/20` to `121/200` on the restricted radius interval.
+`norm_scaled_sum_le` bounds the actual normalized residual sum on ANY
+eligible finite subband above that share by
+`2*majorantMass(1+1/262144)*exp(-N/8000)` for N>=320, uniformly in real
+height and all prime counts. The rational tilt `21/20` pays the upper
+missing allocation tail; the lower tail retains the physical prime cutoff
+and its already proved `exp(-N/2000)` bound. `re_core_ge_without_large`
+is a direct lower comparison for the WHOLE core, retaining its entire
+signed complement inside one observation. `remaining_prime_log_lt` proves
+on the original cofinal schedule that every prime in a nonzero remaining
+atom has log share strictly below `121/200`; its eligibility is discharged
+from the actual masks. The error tends to zero, but its finite majorant
+constant is unevaluated. The raw signed Riesz sum below `9/16` and the
+allocation transition `9/16..121/200` remain unbounded. The joint cofinal
+floor and zero exclusion remain OPEN. See
+`docs/zeta-riesz-joint-dominant-floor.md`. Continue locally without commits
+or subagents; do not replace this complement by the divergent allowance.
+
+The concrete refined tilts in `ZetaRieszJointAllocationFloor.Refined` and
+`ZetaRieszJointDominantFloor.Refined` now improve both allocation endpoints.
+Removal of the assigned part is paid up to prime share `293/500 = 0.586`
+by `4*U*(N+1)*r^N*majorantMass`, with
+`r=U*(262144/131071)*exp(-1/8200)<=exp(-1/100000)`.
+The actual residual sum above `601/1000 = 0.601` is independently bounded
+by `2*majorantMass*exp(-N/1000000)`. The old faster estimates at their old
+endpoints remain intact. All original phases, physical masks and arbitrary
+counts are retained. `Refined.remaining_prime_log_lt` proves the new
+endpoint for every prime in a nonzero remaining atom on the original schedule.
+`Refined.re_core_ge_joint_reduced` combines both comparisons into ONE signed
+core inequality, with both allowances tending to zero. The allocation
+transition is now `0.586..0.601`; the raw Riesz sum below it and the signed
+transition itself remain unbounded. This is not a tail-wide or zero-free bound.
+`fifty_nine_percent_all_tilts_grow` and `sixty_percent_all_tilts_grow` prove
+at the upper radius that EVERY positive scalar tilt has positive normalized
+log rate at 59% and 60% shares. Do not keep searching for another tilt to
+cover that gap using the same envelope. This does not obstruct a joint
+signed estimate or establish growth of the actual tails.
+The optional `scripts/probe_riesz_joint_tilts.py` and
+`docs/riesz-joint-tilt-probe.json` contain uncertified scalar diagnostics;
+the Lean rational endpoints and all-tilt inequalities are the proofs.
+The whole joint cofinal floor remains open, with no new carrier definition,
+zero exclusion, publication or subagent work in this local slice.
+
+`ZetaRieszJointPhaseCredit` audits the positive observations of the SAME
+core. `eventually_positive_credit_growth` proves their normalized sum is
+at least `k*(2u)^N/(N+1)^4` eventually, k>0, at EVERY fixed real height,
+using actual balanced prime boxes and all original support/allocation masks.
+`positive_credit_tendsto_atTop` and `clipping_loss_tendsto_atTop` prove
+divergence of this specific information loss. This is not the old absolute
+antichain allowance, and it is NOT a free positive reserve: the signed
+complement remains. `SignedCompensationBounds.re_sum_ge_compensation_keep_positive`
+now improves the earlier all-phase clipped bound to
+`sum (log n/L)*((g-S)*x-e*max(x,0))`, with
+`e=max(0,log(r)-max(0,L-log(P)))`. The unit tent equals g-e exactly; the
+new inequality retains positive unit credit, with no absolute cosine.
+Pair separation is still required, and its complement remains unpaid.
+`least_log_reflected_margin` and `rising_edge_zero_of_seven` show e=0 for
+counts >=7 after log(P)<=121log(n)/200, log(n)<=203N/100 and L>=137N/100;
+the last length bound is available eventually at the restricted radius.
+Only this unit-edge defect is confined to counts 3..6, not the entire
+signed obstruction. Net compensation, pair-separation failures and the
+joint cofinal floor remain OPEN. See `docs/zeta-riesz-joint-phase-credit.md`.
+`ZetaRieszJointEdgeLoss` now turns the scalar slopes
+`(log r,log a,log P)=(0.42,0.46,1.12)*N` into an actual-prime audit.
+`eventually_edge_loss_growth` proves the source-normalized THREE-PRIME
+rising-edge clipping loss is at least `k*(2u)^N/(N+1)^4` eventually, k>0, for every
+fixed NONZERO height and the restricted radius interval. The proof uses
+three disjoint fixed-width prime intervals and a bounded phase translation;
+it retains the exact original core, physical, count and allocation masks.
+The edge is at least N/10, all shares are below 9/16, and at least half the
+unassigned fraction survives eventually. `edge_loss_tendsto_atTop` rules
+out a bounded or cofinally bounded allowance for this specific deletion.
+`SignedCompensationBounds.re_atom_sub_compensation_keep_positive` identifies
+the exact loss as `(log n/L)*e*max(-x,0)` on the stated compensation support.
+`edge_charged_core_tendsto_atBot` then shows that the normalized core minus
+just this three-prime loss tends to minus infinity under the existing
+exposed-zero source hypotheses. Even a cofinal constant floor for that
+comparison is therefore impossible; the unchanged actual core retains its
+original finite source. No simple-zero or new arithmetic-floor premise
+is inserted into this audit.
+This is a negative result about the comparison, NOT a signed-carrier floor
+or a proof that joint cancellation is impossible. Keep the rising edge's
+signed contribution, including counts 3..6. Do not try to pay this deletion
+by norm or a fixed allowance. The joint cofinal floor remains open; see
+`docs/zeta-riesz-joint-edge-loss.md`. No new carrier, commit or subagent.
+
+`ZetaRieszJointRadialFloor` now combines radial position and allocation
+before using the summable envelope. On `0<=u<=10001/20000`, it proves the
+actual residual sum above 60% eligible prime share is bounded by
+`2*majorantMass*exp(-N/400000)` for `N>=320`, provided
+`log n<=248N/125` or `252N/125<=log n`. The physical prime cutoff pays
+the lower missing allocation tail. The actual assigned part below 59%
+eligible prime share is bounded by
+`4*U*(N+1)*majorantMass*exp(-N/400000)`, provided
+`log n<=987N/500` or `507N/250<=log n`.
+This assigned-part estimate does NOT bound the surviving raw signed sum.
+`remaining_prime_log_lt_radial` discharges eligibility on the original
+cofinal schedule: every prime in a nonzero remaining outer-radial atom
+has share below 60%. `norm_residual_union_le`, `norm_assigned_union_le`
+and `re_core_ge_joint_reduced` retain the old 60.1% / 58.6% regions and
+combine both new paid regions into ONE signed inequality for the whole core.
+`tendsto_joint_allowance` proves its explicit total error vanishes.
+All counts, phases and original masks remain; no carrier is introduced.
+The earlier all-tilt obstructions at 59% / 60% still apply to the share-only
+envelope at the central saddle. They do not forbid these additional
+radial savings. Do not claim the central signed transition, raw balanced
+triples or joint cofinal floor is bounded. The finite majorant constant
+is unevaluated and no numerical order threshold is claimed. See
+`docs/zeta-riesz-joint-radial-floor.md`; the optional
+`scripts/probe_riesz_joint_radial.py` output is uncertified scalar
+exploration, not a prime-sum certificate. No new zero exclusion, publication,
+commit or subagent work is authorized by this local slice.
+
+`ZetaRieszJointTailAudit` strengthens the central scalar no-go without
+introducing another carrier. For `N=32m`, `m>=10`, at `U=10001/20000`,
+the actual assigned binomial mass at cofactor share `41/100`, multiplied
+by `(2U)^(N+1)`, is at least `(1001/1000)^m/(3(N+1))`. The actual missing
+mass at cofactor share `2/5` is at least `(2001/2000)^m/(3(N+1))` under
+the same scaling. Both diverge on the original dyadic moment schedule;
+both literal unpaid-order endpoints are retained. The proof uses a modal
+atom lower bound and exact rational likelihood ratios, not a Chernoff
+upper envelope or floating evidence. Thus changing the scalar tilt or
+waiting for a favorable subsequence cannot make these particular central
+tails small at the upper radius. This is NOT a lower bound or divergence
+theorem for an actual prime population or signed carrier, and it does not
+negate the already paid outer radial regions. Keep the central weights
+coupled in the direct signed floor. No new independent floor, zero
+exclusion or publication follows. See `docs/zeta-riesz-joint-tail-audit.md`;
+`scripts/probe_riesz_joint_tails.py` is optional and its generated JSON is
+an uncertified scalar diagnostic. No commits or subagents in this slice.
+
+`ZetaRieszJointCountFloor` independently pays a larger part of the actual
+integer response: replace the count endpoint `K_j=dyadicPrimeCount j` by
+`K'_j=dyadicPrimeCount (j-9)=K_j/512` on the SAME moment schedule. Eventually,
+every selected original-band residual sum with `omega(n)>=K'_j` has
+source-normalized norm at most `32*U*log(2)*N_j*(49999/50000)^N_j`, uniformly
+over all real heights and `0<=u<=U=10001/20000`. The Euler mass is paid,
+not assumed. Its starting order remains unevaluated; `j>=64` is only the
+count-power certificate threshold. The exact `coreBand_count_filter`
+and `coreResponse_sub_count` retain all original masks and allocation.
+`eventually_re_core_ge_smaller_count` gives a direct signed lower comparison,
+and `tendsto_joint_sub_smaller_count` transfers the original joint target
+through independently vanishing errors. No component floor is required.
+The retained small-prime divisors (all primes <=N_j^2) now have
+`log(a)<=N_j/2048`; this support restriction does not delete their phase.
+The count endpoint still grows, so every fixed class remains eventually:
+do not treat this as a fixed 39/55-count cap or a balanced-triple deletion.
+The existing radial/allocation comparisons still apply at the new endpoint.
+The raw low-count signed sum, central transition and joint cofinal floor
+remain OPEN. See `docs/zeta-riesz-joint-count-floor.md`; the optional
+`scripts/probe_riesz_joint_counts.py` records scalar diagnostics only.
+No new carrier, zero exclusion, commit or subagent work in this slice.
+
+`ZetaRieszJointSmoothFloor` uses that tighter count budget to prove exact
+cancellation on every remaining label `n=p*q*a` with p,q prime and a
+composite N_j^2-smooth factor. Below the paid 60.1% prime-share endpoint,
+the N_j/2048 bound forces `log(pa),log(qa)<=L<=log(pq)` throughout the
+core once the existing `L>=5N_j/4` bound holds. In the four-term prime
+insertion identity, three small-factor cutoffs are saturated and the
+fourth is nonpositive. All vanish, so the actual coefficient and its
+allocated/residual multiples vanish. `sum_without_two_primes_composite` deletes
+this exact zero class with arbitrary complex observations and inherited
+masks retained. `eventually_re_core_ge_without_large_and_composites`
+gives a direct signed lower comparison for the WHOLE original core, with
+only the already paid count and 60.1% deletion allowances; their sum
+tends to zero. The cancellation adds no error. It remains valid on
+further selections, including the radial reductions. The composite
+condition is essential: prime a leaves a nonzero logarithmic moment.
+Balanced triples, three-or-more-large-prime labels and the central signed
+transition remain unbounded. The independent JOINT floor stays OPEN.
+See `docs/zeta-riesz-joint-smooth-floor.md`. No new carrier, zero exclusion,
+commit or subagent work in this local slice.
+
+`ZetaRieszJointQuintupleFloor` now gives an actual signed coefficient
+bound for retained labels `n=p*q*r*a*b` with all five factors prime and
+`a,b<=N_j^2`. From the same count/window/share masks and the proved
+eventual `L>=137N_j/100`, only three pair-boundary responses survive.
+They are nonnegative two-prime tents, and the literal radial gap excludes
+three simultaneously active tents. `five_residual_bounds_core` proves
+`-(log(n)/L)*(1-boundedShare)*2*min(log(a),log(b)) <= residual.re <= 0`.
+No largest-prime ordering, sqrt(n) owner condition or unpaid pair-separation
+test is required. `re_five_residual_nonneg_core` proves a nonnegative
+observed atom when its FULL observation has nonpositive real part;
+the opposite phase sector and signed complement remain unpaid. This
+opposing arithmetic sign is NOT a population comparison, free reserve,
+source-scale decay or independent whole-core floor. Do not discard either
+phase sector. The exact rational-log probe and `three_pair_tents_sharp`
+check that the two-tent scalar cost is attainable in the real-logarithm
+model; they do not assert rational shares are actual prime logarithms.
+See `docs/zeta-riesz-joint-quintuple-floor.md`. The shared
+`JointSmoothFloor.reduced_core_geometry` only exposes the already proved
+support tests and is used by both literal inequalities. No new carrier,
+zero exclusion, commit or subagent work in this local slice.
+
+`ZetaRieszSmallDescendants` quantitatively audits appending small factors
+to the surviving balanced triples. With large logs <=27N/40, total log
+>=2N, L in [137N/100,7N/5] and log(a)<=N/2048, all three pair cutoffs
+saturate. For squarefree p*q*r*a and a>1 the actual Riesz response
+reduces to log(a) if a is prime and zero otherwise. Thus all composite
+small-factor descendants, including the previous five-prime candidates,
+vanish on this interior chamber. The previous five-prime bound still
+applies near its pair boundaries. Exact kernel transport and the harmonic
+sum bound give a total descendant norm <=4log(N)(1+2log(N))*||K_N(pqr)||,
+with arbitrary selections and literal residual allocation retained.
+The base atom has norm >=N/4*||K_N(pqr)|| once half its allocation survives;
+that premise is supplied eventually by the existing balanced-allocation
+bound, and the existing actual prime boxes eventually lie in the chamber.
+The relative budget 16log(N)(1+2log(N))/N tends to zero and is <1/1000 on
+the original dyadic schedule for j>=32. This is NOT an absolute
+source-scale allowance. `re_balanced_descendants_upper` retains an arbitrary
+signed complement and proves that these descendants cannot cancel a
+fixed negative phase fraction of their own base atom, even with optimal
+descendant phases. It does not control cancellation across different
+large-prime configurations or prove divergence of the whole core. Do not
+continue appending small factors as the sole compensation strategy for
+these balanced triples. The independent JOINT floor remains OPEN.
+See `docs/zeta-riesz-small-descendants.md`; the optional floating prime
+insertion probe uses model base logarithms and is not a certification.
+No new carrier, source completion, commit or subagent work in this slice.
+
+`ZetaMultiplicativePhase.uniform_re_floor_iff_norm_bound` audits a possible
+accidental strengthening of the minimal endgame: a signed floor uniform
+over all complex coefficient families with fixed magnitude budgets is
+equivalent to a norm bound. A unit rotation of one family proves necessity
+without changing the correlated arithmetic matrix. The existing phase
+transport makes this equivalent to a zero-height norm bound, also at
+cofinally many orders (`cofinal_uniform_floor_iff_zero_height_bound`).
+The cofinal quantifier is outside the coefficient quantifiers on both
+sides. This does NOT apply to the one fixed arithmetic family: do not
+rotate the actual Möbius coefficients, discard their signs or strengthen
+the joint target to a coefficient-uniform assertion. No new carrier,
+component bound or independent joint floor is supplied by this audit.
+See `docs/zeta-riesz-joint-floor.md`. Keep public frontiers unchanged.
+
+`ZetaRieszCoreExtensions` strengthens the small-descendant audit to EVERY
+squarefree extension remaining in the core, with no `N^2` ceiling on the
+inserted prime. For base triple logs <=67N/100, total >=2N and
+137N/100<=L<=7N/5, the core upper endpoint forces log(a)<=3N/100.
+All pair cutoffs saturate, so composite extensions vanish exactly.
+Actual Chebyshev summation gives sum(log(p)/p)<=log(4)(1+x) up to log(p)<=x.
+Exact factorial curvature gives exp(-delta^2*N/24)/a on the larger head.
+With half the base allocation surviving, `relative_extensions_split`
+bounds the whole extension norm by
+12*(1/N+delta+(1/N+3/100)*exp(-delta^2*N/24))*||base||.
+`eventually_extensions_relative_small` proves this relative mass tends
+to zero uniformly in heights, selections and allocation sets.
+The scalar budget for delta=1/50000 is <1/1000 when N>=10^12, hence at
+dyadic index j>=32; geometric and allocation hypotheses are STILL required.
+The actual phase-audit prime boxes eventually lie in the sharper chamber.
+`joint_signed_bounds` and `joint_negative_block` preserve the entire signed
+complement. This is NOT source-normalized decay or a whole-core floor:
+different large-prime configurations can still interact. Do not continue
+appending arbitrary in-core factors to these fixed balanced triples as
+their sole compensation mechanism. See `docs/zeta-riesz-core-extensions.md`.
+The optional density probe is only motivation, not an arithmetic transport.
+Continue locally without commits or subagents; public frontiers unchanged.
+
+`ZetaRieszQuadrupleCompensation` proves actual cross-count signed
+compensation, following the core-extension obstruction. For every fixed
+nonzero height, one fixed-width balanced triple box near total log 2N has
+norm at most B/(N+1) times the positive real contribution of an explicitly
+selected four-prime population. Its two log-translation coordinates are
+balanced in the fourth leg. Unique factorization makes all grid labels
+distinct; actual fixed-width PNT lower counts and Chebyshev upper counts
+give the extra power of N. The four-prime coefficient is <=-N/20 and its
+selected cosine <=-1/2. Original allocation and every core mask remain;
+there is no zero hypothesis or signed prime-density transport.
+`eventually_core_spending` is the primary terminal theorem: with X the
+triple sum, Y the positive supply and W the untouched signed complement,
+theta=max(-Re X,0)/Re Y satisfies 0<=theta<=B/(N+1)<=1 eventually and the
+source-normalized core equals u^(N+1)*(Re W+max(Re X,0)+(1-theta)*Re Y).
+Keep ALL unused positive credit. The weaker pair-deletion theorem is not
+a floor for its complement and can discard an unbounded surplus. The
+relative spending cap tends to zero, NOT the source-normalized amount
+spent. Never spend the same supply twice. The theorem pays one box with
+fixed log width and bounded translation, NOT a whole N-wide share region.
+It provides no effective starting index. The whole joint cofinal floor
+remains OPEN; do not add a zero-free claim or update public frontiers.
+See `docs/zeta-riesz-quadruple-compensation.md`. Work locally without
+unrequested commits or subagents.
+
+`ZetaRieszFourPrimeFloor` gives an independent signed inequality for the
+WHOLE four-prime class, not just the compensating grid or reflected-linear
+class. For T=log n, P=largestPrime n and g=log P+T-2L, with 0<L<=T and
+2T<=3L, `actual_four_signed_gap` bounds Re(c_L(n)) between
+-(T/L)*max(0,-g) and (T/L)*max(0,g). Nonsquarefree coefficients remain zero.
+`coefficient_four_sign` is a WEAK sign theorem, not strict away from the
+transition; `coefficient_four_eq_zero_at_gap` proves exact vanishing at g=0.
+Reflection reduces a large P to a three-prime midpoint bound; otherwise
+only singleton divisors survive and the four-prime response is affine.
+The actual core eventually discharges the length hypotheses. Its moving
+threshold obeys (71/203)*T<=2L-T<=(17/39)*T; do not freeze T at 2N.
+`eventually_re_core_ge_four_credit` keeps the entire signed non-four-prime
+complement AND all actual positive four-prime credit, charging only
+weight*(T/L)*max(0,-g*cos(y*T)). It is uniform in height/count endpoint,
+without zero hypotheses. This debit is still UNPAID at source scale;
+the whole joint floor remains open. No new carrier is defined.
+The optional rough-sector density capacity probe suggests four-prime
+favorable mass alone is insufficient for the whole triple class and that
+five-prime contributions are substantial. It is not an arithmetic no-go:
+it omits small prime factors, counts above nine and phase/radial transport.
+See `docs/zeta-riesz-four-prime-floor.md`. Preserve every existing positive
+credit and do not spend the same supply twice. Public frontiers unchanged;
+continue locally without unrequested commits or subagents.
+
+`ZetaRieszFivePrimeFloor` proves the candidate five-prime inequality for
+ALL actual labels with five distinct prime factors, including small primes
+and nonsquarefree labels (whose coefficient is zero). For T=log n,
+P=largestPrime n, Q=largestPrime(n/P), 0<L and 2T/3<=L<=3T/4, the upper
+coefficient bound is (T/L)*max(0,min(2logP+T-3L,logP-logQ+T-2L)). Its
+stronger `actual_five_upper_clipped` caps that allowance by 3log(minFac n),
+reusing the existing two-smallest-prime antichain bound. The actual core
+eventually satisfies every length hypothesis. `positive_five_core_geometry`
+proves positive coefficients require logP>(104/203)T AND
+logP-logQ>(71/203)T. These are NECESSARY conditions, not converse signs.
+Balanced five-prime labels are favorable on negative-cosine observations;
+no sufficient cross-count population mass is inferred from that fact.
+`eventually_re_core_ge_four_five_credit` places the four-prime gap and the
+clipped five-prime upper bound into the SAME original core sum, uniformly
+in height/count endpoint. It keeps all actual positive observations in
+those classes and leaves positive-cosine five-prime terms and every other
+count SIGNED. It does not complete any cofactor or spend compensation.
+The combined debit is still UNPAID at source scale. The sufficient target
+remains a cofinal joint -79/1000-o(1) floor; no new zero exclusion follows.
+The optional density probe compares the gap and least-prime costs, but
+does not control prime-density transport, missing small primes, higher
+counts or radial/phase errors. See `docs/zeta-riesz-five-prime-floor.md`.
+Keep the public frontiers unchanged; work locally without unrequested
+commits or subagents.
+
+`ZetaRieszBandCompensation` widens the paid balanced triple population:
+for each fixed nonzero height there is a fixed eta>0 such that ALL original
+core triples with 2N<=log n<=2N+1 and |log p-2N/3|<=eta*N for every prime
+factor have norm at most HALF a positive four-prime supply, eventually.
+Its three disjoint prime-log grid coordinates retain total log 2N+v+O(h).
+Actual unsigned prime lower counts give supply >=c*exp(2N)/(N+1);
+Chebyshev upper counts give a quadratic eta^2 cost for the entire triple
+band, at the same rate. No zero premise or signed density transport is used.
+The original coefficient, allocation, phase and every core mask remain.
+`eventually_core_tripleBand_nonempty` proves this actual selection nonempty.
+`eventually_core_band_spending` retains theta<=1/2, all positive triple
+credit, (1-theta)Re Y and the complete SIGNED complement W exactly.
+`eventually_core_band_floor` directly bounds the normalized core below by
+u^(N+1)*(Re W+max(Re X,0)+Re Y/2). This is NOT a numerical whole-core floor.
+The proof selects SOME conservative eta, not every eta<=1/1000; its
+total-log interval has width ONE, not the whole radial core. No effective
+starting order or source-normalized decay of the spent mass is proved.
+The new supply OVERLAPS the old two-dimensional supply; do not spend both
+as independent budgets. Keep the untouched signed remainder and unused
+positive credit together. The optional density probe and floating witness
+evaluation are not certificates. See `docs/zeta-riesz-band-compensation.md`.
+The cofinal JOINT -79/1000-o(1) floor remains OPEN. Keep public frontiers
+unchanged; continue locally without unrequested commits or subagents.
+
+`ZetaRieszRadialCompensation` pays a fixed positive balanced triple share
+band throughout the ORIGINAL radial core. For each fixed |y|>=16, one
+eta>0 is chosen; the band is |log p-log n/3|<=eta*N/4 for every factor.
+`eventually_core_balanced_nonempty` proves the actual band nonempty.
+The radial index M varies, but the factorial moment remains N. Actual
+triple slabs 2M<=log n<2M+2 are compared with negative-coefficient,
+negative-cosine four-prime supplies in (2M,2M+1]. Their radial index set
+keeps each supply inside the original core. `supply_disjoint` and
+`union_spending` prevent any repeated capacity. The fixed width pays at
+most half the union's actual positive contribution. All original masks,
+allocation, phase and moving length remain; there is no zero assumption,
+signed density transport or source completion. The height condition is
+available for hypothetical right-half zeros from the existing >54 theorem.
+`balanced_mem_radialTriples` covers ALL such balanced labels between
+1.952N and 2.029N. `exists_missed_bound` independently bounds the remaining
+balanced edge labels by C*r^N, r<1, at source scale, uniformly in height
+and selection. `tendsto_edge_allowance` proves decay on the actual schedule.
+`eventually_core_balanced_floor` retains the SIGNED complementary sum W,
+positive triple credit and at least HALF the positive supply in one
+core lower bound, minus only that geometric error. The width is SOME
+conservative fixed eta, not every eta<=1/1000. No finite threshold is
+certified. This does not cover all balanced configurations or all counts.
+The old/new supplies OVERLAP; never add their credits independently.
+The full cofinal JOINT -79/1000-o(1) floor is still OPEN. Numerical density
+ratios do not certify arithmetic transport or widths. See
+`docs/zeta-riesz-radial-compensation.md`. Keep public frontiers unchanged;
+continue locally without unrequested commits or subagents.
+
+`ZetaRieszFourPrimeReserve` now evaluates the negative coefficient of the
+ENTIRE four-prime class exactly. For squarefree n, T=log n, D=T-L,
+F=3L-2T-sum_p max(0,log p-D), 0<L<=T and 2T<=3L,
+`negativeAllowance_eq` proves max(0,-Re c_L(n))=(T/L)*max(0,F).
+Nonsquarefree allowances and coefficients are zero. The clipped-log
+identity keeps all subset cancellations and all prime-log excesses;
+do not estimate its pair hinges separately. `negativeAllowance_le_gap`
+and `fourDebit_le_gap` prove improvement over the previous largest-prime
+bound pointwise, with the original moving length and phase.
+`re_four_atom_eq_keep_positive` is exact on nonnegative cosines.
+`eventually_re_core_ge_four_five_credit` keeps the sharper debit, the
+existing clipped five-prime bound and the full signed complement together.
+`eventually_compensated_core_floor` applies that comparison ONLY outside
+the radial triple band and its positive supply. It keeps positive triple
+credit and HALF the supply, with only the existing geometric edge error;
+never spend or debit that supply again. Its full complementary signed
+expression still needs a numerical floor. No whole joint floor or zero
+exclusion is proved. The optional density probe shows a smaller modeled
+negative allowance but supplies no prime/radial/phase transport or bound
+for omitted counts. See `docs/zeta-riesz-four-prime-reserve.md`. Preserve
+public frontiers; continue locally without unrequested commits or subagents.
+
+`ZetaRieszFivePrimeReserve` evaluates the POSITIVE five-prime coefficient
+exactly. For squarefree n with five factors, T=log n, P=largestPrime n,
+d=L-log P, and 2T/3<=L<=3T/4, `positiveAllowance_eq` proves
+max(0,Re c_L(n))=(T/L)*max(0,2logP+T-3L-sum_(q != P) max(0,log q-d)).
+Nonsquarefree coefficients and allowances are zero. Reflection and actual
+largest-prime deletion reduce the live chamber to the four-prime clipped
+theorem; saturated and zero chambers are handled exactly without completion.
+`positiveAllowance_le_clipped` and `five_floor_improves_clipped` prove
+pointwise improvement over the old two-gap/least-prime allowance.
+`re_five_atom_eq_keep_positive` reconstructs the original negative-cosine
+five-prime atom exactly from its full positive credit and this debit.
+`eventually_compensated_core_floor` keeps the paid balanced triple band,
+half its four-prime supply and the comparison on the UNTOUCHED complement.
+Never spend the supply twice. Four-prime positive-cosine and five-prime
+negative-cosine debits are exact; this is not a weighted population estimate
+or numerical whole-core floor. Other sectors and counts remain signed.
+The optional probe records a smaller modeled debit, without prime/radial/
+phase transport. A preliminary pair-hinge lower bound gave no observed
+improvement over the old joint comparison and was discarded before
+formalization. Do not revive it without a concrete stronger inequality.
+See `docs/zeta-riesz-five-prime-reserve.md`. The full joint -79/1000-o(1)
+target stays OPEN. Preserve public frontiers and work locally without
+unrequested commits or subagents.
+
+The user's latest restriction (2026-09-26) is binding: do not introduce
+another representation unless it immediately targets a provable signed
+inequality. Keep the existing carrier and correlated weights fixed. A
+model-only reformulation or inversion is not arithmetic progress. The
+unfinished synthetic Fourier-inversion exploration was moved outside the
+repository and is not an imported or proved module.
+
+`ZetaRieszSignedCompensationBounds` follows that restriction with inequalities
+for the existing coefficient and observations; it defines no new carrier.
+See `docs/zeta-riesz-signed-compensation-bounds.md`.
+`five_coefficient_bounds_core` proves the actual five-prime coefficient lies
+between `-(log n/L)*2*log r` and
+`(log n/L)*min(log r,max(0,log(P*r*a)-L))`, using the original core geometry.
+`coefficient_le_gap_sub_prime_tents` keeps every opposing prime tent on the
+right of a signed upper bound for arbitrary counts satisfying the explicit
+pair-separation test. `re_sum_ge_signed_compensation` gives a literal finite
+observed-sum lower bound in the negative-real phase sector. The stronger
+`re_sum_ge_compensation_all_phases` retains ALL observations: writing S for
+the opposing prime tents, g for the unit gap and x=Re(z), its lower bound is
+the sum of `(log n/L)*(g*min(x,0)-S*x)`. The term `-S*x` remains signed;
+no absolute cosine or separate norms replace it. Pair-separation failures
+and the source-normalized net signed compensation remain UNPAID. There is
+no whole-packet bound or new source-scale component decay.
+Do not treat this finite signed inequality as the missing cofinal floor or
+resume the divergent absolute rest allowance. Continue locally without
+subagents or unrequested commits; preserve the running probe's frozen inputs.
+
 ### Literal joint prime transfer (2026-09-25)
 
 The subsequent ordered-completion slice is recorded in
@@ -1742,6 +2235,102 @@ the whole-carrier default and zero-free/certificate claims unchanged.
 This authorization does not require restarting or waiting for the
 optional numerical refinement.
 
+The next local continuation is `ZetaRieszMarkedLogDerivative` and
+`ZetaRieszOrderedWard`; see `docs/zeta-riesz-marked-logarithm.md`.
+`tendsto_log_sub_current` pays replacement of the completed ordinary-prime
+mark by its exact full zeta logarithmic moment divided by the marked order.
+The ENTIRE proper-prime-power error, still coupled to the ordered cofactor,
+both Fourier signs and the exact rectangle, has bound C*(N+2)^3*r_pp^N,
+with `properRate_bounds` proving r_pp<91/100. Its origin zero and all
+frequency integrability are proved; the estimate is uniform in moving
+heights and contains no zero hypothesis. This is not a bound on `logMain`.
+`marked_ordered_ledger` proves the exact joint logarithmic-derivative
+identity with BOTH unpaid terms explicit: the omitted factorial orders and
+the complete-prime versus ordered-tail slope mismatch. The original mark
+also retains its reciprocal order factor 1/j. Do not silently drop that
+factor, remove the order window, or replace the ordered cofactor by a
+complete quotient. The signed main estimate and complementary floor remain
+open. Continue locally without subagents or unrequested commits. Snapshot
+34ee00fd155545435ffbd5c2543cc10d1a9e2590 passed exact-SHA CI 36258001944,
+Pages deployment and the published README/RH-explorer browser checks;
+that remote success does not validate subsequent local changes.
+
+`ZetaRieszMatchedSlope` subsequently pays the prime-range mismatch.
+`mismatchAtom_split` keeps exactly the finite extra-prime-power mark and
+the forbidden p<=r ordering. The local extra-power factor is
+q^2*(1-z)*(1+z-q*z)/((1-q)*(1-q*z)); its Fourier zero is retained and its
+Cauchy radius is 3/4. The old unequal-radius theorem pays the second error.
+`norm_scaled_mismatchResponse_le` and `tendsto_mismatchResponse` bound the
+ENTIRE coupled paired integral by C*(N+2)^3*r_pp^N, r_pp<91/100, uniformly
+in moving heights, with no zero hypothesis. `tendsto_matched_sub_current`
+connects the unchanged dyadic packet to a mark that is the logarithmic
+derivative of its OWN finite tail quotient q>r. `tendsto_log_sub_matched`
+pays the preceding complete-prime/ordered-tail mismatch; its combined rate
+also includes the older prime-completion bridge, so do not ascribe r_pp to
+that whole comparison. `symbol_difference_eq_rangeMismatch` retains the
+literal rectangle in the exact signed identity. Do not keep listing this
+prime-range mismatch as unpaid. The remaining main problem is the signed
+restricted-order convolution with its reciprocal 1/j, not a separate-leg
+phase limit or a full unmasked derivative. Its complementary order sum and
+the final carrier floor are still unbounded. No cofactor completion, mask
+removal, new zero region or RH contradiction is proved. Keep working locally
+without subagents or unrequested commits; the live probe's inputs stay frozen.
+
+`ZetaRieszMarkedSaturation` now pays the entire unshifted cofactor branch
+of the same literal marked packet. See `docs/zeta-riesz-marked-saturation.md`.
+`atom_split` and `completePacket_split` keep exactly
+`-R_L(n)=-R_L(n/p)+R_(L-log p)(n/p)`, with the full `markedWeight`, least-prime
+slot, total kernel order N+1, phase and prefactor. On squarefree labels with
+at least three factors, `cofactor_data` and `riesz_cofactor_eq_zero` prove
+the first cofactor response zero when log(n/p)<=L. On the other side,
+`markedWeight_tilt` sums the exact multinomial allocation before estimating;
+the rational 5/4 tilt and eventual L>=11N/8 give `saturation_tilt` with
+exp(-N/100). `norm_scaled_unshiftedPacket_le` pays ALL incidences on ANY
+finite label mask by C*(N+1)*saturationRate^N, and `saturationRate_bounds`
+proves 0<=r<991/1000. The bound is independent of zeros and uniform in
+moving heights and finite masks; the factor count is paid by a summable
+logarithmic majorant, without a fixed count ceiling.
+`tendsto_reflected_sub_current` keeps the UNCHANGED signed dyadic target;
+`tendsto_matched_sub_reflected` connects it to the previous matched Euler
+slope. The actual remaining input is R_(L-log p)(n/p), still signed across
+incidences/counts with the original correlated factorial rectangle. This
+does not pay the reflected profile, justify an unmasked Ward identity, or
+prove the final complementary floor. Do not describe another cutoff branch
+as an independent packet bound or a zero exclusion. Continue locally without
+subagents, commits or changes to the optional running probe's frozen inputs.
+
+`ZetaRieszWardWindowAudit` tests ONLY the generic matched-slope shortcut.
+See `docs/zeta-riesz-ward-window-audit.md`. It keeps `rectangleOrders`, the
+reciprocal 1/j, and every correlated cofactor order. `zeroMode_rectangle`
+proves exact annihilation for the synthetic simple-zero cofactor 1+s and
+ANY low-leg sequence. `pole_rectangle` instead computes the synthetic pole
+1/(1+s), matched to its own logarithmic slope. The reciprocal low leg leaves
+mass at least 1/20 at every N=400*t, t>=1; `not_tendsto_pole_rectangle_norm`
+proves nondecay. The optional stdlib probe confirms the model behavior.
+This is a PRE-FOURIER analytic-model audit, not a counterexample for the
+actual ordered Euler quotient, its paired Fourier integral, or the literal
+prime packet. It pays no new arithmetic component. Use the actual two-frequency
+and ordered-product correlations in the next signed estimate; do not infer
+decay just from matching the prime ranges or the unmasked Ward identity.
+All previous paid components, masks and no-gos remain unchanged. The signed
+reflected main and complementary floor remain open. Work locally without
+subagents or commits, and leave the long coupled probe's inputs frozen.
+
+The same audit now also proves a POSITIVE scalar-model estimate.
+`poissonPrefix_rectangle_bound` uses 200*(j+h)<=123*N, x=L/2>=11N/16,
+and rational tilt 9/10 to get exp(-N/300). `joinedPoleTail_bound` retains
+Q_(j+h-1)-Q_(j-1)-Q_(h-1). `source_joinedRectangleTail_bound` sums the
+original rectangle with reciprocal 1/(j*h), giving
+3*(N+2)^2*exp(-N/400) after (2*radiusCeiling)^N growth. These are scalar
+gamma-model estimates only. Their Fourier identification is NOT formalized;
+the synthetic global pole model has a 1/xi tail needing improper/Abel
+regularization, whereas the actual finite Euler integral is absolutely
+integrable. Do not treat the model bound as an estimate of that actual
+integral. The optional probe keeps the exact integer-floor length and shows
+decreasing joined-model values, but transfers no actual prime measure.
+The joint-frequency mechanism and its ordered/exterior comparison remain
+the next research target. No new arithmetic component has been paid here.
+
 The optional coupled `N=262144`, `48/160/256` model run completed with
 joined finite-quadrature value about +0.0001080270744329. All 15,360 rows
 and frozen sources were checked, and the full rule reassembled from its
@@ -1749,10 +2338,20 @@ row archive. See `docs/riesz-owner-coupled-probe.json` and
 `docs/zeta-riesz-owner-integration-audit.md`. Its tiny internal evaluation
 enclosure is NOT an outer quadrature bound, prime-sum bound or asymptotic.
 The low-degree subset reweighting is an inconclusive sensitivity test,
-not a convergence certificate. A fresh `64/160/256` radial refinement is
-running at `.lake/riesz-owner-coupled-262144-64-160-256.json`, with log
-`/tmp/riesz-owner-coupled-262144-64-160-256.log`; keep all imported numerical
-sources frozen until it finishes. The completed `48/160/256` rows are
+not a convergence certificate. The `64/160/256` radial refinement is now
+TERMINAL: all 20,480 rows completed, but its final `1e-18` radius gate
+failed and no success `.json` result was written. Its log is
+`/tmp/riesz-owner-coupled-262144-64-160-256.log`. Do not report the job as
+running or restart it from scratch. `audit_riesz_coupled_checkpoint.py`
+verified the complete `.rows.jsonl` checkpoint and nine frozen source
+hashes, rebuilt the original weights, and recovered the finite-grid ball
+`[0.000108027 +/- 1.92e-10]`, overlapping the earlier 48-node result.
+See `docs/riesz-owner-radial-refinement-audit.json`. The original precision
+gate remains FAILED; outer quadrature, prime transfer, and the joint floor
+remain unpaid. Preserve both checkpoints and their source provenance.
+Do not spend another full run solely tightening internal point precision
+without a concrete use in the current JOINT signed inequality.
+The completed `48/160/256` rows are
 durable evidence and must not be overwritten or reinterpreted as a prime
 calculation. These optional calculations stay out of ordinary CI.
 
@@ -2675,6 +3274,26 @@ documentation and generated inventory. Auxiliary heat or matrix estimates
 must not be reported as proving RH, an RH-equivalent open direction, or an
 improved zero-count certificate. The soundness and exact-commit CI gates
 below continue to apply.
+
+### Actual small-prime triple compensation (2026-09-27)
+
+`ZetaRieszSmallPrimeCompensation.eventually_compensated_core_floor` now pays
+both the fixed positive balanced-triple band and the ENTIRE original
+three-prime head containing a prime <=N^2, using one actual four-prime
+supply at every radial slab. The marked-log coefficient and Chebyshev prime
+budget give O(log N/N) cost relative to that supply. Half plus one quarter
+is spent; both positive triple credits and a quarter of the same supply
+remain. Exclude overlapping triple selections and used supply labels before
+applying the exact four-/five-prime debit inequalities to the signed rest.
+Only the already proved radial-edge geometric allowance is added. Constants,
+balanced width and eventual thresholds are existential and height-dependent.
+This is relative signed compensation, not separate head decay or a numerical
+whole-carrier floor. See `docs/zeta-riesz-small-prime-compensation.md`.
+The cofinal joint -79/1000-o(1) target, restricted exclusion and RH remain open.
+Preserve all old no-go audits and paid error bounds. Do not resurrect the
+old divergent allowance or add overlapping positive supplies. The user has
+authorized committing and pushing the accumulated work after this slice
+passes the full gates. No subagents are authorized.
 
 ## Soundness invariant
 

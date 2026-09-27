@@ -1,0 +1,68 @@
+{
+  "scope": "uncertified scalar tilt optimization; no prime-sum bound",
+  "radius": 0.50005,
+  "order_endpoint": 0.40625,
+  "source_envelope_log_growth": 0.0001076244239685144,
+  "rows": [
+    {
+      "largest_prime_share": 0.5625,
+      "optimal_tilt": 0.8796992481203008,
+      "normalized_saving": 0.001888424517808212
+    },
+    {
+      "largest_prime_share": 0.586,
+      "optimal_tilt": 0.9684719043986777,
+      "normalized_saving": 1.6395179380106182e-05
+    },
+    {
+      "largest_prime_share": 0.59,
+      "optimal_tilt": 0.9845956354300384,
+      "normalized_saving": -7.853030442634016e-05
+    },
+    {
+      "largest_prime_share": 0.59375,
+      "optimal_tilt": 1.0,
+      "normalized_saving": -0.0001076244239685144
+    },
+    {
+      "largest_prime_share": 0.6,
+      "optimal_tilt": 1.026315789473684,
+      "normalized_saving": -2.6382939939276578e-05
+    },
+    {
+      "largest_prime_share": 0.601,
+      "optimal_tilt": 1.03060282284659,
+      "normalized_saving": 1.7541154787834473e-06
+    },
+    {
+      "largest_prime_share": 0.605,
+      "optimal_tilt": 1.0479680213191205,
+      "normalized_saving": 0.00015633316037243493
+    }
+  ],
+  "concrete_tilts": [
+    {
+      "largest_prime_share": 0.586,
+      "tilt": 0.97,
+      "normalized_saving": 1.6095365349087762e-05,
+      "lean_saving_at_least": 1e-05
+    },
+    {
+      "largest_prime_share": 0.601,
+      "tilt": 1.03,
+      "normalized_saving": 1.7128295598203591e-06,
+      "lean_saving_at_least": 1e-06
+    }
+  ],
+  "diagnostic_optimal_share_boundaries": [
+    0.5865313497390303,
+    0.600941745901743
+  ],
+  "limitations": [
+    "No directed roundoff or rigorous root enclosure",
+    "Optimizes only this exponential-tilt / summable-envelope bound",
+    "No lower bound on the actual allocation tails is asserted",
+    "The raw signed sum and transition remain unbounded"
+  ],
+  "source_sha256": "cd319bfa7660210df455dc5a62ddecfe3ffc2b3db164543fac52d949d2936895"
+}

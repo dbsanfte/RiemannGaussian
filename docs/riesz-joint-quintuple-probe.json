@@ -1,0 +1,43 @@
+{
+  "scope": "Exact rational logarithmic model, not actual prime populations or a signed sum",
+  "lean_source": "RiemannGaussian/ZetaRieszJointQuintupleFloor.lean",
+  "extremal_example": {
+    "large_logs_per_order": [
+      "37/50",
+      "257973/409600",
+      "257923/409600"
+    ],
+    "small_logs_per_order": [
+      "1/8192",
+      "3/8192"
+    ],
+    "length_per_order": "137/100",
+    "total_log_per_order": "2",
+    "pair_tents": [
+      "1/8192",
+      "1/8192",
+      "0"
+    ],
+    "full_Riesz_response": "1/4096",
+    "two_least_log_bound": "1/4096"
+  },
+  "grids": [
+    {
+      "grid": 32,
+      "exact_rational_cases": 267
+    },
+    {
+      "grid": 64,
+      "exact_rational_cases": 1053
+    },
+    {
+      "grid": 128,
+      "exact_rational_cases": 4176
+    }
+  ],
+  "limitations": [
+    "No assertion that the listed rational shares are prime logarithms.",
+    "The formal core theorem derives the small-factor budget from literal masks.",
+    "No distribution, phase correlation, source-scale floor, or zero exclusion is tested."
+  ]
+}

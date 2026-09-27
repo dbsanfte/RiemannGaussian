@@ -1,0 +1,207 @@
+{
+  "scope": "uncertified ordinary-prime-density model of the exact grid geometry",
+  "rows": [
+    {
+      "N": 4096,
+      "seed": 17,
+      "samples_per_family": 32768,
+      "height": 54.0,
+      "moving_length_over_N": 1.3820328426633905,
+      "log_width": 0.0018181818181818182,
+      "phase_translation": 0.05191008578432093,
+      "grid_side": 2252,
+      "grid_cells": 5071504,
+      "source_scaled_triple": [
+        -4.583454934669928e-18,
+        2.16799065553635e-18
+      ],
+      "source_scaled_quadruple": [
+        1.2738228015408218e-17,
+        -2.5339748162002732e-18
+      ],
+      "model_triple_absolute_mass": 5.076443347810492e-18,
+      "positive_supply_over_triple_mass": 2.5092820194481855,
+      "fraction_spent": 0.3598188797630063,
+      "normalized_joint_real": 8.154773080738291e-18,
+      "unused_positive_credit": 8.15477308073829e-18
+    },
+    {
+      "N": 4096,
+      "seed": 29,
+      "samples_per_family": 32768,
+      "height": 54.0,
+      "moving_length_over_N": 1.3820328426633905,
+      "log_width": 0.0018181818181818182,
+      "phase_translation": 0.05191008578432093,
+      "grid_side": 2252,
+      "grid_cells": 5071504,
+      "source_scaled_triple": [
+        -4.583454934692397e-18,
+        2.167990655548951e-18
+      ],
+      "source_scaled_quadruple": [
+        1.2738228010338088e-17,
+        -2.5339748147149475e-18
+      ],
+      "model_triple_absolute_mass": 5.076443347810439e-18,
+      "positive_supply_over_triple_mass": 2.509282018449455,
+      "fraction_spent": 0.35981887990798705,
+      "normalized_joint_real": 8.15477307564569e-18,
+      "unused_positive_credit": 8.15477307564569e-18
+    },
+    {
+      "N": 16384,
+      "seed": 17,
+      "samples_per_family": 32768,
+      "height": 54.0,
+      "moving_length_over_N": 1.3849097859677184,
+      "log_width": 0.0018181818181818182,
+      "phase_translation": 0.03310741794029142,
+      "grid_side": 9011,
+      "grid_cells": 81198121,
+      "source_scaled_triple": [
+        -4.861285013930261e-19,
+        2.299405251466632e-19
+      ],
+      "source_scaled_quadruple": [
+        5.755027148718087e-18,
+        -1.1448300895643874e-18
+      ],
+      "model_triple_absolute_mass": 5.38415633265315e-19,
+      "positive_supply_over_triple_mass": 10.68881881050839,
+      "fraction_spent": 0.08447023599207688,
+      "normalized_joint_real": 5.268898647325061e-18,
+      "unused_positive_credit": 5.26889864732506e-18
+    },
+    {
+      "N": 16384,
+      "seed": 29,
+      "samples_per_family": 32768,
+      "height": 54.0,
+      "moving_length_over_N": 1.3849097859677184,
+      "log_width": 0.0018181818181818182,
+      "phase_translation": 0.03310741794029142,
+      "grid_side": 9011,
+      "grid_cells": 81198121,
+      "source_scaled_triple": [
+        -4.861285013954872e-19,
+        2.29940525148004e-19
+      ],
+      "source_scaled_quadruple": [
+        5.755027151823373e-18,
+        -1.1448300900772874e-18
+      ],
+      "model_triple_absolute_mass": 5.3841563326531935e-19,
+      "positive_supply_over_triple_mass": 10.688818816275758,
+      "fraction_spent": 0.08447023594692625,
+      "normalized_joint_real": 5.268898650427886e-18,
+      "unused_positive_credit": 5.268898650427886e-18
+    },
+    {
+      "N": 65536,
+      "seed": 17,
+      "samples_per_family": 32768,
+      "height": 54.0,
+      "moving_length_over_N": 1.3857559198818086,
+      "log_width": 0.0018181818181818182,
+      "phase_translation": 0.07425203001752696,
+      "grid_side": 36044,
+      "grid_cells": 1299169936,
+      "source_scaled_triple": [
+        -2.0666971328098932e-18,
+        9.775551546354254e-19
+      ],
+      "source_scaled_quadruple": [
+        9.961044754760245e-17,
+        -1.9815208185014816e-17
+      ],
+      "model_triple_absolute_mass": 2.288987462408017e-18,
+      "positive_supply_over_triple_mass": 43.51725345092636,
+      "fraction_spent": 0.0207477948718406,
+      "normalized_joint_real": 9.754375041479256e-17,
+      "unused_positive_credit": 9.754375041479256e-17
+    },
+    {
+      "N": 65536,
+      "seed": 29,
+      "samples_per_family": 32768,
+      "height": 54.0,
+      "moving_length_over_N": 1.3857559198818086,
+      "log_width": 0.0018181818181818182,
+      "phase_translation": 0.07425203001752696,
+      "grid_side": 36044,
+      "grid_cells": 1299169936,
+      "source_scaled_triple": [
+        -2.0666971328182148e-18,
+        9.77555154643286e-19
+      ],
+      "source_scaled_quadruple": [
+        9.961044755313019e-17,
+        -1.9815208185535196e-17
+      ],
+      "model_triple_absolute_mass": 2.288987462407098e-18,
+      "positive_supply_over_triple_mass": 43.517253453358755,
+      "fraction_spent": 0.020747794870772773,
+      "normalized_joint_real": 9.754375042031197e-17,
+      "unused_positive_credit": 9.754375042031196e-17
+    },
+    {
+      "N": 262144,
+      "seed": 17,
+      "samples_per_family": 32768,
+      "height": 54.0,
+      "moving_length_over_N": 1.3859991818105633,
+      "log_width": 0.0018181818181818182,
+      "phase_translation": 0.00611991144563204,
+      "grid_side": 144179,
+      "grid_cells": 20787584041,
+      "source_scaled_triple": [
+        -2.228582617178446e-11,
+        1.0541275662586661e-11
+      ],
+      "source_scaled_quadruple": [
+        4.318419764133952e-09,
+        -8.590503679559899e-10
+      ],
+      "model_triple_absolute_mass": 2.4682850651145443e-11,
+      "positive_supply_over_triple_mass": 174.95628139424608,
+      "fraction_spent": 0.005160643797732763,
+      "normalized_joint_real": 4.296133937962168e-09,
+      "unused_positive_credit": 4.296133937962168e-09
+    },
+    {
+      "N": 262144,
+      "seed": 29,
+      "samples_per_family": 32768,
+      "height": 54.0,
+      "moving_length_over_N": 1.3859991818105633,
+      "log_width": 0.0018181818181818182,
+      "phase_translation": 0.00611991144563204,
+      "grid_side": 144179,
+      "grid_cells": 20787584041,
+      "source_scaled_triple": [
+        -2.2285826171867082e-11,
+        1.0541275662727805e-11
+      ],
+      "source_scaled_quadruple": [
+        4.318419764109257e-09,
+        -8.590503679760126e-10
+      ],
+      "model_triple_absolute_mass": 2.4682850651164384e-11,
+      "positive_supply_over_triple_mass": 174.9562813931113,
+      "fraction_spent": 0.005160643797781406,
+      "normalized_joint_real": 4.2961339379373895e-09,
+      "unused_positive_credit": 4.29613393793739e-09
+    }
+  ],
+  "limitations": [
+    "No actual primes are enumerated; the density replacement is unproved.",
+    "The old allocation and additional arithmetic eligibility predicates are omitted.",
+    "Fixed nonzero sample height 54 is not asserted to be a zero ordinate.",
+    "Scrambled Sobol integration has no rigorous enclosure here.",
+    "Neither finite thresholds nor a whole-core floor follow from these samples.",
+    "The Lean comparison is eventual for fixed parameters and uses actual prime counts.",
+    "Spending a vanishing relative fraction is not a source-normalized error bound."
+  ],
+  "source_sha256": "186afedc9c86032c19684f0438a8b72be2ed7ada8c877786d1913d8cacf9752d"
+}

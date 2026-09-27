@@ -1,0 +1,185 @@
+{
+  "scope": "Synthetic normalized analytic models, before Fourier integration; not a prime-sum bound.",
+  "producer_sha256": "c4fb273ef49e832de477a1c15595908224c3fcb8f9a1f591fdabcd35b683112c",
+  "arithmetic": "IEEE binary64; Lean proves the cofinal 1/20 lower bound independently.",
+  "formulas": {
+    "pole": "F(s)=1/(1+s); -logDeriv F=F",
+    "zero": "F(s)=1+s; every cofactor moment of order >=2 is zero",
+    "reciprocal_low_leg": "a_h=1/(h+1)",
+    "poisson_low_leg": "a_h=exp(-N/40)*(N/40)^h/h!"
+  },
+  "formal_result": "ZetaRieszWardWindowAudit.not_tendsto_pole_rectangle_norm",
+  "rows": [
+    {
+      "order": 400,
+      "marked_orders": [
+        210,
+        230
+      ],
+      "least_orders": [
+        3,
+        15
+      ],
+      "simple_zero": 0.0,
+      "reciprocal_pole": 0.14781800017245184,
+      "poisson_pole": 0.09060638356809152
+    },
+    {
+      "order": 640,
+      "marked_orders": [
+        336,
+        368
+      ],
+      "least_orders": [
+        6,
+        24
+      ],
+      "simple_zero": 0.0,
+      "reciprocal_pole": 0.12815240940916223,
+      "poisson_pole": 0.09159525803300692
+    },
+    {
+      "order": 1600,
+      "marked_orders": [
+        840,
+        920
+      ],
+      "least_orders": [
+        15,
+        63
+      ],
+      "simple_zero": 0.0,
+      "reciprocal_pole": 0.13131845166137318,
+      "poisson_pole": 0.09208393646583234
+    },
+    {
+      "order": 6400,
+      "marked_orders": [
+        3360,
+        3680
+      ],
+      "least_orders": [
+        63,
+        255
+      ],
+      "simple_zero": 0.0,
+      "reciprocal_pole": 0.12740123075217147,
+      "poisson_pole": 0.09125645852249645
+    },
+    {
+      "order": 25600,
+      "marked_orders": [
+        13440,
+        14720
+      ],
+      "least_orders": [
+        255,
+        1023
+      ],
+      "simple_zero": 0.0,
+      "reciprocal_pole": 0.12643470686187527,
+      "poisson_pole": 0.09104294805472866
+    },
+    {
+      "order": 102400,
+      "marked_orders": [
+        53760,
+        58880
+      ],
+      "least_orders": [
+        1023,
+        4095
+      ],
+      "simple_zero": 0.0,
+      "reciprocal_pole": 0.12619387112365835,
+      "poisson_pole": 0.09098957065358955
+    },
+    {
+      "order": 262144,
+      "marked_orders": [
+        137626,
+        150732
+      ],
+      "least_orders": [
+        2621,
+        10484
+      ],
+      "simple_zero": 0.0,
+      "reciprocal_pole": 0.12610757299579106,
+      "poisson_pole": 0.09097051453615529
+    }
+  ],
+  "paired_gamma_model": [
+    {
+      "order": 400,
+      "length_over_order": 1.356124563982691,
+      "normalized": 0.001161182211937979,
+      "uses_literal_integer_length": true,
+      "three_tail_formula": "Q_(j+h-1)-Q_(j-1)-Q_(h-1)",
+      "formal_tail_premise": false
+    },
+    {
+      "order": 640,
+      "length_over_order": 1.365897404066347,
+      "normalized": 0.00015539725556274966,
+      "uses_literal_integer_length": true,
+      "three_tail_formula": "Q_(j+h-1)-Q_(j-1)-Q_(h-1)",
+      "formal_tail_premise": false
+    },
+    {
+      "order": 1600,
+      "length_over_order": 1.376871391477978,
+      "normalized": 2.9116795669488675e-07,
+      "uses_literal_integer_length": true,
+      "three_tail_formula": "Q_(j+h-1)-Q_(j-1)-Q_(h-1)",
+      "formal_tail_premise": true
+    },
+    {
+      "order": 6400,
+      "length_over_order": 1.383355555648242,
+      "normalized": 5.329153065285211e-18,
+      "uses_literal_integer_length": true,
+      "three_tail_formula": "Q_(j+h-1)-Q_(j-1)-Q_(h-1)",
+      "formal_tail_premise": true
+    },
+    {
+      "order": 25600,
+      "length_over_order": 1.3853013721588956,
+      "normalized": 1.064150969232499e-56,
+      "uses_literal_integer_length": true,
+      "three_tail_formula": "Q_(j+h-1)-Q_(j-1)-Q_(h-1)",
+      "formal_tail_premise": true
+    }
+  ],
+  "paired_model_caveat": "The scalar tail estimate is formalized; its Fourier inversion and arithmetic transfer are not.",
+  "improper_integral_regression": [
+    {
+      "j": 5,
+      "h": 2,
+      "length": 20.0,
+      "improper_integral": 0.10038933357813247,
+      "gamma_formula": 0.10038933357813455,
+      "difference": -2.0816681711721685e-15,
+      "quadrature_estimated_error": 1.1946730183312068e-11
+    },
+    {
+      "j": 220,
+      "h": 10,
+      "length": 542.4498255930764,
+      "improper_integral": 0.004161958958231479,
+      "gamma_formula": 0.004161958958234057,
+      "difference": -2.5777990853015353e-15,
+      "quadrature_estimated_error": 1.0318441312728532e-11
+    }
+  ],
+  "predicted_limits": {
+    "reciprocal_pole": 0.1261136631476484,
+    "poisson_pole": 0.09097177820572679
+  },
+  "exclusions": [
+    "no actual prime measure",
+    "no Fourier pairing",
+    "no counterexample to decay of the actual arithmetic packet",
+    "no zero-free or RH conclusion"
+  ]
+}

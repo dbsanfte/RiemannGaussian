@@ -177,10 +177,57 @@ a `q`-node subset only has degree `q-1`, while the original Gaussian rule
 has checked degree `2*q-1`, and new weights can magnify pointwise
 enclosures previously paid by tiny original weights. Its coarse results
 are therefore not alternative estimates of the continuous response with
-known accuracy. A fresh `64/160/256` run has been started to refine the
-radial rule; its result is pending.
+known accuracy.
+
+## Completed radial refinement and its failed precision gate
+
+The `64/160/256` run has now completed all **20,480 rows** and **2,051,632
+response evaluations** at the same `N=262144`. It stopped at its final
+assertion because the joined ball did not meet the requested radius
+`1e-18`. The expected `.json` success result was therefore not written.
+This is a completed calculation with a failed precision gate, not a running
+job or a reason to restart the computation from scratch.
+
+The [checkpoint auditor](../scripts/audit_riesz_coupled_checkpoint.py)
+verified all nine frozen source hashes and every row index, independently
+rebuilt the original radial and beta weights, and reassembled both fronts.
+The [diagnostic report](riesz-owner-radial-refinement-audit.json) records
+
+\[
+\begin{aligned}
+\text{lower front}&=[0\pm5.30\cdot10^{-23}],\\
+\text{upper front}&=[-0.000108027\pm1.92\cdot10^{-10}],\\
+\text{joined}&=[0.000108027\pm1.92\cdot10^{-10}].
+\end{aligned}
+\]
+
+The joined enclosure overlaps the earlier 48-node enclosure. The omitted
+model-count allowances remain below `4.1e-23` on each face. The lost
+precision comes from evaluated upper-face rows, not from an unpaid row or
+the model count tail: 1,061 weighted row enclosures have radius above
+`1e-21`, and the five largest account for about 59% of the summed row
+radius. The report retains their indices for any justified targeted
+refinement.
+
+**The requested `1e-18` gate remains failed.** The wider finite-grid ball is
+still a useful diagnostic; it supplies no bound on the continuous outer
+quadrature, actual prime measure, missing complement or cofinal sequence.
+Agreement of two radial grids does not discharge those obligations. No
+additional long packet-only run is needed merely to tighten internal
+precision; the active target is the [joint floor](zeta-riesz-joint-floor.md).
 
 ## Reproduction
+
+Audit the completed checkpoint, including its failed precision status,
+without rerunning the expensive responses:
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .lake/riesz-ball-venv/bin/python \
+  scripts/audit_riesz_coupled_checkpoint.py \
+  --checkpoint .lake/riesz-owner-coupled-262144-64-160-256.rows.jsonl \
+  --compare-run .lake/riesz-owner-coupled-262144-48-160-256.json \
+  --output /tmp/riesz-owner-radial-refinement-audit.json
+```
 
 The complete-response runs retain both factorial faces and all count/Riesz
 signs. Their full outer quadrature error is still unproved; no partial row

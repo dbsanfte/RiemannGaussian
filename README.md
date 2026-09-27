@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-The harmonic-cost route retains its exact source and an open independent -3/40 floor. The selected signed packet is now source-equivalent to a complete marked-prime difference coupled to a finite ordered least-prime Euler tail, with the original factorial rectangle and both Fourier frequencies intact. The completion and separation errors decay independently. The joint signed integral and complementary carrier remain open.
+Work directly on a cofinal signed floor for J+C, retaining the original arithmetic weights and all complementary counts. On 1/2<u<=0.50005, an independent -79/1000-o(1) floor would contradict the proved simple exposed-zero source. Actual positive four-prime supplies now pay selected triple populations. The remaining signed complement is open; separate decay of J and C is unnecessary.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ The harmonic-cost route retains its exact source and an open independent -3/40 f
 
 ### Latest Update
 
-**Proved geometric bounds for the Euler correction and marked-prime completion.** Lean now pays the exponential prime head, nonlinear Euler correction, Fourier exteriors, and the high marked prime’s ordering and completion errors. The full integrated errors decay at source scale with a checked geometric rate below 249/250. The resulting complete prime difference stays coupled to the literal ordered cofactor and exact factorial rectangle.
-Bound that joint signed Fourier integral, then the complementary carrier. The independent -3/40 floor and zero exclusion remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszMarkedPrimeCompletion.lean#L601)
-· [Proof details](docs/zeta-riesz-marked-prime-completion.md).
+**Joint signed compensation pays balanced and small-prime triples.** Lean now pays a fixed balanced triple band and every original triple containing a prime <=N^2 from one actual four-prime supply, retaining both positive triple credits and at least a quarter of that supply. The accumulated slice also proves sharper four- and five-prime debit inequalities, independent count/allocation/radial reductions, and audits unsuccessful bounds. Only a geometric radial-edge error is charged.
+Control the remaining signed complement and unused credits at -79/1000-o(1). The independent whole-core floor, restricted zero exclusion and RH remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszSmallPrimeCompensation.lean#L727)
+· [Proof details](docs/zeta-riesz-small-prime-compensation.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

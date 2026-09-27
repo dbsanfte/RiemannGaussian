@@ -1,0 +1,213 @@
+{
+  "scope": "Uncertified scalar-tail diagnostic; no bound for the signed prime sum",
+  "radius_ceiling": 0.50005,
+  "source_scaling": "(2*U)^(N+1)",
+  "unpaid_order_definition": "k <= floor(13*N/32) and 5*(N+1-k) < 4*N",
+  "N_requirement": "N >= 320; displayed Lean lower bounds also use 32 dividing N",
+  "asymptotic_float_rates": [
+    {
+      "cofactor_share": 0.41,
+      "binomial_entropy": 2.909411954214085e-05,
+      "net_log_rate": 7.090088079116749e-05
+    },
+    {
+      "cofactor_share": 0.4,
+      "binomial_entropy": 8.124148402926124e-05,
+      "net_log_rate": 1.8753516304047098e-05
+    }
+  ],
+  "enumeration_discrepancies": [
+    1.5898393712632242e-13,
+    1.0547118733938987e-13,
+    1.2256862191861728e-13,
+    1.780797731498751e-13,
+    3.1796787425264483e-13,
+    6.128431095930864e-14
+  ],
+  "rows": [
+    {
+      "N": 320,
+      "scaled_log_growth": 0.03209839510699198,
+      "assigned_at_59_percent": {
+        "unpaid_orders": [
+          66,
+          130
+        ],
+        "log_tail": -0.795797590019939,
+        "log_source_scaled_tail": -0.763699194912947,
+        "log_Lean_lower_bound": -6.8600584084672915
+      },
+      "missing_at_60_percent": {
+        "unpaid_orders": [
+          66,
+          130
+        ],
+        "log_tail": -0.9061221001567932,
+        "log_source_scaled_tail": -0.8740237050498012,
+        "log_Lean_lower_bound": -6.865054661381616
+      }
+    },
+    {
+      "N": 640,
+      "scaled_log_growth": 0.06409679521365065,
+      "assigned_at_59_percent": {
+        "unpaid_orders": [
+          130,
+          260
+        ],
+        "log_tail": -0.8501810133609129,
+        "log_source_scaled_tail": -0.7860842181472623,
+        "log_Lean_lower_bound": -7.541651738927111
+      },
+      "missing_at_60_percent": {
+        "unpaid_orders": [
+          130,
+          260
+        ],
+        "log_tail": -0.9953359725495177,
+        "log_source_scaled_tail": -0.931239177335867,
+        "log_Lean_lower_bound": -7.55164424475576
+      }
+    },
+    {
+      "N": 1536,
+      "scaled_log_growth": 0.15369231551229492,
+      "assigned_at_59_percent": {
+        "unpaid_orders": [
+          309,
+          624
+        ],
+        "log_tail": -0.9547531332087473,
+        "log_source_scaled_tail": -0.8010608176964524,
+        "log_Lean_lower_bound": -8.388224016218702
+      },
+      "missing_at_60_percent": {
+        "unpaid_orders": [
+          309,
+          624
+        ],
+        "log_tail": -1.1831338751646059,
+        "log_source_scaled_tail": -1.029441559652311,
+        "log_Lean_lower_bound": -8.412206030207459
+      }
+    },
+    {
+      "N": 8192,
+      "scaled_log_growth": 0.8192590377307952,
+      "assigned_at_59_percent": {
+        "unpaid_orders": [
+          1640,
+          3328
+        ],
+        "log_tail": -1.4031160794046973,
+        "log_source_scaled_tail": -0.5838570416739021,
+        "log_Lean_lower_bound": -9.853775613540568
+      },
+      "missing_at_60_percent": {
+        "unpaid_orders": [
+          1640,
+          3328
+        ],
+        "log_tail": -2.0898112426564475,
+        "log_source_scaled_tail": -1.2705522049256524,
+        "log_Lean_lower_bound": -9.98167968814727
+      }
+    },
+    {
+      "N": 65536,
+      "scaled_log_growth": 6.553372336844029,
+      "assigned_at_59_percent": {
+        "unpaid_orders": [
+          13109,
+          26624
+        ],
+        "log_tail": -3.6698880830261116,
+        "log_source_scaled_tail": 2.883484253817917,
+        "log_Lean_lower_bound": -10.142005754145032
+      },
+      "missing_at_60_percent": {
+        "unpaid_orders": [
+          13109,
+          26624
+        ],
+        "log_tail": -7.507772273228817,
+        "log_source_scaled_tail": -0.9543999363847879,
+        "log_Lean_lower_bound": -11.16523835099865
+      }
+    },
+    {
+      "N": 262144,
+      "scaled_log_growth": 26.213189362375115,
+      "assigned_at_59_percent": {
+        "unpaid_orders": [
+          52430,
+          106496
+        ],
+        "log_tail": -9.963433863625191,
+        "log_source_scaled_tail": 16.249755498749924,
+        "log_Lean_lower_bound": -5.387358624817711
+      },
+      "missing_at_60_percent": {
+        "unpaid_orders": [
+          52430,
+          106496
+        ],
+        "log_tail": -24.11744440723238,
+        "log_source_scaled_tail": 2.0957449551427345,
+        "log_Lean_lower_bound": -9.48028901223218
+      }
+    },
+    {
+      "N": 1048576,
+      "scaled_log_growth": 104.85245746449947,
+      "assigned_at_59_percent": {
+        "unpaid_orders": [
+          209717,
+          425984
+        ],
+        "log_tail": -33.49573208878015,
+        "log_source_scaled_tail": 71.35672537571932,
+        "log_Lean_lower_bound": 17.790070060936735
+      },
+      "missing_at_60_percent": {
+        "unpaid_orders": [
+          209717,
+          425984
+        ],
+        "log_tail": -88.68498673706863,
+        "log_source_scaled_tail": 16.16747072743084,
+        "log_Lean_lower_bound": 1.4183485112788574
+      }
+    },
+    {
+      "N": 4194304,
+      "scaled_log_growth": 419.4095298729968,
+      "assigned_at_59_percent": {
+        "unpaid_orders": [
+          838862,
+          1703936
+        ],
+        "log_tail": -125.69937769262701,
+        "log_source_scaled_tail": 293.7101521803698,
+        "log_Lean_lower_bound": 114.658657158505
+      },
+      "missing_at_60_percent": {
+        "unpaid_orders": [
+          838862,
+          1703936
+        ],
+        "log_tail": -344.9374066945927,
+        "log_source_scaled_tail": 74.4721231784041,
+        "log_Lean_lower_bound": 49.171770959873484
+      }
+    }
+  ],
+  "limitations": [
+    "Floating lgamma and positive recurrences; no certified numerical intervals",
+    "Both literal unpaid-order endpoints are retained",
+    "A scalar tail is not the boundedShare of an actual integer label",
+    "No prime-population, radial integral, phase, or signed-core bound is inferred",
+    "Does not obstruct signed cancellation or the already paid outer radial regions"
+  ],
+  "script_sha256": "7f7ddb2a7fd4c4ad2cdcdb8f83e701b448f2db4f58762f03142765bda9133083"
+}

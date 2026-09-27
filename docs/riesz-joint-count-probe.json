@@ -1,0 +1,58 @@
+{
+  "status": "uncertified scalar diagnostic; not a prime-sum estimate",
+  "lean_source": "RiemannGaussian/ZetaRieszJointCountFloor.lean",
+  "parameters": {
+    "radius_ceiling": "10001/20000",
+    "kernel_tilt": "131071/262144",
+    "euler_slack": "100001/100000",
+    "count_saving": "7001/7000",
+    "certified_rate": "49999/50000",
+    "count_reduction_factor": 512
+  },
+  "rational_rate_check": {
+    "rate": "14337576974336/14337938609375",
+    "upper_bound": "49999/50000",
+    "passes_in_python": true,
+    "floating_rate": 0.9999747777523079
+  },
+  "finite_scalar_threshold": 64,
+  "arithmetic_threshold": "eventual; not numerically evaluated",
+  "rows": [
+    {
+      "j": 64,
+      "log_count_saving_per_moment": 0.0001443392997202322,
+      "chosen_log_count_saving": 0.0001428469397473028
+    },
+    {
+      "j": 128,
+      "log_count_saving_per_moment": 0.00015640528088806767,
+      "chosen_log_count_saving": 0.0001428469397473028
+    },
+    {
+      "j": 256,
+      "log_count_saving_per_moment": 0.00016271671719124317,
+      "chosen_log_count_saving": 0.0001428469397473028
+    },
+    {
+      "j": 1024,
+      "log_count_saving_per_moment": 0.00016757922453765852,
+      "chosen_log_count_saving": 0.0001428469397473028
+    },
+    {
+      "j": 4096,
+      "log_count_saving_per_moment": 0.00016881264103528582,
+      "chosen_log_count_saving": 0.0001428469397473028
+    }
+  ],
+  "asymptotic_scalar_rates": {
+    "source_log_growth": 9.999500033329732e-05,
+    "count_log_saving_factor_512": 0.0001692253858788929,
+    "count_log_saving_factor_1024": 8.461269293944645e-05,
+    "note": "1024 fails this envelope, not a mathematical optimality claim"
+  },
+  "limitations": [
+    "Euler mass is absorbed only eventually; j=64 is not a full bound threshold.",
+    "Every fixed prime-count class remains eventually.",
+    "No signed low-count floor or new zero exclusion follows."
+  ]
+}

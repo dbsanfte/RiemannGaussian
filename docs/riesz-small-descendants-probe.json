@@ -1,0 +1,75 @@
+{
+  "scope": "floating actual-prime insertion probe on model base logarithms",
+  "rows": [
+    {
+      "N": 640,
+      "inserted_primes": 34579,
+      "pair_saturation_margin": 7.918068916421252,
+      "maximal_relative_compensation": 0.028379723286677257,
+      "signed_correction_relative_to_base": {
+        "0.0": [
+          -0.028379723286677257,
+          -0.0
+        ],
+        "54.0": [
+          -0.0006572832336907076,
+          -0.0005906070109267787
+        ],
+        "100.0": [
+          -0.0006020792524653025,
+          -0.0006174569966458299
+        ]
+      },
+      "remaining_fraction_even_with_optimal_phases": 0.9716202767133227
+    },
+    {
+      "N": 1536,
+      "inserted_primes": 173514,
+      "pair_saturation_margin": 51.691904724635634,
+      "maximal_relative_compensation": 0.013879541547103587,
+      "signed_correction_relative_to_base": {
+        "0.0": [
+          -0.013879541547103587,
+          -0.0
+        ],
+        "54.0": [
+          -0.000283323547751782,
+          -0.0002471709876636872
+        ],
+        "100.0": [
+          -0.0002619569099714971,
+          -0.00025737568703924506
+        ]
+      },
+      "remaining_fraction_even_with_optimal_phases": 0.9861204584528964
+    },
+    {
+      "N": 4096,
+      "inserted_primes": 1077871,
+      "pair_saturation_margin": 182.83765788247598,
+      "maximal_relative_compensation": 0.00603403575070066,
+      "signed_correction_relative_to_base": {
+        "0.0": [
+          -0.00603403575070066,
+          -0.0
+        ],
+        "54.0": [
+          -0.00010131932124924549,
+          -9.518161209723955e-05
+        ],
+        "100.0": [
+          -9.575745565014237e-05,
+          -0.00010090600817221155
+        ]
+      },
+      "remaining_fraction_even_with_optimal_phases": 0.9939659642492994
+    }
+  ],
+  "limitations": [
+    "The three equal base logarithms are a model, not actual prime labels.",
+    "No roundoff enclosure, no cofinal conclusion from these samples.",
+    "No population or phase transport between different base triples.",
+    "Only descendants formed by appending factors are tested; splitting or replacing large primes is not tested.",
+    "The whole signed core complement remains unpaid."
+  ]
+}

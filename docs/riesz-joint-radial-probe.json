@@ -1,0 +1,78 @@
+{
+  "scope": "uncertified scalar diagnostics; exact bounds checked separately in Lean",
+  "radius_ceiling": 0.50005,
+  "summable_kernel_gap": 0.4999961853027344,
+  "proved_joint_saving": 2.5e-06,
+  "rows": [
+    {
+      "part": "residual above share",
+      "prime_share": 0.6,
+      "tilt": 1.025,
+      "allocation_log_rate": -8.104301167029433e-05,
+      "proved_allocation_saving": 8e-05,
+      "radial_endpoints": [
+        1.984,
+        2.016
+      ],
+      "samples": [
+        {
+          "total_log_over_order": 1.984,
+          "radial_log_rate": 7.539166244396878e-05,
+          "joint_log_rate_with_actual_tilt": -5.6513492263255555e-06,
+          "joint_log_rate_with_proved_saving": -4.60833755603123e-06
+        },
+        {
+          "total_log_over_order": 2.0,
+          "radial_log_rate": 0.00010762439486455833,
+          "joint_log_rate_with_actual_tilt": 2.6581383194263994e-05,
+          "joint_log_rate_with_proved_saving": 2.762439486455832e-05
+        },
+        {
+          "total_log_over_order": 2.016,
+          "radial_log_rate": 7.58550791977175e-05,
+          "joint_log_rate_with_actual_tilt": -5.187932472576831e-06,
+          "joint_log_rate_with_proved_saving": -4.144920802282506e-06
+        }
+      ]
+    },
+    {
+      "part": "assigned part below share",
+      "prime_share": 0.59,
+      "tilt": 0.985,
+      "allocation_log_rate": -2.907378519692149e-05,
+      "proved_allocation_saving": 2.857142857142857e-05,
+      "radial_endpoints": [
+        1.974,
+        2.028
+      ],
+      "samples": [
+        {
+          "total_log_over_order": 1.974,
+          "radial_log_rate": 2.2285664080134993e-05,
+          "joint_log_rate_with_actual_tilt": -6.788121116786498e-06,
+          "joint_log_rate_with_proved_saving": -6.285764491293578e-06
+        },
+        {
+          "total_log_over_order": 2.0,
+          "radial_log_rate": 0.00010762439486455833,
+          "joint_log_rate_with_actual_tilt": 7.855060966763684e-05,
+          "joint_log_rate_with_proved_saving": 7.905296629312976e-05
+        },
+        {
+          "total_log_over_order": 2.028,
+          "radial_log_rate": 1.063637537934703e-05,
+          "joint_log_rate_with_actual_tilt": -1.843740981757446e-05,
+          "joint_log_rate_with_proved_saving": -1.793505319208154e-05
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No directed rounding; numeric output is not a proof",
+    "The central saddle still has positive envelope exponent",
+    "The assigned-part estimate does not bound the raw signed contribution",
+    "The full core has no independent cofinal floor from this probe",
+    "The theorem bounds have an unevaluated finite majorant constant"
+  ],
+  "source_sha256": "ce31d5e95ab37ed78bfeda8696d16ad2f1d8211ca27929aa02f615c460d03aa3"
+}
