@@ -16,17 +16,17 @@
       "changeReason": "The direct joint-floor theorem avoids unnecessary separate packet bounds. Actual disjoint four-prime supplies now pay balanced and small-prime triple populations while retaining positive credits, original weights and the complete signed complement."
     },
     "latestUpdate": {
-      "sequence": 85,
-      "id": "literal-five-prime-region-floor",
+      "sequence": 86,
+      "id": "literal-five-prime-incidence-floor",
       "kind": "theorem",
-      "title": "Literal five-prime lower bound now pays every angular boundary.",
-      "body": "Lean now transfers the full ordered favorable region to disjoint literal five-prime populations. The lower bound retains 99.6% of its exact angular integral, less a total 1/50000 mesh-and-boundary cost, all multiplied by the original radial/phase factor. Original weights, phase and the entire signed complement remain intact.",
-      "next": "Compare this integral with the checked two-dimensional supply certificate, then combine the four/five-prime budgets without double spending. The joint signed floor, restricted zero exclusion and RH remain open.",
+      "title": "Exact incidence budget reaches the literal five-prime floor.",
+      "body": "Lean now proves that the six labelled large-prime incidences, with their exact one-half factor, fit inside the ordered five-prime credit. The integral comparison covers equality boundaries and feeds directly into the signed finite-prime lower bound, retaining the original weights and complementary carrier.",
+      "next": "Identify the certificate\u2019s two-dimensional integral with this four-dimensional pair budget. Its numerical constant cannot yet be substituted; combined spending and the whole joint floor remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszFiveRegionFloorTheorem"
+        "rieszFiveIncidenceFloorTheorem"
       ],
-      "documentation": "docs/zeta-riesz-ordered-capacity.md#the-favorable-five-prime-region-has-a-literal-lower-bound"
+      "documentation": "docs/zeta-riesz-ordered-capacity.md#the-six-incidences-fit-the-literal-supply"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -204,6 +204,41 @@
       "scopePath": [
         "gaussianPhaseBandToolkit",
         "rieszFiveRegionFloorScope"
+      ],
+      "documentation": "docs/zeta-riesz-ordered-capacity.md"
+    },
+    {
+      "id": "five-incidence-floor",
+      "label": "Literal five-prime incidence floor \u00b7 exact one-half factor",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveIncidenceFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveIncidenceIntegralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveIncidencePointwiseTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveIncidenceSumTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveIncidenceCoverTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveIncidenceJacobianTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFiveIncidenceScope"
       ],
       "documentation": "docs/zeta-riesz-ordered-capacity.md"
     },
@@ -9150,6 +9185,7 @@
     "ZetaRieszFourInteriorBudget": "arithmetic",
     "ZetaRieszFourAngularDomain": "arithmetic",
     "ZetaRieszFiveInteriorBudget": "arithmetic",
-    "ZetaRieszFiveAngularBoundary": "arithmetic"
+    "ZetaRieszFiveAngularBoundary": "arithmetic",
+    "ZetaRieszFiveAngularIncidence": "arithmetic"
   }
 }

@@ -9,8 +9,11 @@ exponential small-prime head using one actual supply with unused credit
 retained. The [latest five-prime lower bound](zeta-riesz-ordered-capacity.md#the-favorable-five-prime-region-has-a-literal-lower-bound)
 transfers the entire ordered favorable angular region, retaining 99.6% of
 its integral and paying a total angular cost of `1/50000`. The complete
-complement stays signed. Comparison with the certified pair integral,
-combined disjoint spending and the whole-core floor are still open.
+complement stays signed. The [six-incidence inequality](zeta-riesz-ordered-capacity.md#the-six-incidences-fit-the-literal-supply)
+now transfers the exact one-half pair budget into this literal floor,
+including ordering ties and all integral conditions. Its Fubini identification
+with the two-dimensional certificate, combined disjoint spending and the
+whole-core floor are still open.
 The older `-3/40` criterion
 and all unsuccessful transfer audits below remain valid; they are not the
 minimal current joint target.

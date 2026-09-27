@@ -149,10 +149,10 @@ Work directly on a cofinal signed floor for J+C, retaining the original arithmet
 
 ### Latest Update
 
-**Literal five-prime lower bound now pays every angular boundary.** Lean now transfers the full ordered favorable region to disjoint literal five-prime populations. The lower bound retains 99.6% of its exact angular integral, less a total 1/50000 mesh-and-boundary cost, all multiplied by the original radial/phase factor. Original weights, phase and the entire signed complement remain intact.
-Compare this integral with the checked two-dimensional supply certificate, then combine the four/five-prime budgets without double spending. The joint signed floor, restricted zero exclusion and RH remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszFiveAngularBoundary.lean#L374)
-· [Proof details](docs/zeta-riesz-ordered-capacity.md#the-favorable-five-prime-region-has-a-literal-lower-bound).
+**Exact incidence budget reaches the literal five-prime floor.** Lean now proves that the six labelled large-prime incidences, with their exact one-half factor, fit inside the ordered five-prime credit. The integral comparison covers equality boundaries and feeds directly into the signed finite-prime lower bound, retaining the original weights and complementary carrier.
+Identify the certificate’s two-dimensional integral with this four-dimensional pair budget. Its numerical constant cannot yet be substituted; combined spending and the whole joint floor remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszFiveAngularIncidence.lean#L430)
+· [Proof details](docs/zeta-riesz-ordered-capacity.md#the-six-incidences-fit-the-literal-supply).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

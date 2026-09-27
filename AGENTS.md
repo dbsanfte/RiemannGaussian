@@ -3678,6 +3678,27 @@ documentation, status and explorers. Preserve the optional cover cache;
 do not rerun exhaustive verification or add it to ordinary CI. Do not use
 subagents.
 
+`ZetaRieszFiveAngularIncidence.eventually_pair_integral_core_floor` now
+transfers the exact one-half pair-density integral over any measurable
+subset of the unordered padded chamber into the same literal five-prime
+floor, retaining 996/1000 and the existing total 1/50000 angular cost.
+The six large-share relabellings have unit absolute Jacobian, preserve the
+five-share denominator, and count each of the three hinge caps twice.
+`half_integral_pairDensity_le` proves the comparison with the ordered
+three-cap density; sorting covers ties and does not assume disjoint
+preimages. Every integrability condition is discharged. No new angular
+loss or discarded boundary enters. The literal corollary has explicit
+17/25<=lo, lo<=L/t<=hi and all preceding mesh/core premises, with unchanged
+arithmetic masks, full phase and signed complement. This is not another
+supply to spend alongside the already credited five-prime population.
+The remaining certificate comparison is the exact Fubini/domain identity
+with its two-dimensional least-share/pair integral. Do NOT substitute
+34261/250000 until that identity is proved. No full joint floor, new
+zero exclusion or RH result follows. Keep optional cover inputs frozen,
+public endpoints and both top-ten lists unchanged. The user authorized
+committing and pushing this completed checked slice before further work;
+no subagents are authorized.
+
 ## Soundness invariant
 
 The repository must remain a continuous, bottom-up Lean proof chain after

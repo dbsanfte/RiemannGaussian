@@ -549,6 +549,50 @@ comparison, common phase-period aggregation, the other seven bins and one
 combined disjoint spending ledger. Other signs/counts and the independent
 whole joint floor remain open. No zero exclusion follows from this slice.
 
+## The six incidences fit the literal supply
+
+[`ZetaRieszFiveAngularIncidence.half_integral_pairDensity_le`](../RiemannGaussian/ZetaRieszFiveAngularIncidence.lean)
+now pays the incidence part of that comparison. Keep `x=(r,b,a,q)` and
+`p=1-r-b-a-q`. The unordered chamber fixes `1/100<=r<=b`, puts each of
+`a,q,p` between `b` and `1/2`, and imposes both padded saturation conditions
+on every large-prime incidence. For any measurable subset `E` of this
+chamber, define the paired budget
+
+```math
+I_E=\frac12\int_E
+\frac{\min\{r,\max(0,\min(lo-(a+q),1-hi-p))\}}
+{hi\,rbaqp}\,dx.
+```
+
+Lean proves `I_E <= D_5(lambda;lo,hi)` whenever
+`17/25<=lambda` and `lo<=lambda<=hi`. The six label permutations of
+`a,q,p` have unit absolute Jacobian and preserve the denominator. Their
+cap sum is exactly twice the three-cap numerator, so the factor `1/2`
+is retained before integration. Sorting covers equality faces as well.
+The proof uses a nonnegative covering inequality and does not assume the
+six preimages are disjoint. All integrability conditions are proved, with
+no extra angular error or removed boundary.
+
+[`eventually_pair_integral_core_floor`](../RiemannGaussian/ZetaRieszFiveAngularIncidence.lean)
+substitutes this comparison into the literal prime-sum estimate:
+
+```math
+\operatorname{Re}(\mathrm{coreResponse})\ge
+\operatorname{Re}(\mathrm{signedRest})+
+\left(\frac{996}{1000}I_E-\frac1{50000}\right)F.
+```
+
+Here `F` and every arithmetic mask are exactly those in the preceding
+ordered-region theorem. This corollary requires `17/25<=lo`, retains the
+same disjoint five-prime supply and the full signed complement, and uses
+no zero hypothesis. It does not spend a second copy of the supply.
+
+The **remaining comparison is Fubini and the exact certificate domain**:
+identify the optional two-dimensional integral with `I_E` for its literal
+least-share and large-pair fibres. The certified `34261/250000` remains
+unavailable for substitution until that bridge is proved. Common phase
+aggregation, other bins and the independent joint floor remain open.
+
 ## Numerical test and remaining proof
 
 The optional deterministic
