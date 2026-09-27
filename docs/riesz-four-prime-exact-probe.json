@@ -1,0 +1,114 @@
+{
+  "scope": "Uncertified density diagnostic; no actual prime-sum bound",
+  "normalization": "Coefficient/N at T=2N; common radial and phase factors omitted",
+  "rows": [
+    {
+      "N": 4096,
+      "seed": 17,
+      "samples": 65536,
+      "cutoff_ratio": 0.6910164213316953,
+      "old_positive_debit": 3.1991224323093435,
+      "exact_positive_debit": 0.2031498877863421,
+      "old_debit_on_zero_charge_sector": 2.210322171556523,
+      "exact_negative_debit": 0.026301586937045502,
+      "floating_max_errors": {
+        "positive_identity": 1.4502288259166107e-15,
+        "negative_identity": 1.4467593789646571e-15,
+        "marked_log_bound": 8.049116928532385e-16,
+        "second_large_positive": 8.033260790572715e-16
+      }
+    },
+    {
+      "N": 4096,
+      "seed": 29,
+      "samples": 65536,
+      "cutoff_ratio": 0.6910164213316953,
+      "old_positive_debit": 3.2007675928584827,
+      "exact_positive_debit": 0.20303572862696626,
+      "old_debit_on_zero_charge_sector": 2.207174423591345,
+      "exact_negative_debit": 0.026238260967336936,
+      "floating_max_errors": {
+        "positive_identity": 1.2906342661267445e-15,
+        "negative_identity": 1.2836953722228372e-15,
+        "marked_log_bound": 8.326672684688674e-16,
+        "second_large_positive": 9.63991294868726e-16
+      }
+    },
+    {
+      "N": 65536,
+      "seed": 17,
+      "samples": 65536,
+      "cutoff_ratio": 0.6928779599409043,
+      "old_positive_debit": 5.976862347565359,
+      "exact_positive_debit": 0.19800951812379297,
+      "old_debit_on_zero_charge_sector": 4.639835659256375,
+      "exact_negative_debit": 0.02902331247351136,
+      "floating_max_errors": {
+        "positive_identity": 1.3600232051658168e-15,
+        "negative_identity": 9.71445146547012e-16,
+        "marked_log_bound": 8.049116928532385e-16,
+        "second_large_positive": 8.011678021334722e-16
+      }
+    },
+    {
+      "N": 65536,
+      "seed": 29,
+      "samples": 65536,
+      "cutoff_ratio": 0.6928779599409043,
+      "old_positive_debit": 6.1759254893749524,
+      "exact_positive_debit": 0.1978160325024601,
+      "old_debit_on_zero_charge_sector": 4.829101171905784,
+      "exact_negative_debit": 0.028987810824252454,
+      "floating_max_errors": {
+        "positive_identity": 1.3600232051658168e-15,
+        "negative_identity": 9.614013625601666e-16,
+        "marked_log_bound": 8.049116928532385e-16,
+        "second_large_positive": 8.011678021334722e-16
+      }
+    },
+    {
+      "N": 1048576,
+      "seed": 17,
+      "samples": 65536,
+      "cutoff_ratio": 0.6930339648254307,
+      "old_positive_debit": 9.420677069067532,
+      "exact_positive_debit": 0.19763097515097158,
+      "old_debit_on_zero_charge_sector": 7.730719072287707,
+      "exact_negative_debit": 0.029257651188385903,
+      "floating_max_errors": {
+        "positive_identity": 1.3600232051658168e-15,
+        "negative_identity": 1.609823385706477e-15,
+        "marked_log_bound": 8.049116928532385e-16,
+        "second_large_positive": 9.611849470363078e-16
+      }
+    },
+    {
+      "N": 1048576,
+      "seed": 29,
+      "samples": 65536,
+      "cutoff_ratio": 0.6930339648254307,
+      "old_positive_debit": 8.664364580977242,
+      "exact_positive_debit": 0.197312447722672,
+      "old_debit_on_zero_charge_sector": 6.962003514429119,
+      "exact_negative_debit": 0.029221852402213973,
+      "floating_max_errors": {
+        "positive_identity": 1.304512053934559e-15,
+        "negative_identity": 1.609823385706477e-15,
+        "marked_log_bound": 8.049116928532385e-16,
+        "second_large_positive": 8.009874558635898e-16
+      }
+    }
+  ],
+  "source_sha256": {
+    "probe_riesz_four_prime_exact.py": "e3f9a7b4403f77129fcd7d9d9bc3c7e03227fa00c3d27ee08b633292aa7edfc3",
+    "probe_riesz_joint_core.py": "90ae1214f37cb083d729044bc41adf672dbcc55ff033fa8ee50704fc15ba95ae"
+  },
+  "limitations": [
+    "No prime-measure transport is proved or assumed by the Lean results.",
+    "Only the four-prime rough sector with every prime>N^2 is sampled.",
+    "No radial integration, actual phase correlation, or remaining-count bound is computed.",
+    "Independent Sobol scrambles are diagnostics, not certified integration error bars.",
+    "The separate small-four-prime-head estimate is proved in Lean, not inferred from this rough-sector probe.",
+    "No cofinal numerical floor, source decay, RH contradiction or zero exclusion follows."
+  ]
+}

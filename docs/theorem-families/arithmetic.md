@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**512 modules.** Source links open the definitions, hypotheses and proofs.
+**522 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -151,6 +151,9 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszBeyondPhysical](../../RiemannGaussian/ZetaRieszBeyondPhysical.lean)
 - [ZetaRieszBlockMass](../../RiemannGaussian/ZetaRieszBlockMass.lean)
 - [ZetaRieszCancellingSector](../../RiemannGaussian/ZetaRieszCancellingSector.lean)
+- [ZetaRieszCapacityCheck](../../RiemannGaussian/ZetaRieszCapacityCheck.lean)
+- [ZetaRieszCapacityCover](../../RiemannGaussian/ZetaRieszCapacityCover.lean)
+- [ZetaRieszCapacityIncidence](../../RiemannGaussian/ZetaRieszCapacityIncidence.lean)
 - [ZetaRieszCardinalityChamber](../../RiemannGaussian/ZetaRieszCardinalityChamber.lean)
 - [ZetaRieszCascadeAbelAudit](../../RiemannGaussian/ZetaRieszCascadeAbelAudit.lean)
 - [ZetaRieszCausalSurface](../../RiemannGaussian/ZetaRieszCausalSurface.lean)
@@ -222,12 +225,17 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszExtremePrimeProfile](../../RiemannGaussian/ZetaRieszExtremePrimeProfile.lean)
 - [ZetaRieszFilteredCompletion](../../RiemannGaussian/ZetaRieszFilteredCompletion.lean)
 - [ZetaRieszFilteredMaskAudit](../../RiemannGaussian/ZetaRieszFilteredMaskAudit.lean)
+- [ZetaRieszFiveCapacityCover](../../RiemannGaussian/ZetaRieszFiveCapacityCover.lean)
 - [ZetaRieszFivePrimeFloor](../../RiemannGaussian/ZetaRieszFivePrimeFloor.lean)
+- [ZetaRieszFivePrimePairSupply](../../RiemannGaussian/ZetaRieszFivePrimePairSupply.lean)
 - [ZetaRieszFivePrimeReserve](../../RiemannGaussian/ZetaRieszFivePrimeReserve.lean)
 - [ZetaRieszFixedCofactor](../../RiemannGaussian/ZetaRieszFixedCofactor.lean)
+- [ZetaRieszFourCapacityCover](../../RiemannGaussian/ZetaRieszFourCapacityCover.lean)
 - [ZetaRieszFourExtremeBound](../../RiemannGaussian/ZetaRieszFourExtremeBound.lean)
 - [ZetaRieszFourExtremeDeletion](../../RiemannGaussian/ZetaRieszFourExtremeDeletion.lean)
+- [ZetaRieszFourPrimeExact](../../RiemannGaussian/ZetaRieszFourPrimeExact.lean)
 - [ZetaRieszFourPrimeFloor](../../RiemannGaussian/ZetaRieszFourPrimeFloor.lean)
+- [ZetaRieszFourPrimeHead](../../RiemannGaussian/ZetaRieszFourPrimeHead.lean)
 - [ZetaRieszFourPrimeReserve](../../RiemannGaussian/ZetaRieszFourPrimeReserve.lean)
 - [ZetaRieszFourierCarrier](../../RiemannGaussian/ZetaRieszFourierCarrier.lean)
 - [ZetaRieszFrequencyDecay](../../RiemannGaussian/ZetaRieszFrequencyDecay.lean)
@@ -303,6 +311,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszOffDiagonalJoint](../../RiemannGaussian/ZetaRieszOffDiagonalJoint.lean)
 - [ZetaRieszOneSidedArithmetic](../../RiemannGaussian/ZetaRieszOneSidedArithmetic.lean)
 - [ZetaRieszOppositePrimes](../../RiemannGaussian/ZetaRieszOppositePrimes.lean)
+- [ZetaRieszOrderedCapacity](../../RiemannGaussian/ZetaRieszOrderedCapacity.lean)
 - [ZetaRieszOrderedEulerBound](../../RiemannGaussian/ZetaRieszOrderedEulerBound.lean)
 - [ZetaRieszOrderedEulerCompletion](../../RiemannGaussian/ZetaRieszOrderedEulerCompletion.lean)
 - [ZetaRieszOrderedWard](../../RiemannGaussian/ZetaRieszOrderedWard.lean)
@@ -409,6 +418,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszSemiprimeSupport](../../RiemannGaussian/ZetaRieszSemiprimeSupport.lean)
 - [ZetaRieszSharpMatching](../../RiemannGaussian/ZetaRieszSharpMatching.lean)
 - [ZetaRieszSharpPair](../../RiemannGaussian/ZetaRieszSharpPair.lean)
+- [ZetaRieszSharpPrimeWindows](../../RiemannGaussian/ZetaRieszSharpPrimeWindows.lean)
 - [ZetaRieszShiftedAllocation](../../RiemannGaussian/ZetaRieszShiftedAllocation.lean)
 - [ZetaRieszShiftedCenter](../../RiemannGaussian/ZetaRieszShiftedCenter.lean)
 - [ZetaRieszShiftedHeadBudget](../../RiemannGaussian/ZetaRieszShiftedHeadBudget.lean)

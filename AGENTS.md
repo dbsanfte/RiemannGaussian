@@ -3295,6 +3295,174 @@ old divergent allowance or add overlapping positive supplies. The user has
 authorized committing and pushing the accumulated work after this slice
 passes the full gates. No subagents are authorized.
 
+### Exact four-prime debit and small-head payment (2026-09-27)
+
+`ZetaRieszFourPrimeExact.positiveAllowance_eq` proves the ENTIRE positive
+four-prime coefficient is `(T/L)*max(0,logP+T-2L-sum_(q!=P)
+max(0,logq-(L-logP)))` on `0<L<=T`, `2T<=3L`. Combined with the already
+exact negative allowance, its `exactDebit` has no coefficient slack on
+either cosine sign. `re_four_atom_nonneg_of_second_large` proves all
+four-prime atoms with a second reflected-large prime nonnegative on the
+negative-cosine side. `norm_coefficient_le_marked_log` bounds the coefficient
+by `(T/L)*log r` for ANY marked prime. The compensated core theorem keeps
+the existing triple credits, quarter-supply and entire signed rest.
+
+`ZetaRieszFourPrimeHead.small_four_norm_upper` now bounds an ENTIRE selected
+four-factor population in each original radial slab, not a fixed cofactor.
+Two small factors cancel exactly; every surviving label with a prime<=Q has
+three cofactor prime logs>M/16. Actual Chebyshev counts preserve log(r)/r
+and give `B4*(1+log Q)*exp(2M)/(M+1)*radialEnvelope N M`, with
+`B4=1179648*(log 4)^4*exp 4`, M>=100, log Q<=M/32,
+all prime logs<=5M/4, and 271M/200<=L<=143M/100. The original moment N,
+allocation, complex phase and arbitrary finite selection are retained.
+For Q=N^2 this costs O(log N/N) RELATIVE to the actual positive supply,
+not a separate source-normalized decay bound.
+`eventually_core_joint_floor` simultaneously pays the radial balanced
+triple union, remaining small-prime triples and `radialFours` with ONE
+supply. Half+eighth+eighth is spent; all three positive credits and a quarter
+of that supply remain. Supplies and selected populations are proved disjoint.
+`mem_radialFours_of_geometry` covers the small-four-prime inner radial core
+below the already paid 60.1% dominant endpoint. The new floor keeps its
+outer-edge/large-prime omissions SIGNED; older independently paid errors
+remain available and may not be silently discarded. Existing full triple
+head and edge theorems remain intact. Do not add old/new supplies as
+independent budgets. The full numerical -79/1000 joint floor remains OPEN.
+The density probe is an uncertified single-slice diagnostic outside CI;
+no actual signed prime transport or remaining-count bound follows from it.
+See `docs/zeta-riesz-four-prime-exact.md`. Keep public endpoints unchanged
+and continue locally without subagents or unrequested commits.
+
+The continuation in the same module now pays an EXPONENTIAL prime head.
+`exists_log_head_budget` chooses a fixed delta>0, delta<=1/128, using
+min(1/128,b/(8*(B3+B4))) for the desired supply fraction b. The width
+depends on the positive-supply constant; neither an effective numerical
+width nor starting index is claimed. `eventually_joint_slabs_spending_log_head`
+handles EVERY log Q<=delta*N. `eventually_core_exponential_floor` uses
+Q=floor(exp(delta*N)), with the same half+eighth+eighth spending and the
+same quarter of ONE supply retained. This replaces the two head selections;
+never add their old budgets as independent credit.
+`exists_exponential_head_missed_bound` pays all omissions in the FULL
+three-/four-prime exponential head and balanced triple band by the existing
+radial and dominant errors: C*r^N+2*majorantMass*exp(-N/1000000), r<1.
+`eventually_core_full_exponential_floor` incorporates these payments into
+the original whole-core inequality; `tendsto_exponential_head_allowance`
+proves the error vanishes. `remaining_full_head_prime_log_gt` proves every
+prime of a surviving squarefree count-three/count-four label has log>delta*N
+throughout the core. `eventually_polynomial_le_exponential` proves the new
+threshold eventually exceeds every fixed polynomial. The actual signed
+complement, all three positive credits and quarter-supply remain together.
+No separate source-normalized head decay, control of counts>=5, numerical
+whole-core floor or zero exclusion follows. Continue locally without
+unrequested commits or subagents; keep public theorem endpoints unchanged.
+
+### Sharp cross-count population test (2026-09-27)
+
+`ZetaRieszSharpPrimeWindows` proves arbitrary relative log-mass, cardinality
+and harmonic-mass bounds for actual primes in fixed log widths h, uniformly
+for a>=alpha*N. Its ordered-product and signed-box theorems keep the original
+moment, allocation, coefficient and cosine. These are relative population
+budgets, not source-scale signed PNT/Abel transport; do not claim a rate or
+effective starting order. Pointwise signed box-score premises remain explicit.
+
+`ZetaRieszFivePrimePairSupply.neg_coefficient_eq_pair_balance_add_triples`
+evaluates the squarefree five-prime coefficient whenever 0<L<=T=log n and
+every prime log<=L. With D=T-L, its negative is (T/L)*(B+Q), where
+B=3T-4L+sum_p(log p-D)_+-sum_pair(D-log(pair))_+ and
+Q=sum_triple(D-log(triple))_+>=0. `re_atom_ge_pair_credit` gives actual
+positive credit weight*(T/L)*max(0,B)*(-cos(yT)) on the negative-cosine
+side for largest share<=1/2. `re_sum_ge_pair_credit` retains the entire
+signed complement. `eventually_re_atom_ge_raw_pair_credit` pays old
+allocation by any fixed relative loss on this favorable population;
+never reinterpret that as a separately decaying absolute carrier error.
+
+`eventually_core_cutoff_ratio` proves the ACTUAL moving core ratio lies
+eventually in [693/1015,139/195]. The optional four/five density probe uses
+interval coefficient envelopes across this whole range, four-largest
+share<=601/1000, five-least share>=1/100 and five-largest share<=1/2.
+Its sampled minimum ratios ~1.2988 (full credit) and ~1.1343 (pair minorant)
+are NOT certified integrals or actual population payments. Do not mark the
+whole adverse four-prime sector as paid: a certified angular cover, common
+phase-arc comparison, radial and mask control and disjoint spending remain.
+No new supply is added to the already-spent four-prime supply. Positive-cosine
+terms and all other counts stay signed. No change to the joint -79/1000-o(1)
+target, endpoints, zero-free claims or RH status. See
+`docs/zeta-riesz-four-five-capacity.md`. Continue locally without commits or
+subagents unless the user requests them.
+
+`ZetaRieszOrderedCapacity` now evaluates the ordered positive four-prime
+coefficient as a capped least-prime logarithm, proves its strict supporting
+geometry, and gives a direct debit bound for the literal negative-cosine
+atom. Its five-prime three-tent equality and interval-cap lower bound keep
+all original weights and both moving-cutoff edges. The cap and symmetric
+pair integrals are evaluated exactly, including the cap's zero lower endpoint
+when its height is positive. Rational log bounds include the sharp odd-denominator tail.
+`radial_kernel_le_phase_arc` bounds variation of the ORIGINAL radial
+factorial kernel by 501/500 on a total-log interval of width<=1/8 inside
+the core. This is a relative supply cost, not a source-scale absolute error.
+`moving_cutoff_stays_in_padded_bin` proves that 1/100000 padding keeps the
+ACTUAL moving length in one cutoff bin throughout the same phase arc for
+N>=5000. Do not drop arcs crossing unpadded cutoff-bin boundaries; that
+would leave an unestimated source-scale term. The numerical probe includes
+the proved padding.
+
+The optional ordered-capacity probe uses these scalar formulas and a
+two-dimensional symmetric five-prime integral. It suggests a minimum model
+surplus around 3.39% throughout the proved cutoff range. Floating-point
+enclosures and the angular symmetry/cover are NOT a Lean certificate or an
+actual prime-population payment. Common phase-arc
+transport, masks and disjoint spending remain open. Do not mark the adverse
+four-prime population paid, discard positive-cosine terms, or change public
+frontiers. See `docs/zeta-riesz-ordered-capacity.md`. Continue locally without
+unrequested commits or subagents.
+
+`ZetaRieszOrderedCapacity.cap_integral_zero_eq` now closes the cap integral's
+zero endpoint, retaining its harmonic cancellation. Parameter-monotone cap
+integrals, `five_fibre_lower`, the full debit root-box restriction and the
+coarse-cell density bound are proved. `ZetaRieszCapacityCheck` connects checked
+dyadic cap evaluations to actual real integrals, including whole parameter
+cells. `first_bin_fibre_credit` verifies one explicit interior fibre uniformly
+over its outer rectangle. This is NOT a certificate of the full 3.39% angular
+surplus, an actual prime-population payment, or a joint floor. The full angular
+cover/symmetry, phase-arc transfer, masks and disjoint spending remain open.
+The optional numerical probe still reports unverified floating-point totals;
+its metadata now includes the cap-checker source. Do not promote a checked
+individual cell into a checked whole-region claim. Keep the same joint target
+and public endpoints. A second unverified probe with four/six log-series terms
+retains a minimum model ratio around 1.03035, suggesting a cheaper finite
+certificate. Both diagnostic reports remain outside proof dependencies and
+ordinary CI. Continue locally without unrequested commits.
+
+The complete-cover continuation adds `ZetaRieszCapacityIncidence`:
+`re_sum_ge_ordered_pair_credit` proves the exact factor one half on the
+literal five-prime atom and retains every unselected label signed.
+`ZetaRieszCapacityCover` uses half-open cells and checks every split;
+`integral_bounds_of_check` sums the entire root, including zero-credit
+children, and `integrableOn_of_check` discharges integrability from checked
+bounded leaves and measurability. `ZetaRieszFourCapacityCover.check_sound`
+handles the full debit density, including empty fibres and coarse cells
+crossing the apparent singularity. `ZetaRieszFiveCapacityCover` proves the
+actual supply density measurable, nonnegative and integrable, its pair
+ordering/saturation geometry, and the exact cancellation of the half-incidence
+factor with the symmetric pair integral. `fibreExpression_le` and
+`expression_le_density` retain the moving boundary and sum all eight adjacent
+common fibres before the outer integration. Its `check_sound` and
+`integral_ge_of_checked_cover` connect accepted whole-cell computations to
+the actual selected supply integral. The deliberately large coarse upper
+bound in this lower checker is ONLY an integrability witness, never an
+arithmetic debit allowance.
+
+The optional capacity generators propose rational complete trees using
+floating point; generation is untrusted. Chunk the subsequent `decide +kernel`
+checks and assemble them with proved child-box equalities and exact totals.
+Keep these expensive computations outside default builds/CI. A successful
+checker theorem or a coarse smoke cover is not a certificate of the proposed
+3% surplus. Report a tight whole-region budget only after EVERY chunk and
+its assembly pass, and distinguish it from the still-open actual prime-window
+transport, common-cosine comparison, original mask control and disjoint
+spending. In particular no adverse four-prime population or full joint floor
+is paid by these checker soundness theorems alone. The same joint
+`-79/1000-o(1)` target and public endpoints remain unchanged.
+
 ## Soundness invariant
 
 The repository must remain a continuous, bottom-up Lean proof chain after

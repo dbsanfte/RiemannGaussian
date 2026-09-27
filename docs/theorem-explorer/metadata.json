@@ -3605,7 +3605,17 @@
     "ZetaRieszJoinedHeadCancellation": "arithmetic",
     "ZetaRieszDualityRateAudit": "arithmetic",
     "ZetaTiltedZeroSelection": "arithmetic",
-    "ZetaRieszSmallPrimeCompensation": "arithmetic"
+    "ZetaRieszSmallPrimeCompensation": "arithmetic",
+    "ZetaRieszFourPrimeExact": "arithmetic",
+    "ZetaRieszFourPrimeHead": "arithmetic",
+    "ZetaRieszSharpPrimeWindows": "arithmetic",
+    "ZetaRieszFivePrimePairSupply": "arithmetic",
+    "ZetaRieszOrderedCapacity": "arithmetic",
+    "ZetaRieszCapacityCheck": "arithmetic",
+    "ZetaRieszCapacityIncidence": "arithmetic",
+    "ZetaRieszCapacityCover": "arithmetic",
+    "ZetaRieszFourCapacityCover": "arithmetic",
+    "ZetaRieszFiveCapacityCover": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

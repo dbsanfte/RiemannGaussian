@@ -149,10 +149,10 @@ Work directly on a cofinal signed floor for J+C, retaining the original arithmet
 
 ### Latest Update
 
-**Joint signed compensation pays balanced and small-prime triples.** Lean now pays a fixed balanced triple band and every original triple containing a prime <=N^2 from one actual four-prime supply, retaining both positive triple credits and at least a quarter of that supply. The accumulated slice also proves sharper four- and five-prime debit inequalities, independent count/allocation/radial reductions, and audits unsuccessful bounds. Only a geometric radial-edge error is charged.
-Control the remaining signed complement and unused credits at -79/1000-o(1). The independent whole-core floor, restricted zero exclusion and RH remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszSmallPrimeCompensation.lean#L727)
-· [Proof details](docs/zeta-riesz-small-prime-compensation.md).
+**Exponential prime head paid; four/five comparison sharpened.** One actual four-prime supply now pays the balanced triple band and all three-/four-prime labels containing a prime <=exp(delta*N), for some fixed delta>0, while retaining positive credits and a quarter-supply. Lean also proves exact coefficient bounds, sharp prime-window budgets, incidence accounting and complete angular-cover checkers. Tight numerical cover checks remain optional and unfinished.
+Certify the angular surplus and transfer it to the original signed prime populations. The remaining joint floor, restricted zero exclusion and RH remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszFourPrimeHead.lean#L1120)
+· [Proof details](docs/zeta-riesz-four-prime-exact.md#the-whole-exponential-head-is-now-paid).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

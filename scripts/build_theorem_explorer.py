@@ -229,7 +229,10 @@ def build(*, raw_path=None, metadata=None, status_data=None):
                 if location["exact"]:
                     token = location["declaration"].split(".")[-1]
                     text = lines[location["line"] - 1]
-                    anonymous_instance = token.startswith("inst") and re.search(r"\binstance\s*:", text)
+                    # Lean also generates names for anonymous instances
+                    # whose explicit/implicit parameters precede the colon.
+                    anonymous_instance = token.startswith("inst") and re.search(
+                        r"\binstance\s*(?=[:(\[{])", text)
                     assert token in text or anonymous_instance, f"Source declaration moved: {n['id']}"
             source = {"path": source_path, "line": (location or {}).get("line"),
                       "exact": (location or {}).get("exact", False), "project": True,

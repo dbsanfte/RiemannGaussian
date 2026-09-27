@@ -1,0 +1,283 @@
+{
+  "scope": "Uncertified angular density comparison; no literal prime-sum bound",
+  "normalization": "Coefficient/log(n); radial factorial and complex phase omitted",
+  "samples_per_seed": 524288,
+  "seeds": [
+    41,
+    73
+  ],
+  "bins": 12,
+  "four_largest_max": "601/1000",
+  "five_largest_max": "1/2",
+  "five_least_min": 0.01,
+  "cutoff_range": [
+    "693/1015",
+    "139/195"
+  ],
+  "minimum_ratio": 1.2988426702045663,
+  "rows": [
+    {
+      "seed": 41,
+      "cutoff_lo": 0.6827586206896552,
+      "cutoff_hi": 0.6852637783672266,
+      "four_cost_upper_model": 0.12706486546907494,
+      "five_credit_lower_model": 0.1651568450108413,
+      "ratio": 1.2997837317274552,
+      "five_pair_minorant_lower_model": 0.14422062266835908,
+      "pair_minorant_ratio": 1.1350157428330139
+    },
+    {
+      "seed": 41,
+      "cutoff_lo": 0.6852637783672266,
+      "cutoff_hi": 0.6877689360447982,
+      "four_cost_upper_model": 0.12158765953205614,
+      "five_credit_lower_model": 0.1637122256370315,
+      "ratio": 1.3464542887583866,
+      "five_pair_minorant_lower_model": 0.14454451955912742,
+      "pair_minorant_ratio": 1.1888091284545106
+    },
+    {
+      "seed": 41,
+      "cutoff_lo": 0.6877689360447982,
+      "cutoff_hi": 0.6902740937223696,
+      "four_cost_upper_model": 0.11623784652447282,
+      "five_credit_lower_model": 0.16219552358518613,
+      "ratio": 1.3953761914458502,
+      "five_pair_minorant_lower_model": 0.14473554185866874,
+      "pair_minorant_ratio": 1.2451670964860484
+    },
+    {
+      "seed": 41,
+      "cutoff_lo": 0.6902740937223696,
+      "cutoff_hi": 0.6927792513999411,
+      "four_cost_upper_model": 0.11099511569057108,
+      "five_credit_lower_model": 0.16060424472459128,
+      "ratio": 1.4469487573878392,
+      "five_pair_minorant_lower_model": 0.14479033236422648,
+      "pair_minorant_ratio": 1.304474809214747
+    },
+    {
+      "seed": 41,
+      "cutoff_lo": 0.6927792513999411,
+      "cutoff_hi": 0.6952844090775125,
+      "four_cost_upper_model": 0.1058794811655622,
+      "five_credit_lower_model": 0.15893616806755406,
+      "ratio": 1.5011045229719997,
+      "five_pair_minorant_lower_model": 0.14471156413132938,
+      "pair_minorant_ratio": 1.3667573975456682
+    },
+    {
+      "seed": 41,
+      "cutoff_lo": 0.6952844090775125,
+      "cutoff_hi": 0.697789566755084,
+      "four_cost_upper_model": 0.10089525543637172,
+      "five_credit_lower_model": 0.15719358445045156,
+      "ratio": 1.557987873370157,
+      "five_pair_minorant_lower_model": 0.14448243331405325,
+      "pair_minorant_ratio": 1.4320042373565247
+    },
+    {
+      "seed": 41,
+      "cutoff_lo": 0.697789566755084,
+      "cutoff_hi": 0.7002947244326555,
+      "four_cost_upper_model": 0.09603971012272607,
+      "five_credit_lower_model": 0.15538876207640195,
+      "ratio": 1.6179636722959247,
+      "five_pair_minorant_lower_model": 0.14410279298940296,
+      "pair_minorant_ratio": 1.500450103454692
+    },
+    {
+      "seed": 41,
+      "cutoff_lo": 0.7002947244326555,
+      "cutoff_hi": 0.7027998821102269,
+      "four_cost_upper_model": 0.09130656973589092,
+      "five_credit_lower_model": 0.15353204368520582,
+      "ratio": 1.6815005111823318,
+      "five_pair_minorant_lower_model": 0.14358494005935368,
+      "pair_minorant_ratio": 1.5725586940203833
+    },
+    {
+      "seed": 41,
+      "cutoff_lo": 0.7027998821102269,
+      "cutoff_hi": 0.7053050397877985,
+      "four_cost_upper_model": 0.08670221265863855,
+      "five_credit_lower_model": 0.1516214757751619,
+      "ratio": 1.7487613190694637,
+      "five_pair_minorant_lower_model": 0.14291870764597903,
+      "pair_minorant_ratio": 1.6483859323022636
+    },
+    {
+      "seed": 41,
+      "cutoff_lo": 0.7053050397877985,
+      "cutoff_hi": 0.7078101974653699,
+      "four_cost_upper_model": 0.08220702548626178,
+      "five_credit_lower_model": 0.14965103016477493,
+      "ratio": 1.8204165553926315,
+      "five_pair_minorant_lower_model": 0.14210814259445295,
+      "pair_minorant_ratio": 1.728661774998801
+    },
+    {
+      "seed": 41,
+      "cutoff_lo": 0.7078101974653699,
+      "cutoff_hi": 0.7103153551429414,
+      "four_cost_upper_model": 0.0778293050097442,
+      "five_credit_lower_model": 0.14761540544393398,
+      "ratio": 1.896655834527272,
+      "five_pair_minorant_lower_model": 0.1411473074432196,
+      "pair_minorant_ratio": 1.8135496317941937
+    },
+    {
+      "seed": 41,
+      "cutoff_lo": 0.7103153551429414,
+      "cutoff_hi": 0.7128205128205128,
+      "four_cost_upper_model": 0.07359414246923476,
+      "five_credit_lower_model": 0.1455316698701395,
+      "ratio": 1.977489851600315,
+      "five_pair_minorant_lower_model": 0.140046580390977,
+      "pair_minorant_ratio": 1.9029582476556741
+    },
+    {
+      "seed": 73,
+      "cutoff_lo": 0.6827586206896552,
+      "cutoff_hi": 0.6852637783672266,
+      "four_cost_upper_model": 0.1270344288817534,
+      "five_credit_lower_model": 0.16499773681668867,
+      "ratio": 1.2988426702045663,
+      "five_pair_minorant_lower_model": 0.1440936700791614,
+      "pair_minorant_ratio": 1.1342883291370338
+    },
+    {
+      "seed": 73,
+      "cutoff_lo": 0.6852637783672266,
+      "cutoff_hi": 0.6877689360447982,
+      "four_cost_upper_model": 0.12155751441537517,
+      "five_credit_lower_model": 0.16357161502956874,
+      "ratio": 1.3456314553341955,
+      "five_pair_minorant_lower_model": 0.1444200091866917,
+      "pair_minorant_ratio": 1.1880796500428012
+    },
+    {
+      "seed": 73,
+      "cutoff_lo": 0.6877689360447982,
+      "cutoff_hi": 0.6902740937223696,
+      "four_cost_upper_model": 0.11621097487923579,
+      "five_credit_lower_model": 0.16206476813256074,
+      "ratio": 1.3945736906602437,
+      "five_pair_minorant_lower_model": 0.1446127269098916,
+      "pair_minorant_ratio": 1.2443981909640667
+    },
+    {
+      "seed": 73,
+      "cutoff_lo": 0.6902740937223696,
+      "cutoff_hi": 0.6927792513999411,
+      "four_cost_upper_model": 0.11099034468471225,
+      "five_credit_lower_model": 0.16048631848952613,
+      "ratio": 1.445948464665246,
+      "five_pair_minorant_lower_model": 0.14467244056237585,
+      "pair_minorant_ratio": 1.3034687023753604
+    },
+    {
+      "seed": 73,
+      "cutoff_lo": 0.6927792513999411,
+      "cutoff_hi": 0.6952844090775125,
+      "four_cost_upper_model": 0.10588050264251264,
+      "five_credit_lower_model": 0.15884758484719094,
+      "ratio": 1.5002534072161762,
+      "five_pair_minorant_lower_model": 0.1446027939882201,
+      "pair_minorant_ratio": 1.3657169202950106
+    },
+    {
+      "seed": 73,
+      "cutoff_lo": 0.6952844090775125,
+      "cutoff_hi": 0.697789566755084,
+      "four_cost_upper_model": 0.10091383108744932,
+      "five_credit_lower_model": 0.15714480387627452,
+      "ratio": 1.5572176993270317,
+      "five_pair_minorant_lower_model": 0.14439050520354715,
+      "pair_minorant_ratio": 1.4308296855603675
+    },
+    {
+      "seed": 73,
+      "cutoff_lo": 0.697789566755084,
+      "cutoff_hi": 0.7002947244326555,
+      "four_cost_upper_model": 0.09606104017485544,
+      "five_credit_lower_model": 0.15537416684806565,
+      "ratio": 1.6174524715248273,
+      "five_pair_minorant_lower_model": 0.14403916729791919,
+      "pair_minorant_ratio": 1.4994545867474618
+    },
+    {
+      "seed": 73,
+      "cutoff_lo": 0.7002947244326555,
+      "cutoff_hi": 0.7027998821102269,
+      "four_cost_upper_model": 0.09132106884455969,
+      "five_credit_lower_model": 0.15353827538646847,
+      "ratio": 1.6813017776632744,
+      "five_pair_minorant_lower_model": 0.14353609966673345,
+      "pair_minorant_ratio": 1.571774197157619
+    },
+    {
+      "seed": 73,
+      "cutoff_lo": 0.7027998821102269,
+      "cutoff_hi": 0.7053050397877985,
+      "four_cost_upper_model": 0.08670453132753006,
+      "five_credit_lower_model": 0.15163983495603717,
+      "ratio": 1.7489262975565976,
+      "five_pair_minorant_lower_model": 0.1428951354103171,
+      "pair_minorant_ratio": 1.6480699823002865
+    },
+    {
+      "seed": 73,
+      "cutoff_lo": 0.7053050397877985,
+      "cutoff_hi": 0.7078101974653699,
+      "four_cost_upper_model": 0.08220406117123646,
+      "five_credit_lower_model": 0.14968440905558175,
+      "ratio": 1.8208882495936458,
+      "five_pair_minorant_lower_model": 0.14211298328998112,
+      "pair_minorant_ratio": 1.7287829976422993
+    },
+    {
+      "seed": 73,
+      "cutoff_lo": 0.7078101974653699,
+      "cutoff_hi": 0.7103153551429414,
+      "four_cost_upper_model": 0.0778242177545274,
+      "five_credit_lower_model": 0.14767996980332543,
+      "ratio": 1.8976094339828322,
+      "five_pair_minorant_lower_model": 0.14118485261091335,
+      "pair_minorant_ratio": 1.8141506164088614
+    },
+    {
+      "seed": 73,
+      "cutoff_lo": 0.7103153551429414,
+      "cutoff_hi": 0.7128205128205128,
+      "four_cost_upper_model": 0.07357690169142753,
+      "five_credit_lower_model": 0.14560524766785926,
+      "ratio": 1.9789532356025232,
+      "five_pair_minorant_lower_model": 0.14010030343210703,
+      "pair_minorant_ratio": 1.9041343167679234
+    }
+  ],
+  "minimum_pair_minorant_ratio": 1.1342883291370338,
+  "identity_errors": [
+    {
+      "seed": 41,
+      "reflected_identity_max_error": 1.1657341758564144e-15
+    },
+    {
+      "seed": 73,
+      "reflected_identity_max_error": 1.1657341758564144e-15
+    }
+  ],
+  "source_sha256": {
+    "probe_riesz_four_five_capacity.py": "f05cf1ee77fe995cd4cfb10033e5cc853a182be06f384131d6b8fb9d56095874"
+  },
+  "limitations": [
+    "The interval envelopes are evaluated in floating point, not certified arithmetic.",
+    "Sobol scrambles do not give a rigorous integration error bound.",
+    "The four-prime upper model sets the unassigned allocation fraction to one.",
+    "The five-prime lower model also omits allocation; its eventual error must be paid.",
+    "Actual masks, counts, radial weights, phase cells and prior supply spending still require a proof.",
+    "No signed prime-density transport or cofinal numerical floor follows.",
+    "Opposing positive-cosine terms and all other counts stay in the signed rest."
+  ]
+}

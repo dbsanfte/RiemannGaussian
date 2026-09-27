@@ -16,17 +16,17 @@
       "changeReason": "The direct joint-floor theorem avoids unnecessary separate packet bounds. Actual disjoint four-prime supplies now pay balanced and small-prime triple populations while retaining positive credits, original weights and the complete signed complement."
     },
     "latestUpdate": {
-      "sequence": 82,
-      "id": "joint-floor-arithmetic-compensation",
+      "sequence": 83,
+      "id": "exponential-head-and-angular-capacity",
       "kind": "theorem",
-      "title": "Joint signed compensation pays balanced and small-prime triples.",
-      "body": "Lean now pays a fixed balanced triple band and every original triple containing a prime <=N^2 from one actual four-prime supply, retaining both positive triple credits and at least a quarter of that supply. The accumulated slice also proves sharper four- and five-prime debit inequalities, independent count/allocation/radial reductions, and audits unsuccessful bounds. Only a geometric radial-edge error is charged.",
-      "next": "Control the remaining signed complement and unused credits at -79/1000-o(1). The independent whole-core floor, restricted zero exclusion and RH remain open.",
+      "title": "Exponential prime head paid; four/five comparison sharpened.",
+      "body": "One actual four-prime supply now pays the balanced triple band and all three-/four-prime labels containing a prime <=exp(delta*N), for some fixed delta>0, while retaining positive credits and a quarter-supply. Lean also proves exact coefficient bounds, sharp prime-window budgets, incidence accounting and complete angular-cover checkers. Tight numerical cover checks remain optional and unfinished.",
+      "next": "Certify the angular surplus and transfer it to the original signed prime populations. The remaining joint floor, restricted zero exclusion and RH remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszSmallPrimeCompensationTheorem"
+        "rieszExponentialHeadCompensationTheorem"
       ],
-      "documentation": "docs/zeta-riesz-small-prime-compensation.md"
+      "documentation": "docs/zeta-riesz-four-prime-exact.md#the-whole-exponential-head-is-now-paid"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -38,6 +38,48 @@
     ]
   },
   "endpoints": [
+    {
+      "id": "exponential-head-compensation",
+      "label": "Actual joint credit \u00b7 exponential prime head paid",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszExponentialHeadCompensationTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszExponentialHeadCompensationScope"
+      ],
+      "documentation": "docs/zeta-riesz-four-prime-exact.md"
+    },
+    {
+      "id": "angular-capacity-checks",
+      "label": "Four/five angular budgets \u00b7 complete-cover checkers",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCapacityIncidenceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourAngularCoverTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveAngularCoverTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCapacitySymmetryTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszAngularCapacityScope"
+      ],
+      "documentation": "docs/zeta-riesz-ordered-capacity.md"
+    },
     {
       "id": "marked-prime-completion",
       "label": "Marked-prime completion \u00b7 geometric integrated error bounds",

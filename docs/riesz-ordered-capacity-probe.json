@@ -1,0 +1,188 @@
+{
+  "status": "UNVERIFIED_FLOATING_POINT_DIAGNOSTIC",
+  "normalization": "Coefficient/log(n) with unordered harmonic simplex density",
+  "cutoff_range": [
+    "693/1015",
+    "139/195"
+  ],
+  "four_largest_max": "601/1000",
+  "five_largest_max": "1/2",
+  "five_least_min": "1/100",
+  "five_region": "Three macro shares above both small shares; all pair macro sums >=1-low; macro total >=high",
+  "bins": 8,
+  "four_cells": 30000,
+  "five_cells": 10000,
+  "fibres": 8,
+  "cutoff_padding": 1e-05,
+  "log_lower_terms": 8,
+  "log_upper_terms": 16,
+  "minimum_ratio": 1.033921366974236,
+  "rows": [
+    {
+      "cutoff": [
+        0.6827486206896553,
+        0.6865263572060124
+      ],
+      "four": {
+        "lower": 0.11335744907034896,
+        "upper": 0.13272352047230848,
+        "active_cells": 30000,
+        "splits": 30128
+      },
+      "five": {
+        "lower": 0.13722568371636218,
+        "upper": 0.21733231453958352,
+        "active_cells": 10000,
+        "splits": 10130
+      },
+      "ratio": 1.033921366974236
+    },
+    {
+      "cutoff": [
+        0.6865063572060125,
+        0.6902840937223695
+      ],
+      "four": {
+        "lower": 0.10588242462522016,
+        "upper": 0.12413977161911893,
+        "active_cells": 30000,
+        "splits": 30121
+      },
+      "five": {
+        "lower": 0.1354855799130945,
+        "upper": 0.2130250446664333,
+        "active_cells": 10000,
+        "splits": 10135
+      },
+      "ratio": 1.0913954339209384
+    },
+    {
+      "cutoff": [
+        0.6902640937223696,
+        0.6940418302387268
+      ],
+      "four": {
+        "lower": 0.09866104703176021,
+        "upper": 0.1158551914435085,
+        "active_cells": 30000,
+        "splits": 30109
+      },
+      "five": {
+        "lower": 0.13358458372623963,
+        "upper": 0.20846767001378638,
+        "active_cells": 10000,
+        "splits": 10134
+      },
+      "ratio": 1.1530306243667643
+    },
+    {
+      "cutoff": [
+        0.6940218302387269,
+        0.6977995667550839
+      ],
+      "four": {
+        "lower": 0.091699779822462,
+        "upper": 0.10786181543170201,
+        "active_cells": 30000,
+        "splits": 30122
+      },
+      "five": {
+        "lower": 0.1315397418872752,
+        "upper": 0.20367579448746526,
+        "active_cells": 10000,
+        "splits": 10132
+      },
+      "ratio": 1.2195209338986701
+    },
+    {
+      "cutoff": [
+        0.697779566755084,
+        0.7015573032714412
+      ],
+      "four": {
+        "lower": 0.08499399007508932,
+        "upper": 0.10017057246168445,
+        "active_cells": 30000,
+        "splits": 30110
+      },
+      "five": {
+        "lower": 0.12931637077685898,
+        "upper": 0.19861664017081024,
+        "active_cells": 10000,
+        "splits": 10139
+      },
+      "ratio": 1.2909616826470955
+    },
+    {
+      "cutoff": [
+        0.7015373032714413,
+        0.7053150397877984
+      ],
+      "four": {
+        "lower": 0.07854632328980336,
+        "upper": 0.09277375945244486,
+        "active_cells": 30000,
+        "splits": 30113
+      },
+      "five": {
+        "lower": 0.12700335166569232,
+        "upper": 0.19337419585121363,
+        "active_cells": 10000,
+        "splits": 10143
+      },
+      "ratio": 1.3689576925121085
+    },
+    {
+      "cutoff": [
+        0.7052950397877985,
+        0.7090727763041555
+      ],
+      "four": {
+        "lower": 0.0723546787974265,
+        "upper": 0.08567410536637193,
+        "active_cells": 30000,
+        "splits": 30102
+      },
+      "five": {
+        "lower": 0.12453345384660318,
+        "upper": 0.18783005343968534,
+        "active_cells": 10000,
+        "splits": 10149
+      },
+      "ratio": 1.4535716867314261
+    },
+    {
+      "cutoff": [
+        0.7090527763041556,
+        0.7128305128205128
+      ],
+      "four": {
+        "lower": 0.06642372656198627,
+        "upper": 0.07887077622967831,
+        "active_cells": 30000,
+        "splits": 30104
+      },
+      "five": {
+        "lower": 0.12192219457528297,
+        "upper": 0.18220268060058847,
+        "active_cells": 10000,
+        "splits": 10163
+      },
+      "ratio": 1.545847529384462
+    }
+  ],
+  "source_sha256": {
+    "probe_riesz_ordered_capacity.py": "8073472f307f1dab6cf6f8d07ee6f7081d85d31c754eecf0bc23220a16d37630",
+    "ZetaRieszOrderedCapacity.lean": "d47ac227aac044c547e2f20b5e0fe23f336070b1acc5196a7218d03d3effdafa",
+    "ZetaRieszCapacityCheck.lean": "20fa9f72438632808062e6020228721f3638036c4b1fbd4a698772bd6d08c2a5"
+  },
+  "limitations": [
+    "No directed rounding or kernel-checked finite cover; these numbers are not certified bounds.",
+    "Lean proves the cap identities, signed atom inequalities, zero-endpoint formulas and cell enclosure lemmas.",
+    "A Lean cap checker and one interior supply-cell bound are proved; this full enumeration is not checked.",
+    "The angular symmetry/cover still needs formal transport.",
+    "Allocation, original masks, phase-arc population comparison and disjoint spending remain obligations.",
+    "No source-normalized prime-sum floor or zero exclusion follows.",
+    "All positive-cosine contributions and all other prime counts remain signed."
+  ]
+}
