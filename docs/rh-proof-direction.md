@@ -11,9 +11,14 @@ transfers the entire ordered favorable angular region, retaining 99.6% of
 its integral and paying a total angular cost of `1/50000`. The complete
 complement stays signed. The [six-incidence inequality](zeta-riesz-ordered-capacity.md#the-six-incidences-fit-the-literal-supply)
 now transfers the exact one-half pair budget into this literal floor,
-including ordering ties and all integral conditions. Its Fubini identification
-with the two-dimensional certificate, combined disjoint spending and the
-whole-core floor are still open.
+including ordering ties and all integral conditions. The
+[certificate transfer](zeta-riesz-ordered-capacity.md#the-first-bin-certificate-now-reaches-the-prime-sum)
+proves the exact Fubini identification without further loss. Its optional
+checked first-bin application gives a literal credit of `8529739/62500000`
+times the original favorable radial/phase factor. The adverse debit constant
+is `133421/1000000`; the constants leave more than two percent room, but the
+two phase factors still differ. Common-period aggregation, combined disjoint
+spending, the other seven bins and the whole-core floor remain open.
 The older `-3/40` criterion
 and all unsuccessful transfer audits below remain valid; they are not the
 minimal current joint target.

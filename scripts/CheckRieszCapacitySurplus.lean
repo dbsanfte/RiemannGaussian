@@ -12,7 +12,9 @@ import RieszFiveCapacityBin0.Assembly
 Both separately generated covers must be checked before running this file,
 with their directories on LEAN_PATH. This check is outside ordinary CI.
 The theorem certifies a continuum angular surplus and room for the stated
-boundary allowances. The whole five-prime arithmetic transfer is still open.
+boundary allowances. `CheckRieszFiveCapacityTransfer.lean` separately checks
+the literal five-prime credit. Common phase aggregation and disjoint joint
+spending remain open; this angular theorem alone does not supply them.
 -/
 
 open MeasureTheory RiemannGaussian

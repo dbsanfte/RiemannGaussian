@@ -3,9 +3,10 @@
 The target remains an independent cofinal floor for the **whole** joint
 carrier. Literal five-prime labels now pay one concrete interior
 four-prime, negative-cosine population and leave a proved positive surplus.
-Whole ordered-region arithmetic bounds now include their boundary costs;
-the favorable certificate-domain comparison, joint floor and zero exclusion
-remain open.
+Whole ordered-region arithmetic bounds now include their boundary costs.
+The exact certificate-domain comparison is proved, and the checked first
+bin gives a literal five-prime credit. Joint phase/spending aggregation,
+the remaining bins, the whole floor and zero exclusion remain open.
 The prior exponential-head payment and its signed complement remain
 unchanged; their supplies are not added to this payment without a combined
 disjoint ledger.
@@ -489,8 +490,8 @@ only after generating and checking the four-prime cover, with that directory
 on `LEAN_PATH`; it does not trust the manifest as a proof.
 
 This applies only inside the certificate's exact padded cutoff bin. The
-favorable five-prime ordered-region transfer and boundary budget are now
-proved below; comparison with its certificate's pair integral is still open.
+favorable five-prime ordered-region transfer, boundary budget and exact
+comparison with its certificate's pair integral are now proved below.
 The mesh and largest-share costs use part of
 the **single aggregate `1/2000` approximation allowance**; each later error
 cannot spend that allowance again. Other sign/phase/count sectors and the
@@ -539,15 +540,13 @@ their prime populations are disjoint. The final combined cost is
 `1/50000`. The very fine grid is finite and used symbolically; no grid
 enumeration is needed. The eventual starting order remains unevaluated.
 
-The new `D_5` has **not yet been compared** with the two-dimensional pair
-integral in the optional five-prime certificate. That comparison needs the
-exact incidence factor, change of variables and integral inequalities.
-Consequently the certified `0.137044` cannot yet be substituted into this
-theorem. Both errors above multiply the original radial/phase factor; they
-are not small source-normalized constants. The next steps are that angular
-comparison, common phase-period aggregation, the other seven bins and one
-combined disjoint spending ledger. Other signs/counts and the independent
-whole joint floor remain open. No zero exclusion follows from this slice.
+The comparison with the optional certificate's two-dimensional pair integral
+is now proved in the next two sections, and the checked first-bin application
+substitutes `34261/250000`. Both errors above multiply the original
+radial/phase factor; they are not small source-normalized constants. Common
+phase-period aggregation, the other seven bins and one combined disjoint
+spending ledger remain open, as do other signs/counts and the independent
+whole joint floor. No zero exclusion follows from this slice.
 
 ## The six incidences fit the literal supply
 
@@ -587,11 +586,63 @@ ordered-region theorem. This corollary requires `17/25<=lo`, retains the
 same disjoint five-prime supply and the full signed complement, and uses
 no zero hypothesis. It does not spend a second copy of the supply.
 
-The **remaining comparison is Fubini and the exact certificate domain**:
-identify the optional two-dimensional integral with `I_E` for its literal
-least-share and large-pair fibres. The certified `34261/250000` remains
-unavailable for substitution until that bridge is proved. Common phase
-aggregation, other bins and the independent joint floor remain open.
+The exact Fubini and certificate-domain comparison is now proved below.
+It retains the literal least-share and large-pair fibres, including their
+endpoints. Common phase aggregation, other bins and the independent joint
+floor remain open.
+
+## The first-bin certificate now reaches the prime sum
+
+[`ZetaRieszFiveAngularDomain.half_integral_fibre_eq`](../RiemannGaussian/ZetaRieszFiveAngularDomain.lean)
+identifies the certificate's two-dimensional integral exactly with `I_E`.
+The coordinates send `(r,b,a,q)` to `(a+q,1-r-b-a-q,r,a)` with determinant
+`-1`. Both scalar fibres remain half-open, their curved endpoints and the
+admissibility condition are unchanged, and bounded integrability justifies
+both Fubini exchanges. The exact half factor cancels the factor two in the
+symmetric pair integral. There is no additional angular loss.
+
+`supply_integral_le_ordered` therefore compares the certificate integral
+with `D_5`. `eventually_core_capacity_floor` applies it directly to the
+actual finite prime sum. For the certificate's outer domain, the pair sum
+is at most one and the third large share is at most one half; those
+comparison premises are proved explicitly in the optional application.
+
+[`CheckRieszFiveCapacityTransfer.lean`](../scripts/CheckRieszFiveCapacityTransfer.lean)
+imports the cached, kernel-checked first-bin assembly and proves
+
+```math
+\operatorname{Re}(\mathrm{coreResponse})\ge
+\operatorname{Re}(\mathrm{signedRest})+
+\frac{8529739}{62500000}\,F,
+\qquad
+\frac{8529739}{62500000}
+=\frac{996}{1000}\frac{34261}{250000}-\frac1{50000}.
+```
+
+The constant is exactly `0.136475824`. The theorem keeps the full original
+radial/phase factor `F`, all arithmetic masks, and every label outside the
+selected disjoint five-prime population in `signedRest`. It has no
+hypothetical-zero premise. The first-bin range is exactly
+`1979971/2900000 <= L/t <= 77646131/113100000`.
+
+Lean also checks the remaining room between the literal constants:
+
+```math
+\frac{8529739}{62500000}
+-\frac{102}{100}\frac{133421}{1000000}
+=\frac{96601}{250000000}>0.
+```
+
+This compares **constants**, not yet the two arithmetic populations: their
+favorable factor `F` and adverse factor `E` differ. They still require
+common phase-period aggregation and one disjoint spending ledger, including
+any previously used interior supply. The other seven bins and all unselected
+sign/count sectors remain open. The result is not the source-normalized
+`-79/1000-o(1)` floor and gives no zero exclusion.
+
+The optional application prints its terminal axiom dependencies. Only
+`propext`, `Classical.choice` and `Quot.sound` occur. Neither exhaustive
+cover assembly is imported by the ordinary project root or normal CI.
 
 ## Numerical test and remaining proof
 
@@ -609,7 +660,7 @@ integral uses eight fibres and the cap antiderivative. The large-pair
 integral uses the symmetric pair formula. The permutation factor `3/3!`
 is cancelled by the factor two in that formula. The finite incidence factor
 and exact symmetric-pair integration are now proved as described above.
-The full prime-population transport is still open.
+The exact certificate-to-prime-population transport is now proved above.
 
 The [recorded output](riesz-ordered-capacity-probe.json) uses 30,000 active
 four-prime cells and 10,000 five-prime cells per cutoff interval. It suggests
@@ -620,8 +671,7 @@ The first-bin pair of complete Lean covers now certifies that bin's
 angular surplus. The other seven bins remain unverified. The calculation
 alone does not prove a joint prime-sum floor: the adverse whole-domain
 transfer and favorable ordered-region transfer are now proved, including
-their boundary costs. The favorable integral still needs comparison with
-the certificate's pair integral.
+their boundary costs and the exact favorable certificate-domain comparison.
 
 A second [unverified run](riesz-ordered-capacity-fast-log-probe.json) uses
 only four odd-series terms for lower logarithms and six for upper ones.
@@ -630,8 +680,7 @@ bins. This is a candidate for reducing certificate cost; it is not a second
 proved surplus. The precise rational logarithm inequalities are already
 proved, but their complete numerical use and angular cover remain unchecked.
 
-The remaining proof must finish the other numerical bins, compare the
-favorable ordered integral with the certified pair integral and aggregate
+The remaining proof must finish the other numerical bins and aggregate
 the two arithmetic bounds on common negative-cosine arcs. Both cell
 transfers, their finite-family aggregation and their complete ordered-region
 boundary budgets are proved, as is the concrete interior payment above.
@@ -658,11 +707,12 @@ Generate and check a complete candidate for the tightest cutoff bin:
   --directory .lake/riesz-five-capacity-cover --jobs 2
 ```
 
-After both assemblies pass, check the literal first-bin debit and the
+After both assemblies pass, check the literal first-bin debit, credit and
 angular surplus without rerunning the exhaustive covers:
 
 ```sh
 lake env bash -c 'LEAN_PATH="$PWD/.lake/riesz-four-capacity-cover:$LEAN_PATH" lean -DwarningAsError=true scripts/CheckRieszFourCapacityTransfer.lean'
+lake env bash -c 'LEAN_PATH="$PWD/.lake/riesz-five-capacity-cover:$LEAN_PATH" lean -DwarningAsError=true scripts/CheckRieszFiveCapacityTransfer.lean'
 lake env bash -c 'LEAN_PATH="$PWD/.lake/riesz-four-capacity-cover:$PWD/.lake/riesz-five-capacity-cover:$LEAN_PATH" lean -DwarningAsError=true scripts/CheckRieszCapacitySurplus.lean'
 ```
 

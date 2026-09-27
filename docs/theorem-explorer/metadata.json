@@ -3629,7 +3629,8 @@
     "ZetaRieszFourAngularDomain": "arithmetic",
     "ZetaRieszFiveInteriorBudget": "arithmetic",
     "ZetaRieszFiveAngularBoundary": "arithmetic",
-    "ZetaRieszFiveAngularIncidence": "arithmetic"
+    "ZetaRieszFiveAngularIncidence": "arithmetic",
+    "ZetaRieszFiveAngularDomain": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

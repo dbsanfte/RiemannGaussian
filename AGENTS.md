@@ -3699,6 +3699,30 @@ public endpoints and both top-ten lists unchanged. The user authorized
 committing and pushing this completed checked slice before further work;
 no subagents are authorized.
 
+`ZetaRieszFiveAngularDomain.eventually_core_capacity_floor` now completes
+the certificate comparison. Its unit-Jacobian map and both justified Fubini
+exchanges identify the two-dimensional certificate integral with the exact
+one-half pair budget, retaining both half-open scalar fibres and every
+admissibility guard. `supply_integral_le_ordered` adds no error to the
+existing 996/1000 credit and total 1/50000 angular cost. The optional
+`scripts/CheckRieszFiveCapacityTransfer.lean` imports the already checked
+first-bin assembly and proves an actual credit of 8529739/62500000 times F.
+Its terminal axiom audit uses only the three permitted standard axioms.
+This constant exceeds 102/100 times the actual first-bin four-prime debit
+constant 133421/1000000 by 96601/250000000. F and the adverse factor E are
+still distinct: this scalar comparison is not a joint arithmetic payment.
+All original masks, full phase and signed complement remain. No new
+source-normalized constant, zero exclusion or RH follows. This supersedes
+the earlier notes that the incidence/Fubini certificate transfer is open.
+Keep both exhaustive covers optional and cached; do not rerun their
+verification or import either assembly into ordinary builds/CI. The next
+target is one disjoint spending ledger and common phase-period comparison,
+with the other seven bins and all unselected signs/counts still open.
+Do not double-spend the previous interior-five supply. The user authorized
+committing and pushing this completed slice before further proof work.
+No subagents are authorized; public endpoints and both top-ten lists stay
+unchanged.
+
 ## Soundness invariant
 
 The repository must remain a continuous, bottom-up Lean proof chain after

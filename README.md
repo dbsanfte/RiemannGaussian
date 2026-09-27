@@ -149,10 +149,10 @@ Work directly on a cofinal signed floor for J+C, retaining the original arithmet
 
 ### Latest Update
 
-**Exact incidence budget reaches the literal five-prime floor.** Lean now proves that the six labelled large-prime incidences, with their exact one-half factor, fit inside the ordered five-prime credit. The integral comparison covers equality boundaries and feeds directly into the signed finite-prime lower bound, retaining the original weights and complementary carrier.
-Identify the certificate’s two-dimensional integral with this four-dimensional pair budget. Its numerical constant cannot yet be substituted; combined spending and the whole joint floor remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszFiveAngularIncidence.lean#L430)
-· [Proof details](docs/zeta-riesz-ordered-capacity.md#the-six-incidences-fit-the-literal-supply).
+**Checked first-bin certificate reaches the literal five-prime sum.** Lean proves the exact integral transfer without another boundary loss. The optional checked certificate now gives a five-prime credit of 8529739/62500000 times its original radial/phase factor, retaining every mask and the complete signed complement.
+The credit and debit constants leave more than two percent room. Common phase aggregation, disjoint spending, the other seven bins and the whole joint floor remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszFiveAngularDomain.lean#L396)
+· [Proof details](docs/zeta-riesz-ordered-capacity.md#the-first-bin-certificate-now-reaches-the-prime-sum).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
