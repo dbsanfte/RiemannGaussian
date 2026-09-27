@@ -16,17 +16,17 @@
       "changeReason": "The direct joint-floor theorem avoids unnecessary separate packet bounds. Actual disjoint four-prime supplies now pay balanced and small-prime triple populations while retaining positive credits, original weights and the complete signed complement."
     },
     "latestUpdate": {
-      "sequence": 83,
-      "id": "exponential-head-and-angular-capacity",
+      "sequence": 84,
+      "id": "literal-four-prime-capacity-floor",
       "kind": "theorem",
-      "title": "Exponential prime head paid; four/five comparison sharpened.",
-      "body": "One actual four-prime supply now pays the balanced triple band and all three-/four-prime labels containing a prime <=exp(delta*N), for some fixed delta>0, while retaining positive credits and a quarter-supply. Lean also proves exact coefficient bounds, sharp prime-window budgets, incidence accounting and complete angular-cover checkers. Tight numerical cover checks remain optional and unfinished.",
-      "next": "Certify the angular surplus and transfer it to the original signed prime populations. The remaining joint floor, restricted zero exclusion and RH remain open.",
+      "title": "Literal four-prime debit bounded; first-bin angular surplus checked.",
+      "body": "Lean now bounds the selected adverse four-prime population by its complete angular integral, retaining the original weights and signed complement. In the first certified cutoff bin, the debit is at most 0.133421 times the original radial/phase factor. Optional exhaustive checks also prove a five-prime angular supply of at least 0.137044 and a two-percent surplus after budgeted losses.",
+      "next": "Transfer the full favorable five-prime integral to disjoint literal prime populations, then check the other cutoff bins. The joint signed floor, restricted zero exclusion and RH remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszExponentialHeadCompensationTheorem"
+        "rieszFourCapacityFloorTheorem"
       ],
-      "documentation": "docs/zeta-riesz-four-prime-exact.md#the-whole-exponential-head-is-now-paid"
+      "documentation": "docs/zeta-riesz-ordered-capacity.md#the-complete-adverse-angular-domain-is-now-paid"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -52,6 +52,152 @@
         "rieszExponentialHeadCompensationScope"
       ],
       "documentation": "docs/zeta-riesz-four-prime-exact.md"
+    },
+    {
+      "id": "interior-cell-compensation",
+      "label": "Literal four/five payment \u00b7 positive interior surplus",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszInteriorCellCompensationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointCellFamilyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourCellDebitTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszInteriorCellCompensationScope"
+      ],
+      "documentation": "docs/zeta-riesz-ordered-capacity.md"
+    },
+    {
+      "id": "adverse-four-boundary-cover",
+      "label": "Adverse four-prime debit \u00b7 ordering boundaries covered",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourBoundaryCoverTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointBoundaryFamilyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourOrderingGapTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFourBoundaryCoverScope"
+      ],
+      "documentation": "docs/zeta-riesz-ordered-capacity.md"
+    },
+    {
+      "id": "four-ordering-budget",
+      "label": "Literal ordering-boundary debit \u00b7 at most 1/1250",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourOrderingBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourOrderingPopulationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTwoPercentPhaseTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFourOrderingBudgetScope"
+      ],
+      "documentation": "docs/zeta-riesz-ordered-capacity.md"
+    },
+    {
+      "id": "four-integral-floor",
+      "label": "Literal adverse four-prime floor \u00b7 0.3% + 1/100000 mesh cost",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourIntegralFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourIntegralPopulationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourIntegralMeshTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFourIntegralFloorScope"
+      ],
+      "documentation": "docs/zeta-riesz-ordered-capacity.md"
+    },
+    {
+      "id": "four-capacity-floor",
+      "label": "Literal four-prime floor \u00b7 complete angular domain, boundaries paid",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourCapacityFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourCapacityPopulationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourCapacityDomainTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFourCapacityFubiniTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFourCapacityFloorScope"
+      ],
+      "documentation": "docs/zeta-riesz-ordered-capacity.md"
+    },
+    {
+      "id": "coupled-five-prime-cells",
+      "label": "Literal five-prime cells \u00b7 99.7% signed credit",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoupledFiveCellTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnedFiveCoreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMacroPrimePopulationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCommonPhaseBudgetTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCoupledFiveCellScope"
+      ],
+      "documentation": "docs/zeta-riesz-ordered-capacity.md"
     },
     {
       "id": "angular-capacity-checks",
@@ -8963,6 +9109,10 @@
     "ZetaRieszRectanglePhase": "arithmetic",
     "ZetaRieszRectangleError": "arithmetic",
     "ZetaRieszRectangleMaskError": "arithmetic",
-    "ZetaRieszRectangleAllocation": "arithmetic"
+    "ZetaRieszRectangleAllocation": "arithmetic",
+    "ZetaRieszFourBoundaryCover": "arithmetic",
+    "ZetaRieszFourOrderingBudget": "arithmetic",
+    "ZetaRieszFourInteriorBudget": "arithmetic",
+    "ZetaRieszFourAngularDomain": "arithmetic"
   }
 }

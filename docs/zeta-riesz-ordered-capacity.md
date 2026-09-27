@@ -1,11 +1,12 @@
 # Ordered four/five capacity: exact signed bounds and quantitative test
 
 The target remains an independent cofinal floor for the **whole** joint
-carrier. This slice sharpens the attempted payment of its adverse
-four-prime, negative-cosine population with unspent favorable five-prime
-labels. It does **not** establish that population payment, the joint floor,
-or a zero exclusion. The prior exponential-head payment and its signed
-complement remain unchanged.
+carrier. Literal five-prime labels now pay one concrete interior
+four-prime, negative-cosine population and leave a proved positive surplus.
+The whole angular population, joint floor and zero exclusion remain open.
+The prior exponential-head payment and its signed complement remain
+unchanged; their supplies are not added to this payment without a combined
+disjoint ledger.
 
 ## Exact signed bounds
 
@@ -147,6 +148,350 @@ all child-box identities and the exact total. A generator's floating-point
 estimate, a passing pilot chunk, or a coarse smoke cover cannot establish
 the proposed tight total. These checks run outside ordinary builds and CI.
 
+The first padded-bin debit cover has now passed locally: all 30,128 leaves
+in 274 chunks, the complete assembly, and its terminal axiom audit. The
+generated `RieszFourCapacityBin0.Assembly.whole_debit_upper` proves the exact
+upper bound **133011/1000000** throughout
+`1979971/2900000 <= L/T <= 77646131/113100000`. Reproduce it with the optional
+commands below; the generated proof is outside the default root. This is
+the complete angular debit, now transferred to an actual adverse-prime
+floor below. The matching first-bin five-prime cover has also passed:
+10,131 leaves in 713 chunks and the complete assembly prove
+`RieszFiveCapacityBin0.Assembly.whole_supply_lower`, with exact lower bound
+**34261/250000 = 0.137044**. The optional
+[`CheckRieszCapacitySurplus.lean`](../scripts/CheckRieszCapacitySurplus.lean)
+combines both checked assemblies and audits the terminal axioms. Its
+`first_bin_angular_surplus` leaves **two percent** angular surplus after
+one `1/1250` ordering cost and one aggregate `1/2000` approximation budget.
+The other cutoff bins and the complete favorable prime-population transfer
+remain unfinished; this is not a whole arithmetic floor.
+
+## A proved common phase and population budget
+
+[`ZetaRieszPhaseBudget.lean`](../RiemannGaussian/ZetaRieszPhaseBudget.lean)
+now pays two explicit costs in the proposed transfer. Its
+`original_radial_phase_budget` keeps the exact original factorial kernel
+and cosine over a complete phase period inside the core, for `abs(y)>=54`.
+If angular supply is at least `103/100` times debit, a one-percent aggregate
+population/allocation loss, radial oscillation `501/500`, and phase
+uncertainty at most `1/10000` still leave a strictly positive joint budget.
+`weighted_joint_phase_budget` gives the quantitative lower bound
+`(3/100)*D*V0`, where `D` is the angular debit and `V0>0` the radial minimum.
+The full period is retained, including neighborhoods of cosine zeros.
+
+`tuple_negative_phase_enclosure` bounds the phase uncertainty of a literal
+prime tuple by `abs(y)*k*h`, where each logarithmic prime window has fixed
+width `h`. Such a width can be chosen once for the fixed height. It does not
+shrink with the moment order. `eventually_phase_window_mass` proves the
+actual harmonic prime mass lies between `9999/10000` and `10001/10000`
+times `h/a`, uniformly over `a>=alpha*N`, for fixed `0<h<=1/100000` and
+`alpha>0`. `eventually_phase_tuple_mass` combines up to five legs with
+relative bounds `999/1000` and `1001/1000`.
+
+These are relative counting and signed phase budgets. They do not assert
+source-scale prime-density approximation. The angular cells still have to
+be transferred to disjoint actual prime populations, with their original
+masks and unspent supply. The one-percent budget is not a proof that those
+remaining costs have been paid. No whole-carrier floor follows yet.
+
+## Proved signed transfer for literal five-prime cells
+
+[`ZetaRieszCoupledWindow`](../RiemannGaussian/ZetaRieszCoupledWindow.lean)
+puts the final prime in the exact interval
+` t-log(m) < log(p) <= t+h-log(m) `, where `m` is the actual four-prime
+cofactor. Every product therefore has `t<log(m*p)<=t+h`. Its cosine is
+retained. Strict largest-prime ownership makes the resulting products
+unique, and the original core masks are proved from the cell geometry.
+`eventually_owned_five_core_lower` bounds any finite collection of these
+ordered cofactor windows inside `coreResponse`, retaining the entire signed
+complement.
+
+[`ZetaRieszMacroPrimeWindows`](../RiemannGaussian/ZetaRieszMacroPrimeWindows.lean)
+now allows the four outer log intervals to have widths proportional to `N`.
+Exact unions of fixed-width windows prove relative harmonic bounds
+`(4999/5000)*H/(a+H)` and `(5001/5000)*H/a`, uniformly for
+`a>=alpha*N`, `H>=beta*N`, with fixed positive `alpha,beta`.
+For up to four outer legs the combined constants are `999/1000` and
+`1001/1000`. Ordered windows enumerate cofactors once. These are relative
+positive population bounds, not signed PNT errors multiplied by a growing
+source envelope.
+
+[`ZetaRieszFivePrimeCells.eventually_five_cell_core_floor`](../RiemannGaussian/ZetaRieszFivePrimeCells.lean)
+combines those bounds into an explicit arithmetic credit. For ordered outer
+endpoints `a_i`, widths `H_i`, let `K` be its three common hinge caps,
+`v=t-sum a_i`, and `phi=-cos(y*t)-abs(y)*h>=0`. The selected actual five-prime
+sum has real part at least
+
+```math
+\frac{997}{1000}\,\frac{t}{L}\,K\,\phi\,
+\frac{e^{-(t+h)/2}t^N}{N!}\,
+\frac{h}{v}\prod_{i=0}^{3}\frac{H_i}{a_i+H_i}.
+```
+
+The theorem pays the old allocation and all five prime-population errors
+within this **0.3% relative allowance**. The original moment, moving length,
+core edges, physical upper cutoff, coefficient and phase remain unchanged.
+There is no hypothetical-zero, signed-score or unproved counting premise.
+The explicit cell inequalities enforce ordering, saturation and largest
+share at most `9/16`. Starting indices remain unevaluated.
+
+The matching upper transfer is now proved in
+[`ZetaRieszFourPrimeCells.eventually_four_cell_core_floor`](../RiemannGaussian/ZetaRieszFourPrimeCells.lean).
+Its cost is `501/500` times an explicit upper cell debit, retaining all three
+positive-coefficient caps. Only labels satisfying the original support,
+positive coefficient and negative cosine are charged. Every unselected
+label stays signed.
+
+[`ZetaRieszJointPrimeCells.eventually_joint_cell_family_floor`](../RiemannGaussian/ZetaRieszJointPrimeCells.lean)
+combines **arbitrary finite families** of those literal cells. Ordered
+coordinate separation proves that five-prime credit cells are disjoint.
+Four-prime debit cells may overlap: their actual atoms are nonpositive, so
+duplicates overcharge the debit. Counts four and five are disjoint. A phase
+window without a favorable lower margin supplies zero credit; its adverse
+debit and cosine-zero neighborhoods remain in the inequality.
+
+Recovering the complete angular integrals from the cell budgets and paying
+angular grid/edge losses still remain. The 0.3% and 0.2% factors pay counting
+and allocation, not those open approximation costs. All unselected phases
+and counts remain signed, and the joint `-79/1000-o(1)` floor remains open.
+
+## Proved interior four/five payment
+
+[`ZetaRieszCellCompensation.eventually_fixed_height_payment`](../RiemannGaussian/ZetaRieszCellCompensation.lean)
+now discharges an actual comparison, with **no assumed numerical surplus**.
+For every fixed `y != 0` and `1/2<u<=10001/20000`, there are fixed `h>0`
+and `C>=0` such that eventually, at each original dyadic order `N`, some
+`t=2N+v`, `0<=v<=C`, lies in the core and supplies the following cells.
+The table gives `log(prime)/t`, not `log(prime)/log(n)`:
+
+| Population | Ordered cofactor-prime intervals, least first |
+| --- | --- |
+| Four-prime debit | `(0.060,0.061]`, `(0.230,0.231]`, `(0.240,0.241]` |
+| Five-prime credit | `(0.060,0.064]`, `(0.070,0.074]`, `(0.220,0.224]`, `(0.245,0.249]` |
+
+The largest prime follows the exact cofactor: `t<log(n)<=t+h`.
+The four-prime selection retains its positive-coefficient, negative-cosine
+and original support masks. The five-prime cell satisfies all original
+core masks, with its exact allocation factor. The moving length is proved
+to obey `17t/25 <= L <= 18t/25`; no saddle or cutoff is frozen.
+
+Lean proves a five-prime angular credit of at least `1/6000000` and a
+four-prime debit of at most `1/16000000`, already including the population
+and allocation costs. The deliberately conservative phase and radial
+comparisons still leave, with
+`V=exp(-(t+h)/2)*t^N/N!`,
+
+```math
+\operatorname{Re}(\mathrm{coreResponse})
+\ge
+\operatorname{Re}\!\sum_{n\in\mathrm{core}\setminus(D_4\cup D_5)}a_N(n)
++\frac{hV}{100000000},
+\qquad \frac{hV}{100000000}>0.
+```
+
+Here `a_N` is the unchanged residual-coefficient/factorial-kernel atom.
+The fixed-height theorem supplies a favorable phase by a bounded radial
+translation and keeps the original moment and full complex phase. Its
+starting index is existential, not numerically evaluated.
+
+This pays **one interior four-prime population**. It does not establish the
+three-percent whole angular surplus, pay all four-prime labels, or bound
+the signed complement. It is a concrete test that the exact correlated
+prime-window transfer gives an arithmetic payment, rather than only a
+continuum comparison. The finite-family theorem is available for expanding
+that payment with disjoint supplies.
+
+## Ordering boundaries and a complete adverse grid
+
+[`ZetaRieszFourPrimeCells.lean`](../RiemannGaussian/ZetaRieszFourPrimeCells.lean)
+now retains exact ordering predicates inside **overlapping** cofactor-prime
+intervals. `eventually_boundary_cell_floor` gives the same explicit debit
+with factor **501/500**, without assuming separated interval endpoints.
+The largest prime is selected by its actual comparison with every cofactor
+prime. Dropping ordering enlarges only the nonnegative counting budget;
+it does not replace the signed arithmetic selection.
+
+The exact coefficient also proves a useful zero-cost boundary region.
+On the actual cutoff chamber, `positive_four_top_gap` gives
+
+\[
+\operatorname{Re}c_L(pqar)>0
+\quad\Longrightarrow\quad
+\log p-\log q>\frac7{145}\log(pqar).
+\]
+
+Consequently `re_four_nonneg_of_top_gap` proves the entire atom is
+nonnegative on the negative-cosine side when that gap is at most the stated
+threshold. The two middle ordering boundaries can still contain adverse
+atoms and are covered, not deleted.
+
+[`ZetaRieszFourBoundaryCover.lean`](../RiemannGaussian/ZetaRieszFourBoundaryCover.lean)
+then covers **every** squarefree adverse four-prime label in `(t,t+h]`
+whose prime logs exceed `delta*N`, for any fixed `0<delta<=1/128`. Its grid
+has origins `a=delta*N`, width `b=delta*N/1000`, and fixed size
+`M=ceil(3000/delta)` along each cofactor coordinate. Cells are ordered by
+index but may share intervals; half-open endpoints leave no missed labels.
+Only cells with final-prime window start at least `t/4` are needed. The
+positive coefficient itself proves that this restriction misses no adverse
+label. No grid is evaluated by enumerating its potentially enormous size.
+
+`eventually_exponential_threshold_floor` proves, on the unchanged cofinal
+schedule and throughout the core window,
+
+\[
+\operatorname{Re}\,\mathrm{coreResponse}
+\ge \operatorname{Re}\!\sum_{n\in\mathrm{coreBand}\setminus Q} f_N(n)
+ -\sum_{v\in\mathrm{gridCover}}\mathrm{cellDebit}(v),
+\]
+
+where `Q` is the **entire** positive-coefficient, negative-cosine
+four-prime population above the threshold in that total-log interval and
+`f_N` is the unchanged residual atom. The signed rest remains explicit.
+The threshold matches the form already available after exponential-head
+compensation; that earlier credit has not been spent a second time.
+`eventually_joint_boundary_family_floor` also connects arbitrary collections
+of these cells to disjoint five-prime supplies in the original core.
+
+This is a proved finite population debit, **not** a bound making that debit
+small at source scale. Its total still needs a sufficiently sharp angular
+comparison and a combined spending ledger. In particular, the optional
+four-prime integral certificate has largest-share cutoff `601/1000`; one
+must retain that restriction and its previously paid exterior when linking
+it to a grid. The new general grid theorem does not silently identify a
+larger domain with that certificate. Favorable five-prime boundary losses,
+positive-cosine populations and other counts remain open.
+
+## A numerical budget for the literal ordering boundaries
+
+[`ZetaRieszFourOrderingBudget.lean`](../RiemannGaussian/ZetaRieszFourOrderingBudget.lean)
+now gives a quantitative bound on the actual boundary prime population.
+The exact largest-share mask is `601/1000`; its exterior stays signed.
+A nonempty adverse cell forces its middle and second-largest cofactor
+origins above `t/25` and `13*t/100`, and its final-prime interval starts
+above `9*t/25`. The least-prime coefficient cancels its own harmonic
+factor. Including the relative counting cost, `cell_angular_le` proves
+an upper density **800** per unit three-dimensional grid volume.
+
+Ordering faces occur only when adjacent cofactor grid indices agree.
+`repeated_index_card` and `edgeIndices_card` prove that at most
+`2*ceil(t/(3*b))^2` such nonempty cells occur, independently of the
+ambient grid size. Each costs at most `800*(b/t)^3` times the common
+radial/phase factor. On `b=delta*N/1000`, `delta<=1/128`, and
+`t>=39*N/20`, this gives the proved bound
+
+\[
+\frac{1}{1250}\,V_N^+(t)\,\Phi_y^+(t)\,h,
+\qquad
+V_N^+(t)=e^{-t/2}\frac{(t+h)^N}{N!},
+\qquad
+\Phi_y^+(t)=\max(0,-\cos(yt))+|y|h.
+\]
+
+`eventually_edge_population_floor` applies its negative directly to the
+**literal signed prime sum**, retaining the original allocation, phase,
+count four, squarefreeness, physical support and largest-share restriction.
+`grid_ordered_or_edge` proves that the uncharged nonempty cells have
+separated cofactor intervals: no ordering face is omitted.
+`eventually_core_interior_floor` therefore gives the whole clipped
+adverse population's cost as the explicit interior-cell debit plus this
+**0.0008** boundary allowance, inside the unchanged core ledger.
+The full complement remains signed. This is a relative angular budget;
+it is not a source-normalized constant or a separate boundary-decay claim.
+
+`original_two_percent_budget` sharpens the previous phase comparison:
+**2% angular surplus** suffices after the same one-percent aggregate loss,
+radial oscillation `501/500` and phase uncertainty `1/10000`. Its weighted
+version retains a positive `D*V0/100` full-period budget.
+The exact rational `first_bin_budget_room` verifies
+
+\[
+\frac{102}{100}\left(
+\frac{133011}{1000000}+\frac1{1250}+\frac1{2000}\right)
+\le\frac{137044}{1000000}.
+\]
+
+The complete first-bin five-prime cover now verifies that supply, and
+`CheckRieszCapacitySurplus.lean` proves this inequality for the actual angular
+integrals. The adverse domain transfer is proved below. The favorable
+boundary loss, its whole arithmetic transfer and combined disjoint spending
+remain open, as do other phases/counts and the joint numerical floor.
+
+## The entire adverse population now has an exact-integral floor
+
+[`ZetaRieszFourInteriorBudget.eventually_core_integral_floor`](../RiemannGaussian/ZetaRieszFourInteriorBudget.lean)
+now controls every adverse four-prime label above the existing exponential
+prime threshold and below the literal largest-share cutoff `601/1000`.
+Here the adverse sector has a positive arithmetic coefficient and
+nonpositive cosine; the other sign/phase sector stays in the signed rest.
+Write `Omega` for the union of its nonempty cofactor-share grid cells and
+`D_Omega` for the integral of the exact capped coefficient density there.
+The retained debit is at most
+
+```math
+\left(\frac{1003}{1000}D_{\Omega}+\frac{1}{100000}\right)
+\frac{e^{-t/2}(t+h)^N}{N!}
+\bigl(\max(0,-\cos(yt))+|y|h\bigr)h.
+```
+
+This is a bound for the **literal signed prime sum**, with the whole
+complement kept signed. The `0.3%` factor includes upper prime counts.
+The additive `1/100000` pays the **whole cell family**, through disjoint
+angular volume; it is not one charge per cell. The original moment,
+moving length, allocation, physical support and phase remain unchanged.
+All ordering faces are covered. Refining to log-cell width
+`delta*N/1000000000` changes only the cover; its size is the fixed finite
+`M=ceil(3000000000/delta)`. Eventual starting indices remain unevaluated.
+
+The density is exactly the earlier ordered cap integrand before the least
+share is integrated (`density_eq_ordered`). Its denominators are controlled
+by actual positive-coefficient geometry. No signed PNT error is multiplied
+by the source envelope.
+
+## The complete adverse angular domain is now paid
+
+[`ZetaRieszFourAngularDomain.eventually_core_capacity_floor`](../RiemannGaussian/ZetaRieszFourAngularDomain.lean)
+closes that domain comparison. Write `D` for the complete two-dimensional
+ordered cap integral on `outerBox lo`, with `17/25 <= lo <= L/t`. The literal
+debit is now at most
+
+```math
+\left[\frac{1003}{1000}
+\left(D+\frac{1}{1000000000}+\frac{1}{78000000}\right)
++\frac{1}{100000}\right]
+\frac{e^{-t/2}(t+h)^N}{N!}
+\bigl(\max(0,-\cos(yt))+|y|h\bigr)h.
+```
+
+The affine map `(r,a,q) -> (1-r-a-q,q,r)` has unit absolute Jacobian.
+`ordered_integral_eq` proves integrability and the exact Fubini identity
+with the certificate density. The refined mesh sharpens the earlier ordering budget: `fine_face_budget`
+bounds both repeated-index families together by **one billionth**. Literal largest-share clipping bounds the covering
+excess by four normalized cell widths. Its volume is at most that thickness,
+and the exact capped density is at most `800`; on the refined mesh this
+costs at most `1/78000000`. No label or grid endpoint is dropped.
+
+`eventually_population_capacity_floor` applies to the actual finite prime
+population. The dyadic theorem places it in the unchanged core, retaining
+the entire signed complement. All original factorial, moving length,
+allocation, physical and phase information remains. These are **relative
+angular costs**, not small source-normalized constants.
+
+The optional checked first-bin upper value `D <= 133011/1000000` therefore
+fits the concrete debit `133421/1000000` times the original radial/phase
+factor. Its exact Lean application is
+[`CheckRieszFourCapacityTransfer.lean`](../scripts/CheckRieszFourCapacityTransfer.lean),
+which imports the separately checked cover assembly and audits the terminal
+theorem's axioms. It is deliberately outside ordinary builds and CI. Run it
+only after generating and checking the four-prime cover, with that directory
+on `LEAN_PATH`; it does not trust the manifest as a proof.
+
+This applies only inside the certificate's exact padded cutoff bin. The
+favorable five-prime integral still needs its complete disjoint arithmetic
+transfer and boundary budget. The mesh and largest-share costs use part of
+the **single aggregate `1/2000` approximation allowance**; each later error
+cannot spend that allowance again. Other sign/phase/count sectors and the
+independent whole joint floor remain open.
+
 ## Numerical test and remaining proof
 
 The optional deterministic
@@ -169,9 +514,12 @@ The [recorded output](riesz-ordered-capacity-probe.json) uses 30,000 active
 four-prime cells and 10,000 five-prime cells per cutoff interval. It suggests
 a worst supply/debit ratio around **1.0339**, after the interval and log
 approximants. These are floating-point evaluations of proposed enclosures,
-**not certified integral bounds** for the complete region. The cap checker
-and its interior-cell theorem do not yet check this enumeration. The
-calculation does not prove an actual prime-sum bound.
+**not certified integral bounds** for the complete eight-bin comparison.
+The first-bin pair of complete Lean covers now certifies that bin's
+angular surplus. The other seven bins remain unverified. The calculation
+alone does not prove a joint prime-sum floor: the adverse whole-domain
+transfer is now proved, while the favorable side still needs its complete
+arithmetic cover and boundary estimate.
 
 A second [unverified run](riesz-ordered-capacity-fast-log-probe.json) uses
 only four odd-series terms for lower logarithms and six for upper ones.
@@ -180,9 +528,19 @@ bins. This is a candidate for reducing certificate cost; it is not a second
 proved surplus. The precise rational logarithm inequalities are already
 proved, but their complete numerical use and angular cover remain unchecked.
 
-The remaining proof must certify the cover and symmetry, transfer the
-strict surplus to actual fixed-width prime windows on common negative-cosine
-arcs, pay the radial/phase/mask losses, and spend each five-prime label once.
+The remaining proof must finish the other numerical bins, complete the
+favorable angular-to-arithmetic comparison on common negative-cosine arcs
+and pay its boundary losses. Both cell transfers and their finite-family
+aggregation are proved, as is the concrete interior payment above. Their
+full cover must still match the certified angular integrals without losing
+source-scale boundary mass.
+The upper debit cover now includes labels close to prime-order equalities
+through exact ordered subselections; its repeated-index cells now cost
+at most 1/1250 of the common radial/phase factor. The finite sum is now
+related to its exact covering-region angular integral with the numerical
+cost above. The adverse comparison with the certified ordered domain is now proved,
+including its largest-share excess. Favorable five-prime boundary losses must fit the unused relative budget of a
+certified whole comparison.
 The existing sharp prime-window estimates provide relative population
 budgets, not generic source-scale signed PNT transport. All positive-cosine
 contributions and other counts remain signed even if this payment succeeds.
@@ -195,6 +553,14 @@ Generate and check a complete candidate for the tightest cutoff bin:
 ../.venv/bin/python scripts/generate_riesz_five_capacity_cover.py
 ../.venv/bin/python scripts/check_riesz_four_capacity_cover.py \
   --directory .lake/riesz-five-capacity-cover --jobs 2
+```
+
+After both assemblies pass, check the literal first-bin debit and the
+angular surplus without rerunning the exhaustive covers:
+
+```sh
+lake env bash -c 'LEAN_PATH="$PWD/.lake/riesz-four-capacity-cover:$LEAN_PATH" lean -DwarningAsError=true scripts/CheckRieszFourCapacityTransfer.lean'
+lake env bash -c 'LEAN_PATH="$PWD/.lake/riesz-four-capacity-cover:$PWD/.lake/riesz-five-capacity-cover:$LEAN_PATH" lean -DwarningAsError=true scripts/CheckRieszCapacitySurplus.lean'
 ```
 
 Use the pinned `ELAN_HOME` and `--lake` path if `lake` is not on `PATH`.

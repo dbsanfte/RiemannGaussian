@@ -6,7 +6,7 @@
   "endpoints": [
     {
       "id": "explicit-band",
-      "label": "Complete explicit region · all heights",
+      "label": "Complete explicit region \u00b7 all heights",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -21,7 +21,7 @@
     },
     {
       "id": "marked-prime-completion",
-      "label": "Marked-prime completion · geometric integrated error bounds",
+      "label": "Marked-prime completion \u00b7 geometric integrated error bounds",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -68,7 +68,7 @@
     },
     {
       "id": "vk-region",
-      "label": "Stronger Vinogradov–Korobov family · eventual",
+      "label": "Stronger Vinogradov\u2013Korobov family \u00b7 eventual",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -95,7 +95,7 @@
     },
     {
       "id": "coverage",
-      "label": "Coverage audit · Gaussian and older reserve retained",
+      "label": "Coverage audit \u00b7 Gaussian and older reserve retained",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -130,7 +130,7 @@
     },
     {
       "id": "expanded-cost",
-      "label": "Smaller dilations · tenfold width and radius gain",
+      "label": "Smaller dilations \u00b7 tenfold width and radius gain",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -169,7 +169,7 @@
     },
     {
       "id": "vk-phase",
-      "label": "Vinogradov–Korobov · critical moments and actual power saving",
+      "label": "Vinogradov\u2013Korobov \u00b7 critical moments and actual power saving",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1804,7 +1804,7 @@
     },
     {
       "id": "retained-cost",
-      "label": "Improved curve · complete cost and comparison",
+      "label": "Improved curve \u00b7 complete cost and comparison",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1839,7 +1839,7 @@
     },
     {
       "id": "vaughan-factors",
-      "label": "Vaughan factors · exact Riesz average and parity",
+      "label": "Vaughan factors \u00b7 exact Riesz average and parity",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1950,7 +1950,7 @@
     },
     {
       "id": "lattice-carrier",
-      "label": "Integer lattice · retain the linear zero source",
+      "label": "Integer lattice \u00b7 retain the linear zero source",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -1981,7 +1981,7 @@
     },
     {
       "id": "prime-discrepancy",
-      "label": "Prime discrepancy · signed jump work",
+      "label": "Prime discrepancy \u00b7 signed jump work",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2012,7 +2012,7 @@
     },
     {
       "id": "source-support",
-      "label": "Source visibility · retain a fixed zero",
+      "label": "Source visibility \u00b7 retain a fixed zero",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2047,7 +2047,7 @@
     },
     {
       "id": "signed-budget",
-      "label": "Signed budget · left mean remains",
+      "label": "Signed budget \u00b7 left mean remains",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2070,7 +2070,7 @@
     },
     {
       "id": "prime-energy",
-      "label": "Prime energy · decay at the current dilation",
+      "label": "Prime energy \u00b7 decay at the current dilation",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2097,7 +2097,7 @@
     },
     {
       "id": "prime-reduction",
-      "label": "Ordinary primes · complete remainder paid",
+      "label": "Ordinary primes \u00b7 complete remainder paid",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2120,7 +2120,7 @@
     },
     {
       "id": "prime-correlation",
-      "label": "Prime correlations · ratios, products and signed work",
+      "label": "Prime correlations \u00b7 ratios, products and signed work",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2151,7 +2151,7 @@
     },
     {
       "id": "prime-work",
-      "label": "Prime work · disjoint blocks and their ceiling",
+      "label": "Prime work \u00b7 disjoint blocks and their ceiling",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2174,7 +2174,7 @@
     },
     {
       "id": "filter-cost",
-      "label": "Filter cost · complete coefficients and signed carrier",
+      "label": "Filter cost \u00b7 complete coefficients and signed carrier",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2197,7 +2197,7 @@
     },
     {
       "id": "separation",
-      "label": "Separation · finite Gaussian zero groups",
+      "label": "Separation \u00b7 finite Gaussian zero groups",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2220,7 +2220,7 @@
     },
     {
       "id": "multiplicity",
-      "label": "Multiplicity · boundary simplicity and eta current",
+      "label": "Multiplicity \u00b7 boundary simplicity and eta current",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2258,7 +2258,7 @@
     },
     {
       "id": "union",
-      "label": "Complete union · explicit, log-log and Vinogradov–Korobov",
+      "label": "Complete union \u00b7 explicit, log-log and Vinogradov\u2013Korobov",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2273,7 +2273,7 @@
     },
     {
       "id": "eventual",
-      "label": "Eventual region · both edges",
+      "label": "Eventual region \u00b7 both edges",
       "statusPaths": [
         [
           "zetaLogLogZeroFreeToolkit",
@@ -2339,7 +2339,7 @@
     },
     {
       "id": "riesz-vk",
-      "label": "Riesz carrier · critical moments and negative profile",
+      "label": "Riesz carrier \u00b7 critical moments and negative profile",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2570,7 +2570,7 @@
     },
     {
       "id": "ford-selected-iteration",
-      "label": "Ford high-degree moments · prime supply open",
+      "label": "Ford high-degree moments \u00b7 prime supply open",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2589,7 +2589,7 @@
     },
     {
       "id": "rosser-zero-mass",
-      "label": "Rosser zero masses · complete powers 2, 3 and 4",
+      "label": "Rosser zero masses \u00b7 complete powers 2, 3 and 4",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2636,7 +2636,7 @@
     },
     {
       "id": "rosser-prime-error",
-      "label": "Rosser prime error · final large range proved",
+      "label": "Rosser prime error \u00b7 final large range proved",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2671,7 +2671,7 @@
     },
     {
       "id": "rosser-finite-prime-counts",
-      "label": "Rosser prime counts · complete through 16000",
+      "label": "Rosser prime counts \u00b7 complete through 16000",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2702,7 +2702,7 @@
     },
     {
       "id": "rosser-proved-prime-ranges",
-      "label": "Rosser prime bounds · finite and infinite ranges",
+      "label": "Rosser prime bounds \u00b7 finite and infinite ranges",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2729,7 +2729,7 @@
     },
     {
       "id": "ford-unconditional-large-degree",
-      "label": "Ford moments · actual large-degree supply",
+      "label": "Ford moments \u00b7 actual large-degree supply",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -2994,7 +2994,7 @@
       "id": "hybrid",
       "label": "Hybrid matrices & phase colour",
       "color": "#ce99db",
-      "description": "Continuous and finite eta representations, signed Gram matrices, heat operators and rank–trace tools. Source files retain attribution for adapted results.",
+      "description": "Continuous and finite eta representations, signed Gram matrices, heat operators and rank\u2013trace tools. Source files retain attribution for adapted results.",
       "modulePrefixes": [
         "Hybrid.",
         "HermitianRankTrace."
@@ -3002,7 +3002,7 @@
     },
     {
       "id": "arithmetic",
-      "label": "Squarefree & Möbius arithmetic",
+      "label": "Squarefree & M\u00f6bius arithmetic",
       "color": "#d6ae80",
       "description": "Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.",
       "modulePrefixes": [
@@ -3041,7 +3041,7 @@
       "id": "hilbert",
       "label": "Hilbert inequalities & sampling",
       "color": "#a6b7db",
-      "description": "The attributed Montgomery–Vaughan Hilbert inequality and finite algebraic and inverse-sampling tools.",
+      "description": "The attributed Montgomery\u2013Vaughan Hilbert inequality and finite algebraic and inverse-sampling tools.",
       "modulePrefixes": [
         "MontgomeryVaughan",
         "MontgomeryTaylor",
@@ -3615,7 +3615,18 @@
     "ZetaRieszCapacityIncidence": "arithmetic",
     "ZetaRieszCapacityCover": "arithmetic",
     "ZetaRieszFourCapacityCover": "arithmetic",
-    "ZetaRieszFiveCapacityCover": "arithmetic"
+    "ZetaRieszFiveCapacityCover": "arithmetic",
+    "ZetaRieszPhaseBudget": "arithmetic",
+    "ZetaRieszCoupledWindow": "arithmetic",
+    "ZetaRieszMacroPrimeWindows": "arithmetic",
+    "ZetaRieszFivePrimeCells": "arithmetic",
+    "ZetaRieszFourPrimeCells": "arithmetic",
+    "ZetaRieszJointPrimeCells": "arithmetic",
+    "ZetaRieszCellCompensation": "arithmetic",
+    "ZetaRieszFourBoundaryCover": "arithmetic",
+    "ZetaRieszFourOrderingBudget": "arithmetic",
+    "ZetaRieszFourInteriorBudget": "arithmetic",
+    "ZetaRieszFourAngularDomain": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
@@ -4139,11 +4150,11 @@
       "documentation": "docs/zeta-gaussian-multiplicity-depth.md"
     },
     "RiemannGaussian.GaussianStripProfile.source_lower": {
-      "label": "Gaussian source ≥ 152000",
+      "label": "Gaussian source \u2265 152000",
       "overview": true
     },
     "RiemannGaussian.ZetaGaussianStripExplicit.gaussian_source_le_budget": {
-      "label": "Actual source ≤ full budget",
+      "label": "Actual source \u2264 full budget",
       "overview": true
     },
     "RiemannGaussian.ZetaGaussianStripPhaseFamily.source_add_mixedWork_le_exactBudget": {
@@ -4155,7 +4166,7 @@
       "overview": true
     },
     "RiemannGaussian.ZetaGaussianSmoothedIdentity.complex_identity": {
-      "label": "Exact complex Gaussian–Euler identity",
+      "label": "Exact complex Gaussian\u2013Euler identity",
       "overview": true
     },
     "RiemannGaussian.ZetaGaussianSmoothedIdentity.prime_add_selected_le": {
@@ -4280,7 +4291,7 @@
       "documentation": "docs/zeta-gaussian-all-height.md"
     },
     "RiemannGaussian.ZetaGaussianAllHeight.selected_source_lower": {
-      "label": "A nearby zero costs ≥ 48000q",
+      "label": "A nearby zero costs \u2265 48000q",
       "overview": true,
       "documentation": "docs/zeta-gaussian-all-height.md"
     },
@@ -4290,7 +4301,7 @@
       "documentation": "docs/zeta-gaussian-all-height.md"
     },
     "RiemannGaussian.ZetaGaussianScaledBandBudget.budget_le": {
-      "label": "Complete scaled cost ≤ 47500q",
+      "label": "Complete scaled cost \u2264 47500q",
       "overview": true,
       "documentation": "docs/zeta-gaussian-all-height.md"
     },
@@ -4612,7 +4623,7 @@
       "documentation": "docs/zeta-vaughan-log-average.md"
     },
     "RiemannGaussian.VaughanLogAverage.riesz_reflection": {
-      "label": "Divisor reflection retains full Möbius parity",
+      "label": "Divisor reflection retains full M\u00f6bius parity",
       "documentation": "docs/zeta-vaughan-log-average.md"
     },
     "RiemannGaussian.VaughanLogAverage.riesz_opposite_edges": {
@@ -4628,7 +4639,7 @@
       "documentation": "docs/zeta-vaughan-log-average.md"
     },
     "RiemannGaussian.ZetaGaussianExpandedCost.budget_le": {
-      "label": "Complete paid cost for q ≥ 9/100",
+      "label": "Complete paid cost for q \u2265 9/100",
       "overview": true,
       "family": "heat",
       "documentation": "docs/zeta-gaussian-region-union.md"
@@ -4652,7 +4663,7 @@
       "documentation": "docs/zeta-gaussian-region-union.md"
     },
     "RiemannGaussian.ZetaGaussianRegionUnion.tenfold_previous_le": {
-      "label": "At least tenfold width for 1 ≤ L ≤ 64",
+      "label": "At least tenfold width for 1 \u2264 L \u2264 64",
       "overview": true,
       "family": "region",
       "documentation": "docs/zeta-gaussian-region-union.md"
@@ -4782,7 +4793,7 @@
       "overview": true
     },
     "RiemannGaussian.VinogradovMomentReduction.two_holder_bound": {
-      "label": "Two Hölder steps retain joint support and explicit phase weights",
+      "label": "Two H\u00f6lder steps retain joint support and explicit phase weights",
       "documentation": "docs/vinogradov-korobov-framework.md",
       "overview": true
     },
@@ -6297,12 +6308,12 @@
       "documentation": "docs/vinogradov-zero-free.md"
     },
     "RiemannGaussian.ZetaVinogradovZeroFree.exists_eventual_strip": {
-      "label": "Proved Vinogradov–Korobov region at both edges",
+      "label": "Proved Vinogradov\u2013Korobov region at both edges",
       "overview": true,
       "documentation": "docs/vinogradov-zero-free.md"
     },
     "RiemannGaussian.ZetaVinogradovZeroFree.exists_eventual_union": {
-      "label": "Complete explicit, log-log and Vinogradov–Korobov union",
+      "label": "Complete explicit, log-log and Vinogradov\u2013Korobov union",
       "overview": true,
       "documentation": "docs/vinogradov-zero-free.md"
     },
@@ -6783,7 +6794,7 @@
     },
     "RiemannGaussian.RosserSchoenfeldZetaTwo.log_derivative_upper": {
       "label": "Actual logarithmic derivative at two",
-      "summary": "Unconditionally, -Re(zeta′(2)/zeta(2)) < 569960994/10^9. The finite sample, analytic tail, derivative error and exact zeta(2) value are all proved.",
+      "summary": "Unconditionally, -Re(zeta\u2032(2)/zeta(2)) < 569960994/10^9. The finite sample, analytic tail, derivative error and exact zeta(2) value are all proved.",
       "overview": true,
       "documentation": "docs/rosser-schoenfeld-reproduction.md"
     },

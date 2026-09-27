@@ -149,10 +149,10 @@ Work directly on a cofinal signed floor for J+C, retaining the original arithmet
 
 ### Latest Update
 
-**Exponential prime head paid; four/five comparison sharpened.** One actual four-prime supply now pays the balanced triple band and all three-/four-prime labels containing a prime <=exp(delta*N), for some fixed delta>0, while retaining positive credits and a quarter-supply. Lean also proves exact coefficient bounds, sharp prime-window budgets, incidence accounting and complete angular-cover checkers. Tight numerical cover checks remain optional and unfinished.
-Certify the angular surplus and transfer it to the original signed prime populations. The remaining joint floor, restricted zero exclusion and RH remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszFourPrimeHead.lean#L1120)
-· [Proof details](docs/zeta-riesz-four-prime-exact.md#the-whole-exponential-head-is-now-paid).
+**Literal four-prime debit bounded; first-bin angular surplus checked.** Lean now bounds the selected adverse four-prime population by its complete angular integral, retaining the original weights and signed complement. In the first certified cutoff bin, the debit is at most 0.133421 times the original radial/phase factor. Optional exhaustive checks also prove a five-prime angular supply of at least 0.137044 and a two-percent surplus after budgeted losses.
+Transfer the full favorable five-prime integral to disjoint literal prime populations, then check the other cutoff bins. The joint signed floor, restricted zero exclusion and RH remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszFourAngularDomain.lean#L698)
+· [Proof details](docs/zeta-riesz-ordered-capacity.md#the-complete-adverse-angular-domain-is-now-paid).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

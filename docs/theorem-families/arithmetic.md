@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**522 modules.** Source links open the definitions, hypotheses and proofs.
+**533 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -158,6 +158,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszCascadeAbelAudit](../../RiemannGaussian/ZetaRieszCascadeAbelAudit.lean)
 - [ZetaRieszCausalSurface](../../RiemannGaussian/ZetaRieszCausalSurface.lean)
 - [ZetaRieszCellBoundary](../../RiemannGaussian/ZetaRieszCellBoundary.lean)
+- [ZetaRieszCellCompensation](../../RiemannGaussian/ZetaRieszCellCompensation.lean)
 - [ZetaRieszCellCycles](../../RiemannGaussian/ZetaRieszCellCycles.lean)
 - [ZetaRieszCellEnergy](../../RiemannGaussian/ZetaRieszCellEnergy.lean)
 - [ZetaRieszCellOrders](../../RiemannGaussian/ZetaRieszCellOrders.lean)
@@ -189,6 +190,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszContinuumCascade](../../RiemannGaussian/ZetaRieszContinuumCascade.lean)
 - [ZetaRieszCoreExtensions](../../RiemannGaussian/ZetaRieszCoreExtensions.lean)
 - [ZetaRieszCosineCarrier](../../RiemannGaussian/ZetaRieszCosineCarrier.lean)
+- [ZetaRieszCoupledWindow](../../RiemannGaussian/ZetaRieszCoupledWindow.lean)
 - [ZetaRieszCriticalProfile](../../RiemannGaussian/ZetaRieszCriticalProfile.lean)
 - [ZetaRieszCrossCompletion](../../RiemannGaussian/ZetaRieszCrossCompletion.lean)
 - [ZetaRieszCrossFamilyWindow](../../RiemannGaussian/ZetaRieszCrossFamilyWindow.lean)
@@ -226,13 +228,19 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszFilteredCompletion](../../RiemannGaussian/ZetaRieszFilteredCompletion.lean)
 - [ZetaRieszFilteredMaskAudit](../../RiemannGaussian/ZetaRieszFilteredMaskAudit.lean)
 - [ZetaRieszFiveCapacityCover](../../RiemannGaussian/ZetaRieszFiveCapacityCover.lean)
+- [ZetaRieszFivePrimeCells](../../RiemannGaussian/ZetaRieszFivePrimeCells.lean)
 - [ZetaRieszFivePrimeFloor](../../RiemannGaussian/ZetaRieszFivePrimeFloor.lean)
 - [ZetaRieszFivePrimePairSupply](../../RiemannGaussian/ZetaRieszFivePrimePairSupply.lean)
 - [ZetaRieszFivePrimeReserve](../../RiemannGaussian/ZetaRieszFivePrimeReserve.lean)
 - [ZetaRieszFixedCofactor](../../RiemannGaussian/ZetaRieszFixedCofactor.lean)
+- [ZetaRieszFourAngularDomain](../../RiemannGaussian/ZetaRieszFourAngularDomain.lean)
+- [ZetaRieszFourBoundaryCover](../../RiemannGaussian/ZetaRieszFourBoundaryCover.lean)
 - [ZetaRieszFourCapacityCover](../../RiemannGaussian/ZetaRieszFourCapacityCover.lean)
 - [ZetaRieszFourExtremeBound](../../RiemannGaussian/ZetaRieszFourExtremeBound.lean)
 - [ZetaRieszFourExtremeDeletion](../../RiemannGaussian/ZetaRieszFourExtremeDeletion.lean)
+- [ZetaRieszFourInteriorBudget](../../RiemannGaussian/ZetaRieszFourInteriorBudget.lean)
+- [ZetaRieszFourOrderingBudget](../../RiemannGaussian/ZetaRieszFourOrderingBudget.lean)
+- [ZetaRieszFourPrimeCells](../../RiemannGaussian/ZetaRieszFourPrimeCells.lean)
 - [ZetaRieszFourPrimeExact](../../RiemannGaussian/ZetaRieszFourPrimeExact.lean)
 - [ZetaRieszFourPrimeFloor](../../RiemannGaussian/ZetaRieszFourPrimeFloor.lean)
 - [ZetaRieszFourPrimeHead](../../RiemannGaussian/ZetaRieszFourPrimeHead.lean)
@@ -265,6 +273,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszJointFloor](../../RiemannGaussian/ZetaRieszJointFloor.lean)
 - [ZetaRieszJointOwnerTransfer](../../RiemannGaussian/ZetaRieszJointOwnerTransfer.lean)
 - [ZetaRieszJointPhaseCredit](../../RiemannGaussian/ZetaRieszJointPhaseCredit.lean)
+- [ZetaRieszJointPrimeCells](../../RiemannGaussian/ZetaRieszJointPrimeCells.lean)
 - [ZetaRieszJointPrimeTransfer](../../RiemannGaussian/ZetaRieszJointPrimeTransfer.lean)
 - [ZetaRieszJointQuintupleFloor](../../RiemannGaussian/ZetaRieszJointQuintupleFloor.lean)
 - [ZetaRieszJointRadialFloor](../../RiemannGaussian/ZetaRieszJointRadialFloor.lean)
@@ -285,6 +294,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszLowHeadPrefix](../../RiemannGaussian/ZetaRieszLowHeadPrefix.lean)
 - [ZetaRieszLowerDegreeBounds](../../RiemannGaussian/ZetaRieszLowerDegreeBounds.lean)
 - [ZetaRieszLowerDegreeDeletion](../../RiemannGaussian/ZetaRieszLowerDegreeDeletion.lean)
+- [ZetaRieszMacroPrimeWindows](../../RiemannGaussian/ZetaRieszMacroPrimeWindows.lean)
 - [ZetaRieszMainFrequency](../../RiemannGaussian/ZetaRieszMainFrequency.lean)
 - [ZetaRieszMarkedCompletion](../../RiemannGaussian/ZetaRieszMarkedCompletion.lean)
 - [ZetaRieszMarkedEuler](../../RiemannGaussian/ZetaRieszMarkedEuler.lean)
@@ -351,6 +361,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszParityShareTail](../../RiemannGaussian/ZetaRieszParityShareTail.lean)
 - [ZetaRieszParityWindow](../../RiemannGaussian/ZetaRieszParityWindow.lean)
 - [ZetaRieszPhaseBracket](../../RiemannGaussian/ZetaRieszPhaseBracket.lean)
+- [ZetaRieszPhaseBudget](../../RiemannGaussian/ZetaRieszPhaseBudget.lean)
 - [ZetaRieszPhysicalAnnulus](../../RiemannGaussian/ZetaRieszPhysicalAnnulus.lean)
 - [ZetaRieszPhysicalCompletion](../../RiemannGaussian/ZetaRieszPhysicalCompletion.lean)
 - [ZetaRieszPhysicalPrefixDeletion](../../RiemannGaussian/ZetaRieszPhysicalPrefixDeletion.lean)

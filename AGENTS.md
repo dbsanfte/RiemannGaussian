@@ -3463,6 +3463,199 @@ spending. In particular no adverse four-prime population or full joint floor
 is paid by these checker soundness theorems alone. The same joint
 `-79/1000-o(1)` target and public endpoints remain unchanged.
 
+`ZetaRieszPhaseBudget` now proves the whole-period signed transfer budget:
+a 103/100 angular supply/debit ratio tolerates one-percent aggregate
+population/allocation loss, radial factor 501/500 and phase uncertainty
+1/10000, keeping cosine-zero neighborhoods. `original_radial_phase_budget`
+uses the ORIGINAL factorial kernel at fixed |y|>=54; its angular surplus
+premise is explicit. `tuple_negative_phase_enclosure` keeps the literal
+product phase in fixed log windows. `eventually_phase_window_mass` gives
+relative harmonic prime bounds 9999/10000..10001/10000, and
+`eventually_phase_tuple_mass` combines up to five legs with bounds
+999/1000..1001/1000. These are relative population budgets, never generic
+source-scale Abel errors. Angular-cell transfer, masks and disjoint
+spending are still open; do not treat the one-percent allowance as paid.
+The first-bin FOUR debit cover passed locally with exact upper bound
+133011/1000000, all 274 chunks plus assembly and standard-axiom audit.
+Its optional generated proof is outside the ordinary root; the tight FIVE
+supply cover and other bins remain unfinished. See the ordered-capacity
+note. Keep the joint floor and all public zero/RH endpoints unchanged.
+
+
+`ZetaRieszCoupledWindow.eventually_owned_five_core_lower` now gives an
+explicit retained signed lower bound for any finite family of ordered
+five-prime cofactor windows. The last-prime window follows the EXACT
+cofactor, so every product stays in (t,t+h] in total logarithm. Three common
+hinge caps, original allocation, full phase, all core masks and unique
+largest-prime ownership are proved, with the entire complement signed.
+`ZetaRieszMacroPrimeWindows` gives relative Darboux harmonic bounds
+4999/5000..5001/5000 for macroscopic outer windows and 999/1000..1001/1000
+for up to four outer legs. These are relative population costs, not generic
+source-scale Abel errors. `ZetaRieszFivePrimeCells.eventually_five_cell_core_floor`
+then retains 997/1000 of an EXPLICIT conservative cell credit inside the
+actual core. Its premises are log-cell geometry and the negative phase
+margin, not an assumed arithmetic signed score or prime-count bound. It
+keeps original N, L, allocation and masks. The 0.3% factor pays allocation
+and counting ONLY; angular grid/edge approximation, the matching four-prime
+upper transfer, the complete numerical surplus and aggregate disjoint
+spending remain open. Do not claim the whole angular integral or adverse
+four-prime population is paid. Other phases/counts and the full
+-79/1000-o(1) joint floor remain open. Starting indices are unevaluated.
+Keep public RH/zero-free endpoints unchanged and continue locally without
+unrequested commits or subagents; frozen optional five-cover inputs stay
+unchanged until verification finishes.
+
+
+`ZetaRieszFourPrimeCells.eventually_four_cell_core_floor` now supplies the
+matching literal debit at factor 501/500, retaining all three coefficient
+caps, actual negative cosine, positive coefficient and original core masks.
+`ZetaRieszJointPrimeCells.eventually_joint_cell_family_floor` combines finite
+families in the unchanged core. Five-prime credit cells are disjoint by
+ordered coordinate separation; four-prime adverse cells may overlap because
+duplicates only overcharge. The count classes are disjoint. Phase windows
+with no certified favorable margin supply zero credit, while every adverse
+label and the entire signed complement remain.
+
+`ZetaRieszCellCompensation.eventually_fixed_height_payment` discharges one
+CONCRETE interior comparison without an assumed numerical surplus. At every
+fixed y!=0 and 1/2<u<=10001/20000, eventually each original dyadic order has
+a bounded radial translation t=2*N+v and fixed positive width h. The four
+cofactor log/t intervals are (0.060,0.061], (0.230,0.231], (0.240,0.241];
+the five intervals are (0.060,0.064], (0.070,0.074], (0.220,0.224],
+(0.245,0.249]. The largest prime enforces t<log(n)<=t+h exactly. The proved
+moving chamber 17*t/25<=L<=18*t/25 supplies an angular credit >=1/6000000
+and debit <=1/16000000, including counting/allocation. After conservative
+phase/radial comparison, the core floor retains the entire signed complement
+plus strictly positive h*exp(-(t+h)/2)*t^N/(100000000*N!). This is one
+interior population payment, not the whole angular region or numerical
+joint -79/1000-o(1) floor. Starting indices are unevaluated. Do not add it to
+old spent supplies without a combined disjoint ledger. Recovering the full
+angular integrals from cells, grid/edge costs and the optional complete
+numerical surplus remain open; positive-cosine terms and other counts stay
+signed. Keep all public RH/zero-free endpoints unchanged. Continue locally
+without unrequested commits or subagents; preserve frozen optional cover
+inputs while their kernel verification is running.
+
+`ZetaRieszFourPrimeCells.eventually_boundary_cell_floor` extends the same
+501/500 debit to overlapping cofactor-prime intervals, retaining literal
+ordering, positive coefficient, negative cosine and original support.
+`positive_four_top_gap` proves log(p)-log(q)>7*log(n)/145 for a positive
+four-prime coefficient in the actual cutoff chamber. The complementary
+top-gap region is pointwise nonnegative on the negative-cosine side.
+Both middle ordering boundaries remain inside the adverse cover.
+`ZetaRieszFourBoundaryCover.eventually_exponential_threshold_floor` covers
+EVERY adverse four-prime label above log p>delta*N in each core total-log
+interval, for fixed 0<delta<=1/128. Its fixed grid has M=ceil(3000/delta),
+a=delta*N and b=delta*N/1000, with ordered index tuples and all half-open
+endpoints retained. The exact positive coefficient forces sufficient final-
+prime length; no ordering-boundary mass is omitted. The signed floor charges
+the explicit sum of cellDebit and keeps the entire complement signed.
+`ZetaRieszJointPrimeCells.eventually_joint_boundary_family_floor` connects
+these cells to disjoint literal five-prime credits. This is NOT a small
+source-normalized allowance or a completed whole-region compensation.
+The Darboux totals must still match the checked angular domains: the optional
+four-prime certificate uses largest share<=601/1000, whose restriction and
+paid exterior cannot be dropped when applying that integral budget to a
+more general grid. Favorable boundary/approximation costs, complete numerical
+surplus and combined disjoint spending remain open. Never spend the previous
+head/interior credits twice. No new whole joint floor, zero exclusion or RH
+claim follows; all other phases/counts stay signed. Keep public endpoints
+unchanged and continue locally without unrequested commits or subagents.
+
+`ZetaRieszFourOrderingBudget.eventually_core_interior_floor` now bounds the
+ENTIRE clipped adverse four-prime population above log p>delta*N by its
+strictly ordered interior-grid debit plus a proved 1/1250 boundary allowance.
+The factor multiplying this allowance is the ORIGINAL
+exp(-t/2)*(t+h)^N/N!*(max(0,-cos(y*t))+abs(y)*h)*h. Do not describe 1/1250
+as a source-normalized constant or claim separate boundary decay.
+The largest-share cutoff 601/1000 remains literal, with its exterior signed.
+Exact coefficient geometry cancels the least-prime denominator; cell density
+is at most 800. Only two repeated-index families can cross an ordering face,
+with at most 2*ceil(t/(3*b))^2 nonempty cells; b=delta*N/1000. All other
+nonempty cells have separated cofactor intervals. `eventually_edge_population_floor`
+is an actual signed-prime-sum bound, not only a continuum volume estimate.
+`original_two_percent_budget` reduces the required angular surplus from 3%
+to 2% after the same one-percent aggregate loss, radial factor 501/500 and
+phase error 1/10000. The exact rational first-bin candidate fits both 1/1250
+ordering cost and another 1/2000 approximation cost. That scalar inequality
+DOES NOT certify the proposed five-prime supply or its arithmetic transport.
+Keep the optional full-cover verification separate, with frozen inputs.
+Interior/angular matching, favorable edge losses, complete covers and combined
+disjoint spending remain open, as do other phases/counts and the full joint
+-79/1000-o(1) floor. Preserve every signed complement and do not spend existing
+credits twice. No public zero-free/RH endpoint changes; continue locally without
+unrequested commits or subagents.
+
+`ZetaRieszFourInteriorBudget.eventually_core_integral_floor` now gives an
+independent floor for the ENTIRE clipped adverse four-prime population above
+log p>delta*N on the unchanged dyadic core. Its debit is at most
+the following quantity; "adverse" here means coefficient>0 and cosine<=0,
+not the other sign/phase sector:
+`(1003/1000*integral_Omega density+1/100000)*E`, where
+`E=exp(-t/2)*(t+h)^N/N!*(max(0,-cos(y*t))+abs(y)*h)*h` is original.
+The cofactor density retains the exact three-cap coefficient. Disjoint
+half-open cells share ONE 1/100000 volume allowance; it is not charged per
+cell. The refined mesh is delta*N/1000000000 with fixed
+M=ceil(3000000000/delta). Actual nonempty-cell geometry discharges the
+denominator conditions, and all ordering faces are covered. Empty cells
+spend nothing. The largest-share 601/1000 mask, allocation, phase, original
+moment/length/support and whole signed complement stay literal.
+This does NOT yet bound integral_Omega by the optional two-dimensional
+133011/1000000 certificate: the ordering and largest-share excess of the
+covering cells must be paid before that substitution. The 0.3% factor
+includes upper counting, and the 1/100000 is an angular cost, not a
+source-normalized constant. It spends part of the ONE aggregate 1/2000
+approximation allowance from the preceding budget; favorable boundary
+costs and other grid errors cannot each spend that budget again.
+The exact coordinate formula `density_eq_ordered` identifies the existing
+cap integrand; the domain/integral comparison and favorable five-prime
+transport remain open. Keep optional cover inputs frozen while checking.
+No complete joint -79/1000-o(1) floor, new zero exclusion or RH follows.
+Continue locally, preserving public endpoints and without unrequested
+commits or subagents.
+
+`ZetaRieszFourAngularDomain.eventually_core_capacity_floor` now pays the
+complete adverse four-prime angular-domain comparison. For the same original
+core, threshold log p>delta*N and literal largest share<=601/1000, the debit
+is `(1003/1000*(D+1/1000000000+1/78000000)+1/100000)*E`, where D is the complete
+ordered two-dimensional density on `outerBox lo` and E is the unchanged
+radial/phase factor above. Exact affine coordinates have unit absolute
+Jacobian; genuine integrability and Fubini identify the three-share density.
+`fine_face_budget` bounds both repeated-index ordering families together by
+1/1000000000 on the refined mesh; the largest-share cover excess
+has width at most four normalized cell widths, density<=800 and cost at most
+1/78000000. Actual nonempty cells discharge every geometric premise.
+The full signed complement and original allocation/physical/count/phase masks
+remain. The optional first-bin upper certificate can now be substituted ONLY
+inside its exact padded L/t range. `scripts/CheckRieszFourCapacityTransfer.lean`
+is an optional checked application, outside ordinary CI; its cached angular
+assembly must first be verified. Do not infer all-bin numerical coverage.
+The 1/100000 mesh and tiny largest-share cost spend part of the ONE aggregate
+1/2000 approximation allowance; favorable boundary errors must share the
+remaining budget. Favorable whole-domain arithmetic transport, disjoint joint
+spending, other signs/phases/counts and the full joint floor remain open.
+No separate source-scale decay, zero exclusion or RH follows. Continue locally
+without unrequested commits or subagents, preserving frozen cover inputs.
+
+The optional first-bin five-prime cover has now passed all 713 chunks and
+its assembly (10,131 leaves); `whole_supply_lower` proves 34261/250000.
+`CheckRieszCapacitySurplus.lean` combines the independently checked four/five
+assemblies into a two-percent ANGULAR surplus after one 1/1250 ordering cost
+and ONE 1/2000 approximation allowance. `CheckRieszFourCapacityTransfer.lean`
+proves the actual first-bin adverse-prime debit <=133421/1000000 times E,
+with the entire signed core complement retained. Both optional scripts print
+terminal axioms; keep exhaustive covers outside ordinary builds and CI.
+Only the first padded cutoff bin is checked. The favorable full-domain
+arithmetic transfer, remaining seven bins and whole signed floor are open.
+Do not reuse its unused favorable credit in more than one joint ledger.
+
+The user explicitly authorized committing and pushing the complete accumulated
+local slice on 2026-09-27 after its checks pass, before further theorem work.
+Include all eleven new prime-cell/capacity modules, their documentation and
+explorers, and the two optional first-bin application scripts. This supersedes
+the preceding hold-commit instructions for this slice. Preserve the optional
+cover cache; do not add exhaustive verification to ordinary CI.
+
 ## Soundness invariant
 
 The repository must remain a continuous, bottom-up Lean proof chain after

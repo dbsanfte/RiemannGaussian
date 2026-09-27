@@ -1244,8 +1244,9 @@ private def gaussianNearCancellationToolkit : Json :=
     ])
   ]
 
-private def gaussianPhaseBandToolkit : Json :=
-  Json.mkObj [
+-- Keep the large immutable metadata table in bounded chunks so ordinary
+-- elaboration/compilation does not require an increased recursion limit.
+private def gaussianPhaseBandEntries1 : List (String × Json) := [
     ("vaughanScope", .str "Classical Vaughan decomposition retains both strict cutoffs and the original product phases. Chebyshev prime-power density pays the full square-root product budget. The physical and divisor logarithms cancel before norms, giving the projected head C_y*sqrt(U)*sum norm(p_k), with no moment-order or cutoff-logarithm loss. The entire nonsquarefree contribution independently vanishes for every schedule with a paid normalized budget. The source survives every moving finite probability mixture whose average budget tends to zero. The genuine logarithmic floor average is now evaluated exactly for every L>=0, using a complete measurable finite cell partition. Its weights are nonnegative and sum to one for L>0. The composite squarefree coefficient is -log(n)*R_L(n)/L, where R_L(n)=sum_(d|n) mu(d)*max(0,L-log(d)). Completing it restores the explicit ordinary-prime endpoint log(p)*min(L,log(p))/L. At D_N=floor(u^(-N)/(N+1)) and L_N=log((D_N+2)^2), every cell has budget at most 2*(D_N+2); the complete normalized budget tends to zero independently. The original finite band therefore retains the conditional negative-multiplicity source. For every nonunit squarefree composite, R_(log(n)-L)(n)=mu(n)*R_L(n). Odd parity gives exact midpoint cancellation and opposite endpoint values. This reflection depends on n; the source theorem does not authorize replacing the common cutoff length by log(n)/2 inside the sum. The independent cofinal signed lower bound and RH remain open. The signed lower bound remains open for the full composite-restricted band, even though the averaging identity is exact. No arbitrary-coefficient Type II estimate, comparable-factor range, uniform bound for signed mixtures, unbudgeted moving-filter bound, height-uniform constant or larger zero-free region is claimed. No historical novelty claim follows from these classical convolution identities."),
     ("vaughanIdentityTheorem", .str "RiemannGaussian.ZetaVaughanReduction.vaughan"),
     ("vaughanCoprimeTheorem", .str "RiemannGaussian.ZetaVaughanReduction.cofactor_mul_of_coprime"),
@@ -1405,7 +1406,10 @@ private def gaussianPhaseBandToolkit : Json :=
     ("vkGaussianDualTheorem", .str "RiemannGaussian.VinogradovGaussianKernel.dualMoment_le_gaussian_gram"),
     ("vkGaussianActualTheorem", .str "RiemannGaussian.VinogradovKorobovMoment.interval_gaussian_bound"),
     ("vkGaussianFibreTheorem", .str "RiemannGaussian.VinogradovGaussianResonance.momentGram_eq_fibres"),
-    ("vkGaussianResonanceTheorem", .str "RiemannGaussian.VinogradovGaussianResonance.momentGram_re_le"),
+    ("vkGaussianResonanceTheorem", .str "RiemannGaussian.VinogradovGaussianResonance.momentGram_re_le")
+  ]
+
+private def gaussianPhaseBandEntries2 : List (String × Json) := [
     ("vkGaussianDualResonanceTheorem", .str "RiemannGaussian.VinogradovGaussianResonance.dualMoment_le_moment_resonance"),
     ("vkExactCoefficientTheorem", .str "RiemannGaussian.VinogradovKorobovMoment.coordinates_eq_linearSample"),
     ("vkActualResonanceTheorem", .str "RiemannGaussian.VinogradovKorobovMoment.interval_resonance_bound"),
@@ -1565,7 +1569,10 @@ private def gaussianPhaseBandToolkit : Json :=
     ("vkInitialGlobalIterationTheorem", .str "RiemannGaussian.VinogradovInitialIteration.exists_initial_finite_iteration"),
     ("vkInitialPacketFeasibilityTheorem", .str "RiemannGaussian.VinogradovInitialIteration.packet_budget_at_power_cutoff"),
     ("vkInitialGrowingCutoffTheorem", .str "RiemannGaussian.VinogradovInitialIteration.initial_finite_iteration_at_power_cutoff"),
-    ("vkInitialElementaryDefectTheorem", .str "RiemannGaussian.VinogradovInitialSaving.elementary_mixed_scale_identity"),
+    ("vkInitialElementaryDefectTheorem", .str "RiemannGaussian.VinogradovInitialSaving.elementary_mixed_scale_identity")
+  ]
+
+private def gaussianPhaseBandEntries3 : List (String × Json) := [
     ("vkInitialConditionedSavingTheorem", .str "RiemannGaussian.VinogradovInitialSaving.conditioned_initial_elementary_saving"),
     ("vkInitialAllowanceSavingTheorem", .str "RiemannGaussian.VinogradovInitialSaving.initial_allowance_saving"),
     ("vkInitialGlobalSavingTheorem", .str "RiemannGaussian.VinogradovInitialSaving.global_meanValue_first_saving"),
@@ -1725,7 +1732,10 @@ private def gaussianPhaseBandToolkit : Json :=
     ("vkUnionNonvanishingTheorem", .str "RiemannGaussian.ZetaVinogradovSummedZeroFree.exists_eventual_union_nonvanishing"),
     ("vkFullDiscTheorem", .str "RiemannGaussian.ZetaVinogradovFullDisc.norm_translated_le"),
     ("vkAngularMomentTheorem", .str "RiemannGaussian.ZetaVinogradovAngularBound.boundary_moment_le"),
-    ("vkAngularSourceTheorem", .str "RiemannGaussian.ZetaVinogradovAngularBound.neg_logDeriv_re_le_sub_zero"),
+    ("vkAngularSourceTheorem", .str "RiemannGaussian.ZetaVinogradovAngularBound.neg_logDeriv_re_le_sub_zero")
+  ]
+
+private def gaussianPhaseBandEntries4 : List (String × Json) := [
     ("vkAngularBudgetTheorem", .str "RiemannGaussian.ZetaVinogradovAngularBudget.margin_of_budget"),
     ("vkScaledHeightTheorem", .str "RiemannGaussian.VinogradovScaledSchedule.eventually_threshold"),
     ("vkScaledRadiusTheorem", .str "RiemannGaussian.VinogradovScaledSchedule.radius_scaled"),
@@ -1885,7 +1895,10 @@ private def gaussianPhaseBandToolkit : Json :=
     ("rieszSmoothPrimeAllMasksTheorem", .str "RiemannGaussian.ZetaRieszSmoothPrimeProduct.tendsto_quadratic_pairResponse"),
     ("rieszSmoothPrimeInjectionTheorem", .str "RiemannGaussian.ZetaRieszSmoothPrimePrefix.productBand_sum_eq_pairResponse"),
     ("rieszSmoothPrimePhysicalDecayTheorem", .str "RiemannGaussian.ZetaRieszSmoothPrimePrefix.tendsto_actualProductBand_of_small_source"),
-    ("rieszSmoothPrimePhysicalClassTheorem", .str "RiemannGaussian.ZetaRieszSmoothPrimePrefix.mem_actualProductBand_iff"),
+    ("rieszSmoothPrimePhysicalClassTheorem", .str "RiemannGaussian.ZetaRieszSmoothPrimePrefix.mem_actualProductBand_iff")
+  ]
+
+private def gaussianPhaseBandEntries5 : List (String × Json) := [
     ("rieszPhysicalPrefixDeleteTheorem", .str "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.tendsto_prefixDeletionBand"),
     ("rieszPhysicalPrefixBandTheorem", .str "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.tendsto_actual_band_sub_prefixResidual"),
     ("rieszPhysicalPrefixSupportTheorem", .str "RiemannGaussian.ZetaRieszPhysicalPrefixDeletion.surviving_single_prime_above_physical_cutoff"),
@@ -2045,7 +2058,10 @@ private def gaussianPhaseBandToolkit : Json :=
     ("rieszUniformMatchedProductsTheorem", .str "RiemannGaussian.ZetaRieszMatchedMiddle.eventually_uniform_product_phases"),
     ("rieszRelativeHeadCostTheorem", .str "RiemannGaussian.ZetaRieszMatchedMiddle.relative_head_cost_bounds"),
     ("rieszMatchedAtomIdentityTheorem", .str "RiemannGaussian.ZetaRieszMatchedMiddle.normalized_sharedAtom_eq"),
-    ("rieszMatchedOrderBudgetTheorem", .str "RiemannGaussian.ZetaRieszMatchedMiddle.matched_order_sum_le"),
+    ("rieszMatchedOrderBudgetTheorem", .str "RiemannGaussian.ZetaRieszMatchedMiddle.matched_order_sum_le")
+  ]
+
+private def gaussianPhaseBandEntries6 : List (String × Json) := [
     ("rieszMatchedBlockNonemptyTheorem", .str "RiemannGaussian.ZetaRieszMatchedMiddle.half_mem_matchedOrders"),
     ("rieszMatchedBlockBoundTheorem", .str "RiemannGaussian.ZetaRieszMatchedMiddle.eventually_matchedBlock_re_bounds"),
     ("rieszMatchedComplementTheorem", .str "RiemannGaussian.ZetaRieszMatchedMiddle.middleJoint_one_eq_unmatched_add_matched"),
@@ -2205,7 +2221,10 @@ private def gaussianPhaseBandToolkit : Json :=
     ("rieszCycleSourceTheorem", .str "RiemannGaussian.ZetaRieszCycleSource.tendsto_actual_cycle_source"),
     ("rieszZeroCycleScope", .str "Signed areas define supported fractions of three actual amplitudes whose complex sum is exactly zero. Positive cycles exhaust at least one amplitude, never enlarge another, and save at least twice the smallest available norm. Repeated indices spend only remaining mass. The full original carrier is bounded by its absolute mass minus the accumulated saving of a fully specified list of all original triple tests. Full-polynomial cross-correlations retain both relative sine and cosine channels; the actual constant filter keeps its Riesz signs. Nearby opposite flanks have at most quadratic extra partner-mass cost, with every shortage represented by the deterministic minimum capacity. This does not prove enough primes, enough signed weighted mass, or sufficient aggregate capacity. Later transport pays all remaining chords and unmatched mass. The exact-cycle remainder retains the full source at every right-half zero without exposure or simplicity. An independent source-scale bound, a new zero-free region from this path and RH remain open. Fixed finite percentage savings are not asymptotic results. No external premise, numerical certificate or historical novelty claim is added. Default endpoints and both top-ten lists remain unchanged."),
     ("rieszCycleTargetProfileTheorem", .str "RiemannGaussian.ZetaRieszTargetProfile.abs_prime_profile_sub_target_le"),
-    ("rieszCycleAllCofactorTheorem", .str "RiemannGaussian.ZetaRieszFullCycleSupply.abs_prime_profile_sub_cofactor_target_le"),
+    ("rieszCycleAllCofactorTheorem", .str "RiemannGaussian.ZetaRieszFullCycleSupply.abs_prime_profile_sub_cofactor_target_le")
+  ]
+
+private def gaussianPhaseBandEntries7 : List (String × Json) := [
     ("rieszCycleSeparateCapacityTheorem", .str "RiemannGaussian.ZetaRieszCycleCapacity.cycleSaving_retained_rayCapacity"),
     ("rieszCycleFullSupplyTheorem", .str "RiemannGaussian.ZetaRieszFullCycleSupply.full_cycle_after_previous_ge_cofactor_target"),
     ("rieszArithmeticCycleLocalTheorem", .str "RiemannGaussian.ZetaRieszArithmeticCycles.arithmeticCycleBudget_le_saving"),
@@ -2365,7 +2384,10 @@ private def gaussianPhaseBandToolkit : Json :=
     ("rieszJointRadialComparisonTheorem", .str "RiemannGaussian.ZetaRieszLeastBoundary.tendsto_rawRadial_sub_jointLow"),
     ("rieszLeastVariationTheorem", .str "RiemannGaussian.ZetaRieszLeastVariation.jointLow_variation_ledger"),
     ("rieszCoincidentSlotBoundTheorem", .str "RiemannGaussian.ZetaRieszLeastVariation.coincidentPacket_bound"),
-    ("rieszLeastOverflowBoundTheorem", .str "RiemannGaussian.ZetaRieszLeastOrderOverflow.overflowPacket_bound"),
+    ("rieszLeastOverflowBoundTheorem", .str "RiemannGaussian.ZetaRieszLeastOrderOverflow.overflowPacket_bound")
+  ]
+
+private def gaussianPhaseBandEntries8 : List (String × Json) := [
     ("rieszLeastOverflowRateTheorem", .str "RiemannGaussian.ZetaRieszLeastOrderOverflow.overflowRate_bounds"),
     ("rieszCutoffFourSignTheorem", .str "RiemannGaussian.ZetaRieszCutoffProfile.four_coefficient_nonneg_lowSupport"),
     ("rieszCutoffFiveSignTheorem", .str "RiemannGaussian.ZetaRieszCutoffProfile.five_coefficient_nonpos_core"),
@@ -2388,11 +2410,37 @@ private def gaussianPhaseBandToolkit : Json :=
     ("rieszSmallPrimeCompensationTheorem", .str "RiemannGaussian.ZetaRieszSmallPrimeCompensation.eventually_compensated_core_floor"),
     ("rieszExponentialHeadCompensationTheorem", .str "RiemannGaussian.ZetaRieszFourPrimeHead.eventually_core_full_exponential_floor"),
     ("rieszExponentialHeadCompensationScope", .str "For fixed |y|>=16 and 1/2<u<=10001/20000, ONE actual positive four-prime supply pays the balanced triple band and every original squarefree count-three/count-four label having a prime <=floor(exp(delta*N)), for some fixed delta>0. Half+eighth+eighth is spent; all three positive credits, a quarter of the supply and the entire signed complement remain. Radial/dominant omissions cost C*r^N+2*majorantMass*exp(-N/1000000), tending to zero on the original cofinal orders. The threshold delta and starting index are existential and may depend on fixed height. This is a proved population compensation inequality, not separate head decay, the full numerical -79/1000 joint floor, a zero exclusion or RH."),
+    ("rieszFourOrderingBudgetTheorem", .str "RiemannGaussian.ZetaRieszFourOrderingBudget.eventually_core_interior_floor"),
+    ("rieszFourOrderingPopulationTheorem", .str "RiemannGaussian.ZetaRieszFourOrderingBudget.eventually_edge_population_floor"),
+    ("rieszTwoPercentPhaseTheorem", .str "RiemannGaussian.ZetaRieszFourOrderingBudget.original_two_percent_budget"),
+    ("rieszFourCapacityFloorTheorem", .str "RiemannGaussian.ZetaRieszFourAngularDomain.eventually_core_capacity_floor"),
+    ("rieszFourCapacityPopulationTheorem", .str "RiemannGaussian.ZetaRieszFourAngularDomain.eventually_population_capacity_floor"),
+    ("rieszFourCapacityDomainTheorem", .str "RiemannGaussian.ZetaRieszFourAngularDomain.grid_integral_le"),
+    ("rieszFourCapacityFubiniTheorem", .str "RiemannGaussian.ZetaRieszFourAngularDomain.ordered_integral_eq"),
+    ("rieszFourCapacityFloorScope", .str "The entire clipped adverse four-prime population above log p>delta*N now has an independent capacity-domain floor on the original dyadic core: debit is at most (1003/1000*(D+1/1000000000+1/78000000)+1/100000)*E, where D is the complete ordered angular integral over outerBox and E is the original exp(-t/2)*(t+h)^N/N!*(max(0,-cos(y*t))+abs(y)*h)*h. Exact unit-Jacobian coordinates and Fubini match the checked density; repeated-index ordering cells cost at most 1/1000000000 on the refined mesh, and the largest-share excess is paid. All original moment, length, allocation, physical masks, positive-coefficient/nonpositive-cosine sector and largest-share cutoff 601/1000 remain literal, as does the entire signed core complement. The optional first-bin upper certificate can now be applied after checking its padded cutoff range. The root theorem does not run or assume an exhaustive numerical cover. Mesh and boundary costs share the one aggregate approximation budget; favorable five-prime transport, all-bin numerical certificates, disjoint spending, other sign/phase/count sectors and the full -79/1000-o(1) joint floor remain open. Starting indices are unevaluated. This is a component debit relative to E, not a source-normalized constant, zero exclusion or RH proof."),
+    ("rieszFourIntegralFloorTheorem", .str "RiemannGaussian.ZetaRieszFourInteriorBudget.eventually_core_integral_floor"),
+    ("rieszFourIntegralPopulationTheorem", .str "RiemannGaussian.ZetaRieszFourInteriorBudget.eventually_complete_integral_floor"),
+    ("rieszFourIntegralMeshTheorem", .str "RiemannGaussian.ZetaRieszFourInteriorBudget.angular_family_le"),
+    ("rieszFourIntegralFloorScope", .str "The entire clipped adverse four-prime population above log p>delta*N on the original dyadic core now has an independent exact-angular-integral floor. Its debit is at most (1003/1000*integral_Omega density+1/100000)*exp(-t/2)*(t+h)^N/N!*(max(0,-cos(y*t))+abs(y)*h)*h. One 1/100000 mesh allowance pays the entire family of disjoint cofactor cells, not one allowance per cell. The positive coefficient retains all three caps, all original moment/allocation/phase/support conditions and the literal largest-share cutoff 601/1000. Every ordering face is covered; empty cells spend nothing. The grid width is delta*N/1000000000, with fixed finite M=ceil(3000000000/delta); this only refines the cover, without changing the carrier or exponential prime threshold. The later FourAngularDomain theorem now pays the ordering and largest-share excess and compares this exact covering region with the complete two-dimensional angular domain. This earlier theorem alone does not supply that comparison or an optional numerical certificate. The signed core complement stays intact. Favorable five-prime boundary transport, complete numerical covers and disjoint joint spending remain open, as do other phases/counts and the -79/1000-o(1) floor. The allowance is relative to the original radial/phase factor, never a source-normalized constant or separate decay theorem. No zero exclusion or RH claim follows."),
+    ("rieszFourOrderingBudgetScope", .str "For fixed 0<delta<=1/128 and 1/2<u<=10001/20000, all adverse four-prime ordering-boundary cells above log p>delta*N and with largest share<=601/1000 cost at most (1/1250)*exp(-t/2)*(t+h)^N/N!*(max(0,-cos(y*t))+abs(y)*h)*h. This is an actual finite signed-prime-sum estimate, uniform in the grid size and original allocation. Exact coefficient geometry cancels the least-prime harmonic denominator, bounds the cell density by 800, and leaves at most 2*ceil(t/(3*b))^2 repeated-index cells, with b=delta*N/1000. The entire clipped adverse population is bounded by its strictly ordered interior cell debit plus this numerical boundary allowance, with every exterior label retained in the signed core rest. A two-percent angular surplus now suffices for the unchanged full radial/phase-period inequality after the same one-percent aggregate loss and radial factor 501/500. The rational first-bin candidate leaves room for the proved 1/1250 ordering cost and another 1/2000 angular approximation cost; that calculation does NOT certify the proposed five-prime supply or arithmetic transport. The later FourAngularDomain theorem pays the adverse interior-grid comparison. Favorable boundary losses, all-bin numerical covers, combined spending, other phases/counts and the full -79/1000-o(1) floor remain open. The boundary allowance is relative to the radial factor, not a source-normalized constant or a separate decay theorem. Starting indices are unevaluated. No zero exclusion or RH claim follows."),
+    ("rieszFourBoundaryCoverTheorem", .str "RiemannGaussian.ZetaRieszFourBoundaryCover.eventually_exponential_threshold_floor"),
+    ("rieszJointBoundaryFamilyTheorem", .str "RiemannGaussian.ZetaRieszJointPrimeCells.eventually_joint_boundary_family_floor"),
+    ("rieszFourOrderingGapTheorem", .str "RiemannGaussian.ZetaRieszFourPrimeCells.re_four_nonneg_of_top_gap"),
+    ("rieszFourBoundaryCoverScope", .str "On 1/2<u<=10001/20000, every fixed 0<delta<=1/128 admits a fixed finite grid giving an explicit debit for ALL original squarefree four-prime labels above log p>delta*N, with positive coefficient and negative cosine, in each selected core total-log interval. Literal prime ordering is retained even when cofactor windows overlap. The grid uses a=delta*N, b=delta*N/1000 and M=ceil(3000/delta); every adverse label is covered, including grid endpoints and ordering boundaries. Relative counting costs at most 501/500; the original moment, moving length, allocation, phase and finite support remain. The whole complement stays signed. A separate joint family floor pairs such boundary cells with disjoint five-prime credits. In the actual cutoff chamber, a largest/second-largest log gap <=7*log(n)/145 has nonnegative negative-cosine atoms pointwise. These results establish coverage and explicit arithmetic upper budgets, not a small source-normalized debit or completed whole-region compensation. The later FourAngularDomain theorem links this clipped adverse grid to the complete angular upper integral with its exact largest-share restriction; comparison to five-prime supply, favorable boundary/approximation costs, other phases/counts and the full -79/1000-o(1) floor remain open. Previously paid supplies are not spent again. No zero exclusion or RH claim follows."),
+    ("rieszFourCellDebitTheorem", .str "RiemannGaussian.ZetaRieszFourPrimeCells.eventually_four_cell_core_floor"),
+    ("rieszJointCellFamilyTheorem", .str "RiemannGaussian.ZetaRieszJointPrimeCells.eventually_joint_cell_family_floor"),
+    ("rieszInteriorCellCompensationTheorem", .str "RiemannGaussian.ZetaRieszCellCompensation.eventually_fixed_height_payment"),
+    ("rieszInteriorCellCompensationScope", .str "For every fixed nonzero height and 1/2<u<=10001/20000, a concrete ordered five-prime cell pays the entire adverse positive-coefficient/negative-cosine four-prime selection in a smaller interior cell. On each sufficiently large original dyadic order a bounded radial translation t=2*N+v supplies a favorable total-log window. The net reserve is at least h*exp(-(t+h)/2)*t^N/(100000000*N!), strictly positive. Every original coefficient, allocation, physical/core mask and phase remains literal; the complete complement stays signed. A general finite-family floor retains 997/1000 of explicit five-prime credits and charges at most 501/500 of four-prime debits. Credit disjointness is proved from ordered cell separation; adverse overlaps only overcharge. The cell starts and widths are rational fractions of t and the moving L/t is proved in the required chamber. This is one interior population payment, with an unevaluated starting index, not the whole angular region or the -79/1000-o(1) joint floor. Do not add it to previously spent supplies without a combined disjoint ledger. Positive-cosine terms, other counts and the full signed complement remain open. No zero exclusion or RH claim follows."),
+    ("rieszCoupledFiveCellTheorem", .str "RiemannGaussian.ZetaRieszFivePrimeCells.eventually_five_cell_core_floor"),
+    ("rieszOwnedFiveCoreTheorem", .str "RiemannGaussian.ZetaRieszCoupledWindow.eventually_owned_five_core_lower"),
+    ("rieszMacroPrimePopulationTheorem", .str "RiemannGaussian.ZetaRieszMacroPrimeWindows.eventually_macro_tuple_bounds"),
+    ("rieszCommonPhaseBudgetTheorem", .str "RiemannGaussian.ZetaRieszPhaseBudget.original_radial_phase_budget"),
+    ("rieszCoupledFiveCellScope", .str "An independent signed lower bound for literal five-prime cells inside coreResponse on 1/2<u<=10001/20000 and the unchanged dyadic schedule. Four ordered cofactor-prime log intervals may have widths proportional to N. The last-prime interval moves with the exact cofactor and puts every actual product in one fixed total-log interval (t,t+h]. Three explicit common Riesz hinge caps, relative ordinary-prime counts, and old allocation retain at least 997/1000 of the conservative Darboux credit. Squarefreeness, exact count five, physical upper cutoff, all original core masks, full cosine, and unique largest-prime ownership are proved from explicit cell geometry; no signed-score or population hypothesis remains. Every unselected core label stays signed. Relative outer counts cost at most one thousandth, uniformly over macroscopic cell endpoints and widths, with unevaluated starting index. This does NOT identify the whole angular integral with an arithmetic supply: both finite-cell transfers and their disjoint family aggregation are proved, including one explicit interior four/five payment. Adverse ordering boundaries now have explicit covered grid debits; the angular-grid approximation, favorable boundary budget and complete numerical surplus remain open. Other phases and counts are not paid. No whole -79/1000 joint floor, zero exclusion or change to the RH/source frontier follows."),
     ("rieszCapacityIncidenceTheorem", .str "RiemannGaussian.ZetaRieszCapacityIncidence.re_sum_ge_ordered_pair_credit"),
     ("rieszFourAngularCoverTheorem", .str "RiemannGaussian.ZetaRieszFourCapacityCover.integral_le_of_checked_cover"),
     ("rieszFiveAngularCoverTheorem", .str "RiemannGaussian.ZetaRieszFiveCapacityCover.integral_ge_of_checked_cover"),
     ("rieszCapacitySymmetryTheorem", .str "RiemannGaussian.ZetaRieszFiveCapacityCover.fibre_eq_half_pair_integral"),
-    ("rieszAngularCapacityScope", .str "Exact four-prime debit and five-prime pair-cap credit retain the original finite atom and signed complement. The ordered-pair incidence factor is one half and cancels the factor two in the proved symmetric pair integral. Complete half-open cover checkers prove whole-cell and whole-root angular integral bounds only after every rational domain, numerical leaf, split and total check passes. Measurability and integrability are proved, including empty and coarse fibres. Optional generated trees are untrusted until Lean kernel checks their chunks and assembly. The approximately 3 percent surplus remains numerical guidance, not a certified arithmetic payment. Actual fixed-width prime-population/common-phase transport, original masks and disjoint spending remain open; positive-cosine terms and other counts stay signed. No whole joint floor or new zero exclusion follows."),
+    ("rieszAngularCapacityScope", .str "Exact four-prime debit and five-prime pair-cap credit retain the original finite atom and signed complement. The ordered-pair incidence factor is one half and cancels the factor two in the proved symmetric pair integral. Complete half-open cover checkers prove whole-cell and whole-root angular integral bounds only after every rational domain, numerical leaf, split and total check passes. Measurability and integrability are proved, including empty and coarse fibres. Optional generated trees are untrusted until Lean kernel checks their chunks and assembly. The approximately 3 percent surplus remains numerical guidance, not a certified arithmetic payment. Literal five-prime cells now have a separate 997/1000 signed credit theorem with all core masks and unique ownership; both finite-cell transfers and their disjoint family aggregation are now proved, with one explicit interior four/five payment. Recovering the whole angular budgets, paying grid/edge losses and completing the numerical surplus remain open. Positive-cosine terms and other counts stay signed. No whole joint floor or new zero exclusion follows."),
     ("rieszSmallPrimeCompensationScope", .str "For fixed |y|>=16 and 1/2<u<=10001/20000, actual four-prime labels pay a fixed positive balanced-triple share band and the ENTIRE original three-prime sector containing a prime <=N^2. The small-prime cost is O(log N/N) relative to the same positive supply, using actual Chebyshev counts. Half plus one quarter of one supply is spent, with no overlap counted twice; both positive triple credits and a quarter of that supply remain. The original radial edges cost C*r^N, r<1. On the untouched signed complement, the exact negative four-prime and positive five-prime coefficient costs sharpen the one-sided bound; all other counts stay signed. Widths, constants and starting indices depend on the fixed height and are not numerically evaluated. This is a component compensation inequality, not the independent numerical -79/1000 joint floor, carrier decay, RH or a new zero-free region."),
     ("rieszMarkedPrimeCompletionScope", .str "For 1/2<u<=10001/20000, the exponential prime head, full nonlinear Euler correction, frequency exteriors, high-prime ordering/collision restrictions and high marked-prime completion errors are independently paid at source scale. The integrated correction, separation and completion allowances have form C*(N+2)^3*r^N with a checked r<249/250. The remaining operator uses the complete ordinary-prime difference P_j(s)-P_j(s+i*xi), retaining BOTH frequencies, the original factorial rectangle, the finite ordered cofactor product over q>r, moving length and every middle order. Its difference from the UNCHANGED dyadic lowerThresholdPacket (counts 3..55) minus shortOverflowPacket (3..13) tends to zero. No zero hypothesis, separate-leg phase approximation or composite-cofactor completion is used. The common signed main integral and complementary independent floor remain open. These are error bounds and exact ledgers, not packet decay, a zero exclusion or a changed whole-carrier frontier."),
     ("rieszMarkedEulerIdentityTheorem", .str "RiemannGaussian.ZetaRieszOrderedEulerCompletion.completePacket_eq_completion"),
@@ -2508,7 +2556,10 @@ private def gaussianPhaseBandToolkit : Json :=
     ("primeLatticeSourceTheorem", .str "RiemannGaussian.PrimeLatticeCarrier.tendsto_actual_source_re"),
     ("primeLatticeDocumentation", .str "docs/zeta-prime-lattice-carrier.md"),
     ("signedBudgetScope", .str "The actual signed Gaussian source budget now splits exactly into its original clipped left mean and all rational, Gaussian pole/completion and right-response corrections. The right multiplier obeys factor<=1/(50000*q^2), retaining decay lost by the old uniform cap. The complete signed difference is bounded in absolute value by 109*mass(a)+3*(mass(a)*log(abs(t)+26)+frequencyCost(a,omega))/(50000*q^2), for q>=1 and abs(t)>=1000000. For moving eligible countable families with bounded mass and first logarithmic frequency cost, the normalized non-left correction tends to zero at the current dilation. The actual positive squared finite-zero source surplus over the left mean has the same normalized zero limit, retaining every multiplicity and arbitrary finite nonnegative clipping depths. The signed clipped left mean remains the obstruction; no unclipped integral limit, source-beating left bound, new zero-free region or RH proof is claimed. The distinct +26 and +2 height smoothings and the logarithmic growth of the right completion are retained."),
-    ("signedBudgetSourceTheorem", .str "RiemannGaussian.ZetaGaussianSignedBudgetReduction.tendsto_current_source_surplus_over_left_sq"),
+    ("signedBudgetSourceTheorem", .str "RiemannGaussian.ZetaGaussianSignedBudgetReduction.tendsto_current_source_surplus_over_left_sq")
+  ]
+
+private def gaussianPhaseBandEntries9 : List (String × Json) := [
     ("signedBudgetIdentityTheorem", .str "RiemannGaussian.ZetaGaussianSignedBudgetReduction.signedBudget_eq_left_add"),
     ("signedBudgetCorrectionTheorem", .str "RiemannGaussian.ZetaGaussianSignedBudgetReduction.abs_signedBudget_sub_left_le"),
     ("signedBudgetDocumentation", .str "docs/zeta-gaussian-signed-budget-reduction.md"),
@@ -3025,6 +3076,17 @@ private def gaussianPhaseBandToolkit : Json :=
       .str "RiemannGaussian.ZetaGaussianLiteratureComparison.eventual_vkWidth_lt"
     ])
   ]
+
+private def gaussianPhaseBandToolkit : Json :=
+  Json.mkObj (gaussianPhaseBandEntries1 ++
+    gaussianPhaseBandEntries2 ++
+    gaussianPhaseBandEntries3 ++
+    gaussianPhaseBandEntries4 ++
+    gaussianPhaseBandEntries5 ++
+    gaussianPhaseBandEntries6 ++
+    gaussianPhaseBandEntries7 ++
+    gaussianPhaseBandEntries8 ++
+    gaussianPhaseBandEntries9)
 
 private def gaussianStripBridgeToolkit : Json :=
   Json.mkObj [
