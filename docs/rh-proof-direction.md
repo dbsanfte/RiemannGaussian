@@ -3,11 +3,15 @@
 The current arithmetic objective is the [direct cofinal joint floor](zeta-riesz-joint-floor.md)
 for `J+C`, with sufficient threshold `-79/1000-o(1)` on
 `1/2<u<=10001/20000`. Separate packet and complement decay is unnecessary.
-The [latest component inequality](zeta-riesz-small-prime-compensation.md)
-pays a fixed balanced triple band and every original triple containing a
-prime at most `N^2`, using one actual four-prime supply with unused credit
-retained. The rest stays signed, with exact four- and five-prime debit
-refinements. The whole-core floor is still open. The older `-3/40` criterion
+The [four-prime compensation inequality](zeta-riesz-four-prime-exact.md)
+pays a fixed balanced triple band and the original count-three/count-four
+exponential small-prime head using one actual supply with unused credit
+retained. The [latest five-prime lower bound](zeta-riesz-ordered-capacity.md#the-favorable-five-prime-region-has-a-literal-lower-bound)
+transfers the entire ordered favorable angular region, retaining 99.6% of
+its integral and paying a total angular cost of `1/50000`. The complete
+complement stays signed. Comparison with the certified pair integral,
+combined disjoint spending and the whole-core floor are still open.
+The older `-3/40` criterion
 and all unsuccessful transfer audits below remain valid; they are not the
 minimal current joint target.
 

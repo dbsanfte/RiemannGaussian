@@ -149,10 +149,10 @@ Work directly on a cofinal signed floor for J+C, retaining the original arithmet
 
 ### Latest Update
 
-**Literal four-prime debit bounded; first-bin angular surplus checked.** Lean now bounds the selected adverse four-prime population by its complete angular integral, retaining the original weights and signed complement. In the first certified cutoff bin, the debit is at most 0.133421 times the original radial/phase factor. Optional exhaustive checks also prove a five-prime angular supply of at least 0.137044 and a two-percent surplus after budgeted losses.
-Transfer the full favorable five-prime integral to disjoint literal prime populations, then check the other cutoff bins. The joint signed floor, restricted zero exclusion and RH remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszFourAngularDomain.lean#L698)
-· [Proof details](docs/zeta-riesz-ordered-capacity.md#the-complete-adverse-angular-domain-is-now-paid).
+**Literal five-prime lower bound now pays every angular boundary.** Lean now transfers the full ordered favorable region to disjoint literal five-prime populations. The lower bound retains 99.6% of its exact angular integral, less a total 1/50000 mesh-and-boundary cost, all multiplied by the original radial/phase factor. Original weights, phase and the entire signed complement remain intact.
+Compare this integral with the checked two-dimensional supply certificate, then combine the four/five-prime budgets without double spending. The joint signed floor, restricted zero exclusion and RH remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszFiveAngularBoundary.lean#L374)
+· [Proof details](docs/zeta-riesz-ordered-capacity.md#the-favorable-five-prime-region-has-a-literal-lower-bound).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

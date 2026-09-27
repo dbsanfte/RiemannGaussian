@@ -3649,12 +3649,34 @@ Only the first padded cutoff bin is checked. The favorable full-domain
 arithmetic transfer, remaining seven bins and whole signed floor are open.
 Do not reuse its unused favorable credit in more than one joint ledger.
 
-The user explicitly authorized committing and pushing the complete accumulated
-local slice on 2026-09-27 after its checks pass, before further theorem work.
-Include all eleven new prime-cell/capacity modules, their documentation and
-explorers, and the two optional first-bin application scripts. This supersedes
-the preceding hold-commit instructions for this slice. Preserve the optional
-cover cache; do not add exhaustive verification to ordinary CI.
+`ZetaRieszFiveAngularBoundary.eventually_ordered_region_core_floor` now
+pays the whole ordered favorable five-prime region on the original dyadic
+core and 1/2<u<=10001/20000. For the padded bin lo<=L/t<=hi, its actual
+signed credit is `(996/1000*D5-1/50000)*F`, where D5 is the exact
+four-cofactor three-cap integral over `orderedRegion lo hi` and
+`F=exp(-(t+h)/2)*t^N/N!*max(0,-cos(y*t)-abs(y)*h)*h`.
+The region has shares at least 1/100, largest share at most 1/2 and both
+saturation constraints. `ZetaRieszFiveInteriorBudget` pays all disjoint
+cells with ONE 1/100000 mesh allowance. Every uncovered point lies in one
+of six ordering/saturation strips, together of volume at most 60*b; the
+density bound 10^12 and b<=10^(-20) pay ONE more 1/100000 angular allowance.
+The fixed finite grid needs M*b>=1; its starting moment is unevaluated.
+All actual prime, moment, length, allocation, physical and phase conditions
+are retained, as is the entire signed core complement. No zero premise.
+D5 has NOT yet been compared with the optional certificate's two-dimensional
+pair integral. Do not substitute 34261/250000 until that incidence/Fubini
+comparison is proved. These costs multiply F; they are not source-normalized
+small constants. Do not add this supply to the already spent interior-five
+credit. Common phase-period aggregation, other seven bins, combined disjoint
+spending, other sign/count sectors and the full joint floor remain open.
+Default public source/zero-free endpoints and both top-ten lists stay fixed.
+
+The previous eleven-module slice was committed and published as ad19357.
+The user has now authorized committing and pushing the current slice after
+its checks, before continuing. Include both five-prime region modules,
+documentation, status and explorers. Preserve the optional cover cache;
+do not rerun exhaustive verification or add it to ordinary CI. Do not use
+subagents.
 
 ## Soundness invariant
 

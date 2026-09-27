@@ -3,7 +3,9 @@
 The target remains an independent cofinal floor for the **whole** joint
 carrier. Literal five-prime labels now pay one concrete interior
 four-prime, negative-cosine population and leave a proved positive surplus.
-The whole angular population, joint floor and zero exclusion remain open.
+Whole ordered-region arithmetic bounds now include their boundary costs;
+the favorable certificate-domain comparison, joint floor and zero exclusion
+remain open.
 The prior exponential-head payment and its signed complement remain
 unchanged; their supplies are not added to this payment without a combined
 disjoint ledger.
@@ -412,9 +414,10 @@ The exact rational `first_bin_budget_room` verifies
 
 The complete first-bin five-prime cover now verifies that supply, and
 `CheckRieszCapacitySurplus.lean` proves this inequality for the actual angular
-integrals. The adverse domain transfer is proved below. The favorable
-boundary loss, its whole arithmetic transfer and combined disjoint spending
-remain open, as do other phases/counts and the joint numerical floor.
+integrals. The adverse domain transfer and favorable ordered-region
+boundary estimate are proved below. The favorable certificate-domain
+comparison and combined disjoint spending remain open, as do other
+phases/counts and the joint numerical floor.
 
 ## The entire adverse population now has an exact-integral floor
 
@@ -486,11 +489,65 @@ only after generating and checking the four-prime cover, with that directory
 on `LEAN_PATH`; it does not trust the manifest as a proof.
 
 This applies only inside the certificate's exact padded cutoff bin. The
-favorable five-prime integral still needs its complete disjoint arithmetic
-transfer and boundary budget. The mesh and largest-share costs use part of
+favorable five-prime ordered-region transfer and boundary budget are now
+proved below; comparison with its certificate's pair integral is still open.
+The mesh and largest-share costs use part of
 the **single aggregate `1/2000` approximation allowance**; each later error
 cannot spend that allowance again. Other sign/phase/count sectors and the
 independent whole joint floor remain open.
+
+## The favorable five-prime region has a literal lower bound
+
+[`ZetaRieszFiveAngularBoundary.eventually_ordered_region_core_floor`](../RiemannGaussian/ZetaRieszFiveAngularBoundary.lean)
+now transfers the complete ordered three-large/two-small region into the
+original finite arithmetic sum. For `1/2<u<=10001/20000`, fixed
+`0<h<=1/100000`, sufficiently large original dyadic orders, and
+`39N/20<=t<t+h<=203N/100`, write `lambda=L_N/t` and require the padded bin
+`lo<=lambda<=hi`. The result is
+
+```math
+\operatorname{Re}(\mathrm{coreResponse})\ge
+\operatorname{Re}(\mathrm{signedRest})+
+\left(\frac{996}{1000}D_5(\lambda;lo,hi)-\frac1{50000}\right)
+\frac{e^{-(t+h)/2}t^N}{N!}
+\max(0,-\cos(yt)-|y|h)h.
+```
+
+Here `D_5` is the four-dimensional integral of the exact three-cap density
+`ZetaRieszFiveInteriorBudget.density`. Its cofactor coordinates are
+`x=(r,b,a,q)`, normalized by `t`, with `p=1-sum x`. The region has
+`1/100<=r<=b<=a<=q<=p<=1/2`, `1-q-a<=lo`, and `hi<=1-b-r`.
+`signedRest` contains every original core label outside the explicitly
+selected union of disjoint literal five-prime cells. The original moving
+length, factorial kernel, prime and allocation masks, phase and cofinal
+schedule are unchanged. No hypothetical-zero premise enters this estimate.
+
+[`ZetaRieszFiveInteriorBudget.angular_family_lower`](../RiemannGaussian/ZetaRieszFiveInteriorBudget.lean)
+pays the approximation over the **entire** half-open grid with one
+`1/100000` angular allowance, retaining `996/1000` after the earlier
+prime-count and allocation costs. The error is proportional to cell volume
+before summing; it is not charged once per cell or prime label.
+
+Every uncovered point lies within ten mesh widths of one of six faces:
+the four successive ordering gaps, including the owner gap, and the two
+saturation boundaries. Their combined volume is at most `60*b_mesh`.
+The exact density is bounded by `10^12` on the relevant positive-share
+region. Thus a fixed mesh `0<b_mesh<=10^(-20)`, with `M*b_mesh>=1`, pays all
+these faces with one further `1/100000`. This includes equality boundaries.
+All selected cells satisfy the actual arithmetic transfer conditions, and
+their prime populations are disjoint. The final combined cost is
+`1/50000`. The very fine grid is finite and used symbolically; no grid
+enumeration is needed. The eventual starting order remains unevaluated.
+
+The new `D_5` has **not yet been compared** with the two-dimensional pair
+integral in the optional five-prime certificate. That comparison needs the
+exact incidence factor, change of variables and integral inequalities.
+Consequently the certified `0.137044` cannot yet be substituted into this
+theorem. Both errors above multiply the original radial/phase factor; they
+are not small source-normalized constants. The next steps are that angular
+comparison, common phase-period aggregation, the other seven bins and one
+combined disjoint spending ledger. Other signs/counts and the independent
+whole joint floor remain open. No zero exclusion follows from this slice.
 
 ## Numerical test and remaining proof
 
@@ -518,8 +575,9 @@ approximants. These are floating-point evaluations of proposed enclosures,
 The first-bin pair of complete Lean covers now certifies that bin's
 angular surplus. The other seven bins remain unverified. The calculation
 alone does not prove a joint prime-sum floor: the adverse whole-domain
-transfer is now proved, while the favorable side still needs its complete
-arithmetic cover and boundary estimate.
+transfer and favorable ordered-region transfer are now proved, including
+their boundary costs. The favorable integral still needs comparison with
+the certificate's pair integral.
 
 A second [unverified run](riesz-ordered-capacity-fast-log-probe.json) uses
 only four odd-series terms for lower logarithms and six for upper ones.
@@ -528,19 +586,20 @@ bins. This is a candidate for reducing certificate cost; it is not a second
 proved surplus. The precise rational logarithm inequalities are already
 proved, but their complete numerical use and angular cover remain unchecked.
 
-The remaining proof must finish the other numerical bins, complete the
-favorable angular-to-arithmetic comparison on common negative-cosine arcs
-and pay its boundary losses. Both cell transfers and their finite-family
-aggregation are proved, as is the concrete interior payment above. Their
-full cover must still match the certified angular integrals without losing
-source-scale boundary mass.
+The remaining proof must finish the other numerical bins, compare the
+favorable ordered integral with the certified pair integral and aggregate
+the two arithmetic bounds on common negative-cosine arcs. Both cell
+transfers, their finite-family aggregation and their complete ordered-region
+boundary budgets are proved, as is the concrete interior payment above.
+Those positive supplies must be spent together in one disjoint ledger.
 The upper debit cover now includes labels close to prime-order equalities
 through exact ordered subselections; its repeated-index cells now cost
 at most 1/1250 of the common radial/phase factor. The finite sum is now
 related to its exact covering-region angular integral with the numerical
 cost above. The adverse comparison with the certified ordered domain is now proved,
-including its largest-share excess. Favorable five-prime boundary losses must fit the unused relative budget of a
-certified whole comparison.
+including its largest-share excess. The favorable five-prime estimate
+retains 99.6% of its integral with total angular cost 1/50000. A certified
+whole comparison must include these proved losses once.
 The existing sharp prime-window estimates provide relative population
 budgets, not generic source-scale signed PNT transport. All positive-cosine
 contributions and other counts remain signed even if this payment succeeds.

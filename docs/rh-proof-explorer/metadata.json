@@ -16,17 +16,17 @@
       "changeReason": "The direct joint-floor theorem avoids unnecessary separate packet bounds. Actual disjoint four-prime supplies now pay balanced and small-prime triple populations while retaining positive credits, original weights and the complete signed complement."
     },
     "latestUpdate": {
-      "sequence": 84,
-      "id": "literal-four-prime-capacity-floor",
+      "sequence": 85,
+      "id": "literal-five-prime-region-floor",
       "kind": "theorem",
-      "title": "Literal four-prime debit bounded; first-bin angular surplus checked.",
-      "body": "Lean now bounds the selected adverse four-prime population by its complete angular integral, retaining the original weights and signed complement. In the first certified cutoff bin, the debit is at most 0.133421 times the original radial/phase factor. Optional exhaustive checks also prove a five-prime angular supply of at least 0.137044 and a two-percent surplus after budgeted losses.",
-      "next": "Transfer the full favorable five-prime integral to disjoint literal prime populations, then check the other cutoff bins. The joint signed floor, restricted zero exclusion and RH remain open.",
+      "title": "Literal five-prime lower bound now pays every angular boundary.",
+      "body": "Lean now transfers the full ordered favorable region to disjoint literal five-prime populations. The lower bound retains 99.6% of its exact angular integral, less a total 1/50000 mesh-and-boundary cost, all multiplied by the original radial/phase factor. Original weights, phase and the entire signed complement remain intact.",
+      "next": "Compare this integral with the checked two-dimensional supply certificate, then combine the four/five-prime budgets without double spending. The joint signed floor, restricted zero exclusion and RH remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszFourCapacityFloorTheorem"
+        "rieszFiveRegionFloorTheorem"
       ],
-      "documentation": "docs/zeta-riesz-ordered-capacity.md#the-complete-adverse-angular-domain-is-now-paid"
+      "documentation": "docs/zeta-riesz-ordered-capacity.md#the-favorable-five-prime-region-has-a-literal-lower-bound"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -169,6 +169,41 @@
       "scopePath": [
         "gaussianPhaseBandToolkit",
         "rieszFourCapacityFloorScope"
+      ],
+      "documentation": "docs/zeta-riesz-ordered-capacity.md"
+    },
+    {
+      "id": "five-region-floor",
+      "label": "Literal five-prime lower bound \u00b7 99.6% integral, all boundaries paid",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveRegionFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveRegionIntegralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveRegionBoundaryTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveRegionCoverageTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveIntegralFamilyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveIntegralMeshTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFiveRegionFloorScope"
       ],
       "documentation": "docs/zeta-riesz-ordered-capacity.md"
     },
@@ -9113,6 +9148,8 @@
     "ZetaRieszFourBoundaryCover": "arithmetic",
     "ZetaRieszFourOrderingBudget": "arithmetic",
     "ZetaRieszFourInteriorBudget": "arithmetic",
-    "ZetaRieszFourAngularDomain": "arithmetic"
+    "ZetaRieszFourAngularDomain": "arithmetic",
+    "ZetaRieszFiveInteriorBudget": "arithmetic",
+    "ZetaRieszFiveAngularBoundary": "arithmetic"
   }
 }
