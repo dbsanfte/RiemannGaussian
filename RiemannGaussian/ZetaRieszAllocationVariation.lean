@@ -170,7 +170,7 @@ theorem complementary_radial_derivative_bound (n : ℕ) (S : Finset ℕ)
 
 private theorem radial_lipschitz (n : ℕ) (f : ℝ → ℝ) {b v δ T U : ℝ}
     (_hb : 0 < b) (hv : 100 ≤ v) (_hδ : 0 ≤ δ) (hδu : δ ≤ 1/16)
-    (hbv : b ≤ (133/200 : ℝ)*v)
+    (hbv : b ≤ (7/10 : ℝ)*v)
     (hT : T ∈ Set.Icc (v-δ) (v+δ)) (hU : U ∈ Set.Icc (v-δ) (v+δ))
     (hd : ∀ t, 0 < t → b ≤ (3/4 : ℝ)*t →
       ∃ D, HasDerivAt f D t ∧ |D| ≤ 2*Real.sqrt n/t) :
@@ -199,7 +199,7 @@ theorem selected_mass_radial_lipschitz (n : ℕ) (S : Finset ℕ)
     (hT : T ∈ Set.Icc (v-δ) (v+δ)) (hU : U ∈ Set.Icc (v-δ) (v+δ)) :
     |(∑ k ∈ S, mass n k (b/T))-(∑ k ∈ S, mass n k (b/U))| ≤
       (4*Real.sqrt n/v)*|T-U| :=
-  radial_lipschitz n _ hb hv hδ hδu hbv hT hU
+  radial_lipschitz n _ hb hv hδ hδu (by linarith) hT hU
     (fun _ ht hbt => radial_derivative_bound n S hS hb ht hbt)
 
 /-- This controls fixed cofactor-prime incidences, including small primes. -/
@@ -210,7 +210,29 @@ theorem complementary_mass_radial_lipschitz (n : ℕ) (S : Finset ℕ)
     (hT : T ∈ Set.Icc (v-δ) (v+δ)) (hU : U ∈ Set.Icc (v-δ) (v+δ)) :
     |(∑ k ∈ S, mass n k (1-b/T))-(∑ k ∈ S, mass n k (1-b/U))| ≤
       (4*Real.sqrt n/v)*|T-U| :=
-  radial_lipschitz n _ hb hv hδ hδu hbv hT hU
+  radial_lipschitz n _ hb hv hδ hδu (by linarith) hT hU
+    (fun _ ht hbt => complementary_radial_derivative_bound n S hS hb ht hbt)
+
+/-- The same selected-order variation remains valid through the unsaturated cofactor band. -/
+theorem selected_mass_radial_lipschitz_wide (n : ℕ) (S : Finset ℕ)
+    (hS : S ⊆ Finset.range (n+1)) {b v δ T U : ℝ}
+    (hb : 0 < b) (hv : 100 ≤ v) (hδ : 0 ≤ δ) (hδu : δ ≤ 1/16)
+    (hbv : b ≤ (7/10 : ℝ)*v)
+    (hT : T ∈ Set.Icc (v-δ) (v+δ)) (hU : U ∈ Set.Icc (v-δ) (v+δ)) :
+    |(∑ k ∈ S, mass n k (b/T))-(∑ k ∈ S, mass n k (b/U))| ≤
+      (4*Real.sqrt n/v)*|T-U| :=
+  radial_lipschitz n _ hb hv hδ hδu (by linarith) hT hU
+    (fun _ ht hbt => radial_derivative_bound n S hS hb ht hbt)
+
+/-- The complementary incidence bound also covers the wider cofactor band. -/
+theorem complementary_mass_radial_lipschitz_wide (n : ℕ) (S : Finset ℕ)
+    (hS : S ⊆ Finset.range (n+1)) {b v δ T U : ℝ}
+    (hb : 0 < b) (hv : 100 ≤ v) (hδ : 0 ≤ δ) (hδu : δ ≤ 1/16)
+    (hbv : b ≤ (7/10 : ℝ)*v)
+    (hT : T ∈ Set.Icc (v-δ) (v+δ)) (hU : U ∈ Set.Icc (v-δ) (v+δ)) :
+    |(∑ k ∈ S, mass n k (1-b/T))-(∑ k ∈ S, mass n k (1-b/U))| ≤
+      (4*Real.sqrt n/v)*|T-U| :=
+  radial_lipschitz n _ hb hv hδ hδu (by linarith) hT hU
     (fun _ ht hbt => complementary_radial_derivative_bound n S hS hb ht hbt)
 
 /-- Exact allocation along a prime fibre, with the eligible-prime mask retained. -/
@@ -304,6 +326,61 @@ theorem boundedShare_fibre_variation (A : Finset ℕ) (N : ℕ) {a p q : ℕ}
   rw [Finset.sum_const,nsmul_eq_mul] at hsum
   have hcard : ((a.primeFactors.filter (· ∈ A)).card : ℝ) ≤ 5 := by
     exact_mod_cast (Finset.card_filter_le _ _).trans_eq hc
+  have hsum5 := hsum.trans (mul_le_mul_of_nonneg_right hcard hB)
+  rw [Finset.sum_sub_distrib] at hsum5
+  have hab := abs_add_le
+    ((∑ k ∈ ZetaRieszWingHighOrders.unpaidOrders N, mass (N+1) k (Real.log a/Real.log (p*a : ℕ)))-
+      ∑ k ∈ ZetaRieszWingHighOrders.unpaidOrders N, mass (N+1) k (Real.log a/Real.log (q*a : ℕ)))
+    ((∑ r ∈ a.primeFactors.filter (· ∈ A), ∑ k ∈ ZetaRieszWingHighOrders.unpaidOrders N,
+      mass (N+1) k (1-Real.log r/Real.log (p*a : ℕ)))-
+      ∑ r ∈ a.primeFactors.filter (· ∈ A), ∑ k ∈ ZetaRieszWingHighOrders.unpaidOrders N,
+      mass (N+1) k (1-Real.log r/Real.log (q*a : ℕ)))
+  dsimp only [B] at hsum5
+  convert (hab.trans (add_le_add hfirst hsum5)) using 1 <;> congr 1 <;> ring
+
+/-- Any fixed prime-count sector has the same allocation-variation mechanism.
+The explicit factor is four times the total number of prime legs. -/
+theorem boundedShare_fibre_variation_of_count (A : Finset ℕ) (N : ℕ) {a p q : ℕ}
+    (ha : Squarefree a) (hc : 2 ≤ a.primeFactors.card)
+    (hp : p.Prime) (hpd : ¬p ∣ a) (hpA : p ∈ A)
+    (hq : q.Prime) (hqd : ¬q ∣ a) (hqA : q ∈ A)
+    {v δ : ℝ} (hv : 100 ≤ v) (hδ : 0 ≤ δ) (hδu : δ ≤ 1/16)
+    (hav : Real.log a ≤ (7/10 : ℝ)*v)
+    (hpT : Real.log (p*a : ℕ) ∈ Set.Icc (v-δ) (v+δ))
+    (hqT : Real.log (q*a : ℕ) ∈ Set.Icc (v-δ) (v+δ)) :
+    |boundedShare A N (p*a)-boundedShare A N (q*a)| ≤
+      (4*((a.primeFactors.card : ℝ)+1)*Real.sqrt (N+1)/v)*|Real.log (p*a : ℕ)-Real.log (q*a : ℕ)| := by
+  have ha1 : 1 < a := by
+    have hne : a ≠ 1 := by intro h; simp [h] at hc
+    have := ha.ne_zero
+    omega
+  have hlog : 0 < Real.log a := Real.log_pos (by exact_mod_cast ha1)
+  have hS : ZetaRieszWingHighOrders.unpaidOrders N ⊆ Finset.range (N+1+1) := by
+    intro k hk
+    have h := unpaid_orders_submajority N k hk
+    simp only [Finset.mem_range]
+    omega
+  rw [boundedShare_prime_fibre A N ha (by omega) hp hpd hpA,
+    boundedShare_prime_fibre A N ha (by omega) hq hqd hqA]
+  have hfirst := selected_mass_radial_lipschitz_wide (N+1) _ hS hlog hv hδ hδu hav hpT hqT
+  simp only [Nat.cast_add,Nat.cast_one] at hfirst
+  let B := (4*Real.sqrt (N+1)/v)*|Real.log (p*a : ℕ)-Real.log (q*a : ℕ)|
+  have hB : 0 ≤ B := by dsimp [B]; positivity
+  have hrow (r : ℕ) (hr : r ∈ a.primeFactors.filter (· ∈ A)) :
+      |(∑ k ∈ ZetaRieszWingHighOrders.unpaidOrders N,
+        mass (N+1) k (1-Real.log r/Real.log (p*a : ℕ)))-
+       (∑ k ∈ ZetaRieszWingHighOrders.unpaidOrders N,
+        mass (N+1) k (1-Real.log r/Real.log (q*a : ℕ)))| ≤ B := by
+    have hrp := Nat.prime_of_mem_primeFactors (Finset.mem_filter.mp hr).1
+    have hrdiv := Nat.dvd_of_mem_primeFactors (Finset.mem_filter.mp hr).1
+    have hrlog : Real.log r ≤ Real.log a := Real.log_le_log
+      (by exact_mod_cast hrp.pos) (by exact_mod_cast Nat.le_of_dvd (Nat.pos_of_ne_zero ha.ne_zero) hrdiv)
+    simpa only [B,Nat.cast_add,Nat.cast_one] using complementary_mass_radial_lipschitz_wide (N+1) _ hS
+      (Real.log_pos (by exact_mod_cast hrp.one_lt)) hv hδ hδu (hrlog.trans hav) hpT hqT
+  have hsum := (Finset.abs_sum_le_sum_abs _ _).trans (Finset.sum_le_sum hrow)
+  rw [Finset.sum_const,nsmul_eq_mul] at hsum
+  have hcard : ((a.primeFactors.filter (· ∈ A)).card : ℝ) ≤ a.primeFactors.card := by
+    exact_mod_cast Finset.card_filter_le a.primeFactors (· ∈ A)
   have hsum5 := hsum.trans (mul_le_mul_of_nonneg_right hcard hB)
   rw [Finset.sum_sub_distrib] at hsum5
   have hab := abs_add_le

@@ -4787,7 +4787,15 @@
     "ZetaRieszWideSixPeriod": "arithmetic",
     "ZetaRieszSixCofactorPeriod": "arithmetic",
     "ZetaRieszAllocationVariation": "arithmetic",
-    "ZetaRieszTransitionSixPeriod": "arithmetic"
+    "ZetaRieszTransitionSixPeriod": "arithmetic",
+    "ZetaRieszMultiPeriodSix": "arithmetic",
+    "ZetaRieszSaddleBand": "arithmetic",
+    "ZetaRieszSaddlePacking": "arithmetic",
+    "ZetaRieszSixSmallHinges": "arithmetic",
+    "ZetaRieszSixSmallPrimes": "arithmetic",
+    "ZetaRieszCofactorMass": "arithmetic",
+    "ZetaRieszFixedCountPeriod": "arithmetic",
+    "ZetaRieszFixedCountBand": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

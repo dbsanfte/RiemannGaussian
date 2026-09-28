@@ -493,7 +493,9 @@ theorem eventually_residual_population_small {y ε : ℝ} (hy : 54 ≤ |y|) (hε
     _ ≤ ((m : ℝ)*V*h)*ε := mul_le_mul_of_nonneg_left hbudget (by positivity)
     _ = ε*(Real.pi/(4*|y|))*V := by rw [← he]; ring
     _ ≤ _ := mul_le_mul_of_nonneg_left hbase (by positivity)
-private theorem mem_core_of_prime_share_le (j : ℕ) (hj : 32 ≤ j) {u : ℝ}
+/-- The literal core admits every fixed count below its count mask at the
+same allocation-transition share cap. No six-prime specialization is needed. -/
+theorem mem_core_of_prime_share_le (j : ℕ) (hj : 32 ≤ j) {u : ℝ}
     (hu : 1/2 < u) (hU : u ≤ ZetaRieszWideOwnerAudit.radiusCeiling)
     (hL : (5/4 : ℝ)*ZetaRieszPrimeCountFrequency.dyadicMomentOrder j ≤
       SquarefreeVaughanLogSource.length u (ZetaRieszPrimeCountFrequency.dyadicMomentOrder j))

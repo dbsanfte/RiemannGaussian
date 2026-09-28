@@ -1602,6 +1602,106 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+The fixed-count signed payment now crosses saturation: its cofactor band
+extends to 7v/10 instead of 133v/200. `ZetaRieszFixedCountPeriod.response`
+retains BOTH R_(log(pa)-L)(a) and -R_(log(a)-L)(a). The second is constant
+on a prime fibre, so it adds no cutoff variation; twice the previous fixed
+amplitude constant suffices. Never discard this unsaturated correction.
+`eventually_unsaturated_extra` proves actual added seven-prime labels have
+0.6948v<log(a)<=0.6984v and a strictly positive second response on the
+literal 0.693..0.6932 cutoff-ratio band. All three fixed-count optional
+applications use this wider population in BOTH whole estimates, retaining
+the same <1/90000 local debit and >=(N/16)*sourceCredit margin. Preserve
+all masks, favorable observations and the single owner payment. The final
+floor and ceiling remain open; no source-o(1), growing-count or zero-free
+claim. See `docs/zeta-riesz-unsaturated-periods.md`. Continue locally,
+without subagents or unrequested commits.
+
+`ZetaRieszCofactorMass`, `ZetaRieszFixedCountPeriod` and
+`ZetaRieszFixedCountBand` now give ONE signed full-prime-period estimate
+at every fixed cofactor count. Actual least-prime mass is <=C_k*v,
+reciprocal mass <=C'_k*sqrt(v), and the literal factorial allocation
+variation is <=4(k+1)*sqrt(N+1)/v times the radial displacement. All
+small primes and coefficient sign changes remain. Counts and constants
+are fixed; do not claim a rate uniform in growing count or source-o(1).
+The concrete new family includes total counts 7–55 in the cofactor band
+203v/500<log(a)<=7v/10 with log(q)<=199v/200-log(a), together with the
+old six-prime payment exactly once. Each new count costs <=1/100000000
+of the local radial unit; the combined debit is <1/90000. Actual added
+seven-prime labels exist eventually. `CheckRieszFixedCountLocal`,
+`CheckRieszFixedCountJoint` and `CheckRieszFixedCountWhole` preserve BOTH
+whole inequalities and the previous >=(N/16)*sourceCredit margin, all
+favorable observations, the single global owner payment and all six-prime
+signed costs on the smaller exact unpaid rest. Reuse cached covers.
+The default whole endpoint and both numerical endgame bounds remain
+unchanged/open. Next work must improve BOTH whole estimates and their
+remaining geometry/radial coverage, not merely produce another count
+reformulation. See `docs/zeta-riesz-fixed-count-periods.md`. Continue
+locally without unrequested commits or subagents.
+
+`ZetaRieszSixSmallHinges` and `ZetaRieszSixSmallPrimes` now pay the previously
+untreated no-reflected-large six-prime sector in BOTH growing-band whole
+comparisons. For all six prime logs <=D and 3D<=log n, the complete signed
+Riesz response is <=log(minFac n). The original coefficient interval improves
+from [-3,4] to [-1,4] in actual `(log n/L)*log(minFac n)` units. Keep pair and
+triple hinges together: individual signed divisor windows can still reach
+three, so do not infer this bound pointwise inside the old integral.
+`CheckRieszSixSmallWhole` uses the new directed costs only on exact unpaid
+rest `S\(union_i E_i union D)`, retaining every earlier period observation,
+the growing >=`(N/16)*sourceCredit` margin, owner payment and allocation error.
+All reflected-large six-prime estimates are unchanged. The floor saves two
+least-prime units times positive cosine; the ceiling saves two times negative
+cosine. These are alternatives, not two supplies to add. All original masks,
+small primes, factorial orders, phases and other counts remain literal.
+Both numerical whole endgame bounds remain OPEN. This is an independent
+coefficient/subset estimate and its compiled whole-sum use, not a zero-free
+result. See `docs/zeta-riesz-six-small-primes.md`. Reuse cached optional covers;
+continue locally without unrequested commits or subagents.
+
+`ZetaRieszSaddleBand` and `ZetaRieszSaddlePacking` now extend BOTH whole
+signed comparisons to a GROWING square-root radial band. For fixed |y|>=54,
+M_N=1+floor(|y|*sqrt(N)/(4*pi)), with centers v+2*pi*i/|y| and
+2N<=v<=2N+1/2, stays inside [2N,2N+sqrt(N)]. Uniform moving-cutoff,
+radial and literal signed six-prime estimates retain the same constants.
+`CheckRieszSaddleBandLocal` isolates each paid population's signed inequality;
+`CheckRieszSaddleBandJoint` sums DISJOINT populations, not repeated whole-sum
+inequalities. Keep every favorable period observation separately. The net
+margin `(M_N*sqrt(N+1)/16-1/8)*sourceCredit` is proved >=`(N/16)*sourceCredit`.
+Pay the owner population and global companion error ONCE. All M_N separate
+Q allocation errors fit `(N+1)*allocationBound -> 0`. `CheckRieszSaddleBandWhole`
+applies previous reflection costs only to exact rest `S\(union_i E_i union D)`.
+All original masks, small primes and factorial orders remain. The older fixed
+period centers are included and replaced, never paid twice. Cached covers
+are unchanged. This is eventual at fixed height/parameters, with no certified
+starting order; the floating geometry probe is not an arithmetic certificate.
+It covers a growing part of the right saddle, not the entire core. Both final
+whole numerical thresholds remain OPEN. See `docs/zeta-riesz-saddle-band.md`.
+Continue locally without commits or subagents. Every next slice must improve
+both whole estimates, rather than stop at a new representation.
+
+`ZetaRieszMultiPeriodSix` now REPLACES the previous single-period six-prime
+payment in BOTH whole comparisons. It pays `1+floor(abs(y)/(4*pi))` disjoint
+full periods, at least five, with centers spanning at most half a unit.
+All original transition cofactors, small primes, factorial orders, literal
+allocation and physical/core masks remain. Fix precision epsilon/M before N;
+the sum of absolute real PERIOD sums has the same relative radial debit.
+Do not take absolute values of individual prime atoms. Keep the floor's
+SUM of positive period parts and the ceiling's SUM of negative period parts;
+do not replace these by the positive/negative part of their combined sum.
+The previous period is included and replaced; extra actual labels exist
+eventually. `CheckRieszMultiPeriodSixJoint` and `CheckRieszMultiPeriodSixWhole`
+retain the same `(sqrt(N+1)/16-1/8)*sourceCredit` margin and only Q's separate
+allocation error against exact rest `S\(P union I union H union Q union multiZ
+union D)`. The owner band is paid once. Earlier reflection costs apply only
+to that smaller rest. This is relative local o(radial), NOT source-o(1),
+for fixed height with existential starting order. The full radial saddle,
+remaining labels and both final whole thresholds are still open. Reuse
+cached covers unchanged. See `docs/zeta-riesz-multiple-periods.md`.
+The baseline commit `36042c008d85d3575f1625a51163d64f3db73799` passed
+Lean Action CI run `36461429079`; that CI result does not cover these newer
+local multiple-period theorems. Continue locally without commits or subagents
+until requested otherwise.
+
 `ZetaRieszTransitionSixPeriod` now REPLACES the preceding six-cofactor
 payment in BOTH whole comparisons. Its lower cofactor cut `203v/500`
 crosses the former owner-share allocation transition `19/32` while retaining

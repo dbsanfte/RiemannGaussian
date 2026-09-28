@@ -149,10 +149,10 @@ Work directly on both cofinal signed bounds for J+C, retaining all original weig
 
 ### Latest Update
 
-**Joint signed cancellation crosses the allocation transition.** Lean bounds variation of the literal factorial allocation inside the prime period. Both whole comparisons now pay a strictly larger six-prime population, including actual labels above the old 19/32 threshold, while preserving their margin and exact signed rest.
-Bound the remaining labels and phase periods. The independent -79/1000 whole floor and 3/2 ceiling remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszTransitionSixPeriod.lean#L630)
-· [Proof details](docs/zeta-riesz-allocation-transition.md).
+**Both signed bounds cross the cofactor saturation boundary.** The selected 7–55-prime population now extends from cofactor log 0.665v to 0.7v. Lean retains the additional Riesz cutoff exactly, proves it adds no cutoff variation, and constructs actual labels where it is positive. Both whole comparisons keep the same local debit and growing credit.
+Control the remaining ownership boundaries, share geometry and radial complement. The independent -79/1000 whole floor and 3/2 ceiling remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszFixedCountBand.lean#L67)
+· [Proof details](docs/zeta-riesz-unsaturated-periods.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

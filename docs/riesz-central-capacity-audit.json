@@ -1967,5 +1967,931 @@
       "scope": "Binomial allocation and its period variation only; not spent in Lean."
     },
     "open": "Remaining labels and phase periods. Both independent final -79/1000 whole floor and 3/2 ceiling remain open. No zero or simplicity premise or zero exclusion."
+  },
+  "multipleSixPrimePeriodPayment": {
+    "source": "RiemannGaussian/ZetaRieszMultiPeriodSix.lean",
+    "sourceSha256": "a31123d4505c9d039860925442a6a7af3268ca03addc401d49f729c5f61ac181",
+    "support": "Union of M=1+floor(abs(y)/(4*pi)) existing transition six-prime populations, centered at v+2*pi*i/abs(y), 0<=i<M. All literal masks retained.",
+    "disjointness": "Half-open total-log periods are pairwise disjoint; all earlier P,I,H,Q,D populations are disjoint as well.",
+    "count": "M>=5 for abs(y)>=54; y is fixed before N tends to infinity.",
+    "strictEnlargement": "previous_population_subset and eventually_added_population_nonempty retain the old period and prove extra actual labels eventually.",
+    "signedCost": "Sum over i of abs(Re(sum_Zi f_N)) <= epsilon*pi/(4*abs(y))*exp(-v/2)*v^N/N!, with 2N<=v<=2N+1/2.",
+    "proof": "Apply the existing arbitrary-precision signed residual estimate with epsilon/M; exact radial decrease after 2N bounds every period by the base radial weight.",
+    "rateScope": "Relative local o(radial), not source-o(1). Existential starting threshold depends on fixed height and precision.",
+    "wholeApplications": [
+      {
+        "exitCode": 0,
+        "logSha256": "1fa8a1647999c8757debd0c7ca71d1c8b799ea2786db872857e75d50647fe21a",
+        "lint": "Found 0 errors in 2 declarations (plus 7 automatically generated ones) in RieszMultiPeriodSixJoint with 14 linters",
+        "terminalAxioms": {
+          "RieszMultiPeriodSixJoint.eventually_combined_floor": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RieszMultiPeriodSixJoint.eventually_combined_ceiling": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "file": "scripts/CheckRieszMultiPeriodSixJoint.lean",
+        "sha256": "5c56bd3a835ceed2cfb0a9bae1983f22f099aaaaa5ea64e40dbd32af7205d5df"
+      },
+      {
+        "exitCode": 0,
+        "logSha256": "0539f926040cf64843bbec2bc64a3ffc90516b977afd7044045d804a058a1f9a",
+        "lint": "Found 0 errors in 2 declarations (plus 2 automatically generated ones) in RieszMultiPeriodSixWhole with 14 linters",
+        "terminalAxioms": {
+          "RieszMultiPeriodSixWhole.eventually_whole_floor": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RieszMultiPeriodSixWhole.eventually_whole_ceiling": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "file": "scripts/CheckRieszMultiPeriodSixWhole.lean",
+        "sha256": "758d12294f01364252cb5b7aeef02bc0a8596fb777b0ae3d3d06f24146256176"
+      }
+    ],
+    "rootAudit": {
+      "exitCode": 0,
+      "logSha256": "b5cce2b7a7af4f12574105a02ccf2b5de4e4446c4aa2dd6380eebc44017adbad",
+      "lint": "Found 0 errors in 32877 declarations (plus 22788 automatically generated ones) in RiemannGaussian with 14 linters",
+      "terminalAxioms": {
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.five_le_periodCount": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.center_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.center_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.disjoint_periods": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.sum_population": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.radial_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.eventually_period_cost_small": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.previous_population_subset": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.population_data": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.eventually_added_population_nonempty": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.eventually_signed_population_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.scaled_floor_after_signed_payment": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.scaled_ceiling_after_signed_payment": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.disjoint_supply": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.disjoint_adverse": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.disjoint_interior": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.disjoint_head": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.disjoint_owner": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.disjoint_balanced": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszMultiPeriodSix.disjoint_triple": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "exactRest": "S minus (P union I union H union Q union multiZ union D)",
+    "margin": "Unchanged (sqrt(N+1)/16-1/8)*sourceCredit on the strictly smaller actual signed rest.",
+    "debit": "Same total m*V*h/100000; only Q keeps a separate allocationBound.",
+    "observations": "Floor keeps sum_i max(Re(sum_Zi f),0); ceiling keeps sum_i min(Re(sum_Zi f),0). Every previous favorable period is retained.",
+    "replacement": "The old single-period payment is replaced, not added again. Owner population D is paid once.",
+    "earlierReflectionSavings": "Applied only to the exact unpaid rest by CheckRieszMultiPeriodSixWhole.",
+    "coverReuse": "Cached full numerical cover and assembly unchanged; no exhaustive verification rerun.",
+    "open": "The growing full radial saddle and remaining labels. Both independent final -79/1000 whole floor and 3/2 ceiling remain open. No zero or simplicity premise or zero exclusion."
+  },
+  "growingSaddleBandPayment": {
+    "sources": {
+      "RiemannGaussian/ZetaRieszSaddleBand.lean": "d1a656c1a223fb5ed5770be01f2589b4e150749c0fbe69ff61626938652b462f",
+      "RiemannGaussian/ZetaRieszSaddlePacking.lean": "b77fd2e0ee9fe14b3de5487628d157b8d7645daf4e8531cd5bf27407e18638cd"
+    },
+    "support": "M_N=1+floor(abs(y)*sqrt(N)/(4*pi)) full phase periods, with centers v+2*pi*i/abs(y), starting at 2N<=v<=2N+1/2. All literal previous masks retained.",
+    "uniformity": "The moving cutoff stays in [693/1000,1733/2500] uniformly on [2N-1,2N+sqrt(N)+1] eventually. The factorial radial lower bound and literal signed residual payment extend across the growing band.",
+    "localInequalities": "CheckRieszSaddleBandLocal extracts the certified inequality on each paid population before adjoining the rest or paying global errors.",
+    "disjointness": "Every localData label lies in its own half-open total-log period. Finite unions are summed with proved pairwise disjointness.",
+    "count": "M_N grows like sqrt(N) for fixed y; M_N<=N+1 eventually.",
+    "margin": "(M_N*sqrt(N+1)/16-1/8)*sourceCredit >= (N/16)*sourceCredit for N>=1, abs(y)>=54.",
+    "errors": "M_N*allocationBound <= (N+1)*allocationBound ->0. Owner band debit and companion/core error are paid once.",
+    "exactRest": "S minus (union_i E_i union D), with D=JointOwnerPayment.population(S minus union_i E_i,A).",
+    "observations": "Each original positive/negative period observation is retained separately; floor and ceiling have their own literal populations.",
+    "earlierReflectionSavings": "CheckRieszSaddleBandWhole applies the twice-reflected costs only to the exact unpaid rest.",
+    "wholeApplications": [
+      {
+        "exitCode": 0,
+        "logSha256": "f72bd12891ce6787bab52a7f12b4bb1f44f22b006d7c26127f645bf2f869ce5f",
+        "lint": "Found 0 errors in 2 declarations (plus 5 automatically generated ones) in RieszSaddleBandLocal with 14 linters",
+        "terminalAxioms": {
+          "RieszSaddleBandLocal.eventually_period_floor": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RieszSaddleBandLocal.eventually_period_ceiling": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "file": "scripts/CheckRieszSaddleBandLocal.lean",
+        "sha256": "6a8148a2c3fda5a4ee4f6ba25ccfc6893af1c000e784bb03ad19428f00aef79b"
+      },
+      {
+        "exitCode": 0,
+        "logSha256": "ffddac1dfea8c655b1afcd09e671942167941d3ced0ed815444703315eceb4f0",
+        "lint": "Found 0 errors in 6 declarations (plus 10 automatically generated ones) in RieszSaddleBandJoint with 14 linters",
+        "terminalAxioms": {
+          "RieszSaddleBandJoint.eventually_combined_floor": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RieszSaddleBandJoint.eventually_combined_ceiling": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "file": "scripts/CheckRieszSaddleBandJoint.lean",
+        "sha256": "aa52848b172bb43a62cebd3c99a5f749e8d328cf79db557da71b2de21526197b"
+      },
+      {
+        "exitCode": 0,
+        "logSha256": "7c3eac4b5d24064076c9cd4c422bce28559ff65263d21b8ac15f5a674cec296d",
+        "lint": "Found 0 errors in 2 declarations (plus 2 automatically generated ones) in RieszSaddleBandWhole with 14 linters",
+        "terminalAxioms": {
+          "RieszSaddleBandWhole.eventually_whole_floor": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RieszSaddleBandWhole.eventually_whole_ceiling": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "file": "scripts/CheckRieszSaddleBandWhole.lean",
+        "sha256": "ed1dab1cdfb6e5a895987f1ee46fef245ad5ba6b1707a5d6878b0f569fc531ac"
+      }
+    ],
+    "rootAudit": {
+      "exitCode": 0,
+      "logSha256": "d3254e1379a4f2c5df120732a979bf92bc14f4ab71609e89a26fccd5b252727c",
+      "lint": "Found 0 errors in 32898 declarations (plus 22817 automatically generated ones) in RiemannGaussian with 14 linters",
+      "terminalAxioms": {
+        "RiemannGaussian.ZetaRieszSaddleBand.eventually_sqrt_add_one_le_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddleBand.weight_ratio": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddleBand.eventually_cutoff_ratio": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddleBand.log_one_add_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddleBand.radial_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddleBand.eventually_factorial_period": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddleBand.sourceCredit_le_scaled_margin": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddleBand.eventually_six_residual_small": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddleBand.eventually_six_owner_mem": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddleBand.eventually_six_population_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddlePacking.center_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddlePacking.count_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddlePacking.old_count_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddlePacking.eventually_count_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddlePacking.margin_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddlePacking.tendsto_polynomial_allocation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddlePacking.disjoint_of_log_support": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddlePacking.floor_union": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSaddlePacking.ceiling_union": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "coverReuse": "Cached finite covers unchanged; exhaustive verification not rerun.",
+    "probe": {
+      "script": "scripts/probe_riesz_saddle_packing.py",
+      "sha256": "8c802b62dc16626fd44470d2686bfbb6dc3182772997da4a1f4cbd744384f946",
+      "result": {
+        "status": "floating geometry diagnostic, not a certified starting order or prime estimate",
+        "height": 54,
+        "u": "10001/20000",
+        "rows": [
+          {
+            "N": 10000,
+            "periods": 430,
+            "center_span": 49.916416607037824,
+            "last_over_first_radial": 0.9693845607264445,
+            "approx_cutoff_bin": [
+              0.6886484667657473,
+              0.6921607495603924
+            ],
+            "approx_bin_fits": false,
+            "net_credit_multiplier": 2687.509371640793,
+            "proved_coarse_multiplier": 625.0
+          },
+          {
+            "N": 1000000,
+            "periods": 4298,
+            "center_span": 499.9786530546422,
+            "last_over_first_radial": 0.9692408672193812,
+            "approx_cutoff_bin": [
+              0.6926866803645316,
+              0.6930337165649123
+            ],
+            "approx_bin_fits": false,
+            "net_credit_multiplier": 268625.0093124664,
+            "proved_coarse_multiplier": 62500.0
+          },
+          {
+            "N": 100000000,
+            "periods": 42972,
+            "center_span": 4999.902885829889,
+            "last_over_first_radial": 0.9692349158147859,
+            "approx_cutoff_bin": [
+              0.6930123472703791,
+              0.6930470048180394
+            ],
+            "approx_bin_fits": true,
+            "net_credit_multiplier": 26857500.009287503,
+            "proved_coarse_multiplier": 6250000.0
+          },
+          {
+            "N": 10000000000,
+            "periods": 429719,
+            "center_span": 49999.95970056662,
+            "last_over_first_radial": 0.9692333337840204,
+            "approx_cutoff_bin": [
+              0.6930437180037846,
+              0.6930471832916792
+            ],
+            "approx_bin_fits": true,
+            "net_credit_multiplier": 2685743750.009287,
+            "proved_coarse_multiplier": 625000000.0
+          }
+        ]
+      }
+    },
+    "open": "Both independent final -79/1000 whole floor and 3/2 ceiling remain open. The entire core, remaining counts and share sectors are not covered. No zero or simplicity premise or zero exclusion. Starting order is existential, not certified by the floating probe."
+  },
+  "sixSmallPrimeCancellation": {
+    "sources": {
+      "RiemannGaussian/ZetaRieszSixSmallHinges.lean": "17499bd50f6e1a272d93808f5bbcb00f8712d4eebc1150e742e1306ec33a85ff",
+      "RiemannGaussian/ZetaRieszSixSmallPrimes.lean": "2f26b8a5042753abdb5f0e08062bbf536a87223063f06a27b91bc128ea9ea923"
+    },
+    "geometry": "Squarefree n, six primes, every log p<=D, 3D<=log n. R_D(n)<=log(minFac n).",
+    "coefficient": "Original coefficient interval [-3,4] becomes [-1,4] in (log n/L)*log(minFac n) units.",
+    "proof": "Complete pair/triple hinge cancellation, with 55 linear cases verified in Lean; no external numerical oracle. The literal prime-factor bridge retains every divisor sign.",
+    "signedCosts": "The floor saves 2*unit*max(cos(y log n),0), the ceiling 2*unit*max(-cos(y log n),0). Every favorable observed part and exact residual weight remains.",
+    "wholeLedger": "CheckRieszSixSmallWhole uses both new inequalities on S minus (union_i E_i union D), leaving all growing-band credits, favorable observations and the single owner debit intact. Earlier reflected-large estimates apply unchanged. Other counts remain signed.",
+    "range": "1/2<u<=10001/20000, eventually for the moving length. Subset estimate uniform in height/count cutoff. Whole application at fixed height abs(y)>=54 with existing mesh premises.",
+    "wholeApplications": [
+      {
+        "exitCode": 0,
+        "logSha256": "769383c96b2b0797983e184766529439af92090b5e4bd60fcd43fae83b749128",
+        "lint": "Found 0 errors in 2 declarations (plus 2 automatically generated ones) in RieszSixSmallWhole with 14 linters",
+        "terminalAxioms": {
+          "RieszSixSmallWhole.eventually_whole_floor": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RieszSixSmallWhole.eventually_whole_ceiling": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "file": "scripts/CheckRieszSixSmallWhole.lean",
+        "sha256": "30991669cdaa360fe00beff2f0ce3a55a94ae5295c647fbb73571f71a2f24f9e"
+      }
+    ],
+    "rootAudit": {
+      "exitCode": 0,
+      "logSha256": "a08edc2e9a7e4b46b40b9dc5914c1539835fe2831388b8d377cc68807d932c48",
+      "lint": "Found 0 errors in 32913 declarations (plus 22825 automatically generated ones) in RiemannGaussian with 14 linters",
+      "terminalAxioms": {
+        "RiemannGaussian.ZetaRieszSixSmallHinges.pair_triple_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSixSmallHinges.kernel_six_le_first": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSixSmallPrimes.riesz_le_minFac": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSixSmallPrimes.coefficient_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSixSmallPrimes.small_cost_savings": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSixSmallPrimes.small_costs_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSixSmallPrimes.residual_small_retained_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSixSmallPrimes.residual_retained_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSixSmallPrimes.eventually_core_subset_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "compiledSoundness": {
+      "compiledProjectDeclarations": 55794,
+      "compiledProjectModules": 2353,
+      "projectAxioms": 0,
+      "placeholderDependentDeclarations": 0,
+      "nonstandardTheoremAxioms": []
+    },
+    "coverReuse": "Cached optional covers unchanged; no exhaustive rerun or addition to ordinary CI.",
+    "probe": {
+      "script": "scripts/probe_riesz_six_small.py",
+      "sha256": "41b7e5a3db7db69fbcd866a6767a63b887697d1ad4f736bce783035107906fd5",
+      "result": {
+        "status": "uncertified exploration",
+        "rows": [
+          {
+            "cutoff_over_total_log": 0.22,
+            "samples": 852,
+            "minimum_response_over_least_log": -4.0,
+            "maximum_response_over_least_log": -0.48065781413808667,
+            "maximizing_sample_shares": [
+              0.04097329173237085,
+              0.09872084110975266,
+              0.2116117049008608,
+              0.21378884930163622,
+              0.21720950957387686,
+              0.21769580338150263
+            ]
+          },
+          {
+            "cutoff_over_total_log": 0.25,
+            "samples": 6605,
+            "minimum_response_over_least_log": -4.0,
+            "maximum_response_over_least_log": -0.272197290505698,
+            "maximizing_sample_shares": [
+              0.033898563124239445,
+              0.06590413954108953,
+              0.1548108458518982,
+              0.24775163270533085,
+              0.24854258447885513,
+              0.24909223429858685
+            ]
+          },
+          {
+            "cutoff_over_total_log": 0.28,
+            "samples": 22165,
+            "minimum_response_over_least_log": -4.0,
+            "maximum_response_over_least_log": 0.0,
+            "maximizing_sample_shares": [
+              0.00011623464524745941,
+              0.013229693286120892,
+              0.23920479603111744,
+              0.2433601701632142,
+              0.24550541583448648,
+              0.2585836900398135
+            ]
+          },
+          {
+            "cutoff_over_total_log": 0.3,
+            "samples": 37939,
+            "minimum_response_over_least_log": -4.0,
+            "maximum_response_over_least_log": 0.9297935117962923,
+            "maximizing_sample_shares": [
+              0.04367823153734207,
+              0.10222453717142344,
+              0.1101000839844346,
+              0.14664266351610422,
+              0.2984278304502368,
+              0.29892665334045887
+            ]
+          },
+          {
+            "cutoff_over_total_log": 0.307,
+            "samples": 44433,
+            "minimum_response_over_least_log": -4.000000000000001,
+            "maximum_response_over_least_log": 0.963828617459368,
+            "maximizing_sample_shares": [
+              0.02851408999413252,
+              0.08465765975415707,
+              0.10093633830547333,
+              0.17292330600321293,
+              0.3062306484207511,
+              0.30673795752227306
+            ]
+          },
+          {
+            "cutoff_over_total_log": 0.32,
+            "samples": 57270,
+            "minimum_response_over_least_log": -4.000000000001304,
+            "maximum_response_over_least_log": 0.9462938556286522,
+            "maximizing_sample_shares": [
+              0.04227016773074865,
+              0.07678751274943352,
+              0.07891256362199783,
+              0.16366366110742092,
+              0.3184490017592907,
+              0.3199170930311084
+            ]
+          },
+          {
+            "cutoff_over_total_log": 0.3333333333333333,
+            "samples": 71212,
+            "minimum_response_over_least_log": -4.000000000000003,
+            "maximum_response_over_least_log": 2.579059529029061e-12,
+            "maximizing_sample_shares": [
+              2.1523796021938324e-05,
+              0.004781792871654034,
+              0.14281083829700947,
+              0.2432825556024909,
+              0.28782949317246675,
+              0.3212737962603569
+            ]
+          }
+        ],
+        "window_shortcut_counterexample_value": 3
+      }
+    },
+    "open": "Both whole numerical bounds remain open: -79/1000-o(1) floor and 3/2+o(1) ceiling. No zero/simplicity premise or zero exclusion. The total remaining allowance is not proved bounded at source scale."
+  },
+  "fixedCountPrimePeriodPayment": {
+    "sources": {
+      "ZetaRieszCofactorMass": "92eaed7e2d9083e908ad4eb37ef3ee3bceb127dcff086b8dec46ef0e60ea413c",
+      "ZetaRieszAllocationVariation": "d3e214d64e9aec70613a22bfc34e97102410f9fca78b77952bb77437b8dccff0",
+      "ZetaRieszFixedCountPeriod": "501861e037a5a20e14675f2cac9010cc2582b24fd902c7be4804df41c440d84f",
+      "ZetaRieszFixedCountBand": "ac2c6a449077b1b69796a1505885dd3a39b8d5fdfb0a192277105a536ab06b12",
+      "ZetaRieszTransitionSixPeriod": "1be6327a67e7365ac5e3d85e4f31580b518ca6c0c7c125fe98c767fadee1a6a8"
+    },
+    "commonMechanism": "Actual least-prime Riesz response bound, fractional prime moments and slow literal factorial-allocation variation. Sum each full prime phase period before estimating the signed amplitude variation.",
+    "genericScope": "Every fixed cofactor count k>=2; thresholds and constants depend on k, fixed u and fixed y. No claim uniform in a count growing with N, or source-normalized o(1).",
+    "support": "Squarefree cofactor a with k prime factors, 203v/500<log(a)<=133v/200, every q|a satisfying log(q)<=199v/200-log(a). Unique largest p in v-pi/abs(y)-log(a)<log(p)<=v+pi/abs(y)-log(a). All small cofactor primes retained.",
+    "coefficient": "(-1)^(k+1)*(-log(pa)/L)*R_(log(pa)-L)(a), retaining sign changes, actual phase and original boundedShare.",
+    "cofactorMass": "sum log(minFac a)/a<=C_k*v and sum 1/a<=Cprime_k*sqrt(v)",
+    "allocationVariation": "4*(k+1)*sqrt(N+1)/v times radial displacement, without deleting factorial orders",
+    "localEstimate": "For any epsilon>0, eventually absolute real sum<=epsilon*pi/(4*abs(y))*exp(-v/2)*v^N/N!, uniformly at selected phase peaks in 2N<=v<=2N+sqrt(N).",
+    "literalMasks": "Core window, dyadic count, squarefreeness, physical upper cutoff, unique ownership, nondominant share and original allocation are proved for the selected population. Owner p is in the original intermediate-prime set.",
+    "concreteCounts": "49 disjoint new total counts 7 through 55; each costs <=1/100000000 local radial unit. Previous six-prime set included once. Combined debit <1/90000.",
+    "strictEnlargement": "eventually_extra_nonempty constructs genuine seven-prime integers in the added population.",
+    "wholeApplications": [
+      {
+        "exitCode": 0,
+        "logSha256": "f229b4730f57e1af023c09bdf957a2fb381e1b00ac754c0d0121f853d50ad8b9",
+        "lint": "Found 0 errors in 2 declarations (plus 5 automatically generated ones) in RieszFixedCountLocal with 14 linters",
+        "terminalAxioms": {
+          "RieszFixedCountLocal.eventually_period_floor": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RieszFixedCountLocal.eventually_period_ceiling": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "file": "scripts/CheckRieszFixedCountLocal.lean",
+        "sha256": "6be7768ba44659a9b782c9c34617e9a953a9343d243cb553daaa6c60d53b12fa"
+      },
+      {
+        "exitCode": 0,
+        "logSha256": "51755abc261126a35e979191f204da174ab5f29a60c8df99d1a4a99f5a51d5cf",
+        "lint": "Found 0 errors in 6 declarations (plus 10 automatically generated ones) in RieszFixedCountJoint with 14 linters",
+        "terminalAxioms": {
+          "RieszFixedCountJoint.eventually_combined_floor": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RieszFixedCountJoint.eventually_combined_ceiling": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "file": "scripts/CheckRieszFixedCountJoint.lean",
+        "sha256": "d3f49bb50602b612f107e7db8c0a02e171bebd113bb69ed5b0d443dd34bcb3a6"
+      },
+      {
+        "exitCode": 0,
+        "logSha256": "d15e14229caba30137de9004bdcbc2d7d3cfc6eba9656b343e713c7280815092",
+        "lint": "Found 0 errors in 2 declarations (plus 2 automatically generated ones) in RieszFixedCountWhole with 14 linters",
+        "terminalAxioms": {
+          "RieszFixedCountWhole.eventually_whole_floor": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RieszFixedCountWhole.eventually_whole_ceiling": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "file": "scripts/CheckRieszFixedCountWhole.lean",
+        "sha256": "676d1292de7cd32acde1ce50cfcb321691b755b3c334797e7b557f423f0926d4"
+      }
+    ],
+    "rootAudit": {
+      "exitCode": 0,
+      "logSha256": "bcd366f8fd74eab520617493dfb4ca6a94971c9c374e44bc829830f9d9570adb",
+      "lint": "Found 0 errors in 32956 declarations (plus 22860 automatically generated ones) in RiemannGaussian with 14 linters",
+      "terminalAxioms": {
+        "RiemannGaussian.ZetaRieszCofactorMass.log_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCofactorMass.reciprocal_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAllocationVariation.boundedShare_fibre_variation_of_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountPeriod.fibre_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountPeriod.eventually_residual_small": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountPeriod.eventually_population_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountBand.eventually_population_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountBand.old_disjoint_extra": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountBand.eventually_extra_nonempty": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCofactorMass.mem_products_of_squarefree": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "exactRest": "S minus (union_i E_i union D), where E_i now includes the enlarged fixed-count population and D is the single global owner payment on S minus union_i E_i.",
+    "wholeMargin": "Previous ((M_N*sqrt(N+1))/16-1/8)*sourceCredit >= (N/16)*sourceCredit preserved in BOTH floor and ceiling.",
+    "observations": "Every prior favorable observation is retained; the combined signed count population is summed before clipping its positive or negative part. Reflection and six-small-prime costs apply only to the exact unpaid rest.",
+    "coverReuse": "The three optional applications use cached checked covers; no exhaustive cover recomputation or extra ordinary-CI certificate work.",
+    "numericalProbe": {
+      "file": "scripts/probe_riesz_fixed_count_period.py",
+      "sha256": "979064f4d39d98033461c6b7ad0deec820f7ee4f6597bf9459db0345ef51955e",
+      "arithmeticCertificate": false,
+      "scope": "Smooth-density full-period examples at counts 7 through 10 and N=256,1024,4096,16384, retaining moving length, subset signs and exact unpaid orders. Not spent in Lean."
+    },
+    "open": "Near-balanced share configurations, clipped periods, the radial complement and growing counts remain. Independent whole floor -79/1000-o(1) and ceiling 3/2+o(1) remain open. No zero/simplicity premise and no new zero exclusion.",
+    "supersededBy": "unsaturatedFixedCountPrimePeriodPayment widens the same population and retains the nonzero second cutoff; the preceding source hashes and logs record its prior saturated version."
+  },
+  "unsaturatedFixedCountPrimePeriodPayment": {
+    "sources": {
+      "ZetaRieszCofactorMass": "92eaed7e2d9083e908ad4eb37ef3ee3bceb127dcff086b8dec46ef0e60ea413c",
+      "ZetaRieszAllocationVariation": "e5ccfacdd328fc47dcb4c93cca87cf1701501fa2e026da8abc503c02261754e3",
+      "ZetaRieszFixedCountPeriod": "25632c00c71ddd83ef550cac19a29ecc46d138c3de8bcbc75303ba96ad50e5bb",
+      "ZetaRieszFixedCountBand": "835a6b4332a17bf8672416951ef460ba7498886e74d96a99327971209dad0bb2"
+    },
+    "enlargement": "203v/500<log(a)<=7v/10 replaces the old cofactor ceiling 133v/200; largest-prime phase interval and all original masks unchanged.",
+    "exactResponse": "R_(log(pa)-L)(a)-R_(log(a)-L)(a); no saturation deletion. coefficient_eq_response retains its exact count sign and log(pa)/L factor.",
+    "signedEstimate": "The second cutoff is constant on the prime fibre, so it adds no cutoff-variation cost. Twice the prior count-dependent least-prime amplitude constant suffices. The original allocation variation estimate extends through 7v/10.",
+    "denominator": "v/(L*(v-log(a)))<=5/v since 5*(67/100)*(3/10)>1.",
+    "saturatedRegression": "response_eq_of_saturated recovers the previous response exactly when log(a)<=L.",
+    "strictArithmeticExtension": "eventually_unsaturated_extra constructs actual seven-prime labels with 0.6948v<log(a)<=0.6984v. On 0.693v<=L<=0.6932v the second Riesz response is strictly positive and equals log(a)-L.",
+    "jointDebit": "Selected counts 7-55 cost 49/100000000 of the local radial unit; with old six-prime 1/100000 debit the total remains below 1/90000. The eventual threshold changes, not the debit.",
+    "wholeApplications": [
+      {
+        "exitCode": 0,
+        "logSha256": "f229b4730f57e1af023c09bdf957a2fb381e1b00ac754c0d0121f853d50ad8b9",
+        "lint": "Found 0 errors in 2 declarations (plus 5 automatically generated ones) in RieszFixedCountLocal with 14 linters",
+        "terminalAxioms": {
+          "RieszFixedCountLocal.eventually_period_floor": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RieszFixedCountLocal.eventually_period_ceiling": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "file": "scripts/CheckRieszFixedCountLocal.lean",
+        "sha256": "6be7768ba44659a9b782c9c34617e9a953a9343d243cb553daaa6c60d53b12fa"
+      },
+      {
+        "exitCode": 0,
+        "logSha256": "51755abc261126a35e979191f204da174ab5f29a60c8df99d1a4a99f5a51d5cf",
+        "lint": "Found 0 errors in 6 declarations (plus 10 automatically generated ones) in RieszFixedCountJoint with 14 linters",
+        "terminalAxioms": {
+          "RieszFixedCountJoint.eventually_combined_floor": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RieszFixedCountJoint.eventually_combined_ceiling": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "file": "scripts/CheckRieszFixedCountJoint.lean",
+        "sha256": "d3f49bb50602b612f107e7db8c0a02e171bebd113bb69ed5b0d443dd34bcb3a6"
+      },
+      {
+        "exitCode": 0,
+        "logSha256": "d15e14229caba30137de9004bdcbc2d7d3cfc6eba9656b343e713c7280815092",
+        "lint": "Found 0 errors in 2 declarations (plus 2 automatically generated ones) in RieszFixedCountWhole with 14 linters",
+        "terminalAxioms": {
+          "RieszFixedCountWhole.eventually_whole_floor": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RieszFixedCountWhole.eventually_whole_ceiling": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "file": "scripts/CheckRieszFixedCountWhole.lean",
+        "sha256": "676d1292de7cd32acde1ce50cfcb321691b755b3c334797e7b557f423f0926d4"
+      }
+    ],
+    "rootAudit": {
+      "exitCode": 0,
+      "logSha256": "e3823dd13e62f3e6ab653c3b3eaaab0442dc05ed46e171e250abad3233fcfae9",
+      "lint": "Found 0 errors in 32962 declarations (plus 22862 automatically generated ones) in RiemannGaussian with 14 linters",
+      "terminalAxioms": {
+        "RiemannGaussian.ZetaRieszCofactorMass.log_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCofactorMass.reciprocal_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAllocationVariation.boundedShare_fibre_variation_of_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountPeriod.fibre_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountPeriod.eventually_residual_small": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountPeriod.eventually_population_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountBand.eventually_population_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountBand.old_disjoint_extra": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountBand.eventually_extra_nonempty": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCofactorMass.mem_products_of_squarefree": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountPeriod.coefficient_eq_response": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountPeriod.response_eq_of_saturated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountPeriod.cofactor_response_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountPeriod.cofactor_response_variation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountBand.eventually_unsaturated_extra": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "wholeMargin": "Both whole floor and ceiling preserve ((M_N*sqrt(N+1))/16-1/8)*sourceCredit >= (N/16)*sourceCredit on the exact smaller unpaid rest.",
+    "accounting": "All favorable observations, signed costs, moving factorial allocation and original physical/count/nondominant masks retained. No repeated owner or six-prime credit.",
+    "probe": {
+      "file": "scripts/probe_riesz_fixed_count_period.py",
+      "sha256": "5a4b7b2c085e4c63aeab9f7ce7d92ee832d87a828ad3e27dea4b0e0ab42e8ed3",
+      "actualPrimeCertificate": false,
+      "cofactorShares": [
+        0.52,
+        0.696
+      ],
+      "scope": "Smooth model with both exact cutoff terms, moving length and original selected factorial orders. Not used as a proof premise."
+    },
+    "scope": "Fixed count and height; not source-normalized decay, not uniform in growing count, and no zero/simplicity premise. Final independent -79/1000 floor and 3/2 ceiling remain open."
   }
 }

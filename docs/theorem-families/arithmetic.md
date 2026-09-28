@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**596 modules.** Source links open the definitions, hypotheses and proofs.
+**604 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -178,6 +178,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszCentralWindow](../../RiemannGaussian/ZetaRieszCentralWindow.lean)
 - [ZetaRieszCofactorBoundary](../../RiemannGaussian/ZetaRieszCofactorBoundary.lean)
 - [ZetaRieszCofactorCompletionBound](../../RiemannGaussian/ZetaRieszCofactorCompletionBound.lean)
+- [ZetaRieszCofactorMass](../../RiemannGaussian/ZetaRieszCofactorMass.lean)
 - [ZetaRieszCofactorPrimeRepairs](../../RiemannGaussian/ZetaRieszCofactorPrimeRepairs.lean)
 - [ZetaRieszCofactorTiltRate](../../RiemannGaussian/ZetaRieszCofactorTiltRate.lean)
 - [ZetaRieszCompanionMask](../../RiemannGaussian/ZetaRieszCompanionMask.lean)
@@ -250,6 +251,8 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszFivePrimePairSupply](../../RiemannGaussian/ZetaRieszFivePrimePairSupply.lean)
 - [ZetaRieszFivePrimeReserve](../../RiemannGaussian/ZetaRieszFivePrimeReserve.lean)
 - [ZetaRieszFixedCofactor](../../RiemannGaussian/ZetaRieszFixedCofactor.lean)
+- [ZetaRieszFixedCountBand](../../RiemannGaussian/ZetaRieszFixedCountBand.lean)
+- [ZetaRieszFixedCountPeriod](../../RiemannGaussian/ZetaRieszFixedCountPeriod.lean)
 - [ZetaRieszFourAngularDomain](../../RiemannGaussian/ZetaRieszFourAngularDomain.lean)
 - [ZetaRieszFourBoundaryCover](../../RiemannGaussian/ZetaRieszFourBoundaryCover.lean)
 - [ZetaRieszFourCapacityCover](../../RiemannGaussian/ZetaRieszFourCapacityCover.lean)
@@ -341,6 +344,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszMixedPrefix](../../RiemannGaussian/ZetaRieszMixedPrefix.lean)
 - [ZetaRieszMixedPrefixTransport](../../RiemannGaussian/ZetaRieszMixedPrefixTransport.lean)
 - [ZetaRieszMovingInsertion](../../RiemannGaussian/ZetaRieszMovingInsertion.lean)
+- [ZetaRieszMultiPeriodSix](../../RiemannGaussian/ZetaRieszMultiPeriodSix.lean)
 - [ZetaRieszNarrowCarrier](../../RiemannGaussian/ZetaRieszNarrowCarrier.lean)
 - [ZetaRieszNegativeModeCascade](../../RiemannGaussian/ZetaRieszNegativeModeCascade.lean)
 - [ZetaRieszNegativeModeSupport](../../RiemannGaussian/ZetaRieszNegativeModeSupport.lean)
@@ -466,7 +470,9 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszRetainedSource](../../RiemannGaussian/ZetaRieszRetainedSource.lean)
 - [ZetaRieszRightwardModeAudit](../../RiemannGaussian/ZetaRieszRightwardModeAudit.lean)
 - [ZetaRieszRoughEulerTransfer](../../RiemannGaussian/ZetaRieszRoughEulerTransfer.lean)
+- [ZetaRieszSaddleBand](../../RiemannGaussian/ZetaRieszSaddleBand.lean)
 - [ZetaRieszSaddleCredit](../../RiemannGaussian/ZetaRieszSaddleCredit.lean)
+- [ZetaRieszSaddlePacking](../../RiemannGaussian/ZetaRieszSaddlePacking.lean)
 - [ZetaRieszSaddlePeriod](../../RiemannGaussian/ZetaRieszSaddlePeriod.lean)
 - [ZetaRieszSemiprimeBand](../../RiemannGaussian/ZetaRieszSemiprimeBand.lean)
 - [ZetaRieszSemiprimeCompletion](../../RiemannGaussian/ZetaRieszSemiprimeCompletion.lean)
@@ -496,6 +502,8 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszSixPrimePeriod](../../RiemannGaussian/ZetaRieszSixPrimePeriod.lean)
 - [ZetaRieszSixPrimeReflection](../../RiemannGaussian/ZetaRieszSixPrimeReflection.lean)
 - [ZetaRieszSixPrimeSecondReflection](../../RiemannGaussian/ZetaRieszSixPrimeSecondReflection.lean)
+- [ZetaRieszSixSmallHinges](../../RiemannGaussian/ZetaRieszSixSmallHinges.lean)
+- [ZetaRieszSixSmallPrimes](../../RiemannGaussian/ZetaRieszSixSmallPrimes.lean)
 - [ZetaRieszSkewAllocation](../../RiemannGaussian/ZetaRieszSkewAllocation.lean)
 - [ZetaRieszSkewCarrier](../../RiemannGaussian/ZetaRieszSkewCarrier.lean)
 - [ZetaRieszSkewFactorial](../../RiemannGaussian/ZetaRieszSkewFactorial.lean)

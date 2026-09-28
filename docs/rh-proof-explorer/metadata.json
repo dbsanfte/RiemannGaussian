@@ -16,17 +16,17 @@
       "changeReason": "The multiplicity audit proves that exposure does not imply simplicity: multiple zeros have a positive retained source. The same carrier now has a checked two-sided conditional endgame, so the arithmetic campaign must pursue its floor and ceiling together."
     },
     "latestUpdate": {
-      "sequence": 104,
-      "id": "allocation-transition-payment",
+      "sequence": 109,
+      "id": "unsaturated-prime-periods",
       "kind": "theorem",
-      "title": "Joint signed cancellation crosses the allocation transition.",
-      "body": "Lean bounds variation of the literal factorial allocation inside the prime period. Both whole comparisons now pay a strictly larger six-prime population, including actual labels above the old 19/32 threshold, while preserving their margin and exact signed rest.",
-      "next": "Bound the remaining labels and phase periods. The independent -79/1000 whole floor and 3/2 ceiling remain open.",
+      "title": "Both signed bounds cross the cofactor saturation boundary.",
+      "body": "The selected 7\u201355-prime population now extends from cofactor log 0.665v to 0.7v. Lean retains the additional Riesz cutoff exactly, proves it adds no cutoff variation, and constructs actual labels where it is positive. Both whole comparisons keep the same local debit and growing credit.",
+      "next": "Control the remaining ownership boundaries, share geometry and radial complement. The independent -79/1000 whole floor and 3/2 ceiling remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszAllocationTransitionSignedTheorem"
+        "rieszFixedCountJointTheorem"
       ],
-      "documentation": "docs/zeta-riesz-allocation-transition.md"
+      "documentation": "docs/zeta-riesz-unsaturated-periods.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -5094,6 +5094,221 @@
         "rieszAllocationTransitionScope"
       ],
       "documentation": "docs/zeta-riesz-allocation-transition.md"
+    },
+    {
+      "id": "multiple-six-prime-periods",
+      "label": "Whole joint estimates \u00b7 multiple prime periods",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMultiPeriodSixCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMultiPeriodSixDisjointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMultiPeriodSixRadialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMultiPeriodSixCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMultiPeriodSixSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMultiPeriodSixFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMultiPeriodSixCeilingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMultiPeriodSixIncludesTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMultiPeriodSixStrictTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszMultiPeriodSixScope"
+      ],
+      "documentation": "docs/zeta-riesz-multiple-periods.md"
+    },
+    {
+      "id": "saddle-band-joint-credit",
+      "label": "Whole joint estimates \u00b7 growing saddle credit",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleBandUniformTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleBandCutoffTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleBandRadialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleBandCentersTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleBandCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleBandMarginTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleBandErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleBandFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleBandCeilingTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSaddleBandScope"
+      ],
+      "documentation": "docs/zeta-riesz-saddle-band.md"
+    },
+    {
+      "id": "six-small-prime-cancellation",
+      "label": "Whole joint estimates \u00b7 six-small-prime cancellation",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixSmallHingeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixSmallKernelTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixSmallRieszTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixSmallCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixSmallSavingsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixSmallResidualTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixSmallWholeTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSixSmallScope"
+      ],
+      "documentation": "docs/zeta-riesz-six-small-primes.md"
+    },
+    {
+      "id": "fixed-count-prime-periods",
+      "label": "Whole joint estimates \u00b7 one mechanism for many counts",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFixedCountMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFixedCountReciprocalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFixedCountAllocationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFixedCountFibreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFixedCountResidualTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFixedCountCoreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFixedCountJointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFixedCountDisjointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFixedCountStrictTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFixedCountScope"
+      ],
+      "documentation": "docs/zeta-riesz-fixed-count-periods.md"
+    },
+    {
+      "id": "unsaturated-prime-periods",
+      "label": "Whole joint estimates \u00b7 crossing the saturation boundary",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUnsaturatedCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUnsaturatedSaturatedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUnsaturatedAmplitudeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUnsaturatedVariationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUnsaturatedActualTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFixedCountJointTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszUnsaturatedScope"
+      ],
+      "documentation": "docs/zeta-riesz-unsaturated-periods.md"
     }
   ],
   "scopes": {
@@ -10152,6 +10367,166 @@
       "label": "Actual new labels cross the 19/32 transition",
       "overview": true,
       "documentation": "docs/zeta-riesz-allocation-transition.md"
+    },
+    "RiemannGaussian.ZetaRieszMultiPeriodSix.five_le_periodCount": {
+      "label": "At least five complete prime periods",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-multiple-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszMultiPeriodSix.disjoint_periods": {
+      "label": "Each arithmetic label belongs to one period",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-multiple-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszMultiPeriodSix.radial_mono": {
+      "label": "Exact radial decrease after the saddle",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-multiple-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszMultiPeriodSix.eventually_period_cost_small": {
+      "label": "All signed periods fit one total relative cost",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-multiple-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszMultiPeriodSix.eventually_signed_population_bound": {
+      "label": "Literal multiple-period payment on the dyadic core",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-multiple-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszMultiPeriodSix.scaled_floor_after_signed_payment": {
+      "label": "Floor retains every favorable signed period",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-multiple-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszMultiPeriodSix.scaled_ceiling_after_signed_payment": {
+      "label": "Ceiling retains every favorable signed period",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-multiple-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszMultiPeriodSix.previous_population_subset": {
+      "label": "Original period is included and replaced",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-multiple-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszMultiPeriodSix.eventually_added_population_nonempty": {
+      "label": "Extra periods contain actual new prime labels",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-multiple-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszSaddleBand.eventually_six_population_bound": {
+      "label": "Literal signed payment across the growing saddle",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-saddle-band.md"
+    },
+    "RiemannGaussian.ZetaRieszSaddleBand.eventually_cutoff_ratio": {
+      "label": "Moving cutoff stays inside the certified bin",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-saddle-band.md"
+    },
+    "RiemannGaussian.ZetaRieszSaddleBand.radial_lower": {
+      "label": "Uniform factorial radial lower bound",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-saddle-band.md"
+    },
+    "RiemannGaussian.ZetaRieszSaddlePacking.center_bounds": {
+      "label": "Disjoint periods fit a square-root band",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-saddle-band.md"
+    },
+    "RiemannGaussian.ZetaRieszSaddlePacking.count_lower": {
+      "label": "Growing period count retains saddle-width mass",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-saddle-band.md"
+    },
+    "RiemannGaussian.ZetaRieszSaddlePacking.margin_lower": {
+      "label": "Net whole credit is at least N/16 times source credit",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-saddle-band.md"
+    },
+    "RiemannGaussian.ZetaRieszSaddlePacking.tendsto_polynomial_allocation": {
+      "label": "All period completion errors still tend to zero",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-saddle-band.md"
+    },
+    "RiemannGaussian.ZetaRieszSaddlePacking.floor_union": {
+      "label": "Disjoint signed floor gains add once",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-saddle-band.md"
+    },
+    "RiemannGaussian.ZetaRieszSaddlePacking.ceiling_union": {
+      "label": "Disjoint signed ceiling gains add once",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-saddle-band.md"
+    },
+    "RiemannGaussian.ZetaRieszCofactorMass.log_mass": {
+      "label": "Least-prime weighted mass at every fixed count",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-fixed-count-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszCofactorMass.reciprocal_mass": {
+      "label": "Fixed-count cutoff-variation mass",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-fixed-count-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszAllocationVariation.boundedShare_fibre_variation_of_count": {
+      "label": "Exact allocation varies slowly at every count",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-fixed-count-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszFixedCountPeriod.fibre_bound": {
+      "label": "Signed prime fibre with arbitrary fixed count",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-fixed-count-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszFixedCountPeriod.eventually_residual_small": {
+      "label": "Count-dependent signed cancellation in the growing band",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-fixed-count-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszFixedCountPeriod.eventually_population_bound": {
+      "label": "All literal masks at any fixed count",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-fixed-count-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszFixedCountBand.eventually_population_bound": {
+      "label": "One joint payment for counts six through fifty-five",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-fixed-count-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszFixedCountBand.old_disjoint_extra": {
+      "label": "Old six-prime credit is not spent twice",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-fixed-count-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszFixedCountBand.eventually_extra_nonempty": {
+      "label": "The added seven-prime population is nonempty",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-fixed-count-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszFixedCountPeriod.coefficient_eq_response": {
+      "label": "Both reflected cutoff terms retained",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-unsaturated-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszFixedCountPeriod.response_eq_of_saturated": {
+      "label": "Previous saturated formula recovered exactly",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-unsaturated-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszFixedCountPeriod.cofactor_response_bound": {
+      "label": "Two-cutoff least-prime amplitude bound",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-unsaturated-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszFixedCountPeriod.cofactor_response_variation": {
+      "label": "The unsaturated correction adds no cutoff variation",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-unsaturated-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszFixedCountBand.eventually_unsaturated_extra": {
+      "label": "Actual prime labels with positive unsaturated correction",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-unsaturated-periods.md"
     }
   },
   "moduleFamilies": {
@@ -10192,6 +10567,14 @@
     "ZetaRieszWideSixPeriod": "arithmetic",
     "ZetaRieszSixCofactorPeriod": "arithmetic",
     "ZetaRieszAllocationVariation": "arithmetic",
-    "ZetaRieszTransitionSixPeriod": "arithmetic"
+    "ZetaRieszTransitionSixPeriod": "arithmetic",
+    "ZetaRieszMultiPeriodSix": "arithmetic",
+    "ZetaRieszSaddleBand": "arithmetic",
+    "ZetaRieszSaddlePacking": "arithmetic",
+    "ZetaRieszSixSmallHinges": "arithmetic",
+    "ZetaRieszSixSmallPrimes": "arithmetic",
+    "ZetaRieszCofactorMass": "arithmetic",
+    "ZetaRieszFixedCountPeriod": "arithmetic",
+    "ZetaRieszFixedCountBand": "arithmetic"
   }
 }
