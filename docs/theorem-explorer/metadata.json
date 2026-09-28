@@ -20,6 +20,886 @@
       "documentation": "docs/zeta-unified-zero-free.md"
     },
     {
+      "id": "riesz-capacity-phase-payment",
+      "label": "Signed arithmetic \u00b7 literal capacity and phase payments",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszJointCapacityFloor.eventually_joint_core_family_floor"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCapacityPhaseBudget.eventually_exists_first_bin_period"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCapacityPhaseBudget.original_finite_period_budget"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszOppositePhase.eventually_five_cell_core_ceiling"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszOppositePhase.eventually_four_core_ceiling"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszJointCapacityCeiling.eventually_five_core_ceiling"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszJointCapacityCeiling.joint_ceiling_of_disjoint"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCapacityPhaseBudget.positive_peak_capacity_budget"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCapacityPhaseBudget.eventually_central_bin_ratio"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCapacityPhaseBudget.eventually_exists_central_bin_period"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCapacityPhaseBudget.original_finite_upper_period_budget"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszJointCapacityCeiling.family_ceiling_of_pairwise_disjoint"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszJointCapacityCeiling.mem_full_period_calibrated_iff"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszBalancedTripleBudget.eventually_reciprocal_mass"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszBalancedTripleBudget.eventually_signed_bounds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszBalancedTripleBudget.disjoint_from_four_five"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCapacityPhaseBudget.original_finite_period_budget_with_triples"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCapacityPhaseBudget.original_finite_upper_period_budget_with_triples"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszBalancedTripleBudget.mem_full_period_iff"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszBroadTripleBudget.six_le_representation_count"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszBroadTripleBudget.six_mul_reciprocal_mass_le"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszBroadTripleBudget.eventually_signed_bounds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszBroadTripleBudget.eventually_core_bounds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszBroadTripleBudget.narrow_subset"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCapacityPhaseBudget.finite_central_budget"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCapacityPhaseBudget.finite_upper_central_budget"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCapacityPhaseBudget.original_central_period_budget"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCapacityPhaseBudget.original_central_upper_period_budget"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md"
+    },
+    {
+      "id": "riesz-joint-floor",
+      "label": "All multiplicities \u00b7 conditional joint floor and ceiling",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszJointFloor.false_of_joint_cofinal_bounds"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-joint-floor.md"
+    },
+    {
+      "id": "riesz-five-positive-head",
+      "label": "Five-prime head \u00b7 positive arithmetic coefficient",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFivePositiveHead.positiveAllowance_le_marked_log"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFivePositiveHead.coefficient_nonpos_of_two_small"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFivePositiveHead.small_five_positive_norm_upper"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFivePositiveHead.eventually_core_joint_floor"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFivePositiveHead.eventually_core_full_exponential_floor"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFivePositiveHead.exists_exponential_head_missed_bound"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFivePositiveHead.remaining_full_positive_head_prime_log_gt"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-five-positive-head.md"
+    },
+    {
+      "id": "riesz-head-ceiling",
+      "label": "Opposite-phase heads \u00b7 upper comparison",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszHeadCeiling.eventually_supply_upper"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszHeadCeiling.re_sum_le_joint_spending"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszHeadCeiling.eventually_core_full_exponential_ceiling"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-head-ceiling.md"
+    },
+    {
+      "id": "riesz-five-owner-credit",
+      "label": "Five-prime supply \u00b7 disjoint owner credit",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFiveOwnerCredit.ordered_plus_extra_le_cells"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFiveOwnerBoxes.owner_integral_lower"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFiveOwnerBoxes.ownerRegion_subset_cells"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFiveOwnerBoxes.eventually_owner_core_floor"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFiveOwnerBoxes.eventually_owner_core_ceiling"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-five-owner-credit.md"
+    },
+    {
+      "id": "riesz-central-reserve",
+      "label": "Central reserve \u00b7 source-scale margin and signed rest",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCapacityPhaseBudget.eventually_exists_central_bin_period_at_saddle"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCapacityPhaseBudget.original_central_period_budget_with_radial"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCapacityPhaseBudget.original_central_upper_period_budget_with_radial"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCentralReserve.sourceCredit_le_scaled_margin"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCentralReserve.sourceCredit_tendsto_atTop"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCentralReserve.lower_rest_tendsto_atBot_of_finite_source"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszCentralReserve.upper_rest_tendsto_atTop_of_finite_source"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-central-reserve.md"
+    },
+    {
+      "id": "riesz-phase-density-audit",
+      "label": "Phase-density audit \u00b7 generic error remains insufficient",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszPhaseDensityAudit.densityError_faster_than_inverse_power"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszPhaseDensityAudit.observed_half_period"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszPhaseDensityAudit.integral_error"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszPhaseDensityAudit.norm_full_sub_core_error_le"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszPhaseDensityAudit.tendsto_core_error_source"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszPhaseDensityAudit.eventually_core_error_below_floor"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszPhaseDensityAudit.eventually_core_error_above_ceiling"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-phase-density-audit.md"
+    },
+    {
+      "id": "riesz-signed-sperner",
+      "label": "Signed divisor bounds \u00b7 parity and antichains",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSignedSperner.signed_antichain_bounds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSignedSperner.coefficient_bounds_minFac"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSignedSperner.coefficient_six_bounds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSignedSperner.six_lowerCost_saving"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSignedSperner.six_upperCost_saving"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSignedSperner.core_subset_bounds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeGeometry.window_pair_compl_notMem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeGeometry.signedDivisorWindow_le_three"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeGeometry.coefficient_six_bounds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeGeometry.costs_le_two_thirds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeGeometry.eventually_core_subset_six_bounds"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-signed-sperner.md"
+    },
+    {
+      "id": "riesz-six-prime-head",
+      "label": "Six-prime head \u00b7 both signed comparisons",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeHead.prime_reciprocal_le"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeHead.small_six_norm_upper"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeHead.eventually_small_six_cost"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeHead.exists_full_head_missed_bound"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeHead.eventually_core_full_floor"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeHead.eventually_core_full_ceiling"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeHead.remaining_six_prime_gt"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszPrimeFractionalBudget.prime_fractional_log_mass_le"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszPrimeFractionalBudget.minimum_le_weighted_product"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeHead.small_six_fractional_norm_upper"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeHead.eventually_small_six_log_cost"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeExponentialHead.eventually_core_full_floor"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeExponentialHead.eventually_core_full_ceiling"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeExponentialHead.remaining_six_prime_log_gt"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSixPrimeExponentialHead.eventually_polynomial_head_included"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-six-prime-head.md"
+    },
+    {
+      "id": "riesz-five-negative-head",
+      "label": "Five-prime head \u00b7 negative arithmetic coefficient",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszPrimeFractionalBudget.minimum_le_weighted_product_three"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFiveFractionalHead.small_five_fractional_norm_upper"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFiveFractionalHead.eventually_small_five_log_cost"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFiveNegativeHead.eventually_mixed_log_cost"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFiveNegativeHead.exists_full_head_missed_bound"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFiveNegativeHead.eventually_core_full_floor"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFiveNegativeHead.eventually_core_full_ceiling"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFiveNegativeHead.remaining_negative_five_log_gt"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFiveNegativeHead.remaining_five_log_gt"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszFiveNegativeHead.remaining_six_log_gt"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-five-negative-head.md"
+    },
+    {
+      "id": "riesz-complement-window",
+      "label": "Even prime counts \u00b7 reflected-window costs",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszComplementWindow.middle_layer_twice_card_le"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszComplementWindow.window_compl_notMem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszComplementWindow.antichain_parity_card_bound"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszComplementWindow.signedDivisorWindow_bounds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszComplementWindow.coefficient_even_bounds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszComplementWindow.coefficient_eight_bounds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszComplementWindow.shortWindowCapacity_eight"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszComplementWindow.shortWindowCapacity_ten"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszComplementWindow.costs_le_previous"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszComplementWindow.eventually_core_subset_higher_even_bounds"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-complement-window.md"
+    },
+    {
+      "id": "riesz-log-count-tail",
+      "label": "Large prime counts \u00b7 logarithmic tail payment",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszLogCountBudget.threshold_power"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszLogCountBudget.selected_count_mass_le"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszLogCountBudget.logarithmic_count_norm_upper"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszLogCountBudget.eventually_joint_slabs_floor_with_count_tail"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszLogCountBudget.eventually_joint_slabs_ceiling_with_count_tail"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszLogCountTail.exists_missed_tail_bound"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszLogCountTail.eventually_core_full_floor"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszLogCountTail.eventually_core_full_ceiling"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszLogCountTail.remaining_count_lt"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-log-count-tail.md"
+    },
+    {
+      "id": "riesz-intersecting-window",
+      "label": "Odd prime counts \u00b7 intersecting-window costs",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszIntersectingWindow.window_union_ne_univ"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszIntersectingWindow.intersecting_layer_card_le"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszIntersectingWindow.window_layer_card_le"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszIntersectingWindow.antichain_quota_bound"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszIntersectingWindow.five_coordinate_odd_card_le"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszIntersectingWindow.five_window_odd_card_le"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszIntersectingWindow.coefficient_odd_bounds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszIntersectingWindow.coefficient_seven_bounds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszIntersectingWindow.coefficient_nine_bounds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszIntersectingWindow.oddWindowCapacity_nine"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszIntersectingWindow.costs_le_previous"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszIntersectingWindow.eventually_core_subset_higher_odd_bounds"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-intersecting-window.md"
+    },
+    {
+      "id": "riesz-seven-prime-head",
+      "label": "Seven-prime head \u00b7 joint count-tail payment",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSevenPrimeHead.small_seven_fractional_norm_upper"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSevenPrimeHead.eventually_small_seven_log_cost"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSevenPrimeHead.eventually_seven_and_count_cost"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSevenPrimeHead.eventually_joint_slabs_floor"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSevenPrimeHead.eventually_joint_slabs_ceiling"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSevenCountTail.exists_missed_tail_bound"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSevenCountTail.eventually_core_full_floor"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSevenCountTail.eventually_core_full_ceiling"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSevenCountTail.remaining_seven_log_gt"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszSevenCountTail.remaining_count_lt"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-seven-prime-head.md"
+    },
+    {
+      "id": "riesz-reflected-prime-bounds",
+      "label": "Reflected primes \u00b7 exact zero sector and signed savings",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszReflectedPrimeBounds.coefficient_active_bounds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszReflectedPrimeBounds.coefficient_eq_zero_of_three_outer"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszReflectedPrimeBounds.coefficient_seven_one_outer"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszReflectedPrimeBounds.coefficient_seven_two_outer"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszReflectedPrimeBounds.costs_le_previous"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszReflectedPrimeBounds.core_sum_eq_outer_filter"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszReflectedPrimeBounds.nonzero_core_outer_le_two"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedArithmeticTheorems",
+          "ZetaRieszReflectedPrimeBounds.eventually_core_subset_bounds"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedArithmeticScope"
+      ],
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md"
+    },
+    {
       "id": "marked-prime-completion",
       "label": "Marked-prime completion \u00b7 geometric integrated error bounds",
       "statusPaths": [
@@ -3630,7 +4510,33 @@
     "ZetaRieszFiveInteriorBudget": "arithmetic",
     "ZetaRieszFiveAngularBoundary": "arithmetic",
     "ZetaRieszFiveAngularIncidence": "arithmetic",
-    "ZetaRieszFiveAngularDomain": "arithmetic"
+    "ZetaRieszFiveAngularDomain": "arithmetic",
+    "ZetaRieszJointCapacityFloor": "arithmetic",
+    "ZetaRieszCapacityPhaseBudget": "arithmetic",
+    "ZetaRieszOppositePhase": "arithmetic",
+    "ZetaRieszJointCapacityCeiling": "arithmetic",
+    "ZetaRieszBalancedTripleBudget": "arithmetic",
+    "ZetaRieszBroadTripleBudget": "arithmetic",
+    "ZetaRieszFivePositiveHead": "arithmetic",
+    "ZetaRieszHeadCeiling": "arithmetic",
+    "ZetaRieszFiveOwnerCredit": "arithmetic",
+    "ZetaRieszFiveOwnerBoxes": "arithmetic",
+    "ZetaRieszCentralReserve": "arithmetic",
+    "ZetaRieszPhaseDensityAudit": "arithmetic",
+    "ZetaRieszSignedSperner": "arithmetic",
+    "ZetaRieszSixPrimeGeometry": "arithmetic",
+    "ZetaRieszSixPrimeHead": "arithmetic",
+    "ZetaRieszPrimeFractionalBudget": "arithmetic",
+    "ZetaRieszSixPrimeExponentialHead": "arithmetic",
+    "ZetaRieszFiveFractionalHead": "arithmetic",
+    "ZetaRieszFiveNegativeHead": "arithmetic",
+    "ZetaRieszComplementWindow": "arithmetic",
+    "ZetaRieszLogCountBudget": "arithmetic",
+    "ZetaRieszLogCountTail": "arithmetic",
+    "ZetaRieszIntersectingWindow": "arithmetic",
+    "ZetaRieszSevenPrimeHead": "arithmetic",
+    "ZetaRieszSevenCountTail": "arithmetic",
+    "ZetaRieszReflectedPrimeBounds": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
@@ -7013,6 +7919,721 @@
       "label": "Complete marked prime retains the unchanged signed packet",
       "overview": true,
       "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszJointCapacityFloor.eventually_joint_core_family_floor": {
+      "label": "Disjoint literal four/five-prime capacity payment",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCapacityPhaseBudget.eventually_exists_first_bin_period": {
+      "label": "An actual complete phase period inside the certified cutoff bin",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCapacityPhaseBudget.original_finite_period_budget": {
+      "label": "The full discrete period pays radial and phase errors",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszOppositePhase.eventually_five_cell_core_ceiling": {
+      "label": "Literal five-prime negative credit at positive cosine",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszOppositePhase.eventually_four_core_ceiling": {
+      "label": "An upper estimate for the complete selected four-prime population",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszJointFloor.false_of_joint_cofinal_bounds": {
+      "label": "Conditional same-carrier endgame for every zero multiplicity",
+      "documentation": "docs/zeta-riesz-joint-floor.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszJointCapacityCeiling.eventually_five_core_ceiling": {
+      "label": "Calibrate the whole literal five-prime angular population",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszJointCapacityCeiling.joint_ceiling_of_disjoint": {
+      "label": "Joint upper payment with one disjoint signed complement",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCapacityPhaseBudget.positive_peak_capacity_budget": {
+      "label": "Opposite-phase capacity pays the original radial factors",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCapacityPhaseBudget.eventually_central_bin_ratio": {
+      "label": "The literal moving cutoff stays in the central saddle bin",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCapacityPhaseBudget.eventually_exists_central_bin_period": {
+      "label": "A full original phase period near the factorial saddle",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCapacityPhaseBudget.original_finite_upper_period_budget": {
+      "label": "A complete phase period pays the upper debit with strict surplus",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszJointCapacityCeiling.family_ceiling_of_pairwise_disjoint": {
+      "label": "Disjoint upper payments keep one original signed complement",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszJointCapacityCeiling.mem_full_period_calibrated_iff": {
+      "label": "Every eligible four-prime label is retained across the full phase period",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszBalancedTripleBudget.eventually_reciprocal_mass": {
+      "label": "Literal balanced-triple reciprocal mass at most h/(8000 t)",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszBalancedTripleBudget.eventually_signed_bounds": {
+      "label": "Both signed phase bounds for the balanced-triple band",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszBalancedTripleBudget.disjoint_from_four_five": {
+      "label": "Three/four/five spending is disjoint by actual prime count",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCapacityPhaseBudget.original_finite_period_budget_with_triples": {
+      "label": "Full-period lower budget also pays balanced triples",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCapacityPhaseBudget.original_finite_upper_period_budget_with_triples": {
+      "label": "Full-period upper budget also pays balanced triples",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszBalancedTripleBudget.mem_full_period_iff": {
+      "label": "Every eligible balanced triple is covered throughout the full phase period",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszBroadTripleBudget.six_le_representation_count": {
+      "label": "Six distinct prime orderings retained for every literal triple",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszBroadTripleBudget.six_mul_reciprocal_mass_le": {
+      "label": "Divide out the sixfold upper-count incidence",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszBroadTripleBudget.eventually_signed_bounds": {
+      "label": "A 1/200 two-sided debit for the broad 0.31..0.35 triple band",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszBroadTripleBudget.eventually_core_bounds": {
+      "label": "Broad triple bounds retain the exact original signed complement",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszBroadTripleBudget.narrow_subset": {
+      "label": "The broad triple band contains the narrow band; no double spending",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFivePositiveHead.positiveAllowance_le_marked_log": {
+      "label": "Positive five-prime coefficient costs one marked-prime logarithm",
+      "documentation": "docs/zeta-riesz-five-positive-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFivePositiveHead.coefficient_nonpos_of_two_small": {
+      "label": "Two small primes kill the positive five-prime coefficient",
+      "documentation": "docs/zeta-riesz-five-positive-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFivePositiveHead.small_five_positive_norm_upper": {
+      "label": "Literal positive five-prime head has a logarithmic counting cost",
+      "documentation": "docs/zeta-riesz-five-positive-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFivePositiveHead.eventually_core_joint_floor": {
+      "label": "One supply pays four core populations with one eighth left",
+      "documentation": "docs/zeta-riesz-five-positive-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFivePositiveHead.eventually_core_full_exponential_floor": {
+      "label": "Full exponential heads paid with a vanishing boundary allowance",
+      "documentation": "docs/zeta-riesz-five-positive-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFivePositiveHead.exists_exponential_head_missed_bound": {
+      "label": "Radial and dominant-prime omissions have geometric source cost",
+      "documentation": "docs/zeta-riesz-five-positive-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFivePositiveHead.remaining_full_positive_head_prime_log_gt": {
+      "label": "Every surviving positive-five prime exceeds the common exponential cutoff",
+      "documentation": "docs/zeta-riesz-five-positive-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHeadCeiling.eventually_supply_upper": {
+      "label": "Actual negative four-prime supply at the original height",
+      "documentation": "docs/zeta-riesz-head-ceiling.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHeadCeiling.re_sum_le_joint_spending": {
+      "label": "One negative supply pays four charges without losing the signed rest",
+      "documentation": "docs/zeta-riesz-head-ceiling.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszHeadCeiling.eventually_core_full_exponential_ceiling": {
+      "label": "Full exponential heads have a literal upper comparison and vanishing boundary cost",
+      "documentation": "docs/zeta-riesz-head-ceiling.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFiveOwnerCredit.ordered_plus_extra_le_cells": {
+      "label": "Disjoint owner credit strengthens one existing population",
+      "documentation": "docs/zeta-riesz-five-owner-credit.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFiveOwnerBoxes.owner_integral_lower": {
+      "label": "246 kernel-checked cubes supply at least 1/750 angular mass",
+      "documentation": "docs/zeta-riesz-five-owner-credit.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFiveOwnerBoxes.ownerRegion_subset_cells": {
+      "label": "Every extra cube is covered by the unchanged literal grid",
+      "documentation": "docs/zeta-riesz-five-owner-credit.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFiveOwnerBoxes.eventually_owner_core_floor": {
+      "label": "Additional 1/800 credit in the original signed core floor",
+      "documentation": "docs/zeta-riesz-five-owner-credit.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFiveOwnerBoxes.eventually_owner_core_ceiling": {
+      "label": "Additional owner credit in the original signed core ceiling",
+      "documentation": "docs/zeta-riesz-five-owner-credit.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCapacityPhaseBudget.finite_central_budget": {
+      "label": "Central lower phase budget with the broader triple debit",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCapacityPhaseBudget.finite_upper_central_budget": {
+      "label": "Central upper phase budget with the broader triple debit",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCapacityPhaseBudget.original_central_period_budget": {
+      "label": "Central lower full-period budget including radial variation",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCapacityPhaseBudget.original_central_upper_period_budget": {
+      "label": "Central upper full-period budget including radial variation",
+      "documentation": "docs/zeta-riesz-capacity-phase-payment.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCapacityPhaseBudget.eventually_exists_central_bin_period_at_saddle": {
+      "label": "The literal phase period stays within one half of the factorial saddle",
+      "documentation": "docs/zeta-riesz-central-reserve.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCapacityPhaseBudget.original_central_period_budget_with_radial": {
+      "label": "The signed lower budget retains its radial scale",
+      "documentation": "docs/zeta-riesz-central-reserve.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCapacityPhaseBudget.original_central_upper_period_budget_with_radial": {
+      "label": "The signed upper budget retains its radial scale",
+      "documentation": "docs/zeta-riesz-central-reserve.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralReserve.sourceCredit_le_scaled_margin": {
+      "label": "Explicit source-normalized credit from the same central period",
+      "documentation": "docs/zeta-riesz-central-reserve.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralReserve.sourceCredit_tendsto_atTop": {
+      "label": "The central credit grows at rate (2u)^N/(N+1)",
+      "documentation": "docs/zeta-riesz-central-reserve.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralReserve.lower_rest_tendsto_atBot_of_finite_source": {
+      "label": "A finite whole source forces the lower comparison rest to minus infinity",
+      "documentation": "docs/zeta-riesz-central-reserve.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszCentralReserve.upper_rest_tendsto_atTop_of_finite_source": {
+      "label": "A finite whole source forces the upper comparison rest to plus infinity",
+      "documentation": "docs/zeta-riesz-central-reserve.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhaseDensityAudit.densityError_faster_than_inverse_power": {
+      "label": "A real density error escapes every fixed inverse-logarithmic accuracy",
+      "documentation": "docs/zeta-riesz-phase-density-audit.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhaseDensityAudit.observed_half_period": {
+      "label": "The correlated density error reinforces across opposite phase windows",
+      "documentation": "docs/zeta-riesz-phase-density-audit.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhaseDensityAudit.integral_error": {
+      "label": "Exact factorial response of a phase-correlated density error",
+      "documentation": "docs/zeta-riesz-phase-density-audit.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhaseDensityAudit.norm_full_sub_core_error_le": {
+      "label": "Both radial boundaries of the density-error audit are paid",
+      "documentation": "docs/zeta-riesz-phase-density-audit.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhaseDensityAudit.tendsto_core_error_source": {
+      "label": "The same nonzero model source survives inside the literal radial window",
+      "documentation": "docs/zeta-riesz-phase-density-audit.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhaseDensityAudit.eventually_core_error_below_floor": {
+      "label": "Density-error model crosses the simple-zero floor; no prime-sum claim",
+      "documentation": "docs/zeta-riesz-phase-density-audit.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPhaseDensityAudit.eventually_core_error_above_ceiling": {
+      "label": "Density-error model crosses the multiple-zero ceiling; no prime-sum claim",
+      "documentation": "docs/zeta-riesz-phase-density-audit.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSignedSperner.signed_antichain_bounds": {
+      "label": "Mobius subset parity has separate antichain capacities",
+      "documentation": "docs/zeta-riesz-signed-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSignedSperner.coefficient_bounds_minFac": {
+      "label": "Independent signed coefficient interval with the actual least prime",
+      "documentation": "docs/zeta-riesz-signed-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSignedSperner.coefficient_six_bounds": {
+      "label": "Six-prime upper capacity falls from six to four",
+      "documentation": "docs/zeta-riesz-signed-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSignedSperner.six_lowerCost_saving": {
+      "label": "One-third six-prime floor-charge saving on negative cosines",
+      "documentation": "docs/zeta-riesz-signed-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSignedSperner.six_upperCost_saving": {
+      "label": "One-third six-prime ceiling-charge saving on positive cosines",
+      "documentation": "docs/zeta-riesz-signed-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSignedSperner.core_subset_bounds": {
+      "label": "Both literal core comparisons retain favorable observations and the signed rest",
+      "documentation": "docs/zeta-riesz-signed-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeGeometry.window_pair_compl_notMem": {
+      "label": "Two complementary pairs contradict the reflected core cutoff",
+      "documentation": "docs/zeta-riesz-signed-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeGeometry.signedDivisorWindow_le_three": {
+      "label": "The actual six-prime cofactor window has upper capacity three",
+      "documentation": "docs/zeta-riesz-signed-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeGeometry.coefficient_six_bounds": {
+      "label": "Core cutoff sharpens the six-prime coefficient interval to [-3,4]",
+      "documentation": "docs/zeta-riesz-signed-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeGeometry.costs_le_two_thirds": {
+      "label": "Every original phase saves at least one third of the old six-prime charge",
+      "documentation": "docs/zeta-riesz-signed-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeGeometry.eventually_core_subset_six_bounds": {
+      "label": "Source-normalized six-prime comparisons retain every other count in the same sum",
+      "documentation": "docs/zeta-riesz-signed-sperner.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeHead.prime_reciprocal_le": {
+      "label": "Literal reciprocal prime mass bounded by logarithmic shells",
+      "documentation": "docs/zeta-riesz-six-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeHead.small_six_norm_upper": {
+      "label": "Both signs of the six-prime head have a literal logarithmic cost",
+      "documentation": "docs/zeta-riesz-six-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeHead.eventually_small_six_cost": {
+      "label": "The polynomial six-prime head costs an arbitrarily small fraction of signed supply",
+      "documentation": "docs/zeta-riesz-six-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeHead.exists_full_head_missed_bound": {
+      "label": "Original radial and dominant errors pay every missed six-prime boundary label",
+      "documentation": "docs/zeta-riesz-six-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeHead.eventually_core_full_floor": {
+      "label": "One supply pays counts three through six from below with one exact signed rest",
+      "documentation": "docs/zeta-riesz-six-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeHead.eventually_core_full_ceiling": {
+      "label": "The upper comparison pays the six-prime head and keeps one sixteenth of its supply",
+      "documentation": "docs/zeta-riesz-six-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeHead.remaining_six_prime_gt": {
+      "label": "Every prime in the unpaid six-prime population exceeds N squared",
+      "documentation": "docs/zeta-riesz-six-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeFractionalBudget.prime_fractional_log_mass_le": {
+      "label": "Fractional logarithmic prime masses have their exact power scale",
+      "documentation": "docs/zeta-riesz-six-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeFractionalBudget.minimum_le_weighted_product": {
+      "label": "Retain the minimum-prime cost across all five cofactor logarithms",
+      "documentation": "docs/zeta-riesz-six-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeHead.small_six_fractional_norm_upper": {
+      "label": "Minimum-prime geometry removes four artificial logarithmic losses",
+      "documentation": "docs/zeta-riesz-six-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeHead.eventually_small_six_log_cost": {
+      "label": "A fixed exponential six-prime head fits any positive supply fraction",
+      "documentation": "docs/zeta-riesz-six-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeExponentialHead.eventually_core_full_floor": {
+      "label": "The entire exponential six-prime head is paid from below without a second supply",
+      "documentation": "docs/zeta-riesz-six-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeExponentialHead.eventually_core_full_ceiling": {
+      "label": "The full upper ledger pays both signs of the exponential six-prime head",
+      "documentation": "docs/zeta-riesz-six-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeExponentialHead.remaining_six_prime_log_gt": {
+      "label": "All surviving six-prime factors have logarithm greater than epsilon times N",
+      "documentation": "docs/zeta-riesz-six-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSixPrimeExponentialHead.eventually_polynomial_head_included": {
+      "label": "The new fixed exponential head eventually includes the earlier polynomial head",
+      "documentation": "docs/zeta-riesz-six-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPrimeFractionalBudget.minimum_le_weighted_product_three": {
+      "label": "Retain the least-prime cost across four cofactor logarithms",
+      "documentation": "docs/zeta-riesz-five-negative-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFiveFractionalHead.small_five_fractional_norm_upper": {
+      "label": "Both five-prime signs have a literal fractional minimum-prime bound",
+      "documentation": "docs/zeta-riesz-five-negative-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFiveFractionalHead.eventually_small_five_log_cost": {
+      "label": "A fixed five-prime exponential head fits any positive radial budget",
+      "documentation": "docs/zeta-riesz-five-negative-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFiveNegativeHead.eventually_mixed_log_cost": {
+      "label": "Six-prime and negative five-prime charges have separate calibrated widths",
+      "documentation": "docs/zeta-riesz-five-negative-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFiveNegativeHead.exists_full_head_missed_bound": {
+      "label": "The original boundary allowance pays all enlarged head omissions jointly",
+      "documentation": "docs/zeta-riesz-five-negative-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFiveNegativeHead.eventually_core_full_floor": {
+      "label": "The lower ledger pays both five-prime signs and retains one thirty-second of one supply",
+      "documentation": "docs/zeta-riesz-five-negative-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFiveNegativeHead.eventually_core_full_ceiling": {
+      "label": "The upper ledger also pays the negative five-prime head with one signed rest",
+      "documentation": "docs/zeta-riesz-five-negative-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFiveNegativeHead.remaining_negative_five_log_gt": {
+      "label": "Every unpaid negative five-prime factor has logarithm above zeta times N",
+      "documentation": "docs/zeta-riesz-five-negative-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFiveNegativeHead.remaining_five_log_gt": {
+      "label": "Both unpaid five-prime signs have only exponentially large prime factors",
+      "documentation": "docs/zeta-riesz-five-negative-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszFiveNegativeHead.remaining_six_log_gt": {
+      "label": "The six-prime exponential support restriction survives the enlarged payment",
+      "documentation": "docs/zeta-riesz-five-negative-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszComplementWindow.middle_layer_twice_card_le": {
+      "label": "A middle-rank family with no complementary pair occupies at most half a layer",
+      "documentation": "docs/zeta-riesz-complement-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszComplementWindow.window_compl_notMem": {
+      "label": "The reflected one-third window forbids simultaneous complementary divisors",
+      "documentation": "docs/zeta-riesz-complement-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszComplementWindow.antichain_parity_card_bound": {
+      "label": "Half a central layer sharpens the parity-sensitive LYM budget",
+      "documentation": "docs/zeta-riesz-complement-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszComplementWindow.signedDivisorWindow_bounds": {
+      "label": "Actual signed divisor windows retain the complement restriction",
+      "documentation": "docs/zeta-riesz-complement-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszComplementWindow.coefficient_even_bounds": {
+      "label": "Higher even-count coefficients have improved signed capacities at the original cutoff",
+      "documentation": "docs/zeta-riesz-complement-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszComplementWindow.coefficient_eight_bounds": {
+      "label": "The original eight-prime interval improves from minus fifteen through twenty to minus fifteen through thirteen",
+      "documentation": "docs/zeta-riesz-complement-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszComplementWindow.shortWindowCapacity_eight": {
+      "label": "Ten-prime lower capacity falls from seventy to forty-nine",
+      "documentation": "docs/zeta-riesz-complement-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszComplementWindow.shortWindowCapacity_ten": {
+      "label": "Twelve-prime upper capacity falls from 252 to 186",
+      "documentation": "docs/zeta-riesz-complement-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszComplementWindow.costs_le_previous": {
+      "label": "Neither original phase-sensitive arithmetic charge increases",
+      "documentation": "docs/zeta-riesz-complement-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszComplementWindow.eventually_core_subset_higher_even_bounds": {
+      "label": "Both source-normalized bounds improve all selected higher even counts while retaining every other term",
+      "documentation": "docs/zeta-riesz-complement-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLogCountBudget.threshold_power": {
+      "label": "The exact logarithmic count threshold buys eight polynomial powers",
+      "documentation": "docs/zeta-riesz-log-count-tail.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLogCountBudget.selected_count_mass_le": {
+      "label": "The complete second divisor moment bounds every selected high-count population",
+      "documentation": "docs/zeta-riesz-log-count-tail.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLogCountBudget.logarithmic_count_norm_upper": {
+      "label": "All logarithmically high counts cost at most 512 exp(4) over (N+1)^4 of the radial supply scale",
+      "documentation": "docs/zeta-riesz-log-count-tail.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLogCountBudget.eventually_joint_slabs_floor_with_count_tail": {
+      "label": "One signed supply pays the old heads and the entire logarithmic count tail",
+      "documentation": "docs/zeta-riesz-log-count-tail.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLogCountBudget.eventually_joint_slabs_ceiling_with_count_tail": {
+      "label": "The opposite phase pays the same count tail toward the multiple-zero ceiling",
+      "documentation": "docs/zeta-riesz-log-count-tail.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLogCountTail.exists_missed_tail_bound": {
+      "label": "Both radial boundaries of the complete count tail have an independent geometric bound",
+      "documentation": "docs/zeta-riesz-log-count-tail.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLogCountTail.eventually_core_full_floor": {
+      "label": "The literal full-core lower comparison pays the logarithmic count tail and retains one sixty-fourth of supply",
+      "documentation": "docs/zeta-riesz-log-count-tail.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLogCountTail.eventually_core_full_ceiling": {
+      "label": "The full-core upper comparison pays the logarithmic count tail with the signed complement retained",
+      "documentation": "docs/zeta-riesz-log-count-tail.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszLogCountTail.remaining_count_lt": {
+      "label": "Every unpaid squarefree label has fewer than the explicit logarithmic number of factors",
+      "documentation": "docs/zeta-riesz-log-count-tail.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszIntersectingWindow.window_union_ne_univ": {
+      "label": "Two surviving reflected-window subsets cannot cover the prime universe",
+      "documentation": "docs/zeta-riesz-intersecting-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszIntersectingWindow.intersecting_layer_card_le": {
+      "label": "Checked Erd\u0151s\u2013Ko\u2013Rado on an arbitrary finite prime universe",
+      "documentation": "docs/zeta-riesz-intersecting-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszIntersectingWindow.window_layer_card_le": {
+      "label": "Intersecting divisor complements bound each high-rank window layer",
+      "documentation": "docs/zeta-riesz-intersecting-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszIntersectingWindow.antichain_quota_bound": {
+      "label": "One LYM budget combines the constrained layer with every other rank",
+      "documentation": "docs/zeta-riesz-intersecting-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszIntersectingWindow.five_coordinate_odd_card_le": {
+      "label": "Singletons exclude triple coordinates: at most five odd subsets",
+      "documentation": "docs/zeta-riesz-intersecting-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszIntersectingWindow.five_window_odd_card_le": {
+      "label": "The exact five-coordinate Riesz window costs at most five on its odd side",
+      "documentation": "docs/zeta-riesz-intersecting-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszIntersectingWindow.coefficient_odd_bounds": {
+      "label": "Reflected signed coefficient bounds for every odd prime count",
+      "documentation": "docs/zeta-riesz-intersecting-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszIntersectingWindow.coefficient_seven_bounds": {
+      "label": "Seven-prime signed interval [-5,10] halves the old negative cost",
+      "documentation": "docs/zeta-riesz-intersecting-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszIntersectingWindow.coefficient_nine_bounds": {
+      "label": "Nine-prime signed interval [-35,27] keeps the actual least prime",
+      "documentation": "docs/zeta-riesz-intersecting-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszIntersectingWindow.oddWindowCapacity_nine": {
+      "label": "Exact eleven-prime coefficient capacities 308/3 and 126",
+      "documentation": "docs/zeta-riesz-intersecting-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszIntersectingWindow.costs_le_previous": {
+      "label": "Both original phase costs are no larger than their previous allowances",
+      "documentation": "docs/zeta-riesz-intersecting-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszIntersectingWindow.eventually_core_subset_higher_odd_bounds": {
+      "label": "Higher odd-count costs improve on every literal core subset; the whole-sum bounds remain open",
+      "documentation": "docs/zeta-riesz-intersecting-window.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSevenPrimeHead.small_seven_fractional_norm_upper": {
+      "label": "Actual seven-prime head bound with the least logarithm retained through fractional prime moments",
+      "documentation": "docs/zeta-riesz-seven-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSevenPrimeHead.eventually_small_seven_log_cost": {
+      "label": "A positive exponential seven-prime head fits any fixed fraction of radial supply scale",
+      "documentation": "docs/zeta-riesz-seven-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSevenPrimeHead.eventually_seven_and_count_cost": {
+      "label": "One tail budget pays both the seven-prime head and every logarithmically high count",
+      "documentation": "docs/zeta-riesz-seven-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSevenPrimeHead.eventually_joint_slabs_floor": {
+      "label": "The old lower ledger pays the enlarged tail without spending its remaining reserve",
+      "documentation": "docs/zeta-riesz-seven-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSevenPrimeHead.eventually_joint_slabs_ceiling": {
+      "label": "The opposite phase ledger pays the same enlarged tail for the multiple-zero comparison",
+      "documentation": "docs/zeta-riesz-seven-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSevenCountTail.exists_missed_tail_bound": {
+      "label": "Both enlarged-tail radial boundaries have the original source-normalized geometric error",
+      "documentation": "docs/zeta-riesz-seven-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSevenCountTail.eventually_core_full_floor": {
+      "label": "Seven-prime head plus full count-tail lower payment, original signed rest retained",
+      "documentation": "docs/zeta-riesz-seven-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSevenCountTail.eventually_core_full_ceiling": {
+      "label": "Seven-prime head plus full count-tail upper payment, original signed rest retained",
+      "documentation": "docs/zeta-riesz-seven-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSevenCountTail.remaining_seven_log_gt": {
+      "label": "Every unpaid seven-prime factor has logarithm above a fixed positive fraction of N",
+      "documentation": "docs/zeta-riesz-seven-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSevenCountTail.remaining_count_lt": {
+      "label": "The enlarged payment preserves the logarithmic ceiling on all remaining squarefree counts",
+      "documentation": "docs/zeta-riesz-seven-prime-head.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszReflectedPrimeBounds.coefficient_active_bounds": {
+      "label": "The smaller active cofactor bounds the original coefficient with its full parity",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszReflectedPrimeBounds.coefficient_eq_zero_of_three_outer": {
+      "label": "Three reflected large primes cancel the original high-count coefficient exactly",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszReflectedPrimeBounds.coefficient_seven_one_outer": {
+      "label": "One reflected large prime sharpens seven-prime coefficients to [-4,6]",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszReflectedPrimeBounds.coefficient_seven_two_outer": {
+      "label": "Two reflected large primes sharpen seven-prime coefficients to [-3,3]",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszReflectedPrimeBounds.costs_le_previous": {
+      "label": "Neither phase-sensitive cost increases; all previous bounds remain",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszReflectedPrimeBounds.core_sum_eq_outer_filter": {
+      "label": "Exact zero-sector deletion on every literal core subset, with the full complex phase",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszReflectedPrimeBounds.nonzero_core_outer_le_two": {
+      "label": "Every nonzero high-count core label has at most two reflected large primes",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszReflectedPrimeBounds.eventually_core_subset_bounds": {
+      "label": "Both signed estimates improve on every higher-count core subset; the full bounds remain open",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md",
+      "overview": true
     }
   }
 }

@@ -2,7 +2,116 @@
 
 The current arithmetic objective is the [direct cofinal joint floor](zeta-riesz-joint-floor.md)
 for `J+C`, with sufficient threshold `-79/1000-o(1)` on
-`1/2<u<=10001/20000`. Separate packet and complement decay is unnecessary.
+`1/2<u<=10001/20000`, initially for simple exposed zeros. Separate packet
+and complement decay is unnecessary. There is a separate multiplicity
+obligation: the actual source is `-m+m^2*c_ret(u)`, which is positive for
+`m>=2`. Exposure does not imply simplicity. The checked
+[`false_of_joint_cofinal_bounds`](../RiemannGaussian/ZetaRieszJointFloor.lean)
+handles all multiplicities if the same sum has both that cofinal floor
+and an independent cofinal ceiling `3/2+o(1)`. Both whole-sum inequalities
+remain open; the ceiling is an additional arithmetic target, not a
+consequence of the floor or the source limit.
+The [reflected-prime bounds](zeta-riesz-reflected-prime-bounds.md) now
+reduce both signed costs using the number of primes actually visible to
+the reflected divisor cutoff. For seven-prime labels, one reflected large
+prime improves `[-5,10]` to `[-4,6]`, and two give `[-3,3]`, in units
+`(log n/L)*log(minFac n)`. The general count formula also sharpens every
+higher count without increasing any previous charge. Three reflected
+large primes force exact coefficient zero throughout the literal core
+at every count at least five. The original integer, phase, factorial and
+allocation remain; no supply is spent. Both whole-sum bounds remain open.
+The [signed divisor-window estimates](zeta-riesz-signed-sperner.md) retain
+Mobius parity and the actual cutoff geometry. The six-prime coefficient
+capacities improve from `[-6,6]` to `[-3,4]` on the eventual original core,
+in units of `(log n/L)*log(minFac n)`. Relative to the old mean-prime
+allowance, the two phase orientations cost one half and two thirds, with
+the roles exchanged for the ceiling. Every favorable observation and all
+other counts remain in the same signed sum; no cofinal whole-sum bound
+follows yet.
+The [six-prime head payment](zeta-riesz-six-prime-head.md) now covers a
+fixed exponential threshold `p<=floor(exp(epsilon*N))`, with both
+coefficient signs and all radial boundaries paid. Retaining the minimum
+prime logarithm across five factors and proving literal fractional prime
+moments removes the earlier four logarithmic losses. The old
+count-3/4/positive-5 widths remain unchanged, one sixteenth of the same
+supply remains, and every prime in an unpaid six-prime label has
+`log p>epsilon*N`. The exponential head eventually includes the previous
+`N^2` head. This is an eventual component payment, not either whole-sum
+bound; the width and starting order are not numerical certificates.
+The [negative five-prime head payment](zeta-riesz-five-negative-head.md)
+now completes both coefficient signs of the five-prime exponential head.
+It costs another one thirty-second of the same supply, with a separate
+fixed width and every original boundary paid. The full lower and upper
+ledgers retain one thirty-second, favorable group observations and one
+signed rest. Every remaining nonzero five-prime coefficient has only
+prime factors with `log p>min(delta,zeta)*N`. The coarse explicit counting
+constant may force a very small width; no starting order or whole-sum
+floor/ceiling is certified.
+The [complementary-divisor bound](zeta-riesz-complement-window.md) now
+uses the reflected cutoff to improve higher even counts jointly. Opposite
+middle-rank divisor subsets cannot both survive; a half-layer occupancy
+bound combined with LYM gives checked intervals `[-15,13]`, `[-49,56]`
+and `[-210,186]` at counts eight, ten and twelve in least-prime units.
+The generic theorem reaches every higher even count on every subset of
+the original core, keeping both phase orientations, all favorable terms
+and every other count. It spends no supply and preserves the sharper
+six-prime estimate. The remaining signed whole-sum bounds stay open.
+The [logarithmic count-tail payment](zeta-riesz-log-count-tail.md) now
+pays all counts `omega(n)>=8*clog(2,N+1)` together. The existing complete
+second divisor moment gives an explicit `512*exp(4)/(N+1)^4` relative
+cost, uniform over heights and finite selections. Both signed comparisons
+spend another one sixty-fourth of the same supply and retain one
+sixty-fourth. The full high-count radial boundaries have a geometric
+source error, and every remaining squarefree label has fewer than the
+logarithmic number of factors. Earlier radial head payments remain;
+the separate complete low-count boundary results are preserved. This is
+a relative payment, not source-normalized decay of the tail alone, and
+neither whole-sum multiplicity target follows.
+The [intersecting-complement bound](zeta-riesz-intersecting-window.md)
+now reduces costs at every higher odd count on any subset of that rest.
+Two surviving divisor subsets cannot cover the cofactor universe, so
+Erdős–Ko–Rado bounds their complementary layer and LYM couples the ranks.
+At seven primes, retaining the singleton/triple exclusion halves the
+negative coefficient cost: the checked interval is `[-5,10]` instead
+of `[-10,10]`. The nine-prime interval becomes `[-35,27]`; the eleven-prime
+interval becomes `[-308/3,126]`, in the same least-prime units.
+Both original phase orientations and every favorable observation remain.
+No supply is spent, and these pointwise gains do not establish either
+whole-sum bound.
+The [seven-prime head payment](zeta-riesz-seven-prime-head.md) now adds an
+actual population bound. Retaining the minimum logarithm through six
+fractional prime sums gives a cost proportional to the square root of a
+fixed cutoff share. Both signed comparisons pay all seven-prime labels
+having any `log p<=theta*N`, for some `theta>0`, including the radial edges.
+The existing count-tail spending splits into 1/128 for each population;
+earlier head widths and the remaining 1/64 reserve survive. Every unpaid
+seven-prime label has all prime logarithms above `theta*N`. The explicit
+constants are coarse and force a very small guaranteed width; neither
+the starting order nor the supply constant has been numerically certified.
+The interior signed rest and both whole-sum multiplicity targets remain open.
+The [phase-density audit](zeta-riesz-phase-density-audit.md) now proves
+that opposite-phase pairing based only on local density accuracy can
+retain a nonzero source even after both original radial boundaries are
+paid. This is a smooth-error model, not a prime-sum estimate. It identifies
+the phase-correlated counting error that such an argument must control;
+it supplies neither of the open whole-sum bounds.
+The [additional owner credit](zeta-riesz-five-owner-credit.md) now improves
+both comparisons for the same literal five-prime family by `1/800` in
+angular units for cutoff bins inside `69/100..7/10`. Its 246 rational
+boxes lie above the old one-half owner cap and inside the existing family;
+their integral is added without spending any prime population twice.
+The relative upper calibration factor and the entire signed rest remain.
+The [central complete-period transfer](zeta-riesz-capacity-phase-payment.md#checked-central-payment-for-the-broader-triple-band)
+now spends this credit against the broad triple band and selected four-prime
+population. Its checked common credit `0.1309` exceeds the common debit
+`0.1261`; both lower and upper period comparisons retain margin
+`g*V0*h/500` and one signed complement. The five-prime certificate passed
+all 447 chunks and assembly, followed by the literal transfer and axiom
+audit. The [source-scale refinement](zeta-riesz-central-reserve.md) now
+retains an explicit credit `pi*u*exp(-1)/(24000*abs(y))*(2u)^N/(N+1)`
+in both signed comparisons. That credit grows; a finite whole source
+requires an opposing unbounded complement. Keep the actual unused supply
+and rest coupled. Neither whole-sum arithmetic bound has been proved.
 The [four-prime compensation inequality](zeta-riesz-four-prime-exact.md)
 pays a fixed balanced triple band and the original count-three/count-four
 exponential small-prime head using one actual supply with unused credit
@@ -16,9 +125,71 @@ including ordering ties and all integral conditions. The
 proves the exact Fubini identification without further loss. Its optional
 checked first-bin application gives a literal credit of `8529739/62500000`
 times the original favorable radial/phase factor. The adverse debit constant
-is `133421/1000000`; the constants leave more than two percent room, but the
-two phase factors still differ. Common-period aggregation, combined disjoint
-spending, the other seven bins and the whole-core floor remain open.
+is `133421/1000000`. The [complete-period payment](zeta-riesz-capacity-phase-payment.md)
+now combines their different phase factors and disjoint actual populations,
+including cosine-zero neighborhoods, and proves a strictly positive
+surplus in the first certified bin at every sufficiently large original
+dyadic order. The first and central bins are now checked; the other six
+bins and the whole-core floor remain open.
+The same note records upper estimates at the opposite phase: the full
+clipped positive-coefficient four-prime population has a calibration cost
+below 0.1%, and selected negative-coefficient five-prime cells provide an
+explicit negative credit. The whole five-prime angular population now
+combines with the four-prime ceiling over a complete original phase period:
+`eventually_exists_first_bin_upper_period` pays every eligible
+positive-coefficient four-prime label in that period, without an
+original-phase restriction. Favorable five-prime terms supply the negative
+credit; unspent terms remain in one signed complement. The quantitative
+margin is `m*V0*h/2000`, with `V0>0` the original period's radial minimum.
+Such a period exists on every sufficiently large original dyadic order.
+Its signed complement remains open. This does not yet give the
+whole-joint-sum ceiling needed for multiple zeros.
+The [three/four/five-prime payment](zeta-riesz-capacity-phase-payment.md#balanced-triples-paid-from-the-same-five-prime-credit)
+now adds every balanced triple with each prime share in
+`997/3000..1003/3000`, charging at most `1/10000` of the original radial
+and one-sided phase envelope. The same five-prime credit pays this debit
+alongside the four-prime population over a complete phase period, in both
+the lower and upper inequalities. The period margin is `g*V0*h/2000`,
+where `g` is the phase mesh count, not zero multiplicity. There is no
+double spending of the older four-prime compensation. Other triple shapes
+and the single signed complement still require estimates.
+The central-bin four-prime certificate and literal transfer give upper
+debit `121003/1000000` on every actual short window inside
+`1.999N..2.001N`, with the moving cutoff conditions discharged. Both
+central covers and the combined signed transfer are now checked.
+The [broad triple estimate](zeta-riesz-capacity-phase-payment.md#a-broader-triple-band-with-the-six-orderings-accounted-for)
+now covers every triple with prime shares in `0.31..0.35`, using a proved
+sixfold ordered-incidence saving. Its actual two-sided debit is at most
+`1/200` of the original local radial/phase envelope. Combined with the
+central four-prime certificate, this gives lower debit `125882/1000000`
+and upper debit `126003/1000000` on the actual central windows, each with
+one unchanged signed complement. The broader triple band contains the
+previous narrow one and replaces its charge; it is not another supply.
+The [positive five-prime head](zeta-riesz-five-positive-head.md) now costs
+one marked-prime logarithm instead of three. Two sufficiently small
+cofactor primes kill its positive part. Actual prime counting pays the
+entire surviving head with a prime at most `N^2`, in the existing radial
+selection, from the same supply used for the narrow triple band and the
+count-three/count-four heads. The compiled core inequality leaves one
+eighth of that supply, every favorable selected real part, and one exact
+signed complement. This replaces the older one-quarter leftover; it is
+not additional credit. The stronger `eventually_core_full_exponential_floor`
+now pays the full common exponential head of counts three/four and the
+positive five-prime class, including the radial and dominant-prime
+failures with a vanishing source-normalized error. Every prime of a
+surviving positive five-prime label exceeds `exp(delta*N)`. The shared
+width is fixed but may be smaller than an older separately chosen width.
+A signed-count continuum diagnostic records the substantial triple and
+higher-count sectors still outside this payment; it provides no arithmetic
+credit. The whole-sum floor and ceiling remain open.
+The [upper exponential-head comparison](zeta-riesz-head-ceiling.md) now
+addresses the extra obligation for multiple zeros. Actual positive-cosine
+windows provide negative four-prime supply that pays the same count-three,
+count-four and positive five-prime head classes, with every negative
+selected observation retained. The terminal core inequality leaves one
+eighth of that negative supply, the exact signed rest, and a vanishing
+boundary allowance. It does not bound that entire rest by `3/2`; the
+simple and multiple-zero numerical endgames both remain open.
 The older `-3/40` criterion
 and all unsuccessful transfer audits below remain valid; they are not the
 minimal current joint target.

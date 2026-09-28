@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "seed": 20260929,
+  "random_weight_samples_per_count": 240,
+  "model_only": true,
+  "prime_sum_certificate": false,
+  "description": "Exact rational finite differences; no prime realization, extremality or density transport.",
+  "rows": [
+    {
+      "prime_count_model": 7,
+      "old_coefficient_capacities": [
+        -10,
+        10
+      ],
+      "proved_new_coefficient_capacities": [
+        "-5",
+        "10"
+      ],
+      "model_observed_min": "-5",
+      "model_observed_max": "339/61",
+      "model_min_at": {
+        "weights": [
+          1,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "length_share": "27/40"
+      },
+      "model_max_at": {
+        "weights": [
+          122,
+          289,
+          311,
+          344,
+          363,
+          474,
+          908
+        ],
+        "length_share": "2/3"
+      },
+      "coefficient_units": "(log(n)/L)*log(minFac(n))"
+    },
+    {
+      "prime_count_model": 9,
+      "old_coefficient_capacities": [
+        -35,
+        35
+      ],
+      "proved_new_coefficient_capacities": [
+        "-35",
+        "27"
+      ],
+      "model_observed_min": "-175121/23000",
+      "model_observed_max": "21",
+      "model_min_at": {
+        "weights": [
+          230,
+          275,
+          323,
+          376,
+          381,
+          390,
+          479,
+          946,
+          991
+        ],
+        "length_share": "69/100"
+      },
+      "model_max_at": {
+        "weights": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "length_share": "2/3"
+      },
+      "coefficient_units": "(log(n)/L)*log(minFac(n))"
+    },
+    {
+      "prime_count_model": 11,
+      "old_coefficient_capacities": [
+        -126,
+        126
+      ],
+      "proved_new_coefficient_capacities": [
+        "-308/3",
+        "126"
+      ],
+      "model_observed_min": "-84",
+      "model_observed_max": "36",
+      "model_min_at": {
+        "weights": [
+          1,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "length_share": "2/3"
+      },
+      "model_max_at": {
+        "weights": [
+          1,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "length_share": "71/100"
+      },
+      "coefficient_units": "(log(n)/L)*log(minFac(n))"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "seed": 20260928,
+  "random_weight_samples_per_count": 240,
+  "model_only": true,
+  "prime_sum_certificate": false,
+  "description": "Exact subset arithmetic on positive integer logarithmic weights; no prime realization or density transport.",
+  "rows": [
+    {
+      "prime_count_model": 8,
+      "old_signed_capacities": [
+        -15,
+        20
+      ],
+      "proved_new_signed_capacities": [
+        "-15",
+        "13"
+      ],
+      "model_observed_min": "-15",
+      "model_observed_max": "439/93",
+      "model_min_at": {
+        "weights": [
+          19,
+          491,
+          568,
+          611,
+          614,
+          668,
+          706,
+          729
+        ],
+        "length_share": "2/3"
+      },
+      "model_max_at": {
+        "weights": [
+          93,
+          144,
+          165,
+          287,
+          315,
+          343,
+          781,
+          844
+        ],
+        "length_share": "69/100"
+      },
+      "coefficient_units": "(log(n)/L)*log(minFac(n))"
+    },
+    {
+      "prime_count_model": 10,
+      "old_signed_capacities": [
+        -70,
+        56
+      ],
+      "proved_new_signed_capacities": [
+        "-49",
+        "56"
+      ],
+      "model_observed_min": "-28",
+      "model_observed_max": "36",
+      "model_min_at": {
+        "weights": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "length_share": "7/10"
+      },
+      "model_max_at": {
+        "weights": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          300
+        ],
+        "length_share": "2/3"
+      },
+      "coefficient_units": "(log(n)/L)*log(minFac(n))"
+    },
+    {
+      "prime_count_model": 12,
+      "old_signed_capacities": [
+        -210,
+        252
+      ],
+      "proved_new_signed_capacities": [
+        "-210",
+        "186"
+      ],
+      "model_observed_min": "-185/3",
+      "model_observed_max": "120",
+      "model_min_at": {
+        "weights": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          300
+        ],
+        "length_share": "2/3"
+      },
+      "model_max_at": {
+        "weights": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "length_share": "2/3"
+      },
+      "coefficient_units": "(log(n)/L)*log(minFac(n))"
+    }
+  ]
+}

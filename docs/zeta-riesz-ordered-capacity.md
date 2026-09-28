@@ -5,11 +5,26 @@ carrier. Literal five-prime labels now pay one concrete interior
 four-prime, negative-cosine population and leave a proved positive surplus.
 Whole ordered-region arithmetic bounds now include their boundary costs.
 The exact certificate-domain comparison is proved, and the checked first
-bin gives a literal five-prime credit. Joint phase/spending aggregation,
-the remaining bins, the whole floor and zero exclusion remain open.
+bin gives a literal five-prime credit. The [complete-period payment](zeta-riesz-capacity-phase-payment.md)
+now combines the two populations with disjoint spending and full phase
+costs in that bin. The remaining bins, signed complement, whole floor
+and zero exclusion remain open. Opposite-phase component ceilings are
+also proved; the whole ceiling needed for multiple zeros remains open.
 The prior exponential-head payment and its signed complement remain
 unchanged; their supplies are not added to this payment without a combined
 disjoint ledger.
+The [extra owner-credit theorem](zeta-riesz-five-owner-credit.md) now adds
+`1/800` to the angular credit of the **same** five-prime family for cutoff
+bins inside `69/100..7/10`, with an explicit relative calibration factor
+for the upper comparison. Its checked cubes lie beyond the old one-half
+owner cap. They strengthen the integral bound, not a second overlapping
+prime supply; the complete signed complement remains open.
+The [central comparison](zeta-riesz-capacity-phase-payment.md#checked-central-payment-for-the-broader-triple-band)
+is now also checked: 85 four-prime chunks, 447 five-prime chunks, both
+assemblies, and the literal signed transfer. Owner-enhanced credit
+`1309/10000` pays debit `1261/10000`, including the broader triple band,
+over a complete phase period in both directions. The margin
+`g*V0*h/500` is a component comparison, not a whole-sum bound.
 
 ## Exact signed bounds
 
@@ -543,10 +558,11 @@ enumeration is needed. The eventual starting order remains unevaluated.
 The comparison with the optional certificate's two-dimensional pair integral
 is now proved in the next two sections, and the checked first-bin application
 substitutes `34261/250000`. Both errors above multiply the original
-radial/phase factor; they are not small source-normalized constants. Common
-phase-period aggregation, the other seven bins and one combined disjoint
-spending ledger remain open, as do other signs/counts and the independent
-whole joint floor. No zero exclusion follows from this slice.
+radial/phase factor; they are not small source-normalized constants.
+Complete-period aggregation with one disjoint ledger is now checked for
+the first and central bins. The other six bins, unselected signs/counts
+and the independent whole joint floor and ceiling remain open. No zero
+exclusion follows from these comparisons.
 
 ## The six incidences fit the literal supply
 
@@ -633,12 +649,16 @@ Lean also checks the remaining room between the literal constants:
 =\frac{96601}{250000000}>0.
 ```
 
-This compares **constants**, not yet the two arithmetic populations: their
-favorable factor `F` and adverse factor `E` differ. They still require
-common phase-period aggregation and one disjoint spending ledger, including
-any previously used interior supply. The other seven bins and all unselected
-sign/count sectors remain open. The result is not the source-normalized
-`-79/1000-o(1)` floor and gives no zero exclusion.
+This constant comparison is now promoted to a literal complete-period
+payment in
+[`CheckRieszJointCapacityTransfer.lean`](../scripts/CheckRieszJointCapacityTransfer.lean).
+Its `eventually_exists_first_bin_payment` pays the different factors `F`
+and `E` together, with one disjoint union and one unchanged signed
+complement. See the [exact statement and scope](zeta-riesz-capacity-phase-payment.md).
+Previously spent interior supply is not added a second time. The other
+six bins and all unselected sign/count sectors remain open; the central
+bin's subsequent comparison is recorded above. This is not
+the source-normalized `-79/1000-o(1)` whole floor and gives no zero exclusion.
 
 The optional application prints its terminal axiom dependencies. Only
 `propext`, `Classical.choice` and `Quot.sound` occur. Neither exhaustive
@@ -668,7 +688,8 @@ a worst supply/debit ratio around **1.0339**, after the interval and log
 approximants. These are floating-point evaluations of proposed enclosures,
 **not certified integral bounds** for the complete eight-bin comparison.
 The first-bin pair of complete Lean covers now certifies that bin's
-angular surplus. The other seven bins remain unverified. The calculation
+angular surplus, and the central bin now has its own checked covers and
+literal transfer. The other six bins remain unverified. The calculation
 alone does not prove a joint prime-sum floor: the adverse whole-domain
 transfer and favorable ordered-region transfer are now proved, including
 their boundary costs and the exact favorable certificate-domain comparison.
@@ -680,8 +701,8 @@ bins. This is a candidate for reducing certificate cost; it is not a second
 proved surplus. The precise rational logarithm inequalities are already
 proved, but their complete numerical use and angular cover remain unchecked.
 
-The remaining proof must finish the other numerical bins and aggregate
-the two arithmetic bounds on common negative-cosine arcs. Both cell
+The remaining proof must finish the other numerical bins and extend the
+proved first-bin complete-period payment. Both cell
 transfers, their finite-family aggregation and their complete ordered-region
 boundary budgets are proved, as is the concrete interior payment above.
 Those positive supplies must be spent together in one disjoint ledger.
@@ -714,6 +735,7 @@ angular surplus without rerunning the exhaustive covers:
 lake env bash -c 'LEAN_PATH="$PWD/.lake/riesz-four-capacity-cover:$LEAN_PATH" lean -DwarningAsError=true scripts/CheckRieszFourCapacityTransfer.lean'
 lake env bash -c 'LEAN_PATH="$PWD/.lake/riesz-five-capacity-cover:$LEAN_PATH" lean -DwarningAsError=true scripts/CheckRieszFiveCapacityTransfer.lean'
 lake env bash -c 'LEAN_PATH="$PWD/.lake/riesz-four-capacity-cover:$PWD/.lake/riesz-five-capacity-cover:$LEAN_PATH" lean -DwarningAsError=true scripts/CheckRieszCapacitySurplus.lean'
+lake env bash -c 'LEAN_PATH="$PWD/.lake/riesz-four-capacity-cover:$PWD/.lake/riesz-five-capacity-cover:$LEAN_PATH" lean -DwarningAsError=true scripts/CheckRieszJointCapacityTransfer.lean'
 ```
 
 Use the pinned `ELAN_HOME` and `--lake` path if `lake` is not on `PATH`.

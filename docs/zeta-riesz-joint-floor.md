@@ -1,18 +1,26 @@
 # The direct joint floor is sufficient
 
-The latest component estimate is
-[`ZetaRieszSmallPrimeCompensation.eventually_compensated_core_floor`](zeta-riesz-small-prime-compensation.md):
-one actual positive four-prime supply pays both a fixed balanced triple
-band and the entire three-prime head containing a prime at most `N^2`.
-Both positive triple credits, one quarter of that supply and the signed
-complement remain, with only a geometric radial-edge error. The complement
-also has the exact four- and five-prime debit refinements. The numerical
-joint floor stated below remains open.
+The latest [central source-scale comparison](zeta-riesz-central-reserve.md)
+gives an explicit growing signed credit for a literal triple/four/five-prime
+selection, in both lower and upper directions. Its opposing signed
+complement remains; under a finite whole source it is unbounded in the
+opposite direction. The earlier exponential-head payments and all exact
+coefficient refinements remain available, without double spending their
+supplies. The numerical whole-joint-sum floor and ceiling below remain open.
 
-The endgame does not require separate decay of the retained packet and its
-complement. It requires a lower bound for their signed sum at arbitrarily
-late indices. `ZetaRieszJointFloor` checks this for the existing literal
-expressions, without introducing a new carrier.
+The [phase-density audit](zeta-riesz-phase-density-audit.md) now checks why
+opposite-phase pairing cannot be justified by local count accuracy alone:
+an exponentially small real density error can retain any fixed source
+inside the same radial core. It does not model the literal prime sum or
+pay another arithmetic component. Its phase-correlated error must be
+controlled before applying such a comparison to either endgame bound.
+
+The simple-zero endgame does not require separate decay of the retained
+packet and its complement. It requires a lower bound for their signed sum
+at arbitrarily late indices. Multiple zeros have the opposite source sign
+and need a further argument; the checked two-sided criterion below uses an
+upper bound for the same sum. `ZetaRieszJointFloor` states both obligations
+for the existing literal expressions, without introducing a new carrier.
 
 Use the original dyadic orders `N_j` and count thresholds `K_j`. For this
 note only, abbreviate
@@ -57,6 +65,13 @@ u^{N_j+1}(J_j+C_j)\longrightarrow -1+c_{\rm ret}(u),\qquad
 c_{\rm ret}(u)=\frac{\log(32/13)}{-2u\log u}-\log(19/13).
 \]
 
+Simplicity is a substantive restriction here. The actual theorem
+`tendsto_joint_exact_source` retains arbitrary analytic multiplicity `m`
+and gives the source `-m + m^2*c_ret(u)`. The exposed-zero selection theorem
+isolates a zero location; it does not show `m=1`, even if that location is
+the only zero in the exposed disk. No theorem currently supplies a simple
+exposed counterexample whenever RH fails.
+
 On `1/2 <= u <= 10001/20000`, the new rational estimate
 `retainedCost_lt_restricted` proves `c_ret(u)<921/1000`. Thus the sufficient
 arithmetic target is only
@@ -70,7 +85,7 @@ arithmetic target is only
 \]
 
 `false_of_joint_cofinal_floor` proves the contradiction **conditional on
-this inequality**. An eventual floor, positivity, decay to zero and bounds
+this inequality and simplicity**. An eventual floor, positivity, decay to zero and bounds
 on either component separately would all be stronger than necessary.
 The allowance `79/1000` is also larger than the previous sufficient
 `3/40`, reducing the required accuracy of a joint estimate. No assumption
@@ -80,6 +95,63 @@ For orientation, direct high-precision evaluation gives source values
 approximately `-0.07992934` at `u=1/2` and `-0.07987180` at `u=0.50005`.
 These endpoint diagnostics do not establish a uniform bound; the Lean
 rational inequalities supply that bound over the entire interval.
+
+### Multiplicity audit and an unchanged-carrier repair
+
+`retainedCost_gt_nine_tenths` now proves the complementary uniform bound
+`9/10 < c_ret(u)`. Together with the existing upper bound, Lean proves
+that the source is below `-79/1000` for `m=1`, but above `3/2` for every
+`m>=2` (`multiple_source_gt_three_halves`). In particular, the present
+negative floor is compatible with every multiple-zero source. This is
+an obstruction to that floor alone, not a contradiction or a failure of
+the multiplicity-preserving source theorem.
+
+The same literal joint sum can handle all multiplicities if it also has
+an independent upper bound. `false_of_joint_cofinal_bounds` checks the
+sufficient pair of arithmetic targets
+
+\[
+-\frac{79}{1000}-\varepsilon_j
+\le \operatorname{Re}\bigl(u^{N_j+1}(J_j+C_j)\bigr),
+\qquad
+\operatorname{Re}\bigl(u^{N_j+1}(J_j+C_j)\bigr)
+\le \frac32+\eta_j,
+\qquad \varepsilon_j,\eta_j\to0.
+\]
+
+Each inequality need only hold cofinally; their subsequences may differ.
+The floor excludes `m=1`, and the ceiling excludes `m>=2`. Neither
+arithmetic bound has been established for the whole sum. This repairs the
+scope of the *conditional endgame* without asserting its premises, defining
+a new carrier, discarding a sign, or assuming global simplicity.
+
+The [complete-period upper payment](zeta-riesz-capacity-phase-payment.md#upper-payment-over-a-complete-period)
+is actual arithmetic progress toward the ceiling: selected five-prime
+credit pays the entire eligible positive-coefficient four-prime population
+over one complete period at every sufficiently large dyadic order. The
+estimate retains the original signed complement and does not bound it.
+Neither this payment nor the corresponding lower payment establishes
+either whole-sum inequality above.
+The subsequent [joint three/four/five payment](zeta-riesz-capacity-phase-payment.md#balanced-triples-paid-from-the-same-five-prime-credit)
+uses the same five-prime credit to pay all selected four-prime terms and
+every balanced triple with prime shares in `997/3000..1003/3000` throughout
+a complete phase period. This is checked in both directions, with one
+signed complement in each case; the remaining triple shapes and other
+sectors are still open. It does not presume or prove simplicity.
+The subsequent [central comparison](zeta-riesz-capacity-phase-payment.md#checked-central-payment-for-the-broader-triple-band)
+enlarges the paid triple band to `31/100..7/20` and proves both complete-period
+inequalities with common credit `1309/10000`, debit `1261/10000`, and margin
+`g*V0*h/500`. Its five-prime cover and literal transfer are checked. The
+same whole-sum floor and ceiling above remain open because the remaining
+signed complement has not acquired either required bound.
+
+The existing Gaussian theorem `simple_of_near_edge` supplies simplicity
+only in its explicit height-dependent boundary layer, not throughout this
+fixed candidate strip. The upstream `normalizedAdaptiveSmooth` carrier
+also has a multiplicity-robust `-m` source and a sufficient floor above
+`-1`; its independent floor is likewise open. Those are alternative
+routes, not reasons to erase the current multiplicity obligation. Extending
+any restricted exclusion to the full RH range remains a separate task.
 
 The independent arithmetic floor remains open. The new theorem transfers
 and sharpens its sufficient threshold; it does not control more of the
@@ -185,3 +257,71 @@ than the previous clipped allowance. The compensated-core inequality keeps
 the paid triple band, half the supply and all other signed sectors.
 Coefficient slack is removed on this sector; its weighted population and
 the whole joint numerical floor remain open.
+
+The [positive-head payment](zeta-riesz-five-positive-head.md) now bounds
+that coefficient by one marked-prime logarithm and proves its positive
+part vanishes when two small cofactor logs fit below the deletion cutoff.
+Actual counting pays the surviving positive five-prime head with a prime
+at most `N^2` throughout the existing radial selection, alongside the
+original narrow triple band and count-three/count-four heads. One eighth
+of their single supply remains. The new `eventually_core_joint_floor`
+keeps all favorable selected parts and the full signed complementary
+carrier. It replaces the earlier spending ledger; neither the complete
+rest's floor nor its multiple-zero ceiling has been proved.
+
+`ZetaRieszFivePositiveHead.eventually_core_full_exponential_floor` now
+extends that same payment to a fixed common exponential small-prime head
+and pays the radial and dominant-prime omissions with the existing
+vanishing allowance. Its exact rest has no surviving positive five-prime
+label containing a prime below the common exponential threshold. This
+still leaves other triple shapes, the unselected five-prime sign, higher
+counts and all remaining signed terms; their combined one-sided numerical
+bound has not been established.
+
+The [upper head comparison](zeta-riesz-head-ceiling.md) now develops the
+additional multiple-zero obligation arithmetically. It proves negative
+four-prime supply at the original positive-cosine phase and pays the same
+exponential head classes from above, including their boundary errors.
+The resulting `eventually_core_full_exponential_ceiling` keeps one exact
+signed rest and one eighth of the negative supply. It is not yet the
+independent whole-sum numerical ceiling required by
+`false_of_joint_cofinal_bounds`.
+
+The [six-prime head payment](zeta-riesz-six-prime-head.md) extends both
+comparisons to the entire six-prime population containing a prime at most
+`N^2`. Both coefficient signs are paid, including radial boundary labels.
+The terminal `eventually_core_full_floor` and `...full_ceiling` retain one
+sixteenth of their respective original supply, all favorable selected
+observations and one exact signed rest. They replace the previous spending
+ledger; they do not add a second supply or prove either whole-sum target.
+Every prime in the remaining six-prime population exceeds `N^2`.
+
+The same [six-prime payment](zeta-riesz-six-prime-head.md#keep-the-minimum-logarithm-before-summing)
+now reaches a fixed exponential head. The minimum logarithm is retained
+across all five cofactor factors before using literal fractional prime
+mass bounds. `ZetaRieszSixPrimeExponentialHead.eventually_core_full_floor`
+and its ceiling counterpart pay every label with a prime
+`p<=floor(exp(epsilon*N))`, including boundaries. Previous head widths
+are retained; the same supply still leaves one sixteenth. Every prime
+of an unpaid six-prime label has `log p>epsilon*N`. Neither independent
+whole-sum endgame bound follows from this component payment.
+
+The [negative five-prime head payment](zeta-riesz-five-negative-head.md)
+now adds the previously unpaid coefficient sign. A minimum-prime fractional
+bound pays its fixed exponential head from another one thirty-second of
+the SAME supply, retaining all old payments and one thirty-second unused.
+`ZetaRieszFiveNegativeHead.eventually_core_full_floor` and its ceiling
+counterpart include all original boundary failures and one exact signed
+rest. Both five-prime signs now have only exponentially large factors in
+the unpaid nonzero population. These results have no zero or simplicity
+assumption. The remaining signed populations must still satisfy the two
+independent whole-sum bounds; the multiplicity issue is not erased.
+
+The [complementary-divisor refinement](zeta-riesz-complement-window.md)
+now sharpens the higher even-count costs on every subset of this original
+signed rest. At the reflected one-third cutoff, a middle-rank subset and
+its complement cannot both survive. The resulting general LYM bound gives
+literal coefficient intervals `[-15,13]` at eight primes, `[-49,56]` at
+ten and `[-210,186]` at twelve, in least-prime units. Both original cosine
+orientations, all favorable observations and all other counts remain.
+No new supply is spent and neither cofinal numerical endgame bound follows.

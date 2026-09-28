@@ -1,0 +1,689 @@
+{
+  "schema": 1,
+  "seed": 20260928,
+  "random_weight_samples_per_count": 240,
+  "model_only": true,
+  "prime_sum_certificate": false,
+  "coefficient_units": "(log(n)/L)*log(minFac(n))",
+  "limitations": [
+    "Exact rational model weights are not actual prime logarithms.",
+    "Sampled extrema are not certified extrema.",
+    "No density, phase, or source-normalized mass is transported.",
+    "The complete signed rest is not bounded by this probe."
+  ],
+  "rows": [
+    {
+      "prime_count_model": 7,
+      "reflected_large_count": 0,
+      "previous_capacities": [
+        -5,
+        10
+      ],
+      "samples": 644,
+      "lower": "-5",
+      "upper": "4",
+      "lower_at": {
+        "weights": [
+          24,
+          764,
+          806,
+          832,
+          910,
+          951,
+          965
+        ],
+        "reflected_cutoff_share": "29/100"
+      },
+      "upper_at": {
+        "weights": [
+          34,
+          325,
+          334,
+          760,
+          878,
+          893,
+          928
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "proved_capacities": [
+        -5,
+        10
+      ]
+    },
+    {
+      "prime_count_model": 7,
+      "reflected_large_count": 1,
+      "previous_capacities": [
+        -5,
+        10
+      ],
+      "samples": 75,
+      "lower": "-2",
+      "upper": "6",
+      "lower_at": {
+        "weights": [
+          38,
+          204,
+          226,
+          313,
+          324,
+          800,
+          937
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "upper_at": {
+        "weights": [
+          1,
+          10,
+          10,
+          10,
+          10,
+          10,
+          40
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "proved_capacities": [
+        -4,
+        6
+      ]
+    },
+    {
+      "prime_count_model": 7,
+      "reflected_large_count": 2,
+      "previous_capacities": [
+        -5,
+        10
+      ],
+      "samples": 11,
+      "lower": "-16/25",
+      "upper": "2231/2550",
+      "lower_at": {
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          40,
+          41,
+          42
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "upper_at": {
+        "weights": [
+          51,
+          56,
+          93,
+          293,
+          439,
+          821,
+          925
+        ],
+        "reflected_cutoff_share": "29/100"
+      },
+      "proved_capacities": [
+        -3,
+        3
+      ]
+    },
+    {
+      "prime_count_model": 7,
+      "reflected_large_count": 3,
+      "previous_capacities": [
+        -5,
+        10
+      ],
+      "samples": 2,
+      "lower": "0",
+      "upper": "0",
+      "lower_at": {
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          40,
+          41,
+          42
+        ],
+        "reflected_cutoff_share": "307/1000"
+      },
+      "upper_at": {
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          40,
+          41,
+          42
+        ],
+        "reflected_cutoff_share": "307/1000"
+      },
+      "proved_capacities": [
+        0,
+        0
+      ]
+    },
+    {
+      "prime_count_model": 8,
+      "reflected_large_count": 0,
+      "previous_capacities": [
+        -15,
+        13
+      ],
+      "samples": 688,
+      "lower": "-15",
+      "upper": "108851/23250",
+      "lower_at": {
+        "weights": [
+          97,
+          731,
+          745,
+          788,
+          827,
+          828,
+          843,
+          876
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "upper_at": {
+        "weights": [
+          93,
+          144,
+          165,
+          287,
+          315,
+          343,
+          781,
+          844
+        ],
+        "reflected_cutoff_share": "307/1000"
+      },
+      "proved_capacities": [
+        -15,
+        13
+      ]
+    },
+    {
+      "prime_count_model": 8,
+      "reflected_large_count": 1,
+      "previous_capacities": [
+        -15,
+        13
+      ],
+      "samples": 36,
+      "lower": "-10",
+      "upper": "10",
+      "lower_at": {
+        "weights": [
+          1,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          40
+        ],
+        "reflected_cutoff_share": "29/100"
+      },
+      "upper_at": {
+        "weights": [
+          1,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          40
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "proved_capacities": [
+        -10,
+        10
+      ]
+    },
+    {
+      "prime_count_model": 8,
+      "reflected_large_count": 2,
+      "previous_capacities": [
+        -15,
+        13
+      ],
+      "samples": 6,
+      "lower": "-1",
+      "upper": "24/25",
+      "lower_at": {
+        "weights": [
+          1,
+          10,
+          10,
+          10,
+          10,
+          10,
+          50,
+          51
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "upper_at": {
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          40,
+          41,
+          42
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "proved_capacities": [
+        -6,
+        4
+      ]
+    },
+    {
+      "prime_count_model": 8,
+      "reflected_large_count": 3,
+      "previous_capacities": [
+        -15,
+        13
+      ],
+      "samples": 2,
+      "lower": "0",
+      "upper": "0",
+      "lower_at": {
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          40,
+          41,
+          42
+        ],
+        "reflected_cutoff_share": "307/1000"
+      },
+      "upper_at": {
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          40,
+          41,
+          42
+        ],
+        "reflected_cutoff_share": "307/1000"
+      },
+      "proved_capacities": [
+        0,
+        0
+      ]
+    },
+    {
+      "prime_count_model": 9,
+      "reflected_large_count": 0,
+      "previous_capacities": [
+        -35,
+        27
+      ],
+      "samples": 704,
+      "lower": "-9079/1375",
+      "upper": "21",
+      "lower_at": {
+        "weights": [
+          132,
+          231,
+          281,
+          292,
+          333,
+          390,
+          520,
+          946,
+          971
+        ],
+        "reflected_cutoff_share": "307/1000"
+      },
+      "upper_at": {
+        "weights": [
+          1,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "proved_capacities": [
+        -35,
+        27
+      ]
+    },
+    {
+      "prime_count_model": 9,
+      "reflected_large_count": 1,
+      "previous_capacities": [
+        -35,
+        27
+      ],
+      "samples": 20,
+      "lower": "-20",
+      "upper": "377/42",
+      "lower_at": {
+        "weights": [
+          1,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          40
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "upper_at": {
+        "weights": [
+          42,
+          135,
+          147,
+          167,
+          187,
+          195,
+          244,
+          588,
+          984
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "proved_capacities": [
+        -20,
+        15
+      ]
+    },
+    {
+      "prime_count_model": 9,
+      "reflected_large_count": 2,
+      "previous_capacities": [
+        -35,
+        27
+      ],
+      "samples": 6,
+      "lower": "-271/400",
+      "upper": "5",
+      "lower_at": {
+        "weights": [
+          8,
+          25,
+          29,
+          51,
+          81,
+          130,
+          619,
+          818,
+          841
+        ],
+        "reflected_cutoff_share": "29/100"
+      },
+      "upper_at": {
+        "weights": [
+          1,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          50,
+          51
+        ],
+        "reflected_cutoff_share": "307/1000"
+      },
+      "proved_capacities": [
+        -10,
+        10
+      ]
+    },
+    {
+      "prime_count_model": 9,
+      "reflected_large_count": 3,
+      "previous_capacities": [
+        -35,
+        27
+      ],
+      "samples": 2,
+      "lower": "0",
+      "upper": "0",
+      "lower_at": {
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          40,
+          41,
+          42
+        ],
+        "reflected_cutoff_share": "307/1000"
+      },
+      "upper_at": {
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          40,
+          41,
+          42
+        ],
+        "reflected_cutoff_share": "307/1000"
+      },
+      "proved_capacities": [
+        0,
+        0
+      ]
+    },
+    {
+      "prime_count_model": 10,
+      "reflected_large_count": 0,
+      "previous_capacities": [
+        -49,
+        56
+      ],
+      "samples": 722,
+      "lower": "-28",
+      "upper": "572/43",
+      "lower_at": {
+        "weights": [
+          1,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "upper_at": {
+        "weights": [
+          129,
+          245,
+          260,
+          343,
+          349,
+          370,
+          751,
+          774,
+          858,
+          971
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "proved_capacities": [
+        -49,
+        56
+      ]
+    },
+    {
+      "prime_count_model": 10,
+      "reflected_large_count": 1,
+      "previous_capacities": [
+        -49,
+        56
+      ],
+      "samples": 7,
+      "lower": "-168341/21600",
+      "upper": "35",
+      "lower_at": {
+        "weights": [
+          108,
+          110,
+          122,
+          149,
+          183,
+          271,
+          274,
+          284,
+          618,
+          986
+        ],
+        "reflected_cutoff_share": "307/1000"
+      },
+      "upper_at": {
+        "weights": [
+          1,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          40
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "proved_capacities": [
+        -35,
+        35
+      ]
+    },
+    {
+      "prime_count_model": 10,
+      "reflected_large_count": 2,
+      "previous_capacities": [
+        -49,
+        56
+      ],
+      "samples": 1,
+      "lower": "-15",
+      "upper": "-15",
+      "lower_at": {
+        "weights": [
+          1,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          50,
+          51
+        ],
+        "reflected_cutoff_share": "29/100"
+      },
+      "upper_at": {
+        "weights": [
+          1,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          50,
+          51
+        ],
+        "reflected_cutoff_share": "29/100"
+      },
+      "proved_capacities": [
+        -15,
+        20
+      ]
+    },
+    {
+      "prime_count_model": 10,
+      "reflected_large_count": 3,
+      "previous_capacities": [
+        -49,
+        56
+      ],
+      "samples": 2,
+      "lower": "0",
+      "upper": "0",
+      "lower_at": {
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          40,
+          41,
+          42
+        ],
+        "reflected_cutoff_share": "307/1000"
+      },
+      "upper_at": {
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          40,
+          41,
+          42
+        ],
+        "reflected_cutoff_share": "307/1000"
+      },
+      "proved_capacities": [
+        0,
+        0
+      ]
+    }
+  ],
+  "source_sha256": "8aa682fbc04a24687e8afb8f1f73601ac53a9a20edb2bb6f363e741b5964ecef"
+}

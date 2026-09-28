@@ -1,0 +1,52 @@
+{
+  "scope": "uncertified continuum diagnostic; the Lean literal bound is independent",
+  "rows": [
+    {
+      "cutoff_ratio": 0.69,
+      "share_low": 0.3323333333333333,
+      "share_high": 0.3343333333333333,
+      "model_coefficient_per_total_log": 6.065240135984211e-06
+    },
+    {
+      "cutoff_ratio": 0.69,
+      "share_low": 0.31,
+      "share_high": 0.35,
+      "model_coefficient_per_total_log": 0.0022272043501231557
+    },
+    {
+      "cutoff_ratio": 0.693,
+      "share_low": 0.3323333333333333,
+      "share_high": 0.3343333333333333,
+      "model_coefficient_per_total_log": 5.980541907580577e-06
+    },
+    {
+      "cutoff_ratio": 0.693,
+      "share_low": 0.31,
+      "share_high": 0.35,
+      "model_coefficient_per_total_log": 0.0021961024879513483
+    },
+    {
+      "cutoff_ratio": 0.694,
+      "share_low": 0.3323333333333333,
+      "share_high": 0.3343333333333333,
+      "model_coefficient_per_total_log": 5.952471889521736e-06
+    },
+    {
+      "cutoff_ratio": 0.694,
+      "share_low": 0.31,
+      "share_high": 0.35,
+      "model_coefficient_per_total_log": 0.0021857949543785584
+    }
+  ],
+  "rational_mass_budget": "11323/1200000",
+  "rational_coefficient_budget": "192491/40000000",
+  "conditional_central_credit": "2593/20000",
+  "conditional_period_margin": "1105281990747/625000000000000",
+  "limitations": [
+    "Quadrature errors are not certified; these rows are not arithmetic prime-sum bounds.",
+    "No radial, original-phase, allocation, or source-scale transport is inferred.",
+    "The proposed central credit is not proved by this script or its rational comparisons.",
+    "The broad band does not include all triple shapes or any other prime-count class."
+  ],
+  "source_sha256": "c18bcce15e4fac970df74f1c593414b36d089eed5edd0432896db1c37375139e"
+}

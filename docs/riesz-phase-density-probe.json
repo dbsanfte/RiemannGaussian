@@ -1,0 +1,161 @@
+{
+  "scope": "uncertified smooth-density error model; no actual primes or Riesz masks",
+  "radius": "10001/20000",
+  "height": 54,
+  "radial_window": "39N/20 < T <= 203N/100",
+  "error": "a exp(-(u-1/2)T) cos(yT)",
+  "rows": [
+    {
+      "N": 256,
+      "gamma_mass_in_core": 0.25018631978137507,
+      "doubled_frequency_alias_re": -1.604405812622837e-05,
+      "doubled_frequency_alias_im": 8.614296436294657e-06,
+      "finite_series_omitted_bound_diagnostic": 3.039207889405035e-70,
+      "negative_amplitude_minus_one_fifth": {
+        "normalized_re": -0.025017027572324883,
+        "normalized_im": -8.614296436294657e-07,
+        "proved_limit": "-1/10"
+      },
+      "positive_amplitude_four": {
+        "normalized_re": 0.5003405514464977,
+        "normalized_im": 1.7228592872589315e-05,
+        "proved_limit": "2"
+      },
+      "lean_exterior_bound_per_abs_amplitude": 157.4392137078663
+    },
+    {
+      "N": 640,
+      "gamma_mass_in_core": 0.3842259464016017,
+      "doubled_frequency_alias_re": -2.6162843209217477e-05,
+      "doubled_frequency_alias_im": 3.6215391892658224e-06,
+      "finite_series_omitted_bound_diagnostic": 4.127968084519662e-70,
+      "negative_amplitude_minus_one_fifth": {
+        "normalized_re": -0.03841997835583925,
+        "normalized_im": -3.6215391892658223e-07,
+        "proved_limit": "-1/10"
+      },
+      "positive_amplitude_four": {
+        "normalized_re": 0.7683995671167849,
+        "normalized_im": 7.243078378531645e-06,
+        "proved_limit": "2"
+      },
+      "lean_exterior_bound_per_abs_amplitude": 62.682775318108625
+    },
+    {
+      "N": 1536,
+      "gamma_mass_in_core": 0.5579784641504296,
+      "doubled_frequency_alias_re": -5.095776594371683e-06,
+      "doubled_frequency_alias_im": 3.245532241146617e-05,
+      "finite_series_omitted_bound_diagnostic": 2.933410728704495e-70,
+      "negative_amplitude_minus_one_fifth": {
+        "normalized_re": -0.05579733683738353,
+        "normalized_im": -3.245532241146617e-06,
+        "proved_limit": "-1/10"
+      },
+      "positive_amplitude_four": {
+        "normalized_re": 1.1159467367476705,
+        "normalized_im": 6.491064482293234e-05,
+        "proved_limit": "2"
+      },
+      "lean_exterior_bound_per_abs_amplitude": 26.070360753951157
+    },
+    {
+      "N": 4096,
+      "gamma_mass_in_core": 0.7764028768453384,
+      "doubled_frequency_alias_re": 2.4410546250477497e-05,
+      "doubled_frequency_alias_im": -5.929734545813743e-06,
+      "finite_series_omitted_bound_diagnostic": 1.1182699721721817e-70,
+      "negative_amplitude_minus_one_fifth": {
+        "normalized_re": -0.07764272873915888,
+        "normalized_im": 5.929734545813743e-07,
+        "proved_limit": "-1/10"
+      },
+      "positive_amplitude_four": {
+        "normalized_re": 1.5528545747831777,
+        "normalized_im": -1.1859469091627487e-05,
+        "proved_limit": "2"
+      },
+      "lean_exterior_bound_per_abs_amplitude": 9.76843958598044
+    },
+    {
+      "N": 8192,
+      "gamma_mass_in_core": 0.9006245150988909,
+      "doubled_frequency_alias_re": 5.4550166493693e-07,
+      "doubled_frequency_alias_im": -7.655684745588988e-06,
+      "finite_series_omitted_bound_diagnostic": 3.5178599112036165e-71,
+      "negative_amplitude_minus_one_fifth": {
+        "normalized_re": -0.09006250606005559,
+        "normalized_im": 7.655684745588988e-07,
+        "proved_limit": "-1/10"
+      },
+      "positive_amplitude_four": {
+        "normalized_re": 1.8012501212011116,
+        "normalized_im": -1.5311369491177976e-05,
+        "proved_limit": "2"
+      },
+      "lean_exterior_bound_per_abs_amplitude": 4.883027938477533
+    },
+    {
+      "N": 32768,
+      "gamma_mass_in_core": 0.9966970196083567,
+      "doubled_frequency_alias_re": 1.1456930156308927e-07,
+      "doubled_frequency_alias_im": 2.2493829453240685e-07,
+      "finite_series_omitted_bound_diagnostic": 7.168143592742314e-73,
+      "negative_amplitude_minus_one_fifth": {
+        "normalized_re": -0.09966971341776583,
+        "normalized_im": -2.2493829453240684e-08,
+        "proved_limit": "-1/10"
+      },
+      "positive_amplitude_four": {
+        "normalized_re": 1.9933942683553165,
+        "normalized_im": 4.498765890648137e-07,
+        "proved_limit": "2"
+      },
+      "lean_exterior_bound_per_abs_amplitude": 1.2205335118982545
+    },
+    {
+      "N": 131072,
+      "gamma_mass_in_core": 0.9999999730906863,
+      "doubled_frequency_alias_re": 1.8216400900856187e-12,
+      "doubled_frequency_alias_im": -5.805607351663065e-13,
+      "finite_series_omitted_bound_diagnostic": 5.450068574057103e-78,
+      "negative_amplitude_minus_one_fifth": {
+        "normalized_re": -0.0999999973092508,
+        "normalized_im": 5.805607351663065e-14,
+        "proved_limit": "-1/10"
+      },
+      "positive_amplitude_four": {
+        "normalized_re": 1.999999946185016,
+        "normalized_im": -1.161121470332613e-12,
+        "proved_limit": "2"
+      },
+      "lean_exterior_bound_per_abs_amplitude": 0.3051194109294931
+    },
+    {
+      "N": 1048576,
+      "gamma_mass_in_core": 1.0,
+      "doubled_frequency_alias_re": 4.3718556498417765e-58,
+      "doubled_frequency_alias_im": -5.485397052601571e-58,
+      "finite_series_omitted_bound_diagnostic": 2.0042196212575872e-123,
+      "negative_amplitude_minus_one_fifth": {
+        "normalized_re": -0.1,
+        "normalized_im": 5.485397052601571e-59,
+        "proved_limit": "-1/10"
+      },
+      "positive_amplitude_four": {
+        "normalized_re": 2.0,
+        "normalized_im": -1.0970794105203142e-57,
+        "proved_limit": "2"
+      },
+      "lean_exterior_bound_per_abs_amplitude": 0.03813941715100177
+    }
+  ],
+  "limitations": [
+    "The exact error and its core-window limit are proved in Lean independently.",
+    "No prime factors, incidence weights, allocation or sieve coefficients are modeled.",
+    "Values are for the signed error, not for the entire positive density.",
+    "This is not a proof or counterexample to either arithmetic endgame inequality.",
+    "SciPy gamma values and mpmath truncation estimates are not certified intervals."
+  ],
+  "source_sha256": "f818ee3f8157505d0141130cf8604901c3c9eb0e5b56350e95ebe218068574ed"
+}

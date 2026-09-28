@@ -245,6 +245,55 @@ theorem eventually_five_cell_lower {h α β : ℝ}
   convert hfactor using 1 <;> dsimp [B,Z,V,C,vmax] <;> ring
 
 
+/-- The complete five-prime cell has nonpositive arithmetic coefficients
+before observing any phase. The same literal population can therefore
+provide a ceiling when its phase is reversed. -/
+theorem cell_products_coefficient_nonpos {lo H : Fin 4 → ℝ} {L t h : ℝ}
+    (ht : 0 ≤ t) (hL : 0 < L)
+    (horder : ∀ i j, i < j → lo i+H i ≤ lo j)
+    (hqp : lo 3+H 3 ≤ t-(∑ i, (lo i+H i)))
+    (hsat : t-lo 3-lo 2+h ≤ L) (htriple : L ≤ t-(lo 1+H 1)-(lo 0+H 0))
+    {n : ℕ} (hn : n ∈ ((Fintype.piFinset (fun i => logPrimes (lo i) (H i))).image
+      (fun p => (∏ i, p i : ℕ))).biUnion (fun m =>
+        (logPrimes (t-Real.log m) h).image (fun p => m*p))) :
+    (SquarefreeVaughanLogSource.coefficient L n).re ≤ 0 := by
+  obtain ⟨m,hm,hn⟩ := Finset.mem_biUnion.mp hn
+  obtain ⟨p,hp,rfl⟩ := Finset.mem_image.mp hn
+  obtain ⟨v,hv,rfl⟩ := Finset.mem_image.mp hm
+  have hb := tuple_bounds hv
+  have ho := tuple_ordered horder hv
+  have he := product_four v
+  have hl (i : Fin 4) := logPrimes_bounds (Fintype.mem_piFinset.mp hv i)
+  have hp' := logPrimes_bounds hp
+  have hqv : Real.log (v 3) ≤ t-Real.log (∏ i, v i : ℕ) := by
+    linarith [(hl 3).2.2,hb.2.2.2]
+  have hqp' : v 3 < p := by
+    exact_mod_cast (Real.log_lt_log_iff (by exact_mod_cast (hb.1 3).pos)
+      (by exact_mod_cast hp'.1.pos)).mp (hqv.trans_lt hp'.2.1)
+  have hs := squarefree_five_of_order hp'.1 (hb.1 3) (hb.1 2) (hb.1 1) (hb.1 0)
+    hqp' ho.2.2 ho.2.1 ho.1
+  have hlogs := log_product_four hb.1
+  have hbr : Real.log (v 1*v 0 : ℕ) = Real.log (v 1)+Real.log (v 0) := by
+    rw [Nat.cast_mul,Real.log_mul (by exact_mod_cast (hb.1 1).ne_zero)
+      (by exact_mod_cast (hb.1 0).ne_zero)]
+  have hpbr : t-Real.log (∏ i, v i : ℕ)+h+Real.log (v 1*v 0 : ℕ) ≤ L := by
+    rw [hbr]
+    linarith [(hl 3).2.1,(hl 2).2.1]
+  have hthree : L ≤ t-Real.log (∏ i, v i : ℕ)+Real.log (v 3)+Real.log (v 2) := by
+    linarith [(hl 1).2.2,(hl 0).2.2]
+  have hid : (∏ i, v i : ℕ)*p = p*(v 3*(v 2*(v 1*v 0))) := by rw [he]; ring
+  have hh : 0 < h := by linarith [hp'.2.1,hp'.2.2]
+  have hqa : Real.log (v 2) ≤ Real.log (v 3) :=
+    Real.log_le_log (by exact_mod_cast (hb.1 2).pos) (by exact_mod_cast ho.2.2.le)
+  have hc := five_coefficient_window_lower hp'.1 (hb.1 3) (hb.1 2) (hb.1 1) (hb.1 0)
+    (t := t) hs ho.1.le hL (by simpa only [← hid] using (product_log_bounds hb.2.1 hp).2.1.le)
+    hp'.2.1.le hp'.2.2 hpbr (by linarith)
+    (by linarith only [hqa,hqv,hpbr,hh]) hthree
+  rw [← hid] at hc
+  have hcap := mul_nonneg (div_nonneg ht hL.le)
+    (fiveWindowCap_nonneg L (t-Real.log (∏ i, v i : ℕ)) h (v 3) (v 2) (v 1) (v 0))
+  linarith only [hc,hcap]
+
 /-- Every integer of a selected five-prime cell survives the current
 core masks. The final-prime window enforces the two radial edges exactly. -/
 theorem cell_products_subset_core (j : ℕ) (hj : 32 ≤ j) {u : ℝ}

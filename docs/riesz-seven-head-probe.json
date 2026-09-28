@@ -1,0 +1,27 @@
+{
+  "scope": "floating-point diagnostic of proved scalar formulas",
+  "prime_sum_certificate": false,
+  "exponential_head_constant": 4.066678041985834e+16,
+  "rows": [
+    {
+      "radial_scale_budget": 1,
+      "theta_diagnostic": 3.7792048720261255e-35,
+      "four_B_sqrt_theta": 1.0
+    },
+    {
+      "radial_scale_budget": 0.0078125,
+      "theta_diagnostic": 2.3066435986487582e-39,
+      "four_B_sqrt_theta": 0.0078125
+    },
+    {
+      "radial_scale_budget": 1e-06,
+      "theta_diagnostic": 3.779204872026125e-47,
+      "four_B_sqrt_theta": 1e-06
+    }
+  ],
+  "limitations": [
+    "The supply constant depends on height and has not been numerically evaluated.",
+    "No eventual starting order or literal prime population is certified here.",
+    "The seven-prime head is paid relatively; separate source-scale decay is not claimed."
+  ]
+}

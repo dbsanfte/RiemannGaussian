@@ -1,0 +1,305 @@
+{
+  "scope": "uncertified continuum diagnostic, not a literal prime-sum bound",
+  "ratio": 0.693,
+  "least": 0.001,
+  "largest": 0.601,
+  "power": 16,
+  "replicates": 4,
+  "rows": [
+    {
+      "prime_count": 3,
+      "replicates": [
+        {
+          "positive": 0.354524312887694,
+          "negative": 0.0,
+          "signed": 0.354524312887694,
+          "samples": 65536,
+          "retained": 34210
+        },
+        {
+          "positive": 0.3541435490796903,
+          "negative": 0.0,
+          "signed": 0.3541435490796903,
+          "samples": 65536,
+          "retained": 34162
+        },
+        {
+          "positive": 0.3540495959385064,
+          "negative": 0.0,
+          "signed": 0.3540495959385064,
+          "samples": 65536,
+          "retained": 34146
+        },
+        {
+          "positive": 0.3541378675908642,
+          "negative": 0.0,
+          "signed": 0.3541378675908642,
+          "samples": 65536,
+          "retained": 34166
+        }
+      ],
+      "positive": 0.3542138313741887,
+      "positive_replicate_range": [
+        0.3540495959385064,
+        0.354524312887694
+      ],
+      "negative": 0.0,
+      "negative_replicate_range": [
+        0.0,
+        0.0
+      ],
+      "signed": 0.3542138313741887,
+      "signed_replicate_range": [
+        0.3540495959385064,
+        0.354524312887694
+      ]
+    },
+    {
+      "prime_count": 4,
+      "replicates": [
+        {
+          "positive": 0.1050192720082243,
+          "negative": 0.01460211869178399,
+          "signed": 0.0904171533164403,
+          "samples": 65536,
+          "retained": 48485
+        },
+        {
+          "positive": 0.10412565947441947,
+          "negative": 0.014659964275745915,
+          "signed": 0.08946569519867355,
+          "samples": 65536,
+          "retained": 48419
+        },
+        {
+          "positive": 0.10433018197455608,
+          "negative": 0.014580909539698147,
+          "signed": 0.08974927243485793,
+          "samples": 65536,
+          "retained": 48416
+        },
+        {
+          "positive": 0.10519299015197522,
+          "negative": 0.014648800230712182,
+          "signed": 0.09054418992126305,
+          "samples": 65536,
+          "retained": 48526
+        }
+      ],
+      "positive": 0.10466702590229376,
+      "positive_replicate_range": [
+        0.10412565947441947,
+        0.10519299015197522
+      ],
+      "negative": 0.014622948184485058,
+      "negative_replicate_range": [
+        0.014580909539698147,
+        0.014659964275745915
+      ],
+      "signed": 0.09004407771780872,
+      "signed_replicate_range": [
+        0.08946569519867355,
+        0.09054418992126305
+      ]
+    },
+    {
+      "prime_count": 5,
+      "replicates": [
+        {
+          "positive": 0.0043469970999978165,
+          "negative": 0.2147196104311343,
+          "signed": -0.2103726133311365,
+          "samples": 65536,
+          "retained": 56194
+        },
+        {
+          "positive": 0.0040597557349896654,
+          "negative": 0.2154079637170922,
+          "signed": -0.21134820798210252,
+          "samples": 65536,
+          "retained": 56225
+        },
+        {
+          "positive": 0.004452116054803536,
+          "negative": 0.2149528441737183,
+          "signed": -0.21050072811891474,
+          "samples": 65536,
+          "retained": 56358
+        },
+        {
+          "positive": 0.0044566077799177645,
+          "negative": 0.21495721285682,
+          "signed": -0.21050060507690224,
+          "samples": 65536,
+          "retained": 56300
+        }
+      ],
+      "positive": 0.004328869167427195,
+      "positive_replicate_range": [
+        0.0040597557349896654,
+        0.0044566077799177645
+      ],
+      "negative": 0.2150094077946912,
+      "negative_replicate_range": [
+        0.2147196104311343,
+        0.2154079637170922
+      ],
+      "signed": -0.210680538627264,
+      "signed_replicate_range": [
+        -0.21134820798210252,
+        -0.2103726133311365
+      ]
+    },
+    {
+      "prime_count": 6,
+      "replicates": [
+        {
+          "positive": 0.08290386994918524,
+          "negative": 0.07742340409078391,
+          "signed": 0.005480465858401317,
+          "samples": 65536,
+          "retained": 59814
+        },
+        {
+          "positive": 0.08154706733389265,
+          "negative": 0.0782076861228717,
+          "signed": 0.0033393812110209453,
+          "samples": 65536,
+          "retained": 59837
+        },
+        {
+          "positive": 0.08130468545145392,
+          "negative": 0.07691444885722051,
+          "signed": 0.004390236594233436,
+          "samples": 65536,
+          "retained": 59859
+        },
+        {
+          "positive": 0.08123524246421092,
+          "negative": 0.07806551927741572,
+          "signed": 0.0031697231867951862,
+          "samples": 65536,
+          "retained": 59848
+        }
+      ],
+      "positive": 0.08174771629968568,
+      "positive_replicate_range": [
+        0.08123524246421092,
+        0.08290386994918524
+      ],
+      "negative": 0.07765276458707296,
+      "negative_replicate_range": [
+        0.07691444885722051,
+        0.0782076861228717
+      ],
+      "signed": 0.004094951712612721,
+      "signed_replicate_range": [
+        0.0031697231867951862,
+        0.005480465858401317
+      ]
+    },
+    {
+      "prime_count": 7,
+      "replicates": [
+        {
+          "positive": 0.08608941735733261,
+          "negative": 0.049872476846032424,
+          "signed": 0.03621694051130019,
+          "samples": 65536,
+          "retained": 61151
+        },
+        {
+          "positive": 0.08406823588540863,
+          "negative": 0.050480944807301364,
+          "signed": 0.03358729107810726,
+          "samples": 65536,
+          "retained": 61138
+        },
+        {
+          "positive": 0.0877587294815862,
+          "negative": 0.050481546137616365,
+          "signed": 0.03727718334396982,
+          "samples": 65536,
+          "retained": 61148
+        },
+        {
+          "positive": 0.08603674140668674,
+          "negative": 0.04882800713365086,
+          "signed": 0.03720873427303588,
+          "samples": 65536,
+          "retained": 61120
+        }
+      ],
+      "positive": 0.08598828103275355,
+      "positive_replicate_range": [
+        0.08406823588540863,
+        0.0877587294815862
+      ],
+      "negative": 0.04991574373115025,
+      "negative_replicate_range": [
+        0.04882800713365086,
+        0.050481546137616365
+      ],
+      "signed": 0.036072537301603286,
+      "signed_replicate_range": [
+        0.03358729107810726,
+        0.03727718334396982
+      ]
+    },
+    {
+      "prime_count": 8,
+      "replicates": [
+        {
+          "positive": 0.059713928490452615,
+          "negative": 0.061899324917642495,
+          "signed": -0.0021853964271898777,
+          "samples": 65536,
+          "retained": 61224
+        },
+        {
+          "positive": 0.05725265110640026,
+          "negative": 0.061633352570921576,
+          "signed": -0.0043807014645213145,
+          "samples": 65536,
+          "retained": 61195
+        },
+        {
+          "positive": 0.05780645113595445,
+          "negative": 0.05872720240072105,
+          "signed": -0.0009207512647665945,
+          "samples": 65536,
+          "retained": 61170
+        },
+        {
+          "positive": 0.058133762132422134,
+          "negative": 0.06439628856676269,
+          "signed": -0.00626252643434055,
+          "samples": 65536,
+          "retained": 61232
+        }
+      ],
+      "positive": 0.05822669821630736,
+      "positive_replicate_range": [
+        0.05725265110640026,
+        0.059713928490452615
+      ],
+      "negative": 0.061664042114011955,
+      "negative_replicate_range": [
+        0.05872720240072105,
+        0.06439628856676269
+      ],
+      "signed": -0.003437343897704584,
+      "signed_replicate_range": [
+        -0.00626252643434055,
+        -0.0009207512647665945
+      ]
+    }
+  ],
+  "limitations": [
+    "Replicate ranges are diagnostics, not certified error intervals.",
+    "No original factorial allocation or complex phase is transported.",
+    "The omitted prime-count tail and deleted share regions are unpaid.",
+    "These masses are not independent additive supplies for existing ledgers."
+  ],
+  "source_sha256": "a526789176d03d03d328b9a275eb7b1256a1d0984b2d3b12406ae9cb6fd73727"
+}

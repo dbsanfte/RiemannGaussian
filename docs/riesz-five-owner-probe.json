@@ -1,0 +1,218 @@
+{
+  "scope": "uncertified continuum diagnostic, not an arithmetic bound",
+  "power": 19,
+  "replicates": 4,
+  "rows": [
+    {
+      "ratio": 0.682,
+      "replicates": [
+        {
+          "all_negative": 0.21809603130884433,
+          "old_credited_region": 0.16509816965185095,
+          "owner_above_half": 0.018084028403059737,
+          "reflected_linear": 0.0007899323978023823,
+          "three_largest_below_cutoff": 0.0022083073763007072
+        },
+        {
+          "all_negative": 0.21791125449649676,
+          "old_credited_region": 0.1650515020214674,
+          "owner_above_half": 0.017993457416769065,
+          "reflected_linear": 0.0008104890167358228,
+          "three_largest_below_cutoff": 0.0022273580043700386
+        },
+        {
+          "all_negative": 0.21816302090221332,
+          "old_credited_region": 0.16521608657408288,
+          "owner_above_half": 0.01781270482994966,
+          "reflected_linear": 0.0007778097488442281,
+          "three_largest_below_cutoff": 0.002215432528606578
+        },
+        {
+          "all_negative": 0.21805017270665897,
+          "old_credited_region": 0.16510947721327465,
+          "owner_above_half": 0.017877566006187715,
+          "reflected_linear": 0.0008106662742112332,
+          "three_largest_below_cutoff": 0.002275444925318657
+        }
+      ],
+      "all_negative": {
+        "mean": 0.21805511985355333,
+        "replicate_range": [
+          0.21791125449649676,
+          0.21816302090221332
+        ]
+      },
+      "old_credited_region": {
+        "mean": 0.16511880886516897,
+        "replicate_range": [
+          0.1650515020214674,
+          0.16521608657408288
+        ]
+      },
+      "owner_above_half": {
+        "mean": 0.017941939163991543,
+        "replicate_range": [
+          0.01781270482994966,
+          0.018084028403059737
+        ]
+      },
+      "reflected_linear": {
+        "mean": 0.0007972243593984166,
+        "replicate_range": [
+          0.0007778097488442281,
+          0.0008106662742112332
+        ]
+      },
+      "three_largest_below_cutoff": {
+        "mean": 0.002231635708648995,
+        "replicate_range": [
+          0.0022083073763007072,
+          0.002275444925318657
+        ]
+      }
+    },
+    {
+      "ratio": 0.693,
+      "replicates": [
+        {
+          "all_negative": 0.21494907268608893,
+          "old_credited_region": 0.1581503673433033,
+          "owner_above_half": 0.02061356046474302,
+          "reflected_linear": 0.0010455018830584418,
+          "three_largest_below_cutoff": 0.003158501145184664
+        },
+        {
+          "all_negative": 0.21488176155209007,
+          "old_credited_region": 0.1581423711666764,
+          "owner_above_half": 0.02053420762421969,
+          "reflected_linear": 0.001057774812859792,
+          "three_largest_below_cutoff": 0.003122168831251626
+        },
+        {
+          "all_negative": 0.2148665783244019,
+          "old_credited_region": 0.15829634254067393,
+          "owner_above_half": 0.020316023484142662,
+          "reflected_linear": 0.0010555293748259662,
+          "three_largest_below_cutoff": 0.003141763587292524
+        },
+        {
+          "all_negative": 0.21481021081088006,
+          "old_credited_region": 0.15809011676255166,
+          "owner_above_half": 0.02050350514192366,
+          "reflected_linear": 0.0010628077190923825,
+          "three_largest_below_cutoff": 0.003180684798837084
+        }
+      ],
+      "all_negative": {
+        "mean": 0.21487690584336525,
+        "replicate_range": [
+          0.21481021081088006,
+          0.21494907268608893
+        ]
+      },
+      "old_credited_region": {
+        "mean": 0.1581697994533013,
+        "replicate_range": [
+          0.15809011676255166,
+          0.15829634254067393
+        ]
+      },
+      "owner_above_half": {
+        "mean": 0.020491824178757258,
+        "replicate_range": [
+          0.020316023484142662,
+          0.02061356046474302
+        ]
+      },
+      "reflected_linear": {
+        "mean": 0.0010554034474591456,
+        "replicate_range": [
+          0.0010455018830584418,
+          0.0010628077190923825
+        ]
+      },
+      "three_largest_below_cutoff": {
+        "mean": 0.003150779590641475,
+        "replicate_range": [
+          0.003122168831251626,
+          0.003180684798837084
+        ]
+      }
+    },
+    {
+      "ratio": 0.704,
+      "replicates": [
+        {
+          "all_negative": 0.2105998822404276,
+          "old_credited_region": 0.14974206356951403,
+          "owner_above_half": 0.02335233525884664,
+          "reflected_linear": 0.001151707300188477,
+          "three_largest_below_cutoff": 0.004092103977185944
+        },
+        {
+          "all_negative": 0.21060296332682724,
+          "old_credited_region": 0.14979418644700412,
+          "owner_above_half": 0.023113436743404346,
+          "reflected_linear": 0.0011608776744807129,
+          "three_largest_below_cutoff": 0.004096856462247375
+        },
+        {
+          "all_negative": 0.21040307926907362,
+          "old_credited_region": 0.14984474089804753,
+          "owner_above_half": 0.02303740587088302,
+          "reflected_linear": 0.001156744619805688,
+          "three_largest_below_cutoff": 0.004120338614172334
+        },
+        {
+          "all_negative": 0.21047937356351082,
+          "old_credited_region": 0.14968939801338416,
+          "owner_above_half": 0.02323294141884609,
+          "reflected_linear": 0.001178388066148513,
+          "three_largest_below_cutoff": 0.004082264181270114
+        }
+      ],
+      "all_negative": {
+        "mean": 0.2105213245999598,
+        "replicate_range": [
+          0.21040307926907362,
+          0.21060296332682724
+        ]
+      },
+      "old_credited_region": {
+        "mean": 0.14976759723198746,
+        "replicate_range": [
+          0.14968939801338416,
+          0.14984474089804753
+        ]
+      },
+      "owner_above_half": {
+        "mean": 0.023184029822995025,
+        "replicate_range": [
+          0.02303740587088302,
+          0.02335233525884664
+        ]
+      },
+      "reflected_linear": {
+        "mean": 0.0011619294151558478,
+        "replicate_range": [
+          0.001151707300188477,
+          0.001178388066148513
+        ]
+      },
+      "three_largest_below_cutoff": {
+        "mean": 0.0040978908087189415,
+        "replicate_range": [
+          0.004082264181270114,
+          0.004120338614172334
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "No prime counting, allocation, phase or radial transport is inferred.",
+    "Replicate ranges are not rigorous error bounds.",
+    "The existing literal interior family already includes owners above one half.",
+    "Additional credits must be proved disjoint in the credited integral, not added as another population."
+  ],
+  "source_sha256": "30158df568e1b32252109b8b8dbcf2f3be31145ad0a9d8098c0ec674003a7ffc"
+}

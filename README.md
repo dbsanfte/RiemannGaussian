@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-Work directly on a cofinal signed floor for J+C, retaining the original arithmetic weights and all complementary counts. On 1/2<u<=0.50005, an independent -79/1000-o(1) floor would contradict the proved simple exposed-zero source. Actual positive four-prime supplies now pay selected triple populations. The remaining signed complement is open; separate decay of J and C is unnecessary.
+Work directly on both cofinal signed bounds for J+C, retaining all original weights and complementary counts. On 1/2<u<=0.50005, the independent -79/1000-o(1) floor excludes a simple exposed-zero source; the independent 3/2+o(1) ceiling excludes every higher multiplicity. Actual population payments and coefficient cancellation improve both comparisons. Both whole-sum bounds remain open.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ Work directly on a cofinal signed floor for J+C, retaining the original arithmet
 
 ### Latest Update
 
-**Checked first-bin certificate reaches the literal five-prime sum.** Lean proves the exact integral transfer without another boundary loss. The optional checked certificate now gives a five-prime credit of 8529739/62500000 times its original radial/phase factor, retaining every mask and the complete signed complement.
-The credit and debit constants leave more than two percent room. Common phase aggregation, disjoint spending, the other seven bins and the whole joint floor remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszFiveAngularDomain.lean#L396)
-· [Proof details](docs/zeta-riesz-ordered-capacity.md#the-first-bin-certificate-now-reaches-the-prime-sum).
+**Multiplicity-safe endgame and stronger literal signed bounds.** Lean now states the floor and ceiling needed for all zero multiplicities. Accumulated proofs add central signed payments, exponential prime heads, a logarithmic count-tail payment, and sharper divisor costs. Three reflected large primes cancel every core coefficient with at least five factors exactly; seven-prime intervals improve to [-4,6] or [-3,3] with one or two such primes.
+The original signed complement remains. Neither the -79/1000-o(1) whole-sum floor nor the 3/2+o(1) ceiling is proved; no new zero exclusion follows.
+[Current checked endpoint](RiemannGaussian/ZetaRieszReflectedPrimeBounds.lean#L498)
+· [Proof details](docs/zeta-riesz-reflected-prime-bounds.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

@@ -1,0 +1,199 @@
+{
+  "scope": "Optional log-share diagnostic; no prime density or source-scale conclusion",
+  "coefficient_convention": "c/(T/L) = -(-1)^k H_k(1-lambda); divide by least share",
+  "cutoff_interval": [
+    "2/3",
+    "3/4"
+  ],
+  "largest_share_ceiling": 0.601,
+  "power": 15,
+  "capacities": [
+    {
+      "prime_count": 2,
+      "coefficient_lower_capacity": 1,
+      "coefficient_upper_capacity": 0,
+      "previous_symmetric_capacity": 1
+    },
+    {
+      "prime_count": 3,
+      "coefficient_lower_capacity": 1,
+      "coefficient_upper_capacity": 1,
+      "previous_symmetric_capacity": 1
+    },
+    {
+      "prime_count": 4,
+      "coefficient_lower_capacity": 1,
+      "coefficient_upper_capacity": 2,
+      "previous_symmetric_capacity": 2
+    },
+    {
+      "prime_count": 5,
+      "coefficient_lower_capacity": 3,
+      "coefficient_upper_capacity": 3,
+      "previous_symmetric_capacity": 3
+    },
+    {
+      "prime_count": 6,
+      "coefficient_lower_capacity": 6,
+      "coefficient_upper_capacity": 4,
+      "previous_symmetric_capacity": 6
+    },
+    {
+      "prime_count": 7,
+      "coefficient_lower_capacity": 10,
+      "coefficient_upper_capacity": 10,
+      "previous_symmetric_capacity": 10
+    },
+    {
+      "prime_count": 8,
+      "coefficient_lower_capacity": 15,
+      "coefficient_upper_capacity": 20,
+      "previous_symmetric_capacity": 20
+    },
+    {
+      "prime_count": 9,
+      "coefficient_lower_capacity": 35,
+      "coefficient_upper_capacity": 35,
+      "previous_symmetric_capacity": 35
+    },
+    {
+      "prime_count": 10,
+      "coefficient_lower_capacity": 70,
+      "coefficient_upper_capacity": 56,
+      "previous_symmetric_capacity": 70
+    },
+    {
+      "prime_count": 11,
+      "coefficient_lower_capacity": 126,
+      "coefficient_upper_capacity": 126,
+      "previous_symmetric_capacity": 126
+    },
+    {
+      "prime_count": 12,
+      "coefficient_lower_capacity": 210,
+      "coefficient_upper_capacity": 252,
+      "previous_symmetric_capacity": 252
+    },
+    {
+      "prime_count": 13,
+      "coefficient_lower_capacity": 462,
+      "coefficient_upper_capacity": 462,
+      "previous_symmetric_capacity": 462
+    },
+    {
+      "prime_count": 14,
+      "coefficient_lower_capacity": 924,
+      "coefficient_upper_capacity": 792,
+      "previous_symmetric_capacity": 924
+    },
+    {
+      "prime_count": 15,
+      "coefficient_lower_capacity": 1716,
+      "coefficient_upper_capacity": 1716,
+      "previous_symmetric_capacity": 1716
+    },
+    {
+      "prime_count": 16,
+      "coefficient_lower_capacity": 3003,
+      "coefficient_upper_capacity": 3432,
+      "previous_symmetric_capacity": 3432
+    }
+  ],
+  "sampled_extrema": [
+    {
+      "prime_count": 3,
+      "samples": 32768,
+      "retained": 17113,
+      "sampled_lower": 0.34145059677252293,
+      "sampled_upper": 1.0000000000001803
+    },
+    {
+      "prime_count": 4,
+      "samples": 32768,
+      "retained": 24411,
+      "sampled_lower": -1.0000000000000289,
+      "sampled_upper": 1.000000000000112
+    },
+    {
+      "prime_count": 5,
+      "samples": 32768,
+      "retained": 28626,
+      "sampled_lower": -3.000000000000337,
+      "sampled_upper": 1.000000000000849
+    },
+    {
+      "prime_count": 6,
+      "samples": 32768,
+      "retained": 30773,
+      "sampled_lower": -3.00000000000023,
+      "sampled_upper": 4.000000000000636
+    },
+    {
+      "prime_count": 7,
+      "samples": 32768,
+      "retained": 31817,
+      "sampled_lower": -5.000000000000011,
+      "sampled_upper": 6.000000000000106
+    },
+    {
+      "prime_count": 8,
+      "samples": 32768,
+      "retained": 32345,
+      "sampled_lower": -14.000000000000078,
+      "sampled_upper": 9.373451891162281
+    }
+  ],
+  "rational_six_share_witness": {
+    "share_numerators": [
+      2,
+      149200,
+      189530,
+      192440,
+      226300,
+      242528
+    ],
+    "denominator": 1000000,
+    "cutoff_ratio": "739383/1000000",
+    "share_sum": "1",
+    "reflected_response": "-1/125000",
+    "coefficient_ratio_without_T_over_L": "4"
+  },
+  "core_rational_witnesses": [
+    {
+      "share_numerators": [
+        1,
+        80,
+        81,
+        82,
+        83,
+        330
+      ],
+      "denominator": 657,
+      "cutoff_ratio": "460/657",
+      "reflected_response": "1/219",
+      "coefficient_ratio_without_T_over_L": "-3"
+    },
+    {
+      "share_numerators": [
+        1,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "denominator": 411,
+      "cutoff_ratio": "284/411",
+      "reflected_response": "-4/411",
+      "coefficient_ratio_without_T_over_L": "4"
+    }
+  ],
+  "limitations": [
+    "Sampled extrema are not proved extrema or error intervals.",
+    "The rational shares are not asserted to be logarithms of actual primes.",
+    "No phase, factorial allocation, radial transport or prime-count tail is paid.",
+    "Lean separately proves [-6,4] at all cutoffs and [-3,4] when 2T<=3L.",
+    "A smaller local allowance does not establish either whole-carrier endgame bound."
+  ],
+  "source_sha256": "1ff6412b36b4d51e9c0d50fab8a503e1f04bd77777e348ec8e00af242224ee02"
+}

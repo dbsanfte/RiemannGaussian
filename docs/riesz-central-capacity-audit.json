@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "checkedDate": "2026-09-28",
+  "scope": "Optional central-bin component comparisons; not a whole-carrier bound or zero exclusion.",
+  "workingTreeBase": "fbcde440e0b70bac20530abd41f536676285e211",
+  "covers": {
+    "four": {
+      "bin": 2,
+      "low": "78068869/113100000",
+      "high": "26165377/37700000",
+      "activeCells": 8000,
+      "checkedChunks": 85,
+      "allChunkExitCodesZero": true,
+      "assemblyExitCode": 0,
+      "assembly": {
+        "file": "RieszFourCapacityBin2/Assembly.lean",
+        "sha256": "a15fc54007c89a7467d414a09089ae01cf93177f7f863aa1c81d77b66c32ae74"
+      },
+      "manifestSha256": "bc98bacc0e087bb865f301f663d34a6faff9e0c52596d50e972c49bf190c9bef",
+      "sourceSha256": {
+        "generate_riesz_four_capacity_cover.py": "f22b0aaf6d3eb99b182cbf2d65ab131f48bebd63bdfe238e9c7e3081bc85df86",
+        "probe_riesz_ordered_capacity.py": "8073472f307f1dab6cf6f8d07ee6f7081d85d31c754eecf0bc23220a16d37630",
+        "ZetaRieszFourCapacityCover.lean": "eb6e568dbcbeb8c251d24d575cd43ef3e45913d08f4a1730298b5e47af641af6",
+        "ZetaRieszCapacityCover.lean": "c23c143a0ca2efbfde829ca01a4f533685eb85f36635a0cef4f53a3b6f185664",
+        "ZetaRieszCapacityCheck.lean": "20fa9f72438632808062e6020228721f3638036c4b1fbd4a698772bd6d08c2a5"
+      },
+      "generationCommand": "../.venv/bin/python scripts/generate_riesz_four_capacity_cover.py --bin 2 --cells 8000 --output .lake/riesz-four-capacity-bin2",
+      "checkCommand": "../.venv/bin/python scripts/check_riesz_four_capacity_cover.py --directory .lake/riesz-four-capacity-bin2 --jobs 2"
+    },
+    "five": {
+      "bin": 2,
+      "low": "78068869/113100000",
+      "high": "26165377/37700000",
+      "activeCells": 6000,
+      "checkedChunks": 447,
+      "allChunkExitCodesZero": true,
+      "assemblyExitCode": 0,
+      "assembly": {
+        "file": "RieszFiveCapacityBin2/Assembly.lean",
+        "sha256": "4a8c7f488a26b603aa2df865364f727499a6d971d4fc2cf4515907564a10c555"
+      },
+      "manifestSha256": "bf958b1736dafa8d9ce3eeea0fc5236a232dcd2d0cb860c7e39916c3ba62ecb2",
+      "sourceSha256": {
+        "generate_riesz_five_capacity_cover.py": "95a27ca60ef862bfbe9337234569076864337d537935d9fdbc2f793615de1650",
+        "probe_riesz_ordered_capacity.py": "8073472f307f1dab6cf6f8d07ee6f7081d85d31c754eecf0bc23220a16d37630",
+        "ZetaRieszFiveCapacityCover.lean": "bc83f7315ec25daaf08b922057652563ff1c35f8b1bfcea1afdb2d7df531e180",
+        "ZetaRieszCapacityCover.lean": "c23c143a0ca2efbfde829ca01a4f533685eb85f36635a0cef4f53a3b6f185664",
+        "ZetaRieszCapacityCheck.lean": "20fa9f72438632808062e6020228721f3638036c4b1fbd4a698772bd6d08c2a5"
+      },
+      "generationCommand": "../.venv/bin/python scripts/generate_riesz_five_capacity_cover.py --bin 2 --cells 6000 --output .lake/riesz-five-capacity-bin2",
+      "checkCommand": "../.venv/bin/python scripts/check_riesz_four_capacity_cover.py --directory .lake/riesz-five-capacity-bin2 --jobs 2"
+    }
+  },
+  "transfer": {
+    "source": "scripts/CheckRieszCentralCapacityTransfer.lean",
+    "sha256": "59cb63836ae734d2f77ad21b6aa1cdb1d3329e77a3c1476243a8897af085ac63",
+    "warningAsError": true,
+    "exitCode": 0,
+    "lint": "22 declarations plus 12 automatically generated; all 14 linters passed",
+    "terminalAxioms": {
+      "RieszCentralCapacityTransfer.eventually_central_bin_four_floor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_bin_three_four_floor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_window_three_four_floor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_bin_three_four_ceiling": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_window_three_four_ceiling": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_window_four_ceiling": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_bin_four_ceiling": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.central_ordered_integral_lower": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_bin_five_floor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_bin_five_ceiling": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_bin_three_four_five_floor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_bin_three_four_five_all_phase_ceiling": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_bin_three_four_five_family_floor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_bin_three_four_five_family_ceiling": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_bin_three_four_five_period_payment": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_bin_three_four_five_upper_period_payment": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_exists_central_bin_three_four_five_period": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_exists_central_bin_three_four_five_upper_period": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_bin_three_four_five_period_payment_with_radial": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_central_bin_three_four_five_upper_period_payment_with_radial": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_exists_central_bin_lower_source_credit": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RieszCentralCapacityTransfer.eventually_exists_central_bin_upper_source_credit": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "logSha256": "3450eae354daa3cfd431e20d3bd733060082fba82bd7c969582edb4b0c95cf6f",
+    "supportingSourceSha256": {
+      "RiemannGaussian/ZetaRieszCapacityPhaseBudget.lean": "13292df79aae128313a2139f7eea8fce10a3118289917338eab877106e5e79b6",
+      "RiemannGaussian/ZetaRieszCentralReserve.lean": "3a5bc440ff4b649e471bcd930ade44edf230272672e335a6c16d3b343d6a5c6d",
+      "RiemannGaussian/ZetaRieszBroadTripleBudget.lean": "04f50cc3c4c6563b7dcf2fd23db91fd1590d6f876b5a8a0c23a960e3dd9b4c74",
+      "RiemannGaussian/ZetaRieszFiveOwnerCredit.lean": "798f53c0978d6e239eaff19576defbd02d21d8bb38fcbfa6314885c4673ec23d",
+      "RiemannGaussian/ZetaRieszFiveOwnerBoxes.lean": "dce11159b11c690edf120ee3c55ff1bd05d64306a49bd614c7ae71210fd00f08"
+    }
+  },
+  "commonCredit": "1309/10000",
+  "commonDebit": "1261/10000",
+  "periodMargin": "g * V0 * h / 500; g is the phase mesh count",
+  "unproved": [
+    "whole cofinal source-normalized floor -79/1000-o(1)",
+    "whole cofinal source-normalized ceiling 3/2+o(1)"
+  ],
+  "sourceCredit": "pi*u*exp(-1)/(24000*abs(y)) * (2*u)^N/(N+1)",
+  "sourceCreditScope": "Independent eventual lower/upper comparisons for the original selected central populations, with their exact respective signed complements; the starting order is not numerically evaluated."
+}

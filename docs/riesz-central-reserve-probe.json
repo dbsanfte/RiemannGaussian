@@ -1,0 +1,56 @@
+{
+  "scope": "Floating-point evaluation of a proved eventual scalar rate; not a prime-sum certificate at these orders.",
+  "radius": 0.50005,
+  "height": 54,
+  "formula": "pi*u*exp(-1)/(24000*abs(y)) * (2*u)^N/(N+1)",
+  "constant": 4.459270534436346e-07,
+  "rows": [
+    {
+      "order": 256,
+      "log_scalar_credit": -20.146587820414467,
+      "scalar_credit": 1.7801150846859518e-09
+    },
+    {
+      "order": 640,
+      "log_scalar_credit": -21.02214311231193,
+      "scalar_credit": 7.416504226271454e-10
+    },
+    {
+      "order": 1536,
+      "log_scalar_credit": -21.807105878631223,
+      "scalar_credit": 3.3829396529288233e-10
+    },
+    {
+      "order": 4096,
+      "log_scalar_credit": -22.531541211786255,
+      "scalar_credit": 1.6393662236543493e-10
+    },
+    {
+      "order": 16384,
+      "log_scalar_credit": -22.68891393127674,
+      "scalar_credit": 1.400650818085561e-10
+    },
+    {
+      "order": 65536,
+      "log_scalar_credit": -19.16020826139337,
+      "scalar_credit": 4.773393967885598e-09
+    },
+    {
+      "order": 262144,
+      "log_scalar_credit": -0.8866741530016817,
+      "scalar_credit": 0.41202380465961264
+    },
+    {
+      "order": 1048576,
+      "log_scalar_credit": 76.36630244901023,
+      "scalar_credit": 1.4637393794738963e+33
+    }
+  ],
+  "limitations": [
+    "The starting order of the literal prime-sum comparison is unevaluated.",
+    "No value of coreResponse or its signed complement is computed.",
+    "Positive and negative comparisons have different signed complements.",
+    "No whole-carrier floor, ceiling or zero exclusion follows."
+  ],
+  "source_sha256": "57908f21d6bf6a7b25e6241039b1020b23e26b705a328685b291c1fe7f784370"
+}
