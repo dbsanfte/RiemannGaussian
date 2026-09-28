@@ -5,6 +5,33 @@
   "defaultEndpoint": "explicit-band",
   "endpoints": [
     {
+      "id": "positive-five-joint-payment",
+      "label": "Joint payment \u00b7 fixed positive-five sector across a full period",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPositiveFiveMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPositiveFivePeriodTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPositiveFiveFloorPaymentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPositiveFiveCeilingPaymentTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszPositiveFiveScope"
+      ],
+      "documentation": "docs/zeta-riesz-positive-five-payment.md"
+    },
+    {
       "id": "explicit-band",
       "label": "Complete explicit region \u00b7 all heights",
       "statusPaths": [
@@ -891,6 +918,38 @@
           "gaussianPhaseBandToolkit",
           "rieszSignedArithmeticTheorems",
           "ZetaRieszReflectedPrimeBounds.eventually_core_subset_bounds"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveLowerThirdTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSevenReflectionCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSevenReflectionCoreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSevenReflectionSavingsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSevenReflectionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointReflectionIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointReflectionFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointReflectionCeilingTheorem"
         ]
       ],
       "scopePath": [
@@ -3637,6 +3696,165 @@
         "fordUnconditionalLargeMomentScope"
       ],
       "documentation": "docs/rosser-schoenfeld-reproduction.md"
+    },
+    {
+      "id": "all-count-owner-joint-payment",
+      "label": "Joint payment \u00b7 all counts above the 59.5% owner share",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointOwnerAllocationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointOwnerMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointOwnerCreditTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointOwnerRemainingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointOwnerFloorPaymentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointOwnerCeilingPaymentTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszJointOwnerScope"
+      ],
+      "documentation": "docs/zeta-riesz-joint-owner-payment.md"
+    },
+    {
+      "id": "sharper-whole-joint-budget",
+      "label": "Whole joint estimates \u00b7 stronger phase and radial budget",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharpCosineTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharpOppositeCosineTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharpRadialLowerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharpRadialUpperTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharpPeriodFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharpPeriodCeilingTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSharpJointScope"
+      ],
+      "documentation": "docs/zeta-riesz-sharp-joint-budget.md"
+    },
+    {
+      "id": "positive-five-boundary-payment",
+      "label": "Whole joint estimates \u00b7 positive-five small-prime boundary",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveBoundaryGeometryTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveBoundaryMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveBoundaryPeriodTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveBoundaryRemainingTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFiveBoundaryScope"
+      ],
+      "documentation": "docs/zeta-riesz-positive-five-boundary.md"
+    },
+    {
+      "id": "factorial-saddle-joint-credit",
+      "label": "Whole joint estimates \u00b7 factorial square-root credit",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleFactorialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleRadialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleCreditTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSaddleJointScope"
+      ],
+      "documentation": "docs/zeta-riesz-saddle-joint-credit.md"
+    },
+    {
+      "id": "positive-five-interior-debit",
+      "label": "Whole joint estimates \u00b7 sharper positive-five debit",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveInteriorCutoffTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveInteriorCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveInteriorIntegralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveInteriorCheckTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveInteriorGeometryTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveBoundarySharpMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveBoundarySharpPeriodTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFiveInteriorScope"
+      ],
+      "documentation": "docs/zeta-riesz-positive-five-interior.md"
     }
   ],
   "families": [
@@ -4536,7 +4754,40 @@
     "ZetaRieszIntersectingWindow": "arithmetic",
     "ZetaRieszSevenPrimeHead": "arithmetic",
     "ZetaRieszSevenCountTail": "arithmetic",
-    "ZetaRieszReflectedPrimeBounds": "arithmetic"
+    "ZetaRieszReflectedPrimeBounds": "arithmetic",
+    "ZetaRieszSevenPrimeReflection": "arithmetic",
+    "ZetaRieszJointReflectionBounds": "arithmetic",
+    "ZetaRieszPositiveFiveBudget": "arithmetic",
+    "ZetaRieszJointPositiveFiveBounds": "arithmetic",
+    "ZetaRieszJointOwnerPayment": "arithmetic",
+    "ZetaRieszCentralSharpBudget": "arithmetic",
+    "ZetaRieszPositiveFiveBoundary": "arithmetic",
+    "ZetaRieszSaddleCredit": "arithmetic",
+    "ZetaRieszPositiveFiveInterior": "arithmetic",
+    "ZetaRieszPositiveFiveCover": "arithmetic",
+    "ZetaRieszPositiveFivePrimeTransfer": "arithmetic",
+    "ZetaRieszPositiveFiveCells": "arithmetic",
+    "ZetaRieszPositiveFiveCellPayment": "arithmetic",
+    "ZetaRieszPositiveFiveLeafPayment": "arithmetic",
+    "ZetaRieszPositiveFiveCertifiedPayment": "arithmetic",
+    "ZetaRieszPositiveFiveSignedPayment": "arithmetic",
+    "ZetaRieszPositiveFiveWholeBudget": "arithmetic",
+    "ZetaRieszJointFullFiveBounds": "arithmetic",
+    "ZetaRieszPositiveFiveCoverage": "arithmetic",
+    "ZetaRieszSixPrimeReflection": "arithmetic",
+    "ZetaRieszSixPrimeCentered": "arithmetic",
+    "ZetaRieszPrimePeriodCancellation": "arithmetic",
+    "ZetaRieszTriplePeriod": "arithmetic",
+    "ZetaRieszJointTriplePayment": "arithmetic",
+    "ZetaRieszSixPrimeSecondReflection": "arithmetic",
+    "ZetaRieszSixPrimePeriod": "arithmetic",
+    "ZetaRieszSaddlePeriod": "arithmetic",
+    "ZetaRieszBroadSixPeriod": "arithmetic",
+    "ZetaRieszWideSixAllocation": "arithmetic",
+    "ZetaRieszWideSixPeriod": "arithmetic",
+    "ZetaRieszSixCofactorPeriod": "arithmetic",
+    "ZetaRieszAllocationVariation": "arithmetic",
+    "ZetaRieszTransitionSixPeriod": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
@@ -8633,6 +8884,73 @@
     "RiemannGaussian.ZetaRieszReflectedPrimeBounds.eventually_core_subset_bounds": {
       "label": "Both signed estimates improve on every higher-count core subset; the full bounds remain open",
       "documentation": "docs/zeta-riesz-reflected-prime-bounds.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszSevenPrimeReflection.riesz_five_lower_third_le": {
+      "label": "Five-prime lower-third signed bound",
+      "summary": "Every squarefree five-prime response at 3D<=log n is at most log(minFac n), including all cutoff chambers.",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md"
+    },
+    "RiemannGaussian.ZetaRieszSevenPrimeReflection.coefficient_seven_two_outer_sharp": {
+      "label": "Seven-prime interval [-1,3]",
+      "summary": "Two reflected large primes and 7D>=2log n sharpen the original seven-prime coefficient without changing its parity or label.",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md"
+    },
+    "RiemannGaussian.ZetaRieszSevenPrimeReflection.core_cutoff_two_sevenths": {
+      "label": "Literal core exceeds the two-sevenths threshold",
+      "summary": "The exact moving length gives 2log n<7(log n-L) from N>=2, without a limiting substitution.",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md"
+    },
+    "RiemannGaussian.ZetaRieszSevenPrimeReflection.seven_cost_savings": {
+      "label": "Exact two-unit phase-sensitive savings",
+      "summary": "Floor cost falls by 2b max(cos,0); ceiling cost falls by 2b max(-cos,0). These are alternative charges, not additional supply.",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md"
+    },
+    "RiemannGaussian.ZetaRieszSevenPrimeReflection.eventually_core_subset_bounds": {
+      "label": "Second reflection bounds every selected core subset",
+      "summary": "Both signed comparisons retain every factorial/allocation weight, original phase, favorable observation and signed complement. Whole-sum bounds remain open.",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md"
+    },
+    "RiemannGaussian.ZetaRieszJointReflectionBounds.sum_observation_savings": {
+      "label": "Exact improvement of the summed signed observations",
+      "summary": "Both old coefficient charges improve by an explicit weighted two-unit saving on the selected seven-prime/two-outer population.",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszJointReflectionBounds.eventually_joint_floor": {
+      "label": "Whole J+C lower comparison gains the unpaid seven-prime saving",
+      "summary": "All old head/count payments and the positive reserve remain; the exact unpaid saving improves the whole joint floor comparison, with proved vanishing error.",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszJointReflectionBounds.eventually_joint_ceiling": {
+      "label": "Whole J+C upper comparison loses the unpaid opposite-phase cost",
+      "summary": "All old head/count payments and the negative reserve remain; the exact unpaid saving improves the whole joint ceiling comparison, with proved vanishing error.",
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPositiveFiveBudget.eventually_norm_mass": {
+      "label": "Literal positive-five debit \u2264 1/10000",
+      "documentation": "docs/zeta-riesz-positive-five-payment.md",
+      "summary": "Actual reciprocal prime windows with the exact cofactor endpoint, original allocation and every inherited mask.",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszJointPositiveFiveBounds.eventually_period_norm_mass": {
+      "label": "Complete-period debit \u2264 half the old surplus",
+      "documentation": "docs/zeta-riesz-positive-five-payment.md",
+      "summary": "Includes every phase boundary and the original radial kernel. No prime-density or zero assumption.",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszJointPositiveFiveBounds.joint_floor_of_payment": {
+      "label": "Whole lower spending ledger",
+      "documentation": "docs/zeta-riesz-positive-five-payment.md",
+      "summary": "Charges only new labels in the old signed rest; retains favorable observations. Cached central payment is discharged in the linked optional application.",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszJointPositiveFiveBounds.joint_ceiling_of_payment": {
+      "label": "Whole upper spending ledger",
+      "documentation": "docs/zeta-riesz-positive-five-payment.md",
+      "summary": "Alternative upper ledger uses its own previously proved payment; no supply is spent twice.",
       "overview": true
     }
   }

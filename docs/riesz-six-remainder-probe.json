@@ -1,0 +1,179 @@
+{
+  "model_only": true,
+  "arithmetic_certificate": false,
+  "normalization": "(-(-1)^6 R_(1-lambda))/lambda against prod(dx_i/x_i), divided by 6!",
+  "prime_count": 6,
+  "largest_share_ceiling": "119/200",
+  "least_share_floor": "1/100000000",
+  "cutoff": 0.6931,
+  "samples_per_replicate": 262144,
+  "replicates": 4,
+  "importance_alpha": 0.6,
+  "rows": [
+    {
+      "reflected_large_count": 0,
+      "positive_coefficient_cost": {
+        "mean": 0.03739197916765056,
+        "replicate_standard_error": 6.13825797501473e-05
+      },
+      "negative_coefficient_cost": {
+        "mean": 9.950014890111546e-05,
+        "replicate_standard_error": 4.8292748604104895e-06
+      },
+      "signed_coefficient_integral": {
+        "mean": 0.03729247901874945,
+        "replicate_standard_error": 5.748377247028974e-05
+      },
+      "least_prime_unit_cost": {
+        "mean": 0.018568186543491398,
+        "replicate_standard_error": 5.208911530716629e-05
+      },
+      "retained_sample_count": {
+        "mean": 18672.75,
+        "replicate_standard_error": 26.75
+      },
+      "one_large_previous_charge": {
+        "mean": 0.0,
+        "replicate_standard_error": 0.0
+      },
+      "one_large_centered_charge": {
+        "mean": 0.0,
+        "replicate_standard_error": 0.0
+      },
+      "one_large_second_lower_charge": {
+        "mean": 0.0,
+        "replicate_standard_error": 0.0
+      },
+      "one_large_second_upper_charge": {
+        "mean": 0.0,
+        "replicate_standard_error": 0.0
+      }
+    },
+    {
+      "reflected_large_count": 1,
+      "positive_coefficient_cost": {
+        "mean": 0.04612895367783633,
+        "replicate_standard_error": 0.00010135589898095743
+      },
+      "negative_coefficient_cost": {
+        "mean": 0.07154423788681502,
+        "replicate_standard_error": 9.775369266879766e-05
+      },
+      "signed_coefficient_integral": {
+        "mean": -0.02541528420897869,
+        "replicate_standard_error": 6.639311336942616e-05
+      },
+      "least_prime_unit_cost": {
+        "mean": 0.213491306335025,
+        "replicate_standard_error": 0.00018557400240965454
+      },
+      "retained_sample_count": {
+        "mean": 139529.25,
+        "replicate_standard_error": 76.78256638065702
+      },
+      "one_large_previous_charge": {
+        "mean": 0.640473919005075,
+        "replicate_standard_error": 0.0005567220072289566
+      },
+      "one_large_centered_charge": {
+        "mean": 0.605957197312627,
+        "replicate_standard_error": 0.0005438248356558714
+      },
+      "one_large_second_lower_charge": {
+        "mean": 0.383826531946175,
+        "replicate_standard_error": 0.0003337978554658937
+      },
+      "one_large_second_upper_charge": {
+        "mean": 0.36203909075524265,
+        "replicate_standard_error": 0.0003231333025659569
+      }
+    },
+    {
+      "reflected_large_count": 2,
+      "positive_coefficient_cost": {
+        "mean": 0.00046844938687539697,
+        "replicate_standard_error": 1.3464756904883876e-05
+      },
+      "negative_coefficient_cost": {
+        "mean": 0.005406258529897784,
+        "replicate_standard_error": 5.408810470274406e-05
+      },
+      "signed_coefficient_integral": {
+        "mean": -0.004937809143022387,
+        "replicate_standard_error": 6.31923437068658e-05
+      },
+      "least_prime_unit_cost": {
+        "mean": 0.15558355152939818,
+        "replicate_standard_error": 0.000675395384883462
+      },
+      "retained_sample_count": {
+        "mean": 53426.5,
+        "replicate_standard_error": 39.8298464303676
+      },
+      "one_large_previous_charge": {
+        "mean": 0.0,
+        "replicate_standard_error": 0.0
+      },
+      "one_large_centered_charge": {
+        "mean": 0.0,
+        "replicate_standard_error": 0.0
+      },
+      "one_large_second_lower_charge": {
+        "mean": 0.0,
+        "replicate_standard_error": 0.0
+      },
+      "one_large_second_upper_charge": {
+        "mean": 0.0,
+        "replicate_standard_error": 0.0
+      }
+    },
+    {
+      "reflected_large_count": 3,
+      "positive_coefficient_cost": {
+        "mean": 0.0,
+        "replicate_standard_error": 0.0
+      },
+      "negative_coefficient_cost": {
+        "mean": 0.0,
+        "replicate_standard_error": 0.0
+      },
+      "signed_coefficient_integral": {
+        "mean": 0.0,
+        "replicate_standard_error": 0.0
+      },
+      "least_prime_unit_cost": {
+        "mean": 0.0003110739140423977,
+        "replicate_standard_error": 1.9614540899309892e-05
+      },
+      "retained_sample_count": {
+        "mean": 75.25,
+        "replicate_standard_error": 3.092329219213245
+      },
+      "one_large_previous_charge": {
+        "mean": 0.0,
+        "replicate_standard_error": 0.0
+      },
+      "one_large_centered_charge": {
+        "mean": 0.0,
+        "replicate_standard_error": 0.0
+      },
+      "one_large_second_lower_charge": {
+        "mean": 0.0,
+        "replicate_standard_error": 0.0
+      },
+      "one_large_second_upper_charge": {
+        "mean": 0.0,
+        "replicate_standard_error": 0.0
+      }
+    }
+  ],
+  "limitations": [
+    "Floating-point quadrature is not a rigorous enclosure.",
+    "No actual prime count or source-normalized transfer is asserted.",
+    "The unassigned factor is bounded above by one, not replaced in a signed carrier theorem.",
+    "Radial and phase factors are excluded; these are angular diagnostic costs only.",
+    "Second-reflection charges are coefficient-side diagnostics; no population payment is inferred.",
+    "Other counts, the omitted small-share boundary and other periods are not paid."
+  ],
+  "source_sha256": "0ba2f1b57fc5236c1b4938b54f1d9b145f2f9be8ac7548cd448f8b9e7ff066cb"
+}

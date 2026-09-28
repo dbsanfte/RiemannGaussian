@@ -13,36 +13,184 @@
   ],
   "rows": [
     {
+      "prime_count_model": 6,
+      "reflected_large_count": 0,
+      "previous_capacities": [
+        -3,
+        4
+      ],
+      "samples": 507,
+      "lower": "-158/225",
+      "upper": "4",
+      "lower_at": {
+        "weights": [
+          126,
+          272,
+          284,
+          316,
+          820,
+          850
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "upper_at": {
+        "weights": [
+          141,
+          520,
+          637,
+          806,
+          809,
+          982
+        ],
+        "reflected_cutoff_share": "29/100"
+      },
+      "proved_capacities": [
+        -3,
+        4
+      ]
+    },
+    {
+      "prime_count_model": 6,
+      "reflected_large_count": 1,
+      "previous_capacities": [
+        -3,
+        4
+      ],
+      "samples": 182,
+      "lower": "-3",
+      "upper": "3",
+      "lower_at": {
+        "weights": [
+          1,
+          10,
+          10,
+          10,
+          10,
+          40
+        ],
+        "reflected_cutoff_share": "8/25"
+      },
+      "upper_at": {
+        "weights": [
+          130,
+          419,
+          576,
+          601,
+          690,
+          996
+        ],
+        "reflected_cutoff_share": "29/100"
+      },
+      "proved_capacities": [
+        -3,
+        3
+      ]
+    },
+    {
+      "prime_count_model": 6,
+      "reflected_large_count": 2,
+      "previous_capacities": [
+        -3,
+        4
+      ],
+      "samples": 41,
+      "lower": "-1",
+      "upper": "2121/3100",
+      "lower_at": {
+        "weights": [
+          126,
+          272,
+          284,
+          316,
+          820,
+          850
+        ],
+        "reflected_cutoff_share": "307/1000"
+      },
+      "upper_at": {
+        "weights": [
+          93,
+          132,
+          174,
+          637,
+          833,
+          884
+        ],
+        "reflected_cutoff_share": "29/100"
+      },
+      "proved_capacities": [
+        -1,
+        1
+      ]
+    },
+    {
+      "prime_count_model": 6,
+      "reflected_large_count": 3,
+      "previous_capacities": [
+        -3,
+        4
+      ],
+      "samples": 2,
+      "lower": "0",
+      "upper": "0",
+      "lower_at": {
+        "weights": [
+          1,
+          1,
+          1,
+          40,
+          41,
+          42
+        ],
+        "reflected_cutoff_share": "307/1000"
+      },
+      "upper_at": {
+        "weights": [
+          1,
+          1,
+          1,
+          40,
+          41,
+          42
+        ],
+        "reflected_cutoff_share": "307/1000"
+      },
+      "proved_capacities": [
+        0,
+        0
+      ]
+    },
+    {
       "prime_count_model": 7,
       "reflected_large_count": 0,
       "previous_capacities": [
         -5,
         10
       ],
-      "samples": 644,
+      "samples": 629,
       "lower": "-5",
-      "upper": "4",
+      "upper": "180/41",
       "lower_at": {
         "weights": [
-          24,
-          764,
-          806,
-          832,
-          910,
-          951,
-          965
+          22,
+          674,
+          767,
+          820,
+          829,
+          833,
+          978
         ],
         "reflected_cutoff_share": "29/100"
       },
       "upper_at": {
         "weights": [
-          34,
-          325,
-          334,
-          760,
-          878,
-          893,
-          928
+          41,
+          291,
+          307,
+          357,
+          426,
+          545,
+          918
         ],
         "reflected_cutoff_share": "8/25"
       },
@@ -58,20 +206,20 @@
         -5,
         10
       ],
-      "samples": 75,
+      "samples": 91,
       "lower": "-2",
       "upper": "6",
       "lower_at": {
         "weights": [
-          38,
-          204,
-          226,
-          313,
-          324,
-          800,
-          937
+          22,
+          83,
+          180,
+          181,
+          246,
+          569,
+          794
         ],
-        "reflected_cutoff_share": "8/25"
+        "reflected_cutoff_share": "307/1000"
       },
       "upper_at": {
         "weights": [
@@ -97,9 +245,9 @@
         -5,
         10
       ],
-      "samples": 11,
+      "samples": 10,
       "lower": "-16/25",
-      "upper": "2231/2550",
+      "upper": "477/250",
       "lower_at": {
         "weights": [
           1,
@@ -114,18 +262,18 @@
       },
       "upper_at": {
         "weights": [
-          51,
-          56,
-          93,
-          293,
-          439,
-          821,
-          925
+          10,
+          40,
+          63,
+          67,
+          200,
+          278,
+          294
         ],
         "reflected_cutoff_share": "29/100"
       },
       "proved_capacities": [
-        -3,
+        -1,
         3
       ]
     },
@@ -175,34 +323,34 @@
         -15,
         13
       ],
-      "samples": 688,
+      "samples": 680,
       "lower": "-15",
-      "upper": "108851/23250",
+      "upper": "4",
       "lower_at": {
         "weights": [
-          97,
-          731,
-          745,
-          788,
-          827,
-          828,
-          843,
-          876
+          1,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
         ],
         "reflected_cutoff_share": "8/25"
       },
       "upper_at": {
         "weights": [
-          93,
-          144,
-          165,
-          287,
-          315,
-          343,
-          781,
-          844
+          5,
+          184,
+          229,
+          244,
+          267,
+          333,
+          891,
+          962
         ],
-        "reflected_cutoff_share": "307/1000"
+        "reflected_cutoff_share": "8/25"
       },
       "proved_capacities": [
         -15,
@@ -216,7 +364,7 @@
         -15,
         13
       ],
-      "samples": 36,
+      "samples": 43,
       "lower": "-10",
       "upper": "10",
       "lower_at": {
@@ -257,7 +405,7 @@
         -15,
         13
       ],
-      "samples": 6,
+      "samples": 7,
       "lower": "-1",
       "upper": "24/25",
       "lower_at": {
@@ -339,7 +487,7 @@
         -35,
         27
       ],
-      "samples": 704,
+      "samples": 719,
       "lower": "-9079/1375",
       "upper": "21",
       "lower_at": {
@@ -358,17 +506,17 @@
       },
       "upper_at": {
         "weights": [
-          1,
-          100,
-          100,
-          100,
-          100,
-          100,
-          100,
-          100,
-          100
+          6,
+          542,
+          664,
+          787,
+          796,
+          832,
+          878,
+          912,
+          936
         ],
-        "reflected_cutoff_share": "8/25"
+        "reflected_cutoff_share": "307/1000"
       },
       "proved_capacities": [
         -35,
@@ -382,9 +530,9 @@
         -35,
         27
       ],
-      "samples": 20,
+      "samples": 9,
       "lower": "-20",
-      "upper": "377/42",
+      "upper": "679/1700",
       "lower_at": {
         "weights": [
           1,
@@ -401,17 +549,17 @@
       },
       "upper_at": {
         "weights": [
-          42,
-          135,
-          147,
-          167,
-          187,
-          195,
-          244,
-          588,
-          984
+          17,
+          21,
+          24,
+          124,
+          254,
+          442,
+          486,
+          945,
+          970
         ],
-        "reflected_cutoff_share": "8/25"
+        "reflected_cutoff_share": "29/100"
       },
       "proved_capacities": [
         -20,
@@ -425,22 +573,22 @@
         -35,
         27
       ],
-      "samples": 6,
-      "lower": "-271/400",
+      "samples": 2,
+      "lower": "5",
       "upper": "5",
       "lower_at": {
         "weights": [
-          8,
-          25,
-          29,
-          51,
-          81,
-          130,
-          619,
-          818,
-          841
+          1,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          50,
+          51
         ],
-        "reflected_cutoff_share": "29/100"
+        "reflected_cutoff_share": "307/1000"
       },
       "upper_at": {
         "weights": [
@@ -513,7 +661,7 @@
       ],
       "samples": 722,
       "lower": "-28",
-      "upper": "572/43",
+      "upper": "65322/3775",
       "lower_at": {
         "weights": [
           1,
@@ -531,16 +679,16 @@
       },
       "upper_at": {
         "weights": [
-          129,
-          245,
-          260,
-          343,
-          349,
-          370,
-          751,
-          774,
-          858,
-          971
+          151,
+          220,
+          323,
+          365,
+          399,
+          401,
+          928,
+          929,
+          943,
+          979
         ],
         "reflected_cutoff_share": "8/25"
       },
@@ -557,22 +705,22 @@
         56
       ],
       "samples": 7,
-      "lower": "-168341/21600",
+      "lower": "-2",
       "upper": "35",
       "lower_at": {
         "weights": [
-          108,
-          110,
-          122,
-          149,
-          183,
-          271,
-          274,
-          284,
-          618,
-          986
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          40,
+          41,
+          42
         ],
-        "reflected_cutoff_share": "307/1000"
+        "reflected_cutoff_share": "8/25"
       },
       "upper_at": {
         "weights": [
@@ -685,5 +833,103 @@
       ]
     }
   ],
-  "source_sha256": "8aa682fbc04a24687e8afb8f1f73601ac53a9a20edb2bb6f363e741b5964ecef"
+  "second_reflection_endpoints": [
+    {
+      "prime_count_model": 6,
+      "weights": [
+        1,
+        4,
+        5,
+        6,
+        16,
+        17
+      ],
+      "total": 49,
+      "reflected_cutoff": 15,
+      "reflected_cutoff_share": "15/49",
+      "active_weights": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "second_cutoff": 1,
+      "coefficient_ratio": "-1",
+      "model_only": true
+    },
+    {
+      "prime_count_model": 6,
+      "weights": [
+        1,
+        1,
+        1,
+        7,
+        8,
+        8
+      ],
+      "total": 26,
+      "reflected_cutoff": 8,
+      "reflected_cutoff_share": "4/13",
+      "active_weights": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "second_cutoff": 2,
+      "coefficient_ratio": "1",
+      "model_only": true
+    },
+    {
+      "prime_count_model": 7,
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        10,
+        11,
+        11
+      ],
+      "total": 36,
+      "reflected_cutoff": 11,
+      "reflected_cutoff_share": "11/36",
+      "active_weights": [
+        1,
+        1,
+        1,
+        1,
+        10
+      ],
+      "second_cutoff": 3,
+      "coefficient_ratio": "-1",
+      "model_only": true
+    },
+    {
+      "prime_count_model": 7,
+      "weights": [
+        1,
+        10,
+        10,
+        10,
+        10,
+        31,
+        31
+      ],
+      "total": 103,
+      "reflected_cutoff": 30,
+      "reflected_cutoff_share": "30/103",
+      "active_weights": [
+        1,
+        10,
+        10,
+        10,
+        10
+      ],
+      "second_cutoff": 11,
+      "coefficient_ratio": "3",
+      "model_only": true
+    }
+  ],
+  "source_sha256": "d1de51b86bf387a8c26bd1a65ebfec687bd2b884247410ed24658995816aee07"
 }

@@ -1,0 +1,99 @@
+{
+  "model_only": true,
+  "scope": "Angular diagnostic, no prime/source-scale certificate",
+  "samples_per_replicate": 262144,
+  "least_share_probe_floor": 1e-08,
+  "importance_alpha": 0.6,
+  "riesz_ratio": 0.6931,
+  "replicates": [
+    {
+      "broad": {
+        "positive": 0.021426756043881168,
+        "negative": 0.05119278360922179,
+        "sample_hits": 99655
+      },
+      "broad_one_large": {
+        "positive": 0.021426756043881154,
+        "negative": 0.05119278360922178,
+        "sample_hits": 74547
+      },
+      "old": {
+        "positive": 0.0,
+        "negative": 1.451960636872221e-06,
+        "sample_hits": 2
+      },
+      "one_large": {
+        "positive": 0.04595739142841128,
+        "negative": 0.07156316086973054,
+        "sample_hits": 139416
+      }
+    },
+    {
+      "broad": {
+        "positive": 0.021622111051946245,
+        "negative": 0.05094306931482908,
+        "sample_hits": 99831
+      },
+      "broad_one_large": {
+        "positive": 0.02162211105194623,
+        "negative": 0.05094306931482907,
+        "sample_hits": 74715
+      },
+      "old": {
+        "positive": 0.0,
+        "negative": 1.4758248434584116e-06,
+        "sample_hits": 1
+      },
+      "one_large": {
+        "positive": 0.045962146352097444,
+        "negative": 0.07129310623871013,
+        "sample_hits": 139398
+      }
+    },
+    {
+      "broad": {
+        "positive": 0.02165969751840501,
+        "negative": 0.05109117681500752,
+        "sample_hits": 99786
+      },
+      "broad_one_large": {
+        "positive": 0.021659697518405,
+        "negative": 0.051091176815007515,
+        "sample_hits": 74528
+      },
+      "old": {
+        "positive": 0.0,
+        "negative": 1.0209071500963713e-06,
+        "sample_hits": 1
+      },
+      "one_large": {
+        "positive": 0.046086872919356314,
+        "negative": 0.07126344781203248,
+        "sample_hits": 139449
+      }
+    },
+    {
+      "broad": {
+        "positive": 0.02137238198651743,
+        "negative": 0.05128633402417169,
+        "sample_hits": 99617
+      },
+      "broad_one_large": {
+        "positive": 0.021372381986517423,
+        "negative": 0.05128633402417168,
+        "sample_hits": 74506
+      },
+      "old": {
+        "positive": 0.0,
+        "negative": 2.187460605298483e-06,
+        "sample_hits": 2
+      },
+      "one_large": {
+        "positive": 0.04546783497769814,
+        "negative": 0.0715589034942447,
+        "sample_hits": 139454
+      }
+    }
+  ],
+  "source_sha256": "65e9a5b0b0c62c973c5110074a5c03de4d2a8d6bd7d7ecc749b0c376d43990e2"
+}

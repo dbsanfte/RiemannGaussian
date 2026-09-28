@@ -149,10 +149,10 @@ Work directly on both cofinal signed bounds for J+C, retaining all original weig
 
 ### Latest Update
 
-**Multiplicity-safe endgame and stronger literal signed bounds.** Lean now states the floor and ceiling needed for all zero multiplicities. Accumulated proofs add central signed payments, exponential prime heads, a logarithmic count-tail payment, and sharper divisor costs. Three reflected large primes cancel every core coefficient with at least five factors exactly; seven-prime intervals improve to [-4,6] or [-3,3] with one or two such primes.
-The original signed complement remains. Neither the -79/1000-o(1) whole-sum floor nor the 3/2+o(1) ceiling is proved; no new zero exclusion follows.
-[Current checked endpoint](RiemannGaussian/ZetaRieszReflectedPrimeBounds.lean#L498)
-· [Proof details](docs/zeta-riesz-reflected-prime-bounds.md).
+**Joint signed cancellation crosses the allocation transition.** Lean bounds variation of the literal factorial allocation inside the prime period. Both whole comparisons now pay a strictly larger six-prime population, including actual labels above the old 19/32 threshold, while preserving their margin and exact signed rest.
+Bound the remaining labels and phase periods. The independent -79/1000 whole floor and 3/2 ceiling remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszTransitionSixPeriod.lean#L630)
+· [Proof details](docs/zeta-riesz-allocation-transition.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

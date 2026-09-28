@@ -16,17 +16,17 @@
       "changeReason": "The multiplicity audit proves that exposure does not imply simplicity: multiple zeros have a positive retained source. The same carrier now has a checked two-sided conditional endgame, so the arithmetic campaign must pursue its floor and ceiling together."
     },
     "latestUpdate": {
-      "sequence": 88,
-      "id": "multiplicity-safe-signed-riesz-bounds",
+      "sequence": 104,
+      "id": "allocation-transition-payment",
       "kind": "theorem",
-      "title": "Multiplicity-safe endgame and stronger literal signed bounds.",
-      "body": "Lean now states the floor and ceiling needed for all zero multiplicities. Accumulated proofs add central signed payments, exponential prime heads, a logarithmic count-tail payment, and sharper divisor costs. Three reflected large primes cancel every core coefficient with at least five factors exactly; seven-prime intervals improve to [-4,6] or [-3,3] with one or two such primes.",
-      "next": "The original signed complement remains. Neither the -79/1000-o(1) whole-sum floor nor the 3/2+o(1) ceiling is proved; no new zero exclusion follows.",
+      "title": "Joint signed cancellation crosses the allocation transition.",
+      "body": "Lean bounds variation of the literal factorial allocation inside the prime period. Both whole comparisons now pay a strictly larger six-prime population, including actual labels above the old 19/32 threshold, while preserving their margin and exact signed rest.",
+      "next": "Bound the remaining labels and phase periods. The independent -79/1000 whole floor and 3/2 ceiling remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszReflectedPrimeBoundsTheorem"
+        "rieszAllocationTransitionSignedTheorem"
       ],
-      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md"
+      "documentation": "docs/zeta-riesz-allocation-transition.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -38,6 +38,87 @@
     ]
   },
   "endpoints": [
+    {
+      "id": "positive-five-joint-payment",
+      "label": "Joint payment \u00b7 fixed positive-five sector across a full period",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPositiveFiveMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPositiveFivePeriodTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPositiveFiveFloorPaymentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPositiveFiveCeilingPaymentTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszPositiveFiveScope"
+      ],
+      "documentation": "docs/zeta-riesz-positive-five-payment.md"
+    },
+    {
+      "id": "joint-reflection-savings",
+      "label": "Whole joint estimates \u00b7 explicit unpaid seven-prime savings",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointReflectionIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointReflectionFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointReflectionCeilingTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszJointReflectionScope"
+      ],
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md"
+    },
+    {
+      "id": "seven-prime-second-reflection",
+      "label": "Second reflection \u00b7 seven-prime interval [-1,3]",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveLowerThirdTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSevenReflectionCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSevenReflectionCoreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSevenReflectionSavingsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSevenReflectionTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSevenReflectionScope"
+      ],
+      "documentation": "docs/zeta-riesz-reflected-prime-bounds.md"
+    },
     {
       "id": "reflected-prime-bounds",
       "label": "Reflected primes \u00b7 exact zero sector and smaller signed costs",
@@ -4411,6 +4492,608 @@
         "rieszPrimeCompensationSupplyScope"
       ],
       "documentation": "docs/zeta-riesz-signed-cutoff-profile.md"
+    },
+    {
+      "id": "all-count-owner-joint-payment",
+      "label": "Joint payment \u00b7 all counts above the 59.5% owner share",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointOwnerAllocationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointOwnerMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointOwnerCreditTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointOwnerRemainingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointOwnerFloorPaymentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointOwnerCeilingPaymentTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszJointOwnerScope"
+      ],
+      "documentation": "docs/zeta-riesz-joint-owner-payment.md"
+    },
+    {
+      "id": "sharper-whole-joint-budget",
+      "label": "Whole joint estimates \u00b7 stronger phase and radial budget",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharpCosineTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharpOppositeCosineTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharpRadialLowerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharpRadialUpperTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharpPeriodFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharpPeriodCeilingTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSharpJointScope"
+      ],
+      "documentation": "docs/zeta-riesz-sharp-joint-budget.md"
+    },
+    {
+      "id": "positive-five-boundary-payment",
+      "label": "Whole joint estimates \u00b7 positive-five small-prime boundary",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveBoundaryGeometryTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveBoundaryMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveBoundaryPeriodTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveBoundaryRemainingTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFiveBoundaryScope"
+      ],
+      "documentation": "docs/zeta-riesz-positive-five-boundary.md"
+    },
+    {
+      "id": "factorial-saddle-joint-credit",
+      "label": "Whole joint estimates \u00b7 factorial square-root credit",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleFactorialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleRadialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSaddleCreditTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSaddleJointScope"
+      ],
+      "documentation": "docs/zeta-riesz-saddle-joint-credit.md"
+    },
+    {
+      "id": "positive-five-interior-debit",
+      "label": "Whole joint estimates \u00b7 sharper positive-five debit",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveInteriorCutoffTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveInteriorCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveInteriorIntegralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveInteriorCheckTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveInteriorGeometryTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveBoundarySharpMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveBoundarySharpPeriodTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFiveInteriorScope"
+      ],
+      "documentation": "docs/zeta-riesz-positive-five-interior.md"
+    },
+    {
+      "id": "full-positive-five-payment",
+      "label": "Whole joint estimates \u00b7 full positive-five interior and exact coverage",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFullFiveCoverTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFullFivePrimeFibreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFullFiveLiteralTransferTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFullFiveDirectedPeriodTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFullFiveJointFloorBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFullFiveJointCeilingBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFullFiveCoverageTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixReflectionCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixReflectionCoreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixReflectionSavingsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixReflectionOneOuterTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixCenteredCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixCenteredSavingsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixCenteredCoreTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszFullFiveScope"
+      ],
+      "documentation": "docs/zeta-riesz-full-positive-five-payment.md"
+    },
+    {
+      "id": "triple-period-cancellation",
+      "label": "Whole joint estimates \u00b7 literal unbalanced-triple phase cancellation",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimePeriodCosineTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimePeriodWeightedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimePeriodFactorialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTriplePeriodCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTriplePeriodCountingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTriplePeriodPaymentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTriplePeriodCoreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTriplePeriodWholeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTriplePeriodNonemptyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTriplePeriodAllocationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTriplePeriodDisjointTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszTriplePeriodScope"
+      ],
+      "documentation": "docs/zeta-riesz-triple-period-cancellation.md"
+    },
+    {
+      "id": "combined-triple-payment",
+      "label": "Whole joint estimates \u00b7 certified combined triple payment",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointTripleSupplyDisjointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointTripleFourDisjointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointTripleInteriorDisjointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointTripleHeadDisjointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointTripleOwnerDisjointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointTripleFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointTripleCeilingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointTriplePaymentTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszJointTripleScope"
+      ],
+      "documentation": "docs/zeta-riesz-combined-triple-payment.md"
+    },
+    {
+      "id": "six-prime-second-reflection",
+      "label": "Whole joint estimates \u00b7 second-reflection six-prime savings",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixSecondOneTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixSecondTwoTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixSecondThreeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixSecondThirdsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixSecondClippedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixSecondSavingsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixSecondAtomTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixSecondCoreTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSixSecondScope"
+      ],
+      "documentation": "docs/zeta-riesz-six-second-reflection.md"
+    },
+    {
+      "id": "six-prime-period-payment",
+      "label": "Whole joint estimates \u00b7 signed six-prime period payment",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixPeriodPlateauTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixPeriodMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixPeriodRawTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixPeriodMasksTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixPeriodCoreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixPeriodWholeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixPeriodSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixPeriodNonemptyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixPeriodTripleDisjointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixPeriodOwnerDisjointTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSixPeriodScope"
+      ],
+      "documentation": "docs/zeta-riesz-six-prime-period.md"
+    },
+    {
+      "id": "broad-six-prime-period",
+      "label": "Whole joint estimates \u00b7 broad six-prime cancellation",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszBroadSixResponseTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszBroadSixVariationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszBroadSixLogMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszBroadSixMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszBroadSixRawTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszBroadSixCoreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszBroadSixWholeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszBroadSixSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszBroadSixIncludesOldTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszBroadSixNonemptyTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszBroadSixScope"
+      ],
+      "documentation": "docs/zeta-riesz-broad-six-period.md"
+    },
+    {
+      "id": "wide-six-prime-period",
+      "label": "Whole joint estimates \u00b7 wider six-prime payment",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideSixRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideSixShareTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideSixLogMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideSixNormTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideSixRawTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideSixResidualTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideSixSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideSixIncludesBroadTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWideSixNonemptyTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszWideSixScope"
+      ],
+      "documentation": "docs/zeta-riesz-wide-six-period.md"
+    },
+    {
+      "id": "six-prime-cofactor-period",
+      "label": "Whole joint estimates \u00b7 larger six-prime cofactors",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixCofactorGeometryTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixCofactorLogMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixCofactorRawTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixCofactorResidualTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixCofactorSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixCofactorIncludesWideTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixCofactorDisjointNewTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSixCofactorStrictTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSixCofactorScope"
+      ],
+      "documentation": "docs/zeta-riesz-six-cofactor-period.md"
+    },
+    {
+      "id": "allocation-transition-payment",
+      "label": "Whole joint estimates \u00b7 allocation transition",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAllocationTransitionVarianceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAllocationTransitionVariationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAllocationTransitionFibreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAllocationTransitionResidualTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAllocationTransitionOwnerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAllocationTransitionSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAllocationTransitionIncludesTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAllocationTransitionCrossesTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszAllocationTransitionScope"
+      ],
+      "documentation": "docs/zeta-riesz-allocation-transition.md"
     }
   ],
   "scopes": {
@@ -9244,6 +9927,231 @@
       "label": "Complete marked prime retains the unchanged signed packet",
       "overview": true,
       "documentation": "docs/zeta-riesz-marked-prime-completion.md"
+    },
+    "RiemannGaussian.ZetaRieszSixPrimePeriod.coefficient_plateau": {
+      "label": "Exact six-prime coefficient on the complete period",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixPrimePeriod.eventually_cofactor_mass": {
+      "label": "Actual weighted cofactor mass, including all small primes",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixPrimePeriod.eventually_raw_population_bound": {
+      "label": "Signed six-prime period costs at most m V h / 100000",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixPrimePeriod.population_subset_core": {
+      "label": "All original core masks hold",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixPrimePeriod.eventually_core_joint_bound": {
+      "label": "Two-sided retained core payment",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixPrimePeriod.eventually_whole_joint_bound": {
+      "label": "The same payment reaches whole J+C",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixPrimePeriod.eventually_signed_population_bound": {
+      "label": "Literal signed residual population, with allocation paid",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixPrimePeriod.eventually_population_nonempty": {
+      "label": "Actual six-prime labels occur in every late period",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixPrimePeriod.disjoint_triple": {
+      "label": "No overlap with the previous triple payment",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixPrimePeriod.disjoint_owner": {
+      "label": "No overlap with the previous owner payment",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszBroadSixPeriod.coefficient_eq_response": {
+      "label": "Exact varying Riesz coefficient",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-broad-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszBroadSixPeriod.cofactor_response_variation": {
+      "label": "Eight times the cutoff movement",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-broad-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszBroadSixPeriod.cofactor_log_mass": {
+      "label": "Actual logarithmic cofactor mass is O(v)",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-broad-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszBroadSixPeriod.cofactor_mass": {
+      "label": "Unweighted cofactor mass is O(sqrt v)",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-broad-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszBroadSixPeriod.eventually_raw_population_small": {
+      "label": "Arbitrarily small signed relative population cost",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-broad-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszBroadSixPeriod.eventually_core_joint_bound": {
+      "label": "Broad population pays both core comparisons",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-broad-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszBroadSixPeriod.eventually_whole_joint_bound": {
+      "label": "Broad signed payment reaches the same whole J+C",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-broad-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszBroadSixPeriod.eventually_signed_population_bound": {
+      "label": "Literal broad residual population with allocation paid",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-broad-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszBroadSixPeriod.old_population_subset": {
+      "label": "Broader population contains the old plateau",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-broad-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszBroadSixPeriod.eventually_population_nonempty": {
+      "label": "Actual six-prime labels occur eventually",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-broad-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszWideSixAllocation.allocation_log_rate": {
+      "label": "Certified wider allocation exponent",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszWideSixAllocation.boundedShare_six_le": {
+      "label": "Allocated six-prime fraction decays before scaling",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszWideSixPeriod.cofactor_log_mass": {
+      "label": "Actual wider cofactor mass",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszWideSixPeriod.fibre_norm_bound": {
+      "label": "Only the allocation correction uses a local norm bound",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszWideSixPeriod.eventually_raw_population_small": {
+      "label": "Signed cancellation over the wider prime population",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszWideSixPeriod.eventually_residual_population_small": {
+      "label": "Full allocation cost absorbed in the local signed estimate",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszWideSixPeriod.eventually_signed_population_bound": {
+      "label": "Literal wider residual payment in the core ledger",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszWideSixPeriod.broad_population_subset": {
+      "label": "Prior broad population is included and replaced",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszWideSixPeriod.eventually_population_nonempty": {
+      "label": "Actual wider six-prime population is nonempty eventually",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-wide-six-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixCofactorPeriod.fibre_geometry": {
+      "label": "Larger cofactors retain unique prime ownership",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-cofactor-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixCofactorPeriod.cofactor_log_mass": {
+      "label": "Actual enlarged cofactor logarithmic mass",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-cofactor-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixCofactorPeriod.eventually_raw_population_small": {
+      "label": "Full signed period with larger cofactors",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-cofactor-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixCofactorPeriod.eventually_residual_population_small": {
+      "label": "Full residual payment with allocation absorbed locally",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-cofactor-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixCofactorPeriod.eventually_signed_population_bound": {
+      "label": "Enlarged literal payment enters the core ledger",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-cofactor-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixCofactorPeriod.wide_population_subset": {
+      "label": "Previous wide payment is included and replaced",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-cofactor-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixCofactorPeriod.mem_population_sdiff_of_extra": {
+      "label": "New labels cannot be relabeled as old ones",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-cofactor-period.md"
+    },
+    "RiemannGaussian.ZetaRieszSixCofactorPeriod.eventually_added_population_nonempty": {
+      "label": "Actual payment strictly enlarges eventually",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-six-cofactor-period.md"
+    },
+    "RiemannGaussian.ZetaRieszAllocationVariation.mass_variance": {
+      "label": "Exact variance of the factorial allocation",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-allocation-transition.md"
+    },
+    "RiemannGaussian.ZetaRieszAllocationVariation.boundedShare_fibre_variation": {
+      "label": "Literal allocation varies slowly across a prime period",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-allocation-transition.md"
+    },
+    "RiemannGaussian.ZetaRieszTransitionSixPeriod.fibre_bound": {
+      "label": "Signed residual cancellation through the transition",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-allocation-transition.md"
+    },
+    "RiemannGaussian.ZetaRieszTransitionSixPeriod.eventually_residual_population_small": {
+      "label": "Full residual population has small relative cost",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-allocation-transition.md"
+    },
+    "RiemannGaussian.ZetaRieszTransitionSixPeriod.eventually_owner_mem": {
+      "label": "The moving owner keeps its literal prime eligibility",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-allocation-transition.md"
+    },
+    "RiemannGaussian.ZetaRieszTransitionSixPeriod.eventually_signed_population_bound": {
+      "label": "Transition payment enters both whole comparisons",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-allocation-transition.md"
+    },
+    "RiemannGaussian.ZetaRieszTransitionSixPeriod.previous_population_subset": {
+      "label": "Previous payment is included and replaced",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-allocation-transition.md"
+    },
+    "RiemannGaussian.ZetaRieszTransitionSixPeriod.eventually_added_population_crosses_transition": {
+      "label": "Actual new labels cross the 19/32 transition",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-allocation-transition.md"
     }
   },
   "moduleFamilies": {
@@ -9275,6 +10183,15 @@
     "ZetaRieszFiveInteriorBudget": "arithmetic",
     "ZetaRieszFiveAngularBoundary": "arithmetic",
     "ZetaRieszFiveAngularIncidence": "arithmetic",
-    "ZetaRieszFiveAngularDomain": "arithmetic"
+    "ZetaRieszFiveAngularDomain": "arithmetic",
+    "ZetaRieszPositiveFiveInterior": "arithmetic",
+    "ZetaRieszSixPrimePeriod": "arithmetic",
+    "ZetaRieszSaddlePeriod": "arithmetic",
+    "ZetaRieszBroadSixPeriod": "arithmetic",
+    "ZetaRieszWideSixAllocation": "arithmetic",
+    "ZetaRieszWideSixPeriod": "arithmetic",
+    "ZetaRieszSixCofactorPeriod": "arithmetic",
+    "ZetaRieszAllocationVariation": "arithmetic",
+    "ZetaRieszTransitionSixPeriod": "arithmetic"
   }
 }

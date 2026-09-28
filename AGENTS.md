@@ -1602,6 +1602,323 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+`ZetaRieszTransitionSixPeriod` now REPLACES the preceding six-cofactor
+payment in BOTH whole comparisons. Its lower cofactor cut `203v/500`
+crosses the former owner-share allocation transition `19/32` while retaining
+all previous extra cofactors. `ZetaRieszAllocationVariation` proves exact
+binomial variance and literal share variation `<=24*sqrt(N+1)/v*abs(T-U)`.
+Keep the allocated fraction INSIDE the signed prime sum; it need not vanish.
+Every moving owner is proved in `intermediatePrimes`; the other prime masks
+remain fixed. All small primes, orders, phases and literal masks remain.
+The actual new labels are proved to cross `19/32` eventually. The new
+share cap `1189/2000` stays below the separately paid owner band `119/200`.
+The full residual cost is relative local o(radial), NOT source-o(1), with
+budget `1000*eta*C1+720*C1*sqrt(N+1)/v+100*C2/sqrt(v)`. No extra allocation
+error is needed for this population. `CheckRieszTransitionSixJoint` and
+`CheckRieszTransitionSixWhole` keep the same margin and favorable observations
+on exactly `S\(P union I union H union Q union transitionZ union D)`; earlier
+reflection costs apply only to that rest. Replace prior payments, never
+spend them twice. Both final numerical whole bounds remain open. Reuse
+cached covers unchanged. See `docs/zeta-riesz-allocation-transition.md`.
+The user authorized committing and pushing all accumulated green work on
+2026-09-28. Apply the publication gates, record the exact SHA and CI result,
+and continue concrete joint WHOLE estimates without subagents.
+
+`ZetaRieszSixCofactorPeriod` now REPLACES the wide six-prime payment
+in BOTH whole comparisons. It adds the actual five-prime cofactor band
+`3v/5<log(a)<=133v/200`, with every cofactor prime log `<=33v/100`, to
+all earlier wide cofactors. The full largest-prime phase period, every
+small prime, signs, original masks and allocation remain. Unique ownership
+is proved. `eventually_added_population_nonempty` proves this is a STRICT
+actual population enlargement eventually, not only a formal inclusion.
+Actual cofactor mass constants are at most four times the original broad
+constants; denominator cost is 5/v and allocated norm mass is
+`<=240*C1*m*V*h`. The full residual sum still has arbitrarily small relative
+radial cost. `CheckRieszSixCofactorJoint` and `CheckRieszSixCofactorWhole`
+keep `(sqrt(N+1)/16-1/8)*sourceCredit`, all prior favorable observations,
+and only Q's separate allocation error, on exactly
+`S\(P union I union H union Q union enlargedZ union D)`. Earlier reflection
+costs apply only to this rest. Do not count any previous six-prime payment
+twice. Relative local o(radial) is NOT source-o(1), thresholds are
+existential, and both final whole thresholds remain open. Reuse cached
+covers unchanged. The ~96.3% angular probe is not an arithmetic certificate.
+See `docs/zeta-riesz-six-cofactor-period.md`. Hold commits and subagents.
+Continue concrete joint WHOLE estimates for the remaining labels and periods.
+
+`ZetaRieszWideSixPeriod` now REPLACES the preceding broad six-prime
+population in BOTH whole comparisons. The exact cofactor set is
+`(B(v) union B(4v/5))` filtered by `log(a)>41v/100`, with the original full
+largest-prime phase period. Every small prime, coefficient sign, core mask
+and allocation is retained. The new `591/1000` prime-share cap has proved
+allocated fraction `<=6*exp(-N/100000)`. This rate DOES NOT beat the crude
+source envelope: it is paid only against actual local population mass.
+`eventually_residual_population_small` bounds the FULL residual sum at
+arbitrarily small relative radial cost. No separate allocationBound is
+needed for Z. `CheckRieszWideSixJoint` and `CheckRieszWideSixWhole` retain
+the same `(sqrt(N+1)/16-1/8)*sourceCredit` margin and favorable observations,
+with only Q's separate allocation error, on exactly
+`S\(P union I union H union Q union wideZ union D)`. Prior reflection costs
+apply only to that rest. The previous broad population is included and
+replaced, NEVER paid twice. This is relative local o(radial), NOT
+source-o(1); the final independent whole floor and ceiling remain open.
+Cached covers stay unchanged. The optional ~92.5% angular coverage probe
+is not a certificate. See `docs/zeta-riesz-wide-six-period.md`. Hold commits
+and subagents; continue concrete joint WHOLE estimates, including their
+literal masks and remaining signed sum.
+
+`ZetaRieszBroadSixPeriod` now REPLACES the small six-prime plateau in
+both whole comparisons. The five-prime cofactor log is in
+`(56v/125,3v/5]`, every cofactor prime log is at most `39v/100`, and the
+unique largest prime runs over the full phase period at `2N<=v<=2N+1`.
+Every small prime and both coefficient signs remain. The exact varying
+Riesz coefficient, slope-eight cutoff bound, O(v) logarithmic cofactor
+mass and O(sqrt v) unweighted mass give arbitrarily small relative raw
+cost. `ZetaRieszSaddlePeriod` supplies arbitrarily precise actual signed
+prime-period bounds. No zero or simplicity premise is used. The broader
+population provably contains the old plateau, so NEVER pay both.
+`CheckRieszBroadSixJoint` and `CheckRieszBroadSixWhole` retain the same
+`(sqrt(N+1)/16-1/8)*sourceCredit` margin, all prior observations and two
+allocation errors against precisely the new smaller rest
+`S\(P union I union H union Q union broadZ union D)`. The second-reflection
+costs apply only to that rest. Cached numerical covers are reused unchanged.
+The raw estimate is relative local o(radial), NOT source-o(1); both final
+whole thresholds remain open. The optional angular probe suggests broad
+coverage but is not an arithmetic certificate. See
+`docs/zeta-riesz-broad-six-period.md`. Hold commits and subagents. Each next
+slice must improve joint WHOLE estimates, including their actual masks and
+signed rest; prioritize the remaining populations and phase periods.
+
+`ZetaRieszSixPrimePeriod` now pays a genuine signed six-prime population.
+Four middle primes have logs in `(14v/125,27v/200]`; EVERY least prime with
+log at most `v/200` is retained, including fixed small primes. Across the
+complete last-prime period the literal coefficient is exactly
+`-3*(log(n)/L)*log(minFac(n))`. Actual weighted cofactor counts and the
+signed factorial prime-period estimate give raw cost `m*V*h/100000`.
+All original core masks, unique ownership and allocation are checked;
+the allocated correction is the existing geometric error. The population
+is proved nonempty eventually. `CheckRieszSixPeriodJoint.lean` spends it in
+BOTH certified whole comparisons, without overlap with P,I,H,Q,D. The new
+rest is `S\(P union I union H union Q union Z union D)` and the margin is
+`(sqrt(N+1)/16-1/8)*sourceCredit`, with two allocation errors. All numerical
+cover premises are discharged using the cached assemblies. The final
+`CheckRieszSixPeriodWhole.lean` also retains the previous second-reflection
+costs on precisely this smaller rest. Do not combine this smaller rest
+with an older larger margin. This is a relative local signed payment,
+not source-o(1) or either final whole threshold. See
+`docs/zeta-riesz-six-prime-period.md`. Hold commits and subagents. Continue
+with signed population estimates for the unpaid sectors and remaining
+periods; do not revert to pointwise-only progress.
+
+`ZetaRieszSixPrimeSecondReflection` now reduces the unpaid one-large
+six-prime charge by reflecting its five-prime active cofactor again. If
+one, two or three additional genuine cofactor primes are inactive, the
+original coefficient intervals are [-2,1], [-1,1] or [0,1] in least-prime
+units; the four-factor outer thirds improve the first lower endpoint to
+-1. Unsupported counts keep their previous cost. The original least prime,
+integer, phase and allocation are preserved, and each signed allowance is
+clipped against the existing midpoint estimate. `costs_le_centered` proves
+both costs never increase. `scripts/CheckRieszSixSecondWhole.lean` applies
+them to BOTH concrete whole comparisons, only on exactly
+`S\(P union I union H union Q union D)`, without changing their certified
+populations, favorable observations, vanishing error or
+`(2/25*sqrt(N+1)-1/8)*sourceCredit` margin. All numerical cover premises are
+discharged. The angular probe suggests lower coefficient envelopes, but
+is not a certified population payment; neither final whole threshold is
+closed. See `docs/zeta-riesz-six-second-reflection.md`. Hold commits and
+subagents; reuse the optional checked covers unchanged. The next estimate
+must control a signed population, not infer a whole constant from this
+pointwise gain or the floating diagnostic.
+
+`ZetaRieszPrimePeriodCancellation` and `ZetaRieszTriplePeriod` now prove
+signed cancellation across a complete phase period of literal unbalanced
+triples. The cofactor windows are `(9v/25,2v/5]` and `(2v/25,v/10]` in
+prime logarithms. The exact coefficient, cofactor-dependent final-prime
+interval, factorial kernel, phase, core masks and original allocation are
+retained. The raw weighted prime-period cost is `1/500`; actual cofactor
+counting gives `m*V*h/6250`, with V bounded ABOVE and below by the original
+radial kernel. The terminal `eventually_whole_saddle_bound` chooses a
+nonempty population at `2N<=v<=2N+1/2` and bounds BOTH sides of the SAME
+whole J+C against its exact signed complement with explicit debit
+`pi/(25000*abs(y))*u^(N+1)*exp(-v/2)*v^N/N!+o(1)`.
+No zero or simplicity premise is used. This is a relative local payment,
+not source-o(1); the numerical whole floor and ceiling remain OPEN.
+The payment is now combined with the expanded P,I,D,H ledger in
+`ZetaRieszJointTriplePayment` and the optional
+`scripts/CheckRieszCertifiedTriplePeriod.lean`. All disjointness is proved;
+Q is removed exactly once, and its geometric allocation error is included.
+The new margin is `(2/25*sqrt(N+1)-1/8)*sourceCredit` against exactly
+`S\(P union I union H union Q union D)`. Both comparisons retain the favorable
+coupled Q observation, all earlier observations and original masks. The
+six-prime variants use their existing centered charge only on this smaller
+unpaid rest. Do not pair an older larger margin with this new remainder.
+See `docs/zeta-riesz-combined-triple-payment.md`. Keep this supporting
+explorer endpoint distinct from the main RH endpoint. Hold commits and
+subagents.
+
+The full positive-five interior now has a kernel-checked 100001-leaf cover:
+all 1051 chunks, their repaired assembly and the concrete optional whole
+applications passed. The assembly repair only replaces generated rational
+third-coordinate simplification with `decide +kernel`; unchanged chunk
+hashes and results were revalidated. The exact total is
+`664412815772131473729/167772160000000000000000 < 3961/1000000`.
+With the proved `1003/1000` counting overhead and `1/100000` slack it pays
+the full interior at `1/250`. Its population I REPLACES the old fixed B;
+never charge both. Before the new Q payment, the expanded comparison has
+margin `(2/5*sqrt(N+1)-1/8)*sourceCredit` and exact rest
+`S\(P union I union H union D)`. After Q use only the new margin above.
+The coverage theorem removes all nonzero positive five-prime coefficients
+in the selected period. Other counts, negative signs and periods remain.
+Both numerical whole endgame bounds remain OPEN; sourceCredit grows for
+u>1/2. See `docs/zeta-riesz-full-positive-five-payment.md`. Keep exhaustive
+covers optional and reuse checked artifacts only with matching hashes.
+
+`ZetaRieszSixPrimeReflection` independently proves the literal six-prime
+two-reflected-large coefficient interval `[-1,1]`, replacing `[-3,4]` in
+least-prime logarithm units. Its core-subset inequality retains the exact
+phase, allocation, favorable observations and every other count. The
+one-reflected-large interval is also reduced to `[-3,3]`; the terminal
+core-subset comparison uses charges 3, 1 and 0 for one, two and three
+reflected-large primes respectively. Three-large cancellation is exact.
+The optional full-five application's additional floor/ceiling use this only
+on their unpaid rest, with no extra credit. The concrete
+applications pass with the positive-five cover now checked. No population
+density, final whole constant bound or zero exclusion follows from the
+pointwise savings alone.
+
+`ZetaRieszSixPrimeCentered` clips the one-large charge further by the
+exact five-active-prime midpoint cancellation. With T=log n, D=T-L and
+a=activePart(D,n), its original coefficient costs at most
+`(T/L)*min(3*log(minFac n),4*abs(2*D-log a))`. The corresponding charge is
+proved no larger than the earlier reflected charge. The same optional
+whole floor and ceiling apply it only to their unpaid remainder, retaining
+all prior credits, favorable observations and masks. Its numerical density
+diagnostic is not a population certificate; both final whole thresholds
+remain open. Preserve the cached cover's checked inputs.
+The independently checked `scripts/CheckRieszSixCenteredJoint.lean` applies
+this refinement to BOTH earlier certified whole comparisons using only
+the cached four/negative-five covers. It retains P,B,D,H and their old
+margin; no new positive-five certificate is assumed. Never mix that
+comparison's larger margin with the expanded comparison's smaller rest.
+
+`ZetaRieszPositiveFiveBoundary` now pays the SAME positive-five small-prime
+boundary with local constant `3/40000` and period constant `g/1600`, each
+25 percent below its preceding debit. The existing whole saddle floor and
+ceiling spend this sharper bound, retaining all P,B,D,H populations and the
+identical signed rest, with margin `(25/2*sqrt(N+1)-1/8)*sourceCredit`.
+The exact gain over the preceding endpoints is `sqrt(N+1)*sourceCredit/2`;
+neither final numerical whole bound is closed. `ZetaRieszPositiveFiveInterior`
+checks the ACTUAL near-saddle bin `693/1000..1733/2500`, the exact translated
+cofactor cap in the original five-prime coefficient, and harmonic cap
+subtraction with full integrability. Two accepted cap certificates bound
+the entire translated fibre, including the zero endpoint. These are the
+correct inputs for the positive-five interior debit. The complete 3D
+cover and literal ordered-prime transfer were open at that earlier stage;
+the checked full-interior payment above now discharges them. Spend only
+its proved rational debit, not the floating probe. Do not count the fixed positive-five sector a
+second time when paying its full interior union. Starting thresholds stay
+unevaluated; `N>=20000` alone does not discharge the eventual length bound.
+See `docs/zeta-riesz-positive-five-interior.md`. Keep all previous no-gos,
+all multiplicities and the exact signed rest. Continue locally without
+commits, subagents or exhaustive cover reruns.
+
+`ZetaRieszSaddleCredit` restores the factorial square-root factor in the
+SAME whole comparisons. Stirling monotonicity gives `N!<=3*sqrt(N)*(N/e)^N`
+for every N>=1, hence radial bound `exp(-1)*2^N/(3*sqrt(N))` on the actual
+saddle window and `2*sqrt(N+1)*sourceCredit` per old normalized credit.
+The cached `eventually_joint_saddle_boundary_floor` and `..._ceiling`
+retain exactly P,B,D,H, every favorable observation and the same signed
+rest, with margin `(12*sqrt(N+1)-1/8)*sourceCredit` replacing `47/8` times
+that credit. This is a concrete strengthening of both WHOLE bounds, not
+a new positive-five counting or cancellation theorem. Both final numerical
+thresholds remain OPEN. See `docs/zeta-riesz-saddle-joint-credit.md`.
+The new optional three-variable fibre probe preserves the second-largest
+cofactor denominator and suggests an interior cost near 0.004 on a tighter
+saddle bin. Its floating output, the refined moving-length bin and the
+literal transfer are NOT certified; do not spend those values. Keep all
+previous payments and no-gos, use cached covers, and continue locally
+without commits or subagents.
+
+`ZetaRieszPositiveFiveBoundary` pays an additional literal boundary in both
+WHOLE J+C comparisons: positive squarefree five-prime labels in the original
+central phase period, largest share below `119/200`, and a prime share at
+most `1/100000000`. Exact coefficient geometry forces the other three
+cofactor logs above `9t/100`; the marked logarithmic weight, three finite
+reciprocal sums and exact last-prime interval give local cost `V*h/10000`
+and period cost `g*V0*h/1200`. The cached `eventually_joint_boundary_floor`
+and `..._ceiling` retain the SAME old P,B,D payments, selecting H only from
+their signed complement, and preserve all `47*sourceCredit/8`. The raw
+margin after B and H is `37*g*V0*h/6000`, still paying six credits before
+the owner debit. The favorable H observation remains explicit. This
+removes the small-prime boundary from the positive-five interior in that
+period; it does not pay all positive-five labels, other periods or the
+whole signed rest. Both numerical bounds remain OPEN. Starting orders are
+unevaluated. See `docs/zeta-riesz-positive-five-boundary.md`. Continue
+locally without commits, subagents or exhaustive cover reruns.
+
+`ZetaRieszCentralSharpBudget` strengthens the SAME joint payment: the full
+triangular cosine minorant gives mass at least `2g` on each alternative
+favorable half-period, and the actual short-cell radial factors are
+`99999/100000` and `50001/50000`. Here `g` is the phase mesh count, NOT zero
+multiplicity. The central margin improves from `g*V0*h/500` to
+`g*V0*h/125`. The cached optional `eventually_joint_sharp_owner_floor` and
+`..._ceiling` retain the old positive-five and all-count owner payments,
+both favorable observations and the SAME signed rest, with reserve
+`47*sourceCredit/8` replacing `3*sourceCredit/8`. These are alternative
+bounds, not two additive supplies. The gain is exactly `11*sourceCredit/2`
+in each comparison; it is not a source-normalized constant floor/ceiling.
+Both whole numerical thresholds remain OPEN. Do not widen the paid
+positive-five population without a new literal estimate. Continue locally
+without commits, subagents or exhaustive cover reruns. See
+`docs/zeta-riesz-sharp-joint-budget.md` and the refreshed optional audit.
+
+`ZetaRieszJointOwnerPayment` pays the all-count owner interval
+`119/200 <= log(p)/log(n) <= 13/20` from the EXISTING joint reserve.
+The original missing allocation is at most `3*exp(-N/400000)`; summing
+actual atom norms with the fixed divisor majorant gives
+`3*M_sigma*2^N*exp(-N/500000)`, `sigma=1+1/100000000`.
+This is small RELATIVE to sourceCredit, not independently source-o(1).
+The optional cached transfer's `eventually_joint_owner_floor` and
+`..._ceiling` retain the earlier positive-five payment, both favorable
+observations, and `3*sourceCredit/8`, paying only the previous signed rest.
+`remaining_prime_log_lt` discharges the actual core masks and shows every
+nonzero label in the new rest has all prime shares below `119/200`.
+Both whole-sum numerical thresholds remain OPEN. Never add alternative
+lower/upper credits or reuse the earlier paid populations. Keep all work
+local and use cached covers; no subagents or exhaustive reruns.
+See `docs/zeta-riesz-joint-owner-payment.md`.
+
+`ZetaRieszPositiveFiveBudget` now gives a literal local debit at most
+`(1/10000)*exp(-t/2)*(t+h)^N/N!*h` for positive-coefficient squarefree
+five-prime labels whose four nonlargest log shares lie in `1/10..9/80`.
+Its last-prime interval keeps the exact cofactor endpoint. All original
+masks/allocation/phase remain; the moment threshold is existential.
+`ZetaRieszJointPositiveFiveBounds` pays the COMPLETE original phase period
+from half the existing central `m*V0*h/500` reserve. The optional cached
+`CheckRieszCentralCapacityTransfer` now checks
+`eventually_joint_positive_five_floor` and `..._ceiling` for the actual
+WHOLE J+C, retaining `sourceCredit/2`, favorable new observations, a proved
+vanishing boundary error and one signed rest. Only labels in the OLD rest
+are newly charged; do not spend old angular or radial supplies twice.
+These are alternative lower/upper comparisons, not simultaneous additive
+credits. The SevenCountTail/reflection comparisons remain separate.
+This removes one fixed positive-five sector over a central period, not
+all five-prime labels or the whole radial band. Both numerical endgame
+thresholds remain OPEN for all multiplicities. The ordinary library proves
+the literal cost/spending lemmas; the cached optional application discharges
+its central-cover inputs. Do not rerun exhaustive covers in ordinary CI.
+See `docs/zeta-riesz-positive-five-payment.md` and the updated central audit.
+The probe is optional and uncertified; no theorem uses its sampled values.
+Keep default frontiers/top-ten lists unchanged; continue locally without
+commits, pushes or subagents until further user instruction.
+
+The user's latest steering (2026-09-28) makes concrete improvement of the
+WHOLE joint floor/ceiling estimates the acceptance criterion for each slice.
+Do not stop at an isolated coefficient bound, representation or transport
+lemma. Apply any component saving to the existing unpaid joint remainder,
+preserve all paid populations and their spending ledger, and exhibit the
+resulting improvement in the actual `J+C` estimate. Distinguish such an
+improved finite comparison from reaching the required numerical constants.
+
 The user's latest instruction authorizes committing and pushing the complete
 accumulated local work after the reflected-prime slice passes all gates.
 This supersedes the older local-only instructions for this publication.
@@ -2014,6 +2331,32 @@ favorable observation remains. No supply is spent, no new carrier is
 introduced and no whole-sum floor/ceiling or zero exclusion follows.
 The optional rational-weight probe is not actual prime data, an extremal
 certificate or a density transfer. Keep all earlier payments and audits.
+`ZetaRieszSevenPrimeReflection` sharpens the seven-prime/two-reflected-large
+interval again, from [-3,3] to [-1,3] in the same least-prime units.
+The actual core gap D/T>289/1000>2/7 puts the five-prime active cofactor
+beyond its two-thirds cutoff. A second exact reflection and the proved
+five-prime lower-third bound give the improvement without changing any
+integer, total parity, phase, allocation or mask. `seven_cost_savings`
+quantifies the two alternative phase charges; `eventually_core_subset_bounds`
+transfers both to any selected literal core subset. Every earlier allowance
+is intersected, no supply is spent and both whole-sum multiplicity bounds
+remain OPEN. The endpoint examples in the optional rational probe concern
+model logarithms only, not actual prime populations or source mass.
+`ZetaRieszJointReflectionBounds.eventually_joint_floor` and
+`eventually_joint_ceiling` now apply that saving to the actual WHOLE `J+C`.
+They retain the full `SevenCountTail` payment ledger, its positive/negative
+one-sixty-fourth reserve and every favorable observation. Only the unpaid
+rest receives the improved cost. `sum_observation_savings` gives exactly
+two least-prime units times the original factorial/allocation weight and
+the appropriate cosine orientation on seven-prime/two-outer labels.
+The boundary and radial errors are proved to vanish independently. These
+are improved joint comparisons, not the final numerical -79/1000 floor or
+3/2 ceiling. Neither a positive lower bound for the total saving nor the
+remaining numerical gap is certified. Keep both all-multiplicity targets
+open and attack these joint comparisons directly in subsequent slices.
+The prior accumulated slice is published at c6e081e with exact-SHA CI and
+Pages success. Subsequent reflection work is local pending a new publication
+instruction; continue without subagents.
 The packet selection cancels exactly against its complementary fraction
 in `fullPacket+rest=coreResponse`. Do not require solving those artificial
 rectangle/share projections as a prerequisite for a direct core floor.

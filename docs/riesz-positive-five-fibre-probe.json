@@ -1,0 +1,80 @@
+{
+  "scope": "Uncertified numerical exploration, not a Lean or arithmetic certificate.",
+  "variables": "P largest share; r<=b<=a<=q cofactor shares; q=1-P-b-a-r",
+  "kernel": "max(0,min(d,r,r+b-d,r+b+a-2*d,1-P-3*d)), d=lambda-P",
+  "normalization": "kernel/(lambda*P*r*b*a*q); radial factor and phase excluded",
+  "largest_share_ceiling": "119/200",
+  "rows": [
+    {
+      "cutoff_scope": "existing central bin",
+      "low": "78068869/113100000",
+      "high": "26165377/37700000",
+      "refinements": [
+        {
+          "splits": 100,
+          "positive_cells": 83,
+          "floating_enclosure_estimate": 0.02215627698937521
+        },
+        {
+          "splits": 1000,
+          "positive_cells": 920,
+          "floating_enclosure_estimate": 0.009160412606360718
+        },
+        {
+          "splits": 10000,
+          "positive_cells": 9559,
+          "floating_enclosure_estimate": 0.005906860985268067
+        },
+        {
+          "splits": 30000,
+          "positive_cells": 29062,
+          "floating_enclosure_estimate": 0.005228482752698608
+        },
+        {
+          "splits": 100000,
+          "positive_cells": 97989,
+          "floating_enclosure_estimate": 0.004772780193288634
+        }
+      ]
+    },
+    {
+      "cutoff_scope": "candidate tighter saddle bin; transfer not proved here",
+      "low": "693/1000",
+      "high": "1733/2500",
+      "refinements": [
+        {
+          "splits": 100,
+          "positive_cells": 88,
+          "floating_enclosure_estimate": 0.01560581075142039
+        },
+        {
+          "splits": 1000,
+          "positive_cells": 949,
+          "floating_enclosure_estimate": 0.007180663910294819
+        },
+        {
+          "splits": 10000,
+          "positive_cells": 9730,
+          "floating_enclosure_estimate": 0.004820795371881576
+        },
+        {
+          "splits": 30000,
+          "positive_cells": 29445,
+          "floating_enclosure_estimate": 0.004308049867421913
+        },
+        {
+          "splits": 100000,
+          "positive_cells": 98722,
+          "floating_enclosure_estimate": 0.003953505965705673
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Floating-point errors and complete-cell enclosures are not checked in Lean.",
+    "The refined saddle bin still needs its exact moving-length theorem.",
+    "No original allocation, physical-mask or literal prime-count transfer is proved here.",
+    "The cost cannot be spent in the joint floor or ceiling until those obligations are discharged."
+  ],
+  "source_sha256": "c834024721adfeb04375a3543872f3277251149cad5aa31e6c7b9da2cd1ddc6d"
+}

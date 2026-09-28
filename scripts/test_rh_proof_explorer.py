@@ -124,6 +124,130 @@ def run(output, url=None, refresh_preview=False):
                     assert set(actual) == {
                         campaign.explorer.at_path(status, path) for path in endpoint['statusPaths']
                     }
+                    if endpoint['id'] == 'full-positive-five-payment':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 14
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        transfer = next(n for n in roots if n['id'].endswith('.eventually_checked_tree_mass_upper'))
+                        assert all(t in transfer['statement'] for t in ('Cover.check', 'population', '1003 / 1000'))
+                        coverage = next(n for n in roots if n['id'].endswith('.remaining_positive_five_coefficient_eq_zero'))
+                        assert all(t in coverage['statement'] for t in ('coreBand', 'residualCoefficient', '= 5', '= 0'))
+                        six = next(n for n in roots if n['id'].endswith('.coefficient_six_two_outer_sharp'))
+                        assert all(t in six['statement'] for t in ('Squarefree', '= 6', 'outerPrimes', 'minFac'))
+                        centered = next(n for n in roots if n['id'].endswith('.coefficient_six_one_outer_centered'))
+                        assert all(t in centered['statement'] for t in ('min', 'activePart', 'minFac', '= 1'))
+                        savings = next(n for n in roots if n['id'].endswith('.centeredSixCost_le_reflected'))
+                        assert all(t in savings['statement'] for t in ('centeredSixCost', 'reflectedSixCost', '≤'))
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('original moving masks', 'favorable interior atoms',
+                            'exact signed rest', 'both numerical whole endgame bounds remain open'))
+                    if endpoint['id'] == 'triple-period-cancellation':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 11
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        whole = next(n for n in roots if n['id'].endswith('.eventually_whole_saddle_bound'))
+                        assert all(t in whole['statement'] for t in ('lowerThresholdPacket',
+                            'shortOverflowPacket', 'coreBand', 'residualCoefficient', 'Nonempty',
+                            '25000', 'factorial', 'Tendsto'))
+                        period = next(n for n in roots if n['id'].endswith('.eventually_weighted_prime_period'))
+                        assert all(t in period['statement'] for t in ('1 / 500', 'logPrimes', 'Real.cos'))
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('exact signed complement',
+                            'not source-o(1)', 'Both numerical whole endgame bounds remain open'))
+                    if endpoint['id'] == 'combined-triple-payment':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 8
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        payment = next(n for n in roots if n['id'].endswith('.eventually_signed_population_bound'))
+                        assert all(t in payment['statement'] for t in ('6250', 'allocationBound',
+                            'residualCoefficient', 'coreBand', 'population'))
+                        floor = next(n for n in roots if n['id'].endswith('.scaled_floor_after_signed_payment'))
+                        ceiling = next(n for n in roots if n['id'].endswith('.scaled_ceiling_after_signed_payment'))
+                        assert 'max' in floor['statement'] and 'min' in ceiling['statement']
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('exact signed rest', '1051 chunks',
+                            '(2/25*sqrt(N+1)-1/8)', 'not source-o(1)',
+                            'Both numerical whole endgame bounds remain open'))
+                    if endpoint['id'] == 'allocation-transition-payment':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 8
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        variation = next(n for n in roots if n['id'].endswith('.boundedShare_fibre_variation'))
+                        assert all(t in variation['statement'] for t in ('boundedShare', '√', '24'))
+                        residual = next(n for n in roots if n['id'].endswith('.eventually_residual_population_small'))
+                        assert all(t in residual['statement'] for t in ('residualCoefficient', 'Real.cos', 'factorial'))
+                        cross = next(n for n in roots if n['id'].endswith('.eventually_added_population_crosses_transition'))
+                        assert '19 / 32' in cross['statement'] and 'primeFactors' in cross['statement']
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('exact signed rest', 'not source-o(1)', 'not paid twice',
+                            'Both numerical whole endgame bounds remain open'))
+                    if endpoint['id'] == 'six-prime-cofactor-period':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 8
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        residual = next(n for n in roots if n['id'].endswith('.eventually_residual_population_small'))
+                        assert all(t in residual['statement'] for t in ('residualCoefficient', 'Real.cos', 'factorial', 'population'))
+                        signed = next(n for n in roots if n['id'].endswith('.eventually_signed_population_bound'))
+                        assert 'coreBand' in signed['statement'] and 'allocationBound' not in signed['statement']
+                        strict = next(n for n in roots if n['id'].endswith('.eventually_added_population_nonempty'))
+                        assert 'Nonempty' in strict['statement'] and 'ZetaRieszWideSixPeriod.population' in strict['statement']
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('exact signed rest', 'not source-o(1)', 'not paid twice',
+                            'strict enlargement', 'Both numerical whole endgame bounds remain open'))
+                    if endpoint['id'] == 'wide-six-prime-period':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 9
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        residual = next(n for n in roots if n['id'].endswith('.eventually_residual_population_small'))
+                        assert all(t in residual['statement'] for t in ('residualCoefficient', 'Real.cos', 'factorial', 'population'))
+                        signed = next(n for n in roots if n['id'].endswith('.eventually_signed_population_bound'))
+                        assert 'coreBand' in signed['statement'] and 'allocationBound' not in signed['statement']
+                        inclusion = next(n for n in roots if n['id'].endswith('.broad_population_subset'))
+                        assert 'ZetaRieszBroadSixPeriod.population' in inclusion['statement']
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('exact signed rest', 'not source-o(1)', 'not paid twice',
+                            'Only Q retains', 'Both numerical whole endgame bounds remain open'))
+                    if endpoint['id'] == 'broad-six-prime-period':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 10
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        raw = next(n for n in roots if n['id'].endswith('.eventually_raw_population_small'))
+                        assert all(t in raw['statement'] for t in ('Real.cos', 'factorial', 'coefficient', 'population'))
+                        whole = next(n for n in roots if n['id'].endswith('.eventually_whole_joint_bound'))
+                        assert all(t in whole['statement'] for t in ('lowerThresholdPacket', 'shortOverflowPacket', 'Tendsto'))
+                        inclusion = next(n for n in roots if n['id'].endswith('.old_population_subset'))
+                        assert 'ZetaRieszSixPrimePeriod.population' in inclusion['statement']
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('exact signed rest', 'not source-o(1)', 'not paid twice',
+                            'Both numerical whole endgame bounds remain open'))
+                    if endpoint['id'] == 'six-prime-period-payment':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 10
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        payment = next(n for n in roots if n['id'].endswith('.eventually_signed_population_bound'))
+                        assert all(t in payment['statement'] for t in ('100000', 'allocationBound',
+                            'residualCoefficient', 'coreBand', 'population'))
+                        whole = next(n for n in roots if n['id'].endswith('.eventually_whole_joint_bound'))
+                        assert all(t in whole['statement'] for t in ('lowerThresholdPacket',
+                            'shortOverflowPacket', 'Tendsto', '100000'))
+                        nonempty = next(n for n in roots if n['id'].endswith('.eventually_population_nonempty'))
+                        assert 'Nonempty' in nonempty['statement']
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('exact signed rest', '(1/16*sqrt(N+1)-1/8)',
+                            'not source-o(1)', 'Both numerical whole endgame bounds remain open'))
+                    if endpoint['id'] == 'six-prime-second-reflection':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 8
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        three = next(n for n in roots if n['id'].endswith('.coefficient_three_inner'))
+                        assert all(t in three['statement'] for t in ('Squarefree', 'secondCount', '= 3', 'minFac'))
+                        savings = next(n for n in roots if n['id'].endswith('.costs_le_centered'))
+                        assert all(t in savings['statement'] for t in ('floorCost', 'ceilingCost', 'centeredSixCost'))
+                        core = next(n for n in roots if n['id'].endswith('.core_subset_bounds'))
+                        assert all(t in core['statement'] for t in ('coreBand', 'residualCoefficient', 'max', 'min'))
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('[-2,1]', '[-1,1]', '[0,1]',
+                            'exact unpaid rest', 'Both numerical whole endgame bounds remain open'))
                     if endpoint['id'] == 'harmonic-rectangle-reserve':
                         nodes = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
                         reserve = next(n for n in nodes if n['id'].endswith('.eventually_rectangleReserve_ge'))
@@ -1457,7 +1581,17 @@ def run(output, url=None, refresh_preview=False):
                                 source_page.close()
                             page.locator('#close-details').click()
                     page.locator('#all-steps').click()
-                    assert page.evaluate('PROOF_VIEW.visible.size > 5')
+                    expected_steps = page.evaluate('''() => {
+                        const roots = PROOF_VIEW.endpoint.roots;
+                        return [...new Set([
+                            ...[...PROOF_VIEW.model.closure(roots)].filter(i => {
+                                const node = PROOF_DATA.nodes[i];
+                                return node.project && node.kind === 'theorem' && !node.generated;
+                            }), ...roots
+                        ])].sort((a, b) => a - b);
+                    }''')
+                    actual_steps = page.evaluate('[...PROOF_VIEW.visible].sort((a, b) => a - b)')
+                    assert actual_steps == expected_steps, endpoint['id']
                     page.locator('#overview').click()
                     page.locator('#fit').click()
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth + 1')

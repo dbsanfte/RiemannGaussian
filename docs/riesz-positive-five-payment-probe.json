@@ -1,0 +1,69 @@
+{
+  "scope": "Uncertified continuum diagnostic; the literal prime bound is proved separately in Lean.",
+  "cofactor_share_interval": [
+    "1/10",
+    "9/80"
+  ],
+  "cutoff_interval": [
+    "78068869/113100000",
+    "26165377/37700000"
+  ],
+  "normalization": "coefficient/log(n); common radial weight and phase excluded",
+  "rational_envelope": "960930621/12500000000000",
+  "envelope_decimal": 7.687444968e-05,
+  "lean_local_debit": "1/10000",
+  "period_envelope_per_mesh_unit": "101/125000",
+  "old_period_credit": "1/500",
+  "retained_period_credit": "1/1000",
+  "rows": [
+    {
+      "seed": 17,
+      "samples": 262144,
+      "cutoff_ratio": 0.6902640937223696,
+      "model_positive_angular_mass": 1.5982572754955366e-06,
+      "positive_fraction": 1.0
+    },
+    {
+      "seed": 17,
+      "samples": 262144,
+      "cutoff_ratio": 0.6931471805599453,
+      "model_positive_angular_mass": 1.430496243344352e-06,
+      "positive_fraction": 1.0
+    },
+    {
+      "seed": 17,
+      "samples": 262144,
+      "cutoff_ratio": 0.6940418302387268,
+      "model_positive_angular_mass": 1.3765615801190626e-06,
+      "positive_fraction": 1.0
+    },
+    {
+      "seed": 29,
+      "samples": 262144,
+      "cutoff_ratio": 0.6902640937223696,
+      "model_positive_angular_mass": 1.5982569552937375e-06,
+      "positive_fraction": 1.0
+    },
+    {
+      "seed": 29,
+      "samples": 262144,
+      "cutoff_ratio": 0.6931471805599453,
+      "model_positive_angular_mass": 1.4304963063357866e-06,
+      "positive_fraction": 1.0
+    },
+    {
+      "seed": 29,
+      "samples": 262144,
+      "cutoff_ratio": 0.6940418302387268,
+      "model_positive_angular_mass": 1.3765615415845235e-06,
+      "positive_fraction": 1.0
+    }
+  ],
+  "limitations": [
+    "Samples do not certify prime counts, integration errors, phases or source-scale mass.",
+    "The literal theorem retains the original allocation and all masks; the model drops allocation.",
+    "The counting proof safely overcounts the four cofactor orders; the model divides by 24.",
+    "Only this fixed five-prime sector is paid. The remaining joint floor and ceiling are open."
+  ],
+  "source_sha256": "4ac5265a7ec7fe128fdad9a1c20620cdabc3a6ecbd3a7e13ab21db78e63d4e35"
+}

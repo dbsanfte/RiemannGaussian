@@ -1,0 +1,73 @@
+{
+  "model_only": true,
+  "scope": "Binomial allocation diagnostic; no literal prime-sum or source-scale certificate",
+  "owner_transition": 0.59375,
+  "full_period_width": 0.11635528346628864,
+  "cofactor_share": 0.406125,
+  "rows": [
+    {
+      "N": 256,
+      "owner_share_at_center": 0.5938749999999999,
+      "allocated_at_center": 0.5079636742161067,
+      "unallocated_at_center": 0.49203632578389334,
+      "allocation_span": 0.001202962535279406,
+      "rigorous_six_incidence_span_bound": 0.09393292700321132,
+      "sampled_ratio": 0.012806611841641854
+    },
+    {
+      "N": 640,
+      "owner_share_at_center": 0.5938749999999999,
+      "allocated_at_center": 0.5065822710676033,
+      "unallocated_at_center": 0.49341772893239666,
+      "allocation_span": 0.0007595012933518941,
+      "rigorous_six_incidence_span_bound": 0.059339010474244516,
+      "sampled_ratio": 0.0127993589256354
+    },
+    {
+      "N": 1536,
+      "owner_share_at_center": 0.5938749999999999,
+      "allocated_at_center": 0.5065712039806595,
+      "unallocated_at_center": 0.49342879601934053,
+      "allocation_span": 0.0004899126961918077,
+      "rigorous_six_incidence_span_bound": 0.03828573395295441,
+      "sampled_ratio": 0.01279622056596364
+    },
+    {
+      "N": 4096,
+      "owner_share_at_center": 0.5938749999999999,
+      "allocated_at_center": 0.5080855340891852,
+      "unallocated_at_center": 0.4919144659108148,
+      "allocation_span": 0.0002998941695868673,
+      "rigorous_six_incidence_span_bound": 0.023440360848347545,
+      "sampled_ratio": 0.012793922906182935
+    },
+    {
+      "N": 8192,
+      "owner_share_at_center": 0.5938749999999999,
+      "allocated_at_center": 0.5103118015934558,
+      "unallocated_at_center": 0.4896881984065442,
+      "allocation_span": 0.000212009979295269,
+      "rigorous_six_incidence_span_bound": 0.01657382667755658,
+      "sampled_ratio": 0.012791854495640523
+    },
+    {
+      "N": 65536,
+      "owner_share_at_center": 0.5938749999999999,
+      "allocated_at_center": 0.5263718430630713,
+      "unallocated_at_center": 0.4736281569369287,
+      "allocation_span": 7.481185526336809e-05,
+      "rigorous_six_incidence_span_bound": 0.005859419703313053,
+      "sampled_ratio": 0.012767792554793048
+    },
+    {
+      "N": 1000000,
+      "owner_share_at_center": 0.5938749999999999,
+      "allocated_at_center": 0.6005522768219371,
+      "unallocated_at_center": 0.3994477231780629,
+      "allocation_span": 1.8580636910514592e-05,
+      "rigorous_six_incidence_span_bound": 0.0015000007499998125,
+      "sampled_ratio": 0.012387085080135403
+    }
+  ],
+  "source_sha256": "077317443c38aa91f843b9ecc81dff445dd13710cdd512f4ea2d02385f28e796"
+}
