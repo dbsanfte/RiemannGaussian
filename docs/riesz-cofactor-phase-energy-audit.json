@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "scope": "The literal cofactor phase is now summed against each sharp Mobius cutoff BEFORE its square. Weighted finite summation by parts gives both whole-core bounds with explicit cost sum_a sqrt(Q_a V_a), where Q_a sums squared SIGNED cofactor-prefix correlations divided by the cutoff. No unevaluated mean constant multiplies this new cost. All original masks, factorial orders, allocation, canonical ownership and prime counts remain; arbitrary common exact prime coordinates and affine-log centering are allowed. One universal mean budget proves the centered new cost no larger than the earlier joint cost with that SAME E. The final whole-core enclosure intersects the new cost with the already proved radial large-order bound; the old outer error is charged only on the radial branch. Finite floating tests at y=54, with all cofactor shells summed BEFORE squaring, give costs about 0.000189, 0.0000483, 0.0000298 at N=6,8,10, versus old costs 0.00425,0.00308,0.00340 BEFORE sqrt(E). At N=10, keeping shells separate costs 0.000347; joining them retains substantial further cancellation. These tests omit earlier nested core deletions. In fact all three tested windows lie wholly ABOVE the literal physical annulus; they give NO numerical bound for a nonempty literal core. Cancellation on the enlarged test set does NOT bound its masked subsets. They are NOT certificates or proof of asymptotic decay; finite decreasing joined costs do not establish the required large-order rate. The required large-order signed-correlation saving, the -79/1000 cofinal floor and 3/2 ceiling all remain OPEN. No new zero exclusion, density substitution, source completion or low-order deletion is used.",
+  "status": "All local mathematical, presentation and generated-document freshness gates passed: strict full build (11382 jobs), project/verbose lint, 104 cumulative terminal axiom audits, 2844-file source scan, compiled status/freshness, all three explorers and desktop/mobile browser checks, both plots and GitHub working README rendering. The refreshed optional probe explicitly records that its test windows are outside the literal physical annulus. Numerical probes remain uncertified. The full obstruction remains open. Local and unpublished.",
+  "wholeCoreCovered": true,
+  "allCentralCountsIncluded": true,
+  "newCostHasUnevaluatedMeanMultiplier": false,
+  "largeOrderPhaseSavingProved": false,
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "rieszCofactorPhasePrefixTheorem": "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.signed_prefix_bound",
+    "rieszCofactorPhaseDualTheorem": "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.exists_phaseEnergy_bound",
+    "rieszCofactorPhaseMatrixTheorem": "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.joint_bounds",
+    "rieszCofactorPhaseCompareTheorem": "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.exists_cost_le_joint",
+    "rieszCofactorPhaseLiteralTheorem": "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.literal_bounds",
+    "rieszCofactorPhaseWholeTheorem": "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.whole_bounds",
+    "rieszCofactorPhasePartitionTheorem": "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.partition_bounds",
+    "rieszCofactorPhaseCoreTheorem": "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.core_bounds",
+    "rieszCofactorPhaseIntersectionTheorem": "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.exists_eventual_core_intersection"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszCofactorPhaseEnergy.lean": "c216bfbac39595b8f48d473ad6b32da6ded27c7d1ef377add71d7e4aafef1fff",
+    "RiemannGaussian/ZetaRieszSignedCutoffEnergy.lean": "5566cbe25e4bde6c1f2117ae611c12159a65f59bcd3cfd45422ec1db9754d840",
+    "RiemannGaussian/ZetaRieszCenteredPrimeEnergy.lean": "41aafeaf461b1a2ca0dcba305ac83c439d7b07599259da320a28ff269214f4fd",
+    "scripts/probe_riesz_cofactor_phase_energy.py": "66e13085d01852bd84994ff2268cf7edefed8766e28494a3ecb1c1b7012c0f12"
+  },
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.signed_prefix_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.exists_phaseEnergy_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.joint_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.exists_cost_le_joint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.literal_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.whole_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.partition_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.core_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCofactorPhaseEnergy.exists_eventual_core_intersection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

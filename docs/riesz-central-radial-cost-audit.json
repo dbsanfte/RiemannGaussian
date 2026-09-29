@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "scope": "The SAME combined centralCost is bounded by (12*sqrt(2E)/log(2))*(4*exp(1/2)*log(4))*sqrt(16N+8)*(2u)^N. Radial shell weights are summed before taking their maxima; literal Chebyshev prime counts pay sum sqrt(log p)/p without a log-log loss. All central labels, counts, factorial orders, original masks, allocation and full phase remain in the exact cost. Both original whole-core bounds inherit the minimum of the old and new majorants, with the paid outer error charged once. E and the eventual starting order remain UNEVALUATED. This improves N*log(N) to sqrt(N) but does NOT prove additional phase cancellation or remove (2u)^N. No actual-cost divergence is claimed. The -79/1000 floor, 3/2 ceiling and zero exclusion remain OPEN. The next task is direct phase cancellation strong enough to overcome the remaining source exponent, not another polynomial improvement. No new carrier, prime-density approximation or completion is used.",
+  "status": "All local gates passed: focused and full strict Lean build (11381 jobs), project/verbose lint, 95 cumulative terminal axiom audits, compiled status and byte-for-byte freshness, 2843-file source scan, all three explorers and browser checks, both plots and the GitHub working README renderer. Optional certificate modules remain excluded. Uncommitted local work; no new CI or publication claim.",
+  "wholeCoreCovered": true,
+  "allCentralCountsIncluded": true,
+  "largeOrderMajorantProved": true,
+  "majorantDecays": false,
+  "phaseCancellationSavingProved": false,
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "constantEvaluated": false,
+  "terminalTheorems": {
+    "rieszCentralRadialIntegralTheorem": "RiemannGaussian.ZetaRieszCentralRadialCost.integral_radial",
+    "rieszCentralRadialLatticeTheorem": "RiemannGaussian.ZetaRieszCentralRadialCost.sum_radial_le",
+    "rieszCentralRadialPrimeMassTheorem": "RiemannGaussian.ZetaRieszCentralRadialCost.primeEnergyMass_le",
+    "rieszCentralRadialWeightTheorem": "RiemannGaussian.ZetaRieszCentralRadialCost.primeWeight_radial_le",
+    "rieszCentralRadialCostTheorem": "RiemannGaussian.ZetaRieszCentralRadialCost.centralCost_le_radialGrowth",
+    "rieszCentralRadialOrderTheorem": "RiemannGaussian.ZetaRieszCentralRadialCost.radialGrowthBound_le_sqrt",
+    "rieszCentralRadialWholeTheorem": "RiemannGaussian.ZetaRieszCentralRadialCost.exists_eventual_core_radial_bound"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszCentralRadialCost.lean": "ef0f3433d632a4ec660d79fd165aea58a913f3e6c8a5a5910ce9880ebdebf6b6",
+    "RiemannGaussian/ZetaRieszCentralCostGrowth.lean": "79cbb17931859cbdd2ba98f41167fafc0a772658146a323473263591757a7d5f",
+    "RiemannGaussian/ZetaRieszCentralPrimeDifference.lean": "18723d6ae52ff6d47279012c0504a2b484fe43a899a6f936271e485a4d774e04"
+  },
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszCentralRadialCost.integral_radial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralRadialCost.sum_radial_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralRadialCost.primeEnergyMass_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralRadialCost.primeWeight_radial_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralRadialCost.centralCost_le_radialGrowth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralRadialCost.radialGrowthBound_le_sqrt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralRadialCost.exists_eventual_core_radial_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

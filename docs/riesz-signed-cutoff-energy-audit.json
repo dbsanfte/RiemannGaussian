@@ -12,7 +12,7 @@
     "rieszLiteralJointProfileTheorem": "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_literal_joint_bounds"
   },
   "sourceHashes": {
-    "RiemannGaussian/ZetaRieszSignedCutoffEnergy.lean": "c5046b28f59f34362ea3bb6dfb97f823c57fb3f34a338c542c53f9b4ac8901e4",
+    "RiemannGaussian/ZetaRieszSignedCutoffEnergy.lean": "5566cbe25e4bde6c1f2117ae611c12159a65f59bcd3cfd45422ec1db9754d840",
     "RiemannGaussian/ZetaRieszLinearCutoffMean.lean": "32566baf41fd656af30514bd988a0ddf5708dbf89481d50ee5dc7b20ced9352c",
     "RiemannGaussian/ZetaRieszSquarefreeSeparatedMean.lean": "33036d3f48598b1a12dcbbe8d23dbaf8e97f23535610afa8ba5df8a34a50ef43",
     "scripts/probe_riesz_signed_cutoff_energy.py": "081bdafae72d5f283b82b2f83562f7a9072e157081526cc86ac5d37d6ac66fe7"

@@ -1,0 +1,149 @@
+{
+  "scope": "Optional signed cofactor-main diagnostic, outside CI.\n\nActual squarefree integers and ordinary primes are enumerated in a literal\nradial/physical window. The largest prime exceeds its whole cofactor.\nThe owner allocation and full product phase are retained. Nonowner allocation\nis omitted here; its existing eventual theorem is NOT a finite error bound\nfor these sample orders. This is a few-column diagnostic, not the whole core,\nnot a certified bound, and not evidence for an eventual source-scale floor.\nThe squarefree density is evaluated by its classical Euler product formula;\nthis floating computation does not evaluate the Lean counting constant.",
+  "columns": [
+    {
+      "order": 16,
+      "markedPrime": 7202963,
+      "length": 16.51165685456366,
+      "cofactorLower": 6892862,
+      "cofactorUpper": 7202962,
+      "shortDivisorCutoff": 2,
+      "squarefreeCompositeCount": 168851,
+      "primeCofactorCount": 19664,
+      "nonemptyPhysicalAnnulus": true,
+      "allOriginalMasksVerified": false,
+      "nonownerAllocationIncluded": false,
+      "actualTwoHingesReducedBySaturation": true,
+      "sourceFloorCertified": false,
+      "rows": [
+        {
+          "height": 0.0,
+          "normalizedLiteralOwnerColumn": 1.9241268709888046e-10,
+          "signedDensityMain": 2.1515924668894025e-10,
+          "signedPrimeSubtraction": -2.2743125902447455e-11,
+          "signedMain": 1.924161207864928e-10,
+          "countingDiscrepancy": -3.433687612325538e-15,
+          "signedMainOverSeparatedAbs": 0.8088028660268117,
+          "fullPhaseRetained": true
+        },
+        {
+          "height": 54.0,
+          "normalizedLiteralOwnerColumn": 2.70379430253293e-11,
+          "signedDensityMain": 3.027207634866565e-11,
+          "signedPrimeSubtraction": -3.2448753443445592e-12,
+          "signedMain": 2.702720100432109e-11,
+          "countingDiscrepancy": 1.0742021008210107e-14,
+          "signedMainOverSeparatedAbs": 0.8063740775673666,
+          "fullPhaseRetained": true
+        },
+        {
+          "height": 108.0,
+          "normalizedLiteralOwnerColumn": -5.2429771735079386e-11,
+          "signedDensityMain": -5.866844653397901e-11,
+          "signedPrimeSubtraction": 6.224202370852068e-12,
+          "signedMain": -5.244424416312694e-11,
+          "countingDiscrepancy": 1.447242804755413e-14,
+          "signedMainOverSeparatedAbs": 0.8081692618225453,
+          "fullPhaseRetained": true
+        }
+      ],
+      "elapsedSeconds": 1.1209870229940861
+    },
+    {
+      "order": 16,
+      "markedPrime": 8886113,
+      "length": 16.51165685456366,
+      "cofactorLower": 5587260,
+      "cofactorUpper": 8886112,
+      "shortDivisorCutoff": 1,
+      "squarefreeCompositeCount": 1796495,
+      "primeCofactorCount": 208964,
+      "nonemptyPhysicalAnnulus": true,
+      "allOriginalMasksVerified": false,
+      "nonownerAllocationIncluded": false,
+      "actualTwoHingesReducedBySaturation": true,
+      "sourceFloorCertified": false,
+      "rows": [
+        {
+          "height": 0.0,
+          "normalizedLiteralOwnerColumn": 1.1849670213620642e-09,
+          "signedDensityMain": 1.3229596258845049e-09,
+          "signedPrimeSubtraction": -1.379901685672129e-10,
+          "signedMain": 1.184969457317292e-09,
+          "countingDiscrepancy": -2.4359552277481724e-15,
+          "signedMainOverSeparatedAbs": 0.8110952626965535,
+          "fullPhaseRetained": true
+        },
+        {
+          "height": 54.0,
+          "normalizedLiteralOwnerColumn": -3.316734595914825e-12,
+          "signedDensityMain": -3.7423919620073934e-12,
+          "signedPrimeSubtraction": 4.3503541690174173e-13,
+          "signedMain": -3.3073565451056517e-12,
+          "countingDiscrepancy": -9.378050809173472e-15,
+          "signedMainOverSeparatedAbs": 0.7917208954496086,
+          "fullPhaseRetained": true
+        },
+        {
+          "height": 108.0,
+          "normalizedLiteralOwnerColumn": -3.229071156644156e-12,
+          "signedDensityMain": -3.5790077776768393e-12,
+          "signedPrimeSubtraction": 3.579618951211522e-13,
+          "signedMain": -3.221045882555687e-12,
+          "countingDiscrepancy": -8.025274088469195e-15,
+          "signedMainOverSeparatedAbs": 0.818153592802888,
+          "fullPhaseRetained": true
+        }
+      ],
+      "elapsedSeconds": 1.9404880690854043
+    },
+    {
+      "order": 16,
+      "markedPrime": 11995003,
+      "length": 16.51165685456366,
+      "cofactorLower": 4139142,
+      "cofactorUpper": 10469735,
+      "shortDivisorCutoff": 1,
+      "squarefreeCompositeCount": 3447113,
+      "primeCofactorCount": 401440,
+      "nonemptyPhysicalAnnulus": true,
+      "allOriginalMasksVerified": false,
+      "nonownerAllocationIncluded": false,
+      "actualTwoHingesReducedBySaturation": true,
+      "sourceFloorCertified": false,
+      "rows": [
+        {
+          "height": 0.0,
+          "normalizedLiteralOwnerColumn": 7.230024551414545e-10,
+          "signedDensityMain": 8.076041812016687e-10,
+          "signedPrimeSubtraction": -8.460262562212031e-11,
+          "signedMain": 7.230015555795485e-10,
+          "countingDiscrepancy": 8.995619059957417e-16,
+          "signedMainOverSeparatedAbs": 0.8103519834749943,
+          "fullPhaseRetained": true
+        },
+        {
+          "height": 54.0,
+          "normalizedLiteralOwnerColumn": -2.084145965946153e-12,
+          "signedDensityMain": -2.3371183806060566e-12,
+          "signedPrimeSubtraction": 2.525391756556638e-13,
+          "signedMain": -2.0845792049503928e-12,
+          "countingDiscrepancy": 4.3323900423973776e-16,
+          "signedMainOverSeparatedAbs": 0.8049632662472835,
+          "fullPhaseRetained": true
+        },
+        {
+          "height": 108.0,
+          "normalizedLiteralOwnerColumn": -2.0936067927248037e-12,
+          "signedDensityMain": -2.2716541471112057e-12,
+          "signedPrimeSubtraction": 1.8480826499877357e-13,
+          "signedMain": -2.0868458821124323e-12,
+          "countingDiscrepancy": -6.760910612371404e-15,
+          "signedMainOverSeparatedAbs": 0.849532999904499,
+          "fullPhaseRetained": true
+        }
+      ],
+      "elapsedSeconds": 2.802217861986719
+    }
+  ]
+}

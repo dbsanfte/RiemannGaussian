@@ -4826,7 +4826,18 @@
     "ZetaRieszRetainedDiscrepancy": "arithmetic",
     "ZetaRieszSmoothPrimeTail": "arithmetic",
     "ZetaRieszMovingPrimeIntervals": "arithmetic",
-    "ZetaRieszCenteredPrimeEnergy": "arithmetic"
+    "ZetaRieszCenteredPrimeEnergy": "arithmetic",
+    "ZetaRieszJointPrimeEnergy": "arithmetic",
+    "ZetaRieszQuadraticPrimeEnergy": "arithmetic",
+    "ZetaRieszConditionedPrimeEnergy": "arithmetic",
+    "ZetaRieszCoordinateGain": "arithmetic",
+    "ZetaRieszCubicPrimeEnergy": "arithmetic",
+    "ZetaRieszLargeOrderCore": "arithmetic",
+    "ZetaRieszCentralPrimeDifference": "arithmetic",
+    "ZetaRieszCentralCostGrowth": "arithmetic",
+    "ZetaRieszCentralRadialCost": "arithmetic",
+    "ZetaRieszCofactorPhaseEnergy": "arithmetic",
+    "ZetaRieszCofactorDiscrepancy": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

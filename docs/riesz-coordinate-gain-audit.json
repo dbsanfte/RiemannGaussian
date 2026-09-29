@@ -1,0 +1,756 @@
+{
+  "schemaVersion": 1,
+  "scope": "Both original whole-core bounds retain the SAME signed center under every admissible common coordinate change. Lean proves exact plane-rotation preservation, signed cross energies, and admissibility of finite rational rotation recipes, including recipes starting at identity. For old/new costs C,D, the nonnegative gain max(0,C-D) raises the original floor and lowers its ceiling by the SAME amount; disjoint populations add their actual gains with the same UNEVALUATED E, without a family-count loss. Both the quadratic and further conditioned whole-core costs are covered. All original masks, allocation, factorial orders zero and one, prime counts, unique ownership, full product phase and exterior profile terms remain. The optional enlarged N=10 test retains 32,709,252 labels and all coordinate directions up to cofactor cap 6,484,203. Its quadratic cost falls from about 0.003818 to 0.003406 before sqrt(E), using an explicit rational rotation recipe from identity; the signed center is unchanged. These floating costs are NOT Lean numerical certificates, the population omits earlier nested core deletions, and E is not evaluated. Exact coordinate admissibility is not certification of the cost comparison or of eventual decay. Neither the signed center nor the resulting large-order cost has the sufficient source-scale bound. Both whole -79/1000 floor and 3/2 ceiling remain OPEN; no new zero exclusion or RH claim.",
+  "status": "Local validation passed: focused and root Lean, verbose lint, transitive axioms, compiled status, source scan, all explorers, plots and GitHub README renderer. Uncommitted local work; no new CI claim.",
+  "wholeCoreCovered": true,
+  "coordinateGainRuleProved": true,
+  "rationalRecipeAdmissibilityProved": true,
+  "numericalCostCertified": false,
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "rieszCoordinateCenterTheorem": "RiemannGaussian.ZetaRieszCoordinateGain.center_eq_unrotated",
+    "rieszCoordinatePairEnergyTheorem": "RiemannGaussian.ZetaRieszCoordinateGain.pair_energy",
+    "rieszCoordinateRotationTheorem": "RiemannGaussian.ZetaRieszCoordinateGain.coordinates_pairRotate",
+    "rieszCoordinateRationalTheorem": "RiemannGaussian.ZetaRieszCoordinateGain.coordinates_rationalPair",
+    "rieszCoordinateRecipeTheorem": "RiemannGaussian.ZetaRieszCoordinateGain.coordinates_rationalSequence",
+    "rieszCoordinatePositiveGainTheorem": "RiemannGaussian.ZetaRieszCoordinateGain.gain_pos",
+    "rieszCoordinateWholeCenterTheorem": "RiemannGaussian.ZetaRieszCoordinateGain.wholeCenter_eq",
+    "rieszCoordinateQuadraticCoreTheorem": "RiemannGaussian.ZetaRieszCoordinateGain.exists_core_quadratic_gain_bounds",
+    "rieszCoordinatePartitionTheorem": "RiemannGaussian.ZetaRieszCoordinateGain.exists_partition_quadratic_gain_bounds",
+    "rieszCoordinateConditionedCoreTheorem": "RiemannGaussian.ZetaRieszCoordinateGain.exists_core_gain_bounds"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszCoordinateGain.lean": "1ab9ab02952256607e7cbcf2657636084841f368591b5ff5d36d5ab74720f3db",
+    "RiemannGaussian/ZetaRieszConditionedPrimeEnergy.lean": "37bea1777f45362f6bc28984bbad5ca9208b4923b6f6fa4dd811c350c1add099",
+    "RiemannGaussian/ZetaRieszQuadraticPrimeEnergy.lean": "bb76280173d9970689cabc2faa4ec8ff40411f2b0202edc4b7c6c20a869bf60c",
+    "RiemannGaussian/ZetaRieszJointPrimeEnergy.lean": "aeac126806d23acbc920dcdd0ba84925ccb76a8fc335b9ac613aae6d85ad7e7e",
+    "scripts/probe_riesz_order10_coordinates.py": "ea334da8963db4a6d9349c997d3136c558a96e82ed7465872acce1e6171381d9",
+    "scripts/probe_riesz_quadratic_prime_energy.py": "7831ed5d92d00f87c9b638e87a93af4becf7e5aa8e6dc5976f35687acb06cea9"
+  },
+  "numericalProbe": {
+    "order": 10,
+    "population": 6484203,
+    "radius": 0.50005,
+    "height": 54.0,
+    "allCofactorPrimesAboveNSquared": false,
+    "length": 9.086589564540008,
+    "physicalUpper": 8836,
+    "selectedLabels": 32709252,
+    "jointCost": 0.004068608236996404,
+    "quadraticCost": 0.0038179765757033546,
+    "center": -5.4059341703323946e-05,
+    "sourceCostsOmitSqrtE": true,
+    "constantEvaluated": false,
+    "wholeCarrierCovered": false,
+    "allCoordinateColumnsRetained": true,
+    "regressionRows": 256,
+    "maximumRegressionRelativeError": 3.5097018807909276e-15,
+    "shells": [
+      {
+        "lower": 32768,
+        "upper": 65536,
+        "old": 0.00026191392252206705,
+        "new": 0.00021633484179645092,
+        "center": -1.8817294789706076e-05,
+        "semiprimeRows": 4204,
+        "coordinateColumns": 491,
+        "maximumOrthogonalityError": 1.3322676295501878e-15,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "scores": {
+            "profile": {
+              "cost": 0.00021633484179645092,
+              "center": -1.8817294789706073e-05,
+              "maximumOrthogonalityError": 1.3322676295501878e-15,
+              "cofactorCountAttribution": {
+                "2": 6.590873046006611e-05,
+                "3": 0.00010284513156353427,
+                "4": 4.170866545398153e-05,
+                "5": 5.815377649179809e-06,
+                "6": 5.693666968930479e-08
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "balanced": {
+              "cost": 0.0001933517753688251,
+              "center": -1.881729478970606e-05,
+              "maximumOrthogonalityError": 2.1094237467877974e-15,
+              "cofactorCountAttribution": {
+                "2": 5.8387627259828885e-05,
+                "3": 9.209120716856408e-05,
+                "4": 3.752257179158983e-05,
+                "5": 5.2873648191809355e-06,
+                "6": 6.300432966098687e-08
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalPairs": {
+              "cost": 0.00019335642871420728,
+              "center": -1.881729478970606e-05,
+              "maximumOrthogonalityError": 1.5543122344752192e-15,
+              "cofactorCountAttribution": {
+                "2": 5.838327767755176e-05,
+                "3": 9.209397914558025e-05,
+                "4": 3.752748268748828e-05,
+                "5": 5.288491406961516e-06,
+                "6": 6.319779662576565e-08
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalFromIdentity": {
+              "cost": 0.0001933524222126823,
+              "center": -1.8817294789706103e-05,
+              "maximumOrthogonalityError": 4.440892098500626e-15,
+              "cofactorCountAttribution": {
+                "2": 5.8387814449713693e-05,
+                "3": 9.209151684144597e-05,
+                "4": 3.7522703233161825e-05,
+                "5": 5.287383029507678e-06,
+                "6": 6.300465885289973e-08
+              },
+              "attributionIsNotACountSplitBound": true
+            }
+          },
+          "identityRecipeColumns": [
+            "left",
+            "right",
+            "numerator",
+            "denominator"
+          ],
+          "allCoordinateColumnsRetained": true,
+          "coordinateColumns": 491,
+          "numericalOrthogonalityIsNotACertificate": true,
+          "identityRotationStepsCount": 120295,
+          "identityRotationStepsSHA256": "c5782f3cb42750d28b8f8c6ebd4afd47fe35a62ba8487a2ffd4eab0e0c5c557f",
+          "rationalRotationStepsCount": 184,
+          "rationalRotationStepsSHA256": "d143a3764dd1ad6e75382b9e41cee4bb54ba04378e97e73e391e7414268b41fc"
+        }
+      },
+      {
+        "lower": 65536,
+        "upper": 131072,
+        "old": 0.0003046253617109024,
+        "new": 0.00025366240699303003,
+        "center": -1.8856008604028084e-05,
+        "semiprimeRows": 6037,
+        "coordinateColumns": 766,
+        "maximumOrthogonalityError": 1.1102230246251565e-15,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "scores": {
+            "profile": {
+              "cost": 0.00025366240699303,
+              "center": -1.8856008604028067e-05,
+              "maximumOrthogonalityError": 1.1102230246251565e-15,
+              "cofactorCountAttribution": {
+                "2": 6.288052429830323e-05,
+                "3": 0.00012092984432751928,
+                "4": 5.9978149783433195e-05,
+                "5": 9.518683428027454e-06,
+                "6": 3.5520515574734063e-07
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "balanced": {
+              "cost": 0.0002495081936961709,
+              "center": -1.885600860402808e-05,
+              "maximumOrthogonalityError": 1.3322676295501878e-15,
+              "cofactorCountAttribution": {
+                "2": 6.131072969064879e-05,
+                "3": 0.00011877985779382308,
+                "4": 5.9492272075534715e-05,
+                "5": 9.588220884123274e-06,
+                "6": 3.3711325204156875e-07
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalPairs": {
+              "cost": 0.00024970647696141203,
+              "center": -1.8856008604028077e-05,
+              "maximumOrthogonalityError": 1.1102230246251565e-15,
+              "cofactorCountAttribution": {
+                "2": 6.130156004457138e-05,
+                "3": 0.0001188598117508896,
+                "4": 5.9599035471984355e-05,
+                "5": 9.609978390425854e-06,
+                "6": 3.360913035417103e-07
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalFromIdentity": {
+              "cost": 0.0002495103352769397,
+              "center": -1.885600860402809e-05,
+              "maximumOrthogonalityError": 4.6629367034256575e-15,
+              "cofactorCountAttribution": {
+                "2": 6.131123572364116e-05,
+                "3": 0.00011878087225053608,
+                "4": 5.949280408465121e-05,
+                "5": 9.588306916302738e-06,
+                "6": 3.3711630180709425e-07
+              },
+              "attributionIsNotACountSplitBound": true
+            }
+          },
+          "identityRecipeColumns": [
+            "left",
+            "right",
+            "numerator",
+            "denominator"
+          ],
+          "allCoordinateColumnsRetained": true,
+          "coordinateColumns": 766,
+          "numericalOrthogonalityIsNotACertificate": true,
+          "identityRotationStepsCount": 292995,
+          "identityRotationStepsSHA256": "6a353a9372830fe249dc9be172ec315318baab689707bbb194dcc6755465f2ce",
+          "rationalRotationStepsCount": 141,
+          "rationalRotationStepsSHA256": "32c0397c96291c8e007d954725603737c8b9f48712ad26c2e5c93872d842be5b"
+        }
+      },
+      {
+        "lower": 131072,
+        "upper": 262144,
+        "old": 0.0004962341447168583,
+        "new": 0.0004422637081875687,
+        "center": -1.140109449321937e-05,
+        "semiprimeRows": 7030,
+        "coordinateColumns": 481,
+        "maximumOrthogonalityError": 1.2073675392798577e-15,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "scores": {
+            "profile": {
+              "cost": 0.0004422637081875686,
+              "center": -1.1401094493219366e-05,
+              "maximumOrthogonalityError": 1.2073675392798577e-15,
+              "cofactorCountAttribution": {
+                "2": 7.195352130330417e-05,
+                "3": 0.00019809183736230722,
+                "4": 0.00014096496422912486,
+                "5": 2.963108777813262e-05,
+                "6": 1.6222975146989284e-06
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "balanced": {
+              "cost": 0.0004197658626568467,
+              "center": -1.1401094493219364e-05,
+              "maximumOrthogonalityError": 1.3322676295501878e-15,
+              "cofactorCountAttribution": {
+                "2": 7.028013679428456e-05,
+                "3": 0.00018855952824190167,
+                "4": 0.00013205832930801787,
+                "5": 2.737068535755132e-05,
+                "6": 1.4971829550920508e-06
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalPairs": {
+              "cost": 0.00042093451343462926,
+              "center": -1.140109449321937e-05,
+              "maximumOrthogonalityError": 1.3322676295501878e-15,
+              "cofactorCountAttribution": {
+                "2": 7.047179592666431e-05,
+                "3": 0.0001890895240693496,
+                "4": 0.000132430354657499,
+                "5": 2.7442273917176385e-05,
+                "6": 1.5005648639402068e-06
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalFromIdentity": {
+              "cost": 0.0004197679400026011,
+              "center": -1.1401094493219381e-05,
+              "maximumOrthogonalityError": 3.3306690738754696e-15,
+              "cofactorCountAttribution": {
+                "2": 7.028049560686826e-05,
+                "3": 0.00018856046842042517,
+                "4": 0.0001320589704817381,
+                "5": 2.7370816076265884e-05,
+                "6": 1.4971894173050342e-06
+              },
+              "attributionIsNotACountSplitBound": true
+            }
+          },
+          "identityRecipeColumns": [
+            "left",
+            "right",
+            "numerator",
+            "denominator"
+          ],
+          "allCoordinateColumnsRetained": true,
+          "coordinateColumns": 481,
+          "numericalOrthogonalityIsNotACertificate": true,
+          "identityRotationStepsCount": 115440,
+          "identityRotationStepsSHA256": "0340fa99b92256d3be983757ae202e9ee583fe54126d7207964bbe243a4fd1ad",
+          "rationalRotationStepsCount": 151,
+          "rationalRotationStepsSHA256": "c0cf1c403019e9675aa50408b5a6ac5f20ba0a02f1dab99eae183f4653c04e55"
+        }
+      },
+      {
+        "lower": 262144,
+        "upper": 524288,
+        "old": 0.0006610177464368964,
+        "new": 0.0006189150562396823,
+        "center": -4.888251209006726e-06,
+        "semiprimeRows": 6093,
+        "coordinateColumns": 265,
+        "maximumOrthogonalityError": 1.3322676295501878e-15,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "scores": {
+            "profile": {
+              "cost": 0.0006189150562396823,
+              "center": -4.888251209006724e-06,
+              "maximumOrthogonalityError": 1.3322676295501878e-15,
+              "cofactorCountAttribution": {
+                "2": 5.5862986085605146e-05,
+                "3": 0.0002556264537057732,
+                "4": 0.00023615041558256068,
+                "5": 6.685425692915268e-05,
+                "6": 4.403242648621338e-06,
+                "7": 1.770128797543736e-08
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "balanced": {
+              "cost": 0.0005713098544396131,
+              "center": -4.888251209006728e-06,
+              "maximumOrthogonalityError": 1.1102230246251565e-15,
+              "cofactorCountAttribution": {
+                "2": 5.318639836663319e-05,
+                "3": 0.00023680056886156537,
+                "4": 0.0002164189045206349,
+                "5": 6.090175040015824e-05,
+                "6": 3.983623842919845e-06,
+                "7": 1.860844770142559e-08
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalPairs": {
+              "cost": 0.000573400261096236,
+              "center": -4.888251209006724e-06,
+              "maximumOrthogonalityError": 1.1102230246251565e-15,
+              "cofactorCountAttribution": {
+                "2": 5.315874961170695e-05,
+                "3": 0.00023750792483089332,
+                "4": 0.00021744365256172663,
+                "5": 6.126238745069654e-05,
+                "6": 4.0083469693630585e-06,
+                "7": 1.919967185110512e-08
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalFromIdentity": {
+              "cost": 0.0005713114935582598,
+              "center": -4.888251209006723e-06,
+              "maximumOrthogonalityError": 3.1086244689504383e-15,
+              "cofactorCountAttribution": {
+                "2": 5.318654482035361e-05,
+                "3": 0.00023680124313608304,
+                "4": 0.00021641953358160127,
+                "5": 6.0901928056620667e-05,
+                "6": 3.983635471686731e-06,
+                "7": 1.8608491916952858e-08
+              },
+              "attributionIsNotACountSplitBound": true
+            }
+          },
+          "identityRecipeColumns": [
+            "left",
+            "right",
+            "numerator",
+            "denominator"
+          ],
+          "allCoordinateColumnsRetained": true,
+          "coordinateColumns": 265,
+          "numericalOrthogonalityIsNotACertificate": true,
+          "identityRotationStepsCount": 34980,
+          "identityRotationStepsSHA256": "839c2032520bb366693e18ee2708494758addac3647a4e24ebb0e43ea49fb1d6",
+          "rationalRotationStepsCount": 256,
+          "rationalRotationStepsSHA256": "3b20e3ace4981e8bbe50ae2a48ec10d6570ba37ae05a4d0ef3befa751f026ad3"
+        }
+      },
+      {
+        "lower": 524288,
+        "upper": 1048576,
+        "old": 0.0006516612972538255,
+        "new": 0.0006288572976046422,
+        "center": -9.669260736369682e-08,
+        "semiprimeRows": 1235,
+        "coordinateColumns": 145,
+        "maximumOrthogonalityError": 1.1102230246251565e-15,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "scores": {
+            "profile": {
+              "cost": 0.0006288572976046422,
+              "center": -9.669260736369662e-08,
+              "maximumOrthogonalityError": 1.1102230246251565e-15,
+              "cofactorCountAttribution": {
+                "2": 4.102118841466526e-06,
+                "3": 0.00019121083468808252,
+                "4": 0.00029616620428274843,
+                "5": 0.00012360787530510815,
+                "6": 1.3664362451635674e-05,
+                "7": 1.0590203560057296e-07
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "balanced": {
+              "cost": 0.0005544014434661126,
+              "center": -9.669260736369687e-08,
+              "maximumOrthogonalityError": 8.881784197001252e-16,
+              "cofactorCountAttribution": {
+                "2": 6.33833116588378e-06,
+                "3": 0.00017637276819877556,
+                "4": 0.000256441113563218,
+                "5": 0.0001038892740736335,
+                "6": 1.1274128756358534e-05,
+                "7": 8.582770824283898e-08
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalPairs": {
+              "cost": 0.000560764161211207,
+              "center": -9.669260736369651e-08,
+              "maximumOrthogonalityError": 1.3322676295501878e-15,
+              "cofactorCountAttribution": {
+                "2": 5.974035262586273e-06,
+                "3": 0.000177033069080741,
+                "4": 0.00026009897573393717,
+                "5": 0.00010600657097865257,
+                "6": 1.1562638098526016e-05,
+                "7": 8.887205676602096e-08
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalFromIdentity": {
+              "cost": 0.0005544023394890608,
+              "center": -9.669260736369683e-08,
+              "maximumOrthogonalityError": 1.7763568394002505e-15,
+              "cofactorCountAttribution": {
+                "2": 6.3383360600545446e-06,
+                "3": 0.00017637306285388932,
+                "4": 0.00025644153764121035,
+                "5": 0.00010388943182108954,
+                "6": 1.1274143313137146e-05,
+                "7": 8.58277996801318e-08
+              },
+              "attributionIsNotACountSplitBound": true
+            }
+          },
+          "identityRecipeColumns": [
+            "left",
+            "right",
+            "numerator",
+            "denominator"
+          ],
+          "allCoordinateColumnsRetained": true,
+          "coordinateColumns": 145,
+          "numericalOrthogonalityIsNotACertificate": true,
+          "identityRotationStepsCount": 10440,
+          "identityRotationStepsSHA256": "8b543843be717ec4c8c3cd3092a30aaf287f5ecb50d004f3d836de8a03abc21e",
+          "rationalRotationStepsCount": 256,
+          "rationalRotationStepsSHA256": "3b54a4c43202858080318c428d2e22af89ff47290788b8d26897c39c6e15c7d5"
+        }
+      },
+      {
+        "lower": 1048576,
+        "upper": 2097152,
+        "old": 0.0009863244676829328,
+        "new": 0.0009620287402930162,
+        "center": 0.0,
+        "semiprimeRows": 0,
+        "coordinateColumns": 80,
+        "maximumOrthogonalityError": 1.3322676295501878e-15,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "scores": {
+            "profile": {
+              "cost": 0.0009620287402930163,
+              "center": 0.0,
+              "maximumOrthogonalityError": 1.3322676295501878e-15,
+              "cofactorCountAttribution": {
+                "3": 0.000140641267237239,
+                "4": 0.00045180056393118574,
+                "5": 0.0003154913836288017,
+                "6": 5.305042483732431e-05,
+                "7": 1.0451006584647026e-06
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "balanced": {
+              "cost": 0.0008085254074321571,
+              "center": 0.0,
+              "maximumOrthogonalityError": 1.3322676295501878e-15,
+              "cofactorCountAttribution": {
+                "3": 0.00012702059598891164,
+                "4": 0.0003817316112091232,
+                "5": 0.00025667885425981077,
+                "6": 4.226296515316283e-05,
+                "7": 8.313808211481276e-07
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalPairs": {
+              "cost": 0.0008185219474964667,
+              "center": 0.0,
+              "maximumOrthogonalityError": 1.3322676295501878e-15,
+              "cofactorCountAttribution": {
+                "3": 0.00012807930598446389,
+                "4": 0.0003863124287644228,
+                "5": 0.00026035540457007046,
+                "6": 4.29268207764027e-05,
+                "7": 8.479874011048812e-07
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalFromIdentity": {
+              "cost": 0.0008085255518520899,
+              "center": 0.0,
+              "maximumOrthogonalityError": 1.3322676295501878e-15,
+              "cofactorCountAttribution": {
+                "3": 0.00012702062751332552,
+                "4": 0.00038173168208911583,
+                "5": 0.0002566788915745763,
+                "6": 4.2262969777263975e-05,
+                "7": 8.313808978078098e-07
+              },
+              "attributionIsNotACountSplitBound": true
+            }
+          },
+          "identityRecipeColumns": [
+            "left",
+            "right",
+            "numerator",
+            "denominator"
+          ],
+          "allCoordinateColumnsRetained": true,
+          "coordinateColumns": 80,
+          "numericalOrthogonalityIsNotACertificate": true,
+          "identityRotationStepsCount": 3153,
+          "identityRotationStepsSHA256": "ec72592803cc37f969d653e42e2b6a1a413ee4fc85dc170eef497855f4c8f883",
+          "rationalRotationStepsCount": 256,
+          "rationalRotationStepsSHA256": "3f6aef09126981a7932ea0a1c17b3a9ffaeab707ee783fe7c10bb6a4898f4226"
+        }
+      },
+      {
+        "lower": 2097152,
+        "upper": 4194304,
+        "old": 0.0005490595543244357,
+        "new": 0.0005406109354998888,
+        "center": 0.0,
+        "semiprimeRows": 0,
+        "coordinateColumns": 39,
+        "maximumOrthogonalityError": 1.1102230246251565e-15,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "scores": {
+            "profile": {
+              "cost": 0.0005406109354998888,
+              "center": 0.0,
+              "maximumOrthogonalityError": 1.1102230246251565e-15,
+              "cofactorCountAttribution": {
+                "3": 1.7430933976966785e-05,
+                "4": 0.00019546112298562512,
+                "5": 0.0002500668200045334,
+                "6": 7.454477614056113e-05,
+                "7": 3.1072823922035856e-06
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "balanced": {
+              "cost": 0.00046260213268677785,
+              "center": 0.0,
+              "maximumOrthogonalityError": 1.1102230246251565e-15,
+              "cofactorCountAttribution": {
+                "3": 1.9214172319269398e-05,
+                "4": 0.00017416926319671546,
+                "5": 0.00020824687388699937,
+                "6": 5.865408143581637e-05,
+                "7": 2.3177418479766787e-06
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalPairs": {
+              "cost": 0.0004671926195294879,
+              "center": 0.0,
+              "maximumOrthogonalityError": 1.1102230246251565e-15,
+              "cofactorCountAttribution": {
+                "3": 1.9320226067659755e-05,
+                "4": 0.0001759825290848724,
+                "5": 0.0002103326632536204,
+                "6": 5.921579979902666e-05,
+                "7": 2.34140132430958e-06
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalFromIdentity": {
+              "cost": 0.0004626021366060301,
+              "center": 0.0,
+              "maximumOrthogonalityError": 8.881784197001252e-16,
+              "cofactorCountAttribution": {
+                "3": 1.921417116811909e-05,
+                "4": 0.00017416926526073222,
+                "5": 0.00020824687695452466,
+                "6": 5.8654081524123624e-05,
+                "7": 2.3177416985321558e-06
+              },
+              "attributionIsNotACountSplitBound": true
+            }
+          },
+          "identityRecipeColumns": [
+            "left",
+            "right",
+            "numerator",
+            "denominator"
+          ],
+          "allCoordinateColumnsRetained": true,
+          "coordinateColumns": 39,
+          "numericalOrthogonalityIsNotACertificate": true,
+          "identityRotationStepsCount": 729,
+          "identityRotationStepsSHA256": "98a0c209d0216631a4eab9c983e7409ba8037576671a878f3233f84c77072036",
+          "rationalRotationStepsCount": 256,
+          "rationalRotationStepsSHA256": "c54157828f72370b0f2581c461b4f368429461e02d939d8e29a96ef9d406863c"
+        }
+      },
+      {
+        "lower": 4194304,
+        "upper": 6484203,
+        "old": 0.0001577717423484861,
+        "new": 0.00015530358908907534,
+        "center": 0.0,
+        "semiprimeRows": 0,
+        "coordinateColumns": 11,
+        "maximumOrthogonalityError": 7.771561172376096e-16,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "scores": {
+            "profile": {
+              "cost": 0.00015530358908907534,
+              "center": 0.0,
+              "maximumOrthogonalityError": 7.771561172376096e-16,
+              "cofactorCountAttribution": {
+                "4": 3.0454452766489143e-05,
+                "5": 8.070734261167879e-05,
+                "6": 4.075330148535083e-05,
+                "7": 3.388492225556276e-06
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "balanced": {
+              "cost": 0.00014673733453342052,
+              "center": 0.0,
+              "maximumOrthogonalityError": 9.992007221626409e-16,
+              "cofactorCountAttribution": {
+                "4": 3.0117370297393087e-05,
+                "5": 7.628643195744248e-05,
+                "6": 3.731606823930221e-05,
+                "7": 3.017464039282571e-06
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalPairs": {
+              "cost": 0.00014841078954555298,
+              "center": 0.0,
+              "maximumOrthogonalityError": 1.1102230246251565e-15,
+              "cofactorCountAttribution": {
+                "4": 3.0825837792211274e-05,
+                "5": 7.719865531977967e-05,
+                "6": 3.739144299446089e-05,
+                "7": 2.9948534391015238e-06
+              },
+              "attributionIsNotACountSplitBound": true
+            },
+            "rationalFromIdentity": {
+              "cost": 0.00014673733453343543,
+              "center": 0.0,
+              "maximumOrthogonalityError": 4.440892098500626e-16,
+              "cofactorCountAttribution": {
+                "4": 3.0117370204159882e-05,
+                "5": 7.628643193381092e-05,
+                "6": 3.731606836743701e-05,
+                "7": 3.0174640280269135e-06
+              },
+              "attributionIsNotACountSplitBound": true
+            }
+          },
+          "identityRecipeColumns": [
+            "left",
+            "right",
+            "numerator",
+            "denominator"
+          ],
+          "allCoordinateColumnsRetained": true,
+          "coordinateColumns": 11,
+          "numericalOrthogonalityIsNotACertificate": true,
+          "identityRotationStepsCount": 55,
+          "identityRotationStepsSHA256": "2e29795b65410809fcbf97d19c643aa17ab680be29ef2e10517a3f79f7aff132",
+          "rationalRotationStepsCount": 72,
+          "rationalRotationStepsSHA256": "15823eaa1ea8564b14036fbea1b218b5f18f553365058501d245f5ad13968b19"
+        }
+      }
+    ],
+    "coordinateTotals": {
+      "profile": 0.0038179765757033546,
+      "balanced": 0.0034062020042799237,
+      "rationalPairs": 0.0034322871979891993,
+      "rationalFromIdentity": 0.003406209553531099
+    },
+    "scope": "Optional coordinate audit of the enlarged order-ten arithmetic cost.\n\nNo integer, prime direction or count class is removed. Every candidate is\nrescored against the original full arrays, including the exterior profile\ncross terms. Costs omit the UNEVALUATED sqrt(E). The floating coordinates\nand costs are exploratory, NOT certificates. Rational rotations preserve\nexact admissibility in Lean. A separate recipe starts at the exact identity\nmatrix and approximates the floating balanced candidate using only rational\nrotations. The test population also omits earlier nested core deletions.\nNothing here establishes an eventual whole-carrier estimate or zero bound.\n\nKeep outside ordinary CI. Run with OPENBLAS_NUM_THREADS=4 and the repository\nNumPy environment. --order 6 or 8 allows a smaller regression run."
+  },
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszCoordinateGain.center_eq_unrotated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCoordinateGain.pair_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCoordinateGain.coordinates_pairRotate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCoordinateGain.coordinates_rationalPair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCoordinateGain.coordinates_rationalSequence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCoordinateGain.gain_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCoordinateGain.wholeCenter_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCoordinateGain.exists_core_quadratic_gain_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCoordinateGain.exists_partition_quadratic_gain_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCoordinateGain.exists_core_gain_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

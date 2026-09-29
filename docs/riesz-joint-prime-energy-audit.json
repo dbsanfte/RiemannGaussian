@@ -1,0 +1,961 @@
+{
+  "schemaVersion": 1,
+  "scope": "The entire original coreResponse now has BOTH signed bounds by one explicit joint prime-profile cost. The complete factorial sum, original allocation and full product phase are formed BEFORE applying the arithmetic mean inequality. An exact common orthogonal coordinate change keeps cross terms in BOTH cofactor weights and centered divisor profiles. The coordinate premise is finite algebra and is ALWAYS satisfied by identity coordinates; no arithmetic cancellation premise is assumed. Arbitrary cofactor-dependent prime selections, including holes, are retained directly without a binary maximal factor or orderwise triangle bound. Canonical largest-prime ownership exhausts any squarefree support of count at least three exactly, and nonsquarefree core coefficients vanish. This DISCHARGES the prior whole-core covering obligation for the new cost. All original masks, every factorial order including zero and one, both Riesz cutoffs and every literal count are included; no new count ceiling, PNT approximation, zero hypothesis or companion credit enters. Disjoint finite partitions sum their own costs using one UNEVALUATED E. Optional finite N=6,8,10 diagnostics retain every numerical coordinate column and test the original atom identity. At N=10 the same 30.5-million-label population has cost about 0.00238 instead of the previous centered moving-interval cost 0.1406, before sqrt(E). This comparison is numerical, not a theorem of uniform dominance or eventual smallness. The numerical populations remain truncated. The TOTAL source-normalized joint cost and both whole thresholds (-79/1000 floor, 3/2 ceiling) remain OPEN. No new zero exclusion or RH claim.",
+  "status": "Local validation passed: focused and root Lean, verbose lint, transitive axioms, compiled status, source scan, all explorers, plots and GitHub README renderer. Uncommitted local work; no new CI claim.",
+  "wholeCoreCovered": true,
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "rieszJointPrimeCoordinatesTheorem": "RiemannGaussian.ZetaRieszJointPrimeEnergy.coordinates_identity",
+    "rieszJointPrimePairingTheorem": "RiemannGaussian.ZetaRieszJointPrimeEnergy.coordinate_pairing",
+    "rieszJointPrimeMeanTheorem": "RiemannGaussian.ZetaRieszJointPrimeEnergy.exists_joint_bounds",
+    "rieszJointPrimeAtomTheorem": "RiemannGaussian.ZetaRieszJointPrimeEnergy.atom_eq",
+    "rieszJointPrimeLiteralTheorem": "RiemannGaussian.ZetaRieszJointPrimeEnergy.exists_literal_joint_bounds",
+    "rieszWholePrimeOwnershipTheorem": "RiemannGaussian.ZetaRieszJointPrimeEnergy.owner_labels_eq",
+    "rieszWholePrimeBoundTheorem": "RiemannGaussian.ZetaRieszJointPrimeEnergy.exists_whole_bounds",
+    "rieszJointPrimePartitionTheorem": "RiemannGaussian.ZetaRieszJointPrimeEnergy.exists_partition_bounds",
+    "rieszCoreSquarefreeTheorem": "RiemannGaussian.ZetaRieszJointPrimeEnergy.core_eq_squarefree",
+    "rieszCoreJointPrimeTheorem": "RiemannGaussian.ZetaRieszJointPrimeEnergy.exists_core_joint_bounds"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszJointPrimeEnergy.lean": "aeac126806d23acbc920dcdd0ba84925ccb76a8fc335b9ac613aae6d85ad7e7e",
+    "RiemannGaussian/ZetaRieszCenteredPrimeEnergy.lean": "41aafeaf461b1a2ca0dcba305ac83c439d7b07599259da320a28ff269214f4fd",
+    "RiemannGaussian/ZetaRieszParityWindow.lean": "089064237b438215f8897e75db27102220382641649b9b0b60ae2bb393bfd914",
+    "RiemannGaussian/ZetaRieszOwnedCells.lean": "cdb4b7f204a9fc45d25ed298f345f8edbda4a49fc27d4b4558f77a29d4282f3d",
+    "scripts/probe_riesz_joint_prime_energy.py": "fc31d8977a44577e09fa38520d1ef48107358122a75294236f843e45caeea888"
+  },
+  "numericalProbe": {
+    "scope": "Optional joint-coordinate diagnostic, never a CI or numerical certificate.\n\nUses actual primes/cofactors, all factorial orders, original allocation,\nboth Riesz hinges and the full product phase. Finite populations are truncated;\nthe reported costs omit the UNEVALUATED sqrt(E). A complete orthogonal basis\nis used, including every near-zero energy direction. No asymptotic claim.",
+    "rows": [
+      {
+        "order": 6,
+        "population": 4096,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": false,
+        "length": 4.795790545596741,
+        "physicalUpper": 121,
+        "selectedLabels": 2130,
+        "jointCost": 0.0044545110093101295,
+        "separatePrimeCost": 0.015189258358659407,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumAtomRelativeError": 3.117997897593742e-15,
+        "shells": [
+          {
+            "lower": 1024,
+            "upper": 2048,
+            "cofactors": 201,
+            "primes": 14,
+            "coordinateColumns": 14,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.6645352591003757e-15,
+            "smallestComputedGramEigenvalue": -3.602408727644134e-15,
+            "jointCostWithoutSqrtE": 0.0013561021969979074,
+            "separatePrimeCostWithoutSqrtE": 0.007015897166115299
+          },
+          {
+            "lower": 2048,
+            "upper": 4096,
+            "cofactors": 183,
+            "primes": 13,
+            "coordinateColumns": 13,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 8.881784197001252e-16,
+            "smallestComputedGramEigenvalue": -1.9694175946184154e-15,
+            "jointCostWithoutSqrtE": 0.0030984088123122222,
+            "separatePrimeCostWithoutSqrtE": 0.008173361192544108
+          }
+        ]
+      },
+      {
+        "order": 6,
+        "population": 4096,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": true,
+        "length": 4.795790545596741,
+        "physicalUpper": 121,
+        "selectedLabels": 113,
+        "jointCost": 0.0006582063519627388,
+        "separatePrimeCost": 0.003005638675075561,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 21,
+        "maximumAtomRelativeError": 2.6373905913043503e-15,
+        "shells": [
+          {
+            "lower": 1024,
+            "upper": 2048,
+            "cofactors": 7,
+            "primes": 14,
+            "coordinateColumns": 14,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.6645352591003757e-15,
+            "smallestComputedGramEigenvalue": -3.602408727644134e-15,
+            "jointCostWithoutSqrtE": 0.0002729306647827867,
+            "separatePrimeCostWithoutSqrtE": 0.0014126646115704717
+          },
+          {
+            "lower": 2048,
+            "upper": 4096,
+            "cofactors": 14,
+            "primes": 13,
+            "coordinateColumns": 13,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 8.881784197001252e-16,
+            "smallestComputedGramEigenvalue": -1.9694175946184154e-15,
+            "jointCostWithoutSqrtE": 0.0003852756871799522,
+            "separatePrimeCostWithoutSqrtE": 0.0015929740635050892
+          }
+        ]
+      },
+      {
+        "order": 8,
+        "population": 65536,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": false,
+        "length": 6.802394763324311,
+        "physicalUpper": 900,
+        "selectedLabels": 285908,
+        "jointCost": 0.0027096677009332826,
+        "separatePrimeCost": 0.025418473178379076,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumAtomRelativeError": 3.323657424047974e-15,
+        "shells": [
+          {
+            "lower": 4096,
+            "upper": 8192,
+            "cofactors": 475,
+            "primes": 25,
+            "coordinateColumns": 25,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 1.7763568394002505e-15,
+            "smallestComputedGramEigenvalue": -8.848511980148932e-15,
+            "jointCostWithoutSqrtE": 0.00011521114583782555,
+            "separatePrimeCostWithoutSqrtE": 0.0006662024606940691
+          },
+          {
+            "lower": 8192,
+            "upper": 16384,
+            "cofactors": 2420,
+            "primes": 82,
+            "coordinateColumns": 82,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.886579864025407e-15,
+            "smallestComputedGramEigenvalue": -3.4256377404633213e-14,
+            "jointCostWithoutSqrtE": 0.00043869851163521066,
+            "separatePrimeCostWithoutSqrtE": 0.00694825991315226
+          },
+          {
+            "lower": 16384,
+            "upper": 32768,
+            "cofactors": 3337,
+            "primes": 82,
+            "coordinateColumns": 82,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.886579864025407e-15,
+            "smallestComputedGramEigenvalue": -3.7494260178919866e-14,
+            "jointCostWithoutSqrtE": 0.001130793800984669,
+            "separatePrimeCostWithoutSqrtE": 0.009788805211692977
+          },
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "cofactors": 3362,
+            "primes": 44,
+            "coordinateColumns": 44,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 3.552713678800501e-15,
+            "smallestComputedGramEigenvalue": -1.5243400698915736e-14,
+            "jointCostWithoutSqrtE": 0.0010249642424755775,
+            "separatePrimeCostWithoutSqrtE": 0.008015205592839771
+          }
+        ]
+      },
+      {
+        "order": 8,
+        "population": 65536,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": true,
+        "length": 6.802394763324311,
+        "physicalUpper": 900,
+        "selectedLabels": 25344,
+        "jointCost": 0.0007048016962568613,
+        "separatePrimeCost": 0.006283218645502147,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumAtomRelativeError": 3.585103656269775e-15,
+        "shells": [
+          {
+            "lower": 4096,
+            "upper": 8192,
+            "cofactors": 22,
+            "primes": 25,
+            "coordinateColumns": 25,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 1.7763568394002505e-15,
+            "smallestComputedGramEigenvalue": -8.848511980148932e-15,
+            "jointCostWithoutSqrtE": 2.7487637466995907e-05,
+            "separatePrimeCostWithoutSqrtE": 0.00014538020052321792
+          },
+          {
+            "lower": 8192,
+            "upper": 16384,
+            "cofactors": 172,
+            "primes": 82,
+            "coordinateColumns": 82,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.886579864025407e-15,
+            "smallestComputedGramEigenvalue": -3.4256377404633213e-14,
+            "jointCostWithoutSqrtE": 0.00011201946097902883,
+            "separatePrimeCostWithoutSqrtE": 0.001957171286256574
+          },
+          {
+            "lower": 16384,
+            "upper": 32768,
+            "cofactors": 461,
+            "primes": 82,
+            "coordinateColumns": 82,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.886579864025407e-15,
+            "smallestComputedGramEigenvalue": -3.7494260178919866e-14,
+            "jointCostWithoutSqrtE": 0.0004001335572020887,
+            "separatePrimeCostWithoutSqrtE": 0.0033294336176784567
+          },
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "cofactors": 159,
+            "primes": 44,
+            "coordinateColumns": 44,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 3.552713678800501e-15,
+            "smallestComputedGramEigenvalue": -1.5243400698915736e-14,
+            "jointCostWithoutSqrtE": 0.00016516104060874785,
+            "separatePrimeCostWithoutSqrtE": 0.0008512335410438977
+          }
+        ]
+      },
+      {
+        "order": 10,
+        "population": 1048576,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": false,
+        "length": 9.086589564540008,
+        "physicalUpper": 8836,
+        "selectedLabels": 30510285,
+        "jointCost": 0.0023754524726405514,
+        "separatePrimeCost": 0.03758607059838533,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumAtomRelativeError": 3.5097018807909276e-15,
+        "shells": [
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "cofactors": 13178,
+            "primes": 491,
+            "coordinateColumns": 491,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 4.218847493575595e-15,
+            "smallestComputedGramEigenvalue": -2.338590559825166e-13,
+            "jointCostWithoutSqrtE": 0.0002619139225220669,
+            "separatePrimeCostWithoutSqrtE": 0.0029700665531556553
+          },
+          {
+            "lower": 65536,
+            "upper": 131072,
+            "cofactors": 23277,
+            "primes": 766,
+            "coordinateColumns": 766,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 3.1086244689504383e-15,
+            "smallestComputedGramEigenvalue": -6.588053511182402e-13,
+            "jointCostWithoutSqrtE": 0.0003046253617109027,
+            "separatePrimeCostWithoutSqrtE": 0.008296393748752245
+          },
+          {
+            "lower": 131072,
+            "upper": 262144,
+            "cofactors": 36200,
+            "primes": 481,
+            "coordinateColumns": 481,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.7755575615628914e-15,
+            "smallestComputedGramEigenvalue": -5.421115608321291e-13,
+            "jointCostWithoutSqrtE": 0.0004962341447168581,
+            "separatePrimeCostWithoutSqrtE": 0.009375889268724704
+          },
+          {
+            "lower": 262144,
+            "upper": 524288,
+            "cofactors": 50753,
+            "primes": 265,
+            "coordinateColumns": 265,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.4424906541753444e-15,
+            "smallestComputedGramEigenvalue": -1.7530403551476484e-13,
+            "jointCostWithoutSqrtE": 0.0006610177464368991,
+            "separatePrimeCostWithoutSqrtE": 0.009176576276410156
+          },
+          {
+            "lower": 524288,
+            "upper": 1048576,
+            "cofactors": 57896,
+            "primes": 145,
+            "coordinateColumns": 145,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.7755575615628914e-15,
+            "smallestComputedGramEigenvalue": -9.383739113048142e-14,
+            "jointCostWithoutSqrtE": 0.0006516612972538245,
+            "separatePrimeCostWithoutSqrtE": 0.007767144751342566
+          }
+        ]
+      },
+      {
+        "order": 10,
+        "population": 1048576,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": true,
+        "length": 9.086589564540008,
+        "physicalUpper": 8836,
+        "selectedLabels": 2930886,
+        "jointCost": 0.0005869585013676872,
+        "separatePrimeCost": 0.009821326586978572,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumAtomRelativeError": 3.62819754755019e-15,
+        "shells": [
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "cofactors": 827,
+            "primes": 491,
+            "coordinateColumns": 491,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 4.218847493575595e-15,
+            "smallestComputedGramEigenvalue": -2.338590559825166e-13,
+            "jointCostWithoutSqrtE": 6.707262348184573e-05,
+            "separatePrimeCostWithoutSqrtE": 0.0007945368244461951
+          },
+          {
+            "lower": 65536,
+            "upper": 131072,
+            "cofactors": 2156,
+            "primes": 766,
+            "coordinateColumns": 766,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 3.1086244689504383e-15,
+            "smallestComputedGramEigenvalue": -6.588053511182402e-13,
+            "jointCostWithoutSqrtE": 9.245937377530384e-05,
+            "separatePrimeCostWithoutSqrtE": 0.002600359455482874
+          },
+          {
+            "lower": 131072,
+            "upper": 262144,
+            "cofactors": 5080,
+            "primes": 481,
+            "coordinateColumns": 481,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.7755575615628914e-15,
+            "smallestComputedGramEigenvalue": -5.421115608321291e-13,
+            "jointCostWithoutSqrtE": 0.00018189432611777687,
+            "separatePrimeCostWithoutSqrtE": 0.0034454985383897663
+          },
+          {
+            "lower": 262144,
+            "upper": 524288,
+            "cofactors": 6093,
+            "primes": 265,
+            "coordinateColumns": 265,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.4424906541753444e-15,
+            "smallestComputedGramEigenvalue": -1.7530403551476484e-13,
+            "jointCostWithoutSqrtE": 0.0001968636535215536,
+            "separatePrimeCostWithoutSqrtE": 0.002569251404975354
+          },
+          {
+            "lower": 524288,
+            "upper": 1048576,
+            "cofactors": 1235,
+            "primes": 145,
+            "coordinateColumns": 145,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.7755575615628914e-15,
+            "smallestComputedGramEigenvalue": -9.383739113048142e-14,
+            "jointCostWithoutSqrtE": 4.866852447120726e-05,
+            "separatePrimeCostWithoutSqrtE": 0.000411680363684383
+          }
+        ]
+      }
+    ]
+  },
+  "remainingQuantitativeWork": [
+    "Source-normalized total cost of the actual whole-core prime and cofactor weights.",
+    "Evaluate or asymptotically absorb the arithmetic mean constant.",
+    "Independent whole floor and ceiling."
+  ],
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.coordinates_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.coordinate_pairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.exists_joint_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.atom_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.exists_literal_joint_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.owner_labels_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.exists_whole_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.exists_partition_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.core_eq_squarefree": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.exists_core_joint_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "rootLint": "-- Found 0 errors in 33492 declarations (plus 23627 automatically generated ones) in RiemannGaussian with 14 linters",
+  "expandedPopulationProbe": {
+    "scope": "Optional joint-coordinate diagnostic, never a CI or numerical certificate.\n\nUses actual primes/cofactors, all factorial orders, original allocation,\nboth Riesz hinges and the full product phase. Finite populations are truncated;\nthe reported costs omit the UNEVALUATED sqrt(E). A complete orthogonal basis\nis used, including every near-zero energy direction. No asymptotic claim.",
+    "expandedPopulation": true,
+    "rows": [
+      {
+        "order": 6,
+        "population": 5266,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": false,
+        "length": 4.795790545596741,
+        "physicalUpper": 121,
+        "selectedLabels": 2198,
+        "jointCost": 0.0051554870747819665,
+        "separatePrimeCost": 0.016450494245284768,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumAtomRelativeError": 3.117997897593742e-15,
+        "shells": [
+          {
+            "lower": 1024,
+            "upper": 2048,
+            "cofactors": 201,
+            "primes": 14,
+            "coordinateColumns": 14,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.6645352591003757e-15,
+            "smallestComputedGramEigenvalue": -3.602408727644134e-15,
+            "jointCostWithoutSqrtE": 0.0013561021969979074,
+            "separatePrimeCostWithoutSqrtE": 0.007015897166115299
+          },
+          {
+            "lower": 2048,
+            "upper": 4096,
+            "cofactors": 183,
+            "primes": 13,
+            "coordinateColumns": 13,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 8.881784197001252e-16,
+            "smallestComputedGramEigenvalue": -1.9694175946184154e-15,
+            "jointCostWithoutSqrtE": 0.0030984088123122222,
+            "separatePrimeCostWithoutSqrtE": 0.008173361192544108
+          },
+          {
+            "lower": 4096,
+            "upper": 5266,
+            "cofactors": 34,
+            "primes": 4,
+            "coordinateColumns": 4,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 6.661338147750939e-16,
+            "smallestComputedGramEigenvalue": 1.0408340855811323e-17,
+            "jointCostWithoutSqrtE": 0.0007009760654718367,
+            "separatePrimeCostWithoutSqrtE": 0.0012612358866253613
+          }
+        ]
+      },
+      {
+        "order": 6,
+        "population": 5266,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": true,
+        "length": 4.795790545596741,
+        "physicalUpper": 121,
+        "selectedLabels": 113,
+        "jointCost": 0.0006582063519627388,
+        "separatePrimeCost": 0.003005638675075561,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 21,
+        "maximumAtomRelativeError": 2.6373905913043503e-15,
+        "shells": [
+          {
+            "lower": 1024,
+            "upper": 2048,
+            "cofactors": 7,
+            "primes": 14,
+            "coordinateColumns": 14,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.6645352591003757e-15,
+            "smallestComputedGramEigenvalue": -3.602408727644134e-15,
+            "jointCostWithoutSqrtE": 0.0002729306647827867,
+            "separatePrimeCostWithoutSqrtE": 0.0014126646115704717
+          },
+          {
+            "lower": 2048,
+            "upper": 4096,
+            "cofactors": 14,
+            "primes": 13,
+            "coordinateColumns": 13,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 8.881784197001252e-16,
+            "smallestComputedGramEigenvalue": -1.9694175946184154e-15,
+            "jointCostWithoutSqrtE": 0.0003852756871799522,
+            "separatePrimeCostWithoutSqrtE": 0.0015929740635050892
+          }
+        ]
+      },
+      {
+        "order": 8,
+        "population": 173791,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": false,
+        "length": 6.802394763324311,
+        "physicalUpper": 900,
+        "selectedLabels": 306148,
+        "jointCost": 0.003897378374161451,
+        "separatePrimeCost": 0.030699889782303903,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumAtomRelativeError": 3.323657424047974e-15,
+        "shells": [
+          {
+            "lower": 4096,
+            "upper": 8192,
+            "cofactors": 475,
+            "primes": 25,
+            "coordinateColumns": 25,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 1.7763568394002505e-15,
+            "smallestComputedGramEigenvalue": -8.848511980148932e-15,
+            "jointCostWithoutSqrtE": 0.00011521114583782555,
+            "separatePrimeCostWithoutSqrtE": 0.0006662024606940691
+          },
+          {
+            "lower": 8192,
+            "upper": 16384,
+            "cofactors": 2420,
+            "primes": 82,
+            "coordinateColumns": 82,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.886579864025407e-15,
+            "smallestComputedGramEigenvalue": -3.4256377404633213e-14,
+            "jointCostWithoutSqrtE": 0.00043869851163521066,
+            "separatePrimeCostWithoutSqrtE": 0.00694825991315226
+          },
+          {
+            "lower": 16384,
+            "upper": 32768,
+            "cofactors": 3337,
+            "primes": 82,
+            "coordinateColumns": 82,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.886579864025407e-15,
+            "smallestComputedGramEigenvalue": -3.7494260178919866e-14,
+            "jointCostWithoutSqrtE": 0.001130793800984669,
+            "separatePrimeCostWithoutSqrtE": 0.009788805211692977
+          },
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "cofactors": 3362,
+            "primes": 44,
+            "coordinateColumns": 44,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 3.552713678800501e-15,
+            "smallestComputedGramEigenvalue": -1.5243400698915736e-14,
+            "jointCostWithoutSqrtE": 0.0010249642424755775,
+            "separatePrimeCostWithoutSqrtE": 0.008015205592839771
+          },
+          {
+            "lower": 65536,
+            "upper": 131072,
+            "cofactors": 2334,
+            "primes": 21,
+            "coordinateColumns": 21,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 1.5543122344752192e-15,
+            "smallestComputedGramEigenvalue": -1.6427391428290419e-15,
+            "jointCostWithoutSqrtE": 0.0009817601391381861,
+            "separatePrimeCostWithoutSqrtE": 0.00467966800952685
+          },
+          {
+            "lower": 131072,
+            "upper": 173791,
+            "cofactors": 462,
+            "primes": 5,
+            "coordinateColumns": 5,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 4.440892098500626e-16,
+            "smallestComputedGramEigenvalue": 0.0003063476247615106,
+            "jointCostWithoutSqrtE": 0.00020595053408998236,
+            "separatePrimeCostWithoutSqrtE": 0.0006017485943979787
+          }
+        ]
+      },
+      {
+        "order": 8,
+        "population": 173791,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": true,
+        "length": 6.802394763324311,
+        "physicalUpper": 900,
+        "selectedLabels": 25344,
+        "jointCost": 0.0007048016962568613,
+        "separatePrimeCost": 0.006283218645502147,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumAtomRelativeError": 3.585103656269775e-15,
+        "shells": [
+          {
+            "lower": 4096,
+            "upper": 8192,
+            "cofactors": 22,
+            "primes": 25,
+            "coordinateColumns": 25,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 1.7763568394002505e-15,
+            "smallestComputedGramEigenvalue": -8.848511980148932e-15,
+            "jointCostWithoutSqrtE": 2.7487637466995907e-05,
+            "separatePrimeCostWithoutSqrtE": 0.00014538020052321792
+          },
+          {
+            "lower": 8192,
+            "upper": 16384,
+            "cofactors": 172,
+            "primes": 82,
+            "coordinateColumns": 82,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.886579864025407e-15,
+            "smallestComputedGramEigenvalue": -3.4256377404633213e-14,
+            "jointCostWithoutSqrtE": 0.00011201946097902883,
+            "separatePrimeCostWithoutSqrtE": 0.001957171286256574
+          },
+          {
+            "lower": 16384,
+            "upper": 32768,
+            "cofactors": 461,
+            "primes": 82,
+            "coordinateColumns": 82,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.886579864025407e-15,
+            "smallestComputedGramEigenvalue": -3.7494260178919866e-14,
+            "jointCostWithoutSqrtE": 0.0004001335572020887,
+            "separatePrimeCostWithoutSqrtE": 0.0033294336176784567
+          },
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "cofactors": 159,
+            "primes": 44,
+            "coordinateColumns": 44,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 3.552713678800501e-15,
+            "smallestComputedGramEigenvalue": -1.5243400698915736e-14,
+            "jointCostWithoutSqrtE": 0.00016516104060874785,
+            "separatePrimeCostWithoutSqrtE": 0.0008512335410438977
+          }
+        ]
+      },
+      {
+        "order": 10,
+        "population": 6484203,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": false,
+        "length": 9.086589564540008,
+        "physicalUpper": 8836,
+        "selectedLabels": 32709252,
+        "jointCost": 0.004068608236996485,
+        "separatePrimeCost": 0.04707372235045358,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumAtomRelativeError": 3.5097018807909276e-15,
+        "shells": [
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "cofactors": 13178,
+            "primes": 491,
+            "coordinateColumns": 491,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 3.1086244689504383e-15,
+            "smallestComputedGramEigenvalue": -4.452980918531796e-13,
+            "jointCostWithoutSqrtE": 0.00026191392252206694,
+            "separatePrimeCostWithoutSqrtE": 0.0029700665531556553
+          },
+          {
+            "lower": 65536,
+            "upper": 131072,
+            "cofactors": 23277,
+            "primes": 766,
+            "coordinateColumns": 766,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 3.3306690738754696e-15,
+            "smallestComputedGramEigenvalue": -6.685629067456307e-13,
+            "jointCostWithoutSqrtE": 0.0003046253617109044,
+            "separatePrimeCostWithoutSqrtE": 0.008296393748752245
+          },
+          {
+            "lower": 131072,
+            "upper": 262144,
+            "cofactors": 36200,
+            "primes": 481,
+            "coordinateColumns": 481,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.4424906541753444e-15,
+            "smallestComputedGramEigenvalue": -4.222956583462787e-13,
+            "jointCostWithoutSqrtE": 0.0004962341447168615,
+            "separatePrimeCostWithoutSqrtE": 0.009375889268724704
+          },
+          {
+            "lower": 262144,
+            "upper": 524288,
+            "cofactors": 50753,
+            "primes": 265,
+            "coordinateColumns": 265,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.220446049250313e-15,
+            "smallestComputedGramEigenvalue": -1.7669307861005506e-13,
+            "jointCostWithoutSqrtE": 0.0006610177464369292,
+            "separatePrimeCostWithoutSqrtE": 0.009176576276410156
+          },
+          {
+            "lower": 524288,
+            "upper": 1048576,
+            "cofactors": 57896,
+            "primes": 145,
+            "coordinateColumns": 145,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.6645352591003757e-15,
+            "smallestComputedGramEigenvalue": -1.4500475514270584e-13,
+            "jointCostWithoutSqrtE": 0.0006516612972538685,
+            "separatePrimeCostWithoutSqrtE": 0.007767144751342566
+          },
+          {
+            "lower": 1048576,
+            "upper": 2097152,
+            "cofactors": 54248,
+            "primes": 80,
+            "coordinateColumns": 80,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.6645352591003757e-15,
+            "smallestComputedGramEigenvalue": -1.6182262906030356e-14,
+            "jointCostWithoutSqrtE": 0.000986324467682932,
+            "separatePrimeCostWithoutSqrtE": 0.005730095533778158
+          },
+          {
+            "lower": 2097152,
+            "upper": 4194304,
+            "cofactors": 36563,
+            "primes": 39,
+            "coordinateColumns": 39,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.1094237467877974e-15,
+            "smallestComputedGramEigenvalue": -4.625001502578713e-15,
+            "jointCostWithoutSqrtE": 0.0005490595543244367,
+            "separatePrimeCostWithoutSqrtE": 0.003176027789121265
+          },
+          {
+            "lower": 4194304,
+            "upper": 6484203,
+            "cofactors": 10925,
+            "primes": 11,
+            "coordinateColumns": 11,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 7.771561172376096e-16,
+            "smallestComputedGramEigenvalue": 0.002155484074606548,
+            "jointCostWithoutSqrtE": 0.000157771742348486,
+            "separatePrimeCostWithoutSqrtE": 0.0005815284291688308
+          }
+        ]
+      },
+      {
+        "order": 10,
+        "population": 6484203,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": true,
+        "length": 9.086589564540008,
+        "physicalUpper": 8836,
+        "selectedLabels": 2943562,
+        "jointCost": 0.0007079347910816075,
+        "separatePrimeCost": 0.010414826765810781,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumAtomRelativeError": 3.62819754755019e-15,
+        "shells": [
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "cofactors": 827,
+            "primes": 491,
+            "coordinateColumns": 491,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 3.1086244689504383e-15,
+            "smallestComputedGramEigenvalue": -4.452980918531796e-13,
+            "jointCostWithoutSqrtE": 6.707262348184577e-05,
+            "separatePrimeCostWithoutSqrtE": 0.0007945368244461951
+          },
+          {
+            "lower": 65536,
+            "upper": 131072,
+            "cofactors": 2156,
+            "primes": 766,
+            "coordinateColumns": 766,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 3.3306690738754696e-15,
+            "smallestComputedGramEigenvalue": -6.685629067456307e-13,
+            "jointCostWithoutSqrtE": 9.245937377530433e-05,
+            "separatePrimeCostWithoutSqrtE": 0.002600359455482874
+          },
+          {
+            "lower": 131072,
+            "upper": 262144,
+            "cofactors": 5080,
+            "primes": 481,
+            "coordinateColumns": 481,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.4424906541753444e-15,
+            "smallestComputedGramEigenvalue": -4.222956583462787e-13,
+            "jointCostWithoutSqrtE": 0.00018189432611777817,
+            "separatePrimeCostWithoutSqrtE": 0.0034454985383897663
+          },
+          {
+            "lower": 262144,
+            "upper": 524288,
+            "cofactors": 6093,
+            "primes": 265,
+            "coordinateColumns": 265,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.220446049250313e-15,
+            "smallestComputedGramEigenvalue": -1.7669307861005506e-13,
+            "jointCostWithoutSqrtE": 0.00019686365352156185,
+            "separatePrimeCostWithoutSqrtE": 0.002569251404975354
+          },
+          {
+            "lower": 524288,
+            "upper": 1048576,
+            "cofactors": 1235,
+            "primes": 145,
+            "coordinateColumns": 145,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.6645352591003757e-15,
+            "smallestComputedGramEigenvalue": -1.4500475514270584e-13,
+            "jointCostWithoutSqrtE": 4.86685244712107e-05,
+            "separatePrimeCostWithoutSqrtE": 0.000411680363684383
+          },
+          {
+            "lower": 1048576,
+            "upper": 2097152,
+            "cofactors": 178,
+            "primes": 80,
+            "coordinateColumns": 80,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.6645352591003757e-15,
+            "smallestComputedGramEigenvalue": -1.6182262906030356e-14,
+            "jointCostWithoutSqrtE": 6.282603203494413e-05,
+            "separatePrimeCostWithoutSqrtE": 0.0003169436298418222
+          },
+          {
+            "lower": 2097152,
+            "upper": 4194304,
+            "cofactors": 631,
+            "primes": 39,
+            "coordinateColumns": 39,
+            "allCoordinateColumnsRetained": true,
+            "maximumOrthogonalityError": 2.1094237467877974e-15,
+            "smallestComputedGramEigenvalue": -4.625001502578713e-15,
+            "jointCostWithoutSqrtE": 5.815025767896255e-05,
+            "separatePrimeCostWithoutSqrtE": 0.00027655654899038707
+          }
+        ]
+      }
+    ]
+  }
+}

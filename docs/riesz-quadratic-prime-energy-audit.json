@@ -1,0 +1,935 @@
+{
+  "schemaVersion": 1,
+  "scope": "The ENTIRE original source-scaled core now has the coupled enclosure max(-B0,H-K)<=J<=min(B0,H+K), with K<=B0 PROVED for the SAME arithmetic constant E, coordinates, weights and finite support. Subtracting the quadratic logarithmic profile reduces the previous centered energy by the exact squared correlation divided by quadratic-profile energy. Its actual divisor response stays signed in H. For squarefree cofactors with at least three primes the second logarithmic moment is exactly zero; for distinct primes q,r it is 2*log(q)*log(r). Thus H is supported only on triple-prime labels, while ALL higher counts stay coupled in the residual cost. The same narrower two-sided estimate applies automatically to every higher-count geometry without a correction. Counts are not split to claim a saving. Original allocation, factorial orders including zero and one, product phase, arbitrary prime-row holes, all core masks and both cutoffs remain. Canonical ownership covers the entire core; no prime-density approximation, zero hypothesis, new count ceiling or extra companion credit enters. The arithmetic constant E remains UNEVALUATED. Optional finite probes reduce the width, but H changes sign and neither its eventual signed size nor the total source-scaled cost is proved small. Both whole -79/1000 floor and 3/2 ceiling remain OPEN. No new zero exclusion or RH claim.",
+  "status": "Local validation passed: focused and root Lean, verbose lint, transitive axioms, compiled status, source scan, all explorers, plots and GitHub README renderer. Uncommitted local work; no new CI claim.",
+  "wholeCoreCovered": true,
+  "uniformWidthImprovementProved": true,
+  "signedCenterRetained": true,
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "rieszQuadraticNullMomentTheorem": "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.secondMoment_eq_zero_of_count",
+    "rieszQuadraticSemiprimeTheorem": "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.secondMoment_two_primes",
+    "rieszQuadraticEnergySavingTheorem": "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.quadraticEnergy_eq",
+    "rieszQuadraticEnergyComparisonTheorem": "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.quadraticEnergy_le",
+    "rieszQuadraticResponseTheorem": "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.divisor_quadratic",
+    "rieszQuadraticCostTheorem": "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.quadraticCost_le_jointCost",
+    "rieszQuadraticJointTheorem": "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.exists_joint_quadratic_bounds",
+    "rieszQuadraticCenterTheorem": "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.quadraticCenter_eq_two_prime",
+    "rieszQuadraticHigherCenterTheorem": "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.quadraticCenter_eq_zero_of_count",
+    "rieszQuadraticLiteralTheorem": "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.exists_literal_quadratic_bounds",
+    "rieszQuadraticHigherCountTheorem": "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.exists_higher_count_bounds",
+    "rieszQuadraticWholeTheorem": "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.exists_whole_quadratic_bounds",
+    "rieszQuadraticCoreTheorem": "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.exists_core_quadratic_bounds"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszQuadraticPrimeEnergy.lean": "bb76280173d9970689cabc2faa4ec8ff40411f2b0202edc4b7c6c20a869bf60c",
+    "RiemannGaussian/ZetaRieszJointPrimeEnergy.lean": "aeac126806d23acbc920dcdd0ba84925ccb76a8fc335b9ac613aae6d85ad7e7e",
+    "RiemannGaussian/ZetaRieszCenteredPrimeEnergy.lean": "41aafeaf461b1a2ca0dcba305ac83c439d7b07599259da320a28ff269214f4fd",
+    "scripts/probe_riesz_quadratic_prime_energy.py": "7831ed5d92d00f87c9b638e87a93af4becf7e5aa8e6dc5976f35687acb06cea9"
+  },
+  "numericalProbe": {
+    "scope": "Optional coupled quadratic-moment diagnostic; never a CI certificate.\n\nKeep all prime counts together. The quadratic correction is explicit and\nsigned, and is supported on two-prime cofactors. Costs omit the UNEVALUATED\nsqrt(E). Actual primes, allocation and phase are used on truncated test sets;\nno source-scale or eventual threshold is proved by floating calculations.",
+    "expandedPopulation": false,
+    "rows": [
+      {
+        "order": 6,
+        "population": 4096,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": false,
+        "length": 4.795790545596741,
+        "physicalUpper": 121,
+        "selectedLabels": 2130,
+        "jointCost": 0.0044545110093101295,
+        "quadraticCost": 0.003351723863050845,
+        "center": 4.159948181091078e-05,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumRegressionRelativeError": 3.117997897593742e-15,
+        "shells": [
+          {
+            "lower": 1024,
+            "upper": 2048,
+            "old": 0.0013561021969979074,
+            "new": 0.0009507985236286601,
+            "center": 2.261172583405342e-05,
+            "semiprimeRows": 60,
+            "coordinateColumns": 14,
+            "maximumOrthogonalityError": 1.6653345369377348e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 2048,
+            "upper": 4096,
+            "old": 0.0030984088123122222,
+            "new": 0.0024009253394221847,
+            "center": 1.8987755976857367e-05,
+            "semiprimeRows": 20,
+            "coordinateColumns": 13,
+            "maximumOrthogonalityError": 6.661338147750939e-16,
+            "allCoordinateColumnsRetained": true
+          }
+        ]
+      },
+      {
+        "order": 6,
+        "population": 4096,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": true,
+        "length": 4.795790545596741,
+        "physicalUpper": 121,
+        "selectedLabels": 113,
+        "jointCost": 0.0006582063519627388,
+        "quadraticCost": 0.00049284747365311,
+        "center": 2.249092119431849e-06,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 21,
+        "maximumRegressionRelativeError": 2.6373905913043503e-15,
+        "shells": [
+          {
+            "lower": 1024,
+            "upper": 2048,
+            "old": 0.0002729306647827867,
+            "new": 0.00019364003225242295,
+            "center": -9.7205928813251e-06,
+            "semiprimeRows": 7,
+            "coordinateColumns": 14,
+            "maximumOrthogonalityError": 1.6653345369377348e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 2048,
+            "upper": 4096,
+            "old": 0.0003852756871799522,
+            "new": 0.0002992074414006871,
+            "center": 1.1969685000756948e-05,
+            "semiprimeRows": 14,
+            "coordinateColumns": 13,
+            "maximumOrthogonalityError": 6.661338147750939e-16,
+            "allCoordinateColumnsRetained": true
+          }
+        ]
+      },
+      {
+        "order": 8,
+        "population": 65536,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": false,
+        "length": 6.802394763324311,
+        "physicalUpper": 900,
+        "selectedLabels": 285908,
+        "jointCost": 0.0027096677009332843,
+        "quadraticCost": 0.0022517485422797858,
+        "center": 5.742663876615856e-05,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumRegressionRelativeError": 3.323657424047974e-15,
+        "shells": [
+          {
+            "lower": 4096,
+            "upper": 8192,
+            "old": 0.00011521114583782555,
+            "new": 8.169058362237178e-05,
+            "center": 7.483861730944944e-06,
+            "semiprimeRows": 153,
+            "coordinateColumns": 25,
+            "maximumOrthogonalityError": 1.1102230246251565e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 8192,
+            "upper": 16384,
+            "old": 0.00043869851163521077,
+            "new": 0.0003287602897065083,
+            "center": 2.6988120420053506e-05,
+            "semiprimeRows": 682,
+            "coordinateColumns": 82,
+            "maximumOrthogonalityError": 1.5543122344752192e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 16384,
+            "upper": 32768,
+            "old": 0.0011307938009846696,
+            "new": 0.000918824399957012,
+            "center": 2.16590114424053e-05,
+            "semiprimeRows": 638,
+            "coordinateColumns": 82,
+            "maximumOrthogonalityError": 8.881784197001252e-16,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "old": 0.0010249642424755784,
+            "new": 0.0009224732689938935,
+            "center": 1.2956451727548056e-06,
+            "semiprimeRows": 159,
+            "coordinateColumns": 44,
+            "maximumOrthogonalityError": 1.2212453270876722e-15,
+            "allCoordinateColumnsRetained": true
+          }
+        ]
+      },
+      {
+        "order": 8,
+        "population": 65536,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": true,
+        "length": 6.802394763324311,
+        "physicalUpper": 900,
+        "selectedLabels": 25344,
+        "jointCost": 0.0007048016962568613,
+        "quadraticCost": 0.0005759313662589004,
+        "center": 2.8091954650730486e-05,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumRegressionRelativeError": 3.585103656269775e-15,
+        "shells": [
+          {
+            "lower": 4096,
+            "upper": 8192,
+            "old": 2.7487637466995907e-05,
+            "new": 1.9482263265578446e-05,
+            "center": 1.3166234851448494e-06,
+            "semiprimeRows": 22,
+            "coordinateColumns": 25,
+            "maximumOrthogonalityError": 1.1102230246251565e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 8192,
+            "upper": 16384,
+            "old": 0.00011201946097902883,
+            "new": 8.424061611891769e-05,
+            "center": 8.488194777737402e-06,
+            "semiprimeRows": 172,
+            "coordinateColumns": 82,
+            "maximumOrthogonalityError": 1.5543122344752192e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 16384,
+            "upper": 32768,
+            "old": 0.0004001335572020887,
+            "new": 0.0003241988631177344,
+            "center": 1.6991491215093433e-05,
+            "semiprimeRows": 461,
+            "coordinateColumns": 82,
+            "maximumOrthogonalityError": 8.881784197001252e-16,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "old": 0.00016516104060874785,
+            "new": 0.00014800962375666982,
+            "center": 1.2956451727548051e-06,
+            "semiprimeRows": 159,
+            "coordinateColumns": 44,
+            "maximumOrthogonalityError": 1.2212453270876722e-15,
+            "allCoordinateColumnsRetained": true
+          }
+        ]
+      },
+      {
+        "order": 10,
+        "population": 1048576,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": false,
+        "length": 9.086589564540008,
+        "physicalUpper": 8836,
+        "selectedLabels": 30510285,
+        "jointCost": 0.00237545247264055,
+        "quadraticCost": 0.0021600333108213743,
+        "center": -5.4059341703323946e-05,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumRegressionRelativeError": 3.5097018807909276e-15,
+        "shells": [
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "old": 0.00026191392252206705,
+            "new": 0.00021633484179645092,
+            "center": -1.8817294789706076e-05,
+            "semiprimeRows": 4204,
+            "coordinateColumns": 491,
+            "maximumOrthogonalityError": 1.3322676295501878e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 65536,
+            "upper": 131072,
+            "old": 0.0003046253617109024,
+            "new": 0.00025366240699303003,
+            "center": -1.8856008604028084e-05,
+            "semiprimeRows": 6037,
+            "coordinateColumns": 766,
+            "maximumOrthogonalityError": 1.1102230246251565e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 131072,
+            "upper": 262144,
+            "old": 0.0004962341447168583,
+            "new": 0.0004422637081875687,
+            "center": -1.140109449321937e-05,
+            "semiprimeRows": 7030,
+            "coordinateColumns": 481,
+            "maximumOrthogonalityError": 1.2073675392798577e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 262144,
+            "upper": 524288,
+            "old": 0.0006610177464368964,
+            "new": 0.0006189150562396823,
+            "center": -4.888251209006726e-06,
+            "semiprimeRows": 6093,
+            "coordinateColumns": 265,
+            "maximumOrthogonalityError": 1.3322676295501878e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 524288,
+            "upper": 1048576,
+            "old": 0.0006516612972538255,
+            "new": 0.0006288572976046422,
+            "center": -9.669260736369682e-08,
+            "semiprimeRows": 1235,
+            "coordinateColumns": 145,
+            "maximumOrthogonalityError": 1.1102230246251565e-15,
+            "allCoordinateColumnsRetained": true
+          }
+        ]
+      },
+      {
+        "order": 10,
+        "population": 1048576,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": true,
+        "length": 9.086589564540008,
+        "physicalUpper": 8836,
+        "selectedLabels": 2930886,
+        "jointCost": 0.0005869585013676871,
+        "quadraticCost": 0.0005254759104794812,
+        "center": -2.836855205892917e-05,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumRegressionRelativeError": 3.62819754755019e-15,
+        "shells": [
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "old": 6.707262348184573e-05,
+            "new": 5.53963951350841e-05,
+            "center": -4.931070775028943e-06,
+            "semiprimeRows": 827,
+            "coordinateColumns": 491,
+            "maximumOrthogonalityError": 1.3322676295501878e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 65536,
+            "upper": 131072,
+            "old": 9.245937377530384e-05,
+            "new": 7.70764579095973e-05,
+            "center": -9.063844347641156e-06,
+            "semiprimeRows": 2156,
+            "coordinateColumns": 766,
+            "maximumOrthogonalityError": 1.1102230246251565e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 131072,
+            "upper": 262144,
+            "old": 0.00018189432611777676,
+            "new": 0.00016213393542953333,
+            "center": -9.388693119888648e-06,
+            "semiprimeRows": 5080,
+            "coordinateColumns": 481,
+            "maximumOrthogonalityError": 1.2073675392798577e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 262144,
+            "upper": 524288,
+            "old": 0.00019686365352155358,
+            "new": 0.00018424600687879611,
+            "center": -4.888251209006726e-06,
+            "semiprimeRows": 6093,
+            "coordinateColumns": 265,
+            "maximumOrthogonalityError": 1.3322676295501878e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 524288,
+            "upper": 1048576,
+            "old": 4.866852447120726e-05,
+            "new": 4.662311512647032e-05,
+            "center": -9.669260736369682e-08,
+            "semiprimeRows": 1235,
+            "coordinateColumns": 145,
+            "maximumOrthogonalityError": 1.1102230246251565e-15,
+            "allCoordinateColumnsRetained": true
+          }
+        ]
+      }
+    ]
+  },
+  "expandedNumericalProbe": {
+    "scope": "Optional coupled quadratic-moment diagnostic; never a CI certificate.\n\nKeep all prime counts together. The quadratic correction is explicit and\nsigned, and is supported on two-prime cofactors. Costs omit the UNEVALUATED\nsqrt(E). Actual primes, allocation and phase are used on truncated test sets;\nno source-scale or eventual threshold is proved by floating calculations.",
+    "expandedPopulation": true,
+    "rows": [
+      {
+        "order": 6,
+        "population": 5266,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": false,
+        "length": 4.795790545596741,
+        "physicalUpper": 121,
+        "selectedLabels": 2198,
+        "jointCost": 0.0051554870747819665,
+        "quadraticCost": 0.003939780000006794,
+        "center": 4.159948181091078e-05,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumRegressionRelativeError": 3.117997897593742e-15,
+        "shells": [
+          {
+            "lower": 1024,
+            "upper": 2048,
+            "old": 0.0013561021969979074,
+            "new": 0.0009507985236286601,
+            "center": 2.261172583405342e-05,
+            "semiprimeRows": 60,
+            "coordinateColumns": 14,
+            "maximumOrthogonalityError": 1.6653345369377348e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 2048,
+            "upper": 4096,
+            "old": 0.0030984088123122222,
+            "new": 0.0024009253394221847,
+            "center": 1.8987755976857367e-05,
+            "semiprimeRows": 20,
+            "coordinateColumns": 13,
+            "maximumOrthogonalityError": 6.661338147750939e-16,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 4096,
+            "upper": 5266,
+            "old": 0.0007009760654718367,
+            "new": 0.0005880561369559493,
+            "center": 0.0,
+            "semiprimeRows": 0,
+            "coordinateColumns": 4,
+            "maximumOrthogonalityError": 8.881784197001252e-16,
+            "allCoordinateColumnsRetained": true
+          }
+        ]
+      },
+      {
+        "order": 6,
+        "population": 5266,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": true,
+        "length": 4.795790545596741,
+        "physicalUpper": 121,
+        "selectedLabels": 113,
+        "jointCost": 0.0006582063519627388,
+        "quadraticCost": 0.00049284747365311,
+        "center": 2.249092119431849e-06,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 21,
+        "maximumRegressionRelativeError": 2.6373905913043503e-15,
+        "shells": [
+          {
+            "lower": 1024,
+            "upper": 2048,
+            "old": 0.0002729306647827867,
+            "new": 0.00019364003225242295,
+            "center": -9.7205928813251e-06,
+            "semiprimeRows": 7,
+            "coordinateColumns": 14,
+            "maximumOrthogonalityError": 1.6653345369377348e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 2048,
+            "upper": 4096,
+            "old": 0.0003852756871799522,
+            "new": 0.0002992074414006871,
+            "center": 1.1969685000756948e-05,
+            "semiprimeRows": 14,
+            "coordinateColumns": 13,
+            "maximumOrthogonalityError": 6.661338147750939e-16,
+            "allCoordinateColumnsRetained": true
+          }
+        ]
+      },
+      {
+        "order": 8,
+        "population": 173791,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": false,
+        "length": 6.802394763324311,
+        "physicalUpper": 900,
+        "selectedLabels": 306148,
+        "jointCost": 0.0038973783741614526,
+        "quadraticCost": 0.0033614368732468617,
+        "center": 5.742663876615856e-05,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumRegressionRelativeError": 3.323657424047974e-15,
+        "shells": [
+          {
+            "lower": 4096,
+            "upper": 8192,
+            "old": 0.00011521114583782555,
+            "new": 8.169058362237178e-05,
+            "center": 7.483861730944944e-06,
+            "semiprimeRows": 153,
+            "coordinateColumns": 25,
+            "maximumOrthogonalityError": 1.1102230246251565e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 8192,
+            "upper": 16384,
+            "old": 0.00043869851163521077,
+            "new": 0.0003287602897065083,
+            "center": 2.6988120420053506e-05,
+            "semiprimeRows": 682,
+            "coordinateColumns": 82,
+            "maximumOrthogonalityError": 1.5543122344752192e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 16384,
+            "upper": 32768,
+            "old": 0.0011307938009846696,
+            "new": 0.000918824399957012,
+            "center": 2.16590114424053e-05,
+            "semiprimeRows": 638,
+            "coordinateColumns": 82,
+            "maximumOrthogonalityError": 8.881784197001252e-16,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "old": 0.0010249642424755784,
+            "new": 0.0009224732689938935,
+            "center": 1.2956451727548056e-06,
+            "semiprimeRows": 159,
+            "coordinateColumns": 44,
+            "maximumOrthogonalityError": 1.2212453270876722e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 65536,
+            "upper": 131072,
+            "old": 0.0009817601391381864,
+            "new": 0.0009150910911407709,
+            "center": 0.0,
+            "semiprimeRows": 0,
+            "coordinateColumns": 21,
+            "maximumOrthogonalityError": 8.881784197001252e-16,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 131072,
+            "upper": 173791,
+            "old": 0.00020595053408998236,
+            "new": 0.00019459723982630486,
+            "center": 0.0,
+            "semiprimeRows": 0,
+            "coordinateColumns": 5,
+            "maximumOrthogonalityError": 2.220446049250313e-16,
+            "allCoordinateColumnsRetained": true
+          }
+        ]
+      },
+      {
+        "order": 8,
+        "population": 173791,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": true,
+        "length": 6.802394763324311,
+        "physicalUpper": 900,
+        "selectedLabels": 25344,
+        "jointCost": 0.0007048016962568613,
+        "quadraticCost": 0.0005759313662589004,
+        "center": 2.8091954650730486e-05,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumRegressionRelativeError": 3.585103656269775e-15,
+        "shells": [
+          {
+            "lower": 4096,
+            "upper": 8192,
+            "old": 2.7487637466995907e-05,
+            "new": 1.9482263265578446e-05,
+            "center": 1.3166234851448494e-06,
+            "semiprimeRows": 22,
+            "coordinateColumns": 25,
+            "maximumOrthogonalityError": 1.1102230246251565e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 8192,
+            "upper": 16384,
+            "old": 0.00011201946097902883,
+            "new": 8.424061611891769e-05,
+            "center": 8.488194777737402e-06,
+            "semiprimeRows": 172,
+            "coordinateColumns": 82,
+            "maximumOrthogonalityError": 1.5543122344752192e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 16384,
+            "upper": 32768,
+            "old": 0.0004001335572020887,
+            "new": 0.0003241988631177344,
+            "center": 1.6991491215093433e-05,
+            "semiprimeRows": 461,
+            "coordinateColumns": 82,
+            "maximumOrthogonalityError": 8.881784197001252e-16,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "old": 0.00016516104060874785,
+            "new": 0.00014800962375666982,
+            "center": 1.2956451727548051e-06,
+            "semiprimeRows": 159,
+            "coordinateColumns": 44,
+            "maximumOrthogonalityError": 1.2212453270876722e-15,
+            "allCoordinateColumnsRetained": true
+          }
+        ]
+      },
+      {
+        "order": 10,
+        "population": 6484203,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": false,
+        "length": 9.086589564540008,
+        "physicalUpper": 8836,
+        "selectedLabels": 32709252,
+        "jointCost": 0.004068608236996404,
+        "quadraticCost": 0.0038179765757033546,
+        "center": -5.4059341703323946e-05,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumRegressionRelativeError": 3.5097018807909276e-15,
+        "shells": [
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "old": 0.00026191392252206705,
+            "new": 0.00021633484179645092,
+            "center": -1.8817294789706076e-05,
+            "semiprimeRows": 4204,
+            "coordinateColumns": 491,
+            "maximumOrthogonalityError": 1.3322676295501878e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 65536,
+            "upper": 131072,
+            "old": 0.0003046253617109024,
+            "new": 0.00025366240699303003,
+            "center": -1.8856008604028084e-05,
+            "semiprimeRows": 6037,
+            "coordinateColumns": 766,
+            "maximumOrthogonalityError": 1.1102230246251565e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 131072,
+            "upper": 262144,
+            "old": 0.0004962341447168583,
+            "new": 0.0004422637081875687,
+            "center": -1.140109449321937e-05,
+            "semiprimeRows": 7030,
+            "coordinateColumns": 481,
+            "maximumOrthogonalityError": 1.2073675392798577e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 262144,
+            "upper": 524288,
+            "old": 0.0006610177464368964,
+            "new": 0.0006189150562396823,
+            "center": -4.888251209006726e-06,
+            "semiprimeRows": 6093,
+            "coordinateColumns": 265,
+            "maximumOrthogonalityError": 1.3322676295501878e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 524288,
+            "upper": 1048576,
+            "old": 0.0006516612972538255,
+            "new": 0.0006288572976046422,
+            "center": -9.669260736369682e-08,
+            "semiprimeRows": 1235,
+            "coordinateColumns": 145,
+            "maximumOrthogonalityError": 1.1102230246251565e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 1048576,
+            "upper": 2097152,
+            "old": 0.0009863244676829328,
+            "new": 0.0009620287402930162,
+            "center": 0.0,
+            "semiprimeRows": 0,
+            "coordinateColumns": 80,
+            "maximumOrthogonalityError": 1.3322676295501878e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 2097152,
+            "upper": 4194304,
+            "old": 0.0005490595543244357,
+            "new": 0.0005406109354998888,
+            "center": 0.0,
+            "semiprimeRows": 0,
+            "coordinateColumns": 39,
+            "maximumOrthogonalityError": 1.1102230246251565e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 4194304,
+            "upper": 6484203,
+            "old": 0.0001577717423484861,
+            "new": 0.00015530358908907534,
+            "center": 0.0,
+            "semiprimeRows": 0,
+            "coordinateColumns": 11,
+            "maximumOrthogonalityError": 7.771561172376096e-16,
+            "allCoordinateColumnsRetained": true
+          }
+        ]
+      },
+      {
+        "order": 10,
+        "population": 6484203,
+        "radius": 0.50005,
+        "height": 54.0,
+        "allCofactorPrimesAboveNSquared": true,
+        "length": 9.086589564540008,
+        "physicalUpper": 8836,
+        "selectedLabels": 2943562,
+        "jointCost": 0.0007079347910815938,
+        "quadraticCost": 0.0006439422045421878,
+        "center": -2.836855205892917e-05,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "allCoordinateColumnsRetained": true,
+        "regressionRows": 256,
+        "maximumRegressionRelativeError": 3.62819754755019e-15,
+        "shells": [
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "old": 6.707262348184573e-05,
+            "new": 5.53963951350841e-05,
+            "center": -4.931070775028943e-06,
+            "semiprimeRows": 827,
+            "coordinateColumns": 491,
+            "maximumOrthogonalityError": 1.3322676295501878e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 65536,
+            "upper": 131072,
+            "old": 9.245937377530384e-05,
+            "new": 7.70764579095973e-05,
+            "center": -9.063844347641156e-06,
+            "semiprimeRows": 2156,
+            "coordinateColumns": 766,
+            "maximumOrthogonalityError": 1.1102230246251565e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 131072,
+            "upper": 262144,
+            "old": 0.00018189432611777676,
+            "new": 0.00016213393542953333,
+            "center": -9.388693119888648e-06,
+            "semiprimeRows": 5080,
+            "coordinateColumns": 481,
+            "maximumOrthogonalityError": 1.2073675392798577e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 262144,
+            "upper": 524288,
+            "old": 0.00019686365352155358,
+            "new": 0.00018424600687879611,
+            "center": -4.888251209006726e-06,
+            "semiprimeRows": 6093,
+            "coordinateColumns": 265,
+            "maximumOrthogonalityError": 1.3322676295501878e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 524288,
+            "upper": 1048576,
+            "old": 4.866852447120726e-05,
+            "new": 4.662311512647032e-05,
+            "center": -9.669260736369682e-08,
+            "semiprimeRows": 1235,
+            "coordinateColumns": 145,
+            "maximumOrthogonalityError": 1.1102230246251565e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 1048576,
+            "upper": 2097152,
+            "old": 6.282603203494413e-05,
+            "new": 6.126417497011633e-05,
+            "center": 0.0,
+            "semiprimeRows": 0,
+            "coordinateColumns": 80,
+            "maximumOrthogonalityError": 1.3322676295501878e-15,
+            "allCoordinateColumnsRetained": true
+          },
+          {
+            "lower": 2097152,
+            "upper": 4194304,
+            "old": 5.815025767896255e-05,
+            "new": 5.720211909259032e-05,
+            "center": 0.0,
+            "semiprimeRows": 0,
+            "coordinateColumns": 39,
+            "maximumOrthogonalityError": 1.1102230246251565e-15,
+            "allCoordinateColumnsRetained": true
+          }
+        ]
+      }
+    ]
+  },
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.secondMoment_eq_zero_of_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.secondMoment_two_primes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.quadraticEnergy_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.quadraticEnergy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.divisor_quadratic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.quadraticCost_le_jointCost": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.exists_joint_quadratic_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.quadraticCenter_eq_two_prime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.quadraticCenter_eq_zero_of_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.exists_literal_quadratic_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.exists_higher_count_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.exists_whole_quadratic_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.exists_core_quadratic_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

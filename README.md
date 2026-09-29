@@ -149,10 +149,10 @@ Work directly on both cofinal signed bounds for J+C, retaining all original weig
 
 ### Latest Update
 
-**Exact composite moment cancellation lowers the joint energy cost.** Lean now subtracts the constant and logarithmic divisor components that every squarefree composite cofactor annihilates, before measuring the signed prime-block energy. The correction is exact and optimal among affine-log choices. Both literal carrier bounds improve with the same arithmetic constant, preserving moving intervals and every original allocation order.
-Control the total source-normalized cost with the actual radial and prime correlations. Larger-order probes still show growth; a disjoint whole-core cover and both whole thresholds remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszCenteredPrimeEnergy.lean#L455)
-· [Proof details](docs/zeta-riesz-centered-prime-energy.md).
+**The signed cofactor counting error has a power saving.** Lean proves a counting power saving for short Mobius cutoffs, retaining phase and explicit mask variation. The extension audit also proves that any gain created by changing an excluded prime weight reappears exactly in the comparison error. The signed main and whole-carrier bounds remain open.
+Prove a signed bound for the original masked sum, or for one fixed extension with its complete error paid. Both cofinal thresholds remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszCofactorDiscrepancy.lean#L637)
+· [Proof details](docs/zeta-riesz-cofactor-discrepancy.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

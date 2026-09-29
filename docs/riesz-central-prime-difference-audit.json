@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "scope": "The ACTUAL surviving central carrier now has joint upper and lower bounds after extracting each owned cofactor's genuine least prime BEFORE the arithmetic mean. Its Mobius sign produces an exact two-hinge difference with raw energy at most 2 log r, and cofactor-count times energy at most twice the cofactor logarithm. Both cutoffs, squarefreeness, coprimality, full phase, allocation, all factorial orders and every original mask remain. All counts, prime choices and incidences may stay in ONE common coordinate system. The new central enclosure is intersected with the previous quadratic/cubic enclosures and the paid exp(-N/1000000) outer error is added once. This cannot weaken either whole-core bound. The finite costs and arithmetic constants remain UNEVALUATED: no bounded eventual total central estimate or whole -79/1000 floor or 3/2 ceiling is proved. Optional actual-prime N=10 probes reduce the RAW, unprojected hinge budget on least-prime 2,3,5 test sectors by about 56%,60%,65%; these floating comparisons omit sqrt(E), prior nested core deletions and the remaining sectors, and are NOT comparisons with the already cubic-projected whole cost. No numerical certificate, zero exclusion or RH claim. A second genuine cofactor-prime extraction has exact four-cutoff energy <=4 log r when p>=r*s. The squared explicit mean allowance contracts by 2/s with the SAME E and weights, strictly for s>=3 with nonzero old allowance. Literal masked fibre and label-set bounds retain all counts; finite 25-44% diagnostics are NOT a large-order estimate. See the separate central-cost-growth audit for the combined large-order majorant, which still grows.",
+  "status": "Local validation passed: full strict root build (11380 jobs), focused Lean proof, whole-project and verbose lint, 88 cumulative terminal axiom checks, compiled status with byte-for-byte freshness, 2842-file source scan, all three explorers and browser checks, both plots, and the GitHub working README renderer. Uncommitted local work; no new CI or publication claim.",
+  "wholeCoreCovered": true,
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "rieszCentralPrimePulseTheorem": "RiemannGaussian.ZetaRieszCentralPrimeDifference.divisor_pulse",
+    "rieszCentralPrimeEnergyIdentityTheorem": "RiemannGaussian.ZetaRieszCentralPrimeDifference.pulse_energy_eq",
+    "rieszCentralPrimeEnergyTheorem": "RiemannGaussian.ZetaRieszCentralPrimeDifference.pulse_energy_le",
+    "rieszCentralPrimeFibreTheorem": "RiemannGaussian.ZetaRieszCentralPrimeDifference.exists_prime_difference_bounds",
+    "rieszCentralPrimeAtomTheorem": "RiemannGaussian.ZetaRieszCentralPrimeDifference.atom_pulse",
+    "rieszCentralPrimeWholeTheorem": "RiemannGaussian.ZetaRieszCentralPrimeDifference.exists_whole_difference_bounds",
+    "rieszCentralPrimeStrictEnergyTheorem": "RiemannGaussian.ZetaRieszCentralPrimeDifference.pulse_energy_lt_owner",
+    "rieszCentralPrimeCountEnergyTheorem": "RiemannGaussian.ZetaRieszCentralPrimeDifference.pulse_energy_count",
+    "rieszCentralPrimeJointTheorem": "RiemannGaussian.ZetaRieszCentralPrimeDifference.exists_central_joint_bounds",
+    "rieszSecondPrimeEnergyTheorem": "RiemannGaussian.ZetaRieszCentralPrimeDifference.secondPulse_energy_le",
+    "rieszSecondPrimeInsertionTheorem": "RiemannGaussian.ZetaRieszCentralPrimeDifference.divisor_secondPulse",
+    "rieszSecondPrimeContractionTheorem": "RiemannGaussian.ZetaRieszCentralPrimeDifference.second_allowance_contraction",
+    "rieszSecondPrimeStrictTheorem": "RiemannGaussian.ZetaRieszCentralPrimeDifference.second_allowance_strict",
+    "rieszSecondPrimeFibreTheorem": "RiemannGaussian.ZetaRieszCentralPrimeDifference.exists_second_prime_bounds",
+    "rieszSecondPrimeWholeTheorem": "RiemannGaussian.ZetaRieszCentralPrimeDifference.exists_whole_second_bounds"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszCentralPrimeDifference.lean": "18723d6ae52ff6d47279012c0504a2b484fe43a899a6f936271e485a4d774e04",
+    "RiemannGaussian/ZetaRieszLargeOrderCore.lean": "d46249f4549639abb5cb3759cf3daba426af308705cbf64411cfbad281f9e9ec",
+    "RiemannGaussian/ZetaRieszQuadraticPrimeEnergy.lean": "bb76280173d9970689cabc2faa4ec8ff40411f2b0202edc4b7c6c20a869bf60c",
+    "scripts/probe_riesz_central_prime_difference.py": "b631e9ca203fa0650838d64177e8bb3cefe756ba638579c3b3cee5feb09c55dd",
+    "docs/riesz-central-prime-difference-probe.json": "a0bceff47d01d77491a2af77dd6094b12fcc8e1f939cab1f8b8f5f9bd06921a0",
+    "scripts/probe_riesz_second_prime_difference.py": "f663cfdbdaf16069ca3a5518706efdb8ecd14ea849514a5d45e7de1d00684bc5",
+    "docs/riesz-second-prime-difference-probe.json": "fa81ccf70bb7e4f703cda97e5f282219b57031cc81913c15b6b4197bcd774fef"
+  },
+  "constantEvaluated": false,
+  "numericalEvidence": "docs/riesz-central-prime-difference-probe.json",
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszCentralPrimeDifference.divisor_pulse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralPrimeDifference.pulse_energy_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralPrimeDifference.pulse_energy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralPrimeDifference.exists_prime_difference_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralPrimeDifference.atom_pulse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralPrimeDifference.exists_whole_difference_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralPrimeDifference.pulse_energy_lt_owner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralPrimeDifference.pulse_energy_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralPrimeDifference.exists_central_joint_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralPrimeDifference.secondPulse_energy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralPrimeDifference.divisor_secondPulse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralPrimeDifference.second_allowance_contraction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralPrimeDifference.second_allowance_strict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralPrimeDifference.exists_second_prime_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralPrimeDifference.exists_whole_second_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

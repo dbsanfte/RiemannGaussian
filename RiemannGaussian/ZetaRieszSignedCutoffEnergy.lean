@@ -179,7 +179,8 @@ theorem exists_signed_profile_mean :
 
 
 
-private theorem abel_profile (R : ℕ) (f z : ℕ → ℝ) (hend : f (R+1)=0) :
+/-- Finite summation by parts, with its endpoint discharged explicitly. -/
+theorem abel_profile (R : ℕ) (f z : ℕ → ℝ) (hend : f (R+1)=0) :
     (∑ d ∈ Finset.Icc 1 R, f d*z d) =
       ∑ k ∈ Finset.Icc 1 R, (f k-f (k+1))*(∑ d ∈ Finset.Icc 1 k, z d) := by
   have htail d (hd : d ≤ R+1) :

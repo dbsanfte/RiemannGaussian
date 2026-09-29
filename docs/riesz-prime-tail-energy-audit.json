@@ -17,7 +17,7 @@
   "zeroExclusionProved": false,
   "sourceHashes": {
     "RiemannGaussian/ZetaRieszPrimeTailEnergy.lean": "9f881fa9744ed80a6ecf9f83e70bfa4a003e3703f97a732983c28c2d55e7178c",
-    "RiemannGaussian/ZetaRieszSignedCutoffEnergy.lean": "c5046b28f59f34362ea3bb6dfb97f823c57fb3f34a338c542c53f9b4ac8901e4",
+    "RiemannGaussian/ZetaRieszSignedCutoffEnergy.lean": "5566cbe25e4bde6c1f2117ae611c12159a65f59bcd3cfd45422ec1db9754d840",
     "RiemannGaussian/ZetaRieszQuantitativePrimePeriod.lean": "764fb8473cb66614b77b8c25a36a53f550716dd0ef26e5e348555e614fc10fea",
     "scripts/probe_riesz_prime_tail_energy.py": "6aad7bea10297383b080f40d2d01f492981a906481a8ce66a154231c23aade44"
   },

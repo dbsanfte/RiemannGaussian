@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "scope": "The combined source-normalized CENTRAL joint cost is now bounded for all sufficiently large orders by C_E*N*(1+log(16*N+8))*(2*u)^N, with C_E=12*sqrt(6E)*(2*exp(1/2)*log(4)). Every cofactor shell and prime-count class is summed; no finite arithmetic cost sum remains in this majorant. The literal core, squarefreeness, unique ownership, allocation, factorial order, full phase and every prior mask remain in the exact cost and signed enclosure. The upper majorant uses absolute weight and prime-hinge energy bounds, so it does not certify additional phase cancellation. The cost is o(N^2*(2u)^N); the scalar majorant is proved to diverge for every u>1/2. This does NOT prove divergence of the actual carrier or optimized cost. At u=10001/20000 its remaining growth exponent lies strictly between 99/1000000 and 1/10000. The actual whole core is enclosed by this cost plus the already paid C*exp(-N/1000000) outer error, charged once. All arithmetic constants and the starting order remain UNEVALUATED. Fixed-sector percentage savings do not remove the surviving exponential factor. Both the -79/1000 cofinal floor and 3/2 ceiling remain OPEN; no new zero exclusion or RH claim.",
+  "status": "Local validation passed: full strict root build (11380 jobs), focused Lean proof, whole-project and verbose lint, 88 cumulative terminal axiom checks, compiled status with byte-for-byte freshness, 2842-file source scan, all three explorers and browser checks, both plots, and the GitHub working README renderer. Uncommitted local work; no new CI or publication claim.",
+  "wholeCoreCovered": true,
+  "allCentralCountsIncluded": true,
+  "largeOrderMajorantProved": true,
+  "majorantDecays": false,
+  "actualCostDivergenceProved": false,
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "constantEvaluated": false,
+  "terminalTheorems": {
+    "rieszCentralGrowthPeakTheorem": "RiemannGaussian.ZetaRieszCentralCostGrowth.radial_peak",
+    "rieszCentralGrowthWeightTheorem": "RiemannGaussian.ZetaRieszCentralCostGrowth.primeWeight_le",
+    "rieszCentralGrowthShellTheorem": "RiemannGaussian.ZetaRieszCentralCostGrowth.primeCost_shell_le",
+    "rieszCentralGrowthCostTheorem": "RiemannGaussian.ZetaRieszCentralCostGrowth.centralCost_le_growth",
+    "rieszCentralGrowthSignedTheorem": "RiemannGaussian.ZetaRieszCentralCostGrowth.exists_central_bounds",
+    "rieszCentralGrowthWholeTheorem": "RiemannGaussian.ZetaRieszCentralCostGrowth.exists_eventual_core_growth_bound",
+    "rieszCentralGrowthAuditTheorem": "RiemannGaussian.ZetaRieszCentralCostGrowth.growthBound_tendsto_atTop",
+    "rieszCentralGrowthExponentTheorem": "RiemannGaussian.ZetaRieszCentralCostGrowth.ceiling_growth_exponent",
+    "rieszCentralGrowthPolynomialTheorem": "RiemannGaussian.ZetaRieszCentralCostGrowth.growthBound_div_quadratic_tendsto_zero",
+    "rieszCentralGrowthActualPolynomialTheorem": "RiemannGaussian.ZetaRieszCentralCostGrowth.centralCost_div_quadratic_tendsto_zero"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszCentralCostGrowth.lean": "79cbb17931859cbdd2ba98f41167fafc0a772658146a323473263591757a7d5f",
+    "RiemannGaussian/ZetaRieszCentralPrimeDifference.lean": "18723d6ae52ff6d47279012c0504a2b484fe43a899a6f936271e485a4d774e04",
+    "RiemannGaussian/ZetaRieszOwnerCountEnergy.lean": "30ecdcb92ee42686403506a79aec9924aa1b7c22d06dd3b52f1adde51da2a65b",
+    "RiemannGaussian/ZetaRieszLargeOrderCore.lean": "d46249f4549639abb5cb3759cf3daba426af308705cbf64411cfbad281f9e9ec"
+  },
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszCentralCostGrowth.radial_peak": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralCostGrowth.primeWeight_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralCostGrowth.primeCost_shell_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralCostGrowth.centralCost_le_growth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralCostGrowth.exists_central_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralCostGrowth.exists_eventual_core_growth_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralCostGrowth.growthBound_tendsto_atTop": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralCostGrowth.ceiling_growth_exponent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralCostGrowth.growthBound_div_quadratic_tendsto_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCentralCostGrowth.centralCost_div_quadratic_tendsto_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

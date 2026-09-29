@@ -18,9 +18,9 @@
     "rieszLiteralCenteredFamilyTheorem": "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_literal_centered_family_bounds"
   },
   "sourceHashes": {
-    "RiemannGaussian/ZetaRieszCenteredPrimeEnergy.lean": "720261ca8e45f6a1924f5c941a9d6ad7595622392bf1cfad308adc8232a9cc1c",
+    "RiemannGaussian/ZetaRieszCenteredPrimeEnergy.lean": "41aafeaf461b1a2ca0dcba305ac83c439d7b07599259da320a28ff269214f4fd",
     "RiemannGaussian/ZetaRieszMovingPrimeIntervals.lean": "d613f12356094ac4edaaf5b6389b5ea8a3d8c297bcb31a27075acbbde901516a",
-    "RiemannGaussian/ZetaRieszSignedCutoffEnergy.lean": "c5046b28f59f34362ea3bb6dfb97f823c57fb3f34a338c542c53f9b4ac8901e4",
+    "RiemannGaussian/ZetaRieszSignedCutoffEnergy.lean": "5566cbe25e4bde6c1f2117ae611c12159a65f59bcd3cfd45422ec1db9754d840",
     "RiemannGaussian/ZetaRieszPrimeFourier.lean": "e7c1a08b59ac75b5921734fb1fb4f759ee28882c75ceb57a8cbc29ec4833d8d8",
     "RiemannGaussian/ZetaRieszRetainedFactorial.lean": "dcfc28c5cdf008aff385dc95606479591323a49800cc8b5a82af5f7a56e717be",
     "scripts/probe_riesz_centered_prime_energy.py": "0c3772495c49faa5c82f0a9c481bca2c63479cc53dde0ed2cbc312f8c2a6258d"

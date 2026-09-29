@@ -126,7 +126,8 @@ theorem divisor_centering {n X : ℕ} (hn : Squarefree n) (hp : ¬n.Prime)
     exact Finset.sum_congr rfl (fun _ _ => by ring)
   simp only [hx,hl,mul_zero,← Finset.sum_mul,hm,zero_mul,add_zero,sub_zero]
 
-private theorem prefix_eq_divisors {n X : ℕ} (hn : 0 < n) (hX : n ≤ X) (g : ℕ → ℝ) :
+/-- Exact conversion of the finite arithmetic prefix to actual divisors. -/
+theorem prefix_eq_divisors {n X : ℕ} (hn : 0 < n) (hX : n ≤ X) (g : ℕ → ℝ) :
     (∑ d ∈ Finset.Icc 1 X, g d*(if d ∣ n then (μ d : ℝ) else 0)) =
       ∑ d ∈ n.divisors, (μ d : ℝ)*g d := by
   have he : (Finset.Icc 1 X).filter (fun d => d ∣ n)=n.divisors := by

@@ -1,0 +1,378 @@
+{
+  "scope": "Floating actual-prime diagnostics on identical central labels. Full original allocation and phase; earlier nested core deletions omitted. Costs omit the unevaluated sqrt(E). NOT a numerical certificate, full-carrier estimate or asymptotic proof.",
+  "radius": 0.50005,
+  "height": 54,
+  "rows": [
+    {
+      "N": 6,
+      "primes": [
+        2,
+        3
+      ],
+      "labels": 228,
+      "onePrimeCost": 0.000881806560120558,
+      "twoPrimeCost": 0.0006464500258849505,
+      "maxIdentityError": 2.4424906541753444e-15,
+      "blocks": [
+        {
+          "end": 256,
+          "onePrimeCost": 7.274222917769078e-05,
+          "twoPrimeCost": 5.812685636752337e-05
+        },
+        {
+          "end": 512,
+          "onePrimeCost": 0.0003682766662446231,
+          "twoPrimeCost": 0.00026889631040544025
+        },
+        {
+          "end": 872,
+          "onePrimeCost": 0.000440787664698244,
+          "twoPrimeCost": 0.0003194268591119869
+        }
+      ],
+      "reduction": 0.26690268011096474
+    },
+    {
+      "N": 6,
+      "primes": [
+        2,
+        5
+      ],
+      "labels": 105,
+      "onePrimeCost": 0.0007742004208511976,
+      "twoPrimeCost": 0.0004342975701389164,
+      "maxIdentityError": 1.3322676295501878e-15,
+      "blocks": [
+        {
+          "end": 256,
+          "onePrimeCost": 0.0001814014177152509,
+          "twoPrimeCost": 0.00010530811828239287
+        },
+        {
+          "end": 512,
+          "onePrimeCost": 0.0005927990031359467,
+          "twoPrimeCost": 0.0003289894518565235
+        }
+      ],
+      "reduction": 0.4390372848655568
+    },
+    {
+      "N": 6,
+      "primes": [
+        3,
+        5
+      ],
+      "labels": 87,
+      "onePrimeCost": 0.0005762078963515179,
+      "twoPrimeCost": 0.0003243711402218628,
+      "maxIdentityError": 1.3322676295501878e-15,
+      "blocks": [
+        {
+          "end": 128,
+          "onePrimeCost": 7.937280042361135e-05,
+          "twoPrimeCost": 4.757140159460056e-05
+        },
+        {
+          "end": 256,
+          "onePrimeCost": 0.000364995979955734,
+          "twoPrimeCost": 0.00020360281478471078
+        },
+        {
+          "end": 348,
+          "onePrimeCost": 0.00013183911597217253,
+          "twoPrimeCost": 7.319692384255146e-05
+        }
+      ],
+      "reduction": 0.4370588423453695
+    },
+    {
+      "N": 8,
+      "primes": [
+        2,
+        3
+      ],
+      "labels": 27436,
+      "onePrimeCost": 0.0006021232825857075,
+      "twoPrimeCost": 0.0004452864192883095,
+      "maxIdentityError": 3.1086244689504383e-15,
+      "blocks": [
+        {
+          "end": 2048,
+          "onePrimeCost": 3.459347117658532e-05,
+          "twoPrimeCost": 2.6757497985892657e-05
+        },
+        {
+          "end": 4096,
+          "onePrimeCost": 8.702680900443899e-05,
+          "twoPrimeCost": 6.234488541775383e-05
+        },
+        {
+          "end": 8192,
+          "onePrimeCost": 0.0001707306539792267,
+          "twoPrimeCost": 0.00012496098163012037
+        },
+        {
+          "end": 16384,
+          "onePrimeCost": 0.00018662425286347005,
+          "twoPrimeCost": 0.00013708667992754468
+        },
+        {
+          "end": 28734,
+          "onePrimeCost": 0.00012314809556198642,
+          "twoPrimeCost": 9.413637432699801e-05
+        }
+      ],
+      "reduction": 0.2604730091550206
+    },
+    {
+      "N": 8,
+      "primes": [
+        2,
+        5
+      ],
+      "labels": 13673,
+      "onePrimeCost": 0.00042288250677463557,
+      "twoPrimeCost": 0.0002336040196057755,
+      "maxIdentityError": 2.220446049250313e-15,
+      "blocks": [
+        {
+          "end": 1024,
+          "onePrimeCost": 1.5739116352894604e-05,
+          "twoPrimeCost": 9.661958294892647e-06
+        },
+        {
+          "end": 2048,
+          "onePrimeCost": 4.340212164077748e-05,
+          "twoPrimeCost": 2.478663900050212e-05
+        },
+        {
+          "end": 4096,
+          "onePrimeCost": 0.00011522179487339389,
+          "twoPrimeCost": 6.257560665801239e-05
+        },
+        {
+          "end": 8192,
+          "onePrimeCost": 0.00012673628771004512,
+          "twoPrimeCost": 6.77139976474945e-05
+        },
+        {
+          "end": 16384,
+          "onePrimeCost": 0.00011543790168430173,
+          "twoPrimeCost": 6.507475831730254e-05
+        },
+        {
+          "end": 17240,
+          "onePrimeCost": 6.3452845132227714e-06,
+          "twoPrimeCost": 3.7910596875712903e-06
+        }
+      ],
+      "reduction": 0.44759119645904677
+    },
+    {
+      "N": 8,
+      "primes": [
+        3,
+        5
+      ],
+      "labels": 10399,
+      "onePrimeCost": 0.00035013191606804575,
+      "twoPrimeCost": 0.00019369506200068027,
+      "maxIdentityError": 3.9968028886505635e-15,
+      "blocks": [
+        {
+          "end": 1024,
+          "onePrimeCost": 2.9142266239389662e-05,
+          "twoPrimeCost": 1.7588991290548577e-05
+        },
+        {
+          "end": 2048,
+          "onePrimeCost": 7.58601627464998e-05,
+          "twoPrimeCost": 4.2139982874400884e-05
+        },
+        {
+          "end": 4096,
+          "onePrimeCost": 9.817110792323447e-05,
+          "twoPrimeCost": 5.23837256044039e-05
+        },
+        {
+          "end": 8192,
+          "onePrimeCost": 0.00011220824624332709,
+          "twoPrimeCost": 6.150521061264568e-05
+        },
+        {
+          "end": 11493,
+          "onePrimeCost": 3.4750132915594734e-05,
+          "twoPrimeCost": 2.0077151618681217e-05
+        }
+      ],
+      "reduction": 0.4467940421545662
+    },
+    {
+      "N": 10,
+      "primes": [
+        2,
+        3
+      ],
+      "labels": 2681421,
+      "onePrimeCost": 0.0006468170256550815,
+      "twoPrimeCost": 0.0004830259568755514,
+      "maxIdentityError": 5.773159728050814e-15,
+      "blocks": [
+        {
+          "end": 8192,
+          "onePrimeCost": 1.5509277149022062e-05,
+          "twoPrimeCost": 1.208705901248048e-05
+        },
+        {
+          "end": 16384,
+          "onePrimeCost": 3.987662122687944e-05,
+          "twoPrimeCost": 2.991700013910592e-05
+        },
+        {
+          "end": 32768,
+          "onePrimeCost": 4.916512183920568e-05,
+          "twoPrimeCost": 3.456761702310024e-05
+        },
+        {
+          "end": 65536,
+          "onePrimeCost": 9.264816965108245e-05,
+          "twoPrimeCost": 6.809783153232151e-05
+        },
+        {
+          "end": 131072,
+          "onePrimeCost": 0.0001041665219535995,
+          "twoPrimeCost": 7.735309787075991e-05
+        },
+        {
+          "end": 262144,
+          "onePrimeCost": 0.00013241373035939775,
+          "twoPrimeCost": 9.872511692513312e-05
+        },
+        {
+          "end": 524288,
+          "onePrimeCost": 0.00013792644490127895,
+          "twoPrimeCost": 0.0001041308687611573
+        },
+        {
+          "end": 1048576,
+          "onePrimeCost": 7.36366485485122e-05,
+          "twoPrimeCost": 5.695911100884835e-05
+        },
+        {
+          "end": 1069947,
+          "onePrimeCost": 1.4744900261034266e-06,
+          "twoPrimeCost": 1.1882546026445357e-06
+        }
+      ],
+      "reduction": 0.2532262792768114
+    },
+    {
+      "N": 10,
+      "primes": [
+        2,
+        5
+      ],
+      "labels": 1407719,
+      "onePrimeCost": 0.0004691993091156001,
+      "twoPrimeCost": 0.000261000685962767,
+      "maxIdentityError": 3.552713678800501e-15,
+      "blocks": [
+        {
+          "end": 8192,
+          "onePrimeCost": 3.109019813168356e-05,
+          "twoPrimeCost": 1.8198063611495158e-05
+        },
+        {
+          "end": 16384,
+          "onePrimeCost": 2.65702078884516e-05,
+          "twoPrimeCost": 1.3713850972738853e-05
+        },
+        {
+          "end": 32768,
+          "onePrimeCost": 6.170855065203092e-05,
+          "twoPrimeCost": 3.2486521621504623e-05
+        },
+        {
+          "end": 65536,
+          "onePrimeCost": 7.490545674211081e-05,
+          "twoPrimeCost": 3.989521134122295e-05
+        },
+        {
+          "end": 131072,
+          "onePrimeCost": 8.673844499234798e-05,
+          "twoPrimeCost": 4.8043622029929905e-05
+        },
+        {
+          "end": 262144,
+          "onePrimeCost": 0.00010740911193824624,
+          "twoPrimeCost": 6.143254979908047e-05
+        },
+        {
+          "end": 524288,
+          "onePrimeCost": 7.119694588837468e-05,
+          "twoPrimeCost": 4.151238372076568e-05
+        },
+        {
+          "end": 641968,
+          "onePrimeCost": 9.580392882354311e-06,
+          "twoPrimeCost": 5.718482866029354e-06
+        }
+      ],
+      "reduction": 0.4437317342714536
+    },
+    {
+      "N": 10,
+      "primes": [
+        3,
+        5
+      ],
+      "labels": 1033822,
+      "onePrimeCost": 0.00037086657387182676,
+      "twoPrimeCost": 0.00020633838110400938,
+      "maxIdentityError": 5.329070518200751e-15,
+      "blocks": [
+        {
+          "end": 4096,
+          "onePrimeCost": 1.7662636959634564e-05,
+          "twoPrimeCost": 8.903275348317986e-06
+        },
+        {
+          "end": 8192,
+          "onePrimeCost": 2.3843052044048157e-05,
+          "twoPrimeCost": 1.3471774776873018e-05
+        },
+        {
+          "end": 16384,
+          "onePrimeCost": 3.131887805109342e-05,
+          "twoPrimeCost": 1.6423055005855256e-05
+        },
+        {
+          "end": 32768,
+          "onePrimeCost": 5.4874394595186967e-05,
+          "twoPrimeCost": 2.9604048050082176e-05
+        },
+        {
+          "end": 65536,
+          "onePrimeCost": 6.212754105625433e-05,
+          "twoPrimeCost": 3.390609034147375e-05
+        },
+        {
+          "end": 131072,
+          "onePrimeCost": 8.218203217222801e-05,
+          "twoPrimeCost": 4.659448631233127e-05
+        },
+        {
+          "end": 262144,
+          "onePrimeCost": 7.3212539506898e-05,
+          "twoPrimeCost": 4.219868521313321e-05
+        },
+        {
+          "end": 427978,
+          "onePrimeCost": 2.5645499486483318e-05,
+          "twoPrimeCost": 1.5236966055942723e-05
+        }
+      ],
+      "reduction": 0.4436317650581233
+    }
+  ]
+}

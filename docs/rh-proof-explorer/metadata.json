@@ -16,17 +16,17 @@
       "changeReason": "The multiplicity audit proves that exposure does not imply simplicity: multiple zeros have a positive retained source. The same carrier now has a checked two-sided conditional endgame, so the arithmetic campaign must pursue its floor and ceiling together."
     },
     "latestUpdate": {
-      "sequence": 132,
-      "id": "centered-prime-energy",
+      "sequence": 133,
+      "id": "cofactor-counting-power",
       "kind": "theorem",
-      "title": "Exact composite moment cancellation lowers the joint energy cost.",
-      "body": "Lean now subtracts the constant and logarithmic divisor components that every squarefree composite cofactor annihilates, before measuring the signed prime-block energy. The correction is exact and optimal among affine-log choices. Both literal carrier bounds improve with the same arithmetic constant, preserving moving intervals and every original allocation order.",
-      "next": "Control the total source-normalized cost with the actual radial and prime correlations. Larger-order probes still show growth; a disjoint whole-core cover and both whole thresholds remain open.",
+      "title": "The signed cofactor counting error has a power saving.",
+      "body": "Lean proves a counting power saving for short Mobius cutoffs, retaining phase and explicit mask variation. The extension audit also proves that any gain created by changing an excluded prime weight reappears exactly in the comparison error. The signed main and whole-carrier bounds remain open.",
+      "next": "Prove a signed bound for the original masked sum, or for one fixed extension with its complete error paid. Both cofinal thresholds remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszCenteredCostImprovementTheorem"
+        "rieszCofactorShellErrorTheorem"
       ],
-      "documentation": "docs/zeta-riesz-centered-prime-energy.md"
+      "documentation": "docs/zeta-riesz-cofactor-discrepancy.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -6282,6 +6282,583 @@
         "rieszCenteredPrimeEnergyScope"
       ],
       "documentation": "docs/zeta-riesz-centered-prime-energy.md"
+    },
+    {
+      "id": "joint-prime-energy",
+      "label": "Entire literal core: joint prime-profile bounds",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointPrimeCoordinatesTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointPrimePairingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointPrimeMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointPrimeAtomTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointPrimeLiteralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWholePrimeOwnershipTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWholePrimeBoundTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointPrimePartitionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoreSquarefreeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoreJointPrimeTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszJointPrimeEnergyScope"
+      ],
+      "documentation": "docs/zeta-riesz-joint-prime-energy.md"
+    },
+    {
+      "id": "quadratic-joint-prime-energy",
+      "label": "Entire core: narrower coupled floor and ceiling",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszQuadraticNullMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszQuadraticSemiprimeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszQuadraticEnergySavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszQuadraticEnergyComparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszQuadraticResponseTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszQuadraticCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszQuadraticJointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszQuadraticCenterTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszQuadraticHigherCenterTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszQuadraticLiteralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszQuadraticHigherCountTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszQuadraticWholeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszQuadraticCoreTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszQuadraticPrimeEnergyScope"
+      ],
+      "documentation": "docs/zeta-riesz-quadratic-prime-energy.md"
+    },
+    {
+      "id": "conditioned-joint-prime-energy",
+      "label": "Entire core: deduct the known arithmetic correlation",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszConditionedMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszConditionedResidualTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszConditionedSavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszConditionedStrictTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszConditionedCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszConditionedJointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszConditionedLiteralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszConditionedWholeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszConditionedCoreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszConditionedWholeCostTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszConditionedPrimeEnergyScope"
+      ],
+      "documentation": "docs/zeta-riesz-conditioned-prime-energy.md"
+    },
+    {
+      "id": "coordinate-gain",
+      "label": "Entire core: coordinate savings improve both bounds",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoordinateCenterTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoordinatePairEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoordinateRotationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoordinateRationalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoordinateRecipeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoordinatePositiveGainTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoordinateWholeCenterTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoordinateQuadraticCoreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoordinatePartitionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCoordinateConditionedCoreTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCoordinateGainScope"
+      ],
+      "documentation": "docs/zeta-riesz-coordinate-gain.md"
+    },
+    {
+      "id": "cubic-joint-prime-energy",
+      "label": "Entire core: retain the cubic arithmetic correction",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCubicPrimeInsertionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCubicSemiprimeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCubicNullMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCubicEnergyIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCubicEnergyComparisonTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCubicMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCubicHigherMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCubicResponseTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCubicCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCubicHigherCenterTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCubicJointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCubicLiteralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCubicWholeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCubicCoreTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCubicPrimeEnergyScope"
+      ],
+      "documentation": "docs/zeta-riesz-cubic-prime-energy.md"
+    },
+    {
+      "id": "large-order-core",
+      "label": "Large order: pay both outer core strips geometrically",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeOrderRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeOrderLowerRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeOrderUpperRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeOrderEdgeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeOrderCoreErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeOrderCoreBoundsTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszLargeOrderCoreScope"
+      ],
+      "documentation": "docs/zeta-riesz-large-order-core.md"
+    },
+    {
+      "id": "central-prime-difference",
+      "label": "Central signed sum: exact least-prime cancellation",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralPrimePulseTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralPrimeEnergyIdentityTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralPrimeEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralPrimeFibreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralPrimeAtomTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralPrimeWholeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralPrimeStrictEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralPrimeCountEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralPrimeJointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSecondPrimeEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSecondPrimeInsertionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSecondPrimeContractionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSecondPrimeStrictTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSecondPrimeFibreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSecondPrimeWholeTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCentralPrimeDifferenceScope"
+      ],
+      "documentation": "docs/zeta-riesz-central-prime-difference.md"
+    },
+    {
+      "id": "central-cost-growth",
+      "label": "Combined central cost \u00b7 all counts and growing orders",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralGrowthPeakTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralGrowthWeightTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralGrowthShellTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralGrowthCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralGrowthSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralGrowthWholeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralGrowthAuditTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralGrowthExponentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralGrowthPolynomialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralGrowthActualPolynomialTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCentralGrowthScope"
+      ],
+      "documentation": "docs/zeta-riesz-central-cost-growth.md"
+    },
+    {
+      "id": "central-radial-cost",
+      "label": "Combined central cost: radial aggregation",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralRadialIntegralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralRadialLatticeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralRadialPrimeMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralRadialWeightTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralRadialCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralRadialOrderTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCentralRadialWholeTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCentralRadialScope"
+      ],
+      "documentation": "docs/zeta-riesz-central-radial-cost.md"
+    },
+    {
+      "id": "cofactor-phase-energy",
+      "label": "Cofactor phase retained before the cutoff square",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorPhasePrefixTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorPhaseDualTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorPhaseMatrixTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorPhaseCompareTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorPhaseLiteralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorPhaseWholeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorPhasePartitionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorPhaseCoreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorPhaseIntersectionTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCofactorPhaseScope"
+      ],
+      "documentation": "docs/zeta-riesz-cofactor-phase-energy.md"
+    },
+    {
+      "id": "cofactor-counting-power",
+      "label": "Signed cofactor counting error with exact prime subtraction",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorCountPowerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorShortPowerTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorCompositeModelTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorCompositeErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorProfileErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorSourceRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorPhaseVariationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorShellErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorLiteralModelTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCofactorExtensionAuditTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCofactorDiscrepancyScope"
+      ],
+      "documentation": "docs/zeta-riesz-cofactor-discrepancy.md"
     }
   ],
   "scopes": {
@@ -12335,6 +12912,171 @@
       "label": "Finite radial/count families keep exact allocation costs",
       "overview": true,
       "documentation": "docs/zeta-riesz-centered-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.coordinates_identity": {
+      "label": "Admissible coordinates always exist",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.coordinate_pairing": {
+      "label": "Keep the exact signed prime pairing",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.exists_joint_bounds": {
+      "label": "Both joint arithmetic bounds before separating prime profiles",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.atom_eq": {
+      "label": "Full original factorial allocation and product phase",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.exists_literal_joint_bounds": {
+      "label": "Literal carrier bound with arbitrary prime-row holes",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.owner_labels_eq": {
+      "label": "Canonical ownership exhausts every selected label exactly",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.exists_whole_bounds": {
+      "label": "Both bounds on the whole finite squarefree support",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.exists_partition_bounds": {
+      "label": "Disjoint shells sum their costs without a cardinality loss",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.core_eq_squarefree": {
+      "label": "Nonsquarefree core labels vanish exactly",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeEnergy.exists_core_joint_bounds": {
+      "label": "Both bounds for the entire original source-normalized core",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.secondMoment_eq_zero_of_count": {
+      "label": "Every higher cofactor count annihilates the quadratic moment",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quadratic-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.secondMoment_two_primes": {
+      "label": "Two-prime cofactor moment equals twice the prime-log product",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quadratic-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.quadraticEnergy_eq": {
+      "label": "Exact squared-correlation saving in coupled energy",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quadratic-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.quadraticEnergy_le": {
+      "label": "Quadratic residual energy cannot exceed the previous energy",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quadratic-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.divisor_quadratic": {
+      "label": "Removed component remains an exact signed arithmetic correction",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quadratic-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.quadraticCost_le_jointCost": {
+      "label": "Proved no larger width for the same coordinates and arithmetic constant",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quadratic-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.exists_joint_quadratic_bounds": {
+      "label": "Both coupled enclosures with one shared arithmetic constant",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quadratic-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.quadraticCenter_eq_two_prime": {
+      "label": "Only two-prime cofactors contribute to the signed center",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quadratic-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.quadraticCenter_eq_zero_of_count": {
+      "label": "All higher-count corrections vanish together",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quadratic-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.exists_literal_quadratic_bounds": {
+      "label": "Original carrier gets the intersection of both signed enclosures",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quadratic-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.exists_higher_count_bounds": {
+      "label": "Every higher-count population gets the narrower two-sided bound",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quadratic-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.exists_whole_quadratic_bounds": {
+      "label": "Canonical ownership transfers the improvement to whole supports",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quadratic-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszQuadraticPrimeEnergy.exists_core_quadratic_bounds": {
+      "label": "Entire literal core gets a provably no worse floor and ceiling",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quadratic-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszConditionedPrimeEnergy.orthogonal_moment_bound": {
+      "label": "Known orthogonal moment reduces the remaining squared allowance",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszConditionedPrimeEnergy.residual_pair_bound": {
+      "label": "Arithmetic correlation is deducted before bounding the residual",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszConditionedPrimeEnergy.squaredAllowance_saving": {
+      "label": "Exact nonnegative saving in each squared allowance",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszConditionedPrimeEnergy.squaredAllowance_strict": {
+      "label": "Nonzero correlation gives a strict saving",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszConditionedPrimeEnergy.conditionedCost_le_quadraticCost": {
+      "label": "Residual cost cannot exceed the previous quadratic cost",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszConditionedPrimeEnergy.exists_joint_conditioned_bounds": {
+      "label": "Both signed bounds use the known moment together",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszConditionedPrimeEnergy.exists_literal_conditioned_bounds": {
+      "label": "All original masked atoms inherit the smaller enclosure",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszConditionedPrimeEnergy.exists_whole_conditioned_bounds": {
+      "label": "Complete owned supports retain the signed improvement",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszConditionedPrimeEnergy.exists_core_conditioned_bounds": {
+      "label": "Entire literal core gets the correlation saving",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszConditionedPrimeEnergy.wholeConditionedCost_le": {
+      "label": "Whole-core cost is provably no larger with the same constant",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-conditioned-prime-energy.md"
     }
   },
   "moduleFamilies": {
@@ -12414,6 +13156,9 @@
     "ZetaRieszRetainedDiscrepancy": "arithmetic",
     "ZetaRieszSmoothPrimeTail": "arithmetic",
     "ZetaRieszMovingPrimeIntervals": "arithmetic",
-    "ZetaRieszCenteredPrimeEnergy": "arithmetic"
+    "ZetaRieszCenteredPrimeEnergy": "arithmetic",
+    "ZetaRieszJointPrimeEnergy": "arithmetic",
+    "ZetaRieszQuadraticPrimeEnergy": "arithmetic",
+    "ZetaRieszConditionedPrimeEnergy": "arithmetic"
   }
 }

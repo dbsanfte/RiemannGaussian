@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "scope": "The ACTUAL original core contribution outside 1971N/1000<log n<=2029N/1000 now has a proved bound C*exp(-N/1000000), with ONE finite constant for every order, height, original count cutoff and radius 0<=u<=10001/20000. Both radial edges have explicit strict tilted rates checked by rational logarithm/exponential inequalities. The coefficient is the unchanged literal residualCoefficient, so all allocation, physical and earlier arithmetic masks remain. The signed error tends to zero even for moving heights, radii and count cutoffs, independently of any zero. The original whole core inherits the intersection of its quadratic and cubic signed enclosures on the smaller support, plus this geometric error on both sides. E and C remain UNEVALUATED. The remaining central signed correction and joint cost are NOT bounded at source scale; this is a new outer-strip payment, not a proof of the entire large-order estimate or a zero exclusion. The independent whole -79/1000 floor and 3/2 ceiling remain OPEN; no RH claim.",
+  "status": "Local validation passed: focused and root Lean, verbose lint, transitive axioms, compiled status, source scan, all explorers, plots and GitHub README renderer. Uncommitted local work; no new CI claim.",
+  "wholeCoreCovered": true,
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "rieszLargeOrderRateTheorem": "RiemannGaussian.ZetaRieszLargeOrderCore.rate_bounds",
+    "rieszLargeOrderLowerRateTheorem": "RiemannGaussian.ZetaRieszLargeOrderCore.lower_rate_lt",
+    "rieszLargeOrderUpperRateTheorem": "RiemannGaussian.ZetaRieszLargeOrderCore.upper_rate_lt",
+    "rieszLargeOrderEdgeTheorem": "RiemannGaussian.ZetaRieszLargeOrderCore.exists_edge_bound",
+    "rieszLargeOrderCoreErrorTheorem": "RiemannGaussian.ZetaRieszLargeOrderCore.tendsto_core_edge",
+    "rieszLargeOrderCoreBoundsTheorem": "RiemannGaussian.ZetaRieszLargeOrderCore.exists_contracted_core_bounds"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszLargeOrderCore.lean": "d46249f4549639abb5cb3759cf3daba426af308705cbf64411cfbad281f9e9ec",
+    "RiemannGaussian/ZetaRieszQuadraticPrimeEnergy.lean": "bb76280173d9970689cabc2faa4ec8ff40411f2b0202edc4b7c6c20a869bf60c",
+    "RiemannGaussian/ZetaRieszCoordinateGain.lean": "1ab9ab02952256607e7cbcf2657636084841f368591b5ff5d36d5ab74720f3db",
+    "scripts/probe_riesz_quadratic_prime_energy.py": "7831ed5d92d00f87c9b638e87a93af4becf7e5aa8e6dc5976f35687acb06cea9",
+    "scripts/probe_riesz_cubic_prime_energy.py": "add646fe0b4fa8e526815ceda14b766803eda014d62b2d497f1334c6a2b69274",
+    "scripts/probe_riesz_order10_coordinates.py": "ea334da8963db4a6d9349c997d3136c558a96e82ed7465872acce1e6171381d9",
+    "RiemannGaussian/ZetaRieszCubicPrimeEnergy.lean": "1c8b3c1b349d912d91d48d413de4c64bef76c18f9ff6fcb9d958fb8dcc5677a8",
+    "RiemannGaussian/ZetaArithmeticDeviationBounds.lean": "9f60d15d09acc3f8b519d9824fa089dee98232bda79bb07e7e62a33b326867ae"
+  },
+  "explicitGeometricRate": "exp(-1/1000000)",
+  "contractedWindow": {
+    "lower": "1971/1000",
+    "upper": "2029/1000"
+  },
+  "constantEvaluated": false,
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszLargeOrderCore.rate_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszLargeOrderCore.lower_rate_lt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszLargeOrderCore.upper_rate_lt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszLargeOrderCore.exists_edge_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszLargeOrderCore.tendsto_core_edge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszLargeOrderCore.exists_contracted_core_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

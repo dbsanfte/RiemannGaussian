@@ -1602,14 +1602,225 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
-The accumulated all-count/prime-period slice is now committed and pushed as
-`b44806e71718bd1128c4872481b3990719f9f3d9`. Its exact-SHA CI is run
-`36530742834` passed, including Pages deployment. Verify publication against
-that frozen snapshot separately from current local work. The user has
-authorized committing and pushing the accumulated next slice after its
-verification gates pass. Include all local theorem, documentation and
-generated metadata changes, and track CI on the resulting exact SHA.
-Continue without subagents.
+The accumulated centered-prime-energy slice was committed and pushed as
+`d1695f32190f8a4672c73378294e3733e7509c08`. Exact-SHA CI run
+`36570788703` passed, including Pages. The published README and RH explorer
+were checked against that frozen revision on desktop and mobile. That
+publication request is complete; the user's continuation authorizes local
+theorem work. The user's latest instruction now authorizes committing and
+pushing the entire accumulated eleven-module batch, its numerical probes,
+documentation and generated explorer/status assets. This supersedes the
+local-only publication notes below for this batch. Keep the signed-main
+bound and both endgame thresholds explicitly open; this publication request
+does not assert that the next mathematical milestone has been reached.
+After publishing this batch, resume local work pending further publication
+authorization. Continue without subagents.
+
+`ZetaRieszCofactorDiscrepancy` proves the signed squarefree prefix error
+C X^(3/4) D^(3/8), hence C X^(15/16) for D^2<=X. Its exact composite model
+keeps c_D sum w - w(1) - sum_(D<p<=X) w(p) SIGNED. On dyadic cofactors above
+exp(N/2), short cutoffs and w=a(n)cos(y(c+log n))/n, the error is at most
+C exp(-N/32)*((3+abs(y))*A+TV(a)); both exterior jumps are paid. The profile
+is recombined before taking the error norm. The scalar source-rate margin
+is exp(-3N/100), but arbitrary literal mask/allocation variation, long
+cutoffs and the signed main expression are NOT paid. C is unevaluated.
+The user's latest steering requires the NEXT slice to bound the SIGNED MAIN
+expression itself, not another error-only estimate or carrier reformulation.
+Optional order-16 tests use actual primes and squarefree integers in three
+nonempty physical-annulus columns, with owner allocation only; earlier
+nested masks are not all verified. Tiny counting errors and signed main
+values are individual-column diagnostics, not whole-core/asymptotic bounds.
+Both cofinal thresholds remain open. Keep local, no subagents/publication.
+See `docs/zeta-riesz-cofactor-discrepancy.md`.
+
+The subsequent optional signed-main boundary diagnostic is recorded in
+`docs/riesz-signed-main-boundary-investigation.md`. It proves NO new main
+bound. In the order-14/16/18 probe, radial endpoints dominate the density
+part; after separating them, sector-boundary plus exact prime subtraction
+changes sign and does not decrease in magnitude. The boundary n=p-1 belongs
+to the EXTRA p>whole-cofactor diagnostic sector, not the full carrier's
+largest-prime ownership mask. Do not promote it to a whole-core obstruction
+or omit the neighboring sectors. The literature check supplies no missing
+signed Type-II estimate. This numerical investigation does not meet the
+user's requested next milestone; the signed-main target remains OPEN.
+No Lean frontier change, new publication authorization, or CI-heavy probe.
+
+`ZetaRieszCofactorDiscrepancy.literal_compositeModel` now audits the
+canonical literal rows: the unit and prime-cofactor weights are ZERO, so
+their main has no virtual prime subtraction. A smooth extension must first
+agree on every eligible composite and pay its own variation/error. The
+exact `comparison_error_prime_extension` theorem says changing one excluded
+prime weight by a changes the model by (c_D-1)*a and its comparison error
+by the opposite amount. Apparent cancellation created by extending weights
+is not free. This is a soundness/interface audit, NOT the requested signed
+main bound or a saving toward either endgame threshold. Keep that target
+open and do not launch another error-only or representation slice.
+
+`ZetaRieszCofactorPhaseEnergy` now preserves the cofactor phase through the
+sharp Mobius prefix BEFORE its square. Both whole-core bounds have explicit
+cost sum_a sqrt(Q_a V_a), with no unknown mean multiplier. All original
+masks, counts, orders and allocation remain. The centered new cost is no
+larger than the old joint cost for ONE common universal E, proved by finite
+duality. Both whole-core bounds intersect this cost with the prior radial
+bound; its outer error is paid only on that radial branch. Optional y=54
+probes, joining all cofactor shells BEFORE squaring, give 0.000189,0.0000483,
+0.0000298 at N=6,8,10, versus the previous 0.00425,0.00308,0.00340 BEFORE
+sqrt(E). The separate-shell N=10 cost is 0.000347: joining retains further
+phase cancellation. These floating tests omit earlier nested deletions.
+Cancellation on an enlarged test population does NOT bound its masked
+subsets. More specifically, the entire N=6,8,10 test windows lie ABOVE the
+literal physical annulus: 2L_N/N is about 1.59860,1.70060,1.81732, below
+1.971. Their costs give NO numerical margin on a nonempty literal core.
+No numerical certificate or asymptotic rate is claimed from the
+finite decreasing joined costs. The NEXT target is a sufficient
+large-order estimate of these literal signed cutoff correlations, with
+no new carrier, generic PNT transport or discarded phase. Neither whole
+threshold is closed. Continue locally without subagents or publication.
+See `docs/zeta-riesz-cofactor-phase-energy.md`.
+
+`ZetaRieszCentralRadialCost` now improves the SAME combined central cost
+to (12*sqrt(2E)/log(2))*(4*exp(1/2)*log(4))*sqrt(16N+8)*(2u)^N.
+The exact factorial radial mass pays all dyadic shells before separate
+peak bounds; literal Chebyshev counts pay sum sqrt(log p)/p without the
+previous log-log loss. Every central label/count, original mask, allocation
+and factorial order remains. Both whole-core bounds inherit the minimum
+of the new and old majorants, with the outer error charged ONCE. E and
+the starting order remain UNEVALUATED. This saves polynomial order but
+does NOT remove the exponential or prove phase cancellation. The user
+explicitly directs the NEXT slice to attack the necessary PHASE saving
+to close the endgame, not another polynomial refinement. Preserve all
+no-gos; work locally, without subagents or unrequested publication. See
+`docs/zeta-riesz-central-radial-cost.md`.
+
+`ZetaRieszCentralCostGrowth` now bounds the COMBINED central cost by
+C_E*N*(1+log(16*N+8))*(2*u)^N, summing all actual cofactor shells and
+prime counts and retaining every original mask/allocation/phase in the
+exact cost. Its outer error is paid once on both sides of the whole core.
+The global scalar majorant uses absolute weight bounds; it does NOT prove
+additional prime-phase cancellation. E and the starting order remain
+UNEVALUATED. The majorant is o(N^2*(2u)^N) but provably diverges when u>1/2;
+this does NOT prove actual-carrier or optimized-cost divergence. At the
+upper radius the remaining exponent lies between 99/1000000 and 1/10000.
+The user explicitly prioritizes a bound for the combined cost as N grows;
+do not count further fixed-sector percentage gains as closing that target.
+Both final thresholds remain OPEN. The second-prime extension also proves
+energy <=4 log r when p>=r*s and a squared-cap factor 2/s with the SAME E;
+keep it as a valid supporting improvement, not a global asymptotic claim.
+See `docs/zeta-riesz-central-cost-growth.md`. Keep local; no subagents,
+commits or pushes until renewed authorization.
+
+`ZetaRieszCentralPrimeDifference` targets the CENTRAL signed carrier itself.
+Extract the actual least cofactor prime before the arithmetic mean. Its Mobius
+sign produces an exact two-hinge difference; raw energy is <=2 log r and
+cofactor-count times energy is <=2 log(cofactor). Every count >=3, all
+orders, original masks, allocation, physical cutoffs and full phase remain.
+`exists_whole_difference_bounds` allows ONE common coordinate system across
+counts and small primes. `exists_central_joint_bounds` intersects this new
+central bound with the quadratic/cubic enclosures and adds the paid outer
+error ONCE. Both whole bounds can only improve. Constants and total central
+cost remain UNEVALUATED; neither eventual threshold is closed. The optional
+N=10 least-prime 2,3,5 probes give about 56%,60%,65% reductions against the
+RAW UNPROJECTED hinge budgets on IDENTICAL test labels. They are NOT cost
+certificates or comparisons with the CUBIC whole cost; sqrt(E), other sectors
+and earlier nested core deletions are not paid numerically. Do not claim a
+central source-scale bound or new zero exclusion. See
+`docs/zeta-riesz-central-prime-difference.md`. Keep local; no subagents.
+
+`ZetaRieszLargeOrderCore` now pays BOTH outer strips of the original core
+at the explicit rate exp(-N/1000000), with one finite C for every order,
+height, count cutoff and 0<=u<=10001/20000. The remaining support is the
+literal intersection 1.971N<log n<=2.029N. All coefficient, allocation,
+physical and earlier masks remain; the signed error tends to zero even
+for moving heights and radii. `exists_contracted_core_bounds` applies the
+quadratic/cubic enclosures to that smaller support and pays the geometric
+error on both sides of the ORIGINAL core. E and C are UNEVALUATED. This
+is an outer-strip payment, NOT a bound for the central large-order cost.
+Both whole thresholds remain OPEN. See `docs/zeta-riesz-large-order-core.md`.
+Keep local without subagents or unrequested publication.
+
+`ZetaRieszCubicPrimeEnergy` removes the third logarithmic divisor direction
+only with its exact signed correction retained. Cubic residual energy is
+quadratic energy minus squared correlation over the cubic-direction energy;
+the width is no larger with the SAME E and coordinates. All cofactor counts
+at least four annihilate both corrections, independently of shares or phase.
+The remaining center lives on original triple/quadruple labels and is NOT
+free credit. Both whole-core enclosures retain it. The optional enlarged
+N=10 test gives about .002603 before sqrt(E), versus the earlier .003818,
+and a new center about +.000113017. These are floating diagnostics, NOT
+certificates. No eventual central bound follows, and E stays UNEVALUATED.
+Preserve the conditioned bound too; cubic width is compared with QUADRATIC,
+not automatically with the further conditioned width. See
+`docs/zeta-riesz-cubic-prime-energy.md`. No subagents or new carrier.
+
+`ZetaRieszCoordinateGain` targets the enlarged order-ten cost WITHOUT
+changing the carrier. The exact signed center is invariant under admissible
+common coordinates. A gain max(0,C-D) in the existing cost raises the floor
+and lowers the ceiling by the same amount; disjoint populations ADD their
+actual gains with the SAME E. Exact plane rotations and finite rational
+recipes, including identity starts, preserve every coordinate. No labels,
+counts, orders, masks or exterior profile terms are dropped. The optional
+32,709,252-label N=10 probe, cofactor cap 6,484,203, reduces the quadratic
+cost from about .003818 to .003406 before sqrt(E). This is floating numerical
+exploration, NOT a certified bound; E remains UNEVALUATED. The recipe's
+exact admissibility does not certify its numerical cost. Prior nested core
+deletions are omitted by the test population; no eventual rate follows.
+Both whole thresholds remain OPEN. Preserve the earlier arithmetic and
+conditioned savings, default endpoints and top-ten lists. See
+`docs/zeta-riesz-coordinate-gain.md`. Keep local; no subagents.
+
+`ZetaRieszConditionedPrimeEnergy` further improves BOTH whole-core bounds
+with the SAME signed center H. In every common coordinate, the known
+moment M=sum w(n)*secondMoment(n) reduces the squared residual allowance
+from A*Q2 to (A-M^2/V)*Q2, where A=E*X*sum w^2 and V is the centered
+log-squared energy. Nonnegativity and all degenerate energy cases are
+proved from the existing mean theorem. The exact saving M^2*Q2/V is
+strict when the correlation is nonzero and both energies are positive.
+The entire literal core inherits the smaller cost with the SAME E,
+coordinates, masks, counts, allocation, physical cutoffs and full phase;
+no extra companion credit or count split enters. E stays UNEVALUATED.
+The optional --conditioned-constant 1 diagnostic is only a nominal model;
+E=1 is NOT certified, and the cost depends NONLINEARLY on E. Do not
+multiply that displayed cost by sqrt(E) to claim a general bound. Finite
+gains are modest; both eventual whole thresholds remain OPEN. See
+`docs/zeta-riesz-conditioned-prime-energy.md`. Keep local; no subagents.
+
+`ZetaRieszQuadraticPrimeEnergy` sharpens BOTH whole-core bounds by the
+exact quadratic logarithmic divisor moment. Every squarefree cofactor
+with at least three primes annihilates this profile; the two-prime
+response is exactly 2*log(q)*log(r). Keep its signed correction H, supported
+only on triple-prime labels, while ALL counts stay coupled in the residual
+cost K. Lean proves K<=B0 for the SAME E, coordinates and weights, and the
+entire original core has max(-B0,H-K)<=J<=min(B0,H+K). Neither bound can
+worsen. Higher-count populations get the narrower bound automatically
+with H=0, without a new count ceiling. All original masks, orders zero/one,
+full phase, both cutoffs and unique ownership remain. E is UNEVALUATED.
+The optional finite probe shows smaller widths but the center changes
+sign; no free positive credit or eventual decay follows. Do not split
+counts to claim this improvement or replace H by a favorable sign.
+Both whole source-scaled thresholds remain OPEN. See
+`docs/zeta-riesz-quadratic-prime-energy.md`. Keep local; no subagents.
+
+`ZetaRieszJointPrimeEnergy` now proves BOTH signed bounds for the ENTIRE
+literal coreResponse. Sum the complete factorial allocation and full product
+phase FIRST. A common exact orthogonal coordinate change retains cross terms
+in BOTH cofactor weights and centered prime profiles. Identity coordinates
+always satisfy the finite algebraic premise. Arbitrary prime-row HOLES are
+retained without binary maximal loss. Canonical largest-prime ownership
+exhausts all original squarefree labels exactly; nonsquarefree coefficients
+vanish. Thus no unproved interval-cover premise remains for THIS cost.
+All original masks, both cutoffs and all factorial orders including zero/one
+remain; the theorem adds no count ceiling, prime-density assumption or zero
+hypothesis. Disjoint partitions sum their costs with the same UNEVALUATED E.
+The finite N=10 diagnostic lowers cost from about 0.1406 to 0.00238 on the
+same truncated 30.5-million-label population, before sqrt(E). ALL numerical
+coordinate directions are retained. This is NOT a uniform cost-comparison
+theorem, an eventual estimate, or a whole-carrier numerical certificate.
+Expanding the N=10 cofactor cap to 6,484,203 gives about 0.00407 on
+32.7 million labels, slightly above the expanded N=8 cost 0.00390. The
+expanded tests still omit prior nested core deletions; do not infer decay.
+The TOTAL source-normalized cost and both whole thresholds remain OPEN.
+Preserve all prior growth audits; never spend companion credit twice.
+See `docs/zeta-riesz-joint-prime-energy.md`. Keep local; no subagents.
 
 `ZetaRieszCenteredPrimeEnergy` now improves BOTH original-carrier bounds
 by exact composite moment cancellation. Constant and logarithmic divisor

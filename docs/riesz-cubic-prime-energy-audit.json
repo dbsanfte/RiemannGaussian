@@ -1,0 +1,615 @@
+{
+  "schemaVersion": 1,
+  "scope": "Both whole-core inequalities now retain the exact third logarithmic divisor correction. Its residual energy equals the previous quadratic energy minus the squared cubic correlation divided by the cubic-direction energy, including degenerate cases. The cubic width is no larger than the quadratic width with the SAME E, coordinates and full original weights. Its signed center retains the original quadratic correction plus the exact cubic one; intersecting both enclosures cannot worsen either endpoint. Every squarefree cofactor with at least four prime factors annihilates BOTH corrections, uniformly over all higher counts, shares and phases. The remaining center is supported on original triple and quadruple labels and is NOT free credit. All original masks, allocation, orders zero and one, both physical cutoffs and unique ownership remain. No new arithmetic mean premise, zero hypothesis or prime-density replacement enters. The enlarged 32,709,252-label N=10 diagnostic gives cubic cost about 0.002603 before sqrt(E), versus the preceding quadratic 0.003818, with signed center about +0.000113017 instead of -0.0000540593. The floating numerical values are NOT certificates; E remains UNEVALUATED and earlier nested core deletions are omitted by this test population. The central large-order signed estimate and both whole -79/1000 floor and 3/2 ceiling remain OPEN. No zero exclusion or RH claim.",
+  "status": "Local validation passed: focused and root Lean, verbose lint, transitive axioms, compiled status, source scan, all explorers, plots and GitHub README renderer. Uncommitted local work; no new CI claim.",
+  "wholeCoreCovered": true,
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "rieszCubicPrimeInsertionTheorem": "RiemannGaussian.ZetaRieszCubicPrimeEnergy.thirdMoment_prime_mul",
+    "rieszCubicSemiprimeTheorem": "RiemannGaussian.ZetaRieszCubicPrimeEnergy.thirdMoment_two_primes",
+    "rieszCubicNullMomentTheorem": "RiemannGaussian.ZetaRieszCubicPrimeEnergy.thirdMoment_eq_zero_of_count",
+    "rieszCubicEnergyIdentityTheorem": "RiemannGaussian.ZetaRieszCubicPrimeEnergy.cubicEnergy_eq",
+    "rieszCubicEnergyComparisonTheorem": "RiemannGaussian.ZetaRieszCubicPrimeEnergy.cubicEnergy_le",
+    "rieszCubicMomentTheorem": "RiemannGaussian.ZetaRieszCubicPrimeEnergy.cubicMoment_eq",
+    "rieszCubicHigherMomentTheorem": "RiemannGaussian.ZetaRieszCubicPrimeEnergy.cubicMoment_eq_zero_of_count",
+    "rieszCubicResponseTheorem": "RiemannGaussian.ZetaRieszCubicPrimeEnergy.divisor_cubic",
+    "rieszCubicCostTheorem": "RiemannGaussian.ZetaRieszCubicPrimeEnergy.cubicCost_le_quadraticCost",
+    "rieszCubicHigherCenterTheorem": "RiemannGaussian.ZetaRieszCubicPrimeEnergy.cubicCenter_eq_zero_of_count",
+    "rieszCubicJointTheorem": "RiemannGaussian.ZetaRieszCubicPrimeEnergy.exists_joint_cubic_bounds",
+    "rieszCubicLiteralTheorem": "RiemannGaussian.ZetaRieszCubicPrimeEnergy.exists_literal_cubic_bounds",
+    "rieszCubicWholeTheorem": "RiemannGaussian.ZetaRieszCubicPrimeEnergy.exists_whole_cubic_bounds",
+    "rieszCubicCoreTheorem": "RiemannGaussian.ZetaRieszCubicPrimeEnergy.exists_core_cubic_bounds"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszCubicPrimeEnergy.lean": "1c8b3c1b349d912d91d48d413de4c64bef76c18f9ff6fcb9d958fb8dcc5677a8",
+    "RiemannGaussian/ZetaRieszQuadraticPrimeEnergy.lean": "bb76280173d9970689cabc2faa4ec8ff40411f2b0202edc4b7c6c20a869bf60c",
+    "RiemannGaussian/ZetaRieszCoordinateGain.lean": "1ab9ab02952256607e7cbcf2657636084841f368591b5ff5d36d5ab74720f3db",
+    "scripts/probe_riesz_quadratic_prime_energy.py": "7831ed5d92d00f87c9b638e87a93af4becf7e5aa8e6dc5976f35687acb06cea9",
+    "scripts/probe_riesz_cubic_prime_energy.py": "add646fe0b4fa8e526815ceda14b766803eda014d62b2d497f1334c6a2b69274",
+    "scripts/probe_riesz_order10_coordinates.py": "ea334da8963db4a6d9349c997d3136c558a96e82ed7465872acce1e6171381d9"
+  },
+  "numericalProbe": {
+    "order": 10,
+    "population": 6484203,
+    "radius": 0.50005,
+    "height": 54.0,
+    "allCofactorPrimesAboveNSquared": false,
+    "length": 9.086589564540008,
+    "physicalUpper": 8836,
+    "selectedLabels": 32709252,
+    "jointCost": 0.004068608236996404,
+    "quadraticCost": 0.0038179765757033546,
+    "center": -5.4059341703323946e-05,
+    "sourceCostsOmitSqrtE": true,
+    "constantEvaluated": false,
+    "wholeCarrierCovered": false,
+    "allCoordinateColumnsRetained": true,
+    "regressionRows": 256,
+    "maximumRegressionRelativeError": 3.5097018807909276e-15,
+    "shells": [
+      {
+        "lower": 32768,
+        "upper": 65536,
+        "old": 0.00026191392252206705,
+        "new": 0.00021633484179645092,
+        "center": -1.8817294789706076e-05,
+        "semiprimeRows": 4204,
+        "coordinateColumns": 491,
+        "maximumOrthogonalityError": 1.3322676295501878e-15,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "2": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.00021633484179645082,
+                "signedCenter": -1.8817294789705985e-05,
+                "maximumOrthogonalityError": 1.3322676295501878e-15
+              },
+              "balanced": {
+                "cost": 0.00019335177512018914,
+                "signedCenter": -1.8817294789706036e-05,
+                "maximumOrthogonalityError": 3.3306690738754696e-15
+              },
+              "rationalIdentity": {
+                "cost": 0.00019335243381484815,
+                "signedCenter": -1.8817294789706036e-05,
+                "maximumOrthogonalityError": 4.218847493575595e-15
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 120295,
+            "rationalRecipeSHA256": "8d02e78217728d00608d170d1614682e2e9cfcfb8bcdd3fd5c662aca814d4f05"
+          },
+          "3": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.0001412085559265735,
+                "signedCenter": 7.346630330837578e-06,
+                "maximumOrthogonalityError": 1.3322676295501878e-15
+              },
+              "balanced": {
+                "cost": 0.00012985800759121168,
+                "signedCenter": 7.346630330837565e-06,
+                "maximumOrthogonalityError": 1.1102230246251565e-15
+              },
+              "rationalIdentity": {
+                "cost": 0.00012985842190926637,
+                "signedCenter": 7.346630330837571e-06,
+                "maximumOrthogonalityError": 2.9976021664879227e-15
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 120295,
+            "rationalRecipeSHA256": "9d3fc85e7bb0e709a7555ad10669aa5f3e74fd1ecf53f7629652262e235760d8"
+          }
+        }
+      },
+      {
+        "lower": 65536,
+        "upper": 131072,
+        "old": 0.0003046253617109024,
+        "new": 0.00025366240699303003,
+        "center": -1.8856008604028084e-05,
+        "semiprimeRows": 6037,
+        "coordinateColumns": 766,
+        "maximumOrthogonalityError": 1.1102230246251565e-15,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "2": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.00025366240699302976,
+                "signedCenter": -1.8856008604028128e-05,
+                "maximumOrthogonalityError": 1.1102230246251565e-15
+              },
+              "balanced": {
+                "cost": 0.0002495081921212175,
+                "signedCenter": -1.8856008604028125e-05,
+                "maximumOrthogonalityError": 1.3322676295501878e-15
+              },
+              "rationalIdentity": {
+                "cost": 0.000249510536285899,
+                "signedCenter": -1.8856008604028104e-05,
+                "maximumOrthogonalityError": 5.10702591327572e-15
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 292995,
+            "rationalRecipeSHA256": "a910a21e42cf25375269ce990c4466f051aebf60b3161bc5260b0c2cb97a36cc"
+          },
+          "3": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.00016978954011907202,
+                "signedCenter": 2.3460323791935266e-05,
+                "maximumOrthogonalityError": 1.1102230246251565e-15
+              },
+              "balanced": {
+                "cost": 0.00016806399235507003,
+                "signedCenter": 2.3460323791935317e-05,
+                "maximumOrthogonalityError": 1.2212453270876722e-15
+              },
+              "rationalIdentity": {
+                "cost": 0.0001680654162937322,
+                "signedCenter": 2.3460323791935337e-05,
+                "maximumOrthogonalityError": 5.995204332975845e-15
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 292995,
+            "rationalRecipeSHA256": "a721e4e82ec85ddf8777fbba9a915398a52e1a7d1533f7974d0200b910e6e420"
+          }
+        }
+      },
+      {
+        "lower": 131072,
+        "upper": 262144,
+        "old": 0.0004962341447168583,
+        "new": 0.0004422637081875687,
+        "center": -1.140109449321937e-05,
+        "semiprimeRows": 7030,
+        "coordinateColumns": 481,
+        "maximumOrthogonalityError": 1.2073675392798577e-15,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "2": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.0004422637081875687,
+                "signedCenter": -1.140109449321927e-05,
+                "maximumOrthogonalityError": 1.2073675392798577e-15
+              },
+              "balanced": {
+                "cost": 0.00041976585299731943,
+                "signedCenter": -1.1401094493219273e-05,
+                "maximumOrthogonalityError": 1.1102230246251565e-15
+              },
+              "rationalIdentity": {
+                "cost": 0.0004197681160347081,
+                "signedCenter": -1.1401094493219273e-05,
+                "maximumOrthogonalityError": 3.1086244689504383e-15
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 115440,
+            "rationalRecipeSHA256": "eb6c42d2ff3ad2fc5f70077a0ae311ae1ebae2b1a06438e088d5cff040a47ee1"
+          },
+          "3": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.0003102364333294523,
+                "signedCenter": 2.8201772327019355e-05,
+                "maximumOrthogonalityError": 1.2073675392798577e-15
+              },
+              "balanced": {
+                "cost": 0.00027966784151629853,
+                "signedCenter": 2.8201772327019355e-05,
+                "maximumOrthogonalityError": 9.992007221626409e-16
+              },
+              "rationalIdentity": {
+                "cost": 0.0002796692629784126,
+                "signedCenter": 2.8201772327019334e-05,
+                "maximumOrthogonalityError": 2.886579864025407e-15
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 115440,
+            "rationalRecipeSHA256": "bec141086463b16f203c7b14a74bfb6036c67e6d3ad954b7b88e9ac264841297"
+          }
+        }
+      },
+      {
+        "lower": 262144,
+        "upper": 524288,
+        "old": 0.0006610177464368964,
+        "new": 0.0006189150562396823,
+        "center": -4.888251209006726e-06,
+        "semiprimeRows": 6093,
+        "coordinateColumns": 265,
+        "maximumOrthogonalityError": 1.3322676295501878e-15,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "2": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.0006189150562396822,
+                "signedCenter": -4.8882512090067566e-06,
+                "maximumOrthogonalityError": 1.3322676295501878e-15
+              },
+              "balanced": {
+                "cost": 0.0005713098518101548,
+                "signedCenter": -4.88825120900676e-06,
+                "maximumOrthogonalityError": 9.992007221626409e-16
+              },
+              "rationalIdentity": {
+                "cost": 0.0005713115454510499,
+                "signedCenter": -4.8882512090067515e-06,
+                "maximumOrthogonalityError": 2.4424906541753444e-15
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 34980,
+            "rationalRecipeSHA256": "bdffaa808f96a46e1b2eaa06506f74a49b9a3bba74672415f04578c126115d3f"
+          },
+          "3": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.00045951895817162355,
+                "signedCenter": 3.495679553270045e-05,
+                "maximumOrthogonalityError": 1.3322676295501878e-15
+              },
+              "balanced": {
+                "cost": 0.0004119229931077761,
+                "signedCenter": 3.495679553270044e-05,
+                "maximumOrthogonalityError": 1.1102230246251565e-15
+              },
+              "rationalIdentity": {
+                "cost": 0.0004119240667927213,
+                "signedCenter": 3.4956795532700474e-05,
+                "maximumOrthogonalityError": 2.4424906541753444e-15
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 34980,
+            "rationalRecipeSHA256": "3cdeb337ca2074b8b126a2f3937d05ad6138a5b8e7687d1951a778cf3d3b7f6a"
+          }
+        }
+      },
+      {
+        "lower": 524288,
+        "upper": 1048576,
+        "old": 0.0006516612972538255,
+        "new": 0.0006288572976046422,
+        "center": -9.669260736369682e-08,
+        "semiprimeRows": 1235,
+        "coordinateColumns": 145,
+        "maximumOrthogonalityError": 1.1102230246251565e-15,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "2": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.0006288572976046422,
+                "signedCenter": -9.669260736369688e-08,
+                "maximumOrthogonalityError": 1.1102230246251565e-15
+              },
+              "balanced": {
+                "cost": 0.0005544014425231633,
+                "signedCenter": -9.669260736369695e-08,
+                "maximumOrthogonalityError": 8.881784197001252e-16
+              },
+              "rationalIdentity": {
+                "cost": 0.0005544021919213809,
+                "signedCenter": -9.6692607363697e-08,
+                "maximumOrthogonalityError": 1.7763568394002505e-15
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 10436,
+            "rationalRecipeSHA256": "1ef9ff28303cbd41b83586ac9a7edfb7ecbb26c039034ba7a17b84ef72a851d5"
+          },
+          "3": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.0005176191480094077,
+                "signedCenter": 1.4776435537012345e-05,
+                "maximumOrthogonalityError": 1.1102230246251565e-15
+              },
+              "balanced": {
+                "cost": 0.0004421241272658587,
+                "signedCenter": 1.4776435537012352e-05,
+                "maximumOrthogonalityError": 1.1102230246251565e-15
+              },
+              "rationalIdentity": {
+                "cost": 0.000442124643911665,
+                "signedCenter": 1.4776435537012328e-05,
+                "maximumOrthogonalityError": 1.7763568394002505e-15
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 10434,
+            "rationalRecipeSHA256": "250687fbc04a87e5cc182170edffd2b985f5c6d6078720ec5fbbdd4a9cbcd855"
+          }
+        }
+      },
+      {
+        "lower": 1048576,
+        "upper": 2097152,
+        "old": 0.0009863244676829328,
+        "new": 0.0009620287402930162,
+        "center": 0.0,
+        "semiprimeRows": 0,
+        "coordinateColumns": 80,
+        "maximumOrthogonalityError": 1.3322676295501878e-15,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "2": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.0009620287402930165,
+                "signedCenter": 0.0,
+                "maximumOrthogonalityError": 1.3322676295501878e-15
+              },
+              "balanced": {
+                "cost": 0.0008085254062107788,
+                "signedCenter": 0.0,
+                "maximumOrthogonalityError": 1.4432899320127035e-15
+              },
+              "rationalIdentity": {
+                "cost": 0.0008085254937922223,
+                "signedCenter": 0.0,
+                "maximumOrthogonalityError": 1.1102230246251565e-15
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 3153,
+            "rationalRecipeSHA256": "ac3c1ffba203a21584d3ecd04b558133b88380259299095f8685a9baa081f9cc"
+          },
+          "3": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.0007977609543471866,
+                "signedCenter": 4.019861662588471e-06,
+                "maximumOrthogonalityError": 1.3322676295501878e-15
+              },
+              "balanced": {
+                "cost": 0.0006473569676839634,
+                "signedCenter": 4.01986166258848e-06,
+                "maximumOrthogonalityError": 1.1102230246251565e-15
+              },
+              "rationalIdentity": {
+                "cost": 0.0006473570679553926,
+                "signedCenter": 4.0198616625884705e-06,
+                "maximumOrthogonalityError": 1.3322676295501878e-15
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 3143,
+            "rationalRecipeSHA256": "1092f55362e90a7f1e3120f12a6cd04f9b88bbd45681463034d714150053acd1"
+          }
+        }
+      },
+      {
+        "lower": 2097152,
+        "upper": 4194304,
+        "old": 0.0005490595543244357,
+        "new": 0.0005406109354998888,
+        "center": 0.0,
+        "semiprimeRows": 0,
+        "coordinateColumns": 39,
+        "maximumOrthogonalityError": 1.1102230246251565e-15,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "2": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.0005406109354998887,
+                "signedCenter": 0.0,
+                "maximumOrthogonalityError": 1.1102230246251565e-15
+              },
+              "balanced": {
+                "cost": 0.0004626021328765816,
+                "signedCenter": 0.0,
+                "maximumOrthogonalityError": 9.661007897786897e-16
+              },
+              "rationalIdentity": {
+                "cost": 0.0004626021365732255,
+                "signedCenter": 0.0,
+                "maximumOrthogonalityError": 1.1102230246251565e-15
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 730,
+            "rationalRecipeSHA256": "92b93c76b510842aeacff6ceed02109ad3fbfb8acbd0a49b42faf1667a9914dc"
+          },
+          "3": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.0004767989041372378,
+                "signedCenter": 2.5550489634689647e-07,
+                "maximumOrthogonalityError": 1.1102230246251565e-15
+              },
+              "balanced": {
+                "cost": 0.00039966025782052153,
+                "signedCenter": 2.555048963468964e-07,
+                "maximumOrthogonalityError": 8.881784197001252e-16
+              },
+              "rationalIdentity": {
+                "cost": 0.0003996602598466157,
+                "signedCenter": 2.555048963468965e-07,
+                "maximumOrthogonalityError": 1.1102230246251565e-15
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 726,
+            "rationalRecipeSHA256": "c01dd484bbdf6c33ec3f4ade1174409629c73baa2c604ba3b8b03223131caeb0"
+          }
+        }
+      },
+      {
+        "lower": 4194304,
+        "upper": 6484203,
+        "old": 0.0001577717423484861,
+        "new": 0.00015530358908907534,
+        "center": 0.0,
+        "semiprimeRows": 0,
+        "coordinateColumns": 11,
+        "maximumOrthogonalityError": 7.771561172376096e-16,
+        "allCoordinateColumnsRetained": true,
+        "coordinateAudit": {
+          "2": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.0001553035890890753,
+                "signedCenter": 0.0,
+                "maximumOrthogonalityError": 7.771561172376096e-16
+              },
+              "balanced": {
+                "cost": 0.00014673733453342055,
+                "signedCenter": 0.0,
+                "maximumOrthogonalityError": 7.595610023800053e-16
+              },
+              "rationalIdentity": {
+                "cost": 0.00014673733453343538,
+                "signedCenter": 0.0,
+                "maximumOrthogonalityError": 4.440892098500626e-16
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 55,
+            "rationalRecipeSHA256": "2e29795b65410809fcbf97d19c643aa17ab680be29ef2e10517a3f79f7aff132"
+          },
+          "3": {
+            "scores": {
+              "previousProfile": {
+                "cost": 0.0001323424973861641,
+                "signedCenter": 0.0,
+                "maximumOrthogonalityError": 7.771561172376096e-16
+              },
+              "balanced": {
+                "cost": 0.00012388781896516756,
+                "signedCenter": 0.0,
+                "maximumOrthogonalityError": 8.881784197001252e-16
+              },
+              "rationalIdentity": {
+                "cost": 0.0001238878189651771,
+                "signedCenter": 0.0,
+                "maximumOrthogonalityError": 3.236523541531332e-16
+              }
+            },
+            "allCoordinateColumnsRetained": true,
+            "rationalRecipeCount": 55,
+            "rationalRecipeSHA256": "073d17cae51b1edff1b6ea63ee0efc22339bab830884372022895e5ec3c7aaa1"
+          }
+        }
+      }
+    ],
+    "momentTotals": {
+      "2": {
+        "previousProfile": {
+          "cost": 0.0038179765757033546,
+          "signedCenter": -5.4059341703323845e-05
+        },
+        "balanced": {
+          "cost": 0.003406201988192825,
+          "signedCenter": -5.4059341703323885e-05
+        },
+        "rationalIdentity": {
+          "cost": 0.0034062097884067694,
+          "signedCenter": -5.4059341703323865e-05
+        }
+      },
+      "3": {
+        "previousProfile": {
+          "cost": 0.0030052749914267173,
+          "signedCenter": 0.00011301732407844036
+        },
+        "balanced": {
+          "cost": 0.0026025420063058675,
+          "signedCenter": 0.00011301732407844041
+        },
+        "rationalIdentity": {
+          "cost": 0.002602546958652983,
+          "signedCenter": 0.00011301732407844041
+        }
+      }
+    },
+    "scope": "Optional enlarged-population cubic-moment diagnostic, never a certificate.\n\nKeep all labels, prime counts, coordinates, exact arithmetic moment signs,\nallocation and product phase. Every profile includes its entire exterior.\nWidths omit the UNEVALUATED sqrt(E); signed centers do not. Both displayed\nendpoints at nominal E=1 are diagnostic only. The population omits earlier\nnested core deletions. Do not infer an eventual or zero-free bound."
+  },
+  "uniformWidthImprovementProved": true,
+  "signedCorrectionRetained": true,
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszCubicPrimeEnergy.thirdMoment_prime_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCubicPrimeEnergy.thirdMoment_two_primes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCubicPrimeEnergy.thirdMoment_eq_zero_of_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCubicPrimeEnergy.cubicEnergy_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCubicPrimeEnergy.cubicEnergy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCubicPrimeEnergy.cubicMoment_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCubicPrimeEnergy.cubicMoment_eq_zero_of_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCubicPrimeEnergy.divisor_cubic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCubicPrimeEnergy.cubicCost_le_quadraticCost": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCubicPrimeEnergy.cubicCenter_eq_zero_of_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCubicPrimeEnergy.exists_joint_cubic_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCubicPrimeEnergy.exists_literal_cubic_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCubicPrimeEnergy.exists_whole_cubic_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCubicPrimeEnergy.exists_core_cubic_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

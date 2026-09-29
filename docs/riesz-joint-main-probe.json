@@ -1,0 +1,77 @@
+{
+  "scope": "Uncertified full-column owner-sector diagnostic. All original masks and nonowner allocation are not included. Only divisor cutoffs 1,2,3 occur; no asymptotic saving or whole-core bound follows.",
+  "rows": [
+    {
+      "N": 14,
+      "y": 54.0,
+      "physicalUpper": 1192464,
+      "L": 13.991532312609701,
+      "nonemptyPhysicalAnnulus": true,
+      "markedPrimes": 15218,
+      "cofactorRange": [
+        808128,
+        1192452
+      ],
+      "shortCutoff": 1,
+      "sourceNormalizedSignedMain": -9.366120347443719e-07,
+      "sourceNormalizedDensityPart": -1.0626344001864909e-06,
+      "sourceNormalizedPrimePart": 1.260223654421189e-07,
+      "sourceNormalizedActualOwnerSum": -9.364571940289379e-07,
+      "actualMinusModel": 1.548407154339925e-10,
+      "separateColumnsAbs": 1.011209131386146e-06,
+      "separateDensityAndPrimeColumnsAbs": 1.283265823636739e-06,
+      "nonownerAllocationIncluded": false,
+      "allOriginalMasksVerified": false,
+      "certified": false,
+      "seconds": 0.39856604393571615
+    },
+    {
+      "N": 16,
+      "y": 54.0,
+      "physicalUpper": 14822500,
+      "L": 16.51165685456366,
+      "nonemptyPhysicalAnnulus": true,
+      "markedPrimes": 480399,
+      "cofactorRange": [
+        3349572,
+        11206445
+      ],
+      "shortCutoff": 2,
+      "sourceNormalizedSignedMain": -2.492907817010384e-06,
+      "sourceNormalizedDensityPart": -2.785679531119179e-06,
+      "sourceNormalizedPrimePart": 2.9277171410879505e-07,
+      "sourceNormalizedActualOwnerSum": -2.492937983997571e-06,
+      "actualMinusModel": -3.0166987187031905e-11,
+      "separateColumnsAbs": 8.265427590224914e-06,
+      "separateDensityAndPrimeColumnsAbs": 1.0174663363048075e-05,
+      "nonownerAllocationIncluded": false,
+      "allOriginalMasksVerified": false,
+      "certified": false,
+      "seconds": 10.940972696989775
+    },
+    {
+      "N": 18,
+      "y": 54.0,
+      "physicalUpper": 189723076,
+      "L": 19.061076072209286,
+      "nonemptyPhysicalAnnulus": true,
+      "markedPrimes": 7507215,
+      "cofactorRange": [
+        13482780,
+        85241578
+      ],
+      "shortCutoff": 3,
+      "sourceNormalizedSignedMain": 7.98299375907836e-06,
+      "sourceNormalizedDensityPart": 9.045529815381455e-06,
+      "sourceNormalizedPrimePart": -1.0625360563031088e-06,
+      "sourceNormalizedActualOwnerSum": 7.983100353244753e-06,
+      "actualMinusModel": 1.065941664095843e-10,
+      "separateColumnsAbs": 1.6712616903819924e-05,
+      "separateDensityAndPrimeColumnsAbs": 2.0501912306657457e-05,
+      "nonownerAllocationIncluded": false,
+      "allOriginalMasksVerified": false,
+      "certified": false,
+      "seconds": 167.86801977094728
+    }
+  ]
+}

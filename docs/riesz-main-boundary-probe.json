@@ -1,0 +1,140 @@
+{
+  "scope": "Optional diagnostic of the signed cofactor main; never run by ordinary CI.\n\nKeep actual marked primes and the exact owner factorial polynomial. Replace\nonly the ordinary-integer cofactor sum in the DENSITY term by its elementary\nintegral, evaluated by an exact antiderivative formula in floating arithmetic.\nKeep both radial endpoints and the p > cofactor sector boundary separately.\nThe latter is an artificial boundary of this diagnostic sector, not the\nlargest-prime boundary of the whole literal carrier.\n\nThe virtual ordinary-prime subtraction in the composite model is read from\nthe separately enumerated joint probe. It is NOT replaced by a prime-density\nintegral or asserted to be an original eligible cofactor. The resulting numbers\nare not certificates, whole-core bounds, or evidence of an asymptotic rate.\nAll nested carrier masks and nonowner allocation are not included. In these\nsmall-order tests the divisor cutoff only reaches 1, 2, or 3.",
+  "reference": "docs/riesz-joint-main-probe.json",
+  "referenceSha256": "6d708038afed8cc073a697f33165e924732a1a4e7d0e5abe546632022473534d",
+  "quadratureChecks": [
+    {
+      "order": 14,
+      "relativeError": "4.429872471674949561197616795391977723771662813110868529829359076817568e-70"
+    },
+    {
+      "order": 16,
+      "relativeError": "3.687460312411009165944692593397496516363818694551732832274222462365475e-70"
+    }
+  ],
+  "rows": [
+    {
+      "order": 14,
+      "height": 54.0,
+      "physicalUpper": 1192464,
+      "length": 13.991532312609701,
+      "markedPrimes": 15218,
+      "shortCutoff": 1,
+      "sourceNormalizedDensityBoundaries": {
+        "lowerRadial": {
+          "re": -1.1375744403416007e-06,
+          "im": -7.922679236146247e-07,
+          "abs": 1.3862770538774472e-06
+        },
+        "upperRadial": {
+          "re": 0.0,
+          "im": 0.0,
+          "abs": 0.0
+        },
+        "ownerBoundary": {
+          "re": 7.496613816296789e-08,
+          "im": -1.0070008835065414e-07,
+          "abs": 1.2554054988289138e-07
+        }
+      },
+      "sourceNormalizedIntegratedDensity": {
+        "re": -1.0626083021786327e-06,
+        "im": -8.929680119652788e-07,
+        "abs": 1.3879943350936916e-06
+      },
+      "sourceNormalizedDiscreteDensity": -1.0626344001864909e-06,
+      "discreteMinusIntegratedDensityReal": -2.609800785815081e-11,
+      "ownerBoundaryPlusPrimeSubtractionReal": 2.009885036050868e-07,
+      "sourceNormalizedIntegratedJointMainReal": -9.365859367365139e-07,
+      "sourceNormalizedDiscreteJointMainReal": -9.366120347443719e-07,
+      "allOriginalMasksVerified": false,
+      "nonownerAllocationIncluded": false,
+      "asymptoticBoundProved": false,
+      "certified": false,
+      "seconds": 0.18895082199014723,
+      "sourceNormalizedExactPrimeSubtractionReal": 1.260223654421189e-07
+    },
+    {
+      "order": 16,
+      "height": 54.0,
+      "physicalUpper": 14822500,
+      "length": 16.51165685456366,
+      "markedPrimes": 480399,
+      "shortCutoff": 2,
+      "sourceNormalizedDensityBoundaries": {
+        "lowerRadial": {
+          "re": -3.1187272551776463e-06,
+          "im": -1.5221712852317521e-05,
+          "abs": 1.5537921413451554e-05
+        },
+        "upperRadial": {
+          "re": 1.0834465279831342e-07,
+          "im": 2.242223676588347e-06,
+          "abs": 2.2448397670309015e-06
+        },
+        "ownerBoundary": {
+          "re": 2.2477310579670485e-07,
+          "im": -8.124786507332785e-08,
+          "abs": 2.390066205536373e-07
+        }
+      },
+      "sourceNormalizedIntegratedDensity": {
+        "re": -2.785609496582628e-06,
+        "im": -1.3060737040802502e-05,
+        "abs": 1.3354492589254067e-05
+      },
+      "sourceNormalizedDiscreteDensity": -2.785679531119179e-06,
+      "discreteMinusIntegratedDensityReal": -7.003453655105263e-11,
+      "ownerBoundaryPlusPrimeSubtractionReal": 5.175448199054999e-07,
+      "sourceNormalizedIntegratedJointMainReal": -2.492837782473833e-06,
+      "sourceNormalizedDiscreteJointMainReal": -2.492907817010384e-06,
+      "allOriginalMasksVerified": false,
+      "nonownerAllocationIncluded": false,
+      "asymptoticBoundProved": false,
+      "certified": false,
+      "seconds": 2.6544496410060674,
+      "sourceNormalizedExactPrimeSubtractionReal": 2.9277171410879505e-07
+    },
+    {
+      "order": 18,
+      "height": 54.0,
+      "physicalUpper": 189723076,
+      "length": 19.061076072209286,
+      "markedPrimes": 7507215,
+      "shortCutoff": 3,
+      "sourceNormalizedDensityBoundaries": {
+        "lowerRadial": {
+          "re": 1.833872634159121e-05,
+          "im": -2.9374007167199238e-05,
+          "abs": 3.462861794658348e-05
+        },
+        "upperRadial": {
+          "re": -9.42498660460917e-06,
+          "im": 1.050792379019755e-05,
+          "abs": 1.4115482098662516e-05
+        },
+        "ownerBoundary": {
+          "re": 1.3181143516613138e-07,
+          "im": 2.045792887399459e-08,
+          "abs": 1.3338958465475735e-07
+        }
+      },
+      "sourceNormalizedIntegratedDensity": {
+        "re": 9.04555117214817e-06,
+        "im": -1.8845625448127693e-05,
+        "abs": 2.0904056891882717e-05
+      },
+      "sourceNormalizedDiscreteDensity": 9.045529815381455e-06,
+      "discreteMinusIntegratedDensityReal": -2.135676671555437e-11,
+      "ownerBoundaryPlusPrimeSubtractionReal": -9.307246211369774e-07,
+      "sourceNormalizedIntegratedJointMainReal": 7.983015115845061e-06,
+      "sourceNormalizedDiscreteJointMainReal": 7.98299375907836e-06,
+      "allOriginalMasksVerified": false,
+      "nonownerAllocationIncluded": false,
+      "asymptoticBoundProved": false,
+      "certified": false,
+      "seconds": 34.143005862948485,
+      "sourceNormalizedExactPrimeSubtractionReal": -1.0625360563031088e-06
+    }
+  ]
+}
