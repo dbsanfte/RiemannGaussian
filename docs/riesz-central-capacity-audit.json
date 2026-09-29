@@ -2892,6 +2892,180 @@
       ],
       "scope": "Smooth model with both exact cutoff terms, moving length and original selected factorial orders. Not used as a proof premise."
     },
-    "scope": "Fixed count and height; not source-normalized decay, not uniform in growing count, and no zero/simplicity premise. Final independent -79/1000 floor and 3/2 ceiling remain open."
+    "scope": "Fixed count and height; not source-normalized decay, not uniform in growing count, and no zero/simplicity premise. Final independent -79/1000 floor and 3/2 ceiling remain open.",
+    "supersededBy": "ownerGeometryFixedCountPrimePeriodPayment"
+  },
+  "ownerGeometryFixedCountPrimePeriodPayment": {
+    "sources": {
+      "ZetaRieszAllocationVariation": "4b50d35045951dc95cdfc3f0be15459046b93a5cea1ae8e5f464059eaa84518e",
+      "ZetaRieszFixedCountPeriod": "160d796fb0fba8d347865ed1cbebb68721ec20a7cff0d896bd2edd74a6aa54f4",
+      "ZetaRieszFixedCountBand": "8b4c0bd5ee268b25a1477511a8fffa304202bf4c147dd14b453d3e4cc4b6c250"
+    },
+    "baselineCommit": "e9ebbfb353aaff22c529e9c3056751a7ebeee484",
+    "enlargement": "The cofactor cap is 197v/200. For k<=54, log(a)<=54v/55 follows from ownership. The old relative margin v/200 is replaced by the constant 1/16, sufficient for every full prime period at |y|>=54.",
+    "retainedGeometry": "203v/500<log(a); log(q)<=v-1/16-log(a) at every cofactor prime; all original moving core/allocation/physical masks. No least-prime or fixed sign restriction.",
+    "allocationVariation": "<=20(k+1)*sqrt(N+1)/v times radial displacement. Earlier narrower 4(k+1) theorem remains available unchanged.",
+    "denominator": "v/(L*(v-log(a)))<=100/v on log(a)<=197v/200 and L>=67v/100.",
+    "signedBudget": "10000*B_k*eta*C_k+(5000*(k+1)*B_k*C_k+2000*2^k*Cprime_k)/sqrt(v). This still tends to an arbitrarily small local debit at every fixed count.",
+    "strictArithmeticExtension": "eventually_near_balanced_extra constructs actual seven-prime labels with 21v/25<log(a)<=2109v/2500, beyond the old 7v/10 cap. Both Riesz cutoffs are retained. eventually_thin_gap_extra also constructs actual labels with 0.8544v<log(a)<=0.85476v; every cofactor prime violates the old relative v/200 separation.",
+    "wholeApplications": [
+      {
+        "exitCode": 0,
+        "logSha256": "f229b4730f57e1af023c09bdf957a2fb381e1b00ac754c0d0121f853d50ad8b9",
+        "lint": "Found 0 errors in 2 declarations (plus 5 automatically generated ones) in RieszFixedCountLocal with 14 linters",
+        "terminalAxioms": {
+          "RieszFixedCountLocal.eventually_period_floor": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RieszFixedCountLocal.eventually_period_ceiling": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "file": "scripts/CheckRieszFixedCountLocal.lean",
+        "sha256": "6be7768ba44659a9b782c9c34617e9a953a9343d243cb553daaa6c60d53b12fa"
+      },
+      {
+        "exitCode": 0,
+        "logSha256": "51755abc261126a35e979191f204da174ab5f29a60c8df99d1a4a99f5a51d5cf",
+        "lint": "Found 0 errors in 6 declarations (plus 10 automatically generated ones) in RieszFixedCountJoint with 14 linters",
+        "terminalAxioms": {
+          "RieszFixedCountJoint.eventually_combined_floor": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RieszFixedCountJoint.eventually_combined_ceiling": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "file": "scripts/CheckRieszFixedCountJoint.lean",
+        "sha256": "d3f49bb50602b612f107e7db8c0a02e171bebd113bb69ed5b0d443dd34bcb3a6"
+      },
+      {
+        "exitCode": 0,
+        "logSha256": "d15e14229caba30137de9004bdcbc2d7d3cfc6eba9656b343e713c7280815092",
+        "lint": "Found 0 errors in 2 declarations (plus 2 automatically generated ones) in RieszFixedCountWhole with 14 linters",
+        "terminalAxioms": {
+          "RieszFixedCountWhole.eventually_whole_floor": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "RieszFixedCountWhole.eventually_whole_ceiling": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "file": "scripts/CheckRieszFixedCountWhole.lean",
+        "sha256": "676d1292de7cd32acde1ce50cfcb321691b755b3c334797e7b557f423f0926d4"
+      }
+    ],
+    "rootAudit": {
+      "exitCode": 0,
+      "logSha256": "25b41f7181bc0b4374a63771601b6e3ee1d7786091f813d532f3cf13738543c0",
+      "lint": "Found 0 errors in 32975 declarations (plus 22882 automatically generated ones) in RiemannGaussian with 14 linters",
+      "terminalAxioms": {
+        "RiemannGaussian.ZetaRieszAllocationVariation.radial_derivative_bound_99": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAllocationVariation.complementary_radial_derivative_bound_99": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAllocationVariation.selected_mass_radial_lipschitz_98": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAllocationVariation.complementary_mass_radial_lipschitz_98": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAllocationVariation.boundedShare_fibre_variation_98": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountPeriod.cofactor_cap_of_owner": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountPeriod.mem_cofactors_iff_of_count_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountPeriod.fibre_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountPeriod.eventually_residual_small": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountPeriod.eventually_population_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountBand.eventually_population_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountBand.eventually_unsaturated_extra": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountBand.eventually_near_balanced_extra": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszAllocationVariation.boundedShare_fibre_variation_985": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFixedCountBand.eventually_thin_gap_extra": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "wholeMargin": "Same <1/90000 relative local debit and >=(N/16)*sourceCredit margin in BOTH whole comparisons on the exact smaller unpaid rest. All favorable observations and prior six-prime costs stay; one owner payment.",
+    "scope": "No prime-density premise, zero assumption or simple-zero assumption. Counts 7-55 are fixed. Not source-o(1), not uniform in growing count, and no effective starting order is claimed. Largest-prime near-ties, clipped periods, radial complement and other counts remain. Both numerical whole thresholds remain open.",
+    "probe": {
+      "file": "scripts/probe_riesz_fixed_count_period.py",
+      "sha256": "04cf04be724a68d0af73247dee39da3ff9d80ae89c0d39e088e0501c67544e9b",
+      "actualPrimeCertificate": false,
+      "rows": 56,
+      "newCofactorShares": [
+        0.74,
+        0.8,
+        0.84,
+        0.89,
+        0.855,
+        0.8988
+      ],
+      "scope": "Near-equal cofactor logarithms retain exact moving length, both responses, allocation, physical masks and full phase. Smooth exploratory integrals only; not proof premises."
+    },
+    "nextObjective": "One global signed prime-period mechanism controlling all remaining geometries, growing counts and radial periods. Aggregate costs must preserve signed overlap with previously credited phase selections."
   }
 }

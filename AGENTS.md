@@ -1602,6 +1602,307 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+The user has now authorized committing and pushing all accumulated local
+work after this slice passes the full gates. Include the earlier joint
+mean/owner/count estimates and their audits, not just the latest prime-period
+module. Verify the complete staged tree and push the passing commit; track
+CI on its exact SHA while continuing useful independent work. No subagents
+are authorized. This instruction supersedes the earlier local-only holds.
+
+`ZetaRieszQuantitativePrimePeriod` proves actual ordinary-prime period
+costs 4/a^2 and first-moment costs 1/a^2 at cosine extrema, for prime-log
+lower endpoint a>=5000 and |y|>=54. The proved explicit Chebyshev error
+pays every arithmetic premise. The signed-profile theorem retains its
+common smooth integral, numerical discrepancy and exact clipped endpoints.
+Squarefree ownership and the all-count second moment give the numerical
+joint bound 8*W*(H_(2M)^2+H_(2M))/log(M)^2; arbitrary finite radial families
+replace W by sum_j W_j. No maximum prime count or E_h enters this bound.
+The terminal cofactor weights remain CONSTANT WITHIN EACH PRIME PERIOD.
+Original factorial/allocation variation, Riesz cutoff corrections and
+cofactor-dependent paid-sector holes still need their combined budget.
+Do not reuse a full-period estimate after deleting favorable sectors or
+append their credit twice. This is not generic source-scale PNT transport;
+both whole -79/1000 floor and 3/2 ceiling remain OPEN. Preserve all prior
+no-gos, masks and multiplicities. See
+`docs/zeta-riesz-quantitative-prime-period.md`. The optional finite-prime
+probe is below the theorem's logarithmic cutoff, is not a certificate and
+stays outside CI. Complete the authorized publication gates without subagents.
+
+`ZetaRieszOwnerCountEnergy` now pays the cofactor part of the owner-log
+energy for EVERY prime count together. Literal prime incidence counting
+gives sum_{n<=X} omega(n)^2 <= X*(H_X^2+H_X). Squarefree ownership gives
+log(n)/omega(n) <= the marked prime log, and the dyadic shell energy for
+|w(n)|<=W/n is at most 2*W^2*(H_(2M)^2+H_(2M))/(M*log(M)^2).
+The existing Chebyshev counts bound H_X by an explicit O(log log X)
+expression. Both real and COMPLEX owner-slope sums therefore have
+K^2=144*(b+1)^2*E_h*W^2*(B_M^2+B_M)*sum|a_i|^2/log(M)^2,
+where B_M is explicit and E_h is proved but UNEVALUATED. Complex phases
+remain coupled before taking the real part; their fixed factor two is
+absorbed into E_h. The original owner, strict slope, reciprocal log and
+cofactor-dependent interval endpoints remain. There is NO remaining
+cofactor-energy SUM or exponential prime-count price in this theorem.
+Base a_i and cutoffs stay FIXED across labels. The irregular signed
+prime moments, remaining coefficient energy, radial aggregation and
+matching signed cutoff correction are STILL OPEN at source scale.
+Noncontiguous cofactor-dependent period holes are not paid. Preserve all
+earlier no-gos and disjoint paid sectors. Neither whole floor/ceiling,
+RH nor a new zero exclusion is proved. See
+`docs/zeta-riesz-owner-count-energy.md`; the optional integer diagnostic
+stays outside CI. Continue locally, without subagents or commits.
+
+`ZetaRieszSquarefreeSeparatedMean` now pays the counting errors for an
+ENTIRE signed log-separated cutoff family: sum_S (sum_i a_i M_Ri(n))^2
+<= E_h*X*sum_i a_i^2, with NO period-count multiplier and NO remaining
+floor term. S is squarefree, nonunit, in (1,X]; the budget uses X, NOT
+card(S) or X-Y. Exact complementary quotient rounding loses at most one
+in logarithmic separation. Both small direct and large reflected finite
+Gram kernels have inverse-square separation decay INCLUDING their
+integer rounding errors. This closes the binary-block counting budget
+for the squarefree family covered by the new theorem.
+`ZetaRieszOwnerUniformMean` combines it with the existing literal owner
+and moving-interval maximal estimate: the mean is bounded by
+36*(b+1)^2*E_h*X*sum_i a_i^2 for 2^b periods. Both signed sides and the
+strict cutoffSlope bridge retain cofactor-dependent owner shares, radial
+lengths T(n,i) and interval endpoints. Base a_i and R_i remain FIXED across
+labels; arbitrary a_i(n) and cofactor-dependent noncontiguous holes are
+NOT covered. Common real weights have EXPLICIT unpaid energy. E_h is
+proved but UNEVALUATED. The remaining prime-moment dependence, matching
+signed cutoff correction and TOTAL source-normalized cost are still OPEN.
+Do not claim a whole floor/ceiling, RH or a new zero exclusion. No zero or
+simplicity hypothesis enters these estimates; preserve disjoint paid
+sectors and every previous negative audit. See
+`docs/zeta-riesz-uniform-period-budget.md`. The floating Gram probe is
+only a finite diagnostic, stays outside ordinary CI, and does not bound
+the prime phase or certify E_h. Continue locally, no subagents or commits.
+
+`ZetaRieszOwnerDensity` additionally retains any nonnegative decreasing
+cofactor-dependent factor v(n,i)<=D at only D^2 times this SAME mean
+budget, with no additional period or maximal-depth price. Its literal
+reciprocal-log slope theorem keeps 1/(T(n,i)-log n) and separate positive
+lower bounds delta(n), with explicit energy sum (w(n)/delta(n))^2.
+This pays the monotone coefficient dependence covered by the theorem,
+NOT the irregular signed prime-count discrepancy. Do not substitute a
+smooth prime density for actual prime moments. The energy, remaining
+signed cutoff correction and whole source-normalized cost are still open.
+
+`ZetaRieszSquarefreeUniformMean` now CLOSES the intermediate-cutoff gap
+left by the earlier cubic reflected budget below. Sum all complementary
+divisor pairs BEFORE rounding: each pair is one exact interval count with
+error at most 1, so the reflected error is floor(X/R)^2, not its cube.
+The moving main term is a sum of sharp lcm quadratics, each bounded by the
+existing proved E. Combining direct and reflected squares gives a UNIFORM
+LINEAR mean E*X for EVERY positive cutoff and every squarefree nonunit
+selection S in (1,X]. The Riesz difference inherits (B-A)^2*E*X, and both
+signed weighted bounds follow with explicit weight energy. General A,B
+remain fixed across labels; exact response reflection fixes L-log(p),L
+for each marked prime in `exists_literal_prime_fibre_bounds`. This bounds
+the ORIGINAL residualCoefficient/kernel with all cofactor counts, masks,
+phase, factorial and allocation retained, without a raw-prime-bound premise.
+The counting penalty is now linear everywhere, but E is UNEVALUATED and
+the weight energy and combined prime-period cost remain UNPAID AT SOURCE
+SCALE. Do not infer a whole floor/ceiling or a zero exclusion. Both whole
+thresholds remain OPEN. No zero/simplicity hypothesis enters this estimate.
+Preserve all previous no-gos and disjoint paid-sector masks. See
+`docs/zeta-riesz-squarefree-dual-mean.md`. Continue locally, no subagents
+or unrequested commits; the integer diagnostic stays outside ordinary CI.
+
+`ZetaRieszSquarefreeDualMean` improves the actual squarefree counting
+budget by exact strict divisor reflection: M_R(n)=-mu(n)*M_((n-1)/R)(n).
+Do not replace the integer endpoint by n/R. For every squarefree nonunit
+selection S in (1,X], the mean is bounded by E*X+min(R^2,floor(X/R)^3),
+with one proved UNEVALUATED E. It is linear in the two regimes R^2<=X
+or X^2<=R^3, NOT throughout the intervening range. X<=Q^5 gives the
+all-cutoff budget E*X+Q^6. The improved two-hinge and literal strict-slope
+bounds keep arbitrary correlated real weights, with EXPLICIT unpaid
+weight energy. Common hinge endpoints are FIXED across labels. Exact
+response reflection also yields `exists_literal_prime_fibre_bounds` for
+the original residualCoefficient/kernel with fixed marked prime p: the
+reflected endpoints L-log(p),L are common across cofactors. All cofactor
+counts, phase, factorial and allocation weights remain. This needs no
+raw prime-bound premise, but does NOT pay the weight energy or combined
+marked-prime/period cost at source scale. Do not turn this finite counting
+improvement into a whole floor/ceiling claim. Both whole thresholds remain
+OPEN. No zero hypothesis, no newly excluded zeros. Retain all prior no-gos
+and disjoint paid-sector masks. See `docs/zeta-riesz-squarefree-dual-mean.md`.
+The exact integer diagnostic stays outside ordinary CI. Continue locally,
+without subagents or unrequested commits.
+
+`ZetaRieszOwnerMaximal` now proves that the EXACT original owner allocation
+has total variation at most 2 along decreasing cofactor shares, for N>=32.
+The unpaid orders are exactly Icc(N/5+2,13N/32). Raw signed complex partial
+sums transfer through the owner factor at cost 3; moving interval endpoints
+cost 6. A binary-block maximal argument gives the all-count literal cutoff
+mean at cost 36*(b+1), with main energy E_h*(X-Y)*(b+1)*sum a_i^2 and the
+explicit signed dyadic block-floor error. The coarse total price is only
+36*(b+1)^2 for 2^b periods. `exists_owner_slope_bounds` gives BOTH signed
+sides with cofactor-dependent owner shares, radial lengths and interval
+endpoints, arbitrary population masks and common real weights. Base a_i
+and cutoff R_i remain FIXED across labels. Arbitrary a_i(n), holes in the
+period selection and the matching Riesz cutoff correction are not paid.
+`literal_owner_prime_partial_bound` preserves the exact coefficient/kernel,
+but its raw prime partial-sum bound is an EXPLICIT OPEN PREMISE, not an
+independent small bound. E_h is unevaluated. Neither the binary-block floor
+budget nor the remaining prime-period weight energy is source-small yet.
+Do not apply a logarithmic saving to the exponential absolute envelope
+and call it decay. Both whole thresholds remain OPEN; no zero hypothesis
+or new zero exclusion. Preserve previous no-gos and paid-sector overlaps.
+See `docs/zeta-riesz-owner-maximal.md`. Continue locally, without subagents
+or unrequested commits. The optional allocation probe is not a prime-sum
+certificate and stays outside ordinary CI.
+
+`ZetaRieszCrossCutoff` now proves inverse-square decay of the ACTUAL
+sharp cross quadratic: `abs(Q(R,S)) <= C/(4+abs(log R-log S))^2` for
+positive cutoffs, with one unevaluated C. The repo's finite Suzuki Schur
+estimate then bounds any signed family with log spacing at least
+`h*abs(i-j)`, h>0, by `E_h*sum a_i^2`, with no period-count factor.
+The literal integer interval second moment is at most
+`E_h*(X-Y)*sum a_i^2 + (sum abs(a_i)*R_i)^2`. Both signed sides hold
+with arbitrary population masks and a common real weight. The exact
+`cutoffSlope` bridge preserves the strict rounding `R_i<exp(D_i)<=R_i+1`.
+The stronger cancellation endpoints replace the finite-error square by
+`(sum_d abs(mu(d)*sum_{i:d<=R_i} a_i))^2`: signs are retained until AFTER
+cutoffs have been combined at each divisor. This error remains explicit
+and is not proved source-small. The optional 128-cutoff alternating probe
+reduces its normalized allowance from about 32719.54 to 10.22374; this is
+not a certificate for the original carrier or its changing masks.
+The family coefficients a_i are FIXED across the selected population;
+arbitrary a_i(n) are NOT covered. The retained prime-period coefficients
+do depend on the cofactor, so their variation and matching cutoff
+correction still need joint control. Do not erase the combined finite
+floor error or infer a source-small bound from the numerical alternating
+Gram probe. Both whole thresholds remain OPEN. Preserve all previous
+no-gos, original masks and paid-sector overlaps. See
+`docs/zeta-riesz-cross-cutoff.md`. Continue locally, no subagents or
+unrequested commits.
+
+`ZetaRieszSharpSieve` and `ZetaRieszCutoffMean` now prove a stronger
+all-count cutoff-change budget. One PROVED but UNEVALUATED constant E>0
+bounds the sharp Mobius lcm quadratic at every cutoff. For every integer
+interval `(Y,X]`, the actual sharp response has second moment at most
+`E*(X-Y)+R^2`. For A<=B and exp(B)<R+1, the actual Riesz difference has
+second moment at most `(B-A)^2*(E*(X-Y)+R^2)`. Finite positive mixing of
+sharp prefixes proves this; no count split or external sieve premise is
+used. `exists_masked_difference_bounds` preserves arbitrary real weights
+and finite selections and gives BOTH signed sides. The endpoints A,B
+are fixed on each selected population; label-dependent moving cutoffs
+are not automatically covered. Do not identify E with the floating 0.44
+probe, erase the R^2 error, or claim the stronger classical uniform O(X)
+mean for all X,R. The actual weight energy, moving endpoints and total
+source-normalized period cost remain unpaid. Both whole endgame thresholds
+remain OPEN, with no zero exclusion. Keep the absolute-crossing no-go and
+all paid-sector overlaps. See `docs/zeta-riesz-cutoff-mean.md`. Continue
+locally without subagents or unrequested commits.
+
+`ZetaRieszSieveQuadratic` and `ZetaRieszSieveMean` now prove an independent
+all-count bound for the literal Riesz response. For `R<=x<R+1`, `x>0`,
+the signed logarithmic lcm quadratic form is at most `196*(1+log R)` and
+`sum_(n<=X) R_(log x)(n)^2 <=196*X*(1+log R)+16*x^2`.
+Exact prime exclusions cost their Euler factors; their total is bounded
+before any prime-count split. `literal_residual_bounds` applies to the
+original allocated residual on arbitrary finite squarefree-composite
+selections, preserving its actual factorial and phase weights. The weight
+energy and the `x^2` floor error remain explicit. This is NOT a source-small
+cost, a payment of every prime period, or either final whole threshold.
+Do not multiply this bound by the absolute carrier and claim cancellation.
+The square-root-cutoff specialization needs the literal `x^2<=X` premise;
+it does not automatically hold on every reflected cofactor geometry.
+The stronger uniform O(X) sharp Mobius mean remains a literature lead.
+The later SharpSieve slice proves a constant quadratic but still pays R^2.
+The Dress--Iwaniec--Tenenbaum/de la Breteche--Dress--Tenenbaum uniform mean
+and 2026 explicit constants are NOT imported Lean theorems.
+Keep clipped boundaries, moving cutoffs and previously paid overlaps in
+any transfer to the signed prime periods. Both whole bounds remain open.
+See `docs/zeta-riesz-sieve-mean.md`. Continue locally without subagents or
+unrequested commits; preserve every earlier negative audit.
+
+`ZetaRieszSignedCrossing` now improves BOTH literal affine comparisons:
+the convex hinge error is nonnegative, so only `min(g*mu(d),0)` is charged
+in the floor and only `max(g*mu(d),0)` in the ceiling. These inequalities
+cover all cofactor counts, arbitrary radial selections and clipped prime
+sets, keeping the original allocation, factorial weight, phase and both
+cutoffs. A favorable crossing is not a separate extra reserve.
+`ZetaRieszCrossingGrowth` proves a decisive limitation of the preceding
+absolute-cost plan: the actual full-period crossing cost, restricted to
+the original core with unique largest-prime ownership, is at least
+`c_(u,y)*(2u)^N/(N+1)^4` at every negative saddle peak, eventually on the
+dyadic schedule for `1/2<u<=10001/20000`, `abs(y)>=54`. Ordinary-prime
+population bounds, the literal floor-defined length and all core masks
+are proved. Hence `not_eventually_period_cost_bounded` rules out even a
+constant separate absolute crossing budget. This is NOT divergence of
+the whole signed sum. Do not optimize that impossible separate payment:
+bound the retained prime moments PLUS their signed cutoff correction
+together. Keep the already-paid sectors and their overlaps explicit;
+the box may not be appended as a second credit. The earlier global
+nonowner source-o(1) payment remains valid. Both whole numerical thresholds
+remain open. See `docs/zeta-riesz-signed-crossing.md`; the numerical probe
+is optional and is not a certificate. Continue locally without subagents
+or unrequested commits.
+
+`ZetaRieszNonownerAllocation` now pays ALL non-largest-prime allocation
+incidences together at source scale. Each such prime has log share <=1/2;
+the literal unpaid-order mass is <=exp(-N/64). The complete masked sum has
+bound `(4(N+1)/3)*nonownerRate^N*(1509/1000)*M(2049/2048)`, with
+`nonownerRate<124/125`. The bound permits label-dependent prime selections,
+arbitrary complex masks of norm <=1, all counts and all periods in the
+literal window, uniformly in changing heights. Exact residual subtraction
+and `signed_owner_bounds` pay BOTH sides once; `tendsto_joint_sub_owner`
+connects this to the unchanged whole floor/ceiling target. The original
+source is retained, not cancelled. `ZetaRieszOwnerVariation` bounds the
+remaining exact owner allocation derivative by `6*sqrt(N+1)/T` on EVERY
+cofactor share in (0,1), and literal fibre variation by
+`12*sqrt(N+1)/v`, with no count factor or upper cofactor-share cap. The
+physical prime selection and unique ownership remain explicit. This does
+NOT bound the retained owner sum or the combined signed prime moments.
+Next combine this global allocation payment with the cutoff-crossing bound
+below to attack those moments and their total source-scale cost, retaining
+clipped/exterior boundaries and every signed overlap. Both whole constants
+remain open. See `docs/zeta-riesz-global-owner-allocation.md`. Keep earlier
+no-gos and defaults; continue locally without subagents or unrequested
+commits. Do not replace signed correlations by an unpaid absolute envelope.
+
+The new `ZetaRieszGlobalCurvature` and `ZetaRieszGlobalPrimePeriod` replace
+count-by-count cutoff-variation charges by ONE bound over every integer
+cofactor: `(1+log X)*h*(exp(2h)-1+exp(h-D))`, and at most
+`(23/7)*(1+log X)*h^2` under the stated small-width/interior assumptions.
+`owned_population_affine_bounds` applies directly to the existing allocated
+residual coefficient, retaining both cutoffs, parity, full factorial weight,
+phase and any actual masks, with unique largest-prime ownership. It improves
+BOTH signed sides around the same retained constant and first prime moments.
+`radial_affine_error_le` aggregates arbitrary finite radial collections using
+only the sum of their literal weight budgets. It does NOT prove those budgets
+or the two moments bounded at source scale. Counts are unrestricted above
+three total primes; clipped periods retain their real moments. No separate
+favorable-phase credit may be added without signed overlap accounting.
+Next attack those two joint weighted moments, the combined crossing cost and
+exterior boundaries. Do not report this component bound as the whole floor
+or ceiling; both numerical endgame constants remain open. See
+`docs/zeta-riesz-global-crossing.md`. Continue locally, without subagents or
+unrequested commits. Preserve every older negative audit.
+
+
+The latest local fixed-count estimate removes both the artificial cofactor
+ceiling and the fixed relative ownership gap. It uses `log(a)<=197v/200`
+and `log(q)<=v-1/16-log(a)`. For k<=54, ownership alone implies
+`log(a)<=54v/55`, making the cap redundant. The fixed 1/16 covers a whole
+prime half-period for |y|>=54; its relative width vanishes. The earlier
+70-percent and relative 1/200 sectors are retained. The allocation variation
+is `20(k+1)*sqrt(N+1)/v`, with denominator `100/v`; BOTH cached whole
+applications retain `<1/90000` local debit, every observation, growing margin,
+prior costs and one owner payment. Actual seven-prime labels now reach
+0.8544v<log(a)<=0.85476v and violate the old relative gap at every cofactor
+prime. No source-o(1), effective threshold or growing-count uniformity claim.
+The final -79/1000 floor and 3/2 ceiling remain open. The user's latest steer
+is to find a SINGLE mechanism controlling all remaining share geometries,
+counts and radial periods at a globally summable cost. Do not substitute
+more isolated sector widening for this goal. Keep overlaps with previously
+credited phase selections signed: a full-period completion cannot add their
+credit again. Test the aggregate Riesz hinge/curvature and allocation costs
+before developing new representations. See `docs/zeta-riesz-owner-geometry.md`.
+Continue locally without subagents or unrequested commits. The preceding
+slice `e9ebbfb353aaff22c529e9c3056751a7ebeee484` passed exact-SHA Lean Action
+CI run `36485037998`, including Pages deployment. That success does not
+cover this newer local extension.
+
 The fixed-count signed payment now crosses saturation: its cofactor band
 extends to 7v/10 instead of 133v/200. `ZetaRieszFixedCountPeriod.response`
 retains BOTH R_(log(pa)-L)(a) and -R_(log(a)-L)(a). The second is constant

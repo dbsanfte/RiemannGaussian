@@ -16,17 +16,17 @@
       "changeReason": "The multiplicity audit proves that exposure does not imply simplicity: multiple zeros have a positive retained source. The same carrier now has a checked two-sided conditional endgame, so the arithmetic campaign must pursue its floor and ceiling together."
     },
     "latestUpdate": {
-      "sequence": 109,
-      "id": "unsaturated-prime-periods",
+      "sequence": 121,
+      "id": "quantitative-prime-periods",
       "kind": "theorem",
-      "title": "Both signed bounds cross the cofactor saturation boundary.",
-      "body": "The selected 7\u201355-prime population now extends from cofactor log 0.665v to 0.7v. Lean retains the additional Riesz cutoff exactly, proves it adds no cutoff variation, and constructs actual labels where it is positive. Both whole comparisons keep the same local debit and growing credit.",
-      "next": "Control the remaining ownership boundaries, share geometry and radial complement. The independent -79/1000 whole floor and 3/2 ceiling remain open.",
+      "title": "Numerical signed prime-period costs now sum over every cofactor count.",
+      "body": "Actual complete prime periods and their first signed moments have explicit inverse-square prime-log bounds. All squarefree cofactor counts share one logarithmic budget, and arbitrary finite radial families retain their actual amplitude sums.",
+      "next": "Bound the original factorial/allocation variation and matching signed cutoff corrections, keeping clipped endpoints and paid-sector holes. Both whole thresholds remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszFixedCountJointTheorem"
+        "rieszRadialPrimePeriodTheorem"
       ],
-      "documentation": "docs/zeta-riesz-unsaturated-periods.md"
+      "documentation": "docs/zeta-riesz-quantitative-prime-period.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -5276,6 +5276,45 @@
       "documentation": "docs/zeta-riesz-fixed-count-periods.md"
     },
     {
+      "id": "owner-geometry-prime-periods",
+      "label": "Whole joint estimates \u00b7 full separated-owner geometry",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerGeometryCapTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerGeometryCoverageTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerGeometryVariationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerGeometryActualTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerGeometryThinGapTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFixedCountResidualTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFixedCountJointTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszOwnerGeometryScope"
+      ],
+      "documentation": "docs/zeta-riesz-owner-geometry.md"
+    },
+    {
       "id": "unsaturated-prime-periods",
       "label": "Whole joint estimates \u00b7 crossing the saturation boundary",
       "statusPaths": [
@@ -5309,6 +5348,483 @@
         "rieszUnsaturatedScope"
       ],
       "documentation": "docs/zeta-riesz-unsaturated-periods.md"
+    },
+    {
+      "id": "global-cutoff-crossings",
+      "label": "Joint signed estimates \u00b7 global cutoff crossings",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGlobalCurvatureTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGlobalQuadraticTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGlobalAffineTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGlobalLiteralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGlobalOwnedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszGlobalRadialTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszGlobalCrossingScope"
+      ],
+      "documentation": "docs/zeta-riesz-global-crossing.md"
+    },
+    {
+      "id": "global-owner-allocation",
+      "label": "Joint signed estimates \u00b7 global owner allocation",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNonownerRateTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNonownerSplitTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNonownerGlobalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNonownerSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszNonownerJointTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerDerivativeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerGlobalVariationTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszGlobalOwnerScope"
+      ],
+      "documentation": "docs/zeta-riesz-global-owner-allocation.md"
+    },
+    {
+      "id": "signed-cutoff-crossings",
+      "label": "Joint signed estimates \u00b7 cutoff signs and absolute-cost no-go",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedCrossingLiteralTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedCrossingRadialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedCrossingGainTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossingBoxOwnedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossingCoreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossingGrowthTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossingNoGoTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedCrossingScope"
+      ],
+      "documentation": "docs/zeta-riesz-signed-crossing.md"
+    },
+    {
+      "id": "all-count-riesz-mean-square",
+      "label": "All-count signed estimates \u00b7 Riesz mean square and literal residual",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSieveLogPrefixTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSieveQuadraticTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSieveMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSieveSmallCutoffTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSieveMaskedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSieveLiteralTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSieveMeanScope"
+      ],
+      "documentation": "docs/zeta-riesz-sieve-mean.md"
+    },
+    {
+      "id": "uniform-cutoff-change",
+      "label": "All-count signed estimates \u00b7 uniform sharp cutoff and Riesz differences",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharpQuadraticTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharpMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSharpIntervalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCutoffMixtureTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCutoffIntervalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCutoffMaskedTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCutoffMeanScope"
+      ],
+      "documentation": "docs/zeta-riesz-cutoff-mean.md"
+    },
+    {
+      "id": "joint-cross-cutoff",
+      "label": "Joint signed estimates \u00b7 separated cutoffs and retained slopes",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossDecayTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossSymmetricTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossJointQuadraticTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossJointMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossJointSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossSlopeBridgeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossJointSlopeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossCancellationMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossCancellationSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCrossCancellationSlopeTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCrossCutoffScope"
+      ],
+      "documentation": "docs/zeta-riesz-cross-cutoff.md"
+    },
+    {
+      "id": "owner-maximal",
+      "label": "Joint signed estimates \u00b7 varying owner and moving period endpoints",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerOrdersTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerTotalVariationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerPartialSumTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerMaximalSquareTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerMaximalMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerMaximalFloorCostTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerMaximalSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerExactFibreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerMaximalSlopeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerLiteralPartialTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszOwnerMaximalScope"
+      ],
+      "documentation": "docs/zeta-riesz-owner-maximal.md"
+    },
+    {
+      "id": "squarefree-dual-mean",
+      "label": "Joint signed estimates \u00b7 uniform squarefree mean at every cutoff",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSquarefreeReflectionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszDualResponseReflectionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUniformDualSquareTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUniformSquarefreeMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUniformRieszMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUniformJointSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUniformLiteralPrimeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUniformSlopeTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszUniformSquarefreeScope"
+      ],
+      "documentation": "docs/zeta-riesz-squarefree-dual-mean.md"
+    },
+    {
+      "id": "uniform-period-budget",
+      "label": "Joint signed estimates \u00b7 uniform period and owner budget",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszComplementSeparationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszComplementCrossTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmallGramTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLargeGramTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUniformSeparatedMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUniformSeparatedSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUniformSeparatedSlopeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerUniformMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerUniformSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerUniformSlopeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerDecreasingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerDensityMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerReciprocalSlopeTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszUniformPeriodScope"
+      ],
+      "documentation": "docs/zeta-riesz-uniform-period-budget.md"
+    },
+    {
+      "id": "owner-count-energy",
+      "label": "Joint signed estimates \u00b7 all cofactor counts paid",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerPrimeIncidenceTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerCountMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerMeanLogTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerShellEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerPrimeMassTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerShellSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerShellLogarithmicTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerShellComplexTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszOwnerCountEnergyScope"
+      ],
+      "documentation": "docs/zeta-riesz-owner-count-energy.md"
+    },
+    {
+      "id": "quantitative-prime-periods",
+      "label": "Joint signed estimates \u00b7 numerical all-count prime periods",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeProfileErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedPrimeProfileTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszClippedPrimeCosineTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszQuantitativePrimePeriodTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszQuantitativePrimeFirstTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerReciprocalSquareTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszAllCountPrimePeriodTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRadialPrimePeriodTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszQuantitativePrimePeriodScope"
+      ],
+      "documentation": "docs/zeta-riesz-quantitative-prime-period.md"
     }
   ],
   "scopes": {
@@ -10527,6 +11043,421 @@
       "label": "Actual prime labels with positive unsaturated correction",
       "overview": true,
       "documentation": "docs/zeta-riesz-unsaturated-periods.md"
+    },
+    "RiemannGaussian.ZetaRieszGlobalCurvature.curvature_prefix_le": {
+      "label": "All counts: only cutoff crossings are charged",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-global-crossing.md"
+    },
+    "RiemannGaussian.ZetaRieszGlobalCurvature.crossing_cost_le_quadratic": {
+      "label": "Explicit quadratic half-period cost",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-global-crossing.md"
+    },
+    "RiemannGaussian.ZetaRieszGlobalCurvature.joint_affine_error_le": {
+      "label": "Signed moments retained before the global bound",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-global-crossing.md"
+    },
+    "RiemannGaussian.ZetaRieszGlobalPrimePeriod.literal_affine_bounds": {
+      "label": "Both sides of the literal allocated prime sum",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-global-crossing.md"
+    },
+    "RiemannGaussian.ZetaRieszGlobalPrimePeriod.owned_population_affine_bounds": {
+      "label": "Actual owned integer union: no duplicate labels",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-global-crossing.md"
+    },
+    "RiemannGaussian.ZetaRieszGlobalPrimePeriod.radial_affine_error_le": {
+      "label": "One error budget across all radial periods",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-global-crossing.md"
+    },
+    "RiemannGaussian.ZetaRieszNonownerAllocation.nonownerRate_bounds": {
+      "label": "Global geometric rate below 124/125",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-global-owner-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszNonownerAllocation.boundedShare_owner_split": {
+      "label": "Exact owner/nonowner allocation split",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-global-owner-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszNonownerAllocation.nonowner_sum_bound": {
+      "label": "All nonowner incidences paid at source scale",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-global-owner-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszNonownerAllocation.signed_owner_bounds": {
+      "label": "Both signed sides with one vanishing debit",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-global-owner-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszNonownerAllocation.tendsto_joint_sub_owner": {
+      "label": "The whole joint target retains its source",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-global-owner-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerVariation.owner_radial_derivative_bound": {
+      "label": "Owner derivative on every cofactor share",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-global-owner-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerVariation.owner_fibre_variation": {
+      "label": "Count-free literal prime-fibre variation",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-global-owner-allocation.md"
+    },
+    "RiemannGaussian.ZetaRieszSignedCrossing.literal_signed_affine_bounds": {
+      "label": "Only adverse crossings debit each signed side",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-signed-crossing.md"
+    },
+    "RiemannGaussian.ZetaRieszSignedCrossing.radial_signed_affine_bounds": {
+      "label": "All counts and radial selections keep crossing signs",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-signed-crossing.md"
+    },
+    "RiemannGaussian.ZetaRieszSignedCrossing.triple_crossingAtom_lower": {
+      "label": "Actual negative-phase crossing has positive correction",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-signed-crossing.md"
+    },
+    "RiemannGaussian.ZetaRieszCrossingGrowth.boxCrossing_eq_owned": {
+      "label": "Exact unique-owner integer population",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-signed-crossing.md"
+    },
+    "RiemannGaussian.ZetaRieszCrossingGrowth.tuple_mem_core": {
+      "label": "Every original core mask checked",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-signed-crossing.md"
+    },
+    "RiemannGaussian.ZetaRieszCrossingGrowth.eventually_period_crossing_growth": {
+      "label": "Literal absolute crossing cost has rate 2u",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-signed-crossing.md"
+    },
+    "RiemannGaussian.ZetaRieszCrossingGrowth.not_eventually_period_cost_bounded": {
+      "label": "No separate constant crossing budget",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-signed-crossing.md"
+    },
+    "RiemannGaussian.ZetaRieszSharpSieve.exists_sharp_quadratic_bound": {
+      "label": "Uniform sharp Mobius quadratic",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cutoff-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszSharpSieve.exists_sharp_mean_bound": {
+      "label": "Sharp cutoff finite mean",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cutoff-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszSharpSieve.exists_sharp_interval_bound": {
+      "label": "Sharp cutoff on any integer interval",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cutoff-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszCutoffMean.monotone_weight_mean_le": {
+      "label": "Exact positive prefix mixing",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cutoff-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszCutoffMean.exists_riesz_difference_interval_bound": {
+      "label": "Literal Riesz cutoff-change mean",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cutoff-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszCutoffMean.exists_masked_difference_bounds": {
+      "label": "Both signed sides with literal weights",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cutoff-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszCrossCutoff.exists_cross_quadratic_decay": {
+      "label": "Signed cross-cutoff decay",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cross-cutoff.md"
+    },
+    "RiemannGaussian.ZetaRieszCrossCutoff.exists_symmetric_cross_bound": {
+      "label": "Symmetric separation bound",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cross-cutoff.md"
+    },
+    "RiemannGaussian.ZetaRieszCrossCutoff.exists_separated_quadratic_bound": {
+      "label": "Whole-family Schur bound",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cross-cutoff.md"
+    },
+    "RiemannGaussian.ZetaRieszCrossCutoff.exists_separated_mean_bound": {
+      "label": "Literal family mean over any interval",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cross-cutoff.md"
+    },
+    "RiemannGaussian.ZetaRieszCrossCutoff.exists_joint_signed_bounds": {
+      "label": "Both signed sides with common weights",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cross-cutoff.md"
+    },
+    "RiemannGaussian.ZetaRieszCrossCutoff.cutoffSlope_eq_prefix": {
+      "label": "Strict endpoint bridge to cutoffSlope",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cross-cutoff.md"
+    },
+    "RiemannGaussian.ZetaRieszCrossCutoff.exists_joint_slope_bounds": {
+      "label": "Joint retained-slope bound",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cross-cutoff.md"
+    },
+    "RiemannGaussian.ZetaRieszCrossCutoff.exists_separated_cancellation_mean_bound": {
+      "label": "Family mean with signed boundary cancellation",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cross-cutoff.md"
+    },
+    "RiemannGaussian.ZetaRieszCrossCutoff.exists_joint_cancellation_bounds": {
+      "label": "Both signed sides with the sharper finite error",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cross-cutoff.md"
+    },
+    "RiemannGaussian.ZetaRieszCrossCutoff.exists_joint_cancellation_slope_bounds": {
+      "label": "Retained slopes with signed boundary cancellation",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-cross-cutoff.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerMaximal.unpaidOrders_eq": {
+      "label": "Exact contiguous unpaid orders",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-maximal.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerMaximal.ownerWeight_variation_le_two": {
+      "label": "Owner variation at most two",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-maximal.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerMaximal.owner_weighted_partial_bound": {
+      "label": "Owner preserves partial-sum cancellation",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-maximal.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerMaximal.owner_interval_sq_le_dyadicCost": {
+      "label": "Moving intervals with binary-block cost",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-maximal.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerMaximal.exists_owner_interval_mean_bound": {
+      "label": "Joint arithmetic mean with varying owner",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-maximal.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerMaximal.dyadic_floor_cost_le": {
+      "label": "Counting errors cost only binary depth",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-maximal.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerMaximal.exists_owner_interval_signed_bounds": {
+      "label": "Both signed bounds with moving intervals",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-maximal.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerMaximal.ownerWeight_eq_fibre": {
+      "label": "Exact unique-largest-prime allocation",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-maximal.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerMaximal.exists_owner_slope_bounds": {
+      "label": "Literal retained slopes with varying allocation",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-maximal.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerMaximal.literal_owner_prime_partial_bound": {
+      "label": "Literal prime-fibre partial-sum bridge",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-maximal.md"
+    },
+    "RiemannGaussian.ZetaRieszSquarefreeDualMean.sharp_reflection": {
+      "label": "Exact strict squarefree reflection",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-squarefree-dual-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszSquarefreeDualMean.response_reflection": {
+      "label": "Exact cofactor endpoint reflection",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-squarefree-dual-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_dual_square_mean_bound": {
+      "label": "One counting error per complementary divisor pair",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-squarefree-dual-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_uniform_linear_mean_bound": {
+      "label": "Linear mean at every cutoff",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-squarefree-dual-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_riesz_difference_mean_bound": {
+      "label": "All-cutoff joint Riesz mean",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-squarefree-dual-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_joint_riesz_bounds": {
+      "label": "Both signed bounds with linear population budget",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-squarefree-dual-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_literal_prime_fibre_bounds": {
+      "label": "Literal prime fibre with linear mean budget",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-squarefree-dual-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_slope_signed_bounds": {
+      "label": "Retained strict slope with linear mean budget",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-squarefree-dual-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.quotient_log_separation": {
+      "label": "Rounding preserves complementary separation",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-uniform-period-budget.md"
+    },
+    "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_reflected_cross_bound": {
+      "label": "Moving complementary cross quadratic",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-uniform-period-budget.md"
+    },
+    "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_small_gram_bound": {
+      "label": "Direct finite Gram with counting errors paid",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-uniform-period-budget.md"
+    },
+    "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_large_gram_bound": {
+      "label": "Complementary finite Gram with counting errors paid",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-uniform-period-budget.md"
+    },
+    "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_separated_mean_bound": {
+      "label": "One linear mean for the whole signed family",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-uniform-period-budget.md"
+    },
+    "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_joint_signed_bounds": {
+      "label": "Both signed bounds without a period-count price",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-uniform-period-budget.md"
+    },
+    "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_joint_slope_bounds": {
+      "label": "Original strict slopes with uniform family budget",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-uniform-period-budget.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerUniformMean.exists_owner_interval_mean_bound": {
+      "label": "Varying owner with every block error paid",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-uniform-period-budget.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerUniformMean.exists_owner_interval_signed_bounds": {
+      "label": "Both signed owner bounds with moving endpoints",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-uniform-period-budget.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerUniformMean.exists_owner_slope_bounds": {
+      "label": "Literal owner slopes with linear joint budget",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-uniform-period-budget.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerDensity.decreasing_interval_bound": {
+      "label": "Decreasing density retains the original signed prefixes",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-uniform-period-budget.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerDensity.exists_density_mean_bound": {
+      "label": "Cofactor-dependent density with no extra maximal price",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-uniform-period-budget.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerDensity.exists_reciprocal_slope_bounds": {
+      "label": "Reciprocal prime logs with separate cofactor costs",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-uniform-period-budget.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerCountEnergy.prime_incidence_second_moment": {
+      "label": "All ordered prime incidences counted together",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-count-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerCountEnergy.prime_count_second_moment": {
+      "label": "One second moment for every prime count",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-count-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerCountEnergy.owner_mean_log_le": {
+      "label": "Ownership pays the mean prime logarithm",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-count-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerCountEnergy.shell_energy_le": {
+      "label": "Reciprocal cofactor energy paid on the entire shell",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-count-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerCountEnergy.primeHarmonic_le_loglog": {
+      "label": "Literal prime mass has a logarithmic bound",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-count-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerCountEnergy.exists_owner_shell_bounds": {
+      "label": "Both signed owner bounds with cofactor energy paid",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-count-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerCountEnergy.exists_owner_shell_loglog_bounds": {
+      "label": "Explicit logarithmic all-count budget",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-count-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerCountEnergy.exists_complex_owner_shell_bounds": {
+      "label": "Full complex phases with the paid cofactor budget",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-owner-count-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.prime_error_bound": {
+      "label": "Explicit finite Chebyshev error",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quantitative-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.signed_profile_bound": {
+      "label": "Correlated signed profile with numerical discrepancy",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quantitative-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.cosine_interval_error": {
+      "label": "Clipped intervals keep their signed endpoint",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quantitative-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.cosine_period_bound": {
+      "label": "Every actual prime period costs at most 4/a squared",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quantitative-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.cosine_first_period_bound": {
+      "label": "First signed prime moment costs at most 1/a squared",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quantitative-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.owner_reciprocal_square_sum": {
+      "label": "Every owner-log reciprocal-square cost counted together",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quantitative-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.all_count_period_bound": {
+      "label": "Actual prime cancellation across every cofactor count",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quantitative-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.radial_all_count_period_bound": {
+      "label": "Joint finite radial family with actual amplitude budgets",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-quantitative-prime-period.md"
     }
   },
   "moduleFamilies": {
@@ -10575,6 +11506,25 @@
     "ZetaRieszSixSmallPrimes": "arithmetic",
     "ZetaRieszCofactorMass": "arithmetic",
     "ZetaRieszFixedCountPeriod": "arithmetic",
-    "ZetaRieszFixedCountBand": "arithmetic"
+    "ZetaRieszFixedCountBand": "arithmetic",
+    "ZetaRieszGlobalCurvature": "arithmetic",
+    "ZetaRieszGlobalPrimePeriod": "arithmetic",
+    "ZetaRieszNonownerAllocation": "arithmetic",
+    "ZetaRieszOwnerVariation": "arithmetic",
+    "ZetaRieszSignedCrossing": "arithmetic",
+    "ZetaRieszCrossingGrowth": "arithmetic",
+    "ZetaRieszSieveQuadratic": "arithmetic",
+    "ZetaRieszSieveMean": "arithmetic",
+    "ZetaRieszSharpSieve": "arithmetic",
+    "ZetaRieszCutoffMean": "arithmetic",
+    "ZetaRieszCrossCutoff": "arithmetic",
+    "ZetaRieszOwnerMaximal": "arithmetic",
+    "ZetaRieszSquarefreeDualMean": "arithmetic",
+    "ZetaRieszSquarefreeUniformMean": "arithmetic",
+    "ZetaRieszSquarefreeSeparatedMean": "arithmetic",
+    "ZetaRieszOwnerUniformMean": "arithmetic",
+    "ZetaRieszOwnerDensity": "arithmetic",
+    "ZetaRieszOwnerCountEnergy": "arithmetic",
+    "ZetaRieszQuantitativePrimePeriod": "arithmetic"
   }
 }

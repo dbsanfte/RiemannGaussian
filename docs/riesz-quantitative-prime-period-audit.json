@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "status": "Lean and axiom gates passed; both whole thresholds remain open",
+  "scope": "Actual ordinary-prime cosine periods have cost 4/a^2 for a>=5000 and |y|>=54; the first signed moment at a cosine extremum costs 1/a^2. Both constants are numerical and all prime-error premises are discharged. A differentiable signed profile retains its common smooth integral with explicit inverse-square prime-log discrepancy; clipped intervals retain the endpoint sine difference. Squarefree ownership and literal prime-count second moments give the joint all-count budget 8*W*(H_(2M)^2+H_(2M))/log(M)^2. Arbitrary finite radial aggregation uses sum_j W_j, with no maximum prime count. The terminal cofactor weights are constant within each prime period. Original factorial/allocation variation, signed Riesz cutoff corrections, and cofactor-dependent holes from paid sectors are NOT automatically covered; their combined source-normalized budget remains open. Do not append paid credits to a full-period bound without paying the deleted holes. The finite diagnostic is below the rigorous logarithmic cutoff and is not a certificate. No zero hypothesis, new zero exclusion, or source-scale PNT transport is used. Both whole -79/1000 floor and 3/2 ceiling remain open.",
+  "terminalTheorems": {
+    "rieszPrimeProfileErrorTheorem": "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.prime_error_bound",
+    "rieszSignedPrimeProfileTheorem": "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.signed_profile_bound",
+    "rieszClippedPrimeCosineTheorem": "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.cosine_interval_error",
+    "rieszQuantitativePrimePeriodTheorem": "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.cosine_period_bound",
+    "rieszQuantitativePrimeFirstTheorem": "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.cosine_first_period_bound",
+    "rieszOwnerReciprocalSquareTheorem": "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.owner_reciprocal_square_sum",
+    "rieszAllCountPrimePeriodTheorem": "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.all_count_period_bound",
+    "rieszRadialPrimePeriodTheorem": "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.radial_all_count_period_bound"
+  },
+  "exactBudgets": {
+    "zerothMoment": "4/a^2",
+    "firstMoment": "1/a^2",
+    "profileError": "(W*(b-a)^2+(41/100)*(2W+(V+2W)*(b-a)))/a^2",
+    "cofactorSquareSum": "2W*(H_(2M)^2+H_(2M))/log(M)^2",
+    "allCountPeriod": "8W*(H_(2M)^2+H_(2M))/log(M)^2",
+    "radialAggregation": "replace W by sum_j W_j"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszQuantitativePrimePeriod.lean": "4ec0806b0d92961a15e4588767de5909c21b6f33edfdd83e80c3237b088824af",
+    "RiemannGaussian/RosserSchoenfeldLargeChebyshev.lean": "055c72c8e722c0256593ebad77729e3d17dd182fa2caa48c91b11b2539b79232",
+    "RiemannGaussian/ZetaRieszOwnerCountEnergy.lean": "30ecdcb92ee42686403506a79aec9924aa1b7c22d06dd3b52f1adde51da2a65b",
+    "scripts/probe_riesz_prime_period_cost.py": "247b4dda4eeaa3bc73561b58a9de7795f4e8b5cee9f8bd96d333c35caccb4d5d"
+  },
+  "probe": {
+    "scope": "Optional finite-prime diagnostic; never an analytic certificate.\n\nThese accessible primes are BELOW the rigorous log-prime cutoff 5000.\nThe experiment checks signed moments and endpoint effects, not the\nlarge-range theorem, source normalization, or the full Riesz carrier.",
+    "summary": {
+      "maxAbsScaledZeroth": 0.04089574361306988,
+      "maxAbsScaledFirst": 0.0008872848890319907,
+      "maxAbsScaledClippedDiscrepancy": 0.03260270195823876
+    },
+    "shells": [
+      {
+        "M": 64,
+        "height": 54,
+        "squarefreeCofactors": 39,
+        "signedJointSum": -2.033243284388926e-06,
+        "sumAbsoluteAfterPrimeCancellation": 1.1673202012830529e-05,
+        "inverseSquareBudgetDiagnostic": 0.009708405039420021,
+        "allCountFormulaDiagnostic": 2.4553728089844262
+      },
+      {
+        "M": 64,
+        "height": 128,
+        "squarefreeCofactors": 39,
+        "signedJointSum": -3.119986344622637e-07,
+        "sumAbsoluteAfterPrimeCancellation": 6.977713883679862e-06,
+        "inverseSquareBudgetDiagnostic": 0.009613593923682478,
+        "allCountFormulaDiagnostic": 2.4553728089844262
+      },
+      {
+        "M": 256,
+        "height": 54,
+        "squarefreeCofactors": 157,
+        "signedJointSum": -1.2336344482203054e-06,
+        "sumAbsoluteAfterPrimeCancellation": 1.1617774350059332e-05,
+        "inverseSquareBudgetDiagnostic": 0.009571639211222071,
+        "allCountFormulaDiagnostic": 1.694610088512792
+      },
+      {
+        "M": 256,
+        "height": 128,
+        "squarefreeCofactors": 157,
+        "signedJointSum": -2.0231866918536225e-07,
+        "sumAbsoluteAfterPrimeCancellation": 8.286671185935847e-06,
+        "inverseSquareBudgetDiagnostic": 0.009509112839662416,
+        "allCountFormulaDiagnostic": 1.694610088512792
+      },
+      {
+        "M": 1024,
+        "height": 54,
+        "squarefreeCofactors": 621,
+        "signedJointSum": -2.0206749633979905e-07,
+        "sumAbsoluteAfterPrimeCancellation": 1.1058186915239107e-05,
+        "inverseSquareBudgetDiagnostic": 0.009489485842768788,
+        "allCountFormulaDiagnostic": 1.2595377038159314
+      },
+      {
+        "M": 1024,
+        "height": 128,
+        "squarefreeCofactors": 621,
+        "signedJointSum": -4.2800113874128853e-07,
+        "sumAbsoluteAfterPrimeCancellation": 8.227346156629195e-06,
+        "inverseSquareBudgetDiagnostic": 0.009458448624579147,
+        "allCountFormulaDiagnostic": 1.2595377038159314
+      }
+    ],
+    "rowCount": 48
+  },
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "remainingQuantitativeWork": [
+    "Original prime-dependent factorial and allocation weights",
+    "Both signed Riesz cutoffs and matching crossing corrections",
+    "Clipped endpoint contributions and disjoint paid-sector holes",
+    "Combined source-normalized cost and both whole thresholds"
+  ],
+  "rootAudit": {
+    "declarations": 33236,
+    "generatedDeclarations": 23324,
+    "linters": 14,
+    "errors": 0,
+    "terminalAxioms": {
+      "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.prime_error_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.signed_profile_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.cosine_interval_error": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.cosine_period_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.cosine_first_period_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.owner_reciprocal_square_sum": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.all_count_period_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszQuantitativePrimePeriod.radial_all_count_period_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  }
+}

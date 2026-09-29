@@ -4795,7 +4795,26 @@
     "ZetaRieszSixSmallPrimes": "arithmetic",
     "ZetaRieszCofactorMass": "arithmetic",
     "ZetaRieszFixedCountPeriod": "arithmetic",
-    "ZetaRieszFixedCountBand": "arithmetic"
+    "ZetaRieszFixedCountBand": "arithmetic",
+    "ZetaRieszGlobalCurvature": "arithmetic",
+    "ZetaRieszGlobalPrimePeriod": "arithmetic",
+    "ZetaRieszNonownerAllocation": "arithmetic",
+    "ZetaRieszOwnerVariation": "arithmetic",
+    "ZetaRieszSignedCrossing": "arithmetic",
+    "ZetaRieszCrossingGrowth": "arithmetic",
+    "ZetaRieszSieveQuadratic": "arithmetic",
+    "ZetaRieszSieveMean": "arithmetic",
+    "ZetaRieszSharpSieve": "arithmetic",
+    "ZetaRieszCutoffMean": "arithmetic",
+    "ZetaRieszCrossCutoff": "arithmetic",
+    "ZetaRieszOwnerMaximal": "arithmetic",
+    "ZetaRieszSquarefreeDualMean": "arithmetic",
+    "ZetaRieszSquarefreeUniformMean": "arithmetic",
+    "ZetaRieszSquarefreeSeparatedMean": "arithmetic",
+    "ZetaRieszOwnerUniformMean": "arithmetic",
+    "ZetaRieszOwnerDensity": "arithmetic",
+    "ZetaRieszOwnerCountEnergy": "arithmetic",
+    "ZetaRieszQuantitativePrimePeriod": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

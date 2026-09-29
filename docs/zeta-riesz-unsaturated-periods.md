@@ -1,5 +1,9 @@
 # Signed prime periods across the saturation boundary
 
+This records the earlier 70-percent extension. The later
+[owner-geometry theorem](zeta-riesz-owner-geometry.md) removes that artificial
+cap for the selected counts while retaining all results below.
+
 Both whole `J+C` comparisons now include a wider part of the selected
 7–55-prime sectors. The cofactor ceiling increases from `133v/200 = 0.665v`
 to `7v/10 = 0.7v`. The complete prime period, unique-largest-prime condition,

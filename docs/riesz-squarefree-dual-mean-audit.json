@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "status": "passed full warning-as-error build, root lint and transitive axiom audit; both whole thresholds remain open",
+  "scope": "Exact strict squarefree reflection keeps floor((n-1)/R). Summing the complementary divisor pairs BEFORE rounding pays one interval error per pair, improving the reflected cubic error to floor(X/R)^2. Combining it with the direct R^2 error proves a uniform linear second moment E*X for EVERY positive cutoff and arbitrary squarefree nonunit selection in (1,X]. E is proved but unevaluated. No middle-cutoff range remains unpaid in this mean theorem. The actual two-cutoff Riesz difference has second moment at most (B-A)^2*E*X. Both signed bounds retain arbitrary real correlated weights and their explicit weight energy. Common endpoints A,B are fixed across labels. Exact composite reflection also fixes the literal prime-fibre endpoints L-log(p),L for each marked prime. The literal theorem retains residualCoefficient, factorial kernel, phase and allocation, all cofactor counts and arbitrary selected masks, with no raw-prime-bound premise. The weight energy and the combined marked-prime/period cost remain unpaid at source scale. No zero or simplicity hypothesis; preserve disjoint paid sectors. Both whole -79/1000 floor and 3/2 ceiling remain open; no zero exclusion or RH claim.",
+  "terminalTheorems": {
+    "rieszSquarefreeReflectionTheorem": "RiemannGaussian.ZetaRieszSquarefreeDualMean.sharp_reflection",
+    "rieszDualResponseReflectionTheorem": "RiemannGaussian.ZetaRieszSquarefreeDualMean.response_reflection",
+    "rieszUniformDualSquareTheorem": "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_dual_square_mean_bound",
+    "rieszUniformSquarefreeMeanTheorem": "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_uniform_linear_mean_bound",
+    "rieszUniformRieszMeanTheorem": "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_riesz_difference_mean_bound",
+    "rieszUniformJointSignedTheorem": "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_joint_riesz_bounds",
+    "rieszUniformLiteralPrimeTheorem": "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_literal_prime_fibre_bounds",
+    "rieszUniformSlopeTheorem": "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_slope_signed_bounds"
+  },
+  "exactBudgets": {
+    "reflection": "M_R(n)=-mu(n)*M_((n-1)/R)(n), squarefree n>1, R>0",
+    "dualMean": "E*X+floor(X/R)^2",
+    "uniformMean": "C*X for every positive cutoff",
+    "twoCutoffMean": "(B-A)^2*C*X",
+    "literalFibreSquaredBudget": "sum_a (signedPrimeWeight(a,p)/a)^2 * log(p)^2 * C*X"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszSquarefreeDualMean.lean": "867ce8a8be758fb9c18ab7221a11353295040c1b60b6a5a6e6ec915b39f33ee2",
+    "RiemannGaussian/ZetaRieszSquarefreeUniformMean.lean": "551cc20f70806702b98192f596c8810f5d31229639bc721c38c47db50fa18851",
+    "RiemannGaussian/ZetaRieszSharpSieve.lean": "38284d03d20aa9651cf84e229ff3ab5c1e15b2473cb81cc724fccb1637f8e808",
+    "RiemannGaussian/ZetaRieszCutoffMean.lean": "7321f27445abca71c88fd89721be4daba83f9ad60f1f6130b2dc7503dd9749db",
+    "RiemannGaussian/ZetaRieszGlobalPrimePeriod.lean": "a1cf4bd5ef02f36534f4cd010e6ae22ff7793b922c19d894440879256254389a",
+    "scripts/probe_riesz_squarefree_dual.py": "641a57ee02d00456a8425c98ad843b487a9f8c15f9806aeb7d7cd895f18ce71a"
+  },
+  "integerProbe": {
+    "scope": "Optional exact-integer squarefree sharp-cutoff diagnostic.\n\nKeeps the full signed divisor prefix and its exact reflected endpoint.\nInteger second moments and reflection checks are exact; reported ratios\nuse floating arithmetic. This is not a source-scale carrier certificate\nand is not run by ordinary CI.",
+    "rows": [
+      {
+        "population": 200000,
+        "cutoff": 200,
+        "squarefreeNonunitSecondMoment": 60844,
+        "secondMomentOverPopulation": 0.30422,
+        "originalFloorErrorOverPopulation": 0.2,
+        "dualBlockFloorErrorOverPopulation": 1669.1675,
+        "dualCubicErrorOverPopulation": 5000.0,
+        "dualPairErrorOverPopulation": 5.0,
+        "minimumSquareErrorOverPopulation": 0.2,
+        "dualUniformRange": false,
+        "exactReflectionVerified": true
+      },
+      {
+        "population": 200000,
+        "cutoff": 500,
+        "squarefreeNonunitSecondMoment": 60192,
+        "secondMomentOverPopulation": 0.30096,
+        "originalFloorErrorOverPopulation": 1.25,
+        "dualBlockFloorErrorOverPopulation": 107.067,
+        "dualCubicErrorOverPopulation": 320.0,
+        "dualPairErrorOverPopulation": 0.8,
+        "minimumSquareErrorOverPopulation": 0.8,
+        "dualUniformRange": false,
+        "exactReflectionVerified": true
+      },
+      {
+        "population": 200000,
+        "cutoff": 2000,
+        "squarefreeNonunitSecondMoment": 61043,
+        "secondMomentOverPopulation": 0.305215,
+        "originalFloorErrorOverPopulation": 20.0,
+        "dualBlockFloorErrorOverPopulation": 1.69175,
+        "dualCubicErrorOverPopulation": 5.0,
+        "dualPairErrorOverPopulation": 0.05,
+        "minimumSquareErrorOverPopulation": 0.05,
+        "dualUniformRange": false,
+        "exactReflectionVerified": true
+      },
+      {
+        "population": 200000,
+        "cutoff": 5000,
+        "squarefreeNonunitSecondMoment": 62567,
+        "secondMomentOverPopulation": 0.312835,
+        "originalFloorErrorOverPopulation": 125.0,
+        "dualBlockFloorErrorOverPopulation": 0.1107,
+        "dualCubicErrorOverPopulation": 0.32,
+        "dualPairErrorOverPopulation": 0.008,
+        "minimumSquareErrorOverPopulation": 0.008,
+        "dualUniformRange": true,
+        "exactReflectionVerified": true
+      },
+      {
+        "population": 200000,
+        "cutoff": 10000,
+        "squarefreeNonunitSecondMoment": 64488,
+        "secondMomentOverPopulation": 0.32244,
+        "originalFloorErrorOverPopulation": 500.0,
+        "dualBlockFloorErrorOverPopulation": 0.01435,
+        "dualCubicErrorOverPopulation": 0.04,
+        "dualPairErrorOverPopulation": 0.002,
+        "minimumSquareErrorOverPopulation": 0.002,
+        "dualUniformRange": true,
+        "exactReflectionVerified": true
+      },
+      {
+        "population": 200000,
+        "cutoff": 100000,
+        "squarefreeNonunitSecondMoment": 60787,
+        "secondMomentOverPopulation": 0.303935,
+        "originalFloorErrorOverPopulation": 50000.0,
+        "dualBlockFloorErrorOverPopulation": 2.5e-05,
+        "dualCubicErrorOverPopulation": 4e-05,
+        "dualPairErrorOverPopulation": 2e-05,
+        "minimumSquareErrorOverPopulation": 2e-05,
+        "dualUniformRange": true,
+        "exactReflectionVerified": true
+      }
+    ]
+  },
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "openPremises": [],
+  "remainingQuantitativeWork": [
+    "The correlated prime-weight energy and combined marked-prime/period cost at source scale",
+    "Joint signed prime moments and cutoff correction, with paid-sector disjointness retained",
+    "Quantitative constants and hypotheses needed for the whole cofinal floor and ceiling"
+  ],
+  "rootAudit": {
+    "lint": "-- Found 0 errors in 33185 declarations (plus 23217 automatically generated ones) in RiemannGaussian with 14 linters",
+    "axioms": {
+      "RiemannGaussian.ZetaRieszSquarefreeDualMean.sharp_reflection": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSquarefreeDualMean.response_reflection": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_dual_square_mean_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_uniform_linear_mean_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_riesz_difference_mean_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_joint_riesz_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_literal_prime_fibre_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSquarefreeUniformMean.exists_slope_signed_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  }
+}

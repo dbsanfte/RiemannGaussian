@@ -13,9 +13,9 @@ unique largest prime `p` over a complete phase period. The selected cofactors
 satisfy
 
 \[
- \frac{203}{500}v<\log a\le\frac7{10}v,
+ \frac{203}{500}v<\log a\le\frac{197}{200}v,
  \qquad
- \log q\le\frac{199}{200}v-\log a\quad(q\mid a).
+ \log q\lev-\frac1{16}-\log a\quad(q\mid a).
 \]
 
 The prime interval is
@@ -23,6 +23,10 @@ The prime interval is
 \[
  v-\pi/|y|-\log a<\log p\le v+\pi/|y|-\log a.
 \]
+
+For `k <= 54`, the upper cofactor cap is redundant: ownership alone gives
+`log(a) <= 54v/55`. The [owner-geometry extension](zeta-riesz-owner-geometry.md)
+therefore covers every cofactor satisfying the remaining conditions.
 
 These conditions leave every selected prime below the separately paid
 owner band. They imply unique largest-prime ownership; no pair incidences
@@ -49,7 +53,7 @@ not a fixed-sign chamber. Three estimates extend automatically with `k`:
    `sum_a log(minFac a)/a <= C_k v` and
    `sum_a 1/a <= C'_k sqrt(v)` for literal cofactor sets.
 3. The exact factorial allocation changes by at most
-   `4(k+1)*sqrt(N+1)/v` times the change in `log(pa)` along the fibre.
+   `20(k+1)*sqrt(N+1)/v` times the change in `log(pa)` along the fibre.
 
 The full prime phase is summed before estimating the coefficient's
 variation. At every fixed count and fixed height `|y| >= 54`, for every

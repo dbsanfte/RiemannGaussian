@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "status": "passed local Lean, full build, root lint and axiom audit; whole floor and ceiling remain open",
+  "scope": "Global independent source-scale payment for every nonowner allocation; count-free variation for the retained owner. The whole numerical floor and ceiling remain open.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszNonownerAllocation.lean": "4b34638700836fb577957eadbfe1a473c4f8a0e8d475aa7ec140ac75ba1bf5cb",
+    "RiemannGaussian/ZetaRieszOwnerVariation.lean": "0ff763b57242aacaff33e0ef9a7d7ca78a6c5c568189c7fe3f7239699f0dbfa2",
+    "scripts/probe_riesz_owner_allocation.py": "5bdffa9495ffc5b8335bc1e9c6869b6a9d4f883420293986487efc21b8bc78c4",
+    "scripts/probe_riesz_global_curvature.py": "986eb8148b34c7b4beaca1c626e860abd30e717747bec4e473e0517ce93c57a6"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszNonownerAllocation.nonownerRate_bounds",
+    "RiemannGaussian.ZetaRieszNonownerAllocation.nonowner_sum_bound",
+    "RiemannGaussian.ZetaRieszNonownerAllocation.signed_owner_bounds",
+    "RiemannGaussian.ZetaRieszNonownerAllocation.tendsto_joint_sub_owner",
+    "RiemannGaussian.ZetaRieszOwnerVariation.owner_radial_derivative_bound",
+    "RiemannGaussian.ZetaRieszOwnerVariation.owner_fibre_variation"
+  ],
+  "numericalProbe": {
+    "scope": "Optional floating-point diagnostic for the global owner allocation estimate.\n\nThis is not a certificate. The binomial probe uses the literal unpaidOrders.\n--literal also enumerates small finite signed prime populations using the\nexisting radial probe, with the exact moving length, allocation and phase.\nThose populations have extra physical restrictions and are not the full carrier.\n",
+    "allocation": [
+      {
+        "N": 32,
+        "unpaid_first": 8,
+        "unpaid_last": 13,
+        "balanced_allocation_at_half": 0.14744382072240114,
+        "proved_balanced_envelope_float": 0.6065306597126334,
+        "max_abs_T_derivative_over_sqrt_order": 0.3215282225669376,
+        "maximizing_share_in_grid": 0.4335,
+        "proved_uniform_derivative_constant": 6,
+        "all_count_window_prefactor_times_nonowner_rate": 33.3441117092337
+      },
+      {
+        "N": 64,
+        "unpaid_first": 14,
+        "unpaid_last": 26,
+        "balanced_allocation_at_half": 0.06801561303313942,
+        "proved_balanced_envelope_float": 0.36787944117144233,
+        "max_abs_T_derivative_over_sqrt_order": 0.33431928287990853,
+        "maximizing_share_in_grid": 0.41550000000000004,
+        "proved_uniform_derivative_constant": 6,
+        "all_count_window_prefactor_times_nonowner_rate": 49.77199453792055
+      },
+      {
+        "N": 128,
+        "unpaid_first": 27,
+        "unpaid_last": 52,
+        "balanced_allocation_at_half": 0.01709336417144154,
+        "proved_balanced_envelope_float": 0.1353352832366127,
+        "max_abs_T_derivative_over_sqrt_order": 0.3324744173233025,
+        "maximizing_share_in_grid": 0.41100000000000003,
+        "proved_uniform_derivative_constant": 6,
+        "all_count_window_prefactor_times_nonowner_rate": 56.72759215322135
+      },
+      {
+        "N": 256,
+        "unpaid_first": 53,
+        "unpaid_last": 104,
+        "balanced_allocation_at_half": 0.0013411144108961964,
+        "proved_balanced_envelope_float": 0.01831563888873418,
+        "max_abs_T_derivative_over_sqrt_order": 0.3312379790018049,
+        "maximizing_share_in_grid": 0.40850000000000003,
+        "proved_uniform_derivative_constant": 6,
+        "all_count_window_prefactor_times_nonowner_rate": 37.27379961493018
+      },
+      {
+        "N": 640,
+        "unpaid_first": 130,
+        "unpaid_last": 260,
+        "balanced_allocation_at_half": 1.001546876799446e-06,
+        "proved_balanced_envelope_float": 4.5399929762484854e-05,
+        "max_abs_T_derivative_over_sqrt_order": 0.3304784585142108,
+        "maximizing_share_in_grid": 0.40700000000000003,
+        "proved_uniform_derivative_constant": 6,
+        "all_count_window_prefactor_times_nonowner_rate": 3.335233785838782
+      },
+      {
+        "N": 1536,
+        "unpaid_first": 309,
+        "unpaid_last": 624,
+        "balanced_allocation_at_half": 8.696428084069156e-14,
+        "proved_balanced_envelope_float": 3.775134544279098e-11,
+        "max_abs_T_derivative_over_sqrt_order": 0.33018163336935036,
+        "maximizing_share_in_grid": 0.40650000000000003,
+        "proved_uniform_derivative_constant": 6,
+        "all_count_window_prefactor_times_nonowner_rate": 0.0033947159513391645
+      },
+      {
+        "N": 4096,
+        "unpaid_first": 821,
+        "unpaid_last": 1664,
+        "balanced_allocation_at_half": 1.1791391279431955e-33,
+        "proved_balanced_envelope_float": 1.603810890548638e-28,
+        "max_abs_T_derivative_over_sqrt_order": 0.33004024384026126,
+        "maximizing_share_in_grid": 0.40650000000000003,
+        "proved_uniform_derivative_constant": 6,
+        "all_count_window_prefactor_times_nonowner_rate": 2.0985223509663004e-12
+      },
+      {
+        "N": 8192,
+        "unpaid_first": 1640,
+        "unpaid_last": 3328,
+        "balanced_allocation_at_half": 2.9338330105594764e-65,
+        "proved_balanced_envelope_float": 2.572209372642415e-56,
+        "max_abs_T_derivative_over_sqrt_order": 0.3298556013680892,
+        "maximizing_share_in_grid": 0.40650000000000003,
+        "proved_uniform_derivative_constant": 6,
+        "all_count_window_prefactor_times_nonowner_rate": 1.612127879895845e-27
+      }
+    ],
+    "literal": [
+      {
+        "N": 6,
+        "labels": 36,
+        "cofactors": 18,
+        "counts": {
+          "3": 36
+        },
+        "moving_length": 4.795790545596741,
+        "center": 12.042771838760872,
+        "signed_literal_sum": -0.00023559496518516616,
+        "retained_affine_moments": -0.00023559496518516616,
+        "signed_crossing_error": 0.0,
+        "constant_moment": -0.00021235746787498971,
+        "first_moment": -2.3237497310176453e-05,
+        "literal_profile_cost": 0.0,
+        "signed_by_count": {
+          "3": {
+            "signed": -0.00023559496518516616,
+            "constant": -0.00021235746787498971,
+            "first": -2.3237497310176453e-05
+          }
+        },
+        "signed_owner_only_sum": -0.00023559496518516616,
+        "signed_nonowner_difference": 0.0,
+        "source_normalized_nonowner_difference": 0.0,
+        "source_normalized_nonowner_absolute_mass": 0.0,
+        "max_nonowner_share_over_proved_count_bound": 0.0,
+        "proved_error_bound_evaluated_in_float": 0.058953539989020774,
+        "source_normalized_error": 0.0,
+        "reflection_identity_roundoff": 1.7763568394002505e-15
+      },
+      {
+        "N": 8,
+        "labels": 5539,
+        "cofactors": 702,
+        "counts": {
+          "3": 5539
+        },
+        "moving_length": 6.802394763324311,
+        "center": 16.115206760080977,
+        "signed_literal_sum": -1.7751855394689847e-05,
+        "retained_affine_moments": -2.4835155194732952e-05,
+        "signed_crossing_error": 7.083299800043104e-06,
+        "constant_moment": -1.189966605862918e-05,
+        "first_moment": -1.2935489136103907e-05,
+        "literal_profile_cost": 2.7869081241806567e-05,
+        "signed_by_count": {
+          "3": {
+            "signed": -1.7751855394689847e-05,
+            "constant": -1.189966605862918e-05,
+            "first": -1.2935489136103907e-05
+          }
+        },
+        "signed_owner_only_sum": -1.6858306505246416e-05,
+        "signed_nonowner_difference": -8.935488894434317e-07,
+        "source_normalized_nonowner_difference": -1.74678399452461e-09,
+        "source_normalized_nonowner_absolute_mass": 7.4446941085096515e-06,
+        "max_nonowner_share_over_proved_count_bound": 0.03792740744151852,
+        "proved_error_bound_evaluated_in_float": 0.1217161698477903,
+        "source_normalized_error": 1.38470260164964e-08,
+        "reflection_identity_roundoff": 4.440892098500626e-15
+      },
+      {
+        "N": 10,
+        "labels": 493241,
+        "cofactors": 13585,
+        "counts": {
+          "4": 2503,
+          "3": 490738
+        },
+        "moving_length": 9.086589564540008,
+        "center": 20.07128639793479,
+        "signed_literal_sum": 6.286289546210508e-05,
+        "retained_affine_moments": 4.965824880875257e-05,
+        "signed_crossing_error": 1.3204646653352513e-05,
+        "constant_moment": 7.92908580704661e-05,
+        "first_moment": -2.963260926171324e-05,
+        "literal_profile_cost": 9.595331759291346e-05,
+        "signed_by_count": {
+          "4": {
+            "signed": -5.549190956688034e-05,
+            "constant": -5.433723659521942e-05,
+            "first": -1.1546729716609297e-06
+          },
+          "3": {
+            "signed": 0.00011835480502898363,
+            "constant": 0.0001336280946656858,
+            "first": -2.847793629005229e-05
+          }
+        },
+        "signed_owner_only_sum": 6.340408833134498e-05,
+        "signed_nonowner_difference": -5.411928692399003e-07,
+        "source_normalized_nonowner_difference": -2.6454515583078956e-10,
+        "source_normalized_nonowner_absolute_mass": 6.358315266532353e-06,
+        "max_nonowner_share_over_proved_count_bound": 0.036984310117577725,
+        "proved_error_bound_evaluated_in_float": 0.7774845162989119,
+        "source_normalized_error": 6.454677260452178e-09,
+        "reflection_identity_roundoff": 6.217248937900877e-15
+      }
+    ]
+  },
+  "remaining": [
+    "The two joint signed owner-prime moments.",
+    "The combined source-scale cutoff-crossing cost and clipped/exterior boundaries.",
+    "Both whole endgame thresholds: -79/1000 floor and 3/2 ceiling."
+  ],
+  "validation": {
+    "fullBuildJobs": 11345,
+    "rootLint": "33019 declarations plus 22931 generated; 14 linters; zero errors",
+    "terminalAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "placeholderScanFiles": 2807,
+    "placeholderMatches": 0
+  }
+}

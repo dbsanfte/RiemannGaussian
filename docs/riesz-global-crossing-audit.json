@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "status": "passed local Lean, full build, linter and compiled-environment audit; no whole-carrier numerical floor or ceiling",
+  "scope": "Count-free cutoff-crossing component bound on both sides of the literal allocated prime sum. The signed constant and first moments and combined source-scale cost remain open.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszGlobalCurvature.lean": "d7c46eb86287fdb533183e739b2f858d16b84cf47269cc10ccc7ef535e3ef776",
+    "RiemannGaussian/ZetaRieszGlobalPrimePeriod.lean": "a1cf4bd5ef02f36534f4cd010e6ae22ff7793b922c19d894440879256254389a",
+    "scripts/probe_riesz_global_curvature.py": "986eb8148b34c7b4beaca1c626e860abd30e717747bec4e473e0517ce93c57a6"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszGlobalCurvature.curvature_prefix_le",
+    "RiemannGaussian.ZetaRieszGlobalCurvature.crossing_cost_le_quadratic",
+    "RiemannGaussian.ZetaRieszGlobalPrimePeriod.owned_population_affine_bounds",
+    "RiemannGaussian.ZetaRieszGlobalPrimePeriod.radial_affine_error_le"
+  ],
+  "numericalProbe": {
+    "scope": "Optional floating-point probes for the global Riesz crossing bound.\n\nNeither output is a certificate. The aggregate probe includes every integer\ncofactor via exact divisor incidence (harmonic values use floating point).\n--literal also enumerates finite uniquely owned prime labels, retaining the\nactual damped length, unpaid factorial orders, allocation and cosine phase.\nIts small orders and extra physical selection do not model the full endgame.\n",
+    "aggregate": [
+      {
+        "v": 12.0,
+        "cutoff": 3.684,
+        "half_period": 0.05817764173314432,
+        "all_integer_crossing_majorant": 0.018150974738640295,
+        "proved_bound_evaluated_in_float": 0.11189208537906879,
+        "coarse_all_divisor_comparison": 9.561632532029797,
+        "mass_over_v_h_squared": 0.4468960134818334
+      },
+      {
+        "v": 20.0,
+        "cutoff": 6.14,
+        "half_period": 0.05817764173314432,
+        "all_integer_crossing_majorant": 0.030905599989990814,
+        "proved_bound_evaluated_in_float": 0.15135227444726612,
+        "coarse_all_divisor_comparison": 24.928537700872816,
+        "mass_over_v_h_squared": 0.45655694954129133
+      },
+      {
+        "v": 30.0,
+        "cutoff": 9.209999999999999,
+        "half_period": 0.05817764173314432,
+        "all_integer_crossing_majorant": 0.042933519592168325,
+        "proved_bound_evaluated_in_float": 0.2195015696930074,
+        "coarse_all_divisor_comparison": 54.29733847364766,
+        "mass_over_v_h_squared": 0.4228272922365714
+      },
+      {
+        "v": 40.0,
+        "cutoff": 12.28,
+        "half_period": 0.05817764173314432,
+        "all_integer_crossing_majorant": 0.056998471109683604,
+        "proved_bound_evaluated_in_float": 0.2900361277999473,
+        "coarse_all_divisor_comparison": 94.95521973116882,
+        "mass_over_v_h_squared": 0.4210086215246181
+      },
+      {
+        "v": 50.0,
+        "cutoff": 15.35,
+        "half_period": 0.05817764173314432,
+        "all_integer_crossing_majorant": 0.07094017082418698,
+        "proved_bound_evaluated_in_float": 0.3607366609521,
+        "coarse_all_divisor_comparison": 146.90218147879773,
+        "mass_over_v_h_squared": 0.41918911785460594
+      }
+    ],
+    "literal": [
+      {
+        "N": 6,
+        "labels": 36,
+        "cofactors": 18,
+        "counts": {
+          "3": 36
+        },
+        "moving_length": 4.795790545596741,
+        "center": 12.042771838760872,
+        "signed_literal_sum": -0.00023559496518516616,
+        "retained_affine_moments": -0.00023559496518516616,
+        "signed_crossing_error": 0.0,
+        "constant_moment": -0.00021235746787498971,
+        "first_moment": -2.3237497310176453e-05,
+        "literal_profile_cost": 0.0,
+        "signed_by_count": {
+          "3": {
+            "signed": -0.00023559496518516616,
+            "constant": -0.00021235746787498971,
+            "first": -2.3237497310176453e-05
+          }
+        },
+        "signed_owner_only_sum": -0.00023559496518516616,
+        "signed_nonowner_difference": 0.0,
+        "source_normalized_nonowner_difference": 0.0,
+        "source_normalized_nonowner_absolute_mass": 0.0,
+        "max_nonowner_share_over_proved_count_bound": 0.0,
+        "proved_error_bound_evaluated_in_float": 0.058953539989020774,
+        "source_normalized_error": 0.0,
+        "reflection_identity_roundoff": 1.7763568394002505e-15
+      },
+      {
+        "N": 8,
+        "labels": 5539,
+        "cofactors": 702,
+        "counts": {
+          "3": 5539
+        },
+        "moving_length": 6.802394763324311,
+        "center": 16.115206760080977,
+        "signed_literal_sum": -1.7751855394689847e-05,
+        "retained_affine_moments": -2.4835155194732952e-05,
+        "signed_crossing_error": 7.083299800043104e-06,
+        "constant_moment": -1.189966605862918e-05,
+        "first_moment": -1.2935489136103907e-05,
+        "literal_profile_cost": 2.7869081241806567e-05,
+        "signed_by_count": {
+          "3": {
+            "signed": -1.7751855394689847e-05,
+            "constant": -1.189966605862918e-05,
+            "first": -1.2935489136103907e-05
+          }
+        },
+        "signed_owner_only_sum": -1.6858306505246416e-05,
+        "signed_nonowner_difference": -8.935488894434317e-07,
+        "source_normalized_nonowner_difference": -1.74678399452461e-09,
+        "source_normalized_nonowner_absolute_mass": 7.4446941085096515e-06,
+        "max_nonowner_share_over_proved_count_bound": 0.03792740744151852,
+        "proved_error_bound_evaluated_in_float": 0.1217161698477903,
+        "source_normalized_error": 1.38470260164964e-08,
+        "reflection_identity_roundoff": 4.440892098500626e-15
+      },
+      {
+        "N": 10,
+        "labels": 493241,
+        "cofactors": 13585,
+        "counts": {
+          "4": 2503,
+          "3": 490738
+        },
+        "moving_length": 9.086589564540008,
+        "center": 20.07128639793479,
+        "signed_literal_sum": 6.286289546210508e-05,
+        "retained_affine_moments": 4.965824880875257e-05,
+        "signed_crossing_error": 1.3204646653352513e-05,
+        "constant_moment": 7.92908580704661e-05,
+        "first_moment": -2.963260926171324e-05,
+        "literal_profile_cost": 9.595331759291346e-05,
+        "signed_by_count": {
+          "4": {
+            "signed": -5.549190956688034e-05,
+            "constant": -5.433723659521942e-05,
+            "first": -1.1546729716609297e-06
+          },
+          "3": {
+            "signed": 0.00011835480502898363,
+            "constant": 0.0001336280946656858,
+            "first": -2.847793629005229e-05
+          }
+        },
+        "signed_owner_only_sum": 6.340408833134498e-05,
+        "signed_nonowner_difference": -5.411928692399003e-07,
+        "source_normalized_nonowner_difference": -2.6454515583078956e-10,
+        "source_normalized_nonowner_absolute_mass": 6.358315266532353e-06,
+        "max_nonowner_share_over_proved_count_bound": 0.036984310117577725,
+        "proved_error_bound_evaluated_in_float": 0.7774845162989119,
+        "source_normalized_error": 6.454677260452178e-09,
+        "reflection_identity_roundoff": 6.217248937900877e-15
+      }
+    ]
+  },
+  "verification": {
+    "focusedBuild": {
+      "exitCode": 0,
+      "jobs": 10271
+    },
+    "fullBuild": {
+      "exitCode": 0,
+      "jobs": 11343
+    },
+    "placeholderScan": {
+      "files": 2663,
+      "matches": 0
+    },
+    "rootAudit": {
+      "lint": "-- Found 0 errors in 32998 declarations (plus 22899 automatically generated ones) in RiemannGaussian with 14 linters",
+      "axioms": {
+        "RiemannGaussian.ZetaRieszGlobalCurvature.riesz_second_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszGlobalCurvature.curvature_prefix_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszGlobalCurvature.crossing_cost_le_quadratic": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszGlobalCurvature.joint_affine_error_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszGlobalPrimePeriod.re_residual_atom": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszGlobalPrimePeriod.literal_affine_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszGlobalPrimePeriod.owned_population_affine_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszGlobalPrimePeriod.radial_affine_error_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "logSha256": "4cfb93d0d444bbada2d568004f993fd7190eead02aea74b149d31e0f0914bce4"
+    },
+    "wholeProjectLint": {
+      "exitCode": 0
+    },
+    "compiledStatus": {
+      "exitCode": 0
+    }
+  },
+  "unpaid": [
+    "Actual weighted constant and first signed prime moments",
+    "Combined source-normalized crossing cost and weight budgets",
+    "Clipped and exterior boundary contributions",
+    "Independent whole -79/1000 floor and 3/2 ceiling"
+  ],
+  "publicClaims": "No RH proof, new zero-free region, source-normalized decay, effective eventual threshold or historical novelty claim."
+}

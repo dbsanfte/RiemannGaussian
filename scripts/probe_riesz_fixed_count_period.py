@@ -32,12 +32,17 @@ def riesz(cut, logs):
     return ans
 
 
-def row(n, count, cofactor_share=0.52, y=54.0):
+def row(n, count, cofactor_share=0.52, y=54.0, balanced=False):
     # This is exactly floor(u^(-N)/(N+1)) for u=10001/20000.
     cutoff = pow(20000, n) // (pow(10001, n) * (n + 1))
     length = 2 * math.log(cutoff + 2)
     v = (2 * math.ceil((2 * n * y - math.pi) / (2 * math.pi)) + 1) * math.pi / y
-    cofactor = v * (cofactor_share * np.arange(1, count + 1) / sum(range(1, count + 1)))
+    if balanced:
+        cofactor = v * cofactor_share * (1 + 0.01 * np.linspace(-1, 1, count)) / count
+    else:
+        cofactor = v * (cofactor_share * np.arange(1, count + 1) / sum(range(1, count + 1)))
+    owner_gap = 1 - sum(cofactor)/v - max(cofactor)/v
+    assert owner_gap >= 1/(16*v), "Probe must retain the proved ownership separation"
     nodes, weights = np.polynomial.legendre.leggauss(768)
     total = v + math.pi / y * nodes
     prime_log = total - sum(cofactor)
@@ -60,6 +65,8 @@ def row(n, count, cofactor_share=0.52, y=54.0):
     return {
         "N": n, "total_prime_count": count+1,
         "cofactor_share": cofactor_share,
+        "cofactor_layout": "near-equal" if balanced else "increasing",
+        "owner_log_gap_over_v": float(owner_gap),
         "unsaturated_cutoff_over_v": float((sum(cofactor)-length)/v),
         "retained_cutoff_correction_over_v": float(correction[0]/v),
         "signed_response_over_radial_base": float(signed),
@@ -74,5 +81,8 @@ if __name__ == "__main__":
     print(json.dumps({
         "kind": "exploratory smooth model; not a prime theorem or certificate",
         "rows": [row(n, k, share) for share in (0.52, 0.696)
-                 for k in (6, 7, 8, 9) for n in (256, 1024, 4096, 16384)]
+                 for k in (6, 7, 8, 9) for n in (256, 1024, 4096, 16384)] +
+                [row(n, k, share, balanced=True)
+                 for k, share in ((6, 0.74), (6, 0.8), (6, 0.84), (9, 0.89), (6, 0.855), (9, 0.8988))
+                 for n in (256, 1024, 4096, 16384)]
     }, indent=2))

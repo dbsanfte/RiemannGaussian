@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "status": "passed local Lean, full build, root lint and transitive axiom audit; both whole bounds remain open",
+  "scope": "One-sided literal signed inequalities and an unconditional no-go for the separate full-core absolute crossing cost. Neither whole floor nor ceiling is proved.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszSignedCrossing.lean": "97a4d8c5bee258d1b1a27a81dcf389660f31f31193965924f77f6daef3e402ef",
+    "RiemannGaussian/ZetaRieszCrossingGrowth.lean": "52b882c8a859a0e1f061ba8f737ed0e3e57630812ea19cecd42a7289bcfef54d",
+    "scripts/probe_riesz_signed_crossing.py": "c18fd03880f91fd416b034196121930cb1f5fd30b9a09e2eddc915b6e4af63a7"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszSignedCrossing.literal_signed_affine_bounds",
+    "RiemannGaussian.ZetaRieszSignedCrossing.radial_signed_affine_bounds",
+    "RiemannGaussian.ZetaRieszSignedCrossing.triple_crossingAtom_lower",
+    "RiemannGaussian.ZetaRieszCrossingGrowth.boxCrossing_eq_owned",
+    "RiemannGaussian.ZetaRieszCrossingGrowth.tuple_mem_core",
+    "RiemannGaussian.ZetaRieszCrossingGrowth.eventually_period_crossing_growth",
+    "RiemannGaussian.ZetaRieszCrossingGrowth.not_eventually_period_cost_bounded"
+  ],
+  "numericalProbe": {
+    "scope": "Optional floating smooth-model probe of the literal cutoff-crossing geometry.\n\nThis is not a certificate or a discrete prime sum. It keeps the moving length,\noriginal unpaid factorial orders, allocation and phase in a three-prime density\nintegral. Lean separately proves a lower bound using actual prime counts.\nFor N>8192 the floor correction is bounded below floating precision; its\nlogarithmic upper bound is recorded. No exhaustive verification runs in CI.\n",
+    "w": 0.00090902565208038,
+    "rows": [
+      {
+        "N": 256,
+        "moving_length": 343.7420068367309,
+        "length_method": "exact integer damped cutoff, floating log",
+        "max_log_floor_error": -170.48470905724554,
+        "center_minus_2N": 0.021424893403150236,
+        "max_allocated": 3.356536554323624e-17,
+        "min_unassigned": 1.0,
+        "min_cutoff_error": -0.0036000050692450714,
+        "max_cutoff_error": -0.0018541488432219921,
+        "min_phase": -0.9887432569159311,
+        "max_phase": -0.9577850075522956,
+        "log_source_normalized_crossing_mass": -46.319405305745306,
+        "source_normalized_crossing_mass": 7.651346513066944e-21,
+        "log_raw_crossing_mass": 131.79372138307497,
+        "predicted_exponent": 9.999500033329732e-05,
+        "logmass_minus_growth": -46.34500402583063
+      },
+      {
+        "N": 640,
+        "moving_length": 874.1743386024621,
+        "length_method": "exact integer damped cutoff, floating log",
+        "max_log_floor_error": -435.70087494011113,
+        "center_minus_2N": 0.08265105437453713,
+        "max_allocated": 9.94151827280505e-39,
+        "min_unassigned": 1.0,
+        "min_cutoff_error": -0.0036000050692450714,
+        "max_cutoff_error": -0.0018541488432788356,
+        "min_phase": -0.9887432569150125,
+        "max_phase": -0.9577850075487657,
+        "log_source_normalized_crossing_mass": -49.50330208204313,
+        "source_normalized_crossing_mass": 3.169487693120977e-22,
+        "log_raw_crossing_mass": 394.7399438616681,
+        "predicted_exponent": 9.999500033329732e-05,
+        "logmass_minus_growth": -49.56729888225644
+      },
+      {
+        "N": 1536,
+        "moving_length": 2114.365778552051,
+        "length_method": "exact integer damped cutoff, floating log",
+        "max_log_floor_error": -1055.7965949149057,
+        "center_minus_2N": 0.07037171868523728,
+        "max_allocated": 2.199274430959894e-88,
+        "min_unassigned": 1.0,
+        "min_cutoff_error": -0.0036000050693019148,
+        "max_cutoff_error": -0.0018541488432219921,
+        "min_phase": -0.9887432569131754,
+        "max_phase": -0.9577850075452359,
+        "log_source_normalized_crossing_mass": -52.484036228151574,
+        "source_normalized_crossing_mass": 1.6086911703482817e-23,
+        "log_raw_crossing_mass": 1012.729487976972,
+        "predicted_exponent": 9.999500033329732e-05,
+        "logmass_minus_growth": -52.63762854866352
+      },
+      {
+        "N": 4096,
+        "moving_length": 5660.806523549248,
+        "length_method": "exact integer damped cutoff, floating log",
+        "max_log_floor_error": -2829.016967413504,
+        "center_minus_2N": 0.05191008578549372,
+        "max_allocated": 1.31387442456992e-229,
+        "min_unassigned": 1.0,
+        "min_cutoff_error": -0.003600005069074541,
+        "max_cutoff_error": -0.0018541488429946185,
+        "min_phase": -0.9887432569095013,
+        "max_phase": -0.9577850075593551,
+        "log_source_normalized_crossing_mass": -55.66397678965601,
+        "source_normalized_crossing_mass": 6.690245266953751e-25,
+        "log_raw_crossing_mass": 2783.750342448074,
+        "predicted_exponent": 9.999500033329732e-05,
+        "logmass_minus_growth": -56.0735563110212
+      },
+      {
+        "N": 8192,
+        "moving_length": 11336.8630173884,
+        "length_method": "exact integer damped cutoff, floating log",
+        "max_log_floor_error": -5667.0452143330795,
+        "center_minus_2N": 0.04564252983618644,
+        "max_allocated": 0.0,
+        "min_unassigned": 1.0,
+        "min_cutoff_error": -0.0036000050686197937,
+        "max_cutoff_error": -0.0018541488434493658,
+        "min_phase": -0.9887432569095013,
+        "max_phase": -0.9577850075875934,
+        "log_source_normalized_crossing_mass": -57.681415012057585,
+        "source_normalized_crossing_mass": 8.897740835320907e-26,
+        "log_raw_crossing_mass": 5620.4541762778435,
+        "predicted_exponent": 9.999500033329732e-05,
+        "logmass_minus_growth": -58.500574054787954
+      },
+      {
+        "N": 65536,
+        "moving_length": 90816.89996537419,
+        "length_method": "limiting log cutoff, floor error < 4*exp(-logcut)",
+        "max_log_floor_error": -45407.06368832598,
+        "center_minus_2N": 0.07425203002640046,
+        "max_allocated": 0.0,
+        "min_unassigned": 1.0,
+        "min_cutoff_error": -0.003600005067710299,
+        "max_cutoff_error": -0.00185414884617785,
+        "min_phase": -0.9887432568507145,
+        "max_phase": -0.9577850073052097,
+        "log_source_normalized_crossing_mass": -59.22633943035912,
+        "source_normalized_crossing_mass": 1.8981372062513113e-26,
+        "log_raw_crossing_mass": 45361.00706058993,
+        "predicted_exponent": 9.999500033329732e-05,
+        "logmass_minus_growth": -65.77961177220209
+      },
+      {
+        "N": 262144,
+        "moving_length": 363331.3695165483,
+        "length_method": "limiting log cutoff, floor error < 4*exp(-logcut)",
+        "max_log_floor_error": -181664.29846391303,
+        "center_minus_2N": 0.006119911442510784,
+        "max_allocated": 0.0,
+        "min_unassigned": 1.0,
+        "min_cutoff_error": -0.003600005089538172,
+        "max_cutoff_error": -0.0018541488389018923,
+        "min_phase": -0.9887432568507145,
+        "max_phase": -0.9577850059497675,
+        "log_source_normalized_crossing_mass": -44.418680877049255,
+        "source_normalized_crossing_mass": 5.119316749747854e-20,
+        "log_raw_crossing_mass": 181634.43577764745,
+        "predicted_exponent": 9.999500033329732e-05,
+        "logmass_minus_growth": -70.63177024442115
+      },
+      {
+        "N": 524288,
+        "moving_length": 726686.3060486797,
+        "length_method": "limiting log cutoff, floor error < 4*exp(-logcut)",
+        "max_log_floor_error": -363341.7667299787,
+        "center_minus_2N": 0.07041746471077204,
+        "max_allocated": 0.0,
+        "min_unassigned": 1.0,
+        "min_cutoff_error": -0.0036000050022266805,
+        "max_cutoff_error": -0.001854148751590401,
+        "min_phase": -0.9887432568507145,
+        "max_phase": -0.9577850077570238,
+        "log_source_normalized_crossing_mass": -20.631630702555857,
+        "source_normalized_crossing_mass": 1.0959648692307913e-09,
+        "log_raw_crossing_mass": 363336.3842391608,
+        "predicted_exponent": 9.999500033329732e-05,
+        "logmass_minus_growth": -73.05780943729964
+      },
+      {
+        "N": 1000000,
+        "moving_length": 1386066.740096108,
+        "length_method": "limiting log cutoff, floor error < 4*exp(-logcut)",
+        "max_log_floor_error": -693031.9837536929,
+        "center_minus_2N": 0.07517427508719265,
+        "max_allocated": 0.0,
+        "min_unassigned": 1.0,
+        "min_cutoff_error": -0.0036000050604343414,
+        "max_cutoff_error": -0.0018541489262133837,
+        "min_phase": -0.9887432568507145,
+        "max_phase": -0.9577850077570238,
+        "log_source_normalized_crossing_mass": 24.677179503467304,
+        "source_normalized_crossing_mass": 52139022802.087456,
+        "log_raw_crossing_mass": 693072.555786301,
+        "predicted_exponent": 9.999500033329732e-05,
+        "logmass_minus_growth": -75.31782082983003
+      },
+      {
+        "N": 2000000,
+        "moving_length": 2772159.724921971,
+        "length_method": "limiting log cutoff, floor error < 4*exp(-logcut)",
+        "max_log_floor_error": -1386078.4761666243,
+        "center_minus_2N": 0.09217090858146548,
+        "max_allocated": 0.0,
+        "min_unassigned": 1.0,
+        "min_cutoff_error": -0.003600005293264985,
+        "max_cutoff_error": -0.0018541489262133837,
+        "min_phase": -0.9887432549695375,
+        "max_phase": -0.9577850005279981,
+        "log_source_normalized_crossing_mass": 122.24615779427317,
+        "source_normalized_crossing_mass": 1.2326272482094635e+53,
+        "log_raw_crossing_mass": 1386217.3103242037,
+        "predicted_exponent": 9.999500033329732e-05,
+        "logmass_minus_growth": -77.74384287232148
+      }
+    ]
+  },
+  "verification": {
+    "focusedLean": "passed with warningAsError",
+    "fullBuild": {
+      "exitCode": 0,
+      "jobs": 11347
+    },
+    "rootLint": "-- Found 0 errors in 33050 declarations (plus 22953 automatically generated ones) in RiemannGaussian with 14 linters",
+    "axioms": {
+      "RiemannGaussian.ZetaRieszSignedCrossing.literal_signed_affine_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSignedCrossing.radial_signed_affine_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSignedCrossing.triple_crossingAtom_lower": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszCrossingGrowth.boxCrossing_eq_owned": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszCrossingGrowth.tuple_mem_core": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszCrossingGrowth.eventually_period_crossing_growth": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszCrossingGrowth.not_eventually_period_cost_bounded": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "wholeProjectLint": "passed",
+    "placeholderScan": {
+      "files": 2809,
+      "matches": []
+    }
+  }
+}

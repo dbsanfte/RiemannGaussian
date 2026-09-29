@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused Lean, full build, root lint and transitive axiom audit; both whole bounds remain open",
+  "scope": "Independent all-count Riesz second moment and its exact masked-residual application; neither whole source-normalized bound proved.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszSieveQuadratic.lean": "74e739879466ee623a8e88382f36257d45307693a3b70b6a6297d424e583f1a0",
+    "RiemannGaussian/ZetaRieszSieveMean.lean": "32ba17e12bb5107daa32d447acb3e85c440e43184fa1833863a11648005d9b4a",
+    "scripts/probe_riesz_sieve_mean.py": "e626e298dfb2618d14238ea5d0b42b4c79142956833a9cf4902d419cac183bec"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszSieveQuadratic.logPrefix_bound",
+    "RiemannGaussian.ZetaRieszSieveQuadratic.inverse_totient_sum_bound",
+    "RiemannGaussian.ZetaRieszSieveQuadratic.logarithmic_quadratic_bound",
+    "RiemannGaussian.ZetaRieszSieveMean.riesz_mean_square_le",
+    "RiemannGaussian.ZetaRieszSieveMean.riesz_mean_square_le_of_cutoff_sq",
+    "RiemannGaussian.ZetaRieszSieveMean.masked_signed_square_le",
+    "RiemannGaussian.ZetaRieszSieveMean.literal_residual_bounds"
+  ],
+  "numericalProbe": {
+    "scope": "Optional finite arithmetic probe of the all-count Riesz second moment.\n\nThis uses the actual integer Mobius coefficients and Euler totients, with\nfloating logarithms and arithmetic. It is not a certificate, a prime-density\nmodel, or a bound for the source-normalized masked Riesz carrier. It is never\npart of the ordinary build or exhaustive certificate workflow.",
+    "half_period": 0.05817764173314432,
+    "rows": [
+      {
+        "cutoff": 32,
+        "logarithmic_quadratic": 2.9048661779851925,
+        "quadratic_over_log_cutoff": 0.8381672058850629,
+        "proved_quadratic_upper_evaluated": 875.2842369487465,
+        "sharp_slope_quadratic": 0.46928446421323067,
+        "two_cutoff_difference_quadratic": 0.001508668562309708,
+        "difference_over_half_period_squared": 0.4457400062772058,
+        "coefficient_mass_over_cutoff": 0.6579382943027745,
+        "population_length": 4096,
+        "literal_integer_second_moment": 11894.891630797705,
+        "literal_sharp_second_moment_over_X": 0.466796875,
+        "literal_difference_second_moment_over_X_h_squared": 0.44394589627737124,
+        "second_moment_over_X_log_cutoff": 0.8379248617023185,
+        "proved_second_moment_upper_evaluated": 3601548.2345420658,
+        "cutoff_squared_at_most_population": true
+      },
+      {
+        "cutoff": 100,
+        "logarithmic_quadratic": 4.0182798501533785,
+        "quadratic_over_log_cutoff": 0.8725583828323189,
+        "proved_quadratic_upper_evaluated": 1098.613356453666,
+        "sharp_slope_quadratic": 0.45730382920717305,
+        "two_cutoff_difference_quadratic": 0.001517278150078636,
+        "difference_over_half_period_squared": 0.44828373112309966,
+        "coefficient_mass_over_cutoff": 0.6357373790040186,
+        "population_length": 40000,
+        "literal_integer_second_moment": 160720.93500886956,
+        "literal_sharp_second_moment_over_X": 0.4575,
+        "literal_difference_second_moment_over_X_h_squared": 0.44848175019610825,
+        "second_moment_over_X_log_cutoff": 0.8725026900085402,
+        "proved_second_moment_upper_evaluated": 44104534.258146636,
+        "cutoff_squared_at_most_population": true
+      },
+      {
+        "cutoff": 320,
+        "logarithmic_quadratic": 5.1692755348656245,
+        "quadratic_over_log_cutoff": 0.8961490767651509,
+        "proved_quadratic_upper_evaluated": 1326.5909151755793,
+        "sharp_slope_quadratic": 0.44377266423078515,
+        "two_cutoff_difference_quadratic": 0.0014771972621962352,
+        "difference_over_half_period_squared": 0.43644172973019874,
+        "coefficient_mass_over_cutoff": 0.6205976800942195,
+        "population_length": 409600,
+        "literal_integer_second_moment": 2117355.4205171173,
+        "literal_sharp_second_moment_over_X": 0.44368896484375,
+        "literal_difference_second_moment_over_X_h_squared": 0.4364370475419275,
+        "second_moment_over_X_log_cutoff": 0.8961576099685353,
+        "proved_second_moment_upper_evaluated": 545010038.8559173,
+        "cutoff_squared_at_most_population": true
+      },
+      {
+        "cutoff": 1000,
+        "logarithmic_quadratic": 6.304371222157831,
+        "quadratic_over_log_cutoff": 0.912651211217602,
+        "proved_quadratic_upper_evaluated": 1549.9200346804987,
+        "sharp_slope_quadratic": 0.4401775418366671,
+        "two_cutoff_difference_quadratic": 0.0014705181073165052,
+        "difference_over_half_period_squared": 0.43446835624552865,
+        "coefficient_mass_over_cutoff": 0.6129896557507888,
+        "population_length": 1000000,
+        "literal_integer_second_moment": 6304096.754132588,
+        "literal_sharp_second_moment_over_X": 0.440025,
+        "literal_difference_second_moment_over_X_h_squared": 0.4343162682754027,
+        "second_moment_over_X_log_cutoff": 0.9126114779013281,
+        "proved_second_moment_upper_evaluated": 1565920034.6804988,
+        "cutoff_squared_at_most_population": true
+      },
+      {
+        "cutoff": 3200,
+        "logarithmic_quadratic": 7.465405048346638,
+        "quadratic_over_log_cutoff": 0.9249773155851301,
+        "proved_quadratic_upper_evaluated": 1777.8975934024124,
+        "sharp_slope_quadratic": 0.440772239883415,
+        "two_cutoff_difference_quadratic": 0.0014715436425798572,
+        "difference_over_half_period_squared": 0.43477135327625105,
+        "coefficient_mass_over_cutoff": 0.6098330387590509,
+        "population_length": 1000000,
+        "literal_integer_second_moment": 7464321.245648966,
+        "literal_sharp_second_moment_over_X": 0.440709,
+        "literal_difference_second_moment_over_X_h_squared": 0.4347908316969365,
+        "second_moment_over_X_log_cutoff": 0.9248430304521167,
+        "proved_second_moment_upper_evaluated": 1941737593.4024124,
+        "cutoff_squared_at_most_population": false
+      },
+      {
+        "cutoff": 10000,
+        "logarithmic_quadratic": 8.603769376265598,
+        "quadratic_over_log_cutoff": 0.9341423909200829,
+        "proved_quadratic_upper_evaluated": 2001.226712907332,
+        "sharp_slope_quadratic": 0.44093804903260747,
+        "two_cutoff_difference_quadratic": 0.0014718129669773175,
+        "difference_over_half_period_squared": 0.43485092586204865,
+        "coefficient_mass_over_cutoff": 0.6086981765354468,
+        "population_length": 1000000,
+        "literal_integer_second_moment": 8602230.961758286,
+        "literal_sharp_second_moment_over_X": 0.441629,
+        "literal_difference_second_moment_over_X_h_squared": 0.43549546816959667,
+        "second_moment_over_X_log_cutoff": 0.9339753596872316,
+        "proved_second_moment_upper_evaluated": 3601226712.907332,
+        "cutoff_squared_at_most_population": false
+      },
+      {
+        "cutoff": 32000,
+        "logarithmic_quadratic": 9.76650172496581,
+        "quadratic_over_log_cutoff": 0.9414864825949762,
+        "proved_quadratic_upper_evaluated": 2229.2042716292453,
+        "sharp_slope_quadratic": 0.4407414103265157,
+        "two_cutoff_difference_quadratic": 0.0014719343834470793,
+        "difference_over_half_period_squared": 0.43488679867026236,
+        "coefficient_mass_over_cutoff": 0.6082038013058818,
+        "population_length": 1000000,
+        "literal_integer_second_moment": 9769780.169392042,
+        "literal_sharp_second_moment_over_X": 0.442922,
+        "literal_difference_second_moment_over_X_h_squared": 0.4374594075091296,
+        "second_moment_over_X_log_cutoff": 0.9418025231997043,
+        "proved_second_moment_upper_evaluated": 18613204271.629246,
+        "cutoff_squared_at_most_population": false
+      }
+    ]
+  },
+  "literature": [
+    {
+      "url": "https://arxiv.org/pdf/math/0111212",
+      "role": "Classical truncated-divisor correlation framework"
+    },
+    {
+      "url": "https://tenenb.perso.math.cnrs.fr/PPP/Sxz.pdf",
+      "role": "Uniform sharp-cutoff second moment; not formalized by this slice"
+    },
+    {
+      "url": "https://arxiv.org/html/2603.25961v2",
+      "role": "2026 explicit sharp Mobius lcm bounds; not formalized by this slice"
+    }
+  ],
+  "validation": {
+    "fullBuild": {
+      "exitCode": 0,
+      "jobs": 11349
+    },
+    "rootLint": "-- Found 0 errors in 33076 declarations (plus 23012 automatically generated ones) in RiemannGaussian with 14 linters",
+    "permittedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "wholeProjectLintExitCode": 0,
+    "compiledStatusAndFreshness": "passed"
+  }
+}

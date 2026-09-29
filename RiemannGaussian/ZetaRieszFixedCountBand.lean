@@ -333,6 +333,199 @@ theorem eventually_unsaturated_extra {y : ℝ} (hy : 54 ≤ |y|) :
       (show Real.log a-L ≤ Real.log a.minFac by linarith)]
     linarith
 
+/-- The enlarged payment includes actual near-balanced seven-prime labels.
+Their cofactor logarithm lies above 84 percent, beyond the previous 70-percent cap. -/
+theorem eventually_near_balanced_extra {y : ℝ} (hy : 54 ≤ |y|) :
+    ∀ᶠ N : ℕ in atTop, ∀ v : ℝ, (N : ℝ) ≤ v →
+      ∃ a ∈ ZetaRieszFixedCountPeriod.cofactors 6 v,
+      ∃ p ∈ ZetaRieszAllowancePrimeBoxes.logPrimes
+        (v-Real.pi/|y|-Real.log a) (2*Real.pi/|y|),
+      a*p ∈ extra v y ∧ (21/25 : ℝ)*v < Real.log a ∧
+        Real.log a ≤ (2109/2500 : ℝ)*v := by
+  have hy0 : 0 < |y| := by linarith
+  have hH : 0 < 2*Real.pi/|y| := by positivity
+  have hpi : Real.pi/|y| ≤ 1/16 :=
+    (div_le_iff₀ hy0).mpr (by nlinarith [Real.pi_lt_d4])
+  have hne (S : Finset ℕ) (f : ℕ → ℝ) (hp : 0 < ∑ p ∈ S, f p) : S.Nonempty := by
+    by_contra hn
+    rw [Finset.not_nonempty_iff_eq_empty.mp hn,Finset.sum_empty] at hp
+    exact (lt_irrefl (0 : ℝ)) hp
+  filter_upwards [ZetaRieszMacroPrimeWindows.eventually_macro_reciprocal_bounds
+      (by norm_num : (0 : ℝ) < 1/10000) (by norm_num : (0 : ℝ) < 1/10000),
+    ZetaRieszSharpPrimeWindows.eventually_log_mass_bounds hH
+      (by norm_num : (0 : ℝ) < 1/8) (by norm_num : (0 : ℝ) < 1/2),
+    eventually_ge_atTop (1000 : ℕ)] with N hmacro hlast hlarge v hv
+  have hNR : (1000 : ℝ) ≤ N := by exact_mod_cast hlarge
+  have hv0 : 0 < v := by linarith
+  have hex (i : Fin 6) : ∃ q, q ∈ ZetaRieszAllowancePrimeBoxes.logPrimes
+      (((7/50 : ℝ)+(i : ℕ)/10000)*v) (v/10000) := by
+    have hi : (0 : ℝ) ≤ (i : ℕ) := Nat.cast_nonneg _
+    have hm := (hmacro (((7/50 : ℝ)+(i : ℕ)/10000)*v) (v/10000)
+      (by nlinarith) (by linarith)).1
+    exact hne _ _ ((by positivity : 0 < (4999/5000 : ℝ)*(v/10000)/
+      (((7/50 : ℝ)+(i : ℕ)/10000)*v+v/10000)).trans_le hm)
+  choose q hq using hex
+  have hqp (i : Fin 6) := (ZetaRieszAllowancePrimeBoxes.logPrimes_bounds (hq i)).1
+  have hqb (i : Fin 6) := (ZetaRieszAllowancePrimeBoxes.logPrimes_bounds (hq i)).2
+  have hqu (i : Fin 6) : Real.log (q i) ≤ (703/5000 : ℝ)*v := by
+    have hiu : ((i : ℕ) : ℝ) ≤ 5 := by exact_mod_cast (show (i : ℕ) ≤ 5 by omega)
+    nlinarith [hqb i]
+  have hql (i : Fin 6) : (7/50 : ℝ)*v < Real.log (q i) := by
+    have hi : (0 : ℝ) ≤ (i : ℕ) := Nat.cast_nonneg _
+    nlinarith [hqb i]
+  have hmono : StrictMono q := by
+    intro i j hij
+    have hijR : ((i : ℕ) : ℝ)+1 ≤ (j : ℕ) := by exact_mod_cast (show (i : ℕ)+1 ≤ j by omega)
+    exact ZetaRieszAllowancePrimeBoxes.logPrimes_order
+      (by nlinarith) (hq i) (hq j)
+  let a := ∏ i, q i
+  have ha0 : a ≠ 0 := Finset.prod_ne_zero_iff.mpr (fun i _ => (hqp i).ne_zero)
+  have hsf : Squarefree a := by
+    apply Finset.squarefree_prod_of_pairwise_isCoprime
+    · intro i _ j _ hij
+      apply Nat.coprime_iff_isRelPrime.mp
+      apply (hqp i).coprime_iff_not_dvd.mpr
+      intro hh
+      exact hij (hmono.injective ((Nat.prime_dvd_prime_iff_eq (hqp i) (hqp j)).mp hh))
+    · intro i _
+      exact (hqp i).squarefree
+  have hpf : a.primeFactors = Finset.univ.image q := by
+    dsimp only [a]
+    rw [← Finset.prod_image (f := fun n : ℕ => n) (s := Finset.univ) hmono.injective.injOn]
+    apply Nat.primeFactors_prod
+    intro p hp
+    obtain ⟨i,_,rfl⟩ := Finset.mem_image.mp hp
+    exact hqp i
+  have hc : a.primeFactors.card = 6 := by
+    rw [hpf,Finset.card_image_of_injective _ hmono.injective]
+    simp
+  have hlog : Real.log a = ∑ i, Real.log (q i) := by
+    rw [show (a : ℝ) = ∏ i, (q i : ℝ) by simp only [a,Nat.cast_prod],Real.log_prod]
+    intro i _
+    exact_mod_cast (hqp i).ne_zero
+  have hsuml := Finset.sum_lt_sum (s := (Finset.univ : Finset (Fin 6)))
+    (fun i _ => (hql i).le) ⟨0,Finset.mem_univ _,hql 0⟩
+  have hsumu := Finset.sum_le_sum (s := (Finset.univ : Finset (Fin 6))) (fun i _ => hqu i)
+  simp only [Finset.sum_const,Finset.card_univ,Fintype.card_fin,nsmul_eq_mul,Nat.cast_ofNat,← hlog] at hsuml hsumu
+  have haU : ∀ p ∈ a.primeFactors, Real.log p ≤ (703/5000 : ℝ)*v := by
+    intro p hp
+    rw [hpf] at hp
+    obtain ⟨i,_,rfl⟩ := Finset.mem_image.mp hp
+    exact hqu i
+  have hca : a ∈ ZetaRieszFixedCountPeriod.cofactors 6 v := by
+    apply Finset.mem_filter.mpr
+    refine ⟨ZetaRieszCofactorMass.mem_products_of_squarefree hsf hc
+      (fun p hp => (haU p hp).trans (by linarith)),hsf,hc,by linarith,by linarith,?_⟩
+    intro p hp
+    linarith [haU p hp]
+  have hpa : (1/8 : ℝ)*N ≤ v-Real.pi/|y|-Real.log a := by linarith
+  have hpmass := (hlast _ hpa).1
+  have he : 0 < Real.exp (2*Real.pi/|y|)-1 := sub_pos.mpr (Real.one_lt_exp_iff.mpr hH)
+  obtain ⟨p,hp⟩ := hne _ _ ((by positivity : 0 < (1-1/2 : ℝ)*(Real.exp (2*Real.pi/|y|)-1)*
+    Real.exp (v-Real.pi/|y|-Real.log a)).trans_le hpmass)
+  refine ⟨a,hca,p,hp,?_,by linarith,by linarith⟩
+  exact Finset.mem_biUnion.mpr ⟨6,by decide,
+    Finset.mem_biUnion.mpr ⟨a,hca,Finset.mem_image.mpr ⟨p,hp,rfl⟩⟩⟩
+
+/-- The constant-width ownership margin includes actual labels excluded
+by the former relative one-half-percent separation, at every cofactor prime. -/
+theorem eventually_thin_gap_extra {y : ℝ} (hy : 54 ≤ |y|) :
+    ∀ᶠ N : ℕ in atTop, ∀ v : ℝ, (N : ℝ) ≤ v →
+      ∃ a ∈ ZetaRieszFixedCountPeriod.cofactors 6 v,
+      ∃ p ∈ ZetaRieszAllowancePrimeBoxes.logPrimes
+        (v-Real.pi/|y|-Real.log a) (2*Real.pi/|y|),
+      a*p ∈ extra v y ∧ (534/625 : ℝ)*v < Real.log a ∧
+        Real.log a ≤ (21369/25000 : ℝ)*v ∧
+        (∀ q ∈ a.primeFactors, (199/200 : ℝ)*v-Real.log a < Real.log q) := by
+  have hy0 : 0 < |y| := by linarith
+  have hH : 0 < 2*Real.pi/|y| := by positivity
+  have hpi : Real.pi/|y| ≤ 1/16 :=
+    (div_le_iff₀ hy0).mpr (by nlinarith [Real.pi_lt_d4])
+  have hne (S : Finset ℕ) (f : ℕ → ℝ) (hp : 0 < ∑ p ∈ S, f p) : S.Nonempty := by
+    by_contra hn
+    rw [Finset.not_nonempty_iff_eq_empty.mp hn,Finset.sum_empty] at hp
+    exact (lt_irrefl (0 : ℝ)) hp
+  filter_upwards [ZetaRieszMacroPrimeWindows.eventually_macro_reciprocal_bounds
+      (by norm_num : (0 : ℝ) < 1/100000) (by norm_num : (0 : ℝ) < 1/100000),
+    ZetaRieszSharpPrimeWindows.eventually_log_mass_bounds hH
+      (by norm_num : (0 : ℝ) < 1/8) (by norm_num : (0 : ℝ) < 1/2),
+    eventually_ge_atTop (1000 : ℕ)] with N hmacro hlast hlarge v hv
+  have hNR : (1000 : ℝ) ≤ N := by exact_mod_cast hlarge
+  have hv0 : 0 < v := by linarith
+  have hex (i : Fin 6) : ∃ q, q ∈ ZetaRieszAllowancePrimeBoxes.logPrimes
+      (((178/1250 : ℝ)+(i : ℕ)/100000)*v) (v/100000) := by
+    have hi : (0 : ℝ) ≤ (i : ℕ) := Nat.cast_nonneg _
+    have hm := (hmacro (((178/1250 : ℝ)+(i : ℕ)/100000)*v) (v/100000)
+      (by nlinarith) (by linarith)).1
+    exact hne _ _ ((by positivity : 0 < (4999/5000 : ℝ)*(v/100000)/
+      (((178/1250 : ℝ)+(i : ℕ)/100000)*v+v/100000)).trans_le hm)
+  choose q hq using hex
+  have hqp (i : Fin 6) := (ZetaRieszAllowancePrimeBoxes.logPrimes_bounds (hq i)).1
+  have hqb (i : Fin 6) := (ZetaRieszAllowancePrimeBoxes.logPrimes_bounds (hq i)).2
+  have hqu (i : Fin 6) : Real.log (q i) ≤ (7123/50000 : ℝ)*v := by
+    have hiu : ((i : ℕ) : ℝ) ≤ 5 := by exact_mod_cast (show (i : ℕ) ≤ 5 by omega)
+    nlinarith [hqb i]
+  have hql (i : Fin 6) : (178/1250 : ℝ)*v < Real.log (q i) := by
+    have hi : (0 : ℝ) ≤ (i : ℕ) := Nat.cast_nonneg _
+    nlinarith [hqb i]
+  have hmono : StrictMono q := by
+    intro i j hij
+    have hijR : ((i : ℕ) : ℝ)+1 ≤ (j : ℕ) := by exact_mod_cast (show (i : ℕ)+1 ≤ j by omega)
+    exact ZetaRieszAllowancePrimeBoxes.logPrimes_order
+      (by nlinarith) (hq i) (hq j)
+  let a := ∏ i, q i
+  have ha0 : a ≠ 0 := Finset.prod_ne_zero_iff.mpr (fun i _ => (hqp i).ne_zero)
+  have hsf : Squarefree a := by
+    apply Finset.squarefree_prod_of_pairwise_isCoprime
+    · intro i _ j _ hij
+      apply Nat.coprime_iff_isRelPrime.mp
+      apply (hqp i).coprime_iff_not_dvd.mpr
+      intro hh
+      exact hij (hmono.injective ((Nat.prime_dvd_prime_iff_eq (hqp i) (hqp j)).mp hh))
+    · intro i _
+      exact (hqp i).squarefree
+  have hpf : a.primeFactors = Finset.univ.image q := by
+    dsimp only [a]
+    rw [← Finset.prod_image (f := fun n : ℕ => n) (s := Finset.univ) hmono.injective.injOn]
+    apply Nat.primeFactors_prod
+    intro p hp
+    obtain ⟨i,_,rfl⟩ := Finset.mem_image.mp hp
+    exact hqp i
+  have hc : a.primeFactors.card = 6 := by
+    rw [hpf,Finset.card_image_of_injective _ hmono.injective]
+    simp
+  have hlog : Real.log a = ∑ i, Real.log (q i) := by
+    rw [show (a : ℝ) = ∏ i, (q i : ℝ) by simp only [a,Nat.cast_prod],Real.log_prod]
+    intro i _
+    exact_mod_cast (hqp i).ne_zero
+  have hsuml := Finset.sum_lt_sum (s := (Finset.univ : Finset (Fin 6)))
+    (fun i _ => (hql i).le) ⟨0,Finset.mem_univ _,hql 0⟩
+  have hsumu := Finset.sum_le_sum (s := (Finset.univ : Finset (Fin 6))) (fun i _ => hqu i)
+  simp only [Finset.sum_const,Finset.card_univ,Fintype.card_fin,nsmul_eq_mul,Nat.cast_ofNat,← hlog] at hsuml hsumu
+  have haU : ∀ p ∈ a.primeFactors, Real.log p ≤ (7123/50000 : ℝ)*v := by
+    intro p hp
+    rw [hpf] at hp
+    obtain ⟨i,_,rfl⟩ := Finset.mem_image.mp hp
+    exact hqu i
+  have hca : a ∈ ZetaRieszFixedCountPeriod.cofactors 6 v := by
+    apply Finset.mem_filter.mpr
+    refine ⟨ZetaRieszCofactorMass.mem_products_of_squarefree hsf hc
+      (fun p hp => (haU p hp).trans (by linarith)),hsf,hc,by linarith,by linarith,?_⟩
+    intro p hp
+    linarith [haU p hp]
+  have hpa : (1/8 : ℝ)*N ≤ v-Real.pi/|y|-Real.log a := by linarith
+  have hpmass := (hlast _ hpa).1
+  have he : 0 < Real.exp (2*Real.pi/|y|)-1 := sub_pos.mpr (Real.one_lt_exp_iff.mpr hH)
+  obtain ⟨p,hp⟩ := hne _ _ ((by positivity : 0 < (1-1/2 : ℝ)*(Real.exp (2*Real.pi/|y|)-1)*
+    Real.exp (v-Real.pi/|y|-Real.log a)).trans_le hpmass)
+  refine ⟨a,hca,p,hp,?_,by linarith,by linarith,?_⟩
+  · exact Finset.mem_biUnion.mpr ⟨6,by decide,
+      Finset.mem_biUnion.mpr ⟨a,hca,Finset.mem_image.mpr ⟨p,hp,rfl⟩⟩⟩
+  · intro q' hq'
+    rw [hpf] at hq'
+    obtain ⟨i,_,rfl⟩ := Finset.mem_image.mp hq'
+    linarith [hql i]
+
 /-- The wider population is genuinely nonempty; in fact it includes cofactors
 with a strictly positive unsaturated cutoff response. -/
 theorem eventually_extra_nonempty {y : ℝ} (hy : 54 ≤ |y|) :

@@ -149,10 +149,10 @@ Work directly on both cofinal signed bounds for J+C, retaining all original weig
 
 ### Latest Update
 
-**Both signed bounds cross the cofactor saturation boundary.** The selected 7–55-prime population now extends from cofactor log 0.665v to 0.7v. Lean retains the additional Riesz cutoff exactly, proves it adds no cutoff variation, and constructs actual labels where it is positive. Both whole comparisons keep the same local debit and growing credit.
-Control the remaining ownership boundaries, share geometry and radial complement. The independent -79/1000 whole floor and 3/2 ceiling remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszFixedCountBand.lean#L67)
-· [Proof details](docs/zeta-riesz-unsaturated-periods.md).
+**Numerical signed prime-period costs now sum over every cofactor count.** Actual complete prime periods and their first signed moments have explicit inverse-square prime-log bounds. All squarefree cofactor counts share one logarithmic budget, and arbitrary finite radial families retain their actual amplitude sums.
+Bound the original factorial/allocation variation and matching signed cutoff corrections, keeping clipped endpoints and paid-sector holes. Both whole thresholds remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszQuantitativePrimePeriod.lean#L541)
+· [Proof details](docs/zeta-riesz-quantitative-prime-period.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

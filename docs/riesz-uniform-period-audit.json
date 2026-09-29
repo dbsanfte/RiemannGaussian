@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "status": "Lean and axiom gates passed; no whole floor or ceiling claimed",
+  "scope": "For each fixed logarithmic spacing h>0, one proved but unevaluated E_h bounds the squarefree mean of a whole signed cutoff family by E_h*X*sum a_i^2, independently of family size and cutoff magnitudes. The exact complementary endpoint is floor((n-1)/R). Rounding loses at most one in logarithmic separation; direct and complementary divisor pairs each have one finite interval error, and these errors are absorbed into the same summable separation kernel. No separate counting-error term remains. S is any squarefree nonunit selection in (1,X]; the budget uses X, not the cardinality or short-interval length. The original varying owner allocation and cofactor-dependent interval endpoints cost only 36*(b+1)^2 for 2^b periods, with the same linear population and coefficient-energy budget. Both signed bounds and the literal cutoffSlope bridge retain strict rounding, original logarithmic owner shares and radial lengths T(n,i). A nonnegative decreasing cofactor-dependent factor bounded by D has only the squared D price, with no additional period or maximal-depth loss. The exact reciprocal factor 1/(T(n,i)-log n) retains a separate positive lower bound delta(n) inside the energy sum (w(n)/delta(n))^2. This does not replace actual prime moments by their density or bound their irregular signed error. Base coefficients a_i and cutoffs R_i are fixed across labels; common real weights remain arbitrary with explicit unpaid weight energy. Arbitrary a_i(n) and cofactor-dependent noncontiguous period holes are not covered. The remaining actual prime-moment coefficient dependence, joint signed cutoff correction and total source-normalized cost are open. No zero or simplicity hypothesis; preserve disjoint paid sectors. Both whole -79/1000 floor and 3/2 ceiling remain open; no zero exclusion or RH claim.",
+  "terminalTheorems": {
+    "rieszComplementSeparationTheorem": "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.quotient_log_separation",
+    "rieszComplementCrossTheorem": "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_reflected_cross_bound",
+    "rieszSmallGramTheorem": "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_small_gram_bound",
+    "rieszLargeGramTheorem": "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_large_gram_bound",
+    "rieszUniformSeparatedMeanTheorem": "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_separated_mean_bound",
+    "rieszUniformSeparatedSignedTheorem": "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_joint_signed_bounds",
+    "rieszUniformSeparatedSlopeTheorem": "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_joint_slope_bounds",
+    "rieszOwnerUniformMeanTheorem": "RiemannGaussian.ZetaRieszOwnerUniformMean.exists_owner_interval_mean_bound",
+    "rieszOwnerUniformSignedTheorem": "RiemannGaussian.ZetaRieszOwnerUniformMean.exists_owner_interval_signed_bounds",
+    "rieszOwnerUniformSlopeTheorem": "RiemannGaussian.ZetaRieszOwnerUniformMean.exists_owner_slope_bounds",
+    "rieszOwnerDecreasingTheorem": "RiemannGaussian.ZetaRieszOwnerDensity.decreasing_interval_bound",
+    "rieszOwnerDensityMeanTheorem": "RiemannGaussian.ZetaRieszOwnerDensity.exists_density_mean_bound",
+    "rieszOwnerReciprocalSlopeTheorem": "RiemannGaussian.ZetaRieszOwnerDensity.exists_reciprocal_slope_bounds"
+  },
+  "exactBudgets": {
+    "quotientLogRoundingLoss": 1,
+    "finitePairCountingError": 1,
+    "pairErrorSeparationMultiplier": 16,
+    "signedFamilyMean": "E_h*X*sum_i a_i^2",
+    "varyingOwnerMean": "36*(b+1)^2*E_h*X*sum_i a_i^2 for 2^b periods",
+    "remainingWeightEnergy": "sum_n w(n)^2 in both signed bounds",
+    "decreasingDensityMean": "D^2 times the original owner mean, no extra depth factor",
+    "reciprocalDensityEnergy": "sum_n (w(n)/delta(n))^2, delta(n)>0 bounded by T(n,i)-log n"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszSquarefreeSeparatedMean.lean": "33036d3f48598b1a12dcbbe8d23dbaf8e97f23535610afa8ba5df8a34a50ef43",
+    "RiemannGaussian/ZetaRieszOwnerUniformMean.lean": "7ef068403006c19af9403f1f7ee817f1176a53c34ac48e7840e68a8d0071f10e",
+    "RiemannGaussian/ZetaRieszSquarefreeUniformMean.lean": "551cc20f70806702b98192f596c8810f5d31229639bc721c38c47db50fa18851",
+    "RiemannGaussian/ZetaRieszCrossCutoff.lean": "dba556afac6a5c347d61d476ae0666d5144fd822b646c4fd3fba1cb5d230c4db",
+    "RiemannGaussian/ZetaRieszOwnerMaximal.lean": "95987a0dba335dd641c13eac872146bc38ec2affdd8852005ed0711e8c93d852",
+    "scripts/probe_riesz_separated_mean.py": "3172e0a451689350341bca6e4ad698f3a289998d00931ff29211c3a8d827bac0",
+    "RiemannGaussian/ZetaRieszOwnerDensity.lean": "bad522df5c151fef0e0e49376b9bcfd2e7fe249fe6b625215ece2ed528845d71"
+  },
+  "gramProbe": {
+    "scope": "Optional finite squarefree cutoff-family Gram diagnostic.\n\nM\u00f6bius prefixes are literal integer sums on squarefree nonunit labels.\nGram eigenvalues and normalized costs use floating arithmetic. No zeta\nphase, source floor, or whole prime-period bound is certified here.\nThis probe is not part of ordinary CI.",
+    "populations": [
+      {
+        "population": 32768,
+        "cutoffs": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096,
+          8192,
+          16384,
+          32768
+        ],
+        "rows": [
+          {
+            "cutoffCount": 4,
+            "largestGramEigenvalueOverPopulation": 1.2215059304068736,
+            "largestIndividualMeanOverPopulation": 0.607879638671875,
+            "alternatingMeanOverPopulationAndCoefficientEnergy": 0.110809326171875
+          },
+          {
+            "cutoffCount": 8,
+            "largestGramEigenvalueOverPopulation": 1.4173898576203892,
+            "largestIndividualMeanOverPopulation": 0.607879638671875,
+            "alternatingMeanOverPopulationAndCoefficientEnergy": 0.1004180908203125
+          },
+          {
+            "cutoffCount": 12,
+            "largestGramEigenvalueOverPopulation": 1.474473410731917,
+            "largestIndividualMeanOverPopulation": 0.607879638671875,
+            "alternatingMeanOverPopulationAndCoefficientEnergy": 0.09015655517578125
+          },
+          {
+            "cutoffCount": 16,
+            "largestGramEigenvalueOverPopulation": 1.4895181791765861,
+            "largestIndividualMeanOverPopulation": 0.607879638671875,
+            "alternatingMeanOverPopulationAndCoefficientEnergy": 0.08186721801757812
+          }
+        ]
+      },
+      {
+        "population": 131072,
+        "cutoffs": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096,
+          8192,
+          16384,
+          32768,
+          65536,
+          131072
+        ],
+        "rows": [
+          {
+            "cutoffCount": 4,
+            "largestGramEigenvalueOverPopulation": 1.2220316898410963,
+            "largestIndividualMeanOverPopulation": 0.6079635620117188,
+            "alternatingMeanOverPopulationAndCoefficientEnergy": 0.11083412170410156
+          },
+          {
+            "cutoffCount": 8,
+            "largestGramEigenvalueOverPopulation": 1.418071067822596,
+            "largestIndividualMeanOverPopulation": 0.6079635620117188,
+            "alternatingMeanOverPopulationAndCoefficientEnergy": 0.10033512115478516
+          },
+          {
+            "cutoffCount": 12,
+            "largestGramEigenvalueOverPopulation": 1.4728186181946066,
+            "largestIndividualMeanOverPopulation": 0.6079635620117188,
+            "alternatingMeanOverPopulationAndCoefficientEnergy": 0.0890363057454427
+          },
+          {
+            "cutoffCount": 18,
+            "largestGramEigenvalueOverPopulation": 1.4968721553086706,
+            "largestIndividualMeanOverPopulation": 0.6079635620117188,
+            "alternatingMeanOverPopulationAndCoefficientEnergy": 0.07970174153645833
+          }
+        ]
+      },
+      {
+        "population": 524288,
+        "cutoffs": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096,
+          8192,
+          16384,
+          32768,
+          65536,
+          131072,
+          262144,
+          524288
+        ],
+        "rows": [
+          {
+            "cutoffCount": 4,
+            "largestGramEigenvalueOverPopulation": 1.2220116981558466,
+            "largestIndividualMeanOverPopulation": 0.6079177856445312,
+            "alternatingMeanOverPopulationAndCoefficientEnergy": 0.11081790924072266
+          },
+          {
+            "cutoffCount": 8,
+            "largestGramEigenvalueOverPopulation": 1.4178424067522666,
+            "largestIndividualMeanOverPopulation": 0.6079177856445312,
+            "alternatingMeanOverPopulationAndCoefficientEnergy": 0.10028743743896484
+          },
+          {
+            "cutoffCount": 12,
+            "largestGramEigenvalueOverPopulation": 1.4712114936685627,
+            "largestIndividualMeanOverPopulation": 0.6079177856445312,
+            "alternatingMeanOverPopulationAndCoefficientEnergy": 0.08881537119547527
+          },
+          {
+            "cutoffCount": 20,
+            "largestGramEigenvalueOverPopulation": 1.4999626915407442,
+            "largestIndividualMeanOverPopulation": 0.6079177856445312,
+            "alternatingMeanOverPopulationAndCoefficientEnergy": 0.07797355651855468
+          }
+        ]
+      }
+    ]
+  },
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "remainingQuantitativeWork": [
+    "Actual prime coefficients depend on the cofactor beyond the paid owner and moving endpoints",
+    "Noncontiguous period selections depending on the cofactor",
+    "Joint signed cutoff correction and total weighted cost at source scale"
+  ],
+  "rootAudit": {
+    "declarations": 33212,
+    "generatedDeclarations": 23264,
+    "linters": 14,
+    "errors": 0,
+    "terminalAxioms": {
+      "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.quotient_log_separation": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_reflected_cross_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_small_gram_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_large_gram_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_separated_mean_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_joint_signed_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSquarefreeSeparatedMean.exists_joint_slope_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerUniformMean.exists_owner_interval_mean_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerUniformMean.exists_owner_interval_signed_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerUniformMean.exists_owner_slope_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerDensity.decreasing_interval_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerDensity.exists_density_mean_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerDensity.exists_reciprocal_slope_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "status": "Lean and axiom gates passed; no whole floor or ceiling claimed",
+  "scope": "All cofactor prime counts now share one paid reciprocal-log energy budget. Literal ordered prime-divisor incidences give sum omega(n)^2 <= X*(H_X^2+H_X), with exact distinct-pair and diagonal counting. Squarefree ownership implies log(n)/omega(n) <= the owner prime log. On M<n<=2M, weights bounded by W/n have energy at most 2*W^2*(H_(2M)^2+H_(2M))/(M*log(M)^2). Existing Chebyshev counts bound H_X by 2*exp(1/2)*log(4)*(1+log(4*log(X)+8)); no density approximation is used. Both signed owner-slope bounds therefore have K^2=144*(b+1)^2*E_h*W^2*(B_M^2+B_M)*sum|a_i|^2/log(M)^2, with explicit B_M and proved but unevaluated E_h. Complete complex coefficient and cofactor phases remain coupled before taking the real part; their fixed factor two is absorbed into E_h. The cofactor energy sum and exponential prime-count price are paid. Original owner, strict slope, reciprocal log and moving interval endpoints remain. Base coefficients a_i and cutoffs are fixed across labels; irregular signed prime-moment dependence and cofactor-dependent noncontiguous period holes are not covered. Remaining coefficient energy, radial aggregation and matching signed cutoff correction are open at source scale. No zero or simplicity hypothesis enters; preserve disjoint paid sectors and every previous no-go. Both whole -79/1000 floor and 3/2 ceiling remain open; no zero exclusion or RH claim.",
+  "terminalTheorems": {
+    "rieszOwnerPrimeIncidenceTheorem": "RiemannGaussian.ZetaRieszOwnerCountEnergy.prime_incidence_second_moment",
+    "rieszOwnerCountMeanTheorem": "RiemannGaussian.ZetaRieszOwnerCountEnergy.prime_count_second_moment",
+    "rieszOwnerMeanLogTheorem": "RiemannGaussian.ZetaRieszOwnerCountEnergy.owner_mean_log_le",
+    "rieszOwnerShellEnergyTheorem": "RiemannGaussian.ZetaRieszOwnerCountEnergy.shell_energy_le",
+    "rieszOwnerPrimeMassTheorem": "RiemannGaussian.ZetaRieszOwnerCountEnergy.primeHarmonic_le_loglog",
+    "rieszOwnerShellSignedTheorem": "RiemannGaussian.ZetaRieszOwnerCountEnergy.exists_owner_shell_bounds",
+    "rieszOwnerShellLogarithmicTheorem": "RiemannGaussian.ZetaRieszOwnerCountEnergy.exists_owner_shell_loglog_bounds",
+    "rieszOwnerShellComplexTheorem": "RiemannGaussian.ZetaRieszOwnerCountEnergy.exists_complex_owner_shell_bounds"
+  },
+  "exactBudgets": {
+    "primeCountSecondMoment": "X*(H_X^2+H_X)",
+    "cofactorShellEnergy": "2*W^2*(H_(2M)^2+H_(2M))/(M*log(M)^2)",
+    "signedBudgetSquared": "144*(b+1)^2*E_h*W^2*(B_M^2+B_M)*sum|a_i|^2/log(M)^2",
+    "primeMassBound": "2*exp(1/2)*log(4)*(1+log(4*log(X)+8))",
+    "complexCoordinateFactorInE": 2
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszOwnerCountEnergy.lean": "30ecdcb92ee42686403506a79aec9924aa1b7c22d06dd3b52f1adde51da2a65b",
+    "RiemannGaussian/ZetaRieszOwnerDensity.lean": "bad522df5c151fef0e0e49376b9bcfd2e7fe249fe6b625215ece2ed528845d71",
+    "RiemannGaussian/ZetaRieszOwnerUniformMean.lean": "7ef068403006c19af9403f1f7ee817f1176a53c34ac48e7840e68a8d0071f10e",
+    "RiemannGaussian/NatDivisorSquareMean.lean": "4fa8e28f677072e5b0660c4fbfc2a9e902df0ededbb47b8d15c090be94119de0",
+    "RiemannGaussian/ZetaRieszSixPrimeHead.lean": "73758cca9da6b5bc46e180cc85769a7b57dac7b24ec5cf6e2d674eccd5a6f50f",
+    "scripts/probe_riesz_owner_energy.py": "b366c4b644095af7ea830eee724ac9f798e5e29e035ea0c71a7658305e540ecf"
+  },
+  "integerProbe": {
+    "scope": "Optional finite diagnostic of the all-count cofactor energy.\n\nPrime incidences, squarefree masks and largest primes are computed on\nliteral integers. Normalized energies use floating arithmetic. This is\nnot a carrier/source-scale certificate and is not run by ordinary CI.",
+    "rows": [
+      {
+        "population": 32768,
+        "reciprocalPrimeMass": 2.6034166180836062,
+        "meanDistinctPrimeCountSquared": 7.31683349609375,
+        "provedCountMomentUpper": 9.381194705397489,
+        "countBasedSquarefreeEnergy": 1.235732431756313e-06,
+        "largestPrimeSquarefreeEnergy": 4.5785990979745117e-07,
+        "energyTimesPopulationLogHalfSquared": 3.813127905667402,
+        "provedShellUpperInSameNormalization": 37.524778821589955
+      },
+      {
+        "population": 262144,
+        "reciprocalPrimeMass": 2.7854693252878233,
+        "meanDistinctPrimeCountSquared": 8.454727172851562,
+        "provedCountMomentUpper": 10.544308687407225,
+        "countBasedSquarefreeEnergy": 1.1999851995358725e-07,
+        "largestPrimeSquarefreeEnergy": 4.146126056749043e-08,
+        "energyTimesPopulationLogHalfSquared": 4.367818428743853,
+        "provedShellUpperInSameNormalization": 42.1772347496289
+      },
+      {
+        "population": 1048576,
+        "reciprocalPrimeMass": 2.8907728875254044,
+        "meanDistinctPrimeCountSquared": 9.147525787353516,
+        "provedCountMomentUpper": 11.247340774777369,
+        "countBasedSquarefreeEnergy": 2.5935441038348605e-08,
+        "largestPrimeSquarefreeEnergy": 8.596423740589072e-09,
+        "energyTimesPopulationLogHalfSquared": 4.71684575806487,
+        "provedShellUpperInSameNormalization": 44.989363099109475
+      }
+    ]
+  },
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "remainingQuantitativeWork": [
+    "Irregular cofactor-dependent signed prime moments and noncontiguous period masks",
+    "Remaining period coefficient energy and radial aggregation",
+    "Matching signed cutoff correction and source-scale whole floor/ceiling"
+  ],
+  "rootAudit": {
+    "declarations": 33222,
+    "generatedDeclarations": 23290,
+    "linters": 14,
+    "errors": 0,
+    "terminalAxioms": {
+      "RiemannGaussian.ZetaRieszOwnerCountEnergy.prime_incidence_second_moment": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerCountEnergy.prime_count_second_moment": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerCountEnergy.owner_mean_log_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerCountEnergy.shell_energy_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerCountEnergy.primeHarmonic_le_loglog": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerCountEnergy.exists_owner_shell_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerCountEnergy.exists_owner_shell_loglog_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerCountEnergy.exists_complex_owner_shell_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  }
+}

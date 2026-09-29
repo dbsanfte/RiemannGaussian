@@ -24,8 +24,8 @@ There is no least-prime cutoff or coefficient-sign restriction. -/
 def cofactors (k : ℕ) (v : ℝ) : Finset ℕ :=
   (ZetaRieszCofactorMass.products k v).filter (fun a =>
     Squarefree a ∧ a.primeFactors.card = k ∧ (203/500 : ℝ)*v < Real.log a ∧
-    Real.log a ≤ (7/10 : ℝ)*v ∧
-    ∀ p ∈ a.primeFactors, Real.log p ≤ (199/200 : ℝ)*v-Real.log a)
+    Real.log a ≤ (197/200 : ℝ)*v ∧
+    ∀ p ∈ a.primeFactors, Real.log p ≤ v-1/16-Real.log a)
 
 /-- Each actual integer is counted once through its unique largest prime. -/
 def population (k : ℕ) (v y : ℝ) : Finset ℕ := (cofactors k v).biUnion (fun a =>
@@ -34,13 +34,53 @@ def population (k : ℕ) (v y : ℝ) : Finset ℕ := (cofactors k v).biUnion (fu
 /-- Geometry and exact prime count of every selected cofactor. -/
 theorem cofactor_data {k : ℕ} {v : ℝ} {a : ℕ} (ha : a ∈ cofactors k v) :
     Squarefree a ∧ a.primeFactors.card = k ∧ Real.log a.minFac ≤ v ∧
-      (203/500 : ℝ)*v < Real.log a ∧ Real.log a ≤ (7/10 : ℝ)*v ∧
-      (∀ p ∈ a.primeFactors, Real.log p ≤ (199/200 : ℝ)*v-Real.log a) := by
+      (203/500 : ℝ)*v < Real.log a ∧ Real.log a ≤ (197/200 : ℝ)*v ∧
+      (∀ p ∈ a.primeFactors, Real.log p ≤ v-1/16-Real.log a) := by
   obtain ⟨_,hs,hc,hl,hu,hm⟩ := Finset.mem_filter.mp ha
   have hv : 0 ≤ v := by nlinarith [Real.log_natCast_nonneg a]
   have hmin : Real.log a.minFac ≤ Real.log a := Real.log_le_log
     (by exact_mod_cast Nat.minFac_pos a) (by exact_mod_cast Nat.minFac_le (Nat.pos_of_ne_zero hs.ne_zero))
   exact ⟨hs,hc,by linarith,hl,hu,hm⟩
+
+/-- At every selected count, ownership already bounds the cofactor below 54/55 of the radial center. -/
+theorem cofactor_cap_of_owner {a k : ℕ} {v : ℝ} (hv : 0 ≤ v)
+    (hs : Squarefree a) (hc : a.primeFactors.card = k) (hk : k ≤ 54)
+    (ho : ∀ p ∈ a.primeFactors, Real.log p ≤ v-1/16-Real.log a) :
+    Real.log a ≤ (54/55 : ℝ)*v := by
+  by_cases hne : a.primeFactors.Nonempty
+  · obtain ⟨p,hp⟩ := hne
+    have hb : 0 ≤ v-1/16-Real.log a :=
+      (Real.log_natCast_nonneg p).trans (ho p hp)
+    have hsum := Finset.sum_le_sum ho
+    rw [Finset.sum_const,nsmul_eq_mul,hc,
+      ← CoprimeEulerPhase.squarefree_log_eq_prime_sum hs] at hsum
+    have hkR : (k : ℝ) ≤ 54 := by exact_mod_cast hk
+    have h := mul_le_mul_of_nonneg_right hkR hb
+    nlinarith only [hsum,h]
+  · have he := Finset.not_nonempty_iff_eq_empty.mp hne
+    have hlog := CoprimeEulerPhase.squarefree_log_eq_prime_sum hs
+    rw [he,Finset.sum_empty] at hlog
+    rw [hlog]
+    positivity
+
+/-- Through cofactor count fifty-four, the numerical upper cap is redundant.
+All squarefree cofactors satisfying the retained lower share and ownership
+conditions are included in the literal signed payment. -/
+theorem mem_cofactors_iff_of_count_le {k a : ℕ} (hk : k ≤ 54) {v : ℝ} (hv : 0 ≤ v) :
+    a ∈ cofactors k v ↔ Squarefree a ∧ a.primeFactors.card = k ∧
+      (203/500 : ℝ)*v < Real.log a ∧
+      (∀ p ∈ a.primeFactors, Real.log p ≤ v-1/16-Real.log a) := by
+  constructor
+  · intro ha
+    have hd := cofactor_data ha
+    exact ⟨hd.1,hd.2.1,hd.2.2.2.1,hd.2.2.2.2.2⟩
+  · rintro ⟨hs,hc,hl,ho⟩
+    have hcap := cofactor_cap_of_owner hv hs hc hk ho
+    apply Finset.mem_filter.mpr
+    refine ⟨ZetaRieszCofactorMass.mem_products_of_squarefree hs hc ?_,hs,hc,hl,by linarith,ho⟩
+    intro p hp
+    have h := ho p hp
+    linarith [Real.log_natCast_nonneg a]
 
 /-- The selected integers of any fixed prime count have unique largest-prime ownership,
 all original radial bounds, and prime shares below the separately paid owner band. -/
@@ -248,7 +288,7 @@ theorem fibre_bound {k : ℕ} (hk : 2 ≤ k) (A : Finset ℕ) {m N : ℕ} {v y L
         ZetaRieszJointAllocation.residualCoefficient A L N (p*a)*
           zetaPrimeLogKernel N (3/2+Complex.I*y) (p*a)).re| ≤
       ((m : ℝ)*V*(Real.pi/(4*m*|y|)))*
-        ((1000*responseConstant k*η/v+100*((k : ℝ)+1)*responseConstant k*Real.sqrt (N+1)/v^2)*(Real.log a.minFac*(a : ℝ)⁻¹)+(100*(2 : ℝ)^k/v)*(a : ℝ)⁻¹) := by
+        ((10000*responseConstant k*η/v+5000*((k : ℝ)+1)*responseConstant k*Real.sqrt (N+1)/v^2)*(Real.log a.minFac*(a : ℝ)⁻¹)+(2000*(2 : ℝ)^k/v)*(a : ℝ)⁻¹) := by
   let h := Real.pi/(4*m*|y|)
   let D := logPrimes (v-Real.pi/|y|-Real.log a) (2*Real.pi/|y|)
   let w := fun p : ℕ => (Real.exp (-(Real.log p+Real.log a)/2)*
@@ -266,7 +306,7 @@ theorem fibre_bound {k : ℕ} (hk : 2 ≤ k) (A : Finset ℕ) {m N : ℕ} {v y L
   let R := fun p : ℕ => (1-ZetaRieszJointAllocation.boundedShare A N (p*a))*
     response L (Real.log p+Real.log a) a
   let R₀ := R p₀
-  let E := (2 : ℝ)^k+((k : ℝ)+1)*responseConstant k*Real.sqrt (N+1)/v*Real.log a.minFac
+  let E := (2 : ℝ)^k+3*((k : ℝ)+1)*responseConstant k*Real.sqrt (N+1)/v*Real.log a.minFac
   have hd := cofactor_data ha
   have hv0 : 0 < v := by linarith
   have hL : 0 < L := by linarith
@@ -296,17 +336,17 @@ theorem fibre_bound {k : ℕ} (hk : 2 ≤ k) (A : Finset ℕ) {m N : ℕ} {v y L
     have hdif : |Real.log (p*a : ℕ)-Real.log (p₀*a : ℕ)| ≤ 1/8 := by
       apply abs_le.mpr
       constructor <;> linarith [hpT.1,hpT.2.1,hqT.1,hqT.2.1]
-    have hs := ZetaRieszAllocationVariation.boundedShare_fibre_variation_of_count A N hd.1 (by omega)
+    have hs := ZetaRieszAllocationVariation.boundedShare_fibre_variation_985 A N hd.1 (by omega)
       (hgeo p hp).1 (hnot p hp) (hA p hp) (hgeo p₀ hp₀).1 (hnot p₀ hp₀) (hA p₀ hp₀)
       hv hπ hπu hd.2.2.2.2.1 ⟨hpT.1.le,hpT.2.1⟩ ⟨hqT.1.le,hqT.2.1⟩
     rw [hd.2.1] at hs
     have hshare : |ZetaRieszJointAllocation.boundedShare A N (p*a)-
-        ZetaRieszJointAllocation.boundedShare A N (p₀*a)| ≤ ((k : ℝ)+1)*Real.sqrt (N+1)/v := by
+        ZetaRieszJointAllocation.boundedShare A N (p₀*a)| ≤ 3*((k : ℝ)+1)*Real.sqrt (N+1)/v := by
       apply hs.trans
       have hh := mul_le_mul_of_nonneg_left hdif
-        (show 0 ≤ 4*((k : ℝ)+1)*Real.sqrt (N+1)/v by positivity)
+        (show 0 ≤ 20*((k : ℝ)+1)*Real.sqrt (N+1)/v by positivity)
       apply hh.trans
-      have hz : 0 ≤ ((k : ℝ)+1)*Real.sqrt (N+1)/v := by positivity
+      have hz : 0 ≤ 3*((k : ℝ)+1)*Real.sqrt (N+1)/v := by positivity
       ring_nf at hz ⊢
       linarith only [hz]
     have hvary : |response L (Real.log p+Real.log a) a-
@@ -330,7 +370,7 @@ theorem fibre_bound {k : ℕ} (hk : 2 ≤ k) (A : Finset ℕ) {m N : ℕ} {v y L
     rw [abs_mul,abs_mul,abs_sub_comm (ZetaRieszJointAllocation.boundedShare A N (p₀*a))]
     have h1 := mul_le_mul hthetaAbs hvary (abs_nonneg _) (by norm_num : (0 : ℝ) ≤ 1)
     have h2 := mul_le_mul hshare (cofactor_response_bound hk ha L (Real.log p₀+Real.log a)) (abs_nonneg _)
-      (by positivity : 0 ≤ ((k : ℝ)+1)*Real.sqrt (N+1)/v)
+      (by positivity : 0 ≤ 3*((k : ℝ)+1)*Real.sqrt (N+1)/v)
     dsimp only [E]
     ring_nf at h1 h2 ⊢
     linarith only [h1,h2]
@@ -365,16 +405,16 @@ theorem fibre_bound {k : ℕ} (hk : 2 ≤ k) (A : Finset ℕ) {m N : ℕ} {v y L
     have hh := mul_le_mul hrc hperiod.1 (abs_nonneg _) (mul_nonneg hB0 (Real.log_natCast_nonneg a.minFac))
     exact add_le_add hh (mul_le_mul_of_nonneg_left hperiod.2 (by dsimp [E]; positivity))
   apply (mul_le_mul_of_nonneg_left hS (show 0 ≤ 1/L/a by positivity)).trans
-  have hden : v*v ≤ 5*L*(v-Real.log a) := by
-    have hh := mul_le_mul hLl (show (3/10 : ℝ)*v ≤ v-Real.log a by linarith [hd.2.2.2.2.1])
+  have hden : v*v ≤ 100*L*(v-Real.log a) := by
+    have hh := mul_le_mul hLl (show (3/200 : ℝ)*v ≤ v-Real.log a by linarith [hd.2.2.2.2.1])
       (by positivity) (by positivity : 0 ≤ L)
     nlinarith
-  have hfrac : v/(L*(v-Real.log a)) ≤ 5/v :=
+  have hfrac : v/(L*(v-Real.log a)) ≤ 100/v :=
     (div_le_div_iff₀ (mul_pos hL hab) hv0).mpr (by nlinarith only [hden])
   have hnonneg : 0 ≤ (m : ℝ)*V*h*(a : ℝ)⁻¹ := by dsimp [h]; positivity
   have hm := mul_le_mul_of_nonneg_right hfrac
     (show 0 ≤ ((m : ℝ)*V*h*(a : ℝ)⁻¹)*(64*responseConstant k*η*Real.log a.minFac+16*E) by dsimp [E]; positivity)
-  have hsmall : (64*responseConstant k*η*Real.log a.minFac+16*E)*5 ≤ (1000*responseConstant k*η+100*((k : ℝ)+1)*responseConstant k*Real.sqrt (N+1)/v)*Real.log a.minFac+100*(2 : ℝ)^k := by
+  have hsmall : (64*responseConstant k*η*Real.log a.minFac+16*E)*100 ≤ (10000*responseConstant k*η+5000*((k : ℝ)+1)*responseConstant k*Real.sqrt (N+1)/v)*Real.log a.minFac+2000*(2 : ℝ)^k := by
     have hz1 := mul_nonneg (mul_nonneg hB0 hη) (Real.log_natCast_nonneg a.minFac)
     have hz2 : 0 ≤ ((k : ℝ)+1)*responseConstant k*Real.sqrt (N+1)/v*Real.log a.minFac := by positivity
     have hz3 : 0 ≤ (2 : ℝ)^k := by positivity
@@ -402,19 +442,19 @@ theorem eventually_residual_small {k : ℕ} (hk : 2 ≤ k) {y ε : ℝ} (hy : 54
   have hCl := hC.1
   have hCv := hC.2
   have hB := responseConstant_pos k
-  let η := min (1/10000 : ℝ) (ε/(4000*responseConstant k*ZetaRieszCofactorMass.logMassConstant k))
+  let η := min (1/10000 : ℝ) (ε/(40000*responseConstant k*ZetaRieszCofactorMass.logMassConstant k))
   have hη : 0 < η := lt_min (by norm_num) (by positivity)
   have hηu : η ≤ 1/100 := (min_le_left _ _).trans (by norm_num)
-  have hηε : 1000*responseConstant k*η*ZetaRieszCofactorMass.logMassConstant k ≤ ε/4 := by
-    have hh := (le_div_iff₀ (by positivity : 0 < 4000*responseConstant k*ZetaRieszCofactorMass.logMassConstant k)).mp (min_le_right _ _ : η ≤ _)
+  have hηε : 10000*responseConstant k*η*ZetaRieszCofactorMass.logMassConstant k ≤ ε/4 := by
+    have hh := (le_div_iff₀ (by positivity : 0 < 40000*responseConstant k*ZetaRieszCofactorMass.logMassConstant k)).mp (min_le_right _ _ : η ≤ _)
     nlinarith only [hh]
   obtain ⟨m,hm,hsmall,hphase⟩ := ZetaRieszBroadSixPeriod.exists_precise_mesh hy hη
-  have hr : Tendsto (fun v : ℝ => (100*((k : ℝ)+1)*responseConstant k*ZetaRieszCofactorMass.logMassConstant k+100*(2 : ℝ)^k*ZetaRieszCofactorMass.variationConstant k)*v^(-(1/2 : ℝ))) atTop (𝓝 0) := by
+  have hr : Tendsto (fun v : ℝ => (5000*((k : ℝ)+1)*responseConstant k*ZetaRieszCofactorMass.logMassConstant k+2000*(2 : ℝ)^k*ZetaRieszCofactorMass.variationConstant k)*v^(-(1/2 : ℝ))) atTop (𝓝 0) := by
     simpa only [mul_zero] using (tendsto_rpow_neg_atTop (by norm_num : (0 : ℝ) < 1/2)).const_mul
-      (100*((k : ℝ)+1)*responseConstant k*ZetaRieszCofactorMass.logMassConstant k+100*(2 : ℝ)^k*ZetaRieszCofactorMass.variationConstant k)
+      (5000*((k : ℝ)+1)*responseConstant k*ZetaRieszCofactorMass.logMassConstant k+2000*(2 : ℝ)^k*ZetaRieszCofactorMass.variationConstant k)
   obtain ⟨v₀,hv₀⟩ := eventually_atTop.mp (hr.eventually_lt_const (show 0 < ε/2 by positivity))
   filter_upwards [ZetaRieszSaddleBand.eventually_factorial_period hm hy
-      (by norm_num : (0 : ℝ) < 1/2) hη hηu hsmall hphase,
+      (by norm_num : (0 : ℝ) < 1/100) hη hηu hsmall hphase,
     (tendsto_natCast_atTop_atTop (R := ℝ)).eventually_ge_atTop v₀,
     eventually_ge_atTop (1000 : ℕ)] with N hN hNv hlarge A v L hv hvu hpeak hLl hA
   have hNR : (1000 : ℝ) ≤ N := by exact_mod_cast hlarge
@@ -430,8 +470,8 @@ theorem eventually_residual_small {k : ℕ} (hk : 2 ≤ k) {y ε : ℝ} (hy : 54
     (hperiod (Real.log a) (by have hd := (cofactor_data ha).2.2.2.2.1; linarith))
   have hsum : |(∑ n ∈ population k v y, ZetaRieszJointAllocation.residualCoefficient A L N n*
       zetaPrimeLogKernel N (3/2+Complex.I*y) n).re| ≤
-      ((m : ℝ)*V*h)*((1000*responseConstant k*η/v+100*((k : ℝ)+1)*responseConstant k*Real.sqrt (N+1)/v^2)*(ZetaRieszCofactorMass.logMassConstant k*v)+
-        (100*(2 : ℝ)^k/v)*(ZetaRieszCofactorMass.variationConstant k*v^(1/2 : ℝ))) := by
+      ((m : ℝ)*V*h)*((10000*responseConstant k*η/v+5000*((k : ℝ)+1)*responseConstant k*Real.sqrt (N+1)/v^2)*(ZetaRieszCofactorMass.logMassConstant k*v)+
+        (2000*(2 : ℝ)^k/v)*(ZetaRieszCofactorMass.variationConstant k*v^(1/2 : ℝ))) := by
     rw [sum_population hv100 hy,Complex.re_sum]
     apply (Finset.abs_sum_le_sum_abs _ _).trans
     apply (Finset.sum_le_sum hrow).trans
@@ -448,14 +488,14 @@ theorem eventually_residual_small {k : ℕ} (hk : 2 ≤ k) {y ε : ℝ} (hy : 54
     have hh := div_le_div_of_nonneg_right hs hv0.le
     rw [Real.sqrt_eq_rpow v,hrat] at hh
     exact hh
-  have hbudget : (1000*responseConstant k*η/v+100*((k : ℝ)+1)*responseConstant k*Real.sqrt (N+1)/v^2)*(ZetaRieszCofactorMass.logMassConstant k*v)+
-      (100*(2 : ℝ)^k/v)*(ZetaRieszCofactorMass.variationConstant k*v^(1/2 : ℝ)) ≤ ε := by
-    have he : (1000*responseConstant k*η/v+100*((k : ℝ)+1)*responseConstant k*Real.sqrt (N+1)/v^2)*(ZetaRieszCofactorMass.logMassConstant k*v)+
-        (100*(2 : ℝ)^k/v)*(ZetaRieszCofactorMass.variationConstant k*v^(1/2 : ℝ)) =
-        1000*responseConstant k*η*ZetaRieszCofactorMass.logMassConstant k+100*((k : ℝ)+1)*responseConstant k*ZetaRieszCofactorMass.logMassConstant k*(Real.sqrt (N+1)/v)+
-          100*(2 : ℝ)^k*ZetaRieszCofactorMass.variationConstant k*(v^(1/2 : ℝ)/v) := by field_simp
+  have hbudget : (10000*responseConstant k*η/v+5000*((k : ℝ)+1)*responseConstant k*Real.sqrt (N+1)/v^2)*(ZetaRieszCofactorMass.logMassConstant k*v)+
+      (2000*(2 : ℝ)^k/v)*(ZetaRieszCofactorMass.variationConstant k*v^(1/2 : ℝ)) ≤ ε := by
+    have he : (10000*responseConstant k*η/v+5000*((k : ℝ)+1)*responseConstant k*Real.sqrt (N+1)/v^2)*(ZetaRieszCofactorMass.logMassConstant k*v)+
+        (2000*(2 : ℝ)^k/v)*(ZetaRieszCofactorMass.variationConstant k*v^(1/2 : ℝ)) =
+        10000*responseConstant k*η*ZetaRieszCofactorMass.logMassConstant k+5000*((k : ℝ)+1)*responseConstant k*ZetaRieszCofactorMass.logMassConstant k*(Real.sqrt (N+1)/v)+
+          2000*(2 : ℝ)^k*ZetaRieszCofactorMass.variationConstant k*(v^(1/2 : ℝ)/v) := by field_simp
     rw [he,hrat]
-    have hh := mul_le_mul_of_nonneg_left hroot (show 0 ≤ 100*((k : ℝ)+1)*responseConstant k*ZetaRieszCofactorMass.logMassConstant k by positivity)
+    have hh := mul_le_mul_of_nonneg_left hroot (show 0 ≤ 5000*((k : ℝ)+1)*responseConstant k*ZetaRieszCofactorMass.logMassConstant k by positivity)
     have ht := hv₀ v hvlarge
     ring_nf at hh ht hηε ⊢
     linarith only [hh,ht,hηε,hε]
@@ -477,7 +517,7 @@ theorem eventually_owner_mem (k : ℕ) {u y : ℝ} (hu : 1/2 < u)
     simpa only [Function.comp_def,pow_one,one_mul,add_zero] using
       (Real.tendsto_pow_log_div_mul_add_atTop 1 0 1 one_ne_zero).comp
         (tendsto_natCast_atTop_atTop (R := ℝ))
-  filter_upwards [hl.eventually_lt_const (by norm_num : (0 : ℝ) < 1/4),
+  filter_upwards [hl.eventually_lt_const (by norm_num : (0 : ℝ) < 1/100),
     ZetaRieszLowerDegreeBounds.eventually_length_ge_exponent
       (by linarith : 0 < u) (by norm_num : (0 : ℝ) ≤ 137/200) hroom,
     ZetaRieszSaddleBand.eventually_sqrt_add_one_le_mul (by norm_num : (0 : ℝ) < 1/1000),
@@ -491,7 +531,7 @@ theorem eventually_owner_mem (k : ℕ) {u y : ℝ} (hu : 1/2 < u)
     (div_le_iff₀ (by linarith : 0 < |y|)).mpr (by nlinarith [Real.pi_lt_d4])
   apply (ZetaRieszAnnulusJoint.mem_intermediatePrimes u N p).mpr
   refine ⟨hgeo.1,?_,?_⟩
-  · have hlg : 2*Real.log (N : ℝ) < (N : ℝ)/2 := by
+  · have hlg : 2*Real.log (N : ℝ) < (N : ℝ)/50 := by
       have hh := (div_lt_iff₀ hN0).mp hlog
       linarith only [hh]
     have hh : Real.log ((N^2 : ℕ) : ℝ) < Real.log p := by

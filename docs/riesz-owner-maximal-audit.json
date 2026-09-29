@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "status": "passed full warning-as-error build, root lint and transitive axiom audit; both whole thresholds remain open",
+  "scope": "The exact unpaid order interval is N/5+2 through 13N/32. For N>=32, the original owner weight has total variation at most 2 along every decreasing share sequence, with no order, count or period factor. It costs at most 3 times the raw complex partial-sum bound; moving both interval endpoints costs at most 6. For 2^b log-separated cutoffs, the joint arithmetic mean is bounded by 36*(b+1)*(E_h*(X-Y)*(b+1)*sum a_i^2 + dyadicCost(blockFloorCost)), with one proved but unevaluated E_h. Signs are combined at each divisor before charging the finite block error. Both signed bounds allow cofactor-dependent owner shares and moving period endpoints, arbitrary selected populations and common real weights. The literal cutoffSlope theorem retains strict rounding and radial lengths T(n,i). The base coefficients a_i and cutoffs R_i are fixed across labels; arbitrary a_i(n) and noncontiguous selection changes are not covered. The literal prime-fibre bridge retains the full complex phase but its raw partial-sum bound is an explicit premise. That premise, the remaining prime-period weight energy, matching cutoff correction and source-normalized binary-block floor budget remain unpaid. The logarithmic-depth price is not source decay. No zero or simplicity hypothesis is used and paid sectors are not counted twice. Both whole -79/1000 floor and 3/2 ceiling remain open; no zero exclusion or RH claim.",
+  "terminalTheorems": {
+    "rieszOwnerOrdersTheorem": "RiemannGaussian.ZetaRieszOwnerMaximal.unpaidOrders_eq",
+    "rieszOwnerTotalVariationTheorem": "RiemannGaussian.ZetaRieszOwnerMaximal.ownerWeight_variation_le_two",
+    "rieszOwnerPartialSumTheorem": "RiemannGaussian.ZetaRieszOwnerMaximal.owner_weighted_partial_bound",
+    "rieszOwnerMaximalSquareTheorem": "RiemannGaussian.ZetaRieszOwnerMaximal.owner_interval_sq_le_dyadicCost",
+    "rieszOwnerMaximalMeanTheorem": "RiemannGaussian.ZetaRieszOwnerMaximal.exists_owner_interval_mean_bound",
+    "rieszOwnerMaximalFloorCostTheorem": "RiemannGaussian.ZetaRieszOwnerMaximal.dyadic_floor_cost_le",
+    "rieszOwnerMaximalSignedTheorem": "RiemannGaussian.ZetaRieszOwnerMaximal.exists_owner_interval_signed_bounds",
+    "rieszOwnerExactFibreTheorem": "RiemannGaussian.ZetaRieszOwnerMaximal.ownerWeight_eq_fibre",
+    "rieszOwnerMaximalSlopeTheorem": "RiemannGaussian.ZetaRieszOwnerMaximal.exists_owner_slope_bounds",
+    "rieszOwnerLiteralPartialTheorem": "RiemannGaussian.ZetaRieszOwnerMaximal.literal_owner_prime_partial_bound"
+  },
+  "exactConstants": {
+    "ownerVariation": 2,
+    "ownerPartialSumMultiplier": 3,
+    "movingIntervalMultiplier": 6,
+    "meanSquareMultiplier": 36
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszOwnerMaximal.lean": "95987a0dba335dd641c13eac872146bc38ec2affdd8852005ed0711e8c93d852",
+    "RiemannGaussian/ZetaRieszCrossCutoff.lean": "dba556afac6a5c347d61d476ae0666d5144fd822b646c4fd3fba1cb5d230c4db",
+    "RiemannGaussian/ZetaRieszOwnerVariation.lean": "0ff763b57242aacaff33e0ef9a7d7ca78a6c5c568189c7fe3f7239699f0dbfa2",
+    "scripts/probe_riesz_owner_modulation.py": "e53e83763a9d0863a1e75b5105580134de7bf69787edc7b52a7236e2256306fd"
+  },
+  "allocationProbe": {
+    "scope": "Optional allocation-only diagnostic for joint radial coefficient variation.\n\nRetains the exact unpaid factorial orders and the radial kernel, sampled at\nprime half periods. This does not compute a prime sum or any changing physical\nprime mask. Sampled variation is not a certified upper bound. No source-scale\nor zero-free claim follows, and ordinary CI does not run this probe.",
+    "rows": [
+      {
+        "N": 256,
+        "height": 54.0,
+        "periods": 352,
+        "unpaidOrders": [
+          53,
+          104
+        ],
+        "cofactorLogOverNInterval": [
+          0.0,
+          1.3
+        ],
+        "samples": 2001,
+        "sampledVectorVariation": 36.81109207956165,
+        "radialCoefficientNorm": 18.269546421943016,
+        "sampledVariationOverRadialNorm": 2.014888121981448,
+        "maximumVectorNormOverRadialNorm": 1.0,
+        "maximumSampledPeriodVariation": 0.21037815950331262,
+        "maximumSampledAbelBudget": 1.0008785301878673,
+        "provedUniversalPeriodVariationBound": 2.0,
+        "provedUniversalAbelBudget": 3.0
+      },
+      {
+        "N": 640,
+        "height": 54.0,
+        "periods": 880,
+        "unpaidOrders": [
+          130,
+          260
+        ],
+        "cofactorLogOverNInterval": [
+          0.0,
+          1.3
+        ],
+        "samples": 2001,
+        "sampledVectorVariation": 57.25545290994421,
+        "radialCoefficientNorm": 28.126118407927926,
+        "sampledVariationOverRadialNorm": 2.035668487188249,
+        "maximumVectorNormOverRadialNorm": 1.0,
+        "maximumSampledPeriodVariation": 0.32633559658220257,
+        "maximumSampledAbelBudget": 1.0229880859321467,
+        "provedUniversalPeriodVariationBound": 2.0,
+        "provedUniversalAbelBudget": 3.0
+      },
+      {
+        "N": 1536,
+        "height": 54.0,
+        "periods": 2112,
+        "unpaidOrders": [
+          309,
+          624
+        ],
+        "cofactorLogOverNInterval": [
+          0.0,
+          1.3
+        ],
+        "samples": 2001,
+        "sampledVectorVariation": 85.22396439253698,
+        "radialCoefficientNorm": 41.12251371810465,
+        "sampledVariationOverRadialNorm": 2.072440536508744,
+        "maximumVectorNormOverRadialNorm": 1.0,
+        "maximumSampledPeriodVariation": 0.48554516534145886,
+        "maximumSampledAbelBudget": 1.1052249574729862,
+        "provedUniversalPeriodVariationBound": 2.0,
+        "provedUniversalAbelBudget": 3.0
+      },
+      {
+        "N": 4096,
+        "height": 54.0,
+        "periods": 5633,
+        "unpaidOrders": [
+          821,
+          1664
+        ],
+        "cofactorLogOverNInterval": [
+          0.0,
+          1.3
+        ],
+        "samples": 2001,
+        "sampledVectorVariation": 126.05070071165258,
+        "radialCoefficientNorm": 59.13030842633714,
+        "sampledVariationOverRadialNorm": 2.1317443467876203,
+        "maximumVectorNormOverRadialNorm": 1.0,
+        "maximumSampledPeriodVariation": 0.7128787141292529,
+        "maximumSampledAbelBudget": 1.3007240118668084,
+        "provedUniversalPeriodVariationBound": 2.0,
+        "provedUniversalAbelBudget": 3.0
+      },
+      {
+        "N": 8192,
+        "height": 54.0,
+        "periods": 11265,
+        "unpaidOrders": [
+          1640,
+          3328
+        ],
+        "cofactorLogOverNInterval": [
+          0.0,
+          1.3
+        ],
+        "samples": 2001,
+        "sampledVectorVariation": 158.5941649180151,
+        "radialCoefficientNorm": 73.14363852385779,
+        "sampledVariationOverRadialNorm": 2.1682564351277835,
+        "maximumVectorNormOverRadialNorm": 1.0,
+        "maximumSampledPeriodVariation": 0.8675646169665958,
+        "maximumSampledAbelBudget": 1.5019546543209115,
+        "provedUniversalPeriodVariationBound": 2.0,
+        "provedUniversalAbelBudget": 3.0
+      }
+    ]
+  },
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "openPremises": [
+    "The literal prime partial-sum bridge assumes its raw bound B explicitly; this slice does not prove B small."
+  ],
+  "remainingQuantitativeWork": [
+    "Remaining cofactor-dependent prime-period coefficients and noncontiguous selections",
+    "Joint signed Riesz cutoff corrections",
+    "Actual weight energy and signed binary-block counting errors at source scale"
+  ],
+  "rootAudit": {
+    "lint": "-- Found 0 errors in 33156 declarations (plus 23173 automatically generated ones) in RiemannGaussian with 14 linters",
+    "axioms": {
+      "RiemannGaussian.ZetaRieszOwnerMaximal.unpaidOrders_eq": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerMaximal.ownerWeight_variation_le_two": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerMaximal.owner_weighted_partial_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerMaximal.prefix_sq_le_dyadicCost": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerMaximal.exists_owner_interval_mean_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerMaximal.dyadic_floor_cost_le": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerMaximal.exists_owner_interval_signed_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerMaximal.ownerWeight_eq_fibre": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerMaximal.exists_owner_slope_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszOwnerMaximal.literal_owner_prime_partial_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  }
+}
