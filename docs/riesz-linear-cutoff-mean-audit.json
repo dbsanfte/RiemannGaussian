@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "status": "Focused Lean, full build, root lint and terminal axiom gates passed; both whole thresholds remain open",
+  "scope": "One proved but UNEVALUATED constant E>0 bounds the exact Riesz cutoff-difference mean by E*X*min((B-A)^2,B-A), for every A<=B and every squarefree subset of (1,X]. Finite Abel weights satisfy 0<=b_k<=1/k and sum b_k<=B-A; the signed sharp-prefix Gram rows have numerical logarithmic cost at most 4. Direct and exact complementary (n-1)/k branches pay every finite counting error. Both signed bounds retain arbitrary correlated weights. The terminal original residualCoefficient*zetaPrimeLogKernel fibre keeps squarefreeness, at least two cofactor factors, the actual marked prime, coprimality, selected-prime set, allocation, full phase and every finite selection. Its squared budget is sum_a(signedPrimeWeight(a,p)/a)^2 * E*X*min((log p)^2,log p), saving one prime logarithm for large p. The actual weight energy, aggregation over prime/radial periods, original signed crossings and paid-sector holes remain UNPAID. This is not a source-normalized o(1) estimate; do not add credits from inside a complete period twice. The unit is excluded explicitly. No prime-density transport, zero hypothesis, new zero exclusion or numerical certificate is used. Both whole -79/1000 floor and 3/2 ceiling remain open.",
+  "terminalTheorems": {
+    "rieszLinearCutoffRowTheorem": "RiemannGaussian.ZetaRieszLinearCutoffMean.logarithmic_row",
+    "rieszPositiveCutoffGramTheorem": "RiemannGaussian.ZetaRieszLinearCutoffMean.positive_weighted_gram_mean",
+    "rieszLogWeightedCutoffTheorem": "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_log_weighted_mean",
+    "rieszMonotoneLogCutoffTheorem": "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_monotone_log_weight_mean",
+    "rieszLinearCutoffMeanTheorem": "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_linear_riesz_difference_mean_bound",
+    "rieszMinimumCutoffMeanTheorem": "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_min_riesz_difference_mean_bound",
+    "rieszLinearCutoffSignedTheorem": "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_joint_difference_bounds",
+    "rieszLinearCutoffFibreTheorem": "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_literal_prime_fibre_bounds"
+  },
+  "exactBudgets": {
+    "logarithmicRow": 4,
+    "mean": "E*X*min((B-A)^2,B-A)",
+    "literalPrimeFibre": "sum_a(signedPrimeWeight(a,p)/a)^2 * E*X*min((log p)^2,log p)",
+    "constant": "E>0 proved but unevaluated"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszLinearCutoffMean.lean": "32566baf41fd656af30514bd988a0ddf5708dbf89481d50ee5dc7b20ced9352c",
+    "RiemannGaussian/ZetaRieszSquarefreeSeparatedMean.lean": "33036d3f48598b1a12dcbbe8d23dbaf8e97f23535610afa8ba5df8a34a50ef43",
+    "RiemannGaussian/ZetaRieszCrossCutoff.lean": "dba556afac6a5c347d61d476ae0666d5144fd822b646c4fd3fba1cb5d230c4db",
+    "scripts/probe_riesz_linear_cutoff.py": "0a637a45af68d2657e2f2ecc67f98881c3d4617355a3a1b44531c4a576efd074"
+  },
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "remainingQuantitativeWork": [
+    "Original correlated weight energy",
+    "Prime/radial aggregation",
+    "Original signed crossings and paid-sector holes",
+    "Both whole thresholds"
+  ],
+  "rootAudit": {
+    "errors": 0,
+    "declarations": 33246,
+    "generatedDeclarations": 23344,
+    "linters": 14,
+    "terminalAxioms": {
+      "RiemannGaussian.ZetaRieszLinearCutoffMean.logarithmic_row": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszLinearCutoffMean.positive_weighted_gram_mean": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_log_weighted_mean": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_monotone_log_weight_mean": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_linear_riesz_difference_mean_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_min_riesz_difference_mean_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_joint_difference_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_literal_prime_fibre_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  },
+  "probe": {
+    "scope": "Optional finite arithmetic diagnostic for the linear Riesz cutoff cost.\n\nKeeps the exact integer Mobius coefficients and every signed divisor term,\nwith floating logarithms. The unit is excluded. This is not a source-scale\ncarrier certificate or a numerical bound on the Lean existential constant.\nIt is not run by ordinary CI.",
+    "rowCount": 84,
+    "populations": [
+      16384,
+      65536,
+      262144
+    ],
+    "maxRatio": 0.8653120968809158,
+    "maxCompositeRatio": 0.3767319995553187
+  }
+}

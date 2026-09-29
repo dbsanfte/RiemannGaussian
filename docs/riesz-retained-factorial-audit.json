@@ -1,0 +1,593 @@
+{
+  "schemaVersion": 1,
+  "scope": "The ORIGINAL residualCoefficient*zetaPrimeLogKernel carrier now has both signed bounds on complete ordinary-prime periods, with its factorial kernel, 1-boundedShare allocation, both Riesz hinges, full product phase and ALL factorial orders retained. Cofactors are squarefree with at least two prime factors; there is no upper prime-count restriction. Exact unused-majority allocations give nonnegative marked-order coefficients bounded by the binomial coefficients, independently of the marked prime. Signed finite Abel tails pay a varying amplitude by Q=a*(4W/a^2+D*h*B)^2+h*((W+D*h)*B)^2, where h=2*pi/|y| and B=2/(|y|*a)+4/a^2, for a>=5000 and |y|>=54. The actual factorial amplitude has W_j=exp(-a/2)*(a+h)^j and D_j=W_j*(abs(j/a-1/2)+j*h/a^2). Binomial variance sums every order into the explicit summedPeriodCost, with no maximum-score or order-count multiplier. One proved but UNEVALUATED E>0 gives both signed bounds sqrt(E)*summedPeriodCost and finite-family bound sqrt(E)*sum_i summedPeriodCost_i. Complete periods must lie in the eligible set and be coprime to every selected cofactor. Cofactor-dependent prime holes and the total source-normalized cost remain OPEN; this is NOT a whole-carrier smallness theorem. The optional numerical diagnostic shows a smaller order budget but central-saddle source growth persists; it proves neither an asymptotic no-go nor a lower bound on the signed carrier. No zero or simplicity hypothesis, generic density transport, low-order deletion or extra paid-sector credit is used. Both whole -79/1000 floor and 3/2 ceiling remain open; no zero exclusion or RH claim.",
+  "status": "Focused Lean, full build, root lint and terminal axiom gates passed; both whole thresholds remain open",
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "rieszWeightedPrimePeriodTheorem": "RiemannGaussian.ZetaRieszWeightedPrimeTail.weighted_cosine_period",
+    "rieszWeightedTailEnergyTheorem": "RiemannGaussian.ZetaRieszWeightedPrimeTail.weighted_profile_energy",
+    "rieszFactorialShellBoundsTheorem": "RiemannGaussian.ZetaRieszWeightedPrimeTail.exists_factorial_shell_bounds",
+    "rieszUnassignedMultinomialTheorem": "RiemannGaussian.ZetaRieszRetainedFactorial.unassigned_multinomial",
+    "rieszRetainedCoefficientsTheorem": "RiemannGaussian.ZetaRieszRetainedFactorial.exists_retained_coefficients",
+    "rieszLiteralFactorialPeriodTheorem": "RiemannGaussian.ZetaRieszRetainedFactorial.exists_literal_period_bounds",
+    "rieszMeanAbsoluteScoreTheorem": "RiemannGaussian.ZetaRieszRetainedFactorial.mean_absolute_score",
+    "rieszFactorialOrderBudgetTheorem": "RiemannGaussian.ZetaRieszRetainedFactorial.factorial_order_budget",
+    "rieszLiteralSummedPeriodTheorem": "RiemannGaussian.ZetaRieszRetainedFactorial.exists_literal_summed_period_bounds",
+    "rieszLiteralFactorialFamilyTheorem": "RiemannGaussian.ZetaRieszRetainedFactorial.exists_literal_family_bounds"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszWeightedPrimeTail.lean": "1dc6375f3f3179b8533e152ce7c5b5aab8bcf9c89160199b8073043195b4b9d4",
+    "RiemannGaussian/ZetaRieszRetainedFactorial.lean": "dcfc28c5cdf008aff385dc95606479591323a49800cc8b5a82af5f7a56e717be",
+    "RiemannGaussian/ZetaRieszPrimeTailEnergy.lean": "9f881fa9744ed80a6ecf9f83e70bfa4a003e3703f97a732983c28c2d55e7178c",
+    "RiemannGaussian/ZetaRieszAllocationVariation.lean": "4b50d35045951dc95cdfc3f0be15459046b93a5cea1ae8e5f464059eaa84518e",
+    "scripts/probe_riesz_retained_factorial.py": "6fb9abf076813a65d98385188975519f63bf18d60b370cdad32b2c639dc918a4"
+  },
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszWeightedPrimeTail.weighted_cosine_period": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszWeightedPrimeTail.weighted_profile_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszWeightedPrimeTail.exists_factorial_shell_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszRetainedFactorial.unassigned_multinomial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszRetainedFactorial.exists_retained_coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszRetainedFactorial.exists_literal_period_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszRetainedFactorial.mean_absolute_score": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszRetainedFactorial.factorial_order_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszRetainedFactorial.exists_literal_summed_period_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszRetainedFactorial.exists_literal_family_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "remainingQuantitativeWork": [
+    "Cofactor-dependent holes and clipped periods, retaining actual masks and coprimality",
+    "Combined source-normalized cost across the central radial saddle",
+    "Explicit value of the proved universal mean constant when a numerical whole threshold is attempted",
+    "Disjoint accounting of already-paid sectors and both independent whole-carrier thresholds"
+  ],
+  "probe": {
+    "scope": "Optional diagnostics for the literal retained-factorial period bound.\n\nInteger coefficient checks are exact finite regressions. The large-order\nbinomial calculations use floating point, not a certificate. No actual\nprimes are enumerated at exponential endpoints, no value for the proved\nmean constant E is inferred, and no source-scale floor/ceiling is claimed.\nThis script is deliberately outside routine CI.",
+    "integerRegressions": [
+      {
+        "N": 8,
+        "cofactorLogs": [
+          1,
+          2
+        ],
+        "orders": [
+          3
+        ],
+        "nonnegativeAndBelowBinomialCap": true,
+        "zeroOrderRetained": true,
+        "nonzeroOrders": 9
+      },
+      {
+        "N": 8,
+        "cofactorLogs": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "orders": [
+          3
+        ],
+        "nonnegativeAndBelowBinomialCap": true,
+        "zeroOrderRetained": true,
+        "nonzeroOrders": 9
+      },
+      {
+        "N": 8,
+        "cofactorLogs": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "orders": [
+          3
+        ],
+        "nonnegativeAndBelowBinomialCap": true,
+        "zeroOrderRetained": true,
+        "nonzeroOrders": 9
+      },
+      {
+        "N": 16,
+        "cofactorLogs": [
+          1,
+          2
+        ],
+        "orders": [
+          5,
+          6
+        ],
+        "nonnegativeAndBelowBinomialCap": true,
+        "zeroOrderRetained": true,
+        "nonzeroOrders": 16
+      },
+      {
+        "N": 16,
+        "cofactorLogs": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "orders": [
+          5,
+          6
+        ],
+        "nonnegativeAndBelowBinomialCap": true,
+        "zeroOrderRetained": true,
+        "nonzeroOrders": 16
+      },
+      {
+        "N": 16,
+        "cofactorLogs": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "orders": [
+          5,
+          6
+        ],
+        "nonnegativeAndBelowBinomialCap": true,
+        "zeroOrderRetained": true,
+        "nonzeroOrders": 16
+      },
+      {
+        "N": 32,
+        "cofactorLogs": [
+          1,
+          2
+        ],
+        "orders": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "nonnegativeAndBelowBinomialCap": true,
+        "zeroOrderRetained": true,
+        "nonzeroOrders": 28
+      },
+      {
+        "N": 32,
+        "cofactorLogs": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "orders": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "nonnegativeAndBelowBinomialCap": true,
+        "zeroOrderRetained": true,
+        "nonzeroOrders": 28
+      },
+      {
+        "N": 32,
+        "cofactorLogs": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "orders": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "nonnegativeAndBelowBinomialCap": true,
+        "zeroOrderRetained": true,
+        "nonzeroOrders": 28
+      },
+      {
+        "N": 64,
+        "cofactorLogs": [
+          1,
+          2
+        ],
+        "orders": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "nonnegativeAndBelowBinomialCap": true,
+        "zeroOrderRetained": true,
+        "nonzeroOrders": 53
+      },
+      {
+        "N": 64,
+        "cofactorLogs": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "orders": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "nonnegativeAndBelowBinomialCap": true,
+        "zeroOrderRetained": true,
+        "nonzeroOrders": 53
+      },
+      {
+        "N": 64,
+        "cofactorLogs": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "orders": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "nonnegativeAndBelowBinomialCap": true,
+        "zeroOrderRetained": true,
+        "nonzeroOrders": 53
+      },
+      {
+        "N": 128,
+        "cofactorLogs": [
+          1,
+          2
+        ],
+        "orders": [
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52
+        ],
+        "nonnegativeAndBelowBinomialCap": true,
+        "zeroOrderRetained": true,
+        "nonzeroOrders": 104
+      },
+      {
+        "N": 128,
+        "cofactorLogs": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "orders": [
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52
+        ],
+        "nonnegativeAndBelowBinomialCap": true,
+        "zeroOrderRetained": true,
+        "nonzeroOrders": 104
+      },
+      {
+        "N": 128,
+        "cofactorLogs": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "orders": [
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52
+        ],
+        "nonnegativeAndBelowBinomialCap": true,
+        "zeroOrderRetained": true,
+        "nonzeroOrders": 104
+      }
+    ],
+    "orderCosts": [
+      {
+        "N": 16384,
+        "share": 0.55,
+        "radialSlope": 1.95,
+        "primeLogEndpoint": 17572.796144716536,
+        "averageScore": 0.012827671861440041,
+        "provedVarianceScoreBound": 0.016453929985514364,
+        "exactOrderEnergyAverage": 2.2564736294444685e-06,
+        "provedSummedBudgetFactor": 2.9800346938592398e-06,
+        "maximumScoreBudgetFactor": 1.8836880444586802e-05,
+        "summedOverMaximumBudget": 0.15820213451084567,
+        "sourceNormalizedSaddleBudgetWithoutSqrtE_log10": -9.548017810934198
+      },
+      {
+        "N": 16384,
+        "share": 0.55,
+        "radialSlope": 2.0,
+        "primeLogEndpoint": 18023.383644716534,
+        "averageScore": 0.002822386749196911,
+        "provedVarianceScoreBound": 0.003542347896132176,
+        "exactOrderEnergyAverage": 1.8816685500508296e-06,
+        "provedSummedBudgetFactor": 2.472965285708558e-06,
+        "maximumScoreBudgetFactor": 1.8545452061470136e-05,
+        "summedOverMaximumBudget": 0.13334618522707076,
+        "sourceNormalizedSaddleBudgetWithoutSqrtE_log10": -7.367526481297729
+      },
+      {
+        "N": 16384,
+        "share": 0.55,
+        "radialSlope": 2.03,
+        "primeLogEndpoint": 18293.736144716535,
+        "averageScore": 0.007431387416427202,
+        "provedVarianceScoreBound": 0.010872761312579426,
+        "exactOrderEnergyAverage": 1.9811842312677732e-06,
+        "provedSummedBudgetFactor": 2.660642135575512e-06,
+        "maximumScoreBudgetFactor": 1.837668771485964e-05,
+        "summedOverMaximumBudget": 0.14478355277398985,
+        "sourceNormalizedSaddleBudgetWithoutSqrtE_log10": -8.12838207283474
+      },
+      {
+        "N": 65536,
+        "share": 0.55,
+        "radialSlope": 1.95,
+        "primeLogEndpoint": 70288.31614471653,
+        "averageScore": 0.0128222106681441,
+        "provedVarianceScoreBound": 0.014634861633213262,
+        "exactOrderEnergyAverage": 4.60325755952774e-07,
+        "provedSummedBudgetFactor": 6.332272707085132e-07,
+        "maximumScoreBudgetFactor": 8.545013827805388e-06,
+        "summedOverMaximumBudget": 0.07410488543014383,
+        "sourceNormalizedSaddleBudgetWithoutSqrtE_log10": -15.171250110477054
+      },
+      {
+        "N": 65536,
+        "share": 0.55,
+        "radialSlope": 2.0,
+        "primeLogEndpoint": 72090.58364471655,
+        "averageScore": 0.0014103994400881765,
+        "provedVarianceScoreBound": 0.001768931703822992,
+        "exactOrderEnergyAverage": 2.8897586881278945e-07,
+        "provedSummedBudgetFactor": 4.106333622061095e-07,
+        "maximumScoreBudgetFactor": 8.429544664506822e-06,
+        "summedOverMaximumBudget": 0.048713587571949116,
+        "sourceNormalizedSaddleBudgetWithoutSqrtE_log10": -6.313791036783015
+      },
+      {
+        "N": 65536,
+        "share": 0.55,
+        "radialSlope": 2.03,
+        "primeLogEndpoint": 73171.94414471653,
+        "averageScore": 0.007389170638245783,
+        "provedVarianceScoreBound": 0.009130352599784883,
+        "exactOrderEnergyAverage": 3.640251038790846e-07,
+        "provedSummedBudgetFactor": 5.208576196456364e-07,
+        "maximumScoreBudgetFactor": 8.36244649098264e-06,
+        "summedOverMaximumBudget": 0.062285315691680124,
+        "sourceNormalizedSaddleBudgetWithoutSqrtE_log10": -9.380877265511137
+      },
+      {
+        "N": 262144,
+        "share": 0.55,
+        "radialSlope": 1.95,
+        "primeLogEndpoint": 281150.39614471653,
+        "averageScore": 0.01282093728648767,
+        "provedVarianceScoreBound": 0.013727093186123184,
+        "exactOrderEnergyAverage": 1.3860994640529988e-07,
+        "provedSummedBudgetFactor": 1.834653804974769e-07,
+        "maximumScoreBudgetFactor": 4.139673792525518e-06,
+        "summedOverMaximumBudget": 0.0443188013579082,
+        "sourceNormalizedSaddleBudgetWithoutSqrtE_log10": -34.60841690279291
+      },
+      {
+        "N": 262144,
+        "share": 0.55,
+        "radialSlope": 2.0,
+        "primeLogEndpoint": 288359.3836447165,
+        "averageScore": 0.0007049997743013822,
+        "provedVarianceScoreBound": 0.0008839012683611378,
+        "exactOrderEnergyAverage": 5.407918457258292e-08,
+        "provedSummedBudgetFactor": 7.67613119898527e-08,
+        "maximumScoreBudgetFactor": 4.086308151450682e-06,
+        "summedOverMaximumBudget": 0.018785003270642142,
+        "sourceNormalizedSaddleBudgetWithoutSqrtE_log10": 1.195015104076701
+      },
+      {
+        "N": 262144,
+        "share": 0.55,
+        "radialSlope": 2.03,
+        "primeLogEndpoint": 292684.77614471654,
+        "averageScore": 0.007389162561654177,
+        "provedVarianceScoreBound": 0.008259601296285468,
+        "exactOrderEnergyAverage": 9.464639863571938e-08,
+        "provedSummedBudgetFactor": 1.3430123812276927e-07,
+        "maximumScoreBudgetFactor": 4.05525871299149e-06,
+        "summedOverMaximumBudget": 0.033117797809673576,
+        "sourceNormalizedSaddleBudgetWithoutSqrtE_log10": -11.243306221423792
+      }
+    ]
+  }
+}

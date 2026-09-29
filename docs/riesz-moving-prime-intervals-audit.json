@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "scope": "The ORIGINAL residualCoefficient/kernel carrier now has BOTH signed bounds for COFACTOR-DEPENDENT prime intervals. Binary maximal sums pay moving endpoints at squared-mean cost 4*(b+1), retaining both Riesz cutoffs, full product phase and ALL orders including ZERO AND ONE. Signed prime sums stay INSIDE each block quadratic energy. Exact retained B(n,j) enter the cofactor energy; their binomial caps are NOT substituted into the terminal cost. One proved but UNEVALUATED E works for all finite primes, heights, cutoffs and squarefree composite cofactors; there is NO eventual prime threshold or prime-count ceiling. Only SELECTED primes must be eligible and coprime. Disjoint cells give the literal prime union; unique largest-prime ownership gives an actual set of integer labels without duplicates. Finite radial/count families retain the sum of their exact costs, with no family-cardinality multiplier. An interval may move arbitrarily with its cofactor. Internal holes need separate runs, and a disjoint WHOLE-CORE COVER and TOTAL source-normalized cost remain OPEN. The optional small-order probe lowers the displayed cost from 14.13 to 0.156 at N=6 and 71.13 to 0.166 at N=8, before the unevaluated sqrt(E). This is finite floating evidence, not an eventual estimate or a certificate. No generic prime-density transfer, zero or simplicity hypothesis, low-order deletion or extra companion credit is used. Both whole -79/1000 floor and 3/2 ceiling remain open; no zero exclusion or RH claim.",
+  "status": "Focused Lean, full build, root lint and terminal axiom gates passed; both whole thresholds remain open",
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "rieszMovingIntervalMaximalTheorem": "RiemannGaussian.ZetaRieszMovingPrimeIntervals.interval_sq_le_dyadicCost",
+    "rieszMovingBlockMeanTheorem": "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_block_mean",
+    "rieszMovingMeanTheorem": "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_moving_mean",
+    "rieszMovingWeightedTheorem": "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_moving_weighted_bounds",
+    "rieszLiteralMovingTheorem": "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_literal_moving_bounds",
+    "rieszLiteralUnionTheorem": "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_literal_union_bounds",
+    "rieszLiteralMovingFamilyTheorem": "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_literal_moving_family_bounds",
+    "rieszLiteralOwnedMovingTheorem": "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_literal_owned_bounds"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszMovingPrimeIntervals.lean": "d613f12356094ac4edaaf5b6389b5ea8a3d8c297bcb31a27075acbbde901516a",
+    "RiemannGaussian/ZetaRieszOwnerMaximal.lean": "3efd2a5e3e8bfb17f4fb16f5655a48f737d6b5c62582714d5d106e7dbc107f8e",
+    "RiemannGaussian/ZetaRieszSignedCutoffEnergy.lean": "c5046b28f59f34362ea3bb6dfb97f823c57fb3f34a338c542c53f9b4ac8901e4",
+    "RiemannGaussian/ZetaRieszRetainedFactorial.lean": "dcfc28c5cdf008aff385dc95606479591323a49800cc8b5a82af5f7a56e717be",
+    "RiemannGaussian/ZetaRieszCoupledWindow.lean": "4af95c8089964fd23c90135faf14487ceb302612fc677a108216ac4e49929cec",
+    "scripts/probe_riesz_moving_prime_intervals.py": "6a87a31f8f0e3ce6a81258bb1f6f4f7d8207dbbb7b11e1bdd572597bfa46f00a"
+  },
+  "numericalProbe": {
+    "scope": "Optional moving-interval diagnostic; never a CI or RH certificate.\n\nActual primes, squarefree cofactors, unique largest-prime ownership, the\n1.95N..2.03N window, nondominant .65 mask, moving physical length, both Riesz\ncutoffs, every factorial order and the exact original allocation are kept.\nThe population is finite and truncated. The reported source cost omits the\nUNEVALUATED common sqrt(E); small-N evidence is not an eventual bound.\nNo smooth prime density, phase freezing or completed prime row is used.",
+    "rows": [
+      {
+        "order": 6,
+        "population": 4096,
+        "allCofactorPrimesAboveNSquared": false,
+        "radius": 0.50005,
+        "height": 54.0,
+        "length": 4.795790545596741,
+        "physicalUpper": 121,
+        "atoms": 2130,
+        "shells": [
+          {
+            "lower": 1024,
+            "upper": 2048,
+            "cofactors": 201,
+            "primeCells": 14,
+            "binaryDepth": 4,
+            "distinctMovingIntervals": 34,
+            "sourceCostWithoutSqrtE": 0.050382288902056434
+          },
+          {
+            "lower": 2048,
+            "upper": 4096,
+            "cofactors": 183,
+            "primeCells": 13,
+            "binaryDepth": 4,
+            "distinctMovingIntervals": 57,
+            "sourceCostWithoutSqrtE": 0.1054551112598103
+          }
+        ],
+        "factorialOrders": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "maximumRelativeAllocationError": 1.7543876638062443e-15,
+        "actualJoint": 0.011885862580992633,
+        "expandedJoint": 0.011885862580992631,
+        "sourceNormalizedJoint": 9.292332172848839e-05,
+        "sourceCostWithoutSqrtE": 0.15583740016186673,
+        "wholeCarrierCovered": false,
+        "constantEvaluated": false,
+        "numericalCertificate": false
+      },
+      {
+        "order": 6,
+        "population": 4096,
+        "allCofactorPrimesAboveNSquared": true,
+        "radius": 0.50005,
+        "height": 54.0,
+        "length": 4.795790545596741,
+        "physicalUpper": 121,
+        "atoms": 113,
+        "shells": [
+          {
+            "lower": 1024,
+            "upper": 2048,
+            "cofactors": 7,
+            "primeCells": 14,
+            "binaryDepth": 4,
+            "distinctMovingIntervals": 6,
+            "sourceCostWithoutSqrtE": 0.007867627339397016
+          },
+          {
+            "lower": 2048,
+            "upper": 4096,
+            "cofactors": 14,
+            "primeCells": 13,
+            "binaryDepth": 4,
+            "distinctMovingIntervals": 13,
+            "sourceCostWithoutSqrtE": 0.031335862247428355
+          }
+        ],
+        "factorialOrders": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "maximumRelativeAllocationError": 1.274549855300808e-15,
+        "actualJoint": 0.0004456848079791508,
+        "expandedJoint": 0.0004456848079791496,
+        "sourceNormalizedJoint": 3.4843506324542685e-06,
+        "sourceCostWithoutSqrtE": 0.039203489586825374,
+        "wholeCarrierCovered": false,
+        "constantEvaluated": false,
+        "numericalCertificate": false
+      },
+      {
+        "order": 8,
+        "population": 65536,
+        "allCofactorPrimesAboveNSquared": false,
+        "radius": 0.50005,
+        "height": 54.0,
+        "length": 6.802394763324311,
+        "physicalUpper": 900,
+        "atoms": 285908,
+        "shells": [
+          {
+            "lower": 4096,
+            "upper": 8192,
+            "cofactors": 475,
+            "primeCells": 25,
+            "binaryDepth": 5,
+            "distinctMovingIntervals": 25,
+            "sourceCostWithoutSqrtE": 0.00952903382494573
+          },
+          {
+            "lower": 8192,
+            "upper": 16384,
+            "cofactors": 2420,
+            "primeCells": 82,
+            "binaryDepth": 7,
+            "distinctMovingIntervals": 320,
+            "sourceCostWithoutSqrtE": 0.0437856753794978
+          },
+          {
+            "lower": 16384,
+            "upper": 32768,
+            "cofactors": 3337,
+            "primeCells": 82,
+            "binaryDepth": 7,
+            "distinctMovingIntervals": 961,
+            "sourceCostWithoutSqrtE": 0.06585913238678995
+          },
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "cofactors": 3362,
+            "primeCells": 44,
+            "binaryDepth": 6,
+            "distinctMovingIntervals": 585,
+            "sourceCostWithoutSqrtE": 0.04682336436014019
+          }
+        ],
+        "factorialOrders": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "maximumRelativeAllocationError": 2.675924850741818e-15,
+        "actualJoint": -0.05284256872756989,
+        "expandedJoint": -0.05284256872756989,
+        "sourceNormalizedJoint": -0.00010330106653747829,
+        "sourceCostWithoutSqrtE": 0.16599720595137368,
+        "wholeCarrierCovered": false,
+        "constantEvaluated": false,
+        "numericalCertificate": false
+      },
+      {
+        "order": 8,
+        "population": 65536,
+        "allCofactorPrimesAboveNSquared": true,
+        "radius": 0.50005,
+        "height": 54.0,
+        "length": 6.802394763324311,
+        "physicalUpper": 900,
+        "atoms": 25344,
+        "shells": [
+          {
+            "lower": 4096,
+            "upper": 8192,
+            "cofactors": 22,
+            "primeCells": 25,
+            "binaryDepth": 5,
+            "distinctMovingIntervals": 13,
+            "sourceCostWithoutSqrtE": 0.0020520280586582298
+          },
+          {
+            "lower": 8192,
+            "upper": 16384,
+            "cofactors": 172,
+            "primeCells": 82,
+            "binaryDepth": 7,
+            "distinctMovingIntervals": 63,
+            "sourceCostWithoutSqrtE": 0.011103674741209492
+          },
+          {
+            "lower": 16384,
+            "upper": 32768,
+            "cofactors": 461,
+            "primeCells": 82,
+            "binaryDepth": 7,
+            "distinctMovingIntervals": 279,
+            "sourceCostWithoutSqrtE": 0.023351848893605802
+          },
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "cofactors": 159,
+            "primeCells": 44,
+            "binaryDepth": 6,
+            "distinctMovingIntervals": 128,
+            "sourceCostWithoutSqrtE": 0.011230373495402698
+          }
+        ],
+        "factorialOrders": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "maximumRelativeAllocationError": 2.675924850741818e-15,
+        "actualJoint": 0.013331845317130376,
+        "expandedJoint": 0.013331845317130378,
+        "sourceNormalizedJoint": 2.6062204645508105e-05,
+        "sourceCostWithoutSqrtE": 0.04773792518887622,
+        "wholeCarrierCovered": false,
+        "constantEvaluated": false,
+        "numericalCertificate": false
+      }
+    ]
+  },
+  "remainingQuantitativeWork": [
+    "Disjoint interval/run cover of every remaining literal core mask.",
+    "Source-normalized total of exact allocation and signed binary prime-block energies.",
+    "Evaluate or asymptotically absorb the common arithmetic mean constant.",
+    "Independent whole -79/1000 floor and 3/2 ceiling."
+  ],
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.interval_sq_le_dyadicCost": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_block_mean": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_moving_mean": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_moving_weighted_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_literal_moving_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_literal_union_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_literal_moving_family_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_literal_owned_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

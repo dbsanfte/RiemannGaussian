@@ -172,7 +172,8 @@ def dyadicCost (F : ℕ → ℕ → ℝ) : ℕ → ℕ → ℝ
   | 0, o => F o 1
   | b+1, o => F o (2^(b+1))+dyadicCost F b o+dyadicCost F b (o+2^b)
 
-private theorem dyadicCost_nonneg (F : ℕ → ℕ → ℝ)
+/-- A binary block budget is nonnegative when every block cost is nonnegative. -/
+theorem dyadicCost_nonneg (F : ℕ → ℕ → ℝ)
     (hF : ∀ o m, 0 ≤ F o m) (b o : ℕ) : 0 ≤ dyadicCost F b o := by
   induction b generalizing o with
   | zero => exact hF _ _
@@ -233,7 +234,8 @@ theorem prefix_sq_le_dyadicCost (f : ℕ → ℝ) (b o : ℕ) {j : ℕ} (hj : j 
       nlinarith [mul_le_mul_of_nonneg_left hfull (show 0 ≤ (b : ℝ)+2 by positivity),
         mul_nonneg (show 0 ≤ (b : ℝ)+2 by positivity) hroot]
 
-private theorem dyadicCost_mono (F G : ℕ → ℕ → ℝ) (M b o : ℕ)
+/-- Blockwise domination passes through the finite binary budget. -/
+theorem dyadicCost_mono (F G : ℕ → ℕ → ℝ) (M b o : ℕ)
     (ho : o+2^b ≤ M) (hFG : ∀ a m, a+m ≤ M → F a m ≤ G a m) :
     dyadicCost F b o ≤ dyadicCost G b o := by
   induction b generalizing o with
@@ -246,7 +248,8 @@ private theorem dyadicCost_mono (F G : ℕ → ℕ → ℝ) (M b o : ℕ)
     simp only [dyadicCost]
     exact add_le_add (add_le_add (hFG _ _ ho) (ih o hl)) (ih (o+2^b) hr)
 
-private theorem dyadicCost_sum {ι : Type*} (S : Finset ι) (F : ι → ℕ → ℕ → ℝ) (b o : ℕ) :
+/-- Finite cofactor summation commutes with the binary block budget. -/
+theorem dyadicCost_sum {ι : Type*} (S : Finset ι) (F : ι → ℕ → ℕ → ℝ) (b o : ℕ) :
     (∑ n ∈ S, dyadicCost (F n) b o) = dyadicCost (fun a m => ∑ n ∈ S, F n a m) b o := by
   induction b generalizing o with
   | zero => rfl
@@ -258,7 +261,8 @@ private theorem dyadicCost_add (F G : ℕ → ℕ → ℝ) (b o : ℕ) :
   | zero => rfl
   | succ b ih => simp only [dyadicCost,ih]; ring
 
-private theorem dyadicCost_mul (F : ℕ → ℕ → ℝ) (c : ℝ) (b o : ℕ) :
+/-- A common scalar factors out of every level of the binary budget. -/
+theorem dyadicCost_mul (F : ℕ → ℕ → ℝ) (c : ℝ) (b o : ℕ) :
     dyadicCost (fun a m => c*F a m) b o = c*dyadicCost F b o := by
   induction b generalizing o with
   | zero => rfl

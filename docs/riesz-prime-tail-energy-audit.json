@@ -1,0 +1,221 @@
+{
+  "scope": "Actual full prime periods with a>=5000 and |y|>=54 now pay the complete signed Riesz cutoff energy, including all hinge crossings, by Q(a,y)=16/a^3+(2*pi/|y|)*(2/(|y|*a)+4/a^2)^2. Lean proves sqrt(Q)<=1/(16*a). The full signed moment and its clipped prime tails remain coupled before the quadratic mean; the budget is independent of the Riesz length, divisor cutoff and prime count. One proved but UNEVALUATED E>0 gives squarefree mean E*X*Q with arbitrary cofactor phase c(n), including c(n)=log n. Both signed bounds retain arbitrary cofactor weights. Reciprocal weights |w(n)|<=W/n on M<n<=2M pay their whole energy, giving an arbitrary finite radial-family budget sqrt(E)/16*sum_i W_i/a_i. The prime period and L are common across labels within each family member; cofactor subsets and phases may vary. This is a numerical arithmetic bound for complete prime periods with the original two Riesz hinges, NOT yet for varying factorial/allocation amplitudes or cofactor-dependent prime holes. Those costs, source-normalized aggregation and disjoint accounting with already-paid sectors remain OPEN. No generic density transport, phase freezing, zero or simplicity premise, or prime-count ceiling is used. Both whole -79/1000 floor and 3/2 ceiling, restricted exclusion and RH remain open.",
+  "terminalTheorems": {
+    "rieszPrimeTailEnergyTheorem": "RiemannGaussian.ZetaRieszPrimeTailEnergy.profile_energy_bound",
+    "rieszClippedPrimeTailTheorem": "RiemannGaussian.ZetaRieszPrimeTailEnergy.clipped_cosine_bound",
+    "rieszPrimePeriodEnergyTheorem": "RiemannGaussian.ZetaRieszPrimeTailEnergy.cosine_profile_energy",
+    "rieszPrimeEnergyLogTheorem": "RiemannGaussian.ZetaRieszPrimeTailEnergy.sqrt_periodEnergy_le",
+    "rieszCorrelatedPeriodMeanTheorem": "RiemannGaussian.ZetaRieszPrimeTailEnergy.exists_correlated_period_mean",
+    "rieszCorrelatedPeriodBoundsTheorem": "RiemannGaussian.ZetaRieszPrimeTailEnergy.exists_correlated_period_bounds",
+    "rieszShellPeriodBoundsTheorem": "RiemannGaussian.ZetaRieszPrimeTailEnergy.exists_shell_period_bounds",
+    "rieszRadialTailBoundsTheorem": "RiemannGaussian.ZetaRieszPrimeTailEnergy.exists_radial_log_bounds"
+  },
+  "schemaVersion": 1,
+  "status": "Focused Lean, full build, root lint and terminal axiom gates passed; both whole thresholds remain open",
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszPrimeTailEnergy.lean": "9f881fa9744ed80a6ecf9f83e70bfa4a003e3703f97a732983c28c2d55e7178c",
+    "RiemannGaussian/ZetaRieszSignedCutoffEnergy.lean": "c5046b28f59f34362ea3bb6dfb97f823c57fb3f34a338c542c53f9b4ac8901e4",
+    "RiemannGaussian/ZetaRieszQuantitativePrimePeriod.lean": "764fb8473cb66614b77b8c25a36a53f550716dd0ef26e5e348555e614fc10fea",
+    "scripts/probe_riesz_prime_tail_energy.py": "6aad7bea10297383b080f40d2d01f492981a906481a8ce66a154231c23aade44"
+  },
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.profile_energy_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.clipped_cosine_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.cosine_profile_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.sqrt_periodEnergy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.exists_correlated_period_mean": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.exists_correlated_period_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.exists_shell_period_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.exists_radial_log_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "remainingQuantitativeWork": [
+    "Original factorial/allocation variation within each prime period",
+    "Cofactor-dependent prime holes, coprimality and ownership boundaries",
+    "Total source-normalized amplitude budget and disjoint paid-sector aggregation",
+    "Both independent whole-carrier thresholds"
+  ],
+  "probe": {
+    "scope": "Optional actual-prime diagnostic for the signed tail-energy inequality.\n\nFloating-point probes are below the theorem's a>=5000 logarithmic threshold.\nThey test the exact identities/energy mechanism, not that theorem's numerical\nconstant, the unevaluated squarefree-mean constant, or any RH conclusion.\nNo prime-density approximation or CI/exhaustive verification is used.",
+    "rows": [
+      {
+        "a": 8.0,
+        "b": 8.116355283466289,
+        "height": 54.0,
+        "phase": 0.37,
+        "primeCount": 43,
+        "fullSignedMoment": 0.0004903398338977961,
+        "transitionEnergy": 2.7381555955987484e-07,
+        "integratedTailEnergy": 2.197280781215221e-06,
+        "signedOverUnsignedTailEnergy": 0.003378577171716785,
+        "exactTailBound": 2.5645821308095714e-06,
+        "lengthChecks": [
+          {
+            "length": 6.0,
+            "cutoff": 403,
+            "discreteEnergy": 1.3343257877348948e-06,
+            "discreteOverIntegrated": 0.607262303089429
+          },
+          {
+            "length": 10.0,
+            "cutoff": 22026,
+            "discreteEnergy": 1.9114995213610877e-06,
+            "discreteOverIntegrated": 0.8699386704251424
+          },
+          {
+            "length": 14.0,
+            "cutoff": 1202604,
+            "discreteEnergy": 2.1954494008143466e-06,
+            "discreteOverIntegrated": 0.9991665241800087
+          }
+        ],
+        "squarefreePopulation": 2490,
+        "correlatedMeanSquare": 0.008263913437585436,
+        "cofactorRotationRegression": 1.5308934675495323e-16,
+        "regressionAtoms": 32
+      },
+      {
+        "a": 10.0,
+        "b": 10.116355283466289,
+        "height": 54.0,
+        "phase": 0.37,
+        "primeCount": 271,
+        "fullSignedMoment": -9.495513892601422e-05,
+        "transitionEnergy": 3.3605249324785977e-07,
+        "integratedTailEnergy": 4.262172773324464e-07,
+        "signedOverUnsignedTailEnergy": 0.0007892295885660428,
+        "exactTailBound": 1.0961595717673212e-06,
+        "lengthChecks": [
+          {
+            "length": 6.0,
+            "cutoff": 403,
+            "discreteEnergy": 5.0038522223375666e-08,
+            "discreteOverIntegrated": 0.11740144026199571
+          },
+          {
+            "length": 10.0,
+            "cutoff": 22026,
+            "discreteEnergy": 8.609883347197682e-08,
+            "discreteOverIntegrated": 0.20200690598663917
+          },
+          {
+            "length": 14.0,
+            "cutoff": 1202604,
+            "discreteEnergy": 4.0746952320221344e-07,
+            "discreteOverIntegrated": 0.9560136223299793
+          }
+        ],
+        "squarefreePopulation": 2490,
+        "correlatedMeanSquare": 0.0006257071197222827,
+        "cofactorRotationRegression": 1.4203048459560108e-16,
+        "regressionAtoms": 32
+      },
+      {
+        "a": 12.0,
+        "b": 12.116355283466289,
+        "height": 54.0,
+        "phase": 0.37,
+        "primeCount": 1655,
+        "fullSignedMoment": 8.457194948014541e-05,
+        "transitionEnergy": 3.772073881527249e-07,
+        "integratedTailEnergy": 4.630363638191921e-07,
+        "signedOverUnsignedTailEnergy": 0.0010385797684725037,
+        "exactTailBound": 1.1069641908113475e-06,
+        "lengthChecks": [
+          {
+            "length": 6.0,
+            "cutoff": 403,
+            "discreteEnergy": 3.969357465795806e-08,
+            "discreteOverIntegrated": 0.08572452999276259
+          },
+          {
+            "length": 10.0,
+            "cutoff": 22026,
+            "discreteEnergy": 6.829878906348839e-08,
+            "discreteOverIntegrated": 0.1475019985474789
+          },
+          {
+            "length": 14.0,
+            "cutoff": 1202604,
+            "discreteEnergy": 1.886560915957422e-07,
+            "discreteOverIntegrated": 0.4074325611053071
+          }
+        ],
+        "squarefreePopulation": 2490,
+        "correlatedMeanSquare": 0.00010568788170731934,
+        "cofactorRotationRegression": 2.6633426367106416e-16,
+        "regressionAtoms": 32
+      },
+      {
+        "a": 14.0,
+        "b": 14.116355283466289,
+        "height": 54.0,
+        "phase": 0.37,
+        "primeCount": 10502,
+        "fullSignedMoment": 3.817256029795728e-05,
+        "transitionEnergy": 1.0182485041266002e-07,
+        "integratedTailEnergy": 1.222248714484766e-07,
+        "signedOverUnsignedTailEnergy": 0.00031639763535124156,
+        "exactTailBound": 2.2702202847352474e-07,
+        "lengthChecks": [
+          {
+            "length": 6.0,
+            "cutoff": 403,
+            "discreteEnergy": 8.086677206167139e-09,
+            "discreteOverIntegrated": 0.06616228849605331
+          },
+          {
+            "length": 10.0,
+            "cutoff": 22026,
+            "discreteEnergy": 1.3914349248910439e-08,
+            "discreteOverIntegrated": 0.11384220808754113
+          },
+          {
+            "length": 14.0,
+            "cutoff": 1202604,
+            "discreteEnergy": 1.974291043086346e-08,
+            "discreteOverIntegrated": 0.16152940229670032
+          }
+        ],
+        "squarefreePopulation": 2490,
+        "correlatedMeanSquare": 2.4244532472592257e-05,
+        "cofactorRotationRegression": 2.307453273592275e-16,
+        "regressionAtoms": 32
+      }
+    ]
+  }
+}

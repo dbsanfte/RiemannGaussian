@@ -16,17 +16,17 @@
       "changeReason": "The multiplicity audit proves that exposure does not imply simplicity: multiple zeros have a positive retained source. The same carrier now has a checked two-sided conditional endgame, so the arithmetic campaign must pursue its floor and ceiling together."
     },
     "latestUpdate": {
-      "sequence": 121,
-      "id": "quantitative-prime-periods",
+      "sequence": 132,
+      "id": "centered-prime-energy",
       "kind": "theorem",
-      "title": "Numerical signed prime-period costs now sum over every cofactor count.",
-      "body": "Actual complete prime periods and their first signed moments have explicit inverse-square prime-log bounds. All squarefree cofactor counts share one logarithmic budget, and arbitrary finite radial families retain their actual amplitude sums.",
-      "next": "Bound the original factorial/allocation variation and matching signed cutoff corrections, keeping clipped endpoints and paid-sector holes. Both whole thresholds remain open.",
+      "title": "Exact composite moment cancellation lowers the joint energy cost.",
+      "body": "Lean now subtracts the constant and logarithmic divisor components that every squarefree composite cofactor annihilates, before measuring the signed prime-block energy. The correction is exact and optimal among affine-log choices. Both literal carrier bounds improve with the same arithmetic constant, preserving moving intervals and every original allocation order.",
+      "next": "Control the total source-normalized cost with the actual radial and prime correlations. Larger-order probes still show growth; a disjoint whole-core cover and both whole thresholds remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszRadialPrimePeriodTheorem"
+        "rieszCenteredCostImprovementTheorem"
       ],
-      "documentation": "docs/zeta-riesz-quantitative-prime-period.md"
+      "documentation": "docs/zeta-riesz-centered-prime-energy.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -5825,6 +5825,463 @@
         "rieszQuantitativePrimePeriodScope"
       ],
       "documentation": "docs/zeta-riesz-quantitative-prime-period.md"
+    },
+    {
+      "id": "linear-cutoff-mean",
+      "label": "Joint signed cutoff costs \u00b7 linear displacement",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLinearCutoffRowTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPositiveCutoffGramTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLogWeightedCutoffTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMonotoneLogCutoffTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLinearCutoffMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMinimumCutoffMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLinearCutoffSignedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLinearCutoffFibreTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszLinearCutoffMeanScope"
+      ],
+      "documentation": "docs/zeta-riesz-linear-cutoff-mean.md"
+    },
+    {
+      "id": "signed-cutoff-energy",
+      "label": "Joint signed cutoff energy with literal prime weights",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedCutoffGramTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedCutoffMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedDivisorMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedProfileBoundsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszVaryingProfileBoundsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszVaryingDivisorBoundsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralJointProfileTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszSignedCutoffEnergyScope"
+      ],
+      "documentation": "docs/zeta-riesz-signed-cutoff-energy.md"
+    },
+    {
+      "id": "signed-prime-tail-energy",
+      "label": "Signed prime-tail energy pays joint cutoff crossings",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeTailEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszClippedPrimeTailTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimePeriodEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPrimeEnergyLogTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCorrelatedPeriodMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCorrelatedPeriodBoundsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszShellPeriodBoundsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRadialTailBoundsTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszPrimeTailEnergyScope"
+      ],
+      "documentation": "docs/zeta-riesz-prime-tail-energy.md"
+    },
+    {
+      "id": "retained-factorial-periods",
+      "label": "Original factorial allocation with joint prime-period cancellation",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWeightedPrimePeriodTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWeightedTailEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFactorialShellBoundsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUnassignedMultinomialTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRetainedCoefficientsTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralFactorialPeriodTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMeanAbsoluteScoreTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFactorialOrderBudgetTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralSummedPeriodTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralFactorialFamilyTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszRetainedFactorialScope"
+      ],
+      "documentation": "docs/zeta-riesz-retained-factorial.md"
+    },
+    {
+      "id": "joint-period-energy",
+      "label": "Joint signed energy across original prime periods",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointPeriodTailTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointPeriodProfileTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointWeightedPeriodTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointFactorialPeriodTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointPeriodMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJointPeriodShellTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralJointPeriodTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszJointPeriodEnergyScope"
+      ],
+      "documentation": "docs/zeta-riesz-joint-period-energy.md"
+    },
+    {
+      "id": "joint-prime-error",
+      "label": "Sharper joined retained-prime moment discrepancy",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothedSixthErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPsiSquareErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszThetaSquareErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJoinedPrimeCubeErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedProfileCubeErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFactorialGlobalPeakTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFactorialIntervalErrorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRetainedIntervalErrorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszJointPrimeErrorScope"
+      ],
+      "documentation": "docs/zeta-riesz-joint-prime-error.md"
+    },
+    {
+      "id": "coupled-prime-discrepancy",
+      "label": "Arithmetic error through both Riesz cutoffs",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszDiscrepancyCutoffEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszDiscrepancyExactResponseTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszDiscrepancyResponseMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszDiscrepancySignedBoundsTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszDiscrepancyEnergyScope"
+      ],
+      "documentation": "docs/zeta-riesz-discrepancy-energy.md"
+    },
+    {
+      "id": "retained-prime-discrepancy",
+      "label": "Original retained carrier: joint arithmetic discrepancy",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothResponseLinearTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCorrelatedDiscrepancyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFactorialDiscrepancyMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFactorialDiscrepancyShellTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralRetainedDiscrepancyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralDiscrepancyFamilyTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszRetainedDiscrepancyScope"
+      ],
+      "documentation": "docs/zeta-riesz-retained-discrepancy.md"
+    },
+    {
+      "id": "joined-smooth-prime-bound",
+      "label": "Joined original carrier: smooth and arithmetic terms paid",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothFactorialIntervalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothFactorialTailTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothTailEnergyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSmoothResponseMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJoinedPrimeMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszJoinedPrimeShellTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralJoinedPrimeTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralJoinedFamilyTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszJoinedSmoothScope"
+      ],
+      "documentation": "docs/zeta-riesz-smooth-prime-tail.md"
+    },
+    {
+      "id": "moving-prime-interval-bound",
+      "label": "Original carrier with moving prime masks and exact allocation costs",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMovingIntervalMaximalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMovingBlockMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMovingMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszMovingWeightedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralMovingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralUnionTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralMovingFamilyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralOwnedMovingTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszMovingPrimeIntervalsScope"
+      ],
+      "documentation": "docs/zeta-riesz-moving-prime-intervals.md"
+    },
+    {
+      "id": "centered-prime-energy",
+      "label": "Composite moment cancellation improves both signed bounds",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCompositeNullMomentTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCenteredEnergySavingTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCenteredEnergyOptimalTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCenteredDivisorMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCenteredBlockMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCenteredMovingMeanTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralCenteredTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszCenteredCostImprovementTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralCenteredOwnedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszLiteralCenteredFamilyTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszCenteredPrimeEnergyScope"
+      ],
+      "documentation": "docs/zeta-riesz-centered-prime-energy.md"
     }
   ],
   "scopes": {
@@ -11458,6 +11915,426 @@
       "label": "Joint finite radial family with actual amplitude budgets",
       "overview": true,
       "documentation": "docs/zeta-riesz-quantitative-prime-period.md"
+    },
+    "RiemannGaussian.ZetaRieszLinearCutoffMean.logarithmic_row": {
+      "label": "Numerical logarithmic row cost",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-linear-cutoff-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszLinearCutoffMean.positive_weighted_gram_mean": {
+      "label": "Weighted signed Gram estimate",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-linear-cutoff-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_log_weighted_mean": {
+      "label": "Every physical cutoff paid",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-linear-cutoff-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_monotone_log_weight_mean": {
+      "label": "Exact finite Abel transfer",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-linear-cutoff-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_linear_riesz_difference_mean_bound": {
+      "label": "Linear displacement cost",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-linear-cutoff-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_min_riesz_difference_mean_bound": {
+      "label": "Minimum quadratic/linear cost",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-linear-cutoff-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_joint_difference_bounds": {
+      "label": "Both correlated signed bounds",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-linear-cutoff-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszLinearCutoffMean.exists_literal_prime_fibre_bounds": {
+      "label": "Original prime-fibre improvement",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-linear-cutoff-mean.md"
+    },
+    "RiemannGaussian.ZetaRieszSignedCutoffEnergy.signed_gram_mean": {
+      "label": "Signed logarithmic Gram energy",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-signed-cutoff-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_signed_profile_mean": {
+      "label": "All-count signed cutoff mean",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-signed-cutoff-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_divisor_profile_mean": {
+      "label": "Exact signed divisor-profile mean",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-signed-cutoff-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_joint_profile_bounds": {
+      "label": "Both signed bounds with joint profile energy",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-signed-cutoff-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_varying_profile_bounds": {
+      "label": "Cofactor-dependent signed profile bounds",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-signed-cutoff-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_varying_divisor_bounds": {
+      "label": "Exact boundary-difference budget",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-signed-cutoff-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_literal_joint_bounds": {
+      "label": "Original finite prime sum: joint signed energy",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-signed-cutoff-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.profile_energy_bound": {
+      "label": "Coupled moment and signed cutoff-tail energy",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-prime-tail-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.clipped_cosine_bound": {
+      "label": "Actual clipped-prime signed budget",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-prime-tail-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.cosine_profile_energy": {
+      "label": "Numerical prime-period cutoff energy",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-prime-tail-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.sqrt_periodEnergy_le": {
+      "label": "Joint energy at most 1/(16a) after square root",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-prime-tail-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.exists_correlated_period_mean": {
+      "label": "All-count mean retaining cofactor phases",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-prime-tail-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.exists_correlated_period_bounds": {
+      "label": "Both signed coupled-period bounds",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-prime-tail-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.exists_shell_period_bounds": {
+      "label": "Reciprocal cofactor energy paid",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-prime-tail-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszPrimeTailEnergy.exists_radial_log_bounds": {
+      "label": "Radial all-count joint reciprocal-log budget",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-prime-tail-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszWeightedPrimeTail.weighted_cosine_period": {
+      "label": "Actual weighted prime-period cancellation",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-factorial.md"
+    },
+    "RiemannGaussian.ZetaRieszWeightedPrimeTail.weighted_profile_energy": {
+      "label": "Varying amplitudes pay both Riesz hinges",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-factorial.md"
+    },
+    "RiemannGaussian.ZetaRieszWeightedPrimeTail.exists_factorial_shell_bounds": {
+      "label": "Factorial prime legs with paid shell energy",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-factorial.md"
+    },
+    "RiemannGaussian.ZetaRieszRetainedFactorial.unassigned_multinomial": {
+      "label": "Exact unused majority-prime allocation",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-factorial.md"
+    },
+    "RiemannGaussian.ZetaRieszRetainedFactorial.exists_retained_coefficients": {
+      "label": "Nonnegative original retained coefficients",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-factorial.md"
+    },
+    "RiemannGaussian.ZetaRieszRetainedFactorial.exists_literal_period_bounds": {
+      "label": "Original carrier with factorial and allocation retained",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-factorial.md"
+    },
+    "RiemannGaussian.ZetaRieszRetainedFactorial.mean_absolute_score": {
+      "label": "Average score bounded by binomial variance",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-factorial.md"
+    },
+    "RiemannGaussian.ZetaRieszRetainedFactorial.factorial_order_budget": {
+      "label": "Every factorial order summed explicitly",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-factorial.md"
+    },
+    "RiemannGaussian.ZetaRieszRetainedFactorial.exists_literal_summed_period_bounds": {
+      "label": "Original complete-period signed bounds",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-factorial.md"
+    },
+    "RiemannGaussian.ZetaRieszRetainedFactorial.exists_literal_family_bounds": {
+      "label": "Joint finite-family original-carrier budget",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-factorial.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPeriodEnergy.joint_tail_bound": {
+      "label": "Only one interval pays a partial tail",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-period-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPeriodEnergy.joint_profile_energy": {
+      "label": "Joint signed cutoff energy across intervals",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-period-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPeriodEnergy.joint_weighted_profile_energy": {
+      "label": "Actual weighted prime periods combined",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-period-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPeriodEnergy.joint_factorial_profile_energy": {
+      "label": "Explicit joint factorial energy",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-period-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPeriodEnergy.exists_joint_factorial_mean": {
+      "label": "All-count mean after joint period cancellation",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-period-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPeriodEnergy.exists_joint_factorial_shell_bounds": {
+      "label": "Joint periods with paid cofactor energy",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-period-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPeriodEnergy.exists_literal_joint_period_bounds": {
+      "label": "Original retained carrier with one joint period norm",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-period-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeError.eventually_smoothed_error": {
+      "label": "Complete smoothed prime error: six inverse powers",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-error.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeError.eventually_psi_error": {
+      "label": "Actual psi error: two inverse logarithms",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-error.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeError.eventually_theta_error": {
+      "label": "Actual theta error with all prime powers paid",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-error.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeError.eventually_prime_error_cube": {
+      "label": "Joined finite prime discrepancy: inverse cube",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-error.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeError.eventually_signed_profile_error": {
+      "label": "Signed smooth profile with exact logarithm",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-error.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeError.factorial_amplitude_global_bound": {
+      "label": "Global factorial amplitude maximum",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-error.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeError.eventually_factorial_interval_error": {
+      "label": "Every factorial order with exterior clipping",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-error.md"
+    },
+    "RiemannGaussian.ZetaRieszJointPrimeError.eventually_retained_interval_error": {
+      "label": "Original retained allocation: joint prime-moment error",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joint-prime-error.md"
+    },
+    "RiemannGaussian.ZetaRieszDiscrepancyEnergy.eventually_profile_error_energy": {
+      "label": "Both Riesz cutoffs retain the sharper arithmetic error",
+      "documentation": "docs/zeta-riesz-discrepancy-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszDiscrepancyEnergy.response_error_eq_profile": {
+      "label": "Exact prime-minus-smooth cutoff identity",
+      "documentation": "docs/zeta-riesz-discrepancy-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszDiscrepancyEnergy.exists_response_error_mean": {
+      "label": "All-count squarefree discrepancy mean",
+      "documentation": "docs/zeta-riesz-discrepancy-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszDiscrepancyEnergy.exists_joint_response_error_bounds": {
+      "label": "Both signed bounds for the coupled prime discrepancy",
+      "documentation": "docs/zeta-riesz-discrepancy-energy.md",
+      "overview": true
+    },
+    "RiemannGaussian.ZetaRieszRetainedDiscrepancy.smoothResponse_linear": {
+      "label": "Exact linearity of the signed smooth Riesz response",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-discrepancy.md"
+    },
+    "RiemannGaussian.ZetaRieszRetainedDiscrepancy.exists_cosine_error_mean": {
+      "label": "Full cofactor phase in the cutoff-error mean",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-discrepancy.md"
+    },
+    "RiemannGaussian.ZetaRieszRetainedDiscrepancy.exists_factorial_error_mean": {
+      "label": "Every factorial order retains its arithmetic discrepancy",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-discrepancy.md"
+    },
+    "RiemannGaussian.ZetaRieszRetainedDiscrepancy.exists_factorial_shell_error": {
+      "label": "Reciprocal cofactor energy paid for both discrepancy signs",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-discrepancy.md"
+    },
+    "RiemannGaussian.ZetaRieszRetainedDiscrepancy.exists_literal_retained_error": {
+      "label": "Original allocation, phase and both cutoffs in one comparison",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-discrepancy.md"
+    },
+    "RiemannGaussian.ZetaRieszRetainedDiscrepancy.exists_literal_family_error": {
+      "label": "Finite radial/count families retain their joint signed smooth carrier",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-retained-discrepancy.md"
+    },
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.factorial_smooth_interval_bound": {
+      "label": "Factorial oscillation pays two density peaks",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-smooth-prime-tail.md"
+    },
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.factorial_smooth_tail_bound": {
+      "label": "Every partial smooth tail retains the phase",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-smooth-prime-tail.md"
+    },
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.factorial_smooth_profile_energy": {
+      "label": "Both smooth cutoffs in one squared energy",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-smooth-prime-tail.md"
+    },
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.exists_smooth_response_mean": {
+      "label": "The correlated smooth response is paid",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-smooth-prime-tail.md"
+    },
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.exists_joined_prime_mean": {
+      "label": "Actual joined prime response: smooth and error paid",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-smooth-prime-tail.md"
+    },
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.exists_joined_prime_shell": {
+      "label": "Reciprocal cofactor shell with no unpaid smooth term",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-smooth-prime-tail.md"
+    },
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.exists_literal_joined_bounds": {
+      "label": "Both signs of the original retained joined carrier",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-smooth-prime-tail.md"
+    },
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.exists_literal_joined_family_bounds": {
+      "label": "Radial/count families with every prime period retained",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-smooth-prime-tail.md"
+    },
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.interval_sq_le_dyadicCost": {
+      "label": "Two moving endpoints pay binary depth",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-moving-prime-intervals.md"
+    },
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_block_mean": {
+      "label": "Actual signed prime blocks with both phase components",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-moving-prime-intervals.md"
+    },
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_moving_mean": {
+      "label": "Cofactor-dependent intervals retain the squarefree mean",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-moving-prime-intervals.md"
+    },
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_moving_weighted_bounds": {
+      "label": "Exact cofactor weights give both signed bounds",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-moving-prime-intervals.md"
+    },
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_literal_moving_bounds": {
+      "label": "Original retained carrier with moving prime intervals",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-moving-prime-intervals.md"
+    },
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_literal_union_bounds": {
+      "label": "Disjoint cells count selected primes exactly once",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-moving-prime-intervals.md"
+    },
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_literal_moving_family_bounds": {
+      "label": "One arithmetic constant for finite moving families",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-moving-prime-intervals.md"
+    },
+    "RiemannGaussian.ZetaRieszMovingPrimeIntervals.exists_literal_owned_bounds": {
+      "label": "Unique ownership bounds actual integer labels",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-moving-prime-intervals.md"
+    },
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.divisor_centering": {
+      "label": "Actual composite divisors annihilate the correction",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-centered-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.centeredEnergy_eq": {
+      "label": "Exact squared-correlation saving",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-centered-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.centeredEnergy_le_shifted": {
+      "label": "Optimal affine-log correction for every signed profile",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-centered-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_centered_divisor_mean": {
+      "label": "Unconditional mean after exact moment cancellation",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-centered-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_centered_block_mean": {
+      "label": "Both prime-phase components retain the saving",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-centered-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_centered_moving_mean": {
+      "label": "Moving prime endpoints with optimally centered energy",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-centered-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_literal_centered_bounds": {
+      "label": "Both signs of the original retained carrier",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-centered-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.retainedCenteredCost_le": {
+      "label": "The entire cost is never larger with the same constant",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-centered-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_literal_centered_owned_bounds": {
+      "label": "Centered bound on uniquely owned integer labels",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-centered-prime-energy.md"
+    },
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_literal_centered_family_bounds": {
+      "label": "Finite radial/count families keep exact allocation costs",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-centered-prime-energy.md"
     }
   },
   "moduleFamilies": {
@@ -11525,6 +12402,18 @@
     "ZetaRieszOwnerUniformMean": "arithmetic",
     "ZetaRieszOwnerDensity": "arithmetic",
     "ZetaRieszOwnerCountEnergy": "arithmetic",
-    "ZetaRieszQuantitativePrimePeriod": "arithmetic"
+    "ZetaRieszQuantitativePrimePeriod": "arithmetic",
+    "ZetaRieszLinearCutoffMean": "arithmetic",
+    "ZetaRieszSignedCutoffEnergy": "arithmetic",
+    "ZetaRieszPrimeTailEnergy": "arithmetic",
+    "ZetaRieszWeightedPrimeTail": "arithmetic",
+    "ZetaRieszRetainedFactorial": "arithmetic",
+    "ZetaRieszJointPeriodEnergy": "arithmetic",
+    "ZetaRieszJointPrimeError": "arithmetic",
+    "ZetaRieszDiscrepancyEnergy": "arithmetic",
+    "ZetaRieszRetainedDiscrepancy": "arithmetic",
+    "ZetaRieszSmoothPrimeTail": "arithmetic",
+    "ZetaRieszMovingPrimeIntervals": "arithmetic",
+    "ZetaRieszCenteredPrimeEnergy": "arithmetic"
   }
 }

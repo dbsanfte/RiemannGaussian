@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "scope": "Actual prime arithmetic discrepancy now has one extra inverse logarithm on a joined interval. The complete proved zero-free/smoothed formula gives eventual |V-main|<=exp(t)/t^6, then actual |psi-exp(t)|<=4exp(t)/t^2 and |theta-exp(t)|<=5exp(t)/t^2, with every prime power paid. The starting threshold T>=5000 is proved but UNEVALUATED; 5000 itself is NOT claimed as the start. Exact finite Abel summation retains its signed smooth integral and only two exterior endpoints: |prime moment-integral|<=5(2W+D(b-a))/a^3. The integral keeps its exact reciprocal logarithm. The actual factorial amplitude uses min(exp(-a/2)b^j,exp(-j)(2j)^j); all orders including ZERO AND ONE remain. The terminal theorem keeps the literal 1-boundedShare allocation, factorial amplitude, full cos(y log(pn)) phase and arbitrary signed cofactor weights. All squarefree cofactor counts from two upward are allowed, with no ceiling. Prime intervals must be COMMON, eligible and coprime; clipped exterior endpoints are allowed. This is a retained PRIME-MOMENT discrepancy theorem, NOT a bound for the full Riesz carrier: the prime-dependent Riesz cutoff response, joint signed smooth term, actual prime holes, unique incidence accounting and total source-normalized cost remain OPEN. No source-scale generic PNT substitution, zero hypothesis, simplicity assumption, low-order deletion or duplicate paid credit is used. Optional all-order diagnostics improve the arithmetic error formula but still show eventual growth in tested source-normalized central budgets; neither a carrier lower bound nor an asymptotic no-go is inferred. Both whole -79/1000 floor and 3/2 ceiling remain open; no zero exclusion or RH claim.",
+  "status": "Focused Lean, full build, root lint and terminal axiom gates passed; both whole thresholds remain open",
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "rieszSmoothedSixthErrorTheorem": "RiemannGaussian.ZetaRieszJointPrimeError.eventually_smoothed_error",
+    "rieszPsiSquareErrorTheorem": "RiemannGaussian.ZetaRieszJointPrimeError.eventually_psi_error",
+    "rieszThetaSquareErrorTheorem": "RiemannGaussian.ZetaRieszJointPrimeError.eventually_theta_error",
+    "rieszJoinedPrimeCubeErrorTheorem": "RiemannGaussian.ZetaRieszJointPrimeError.eventually_prime_error_cube",
+    "rieszSignedProfileCubeErrorTheorem": "RiemannGaussian.ZetaRieszJointPrimeError.eventually_signed_profile_error",
+    "rieszFactorialGlobalPeakTheorem": "RiemannGaussian.ZetaRieszJointPrimeError.factorial_amplitude_global_bound",
+    "rieszFactorialIntervalErrorTheorem": "RiemannGaussian.ZetaRieszJointPrimeError.eventually_factorial_interval_error",
+    "rieszRetainedIntervalErrorTheorem": "RiemannGaussian.ZetaRieszJointPrimeError.eventually_retained_interval_error"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszJointPrimeError.lean": "6bfdd49634781951cdee34c95c2a4379a5d3b95ba25d5b291050d69d03b361dd",
+    "RiemannGaussian/ZetaRieszQuantitativePrimePeriod.lean": "764fb8473cb66614b77b8c25a36a53f550716dd0ef26e5e348555e614fc10fea",
+    "RiemannGaussian/RosserSchoenfeldSmoothedError.lean": "c158068d85baadba044f4aaaaf36a3f90bfa203e4728fa6ca6e5d436039c256a",
+    "RiemannGaussian/ZetaRieszRetainedFactorial.lean": "dcfc28c5cdf008aff385dc95606479591323a49800cc8b5a82af5f7a56e717be",
+    "scripts/probe_riesz_joint_prime_error.py": "c20e74aabe11dd0c4f4422ac41114731ee5f21642de822081b708dd938552b4e"
+  },
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszJointPrimeError.eventually_smoothed_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeError.eventually_psi_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeError.eventually_theta_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeError.eventually_prime_error_cube": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeError.eventually_signed_profile_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeError.factorial_amplitude_global_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeError.eventually_factorial_interval_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPrimeError.eventually_retained_interval_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "remainingQuantitativeWork": [
+    "Joint signed smooth moments with the actual Riesz cutoff response",
+    "Literal mask holes, cofactor-dependent intervals and unique incidences",
+    "Total source-normalized cost with disjoint paid-sector accounting",
+    "Independent whole floor and ceiling"
+  ],
+  "probe": {
+    "scope": "Optional diagnostics for the joined prime-discrepancy inequality.\n\nThe new theorem has a proved but unevaluated starting point. Evaluating its\nformula at a finite log endpoint does not certify that the endpoint is in\nthat eventual range. The old/new budgets below both concern arithmetic\ndiscrepancy from the SAME signed smooth integral, not the whole prime moment.\nNo cofactor-mask transfer, source-scale smallness or zero exclusion is inferred.\nThis experiment is not part of CI.",
+    "actualPrimes": [
+      {
+        "periodCount": 1,
+        "phase": 0.0,
+        "primeCount": 271,
+        "signedPrimeMoment": -0.1397402946129247,
+        "signedSmoothMoment": 0.005045104674561173,
+        "actualSignedDiscrepancy": -0.14478539928748588,
+        "sumAbsolutePeriodDiscrepancies": 0.14478539928748588,
+        "eventualBudgetFormula": 28.69210807589318,
+        "inProvedEventualRange": "Not established"
+      },
+      {
+        "periodCount": 1,
+        "phase": 0.37,
+        "primeCount": 271,
+        "signedPrimeMoment": -0.0643223721709234,
+        "signedSmoothMoment": -0.010403734515311845,
+        "actualSignedDiscrepancy": -0.053918637655611557,
+        "sumAbsolutePeriodDiscrepancies": 0.053918637655611557,
+        "eventualBudgetFormula": 28.69210807589318,
+        "inProvedEventualRange": "Not established"
+      },
+      {
+        "periodCount": 4,
+        "phase": 0.0,
+        "primeCount": 1273,
+        "signedPrimeMoment": -0.25798872557571784,
+        "signedSmoothMoment": 0.021139887964242425,
+        "actualSignedDiscrepancy": -0.27912861353996027,
+        "sumAbsolutePeriodDiscrepancies": 0.6307882996264966,
+        "eventualBudgetFormula": 94.58195792004294,
+        "inProvedEventualRange": "Not established"
+      },
+      {
+        "periodCount": 4,
+        "phase": 0.37,
+        "primeCount": 1273,
+        "signedPrimeMoment": -0.4127397718971373,
+        "signedSmoothMoment": -0.043465034707529854,
+        "actualSignedDiscrepancy": -0.36927473718960746,
+        "sumAbsolutePeriodDiscrepancies": 0.3692747371896068,
+        "eventualBudgetFormula": 94.58195792004294,
+        "inProvedEventualRange": "Not established"
+      },
+      {
+        "periodCount": 16,
+        "phase": 0.0,
+        "primeCount": 10695,
+        "signedPrimeMoment": -0.25690875657929924,
+        "signedSmoothMoment": 0.09438151152999122,
+        "actualSignedDiscrepancy": -0.3512902681092904,
+        "sumAbsolutePeriodDiscrepancies": 1.2347766377849219,
+        "eventualBudgetFormula": 358.55185650254646,
+        "inProvedEventualRange": "Not established"
+      },
+      {
+        "periodCount": 16,
+        "phase": 0.37,
+        "primeCount": 10695,
+        "signedPrimeMoment": -0.857621798444115,
+        "signedSmoothMoment": -0.19246471374585775,
+        "actualSignedDiscrepancy": -0.6651570846982573,
+        "sumAbsolutePeriodDiscrepancies": 0.9531272801271283,
+        "eventualBudgetFormula": 358.55185650254646,
+        "inProvedEventualRange": "Not established"
+      }
+    ],
+    "allOrderScope": "Every order is included, with floating underflow possible. Smooth L=-2N log u and real log(2M) parameters; the unevaluated mean constant and aggregation over cofactor shells are omitted. The signed smooth term is not part of this error budget.",
+    "allOrderErrors": [
+      {
+        "N": 16384,
+        "periodCount": 16,
+        "includedOrders": 16386,
+        "lowestPrimeLog": 18022.56915773227,
+        "newOverOldArithmeticError": 0.0006361218559376377,
+        "normalizedNewErrorFormula_log10": -11.721729675933664,
+        "normalizedOldErrorFormula_log10": -8.525269993299302
+      },
+      {
+        "N": 16384,
+        "periodCount": 256,
+        "includedOrders": 16386,
+        "lowestPrimeLog": 18008.606523716317,
+        "newOverOldArithmeticError": 0.0006614769769113896,
+        "normalizedNewErrorFormula_log10": -10.50087892816327,
+        "normalizedOldErrorFormula_log10": -7.321393661079316
+      },
+      {
+        "N": 65536,
+        "periodCount": 16,
+        "includedOrders": 65538,
+        "lowestPrimeLog": 72089.76915773228,
+        "newOverOldArithmeticError": 0.00015901835845496629,
+        "normalizedNewErrorFormula_log10": -11.694413476019765,
+        "normalizedOldErrorFormula_log10": -7.895860741946728
+      },
+      {
+        "N": 65536,
+        "periodCount": 256,
+        "includedOrders": 65538,
+        "lowestPrimeLog": 72075.80652371632,
+        "newOverOldArithmeticError": 0.00016499259810977767,
+        "normalizedNewErrorFormula_log10": -10.474337281225763,
+        "normalizedOldErrorFormula_log10": -6.691801742577944
+      },
+      {
+        "N": 262144,
+        "periodCount": 16,
+        "includedOrders": 262146,
+        "lowestPrimeLog": 288358.56915773224,
+        "newOverOldArithmeticError": 3.975373599955779e-05,
+        "normalizedNewErrorFormula_log10": -5.2634793829013296,
+        "normalizedOldErrorFormula_log10": -0.8628573321893841
+      },
+      {
+        "N": 262144,
+        "periodCount": 256,
+        "includedOrders": 262146,
+        "lowestPrimeLog": 288344.6065237163,
+        "newOverOldArithmeticError": 4.122449337585908e-05,
+        "normalizedNewErrorFormula_log10": -4.043597272732979,
+        "normalizedOldErrorFormula_log10": 0.3412474001347145
+      },
+      {
+        "N": 1048576,
+        "periodCount": 16,
+        "includedOrders": 1048578,
+        "lowestPrimeLog": 1153433.7691577324,
+        "newOverOldArithmeticError": 9.938369478048532e-06,
+        "normalizedNewErrorFormula_log10": 26.78190781492773,
+        "normalizedOldErrorFormula_log10": 31.78459267648331
+      }
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "status": "Focused Lean, full build, root lint and terminal axiom gates passed; both whole thresholds remain open",
+  "scope": "One proved but UNEVALUATED E>0 controls every signed cutoff profile by E*X*sum_k k*b_k^2 on every squarefree S subset (1,X]. All direct and exact complementary counting errors are paid, with no cutoff or prime-count ceiling. Exact finite Abel summation gives the same budget for signed divisor weights with b_k=f(k)-f(k+1). The ORIGINAL residualCoefficient*zetaPrimeLogKernel finite prime sum has both signed bounds with K=sqrt(E)*sum_q q*sqrt(sum_i i*(b(q,i)-b(q+1,i))^2), where f is the literal combined signed prime profile and b is its cutoff difference. All factorial weights, boundedShare allocation, both Riesz cutoffs, full phase, squarefreeness, coprimality and arbitrary finite prime/cofactor selections remain. The constant moment, first moment and cutoff crossings are bounded together; there is NO separate absolute crossing price. Moving prime masks and the exterior cofactor endpoint remain in the exact energy. This is a proved inequality, not a source-small energy estimate. The optional finite probe observes profile cancellation but a large cofactor-variation budget; it certifies neither E nor an asymptotic obstruction. Do not replace an owned or clipped population by a full period or reuse spent credit. No zero, prime-density or simplicity hypothesis enters. Both whole -79/1000 floor and 3/2 ceiling remain open.",
+  "terminalTheorems": {
+    "rieszSignedCutoffGramTheorem": "RiemannGaussian.ZetaRieszSignedCutoffEnergy.signed_gram_mean",
+    "rieszSignedCutoffMeanTheorem": "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_signed_profile_mean",
+    "rieszSignedDivisorMeanTheorem": "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_divisor_profile_mean",
+    "rieszSignedProfileBoundsTheorem": "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_joint_profile_bounds",
+    "rieszVaryingProfileBoundsTheorem": "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_varying_profile_bounds",
+    "rieszVaryingDivisorBoundsTheorem": "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_varying_divisor_bounds",
+    "rieszLiteralJointProfileTheorem": "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_literal_joint_bounds"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszSignedCutoffEnergy.lean": "c5046b28f59f34362ea3bb6dfb97f823c57fb3f34a338c542c53f9b4ac8901e4",
+    "RiemannGaussian/ZetaRieszLinearCutoffMean.lean": "32566baf41fd656af30514bd988a0ddf5708dbf89481d50ee5dc7b20ced9352c",
+    "RiemannGaussian/ZetaRieszSquarefreeSeparatedMean.lean": "33036d3f48598b1a12dcbbe8d23dbaf8e97f23535610afa8ba5df8a34a50ef43",
+    "scripts/probe_riesz_signed_cutoff_energy.py": "081bdafae72d5f283b82b2f83562f7a9072e157081526cc86ac5d37d6ac66fe7"
+  },
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "remainingQuantitativeWork": [
+    "Source-normalized combined signed profile energy",
+    "Correlations at moving prime masks and exterior boundaries",
+    "Disjoint aggregation with previously paid sectors",
+    "Both whole thresholds"
+  ],
+  "rootAudit": {
+    "errors": 0,
+    "declarations": 33258,
+    "generatedDeclarations": 23362,
+    "linters": 14,
+    "terminalAxioms": {
+      "RiemannGaussian.ZetaRieszSignedCutoffEnergy.signed_gram_mean": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_signed_profile_mean": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_divisor_profile_mean": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_joint_profile_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_varying_profile_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_varying_divisor_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RiemannGaussian.ZetaRieszSignedCutoffEnergy.exists_literal_joint_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  },
+  "probe": {
+    "scope": "Optional signed cutoff-energy diagnostic, never a CI or RH certificate.\n\nUses actual finite primes, integer squarefreeness and divisor signs, floating\nlogs, the exact factorial allocation formula, moving Riesz length, original\nphase, owner and nondominant masks, and the 1.95N..2.03N core. Reports both\nall squarefree composite cofactors and the subpopulation with every prime\nabove N^2. Constants in Lean remain unevaluated. Small finite orders cannot\ncertify an eventual source bound.",
+    "rows": [
+      {
+        "order": 6,
+        "population": 4096,
+        "radius": 0.50005,
+        "height": 54.0,
+        "length": 4.795790545596741,
+        "cutoff": 121,
+        "unpaidOrders": [],
+        "atomCount": 2130,
+        "physicalAtomCount": 113,
+        "crossingIncidences": 267,
+        "jointRealSum": 0.01188586258099263,
+        "sourceNormalizedJoint": 9.292332172848836e-05,
+        "physicalSourceNormalizedJoint": 3.484350632454263e-06,
+        "absoluteAtomMass": 0.33960957443433104,
+        "profileEnergyOverUnsignedProfileEnergy": 0.14618129868752905,
+        "variationBudgetWithoutUnknownSqrtE": 1807.1650592961453,
+        "sourceNormalizedVariationWithoutUnknownSqrtE": 14.128362925043529,
+        "directAtomRegressionMaxError": 1.1926223897340549e-18,
+        "regressionAtoms": 256
+      },
+      {
+        "order": 8,
+        "population": 65536,
+        "radius": 0.50005,
+        "height": 54.0,
+        "length": 6.802394763324311,
+        "cutoff": 900,
+        "unpaidOrders": [
+          3
+        ],
+        "atomCount": 285908,
+        "physicalAtomCount": 25344,
+        "crossingIncidences": 38971,
+        "jointRealSum": -0.05284256872756988,
+        "sourceNormalizedJoint": -0.00010330106653747826,
+        "physicalSourceNormalizedJoint": 2.60622046455081e-05,
+        "absoluteAtomMass": 2.8500468457088304,
+        "profileEnergyOverUnsignedProfileEnergy": 0.011877947396080295,
+        "variationBudgetWithoutUnknownSqrtE": 36387.92062887061,
+        "sourceNormalizedVariationWithoutUnknownSqrtE": 71.13414621122082,
+        "directAtomRegressionMaxError": 5.421010862427522e-20,
+        "regressionAtoms": 256
+      }
+    ]
+  }
+}

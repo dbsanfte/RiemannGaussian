@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 1,
+  "scope": "The ORIGINAL retained carrier now has both signed bounds after combining a separated family of complete prime periods BEFORE taking the quadratic mean. At any divisor cutoff at most one interval is partially active. The joint signed energy retains the total full moment squared and pays only one maximum partial-tail amplitude. Actual factorial periods have numerical C_ij=4W_ij/a_i^2+W_ij*s_ij*h*B_i and B_ij=W_ij*(1+s_ij*h)*B_i, with all prime-error and amplitude premises discharged for a_i>=5000 and abs(y)>=54. The explicit joint energy is lo*(sum C_ij)^2+(hi-lo)*(sum C_ij+max B_ij)^2. A proved but UNEVALUATED E>0 gives squarefree mean E*X*Q_j with the full cofactor phase retained across the entire family. Reciprocal cofactor energy is paid. The terminal original residualCoefficient*zetaPrimeLogKernel sum keeps boundedShare, both Riesz hinges, every factorial order including zero and one, and all squarefree counts from three upward. Its numerical cost is sqrt(E)/(L*N!)*exp(-log M/2)*sum_j choose(N+1,j)*log(2M)^(N+1-j)*sqrt(Q_j), rather than a sum of period norms. The selected cofactor population must be COMMON to every combined period, which must be complete, eligible and coprime to every selected cofactor. Cofactor-dependent prime holes and clipped boundaries remain UNPAID. This is an alternative bound, not a uniform claim of improvement over the previous budget. Optional numerical tests show gains on central blocks but do not prove source-scale decay. The combined moment cost and total source-normalized aggregation remain OPEN. No zero hypothesis, simplicity assumption, generic prime-density transfer, low-order deletion or duplicate paid credit is used. Both whole -79/1000 floor and 3/2 ceiling remain open; no zero exclusion or RH claim.",
+  "status": "Focused Lean, full build, root lint and terminal axiom gates passed; both whole thresholds remain open",
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "rieszJointPeriodTailTheorem": "RiemannGaussian.ZetaRieszJointPeriodEnergy.joint_tail_bound",
+    "rieszJointPeriodProfileTheorem": "RiemannGaussian.ZetaRieszJointPeriodEnergy.joint_profile_energy",
+    "rieszJointWeightedPeriodTheorem": "RiemannGaussian.ZetaRieszJointPeriodEnergy.joint_weighted_profile_energy",
+    "rieszJointFactorialPeriodTheorem": "RiemannGaussian.ZetaRieszJointPeriodEnergy.joint_factorial_profile_energy",
+    "rieszJointPeriodMeanTheorem": "RiemannGaussian.ZetaRieszJointPeriodEnergy.exists_joint_factorial_mean",
+    "rieszJointPeriodShellTheorem": "RiemannGaussian.ZetaRieszJointPeriodEnergy.exists_joint_factorial_shell_bounds",
+    "rieszLiteralJointPeriodTheorem": "RiemannGaussian.ZetaRieszJointPeriodEnergy.exists_literal_joint_period_bounds"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszJointPeriodEnergy.lean": "2ab0d81b6c04fac5d0f5d687533ea2c721841dc36d63ccfd65d202462f921801",
+    "RiemannGaussian/ZetaRieszRetainedFactorial.lean": "dcfc28c5cdf008aff385dc95606479591323a49800cc8b5a82af5f7a56e717be",
+    "RiemannGaussian/ZetaRieszWeightedPrimeTail.lean": "1dc6375f3f3179b8533e152ce7c5b5aab8bcf9c89160199b8073043195b4b9d4",
+    "scripts/probe_riesz_joint_period_energy.py": "b9e7c9e7d1fb289cdcc0073b5379a3cfedd701db5ee984604687a1c6a4a398bf"
+  },
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszJointPeriodEnergy.joint_tail_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPeriodEnergy.joint_profile_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPeriodEnergy.joint_weighted_profile_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPeriodEnergy.joint_factorial_profile_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPeriodEnergy.exists_joint_factorial_mean": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPeriodEnergy.exists_joint_factorial_shell_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJointPeriodEnergy.exists_literal_joint_period_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "remainingQuantitativeWork": [
+    "Combined full-moment contribution and total source-normalized cost",
+    "Common-population restriction, actual prime holes and clipped period masks",
+    "Disjoint ownership and already-paid-sector accounting",
+    "Independent whole floor and ceiling"
+  ],
+  "probe": {
+    "scope": "Optional joint-period energy diagnostics, not a certificate.\n\nThe actual-prime tests use small log endpoints, below the quantitative\nprime theorem's a>=5000 threshold, and check only the general tail identity\nand joint inequality. The large-order examples evaluate explicit numerical\nbudgets at their valid log endpoints; they do not enumerate those primes,\nestimate the unevaluated squarefree-mean constant, or prove source decay.",
+    "actualPrimes": [
+      {
+        "periodCount": 1,
+        "phase": 0.0,
+        "primeCount": 271,
+        "actualJointEnergy": 0.3362074568091792,
+        "separateNormSquared": 0.3362074568091792,
+        "jointOverSeparateSquared": 1.0,
+        "jointTailBound": 0.6756922672503717,
+        "jointOverTailBound": 0.4975748178639442
+      },
+      {
+        "periodCount": 1,
+        "phase": 0.37,
+        "primeCount": 271,
+        "actualJointEnergy": 0.19387084927335194,
+        "separateNormSquared": 0.19387084927335194,
+        "jointOverSeparateSquared": 1.0,
+        "jointTailBound": 0.5280086651292506,
+        "jointOverTailBound": 0.3671736130048065
+      },
+      {
+        "periodCount": 4,
+        "phase": 0.0,
+        "primeCount": 1273,
+        "actualJointEnergy": 1.1701677209801944,
+        "separateNormSquared": 5.891801181843689,
+        "jointOverSeparateSquared": 0.1986095057970066,
+        "jointTailBound": 3.603893327921244,
+        "jointOverTailBound": 0.32469543754647057
+      },
+      {
+        "periodCount": 4,
+        "phase": 0.37,
+        "primeCount": 1273,
+        "actualJointEnergy": 2.23665977420668,
+        "separateNormSquared": 4.469292566248674,
+        "jointOverSeparateSquared": 0.5004505167322337,
+        "jointTailBound": 4.4883292814207945,
+        "jointOverTailBound": 0.49832791534819354
+      },
+      {
+        "periodCount": 16,
+        "phase": 0.0,
+        "primeCount": 10695,
+        "actualJointEnergy": 2.1268089334455564,
+        "separateNormSquared": 45.048218633504796,
+        "jointOverSeparateSquared": 0.047211832075946585,
+        "jointTailBound": 18.957830410260627,
+        "jointOverTailBound": 0.11218630441458399
+      },
+      {
+        "periodCount": 16,
+        "phase": 0.37,
+        "primeCount": 10695,
+        "actualJointEnergy": 9.05200369500548,
+        "separateNormSquared": 50.69223434945563,
+        "jointOverSeparateSquared": 0.17856785780251738,
+        "jointTailBound": 24.873728112937762,
+        "jointOverTailBound": 0.3639182535848815
+      }
+    ],
+    "numericalBudgets": [
+      {
+        "N": 16384,
+        "factorialOrder": 9012,
+        "periodCount": 4,
+        "lowestPrimeLog": 18023.767289433068,
+        "jointOverSeparate": 0.9414943544078415,
+        "jointCostOverFactorialPeak": 7.174258751206009e-06,
+        "separateCostOverFactorialPeak": 7.620076230534915e-06
+      },
+      {
+        "N": 16384,
+        "factorialOrder": 9012,
+        "periodCount": 16,
+        "lowestPrimeLog": 18023.06915773227,
+        "jointOverSeparate": 0.9260837127259014,
+        "jointCostOverFactorialPeak": 2.8231730100665676e-05,
+        "separateCostOverFactorialPeak": 3.0485073555139387e-05
+      },
+      {
+        "N": 16384,
+        "factorialOrder": 9012,
+        "periodCount": 64,
+        "lowestPrimeLog": 18020.27663092908,
+        "jointOverSeparate": 0.9223563019162156,
+        "jointCostOverFactorialPeak": 0.00011253770583126655,
+        "separateCostOverFactorialPeak": 0.00012201109874510206
+      },
+      {
+        "N": 16384,
+        "factorialOrder": 9012,
+        "periodCount": 256,
+        "lowestPrimeLog": 18009.106523716317,
+        "jointOverSeparate": 0.922084231369946,
+        "jointCostOverFactorialPeak": 0.0004507372025392395,
+        "separateCostOverFactorialPeak": 0.0004888243255928762
+      },
+      {
+        "N": 16384,
+        "factorialOrder": 9012,
+        "periodCount": 1024,
+        "lowestPrimeLog": 17964.42609486526,
+        "jointOverSeparate": 0.9246305078003824,
+        "jointCostOverFactorialPeak": 0.001798564391372272,
+        "separateCostOverFactorialPeak": 0.0019451709371464546
+      },
+      {
+        "N": 65536,
+        "factorialOrder": 36045,
+        "periodCount": 4,
+        "lowestPrimeLog": 72089.76728943306,
+        "jointOverSeparate": 0.8288669959031182,
+        "jointCostOverFactorialPeak": 9.528367778773168e-07,
+        "separateCostOverFactorialPeak": 1.149565349551798e-06
+      },
+      {
+        "N": 65536,
+        "factorialOrder": 36045,
+        "periodCount": 16,
+        "lowestPrimeLog": 72089.06915773227,
+        "jointOverSeparate": 0.7800980358197823,
+        "jointCostOverFactorialPeak": 3.587484199677321e-06,
+        "separateCostOverFactorialPeak": 4.598760713334367e-06
+      },
+      {
+        "N": 65536,
+        "factorialOrder": 36045,
+        "periodCount": 64,
+        "lowestPrimeLog": 72086.27663092907,
+        "jointOverSeparate": 0.767658658902261,
+        "jointCostOverFactorialPeak": 1.4127089143227214e-05,
+        "separateCostOverFactorialPeak": 1.8402826541979887e-05
+      },
+      {
+        "N": 65536,
+        "factorialOrder": 36045,
+        "periodCount": 256,
+        "lowestPrimeLog": 72075.10652371631,
+        "jointOverSeparate": 0.7654665296087695,
+        "jointCostOverFactorialPeak": 5.6432228910732334e-05,
+        "separateCostOverFactorialPeak": 7.372266027042996e-05
+      },
+      {
+        "N": 65536,
+        "factorialOrder": 36045,
+        "periodCount": 1024,
+        "lowestPrimeLog": 72030.42609486527,
+        "jointOverSeparate": 0.7686594771610449,
+        "jointCostOverFactorialPeak": 0.0002273853934042037,
+        "separateCostOverFactorialPeak": 0.00029582071145993727
+      },
+      {
+        "N": 262144,
+        "factorialOrder": 144180,
+        "periodCount": 4,
+        "lowestPrimeLog": 288359.76728943305,
+        "jointOverSeparate": 0.6662996440522614,
+        "jointCostOverFactorialPeak": 1.4371808559523788e-07,
+        "separateCostOverFactorialPeak": 2.1569587628950514e-07
+      },
+      {
+        "N": 262144,
+        "factorialOrder": 144180,
+        "periodCount": 16,
+        "lowestPrimeLog": 288359.06915773224,
+        "jointOverSeparate": 0.5521531628379653,
+        "jointCostOverFactorialPeak": 4.7641166160081535e-07,
+        "separateCostOverFactorialPeak": 8.628251971828747e-07
+      },
+      {
+        "N": 262144,
+        "factorialOrder": 144180,
+        "periodCount": 64,
+        "lowestPrimeLog": 288356.2766309291,
+        "jointOverSeparate": 0.5199758357538075,
+        "jointCostOverFactorialPeak": 1.7949349776602093e-06,
+        "separateCostOverFactorialPeak": 3.4519584454498686e-06
+      },
+      {
+        "N": 262144,
+        "factorialOrder": 144180,
+        "periodCount": 256,
+        "lowestPrimeLog": 288345.1065237163,
+        "jointOverSeparate": 0.5126790120041923,
+        "jointCostOverFactorialPeak": 7.084071838204641e-06,
+        "separateCostOverFactorialPeak": 1.3817752769927537e-05
+      },
+      {
+        "N": 262144,
+        "factorialOrder": 144180,
+        "periodCount": 1024,
+        "lowestPrimeLog": 288300.42609486525,
+        "jointOverSeparate": 0.5150804726228154,
+        "jointCostOverFactorialPeak": 2.85307625301786e-05,
+        "separateCostOverFactorialPeak": 5.539088365143904e-05
+      }
+    ],
+    "allOrderSmoothSaddleScope": "Evaluate the literal bound's full binomial sum at a smooth saddle.\n\n    Every order is present in the arrays; tiny binomial probabilities may\n    underflow in this floating diagnostic. Here b=log(2M) is treated as a\n    real parameter and L=-2N log(u), so this is not an integer-cutoff bound.\n    The unknown sqrt(E) and aggregation over other cofactor shells are omitted.",
+    "allOrderSmoothSaddleBudgets": [
+      {
+        "N": 16384,
+        "periodCount": 16,
+        "includedOrders": 16386,
+        "lowestPrimeLog": 18022.56915773227,
+        "largestShare": 0.55,
+        "jointOverSeparateAllOrders": 0.932707642272571,
+        "jointAllOrderBudgetWithoutSqrtE_log10": -6.312338894098413,
+        "separateAllOrderBudgetWithoutSqrtE_log10": -6.28208442932938
+      },
+      {
+        "N": 16384,
+        "periodCount": 256,
+        "includedOrders": 16386,
+        "lowestPrimeLog": 18008.606523716317,
+        "largestShare": 0.55,
+        "jointOverSeparateAllOrders": 0.9286775598181282,
+        "jointAllOrderBudgetWithoutSqrtE_log10": -5.110329848159196,
+        "separateAllOrderBudgetWithoutSqrtE_log10": -5.078194799721116
+      },
+      {
+        "N": 65536,
+        "periodCount": 16,
+        "includedOrders": 65538,
+        "lowestPrimeLog": 72089.76915773228,
+        "largestShare": 0.55,
+        "jointOverSeparateAllOrders": 0.8088457056011726,
+        "jointAllOrderBudgetWithoutSqrtE_log10": -5.354398740968591,
+        "separateAllOrderBudgetWithoutSqrtE_log10": -5.262264425007452
+      },
+      {
+        "N": 65536,
+        "periodCount": 256,
+        "includedOrders": 65538,
+        "lowestPrimeLog": 72075.80652371632,
+        "largestShare": 0.55,
+        "jointOverSeparateAllOrders": 0.7953981142725058,
+        "jointAllOrderBudgetWithoutSqrtE_log10": -4.157616150976149,
+        "separateAllOrderBudgetWithoutSqrtE_log10": -4.05820070800326
+      },
+      {
+        "N": 262144,
+        "periodCount": 16,
+        "includedOrders": 262146,
+        "lowestPrimeLog": 288358.56915773224,
+        "largestShare": 0.55,
+        "jointOverSeparateAllOrders": 0.617605514949661,
+        "jointAllOrderBudgetWithoutSqrtE_log10": 2.0377338304708257,
+        "separateAllOrderBudgetWithoutSqrtE_log10": 2.247022665064272
+      },
+      {
+        "N": 262144,
+        "periodCount": 256,
+        "includedOrders": 262146,
+        "lowestPrimeLog": 288344.6065237163,
+        "largestShare": 0.55,
+        "jointOverSeparateAllOrders": 0.5851439988805778,
+        "jointAllOrderBudgetWithoutSqrtE_log10": 3.2183913564263604,
+        "separateAllOrderBudgetWithoutSqrtE_log10": 3.4511286010730977
+      },
+      {
+        "N": 1048576,
+        "periodCount": 16,
+        "includedOrders": 1048578,
+        "lowestPrimeLog": 1153433.7691577324,
+        "largestShare": 0.55,
+        "jointOverSeparateAllOrders": 0.45395613224441633,
+        "jointAllOrderBudgetWithoutSqrtE_log10": 35.09948041054315,
+        "separateAllOrderBudgetWithoutSqrtE_log10": 35.44246652342321
+      }
+    ]
+  }
+}

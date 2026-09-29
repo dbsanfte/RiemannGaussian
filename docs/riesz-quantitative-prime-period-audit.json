@@ -21,7 +21,7 @@
     "radialAggregation": "replace W by sum_j W_j"
   },
   "sourceHashes": {
-    "RiemannGaussian/ZetaRieszQuantitativePrimePeriod.lean": "4ec0806b0d92961a15e4588767de5909c21b6f33edfdd83e80c3237b088824af",
+    "RiemannGaussian/ZetaRieszQuantitativePrimePeriod.lean": "764fb8473cb66614b77b8c25a36a53f550716dd0ef26e5e348555e614fc10fea",
     "RiemannGaussian/RosserSchoenfeldLargeChebyshev.lean": "055c72c8e722c0256593ebad77729e3d17dd182fa2caa48c91b11b2539b79232",
     "RiemannGaussian/ZetaRieszOwnerCountEnergy.lean": "30ecdcb92ee42686403506a79aec9924aa1b7c22d06dd3b52f1adde51da2a65b",
     "scripts/probe_riesz_prime_period_cost.py": "247b4dda4eeaa3bc73561b58a9de7795f4e8b5cee9f8bd96d333c35caccb4d5d"

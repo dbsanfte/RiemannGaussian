@@ -1602,6 +1602,226 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+The accumulated all-count/prime-period slice is now committed and pushed as
+`b44806e71718bd1128c4872481b3990719f9f3d9`. Its exact-SHA CI is run
+`36530742834` passed, including Pages deployment. Verify publication against
+that frozen snapshot separately from current local work. The user has
+authorized committing and pushing the accumulated next slice after its
+verification gates pass. Include all local theorem, documentation and
+generated metadata changes, and track CI on the resulting exact SHA.
+Continue without subagents.
+
+`ZetaRieszCenteredPrimeEnergy` now improves BOTH original-carrier bounds
+by exact composite moment cancellation. Constant and logarithmic divisor
+profiles vanish on every selected squarefree composite; subtract their
+optimally chosen component BEFORE the signed block energy. The exact
+saving is correlation-squared/logarithmic-energy, and the same E gives a
+PROVED NO LARGER total cost at every physical cutoff. The population
+endpoint is paid exactly by zero divisor mass. Both Riesz cutoffs, all
+factorial orders ZERO AND ONE included, exact B(n,j), full phase, moving
+intervals, unique ownership and finite families remain. No count ceiling,
+PNT replacement, zero hypothesis or new companion credit enters. E is
+UNEVALUATED. Optional N=6,8,10 probes save about 30-40%, but the N=10
+cost grows again: neither eventual decay nor an asymptotic no-go follows.
+A disjoint WHOLE-CORE COVER and TOTAL source-normalized bound remain open.
+Do not treat a norm budget uniform over arbitrary endpoint choices as a
+proved small budget for the actual whole radial carrier. Retain the known
+central-sector growth audits and both open thresholds. See
+`docs/zeta-riesz-centered-prime-energy.md`. Complete the authorized
+publication gates; no subagents.
+
+`ZetaRieszMovingPrimeIntervals` now pays COFACTOR-DEPENDENT prime
+interval endpoints via a binary maximal bound, at squared-mean cost
+4*(b+1). BOTH cutoffs, full phase, all orders ZERO AND ONE included,
+and the EXACT retained B(n,j) energy remain. Signed primes are summed
+INSIDE every block's quadratic energy. One UNEVALUATED E works for all
+finite cutoffs and heights, without an eventual prime threshold or count
+ceiling. Only selected primes must be eligible/coprime. Disjoint cells and
+unique largest-prime ownership yield an actual duplicate-free label set;
+finite radial/count families have the sum of their exact costs. This
+removes the need to pay full cofactor variation for interval masks.
+Internal holes still need explicit runs. A disjoint WHOLE-CORE COVER and
+the TOTAL source-normalized cost remain OPEN. Small-order optional probes
+show much lower costs, but do not evaluate E or prove eventual smallness.
+Never complete a row, reuse companion credit or infer a global floor from
+a finite-block theorem. Both whole thresholds remain open. See
+`docs/zeta-riesz-moving-prime-intervals.md`. Keep local; no subagents.
+
+`ZetaRieszSmoothPrimeTail` now PAYS the signed smooth response on COMMON
+joined eligible/coprime prime intervals, including exterior clipping and
+arbitrarily many periods. The factorial prime density has one turning point;
+integration by parts gives amplitude 2W/(a*abs(y)), without a period-count
+factor. BOTH cutoffs, ALL orders including zero/one, the exact original
+allocation and cofactor phase remain. Adding the ACTUAL discrepancy gives
+joinedCost=smoothCost+factorialError. The original carrier and finite
+radial/count families have BOTH signed bounds with one proved UNEVALUATED
+E,T and K=sqrt(E)*sum retainedJoinedCost. The previous signed H comparison
+remains available; no sign information is deleted from its theorem.
+This budget is NOT uniformly better than the older joined-period estimate:
+the optional diagnostic improves long blocks and loses on some short ones.
+TOTAL source-scaled cost still grows in the positive binomial-cap probe;
+that is NOT a carrier lower bound or a proved asymptotic no-go. Actual prime
+holes and unique ownership remain unpaid, and a family theorem does not
+license double-counting labels or old credits. Both whole thresholds remain
+OPEN. The numerical experiments are optional, never CI certificates. See
+`docs/zeta-riesz-smooth-prime-tail.md`. Keep local; no subagents.
+
+`ZetaRieszRetainedDiscrepancy` now attaches the original retained allocation,
+ALL factorial orders including 0/1, full cofactor phase and BOTH Riesz
+hinges to the joint arithmetic discrepancy. The exact B(n,j) expansion
+and cosine/sine rotation give H-K<=J<=H+K for the ORIGINAL residual
+coefficient/kernel carrier. K=sqrt(E)*retainedErrorCost, with the explicit
+sum of binomial caps times the cubic-log factorial errors and sqrt(b).
+One UNEVALUATED E,T works for arbitrary finite radial/count families;
+the smooth H_i remain SIGNED across the whole family. Complete/exterior-
+clipped intervals must be COMMON, eligible and coprime to all cofactors.
+There is no count ceiling or maximum-order/family-cardinality price.
+THE JOINT SIGNED SMOOTH CARRIER, actual prime holes, unique incidence
+accounting and TOTAL source-normalized cost remain OPEN. Do not append
+credits already in complete intervals or treat labels counted twice as
+new credit. The optional finite actual-prime regression is below the
+established eventual threshold, uses floating quadrature and is NEVER CI.
+Its large-order binomial-cap budget still grows; no carrier lower bound,
+asymptotic no-go or source-smallness conclusion follows. Both whole
+thresholds remain open. See `docs/zeta-riesz-retained-discrepancy.md`.
+Keep these changes local, without subagents.
+
+`ZetaRieszDiscrepancyEnergy` now carries that actual arithmetic error through
+BOTH Riesz cutoffs and the squarefree cofactor mean. For a COMMON complete
+or exterior-clipped interval and smooth signed profile F with |F|<=W,
+|F'|<=V, epsilon=5*(2W+(V+2W)*(b-a))/a^3 and the coupled energy is at
+most b*epsilon^2. Every divisor sign and endpoint remains. The actual
+primeResponse-minus-smoothResponse mean is <=E*X*b*epsilon^2, with both
+signed weighted bounds and no count ceiling or Riesz-length price. E and
+the starting T>=5000 are UNEVALUATED; do not advertise validity at 5000.
+The SIGNED SMOOTH RESPONSE IS NOT PAID. The original varying retained
+factorial/order coefficients and cofactor phase rotations still need to
+be assembled with these estimates, actual prime holes and ownership, and
+the total source-normalized cost. Do not call this a whole residual-carrier
+bound or source-smallness theorem. No low orders or previous negative
+audits may be dropped. The finite diagnostic is optional, below the
+established threshold and NEVER a CI certificate. Both whole thresholds
+remain open. See `docs/zeta-riesz-discrepancy-energy.md`. Keep local.
+
+`ZetaRieszJointPrimeError` now sharpens the ACTUAL prime discrepancy.
+The existing complete smoothed prime estimate gives exp(t)/t^6 eventually;
+monotone desmoothing and every prime-power allowance give
+abs(theta(exp t)-exp t)<=5exp(t)/t^2. The start is proved but UNEVALUATED:
+do NOT advertise 5000 as the start of the sharper theorem. The joined
+finite-prime comparison pays 5(2W+D(b-a))/a^3, with the signed smooth
+integral and exact reciprocal logarithm retained. Only exterior endpoints
+are priced. The global factorial peak improves interval amplitudes.
+`eventually_retained_interval_error` uses the exact original 1-boundedShare,
+full factorial amplitude, all orders including 0/1, full phase and arbitrary
+signed cofactor weights. Common complete/externally clipped eligible coprime
+intervals are required; all squarefree cofactor counts >=2 are allowed.
+This is a PRIME-MOMENT discrepancy bound, NOT a bound on the entire Riesz
+carrier. The prime-dependent cutoff response, coupled signed smooth term,
+prime holes, unique ownership and total source cost remain OPEN. Do not
+substitute density at source scale or append already-spent credits. The
+optional all-order probe gives a substantially smaller error expression,
+but source-normalized positive budgets still grow; it proves no carrier
+lower bound or asymptotic no-go. Both whole thresholds remain open. See
+`docs/zeta-riesz-joint-prime-error.md`. Keep these changes local, without
+subagents, and preserve every previous negative audit.
+
+`ZetaRieszJointPeriodEnergy` now combines separated COMPLETE prime
+periods before the quadratic mean. At most one interval can be partially
+active at any cutoff, so the joint energy pays a single maximum partial
+tail plus the retained full moments. All quantitative prime/amplitude
+inputs are discharged for factorial legs. `exists_literal_joint_period_bounds`
+keeps the original residualCoefficient/kernel, allocation, every order,
+both Riesz hinges and the full cofactor phase. Its ONE COMMON cofactor
+population is squarefree with >=2 factors; there is no upper count ceiling.
+One proved UNEVALUATED E controls the explicit sum_j binomial_cap*sqrt(Q_j),
+where Q_j is the combined period energy. There is no sum of period norms.
+Common complete/eligible/coprime periods are required. Arbitrary moving
+prime holes are NOT covered. The budget improves the tested central blocks,
+not every possible configuration; no source-smallness theorem is asserted.
+Next control combined full moments and the total source-normalized cost,
+retaining actual mask boundaries and disjoint paid credits. All prior no-gos,
+the -79/1000 floor and 3/2 ceiling remain open. See
+`docs/zeta-riesz-joint-period-energy.md`. The probe is optional, never CI.
+No subagents. Keep the work local and separate from published b44806e.
+
+`ZetaRieszRetainedFactorial` and `ZetaRieszWeightedPrimeTail` now pay
+ORIGINAL factorial/allocation amplitudes on COMPLETE prime periods. The
+exact unused-majority multinomial has nonnegative marked-order coefficients
+bounded by the binomial cap, with every order including zero and one retained.
+The signed varying prime tail pays both Riesz hinges before squaring.
+Binomial variance sums all factorial orders into explicit `summedPeriodCost`;
+`exists_literal_family_bounds` gives BOTH signed bounds sqrt(E)*sum cost,
+with one proved but UNEVALUATED E. All squarefree cofactor counts >=2 are
+allowed, with no upper count cutoff. Periods must be common, complete,
+eligible and coprime to every selected cofactor. Arbitrary cofactor subsets
+are allowed; cofactor-dependent prime holes are NOT filled. The original
+phase, residualCoefficient and boundedShare remain literal. There is no
+maximum-order/count/family-cardinality multiplier. The optional diagnostic
+shows improved order costs but growing source-normalized central-saddle
+budgets; this is neither a carrier lower bound nor an asymptotic no-go.
+Next pay the actual holes and the TOTAL source-normalized cost, preserving
+disjoint paid sectors. Do not turn polynomial gains into source-o(1), append
+spent credits, or discard low orders. Both whole thresholds, RH and any new
+zero exclusion remain OPEN. See `docs/zeta-riesz-retained-factorial.md`.
+The previous `PrimeTailEnergy` module remains the constant-amplitude
+special case; its earlier amplitude limitation is discharged only on the
+complete-period support specified here. No subagents.
+
+`ZetaRieszPrimeTailEnergy` now pays the combined moment/crossing energy
+of ACTUAL FULL prime periods. For a>=5000 and |y|>=54, the numerical cost
+Q=16/a^3+(2*pi/|y|)*(2/(|y|*a)+4/a^2)^2 has sqrt(Q)<=1/(16*a).
+The entire signed cutoff tail is squared only AFTER its prime sum; all
+hinge crossings and the full moment are included, with no Riesz-length or
+count multiplier. Squarefree means allow arbitrary cofactor phase, including
+log(n), and reciprocal cofactor weights pay their entire energy. Finite
+radial families have BOTH signed bounds sqrt(E)/16*sum W_i/a_i; E is proved
+but UNEVALUATED. Prime period and L are common across labels within each
+family member. Original factorial/allocation amplitudes varying with the
+prime, cofactor-dependent prime holes, and their TOTAL source-normalized
+cost are NOT paid by this theorem. Do not replace the literal masked prime
+set with a full period or append spent sector credit. The optional actual-
+prime probe tests the identities below a=5000, not the numerical theorem
+or an eventual rate. No zero/simplicity hypothesis or source-o(1) claim.
+Both whole thresholds and any further zero exclusion remain OPEN. See
+`docs/zeta-riesz-prime-tail-energy.md`. Keep these changes local and separate
+from the verified published b44806e snapshot.
+
+`ZetaRieszSignedCutoffEnergy` now controls arbitrary SIGNED cutoff
+profiles by E*X*sum_k k*b_k^2 with one proved UNEVALUATED E>0. Every
+counting error is paid; there is no cutoff/count ceiling. Finite Abel
+summation keeps the actual prime sums inside this quadratic energy. The
+terminal `exists_literal_joint_bounds` applies to the ORIGINAL finite
+residualCoefficient/kernel sum, retaining allocation, factorial weights,
+phase, both reflected cutoffs, squarefreeness, coprimality and all selected
+masks. Constant moment, first moment and signed crossings stay TOGETHER.
+The remaining explicit cost is sqrt(E)*sum_q q*sqrt(sum_i i*Delta_q b^2),
+where b is the cutoff difference of the combined signed prime profile.
+This pays finite boundaries as an inequality; their SOURCE-SCALE ENERGY
+remains OPEN. The optional exact-prime/floating-log probe gives a signed
+profile-energy ratio about 0.01188 at N=8, but the cofactor-variation bound
+is about 71.13 after source normalization even BEFORE sqrt(E). Do NOT call
+this a small carrier bound or an asymptotic no-go: these are early finite
+diagnostics. Avoid another absolute-variation closure attempt; target the
+actual boundary correlations using the signed energy. Do not spend already
+paid sectors twice. Both whole thresholds, restricted exclusion and RH
+remain OPEN. See `docs/zeta-riesz-signed-cutoff-energy.md`. The slice is
+local; published b44806e remains a separate verified snapshot.
+
+`ZetaRieszLinearCutoffMean` improves the exact squarefree cutoff-difference
+mean to E*X*min((B-A)^2,B-A), for EVERY cutoff pair A<=B and squarefree
+selection S subset (1,X]. E is proved but UNEVALUATED. Exact finite Abel
+weights have 0<=b_k<=1/k, and retaining all signed Gram terms pays only
+their total mass via a logarithmic row cost at most four. Direct and exact
+complementary (n-1)/k Gram bounds pay every counting error. Both signed
+inequalities retain arbitrary correlated weights; the literal original
+prime fibre now costs E*X*min((log p)^2,log p) times its actual weight
+energy. No prime count ceiling, density substitution or zero hypothesis
+is used. The energy, prime/radial aggregation, signed crossings and holes
+from already-paid sectors remain UNPAID. Do not turn this polynomial
+improvement into source-o(1), count a paid sector twice, or claim either
+whole threshold. See `docs/zeta-riesz-linear-cutoff-mean.md`. Keep the
+optional floating diagnostic outside CI and preserve every prior no-go.
+
 The user has now authorized committing and pushing all accumulated local
 work after this slice passes the full gates. Include the earlier joint
 mean/owner/count estimates and their audits, not just the latest prime-period

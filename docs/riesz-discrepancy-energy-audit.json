@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "scope": "The ACTUAL prime-minus-smooth discrepancy now passes through BOTH Riesz cutoffs before the squarefree mean. With |F|<=W and |F'|<=V on one COMMON complete or externally clipped prime interval [a,b], epsilon=5*(2W+(V+2W)*(b-a))/a^3. The joint cutoff energy is at most b*epsilon^2. One proved but UNEVALUATED E gives sum_n |primeResponse-smoothResponse|^2<=E*X*b*epsilon^2, and arbitrary signed cofactor weights have both bounds M-K<=J<=M+K with K=sqrt(E*X*b*sum w_n^2)*epsilon. The eventual threshold T>=5000 is UNEVALUATED; 5000 itself is NOT claimed as the start. Both exact exterior endpoints and every divisor sign remain. There is NO Riesz-length, divisor-count, internal-period or prime-count ceiling. Low factorial orders are not deleted. The smoothResponse is signed and explicit, NOT paid. These endpoints use a common smooth profile; assembling the retained allocation/order coefficients and cofactor phase rotations with their literal prime holes, unique ownership and total source-normalized cost remains OPEN. No generic source-scale PNT substitution or unsigned divisor-crossing cost is used. Optional finite probes are below the established threshold and use floating quadrature, never CI certificates. Both whole -79/1000 floor and 3/2 ceiling remain open; no zero exclusion or RH claim.",
+  "status": "Focused Lean, full build, root lint and terminal axiom gates passed; both whole thresholds remain open",
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "rieszDiscrepancyCutoffEnergyTheorem": "RiemannGaussian.ZetaRieszDiscrepancyEnergy.eventually_profile_error_energy",
+    "rieszDiscrepancyExactResponseTheorem": "RiemannGaussian.ZetaRieszDiscrepancyEnergy.response_error_eq_profile",
+    "rieszDiscrepancyResponseMeanTheorem": "RiemannGaussian.ZetaRieszDiscrepancyEnergy.exists_response_error_mean",
+    "rieszDiscrepancySignedBoundsTheorem": "RiemannGaussian.ZetaRieszDiscrepancyEnergy.exists_joint_response_error_bounds"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszDiscrepancyEnergy.lean": "46d7c9c64086f81d185686442351559ec55edb62fb4cfab3c9436a8ef297695c",
+    "RiemannGaussian/ZetaRieszJointPrimeError.lean": "6bfdd49634781951cdee34c95c2a4379a5d3b95ba25d5b291050d69d03b361dd",
+    "RiemannGaussian/ZetaRieszSignedCutoffEnergy.lean": "c5046b28f59f34362ea3bb6dfb97f823c57fb3f34a338c542c53f9b4ac8901e4",
+    "RiemannGaussian/ZetaRieszPrimeTailEnergy.lean": "9f881fa9744ed80a6ecf9f83e70bfa4a003e3703f97a732983c28c2d55e7178c",
+    "scripts/probe_riesz_discrepancy_energy.py": "1f8d7eca731d59638e9371736339b359a85674dc7bb82f4d5956e4c963fc9980"
+  },
+  "numericalProbe": {
+    "scope": "Optional actual-prime diagnostics for the coupled Riesz discrepancy.\n\nThis checks finite identities and measures signed discrepancy energy. The\nprime logarithms here are BELOW the proved but unevaluated eventual start.\nQuadrature and floating point are exploratory, never certificates or CI.\nThe signed smooth Riesz response is measured separately, not assumed paid.",
+    "cases": [
+      {
+        "periods": 1,
+        "order": 0,
+        "phase": 0.0,
+        "rieszLength": 12.0,
+        "primeCount": 271,
+        "retainedDivisorCutoffs": 162754,
+        "signedFullMomentError": -1.3370920804491326e-06,
+        "exactDiscreteDiscrepancyEnergy": 1.8027669724025296e-11,
+        "eventualEnergyFormula": 8.440995499480061e-07,
+        "formulaIsCertifiedAtThisHeight": false,
+        "cofactorResponses": [
+          {
+            "n": 6,
+            "count": 2,
+            "literalPrimeResponse": 0.0,
+            "signedSmoothResponse": 0.0,
+            "discrepancy": 0.0,
+            "exactAbelResidual": 0.0
+          },
+          {
+            "n": 30,
+            "count": 3,
+            "literalPrimeResponse": 3.0992125071136367e-07,
+            "signedSmoothResponse": 6.150829894042336e-07,
+            "discrepancy": -3.0516173869286995e-07,
+            "exactAbelResidual": -4.235164736271502e-22
+          },
+          {
+            "n": 105,
+            "count": 3,
+            "literalPrimeResponse": 2.13080874242814e-06,
+            "signedSmoothResponse": 9.259644858854395e-07,
+            "discrepancy": 1.2048442565427007e-06,
+            "exactAbelResidual": -2.117582368135751e-21
+          },
+          {
+            "n": 210,
+            "count": 4,
+            "literalPrimeResponse": 9.917802199764154e-07,
+            "signedSmoothResponse": 1.2558817540959402e-06,
+            "discrepancy": -2.641015341195248e-07,
+            "exactAbelResidual": -2.117582368135751e-21
+          }
+        ]
+      },
+      {
+        "periods": 4,
+        "order": 1,
+        "phase": 0.37,
+        "rieszLength": 12.0,
+        "primeCount": 1273,
+        "retainedDivisorCutoffs": 162754,
+        "signedFullMomentError": -3.290534085616427e-05,
+        "exactDiscreteDiscrepancyEnergy": 1.1007632347569931e-08,
+        "eventualEnergyFormula": 0.0010383916690828033,
+        "formulaIsCertifiedAtThisHeight": false,
+        "cofactorResponses": [
+          {
+            "n": 6,
+            "count": 2,
+            "literalPrimeResponse": -1.4687697826726949e-05,
+            "signedSmoothResponse": -1.72193882737703e-05,
+            "discrepancy": 2.53169044704335e-06,
+            "exactAbelResidual": 0.0
+          },
+          {
+            "n": 30,
+            "count": 3,
+            "literalPrimeResponse": -4.8362025455379594e-05,
+            "signedSmoothResponse": -4.7487187939400724e-05,
+            "discrepancy": -8.748375159788697e-07,
+            "exactAbelResidual": -5.421010862427522e-20
+          },
+          {
+            "n": 105,
+            "count": 3,
+            "literalPrimeResponse": 2.151991101938792e-05,
+            "signedSmoothResponse": -1.1587470772153244e-05,
+            "discrepancy": 3.3107381791541165e-05,
+            "exactAbelResidual": 0.0
+          },
+          {
+            "n": 210,
+            "count": 4,
+            "literalPrimeResponse": -4.9073169002211107e-05,
+            "signedSmoothResponse": -4.856202941340074e-05,
+            "discrepancy": -5.111395888103684e-07,
+            "exactAbelResidual": -2.710505431213761e-20
+          }
+        ]
+      },
+      {
+        "periods": 16,
+        "order": 5,
+        "phase": 0.0,
+        "rieszLength": 11.5,
+        "primeCount": 10695,
+        "retainedDivisorCutoffs": 98715,
+        "signedFullMomentError": -0.3512902681092277,
+        "exactDiscreteDiscrepancyEnergy": 1.246261004118953,
+        "eventualEnergyFormula": 1524931.4478099083,
+        "formulaIsCertifiedAtThisHeight": false,
+        "cofactorResponses": [
+          {
+            "n": 6,
+            "count": 2,
+            "literalPrimeResponse": 0.14316313308116602,
+            "signedSmoothResponse": -0.09333329541186985,
+            "discrepancy": 0.23649642849303587,
+            "exactAbelResidual": -1.1102230246251565e-16
+          },
+          {
+            "n": 30,
+            "count": 3,
+            "literalPrimeResponse": 0.14316313308116646,
+            "signedSmoothResponse": -0.09333329541186997,
+            "discrepancy": 0.23649642849303643,
+            "exactAbelResidual": 0.0
+          },
+          {
+            "n": 105,
+            "count": 3,
+            "literalPrimeResponse": -0.003277743041879111,
+            "signedSmoothResponse": -0.45056833561436627,
+            "discrepancy": 0.44729059257248716,
+            "exactAbelResidual": 3.3306690738754696e-16
+          },
+          {
+            "n": 210,
+            "count": 4,
+            "literalPrimeResponse": 0.14316313308116602,
+            "signedSmoothResponse": -0.09333329541187008,
+            "discrepancy": 0.2364964284930361,
+            "exactAbelResidual": 1.1102230246251565e-16
+          }
+        ]
+      },
+      {
+        "periods": 16,
+        "order": 5,
+        "phase": 0.0,
+        "rieszLength": 12.0,
+        "primeCount": 10695,
+        "retainedDivisorCutoffs": 162754,
+        "signedFullMomentError": -0.3512902681092277,
+        "exactDiscreteDiscrepancyEnergy": 1.2570131733885785,
+        "eventualEnergyFormula": 1524931.4478099083,
+        "formulaIsCertifiedAtThisHeight": false,
+        "cofactorResponses": [
+          {
+            "n": 6,
+            "count": 2,
+            "literalPrimeResponse": 0.04827871956255736,
+            "signedSmoothResponse": 0.06018896712710148,
+            "discrepancy": -0.011910247564544119,
+            "exactAbelResidual": 1.6653345369377348e-16
+          },
+          {
+            "n": 30,
+            "count": 3,
+            "literalPrimeResponse": 0.20050224026612984,
+            "signedSmoothResponse": 0.2583853316322619,
+            "discrepancy": -0.05788309136613207,
+            "exactAbelResidual": 2.7755575615628914e-16
+          },
+          {
+            "n": 105,
+            "count": 3,
+            "literalPrimeResponse": 0.2221090055483066,
+            "signedSmoothResponse": -0.14327941785431592,
+            "discrepancy": 0.3653884234026225,
+            "exactAbelResidual": 3.885780586188048e-16
+          },
+          {
+            "n": 210,
+            "count": 4,
+            "literalPrimeResponse": 0.26898740323988535,
+            "signedSmoothResponse": 0.32278315684415054,
+            "discrepancy": -0.053795753604265195,
+            "exactAbelResidual": 4.996003610813204e-16
+          }
+        ]
+      },
+      {
+        "periods": 16,
+        "order": 5,
+        "phase": 0.0,
+        "rieszLength": 13.0,
+        "primeCount": 10695,
+        "retainedDivisorCutoffs": 442413,
+        "signedFullMomentError": -0.3512902681092277,
+        "exactDiscreteDiscrepancyEnergy": 1.2681073735999357,
+        "eventualEnergyFormula": 1524931.4478099083,
+        "formulaIsCertifiedAtThisHeight": false,
+        "cofactorResponses": [
+          {
+            "n": 6,
+            "count": 2,
+            "literalPrimeResponse": 0.20077806609945847,
+            "signedSmoothResponse": 0.19620344539095197,
+            "discrepancy": 0.004574620708506505,
+            "exactAbelResidual": -1.6653345369377348e-16
+          },
+          {
+            "n": 30,
+            "count": 3,
+            "literalPrimeResponse": 0.06175823796625135,
+            "signedSmoothResponse": 0.3319782757340736,
+            "discrepancy": -0.2702200377678223,
+            "exactAbelResidual": -3.885780586188048e-16
+          },
+          {
+            "n": 105,
+            "count": 3,
+            "literalPrimeResponse": 0.4298430614585622,
+            "signedSmoothResponse": 0.7965959162846701,
+            "discrepancy": -0.36675285482610787,
+            "exactAbelResidual": 2.220446049250313e-16
+          },
+          {
+            "n": 210,
+            "count": 4,
+            "literalPrimeResponse": 0.07876446853207675,
+            "signedSmoothResponse": 0.6342273460269248,
+            "discrepancy": -0.555462877494848,
+            "exactAbelResidual": -2.220446049250313e-16
+          }
+        ]
+      },
+      {
+        "periods": 16,
+        "order": 5,
+        "phase": 0.37,
+        "rieszLength": 12.0,
+        "primeCount": 10695,
+        "retainedDivisorCutoffs": 162754,
+        "signedFullMomentError": -0.6651570846985189,
+        "exactDiscreteDiscrepancyEnergy": 4.544082378778607,
+        "eventualEnergyFormula": 1524931.4478099083,
+        "formulaIsCertifiedAtThisHeight": false,
+        "cofactorResponses": [
+          {
+            "n": 6,
+            "count": 2,
+            "literalPrimeResponse": 0.14199083588112416,
+            "signedSmoothResponse": -0.06409616422418951,
+            "discrepancy": 0.20608700010531367,
+            "exactAbelResidual": -4.440892098500626e-16
+          },
+          {
+            "n": 30,
+            "count": 3,
+            "literalPrimeResponse": -0.1984841804352646,
+            "signedSmoothResponse": -0.3664558198102712,
+            "discrepancy": 0.1679716393750066,
+            "exactAbelResidual": -1.1102230246251565e-15
+          },
+          {
+            "n": 105,
+            "count": 3,
+            "literalPrimeResponse": 1.2072608939080718,
+            "signedSmoothResponse": 0.550037584221386,
+            "discrepancy": 0.6572233096866857,
+            "exactAbelResidual": -1.3322676295501878e-15
+          },
+          {
+            "n": 210,
+            "count": 4,
+            "literalPrimeResponse": -0.20595692761132156,
+            "signedSmoothResponse": -0.37755205348870935,
+            "discrepancy": 0.1715951258773878,
+            "exactAbelResidual": -6.661338147750939e-16
+          }
+        ]
+      }
+    ]
+  },
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszDiscrepancyEnergy.eventually_profile_error_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszDiscrepancyEnergy.response_error_eq_profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszDiscrepancyEnergy.exists_response_error_mean": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszDiscrepancyEnergy.exists_joint_response_error_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

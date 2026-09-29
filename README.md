@@ -149,10 +149,10 @@ Work directly on both cofinal signed bounds for J+C, retaining all original weig
 
 ### Latest Update
 
-**Numerical signed prime-period costs now sum over every cofactor count.** Actual complete prime periods and their first signed moments have explicit inverse-square prime-log bounds. All squarefree cofactor counts share one logarithmic budget, and arbitrary finite radial families retain their actual amplitude sums.
-Bound the original factorial/allocation variation and matching signed cutoff corrections, keeping clipped endpoints and paid-sector holes. Both whole thresholds remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszQuantitativePrimePeriod.lean#L541)
-· [Proof details](docs/zeta-riesz-quantitative-prime-period.md).
+**Exact composite moment cancellation lowers the joint energy cost.** Lean now subtracts the constant and logarithmic divisor components that every squarefree composite cofactor annihilates, before measuring the signed prime-block energy. The correction is exact and optimal among affine-log choices. Both literal carrier bounds improve with the same arithmetic constant, preserving moving intervals and every original allocation order.
+Control the total source-normalized cost with the actual radial and prime correlations. Larger-order probes still show growth; a disjoint whole-core cover and both whole thresholds remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszCenteredPrimeEnergy.lean#L455)
+· [Proof details](docs/zeta-riesz-centered-prime-energy.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

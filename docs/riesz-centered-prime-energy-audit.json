@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "scope": "The ORIGINAL retained carrier now has BOTH signed bounds with an OPTIMALLY CENTERED prime-profile energy. Every actual squarefree composite cofactor annihilates constant and logarithmic divisor profiles EXACTLY. The complete signed block is corrected BEFORE taking its quadratic energy; no arithmetic label, phase, allocation or factorial order is changed. For delta f_k=f(k)-f(k+1) and h_k=log(k+1)-log(k), Q_centered=Q_raw-(sum k*delta f_k*h_k)^2/(sum k*h_k^2), on 1<=k<X. Lean proves this equality, nonnegativity and optimality among EVERY affine-log correction. The population boundary at X is paid by exact zero divisor mass; no physical-cutoff endpoint cost is added. Cosine/sine rotation, binary maximal sums and exact B(n,j) energies retain COFACTOR-DEPENDENT prime intervals, BOTH Riesz cutoffs, ALL orders ZERO AND ONE included and every original selected mask. Disjoint cells and unique largest-prime ownership give an actual duplicate-free label set; finite families share one UNEVALUATED E. The entire retainedCenteredCost is PROVED NO LARGER than retainedMovingCost for the SAME E, exact coefficients and literal cells, at every valid physical cutoff. No prime-density approximation, zero/simplicity hypothesis, upper count ceiling, low-order deletion or extra companion credit enters. Optional finite probes reduce the cost by about 30-40%; at N=10 over 30.5 million selected labels the displayed cost drops from 0.2352 to 0.1406, BEFORE sqrt(E). This larger-order cost still exceeds the N=8 value; no eventual decay or asymptotic no-go is inferred. A disjoint WHOLE-CORE COVER and TOTAL source-normalized cost remain OPEN. Both whole -79/1000 floor and 3/2 ceiling remain open; no zero exclusion or RH claim.",
+  "status": "Focused Lean, full build, root lint and terminal axiom gates passed; both whole thresholds remain open",
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "rieszCompositeNullMomentTheorem": "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.divisor_centering",
+    "rieszCenteredEnergySavingTheorem": "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.centeredEnergy_eq",
+    "rieszCenteredEnergyOptimalTheorem": "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.centeredEnergy_le_shifted",
+    "rieszCenteredDivisorMeanTheorem": "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_centered_divisor_mean",
+    "rieszCenteredBlockMeanTheorem": "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_centered_block_mean",
+    "rieszCenteredMovingMeanTheorem": "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_centered_moving_mean",
+    "rieszLiteralCenteredTheorem": "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_literal_centered_bounds",
+    "rieszCenteredCostImprovementTheorem": "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.retainedCenteredCost_le",
+    "rieszLiteralCenteredOwnedTheorem": "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_literal_centered_owned_bounds",
+    "rieszLiteralCenteredFamilyTheorem": "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_literal_centered_family_bounds"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszCenteredPrimeEnergy.lean": "720261ca8e45f6a1924f5c941a9d6ad7595622392bf1cfad308adc8232a9cc1c",
+    "RiemannGaussian/ZetaRieszMovingPrimeIntervals.lean": "d613f12356094ac4edaaf5b6389b5ea8a3d8c297bcb31a27075acbbde901516a",
+    "RiemannGaussian/ZetaRieszSignedCutoffEnergy.lean": "c5046b28f59f34362ea3bb6dfb97f823c57fb3f34a338c542c53f9b4ac8901e4",
+    "RiemannGaussian/ZetaRieszPrimeFourier.lean": "e7c1a08b59ac75b5921734fb1fb4f759ee28882c75ceb57a8cbc29ec4833d8d8",
+    "RiemannGaussian/ZetaRieszRetainedFactorial.lean": "dcfc28c5cdf008aff385dc95606479591323a49800cc8b5a82af5f7a56e717be",
+    "scripts/probe_riesz_centered_prime_energy.py": "0c3772495c49faa5c82f0a9c481bca2c63479cc53dde0ed2cbc312f8c2a6258d"
+  },
+  "numericalProbe": {
+    "scope": "Optional exact-moment energy diagnostic; never a CI or RH certificate.\n\nRetains actual primes, squarefree cofactors, the full allocation polynomial,\nall factorial orders, both cutoff hinges, moving length, largest-prime owner,\nnondominant .65 mask and 1.95N..2.03N core. The finite population is truncated.\nCosts omit the UNEVALUATED sqrt(E). Increasing finite costs do not prove an\nasymptotic obstruction; decreases do not prove an eventual bound.",
+    "rows": [
+      {
+        "order": 6,
+        "population": 4096,
+        "allCofactorPrimesAboveNSquared": false,
+        "radius": 0.50005,
+        "height": 54.0,
+        "length": 4.795790545596741,
+        "physicalUpper": 121,
+        "selectedLabels": 2130,
+        "originalMovingCost": 0.15583740016186673,
+        "populationTruncatedCost": 0.15583740016186673,
+        "centeredCost": 0.10917778549644874,
+        "centeredOverPrevious": 0.7005878266901712,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "regressionRows": 256,
+        "maximumNullCorrectionRelativeError": 4.493067756263839e-16,
+        "shells": [
+          {
+            "lower": 1024,
+            "upper": 2048,
+            "cofactors": 201,
+            "binaryDepth": 4,
+            "sourceCostsWithoutSqrtE": [
+              0.050382288902056434,
+              0.050382288902056434,
+              0.03312447578805391
+            ]
+          },
+          {
+            "lower": 2048,
+            "upper": 4096,
+            "cofactors": 183,
+            "binaryDepth": 4,
+            "sourceCostsWithoutSqrtE": [
+              0.1054551112598103,
+              0.1054551112598103,
+              0.07605330970839484
+            ]
+          }
+        ]
+      },
+      {
+        "order": 6,
+        "population": 4096,
+        "allCofactorPrimesAboveNSquared": true,
+        "radius": 0.50005,
+        "height": 54.0,
+        "length": 4.795790545596741,
+        "physicalUpper": 121,
+        "selectedLabels": 113,
+        "originalMovingCost": 0.03920348958682537,
+        "populationTruncatedCost": 0.03920348958682537,
+        "centeredCost": 0.027772382262803375,
+        "centeredOverPrevious": 0.7084160761070744,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "regressionRows": 21,
+        "maximumNullCorrectionRelativeError": 2.618455766672135e-16,
+        "shells": [
+          {
+            "lower": 1024,
+            "upper": 2048,
+            "cofactors": 7,
+            "binaryDepth": 4,
+            "sourceCostsWithoutSqrtE": [
+              0.007867627339397014,
+              0.007867627339397014,
+              0.005173744180538561
+            ]
+          },
+          {
+            "lower": 2048,
+            "upper": 4096,
+            "cofactors": 14,
+            "binaryDepth": 4,
+            "sourceCostsWithoutSqrtE": [
+              0.031335862247428355,
+              0.031335862247428355,
+              0.022598638082264814
+            ]
+          }
+        ]
+      },
+      {
+        "order": 8,
+        "population": 65536,
+        "allCofactorPrimesAboveNSquared": false,
+        "radius": 0.50005,
+        "height": 54.0,
+        "length": 6.802394763324311,
+        "physicalUpper": 900,
+        "selectedLabels": 285908,
+        "originalMovingCost": 0.16599720595137368,
+        "populationTruncatedCost": 0.16599720595137368,
+        "centeredCost": 0.1073388775648211,
+        "centeredOverPrevious": 0.6466306282062625,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "regressionRows": 256,
+        "maximumNullCorrectionRelativeError": 4.0245584642661925e-16,
+        "shells": [
+          {
+            "lower": 4096,
+            "upper": 8192,
+            "cofactors": 475,
+            "binaryDepth": 5,
+            "sourceCostsWithoutSqrtE": [
+              0.00952903382494573,
+              0.00952903382494573,
+              0.004856663102971165
+            ]
+          },
+          {
+            "lower": 8192,
+            "upper": 16384,
+            "cofactors": 2420,
+            "binaryDepth": 7,
+            "sourceCostsWithoutSqrtE": [
+              0.043785675379497804,
+              0.043785675379497804,
+              0.025482971341397764
+            ]
+          },
+          {
+            "lower": 16384,
+            "upper": 32768,
+            "cofactors": 3337,
+            "binaryDepth": 7,
+            "sourceCostsWithoutSqrtE": [
+              0.06585913238678995,
+              0.06585913238678995,
+              0.04317917391599787
+            ]
+          },
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "cofactors": 3362,
+            "binaryDepth": 6,
+            "sourceCostsWithoutSqrtE": [
+              0.04682336436014019,
+              0.04682336436014019,
+              0.033820069204454316
+            ]
+          }
+        ]
+      },
+      {
+        "order": 8,
+        "population": 65536,
+        "allCofactorPrimesAboveNSquared": true,
+        "radius": 0.50005,
+        "height": 54.0,
+        "length": 6.802394763324311,
+        "physicalUpper": 900,
+        "selectedLabels": 25344,
+        "originalMovingCost": 0.04773792518887623,
+        "populationTruncatedCost": 0.04773792518887623,
+        "centeredCost": 0.030924235596394435,
+        "centeredOverPrevious": 0.6477917813571069,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "regressionRows": 256,
+        "maximumNullCorrectionRelativeError": 3.1966016425556574e-16,
+        "shells": [
+          {
+            "lower": 4096,
+            "upper": 8192,
+            "cofactors": 22,
+            "binaryDepth": 5,
+            "sourceCostsWithoutSqrtE": [
+              0.0020520280586582298,
+              0.0020520280586582298,
+              0.001045857012802665
+            ]
+          },
+          {
+            "lower": 8192,
+            "upper": 16384,
+            "cofactors": 172,
+            "binaryDepth": 7,
+            "sourceCostsWithoutSqrtE": [
+              0.011103674741209492,
+              0.011103674741209492,
+              0.006462206930066433
+            ]
+          },
+          {
+            "lower": 16384,
+            "upper": 32768,
+            "cofactors": 461,
+            "binaryDepth": 7,
+            "sourceCostsWithoutSqrtE": [
+              0.023351848893605802,
+              0.023351848893605802,
+              0.015307523740203636
+            ]
+          },
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "cofactors": 159,
+            "binaryDepth": 6,
+            "sourceCostsWithoutSqrtE": [
+              0.011230373495402698,
+              0.011230373495402698,
+              0.008108647913321701
+            ]
+          }
+        ]
+      },
+      {
+        "order": 10,
+        "population": 1048576,
+        "allCofactorPrimesAboveNSquared": false,
+        "radius": 0.50005,
+        "height": 54.0,
+        "length": 9.086589564540008,
+        "physicalUpper": 8836,
+        "selectedLabels": 30510285,
+        "originalMovingCost": 0.23521853966922146,
+        "populationTruncatedCost": 0.23521853966922146,
+        "centeredCost": 0.14055755381544172,
+        "centeredOverPrevious": 0.5975615443115252,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "regressionRows": 256,
+        "maximumNullCorrectionRelativeError": 1.4368210921566207e-16,
+        "shells": [
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "cofactors": 13178,
+            "binaryDepth": 9,
+            "sourceCostsWithoutSqrtE": [
+              0.03542698606149605,
+              0.03542698606149605,
+              0.015919745487316388
+            ]
+          },
+          {
+            "lower": 65536,
+            "upper": 131072,
+            "cofactors": 23277,
+            "binaryDepth": 10,
+            "sourceCostsWithoutSqrtE": [
+              0.05611848067064395,
+              0.05611848067064395,
+              0.029496923139113045
+            ]
+          },
+          {
+            "lower": 131072,
+            "upper": 262144,
+            "cofactors": 36200,
+            "binaryDepth": 9,
+            "sourceCostsWithoutSqrtE": [
+              0.05409714852373365,
+              0.05409714852373365,
+              0.03266908451953312
+            ]
+          },
+          {
+            "lower": 262144,
+            "upper": 524288,
+            "cofactors": 50753,
+            "binaryDepth": 9,
+            "sourceCostsWithoutSqrtE": [
+              0.05100890064873656,
+              0.05100890064873656,
+              0.034118088984149454
+            ]
+          },
+          {
+            "lower": 524288,
+            "upper": 1048576,
+            "cofactors": 57896,
+            "binaryDepth": 8,
+            "sourceCostsWithoutSqrtE": [
+              0.03856702376461124,
+              0.03856702376461124,
+              0.028353711685329727
+            ]
+          }
+        ]
+      },
+      {
+        "order": 10,
+        "population": 1048576,
+        "allCofactorPrimesAboveNSquared": true,
+        "radius": 0.50005,
+        "height": 54.0,
+        "length": 9.086589564540008,
+        "physicalUpper": 8836,
+        "selectedLabels": 2930886,
+        "originalMovingCost": 0.06939752244445141,
+        "populationTruncatedCost": 0.06939752244445141,
+        "centeredCost": 0.04121773120906033,
+        "centeredOverPrevious": 0.5939366386177932,
+        "sourceCostsOmitSqrtE": true,
+        "constantEvaluated": false,
+        "wholeCarrierCovered": false,
+        "regressionRows": 256,
+        "maximumNullCorrectionRelativeError": 1.1125209536982154e-16,
+        "shells": [
+          {
+            "lower": 32768,
+            "upper": 65536,
+            "cofactors": 827,
+            "binaryDepth": 9,
+            "sourceCostsWithoutSqrtE": [
+              0.008839999782726492,
+              0.008839999782726492,
+              0.003972562624071332
+            ]
+          },
+          {
+            "lower": 65536,
+            "upper": 131072,
+            "cofactors": 2156,
+            "binaryDepth": 10,
+            "sourceCostsWithoutSqrtE": [
+              0.016825293327812976,
+              0.016825293327812976,
+              0.008843928579846396
+            ]
+          },
+          {
+            "lower": 131072,
+            "upper": 262144,
+            "cofactors": 5080,
+            "binaryDepth": 9,
+            "sourceCostsWithoutSqrtE": [
+              0.01953942611798288,
+              0.01953942611798288,
+              0.01179845973409757
+            ]
+          },
+          {
+            "lower": 262144,
+            "upper": 524288,
+            "cofactors": 6093,
+            "binaryDepth": 9,
+            "sourceCostsWithoutSqrtE": [
+              0.017763782992251863,
+              0.017763782992251863,
+              0.011878503980208295
+            ]
+          },
+          {
+            "lower": 524288,
+            "upper": 1048576,
+            "cofactors": 1235,
+            "binaryDepth": 8,
+            "sourceCostsWithoutSqrtE": [
+              0.006429020223677193,
+              0.006429020223677193,
+              0.0047242762908367405
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "remainingQuantitativeWork": [
+    "Disjoint cover of all surviving original masks.",
+    "Source-normalized total centered cost with actual radial/prime correlations.",
+    "Evaluate or asymptotically absorb the arithmetic mean constant.",
+    "Independent whole floor and ceiling."
+  ],
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.divisor_centering": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.centeredEnergy_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.centeredEnergy_le_shifted": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_centered_divisor_mean": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_centered_block_mean": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_centered_moving_mean": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_literal_centered_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.retainedCenteredCost_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_literal_centered_owned_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RiemannGaussian.ZetaRieszCenteredPrimeEnergy.exists_literal_centered_family_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

@@ -168,6 +168,155 @@ def run(output, url=None, refresh_preview=False):
                         assert all(t in scope for t in ('exact signed rest', '1051 chunks',
                             '(2/25*sqrt(N+1)-1/8)', 'not source-o(1)',
                             'Both numerical whole endgame bounds remain open'))
+                    if endpoint['id'] == 'centered-prime-energy':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 10
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        saving = next(n for n in roots if n['id'].endswith('.centeredEnergy_eq'))
+                        assert all(t in saving['statement'] for t in ('centeredEnergy', 'rawEnergy',
+                            'logCross', 'logEnergy'))
+                        optimal = next(n for n in roots if n['id'].endswith('.centeredEnergy_le_shifted'))
+                        assert 'shiftedEnergy' in optimal['statement']
+                        comparison = next(n for n in roots if n['id'].endswith('.retainedCenteredCost_le'))
+                        assert all(t in comparison['statement'] for t in ('retainedCenteredCost',
+                            'retainedMovingCost', '≤'))
+                        owned = next(n for n in roots if n['id'].endswith('.exists_literal_centered_owned_bounds'))
+                        assert all(t in owned['statement'] for t in ('residualCoefficient',
+                            'zetaPrimeLogKernel', 'biUnion', 'boundedShare'))
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('OPTIMALLY CENTERED', 'COFACTOR-DEPENDENT',
+                            'ZERO AND ONE', 'UNEVALUATED', 'PROVED NO LARGER', 'SAME E',
+                            'WHOLE-CORE COVER', 'TOTAL source-normalized cost remain OPEN',
+                            'Both whole -79/1000 floor and 3/2 ceiling remain open'))
+                    if endpoint['id'] == 'moving-prime-interval-bound':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 8
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        moving = next(n for n in roots if n['id'].endswith('.exists_moving_mean'))
+                        assert all(t in moving['statement'] for t in ('Finset.Ico', 'movingEnergy', 'Squarefree'))
+                        owned = next(n for n in roots if n['id'].endswith('.exists_literal_owned_bounds'))
+                        assert all(t in owned['statement'] for t in ('residualCoefficient', 'zetaPrimeLogKernel',
+                            'retainedMovingCost', 'biUnion', 'boundedShare'))
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('COFACTOR-DEPENDENT', 'ZERO AND ONE', 'INSIDE',
+                            'UNEVALUATED', 'unique largest-prime ownership', 'WHOLE-CORE COVER',
+                            'TOTAL source-normalized cost remain OPEN',
+                            'Both whole -79/1000 floor and 3/2 ceiling remain open'))
+                    if endpoint['id'] == 'joined-smooth-prime-bound':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 8
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        smooth = next(n for n in roots if n['id'].endswith('.factorial_smooth_interval_bound'))
+                        assert all(t in smooth['statement'] for t in ('factorialAmplitude', 'Real.cos', '∫', '|y|'))
+                        mean = next(n for n in roots if n['id'].endswith('.exists_joined_prime_mean'))
+                        assert all(t in mean['statement'] for t in ('primeResponse', 'joinedCost', 'Squarefree'))
+                        family = next(n for n in roots if n['id'].endswith('.exists_literal_joined_family_bounds'))
+                        assert all(t in family['statement'] for t in ('residualCoefficient', 'zetaPrimeLogKernel',
+                            'retainedJoinedCost', '∃', '∧'))
+                        assert 'smoothResponse' not in family['statement']
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('ORIGINAL', 'COMMON', 'PAID', 'ZERO AND ONE',
+                            'UNEVALUATED', 'unique ownership', 'TOTAL source-scaled cost remain OPEN',
+                            'NOT uniformly better', 'Both whole -79/1000 floor and 3/2 ceiling remain open'))
+                    if endpoint['id'] == 'retained-prime-discrepancy':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 6
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        phase = next(n for n in roots if n['id'].endswith('.exists_cosine_error_mean'))
+                        assert all(t in phase['statement'] for t in ('cosineError', 'intervalError', 'Squarefree'))
+                        family = next(n for n in roots if n['id'].endswith('.exists_literal_family_error'))
+                        assert all(t in family['statement'] for t in ('residualCoefficient', 'zetaPrimeLogKernel',
+                            'boundedShare', 'smoothResponse', 'retainedErrorCost', 'choose', '∃', '∧'))
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('ORIGINAL', 'BOTH Riesz cutoffs', 'ZERO AND ONE',
+                            'COMMON', 'UNEVALUATED', 'JOINT SIGNED SMOOTH CARRIER IS NOT PAID',
+                            'unique ownership', 'Both whole -79/1000 floor and 3/2 ceiling remain open'))
+                    if endpoint['id'] == 'coupled-prime-discrepancy':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 4
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        energy = next(n for n in roots if n['id'].endswith('.eventually_profile_error_energy'))
+                        assert all(t in energy['statement'] for t in ('profile', 'smoothDifference',
+                            'intervalError', '^ 2', '5000'))
+                        bounds = next(n for n in roots if n['id'].endswith('.exists_joint_response_error_bounds'))
+                        assert all(t in bounds['statement'] for t in ('primeResponse', 'smoothResponse',
+                            'Squarefree', 'intervalError', '√', '∧'))
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('BOTH Riesz cutoffs', 'COMMON',
+                            'UNEVALUATED', 'NOT paid', 'Low factorial orders are not deleted',
+                            'Both whole -79/1000 floor and 3/2 ceiling remain open'))
+                    if endpoint['id'] == 'joint-prime-error':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 8
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        theta = next(n for n in roots if n['id'].endswith('.eventually_theta_error'))
+                        assert all(t in theta['statement'] for t in ('Chebyshev.theta', '5000', '^ 2', '∃'))
+                        literal = next(n for n in roots if n['id'].endswith('.eventually_retained_interval_error'))
+                        assert all(t in literal['statement'] for t in ('boundedShare',
+                            'factorialAmplitude', 'factorialError', 'choose', 'Squarefree', '∫'))
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('UNEVALUATED', 'ZERO AND ONE',
+                            'COMMON', 'PRIME-MOMENT', 'NOT a bound for the full Riesz carrier',
+                            'Both whole -79/1000 floor and 3/2 ceiling remain open'))
+                    if endpoint['id'] == 'joint-period-energy':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 7
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        profile = next(n for n in roots if n['id'].endswith('.joint_profile_energy'))
+                        assert all(t in profile['statement'] for t in ('profile', 'Ioc', '∑', '^ 2'))
+                        literal = next(n for n in roots if n['id'].endswith('.exists_literal_joint_period_bounds'))
+                        assert all(t in literal['statement'] for t in ('residualCoefficient',
+                            'zetaPrimeLogKernel', 'factorialJointEnergy', 'choose', 'Squarefree', '5000', '54'))
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('UNEVALUATED', 'COMMON',
+                            'Cofactor-dependent prime holes', 'remain OPEN',
+                            'Both whole -79/1000 floor and 3/2 ceiling remain open'))
+                    if endpoint['id'] == 'retained-factorial-periods':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 10
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        allocation = next(n for n in roots if n['id'].endswith('.unassigned_multinomial'))
+                        assert all(t in allocation['statement'] for t in (
+                            'boundedShare', 'piAntidiag', 'unpaidOrders', 'allocationWeight'))
+                        order = next(n for n in roots if n['id'].endswith('.factorial_order_budget'))
+                        assert all(t in order['statement'] for t in ('amplitudeEnergy', 'factorialScore', 'choose', '√'))
+                        literal = next(n for n in roots if n['id'].endswith('.exists_literal_family_bounds'))
+                        assert all(t in literal['statement'] for t in ('residualCoefficient',
+                            'zetaPrimeLogKernel', 'summedPeriodCost', 'Squarefree', '5000', '54', '∧'))
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('UNEVALUATED', 'ALL factorial orders',
+                            'Cofactor-dependent prime holes', 'NOT a whole-carrier smallness theorem',
+                            'Both whole -79/1000 floor and 3/2 ceiling remain open'))
+                    if endpoint['id'] == 'signed-cutoff-energy':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 7
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        mean = next(n for n in roots if n['id'].endswith('.exists_signed_profile_mean'))
+                        assert all(t in mean['statement'] for t in ('Squarefree', 'Ioc', 'b i ^ 2'))
+                        literal = next(n for n in roots if n['id'].endswith('.exists_literal_joint_bounds'))
+                        assert all(t in literal['statement'] for t in ('primeProfile',
+                            'residualCoefficient', 'zetaPrimeLogKernel', 'Real.exp', 'primeFactors', 'Squarefree'))
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('UNEVALUATED', 'NO separate absolute crossing price',
+                            'not a source-small energy estimate',
+                            'Both whole -79/1000 floor and 3/2 ceiling remain open'))
+                    if endpoint['id'] == 'linear-cutoff-mean':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 8
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        mean = next(n for n in roots if n['id'].endswith('.exists_min_riesz_difference_mean_bound'))
+                        assert all(t in mean['statement'] for t in ('Squarefree', 'Ioc',
+                            'VaughanLogAverage.riesz', 'min', 'B - A'))
+                        joint = next(n for n in roots if n['id'].endswith('.exists_joint_difference_bounds'))
+                        assert all(t in joint['statement'] for t in ('w n', 'min', '√', '∧'))
+                        literal = next(n for n in roots if n['id'].endswith('.exists_literal_prime_fibre_bounds'))
+                        assert all(t in literal['statement'] for t in ('signedPrimeWeight',
+                            'residualCoefficient', 'zetaPrimeLogKernel', 'Real.log',
+                            'primeFactors', 'Squarefree', 'min'))
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('UNEVALUATED', 'remain UNPAID',
+                            'unit is excluded explicitly', 'not a source-normalized o(1)',
+                            'Both whole -79/1000 floor and 3/2 ceiling remain open'))
                     if endpoint['id'] == 'quantitative-prime-periods':
                         roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
                         assert len(roots) == 8

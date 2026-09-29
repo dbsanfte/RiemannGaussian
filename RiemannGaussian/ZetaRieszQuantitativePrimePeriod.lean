@@ -30,7 +30,9 @@ private theorem primeCoefficient_sum (x : ℝ) :
   rw [Chebyshev.theta_eq_sum_Icc,Finset.sum_filter]
   rfl
 
-private theorem prime_abel (f : ℝ → ℝ) {a b : ℝ} (ha : 0 ≤ a) (hab : a ≤ b)
+/-- The exact actual-prime Abel formula, retaining both exterior endpoints
+and the signed integral against the Chebyshev discrepancy. -/
+theorem prime_abel (f : ℝ → ℝ) {a b : ℝ} (ha : 0 ≤ a) (hab : a ≤ b)
     (hd : ∀ x ∈ Set.Icc a b, DifferentiableAt ℝ f x)
     (hi : IntegrableOn (deriv f) (Set.Icc a b)) :
     (∑ p ∈ (Finset.Ioc ⌊a⌋₊ ⌊b⌋₊).filter Nat.Prime, f p*Real.log p)-
@@ -67,7 +69,9 @@ private theorem prime_abel (f : ℝ → ℝ) {a b : ℝ} (ha : 0 ≤ a) (hab : a
   rw [he,hs]
   linarith only [hip,hid]
 
-private theorem integrable_prime_error (f : ℝ → ℝ) {a b : ℝ} (ha : 0 ≤ a)
+/-- The actual Chebyshev discrepancy integral is integrable under the
+same derivative hypothesis as the finite Abel formula. -/
+theorem integrable_prime_error (f : ℝ → ℝ) {a b : ℝ} (ha : 0 ≤ a)
     (hi : IntegrableOn (deriv f) (Set.Icc a b)) :
     IntegrableOn (fun x => deriv f x*(x-Chebyshev.theta x)) (Set.Ioc a b) := by
   have ht := integrableOn_mul_sum_Icc primeCoefficient (m := 0) ha hi
@@ -158,7 +162,9 @@ theorem prime_error_bound (f : ℝ → ℝ) {a b W D : ℝ}
       add_le_add (add_le_add (hend _ ⟨hab',le_rfl⟩) (hend _ ⟨le_rfl,hab'⟩)) hib
     _ = _ := by ring
 
-private theorem profile_deriv (F G : ℝ → ℝ) (c : ℝ)
+/-- Differentiate the literal prime test kernel, including its reciprocal
+prime and reciprocal logarithm. -/
+theorem profile_deriv (F G : ℝ → ℝ) (c : ℝ)
     (hF : ∀ t, HasDerivAt F (G t) t) {x : ℝ} (hx : 1 < x) :
     HasDerivAt (fun x => F (Real.log x+c)/(x*Real.log x))
       ((G (Real.log x+c)-F (Real.log x+c)*(1+(Real.log x)⁻¹))/(x^2*Real.log x)) x := by

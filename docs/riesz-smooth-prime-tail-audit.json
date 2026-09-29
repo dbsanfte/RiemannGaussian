@@ -1,0 +1,1151 @@
+{
+  "schemaVersion": 1,
+  "scope": "The ORIGINAL retained residualCoefficient/kernel carrier now has BOTH signed bounds on COMMON joined eligible coprime prime intervals, including arbitrary exterior clipping and arbitrarily many phase periods. The smooth contribution is PAID: integration by parts uses the one-turning-point density exp(-t/2)*t^(j-1), retaining ZERO AND ONE orders and the full cofactor phase. Its amplitude cost is 2W/(a*abs(y)), with W the minimum of the interval amplitude bound and global factorial peak; the two-cutoff squared energy is at most b times this cost squared. Adding the ACTUAL arithmetic error gives joinedCost=smoothCost+factorialError. The exact allocation 1-boundedShare, ALL factorial orders and BOTH Riesz cutoffs remain in the literal proof. One proved but UNEVALUATED E,T works for finite radial/count families, with K=sqrt(E)*sum retainedJoinedCost. The original comparison with the signed smooth H is preserved as a stronger-information theorem. There is no count ceiling or explicit period-count multiplier, no zero or simplicity premise and no low-order deletion. The theorem requires y nonzero; the sharper arithmetic threshold is eventual, not asserted at 5000. Actual prime holes, unique ownership/incidence accounting and the TOTAL source-scaled cost remain OPEN. Never append credits already included in complete intervals. This new budget is NOT uniformly better than the earlier joined-period bound; the numerical comparison improves long intervals but loses on some short intervals. The all-order binomial-cap source budget still grows at large N; this is a diagnostic of that positive budget, not a carrier lower bound or a proved asymptotic no-go. Both whole -79/1000 floor and 3/2 ceiling remain open; no zero exclusion or RH claim. Probes are optional floating diagnostics, never CI certificates.",
+  "status": "Focused Lean, full build, root lint and terminal axiom gates passed; both whole thresholds remain open",
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "rieszSmoothFactorialIntervalTheorem": "RiemannGaussian.ZetaRieszSmoothPrimeTail.factorial_smooth_interval_bound",
+    "rieszSmoothFactorialTailTheorem": "RiemannGaussian.ZetaRieszSmoothPrimeTail.factorial_smooth_tail_bound",
+    "rieszSmoothTailEnergyTheorem": "RiemannGaussian.ZetaRieszSmoothPrimeTail.factorial_smooth_profile_energy",
+    "rieszSmoothResponseMeanTheorem": "RiemannGaussian.ZetaRieszSmoothPrimeTail.exists_smooth_response_mean",
+    "rieszJoinedPrimeMeanTheorem": "RiemannGaussian.ZetaRieszSmoothPrimeTail.exists_joined_prime_mean",
+    "rieszJoinedPrimeShellTheorem": "RiemannGaussian.ZetaRieszSmoothPrimeTail.exists_joined_prime_shell",
+    "rieszLiteralJoinedPrimeTheorem": "RiemannGaussian.ZetaRieszSmoothPrimeTail.exists_literal_joined_bounds",
+    "rieszLiteralJoinedFamilyTheorem": "RiemannGaussian.ZetaRieszSmoothPrimeTail.exists_literal_joined_family_bounds"
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszSmoothPrimeTail.lean": "ce384d93b09c2090d418d1196f911e935d3afae0201ddcedfbe73864a06eba62",
+    "RiemannGaussian/ZetaRieszDiscrepancyEnergy.lean": "46d7c9c64086f81d185686442351559ec55edb62fb4cfab3c9436a8ef297695c",
+    "RiemannGaussian/ZetaRieszRetainedDiscrepancy.lean": "4afa966950b9777b7fabaf6c32f211ff31e729d5c931bacba686a3798dbf309a",
+    "RiemannGaussian/ZetaRieszJointPrimeError.lean": "6bfdd49634781951cdee34c95c2a4379a5d3b95ba25d5b291050d69d03b361dd",
+    "RiemannGaussian/ZetaRieszRetainedFactorial.lean": "dcfc28c5cdf008aff385dc95606479591323a49800cc8b5a82af5f7a56e717be",
+    "scripts/probe_riesz_smooth_prime_tail.py": "f6f54b91e50f5602b892dfc790fc761b3f3a0ce158a7ceb6447e01062fc02778"
+  },
+  "numericalProbe": {
+    "scope": "Optional joined smooth-tail diagnostics; never an ordinary CI certificate.\n\nThe small actual-prime blocks are below the proved, unevaluated arithmetic\nthreshold. Large-order budgets use a smooth saddle and binomial caps, not\nthe exact retained coefficients or a partition of the whole carrier. Mean\nconstants are omitted; no whole floor, ceiling or source decay is inferred.",
+    "smoothChecks": [
+      {
+        "order": 0,
+        "periods": 1,
+        "phase": 0.0,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.6554257389647998
+      },
+      {
+        "order": 0,
+        "periods": 1,
+        "phase": 0.37,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.801598794578536
+      },
+      {
+        "order": 0,
+        "periods": 16,
+        "phase": 0.0,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.4666469434026959
+      },
+      {
+        "order": 0,
+        "periods": 16,
+        "phase": 0.37,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.5553700394590069
+      },
+      {
+        "order": 1,
+        "periods": 1,
+        "phase": 0.0,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.6507505879514155
+      },
+      {
+        "order": 1,
+        "periods": 1,
+        "phase": 0.37,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.8001839945912832
+      },
+      {
+        "order": 1,
+        "periods": 16,
+        "phase": 0.0,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.4036599149065485
+      },
+      {
+        "order": 1,
+        "periods": 16,
+        "phase": 0.37,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.4935075115576068
+      },
+      {
+        "order": 5,
+        "periods": 1,
+        "phase": 0.0,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.669964478498564
+      },
+      {
+        "order": 5,
+        "periods": 1,
+        "phase": 0.37,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.8418720187576105
+      },
+      {
+        "order": 5,
+        "periods": 16,
+        "phase": 0.0,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.5507986751299742
+      },
+      {
+        "order": 5,
+        "periods": 16,
+        "phase": 0.37,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.7561614788084079
+      },
+      {
+        "order": 16,
+        "periods": 1,
+        "phase": 0.0,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.5837023728679961
+      },
+      {
+        "order": 16,
+        "periods": 1,
+        "phase": 0.37,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.7793587856158931
+      },
+      {
+        "order": 16,
+        "periods": 16,
+        "phase": 0.0,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.17816224167980546
+      },
+      {
+        "order": 16,
+        "periods": 16,
+        "phase": 0.37,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.2766071352159324
+      },
+      {
+        "order": 32,
+        "periods": 1,
+        "phase": 0.0,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.5181725402008396
+      },
+      {
+        "order": 32,
+        "periods": 1,
+        "phase": 0.37,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.7579419104058386
+      },
+      {
+        "order": 32,
+        "periods": 16,
+        "phase": 0.0,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.16164218422324814
+      },
+      {
+        "order": 32,
+        "periods": 16,
+        "phase": 0.37,
+        "testedPartialTails": 41,
+        "maximumTailOverBound": 0.2701784590526987
+      }
+    ],
+    "actualPrimeBlocks": [
+      {
+        "N": 8,
+        "periods": 1,
+        "eligibleCofactorPrimes": false,
+        "primeCount": 271,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 8.15698617459316e-16,
+            "retainedOrderZero": 1826316.7917579769,
+            "retainedOrderOne": 3311981.8068858194,
+            "literalRetainedResponse": 7.29116551612355e-05,
+            "expandedResponse": 7.291165516123536e-05,
+            "signedSmoothResponse": 2.7242271922939814e-05,
+            "arithmeticDiscrepancy": 4.566938323829569e-05
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 6.377145145593868e-16,
+            "retainedOrderZero": 2358769.775222838,
+            "retainedOrderOne": 4157687.951334142,
+            "literalRetainedResponse": -6.455951954586124e-05,
+            "expandedResponse": -6.455951954586124e-05,
+            "signedSmoothResponse": -3.722936878503422e-05,
+            "arithmeticDiscrepancy": -2.7330150760827017e-05
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 1.2458338303038652e-15,
+            "retainedOrderZero": 3573306.430624372,
+            "retainedOrderOne": 6014421.384060738,
+            "literalRetainedResponse": -3.0057632258055515e-05,
+            "expandedResponse": -3.0057632258055495e-05,
+            "signedSmoothResponse": -3.752468986033382e-05,
+            "arithmeticDiscrepancy": 7.467057602278302e-06
+          }
+        ],
+        "jointRetainedResponse": -2.1705496642681248e-05,
+        "jointSignedSmoothResponse": -4.7511786722428224e-05,
+        "jointArithmeticDiscrepancy": 2.5806290079746976e-05,
+        "eventualCostWithoutSqrtE": 9.349749101628595,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 0.8117242886346918,
+        "joinedCostWithoutSqrtE": 10.161473390263286
+      },
+      {
+        "N": 8,
+        "periods": 1,
+        "eligibleCofactorPrimes": true,
+        "primeCount": 271,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 6.94627945486141e-16,
+            "retainedOrderZero": 1227061.2035614,
+            "retainedOrderOne": 2584211.4943430033,
+            "literalRetainedResponse": 7.266736675773967e-05,
+            "expandedResponse": 7.266736675773967e-05,
+            "signedSmoothResponse": 2.711604411035723e-05,
+            "arithmeticDiscrepancy": 4.555132264738244e-05
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 6.224236538750618e-16,
+            "retainedOrderZero": 1969734.246611334,
+            "retainedOrderOne": 3745714.582359821,
+            "literalRetainedResponse": -6.449428284642126e-05,
+            "expandedResponse": -6.449428284642126e-05,
+            "signedSmoothResponse": -3.719652847821952e-05,
+            "arithmeticDiscrepancy": -2.729775436820174e-05
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 1.3300447295828446e-15,
+            "retainedOrderZero": 3305374.964353419,
+            "retainedOrderOne": 5786362.622107872,
+            "literalRetainedResponse": -3.0043124475835665e-05,
+            "expandedResponse": -3.0043124475835645e-05,
+            "signedSmoothResponse": -3.750709776418952e-05,
+            "arithmeticDiscrepancy": 7.463973288353852e-06
+          }
+        ],
+        "jointRetainedResponse": -2.1870040564517256e-05,
+        "jointSignedSmoothResponse": -4.758758213205181e-05,
+        "jointArithmeticDiscrepancy": 2.5717541567534553e-05,
+        "eventualCostWithoutSqrtE": 9.349749101628595,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 0.8117242886346918,
+        "joinedCostWithoutSqrtE": 10.161473390263286
+      },
+      {
+        "N": 8,
+        "periods": 16,
+        "eligibleCofactorPrimes": false,
+        "primeCount": 10695,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 1.694271429091414e-15,
+            "retainedOrderZero": 1826316.7917579769,
+            "retainedOrderOne": 3311981.8068858194,
+            "literalRetainedResponse": 0.0007802446990893032,
+            "expandedResponse": 0.000780244699089303,
+            "signedSmoothResponse": 0.0004368902639289363,
+            "arithmeticDiscrepancy": 0.00034335443516036687
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 1.7123797346864348e-15,
+            "retainedOrderZero": 2358769.775222838,
+            "retainedOrderOne": 4157687.951334142,
+            "literalRetainedResponse": 0.00021379890722711276,
+            "expandedResponse": 0.00021379890722711268,
+            "signedSmoothResponse": 0.00017615969394000749,
+            "arithmeticDiscrepancy": 3.763921328710527e-05
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 1.2953061274373168e-15,
+            "retainedOrderZero": 3573306.430624372,
+            "retainedOrderOne": 6014421.384060738,
+            "literalRetainedResponse": -8.423919032520227e-05,
+            "expandedResponse": -8.423919032520208e-05,
+            "signedSmoothResponse": -0.00011353406555678055,
+            "arithmeticDiscrepancy": 2.9294875231578274e-05
+          }
+        ],
+        "jointRetainedResponse": 0.0009098044159912136,
+        "jointSignedSmoothResponse": 0.0004995158923121632,
+        "jointArithmeticDiscrepancy": 0.0004102885236790504,
+        "eventualCostWithoutSqrtE": 158.21466189929887,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 1.0977202110555095,
+        "joinedCostWithoutSqrtE": 159.31238211035438
+      },
+      {
+        "N": 8,
+        "periods": 16,
+        "eligibleCofactorPrimes": true,
+        "primeCount": 10695,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 1.6097197141323054e-15,
+            "retainedOrderZero": 1227061.2035614,
+            "retainedOrderOne": 2584211.4943430033,
+            "literalRetainedResponse": 0.0007781603798765466,
+            "expandedResponse": 0.0007781603798765457,
+            "signedSmoothResponse": 0.0004356336593681699,
+            "arithmeticDiscrepancy": 0.0003425267205083767
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 1.7657520923160759e-15,
+            "retainedOrderZero": 1969734.246611334,
+            "retainedOrderOne": 3745714.582359821,
+            "literalRetainedResponse": 0.000213530944517751,
+            "expandedResponse": 0.00021353094451775114,
+            "signedSmoothResponse": 0.0001759128702070843,
+            "arithmeticDiscrepancy": 3.76180743106667e-05
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 1.3300447295828446e-15,
+            "retainedOrderZero": 3305374.964353419,
+            "retainedOrderOne": 5786362.622107872,
+            "literalRetainedResponse": -8.42024468742539e-05,
+            "expandedResponse": -8.420244687425401e-05,
+            "signedSmoothResponse": -0.00011348895142795252,
+            "arithmeticDiscrepancy": 2.9286504553698616e-05
+          }
+        ],
+        "jointRetainedResponse": 0.0009074888775200437,
+        "jointSignedSmoothResponse": 0.0004980575781473017,
+        "jointArithmeticDiscrepancy": 0.000409431299372742,
+        "eventualCostWithoutSqrtE": 158.21466189929887,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 1.0977202110555095,
+        "joinedCostWithoutSqrtE": 159.31238211035438
+      },
+      {
+        "N": 16,
+        "periods": 1,
+        "eligibleCofactorPrimes": false,
+        "primeCount": 271,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 1.189623980319105e-15,
+            "retainedOrderZero": 672080887545.833,
+            "retainedOrderOne": 2302182707597.8413,
+            "literalRetainedResponse": 0.00020851785846229655,
+            "expandedResponse": 0.00020851785846229655,
+            "signedSmoothResponse": -2.873596811853656e-07,
+            "arithmeticDiscrepancy": 0.0002088052181434819
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 1.2818209675327017e-15,
+            "retainedOrderZero": 1089669852712.793,
+            "retainedOrderOne": 3628003391498.4526,
+            "literalRetainedResponse": -0.00035937040935554536,
+            "expandedResponse": -0.00035937040935554493,
+            "signedSmoothResponse": -0.0002325779053224154,
+            "arithmeticDiscrepancy": -0.00012679250403312996
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 2.055853831455746e-15,
+            "retainedOrderZero": 2387930067572.1074,
+            "retainedOrderOne": 7591919727725.929,
+            "literalRetainedResponse": -0.00013085319913023235,
+            "expandedResponse": -0.00013085319913023227,
+            "signedSmoothResponse": -0.0001718732188392271,
+            "arithmeticDiscrepancy": 4.1020019708994755e-05
+          }
+        ],
+        "jointRetainedResponse": -0.0002817057500234812,
+        "jointSignedSmoothResponse": -0.00040473848384282786,
+        "jointArithmeticDiscrepancy": 0.0001230327338193467,
+        "eventualCostWithoutSqrtE": 66.46024465677236,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 5.733061177072459,
+        "joinedCostWithoutSqrtE": 72.19330583384482
+      },
+      {
+        "N": 16,
+        "periods": 1,
+        "eligibleCofactorPrimes": true,
+        "primeCount": 271,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 1.1896710220562958e-15,
+            "retainedOrderZero": 479990180715.7017,
+            "retainedOrderOne": 1860503405571.4531,
+            "literalRetainedResponse": 0.00020850484254706443,
+            "expandedResponse": 0.00020850484254706386,
+            "signedSmoothResponse": -2.929721064459967e-07,
+            "arithmeticDiscrepancy": 0.00020879781465351044
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 1.0927338859395365e-15,
+            "retainedOrderZero": 978154488541.3215,
+            "retainedOrderOne": 3395965304639.5835,
+            "literalRetainedResponse": -0.00035936699608611877,
+            "expandedResponse": -0.00035936699608611877,
+            "signedSmoothResponse": -0.00023257601691607056,
+            "arithmeticDiscrepancy": -0.0001267909791700482
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 2.227178175250171e-15,
+            "retainedOrderZero": 2342676410586.338,
+            "retainedOrderOne": 7516205141570.909,
+            "literalRetainedResponse": -0.00013085296657518544,
+            "expandedResponse": -0.0001308529665751852,
+            "signedSmoothResponse": -0.00017187293197083812,
+            "arithmeticDiscrepancy": 4.101996539565268e-05
+          }
+        ],
+        "jointRetainedResponse": -0.00028171512011423977,
+        "jointSignedSmoothResponse": -0.0004047419209933547,
+        "jointArithmeticDiscrepancy": 0.0001230268008791149,
+        "eventualCostWithoutSqrtE": 66.46024465677236,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 5.733061177072459,
+        "joinedCostWithoutSqrtE": 72.19330583384482
+      },
+      {
+        "N": 16,
+        "periods": 16,
+        "eligibleCofactorPrimes": false,
+        "primeCount": 10695,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 3.0361925981112616e-15,
+            "retainedOrderZero": 672080887545.833,
+            "retainedOrderOne": 2302182707597.8413,
+            "literalRetainedResponse": 0.0034185817892541754,
+            "expandedResponse": 0.003418581789254176,
+            "signedSmoothResponse": 0.0016286528390288023,
+            "arithmeticDiscrepancy": 0.001789928950225373
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 3.0760982660353318e-15,
+            "retainedOrderZero": 1089669852712.793,
+            "retainedOrderOne": 3628003391498.4526,
+            "literalRetainedResponse": 0.0008430688494435789,
+            "expandedResponse": 0.0008430688494435826,
+            "signedSmoothResponse": 0.00045034073474031186,
+            "arithmeticDiscrepancy": 0.0003927281147032671
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 2.378107831554684e-15,
+            "retainedOrderZero": 2387930067572.1074,
+            "retainedOrderOne": 7591919727725.929,
+            "literalRetainedResponse": -0.0004777141837504548,
+            "expandedResponse": -0.0004777141837504491,
+            "signedSmoothResponse": -0.0007501032775827721,
+            "arithmeticDiscrepancy": 0.0002723890938323173
+          }
+        ],
+        "jointRetainedResponse": 0.0037839364549472993,
+        "jointSignedSmoothResponse": 0.001328890296186342,
+        "jointArithmeticDiscrepancy": 0.0024550461587609573,
+        "eventualCostWithoutSqrtE": 5197.790034612637,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 35.676647282248254,
+        "joinedCostWithoutSqrtE": 5233.466681894885
+      },
+      {
+        "N": 16,
+        "periods": 16,
+        "eligibleCofactorPrimes": true,
+        "primeCount": 10695,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 3.0065064316069746e-15,
+            "retainedOrderZero": 479990180715.7017,
+            "retainedOrderOne": 1860503405571.4531,
+            "literalRetainedResponse": 0.003418453917681922,
+            "expandedResponse": 0.0034184539176819176,
+            "signedSmoothResponse": 0.0016285791129571129,
+            "arithmeticDiscrepancy": 0.001789874804724809
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 3.1541208120024366e-15,
+            "retainedOrderZero": 978154488541.3215,
+            "retainedOrderOne": 3395965304639.5835,
+            "literalRetainedResponse": 0.0008430566383023851,
+            "expandedResponse": 0.0008430566383023859,
+            "signedSmoothResponse": 0.00045033015434623304,
+            "arithmeticDiscrepancy": 0.0003927264839561521
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 2.31861419935327e-15,
+            "retainedOrderZero": 2342676410586.338,
+            "retainedOrderOne": 7516205141570.909,
+            "literalRetainedResponse": -0.00047771356122332665,
+            "expandedResponse": -0.000477713561223325,
+            "signedSmoothResponse": -0.0007501024717474432,
+            "arithmeticDiscrepancy": 0.00027238891052411653
+          }
+        ],
+        "jointRetainedResponse": 0.0037837969947609805,
+        "jointSignedSmoothResponse": 0.0013288067955559027,
+        "jointArithmeticDiscrepancy": 0.0024549901992050776,
+        "eventualCostWithoutSqrtE": 5197.790034612637,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 35.676647282248254,
+        "joinedCostWithoutSqrtE": 5233.466681894885
+      },
+      {
+        "N": 32,
+        "periods": 1,
+        "eligibleCofactorPrimes": false,
+        "primeCount": 271,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 5.972296788009976e-15,
+            "retainedOrderZero": 9.101488220088389e+22,
+            "retainedOrderOne": 6.051954748524686e+23,
+            "literalRetainedResponse": 4.638752166056213e-09,
+            "expandedResponse": 4.6387521660564275e-09,
+            "signedSmoothResponse": -5.31018775044309e-08,
+            "arithmeticDiscrepancy": 5.774062967048712e-08
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 6.118663542186685e-15,
+            "retainedOrderZero": 2.3254858360327246e+23,
+            "retainedOrderOne": 1.5029739933837406e+24,
+            "literalRetainedResponse": -1.3675535717797074e-07,
+            "expandedResponse": -1.367553571779703e-07,
+            "signedSmoothResponse": -9.907998426784351e-08,
+            "arithmeticDiscrepancy": -3.7675372910127225e-08
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 7.503834681178095e-15,
+            "retainedOrderZero": 1.0664101993194467e+24,
+            "retainedOrderOne": 6.581415536414279e+24,
+            "literalRetainedResponse": -3.408148342905735e-08,
+            "expandedResponse": -3.408148342905735e-08,
+            "signedSmoothResponse": -5.160774249884369e-08,
+            "arithmeticDiscrepancy": 1.7526259069786337e-08
+          }
+        ],
+        "jointRetainedResponse": -1.6619808844097188e-07,
+        "jointSignedSmoothResponse": -2.037896042711181e-07,
+        "jointArithmeticDiscrepancy": 3.759151583014623e-08,
+        "eventualCostWithoutSqrtE": 0.07023150032424645,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 0.005973770623892168,
+        "joinedCostWithoutSqrtE": 0.07620527094813861
+      },
+      {
+        "N": 32,
+        "periods": 1,
+        "eligibleCofactorPrimes": true,
+        "primeCount": 271,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 6.023665041673946e-15,
+            "retainedOrderZero": 6.337902465233101e+22,
+            "retainedOrderOne": 4.7025064365528786e+23,
+            "literalRetainedResponse": 4.638745530466453e-09,
+            "expandedResponse": 4.638745530466453e-09,
+            "signedSmoothResponse": -5.310187811198826e-08,
+            "arithmeticDiscrepancy": 5.7740623642454714e-08
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 5.640237888933052e-15,
+            "retainedOrderZero": 2.1354356615216816e+23,
+            "retainedOrderOne": 1.417683828749273e+24,
+            "literalRetainedResponse": -1.3675535484124816e-07,
+            "expandedResponse": -1.3675535484124763e-07,
+            "signedSmoothResponse": -9.907998278192441e-08,
+            "arithmeticDiscrepancy": -3.767537205932375e-08
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 7.457906039290242e-15,
+            "retainedOrderZero": 1.06186143454526e+24,
+            "retainedOrderOne": 6.564740138084894e+24,
+            "literalRetainedResponse": -3.4081483407739344e-08,
+            "expandedResponse": -3.4081483407739166e-08,
+            "signedSmoothResponse": -5.16077424712212e-08,
+            "arithmeticDiscrepancy": 1.7526259063481858e-08
+          }
+        ],
+        "jointRetainedResponse": -1.6619809271852106e-07,
+        "jointSignedSmoothResponse": -2.0378960336513387e-07,
+        "jointArithmeticDiscrepancy": 3.759151064661282e-08,
+        "eventualCostWithoutSqrtE": 0.07023150032424645,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 0.005973770623892168,
+        "joinedCostWithoutSqrtE": 0.07620527094813861
+      },
+      {
+        "N": 32,
+        "periods": 16,
+        "eligibleCofactorPrimes": false,
+        "primeCount": 10695,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 9.706075305832909e-15,
+            "retainedOrderZero": 9.101488220088389e+22,
+            "retainedOrderOne": 6.051954748524686e+23,
+            "literalRetainedResponse": 7.497848364912212e-07,
+            "expandedResponse": 7.497848364912194e-07,
+            "signedSmoothResponse": 2.6482196433464053e-08,
+            "arithmeticDiscrepancy": 7.233026400577572e-07
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 9.953287035197971e-15,
+            "retainedOrderZero": 2.3254858360327246e+23,
+            "retainedOrderOne": 1.5029739933837406e+24,
+            "literalRetainedResponse": -1.7379941378436492e-07,
+            "expandedResponse": -1.7379941378436598e-07,
+            "signedSmoothResponse": -5.849327400074293e-07,
+            "arithmeticDiscrepancy": 4.111333262230644e-07
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 8.189235384049198e-15,
+            "retainedOrderZero": 1.0664101993194467e+24,
+            "retainedOrderOne": 6.581415536414279e+24,
+            "literalRetainedResponse": -4.7596664428048866e-07,
+            "expandedResponse": -4.759666442804811e-07,
+            "signedSmoothResponse": -7.839345564471544e-07,
+            "arithmeticDiscrepancy": 3.0796791216666577e-07
+          }
+        ],
+        "jointRetainedResponse": 1.0001877842636767e-07,
+        "jointSignedSmoothResponse": -1.3423851000211197e-06,
+        "jointArithmeticDiscrepancy": 1.4424038784474873e-06,
+        "eventualCostWithoutSqrtE": 31.471839435189956,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 0.21137560685179344,
+        "joinedCostWithoutSqrtE": 31.68321504204175
+      },
+      {
+        "N": 32,
+        "periods": 16,
+        "eligibleCofactorPrimes": true,
+        "primeCount": 10695,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 9.76211667838743e-15,
+            "retainedOrderZero": 6.337902465233101e+22,
+            "retainedOrderOne": 4.7025064365528786e+23,
+            "literalRetainedResponse": 7.497847369511905e-07,
+            "expandedResponse": 7.497847369511921e-07,
+            "signedSmoothResponse": 2.6482146976046552e-08,
+            "arithmeticDiscrepancy": 7.233025899751439e-07
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 1.0348598618180762e-14,
+            "retainedOrderZero": 2.1354356615216816e+23,
+            "retainedOrderOne": 1.417683828749273e+24,
+            "literalRetainedResponse": -1.7379941976783708e-07,
+            "expandedResponse": -1.7379941976783742e-07,
+            "signedSmoothResponse": -5.849327437648025e-07,
+            "arithmeticDiscrepancy": 4.1113332399696544e-07
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 8.26858493924675e-15,
+            "retainedOrderZero": 1.06186143454526e+24,
+            "retainedOrderOne": 6.564740138084894e+24,
+            "literalRetainedResponse": -4.759666442097219e-07,
+            "expandedResponse": -4.7596664420971736e-07,
+            "signedSmoothResponse": -7.83934556340207e-07,
+            "arithmeticDiscrepancy": 3.079679121304851e-07
+          }
+        ],
+        "jointRetainedResponse": 1.0001867297363149e-07,
+        "jointSignedSmoothResponse": -1.342385153128963e-06,
+        "jointArithmeticDiscrepancy": 1.4424038261025944e-06,
+        "eventualCostWithoutSqrtE": 31.471839435189956,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 0.21137560685179344,
+        "joinedCostWithoutSqrtE": 31.68321504204175
+      },
+      {
+        "N": 64,
+        "periods": 1,
+        "eligibleCofactorPrimes": false,
+        "primeCount": 271,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 3.218735098952819e-14,
+            "retainedOrderZero": 1.669145298551679e+45,
+            "retainedOrderOne": 2.186134213115135e+46,
+            "literalRetainedResponse": -3.0693241115395126e-24,
+            "expandedResponse": -3.0693241115395453e-24,
+            "signedSmoothResponse": -5.835405201823196e-24,
+            "arithmeticDiscrepancy": 2.7660810902836834e-24
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 2.826911899786524e-14,
+            "retainedOrderZero": 1.0591347677392214e+46,
+            "retainedOrderOne": 1.3483058182847695e+47,
+            "literalRetainedResponse": -1.1443223757915535e-23,
+            "expandedResponse": -1.1443223757915406e-23,
+            "signedSmoothResponse": -9.084035730206164e-24,
+            "arithmeticDiscrepancy": -2.3591880277093715e-24
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 2.5880890079413375e-14,
+            "retainedOrderZero": 2.126814743633835e+47,
+            "retainedOrderOne": 2.5853783104610577e+48,
+            "literalRetainedResponse": -5.4647397695581385e-25,
+            "expandedResponse": -5.464739769558033e-25,
+            "signedSmoothResponse": -2.9149835036643328e-24,
+            "arithmeticDiscrepancy": 2.368509526708519e-24
+          }
+        ],
+        "jointRetainedResponse": -1.5059021846410862e-23,
+        "jointSignedSmoothResponse": -1.7834424435693693e-23,
+        "jointArithmeticDiscrepancy": 2.7754025892828307e-24,
+        "eventualCostWithoutSqrtE": 2.570101347227007e-17,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 2.1266684514614594e-18,
+        "joinedCostWithoutSqrtE": 2.782768192373153e-17
+      },
+      {
+        "N": 64,
+        "periods": 1,
+        "eligibleCofactorPrimes": true,
+        "primeCount": 271,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 3.373050086723706e-14,
+            "retainedOrderZero": 1.4181436226181311e+45,
+            "retainedOrderOne": 1.9327876626363733e+46,
+            "literalRetainedResponse": -3.0693241115395218e-24,
+            "expandedResponse": -3.0693241115395596e-24,
+            "signedSmoothResponse": -5.835405201823004e-24,
+            "arithmeticDiscrepancy": 2.7660810902834825e-24
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 2.8269118997865396e-14,
+            "retainedOrderZero": 1.0339811648767637e+46,
+            "retainedOrderOne": 1.325128136191389e+47,
+            "literalRetainedResponse": -1.1443223757915494e-23,
+            "expandedResponse": -1.1443223757915377e-23,
+            "signedSmoothResponse": -9.084035730206158e-24,
+            "arithmeticDiscrepancy": -2.3591880277093363e-24
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 2.5880890079413375e-14,
+            "retainedOrderZero": 2.1266171688269525e+47,
+            "retainedOrderOne": 2.5852304679316845e+48,
+            "literalRetainedResponse": -5.4647397695581385e-25,
+            "expandedResponse": -5.464739769558033e-25,
+            "signedSmoothResponse": -2.9149835036643328e-24,
+            "arithmeticDiscrepancy": 2.368509526708519e-24
+          }
+        ],
+        "jointRetainedResponse": -1.505902184641083e-23,
+        "jointSignedSmoothResponse": -1.7834424435693496e-23,
+        "jointArithmeticDiscrepancy": 2.775402589282665e-24,
+        "eventualCostWithoutSqrtE": 2.570101347227007e-17,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 2.1266684514614594e-18,
+        "joinedCostWithoutSqrtE": 2.782768192373153e-17
+      },
+      {
+        "N": 64,
+        "periods": 16,
+        "eligibleCofactorPrimes": false,
+        "primeCount": 10695,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 5.2361455371961505e-14,
+            "retainedOrderZero": 1.669145298551679e+45,
+            "retainedOrderOne": 2.186134213115135e+46,
+            "literalRetainedResponse": -3.4572393720445202e-22,
+            "expandedResponse": -3.4572393720444535e-22,
+            "signedSmoothResponse": -4.470372713319641e-22,
+            "arithmeticDiscrepancy": 1.0131333412751206e-22
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 5.222739922488138e-14,
+            "retainedOrderZero": 1.0591347677392214e+46,
+            "retainedOrderOne": 1.3483058182847695e+47,
+            "literalRetainedResponse": -9.420973856796434e-22,
+            "expandedResponse": -9.420973856796563e-22,
+            "signedSmoothResponse": -1.1028701311072768e-21,
+            "arithmeticDiscrepancy": 1.6077274542763348e-22
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 4.8155723112039687e-14,
+            "retainedOrderZero": 2.126814743633835e+47,
+            "retainedOrderOne": 2.5853783104610577e+48,
+            "literalRetainedResponse": -1.1817773301024584e-21,
+            "expandedResponse": -1.1817773301024278e-21,
+            "signedSmoothResponse": -1.3880797320252755e-21,
+            "arithmeticDiscrepancy": 2.0630240192281703e-22
+          }
+        ],
+        "jointRetainedResponse": -2.469598652986554e-21,
+        "jointSignedSmoothResponse": -2.9379871344645162e-21,
+        "jointArithmeticDiscrepancy": 4.683884814779626e-22,
+        "eventualCostWithoutSqrtE": 3.437891896638178e-13,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 2.2124092165392804e-15,
+        "joinedCostWithoutSqrtE": 3.4600159888035713e-13
+      },
+      {
+        "N": 64,
+        "periods": 16,
+        "eligibleCofactorPrimes": true,
+        "primeCount": 10695,
+        "cofactors": [
+          {
+            "n": 143,
+            "totalPrimeCount": 3,
+            "allocationIdentityRelativeError": 5.2766838732286685e-14,
+            "retainedOrderZero": 1.4181436226181311e+45,
+            "retainedOrderOne": 1.9327876626363733e+46,
+            "literalRetainedResponse": -3.4572393720445677e-22,
+            "expandedResponse": -3.4572393720444713e-22,
+            "signedSmoothResponse": -4.470372713319637e-22,
+            "arithmeticDiscrepancy": 1.0131333412750694e-22
+          },
+          {
+            "n": 165,
+            "totalPrimeCount": 4,
+            "allocationIdentityRelativeError": 5.25347176936873e-14,
+            "retainedOrderZero": 1.0339811648767637e+46,
+            "retainedOrderOne": 1.325128136191389e+47,
+            "literalRetainedResponse": -9.42097385679643e-22,
+            "expandedResponse": -9.420973856796537e-22,
+            "signedSmoothResponse": -1.1028701311072768e-21,
+            "arithmeticDiscrepancy": 1.6077274542763386e-22
+          },
+          {
+            "n": 210,
+            "totalPrimeCount": 5,
+            "allocationIdentityRelativeError": 4.8155723112039687e-14,
+            "retainedOrderZero": 2.1266171688269525e+47,
+            "retainedOrderOne": 2.5852304679316845e+48,
+            "literalRetainedResponse": -1.1817773301024584e-21,
+            "expandedResponse": -1.1817773301024278e-21,
+            "signedSmoothResponse": -1.3880797320252755e-21,
+            "arithmeticDiscrepancy": 2.0630240192281703e-22
+          }
+        ],
+        "jointRetainedResponse": -2.469598652986558e-21,
+        "jointSignedSmoothResponse": -2.9379871344645162e-21,
+        "jointArithmeticDiscrepancy": 4.683884814779578e-22,
+        "eventualCostWithoutSqrtE": 3.437891896638178e-13,
+        "inProvedEventualRange": false,
+        "smoothCostWithoutSqrtE": 2.2124092165392804e-15,
+        "joinedCostWithoutSqrtE": 3.4600159888035713e-13
+      }
+    ],
+    "previousCostComparison": [
+      {
+        "N": 16384,
+        "factorialOrder": 9012,
+        "periodCount": 16,
+        "lowestPrimeLog": 18023.06915773227,
+        "jointOverSeparate": 0.9260837127259014,
+        "jointCostOverFactorialPeak": 2.8231730100665676e-05,
+        "separateCostOverFactorialPeak": 3.0485073555139387e-05,
+        "newJoinedCostOverFactorialPeak": 0.00027590747580706436,
+        "newOverPreviousJoinedCost": 9.772956698837197,
+        "scope": "Single saddle order, explicit costs only; different unevaluated E omitted."
+      },
+      {
+        "N": 16384,
+        "factorialOrder": 9012,
+        "periodCount": 256,
+        "lowestPrimeLog": 18009.106523716317,
+        "jointOverSeparate": 0.922084231369946,
+        "jointCostOverFactorialPeak": 0.0004507372025392395,
+        "separateCostOverFactorialPeak": 0.0004888243255928762,
+        "newJoinedCostOverFactorialPeak": 0.00027640813537800277,
+        "newOverPreviousJoinedCost": 0.6132356810594966,
+        "scope": "Single saddle order, explicit costs only; different unevaluated E omitted."
+      },
+      {
+        "N": 16384,
+        "factorialOrder": 9012,
+        "periodCount": 4096,
+        "lowestPrimeLog": 17785.70437946104,
+        "jointOverSeparate": 0.9345694355264581,
+        "jointCostOverFactorialPeak": 0.00603444437894433,
+        "separateCostOverFactorialPeak": 0.0064569246003054115,
+        "newJoinedCostOverFactorialPeak": 0.00028461885405887217,
+        "newOverPreviousJoinedCost": 0.047165710077961415,
+        "scope": "Single saddle order, explicit costs only; different unevaluated E omitted."
+      },
+      {
+        "N": 65536,
+        "factorialOrder": 36045,
+        "periodCount": 16,
+        "lowestPrimeLog": 72089.06915773227,
+        "jointOverSeparate": 0.7800980358197823,
+        "jointCostOverFactorialPeak": 3.587484199677321e-06,
+        "separateCostOverFactorialPeak": 4.598760713334367e-06,
+        "newJoinedCostOverFactorialPeak": 0.0001379457527476029,
+        "newOverPreviousJoinedCost": 38.45194712216727,
+        "scope": "Single saddle order, explicit costs only; different unevaluated E omitted."
+      },
+      {
+        "N": 65536,
+        "factorialOrder": 36045,
+        "periodCount": 256,
+        "lowestPrimeLog": 72075.10652371631,
+        "jointOverSeparate": 0.7654665296087695,
+        "jointCostOverFactorialPeak": 5.6432228910732334e-05,
+        "separateCostOverFactorialPeak": 7.372266027042996e-05,
+        "newJoinedCostOverFactorialPeak": 0.000137991444577202,
+        "newOverPreviousJoinedCost": 2.445259512883757,
+        "scope": "Single saddle order, explicit costs only; different unevaluated E omitted."
+      },
+      {
+        "N": 65536,
+        "factorialOrder": 36045,
+        "periodCount": 4096,
+        "lowestPrimeLog": 71851.70437946104,
+        "jointOverSeparate": 0.7831213412407091,
+        "jointCostOverFactorialPeak": 0.0008965293724307009,
+        "separateCostOverFactorialPeak": 0.0011448154011616106,
+        "newJoinedCostOverFactorialPeak": 0.00013872550533810025,
+        "newOverPreviousJoinedCost": 0.15473615210395497,
+        "scope": "Single saddle order, explicit costs only; different unevaluated E omitted."
+      },
+      {
+        "N": 262144,
+        "factorialOrder": 144180,
+        "periodCount": 16,
+        "lowestPrimeLog": 288359.06915773224,
+        "jointOverSeparate": 0.5521531628379653,
+        "jointCostOverFactorialPeak": 4.7641166160081535e-07,
+        "separateCostOverFactorialPeak": 8.628251971828747e-07,
+        "newJoinedCostOverFactorialPeak": 6.897169598307319e-05,
+        "newOverPreviousJoinedCost": 144.77331589935864,
+        "scope": "Single saddle order, explicit costs only; different unevaluated E omitted."
+      },
+      {
+        "N": 262144,
+        "factorialOrder": 144180,
+        "periodCount": 256,
+        "lowestPrimeLog": 288345.1065237163,
+        "jointOverSeparate": 0.5126790120041923,
+        "jointCostOverFactorialPeak": 7.084071838204641e-06,
+        "separateCostOverFactorialPeak": 1.3817752769927537e-05,
+        "newJoinedCostOverFactorialPeak": 6.897688085807048e-05,
+        "newOverPreviousJoinedCost": 9.736897427560773,
+        "scope": "Single saddle order, explicit costs only; different unevaluated E omitted."
+      },
+      {
+        "N": 262144,
+        "factorialOrder": 144180,
+        "periodCount": 4096,
+        "lowestPrimeLog": 288121.70437946107,
+        "jointOverSeparate": 0.5320530114979615,
+        "jointCostOverFactorialPeak": 0.00011757253108169343,
+        "separateCostOverFactorialPeak": 0.00022097897867484186,
+        "newJoinedCostOverFactorialPeak": 6.905990754202988e-05,
+        "newOverPreviousJoinedCost": 0.5873813118307769,
+        "scope": "Single saddle order, explicit costs only; different unevaluated E omitted."
+      }
+    ],
+    "sourceBudgets": [
+      {
+        "N": 16384,
+        "periodCount": 16,
+        "includedOrders": 16386,
+        "sourceNormalizedJoinedBudgetWithoutSqrtE_log10": -5.238853255054681,
+        "discrepancyOverSmooth": 4.4164522477086267e-05
+      },
+      {
+        "N": 16384,
+        "periodCount": 4096,
+        "includedOrders": 16386,
+        "sourceNormalizedJoinedBudgetWithoutSqrtE_log10": -5.20190885704455,
+        "discrepancyOverSmooth": 0.011395741498264557
+      },
+      {
+        "N": 65536,
+        "periodCount": 16,
+        "includedOrders": 65538,
+        "sourceNormalizedJoinedBudgetWithoutSqrtE_log10": -3.7064161652505856,
+        "discrepancyOverSmooth": 2.7602366181535547e-06
+      },
+      {
+        "N": 65536,
+        "periodCount": 4096,
+        "includedOrders": 65538,
+        "sourceNormalizedJoinedBudgetWithoutSqrtE_log10": -3.68053541235064,
+        "discrepancyOverSmooth": 0.0006980102209228189
+      },
+      {
+        "N": 262144,
+        "periodCount": 16,
+        "includedOrders": 262146,
+        "sourceNormalizedJoinedBudgetWithoutSqrtE_log10": 4.229667270828018,
+        "discrepancyOverSmooth": 1.7251277216912008e-07
+      },
+      {
+        "N": 262144,
+        "periodCount": 4096,
+        "includedOrders": 262146,
+        "sourceNormalizedJoinedBudgetWithoutSqrtE_log10": 4.2536523231168015,
+        "discrepancyOverSmooth": 4.340744108924886e-05
+      },
+      {
+        "N": 1048576,
+        "periodCount": 16,
+        "includedOrders": 1048578,
+        "sourceNormalizedJoinedBudgetWithoutSqrtE_log10": 37.78020613164867,
+        "discrepancyOverSmooth": 1.0781976216691942e-08
+      },
+      {
+        "N": 1048576,
+        "periodCount": 4096,
+        "includedOrders": 1048578,
+        "sourceNormalizedJoinedBudgetWithoutSqrtE_log10": 37.80377052529372,
+        "discrepancyOverSmooth": 2.7095625409260627e-06
+      }
+    ]
+  },
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.factorial_smooth_interval_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.factorial_smooth_tail_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.factorial_smooth_profile_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.exists_smooth_response_mean": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.exists_joined_prime_mean": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.exists_joined_prime_shell": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.exists_literal_joined_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSmoothPrimeTail.exists_literal_joined_family_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

@@ -4814,7 +4814,19 @@
     "ZetaRieszOwnerUniformMean": "arithmetic",
     "ZetaRieszOwnerDensity": "arithmetic",
     "ZetaRieszOwnerCountEnergy": "arithmetic",
-    "ZetaRieszQuantitativePrimePeriod": "arithmetic"
+    "ZetaRieszQuantitativePrimePeriod": "arithmetic",
+    "ZetaRieszLinearCutoffMean": "arithmetic",
+    "ZetaRieszSignedCutoffEnergy": "arithmetic",
+    "ZetaRieszPrimeTailEnergy": "arithmetic",
+    "ZetaRieszWeightedPrimeTail": "arithmetic",
+    "ZetaRieszRetainedFactorial": "arithmetic",
+    "ZetaRieszJointPeriodEnergy": "arithmetic",
+    "ZetaRieszJointPrimeError": "arithmetic",
+    "ZetaRieszDiscrepancyEnergy": "arithmetic",
+    "ZetaRieszRetainedDiscrepancy": "arithmetic",
+    "ZetaRieszSmoothPrimeTail": "arithmetic",
+    "ZetaRieszMovingPrimeIntervals": "arithmetic",
+    "ZetaRieszCenteredPrimeEnergy": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
