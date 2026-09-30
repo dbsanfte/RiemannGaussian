@@ -3,9 +3,9 @@
   "repository": "https://github.com/dbsanfte/RiemannGaussian",
   "pagesUrl": "https://dbsanfte.github.io/RiemannGaussian/rh-proof/",
   "title": "Current RH Proof Direction",
-  "defaultEndpoint": "joined-physical",
+  "defaultEndpoint": "whole-five-prime-floor",
   "limitNote": "RH remains open. The independent arithmetic saving needed for the source contradiction has not been proved.",
-  "contextScope": "The current carrier is joinedPhysical, source-equivalent to the exact full-mass two-hinge core. Its unmatched saturation boundary is eliminated with an explicit geometric error. The independent cofinal real floor remains open. A 1/10000 saving on its assembled signed cells suffices conditionally; it has not been proved. The current joint endgame retains every analytic multiplicity: a cofinal -79/1000-o(1) floor for J+C excludes a simple exposed-zero source, and a cofinal 3/2+o(1) ceiling for the same sum excludes all multiple-zero sources on 1/2<u<=10001/20000. Both arithmetic bounds are open. Earlier simple-zero source statements below keep their original scope. The complete companion is now compared with every original mask, and all off-mask corrections are paid. The full reserve is evaluated. The remaining allocated contribution with a prime carrying at least 13/20 of log n has a height-uniform geometric bound. The smaller signed carrier retains the exact source on 1/2<u<exp(-11/16). For simple exposed zeros its real part is eventually below -3/40; an independent cofinal real floor remains open. Balanced products and their joint signed correlations remain unpaid. No zero exclusion or RH proof is claimed. The specific positive allowance B_j-(3/4)*B_4,j is now proved to diverge on that interval for every fixed height; it cannot close the contradiction. The strict Type-II test now isolates a sufficient fixed 1/1000 power saving on the actual corrected prime-pair form, after independently narrowing the window to 1.95N<log n<=2.05N for u<=0.5001. The reduction is conditional and current inputs do not discharge it. The allocation-safe rectangle now has an eventual literal correction reserve >=1/160 on 1/2<u<=0.50005 under simple exposed-zero hypotheses, after independent mask and allocation decay. Its matching negative owned copy and the rest of the correction remain explicit; the whole-carrier floor is still open.",
+  "contextScope": "The latest independent whole-carrier estimate pays every originally unpaid five-prime label, keeps both phase signs and all literal masks, and leaves 1/128 of the same original four-prime supply unspent. The remaining signed counts 3,4,6 and higher-count charge still need a cofinal numerical bound. The current carrier is joinedPhysical, source-equivalent to the exact full-mass two-hinge core. Its unmatched saturation boundary is eliminated with an explicit geometric error. The independent cofinal real floor remains open. A 1/10000 saving on its assembled signed cells suffices conditionally; it has not been proved. The current joint endgame retains every analytic multiplicity: a cofinal -79/1000-o(1) floor for J+C excludes a simple exposed-zero source, and a cofinal 3/2+o(1) ceiling for the same sum excludes all multiple-zero sources on 1/2<u<=10001/20000. Both arithmetic bounds are open. Earlier simple-zero source statements below keep their original scope. The complete companion is now compared with every original mask, and all off-mask corrections are paid. The full reserve is evaluated. The remaining allocated contribution with a prime carrying at least 13/20 of log n has a height-uniform geometric bound. The smaller signed carrier retains the exact source on 1/2<u<exp(-11/16). For simple exposed zeros its real part is eventually below -3/40; an independent cofinal real floor remains open. Balanced products and their joint signed correlations remain unpaid. No zero exclusion or RH proof is claimed. The specific positive allowance B_j-(3/4)*B_4,j is now proved to diverge on that interval for every fixed height; it cannot close the contradiction. The strict Type-II test now isolates a sufficient fixed 1/1000 power saving on the actual corrected prime-pair form, after independently narrowing the window to 1.95N<log n<=2.05N for u<=0.5001. The reduction is conditional and current inputs do not discharge it. The allocation-safe rectangle now has an eventual literal correction reserve >=1/160 on 1/2<u<=0.50005 under simple exposed-zero hypotheses, after independent mask and allocation decay. Its matching negative owned copy and the rest of the correction remain explicit; the whole-carrier floor is still open.",
   "scopeHeading": "What remains to prove",
   "guideDocument": "docs/rh-proof-direction.md",
   "metadataOrigin": "Current RH campaign metadata; theorem names and scopes resolve through the compiled project status.",
@@ -16,21 +16,21 @@
       "changeReason": "The joint Gamma/complement transfer and unsaturated prime-deletion identity eliminate the unmatched saturation boundary. The active target is now the whole two-hinge physical core; the floor is prioritized as explicitly requested."
     },
     "latestUpdate": {
-      "sequence": 139,
-      "id": "compensated-physical-cutoff-floor",
+      "sequence": 140,
+      "id": "whole-five-prime-sector-payment",
       "kind": "theorem",
-      "title": "The physical floor now retains all prior payments and adds exact cutoff savings.",
-      "body": "Lean removes the saturation boundary, retains the exact multiplicity source, and incorporates new signed prefix cancellations into the whole estimate. A specified seven-prime sector saves at least 75% of its optimized adverse charge. The global -79/1000 floor and 3/2 ceiling remain open.",
-      "next": "Bound the remaining signed aggregate across unpaid geometries and phase periods; the sector saving is not a global deficit percentage.",
+      "title": "The whole unpaid five-prime sector is now paid in the joined floor.",
+      "body": "Lean covers both arithmetic signs by complete prime periods, pays the owner and radial boundaries, and funds all new costs from the same original four-prime supply with 1/128 left unspent. Earlier credits and higher-count savings remain. The numerical -79/1000 floor and 3/2 ceiling are still open.",
+      "next": "Bound the remaining signed counts 3, 4, 6 and higher-count charge jointly; the five-prime payment is not a global deficit percentage.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszCompensatedPhysicalFloorTheorem"
+        "rieszWholeFivePhysicalFloorTheorem"
       ],
       "documentation": "docs/zeta-riesz-joined-physical.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
-      "rieszJoinedPhysicalSourceTheorem"
+      "rieszWholeFivePhysicalFloorTheorem"
     ],
     "sourceStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -40,7 +40,7 @@
   "endpoints": [
     {
       "id": "joined-physical",
-      "label": "Current frontier \u00b7 exact physical source",
+      "label": "Physical carrier \u00b7 exact arbitrary-multiplicity source",
       "statusPaths": [
         [
           "gaussianPhaseBandToolkit",
@@ -7491,6 +7491,80 @@
         "rieszCofactorDiscrepancyScope"
       ],
       "documentation": "docs/zeta-riesz-cofactor-discrepancy.md"
+    },
+    {
+      "id": "whole-five-prime-floor",
+      "label": "Current frontier \u00b7 entire five-prime sector paid",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWholeFivePhysicalFloorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszWholeFivePhysicalFloorScope"
+      ],
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    {
+      "id": "five-prime-period-payment",
+      "label": "Signed five-prime periods \u00b7 coverage and supply ledger",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPairChamberCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPairChamberQuarterTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPairChamberFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedPeriodCurvatureTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedPeriodPopulationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszStaggeredSignedFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerTieFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRoughFiveSupplyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRoughFiveJoinedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTransitionFiveCoverTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveInteriorCoverTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUnpaidFiveFloorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszWholeFivePhysicalFloorScope"
+      ],
+      "documentation": "docs/zeta-riesz-joined-physical.md"
     }
   ],
   "scopes": {
@@ -13852,6 +13926,71 @@
     },
     "RiemannGaussian.ZetaRieszJoinedPrefixFloor.eventually_joined_floor": {
       "label": "Whole physical estimate preserves all earlier payments",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszPairChamberFloor.coefficient_eq_pair": {
+      "label": "Unit, prime and pair divisor channels sum exactly",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszPairChamberFloor.balancedSeven_new_saving_ge_quarter": {
+      "label": "Balanced seven-prime chamber returns at least one quarter",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszPairChamberFloor.eventually_joined_floor": {
+      "label": "Pair-chamber saving enters the whole physical floor",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszSignedPeriodFloor.centered_period_curvature_eq": {
+      "label": "Complete phase-period integral keeps favorable curvature",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszSignedPeriodFloor.eventually_population_floor": {
+      "label": "Literal prime-period population has a signed floor",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszStaggeredFloor.eventually_staggered_floor": {
+      "label": "Staggered periods retain both coefficient signs",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerTieFloor.eventually_core_grouped_tie_floor": {
+      "label": "Close-owner boundary cost is quantified over radial groups",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszRoughFivePeriodFloor.eventually_radial_rough_five_supply_floor": {
+      "label": "Rough-five period debit is funded from actual supply",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszRoughFiveJoinedFloor.eventually_joined_floor_with_rough_periods": {
+      "label": "Period and tie costs share the original four-prime supply",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszTransitionFiveFloor.owner_gap_mem_roughPeriod": {
+      "label": "Widened cofactor population covers owner-separated labels",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszFiveSignCoverFloor.interior_parts_covered": {
+      "label": "Both signs of every remaining interior five-prime label are covered",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszFiveSignCoverFloor.exists_unpaid_five_floor": {
+      "label": "Entire unpaid five-prime sum has a signed funded floor",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszFiveSignCoverFloor.eventually_joined_floor_without_fives": {
+      "label": "Whole joined floor removes every unpaid five-prime label",
       "overview": true,
       "documentation": "docs/zeta-riesz-joined-physical.md"
     }

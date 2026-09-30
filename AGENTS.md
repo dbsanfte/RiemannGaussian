@@ -1602,12 +1602,30 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+The user's latest instruction on 2026-09-30 explicitly authorizes committing
+and pushing ALL accumulated local floor work. This supersedes the local-only
+holds below for this publication. Include all eight checked modules from
+`ZetaRieszPairChamberFloor` through `ZetaRieszFiveSignCoverFloor`, both optional
+probes and the matching documentation and evergreen assets. Run the complete
+publication gates, preserve the frozen numerical certificate, and record
+exact-SHA CI, Pages and published renderer checks. No subagents are authorized.
+The new default RH explorer endpoint is the whole joined floor with ALL
+originally unpaid five-prime labels removed from its main signed remainder;
+1/128 of the SAME original supply remains unspent. The numerical -79/1000
+floor, 3/2 ceiling and any zero exclusion remain OPEN. This publication
+authorizes the accumulated batch; after it is published, resume local floor
+iteration until the user requests another commit.
+
 The Gamma-joint batch above is now published at
 `dd411aa7372438e2e7b7f7e5acf5cb3d6c01c92e`; exact-SHA CI run
 `36689789816`, Pages and published desktop/mobile checks passed. That
 publication is complete. The user has now explicitly requested committing
-and pushing all accumulated joined-physical/cutoff-floor work. Run the
-ordinary publication gates for this authorized batch; no subagents.
+and pushing all accumulated joined-physical/cutoff-floor work. That batch
+has now been published as `f0151a4fb125bd0db52f0fe1bc6f029c22235d1d`;
+exact-SHA CI run `36701400722`, Pages and published checks passed. This
+publication request is complete. Continue locally, with focused Lean and
+axiom validation; the user deferred wider checks during floor iteration.
+No subagents or further commits are authorized by that completed request.
 
 `ZetaRieszJoinedPhysical` gives the exact arbitrary-multiplicity source,
 conditional floor/ceiling contradictions, the unsaturated two-hinge full
@@ -1622,9 +1640,190 @@ seven-prime short-cutoff geometry at least 75% of that sector's old charge
 is removed. This is NOT a global deficit percentage. The cofinal
 -79/1000 floor, 3/2 ceiling and any new zero exclusion remain open.
 Keep the actual-prime regression optional and outside ordinary CI. See
-`docs/zeta-riesz-joined-physical.md`. The explorer default now follows the
-exact source of joinedPhysical; its compensated-floor endpoint states the
-unevaluated aggregate and retains the original masks and phase.
+`docs/zeta-riesz-joined-physical.md`. The preceding explorer default followed the exact source of joinedPhysical;
+its compensated-floor endpoint remains available and states the unevaluated
+aggregate with the original masks and phase. The new default is specified
+in the publication instruction above.
+
+The next local slice, `ZetaRieszPairChamberFloor`, sums the unit, prime and
+prime-pair divisor channels together when every prime log lies between
+`(log n-L)/3` and `(log n-L)/2`. The affine coefficient is exact for all
+counts on that geometry. Its signed charge is intersected with BOTH prior
+charges on the same unpaid label. On the seven-prime box
+`2 log n/15 <= log p <= 3 log n/20`, `2 log n/3 <= L <= 7 log n/10`,
+the old prefix saving is proved ZERO and the new saving returns at least
+one quarter of the optimized seven-prime charge for every phase.
+`eventually_joined_floor` preserves all older radial payments and the
+unspent 1/64 supply. This is a sector saving, not a quarter of the global
+deficit or a cofinal floor. The optional actual-label probe stays outside
+CI. The remaining signed aggregate, numerical floor, ceiling and RH are
+open; keep the published explorer endpoints and top-ten lists unchanged
+until the next authorized publication.
+
+During the earlier floor iteration, the user deferred publication and
+wider checks. That hold is superseded by the latest publication request above.
+`ZetaRieszSignedPeriodFloor` proves an actual signed prime-period floor
+throughout the linear radial core. Keep the convex radial drift favorable:
+the exact centered cosine integral is minus the second derivative averaged
+against `1+cos`, divided by `y^2`. Negative factorial curvature costs only
+`(N+1)/T^2`; the actual-prime endpoints have an inverse-square log cost.
+The literal allocation and BOTH cofactor cutoffs survive the transfer.
+`population_floor` bounds every fixed-count, sign-aligned complete-period
+population by `-C_k*v^(-1/2)` times the existing radial unit, and
+`eventually_core_aligned_floor` discharges the moving length and physical
+owner-prime mask. `owned_subset_core` checks the literal core inclusion.
+This is a relative payment, NOT source-scale decay or the whole numerical
+floor. Unaligned/clipped periods and integration with the exact unpaid
+remainder still need bounds; do not double spend radial supplies or the
+older pointwise savings. Keep count-dependent constants explicit, retain
+all missed labels, and do not claim a global deficit percentage. Focused
+root-import axiom/lint checks suffice during this local iteration.
+
+`ZetaRieszStaggeredFloor` removes the frozen-sign restriction from the
+complete-period payment. It splits the actual arithmetic coefficient into
+its positive and negative parts, keeping the cosine phase signed. The
+positive part uses negative-peak periods and the negative part positive-peak
+periods. Positive-part clipping is 1-Lipschitz, so the original response and
+allocation variation constants suffice even across coefficient sign changes.
+`signedPart_population_floor` keeps the same explicit `C_k/sqrt(v)` radial
+debit; `eventually_core_part_floor` retains the original physical primes and
+moving length. `eventually_staggered_floor` sums a growing finite collection
+of both grids with exact, separate unmatched sign parts. The grids may
+overlap in integer labels because `signedPart_add` recovers one original
+atom, not two. Within each grid, unique ownership and half-open log periods
+prevent reuse. `joined_two_cover_floor` transfers these payments to the
+existing `joinedPhysical`, retaining its proved geometric core error.
+Through total prime count 55, `missing_population_boundary` isolates the
+interior geometric omissions: `log a <= (203/500)*(log(pa)+1/16)` or a
+cofactor prime with `log p-log q < 1/8`. This does not pay either boundary,
+clipped radial periods, or growing counts. Selecting the original unpaid
+set protects earlier credits; do not claim those mask exclusions have been
+covered automatically. The accumulated cost still needs comparison with
+unused positive supply, so no whole cofinal floor or source-scale decay
+follows yet. Continue local floor iteration with focused validation only.
+
+`ZetaRieszOwnerTieFloor` pays one of those explicit boundaries. For a
+squarefree label of count 3..55 in `(v-1/16,v+1/16]`, two largest prime
+logs less than 1/8 apart lie in one fixed length-1/4 prime-log window
+after deleting them. Actual reciprocal prime estimates give two inverse
+radial factors. Retaining the least-prime coefficient weight then gives
+`close_owner_norm_bound` with `tieConstant k/v` radial debit, and
+`bounded_count_norm_bound` assembles the ENTIRE count 3..55 boundary using
+one explicit finite `allTieConstant`. `signedParts_abs_eq` proves both
+arithmetic-sign omissions cost one atom, not two. The moving-core norm
+and signed estimates have arbitrarily small relative radial debit;
+`joined_two_cover_floor_with_ties` removes the selected boundary from both
+unmatched parts of the existing joined floor. Growing finite boundary
+covers are paid by `eventually_core_grouped_tie_floor`; overlaps enlarge
+only the boundary allowance. This does not pay the lower cofactor-share
+edge, clipped radial periods, prior-credit fibre holes, or growing prime
+counts. No source-scale decay or numerical whole floor follows. Keep the
+original phase/allocation/masks inside the literal subset being paid,
+and continue local floor work without publication gates or subagents.
+
+`ZetaRieszRoughFivePeriodFloor` applies that mechanism to the actual
+unpaid five-prime sector. Freeze a squarefree four-prime cofactor and run
+its unique largest prime through a complete period. Filtering the cofactor
+by `p>B` for every factor preserves the entire owner fibre. If
+`B>=max(Q,V)`, the original positive/negative small-prime five-factor heads
+cannot clip it; every other spent class has a different prime count.
+`roughPeriod_subset_unpaid` proves this exclusion from the ENTIRE prior
+credit union. `eventually_unpaid_rough_five_floor` also proves original
+dyadic core inclusion, then applies both staggered arithmetic-sign floors
+to growing finite grids. It retains both exact unmatched parts, every
+old credit, moving length, physical owner mask, allocation and phase.
+The debit is arbitrarily small relative to the SUMMED radial units, not
+an asserted source-scale error. The next checked estimates now PAY that
+debit on complete radial slabs. `period_card_bound` gives a finite
+height-dependent packing bound on both grids, and
+`eventually_period_debit_paid` compares their summed units with the actual
+four-prime supply. `exists_period_debit_supply` proves the needed elementary
+phase window exists. `eventually_unpaid_rough_five_supply_floor` removes the
+period allowance in each slab; `eventually_radial_rough_five_supply_floor`
+aggregates growing disjoint slabs with at most 1/128 of ONE radial supply.
+The latter keeps the original supply phase condition explicit.
+`eventually_joint_slabs_floor_with_period_budget` reuses the earlier
+quantitative supply-selection construction, chosen widths and head/tail
+estimates: all six old norm charges plus the new period allowance total
+at most 127/128 of that SAME supply, leaving 1/128 unspent. No compatibility
+of separate existential supply choices is assumed. The endpoint has not
+yet replaced the public joinedPhysical ledger; preserve all older credits
+and geometric edge payments when lifting it. Nonrough unspent labels,
+the lower cofactor-share edge and clipped endpoint periods remain.
+These fractions concern the proved positive supply, NOT the whole source
+deficit or a new numerical floor. The owner-weight variation bound of two is a
+transfer lemma for an independently proved partial-sum bound; it is not
+itself an unconditional carrier floor. No numerical floor, ceiling or
+zero exclusion follows. Continue focused local validation only.
+
+`ZetaRieszRoughFiveJoinedFloor` now lifts that checked cost into an actual
+whole `joinedPhysical` inequality. `eventually_core_floor_with_scale` and
+`eventually_core_full_floor_with_scale` keep the SAME quantitative supply
+selection through every old charge and the geometric whole-tail payment.
+`period_grids_cost_paid` spends at most 1/128 of that original radial supply
+on both growing grids, without a separate supply phase hypothesis.
+`eventually_joined_floor_with_rough_periods` replaces only the period-covered
+parts of the unpaid five-prime sector by its exact two unmatched sign parts.
+All six old favorable credits, the >=7 optimized charge, prefix/pair savings
+and geometric core/joined errors remain. Half the former unspent 1/64 is
+actually spent on this new cost; 1/128 remains unspent. Cells assign period
+CENTERS in half-open slabs: the signed periods may cross slab boundaries,
+so this estimate introduces no repeated internal clipping. Their full
+literal core support is retained. The parameters and starting order may
+depend on the fixed height y>=54. No new numerical floor, source-scale
+packet decay, ceiling or zero exclusion follows. Nonrough labels, the
+lower cofactor-share transition, close owners and exterior clipped periods
+still need their signed coverage/payments. The earlier dominant deletion
+already pays cofactor shares <=399/1000; the current complete-period
+population starts above 203/500=406/1000, so do not rediscover the already
+paid portion when addressing that transition. Keep published endpoints
+unchanged and continue focused local validation without commits or subagents.
+
+`ZetaRieszTransitionFiveFloor` extends the literal signed period selector
+from cofactor share >203/500 to >199/500 with owner cap 1209/2000, still
+inside every original core/physical mask. Every earlier rough period is
+included. `transition_mem_roughPeriod` covers the entire rational
+399/1000..407/1000 transition without a sign or close-owner assumption;
+its whole-floor endpoint uses the SAME count-dependent debit and supply.
+`ZetaRieszFiveSignCoverFloor` retains the two original small-prime
+thresholds separately: positive parts use Q, negative parts V. Opposite
+spent five-prime heads contribute exactly zero to that arithmetic part,
+so intersecting a complete period with the unpaid set loses nothing.
+`eventually_joined_floor_with_signed_rough_periods` keeps all earlier
+credits, higher-count prefix/pair savings, geometric errors and the
+remaining 1/128 supply, with no additional period cost. In the retained
+radial interior, `unpaid_positive_rough`/`unpaid_negative_rough` give the
+appropriate roughness of every nonzero sign part. The exact
+`transition_*_zero_or_covered` theorems therefore eliminate the transition
+and max(Q,V) omissions together. Do not reintroduce a common threshold
+or charge an opposite-sign head twice. Deterministic global cover selection,
+exterior clipped periods, close owners outside the transition and the
+other signed unpaid sectors remain. The numerical floor, ceiling and
+zero exclusion remain OPEN. Continue locally without commits, subagents
+or wider gates.
+
+The next checked endpoint, `ZetaRieszFiveSignCoverFloor.eventually_joined_floor_without_fives`,
+pays the ENTIRE original unpaid count-five sector in that same whole floor.
+`owner_gap_mem_roughPeriod` extends coverage to every cofactor share above
+399/1000 with owner-log gap at least 1/8, without an upper-share restriction.
+`completeGrid`/`slabGrid` are deterministic half-open phase grids; centres
+are assigned once and periods crossing internal slab boundaries are retained.
+`interior_parts_covered` proves every nonzero unpaid sign part outside the
+already-paid eligible dominant sector is covered unless the owner primes are
+close. `exists_unpaid_five_floor` joins the signed period estimates, one
+close-owner debit, the existing dominant-allocation decay and the existing
+outer radial deviation payment. It has NO unmatched five-prime term.
+The same quantitative original supply pays the combined period/tie cost,
+not an independently selected supply; all six older favorable credits,
+higher-count savings and source-geometric errors survive, and 1/128 remains
+unspent. The new remaining W is only E\E5. This is NOT count-five source
+norm decay: the debit is paid from the actual positive four-prime supply.
+The signed remainder at counts 3,4,6 and >=7, its cofinal -79/1000 floor,
+ceiling and zero exclusion remain OPEN. Do not restore common max(Q,V)
+roughness, clipped internal slabs, or an already-paid five-prime allowance.
+Continue locally with focused Lean/root-import axiom/lint validation only;
+no commits, subagents, wider checks or published endpoint changes.
+
 
 
 The accumulated batch was subsequently published at

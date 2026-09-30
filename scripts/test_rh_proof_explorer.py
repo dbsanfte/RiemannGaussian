@@ -64,11 +64,22 @@ def run(output, url=None, refresh_preview=False):
                     (campaign.SITE / 'preview.json').write_bytes(campaign.explorer.json_bytes(capture))
                 root = page.evaluate('PROOF_VIEW.endpoint.roots[0]')
                 data = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
-                assert data['id'] == 'RiemannGaussian.ZetaRieszJoinedPhysical.tendsto_joinedPhysical_exact_source'
+                assert data['id'] == 'RiemannGaussian.ZetaRieszFiveSignCoverFloor.eventually_joined_floor_without_fives'
                 assert all(term in data['statement'] for term in (
-                    'joinedPhysical', 'retainedCost', 'analyticZetaZeroMultiplicity',
-                    'tau ≠ rho →', 'radiusCeiling', 'Tendsto'))
-                assert '-eta ≤' not in data['statement']
+                    'radiusCeiling', 'Tendsto', 'Eo := E \\ E5'))
+                assert 'NontrivialZetaZero' not in data['statement']
+                # Lean elides the final inequality of this nested ledger.
+                # Check it in the exact declaration linked by the export.
+                floor_source = (ROOT / data['source']['path']).read_text().splitlines()
+                floor_type = '\n'.join(floor_source[data['source']['line'] - 1:]).split(':= by', 1)[0]
+                assert all(term in floor_type for term in (
+                    'E.filter (fun n : ℕ => n.primeFactors.card = 5)',
+                    'let Eo := E\\E5', '(∑ n ∈ Ys, f n).re/128',
+                    'cutoffSaving', 'pairSaving', 'hy : 54 ≤ y',
+                    'ZetaRieszGammaJoint.joinedPhysical'))
+                assert all(term in page.locator('#scope-text').inner_text() for term in (
+                    'ENTIRE original unpaid five-prime sector', '1/128 unspent',
+                    'SAME original positive four-prime supply', 'NOT been bounded numerically'))
                 node = page.locator(f'[data-node="{root}"]')
                 node.hover()
                 assert page.locator('#tooltip').is_visible()

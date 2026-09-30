@@ -149,9 +149,9 @@ Bound joinedPhysical through its exact full-mass two-hinge core, retaining the s
 
 ### Latest Update
 
-**The physical floor now retains all prior payments and adds exact cutoff savings.** Lean removes the saturation boundary, retains the exact multiplicity source, and incorporates new signed prefix cancellations into the whole estimate. A specified seven-prime sector saves at least 75% of its optimized adverse charge. The global -79/1000 floor and 3/2 ceiling remain open.
-Bound the remaining signed aggregate across unpaid geometries and phase periods; the sector saving is not a global deficit percentage.
-[Current checked endpoint](RiemannGaussian/ZetaRieszJoinedPrefixFloor.lean#L194)
+**The whole unpaid five-prime sector is now paid in the joined floor.** Lean covers both arithmetic signs by complete prime periods, pays the owner and radial boundaries, and funds all new costs from the same original four-prime supply with 1/128 left unspent. Earlier credits and higher-count savings remain. The numerical -79/1000 floor and 3/2 ceiling are still open.
+Bound the remaining signed counts 3, 4, 6 and higher-count charge jointly; the five-prime payment is not a global deficit percentage.
+[Current checked endpoint](RiemannGaussian/ZetaRieszFiveSignCoverFloor.lean#L1119)
 · [Proof details](docs/zeta-riesz-joined-physical.md).
 <!-- RH_DIRECTION:END -->
 

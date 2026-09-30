@@ -19,15 +19,19 @@ Its difference from `joinedPhysical` is paid geometrically. No artificial
 factorial rectangle or unmatched saturation boundary remains in that main
 sum. The exposed-zero source retains every analytic multiplicity.
 
-The latest independent estimate incorporates exact active-cofactor and
-reflected-prefix cancellations into the strongest existing compensated
-floor. All earlier radial payments, low-count signed terms and the unspent
-1/64 supply survive. On a specified seven-prime short-cutoff sector, at
-least 75% of its already optimized adverse charge disappears. This is a
-sector saving, not a percentage of the global deficit. The remaining
-signed aggregate still has no cofinal numerical bound. A one-sided
-1/10000 power saving for the assembled physical cells would suffice, but
-the new transport theorem leaves that arithmetic premise explicitly open.
+The latest independent estimate pays the **entire originally unpaid
+five-prime sector** inside the same joined floor. Staggered complete prime
+periods cover both arithmetic signs, retaining their separate physical
+thresholds and every allocation and phase. Close-owner and complete-period
+costs are funded together from the **same** original four-prime supply,
+leaving **1/128** unspent. Existing dominant and outer-radial payments
+cover the remaining boundaries with errors tending to zero. All older
+credits and higher-count reflection, prefix and pair savings survive.
+The main signed remainder now has counts 3, 4, 6 and at least 7; it still
+has no cofinal numerical floor. This is a whole-sector payment, not norm
+decay or a percentage of the global deficit. A one-sided 1/10000 power
+saving for assembled physical cells would suffice, but the transport
+theorem leaves that arithmetic premise explicitly open.
 
 The [signed-main bound](zeta-riesz-signed-density-main.md) now evaluates an
 explicit envelope for the original masked comparison main. Summing its

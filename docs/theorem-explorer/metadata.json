@@ -3855,6 +3855,80 @@
         "rieszFiveInteriorScope"
       ],
       "documentation": "docs/zeta-riesz-positive-five-interior.md"
+    },
+    {
+      "id": "whole-five-prime-floor",
+      "label": "Whole joint floor \u00b7 entire five-prime sector paid",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszWholeFivePhysicalFloorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszWholeFivePhysicalFloorScope"
+      ],
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    {
+      "id": "five-prime-period-payment",
+      "label": "Signed five-prime periods \u00b7 coverage and supply ledger",
+      "statusPaths": [
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPairChamberCoefficientTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPairChamberQuarterTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszPairChamberFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedPeriodCurvatureTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszSignedPeriodPopulationTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszStaggeredSignedFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszOwnerTieFloorTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRoughFiveSupplyTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszRoughFiveJoinedTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszTransitionFiveCoverTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszFiveInteriorCoverTheorem"
+        ],
+        [
+          "gaussianPhaseBandToolkit",
+          "rieszUnpaidFiveFloorTheorem"
+        ]
+      ],
+      "scopePath": [
+        "gaussianPhaseBandToolkit",
+        "rieszWholeFivePhysicalFloorScope"
+      ],
+      "documentation": "docs/zeta-riesz-joined-physical.md"
     }
   ],
   "families": [
@@ -4862,7 +4936,15 @@
     "ZetaRieszJoinedPhysical": "arithmetic",
     "ZetaRieszPhysicalCellFloor": "arithmetic",
     "ZetaRieszSaturatedCoreFloor": "arithmetic",
-    "ZetaRieszJoinedPrefixFloor": "arithmetic"
+    "ZetaRieszJoinedPrefixFloor": "arithmetic",
+    "ZetaRieszPairChamberFloor": "arithmetic",
+    "ZetaRieszSignedPeriodFloor": "arithmetic",
+    "ZetaRieszStaggeredFloor": "arithmetic",
+    "ZetaRieszOwnerTieFloor": "arithmetic",
+    "ZetaRieszRoughFivePeriodFloor": "arithmetic",
+    "ZetaRieszRoughFiveJoinedFloor": "arithmetic",
+    "ZetaRieszTransitionFiveFloor": "arithmetic",
+    "ZetaRieszFiveSignCoverFloor": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
@@ -9027,6 +9109,71 @@
       "documentation": "docs/zeta-riesz-positive-five-payment.md",
       "summary": "Alternative upper ledger uses its own previously proved payment; no supply is spent twice.",
       "overview": true
+    },
+    "RiemannGaussian.ZetaRieszPairChamberFloor.coefficient_eq_pair": {
+      "label": "Unit, prime and pair divisor channels sum exactly",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszPairChamberFloor.balancedSeven_new_saving_ge_quarter": {
+      "label": "Balanced seven-prime chamber returns at least one quarter",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszPairChamberFloor.eventually_joined_floor": {
+      "label": "Pair-chamber saving enters the whole physical floor",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszSignedPeriodFloor.centered_period_curvature_eq": {
+      "label": "Complete phase-period integral keeps favorable curvature",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszSignedPeriodFloor.eventually_population_floor": {
+      "label": "Literal prime-period population has a signed floor",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszStaggeredFloor.eventually_staggered_floor": {
+      "label": "Staggered periods retain both coefficient signs",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszOwnerTieFloor.eventually_core_grouped_tie_floor": {
+      "label": "Close-owner boundary cost is quantified over radial groups",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszRoughFivePeriodFloor.eventually_radial_rough_five_supply_floor": {
+      "label": "Rough-five period debit is funded from actual supply",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszRoughFiveJoinedFloor.eventually_joined_floor_with_rough_periods": {
+      "label": "Period and tie costs share the original four-prime supply",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszTransitionFiveFloor.owner_gap_mem_roughPeriod": {
+      "label": "Widened cofactor population covers owner-separated labels",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszFiveSignCoverFloor.interior_parts_covered": {
+      "label": "Both signs of every remaining interior five-prime label are covered",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszFiveSignCoverFloor.exists_unpaid_five_floor": {
+      "label": "Entire unpaid five-prime sum has a signed funded floor",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
+    },
+    "RiemannGaussian.ZetaRieszFiveSignCoverFloor.eventually_joined_floor_without_fives": {
+      "label": "Whole joined floor removes every unpaid five-prime label",
+      "overview": true,
+      "documentation": "docs/zeta-riesz-joined-physical.md"
     }
   }
 }
