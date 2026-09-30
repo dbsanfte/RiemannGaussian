@@ -1,0 +1,552 @@
+{
+  "schemaVersion": 1,
+  "status": "Kernel-checked supporting results; joint floor and ceiling remain open. Direct, focused and full warning-as-error Lean builds, whole-root verbose lint, compiled integrity/status, placeholder scan and recorded terminal axiom checks passed. Presentation checks are recorded by the explorer and README tools.",
+  "scope": "On 0<=u<=10001/20000, genuine local modes at distance >=501/1000 on |xi|<=1/2000 have an actual ordered-cofactor geometric bound. Chosen local modes with Re(tau)<=999/1000 are paid on the entire Fourier axis. Their disjoint union costs paidConstant(W,y)*(N+2)^3*(9999/10000)^N, with no double counting. These original local-sector theorems remain valid. The full Gamma completion contribution independently satisfies pi*(couplingConstant+couplingMassConstant)*(N+2)^3*(9999/10000)^N for N>=2, with no zero hypothesis, uniformly in height and moving length L>=1. Genuine integrability proves the exact pole-minus-xi subtraction. The selected mode is outside these zero sectors. The unshifted selected principal part is paid by paymentConstant*(N+2)^3*exp(-N/300) whenever |z|>=u, L>=max(1,11N/8) and the original rough support holds. Composite saturation annihilates cofactors below L before taking norms; the complementary order <=19N/40+1 leaves exp(-N/100). The singleton cofactor vanishes at its exact factorial orders. The character-minus-quotient correction retains both Fourier zeros and has a full-frequency exp(-N/300) bound. All original least-prime and factorial masks remain. Under the original exposed-zero hypothesis, the complete unshifted logarithmic derivative is now paid JOINTLY: exists_exposed_unshifted_bound proves C_rho*(N+2)^3*exp(-N/300) eventually for the actual rough primes and moving length. The existing complete-moment theorem discharges the coefficient budget with all zero multiplicities, pole and regular terms included. There is no simplicity or rightmost-zero assumption, infinite-divisor inversion or masked separate-leg phase transfer. Exact finite-character integration precedes the saturation bound. logResponse_eq justifies the genuine integral split. tendsto_shifted_sub_current leaves the negative shifted full log moment coupled to the unchanged ordered cofactor, rectangle and both phases. It stays source-equivalent to the literal lowerThresholdPacket-shortOverflowPacket on the original dyadic orders and prime counts with all earlier transfer errors paid. Previous zero-sector and Gamma estimates remain available. The GLOBAL horizontal zero sector is now paid: every genuine zero with Re(tau)<=999/1000, including its actual analytic multiplicity and arbitrarily large ordinate, has a joint full-frequency payment. The weighted bound retains 1/||tau-(3/2+i*y)||^2, and the existing inverse-square divisor summability gives responseConstant*zeroMass(y)*(N+2)^3*(9999/10000)^N. All factorial orders, the rectangle, ordered cofactor and both Fourier phases stay correlated. Summable L1 norms justify the actual sum/integral exchange and integrability. The global xi DERIVATIVE series identifies the exact negative zero contribution; this is not an infinite-product inverse or an arbitrary analytic remainder. Adding this payment and subtracting the disjoint paid Gamma correction leaves poleEdgeMain, the signed zeta pole minus zeros with Re(tau)>999/1000. Its difference from the original logMain is geometrically bounded, and tendsto_poleEdge_sub_current retains the literal packet and all previous transfer errors. No exposed-zero, simplicity or rightmost-zero assumption is required for this sector payment; its constant depends on fixed height. The selected zero is outside the sector. Do not add the old finite horizontal payment again: it is included in the global one. The earlier exposed whole-unshifted payment remains available, but neither payment bounds the selected shifted resonance. The retained pole/right-edge expression still needs a joint signed estimate. The SHIFTED EXTERIOR is now independently paid for the pole and every right-edge zero with Re(tau)>999/1000. The exact frequency mask is |xi|>=1/2000 AND |xi-Im(tau-(3/2+i*y))|>=1/40, applied to each of the two original signed frequencies. The pole uses its genuine coordinate 1-(3/2+i*y). The common half-plane bound Re(z)<=-1/2 and the 1/40 vertical separation imply radius>=1001/2000. The correlated cofactor/order estimate then gives a distance-weighted (9999/10000)^N rate. Summable L1 norms and actual multiplicities license the full zero sum and frequency integral. poleEdgeSymbol_split identifies the paid pieces with their exact residue signs. logMain_resonant_bound combines the old global horizontal/Gamma payments and new disjoint shifted exteriors once each. tendsto_resonant_sub_current preserves the original literal packet and all earlier paid errors. The retained SHIFTED parts are supported in |xi|<1/2000 OR |xi-Im(z)|<1/40. The unshifted pole/right-edge terms still appear in this exact algebraic ledger; the earlier exposed complete-unshifted payment remains a separate available reduction. No central or resonant term is norm-paid, no separate complete-leg limit is passed through a mask, and no arbitrary analytic remainder is introduced. This does not prove the independent resonant floor or ceiling. The exposed coefficient constant and starting order are unevaluated; no fraction of the full source is claimed cancelled. A tiny exposed gap alone does not establish a polynomial budget for every moving masked coefficient. Both whole-sum floor and ceiling remain OPEN; no zero exclusion or RH follows.",
+  "geometricCoupledSectorBoundProved": true,
+  "wholeCompetingComplementPaid": false,
+  "selectedResonanceEstimated": false,
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "rieszExposedCouplingRateTheorem": "RiemannGaussian.ZetaRieszExposedModeCoupling.coupled_order_bound",
+    "rieszExposedCouplingSymbolTheorem": "RiemannGaussian.ZetaRieszExposedModeCoupling.modeSymbol_bound",
+    "rieszExposedCouplingIntegralTheorem": "RiemannGaussian.ZetaRieszExposedModeCoupling.farResponse_bound",
+    "rieszExposedCouplingDecayTheorem": "RiemannGaussian.ZetaRieszExposedModeCoupling.tendsto_farResponse",
+    "rieszExposedCouplingSelectedTheorem": "RiemannGaussian.ZetaRieszExposedModeCoupling.selected_not_far",
+    "rieszExposedCouplingRegularTheorem": "RiemannGaussian.ZetaRieszExposedModeCoupling.regularPart_local",
+    "rieszExposedCouplingSplitTheorem": "RiemannGaussian.ZetaRieszExposedModeCoupling.logSymbol_retained_split",
+    "rieszExposedCouplingMainTheorem": "RiemannGaussian.ZetaRieszExposedModeCoupling.logMain_retained_bound",
+    "rieszExposedCouplingTransferTheorem": "RiemannGaussian.ZetaRieszExposedModeCoupling.tendsto_retained_sub_current",
+    "rieszExposedHorizontalIntegralTheorem": "RiemannGaussian.ZetaRieszExposedModeCoupling.horizontalResponse_bound",
+    "rieszExposedHorizontalExchangeTheorem": "RiemannGaussian.ZetaRieszExposedModeCoupling.horizontalContribution_eq_integral",
+    "rieszExposedHorizontalSelectedTheorem": "RiemannGaussian.ZetaRieszExposedModeCoupling.selected_not_horizontal",
+    "rieszExposedReducedMainTheorem": "RiemannGaussian.ZetaRieszExposedModeCoupling.logMain_reduced_bound",
+    "rieszExposedReducedTransferTheorem": "RiemannGaussian.ZetaRieszExposedModeCoupling.tendsto_reduced_sub_current",
+    "rieszCompletionMomentBoundTheorem": "RiemannGaussian.ZetaRieszCompletionPayment.completion_derivative_moment_bound",
+    "rieszCompletionIntegrabilityTheorem": "RiemannGaussian.ZetaRieszCompletionPayment.integrable_completionPair",
+    "rieszCompletionIntegralTheorem": "RiemannGaussian.ZetaRieszCompletionPayment.completionResponse_bound",
+    "rieszCompletionDecayTheorem": "RiemannGaussian.ZetaRieszCompletionPayment.tendsto_completionResponse",
+    "rieszCompletionSymbolSplitTheorem": "RiemannGaussian.ZetaRieszCompletionPayment.logSymbol_sub_completionSymbol",
+    "rieszCompletionIntegralSplitTheorem": "RiemannGaussian.ZetaRieszCompletionPayment.eventually_logMain_sub_completionResponse",
+    "rieszCompletionReducedMainTheorem": "RiemannGaussian.ZetaRieszCompletionPayment.logMain_completionReduced_bound",
+    "rieszCompletionTransferTheorem": "RiemannGaussian.ZetaRieszCompletionPayment.tendsto_completionReduced_sub_current",
+    "rieszUnshiftedRateTheorem": "RiemannGaussian.ZetaRieszUnshiftedCofactor.complementary_rate",
+    "rieszUnshiftedArithmeticTheorem": "RiemannGaussian.ZetaRieszUnshiftedCofactor.unshiftedResponse_bound",
+    "rieszUnshiftedCharacterTheorem": "RiemannGaussian.ZetaRieszUnshiftedCharacter.characterCofactor_eq_labels",
+    "rieszUnshiftedPrimeCorrectionTheorem": "RiemannGaussian.ZetaRieszUnshiftedCharacter.singleton_cofactor_zero",
+    "rieszUnshiftedErrorProfileTheorem": "RiemannGaussian.ZetaRieszUnshiftedEulerError.errorPair_profile",
+    "rieszUnshiftedErrorIntegralTheorem": "RiemannGaussian.ZetaRieszUnshiftedEulerError.errorResponse_bound",
+    "rieszUnshiftedExactTheorem": "RiemannGaussian.ZetaRieszUnshiftedPayment.quotientResponse_eq",
+    "rieszUnshiftedBoundTheorem": "RiemannGaussian.ZetaRieszUnshiftedPayment.quotientResponse_single_rate",
+    "rieszUnshiftedSelectedTheorem": "RiemannGaussian.ZetaRieszUnshiftedPayment.tendsto_selected_unshifted",
+    "rieszUnshiftedTransferTheorem": "RiemannGaussian.ZetaRieszUnshiftedPayment.tendsto_selectedReduced_sub_current",
+    "rieszUnshiftedLogBudgetTheorem": "RiemannGaussian.ZetaRieszUnshiftedLogPayment.exists_normalized_mark_bound",
+    "rieszUnshiftedLogIntegralTheorem": "RiemannGaussian.ZetaRieszUnshiftedLogPayment.unshiftedResponse_eq",
+    "rieszUnshiftedLogBoundTheorem": "RiemannGaussian.ZetaRieszUnshiftedLogPayment.unshiftedResponse_bound",
+    "rieszUnshiftedLogExposedBoundTheorem": "RiemannGaussian.ZetaRieszUnshiftedLogPayment.exists_exposed_unshifted_bound",
+    "rieszUnshiftedLogDecayTheorem": "RiemannGaussian.ZetaRieszUnshiftedLogPayment.tendsto_exposed_unshifted",
+    "rieszShiftedLogSplitTheorem": "RiemannGaussian.ZetaRieszUnshiftedLogPayment.logResponse_eq",
+    "rieszShiftedLogTransferTheorem": "RiemannGaussian.ZetaRieszUnshiftedLogPayment.tendsto_shifted_sub_current",
+    "rieszGlobalHorizontalWeightedTheorem": "RiemannGaussian.ZetaRieszGlobalHorizontal.horizontalResponse_weighted_bound",
+    "rieszGlobalHorizontalSummabilityTheorem": "RiemannGaussian.ZetaRieszGlobalHorizontal.summable_zeroWeight",
+    "rieszGlobalHorizontalExchangeTheorem": "RiemannGaussian.ZetaRieszGlobalHorizontal.hasSum_globalResponse",
+    "rieszGlobalHorizontalIntegrabilityTheorem": "RiemannGaussian.ZetaRieszGlobalHorizontal.integrable_globalPair",
+    "rieszGlobalHorizontalBoundTheorem": "RiemannGaussian.ZetaRieszGlobalHorizontal.globalResponse_bound",
+    "rieszGlobalHorizontalMomentTheorem": "RiemannGaussian.ZetaRieszGlobalHorizontal.hasSum_xiDifference",
+    "rieszGlobalHorizontalSplitTheorem": "RiemannGaussian.ZetaRieszGlobalHorizontal.logSymbol_split",
+    "rieszGlobalHorizontalIntegralSplitTheorem": "RiemannGaussian.ZetaRieszGlobalHorizontal.logResponse_add_globalResponse",
+    "rieszGlobalHorizontalSelectedTheorem": "RiemannGaussian.ZetaRieszGlobalHorizontal.selected_not_horizontal",
+    "rieszGlobalHorizontalDecayTheorem": "RiemannGaussian.ZetaRieszGlobalHorizontal.tendsto_globalResponse",
+    "rieszGlobalHorizontalMainTheorem": "RiemannGaussian.ZetaRieszGlobalHorizontal.logMain_poleEdge_bound",
+    "rieszGlobalHorizontalTransferTheorem": "RiemannGaussian.ZetaRieszGlobalHorizontal.tendsto_poleEdge_sub_current",
+    "rieszShiftedExteriorRadiusTheorem": "RiemannGaussian.ZetaRieszShiftedExterior.exterior_radius",
+    "rieszShiftedExteriorModeBoundTheorem": "RiemannGaussian.ZetaRieszShiftedExterior.exteriorResponse_bound",
+    "rieszShiftedExteriorExchangeTheorem": "RiemannGaussian.ZetaRieszShiftedExterior.hasSum_edgeExteriorResponse",
+    "rieszShiftedExteriorIntegrabilityTheorem": "RiemannGaussian.ZetaRieszShiftedExterior.integrable_edgeExteriorPair",
+    "rieszShiftedExteriorZeroBoundTheorem": "RiemannGaussian.ZetaRieszShiftedExterior.edgeExteriorResponse_bound",
+    "rieszShiftedExteriorMomentTheorem": "RiemannGaussian.ZetaRieszShiftedExterior.hasSum_shiftedMark",
+    "rieszShiftedExteriorSplitTheorem": "RiemannGaussian.ZetaRieszShiftedExterior.poleEdgeSymbol_split",
+    "rieszShiftedExteriorSupportTheorem": "RiemannGaussian.ZetaRieszShiftedExterior.retained_shift_support",
+    "rieszShiftedExteriorResonanceTheorem": "RiemannGaussian.ZetaRieszShiftedExterior.exteriorSymbol_zero_of_resonance",
+    "rieszShiftedExteriorPaymentTheorem": "RiemannGaussian.ZetaRieszShiftedExterior.poleEdge_resonant_bound",
+    "rieszShiftedExteriorMainTheorem": "RiemannGaussian.ZetaRieszShiftedExterior.logMain_resonant_bound",
+    "rieszShiftedExteriorTransferTheorem": "RiemannGaussian.ZetaRieszShiftedExterior.tendsto_resonant_sub_current"
+  },
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszExposedModeCoupling.coupled_order_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszExposedModeCoupling.modeSymbol_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszExposedModeCoupling.farResponse_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszExposedModeCoupling.tendsto_farResponse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszExposedModeCoupling.selected_not_far": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszExposedModeCoupling.regularPart_local": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszExposedModeCoupling.logSymbol_retained_split": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszExposedModeCoupling.logMain_retained_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszExposedModeCoupling.tendsto_retained_sub_current": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszExposedModeCoupling.horizontalResponse_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszExposedModeCoupling.horizontalContribution_eq_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszExposedModeCoupling.selected_not_horizontal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszExposedModeCoupling.logMain_reduced_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszExposedModeCoupling.tendsto_reduced_sub_current": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCompletionPayment.completion_derivative_moment_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCompletionPayment.integrable_completionPair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCompletionPayment.completionResponse_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCompletionPayment.tendsto_completionResponse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCompletionPayment.logSymbol_sub_completionSymbol": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCompletionPayment.eventually_logMain_sub_completionResponse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCompletionPayment.logMain_completionReduced_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCompletionPayment.tendsto_completionReduced_sub_current": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedCofactor.complementary_rate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedCofactor.unshiftedResponse_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedCharacter.characterCofactor_eq_labels": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedCharacter.singleton_cofactor_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedEulerError.errorPair_profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedEulerError.errorResponse_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedPayment.quotientResponse_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedPayment.quotientResponse_single_rate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedPayment.tendsto_selected_unshifted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedPayment.tendsto_selectedReduced_sub_current": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedLogPayment.exists_normalized_mark_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedLogPayment.unshiftedResponse_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedLogPayment.unshiftedResponse_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedLogPayment.exists_exposed_unshifted_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedLogPayment.tendsto_exposed_unshifted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedLogPayment.logResponse_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszUnshiftedLogPayment.tendsto_shifted_sub_current": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszGlobalHorizontal.horizontalResponse_weighted_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszGlobalHorizontal.summable_zeroWeight": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszGlobalHorizontal.hasSum_globalResponse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszGlobalHorizontal.integrable_globalPair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszGlobalHorizontal.globalResponse_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszGlobalHorizontal.hasSum_xiDifference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszGlobalHorizontal.logSymbol_split": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszGlobalHorizontal.logResponse_add_globalResponse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszGlobalHorizontal.selected_not_horizontal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszGlobalHorizontal.tendsto_globalResponse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszGlobalHorizontal.logMain_poleEdge_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszGlobalHorizontal.tendsto_poleEdge_sub_current": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszShiftedExterior.exterior_radius": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszShiftedExterior.exteriorResponse_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszShiftedExterior.hasSum_edgeExteriorResponse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszShiftedExterior.integrable_edgeExteriorPair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszShiftedExterior.edgeExteriorResponse_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszShiftedExterior.hasSum_shiftedMark": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszShiftedExterior.poleEdgeSymbol_split": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszShiftedExterior.retained_shift_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszShiftedExterior.exteriorSymbol_zero_of_resonance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszShiftedExterior.poleEdge_resonant_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszShiftedExterior.logMain_resonant_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszShiftedExterior.tendsto_resonant_sub_current": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszExposedModeCoupling.lean": "54e04f334ad5df260e6ba1077cebd4f8041b3a6daf423db3f54ee824cc982cea",
+    "RiemannGaussian/ZetaExposedMovingModes.lean": "4117441a295edf867ff0acdbb60fac95e42c115a637ba07641e0d78164bed336",
+    "RiemannGaussian/ZetaRieszMarkedLogDerivative.lean": "544ad9993afd269db92eec2ffe3b5c1784561bbc1cc780c64f98364293e9966c",
+    "RiemannGaussian/ZetaRieszMarkedPrimeCompletion.lean": "60d10fcec0119715c7b277f1d3c7bdfa3d12d18684816fcc9beea9884d363f9e",
+    "RiemannGaussian/ZetaRieszLocalXiDivisor.lean": "e713d7f986a3d81f78ede01203cc443f734a11e26b02a67299765836205b151d",
+    "RiemannGaussian/ZetaRieszCompletionPayment.lean": "ad4d0dcac88f79ed4c35fefe39220243e9b4a697df3f0e405d66d3c7e5c2cdc5",
+    "RiemannGaussian/ZetaRegularCorrectionVariation.lean": "cf5a62f25ac96e83b6e4ea54d3290b0ac0a745a34ed5fcbbea62a1078c96899a",
+    "RiemannGaussian/ZetaRieszUnshiftedCofactor.lean": "8b16cfaf5a0c0983379fee7f2943d6f6922f0e7e5f44624d00e40a836a670a8f",
+    "RiemannGaussian/ZetaRieszUnshiftedCharacter.lean": "54f9511a3030b811dfe82990c19a815d70c71696a4e5d5e899b3f48a73488fc8",
+    "RiemannGaussian/ZetaRieszUnshiftedEulerError.lean": "1094253efc90fbd40911134432047227bb73a1ec1826ec7b112842a0cc8be0c1",
+    "RiemannGaussian/ZetaRieszUnshiftedPayment.lean": "6784cab4d7d1895f853383ec20ef1ca8fd6614f7d462ec36c4666c54d126c5b8",
+    "RiemannGaussian/ZetaRieszUnshiftedLogPayment.lean": "bb027f812c2c0ef58abcab1671e4cf62c4070c70ed8748892e8e3a5fae2aebb1",
+    "RiemannGaussian/ZetaExposedPrimeMoments.lean": "67f7ce41450a7121ed5be4c44b0f8ad63ba463ce833de949cea56b1dc7398294",
+    "RiemannGaussian/ZetaRieszGlobalHorizontal.lean": "610083f80c58c213951d6e55790ca1d255265cafdc54be28785ef8bad4d0a7f2",
+    "RiemannGaussian/ZetaRieszShiftedZeroModes.lean": "52724bb67553825c6c0f70d92c7ce4153184caa53ad3a7383f0f76780f50100e",
+    "RiemannGaussian/ZetaRieszShiftedExterior.lean": "29af70db4ce676b393aa6a0a4dba6fe1540f28e1220fc57d47f693c963625dd7",
+    "RiemannGaussian/ZetaRieszSharpShifted.lean": "2490974821b21d9b52f7f3aa239ccaecc12f73b87cde19671939b0dba2debfc7"
+  },
+  "validation": {
+    "strictFocusedBuildJobs": 10163,
+    "strictFullBuildJobs": 11395,
+    "declarationLintErrors": 0,
+    "explicitTerminalAxiomChecks": 63,
+    "allowedAxiomsOnly": true,
+    "placeholderScanSources": 2857,
+    "exhaustiveNumericalCertificateRun": false,
+    "declarationsLinted": 34108,
+    "generatedDeclarationsLinted": 24169
+  },
+  "fullFrequencyHorizontalSectorPaid": true,
+  "numericalDiagnostic": {
+    "kind": "floating-point rate audit, not a proof",
+    "safeRadius": 0.4999961853027344,
+    "radiusCeiling": 0.50005,
+    "markedShare": 0.525,
+    "effectiveRadiusBreakEven": 0.5000986944788995,
+    "testedEffectiveRadii": [
+      {
+        "radius": 0.50005001,
+        "coupledLogRate": 5.111110243499104e-05
+      },
+      {
+        "radius": 0.500051,
+        "coupledLogRate": 5.0071707424283157e-05
+      },
+      {
+        "radius": 0.5001,
+        "coupledLogRate": -1.3705248397661386e-06
+      },
+      {
+        "radius": 0.5005,
+        "coupledLogRate": -0.00042111869830875414
+      },
+      {
+        "radius": 0.501,
+        "coupledLogRate": -0.0009453324213433174
+      }
+    ]
+  },
+  "fullFrequencyGammaCompletionPaid": true,
+  "selectedUnshiftedContributionPaid": true,
+  "selectedShiftedResonancePaid": false,
+  "completeUnshiftedContributionPaidUnderExposure": true,
+  "completeUnshiftedPaymentRequiresSimplicity": false,
+  "shiftedFullLogarithmicDerivativePaid": false,
+  "globalHorizontalZeroSectorPaid": true,
+  "globalHorizontalSumIntegralExchangeProved": true,
+  "globalPaymentUsesInfiniteProductInversion": false,
+  "globalPaymentRequiresExposure": false,
+  "globalPoleRightEdgeLedgerProved": true,
+  "shiftedPoleExteriorPaid": true,
+  "shiftedRightEdgeExteriorPaid": true,
+  "centralAndResonantPartsNormPaid": false,
+  "retainedMainContainsUnshiftedTerms": true,
+  "shiftedExteriorNumericalDiagnostic": {
+    "kind": "floating-point mechanism audit, not a proof",
+    "frequencyOriginHalfWidth": 0.0005,
+    "modeResonanceHalfWidth": 0.025,
+    "formalEffectiveRadius": 0.5005,
+    "tests": [
+      {
+        "verticalGap": 0,
+        "effectiveRadius": 0.5,
+        "coupledLogRateUsingHalfMarkedShare": 0.00010380971215090016
+      },
+      {
+        "verticalGap": 0.0005,
+        "effectiveRadius": 0.5000002499999375,
+        "coupledLogRateUsingHalfMarkedShare": 0.0001035597122758979
+      },
+      {
+        "verticalGap": 0.01,
+        "effectiveRadius": 0.5000999900019995,
+        "coupledLogRateUsingHalfMarkedShare": 3.829706819239538e-06
+      },
+      {
+        "verticalGap": 0.02,
+        "effectiveRadius": 0.5003998401278722,
+        "coupledLogRateUsingHalfMarkedShare": -0.0002958706287734086
+      },
+      {
+        "verticalGap": 0.025,
+        "effectiveRadius": 0.5006246098625197,
+        "coupledLogRateUsingHalfMarkedShare": -0.0005204103374959385
+      },
+      {
+        "verticalGap": 0.05,
+        "effectiveRadius": 0.5024937810560445,
+        "coupledLogRateUsingHalfMarkedShare": -0.002383773001141107
+      }
+    ]
+  },
+  "publicationValidation": {
+    "strictFullBuildJobs": 11397,
+    "declarationsLinted": 34177,
+    "generatedDeclarationsLinted": 24230,
+    "declarationLintErrors": 0,
+    "linters": 14,
+    "explicitTerminalAxiomChecks": 102,
+    "allowedAxiomsOnly": true,
+    "compiledIntegrityAuditPassed": true,
+    "placeholderScanSources": 2859,
+    "exhaustiveNumericalCertificateRun": false,
+    "directWarningAsErrorModules": 16
+  },
+  "sharpShiftedSupportingTheorems": {
+    "RiemannGaussian.ZetaRieszSharpShifted.sharp_rate_check": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSharpShifted.half_order_rate_gt_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSharpShifted.sharp_order_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSharpShifted.joint_sharp_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSharpShifted.tendsto_sharp_sub_current": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSharpShifted.logMain_sharp_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "sharpShiftedScope": "The exact marked-order lower share pays an additional separated sector at radius 5001/10000 with rate 999999/1000000. Its joint comparison retains an arbitrary unchanged complement; it does not supply the independent joint floor or ceiling and is not a new public endpoint."
+}

@@ -26,6 +26,12 @@ independent of both cutoffs; it has not been numerically evaluated.
 This is an elementary squarefree counting power saving. It is not a
 prime-number-theorem approximation, and it does not assert decay of `c_D`.
 
+The subsequent [signed-main theorem](zeta-riesz-signed-density-main.md)
+now bounds the original comparison main explicitly after retaining cutoff
+cancellation. Its remaining source factor grows as `(2u)^N`; it does not
+pay this module's full literal variation/long-cutoff error or close either
+cofinal endgame bound.
+
 ## Exact prime subtraction and product phase
 
 For any real weight `w`, `composite_model` retains the signed expression
@@ -111,6 +117,13 @@ retaining its density/prime cancellation and the correlated original
 weights. No further error-only estimate counts as completing that target.
 The whole cofinal `-79/1000` floor, `3/2` ceiling and RH remain open.
 
+The subsequent [literal variation audit](zeta-riesz-signed-density-main.md#audit-of-the-literal-mask-variation) quantifies why the canonical zero
+extension cannot be treated as a smooth amplitude here: on support
+`n>=exp(N/2)`, the displayed `exp(-N/32)` weighted-variation allowance is
+at least `exp(15N/32)/3` times the absolute column mass. This is a lower
+bound for the allowance, not the actual signed discrepancy. A changed
+extension needs its own exact comparison ledger and variation estimate.
+
 ## Checked extension audit
 
 The actual `ownerRows B` have squarefree composite cofactors only.
@@ -140,3 +153,15 @@ bound. Its extra `p>whole cofactor` restriction introduces a sector boundary
 that is absent from the complete carrier. Future estimates must use a fixed,
 explicit extension agreeing on every eligible composite, or work directly
 with the original signed correlations.
+
+## Signed profile factorisation
+
+`literal_profile_factorization` now factors any common cutoff profile into
+one signed density scalar times the signed canonical weight sum. The weight
+is independent of the divisor cutoff. `literal_profile_error_exponential`
+combines this with the existing `exp(-N/32)` comparison bound, retaining its
+weighted variation, both endpoint conditions and every short/lower-cutoff
+premise. It does not prove that those costs are small for the literal masks.
+The [exposed-mode slice](zeta-exposed-moving-modes.md) separately gives a
+geometric competing-mode bound. Connecting the masked weight sum to that
+expansion with a polynomial coefficient budget remains open.

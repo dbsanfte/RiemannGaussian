@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "status": "Supporting comparison theorem included in the ordinary root; user-requested joint signed main bound NOT obtained. No public endpoint change.",
+  "scope": "Exact owner weights on full composite cofactor shells with X<p, short divisor cutoff, N>=32 and M>=exp(N/2). The density term and ordinary-prime subtraction remain signed. The exp(-3N/100) estimate controls literal shell minus model, not either sum itself. Other core masks and geometries remain unpaid.",
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszSmoothOwnerDiscrepancy.lean": "7e4411e542f8bfbd09e88b75327e2df3dbdaf83b981b30c84d169ab365d34dea"
+  },
+  "validation": {
+    "directWarningAsError": "passed",
+    "focusedWarningAsErrorBuildJobs": 10307,
+    "fullRootWarningAsErrorBuildJobs": 11395,
+    "lintDeclarations": 34135,
+    "lintAutomaticallyGeneratedDeclarations": 24201,
+    "linters": 14,
+    "lintErrors": 0,
+    "placeholderFiles": 0,
+    "rootLibraryImportsNewModule": true
+  },
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszSmoothOwnerDiscrepancy.ownerWeight_increasing_variation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSmoothOwnerDiscrepancy.ownerAmplitude_variation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSmoothOwnerDiscrepancy.normalized_owner_riesz_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSmoothOwnerDiscrepancy.owner_atom_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSmoothOwnerDiscrepancy.literal_owner_shell_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSmoothOwnerDiscrepancy.normalized_literal_owner_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSmoothOwnerDiscrepancy.normalized_joint_owner_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSmoothOwnerDiscrepancy.marked_harmonic_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "signedMainBoundProved": false,
+  "wholeCoreCovered": false,
+  "jointFloorProved": false,
+  "jointCeilingProved": false,
+  "zeroExclusionProved": false,
+  "publicationValidation": {
+    "strictFullBuildJobs": 11397,
+    "declarationsLinted": 34177,
+    "generatedDeclarationsLinted": 24230,
+    "declarationLintErrors": 0,
+    "linters": 14,
+    "explicitTerminalAxiomChecks": 102,
+    "allowedAxiomsOnly": true,
+    "compiledIntegrityAuditPassed": true,
+    "placeholderScanSources": 2859,
+    "exhaustiveNumericalCertificateRun": false,
+    "directWarningAsErrorModules": 16
+  }
+}

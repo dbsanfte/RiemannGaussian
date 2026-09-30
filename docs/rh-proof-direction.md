@@ -11,6 +11,75 @@ handles all multiplicities if the same sum has both that cofinal floor
 and an independent cofinal ceiling `3/2+o(1)`. Both whole-sum inequalities
 remain open; the ceiling is an additional arithmetic target, not a
 consequence of the floor or the source limit.
+The [signed-main bound](zeta-riesz-signed-density-main.md) now evaluates an
+explicit envelope for the original masked comparison main. Summing its
+Mobius signs gives uniform cutoff bounds and a whole-main estimate
+`28*exp(2)*(N+1)/L_N*(2u)^(N+1)`, with no unknown mean-value constant.
+This removes cutoff growth from its coefficient, but leaves exponential
+source growth. The sufficient phase saving and full mask/long-cutoff
+comparison error remain open; this is not a bound on `coreResponse` itself.
+
+The [exposed moving-mode theorem](zeta-exposed-moving-modes.md) now gives
+`poly(N)*(u/R)^(N+1)` decay for the finite competing zero modes, with `u<R`
+and an explicit polynomial coefficient budget. The complete prime filter
+retains its selected multiplicity term and every old error. The joined
+ordinary-prime cofactor correction vanishes exactly. The literal masked
+transfer, comparison-error payment and selected-resonance inequality remain
+open; no additional polynomial improvement of the growing main envelope
+is being pursued.
+
+The [coupled separated-mode estimate](zeta-riesz-exposed-mode-coupling.md)
+now pays genuine modes at distance at least `0.501` on `|xi|<=1/2000`,
+including the actual ordered cofactor, by `C_W*(N+2)^3*(0.9999)^N`.
+The exact marked-packet source equivalence retains all previous paid errors.
+The same batch pays local genuine modes with real part at most `0.999`
+over the entire Fourier axis. The two sectors are combined disjointly.
+Closer rightward competitors, their remaining exterior frequencies and
+the selected resonance remain signed and unpaid; this is not a whole-carrier
+floor or ceiling.
+
+The same [coupled estimate](zeta-riesz-exposed-mode-coupling.md) now pays
+the **entire unshifted logarithmic derivative** under the original
+exposed-zero hypothesis, by `C_rho*(N+2)^3*exp(-N/300)`. Exact composite
+saturation is applied before a norm; the finite-character/Euler-quotient
+error is independently paid. The complete moment bound includes all zero
+multiplicities, pole and regular channels, with no simplicity assumption.
+The literal marked packet is therefore source-equivalent to the negative
+shifted logarithmic derivative coupled to the original cofactor. That
+shifted expression remains signed and unbounded at the required scale;
+the independent whole-sum floor and ceiling remain open.
+
+The new global extension pays **every** genuine zero with real part at
+most `0.999` across the entire Fourier axis. Retaining the inverse-square
+zero distance makes the full multiplicity-weighted divisor summable and
+gives `C_y*(N+2)^3*(0.9999)^N`. The exact global derivative identity and
+sum/integral exchange leave the pole minus the right-edge zero response
+after the disjoint Gamma payment. The original literal packet source is
+unchanged. This is a component bound; the selected shifted resonance and
+both independent whole-sum inequalities remain open.
+
+The shifted pole and right-edge zero exteriors now have a further
+geometric payment. The exact mask keeps `|xi|<1/2000` and each mode's
+`|xi-Im(z)|<1/40` resonance band signed. Outside both, the genuine
+half-plane geometry supplies radius `1001/2000` for the joint cofactor
+estimate. The full divisor sum and integral are justified, and the literal
+packet source is retained. Unshifted terms still appear in this ledger;
+the complete-unshifted exposed theorem remains available separately.
+The central/resonant signed estimate and both whole-sum bounds stay open.
+
+Two supporting estimates are included in the ordinary build. The exact
+marked-order fraction in `ZetaRieszSharpShifted` pays an additional separated
+shifted sector at radius `5001/10000`, with rate `999999/1000000`, while
+retaining the signed resonance and any unchanged complement. The
+[smooth owner comparison](zeta-riesz-smooth-owner-discrepancy.md) pays an
+`exp(-3N/100)` counting error on full composite cofactor shells. It retains
+the phase and ordinary-prime subtraction but does not bound the signed main
+or cover all core masks. The optional
+[owner-boundary probe](riesz-signed-main-boundary-investigation.md) found
+reinforcement in three tested orders; this is neither an asymptotic bound
+nor an impossibility theorem. Neither supporting estimate supplies the
+independent joint floor or ceiling.
+
 The [reflected-prime bounds](zeta-riesz-reflected-prime-bounds.md) now
 reduce both signed costs using the number of primes actually visible to
 the reflected divisor cutoff. For seven-prime labels, one reflected large

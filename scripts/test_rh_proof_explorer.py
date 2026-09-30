@@ -1936,6 +1936,135 @@ def run(output, url=None, refresh_preview=False):
                                 assert 'theorem ' + theorem['id'].rsplit('.', 1)[-1] in source_page.locator('.source-line:target').inner_text()
                                 source_page.close()
                             page.locator('#close-details').click()
+                    if endpoint['id'] == 'signed-main-density-bound':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 13
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('|c_D|<=2', '|eta(t)|<=7',
+                                                        'STILL GROWS', 'remain unpaid', 'remain OPEN'))
+                        core = next(n for n in roots if n['id'].endswith('.core_signed_main_bound'))
+                        assert all(t in core['statement'] for t in ('coreBand', 'Squarefree',
+                            'compositeModel', 'maskedWeight', '28', 'Real.exp 2', '(2 * u) ^ (N + 1)'))
+                        assert 'NontrivialZetaZero' not in core['statement']
+                        assert set(core['axioms']) == {'propext', 'Classical.choice', 'Quot.sound'}
+                        mask = next(n for n in roots if n['id'].endswith('.literal_short_allowance_lower'))
+                        assert all(t in mask['statement'] for t in ('maskedWeight', 'ownerRows', '15', '32'))
+                        assert 'NontrivialZetaZero' not in mask['statement']
+                        assert set(mask['axioms']) == {'propext', 'Classical.choice', 'Quot.sound'}
+                        assert 'MAJORANT' in scope and 'actual signed error' in scope
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', core['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{core['source']['line']}")
+                        if not published:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem core_signed_main_bound' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
+                    if endpoint['id'] == 'exposed-cofactor-coupling':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 63
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('501/1000', '|xi|<=1/2000',
+                            '(9999/10000)^N', 'Re(tau)<=999/1000', 'selected',
+                            'remain OPEN', 'no double counting', 'GLOBAL horizontal zero sector'))
+                        bound = next(n for n in roots if n['id'].endswith('.logMain_reduced_bound'))
+                        assert all(t in bound['statement'] for t in ('paidConstant', 'reducedMain',
+                            'radiusCeiling', '9999', '10000'))
+                        horizontal = next(n for n in roots if n['id'].endswith('.horizontalResponse_bound'))
+                        assert all(t in horizontal['statement'] for t in ('z.re', '501', '1000',
+                            'horizontalResponse', 'couplingMassConstant'))
+                        transfer = next(n for n in roots if n['id'].endswith('.tendsto_reduced_sub_current'))
+                        assert all(t in transfer['statement'] for t in ('lowerThresholdPacket',
+                            'shortOverflowPacket', 'dyadicPrimeCount', 'reducedMain'))
+                        completion = next(n for n in roots if n['id'].endswith('.completionResponse_bound'))
+                        assert all(t in completion['statement'] for t in ('completionResponse',
+                            'couplingMassConstant', '9999', '10000', 'radiusCeiling'))
+                        gamma_transfer = next(n for n in roots if n['id'].endswith('.tendsto_completionReduced_sub_current'))
+                        assert all(t in gamma_transfer['statement'] for t in ('completionReducedMain',
+                            'lowerThresholdPacket', 'shortOverflowPacket', 'dyadicPrimeCount'))
+                        assert 'Gamma completion' in scope and 'pole-minus-xi' in scope
+                        unshifted = next(n for n in roots if n['id'].endswith('.quotientResponse_single_rate'))
+                        assert all(t in unshifted['statement'] for t in ('quotientResponse', 'paymentConstant', '300', 'radiusCeiling'))
+                        unshifted_transfer = next(n for n in roots if n['id'].endswith('.tendsto_selectedReduced_sub_current'))
+                        assert all(t in unshifted_transfer['statement'] for t in ('selectedReducedMain', 'lowerThresholdPacket', 'shortOverflowPacket', 'dyadicPrimeCount'))
+                        assert 'shifted resonance' in scope and 'exp(-N/300)' in scope
+                        full_unshifted = next(n for n in roots if n['id'].endswith('.exists_exposed_unshifted_bound'))
+                        assert all(t in full_unshifted['statement'] for t in ('tau ≠ rho', 'NontrivialZetaZero',
+                            'unshiftedResponse', 'roughPrimes', 'length', '300', 'radiusCeiling'))
+                        shifted_transfer = next(n for n in roots if n['id'].endswith('.tendsto_shifted_sub_current'))
+                        assert all(t in shifted_transfer['statement'] for t in ('tau ≠ rho', 'shiftedMain',
+                            'lowerThresholdPacket', 'shortOverflowPacket', 'dyadicPrimeCount'))
+                        assert 'complete unshifted logarithmic' in scope and 'no simplicity' in scope
+                        global_bound = next(n for n in roots if n['id'].endswith('.globalResponse_bound'))
+                        assert all(t in global_bound['statement'] for t in ('globalResponse', 'zeroMass y',
+                            'responseConstant', 'radiusCeiling', '9999', '10000'))
+                        global_split = next(n for n in roots if n['id'].endswith('.hasSum_xiDifference'))
+                        assert all(t in global_split['statement'] for t in ('HasSum', 'analyticZetaZeroMultiplicity',
+                            'modeDifference', 'signedTaylorMoment', 'riemannXi'))
+                        global_transfer = next(n for n in roots if n['id'].endswith('.tendsto_poleEdge_sub_current'))
+                        assert all(t in global_transfer['statement'] for t in ('poleEdgeMain',
+                            'lowerThresholdPacket', 'shortOverflowPacket', 'dyadicPrimeCount'))
+                        assert 'tau ≠ rho' not in global_transfer['statement']
+                        assert 'not an infinite-product inverse' in scope
+                        exterior_bound = next(n for n in roots if n['id'].endswith('.logMain_resonant_bound'))
+                        assert all(t in exterior_bound['statement'] for t in ('logMain', 'resonantMain',
+                            'paymentConstant y', 'zeroMass y', '9999', '10000'))
+                        exterior_support = next(n for n in roots if n['id'].endswith('.retained_shift_support'))
+                        assert all(t in exterior_support['statement'] for t in ('2000', '40', 'z.im', '∨'))
+                        exterior_transfer = next(n for n in roots if n['id'].endswith('.tendsto_resonant_sub_current'))
+                        assert all(t in exterior_transfer['statement'] for t in ('resonantMain',
+                            'lowerThresholdPacket', 'shortOverflowPacket', 'dyadicPrimeCount'))
+                        assert 'SHIFTED EXTERIOR' in scope and 'unshifted pole/right-edge terms still appear' in scope
+                        for theorem in (bound, horizontal, transfer, completion, gamma_transfer, unshifted, unshifted_transfer,
+                                        full_unshifted, shifted_transfer, global_bound, global_split, global_transfer,
+                                        exterior_bound, exterior_support, exterior_transfer):
+                            assert set(theorem['axioms']) <= {'propext', 'Classical.choice', 'Quot.sound'}
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', bound['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{bound['source']['line']}")
+                        if not published:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem logMain_reduced_bound' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
+                    if endpoint['id'] == 'exposed-moving-complement':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 12
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('(u/R)^(N+1)', 'polynomial budget',
+                            'selected term', 'remain unpaid', 'remain OPEN', 'ONE marked prime'))
+                        bound = next(n for n in roots if n['id'].endswith('.complement_bound'))
+                        assert all(t in bound['statement'] for t in ('S.erase z0', 'u / R',
+                            'N + 1', 'a N z', 'R ≤'))
+                        split = next(n for n in roots if n['id'].endswith('.primeFilter_resonance_bound'))
+                        assert all(t in split['statement'] for t in ('analyticZetaZeroMultiplicity',
+                            'Polynomial.eval', 'adaptiveZetaResidualFilter', 'adaptiveZetaReflectedFilter'))
+                        bridge = next(n for n in roots if n['id'].endswith('.literal_profile_error_exponential'))
+                        assert all(t in bridge['statement'] for t in ('maskedWeight', 'R ^ 2 ≤ k',
+                            'densityPrefix', 'countingConstant', '32'))
+                        assert 'NontrivialZetaZero' not in bridge['statement']
+                        for theorem in (bound, split, bridge):
+                            assert set(theorem['axioms']) == {'propext', 'Classical.choice', 'Quot.sound'}
+                        selected = page.evaluate('id => PROOF_DATA.nodes.findIndex(n => n.id === id)', split['id'])
+                        page.locator(f'[data-node="{selected}"]').click()
+                        link = page.locator('#details .source-button').get_attribute('href')
+                        assert link.endswith(f"#L{split['source']['line']}")
+                        if not published:
+                            with page.expect_popup() as opened:
+                                page.locator('#details .source-button').click()
+                            source_page = opened.value
+                            source_page.wait_for_selector('.source-line:target')
+                            assert 'theorem primeFilter_resonance_bound' in source_page.locator('.source-line:target').inner_text()
+                            source_page.close()
+                        page.locator('#close-details').click()
                     if endpoint['id'] == 'owner-windows':
                         roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
                         assert len(roots) == 8

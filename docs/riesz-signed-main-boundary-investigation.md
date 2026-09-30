@@ -98,3 +98,59 @@ masks. No additional carrier representation has been introduced into Lean.
 The second command deliberately opts into the larger order-18 enumeration.
 The default stops at order 16. Neither command belongs in ordinary CI or
 in numerical-certificate verification.
+
+## Joining the neighboring owner sector
+
+The subsequent [optional enumeration](../scripts/probe_riesz_owner_boundary.py)
+tests the artificial boundary directly. It adjoins `p<=a<2p` to `a<p`,
+where `a` is squarefree composite and `p` is the marked prime. Every prime
+factor of such a composite `a` is at most `a/2<p`, so `p` remains its
+unique largest prime on both sides. This is still only a selected owner
+sector of the whole carrier; it is not the complete signed complement.
+
+This test uses the actual core radial window `1.95N<log(p*a)<=2.03N`,
+the moving integer physical cutoff, the owner binomial allocation and
+the full complex phase. Thus its numbers are not the earlier, narrower
+window's values. It retains the second hinge when `a` exceeds the physical
+cutoff `X=exp(L)`: for these squarefree composites with `a<2p<2X`,
+
+```math
+R_L(a)=\mu(a)(\log a-L)_+.
+```
+
+The direct response uses `R_(L-log p)(a)-R_L(a)`, including this correction.
+The reproduction script checks that sign against direct finite-divisor
+enumeration and checks the expanded factorial polynomial against its
+binomial form on 77 finite atoms. These are floating regression checks,
+not Lean theorems or interval certificates.
+
+The [recorded results](riesz-owner-boundary-probe.json) are the real parts
+after source normalization at height 54:
+
+| Order | `a<p` | `p<=a<2p` | Joined |
+| ---: | ---: | ---: | ---: |
+| 14 | 2.50024e-6 | 8.61574e-6 | 1.11160e-5 |
+| 16 | -1.42731e-5 | -6.99280e-6 | -2.12659e-5 |
+| 18 | 3.50868e-5 | 1.72572e-5 | 5.23440e-5 |
+
+The two sectors reinforce at every tested order. The ordinary-prime
+subtraction does oppose the density main, leaving about 88--89 percent
+of its real magnitude, before the retained unsaturated correction.
+That finite cancellation does not establish any decaying rate. It gives
+no basis for developing this neighboring-boundary completion as a new
+signed saving, and it is not a theorem ruling out eventual cancellation.
+
+The limits are substantial: nonowner allocation is omitted, the entire
+original count schedule and nested masks are not verified, and `a>=2p`
+is absent. Divisor cutoffs are only 1, 3 and 6. Height 54 is a diagnostic,
+not a selected off-critical zero. The unchanged joint floor and ceiling
+therefore remain open. No additional Lean representation or public
+endpoint was added for this experiment.
+
+```bash
+../.venv/bin/python scripts/probe_riesz_owner_boundary.py --check-only
+../.venv/bin/python scripts/probe_riesz_owner_boundary.py --max-order 18
+```
+
+The default stops at order 16; order 18 used about six minutes and 15 GB
+in this environment. Keep the enumeration outside ordinary CI.

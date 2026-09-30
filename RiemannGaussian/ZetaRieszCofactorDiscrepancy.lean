@@ -336,6 +336,20 @@ theorem literal_compositeModel (A B : Finset ℕ)
       (Or.inr (Finset.mem_filter.mp hq).2.1)
   rw [hp,sub_zero,sub_zero]
 
+/-- With canonical owner rows, any common cutoff profile factors through
+one SIGNED arithmetic scalar. The cofactor weight is independent of `D`. -/
+theorem literal_profile_factorization (A B : Finset ℕ)
+    (hB : ∀ m ∈ B, Squarefree m ∧ 3 ≤ m.primeFactors.card)
+    (L y scale : ℝ) (N p X R : ℕ) (f : ℕ → ℝ) :
+    (∑ D ∈ Finset.Icc 1 R, (f D-f (D+1))*compositeModel X D
+      (fun n => ZetaRieszJointPrimeEnergy.maskedWeight A
+        (ZetaRieszJointPrimeEnergy.ownerRows B) L y scale N n p)) =
+      (∑ D ∈ Finset.Icc 1 R, (f D-f (D+1))*densityPrefix D)*
+        (∑ n ∈ Finset.Icc 1 X, ZetaRieszJointPrimeEnergy.maskedWeight A
+          (ZetaRieszJointPrimeEnergy.ownerRows B) L y scale N n p) := by
+  simp_rw [literal_compositeModel A B hB L y scale N p X]
+  simp only [← mul_assoc,← Finset.sum_mul]
+
 /-- Changing an excluded prime weight does not change the actual composite
 sum. Thus the extension used by a main-term argument must be stated. -/
 theorem correlation_prime_extension (X D : ℕ) (w : ℕ → ℝ) (a : ℝ)
@@ -474,6 +488,46 @@ theorem profile_error_exponential {X R : ℕ} (hX : 0 < X)
         (fun k hk hz => (Nat.pow_le_pow_left (Finset.mem_Icc.mp hD).2 2).trans
           (hshort k hk hz)) hlower
     _ = _ := by rw [← Finset.sum_mul]; ring
+
+/-- The canonical profile bridge keeps the main as one signed scalar times
+the signed weight sum. The cutoff and weighted-variation obligations remain
+explicit: the exponential prefactor alone does not pay those masks. -/
+theorem literal_profile_error_exponential (A B : Finset ℕ)
+    (hB : ∀ m ∈ B, Squarefree m ∧ 3 ≤ m.primeFactors.card)
+    (L y scale : ℝ) (N p X R : ℕ) (f : ℕ → ℝ) (hX : 0 < X)
+    (hw : ZetaRieszJointPrimeEnergy.maskedWeight A
+      (ZetaRieszJointPrimeEnergy.ownerRows B) L y scale N (X+1) p = 0)
+    (hf : f (R+1)=0)
+    (hshort : ∀ k ∈ Finset.Icc 1 X,
+      ZetaRieszJointPrimeEnergy.maskedWeight A
+        (ZetaRieszJointPrimeEnergy.ownerRows B) L y scale N k p ≠
+      ZetaRieszJointPrimeEnergy.maskedWeight A
+        (ZetaRieszJointPrimeEnergy.ownerRows B) L y scale N (k+1) p → R^2 ≤ k)
+    (hlower : ∀ k ∈ Finset.Icc 1 X,
+      ZetaRieszJointPrimeEnergy.maskedWeight A
+        (ZetaRieszJointPrimeEnergy.ownerRows B) L y scale N k p ≠
+      ZetaRieszJointPrimeEnergy.maskedWeight A
+        (ZetaRieszJointPrimeEnergy.ownerRows B) L y scale N (k+1) p →
+      exp ((N : ℝ)/2) ≤ k) :
+    let w := fun n => ZetaRieszJointPrimeEnergy.maskedWeight A
+      (ZetaRieszJointPrimeEnergy.ownerRows B) L y scale N n p
+    |(∑ n ∈ compositePrefix X, w n*(∑ d ∈ Finset.Icc 1 R,
+      f d*(if d ∣ n then (μ d : ℝ) else 0)))-
+      (∑ D ∈ Finset.Icc 1 R, (f D-f (D+1))*densityPrefix D)*
+        (∑ n ∈ Finset.Icc 1 X, w n)| ≤
+      countingConstant*exp (-(N : ℝ)/32)*
+        (∑ k ∈ Finset.Icc 1 X, (k : ℝ)*|w k-w (k+1)|)*
+        (∑ D ∈ Finset.Icc 1 R, |f D-f (D+1)|) := by
+  dsimp only
+  have h := profile_error_exponential hX N
+    (fun n => ZetaRieszJointPrimeEnergy.maskedWeight A
+      (ZetaRieszJointPrimeEnergy.ownerRows B) L y scale N n p) f (1/2) hw hf hshort
+    (by simpa only [show ∀ n : ℕ, (1/2 : ℝ)*n=(n : ℝ)/2 from fun n => by ring]
+      using hlower)
+  rw [literal_profile_factorization A B hB L y scale N p X R f] at h
+  convert h using 1
+  congr 3
+  ring
 
 /-- The error rate on cofactors above exp(N/2) defeats the actual worst
 source-envelope growth, with a large explicit margin. -/

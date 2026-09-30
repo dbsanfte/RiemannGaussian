@@ -87,6 +87,70 @@ theorem markedWeight_two_primes {n p : ℕ} (hn : 1 < n)
     omega
   simp [markedWeight,he]
 
+/-- A label with at most one distinct prime has no marked rectangle mass.
+The marked incidence, when present, is necessarily its least prime. -/
+theorem markedWeight_count_le_one {n p : ℕ} (hp : p ∈ n.primeFactors)
+    (hc : n.primeFactors.card ≤ 1) (N : ℕ) : markedWeight N n p = 0 := by
+  have hn0 : n ≠ 0 := by intro h; simp [h] at hp
+  have hn1 : n ≠ 1 := by intro h; simp [h] at hp
+  have hr : n.minFac ∈ n.primeFactors :=
+    (Nat.minFac_prime hn1).mem_primeFactors (Nat.minFac_dvd n) hn0
+  have he : p=n.minFac := Finset.card_le_one.mp hc p hp n.minFac hr
+  rw [he]
+  exact ZetaRieszLeastBoundary.markedWeight_least_eq_zero N n
+
+/-- Every low-count marked incidence vanishes, with no squarefreeness or
+phase premise. Empty prime-factor sets have no marked incidence. -/
+theorem markedWeight_count_le_two {n p : ℕ} (hp : p ∈ n.primeFactors)
+    (hc : n.primeFactors.card ≤ 2) (N : ℕ) : markedWeight N n p = 0 := by
+  by_cases h : n.primeFactors.card ≤ 1
+  · exact markedWeight_count_le_one hp h N
+  · have hn0 : n ≠ 0 := by intro h; simp [h] at hp
+    have hn1 : n ≠ 1 := by intro h; simp [h] at hp
+    exact markedWeight_two_primes (by omega) hp (by omega) N
+
+/-- Inserting an ordinary-prime cofactor produces only a two-prime label
+(one prime if the two are equal), so its joined marked correction is zero. -/
+theorem markedWeight_prime_cofactor {p q : ℕ} (hp : p.Prime) (hq : q.Prime)
+    (N : ℕ) : markedWeight N (p*q) p = 0 := by
+  have hpf : (p*q).primeFactors = {p,q} := by
+    rw [Nat.primeFactors_mul hp.ne_zero hq.ne_zero,hp.primeFactors,hq.primeFactors]
+    simp
+  apply markedWeight_count_le_two (by simp [hpf]) _ N
+  rw [hpf]
+  exact (Finset.card_insert_le _ _).trans (by simp)
+
+/-- The complete ordinary-prime head correction vanishes even with
+arbitrary additional masks, factorial factors and complex cofactor phases. -/
+theorem ordinary_prime_correction_eq_zero {p : ℕ} (hp : p.Prime)
+    (Q : Finset ℕ) (hQ : ∀ q ∈ Q, q.Prime) (N : ℕ) (F : ℕ → ℂ) :
+    (∑ q ∈ Q, (markedWeight N (p*q) p : ℂ)*F q) = 0 := by
+  apply Finset.sum_eq_zero
+  intro q hq
+  rw [markedWeight_prime_cofactor hp (hQ q hq),Complex.ofReal_zero,zero_mul]
+
+/-- A finite cofactor completion may add its unit and prime head for free
+only while retaining the literal joined marked weight. All other omitted
+cofactors remain outside this identity. -/
+theorem cofactor_head_completion {p : ℕ} (hp : p.Prime)
+    (S : Finset ℕ) (N : ℕ) (F : ℕ → ℂ) :
+    (∑ n ∈ S, (markedWeight N (p*n) p : ℂ)*F n) =
+      ∑ n ∈ S.filter (fun n => n ≠ 1 ∧ ¬n.Prime),
+        (markedWeight N (p*n) p : ℂ)*F n := by
+  symm
+  apply Finset.sum_subset (Finset.filter_subset _ _)
+  intro n hn hnot
+  have h : n=1 ∨ n.Prime := by
+    simp only [Finset.mem_filter] at hnot
+    tauto
+  rcases h with rfl | h
+  · have hz : markedWeight N (p*1) p=0 := by
+      simp only [mul_one]
+      exact markedWeight_count_le_one (by simp [hp.primeFactors])
+        (by simp [hp.primeFactors]) N
+    rw [hz,Complex.ofReal_zero,zero_mul]
+  · rw [markedWeight_prime_cofactor hp h,Complex.ofReal_zero,zero_mul]
+
 /-- The two actual boundary weights are identical on this head.
 This equality does not alter the retained count mask. -/
 theorem lower_eq_overflow_two_primes {n p : ℕ} (hsf : Squarefree n)

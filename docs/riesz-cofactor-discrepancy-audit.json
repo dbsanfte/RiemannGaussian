@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "scope": "A proved squarefree counting POWER error controls the actual sharp Mobius cutoff with its signs: error <= C X^(3/4) D^(3/8), hence <= C X^(15/16) when D^2<=X. C is a defined positive finite constant, numerically UNEVALUATED. Exact unit and ordinary-prime subtraction is retained in the SIGNED main expression c_D sum w - w(1) - sum_(D<p<=X) w(p). For dyadic cofactors above exp(N/2), short cutoffs and w(n)=a(n) cos(y(c+log n))/n, the error is at most C exp(-N/32)*((3+abs(y))*A+TV(a)), with both exterior boundaries included and every extra mask/allocation jump left in TV(a). The full signed cutoff profile is recombined before estimating its error. The scalar error rate defeats (2u)^N with margin exp(-3N/100). This does NOT pay arbitrary whole-core amplitude/mask variation, cover every cutoff range, or bound the SIGNED MAIN expression. No prime-density transport is used. Optional order-16 tests enumerate three nonempty physical-annulus columns with actual squarefree integers and primes; they retain owner allocation only and do not verify all original nested masks. They are uncertified individual-column diagnostics, not a whole-core bound or asymptotic evidence. The literal masked rows have zero unit and prime weights, proved exactly. A nonzero virtual prime subtraction requires a different extension agreeing on the eligible composite support. Changing one excluded prime weight by a moves the main by (c_D-1)*a and the comparison error oppositely, with exact magnitude |c_D-1|*|a|. This audit does NOT provide the requested signed main bound. The next arithmetic estimate must retain the original masks or pay the complete explicitly fixed extension error. The cofinal -79/1000 floor, 3/2 ceiling and RH remain OPEN.",
-  "status": "All local proof and presentation gates passed: strict full build (11383 jobs), focused validation, project/root lint, 114 cumulative terminal axiom checks, compiled status/freshness, 2704 project-source scans, all three explorer browser tests, optional-certificate isolation, both plots and live GitHub working README rendering. The final document freshness check follows embedding this audit. Local and unpublished. The extension audit gives NO signed main bound or numerical endgame saving; both thresholds remain OPEN.",
+  "status": "The original slice was published in 190a26f44ca4d4d2b8e30168dae763e6c6d42464. The current module, including the new signed profile bridge, passed local focused and full warning-as-error builds (11386 jobs), root declaration lint and compiled integrity. Current source hashes are recorded below; the new terminal checks and scope are in exposed-moving-modes-audit.json. No sufficient whole-carrier signed floor or ceiling is proved.",
   "wholeCoreCovered": false,
   "squarefreeCountingPowerSavingProved": true,
   "primeDensitySubstitutionUsed": false,
@@ -22,7 +22,7 @@
     "rieszCofactorExtensionAuditTheorem": "RiemannGaussian.ZetaRieszCofactorDiscrepancy.comparison_error_prime_extension"
   },
   "sourceHashes": {
-    "RiemannGaussian/ZetaRieszCofactorDiscrepancy.lean": "c7d6697ab03a249745db9f83f0027aedf3bcb7a1de089bec01cfd16ea895582e",
+    "RiemannGaussian/ZetaRieszCofactorDiscrepancy.lean": "404a7b60908558b06f28ba3762ba3f8ead4a9073564e984217ff808876549f57",
     "RiemannGaussian/ZetaSquarefreeCounting.lean": "d35b1758b6252d7f4859e1ce2d0382afffe570e9348cca5d35b35c4b2af1f429",
     "scripts/probe_riesz_cofactor_main.py": "1f53e8ed1b881f7f25d2fe5cf2f60f65214cba71414966cfb1afec1e7adffd15",
     "scripts/probe_riesz_joint_main.py": "a0780ad0d32b38f67771519c61dab1695b4d48517016e9021ead52b901db508a"
@@ -97,5 +97,6 @@
   },
   "literalExtensionAuditProved": true,
   "canonicalLiteralPrimeSubtractionZero": true,
-  "excludedPrimeExtensionGainPaidExactly": true
+  "excludedPrimeExtensionGainPaidExactly": true,
+  "profileBridgeAudit": "docs/exposed-moving-modes-audit.json"
 }

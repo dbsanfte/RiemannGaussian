@@ -4837,7 +4837,21 @@
     "ZetaRieszCentralCostGrowth": "arithmetic",
     "ZetaRieszCentralRadialCost": "arithmetic",
     "ZetaRieszCofactorPhaseEnergy": "arithmetic",
-    "ZetaRieszCofactorDiscrepancy": "arithmetic"
+    "ZetaRieszCofactorDiscrepancy": "arithmetic",
+    "ZetaRieszSignedDensityMain": "arithmetic",
+    "ZetaRieszLiteralVariationAudit": "arithmetic",
+    "ZetaExposedMovingModes": "euler",
+    "ZetaRieszExposedModeCoupling": "arithmetic",
+    "ZetaRieszCompletionPayment": "arithmetic",
+    "ZetaRieszUnshiftedCofactor": "arithmetic",
+    "ZetaRieszUnshiftedCharacter": "arithmetic",
+    "ZetaRieszUnshiftedEulerError": "arithmetic",
+    "ZetaRieszUnshiftedPayment": "arithmetic",
+    "ZetaRieszUnshiftedLogPayment": "arithmetic",
+    "ZetaRieszGlobalHorizontal": "arithmetic",
+    "ZetaRieszShiftedExterior": "arithmetic",
+    "ZetaRieszSharpShifted": "arithmetic",
+    "ZetaRieszSmoothOwnerDiscrepancy": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

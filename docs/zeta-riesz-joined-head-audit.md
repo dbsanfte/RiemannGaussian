@@ -114,3 +114,15 @@ non-monotonically. The coupled high-order run was therefore stopped as
 unresolved; its outputs do not establish growth or decay. The new optional
 diagnostics separate arithmetic rounding from that quadrature error and
 leave the same signed prime-sum target open.
+
+## Whole-cofactor completion check
+
+The new `markedWeight_count_le_one` and `markedWeight_count_le_two` retain
+all factorial allocations and prove exact zero at low total prime count.
+`ordinary_prime_correction_eq_zero` kills the ordinary-prime cofactor
+correction after one marked prime, including arbitrary complex phases
+and extra masks. `cofactor_head_completion` permits adding the unit and
+prime head to a finite whole-cofactor sum. It does not pay other omitted
+composites. A singleton middle prime after two marks has total count three
+and is not killed by this test. See the [geometric complement
+audit](zeta-exposed-moving-modes.md) for the remaining transfer obligation.

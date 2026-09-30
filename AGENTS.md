@@ -1602,19 +1602,233 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
-The accumulated centered-prime-energy slice was committed and pushed as
-`d1695f32190f8a4672c73378294e3733e7509c08`. Exact-SHA CI run
-`36570788703` passed, including Pages. The published README and RH explorer
-were checked against that frozen revision on desktop and mobile. That
-publication request is complete; the user's continuation authorizes local
-theorem work. The user's latest instruction now authorizes committing and
-pushing the entire accumulated eleven-module batch, its numerical probes,
-documentation and generated explorer/status assets. This supersedes the
-local-only publication notes below for this batch. Keep the signed-main
-bound and both endgame thresholds explicitly open; this publication request
-does not assert that the next mathematical milestone has been reached.
-After publishing this batch, resume local work pending further publication
-authorization. Continue without subagents.
+The prior cofactor-discrepancy batch was published at
+`190a26f44ca4d4d2b8e30168dae763e6c6d42464`; exact-SHA CI run
+`36622043917` passed. That publication request is complete. Continue local
+theorem work without subagents. The user has now explicitly authorized
+committing and pushing all accumulated progress. This publication includes
+the supporting estimates and negative audits below; it does not discharge
+the joint signed target. Earlier local-only publication instructions in
+this history are superseded for this batch. After publication, further
+research stays local until another publication request.
+
+The latest user instruction requires cancellation among the retained
+central/resonant terms and the signed complement `C_j`, with a bound for
+their COMBINED real contribution. Further exterior-mode payments or a
+polynomial improvement to the positive `(2u)^N` envelope do not satisfy
+this slice. Keep the literal `J_j+C_j` target and every original mask.
+The exact `core_ledger` joins nonnegative fractions of each SAME atom;
+it removes the artificial packet split but does not supply cancellation
+within a label. The missing estimate must exploit signed correlations
+across labels/cutoffs/counts. Neither the cofinal `-79/1000-o(1)` floor
+nor the `3/2+o(1)` ceiling has been proved. Do not report a numerical
+prime-density model or an unevaluated signed-energy cost as either bound.
+
+The local `ZetaRieszSmoothOwnerDiscrepancy` supporting module proves an
+`exp(-3N/100)` counting-comparison error for the exact smooth owner weight
+on full composite cofactor shells, retaining the ordinary-prime subtraction
+and full phase. Summing owner-prime columns costs only `sum 1/p`. Its scope
+requires `cofactor < owner prime`, short divisor cutoffs and full shells;
+the remaining core masks and geometries have NOT been paid by that module.
+It estimates `literal shell - signed main`, not the signed main itself.
+This does NOT satisfy the latest requested joint floor/ceiling milestone.
+Include it in the ordinary root as supporting work, without a new public endpoint. See
+`docs/zeta-riesz-smooth-owner-discrepancy.md`.
+
+`ZetaRieszSharpShifted` also enters the ordinary root as supporting work.
+Its exact `21N<=40j` rectangle share pays the additional separated shifted
+sector at denominator radius `5001/10000`, with rate `999999/1000000`.
+The signed resonance and arbitrary unchanged complement remain in its
+two-sided comparison. This does not prove either whole-sum bound and does
+not replace the current public endpoint.
+
+The optional actual-prime boundary probe now joins `a<p` and `p<=a<2p`
+on the actual core radial window, retaining the unsaturated second hinge.
+At orders 14, 16 and 18 their real contributions reinforce; the density
+and ordinary-prime terms partially cancel but show no proved decaying
+rate. This is a limited numerical test, NOT a cofinal obstruction theorem
+or the requested joint bound. Nonowner allocation, `a>=2p` and the full
+count/mask bridge remain outside it. Do not build another owner-boundary
+completion merely from these numbers. See the recorded scope and results
+in `docs/riesz-signed-main-boundary-investigation.md`. Public frontiers
+and the current theorem-push gate remain unchanged.
+
+The preceding exposed spectral-gap work remains available:
+`ZetaExposedMovingModes` bounds the finite competing direct-mode sum by
+card(S.erase(-u))*C*(N+1)^d*(u/R)^(N+1), with a polynomial coefficient
+budget and 0<u<R. Exposure supplies the strict gap; all multiplicities
+remain. The complete prime-filter expansion retains the selected resonance
+and the exact old pole/residual/reflected terms. Do not assert an arbitrary
+moving filter inherits fixed-filter error estimates without a proof.
+The profile factorisation keeps one signed density scalar times the signed
+weight sum. Its exp(-N/32) comparison still requires weighted variation,
+short cutoffs and exterior endpoint control. The joined ordinary-prime
+WHOLE cofactor correction is zero after ONE marked prime; a singleton
+middle prime after TWO marks instead has total count three. Do not confuse
+these or complete away the marked weight. The masked spectral transfer,
+its polynomial coefficient budget and the independent selected-resonance
+floor/ceiling remain open. See `docs/zeta-exposed-moving-modes.md`.
+
+`ZetaRieszExposedModeCoupling` now pays a concrete part of the actual
+ordered-cofactor symbol: genuine local zeros at distance >=501/1000 on
+|xi|<=1/2000. Its source-scaled paired Riesz integral is at most
+2*farMass*couplingConstant*(N+2)^3*(9999/10000)^N. The rectangle,
+cofactor total order, least-prime Euler product and both Fourier zeros
+remain. The exact local principal-part ledger and
+`tendsto_retained_sub_current` connect this payment to the unchanged
+literal marked packet with all earlier paid errors. The selected mode is
+proved outside this paid sector. This is NOT the entire complement:
+closer competing modes, exterior frequencies and pole/regular terms stay
+signed and unpaid. A tiny exposed gap alone need not beat the current
+cofactor norm budget. Do not report this sector bound as either whole-sum
+inequality or a zero exclusion. Keep local and without subagents.
+See `docs/zeta-riesz-exposed-mode-coupling.md`.
+The same batch also pays genuine LOCAL divisor modes with Re(tau)<=999/1000
+on the ENTIRE Fourier axis. Horizontal separation survives every shift;
+the joint small/large-frequency envelope is integrable. `reducedMain`
+subtracts this full-axis component and the disjoint small-band sector for
+the remaining zeros. `logMain_reduced_bound` gives
+paidConstant(W,y)*(N+2)^3*(9999/10000)^N; the literal packet source ledger
+is preserved by `tendsto_reduced_sub_current`. Both the finite integral
+exchange and exclusion of the selected mode are proved. No infinite-divisor
+payment or bound on the remaining signed main is implied.
+
+`ZetaRieszCompletionPayment` now pays the FULL Gamma completion
+contribution with the ordered cofactor and factorial rectangle retained.
+The exact digamma recurrence gives height-independent derivative control;
+joint small/large-frequency estimates give a genuinely integrable profile
+on the entire Fourier axis. For N>=2, 0<=u<=10001/20000, arbitrary moving
+height, L>=1 and finite prime sets with p>=16, its source-scaled norm is at
+most pi*(couplingConstant+couplingMassConstant)*(N+2)^3*(9999/10000)^N.
+No zero premise is needed. The integral subtraction is exact and leaves
+the original zeta pole minus full xi derivative; no low cofactor orders
+are discarded. `completionReducedMain` combines this with the disjoint
+zero-sector payments. `tendsto_completionReduced_sub_current` retains the
+unchanged literal packet and all earlier paid errors. The analytic xi
+remainder from a local divisor is NOT the Gamma correction and remains
+unpaid, together with the zeta pole, right-edge zero modes and their
+unpaid frequencies. Do not call this an estimate for the selected
+resonance or either whole-sum bound. Keep this work local, without agents.
+
+`ZetaRieszUnshiftedPayment.quotientResponse_single_rate` now pays the
+UNSHIFTED half of the existing marked principal part, including the
+selected denominator z=-u. The exact finite character reindexing gives
+the original composite cofactor hinge, which is zero below L. Its
+complementary order is at most 19N/40+1, and the oversized-cofactor bound
+is O(N^2*exp(-N/100)) for L>=11N/8 and 0<u<=10001/20000.
+The singleton cofactor has exactly zero factorial weight. The actual
+character-minus-quotient difference retains a second Fourier zero and
+its full-frequency integral is independently bounded by
+O(N^3*exp(-N/300)), using the original exponential rough-prime head.
+`quotientResponse_eq` justifies this transfer with no unpaid completion
+correction. All least-prime order, finite support, full phase and
+factorial masks remain. Orders zero are not discarded. The combined
+constant is explicit but large; no numerical starting order is claimed.
+The physical support and moving Riesz length satisfy the hypotheses
+eventually. `tendsto_selected_unshifted` includes every fixed analytic
+multiplicity; `selected_principal_split` verifies the genuine zero sign.
+`tendsto_selectedReduced_sub_current` preserves the original literal
+packet and every earlier paid error. The correlated SHIFTED resonance
+is not paid, and no independent whole-sum floor/ceiling or zero exclusion
+follows. Keep pole/xi and all other remaining components signed. Continue
+locally without commits, pushes or subagents. The proof and audit extend
+`docs/zeta-riesz-exposed-mode-coupling.md` and its existing endpoint.
+
+`ZetaRieszUnshiftedLogPayment` extends this payment to the COMPLETE
+unshifted logarithmic-derivative contribution under the original exposed
+right-half-zero hypothesis. `exists_normalized_mark_bound` discharges its
+coefficient budget using the existing complete-moment theorem. The exact
+finite-character saturation and full-frequency Euler correction then give
+`exists_exposed_unshifted_bound`: C_rho*(N+2)^3*exp(-N/300) eventually on
+the literal rough support and moving length. Every zero multiplicity, the
+pole and regular channels remain included in this joint payment. No
+simplicity, rightmost zero, infinite-divisor inversion or masked leg-limit
+transfer is used. `logResponse_eq` proves the genuinely integrable split;
+`tendsto_shifted_sub_current` leaves the negative SHIFTED full log moment
+coupled to its original ordered cofactor, rectangle and Fourier phases.
+It retains the original literal packet and all prior transfer errors.
+Previous zero-sector and Gamma bounds remain available. The source-carrying
+shifted expression is still unpaid: no whole-sum floor/ceiling, percentage
+of source cancellation, or zero exclusion follows. C_rho and the eventual
+starting order are unevaluated. Keep local, no commits, pushes or subagents.
+
+`ZetaRieszGlobalHorizontal` extends the horizontal payment to EVERY
+actual zero with Re(tau)<=999/1000, all analytic multiplicities and the
+entire Fourier axis. Its mode bound retains 1/|tau-(3/2+i*y)|^2;
+`globalResponse_bound` sums this with the existing global inverse-square
+budget to obtain responseConstant*zeroMass(y)*(N+2)^3*(9999/10000)^N.
+The height is fixed; no uniform bound on zeroMass(y) is asserted.
+`globalPair_L1`, genuine integrability and `hasSum_globalResponse` justify
+the integral exchange. `hasSum_xiDifference` and `logSymbol_split` identify
+the negative principal parts through the convergent global xi DERIVATIVE
+series. This is not the forbidden infinite-product inverse and uses no
+reflected modes. The rectangle already forces marked order >=2; cofactor
+orders zero and one are retained. No exposure or simplicity is needed.
+`logMain_poleEdge_bound` combines the disjoint global-zero and Gamma
+payments. `tendsto_poleEdge_sub_current` preserves the unchanged literal
+packet and every old error. The remaining expression is the signed zeta
+pole minus genuine zeros with Re(tau)>999/1000; the selected source lies
+there. The older finite horizontal payment is INCLUDED in the global
+sector and must not be added again. The earlier complete-unshifted exposed
+payment remains valid as a separate reduction. No whole floor, ceiling,
+zero exclusion or numerical fraction of source removed follows. Keep all
+remaining phases and cofactors joint. The endpoint/audit stay in the
+existing exposed-mode-coupling documents. Work locally without subagents,
+commits or pushes.
+
+`ZetaRieszShiftedExterior` now pays the actual shifted pole and entire
+right-edge zero exterior. Its exact mask is |xi|>=1/2000 AND
+|xi-Im(z)|>=1/40, tested at each original signed frequency. Genuine modes
+and the pole have Re(z)<=-1/2; this vertical gap gives radius>=1001/2000.
+The old coupled-order rate retains the full cofactor/rectangle and an
+inverse-square mode-distance weight. `edgeExteriorResponse_bound` sums
+all right-edge multiplicities; summable L1 norms justify both exchange
+and genuine integrability. `poleEdgeSymbol_split` checks the exact signs.
+`logMain_resonant_bound` combines the disjoint horizontal/Gamma and new
+shifted-exterior payments with a C_y*(N+2)^3*(9999/10000)^N bound.
+`tendsto_resonant_sub_current` retains the literal packet and all old
+errors. Only the retained SHIFTED parts are confined to |xi|<1/2000 OR
+|xi-Im(z)|<1/40; unshifted pole/right-edge terms still appear algebraically.
+The earlier complete-unshifted payment under exposure remains available
+as a separate exact reduction. Do not claim the whole integrand is
+supported in these bands, pay any central/resonant term by norm, double
+count earlier components, or infer an independent floor/ceiling from
+source equivalence. The numerical log-rate diagnostic is motivation,
+not a certificate. Both whole-sum bounds and the selected shifted
+resonance remain open. Continue locally without commits or subagents;
+keep the existing supporting endpoint and audit rather than proliferating
+new documentation.
+
+`ZetaRieszSignedDensityMain` bounds the SIGNED
+comparison main itself. Exact squarefree density factors and a positive
+Dirichlet convolution with density-normalized mass exactly one give
+|c_D|<=2 and |eta(t)|<=7. The full hinge coefficient costs <=14 after summing
+its signs. For the original
+core weights, `core_signed_main_bound` gives
+28*exp(2)*(N+1)/L_N*(2u)^(N+1), without an unknown population/mean constant.
+This supersedes the earlier statement that no signed-main bound exists,
+but NOT the open sufficient-bound milestone: its source factor still grows
+for u>1/2. It bounds the canonical comparison main, NOT coreResponse.
+Literal mask variation and long-cutoff comparison errors remain unpaid.
+The uniform hinge bound requires all its support; do not apply the short
+cutoff error theorem to that support without discharging its premises.
+Preserve the phase-retaining column bound for the next genuine phase saving.
+Both cofinal thresholds and RH remain open. No publication or subagents
+are authorized for this local slice. See `docs/zeta-riesz-signed-density-main.md`.
+
+`ZetaRieszLiteralVariationAudit` now proves that the canonical squarefree
+zero extension cannot be charged as a smooth weight in the existing Abel
+allowance. Its weight is zero on every multiple of four, hence
+sum n*abs(w(n)-w(n+1)) >= (1/3)*sum n*abs(w(n)), including the final jump.
+On support n>=exp(N/2), the exp(-N/32) variation allowance is at least
+exp(15N/32)/3 times the absolute column mass. This is a lower bound on
+the MAJORANT, not on the actual signed error and not a proof of its
+divergence. The threshold premise remains explicit. Do not claim that
+the prefactor pays literal mask variation or that a different extension
+is free. The main bound remains valid; a sufficient joint main/error
+phase estimate and both cofinal thresholds remain open. This negative
+audit closes that smooth-zero-extension shortcut; it is not a new floor,
+ceiling, or saving for the actual carrier. Keep local, no subagents.
 
 `ZetaRieszCofactorDiscrepancy` proves the signed squarefree prefix error
 C X^(3/4) D^(3/8), hence C X^(15/16) for D^2<=X. Its exact composite model

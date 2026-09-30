@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "status": "Kernel-checked supporting results; joint floor and ceiling remain open. Focused and full warning-as-error Lean builds, whole-root declaration lint, compiled integrity/status, placeholder scan and the recorded terminal axiom checks passed. Presentation checks are recorded by the explorer and README tools.",
+  "scope": "The existing canonical signed comparison main now has an unconditional explicit bound, with every literal owned mask, full allocation, factorial weight and phase retained. Exact squarefree density factorization and a positive Dirichlet convolution with density-normalized total mass exactly one prove |c_D|<=2 for every sharp cutoff and |eta(t)|<=7 for the logarithmic Riesz mean. Recombining the entire original hinge support gives |eta(L)-eta(L-log p)|<=14 before any divisor-sign norm. The complete core comparison main obeys |M_N|<=28*exp(2)*(N+1)/L_N*(2u)^(N+1), with no unknown arithmetic or population constant. Its phase-preserving precursor retains each signed cofactor-column sum. This is a genuine MAIN-term bound, not merely a counting-error estimate, but its source factor STILL GROWS for fixed u>1/2. No exponential phase saving or cofinal endgame constant is proved. The whole original carrier is NOT identified with this main: literal mask variation and long-cutoff comparison errors remain unpaid. The hinge bound requires the complete hinge support; the short-cutoff error theorem cannot be applied without its hypotheses. Both the -79/1000 cofinal floor and the 3/2 ceiling remain OPEN, as do RH and any zero exclusion from this route. A separate literal-mask audit proves the canonical weight is zero on every multiple of four. Its weighted absolute variation is at least one third of its weighted absolute mass. On explicit support n>=exp(N/2), the exp(-N/32) variation allowance is at least exp(15N/32)/3 times the absolute column mass. This lower-bounds the MAJORANT, not the actual signed error, and does not assert divergence. The smooth-zero-extension shortcut does not supply a relative saving; joint signed cancellation remains necessary.",
+  "canonicalSignedMainBoundProved": true,
+  "allLiteralCoreMasksRetained": true,
+  "cutoffIndependentSignedCoefficientBoundProved": true,
+  "cofinalMainSavingProved": false,
+  "wholeCarrierComparisonErrorPaid": false,
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "sharpCoefficientBound": 2,
+  "rieszMeanBound": 7,
+  "fullHingeCoefficientBound": 14,
+  "coreMainBound": "28*exp(2)*(N+1)/L_N*(2u)^(N+1)",
+  "fullHingeSupportRequired": true,
+  "terminalTheorems": {
+    "rieszSignedMainConvolutionTheorem": "RiemannGaussian.ZetaRieszSignedDensityMain.density_convolution",
+    "rieszSignedMainCoreTheorem": "RiemannGaussian.ZetaRieszSignedDensityMain.core_signed_main_bound",
+    "rieszSignedMainCorrectionMassTheorem": "RiemannGaussian.ZetaRieszSignedDensityMain.normalized_correction_prefix_bound",
+    "rieszSignedMainDensityTheorem": "RiemannGaussian.ZetaRieszSignedDensityMain.density_marks",
+    "rieszSignedMainHingeTheorem": "RiemannGaussian.ZetaRieszSignedDensityMain.hinge_density_bound",
+    "rieszSignedMainLiteralIdentityTheorem": "RiemannGaussian.ZetaRieszSignedDensityMain.literal_profile_main_eq",
+    "rieszSignedMainPhaseBoundTheorem": "RiemannGaussian.ZetaRieszSignedDensityMain.literal_profile_main_bound",
+    "rieszSignedMainRieszTheorem": "RiemannGaussian.ZetaRieszSignedDensityMain.densityRiesz_bound",
+    "rieszSignedMainSharpTheorem": "RiemannGaussian.ZetaRieszSignedDensityMain.densityPrefix_bound",
+    "rieszSignedMainWholeTheorem": "RiemannGaussian.ZetaRieszSignedDensityMain.whole_signed_main_bound",
+    "rieszLiteralMaskZeroTheorem": "RiemannGaussian.ZetaRieszLiteralVariationAudit.literal_weight_zero_four",
+    "rieszLiteralMaskVariationTheorem": "RiemannGaussian.ZetaRieszLiteralVariationAudit.literal_variation_lower",
+    "rieszLiteralMaskAllowanceTheorem": "RiemannGaussian.ZetaRieszLiteralVariationAudit.literal_short_allowance_lower"
+  },
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaRieszSignedDensityMain.density_convolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedDensityMain.core_signed_main_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedDensityMain.normalized_correction_prefix_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedDensityMain.density_marks": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedDensityMain.hinge_density_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedDensityMain.literal_profile_main_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedDensityMain.literal_profile_main_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedDensityMain.densityRiesz_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedDensityMain.densityPrefix_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszSignedDensityMain.whole_signed_main_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszLiteralVariationAudit.literal_weight_zero_four": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszLiteralVariationAudit.literal_variation_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszLiteralVariationAudit.literal_short_allowance_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaRieszSignedDensityMain.lean": "1cc4b8a039d4c132da47b96fcbc61cdf7b3fee12288eb064df6badc79fb2fca0",
+    "RiemannGaussian/ZetaRieszCofactorDiscrepancy.lean": "404a7b60908558b06f28ba3762ba3f8ead4a9073564e984217ff808876549f57",
+    "RiemannGaussian/EtaMoebiusLogHarmonicBound.lean": "3bffd7ed3d82b412bd943757028b077d0ec88bb7603fce10b2f6cf1ac668c1c5",
+    "RiemannGaussian/ZetaRieszLiteralVariationAudit.lean": "045059c5a4887fe44406493d708fd639f16c5c36db5cff50d2e6ca578365dbf6"
+  },
+  "validation": {
+    "strictFocusedBuild": true,
+    "strictFullBuildJobs": 11387,
+    "declarationLintErrors": 0,
+    "declarationsLinted": 33852,
+    "generatedDeclarationsLinted": 24017,
+    "explicitTerminalAxiomChecks": 13,
+    "allowedAxiomsOnly": true,
+    "placeholderScanSources": 2849,
+    "exhaustiveNumericalCertificateRun": false
+  },
+  "literalMaskVariationObstructionProved": true,
+  "actualComparisonErrorLowerBoundProved": false,
+  "densityNormalizedCorrectionMass": 1,
+  "publicationValidation": {
+    "strictFullBuildJobs": 11397,
+    "declarationsLinted": 34177,
+    "generatedDeclarationsLinted": 24230,
+    "declarationLintErrors": 0,
+    "linters": 14,
+    "explicitTerminalAxiomChecks": 102,
+    "allowedAxiomsOnly": true,
+    "compiledIntegrityAuditPassed": true,
+    "placeholderScanSources": 2859,
+    "exhaustiveNumericalCertificateRun": false,
+    "directWarningAsErrorModules": 16
+  }
+}

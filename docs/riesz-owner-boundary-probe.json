@@ -1,0 +1,260 @@
+{
+  "scope": "Uncertified actual-prime enumeration of adjacent owner sectors a<p and p<=a<2p in the core radial window. Not the whole J+C carrier.",
+  "original_probe_sha256": "c47677c0d9392ca73eb9b649a8644ddbc9e502ab43157d5407715634841ee927",
+  "reproduction_script": "scripts/probe_riesz_owner_boundary.py",
+  "reproduction_script_sha256": "cf7206c619d4bdc8878fb0751d83754ae5c613c19ebda3d8df533956efc2fd51",
+  "provenance": "Recorded runs used the original scratch script. The reproduction script retains the same numerical kernel, adds support assertions and 77 independent finite-atom regressions, and changes only CLI/output handling.",
+  "limits": [
+    "Floating arithmetic, no interval enclosure",
+    "Nonowner allocation omitted",
+    "All original nested masks and count schedule not verified",
+    "Cofactor a>=2p omitted",
+    "Small cutoffs 1,3,6 do not test the cofinal exponential cutoff regime",
+    "Height 54 is a numerical diagnostic, not a selected off-critical zero"
+  ],
+  "rows": [
+    {
+      "N": 14,
+      "y": 54,
+      "X": 1192464,
+      "L": 13.991532312609701,
+      "cofactorRange": [
+        602279,
+        1686379
+      ],
+      "markedPrimes": 43364,
+      "divisorCutoff": 1,
+      "sectors": [
+        {
+          "sector": "a<p",
+          "actual": [
+            0.0000025002421244376976,
+            0.0000027592176328451006
+          ],
+          "model": [
+            0.0000024998977351452987,
+            0.0000027596654538003627
+          ],
+          "density": [
+            0.0000028456826511712396,
+            0.000003140068392422475
+          ],
+          "primeCorrection": [
+            -3.457849160259409e-7,
+            -3.804029386221127e-7
+          ],
+          "unsaturatedCorrection": [
+            0,
+            0
+          ],
+          "actualMinusModel": [
+            3.4438929239886423e-10,
+            -4.478209552615202e-10
+          ],
+          "realColumnAbsoluteSum": 0.0000029270624768272557
+        },
+        {
+          "sector": "p<=a<2p",
+          "actual": [
+            0.00000861574049562779,
+            0.000005002663398035148
+          ],
+          "model": [
+            0.000008615899537014728,
+            0.000005002714837873942
+          ],
+          "density": [
+            0.000009759276794165007,
+            0.00000509379550553109
+          ],
+          "primeCorrection": [
+            -0.000001157402709502123,
+            -6.247708715964498e-7
+          ],
+          "unsaturatedCorrection": [
+            1.4025452351846369e-8,
+            5.336902039393032e-7
+          ],
+          "actualMinusModel": [
+            -1.5904138693917605e-10,
+            -5.1439838794529715e-11
+          ],
+          "realColumnAbsoluteSum": 0.000011864199836888497
+        }
+      ],
+      "joined": [
+        0.00001111598262006549,
+        0.00000776188103088025
+      ],
+      "joinedAbs": 0.000013557723509023803,
+      "joinedRealOverSeparatedRealAbs": 1,
+      "certified": false,
+      "allOriginalMasksVerified": false,
+      "nonownerAllocationIncluded": false,
+      "countsTailPaid": false,
+      "seconds": 1.3206018880009651
+    },
+    {
+      "N": 16,
+      "y": 54,
+      "X": 14822500,
+      "L": 16.51165685456366,
+      "cofactorRange": [
+        2393682,
+        15975597
+      ],
+      "markedPrimes": 662905,
+      "divisorCutoff": 3,
+      "sectors": [
+        {
+          "sector": "a<p",
+          "actual": [
+            -0.00001427309495248964,
+            -0.000011478415727849
+          ],
+          "model": [
+            -0.00001427279839011603,
+            -0.000011478528669926275
+          ],
+          "density": [
+            -0.000016038726757068945,
+            -0.000012908936505249838
+          ],
+          "primeCorrection": [
+            0.0000017659283669529194,
+            0.0000014304078353235596
+          ],
+          "unsaturatedCorrection": [
+            0,
+            0
+          ],
+          "actualMinusModel": [
+            -2.965623736124689e-10,
+            1.12942077275141e-10
+          ],
+          "realColumnAbsoluteSum": 0.00001599160645070537
+        },
+        {
+          "sector": "p<=a<2p",
+          "actual": [
+            -0.000006992799111769256,
+            -0.000005361920345608025
+          ],
+          "model": [
+            -0.000006992797958997796,
+            -0.000005361602037707672
+          ],
+          "density": [
+            -0.000008079019245701485,
+            -0.00000621539106609613
+          ],
+          "primeCorrection": [
+            0.000001101269827670453,
+            8.607719940364712e-7
+          ],
+          "unsaturatedCorrection": [
+            -1.504854096675394e-8,
+            -6.982965648013269e-9
+          ],
+          "actualMinusModel": [
+            -1.152771465267272e-12,
+            -3.1830790034953857e-10
+          ],
+          "realColumnAbsoluteSum": 0.00002356153533580918
+        }
+      ],
+      "joined": [
+        -0.000021265894064258907,
+        -0.000016840336073457022
+      ],
+      "joinedAbs": 0.0000271262818944886,
+      "joinedRealOverSeparatedRealAbs": 1.0000000000000007,
+      "certified": false,
+      "allOriginalMasksVerified": false,
+      "nonownerAllocationIncluded": false,
+      "countsTailPaid": false,
+      "seconds": 26.32730006193742
+    },
+    {
+      "N": 18,
+      "y": 54,
+      "X": 189723076,
+      "L": 19.061076072209286,
+      "cofactorRange": [
+        9238812,
+        121639585
+      ],
+      "markedPrimes": 8706103,
+      "divisorCutoff": 6,
+      "sectors": [
+        {
+          "sector": "a<p",
+          "actual": [
+            0.0000350867753735124,
+            0.000032578873093398976
+          ],
+          "model": [
+            0.000035086684449841045,
+            0.0000325788894294467
+          ],
+          "density": [
+            0.00003933843472004153,
+            0.00003633217106314
+          ],
+          "primeCorrection": [
+            -0.000004251750270200531,
+            -0.0000037532816336932765
+          ],
+          "unsaturatedCorrection": [
+            0,
+            0
+          ],
+          "actualMinusModel": [
+            9.092367132952486e-11,
+            -1.6336047752557817e-11
+          ],
+          "realColumnAbsoluteSum": 0.000036608420811386326
+        },
+        {
+          "sector": "p<=a<2p",
+          "actual": [
+            0.000017257191135014684,
+            0.000021277252193822845
+          ],
+          "model": [
+            0.000017257204958822786,
+            0.000021277163041214535
+          ],
+          "density": [
+            0.000019724322319191522,
+            0.000023975615211059295
+          ],
+          "primeCorrection": [
+            -0.000002467117360368768,
+            -0.0000026984521698447503
+          ],
+          "unsaturatedCorrection": [
+            0,
+            0
+          ],
+          "actualMinusModel": [
+            -1.38238080888746e-11,
+            8.915260830148292e-11
+          ],
+          "realColumnAbsoluteSum": 0.000026195233631630287
+        }
+      ],
+      "joined": [
+        0.00005234396650852707,
+        0.000053856125287221835
+      ],
+      "joinedAbs": 0.00007510241714351636,
+      "joinedRealOverSeparatedRealAbs": 0.9999999999999998,
+      "certified": false,
+      "allOriginalMasksVerified": false,
+      "nonownerAllocationIncluded": false,
+      "countsTailPaid": false,
+      "seconds": 366.916776628932
+    }
+  ]
+}

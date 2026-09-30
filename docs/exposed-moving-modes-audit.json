@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "status": "Kernel-checked supporting results; joint floor and ceiling remain open. Focused and full warning-as-error Lean builds, whole-root declaration lint, compiled integrity/status, placeholder scan and the recorded terminal axiom checks passed. Presentation checks are recorded by the explorer and README tools.",
+  "scope": "The finite competing-mode sum has the explicit bound card(S.erase(-u))*C*(N+1)^d*(u/R)^(N+1) and tends to zero when 0<u<R and its moving coefficients satisfy the stated polynomial budget. Exposure supplies one gap for the actual canonical local divisor. The existing complete prime filter splits exactly into the selected term -m_rho*P_N(1/u), this geometric complement, and the unchanged pole/residual/reflected expression. Every multiplicity is retained; simplicity is not assumed. Moving-filter evaluation budgets are explicit hypotheses, not proved bounds for hard masks. Old fixed-filter error estimates are not silently extended to arbitrary moving filters. The canonical cofactor profile factors as one SIGNED density scalar times its signed weight sum. Its comparison bound retains exp(-N/32), weighted absolute variation, both exterior endpoints, and all short/lower-cutoff premises; literal variation and long cutoffs remain unpaid. The joined marked weight vanishes at total prime count <=2. Thus a unit or ordinary-prime WHOLE cofactor after ONE marked prime contributes exactly zero, even with phase and extra masks. This does not kill a singleton middle prime after TWO marks, nor complete the surviving composites. The literal masked spectral transfer and its polynomial coefficient budget remain OPEN. The selected resonance is not norm-bounded or discarded. Neither the cofinal -79/1000 floor nor 3/2 ceiling is proved; no RH or zero-exclusion claim follows.",
+  "competingModeGeometricBoundProved": true,
+  "selectedResonanceEstimated": false,
+  "literalMaskedSpectralTransferProved": false,
+  "literalProfileFactorizationProved": true,
+  "ordinaryPrimeWholeCofactorCorrectionZero": true,
+  "wholeCarrierComparisonErrorPaid": false,
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "zeroExclusionProved": false,
+  "terminalTheorems": {
+    "exposedMovingComplementBoundTheorem": "RiemannGaussian.ZetaExposedMovingModes.complement_bound",
+    "exposedMovingComplementDecayTheorem": "RiemannGaussian.ZetaExposedMovingModes.tendsto_complement",
+    "exposedMovingCanonicalGapTheorem": "RiemannGaussian.ZetaExposedMovingModes.exists_canonical_complement_bound",
+    "exposedMovingFilterSplitTheorem": "RiemannGaussian.ZetaExposedMovingModes.primeFilter_selected_split",
+    "exposedMovingFilterBoundTheorem": "RiemannGaussian.ZetaExposedMovingModes.primeFilterComplement_bound",
+    "exposedMovingFilterDecayTheorem": "RiemannGaussian.ZetaExposedMovingModes.tendsto_primeFilterComplement",
+    "exposedMovingFilterResonanceTheorem": "RiemannGaussian.ZetaExposedMovingModes.primeFilter_resonance_bound",
+    "rieszLiteralProfileFactorizationTheorem": "RiemannGaussian.ZetaRieszCofactorDiscrepancy.literal_profile_factorization",
+    "rieszLiteralProfileErrorTheorem": "RiemannGaussian.ZetaRieszCofactorDiscrepancy.literal_profile_error_exponential",
+    "rieszJoinedLowCountTheorem": "RiemannGaussian.ZetaRieszJoinedHeadCancellation.markedWeight_count_le_one",
+    "rieszJoinedPrimeHeadZeroTheorem": "RiemannGaussian.ZetaRieszJoinedHeadCancellation.ordinary_prime_correction_eq_zero",
+    "rieszJoinedCofactorHeadTheorem": "RiemannGaussian.ZetaRieszJoinedHeadCancellation.cofactor_head_completion"
+  },
+  "terminalAxioms": {
+    "RiemannGaussian.ZetaExposedMovingModes.complement_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaExposedMovingModes.tendsto_complement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaExposedMovingModes.exists_canonical_complement_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaExposedMovingModes.primeFilter_selected_split": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaExposedMovingModes.primeFilterComplement_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaExposedMovingModes.tendsto_primeFilterComplement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaExposedMovingModes.primeFilter_resonance_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCofactorDiscrepancy.literal_profile_factorization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszCofactorDiscrepancy.literal_profile_error_exponential": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJoinedHeadCancellation.markedWeight_count_le_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJoinedHeadCancellation.ordinary_prime_correction_eq_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiemannGaussian.ZetaRieszJoinedHeadCancellation.cofactor_head_completion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "sourceHashes": {
+    "RiemannGaussian/ZetaExposedMovingModes.lean": "4117441a295edf867ff0acdbb60fac95e42c115a637ba07641e0d78164bed336",
+    "RiemannGaussian/ZetaRieszJoinedHeadCancellation.lean": "9b2dbeda4bdca65156fffda744c78d959b1192f877261026be31027a6ab11e92",
+    "RiemannGaussian/ZetaRieszCofactorDiscrepancy.lean": "404a7b60908558b06f28ba3762ba3f8ead4a9073564e984217ff808876549f57",
+    "RiemannGaussian/ZetaExposedPrimeFilter.lean": "58a1174b3303be823157c26bad7b55ef7225163825dc399b380974ad5ee175d8"
+  },
+  "validation": {
+    "strictFocusedBuild": true,
+    "strictFullBuildJobs": 11387,
+    "declarationLintErrors": 0,
+    "declarationsLinted": 33852,
+    "generatedDeclarationsLinted": 24017,
+    "explicitTerminalAxiomChecks": 12,
+    "allowedAxiomsOnly": true,
+    "placeholderScanSources": 2849,
+    "exhaustiveNumericalCertificateRun": false
+  },
+  "publicationValidation": {
+    "strictFullBuildJobs": 11397,
+    "declarationsLinted": 34177,
+    "generatedDeclarationsLinted": 24230,
+    "declarationLintErrors": 0,
+    "linters": 14,
+    "explicitTerminalAxiomChecks": 102,
+    "allowedAxiomsOnly": true,
+    "compiledIntegrityAuditPassed": true,
+    "placeholderScanSources": 2859,
+    "exhaustiveNumericalCertificateRun": false,
+    "directWarningAsErrorModules": 16
+  }
+}

@@ -149,10 +149,10 @@ Work directly on both cofinal signed bounds for J+C, retaining all original weig
 
 ### Latest Update
 
-**The signed cofactor counting error has a power saving.** Lean proves a counting power saving for short Mobius cutoffs, retaining phase and explicit mask variation. The extension audit also proves that any gain created by changing an excluded prime weight reappears exactly in the comparison error. The signed main and whole-carrier bounds remain open.
-Prove a signed bound for the original masked sum, or for one fixed extension with its complete error paid. Both cofinal thresholds remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszCofactorDiscrepancy.lean#L637)
-· [Proof details](docs/zeta-riesz-cofactor-discrepancy.md).
+**Geometric component bounds and signed-main audits are checked.** Lean pays the complete unshifted contribution and separated shifted sectors while preserving the literal source. Supporting results control smooth-owner counting errors and rule out a squarefree zero-extension shortcut. The selected signed resonance remains; these estimates do not prove the joint floor or ceiling.
+Find an independent signed estimate for the retained central/resonant terms together with C_j. The cofinal -79/1000 floor and 3/2 ceiling remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszShiftedExterior.lean#L667)
+· [Proof details](docs/zeta-riesz-exposed-mode-coupling.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations
