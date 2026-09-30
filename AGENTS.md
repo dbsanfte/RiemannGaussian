@@ -1602,19 +1602,18 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
-The user's latest instruction on 2026-09-30 explicitly authorizes committing
-and pushing ALL accumulated local floor work. This supersedes the local-only
-holds below for this publication. Include all eight checked modules from
-`ZetaRieszPairChamberFloor` through `ZetaRieszFiveSignCoverFloor`, both optional
-probes and the matching documentation and evergreen assets. Run the complete
-publication gates, preserve the frozen numerical certificate, and record
-exact-SHA CI, Pages and published renderer checks. No subagents are authorized.
-The new default RH explorer endpoint is the whole joined floor with ALL
-originally unpaid five-prime labels removed from its main signed remainder;
-1/128 of the SAME original supply remains unspent. The numerical -79/1000
-floor, 3/2 ceiling and any zero exclusion remain OPEN. This publication
-authorizes the accumulated batch; after it is published, resume local floor
-iteration until the user requests another commit.
+The eight-module floor batch, from `ZetaRieszPairChamberFloor` through
+`ZetaRieszFiveSignCoverFloor`, is published at
+`03a0f31be04d2737a4b2811e2532c32e79a18c69`. Exact-SHA CI run
+`36736054868`, Pages, the published README and all three desktop/mobile
+explorers passed. The frozen numerical certificate is unchanged. The
+published default RH endpoint removes ALL originally unpaid five-prime
+labels from the signed remainder and retains 1/128 of the SAME supply.
+That publication request is complete. The user's latest instruction is to
+continue the floor locally, reusing the signed-period machinery at other
+counts. No further commits, subagents or wider gates are authorized by the
+completed request. Run focused Lean/root-import lint and axiom validation.
+The numerical -79/1000 floor, 3/2 ceiling and zero exclusion remain OPEN.
 
 The Gamma-joint batch above is now published at
 `dd411aa7372438e2e7b7f7e5acf5cb3d6c01c92e`; exact-SHA CI run
@@ -1823,6 +1822,272 @@ ceiling and zero exclusion remain OPEN. Do not restore common max(Q,V)
 roughness, clipped internal slabs, or an already-paid five-prime allowance.
 Continue locally with focused Lean/root-import axiom/lint validation only;
 no commits, subagents, wider checks or published endpoint changes.
+
+### Rejoined triple and six-prime payment (2026-09-30, local)
+
+`ZetaRieszSixSignCoverFloor.eventually_joined_floor_without_fives_or_sixes`
+pays both originally unpaid counts five and six from the SAME original
+supply, retaining 1/128. Both signs of an interior unpaid six-prime label
+are P-rough, because its old small-prime head is independent of sign.
+
+`ZetaRieszThreeSignCoverFloor.eventually_joined_floor_without_triples_fives_or_sixes`
+goes further. Rejoin the old balanced triple band BEFORE the complete-period
+estimate. `tripleRestSpent_eq` proves that no other spent class is restored;
+`nontriple_rest_filter_eq` retains exactly the original unpaid five/six sets.
+The balanced-triple half-supply norm debit is refunded, changing the
+available supply from 1/64 to 33/64 before the combined period/tie cost.
+The final SAME-supply reserve is 65/128. The old balanced-triple max credit
+is consumed by this recombination; all other favorable credits and the
+higher-count reflection/prefix/pair savings remain. This is a funded signed
+floor improvement, NOT source-norm decay of those separate counts.
+`remaining_count_cases` proves the main remainder consists only of count
+four or counts at least seven. Source-geometric errors still tend to zero.
+
+`ZetaRieszFourSupplyAudit` checks why count four needs different bookkeeping:
+the positive supply itself is rough, count four and negative in arithmetic
+coefficient. Some spent supply label has a strictly positive negative sign
+part, so the count-five opposite-head zero-intersection argument cannot be
+copied unchanged. Joining a remaining four-prime sum to that supply leaves
+the exact 63/128 supply debit after spending its retained 65/128 credit.
+This audit is not a general no-go for four-prime cancellation. Do not count
+the supply twice or claim the four-prime sector is already paid. The direct
+numerical floor and ceiling remain OPEN. Keep the public explorer endpoints
+unchanged during local iteration; regenerate assets only at publication.
+
+`ZetaRieszHighSignCoverFloor.eventually_joined_floor_without_fixed_counts`
+now pays the entire unpaid count band 7..55 jointly with counts 3,5,6.
+`exists_unpaid_high_floor` reuses the complete-period and close-owner
+machinery at every fixed count; `exists_unpaid_band_floor` joins the 49
+inequalities before charging ONE radial budget. Only count seven uses its
+original R-rough head. Counts 8..55 retain all cofactors; do not impose R
+roughness on them. All four grouped costs share the same 1/128 supply debit,
+so 65/128 remains. The positive real part of the entire paid band is also
+retained as one joint max credit. `high_rest_filter_eq` checks compatibility
+with the triple refund. The main remainder is now count four or count >=56;
+the existing reflection, prefix and pair savings remain on that remainder.
+Do not keep separate credits for already-paid count 7..55 labels.
+The finite-count constants and starting order are unevaluated. There is no
+growing-count estimate: the band >=56 remains open below the existing
+logarithmic count-tail threshold. This is still a funded signed floor
+improvement, NOT the numerical -79/1000 floor or a new zero exclusion.
+Keep local, focused validation and the four-supply overlap audit in force.
+
+`ZetaRieszFourPositiveFloor.eventually_joined_floor_with_negative_fours`
+also pays the entire positive-arithmetic-coefficient part of the unpaid
+four-prime sector. The original supply has strictly negative arithmetic
+coefficient, so its positive sign part is exactly zero; its intersection
+with a complete positive-sign period may be removed exactly. The original
+small-four threshold Q, allocation and phase remain literal. Five grouped
+payments share ONE Y/128 debit, retaining the SAME 65/128 credit. The
+remaining low-count labels have count four and nonpositive arithmetic
+coefficient; other remaining labels have count >=56. Positive arithmetic
+coefficient does not imply positive real contribution: the phase is kept.
+Focused warnings-as-errors compilation, root-import lint and all public
+transitive axiom checks pass. The numerical floor remains OPEN.
+
+`ZetaRieszFourSmallFloor.eventually_joined_floor_with_balanced_fours`
+further pays the negative-arithmetic four-prime labels containing a prime
+with `log p <= 2N/5`. `supply_prime_log_gt` derives the strict opposite
+inequality for EVERY original supply prime directly from its literal
+boxes. `smallPrime_mul_iff` and `roughPeriod_eq_filter` keep this condition
+on the fixed cofactor throughout the complete largest-prime period, so
+there is no clipping or overlap debit. The positive four-prime part and
+this negative part share one arbitrary period budget before joining the
+other fixed counts. The SAME 65/128 supply and the joint favorable max
+credit remain; only the already geometric boundary allowance is added.
+`remaining_effective_geometry` proves that nonzero low-count remainder
+labels have count four, negative arithmetic coefficient and ALL prime
+logs >2N/5. Other nonzero main labels have count >=56, below the original
+logarithmic tail payment. No independent numerical bound for either
+remaining sector, and no -79/1000 floor, has been proved. Continue locally;
+do not replace this supply budget by a percentage of the endgame margin.
+Both new four-prime modules pass focused warnings-as-errors compilation,
+the rebuilt root import, namespace lint and every public theorem's
+transitive axiom audit (standard logical axioms only).
+
+`ZetaRieszLowCountRefund.eventually_joined_floor_with_refunded_heads`
+now rejoins ALL former small-prime heads before the signed-period payment.
+The existing estimates are uniform in the old head thresholds, so use
+Q=P=V=R=0 and eta=0. `smallTriples_zero`, `smallFours_zero`,
+`smallPositiveFives_zero`, `radialHeads_zero` and `tailCondition_zero`
+check that only the logarithmic count tail remains charged. The carrier,
+physical prime support, allocation and phase do not change. The same
+original four-prime supply retains 63/64 before the combined period cost,
+and **125/128** after it, improving the previous 65/128. Former individual
+head max credits are consumed into ONE joint paid-band max credit; do not
+add them again. Every geometric boundary error remains in the theorem.
+`refunded_four_supply_debit` proves that joining the remaining fours back
+to this supply now leaves exactly **3/128** of it unpaid, rather than
+63/128. This is not a payment of that debit or a percentage of the numerical
+endgame margin. `remaining_effective_geometry` leaves negative-arithmetic
+count-four labels with every prime log >2N/5, or counts
+56 <= omega(n) < 8*Nat.clog 2 (N+1). No numerical bound for this remainder
+has been proved. The cofinal -79/1000 floor, ceiling and zero exclusion stay
+OPEN. Focused module/root warnings-as-errors, namespace lint, all thirteen
+public theorem axiom checks and whitespace/placeholder checks pass. Keep
+this local; publication assets/default endpoints remain unchanged.
+
+`ZetaRieszSharpSupplyFloor.eventually_joined_floor_with_arbitrary_debit`
+now keeps the actual charges, rather than rounding them to 3/128 of supply.
+The SAME supply width h and lower constant c are chosen before the period
+budget epsilon. For every fixed epsilon>0, the whole joined floor retains
+`(1 - epsilon - tailCost c N)*Y`, with all earlier joint favorable credits,
+reflection/prefix/pair savings and source-o(1) errors. Here
+`tailCost c N = 512*exp(4)/(c*(N+1)^4)`.
+`ZetaRieszLowCountRefund.radial_tail_sharp_cost` proves this tail payment
+for the literal selected labels using the same supply lower bound, and
+`tendsto_tailCost` proves its relative decay. The five grouped complete-period
+payments cost epsilon*Y jointly. The additive error and starting order may
+depend on epsilon; DO NOT substitute an N-dependent epsilon without a new
+uniform estimate. `joint_supply_debit` retains the exact unpaid
+`(tailCost c N+epsilon)*Y` when four-prime supply labels are rejoined.
+`eventually_relative_debit_lt` removes any fixed positive relative-charge
+threshold, but neither this nor tailCost->0 implies source-normalized
+smallness after multiplying by Y. No independent absolute floor for balanced
+negative fours/growing counts, no -79/1000 bound and no zero exclusion is
+proved. Do not continue spending slices on successively smaller fixed
+budget fractions: that bookkeeping is now exhausted. Further improvement
+must control the signed remainder jointly at the required source scale.
+Keep local focused validation; public endpoints and publication assets stay
+unchanged.
+Both affected modules and the rebuilt root import pass warnings-as-errors.
+Root-import namespace lint and all 21 public theorem transitive axiom
+checks pass (standard logical axioms only); JSON, placeholder and whitespace
+checks pass. No commits, subagents or wider publication gates were run.
+
+`ZetaRieszWholeFixedCountFloor.exists_core_band_floor` now applies signed
+largest-prime periods to the WHOLE literal core at every count 3..55,
+including all original four-prime supply labels. It joins both arithmetic
+signs and all 53 count classes before the bound. The full phase, allocation,
+physical masks and coprimality are unchanged. For every FIXED epsilon>0,
+the cost is `u^(N+1)*epsilon*periodUnits N y`, plus a source-normalized
+error tending to zero. Constants and starting orders can depend on epsilon;
+this is not an exponential source-scale payment.
+
+`ZetaRieszRejoinedSupplyFloor.eventually_joined_floor_with_growing_counts`
+integrates that bound into the same joinedPhysical floor. The entire
+four-prime supply is rejoined before estimating and survives only as the
+explicit debit `(tailCost c N+epsilon)*Y`; there is NO separate positive
+supply credit to reuse. The joint favorable fixed-band max credit,
+radial-tail max credit and the higher-count reflection/prefix/pair savings
+remain. `remaining_effective_geometry` proves that every nonzero main
+remainder is squarefree with
+`56 <= omega(n) < 8*Nat.clog 2 (N+1)`. The earlier alternate floor retaining
+a positive supply and balanced negative fours remains available; neither
+bound is asserted to dominate the other.
+
+Next work must control the growing-count signed contribution TOGETHER
+WITH this explicit debit at source scale, or prove an effective signed
+period rate that pays the debit absolutely. Removing fixed counts from
+the main support does not make their cost free, and polynomial relative
+savings do not imply the cofinal -79/1000 floor. That floor and the zero
+exclusion remain OPEN. Keep local, without commits, subagents or wider
+publication gates. Register the two new modules by family without changing
+the published explorer endpoint.
+Both new modules, their rebuilt root import and root-import namespace lint
+pass warnings-as-errors. All twelve public theorem transitive axiom audits
+pass with only the standard logical axioms. Family metadata is registered;
+the published endpoint and generated publication assets are unchanged.
+
+`ZetaRieszOwnerCurvatureFloor` now joins the literal selected binomial orders
+to the radial factorial amplitude before differentiating. Its exact
+`selectedAmplitude_ownerWeight` and `selectedAmplitude_eq_fibre` identify
+the complement of unpaidOrders with the original retained largest-prime
+allocation. Every selected order, including zero and one, remains.
+`selectedAmplitude_curvature_floor` bounds negative joint curvature by
+`-(N+1)*amplitude N T/(T*(T-b))`; no separate allocation derivative or
+square-root allocation variation is charged. `selected_prime_period_upper`
+and `selected_period_floor` are signed inequalities for literal finite
+ordinary primes with the explicit inverse-square endpoint/discrepancy
+cost retained. They do not yet change the whole joinedPhysical ledger.
+Next integrate the bound with the actual two-hinge response, then control
+its remaining signed cost across periods and the growing-count band at
+source scale. Do not call this local inequality the -79/1000 floor or a zero
+exclusion. Continue locally without commits, subagents or wider checks;
+register its family without changing published endpoints.
+The module and rebuilt root import pass warnings-as-errors. Root-import
+namespace lint and all nine public theorem transitive axiom checks pass,
+using only the standard logical axioms. Family metadata JSON, the new-module
+placeholder/axiom scan and tracked whitespace checks pass. No publication
+gates, commits or subagents were run.
+
+`ZetaRieszJointOwnerFibreFloor` applies the joined owner-factorial kernel to
+the LITERAL two-hinge coefficient, retaining arithmetic sign parts,
+coprimality, unique ownership, ordinary primes, phase and moving length.
+`owner_signedPart_fibre_floor` freezes only the cofactor response. Its
+variation uses the already-proved quarter slope and actual half-period
+pi/y, giving `2^k*pi/(4*y)` rather than the old `2^k` cost. At y>=54 this
+is at most 1/64 of that local cutoff charge. The radial budget keeps the
+same coarse 200000 curvature/endpoint coefficient, drops the separate
+allocation sqrt(N) term entirely, and replaces the cutoff coefficient
+400 by 25/4. DO NOT call this a 64-fold reduction of the whole floor deficit.
+`literal_signedPart_population_floor` transfers the signed cofactor
+population bound to the ORIGINAL allocation using one global geometric
+nonowner error. `signedPart_owner_difference_bound` retains the exact
+coefficient-sign indicator and works with arbitrary literal label masks;
+do not charge a nonowner error per cofactor. `eventually_core_signedPart_floor`
+discharges the moving length, owner-prime support and literal radial window.
+The remaining explicit population cost is
+`200000*responseConstant k*logMassConstant k/v +
+(25/4)*2^k*variationConstant k*v^(-1/2)` times the source-scaled radial
+unit, plus a geometric error. Count constants and eventual thresholds
+are not uniform in a growing k, and the upper cofactor-share cap still
+belongs to cofactors k v. This does not close the source-scale period
+debit, cover every growing-count geometry, or prove -79/1000.
+Continue local signed floor iteration without commits, subagents or wider
+checks. Published endpoints stay unchanged.
+
+The module and rebuilt root import pass warnings-as-errors. Root-import
+namespace lint and all ten public theorem transitive axiom checks pass
+with only `propext`, `Classical.choice` and `Quot.sound`. Family metadata
+JSON, the new-module placeholder/axiom scan and whitespace checks pass.
+
+The user now requires every subsequent slice to attack the GLOBAL gap
+concretely. A local constant improvement, fixed-count extension or
+polynomial relative debit alone does not meet that requirement. The
+target is the combined source-normalized growing-count contribution and
+period/tail debit in
+`ZetaRieszRejoinedSupplyFloor.eventually_joined_floor_with_growing_counts`.
+Retain the original signs, allocation, masks and phase while summing
+counts and complete periods. A useful next theorem must establish a
+global signed saving/payment at source scale, or a quantitative obstruction
+to the specific proposed global mechanism. Do not count a representation,
+an assumed numerical floor, or another positive polynomial majorant as
+closing this gap. The numerical `-79/1000-o(1)` floor remains OPEN.
+
+`ZetaRieszGlobalDebitAudit` now tests that GLOBAL debit directly.
+`periodUnits_saddle_lower` proves an actual complete-grid saddle lower
+bound. `polynomial_periodDebit_tendsto` rules out source-scale payment
+of ANY fixed inverse-polynomial charge of these shared period units.
+`combined_supplyDebit_lower` proves that the actual tail-plus-period
+debit is at least
+`(128*u*exp(1)/(3*(floor(2*y)+1)))*(2*u)^N/(N+1)^5` for every supply
+with the already-proved slab capacity, even with a moving nonnegative
+extra period allowance. The unknown capacity c cancels EXACTLY.
+`actual_combinedDebit_unbounded` discharges that capacity for the literal
+arithmetic supplies at the current cofinal orders: the displayed debit
+exceeds every fixed source-scale budget. No zero hypothesis is used.
+This does NOT show that the signed tail or joinedPhysical diverges, nor
+that compensation by the other signed terms is impossible. It closes the
+strategy of paying this global debit on its own by smaller constants or
+polynomial rates. Do not treat the logarithmic count tail as an independent
+source-o(1) payment. The next estimate must join its actual signed
+contribution to the growing-count remainder and retained low-count terms.
+Do not return to fixed-count extensions or another polynomial relative
+cost in place of that global signed estimate. Floor and exclusion remain
+OPEN. The user's subsequent publication request authorizes committing
+and pushing this entire accumulated local batch, with its required
+publication gates and refreshed explorer. It does not authorize subagents.
+Further proof iteration remains local until another publication request.
+
+The accumulated thirteen ordinary-root modules pass the warning-as-error
+build. The new GlobalDebitAudit root-import namespace lint and all eight
+public theorem transitive axiom checks pass with only `propext`,
+`Classical.choice` and `Quot.sound`; compiled project-status integrity
+also passes. Publication advances the main RH explorer to
+`ZetaRieszRejoinedSupplyFloor.eventually_joined_floor_with_growing_counts`,
+with its explicit unpaid debit. Keep the GlobalDebitAudit no-go as a
+separate supporting endpoint. The new endpoint is not the numerical floor.
 
 
 

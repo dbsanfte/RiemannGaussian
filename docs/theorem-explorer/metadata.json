@@ -4944,7 +4944,20 @@
     "ZetaRieszRoughFivePeriodFloor": "arithmetic",
     "ZetaRieszRoughFiveJoinedFloor": "arithmetic",
     "ZetaRieszTransitionFiveFloor": "arithmetic",
-    "ZetaRieszFiveSignCoverFloor": "arithmetic"
+    "ZetaRieszFiveSignCoverFloor": "arithmetic",
+    "ZetaRieszSixSignCoverFloor": "arithmetic",
+    "ZetaRieszThreeSignCoverFloor": "arithmetic",
+    "ZetaRieszFourSupplyAudit": "arithmetic",
+    "ZetaRieszHighSignCoverFloor": "arithmetic",
+    "ZetaRieszFourPositiveFloor": "arithmetic",
+    "ZetaRieszFourSmallFloor": "arithmetic",
+    "ZetaRieszLowCountRefund": "arithmetic",
+    "ZetaRieszSharpSupplyFloor": "arithmetic",
+    "ZetaRieszWholeFixedCountFloor": "arithmetic",
+    "ZetaRieszRejoinedSupplyFloor": "arithmetic",
+    "ZetaRieszOwnerCurvatureFloor": "arithmetic",
+    "ZetaRieszJointOwnerFibreFloor": "arithmetic",
+    "ZetaRieszGlobalDebitAudit": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {

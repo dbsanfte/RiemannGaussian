@@ -149,9 +149,9 @@ Bound joinedPhysical through its exact full-mass two-hinge core, retaining the s
 
 ### Latest Update
 
-**The whole unpaid five-prime sector is now paid in the joined floor.** Lean covers both arithmetic signs by complete prime periods, pays the owner and radial boundaries, and funds all new costs from the same original four-prime supply with 1/128 left unspent. Earlier credits and higher-count savings remain. The numerical -79/1000 floor and 3/2 ceiling are still open.
-Bound the remaining signed counts 3, 4, 6 and higher-count charge jointly; the five-prime payment is not a global deficit percentage.
-[Current checked endpoint](RiemannGaussian/ZetaRieszFiveSignCoverFloor.lean#L1119)
+**Counts 3–55 are joined; the remaining global debit is audited.** Lean covers the whole fixed-count band with both signs and every original mask, rejoining the same supply before spending it. A new obstruction proves that its positive tail/period debit grows at source scale despite any fixed polynomial saving. The signed carrier may still compensate it; the numerical floor and ceiling remain open.
+Prove joint cancellation across the retained signed tail, growing-count remainder and low-count period balance.
+[Current checked endpoint](RiemannGaussian/ZetaRieszRejoinedSupplyFloor.lean#L131)
 · [Proof details](docs/zeta-riesz-joined-physical.md).
 <!-- RH_DIRECTION:END -->
 

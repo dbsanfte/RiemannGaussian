@@ -64,22 +64,23 @@ def run(output, url=None, refresh_preview=False):
                     (campaign.SITE / 'preview.json').write_bytes(campaign.explorer.json_bytes(capture))
                 root = page.evaluate('PROOF_VIEW.endpoint.roots[0]')
                 data = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
-                assert data['id'] == 'RiemannGaussian.ZetaRieszFiveSignCoverFloor.eventually_joined_floor_without_fives'
+                assert data['id'] == 'RiemannGaussian.ZetaRieszRejoinedSupplyFloor.eventually_joined_floor_with_growing_counts'
                 assert all(term in data['statement'] for term in (
-                    'radiusCeiling', 'Tendsto', 'Eo := E \\ E5'))
+                    'radiusCeiling', 'Tendsto', 'tailCost'))
                 assert 'NontrivialZetaZero' not in data['statement']
-                # Lean elides the final inequality of this nested ledger.
-                # Check it in the exact declaration linked by the export.
+                # Check the full literal masks and unpaid debit in the exact
+                # declaration linked by the export, as well as its statement.
                 floor_source = (ROOT / data['source']['path']).read_text().splitlines()
                 floor_type = '\n'.join(floor_source[data['source']['line'] - 1:]).split(':= by', 1)[0]
                 assert all(term in floor_type for term in (
-                    'E.filter (fun n : ℕ => n.primeFactors.card = 5)',
-                    'let Eo := E\\E5', '(∑ n ∈ Ys, f n).re/128',
+                    '3 ≤ n.primeFactors.card ∧ n.primeFactors.card ≤ 55',
+                    'let H := S\\(D ∪ wholeTail S N 0)', '(tailCost c N+ε)*(∑ n ∈ Ys, f n).re',
                     'cutoffSaving', 'pairSaving', 'hy : 54 ≤ y',
                     'ZetaRieszGammaJoint.joinedPhysical'))
                 assert all(term in page.locator('#scope-text').inner_text() for term in (
-                    'ENTIRE original unpaid five-prime sector', '1/128 unspent',
-                    'SAME original positive four-prime supply', 'NOT been bounded numerically'))
+                    'WHOLE core band of counts 3 through 55', 'SAME supply',
+                    'no separate positive credit', 'NOT been bounded numerically',
+                    'even the tail debit alone is unbounded at source scale'))
                 node = page.locator(f'[data-node="{root}"]')
                 node.hover()
                 assert page.locator('#tooltip').is_visible()
@@ -135,6 +136,20 @@ def run(output, url=None, refresh_preview=False):
                     assert set(actual) == {
                         campaign.explorer.at_path(status, path) for path in endpoint['statusPaths']
                     }
+                    if endpoint['id'] == 'global-debit-obstruction':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 3
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        debit = next(n for n in roots if n['id'].endswith('.actual_combinedDebit_unbounded'))
+                        debit_source = (ROOT / debit['source']['path']).read_text().splitlines()
+                        debit_type = '\n'.join(debit_source[debit['source']['line'] - 1:]).split(':= by', 1)[0]
+                        assert all(term in debit_type for term in (
+                            '∀ b : ℝ', '∀ ε : ℝ, 0 ≤ ε', 'tailCost c N+ε',
+                            'radialSupply N h w', 'dyadicMomentOrder j'))
+                        assert all(term in page.locator('#scope-text').inner_text() for term in (
+                            'unknown capacity c cancels exactly',
+                            'does NOT prove divergence of the signed tail',
+                            'Both independent whole-carrier bounds remain open'))
                     if endpoint['id'] == 'compensated-physical-floor':
                         roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
                         assert len(roots) == 9
