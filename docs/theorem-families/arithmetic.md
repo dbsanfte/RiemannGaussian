@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**662 modules.** Source links open the definitions, hypotheses and proofs.
+**666 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -133,6 +133,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaQuadraticWindowSource](../../RiemannGaussian/ZetaQuadraticWindowSource.lean)
 - [ZetaQuarterKernelFourierBudget](../../RiemannGaussian/ZetaQuarterKernelFourierBudget.lean)
 - [ZetaRieszAdaptiveRateAudit](../../RiemannGaussian/ZetaRieszAdaptiveRateAudit.lean)
+- [ZetaRieszAllCountBoundary](../../RiemannGaussian/ZetaRieszAllCountBoundary.lean)
 - [ZetaRieszAllocationConcentration](../../RiemannGaussian/ZetaRieszAllocationConcentration.lean)
 - [ZetaRieszAllocationVariation](../../RiemannGaussian/ZetaRieszAllocationVariation.lean)
 - [ZetaRieszAllocationWeights](../../RiemannGaussian/ZetaRieszAllocationWeights.lean)
@@ -284,6 +285,9 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszFrequencyDecay](../../RiemannGaussian/ZetaRieszFrequencyDecay.lean)
 - [ZetaRieszFullCycleSupply](../../RiemannGaussian/ZetaRieszFullCycleSupply.lean)
 - [ZetaRieszFullParityPacket](../../RiemannGaussian/ZetaRieszFullParityPacket.lean)
+- [ZetaRieszGammaCollapse](../../RiemannGaussian/ZetaRieszGammaCollapse.lean)
+- [ZetaRieszGammaComplement](../../RiemannGaussian/ZetaRieszGammaComplement.lean)
+- [ZetaRieszGammaJoint](../../RiemannGaussian/ZetaRieszGammaJoint.lean)
 - [ZetaRieszGeneralCofactorTilt](../../RiemannGaussian/ZetaRieszGeneralCofactorTilt.lean)
 - [ZetaRieszGlobalCurvature](../../RiemannGaussian/ZetaRieszGlobalCurvature.lean)
 - [ZetaRieszGlobalHorizontal](../../RiemannGaussian/ZetaRieszGlobalHorizontal.lean)

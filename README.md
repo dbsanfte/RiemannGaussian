@@ -149,9 +149,9 @@ Work directly on both cofinal signed bounds for J+C, retaining all original weig
 
 ### Latest Update
 
-**The selected resonance has an exact Gamma/Riesz inversion.** Lean rewrites the full finite selected rectangle as a positive Gamma average of an explicit signed Riesz cofactor sum, retaining its Euler denominators, factorial orders and both Fourier phases. The exact joint ledger keeps every multiplicity and the signed complement. This preserves the source; it does not prove the joint floor or ceiling.
-Bound the correlated physical average relative to C_j. The negative prefactor makes the simple-zero floor an upper-bound problem for that average; both whole-sum inequalities remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszSelectedCofactor.lean#L281)
+**The whole joint carrier now recombines into full physical mass.** Lean pays the unsaturated selected rectangle by a fixed constant times (19/20)^N. The complete shifted response and the actual signed complement then recombine into full factorial mass on the matched band. The unmatched signed boundary remains explicit; no selected-mode-only transfer is assumed.
+Bound the full physical sum together with its unmatched signed boundary. Both independent endgame bounds remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszGammaJoint.lean#L296)
 · [Proof details](docs/zeta-riesz-selected-gamma.md).
 <!-- RH_DIRECTION:END -->
 

@@ -1606,13 +1606,68 @@ The accumulated batch was subsequently published at
 `d96fd09849a606c28cb51683d1aa6807b6a75cbd`; exact-SHA CI run
 `36671402701` and Pages deployment passed. Its publication request is
 complete. The user has now explicitly authorized committing and pushing
-the completed selected-resonance slice below after all publication gates.
-This authorization covers the three Lean modules, numerical probe, proof
-notes, family indexes and generated README/explorer update. Preserve the
-default source frontier and both open joint arithmetic bounds. Further
-research remains local after this publication until another request.
+the completed selected-resonance slice, which was published at
+`1ca9e93abc7b5956cefd705a404c7cb24473694e`. Exact-SHA CI run
+`36677567840`, Pages deployment, the published README renderer and all three
+published explorers passed. That publication request is complete. Preserve
+the default source frontier and both open joint arithmetic bounds. Further
+research remains local until another request.
 
-The latest explicit steer authorizes exact Laplace/Fourier inversion of
+The current continuation joins the Gamma rectangle with the signed rest.
+`ZetaRieszGammaCollapse` cancels the marked Gamma normalization exactly,
+proves the three-slot factorial sum equals the ORIGINAL finite rectangle
+mass, and puts the entire selected response inside one physical integral.
+No limiting rectangle or independent Gamma approximation is used.
+`ZetaRieszAllCountBoundary.physicalCofactor_eq_eulerBoundary` joins EVERY
+nonempty middle-prime subset into a single finite Euler-boundary response
+per least prime, including the exact empty-middle subtraction. The
+identity commutes with all signed Taylor orders, including zero; no
+infinite Euler product, Dirichlet completion or termwise norm is used.
+`ZetaRieszGammaComplement.selection_eq_continuous` identifies the CURRENT
+literal selection with those same three coordinates throughout fullBand;
+`selection_complement_eq` gives its exact factorial complement.
+On saturated composite cofactors the unshifted hinge is exactly zero,
+so `rest_physical_ledger` uses the same translated cutoff and retains the
+old allocation, phase, masks, and exact unmatched boundary. The
+`joint_matched_ledger` displays full physical mass plus that boundary and
+the selected response minus the MATCHED literal rectangle. The latter
+is a signed marked-prime measure discrepancy, NOT a paid error.
+It retains any allocation, Euler-power and support differences not
+already transferred; do not describe it as a bare prime-density error.
+
+Completing the marked Gamma orders gives mass one MINUS the marked
+order-zero boundary. On literal marked shares at least 1/3,
+`zeroOrder_literal_bound` pays this boundary by
+`(9/10)^N*zetaMoebiusLogMajorantMass(9/8)`, uniformly in height and finite
+masks; `tendsto_zeroOrder_literal` proves source-o(1). This does NOT
+remove low middle orders or pay a virtual-prime zero-order boundary.
+Do not infer virtual/literal transfer from Theta+(1-Theta)=1.
+The optional finite mask-model probe keeps its scope explicit: it is
+not the complete coreResponse, a zero-phase computation or an asymptotic
+certificate. Both joint floor/ceiling remain open. See the appended
+Gamma/count/complement audit in `docs/zeta-riesz-selected-gamma.md`.
+The user has now authorized committing and pushing this completed
+Gamma/count/complement slice. Publish the complete green local batch,
+including the following joint recombination theorem and its audits.
+No subagents are authorized. Record exact-SHA CI and Pages results.
+
+`ZetaRieszGammaJoint` now pays the UNSATURATED SELECTED boundary by
+`2*(19/20)^N*zetaMoebiusLogMajorantMass(257/256)` for `L>=11N/8`,
+uniformly in height. Unsaturation forces largest share below 1/3 and
+count at least four; the literal factorial rectangle then has an
+independent exponential tail. The actual `J+C` is source-equivalent to
+full factorial mass on `saturatedBand` plus the unchanged signed rest
+outside it (`joinedPhysical`). `tendsto_shifted_joint_sub_joined` keeps
+the COMPLETE shifted response under the original exposure hypotheses,
+with no simplicity assumption. `selected_discrepancy_eq_joint` shows
+that the old selected-to-literal discrepancy plus the remaining shifted
+channels is precisely this paid joint error. Do not claim separate decay
+of either channel, and do not equate selectedResponse alone to J. The
+unselected boundary is NOT paid by the rectangle-tail estimate. The
+independent signed floor/ceiling for the full physical sum plus that
+boundary remain open; the source frontier is unchanged.
+
+The preceding explicit steer authorized exact Laplace/Fourier inversion of
 the selected shifted resonance before seeking a signed inequality.
 `ZetaRieszSelectedGamma` proves the positive Gamma probability kernel and
 its exact complex transform. `ZetaRieszSelectedPhysical` proves genuine
@@ -1639,7 +1694,7 @@ The prior cofactor-discrepancy batch was published at
 `36622043917` passed. The later `d96fd09` publication includes the supporting
 estimates and negative audits below; it does not discharge the joint signed
 target. Both older publication requests are complete. The subsequent
-selected-resonance publication is authorized above. Do not use subagents.
+selected-resonance publication is also complete. Do not use subagents.
 
 The latest user instruction requires cancellation among the retained
 central/resonant terms and the signed complement `C_j`, with a bound for

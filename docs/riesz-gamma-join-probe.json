@@ -1,0 +1,224 @@
+{
+  "scope": "Uncertified finite mask-model diagnostic, not literal coreResponse. No selected-zero hypothesis or cofinal bound.",
+  "N": 320,
+  "u": "0.50005",
+  "length": "432.007316511891648963016042949532674275270291105969560298542355604150748448",
+  "count_cut": 55,
+  "prime_exponents": [
+    19,
+    61,
+    89,
+    107,
+    127,
+    521
+  ],
+  "rectangle_order_count": 153,
+  "all_count_euler_identity_error": "1.00611656857164170895457859616963029615748367595691617436249510149780105735e-75",
+  "joint_checks": [
+    {
+      "height": 0,
+      "mask_model_labels": [
+        {
+          "factor_exponents": [
+            61,
+            89,
+            107,
+            127,
+            521
+          ],
+          "masks": {
+            "count": true,
+            "core_window": true,
+            "physical_annulus": true,
+            "nondominant": true,
+            "physical_primes": true,
+            "allocation_cancelling_sector_absent": true
+          },
+          "rectangle_mass": "0.00147141899373861422393121416456675956417136145367139219865509393353505262289",
+          "complement_mass": "0.998528581006261385776068785835433240435828638546328607801344906066464947377",
+          "old_allocation": "0.260336399033320422528856993531928336968413019312921535705420741650440078555",
+          "wrong_owner_mass": "3.40896918144048461102580686153884376561832400731321542498324780513814073535e-59",
+          "mass_sum_error": "0.0",
+          "saturated_composite_cofactor": true,
+          "unshifted_cofactor_riesz": "0.0",
+          "translated_atom_error": "6.64107475798600513238462569202167813174888767892465272596980437381494308089e-348",
+          "translated_complement_error": "6.63130295444826645372620046528892805080692234364317167764360498995309586793e-348",
+          "marked_zero_order_mass": "3.06287375927659001447358023287465315836400975546315119073511264910104031551e-120",
+          "zero_order_bound": "2.98336124052205567031052881619444944946315004356514783176496508596509615925e-57",
+          "positive_marked_mass": "1.0"
+        },
+        {
+          "factor_exponents": [
+            19,
+            61,
+            89,
+            107,
+            127,
+            521
+          ],
+          "masks": {
+            "count": true,
+            "core_window": true,
+            "physical_annulus": true,
+            "nondominant": true,
+            "physical_primes": true,
+            "allocation_cancelling_sector_absent": true
+          },
+          "rectangle_mass": "0.54494113279362617073034723288051599843480021042875399188375671907500268022",
+          "complement_mass": "0.45505886720637382926965276711948400156519978957124600811624328092499731978",
+          "old_allocation": "0.142311570307977184505965790731487323937557542687635313808578610957191111627",
+          "wrong_owner_mass": "2.66784212994469347524622655752678207968566667436064978342518007415217858722e-60",
+          "mass_sum_error": "0.0",
+          "saturated_composite_cofactor": true,
+          "unshifted_cofactor_riesz": "0.0",
+          "translated_atom_error": "2.02182331420032217314765611955862516599492908386357445443774649923265998442e-353",
+          "translated_complement_error": "9.20048627051435038605731028678850090203121914806864388438701675924759826858e-354",
+          "marked_zero_order_mass": "2.09998654874565921544166246978695230076541768062194363413763647573006350677e-116",
+          "zero_order_bound": "2.98336124052205567031052881619444944946315004356514783176496508596509615925e-57",
+          "positive_marked_mass": "1.0"
+        }
+      ],
+      "scaled_selected_gamma": {
+        "real": "-3.68789994112306123363102160047374286401219876552510096417793871597637844217e-70",
+        "imag": "0.0"
+      },
+      "scaled_mask_model_rectangle": {
+        "real": "2.08761090650339282605078646342831980237619712125083318581813418047499762054e-276",
+        "imag": "0.0"
+      },
+      "scaled_mask_model_complement": {
+        "real": "1.41703654813833026006123952913674812699805010760541412838843072216589222024e-273",
+        "imag": "0.0"
+      },
+      "scaled_mask_model_core": {
+        "real": "1.41912415904483365288729031560017644680042630472666496157424885634636721786e-273",
+        "imag": "0.0"
+      },
+      "same_label_recombination_error": "0.0",
+      "selected_minus_mask_model": {
+        "real": "-3.68789994112306123363102160047374286401219876552510096417793871597637844217e-70",
+        "imag": "0.0"
+      },
+      "joint_defect_identity_error": "0.0",
+      "residual_scope": {
+        "allocation_complement": "exactly zero on each matched arithmetic label",
+        "least_prime_ordering": "retained in both finite expressions",
+        "owner": "wrong-owner mass recorded per label; no asymptotic inference",
+        "count": "Gamma cofactor includes all subsets; core model has at least three primes",
+        "physical_cutoff": "fixed prime universe is rough, but virtual marked variable is continuous",
+        "unshifted_hinge": "zero on saturated composite cofactors; checked per label",
+        "unseparated": [
+          "marked-prime measure and phase",
+          "radial and label masks",
+          "Euler proper powers",
+          "old allocation outside the matched labels"
+        ]
+      }
+    },
+    {
+      "height": 60,
+      "mask_model_labels": [
+        {
+          "factor_exponents": [
+            61,
+            89,
+            107,
+            127,
+            521
+          ],
+          "masks": {
+            "count": true,
+            "core_window": true,
+            "physical_annulus": true,
+            "nondominant": true,
+            "physical_primes": true,
+            "allocation_cancelling_sector_absent": true
+          },
+          "rectangle_mass": "0.00147141899373861422393121416456675956417136145367139219865509393353505262289",
+          "complement_mass": "0.998528581006261385776068785835433240435828638546328607801344906066464947377",
+          "old_allocation": "0.260336399033320422528856993531928336968413019312921535705420741650440078555",
+          "wrong_owner_mass": "3.40896918144048461102580686153884376561832400731321542498324780513814073535e-59",
+          "mass_sum_error": "0.0",
+          "saturated_composite_cofactor": true,
+          "unshifted_cofactor_riesz": "0.0",
+          "translated_atom_error": "6.39141324300413588868737362770356552890795231676160596583382451620104654719e-348",
+          "translated_complement_error": "6.38200879616154709003090090774978093281878960318563804809955624092217718402e-348",
+          "marked_zero_order_mass": "3.06287375927659001447358023287465315836400975546315119073511264910104031551e-120",
+          "zero_order_bound": "2.98336124052205567031052881619444944946315004356514783176496508596509615925e-57",
+          "positive_marked_mass": "1.0"
+        },
+        {
+          "factor_exponents": [
+            19,
+            61,
+            89,
+            107,
+            127,
+            521
+          ],
+          "masks": {
+            "count": true,
+            "core_window": true,
+            "physical_annulus": true,
+            "nondominant": true,
+            "physical_primes": true,
+            "allocation_cancelling_sector_absent": true
+          },
+          "rectangle_mass": "0.54494113279362617073034723288051599843480021042875399188375671907500268022",
+          "complement_mass": "0.45505886720637382926965276711948400156519978957124600811624328092499731978",
+          "old_allocation": "0.142311570307977184505965790731487323937557542687635313808578610957191111627",
+          "wrong_owner_mass": "2.66784212994469347524622655752678207968566667436064978342518007415217858722e-60",
+          "mass_sum_error": "0.0",
+          "saturated_composite_cofactor": true,
+          "unshifted_cofactor_riesz": "0.0",
+          "translated_atom_error": "2.01153430420747166423499843983024546271662273455425019398945206691669341475e-353",
+          "translated_complement_error": "9.15366521819413425527945340818408800719951831334645674436692738033654498094e-354",
+          "marked_zero_order_mass": "2.09998654874565921544166246978695230076541768062194363413763647573006350677e-116",
+          "zero_order_bound": "2.98336124052205567031052881619444944946315004356514783176496508596509615925e-57",
+          "positive_marked_mass": "1.0"
+        }
+      ],
+      "scaled_selected_gamma": {
+        "real": "1.17679440902546167962958646592184297772445435312080912288840812338199426742e-70",
+        "imag": "2.2791213310888806914868465848950843314847249194838863636829930113186473481e-70"
+      },
+      "scaled_mask_model_rectangle": {
+        "real": "-8.63487149457679377972002826439549694256833236743988546428753139823407906348e-278",
+        "imag": "-2.08630173712619966122819590921797665394349075520866420728770736630069878709e-276"
+      },
+      "scaled_mask_model_complement": {
+        "real": "-5.82498408586776037036410750729597533860164053272824346113456854536411999809e-275",
+        "imag": "-1.4158392082051924264434363652932187502676136495304935037746941201103249622e-273"
+      },
+      "scaled_mask_model_core": {
+        "real": "-5.83361895736233716414382753556037083554420886509568334659885607676235407715e-275",
+        "imag": "-1.41792550994231862610466456120243672692155714028570216798198182747662566099e-273"
+      },
+      "same_label_recombination_error": "0.0",
+      "selected_minus_mask_model": {
+        "real": "1.17679440902546167962958646592184297772445435312080912288840812338199426742e-70",
+        "imag": "2.2791213310888806914868465848950843314847249194838863636829930113186473481e-70"
+      },
+      "joint_defect_identity_error": "0.0",
+      "residual_scope": {
+        "allocation_complement": "exactly zero on each matched arithmetic label",
+        "least_prime_ordering": "retained in both finite expressions",
+        "owner": "wrong-owner mass recorded per label; no asymptotic inference",
+        "count": "Gamma cofactor includes all subsets; core model has at least three primes",
+        "physical_cutoff": "fixed prime universe is rough, but virtual marked variable is continuous",
+        "unshifted_hinge": "zero on saturated composite cofactors; checked per label",
+        "unseparated": [
+          "marked-prime measure and phase",
+          "radial and label masks",
+          "Euler proper powers",
+          "old allocation outside the matched labels"
+        ]
+      }
+    }
+  ],
+  "unpaid": [
+    "virtual-to-literal marked measure with the complementary orders and masks",
+    "virtual order-zero boundary (the matched literal boundary has a Lean geometric bound)",
+    "remaining shifted channels in a selected-mode-only decomposition"
+  ]
+}

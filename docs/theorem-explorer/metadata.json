@@ -4854,7 +4854,11 @@
     "ZetaRieszSelectedGamma": "arithmetic",
     "ZetaRieszSelectedPhysical": "arithmetic",
     "ZetaRieszSelectedCofactor": "arithmetic",
-    "ZetaRieszSmoothOwnerDiscrepancy": "arithmetic"
+    "ZetaRieszGammaCollapse": "arithmetic",
+    "ZetaRieszAllCountBoundary": "arithmetic",
+    "ZetaRieszGammaComplement": "arithmetic",
+    "ZetaRieszSmoothOwnerDiscrepancy": "arithmetic",
+    "ZetaRieszGammaJoint": "arithmetic"
   },
   "theorems": {
     "RiemannGaussian.ZetaGaussianSourceSupport.compensated_pos_at_ordinate": {
