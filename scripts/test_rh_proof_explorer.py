@@ -42,7 +42,7 @@ def run(output, url=None, refresh_preview=False):
                 page.evaluate('document.fonts.ready')
                 assert page.locator('h1').inner_text() == 'Current RH Proof Direction'
                 assert page.evaluate('PROOF_VIEW.endpoint.id') == meta['defaultEndpoint']
-                assert 'remains open' in page.locator('#scope-text').inner_text()
+                assert 'Both independent whole-carrier bounds remain open' in page.locator('#scope-text').inner_text()
                 assert page.locator('.zone-label').count() >= 2
                 roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i].id)')
                 assert roots == [expected]
@@ -64,10 +64,10 @@ def run(output, url=None, refresh_preview=False):
                     (campaign.SITE / 'preview.json').write_bytes(campaign.explorer.json_bytes(capture))
                 root = page.evaluate('PROOF_VIEW.endpoint.roots[0]')
                 data = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
-                assert data['id'] == 'RiemannGaussian.ZetaRieszDominantAllocation.tendsto_nondominant_exact_source'
+                assert data['id'] == 'RiemannGaussian.ZetaRieszJoinedPhysical.tendsto_joinedPhysical_exact_source'
                 assert all(term in data['statement'] for term in (
-                    'nondominantRemainder', 'retainedCost', 'analyticZetaZeroMultiplicity',
-                    'tau ≠ rho →', 'Real.exp (-(11 / 16))', 'Tendsto'))
+                    'joinedPhysical', 'retainedCost', 'analyticZetaZeroMultiplicity',
+                    'tau ≠ rho →', 'radiusCeiling', 'Tendsto'))
                 assert '-eta ≤' not in data['statement']
                 node = page.locator(f'[data-node="{root}"]')
                 node.hover()
@@ -96,8 +96,8 @@ def run(output, url=None, refresh_preview=False):
                 page.locator('#scope-more').click()
                 assert 'what remains to prove' in page.locator('#details').inner_text().lower()
                 assert 'every original mask' in page.locator('#details').inner_text()
-                assert '13/20' in page.locator('#details').inner_text()
-                assert 'independent cofinal real floor remains open' in page.locator('#details').inner_text()
+                assert 'two-hinge' in page.locator('#details').inner_text()
+                assert 'Both independent whole-carrier bounds remain open' in page.locator('#details').inner_text()
                 page.locator('#close-details').click()
                 page.locator('#endpoint').select_option('source-limit')
                 assert page.evaluate('PROOF_VIEW.endpoint.id') == 'source-limit'
@@ -124,6 +124,22 @@ def run(output, url=None, refresh_preview=False):
                     assert set(actual) == {
                         campaign.explorer.at_path(status, path) for path in endpoint['statusPaths']
                     }
+                    if endpoint['id'] == 'compensated-physical-floor':
+                        roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
+                        assert len(roots) == 9
+                        assert all('NontrivialZetaZero' not in n['statement'] for n in roots)
+                        floor = next(n for n in roots if n['id'].endswith('.eventually_joined_floor'))
+                        assert all(t in floor['statement'] for t in ('joinedPhysical', 'cutoffSaving', 'Tendsto'))
+                        # Lean's pretty printer elides the deeply nested
+                        # final sum. Check the retained supply in the exact
+                        # source declaration linked by the exported node.
+                        floor_source = (ROOT / floor['source']['path']).read_text().splitlines()
+                        floor_type = '\n'.join(floor_source[floor['source']['line'] - 1:]).split(':= by', 1)[0]
+                        assert '(∑ n ∈ Ys, f n).re/64' in floor_type
+                        saving = next(n for n in roots if n['id'].endswith('.cutoffSaving_ge_three_quarters'))
+                        assert all(t in saving['statement'] for t in ('3 / 4', 'TwoOuterInner', 'minFac', '= 7'))
+                        scope = page.locator('#scope-text').inner_text()
+                        assert all(t in scope for t in ('unspent 1/64', 'sector saving', 'NOT been bounded cofinally', 'No zero exclusion'))
                     if endpoint['id'] == 'full-positive-five-payment':
                         roots = page.evaluate('PROOF_VIEW.endpoint.roots.map(i => PROOF_DATA.nodes[i])')
                         assert len(roots) == 14

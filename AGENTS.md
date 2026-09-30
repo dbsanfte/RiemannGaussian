@@ -1602,6 +1602,31 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+The Gamma-joint batch above is now published at
+`dd411aa7372438e2e7b7f7e5acf5cb3d6c01c92e`; exact-SHA CI run
+`36689789816`, Pages and published desktop/mobile checks passed. That
+publication is complete. The user has now explicitly requested committing
+and pushing all accumulated joined-physical/cutoff-floor work. Run the
+ordinary publication gates for this authorized batch; no subagents.
+
+`ZetaRieszJoinedPhysical` gives the exact arbitrary-multiplicity source,
+conditional floor/ceiling contradictions, the unsaturated two-hinge full
+core and a geometric boundary payment. `ZetaRieszPhysicalCellFloor` only
+TRANSFERS an explicit unproved one-sided 1/10000 cell saving; it does not
+prove that saving. `ZetaRieszSaturatedCoreFloor` evaluates primary/secondary
+saturation and a signed prime prefix. `ZetaRieszJoinedPrefixFloor` spends
+these new savings only on the exact unpaid remainder of the strongest
+existing radial ledger. Preserve all prior payments, the optimized
+seven-prime charge and the unspent **1/64** supply. On its specified
+seven-prime short-cutoff geometry at least 75% of that sector's old charge
+is removed. This is NOT a global deficit percentage. The cofinal
+-79/1000 floor, 3/2 ceiling and any new zero exclusion remain open.
+Keep the actual-prime regression optional and outside ordinary CI. See
+`docs/zeta-riesz-joined-physical.md`. The explorer default now follows the
+exact source of joinedPhysical; its compensated-floor endpoint states the
+unevaluated aggregate and retains the original masks and phase.
+
+
 The accumulated batch was subsequently published at
 `d96fd09849a606c28cb51683d1aa6807b6a75cbd`; exact-SHA CI run
 `36671402701` and Pages deployment passed. Its publication request is

@@ -141,7 +141,7 @@ Lean source lines and proof audits.
 
 [![Current RH proof explorer: the checked active theorem chain, grouped by mathematical family](docs/rh-proof-explorer/preview.png)](https://dbsanfte.github.io/RiemannGaussian/rh-proof/)
 
-Work directly on both cofinal signed bounds for J+C, retaining all original weights and complementary counts. On 1/2<u<=0.50005, the independent -79/1000-o(1) floor excludes a simple exposed-zero source; the independent 3/2+o(1) ceiling excludes every higher multiplicity. Actual population payments and coefficient cancellation improve both comparisons. Both whole-sum bounds remain open.
+Bound joinedPhysical through its exact full-mass two-hinge core, retaining the signed phase and every original mask. On 1/2<u<=0.50005, prioritize the independent -79/1000-o(1) floor for simple exposed zeros; the 3/2+o(1) ceiling handles higher multiplicity. Both arithmetic bounds remain open.
 
 [Direction and remaining obstruction](docs/rh-proof-direction.md)
 · [Campaign metadata](docs/rh-proof-explorer/metadata.json)
@@ -149,10 +149,10 @@ Work directly on both cofinal signed bounds for J+C, retaining all original weig
 
 ### Latest Update
 
-**The whole joint carrier now recombines into full physical mass.** Lean pays the unsaturated selected rectangle by a fixed constant times (19/20)^N. The complete shifted response and the actual signed complement then recombine into full factorial mass on the matched band. The unmatched signed boundary remains explicit; no selected-mode-only transfer is assumed.
-Bound the full physical sum together with its unmatched signed boundary. Both independent endgame bounds remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszGammaJoint.lean#L296)
-· [Proof details](docs/zeta-riesz-selected-gamma.md).
+**The physical floor now retains all prior payments and adds exact cutoff savings.** Lean removes the saturation boundary, retains the exact multiplicity source, and incorporates new signed prefix cancellations into the whole estimate. A specified seven-prime sector saves at least 75% of its optimized adverse charge. The global -79/1000 floor and 3/2 ceiling remain open.
+Bound the remaining signed aggregate across unpaid geometries and phase periods; the sector saving is not a global deficit percentage.
+[Current checked endpoint](RiemannGaussian/ZetaRieszJoinedPrefixFloor.lean#L194)
+· [Proof details](docs/zeta-riesz-joined-physical.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

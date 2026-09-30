@@ -6,7 +6,7 @@
 
 Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identities and the remaining prime-tail problem.
 
-**666 modules.** Source links open the definitions, hypotheses and proofs.
+**670 modules.** Source links open the definitions, hypotheses and proofs.
 
 - [ChebyshevMoebiusCancellation](../../RiemannGaussian/ChebyshevMoebiusCancellation.lean)
 - [ChebyshevMoebiusQuotientCoupling](../../RiemannGaussian/ChebyshevMoebiusQuotientCoupling.lean)
@@ -307,6 +307,8 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszInterpolation](../../RiemannGaussian/ZetaRieszInterpolation.lean)
 - [ZetaRieszIntersectingWindow](../../RiemannGaussian/ZetaRieszIntersectingWindow.lean)
 - [ZetaRieszJoinedHeadCancellation](../../RiemannGaussian/ZetaRieszJoinedHeadCancellation.lean)
+- [ZetaRieszJoinedPhysical](../../RiemannGaussian/ZetaRieszJoinedPhysical.lean)
+- [ZetaRieszJoinedPrefixFloor](../../RiemannGaussian/ZetaRieszJoinedPrefixFloor.lean)
 - [ZetaRieszJointAllocationError](../../RiemannGaussian/ZetaRieszJointAllocationError.lean)
 - [ZetaRieszJointAllocationFloor](../../RiemannGaussian/ZetaRieszJointAllocationFloor.lean)
 - [ZetaRieszJointBoundary](../../RiemannGaussian/ZetaRieszJointBoundary.lean)
@@ -432,6 +434,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszPhaseBudget](../../RiemannGaussian/ZetaRieszPhaseBudget.lean)
 - [ZetaRieszPhaseDensityAudit](../../RiemannGaussian/ZetaRieszPhaseDensityAudit.lean)
 - [ZetaRieszPhysicalAnnulus](../../RiemannGaussian/ZetaRieszPhysicalAnnulus.lean)
+- [ZetaRieszPhysicalCellFloor](../../RiemannGaussian/ZetaRieszPhysicalCellFloor.lean)
 - [ZetaRieszPhysicalCompletion](../../RiemannGaussian/ZetaRieszPhysicalCompletion.lean)
 - [ZetaRieszPhysicalPrefixDeletion](../../RiemannGaussian/ZetaRieszPhysicalPrefixDeletion.lean)
 - [ZetaRieszPhysicalProductBounds](../../RiemannGaussian/ZetaRieszPhysicalProductBounds.lean)
@@ -514,6 +517,7 @@ Divisor correlations, squarefree Euler responses, prime sieves, hyperbola identi
 - [ZetaRieszSaddleCredit](../../RiemannGaussian/ZetaRieszSaddleCredit.lean)
 - [ZetaRieszSaddlePacking](../../RiemannGaussian/ZetaRieszSaddlePacking.lean)
 - [ZetaRieszSaddlePeriod](../../RiemannGaussian/ZetaRieszSaddlePeriod.lean)
+- [ZetaRieszSaturatedCoreFloor](../../RiemannGaussian/ZetaRieszSaturatedCoreFloor.lean)
 - [ZetaRieszSelectedCofactor](../../RiemannGaussian/ZetaRieszSelectedCofactor.lean)
 - [ZetaRieszSelectedGamma](../../RiemannGaussian/ZetaRieszSelectedGamma.lean)
 - [ZetaRieszSelectedPhysical](../../RiemannGaussian/ZetaRieszSelectedPhysical.lean)

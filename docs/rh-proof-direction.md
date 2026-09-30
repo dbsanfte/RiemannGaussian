@@ -1,7 +1,8 @@
 # Current RH proof direction
 
-The current arithmetic objective is the [direct cofinal joint floor](zeta-riesz-joint-floor.md)
-for `J+C`, with sufficient threshold `-79/1000-o(1)` on
+The current arithmetic objective is the [joined physical floor](zeta-riesz-joined-physical.md)
+for `joinedPhysical`, source-equivalent to the original `J+C`, with
+sufficient threshold `-79/1000-o(1)` on
 `1/2<u<=10001/20000`, initially for simple exposed zeros. Separate packet
 and complement decay is unnecessary. There is a separate multiplicity
 obligation: the actual source is `-m+m^2*c_ret(u)`, which is positive for
@@ -11,6 +12,23 @@ handles all multiplicities if the same sum has both that cofinal floor
 and an independent cofinal ceiling `3/2+o(1)`. Both whole-sum inequalities
 remain open; the ceiling is an additional arithmetic target, not a
 consequence of the floor or the source limit.
+
+The full squarefree core now has an exact unsaturated two-hinge formula,
+with the entire factorial kernel, original phase and `1-boundedShare`.
+Its difference from `joinedPhysical` is paid geometrically. No artificial
+factorial rectangle or unmatched saturation boundary remains in that main
+sum. The exposed-zero source retains every analytic multiplicity.
+
+The latest independent estimate incorporates exact active-cofactor and
+reflected-prefix cancellations into the strongest existing compensated
+floor. All earlier radial payments, low-count signed terms and the unspent
+1/64 supply survive. On a specified seven-prime short-cutoff sector, at
+least 75% of its already optimized adverse charge disappears. This is a
+sector saving, not a percentage of the global deficit. The remaining
+signed aggregate still has no cofinal numerical bound. A one-sided
+1/10000 power saving for the assembled physical cells would suffice, but
+the new transport theorem leaves that arithmetic premise explicitly open.
+
 The [signed-main bound](zeta-riesz-signed-density-main.md) now evaluates an
 explicit envelope for the original masked comparison main. Summing its
 Mobius signs gives uniform cutoff bounds and a whole-main estimate
