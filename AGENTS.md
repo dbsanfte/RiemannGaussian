@@ -1602,15 +1602,44 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+The accumulated batch was subsequently published at
+`d96fd09849a606c28cb51683d1aa6807b6a75cbd`; exact-SHA CI run
+`36671402701` and Pages deployment passed. Its publication request is
+complete. The user has now explicitly authorized committing and pushing
+the completed selected-resonance slice below after all publication gates.
+This authorization covers the three Lean modules, numerical probe, proof
+notes, family indexes and generated README/explorer update. Preserve the
+default source frontier and both open joint arithmetic bounds. Further
+research remains local after this publication until another request.
+
+The latest explicit steer authorizes exact Laplace/Fourier inversion of
+the selected shifted resonance before seeking a signed inequality.
+`ZetaRieszSelectedGamma` proves the positive Gamma probability kernel and
+its exact complex transform. `ZetaRieszSelectedPhysical` proves genuine
+product-space integrability and the fixed two-prime ordered-quotient atom's
+positive Gamma/tent formula, retaining its complex Euler coefficient.
+`ZetaRieszSelectedCofactor.selectedResponse_eq_gamma_average` applies the
+exact inversion to the whole finite selected rectangle. The finite subset
+expansion keeps the Euler denominators, least-prime ordering, all factorial
+orders, both frequencies and original prime set. Empty middle subsets
+vanish only because the literal complementary order is positive.
+`joint_real_eq` keeps arbitrary multiplicity and an unchanged signed
+complement. Its prefactor is NEGATIVE: a lower bound for the carrier needs
+an upper bound for this physical average relative to the complement.
+Gamma positivity is not positivity of the complex arithmetic sum. The
+optional probe checks the fixed atom and shows mixed signs across counts
+and heights on a small finite prime set; those heights are not asserted
+zeros and the probe is not a cofinal estimate. See
+`docs/zeta-riesz-selected-gamma.md`. No independent joint floor/ceiling,
+source decay, or new zero exclusion follows. Preserve every previous
+negative audit and do not norm-pay the selected mode.
+
 The prior cofactor-discrepancy batch was published at
 `190a26f44ca4d4d2b8e30168dae763e6c6d42464`; exact-SHA CI run
-`36622043917` passed. That publication request is complete. Continue local
-theorem work without subagents. The user has now explicitly authorized
-committing and pushing all accumulated progress. This publication includes
-the supporting estimates and negative audits below; it does not discharge
-the joint signed target. Earlier local-only publication instructions in
-this history are superseded for this batch. After publication, further
-research stays local until another publication request.
+`36622043917` passed. The later `d96fd09` publication includes the supporting
+estimates and negative audits below; it does not discharge the joint signed
+target. Both older publication requests are complete. The subsequent
+selected-resonance publication is authorized above. Do not use subagents.
 
 The latest user instruction requires cancellation among the retained
 central/resonant terms and the signed complement `C_j`, with a bound for

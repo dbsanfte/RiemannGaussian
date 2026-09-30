@@ -149,10 +149,10 @@ Work directly on both cofinal signed bounds for J+C, retaining all original weig
 
 ### Latest Update
 
-**Geometric component bounds and signed-main audits are checked.** Lean pays the complete unshifted contribution and separated shifted sectors while preserving the literal source. Supporting results control smooth-owner counting errors and rule out a squarefree zero-extension shortcut. The selected signed resonance remains; these estimates do not prove the joint floor or ceiling.
-Find an independent signed estimate for the retained central/resonant terms together with C_j. The cofinal -79/1000 floor and 3/2 ceiling remain open.
-[Current checked endpoint](RiemannGaussian/ZetaRieszShiftedExterior.lean#L667)
-· [Proof details](docs/zeta-riesz-exposed-mode-coupling.md).
+**The selected resonance has an exact Gamma/Riesz inversion.** Lean rewrites the full finite selected rectangle as a positive Gamma average of an explicit signed Riesz cofactor sum, retaining its Euler denominators, factorial orders and both Fourier phases. The exact joint ledger keeps every multiplicity and the signed complement. This preserves the source; it does not prove the joint floor or ceiling.
+Bound the correlated physical average relative to C_j. The negative prefactor makes the simple-zero floor an upper-bound problem for that average; both whole-sum inequalities remain open.
+[Current checked endpoint](RiemannGaussian/ZetaRieszSelectedCofactor.lean#L281)
+· [Proof details](docs/zeta-riesz-selected-gamma.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

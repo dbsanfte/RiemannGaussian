@@ -28,6 +28,18 @@ transfer, comparison-error payment and selected-resonance inequality remain
 open; no additional polynomial improvement of the growing main envelope
 is being pursued.
 
+The [selected-resonance inversion](zeta-riesz-selected-gamma.md) now
+evaluates the coupled Laplace/Fourier integral exactly. The complete finite
+selected rectangle is a positive Gamma average of an explicit signed
+Riesz cofactor sum, with the original Euler denominators, least-prime
+ordering, factorial orders, prime support and both frequencies retained.
+Each physical atom has compact translated support. Its exact joint ledger
+keeps arbitrary zero multiplicity and the unchanged complement `C_j`.
+The prefactor is negative, so a carrier floor needs an upper bound for
+the physical average relative to that complement. Gamma positivity does
+not supply that bound: the finite numerical probe has mixed signs across
+counts and heights. Both independent whole-sum inequalities remain open.
+
 The [coupled separated-mode estimate](zeta-riesz-exposed-mode-coupling.md)
 now pays genuine modes at distance at least `0.501` on `|xi|<=1/2000`,
 including the actual ordered cofactor, by `C_W*(N+2)^3*(0.9999)^N`.

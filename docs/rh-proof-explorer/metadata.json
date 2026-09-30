@@ -16,17 +16,17 @@
       "changeReason": "The multiplicity audit proves that exposure does not imply simplicity: multiple zeros have a positive retained source. The same carrier now has a checked two-sided conditional endgame, so the arithmetic campaign must pursue its floor and ceiling together."
     },
     "latestUpdate": {
-      "sequence": 135,
-      "id": "geometric-payments-and-signed-main-audits",
+      "sequence": 136,
+      "id": "selected-resonance-gamma-riesz-inversion",
       "kind": "theorem",
-      "title": "Geometric component bounds and signed-main audits are checked.",
-      "body": "Lean pays the complete unshifted contribution and separated shifted sectors while preserving the literal source. Supporting results control smooth-owner counting errors and rule out a squarefree zero-extension shortcut. The selected signed resonance remains; these estimates do not prove the joint floor or ceiling.",
-      "next": "Find an independent signed estimate for the retained central/resonant terms together with C_j. The cofinal -79/1000 floor and 3/2 ceiling remain open.",
+      "title": "The selected resonance has an exact Gamma/Riesz inversion.",
+      "body": "Lean rewrites the full finite selected rectangle as a positive Gamma average of an explicit signed Riesz cofactor sum, retaining its Euler denominators, factorial orders and both Fourier phases. The exact joint ledger keeps every multiplicity and the signed complement. This preserves the source; it does not prove the joint floor or ceiling.",
+      "next": "Bound the correlated physical average relative to C_j. The negative prefactor makes the simple-zero floor an upper-bound problem for that average; both whole-sum inequalities remain open.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
-        "rieszShiftedExteriorTransferTheorem"
+        "rieszSelectedGammaResponseTheorem"
       ],
-      "documentation": "docs/zeta-riesz-exposed-mode-coupling.md"
+      "documentation": "docs/zeta-riesz-selected-gamma.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
@@ -38,6 +38,23 @@
     ]
   },
   "endpoints": [
+    {
+      "id": "selected-gamma-inversion",
+      "label": "Selected resonance · exact Gamma/Riesz inversion",
+      "statusPaths": [
+        ["gaussianPhaseBandToolkit", "rieszSelectedGammaMassTheorem"],
+        ["gaussianPhaseBandToolkit", "rieszSelectedGammaLaplaceTheorem"],
+        ["gaussianPhaseBandToolkit", "rieszSelectedGammaIntegrabilityTheorem"],
+        ["gaussianPhaseBandToolkit", "rieszSelectedGammaTwoPrimeTheorem"],
+        ["gaussianPhaseBandToolkit", "rieszSelectedGammaTentBoundsTheorem"],
+        ["gaussianPhaseBandToolkit", "rieszSelectedGammaSupportTheorem"],
+        ["gaussianPhaseBandToolkit", "rieszSelectedGammaAtomTheorem"],
+        ["gaussianPhaseBandToolkit", "rieszSelectedGammaResponseTheorem"],
+        ["gaussianPhaseBandToolkit", "rieszSelectedGammaJointLedgerTheorem"]
+      ],
+      "scopePath": ["gaussianPhaseBandToolkit", "rieszSelectedGammaScope"],
+      "documentation": "docs/zeta-riesz-selected-gamma.md"
+    },
     {
       "id": "exposed-cofactor-coupling",
       "label": "Joint geometric payment \u00b7 global sector and shifted exteriors",

@@ -4851,6 +4851,9 @@
     "ZetaRieszGlobalHorizontal": "arithmetic",
     "ZetaRieszShiftedExterior": "arithmetic",
     "ZetaRieszSharpShifted": "arithmetic",
+    "ZetaRieszSelectedGamma": "arithmetic",
+    "ZetaRieszSelectedPhysical": "arithmetic",
+    "ZetaRieszSelectedCofactor": "arithmetic",
     "ZetaRieszSmoothOwnerDiscrepancy": "arithmetic"
   },
   "theorems": {
