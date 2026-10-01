@@ -1,0 +1,716 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error Lean build, root-import namespace lint and all 39 public transitive axiom checks; local unpublished slice",
+  "scope": "Independent signed bounds for paired ORIGINAL hinge incidences in the current retained central carrier. No numerical bound for their whole population cost or whole carrier floor.",
+  "sources": {
+    "RiemannGaussian/ZetaRieszHingePairCancellation.lean": "69582ceb7bf4990b915de9fa1a54c774de34755841729ca4e339ee66de46b330",
+    "scripts/probe_riesz_hinge_pair.py": "92d87c1c23b1f4ecce05d0f9bd9117d378925ef8b91437944865abd5a898cae6",
+    "RiemannGaussian/ZetaRieszCrossingOrbitCancellation.lean": "cc07c84078fb572debf5991bbd6382ee4d44dc803fd79e49e2132ef547bc3bf7",
+    "RiemannGaussian/ZetaRieszShortDivisorOrbits.lean": "504142ef0f49167f769508a9af95466707fa89d75ea4571d1183c199ce53d4ec",
+    "RiemannGaussian/ZetaRieszShortDivisorCancellation.lean": "2418e9bb3cbe94a26564dc0bc1dcc0058dc07f026b770919c35a214c566e218e",
+    "scripts/probe_riesz_canonical_joint.py": "8346f19a1af3cddad46dd462e7dcf4e2a3a63cec54c3a4dfc6889b25a01b823b",
+    "scripts/probe_riesz_lower_radial.py": "99966ea2922edc946e2fa34c422fbcdfa5f1e31dfed10c42000497b5152e3116"
+  },
+  "documentation": "docs/zeta-riesz-hinge-pair.md",
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszHingePairCancellation.norm_paired_crossing_le_half",
+    "RiemannGaussian.ZetaRieszHingePairCancellation.norm_paired_two_hinges_le_half",
+    "RiemannGaussian.ZetaRieszHingePairCancellation.re_source_scaled_correlated_literal_floor",
+    "RiemannGaussian.ZetaRieszHingePairCancellation.re_source_scaled_literal_family_floor",
+    "RiemannGaussian.ZetaRieszHingePairCancellation.re_source_scaled_literal_two_hinge_floor",
+    "RiemannGaussian.ZetaRieszHingePairCancellation.two_hinge_band_subset_retained",
+    "RiemannGaussian.ZetaRieszHingePairCancellation.polynomial_paid_incidence_not_failed_orbit",
+    "RiemannGaussian.ZetaRieszHingePairCancellation.middle_half_no_prime_shift"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszHingePairCancellation",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszHingePairCancellation"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszHingePairCancellation",
+      "linters": 14,
+      "publicTheoremCount": 39,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszHingePairCancellation.crossing_difference_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.crossing_difference_eq_of_first_full": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.two_hinge_cancellation_center": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.two_hinge_cancellation_le_half": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.two_hinge_band_strict_overlap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.weighted_orbit_eq_riesz_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.weighted_paired_crossing_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.weighted_paired_crossing_eq_of_first_full": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.norm_paired_two_hinges_le_half": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.clipped_prime_sum_eq_signed_moments": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.prime_paired_two_hinges_eq_signed_moments": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.re_prime_paired_two_hinges_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.re_source_scaled_literal_two_hinge_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.midpoint_displacement_le_half": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.two_ramps_sum_eq_overlap_width": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.norm_paired_crossing_le_half": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.prime_paired_crossing_sum_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.re_prime_paired_crossing_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.re_literal_paired_crossing_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.re_source_scaled_literal_paired_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.paired_family_sum_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.paired_profile_eq_joint_moments": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.re_paired_family_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.re_source_scaled_literal_family_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.correlated_paired_sum_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.re_correlated_paired_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.re_source_scaled_correlated_literal_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.middle_half_no_prime_shift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.paired_orbit_eq_union": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.paired_orbits_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.genuine_hinge_orbit_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.midpoint_half_strict_crossings": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.paired_crossing_subset_retained_of_overlap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.paired_crossing_subset_retained": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.two_hinge_band_subset_retained": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.failed_owner_orbit_outer_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.failed_owner_orbit_not_ownerGapRows": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.owner_ceiling_not_largeOwner": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingePairCancellation.polynomial_paid_incidence_not_failed_orbit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "logSha256": "d37ebbf48d51e818bf269a1b4f167a127b075dd324b550e1a97ce9a59d8360a7"
+    },
+    "pythonSyntax": {
+      "exitCode": 0
+    },
+    "priorBatchSourceHashesUnchanged": true,
+    "whitespaceCheck": {
+      "exitCode": 0
+    },
+    "widerPublicationChecksDeferred": true,
+    "exhaustiveNumericalCertificateRun": false
+  },
+  "proved": {
+    "exactOriginalEightIncidenceIdentity": true,
+    "bothRieszHingesRetained": true,
+    "saturatedMiddleHalfPriceHalfSeparateRampAllowance": true,
+    "adaptiveTwoHingeHalfWidthBoundWithoutSaturation": true,
+    "originalFactorialAllocationPhaseAndMasksRetained": true,
+    "actualCorrelatedPrimeEndpointsRetained": true,
+    "jointConstantAndLogMomentsRetainedBeforeAbsoluteValue": true,
+    "strictOverlapSubsetCurrentRetainedAntidiagonal": true,
+    "nonOverlapWithPriorCreditsUnderDisplayedPredicates": true,
+    "noNewScalarCarrier": true,
+    "noZeroHypothesisOrBilinearCancellationAssumption": true,
+    "genericFurtherPrimePairCannotStayInsideMiddleHalfSelector": true
+  },
+  "numericalProbe": {
+    "optionalOutsideBuildsAndCI": true,
+    "diagnosticOnly": true,
+    "phaseHeight": 54,
+    "phaseHeightIsNotAssertedToBeAZero": true,
+    "primeTesting": "SymPy nextprime/isprime; no Lean primality certificate in this probe",
+    "sourcePopulationMassCertified": false,
+    "cofinalStartingOrderCertified": false,
+    "signedProfileRatiosAreNotGlobalDeficitPercentages": true,
+    "underflowIsReportedAndNotCountedAsZeroCancellation": true,
+    "originalDyadicSamples": [
+      {
+        "dyadicIndex": 1,
+        "saturatedOriginalLabels": [
+          {
+            "dyadicIndex": 1,
+            "N": 640,
+            "countCeiling": 16,
+            "count": 12,
+            "originalCoreMask": "core",
+            "totalLogPerN": 2.0199999999999996,
+            "primePair": [
+              2,
+              3
+            ],
+            "neighbouringPrime": 5,
+            "crossing": 1.6550183016325946,
+            "crossingWidth": 1.791759469228055,
+            "remainingOverlapWidth": 0.1823215567939546,
+            "midpoint": 1.7005986908310777,
+            "requestedOffset": -0.25,
+            "signedFourIncidenceBlocks": [
+              -0.13674116759568733,
+              0.045580389198448756
+            ],
+            "joinedEightIncidences": -0.09116077839723857,
+            "exactFormula": -0.09116077839696635,
+            "separateBlockAllowance": 0.18232155679413609,
+            "jointAllowance": 0.09116077839723857,
+            "localAllowanceRatio": 0.5000000000009354,
+            "bothOriginalHingesRetained": true,
+            "bothFirstHingesFullySaturated": true,
+            "bothOriginalOwnerGapsFail": true,
+            "originalPhaseAndAllocationUnchanged": true,
+            "ownerAllocatedFraction": 0.0,
+            "sourceScaledLogAmplitude": -1297.2193556091047,
+            "floatingUnderflow": true,
+            "sourceScaledReal": null,
+            "sourcePopulationMassCertified": false,
+            "wholeFloorCertified": false
+          },
+          {
+            "dyadicIndex": 1,
+            "N": 640,
+            "countCeiling": 16,
+            "count": 12,
+            "originalCoreMask": "core",
+            "totalLogPerN": 2.02,
+            "primePair": [
+              2,
+              3
+            ],
+            "neighbouringPrime": 5,
+            "crossing": 1.7005986908310433,
+            "crossingWidth": 1.791759469228055,
+            "remainingOverlapWidth": 0.1823215567939546,
+            "midpoint": 1.7005986908310777,
+            "requestedOffset": 0.0,
+            "signedFourIncidenceBlocks": [
+              -0.09116077839712489,
+              0.09116077839689751
+            ],
+            "joinedEightIncidences": -2.2737367544323206e-13,
+            "exactFormula": -6.88338275267597e-14,
+            "separateBlockAllowance": 0.1823215567940224,
+            "jointAllowance": 2.2737367544323206e-13,
+            "localAllowanceRatio": 1.247102533794768e-12,
+            "bothOriginalHingesRetained": true,
+            "bothFirstHingesFullySaturated": true,
+            "bothOriginalOwnerGapsFail": true,
+            "originalPhaseAndAllocationUnchanged": true,
+            "ownerAllocatedFraction": 0.0,
+            "sourceScaledLogAmplitude": -1297.2193556091052,
+            "floatingUnderflow": true,
+            "sourceScaledReal": null,
+            "sourcePopulationMassCertified": false,
+            "wholeFloorCertified": false
+          },
+          {
+            "dyadicIndex": 1,
+            "N": 640,
+            "countCeiling": 16,
+            "count": 12,
+            "originalCoreMask": "core",
+            "totalLogPerN": 2.0199999999999996,
+            "primePair": [
+              2,
+              3
+            ],
+            "neighbouringPrime": 5,
+            "crossing": 1.746179080029492,
+            "crossingWidth": 1.791759469228055,
+            "remainingOverlapWidth": 0.1823215567939546,
+            "midpoint": 1.7005986908310777,
+            "requestedOffset": 0.25,
+            "signedFourIncidenceBlocks": [
+              -0.04558038919867613,
+              0.13674116759534627
+            ],
+            "joinedEightIncidences": 0.09116077839667014,
+            "exactFormula": 0.09116077839682868,
+            "separateBlockAllowance": 0.1823215567940224,
+            "jointAllowance": 0.09116077839667014,
+            "localAllowanceRatio": 0.49999999999812933,
+            "bothOriginalHingesRetained": true,
+            "bothFirstHingesFullySaturated": true,
+            "bothOriginalOwnerGapsFail": true,
+            "originalPhaseAndAllocationUnchanged": true,
+            "ownerAllocatedFraction": 0.0,
+            "sourceScaledLogAmplitude": -1297.2193556091047,
+            "floatingUnderflow": true,
+            "sourceScaledReal": null,
+            "sourcePopulationMassCertified": false,
+            "wholeFloorCertified": false
+          }
+        ],
+        "allBaseProfiles": [
+          {
+            "N": 640,
+            "count": 14,
+            "countCeiling": 16,
+            "geometry": "clustered prime logs",
+            "originalCoreMask": "core",
+            "allPrimesBeyondPolynomialCap": true,
+            "retainedBaseCount": 45,
+            "distinctOriginalIncidences": 360,
+            "cofactorCountHistogram": {
+              "11": 45
+            },
+            "signedProfile": 146.2500809909656,
+            "absoluteDisplacementProfile": 146.2500809909656,
+            "signedToAbsoluteRatio": 1.0,
+            "halfOverlapBudget": 292.5001619819129,
+            "originalPhaseReal": 0.29441970629276754,
+            "sourceScaledLogAmplitude": -1297.2193556091047,
+            "floatingUnderflow": true,
+            "originalPhaseAndAllocationUnchanged": true,
+            "actualAllBaseProfileSummed": true,
+            "diagnosticOnly": true,
+            "globalBudgetCertified": false,
+            "wholeFloorCertified": false
+          },
+          {
+            "N": 640,
+            "count": 14,
+            "countCeiling": 16,
+            "geometry": "spread prime logs",
+            "originalCoreMask": "core",
+            "allPrimesBeyondPolynomialCap": true,
+            "retainedBaseCount": 5,
+            "distinctOriginalIncidences": 40,
+            "cofactorCountHistogram": {
+              "11": 5
+            },
+            "signedProfile": -8.164356452102766,
+            "absoluteDisplacementProfile": 12.679664226890395,
+            "signedToAbsoluteRatio": 0.6438937424532275,
+            "halfOverlapBudget": 32.50001799799033,
+            "originalPhaseReal": 0.2944197063066744,
+            "sourceScaledLogAmplitude": -1297.2193556091052,
+            "floatingUnderflow": true,
+            "originalPhaseAndAllocationUnchanged": true,
+            "actualAllBaseProfileSummed": true,
+            "diagnosticOnly": true,
+            "globalBudgetCertified": false,
+            "wholeFloorCertified": false
+          }
+        ],
+        "closeOwnerOriginalLabel": {
+          "N": 640,
+          "count": 15,
+          "countCeiling": 16,
+          "originalCoreMask": "core",
+          "totalLogPerN": 1.9827542962253422,
+          "allPrimesBeyondPolynomialCap": true,
+          "signedFourIncidenceBlocks": [
+            -28.199172212982603,
+            28.19917221298249
+          ],
+          "joinedEightIncidences": -1.1368683772161603e-13,
+          "fullTwoHingePrediction": -2.2737367544323206e-13,
+          "oldSecondHingeOnlyPrediction": 28.19917221298249,
+          "remainingFirstHinge": 28.199172212982717,
+          "adaptiveCentre": 140.9958610649132,
+          "centreResidual": 8.526512829121202e-14,
+          "halfWidthBudget": 42.29875831947396,
+          "firstHingesFullySaturated": false,
+          "bothOriginalOwnerGapsFail": true,
+          "originalPhaseAndAllocationUnchanged": true,
+          "originalPhaseReal": 0.9087644817041376,
+          "sourceScaledLogAmplitude": -1273.3928583250818,
+          "floatingUnderflow": true,
+          "diagnosticOnly": true,
+          "sourcePopulationMassCertified": false,
+          "wholeFloorCertified": false
+        }
+      },
+      {
+        "dyadicIndex": 2,
+        "saturatedOriginalLabels": [
+          {
+            "dyadicIndex": 2,
+            "N": 1536,
+            "countCeiling": 32,
+            "count": 16,
+            "originalCoreMask": "core",
+            "totalLogPerN": 2.0200000000000005,
+            "primePair": [
+              2,
+              3
+            ],
+            "neighbouringPrime": 5,
+            "crossing": 1.6550183016324809,
+            "crossingWidth": 1.791759469228055,
+            "remainingOverlapWidth": 0.1823215567939546,
+            "midpoint": 1.7005986908310777,
+            "requestedOffset": -0.25,
+            "signedFourIncidenceBlocks": [
+              -0.13674116759557364,
+              0.04558038919913088
+            ],
+            "joinedEightIncidences": -0.09116077839644277,
+            "exactFormula": -0.09116077839719372,
+            "separateBlockAllowance": 0.18232155679470452,
+            "jointAllowance": 0.09116077839644277,
+            "localAllowanceRatio": 0.4999999999950116,
+            "bothOriginalHingesRetained": true,
+            "bothFirstHingesFullySaturated": true,
+            "bothOriginalOwnerGapsFail": true,
+            "originalPhaseAndAllocationUnchanged": true,
+            "ownerAllocatedFraction": 0.0,
+            "sourceScaledLogAmplitude": -3107.539683671204,
+            "floatingUnderflow": true,
+            "sourceScaledReal": null,
+            "sourcePopulationMassCertified": false,
+            "wholeFloorCertified": false
+          },
+          {
+            "dyadicIndex": 2,
+            "N": 1536,
+            "countCeiling": 32,
+            "count": 16,
+            "originalCoreMask": "core",
+            "totalLogPerN": 2.0200000000000005,
+            "primePair": [
+              2,
+              3
+            ],
+            "neighbouringPrime": 5,
+            "crossing": 1.7005986908307023,
+            "crossingWidth": 1.791759469228055,
+            "remainingOverlapWidth": 0.1823215567939546,
+            "midpoint": 1.7005986908310777,
+            "requestedOffset": 0.0,
+            "signedFourIncidenceBlocks": [
+              -0.09116077839735226,
+              0.09116077839735226
+            ],
+            "joinedEightIncidences": 0.0,
+            "exactFormula": -7.509548538564559e-13,
+            "separateBlockAllowance": 0.18232155679470452,
+            "jointAllowance": 0.0,
+            "localAllowanceRatio": 0.0,
+            "bothOriginalHingesRetained": true,
+            "bothFirstHingesFullySaturated": true,
+            "bothOriginalOwnerGapsFail": true,
+            "originalPhaseAndAllocationUnchanged": true,
+            "ownerAllocatedFraction": 0.0,
+            "sourceScaledLogAmplitude": -3107.539683671204,
+            "floatingUnderflow": true,
+            "sourceScaledReal": null,
+            "sourcePopulationMassCertified": false,
+            "wholeFloorCertified": false
+          },
+          {
+            "dyadicIndex": 2,
+            "N": 1536,
+            "countCeiling": 32,
+            "count": 16,
+            "originalCoreMask": "core",
+            "totalLogPerN": 2.02,
+            "primePair": [
+              2,
+              3
+            ],
+            "neighbouringPrime": 5,
+            "crossing": 1.7461790800284689,
+            "crossingWidth": 1.791759469228055,
+            "remainingOverlapWidth": 0.1823215567939546,
+            "midpoint": 1.7005986908310777,
+            "requestedOffset": 0.25,
+            "signedFourIncidenceBlocks": [
+              -0.045580389199585625,
+              0.1367411675951189
+            ],
+            "joinedEightIncidences": 0.09116077839553327,
+            "exactFormula": 0.09116077839478232,
+            "separateBlockAllowance": 0.18232155679470452,
+            "jointAllowance": 0.09116077839553327,
+            "localAllowanceRatio": 0.4999999999900232,
+            "bothOriginalHingesRetained": true,
+            "bothFirstHingesFullySaturated": true,
+            "bothOriginalOwnerGapsFail": true,
+            "originalPhaseAndAllocationUnchanged": true,
+            "ownerAllocatedFraction": 0.0,
+            "sourceScaledLogAmplitude": -3107.539683671205,
+            "floatingUnderflow": true,
+            "sourceScaledReal": null,
+            "sourcePopulationMassCertified": false,
+            "wholeFloorCertified": false
+          }
+        ],
+        "allBaseProfiles": [
+          {
+            "N": 1536,
+            "count": 28,
+            "countCeiling": 32,
+            "geometry": "clustered prime logs",
+            "originalCoreMask": "core",
+            "allPrimesBeyondPolynomialCap": true,
+            "retainedBaseCount": 42504,
+            "distinctOriginalIncidences": 340032,
+            "cofactorCountHistogram": {
+              "22": 42504
+            },
+            "signedProfile": -159389.9993528682,
+            "absoluteDisplacementProfile": 159389.99935286824,
+            "signedToAbsoluteRatio": 0.9999999999999998,
+            "halfOverlapBudget": 318779.99870578985,
+            "originalPhaseReal": 0.8580163660897615,
+            "sourceScaledLogAmplitude": -3107.539683671205,
+            "floatingUnderflow": true,
+            "originalPhaseAndAllocationUnchanged": true,
+            "actualAllBaseProfileSummed": true,
+            "diagnosticOnly": true,
+            "globalBudgetCertified": false,
+            "wholeFloorCertified": false
+          },
+          {
+            "N": 1536,
+            "count": 28,
+            "countCeiling": 32,
+            "geometry": "spread prime logs",
+            "originalCoreMask": "core",
+            "allPrimesBeyondPolynomialCap": true,
+            "retainedBaseCount": 3842,
+            "distinctOriginalIncidences": 30736,
+            "cofactorCountHistogram": {
+              "23": 104,
+              "22": 1837,
+              "21": 1822,
+              "20": 79
+            },
+            "signedProfile": -555.7283499155359,
+            "absoluteDisplacementProfile": 14329.715631533094,
+            "signedToAbsoluteRatio": 0.03878153371673574,
+            "halfOverlapBudget": 28814.999883014414,
+            "originalPhaseReal": 0.8580163661047099,
+            "sourceScaledLogAmplitude": -3107.539683671204,
+            "floatingUnderflow": true,
+            "originalPhaseAndAllocationUnchanged": true,
+            "actualAllBaseProfileSummed": true,
+            "diagnosticOnly": true,
+            "globalBudgetCertified": false,
+            "wholeFloorCertified": false
+          }
+        ],
+        "closeOwnerOriginalLabel": {
+          "N": 1536,
+          "count": 28,
+          "countCeiling": 32,
+          "originalCoreMask": "core",
+          "totalLogPerN": 1.9936099743890567,
+          "allPrimesBeyondPolynomialCap": true,
+          "signedFourIncidenceBlocks": [
+            36.454582388827475,
+            -36.454582388828385
+          ],
+          "joinedEightIncidences": -9.094947017729282e-13,
+          "fullTwoHingePrediction": 1.2505552149377763e-12,
+          "oldSecondHingeOnlyPrediction": -36.454582388827646,
+          "remainingFirstHinge": 36.4545823888289,
+          "adaptiveCentre": 182.27291194414232,
+          "centreResidual": 3.979039320256561e-13,
+          "halfWidthBudget": 54.6818735832427,
+          "firstHingesFullySaturated": false,
+          "bothOriginalOwnerGapsFail": true,
+          "originalPhaseAndAllocationUnchanged": true,
+          "originalPhaseReal": -0.967310718616863,
+          "sourceScaledLogAmplitude": -3066.949319546929,
+          "floatingUnderflow": true,
+          "diagnosticOnly": true,
+          "sourcePopulationMassCertified": false,
+          "wholeFloorCertified": false
+        }
+      }
+    ],
+    "kernelOnlyOtherHingeRegression": {
+      "kernelOnly": true,
+      "notAnOriginalCoreSample": true,
+      "individualBlocks": [
+        0.5787263943455203,
+        -0.16705408466316518
+      ],
+      "joined": 0.41167230968235513,
+      "secondHingeOnlyPrediction": 0.0,
+      "retainedFirstHinge": 0.4116723096823556,
+      "falseMidpointCancellationRejected": true
+    },
+    "kernelOnlyJoinedClippedMomentRegression": {
+      "kernelOnly": true,
+      "notAnOriginalCoreSample": true,
+      "clippedPrimeSubset": [
+        13,
+        17,
+        19
+      ],
+      "jointSignedMomentReal": -0.33781537012578156,
+      "directReal": -0.33781537012578433,
+      "equalityResidual": 4.866020253582432e-15,
+      "separatelyAbsoluteMomentCost": 89.60248884016033,
+      "wholeFloorCertified": false
+    }
+  },
+  "unpaid": [
+    "Source-scaled total price of the original signed prime/cofactor moments and their actual endpoint boundaries",
+    "Unselected genuine-hinge geometries and other surviving original signed rows",
+    "Independent cofinal whole -79/1000 floor, 3/2 ceiling and finite starting order"
+  ],
+  "claims": {
+    "provedSelectedSectorSignedFloor": true,
+    "wholeFloor": false,
+    "wholeCeiling": false,
+    "newZeroFreeRegion": false,
+    "riemannHypothesis": false,
+    "sourceNormalizedPopulationDecay": false,
+    "certifiedFractionOfWholeDeficit": false,
+    "historicalNoveltyClaim": false
+  }
+}

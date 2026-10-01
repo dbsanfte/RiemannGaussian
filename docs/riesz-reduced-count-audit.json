@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error Lean build, ordinary-root-plus-module namespace lint and every public transitive axiom check; local unpublished slice",
+  "scope": "ONE independent global source-scale payment for all retained original counts satisfying 256*omega(n)>=K_j; all share geometries/radial periods/phases/partial incidences retained. Direct floor-ledger inequalities. Remaining signed aggregate and whole floor open.",
+  "documentation": "docs/zeta-riesz-reduced-count.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszReducedCountPayment.lean": "97ba42d8ead3b66dc29d2b723ae33738ead25206801322fe299eab51813facf6",
+    "scripts/probe_riesz_reduced_count.py": "a17d2ce78beb5e565479928d9005bb424fec6e12a2dcabeec523d30944617d33",
+    "RiemannGaussian/ZetaRieszPolynomialOwnerPayment.lean": "4a5025700585825005ac4535e02f597bd5db61f4bf56217d8161d64a81ce3661",
+    "RiemannGaussian/ZetaRieszHingeAllocationPayment.lean": "6ddd5d5d09e1e24d3450f25df887132b9597613db9e56ad00db1b599905fe2a4",
+    "RiemannGaussian/ZetaRieszPrimeCountMass.lean": "fc44632545e8393adff73f54d3963708e1851c27546807abde9ed3289b1232e2",
+    "RiemannGaussian/ZetaRieszPrimeCountFrequency.lean": "c856a942291e0524d337b24d87b7abe13448aa363c1d614b79f663950163b190"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszReducedCountPayment.reduced_count_power_saving",
+    "RiemannGaussian.ZetaRieszReducedCountPayment.reducedCountRate_bounds",
+    "RiemannGaussian.ZetaRieszReducedCountPayment.eventually_literal_reducedCount_bound",
+    "RiemannGaussian.ZetaRieszReducedCountPayment.eventually_central_reducedCount_crop_bound",
+    "RiemannGaussian.ZetaRieszReducedCountPayment.eventually_remaining_reducedCount_bounds",
+    "RiemannGaussian.ZetaRieszReducedCountPayment.retained_hinge_count_bounds",
+    "RiemannGaussian.ZetaRieszReducedCountPayment.tendsto_combined_reducedCount_error"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszReducedCountPayment",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszReducedCountPayment"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszReducedCountPayment",
+      "linters": 14,
+      "publicTheoremCount": 15,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszReducedCountPayment.countRoot_pow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszReducedCountPayment.reduced_count_power_saving": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszReducedCountPayment.reducedCountRate_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszReducedCountPayment.reduced_count_mass_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszReducedCountPayment.norm_partial_sum_mass_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszReducedCountPayment.norm_reduced_count_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszReducedCountPayment.paidCountRate_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszReducedCountPayment.eventually_reduced_count_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszReducedCountPayment.tendsto_reducedCountBudget": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszReducedCountPayment.eventually_literal_reducedCount_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszReducedCountPayment.eventually_central_reducedCount_crop_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszReducedCountPayment.eventually_remaining_reducedCount_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszReducedCountPayment.count_lt_after_crop": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszReducedCountPayment.retained_hinge_count_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszReducedCountPayment.tendsto_combined_reducedCount_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "optionalRegressions": {
+      "exitCode": 0,
+      "dyadicIndices": [
+        1,
+        2
+      ],
+      "outsideBuildsAndCI": true
+    },
+    "widerPublicationChecks": "deferred by user; public endpoints unchanged"
+  },
+  "numericalDiagnostics": {
+    "1": {
+      "diagnosticOnly": true,
+      "rates": {
+        "radiusCeiling": 0.50005,
+        "summableTilt": 0.499999,
+        "countRoot": 1.0002368429718393,
+        "rawGeometricRate": 0.9998651891611607,
+        "paidGeometricRate": 0.9999325945805804,
+        "rawLogRate": -0.00013481992663716026,
+        "paidLogRate": -6.740769126700455e-05,
+        "crudeWholeSourceGrowthLogRate": 9.999500033329732e-05,
+        "comparisonMassExponent": 1.000001,
+        "countDivisor": 256,
+        "allShareGeometriesRetained": true,
+        "eventualStartEvaluated": false,
+        "fullComparisonMassEvaluated": false
+      },
+      "schedule": [
+        {
+          "j": 2,
+          "N": 1536,
+          "K": 32,
+          "firstPaidCount": 1,
+          "largestStillRetainedCount": 0,
+          "provedCountPowerLogSaving": 0.363747730898609,
+          "actualCountPowerLogSaving": 3.4657359027997265,
+          "finiteOrderPaymentCertified": false
+        },
+        {
+          "j": 5,
+          "N": 18432,
+          "K": 256,
+          "firstPaidCount": 1,
+          "largestStillRetainedCount": 0,
+          "provedCountPowerLogSaving": 4.364972770783308,
+          "actualCountPowerLogSaving": 5.545177444479562,
+          "finiteOrderPaymentCertified": false
+        },
+        {
+          "j": 8,
+          "N": 196608,
+          "K": 2048,
+          "firstPaidCount": 8,
+          "largestStillRetainedCount": 7,
+          "provedCountPowerLogSaving": 46.55970955502195,
+          "actualCountPowerLogSaving": 60.99695188927519,
+          "finiteOrderPaymentCertified": false
+        },
+        {
+          "j": 16,
+          "N": 83886080,
+          "K": 524288,
+          "firstPaidCount": 2048,
+          "largestStillRetainedCount": 2047,
+          "provedCountPowerLogSaving": 19865.47607680937,
+          "actualCountPowerLogSaving": 26971.74308994859,
+          "finiteOrderPaymentCertified": false
+        },
+        {
+          "j": 64,
+          "N": 80280230208783968632832,
+          "K": 147573952589676412928,
+          "firstPaidCount": 576460752303423488,
+          "largestStillRetainedCount": 576460752303423487,
+          "provedCountPowerLogSaving": 1.9011557014624436e+19,
+          "actualCountPowerLogSaving": 2.677133372589306e+19,
+          "finiteOrderPaymentCertified": false
+        }
+      ],
+      "literalHingeSample": {
+        "N": 640,
+        "count": 15,
+        "countCeiling": 16,
+        "originalCoreMask": "core",
+        "totalLogPerN": 1.9827542962253422,
+        "ownerLogPerN": 0.13218361974835613,
+        "originalOwnerShare": 0.06666666666666667,
+        "originalCofactorShare": 0.9333333333333333,
+        "lengthPerN": 1.3658974040663467,
+        "lengthLowerPrecondition": false,
+        "genuineFailedGapHinge": true,
+        "originalPrimesAllSixthBounded": true,
+        "logOriginalOwnerAllocation": -620.27692983127,
+        "provedLogAllocationUpper": -80.0,
+        "pointwiseAllocationEstimateApplies": true,
+        "maskPreservingPhysicalRegression": {
+          "N": 640,
+          "count": 15,
+          "countCeiling": 16,
+          "originalCoreMask": "core",
+          "totalLogPerN": 1.9827542962253422,
+          "allPrimesBeyondPolynomialCap": true,
+          "signedFourIncidenceBlocks": [
+            -28.199172212982603,
+            28.19917221298249
+          ],
+          "joinedEightIncidences": -1.1368683772161603e-13,
+          "fullTwoHingePrediction": -2.2737367544323206e-13,
+          "oldSecondHingeOnlyPrediction": 28.19917221298249,
+          "remainingFirstHinge": 28.199172212982717,
+          "adaptiveCentre": 140.9958610649132,
+          "centreResidual": 8.526512829121202e-14,
+          "halfWidthBudget": 42.29875831947396,
+          "firstHingesFullySaturated": false,
+          "bothOriginalOwnerGapsFail": true,
+          "originalPhaseAndAllocationUnchanged": true,
+          "originalPhaseReal": 0.9087644817041376,
+          "sourceScaledLogAmplitude": -1273.3928583250818,
+          "floatingUnderflow": true,
+          "diagnosticOnly": true,
+          "sourcePopulationMassCertified": false,
+          "wholeFloorCertified": false
+        },
+        "sourcePopulationMassCertified": false
+      },
+      "literalSampleSatisfiesCountCondition": true,
+      "exactOriginalMasksAndBothHingesRetained": true,
+      "geometricThresholdEvaluated": false,
+      "noZetaZeroHypothesisUsed": true,
+      "remainingLowCountSignedSumBounded": false,
+      "wholeFloorCertified": false
+    },
+    "2": {
+      "diagnosticOnly": true,
+      "rates": {
+        "radiusCeiling": 0.50005,
+        "summableTilt": 0.499999,
+        "countRoot": 1.0002368429718393,
+        "rawGeometricRate": 0.9998651891611607,
+        "paidGeometricRate": 0.9999325945805804,
+        "rawLogRate": -0.00013481992663716026,
+        "paidLogRate": -6.740769126700455e-05,
+        "crudeWholeSourceGrowthLogRate": 9.999500033329732e-05,
+        "comparisonMassExponent": 1.000001,
+        "countDivisor": 256,
+        "allShareGeometriesRetained": true,
+        "eventualStartEvaluated": false,
+        "fullComparisonMassEvaluated": false
+      },
+      "schedule": [
+        {
+          "j": 2,
+          "N": 1536,
+          "K": 32,
+          "firstPaidCount": 1,
+          "largestStillRetainedCount": 0,
+          "provedCountPowerLogSaving": 0.363747730898609,
+          "actualCountPowerLogSaving": 3.4657359027997265,
+          "finiteOrderPaymentCertified": false
+        },
+        {
+          "j": 5,
+          "N": 18432,
+          "K": 256,
+          "firstPaidCount": 1,
+          "largestStillRetainedCount": 0,
+          "provedCountPowerLogSaving": 4.364972770783308,
+          "actualCountPowerLogSaving": 5.545177444479562,
+          "finiteOrderPaymentCertified": false
+        },
+        {
+          "j": 8,
+          "N": 196608,
+          "K": 2048,
+          "firstPaidCount": 8,
+          "largestStillRetainedCount": 7,
+          "provedCountPowerLogSaving": 46.55970955502195,
+          "actualCountPowerLogSaving": 60.99695188927519,
+          "finiteOrderPaymentCertified": false
+        },
+        {
+          "j": 16,
+          "N": 83886080,
+          "K": 524288,
+          "firstPaidCount": 2048,
+          "largestStillRetainedCount": 2047,
+          "provedCountPowerLogSaving": 19865.47607680937,
+          "actualCountPowerLogSaving": 26971.74308994859,
+          "finiteOrderPaymentCertified": false
+        },
+        {
+          "j": 64,
+          "N": 80280230208783968632832,
+          "K": 147573952589676412928,
+          "firstPaidCount": 576460752303423488,
+          "largestStillRetainedCount": 576460752303423487,
+          "provedCountPowerLogSaving": 1.9011557014624436e+19,
+          "actualCountPowerLogSaving": 2.677133372589306e+19,
+          "finiteOrderPaymentCertified": false
+        }
+      ],
+      "literalHingeSample": {
+        "N": 1536,
+        "count": 28,
+        "countCeiling": 32,
+        "originalCoreMask": "core",
+        "totalLogPerN": 1.9936099743890567,
+        "ownerLogPerN": 0.07120035622818059,
+        "originalOwnerShare": 0.03571428571428571,
+        "originalCofactorShare": 0.9642857142857143,
+        "lengthPerN": 1.3765402204114914,
+        "lengthLowerPrecondition": true,
+        "genuineFailedGapHinge": true,
+        "originalPrimesAllSixthBounded": true,
+        "logOriginalOwnerAllocation": -2030.8126041252494,
+        "provedLogAllocationUpper": -192.0,
+        "pointwiseAllocationEstimateApplies": true,
+        "maskPreservingPhysicalRegression": {
+          "N": 1536,
+          "count": 28,
+          "countCeiling": 32,
+          "originalCoreMask": "core",
+          "totalLogPerN": 1.9936099743890567,
+          "allPrimesBeyondPolynomialCap": true,
+          "signedFourIncidenceBlocks": [
+            36.454582388827475,
+            -36.454582388828385
+          ],
+          "joinedEightIncidences": -9.094947017729282e-13,
+          "fullTwoHingePrediction": 1.2505552149377763e-12,
+          "oldSecondHingeOnlyPrediction": -36.454582388827646,
+          "remainingFirstHinge": 36.4545823888289,
+          "adaptiveCentre": 182.27291194414232,
+          "centreResidual": 3.979039320256561e-13,
+          "halfWidthBudget": 54.6818735832427,
+          "firstHingesFullySaturated": false,
+          "bothOriginalOwnerGapsFail": true,
+          "originalPhaseAndAllocationUnchanged": true,
+          "originalPhaseReal": -0.967310718616863,
+          "sourceScaledLogAmplitude": -3066.949319546929,
+          "floatingUnderflow": true,
+          "diagnosticOnly": true,
+          "sourcePopulationMassCertified": false,
+          "wholeFloorCertified": false
+        },
+        "sourcePopulationMassCertified": false
+      },
+      "literalSampleSatisfiesCountCondition": true,
+      "exactOriginalMasksAndBothHingesRetained": true,
+      "geometricThresholdEvaluated": false,
+      "noZetaZeroHypothesisUsed": true,
+      "remainingLowCountSignedSumBounded": false,
+      "wholeFloorCertified": false
+    }
+  },
+  "open": [
+    "independent signed floor for the remaining original central aggregate",
+    "whole -79/1000 floor and 3/2 ceiling",
+    "effective starting order and evaluated comparison mass",
+    "restricted zero exclusion and RH"
+  ]
+}

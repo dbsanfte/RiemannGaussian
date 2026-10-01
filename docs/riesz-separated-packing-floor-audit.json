@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/targeted/root-import compilation,14 namespace linters and every public transitive standard-axiom audit",
+  "scope": "Exact divisor packing bounds the original separated count56+ residual packet with its phase/allocation retained, paying the single geometric nonowner error. The theorem leaves the total actual weighted logarithmic population mass explicit; a sufficient source-scale bound remains open. The moving logarithmic-rank exponent audit proves that packing against the common positive period envelope diverges at source scale; this is not a lower bound for the actual separated population.",
+  "documentation": "docs/zeta-riesz-rejoined-population-floor.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszSeparatedPackingFloor.lean": "f926b24d54f37605393a7e9f02409794a65b8192554abefcc0013c4894b0b74a",
+    "docs/zeta-riesz-rejoined-population-floor.md": "55e2202d54319a50e513c8b2abe14c9deee7c65ba1249da443ec07241a9c1e35",
+    "scripts/probe_riesz_rejoined_estimates.py": "819ce6efead154593b1ee149046577012121250109513b72e63b59f232a83101",
+    "RiemannGaussian/ZetaRieszGlobalDebitAudit.lean": "2bf9d0bc34912c5339744f7bf792df14edff8a2e7a0a40880dd3730779be9916",
+    "RiemannGaussian/ZetaRieszJoinedPopulationFloor.lean": "f07575d26ebb2270ccb4757f1d9c074429b42a370e07ca9c2e25566f0e9e633d",
+    "RiemannGaussian/ZetaRieszNonownerAllocation.lean": "4b34638700836fb577957eadbfe1a473c4f8a0e8d475aa7ec140ac75ba1bf5cb",
+    "RiemannGaussian/ZetaRieszSeparatedParityFloor.lean": "f971ba57c37e98d951d5c14bb7d04390e6d15efe3e988b0933f838aa61ae31ed",
+    "RiemannGaussian/ZetaRieszCrossingOrbitCancellation.lean": "cc07c84078fb572debf5991bbd6382ee4d44dc803fd79e49e2132ef547bc3bf7"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszSeparatedPackingFloor.source_scaled_current_separated_floor",
+    "RiemannGaussian.ZetaRieszSeparatedPackingFloor.logarithmic_packing_periodDebit_tendsto"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/separated-packing-rate-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "target": "RiemannGaussian.ZetaRieszSeparatedPackingFloor",
+      "log": ".lake/separated-packing-rate-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "source": "RiemannGaussian.lean",
+      "log": ".lake/separated-packing-rate-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszSeparatedPackingFloor",
+      "linters": 14,
+      "publicTheoremCount": 15,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor.divisor_log_gap_packing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor.divisor_log_gap_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor.separated_two_hinge_packing_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor.packing_cost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor.packing_cost_le_one_quadrillion": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor.canonical_background_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor.canonical_background_count_ge_fiftyThree": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor.retained_separated_packing_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor.global_retained_separated_packing_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor.global_current_separated_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor.source_scaled_current_separated_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor.logarithmic_count_pow_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor.packing_factor_lower_of_logarithmic_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor.canonical_packing_factor_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedPackingFloor.logarithmic_packing_periodDebit_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/rejoined-packing-rate-audit.log"
+    }
+  },
+  "quantitativeProbe": {
+    "script": "scripts/probe_riesz_rejoined_estimates.py",
+    "exitCode": 0,
+    "ordinaryBuildOrCI": false,
+    "diagnosticOnly": true,
+    "sourceGrowthRate": 9.999500033330834e-05,
+    "actualSupplyTailDebitLowerLog10AtOrder1000000": 13.15324482170203,
+    "manyBinModels": {
+      "totalPrimeCount": 59,
+      "occupiedBinCount": 12,
+      "activeOneParity": true,
+      "signedToUnsignedRatio": 1,
+      "actualPrimeLabels": false,
+      "populationCostCertified": false
+    },
+    "strongestLogRankPackingPeriodEnvelope": [
+      {
+        "N": 100000,
+        "largestAllowedBackgroundRank": 56,
+        "currentLogCountRangeNonempty": true,
+        "sourcePackingPeriodEnvelopeLowerLog10": -18.72735871884912,
+        "actualSeparatedPopulationCostComputed": false,
+        "signedCarrierValueComputed": false
+      },
+      {
+        "N": 500000,
+        "largestAllowedBackgroundRank": 64,
+        "currentLogCountRangeNonempty": true,
+        "sourcePackingPeriodEnvelopeLowerLog10": -4.463654469094124,
+        "actualSeparatedPopulationCostComputed": false,
+        "signedCarrierValueComputed": false
+      },
+      {
+        "N": 1000000,
+        "largestAllowedBackgroundRank": 68,
+        "currentLogCountRangeNonempty": true,
+        "sourcePackingPeriodEnvelopeLowerLog10": 15.74483441821462,
+        "actualSeparatedPopulationCostComputed": false,
+        "signedCarrierValueComputed": false
+      },
+      {
+        "N": 10000000,
+        "largestAllowedBackgroundRank": 79,
+        "currentLogCountRangeNonempty": true,
+        "sourcePackingPeriodEnvelopeLowerLog10": 402.2789966208024,
+        "actualSeparatedPopulationCostComputed": false,
+        "signedCarrierValueComputed": false
+      },
+      {
+        "N": 100000000,
+        "largestAllowedBackgroundRank": 91,
+        "currentLogCountRangeNonempty": true,
+        "sourcePackingPeriodEnvelopeLowerLog10": 4306.1215543521885,
+        "actualSeparatedPopulationCostComputed": false,
+        "signedCarrierValueComputed": false
+      }
+    ]
+  },
+  "limitations": [
+    "No numerical-79/1000 floor,3/2 ceiling,restricted contradiction or new zero exclusion.",
+    "Relative supply prices tending to zero do not imply source-normalized debit decay.",
+    "The packing constant multiplies the actual logarithmic population mass; it is not a share of the endgame deficit.",
+    "The one-parity numerical examples are continuous log models,not actual prime labels.",
+    "Global weighted opposite-parity transport and unmatched signed prime-period cancellation remain open."
+  ],
+  "followUpApplicabilityInspection": {
+    "newPublicProofs": 0,
+    "newSignedArithmeticEstimateProved": false,
+    "independentFloorProved": false,
+    "estimatesOneThroughFiveClosed": false,
+    "literature": {
+      "title": "Asymptotic sieve for primes",
+      "authors": [
+        "John Friedlander",
+        "Henryk Iwaniec"
+      ],
+      "url": "https://arxiv.org/pdf/math/9811186",
+      "scope": "Section1 hypotheses(B), (B1)-(B3) are separate bilinear inputs to Theorem1; not verified for the current masked complex carrier."
+    }
+  },
+  "followUpMaskedCarrierEstimate": {
+    "audit": "docs/riesz-long-cutoff-error-audit.json",
+    "newPublicProofs": 39,
+    "theorem": "RiemannGaussian.ZetaRieszLongCutoffError.literal_whole_carrier_estimate",
+    "independentFloorProved": false,
+    "estimatesOneThroughFiveClosed": false,
+    "remainingErrorCost": "Total RAW owner/count/cutoff/radial/allocation variation; squarefree, finite-coprimality and repeated-owner holes absorbed exactly in the measure",
+    "remainingSignedMain": "Untranslated Riesz hinge minus exact owner-conditioned signed density-profile scalar times signed weight sum",
+    "initialPublicProofs": 19
+  }
+}

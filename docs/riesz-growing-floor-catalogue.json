@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "scope": "Supporting labels from the accumulated growing-floor batch. This catalogue asserts no dependency edge to the active endpoint. Exact formal statements and transitive axiom evidence are in Lean and the linked audits.",
+  "wholeFloorProved": false,
+  "modules": [
+    {
+      "module": "ZetaRieszBroadOwnerPeriodFloor",
+      "audit": "docs/riesz-broad-owner-period-audit.json",
+      "documentation": "docs/zeta-riesz-broad-owner-period.md",
+      "publicTheoremCount": 18
+    },
+    {
+      "module": "ZetaRieszClippedOwnerPeriodFloor",
+      "audit": "docs/riesz-clipped-owner-period-audit.json",
+      "documentation": "docs/zeta-riesz-clipped-owner-period.md",
+      "publicTheoremCount": 33
+    },
+    {
+      "module": "ZetaRieszCoreOwnerPayment",
+      "audit": "docs/riesz-core-owner-payment-audit.json",
+      "documentation": "docs/zeta-riesz-core-owner-payment.md",
+      "publicTheoremCount": 18
+    },
+    {
+      "module": "ZetaRieszCrossCountTransport",
+      "audit": "docs/riesz-cross-count-transport-audit.json",
+      "documentation": "docs/zeta-riesz-cross-count-transport.md",
+      "publicTheoremCount": 23
+    },
+    {
+      "module": "ZetaRieszDenseCountCoverFloor",
+      "audit": "docs/riesz-dense-count-cover-floor-audit.json",
+      "documentation": "docs/zeta-riesz-dense-count-cover-floor.md",
+      "publicTheoremCount": 48
+    },
+    {
+      "module": "ZetaRieszDenseShellCost",
+      "audit": "docs/riesz-dense-shell-cost-audit.json",
+      "documentation": "docs/zeta-riesz-dense-shell-cost.md",
+      "publicTheoremCount": 13
+    },
+    {
+      "module": "ZetaRieszDenseSmallTopFloor",
+      "audit": "docs/riesz-dense-small-top-floor-audit.json",
+      "documentation": "docs/zeta-riesz-dense-small-top-floor.md",
+      "publicTheoremCount": 17
+    },
+    {
+      "module": "ZetaRieszFewBinCoverFloor",
+      "audit": "docs/riesz-few-bin-cover-floor-audit.json",
+      "documentation": "docs/zeta-riesz-few-bin-cover-floor.md",
+      "publicTheoremCount": 50
+    },
+    {
+      "module": "ZetaRieszHigherRankHingeFloor",
+      "audit": "docs/riesz-higher-rank-hinge-audit.json",
+      "documentation": "docs/zeta-riesz-higher-rank-hinge.md",
+      "publicTheoremCount": 22
+    },
+    {
+      "module": "ZetaRieszHingeAllocationPayment",
+      "audit": "docs/riesz-hinge-allocation-audit.json",
+      "documentation": "docs/zeta-riesz-hinge-allocation.md",
+      "publicTheoremCount": 19
+    },
+    {
+      "module": "ZetaRieszHingePairCancellation",
+      "audit": "docs/riesz-hinge-pair-audit.json",
+      "documentation": "docs/zeta-riesz-hinge-pair.md",
+      "publicTheoremCount": 39
+    },
+    {
+      "module": "ZetaRieszIntermediateScaleCost",
+      "audit": "docs/riesz-intermediate-scale-cost-audit.json",
+      "documentation": "docs/zeta-riesz-intermediate-scale-cost.md",
+      "publicTheoremCount": 24
+    },
+    {
+      "module": "ZetaRieszJoinedPopulationFloor",
+      "audit": "docs/riesz-joined-population-floor-audit.json",
+      "documentation": "docs/zeta-riesz-joined-population-floor.md",
+      "publicTheoremCount": 18
+    },
+    {
+      "module": "ZetaRieszLogShellPeriodFloor",
+      "audit": "docs/riesz-log-shell-audit.json",
+      "documentation": "docs/zeta-riesz-log-shell-period.md",
+      "publicTheoremCount": 24
+    },
+    {
+      "module": "ZetaRieszLongCutoffError",
+      "audit": "docs/riesz-long-cutoff-error-audit.json",
+      "documentation": "docs/zeta-riesz-long-cutoff-error.md",
+      "publicTheoremCount": 39
+    },
+    {
+      "module": "ZetaRieszLowOffsetPairFloor",
+      "audit": "docs/riesz-low-offset-pair-audit.json",
+      "documentation": "docs/zeta-riesz-low-offset-pair.md",
+      "publicTheoremCount": 15
+    },
+    {
+      "module": "ZetaRieszParityLayerCost",
+      "audit": "docs/riesz-parity-layer-cost-audit.json",
+      "documentation": "docs/zeta-riesz-parity-layer-cost.md",
+      "publicTheoremCount": 20
+    },
+    {
+      "module": "ZetaRieszPolynomialOwnerPayment",
+      "audit": "docs/riesz-polynomial-owner-audit.json",
+      "documentation": "docs/zeta-riesz-polynomial-owner.md",
+      "publicTheoremCount": 16
+    },
+    {
+      "module": "ZetaRieszRadialPeriodPayment",
+      "audit": "docs/riesz-radial-period-audit.json",
+      "documentation": "docs/zeta-riesz-radial-period.md",
+      "publicTheoremCount": 20
+    },
+    {
+      "module": "ZetaRieszReducedCountPayment",
+      "audit": "docs/riesz-reduced-count-audit.json",
+      "documentation": "docs/zeta-riesz-reduced-count.md",
+      "publicTheoremCount": 15
+    },
+    {
+      "module": "ZetaRieszRejoinedPopulationFloor",
+      "audit": "docs/riesz-rejoined-population-floor-audit.json",
+      "documentation": "docs/zeta-riesz-rejoined-population-floor.md",
+      "publicTheoremCount": 5
+    },
+    {
+      "module": "ZetaRieszSeparatedPackingFloor",
+      "audit": "docs/riesz-separated-packing-floor-audit.json",
+      "documentation": "docs/zeta-riesz-rejoined-population-floor.md",
+      "publicTheoremCount": 15
+    },
+    {
+      "module": "ZetaRieszSeparatedParityFloor",
+      "audit": "docs/riesz-separated-parity-floor-audit.json",
+      "documentation": "docs/zeta-riesz-separated-parity-floor.md",
+      "publicTheoremCount": 7
+    },
+    {
+      "module": "ZetaRieszSmallCofactorCancellation",
+      "audit": "docs/riesz-small-cofactor-audit.json",
+      "documentation": "docs/zeta-riesz-small-cofactor.md",
+      "publicTheoremCount": 18
+    },
+    {
+      "module": "ZetaRieszSmallOwnerBoundary",
+      "audit": "docs/riesz-small-owner-boundary-audit.json",
+      "documentation": "docs/zeta-riesz-small-owner-boundary.md",
+      "publicTheoremCount": 16
+    },
+    {
+      "module": "ZetaRieszSymmetricPeriodPayment",
+      "audit": "docs/riesz-symmetric-period-audit.json",
+      "documentation": "docs/zeta-riesz-symmetric-period.md",
+      "publicTheoremCount": 19
+    },
+    {
+      "module": "ZetaRieszTinyOwnerPeriodFloor",
+      "audit": "docs/riesz-tiny-owner-period-audit.json",
+      "documentation": "docs/zeta-riesz-tiny-owner-period.md",
+      "publicTheoremCount": 19
+    },
+    {
+      "module": "ZetaRieszUnpaidCountTiltFloor",
+      "audit": "docs/riesz-unpaid-count-tilt-floor-audit.json",
+      "documentation": "docs/zeta-riesz-unpaid-count-tilt-floor.md",
+      "publicTheoremCount": 23
+    }
+  ],
+  "supportingLabels": {
+    "RiemannGaussian.ZetaRieszCrossCountTransport.polynomialCentralRemaining_transport_floor": {
+      "label": "Literal remaining floor retains all unmatched signed terms",
+      "documentation": "docs/zeta-riesz-cross-count-transport.md"
+    },
+    "RiemannGaussian.ZetaRieszCrossCountTransport.clustered_active_no_transport": {
+      "label": "One-parity active layers obstruct universal local matching",
+      "documentation": "docs/zeta-riesz-cross-count-transport.md"
+    },
+    "RiemannGaussian.ZetaRieszParityLayerCost.gapped_radial_supply_floor": {
+      "label": "Structured population: one signed cost over all counts and radial periods",
+      "documentation": "docs/zeta-riesz-parity-layer-cost.md"
+    },
+    "RiemannGaussian.ZetaRieszParityLayerCost.tendsto_gappedSupplyPrice": {
+      "label": "Growing log-spread price vanishes in actual positive supply units",
+      "documentation": "docs/zeta-riesz-parity-layer-cost.md"
+    },
+    "RiemannGaussian.ZetaRieszParityLayerCost.large_head_price_lower": {
+      "label": "A square-root head cannot pay intermediate scales with this price",
+      "documentation": "docs/zeta-riesz-parity-layer-cost.md"
+    },
+    "RiemannGaussian.ZetaRieszIntermediateScaleCost.global_quarter_count_floor": {
+      "label": "Signed periods retain a growing intermediate-factor population",
+      "documentation": "docs/zeta-riesz-intermediate-scale-cost.md"
+    },
+    "RiemannGaussian.ZetaRieszIntermediateScaleCost.tendsto_quarterCountSupplyPrice": {
+      "label": "Intermediate-factor price vanishes relative to the actual supply",
+      "documentation": "docs/zeta-riesz-intermediate-scale-cost.md"
+    },
+    "RiemannGaussian.ZetaRieszIntermediateScaleCost.dense_every_marker_price_lower": {
+      "label": "Retuning a positive marker cannot pay every dense population",
+      "documentation": "docs/zeta-riesz-intermediate-scale-cost.md"
+    },
+    "RiemannGaussian.ZetaRieszDenseShellCost.global_all_pattern_floor": {
+      "label": "All dense cluster locations share one literal signed-period cost",
+      "documentation": "docs/zeta-riesz-dense-shell-cost.md"
+    },
+    "RiemannGaussian.ZetaRieszDenseShellCost.sum_occupied_pattern_partition": {
+      "label": "Every original cofactor belongs to one exact occupied-scale pattern",
+      "documentation": "docs/zeta-riesz-dense-shell-cost.md"
+    },
+    "RiemannGaussian.ZetaRieszSeparatedParityFloor.superincreasing_divisor_log_gap": {
+      "label": "Largest differing prime separates all background divisor crossings",
+      "documentation": "docs/zeta-riesz-separated-parity-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszSeparatedParityFloor.global_retained_lacunary_floor": {
+      "label": "Whole retained separated population costs two tent heights per label",
+      "documentation": "docs/zeta-riesz-separated-parity-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszDenseSmallTopFloor.global_small_top_floor": {
+      "label": "Dense small-top counts retain a global signed prime-period saving",
+      "documentation": "docs/zeta-riesz-dense-small-top-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszDenseSmallTopFloor.tendsto_smallTopSupplyPrice": {
+      "label": "Full small-top population price is O(log(N)/N^12) of actual supply",
+      "documentation": "docs/zeta-riesz-dense-small-top-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszDenseSmallTopFloor.global_small_top_with_boundary_floor": {
+      "label": "Dense small-top signed periods retain their saving with actual owner clips",
+      "documentation": "docs/zeta-riesz-dense-small-top-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.small_top_mem_paid_tail": {
+      "label": "Small-top dense labels already belong to the spent logarithmic tail",
+      "documentation": "docs/zeta-riesz-unpaid-count-tilt-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.global_lower_count_floor": {
+      "label": "New growing-count signed periods and actual clips share one global cost",
+      "documentation": "docs/zeta-riesz-unpaid-count-tilt-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.retained_literal_count_floor": {
+      "label": "Hard-count signed period bound counts every literal integer once",
+      "documentation": "docs/zeta-riesz-unpaid-count-tilt-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.eventually_count_cost_paid_by_same_supply": {
+      "label": "The same old literal supply pays the new global count-band cost",
+      "documentation": "docs/zeta-riesz-unpaid-count-tilt-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszDenseCountCoverFloor.dense_label_grid_cover": {
+      "label": "Every interior dense label has an original owner fibre or canonical second-owner clip",
+      "documentation": "docs/zeta-riesz-dense-count-cover-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszDenseCountCoverFloor.eventually_dense_two_grid_floor": {
+      "label": "Both literal phase grids jointly bound all dense counts and ownership crossings",
+      "documentation": "docs/zeta-riesz-dense-count-cover-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszDenseCountCoverFloor.exists_dense_unmatched_bound": {
+      "label": "Every unmatched dense-label subset has an existing geometric payment",
+      "documentation": "docs/zeta-riesz-dense-count-cover-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszDenseCountCoverFloor.exists_dense_band_floor": {
+      "label": "Independent signed floor for the entire original dense-count band",
+      "documentation": "docs/zeta-riesz-dense-count-cover-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszDenseCountCoverFloor.eventually_joined_floor_without_dense_band": {
+      "label": "The whole dense band leaves the unpaid floor with the same supply and 1/256 retained",
+      "documentation": "docs/zeta-riesz-dense-count-cover-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszDenseCountCoverFloor.remaining_count_ceiling": {
+      "label": "Actual unpaid count ceiling is lowered to below five log(N+1)+2",
+      "documentation": "docs/zeta-riesz-dense-count-cover-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszDenseCountCoverFloor.remaining_count_cases": {
+      "label": "Exact remaining counts: three, four, six, seven or the lower growing band",
+      "documentation": "docs/zeta-riesz-dense-count-cover-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.owner_fibre_cofactor": {
+      "label": "Original cofactor and occupied-bin mask survive unique-owner prime extension",
+      "documentation": "docs/zeta-riesz-few-bin-cover-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.bin_row_patterns_eq": {
+      "label": "Exact signed partition joins every occupied-bin pattern without multiplicity",
+      "documentation": "docs/zeta-riesz-few-bin-cover-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.bin_label_grid_cover": {
+      "label": "Every interior few-bin label has an original owner fibre or canonical second-owner clip",
+      "documentation": "docs/zeta-riesz-few-bin-cover-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.eventually_bin_grid_floor": {
+      "label": "All literal few-bin periods and ownership clips have one global signed price",
+      "documentation": "docs/zeta-riesz-few-bin-cover-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.exists_bin_band_floor": {
+      "label": "Independent signed floor for the entire original lower-count few-bin band",
+      "documentation": "docs/zeta-riesz-few-bin-cover-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.eventually_bin_cost_paid_by_same_supply": {
+      "label": "Same original supply pays all bin locations using at most one five-hundred-twelfth",
+      "documentation": "docs/zeta-riesz-few-bin-cover-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.eventually_joined_floor_without_dense_or_few_bins": {
+      "label": "Both growing-count populations leave the unpaid floor with1/512 of the same supply retained",
+      "documentation": "docs/zeta-riesz-few-bin-cover-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.remaining_configuration_cases": {
+      "label": "Exact remaining labels: low fixed counts or lower growing counts with many occupied bins",
+      "documentation": "docs/zeta-riesz-few-bin-cover-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszJoinedPopulationFloor.densePeriod_count_ge_from_seeds": {
+      "label": "Original owner extension preserves the minimum count without completing labels",
+      "documentation": "docs/zeta-riesz-joined-population-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszJoinedPopulationFloor.exists_dense56_band_floor": {
+      "label": "Whole upper growing population is paid disjointly from the old fixed counts",
+      "documentation": "docs/zeta-riesz-joined-population-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszJoinedPopulationFloor.exists_bin56_band_floor": {
+      "label": "Whole lower few-bin population is paid disjointly from the old fixed counts",
+      "documentation": "docs/zeta-riesz-joined-population-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszJoinedPopulationFloor.eventually_joined_floor_combined_populations": {
+      "label": "Fixed and growing populations share one floor with257/512 of the same supply retained",
+      "documentation": "docs/zeta-riesz-joined-population-floor.md"
+    },
+    "RiemannGaussian.ZetaRieszJoinedPopulationFloor.remaining_configuration_cases": {
+      "label": "Exact unpaid labels: count four or many-bin counts from56 to below five log(N+1)+2",
+      "documentation": "docs/zeta-riesz-joined-population-floor.md"
+    }
+  }
+}

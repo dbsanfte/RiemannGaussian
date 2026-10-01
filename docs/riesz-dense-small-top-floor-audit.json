@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/build, ordinary-root-plus-explicit-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Literal signed small-top periods with all selected counts, radial periods, owner scales and actual nonempty near-owner crossings. Relative cost O(log(N)/N^12). The original small-top labels are already in the published spent high-count tail; no new unpaid coverage or reserve expenditure is claimed.",
+  "documentation": "docs/zeta-riesz-dense-small-top-floor.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszDenseSmallTopFloor.lean": "39e16317f484f6510f227cc2485b7f1b51397e99f17b02532c6bad18bc3b7cb7",
+    "docs/zeta-riesz-dense-small-top-floor.md": "e335fdaf047ee68ec1d7a800691df425e9a99698cafb917f077ec1d86a55e7a9",
+    "scripts/probe_riesz_dense_small_top.py": "a98b56f55119e05973e87b27d89c0a46b3ed9116d9e45164f583ff0998801bbe",
+    "RiemannGaussian/ZetaRieszParityLayerCost.lean": "7a73413784a8bf74aae6c5af54f65f6991f8596801c763479ac94ea3b5c83c38",
+    "RiemannGaussian/ZetaRieszSmallCofactorCancellation.lean": "5c98816025d67c8fa869d57c6064d8719578fff80a2be53c089bf03e479f929d",
+    "RiemannGaussian/ZetaRieszSmallOwnerBoundary.lean": "1439acfd7b69ba1fecb1cf9f9dd720857496e78433f631da47297c78d78ea66a",
+    "RiemannGaussian/ZetaRieszBroadOwnerPeriodFloor.lean": "1577f080a6da21838fff76995f6f129f77e9d0a7f0fddad41f4bbb4607d170da",
+    "RiemannGaussian/ZetaRieszDenseShellCost.lean": "971749525f1ae2cdb1f1b9cbf45c8446a5793df917ca443bc64cc1bf2449dfd2",
+    "RiemannGaussian/ZetaRieszIntermediateScaleCost.lean": "927dcc008d46026d4670229c2e78d67721f2fa9f07c7a92c5e3f97404af5190d",
+    "RiemannGaussian/ZetaRieszPolynomialCutoffRows.lean": "070281f116d0a325a07f8305f78566da815201d13cce453a04dcec6e2d6e43cb",
+    "RiemannGaussian/ZetaRieszRoughFiveJoinedFloor.lean": "44d61cb62b953331a89745b1485ec86cea54ff810c4d8bd9818c51e241522ca6",
+    "RiemannGaussian/ZetaRieszUnpaidCountTiltFloor.lean": "2f7a3dd1d64fa2a406c127bbbb8b1e68382b5ccac749bb83985fdc9b7e4ffe60",
+    "RiemannGaussian/ZetaRieszLogCountBudget.lean": "138dcbc87b9e5daa6976ebba76b449e5d10f2126e431d8bdad5a4e5dcbfa2bec"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszDenseSmallTopFloor.retained_count_tilt_floor",
+    "RiemannGaussian.ZetaRieszDenseSmallTopFloor.owner_clips_empty",
+    "RiemannGaussian.ZetaRieszDenseSmallTopFloor.small_top_count_lower",
+    "RiemannGaussian.ZetaRieszDenseSmallTopFloor.global_small_top_floor",
+    "RiemannGaussian.ZetaRieszDenseSmallTopFloor.tendsto_smallTopSupplyPrice",
+    "RiemannGaussian.ZetaRieszDenseSmallTopFloor.global_small_top_with_boundary_floor",
+    "RiemannGaussian.ZetaRieszDenseSmallTopFloor.tendsto_smallTopBoundarySupplyPrice"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszDenseSmallTopFloor",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszDenseSmallTopFloor",
+      "linters": 14,
+      "publicTheoremCount": 17,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.retained_count_tilt_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.owner_clips_empty": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.retained_clipped_count_tilt_norm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.missed_parts_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.count_tilt_with_boundary_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.whole_mass_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.small_top_rate_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.small_top_boundary_rate_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.small_top_count_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.small_top_period_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.small_top_with_boundary_period_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.global_small_top_cost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.global_small_top_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.tendsto_smallTopSupplyPrice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.global_small_top_with_boundary_cost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.global_small_top_with_boundary_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseSmallTopFloor.tendsto_smallTopBoundarySupplyPrice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "pythonAST": {
+      "exitCode": 0,
+      "path": "scripts/probe_riesz_dense_small_top.py"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "summary": {
+        "diagnosticOnly": true,
+        "ordinaryBuildOrCI": false,
+        "wholeFloorCertified": false,
+        "unrestrictedTotalMatchingCostCertified": false,
+        "supplyUnit": "exp(-v/2) * v^N/N!",
+        "rows": [
+          {
+            "logNPlusOne": 32,
+            "minimumBudgetCount": 1021,
+            "trueCoreCountLowerBound": 1024,
+            "logInfiniteCountTailUpper": -1811.1361043047177,
+            "logLeanTiltBudget": -381.92055845832016,
+            "logLiteralClippedTiltBudget": -1917.92055845832,
+            "logGlobalRelativePriceWithoutFixedHead": -371.8494839524937,
+            "logGlobalBoundaryPriceWithoutFixedHead": -370.41598468464525,
+            "countLowerBoundExceedsAlreadyPaidThreshold": true,
+            "newUnpaidCoverageClaimed": false,
+            "smallTopAndOwnerScaleHypotheses": true,
+            "ownerClipsEmptyInGeometry": true,
+            "reciprocalPrimeMassIsModel": true,
+            "actualPrimePopulation": false,
+            "arithmeticHeadEvaluated": false,
+            "literalMaskAndFibreCoverCertified": false,
+            "sourceNormalizedWholeFloorCertified": false
+          },
+          {
+            "logNPlusOne": 64,
+            "minimumBudgetCount": 2045,
+            "trueCoreCountLowerBound": 2048,
+            "logInfiniteCountTailUpper": -3626.612087445819,
+            "logLeanTiltBudget": -765.9205584583202,
+            "logLiteralClippedTiltBudget": -3837.92055845832,
+            "logGlobalRelativePriceWithoutFixedHead": -755.1873205897015,
+            "logGlobalBoundaryPriceWithoutFixedHead": -753.753821321853,
+            "countLowerBoundExceedsAlreadyPaidThreshold": true,
+            "newUnpaidCoverageClaimed": false,
+            "smallTopAndOwnerScaleHypotheses": true,
+            "ownerClipsEmptyInGeometry": true,
+            "reciprocalPrimeMassIsModel": true,
+            "actualPrimePopulation": false,
+            "arithmeticHeadEvaluated": false,
+            "literalMaskAndFibreCoverCertified": false,
+            "sourceNormalizedWholeFloorCertified": false
+          },
+          {
+            "logNPlusOne": 128,
+            "minimumBudgetCount": 4093,
+            "trueCoreCountLowerBound": 4096,
+            "logInfiniteCountTailUpper": -7257.219643570318,
+            "logLeanTiltBudget": -1533.92055845832,
+            "logLiteralClippedTiltBudget": -7677.920558458321,
+            "logGlobalRelativePriceWithoutFixedHead": -1522.5100329150337,
+            "logGlobalBoundaryPriceWithoutFixedHead": -1521.0765336471852,
+            "countLowerBoundExceedsAlreadyPaidThreshold": true,
+            "newUnpaidCoverageClaimed": false,
+            "smallTopAndOwnerScaleHypotheses": true,
+            "ownerClipsEmptyInGeometry": true,
+            "reciprocalPrimeMassIsModel": true,
+            "actualPrimePopulation": false,
+            "arithmeticHeadEvaluated": false,
+            "literalMaskAndFibreCoverCertified": false,
+            "sourceNormalizedWholeFloorCertified": false
+          },
+          {
+            "logNPlusOne": 256,
+            "minimumBudgetCount": 8189,
+            "trueCoreCountLowerBound": 8192,
+            "logInfiniteCountTailUpper": -14518.089263247848,
+            "logLeanTiltBudget": -3069.92055845832,
+            "logLiteralClippedTiltBudget": -15357.92055845832,
+            "logGlobalRelativePriceWithoutFixedHead": -3057.8249108171544,
+            "logGlobalBoundaryPriceWithoutFixedHead": -3056.3914115493058,
+            "countLowerBoundExceedsAlreadyPaidThreshold": true,
+            "newUnpaidCoverageClaimed": false,
+            "smallTopAndOwnerScaleHypotheses": true,
+            "ownerClipsEmptyInGeometry": true,
+            "reciprocalPrimeMassIsModel": true,
+            "actualPrimePopulation": false,
+            "arithmeticHeadEvaluated": false,
+            "literalMaskAndFibreCoverCertified": false,
+            "sourceNormalizedWholeFloorCertified": false
+          },
+          {
+            "logNPlusOne": 512,
+            "minimumBudgetCount": 16381,
+            "trueCoreCountLowerBound": 16384,
+            "logInfiniteCountTailUpper": -29039.48246934784,
+            "logLeanTiltBudget": -6141.920558458321,
+            "logLiteralClippedTiltBudget": -30717.92055845832,
+            "logGlobalRelativePriceWithoutFixedHead": -6129.135800458592,
+            "logGlobalBoundaryPriceWithoutFixedHead": -6127.702301190743,
+            "countLowerBoundExceedsAlreadyPaidThreshold": true,
+            "newUnpaidCoverageClaimed": false,
+            "smallTopAndOwnerScaleHypotheses": true,
+            "ownerClipsEmptyInGeometry": true,
+            "reciprocalPrimeMassIsModel": true,
+            "actualPrimePopulation": false,
+            "arithmeticHeadEvaluated": false,
+            "literalMaskAndFibreCoverCertified": false,
+            "sourceNormalizedWholeFloorCertified": false
+          },
+          {
+            "logNPlusOne": 1024,
+            "minimumBudgetCount": 32765,
+            "trueCoreCountLowerBound": 32768,
+            "logInfiniteCountTailUpper": -58081.92257808163,
+            "logLeanTiltBudget": -12285.92055845832,
+            "logLiteralClippedTiltBudget": -61437.92055845832,
+            "logGlobalRelativePriceWithoutFixedHead": -12272.444677816497,
+            "logGlobalBoundaryPriceWithoutFixedHead": -12271.011178548648,
+            "countLowerBoundExceedsAlreadyPaidThreshold": true,
+            "newUnpaidCoverageClaimed": false,
+            "smallTopAndOwnerScaleHypotheses": true,
+            "ownerClipsEmptyInGeometry": true,
+            "reciprocalPrimeMassIsModel": true,
+            "actualPrimePopulation": false,
+            "arithmeticHeadEvaluated": false,
+            "literalMaskAndFibreCoverCertified": false,
+            "sourceNormalizedWholeFloorCertified": false
+          }
+        ]
+      }
+    }
+  },
+  "actualSupplyUnits": "amplitude(N,v)/v = exp(-v/2) * v^N/N!",
+  "wholeFloorProven": false,
+  "wholeCeilingProven": false,
+  "restrictedContradictionProven": false,
+  "zeroExclusionProven": false,
+  "totalUnrestrictedMatchingCostBoundProven": false,
+  "unrestrictedUnmatchedParityCostBoundProven": false,
+  "originalFibreCoverProven": false,
+  "freshDisjointReserveProven": false,
+  "strictOwnerGapRequiredForClipEmptiness": true,
+  "unevaluatedArithmeticHead": true,
+  "effectiveStartingOrderClaimed": false,
+  "publicationDeferred": true,
+  "committed": false,
+  "strictOwnerGapRequiredForBoundaryFloor": false,
+  "smallTopOriginalLabelsAlreadyInSpentTail": true,
+  "newUnpaidCoverageClaimed": false
+}

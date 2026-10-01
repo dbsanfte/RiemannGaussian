@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/targeted/root-import compilation,14 namespace linters and every public transitive standard-axiom audit",
+  "scope": "Unconditional comparison for the entire literal squarefree core, all counts, canonical owner/count/radial/physical/allocation masks, both hinges and full phase retained. Squarefree and repeated-owner holes are inside the measure, with exact owner-density normalization. Finite prime exclusions also enter the measure exactly. Remaining raw-mask variation and signed arithmetic main are unpaid; no numerical floor.",
+  "documentation": "docs/zeta-riesz-long-cutoff-error.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszLongCutoffError.lean": "30b00ac755e0deeceb47dc9d3b1a0dc8e4667456a1f981e96d95b71a11197a55",
+    "docs/zeta-riesz-long-cutoff-error.md": "c73fe239c5c4b8f18de3859e411cfaee8d7598a0f12012d5ac480f07cebed361",
+    "RiemannGaussian/ZetaRieszCofactorDiscrepancy.lean": "404a7b60908558b06f28ba3762ba3f8ead4a9073564e984217ff808876549f57",
+    "RiemannGaussian/ZetaRieszSignedConvolution.lean": "421209b10a0bffa0dd01e5cdfada710fbf9b41ee5580f1f194651bca0ffcd1cc",
+    "RiemannGaussian/ZetaRieszSignedDensityMain.lean": "1cc4b8a039d4c132da47b96fcbc61cdf7b3fee12288eb064df6badc79fb2fca0",
+    "RiemannGaussian/ZetaRieszJointPrimeEnergy.lean": "aeac126806d23acbc920dcdd0ba84925ccb76a8fc335b9ac613aae6d85ad7e7e",
+    "RiemannGaussian/ZetaRieszAllocationWeights.lean": "86c2673365ce8a0f2fabbf6c3936f2e47a42b336ad4d0fcf164b8b4980f52175",
+    "RiemannGaussian/ZetaSquarefreeCounting.lean": "d35b1758b6252d7f4859e1ce2d0382afffe570e9348cca5d35b35c4b2af1f429",
+    "RiemannGaussian/ZetaRieszPrimeWeightedSieve.lean": "725af814f98582f5ce263052d5895bff5a5fc9d2bbffa1d77942d7174b91c480",
+    "RiemannGaussian/ZetaRoughSquarefreeCounting.lean": "0e613774b43d952b9f07478704ec41cfbde561e2f7f7ba6ad833d2f16e25eaad",
+    "RiemannGaussian/ZetaRieszUnsignedDivisorError.lean": "240fc86bf01d1814b724cbf05f1957c226f690ac05c6ec686342d4621e144389",
+    "scripts/probe_riesz_long_cutoff_cost.py": "0ed81ce9f18c2f4fb4871e38a7d0f369ee827d462114b50564a88c71fa414bd6"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszLongCutoffError.literal_whole_carrier_estimate",
+    "RiemannGaussian.ZetaRieszLongCutoffError.literal_normalized_raw_carrier_estimate",
+    "RiemannGaussian.ZetaRieszLongCutoffError.literal_normalized_raw_reference_error",
+    "RiemannGaussian.ZetaRieszLongCutoffError.eventually_rough_counting_rate",
+    "RiemannGaussian.ZetaRieszLongCutoffError.literal_joined_carrier_estimate"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/long-cutoff-rough-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "target": "RiemannGaussian.ZetaRieszLongCutoffError",
+      "log": ".lake/long-cutoff-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "source": "RiemannGaussian.lean",
+      "log": ".lake/long-cutoff-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszLongCutoffError"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszLongCutoffError",
+      "linters": 14,
+      "publicTheoremCount": 39,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszLongCutoffError.countingConstant_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.sharp_count_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.sharp_count_error_long": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.core_translated_log_margin": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.core_translated_cutoff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.literal_masked_support": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.weighted_error_exponential": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.squarefree_density_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.squarefree_reference_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.squarefree_profile_reference_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.composite_error_exponential": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.profile_error_exponential": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.hinge_profile_variation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.literal_translated_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.beforeSquares_eq_literal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.literal_squarefree_reference_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.literal_joined_carrier_estimate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.shell_composite_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.source_rate_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.rough_count_eq_marks": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.rough_sharp_count_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.rough_sharp_count_error_long": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.roughDensityPrefix_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.rough_weighted_error_exponential": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.rough_reference_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.rough_profile_reference_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.beforeSquares_rough_eq_literal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.literal_rough_reference_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.literal_rough_joined_carrier_estimate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.rough_sieveCost_small_primes_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.eventually_rough_counting_rate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.rough_density_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.rough_density_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.raw_rough_eq_literal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.literal_raw_rough_reference_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.rough_owner_normalization": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.literal_normalized_raw_reference_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.literal_normalized_raw_carrier_estimate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLongCutoffError.literal_whole_carrier_estimate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/long-cutoff-audit.log"
+    },
+    "changedSourcePlaceholderScan": {
+      "exitCode": 0
+    },
+    "whitespaceCheck": {
+      "exitCode": 0
+    },
+    "optionalRateProbe": {
+      "exitCode": 0,
+      "script": "scripts/probe_riesz_long_cutoff_cost.py",
+      "ordinaryCI": false,
+      "output": ".lake/long-cutoff-rate-probe.json",
+      "scope": "Exact finite weighted exclusion prefactor evaluated numerically; neither literal variation nor signed carrier estimated."
+    }
+  },
+  "quantitativeBounds": {
+    "signedCountingError": "C X^(3/4) D^(5/16)",
+    "cutoffCondition": "D^4 <= X^3",
+    "longCutoffError": "C X^(63/64)",
+    "literalActiveJumpLower": "exp(N/2) <= k",
+    "literalJoinedError": "3 C exp(-N/128) times the displayed before-squarefree owner-column variation",
+    "restrictedRateComparison": "(2u)^N exp(-N/128) <= exp(-N/200)",
+    "rateComparisonPaysActualMaskVariation": false,
+    "roughCountingError": "C sieveCost(3/4,F) X^(3/4) D^(5/16)",
+    "rawLiteralJoinedError": "6 C exp(-N/128) times the displayed (2+c_positive)*c_positive-weighted RAW owner-column variation",
+    "roughDensityNormalization": "density(insert p F)*((p+1)/p)=density(F)",
+    "physicalExclusionCost": "sieveCost(3/4,F)<=exp(2 prefixMass N^(17/32)) for excluded primes through N^2",
+    "eventualExclusionPrefactor": "sieveCost(3/4,F) exp(-N/128)<=exp(-N/256)",
+    "wholeCoreRequiresAllPrimesAboveNSquared": false,
+    "squarefreeAndRepeatedOwnerHolesRemovedFromVariation": true,
+    "independentFloorProved": false
+  },
+  "newPublicProofs": 39,
+  "independentFloorProved": false,
+  "estimatesOneThroughFiveClosed": false,
+  "limitations": [
+    "No numerical-79/1000 floor,3/2 ceiling,restricted contradiction or new zero exclusion.",
+    "The exponential prefactor does not alone prove decay of the literal masked error.",
+    "The remaining owner/count/cutoff/allocation variation has not been bounded at source scale.",
+    "The untranslated hinge and signed density-profile main require joint signed control.",
+    "All prior absolute-envelope and debit-growth no-go results retain their stated scope.",
+    "No hypothetical-zero phase,prime-density approximation,or unproved bilinear hypothesis is used.",
+    "The excluded-prime variant is an explicit subpopulation; its complementary population is not paid by the prefactor. F empty gives the whole original squarefree core."
+  ],
+  "initialPublicProofs": 19,
+  "additionalPublicProofsThisFollowUp": 20
+}

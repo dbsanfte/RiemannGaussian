@@ -1,0 +1,656 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/build, ordinary-root-plus-explicit-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Whole original lower growing-count few-bin class leaves the exact joinedPhysical floor, with all original masks and real ownership clips paid; same quantitative supply retains1/512. Remaining actual labels have fixed low counts or growing counts with many occupied cofactor bins. No numerical whole floor or zero exclusion.",
+  "documentation": "docs/zeta-riesz-few-bin-cover-floor.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszFewBinCoverFloor.lean": "716dafaf0040759e4af70ee03d74493d5496da6b3c4df5ff7f2fb32d4fb4af63",
+    "docs/zeta-riesz-few-bin-cover-floor.md": "ed37b96a3970213a88372259ac8d87629b1fb6437fa451411e949212bc73248d",
+    "scripts/probe_riesz_few_bin_cover.py": "942e2207a8fa2ae88d7c2034424cddfbab44009476d8cd21bbfc762bfa9a7e23",
+    "RiemannGaussian/ZetaRieszDenseCountCoverFloor.lean": "4ff4b0e88597c706fea8a546a46f790ffb934430aeb94cca8bde43d37f5876e6",
+    "RiemannGaussian/ZetaRieszDenseShellCost.lean": "971749525f1ae2cdb1f1b9cbf45c8446a5793df917ca443bc64cc1bf2449dfd2",
+    "RiemannGaussian/ZetaRieszIntermediateScaleCost.lean": "927dcc008d46026d4670229c2e78d67721f2fa9f07c7a92c5e3f97404af5190d",
+    "RiemannGaussian/ZetaRieszUnpaidCountTiltFloor.lean": "2f7a3dd1d64fa2a406c127bbbb8b1e68382b5ccac749bb83985fdc9b7e4ffe60",
+    "RiemannGaussian/ZetaRieszNonownerAllocation.lean": "4b34638700836fb577957eadbfe1a473c4f8a0e8d475aa7ec140ac75ba1bf5cb",
+    "RiemannGaussian/ZetaRieszRoughFiveJoinedFloor.lean": "44d61cb62b953331a89745b1485ec86cea54ff810c4d8bd9818c51e241522ca6",
+    "RiemannGaussian/ZetaRieszFiveSignCoverFloor.lean": "180751690496d8ea07c3c06284e64e7b65056611e95390dbe8595320592c3d36",
+    "RiemannGaussian/ZetaRieszGammaJoint.lean": "68ef5d3b0c14a2632b765e59e25f6340860b0bca30fd48662f5fa92d67944adc",
+    "RiemannGaussian/ZetaRieszJointDominantFloor.lean": "d8bb6349e964ee3d7e74ef6b00b703240e0b1ba385e42d1e293cdbfaadcdab9e",
+    "RiemannGaussian/ZetaRieszRadialPeriodPayment.lean": "2b60e29de2fdb3dbee52431ec5963fb087c103a1438e954d1c38aff711a1ed45"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.bin_label_grid_cover",
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.bin_row_patterns_eq",
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.eventually_bin_grid_floor",
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.exists_bin_unmatched_bound",
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.exists_bin_band_floor",
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.eventually_bin_cost_paid_by_same_supply",
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.eventually_joined_floor_without_dense_or_few_bins",
+    "RiemannGaussian.ZetaRieszFewBinCoverFloor.remaining_configuration_cases"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszFewBinCoverFloor",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszFewBinCoverFloor",
+      "linters": 14,
+      "publicTheoremCount": 50,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binHead_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.primeBin_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.primeBin_mem_available": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.cofactorBins_subset_available": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.availableBins_card_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.patternPrimes_support": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.prime_support_pattern": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.patternLargePrimes_cover": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.pattern_exponential_price": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.owner_fibre_cofactor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binPeriod_data": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binPeriod_subset_core": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binCofactors_owner_physical": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binCofactors_scale": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binCofactors_prime_support": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.bin_label_covered": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binPeriod_scale_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binPeriod_radial_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.close_second_owner": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binBoundary_data": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binBoundary_all_prime_logs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binBoundary_scale": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binBoundary_covered": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.bin_label_full_cover": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binPeriod_count_lt_from_seeds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binPeriod_subset_core_from_seeds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binPeriod_subset_binBand": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.active_scale_le_center": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.mem_binScaleGrid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.bin_label_grid_cover": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binBoundary_scale_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binBoundary_radial_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binPeriodGrid_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binBoundaryGrid_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binBoundaryGrid_subset": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binPeriodGrid_subset_binBand": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binBoundary_sdiff_seed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.sum_pattern_partition": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.binPeriod_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.bin_row_patterns_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.eventually_bin_scale_good": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.eventually_bin_grid_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.eventually_bin_two_grid_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.bin_grid_unmatched_geometry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.eventually_bin_owner_large": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.exists_bin_unmatched_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.exists_bin_band_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.eventually_bin_cost_paid_by_same_supply": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.eventually_joined_floor_without_dense_or_few_bins": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszFewBinCoverFloor.remaining_configuration_cases": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "ordinaryBuildOrCI": false,
+      "diagnosticOnly": true,
+      "script": "scripts/probe_riesz_few_bin_cover.py",
+      "result": {
+        "diagnosticOnly": true,
+        "ordinaryBuildOrCI": false,
+        "numericalFloorCertified": false,
+        "effectiveStartingOrderCertified": false,
+        "actualCofactorStability": [
+          {
+            "originalCount": 7,
+            "uniqueCofactor": 227684495568347,
+            "occupiedPattern": [
+              2,
+              3
+            ],
+            "testedOwnerPrimes": [
+              269,
+              271,
+              277,
+              281,
+              283,
+              293
+            ],
+            "originalCountPreserved": true,
+            "diagnosticHeadRescaled": true,
+            "literalCoreAndEventualThresholdCertified": false
+          },
+          {
+            "originalCount": 7,
+            "uniqueCofactor": 95888816949097,
+            "occupiedPattern": [
+              2
+            ],
+            "testedOwnerPrimes": [
+              269,
+              271,
+              277,
+              281,
+              283,
+              293
+            ],
+            "originalCountPreserved": true,
+            "diagnosticHeadRescaled": true,
+            "literalCoreAndEventualThresholdCertified": false
+          },
+          {
+            "originalCount": 11,
+            "uniqueCofactor": 556906280583136815998353,
+            "occupiedPattern": [
+              2,
+              3
+            ],
+            "testedOwnerPrimes": [
+              269,
+              271,
+              277,
+              281,
+              283,
+              293
+            ],
+            "originalCountPreserved": true,
+            "diagnosticHeadRescaled": true,
+            "literalCoreAndEventualThresholdCertified": false
+          },
+          {
+            "originalCount": 11,
+            "uniqueCofactor": 114522347728444637273689,
+            "occupiedPattern": [
+              2
+            ],
+            "testedOwnerPrimes": [
+              269,
+              271,
+              277,
+              281,
+              283,
+              293
+            ],
+            "originalCountPreserved": true,
+            "diagnosticHeadRescaled": true,
+            "literalCoreAndEventualThresholdCertified": false
+          },
+          {
+            "originalCount": 21,
+            "uniqueCofactor": 19278512949309281901417472673954935234095097223,
+            "occupiedPattern": [
+              2,
+              3
+            ],
+            "testedOwnerPrimes": [
+              269,
+              271,
+              277,
+              281,
+              283,
+              293
+            ],
+            "originalCountPreserved": true,
+            "diagnosticHeadRescaled": true,
+            "literalCoreAndEventualThresholdCertified": false
+          },
+          {
+            "originalCount": 21,
+            "uniqueCofactor": 603550582452525225683385335794660610960210681,
+            "occupiedPattern": [
+              2
+            ],
+            "testedOwnerPrimes": [
+              269,
+              271,
+              277,
+              281,
+              283,
+              293
+            ],
+            "originalCountPreserved": true,
+            "diagnosticHeadRescaled": true,
+            "literalCoreAndEventualThresholdCertified": false
+          }
+        ],
+        "signedPartition": {
+          "actualSquarefreeLabels": 219,
+          "uniquePatterns": 7,
+          "signedPartitionError": 1.0537823068052155e-99,
+          "allocationAndPhaseRetained": true,
+          "diagnosticHeadRescaled": true,
+          "numericalCarrierFloorCertified": false
+        },
+        "allLocationPrices": [
+          {
+            "logNPlusOne": 160,
+            "availableBinUpperCount": 321,
+            "occupiedBinCeiling": 10,
+            "logExactAllLocationBudget": 77.12676905107091,
+            "logLeanPatternUpperBound": 81.0,
+            "logBudgetAfterRadialDivision": -82.87323094892909,
+            "arithmeticHeadEvaluated": false,
+            "supplyUnit": "exp(-v/2) * v^N/N!",
+            "absoluteSourceDecayCertified": false
+          },
+          {
+            "logNPlusOne": 256,
+            "availableBinUpperCount": 513,
+            "occupiedBinCeiling": 16,
+            "logExactAllLocationBudget": 124.38902207668364,
+            "logLeanPatternUpperBound": 129.0,
+            "logBudgetAfterRadialDivision": -131.61097792331634,
+            "arithmeticHeadEvaluated": false,
+            "supplyUnit": "exp(-v/2) * v^N/N!",
+            "absoluteSourceDecayCertified": false
+          },
+          {
+            "logNPlusOne": 512,
+            "availableBinUpperCount": 1025,
+            "occupiedBinCeiling": 32,
+            "logExactAllLocationBudget": 250.6959914021733,
+            "logLeanPatternUpperBound": 257.0,
+            "logBudgetAfterRadialDivision": -261.3040085978267,
+            "arithmeticHeadEvaluated": false,
+            "supplyUnit": "exp(-v/2) * v^N/N!",
+            "absoluteSourceDecayCertified": false
+          },
+          {
+            "logNPlusOne": 1024,
+            "availableBinUpperCount": 2049,
+            "occupiedBinCeiling": 64,
+            "logExactAllLocationBudget": 503.65254439894045,
+            "logLeanPatternUpperBound": 513.0,
+            "logBudgetAfterRadialDivision": -520.3474556010596,
+            "arithmeticHeadEvaluated": false,
+            "supplyUnit": "exp(-v/2) * v^N/N!",
+            "absoluteSourceDecayCertified": false
+          },
+          {
+            "logNPlusOne": 2048,
+            "availableBinUpperCount": 4097,
+            "occupiedBinCeiling": 128,
+            "logExactAllLocationBudget": 1009.9102438975076,
+            "logLeanPatternUpperBound": 1025.0,
+            "logBudgetAfterRadialDivision": -1038.0897561024924,
+            "arithmeticHeadEvaluated": false,
+            "supplyUnit": "exp(-v/2) * v^N/N!",
+            "absoluteSourceDecayCertified": false
+          },
+          {
+            "logNPlusOne": 4096,
+            "availableBinUpperCount": 8193,
+            "occupiedBinCeiling": 256,
+            "logExactAllLocationBudget": 2022.7712263785302,
+            "logLeanPatternUpperBound": 2049.0,
+            "logBudgetAfterRadialDivision": -2073.22877362147,
+            "arithmeticHeadEvaluated": false,
+            "supplyUnit": "exp(-v/2) * v^N/N!",
+            "absoluteSourceDecayCertified": false
+          }
+        ],
+        "remainingCrossings": [
+          {
+            "continuousIntegerLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "originalCarrierMasksCertified": false,
+            "ratio": 1.2,
+            "cofactorCount": 23,
+            "logN": 20.994055615833688,
+            "occupiedBinCount": 7,
+            "newPaidBinCeiling": 1,
+            "survivingCrossingClass": "both-parities",
+            "activeEvenCount": 8929,
+            "activeOddCount": 8965,
+            "joinedSignedResponse": 16040676.745349946,
+            "unsignedResponse": 30736682848.625774,
+            "signedToUnsignedRatio": 0.0005218740364517611,
+            "globalPopulationBoundCertified": false
+          },
+          {
+            "continuousIntegerLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "originalCarrierMasksCertified": false,
+            "ratio": 1.35,
+            "cofactorCount": 24,
+            "logN": 23.275725026199385,
+            "occupiedBinCount": 11,
+            "newPaidBinCeiling": 1,
+            "survivingCrossingClass": "both-parities",
+            "activeEvenCount": 1777,
+            "activeOddCount": 1789,
+            "joinedSignedResponse": -33930278.51526996,
+            "unsignedResponse": 6144116241.222719,
+            "signedToUnsignedRatio": 0.0055224017878472975,
+            "globalPopulationBoundCertified": false
+          },
+          {
+            "continuousIntegerLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "originalCarrierMasksCertified": false,
+            "ratio": 1.6,
+            "cofactorCount": 18,
+            "logN": 23.995182172648736,
+            "occupiedBinCount": 12,
+            "newPaidBinCeiling": 1,
+            "survivingCrossingClass": "both-parities",
+            "activeEvenCount": 13,
+            "activeOddCount": 13,
+            "joinedSignedResponse": -4910164.234840307,
+            "unsignedResponse": 49359343.06063877,
+            "signedToUnsignedRatio": 0.09947790895045118,
+            "globalPopulationBoundCertified": false
+          },
+          {
+            "continuousIntegerLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "originalCarrierMasksCertified": false,
+            "ratio": 1.9,
+            "cofactorCount": 14,
+            "logN": 24.115714845182072,
+            "occupiedBinCount": 13,
+            "newPaidBinCeiling": 1,
+            "survivingCrossingClass": "one-parity",
+            "activeEvenCount": 0,
+            "activeOddCount": 1,
+            "joinedSignedResponse": -1635571.2839856101,
+            "unsignedResponse": 1635571.2839856101,
+            "signedToUnsignedRatio": 1.0,
+            "globalPopulationBoundCertified": false
+          },
+          {
+            "continuousIntegerLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "originalCarrierMasksCertified": false,
+            "ratio": 2.0,
+            "cofactorCount": 14,
+            "logN": 24.72849539493402,
+            "occupiedBinCount": 14,
+            "newPaidBinCeiling": 1,
+            "survivingCrossingClass": "separated",
+            "activeEvenCount": 1,
+            "activeOddCount": 0,
+            "joinedSignedResponse": 1011499.8883247013,
+            "unsignedResponse": 1011499.8883247013,
+            "signedToUnsignedRatio": 1.0,
+            "globalPopulationBoundCertified": false
+          },
+          {
+            "continuousIntegerLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "originalCarrierMasksCertified": false,
+            "ratio": 2.01,
+            "cofactorCount": 14,
+            "logN": 24.788357338383545,
+            "occupiedBinCount": 14,
+            "newPaidBinCeiling": 1,
+            "survivingCrossingClass": "inactive",
+            "activeEvenCount": 0,
+            "activeOddCount": 0,
+            "joinedSignedResponse": 0.0,
+            "unsignedResponse": 0.0,
+            "signedToUnsignedRatio": 0,
+            "globalPopulationBoundCertified": false
+          }
+        ],
+        "checkedLedger": "same original supply: new1/512 spent,1/512 retained",
+        "remaining": "fixed counts3,4,6,7; lower growing counts with more occupied bins; total separated cost; mixed-parity transport and unmatched one-parity populations; numerical margin",
+        "falseInferenceAvoided": "relative period price decay is not source-normalized norm decay"
+      }
+    }
+  },
+  "sourceRadiusRange": "1/2 < u <= 10001/20000",
+  "heightRange": "fixed y >=54",
+  "actualSupplyUnits": "exp(-v/2) * v^N/N!",
+  "relativeSupplyPriceRate": "O(log^9(N+1)/sqrt(N+1))",
+  "sameSupplyReserveRetained": "1/512",
+  "originalWholeFibreCoverProven": true,
+  "literalPrimeCountMaskInheritedFromOriginalSeeds": true,
+  "ownershipClipsUniquelyCounted": true,
+  "unmatchedBoundaryIndependentlyPaid": true,
+  "globalNonownerAllocationRetained": true,
+  "sameOriginalSupplyWitnessRetained": true,
+  "finalWholeFloorLedgerPlacementProven": true,
+  "remainingCountAndBinClassificationProven": true,
+  "allLargeLogCofactorBinsCounted": true,
+  "olderIntermediateGapTestAutomaticallyCovered": false,
+  "remainingFixedCounts": [
+    3,
+    4,
+    6,
+    7
+  ],
+  "remainingGrowingCounts": "8 <= omega(n) < 5 log(N+1)+2 AND cofactor bin count > floor(log(N+1)/16)",
+  "remainingObstaclesEnumerated": true,
+  "allRemainingCancellationCostsBoundProven": false,
+  "wholeFloorProven": false,
+  "wholeCeilingProven": false,
+  "restrictedContradictionProven": false,
+  "zeroExclusionProven": false,
+  "sourceNormalizedNormDecayClaimed": false,
+  "signedArithmeticEstimateAssumed": false,
+  "unevaluatedArithmeticHead": true,
+  "effectiveStartingOrderClaimed": false,
+  "publicationDeferred": true,
+  "committed": false,
+  "followUpMergedFixedAndGrowingPaymentsProven": true,
+  "followUpMergedWholeFloorAudit": "docs/riesz-joined-population-floor-audit.json",
+  "followUpMergedSupplyRetained": "257/512",
+  "followUpMergedRemainingCounts": "four or56<=omega<5log(N+1)+2 with many cofactor bins"
+}

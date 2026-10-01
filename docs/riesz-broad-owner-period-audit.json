@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/build, ordinary-root-plus-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "All-count arbitrary-spread signed periods and ownership clips above an explicit cofactor cutoff. The all-radial bound uses amplitude, its standalone supply theorem uses amplitude/v; the former combined supply-payment claim is withdrawn. Whole floor remains open.",
+  "documentation": "docs/zeta-riesz-broad-owner-period.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszBroadOwnerPeriodFloor.lean": "1577f080a6da21838fff76995f6f129f77e9d0a7f0fddad41f4bbb4607d170da",
+    "docs/zeta-riesz-broad-owner-period.md": "549cb4e1a5828aac9a78aaa8afb345a836d0c2038dff44fe0e84d4eddacaa186",
+    "scripts/probe_riesz_broad_owner_period.py": "745c29972d0b8aad1d5f38562fba161e1ced839dbc4025ad08180bf35bedd4fb",
+    "RiemannGaussian/ZetaRieszClippedOwnerPeriodFloor.lean": "6bd75058fed1f768d8e7b54b0dc512f1aaad53c8825371756bcf82f662d63dcc",
+    "RiemannGaussian/ZetaRieszTinyOwnerPeriodFloor.lean": "cd9b88371b8f54f186fe2624bef8df02904cc1a6a4218141535e2b1715d534a5",
+    "RiemannGaussian/ZetaRieszRoughFiveJoinedFloor.lean": "44d61cb62b953331a89745b1485ec86cea54ff810c4d8bd9818c51e241522ca6",
+    "RiemannGaussian/ZetaRieszSmallOwnerBoundary.lean": "1439acfd7b69ba1fecb1cf9f9dd720857496e78433f631da47297c78d78ea66a"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.broad_radial_supply_floor",
+    "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.eventually_broad_radial_cost_paid"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor",
+      "linters": 14,
+      "publicTheoremCount": 18,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.prime_interval_mass_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.interval_cofactor_mass_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.logPrimes_mass_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.interval_count_exponential_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.broad_unallocated_row_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.sum_count_price_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.broad_all_counts_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.broad_interval_period_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.broad_clipped_cofactor_cover": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.broad_clipped_count_norm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.broad_clipped_all_counts_norm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.broad_signed_period_with_boundary_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.broad_interval_with_boundary_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.actual_clipped_witness": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.sum_dyadic_owner_logs_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.broad_radial_supply_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.tendsto_broad_radial_price": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszBroadOwnerPeriodFloor.eventually_broad_radial_cost_paid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "ordinaryBuildOrCI": false
+    }
+  },
+  "normalizationAudit": "RiemannGaussian.ZetaRieszSmallOwnerBoundary.broad_price_in_supply_units"
+}

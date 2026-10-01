@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/build, ordinary-root-plus-explicit-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Hard lower-count tilt after literal signed owner-prime cancellation, retaining original allocation, two hinges, count shift in actual ownership clips, all selected counts/owner scales/radial periods. Global relative cost O(log(N)^2/sqrt(N)); same original literal supply pays at most 1/256. Follow-up DenseCountCoverFloor closes the actual whole-fibre cover and final whole-floor placement.",
+  "documentation": "docs/zeta-riesz-unpaid-count-tilt-floor.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszUnpaidCountTiltFloor.lean": "2f7a3dd1d64fa2a406c127bbbb8b1e68382b5ccac749bb83985fdc9b7e4ffe60",
+    "docs/zeta-riesz-unpaid-count-tilt-floor.md": "22092d03469586063baf7a7c623728038a40691120f9d9b07f7a700b5376feab",
+    "scripts/probe_riesz_unpaid_count_tilt.py": "869bfb395e2b8ca410d34e8b2dd5632f81a049fefd91347ccc3fff01582a62b3",
+    "RiemannGaussian/ZetaRieszDenseSmallTopFloor.lean": "39e16317f484f6510f227cc2485b7f1b51397e99f17b02532c6bad18bc3b7cb7",
+    "RiemannGaussian/ZetaRieszParityLayerCost.lean": "7a73413784a8bf74aae6c5af54f65f6991f8596801c763479ac94ea3b5c83c38",
+    "RiemannGaussian/ZetaRieszBroadOwnerPeriodFloor.lean": "1577f080a6da21838fff76995f6f129f77e9d0a7f0fddad41f4bbb4607d170da",
+    "RiemannGaussian/ZetaRieszSmallCofactorCancellation.lean": "5c98816025d67c8fa869d57c6064d8719578fff80a2be53c089bf03e479f929d",
+    "RiemannGaussian/ZetaRieszLogCountBudget.lean": "138dcbc87b9e5daa6976ebba76b449e5d10f2126e431d8bdad5a4e5dcbfa2bec",
+    "RiemannGaussian/ZetaRieszRoughFivePeriodFloor.lean": "c4e0a1d55f590b4c73afe30e96c13e94861b82601a96cb03f6ad9139ef1bb8dd",
+    "RiemannGaussian/ZetaRieszRoughFiveJoinedFloor.lean": "44d61cb62b953331a89745b1485ec86cea54ff810c4d8bd9818c51e241522ca6",
+    "RiemannGaussian/ZetaRieszNonownerAllocation.lean": "4b34638700836fb577957eadbfe1a473c4f8a0e8d475aa7ec140ac75ba1bf5cb",
+    "RiemannGaussian/ZetaRieszFiveSignCoverFloor.lean": "180751690496d8ea07c3c06284e64e7b65056611e95390dbe8595320592c3d36",
+    "RiemannGaussian/ZetaRieszDenseCountCoverFloor.lean": "4ff4b0e88597c706fea8a546a46f790ffb934430aeb94cca8bde43d37f5876e6",
+    "docs/zeta-riesz-dense-count-cover-floor.md": "951f4cedb3ccc743feecfcdfe2455f2f7fc52ad3dbd225db6d8a0f573c5597c4"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.small_top_mem_paid_tail",
+    "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.middle_count_not_spent",
+    "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.unpaid_owner_scale",
+    "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.global_lower_count_floor",
+    "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.tendsto_unpaidCountSupplyPrice",
+    "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.eventually_count_cost_paid_by_same_supply",
+    "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.literal_owner_population_subset_unpaid",
+    "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.retained_literal_count_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor",
+      "linters": 14,
+      "publicTheoremCount": 23,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.log_count_marker_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.count_price_log_tail_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.count_price_sqrt_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.paid_count_threshold_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.small_top_mem_paid_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.whole_tail_subset_spent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.unpaid_count_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.middle_count_not_spent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.middle_population_subset_unpaid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.unpaid_owner_scale": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.retained_count_lower_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.clipped_count_lower_norm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.count_lower_with_boundary_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.lower_count_rate_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.lower_count_period_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.global_lower_count_cost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.tendsto_unpaidCountSupplyPrice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.global_lower_count_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.eventually_unpaid_count_price_paid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.eventually_count_cost_paid_by_same_supply": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.owner_fibre_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.literal_owner_population_subset_unpaid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszUnpaidCountTiltFloor.retained_literal_count_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "pythonAST": {
+      "exitCode": 0,
+      "path": "scripts/probe_riesz_unpaid_count_tilt.py"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "summary": {
+        "diagnosticOnly": true,
+        "ordinaryBuildOrCI": false,
+        "newArithmeticFloorCertified": false,
+        "supplyUnit": "exp(-v/2) * v^N/N!",
+        "headDependence": "formal price contains exp(5*C_head); not evaluated here",
+        "rows": [
+          {
+            "logNPlusOne": 32,
+            "firstCofactorCount": 160,
+            "minimumWholeBoundaryCount": 162,
+            "oldPaidCountCoefficient": 11.541560327111707,
+            "logInfiniteCountTailUpper": 10.44313001313951,
+            "logExactTiltBudget": 13.39348290013519,
+            "logRationalTiltBudget": 16.0,
+            "logGlobalJoinedPriceWithoutHead": 0.5226756599695302,
+            "logConservativePriceWithoutHead": 3.8223399403942735,
+            "bothParitiesAndAllHigherCountsIncluded": true,
+            "actualClippedCountShiftRetained": true,
+            "oldSpentCountRangeDisjoint": true,
+            "reciprocalPrimeMassIsModel": true,
+            "actualPrimePopulation": false,
+            "arithmeticHeadEvaluated": false,
+            "wholePhysicalFibreCoverCertified": false,
+            "sourceNormalizedWholeFloorCertified": false
+          },
+          {
+            "logNPlusOne": 64,
+            "firstCofactorCount": 320,
+            "minimumWholeBoundaryCount": 322,
+            "oldPaidCountCoefficient": 11.541560327111707,
+            "logInfiniteCountTailUpper": 23.492357286812055,
+            "logExactTiltBudget": 26.78696580027038,
+            "logRationalTiltBudget": 32.0,
+            "logGlobalJoinedPriceWithoutHead": -16.728530896543155,
+            "logConservativePriceWithoutHead": -10.82234951625359,
+            "bothParitiesAndAllHigherCountsIncluded": true,
+            "actualClippedCountShiftRetained": true,
+            "oldSpentCountRangeDisjoint": true,
+            "reciprocalPrimeMassIsModel": true,
+            "actualPrimePopulation": false,
+            "arithmeticHeadEvaluated": false,
+            "wholePhysicalFibreCoverCertified": false,
+            "sourceNormalizedWholeFloorCertified": false
+          },
+          {
+            "logNPlusOne": 128,
+            "firstCofactorCount": 640,
+            "minimumWholeBoundaryCount": 642,
+            "oldPaidCountCoefficient": 11.541560327111707,
+            "logInfiniteCountTailUpper": 49.93391489346938,
+            "logExactTiltBudget": 53.57393160054076,
+            "logRationalTiltBudget": 64.0,
+            "logGlobalJoinedPriceWithoutHead": -52.57113024104506,
+            "logConservativePriceWithoutHead": -41.451914661025874,
+            "bothParitiesAndAllHigherCountsIncluded": true,
+            "actualClippedCountShiftRetained": true,
+            "oldSpentCountRangeDisjoint": true,
+            "reciprocalPrimeMassIsModel": true,
+            "actualPrimePopulation": false,
+            "arithmeticHeadEvaluated": false,
+            "wholePhysicalFibreCoverCertified": false,
+            "sourceNormalizedWholeFloorCertified": false
+          },
+          {
+            "logNPlusOne": 256,
+            "firstCofactorCount": 1280,
+            "minimumWholeBoundaryCount": 1282,
+            "oldPaidCountCoefficient": 11.541560327111707,
+            "logInfiniteCountTailUpper": 103.16185721764576,
+            "logExactTiltBudget": 107.14786320108152,
+            "logRationalTiltBudget": 128.0,
+            "logGlobalJoinedPriceWithoutHead": -125.61892936206497,
+            "logConservativePriceWithoutHead": -104.07364538258655,
+            "bothParitiesAndAllHigherCountsIncluded": true,
+            "actualClippedCountShiftRetained": true,
+            "oldSpentCountRangeDisjoint": true,
+            "reciprocalPrimeMassIsModel": true,
+            "actualPrimePopulation": false,
+            "arithmeticHeadEvaluated": false,
+            "wholePhysicalFibreCoverCertified": false,
+            "sourceNormalizedWholeFloorCertified": false
+          },
+          {
+            "logNPlusOne": 512,
+            "firstCofactorCount": 2560,
+            "minimumWholeBoundaryCount": 2562,
+            "oldPaidCountCoefficient": 11.541560327111707,
+            "logInfiniteCountTailUpper": 209.96343939079932,
+            "logExactTiltBudget": 214.29572640216304,
+            "logRationalTiltBudget": 256.0,
+            "logGlobalJoinedPriceWithoutHead": -273.08880862186066,
+            "logConservativePriceWithoutHead": -230.69138784346376,
+            "bothParitiesAndAllHigherCountsIncluded": true,
+            "actualClippedCountShiftRetained": true,
+            "oldSpentCountRangeDisjoint": true,
+            "reciprocalPrimeMassIsModel": true,
+            "actualPrimePopulation": false,
+            "arithmeticHeadEvaluated": false,
+            "wholePhysicalFibreCoverCertified": false,
+            "sourceNormalizedWholeFloorCertified": false
+          },
+          {
+            "logNPlusOne": 1024,
+            "firstCofactorCount": 5120,
+            "minimumWholeBoundaryCount": 5122,
+            "oldPaidCountCoefficient": 11.541560327111707,
+            "logInfiniteCountTailUpper": 423.91273858539506,
+            "logExactTiltBudget": 428.5914528043261,
+            "logRationalTiltBudget": 512.0,
+            "logGlobalJoinedPriceWithoutHead": -569.4088123970424,
+            "logConservativePriceWithoutHead": -485.30711802080856,
+            "bothParitiesAndAllHigherCountsIncluded": true,
+            "actualClippedCountShiftRetained": true,
+            "oldSpentCountRangeDisjoint": true,
+            "reciprocalPrimeMassIsModel": true,
+            "actualPrimePopulation": false,
+            "arithmeticHeadEvaluated": false,
+            "wholePhysicalFibreCoverCertified": false,
+            "sourceNormalizedWholeFloorCertified": false
+          }
+        ],
+        "thresholdBudgetScan": [
+          {
+            "countPerLogN": 2,
+            "optimizedPostOwnerPower": 1.0,
+            "decaysInBudgetModel": false,
+            "formalThresholdIsFive": false
+          },
+          {
+            "countPerLogN": 3,
+            "optimizedPostOwnerPower": 0.7836046756755068,
+            "decaysInBudgetModel": false,
+            "formalThresholdIsFive": false
+          },
+          {
+            "countPerLogN": 4,
+            "optimizedPostOwnerPower": 0.22741127776021877,
+            "decaysInBudgetModel": false,
+            "formalThresholdIsFive": false
+          },
+          {
+            "countPerLogN": 4.4,
+            "optimizedPostOwnerPower": -0.06921238560278875,
+            "decaysInBudgetModel": true,
+            "formalThresholdIsFive": false
+          },
+          {
+            "countPerLogN": 5,
+            "optimizedPostOwnerPower": -0.5814536593707753,
+            "decaysInBudgetModel": true,
+            "formalThresholdIsFive": true
+          },
+          {
+            "countPerLogN": 11.541560327111707,
+            "optimizedPostOwnerPower": -9.688570656447473,
+            "decaysInBudgetModel": true,
+            "formalThresholdIsFive": false
+          }
+        ],
+        "remaining": "Lower-count dense overlaps, separated population funding, whole literal fibre cover and placement into the floor ledger."
+      }
+    }
+  },
+  "actualSupplyUnits": "amplitude(N,v)/v = exp(-v/2) * v^N/N!",
+  "selectedLiteralSignedPeriodBoundProven": true,
+  "sameOriginalSupplyPaymentProven": true,
+  "previousSpentHolesExcludedForMiddleCountBand": true,
+  "smallTopOriginalLabelsAlreadyPaid": true,
+  "originalWholeFibreCoverProven": true,
+  "finalWholeFloorLedgerPlacementProven": true,
+  "literalWholeFloorCountThresholdLowered": true,
+  "wholeFloorProven": false,
+  "wholeCeilingProven": false,
+  "restrictedContradictionProven": false,
+  "zeroExclusionProven": false,
+  "totalUnrestrictedMatchingCostBoundProven": false,
+  "unrestrictedUnmatchedParityCostBoundProven": false,
+  "sourceNormalizedNormDecayClaimed": false,
+  "signedArithmeticEstimateAssumed": false,
+  "unevaluatedArithmeticHead": true,
+  "effectiveStartingOrderClaimed": false,
+  "publicationDeferred": true,
+  "committed": false,
+  "followUp": {
+    "audit": "docs/riesz-dense-count-cover-floor-audit.json",
+    "documentation": "docs/zeta-riesz-dense-count-cover-floor.md",
+    "terminalTheorem": "RiemannGaussian.ZetaRieszDenseCountCoverFloor.eventually_joined_floor_without_dense_band",
+    "logicalScope": "The selected-row component is unchanged; the follow-up proves the whole-band cover and final floor placement."
+  },
+  "followUpEstablishesWholeBandFlags": true
+}

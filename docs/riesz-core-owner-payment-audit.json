@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/targeted/root-import checks,14 namespace linters and every public transitive standard-axiom audit",
+  "scope": "Actual source-normalized whole-core norm payment for eligible prime log share >=751/1250, all counts and bounded correlated complex submasks, with all original support and phase. Applied to the same rejoined floor ledger with funding/credits/debits unchanged. Reference mass and effective start unevaluated. Independent numerical floor and ceiling remain open.",
+  "documentation": "docs/zeta-riesz-core-owner-payment.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszCoreOwnerPayment.lean": "b42b37c1211e73368e1f4f1bc080d144307f50a1934a1baf2590c4d31fb2c8bb",
+    "docs/zeta-riesz-core-owner-payment.md": "970b50fc1b872d66c7d3afe6650fb358a45a8397c301a2408fb6b73b7239e03b",
+    "scripts/probe_riesz_core_owner_payment.py": "c08511ca81ab974340ab39b9b1bd7d4d29053b8d530fbc6c88957218025cb3c6",
+    "RiemannGaussian/ZetaRieszJointDominantFloor.lean": "d8bb6349e964ee3d7e74ef6b00b703240e0b1ba385e42d1e293cdbfaadcdab9e",
+    "RiemannGaussian/ZetaRieszRejoinedPopulationFloor.lean": "98162c012392f9059e1ec01e34efbac1a9d2bc5f21d3c464fbcf878d5e627ce3",
+    "RiemannGaussian/ZetaRieszJoinedPhysical.lean": "ed3b39a233da33fb3065e06746cbbfe0daf1d79bad47cb773b7e73c4a13c35dc"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszCoreOwnerPayment.selected_sum_bound",
+    "RiemannGaussian.ZetaRieszCoreOwnerPayment.tendsto_core_sub_cropped",
+    "RiemannGaussian.ZetaRieszCoreOwnerPayment.eventually_rejoined_floor_without_large_owners",
+    "RiemannGaussian.ZetaRieszCoreOwnerPayment.remaining_rejoined_geometry"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/core-owner-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "target": "RiemannGaussian.ZetaRieszCoreOwnerPayment",
+      "log": ".lake/core-owner-build.log"
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/core-owner-root.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszCoreOwnerPayment",
+      "linters": 14,
+      "publicTheoremCount": 18,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.upper_tilt_log": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.missing_mass_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.source_rate_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.residual_coefficient_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.normalized_atom_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.selected_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.tendsto_allowance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.core_cofactor_share_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.core_prime_eligible": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.core_atom_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.core_subset_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.core_sub_cropped_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.tendsto_core_sub_cropped": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.remaining_prime_share_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.eventually_joined_cropped_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.source_scaled_subset_crop_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.eventually_rejoined_floor_without_large_owners": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCoreOwnerPayment.remaining_rejoined_geometry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/core-owner-audit.log"
+    }
+  },
+  "wholeFloorProved": false,
+  "wholeCeilingProved": false,
+  "newZeroExclusionProved": false
+}

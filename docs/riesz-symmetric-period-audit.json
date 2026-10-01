@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error compilation/build, ordinary-root-plus-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Exact factorial symmetry saving and a quantitative joined growing-count/radial signed floor on complete original prime fibres. Relative positive-supply cost only; clipped periods, owner holes, the current retained hinge aggregate and numerical whole floor remain OPEN.",
+  "documentation": "docs/zeta-riesz-symmetric-period.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszSymmetricPeriodPayment.lean": "4a563bc1cebd73b19aa24e59431b9e2bad1f7f9023faceba29bbdf6d4644e6b1",
+    "scripts/probe_riesz_symmetric_period.py": "b6e8fc26923089a9714d5e5a45264c4730c04562c5c52c5be2c191fdea1fbdeb",
+    "docs/zeta-riesz-symmetric-period.md": "a5357a2cda4857c458e61f885b2065716bebd56b0a6612db20c632643ca88c4d",
+    "RiemannGaussian/ZetaRieszCofactorMass.lean": "92eaed7e2d9083e908ad4eb37ef3ee3bceb127dcff086b8dec46ef0e60ea413c",
+    "RiemannGaussian/ZetaRieszTransitionFiveFloor.lean": "f95b4ff4aaa031223ecee2a2ef2551f62fc322d9dde847989e117c5cdd6aa409",
+    "RiemannGaussian/ZetaRieszSignedPeriodFloor.lean": "21cf4faa9f20af640265ecc61886756bdc35527ae2c987978cde2df79879cb85",
+    "RiemannGaussian/ZetaRieszStaggeredFloor.lean": "b0e9c56a5baae9cd7c8f02b5c6c75f9cc2c6cc786d6cf917bff2a87f8f36c986"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.factorial_product_mass",
+    "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.sum_symmetricCost_le_six_factorial",
+    "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.signed_population_floor",
+    "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.joined_counts_floor",
+    "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.symmetricCost_le_exponential",
+    "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.tendsto_periodCountCeiling",
+    "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.growing_counts_floor",
+    "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.radial_periods_floor",
+    "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.eventually_radial_periods_supply_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszSymmetricPeriodPayment",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszSymmetricPeriodPayment",
+      "linters": 14,
+      "publicTheoremCount": 19,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.factorial_product_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.factorial_log_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.factorial_reciprocal_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.symmetricCost_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.sum_symmetricCost_le_six_factorial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.signed_population_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.joined_counts_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.momentConstant_reciprocal_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.logMassConstant_div_factorial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.variationConstant_div_factorial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.symmetricCost_le_exponential": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.sum_symmetricCost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.joined_count_cost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.periodCountCeiling_power": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.tendsto_periodCountCeiling": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.growing_counts_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.tendsto_growing_count_relative_cost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.radial_periods_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSymmetricPeriodPayment.eventually_radial_periods_supply_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "path": "scripts/probe_riesz_symmetric_period.py",
+      "rationalFiniteSymmetryRows": 7,
+      "comparisonConstantRows": 7,
+      "pythonSyntaxCheck": true
+    }
+  },
+  "quantitativeResults": {
+    "squarefreeCostDenominator": "k!",
+    "allSelectedCofactorCountsAtLeastSixSavingDenominator": 720,
+    "signedPeriodCostUpper": "2000000 * 2048^k",
+    "joinedCountCostUpper": "2000000 * 4096^K",
+    "relativeRadialCostUpper": "2000000 * v^(-1/4), provided 4096^(4K) <= v",
+    "deterministicCofactorCountCeiling": "Nat.log 4096 (N+1) / 4",
+    "relativeCostTendsToZero": true
+  },
+  "preserved": {
+    "originalSignedPhase": true,
+    "originalFactorialAndAllocation": true,
+    "bothRieszHinges": true,
+    "selectedCompletePrimeFibres": true,
+    "literalOwnerAndCutoffHolesCompleted": false,
+    "cofactorCapRemoved": false,
+    "zeroHypothesisUsed": false,
+    "arithmeticCancellationHypothesisIntroduced": false
+  },
+  "limitations": {
+    "sourceScaleDecay": false,
+    "effectiveStartingOrderEvaluated": false,
+    "clippedPeriodFloor": false,
+    "wholeFloorClosed": false,
+    "wholeCeilingClosed": false,
+    "restrictedContradiction": false,
+    "newZeroFreeRegion": false,
+    "certifiedGlobalDeficitPercentage": false,
+    "overlappingOldFixedCountCreditReusable": false
+  }
+}

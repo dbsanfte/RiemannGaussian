@@ -2110,6 +2110,707 @@ published conditional endpoint and all previous no-gos; update Latest Update
 to report the actual supporting savings and the still-open numerical floor.
 No subagents are authorized. Resume local signed-floor work after publication.
 
+That publication is now COMPLETE at
+`ec0473dfab685561c2fdca7f08ff449684bcca07`. Exact-SHA CI run `36820350501`
+and Pages passed, followed by published desktop/mobile checks of all three
+explorers and the live GitHub README. The 511-record accumulated signed-row
+batch is the checked remote snapshot. Continue the floor locally; no further
+commits, subagents or wider publication gates are authorized by that completed
+request. Run focused Lean, ordinary-root-import lint and transitive axiom
+checks for each local module. Keep the published endpoint and README unchanged
+until the next authorized publication.
+
+`ZetaRieszHingePairCancellation` pairs two adjacent canonical four-incidence
+blocks into the SAME eight original incidences with the SAME label, full
+phase/factorial/allocation and masks. For alpha=log r, beta=log s, v=log q,
+P=log p, D=log(a/e)-L, S=alpha+beta+v and v<=D<=alpha+beta, the exact response
+is -w*mu(a/e)*(S-2D+max(0,S-P-D)). KEEP the other-hinge counter-term. If both
+first hinges are saturated, the separate second-hinge ramp allowance is
+W=alpha+beta-v; the middle-half condition |D-S/2|<=W/4 reduces that sector's
+price to W/2 times the actual signed prime moment. This is NOT a percentage
+of the whole floor deficit. Without saturation the TRUE cancellation centre
+is S/2+max(0,S-2P)/6. The original two-hinge coefficient costs <=W/2 within
+W/6 of this centre, including close-owner labels; this half-WIDTH bound is
+not a claim that every unsaturated sector gets a factor-two saving.
+
+The full prime-row bound retains (S-2D)*M0 + (S-D)*M0_clipped - Mlog_clipped
+as ONE signed expression, with the actual clipped prime set and no separate
+positive boundary price. Common prime support also factors all selected
+bases into one signed Mobius constant/log profile Q_E, but that factorization
+does NOT remove cofactor-dependent prime holes. The correlated version keeps
+each original P(e), counts and radial periods; its total numerical cost is
+still unpaid. Strict genuine overlap lies in the CURRENT retained original
+antidiagonal, outside both previous affine zero selectors. Based-orbit
+disjointness and non-overlap with failed-owner, whole-large-owner and the
+canonical polynomial packet are checked under their displayed predicates.
+No completed cofactor or new scalar carrier is used; polynomialCentralRemaining
+remains the authoritative ledger.
+
+Optional actual-prime dyadic probes at (N,K)=(640,16),(1536,32) retain all
+core masks and include rough close-owner examples where the other hinge
+changes the cancellation centre. The N=1536 all-base spread-log diagnostic
+has 3,842 selected bases over four cofactor counts and strong signed profile
+cancellation, while the clustered-log diagnostic has 42,504 reinforcing
+bases of one count. Neither is a source-scale population bound. Logged
+underflow is NOT cancellation evidence. middle_half_no_prime_shift proves
+that further prime insertion cannot have BOTH ends inside that narrow
+selector; retain its exterior boundary instead of iterating masked affinity.
+The probe is optional and outside builds/CI. See docs/zeta-riesz-hinge-pair.md
+and docs/riesz-hinge-pair-audit.json. All 39 public proofs pass the focused
+warning-as-error build and ordinary-root-import namespace lint/axiom audit;
+only the three permitted standard axioms occur. The whole floor, ceiling, finite starting
+order, certified deficit percentage and new zero exclusion remain OPEN.
+
+`ZetaRieszHingeAllocationPayment` now pays the OWNER allocation on the whole
+selected genuine failed-gap hinge population. With B=(n/largestPrime n)/e,
+log B>=L, the failed gap gives 2 log p+log B<=2.03N. The existing eventual
+L>=11N/8 bound forces log p<=131N/400; the current 1.97N<log n core then makes
+EVERY original prime log at most log n/6 and forces omega(n)>=7. The unchanged
+unpaid factorial orders have total owner mass <=exp(-N/8), proved by a 1/2
+binomial tilt. Only one owner is selected, so its error has no count factor.
+
+For ANY original divisor-incidence submask on `hingeLabels`, the allocated
+minus unallocated coefficient has one global source-scale allowance
+(503/500)*zetaMoebiusLogMajorantMass(2049/2048)*hingeAllocationRate^N, with
+hingeAllocationRate=(503/1000)*(2048/1023)*exp(-1/8)<9/10. This pays ONLY the
+allocation difference. Do not norm-pay the unallocated signed hinge, drop
+either hinge, complete a cofactor, remove prime holes or add an old low-count
+credit. `retained_hinge_allocation_bound` and `central_hinge_allocation_bound`
+apply to the CURRENT original antidiagonal after the affine zero deletions.
+`polynomial_remaining_hinge_allocation_bounds` transfers both signed sides
+directly in polynomialCentralRemaining, leaving all older credits unchanged
+and subtracted once. The remaining selected phase weight is exactly
+(log n/L)*K_N(s0,n); its joint signed constant/log prime moments remain unpaid.
+
+All 19 new public proofs pass the focused warning-as-error build and the
+ordinary-root-plus-module namespace lint/transitive axiom audit. Only the
+three allowed standard axioms occur. Optional log-domain original-order and
+actual-prime dyadic regressions are outside builds/CI; see
+docs/zeta-riesz-hinge-allocation.md and docs/riesz-hinge-allocation-audit.json.
+The fixed majorant mass and effective starting order are NOT evaluated.
+Do not mistake error rates per unit of that mass or an underflowed sample
+for a bound on the retained source. Together with the earlier hinge-pair
+slice this is 58 checked local public proofs in two modules. No commits,
+subagents, wider gates, new zero exclusion or whole floor/ceiling claim.
+
+`ZetaRieszPolynomialOwnerPayment` now pays the complete original population
+with largestPrime(n)<=(N+1)^32. Its arbitrary partial-incidence coefficient
+has eventual source norm <=(39/40)^N, uniformly in all moving heights,
+allocations and original masks. The Rankin exponents63/64 and129/128 give
+Euler cost exp(2*countMass(129/128)*(N+1)^(3/4)); a fixed tilt33/64 absorbs
+this with rate(10001/20000)*(64/33)*exp(1/256)<39/40. The exponent16 candidate
+was NOT counted as a new cofinal saving: the original dyadic count ceiling
+already makes that smooth-owner population eventually empty. Keep exponent32.
+The starting order and comparison mass are not evaluated. Its 16 public
+proofs, optional original-mask probe and audit are documented in
+docs/zeta-riesz-polynomial-owner.md and docs/riesz-polynomial-owner-audit.json.
+
+The latest global floor endpoint is `ZetaRieszReducedCountPayment`:
+`eventually_remaining_reducedCount_bounds` lowers the paid count threshold
+from omega>=K_j to256*omega>=K_j, for the SAME dyadic schedule and ALL share
+geometries/radial periods. b=exp(log(17/16)/256), b^N<=K^omega; the complete
+Euler count mass is exp(2*K*countMass(1000001/1000000))/b^N. q=499999/1000000
+gives r=(10001/20000)/(q*b)<1 and paidCountRate=(1+r)/2<1. The whole literal
+partial-incidence population has ONE independent budget
+(203/50)*(10001/20000)*(N+1)*paidCountRate^N, with every original phase,
+allocation, count/radial/physical mask and both hinges retained. No hidden
+Type-II, prime-density or hypothetical-zero estimate is assumed.
+
+The terminal ledger keeps all earlier credits unchanged and spent once,
+adding only this geometric error and the previous hinge-allocation error;
+both tend to zero. Its remaining main satisfies256*omega<K, and genuine
+hinges satisfy7<=omega<K/256. This is a threshold reduction, NOT a percentage
+bound on signed mass or a closed floor. Lower counts and the still-retained
+growing counts require their independent joint estimate. Do not reuse old
+count credits, resurrect restAllowance, or sum overlapping smooth-owner and
+count-population credits without a disjoint ledger. No scalar carrier was
+introduced. Its 15 public proofs, optional probe and audit are recorded in
+docs/zeta-riesz-reduced-count.md and docs/riesz-reduced-count-audit.json.
+The comparison mass/starting order remain unevaluated; finite samples and
+underflow are not certificates. This brings the local batch to89 checked
+public proofs in four modules. Keep focused warning-as-error validation,
+ordinary-root-plus-module namespace lint and all public axiom checks. No
+commits, subagents, wider gates, floor/ceiling or new zero exclusion claim;
+preserve the published README and explorer endpoints.
+
+`ZetaRieszLowOffsetPairFloor` adds an independent signed saving on a NEW
+low-offset region, including near-balanced seven-prime geometries missed
+by the previous overlap selector. For D=log(a/e)-L, 0<=D<=log r and
+P+D<=log r+log s, the two old four-divisor blocks have exact responses
+w*mu(a/e)*X and -w*mu(a/e)*Y, where X=log r+log s-P-2D and Y=P+D-log q.
+If X<=5Y and Y<=5X, joining them costs <=2/3 of their separate REAL-part
+allowance for every original complex phase. This is a ONE-THIRD sector
+allowance saving, NOT a fraction of the whole floor deficit or a bound on
+the aggregate remaining price. Both original hinges remain: the adjacent
+block crosses the first hinge even though it lies below the cofactor hinge.
+
+The exact retained prime row is mu(a/e)*[(S-3D)*M0-2*Mlog], with its literal
+prime endpoints/holes and no countwise or positive boundary allowance.
+`low_offset_pair_subset_retained` places both blocks after the CURRENT
+affine zero deletions. `global_retained_low_offset_floor` leaves all other
+labels/incidences signed. `eventually_remaining_low_offset_floor` is a
+DIRECT floor-ledger comparison for polynomialCentralRemaining after the
+reduced count crop/allocation payment; all older credits and both geometric
+errors stay unchanged and occur once. LowOffsetData is finite arithmetic
+geometry, not a hidden signed discrepancy hypothesis. No new scalar carrier.
+
+The optional actual-prime regressions at N=640/1536 keep seven factors and
+all original core masks; joined/separate ratios are about0.437/0.553 and
+the old overlap selector fails. These small samples are NOT below the new
+reduced count threshold. The large-order ratio about0.651 is ONLY ideal log
+geometry, without prime construction or population mass certification.
+Underflow is not cancellation. No effective start or aggregate floor is
+claimed. See docs/zeta-riesz-low-offset-pair.md and
+docs/riesz-low-offset-pair-audit.json. Its 15 public proofs pass focused
+warning-as-error compilation, ordinary-root-plus-module namespace lint and
+transitive axiom checks, giving104 checked local public proofs in five
+modules. The whole floor/ceiling and restricted contradiction remain OPEN.
+Keep local-only work, no commits/subagents/wider gates, and published
+README/explorer endpoints unchanged.
+
+`ZetaRieszSymmetricPeriodPayment` now removes the EXACT `k!` ordering
+overcount from squarefree cofactor masses and applies the saving AFTER
+the original signed prime period has been summed. The full prime phase,
+factorial weight, both Riesz hinges, owner allocation and selected masks
+are unchanged. `sum_symmetricCost_le_six_factorial` reduces the ENTIRE
+complete-period budget for total counts>=7 (cofactor counts>=6) by at
+least720, including moving count sets. This is not a percentage of the
+whole floor deficit and does not pay clipped or owner-masked prime holes.
+The saving applies to the ordered tuple cover ONLY: existing exact Euler
+count masses already count each label once; do not divide those by k!.
+
+The new uniform constants are logMassConstant(k)/k!<=144^k and
+variationConstant(k)/k!<=576^k. symmetricCost(k)<=2,000,000*2048^k;
+the entire selected band throughK costs<=2,000,000*4096^K. When
+4096^(4K)<=v its joint signed cost is<=2,000,000*v^(-1/4) times the SAME
+radial unit. periodCountCeiling(N)=Nat.log4096(N+1)/4 tends to infinity;
+`growing_counts_floor` has no fixed-count eventual threshold. The final
+`radial_periods_floor` sums counts AND radial periods before pricing;
+`eventually_radial_periods_supply_floor` charges any already-checked
+positive supply paying those same radial units by an arbitrarily small
+fraction. Its supply comparison remains explicit. No bilinear estimate,
+prime-density approximation or exposed-zero assumption is hidden.
+
+This is a RELATIVE signed complete-period floor, not source-o(1) decay
+or the numerical-79/1000 floor. The old0.398..0.985 cofactor cap and
+canonical prime owner gap remain; every whole selected prime fibre must
+belong to the original allocation set. Do not fill its literal holes,
+double-charge overlap with the earlier fixed-count3..55 supply, or apply
+its vanishing relative cost to the diverging(2u)^N envelope. The explicit
+band grows slowly and has no effective start; old fixed-count estimates
+are stronger at modest orders. Genuine hinge crossings, owner/cutoff
+holes and higher counts still require their independent signed bound.
+The current polynomialCentralRemaining ledger and published endpoints
+are unchanged. No whole floor/ceiling, contradiction or zero exclusion.
+
+All19 new public proofs pass focused warning-as-error build and ordinary
+root-plus-module namespace lint/all public transitive axiom checks; only
+the three permitted standard axioms occur. The optional rational finite
+symmetry/constant log-domain probe is outside builds/CI; see
+docs/zeta-riesz-symmetric-period.md and
+docs/riesz-symmetric-period-audit.json. This gives123 checked local public
+proofs in six modules. Continue locally without commits, subagents or
+wider publication gates, preserving all previous no-gos and the README.
+
+`ZetaRieszHigherRankHingeFloor` now extracts the common cancellation
+mechanism and strengthens the SAME current floor ledger. All incidences
+share the original n=p*a phase/factorial/allocation. For R=a/e, k=omega(R),
+S=log R, P=log p and D=S-L, a lower cutoff admitting only the unit and an
+upper cutoff admitting only unit/single primes evaluate the entire based
+block as w*mu(R)*(S-(k-1)P-kD). `subset_single_layer_difference` proves
+the same identity for arbitrary finite positive increments, not only primes.
+The controlling property is the active subset layers, not a fixed count.
+
+The canonical first block has amplitude X=log Q-P-2D and ALL its other
+ranks have opposite amplitude Y=(k-2)*(P+D)-(S-log Q). Under3X<=5Y and
+3Y<=5X, `higher_rank_quarter_floor` prices their combined real response at
+one quarter of the separate two-GROUP real allowance. This is a75% SECTOR
+saving, not a whole-deficit fraction. `rank_quarter_of_band` gives an
+explicit interval for every rank; equal increments cancel at D=P/k.
+`norm_linear_orbit_le` costs the joined single-layer response at most
+||w||*(k-1)*P instead of an exponential divisor cover. This norm is AFTER
+all ranks are summed, and is not a source-scale population payment.
+`reinforcing_endpoint_response` shows that this linear price is sharp at
+D=P in the abstract equal-increment model. Do not infer uniform zero cost.
+
+The original e|d filter retains whole canonical pair orbits. The old
+short/affine zero deletions remain zero after filtering, including their
+literal boundaries; `retained_based_sum_eq_full` gives the current retained
+response with no reused credit. `eventually_remaining_higher_rank_floor`
+keeps all old credits and both allocation/count geometric errors unchanged
+and subtracted once. Choose ONE base per physical label: maximal based
+blocks can overlap. Do not add this price to an overlapping old low-offset
+or complete-period sector. The exact prime row stays ONE signed constant/
+log moment on its actual prime mask; its aggregate arithmetic cost is open.
+
+All22 public proofs pass focused warning-as-error compile/build and
+ordinary-root-plus-module namespace lint/transitive axiom checks, giving
+145 checked local public proofs in seven modules. The optional exact
+rational and actual-prime probe is outside builds/CI; see
+docs/zeta-riesz-higher-rank-hinge.md and docs/riesz-higher-rank-hinge-audit.json.
+Actual seven-/ten-prime ratios0.077..0.147 pass the quarter selector;
+fourteen-/twenty-prime ratios0.613..0.923 fail it. Small literal samples are
+not below the eventual reduced count threshold, and floating source-weight
+underflow is not a certificate. The whole floor/ceiling and restricted
+contradiction remain OPEN. Continue locally without commits/subagents/
+wider gates, retaining the published README/explorer endpoints and no-gos.
+
+`ZetaRieszLogShellPeriodFloor` consolidates the complete signed prime-period
+and close-owner boundary payments using previously lost comparable-log
+support. The current HigherRankData implies ALL cofactor prime logarithms,
+including the base primes, lie in [P/2,P]. The exact based response also has
+the common total-log centre log(e)+k*L/(k-1), independent of the individual
+cofactor prime geometry. Neither statement fills clipped prime support.
+
+Any actual prime shell H<=log(p)<=4H, H>=1, has reciprocal mass at most
+M=5*log(4). An arbitrary selected squarefree count-k population supported
+there has mass <=M^k/k!, with no tuple overcount. After the literal signed
+complete prime fibre is summed, ALL selected counts cost at most
+1207600*exp(4*M)*v^(-1/2) times amplitude(N,v)/v. The old cofactor cap,
+owner gap, phase-grid orientation and whole-fibre membership remain.
+No extra count ceiling appears, but the cap still excludes tiny owners;
+do not infer that all high-count physical geometries have been covered.
+
+The close-owner boundary payment now has NO count ceiling. The actual
+near-tied pair lies in one short logarithmic window with reciprocal mass
+<=2/H; its two-prime cost is <=4/H^2. The remaining squarefree shell mass,
+log(b.minFac)<=4H and the literal radial inequality v<=8H*(k+2) give one
+all-count original atom-norm budget 24576*exp(4*M)/v relative to the SAME
+radial unit. Original submasks/allocation/phase remain. H>=10000 and the
+short radial/close-owner geometry are retained; other holes are not paid.
+`signed_period_with_boundary_floor` joins both arithmetic estimates, and
+`radial_periods_with_boundary_floor` aggregates all selected counts and
+radial periods with relative rate O((N+1)^(-1/2)). This is NOT source-o(1)
+or the numerical floor. A disjoint literal cover and actual retained-supply
+comparison still have to enter the current polynomialCentralRemaining
+ledger without reusing older credits. Wider prime-log spreads, tiny-owner
+prime periods and other hinge-selector/clipped boundaries remain open.
+Do not multiply this relative rate by the divergent (2u)^N envelope.
+
+All24 public proofs pass focused warning-as-error direct/build and the
+ordinary-root-plus-module namespace lint/transitive axiom checks; only
+the three allowed standard axioms occur. The optional actual finite prime
+mass, exact rational symmetry and cost probe is outside builds/CI; see
+docs/zeta-riesz-log-shell-period.md and docs/riesz-log-shell-audit.json.
+The constants are coarse; no effective start or deficit fraction is
+certified. This gives169 checked local public proofs in eight modules.
+The whole floor/ceiling and restricted contradiction remain OPEN. Continue
+locally without commits/subagents/wider gates or published endpoint changes.
+
+`ZetaRieszTinyOwnerPeriodFloor` extends the signed original owner-prime
+floor beyond the old log(a)<=.985*v cap. Its exact original atom retains
+the selected owner factorial sum, both Riesz hinges and the complex phase.
+Only squarefreeness/count>=2, actual ownership gap P0=v-pi/y-log(a),
+whole prime-fibre membership and the old phase-grid orientation enter.
+No fixed positive owner share or upper count is assumed. With all cofactor
+prime logs in[H,4H], H>=5000, jointPeriodCost<=5/H^2. The exact two-hinge
+response, quarter-period cutoff variation and original squarefree shell
+mass give the signed count price481*(2*M)^k/(H*k!), M=5*log(4).
+Every selected count is summed into one constantC=481*exp(2*M)=504365056.
+
+All dyadic owner-log shells cost at most2*C/H0, with NO factor for the
+number of shells. `retained_single_layer_shell_exists` derives an actual
+shell cover for the whole cofactor support on current HigherRankData,
+including base primes; it does not assert a whole-prime-period cover.
+`radial_dyadic_shells_floor` joins counts/shells/radial periods before
+charging their SAME radial units. H0=8*log(N+1) gives relative price
+126091264/log(N+1)->0. This is NOT absolute source-scale decay.
+`eventually_period_shell_cost_paid` connects that price to the SAME
+existing selected supply and scale, costing at most1/256 of its value
+eventually. Its original scale/phase hypotheses remain. A compatible
+disjoint literal cover is still required before spending half the
+retained1/128 reserve; no original credit is silently reused.
+
+The current polynomialCentralRemaining is unchanged. Other clipped
+prime periods, selector/physical boundaries, wider log spreads and the
+whole-ledger cover remain OPEN. The previous close-owner boundary
+payment is not silently identified with these missing boundaries.
+Do not multiply a relative price by the divergent(2u)^N envelope.
+The constants are coarse; no effective order or global deficit fraction
+is certified. All19 public proofs pass focused warning-as-error
+direct/build, ordinary-root-plus-module namespace lint and transitive
+axiom checks (only the three allowed standard axioms). The optional
+curvature/count/shell probe and audit are outside builds/CI; see
+docs/zeta-riesz-tiny-owner-period.md and
+docs/riesz-tiny-owner-period-audit.json. This brings the local batch to
+188 checked public proofs in nine modules. No whole floor/ceiling,
+restricted contradiction or new zero exclusion. Continue locally
+without commits/subagents/wider gates or published endpoint changes.
+
+ZetaRieszClippedOwnerPeriodFloor now consolidates complete signed owner
+periods and their actual clipped-start boundary, including the genuine-hinge
+A=empty main after its independently paid allocation error. The previous
+owner-allocation period lemma required p in A and was not applicable to this
+main. selectedAmplitude_full retains EVERY factorial order;
+unallocated_fibre_floor / unallocated_all_counts_floor prove the correct
+full-kernel signed inequality directly. unallocated_retained_atom_eq and
+unallocated_retained_real_eq_parts preserve all old zero-orbit deletions
+inside the literal antidiagonal, so no credit is restored or spent twice.
+
+On a canonical n=p*a in a phase period, ownership failure at its lower
+endpoint forces log(p)-log(q)<1/8 for a genuine cofactor prime q.
+owner_start_clipped_close and no_close_owner_period_gap hold at arbitrary
+counts. The close-owner shell payment now requires ONLY cofactor primes
+in[H,4H]; the owner may cross its upper endpoint. Its remaining k-factor
+mass M^k/k!, actual close-pair mass4/H^2 and least-prime log<=4H give one
+boundary price1536*(2*M)^k/(H*k!), M=5log4. The 1/H is retained instead of
+being replaced by k/v. ALL counts cost1536exp(2M)/H radial units; both
+missed sign selections cost one original atom, not two.
+
+The joined main-plus-boundary constant isC=2017*4^10=2114977792.
+unallocated_dyadic_period_floor / unallocated_radial_period_floor join
+all selected counts, dyadic shells and radial periods before pricing,
+with no cofactor cap, count ceiling or number-of-shells factor.
+Retainingv>=N+2 gives cost2C/[H0*(N+2)] against the SAME positive
+factorial supply units. H0=8log(N+1) yields relativeO(1/(NlogN));
+eventually_joined_radial_cost_paid uses at most1/256 of the SAME selected
+supply with its old scale and phase-window hypotheses explicit.
+This remains a RELATIVE payment, not source-o(1) norm decay. Never price
+it against the divergent(2u)^N envelope or double-spend that supply.
+
+hinge_whole_fibre_mem_intermediate proves physical mask compatibility for
+actual retained hinges withlog(p)>32log(N+1), log(N+1)>=1 and the original
+length bound. Canonical ownership, coprimality, squarefree cofactor and
+count relations are general. Actual whole-fibre selection, owner gaps,
+comparable cofactor logs and phase-grid orientation remain explicit in the
+signed estimate. A label shell cover still does NOT prove a compatible
+disjoint complete-fibre cover after all current masks and old credits.
+Other selector/radial clips, wider prime-log spreads and the global cover
+remain OPEN. polynomialCentralRemaining and all published endpoints are
+unchanged. No wholefloor/ceiling, restricted contradiction or zero exclusion.
+
+All33 public proofs pass focused warning-as-error direct/build and
+ordinary-root-plus-module namespace lint/all public transitive axioms,
+with only the three permitted standard axioms. This brings the local
+batch to221 public proofs in ten modules. The optional finite ownership,
+exact squarefree symmetry and joined-price probe is outside builds/CI;
+its finite primes do NOT meet the eventual Chebyshev threshold and no
+effective order/global deficit fraction is certified. See
+docs/zeta-riesz-clipped-owner-period.md and
+docs/riesz-clipped-owner-period-audit.json. Continue locally without
+commits, subagents, wider publication gates or README endpoint changes.
+
+`ZetaRieszRadialPeriodPayment` now removes BOTH constant-width radial
+period clips directly from the SAME polynomialCentralRemaining ledger.
+ForN>=1000, the1.97N+1 and2.03N-1 layers lie in the enlarged1.971N
+and2.029N tails. Exact rational hundredth-power certificates and the
+summable reference exponent1+1/1048576 give one source-normalized
+rate exp(-N/1000000), uniform at u<=10001/20000 and every height.
+The literal partial-incidence estimate allows arbitrary original
+divisor submasks and label-dependent allocations. The new main crops
+these endpoint labels after the existing reduced-count crop; every old
+credit remains subtracted once. Its total displayed error tends to zero
+on the original cofinal schedule. These are GLOBAL independent payments.
+
+Buffered labels have their entire phase period inside the original radial
+window. On an original same-cofactor row meeting a genuine hinge in that
+period, the owner remains below one sixth of the total log even across
+the hinge-selector boundary. completed_hinge_owner_sum_bound pays its
+allocation switch globally with the old geometric rate and no count/row
+factor. This does not fill other prime/count/physical masks. See
+docs/zeta-riesz-radial-period.md and docs/riesz-radial-period-audit.json.
+
+`ZetaRieszBroadOwnerPeriodFloor` consolidates the signed main and ACTUAL
+ownership clips across every selected count and arbitrary cofactor
+prime-log spreads above an explicit cutoff. The old comparable-log
+[H,4H] restriction is replaced by[a,4H], with5000<=a<=H andH>=10000.
+prime_interval_mass_le proves the actual prime reciprocal bound
+log(b/a)+1/a, with leading coefficientONE. This is a positive cofactor
+mass estimate AFTER signed prime-period cancellation, not generic
+PNT/Abel transport of the retained carrier. Exact squarefree symmetry
+keepsM^k/k!, and exp(2*(log(4H/a)+1/a))<=32H^2/a^2 prevents the
+count exponential from losing the two-power prime-period saving.
+
+Actual clipped witnesses retain their location above the SAME owner-log
+scale. Every count and both missed sign selections cost one boundary
+atom. The joined period price is64544H/a^2 timesF_N(v)/v.
+Summing all dyadic owner scales withsumH_j<=2v and all radial periods
+gives the single signed budget129088/a^2 times sumF_N(v). The subsequent
+normalization audit WITHDRAWS the previous claim that this pays1/256 of
+the actual supply at a=log(N+1): F_N(v)=amplitude N v has degreeN+1,
+but period_grids_cost_paid usesF_N(v)/v. The actual supply-unit price is
+129088*v/a^2. Both earlier Lean theorems are valid individually; they do
+not compose without this extra radial factor. Preserve the sharper old
+comparable-log bound on its own support and never duplicate supply
+credits or multiply a relative price by(2u)^N.
+
+The current core does NOT by itself imply that EVERY cofactor prime is
+aboveN^2 merely because its allocation uses intermediatePrimes.
+The lower cofactor-prime cutoff, complete original fibres, disjoint
+literal cover, selected phase grids, old-credit compatibility and
+small-prime/exterior selector populations still need proof before the
+new joined relative estimate pays the whole floor. Keep those obligations
+explicit. See docs/zeta-riesz-broad-owner-period.md and
+docs/riesz-broad-owner-period-audit.json. The optional exact symmetry/
+constant probes are outside builds/CI. Tiny finite probe primes do not
+meet the eventual Chebyshev threshold; no starting order or fraction of
+the whole floor deficit is certified.
+
+Both modules pass the focused warning-as-error direct/build and ordinary
+root-plus-module namespace lint/all public transitive axioms, with only
+the three allowed standard axioms. Their20+18 new proofs bring the local
+batch to259 public proofs in twelve modules. These are supporting global
+and relative savings; the independent whole-79/1000 floor,3/2 ceiling,
+restricted contradiction and new zero exclusion remain OPEN. Continue
+locally without commits, subagents or wider publication checks; keep
+the README and published endpoints unchanged.
+
+### Small-block consolidation and literal ownership clips (local)
+
+`ZetaRieszSmallCofactorCancellation` joins arbitrary squarefree divisor
+blocks containing the canonical least-prime pair AFTER BOTH old zero
+deletions, with the original complex weight unchanged. Odd blocks have
+an exact midpoint reflection zero and a quantitative distance bound.
+Small primes do not generically disappear: clustered large-prime logs
+can isolate one reinforcing divisor/count layer. Their useful extra
+property is a gap between successive layers. If the changing hinge
+misses those layers on the WHOLE prime period, the full response is
+constant and its cutoff-variation debit disappears exactly.
+
+The resulting flat-response row floor has price120b/H^2 times
+(2M)^k/k! times amplitude(N,v)/v, where log(minFac(cofactor))<=b.
+All selected counts may grow and EVERY small cofactor prime is retained.
+An exact finite prime head belowexp(5000) and the leading-one tail mass
+bound give exp(2M)<=smallPrimeHeadCost*H^2. The head constant is finite,
+positive and unevaluated. Thus the all-count flat price is120*headCost*b
+in the actual amplitude/v units. The empty allocation applies only on
+the population already covered by the global hinge-allocation payment.
+
+`ZetaRieszSmallOwnerBoundary` proves that deleting the actual two near-
+tied large owners preserves the small least prime. Its literal fixed-
+count boundary price is384b/H^2 instead of1536/H: a factorb/(4H) saving.
+It retains original allocation and phase. Both missed sign selections
+spend ONE atom. After all counts and small primes are joined, the flat
+main plus actual ownership boundary has price504*headCost*b. A joint
+four-cutoff layer-gap criterion also makes the whole original allocated
+complex boundary atom EXACTLY zero. It may consolidate already-deleted
+zeros but creates no additional supply credit.
+
+IMPORTANT NORMALIZATION: amplitude(N,v) has degreeN+1; the positive
+radial supply usesamplitude(N,v)/v. The previous broad all-radial
+coefficient129088/a^2 againstamplitude is129088*v/a^2 in supply units.
+Do NOT compose broad_radial_supply_floor with the standalone
+eventually_broad_radial_cost_paid without that factor. The earlier
+documentation's combined1/256 supply payment has been withdrawn.
+small_flat_radial_supply_floor now uses the CORRECT units and joins
+all counts, dyadic owner scales and radial periods. Its positive price
+504*headCost*b*(1+logG/log2) still grows for b=log(N+1), G=4(N+1).
+Lean proves that actual price tends to infinity and cannot fit any
+fixed supply fraction. The price divided byN+1 tends to zero only in
+the wrong, one-degree-higher units; it pays no literal packet. This is
+a no-go for this positive majorant, not for a sharper signed floor.
+
+The optional small-block and ownership probes are outside builds/CI.
+Order640 literal labels pass the original core mask but fail the later
+reduced-count crop and effective Chebyshev threshold; growing equal-log
+models are not actual-prime populations. Underflow is not cancellation.
+An ownership gap case vanishes while the last active small-block hinge
+can retainlog(2) and a negative arithmetic coefficient. The next estimate
+must retain joint signs across those active cofactor/count crossings;
+do not pretend a relative amplitude price is an actual supply payment.
+The complete original fibre cover, other physical/selector holes and
+disjointness from all prior credits remain explicit obligations.
+
+The18+16 public proofs pass focused warning-as-error direct/build,
+ordinary-root-plus-module14-linter checks and every public transitive
+axiom audit, with onlypropext,Classical.choice,Quot.sound. This brings
+the unpublished batch to293 public proofs in fourteen modules. See
+docs/zeta-riesz-small-cofactor.md, docs/zeta-riesz-small-owner-boundary.md
+and their source-hashed auditJSON files. Whole floor/ceiling, restricted
+contradiction and new zero exclusion remain OPEN. Continue locally
+without commits, pushes, subagents or wider publication checks; preserve
+the README and published default endpoints.
+
+### Active count transport and total-log population prices (local)
+
+`ZetaRieszCrossCountTransport` joins opposite Mobius ranks at NEARBY
+logarithmic bases of the SAME original label. Both hinges, the original
+complex phase, factorial kernel, owner allocation and masks remain.
+The half-count involution price prevents charging each pair twice. The
+other hinge may be checked inactive separately for different matched
+pairs. Retained original orbit identities are proved AFTER BOTH old
+zero deletions. The direct `polynomialCentralRemaining_transport_floor`
+keeps the unmatched signed sum, explicit total transport cost and the
+four old independent credits once. No source-scale transport-cost bound
+or numerical whole floor is asserted. The same relation lifts over
+arbitrary common background factors and count ranks, with disjoint
+placement still required. Clustered active layers may have only ONE
+parity; Lean prohibits universal opposite-parity matching and proves
+their possible full reinforcement, uniformly at growing counts.
+
+The user next required the global matching/unmatched costs. The checked
+`ZetaRieszParityLayerCost` now prices a broad STRUCTURED population by
+complete signed prime periods while retaining its total logarithm.
+The cofactor log scaleJ is independent of the owner scaleH, withJ<=H.
+On the retained core, the cofactor carries more thanv/4. Count tilting
+therefore gives8exp(4M-v/(32J)); the uniform owner payment is32/v.
+The LITERAL unique-owner factorial allocation is kept in the signed
+main. Both missing sign selections spend ONE original boundary atom.
+The joined price is221440exp(4M)/v timesamplitude(N,v)/v.
+
+EVERY small prime is retained. For prime logs<=B OR in[J/W,4J], with
+B>=5000,W>=1,J>=10000W, the exact finite head and leading-one prime
+interval mass giveexp(4M)<=gappedHeadCost*B^4*W^4. All selected counts,
+dyadic owner scales and radial periods are joined into ONE price:
+221440*gappedHeadCost*B^4*W^4*(1+logG/log2)/(N+1), in the ACTUAL
+amplitude/v supply units. ForB=W=32log(N+1),G=4(N+1), Lean proves
+gappedSupplyPrice=O(log^9(N)/N)->0; it fits any fixed positive reserve
+fraction eventually. FixedW givesO(log^5(N)/N). The head constant is
+finite, positive and UNEVALUATED; no effective starting order is claimed.
+Never turn this relative supply payment into source-o(1) by multiplying
+it by the divergent(2u)^N envelope. Any reserve must be disjoint from
+old credits, and every original complete fibre/mask cover remains required.
+
+This does NOT cover the intermediate intervalB<logp<J/W. An optional
+continuous log-geometry probe adds one mesoscopic prime to a cluster:
+all66 active blocks still have ONE parity and the label misses the
+structured spectrum condition. It is not a literal-prime or population
+certificate. Simply enlarging the head is no rescue for this majorant:
+large_head_price_lower proves thatB^2>=N+1 makes even its single-period
+correctly normalized price grow at least linearly. This is an audit of
+the positive price, not impossibility of a new signed arithmetic bound.
+
+The full total matching cost, unrestricted unmatched layers, intermediate
+log scales, complete original fibre/physical cover and fresh reserve
+compatibility remain OPEN. Do not report the new structured-population
+inequality as the independent-79/1000 floor or as a zero exclusion.
+The23+20 public proofs pass focused warning-as-error direct/build,
+ordinary-root-plus-explicit-module namespace lint and ALL public
+transitive axioms, with onlypropext,Classical.choice,Quot.sound. This
+brings the unpublished batch to336 public proofs in sixteen modules.
+See docs/zeta-riesz-cross-count-transport.md,
+docs/zeta-riesz-parity-layer-cost.md and their source-hashed auditJSON.
+Optional probes remain outside builds/CI. Continue locally without
+commits, pushes, subagents or wider publication gates; preserve README
+and published default endpoints.
+
+### Intermediate-scale populations and joined signed cancellation (local)
+
+The user required enumeration and signed cancellation for the denser
+intermediate populations. `ZetaRieszIntermediateScaleCost` retains the
+ACTUAL intermediate primes E={p in U:B<logp<J/W}, rather than deleting
+them or enlarging the small-prime head. The exact marked finite Euler
+budget is t^m exp(4M_good+4M_E/t). At t=16, m<=floor(log(N+1)/4),
+the literal signed owner-prime periods and their ownership clips have
+ONE global relative-supply price O(log^9(N)/N^(1/20))->0. The permitted
+intermediate count tends to infinity. Both missed sign selections spend
+ONE original boundary atom. All true units are amplitude(N,v)/v.
+Actual prime support, complete original fibres and allocation remain
+explicit. Retuning a positive marker cannot universally extend this:
+when m>=logx and ACTUAL M_E>=logx/2, every t>=1 costs at least sqrtx
+in the correctly normalized allowance. This is not a signed no-go.
+
+`ZetaRieszDenseShellCost` removes the factor-count ceiling for dense
+clusters. Assign intermediate primes to their UNIQUE dyadic LOG bins,
+with the upper endpoint included. One shell has exp(4M)<=32, without
+any restriction on how many primes it contains. Exact occupied-pattern
+partitioning retains arbitrary complex weights and places every original
+label once; divisor deletion inherits its pattern. Among the ENTIRE
+available grid of at most2logx+1 bins, all patterns with at mostlogx/16
+occupied bins cost at mostexp(1)sqrtx. `global_all_pattern_floor`
+derives the literal signed main+clips inequality over ALL patterns,
+counts, owner scales and radial periods, with relative cost
+O(log^9(N)/sqrtN)->0. It does not assume a bilinear signed bound.
+A population confined to one union of at mostlogx/8 bins also has the
+uncapped signed bound. These relative costs require a fresh disjoint
+supply reserve and original full-fibre cover; never turn them into
+absolute source-o(1) via the divergent(2u)^N envelope.
+
+`ZetaRieszSeparatedParityFloor` covers a different widely spread
+configuration. Both exact two-prime finite differences are joined BEFORE
+estimating. If distinct background divisor logs are at leastlogr+logs
+apart, at most ONE tent pays either original hinge. The ENTIRE retained
+divisor response therefore has floor-2|Re w|min(logr,logs), independently
+of count. BOTH previous zero deletions and original phase/allocation
+remain. `superincreasing_divisor_log_gap` proves this separation from
+the ACTUAL squarefree prime-log inequalities
+logp>=logr+logs+sum_{smaller q}logq. The global original-label theorem
+keeps the total weighted population cost explicit and UNPAID.
+
+`ZetaRieszDenseSmallTopFloor` bounds an overlapping dense population
+by RETAINING the original count tilt. When ALL cofactor prime logs<=4J
+and512Jlogx<=v, the true cofactor window loga>=v/4 forcesomega(a)>=32logx.
+The exact signed complete-period price is3848exp(4M-v/(32J))/H.
+The actual finite whole-prime mass hasM<=C_head+logx, so the rate is
+O(N^-12) per selected owner scale. ALL owner scales and radial periods
+have ONE global relative costO(logN/N^12)->0, without ANY factor-count
+or occupied-bin ceiling. If4J<H, the original near-owner clip is proved
+EMPTY from its literal cofactor support; no boundary is simply dropped.
+Both parities, both hinges and changing original allocation remain.
+The new nonempty-boundary variant needs onlyJ<=H: its literal clipped
+norm price retains12288exp(4M-v/(8J))/H. Both missed sign selections spend
+ONE boundary atom, and the joined global price is16136 in place of3848,
+with the sameO(logN/N^12) rate. HOWEVER the later unpaid-ledger audit
+proves these labels were ALREADY in the old whole high-count tail.
+Do not count this as new unpaid coverage or spend a reserve for it again.
+
+Use this priority classification for dense intermediate labels:
+(1) remove the old spent tail FIRST; small-top labels already belong there;
+(2) counts5logx+2<=omega(n)<countThresholdN: new signed count-tilt
+    period cost, with ALL share spreads, bins and crossing parities;
+(3) few occupied bins below that count band: all-pattern signed cost;
+(4) many bins at lower counts, separated divisor windows: count-free tent cost,
+    with population funding still open;
+(5) many bins at lower counts, overlapping windows with BOTH active parities:
+    opposite-rank transport costs/coverage and unmatched layers open;
+(6) many bins at lower counts, overlapping windows with ONE active parity:
+    local universal matching impossible, further cross-label/prime-period
+    cancellation still needed.
+Use cases in this order to avoid double spending. Inactive responses are
+exactly zero. Few-bin clusters can be one-parity: they are covered by (3), not rejected
+because local matching fails. Incomplete physical fibres and spent supply
+credits are separate mask/ledger obligations. This taxonomy is not a
+proof that the remaining classes are empty or source-small.
+
+`ZetaRieszUnpaidCountTiltFloor` now targets a GENUINELY unpaid count band.
+The exact old threshold is8Nat.clog2(N+1), at most16logx forN>=7.
+Every squarefree unpaid original label has smaller count. Counts8 up
+to that threshold avoid EVERY old head, four-prime supply and tail;
+complete owner fibres therefore have no previously-spent holes there.
+`owner_fibre_count` retains actual squarefreeness and count at arbitrary
+count, WITHOUT the old fixed-count cofactor-share cap.
+`retained_literal_count_floor` reindexes the signed period bound onto
+original integer labels without duplicating marked/count incidences.
+
+Sum the signed prime period FIRST; THEN keep the hard lower count:
+sum_{k>=5logx}(2M)^k/k!<=exp(5M-5logx log(5/2)). Lean certifies
+log(5/2)>=9/10, and the ACTUAL finite prime universe hasM<=C_head+logx.
+For unpaid labels the old upper count suppliesv<=128Hlogx, so this
+sqrtx population price becomes a vanishing true-supply cost.
+Actual near-owner clips keepk=omega(n)-2. Both missed sign selections
+spend ONE boundary norm; the combined constant is2017=481+1536.
+`global_lower_count_floor` joins ALL selected counts, owner scales and
+radial periods at the conservative priceO(log^2N/sqrtN)->0, independently
+of bin count, prime-log spread and local parity matching.
+`eventually_count_cost_paid_by_same_supply` uses the SAME quantitative
+four-prime supply selection from the published whole floor, spending at
+most1/256 of its remaining1/128 reserve; no new phase-window witness.
+Whole original dense-band fibre coverage and final signed-ledger
+placement remain unproved: do NOT claim the literal whole-floor count
+threshold has been lowered or a numerical floor/zero exclusion exists.
+Lower growing counts with overlapping many-bin crossings still need
+joint signed cancellation. Numerical budget scans are diagnostic, with
+the unevaluated exact arithmetic head factored out, NOT prime density.
+
+The31 new/extended public proofs pass focused warning-as-error direct/build,
+ordinary-root-plus-explicit-module namespace lint and ALL public
+transitive axioms, with onlypropext,Classical.choice,Quot.sound. The
+unpublished batch now has420 public proofs in twenty-one modules. See
+docs/zeta-riesz-intermediate-scale-cost.md,
+docs/zeta-riesz-dense-shell-cost.md,
+docs/zeta-riesz-separated-parity-floor.md,
+docs/zeta-riesz-dense-small-top-floor.md,
+docs/zeta-riesz-unpaid-count-tilt-floor.md and their source-hashed audits.
+The optional dense-population probe checks actual finite prime/squarefree
+identities and the global pattern price; growing log-layout models are
+NOT constructed primes and certify no physical masks or population
+cost. Probes remain outside ordinary builds/CI. No effective starting
+order is claimed; the fixed arithmetic head is unevaluated.
+Whole matching/unmatched costs, independent whole floor/ceiling,
+restricted contradiction and new zero exclusion remain OPEN. Continue
+locally without commits, pushes, subagents or wider publication gates;
+preserve README and published default explorer endpoints.
+
 The eight-module floor batch, from `ZetaRieszPairChamberFloor` through
 `ZetaRieszFiveSignCoverFloor`, is published at
 `03a0f31be04d2737a4b2811e2532c32e79a18c69`. Exact-SHA CI run
@@ -2122,6 +2823,361 @@ continue the floor locally, reusing the signed-period machinery at other
 counts. No further commits, subagents or wider gates are authorized by the
 completed request. Run focused Lean/root-import lint and axiom validation.
 The numerical -79/1000 floor, 3/2 ceiling and zero exclusion remain OPEN.
+
+### Entire unpaid dense-count band covered and funded (local)
+
+`ZetaRieszDenseCountCoverFloor` closes BOTH pending obligations from the
+unpaid-count tilt component: the actual whole-fibre/ownership-crossing
+cover, and its final placement in the authoritative joinedPhysical floor.
+`eventually_joined_floor_without_dense_band` removes ALL original
+squarefree labels with omega>=8 and
+5log(N+1)+2<=omega<countThreshold(N), retaining every old mask, phase,
+allocation, head credit and the original five-prime payment. The SAME
+quantitative four-prime supply spends at most1/256, with1/256 retained.
+No new supply witness or unproved signed arithmetic estimate enters.
+
+Original cofactors seed the finite owner fibres. Extensions retain the
+literal dyadicPrimeCount cutoff and lie in the same original core/band.
+Canonical second ownership prices the near-owner clips uniquely across
+dyadic scales and radial periods. Both sign grids retain their exact
+unmatched populations; their unused opposite-sign boundary is empty.
+Every unmatched original label is radial exterior, large owner share,
+or owner log<=20000. The last alternative is eventually impossible by
+the old upper count ceiling and core length; the other two have their
+existing source-geometric payments. The global nonowner payment restores
+the full allocation. There is NO anonymous unpaid boundary in the
+whole dense-band floor. Its positive period units are paid RELATIVELY
+by the actual supply, not asserted to decay after source normalization.
+
+The new literal count ceiling is proved: `remaining_count_cases` gives
+omega=3,4,6,7 or8<=omega<5log(N+1)+2 for every squarefree label in the
+actual remaining set(E\E5)\denseBand. This is a genuine whole-ledger
+saving; it does NOT prove the numerical-79/1000 floor. Count four includes
+the funding supply, so subsequent low-count payments must preserve that
+ledger and cannot spend it twice.
+
+Current priority enumeration AFTER exact zeros and all spent populations:
+(1) fixed counts3,4,6,7 outside the old paid selections;
+(2) lower growing counts with few intermediate factors/occupied log bins:
+    existing all-pattern signed bounds, but original-fibre cover and
+    disjoint whole-floor funding remain;
+(3) many bins with separated divisor windows: count-free two-hinge tent
+    floor, but total actual weighted population cost remains;
+(4) many bins with overlapping crossings of BOTH parities: exact
+    opposite-rank transport, with global coverage/distance/unmatched cost
+    still open;
+(5) many bins with overlapping crossings of ONE parity: universal local
+    matching is false, so further cross-label/count/prime-period signed
+    cancellation is required;
+(6) final numerical aggregate of those populations and all retained
+    credits against-79/1000, with an independent arithmetic bound.
+Apply these tests in order. Ownership clips are part of each relevant
+signed period payment, not another separately charged parity population.
+Few-bin clusters may have one parity; they still receive the all-pattern
+price. Old small-top dense labels were already spent and earn no new credit.
+
+The optional actual-prime incidence/endpoint probe also scans the remaining
+positive count PRICE with the unevaluated head factored out. It peaks near
+2log(N+1), where its optimized post-owner power is+1, whereas the proved
+5log(N+1) tilt has negative power. This motivates additional SIGNED central
+cancellation, not another marker tweak or a claimed arithmetic no-go.
+No effective starting order, numerical whole floor/ceiling, restricted
+contradiction or new zero exclusion is asserted.
+
+This module adds48 public proofs; the local unpublished batch now contains
+468 public proofs in twenty-two modules. Focused checks, ALL public axiom
+results and source hashes are recorded in
+docs/riesz-dense-count-cover-floor-audit.json; the full obstacle table is
+docs/zeta-riesz-dense-count-cover-floor.md. Keep probes outside ordinary
+builds/CI. Continue locally without commits, pushes, subagents or wider
+publication gates; preserve README and public default explorer endpoints.
+
+### Whole lower-count few-bin population covered and funded (local)
+
+`ZetaRieszFewBinCoverFloor.eventually_joined_floor_without_dense_or_few_bins`
+removes the actual lower growing-count few-bin population from the SAME
+joinedPhysical floor alongside the existing five-prime and upper-count
+payments. Every old head credit, joined-prefix/pair saving, phase and
+allocation remains. The SAME quantitative four-prime supply spends at
+most1/512 and retains1/512; no second witness or assumed arithmetic
+cancellation is introduced. The original positive units are paid
+RELATIVELY, not asserted source-o(1).
+
+The new literal mask has8<=omega(n)<5log(N+1)+2 and at most
+floor(log(N+1)/16) occupied bins of the canonical cofactor above
+B=max(5000,32log(N+1)). It counts ALL such cofactor bins, not merely
+the older owner-dependent intermediate gap. This is a stronger selection
+than that older test; do not claim all labels satisfying the older test
+are covered. Every small prime and every crossing parity remains.
+Owner extension keeps the exact cofactor, occupied pattern and original
+dyadicPrimeCount mask. Canonical second ownership pays the real clips
+uniquely. Both actual sign grids are covered; unmatched radial/share
+pieces are source-geometric and the small-owner exception is eventually
+impossible. Global nonowner payment restores the original allocation.
+
+The compiled `remaining_configuration_cases` is exhaustive for the SAME
+actual remaining squarefree set(((E\E5)\denseBand)\binBand): counts3,4,6,7
+OR8<=omega(n)<5log(N+1)+2 with MORE than floor(log(N+1)/16) cofactor bins.
+Further priority targets are now:
+(1) fixed low counts outside old selections, preserving count-four funding;
+(2) many bins with separated divisor-log windows: total actual weighted
+    price after the count-free two-hinge tent cancellation;
+(3) many bins with both active parities: total matching distance,
+    injective coverage and weighted imbalance;
+(4) unmatched one-parity layers: cross-label/count/prime-period signed
+    cancellation, since universal local matching is false;
+(5) independent numerical aggregate against-79/1000, THEN the separate
+    multiplicity ceiling. Do not introduce another representation unless
+    it yields a signed inequality for these remaining populations.
+
+The optional probe retains original small actual-prime cofactor stability
+and arbitrary allocation/phase in the signed pattern partition. Remaining
+integer-log MODELS exhibit strong mixed-parity cancellation AND unmatched
+one-parity responses. They certify no prime existence, exact moving
+integer length, global population bound, effective start or numerical
+floor. They remain outside ordinary builds/CI.
+
+This module adds50 checked public proofs: the unpublished local batch is
+now518 public proofs in twenty-three modules. Direct/targeted Lean checks,
+all14 namespace linters, ALL public standard-axiom checks and source hashes
+are in docs/riesz-few-bin-cover-floor-audit.json. The exhaustive remaining
+obstacle table is docs/zeta-riesz-few-bin-cover-floor.md. The whole floor,
+ceiling, contradiction and new zero exclusion remain OPEN. Preserve all
+prior no-gos and README/default explorer endpoints. Continue locally
+without commits, pushes, subagents or wider publication gates.
+
+### Fixed and growing populations share the current whole floor (local)
+
+The STRONGEST current local ledger is now
+`ZetaRieszJoinedPopulationFloor.eventually_joined_floor_combined_populations`.
+The existing HighSignCoverFloor ledger already pays counts3,5,6 and7..55;
+these are not fresh mathematical targets. Its balanced-triple refund and
+fixed-band favorable credit must not be lost or spent twice when using
+the new dense-count/few-bin payments. Accordingly dense56Band and bin56Band
+are the original new populations restricted to count at least56.
+
+The selected whole fibres preserve that lower count from the SAME original
+seed. Every original count, physical, owner, allocation and radial mask,
+canonical second-owner clip and both sign grids remains. Unmatched pieces
+have the existing geometric bounds. The old fixed band and both new
+populations are disjoint. The SAME quantitative supply retains
+65/128-1/256-1/512=257/512. This fraction is a retained SUPPLY CREDIT,
+not a numerical source-normalized floor constant. No new supply witness
+or assumed signed arithmetic estimate is introduced.
+
+The compiled exhaustive `remaining_configuration_cases` now says:
+count FOUR, OR56<=omega(n)<5log(N+1)+2 with MORE than floor(log(N+1)/16)
+occupied large-log canonical cofactor bins. Use this exact combined
+remaining set(((E\Epaid)\dense56Band)\bin56Band), where
+E=coreBand\tripleRestSpent, Epaid contains3,5,6,7..55. The earlier component
+count3/4/6/7 enumeration remains true only for its earlier ledger.
+
+All remaining floor obligations, in priority order:
+(1) count four outside old spent selections, JOINTLY with its retained
+    actual supply and head credits; no duplicate charge of count-four funding;
+(2) many-bin growing counts with separated divisor windows: total weighted
+    two-hinge tent cost, beyond the proved count-free pointwise bound;
+(3) many-bin overlapping opposite parities: global matching distance,
+    injective coverage and weighted imbalance/unmatched mass;
+(4) unmatched one-parity layers: cross-label/count/owner-period SIGNED
+    cancellation, since universal same-label matching is false;
+(5) independently aggregate the real remainder and credits against
+    -79/1000-o(1). Only then invoke the floor contradiction criterion.
+The ceiling remains subsequent. Do not treat paid ownership clips or
+source-o(1) analytic errors as anonymous new obstacles. Do not introduce
+another representation unless it gives a provable signed inequality.
+
+The optional current probe uses count58..65 integer-log MODELS satisfying
+the new remaining count/bin inequalities. Exact subset polynomials show
+strong mixed cancellation, while separated count57 responses can have
+either sign. Shared-grid additive coincidences are not proved prime
+correlations; these models certify no actual prime population, exact
+moving integer length, original phase/factorial/allocation price, effective
+start or numerical floor. They are outside ordinary builds and CI.
+
+This consolidation adds18 public checked proofs; together with the preceding
+few-bin payment the current unpublished batch has536 public proofs in
+twenty-four modules. Focused direct/targeted/root-import checks, all14
+namespace linters, ALL public standard-axiom audits and source hashes are
+in docs/riesz-joined-population-floor-audit.json. See the exact remaining
+obstacle table in docs/zeta-riesz-joined-population-floor.md. The numerical
+whole floor, ceiling, contradiction and new zero exclusion remain OPEN.
+Keep all prior results/no-gos and public README/default explorer endpoints.
+Continue locally without commits, pushes, subagents or wider publication gates.
+
+### Rejoined funding and separated divisor packing (local)
+
+The latest request is to close floor estimates1–5 in turn. That request is
+NOT completed: no independent numerical-79/1000 floor, multiplicity ceiling,
+restricted contradiction or new zero exclusion has been proved. Continue
+locally without commits, pushes, subagents or wider publication gates.
+
+`ZetaRieszRejoinedPopulationFloor.eventually_joined_floor_rejoined_populations`
+combines the existing SharpSupply/WholeFixedCount/RejoinedSupply alternative
+with BOTH new growing-population payments, using the SAME four-prime
+funding witness. The whole original fixed band3..55 includes count four.
+Its funding supply/head labels remain in that actual signed aggregate;
+they are never credited twice. The exact additional charge is
+`growingDebit kappa N = (unpaidCountSupplyPrice N + intermediateSupplyPrice N)
+/(128*kappa)`. The remaining debit is
+`tailCost c N + fixedEpsilon + growingDebit kappa N`. Its N-dependent
+components tend to zero RELATIVELY. The older257/512-credit ledger remains
+available; the two inequalities are not asserted to dominate each other.
+
+In THIS additional ledger, every nonzero remaining label has
+56<=omega(n)<5log(N+1)+2 and MORE than floor(log(N+1)/16) occupied bins
+of the canonical cofactor above the original bin head. There is no separate
+count-four label remainder, but estimate1 is NOT closed at source scale:
+the actual funding debit still needs joint compensation. Preserve the
+existing GlobalDebitAudit theorem proving that even the N^-4 tail debit
+of admissible actual supplies is unbounded at source scale. Fixed epsilon
+may not be replaced by an arbitrary moving epsilon; relative price decay
+may not be called an absolute floor or source-o(1) payment.
+
+`ZetaRieszSeparatedPackingFloor.divisor_log_gap_packing` gives
+`(2^omega(B)-1)*log R <= log B` for separated background divisors, with
+R the canonical least-prime pair and B its original cofactor complement.
+Both Riesz hinges, every Mobius rank, original phase/allocation and both
+old zero deletions are joined first. The additional signed packing floor
+costs `abs(Re w)*log B/(2^omega(B)-1)`. The old two-tent-height bound remains
+available and may be sharper in other geometries. The exact original
+count identity is omega(n)=omega(B)+3, so the current count56+ background
+has at least53 primes. This gives a coefficient price below10^-15 of the
+actual weighted background log, NOT an absolute population bound.
+
+`source_scaled_current_separated_floor` applies that price DIRECTLY to
+the original residual-coefficient packet, with the SINGLE established
+geometric nonowner error. Its whole actual weighted population still
+needs an independent source-scale payment. Estimates2–5 remain open:
+separated population price; overlapping weighted transport/coverage;
+cross-label/prime-period cancellation of unmatched parity; final numeric
+aggregate. Do not claim closure from the tiny local packing coefficient.
+
+The optional rejoined-estimates probe evaluates the already-proved actual
+tail-debit lower bound and tests multiscale one-parity MODELS satisfying
+the remaining count/bin inequalities. Fifty-nine-factor, twelve-bin
+models have signed/unsigned response ratio one in either real common-phase
+direction. These are NOT actual prime labels, exact integer moving length,
+factorial/allocation population estimates or counterexamples to a whole
+floor. Many bins alone are not evidence of automatic active parity mixing.
+The probe stays outside ordinary builds and CI.
+
+These two modules add16 public proofs to the prior536-proof local batch.
+Focused direct/targeted/root-import compilation, both14-linter namespace
+audits, ALL public standard-axiom checks and source hashes are recorded in
+docs/riesz-rejoined-population-floor-audit.json and
+docs/riesz-separated-packing-floor-audit.json. The exact scope and status
+table is docs/zeta-riesz-rejoined-population-floor.md. Preserve every older
+positive result/no-go and README/public default explorer endpoints.
+
+### Moving-rank packing budget audit (local)
+
+The user request to close floor estimates1–5 remains uncompleted. The
+independent numerical floor is OPEN. Four additional public proofs in
+`ZetaRieszSeparatedPackingFloor` audit the common positive period payment:
+on `1<=rank(N)<=5log(N+1)+2`, `2^rank<=4(N+1)^4`, so
+`1/(2^rank-1)>=1/[4(N+1)^4]`. The canonical current background derives
+this rank from the original squarefree count56+ label. Its source-scaled
+common period envelope tends to positive infinity for every fixed u>1/2,
+y>=54, even with moving rank. This is NOT a lower bound for the actual
+weighted separated population or a counterexample to the whole floor.
+Do not pay estimate2 by replacing that population with periodUnits and
+then cite its small packing coefficient as a source-scale saving.
+
+The optional probe evaluates the strongest remaining rank
+`rank<5log(N+1)-1`: the positive-envelope lower-bound formula regrows
+from about10^-18.73 at N=100000 to10^15.74 at N=1000000. Neither quantity
+is an actual signed carrier value. The fixed-count funding debit still
+requires joint signed compensation; global weighted transport and
+cross-label/prime-period cancellation of unmatched layers remain OPEN.
+
+The smooth-owner discrepancy theorem covers only complete shells with
+owner larger than the full cofactor and retains its signed main. Current
+count/bin/physical masks are not paid by it. The squarefree zero-extension
+absolute variation obstruction also survives rectangle removal. Do not
+reuse either comparison as a whole-floor proof. The latest focused
+packing audit covers15 public proofs and brings the local batch of26 modules to556
+public proofs, with no numerical floor/ceiling or new zero exclusion.
+Preserve prior results/no-gos, public endpoints and local-only workflow.
+
+### Literal masked-carrier comparison (local)
+
+`ZetaRieszLongCutoffError` derives a new unconditional comparison for
+the actual masked carrier; the numerical-79/1000 floor and estimates1–5
+remain OPEN. The signed squarefree prefix now has error
+`C X^(3/4) D^(5/16)`, hence `C X^(63/64)` when `D^4<=X^3`.
+The original core proves this range for the translated hinge, including
+every active jump of its literal owner column at N>=32.
+
+Centering against `rho=SquarefreeCounting.density(empty)>0` puts the
+squarefree indicator inside BOTH arithmetic reference sums. The exact
+`beforeSquares_eq_literal` bridge excludes repeated owners and retains
+all original masks. Squarefree holes do not enter this new variation
+cost. No count/owner/physical support is completed. The terminal
+`literal_joined_carrier_estimate` assembles ALL counts, owners and both
+hinges: `abs(rho*J-M)<=3*C*exp(-N/128)*V`, where M keeps the
+untranslated Riesz hinge and the signed density-profile scalar together,
+and V is the displayed total variation BEFORE squarefree holes. The
+remaining owner/count/cutoff/allocation variation and signed main are
+NOT paid at source scale. Do not call the exponential prefactor alone
+a masked-error payment or a floor; preserve all earlier envelope no-gos.
+
+The stronger follow-up `literal_whole_carrier_estimate` also puts
+repeated-owner holes inside the reference measure. Its variation uses
+RAW `maskedWeight(ownerRows B)`, with neither squarefree nor repeated-owner
+zero extensions. The exact ratio `(p+1)/p` restores a common density;
+the terminal bound is `abs(rho*J-Mhat)<=6*C*exp(-N/128)*Vraw`, with the
+displayed additional hinge factor `(2+c_positive)*c_positive`. Mhat keeps
+the untranslated hinge and the owner-conditioned signed scalar joined.
+The remaining count/canonical-owner/physical/radial/allocation/phase
+variation and signed main are still UNPAID. None of estimates1–5 is closed.
+
+Finite prime exclusions can also enter the measure exactly. For excluded
+primes through N² the cost is `exp(O(N^(17/32)))`, and its comparison
+prefactor is eventually `<=exp(-N/256)`. This is NOT a payment of actual
+variation or the excluded population. The whole original core does NOT
+require all primes>N²; F empty in the general theorem gives the whole
+squarefree carrier. Preserve this scope and all prior no-go results.
+The optional `probe_riesz_long_cutoff_cost.py` evaluates only this rate
+prefactor and is outside ordinary CI. Do not count it as a floor certificate.
+
+Its 39 public proofs pass focused warning-as-error direct/targeted/root
+checks,14 namespace linters and all public standard-axiom audits. See
+docs/zeta-riesz-long-cutoff-error.md and
+docs/riesz-long-cutoff-error-audit.json. The local batch is now27 modules
+and 595 public proofs. Keep public README/default explorer endpoints
+unchanged and continue locally without commits, pushes, subagents or
+wider publication checks.
+
+### Whole-core owner payment and current publication
+
+`ZetaRieszCoreOwnerPayment` adds18 checked public proofs. The accumulated
+batch now has28 modules and613 public theorem records. It pays the actual
+source-normalized norm, with arbitrary bounded complex submasks, of every
+core label having an eligible prime share at least751/1250=60.08%. The
+previous refined threshold was601/1000=60.1%. The exact missing binomial
+mass is at most(9/4)exp(-1033N/10000000), using tilt103/100; the tighter
+summable reference exponent1+1/1048576 yields an allowance proportional
+toexp(-N/1000000). Its arithmetic mass constant and effective start are
+unevaluated. This is a true source-o(1) payment across ALL counts, phases
+and correlated masks, not a relative price or percentage of the floor gap.
+
+`eventually_rejoined_floor_without_large_owners` applies it to the SAME
+existing signed ledger, preserving every credit/debit and funding witness.
+The nonzero remaining labels have count56..<5log(N+1)+2, more than
+floor(log(N+1)/16) occupied cofactor bins, and EVERY prime share below
+60.08%. All five final arithmetic estimates and the numerical floor,
+ceiling, contradiction and new zero exclusion remain OPEN. See
+docs/zeta-riesz-core-owner-payment.md and its full18-proof audit.
+
+The latest user request authorizes committing and pushing ALL accumulated
+floor work after this slice. It supersedes the local-only holds above for
+this publication. Complete the tracked hook, compiled status, explorers,
+actual browser preview and GitHub README renderer checks; push the passing
+commit and track its exact-SHA CI. No subagents are authorized. After
+publication continue the floor locally while CI runs. The user explicitly
+asks for a mechanism shared across counts/share geometries/periods: do not
+return to threshold tuning or call a positive local price a global payment.
 
 The Gamma-joint batch above is now published at
 `dd411aa7372438e2e7b7f7e5acf5cb3d6c01c92e`; exact-SHA CI run

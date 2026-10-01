@@ -1,0 +1,420 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/build, ordinary-root-plus-explicit-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Literal signed owner-prime periods and ownership clips retain a growing intermediate-factor population, m<=floor(log(N+1)/4), at relative true-supply cost O(log^9(N)/N^(1/20)); unrestricted dense and incomplete fibre costs remain open.",
+  "documentation": "docs/zeta-riesz-intermediate-scale-cost.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszIntermediateScaleCost.lean": "927dcc008d46026d4670229c2e78d67721f2fa9f07c7a92c5e3f97404af5190d",
+    "docs/zeta-riesz-intermediate-scale-cost.md": "4d8e626ebf32ac6ad1036dc7db6ba866caa968fce2a4300bc1ccd7151bb71fbe",
+    "scripts/probe_riesz_intermediate_scale_cost.py": "2f4b5ab9ca6f54755465e0b8a12684cb6a41fabde538ea4e5e96efc7c7afbcb6",
+    "RiemannGaussian/ZetaRieszParityLayerCost.lean": "7a73413784a8bf74aae6c5af54f65f6991f8596801c763479ac94ea3b5c83c38",
+    "RiemannGaussian/ZetaRieszSmallCofactorCancellation.lean": "5c98816025d67c8fa869d57c6064d8719578fff80a2be53c089bf03e479f929d",
+    "RiemannGaussian/ZetaRieszBroadOwnerPeriodFloor.lean": "1577f080a6da21838fff76995f6f129f77e9d0a7f0fddad41f4bbb4607d170da",
+    "RiemannGaussian/ZetaRieszSmallOwnerBoundary.lean": "1439acfd7b69ba1fecb1cf9f9dd720857496e78433f631da47297c78d78ea66a",
+    "RiemannGaussian/ZetaRieszPolynomialCutoffRows.lean": "070281f116d0a325a07f8305f78566da815201d13cce453a04dcec6e2d6e43cb",
+    "RiemannGaussian/ZetaRieszOwnerTieFloor.lean": "1ea026790451b053d82e2d7d51d6c65c94ae1484869bd55d0ce33394ae0be26c",
+    "RiemannGaussian/ZetaRieszRoughFiveJoinedFloor.lean": "44d61cb62b953331a89745b1485ec86cea54ff810c4d8bd9818c51e241522ca6",
+    "RiemannGaussian/ZetaRieszCrossCountTransport.lean": "eaf6fbcee32a61f07df5be4191d45a6dda3ad15f5dc8fc8c9858ed6ead8f8d3e"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszIntermediateScaleCost.global_quarter_count_floor",
+    "RiemannGaussian.ZetaRieszIntermediateScaleCost.tendsto_quarterCountSupplyPrice",
+    "RiemannGaussian.ZetaRieszIntermediateScaleCost.intermediateCountCeiling_tendsto",
+    "RiemannGaussian.ZetaRieszIntermediateScaleCost.quarter_cost_paid_by_reserve",
+    "RiemannGaussian.ZetaRieszIntermediateScaleCost.dense_every_marker_price_lower"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszIntermediateScaleCost",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszIntermediateScaleCost",
+      "linters": 14,
+      "publicTheoremCount": 24,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.intermediate_population_mass_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.sparse_intermediate_mass_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.general_intermediate_mass_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.retained_population_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.intermediate_count_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.sparse_intermediate_clipped_norm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.sparse_intermediate_period_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.exact_gap_complement": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.marker_power_le_sqrt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.global_sparse_cost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.tendsto_intermediateSupplyPrice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.eventually_intermediateSupplyPrice_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.intermediateHeadFactor_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.quarter_count_marker_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.intermediateCountCeiling_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.intermediateCountCeiling_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.global_quarter_count_cost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.tendsto_quarterCountSupplyPrice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.eventually_quarterCountSupplyPrice_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.global_quarter_count_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.quarter_cost_paid_by_reserve": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.dense_marker_price_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.dense_every_marker_budget_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszIntermediateScaleCost.dense_every_marker_price_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "pythonAST": {
+      "exitCode": 0,
+      "path": "scripts/probe_riesz_intermediate_scale_cost.py"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "summary": {
+        "diagnosticOnly": true,
+        "ordinaryBuildOrCI": false,
+        "wholeFloorCertified": false,
+        "unrestrictedTotalMatchingCostCertified": false,
+        "markerOptimization": {
+          "allowanceOnly": true,
+          "criticalCountPerLogN": 0.2708093617649946,
+          "rows": [
+            {
+              "gapCountPerLogN": 0.05,
+              "optimalPositiveMarker": 80.0,
+              "optimizedPositivePriceExponent": -0.7308986682663059,
+              "fixedMarker16PriceExponent": -0.6113705638880109,
+              "LeanQuarterCountRange": true
+            },
+            {
+              "gapCountPerLogN": 0.125,
+              "optimalPositiveMarker": 32.0,
+              "optimizedPositivePriceExponent": -0.4417830121500342,
+              "fixedMarker16PriceExponent": -0.40342640972002736,
+              "LeanQuarterCountRange": true
+            },
+            {
+              "gapCountPerLogN": 0.25,
+              "optimalPositiveMarker": 16.0,
+              "optimizedPositivePriceExponent": -0.05685281944005469,
+              "fixedMarker16PriceExponent": -0.05685281944005469,
+              "LeanQuarterCountRange": true
+            },
+            {
+              "gapCountPerLogN": 0.26,
+              "optimalPositiveMarker": 15.384615384615385,
+              "optimizedPositivePriceExponent": -0.029324317637510016,
+              "fixedMarker16PriceExponent": -0.02912693221765688,
+              "LeanQuarterCountRange": false
+            },
+            {
+              "gapCountPerLogN": 0.27,
+              "optimalPositiveMarker": 14.814814814814815,
+              "optimizedPositivePriceExponent": -0.002180526102013714,
+              "fixedMarker16PriceExponent": -0.0014010449952590659,
+              "LeanQuarterCountRange": false
+            },
+            {
+              "gapCountPerLogN": 0.28,
+              "optimalPositiveMarker": 14.285714285714286,
+              "optimizedPositivePriceExponent": 0.024592810341177856,
+              "fixedMarker16PriceExponent": 0.026324842227138746,
+              "LeanQuarterCountRange": false
+            },
+            {
+              "gapCountPerLogN": 0.5,
+              "optimalPositiveMarker": 8.0,
+              "optimizedPositivePriceExponent": 0.539720770839918,
+              "fixedMarker16PriceExponent": 0.6362943611198906,
+              "LeanQuarterCountRange": false
+            },
+            {
+              "gapCountPerLogN": 1.0,
+              "optimalPositiveMarker": 4.0,
+              "optimizedPositivePriceExponent": 1.3862943611198906,
+              "fixedMarker16PriceExponent": 2.022588722239781,
+              "LeanQuarterCountRange": false
+            }
+          ]
+        },
+        "correctRadialPrice": [
+          {
+            "logNPlusOne": 16,
+            "intermediateCountCeiling": 4,
+            "logRelativePriceWithoutFixedArithmeticHeads": 64.67579233861473,
+            "correctSupplyUnit": "exp(-v/2) * v^N / N!",
+            "arithmeticHeadEvaluated": false,
+            "certifiedStartingOrder": false
+          },
+          {
+            "logNPlusOne": 32,
+            "intermediateCountCeiling": 8,
+            "logRelativePriceWithoutFixedArithmeticHeads": 70.05488863192778,
+            "correctSupplyUnit": "exp(-v/2) * v^N / N!",
+            "arithmeticHeadEvaluated": false,
+            "certifiedStartingOrder": false
+          },
+          {
+            "logNPlusOne": 64,
+            "intermediateCountCeiling": 16,
+            "logRelativePriceWithoutFixedArithmeticHeads": 74.66222943919954,
+            "correctSupplyUnit": "exp(-v/2) * v^N / N!",
+            "arithmeticHeadEvaluated": false,
+            "certifiedStartingOrder": false
+          },
+          {
+            "logNPlusOne": 128,
+            "intermediateCountCeiling": 32,
+            "logRelativePriceWithoutFixedArithmeticHeads": 77.68469455834688,
+            "correctSupplyUnit": "exp(-v/2) * v^N / N!",
+            "arithmeticHeadEvaluated": false,
+            "certifiedStartingOrder": false
+          },
+          {
+            "logNPlusOne": 256,
+            "intermediateCountCeiling": 64,
+            "logRelativePriceWithoutFixedArithmeticHeads": 77.51499410070582,
+            "correctSupplyUnit": "exp(-v/2) * v^N / N!",
+            "arithmeticHeadEvaluated": false,
+            "certifiedStartingOrder": false
+          },
+          {
+            "logNPlusOne": 512,
+            "intermediateCountCeiling": 128,
+            "logRelativePriceWithoutFixedArithmeticHeads": 70.94928190374823,
+            "correctSupplyUnit": "exp(-v/2) * v^N / N!",
+            "arithmeticHeadEvaluated": false,
+            "certifiedStartingOrder": false
+          },
+          {
+            "logNPlusOne": 1024,
+            "intermediateCountCeiling": 256,
+            "logRelativePriceWithoutFixedArithmeticHeads": 51.58558199032303,
+            "correctSupplyUnit": "exp(-v/2) * v^N / N!",
+            "arithmeticHeadEvaluated": false,
+            "certifiedStartingOrder": false
+          },
+          {
+            "logNPlusOne": 2048,
+            "intermediateCountCeiling": 512,
+            "logRelativePriceWithoutFixedArithmeticHeads": 6.622892807019272,
+            "correctSupplyUnit": "exp(-v/2) * v^N / N!",
+            "arithmeticHeadEvaluated": false,
+            "certifiedStartingOrder": false
+          }
+        ],
+        "clusteredCoverage": [
+          {
+            "continuousLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "N": 10000000000,
+            "intermediateCount": 0,
+            "newIntermediateCountCeiling": 5,
+            "coveredByNewCountRange": true,
+            "originalGappedSpectrumCovered": true,
+            "ownerLogPerN": 0.32668676011146525,
+            "ownerCapGeometry": true,
+            "cofactorQuarterGeometry": true,
+            "activeOrbitCount": 66,
+            "activeParities": [
+              1
+            ],
+            "joinedToSeparateRatio": 1.0,
+            "entirePopulationMassCertified": false
+          },
+          {
+            "continuousLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "N": 10000000000,
+            "intermediateCount": 1,
+            "newIntermediateCountCeiling": 5,
+            "coveredByNewCountRange": true,
+            "originalGappedSpectrumCovered": false,
+            "ownerLogPerN": 0.32667676011146524,
+            "ownerCapGeometry": true,
+            "cofactorQuarterGeometry": true,
+            "activeOrbitCount": 66,
+            "activeParities": [
+              1
+            ],
+            "joinedToSeparateRatio": 1.0,
+            "entirePopulationMassCertified": false
+          },
+          {
+            "continuousLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "N": 10000000000,
+            "intermediateCount": 5,
+            "newIntermediateCountCeiling": 5,
+            "coveredByNewCountRange": true,
+            "originalGappedSpectrumCovered": false,
+            "ownerLogPerN": 0.32663676011146525,
+            "ownerCapGeometry": true,
+            "cofactorQuarterGeometry": true,
+            "activeOrbitCount": 66,
+            "activeParities": [
+              1
+            ],
+            "joinedToSeparateRatio": 1.0,
+            "entirePopulationMassCertified": false
+          },
+          {
+            "continuousLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "N": 10000000000,
+            "intermediateCount": 6,
+            "newIntermediateCountCeiling": 5,
+            "coveredByNewCountRange": false,
+            "originalGappedSpectrumCovered": false,
+            "ownerLogPerN": 0.32662676011146524,
+            "ownerCapGeometry": true,
+            "cofactorQuarterGeometry": true,
+            "activeOrbitCount": 66,
+            "activeParities": [
+              1
+            ],
+            "joinedToSeparateRatio": 1.0,
+            "entirePopulationMassCertified": false
+          },
+          {
+            "continuousLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "N": 10000000000,
+            "intermediateCount": 24,
+            "newIntermediateCountCeiling": 5,
+            "coveredByNewCountRange": false,
+            "originalGappedSpectrumCovered": false,
+            "ownerLogPerN": 0.3264467601114653,
+            "ownerCapGeometry": true,
+            "cofactorQuarterGeometry": true,
+            "activeOrbitCount": 66,
+            "activeParities": [
+              1
+            ],
+            "joinedToSeparateRatio": 1.0,
+            "entirePopulationMassCertified": false
+          }
+        ]
+      }
+    }
+  },
+  "actualSupplyUnits": "amplitude(N,v)/v = exp(-v/2) * v^N / N!",
+  "wholeFloorProven": false,
+  "wholeCeilingProven": false,
+  "restrictedContradictionProven": false,
+  "zeroExclusionProven": false,
+  "totalUnrestrictedMatchingCostBoundProven": false,
+  "unrestrictedUnmatchedParityCostBoundProven": false,
+  "originalFibreCoverProven": false,
+  "freshDisjointReserveProven": false,
+  "unevaluatedArithmeticHead": true,
+  "effectiveStartingOrderClaimed": false,
+  "publicationDeferred": true,
+  "committed": false
+}

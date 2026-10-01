@@ -149,10 +149,10 @@ Bound joinedPhysical through its exact full-mass two-hinge core, retaining the s
 
 ### Latest Update
 
-**Whole signed rows are paid; complete divisor blocks cancel exactly.** Lean pays canonical signed rows and their original rounding/count boundaries geometrically, extends the weighted-sieve cutoff to N², and cancels complete affine divisor blocks with the original phase and allocation. The independent −79/1000 floor, higher-multiplicity ceiling and zero exclusion remain open.
-Bound the remaining genuine Riesz-hinge crossings and ownership-safe rough cutoff edges jointly, retaining their signed phases.
-[Current checked endpoint](RiemannGaussian/ZetaRieszRejoinedSupplyFloor.lean#L131)
-· [Proof details](docs/zeta-riesz-global-crossing.md).
+**Growing floor populations rejoined; masked comparison and owner payment checked.** Lean joins both growing-population payments with the same fixed-count funding ledger, retains the signed whole-core comparison, and pays owner shares at least 60.08% with a geometric source-scale error across all counts and correlated masks. The remaining weighted variation, signed funding balance and numerical -79/1000 floor are open; no zero exclusion follows.
+Prove joint signed cancellation across the remaining counts, share geometries and prime periods, retaining the funding debit and both cutoff hinges before any one-sided allowance.
+[Current checked endpoint](RiemannGaussian/ZetaRieszCoreOwnerPayment.lean#L542)
+· [Proof details](docs/zeta-riesz-core-owner-payment.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

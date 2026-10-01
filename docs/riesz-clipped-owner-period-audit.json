@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/build, ordinary-root-plus-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Actual unallocated hinge main and literal clipped owner-start boundary; every selected count, comparable-log shell and radial period joined. Relative positive-supply cost with explicit cover/scale conditions, not whole floor or source-scale norm decay.",
+  "documentation": "docs/zeta-riesz-clipped-owner-period.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszClippedOwnerPeriodFloor.lean": "6bd75058fed1f768d8e7b54b0dc512f1aaad53c8825371756bcf82f662d63dcc",
+    "docs/zeta-riesz-clipped-owner-period.md": "9f95c8efc7f83d7a22be24614b3148f616b76e3fc7692164f8d54cc5725dbd13",
+    "scripts/probe_riesz_clipped_owner_period.py": "dfa37841305d0f1c2c7066d7ec46b9cb6a2a30ee5e43a1b07a53f3e7be631839",
+    "RiemannGaussian/ZetaRieszTinyOwnerPeriodFloor.lean": "cd9b88371b8f54f186fe2624bef8df02904cc1a6a4218141535e2b1715d534a5",
+    "RiemannGaussian/ZetaRieszLogShellPeriodFloor.lean": "810fb5aa7561224069824b3f5aafc0611216b081464820f858bf0ceb03f737e1",
+    "RiemannGaussian/ZetaRieszFiveSignCoverFloor.lean": "180751690496d8ea07c3c06284e64e7b65056611e95390dbe8595320592c3d36",
+    "RiemannGaussian/ZetaRieszHingeAllocationPayment.lean": "6ddd5d5d09e1e24d3450f25df887132b9597613db9e56ad00db1b599905fe2a4",
+    "RiemannGaussian/ZetaRieszCrossingOrbitCancellation.lean": "cc07c84078fb572debf5991bbd6382ee4d44dc803fd79e49e2132ef547bc3bf7",
+    "RiemannGaussian/ZetaRieszShortDivisorOrbits.lean": "504142ef0f49167f769508a9af95466707fa89d75ea4571d1183c199ce53d4ec",
+    "RiemannGaussian/ZetaRieszSignedConvolution.lean": "421209b10a0bffa0dd01e5cdfada710fbf9b41ee5580f1f194651bca0ffcd1cc",
+    "RiemannGaussian/ZetaRieszOwnerTieFloor.lean": "1ea026790451b053d82e2d7d51d6c65c94ae1484869bd55d0ce33394ae0be26c",
+    "RiemannGaussian/ZetaRieszOwnerCurvatureFloor.lean": "5b2544cabbce9a57ea4a35bc9fe1141409ad0dc5aca64b867ff50848ae93f0a0",
+    "RiemannGaussian/ZetaRieszAllocationConcentration.lean": "8a9d9a880d3704a74f082b265dadef7b851f66eb2cb060fb33fb46fca6699668",
+    "RiemannGaussian/ZetaRieszRoughFiveJoinedFloor.lean": "44d61cb62b953331a89745b1485ec86cea54ff810c4d8bd9818c51e241522ca6"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.owner_start_clipped_close",
+    "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.clipped_start_shell_norm_bound",
+    "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.unallocated_all_counts_floor",
+    "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.hinge_whole_fibre_mem_intermediate",
+    "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.unallocated_retained_atom_eq",
+    "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.unallocated_radial_supply_floor",
+    "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.eventually_joined_radial_cost_paid"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor",
+      "linters": 14,
+      "publicTheoremCount": 33,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.canonical_owner_data": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.close_owner_canonical": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.no_close_owner_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.owner_start_clipped_close": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.no_close_owner_period_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.whole_fibre_mem_intermediate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.close_owner_cofactor_shell_cover": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.close_owner_cofactor_shell_norm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.boundaryAllCountCost_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.sum_boundaryCountCost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.all_count_cofactor_shell_norm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.clipped_start_shell_norm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.selectedAmplitude_full": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.unallocated_atom_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.unallocated_fibre_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.unallocated_shell_row_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.unallocated_shell_population_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.unallocated_all_counts_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.joinedOwnerCost_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.joinedOwnerCost_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.unallocated_period_with_boundary_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.sum_joined_dyadic_cost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.hinge_whole_fibre_mem_intermediate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.tendsto_joined_logarithmic_price": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.unallocated_retained_atom_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.unallocated_retained_real_eq_parts": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.unallocated_dyadic_period_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.unallocated_radial_period_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.eventually_joined_owner_cost_paid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.radial_cost_in_supply_units": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.unallocated_radial_supply_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.tendsto_joined_radial_price": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszClippedOwnerPeriodFloor.eventually_joined_radial_cost_paid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "output": ".lake/clipped-owner-probe.json",
+      "outsideOrdinaryBuildsAndCI": true,
+      "finiteGeometryOnly": true,
+      "eventualPrimeMassThresholdSatisfied": false
+    }
+  },
+  "limits": {
+    "wholeFloorProved": false,
+    "sourceScaleNormDecayProved": false,
+    "newZeroExclusion": false,
+    "originalCofactorCapRetained": false,
+    "countCeilingRequired": false,
+    "numberOfShellsLoss": false,
+    "unallocatedHingeMainSupported": true,
+    "allFactorialOrdersRetained": true,
+    "wholeOriginalPrimeFibresRequired": true,
+    "comparableCofactorLogsRequired": true,
+    "ownerStartClippingPaid": true,
+    "ownerRequiredInSameShell": false,
+    "physicalPrimeCompatibilityOnLargeOwnerHingesProved": true,
+    "compatibleDisjointLedgerCoverProved": false,
+    "otherSelectorAndRadialClipsPaid": false,
+    "relativeSupplyPrice": "O(1/(N log N))",
+    "supplyScaleHypothesesRetained": true,
+    "relativeCostCanBePaidBySupplyFraction": "1/256, once",
+    "effectiveStartingOrderEvaluated": false,
+    "globalDeficitFractionCertified": false
+  },
+  "noGosPreserved": true,
+  "publishedEndpointsChanged": false
+}

@@ -1,0 +1,505 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error compilation/build, ordinary-root-plus-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Exact rank-independent subset-layer cancellation, original higher-rank signed quarter floor and direct current ledger comparison; aggregate whole floor remains OPEN.",
+  "documentation": "docs/zeta-riesz-higher-rank-hinge.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszHigherRankHingeFloor.lean": "46ebd4bbf0063f2be64d9ae8c7bdfb84aa232edcae0f2af50d88082a028faace",
+    "scripts/probe_riesz_higher_rank_hinge.py": "1c50aa21ecda6911c8e650b0e2481e336f0c908547d19fb4ae2f2df3765c7230",
+    "docs/zeta-riesz-higher-rank-hinge.md": "50934ca35e5bbe3e8f8a4525bf8ed98f9e22915abb9ea53589d505c96ba75224",
+    "RiemannGaussian/ZetaRieszReflectedLinear.lean": "095968b815a66ad12642fdde5cc9b21fd39f5613f8b9072f50551810671aeb32",
+    "RiemannGaussian/ZetaRieszLowOffsetPairFloor.lean": "2add58977e60d0cff7abd83d4e14cae9166af037e4c6122b06de6fb53ede5d0b",
+    "RiemannGaussian/ZetaRieszReducedCountPayment.lean": "97ba42d8ead3b66dc29d2b723ae33738ead25206801322fe299eab51813facf6",
+    "RiemannGaussian/ZetaRieszShortDivisorOrbits.lean": "504142ef0f49167f769508a9af95466707fa89d75ea4571d1183c199ce53d4ec",
+    "RiemannGaussian/ZetaRieszCrossingOrbitCancellation.lean": "cc07c84078fb572debf5991bbd6382ee4d44dc803fd79e49e2132ef547bc3bf7"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszHigherRankHingeFloor.subset_single_layer_difference",
+    "RiemannGaussian.ZetaRieszHigherRankHingeFloor.linear_rank_center",
+    "RiemannGaussian.ZetaRieszHigherRankHingeFloor.rank_quarter_of_band",
+    "RiemannGaussian.ZetaRieszHigherRankHingeFloor.norm_linear_orbit_le",
+    "RiemannGaussian.ZetaRieszHigherRankHingeFloor.higher_rank_quarter_floor",
+    "RiemannGaussian.ZetaRieszHigherRankHingeFloor.retained_based_sum_eq_full",
+    "RiemannGaussian.ZetaRieszHigherRankHingeFloor.higher_rank_prime_row_eq",
+    "RiemannGaussian.ZetaRieszHigherRankHingeFloor.global_retained_higher_rank_floor",
+    "RiemannGaussian.ZetaRieszHigherRankHingeFloor.eventually_remaining_higher_rank_floor",
+    "RiemannGaussian.ZetaRieszHigherRankHingeFloor.reinforcing_endpoint_response"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszHigherRankHingeFloor",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszHigherRankHingeFloor",
+      "linters": 14,
+      "publicTheoremCount": 22,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.based_orbit_eq_filter": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.filter_canonical_orbit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.filtered_old_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.retained_based_sum_eq_full": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.weighted_linear_orbit_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.canonical_orbit_subset_based": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.canonical_first_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.based_rest_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.opposite_quarter": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.opposite_quarter_real_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.higher_rank_quarter_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.retained_higher_rank_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.higher_rank_prime_row_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.subset_single_layer_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.equal_increment_response": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.reinforcing_endpoint_response": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.linear_rank_center": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.rank_quarter_of_band": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.linear_rank_cost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.norm_linear_orbit_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.global_retained_higher_rank_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHigherRankHingeFloor.eventually_remaining_higher_rank_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "optionalRegressions": {
+      "exitCode": 0,
+      "exactRationalExamples": 9,
+      "actualPrimeLabels": 7,
+      "outsideBuildsAndCI": true,
+      "pythonSyntax": "passed"
+    },
+    "widerPublicationChecks": "deferred by user; published README/explorer endpoints unchanged"
+  },
+  "numericalDiagnostics": {
+    "exactRationalRegressions": [
+      {
+        "actualPrimeLabel": false,
+        "exactCentreResponse": "0",
+        "exactFormula": "1/30",
+        "exactResponse": "1/30",
+        "incrementCount": 2,
+        "rationalModelOnly": true,
+        "reinforcingEndpointResponse": "-1"
+      },
+      {
+        "actualPrimeLabel": false,
+        "exactCentreResponse": "0",
+        "exactFormula": "-2/5",
+        "exactResponse": "-2/5",
+        "incrementCount": 3,
+        "rationalModelOnly": true,
+        "reinforcingEndpointResponse": "-2"
+      },
+      {
+        "actualPrimeLabel": false,
+        "exactCentreResponse": "0",
+        "exactFormula": "-4/5",
+        "exactResponse": "-4/5",
+        "incrementCount": 4,
+        "rationalModelOnly": true,
+        "reinforcingEndpointResponse": "-3"
+      },
+      {
+        "actualPrimeLabel": false,
+        "exactCentreResponse": "0",
+        "exactFormula": "-7/6",
+        "exactResponse": "-7/6",
+        "incrementCount": 5,
+        "rationalModelOnly": true,
+        "reinforcingEndpointResponse": "-4"
+      },
+      {
+        "actualPrimeLabel": false,
+        "exactCentreResponse": "0",
+        "exactFormula": "-3/2",
+        "exactResponse": "-3/2",
+        "incrementCount": 6,
+        "rationalModelOnly": true,
+        "reinforcingEndpointResponse": "-5"
+      },
+      {
+        "actualPrimeLabel": false,
+        "exactCentreResponse": "0",
+        "exactFormula": "-9/5",
+        "exactResponse": "-9/5",
+        "incrementCount": 7,
+        "rationalModelOnly": true,
+        "reinforcingEndpointResponse": "-6"
+      },
+      {
+        "actualPrimeLabel": false,
+        "exactCentreResponse": "0",
+        "exactFormula": "-31/15",
+        "exactResponse": "-31/15",
+        "incrementCount": 8,
+        "rationalModelOnly": true,
+        "reinforcingEndpointResponse": "-7"
+      },
+      {
+        "actualPrimeLabel": false,
+        "exactCentreResponse": "0",
+        "exactFormula": "-23/10",
+        "exactResponse": "-23/10",
+        "incrementCount": 9,
+        "rationalModelOnly": true,
+        "reinforcingEndpointResponse": "-8"
+      },
+      {
+        "actualPrimeLabel": false,
+        "exactCentreResponse": "0",
+        "exactFormula": "-5/2",
+        "exactResponse": "-5/2",
+        "incrementCount": 10,
+        "rationalModelOnly": true,
+        "reinforcingEndpointResponse": "-9"
+      }
+    ],
+    "literal": [
+      {
+        "K": 16,
+        "N": 640,
+        "allocatedFraction": 1.9697165765593874e-153,
+        "belowReducedCountThreshold": false,
+        "blockRank": 5,
+        "currentRetainedResponse": 17.187735559119005,
+        "eventualCropNotAFiniteCertificate": true,
+        "exactFirstAmplitude": 102.76239149063818,
+        "exactFormula": 17.18773555911889,
+        "exactOtherRanksAmplitude": 119.95012704975704,
+        "filteredOldZeroOrbits": 0,
+        "filteredOldZeroResponse": 0.0,
+        "floatingUnderflow": true,
+        "joinedAllowance": 17.187735559119005,
+        "joinedResponse": 17.187735559119005,
+        "localAllowanceRatio": 0.07717453725440909,
+        "nonzeroPairOrbits": 4,
+        "offsetPerLeastLog": 0.21783781547403397,
+        "originalCoreMask": "core",
+        "originalIncidenceCount": 32,
+        "originalPairOrbits": 8,
+        "originalPhaseAndAllocationRetained": true,
+        "ownerGapFails": true,
+        "populationMassCertified": false,
+        "quarterSectorApplies": true,
+        "roughPhysicalPrimes": true,
+        "separateCanonicalAllowance": 222.7125185403953,
+        "sourceScaledLogWeight": -1284.3975176859858,
+        "sourceScaledReal": null,
+        "totalLogPerN": 2.0,
+        "totalPrimeCount": 7,
+        "wholeFloorCertified": false
+      },
+      {
+        "K": 16,
+        "N": 640,
+        "allocatedFraction": 9.070797118892008e-207,
+        "belowReducedCountThreshold": false,
+        "blockRank": 7,
+        "currentRetainedResponse": 22.475629782766305,
+        "eventualCropNotAFiniteCertificate": true,
+        "exactFirstAmplitude": 84.89267720492393,
+        "exactFormula": 22.475629782766305,
+        "exactOtherRanksAmplitude": 107.36830698769029,
+        "filteredOldZeroOrbits": 0,
+        "filteredOldZeroResponse": 0.0,
+        "floatingUnderflow": true,
+        "joinedAllowance": 22.475629782766305,
+        "joinedResponse": 22.475629782766305,
+        "localAllowanceRatio": 0.11690166820455565,
+        "nonzeroPairOrbits": 6,
+        "offsetPerLeastLog": 0.1656356599030477,
+        "originalCoreMask": "core",
+        "originalIncidenceCount": 128,
+        "originalPairOrbits": 32,
+        "originalPhaseAndAllocationRetained": true,
+        "ownerGapFails": true,
+        "populationMassCertified": false,
+        "quarterSectorApplies": true,
+        "roughPhysicalPrimes": true,
+        "separateCanonicalAllowance": 192.26098419261405,
+        "sourceScaledLogWeight": -1284.3975176859858,
+        "sourceScaledReal": null,
+        "totalLogPerN": 2.0,
+        "totalPrimeCount": 10,
+        "wholeFloorCertified": false
+      },
+      {
+        "K": 16,
+        "N": 640,
+        "allocatedFraction": 1.4757857523507463e-258,
+        "belowReducedCountThreshold": false,
+        "blockRank": 10,
+        "currentRetainedResponse": -301.90918540395114,
+        "eventualCropNotAFiniteCertificate": true,
+        "exactFirstAmplitude": 12.581820062066825,
+        "exactFormula": -301.9091854039516,
+        "exactOtherRanksAmplitude": 314.4910054660186,
+        "filteredOldZeroOrbits": 0,
+        "filteredOldZeroResponse": 0.0,
+        "floatingUnderflow": true,
+        "joinedAllowance": 301.90918540395114,
+        "joinedResponse": -301.90918540395114,
+        "localAllowanceRatio": 0.9230641063392976,
+        "nonzeroPairOrbits": 9,
+        "offsetPerLeastLog": 0.42665947213378075,
+        "originalCoreMask": "core",
+        "originalIncidenceCount": 1024,
+        "originalPairOrbits": 256,
+        "originalPhaseAndAllocationRetained": true,
+        "ownerGapFails": true,
+        "populationMassCertified": false,
+        "quarterSectorApplies": false,
+        "roughPhysicalPrimes": true,
+        "separateCanonicalAllowance": 327.0728255280849,
+        "sourceScaledLogWeight": -1284.3975176859858,
+        "sourceScaledReal": null,
+        "totalLogPerN": 2.0,
+        "totalPrimeCount": 14,
+        "wholeFloorCertified": false
+      },
+      {
+        "K": 32,
+        "N": 1536,
+        "allocatedFraction": 0.0,
+        "belowReducedCountThreshold": false,
+        "blockRank": 5,
+        "currentRetainedResponse": -40.486264188826226,
+        "eventualCropNotAFiniteCertificate": true,
+        "exactFirstAmplitude": 279.32447138981615,
+        "exactFormula": -40.486264188826226,
+        "exactOtherRanksAmplitude": 238.83820720098993,
+        "filteredOldZeroOrbits": 0,
+        "filteredOldZeroResponse": 0.0,
+        "floatingUnderflow": true,
+        "joinedAllowance": 40.486264188826226,
+        "joinedResponse": -40.486264188826226,
+        "localAllowanceRatio": 0.07813427300270365,
+        "nonzeroPairOrbits": 4,
+        "offsetPerLeastLog": 0.1805488048048248,
+        "originalCoreMask": "core",
+        "originalIncidenceCount": 32,
+        "originalPairOrbits": 8,
+        "originalPhaseAndAllocationRetained": true,
+        "ownerGapFails": true,
+        "populationMassCertified": false,
+        "quarterSectorApplies": true,
+        "roughPhysicalPrimes": true,
+        "separateCanonicalAllowance": 518.1626785908061,
+        "sourceScaledLogWeight": -3076.7533421925223,
+        "sourceScaledReal": null,
+        "totalLogPerN": 2.0,
+        "totalPrimeCount": 7,
+        "wholeFloorCertified": false
+      },
+      {
+        "K": 32,
+        "N": 1536,
+        "allocatedFraction": 0.0,
+        "belowReducedCountThreshold": false,
+        "blockRank": 7,
+        "currentRetainedResponse": -60.4900498643583,
+        "eventualCropNotAFiniteCertificate": true,
+        "exactFirstAmplitude": 236.43715710410225,
+        "exactFormula": -60.49004986435784,
+        "exactOtherRanksAmplitude": 175.94710723974458,
+        "filteredOldZeroOrbits": 0,
+        "filteredOldZeroResponse": 0.0,
+        "floatingUnderflow": true,
+        "joinedAllowance": 60.4900498643583,
+        "joinedResponse": -60.4900498643583,
+        "localAllowanceRatio": 0.1466837003604036,
+        "nonzeroPairOrbits": 6,
+        "offsetPerLeastLog": 0.11230157648964365,
+        "originalCoreMask": "core",
+        "originalIncidenceCount": 128,
+        "originalPairOrbits": 32,
+        "originalPhaseAndAllocationRetained": true,
+        "ownerGapFails": true,
+        "populationMassCertified": false,
+        "quarterSectorApplies": true,
+        "roughPhysicalPrimes": true,
+        "separateCanonicalAllowance": 412.38426434384655,
+        "sourceScaledLogWeight": -3076.7533421925223,
+        "sourceScaledReal": null,
+        "totalLogPerN": 2.0,
+        "totalPrimeCount": 10,
+        "wholeFloorCertified": false
+      },
+      {
+        "K": 32,
+        "N": 1536,
+        "allocatedFraction": 0.0,
+        "belowReducedCountThreshold": false,
+        "blockRank": 10,
+        "currentRetainedResponse": -561.1083859080604,
+        "eventualCropNotAFiniteCertificate": true,
+        "exactFirstAmplitude": 62.891099961244976,
+        "exactFormula": -561.1083859080611,
+        "exactOtherRanksAmplitude": 623.9994858693058,
+        "filteredOldZeroOrbits": 0,
+        "filteredOldZeroResponse": 0.0,
+        "floatingUnderflow": true,
+        "joinedAllowance": 561.1083859080604,
+        "joinedResponse": -561.1083859080604,
+        "localAllowanceRatio": 0.8168817530518323,
+        "nonzeroPairOrbits": 9,
+        "offsetPerLeastLog": 0.3518192346371581,
+        "originalCoreMask": "core",
+        "originalIncidenceCount": 1024,
+        "originalPairOrbits": 256,
+        "originalPhaseAndAllocationRetained": true,
+        "ownerGapFails": true,
+        "populationMassCertified": false,
+        "quarterSectorApplies": false,
+        "roughPhysicalPrimes": true,
+        "separateCanonicalAllowance": 686.8905858305511,
+        "sourceScaledLogWeight": -3076.7533421925223,
+        "sourceScaledReal": null,
+        "totalLogPerN": 2.0,
+        "totalPrimeCount": 14,
+        "wholeFloorCertified": false
+      },
+      {
+        "K": 32,
+        "N": 1536,
+        "allocatedFraction": 0.0,
+        "belowReducedCountThreshold": false,
+        "blockRank": 14,
+        "currentRetainedResponse": -285.9831002712899,
+        "eventualCropNotAFiniteCertificate": true,
+        "exactFirstAmplitude": 90.2099571041015,
+        "exactFormula": -285.98310027128946,
+        "exactOtherRanksAmplitude": 376.1930573753907,
+        "filteredOldZeroOrbits": 0,
+        "filteredOldZeroResponse": 0.0,
+        "floatingUnderflow": true,
+        "joinedAllowance": 285.9831002712899,
+        "joinedResponse": -285.9831002712899,
+        "localAllowanceRatio": 0.6131673496802937,
+        "nonzeroPairOrbits": 13,
+        "offsetPerLeastLog": 0.19444502360937535,
+        "originalCoreMask": "core",
+        "originalIncidenceCount": 16384,
+        "originalPairOrbits": 4096,
+        "originalPhaseAndAllocationRetained": true,
+        "ownerGapFails": true,
+        "populationMassCertified": false,
+        "quarterSectorApplies": false,
+        "roughPhysicalPrimes": true,
+        "separateCanonicalAllowance": 466.4030144794933,
+        "sourceScaledLogWeight": -3076.7533421925223,
+        "sourceScaledReal": null,
+        "totalLogPerN": 2.0,
+        "totalPrimeCount": 20,
+        "wholeFloorCertified": false
+      }
+    ],
+    "outsideBuildsAndCI": true,
+    "wholeFloorCertified": false
+  },
+  "limitations": [
+    "The quarter saving applies only under the explicit finite single-layer/balance geometry; it is not a whole-deficit percentage.",
+    "The count-linear block norm follows only after summing all original incidences; it is not a source-scale population estimate.",
+    "Actual small examples are not below the eventual reduced-count threshold. Source-weight floating underflow is not a certificate.",
+    "Select one base per physical label; maximal based blocks and earlier paid sectors can overlap.",
+    "The signed prime-row aggregate with actual holes and the complementary physical population still need independent bounds.",
+    "The whole -79/1000 floor, 3/2 ceiling, restricted contradiction and new zero exclusion remain OPEN.",
+    "No commit, push, subagent or wider publication gate was used."
+  ]
+}

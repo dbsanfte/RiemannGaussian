@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/build, ordinary-root-plus-explicit-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Count-free signed floor for the entire original retained two-hinge divisor response with separated background translations. Explicit actual prime-log certificate and global original-weight bound; total population cost is unpaid.",
+  "documentation": "docs/zeta-riesz-separated-parity-floor.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszSeparatedParityFloor.lean": "f971ba57c37e98d951d5c14bb7d04390e6d15efe3e988b0933f838aa61ae31ed",
+    "docs/zeta-riesz-separated-parity-floor.md": "1758b827832de63548b4c0e9632b8ab083008d43a79f49cd1e40ef604a1bfae3",
+    "scripts/probe_riesz_dense_populations.py": "cf3a8a3fda2f2bfc4c747cf7ed343b0ea54346cf683ebc0d73aa5e63fe5bb838",
+    "RiemannGaussian/ZetaRieszParityLayerCost.lean": "7a73413784a8bf74aae6c5af54f65f6991f8596801c763479ac94ea3b5c83c38",
+    "RiemannGaussian/ZetaRieszSmallCofactorCancellation.lean": "5c98816025d67c8fa869d57c6064d8719578fff80a2be53c089bf03e479f929d",
+    "RiemannGaussian/ZetaRieszBroadOwnerPeriodFloor.lean": "1577f080a6da21838fff76995f6f129f77e9d0a7f0fddad41f4bbb4607d170da",
+    "RiemannGaussian/ZetaRieszSmallOwnerBoundary.lean": "1439acfd7b69ba1fecb1cf9f9dd720857496e78433f631da47297c78d78ea66a",
+    "RiemannGaussian/ZetaRieszPolynomialCutoffRows.lean": "070281f116d0a325a07f8305f78566da815201d13cce453a04dcec6e2d6e43cb",
+    "RiemannGaussian/ZetaRieszOwnerTieFloor.lean": "1ea026790451b053d82e2d7d51d6c65c94ae1484869bd55d0ce33394ae0be26c",
+    "RiemannGaussian/ZetaRieszRoughFiveJoinedFloor.lean": "44d61cb62b953331a89745b1485ec86cea54ff810c4d8bd9818c51e241522ca6",
+    "RiemannGaussian/ZetaRieszCrossCountTransport.lean": "eaf6fbcee32a61f07df5be4191d45a6dda3ad15f5dc8fc8c9858ed6ead8f8d3e",
+    "RiemannGaussian/ZetaRieszIntermediateScaleCost.lean": "927dcc008d46026d4670229c2e78d67721f2fa9f07c7a92c5e3f97404af5190d",
+    "RiemannGaussian/ZetaRieszDenseShellCost.lean": "971749525f1ae2cdb1f1b9cbf45c8446a5793df917ca443bc64cc1bf2449dfd2"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszSeparatedParityFloor.superincreasing_divisor_log_gap",
+    "RiemannGaussian.ZetaRieszSeparatedParityFloor.retained_separated_floor",
+    "RiemannGaussian.ZetaRieszSeparatedParityFloor.retained_lacunary_floor",
+    "RiemannGaussian.ZetaRieszSeparatedParityFloor.global_retained_lacunary_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszSeparatedParityFloor",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszSeparatedParityFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszSeparatedParityFloor",
+      "linters": 14,
+      "publicTheoremCount": 7,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszSeparatedParityFloor.separated_supported_signed_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedParityFloor.superincreasing_divisor_log_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedParityFloor.separated_two_hinge_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedParityFloor.retained_separated_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedParityFloor.retained_lacunary_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedParityFloor.global_retained_separated_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSeparatedParityFloor.global_retained_lacunary_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "pythonAST": {
+      "exitCode": 0,
+      "path": "scripts/probe_riesz_dense_populations.py"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "summary": {
+        "diagnosticOnly": true,
+        "ordinaryBuildOrCI": false,
+        "wholeFloorCertified": false,
+        "totalUnrestrictedMatchingCostCertified": false,
+        "finiteActualOccupiedPatternRegression": [
+          {
+            "occupiedBinCeiling": 0,
+            "actualLabelCount": 2,
+            "uniqueOccupiedPatternCount": 1,
+            "complexPartitionError": 0.0,
+            "leadingOneLargePrimeHypothesesTested": false
+          },
+          {
+            "occupiedBinCeiling": 1,
+            "actualLabelCount": 40,
+            "uniqueOccupiedPatternCount": 4,
+            "complexPartitionError": 0.0,
+            "leadingOneLargePrimeHypothesesTested": false
+          },
+          {
+            "occupiedBinCeiling": 2,
+            "actualLabelCount": 166,
+            "uniqueOccupiedPatternCount": 7,
+            "complexPartitionError": 0.0,
+            "leadingOneLargePrimeHypothesesTested": false
+          },
+          {
+            "occupiedBinCeiling": 3,
+            "actualLabelCount": 256,
+            "uniqueOccupiedPatternCount": 8,
+            "complexPartitionError": 0.0,
+            "leadingOneLargePrimeHypothesesTested": false
+          }
+        ],
+        "weightedAllLocationBudgets": [
+          {
+            "logNPlusOne": 160,
+            "availableBinUpperCount": 321,
+            "occupiedBinCeiling": 10,
+            "logExactAllLocationBudget": 77.12676905107091,
+            "logLeanPatternUpperBound": 81.0,
+            "logBudgetAfterRadialDivision": -82.87323094892909,
+            "arithmeticHeadEvaluated": false,
+            "supplyUnit": "exp(-v/2) * v^N/N!",
+            "absoluteSourceDecayCertified": false
+          },
+          {
+            "logNPlusOne": 256,
+            "availableBinUpperCount": 513,
+            "occupiedBinCeiling": 16,
+            "logExactAllLocationBudget": 124.38902207668364,
+            "logLeanPatternUpperBound": 129.0,
+            "logBudgetAfterRadialDivision": -131.61097792331634,
+            "arithmeticHeadEvaluated": false,
+            "supplyUnit": "exp(-v/2) * v^N/N!",
+            "absoluteSourceDecayCertified": false
+          },
+          {
+            "logNPlusOne": 512,
+            "availableBinUpperCount": 1025,
+            "occupiedBinCeiling": 32,
+            "logExactAllLocationBudget": 250.6959914021733,
+            "logLeanPatternUpperBound": 257.0,
+            "logBudgetAfterRadialDivision": -261.3040085978267,
+            "arithmeticHeadEvaluated": false,
+            "supplyUnit": "exp(-v/2) * v^N/N!",
+            "absoluteSourceDecayCertified": false
+          },
+          {
+            "logNPlusOne": 1024,
+            "availableBinUpperCount": 2049,
+            "occupiedBinCeiling": 64,
+            "logExactAllLocationBudget": 503.65254439894045,
+            "logLeanPatternUpperBound": 513.0,
+            "logBudgetAfterRadialDivision": -520.3474556010596,
+            "arithmeticHeadEvaluated": false,
+            "supplyUnit": "exp(-v/2) * v^N/N!",
+            "absoluteSourceDecayCertified": false
+          },
+          {
+            "logNPlusOne": 2048,
+            "availableBinUpperCount": 4097,
+            "occupiedBinCeiling": 128,
+            "logExactAllLocationBudget": 1009.9102438975076,
+            "logLeanPatternUpperBound": 1025.0,
+            "logBudgetAfterRadialDivision": -1038.0897561024924,
+            "arithmeticHeadEvaluated": false,
+            "supplyUnit": "exp(-v/2) * v^N/N!",
+            "absoluteSourceDecayCertified": false
+          },
+          {
+            "logNPlusOne": 4096,
+            "availableBinUpperCount": 8193,
+            "occupiedBinCeiling": 256,
+            "logExactAllLocationBudget": 2022.7712263785302,
+            "logLeanPatternUpperBound": 2049.0,
+            "logBudgetAfterRadialDivision": -2073.22877362147,
+            "arithmeticHeadEvaluated": false,
+            "supplyUnit": "exp(-v/2) * v^N/N!",
+            "absoluteSourceDecayCertified": false
+          }
+        ],
+        "actualPrimeSeparatedRegression": {
+          "actualSquarefreeLabel": true,
+          "literalCoreMasksCertified": false,
+          "physicalFibreCoverCertified": false,
+          "backgroundPrimeCount": 4,
+          "backgroundDivisorCount": 16,
+          "smallestDivisorLogGap": 2.198024337450826,
+          "tentWidth": 1.791759469228055,
+          "rows": [
+            {
+              "length": 0.34657359027997264,
+              "activeTentsAtEachHinge": [
+                0,
+                1
+              ],
+              "entireSignedResponse": -0.24260151319598086,
+              "countFreeFloor": -0.9704060527839234,
+              "originalToJoinedError": 0.0
+            },
+            {
+              "length": 0.8958797346140275,
+              "activeTentsAtEachHinge": [
+                0,
+                1
+              ],
+              "entireSignedResponse": -0.4852030263919617,
+              "countFreeFloor": -0.9704060527839234,
+              "originalToJoinedError": 0.0
+            },
+            {
+              "length": 3.293775007412398,
+              "activeTentsAtEachHinge": [
+                0,
+                1
+              ],
+              "entireSignedResponse": 0.4852030263919617,
+              "countFreeFloor": -0.9704060527839234,
+              "originalToJoinedError": 0.0
+            },
+            {
+              "length": 33.22808097844926,
+              "activeTentsAtEachHinge": [
+                0,
+                1
+              ],
+              "entireSignedResponse": 0.4852030263919617,
+              "countFreeFloor": -0.9704060527839234,
+              "originalToJoinedError": 0.0
+            },
+            {
+              "length": 52.834085196688896,
+              "activeTentsAtEachHinge": [
+                1,
+                0
+              ],
+              "entireSignedResponse": -0.4852030263919617,
+              "countFreeFloor": -0.9704060527839234,
+              "originalToJoinedError": 0.0
+            }
+          ]
+        },
+        "growingSeparatedLogModels": [
+          {
+            "continuousLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "logN": 256,
+            "totalBackgroundCount": 153,
+            "intermediateFactorCount": 137,
+            "occupiedIntermediateBinCount": 137,
+            "sparseGapCountCeiling": 64,
+            "denseBinPatternCeiling": 16,
+            "coveredBySparseGapCount": false,
+            "coveredByDenseBinPrice": false,
+            "separatedDivisorCertificate": true,
+            "activeTentsAtEachHinge": [
+              1,
+              0
+            ],
+            "joinedRealResponseWithUnitWeight": 0.6931471805599453,
+            "countFreeDebit": 1.3862943611198906,
+            "ownerLogPerN": 0.79,
+            "ownerLargestGeometry": true,
+            "ownerCapGeometry": true,
+            "cofactorQuarterGeometry": true,
+            "populationCostCertified": false,
+            "physicalMasksCertified": false
+          },
+          {
+            "continuousLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "logN": 512,
+            "totalBackgroundCount": 307,
+            "intermediateFactorCount": 290,
+            "occupiedIntermediateBinCount": 290,
+            "sparseGapCountCeiling": 128,
+            "denseBinPatternCeiling": 32,
+            "coveredBySparseGapCount": false,
+            "coveredByDenseBinPrice": false,
+            "separatedDivisorCertificate": true,
+            "activeTentsAtEachHinge": [
+              1,
+              0
+            ],
+            "joinedRealResponseWithUnitWeight": 0.6931471805599453,
+            "countFreeDebit": 1.3862943611198906,
+            "ownerLogPerN": 0.79,
+            "ownerLargestGeometry": true,
+            "ownerCapGeometry": true,
+            "cofactorQuarterGeometry": true,
+            "populationCostCertified": false,
+            "physicalMasksCertified": false
+          },
+          {
+            "continuousLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "logN": 640,
+            "totalBackgroundCount": 384,
+            "intermediateFactorCount": 367,
+            "occupiedIntermediateBinCount": 367,
+            "sparseGapCountCeiling": 160,
+            "denseBinPatternCeiling": 40,
+            "coveredBySparseGapCount": false,
+            "coveredByDenseBinPrice": false,
+            "separatedDivisorCertificate": true,
+            "activeTentsAtEachHinge": [
+              1,
+              0
+            ],
+            "joinedRealResponseWithUnitWeight": -0.6931471805599453,
+            "countFreeDebit": 1.3862943611198906,
+            "ownerLogPerN": 0.79,
+            "ownerLargestGeometry": true,
+            "ownerCapGeometry": true,
+            "cofactorQuarterGeometry": true,
+            "populationCostCertified": false,
+            "physicalMasksCertified": false
+          }
+        ],
+        "remaining": "Diffuse overlapping mixed-parity and one-parity populations; total separated population cost; original fibre cover and fresh reserve."
+      }
+    }
+  },
+  "actualSupplyUnits": "amplitude(N,v)/v = exp(-v/2) * v^N / N!",
+  "wholeFloorProven": false,
+  "wholeCeilingProven": false,
+  "restrictedContradictionProven": false,
+  "zeroExclusionProven": false,
+  "totalUnrestrictedMatchingCostBoundProven": false,
+  "unrestrictedUnmatchedParityCostBoundProven": false,
+  "originalFibreCoverProven": false,
+  "freshDisjointReserveProven": false,
+  "unevaluatedArithmeticHead": true,
+  "effectiveStartingOrderClaimed": false,
+  "publicationDeferred": true,
+  "committed": false
+}

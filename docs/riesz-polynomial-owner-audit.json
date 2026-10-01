@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error Lean build, ordinary-root-plus-module namespace lint and every public transitive axiom check; local unpublished slice",
+  "scope": "Complete actual central labels with largestPrime(n)<=(N+1)^32; any retained original divisor incidence/phase/allocation mask. Independent eventual source norm <=(39/40)^N. Whole floor open.",
+  "documentation": "docs/zeta-riesz-polynomial-owner.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszPolynomialOwnerPayment.lean": "4a5025700585825005ac4535e02f597bd5db61f4bf56217d8161d64a81ce3661",
+    "scripts/probe_riesz_polynomial_owner.py": "248ba185cac3059906936d55bb85c48986d6ebd204673b8a1259748d12bfe4d8",
+    "RiemannGaussian/ZetaRieszHingeAllocationPayment.lean": "6ddd5d5d09e1e24d3450f25df887132b9597613db9e56ad00db1b599905fe2a4",
+    "RiemannGaussian/ZetaRieszPrimeCountMass.lean": "fc44632545e8393adff73f54d3963708e1851c27546807abde9ed3289b1232e2",
+    "RiemannGaussian/ZetaRieszSmoothHead.lean": "2b02a37436e2ca26722602e7d9670f3511c88a3ae75f032be92aa14103ed4d0f"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.polynomial_prime_mass_bound",
+    "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.eventually_literal_smallOwner_bound",
+    "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.eventually_central_smallOwner_crop_bound",
+    "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.eventually_polynomial_remaining_crop_bounds",
+    "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.tendsto_combined_crop_error"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszPolynomialOwnerPayment",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszPolynomialOwnerPayment",
+      "linters": 14,
+      "publicTheoremCount": 16,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.polynomialOwnerRate_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.polynomial_prime_mass_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.polynomial_head_product_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.eventually_polynomial_head_product_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.norm_partial_head_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.eventually_norm_polynomial_head_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.tendsto_polynomialOwnerBudget": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.eventually_norm_polynomial_head_le_geometric": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.prime_le_largestPrime": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.smallOwnerLabels_prime_support": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.eventually_literal_smallOwner_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.eventually_smallOwner_incidences_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.eventually_central_smallOwner_crop_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.eventually_polynomial_remaining_crop_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.tendsto_literal_smallOwner_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszPolynomialOwnerPayment.tendsto_combined_crop_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "optionalRegressions": {
+      "exitCode": 0,
+      "dyadicIndices": [
+        1,
+        2
+      ],
+      "outsideBuildsAndCI": true
+    },
+    "widerPublicationChecks": "deferred by user; public endpoints unchanged"
+  },
+  "numericalDiagnostics": {
+    "1": {
+      "diagnosticOnly": true,
+      "rates": {
+        "rate": 0.9735896055537273,
+        "provedRationalGeometricUpper": 0.975,
+        "geometricLogRate": -0.026765413666420497,
+        "sourceGrowthLogRate": 9.999500033329732e-05,
+        "sublinearEulerExponentPower": 0.75,
+        "comparisonMassExponent": 1.0078125,
+        "finiteBoundPrefactor": 2.0302029999999998,
+        "eventualUpperLogs": [
+          {
+            "N": 640,
+            "logEventualUpper": -16.203397109945534
+          },
+          {
+            "N": 1536,
+            "logEventualUpper": -38.88815306386928
+          },
+          {
+            "N": 4096,
+            "logEventualUpper": -103.70174150365142
+          },
+          {
+            "N": 8192,
+            "logEventualUpper": -207.40348300730284
+          }
+        ],
+        "eventualStartEvaluated": false,
+        "fullComparisonMassEvaluated": false,
+        "finiteOrdersAreNotCertifiedByEventualRate": true
+      },
+      "finiteEuler": {
+        "primeUniverse": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37,
+          41,
+          43
+        ],
+        "completeSquarefreeSubsetMass": 15.452133225632936,
+        "finiteEulerProduct": 15.45213322563294,
+        "finiteRankinMass": 1.6831037421872175,
+        "finiteComparisonMass": 1.6195446662450985,
+        "finiteRankinUpper": 22.29864045842008,
+        "completeCountSumRetained": true
+      },
+      "originalLabel": {
+        "N": 640,
+        "count": 15,
+        "countCeiling": 16,
+        "originalCoreMask": "core",
+        "originalLargestPrime": 5498378833053812012377752536763859763,
+        "polynomialOwnerThreshold": 659867812572216996817336496446399378058552413599733867307974758592698279261958821845422081,
+        "exactIntegerOwnerComparison": true,
+        "ownerLogPerN": 0.13218361974835613,
+        "polynomialThresholdLogPerN": 0.3231514728460335,
+        "lengthLowerPrecondition": false,
+        "previousMaskAndBothHingeRegression": {
+          "N": 640,
+          "count": 15,
+          "countCeiling": 16,
+          "originalCoreMask": "core",
+          "totalLogPerN": 1.9827542962253422,
+          "ownerLogPerN": 0.13218361974835613,
+          "originalOwnerShare": 0.06666666666666667,
+          "originalCofactorShare": 0.9333333333333333,
+          "lengthPerN": 1.3658974040663467,
+          "lengthLowerPrecondition": false,
+          "genuineFailedGapHinge": true,
+          "originalPrimesAllSixthBounded": true,
+          "logOriginalOwnerAllocation": -620.27692983127,
+          "provedLogAllocationUpper": -80.0,
+          "pointwiseAllocationEstimateApplies": true,
+          "maskPreservingPhysicalRegression": {
+            "N": 640,
+            "count": 15,
+            "countCeiling": 16,
+            "originalCoreMask": "core",
+            "totalLogPerN": 1.9827542962253422,
+            "allPrimesBeyondPolynomialCap": true,
+            "signedFourIncidenceBlocks": [
+              -28.199172212982603,
+              28.19917221298249
+            ],
+            "joinedEightIncidences": -1.1368683772161603e-13,
+            "fullTwoHingePrediction": -2.2737367544323206e-13,
+            "oldSecondHingeOnlyPrediction": 28.19917221298249,
+            "remainingFirstHinge": 28.199172212982717,
+            "adaptiveCentre": 140.9958610649132,
+            "centreResidual": 8.526512829121202e-14,
+            "halfWidthBudget": 42.29875831947396,
+            "firstHingesFullySaturated": false,
+            "bothOriginalOwnerGapsFail": true,
+            "originalPhaseAndAllocationUnchanged": true,
+            "originalPhaseReal": 0.9087644817041376,
+            "sourceScaledLogAmplitude": -1273.3928583250818,
+            "floatingUnderflow": true,
+            "diagnosticOnly": true,
+            "sourcePopulationMassCertified": false,
+            "wholeFloorCertified": false
+          },
+          "sourcePopulationMassCertified": false
+        },
+        "noZeroHypothesisUsed": true,
+        "sampleUnderflowIsNotEvidence": true
+      },
+      "allOriginalMasksAndPhasesRetained": true,
+      "remainingLargeOwnerRowsBounded": false,
+      "wholeFloorCertified": false
+    },
+    "2": {
+      "diagnosticOnly": true,
+      "rates": {
+        "rate": 0.9735896055537273,
+        "provedRationalGeometricUpper": 0.975,
+        "geometricLogRate": -0.026765413666420497,
+        "sourceGrowthLogRate": 9.999500033329732e-05,
+        "sublinearEulerExponentPower": 0.75,
+        "comparisonMassExponent": 1.0078125,
+        "finiteBoundPrefactor": 2.0302029999999998,
+        "eventualUpperLogs": [
+          {
+            "N": 640,
+            "logEventualUpper": -16.203397109945534
+          },
+          {
+            "N": 1536,
+            "logEventualUpper": -38.88815306386928
+          },
+          {
+            "N": 4096,
+            "logEventualUpper": -103.70174150365142
+          },
+          {
+            "N": 8192,
+            "logEventualUpper": -207.40348300730284
+          }
+        ],
+        "eventualStartEvaluated": false,
+        "fullComparisonMassEvaluated": false,
+        "finiteOrdersAreNotCertifiedByEventualRate": true
+      },
+      "finiteEuler": {
+        "primeUniverse": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37,
+          41,
+          43
+        ],
+        "completeSquarefreeSubsetMass": 15.452133225632936,
+        "finiteEulerProduct": 15.45213322563294,
+        "finiteRankinMass": 1.6831037421872175,
+        "finiteComparisonMass": 1.6195446662450985,
+        "finiteRankinUpper": 22.29864045842008,
+        "completeCountSumRetained": true
+      },
+      "originalLabel": {
+        "N": 1536,
+        "count": 28,
+        "countCeiling": 32,
+        "originalCoreMask": "core",
+        "originalLargestPrime": 313380460693093349075855394834687882409256423071,
+        "polynomialOwnerThreshold": 940943962520664326398463897277452306573707656142332164712138162874088628437872062647722204075999150081,
+        "exactIntegerOwnerComparison": true,
+        "ownerLogPerN": 0.07120035622818059,
+        "polynomialThresholdLogPerN": 0.15286641132372075,
+        "lengthLowerPrecondition": true,
+        "previousMaskAndBothHingeRegression": {
+          "N": 1536,
+          "count": 28,
+          "countCeiling": 32,
+          "originalCoreMask": "core",
+          "totalLogPerN": 1.9936099743890567,
+          "ownerLogPerN": 0.07120035622818059,
+          "originalOwnerShare": 0.03571428571428571,
+          "originalCofactorShare": 0.9642857142857143,
+          "lengthPerN": 1.3765402204114914,
+          "lengthLowerPrecondition": true,
+          "genuineFailedGapHinge": true,
+          "originalPrimesAllSixthBounded": true,
+          "logOriginalOwnerAllocation": -2030.8126041252494,
+          "provedLogAllocationUpper": -192.0,
+          "pointwiseAllocationEstimateApplies": true,
+          "maskPreservingPhysicalRegression": {
+            "N": 1536,
+            "count": 28,
+            "countCeiling": 32,
+            "originalCoreMask": "core",
+            "totalLogPerN": 1.9936099743890567,
+            "allPrimesBeyondPolynomialCap": true,
+            "signedFourIncidenceBlocks": [
+              36.454582388827475,
+              -36.454582388828385
+            ],
+            "joinedEightIncidences": -9.094947017729282e-13,
+            "fullTwoHingePrediction": 1.2505552149377763e-12,
+            "oldSecondHingeOnlyPrediction": -36.454582388827646,
+            "remainingFirstHinge": 36.4545823888289,
+            "adaptiveCentre": 182.27291194414232,
+            "centreResidual": 3.979039320256561e-13,
+            "halfWidthBudget": 54.6818735832427,
+            "firstHingesFullySaturated": false,
+            "bothOriginalOwnerGapsFail": true,
+            "originalPhaseAndAllocationUnchanged": true,
+            "originalPhaseReal": -0.967310718616863,
+            "sourceScaledLogAmplitude": -3066.949319546929,
+            "floatingUnderflow": true,
+            "diagnosticOnly": true,
+            "sourcePopulationMassCertified": false,
+            "wholeFloorCertified": false
+          },
+          "sourcePopulationMassCertified": false
+        },
+        "noZeroHypothesisUsed": true,
+        "sampleUnderflowIsNotEvidence": true
+      },
+      "allOriginalMasksAndPhasesRetained": true,
+      "remainingLargeOwnerRowsBounded": false,
+      "wholeFloorCertified": false
+    }
+  },
+  "open": [
+    "independent signed floor for the remaining original central aggregate",
+    "whole -79/1000 floor and 3/2 ceiling",
+    "effective starting order and evaluated comparison mass",
+    "restricted zero exclusion and RH"
+  ]
+}

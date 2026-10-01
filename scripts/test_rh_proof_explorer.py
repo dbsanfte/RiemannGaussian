@@ -64,7 +64,7 @@ def run(output, url=None, refresh_preview=False):
                     (campaign.SITE / 'preview.json').write_bytes(campaign.explorer.json_bytes(capture))
                 root = page.evaluate('PROOF_VIEW.endpoint.roots[0]')
                 data = page.evaluate('PROOF_DATA.nodes[PROOF_VIEW.endpoint.roots[0]]')
-                assert data['id'] == 'RiemannGaussian.ZetaRieszRejoinedSupplyFloor.eventually_joined_floor_with_growing_counts'
+                assert data['id'] == 'RiemannGaussian.ZetaRieszCoreOwnerPayment.eventually_rejoined_floor_without_large_owners'
                 assert all(term in data['statement'] for term in (
                     'radiusCeiling', 'Tendsto', 'tailCost'))
                 assert 'NontrivialZetaZero' not in data['statement']
@@ -74,13 +74,14 @@ def run(output, url=None, refresh_preview=False):
                 floor_type = '\n'.join(floor_source[data['source']['line'] - 1:]).split(':= by', 1)[0]
                 assert all(term in floor_type for term in (
                     '3 ≤ n.primeFactors.card ∧ n.primeFactors.card ≤ 55',
-                    'let H := S\\(D ∪ wholeTail S N 0)', '(tailCost c N+ε)*(∑ n ∈ Ys, f n).re',
-                    'cutoffSaving', 'pairSaving', 'hy : 54 ≤ y',
+                    'let Paid := (D ∪ Ds) ∪ Bs', 'let H := S\\(Paid ∪ wholeTail S N 0)',
+                    'let E := H\\largeOwnerSector u N K',
+                    'tailCost c N+ε+growingDebit κ N', 'hy : 54 ≤ y',
                     'ZetaRieszGammaJoint.joinedPhysical'))
                 assert all(term in page.locator('#scope-text').inner_text() for term in (
-                    'WHOLE core band of counts 3 through 55', 'SAME supply',
-                    'no separate positive credit', 'NOT been bounded numerically',
-                    'even the tail debit alone is unbounded at source scale'))
+                    'ALL counts 3 through 55', 'same four-prime funding supply included once',
+                    'every prime share <751/1250', 'all five final joint estimates remain OPEN',
+                    'old funding tail debit is proved unbounded independently'))
                 node = page.locator(f'[data-node="{root}"]')
                 node.hover()
                 assert page.locator('#tooltip').is_visible()

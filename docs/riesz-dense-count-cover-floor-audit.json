@@ -1,0 +1,590 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/build, ordinary-root-plus-explicit-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Entire original unpaid dense-count band is covered by original owner fibres, canonical second-owner clips and existing geometric payments; same quantitative supply pays the global signed price and retains 1/256. Actual remaining counts are 3,4,6,7 or below 5 log(N+1)+2. No numerical whole floor or zero exclusion.",
+  "documentation": "docs/zeta-riesz-dense-count-cover-floor.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszDenseCountCoverFloor.lean": "4ff4b0e88597c706fea8a546a46f790ffb934430aeb94cca8bde43d37f5876e6",
+    "docs/zeta-riesz-dense-count-cover-floor.md": "951f4cedb3ccc743feecfcdfe2455f2f7fc52ad3dbd225db6d8a0f573c5597c4",
+    "scripts/probe_riesz_dense_count_cover.py": "08818528ab14d9a1ed14207d1c1a5fbb5965c51e88bf15e85ac0e1211bba7245",
+    "RiemannGaussian/ZetaRieszUnpaidCountTiltFloor.lean": "2f7a3dd1d64fa2a406c127bbbb8b1e68382b5ccac749bb83985fdc9b7e4ffe60",
+    "RiemannGaussian/ZetaRieszNonownerAllocation.lean": "4b34638700836fb577957eadbfe1a473c4f8a0e8d475aa7ec140ac75ba1bf5cb",
+    "RiemannGaussian/ZetaRieszFiveSignCoverFloor.lean": "180751690496d8ea07c3c06284e64e7b65056611e95390dbe8595320592c3d36",
+    "RiemannGaussian/ZetaRieszJointDominantFloor.lean": "d8bb6349e964ee3d7e74ef6b00b703240e0b1ba385e42d1e293cdbfaadcdab9e",
+    "RiemannGaussian/ZetaRieszRadialPeriodPayment.lean": "2b60e29de2fdb3dbee52431ec5963fb087c103a1438e954d1c38aff711a1ed45",
+    "RiemannGaussian/ZetaRieszClippedOwnerPeriodFloor.lean": "6bd75058fed1f768d8e7b54b0dc512f1aaad53c8825371756bcf82f662d63dcc",
+    "RiemannGaussian/ZetaRieszBroadOwnerPeriodFloor.lean": "1577f080a6da21838fff76995f6f129f77e9d0a7f0fddad41f4bbb4607d170da",
+    "RiemannGaussian/ZetaRieszDenseSmallTopFloor.lean": "39e16317f484f6510f227cc2485b7f1b51397e99f17b02532c6bad18bc3b7cb7",
+    "RiemannGaussian/ZetaRieszHighSignCoverFloor.lean": "5547ed8b944bf55a65f931be376856872b36dc728a51ab90df1d655ce007cb7d",
+    "RiemannGaussian/ZetaRieszRoughFiveJoinedFloor.lean": "44d61cb62b953331a89745b1485ec86cea54ff810c4d8bd9818c51e241522ca6",
+    "RiemannGaussian/ZetaRieszSmallCofactorCancellation.lean": "5c98816025d67c8fa869d57c6064d8719578fff80a2be53c089bf03e479f929d",
+    "RiemannGaussian/ZetaRieszDenseShellCost.lean": "971749525f1ae2cdb1f1b9cbf45c8446a5793df917ca443bc64cc1bf2449dfd2",
+    "RiemannGaussian/ZetaRieszSeparatedParityFloor.lean": "f971ba57c37e98d951d5c14bb7d04390e6d15efe3e988b0933f838aa61ae31ed",
+    "RiemannGaussian/ZetaRieszCrossCountTransport.lean": "eaf6fbcee32a61f07df5be4191d45a6dda3ad15f5dc8fc8c9858ed6ead8f8d3e"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszDenseCountCoverFloor.dense_label_grid_cover",
+    "RiemannGaussian.ZetaRieszDenseCountCoverFloor.eventually_dense_two_grid_floor",
+    "RiemannGaussian.ZetaRieszDenseCountCoverFloor.exists_dense_unmatched_bound",
+    "RiemannGaussian.ZetaRieszDenseCountCoverFloor.exists_dense_band_floor",
+    "RiemannGaussian.ZetaRieszDenseCountCoverFloor.eventually_joined_floor_without_dense_band",
+    "RiemannGaussian.ZetaRieszDenseCountCoverFloor.remaining_count_ceiling",
+    "RiemannGaussian.ZetaRieszDenseCountCoverFloor.remaining_count_cases"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszDenseCountCoverFloor",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszDenseCountCoverFloor",
+      "linters": 14,
+      "publicTheoremCount": 48,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.mem_core_of_share_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countPeriod_data": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countPeriod_subset_core": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countCofactors_owner_physical": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countCofactors_scale": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countPrimeUniverse_data": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.mem_countPrimeUniverse": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countCofactors_prime_support": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countPeriod_raw_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.dense_label_covered": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countPeriod_subset_unpaid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countPeriod_scale_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countPeriod_radial_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.close_second_owner": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countBoundary_data": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countBoundary_all_prime_logs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countBoundary_scale": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countBoundary_covered": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.dense_label_full_cover": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countPeriod_boundary_raw_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countPeriod_boundary_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.global_countPeriod_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.core_count_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countPeriod_count_lt_from_seeds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countPeriod_subset_core_from_seeds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countPeriod_subset_denseBand": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.eventually_physical_from_count_scale": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.active_scale_le_center": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.eventually_global_countPeriod_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.mem_denseScaleGrid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.dense_label_grid_cover": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.eventually_dense_grid_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countBoundary_scale_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countBoundary_radial_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.densePeriodGrid_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.denseBoundaryGrid_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.denseBoundaryGrid_subset": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.densePeriodGrid_subset_denseBand": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.countBoundary_sdiff_seed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.eventually_dense_two_grid_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.dense_grid_unmatched_geometry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.eventually_dense_owner_large": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.exists_dense_unmatched_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.tendsto_ownerPaymentError": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.exists_dense_band_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.eventually_joined_floor_without_dense_band": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.remaining_count_ceiling": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszDenseCountCoverFloor.remaining_count_cases": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "pythonAST": {
+      "exitCode": 0,
+      "path": "scripts/probe_riesz_dense_count_cover.py"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "summary": {
+        "diagnosticOnly": true,
+        "ordinaryBuildOrCI": false,
+        "numericalFloorCertified": false,
+        "effectiveStartingOrderCertified": false,
+        "actualOwnershipBookkeeping": [
+          {
+            "totalPrimeCount": 7,
+            "removedPairCount": 5,
+            "owner": 269,
+            "secondOwner": 263,
+            "branch": "canonical-second-owner-clip",
+            "uniqueDyadicScale": 2,
+            "staggeredPeriodIndices": [
+              332,
+              331
+            ],
+            "actualSquarefreeLabel": true,
+            "originalLiteralCoreCertified": false,
+            "eventualChebyshevThresholdMet": false
+          },
+          {
+            "totalPrimeCount": 7,
+            "removedPairCount": 5,
+            "owner": 269,
+            "secondOwner": 229,
+            "branch": "complete-owner-fibre",
+            "uniqueDyadicScale": 2,
+            "staggeredPeriodIndices": [
+              324,
+              324
+            ],
+            "actualSquarefreeLabel": true,
+            "originalLiteralCoreCertified": false,
+            "eventualChebyshevThresholdMet": false
+          },
+          {
+            "totalPrimeCount": 11,
+            "removedPairCount": 9,
+            "owner": 269,
+            "secondOwner": 263,
+            "branch": "canonical-second-owner-clip",
+            "uniqueDyadicScale": 2,
+            "staggeredPeriodIndices": [
+              517,
+              517
+            ],
+            "actualSquarefreeLabel": true,
+            "originalLiteralCoreCertified": false,
+            "eventualChebyshevThresholdMet": false
+          },
+          {
+            "totalPrimeCount": 11,
+            "removedPairCount": 9,
+            "owner": 269,
+            "secondOwner": 229,
+            "branch": "complete-owner-fibre",
+            "uniqueDyadicScale": 2,
+            "staggeredPeriodIndices": [
+              504,
+              503
+            ],
+            "actualSquarefreeLabel": true,
+            "originalLiteralCoreCertified": false,
+            "eventualChebyshevThresholdMet": false
+          },
+          {
+            "totalPrimeCount": 21,
+            "removedPairCount": 19,
+            "owner": 269,
+            "secondOwner": 263,
+            "branch": "canonical-second-owner-clip",
+            "uniqueDyadicScale": 2,
+            "staggeredPeriodIndices": [
+              964,
+              963
+            ],
+            "actualSquarefreeLabel": true,
+            "originalLiteralCoreCertified": false,
+            "eventualChebyshevThresholdMet": false
+          },
+          {
+            "totalPrimeCount": 21,
+            "removedPairCount": 19,
+            "owner": 269,
+            "secondOwner": 229,
+            "branch": "complete-owner-fibre",
+            "uniqueDyadicScale": 2,
+            "staggeredPeriodIndices": [
+              934,
+              933
+            ],
+            "actualSquarefreeLabel": true,
+            "originalLiteralCoreCertified": false,
+            "eventualChebyshevThresholdMet": false
+          }
+        ],
+        "exactSquarefreeSymmetry": [
+          {
+            "count": 0,
+            "squarefreeReciprocalMass": "1",
+            "orderedDistinctMass": "1",
+            "exactSymmetryFactor": 1
+          },
+          {
+            "count": 1,
+            "squarefreeReciprocalMass": "1005768/1616615",
+            "orderedDistinctMass": "1005768/1616615",
+            "exactSymmetryFactor": 1
+          },
+          {
+            "count": 2,
+            "squarefreeReciprocalMass": "247539/1616615",
+            "orderedDistinctMass": "495078/1616615",
+            "exactSymmetryFactor": 2
+          },
+          {
+            "count": 3,
+            "squarefreeReciprocalMass": "6192/323323",
+            "orderedDistinctMass": "37152/323323",
+            "exactSymmetryFactor": 6
+          },
+          {
+            "count": 4,
+            "squarefreeReciprocalMass": "417/323323",
+            "orderedDistinctMass": "10008/323323",
+            "exactSymmetryFactor": 24
+          },
+          {
+            "count": 5,
+            "squarefreeReciprocalMass": "72/1616615",
+            "orderedDistinctMass": "1728/323323",
+            "exactSymmetryFactor": 120
+          },
+          {
+            "count": 6,
+            "squarefreeReciprocalMass": "1/1616615",
+            "orderedDistinctMass": "144/323323",
+            "exactSymmetryFactor": 720
+          }
+        ],
+        "wholeBandPrices": [
+          {
+            "logNPlusOne": 32,
+            "newWholeLabelLowerCount": 162,
+            "approximateOldTailCount": 370,
+            "logExactFinitePostCancellationCountPrice": 10.440501908583144,
+            "logTiltPrice": 13.39348290013519,
+            "logGlobalRelativePriceWithoutHead": 3.8223399403942735,
+            "arithmeticHeadEvaluated": false,
+            "literalSourceScaleFloorCertified": false
+          },
+          {
+            "logNPlusOne": 64,
+            "newWholeLabelLowerCount": 322,
+            "approximateOldTailCount": 739,
+            "logExactFinitePostCancellationCountPrice": 23.491006843312466,
+            "logTiltPrice": 26.78696580027038,
+            "logGlobalRelativePriceWithoutHead": -10.82234951625359,
+            "arithmeticHeadEvaluated": false,
+            "literalSourceScaleFloorCertified": false
+          },
+          {
+            "logNPlusOne": 128,
+            "newWholeLabelLowerCount": 642,
+            "approximateOldTailCount": 1478,
+            "logExactFinitePostCancellationCountPrice": 49.933230195387665,
+            "logTiltPrice": 53.57393160054076,
+            "logGlobalRelativePriceWithoutHead": -41.451914661025874,
+            "arithmeticHeadEvaluated": false,
+            "literalSourceScaleFloorCertified": false
+          },
+          {
+            "logNPlusOne": 256,
+            "newWholeLabelLowerCount": 1282,
+            "approximateOldTailCount": 2955,
+            "logExactFinitePostCancellationCountPrice": 103.1615124493371,
+            "logTiltPrice": 107.14786320108152,
+            "logGlobalRelativePriceWithoutHead": -104.07364538258655,
+            "arithmeticHeadEvaluated": false,
+            "literalSourceScaleFloorCertified": false
+          },
+          {
+            "logNPlusOne": 512,
+            "newWholeLabelLowerCount": 2562,
+            "approximateOldTailCount": 5910,
+            "logExactFinitePostCancellationCountPrice": 209.9632663953609,
+            "logTiltPrice": 214.29572640216304,
+            "logGlobalRelativePriceWithoutHead": -230.69138784346376,
+            "arithmeticHeadEvaluated": false,
+            "literalSourceScaleFloorCertified": false
+          }
+        ],
+        "remainingCentralPriceScan": [
+          {
+            "countPerLogN": 0.3333333333333333,
+            "optimizedPostOwnerBudgetPower": -0.069413510257315,
+            "priceModelDecays": true,
+            "centralBudgetObstruction": false,
+            "newSignedCancellationCertifiedHere": false
+          },
+          {
+            "countPerLogN": 1.0,
+            "optimizedPostOwnerBudgetPower": 0.6931471805599453,
+            "priceModelDecays": false,
+            "centralBudgetObstruction": false,
+            "newSignedCancellationCertifiedHere": false
+          },
+          {
+            "countPerLogN": 2.0,
+            "optimizedPostOwnerBudgetPower": 1.0,
+            "priceModelDecays": false,
+            "centralBudgetObstruction": true,
+            "newSignedCancellationCertifiedHere": false
+          },
+          {
+            "countPerLogN": 3.0,
+            "optimizedPostOwnerBudgetPower": 0.7836046756755068,
+            "priceModelDecays": false,
+            "centralBudgetObstruction": false,
+            "newSignedCancellationCertifiedHere": false
+          },
+          {
+            "countPerLogN": 4.0,
+            "optimizedPostOwnerBudgetPower": 0.22741127776021877,
+            "priceModelDecays": false,
+            "centralBudgetObstruction": false,
+            "newSignedCancellationCertifiedHere": false
+          },
+          {
+            "countPerLogN": 4.4,
+            "optimizedPostOwnerBudgetPower": -0.06921238560278875,
+            "priceModelDecays": true,
+            "centralBudgetObstruction": false,
+            "newSignedCancellationCertifiedHere": false
+          },
+          {
+            "countPerLogN": 5.0,
+            "optimizedPostOwnerBudgetPower": -0.5814536593707753,
+            "priceModelDecays": true,
+            "centralBudgetObstruction": false,
+            "newSignedCancellationCertifiedHere": false
+          }
+        ],
+        "sameSupplyLedger": "1/128 retained before this slice; 1/256 spent, 1/256 retained",
+        "distinction": "Relative signed price tends to zero; positive source units need not.",
+        "remaining": "Low fixed counts; few-bin lower-count fibre cover; total separated population cost; many-bin mixed-parity matching and one-parity layers."
+      }
+    }
+  },
+  "sourceRadiusRange": "1/2 < u <= 10001/20000",
+  "heightRange": "fixed y >= 54",
+  "actualSupplyUnits": "exp(-v/2) * v^N/N!",
+  "sameSupplyReserveRetained": "1/256",
+  "originalWholeFibreCoverProven": true,
+  "literalPrimeCountMaskInheritedFromOriginalSeeds": true,
+  "ownershipClipsUniquelyCounted": true,
+  "unmatchedBoundaryIndependentlyPaid": true,
+  "globalNonownerAllocationRetained": true,
+  "sameOriginalSupplyWitnessRetained": true,
+  "finalWholeFloorLedgerPlacementProven": true,
+  "literalWholeFloorCountThresholdLowered": true,
+  "remainingFixedCounts": [
+    3,
+    4,
+    6,
+    7
+  ],
+  "remainingGrowingCounts": "8 <= omega(n) < 5 log(N+1)+2",
+  "remainingObstaclesEnumerated": true,
+  "allRemainingCancellationCostsBoundProven": false,
+  "wholeFloorProven": false,
+  "wholeCeilingProven": false,
+  "restrictedContradictionProven": false,
+  "zeroExclusionProven": false,
+  "sourceNormalizedNormDecayClaimed": false,
+  "signedArithmeticEstimateAssumed": false,
+  "unevaluatedArithmeticHead": true,
+  "effectiveStartingOrderClaimed": false,
+  "publicationDeferred": true,
+  "committed": false,
+  "followUpFewBinWholeFloorPaymentProven": true,
+  "followUpFewBinAudit": "docs/riesz-few-bin-cover-floor-audit.json",
+  "followUpRetainedSameSupplyReserve": "1/512",
+  "followUpMergedFixedAndGrowingPaymentsProven": true,
+  "followUpMergedWholeFloorAudit": "docs/riesz-joined-population-floor-audit.json",
+  "followUpMergedSupplyRetained": "257/512",
+  "followUpMergedRemainingCounts": "four or56<=omega<5log(N+1)+2 with many cofactor bins"
+}

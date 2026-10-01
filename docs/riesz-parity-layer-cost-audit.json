@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/build, ordinary-root-plus-explicit-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Independent structured-population signed cost over all counts, dyadic owner scales, radial periods and literal ownership clips, retaining the unique-owner allocation. O(log^9(N)/N) in actual positive-supply units, with intermediate log-scale coverage still open. No independent whole floor or zero exclusion.",
+  "documentation": "docs/zeta-riesz-parity-layer-cost.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszParityLayerCost.lean": "7a73413784a8bf74aae6c5af54f65f6991f8596801c763479ac94ea3b5c83c38",
+    "docs/zeta-riesz-parity-layer-cost.md": "463f6f1bb75707f9e44364af8f56bddb62ab77676a44004818b5a82348c8d6b2",
+    "scripts/probe_riesz_parity_layer_cost.py": "cdaf82832b69543bbacb02cf1f4a5386c8ef1bd326b6638763fb17dbb82e3b0e",
+    "RiemannGaussian/ZetaRieszSmallCofactorCancellation.lean": "5c98816025d67c8fa869d57c6064d8719578fff80a2be53c089bf03e479f929d",
+    "RiemannGaussian/ZetaRieszBroadOwnerPeriodFloor.lean": "1577f080a6da21838fff76995f6f129f77e9d0a7f0fddad41f4bbb4607d170da",
+    "RiemannGaussian/ZetaRieszSmallOwnerBoundary.lean": "1439acfd7b69ba1fecb1cf9f9dd720857496e78433f631da47297c78d78ea66a",
+    "RiemannGaussian/ZetaRieszPolynomialCutoffRows.lean": "070281f116d0a325a07f8305f78566da815201d13cce453a04dcec6e2d6e43cb",
+    "RiemannGaussian/ZetaRieszOwnerTieFloor.lean": "1ea026790451b053d82e2d7d51d6c65c94ae1484869bd55d0ce33394ae0be26c",
+    "RiemannGaussian/ZetaRieszRoughFiveJoinedFloor.lean": "44d61cb62b953331a89745b1485ec86cea54ff810c4d8bd9818c51e241522ca6",
+    "RiemannGaussian/ZetaRieszCrossCountTransport.lean": "eaf6fbcee32a61f07df5be4191d45a6dda3ad15f5dc8fc8c9858ed6ead8f8d3e",
+    "RiemannGaussian/ZetaRieszTinyOwnerPeriodFloor.lean": "cd9b88371b8f54f186fe2624bef8df02904cc1a6a4218141535e2b1715d534a5"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszParityLayerCost.retained_owner_row_floor",
+    "RiemannGaussian.ZetaRieszParityLayerCost.constrained_period_with_boundary_floor",
+    "RiemannGaussian.ZetaRieszParityLayerCost.gapped_radial_supply_floor",
+    "RiemannGaussian.ZetaRieszParityLayerCost.tendsto_gappedSupplyPrice",
+    "RiemannGaussian.ZetaRieszParityLayerCost.eventually_gappedSupplyPrice_lt",
+    "RiemannGaussian.ZetaRieszParityLayerCost.large_head_price_lower"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "log": ".lake/floor-publication-parity-direct.log"
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszParityLayerCost",
+      "warningAsError": true,
+      "log": ".lake/floor-publication-build.log"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszParityLayerCost"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszParityLayerCost",
+      "linters": 14,
+      "publicTheoremCount": 20,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszParityLayerCost.sum_count_price_tilted_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.tilted_owner_price_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.tilted_separated_owner_price_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.cofactor_log_le_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.retained_owner_row_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.constrained_all_counts_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.clipped_count_constraint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.constrained_clipped_all_counts_norm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.allocation_family_atom_norm_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.constrained_period_with_boundary_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.gappedHeadCost_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.gapped_count_exponential_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.gapped_period_with_boundary_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.count_constraint_of_cofactor_population": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.literal_core_cofactor_quarter": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.gapped_radial_supply_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.tendsto_gappedSupplyPrice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.eventually_gappedSupplyPrice_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.cost_paid_by_radial_reserve": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszParityLayerCost.large_head_price_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "log": ".lake/floor-publication-parity-audit.log"
+    },
+    "pythonAST": {
+      "exitCode": 0,
+      "path": "scripts/probe_riesz_parity_layer_cost.py"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "summary": {
+        "diagnosticOnly": true,
+        "ordinaryBuildOrCI": false,
+        "wholeFloorCertified": false,
+        "totalMatchingCostCertified": false,
+        "coverageAudit": [
+          {
+            "continuousGeometryModel": true,
+            "actualPrimeLabel": false,
+            "N": 10000000000,
+            "layout": "cluster",
+            "largestOwnerLogPerN": 0.32668676011146525,
+            "retainedOwnerCap": true,
+            "cofactorQuarterConstraint": true,
+            "selectedCount": 15,
+            "J": 346523591.6061164,
+            "B": 736.8272297612946,
+            "W": 736.8272297612946,
+            "eventualPrimeMassScaleThreshold": true,
+            "coveredByGrowingSpreadPrice": true,
+            "omittedIntermediateLogs": [],
+            "activeUnsignedCountHistogram": {
+              "2": 66
+            },
+            "activeParities": [
+              1
+            ],
+            "activeOrbitCount": 66,
+            "joinedToSeparateRatio": 1.0,
+            "globalPopulationMassCertified": false
+          },
+          {
+            "continuousGeometryModel": true,
+            "actualPrimeLabel": false,
+            "N": 10000000000,
+            "layout": "one mesoscopic prime",
+            "largestOwnerLogPerN": 0.32667676011146524,
+            "retainedOwnerCap": true,
+            "cofactorQuarterConstraint": true,
+            "selectedCount": 16,
+            "J": 346523591.6061164,
+            "B": 736.8272297612946,
+            "W": 736.8272297612946,
+            "eventualPrimeMassScaleThreshold": true,
+            "coveredByGrowingSpreadPrice": false,
+            "omittedIntermediateLogs": [
+              100000.0
+            ],
+            "activeUnsignedCountHistogram": {
+              "3": 66
+            },
+            "activeParities": [
+              1
+            ],
+            "activeOrbitCount": 66,
+            "joinedToSeparateRatio": 1.0,
+            "globalPopulationMassCertified": false
+          }
+        ],
+        "limitation": "The mesoscopic interval B < log p < J/W is not paid. Reinforcing parity layers can survive there too. Complete original fibre/mask cover and disjoint reserve credits remain necessary."
+      }
+    }
+  },
+  "wholeFloorProven": false,
+  "wholeCeilingProven": false,
+  "restrictedContradictionProven": false,
+  "zeroExclusionProven": false,
+  "totalUnrestrictedMatchingCostBoundProven": false,
+  "publicationChecksDeferredByUser": true,
+  "committed": false
+}

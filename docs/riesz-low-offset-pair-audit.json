@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error compilation/build, ordinary-root-plus-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Independent two-thirds real allowance for joined low-offset original eight-incidence pairs, with exact signed prime moments and direct current floor-ledger comparison. Aggregate sector price and whole floor remain OPEN.",
+  "documentation": "docs/zeta-riesz-low-offset-pair.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszLowOffsetPairFloor.lean": "2add58977e60d0cff7abd83d4e14cae9166af037e4c6122b06de6fb53ede5d0b",
+    "scripts/probe_riesz_low_offset_pair.py": "62a751b6b4e31443d609608aeb3b7c1734ce4be02b0df5518ea77749c37e9cb5",
+    "docs/zeta-riesz-low-offset-pair.md": "e16bc28a08b752d6c5dd7dc29980fda51c45f4f4553f8ca36c84531bab8927ce",
+    "RiemannGaussian/ZetaRieszHingePairCancellation.lean": "69582ceb7bf4990b915de9fa1a54c774de34755841729ca4e339ee66de46b330",
+    "RiemannGaussian/ZetaRieszHingeAllocationPayment.lean": "6ddd5d5d09e1e24d3450f25df887132b9597613db9e56ad00db1b599905fe2a4",
+    "RiemannGaussian/ZetaRieszReducedCountPayment.lean": "97ba42d8ead3b66dc29d2b723ae33738ead25206801322fe299eab51813facf6"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszLowOffsetPairFloor.weighted_low_offset_pair_eq",
+    "RiemannGaussian.ZetaRieszLowOffsetPairFloor.re_low_offset_pair_floor",
+    "RiemannGaussian.ZetaRieszLowOffsetPairFloor.low_offset_prime_row_eq",
+    "RiemannGaussian.ZetaRieszLowOffsetPairFloor.low_offset_pair_subset_retained",
+    "RiemannGaussian.ZetaRieszLowOffsetPairFloor.global_retained_low_offset_floor",
+    "RiemannGaussian.ZetaRieszLowOffsetPairFloor.eventually_remaining_low_offset_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszLowOffsetPairFloor",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszLowOffsetPairFloor",
+      "linters": 14,
+      "publicTheoremCount": 15,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor.low_offset_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor.opposite_amplitudes_two_thirds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor.balanced_amplitudes_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor.low_offset_two_thirds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor.weighted_low_offset_pair_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor.weighted_low_offset_first_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor.weighted_low_offset_second_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor.opposite_real_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor.re_low_offset_pair_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor.low_offset_prime_row_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor.first_hinge_orbit_disjoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor.low_offset_pair_subset_retained": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor.retained_low_offset_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor.global_retained_low_offset_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLowOffsetPairFloor.eventually_remaining_low_offset_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "optionalRegressions": {
+      "exitCode": 0,
+      "dyadicIndices": [
+        1,
+        2
+      ],
+      "outsideBuildsAndCI": true,
+      "pythonSyntax": "passed"
+    },
+    "widerPublicationChecks": "deferred by user; published README/explorer endpoints unchanged"
+  },
+  "numericalDiagnostics": {
+    "1": {
+      "idealLargeOrderScan": [
+        {
+          "K": 2048,
+          "N": 196608,
+          "actualPrimeLabel": false,
+          "belowReducedCountThreshold": true,
+          "dyadicIndex": 8,
+          "idealLogGeometryOnly": true,
+          "localAllowanceRatio": 0.6495373854855551,
+          "populationMassCertified": false,
+          "wholeFloorCertified": false
+        },
+        {
+          "K": 32768,
+          "N": 4194304,
+          "actualPrimeLabel": false,
+          "belowReducedCountThreshold": true,
+          "dyadicIndex": 12,
+          "idealLogGeometryOnly": true,
+          "localAllowanceRatio": 0.6506653258973059,
+          "populationMassCertified": false,
+          "wholeFloorCertified": false
+        },
+        {
+          "K": 8388608,
+          "N": 1610612736,
+          "actualPrimeLabel": false,
+          "belowReducedCountThreshold": true,
+          "dyadicIndex": 20,
+          "idealLogGeometryOnly": true,
+          "localAllowanceRatio": 0.6507353033236245,
+          "populationMassCertified": false,
+          "wholeFloorCertified": false
+        }
+      ],
+      "literal": {
+        "K": 16,
+        "N": 640,
+        "allocatedFraction": 1.9697165765593874e-153,
+        "belowReducedCountThreshold": false,
+        "bothOldAffineSelectorsFail": true,
+        "certifiedSectorRatio": 0.6666666666666666,
+        "dyadicIndex": 1,
+        "eventualCountPaymentNotAFiniteCertificate": true,
+        "exactFormula": -62.33101580738577,
+        "floatingUnderflow": true,
+        "joinedAllowance": 62.331015807385825,
+        "joinedCoefficient": -62.331015807385825,
+        "localAllowanceRatio": 0.43685340490226165,
+        "offsetPerLeastLog": 0.2185385512465954,
+        "oldOverlapSelectorApplies": false,
+        "originalCoreMask": "core",
+        "originalOwnerGapFails": true,
+        "originalPhaseAndAllocationRetained": true,
+        "populationMassCertified": false,
+        "primeCount": 7,
+        "separateAllowance": 142.68176717389053,
+        "signedOldBlocks": [
+          -102.50639149063818,
+          40.175375683252355
+        ],
+        "sourceScaledLogAmplitude": -1284.3975176859858,
+        "sourceScaledReal": null,
+        "totalLogPerN": 2.0,
+        "wholeFloorCertified": false
+      }
+    },
+    "2": {
+      "idealLargeOrderScan": [
+        {
+          "K": 2048,
+          "N": 196608,
+          "actualPrimeLabel": false,
+          "belowReducedCountThreshold": true,
+          "dyadicIndex": 8,
+          "idealLogGeometryOnly": true,
+          "localAllowanceRatio": 0.6495373854855551,
+          "populationMassCertified": false,
+          "wholeFloorCertified": false
+        },
+        {
+          "K": 32768,
+          "N": 4194304,
+          "actualPrimeLabel": false,
+          "belowReducedCountThreshold": true,
+          "dyadicIndex": 12,
+          "idealLogGeometryOnly": true,
+          "localAllowanceRatio": 0.6506653258973059,
+          "populationMassCertified": false,
+          "wholeFloorCertified": false
+        },
+        {
+          "K": 8388608,
+          "N": 1610612736,
+          "actualPrimeLabel": false,
+          "belowReducedCountThreshold": true,
+          "dyadicIndex": 20,
+          "idealLogGeometryOnly": true,
+          "localAllowanceRatio": 0.6507353033236245,
+          "populationMassCertified": false,
+          "wholeFloorCertified": false
+        }
+      ],
+      "literal": {
+        "K": 32,
+        "N": 1536,
+        "allocatedFraction": 0.0,
+        "belowReducedCountThreshold": false,
+        "bothOldAffineSelectorsFail": true,
+        "certifiedSectorRatio": 0.6666666666666666,
+        "dyadicIndex": 2,
+        "eventualCountPaymentNotAFiniteCertificate": true,
+        "exactFormula": -198.63653565615232,
+        "floatingUnderflow": true,
+        "joinedAllowance": 198.63653565615277,
+        "joinedCoefficient": -198.63653565615277,
+        "localAllowanceRatio": 0.5536388277287977,
+        "offsetPerLeastLog": 0.1812495405773864,
+        "oldOverlapSelectorApplies": false,
+        "originalCoreMask": "core",
+        "originalOwnerGapFails": true,
+        "originalPhaseAndAllocationRetained": true,
+        "populationMassCertified": false,
+        "primeCount": 7,
+        "separateAllowance": 358.78360712347967,
+        "signedOldBlocks": [
+          -278.7100713898162,
+          80.07353573366345
+        ],
+        "sourceScaledLogAmplitude": -3076.7533421925223,
+        "sourceScaledReal": null,
+        "totalLogPerN": 2.0,
+        "wholeFloorCertified": false
+      }
+    }
+  },
+  "open": [
+    "numerical bound for total matched-sector cost",
+    "independent joint signed estimate for unselected rows and incidences",
+    "whole -79/1000 floor and 3/2 ceiling",
+    "effective starting order and surviving cofinal population mass",
+    "restricted zero exclusion and RH"
+  ]
+}

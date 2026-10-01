@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/build, ordinary-root-plus-explicit-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Literal signed opposite-count transport after both earlier zero deletions, exact current scalar-remainder inequality and uniform clustered-layer obstruction. The global transport cost and full floor remain unproved.",
+  "documentation": "docs/zeta-riesz-cross-count-transport.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszCrossCountTransport.lean": "eaf6fbcee32a61f07df5be4191d45a6dda3ad15f5dc8fc8c9858ed6ead8f8d3e",
+    "docs/zeta-riesz-cross-count-transport.md": "54741b4eec078a5e77f9b8fb5047f4f434c0adccae2542c6494ee6cdd57ef107",
+    "scripts/probe_riesz_cross_count_transport.py": "ef6f1adeb8e09a744688974245545618e0f9ebbdb1d50b7c1fb51c607449bc25",
+    "RiemannGaussian/ZetaRieszSmallCofactorCancellation.lean": "5c98816025d67c8fa869d57c6064d8719578fff80a2be53c089bf03e479f929d",
+    "RiemannGaussian/ZetaRieszBroadOwnerPeriodFloor.lean": "1577f080a6da21838fff76995f6f129f77e9d0a7f0fddad41f4bbb4607d170da",
+    "RiemannGaussian/ZetaRieszSmallOwnerBoundary.lean": "1439acfd7b69ba1fecb1cf9f9dd720857496e78433f631da47297c78d78ea66a",
+    "RiemannGaussian/ZetaRieszPolynomialCutoffRows.lean": "070281f116d0a325a07f8305f78566da815201d13cce453a04dcec6e2d6e43cb",
+    "RiemannGaussian/ZetaRieszOwnerTieFloor.lean": "1ea026790451b053d82e2d7d51d6c65c94ae1484869bd55d0ce33394ae0be26c",
+    "RiemannGaussian/ZetaRieszRoughFiveJoinedFloor.lean": "44d61cb62b953331a89745b1485ec86cea54ff810c4d8bd9818c51e241522ca6"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszCrossCountTransport.polynomialCentralRemaining_transport_floor",
+    "RiemannGaussian.ZetaRieszCrossCountTransport.signed_involution_abs",
+    "RiemannGaussian.ZetaRieszCrossCountTransport.retained_matching_floor_of_inactive_hinge",
+    "RiemannGaussian.ZetaRieszCrossCountTransport.replicated_relation_floor",
+    "RiemannGaussian.ZetaRieszCrossCountTransport.clustered_active_no_transport"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszCrossCountTransport",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszCrossCountTransport"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszCrossCountTransport",
+      "linters": 14,
+      "publicTheoremCount": 23,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszCrossCountTransport.weighted_based_sum_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.basedResponse_lipschitz": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.basedResponse_lipschitz_of_first_saturated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.basedResponse_lipschitz_of_second_nonpos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.basedResponse_lipschitz_of_inactive_hinge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.opposite_based_sum_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.opposite_based_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.opposite_based_floor_of_first_saturated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.signed_involution_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.signed_involution_abs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.retained_group_eq_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.retained_matching_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.retained_matching_floor_of_first_saturated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.retained_matching_floor_of_inactive_hinge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.global_retained_matching_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.polynomialCentralRemaining_transport_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.log_distance_common_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.opposite_cofactor_parity_common_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.replicated_relation_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.single_parity_no_transport": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.single_parity_exact_price": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.clustered_active_rank": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszCrossCountTransport.clustered_active_no_transport": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "pythonAST": {
+      "exitCode": 0,
+      "path": "scripts/probe_riesz_cross_count_transport.py"
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "summary": {
+        "diagnosticOnly": true,
+        "ordinaryBuildOrCI": false,
+        "actualPrimeLabels": true,
+        "wholeFloorCertified": false,
+        "sourcePopulationMassCertified": false,
+        "laterReducedCountCropPassed": false,
+        "labelSummaries": [
+          {
+            "seed": 1487,
+            "background": "spread",
+            "activeCount": 18,
+            "pairedBases": 14,
+            "unmatchedBases": 4,
+            "wholeTransportToSeparateRatio": 0.33720858401722403,
+            "belowReducedCountCeiling": false,
+            "floatingUnderflow": true
+          },
+          {
+            "seed": 1571,
+            "background": "spread",
+            "activeCount": 26,
+            "pairedBases": 24,
+            "unmatchedBases": 2,
+            "wholeTransportToSeparateRatio": 0.09763964328478375,
+            "belowReducedCountCeiling": false,
+            "floatingUnderflow": true
+          },
+          {
+            "seed": 398,
+            "background": "spread",
+            "activeCount": 13,
+            "pairedBases": 12,
+            "unmatchedBases": 1,
+            "wholeTransportToSeparateRatio": 0.09993312057636912,
+            "belowReducedCountCeiling": false,
+            "floatingUnderflow": true
+          },
+          {
+            "seed": 2,
+            "background": "spread",
+            "activeCount": 17,
+            "pairedBases": 16,
+            "unmatchedBases": 1,
+            "wholeTransportToSeparateRatio": 0.07610629799503019,
+            "belowReducedCountCeiling": false,
+            "floatingUnderflow": true
+          },
+          {
+            "seed": 1733,
+            "background": "spread",
+            "activeCount": 17,
+            "pairedBases": 12,
+            "unmatchedBases": 5,
+            "wholeTransportToSeparateRatio": 0.21593295697842796,
+            "belowReducedCountCeiling": false,
+            "floatingUnderflow": true
+          },
+          {
+            "seed": 0,
+            "background": "clustered",
+            "activeCount": 66,
+            "pairedBases": 0,
+            "unmatchedBases": 66,
+            "wholeTransportToSeparateRatio": 1.0,
+            "belowReducedCountCeiling": false,
+            "floatingUnderflow": true
+          }
+        ]
+      }
+    }
+  },
+  "wholeFloorProven": false,
+  "wholeCeilingProven": false,
+  "restrictedContradictionProven": false,
+  "zeroExclusionProven": false,
+  "totalUnrestrictedMatchingCostBoundProven": false,
+  "publicationChecksDeferredByUser": true,
+  "committed": false
+}

@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error Lean build, root-plus-module namespace lint and all 19 public transitive axiom checks; local unpublished slice",
+  "scope": "Independent geometric payment of the unique-owner ALLOCATION DIFFERENCE on the selected original genuine failed-gap hinge population. The unallocated signed main and whole floor remain open.",
+  "documentation": "docs/zeta-riesz-hinge-allocation.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszHingeAllocationPayment.lean": "6ddd5d5d09e1e24d3450f25df887132b9597613db9e56ad00db1b599905fe2a4",
+    "scripts/probe_riesz_hinge_allocation.py": "3412b1e6902ccd619dd72cbf82226b433195cf4545a1bf2ba8233f95ea0c7893",
+    "RiemannGaussian/ZetaRieszHingePairCancellation.lean": "69582ceb7bf4990b915de9fa1a54c774de34755841729ca4e339ee66de46b330",
+    "RiemannGaussian/ZetaRieszBalancedCompanion.lean": "3e6b6cd538a53ea33fe2c366bcba57fff6415fcfb5388e43262117adaada8cd6",
+    "RiemannGaussian/ZetaRieszNonownerAllocation.lean": "4b34638700836fb577957eadbfe1a473c4f8a0e8d475aa7ec140ac75ba1bf5cb",
+    "RiemannGaussian/ZetaRieszUnsignedDivisorError.lean": "240fc86bf01d1814b724cbf05f1957c226f690ac05c6ec686342d4621e144389",
+    "RiemannGaussian/ZetaRieszShortDivisorOrbits.lean": "504142ef0f49167f769508a9af95466707fa89d75ea4571d1183c199ce53d4ec",
+    "RiemannGaussian/ZetaRieszCrossingOrbitCancellation.lean": "cc07c84078fb572debf5991bbd6382ee4d44dc803fd79e49e2132ef547bc3bf7",
+    "RiemannGaussian/ZetaRieszLowerRadialPayment.lean": "753797c7d379956d27bcd3be2cb5c96cfa1e7dff88c066f1d88a84284d21a597",
+    "RiemannGaussian/ZetaRieszLowerDegreeBounds.lean": "be9c681d14c62985c54bd6e431c0cf2a9cd65be8ead6c822c438d33d4c0cf01c",
+    "RiemannGaussian/ZetaRieszPolynomialCutoffRows.lean": "070281f116d0a325a07f8305f78566da815201d13cce453a04dcec6e2d6e43cb",
+    "scripts/probe_riesz_hinge_pair.py": "92d87c1c23b1f4ecce05d0f9bd9117d378925ef8b91437944865abd5a898cae6",
+    "scripts/probe_riesz_canonical_joint.py": "8346f19a1af3cddad46dd462e7dcf4e2a3a63cec54c3a4dfc6889b25a01b823b",
+    "scripts/probe_riesz_lower_radial.py": "99966ea2922edc946e2fa34c422fbcdfa5f1e31dfed10c42000497b5152e3116",
+    "scripts/probe_riesz_fixed_count_period.py": "04cf04be724a68d0af73247dee39da3ff9d80ae89c0d39e088e0501c67544e9b"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszHingeAllocationPayment.hinge_all_primes_log_le_sixth",
+    "RiemannGaussian.ZetaRieszHingeAllocationPayment.hinge_count_ge_seven",
+    "RiemannGaussian.ZetaRieszHingeAllocationPayment.unpaid_mass_five_sixths_le",
+    "RiemannGaussian.ZetaRieszHingeAllocationPayment.literal_hinge_owner_sum_bound",
+    "RiemannGaussian.ZetaRieszHingeAllocationPayment.retained_hinge_allocation_bound",
+    "RiemannGaussian.ZetaRieszHingeAllocationPayment.tendsto_literal_hinge_owner_difference",
+    "RiemannGaussian.ZetaRieszHingeAllocationPayment.polynomial_remaining_hinge_allocation_bounds"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszHingeAllocationPayment",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszHingeAllocationPayment",
+      "linters": 14,
+      "publicTheoremCount": 19,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.hinge_owner_log_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.hinge_all_primes_log_le_sixth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.hinge_count_ge_seven": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.sixth_log_rate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.unpaid_mass_five_sixths_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.owner_share_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.partial_owner_difference_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.hingeAllocationRate_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.partial_owner_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.tendsto_hingeAllocationBudget": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.hingeLabels_geometry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.literal_hinge_owner_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.literal_hinge_signed_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.tendsto_literal_hinge_owner_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.partial_atom_eq_original_incidences": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.unallocated_phaseWeight_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.retained_hinge_allocation_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.central_hinge_allocation_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszHingeAllocationPayment.polynomial_remaining_hinge_allocation_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "pythonSyntax": {
+      "exitCode": 0
+    },
+    "gitDiffCheck": {
+      "exitCode": 0
+    },
+    "widerPublicationGatesRun": false,
+    "committed": false
+  },
+  "provedSaving": {
+    "ownerLogUpper": "131*N/400",
+    "allOriginalPrimeLogUpper": "log(n)/6",
+    "originalPrimeCountLower": 7,
+    "originalOwnerAllocationUpper": "exp(-N/8)",
+    "globalError": "(503/500)*zetaMoebiusLogMajorantMass(2049/2048)*hingeAllocationRate^N",
+    "hingeAllocationRate": "(503/1000)*(2048/1023)*exp(-1/8)",
+    "rationalRateUpper": "9/10",
+    "primeCountFactor": false,
+    "uniformInPhaseHeight": true,
+    "normAppliedToUnallocatedSignedMain": false,
+    "independentOfZetaZeroHypotheses": true,
+    "allPriorLedgerCreditsRetainedOnce": true
+  },
+  "numericalProbe": {
+    "diagnosticOnly": true,
+    "optionalOutsideCI": true,
+    "snapshots": [
+      {
+        "diagnosticOnly": true,
+        "actualDyadicSchedule": true,
+        "rates": {
+          "rate": 0.8886597157537689,
+          "provedRationalRateUpper": 0.9,
+          "originalOrderTests": [
+            {
+              "N": 32,
+              "originalUnpaidOrderCount": 6,
+              "smallestAllowedCofactorShare": 0.8333333333333334,
+              "logOriginalAllocation": -17.908775148507143,
+              "provedLogAllocationUpper": -4.0
+            },
+            {
+              "N": 128,
+              "originalUnpaidOrderCount": 26,
+              "smallestAllowedCofactorShare": 0.8333333333333334,
+              "logOriginalAllocation": -62.964323449574884,
+              "provedLogAllocationUpper": -16.0
+            },
+            {
+              "N": 640,
+              "originalUnpaidOrderCount": 131,
+              "smallestAllowedCofactorShare": 0.8333333333333334,
+              "logOriginalAllocation": -300.5392717921081,
+              "provedLogAllocationUpper": -80.0
+            },
+            {
+              "N": 1536,
+              "originalUnpaidOrderCount": 316,
+              "smallestAllowedCofactorShare": 0.8333333333333334,
+              "logOriginalAllocation": -715.3403887320267,
+              "provedLogAllocationUpper": -192.0
+            }
+          ],
+          "sourceErrorRates": [
+            {
+              "N": 640,
+              "logSourceCostPerFixedMajorantMass": -75.54018668008294,
+              "logRationalUpperPerFixedMajorantMass": -67.42474794933128
+            },
+            {
+              "N": 1536,
+              "logSourceCostPerFixedMajorantMass": -181.30482293254764,
+              "logRationalUpperPerFixedMajorantMass": -161.82776997874362
+            },
+            {
+              "N": 4096,
+              "logSourceCostPerFixedMajorantMass": -483.4894979395896,
+              "logRationalUpperPerFixedMajorantMass": -431.5506900627789
+            },
+            {
+              "N": 8192,
+              "logSourceCostPerFixedMajorantMass": -966.9849779508568,
+              "logRationalUpperPerFixedMajorantMass": -863.1073621972354
+            }
+          ],
+          "fixedMajorantMassEvaluated": false,
+          "effectiveFloorStartingOrderCertified": false
+        },
+        "originalLabel": {
+          "N": 640,
+          "count": 15,
+          "countCeiling": 16,
+          "originalCoreMask": "core",
+          "totalLogPerN": 1.9827542962253422,
+          "ownerLogPerN": 0.13218361974835613,
+          "originalOwnerShare": 0.06666666666666667,
+          "originalCofactorShare": 0.9333333333333333,
+          "lengthPerN": 1.3658974040663467,
+          "lengthLowerPrecondition": false,
+          "genuineFailedGapHinge": true,
+          "originalPrimesAllSixthBounded": true,
+          "logOriginalOwnerAllocation": -620.27692983127,
+          "provedLogAllocationUpper": -80.0,
+          "pointwiseAllocationEstimateApplies": true,
+          "maskPreservingPhysicalRegression": {
+            "N": 640,
+            "count": 15,
+            "countCeiling": 16,
+            "originalCoreMask": "core",
+            "totalLogPerN": 1.9827542962253422,
+            "allPrimesBeyondPolynomialCap": true,
+            "signedFourIncidenceBlocks": [
+              -28.199172212982603,
+              28.19917221298249
+            ],
+            "joinedEightIncidences": -1.1368683772161603e-13,
+            "fullTwoHingePrediction": -2.2737367544323206e-13,
+            "oldSecondHingeOnlyPrediction": 28.19917221298249,
+            "remainingFirstHinge": 28.199172212982717,
+            "adaptiveCentre": 140.9958610649132,
+            "centreResidual": 8.526512829121202e-14,
+            "halfWidthBudget": 42.29875831947396,
+            "firstHingesFullySaturated": false,
+            "bothOriginalOwnerGapsFail": true,
+            "originalPhaseAndAllocationUnchanged": true,
+            "originalPhaseReal": 0.9087644817041376,
+            "sourceScaledLogAmplitude": -1273.3928583250818,
+            "floatingUnderflow": true,
+            "diagnosticOnly": true,
+            "sourcePopulationMassCertified": false,
+            "wholeFloorCertified": false
+          },
+          "sourcePopulationMassCertified": false
+        },
+        "hypothesisOfZetaZeroUsed": false,
+        "unallocatedSignedMainBounded": false,
+        "wholeFloorCertified": false
+      },
+      {
+        "diagnosticOnly": true,
+        "actualDyadicSchedule": true,
+        "rates": {
+          "rate": 0.8886597157537689,
+          "provedRationalRateUpper": 0.9,
+          "originalOrderTests": [
+            {
+              "N": 32,
+              "originalUnpaidOrderCount": 6,
+              "smallestAllowedCofactorShare": 0.8333333333333334,
+              "logOriginalAllocation": -17.908775148507143,
+              "provedLogAllocationUpper": -4.0
+            },
+            {
+              "N": 128,
+              "originalUnpaidOrderCount": 26,
+              "smallestAllowedCofactorShare": 0.8333333333333334,
+              "logOriginalAllocation": -62.964323449574884,
+              "provedLogAllocationUpper": -16.0
+            },
+            {
+              "N": 640,
+              "originalUnpaidOrderCount": 131,
+              "smallestAllowedCofactorShare": 0.8333333333333334,
+              "logOriginalAllocation": -300.5392717921081,
+              "provedLogAllocationUpper": -80.0
+            },
+            {
+              "N": 1536,
+              "originalUnpaidOrderCount": 316,
+              "smallestAllowedCofactorShare": 0.8333333333333334,
+              "logOriginalAllocation": -715.3403887320267,
+              "provedLogAllocationUpper": -192.0
+            }
+          ],
+          "sourceErrorRates": [
+            {
+              "N": 640,
+              "logSourceCostPerFixedMajorantMass": -75.54018668008294,
+              "logRationalUpperPerFixedMajorantMass": -67.42474794933128
+            },
+            {
+              "N": 1536,
+              "logSourceCostPerFixedMajorantMass": -181.30482293254764,
+              "logRationalUpperPerFixedMajorantMass": -161.82776997874362
+            },
+            {
+              "N": 4096,
+              "logSourceCostPerFixedMajorantMass": -483.4894979395896,
+              "logRationalUpperPerFixedMajorantMass": -431.5506900627789
+            },
+            {
+              "N": 8192,
+              "logSourceCostPerFixedMajorantMass": -966.9849779508568,
+              "logRationalUpperPerFixedMajorantMass": -863.1073621972354
+            }
+          ],
+          "fixedMajorantMassEvaluated": false,
+          "effectiveFloorStartingOrderCertified": false
+        },
+        "originalLabel": {
+          "N": 1536,
+          "count": 28,
+          "countCeiling": 32,
+          "originalCoreMask": "core",
+          "totalLogPerN": 1.9936099743890567,
+          "ownerLogPerN": 0.07120035622818059,
+          "originalOwnerShare": 0.03571428571428571,
+          "originalCofactorShare": 0.9642857142857143,
+          "lengthPerN": 1.3765402204114914,
+          "lengthLowerPrecondition": true,
+          "genuineFailedGapHinge": true,
+          "originalPrimesAllSixthBounded": true,
+          "logOriginalOwnerAllocation": -2030.8126041252494,
+          "provedLogAllocationUpper": -192.0,
+          "pointwiseAllocationEstimateApplies": true,
+          "maskPreservingPhysicalRegression": {
+            "N": 1536,
+            "count": 28,
+            "countCeiling": 32,
+            "originalCoreMask": "core",
+            "totalLogPerN": 1.9936099743890567,
+            "allPrimesBeyondPolynomialCap": true,
+            "signedFourIncidenceBlocks": [
+              36.454582388827475,
+              -36.454582388828385
+            ],
+            "joinedEightIncidences": -9.094947017729282e-13,
+            "fullTwoHingePrediction": 1.2505552149377763e-12,
+            "oldSecondHingeOnlyPrediction": -36.454582388827646,
+            "remainingFirstHinge": 36.4545823888289,
+            "adaptiveCentre": 182.27291194414232,
+            "centreResidual": 3.979039320256561e-13,
+            "halfWidthBudget": 54.6818735832427,
+            "firstHingesFullySaturated": false,
+            "bothOriginalOwnerGapsFail": true,
+            "originalPhaseAndAllocationUnchanged": true,
+            "originalPhaseReal": -0.967310718616863,
+            "sourceScaledLogAmplitude": -3066.949319546929,
+            "floatingUnderflow": true,
+            "diagnosticOnly": true,
+            "sourcePopulationMassCertified": false,
+            "wholeFloorCertified": false
+          },
+          "sourcePopulationMassCertified": false
+        },
+        "hypothesisOfZetaZeroUsed": false,
+        "unallocatedSignedMainBounded": false,
+        "wholeFloorCertified": false
+      }
+    ],
+    "underflowUsedAsCancellationEvidence": false
+  },
+  "notProved": {
+    "unallocatedSignedMainBound": false,
+    "wholeCarrierFloor": false,
+    "wholeCarrierCeiling": false,
+    "zeroExclusion": false,
+    "effectiveStartingOrder": false,
+    "fixedMajorantMassEvaluated": false,
+    "certifiedGlobalDeficitPercentage": false
+  },
+  "nextArithmeticTarget": "Bound the unallocated joined signed constant/log prime moments with the original cofactor-dependent holes and BOTH hinges retained; other unsupported geometries still remain."
+}

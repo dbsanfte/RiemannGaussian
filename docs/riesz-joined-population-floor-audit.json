@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused direct/build/root-import, all namespace linters and all public standard-axiom checks; local unpublished whole-ledger consolidation",
+  "scope": "Existing fixed-count payment3,5,6,7..55 joined disjointly to both count56+ growing-population payments; same supply retains257/512. Actual unpaid labels are count four or many-bin counts56 to below5log(N+1)+2. No numerical whole floor or zero exclusion.",
+  "documentation": "docs/zeta-riesz-joined-population-floor.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszJoinedPopulationFloor.lean": "f07575d26ebb2270ccb4757f1d9c074429b42a370e07ca9c2e25566f0e9e633d",
+    "docs/zeta-riesz-joined-population-floor.md": "4396c1a06a507a2411b859eb9a47cbce738398c847c4d8b3edc6ef09443124f6",
+    "scripts/probe_riesz_joined_population.py": "b2b249bc1c6745978783d602ba65d4775c2bd92653bd25b4603986ba27c07d3e",
+    "scripts/probe_riesz_few_bin_cover.py": "942e2207a8fa2ae88d7c2034424cddfbab44009476d8cd21bbfc762bfa9a7e23",
+    "RiemannGaussian/ZetaRieszHighSignCoverFloor.lean": "5547ed8b944bf55a65f931be376856872b36dc728a51ab90df1d655ce007cb7d",
+    "RiemannGaussian/ZetaRieszThreeSignCoverFloor.lean": "aa61201ef57a0b85614b4fd7fda93269731a137c11c34286b6110eb0e57001f3",
+    "RiemannGaussian/ZetaRieszFewBinCoverFloor.lean": "716dafaf0040759e4af70ee03d74493d5496da6b3c4df5ff7f2fb32d4fb4af63",
+    "RiemannGaussian/ZetaRieszDenseCountCoverFloor.lean": "4ff4b0e88597c706fea8a546a46f790ffb934430aeb94cca8bde43d37f5876e6",
+    "RiemannGaussian/ZetaRieszUnpaidCountTiltFloor.lean": "2f7a3dd1d64fa2a406c127bbbb8b1e68382b5ccac749bb83985fdc9b7e4ffe60",
+    "RiemannGaussian/ZetaRieszNonownerAllocation.lean": "4b34638700836fb577957eadbfe1a473c4f8a0e8d475aa7ec140ac75ba1bf5cb",
+    "RiemannGaussian/ZetaRieszGammaJoint.lean": "68ef5d3b0c14a2632b765e59e25f6340860b0bca30fd48662f5fa92d67944adc",
+    "RiemannGaussian/ZetaRieszJoinedPrefixFloor.lean": "21cfa37253dbae62d9b2b043155ad6471de8bdbd125e569ba12cfca18c05a834",
+    "RiemannGaussian/ZetaRieszPairChamberFloor.lean": "ff16fd8e70e68c3a6a0e5175bec2db86fe7b23fe78f60d2099059ec536ca1066"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszJoinedPopulationFloor.densePeriod_count_ge_from_seeds",
+    "RiemannGaussian.ZetaRieszJoinedPopulationFloor.exists_dense56_band_floor",
+    "RiemannGaussian.ZetaRieszJoinedPopulationFloor.exists_bin56_band_floor",
+    "RiemannGaussian.ZetaRieszJoinedPopulationFloor.eventually_joined_floor_combined_populations",
+    "RiemannGaussian.ZetaRieszJoinedPopulationFloor.remaining_configuration_cases"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszJoinedPopulationFloor",
+      "warningAsError": true
+    },
+    "ordinaryRootImport": {
+      "exitCode": 0,
+      "warningAsError": true,
+      "source": "RiemannGaussian.lean"
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszJoinedPopulationFloor",
+      "linters": 14,
+      "publicTheoremCount": 18,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.densePeriod_count_ge_from_seeds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.densePeriod_subset_56Band": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.densePeriodGrid_subset_56Band": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.dense56_label_grid_cover": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.eventually_dense56_two_grid_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.dense56_grid_unmatched_geometry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.exists_dense56_unmatched_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.exists_dense56_band_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.binPeriod_count_ge_from_seeds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.binPeriod_subset_56Band": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.binPeriodGrid_subset_56Band": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.bin56_label_grid_cover": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.eventually_bin56_two_grid_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.bin56_grid_unmatched_geometry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.exists_bin56_unmatched_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.exists_bin56_band_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.eventually_joined_floor_combined_populations": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszJoinedPopulationFloor.remaining_configuration_cases": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "script": "scripts/probe_riesz_joined_population.py",
+      "ordinaryBuildOrCI": false,
+      "diagnosticOnly": true,
+      "result": {
+        "diagnosticOnly": true,
+        "ordinaryBuildOrCI": false,
+        "numericalWholeFloorCertified": false,
+        "effectiveStartingOrderCertified": false,
+        "sameSupplyRetained": "257/512 (Lean ledger, not a source-normalized floor constant)",
+        "growingMixedCrossings": [
+          {
+            "continuousIntegerLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "literalCoreMasksCertified": false,
+            "ownerShare": 0.55,
+            "totalPrimeCount": 65,
+            "logN": 21.902479024762222,
+            "occupiedBinCount": 6,
+            "newPaidBinCeiling": 1,
+            "stillInMergedCountAndBinRange": true,
+            "commonPhaseFactorialAndAllocationNotEstimated": true,
+            "globalPopulationCostCertified": false,
+            "ratio": 1.04,
+            "activeEvenCount": 2270724854783856,
+            "activeOddCount": 2270724854783224,
+            "signedTwoHingeResponse": 1623347332.5187178,
+            "unsignedTwoHingeResponse": 7.761550822722819e+21,
+            "signedToUnsignedRatio": 2.0915244512297522e-13,
+            "universalCancellationFractionCertified": false
+          },
+          {
+            "continuousIntegerLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "literalCoreMasksCertified": false,
+            "ownerShare": 0.55,
+            "totalPrimeCount": 62,
+            "logN": 22.926613450390203,
+            "occupiedBinCount": 8,
+            "newPaidBinCeiling": 1,
+            "stillInMergedCountAndBinRange": true,
+            "commonPhaseFactorialAndAllocationNotEstimated": true,
+            "globalPopulationCostCertified": false,
+            "ratio": 1.08,
+            "activeEvenCount": 221992451971516,
+            "activeOddCount": 221992451705428,
+            "signedTwoHingeResponse": -57994295231.52919,
+            "unsignedTwoHingeResponse": 7.61060820152228e+20,
+            "signedToUnsignedRatio": 7.620191934191162e-11,
+            "universalCancellationFractionCertified": false
+          },
+          {
+            "continuousIntegerLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "literalCoreMasksCertified": false,
+            "ownerShare": 0.55,
+            "totalPrimeCount": 62,
+            "logN": 24.509964882470097,
+            "occupiedBinCount": 11,
+            "newPaidBinCeiling": 1,
+            "stillInMergedCountAndBinRange": true,
+            "commonPhaseFactorialAndAllocationNotEstimated": true,
+            "globalPopulationCostCertified": false,
+            "ratio": 1.12,
+            "activeEvenCount": 61790458856563,
+            "activeOddCount": 61790458840679,
+            "signedTwoHingeResponse": -1204280796.527393,
+            "unsignedTwoHingeResponse": 2.1184595426503888e+20,
+            "signedToUnsignedRatio": 5.684700473537136e-12,
+            "universalCancellationFractionCertified": false
+          },
+          {
+            "continuousIntegerLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "literalCoreMasksCertified": false,
+            "ownerShare": 0.55,
+            "totalPrimeCount": 59,
+            "logN": 25.762044090255067,
+            "occupiedBinCount": 13,
+            "newPaidBinCeiling": 1,
+            "stillInMergedCountAndBinRange": true,
+            "commonPhaseFactorialAndAllocationNotEstimated": true,
+            "globalPopulationCostCertified": false,
+            "ratio": 1.16,
+            "activeEvenCount": 2486936523893,
+            "activeOddCount": 2486936533670,
+            "signedTwoHingeResponse": -27642653607.11723,
+            "unsignedTwoHingeResponse": 8.526687611473457e+18,
+            "signedToUnsignedRatio": 3.2418982454477922e-09,
+            "universalCancellationFractionCertified": false
+          },
+          {
+            "continuousIntegerLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "literalCoreMasksCertified": false,
+            "ownerShare": 0.55,
+            "totalPrimeCount": 58,
+            "logN": 27.20854786427466,
+            "occupiedBinCount": 16,
+            "newPaidBinCeiling": 1,
+            "stillInMergedCountAndBinRange": true,
+            "commonPhaseFactorialAndAllocationNotEstimated": true,
+            "globalPopulationCostCertified": false,
+            "ratio": 1.2,
+            "activeEvenCount": 306479091523,
+            "activeOddCount": 306479086126,
+            "signedTwoHingeResponse": -16242854406.285368,
+            "unsignedTwoHingeResponse": 1.0507902240355076e+18,
+            "signedToUnsignedRatio": 1.5457751732696458e-08,
+            "universalCancellationFractionCertified": false
+          }
+        ],
+        "growingSeparatedCrossings": [
+          {
+            "continuousIntegerLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "literalCoreMasksCertified": false,
+            "ownerShare": 0.54,
+            "totalPrimeCount": 57,
+            "logN": 53.81875910875192,
+            "occupiedBinCount": 56,
+            "newPaidBinCeiling": 3,
+            "stillInMergedCountAndBinRange": true,
+            "commonPhaseFactorialAndAllocationNotEstimated": true,
+            "globalPopulationCostCertified": false,
+            "separatedDivisorLogStep": 12000000.0,
+            "twoPrimeTentWidth": 9000000.0,
+            "activeTents": [
+              {
+                "hinge": 1,
+                "activeDivisorIndex": 11884418462724089,
+                "subsetParity": -1,
+                "tentHeight": 1353450.8433214782
+              }
+            ],
+            "signedTwoHingeResponse": -1353450.8433214782,
+            "countFreeFloor": -6000000.0,
+            "commonWeightOmittedFromModel": true
+          },
+          {
+            "continuousIntegerLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "literalCoreMasksCertified": false,
+            "ownerShare": 0.55,
+            "totalPrimeCount": 57,
+            "logN": 53.84073801547069,
+            "occupiedBinCount": 56,
+            "newPaidBinCeiling": 3,
+            "stillInMergedCountAndBinRange": true,
+            "commonPhaseFactorialAndAllocationNotEstimated": true,
+            "globalPopulationCostCertified": false,
+            "separatedDivisorLogStep": 12000000.0,
+            "twoPrimeTentWidth": 9000000.0,
+            "activeTents": [
+              {
+                "hinge": 1,
+                "activeDivisorIndex": 12148516650784624,
+                "subsetParity": 1,
+                "tentHeight": 3000000.0
+              }
+            ],
+            "signedTwoHingeResponse": 3000000.0,
+            "countFreeFloor": -6000000.0,
+            "commonWeightOmittedFromModel": true
+          },
+          {
+            "continuousIntegerLogModel": true,
+            "actualPrimeLabel": false,
+            "exactMovingIntegerLength": false,
+            "literalCoreMasksCertified": false,
+            "ownerShare": 0.56,
+            "totalPrimeCount": 57,
+            "logN": 53.86321087132275,
+            "occupiedBinCount": 56,
+            "newPaidBinCeiling": 3,
+            "stillInMergedCountAndBinRange": true,
+            "commonPhaseFactorialAndAllocationNotEstimated": true,
+            "globalPopulationCostCertified": false,
+            "separatedDivisorLogStep": 12000000.0,
+            "twoPrimeTentWidth": 9000000.0,
+            "activeTents": [
+              {
+                "hinge": 1,
+                "activeDivisorIndex": 12424619301938820,
+                "subsetParity": -1,
+                "tentHeight": 3000000.0
+              }
+            ],
+            "signedTwoHingeResponse": -3000000.0,
+            "countFreeFloor": -6000000.0,
+            "commonWeightOmittedFromModel": true
+          }
+        ],
+        "remaining": "count four, plus56<=omega<5log(N+1)+2 with many bins; total separated cost, mixed transport and unmatched parity cost; final independent rational margin"
+      }
+    }
+  },
+  "sourceRadiusRange": "1/2 < u <=10001/20000",
+  "heightRange": "fixed y >=54",
+  "sameSupplyReserveRetained": "257/512",
+  "supplyFractionIsNumericalFloorConstant": false,
+  "fixedAndGrowingPaymentsDisjoint": true,
+  "existingFixedCountLedgerRetained": true,
+  "balancedTripleRefundRetained": true,
+  "joinedFixedBandPositiveCreditRetained": true,
+  "sameOriginalSupplyWitnessRetained": true,
+  "originalWholeFibreCoverProven": true,
+  "literalPrimeCountMaskInheritedFromOriginalSeeds": true,
+  "ownershipClipsUniquelyCounted": true,
+  "unmatchedBoundaryIndependentlyPaid": true,
+  "globalNonownerAllocationRetained": true,
+  "finalWholeFloorLedgerPlacementProven": true,
+  "remainingCountAndBinClassificationProven": true,
+  "remainingFixedCounts": [
+    4
+  ],
+  "remainingGrowingCounts": "56 <= omega(n) <5log(N+1)+2 AND cofactor bin count >floor(log(N+1)/16)",
+  "remainingObstaclesEnumerated": true,
+  "allRemainingCancellationCostsBoundProven": false,
+  "wholeFloorProven": false,
+  "wholeCeilingProven": false,
+  "restrictedContradictionProven": false,
+  "zeroExclusionProven": false,
+  "sourceNormalizedNormDecayClaimed": false,
+  "signedArithmeticEstimateAssumed": false,
+  "unevaluatedArithmeticHead": true,
+  "effectiveStartingOrderClaimed": false,
+  "publicationDeferred": true,
+  "committed": false
+}

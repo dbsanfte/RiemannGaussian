@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/build, ordinary-root-plus-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Independent global payment of both literal radial-period clips and completed-hinge allocation error; whole floor remains open.",
+  "documentation": "docs/zeta-riesz-radial-period.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszRadialPeriodPayment.lean": "2b60e29de2fdb3dbee52431ec5963fb087c103a1438e954d1c38aff711a1ed45",
+    "docs/zeta-riesz-radial-period.md": "0e8b919f715aa7b50071054f8e902a0532f0751edc00751c4fd702aa0cc13cd4",
+    "scripts/probe_riesz_radial_period.py": "e9e4cec8c3a28db5c9c2ae65c2e782a26dd19f0c9085e4637a05d5cc1c0d8c24",
+    "RiemannGaussian/ZetaRieszReducedCountPayment.lean": "97ba42d8ead3b66dc29d2b723ae33738ead25206801322fe299eab51813facf6",
+    "RiemannGaussian/ZetaRieszHingeAllocationPayment.lean": "6ddd5d5d09e1e24d3450f25df887132b9597613db9e56ad00db1b599905fe2a4"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszRadialPeriodPayment.eventually_remaining_period_interior_bounds",
+    "RiemannGaussian.ZetaRieszRadialPeriodPayment.tendsto_combined_period_error",
+    "RiemannGaussian.ZetaRieszRadialPeriodPayment.completed_hinge_owner_sum_bound"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszRadialPeriodPayment",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszRadialPeriodPayment",
+      "linters": 14,
+      "publicTheoremCount": 20,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.edgeRate_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.lower_log_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.upper_log_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.normalized_lower_rate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.normalized_upper_rate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.norm_lower_edge_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.norm_upper_edge_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.norm_edges_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.edge_geometry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.period_width_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.whole_period_central": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.tendsto_edgeBudget": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.norm_literal_period_edge_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.norm_period_edge_crop_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.norm_retained_period_edge_crop_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.retained_radial_period_interior": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.eventually_remaining_period_interior_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.tendsto_combined_period_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.hinge_same_period_owner_share": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszRadialPeriodPayment.completed_hinge_owner_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "ordinaryBuildOrCI": false
+    }
+  }
+}

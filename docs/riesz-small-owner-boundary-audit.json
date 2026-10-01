@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/build, ordinary-root-plus-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Literal ownership-boundary least-prime saving, joint four-cutoff zero test, all-count/all-prime main-plus-boundary bound, and rigorous radial normalization no-go. The actual positive supply price diverges; no global floor is claimed.",
+  "documentation": "docs/zeta-riesz-small-owner-boundary.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszSmallOwnerBoundary.lean": "1439acfd7b69ba1fecb1cf9f9dd720857496e78433f631da47297c78d78ea66a",
+    "docs/zeta-riesz-small-owner-boundary.md": "4029a49b6f5eb7d71eb82494d17b1f040c72a6b243bc4a2c2cc696ced7435454",
+    "scripts/probe_riesz_small_owner_boundary.py": "6b3fe3511c1e2c1d00fee6fc9ef7d84b061e8414e4dc353cc5967a373b955e69",
+    "RiemannGaussian/ZetaRieszSmallCofactorCancellation.lean": "5c98816025d67c8fa869d57c6064d8719578fff80a2be53c089bf03e479f929d",
+    "RiemannGaussian/ZetaRieszBroadOwnerPeriodFloor.lean": "1577f080a6da21838fff76995f6f129f77e9d0a7f0fddad41f4bbb4607d170da",
+    "RiemannGaussian/ZetaRieszOwnerTieFloor.lean": "1ea026790451b053d82e2d7d51d6c65c94ae1484869bd55d0ce33394ae0be26c",
+    "RiemannGaussian/ZetaRieszSignedPeriodFloor.lean": "21cf4faa9f20af640265ecc61886756bdc35527ae2c987978cde2df79879cb85",
+    "RiemannGaussian/ZetaRieszRoughFiveJoinedFloor.lean": "44d61cb62b953331a89745b1485ec86cea54ff810c4d8bd9818c51e241522ca6"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszSmallOwnerBoundary.owner_boundary_norm_zero_of_spectrum_gaps",
+    "RiemannGaussian.ZetaRieszSmallOwnerBoundary.whole_small_boundary_norm_bound",
+    "RiemannGaussian.ZetaRieszSmallOwnerBoundary.whole_small_flat_with_boundary_floor",
+    "RiemannGaussian.ZetaRieszSmallOwnerBoundary.small_flat_radial_supply_floor",
+    "RiemannGaussian.ZetaRieszSmallOwnerBoundary.not_eventually_smallFlatSupplyPrice_le",
+    "RiemannGaussian.ZetaRieszSmallOwnerBoundary.broad_price_in_supply_units"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszSmallOwnerBoundary",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszSmallOwnerBoundary",
+      "linters": 14,
+      "publicTheoremCount": 16,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.least_prime_survives_pair": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.small_clipped_cofactor_cover": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.literal_atom_zero_of_spectrum_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.owner_pair_atom_zero_of_spectrum_gaps": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.owner_boundary_norm_zero_of_spectrum_gaps": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.small_clipped_count_norm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.small_clipped_all_counts_norm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.whole_small_boundary_norm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.whole_small_flat_with_boundary_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.dyadic_owner_card_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.small_flat_radial_supply_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.tendsto_smallFlatRadialPrice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.smallFlatRadialPrice_mul_eq_supplyPrice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.tendsto_smallFlatSupplyPrice_atTop": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.not_eventually_smallFlatSupplyPrice_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallOwnerBoundary.broad_price_in_supply_units": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "ordinaryBuildOrCI": false,
+      "cofinalPopulationFloorCertified": false
+    }
+  }
+}

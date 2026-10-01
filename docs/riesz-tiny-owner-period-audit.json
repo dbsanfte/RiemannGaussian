@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/build, ordinary-root-plus-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Original signed owner-prime floor without a fixed cofactor cap; counts, dyadic log shells and radial periods joined. Whole literal owner fibres and comparable cofactor logs remain explicit. Relative supply cost, not whole floor or source-scale decay.",
+  "documentation": "docs/zeta-riesz-tiny-owner-period.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszTinyOwnerPeriodFloor.lean": "cd9b88371b8f54f186fe2624bef8df02904cc1a6a4218141535e2b1715d534a5",
+    "scripts/probe_riesz_tiny_owner_period.py": "3f755e0dae70ecee6208b76b1d6b401317f08c13eb40e5518ca3b72c77c44342",
+    "scripts/probe_riesz_log_shell.py": "9fc4bfb7f88f9e94d77bb73cadf47738162715f170ddcc9ed87bb9627e4e5c79",
+    "docs/zeta-riesz-tiny-owner-period.md": "8d7a38769eb0162840f4bce55955a97fda8f397711d7146c29853e2319e85c86",
+    "RiemannGaussian/ZetaRieszLogShellPeriodFloor.lean": "810fb5aa7561224069824b3f5aafc0611216b081464820f858bf0ceb03f737e1",
+    "RiemannGaussian/ZetaRieszJointOwnerFibreFloor.lean": "9b796ff276d47d47f06c2df5aac9f2c8537404c465abb98787224e2f07fabad3",
+    "RiemannGaussian/ZetaRieszOwnerCurvatureFloor.lean": "5b2544cabbce9a57ea4a35bc9fe1141409ad0dc5aca64b867ff50848ae93f0a0",
+    "RiemannGaussian/ZetaRieszGlobalPrimePeriod.lean": "a1cf4bd5ef02f36534f4cd010e6ae22ff7793b922c19d894440879256254389a",
+    "RiemannGaussian/ZetaRieszRoughFiveJoinedFloor.lean": "44d61cb62b953331a89745b1485ec86cea54ff810c4d8bd9818c51e241522ca6"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.owner_fibre_floor",
+    "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.owner_all_counts_floor",
+    "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.retained_single_layer_shell_exists",
+    "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.dyadic_shells_floor",
+    "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.radial_dyadic_shells_floor",
+    "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.eventually_period_shell_cost_paid"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor",
+      "linters": 14,
+      "publicTheoremCount": 19,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.owner_fibre_geometry": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.response_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.response_variation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.owner_atom_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.owner_fibre_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.jointPeriodCost_shell_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.owner_shell_row_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.ownerAllCountCost_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.ownerAllCountCost_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.sum_ownerCountCost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.owner_shell_population_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.owner_all_counts_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.sum_inverse_dyadic_shells_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.single_layer_shell": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.retained_single_layer_shell_exists": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.dyadic_shells_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.radial_dyadic_shells_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.tendsto_logarithmic_shell_price": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszTinyOwnerPeriodFloor.eventually_period_shell_cost_paid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "output": ".lake/tiny-owner-probe.json",
+      "outsideOrdinaryBuildsAndCI": true
+    }
+  },
+  "limits": {
+    "wholeFloorProved": false,
+    "sourceScaleDecayProved": false,
+    "newZeroExclusion": false,
+    "originalCofactorCapRetained": false,
+    "fixedPositiveOwnerShareRequired": false,
+    "countCeilingRequired": false,
+    "numberOfShellsLoss": false,
+    "wholeOriginalPrimeFibresRequired": true,
+    "comparableCofactorLogsRequired": true,
+    "compatibleDisjointLedgerCoverProved": false,
+    "otherClippedPeriodsPaid": false,
+    "supplyScaleHypothesesRetained": true,
+    "relativeCostCanBePaidBySupplyFraction": "1/256",
+    "effectiveStartingOrderEvaluated": false,
+    "globalDeficitFractionCertified": false
+  },
+  "noGosPreserved": true,
+  "publishedEndpointsChanged": false
+}

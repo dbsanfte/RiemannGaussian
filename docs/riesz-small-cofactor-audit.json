@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/build, ordinary-root-plus-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Original weighted divisor blocks joined after both zero deletions; odd reflection and flat clustered signed periods, all selected counts and every small cofactor prime. Global floor and supply cover remain open.",
+  "documentation": "docs/zeta-riesz-small-cofactor.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszSmallCofactorCancellation.lean": "5c98816025d67c8fa869d57c6064d8719578fff80a2be53c089bf03e479f929d",
+    "docs/zeta-riesz-small-cofactor.md": "11e572cfaa64034e1019411b80144dc3173304676c98e68afbeb71a9f9609cff",
+    "scripts/probe_riesz_small_cofactor.py": "6b628c4c953705af9bc6b6b5171f3b107c5bcf874c8bbe5178e11dc7ba417f20",
+    "RiemannGaussian/ZetaRieszHigherRankHingeFloor.lean": "46ebd4bbf0063f2be64d9ae8c7bdfb84aa232edcae0f2af50d88082a028faace",
+    "RiemannGaussian/ZetaRieszBroadOwnerPeriodFloor.lean": "1577f080a6da21838fff76995f6f129f77e9d0a7f0fddad41f4bbb4607d170da",
+    "RiemannGaussian/ZetaRieszOwnerCurvatureFloor.lean": "5b2544cabbce9a57ea4a35bc9fe1141409ad0dc5aca64b867ff50848ae93f0a0"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszSmallCofactorCancellation.retained_small_orbit_eq_full",
+    "RiemannGaussian.ZetaRieszSmallCofactorCancellation.odd_two_hinge_bound",
+    "RiemannGaussian.ZetaRieszSmallCofactorCancellation.clustered_unallocated_fibre_floor",
+    "RiemannGaussian.ZetaRieszSmallCofactorCancellation.whole_small_flat_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszSmallCofactorCancellation",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszSmallCofactorCancellation",
+      "linters": 14,
+      "publicTheoremCount": 18,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.orbit_refine": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.refined_base_dvd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.retained_canonical_orbit_eq_full": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.retained_small_orbit_eq_full": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.odd_block_crossing_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.odd_two_hinge_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.spectrum_gap_cutoff_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.spectrum_gap_interval_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.clustered_spectrum_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.spectrum_gap_response_constant": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.flat_unallocated_fibre_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.clustered_unallocated_fibre_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.flat_unallocated_row_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.flat_all_counts_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.smallPrimeHeadCost_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.whole_prime_mass_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.whole_count_exponential_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszSmallCofactorCancellation.whole_small_flat_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "ordinaryBuildOrCI": false,
+      "cofinalPopulationFloorCertified": false
+    }
+  }
+}

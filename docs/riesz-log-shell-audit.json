@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "status": "passed focused warning-as-error direct/build, ordinary-root-plus-module namespace lint and all public transitive axioms; local unpublished slice",
+  "scope": "Count-uniform signed complete-prime-period floor and actual close-owner boundary mass on comparable-log populations. Original cofactor cap and literal complete-fibre membership remain; relative radial cost, not source-scale decay or numerical whole floor.",
+  "documentation": "docs/zeta-riesz-log-shell-period.md",
+  "sources": {
+    "RiemannGaussian/ZetaRieszLogShellPeriodFloor.lean": "810fb5aa7561224069824b3f5aafc0611216b081464820f858bf0ceb03f737e1",
+    "scripts/probe_riesz_log_shell.py": "9fc4bfb7f88f9e94d77bb73cadf47738162715f170ddcc9ed87bb9627e4e5c79",
+    "docs/zeta-riesz-log-shell-period.md": "c04d8b21e6c2268f045ee3eff0b1dabf4b6ed5ae4d5a7f5b2e2d1ba7334dca9b",
+    "RiemannGaussian/ZetaRieszHigherRankHingeFloor.lean": "46ebd4bbf0063f2be64d9ae8c7bdfb84aa232edcae0f2af50d88082a028faace",
+    "RiemannGaussian/ZetaRieszSymmetricPeriodPayment.lean": "4a563bc1cebd73b19aa24e59431b9e2bad1f7f9023faceba29bbdf6d4644e6b1",
+    "RiemannGaussian/ZetaRieszOwnerTieFloor.lean": "1ea026790451b053d82e2d7d51d6c65c94ae1484869bd55d0ce33394ae0be26c",
+    "RiemannGaussian/ZetaRieszTransitionFiveFloor.lean": "f95b4ff4aaa031223ecee2a2ef2551f62fc322d9dde847989e117c5cdd6aa409",
+    "RiemannGaussian/ZetaRieszCoreExtensions.lean": "77d02aaf46ba865a7117aa90d4fdb813515826f931aeb8477dbb6f4c1fd0ad28"
+  },
+  "terminalTheorems": [
+    "RiemannGaussian.ZetaRieszLogShellPeriodFloor.retained_single_layer_logs",
+    "RiemannGaussian.ZetaRieszLogShellPeriodFloor.all_counts_floor",
+    "RiemannGaussian.ZetaRieszLogShellPeriodFloor.all_count_close_owner_norm_bound",
+    "RiemannGaussian.ZetaRieszLogShellPeriodFloor.signed_period_with_boundary_floor",
+    "RiemannGaussian.ZetaRieszLogShellPeriodFloor.radial_periods_with_boundary_floor"
+  ],
+  "checks": {
+    "directLean": {
+      "exitCode": 0,
+      "warningAsError": true
+    },
+    "targetedBuild": {
+      "exitCode": 0,
+      "target": "RiemannGaussian.ZetaRieszLogShellPeriodFloor",
+      "warningAsError": true
+    },
+    "rootImportNamespaceAudit": {
+      "exitCode": 0,
+      "imports": [
+        "RiemannGaussian",
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor"
+      ],
+      "namespace": "RiemannGaussian.ZetaRieszLogShellPeriodFloor",
+      "linters": 14,
+      "publicTheoremCount": 24,
+      "axioms": {
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.shellPrimes_data": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.mem_shellPrimes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.shellMass_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.prime_shell_mass_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.shell_cofactor_mass_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.shellCountCost_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.shellCountCost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.allCountCost_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.sum_shellCountCost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.shell_population_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.all_counts_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.single_layer_radial_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.single_layer_all_cofactor_logs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.retained_single_layer_logs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.close_owner_shell_cover": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.shell_pairWindow_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.shellTieCost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.close_owner_shell_norm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.allTieCost_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.sum_shellTieCost_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.all_count_close_owner_norm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.signed_period_with_boundary_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.tendsto_all_count_relative_cost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RiemannGaussian.ZetaRieszLogShellPeriodFloor.radial_periods_with_boundary_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    "optionalProbe": {
+      "exitCode": 0,
+      "output": ".lake/log-shell-probe.json",
+      "outsideOrdinaryBuildsAndCI": true
+    }
+  },
+  "limits": {
+    "wholeFloorProved": false,
+    "sourceScaleDecayProved": false,
+    "newZeroExclusion": false,
+    "countCeilingRequired": false,
+    "originalCofactorCapRetained": true,
+    "otherClippedPeriodsPaid": false,
+    "effectiveStartingOrderEvaluated": false,
+    "globalDeficitFractionCertified": false,
+    "supplyComparisonRequired": true
+  },
+  "noGosPreserved": true,
+  "publishedEndpointsChanged": false
+}
