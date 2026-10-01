@@ -1602,6 +1602,514 @@ supporting `harmonic-rectangle-reserve` endpoint. Work without subagents.
 
 ## Current theorem-push commit gate
 
+The latest local research task works upstream of `SignedCrossing`:
+`ZetaRieszSignedConvolution` joins the literal M0, M1 and exact signed
+crossing across all selected periods/counts, then reindexes `a=d*b` with
+`mu(a)*mu(d)=mu(b)`. Its exact bilinear identity retains the product phase,
+factorial kernel, original prime/cofactor masks and owner allocation.
+`core_sub_convolution_bound` reuses the single global geometric nonowner
+payment; no new bound on the signed main is asserted. The Selberg/Suzuki
+bridge retains the full clipped remainder and the required total `mu(a)`
+factor. Centered quadratics cancel exactly on all squarefree cofactors
+with at least three factors, but their nonpolynomial cutoff remainder
+remains OPEN. Do not replace it by a Friedlander--Iwaniec bilinear
+hypothesis or count this infrastructure as a numerical floor.
+
+The optional signed-convolution probe joins literal finite atom periods
+at orders 8/10. Its annulus-compatible count is ZERO: those tests are
+algebra regressions, not the current core or growing-count population.
+The same caveat applies to the previous order-6/8/10 crossing probe.
+Continue locally without commits, subagents or wider publication gates.
+Keep the published RH endpoint unchanged. The next useful result must
+bound the WHOLE signed clipped convolution/prime-pair combination at
+source scale, with the remaining real -79/1000 floor still OPEN.
+
+`ZetaRieszUnsignedDivisorError` now bounds the unsigned-leg comparison
+ERROR on shells `exp(N/10)<=M<X<=2M`. The full squarefree coprimality
+sieve, owner allocation, factorial order and physical product phase are
+retained. After summing all outer prime counts the rate is
+`2*u*exp(-2357/102400)<=49/50`; joining at most `N+1` shells costs only
+`errorConstant*(8+abs(y))*(N+1)^3*(49/50)^N`, which tends to zero.
+`ownedShellDiscrepancy_eq_literal` identifies the original owner incidence
+under explicit finite ownership geometry. Saturated active rows force
+`d<p`. The inherited core masks are checked by
+`mem_core_of_strict_prime_share`; arbitrary selected high-count divisor
+incidences have independent source-o(1) payment. These are concrete
+comparison/count-boundary savings, NOT an independent signed floor.
+The signed density main, `d<exp(N/10)` boundary and unsaturated rows'
+remaining prime-factor ownership restrictions are unpaid. Do not claim
+the whole core has been replaced by its density model or charge these
+terms separately by positive allowances. Preserve all prior no-go audits
+and the published RH endpoint. Iterate locally without commits/subagents
+or wider publication checks.
+
+`ZetaRieszSaturatedRowFloor` applies the unsigned-leg comparison to
+original saturated core rows. Explicit endpoint geometry checks all
+window, owner, physical and allocation masks; the original count cutoff
+is retained and its exact high-count extension is independently paid.
+At most `N+1` selected shells have a count-boundary cost bounded eventually
+by `highCountConstant*(N+1)^2*(49/50)^N`. Their squarefree-counting error
+has the previous `(N+1)^3*(49/50)^N` bound. Selected incidences are literal
+subsets of the original cofactor antidiagonals, without duplicate owners.
+`eventually_joined_floor_with_signed_rows` gives an actual whole-carrier
+comparison floor: one signed density-row sum plus every unselected
+literal incidence, minus `joinedRowErrorBudget -> 0`. The nonowner payment
+occurs once. This does NOT prove the independent numerical floor. The
+selected-row theorem by itself does not construct a canonical partition;
+the following module now supplies one for its displayed eligibility.
+Keep the density main and its remaining small/unsaturated incidences joined.
+Preserve the published endpoint and iterate locally without commits,
+subagents or wider publication gates.
+
+`ZetaRieszClippedAllocationPayment` independently pays the shortened rows
+with log(p)>=507N/400, disjoint from `freeRows`. The literal nondominant
+and radial masks force cofactor share in [7/20,47/125]; exact binomial
+tilts give ownerWeight<=3*exp(-N/600) after order320. All counts and radial
+periods together cost at most `162*(N+1)^4*(999/1000)^N -> 0` at source
+scale. `residual_row_boundary` leaves only log(pb)>37N/20 or
+log(p)+L_N<203N/100, with log(p)<507N/400. The final comparison is
+`eventually_joined_floor_with_residual_rows`, keeping these two SIGNED
+boundary geometries joined with `canonicalRemaining - endpointRows`.
+Its error budget tends to zero. The -79/1000 floor for the remainder,
+multiplicity ceiling and zero exclusion are still OPEN. Do not turn this
+two-sector main payment into a whole-carrier norm/floor claim.
+
+`ZetaRieszCanonicalOwnerRows` now constructs the eligible saturated large
+unsigned-divisor rows directly. The rounded lower endpoint is the maximum
+of the `N/10`, core lower-window and strict nondominant owner-share
+thresholds; the upper endpoint intersects the original upper core window
+with cofactor saturation. A disjoint clamped dyadic grid with at most
+`N+1` shells recombines both the literal row and its SIGNED density exactly.
+`literal_row_covered_or_endpoint` proves that every incidence satisfying
+these displayed original eligibility conditions is included, except
+possibly its single rounded lower-endpoint integer. All such rounded
+atoms together are paid by
+`endpointConstant*(N+1)*(23/25)^N -> 0`, with the actual core mask, sieve,
+allocation and phase retained. `eventually_joined_floor_without_endpoints`
+is an independent whole-carrier COMPARISON inequality, with no externally
+chosen row geometry. Its remaining joined signed expression is NOT
+independently bounded by -79/1000. Small unsigned divisors, unsaturated
+rows and all original incidences outside the displayed eligibility stay
+explicit in `canonicalRemaining`; do not say the whole literal core has
+been replaced by a density. Preserve the published endpoint, all no-gos,
+and local-only validation without commits, subagents or publication gates.
+
+`ZetaRieszFreeRadialRows` now pays the SIGNED main on every original
+canonical row with log(pb)<=37N/20, log(p)<=507N/400 and
+203N/100<=log(p)+L_N. Its exact unsigned-log Fourier integral retains
+the complete owner factorial allocation; no owner prime or prime cofactor
+is completed. Summable 1/d^2 lattice variation and literal endpoint
+rounding transfer this to the actual integer row. All outer counts have
+only harmonic mass. The source-scaled sum is bounded by
+`9*(33+4*abs(y))*(N+1)^4*freeRate^N`, with a proved `freeRate<1`, for
+fixed abs(y)>=54, N>=32 and L_N>=11N/8. The slowest radial rate at the
+radius ceiling is about 0.9999886; no evaluated starting order is claimed.
+`eventually_joined_floor_with_clipped_rows` removes this main sector once,
+leaving the original unselected incidences and the shortened SIGNED rows
+joined. This is genuine main-term cancellation but not the independent
+-79/1000 whole floor. Preserve the published endpoint and all earlier
+negative audits; continue focused local validation without commits,
+subagents or wider publication gates.
+
+`ZetaRieszJointOwnerEnvelope` now keeps the owner-tail tilt and radial
+factorial kernel together. The exact radial shift T->T-P/41 at tilt41/40
+pays every original owner with log(p)>=243N/200, improving the previous
+507N/400 density cut. All previously unpaid selected density rows cost
+`162*(N+1)^4*exp(-N/20000) -> 0`, disjoint from the two earlier sectors.
+`eventually_joined_floor_with_lowOwner_rows` keeps the smaller-owner
+density boundaries joined with canonicalRemaining-endpointRows.
+The same theorem is applied directly to the ORIGINAL literal prime sum:
+its selected all-count population costs
+`6*divisorSquareDirichletMass(1+1/262144)*(N+1)*exp(-N/25000) -> 0`.
+Full original masks, allocation and complex phase remain. The Rankin
+count cost is absorbed in the joint saving before atom norms are summed.
+`coreResponse_eq_paid_rest` is exact; `joined_sub_literalCoreRest_bound`
+and `tendsto_joined_sub_literalCoreRest` pay only this original population,
+without another nonowner payment or any prime/density completion.
+`literal_rest_owner_cut` proves that every nonzero original remaining
+dyadic-core atom has log(largestPrime)<243N/200. Do NOT count the literal
+and density bounds on overlapping rows as two credits in one ledger.
+The independent whole -79/1000 floor for either joined rest remains OPEN.
+The optional scalar-rate probe is floating exploration, not prime-count
+transport, a starting order, or a numerical floor. Preserve all no-gos
+and the published RH/zero-free/certificate endpoints. Continue locally
+without commits, pushes, subagents or wider publication gates.
+
+`ZetaRieszFineDivisorRows` now pays the ORIGINAL signed saturated
+full-window incidences down to unsigned log threshold N/1000, replacing
+the earlier N/10 threshold on this displayed population. The smaller
+summable tilt 65537/65536 pays the full squarefree-coprimality comparison
+and every outer count at rate exp(-N/10000). Original integer rounding
+is paid at the same rate; the signed main uses the existing complete
+owner/radial Fourier cancellation, before any norm. Eligible rows have
+log(pb)<=1949N/1000, log(p)<243N/200 and log(p)+L_N>=203N/100.
+The original core/count mask and exact allocation remain. A disjoint
+clamped grid retains every incidence once; count-cutoff overflow is paid
+independently. `eventually_abs_fineLiteralRows_bound` and
+`tendsto_fineLiteralRows` bound the ACTUAL selected signed prime sum,
+not only its density model. `coreConvolution_re_eq_fineRemaining` is
+exact, and `tendsto_joined_re_sub_fineRemaining` removes only this paid
+population from the whole joint real carrier. All unselected incidences,
+including smaller unsigned legs and unsaturated rows, remain explicit.
+The rounded lower endpoints are now independently paid by
+`18*(N+1)^3*exp(-9*N/10000)`, retaining the original core mask and sieve.
+`fine_rows_closed_eq` joins the row with that exact boundary;
+`fine_endpoint_not_selected` rules out a duplicate incidence credit and
+`fine_literal_row_covered` proves the displayed eligible population has
+no rounding gap. `tendsto_joined_re_sub_closedFineRemaining` leaves the
+exact signed remainder `fineRemaining-fineEndpointRows` source-equivalent
+to the whole joint carrier. `unit_unsigned_not_selected` explicitly keeps
+the unsigned unit and balanced-triple obstruction. The independent
+-79/1000 floor is still OPEN.
+Use this as an alternative to overlapping old row ledgers, not another
+credit on an already-paid incidence; the global nonowner payment is
+used once. Scalar probes do not certify a starting order or a floor.
+The optional `probe_riesz_fine_remaining.py` factors actual sampled
+integer labels and retains the common phase of unit/nonunit incidences.
+Small-order negative covariance is diagnostic only; those tests are not
+cofinal and fail the eventual length hypothesis. Do not promote their
+observed cancellation or sample means to an asymptotic signed bound.
+Preserve all public endpoints/no-gos; continue locally without commits,
+pushes, subagents or wider publication gates.
+
+`ZetaRieszOwnerSafeRows` independently pays a new ORIGINAL unsaturated
+all-count population. Its concrete cone is N/2<=log(p),
+31N/20<log(pb)<=1949N/1000, log(p)<243N/200 and
+log(p)+L_N<203N/100, with every earlier physical/core/count, squarefree,
+coprimality, phase and owner-allocation mask unchanged. The whole closed
+unsigned row lies strictly below p; saturation was only needed for this
+ownership fact. An auxiliary 31N/20 cutoff appears solely in the finite
+ownership proof, never in an arithmetic atom or the actual Riesz length.
+The signed radial/Fourier main is joined before its absolute value is
+taken. `eventually_abs_ownerSafeLiteralRows_bound` has the SAME independently
+proved fineRowBudget; rounded original endpoint atoms have the SAME
+18*(N+1)^3*exp(-9N/10000) bound. Original incidences are disjoint from the
+saturated fine payment. `ownerSafe_unsigned_gt_one` keeps the unit unpaid
+even at the closed endpoint. `eventually_abs_joined_sub_ownerSafeRemaining_bound`
+gives the whole REAL carrier error budget
+joinedRowErrorBudget-rowErrorBudget+2*(fineRowBudget+fineEndpointBudget),
+which tends to zero; shared carrier/nonowner errors occur once.
+The actual signed remainder, independent -79/1000 floor and 3/2 ceiling
+remain OPEN. Do not promote this payment to a complex packet-decay or
+zero-exclusion claim. The optional exact-cone integer probe is diagnostic:
+orders20/24/28 are not cofinal and fail the eventual length hypothesis.
+Use scoped Lean/namespace-lint/axiom checks; keep publication and public
+explorer endpoints unchanged. Continue locally without commits or subagents.
+
+`ZetaRieszUnifiedSignedRows` combines the actual singleton large-owner
+payment with both closed divisor-row payments in ONE signed ledger. The
+variable-population bound pools the arithmetic mass over all labels;
+it does not add a nonowner error or cost per owner. Closed-row credits
+are disjoint from the large-owner labels, including rounded endpoints.
+Every nonzero unpaid owner on the actual dyadic core has log(p)<243N/200.
+
+`ZetaRieszEdgeDivisorRows` independently pays a further literal signed
+band: 1949N/1000<log(pb)<=3899N/2000, N/2<=log(p)<243N/200,
+with the original ownership, physical, core/count, phase and allocation
+masks. Counting exponent 17/32 pays unsigned legs above exp(N/2000);
+the old exponent 3/4 does not give source decay at that threshold.
+The all-count comparison rate is at most exp(-N/10000), the signed main
+uses the original radial/Fourier payment, and rounded endpoints cost
+18*(N+1)^3*exp(-N/2500). `eventually_abs_edgeLiteralRows_bound` is an
+estimate on the ACTUAL sum, independent of any zero hypothesis. Closed
+incidence credits are disjoint from both older row families and the whole
+large-owner payment. `eventually_abs_joined_sub_edgeRemaining_bound`
+keeps one signed remainder with source-o(1) error; it is not the numerical
+-79/1000 floor. Unit/small-divisor and other unselected geometries remain
+unpaid. All old theorem scopes and no-gos are retained. Optional integer
+probes are diagnostic and not cofinal; they certify no floor or starting
+order. Keep local scoped validation and unchanged public endpoints.
+
+`ZetaRieszLowOwnerRows` extends the same signed full-window mechanism to
+7N/25<=log(p)<N/2 and 7N/4<log(pb)<=3899N/2000, retaining the original
+unsaturated, owner, physical/core/count, allocation, squarefree/coprimality
+and full phase masks. An auxiliary 7N/4 cutoff certifies that every
+unsigned integer of the CLOSED original row is below p; it never replaces
+the Riesz length. `full_window_geometry_of_owner_gap` extracts the exact
+common ownership criterion log(pb)+log(p)>203N/100. The concrete paid cone
+is a sufficient subregion, not a claim that every row satisfying that
+criterion is paid. `eventually_abs_lowOwnerLiteralRows_bound` independently
+bounds the ACTUAL signed real sum by the existing edgeRowBudget, with the
+same source-geometric rounded endpoint payment. Nonzero closed incidences
+have count>=5 and are disjoint from all previous row credits and whole
+large-owner labels. `eventually_abs_joined_sub_lowOwnerRemaining_bound`
+keeps shared errors once and replaces the prior rest by one smaller signed
+scalar. This does not establish its numerical -79/1000 floor. Balanced
+triple unit incidences, small-divisor and unselected ownership geometries
+remain unpaid. The optional 1335-digit six-prime N=1536 example is a
+transcription diagnostic, not a Lean nonemptiness or cofinal certificate;
+its moving-length inequality is met. Continue locally with scoped Lean,
+namespace-lint and axiom checks; no commits, subagents or wider gates.
+
+`ZetaRieszOwnerGapRows` now pays the entire original ownership-gap
+population with log(pb)+log(p)>203N/100, log(pb)<=3899N/2000 and
+log(p)<243N/200, retaining all original masks and signed phases. Its
+row-dependent auxiliary cutoff certifies geometry only. All four older
+closed-row families are proved subsets; replace their credits with the
+single edgeRowBudget+edgeEndpointBudget payment rather than adding them.
+The whole large-owner population remains disjoint. The exact signed
+ownerGapRemaining differs from the whole real carrier by one shared
+carrier/nonowner cost plus the two independent population payments,
+all source-o(1). Its numerical -79/1000 floor is still OPEN.
+Under the explicit original owner/outer/core predicates,
+unselected_unsigned_geometry proves log(d)<161N/2000 or
+log(p)<log(d)+2N/25. Outside the first boundary, the Riesz support yields
+log(p)<147N/200. Do not apply that latter ceiling to the short-leg/unit
+boundary or drop any hypotheses. Unit and other remaining incidences
+stay joined. The additional four-prime N=1536 probe is diagnostic, not a
+Lean nonemptiness, cofinal rate or floor certificate. Preserve all prior
+theorems/no-gos and public endpoints. Continue locally without commits,
+subagents or wider checks.
+
+`ZetaRieszShortDivisorCancellation` removes complete affine divisor
+blocks from the actual unpaid short boundary with EXACTLY zero error.
+The canonical candidate is the two smallest cofactor primes. Each
+selected block includes its unsigned unit, retains the original common
+phase/factorial/allocation weight and every label/count/physical mask,
+and is disjoint from the paid owner-gap rows and whole large-owner labels.
+`ownerGapRemaining_eq_sum_sdiff` changes no existing error budget.
+The surviving two-prime block is exactly one signed cofactor tent,
+`-mu(a)*primePairTent(log r,log s,log a-L_N)`. Its marked prime no
+longer appears in this arithmetic factor. `re_literal_prime_block_floor`
+uses the complete SIGNED prime observation before its absolute value,
+not a sum of separate prime norms. Its aggregate cost remains OPEN.
+For a cofactor small block with log(R)<=B*log(N+1), the uncancelled unit
+is eventually confined to `T-L_N-B*log(N+1)<log(p)<T-L_N` under the
+explicit original predicates. Rough labels without such a small block,
+the reflected tent crossing, other short incidences and the remaining
+near-owner region stay unpaid. The polynomial threshold is unevaluated;
+no relative deficit percentage or -79/1000 floor is proved. Optional
+six/seven-prime N=1536 probes verify the transcribed tent identity and
+show opposite signs; they are not Lean nonemptiness/counting certificates.
+Continue locally with scoped Lean/lint/axiom checks and unchanged public
+endpoints; no commits, subagents or wider publication checks.
+
+`ZetaRieszShortDivisorOrbits` extends that EXACT zero payment to every
+disjoint based block `d=e*delta`, with `e|a/R` and `delta|R` for the
+canonical two-smallest-cofactor-prime block. Squarefreeness proves the
+blocks partition the original antidiagonal uniquely. All complete affine
+blocks inside the short boundary cancel with the ORIGINAL weight at `p*a`;
+do not evaluate the phase or allocation at the auxiliary cofactor `a/e`.
+The enlarged selection contains the previous unit-based blocks, is
+disjoint from both existing paid populations, and changes neither
+ownerGapRemaining nor its error budget. Its whole source-scaled norm is
+EXACTLY zero, at every finite count, order and height.
+Every surviving short incidence has a base in either
+`H-log(R)<=log(e)<H`, with `H=T-3899N/2000`, or
+`log(a)-L_N-log(R)<log(e)<log(a)-L_N`. For polynomial small blocks these
+are logarithmic-width strips. The reflected strip has eventual owner band
+`9N/16<log(p)<131N/200` under the stated core and moving-length hypotheses.
+This is support localization, NOT payment of either crossing population.
+Rough blocks and other near-owner incidences remain signed and unpaid;
+the independent -79/1000 floor remains OPEN. The N=1536 nine-prime
+diagnostics show 16 of 21 short incidences cancelling in one label and
+zero previous-payment overlap; this is neither a global proportion nor
+a Lean nonemptiness/counting or cofinal certificate. Preserve the previous
+no-gos and endpoints. Continue locally without commits, subagents or wider
+checks, using scoped Lean/lint/axiom validation.
+
+`ZetaRieszShortCutoffRows` independently pays the fixed block `6=2*3`
+short-cutoff crossing on whole ownership-safe original rows. The exact
+incidences are `(e*delta,B/delta)` with `6|B`, common phase/allocation at
+`p*B*e`, and the cutoff `log(delta)<log(pB)-3899N/2000` is independent of e.
+Sum the clipped block first into cutoffMultiplier, bounded by four; then
+apply the signed whole-row cancellation. Do not norm-pay individual divisor
+or prime-count terms. The comparison uses exponent 17/32 and unsigned gap
+1/2016, with source rate at most exp(-1/10000); the fixed log(6) crossing
+strip fits that gap eventually. All original masks, both hinges, count
+cutoff, coprimality, moving length, factorial kernel and allocation are
+retained. High-count weighted overflow and original rounded endpoints are
+independently paid. literalCutoffPacket has a proved independent source-o(1)
+bound, and cutoffRemaining removes it with shared payments charged once.
+The canonical owner and gcd tag prove no incidence duplication; selected
+incidences lie strictly outside every previous owner-gap row credit and
+every previously zero-cancelled affine orbit. Reverse original-incidence
+coverage retains the closed integer endpoints. For this SAME fixed-block
+cutoff crossing below the old owner ceiling, every unselected nonzero
+incidence eventually has count>=25 and log(p)<161N/2000. Counts 3--24
+are covered by the all-count signed payment under the stated original
+predicates; do not infer a norm bound for a separately count-truncated
+packet. These residual support restrictions do not pay its cost.
+Inside that tiny-owner remainder, the strict cutoff keeps exactly divisors
+1 and 2 on log(2)<log(pB)-3899N/2000<=log(3). Both actual hinges are
+saturated after N>=32; their opposite Mobius signs cancel EXACTLY.
+literal_middle_cutoff_population_eq_zero pays the whole selected complex
+population, retaining the original core/count masks, physical owner,
+allocation and product phase at p*B*e. No ownership-gap hypothesis or
+error cost is needed for this zero payment. The remaining cutoff edge
+pieces and all reflected/rough geometries still lack a global floor.
+The numerical -79/1000 whole floor remains OPEN. This payment applies only
+to the exact fixed-block ownership-safe strip; do not generalize it to
+arbitrary small blocks, reflected crossings, rough labels or all ownership
+geometries. All previous no-gos and public endpoints remain unchanged.
+Continue locally without commits, subagents or wider checks, using scoped
+Lean/namespace-lint/transitive-axiom validation.
+
+`ZetaRieszRoughCutoffRows` now EXTENDS the fixed-six crossing payment to
+the canonical two-smallest-cofactor-prime block whenever its second prime
+is at most sqrt(N). Keep the exact additional roughness mask on the
+unsigned variable: the forbidden set is `(p*B).primeFactors` union all
+primes at or below the second frozen prime. Its extra comparison cost is
+at most 3^floor(sqrt(N)); `rough_cost_geometric` absorbs that into
+exp(-N/20000), after N>=1600000000 for THIS scalar inequality only.
+This is not a validated finite starting order for the whole packet.
+The actual moving length, phase, factorial allocation, core/count masks,
+coprimality, high-count overflow and rounded endpoints remain original.
+`eventually_literalCutoffPacket_bound` independently pays the joined
+signed all-count packet; it assumes no hypothetical zero or bilinear
+cancellation theorem. Original canonical orbits automatically satisfy
+the roughness mask, and reverse coverage, gcd injectivity, non-overlap
+with earlier owner-gap credits and zero affine orbits are proved.
+`roughCutoffRemaining` REPLACES the fixed-six subtraction; do not add both
+credits. Its explicit source-o(1) comparison shares older costs once.
+Under the stated original predicates, an unselected nonzero small-pair
+crossing eventually has count>=25 and log(p)<161N/2000. This is a support
+restriction, not a cost bound on that signed rest. The exact middle-strip
+zero payment also extends to EVERY canonical pair, including rough pairs:
+`log(minFac B)<log(pB)-3899N/2000<=log(secondPrime B)` retains only the
+unit and least prime. For the tiny-owner geometry both hinges equal
+log(p), so the complete original weighted population cancels exactly.
+No smallness, whole-owner-gap or fixed-height premise is needed for that
+zero equality. Cutoff edges, reflected crossings and other unselected
+owner/rough geometries remain unpaid; the numerical -79/1000 floor is OPEN.
+Optional N=256 actual-prime regressions on pairs (2,5), (3,7), (5,11),
+(7,13), and 36-prime tiny-owner labels including (43,47) check floating
+transcription only. They do not prove population mass or a cofinal floor.
+All 402 public theorems in this 17-module local batch have transitive axiom
+records; scoped affected namespace lint passes all 14 linters.
+Keep public endpoints and all no-gos unchanged. Continue locally without
+commits, subagents or wider gates; scoped Lean/lint/axiom checks suffice.
+
+`ZetaRieszLowerRadialPayment` independently pays the ENTIRE literal owner
+population with log(n)<=197N/100, at the exact source-geometric rate
+exp(-N/100000), uniformly for 0<=u<=10001/20000 and arbitrary height.
+The finite arithmetic mass is zetaMoebiusLogMajorantMass(1+1/1048576).
+The rational power certificate is checked in Lean; a floating saddle
+calculation is not the proof. norm_lower_partial_sum_bound also pays ANY
+retained original owner-divisor suballocation in that strip, with factor
+two and its original allocation/phase. No zero premise, prime-count
+restriction or hidden signed estimate is assumed. centralConvolution is
+only the strict radial restriction of the SAME original owner atoms;
+coreBand itself is unchanged. The remaining main window is
+197N/100<log(n)<=203N/100. central_unsigned_gap proves log(d)>41N/2000
+when log(pb)<=3899N/2000 there; this support gain is not a payment of a
+new rough canonical-pair packet. centralRemaining retains the preceding
+large-owner/closed-row/canonical-cutoff credits exactly once and adds
+lowerBudget once to the comparison error. Those older payments still
+contain their original lower-boundary pieces: do NOT claim that they
+have been restricted to the central window or infer partial-row decay
+from whole-row decay. The independent numerical -79/1000 floor remains
+OPEN. Optional N=256/640 five-prime original-mask regressions are
+diagnostic only; the N=256 36-prime edge test shows that two adjacent
+canonical cutoff blocks can REINFORCE, not cancel. It does not rule out
+every joint pairing or certify a population/source bound. No relative
+deficit percentage or validated finite starting order is asserted.
+Keep local scoped validation, all no-go results and public endpoints;
+no commits, subagents or wider checks during this iteration.
+
+`ZetaRieszPrimeWeightedSieve` keeps the ACTUAL forbidden-prime factors
+`1+p^(-17/32)+p^(-34/32)` in the squarefree error. The product for primes
+up to N^2 is at most `exp(2*countMass(65/64)*N^(31/32))`; it is not
+`3^pi(N^2)`. Its combination with the existing comparisonRate is
+eventually at most exp(-N/20000). `ZetaRieszPolynomialCutoffRows` applies
+this to the SAME original canonical-pair cutoff rows and proves their
+literal signed all-count packet source-o(1), including incidence-weighted
+count overflow and original rounded endpoints. The second-prime cap is
+now N^2; all other whole-window ownership/crossing predicates, the moving
+length, original phases, allocation, physical/core masks and roughness
+mask are retained. The proof uses the old unsigned gap; it does not infer
+partial-row cancellation from the newly paid lower radial strip.
+sqrt_cutoffRows_subset proves the old selector is contained in the new
+one. REPLACE its old credit; never add both. Canonical incidence
+injectivity, reverse original coverage and disjointness from older row
+credits and zero affine orbits are proved for the enlarged packet.
+For active unselected crossings satisfying the stated original physical
+and owner predicates with secondPrime<=N^2, the remaining owner is tiny
+and count is >=25 eventually. Rough pairs beyond N^2, tiny-owner cutoff
+edges, reflected crossings and other unselected signed geometries remain
+unpaid. polynomialCentralRemaining is the EXACT original central main
+minus the retained prior credits and the enlarged packet, each once;
+its comparison budget includes lowerBudget once and tends to zero.
+Its independent numerical -79/1000 floor remains OPEN. No finite
+starting order or fraction of the whole floor deficit is certified.
+Optional actual-prime regressions at N=256/640 exercise canonical pairs
+beyond sqrt(N), including (257,263) and (65519,65521). The finite prefix
+cost samples do NOT yet satisfy the eventual comparison rate; zero
+floating observations from underflow are not cancellation evidence.
+The optional probe stays outside builds/CI. All 471 public theorem
+records in the current 20-module local batch are audited; the 93 affected
+public proofs and three namespaces pass scoped axiom/lint checks.
+Keep all no-gos, the README and published explorer endpoints unchanged;
+iterate locally without commits, subagents or wider checks.
+
+`ZetaRieszCrossingOrbitCancellation` closes the TINY-OWNER EXCEPTION in
+the canonical artificial-cutoff branch by restoring COMPLETE based
+orbits, not by pairing only their clipped edges. CrossingOrbit selects
+log(e)<T-3899N/2000<=log(eR) with T-log(e)+log(p)<=203N/100.
+Failure of that whole-row owner condition forces log(p)<161N/2000.
+The canonical block satisfies log(R)<=2log(p), so the actual length
+bound L<=3N/2 makes both original hinges saturated on EVERY member for
+N>=32 and u>=1/2. All four ORIGINAL observations share the same full
+phase/factorial/allocation weight; their Mobius signs cancel exactly.
+source_scaled_crossing_population_norm_eq_zero is an independent ZERO
+norm bound for the whole literal selected population, across all counts
+and heights together. It is not a claim that every tiny-owner LABEL
+vanishes. Polynomial pair smallness is NOT required for this zero payment.
+Original antidiagonal membership, based-orbit disjointness, non-overlap
+with old cancelled interiors, old owner-gap rows, large-owner labels
+and the paid polynomial packet are proved. Original masks remain intact.
+eventually_polynomial_crossing_paid_or_cancelled says every active
+canonical short-cutoff crossing in the N^2 pair cap, under its displayed
+original predicates, is either geometrically paid or in a restored zero
+block. There is no remaining tiny-owner/count exception in THAT branch.
+polynomialCentralRemaining_eq_sum_sdiff removes the old interiors and
+these new blocks directly from the SAME central owner atoms. Every old
+whole-support credit and its comparison budget is unchanged, charged once;
+no new scalar carrier or positive allowance is introduced. Ownership-safe
+crossings beyond N^2, reflected Riesz-hinge crossings and other unselected
+original signed rows still need arithmetic bounds. The -79/1000 WHOLE
+floor, ceiling, zero exclusion and certified deficit percentage remain
+OPEN. A remaining restored-cutoff survivor has log(p)>161N/6000, which
+is only support information. The optional original-label probe restores
+the prior N=256 36-prime reinforcing-edge example: clipped value about
+-33.28000122314927, complete blocks exactly zero in the regression.
+A fully rough 36-prime example with pair (65537,65539), beyond N^2,
+also satisfies the original masks and full-block cancellation. Floating
+regressions and logged underflow are not source/floor certificates; the
+zero population theorem is the Lean proof. The optional script is outside
+ordinary builds/CI. The restored-cutoff slice initially had 496 public theorem records
+in 21 modules; 44 affected public proofs and both affected namespaces were
+scoped-audited. Keep no-gos, README and public endpoints unchanged; continue
+locally without commits, subagents or wider checks.
+
+The affine extension now removes complete unpaid based blocks beyond the
+artificial short cutoff as well. `UnpaidAffineOrbit` keeps the exact two
+hinge-affinity conditions, the failed whole-window based-owner gap and the
+original owner ceiling, and excludes the old short-interior selector.
+`source_scaled_affine_population_norm_eq_zero` proves zero cost for the
+ENTIRE selected original population, at all orders, heights and counts.
+`crossingDivisors_subset_affine` replaces the restored-crossing credit;
+do not add both populations. The new blocks are disjoint from the old
+interior and previous owner-gap, whole-large-owner and canonical polynomial
+cutoff payments. `polynomialCentralRemaining_eq_affine_sdiff` applies this
+exact deletion to the SAME current floor ledger, with its budget unchanged.
+No prime-density replacement, phase freezing, count allowance or new carrier
+is introduced. The optional same-label regressions include long blocks
+outside both earlier selectors, including a fully rough example.
+The enlarged local batch has 511 public theorem records in 21 modules;
+59 affected public proofs pass the scoped axiom/lint audit. Genuine hinge
+crossings and other unselected signed rows still require an independent
+joint estimate. The numerical floor, ceiling and zero exclusion remain OPEN.
+
+The user's latest request authorizes committing and pushing ALL accumulated
+local work once this slice and the publication gates pass. It supersedes
+the local-only holds above for this publication. Run the tracked hook,
+ordinary root integrity/lint/build checks, refreshed explorers and browser
+checks without exhaustive numerical-certificate verification. Keep the
+published conditional endpoint and all previous no-gos; update Latest Update
+to report the actual supporting savings and the still-open numerical floor.
+No subagents are authorized. Resume local signed-floor work after publication.
+
 The eight-module floor batch, from `ZetaRieszPairChamberFloor` through
 `ZetaRieszFiveSignCoverFloor`, is published at
 `03a0f31be04d2737a4b2811e2532c32e79a18c69`. Exact-SHA CI run

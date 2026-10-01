@@ -149,10 +149,10 @@ Bound joinedPhysical through its exact full-mass two-hinge core, retaining the s
 
 ### Latest Update
 
-**Counts 3–55 are joined; the remaining global debit is audited.** Lean covers the whole fixed-count band with both signs and every original mask, rejoining the same supply before spending it. A new obstruction proves that its positive tail/period debit grows at source scale despite any fixed polynomial saving. The signed carrier may still compensate it; the numerical floor and ceiling remain open.
-Prove joint cancellation across the retained signed tail, growing-count remainder and low-count period balance.
+**Whole signed rows are paid; complete divisor blocks cancel exactly.** Lean pays canonical signed rows and their original rounding/count boundaries geometrically, extends the weighted-sieve cutoff to N², and cancels complete affine divisor blocks with the original phase and allocation. The independent −79/1000 floor, higher-multiplicity ceiling and zero exclusion remain open.
+Bound the remaining genuine Riesz-hinge crossings and ownership-safe rough cutoff edges jointly, retaining their signed phases.
 [Current checked endpoint](RiemannGaussian/ZetaRieszRejoinedSupplyFloor.lean#L131)
-· [Proof details](docs/zeta-riesz-joined-physical.md).
+· [Proof details](docs/zeta-riesz-global-crossing.md).
 <!-- RH_DIRECTION:END -->
 
 ## Notable Formalisations

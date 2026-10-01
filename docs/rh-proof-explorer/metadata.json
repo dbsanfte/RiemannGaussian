@@ -16,17 +16,17 @@
       "changeReason": "The joint Gamma/complement transfer and unsaturated prime-deletion identity eliminate the unmatched saturation boundary. The active target is now the whole two-hinge physical core; the floor is prioritized as explicitly requested."
     },
     "latestUpdate": {
-      "sequence": 141,
-      "id": "global-signed-floor-and-debit-audit",
+      "sequence": 142,
+      "id": "signed-rows-and-exact-divisor-blocks",
       "kind": "theorem",
-      "title": "Counts 3\u201355 are joined; the remaining global debit is audited.",
-      "body": "Lean covers the whole fixed-count band with both signs and every original mask, rejoining the same supply before spending it. A new obstruction proves that its positive tail/period debit grows at source scale despite any fixed polynomial saving. The signed carrier may still compensate it; the numerical floor and ceiling remain open.",
-      "next": "Prove joint cancellation across the retained signed tail, growing-count remainder and low-count period balance.",
+      "title": "Whole signed rows are paid; complete divisor blocks cancel exactly.",
+      "body": "Lean pays canonical signed rows and their original rounding/count boundaries geometrically, extends the weighted-sieve cutoff to N\u00b2, and cancels complete affine divisor blocks with the original phase and allocation. The independent \u221279/1000 floor, higher-multiplicity ceiling and zero exclusion remain open.",
+      "next": "Bound the remaining genuine Riesz-hinge crossings and ownership-safe rough cutoff edges jointly, retaining their signed phases.",
       "theoremStatusPath": [
         "gaussianPhaseBandToolkit",
         "rieszRejoinedPhysicalFloorTheorem"
       ],
-      "documentation": "docs/zeta-riesz-joined-physical.md"
+      "documentation": "docs/zeta-riesz-global-crossing.md"
     },
     "frontierStatusPath": [
       "gaussianPhaseBandToolkit",
