@@ -9,7 +9,7 @@ the evolving Lean 4 proof development and supporting analytic and finite-model
 theory. The proof is not complete; in the meantime, the extensive Lean theorems and formalizations are provided to the wider community. Only declarations accepted by Lean and the
 repository's verification gates count as established results.
 
-> **Research agents:** GPT-5.6 Sol and GPT-6 Astra with **Max** reasoning effort, running in the
+> **Research agents:** GPT-5.6 Sol, GPT-6.1 Sol, and GPT-6 Astra with **Max** reasoning effort, running in the
 > **Codex CLI harness**.
 
 ## Proved Zero-Free Region
